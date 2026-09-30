@@ -1,0 +1,44 @@
+{
+  "frozen_at": "2026-09-30T15:09:32.400816+00:00",
+  "runner_sha256": "d5cdcddb6ebdc8d2bc99c904b5415e842be183bc3abc83bc5d3b7ed70b8b9550",
+  "derivation": "Analytic matching and fiber identities recorded in PRE before code.",
+  "cases": [
+    {
+      "L": 8,
+      "N": 256,
+      "ordinary_births": 126,
+      "N_minus": 127,
+      "hole_wave_support": 32,
+      "cycle_dimension": 1025,
+      "H_residual_coefficients": 0,
+      "Fdag_residual_coefficients": 0
+    },
+    {
+      "L": 12,
+      "N": 864,
+      "ordinary_births": 430,
+      "N_minus": 431,
+      "hole_wave_support": 72,
+      "cycle_dimension": 3457,
+      "H_residual_coefficients": 0,
+      "Fdag_residual_coefficients": 0
+    },
+    {
+      "L": 16,
+      "N": 2048,
+      "ordinary_births": 1022,
+      "N_minus": 1023,
+      "hole_wave_support": 128,
+      "cycle_dimension": 8193,
+      "H_residual_coefficients": 0,
+      "Fdag_residual_coefficients": 0
+    }
+  ],
+  "price": {
+    "cpu_seconds": 30,
+    "wall_seconds": 90,
+    "peak_rss_bytes": 125829120,
+    "BLAS_threads": 1
+  },
+  "slot": "Root explicitly authorized the other slot after native cache completed; axial tiny Fraction control may coexist."
+}

@@ -168,3 +168,6 @@ Canonical transfer focused independent receiptc8692723 fully read by root at thi
 
 
 2026-09-30T15:28:27.834620+00:00: Root focused native-density-response check b08aa4c82abed37e705a4f540faa13076444485142304bbcae663e972c7b2f61 and bright-residence check43a112df0cf651833b65aef849f90b77b0d7c83cd0a84255f37285690794d59c complete; PREs and actual source bindings preserved. These are focused provisional checks, not formal source milestones or audit. Source late-tail check is pending.
+
+
+2026-09-30T15:58:43.307200+00:00: Root focused dark-weight check76f43fd9 complete with PRE41a0ffcf, full source/control read. Actual-source late-tail axial621b23a4 complete with root full read7024bda4 and57actual identities. Neither is formal review/audit status. Native spectrum PRE474994cd and record PRE38da3bf9 remain checks in progress. Linked-feedback PREd9c83db6 newly frozen before proof exposure.

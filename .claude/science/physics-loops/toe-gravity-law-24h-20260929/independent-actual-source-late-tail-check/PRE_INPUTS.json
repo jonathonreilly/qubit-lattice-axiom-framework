@@ -1,0 +1,72 @@
+{
+  "frozen_at": "2026-09-30T15:24:28.683680+00:00",
+  "records": [
+    {
+      "authority": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "read_scope": "complete source freshly read"
+    },
+    {
+      "authority": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "read_scope": "complete source freshly read"
+    },
+    {
+      "authority": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "read_scope": "sections1-2 and start of residual proof freshly read; actual operator and original instrument input"
+    },
+    {
+      "authority": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "fe294dec0a727482a325fee7dd44cb53b86343e65db0527a5f3f63db49bfe070",
+      "read_scope": "sections1-2 freshly read; canonical coefficients/selection rules"
+    },
+    {
+      "authority": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "read_scope": "sections1-3 opening freshly read; not importing its distinct spin-half mark normalization or slow-birth limit"
+    },
+    {
+      "authority": "provisional campaign source/check, not formal grade",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-geometry-route/REPORT.md",
+      "sha256": "7985ab65a276dff6d01efe06ef48da6b16aae52059e438e63dc14bb2194367d2",
+      "read_scope": "full slab/Gauss section1-2 and most subsequent route; only exact dark embedding/row identities reused"
+    },
+    {
+      "authority": "provisional campaign source/check, not formal grade",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-response-geometry-check/REPORT.md",
+      "sha256": "d510afdcbca005106bdfbdd11fbdac21e2f1f80b89301f8537cd7cfc27d536aa",
+      "read_scope": "complete focused receipt freshly read"
+    },
+    {
+      "authority": "provisional campaign source/check, not formal grade",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-retarded-response-route/WORKING_PROOF.md",
+      "sha256": "9208bac7cee182d688e721c609ab0fffd92b15ed0b8e8fa4867b94a20457d218",
+      "read_scope": "complete sectionsA-F plus G and start H freshly read; fixed-U comparison only"
+    },
+    {
+      "authority": "provisional campaign source/check, not formal grade",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-fixed-fast-response-check/REPORT.md",
+      "sha256": "3b20b4fc319c025fa6fe106024df647b80abc16d3b8d635c5e228a80ffe63bab",
+      "read_scope": "complete focused receipt freshly read"
+    },
+    {
+      "authority": "provisional campaign source/check, not formal grade",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-response-route/REPORT.md",
+      "sha256": "74b15d0fcc26b3ccef2f8863bee3707f945e4e792ec0c38a9b3fafadcc7eac26",
+      "read_scope": "sections1-5 freshly read; finite-k absorption requires L>=4k, not dense fixed torus"
+    },
+    {
+      "authority": "provisional campaign source/check, not formal grade",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-dark-response-route/REPORT.md",
+      "sha256": "96c08bd265efa53dd420bab908efa02fc1d4fbdcace7373825c5805b3769123d",
+      "read_scope": "sections1-8 freshly read; canceled actual one-hole H/mark loss"
+    }
+  ],
+  "new_author_proof_code_results_read": false
+}

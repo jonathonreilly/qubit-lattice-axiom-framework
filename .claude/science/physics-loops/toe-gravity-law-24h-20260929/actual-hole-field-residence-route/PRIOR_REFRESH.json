@@ -1,0 +1,24 @@
+{
+  "utc": "2026-09-30T15:25:11.633276+00:00",
+  "open_command": [
+    "gh",
+    "pr",
+    "list",
+    "--state",
+    "open",
+    "--limit",
+    "100",
+    "--json",
+    "number,title,headRefName,headRefOid,url"
+  ],
+  "open_exit": 0,
+  "remote_command": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/main"
+  ],
+  "remote_exit": 0,
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "scope": "Actual compensation and law inputs unchanged and rehashed against main. Full relevant fixed-k, local-spin, sparse-dark, connected-source/resummation and first-field arguments were read; original-law energy identities were fully read in preceding route and reused at frozen hashes. Open original-source-family units are provisional prior art, not replaced microscopic premises. Unrelated proposal titles supply no science evidence."
+}

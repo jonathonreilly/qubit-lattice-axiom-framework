@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-09-30T15:26:17.489381+00:00",
+  "files": {
+    "CHECKS.json": "187c8afe25fba5503421284fa648dbf82d3564c1ea3c8b727cb37090ae6db869",
+    "CONTRACT.md": "54eaf2732bb1ce1ec3bae87ac6b429b9b995a8a6ee4796690ae1b39a921b1eeb",
+    "CONTROL_EXECUTION.json": "dd36038408038940a946608bf6298c3665efcd71d90cf30ba58d231e40ed6fa5",
+    "CONTROL_PREFLIGHT.json": "f47af7aefeb6e89aa6042c8f807af83dcbe808cbe81e43af1199a0ef24e276ee",
+    "DERIVATION_HISTORY.md": "d3a04b5ef0054757bc377dbcefd221c42b0dd33cd567d28dc50d32a9319d32bf",
+    "PRE_DERIVATION.md": "8222a8775c35a637a79c1a0c096a6d61b19f447e5d7e755a200544faf4855eb7",
+    "PRE_FREEZE.json": "05657433a185e02afad074ac3463d01dd9e7830f1f240f356edddf2413bcfc38",
+    "PRIOR_REFRESH.json": "09ad9177a6a510f3876edc6a764d3ab068b72d69c143b6f971b368257e750e22",
+    "REPORT.md": "7aea8cc0ad06935d798316e276c829f82ad9199640c8edfe8d09dd3d205341bb",
+    "RESULTS.json": "75e20b88ab5c85b6c74e88024febedf4af2b059fd456b45bf1be51435defc176",
+    "SOURCE_IDENTITIES.json": "1563768b0b5e481f90d522d17d01e2d5c085b63c255827bcadca167f16456460",
+    "TARGET_EXTENSION.md": "751c7e609705d2a3d14b45ddbe7f5360cdc288a73c4678629c45cc1230985739",
+    "TARGET_EXTENSION_FREEZE.json": "033d7b7136ef3882c37157b762cc9d57780cb226219221a67d742a56c2213bb8",
+    "WORKING_PROOF.md": "d924ee86efaf205bc139aa53a0012b91633c30ef3dde56c4d3024be35584b2a9",
+    "check_source_tail.py": "d5cdcddb6ebdc8d2bc99c904b5415e842be183bc3abc83bc5d3b7ed70b8b9550"
+  },
+  "selected_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "status": "Author-frozen analytic result and actual sparse evidence; focused check required before reuse.",
+  "scope": "Actual fixed-graph sourced lower tail and separately all-volume positive-discount connected response; no unregularized microscopic closure."
+}

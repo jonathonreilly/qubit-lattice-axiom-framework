@@ -1,0 +1,8 @@
+{
+  "frozen_at": "2026-09-30T15:21:51.654238+00:00",
+  "pre_sha256": "810dddf3d276d6f2eb23eede3eb47b0fb0477a5524360416d40689f8cf66c465",
+  "author_contract_sha256": "54eaf2732bb1ce1ec3bae87ac6b429b9b995a8a6ee4796690ae1b39a921b1eeb",
+  "author_proof_code_results_opened": false,
+  "no_computation": true,
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7"
+}

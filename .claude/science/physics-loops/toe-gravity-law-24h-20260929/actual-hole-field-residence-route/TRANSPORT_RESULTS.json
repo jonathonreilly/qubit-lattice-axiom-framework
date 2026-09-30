@@ -1,0 +1,694 @@
+{
+  "rows": [
+    {
+      "m": 0,
+      "S": 1,
+      "alpha": {
+        "hole": [
+          0,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 11,
+        "Q2": 11
+      },
+      "beta": {
+        "hole": [
+          2,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 11,
+        "Q2": 11
+      },
+      "actual_cross_coefficient": 1,
+      "selected_spin_squared_factors": [
+        1,
+        1
+      ],
+      "coherent_component_count": 32,
+      "selected_component_coefficient": 1,
+      "original_birth_labels": [
+        {
+          "resolved": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0,
+            "sign": 1
+          },
+          "coherent": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        }
+      ]
+    },
+    {
+      "m": 1,
+      "S": 1,
+      "alpha": {
+        "hole": [
+          0,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 14,
+        "Q1": 15,
+        "Q2": 15
+      },
+      "beta": {
+        "hole": [
+          2,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 15,
+        "Q2": 15
+      },
+      "actual_cross_coefficient": 1,
+      "selected_spin_squared_factors": [
+        1,
+        1
+      ],
+      "coherent_component_count": 32,
+      "selected_component_coefficient": 1,
+      "original_birth_labels": [
+        {
+          "resolved": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0,
+            "sign": 1
+          },
+          "coherent": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "S": 2,
+      "alpha": {
+        "hole": [
+          0,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 16,
+        "Q1": 19,
+        "Q2": 27
+      },
+      "beta": {
+        "hole": [
+          2,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 19,
+        "Q2": 27
+      },
+      "actual_cross_coefficient": 1,
+      "selected_spin_squared_factors": [
+        1,
+        1
+      ],
+      "coherent_component_count": 32,
+      "selected_component_coefficient": 1,
+      "original_birth_labels": [
+        {
+          "resolved": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0,
+            "sign": 1
+          },
+          "coherent": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        }
+      ]
+    },
+    {
+      "m": 4,
+      "S": 4,
+      "alpha": {
+        "hole": [
+          0,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 20,
+        "Q1": 27,
+        "Q2": 75
+      },
+      "beta": {
+        "hole": [
+          2,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 27,
+        "Q2": 75
+      },
+      "actual_cross_coefficient": 1,
+      "selected_spin_squared_factors": [
+        1,
+        1
+      ],
+      "coherent_component_count": 32,
+      "selected_component_coefficient": 1,
+      "original_birth_labels": [
+        {
+          "resolved": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0,
+            "sign": 1
+          },
+          "coherent": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        }
+      ]
+    },
+    {
+      "m": 8,
+      "S": 8,
+      "alpha": {
+        "hole": [
+          0,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 28,
+        "Q1": 43,
+        "Q2": 267
+      },
+      "beta": {
+        "hole": [
+          2,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 43,
+        "Q2": 267
+      },
+      "actual_cross_coefficient": 1,
+      "selected_spin_squared_factors": [
+        1,
+        1
+      ],
+      "coherent_component_count": 32,
+      "selected_component_coefficient": 1,
+      "original_birth_labels": [
+        {
+          "resolved": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0,
+            "sign": 1
+          },
+          "coherent": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        }
+      ]
+    }
+  ],
+  "Gauss_checks": 440,
+  "CPU_seconds": 0.049959,
+  "wall_seconds": 0.050101707922294736,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "scope": "finite exact word identities, not actual trajectory probabilities"
+}

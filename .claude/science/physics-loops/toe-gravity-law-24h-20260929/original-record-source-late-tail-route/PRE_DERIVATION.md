@@ -1,0 +1,15 @@
+# Independent derivation record before a new control
+
+This is an author PRE, not an independent review. It records what has already been derived or exposed before any new code/control, not a claim that the mechanism was blind or wholly unanticipated.
+
+Read/refreshed actual prior: old finite-global-k proof and its periodic zero-flux construction, full response-geometry report and root receipt, local sparse-dark report, complete new fixed-U receipt, actual landed bounded compensation target proof, and the new PR9412 source note at72170ba4. PR9412 identifies outputs/dissipation, not the full Hamiltonian. Main remains fb5da8dd. Old source/primitive and selected procedure closure are unchanged and will be hash-bound again.
+
+Failed candidate retained: for a W1 word with one remote B vacancy, blocked negative SAME-HOLE paths do not imply global H=F F*. Off-center F*F terms cancel distant relocation paths present in F F*. Therefore a domain/range dimension count for the global F* does not prove a generic-flux dark kernel. This failure was sent to root immediately after the tempting candidate, before any claimed result.
+
+Current source-access candidate: let N=L^3/2, m=L/2, a=(0,m,0), v=(1,0,0). Leave v and three neighbors of a vacant in a W0 preparation: (1,m,0),(L-1,m,0),(0,m-1,0). There should be a matching of the other N-4 B sites by pairs sharing an A center. Start with x-axis pairs in each row; change row(m,0) to pair L-1 with1 and remove that pair, and use an alternating path through rows0,...,m-1 to leave v and(0,m-1,0) unmatched. This uses n=(N-4)/2 original formations. Each selected legal term has positive coefficient at zero cycle angle, and the actual full word has nonnegative coefficients there. The source then has W1, NB=N-1 and (N-2)/2 minus records. Its hole anchor is fixed, preventing cancellation of signs of the old plane wave across different hole positions.
+
+The actual fixed-graph effective Hamiltonian is electric quadratic plus a bounded finite trigonometric matrix in physical cycle coordinates. Its electric group is diagonal in Fourier indices in each finite charge block and is unitary in every fixed Sobolev norm; bounded smooth jump/H4 coefficients permit a Dyson argument in those norms. This should justify point evaluation and continuity of a FINITE original trajectory word at zero waiting durations. Such continuity is needed; trace-norm convergence alone would not justify evaluating a density at one angle.
+
+For a fiber dark vector psi0 with H(0)psi0=Gpsi0=0, adjoint contractivity gives ||S_theta(u)*psi0-psi0||<=delta C_L |theta| u. A nonzero actual source overlap on an angle cube of radius c/(1+u) would give a survival lower bound proportional to (1+u)^(-d), d=2L^3+1. This is only a candidate until source matching, full operator cancellation, Sobolev domains and microscopic source binding are written completely.
+
+Other active work: matter agent independently pursues a first-field weighted residence estimate. Its unchecked energy-current message is exposure only and is not used here. Root's scoped fixed-U theorem/check is available, but no late-response result has been assumed.

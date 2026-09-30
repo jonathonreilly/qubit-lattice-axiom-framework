@@ -216,3 +216,6 @@ Refresh 2026-09-30T14:57:54.416980+00:00: ranking preserved. Original source pri
 
 
 Refresh 2026-09-30T15:28:27.834620+00:00: preserve nonlinear/common-source/native ranking. Actual original quadratic energy reduces to signed current and sufficient dark-hole field residence; bright portion is checked. Fixed-fast-time response is checked, while actual physical-time signed forcing remains highest-value source residual. Native canonical modulation now gives a checked jump-or-nearby-field spectral alternative; homogeneous spectral/phase selection remains open. Flux insertion is a hypothesis check, not a result. No axiom inconsistency or global exhaustion.
+
+
+Refresh 2026-09-30T15:58:43.307200+00:00: preserve nonlinear/common-source/native ranking. Actual-source late tail and fixed-global-k first-moment response are checked but do not close continuous signed forcing; linked original-mark phase feedback is a distinct active route. Native homogeneous spectrum and concrete record compatibility are frozen checking targets. No repeated coefficient scan, universal no-go or axiom amendment is justified. Useful alternatives remain.

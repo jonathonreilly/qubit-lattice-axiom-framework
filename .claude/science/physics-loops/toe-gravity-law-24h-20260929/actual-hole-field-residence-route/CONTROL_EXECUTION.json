@@ -1,0 +1,25 @@
+{
+  "start_utc": "2026-09-30T15:16:41.955880+00:00",
+  "end_utc": "2026-09-30T15:16:42.106709+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/check_transport.py"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.14897945907432586,
+  "child_CPU_seconds": 0.14383,
+  "child_peak_RSS_bytes": 17956864,
+  "budget": {
+    "CPU_seconds_hard": 5,
+    "wall_seconds_hard": 30,
+    "RSS_bytes_observed": 104857600
+  },
+  "RSS_enforcement": "observed at return; no unsupported OS hard-address-space limit",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

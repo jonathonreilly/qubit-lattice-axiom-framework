@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-30T15:26:17.487641+00:00",
+  "main_recheck": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7\trefs/heads/main",
+  "pre_and_extension_frozen_hashes": "verified",
+  "runner_and_actual_results_bound": "verified",
+  "expected_control_fields": "all matched",
+  "json_parse": "all packet JSON valid",
+  "markdown_python_trailing_whitespace": "clean",
+  "python_syntax": "compile only passed; no additional scientific run",
+  "main_selected_working_bytes": 12,
+  "procedure_selected_hashes": 4,
+  "camp_input_identities": 13,
+  "new_science_runs": 1,
+  "independent_check_status": "Awaiting focused independent reconstruction; no formal review/audit status."
+}

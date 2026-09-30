@@ -1,0 +1,405 @@
+{
+  "utc": "2026-09-30T15:42:14.818459+00:00",
+  "report_sha256": "621b23a47549f0c83cb35816ae7fdea00ffec9663530c2db183f84b4a43c4443",
+  "actual_read": "Root complete author REPORT and WORKING_PROOF exact-delta, full independent PRE/ABEL_PRE/REPORT, actual runner/results/preflight/execution/history; scoped prior theorem reads reused as recorded at unchanged sources. No source correction or new execution.",
+  "verified_bindings": [
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/CHECKS.json",
+      "sha256": "187c8afe25fba5503421284fa648dbf82d3564c1ea3c8b727cb37090ae6db869",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/CONTRACT.md",
+      "sha256": "54eaf2732bb1ce1ec3bae87ac6b429b9b995a8a6ee4796690ae1b39a921b1eeb",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/CONTROL_EXECUTION.json",
+      "sha256": "dd36038408038940a946608bf6298c3665efcd71d90cf30ba58d231e40ed6fa5",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/CONTROL_PREFLIGHT.json",
+      "sha256": "f47af7aefeb6e89aa6042c8f807af83dcbe808cbe81e43af1199a0ef24e276ee",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/DERIVATION_HISTORY.md",
+      "sha256": "d3a04b5ef0054757bc377dbcefd221c42b0dd33cd567d28dc50d32a9319d32bf",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/PRE_DERIVATION.md",
+      "sha256": "8222a8775c35a637a79c1a0c096a6d61b19f447e5d7e755a200544faf4855eb7",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/PRE_FREEZE.json",
+      "sha256": "05657433a185e02afad074ac3463d01dd9e7830f1f240f356edddf2413bcfc38",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/PRIOR_REFRESH.json",
+      "sha256": "09ad9177a6a510f3876edc6a764d3ab068b72d69c143b6f971b368257e750e22",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/REPORT.md",
+      "sha256": "7aea8cc0ad06935d798316e276c829f82ad9199640c8edfe8d09dd3d205341bb",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/RESULTS.json",
+      "sha256": "75e20b88ab5c85b6c74e88024febedf4af2b059fd456b45bf1be51435defc176",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/SOURCE_IDENTITIES.json",
+      "sha256": "1563768b0b5e481f90d522d17d01e2d5c085b63c255827bcadca167f16456460",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/TARGET_EXTENSION.md",
+      "sha256": "751c7e609705d2a3d14b45ddbe7f5360cdc288a73c4678629c45cc1230985739",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/TARGET_EXTENSION_FREEZE.json",
+      "sha256": "033d7b7136ef3882c37157b762cc9d57780cb226219221a67d742a56c2213bb8",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/WORKING_PROOF.md",
+      "sha256": "d924ee86efaf205bc139aa53a0012b91633c30ef3dde56c4d3024be35584b2a9",
+      "matches": true
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/check_source_tail.py",
+      "sha256": "d5cdcddb6ebdc8d2bc99c904b5415e842be183bc3abc83bc5d3b7ed70b8b9550",
+      "matches": true
+    },
+    {
+      "group": "author_manifest",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/FREEZE.json",
+      "sha256": "48902a70cbc47c15b31dc4eea0f053542433bd25d355165a9a216ecc7a97a30b"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "procedural_inputs",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "procedural_inputs",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "procedural_inputs",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "procedural_inputs",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "matches": true,
+      "read_scope": "Identity validation only here; actual independent read scopes are in PRE_INPUTS and REPORT. No claim to fresh complete reading of every main/primitive entry."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-positive-forcing-route/REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-positive-forcing-check/REPORT.md",
+      "sha256": "1138c68f05694b57d9a695d0dc66b2d04bb66010f18df77edeba8cda26604946",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-retarded-response-route/REPORT.md",
+      "sha256": "f1ee2edee68f1878b6f6df728caa0d0dc886b77953679bd36e84e0755987ee15",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-retarded-response-route/SOURCE_IDENTITIES.json",
+      "sha256": "e749d593912e54976f62b101f7a79def4dcc038de7e9cb54a450926620e57ebf",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-fixed-fast-response-check/REPORT.md",
+      "sha256": "3b20b4fc319c025fa6fe106024df647b80abc16d3b8d635c5e228a80ffe63bab",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-finite-cluster-absorption-route/REPORT.md",
+      "sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-finite-cluster-absorption-check/REPORT.md",
+      "sha256": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-connected-resummation-route/REPORT.md",
+      "sha256": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-connected-resummation-check/REPORT.md",
+      "sha256": "f64caacd6cccff5be747325f68fa676007e39f2cc99971871c9c537cba7da2cf",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-geometry-route/REPORT.md",
+      "sha256": "7985ab65a276dff6d01efe06ef48da6b16aae52059e438e63dc14bb2194367d2",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-response-geometry-check/REPORT.md",
+      "sha256": "d510afdcbca005106bdfbdd11fbdac21e2f1f80b89301f8537cd7cfc27d536aa",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-dark-response-route/REPORT.md",
+      "sha256": "96c08bd265efa53dd420bab908efa02fc1d4fbdcace7373825c5805b3769123d",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "author_prior_inventory_integrity",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-fast-propagation-route/REPORT.md",
+      "sha256": "2f45858d3a2d154f202979420c3ea5c50feccfb3c286f5cda3ca1fc997192299",
+      "matches": true,
+      "read_scope": "Integrity check; no adoption beyond the explicit independent read scopes."
+    },
+    {
+      "group": "independent_pre_input",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "matches": true,
+      "read_scope": "complete source freshly read"
+    },
+    {
+      "group": "independent_pre_input",
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "matches": true,
+      "read_scope": "complete source freshly read"
+    },
+    {
+      "group": "independent_pre_input",
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "matches": true,
+      "read_scope": "sections1-2 and start of residual proof freshly read; actual operator and original instrument input"
+    },
+    {
+      "group": "independent_pre_input",
+      "path": "docs/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "fe294dec0a727482a325fee7dd44cb53b86343e65db0527a5f3f63db49bfe070",
+      "matches": true,
+      "read_scope": "sections1-2 freshly read; canonical coefficients/selection rules"
+    },
+    {
+      "group": "independent_pre_input",
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "matches": true,
+      "read_scope": "sections1-3 opening freshly read; not importing its distinct spin-half mark normalization or slow-birth limit"
+    },
+    {
+      "group": "independent_pre_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-geometry-route/REPORT.md",
+      "sha256": "7985ab65a276dff6d01efe06ef48da6b16aae52059e438e63dc14bb2194367d2",
+      "matches": true,
+      "read_scope": "full slab/Gauss section1-2 and most subsequent route; only exact dark embedding/row identities reused"
+    },
+    {
+      "group": "independent_pre_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-response-geometry-check/REPORT.md",
+      "sha256": "d510afdcbca005106bdfbdd11fbdac21e2f1f80b89301f8537cd7cfc27d536aa",
+      "matches": true,
+      "read_scope": "complete focused receipt freshly read"
+    },
+    {
+      "group": "independent_pre_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-retarded-response-route/WORKING_PROOF.md",
+      "sha256": "9208bac7cee182d688e721c609ab0fffd92b15ed0b8e8fa4867b94a20457d218",
+      "matches": true,
+      "read_scope": "complete sectionsA-F plus G and start H freshly read; fixed-U comparison only"
+    },
+    {
+      "group": "independent_pre_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-fixed-fast-response-check/REPORT.md",
+      "sha256": "3b20b4fc319c025fa6fe106024df647b80abc16d3b8d635c5e228a80ffe63bab",
+      "matches": true,
+      "read_scope": "complete focused receipt freshly read"
+    },
+    {
+      "group": "independent_pre_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-response-route/REPORT.md",
+      "sha256": "74b15d0fcc26b3ccef2f8863bee3707f945e4e792ec0c38a9b3fafadcc7eac26",
+      "matches": true,
+      "read_scope": "sections1-5 freshly read; finite-k absorption requires L>=4k, not dense fixed torus"
+    },
+    {
+      "group": "independent_pre_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-dark-response-route/REPORT.md",
+      "sha256": "96c08bd265efa53dd420bab908efa02fc1d4fbdcace7373825c5805b3769123d",
+      "matches": true,
+      "read_scope": "sections1-8 freshly read; canceled actual one-hole H/mark loss"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-connected-resummation-route/REPORT.md",
+      "sha256": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+      "read_scope": "Sections1-5 and start6 read after precomparison; full-carrier source bound4800 in section2 reconstructed. Later feedback claims not used."
+    }
+  ],
+  "control": "Three full result rows parsed and formulas verified; root did not rerun.",
+  "scope": "Actual fixed-graph source polynomial survival lower tail; separately all-volume complete connected positive-discount response. Safe microscopic transfer uses L>=64. No low-moment divergence, finite-spin physical-horizon tail, whole forcing or axiom inconsistency."
+}

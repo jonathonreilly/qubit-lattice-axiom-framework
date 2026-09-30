@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-30T15:12:20.986375+00:00",
+  "exit_code": 0,
+  "runner_sha256": "d5cdcddb6ebdc8d2bc99c904b5415e842be183bc3abc83bc5d3b7ed70b8b9550",
+  "results_sha256": "75e20b88ab5c85b6c74e88024febedf4af2b059fd456b45bf1be51435defc176",
+  "cpu_seconds": 0.21302700000000002,
+  "wall_seconds": 0.21342145802918822,
+  "peak_rss_bytes": 23969792,
+  "BLAS_threads": 1,
+  "failures": [],
+  "guard": "CPU hard limit30s; deadline/STOP/wall/RSS checked before and after each bounded fixture; actual0.214s wall, no additional process or worker."
+}

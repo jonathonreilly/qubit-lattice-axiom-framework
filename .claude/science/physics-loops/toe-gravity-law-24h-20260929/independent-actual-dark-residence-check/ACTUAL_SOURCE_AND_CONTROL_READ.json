@@ -1,0 +1,884 @@
+{
+  "utc": "2026-09-30T15:32:21.509188+00:00",
+  "frozen": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/ATTEMPTS.md",
+      "sha256": "6b1740469579402cd2efc2b9462951c0aa1f8be01632c9af0ba54fe961b53afd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/BRIGHT_FREEZE.json",
+      "sha256": "cd308ce0251b4af4e3b73e920b9b7be2619c352783a781489b6bdb7bf46e09da"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/BRIGHT_RESIDENCE.md",
+      "sha256": "436931a67639dbb909ca28fc1dca5224c27ea9f16bf234f4641f3c6e6c4f5bc9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/CONTRACT.md",
+      "sha256": "fc46be5941140fd9eb1bc458128504cd6b2033294005d380c82cb7b4287a3ec7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/CONTRACT_FREEZE.json",
+      "sha256": "fababaffbd4657225605ca6b8216c7c19a7c06eab69619b4e48e6e5d1d056281"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/CONTROL_EXECUTION.json",
+      "sha256": "6c1a4101d38678e94b9d93b81da440b65a35ed4eea743d425b8c897fc95a966b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/CONTROL_EXPECTATIONS.md",
+      "sha256": "a08c284327f8ea9c7d83df53c40722f5716f6f4d4ce4f636e0736263e917b528"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/CONTROL_FREEZE.json",
+      "sha256": "d60245d4d5377e59bd9dc8d0602fbb1f7b599a5bf76cdc16f7c3ea20463ac40a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/FIXED_FIELD_MULTIPLIER.md",
+      "sha256": "8dee2b277f43d46a34bb2e46d2dadc970bce9f08846b4d2212b80aeb30dfb540"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/INPUT_IDENTITIES.json",
+      "sha256": "3ecb432b293fc60878d5117bc79a92e3c6ceacc72ea012061f2f3d284ef9adda"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/MOVING_FIELD_TRANSPORT.md",
+      "sha256": "c7521a9973111c29050f8b77056b2e0ddf8d1043aa378866a1bc09bee72b3161"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/OPEN_PR_REFRESH.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/OPEN_PR_REFRESH.stdout",
+      "sha256": "6a995be62d04943c14d8126ea06ef4d50311499c0815a64cb9e93af411fff120"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/PRIOR_REFRESH.json",
+      "sha256": "03d20978088fe03b2dc5fa3f623e912f9ffeefa662b27fcd533ea82f5bcf2cb1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/PROOF_FREEZE.json",
+      "sha256": "38f62c283b59afe72e97aa5d1e96d6717399205ad5523c23e77db6f2855559d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/REMOTE_MAIN.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/REMOTE_MAIN.stdout",
+      "sha256": "db4fb173f51c5b7e1529d8ca131b990569dc06d0932eb7b854ec22b0fe4c2ac6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/REPORT.md",
+      "sha256": "04fc618e25164c40729fe512856a525a98176c200e961cd1ce6c7262fe700495"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/SOURCE_BINDINGS.json",
+      "sha256": "971b35628336aba641268cbe46d6ff4122d11f1613afcb363d397e2344462a22"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/SOURCE_SCALED_FIRST_MOMENT.md",
+      "sha256": "1620d456c0b10debb9431273a0c8e86d08014790f9e4856193a0aad3e5dc41bc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/STATE.json",
+      "sha256": "5897788177eb2f23de461c87befbc3f2b954168dd0e5de7dfbcf38053197926a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/TRANSPORT.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/TRANSPORT.stdout",
+      "sha256": "8bb9350d2589185c319f9fa58c5bb94c1e8be43755a33631b85681a66f604c80"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/TRANSPORT_RESULTS.json",
+      "sha256": "df943ae0e5a9f7340851298f049f07916c44705650b0e04ab9d5ea613fd686bb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/check_transport.py",
+      "sha256": "9e9ac653dd4a8e146258ccb33473f5fe243654146ca549e02bcf710a2ad4188c"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "actual_main_blob_matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "actual_main_blob_matches": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-microscopic-defect-check/REPORT.md",
+      "sha256": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-first-field-moment-check/REPORT.md",
+      "sha256": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-positive-forcing-route/REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-positive-forcing-check/REPORT.md",
+      "sha256": "1138c68f05694b57d9a695d0dc66b2d04bb66010f18df77edeba8cda26604946"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/QUADRATIC_BALANCE.md",
+      "sha256": "5cdc86b849b89249415409b45f506d954253753b36bacf72050095a15c0fdc9d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/ENERGY_FORM_AND_LEDGER.md",
+      "sha256": "21b837322b4b3f70c5bfc8da83970fa78fe9b306cd2b98ef33c78fca83d7c874"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-quadratic-energy-check/REPORT.md",
+      "sha256": "2c0d2830c325db578fde3f518aa411f7b16ae535ced73380113d3f9efd000ead"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-dark-response-route/REPORT.md",
+      "sha256": "96c08bd265efa53dd420bab908efa02fc1d4fbdcace7373825c5805b3769123d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-local-dark-response-check/REPORT.md",
+      "sha256": "0950c40b75e8cc2f2989d2f26b53f7051040f332a212b8e9012f2520ee36f92e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/local-spin-weighted-multiplier-route/REPORT.md",
+      "sha256": "2f757a4265cecd172ffdd61e78a265d1a0760c826f4ca67613c1f515b38d26d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/local-spin-weighted-multiplier-route/GOOD_REWARD_REFINEMENT.md",
+      "sha256": "42b120ef1e0d4a4afd82ae1afd0271be8f0db492a8f1bd738a4ec20c7af60e1a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-local-spin-multiplier-check/REPORT.md",
+      "sha256": "8cc6ec81ebe9fa7496486c7bbf31ad512daf8f391360a1012dadb981e91b575a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-connected-source-route/REPORT.md",
+      "sha256": "f0a95b357007327e3d29da03c91dd1e570ec07d7ea31b638a1a8b2276df878fc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-connected-resummation-route/REPORT.md",
+      "sha256": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/finite-spin-fast-response-route/REPORT.md",
+      "sha256": "d0a96836ee0f8f56d1e796819c28dd9355a31d8ac40dd76e2033039340c993d3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-finite-spin-fast-check/REPORT.md",
+      "sha256": "c3669299efc4529037fa9404385290a82c8f833014bc8df53eb453441850698b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-spin-response-route/REPORT.md",
+      "sha256": "f63b3c64d2a2e066b5d522bc6f0634605dc727b6ef4b79bb59b605fc3bd3187b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-local-spin-response-check/REPORT.md",
+      "sha256": "23c0852eb61e118f07eee8d58788ec67b217c6f647a5e5b466fda1746b452f7a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-actual-bright-residence-check/REPORT.md",
+      "sha256": "43a112df0cf651833b65aef849f90b77b0d7c83cd0a84255f37285690794d59c"
+    }
+  ],
+  "control_rows": [
+    {
+      "m": 0,
+      "S": 1,
+      "alpha": {
+        "hole": [
+          0,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 11,
+        "Q2": 11
+      },
+      "beta": {
+        "hole": [
+          2,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 11,
+        "Q2": 11
+      },
+      "actual_cross_coefficient": 1,
+      "selected_spin_squared_factors": [
+        1,
+        1
+      ],
+      "coherent_component_count": 32,
+      "selected_component_coefficient": 1,
+      "original_birth_labels": [
+        {
+          "resolved": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0,
+            "sign": 1
+          },
+          "coherent": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        }
+      ]
+    },
+    {
+      "m": 1,
+      "S": 1,
+      "alpha": {
+        "hole": [
+          0,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 14,
+        "Q1": 15,
+        "Q2": 15
+      },
+      "beta": {
+        "hole": [
+          2,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 15,
+        "Q2": 15
+      },
+      "actual_cross_coefficient": 1,
+      "selected_spin_squared_factors": [
+        1,
+        1
+      ],
+      "coherent_component_count": 32,
+      "selected_component_coefficient": 1,
+      "original_birth_labels": [
+        {
+          "resolved": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0,
+            "sign": 1
+          },
+          "coherent": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "S": 2,
+      "alpha": {
+        "hole": [
+          0,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 16,
+        "Q1": 19,
+        "Q2": 27
+      },
+      "beta": {
+        "hole": [
+          2,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 19,
+        "Q2": 27
+      },
+      "actual_cross_coefficient": 1,
+      "selected_spin_squared_factors": [
+        1,
+        1
+      ],
+      "coherent_component_count": 32,
+      "selected_component_coefficient": 1,
+      "original_birth_labels": [
+        {
+          "resolved": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0,
+            "sign": 1
+          },
+          "coherent": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        }
+      ]
+    },
+    {
+      "m": 4,
+      "S": 4,
+      "alpha": {
+        "hole": [
+          0,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 20,
+        "Q1": 27,
+        "Q2": 75
+      },
+      "beta": {
+        "hole": [
+          2,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 27,
+        "Q2": 75
+      },
+      "actual_cross_coefficient": 1,
+      "selected_spin_squared_factors": [
+        1,
+        1
+      ],
+      "coherent_component_count": 32,
+      "selected_component_coefficient": 1,
+      "original_birth_labels": [
+        {
+          "resolved": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0,
+            "sign": 1
+          },
+          "coherent": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        }
+      ]
+    },
+    {
+      "m": 8,
+      "S": 8,
+      "alpha": {
+        "hole": [
+          0,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 28,
+        "Q1": 43,
+        "Q2": 267
+      },
+      "beta": {
+        "hole": [
+          2,
+          0,
+          0
+        ],
+        "W": 1,
+        "NB": 11,
+        "N3": 11,
+        "rotor_loss": 0,
+        "moving_weight": 12,
+        "Q1": 43,
+        "Q2": 267
+      },
+      "actual_cross_coefficient": 1,
+      "selected_spin_squared_factors": [
+        1,
+        1
+      ],
+      "coherent_component_count": 32,
+      "selected_component_coefficient": 1,
+      "original_birth_labels": [
+        {
+          "resolved": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0,
+            "sign": 1
+          },
+          "coherent": {
+            "tail": [
+              1,
+              1,
+              0
+            ],
+            "axis": 0
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              0,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              15,
+              0
+            ],
+            "axis": 1
+          }
+        },
+        {
+          "resolved": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2,
+            "sign": -1
+          },
+          "coherent": {
+            "tail": [
+              2,
+              0,
+              15
+            ],
+            "axis": 2
+          }
+        }
+      ]
+    }
+  ],
+  "root_execution": "no new science run; full code and proof read; actual output parsed and checked"
+}

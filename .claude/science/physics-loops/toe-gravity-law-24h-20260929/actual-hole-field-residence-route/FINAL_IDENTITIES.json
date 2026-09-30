@@ -1,0 +1,109 @@
+{
+  "utc": "2026-09-30T15:27:26.627227+00:00",
+  "directory": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route",
+  "files": {
+    "ATTEMPTS.md": {
+      "sha256": "6b1740469579402cd2efc2b9462951c0aa1f8be01632c9af0ba54fe961b53afd",
+      "bytes": 4325
+    },
+    "BRIGHT_FREEZE.json": {
+      "sha256": "cd308ce0251b4af4e3b73e920b9b7be2619c352783a781489b6bdb7bf46e09da",
+      "bytes": 262
+    },
+    "BRIGHT_RESIDENCE.md": {
+      "sha256": "436931a67639dbb909ca28fc1dca5224c27ea9f16bf234f4641f3c6e6c4f5bc9",
+      "bytes": 8135
+    },
+    "CONTRACT.md": {
+      "sha256": "fc46be5941140fd9eb1bc458128504cd6b2033294005d380c82cb7b4287a3ec7",
+      "bytes": 4344
+    },
+    "CONTRACT_FREEZE.json": {
+      "sha256": "fababaffbd4657225605ca6b8216c7c19a7c06eab69619b4e48e6e5d1d056281",
+      "bytes": 207
+    },
+    "CONTROL_EXECUTION.json": {
+      "sha256": "6c1a4101d38678e94b9d93b81da440b65a35ed4eea743d425b8c897fc95a966b",
+      "bytes": 759
+    },
+    "CONTROL_EXPECTATIONS.md": {
+      "sha256": "a08c284327f8ea9c7d83df53c40722f5716f6f4d4ce4f636e0736263e917b528",
+      "bytes": 1289
+    },
+    "CONTROL_FREEZE.json": {
+      "sha256": "d60245d4d5377e59bd9dc8d0602fbb1f7b599a5bf76cdc16f7c3ea20463ac40a",
+      "bytes": 359
+    },
+    "FIXED_FIELD_MULTIPLIER.md": {
+      "sha256": "8dee2b277f43d46a34bb2e46d2dadc970bce9f08846b4d2212b80aeb30dfb540",
+      "bytes": 7283
+    },
+    "INPUT_IDENTITIES.json": {
+      "sha256": "3ecb432b293fc60878d5117bc79a92e3c6ceacc72ea012061f2f3d284ef9adda",
+      "bytes": 1314
+    },
+    "MOVING_FIELD_TRANSPORT.md": {
+      "sha256": "c7521a9973111c29050f8b77056b2e0ddf8d1043aa378866a1bc09bee72b3161",
+      "bytes": 5576
+    },
+    "OPEN_PR_REFRESH.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "OPEN_PR_REFRESH.stdout": {
+      "sha256": "6a995be62d04943c14d8126ea06ef4d50311499c0815a64cb9e93af411fff120",
+      "bytes": 5610
+    },
+    "PRIOR_REFRESH.json": {
+      "sha256": "03d20978088fe03b2dc5fa3f623e912f9ffeefa662b27fcd533ea82f5bcf2cb1",
+      "bytes": 846
+    },
+    "PROOF_FREEZE.json": {
+      "sha256": "38f62c283b59afe72e97aa5d1e96d6717399205ad5523c23e77db6f2855559d2",
+      "bytes": 446
+    },
+    "REMOTE_MAIN.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "REMOTE_MAIN.stdout": {
+      "sha256": "db4fb173f51c5b7e1529d8ca131b990569dc06d0932eb7b854ec22b0fe4c2ac6",
+      "bytes": 57
+    },
+    "REPORT.md": {
+      "sha256": "04fc618e25164c40729fe512856a525a98176c200e961cd1ce6c7262fe700495",
+      "bytes": 7448
+    },
+    "SOURCE_BINDINGS.json": {
+      "sha256": "971b35628336aba641268cbe46d6ff4122d11f1613afcb363d397e2344462a22",
+      "bytes": 9479
+    },
+    "SOURCE_SCALED_FIRST_MOMENT.md": {
+      "sha256": "1620d456c0b10debb9431273a0c8e86d08014790f9e4856193a0aad3e5dc41bc",
+      "bytes": 8564
+    },
+    "STATE.json": {
+      "sha256": "5897788177eb2f23de461c87befbc3f2b954168dd0e5de7dfbcf38053197926a",
+      "bytes": 806
+    },
+    "TRANSPORT.stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "TRANSPORT.stdout": {
+      "sha256": "8bb9350d2589185c319f9fa58c5bb94c1e8be43755a33631b85681a66f604c80",
+      "bytes": 118
+    },
+    "TRANSPORT_RESULTS.json": {
+      "sha256": "df943ae0e5a9f7340851298f049f07916c44705650b0e04ab9d5ea613fd686bb",
+      "bytes": 12454
+    },
+    "check_transport.py": {
+      "sha256": "9e9ac653dd4a8e146258ccb33473f5fe243654146ca549e02bcf710a2ad4188c",
+      "bytes": 5296
+    }
+  },
+  "immutable_after_freeze": true,
+  "actual_target_status": "dark residence open",
+  "no_science_worker_active": true
+}

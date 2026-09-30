@@ -1,0 +1,122 @@
+{
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "inputs": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "actual main law, full prior read reused; current-main bytes verified"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "role": "actual main law, full prior read reused; current-main bytes verified"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-microscopic-defect-check/REPORT.md",
+      "sha256": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-first-field-moment-check/REPORT.md",
+      "sha256": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-positive-forcing-route/REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-positive-forcing-check/REPORT.md",
+      "sha256": "1138c68f05694b57d9a695d0dc66b2d04bb66010f18df77edeba8cda26604946",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/QUADRATIC_BALANCE.md",
+      "sha256": "5cdc86b849b89249415409b45f506d954253753b36bacf72050095a15c0fdc9d",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/ENERGY_FORM_AND_LEDGER.md",
+      "sha256": "21b837322b4b3f70c5bfc8da83970fa78fe9b306cd2b98ef33c78fca83d7c874",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-quadratic-energy-check/REPORT.md",
+      "sha256": "2c0d2830c325db578fde3f518aa411f7b16ae535ced73380113d3f9efd000ead",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-dark-response-route/REPORT.md",
+      "sha256": "96c08bd265efa53dd420bab908efa02fc1d4fbdcace7373825c5805b3769123d",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-local-dark-response-check/REPORT.md",
+      "sha256": "0950c40b75e8cc2f2989d2f26b53f7051040f332a212b8e9012f2520ee36f92e",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/local-spin-weighted-multiplier-route/REPORT.md",
+      "sha256": "2f757a4265cecd172ffdd61e78a265d1a0760c826f4ca67613c1f515b38d26d0",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/local-spin-weighted-multiplier-route/GOOD_REWARD_REFINEMENT.md",
+      "sha256": "42b120ef1e0d4a4afd82ae1afd0271be8f0db492a8f1bd738a4ec20c7af60e1a",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-local-spin-multiplier-check/REPORT.md",
+      "sha256": "8cc6ec81ebe9fa7496486c7bbf31ad512daf8f391360a1012dadb981e91b575a",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-connected-source-route/REPORT.md",
+      "sha256": "f0a95b357007327e3d29da03c91dd1e570ec07d7ea31b638a1a8b2276df878fc",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-connected-resummation-route/REPORT.md",
+      "sha256": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/finite-spin-fast-response-route/REPORT.md",
+      "sha256": "d0a96836ee0f8f56d1e796819c28dd9355a31d8ac40dd76e2033039340c993d3",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-finite-spin-fast-check/REPORT.md",
+      "sha256": "c3669299efc4529037fa9404385290a82c8f833014bc8df53eb453441850698b",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-spin-response-route/REPORT.md",
+      "sha256": "f63b3c64d2a2e066b5d522bc6f0634605dc727b6ef4b79bb59b605fc3bd3187b",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-local-spin-response-check/REPORT.md",
+      "sha256": "23c0852eb61e118f07eee8d58788ec67b217c6f647a5e5b466fda1746b452f7a",
+      "role": "focused provisional input/prior, not main or formal review"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-actual-bright-residence-check/REPORT.md",
+      "sha256": "43a112df0cf651833b65aef849f90b77b0d7c83cd0a84255f37285690794d59c",
+      "role": "focused provisional input/prior, not main or formal review"
+    }
+  ],
+  "read_scope": "Complete relevant proof/receipt reads reused from continuing session at unchanged identities; complete fixed-k spin proof/receipt, fixed/sparse and spin multiplier/refinement, connected-source/resummation and first-field reread in this route. Local-spin completion entire proof had prior full author and independent-check exposure; sections1-2,5-8 freshly reread here. New root bright receipt read completely. The new energy receipt was supplied after its independent check and accepted only at its declared reduction scope. No broad novelty claim."
+}

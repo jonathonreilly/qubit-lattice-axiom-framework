@@ -1,0 +1,26 @@
+{
+  "frozen_at": "2026-09-30T15:36:52.340023+00:00",
+  "files": {
+    "ABEL_PRE.md": "5f191f7d46ed418ec888d45f19365fb08cf077dcac7b4742bcb425e604c4f377",
+    "PRE.md": "810dddf3d276d6f2eb23eede3eb47b0fb0477a5524360416d40689f8cf66c465",
+    "PRE_FREEZE.json": "c0af30e16a8916682501bb7cc3591321d534c7fa66c552af90e50fb68859af2f",
+    "PRE_INPUTS.json": "57dbfca35375f167076949b23237b29209010b66f3b16f6234009433b514df77",
+    "REPORT.md": "621b23a47549f0c83cb35816ae7fdea00ffec9663530c2db183f84b4a43c4443",
+    "SOURCE_BINDINGS.json": "796b8ad26e6bf039e1bd8dbf5f83e501599ffda6abb5a49b274a44213fba5694"
+  },
+  "target_report_sha256": "7aea8cc0ad06935d798316e276c829f82ad9199640c8edfe8d09dd3d205341bb",
+  "target_proof_sha256": "d924ee86efaf205bc139aa53a0012b91633c30ef3dde56c4d3024be35584b2a9",
+  "finding": "No material error found at separately stated fixed-graph rotor-source and finite-positive-Abel scopes. No correction requested.",
+  "actual_checks": [
+    "Independent precomparison dark-source/field-domain derivation",
+    "Different L12 literal legal formation construction in PRE",
+    "Complete author proof/source/runner read",
+    "Full original coherent signs and normalization reconstruction",
+    "Complete gain-loss locality and discount integration reconstruction",
+    "56 identity entries verified"
+  ],
+  "scientific_runs": 0,
+  "author_code_reruns": 0,
+  "formal_review_or_audit": false,
+  "deadline_stop_guard": "satisfied"
+}

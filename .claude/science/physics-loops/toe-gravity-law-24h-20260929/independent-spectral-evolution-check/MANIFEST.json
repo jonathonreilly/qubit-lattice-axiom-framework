@@ -1,0 +1,12 @@
+{
+  "utc": "2026-09-30T03:11:44.992606+00:00",
+  "status": "frozen focused independent check; not formal review",
+  "files": {
+    "PRECOMPARISON.md": "b8929c03a94f6b2a0f3e868ccfa85e029b2369787f3f596045f41d51d46d3d36",
+    "PRECOMPARISON_BINDINGS.json": "79e7b308d0803e0f9dcc2faeccc2a9118126d9d69ee9c8e28283e42676a43f11",
+    "REPORT.md": "11a2350888aea0c661b1ccf5f0196898ab9aa7012f0955b4e991bd257f3ba65f",
+    "SOURCE_BINDINGS.json": "0a155cde99c0d6f77ade51fce5060d5e657c3b8aaea44bf7d5f96828a219a95e",
+    "check_full_variation.py": "68e0140a4f75827f2d5655881cfc55a140232d6eb5785719906a3da1546c5ca6",
+    "full_variation.json": "e135426c54eb0586645fb1946862366dbb9c7eb6de520604badf49081762cf23"
+  }
+}

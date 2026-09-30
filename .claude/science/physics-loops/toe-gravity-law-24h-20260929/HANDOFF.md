@@ -416,3 +416,58 @@ push/PR verification are still pending. Original scientific/reviewer bytes
 are unchanged. Autonomous supplier coherent source preparation is active in
 a separate dedicated worktree; no fourth PR or formal review exists yet.
 Original deadline remains22:41UTC. Useful substantive targets remain.
+
+## Durable checkpoint 2026-09-30T03:27:20.565210+00:00
+
+PR9396 was CLOSED externally while its graph-only rebase was being completed.
+Main30a9461ee19a49b99fa6628fe942f08e504e8903 contains its full mathematics and
+identical runner; root read the exact source/output/cache deltas. Only the
+reproduction paragraph, fresh runtime metrics and source binding changed.
+The campaign did not merge/land, recreate its deleted remote branch or change
+the closed PR. Original reviewed head878a remains recovery; local unused
+rebase525e00db8b7cbed1c1c5d81228993328a65136f1 on d31 is preserved with actual
+one-node/one-edge regenerated graph and same-session source confirmation.
+The latter is copied as native-density-unused-rebase-confirmation.md; it
+explicitly makes no claim about newer main. All3createdURLs remain inPRS.json.
+
+Root read complete independent-spectral-evolution-check/REPORT.md,
+SHA11a2350888aea0c661b1ccf5f0196898ab9aa7012f0955b4e991bd257f3ba65f.
+It checked the entire analytic existence/Volterra/consistency/constraint proof
+and independently reconstructed all324canonical derivatives in3D at n3 plus
+24dense n5directions, agreeing below4.53e-16. Wrong-chain-rule and omitted
+adjoint controls are nonzero; actual4.754s/34.8MB. No author code was run.
+The proof concerns the actual full finite Hamiltonian over a common analytic
+time, not exact finite first-class closure or general smooth stability.
+
+The centered local continuation is frozen in spectral-local-approximation-probe,
+REPORTe2efd8f2ef08b175d13ea70f09e4f3969701657fcfc1e1f07adddfdc0107d74d.
+Its direct periodic-symbol sampling bound includes ALL aliases and gives
+O(spacing^2) actual evolution/constraint errors under the same analytic
+conditions. Exact global unit-lapse H has a radius-one-star density, actual
+canonical equations radius at mosttwo. Focused independent report
+fbe225802f20bbc864b9401fe5f848ca0ab535c7b6a240cb825e5341df760d8f is frozen;
+root final report read is next. The same-author adapted diagnostic actually
+ran14.854s/106.9MB, gradient2.33e-16, and state/error-spacing-squared ratios
+approach1.459e-5. Initial and final nonzero Jx are retained. No interval/time
+certification or theorem from samples follows. Scalar-common-action-continuation
+now has a full author proof of coupled evolution and a conformal contraction
+constructing nonconstant compatible initial data, frozen647b1ed39b9fac225b5db07e34fdf64babad273640c99dd471b50f34e8bafd35.
+Its independent precomparison is active; no diagnostic yet. The supplied
+scalar is expressly NOT the original rotor/walker or a replacement readout.
+
+Root read complete independent-native-threshold-positive-check/REPORT.md,
+SHAbe619cf25c51229940000c7c6ed29a61a4665e270c01ba6f602facdb2c7d0949.
+It validates strict positivity of the15-channel threshold form at each
+fixedpositive mu,tau using the actual spectator pin and decaying response.
+No numerical minimum, positive-energy flux scattering or phase is proved.
+A new genuinely many-particle/dilute-phase deep route is active; no result yet.
+
+Autonomous original-record coherent milestone sourceab6d280... and primary
+d06bd7... in /private/tmp/toe-autonomous-record-supplier-20260930 were fully
+cold-read by root. One Astra-low independent source review reports PASS WITH
+BOUNDED CLAIMS, zero material findings; root report/identities read pending.
+Actual source/primary unchanged. Candidate baseadvanced30a; actual serialized
+graph build active with deadline/STOP/RSS monitoring, no commit/push/PR yet.
+Combined integration gates/audit remain separate and unrun. The mathematical
+proof preserves original marked rotor process and explicit energy/clock costs.
+Original deadline Sep30 22:41UTC remains unchanged. Useful work remains.

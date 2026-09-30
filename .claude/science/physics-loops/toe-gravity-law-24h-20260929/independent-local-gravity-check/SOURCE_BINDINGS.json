@@ -1,0 +1,19 @@
+{
+  "utc": "2026-09-30T03:21:26.921852+00:00",
+  "status": "focused independent mathematical check, not formal review",
+  "procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "observed_origin_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "inputs": {
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-local-approximation-probe/CONTRACT.md": "de83475f3605c26def66a2d6c6a8c4e5cf735665f199323796a9ab546785a6a4",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-local-approximation-probe/REPORT.md": "e2efd8f2ef08b175d13ea70f09e4f3969701657fcfc1e1f07adddfdc0107d74d",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-local-approximation-probe/check_local_flow.py": "2c9da54dd8ebe55fa43a83102418f9d9d4452249ef3a573c4bf611a3ea38b264",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-local-approximation-probe/local_flow.json": "a97a7ecb1993898928c16afe845b7eb9d044d88d21e93681a0f1fd3867694be8",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-local-approximation-probe/RUN_LOG.md": "94a3d8885879ff8c948f9ade6992069afbb0c9d1ad60255b20b4bc8de6976156",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-local-approximation-probe/FREEZE.json": "d4ea98defefbccf02bda531bae68d2b293b58cfe35d70296526e94d283e1ac68",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/REPORT.md": "93e302c06d9e6a6c85f3c538f2d765ec1dcb5734065f740b310e9144f6abd6b8",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/FIRST_ORDER_FORMULATION.md": "6e2f18f095420f4c7d501dcdaf3752c80285807cb22b4b41e9aeece01bc91417",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-spectral-evolution-check/REPORT.md": "11a2350888aea0c661b1ccf5f0196898ab9aa7012f0955b4e991bd257f3ba65f",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-nonlinear-route/REPORT.md": "5c8361a4fd6d2a59062dd58aafa4332b41828019beb62251b023adc5225e931a"
+  },
+  "coverage": "Complete new contract, report, diagnostic source, result, run log and freeze read. Parent proof reused within prior independently checked quantifiers. No author code imported/executed; no numerical job; no blanket prior-art coverage."
+}

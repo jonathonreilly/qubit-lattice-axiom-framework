@@ -1,0 +1,41 @@
+{
+  "description": "Independent full 3D local partials and literal original-H variation; author code not imported or executed.",
+  "couplings": {
+    "a": 1.3,
+    "K": 0.7
+  },
+  "epsilon": 1e-24,
+  "grids": [
+    {
+      "original_vs_augmented_H": 1.734723475976807e-18,
+      "explicit_Tp_error": 1.3877787807814457e-16,
+      "false_chain_rule_r_max_error": 0.00022298625601625648,
+      "false_chain_rule_H_error": 3.54886389893061e-08,
+      "omitted_r_adjoint_max_error": 0.006624851013197116,
+      "minimum_metric_eigenvalue": 0.982614493169346,
+      "checked_coordinate_derivatives": 324,
+      "n": 3,
+      "sites": 27,
+      "max_gradient_error": 4.5232914636095245e-16,
+      "derivative_skew_error": 0.0
+    },
+    {
+      "original_vs_augmented_H": 3.469446951953614e-18,
+      "explicit_Tp_error": 1.3877787807814457e-16,
+      "false_chain_rule_r_max_error": 3.490562236564687e-06,
+      "false_chain_rule_H_error": 8.147614527498348e-13,
+      "omitted_r_adjoint_max_error": 0.0069785648090247895,
+      "minimum_metric_eigenvalue": 0.9774586471809049,
+      "checked_dense_tangent_directions": 24,
+      "n": 5,
+      "sites": 125,
+      "max_gradient_error": 3.191891195797325e-16,
+      "derivative_skew_error": 0.0
+    }
+  ],
+  "wall_seconds": 4.754335165023804,
+  "cpu_seconds": 3.05486,
+  "max_rss_bytes": 34816000,
+  "script_sha256": "68e0140a4f75827f2d5655881cfc55a140232d6eb5785719906a3da1546c5ca6",
+  "utc": "2026-09-30T03:08:43.796457+00:00"
+}

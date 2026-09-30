@@ -1,0 +1,18 @@
+{
+  "frozen_at_utc": "2026-09-30T02:56:21.262913+00:00",
+  "new_author_report_formulation_code_read": false,
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-spectral-evolution-check/PRECOMPARISON.md",
+      "sha256": "b8929c03a94f6b2a0f3e868ccfa85e029b2369787f3f596045f41d51d46d3d36"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/CONTRACT.md",
+      "sha256": "1a41a1b4c24f5e19ac00e775722cb7ffef752b3467e019f3bb21c7fea9db9b56"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-nonlinear-route/REPORT.md",
+      "sha256": "5c8361a4fd6d2a59062dd58aafa4332b41828019beb62251b023adc5225e931a"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "baseRefOid": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+  "headRefName": "physics-loop/native-pair-density-20260930",
+  "headRefOid": "878a1908ad561eec7237b5fbe0f3294c91d8fa8d",
+  "mergeCommit": null,
+  "mergedAt": null,
+  "state": "CLOSED",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9396",
+  "checked_at": "2026-09-30T03:16:07.532377+00:00",
+  "main_landing": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "unused_local_rebase": "525e00db8b7cbed1c1c5d81228993328a65136f1",
+  "action": "No push, PR update or merge; external source delta independently read."
+}

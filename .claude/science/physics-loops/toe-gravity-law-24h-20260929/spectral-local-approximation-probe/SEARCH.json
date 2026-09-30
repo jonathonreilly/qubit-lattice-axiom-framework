@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-30T03:13:35.483260+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "queries": [
+    {
+      "query": "(analytic|Wiener).*(finite.range|central|centered|local|converg)",
+      "hit_count": 84,
+      "full_hits_file": "prior_hits_1.txt"
+    },
+    {
+      "query": "(finite.range|central|centered).*(analytic|ADM|converg)",
+      "hit_count": 56,
+      "full_hits_file": "prior_hits_2.txt"
+    },
+    {
+      "query": "constraint.{0,25}(error|approx).{0,25}(Hamilton|local|continu)",
+      "hit_count": 0,
+      "full_hits_file": "prior_hits_3.txt"
+    }
+  ],
+  "new_main_delta": "Only prior native density theorem/reproduction; original gravity/math sources unchanged.",
+  "novelty": "No historical novelty claimed. Closest spectral-evolution and finite-range exact obstruction are read in full."
+}

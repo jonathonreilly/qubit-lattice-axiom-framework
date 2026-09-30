@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-30T03:14:40.365825+00:00",
+  "parent_independent_check": "11a2350888aea0c661b1ccf5f0196898ab9aa7012f0955b4e991bd257f3ba65f",
+  "files": {
+    "CONTRACT.md": "de83475f3605c26def66a2d6c6a8c4e5cf735665f199323796a9ab546785a6a4",
+    "REPORT.md": "e2efd8f2ef08b175d13ea70f09e4f3969701657fcfc1e1f07adddfdc0107d74d",
+    "check_local_flow.py": "2c9da54dd8ebe55fa43a83102418f9d9d4452249ef3a573c4bf611a3ea38b264"
+  },
+  "execution": "not yet run; author reuse declared"
+}

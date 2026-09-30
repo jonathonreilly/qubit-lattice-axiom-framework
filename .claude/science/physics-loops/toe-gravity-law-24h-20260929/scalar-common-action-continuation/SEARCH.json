@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-30T03:19:23.187768+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "queries": [
+    {
+      "query": "(Lichnerowicz|conformal method|constant.mean.curvature)",
+      "hits": 54
+    },
+    {
+      "query": "(Einstein.scalar|Einstein.Klein.Gordon|ADM).*(analytic|initial|converg)",
+      "hits": 29
+    }
+  ],
+  "open_proposals": "Only draft9008 at preceding03:16 refresh; no relevant new proposal",
+  "claim": "No historical novelty; explicit standard changed matter carrier, never a substitute for original record outputs."
+}

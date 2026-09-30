@@ -1,0 +1,78 @@
+{
+  "couplings": {
+    "a": 1,
+    "K": 1
+  },
+  "full_gradient_fixture_n": 7,
+  "gradient_complex_step_error": 2.3245294578089215e-16,
+  "eta": 0.05,
+  "sigma0": 0.05,
+  "initial_metric_norm_at_2sigma0": 0.113293845255265,
+  "duration": 0.01,
+  "rows": [
+    {
+      "n": 17,
+      "J": 8,
+      "spacing": 0.36959913571644626,
+      "function_evaluations": 14,
+      "initial_C_sup": 4.344076033082894e-16,
+      "initial_J_sup": 0.00021817834750342824,
+      "state_error_sup": 1.58290218493784e-06,
+      "final_C_sup": 4.228126699087252e-06,
+      "final_J_sup": 0.000218178386880985,
+      "energy_drift": 2.302634142991985e-16
+    },
+    {
+      "n": 33,
+      "J": 16,
+      "spacing": 0.19039955476301776,
+      "function_evaluations": 14,
+      "initial_C_sup": 4.664678406248985e-16,
+      "initial_J_sup": 6.127114757398244e-05,
+      "state_error_sup": 4.97981889724386e-07,
+      "final_C_sup": 1.330170963284771e-06,
+      "final_J_sup": 6.127114735461625e-05,
+      "energy_drift": 8.855748288428199e-17
+    },
+    {
+      "n": 65,
+      "J": 32,
+      "spacing": 0.0966643893412244,
+      "function_evaluations": 14,
+      "initial_C_sup": 8.505233676575627e-16,
+      "initial_J_sup": 1.6042439334909564e-05,
+      "state_error_sup": 1.3432150947068067e-07,
+      "final_C_sup": 3.58789296230572e-07,
+      "final_J_sup": 1.604243918072734e-05,
+      "energy_drift": 8.050001729592484e-17
+    },
+    {
+      "n": 129,
+      "J": 64,
+      "spacing": 0.04870686284635338,
+      "function_evaluations": 14,
+      "initial_C_sup": 6.965030692401551e-16,
+      "initial_J_sup": 4.093323371423541e-06,
+      "state_error_sup": 3.4506454749116955e-08,
+      "final_C_sup": 9.217099063384774e-08,
+      "final_J_sup": 4.093323344125932e-06,
+      "energy_drift": 8.872667726825672e-17
+    },
+    {
+      "n": 257,
+      "J": 128,
+      "spacing": 0.024448191856729907,
+      "function_evaluations": 14,
+      "initial_C_sup": 8.793700866466572e-16,
+      "initial_J_sup": 1.0326391064047202e-06,
+      "state_error_sup": 8.719938882073563e-09,
+      "final_C_sup": 2.3292030618378624e-08,
+      "final_J_sup": 1.032639105835731e-06,
+      "energy_drift": 7.53914702294706e-17
+    }
+  ],
+  "seconds": 14.854384375037625,
+  "max_rss_bytes": 106938368,
+  "derivative": "Local centered difference; same author engine adapted, not independent",
+  "scope": "Floating deterministic diagnostic; no interval certification, no uniform theorem from samples, duration not certified by majorant bound."
+}

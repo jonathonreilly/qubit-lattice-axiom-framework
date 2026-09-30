@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-09-30T03:09:34.254421+00:00",
+  "old_reviewed_head": "878a1908ad561eec7237b5fbe0f3294c91d8fa8d",
+  "current_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "rows": [
+    {
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "old_sha256": "84c2188063d91af9364b35ae459b8f413eae8a61a3200a058f6fd0f907b6d3fb",
+      "new_sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+      "same": false
+    },
+    {
+      "path": "scripts/native_qubit_pair_density_onset_2026_09_30.py",
+      "old_sha256": "4ee2a415b9ebf2618fa872f2f8f1e3c17097e5f3b65d2cce13d287b87de9885a",
+      "new_sha256": "4ee2a415b9ebf2618fa872f2f8f1e3c17097e5f3b65d2cce13d287b87de9885a",
+      "same": true
+    },
+    {
+      "path": "outputs/native_qubit_pair_density_onset_2026_09_30.json",
+      "old_sha256": "0d5516520d2bfe7447c1d32a586d98e1581d818ac9cc0d363f4721180fca9b16",
+      "new_sha256": "2059db16ca56c39d984ca234d1e3ec6b4cea1c95cf1a33ecaa165a0ace154c51",
+      "same": false
+    },
+    {
+      "path": "logs/runner-cache/native_qubit_pair_density_onset_2026_09_30.txt",
+      "old_sha256": "dfdba90d9afc73b7384ea8e435d12534cba90fcdb4eac9bb92c8a5a347f5c917",
+      "new_sha256": "5794eaea2bb1bc12f0946fbf6f90ef05094341110bfd7d8186f9cf3a2da48a60",
+      "same": false
+    }
+  ],
+  "authority": "External main landing; root did not merge/land; actual source deltas read separately."
+}

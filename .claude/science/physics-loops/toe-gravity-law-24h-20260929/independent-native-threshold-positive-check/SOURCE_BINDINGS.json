@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-30T03:16:03.101708+00:00",
+  "kind": "dependent focused mathematical check; no formal review",
+  "procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "observed_origin_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "inputs": {
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-threshold-positive-extension/REPORT.md": "5b795a11ca2450033acea3e896877c606027d160162f3281d93c1246a34e0f81",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-threshold-positive-extension/SOURCE_BINDINGS.json": "0925d986e9032310cdc73de98b74a2f9ca6243a26c8d0d8d7036950adf7bd8ca",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-scattering-route/REPORT.md": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-scattering-check/REPORT.md": "730d47f5a5ed1c27e83f1bd4aad0c11fb4810e6cb1ee3b8e83b0ceec43ff73b7",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-coercivity-route/REPORT.md": "27c9aee46d3d34c3fe7949f0774cd4de93c7b14df7f26461f4e615d3c1ad0811",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-coercivity-check/REPORT.md": "7277bd320de924928576a18d8bb48741ba02c81fdee4104e615eac47f25de6ab",
+    "/private/tmp/toe-native-pair-density-20260930/docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md": "84c2188063d91af9364b35ae459b8f413eae8a61a3200a058f6fd0f907b6d3fb",
+    "30a9461ee19a49b99fa6628fe942f08e504e8903:docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+  },
+  "coverage": "Complete short extension; load-bearing threshold sections revisited against previously frozen full check; actual density source definitions/SOS/pin reread and compared to main. Prior checks reused only as described in REPORT. No new computation, author import, or author code execution."
+}

@@ -1,0 +1,59 @@
+{
+  "utc": "2026-09-30T03:11:44.618849+00:00",
+  "selected_main": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+  "procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "observed_origin_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/REPORT.md",
+      "sha256": "93e302c06d9e6a6c85f3c538f2d765ec1dcb5734065f740b310e9144f6abd6b8",
+      "coverage": "complete read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/FIRST_ORDER_FORMULATION.md",
+      "sha256": "6e2f18f095420f4c7d501dcdaf3752c80285807cb22b4b41e9aeece01bc91417",
+      "coverage": "complete read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/CONTRACT.md",
+      "sha256": "1a41a1b4c24f5e19ac00e775722cb7ffef752b3467e019f3bb21c7fea9db9b56",
+      "coverage": "complete read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/check_axial_flow.py",
+      "sha256": "71b0c1fe102876c2c56fad04afaa9f020eef35acbf62bb607e82b90ce7842fe9",
+      "coverage": "complete read; code read but not imported or run"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/axial_flow.json",
+      "sha256": "8a84500e872835782b78b4269d137c49acdaf05f26cc4345931d1ea417b037cd",
+      "coverage": "complete read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/RUN_LOG.md",
+      "sha256": "23e16917f35213ba308ee0e73c0eacee4a5965fe17427f9b4147433f2261f40a",
+      "coverage": "complete read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/SOURCE_BINDINGS.json",
+      "sha256": "95ba989f7a9f4d044abbb12bb0eb184883ca358055d934527fdd56889d27a895",
+      "coverage": "complete read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/FREEZE.json",
+      "sha256": "e6b56e679beac789571df29258b73e89e011f9fde15375238afdbaa9d9e928f4",
+      "coverage": "complete read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-nonlinear-route/REPORT.md",
+      "sha256": "5c8361a4fd6d2a59062dd58aafa4332b41828019beb62251b023adc5225e931a",
+      "coverage": "complete read; prior exact law/continuum algebra dependency"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-spectral-check/REPORT.md",
+      "sha256": "febcbd0cde52487c6e9fedf7e45c8006097c4cc93b31eb246bde61f10c3f171c",
+      "coverage": "complete read; prior exact law/continuum algebra dependency"
+    }
+  ],
+  "limits": "No formal review/audit. Author source imported/executed: false. No blanket prior-art or native-M2 coverage."
+}

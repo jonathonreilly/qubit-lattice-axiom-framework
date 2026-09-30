@@ -1,0 +1,7 @@
+# Refreshed local-continuation prior art
+
+Main30a9461ee19a49b99fa6628fe942f08e504e8903. Exact three-query searches and full raw hits retained in SEARCH.json/prior_hits*. The closest finite-range mixed-closure source and full spectral candidate have already been read, with explicit changed-law scope. This is a dependent continuation of that same candidate, not an independent discovery of finite differences.
+
+The new matched SIGNED_GRAVITY_CONTINUUM_GRADED_EINSTEIN_LOCALIZATION_NOTE.md and CONTINUUM_LIMIT_NOTE.md were read completely at this main. The former is a formal graded recursion on a supplied invertible constrained slice and projects nonlinear maps into a chosen linear constraint kernel; it does not establish our actual full finite Hamiltonian evolution. The latter explicitly binds a finite-h propagator/deflection trend and leaves its convergence theorem unproved. Our changed ADM law does not close either source's distinct target. Scalar divided-difference Ward boundaries and fermion Wick/staggered symbols concern different carriers/equations; no result from them is imported. The complete Regge exact-reduction source was already read during the parent route and is quadratic with nonlinear extension open.
+
+Current open proposals at03:16UTC: only draft9008, headc2f56b729f4aae3eb8acf115c2be4fa074269d46, transverse angular ice covariance; unchanged prior contextual scope. No open proposal is adopted. Native PR9396 closed externally with its mathematics on main. No historical novelty or repository-wide exclusion follows from these searches.

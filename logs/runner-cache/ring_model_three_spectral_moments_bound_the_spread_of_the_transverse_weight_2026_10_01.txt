@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_three_spectral_moments_bound_the_spread_of_the_transverse_weight_2026_10_01.py
+runner_sha256: 9b213ae00950aa06681de8b2425310c20875d8828365bb189fecbc375e5743e4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.50
+status: ok
+----- stdout -----
+[PASS] (I) for 40 random rational measures, E_p[omega/omega_g] = E_p[omega_g/omega] = 1/R exactly (sympy), so E_p[cosh ln x - 1] = 1/R - 1
+[PASS] (T1) ratio window: the fraction of S weight outside [omega_g/lam, lam omega_g] is at most 2(1 - R)/(R(lam + 1/lam - 2)); attained exactly by three-atom rational measures; no violation in random positive measures :: R = 9/10, lam = 2: boundary weight 4/9 = bound; R = 24/25, lam = 3: boundary weight 1/16 = bound; R = 99/100, lam = 3/2: boundary weight 4/33 = bound; R = 4/5, lam = 5: boundary weight 5/32 = bound; random: 68593 tests, 0 violations, largest ratio to the bound 0.9940
+[PASS] (H) hole: no weight in omega_g (1 - d, 1 + d) forces R <= 1 - d^2/2; equality exactly for two atoms at omega_g (1 -+ d) (rational check at d = 1/10, 3/10, 1/2); no violation in random measures :: random: 20000 tests, 0 violations
+[PASS] (G) gap: two parts with m0 fractions 1 - eps, eps and all cross ratios outside (1/r, r) satisfy R^-2 - 1 >= eps(1 - eps)(r + 1/r - 2); equality exactly for two atoms (rational check); no violation in random split measures :: random: 20000 tests, 0 violations
+[PASS] application to the landed 8^3 estimates at k = pi/4 (forward-walking S = 0.4084 +- 0.0144, ceiling sqrt(m1 m_-1) = 0.4243, omega_g = sqrt(m1/m_-1) = 1.042 s): estimated bounds at R and at R minus one standard error (reported) :: R = 0.963: outside a factor 1.5 / 2 / 3 at most 0.467 / 0.156 / 0.058; a hole of half-width 0.274 about omega_g is allowed; a minority mode at frequency ratio 2 / 3 / 10 carries at most 0.198 / 0.064 / 0.0099 of S; R = 0.929: outside a factor 1.5 / 2 / 3 at most 0.923 / 0.308 / 0.115; a hole of half-width 0.378 about omega_g is allowed; a minority mode at frequency ratio 2 / 3 / 10 carries at most 0.500 / 0.139 / 0.0201 of S; 1 s
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

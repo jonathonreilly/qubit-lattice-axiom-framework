@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_birth_touchings_are_exact_cubic_points_of_charge_one_for_every_j_2026_10_01.py
+runner_sha256: 15be1fde19f716d27386ba763ec41e3d841175873c4a7e39ead893d81e4e4034
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 8.74
+status: ok
+----- stdout -----
+[PASS] 1 node + kernel projector (birth conditions, spectrum, P, G) :: kappa_c = Y/(2A), z0 = (J+omega)^2/(2(J+2)) on |z| = 1, F2 = 0, f3 = 0; det(H - lambda) = lambda^2 (lambda^2 - 16J^2); P rank-2 projector, G = -M0/c; J=1: kappa_c = sqrt15/10, z0 = (-2 + i sqrt5)/3, levels 0, 0, +-4
+[PASS] 2 Schur complement (degree <= 3): t-linear and t^3 matrices vanish; no identity part through weight 3 :: 17 nonzero monomials u^a v^b t^c, none equal to t or t^3; tr Sigma_u = tr Sigma_v = tr Sigma_tt = tr Sigma_ut = 0 (weights u:2, v:3, t:1)
+[PASS] 3 d_tt = -u2 d_u exactly (no v part), u2 < 0 on (0, 2); u' = u - u2 t^2 removes the t^2 term :: Sigma_tt = g Sigma_u, g = omega (J+2)/(2(J^3-4J-4)), u2 = W (J+2)/(2(J^3-4J-4)); J=1: u2 = -3*sqrt(5)/14 (-0.479157)
+[PASS] 4 x_u, x_v, x_beta mutually orthogonal, norms a^2, b^2, g^2, det[x_u, x_v, x_beta] > 0 :: a^2 = (J^3-4J-4)^2/((J+2)^2 A), b^2 = 2J^3(J+1)^2/((J+2)^2 A), g^2 = J^4(J+2)/(8(J^3-4J-4)^2), det = W Y J^3(J+1)/(2(J+2)^2 A^2); J=1: a^2 = 49/45, b^2 = 8/45, g^2 = 3/392, det = sqrt(3)/45 (0.038490)
+[PASS] 5 D = det H: Hessian rank two; weights (3,3,1): weights 0-5 vanish, weight 6 = c |d0|^2 (independent of the Schur route) :: D = c a^2 u^2 + c b^2 v^2 + ..., c = 16J^2, kernel t; weights (2,3,1): leading c a^2 (u - u2 t^2)^2 (degenerate); weight 6 = c (a^2 u'^2 + b^2 v^2 + g^2 t^6); J=1: c a^2 = 784/45, c b^2 = 128/45, c g^2 = 6/49
+[PASS] 6 local degree of d/|d| at the merged point is +1 for every J in (0, 2) :: orthonormal frame (x_u/a, x_v/b, x_beta/g) of orientation +1: d0 = (a u', b v, g t^3), Jacobian 3abg t^2 >= 0, (u,v) -> (xi1,xi2) Jacobian 2; sign T > 0, flux -1; J=1: d0 = (1.043498 u', 0.421637 v, 0.087482 t^3)
+[PASS] 7 unfolding kappa = kappa_c + eps: d = x_u u'' + x_v v + x_beta (t^3 - mu eps t), mu > 0; charges (-,+,+) above, (+) below :: weight <= 3 monomials {t^2, u, eps, v, eps t, u t}; Sigma_eps = rho Sigma_u; eps*t matrix = mu beta, mu = 8YA/(J^2(J+2)); J=1: mu = 40*sqrt(15)/3; charges eps>0 [-1, 1, 1], eps<0 [1]
+[PASS] 8 first-order consistency with the landed node families (plane f3, line x, plane x) :: (2 pi f3)^2 = mu eps [d(1-cos 2 pi f3)/dk = (J+2)/(2 k^3) = mu/2]; d cos(line)/dk from (1-d)/(4k^2) and d cos(plane)/dk = J/(2k^3) equal the unfolding values; J=1: -10*sqrt(15)/63, 20*sqrt(15)/9
+[PASS] 9 exact signs on 0 < J < 2 (factorisation + Sturm counts) :: A > 0, J^3-4J-4 < 0 (no root in [0, 2]); a^2, b^2, g^2, mu/Y, det/(WY) > 0, u2/W < 0: {'a2': 1, 'b2': 1, 'g2': 1, 'mu/Y': 1, 'det/WY': 1, 'u2/W': -1}; kappa_c = Y/(2A) > 0 (Y -> -Y flips only det)
+[PASS] 10 no rational one-parameter parametrisation: data lie on a smooth intersection of two quadrics (genus 1) :: omega^2 + A = 0 = rho^2 + J(J+2) in P^3 (rho = iR, Y = -rho omega, kappa_c = rho/(2 omega)); det(lam Q1 + mu Q2) = -lam*mu*(5*lam**2 - 2*lam*mu + mu**2); Jacobian-minor ideal = (1) in 4 charts
+[PASS] 11 FLOAT (not certified): independent float Schur code vs exact forms; sphere Berry fluxes -1 (merged), +1 (mirror) :: J = 0.4, 1.0, 1.6: max rel dev of a, b, u2, g, det 1.1e-14, max vanishing part 3.7e-15; fluxes r = 0.004, 0.008: [-1.0, -1.0, -1.0, -1.0, -1.0, -1.0], mirror [1.0, 1.0, 1.0]; min grid gap 3.4e-04
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

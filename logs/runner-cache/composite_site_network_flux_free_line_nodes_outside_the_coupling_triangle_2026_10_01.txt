@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_line_nodes_outside_the_coupling_triangle_2026_10_01.py
+runner_sha256: 8d1e97c7b4a634aa0452b38b2633d6ba71bfd7424a212681bb2b33f18abb379c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 37.96
+status: ok
+----- stdout -----
+[PASS] L1 charpoly(M) has no mu^3, mu^1 term (levels +-l1, +-l2, det H >= 0); on the line det H = 16 q(c)^2, e2 = 16 Jz^2 mod q
+[PASS] L2 mod q, simple and double roots: M Pt = 0, Pt^2 = e2 Pt, tr Pt = 2 e2, rank M = 2: kernel 2-dim, levels 0,0,+-4Jz
+[PASS] L3 T = Im Tr(P d1H P d2H P d3H) = -32 pi^3 kappa q'(c) F_c(c) sin(2 pi x)/Jz^3 (exact trace mod q)
+[PASS] L4 det Hess_theta(det H) = 2^17 kappa^2 q'^2 F_c^2 (1-c^2) mod q: with D >= 0, Hess D > 0 at simple roots with F_c != 0
+[PASS] A1 region (a), Jz <= |Jx-Jy|: q = -4u(1-c^2) - 2P(1+c) + t2 < 0 on (-1,1): no line node at any kappa :: exact rational grid 28809 pts, none with q >= 0
+[PASS] A2 boundary Jz = |Jx-Jy|: q = -2(1+c)(2u(1-c)+P): sole root c = -1 (TRIM M) at every kappa; det H ~ (x-1/2)^4
+[PASS] B1 region (b), Jz > s: q = -4(1-c^2)(u - u(c)); Fb palindromic, Fb(-1) = t2 > 0, Fb(0) = P, Fb(1) = t1 < 0: u(c) U-shaped, min at c_b in (0,1)
+[PASS] B2 u_* = (-S + sqrt(S^2-4P^2))/8 = u(c_b), q = 4u_*(c-c_b)^2 (double root); two simple roots c1 < c_b < c2 for u > u_*, none below
+[PASS] B3 F_c convex, F_c(-1) < 0, F_c(0) < 0: one zero c_F in (0,1) iff Jz < phi s (phi = golden ratio); F_c < 0 on (-1,1) for Jz >= phi s
+[PASS] B4 Res(F_c,Fb) = -Jz^2 P (Jz+s) G = P^2 F_c(c_b) F_c(1/c_b); G increasing: unique J0 in (s, phi s); F_c(c_b) > 0 iff Jz < J0
+[PASS] B5 Res(q,F_c) = -(s+Jz) R2; u_(+-) = (N0 +- N1 sqrt(Delta_F))/Den = u(c_F^(+-)); u_- < 0; flip at u_f = u_+
+[PASS] C1 boundary Jz = s: q = (c-1)(4u(c+1)-2P): c = 1 (Gamma) always; c_2 = P/(2u)-1 in (-1,1) iff u > P/4; F_c = 2sc(Pc+s^2-P): flip at u = P/2
+[PASS] B6 exact rational samples Jx = Jy = 1, Jz = 13/6, 5/2, 29/10, 10/3: double root, born sign, flip (c_F, u_f); no flip above phi s :: u_*, born, u_f: 13/6: 9/16 (+,-) 325/524; 5/2: 1 (-,+) 45/44; 29/10: 25/16 (-,+) 1421/556; 10/3: 9/4 (-,+) none
+[PASS] B7 exact rational grid, region (b): Sturm root count of q on [-1,1] is 0 below u_*, 2 above; sign F_c(c_b) = -sign G (Jz < phi s), < 0 (Jz >= phi s) :: 1600 root counts, 400 couplings (F_c(c_b) > 0 in 97, < 0 in 200 below phi s), bad 0
+[PASS] C2 Gamma (Jz = s): d = (2Jy y - s z, a x^2, -8k y), a = (P-4u)/s; det H(4th) = 16 Jz^2 |d|^2; Jacobian 16 s a k x: local degree 0
+[PASS] C3 M (Jz = |Jx-Jy|, both orders): a = -(P+4u)/(Jx-Jy) != 0; det H(4th) = 16 Jz^2 |d|^2; Jacobian odd in x: degree 0, no birth
+[PASS] C4 Gamma at u = P/4: d = (2Jy y - s z, (P/4s) x^4, -8k y), weights 1,4,4; det H(8th) = 16 Jz^2 |d|^2; Jacobian 8 P k x^3: degree 0
+[PASS] F1 FLOAT region (b): root counts, T = -32 pi^3 kappa q' F_c sin/Jz^3, born and post-flip signs, 80 random couplings :: 1040 root/level and 157 pattern checks, bad 0, max rel dev 3e-13
+[PASS] F2 FLOAT: born (+,-) below J0, (-,+) above, (-,-) at J0; flip at u_f; no flip above phi s; mp: u_f = u_* at iso J0 :: J0(1.0,1.0) = 2.38298; J0(1.0,0.5) = 1.78078; J0(1.3,0.4) = 2.00380; iso J0 = 2.3829758, |u_f - u_*| < 1e-30
+[PASS] F3 FLOAT region (a): Bloch det H = 16 q^2 > 0 on the line grid :: 155200 pts, max q = -9e-04, max rel dev 7e-12
+[PASS] F4 FLOAT merger: Fukui flux 0 at u <= u_*, -chi per node above, 0 around both nodes :: Jz=3.33: chi -1,+1, flux +1,-1, both 0; Jz=2.17: chi +1,-1, flux -1,+1, both 0; max plaq. phase 0.01
+[PASS] F5 FLOAT TRIM: Fukui flux 0 around Gamma (Jz = s) and M (Jz = |Jx-Jy|); Gamma + one born node = that node :: Gamma (u just above P/4): alone 0, with both nodes 0, with one node -1 = node alone; M: 0 at 4 couplings; max plaq. phase 0.84
+TOTAL: PASS=22 FAIL=0   (37 s)
+
+----- stderr -----
+

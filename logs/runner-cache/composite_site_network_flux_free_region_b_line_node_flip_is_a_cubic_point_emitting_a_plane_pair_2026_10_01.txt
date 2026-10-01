@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_region_b_line_node_flip_is_a_cubic_point_emitting_a_plane_pair_2026_10_01.py
+runner_sha256: 0108c59cce86ad44782c77375489e7e425572d247a49aa338c92e98d20a11adb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 17.29
+status: ok
+----- stdout -----
+[PASS] X1 flip node u_f = J(J+2)/(4A), c_F = (J-2)(J+1)/(J+2) :: q = F_c = 0; Res_c(q,F_c) = -(J+2) R2; u_f larger root; 0 < c_F < 1 on (2,1+sqrt5)
+[PASS] X2 flipping root: Fb(c_F) = -J^2 N/(J+2)^2 :: c1 flips for 2<J<J0, c2 for J0<J<1+sqrt5; J0 = 2.38298 root of N = J^3-4J-4
+[PASS] X3 node data and kernel projector (identities in J) :: kappa_f = Y/(2A), levels 0,0,+-4J; J=13/6: kappa_f^2 = 325/524, J=5/2: 45/44
+[PASS] X4 Schur jets: no t-linear, no t^3, no identity part :: d_tt = -u2 d_u, u2 = W(J+2)/(2N): sign (-1, 1) on (2,J0),(J0,1+sqrt5)
+[PASS] X5 x_u, x_v, x_beta orthogonal; a^2, b^2, g^2, det exact :: signs on (2,J0),(J0,1+sqrt5): a2 (1, 1) b2 (1, 1) g2 (1, 1) det (1, 1)
+[PASS] X6 det H weights (3,3,1): order 6 = 16J^2 |d0|^2 :: orders 0-5 vanish, Hessian rank 2 (kernel t); independent of the Schur route
+[PASS] X7 cubic (3,3,1) point at the flip, local degree +1 :: 2<J<J0, J0<J<1+sqrt5 and J=2: d = x_u u' + x_v v + x_beta t^3 + higher, u' = u - u2 t^2
+[PASS] X8 unfolding d = ... + x_beta (t^3 - mu eps t), mu = (J+2)/kappa_f^3 > 0 :: eps>0: three nodes chi (-,+,+) (line, emitted pair at t = +-sqrt(mu eps)); eps<0: one node chi +
+[PASS] X9 det H = 0 identically on the plane-(ii) family :: all (J, kappa); real for every kappa >= kappa_f when 2<J<1+sqrt5
+[PASS] X10 first-order shifts from the unfolding = d/dkappa of the closed forms :: (2 pi f3)^2 = mu eps; cos 2 pi x (line, plane) agree; identities in J
+[PASS] X11 exact series of the three nodes at J = 13/6, 5/2 :: J=13/6: kappa_f=0.787546 mu=8.53023 mu2=-10.1834 lam_e=-0.35585 lam_l=0.72523; J=5/2: kappa_f=1.011300 mu=4.35084 mu2=-4.8759 lam_e=-0.20878 lam_l=-1.00377
+[PASS] X12 J0: weight-2 Schur jets at weights (u:1,v:2,t:1,eps:2,N:1) :: x_uu, x_tt, x_eps parallel to x_u; x_ut orthogonal to x_u, x_v, x_ttt; |x_tt| = 1/2
+[PASS] X13 J0 form F1 = c_uu u^2 + c_tt t^2 + a_d delta u + c_eps eps, F2 = b v, F3 = c_ut u t :: c_uu = J^2/(4(J+2)) (mod N), c_tt = 1/2, c_eps = -4JY/(J+2)^2, c_ut < 0; F1 = q/J
+[PASS] X14 J0: local degree 0; eps>0: 4 nodes, chi (-1,-1,+1,+1) :: c_uu=0.3239 c_tt=0.5 c_eps=-2.8176 c_ut=-1.0916 b=2.2852 a_d=-1.6927; winding 0.000
+[PASS] X15 J0: det H at weights (u:1,v:2,t:1) = 16J^2[(c_uu u^2+c_tt t^2)^2 + c_ut^2 u^2t^2 + b^2 v^2] :: all 22 monomials of weight <= 4 match mod N (determinant route; a wrong coefficient is rejected)
+[PASS] F1 FLOAT float Schur code vs exact closed forms, J = 13/6, 2.2, 5/2, 3.0 :: rel dev 9.4e-15; vanishing parts <= 2.6e-14; sign(u2) [-1, -1, 1, 1]
+[PASS] F2 FLOAT fluxes and chi around the flipping node, kappa = kappa_f (1 -+ 0.004) :: J=13/6, 5/2: before chi +1, flux -1; after chi (-1,+1,+1), flux (+1,-1,-1), enclosing sphere -1; mirror nodes opposite
+[PASS] F3 FLOAT independent grid search of zeros of det H, and T(kappa) vs closed form :: 1 zero below, 3 above (box 0.03), positions = closed forms (1e-6); T sign (+,+,-,-) at rel (-4,-1,1,4)e-3, max rel dev of T 2.9e-13
+[PASS] F4 FLOAT J0: 0 zeros below, 4 above; chi (-1,-1,+1,+1); sphere flux 0 both sides :: u/u_pred 0.985,1.012 t/t_pred 0.998; at rel 1e-4 u/u_pred 0.998,1.002 t/t_pred 1.000
+[PASS] F5 FLOAT mp50: (kappa_*-kappa_f)/delta^2 vs -a_d^2/(4 c_uu |c_eps|) :: predicted -0.7848582387; delta=1e-3,1e-4,1e-5 averages ['-0.784859336', '-0.78485825', '-0.784858239']
+[PASS] F6 FLOAT mp50 anisotropic flip nodes: rank-2 linear part, c2 = 0, local degree +1 :: 5 couplings, max residual 1.93e-50; (1,0.5,2.000) k=(-0.073,-0.073,+0.995) deg +1; control (non-flip node) eigenvalues [0.017, 1.036]
+[PASS] F7 FLOAT anisotropic (1,1/2,2), (1,1/2,8/5): 1 node -> 3 nodes :: (1,0.5,2): nodes 1->3, chi before [1] after [1, -1, 1] | (1,0.5,1.6): nodes 1->3, chi before [1] after [1, -1, 1]; emitted along +-k within 0.78 deg
+[PASS] F8 FLOAT emitted pair persists: chi (+1,+1), both line nodes chi -1, up to kappa = 6 kappa_f :: 21 points, J = 13/6, 5/2, 3.0, kappa/kappa_f - 1 = 0.01 ... 5: net chi 0 on the cluster after the flip
+[PASS] S stdout size :: 3935 characters before this line and the TOTAL line (limit 5000; not enforced with RBIRTH_VERBOSE=1)
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

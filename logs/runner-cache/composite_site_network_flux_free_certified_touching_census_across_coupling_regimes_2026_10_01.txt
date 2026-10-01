@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_certified_touching_census_across_coupling_regimes_2026_10_01.py
+runner_sha256: e8e827fa7b762db580afd951fc7150c778ceadf25d7cfffd33534dfd012f2259
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 78.46
+status: ok
+----- stdout -----
+[PASS] symbolic: M + M(1/z)^T = 0, char poly mu^4 + a2 mu^2 + D (symbolic couplings): spec H = {+-l1, +-l2}
+[PASS] H1 exact: ring ok: off [none]; line q 1 root(s) [deg 2, 1 roots]; unlisted 0
+[PASS] H1 charges: off - line +- (closed form ok, classification ok); 2 boxes hw 1.5e-06, pivmin 0.426, arc 2.0e-08, a2 >= 16, disjoint True
+[PASS] H1 census: D > 0 outside boxes: level 25, 312688 cubes, 2920 uncleared (0 outside), 14 s; 2 nodes = 0 off + 2 line, sum +0, float T 1e-14
+[PASS] H2 exact: ring ok: off [Q deg 5 irr True, 1 real root, 1 orbit]; line q 1 root(s) [deg 2, 1 roots]; unlisted 0
+[PASS] H2 charges: off +--+ line -+ (closed form ok, classification ok); 6 boxes hw 1e-05, pivmin 0.901, arc 4.1e-08, a2 >= 16, disjoint True
+[PASS] H2 census: D > 0 outside boxes: level 21, 216048 cubes, 1844 uncleared (0 outside), 11 s; 6 nodes = 4 off + 2 line, sum +0, float T 2e-15
+[PASS] K1 exact: ring ok: off [Q deg 5 irr True, 1 real root, 1 orbit]; line q 2 root(s) [deg 2, 2 roots]; unlisted 0
+[PASS] K1 charges: off +--+ line -+-+ (closed form ok, classification ok); 8 boxes hw 1e-05, pivmin 193, arc 4.8e-08, a2 >= 77.4, disjoint True
+[PASS] K1 census: D > 0 outside boxes: level 19, 104608 cubes, 744 uncleared (0 outside), 3 s; 8 nodes = 4 off + 4 line, sum +0, float T 1e-15
+[PASS] K2 exact: ring ok: off [none]; line q 2 root(s) [deg 2, 2 roots]; unlisted 0
+[PASS] K2 charges: off - line +--+ (closed form ok, classification ok); 4 boxes hw 5e-06, pivmin 3.71, arc 4.5e-08, a2 >= 77.4, disjoint True
+[PASS] K2 census: D > 0 outside boxes: level 22, 537264 cubes, 4644 uncleared (0 outside), 16 s; 4 nodes = 0 off + 4 line, sum +0, float T 4e-15
+[PASS] K3 exact: ring ok: off [Q deg 5 irr True, 1 real root, 1 orbit]; line q 2 root(s) [deg 2, 2 roots]; unlisted 0
+[PASS] K3 charges: off +--+ line -+-+ (closed form ok, classification ok); 8 boxes hw 1e-05, pivmin 8.29, arc 2.9e-08, a2 >= 125, disjoint True
+[PASS] K3 census: D > 0 outside boxes: level 22, 315216 cubes, 2208 uncleared (0 outside), 11 s; 8 nodes = 4 off + 4 line, sum +0, float T 4e-15
+[PASS] K4 exact: ring ok: off [none]; line q 2 root(s) [deg 2, 2 roots]; unlisted 0
+[PASS] K4 charges: off - line -++- (closed form ok, classification ok); 4 boxes hw 3e-06, pivmin 11.1, arc 4.2e-08, a2 >= 144, disjoint True
+[PASS] K4 census: D > 0 outside boxes: level 24, 234992 cubes, 1698 uncleared (0 outside), 6 s; 4 nodes = 0 off + 4 line, sum +0, float T 3e-15
+[PASS] K5 exact: ring ok: off [none]; line q 2 root(s) [deg 2, 2 roots]; unlisted 0
+[PASS] K5 charges: off - line -++- (closed form ok, classification ok); 4 boxes hw 1e-05, pivmin 334, arc 4.5e-08, a2 >= 196, disjoint True
+[PASS] K5 census: D > 0 outside boxes: level 20, 91840 cubes, 616 uncleared (0 outside), 2 s; 4 nodes = 0 off + 4 line, sum +0, float T 1e-15
+[PASS] L1 exact: ring ok: off [Q deg 5 irr True, 1 real root, 1 orbit]; line q 0 root(s) [none]; unlisted 0
+[PASS] L1 charges: off +--+ line - (closed form n/a); 4 boxes hw 1e-05, pivmin 1.56e+03, arc 4.8e-08, a2 >= 158, disjoint True
+[PASS] L1 census: D > 0 outside boxes: level 19, 86176 cubes, 448 uncleared (0 outside), 2 s; 4 nodes = 4 off + 0 line, sum +0, float T 2e-15
+[PASS] L2 exact: ring ok: off [Q deg 5 irr True, 1 real root, 1 orbit]; line q 0 root(s) [none]; unlisted 0
+[PASS] L2 charges: off +--+ line - (closed form n/a); 4 boxes hw 1e-05, pivmin 64, arc 4.5e-08, a2 >= 69.6, disjoint True
+[PASS] L2 census: D > 0 outside boxes: level 20, 107632 cubes, 788 uncleared (0 outside), 2 s; 4 nodes = 4 off + 0 line, sum +0, float T 2e-15
+[PASS] L3 exact: line q has 0 roots in [-1,1]; no algebraic node listed
+[PASS] L3 charges: no node, no box
+[PASS] L3 census: D > 0 outside boxes: level 9, 23792 cubes, 0 uncleared (0 outside), 0 s; 0 nodes = 0 off + 0 line, sum +0, float T 0e+00
+[PASS] control removal: K1: one box removed: 53 uncleared cubes outside the others, level 19 (fails as it should)
+[PASS] control exact: K1: Q const + 1, s2 flipped, line factor const + 1: det M, minors nonzero (fail as they should)
+[PASS] control unlisted: K1: wrong listed centre: matched 0, unlisted 1 (detected)
+[PASS] control box geometry: K1: centre moved 4e-4: node outside (arc 0.00395 > rho 6.28e-05); half-width 1e-3: Hessian test fails (pivmin -113)
+[PASS] control enclosures: iv table holds 50-digit cos, sin at 37 phases; Taylor bound <= sampled D on 450 cubes, 0 violations (FLOAT)
+[PASS] control remainder: adversarial D = cos t + 0.24 cos 3t: bound <= sampled min (excess -0.0046); without the remainder it exceeds it by 0.0048 (FLOAT)
+[PASS] stdout budget: 4548 bytes so far, limit 5000
+[INFO] runtime 78.0 s (AUDIT_TIMEOUT_SEC = 300), stdout 4660 bytes
+TOTAL: PASS=38 FAIL=0
+
+----- stderr -----
+

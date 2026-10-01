@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_j_two_zone_centre_degree_zero_with_remainder_bounds_and_the_pair_born_there_2026_10_01.py
+runner_sha256: 8aaa9be02feade5b4d40e4686a4998186417fa4e6ef473c339cada2d7db4d470
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.62
+status: ok
+----- stdout -----
+[PASS] 0: 18 network terms rebuilt; H(0) = 4i M0, spectrum {0,0,+-8}, H(0)^2 = 64 (1-P) for every kappa
+[PASS] 1a: exact: Num(0) = 0, detC(0) = -64, Laurent identity det(Num) = detC*detH (symbolic kappa) :: Laurent terms Nx 44 Ny 47 Nz 64 N0 54 detC 33 detH 75
+[PASS] 1b: exact: all real; Nx, Nz, N0 odd, Ny, detC, detH even => D(-th) = (-Dx, Dy, -Dz)(th), d0 odd
+[PASS] 2a: generic k, weights (1,2,2): Num = -64 d_lead + G, d_lead = (2(y-z), (1-4k^2)x^2/2, -8k y); wt(G)>=4, wt(N0)>=5, wt(detC+64)>=2 :: G [4, 4, 4] N0 5 Delta 2
+[PASS] 2b: generic k: det H = 64|d_lead|^2 + R, wt(R) >= 6 (no weight 5); weight-6 part of R explicit (4 monomials) :: x^6: -(8/3)(4k^2-1)(16k^2-1)
+[PASS] 2c: k = 1/2, weights (1,4,4): d_lead = (2(y-z), x^4/8, -4y); wt(G)>=6, wt(N0)>=9, wt(det H - 64|d_lead|^2)>=10 :: G [6, 6, 6] N0 9 R 10
+[PASS] 2d: exact: series of Num/detC to weight 4 equals the landed Brillouin-Wigner Pauli vector (weights 2 and 4; d0 = 0) :: d_y weight 4: (20k^2+1)/48 x^4 + y^2 - z^2/2
+[PASS] 3: k = 1/4: rho_N = 0.37 (conds A,B,C), rho_D = 0.13 (A,D) :: K_G=164 K_N0=17 s=0.375 K_R=504
+[PASS] 3: k = 1: rho_N = 0.38 (conds A,B,C), rho_D = 0.17 (A,D) :: K_G=604 K_N0=74 s=1.500 K_R=4769
+[PASS] 3: k = 2: rho_N = 0.26 (conds A,B,C), rho_D = 0.1 (A,D) :: K_G=1776 K_N0=157 s=1.939 K_R=19949
+[PASS] 3: k in [1/10,2/5]: rho_N = 0.23 (conds A,B,C), rho_D = 0.047 (A,D) :: K_G=198 K_N0=26 s=0.180 K_R=919
+[PASS] 3: k in [3/5,3]: rho_N = 0.062 (conds A,B,C), rho_D = 0.0076 (A,D) :: K_G=3631 K_N0=197 s=0.220 K_R=52552
+[PASS] 3c: every k > 0, k != 1/2: radius rho(k) = min{1,(64/Kd)^.5,(32s/Lam)^.5,(16s/K0)^(1/3),(32s^2/KR)^.5} from rounded-up k-polynomials :: constants dominate exact polynomials: True; A-D re-verified at 16 kappa in [1/20,50]; rho(1/4,1,2)=0.0433,0.054,0.0303
+[PASS] 4: k = 1/2, weights (1,4,4), ball x^8+y^2+z^2 <= rho^8: rho_N = 0.2 (A,B,C), rho_D = 0.027 (A,D) :: K_G=188 K_N0=32 s=1/8 K_R=1281
+[PASS] 5a: d_lead omits a point of S^2 (d_y = a x^2 has the sign of a, fixed on each kappa range above; x^4/8 >= 0 at 1/2): degree 0
+[PASS] 5b: homotopy -64 d_lead + t G stays nonzero on 0<N<=rho (B); detC<0 (A) => deg(D/|D|) = deg(d_lead/|d_lead|) = 0 on every sphere N = r <= rho
+[PASS] 5c: parity alone: D(-th) = diag(-1,1,-1) D(th) (det +1), antipodal map has degree -1 => degree 0 on any zero-free inversion-symmetric sphere
+[PASS] 5d: (A),(C): H = L^+ diag(S,C) L has signature (2,2) on the balls; Chern number of the two lowest bands on a sphere = +-deg(D/|D|) = 0
+[PASS] 6a FLOAT: Laurent objects vs direct numpy Schur complement, 800 random points, kappa = 1/4, 1, 2, 1/2 :: max deviation 5.3e-12
+[PASS] 6b FLOAT: solid-angle degree of D/|D| (120x240) on proven spheres, kappa = 1/4, 1, 2, 1/2, 0.6, 0.55; |d0|<|D|, detC<0 :: deg max |.| = 2e-16; max |d0|/|D| = 8.7e-03
+[PASS] 6c FLOAT: random points in the proven balls: det H > 0, eigenvalues (-,-,+,+); |R|/(64|d_lead|^2) < 1 (direct balls) :: max |R|/P_lead = 2.62e-02
+[PASS] 6d FLOAT: |F - T_12 F| <= sum |c||nu.theta|^13/13! at 900 large-argument samples; |G_i|/(N^Lw K_i) < 1 in the balls :: max remainder ratio 9.87e-01; max |G|/(K N^Lw) = 6.11e-01
+[PASS] 7a: exact on theta = x(1,-1,0): Nx = Nz = N0 = 0, detC = -4(cos x+3)^2, D_y = 4(cos x-1)(2k^2(cos x+1)-1)/(cos x+3); det H = 16(cos x-1)^2(4k^2(cos x+1)-2)^2 (Laurent + independent sympy det)
+[PASS] 7b: second double root cos x0 = 1/(2k^2)-1 <=> tan(x0/2) = sqrt(4k^2-1): real and != 0 iff k > 1/2; f = +-(x0/2pi)(1,-1,0)
+[PASS] 7c: exact, k = (t^2+1)/(4t), t > 1: at +x0(1,-1,0): Nx = Ny = Nz = N0 = 0 (S = 0, dim ker H = 2), detC < 0 :: detC = -16(t^4+6t^2+1)^2/(t^2+1)^4
+[PASS] 7d: exact det J_D(+x0) = 256 k (4k^2-1)^(3/2) (1-2k^2)/(4k^2+1)^2; zero at k = 1/2 and 1/sqrt2; -x0 gives the negative :: t-form -16 (t^2-1)^3 (t^2+1)(t^4-6t^2+1)/(t^2 (t^4+6t^2+1)^2)
+[PASS] 7e: charge at +x0 = sign det J_D: +1 for 1/2 < k < 1/sqrt2, -1 beyond (exact at 7 rational kappa); -x0 opposite :: kappa:charge 0.5000:+1 0.5083:+1 0.5417:+1 0.6250:+1 0.7250:-1 0.8333:-1 2.5250:-1
+[PASS] 7f: x0 = 2 arctan sqrt(4k^2-1) = 4 s - (10/3) s^3 + ..., s = sqrt(k - 1/2): leading x0 = 4 sqrt(k-1/2), det J_D = 128 (k-1/2)^(3/2)+.. :: series 43*s**5/10 - 10*s**3/3 + 4*s
+[PASS] 7g FLOAT: kappa = .55,.6,.68,.75,1: eigenvalues at +-x0 are (-8,0,0,8), Im Tr(P d1H P d2H P d3H) sign = +-(1-2k^2); node degrees .55 (+x0,-x0), .6 (+x0) :: degrees +1.000,-1.000,+1.000; triple products at +x0: +0.83 +1.28 +0.58 -1.20 -12.99
+[PASS] 7h FLOAT: x0/(4 sqrt(k-1/2)) = 1 - (5/6)(k-1/2) to 1e-6 at k-1/2 = 1e-4; proven radius rho(k) < x0(k) at k = .55,.6,.68 :: x0 = 0.859,1.171,1.489; rho = 0.0068,0.0132,0.0227
+TOTAL: PASS=30 FAIL=0   (4 s)
+
+----- stderr -----
+

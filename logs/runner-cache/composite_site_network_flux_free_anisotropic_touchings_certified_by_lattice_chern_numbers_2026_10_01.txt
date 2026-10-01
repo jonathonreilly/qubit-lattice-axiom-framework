@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_anisotropic_touchings_certified_by_lattice_chern_numbers_2026_10_01.py
+runner_sha256: e75abe2dac5c2566820199f75d1ebf2b8340f09cc5cd2ab2e153dd4188f26267
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 76.14
+status: ok
+----- stdout -----
+[PASS] interval Bloch entries contain 40-digit values; interval inertia = float counts (J=(1,.8,1), kappa=.45) :: missed 0/320 entries at 20 pts; inertia agreement 1.000 at 400 pts x 4 shifts
+[PASS] isotropic J=(1,1,1), kappa=3/10: clusters = landed line points, C = -sign det V :: 2 clusters vs 2 landed nodes, max distance 1.1e-16; vol=1.0 gaps 196608/196608 bound<=0.0936<pi C=-+ sum=0 C=-sign detV True 2s
+[PASS] isotropic J=(1,1,1), kappa=9/20: clusters = landed six nodes, C = -sign det V :: 6 clusters vs 6 landed nodes, max distance 1.1e-16; vol=1.0 gaps 589824/589824 bound<=0.306<pi C=--+-++ sum=0 C=-sign detV True 8s
+[PASS] A J=(1,.8,1) kappa=.45: zone, gaps, bound, C :: 6 cubes (s=1.95e-03) vol=1.0 gaps 589824/589824 gmin=7.59e-03 bound<=0.112<pi C=--+-++ sum=0 node(0.222999,0.686437,0.250240) C=-1 detV=+103.4 6s
+[PASS] B J=(1.2,.8,1) kappa=.3: zone, gaps, bound, C :: 6 cubes (s=1.95e-03) vol=1.0 gaps 589824/589824 gmin=5.65e-03 bound<=0.134<pi C=-+-+-+ sum=0 node(0.255057,0.589947,0.042639) C=-1 detV=+71.9 7s
+[PASS] C J=(1,.8,1) kappa=.8: zone, gaps, bound, C :: 6 cubes (s=1.95e-03) vol=1.0 gaps 589824/589824 gmin=1.89e-02 bound<=0.0391<pi C=--+-++ sum=0 node(0.035263,0.687476,0.340488) C=-1 detV=+1137.2 6s
+[PASS] E J=(.9,1.1,1.3) kappa=.4: zone, gaps, bound, C :: 2 cubes (s=1.95e-03) vol=1.0 gaps 196608/196608 gmin=3.60e-03 bound<=0.76<pi C=-+ sum=0 node(0.320762,0.679238,0.000000) C=-1 detV=+67.3 2s
+[PASS] D J=(1.2,.8,1) kappa=.2 (slow node: s=2^-7, 512^2 patches, m_F=256): zone, gaps, bound, C :: 2 cubes (s=7.81e-03) vol=1.0 gaps 3145728/3145728 gmin=2.54e-03 bound<=0.624<pi C=-+ sum=0 node(0.355297,0.644703,0.000000) C=-1 detV=+5.6 30s
+[PASS] 30-digit mpmath recomputation of the lattice Chern number (A off-plane node, m_F=32, exact decimal couplings) :: (0.222999,0.686437,0.250240) C_mp=-1.000000000000 C_double=-1.000000000000 max phase diff 2.9e-14 over 6144 plaquettes 14s
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

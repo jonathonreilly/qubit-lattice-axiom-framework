@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_slice_chern_numbers_match_the_certified_census_charges_2026_10_01.py
+runner_sha256: affb9dd6c0c55de38b4baee251b73db7361399607b04da3f2bba8b26a949879e
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 26.70
+status: ok
+----- stdout -----
+[PASS] interval Bloch entries contain 40-digit values; interval inertia = float counts (B, slice f1-f2 = 5/16) :: missed 0/320 entries at 20 pts; inertia agreement 1.000 on the 0.998+ of 400 pts with definite pivots, 4 shifts
+[PASS] B: node chirality sign det V = census charge, 2|det V| = |T|, Newton from embedded positions :: 6 nodes, sign det V = +--+-+ vs census +--+-+; sum charges +0
+[PASS] H1: node chirality sign det V = census charge, 2|det V| = |T|, Newton from embedded positions :: 2 nodes, sign det V = +- vs census +-; sum charges +0
+[PASS] certified derivative constants and Lipschitz radius dominate float samples (2 couplings x 3 families) :: 42 ratios sample/certified, largest 1.000000 (must be <= 1 + 1e-9; the Frobenius bounds are attained)
+[PASS] B f3: slice Chern numbers, gap + admissibility, jumps = -(node charges) :: c=5/256,1/16,1/2,15/16,251/256 C=0,0,0,0,0 jumps obs 0,0,0,0,0 pred 0,0,0,0,0 g>=0.075 bound<=0.94 m=64..512 gaps 3/3 C(c)=C(1-c) on 2 pairs True node dist>=0.020 4s
+[PASS] B f1: slice Chern numbers, gap + admissibility, jumps = -(node charges) :: c=0,5/16,25/64,1/2,39/64,11/16 C=+1,0,+1,0,+1,0 jumps obs -1,+1,-1,+1,-1,+1 pred -1,+1,-1,+1,-1,+1 g>=0.0853 bound<=0.79 m=128..512 gaps 6/6 C(c)=C(1-c) on 2 pairs True node dist>=0.019 4s
+[PASS] B f1-f2: slice Chern numbers, gap + admissibility, jumps = -(node charges) :: c=0,5/16,1/2,11/16 C=+1,0,+2,0 jumps obs -1,+2,-2,+1 pred -1,+2,-2,+1 g>=0.0622 bound<=0.53 m=64..1024 gaps 4/4 C(c)=C(1-c) on 1 pairs True node dist>=0.022 7s
+[PASS] H1 f3: slice Chern numbers, gap + admissibility, jumps = -(node charges) :: c=1/4,1/2 C=0,0 jumps obs 0,0 pred 0,0 g>=1.5 bound<=0.078 m=64..64 gaps 1/1 C(c)=C(1-c) on 0 pairs True node dist>=0.250 0s
+[PASS] H1 f1: slice Chern numbers, gap + admissibility, jumps = -(node charges) :: c=0,1/2 C=+1,0 jumps obs -1,+1 pred -1,+1 g>=0.4 bound<=0.38 m=128..128 gaps 2/2 C(c)=C(1-c) on 0 pairs True node dist>=0.145 0s
+[PASS] H1 f1-f2: slice Chern numbers, gap + admissibility, jumps = -(node charges) :: c=0,1/2 C=+1,+2 jumps obs +1,-1 pred +1,-1 g>=0.404 bound<=0.59 m=64..128 gaps 2/2 C(c)=C(1-c) on 0 pairs True node dist>=0.211 0s
+[PASS] interval gap controls (B, f3 = 5/256): cell bounds below float gaps at random points; target 0.11 above the minimum is not certified :: 2646 cells x 8 pts, min(float gap - bound) = 1.91e-02; target 0.075 certified in 2956 cells, target 0.11 left 940 cells uncleared at h=2^-11
+[PASS] sign convention: every slice jump equals minus the census charge crossed (C = -sign T per node, slices oriented by +n) :: 21 slice-to-slice jumps, 14 nonzero (|jump| 1 or 2), all obs = -charge; the opposite convention would contradict 14 of 14
+[PASS] 30-digit mpmath recomputation of the plaquette phases (B, f1-f2 = 1/2, mesh 64, exact decimal couplings) :: C_mp=2.0000000000 C_double=2.0000000000 max phase diff 8.9e-16 over 4096 plaquettes 11s
+TOTAL: PASS=13 FAIL=0  runtime 27s
+
+----- stderr -----
+

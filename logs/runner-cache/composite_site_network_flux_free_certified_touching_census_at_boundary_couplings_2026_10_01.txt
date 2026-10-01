@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_certified_touching_census_at_boundary_couplings_2026_10_01.py
+runner_sha256: 9061b22b4bf6ea27ac18f634b47e226a0af6a9bc3d892357e7d903c07ee47c62
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 48.79
+status: ok
+----- stdout -----
+[PASS] symbolic: M + M(1/z)^T = 0, char poly mu^4 + a2 mu^2 + D (symbolic): spec H = {+-l1, +-l2}
+[PASS] G1 ball: rho 0.236, A,B,C hold (K_G 176 K_0 23.5 K_D 14.5 s 0.160), weights ok, det H = D, zero unique, deg 0; FLOAT 9e-14, 4e-17, Chern 7e-17, |G|/K 0.879
+[PASS] G1 nodes: exact ok (c-1 removed True, unlisted 0); no node besides the degenerate point, class ok
+[PASS] G1 census: D > 0 off boxes, ball: level 12, 28752 cubes, 3820 unclear (290 in regions, 0 out), octants by level 8, 1 s; 0 off + 0 line + deg-pt (0): sum +0, FLOAT T 0e+00
+[PASS] G2 ball: rho 0.236, A,B,C hold (K_G 264 K_0 35.5 K_D 14.5 s 0.240), weights ok, det H = D, zero unique, deg 0; FLOAT 9e-14, 4e-17, Chern 2e-16, |G|/K 0.928
+[PASS] G2 nodes: exact ok (line deg 1; c-1 removed True, unlisted 0); charges off - line +- (closed form ok, class ok); 2 boxes hw 1e-05, pivmin 24.3, disjoint True
+[PASS] G2 census: D > 0 off boxes, ball: level 20, 80608 cubes, 10376 unclear (364 in regions, 0 out), octants by level 8, 2 s; 0 off + 2 line + deg-pt (0): sum +0, FLOAT T 8e-16
+[PASS] G3 ball: rho 0.340, A,B,C hold (K_G 411 K_0 50.3 K_D 16.5 s 0.800), weights ok, det H = D, zero unique, deg 0; FLOAT 9e-14, 7e-17, Chern 7e-17, |G|/K 0.993
+[PASS] G3 nodes: exact ok (orbit Q deg 3 irr; line deg 1; c-1 removed True, unlisted 0); charges off +--+ line -+ (closed form ok, class ok); 6 boxes hw 1e-05, pivmin 82.8, disjoint True
+[PASS] G3 census: D > 0 off boxes, ball: level 19, 63968 cubes, 8324 unclear (392 in regions, 0 out), octants by level 7, 2 s; 4 off + 2 line + deg-pt (0): sum +0, FLOAT T 3e-15
+[PASS] G4 ball: rho 0.350, A,B,C hold (K_G 370 K_0 39.6 K_D 11.0 s 0.750), weights ok, det H = D, zero unique, deg 0; FLOAT 9e-14, 0e+00, Chern 2e-16, |G|/K 0.991
+[PASS] G4 nodes: exact ok (orbit Q deg 3 irr; line deg 1; c-1 removed True, unlisted 0); charges off +--+ line -+ (closed form ok, class ok); 6 boxes hw 1e-05, pivmin 129, disjoint True
+[PASS] G4 census: D > 0 off boxes, ball: level 19, 54032 cubes, 7022 unclear (332 in regions, 0 out), octants by level 7, 3 s; 4 off + 2 line + deg-pt (0): sum +0, FLOAT T 1e-15
+[PASS] M1 ball: rho 0.290, A,B,C hold (K_G 25 K_0 3.6 K_D 3.2 s 0.914), weights ok, det H = D, zero unique, deg 0; FLOAT 1e-14, 4e-17, Chern 6e-16, |G|/K 0.952
+[PASS] M1 nodes: exact ok (c+1 removed True, unlisted 0); no node besides the degenerate point, class ok
+[PASS] M1 census: D > 0 off boxes, ball: level 8, 19056 cubes, 2446 unclear (128 in regions, 0 out), octants by level 7, 0 s; 0 off + 0 line + deg-pt (0): sum +0, FLOAT T 0e+00
+[PASS] M2 ball: rho 0.200, A,B,C hold (K_G 61 K_0 7.3 K_D 3.1 s 1.026), weights ok, det H = D, zero unique, deg 0; FLOAT 8e-15, 4e-17, Chern 7e-16, |G|/K 0.982
+[PASS] M2 nodes: exact ok (orbit Q deg 5 irr; c+1 removed True, unlisted 0); charges off +--+ line - (closed form n/a, class ok); 4 boxes hw 1e-05, pivmin 32.2, disjoint True
+[PASS] M2 census: D > 0 off boxes, ball: level 19, 79920 cubes, 10346 unclear (420 in regions, 0 out), octants by level 8, 2 s; 4 off + 0 line + deg-pt (0): sum +0, FLOAT T 1e-15
+[PASS] M3 ball: rho 0.175, A,B,C hold (K_G 671 K_0 41.6 K_D 5.2 s 1.334), weights ok, det H = D, zero unique, deg 0; FLOAT 3e-14, 0e+00, Chern 3e-16, |G|/K 0.995
+[PASS] M3 nodes: exact ok (orbit Q deg 5 irr; c+1 removed True, unlisted 0); charges off +--+ line - (closed form n/a, class ok); 4 boxes hw 1e-05, pivmin 550, disjoint True
+[PASS] M3 census: D > 0 off boxes, ball: level 19, 132992 cubes, 17288 unclear (728 in regions, 0 out), octants by level 9, 3 s; 4 off + 0 line + deg-pt (0): sum +0, FLOAT T 8e-16
+[PASS] control removal: G3: box removed: 61 cubes out; ball removed: 34580 out (level 19, as they should)
+[PASS] control exact: G3: Q + 1, s2 flipped, line factor + 1: det M, minors nonzero (as should)
+[PASS] control unlisted: G3: wrong centre: matched 0, unlisted 1 (detected)
+[PASS] control box geometry: G3: centre moved 4e-4: arc 0.00395 > rho 6.28e-05; hw 0.01: pivmin -868 (as they should)
+/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/wt-bcensus/scripts/composite_site_network_flux_free_certified_touching_census_at_boundary_couplings_2026_10_01.py:373: RuntimeWarning: divide by zero encountered in divide
+  r1 = np.max(np.maximum(G - 1e-11, 0) / (ks["KG"] * N ** 4))
+/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/wt-bcensus/scripts/composite_site_network_flux_free_certified_touching_census_at_boundary_couplings_2026_10_01.py:374: RuntimeWarning: divide by zero encountered in divide
+  r2 = np.max(np.maximum(np.abs(lp_num(objs["N0"], pts)) - 1e-11, 0) / (ks["K0"] * N ** 5))
+/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/wt-bcensus/scripts/composite_site_network_flux_free_certified_touching_census_at_boundary_couplings_2026_10_01.py:375: RuntimeWarning: divide by zero encountered in divide
+  r3 = np.max(np.maximum(np.abs(lp_num(objs["detC"], pts) + float(E2)) - 1e-11, 0) / (ks["KC"] * N ** 2))
+[PASS] control ball: rho 0.5: A,B,C = G3 TFF, M3 TFF; a -> 3a/2: weights G3 F, M3 F (as they should)
+[PASS] control Fukui: flux code on spheres around the two G2 line nodes: -1.000, +1.000 (plaq. 0.0; as it should)
+[PASS] control inside: ball_inside vs vertex max of N^4: 21000 cubes, 4410 accepted, 0 violations (FLOAT)
+[PASS] control enclosures: iv table vs 50-digit cos, sin at 37 phases; Taylor bound <= sampled D on 450 cubes, 0 violations (FLOAT)
+[PASS] control remainder: D = cos t + 0.24 cos 3t: bound <= sampled min (excess -0.0046); remainder dropped: above by 0.0048 (FLOAT)
+[PASS] stdout budget: 4560 bytes so far, limit 5000
+[INFO] runtime 48.3 s (AUDIT_TIMEOUT_SEC = 300), stdout 4672 bytes
+TOTAL: PASS=32 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_off_plane_touchings_are_quintic_algebraic_points_at_five_anisotropic_couplings_2026_10_01.py
+runner_sha256: 87c86dddbb500740df8a1834c4c08708ba7c1b4c97d677c59d382f91e6293982
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.83
+status: ok
+----- stdout -----
+[PASS] a: M + M(1/z)^T = 0 (anti-Hermitian on the torus); char poly mu^4 + a2 mu^2 + D with mu^3, mu^1 coefficients zero (symbolic Jx,Jy,Jz,kappa) => D = l1^2 l2^2 >= 0
+[PASS] b1: H = [[h_x, W],[W^dag, h_y]], h_x = d(th1).sigma, h_y = d(th2).sigma, W = [[w, c v],[-c, v conj(w)]]; W W^dag = lambda^2 1 with lambda^2 = |w|^2 + c^2 (symbolic)
+[PASS] b2: det M = lambda^4 + |d_x|^2|d_y|^2 - 2 d_y.e, |e|^2 = lambda^4 |d_x|^2, and |d_x|^2 det M = s1^2 + s2^2 + s3^2 with s = |d_x|^2 d_y - e (symbolic)
+[PASS] b3: |d_x|^2 = (2Jx-2Jy)^2 + 2ab(1 + cos th1) + 4k^2 sin^2 th1 (exact identity, every term >= 0), so |d_x|^2 >= (2Jx-2Jy)^2 > 0 for Jx != Jy
+[PASS] c B: Q5 irreducible=True, roots in [-1,1]=1; ring identities 10/10 exact (nonzero minors 0/16); iv-certified box: S2 pivmin 11.2, S3 dev 8.2e-09<=1e-6, S4 a2>=21.01, T>0 True, Dc>0 True
+[INFO] B node: alpha0 = c3 = 0.964327310302, f = (0.255056929267, 0.589947050396, 0.0426385691717)
+[PASS] c A: Q5 irreducible=True, roots in [-1,1]=1; ring identities 10/10 exact (nonzero minors 0/16); iv-certified box: S2 pivmin 8.86, S3 dev 2.4e-08<=1e-6, S4 a2>=34.77, T>0 True, Dc>0 True
+[INFO] A node: alpha0 = c3 = -0.00151009728722, f = (0.222999042437, 0.686437050565, 0.250240339539)
+[PASS] c C: Q5 irreducible=True, roots in [-1,1]=1; ring identities 10/10 exact (nonzero minors 0/16); iv-certified box: S2 pivmin 116, S3 dev 2.3e-08<=1e-6, S4 a2>=52.29, T>0 True, Dc>0 True
+[INFO] C node: alpha0 = c3 = -0.538415727922, f = (0.0352628499302, 0.68747587819, 0.340488487697)
+[PASS] c F: Q5 irreducible=True, roots in [-1,1]=1; ring identities 10/10 exact (nonzero minors 0/16); iv-certified box: S2 pivmin 268, S3 dev 3.4e-08<=1e-6, S4 a2>=125.4, T>0 True, Dc>0 True
+[INFO] F node: alpha0 = c3 = 0.761130116069, f = (0.211021781856, 0.7012748566, 0.112322422314)
+[PASS] c G: Q5 irreducible=True, roots in [-1,1]=1; ring identities 10/10 exact (nonzero minors 0/16); iv-certified box: S2 pivmin 551, S3 dev 4.2e-08<=1e-6, S4 a2>=90.83, T>0 True, Dc>0 True
+[INFO] G node: alpha0 = c3 = 0.00790675591878, f = (0.0558665224745, 0.36728320423, 0.751258412401)
+[PASS] d1 control: sigma constant coefficient + 1e-9: nonzero minors 16/16, det M(z) nonzero -> control fails as it should
+[PASS] d2 control: sign of s2 flipped: nonzero minors 16/16, det M(z) nonzero -> control fails as it should
+[PASS] d3 control: Q5 constant term + 1: nonzero minors 16/16, det M(z) nonzero -> control fails as it should
+[PASS] e B: N10 = Res_alpha(Q5, x^2 - sigma x + pi): degree 10, irreducible over Q = True; N10(c1) = 0 and N10(c2) = 0 exactly in the ring (True, True)
+[PASS] e A: exact N10 at A (degree 10) is proportional to the embedded earlier PSLQ polynomial of cos(2 pi f1) (ratio 1)
+[INFO] runtime 3.4 s (AUDIT_TIMEOUT_SEC = 900)
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

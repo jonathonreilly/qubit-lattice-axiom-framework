@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_zero_winding_gauss_sector_has_frozen_flip_components_on_every_even_torus_2026_10_01.py
+runner_sha256: d1a12a6c77e9cbda65493a8cc3a55eeb5143217dc53d7897e5fe59f7b8995ed9
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 22.63
+status: ok
+----- stdout -----
+flip components of the zero-winding Gauss sector (supplied ring model, torus lattices)
+[PASS] L=3 odd: plane flux is a sum of 9 terms +-1, so odd: no zero-winding Gauss state
+[PASS] L=5 odd: plane flux is a sum of 25 terms +-1, so odd: no zero-winding Gauss state
+[PASS] L=7 odd: plane flux is a sum of 49 terms +-1, so odd: no zero-winding Gauss state
+[PASS] L=2: canonical state is Gauss, zero winding
+[PASS] L=4: canonical state is Gauss, zero winding
+[PASS] L=2: all 16 axis-constant states are Gauss, zero winding, frozen, distinct :: checked 16, distinct 16
+[PASS] L=4: all 432 axis-constant states are Gauss, zero winding, frozen, distinct :: checked 432, distinct 432
+[PASS] L=6: all 16000 axis-constant states are Gauss, zero winding, frozen, distinct :: checked 16000, distinct 16000
+[PASS] L=8: fixed random sample of 300 of the 686000 axis-constant states are Gauss, zero winding, frozen (sample, not exhaustive) :: distinct 300
+[PASS] 2x2x2 exhaustive: zero-winding Gauss states = 880, canonical component = 864, other components all frozen singletons = 16 :: all Gauss states 9600, zero winding 880, components 17, canonical comp 864, frozen 16
+[PASS] 2x2x2: the frozen states are exactly the axis-constant family :: family 16
+[PASS] 2x2x4 exhaustive: zero-winding Gauss states = 1552024, canonical component = 1551976, other components all frozen singletons = 48 :: all Gauss states 23063296, zero winding 1552024, components 49, canonical comp 1551976, frozen 48
+[PASS] 2x2x4: the frozen states are exactly the axis-constant family :: family 48
+[PASS] L=2: kernel of the plaquette circulation matrix has dimension nv + 2 = 10 :: rank mod p = 14, kernel dim 10 (>= nv+2 from nv-1 gradients + 3 holonomies, <= by rank mod p)
+[PASS] L=4: kernel of the plaquette circulation matrix has dimension nv + 2 = 66 :: rank mod p = 126, kernel dim 66 (>= nv+2 from nv-1 gradients + 3 holonomies, <= by rank mod p)
+[PASS] L=4: of the 64 staggered zero-winding states, 16 are frozen and the other 48 have replayed flip certificates to the canonical state :: frozen 16, certified 48
+[PASS] L=4: 20 loop-VMC (alpha = 0.2, seeds 100..119) starts each have a replayed flip certificate to the canonical state :: certified 20 of 20
+[PASS] L=8: of the 64 staggered zero-winding states, 16 are frozen and the other 48 have replayed flip certificates to the canonical state :: frozen 16, certified 48
+[PASS] L=8: 5 loop-VMC (alpha = 0.2, seeds 100..104) starts each have a replayed flip certificate to the canonical state :: certified 5 of 5
+TOTAL: PASS=19 FAIL=0   (22 s)
+
+----- stderr -----
+

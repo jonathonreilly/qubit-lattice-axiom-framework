@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_touching_count_certified_on_whole_kappa_intervals_2026_10_01.py
+runner_sha256: df754e51e47d5d8fb6a42e889994c083ad45de1ffe0138fdbff98ab44dbe7b78
+timeout_sec: 1800
+exit_code: 0
+elapsed_sec: 368.97
+status: ok
+----- stdout -----
+[PASS] exact families, kappa symbolic, J = 1 and J = 1/2: det H, its three momentum derivatives and the constant and linear characteristic coefficients vanish identically on the line, plane (ii) and plane (iii) families :: line/(ii)/(iii) at J = 1: (True, True, True); at J = 1/2: (True, True, True); 5 s
+[PASS] interval Bloch entries and the eigenbasis-congruence inertia test against 40-digit and float values (J = 1, kappa = 3/10) :: interval entries outside the 40-digit values 0; plain inertia agreement 1.000 (400 points, 4 shifts); congruence family cleared at 800/800 point-frames, float inertia mismatches 0; 1 s
+[PASS] certified interval 1: J = 1, kappa in [1/10, 3/25], two line nodes :: every kappa in [1/10, 3/25] (J = 1): exactly the 2 family nodes (clusters = tubes, one hull each, Hessian PD, double zero, e2 < 0, count 2/2 elsewhere); sub-cell/node pairs 2 tile the cell exactly; min cone constant 0.0104; chirality +- (sum 0); 7 s
+[PASS] certified interval 2: J = 1, kappa in [3/5, 31/50], six nodes (family iii) :: every kappa in [3/5, 31/50] (J = 1): exactly the 6 family nodes (clusters = tubes, one hull each, Hessian PD, double zero, e2 < 0, count 2/2 elsewhere); sub-cell/node pairs 24 tile the cell exactly; min cone constant 0.0204; chirality -+-+-+ (sum 0); 40 s
+[PASS] certified interval 3: J = 1, kappa in [21/50, 17/40], six nodes (family ii) :: every kappa in [21/50, 17/40] (J = 1): exactly the 6 family nodes (clusters = tubes, one hull each, Hessian PD, double zero, e2 < 0, count 2/2 elsewhere); sub-cell/node pairs 24 tile the cell exactly; min cone constant 0.00216; chirality -+++-- (sum 0); 154 s
+[PASS] certified interval 4: J = 1, kappa in [1, 11/10], six nodes (family iii) :: every kappa in [1, 11/10] (J = 1): exactly the 6 family nodes (clusters = tubes, one hull each, Hessian PD, double zero, e2 < 0, count 2/2 elsewhere); sub-cell/node pairs 24 tile the cell exactly; min cone constant 0.000733; chirality -+-+-+ (sum 0); 162 s
+[PASS] exclusion: cells containing or touching kappa_c or kappa_h are refused by the regime check and by certify_cell :: J = 1 (kappa_c^2 = 3/20, kappa_h^2 = 1/4): [49/100, 51/100] -> None, [19/50, 2/5] -> None, [1/2, 51/100] -> None, [11/25, 12/25] -> b; certify_cell on [49/100, 51/100]: pass = False, why = regime
+TOTAL: PASS=7 FAIL=0
+runtime 369 s
+
+----- stderr -----
+

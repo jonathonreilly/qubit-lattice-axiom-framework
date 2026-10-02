@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py
+runner_sha256: e90450224932e1087e4fd7c9e888eb4b225043b8f022f61b3f88af69af72eb26
+input_fingerprint_sha256: df425bd3ef73ef02c271f79a1cb87c52b4182b99de9a1bf5176fa346c7a878a6
+timeout_sec: 60
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+== Construction on the 4^3 torus ==
+[PASS] eta^0: 2D antisymmetric, entries in {0,+-1}, 6 links per site
+[PASS] eta^0: all 192 plaquettes carry -1, straight loops carry +1
+[PASS] eta^0: (2D)^2 = sum_mu (T_mu^2 + T_mu^-2 - 2), diagonal on plane waves
+[PASS] eta^0: 2D J = 0 (D vanishes on the eight corner plane waves)
+[PASS] cyclic: 2D antisymmetric, entries in {0,+-1}, 6 links per site
+[PASS] cyclic: all 192 plaquettes carry -1, straight loops carry +1
+[PASS] cyclic: (2D)^2 = sum_mu (T_mu^2 + T_mu^-2 - 2), diagonal on plane waves
+[PASS] cyclic: 2D J = 0 (D vanishes on the eight corner plane waves)
+[PASS] eta^0 periodic: 2D psi_k = sum_mu 2i sin(k_mu) psi_(k+pi zeta_mu), all 64 k (D moves momentum for 48/64 k)
+[PASS] eta^0 APBC: same hop identity for all 64 momenta (2m+1)pi/4, labels n -> n xor zeta_mu
+[PASS] eta^0 APBC: (2D)^2 = -6 I, no zero modes, every mode at |q_mu| = pi/4 from a corner
+[PASS] eta_mu v_n = v_(n xor zeta_mu) for all corners and both representatives
+== Translation symmetries of D in eta^0 ==
+[PASS] S_a = (-1)^(b_a.x) T_a with b = (011, 001, 000) commute with 2D
+[PASS] S_a S_b = -S_b S_a for a != b, on the torus and on the corner carrier (no joint eigenvector of two of them)
+[PASS] link solve: sign fields s with [s T_a, D] = 0 are exactly +-(-1)^(b_a.x)
+[PASS] two-site translations S_a^2 commute with D and each other, act as +1 on corners
+[PASS] S_a v_n = (-1)^(n_a) v_(n xor b_a): S_1, S_2 move corner labels
+[PASS] no nonzero b maps the hw=1 labels into themselves (all 7 checked)
+== Plain translations and the corner-label algebra ==
+[PASS] eta^0: [T_3, 2D] = 0, [T_1, 2D] and [T_2, 2D] nonzero with max |entry| 2
+[PASS] cyclic: no plain translation commutes with 2D
+[PASS] H_8 T_mu|_8 H_8 = 8 diag((-1)^(n_mu)): plain translations give the corner characters
+[PASS] all 64 plane-wave representatives are sign-gauge transforms of eta^0 on the torus
+[PASS] commuting plain translations per representative: 0 in 40, 1 in 24, 2+ in 0 ({0: 40, 1: 24})
+[PASS] at most one zeta_mu is zero in every representative, so D moves labels in 2+ directions ({0: 40, 1: 24})
+[PASS] in every representative the lifts S_a (b_nu = (zeta_nu)_a) commute with D and anticommute
+[PASS] hw=1 labels: plain characters + bare cycle give all 9 matrix units, no proper invariant subset (M_3(C) on labels)
+== The axis cycle C_3[111]: x -> (x3, x1, x2) ==
+[PASS] cyclic representative: P_C commutes with 2D, P_C^3 = 1, acts on labels as the bare cycle
+[PASS] eta^0: P_C does not commute with 2D; W_C = (-1)^(y1 y2 + y1 y3) P_C does
+[PASS] eta^0: 2 W_C v_100 = v_010 + v_001 + v_110 - v_101; W_C does not preserve the hw=1 span
+== Covering rotation symmetries of D in eta^0 ==
+[PASS] each of the 24 proper rotations has a covering sign field g_R, g_R(0) = 1
+[PASS] closed forms: C4z (-1)^(y1y2+y1), C2z (-1)^(y1+y2), C3 (-1)^(y1y2+y1y3), C2'(110) (-1)^(y1y2+y3)
+[PASS] group law W_R W_S = W_RS for all 576 pairs (no projective sign)
+[PASS] every covering sign field g_R is 2-periodic (preserves the corner carrier)
+[PASS] corner character by class (E, 8C3, 3C2, 6C4, 6C2') = (8, 2, 0, 4, 0) = 2 A1 + 2 T1 ((8, 2, 0, 4, 0))
+== Hamming labels relative to the representative ==
+[PASS] epsilon 2D epsilon = -2D, epsilon v_n = v_(n xor 111): hw=1 labels -> hw=2 labels
+[PASS] all 8 gauge transforms (-1)^(c.x): give eta^c = (-1)^(c_mu) eta^0, cocycle -1, v_n -> v_(n xor c)
+[PASS] hw multiset of the relabelled hw=1 set: 000 {1,1,1}; hw1 {0,2,2}; hw2 {1,1,3}; 111 {2,2,2}
+[PASS] difference set {n xor n'} = {000, 011, 101, 110} is the same for every c
+== Cell-momentum sectors (two-site cells) in eta^0 ==
+[PASS] K = 0 sector is the corner carrier (8 P_0 = J J^T); D^2 = -|K| on all 8 cell sectors, so ker D = carrier
+[PASS] K = pi e_a: 8-dim sectors with D^2 = -1 (iD = +-1, 4 + 4), two-site translations give the diagonal triple
+== Source firewall on the companion note ==
+[PASS] note keeps the epsilon fence and states the operator scope and gauge relabelling
+[PASS] note carries none of the withdrawn uniqueness, diagonalization or parity wording
+TOTAL: PASS=42 FAIL=0
+
+----- stderr -----
+

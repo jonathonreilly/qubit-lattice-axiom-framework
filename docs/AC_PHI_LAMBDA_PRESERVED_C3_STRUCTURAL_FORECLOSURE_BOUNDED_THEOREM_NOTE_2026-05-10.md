@@ -268,10 +268,12 @@ The species-label content of `AC_λ` (free fermion propagator
 block-diagonal on hw=1 corner basis; no inter-corner mixing in the
 free measure) is the **runner-certified bounded candidate** per
 [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
-rigorization addendum (2026-05-09): interval-certified
-Kawamoto-Smit block-diagonality at the BZ corners via the
-simultaneous-diagonalization theorem for commuting operators with
-non-degenerate joint translation eigenvalues. Independent audit
+rigorization addendum (2026-05-09) as repaired 2026-06-10:
+Kawamoto-Smit block-diagonality at the BZ corners by direct
+annihilation (the operator vanishes on every corner plane wave, so its
+hw=1 block is zero). The 2026-06-10 repair record retires the earlier
+simultaneous-diagonalization route, because the one-site translations
+`T_1, T_2` do not commute with the operator. Independent audit
 decides retained-grade promotion.
 
 ### 8.2 `AC_λ.label` — species-naming convention

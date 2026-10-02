@@ -14,8 +14,9 @@ retained Cl(3)/Z³ content:
 
   K1: Topological K-theory of the BZ-corner momentum bundle on T³.
       Result — equivariant decomposition K^0_{T³,equiv}(hw=1) = Z^3, but
-      block-diagonality of the propagator STILL requires translation-
-      invariance of the kinetic operator (= same KS load-bearing input).
+      block-diagonality of the propagator STILL requires an operator
+      input beyond K-theory: corner annihilation by the kinetic operator
+      (KS content; the operator is not invariant under T_x, T_y).
       K-theory adds one postulated bridge (K-class ↔ species-label bridge);
       AC_λ.struct bounded inheritance is NOT bypassed.
 
@@ -47,6 +48,8 @@ from __future__ import annotations
 import sys
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 60
 import sympy as sp
 
 
@@ -67,11 +70,9 @@ def check(label: str, ok: bool, detail: str = "") -> None:
     print(f"  {marker} {label}{suffix}")
 
 
-print("=" * 88)
 print("  Probe S-Substep4-AC_lambda — Imported-Tool Stress Test on AC_λ")
 print("  Companion runner: docs/KOIDE_S_SUBSTEP4_ACLAMBDA_NEW_SCIENCE_")
 print("                    NOTE_2026-05-08_probeS_substep4_aclambda.md")
-print("=" * 88)
 print()
 
 
@@ -80,13 +81,11 @@ print()
 #
 # Recall the AC_λ partial closure (PR #890) structure:
 #   AC_λ = AC_λ.struct ∧ AC_λ.label
-#   AC_λ.struct: bounded via Kawamoto-Smit + Reed-Simon §VIII.5
+#   AC_λ.struct: bounded via Kawamoto-Smit corner annihilation
 #   AC_λ.label: depends on audit-pending meta (PR #728/#729/#790)
 # Goal of this probe: attempt imported-tool closure via three independent tools.
 # =============================================================================
-print("-" * 88)
 print("  Section 1 — Probe target identification")
-print("-" * 88)
 
 check(
     "AC_λ atom of substep-4 atomic decomposition",
@@ -97,7 +96,7 @@ check(
 check(
     "AC_λ.struct prior status: bounded via KS-inheritance",
     True,
-    "Kawamoto-Smit + Reed-Simon I §VIII.5 simultaneous-diagonalization",
+    "KS corner annihilation (commuting-translation route retired 2026-06-10)",
 )
 
 check(
@@ -121,9 +120,7 @@ print()
 # Equivariant K-theory of T³ under Z³ translations, restricted to the hw=1
 # sub-locus (three discrete corners).
 # =============================================================================
-print("-" * 88)
 print("  Section 2 — Tool K1: K-theory of BZ-corner bundle")
-print("-" * 88)
 
 # Step (a): K-theory of T³.
 # Classical: K^0(T³) = Z + Z^3, K^1(T³) = Z^3 + Z (Atiyah-Hirzebruch).
@@ -168,9 +165,9 @@ check(
 # inheritance?
 # Answer: NO. K-theory tells us WHAT classes the corners carry (Z³
 # equivariant rank-1 generators). But block-diagonality of the
-# propagator requires that the propagator be K-class-preserving — which
-# is the same translation-invariance condition that Kawamoto-Smit
-# already supplies.
+# propagator requires that the propagator be K-class-preserving — an
+# operator input beyond K-theory. Kawamoto-Smit supplies it as corner
+# annihilation (it is not invariant under T_x, T_y).
 #
 # Demonstrate by counter-example: a non-translation-invariant kinetic
 # operator on the same K-classes can couple them (no K-theoretic
@@ -205,14 +202,14 @@ check(
     f"counter-example operator has [K, T_x] ≠ 0 (norm = {commutator_norm:.4f})",
 )
 
-# Conclusion K1: K-theoretic block-diagonality requires the additional
-# translation-invariance input — same load-bearing content as Kawamoto-
+# Conclusion K1: K-theoretic block-diagonality requires an additional
+# operator input (corner annihilation) — same load-bearing content as Kawamoto-
 # Smit. K-theory adds one postulated bridge (the K-class ↔ species-label
 # bridge identification) without bypassing the KS inheritance.
 check(
-    "K1.(d): K-theoretic closure of AC_λ.struct requires translation-invariance",
+    "K1.(d): K-theoretic closure of AC_λ.struct requires an operator input",
     True,
-    "= same KS load-bearing input; K-theory does NOT bypass KS-inheritance",
+    "KS corner annihilation; K-theory does NOT bypass KS-inheritance",
 )
 
 check(
@@ -230,9 +227,7 @@ print()
 # The free C_3-torsor of hw=1 corners and a free C_3-torsor of labels.
 # Equivariant bijection count = 3 (matching PR #790 parameter count).
 # =============================================================================
-print("-" * 88)
 print("  Section 3 — Tool K2: C_3-torsor labelings")
-print("-" * 88)
 
 # Step (a): Burnside-Pólya orbit counting for C_3 acting on Set_3 = {0, 1, 2}.
 # C_3 = <σ : σ³ = e>. We count Iso(Set_3, Set_3) / C_3.
@@ -328,9 +323,7 @@ print()
 #
 # Verify the postulated-bridge structure of modular flavor models.
 # =============================================================================
-print("-" * 88)
 print("  Section 4 — Tool K3: Modular flavor SL(2,Z)/Γ(3)")
-print("-" * 88)
 
 # Step (a): Γ(3) ⊂ SL(2,Z) is the principal congruence subgroup of level 3.
 # The relevant projective finite modular quotient at level 3 is commonly
@@ -409,14 +402,12 @@ print()
 # Confirm that all three imported tools fail to bypass the prior
 # AC_λ partial closure bounded inheritances.
 # =============================================================================
-print("-" * 88)
 print("  Section 5 — Unified obstruction synthesis")
-print("-" * 88)
 
 # Tabulate the failure modes of each tool.
 tool_failure_modes = [
     ("K1 K-theory",
-     "Requires translation-invariance (= same KS load-bearing input);"
+     "Requires an operator input (KS corner annihilation);"
      " one postulated bridge (K-class↔label bridge)"),
     ("K2 Groupoid",
      "Characterizes 3 equivariant choices (matches PR #790 parameter-counting);"
@@ -480,9 +471,7 @@ print()
 # Verify each imported tool's ingredients are tiered per
 # RETAINED/IMPORTED/POSTULATED hostile-review pattern (Z-S4b-Audit).
 # =============================================================================
-print("-" * 88)
 print("  Section 6 — Hostile-review tiering audit")
-print("-" * 88)
 
 # For each tool, enumerate ingredients and their tier classification.
 hostile_review_tiering = {
@@ -535,9 +524,7 @@ print()
 # =============================================================================
 # Section 7 — Forbidden-imports verification
 # =============================================================================
-print("-" * 88)
 print("  Section 7 — Forbidden-imports verification")
-print("-" * 88)
 
 check(
     "No PDG values imported as derivation input",
@@ -587,9 +574,7 @@ print()
 # =============================================================================
 # Section 8 — Authority-disclaimer / source-note hygiene
 # =============================================================================
-print("-" * 88)
 print("  Section 8 — Authority disclaimer / source-note hygiene")
-print("-" * 88)
 
 check(
     "Runner is a verification, not an audit verdict",
@@ -621,39 +606,8 @@ print()
 # =============================================================================
 # Final summary
 # =============================================================================
-print("=" * 88)
-print(f"  TOTAL: PASS={PASS}, FAIL={FAIL}")
-print("=" * 88)
+print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print()
-print("Result classification:")
-print()
-print("  AC_λ atom of substep-4 atomic decomposition resists imported-tool")
-print("  closure across three independent tools:")
-print()
-print("    K1 (K-theory of BZ-corner bundle):")
-print("        — Same bounded tier as KS-inheritance.")
-print("        — One postulated bridge (K-class ↔ species-label bridge).")
-print()
-print("    K2 (C_3-torsor labelings):")
-print("        — Characterizes but does NOT select 3 equivariant choices.")
-print("        — Content-equivalent to PR #790 parameter-counting.")
-print()
-print("    K3 (Modular flavor SL(2,Z) / Γ(3)):")
-print("        — 3 postulated bridges (level, weight, dictionary).")
-print("        — Materially worse; mirrors Probe 4 spectral-action trap.")
-print()
-print("  Unified meta-pattern: convention-dependence trap reproduced.")
-print()
-print("  Substep-4 admission count: UNCHANGED at 3 atoms")
-print("  Substep-4 surface tier   : bounded_theorem (UNCHANGED)")
-print("  PR #890 status           : UNCHANGED (still audit-pending)")
-print()
-print("  Result tier: BOUNDED (adds imported-tool stress tests around PR #890;")
-print("                          does not ratchet to positive)")
-print()
-print("  Independent audit lane has full authority for verdict and downstream")
-print("  status.")
-
 if FAIL > 0:
     sys.exit(1)
 else:

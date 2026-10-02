@@ -50,9 +50,12 @@ AC_λ = AC_λ.struct ∧ AC_λ.label
 with two distinct bounded-tier inheritances:
 
 - **AC_λ.struct** (block-diagonality of free-fermion propagator on
-  hw=1 corner basis): runner-certified bounded candidate via interval-
-  certified Kawamoto-Smit + Reed-Simon §VIII.5 simultaneous-
-  diagonalization. **Bounded tier inherited from the Kawamoto-Smit
+  hw=1 corner basis): runner-certified bounded candidate via the
+  vanishing of the Kawamoto-Smit operator on every corner plane wave
+  (the 2026-06-10 repair record of `STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`
+  retires the earlier Reed-Simon §VIII.5 simultaneous-diagonalization
+  route, since the one-site translations `T_x, T_y` do not commute with
+  the operator). **Bounded tier inherited from the Kawamoto-Smit
   upstream**, which is itself `bounded_theorem` (not positive) on main.
 - **AC_λ.label** (species-kind label characterization): characterized
   as labeling-convention bridge under audit-pending meta companion notes
@@ -93,10 +96,12 @@ classification:
   hw=1 momentum-space sub-bundle is mathematically rigorous and gives
   the **same** corner-triplet 3-fold structure as Kawamoto-Smit, but the
   identification of "K-theoretic class = block-diagonal propagator
-  species" requires the **same translation-invariance + non-degenerate
-  joint eigenspace structure** that Kawamoto-Smit already supplies.
-  K-theory does NOT bypass the KS inheritance — it derives the same
-  fact via a more abstract route. AC_λ.struct **remains** bounded.
+  species" requires an **operator input** beyond K-theory. Plain
+  translation invariance of the propagator is not that input: the
+  Kawamoto-Smit operator is not invariant under `T_x, T_y`. The input
+  that holds is Kawamoto-Smit content, namely that the operator
+  annihilates every corner plane wave. K-theory does NOT bypass the KS
+  inheritance. AC_λ.struct **remains** bounded.
 
 - **K2 (Categorical groupoid):** the C_3-equivariant labelings on the
   M_3(C) 3-orbit have **exactly three** equivariant bijection choices
@@ -201,7 +206,7 @@ class is determined by the **rank** at each corner plus the
 |---|---|---|
 | `T³` as BZ for Z³ | RETAINED | Standard Pontryagin dual of Z³; not external |
 | K-theory functor `K^0(·)` | IMPORTED | Atiyah-Hirzebruch construction; standard math |
-| Equivariant character `T_μ ↦ ±1` | RETAINED | Direct from Z³ translation action on staggered modes |
+| Equivariant character `T_μ ↦ ±1` | RETAINED | Plain Z³ translation action on corner plane-wave labels (`T_x, T_y` are not symmetries of the staggered operator) |
 | Identification "K-class = species-label" | **POSTULATED** | Requires bridge: K-theoretic equivariant rank ↔ free-propagator species index |
 
 ### K1 closure attempt
@@ -224,14 +229,18 @@ is a statement about the OFF-DIAGONAL kernel of a *specific operator*
 (the Kawamoto-Smit kinetic operator K), not a topological invariant of
 the bundle.
 
-Concretely: any operator on the hw=1 fiber that is *not* translation-
-invariant could couple the three K-classes. The vanishing of K-class
-mixing requires the *additional* input "K is translation-invariant",
-which is the Kawamoto-Smit forcing content. Therefore:
+Concretely: an operator on the hw=1 fiber that is *not* translation-
+invariant can couple the three K-classes. The vanishing of K-class
+mixing therefore needs an *additional* operator input. "K is
+translation-invariant" is not available: the Kawamoto-Smit operator is
+not invariant under `T_x, T_y` (its invariances are `T_z` and the
+two-site `T_μ²` in the Block 03 representative). The input that holds
+is that K annihilates every corner plane wave, which is Kawamoto-Smit
+content. Therefore:
 
 ```
 K-theoretic closure of AC_λ.struct = K-theoretic decomposition  AND
-                                      translation-invariance of K
+                                      corner annihilation by K
                                     = K-theoretic decomposition  AND
                                       Kawamoto-Smit inheritance  (same as before)
 ```
@@ -240,7 +249,7 @@ K-theory does NOT bypass the KS-inheritance — it derives the same fact
 via a more abstract route, but with the **same load-bearing input**.
 
 **Conclusion K1:** AC_λ.struct via K-theory has the **same bounded
-tier** as AC_λ.struct via direct Kawamoto-Smit + Reed-Simon. The K-
+tier** as AC_λ.struct via direct Kawamoto-Smit corner annihilation. The K-
 theoretic route adds **one postulated bridge** (the K-class
 ↔ species-label bridge identification), making the K-theoretic route
 materially *worse* by primitive count, not better.
@@ -403,9 +412,9 @@ positively under any of the three imported tools (K1, K2, K3).
 
 K1 (K-theory of BZ-corner bundle):
   AC_λ.struct has the same bounded tier via K-theory as via
-  direct Kawamoto-Smit + Reed-Simon. K-theory adds one postulated bridge
-  (the K-class ↔ species-label bridge) without bypassing the
-  translation-invariance load-bearing input.
+  direct Kawamoto-Smit corner annihilation. K-theory adds one postulated
+  bridge (the K-class ↔ species-label bridge) without bypassing the
+  Kawamoto-Smit load-bearing input.
 
 K2 (C_3-torsor labelings):
   AC_λ.label is characterized cleanly by the C_3-torsor language
@@ -436,8 +445,9 @@ in §§K1-K3 above. The runner verifies:
 
 - K1: the K-theoretic decomposition of K^0_{T³, equiv}(hw=1 sublocus)
   produces a Z^3 with the three corners as generators, but the
-  block-diagonality of the propagator requires the *additional*
-  translation-invariance input — the same KS load-bearing content.
+  block-diagonality of the propagator requires an *additional*
+  operator input — corner annihilation by K, which is KS load-bearing
+  content (plain translation invariance of K is not available).
 - K2: the C_3-torsor language has exactly 3 equivariant labeling choices.
   This is **isomorphic in content** to PR #790's parameter-counting result
   (3 cyclic-shift bijections). No selection of a specific choice is forced.
@@ -472,7 +482,8 @@ meta acceptance and Kawamoto-Smit upstream promotion.
 - **Each tool fails to bypass the bounded inheritances** of the prior
   AC_λ partial closure (PR #890).
 - **K1 provides an alternative derivation of AC_λ.struct** but with the
-  same load-bearing input (translation-invariance of K).
+  same load-bearing Kawamoto-Smit input (corner annihilation by K;
+  K is not invariant under `T_x, T_y`).
 - **K2 provides a clean categorical characterization of AC_λ.label**
   but does not derive the labeling convention.
 - **K3 is materially worse** (three postulated bridges, same trap as
@@ -504,7 +515,7 @@ meta acceptance and Kawamoto-Smit upstream promotion.
 
 | Claim | Falsifier |
 |---|---|
-| K-theory does not bypass KS-inheritance (K1) | Exhibit a translation-NON-invariant kinetic operator on the BZ-corner bundle whose K-theoretic block-diagonality holds anyway — refutes K1. |
+| K-theory does not bypass KS-inheritance (K1) | Exhibit corner-basis block-diagonality derived from the K-theoretic decomposition alone, with no operator input — refutes K1. (The Kawamoto-Smit operator itself is not invariant under `T_x, T_y` yet is block-diagonal on the corners, because it vanishes there; that is an operator input, not a K-theoretic one.) |
 | Groupoid does not derive labeling convention (K2) | Exhibit a categorical/torsor construction whose codomain selection is forced by retained content — refutes K2. |
 | Modular flavor is multi-bridge import (K3) | Derive `(N=3, k=2, dictionary)` from retained `Cl(3) + Z³ + BlockT3` content alone — refutes K3. |
 | AC_λ resists imported-tool closure | Exhibit an imported mathematical tool that derives both AC_λ.struct (without KS-inheritance) AND AC_λ.label (without audit-pending meta) — refutes the bounded stress test. |
@@ -616,7 +627,9 @@ python3 scripts/cl3_koide_s_substep4_aclambda_2026_05_08_probeS_substep4_aclambd
 ```
 
 Expected output: structural verification of (1) K1 K-theory equivariant
-decomposition + translation-invariance load-bearing identification;
+decomposition + operator-input identification (corner annihilation; the
+plain translations `T_x, T_y` are not symmetries of the staggered
+operator);
 (2) K2 C_3-torsor equivariant-choice enumeration; (3) K3 modular
 flavor bridge-count audit; (4) hostile-review tiering of each
 ingredient; (5) substep-4 admission count unchanged verification;

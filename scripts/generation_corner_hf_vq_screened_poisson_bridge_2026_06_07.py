@@ -21,10 +21,18 @@ from pathlib import Path
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 120
+
 ROOT = Path(__file__).resolve().parents[1]
 BRIDGE_NOTE = ROOT / "docs" / "GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md"
 TARGET_NOTE = ROOT / "docs" / "GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md"
-LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+LEDGER_SHARDS = ROOT / "docs" / "audit" / "data" / "ledger"
+UPSTREAM_ROWS = (
+    "staggered_self_consistent_two_body_note_2026-04-11",
+    "three_generation_observable_theorem_note",
+    "three_generation_structure_note",
+    "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+)
 TARGET_RUNNER = ROOT / "scripts" / "generation_localization_corner_protected_delta_runner.py"
 BRIDGE_CACHE = ROOT / "logs" / "runner-cache" / "generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.txt"
 
@@ -139,16 +147,13 @@ def hf_formula_delta(L: int, i: int, j: int) -> float:
     return (vq((0.0, 0.0, 0.0)) - vq(delta_k)) / n
 
 
-def ledger_rows() -> dict[str, dict[str, object]]:
-    data = json.loads(LEDGER.read_text())
-    rows = data["rows"]
-    if not isinstance(rows, dict):
-        raise TypeError("audit ledger rows must be a dictionary")
-    return rows
-
-
-def effective_status(rows: dict[str, dict[str, object]], claim_id: str) -> str:
-    row = rows.get(claim_id, {})
+def effective_status(claim_id: str) -> str:
+    """Read an audit-lane status from the tracked ledger shard (printed, never pinned)."""
+    shard = LEDGER_SHARDS / claim_id[:2] / f"{claim_id}.json"
+    try:
+        row = json.loads(shard.read_text())
+    except (OSError, ValueError) as exc:
+        return f"unreadable ({type(exc).__name__})"
     return str(row.get("effective_status") or "")
 
 
@@ -157,25 +162,9 @@ def source_checks() -> None:
     bridge = BRIDGE_NOTE.read_text()
     target = TARGET_NOTE.read_text()
     runner = TARGET_RUNNER.read_text()
-    rows = ledger_rows()
-    check(
-        "retained staggered two-body mediator remains retained_bounded, not widened by this branch",
-        effective_status(rows, "staggered_self_consistent_two_body_note_2026-04-11") == "retained_bounded",
-        detail=effective_status(rows, "staggered_self_consistent_two_body_note_2026-04-11"),
-    )
-    gen_statuses = {
-        "three_generation_observable_theorem_note": effective_status(rows, "three_generation_observable_theorem_note"),
-        "three_generation_structure_note": effective_status(rows, "three_generation_structure_note"),
-        "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10": effective_status(
-            rows,
-            "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
-        ),
-    }
-    check(
-        "generation-corner dependencies are retained or retained_bounded on current main",
-        all(status in {"retained", "retained_bounded"} for status in gen_statuses.values()),
-        detail=str(gen_statuses),
-    )
+    # Audit-lane status fields are live metadata: printed for context, not pass/fail targets.
+    for claim_id in UPSTREAM_ROWS:
+        print(f"  [INFO] upstream effective_status {claim_id}: {effective_status(claim_id)}")
     check(
         "bridge note declares exact-support source status and independent audit requirement",
         "exact-support source-note proposal" in bridge

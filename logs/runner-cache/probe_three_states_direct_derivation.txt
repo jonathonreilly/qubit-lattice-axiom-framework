@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/probe_three_states_direct_derivation.py
-runner_sha256: 6d2971f8ac937315e91a6cb75e8f14aad74b70130afe5b75798b02e09f1ab6d0
-timeout_sec: 120
+runner_sha256: bbdeb80673e5fbe3eb86daefe7721e0c681fcf230dcc353f9f2d659851eed353
+timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.02
 status: ok
 ----- stdout -----
 ========================================================================
@@ -28,11 +28,12 @@ Three hw=1 corner translation eigenvalues:
 [PASS] K10 Three corners have distinct joint translation eigenvalues: corners: [(1, 0, 0), (0, 1, 0), (0, 0, 1)], eigenvalues: [(-1, 1, 1), (1, -1, 1), (1, 1, -1)], distinct: True
 [PASS] K11 Distinct eigenvalues imply pairwise orthogonality: Spectral theorem (admissible standard math): distinct simultaneous eigenvalues of commuting Hermitian operators → orthogonal eigenstates
 [PASS] K12 C_3[111] generates a 3-cycle on hw=1 corners: 3-cycle: True (no fixed points: True; (C_3)^3 = id: True)
-[PASS] K13 C_3[111] is a represented lattice-symmetry unitary: C_3[111] = cyclic shift of lattice axes is a unitary on H_phys via the lattice automorphism / GNS image; NOT a charged intertwiner connecting separate sectors
+[PASS] K13 C_3[111] is a unitary on H_phys (symmetry in the cyclic representative): bare axis cycle, a lattice-symmetry unitary in the cyclic KS representative (in eta^0 the covering symmetry leaves the hw=1 span); NOT a charged intertwiner connecting separate sectors
 [PASS] K14 Three corners in same superselection sector: Per K9 (H_phys single sector) + K13 (represented C_3 unitary connects them): three corners are in a single H_phys, NOT three separate DHR sectors
 [PASS] K15 Direct three-state algebraic support only: Three corners are quantum-mechanically distinct states in single H_phys. Physical-species / SM-generation identification remains an open bridge.
 
 SUMMARY: PASS=15 FAIL=0
+TOTAL: PASS=15 FAIL=0
 
 Bounded theorem (T4-revised) — Direct Three-State Algebraic Support — verified.
 This is bounded algebraic support, not closure of the physical-species bridge.

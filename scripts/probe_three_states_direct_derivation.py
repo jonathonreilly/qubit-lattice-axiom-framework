@@ -1,8 +1,10 @@
 """Dependency-chain verification for the direct three-state algebraic support.
 
 Verifies the bounded algebraic support statement: the hw=1 triplet gives
-three translation-character-distinct states in a single H_phys. It does not
-derive the physical-species / SM-generation identification.
+three plain-translation-character-distinct states in a single H_phys. The
+plain translations and the bare axis cycle are label operators, not jointly
+symmetries of the Kawamoto-Smit operator. It does not derive the
+physical-species / SM-generation identification.
 
 Verifies:
 - All cited premises (RP, RS, CD, LR, LN, SC, M_3(C), no-proper-quotient)
@@ -18,6 +20,8 @@ Block: 02
 from __future__ import annotations
 
 from typing import List, Tuple
+
+AUDIT_TIMEOUT_SEC = 60
 
 
 def hw1_corners() -> List[Tuple[int, int, int]]:
@@ -102,11 +106,14 @@ def main() -> int:
         f"3-cycle: {is_3cycle} (no fixed points: {no_fixed}; (C_3)^3 = id: {cubed_back})"
     ))
 
-    # K13: C_3[111] is a represented lattice-symmetry unitary, not a charged intertwiner.
+    # K13: C_3[111] is a unitary on H_phys, not a charged intertwiner. The bare
+    # axis cycle is a symmetry of the Kawamoto-Smit operator in the cyclic
+    # representative; in eta^0 its covering symmetry carries a sign field and
+    # does not preserve the hw=1 span (scope runner, 2026-10-02).
     checks.append((
-        "K13 C_3[111] is a represented lattice-symmetry unitary",
+        "K13 C_3[111] is a unitary on H_phys (symmetry in the cyclic representative)",
         True,
-        "C_3[111] = cyclic shift of lattice axes is a unitary on H_phys via the lattice automorphism / GNS image; NOT a charged intertwiner connecting separate sectors"
+        "bare axis cycle, a lattice-symmetry unitary in the cyclic KS representative (in eta^0 the covering symmetry leaves the hw=1 span); NOT a charged intertwiner connecting separate sectors"
     ))
 
     # K14: All three corners in same superselection sector (per K9 + K13)
@@ -131,6 +138,7 @@ def main() -> int:
         print(f"[{status}] {name}: {msg}")
     print()
     print(f"SUMMARY: PASS={n_pass} FAIL={n_total - n_pass}")
+    print(f"TOTAL: PASS={n_pass} FAIL={n_total - n_pass}")
     print()
     print("Bounded theorem (T4-revised) — Direct Three-State Algebraic Support — verified.")
     print("This is bounded algebraic support, not closure of the physical-species bridge.")

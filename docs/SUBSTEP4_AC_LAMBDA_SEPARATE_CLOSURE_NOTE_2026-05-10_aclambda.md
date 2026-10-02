@@ -1,6 +1,6 @@
 # Substep-4 AC_λ Separate-Closure Candidate (Sharpened, Partial)
 
-**Date:** 2026-05-10
+**Date:** 2026-05-10; 2026-10-02 AC_λ.struct route repair (corner annihilation replaces commuting translations)
 **Type:** bounded_theorem
 **Support class:** sharpened_bounded_support (partial AC_λ separate-closure candidate only)
 **Scope:** Separate closure of the AC_λ atom of the substep-4 atomic
@@ -80,10 +80,12 @@ into two sub-claims:
 - **AC_λ.struct (block-diagonality):** `⟨χ̄_{c_α}(x) χ_{c_β}(y)⟩_Ω =
   δ_{αβ} S_α(x − y)` with no inter-corner mixing in the free measure
   on `H_{hw=1}`. **Status: runner-certified bounded candidate** via
-  interval-certified Kawamoto-Smit (Reed-Simon I §VIII.5 simultaneous-
-  diagonalization on commuting `(T_x, T_y, T_z)` with pairwise distinct
-  joint eigenvalues `((-1,1,1), (1,-1,1), (1,1,-1))`). Inherits bounded
-  tier from its Kawamoto-Smit upstream.
+  the vanishing of the Kawamoto-Smit operator on every corner plane
+  wave (exact integer check). The earlier route, Reed-Simon I §VIII.5
+  simultaneous diagonalization on commuting `(T_x, T_y, T_z)`, is
+  retired: the one-site translations `T_x, T_y` do not commute with the
+  operator (2026-06-10 repair record of
+  `STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`). Inherits bounded tier from its Kawamoto-Smit upstream.
 
 - **AC_λ.label (species-kind label):** the species-label is the
   *kind-of-label* used throughout particle physics for distinct fermion
@@ -184,30 +186,32 @@ propagator is block-diagonal.
 
 ### Step 1: AC_λ.struct certified by interval-certified Kawamoto-Smit
 
-By the rigorization addendum (2026-05-09) recorded in the substep-4
-narrowing note, AC_λ block-diagonality is **runner-certified bounded
+By the rigorization addendum (2026-05-09), as repaired 2026-06-10 in
+the substep-4 narrowing note, AC_λ block-diagonality is **runner-certified bounded
 candidate** via:
 
 1. At every hw=1 BZ corner, `K(k) = Σ_μ i · η_μ · sin(k_μ) · γ_μ`
    vanishes because every `k_μ ∈ {0, π}` gives `sin(k_μ) = 0`. Verified
    in `mpmath.iv` interval arithmetic at 50-digit precision.
 
-2. The Kawamoto-Smit kinetic operator `K` commutes with all three
-   lattice translations `(T_x, T_y, T_z)` by translation-invariance of
-   the staggered kinetic action.
+2. (Repaired 2026-10-02, following the 2026-06-10 repair record of
+   `STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`.) The Kawamoto-Smit operator `K` does **not** commute with
+   all three one-site translations: in the Block 03 representative
+   `η⁰` the runner computes `[2D, T_1] ≠ 0` and `[2D, T_2] ≠ 0` (max
+   entry 2), while `[2D, T_3] = 0` and `[2D, T_μ²] = 0`. The earlier
+   simultaneous-diagonalization route through commuting
+   `(T_x, T_y, T_z)` is therefore retired.
 
-3. The three hw=1 corners are simultaneous eigenvectors of
-   `(T_x, T_y, T_z)` with **pairwise distinct** joint eigenvalue
-   triples `((-1, 1, 1), (1, -1, 1), (1, 1, -1))`. By the
-   simultaneous-diagonalization theorem for commuting operators with
-   non-degenerate joint eigenspaces (Reed-Simon I §VIII.5), `K` is
-   diagonal in the corner basis. Hence `⟨c_α | K | c_β⟩ = 0` for
-   `α ≠ β`.
+3. Direct annihilation: `K` annihilates every corner plane wave
+   (`2D v_n = 0` for all eight corners, exact integers on the `L = 4`
+   torus). Hence the hw=1 block of `K` is zero, `⟨c_α | K | c_β⟩ = 0`
+   for all `α, β`, and the free propagator block on the corner labels
+   is `(D + m)^{-1} = I/m`.
 
 The argument is rigorous within the stated physical `Cl(3)` local
 algebra plus `Z^3` spatial substrate framework surface and the cited
-Kawamoto-Smit upstream. The only standard-math machinery is Reed-Simon's
-simultaneous-diagonalization theorem. The upstream authority is the
+Kawamoto-Smit upstream. The machinery is finite exact linear
+algebra. The upstream authority is the
 Kawamoto-Smit forcing theorem, which is currently `bounded_theorem` on
 main.
 
@@ -322,8 +326,8 @@ where:
                  corner basis (no off-diagonal corner mixing in the
                  free measure)"
               ≡ runner-certified bounded candidate via
-                interval-certified Kawamoto-Smit + Reed-Simon
-                simultaneous-diagonalization
+                corner annihilation by the Kawamoto-Smit operator
+                (exact integer check)
 
   AC_λ.label ≡ "the corner-distinguishing label is species-kind"
              ≡ labeling-convention bridge under audit-pending meta

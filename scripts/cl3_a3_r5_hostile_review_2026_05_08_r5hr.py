@@ -58,6 +58,8 @@ from typing import Dict, List, Tuple
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 60
+
 
 # ---------------------------------------------------------------------------
 # Setup: hw=1 BZ corners on Z^3 APBC (matches R5)
@@ -325,71 +327,68 @@ def hr5_3_modular_structure() -> Dict[str, bool]:
 #        content already break C_3?
 # ---------------------------------------------------------------------------
 
+def _ks_two_d_eta0(L: int = 4) -> Tuple[np.ndarray, List[Tuple[int, int, int]]]:
+    """Integer 2D for the Block 03 representative eta^0 on the periodic L^3 torus."""
+    sites = [(x1, x2, x3) for x3 in range(L) for x2 in range(L) for x1 in range(L)]
+    index = {x: i for i, x in enumerate(sites)}
+    n = len(sites)
+    hop = np.zeros((n, n), dtype=np.int64)
+    for i, x in enumerate(sites):
+        etas = (1, (-1) ** x[0], (-1) ** (x[0] + x[1]))
+        for mu in range(3):
+            y = list(x)
+            y[mu] = (y[mu] + 1) % L
+            hop[i, index[tuple(y)]] = etas[mu]
+    return hop - hop.T, sites
+
+
 def hr5_4_bare_hamiltonian_C3_symmetric() -> Dict[str, bool]:
-    """R5's V6 argues spectrum positivity != C_3-breaking. But: is the
-    BARE retained Hamiltonian (Kawamoto-Smit kinetic) actually C_3-symmetric
-    on hw=1, or does retained content (e.g., RP boundary, single-clock
-    direction, lattice anisotropy) already supply C_3-breaking that retains
-    species distinguishability?
+    """HR5.4: is the BARE retained kinetic operator C_3-symmetric on hw=1?
 
-    Attack: model a Kawamoto-Smit kinetic restricted to hw=1 and check
-    [H, U_{C_3}] = 0.
+    Attack: compute the compression of the Kawamoto-Smit operator to the
+    hw=1 corner plane waves and test [P H P, U_{C_3}] = 0.
 
-    The Kawamoto-Smit staggered Dirac kinetic on Z^3 APBC has cubic isotropy:
-    each direction enters the action symmetrically. Restriction to hw=1 BZ
-    corners (which are themselves C_3-permuted) preserves this symmetry.
-
-    The single-clock direction (time) is OUTSIDE the spatial Z^3, so cannot
-    distinguish spatial corners.
-
-    BUT: the APBC condition could break spatial symmetry if the BC is asymmetric.
-    Standard APBC is uniform across all spatial directions, so cubic symmetry
-    is preserved.
-
-    Test: build a generic K-S kinetic block on hw=1 and verify it's C_3-symmetric.
+    Repaired 2026-10-02: the hw=1 block is not lambda_KS * I with a generic
+    lambda by cubic isotropy, and the full operator is not invariant under
+    the one-site translations T_x, T_y. The operator annihilates every corner
+    plane wave on a periodic even torus, so its hw=1 compression is the zero
+    matrix; that is why it commutes with U_{C_3} and gives equal corner
+    expectations. The bare cycle is an exact symmetry of the operator in the
+    cyclic representative, not in eta^0.
     """
     checks: Dict[str, bool] = {}
-
-    # On hw=1, the K-S kinetic acts diagonally in the BZ basis with eigenvalue
-    # determined by the staggered eigenvalue at each corner. By cubic isotropy,
-    # all three corners have the SAME staggered eigenvalue (call it lambda_KS).
-    # Therefore H_KS|_{hw=1} = lambda_KS * I_3 (proportional to identity).
-    lambda_KS = 1.7  # generic positive eigenvalue
-    H_KS = lambda_KS * np.eye(3)
+    two_d, sites = _ks_two_d_eta0(4)
+    corners = [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+    vecs = [np.array([(-1) ** (c[0] * x[0] + c[1] * x[1] + c[2] * x[2]) for x in sites], dtype=np.int64)
+            for c in corners]
+    block = np.array([[int(va @ two_d @ vb) for vb in vecs] for va in vecs], dtype=np.int64)
+    checks["hw1_compression_of_KS_is_zero"] = bool(not np.any(block))
+    H_KS = block.astype(float)
     U = c3_unitary()
-    comm = H_KS @ U - U @ H_KS
-    checks["bare_KS_kinetic_C3_symmetric"] = bool(np.linalg.norm(comm) < 1e-12)
+    checks["bare_KS_kinetic_C3_symmetric"] = bool(np.linalg.norm(H_KS @ U - U @ H_KS) < 1e-12)
     e1, e2, e3 = standard_basis()
-    exp_e1 = float(e1 @ H_KS @ e1)
-    exp_e2 = float(e2 @ H_KS @ e2)
-    exp_e3 = float(e3 @ H_KS @ e3)
-    checks["KS_kinetic_equal_corner_expectations"] = bool(
-        abs(exp_e1 - exp_e2) < 1e-12 and abs(exp_e2 - exp_e3) < 1e-12)
-
-    # Now test the full retained-primitive constraint set:
-    # (a) H is self-adjoint on H_phys
-    # (b) H >= 0 (spectrum condition)
-    # (c) H is invariant under spatial Z^3 translations (lattice translation symmetry)
-    # (d) H is invariant under cubic point group (cubic isotropy of action)
-    # (e) [H, T_x] = [H, T_y] = [H, T_z] = 0 (commutes with translations)
-    # (f) RP A11 + OS reconstruction
-    #
-    # Constraint (d) -- cubic point group -- INCLUDES C_3[111]. So the conjunction
-    # implies [H, U_{C_3}] = 0. This is more than V6's H >= 0 alone.
-    H_test = H_KS
+    exps = [float(e @ H_KS @ e) for e in (e1, e2, e3)]
+    checks["KS_kinetic_equal_corner_expectations"] = bool(max(exps) - min(exps) < 1e-12)
     Tx, Ty, Tz = translation_operators()
-    checks["H_commutes_with_Tx"] = bool(np.linalg.norm(H_test @ Tx - Tx @ H_test) < 1e-12)
-    checks["H_commutes_with_Ty"] = bool(np.linalg.norm(H_test @ Ty - Ty @ H_test) < 1e-12)
-    checks["H_commutes_with_Tz"] = bool(np.linalg.norm(H_test @ Tz - Tz @ H_test) < 1e-12)
-
-    # Conclusion: bare retained Hamiltonian on hw=1 IS C_3-symmetric.
-    # Retained primitives (Kawamoto-Smit + cubic isotropy + APBC) jointly
-    # force C_3-symmetric H on hw=1, with equal corner expectations.
-    # R5's V6 stands and is even SHARPER than R5 stated:
-    # the conjunction of retained constraints is C_3-symmetric, not just
-    # "spectrum condition is independent of symmetry".
-    checks["retained_constraint_set_is_C3_symmetric"] = True
-
+    checks["hw1_block_commutes_with_label_characters"] = bool(
+        all(np.linalg.norm(H_KS @ T - T @ H_KS) < 1e-12 for T in (Tx, Ty, Tz)))
+    # The full operator is not translation invariant: [2D, T_x], [2D, T_y] != 0.
+    n = len(sites)
+    L = 4
+    index = {x: i for i, x in enumerate(sites)}
+    shifts = []
+    for mu in range(3):
+        t = np.zeros((n, n), dtype=np.int64)
+        for i, x in enumerate(sites):
+            y = list(x)
+            y[mu] = (y[mu] + 1) % L
+            t[i, index[tuple(y)]] = 1
+        shifts.append(t)
+    comm = [two_d @ t - t @ two_d for t in shifts]
+    checks["full_KS_not_invariant_under_Tx_Ty"] = bool(
+        np.any(comm[0]) and np.any(comm[1]) and not np.any(comm[2]))
+    checks["C3_symmetry_on_hw1_from_corner_annihilation"] = bool(
+        checks["hw1_compression_of_KS_is_zero"] and checks["bare_KS_kinetic_C3_symmetric"])
     return checks
 
 
@@ -826,55 +825,33 @@ def aggregate_verdict() -> Dict[str, str]:
 
 def n5_execution_certificate() -> None:
     """Report the resolution granularity actually exercised by this runner."""
-    print("=" * 78)
     print("N5 EXECUTION CERTIFICATE")
-    print("=" * 78)
     print(
-        "  per_element: resolution reaches the individual complex entry - every "
-        "object in this review is an explicit 3x3 array written out over the hw=1 "
-        "corner basis (T_x = diag(-1,+1,+1), T_y = diag(+1,-1,+1), "
-        "T_z = diag(+1,+1,-1), U_{C_3} the cyclic permutation matrix carrying "
-        "e1 -> e2 -> e3, and the six S_3 permutation matrices), and each attack "
-        "vector is decided by a Frobenius commutator or difference norm compared "
-        "against the single 1e-12 tolerance used throughout the file, so no matrix "
-        "entry is coarse-grained away before the verdict is taken."
+        "  per_element: each attack vector is decided entry by entry on explicit "
+        "3x3 arrays over the hw=1 corner basis (diagonal plain-translation "
+        "characters, the cyclic U_{C_3}, the six S_3 permutations) by Frobenius "
+        "norms against a 1e-12 tolerance; the HR5.4 corner block is exact integers."
     )
     print(
-        "  per_site: checked and not executed - the Z^3 APBC lattice this review "
-        "argues about is never instantiated; there is no site index, no lattice "
-        "extent and no site-resolved field anywhere in the file, because every "
-        "attack vector is restricted to the 3-dimensional hw=1 sector in which the "
-        "site label has already been Fourier-summed away, and the lattice-level "
-        "premises (cubic isotropy, uniform antiperiodic boundaries) are carried as "
-        "docstring reasoning rather than as executed site sums."
+        "  per_site: HR5.4 instantiates the periodic 4^3 torus with the Block 03 "
+        "eta^0 phases (64 sites, integer 2D) and the eight corner plane waves site "
+        "by site; the other vectors stay in the Fourier-summed hw=1 sector."
     )
     print(
-        "  per_mode: the three hw=1 Brillouin-zone corners (1,0,0), (0,1,0) and "
-        "(0,0,1) are the mode label that is resolved one at a time - the "
-        "Kawamoto-Smit kinetic block and the anomalous-dimension matrix "
-        "A_dim = a I + b U + conj(b) U^dagger are each evaluated in the corner "
-        "basis separately and their three diagonal expectations compared pairwise, "
-        "while the C_3-character eigenvalues of A_dim are shown to be distinct, so "
-        "mode by mode the corners carry RG labels and not species labels."
+        "  per_mode: the three hw=1 corners are resolved one at a time - the "
+        "compressed kinetic block (zero: D annihilates corner plane waves) and "
+        "A_dim = a I + b U + conj(b) U^dagger are compared corner by corner, and "
+        "the C_3-character eigenvalues of A_dim are distinct (RG labels, not species)."
     )
     print(
-        "  per_block: the S_3 = Weyl(SU(3)) representation on C^3 is split into its "
-        "1+2 invariant blocks - the invariant line omega and the two-dimensional "
-        "complement spanned by psi1 and psi2, both confirmed orthogonal to omega - "
-        "and the block-level step that decides the section is that T_x psi1 is "
-        "shown to leave the two-dimensional summand, so the translation algebra "
-        "D_3 forbids that block splitting from being read as a species labelling."
+        "  per_block: the S_3 representation on C^3 splits into the line omega and "
+        "its two-dimensional complement; T_x psi1 leaves that complement, so the "
+        "plain-translation label algebra D_3 forbids reading the split as species."
     )
     print(
-        "  lattice_wide: checked and not executed - no lattice of any finite extent "
-        "is built, so the would-be whole-system statements of this runner (cubic "
-        "isotropy of the Kawamoto-Smit action, uniformity of the antiperiodic "
-        "boundary condition across the spatial directions, and preservation of C_3 "
-        "under continuum reconstruction) enter only as prose justifying the 3x3 "
-        "restriction, and the two verdict keys that would carry them, "
-        "retained_constraint_set_is_C3_symmetric and "
-        "continuum_effects_preserve_C3_symmetry, are assigned as literal constants "
-        "rather than computed from anything."
+        "  lattice_wide: the 4^3 torus in HR5.4 is a finite whole-lattice check "
+        "(corner annihilation; [2D,T_x], [2D,T_y] nonzero, [2D,T_z] zero); "
+        "continuum_effects_preserve_C3_symmetry remains a literal constant."
     )
     print()
 
@@ -884,14 +861,8 @@ def n5_execution_certificate() -> None:
 # ---------------------------------------------------------------------------
 
 def main() -> int:
-    print("=" * 78)
-    print("A3 R5 Hostile Review — numerical stress-test of seven-vector")
-    print("species-disclaimer non-removability claim (PR #712).")
-    print("=" * 78)
-    print()
-    print("Loop: action-first-principles-r5-hostile-review-20260508")
-    print("Companion source-note:")
-    print("  docs/A3_R5_HOSTILE_REVIEW_<status>_NOTE_2026-05-08_r5hr.md")
+    print("A3 R5 Hostile Review — stress-test of the species-disclaimer claim (PR #712)")
+    print("Companion: docs/A3_R5_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md")
     print()
 
     fail_count = 0
@@ -913,9 +884,7 @@ def main() -> int:
     ]
 
     for code, title, fn in sections:
-        print("=" * 78)
         print(f"{code} -- {title}")
-        print("=" * 78)
         results = fn()
         for k, v in results.items():
             status = "PASS" if v else "FAIL"
@@ -926,14 +895,13 @@ def main() -> int:
             print(f"  [{status}] {k}: {v}")
         print()
 
-    print("=" * 78)
     print("AGGREGATE VERDICT")
-    print("=" * 78)
     verdict = aggregate_verdict()
     for k, v in verdict.items():
         print(f"  {k}: {v}")
     print()
     print(f"SUMMARY: {pass_count} PASS, {fail_count} FAIL")
+    print(f"TOTAL: PASS={pass_count} FAIL={fail_count}")
     print()
 
     n5_execution_certificate()
@@ -941,29 +909,15 @@ def main() -> int:
     if verdict["VERDICT"] == "CONFIRMS_OBSTRUCTION_with_sharpenings":
         print("HOSTILE REVIEW VERDICT: CONFIRMS_OBSTRUCTION (with sharpenings)")
         print()
-        print("R5's species-disclaimer non-removability claim is structurally robust.")
-        print("All seven attack vectors withstand numerical stress-testing.")
-        print()
-        print("Sharpenings identified by hostile review:")
-        print()
-        print("  1. HR5.2: R5's V1 reframe ('C_3 is automorphism alpha_{C_3}') is")
-        print("     consistent with prior reading ('C_3 is in A(Lambda)') because")
-        print("     U_{C_3} sits inside M_3(C) on hw=1. The 'fix' is sufficient")
-        print("     but not necessary -- both readings give the SAME object.")
-        print()
-        print("  2. HR5.4: V6 understates the obstruction. The BARE retained")
-        print("     Hamiltonian on hw=1 is exactly C_3-symmetric (Kawamoto-Smit")
-        print("     kinetic + cubic isotropy + APBC). This is STRONGER than ")
-        print("     'spectrum-positivity is independent of C_3-symmetry'.")
-        print()
+        print("Sharpenings: 1. HR5.2: the automorphism and in-algebra readings of")
+        print("     C_3 give the same U_{C_3} on hw=1.")
+        print("  2. HR5.4: the bare kinetic operator compressed to hw=1 is zero")
+        print("     (it annihilates corner plane waves), hence C_3-symmetric.")
         print("  3. HR5.7: The FULL S_3 = Weyl(SU(3)) lifts to H_phys, not just")
         print("     C_3. S_3 has a 1+2 invariant decomposition on C^3, but the")
-        print("     translation algebra D_3 forbids this decomposition. NQ stands.")
-        print("     Transpositions add NO new species labels.")
-        print()
-        print("Conclusion: R5's seven-vector enumeration is COMPLETE and the")
-        print("structural-orthogonality claim is verified. Species-disclaimer")
-        print("cannot be removed from retained primitives alone.")
+        print("     plain-translation label algebra D_3 forbids it. NQ stands.")
+        print("Conclusion: the species-disclaimer stays; it is not removable from")
+        print("the retained primitives on these seven vectors.")
     elif verdict["VERDICT"] == "BREAKS_OBSTRUCTION":
         print("HOSTILE REVIEW VERDICT: BREAKS_OBSTRUCTION")
         print()

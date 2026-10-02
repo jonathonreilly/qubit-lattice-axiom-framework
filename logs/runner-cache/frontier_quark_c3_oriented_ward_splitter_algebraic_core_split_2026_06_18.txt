@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_c3_oriented_ward_splitter_algebraic_core_split_2026_06_18.py
-runner_sha256: e6740378ea7740a8700ad6bbcff8f255acab7a240b230bdb6631c1055d0aadac
+runner_sha256: a3147f8bf4a8681d999a2cdfd26ec21e48ecc7aee1bb8d84396c59dd9f597a24
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.14
@@ -12,7 +12,7 @@ QUARK C3-ORIENTED WARD SPLITTER ALGEBRAIC CORE SPLIT
 
 A. Source and authority surfaces
 ------------------------------------------------------------------------
-PASS: QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md exists -- docs/QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md
+PASS: QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md exists -- archive/notes/docs/QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md
 PASS: QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md exists -- docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md
 PASS: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md exists -- docs/THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
 PASS: QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md exists -- docs/QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md
@@ -24,7 +24,7 @@ PASS: block-05 no-go supplies S3 doublet residual
 
 B. Source-side rewire guards
 ------------------------------------------------------------------------
-PASS: parent no longer cites staggered gate filename
+PASS: parent does not markdown-link the staggered gate filename
 PASS: split note does not cite staggered gate filename
 PASS: parent names three-generation theorem as load-bearing carrier
 PASS: parent records non-load-bearing physical-provenance boundary
@@ -62,7 +62,7 @@ PASS: c=0 restores reflection
 
 D. Spectrum and diagonal readout boundary
 ------------------------------------------------------------------------
-PASS: closed-form eigenvalues match numerical spectrum -- got=[0.8999999999999988, 1.8500000000000003, 2.3499999999999996]
+PASS: closed-form eigenvalues match numerical spectrum -- got=[0.8999999999999988, 1.8499999999999999, 2.3499999999999996]
 PASS: generic c nonzero gives three values
 PASS: c=0 gives the S3 doublet two-value spectrum
 PASS: c=+3b accidental degeneracy is recorded

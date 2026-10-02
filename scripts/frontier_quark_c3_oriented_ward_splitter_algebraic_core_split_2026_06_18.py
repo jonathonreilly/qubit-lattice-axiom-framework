@@ -8,6 +8,11 @@ It deliberately proves only the finite-dimensional C3 matrix theorem on the
 retained three-generation observable C^3 parent surface. It does not consume
 physical staggered-carrier provenance, observed quark masses, fitted Yukawa
 entries, CKM data, or source/readout laws.
+
+The split note moved to archive/notes/docs/ in the 2026-09-04 densify freeze
+(archive/PATHMAP.tsv) and is read there. Since the parent's 2026-06-20
+dependency repair, the parent keeps the staggered-Dirac gate filename only as a
+plain-text provenance pointer, so the rewire guard checks for a markdown link.
 """
 
 from __future__ import annotations
@@ -16,6 +21,8 @@ from pathlib import Path
 import sys
 
 import numpy as np
+
+AUDIT_TIMEOUT_SEC = 120
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -149,7 +156,7 @@ def main() -> int:
     print("QUARK C3-ORIENTED WARD SPLITTER ALGEBRAIC CORE SPLIT")
     print("=" * 88)
 
-    split_note = DOCS / "QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md"
+    split_note = ROOT / "archive" / "notes" / "docs" / "QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md"
     parent_note = DOCS / "QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md"
     three_gen_note = DOCS / "THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md"
     no_go_note = DOCS / "QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md"
@@ -184,7 +191,10 @@ def main() -> int:
     print("B. Source-side rewire guards")
     print("-" * 72)
     forbidden_filename = "STAGGERED_DIRAC_REALIZATION_GATE_NOTE_2026-05-03.md"
-    check("parent no longer cites staggered gate filename", forbidden_filename not in parent_text)
+    check(
+        "parent does not markdown-link the staggered gate filename",
+        f"]({forbidden_filename})" not in parent_text,
+    )
     check("split note does not cite staggered gate filename", forbidden_filename not in split_text)
     check("parent names three-generation theorem as load-bearing carrier", "Load-bearing carrier input" in parent_text and "THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md" in parent_text)
     check("parent records non-load-bearing physical-provenance boundary", "Non-load-bearing physical-provenance boundary" in parent_text)

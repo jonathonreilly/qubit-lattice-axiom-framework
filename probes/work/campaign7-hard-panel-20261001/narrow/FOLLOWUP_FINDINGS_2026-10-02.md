@@ -11,6 +11,25 @@ The draft was written against `0485dc0738`. The blast radius re-derived on `e485
 - 41 direct dependents of the corner-forcing row and 93 of the observable row, 107 in the union;
 - all 107 are `unaudited` or `meta`.
 
+## Status update (2026-10-02, close-out): every item below is acted on
+
+The owner asked to finish all recommendations. Each one is now an open PR or delegated:
+
+- **F1, done as a narrowing:** #9455.
+  - Scoped to the periodic-corner realization, with a corrected proof.
+  - "Permanently closed" is withdrawn.
+  - The APBC counterexample is recorded.
+  - The runner's `b = 0` stub is replaced by the 4D computation, 43/43.
+  - The diagonal-vs-off-diagonal realization mismatch is recorded as open in the note.
+- **F2, done as a narrowing:** #9456. The species reading is an open bridge. The phrases read by `frontier_physical_lattice_necessity.py` are kept.
+- **Runner prose:**
+  - R5 review runner: #9459. The hw=1 kinetic block is computed (zero) and the 1.7·I stub is gone (59/59).
+  - Route-3 runner: #9461. The staggered sign on corners is computed (15/15).
+- **koide_s yaml review points:** aligned in #9450 (follow-up commit).
+- **Runners failing on main behind exit-0 caches** (the five listed below, plus generation-localization 2/12): delegated to a separate session ("Repair runners failing on main behind exit-0 caches").
+
+Full PR set: #9445–#9456, #9459, #9461.
+
 ## (b) Load-bearing findings: NOT rewritten, owner decision needed
 
 ### F1. The pure-APBC off-diagonal curvature no-go rests on the false commutation premise

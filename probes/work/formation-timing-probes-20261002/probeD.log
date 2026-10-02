@@ -1,0 +1,20 @@
+=== PROBE D (Monte Carlo, 8000 histories each): does 'one landing encourages another' leave a mark?  N = 8, mean wait 1.0/J per site ===
+  trigger strength    0x: base rate 1.0023, boosted rate per recorded neighbour 0.0000; mean time gap between neighbours 0.999/J
+  trigger strength    3x: base rate 0.4098, boosted rate per recorded neighbour 1.2295; mean time gap between neighbours 0.481/J
+  trigger strength   30x: base rate 0.1763, boosted rate per recorded neighbour 5.2890; mean time gap between neighbours 0.156/J
+
+-- menu rule: fixed
+  trigger    0x: c1=-0.6374(0.0034)  c2=+0.3280(0.0059)  c3=-0.2913(0.0064)  c4=+0.2014(0.0080)  [36s]
+  trigger    3x: c1=-0.6449(0.0035)  c2=+0.3407(0.0060)  c3=-0.3079(0.0064)  c4=+0.2241(0.0080)  [32s]
+  trigger   30x: c1=-0.6488(0.0034)  c2=+0.3379(0.0061)  c3=-0.3090(0.0064)  c4=+0.2397(0.0079)  [27s]
+
+-- menu rule: field
+  trigger    0x: v1=-0.6065(0.0029)  a1=+0.3324(0.0017)  naxes=+5.1386(0.0166)  [38s]
+  trigger    3x: v1=-0.6206(0.0032)  a1=+0.5361(0.0025)  naxes=+3.4941(0.0172)  [34s]
+  trigger   30x: v1=-0.6407(0.0033)  a1=+0.8238(0.0023)  naxes=+1.8046(0.0114)  [30s]
+
+-- menu rule: own
+  trigger    0x: v1=-0.6350(0.0035)  a1=+1.0000(0.0000)  naxes=+1.0000(0.0000)  [42s]
+  trigger    3x: v1=-0.6391(0.0035)  a1=+1.0000(0.0000)  naxes=+1.0000(0.0000)  [34s]
+  trigger   30x: v1=-0.6374(0.0034)  a1=+1.0000(0.0000)  naxes=+1.0000(0.0000)  [29s]
+[total 306s]

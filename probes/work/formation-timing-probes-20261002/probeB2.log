@@ -1,0 +1,23 @@
+=== PROBE B2 (Monte Carlo, 8000 histories each): one universe-wide tick vs local timing, N = 8 ring, mean wait 1.0/J per site ===
+
+-- menu rule: fixed
+  universe-wide ticks (p=0.5)    c1=-0.6140(0.0035)  c2=+0.2867(0.0059)  c3=-0.2602(0.0063)  c4=+0.1750(0.0079)  [25s]
+  patch ticks (two halves)       c1=-0.6262(0.0035)  c2=+0.3121(0.0060)  c3=-0.2903(0.0063)  c4=+0.2089(0.0078)  [seam bonds -0.6330, inside bonds -0.6240]  [28s]
+  each site its own ticks        c1=-0.6297(0.0035)  c2=+0.3134(0.0059)  c3=-0.2843(0.0063)  c4=+0.2011(0.0079)  [38s]
+  random times (Poisson)         c1=-0.6362(0.0035)  c2=+0.3296(0.0060)  c3=-0.3066(0.0064)  c4=+0.2266(0.0079)  [39s]
+  all at one tick (p=1)          c1=-0.6119(0.0034)  c2=+0.2666(0.0061)  c3=-0.2560(0.0061)  c4=+0.2028(0.0076)  [3s]
+
+-- menu rule: own
+  universe-wide ticks (p=0.5)    v1=-0.5102(0.0030)  a1=+0.0305(0.0019)  naxes=+7.7588(0.0136)  [19s]
+  patch ticks (two halves)       v1=-0.5956(0.0033)  a1=+0.2645(0.0049)  naxes=+6.1274(0.0344)  [29s]
+  each site its own ticks        v1=-0.6348(0.0035)  a1=+1.0000(0.0000)  naxes=+1.0000(0.0000)  [40s]
+  random times (Poisson)         v1=-0.6312(0.0035)  a1=+1.0000(0.0000)  naxes=+1.0000(0.0000)  [39s]
+  all at one tick (p=1)          v1=-0.1997(0.0022)  a1=+0.0000(0.0000)  naxes=+8.0000(0.0000)  [3s]
+
+-- menu rule: field
+  universe-wide ticks (p=0.5)    v1=-0.4594(0.0028)  a1=+0.1901(0.0016)  naxes=+6.4763(0.0131)  [16s]
+  patch ticks (two halves)       v1=-0.4961(0.0028)  a1=+0.2482(0.0016)  naxes=+6.0050(0.0130)  [23s]
+  each site its own ticks        v1=-0.6094(0.0029)  a1=+0.3335(0.0017)  naxes=+5.1344(0.0164)  [41s]
+  random times (Poisson)         v1=-0.6070(0.0029)  a1=+0.3347(0.0017)  naxes=+5.1294(0.0165)  [38s]
+  all at one tick (p=1)          v1=-0.2021(0.0021)  a1=+0.0000(0.0000)  naxes=+8.0000(0.0000)  [2s]
+[total 384s]

@@ -1,0 +1,9 @@
+=== PROBE B1 (exact): does the timing of two records matter at a distance?  N = 12 ring, sites 0 and d ===
+gap above the preparation = 1.4234
+d=1  preparation corr -0.5986 | TV(0 first after gap g, vs at once):  g=0.05: 0.0003  g=0.10: 0.0012  g=0.20: 0.0046  g=0.30: 0.0099  g=0.50: 0.0236  g=1.00: 0.0482 | order reversed (g=2) TV 4.3e-14
+d=2  preparation corr +0.2504 | TV(0 first after gap g, vs at once):  g=0.05: 0.0016  g=0.10: 0.0062  g=0.20: 0.0238  g=0.30: 0.0493  g=0.50: 0.1060  g=1.00: 0.1470 | order reversed (g=2) TV 4.6e-14
+d=3  preparation corr -0.2211 | TV(0 first after gap g, vs at once):  g=0.05: 0.0014  g=0.10: 0.0055  g=0.20: 0.0208  g=0.30: 0.0434  g=0.50: 0.0959  g=1.00: 0.1736 | order reversed (g=2) TV 5.3e-14
+d=4  preparation corr +0.1611 | TV(0 first after gap g, vs at once):  g=0.05: 0.0003  g=0.10: 0.0013  g=0.20: 0.0055  g=0.30: 0.0138  g=0.50: 0.0486  g=1.00: 0.2155 | order reversed (g=2) TV 4.1e-14
+d=5  preparation corr -0.1632 | TV(0 first after gap g, vs at once):  g=0.05: 0.0003  g=0.10: 0.0013  g=0.20: 0.0056  g=0.30: 0.0140  g=0.50: 0.0505  g=1.00: 0.2592 | order reversed (g=2) TV 6.0e-14
+d=6  preparation corr +0.1427 | TV(0 first after gap g, vs at once):  g=0.05: 0.0002  g=0.10: 0.0008  g=0.20: 0.0035  g=0.30: 0.0085  g=0.50: 0.0307  g=1.00: 0.2370 | order reversed (g=2) TV 6.7e-14
+[total 1s]

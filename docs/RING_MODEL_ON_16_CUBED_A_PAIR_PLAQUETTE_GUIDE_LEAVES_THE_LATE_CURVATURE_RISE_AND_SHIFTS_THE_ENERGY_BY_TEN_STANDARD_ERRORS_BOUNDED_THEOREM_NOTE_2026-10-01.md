@@ -58,7 +58,7 @@ rise changes with a guide that keeps more distinct ancestors.
 - **Distinct ancestors at lag 2:** pair 0.0019–0.0020, old 0.0013–0.0017.
 - **ESS fraction:** pair 0.964, old 0.937.
 - **Landed old-guide values** in the same windows (a different kernel and stream,
-  for comparison only): χ = 1.026, 1.058, 1.113 at 960 walkers and 1.021, 1.086,
+  for comparison): χ = 1.026, 1.058, 1.113 at 960 walkers and 1.021, 1.086,
   1.105 at 1920 walkers.
 
 ## Reading

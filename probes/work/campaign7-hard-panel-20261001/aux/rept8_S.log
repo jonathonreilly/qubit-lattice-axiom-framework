@@ -1,0 +1,54 @@
+8^3, k = pi/4, path 20 = 800 x 0.025, start canonical state, 4 chains x (burn-in until the path has shifted over 2.5 path lengths, cap 25000000 moves; then 15000000 production moves), measure every 250; win = boundaries 4..12 of 0..16; expected ~55 min
+      burn-in 5.000e+06 moves, shift range 0.86 M, 174 s
+      burn-in 1.000e+07 moves, shift range 0.99 M, 348 s
+      burn-in 1.500e+07 moves, shift range 0.99 M, 523 s
+      burn-in 2.000e+07 moves, shift range 0.99 M, 699 s
+      burn-in 2.500e+07 moves, shift range 0.99 M, 872 s
+      production 5.000e+06 moves, shift range 0.21 M, 1045 s
+      production 1.000e+07 moves, shift range 0.41 M, 1220 s
+      production 1.500e+07 moves, shift range 0.47 M, 1395 s
+chain 0 (seed 100): burn-in 2.50e+07 moves (range 0.99 M), production shift range 0.47 M; acceptance 0.910, D(3e4) 0.083 seg^2/move, integrity OK (overflow 0, build-overflow 0, mid replay diff 1.9e-15) | mid_cyc 0.6394+-0.0238  mid_anti 0.2970+-0.0051  mid_six 0.4682+-0.0125  win_six 0.4095+-0.0029  ends_six 0.5489+-0.0045 | u_ends 0.28890+-0.00005 | 1395 s
+   by fifth of the production: win_six 0.415 0.419 0.414 0.409 0.391 | mid_six 0.446 0.529 0.435 0.439 0.491 | ends_six 0.548 0.545 0.538 0.562 0.551
+   profile (six-mode mean, tail -> head, 17 boundaries): 0.554 0.402 0.348 0.344 0.378 0.399 0.373 0.387 0.468 0.492 0.439 0.396 0.353 0.311 0.320 0.379 0.544
+      burn-in 5.000e+06 moves, shift range 0.94 M, 175 s
+      burn-in 1.000e+07 moves, shift range 0.97 M, 356 s
+      burn-in 1.500e+07 moves, shift range 0.97 M, 533 s
+      burn-in 2.000e+07 moves, shift range 1.68 M, 709 s
+      burn-in 2.500e+07 moves, shift range 1.68 M, 877 s
+      production 5.000e+06 moves, shift range 0.88 M, 1045 s
+      production 1.000e+07 moves, shift range 0.92 M, 1216 s
+      production 1.500e+07 moves, shift range 0.99 M, 1386 s
+chain 1 (seed 101): burn-in 2.50e+07 moves (range 1.68 M), production shift range 0.99 M; acceptance 0.910, D(3e4) 0.133 seg^2/move, integrity OK (overflow 0, build-overflow 0, mid replay diff 2.0e-15) | mid_cyc 0.4413+-0.0328  mid_anti 0.3518+-0.0133  mid_six 0.3966+-0.0203  win_six 0.4112+-0.0124  ends_six 0.5622+-0.0045 | u_ends 0.28881+-0.00005 | 2781 s
+   by fifth of the production: win_six 0.383 0.495 0.407 0.429 0.342 | mid_six 0.342 0.521 0.360 0.440 0.319 | ends_six 0.553 0.551 0.579 0.566 0.562
+   profile (six-mode mean, tail -> head, 17 boundaries): 0.558 0.417 0.398 0.408 0.420 0.434 0.435 0.413 0.397 0.396 0.393 0.403 0.410 0.410 0.416 0.435 0.566
+      burn-in 5.000e+06 moves, shift range 1.50 M, 174 s
+      burn-in 1.000e+07 moves, shift range 1.74 M, 348 s
+      burn-in 1.500e+07 moves, shift range 2.19 M, 518 s
+      burn-in 2.000e+07 moves, shift range 2.19 M, 691 s
+      burn-in 2.500e+07 moves, shift range 2.19 M, 868 s
+      production 5.000e+06 moves, shift range 0.54 M, 1041 s
+      production 1.000e+07 moves, shift range 0.65 M, 1210 s
+      production 1.500e+07 moves, shift range 0.68 M, 1384 s
+chain 2 (seed 102): burn-in 2.50e+07 moves (range 2.19 M), production shift range 0.68 M; acceptance 0.910, D(3e4) 0.092 seg^2/move, integrity OK (overflow 0, build-overflow 0, mid replay diff 1.8e-15) | mid_cyc 0.3167+-0.0121  mid_anti 0.3843+-0.0326  mid_six 0.3505+-0.0212  win_six 0.3725+-0.0078  ends_six 0.5561+-0.0037 | u_ends 0.28888+-0.00003 | 4166 s
+   by fifth of the production: win_six 0.341 0.345 0.356 0.407 0.414 | mid_six 0.308 0.280 0.276 0.451 0.437 | ends_six 0.550 0.561 0.575 0.535 0.560
+   profile (six-mode mean, tail -> head, 17 boundaries): 0.558 0.424 0.396 0.391 0.376 0.355 0.338 0.324 0.350 0.381 0.409 0.418 0.400 0.367 0.366 0.403 0.554
+      burn-in 5.000e+06 moves, shift range 1.12 M, 176 s
+      burn-in 1.000e+07 moves, shift range 1.12 M, 357 s
+      burn-in 1.500e+07 moves, shift range 1.12 M, 540 s
+      burn-in 2.000e+07 moves, shift range 1.14 M, 717 s
+      burn-in 2.500e+07 moves, shift range 1.60 M, 888 s
+      production 5.000e+06 moves, shift range 0.53 M, 1059 s
+      production 1.000e+07 moves, shift range 0.70 M, 1237 s
+      production 1.500e+07 moves, shift range 0.76 M, 1412 s
+chain 3 (seed 103): burn-in 2.50e+07 moves (range 1.60 M), production shift range 0.76 M; acceptance 0.910, D(3e4) 0.114 seg^2/move, integrity OK (overflow 0, build-overflow 0, mid replay diff 2.3e-15) | mid_cyc 0.5106+-0.0145  mid_anti 0.3864+-0.0100  mid_six 0.4485+-0.0064  win_six 0.4497+-0.0056  ends_six 0.5635+-0.0036 | u_ends 0.28886+-0.00004 | 5578 s
+   by fifth of the production: win_six 0.432 0.462 0.468 0.457 0.429 | mid_six 0.448 0.421 0.458 0.456 0.459 | ends_six 0.565 0.560 0.560 0.569 0.563
+   profile (six-mode mean, tail -> head, 17 boundaries): 0.568 0.441 0.417 0.423 0.449 0.465 0.468 0.461 0.448 0.447 0.448 0.437 0.423 0.406 0.408 0.423 0.559
+
+TOTAL production shift range (path lengths) 2.9, wall 5578 s
+  mid_cyc  = 0.47697 +- 0.06737   (chain scatter sd 0.1347, n = 4)
+  mid_anti = 0.35489 +- 0.02084   (chain scatter sd 0.0417, n = 4)
+  mid_six  = 0.41593 +- 0.02654   (chain scatter sd 0.0531, n = 4)
+  win_six  = 0.41073 +- 0.01577   (chain scatter sd 0.0315, n = 4)
+  ends_six = 0.55767 +- 0.00334   (chain scatter sd 0.0067, n = 4)
+  u_ends   = 0.28886 +- 0.00002   (chain scatter sd 0.0000, n = 4)
+  comparison: forward-walking S(pi/4) on 8^3 = 0.4084 +- 0.0144 (7680 walkers, supplied by the brief)

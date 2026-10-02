@@ -1,0 +1,64 @@
+LIT LENS 2: Weyl nodes / nodal lines of Majorana fermions, 3D Kitaev models (hyperhoneycomb), TRS-breaking three-spin term
+Date: 2026-10-01. Method: WebSearch + WebFetch; PDFs the fetch tool saved were text-extracted locally (pypdf) in this scratchpad. No repo files touched.
+Verification levels: READ = I read the extracted text; ABSTRACT = abstract/metadata page only; SNIPPET = search-engine summary only (treat as unverified).
+
+=== A. PAPERS ===
+
+[1] M. Hermanns, K. O'Brien, S. Trebst, "Weyl spin liquids", PRL 114, 157202 (2015), arXiv:1411.7379. READ (5 pp main text; the PRL supplemental material was NOT read).
+ - Model: hyperhoneycomb Kitaev, zero-flux sector (flux gap ~0.2 J_K), field along [111]. Third-order term kappa~ sigma sigma sigma becomes next-neighbour Majorana hopping, coefficient u~_jk = -eps_abg; kappa := kappa~/J_K.
+ - kappa=0: nodal loop in the plane k_y=-k_x (their BZ labels).
+ - Small kappa>0: loop gapped except TWO Weyl points at +-Q, pinned to zero energy by inversion + particle-hole. Charge = chirality sign(v1.(v2 x v3)). Chern numbers of planes jump by the node charge (their Fig. 4). Footnote: "system always remains globally neutral" (total Weyl charge 0). Surface: one Fermi arc between the projected nodes. Bulk C~T^3, arcs C~T; thermal Hall K ~ node separation.
+ - Key result: at kappa = (1/2) sqrt(3/5) ~ 0.39 "each WP splits into three" (two of the same chirality, one opposite, chirality conserved locally), arcs 1 -> 3. So nodes 2 -> 6.
+ - Large kappa: nodes on the high-symmetry line Gamma-Y recombine at kappa=infinity; nodes on the BZ face do not, instead merge into nodal lines at kappa=infinity.
+ - Tilted field only shifts node positions (valid if field has nonzero components on all three axes). A footnote says the discussion refers to the gapless phase around the isotropic point.
+ - Caveat they state: the effective model is rigorous only for kappa << 1 (below flux gap); larger kappa is the supplied quadratic model's evolution, not the spin model.
+ - Fig. 5 carries a second marker "kappa = 1/2" whose meaning the text does not explain: NOT VERIFIED what happens there.
+ - Results are numerical/graphical except the quoted kappa value; no derivation of it appears in the main text, no general-coupling formula.
+
+[2] K. O'Brien, M. Hermanns, S. Trebst, "Classification of gapless Z2 spin liquids in three-dimensional Kitaev models", PRB 93, 085101 (2016), arXiv:1511.05569 (v2, Jul 2016). READ in part (36 pp: abstract, Table II, Sec. V intro/V-A, Sec. IV-C, IV-G on (10,3)b, parts of (8,3)b); not read in full. A PRB 94, 079908(E) (2016) erratum appears in search results; contents not examined.
+ - Lattice (10,3)b = hyperhoneycomb: nodal line at kappa=0 -> Weyl nodes under TRS breaking (Table II). Zero-flux sector checked numerically (vison gap ~0.13 J at isotropic point). Phase diagram symmetric under J_x <-> J_y (only x- and y-bonds are lattice-related).
+ - Text for (10,3)b: "Weyl points move along the k_z axis up until kappa=(1/2)sqrt(3/5), where four additional Weyl nodes appear"; axis nodes recombine at kappa=infinity; the other four become part of nodal lines at kappa=infinity (one velocity vanishes).
+ - General argument that Weyl nodes MUST appear: treat k_z as a tuning parameter; slices cutting the nodal line are 2D gapless Kitaev (-> Chern insulator with TRS breaking), others trivial; the boundary between them is a Weyl point; pairs by periodicity.
+ - Other lattices (not ours but relevant as precedent): (8,3)b: two opposite Weyl nodes annihilate at a high-symmetry point at exactly kappa = 3 sqrt3 - 5 ~ 0.196 (the only exact algebraic Weyl critical value I saw besides 1/2 sqrt(3/5)). (8,3)c: line nodes -> six Weyl nodes. (10,3)c (no inversion): 6 pairs, 12 Fermi pockets, nodes off zero energy.
+ - For (10,3)b I found NO Weyl-node evolution versus (J_x,J_y,J_z) at kappa != 0; only the kappa=0 phase diagram (Fig. 26).
+
+[3] S. Mandal, N. Surendran, "Exactly solvable Kitaev model in three dimensions", PRB 79, 024426 (2009), arXiv:0801.0229. READ (text).
+ - Zero-flux gap closes iff J_z^2 = sqrt(J_x^2+J_y^2+2cos k1 J_xJ_y) * sqrt(J_x^2+J_y^2+2cos k2 J_xJ_y) with a phase condition fixing k3; solutions exist only for the triangle inequalities (J_z<=J_x+J_y etc.). Contour shrinks to the point (0,0) as J_z -> J_x+J_y=2 (their Fig. 3). No TRS breaking, no kappa.
+
+[4] R. Schaffer, E. K.-H. Lee, Y.-M. Lu, Y. B. Kim, "Topological spinon semimetals and gapless boundary states in three dimensions", PRL 114, 116803 (2015), arXiv:1409.5125. READ (text).
+ - Zero-flux nodal ring on hyperhoneycomb and harmonic lattices: for J_x=J_y, delta=J_z/J_x, 4cos(k1/2)cos(k2/2)=delta^2 e^{-i(k3-k1/2-k2/2)}; ring exists for delta<2 (= J_z<J_x+J_y); class BDI winding numbers, flat surface bands. kappa=0 only; no Weyl nodes.
+ - NOTE: the task named "Schaffer, Lee and Thomale". I found no such paper (no Thomale co-author in anything verified); the Schaffer/Lee paper is with Lu and Kim.
+
+[5] S. S. Jahromi, H. Yarloo, R. Orus, "Thermodynamics of 3D Kitaev quantum spin liquids via tensor networks", Phys. Rev. Research 3, 033205 (2021), arXiv:2011.11577. READ the relevant passage. Finite-T tensor-network study; restates kappa_c=(1/2)sqrt(3/5) citing [1], "from two to six" Weyl points, nodes at (0,0,+-k0) at small kappa, thermal-Hall plateau drops at kappa_c. It uses kappa/K=0.001 for the numerics. NOT independent evidence for the node structure.
+
+[6] Tangential / background (ABSTRACT level unless stated):
+ - E. K.-H. Lee, R. Schaffer, S. Bhattacharjee, Y. B. Kim, PRB 89, 045117 (2014), arXiv:1308.6592: Heisenberg-Kitaev on hyperhoneycomb; Z2 liquid with Majorana "deformed Fermi-circle".
+ - I. Kimchi, J. G. Analytis, A. Vishwanath, PRB 90, 205126 (2014), arXiv:1309.1171: harmonic-honeycomb Kitaev liquids.
+ - M. Hermanns, S. Trebst, PRB 89, 235102 (2014), arXiv:1401.7678: hyperoctagon Majorana Fermi surface.
+ - S. Trebst, "Kitaev Materials", arXiv:1701.07056 (lecture notes): READ the lattice table; it just restates [2]'s classification. Hermanns-Kimchi-Knolle review arXiv:1705.01740: abstract only; journal ref not verified.
+ - T. Eschmann et al., PRB 102, 075125 (2020), arXiv:2006.07386 and P. A. Mishchenko et al., PRB 101, 045118 (2020), arXiv:1907.10241: flux-sector/gauge-order thermodynamics; the latter mentions Weyl nodes and Fermi arcs in some phases; no coupling-dependent node formulas found; lattice details not verified.
+ - A. Sandberg, L. Rodland, M. Hermanns, "Three-dimensional spin-orbital liquids", arXiv:2602.06628 (PRB 2026): Clifford-algebra 3D Z2 liquids; abstract lists Weyl semimetal phases and "splitting patterns"; different models (nu=3 or 2 Majorana flavours); my text extraction returned no Weyl hits, so content NOT verified.
+ - S. W. Kim, K. Seo, B. Uchoa, "3D Quantum Anomalous Hall Effect in Hyperhoneycomb Lattices", arXiv:1708.02965: interacting spinless complex fermions, Haldane-like loop currents, Weyl + Fermi arcs; different (non-Majorana) model; journal ref not verified.
+ - D. Wawrzik, D. Lindner, M. Hermanns, S. Trebst, PRB 98, 115114 (2018), arXiv:1803.04976: electronic tight-binding nodal lines on 3D honeycombs; not Majorana.
+
+=== B. COMPARISON WITH YOUR LIST ===
+
+Agreement
+ (i) Weyl count/charges: [1],[2] give 2 nodes at small kappa, 6 after the splitting, each +-1 chirality, local and global neutrality. Matches "six nodes, charges +-1, total 0".
+ (ii) Isotropic flip value: your kappa_c^2 = J(J+2)/(4(4+2J-J^2)) at J=1 is 3/20, kappa_c = 0.387298..., identical to (1/2)sqrt(3/5) (checked: both 0.3872983346). Their split-into-three (two same, one opposite chirality) IS a charge flip of the on-axis node (+1 -> -1 +1 +1). This is a strong cross-check IF your kappa has their normalization (kappa~/J_K with unit +-1 coefficients); I could not verify their coefficient conventions beyond the stated u~_jk = -eps_abg.
+ (iii) Triangle regime: [3],[4] give the gapless (nodal-line) region exactly as the triangle inequalities, symmetric under J_x<->J_y, as in [2].
+ (iv) Qualitative picture: TRS-protected nodal line at kappa=0 (BDI, flat surface band) -> Weyl phase for every kappa>0 (class D, nodes at zero energy by inversion+PH), Fermi arcs 1 -> 3 at the split, large-kappa reappearance of nodal lines for the face nodes. All as in [1],[2],[4].
+ (v) The dimensional-reduction proof that nodes must exist [2] is the same Chern-jump picture as your charge census.
+
+Not found / apparently not in the literature I could read
+ (a) General couplings: no kappa_c(J_x,J_y,J_z), no irreducible-quadratic/resultant form, no criterion |J_x^2-J_y^2|<J_z^2. [1] only says a field tilt shifts node positions; [1],[2] treat the isotropic point for the kappa evolution.
+ (b) Off-plane nodes for J_x != J_y: only the generic remark that anisotropy shifts nodes; nothing on leaving a symmetry plane.
+ (c) Algebraic node positions: nothing like an irreducible integer quintic. The only exact algebraic numbers seen: (1/2)sqrt(3/5) here and 3 sqrt3 - 5 for (8,3)b [2].
+ (d) Semi-Dirac merger: the kappa=0 statement "ring shrinks to a point at J_z=J_x+J_y" is in [3] (Fig. 3) and [4] (delta=2). Its local character (semi-Dirac, degree 0) and the kappa>0 pair-birth for kappa>1/2 at J=2 are NOT reported in anything I read.
+ (e) The three-squares identity |d_x|^2 det M = s1^2+s2^2+s3^2 and interval-certified censuses: no counterpart found (the literature is numerical/graphical here).
+ (f) Position coordinates: they place small-kappa nodes on a high-symmetry axis (k_z axis in [2]; "line Gamma-Y" in [1]) and the extra four on a BZ face. Whether that matches your line family (x,1-x,0) depends on a coordinate dictionary I did not establish: NOT VERIFIED.
+
+Flag for the team: [1] Fig. 5 marks kappa=1/2 at the isotropic point, unexplained in the text. Your J=2 pair-birth threshold is also 1/2, which may be a coincidence; worth checking whether your J=1 model has any event at kappa=1/2.
+
+=== C. LIMITS OF THIS SEARCH ===
+Not read: PRL supplemental material of [1]; most of [2] beyond the sections listed; Hermanns-Kimchi-Knolle and Trebst-Hickey reviews beyond abstract/table. Search engines could not surface any paper on general-coupling Weyl evolution, but absence in search is not proof of absence. No arXiv number above was guessed: each was confirmed on an arXiv abstract page or PDF header in this session, except journal refs marked "not verified".

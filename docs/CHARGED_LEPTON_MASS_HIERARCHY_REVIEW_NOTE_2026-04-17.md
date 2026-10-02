@@ -1,6 +1,6 @@
 # Charged-Lepton Mass Hierarchy and Koide's Relation on the Cl(3)/Z^3 Framework
 
-**Date:** 2026-04-17
+**Date:** 2026-04-17; 2026-10-02 §5.2 scope narrowing (off-diagonal curvature computed)
 **Status:** bounded review note — the proposed_retained framework does not derive Koide on the current surface; the charged-lepton hierarchy is accommodated only through an explicit observational pin.
 **Runners:** 19 runners, 518 PASS / 0 FAIL, independently verified on `origin/main`.
 
@@ -256,21 +256,25 @@ unique direction. The algebraic-permissiveness null is closed.
 
 Runner: `scripts/frontier_charged_lepton_z3_source_response_crosscheck.py`.
 
-### 5.2 Pure-APBC temporal refinement is insufficient at any `L_t`
+### 5.2 Pure-APBC temporal refinement (scope narrowed 2026-10-02)
 
 The off-diagonal source-response curvature `b = K_{ij}` for `i ≠ j`
-vanishes on every pure-APBC `L_t ∈ {4, 6, 8, 12, 16, 24, ∞}`:
+vanishes on pure-APBC temporal blocks when the hw=1 species are the
+exact corner plane waves of a spatially periodic block:
 ```
-K_{ij}(L_t)  =  0    for i ≠ j, on every pure-APBC block.
+K_{ij}(L_t)  =  0    for i ≠ j  (periodic-corner realization).
 ```
-*Proof.* The three `hw=1` species carry pairwise-orthogonal joint
-translation characters
-`(−1, +1, +1), (+1, −1, +1), (+1, +1, −1)`.
-Pure-APBC `D` commutes with each `T_k`, so `(D+J)^{−1}` does whenever
-`J` is species-diagonal, and `P_i · (D+J)^{−1} · P_j` carries no
-cross-character matrix element. The bulk limit `c_eff(L_t) → 2√3`
-corrects the naive bulk value 3. The pure-APBC lane is permanently
-closed as an attack route.
+*Proof (repaired).* The spatial hopping of the staggered operator
+annihilates every corner plane wave and the temporal term maps corner
+label `n` to `n xor 111`, so with species-diagonal `J` the resolvent
+couples each hw=1 label only to itself and its hw=2 complement. The
+earlier proof's premise, that pure-APBC `D` commutes with each `T_k`,
+is false: in the Block 03 representative `T_x, T_y` do not commute with
+`D`. With spatial APBC and nearest-corner labels the off-diagonal
+curvature is nonzero (`K_{100,010} ≠ 0`), so the pure-APBC lane is not
+closed by this kernel; see `STRUCTURAL_NO_GO_SURVEY_NOTE.md` §5.2. The
+bulk limit `c_eff(L_t) → 2√3` of the diagonal formula corrects the
+naive bulk value 3.
 
 Runner: `scripts/frontier_charged_lepton_curvature_apbc_extension.py`.
 

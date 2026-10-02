@@ -1,17 +1,17 @@
 # Structural No-Go Survey on the Charged-Lepton Mass Hierarchy
 
-**Date:** 2026-04-17
+**Date:** 2026-04-17; 2026-10-02 §5.2 scope narrowing (off-diagonal curvature computed)
 **Status:** six rigorous structural no-go theorems on the proposed_retained `Cl(3)/Z^3` surface
 **Runners (6):**
 - `scripts/frontier_charged_lepton_z3_source_response_crosscheck.py` (41 PASS)
-- `scripts/frontier_charged_lepton_curvature_apbc_extension.py` (44 PASS)
+- `scripts/frontier_charged_lepton_curvature_apbc_extension.py` (43 PASS; off-diagonal part computed 2026-10-02)
 - `scripts/frontier_observable_principle_character_symmetry.py` (30 PASS)
 - `scripts/frontier_koide_su2_gauge_exchange_mixing.py` (49 PASS)
 - `scripts/frontier_koide_anomaly_forced_cross_species.py` (42 PASS)
 - `scripts/frontier_koide_sectoral_universality.py` (20 PASS)
 - `scripts/frontier_koide_color_sector_correction.py` (24 PASS)
 
-Total: 250 PASS, 0 FAIL.
+Total: 249 PASS, 0 FAIL.
 
 ## Purpose
 
@@ -21,7 +21,8 @@ Koide `Q = 2/3` via the shape theorem
 The question is whether the specific cone point
 `a_0² = 2|z|²` can be **forced** by retained structural mechanisms
 without observational pinning. This note surveys six such mechanisms
-and establishes that each closes negatively.
+and establishes a negative result for each; the §5.2 result is scoped
+to one realization of the species labels (narrowed 2026-10-02).
 
 ## 5.1 Z_3 invariance alone is insufficient
 
@@ -53,27 +54,39 @@ invariance.
 
 Runner: `scripts/frontier_charged_lepton_z3_source_response_crosscheck.py`.
 
-## 5.2 Pure-APBC temporal refinement is insufficient at any L_t
+## 5.2 Pure-APBC temporal refinement (scope narrowed 2026-10-02)
 
-**Theorem.** On every pure-APBC temporal block with
-`L_t ∈ {4, 6, 8, 12, 16, 24, ∞}`, the off-diagonal source-response
-curvature
+**Theorem (realization-scoped).** With the hw=1 species projectors
+realized as the exact corner plane waves of a spatially periodic even
+torus (labels relative to the Block 03 representative η⁰), and the 4D
+staggered operator with `η_t = (−1)^{x_1+x_2+x_3}` on a temporal APBC
+block, the off-diagonal source-response curvature
 ```
 K_{ij}(L_t)  =  −Re Tr[(D + J)^{−1} P_i (D + J)^{−1} P_j]  =  0
 ```
 for `i ≠ j` on the retained `hw=1` triplet, whenever `J` is
 species-diagonal.
 
-*Proof.* The three `hw=1` species carry pairwise-orthogonal joint
-translation characters
-```
-X_1 → (−1, +1, +1),   X_2 → (+1, −1, +1),   X_3 → (+1, +1, −1).
-```
-Pure-APBC `D` commutes with each of the three lattice translations
-`T_x, T_y, T_z`, and species-diagonal `J` commutes with all three by
-construction. Hence `(D + J)^{−1}` commutes with each `T_k`. Since
-each pair `(X_i, X_j)` (`i ≠ j`) differs on at least one of the three
-translation characters, `P_i (D + J)^{−1} P_j = 0` identically. □
+*Proof (repaired 2026-10-02).* The spatial hopping of the staggered
+operator annihilates every corner plane wave, and the temporal term
+maps corner label `n` to `n xor 111` (an hw=1 label to its hw=2
+complement). With `J` species-diagonal, `(D + J)^{−1}` therefore couples
+each hw=1 label only to itself and its complement, and
+`P_i (D + J)^{−1} P_j = 0` for distinct hw=1 labels. The runner computes
+`K_ij` at `L_s = 4`, `L_t ∈ {4, 6, 8}` and confirms it vanishes. □
+
+The earlier proof used the premise "pure-APBC `D` commutes with each
+of the three lattice translations `T_x, T_y, T_z`". That premise is
+false: in η⁰ the one-site translations `T_x, T_y` do not commute with
+`D` (2026-06-10 repair record of `STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`;
+exact check in `scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`).
+The plain-translation characters `(−1,+1,+1), (+1,−1,+1), (+1,+1,−1)`
+label the hw=1 corners but are not conserved by `D`.
+
+*Scope.* With spatial APBC and the species labels assigned to the
+nearest corner, the direction-μ hopping couples labels `n` and
+`n xor ζ_μ`, and the runner finds `K_{100,010} ≠ 0` (η⁰, `L_s = L_t = 4`).
+The off-diagonal statement does not extend to that realization.
 
 *Bulk limit.* The effective denominator coefficient
 `c_{eff}(L_t)` on the diagonal satisfies
@@ -83,10 +96,14 @@ lim_{L_t → ∞} c_{eff}(L_t)  =  2√3  ≈  3.4641,
 correcting the naive bulk reading `c → 3`. The retained `c(4) = 7/2`
 sits 1% above the bulk value and the sequence converges monotonically.
 
-*Consequence.* The pure-APBC temporal-refinement lane is permanently
-closed. The minimal-block `b = 0` result (on `L_t = 4`) is not
-a minimal-block artifact but a structural consequence of
-translation-character orthogonality, holding at every `L_t`.
+*Consequence.* In the periodic-corner realization the off-diagonal
+curvature vanishes at every tested `L_t`, by corner annihilation and
+temporal pairing; in the spatially APBC nearest-corner realization it
+does not. The diagonal formula's spatial constant `3` corresponds to
+`sin² k_μ = 1` in each spatial direction, a realization in which the
+corner labels are not separated; stating the diagonal and off-diagonal
+results on one common realization is open. The pure-APBC lane is
+therefore not closed by this kernel.
 
 Runner: `scripts/frontier_charged_lepton_curvature_apbc_extension.py`.
 
@@ -287,14 +304,16 @@ weight triple (Theorem 7 in
 > Six rigorous no-go theorems establish that every retained
 > non-Higgs-Yukawa mechanism on the `hw=1` charged-lepton triplet is
 > species-diagonal: `Z_3` invariance alone is insufficient (§5.1);
-> pure-APBC temporal refinement at any `L_t` is insufficient (§5.2);
+> pure-APBC temporal refinement gives no off-diagonal curvature when the
+> species are the exact corner plane waves of a spatially periodic block,
+> though it does with spatial APBC and nearest-corner labels (§5.2);
 > the observable-principle character-symmetry chain does not force
 > the curvature eigenvalues to coincide (§5.3); `SU(2)_L` gauge
 > exchange cannot generate cross-species mixing (§5.4); the
 > anomaly-forced 3+1 structure is species-blind on `hw=1` (§5.5);
 > and the universal Koide `Q = 2/3` prediction is falsified across
-> sectors with no retained scheme correction (§5.6). All six close
-> with 250 PASS / 0 FAIL across the six runners.
+> sectors with no retained scheme correction (§5.6). The six runners
+> give 249 PASS / 0 FAIL.
 
 ## Status
 

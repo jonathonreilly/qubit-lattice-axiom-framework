@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_staggered_dirac_gate_closure_synthesis_2026_05_17.py
-runner_sha256: 24b049302b1adfefdf463745d374fc6d6a7c9cbfb46109283446f62fc2954407
-timeout_sec: 120
+runner_sha256: afb240c213040a4c782d5e8db81497f0fd53110684ca2a56e9fbc551a8f83cd0
+timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================
@@ -67,6 +67,7 @@ DETAILED RESULTS
 
 ========================================================================
 SUMMARY: PASS=18 FAIL=0 (total=18)
+TOTAL: PASS=18 FAIL=0
 ========================================================================
 
 Bounded synthesis (T6) — Staggered-Dirac Gate Closure Synthesis — verified.

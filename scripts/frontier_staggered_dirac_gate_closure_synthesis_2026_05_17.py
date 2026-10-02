@@ -50,6 +50,8 @@ from itertools import product
 from pathlib import Path
 from typing import Tuple
 
+AUDIT_TIMEOUT_SEC = 60
+
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 T2_JW_NOTE = (
@@ -210,9 +212,11 @@ def chain_step_T4() -> Tuple[bool, str]:
     M3 (M_3(C) on hw=1), NQ (no proper quotient), S3T (C^8 = 4 A_1
     + 2 E), SPI (site-phase intertwiner), APBC.
 
-    Output: 8 BZ corners on Z^3 APBC decompose uniquely by Hamming
-    weight as 1 + 3 + 3 + 1; hw=1 triplet carries M_3(C) algebra
-    with no proper exact quotient.
+    Output: in eta^0 the 8 corner labels split 1 + 3 + 3 + 1 by Hamming
+    weight relative to base corner 000 (labels relative to the KS gauge
+    representative); on the hw=1 labels the plain translations and the
+    bare cycle generate M_3(C) with no proper exact quotient. These plain
+    operators are not jointly symmetries of the KS operator.
 
     Independent verification: Hamming-weight histogram on {0,1}^3
     is exactly [1, 3, 3, 1], and the joint translation characters
@@ -259,8 +263,9 @@ def chain_step_T5() -> Tuple[bool, str]:
     LR, LN, SC, M3, NQ.
 
     Output: 3 hw=1 corner states are pairwise orthogonal in H_phys,
-    connected by C_3[111] lattice-symmetry unitary, in the same
-    superselection sector (the unique vacuum sector).
+    connected by the bare C_3[111] corner-label cycle (a symmetry in the
+    cyclic KS representative), in the same superselection sector (the
+    unique vacuum sector).
 
     Verification: distinct joint eigenvalues of commuting Hermitian
     operators imply orthogonal eigenstates (spectral theorem);
@@ -692,6 +697,7 @@ def main() -> int:
     print()
     print("=" * 72)
     print(f"SUMMARY: PASS={n_pass} FAIL={n_fail} (total={n_pass + n_fail})")
+    print(f"TOTAL: PASS={n_pass} FAIL={n_fail}")
     print("=" * 72)
 
     if n_fail == 0:

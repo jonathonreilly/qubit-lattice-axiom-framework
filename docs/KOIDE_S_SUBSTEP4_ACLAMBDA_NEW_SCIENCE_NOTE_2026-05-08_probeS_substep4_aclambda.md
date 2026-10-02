@@ -528,8 +528,10 @@ proposed_claim_type: bounded_theorem
 audit_review_points: |
   Conditional on:
    (a) independent audit confirmation that K1 K-theoretic decomposition
-       of K^0_{T³,equiv}(hw=1 sub-locus) requires translation-invariance
-       of the propagator operator (so KS inheritance is not bypassed);
+       of K^0_{T³,equiv}(hw=1 sub-locus) requires an operator input beyond
+       K-theory (corner annihilation by the Kawamoto-Smit operator; plain
+       translation invariance is not available), so KS inheritance is not
+       bypassed;
    (b) independent audit confirmation that K2 C_3-torsor labelings have
        exactly 3 equivariant choices, matching PR #790 parameter-counting,
        and that no choice is forced;
@@ -544,8 +546,8 @@ audit_review_points: |
 hypothetical_axiom_status: null
 admitted_observation_status: |
   AC_λ.struct: still inherits bounded tier from Kawamoto-Smit upstream
-  (K1 K-theoretic alternative requires the same translation-invariance
-  load-bearing input).
+  (K1 K-theoretic alternative requires the same Kawamoto-Smit
+  load-bearing input: corner annihilation by the operator).
   AC_λ.label: still depends on audit-pending meta companion notes (K2
   groupoid provides clean characterization but no selection; K3 modular
   flavor is materially worse with three postulated bridges).

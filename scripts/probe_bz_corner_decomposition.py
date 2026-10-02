@@ -1,8 +1,12 @@
 """Block 04: BZ-corner Hamming-weight decomposition verification.
 
-Verifies that the 8 BZ corners of staggered-Dirac on Z^3 APBC decompose
-uniquely by Hamming weight as 1+3+3+1, and that the hw=1 triplet has
-the M_3(C) translation character support structure.
+Verifies that the 8 BZ-corner labels {0,1}^3 split 1+3+3+1 by Hamming
+weight relative to base corner 000, and that on the hw=1 labels the plain
+one-site lattice translations and the bare corner-label cycle C_3[111]
+generate M_3(C). These plain operators act on corner plane-wave labels;
+they are not jointly symmetries of the Kawamoto-Smit operator, and the
+Hamming labels depend on its gauge representative. The symmetry scope is
+checked by scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py.
 
 Companion: docs/STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md
 Loop: staggered-dirac-realization-gate-20260507
@@ -17,13 +21,15 @@ from typing import List, Tuple
 
 import sympy as sp
 
+AUDIT_TIMEOUT_SEC = 60
+
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM_NOTE_2026-05-07.md"
 
 
 def enumerate_bz_corners() -> List[Tuple[int, int, int]]:
-    """Enumerate all 8 BZ corners of staggered fermion on Z^3 APBC.
+    """Enumerate the 8 BZ-corner labels {0,1}^3.
 
     Each corner is labeled by binary (n_1, n_2, n_3) with k_μ = n_μ · π.
     """
@@ -36,7 +42,7 @@ def hamming_weight(n: Tuple[int, int, int]) -> int:
 
 
 def translation_character(n: Tuple[int, int, int], direction: int) -> int:
-    """Character of lattice translation T_μ on BZ corner n.
+    """Character of the plain one-site lattice translation T_μ on corner label n.
 
     T_μ acts as exp(i k_μ) = (−1)^{n_μ} on corner with k_μ = n_μ · π.
     """
@@ -110,7 +116,7 @@ def main() -> int:
     print()
 
     corners = enumerate_bz_corners()
-    print(f"Total BZ corners: {len(corners)} (= 2^3 on staggered Z^3 APBC)")
+    print(f"Total BZ-corner labels: {len(corners)} (= 2^3)")
     print()
 
     # Group by Hamming weight
@@ -223,7 +229,7 @@ def main() -> int:
     full_m3_generated = generated_dimension == 9 and all_matrix_units_recovered
     print(f"  all nine matrix units P_i C3^k P_j recovered: {'PASS' if all_matrix_units_recovered else 'FAIL'}")
     print(f"  generated algebra span dimension: {generated_dimension} (expected 9)")
-    print(f"  translations + C3[111] generate M_3(C):        {'PASS' if full_m3_generated else 'FAIL'}")
+    print(f"  plain translations + bare C3 generate M_3(C):  {'PASS' if full_m3_generated else 'FAIL'}")
     print()
 
     # No-proper-quotient boundary: D_3 projectors force invariant subspaces to
@@ -322,11 +328,15 @@ def main() -> int:
     print(f"SUMMARY: PASS={n_pass} FAIL={n_total - n_pass} (out of {n_total} structural checks)")
     print()
     print("Bounded theorem (T3) — BZ-corner algebraic triplet support — verified.")
-    print("Staggered-Dirac on Z^3 APBC has unique 1+3+3+1 BZ-corner")
-    print("decomposition by Hamming weight; hw=1 triplet has M_3(C)")
-    print("algebraic support and no-proper-subspace closure. Epsilon/chirality")
-    print("is fenced off: position-space epsilon complements BZ-corner bits.")
+    print("Corner labels {0,1}^3 split 1+3+3+1 by Hamming weight relative to")
+    print("base corner 000; on the hw=1 labels the plain translations and the")
+    print("bare cycle generate M_3(C) with no proper invariant subspace. These")
+    print("plain operators are not jointly Kawamoto-Smit symmetries; see")
+    print("staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py.")
+    print("Epsilon/chirality is fenced off: position-space epsilon complements")
+    print("BZ-corner bits.")
     print("CHIRALITY_SUBLATTICE_IDENTIFICATION_DERIVED=FALSE")
+    print(f"TOTAL: PASS={n_pass} FAIL={n_total - n_pass}")
 
     return 0 if n_pass == n_total else 1
 

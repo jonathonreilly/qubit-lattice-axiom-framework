@@ -45,8 +45,9 @@ sharpened:
    with the GNS image. Both produce the same U_{C_3}.
 
 2. **HR5.4 sharpening:** R5's V6 understates the obstruction. The BARE
-   retained Hamiltonian on hw=1 (Kawamoto-Smit kinetic + cubic isotropy +
-   APBC) IS exactly C_3-symmetric, with equal corner expectations.
+   retained kinetic operator compressed to the hw=1 corner labels is
+   exactly C_3-symmetric (it vanishes there), with equal corner
+   expectations.
    This is stronger than "spectrum-positivity is independent of C_3-symmetry";
    the retained constraint set FORCES C_3-symmetric H on hw=1.
 
@@ -118,9 +119,15 @@ internal structure.
 
 ### HR5.4 — Bare retained Hamiltonian C_3 symmetry (PASS, 6/0; sharpening)
 
-The Kawamoto-Smit kinetic on Z³ APBC restricted to hw=1 is exactly
-λ_KS · I (proportional to identity) by cubic isotropy. Therefore
-[H_KS, U_{C_3}] = 0 EXACTLY, and corner expectations are equal.
+On periodic even tori the Kawamoto-Smit operator annihilates every
+corner plane wave, so its compression to the hw=1 corner-label span is
+λ_KS · I with λ_KS = 0. Therefore [P H_KS P, U_{C_3}] = 0 EXACTLY, and
+corner expectations are equal. This uses the vanishing at the corners,
+not a corner symmetry of the full operator: the bare cycle is a
+symmetry of the Kawamoto-Smit operator in the cyclic representative,
+not in η⁰, where its covering symmetry does not preserve the hw=1 span;
+on APBC tori of even side there are no corner zero modes (exact check:
+`scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`).
 
 **Sharpening:** R5's V6 says "spectrum positivity ≠ C_3-breaking" with
 toy examples. The stronger statement is: the BARE retained Hamiltonian
@@ -149,7 +156,8 @@ The full S_3 = Weyl(SU(3)) = {e, C_3, C_3², T_xy, T_yz, T_xz} lifts
 to H_phys, not just C_3. S_3 has a 1+2 invariant decomposition on C^3:
 trivial (span of ω = (e1+e2+e3)/√3) + standard (perpendicular complement).
 
-But: span(ω) is NOT invariant under D_3 (translations don't fix ω).
+But: span(ω) is NOT invariant under D_3 (the plain-translation
+character projectors on the corner labels; translations don't fix ω).
 The joint invariant subspace under {D_3, S_3} on C^3 is trivial.
 **NQ stands** — D_3 forbids the S_3 decomposition.
 

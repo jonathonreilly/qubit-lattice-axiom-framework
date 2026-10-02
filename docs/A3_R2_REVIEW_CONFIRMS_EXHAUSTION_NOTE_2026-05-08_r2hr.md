@@ -88,7 +88,7 @@ Most non-trivial case: **topological θ-angle**. The 4D Levi-Civita ε^{μνρσ
 
 **Verdict: SHARPENS R2 (taste-rotation gap in proof, but conclusion holds).**
 
-Deepest non-trivial finding. Under naive C_3 coordinate substitution, the KS staggered phases mismatch on 50% of (x, μ) pairs. The C_3 lift is implemented as a combined (i) coordinate permutation, (ii) spatial taste-rotation field redefinition. Per Golterman 1986, this is the standard staggered cubic shift symmetry; the redefinition is purely spatial. On H_phys, U_C3 factors as `U_C3_spatial ⊗ I_temporal`. R2's claim survives, but the proof should explicitly cite Golterman 1986.
+Deepest non-trivial finding. Under naive C_3 coordinate substitution, the KS staggered phases mismatch on 50% of (x, μ) pairs. The C_3 lift is implemented as a combined (i) coordinate permutation, (ii) spatial taste-rotation field redefinition. Per Golterman 1986, this is the standard staggered cubic shift symmetry; the redefinition is purely spatial. On H_phys, U_C3 factors as `U_C3_spatial ⊗ I_temporal`. R2's claim survives, but the proof should explicitly cite Golterman 1986. Which 3-dim span this symmetry preserves depends on the representative: in the Block 03 representative η⁰ the covering symmetry carries the sign field `(−1)^{x_1x_2+x_1x_3}` and does not preserve the η⁰ hw=1 corner span, while in the cyclic representative (`η_1 = (−1)^{x_2}, η_2 = (−1)^{x_3}, η_3 = (−1)^{x_1}`, `η_t = (−1)^{x_1+x_2+x_3}`) the bare cycle is itself the symmetry and preserves the hw=1 corner-label span. The Schur step on `H_{hw=1}` is taken in that representative (exact check: `scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`).
 
 ### H5: Single-clock derivation specifics
 
@@ -119,7 +119,7 @@ R2's "v_LR is a scalar bound" claim is correct. Hostile review extracted three s
 
 1. **Bound vs actual.** Both v_LR and the actual group velocity v_g = dE/dp are C_3-invariant.
 2. **Lattice anisotropy at O(a²).** The dispersion has cubic-harmonic l=4 anisotropy, but Σ p_i⁴ is C_3-invariant (sum permutation-symmetric).
-3. **All 8 BZ corners identical.** sin²(πn + q) = sin²(q) for n ∈ {0,1}, so dispersion around each BZ corner is identical. Different fermion species have the same velocity.
+3. **All 8 BZ corners identical.** sin²(πn + q) = sin²(q) for n ∈ {0,1}, so dispersion around each BZ corner is identical. The eight corner labels have the same local velocity.
 
 ## Theorem (hostile-review confirmation)
 
@@ -136,7 +136,10 @@ identified:
   (a) The C_3 lift to the staggered-Dirac action requires a non-trivial
       taste-rotation field redefinition (Golterman 1986). The redefinition
       is purely spatial; no temporal shift is required. R2's proof
-      should explicitly cite this step.
+      should explicitly cite this step. The Schur step on H_{hw=1}
+      uses the cyclic representative, where the bare cycle is the
+      symmetry and preserves the hw=1 corner-label span; in η⁰ the
+      covering symmetry does not preserve the η⁰ hw=1 span.
 
   (b) Not just the LR bound v_LR but the actual dispersion E(p) and
       group velocity v_g(p) are C_3-invariant. All 8 BZ corner doublers

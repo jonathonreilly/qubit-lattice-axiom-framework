@@ -155,7 +155,14 @@ OBSTRUCTION HOLDS.**
 Verifies that the 3 hw=1 corners form a single 3-cycle under C_3 with
 no sub-orbits. Verifies all decorations (translation eigenvalues,
 Cl(3) data, chirality, M_3(C) generators) are C_3-permuted along with
-the corners. Identifies that H_{hw=1} carries the regular
+the corners. Here C_3 is the bare corner-label cycle, which is a
+symmetry of the staggered operator in the cyclic representative (where
+it preserves the hw=1 label span; in η⁰ its covering symmetry does
+not), and the translation eigenvalues are characters of the plain
+one-site translations on corner labels: label decorations, not
+symmetry data of the staggered operator, of which at most one plain
+translation is a symmetry in any representative (exact check:
+`scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`). Identifies that H_{hw=1} carries the regular
 representation of C_3 — the canonical "single transitive orbit"
 case. **Verdict: OBSTRUCTION HOLDS.**
 

@@ -88,7 +88,7 @@ Vector 3 is structurally blocked by retained authority. The three hw=1 corners a
 
 `M_3(C)' = C·I` (acting irreducibly on `C³`); `M_3(C)'' = M_3(C)`. The center `Z(M_3(C)) = C·I` is **trivial** — there are no non-trivial central projections. Non-trivial central projections are what would supply internal classical labels for sector identification. Their absence is the OPPOSITE of "rich superselection content".
 
-The cyclic outer automorphism `Ad U_{C_3}` acts as a SYMMETRY of the action; identifying the three corner-basis vectors with physical species requires BREAKING this C_3 symmetry. C_3-breaking is exactly the AC_φ closure-path content per the substep 4 AC narrowing (Yukawa, anomaly, spontaneous), and is NOT in retained primitives.
+The cyclic outer automorphism `Ad U_{C_3}` acts as a SYMMETRY of the action (in the cyclic representative it is the bare cycle; in η⁰ the covering symmetry carries a sign field); identifying the three corner-basis vectors with physical species requires BREAKING this C_3 symmetry. C_3-breaking is exactly the AC_φ closure-path content per the substep 4 AC narrowing (Yukawa, anomaly, spontaneous), and is NOT in retained primitives.
 
 Vector 5 thus PROVES that the disclaimer is necessary: trivial center ⇒ no internal labels ⇒ species require external content.
 
@@ -96,7 +96,7 @@ Vector 5 thus PROVES that the disclaimer is necessary: trivial center ⇒ no int
 
 The substep 4 AC narrowing (Step 3) establishes the equal-corner-expectations lemma: any C_3-symmetric self-adjoint operator on `C³` has `⟨c_α | H | c_α⟩` independent of α. The Hamiltonian `H` per single-clock evolution (SC) is self-adjoint on `H_phys` and bounded below per spectrum condition.
 
-Spectrum condition asserts `H ≥ 0` (positivity); it does NOT assert `[H, U_{C_3}] ≠ 0` (symmetry-breaking). The bare retained kinetic operator from substep 2 (Kawamoto-Smit, see [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)) is C_3[111]-symmetric (cubic isotropy of the `Z³` lattice gauge action); the bare retained Hamiltonian therefore has equal corner energies. Distinct corner energies require additional non-retained C_3-breaking content.
+Spectrum condition asserts `H ≥ 0` (positivity); it does NOT assert `[H, U_{C_3}] ≠ 0` (symmetry-breaking). The bare retained kinetic operator from substep 2 (Kawamoto-Smit, see [`STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md`](STAGGERED_DIRAC_KAWAMOTO_SMIT_FORCING_THEOREM_NOTE_2026-05-07.md)) has a C_3[111] symmetry covering the axis cycle (in the cyclic representative it is the bare cycle and preserves the hw=1 corner-label span; in η⁰ it carries a sign field and does not), and it annihilates every corner plane wave, so the bare retained Hamiltonian has equal (zero) corner energies (exact check: `scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`). Distinct corner energies require additional non-retained C_3-breaking content.
 
 ### Vector 7 — Lattice-to-continuum reconstruction (negative)
 

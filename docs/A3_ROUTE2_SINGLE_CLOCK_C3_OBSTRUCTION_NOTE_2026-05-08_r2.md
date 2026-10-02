@@ -163,7 +163,14 @@ Spatial C_3[111] acts only on spatial coords. The two operations
 The reconstructed transfer matrix `T = exp(-a_τ H)` is built from the
 spatial-symmetric Wilson + staggered action. Hence `T` (and `H`)
 commute with `U_{C_3[111]}` on `H_phys`. Restricted to `H_{hw=1}`,
-`H` is C_3-symmetric and cannot distinguish corners.
+`H` is C_3-symmetric and cannot distinguish corners. Here
+`U_{C_3[111]}` is the symmetry covering the axis cycle. In the cyclic
+representative (`η_1 = (−1)^{x_2}, η_2 = (−1)^{x_3}, η_3 = (−1)^{x_1}`,
+`η_t = (−1)^{x_1+x_2+x_3}`) it is the bare cycle and preserves the hw=1
+corner-label span, which is where the Schur step applies; in the
+Block 03 representative η⁰ it carries the sign field
+`(−1)^{x_1x_2+x_1x_3}` and does not preserve the η⁰ hw=1 span (exact
+check: `scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`).
 
 ### Attack vector 4: OS reconstruction time-orientation distinguishes corners?
 

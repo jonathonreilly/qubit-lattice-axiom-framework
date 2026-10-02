@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py
-runner_sha256: e90450224932e1087e4fd7c9e888eb4b225043b8f022f61b3f88af69af72eb26
-input_fingerprint_sha256: df425bd3ef73ef02c271f79a1cb87c52b4182b99de9a1bf5176fa346c7a878a6
+runner_sha256: e47d5a78ae7725ba228065af1865f4bdd9f5d248c5533bb848c24548faa2cd58
+input_fingerprint_sha256: 6a7d1ab6709ff267c4ac31f0cba6e648ab1acd860c1923c17a6ee5f4b4ac6103
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.24
+elapsed_sec: 0.33
 status: ok
 ----- stdout -----
 == Construction on the 4^3 torus ==
@@ -54,10 +54,13 @@ status: ok
 == Cell-momentum sectors (two-site cells) in eta^0 ==
 [PASS] K = 0 sector is the corner carrier (8 P_0 = J J^T); D^2 = -|K| on all 8 cell sectors, so ker D = carrier
 [PASS] K = pi e_a: 8-dim sectors with D^2 = -1 (iD = +-1, 4 + 4), two-site translations give the diagonal triple
+== 3+1 dimensions: 4^4 torus with eta_t = (-1)^(x1+x2+x3) ==
+[PASS] 4^4: cyclic spatial representative plus eta_t carries -1 on all six plaquette planes; bare cycle commutes
+[PASS] 4^4: in eta^0 plus eta_t the bare cycle does not commute with D
 == Source firewall on the companion note ==
 [PASS] note keeps the epsilon fence and states the operator scope and gauge relabelling
 [PASS] note carries none of the withdrawn uniqueness, diagonalization or parity wording
-TOTAL: PASS=42 FAIL=0
+TOTAL: PASS=44 FAIL=0
 
 ----- stderr -----
 

@@ -497,6 +497,46 @@ def section_cell_sectors(d0):
           ok)
 
 
+def section_four_d() -> None:
+    print("== 3+1 dimensions: 4^4 torus with eta_t = (-1)^(x1+x2+x3) ==")
+    x4 = np.array([(a, b_, c, t) for t in range(L) for c in range(L) for b_ in range(L) for a in range(L)],
+                  dtype=np.int64)
+    n4 = len(x4)
+    e4 = np.eye(4, dtype=np.int64)
+
+    def idx4(x) -> int:
+        return int(x[0] % L) + L * int(x[1] % L) + L * L * int(x[2] % L) + L ** 3 * int(x[3] % L)
+
+    t4 = []
+    for mu in range(4):
+        t = np.zeros((n4, n4), dtype=np.int64)
+        for i, x in enumerate(x4):
+            t[i, idx4(x + e4[mu])] = 1
+        t4.append(t)
+
+    def etas4(zetas):
+        return [(-1) ** (x4 @ np.array(z, dtype=np.int64)) for z in zetas]
+
+    def plaq4(etas) -> bool:
+        return all(etas[mu][idx4(x)] * etas[nu][idx4(x + e4[mu])] * etas[mu][idx4(x + e4[nu])]
+                   * etas[nu][idx4(x)] == -1 for x in x4 for mu, nu in combinations(range(4), 2))
+
+    def d4(etas):
+        m = sum(eta[:, None] * t4[mu] for mu, eta in enumerate(etas))
+        return m - m.T
+
+    r = np.array([[0, 0, 1, 0], [1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 0, 1]], dtype=np.int64)
+    pc4 = np.zeros((n4, n4), dtype=np.int64)
+    for i, y in enumerate(x4):
+        pc4[i, idx4(r.T @ y)] = 1
+    cyc = etas4(((0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (1, 1, 1, 0)))
+    eta0 = etas4(((0, 0, 0, 0), (1, 0, 0, 0), (1, 1, 0, 0), (1, 1, 1, 0)))
+    check("4^4: cyclic spatial representative plus eta_t carries -1 on all six plaquette planes; bare cycle commutes",
+          plaq4(cyc) and commutes(pc4, d4(cyc)))
+    check("4^4: in eta^0 plus eta_t the bare cycle does not commute with D",
+          plaq4(eta0) and not commutes(pc4, d4(eta0)))
+
+
 REQUIRED_PHRASES = (
     "BZ-corner Hamming parity with the K-S",
     "parity-to-chirality identification is a separate bridge",
@@ -539,6 +579,7 @@ def main() -> int:
     section_rotations(d0)
     section_hamming(d0)
     section_cell_sectors(d0)
+    section_four_d()
     section_source_firewall()
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     return 0 if FAIL == 0 else 1

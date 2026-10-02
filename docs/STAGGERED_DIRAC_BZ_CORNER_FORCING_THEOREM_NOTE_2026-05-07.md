@@ -184,7 +184,8 @@ Block 03 Kawamoto-Smit operator `D`:
 - The two-site translations `S_a²` commute with `D` and with each other,
   and in `η⁰` they act as `+1` on all eight corner plane waves.
 - The bare cycle is a symmetry of `D` in the cyclic representative
-  `η_1 = (−1)^{x_2}, η_2 = (−1)^{x_3}, η_3 = (−1)^{x_1}`. In `η⁰` the
+  `η_1 = (−1)^{x_2}, η_2 = (−1)^{x_3}, η_3 = (−1)^{x_1}` (also on the 3+1
+  lattice with `η_t = (−1)^{x_1+x_2+x_3}`). In `η⁰` the
   symmetry covering it carries the factor `(−1)^{x_1x_2 + x_1x_3}` and does
   not preserve the hw=1 corner span. Since `C_3[111]` conjugates
   `T_x → T_y → T_z`, a representative in which the bare cycle is a
@@ -378,7 +379,8 @@ plain translations (0 or 1) over all 64 plane-wave representatives; the
 bare cycle in the cyclic representative and its covering symmetry in η⁰;
 the covering rotation symmetries (a representation of the proper cubic
 group with corner character `(8, 2, 0, 4, 0)`); the gauge relabelling
-`n → n xor c` for all eight `c`; the cell-momentum sectors; and a source
+`n → n xor c` for all eight `c`; the cell-momentum sectors; the 3+1
+extension on the 4⁴ torus with `η_t = (−1)^{x_1+x_2+x_3}`; and a source
 firewall on this note. It ends with `TOTAL: PASS=N FAIL=0`.
 
 Expected output of the label runner: explicit BZ-corner enumeration with

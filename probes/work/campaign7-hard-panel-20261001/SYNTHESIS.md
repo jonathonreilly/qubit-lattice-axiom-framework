@@ -45,3 +45,14 @@ How the panel ran:
 4. **Photon: the decisive unbiased method is specified.** A finite-temperature path-integral QMC with cube moves; the bubble-only version is provably non-ergodic. LSM says the V=0 phase is Coulomb, a translation-breaking crystal, or topological order.
 5. **Gauge: SU(3) must live on unrecorded composite carriers.** The SM global form appears as the structure group of the 8-state cell, but as taste structure rather than redundancy.
 6. **Gravity: the sea-induced route needs the Ward test on the allowed coupling.** The float precedent fails it. Finite composites alone give k² or k³ graviton dispersion, not linear.
+
+## Wave 3 additions (20:15–20:35)
+
+- `clause2/DECISION_POINT.md` is the review-corrected owner decision text: a four-sentence clause, five reading decisions, the trade table, the costs and an exact verification plan.
+- `narrow/REPAIR_DRAFT.md` gives the exact replacement text for the KS corner-forcing and three-generation observable notes. It finds that main already agrees: the substep-4 note's 2026-06-10 repair record calls the translation-commutation premise false, while rows #20 and #98 still assert it. Blast radius: 107 direct dependents, 14 needing follow-up. It includes an exact runner spec and a PR outline. This is recorded as debt for an owner decision.
+- `gravity2/REPORT.md`, Theorem W (EXACT):
+  - The linear or normal-ordered two-step coupling fails the relabelling Ward identity structurally, and a linear coupling cannot produce an Einstein–Hilbert term.
+  - Ward needs a contact-term sum rule, Decision S, which leaves one free constant.
+  - A spectral trichotomy (ℝ, periodic, ℤ_N) means no examined route gives a linear graviton from finite-qubit composites plus the sea.
+  - The transverse-trace mode stays tachyonic without a re-timing constraint.
+- `gen3/REPORT_v2_after_reviews.md` is the three-generation synthesis revised after the reviews.

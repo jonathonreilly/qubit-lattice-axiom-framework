@@ -72,3 +72,26 @@ How the panel ran:
 
   Decisive check: a 1+1D form-factor DMRG measuring the ω=0 retarded matrix.
 - `soldered_born/REPORT.md`: under full soldering, plus P_LU (every two-qubit pure state in every pair of local frames), the survivors are Born or "lattice coins" (1 + K(p))/2, with K odd and O-invariant; the lowest such K is K₉ at l = 9. Restoring sentence: centre indifference F(0; p) = ½. That is ARGUED to be the law-level reading of "Possibilities are distinguished by the supplied algebraic structure alone". Lane A's Step 0 fails off the lattice axes.
+
+## Final integrated decision document (20:55): `final/DECISION_DOCUMENT.md`
+
+The four-sentence clause has these parts:
+- a joint possibility on the complex algebra of site domains;
+- a continuous, reversible, homogeneous change, fully soldered, with W★ star locality;
+- odds from the site's own part, with a cut on forming;
+- no-signalling.
+
+It is read together with these readings and inputs:
+- R_pm, retiring R_st;
+- "varies with" on the odds;
+- menu abundance;
+- a preparation class;
+- centre indifference, as the law-level reading of the Qubit axiom's second sentence. This makes P_LU unnecessary and leaves the odds unsoldered while the change is soldered.
+
+What it yields:
+- tensor composition;
+- Born with repeat certainty, unsoldered and aligned;
+- e^{−iHτ};
+- a star-local generator class that contains the photon ring.
+
+It costs Heisenberg uniqueness and thicker record walls. SU(N) links and composite fermion bonds stay effective. The document gives one consolidated exact verification plan of ten items at most 16 dimensions each.

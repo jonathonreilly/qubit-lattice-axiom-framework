@@ -56,3 +56,19 @@ How the panel ran:
   - A spectral trichotomy (ℝ, periodic, ℤ_N) means no examined route gives a linear graviton from finite-qubit composites plus the sea.
   - The transverse-trace mode stays tachyonic without a re-timing constraint.
 - `gen3/REPORT_v2_after_reviews.md` is the three-generation synthesis revised after the reviews.
+
+## Wave 4 additions (20:30–20:45)
+
+- `locality/REPORT.md` (EXACT): a generalised clique lemma (diameter ≤ r).
+  - The star wording W★ ("each part of the change confined to one site and its nearest neighbours") admits the ring U_p, Gauss hops, the soft Gauss energy and the star term. It keeps composition and Born.
+  - SU(N) composite links and composite-site/BKSF fermion bonds need reach 4–7.
+  - U_p is not possibility-covariant at any r, so it needs full soldering.
+  - Heisenberg uniqueness is lost, and a handed octant chirality term appears.
+- `gs/REPORT.md`: Golterman–Shamir against Variant T is OPEN. Variant T satisfies every GS hypothesis it controls, so everything rests on GS's conjectural "kinematical zeros" hypothesis. Exact results:
+  - the light corners are exact free particles;
+  - the gapped zeros carry the cancelling winding +3;
+  - the O-orbit parity lemma means that if the zeros are kinematical, each light corner hosts a massless opposite-chirality composite 16, so the spectrum is vector-like and the construction fails in that specific way;
+  - anomaly matching permits the chiral triplet but does not protect it.
+
+  Decisive check: a 1+1D form-factor DMRG measuring the ω=0 retarded matrix.
+- `soldered_born/REPORT.md`: under full soldering, plus P_LU (every two-qubit pure state in every pair of local frames), the survivors are Born or "lattice coins" (1 + K(p))/2, with K odd and O-invariant; the lowest such K is K₉ at l = 9. Restoring sentence: centre indifference F(0; p) = ½. That is ARGUED to be the law-level reading of "Possibilities are distinguished by the supplied algebraic structure alone". Lane A's Step 0 fails off the lattice axes.

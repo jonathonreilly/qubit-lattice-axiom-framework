@@ -1,0 +1,33 @@
+matter set | hops | triangles: free/parity/forced0 | chordless squares: free/parity/forced0
+V     | len<=2 (all star-local)  | tri 0/0/0     | sq 0/0/12
+E     | len<=sqrt2               | tri 19/0/0    | sq 0/0/18
+E     | len<=2 (all star-local)  | tri 79/0/0    | sq 66/0/12
+F     | len<=sqrt2               | tri 19/0/0    | sq 0/0/18
+F     | len<=2 (all star-local)  | tri 79/0/0    | sq 66/0/12
+C     | len<=2 (all star-local)  | tri 0/0/0     | sq 0/0/12
+VE    | len<=sqrt2               | tri 43/0/0    | sq 0/0/18
+VE    | len<=2 (all star-local)  | tri 115/0/0   | sq 102/0/24
+VF    | len<=sqrt2               | tri 76/0/0    | sq 0/0/36
+VF    | len<=2 (all star-local)  | tri 196/0/0   | sq 108/0/24
+VC    | len<=2 (all star-local)  | tri 0/0/0     | sq 0/0/24
+EF    | len<=sqrt2               | tri 86/0/0    | sq 63/0/36
+EF    | len<=2 (all star-local)  | tri 230/0/0   | sq 267/0/24
+EC    | len<=sqrt2               | tri 76/0/0    | sq 0/0/36
+EC    | len<=2 (all star-local)  | tri 196/0/0   | sq 108/0/24
+FC    | len<=sqrt2               | tri 43/0/0    | sq 0/0/18
+FC    | len<=2 (all star-local)  | tri 115/0/0   | sq 102/0/24
+VEF   | len1                     | tri 0/0/0     | sq 0/27/0
+VEF   | len<=sqrt2               | tri 215/0/0   | sq 63/0/54
+VEF   | len<=2 (all star-local)  | tri 431/0/0   | sq 345/0/36
+VEC   | len<=sqrt2               | tri 100/0/0   | sq 0/0/36
+VEC   | len<=2 (all star-local)  | tri 232/0/0   | sq 144/0/36
+VFC   | len<=sqrt2               | tri 100/0/0   | sq 0/0/36
+VFC   | len<=2 (all star-local)  | tri 232/0/0   | sq 144/0/36
+EFC   | len1                     | tri 0/0/0     | sq 0/27/0
+EFC   | len<=sqrt2               | tri 215/0/0   | sq 63/0/54
+EFC   | len<=2 (all star-local)  | tri 431/0/0   | sq 345/0/36
+VEFC  | len1                     | tri 0/0/0     | sq 0/54/0
+VEFC  | len<=sqrt2               | tri 344/0/0   | sq 126/0/72
+VEFC  | len<=2 (all star-local)  | tri 632/0/0   | sq 486/0/48
+KS on coarse 4^3 torus: all plaquettes -1: True
+each of the 24 turns about a coarse site maps KS to a gauge-equivalent pattern (all plaquettes -1, explicit gauge): True

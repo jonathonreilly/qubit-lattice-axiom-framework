@@ -1,0 +1,7 @@
+patterns enumerated: 3^8 = 6561
+covariant up to translation (alone): 297
+jointly covariant with the role layout s=0: 81 ; of these role functions: 81
+alone-covariant patterns that are role functions of some layout translate s': 297 of 297
+control layered r_x alone-covariant: False
+control E_x only matter alone-covariant: True
+control checkerboard alone-covariant: True

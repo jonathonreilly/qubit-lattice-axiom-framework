@@ -1,0 +1,2 @@
+J=+1 (K=J, D=0): double-flip amplitude max 2.0e-16; one-flip energies relative to H8: min -8.0000, max +8.0000; below zero 27 of 64; spectrum symmetric about 0: True
+J=-1 (K=J, D=0): double-flip amplitude max 2.0e-16; one-flip energies relative to H8: min -8.0000, max +8.0000; below zero 27 of 64; spectrum symmetric about 0: True

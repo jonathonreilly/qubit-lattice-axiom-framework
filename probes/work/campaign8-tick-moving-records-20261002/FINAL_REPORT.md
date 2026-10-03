@@ -389,6 +389,26 @@ Not if records can sense the rule's energy directly and empty space is its calme
   - "Records form only next to records" moves the problem to matter's edges. A light-carrying emptiness next to a record is never exactly quiet: in my check its smallest edge value is about 0.006, while the aligned emptiness gives zero.
 - **A further decision for you.** Which way out, if any? (Light invisible to records ties to decisions 21 and 24; slow energy-selective recording ties to decision 9, memory.)
 
+### 14. Late result: one pattern of kinds of places for everything? (A40; checked by me, under final review)
+Possibly yes: the same 8-way pattern gravity already needs can sort places into kinds so that light, gravity and records-bearing matter all fit. It works only if matter shares places with part of gravity, so it is not a clean three-way split (argued overall; the pieces are exact or checked as marked).
+- **No new pattern (exact).** Any sorting of places into kinds that turns along with gravity's 2×2×2 job pattern must follow that same pattern. So it is the same 1-of-8 choice, not an extra one.
+- **Gravity needs only half the places (exact).** One way of writing gravity's rule keeps all of its content on two of the four kinds of place, if the rule may use small groups of places, not just pairs (decision 22).
+- **A clean split fails (exact, within 270 arrangements tried).** No arrangement that keeps every kind on its own places lets charged matter feel gravity's slowing of time.
+- **The arrangement that works ("S1").**
+  - **Corner places:** matter, together with gravity's stretch parts and its time-slowing. Records lock only matter's share of each such place.
+  - **Edge places:** light, as links between the corners.
+  - **Face places:** gravity's shear parts.
+  - **Cube-centre places:** no job (one place in eight).
+- **The twist comes free (exact core; my check).** Matter hopping from corner to corner passes through light's links. If light's own calm state carries a half-turn twist around every square, which needs only one uniform sign in light's rule, not a pattern, then matter feels exactly the twist it needs for light-like motion. That calm state looks the same after every turn of the grid; my check confirmed this on all 192 squares for all 24 turns. Whether light really settles into that state on this grid is a comparison with known magnet models, not shown here.
+- **The prices.**
+  - Places hold more than one qubit's worth: corner and face places for gravity's parts, and corners need at least two qubits for charged matter.
+  - Record must be read as locking one place's matter share only, which is a wording choice for you.
+  - Matter places are never next-door neighbours, so records step two places at a time, and "records form only next to records" would have to look two places away.
+  - Matter must never appear out of empty space.
+  - A simple mass for matter would need yet another, coarser pattern.
+  - No region can ever be fully recorded, so your black-hole picture changes: light and gravity run through any cluster of records.
+- **Why it matters.** It bundles several of your decisions into one picture: 13 (room per place), 17 (matter's twist, now from light rather than painted), 21 (gravity's places never record, now share by share), 22 (rules on small groups), 24, and A39's "light invisible to records".
+
 ## Your menu decision (Q7 stands)
 
 My overnight note was too strong; the reviewers caught it.

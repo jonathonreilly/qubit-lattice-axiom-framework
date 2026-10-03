@@ -1,0 +1,24 @@
+h/p components on even sites only: True
+C components on odd sites only   : True
+(a) max Manhattan distance curl row (odd site) -> h input: 1 ; inputs at the odd site itself: 0
+(b) |sum_y star term - Vp| = 0.0 ; max distance of a star term's support from its centre: 1 ; centre content never used: True ; number of odd centres: 256
+    Vp couples even sites at Manhattan distances: [np.int64(0), np.int64(2)]
+(c) kinetic term max Manhattan distance: 0
+    Hamiltonian row (lapse) sits on role V; it reads h within Manhattan 2
+(d) min Manhattan distance between role classes (Z^3, layout s=0):
+    V   {'V': 2, 'Ez': 1, 'Ey': 1, 'Fx': 2, 'Ex': 1, 'Fy': 2, 'Fz': 2, 'C': 3}
+    Ez  {'V': 1, 'Ez': 2, 'Ey': 2, 'Fx': 1, 'Ex': 2, 'Fy': 1, 'Fz': 3, 'C': 2}
+    Ey  {'V': 1, 'Ez': 2, 'Ey': 2, 'Fx': 1, 'Ex': 2, 'Fy': 3, 'Fz': 1, 'C': 2}
+    Fx  {'V': 2, 'Ez': 1, 'Ey': 1, 'Fx': 2, 'Ex': 3, 'Fy': 2, 'Fz': 2, 'C': 1}
+    Ex  {'V': 1, 'Ez': 2, 'Ey': 2, 'Fx': 3, 'Ex': 2, 'Fy': 1, 'Fz': 1, 'C': 2}
+    Fy  {'V': 2, 'Ez': 1, 'Ey': 3, 'Fx': 2, 'Ex': 1, 'Fy': 2, 'Fz': 2, 'C': 1}
+    Fz  {'V': 2, 'Ez': 3, 'Ey': 1, 'Fx': 2, 'Ex': 1, 'Fy': 2, 'Fz': 2, 'C': 1}
+    C   {'V': 3, 'Ez': 2, 'Ey': 2, 'Fx': 1, 'Ex': 2, 'Fy': 1, 'Fz': 1, 'C': 2}
+    star of V   holds neighbours of roles ['Ex', 'Ex', 'Ey', 'Ey', 'Ez', 'Ez']
+    star of Ez  holds neighbours of roles ['Fx', 'Fx', 'Fy', 'Fy', 'V', 'V']
+    star of Ey  holds neighbours of roles ['Fx', 'Fx', 'Fz', 'Fz', 'V', 'V']
+    star of Fx  holds neighbours of roles ['C', 'C', 'Ey', 'Ey', 'Ez', 'Ez']
+    star of Ex  holds neighbours of roles ['Fy', 'Fy', 'Fz', 'Fz', 'V', 'V']
+    star of Fy  holds neighbours of roles ['C', 'C', 'Ex', 'Ex', 'Ez', 'Ez']
+    star of Fz  holds neighbours of roles ['C', 'C', 'Ex', 'Ex', 'Ey', 'Ey']
+    star of C   holds neighbours of roles ['Fx', 'Fx', 'Fy', 'Fy', 'Fz', 'Fz']

@@ -1850,3 +1850,41 @@ Then Ω is the ground state, the change is frustration-free, and ε(k) ≤ (C/s�
 - NOT re-run: c1 fragility, c3 two-ripple.
 
 **Status.** Late result, coordinator-checked, NOT hostile-reviewed.
+
+## 05:54 (real) Launched the final review round (A34, round 8: A38, A39 and their doc text) and A40 (synthesis: one 1-of-8 pattern of kinds of places? brief c8/A40_PROMPT.md)
+- **A40's question.** Field places (light and gravity) that never record, versus matter places with records.
+- **Checked against:** A25 F6, A31 D10/C61, A39 escape (e), and matter's π-flux twist (Theorem S, A33, A38).
+- **Load:** 3.37, RAM 37%.
+
+## 06:20 (real) A40 (synthesis: one 1-of-8 pattern of kinds of places?) LANDED → c8/A40/REPORT.md (+ k1–k4)
+The coordinator saved the report from the final message.
+
+**Answer: conditional YES, in a "shared places" form (S1). The clean three-disjoint-kinds form fails.**
+- **K1 (EXACT, exhaustive).** A kinds pattern moving with A25's layout must be a role function (81 of 6561). It is the SAME label as F6.
+- **G1 (EXACT; CHECKED on A25's builder).** A25's (h,π) form puts all field content on V and F. The potential is a sum of hollow-star terms centred on E and C places, which hold nothing. So gravity needs only half the places, if star (≥3-place) terms are allowed (decision 22).
+- **3.4 (EXACT within 270 combinations).** No one-kind-per-role layout lets charged matter feel the lapse.
+- **S1** (with its twin V↔C, E↔F):
+  - V = matter + gravity's stretch (h_ii, π_ii) + lapse;
+  - E = light links (Gauss at V);
+  - F = gravity's shear;
+  - C = idle.
+  - Each matter hop's E-star holds both lapses, h_aa, the relevant shears and the link.
+  - Records lock only V's matter factor (factor-wise Record).
+- **Records.** Matter places are never nearest neighbours, so records step two sites. A28's reach-1 gate would forbid all records. Q7's recorded-neighbour dependence works only at reach 2. No region can be fully recorded (I5 picture changes).
+- **Payload.** More room is unavoidable for A25's gravity (canonical pairs: EXACT), at 4 of 8 places (star form). A glued U(1) charge at a corner needs ≥ 2 qubits (EXACT).
+- **Weight F = N̂ ⊗ F_matter ⊗ 1_light.** Quiet, blind to light, redshifts record clocks, linear. A39's strict F_m ⊗ 1_field would NOT redshift.
+- **Twist.**
+  - Matter on one role cannot get π from signs or parities (generalized Theorem S, T1/T3).
+  - But matter hops carry light's link, so a UNIFORM π-flux light vacuum supplies the twist. It is kept by all 24 turns up to gauge (T5; Theorem S's premise of no gauge freedom fails).
+  - This needs one uniform sign on light's square term (COMPARATOR: π-flux quantum spin ice).
+  - Two tastes, net chirality 0 (T7).
+  - A one-place mass needs a period-4 pattern (T8).
+- **Verdict (ARGUED).** S1 is a coherent single supplied 1-of-8 choice. It bundles decisions 13, 17, 21, 22, 24 and A39 (e).
+
+**Coordinator check** (toys/verify_A40_flux.py; own code)
+- A π-flux link field (KS signs, and KS with a random gauge) on a 4³ torus has W = −1 on all 192 squares.
+- After each of the 24 site-centred turns, W = −1 on every square (max |W+1| 5e-16).
+- T5's core (rotation invariance of a uniform π-flux vacuum's gauge-invariant data) is CONFIRMED.
+- NOT re-run: k1 enumeration, k2 hollow-star structure, k3 layouts, k4 loop table.
+
+**Status.** Late, coordinator-checked; forwarded to A34 for the final review round together with A38/A39.

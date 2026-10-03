@@ -1,0 +1,21 @@
+combinations: 270
+(1) place-wise D10 + charged matter + lapse reach: 0
+(2) place-wise D10 + charged matter (no reach demand): 4
+  grav=star  light=dlink  matter=C     | D10 place-wise=True  light&grav share=True  charged=True  lapse-reach=False lapse,shear split=False lapse+shear one star=False matter-adjacent=False | jobs V:G E:- F:GL C:M
+  grav=star  light=dlink  matter=EC    | D10 place-wise=True  light&grav share=True  charged=True  lapse-reach=False lapse,shear split=False lapse+shear one star=False matter-adjacent=False | jobs V:G E:M F:GL C:M
+  grav=dual  light=link   matter=V     | D10 place-wise=True  light&grav share=True  charged=True  lapse-reach=False lapse,shear split=False lapse+shear one star=False matter-adjacent=False | jobs V:M E:GL F:- C:G
+  grav=dual  light=link   matter=VF    | D10 place-wise=True  light&grav share=True  charged=True  lapse-reach=False lapse,shear split=False lapse+shear one star=False matter-adjacent=False | jobs V:M E:GL F:M C:G
+(3) place-wise D10 + lapse and shear reach (split, first order) + light not sharing with gravity (any light form): 2
+  grav=star  light=ng-C   matter=E     | D10 place-wise=True  light&grav share=False charged=False lapse-reach=True  lapse,shear split=True  lapse+shear one star=False matter-adjacent=False | jobs V:G E:M F:G C:L
+  grav=dual  light=ng-V   matter=F     | D10 place-wise=True  light&grav share=False charged=False lapse-reach=True  lapse,shear split=True  lapse+shear one star=False matter-adjacent=False | jobs V:L E:G F:M C:G
+(4) charged + lapse and shear in one star + light not sharing with gravity, matter may share (factor-wise D10): 8
+  grav=star  light=link   matter=V     | D10 place-wise=False light&grav share=False charged=True  lapse-reach=True  lapse,shear split=True  lapse+shear one star=True  matter-adjacent=False | jobs V:GM E:L F:G C:-
+  grav=star  light=link   matter=VE    | D10 place-wise=False light&grav share=False charged=True  lapse-reach=True  lapse,shear split=True  lapse+shear one star=True  matter-adjacent=True  | jobs V:GM E:LM F:G C:-
+  grav=star  light=link   matter=VF    | D10 place-wise=False light&grav share=False charged=True  lapse-reach=True  lapse,shear split=True  lapse+shear one star=True  matter-adjacent=False | jobs V:GM E:L F:GM C:-
+  grav=star  light=link   matter=VEF   | D10 place-wise=False light&grav share=False charged=True  lapse-reach=True  lapse,shear split=True  lapse+shear one star=True  matter-adjacent=True  | jobs V:GM E:LM F:GM C:-
+  grav=dual  light=dlink  matter=C     | D10 place-wise=False light&grav share=False charged=True  lapse-reach=True  lapse,shear split=True  lapse+shear one star=True  matter-adjacent=False | jobs V:- E:G F:L C:GM
+  grav=dual  light=dlink  matter=EC    | D10 place-wise=False light&grav share=False charged=True  lapse-reach=True  lapse,shear split=True  lapse+shear one star=True  matter-adjacent=False | jobs V:- E:GM F:L C:GM
+  grav=dual  light=dlink  matter=FC    | D10 place-wise=False light&grav share=False charged=True  lapse-reach=True  lapse,shear split=True  lapse+shear one star=True  matter-adjacent=True  | jobs V:- E:G F:LM C:GM
+  grav=dual  light=dlink  matter=EFC   | D10 place-wise=False light&grav share=False charged=True  lapse-reach=True  lapse,shear split=True  lapse+shear one star=True  matter-adjacent=True  | jobs V:- E:GM F:LM C:GM
+(3b) place-wise D10 + lapse and shear in ONE star with each hop (all-orders product) + light not sharing: 0
+(5) does any layout with gravity on a checkerboard (star/dual) and matter disjoint from gravity have adjacent matter places? False

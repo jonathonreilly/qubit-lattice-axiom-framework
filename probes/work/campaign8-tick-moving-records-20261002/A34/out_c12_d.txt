@@ -1,0 +1,1 @@
+pi-flux + field W+0.00 (Omega lowest): lowest excitation above E_Omega -0.0000; states within 0.05 of E_Omega 1; delta=0.03: back-to-vacuum 0.9882, flip density 9.85e-04  [5.8 s]

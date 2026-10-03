@@ -1,4 +1,4 @@
-# Overnight campaign: what your tick and moving-record ideas do (v9, after four hostile reviews)
+# Overnight campaign: what your tick and moving-record ideas do (v8, after three hostile reviews)
 
 ## Bottom line
 
@@ -9,63 +9,63 @@
    - exactly alike for every site and every turn of the grid on every tick, with possibilities turning along with the grid (your Q3).
 
    Then it changes nothing at all. Nothing can move: not records, not light, not matter. So one thing has to give. The options are: a longer reach per tick, including a change that reaches everywhere but only with an exponentially faint tail beyond the neighbours; a supplied pattern of partners; more room per site; sameness only on average; or, for records only, steps that cannot be undone.
-2. **The most coherent way through found tonight: "ticks for records, smooth change for possibilities" (A27; below called "the record-tick shape").**
+2. **The most coherent way through found tonight: "ticks for records, smooth change for possibilities" (A27).**
    - In this option, records form and step only on ticks. A record steps at most one site per tick, by trading places with an empty neighbour, with odds set by what that neighbour holds.
    - That step is exactly symmetric, is not tied to the grid's directions (your Q3 holds), and a claim rule keeps two records off one site.
    - Between ticks, the shared possibilities change smoothly, the same everywhere and in every direction, leaving recorded spots as they are. Campaign 7's change sentence comes back as written, and your "evolves continuously" holds literally between record events (at ticks, records still cut and trade places). This holds for the simple toy change; the light-like pieces built tonight (matter in A26, the shape field in A25) still use fixed patterns.
-   - This does not escape bottom-line item 1's limit; it uses two of its ways out at once. The smooth change reaches past the neighbours in every tick (only faintly, if the change per tick is small), and records move by steps that cannot be undone. What is new is that the two fit together: records still move at most one site per tick. In the simple toy it needs no supplied pattern to move things, and it has no time-doubled twin while the change per tick stays below a simple bound. (The gravity field still needs a pattern: bottom-line item 4.)
+   - This does not escape point 1's limit; it uses two of its ways out at once. The smooth change reaches past the neighbours in every tick (only faintly, if the change per tick is small), and records move by steps that cannot be undone. What is new is that the two fit together: records still move at most one site per tick. In the simple toy it needs no supplied pattern to move things, and it has no time-doubled twin while the change per tick stays below a simple bound. (The gravity field still needs a pattern: point 4.)
    - **Costs:**
      - no exact speed limit for unrecorded influence: a leak beyond one site per tick always remains, and it stays exponentially faint only if the change per tick is small;
      - readable moving records are classical "dust": they wander, never interfere, and act as walls for the possibilities;
      - anything that interferes stays unrecorded between formations;
-     - over the calm, all-pointing-one-way empty background, a change that treats every spot and turn alike moves single ripples only like slow, heavy particles, never like light (exact for single ripples; groups of ripples are untested). Over that background, light-like matter needs a sign pattern painted onto the rule, and in the version that keeps your gluing that pattern cannot keep the turns the gravity field's pattern keeps (proved). A background whose spots share their possibilities, instead of all pointing one way, can carry light-like ripples with the plain rule (a comparison from magnets, not adopted), but next to matter it gets recorded and heats (A28);
+     - over the calm empty background this shape needs, a change that treats every spot and turn alike can only move ripples that behave like slow, heavy particles, never like light (exact, A31). Light-like matter needs a sign pattern painted onto the rule, and that pattern can never be the same one the gravity field needs (proved);
      - the empty background stays calm only if every record's content lies along one direction, which the law would have to fix or earlier records pass on.
-3. **The tick, your main question (A5, A15 for ticked change; A32 for the record-tick shape, checked).**
+3. **The tick, your main question (A5, A15 for ticked change; A32 for the point-2 shape, checked).**
    - **Ticked change (the earlier toys).** Neighbourhood ticks had to stay in step, or seams became mirrors and waiting froze things.
-   - **In the record-tick shape** the possibilities never notice the ticks, so all of that trouble disappears (exact).
-   - **Global or neighbourhood?** A tick written into the rule itself is the same everywhere if the rule treats every place exactly alike. The only other way is a checkerboard of two sub-grids half a tick apart, and records can faintly tell those apart. Set ticks that differ by place needed a per-place memory in every construction tried (your small-memory question). Random local times need none but are just a thinned-out shared tick. Ticks set by the surrounding records were not tried.
+   - **In the point-2 shape** the possibilities never notice the ticks, so all of that trouble disappears (exact).
+   - **Global or neighbourhood?** A tick written into the rule itself must be the same everywhere, because the rule treats every place alike. Ticks that differ by place are possible only if each place remembers where it is in its own cycle (your small-memory question).
    - **Constant or influenced?** The tick can be influenced, most naturally by gravity's slowing. What must follow that slowing exactly is how often records form; otherwise a record-counting clock and a clock made of possibilities would disagree near heavy bodies.
-   - **How visible is it?** If the chance of a record on a single tick is tiny, as freezing and heating already require, whichever choice is made shows in the records only in proportion to that chance, and to how fast the odds change within one tick. That is far too small to see on the finest grid. With a real chance on every tick and sharp records, it could be visible.
-   - **Light.** If records form only next to records, the ticks never touch how light and matter travel through empty space, so the precise relativity tests with light from distant explosions say nothing against them. Clocks made of light-like matter slow with motion by Einstein's amounts; in this shape that matter needs the sign pattern of section 10.
+   - **How visible is it?** Whichever choice is made shows in the records only in proportion to the chance of a record on a single tick, far too small to see on the finest grid.
+   - **Light.** The ticks never touch how light and matter travel through empty space, so the precise relativity tests with light from distant explosions say nothing against them. Moving clocks slow by Einstein's amounts.
    - **The one structural leftover.** Record forming keeps a slight preference for the grid's resting frame. It is not seeable at any rate allowed so far.
-   - **Same tick.** Two records can form on the same tick consistently. If the rule looks at neighbours, it needs an order or a joint rule, and a choice of whether same-tick neighbours see each other's new records. With small chances it almost never happens.
-   - **Minimum distance and minimum tick.** No smallest tick follows. What follows is a longest one: if one site per tick is to be the limit for all influence, the tick must be shorter than the time light takes to cross one grid step (shorter by √3 in 3D). A tick near that crossing time is favoured only if every tick carries a real chance of a record and recording is to run near its fastest. Such chances would freeze anything slower than the grid's fastest motion next to records, and with nucleon-sized records they would cloud glass and water (argued).
+   - **Same tick.** Two records can form on the same tick with no problem; with realistic odds it almost never happens.
+   - **Minimum distance and minimum tick.** This comes out as an upper limit: the tick must be shorter than the time light takes to cross one grid step. It is pinned to about that time only if every tick carries a real chance of a record, and odds that large would make glass and water cloudy.
 4. **Gravity.**
    - **Record-carried gravity** gets the static picture partly right, but with wandering records it cannot make waves or hold a moving Moon (argued).
    - **The road left open** is a field carried by the shared possibilities. If its bookkeeping is kept exact (a choice you would make), the grid's turns fix the form of its "shape" version to Einstein's linear gravity at long wavelengths. Its speed compared with light, and its strength, are not fixed by this.
    - **Conditions:** its ripples need a change that moves things. As built, the field gets that from more room per place than one qubit and a fixed 2×2×2 pattern of jobs (A25), whether its change is ticked or smooth. With the usual bookkeeping, leaving out the pattern makes the field come out as 8 copies (exact); an unusual bookkeeping is open. Forming a record must leave energy unchanged on average. Fitting the field into one qubit per place is open.
-   - **Matter on that field (A26).** In a ticked toy, matter tied to the field in the simplest fixed way follows the field's geometry at the level of rays and to first order. Light is delayed and bent by the full amount, provided the field's space-stretch is twice its time-slowing; that is A23's static solution, which needs the time-stretch to pace the field's own change, a supplied choice. Everything whose weight sits at single places falls alike. Supplied: the tie itself; the rule that a uniform stretch must go unnoticed (a new condition); how link weight is classed; a three-move shuffle inside 2×2 blocks for the diagonal ripple (checked in 2D only); and the matter step's own fixed pattern of partner pairs and signs. See section 6 for why this matter has not yet been built in the record-tick shape.
+   - **Matter on that field (A26).** In a ticked toy, matter tied to the field in the simplest fixed way follows the field's geometry at the level of rays and to first order. Light is delayed and bent by the full amount, provided the field's space-stretch is twice its time-slowing; that is A23's static solution, which needs the time-stretch to pace the field's own change, a supplied choice. Everything whose weight sits at single places falls alike. Supplied: the tie itself; the rule that a uniform stretch must go unnoticed (a new condition); how link weight is classed; a three-move shuffle inside 2×2 blocks for the diagonal ripple (checked in 2D only); and the matter step's own fixed pattern of partner pairs and signs. See point 6 for why this matter has not yet been built in point 2's smooth shape.
 5. **Empty space** must essentially never form records, or every region freezes. If records form only next to records (A28), empty space is exactly quiet whatever it is made of, and distant light crosses it untouched. The half-filled-sea vacuum then causes trouble only at the skin of matter, where records would creep into it and heat it. The world must also start with some records.
 6. **Handedness.** Neither ticks nor smooth change give single free particles on a uniform grid a preferred handedness (exact for steps of strictly limited reach and for any smooth change). Interactions and record edges are untested.
-7. **Your black-hole idea (A30, checked).** Inside the record-tick shape, a fully recorded region is a place where no record can ever form or move again, its possibilities never change, and no record or possibility from outside can reach in (gravity may still, depending on decisions 13 and 21). With one stepping choice it never wears away, but that choice also freezes every lone record in empty space. It is grey, not black:
-   - at the catching strength best for the fastest things, it catches those almost always and bounces slow ones;
-   - no fixed setting catches everything at every speed (proved in a one-line toy);
+7. **Your black-hole idea (A30, checked).** Inside the point-2 shape, a fully recorded region is literally a place where nothing can ever happen again: nothing forms or moves inside, and nothing outside can reach in. With one stepping choice it never wears away. But it is grey, not black:
+   - it catches fast things almost always and bounces slow ones;
+   - no setting catches everything at every speed;
    - it is dark only to what it can record;
    - what it catches stays on its skin as permanent records in plain view, a library rather than a vault.
 
-   Whether gravity's clocks stop inside is open: it depends on choices for you and on strong gravity, which is not worked out (section 9).
+   Whether gravity's clocks stop inside depends on a choice for you (point 9).
 
 ## How to read this
 
-- **Status.** These are explorations of your instincts, not positions. Everything is toy-level: small supplied models plus derivations, graded exact, checked or argued in each lane report. Four hostile reviews by separate agents attacked the main claims (each later one had read the earlier ones), and their corrections are included.
+- **Status.** These are explorations of your instincts, not positions. Everything is toy-level: small supplied models plus derivations, graded exact, checked or argued in each lane report. Three hostile reviews by separate agents attacked the main claims (each later one had read the earlier ones), and their corrections are included.
 - **Unadopted premises.** Most results lean on two things you have not adopted:
   - Campaign 7's bookkeeping for shared possibilities: possibilities joined across sites in one combined description, odds from the site's own part, and the exact way they change to agree when a record forms. (That they change at once to agree is your Q1.)
-  - No faraway influence faster than one site per tick. (The record-tick shape gives this up for unrecorded influence. A32 has redone section 5's tick results there; the results of sections 1 and 4 would need redoing.)
+  - No faraway influence faster than one site per tick. (Point 0's shape gives this up for unrecorded influence, so the results that lean on it, in points 1 and 4 and the tick results in point 5, would need redoing there.)
 
   Read every "must" as "if those hold".
 - **Numbers** assume one tick lasts the Planck time, about 5×10⁻⁴⁴ s.
-- **Files:** ai/probes → `probes/work/campaign8-tick-moving-records-20261002/`. That covers every lane report, the log, all four reviews, and my own checks.
+- **Files:** ai/probes → `probes/work/campaign8-tick-moving-records-20261002/`. That covers every lane report, the log, all three reviews, and my own checks.
 
 ## What we found
 
 ### 0. Ticks for records, smooth change for possibilities (A27, checked)
 
-**Why it is needed.** The exact limit (section 3) shows that a reversible change held to one site per tick, and exactly symmetric on every tick, moves nothing. The ways out each carry a cost:
+**Why it is needed.** The exact limit (point 3) shows that a reversible change held to one site per tick, and exactly symmetric on every tick, moves nothing. The ways out each carry a cost:
 - cycling partner pairs (sub-grid privilege);
 - a longer but still strict reach (scrambling, in the simplest class);
 - more room per site;
 - sameness only on average;
-- a change with no strict reach at all, only a faint tail (the record-tick shape takes this one; its costs are below).
+- a change with no strict reach at all, only a faint tail (point 0 takes this one; its costs are below).
 
 **What A27 found instead.** A27 separates the two kinds of motion.
 
@@ -78,7 +78,7 @@
   - It is symmetric under all 24 turns.
   - It is not tied to the grid's directions (my check).
   - When two records want one spot, the spot "claims" one with the right relative odds, and they never share. The literal "both try, then pick by odds" rule leaks faraway choices; the claim rule does not.
-- **Not yet checked:** a record that trades places keeps its content, but its new spot's own conditions might not allow that content (for example, a recorded neighbour there may set a different menu). With fixed odds the step ignores this entirely. The claim rule and one of the step weights also look two sites away, one step beyond the nearest neighbours. The record-tick shape also takes menus from records, which is the proposed menu text below, not your Q7 as decided.
+- **Not yet checked:** a record that trades places keeps its content, but its new spot's own conditions might not allow that content (for example, a recorded neighbour there may set a different menu). With fixed odds the step ignores this entirely. The claim rule and one of the step weights also look two sites away, one step beyond the nearest neighbours. Point 0 also takes menus from records, which is the proposed menu text below, not your Q7 as decided.
 
 **Possibilities**
 - They change smoothly and identically everywhere between ticks, holding recorded spots fixed, so records act as fixed weights and walls.
@@ -89,7 +89,7 @@
 - **No exact speed limit for unrecorded influence.** A leak beyond one site per tick always remains, and it stays exponentially faint only if the change per tick is small.
 - **The change per tick becomes readable** (argued). So "one universal tick or local ticks" now has real content, though at Planck ticks the effects are tiny and the tick becomes nearly undetectable in practice.
 - **Steps that look at their neighbours nudge them slightly.** Steps that ignore the neighbours do not.
-- **Only slow-particle ripples over the simplest calm background (A31).** Over a calm empty background where every spot points the same way, a change built from pairs of neighbours that treats every spot and turn alike must reduce to one simple form once any record holds the opposite content (exact). Rules with terms on three or more spots of a neighbourhood keep that background calm in more ways (the fourth review's check). Either way, single ripples behave like slow, heavy particles, never like light (exact for single ripples). Over that background, light-like ripples need a fixed pattern of plus and minus signs on the rule (section 10); a background whose spots share their possibilities is open (A33).
+- **Only slow-particle ripples, provably (A31).** Over a calm empty background of the simple kind (every spot pointing the same way), a change that treats every spot and turn alike must reduce to one simple form, and its ripples behave like slow, heavy particles, never like light (exact). Light-like ripples need a fixed pattern of plus and minus signs on the rule (see section 10).
 - **A direction for the calm background.** The empty background stays calm only if every record's content lies along the background's own direction. The rule cannot take that direction from the unrecorded possibilities without leaking faraway choices. So it must either be fixed by the law, which privileges a possibility, or passed on from earlier records, and who sets the first one is open.
 - **Smaller costs:**
   - overlapping formation spots need an ordering rule;
@@ -98,28 +98,28 @@
 **What it keeps**
 - Your records-on-ticks instinct, and one site per tick, exactly for records.
 - Campaign 7's change sentence, as written. This holds for the simple toy change; the light-like pieces built tonight (matter in A26, the shape field in A25) still use fixed patterns.
-- The gravity field route, with smooth field dynamics and no time-doubled twin. It does not remove the field's fixed pattern of jobs in space (A25; see section 6).
+- The gravity field route, with smooth field dynamics and no time-doubled twin. It does not remove the field's fixed pattern of jobs in space (A25; see point 6).
 
 ### 1. One site per tick limits the change too (A3)
 - If moving records' places always match the odds, the change can carry possibilities at most one site per tick.
 - A change that is the same everywhere and runs smoothly through a whole tick leaks past that: about 28% with a full unit of change per tick, falling steeply (about the fourth power) as the change per tick shrinks.
-- A smooth change working on one set of neighbour pairs at a time does not leak. So, if records follow the possibilities, what is ruled out is Campaign 7's change sentence as written. The record-tick shape drops that "if", and the sentence comes back. Smoothness is not ruled out, and your "it evolves continuously" can stay.
-- But one set of pairs per tick is a supplied pattern. It cannot treat every site and turn alike on every tick (A20). Once records meet, it tells sub-grids apart (section 3).
+- A smooth change working on one set of neighbour pairs at a time does not leak. So, if records follow the possibilities, what is ruled out is Campaign 7's change sentence as written. Point 0 drops that "if", and the sentence comes back. Smoothness is not ruled out, and your "it evolves continuously" can stay.
+- But one set of pairs per tick is a supplied pattern. It cannot treat every site and turn alike on every tick (A20). Once records meet, it tells sub-grids apart (point 3).
 
 ### 2. A record whose place can be read every tick must not ride the shared possibilities (A7, A19, A27)
-- **One way: re-forming.** The record forms afresh at each step, and the shared possibilities change at once to agree with it. That is what the Record axiom's "locks" already says. The record-tick shape's step is the other way: the record keeps its own content and trades places, never riding the possibilities.
+- **One way: re-forming.** The record forms afresh at each step, and the shared possibilities change at once to agree with it. That is what the Record axiom's "locks" already says. Point 0's step is the other way: the record keeps its own content and trades places, never riding the possibilities.
 - **Why.** Otherwise, for some linked states, a faraway choice shows up in the record's path.
 - **Consequence:** readable moving records behave like dust. They wander, never interfere, and carry no momentum. Things that interfere (electrons, atoms, light) must be unrecorded possibilities that leave a fresh record only now and then.
 - **Everyday motion (inertia).** It works only if each record pins the moving thing down loosely, over a stretch much wider than its own ripples.
   - Then the records line up straight and evenly spaced, and a thrown ball qualifies easily.
   - The loose pinning comes from records forming on something small that bumped the thing, as in the textbook account of cloud-chamber tracks (a comparison, not adopted).
   - Records formed straight from the thing's own neighbourhood make it forget its speed.
-  - This toy moves things with a fixed round of partner pairs; see section 3.
+  - This toy moves things with a fixed round of partner pairs; see point 3.
 - **Catch, avoidable: the "time-doubled" twin (A22).**
   - In the ticked toys, a twin that flickers at the tick rate exists exactly when each tick fully swaps a set of partners, which is also what lets light run at the grid's top speed.
   - In that case no interaction that respects the turning of possibilities can remove it. Slow collisions push up to about half (different particles) or nearly all (identical particles) of what they scatter into the twin.
   - With small changes per tick, starting from empty space, no collision of fewer than about 90–200 particles can make a twin (exact). Many-particle production falls off extremely fast (argued from a standard result and a small toy).
-  - The price: light runs well below the grid's top speed. A18's package needs small changes anyway in one way of writing its coupling, but not in the other (section 6). The record-tick shape's smooth change has no such twin at all below a simple bound.
+  - The price: light runs well below the grid's top speed. A18's package needs small changes anyway in one way of writing its coupling, but not in the other (point 6). Point 0's smooth change has no such twin at all below a simple bound.
 
 ### 3. How can anything move at all? (A3, A10, A20, plus my check)
 - **The exact limit (A20).** Take any reversible step on one qubit per site that treats every site and every turn of the grid exactly alike on every tick, with possibilities turning along with the grid (your Q3). If a site's possibilities can reach only its six neighbours in one tick, the step changes nothing at all. That stops everything, not just records: light and matter waves could not move either.
@@ -134,15 +134,15 @@
     - Its lockable possibilities are the grid's six directions, which ties forming records to the grid; your Q3 left formation unglued.
     - What a record locks changes at most steps.
     - As written it covers one record only. Two records can step into one site, up to 1 in 9 per tick. Letting a blocked record stay fixes that part, but a rule for two records wanting the same empty site is not built.
-  - **It moves records only.** Light and anything that interferes still need a reversible change, so one of the ways above must give for them. With records stepping by their own rule, section 1's one-site limit on the change no longer applies (argued).
+  - **It moves records only.** Light and anything that interferes still need a reversible change, so one of the ways above must give for them. With records stepping by their own rule, point 1's one-site limit on the change no longer applies (argued).
 
 ### 4. An exact speed limit, and relativity at low speed, for ticked change (A5)
 - Nothing gets further in one tick than the change reaches. That is an exact limit (one site per tick if the change is held to one site), where smooth change only gives an approximate one.
 - In a one-dimensional toy, moving clocks slow by the Einstein amount, and each kind of matter gets its own top speed.
-- The record-tick shape's smooth change gives up this exact limit for unrecorded influence, and these exact one-dimensional identities with it.
+- Point 0's smooth change gives up this exact limit for unrecorded influence, and these exact one-dimensional identities with it.
 - In 3D this is not secured. Rules giving equal speeds in every direction either split speeds in step with energy, which gamma-ray burst timing rules out for light, or need a sign pattern that singles out a direction.
 
-### 5. The tick: shared in practice for ticked change; free and nearly invisible in the record-tick shape (A5, A14, A15, A17, A32)
+### 5. The tick: shared in practice for ticked change; free and nearly invisible in the point-0 shape (A5, A14, A15, A17, A32)
 - **In step:** neighbourhood ticks that keep in step cannot be told apart from one universal tick.
 - **Out of step:** if each site keeps its own fixed tick without waiting, the pair between out-of-step neighbours never acts. The seam is a mirror wall that records can reveal (ticked change only).
 - **Waiting:** if sites wait for each other, no region can keep a different long-run rate, and a ring of sites all waiting on each other freezes everything.
@@ -151,29 +151,29 @@
   - it washes out atom interference within a nanosecond;
   - at Planck ticks, it shakes an electron apart within seconds.
 - **The averaging needed:** the jitter shrinks only with the width of the region averaged over, and averaging over time does not help (exact). The region needed is a billion or more sites across. A rule using only neighbouring records cannot build that average.
-- **What is left open:** a smooth field carried by the shared possibilities, changing by a fixed rule (A17; argued, not built). For it to spread at all, its rule must escape section 3's limit.
+- **What is left open:** a smooth field carried by the shared possibilities, changing by a fixed rule (A17; argued, not built). For it to spread at all, its rule must escape point 3's limit.
 
-**The tick redone in the record-tick shape (A32, checked).** In this option, records form and step on ticks; the possibilities change all the time.
-- **The ticks are invisible to the change (exact).** Moving one record event in time changes everything recorded later only in proportion to the chance of a record on that tick and to how much the change does during the shift. If that chance shrinks with the tick's length, every kind of schedule gives the same world in the limit: global or local, regular or random.
+**The tick redone in the point-0 shape (A32, checked).** Records form and step on ticks; the possibilities change all the time.
+- **The ticks are invisible to the change (exact).** Moving one record event in time changes everything recorded later only in proportion to the chance of a record on that tick. If that chance shrinks with the tick's length, every kind of schedule gives the same world in the limit: global or local, regular or random.
 - **No mirror walls.** Out-of-step neighbourhoods no longer bounce anything back. In the toy, 82% of a ripple crossed a seam whether the ticks were in step or not, where the ticked rule let nothing through. Nothing waits, so nothing freezes.
 - **Global or neighbourhood (exact, construction by construction).**
-  - A tick written into the law is the same everywhere if the law treats every place exactly alike. A checkerboard of two sub-grids half a tick apart also qualifies, up to an unnoticeable overall shift, but records can faintly tell its sub-grids apart.
-  - Ticks set differently by place needed each place to remember its phase in every construction tried (decision 9); ticks set by the surrounding records were not tried.
+  - A tick written into the law must be the same everywhere, since the law treats every place alike.
+  - Ticks set differently by place need each place to remember its phase (decision 9).
   - Random local times are just a thinned-out global tick.
   - Times set by a possibility are just a formation chance.
-- **Records can run a little faster across out-of-step regions.** Chains of new records can then run along places whose ticks come one after another, so the strict one-site-per-tick limit softens. If that chance is small, it does so only in proportion to the chance per tick, unless each place remembers the pattern from its last tick.
+- **Records can run a little faster across out-of-step regions.** Chains of new records can then run along places whose ticks come one after another, so the strict one-site-per-tick limit softens. It does so only in proportion to the chance per tick, unless each place remembers the pattern from its last tick.
 - **Influenced by gravity (exact).** The record-tick rate may vary from place to place.
-  - If clocks that count records are to agree with all other clocks near heavy bodies (your choice), the chance of forming a record per unit of local time must be the same everywhere. Otherwise clocks that count records and clocks carried by the possibilities disagree near heavy bodies, by the full gravitational amount.
+  - What consistency requires is that the chance of forming a record per unit of local time is the same everywhere. Otherwise clocks that count records and clocks carried by the possibilities disagree near heavy bodies, by the full gravitational amount.
   - The simplest way, needing no memory: one global tick, with each place's record chances slowed by gravity's time-stretch.
   - Ticks that themselves run slower in gravity need each place to keep its own phase. At Earth's surface, neighbouring grid points would drift a full cycle apart about once a year.
-- **Light never sees the tick (exact, when records form only next to records).** In empty space the ticks act on nothing, so they add no energy-dependent speed and no twisting of light's polarisation. Clocks made of light-like matter slow with motion as Einstein says, with corrections around 10⁻³⁸ at laboratory speeds; in this shape that matter needs section 10's sign pattern.
+- **Light never sees the tick (exact).** In empty space the ticks act on nothing, so they add no energy-dependent speed and no twisting of light's polarisation. Clocks made of the possibilities slow with motion as Einstein says, with corrections around 10⁻³⁸ at laboratory speeds.
 - **A preference for the grid's own frame.** In a two-band toy, no positive local recording rule makes the count of records follow a moving body's own time, and at most half the count slows. This needs a rule that treats left and right alike; my check found that one that doesn't can do differently. It is unobservable at the recording rates already allowed.
 - **Same tick (exact).** Records formed on one tick at different spots never leak faraway choices.
   - If each spot's rule looks only at itself, the order within a tick does not matter at all.
   - If it looks at neighbours, an order or a joint rule is needed, and the difference is tiny (second order in the chance).
 - **Minimum distance and minimum tick.** An upper limit follows (exact, given the premises): for one site per tick to be the universal limit, the tick must be shorter than light's time to cross one grid step, and in 3D shorter than that divided by √3.
-  - No smallest tick follows. A tick near light's crossing time is favoured only if every tick carries a real chance of a record and recording is to run near its fastest. Shorter ticks then slow recording beside records (they do not forbid it), and such chances already freeze slower motion beside records.
-  - With small chances the tick is only limited from above.
+  - A lower limit comes out only if every tick carries a real chance of a record. Then ticks that are too short freeze things beside records, and ticks that are too long let things outrun them, which pins the tick to about light's crossing time.
+  - With the small chances that glass and water allow, the tick is only limited from above.
 
 ### 6. Gravity-like clock slowing: real in toys; record-carried gravity falls short; a field route is mapped (A6, A8, A14, A18, A23, A25, A26)
 
@@ -220,7 +220,7 @@
   - **A fixed pattern of jobs (A25, checked).**
     - The field can be stepped with next-door moves only. Its rule treats every turn of the grid alike once the jobs are relabelled along with the turn, and it keeps its bookkeeping exact at every step. At linear order its ripples come out right: two kinds, all at one speed, with nothing extra.
     - The price: places take fixed jobs in a repeating 2×2×2 pattern, some holding the field's stretch parts, some its shear parts, some the in-between parts that pass change along. Nothing says which of the 8 possible layouts is the real one, and it never changes.
-    - If every place does the same job, the field comes out as 8 copies of itself: eight kinds of ripple where there should be one. This is proved for the usual bookkeeping, and it holds whether change comes in ticks or smoothly, so the smooth change of the record-tick shape does not avoid it. Patching it by hand breaks the bookkeeping and lets ripples grow without limit. An unusual bookkeeping that avoids both costs is open.
+    - If every place does the same job, the field comes out as 8 copies of itself: eight kinds of ripple where there should be one. This is proved for the usual bookkeeping, and it holds whether change comes in ticks or smoothly, so the smooth change of point 0 does not avoid it. Patching it by hand breaks the bookkeeping and lets ripples grow without limit. An unusual bookkeeping that avoids both costs is open.
     - Each place must also hold more settings than one qubit allows.
   - Forming a record must leave energy unchanged on average, or a phantom weight remains where the record formed (A23). A24 found exactly when that holds: when the rival possibilities no longer overlap through any of the spot's links, because the change has already carried the difference away ("settled"). Something still freely spreading is never settled. A24 built one working example in a supplied toy, "catch first, record later":
     - A small thing is caught at one spot, and its spare energy flies off.
@@ -237,7 +237,7 @@
     - Light bends by the full amount. A18's separate choice of how two neighbours' slowings combine is no longer needed: the stretch of the steps supplies it.
     - Everything whose weight sits at single places falls alike, and moving things fall slightly faster in the proportion nature shows.
   - **Weight carried in links.** It falls twice as fast unless it is classed as weight rather than motion. The field's own bookkeeping requires that classing anyway (argued, at long wavelengths), but at grid level it is supplied.
-  - **The diagonal ripple.** One of the two ripple types is felt only if each step's sense of direction is turned by a fixed three-move shuffle inside each 2×2 block. None of the simple next-door tweaks tested does it, and one of them makes the two copies of each particle feel opposite ripples. The shuffle is supplied, checked in 2D only, and whether it treats all 24 turns alike in 3D is unchecked. It is built from ticked moves, and it reaches diagonally across the block. A smooth change made only of next-door terms (the record-tick shape) cannot produce it, so matter on the field has not yet been built in the record-tick shape.
+  - **The diagonal ripple.** One of the two ripple types is felt only if each step's sense of direction is turned by a fixed three-move shuffle inside each 2×2 block. None of the simple next-door tweaks tested does it, and one of them makes the two copies of each particle feel opposite ripples. The shuffle is supplied, checked in 2D only, and whether it treats all 24 turns alike in 3D is unchecked. It is built from ticked moves, and it reaches diagonally across the block. A smooth change made only of next-door terms (point 0) cannot produce it, so matter on the field has not yet been built in point 0's shape.
   - **Precision.** Measured light bending needs a small change per tick, or one specific way of writing the coupling.
   - **My check.** I rebuilt the 2D toy's band structure independently: the slopes of all four bands follow the field's geometry exactly, and massive bands agree to about 0.1%.
 - **The repo** has unaudited notes in this direction. Extending your approved "kinetic isotropy" primitive to such a field would supply Einstein's weights. That would be your call.
@@ -251,60 +251,60 @@
 - **A hint from the sky.** Light from distant galaxies arrives without forming records on the way.
   - Letting records form only next to existing records would explain this and keep empty space exactly quiet. The cost: an empty grid would stay empty forever.
   - A rule that simply ignores light would explain the first but not the second.
-- **Records form only next to records (A28, checked).** Tested inside the record-tick shape.
+- **Records form only next to records (A28, checked).** Tested inside the point-0 shape.
   - **What it gives:**
     - empty space far from every record never forms one, whatever kind of emptiness it is (exact);
-    - light crossing it is never recorded and no recording rule acts on it there; it changes only through its links to records formed elsewhere (your Q1), and on average not at all;
-    - no faraway choice can steer it, because the rule looks only at the records next door, and those always agree with the spot they sit on;
-    - records spread at most one site per tick, provided the rule looks at the records present at the start of the tick and there is one shared tick.
-  - **The problem moves to the skin of matter.** Next to any record, the half-filled sea always has some chance of being recorded (exact for the simplest half-filled sea; the fourth review's check confirms it for the repo's staggered kind). So records creep into it, and each new one heats its surroundings, far beyond what is seen if the rule's energy scale is the Planck scale (argued). Next to matter, empty space would have to be the tidy, lined-up kind, or recording there would have to build up slowly over many ticks. My check reproduced the key numbers exactly.
+    - light crossing it is left completely alone;
+    - no faraway influence leaks, because the rule looks only at the records next door, and those always agree with the spot they sit on;
+    - records spread at most one site per tick, provided the rule looks at the records present at the start of the tick.
+  - **The problem moves to the skin of matter.** Next to any record, the half-filled sea always has some chance of being recorded (exact). So records creep into it, and each new one heats its surroundings far beyond what is seen. Next to matter, empty space would have to be the tidy, lined-up kind, or recording there would have to build up slowly over many ticks. My check reproduced the key numbers exactly.
   - **Other costs:**
     - a world with no records stays empty forever, so the world must start with some;
     - whether everything fills up and stops depends on one more choice, namely whether a spot fully surrounded by records may still form one;
-    - in dense transparent matter such as glass or water, light escapes recording only if records are point-like rather than nucleon-sized, recording is weak, or the rule ignores light.
-  - **One encouraging case, with a catch.** With a tidy emptiness and records whose content lies along its direction, recording stops once there is nothing left to record, while records keep moving forever: no freezing, no thinning. But this needs stepping odds that let records into calm space, so fully recorded regions then slowly dissolve (section 9). And if record contents are the opposite of the emptiness, every step that brings records together or apart changes the energy by a grid-scale amount.
+    - in dense transparent matter such as glass or water, light escapes recording only if records are small and sparse, recording is weak, or the rule ignores light.
+  - **One encouraging case.** With a tidy emptiness and records whose content lies along its direction, recording stops once there is nothing left to record, while records keep moving forever: no freezing, no thinning.
 
 ### 8. Handedness, the chirality problem (A1, A2, A11)
 - **Single free particles:** on a uniform grid, steps of strictly limited reach always pair each left-handed mover with a right-handed one. This is exact, resting on one standard algebra theorem reached two ways. Interactions and record edges are untested.
 - **Drift:** a standing one-way drift is ruled out by the grid's rotation symmetry.
 - **Circulation:** on a flat 2D toy, a round of trades circulates possibilities one way around every recorded region. In 3D with all 24 turns, nothing survives on flat faces or straight edges; slanted edges are open.
 
-### 9. Your black-hole idea under the record-tick shape (A30, checked)
-- **What "nothing happens" means there (exact, within the record-tick shape):**
+### 9. Your black-hole idea under the point-0 shape (A30, checked)
+- **What "nothing happens" means there (exact, within point 0):**
   - no record forms or moves inside a full region;
   - the possibilities inside never change;
-  - nothing from outside can ever reach in (for records and possibilities; gravity's field may still cross, depending on decisions 13 and 21);
+  - nothing from outside can ever reach in;
   - if time is the piling-up of records, the region has used up all its time.
 - **Sealing is possible as a choice.** If a record may step only into a neighbouring spot that already holds something like its own content, and the region's contents are the opposite of calm empty space, the region never loses a record (exact).
-  - The price: a lone record in empty space can never move either, and records stop moving through calm space altogether, so section 7's "records keep moving forever" does not hold under it. It is also the stepping rule that fits the stricter reading of "admissible" (decision 15).
-  - With fixed odds, or any chance of stepping into calm space, the region slowly dissolves, in a time that grows with its size far more slowly than a black hole's lifetime would. If its contents are the opposite of calm space, each record that leaves also changes the energy by a grid-scale amount. Two other stepping rules seal flat or box-shaped regions (A30).
+  - The price: a lone record in empty space can never move either.
+  - With any other stepping odds the region slowly dissolves, in a time that grows with its size far more slowly than a black hole's lifetime would.
 - **Grey, not black (exact, checked).** Its edge catches part of whatever hits it.
-  - In a one-line toy, at the catching strength that is best for the fastest things, how much is caught depends only on the speed of what arrives: things near the grid's top speed are caught almost always, slow things mostly bounce. A strength tuned for slow, heavy things catches them much better (up to 99% in the fourth review's check) but other speeds less; no fixed strength catches the slowest things.
+  - At the best catching strength, how much is caught depends only on the speed of what arrives: things near the grid's top speed are caught almost always, slow things mostly bounce.
   - Catching harder makes it reflect more, not less (the edge starts acting like a mirror).
-  - No fixed catching rule catches everything at every speed (proved in a one-line toy), and the records' own pull on what arrives can cap catching at two-thirds.
-  - A deeper, graded catching layer helps for all but the slowest things (one-line toy); in a flat 2D toy a spongy edge caught about 10% more of the slower waves tested, with a third fewer records.
+  - No edge rule catches everything at every speed, and the records' own pull on what arrives can cap catching at two-thirds.
+  - A rough, spongy edge helps somewhat, but never for the slowest things.
   - Anything records never lock (such as a never-recorded gravity field, or light under a rule that ignores light) is never caught at all.
-- **A library, not a vault.** Whatever is caught becomes a permanent record on the skin, in plain view, layered in the order it arrived. A black hole in Einstein's gravity hides what fell in (a comparison, not adopted).
+- **A library, not a vault.** Whatever is caught becomes a permanent record on the skin, in plain view, layered in the order it arrived. A black hole hides what fell in.
 - **No glow.** A sealed region gives off nothing. No rule found here makes it glow with a temperature that depends on its size, as black holes are expected to (a comparison, not adopted).
-- **Would Einstein's gravity call it a black hole?** If each recorded spot carries ordinary mass and that mass pulls (which needs more room per place, or gravity places that are never recorded), any packed region bigger than about 10⁻²⁶ m (about 14 kg, at one nucleon per spot) would lie inside its own horizon (a comparison from memory, not adopted). But the gravity field route is only worked out for weak gravity, so it cannot yet describe a horizon.
-- **Do clocks stop inside?** That depends on choices for you and on strong gravity, which is not worked out.
-  - If each spot holds only its one qubit's possibilities (the axioms as written), there are two cases. If records may form at every place, a full region has nothing left to carry gravity, so everything stops; but then its contents do not pull as ordinary mass, gravity ripples bounce off it, and ordinary matter would wall off gravity ripples too, which detected ripples rule out if matter carries about one record per nucleon (A31). If gravity's places never hold records (decision 21), no region can be fully recorded, and gravity runs through it.
-  - If each spot can also hold a never-recorded part for gravity (decision 13's "more room per place"), gravity's clocks keep running inside, only slower, as long as gravity there is weak. For any region big enough to be black-hole-like, gravity is strong, and the field route cannot yet say whether clocks stop (open).
+- **Would Einstein's gravity call it a black hole?** If each recorded spot carries ordinary mass, any packed region bigger than about 10⁻²⁶ m (about 14 kg, at one nucleon per spot) would lie inside its own horizon (a comparison from memory, not adopted). But the gravity field route is only worked out for weak gravity, so it cannot yet describe a horizon.
+- **Do clocks stop inside?** That depends on a choice for you.
+  - If each spot holds only its one qubit's possibilities (the axioms as written), a full region has nothing left to carry gravity, so everything stops. But then its contents do not pull on anything, and gravity ripples bounce off it.
+  - If each spot can also hold a never-recorded part for gravity (decision 13's "more room per place"), gravity's clocks keep running inside, only slower.
 
-### 10. Putting the record-tick shape together (A31, checked)
+### 10. Putting the point-0 shape together (A31, checked)
 A31 assembled everything into one model, giving each ingredient its status: axiom text, your decided readings, unadopted Campaign 7 sentences, named choices, or supplied patterns.
 - **What holds up: records.** They sit still or trade places with an empty neighbour, never pile onto one spot, cannot be steered by faraway choices, and empty space far from records stays exactly quiet.
-- **The sharp limit (exact, checked; single ripples).** Take empty space where every spot points the same way. Among rules built from pairs of neighbours that treat every spot and turn alike, only the plain "line up with your neighbour" rule keeps it calm once any record holds the opposite content. Rules with three-spot terms keep it calm too (the fourth review's check), but in every such rule single ripples behave like slow, heavy particles, never like light. Groups of ripples, and backgrounds that do not all point one way, are untested here.
-- **Over that background, light-like matter needs a painted-on sign pattern.** A fixed pattern of plus and minus signs on the neighbour links, the standard lattice trick, gives light-like ripples. It comes in two versions:
+- **The sharp limit (exact, checked).** Calm empty space needs every spot pointing the same way. Then the only rule that treats every spot and turn alike and leaves it calm is the simplest "align with your neighbour" rule. Its ripples behave like slow, heavy particles, never like light.
+- **Light-like matter needs a painted-on sign pattern.** A fixed pattern of plus and minus signs on the neighbour links, the standard lattice trick, gives light-like ripples. It comes in two versions:
   - **Signs on the whole rule.** Records can tell neighbouring sub-grids apart once things interact.
-  - **Signs on the hopping only.** This can be hidden from records only if a record's step carries the same signs, so the step itself must know the pattern. The rule then also favours one direction of the possibilities, and 16 of the 24 turns are no longer treated alike.
-- **The two patterns cannot be one pattern with all the field pattern's turns (proved).** The gravity field's 2×2×2 job pattern keeps certain half-turns of the grid; no sign pattern of the kind light needs can keep them. They can still be tied together as one supplied choice (1 of 16), but then the combined pattern keeps only 12 of the 24 turns. In the hop-only version they might share one label, which needs a piece not yet found.
-- **New: gravity's places never hold records, if gravity lives in the one qubit per place (exact consequence).** If the field lives in each place's one qubit and records never lock it, the places carrying the field can never be recorded. As built, every place carries part of the field, so this would forbid every record. It needs a one-qubit version of the field that leaves some places free (not built), or more room per place (decision 13). Otherwise records wall the field off: with about one record per nucleon, gravity ripples in the Earth would die out within about 70 m (argued), yet ripples that crossed the Earth have been detected (a comparison, not adopted). Under this rule no region can be fully recorded, so section 9's "everything stops" picture cannot arise.
+  - **Signs on the hopping only.** This can be hidden from records, but the rule then favours one direction of the possibilities, and 16 of the 24 turns are no longer treated alike.
+- **Two patterns, not one (proved).** The gravity field's 2×2×2 job pattern keeps certain half-turns of the grid; the sign pattern light needs can never keep them. So in the version that keeps your gluing, matter and gravity need two separate supplied patterns. They might share one only in the hop-only version, which needs a piece not yet found.
+- **New: gravity's places never hold records (exact).** If gravity's field lives in the same one qubit per place and records never lock it, then the places carrying the field must never be recorded. Otherwise matter walls the field off: in the Earth, gravity ripples would die out within about 70 m, yet ripples that crossed the Earth have been detected (a comparison, not adopted).
 - **Also:**
   - the field's bookkeeping can hold only on average, never exactly for every state, if records are to register anything;
-  - the time-stretch that paces the field would have to be a moving part of the field, so each place holds more (argued);
+  - the time-stretch that paces the field has to be a moving part of the field, so each place holds more;
   - record chances must also slow with the time-stretch, so record clocks run slow in gravity like everything else.
-- **Ticks become bookkeeping if the chances per tick shrink with the tick** (argued), which avoids freezing and keeps records from outrunning light. Four choices then matter less and less as the tick shrinks: the claim rule, start-of-tick gating, the formation order and the change per tick.
+- **Ticks become bookkeeping if the chances per tick shrink with the tick,** which avoids freezing and keeps records from outrunning light. Four choices then drop out: the claim rule, start-of-tick gating, the formation order and the change per tick.
 - **The most useful next step:** look for a calm empty background whose own structure supplies the sign pattern. Then the pattern would be a fact about the state, like the field's layout, not a rule painted onto the law. That search is running now (A33).
 
 ## Your menu decision (Q7 stands)
@@ -313,7 +313,7 @@ My overnight note was too strong; the reviewers caught it.
 
 - **Odds:** unrecorded neighbours may shape the odds as a straight average, and with them which choices have nonzero odds.
 - **Lockable possibilities:** which possibilities a record can lock must be set by the law and by records that lock their own site's possibility. Records re-formed at each step qualify.
-- **The exception:** a record whose place is not cut to agree must not set a neighbour's menu, or the leak in section 2 returns.
+- **The exception:** a record whose place is not cut to agree must not set a neighbour's menu, or the leak in point 2 returns.
 - **What fails:** taking the menu's directions from the current state of unrecorded possibilities, e.g. "lock along wherever the site now points". My check found complete leakage. Yesterday's "own-state" probe columns used that kind of rule, so they are illustrative only.
 - **In short:** a rule that uses unrecorded possibilities as if they could be read lets faraway choices leak; a fixed straight average does not.
 - **Proposed text (not approved):** "The menu is set by the conditions. Recorded neighbours, whose records lock their own possibilities, may set which possibilities are on offer; unrecorded possibilities shape the odds over them only as a fixed weighted average."
@@ -323,7 +323,7 @@ My overnight note was too strong; the reviewers caught it.
 - **What it is:** one toy putting this together consistently. Pair steps on a fixed round; a quiet "all-agreeing" empty space; records forming where partners disagree; records that never disappear and re-form next door.
 - **What it gets right:** no faraway influence, an exact speed limit, quiet empty space, and records never doubled or lost.
 - **What it costs:**
-  - the round is a supplied pattern that tells sub-grids apart once records meet (section 3);
+  - the round is a supplied pattern that tells sub-grids apart once records meet (point 3);
   - one fixed lock direction;
   - every record locks the same content;
   - massive things it records directly lose all inertia.
@@ -331,42 +331,37 @@ My overnight note was too strong; the reviewers caught it.
 
 ## Decisions this raises (yours)
 
-0. **The overall shape (A27).** Do you want "ticks for records, smooth change for possibilities"? Records step one site per tick by their own symmetric swap rule, and the shared possibilities change smoothly in between. The price is giving up an exact speed limit for unrecorded influence: it leaks past one site per tick, and the leak stays exponentially faint only if the change per tick is small. It brings its own choices: how much the change does per tick, how often records step and with which weighting, the claim rule (which looks two sites away), and an order for overlapping formation spots. Decisions 1, 2 and 8 then mostly resolve in its favour. Decision 12 does not yet: over the calm, all-pointing-one-way background, light-like ripples cannot be made without a painted-on pattern (A31; decision 17).
+0. **The overall shape (A27).** Do you want "ticks for records, smooth change for possibilities"? Records step one site per tick by their own symmetric swap rule, and the shared possibilities change smoothly in between. The price is giving up an exact speed limit for unrecorded influence: it leaks past one site per tick, and the leak stays exponentially faint only if the change per tick is small. It brings its own choices: how much the change does per tick, how often records step and with which weighting, the claim rule (which looks two sites away), and an order for overlapping formation spots. Decisions 1, 2 and 8 then mostly resolve in its favour. Decision 12 does not yet, because light-like ripples have not been built in this shape (decision 17).
 1. **Change within a tick.** May the change run smoothly within a tick on one set of neighbour pairs? That pattern of pairs is supplied structure: it cannot treat every site and turn alike on every tick (A20).
 2. **Reach of the change.** Choose between:
    - strictly one site per tick, in which case nothing moves if every tick treats every site and turn alike (A20);
    - a longer reach (4 sites works but scrambles; 2–3 untested);
-   - a faint longer reach (the record-tick shape takes this one: the change reaches everywhere, faintly).
+   - a faint longer reach (point 0's shape takes this one: the change reaches everywhere, faintly).
 3. **What moves.** Records re-formed at every step (classical wanderers), or unrecorded possibilities that leave a fresh record only when one forms (interference survives)?
-4. **Empty space.** Does it form records on its own? Keeping regions from freezing says no, which puts the half-filled-sea vacuum in doubt unless a many-tick rule with memory is allowed. One way to say no: records form only next to records (A28). That brings its own choices: the world starts with some records; the rule looks at the records present at the start of each tick; you decide what a fully surrounded spot does; and the emptiness next to matter is tidy, not half-filled. Under that rule every forming site has a recorded neighbour. If "uninfluenced" in your Q4 means "no recorded neighbour", Q4 would never apply to an actual formation; if it means "nothing tilts the odds", it still applies next to records (argued, A28).
+4. **Empty space.** Does it form records on its own? Keeping regions from freezing says no, which puts the half-filled-sea vacuum in doubt unless a many-tick rule with memory is allowed. One way to say no: records form only next to records (A28). That brings its own choices: the world starts with some records; the rule looks at the records present at the start of each tick; you decide what a fully surrounded spot does; and the emptiness next to matter is tidy, not half-filled. Under that rule your Q4 (an uninfluenced site has equal odds) never applies to an actual formation, because a site with no recorded neighbour never forms a record (A28).
 5. **Time.** Does it count every formation (unbounded, stored in no record) or only new records (bounded)?
 6. **Menu wording.** The proposed text above.
-7. **Permanence.** Does "permanent" mean "never destroyed, may move next door (by re-forming, or by trading places as in the record-tick shape)"? That is Record-axiom wording, so it needs your exact text. Under the six-direction step, what a record locks also changes at most steps.
-8. **How records step.** By their own irreversible rule with a six-direction menu, so the content points the way the record stepped? That is symmetric under the 24 turns, but it ties lockable possibilities to the grid (your Q3 left formation unglued) and still needs a rule for two records wanting one site. Or by a supplied sub-grid pattern (A10)? Or by trading places with an empty neighbour and keeping its content (the record-tick shape, A27)? That one is not tied to the grid; the open item is whether its content suits its new spot (decision 15).
+7. **Permanence.** Does "permanent" mean "never destroyed, may move next door (by re-forming, or by trading places as in point 0)"? That is Record-axiom wording, so it needs your exact text. Under the six-direction step, what a record locks also changes at most steps.
+8. **How records step.** By their own irreversible rule with a six-direction menu, so the content points the way the record stepped? That is symmetric under the 24 turns, but it ties lockable possibilities to the grid (your Q3 left formation unglued) and still needs a rule for two records wanting one site. Or by a supplied sub-grid pattern (A10)? Or by trading places with an empty neighbour and keeping its content (point 0, A27)? That one is not tied to the grid; the open item is whether its content suits its new spot (decision 15).
 9. **Memory.** May a site carry a small memory besides its possibilities? Build-up-over-time formation, local ticks and smoother pacing all need one (A12, A15, A17).
 10. **Pacing.** When neighbours' change per tick differs, does passing between them go at the product (full light bending), the average, or the slower of the two (half bending)? Are the carriers of the slowing slowed themselves (A14, A18)?
 11. **Direct records.** May a lone moving thing form records straight from its own neighbourhood? If so, it loses all inertia (A19).
-12. **How unrecorded things move.** Light and matter waves need a reversible change that moves something (section 3). Which gives: longer reach, a supplied pattern, more room per site, or sameness only on average?
+12. **How unrecorded things move.** Light and matter waves need a reversible change that moves something (point 3). Which gives: longer reach, a supplied pattern, more room per site, or sameness only on average?
 13. **A gravity field.** May the shared possibilities carry a never-locked "shape" field that the fixed rule passes along? May the gluing to the grid tilt from place to place as part of that field? Must a forming record leave energy unchanged (A23)? May the places carry a fixed 2×2×2 pattern of jobs for it, one of 8 layouts that never changes (A25)? If matter is tied to it (A26): is weight carried in links classed as weight rather than motion, and is the in-block shuffle allowed? As built, the field needs more settings per place than one qubit holds. May a place hold more (a change to the Qubit axiom), or must the field be built from one qubit per place, for example as a collective ripple (open)?
 14. **When records form.** Only on caught, settled things, slowly compared with the tick (A24)? Under the gravity field this is needed for almost all records (others only extremely rarely), and it also gives straight tracks (A19).
-15. **A moved record's new spot.** Under the record-tick shape's swap step, a record carries its content to a new spot whose own conditions might give that content zero odds. Should a step be allowed only where the content is on the new spot's menu (A29)?
-16. **The calm background's direction.** Under the record-tick shape, empty space stays calm only if every record's content lies along its direction. Is that direction fixed by the law (which privileges a possibility), or passed on from a first record (A29)?
-17. **Light and matter under the record-tick shape.** Over the calm, all-pointing-one-way background, no change that treats every spot and turn alike gives single ripples that move like light (exact). Light-like matter needs a painted-on sign pattern (A31). Either it goes on the whole rule: records can show it, it cannot keep the turns the field's pattern keeps, and tying the two together leaves 12 of 24 turns; and no simple way to give that matter a mass was found. Or it goes on the hopping only: one direction of the possibilities is favoured, against your Q3 for 16 of 24 turns, and records' steps must carry the signs. A background that supplies the pattern itself is being searched (A33). Is a fixed pattern acceptable, given that the record-tick shape was chosen to avoid one for records? Which version, if either?
-18. **What a tick means (A32).** In the record-tick shape, if record chances per tick are small, any tick schedule shows in the records only in proportion to that chance. Would "records form at set ticks" then be a physical statement or a bookkeeping one? If you keep set ticks, A32 lists the choices:
+15. **A moved record's new spot.** Under point 0's swap step, a record carries its content to a new spot whose own conditions might give that content zero odds. Should a step be allowed only where the content is on the new spot's menu (A29)?
+16. **The calm background's direction.** Under point 0, empty space stays calm only if every record's content lies along its direction. Is that direction fixed by the law (which privileges a possibility), or passed on from a first record (A29)?
+17. **Light and matter under point 0.** No smooth, everywhere-alike change on one qubit per site has yet produced light-like ripples over a calm background; the matter and the field built tonight both use fixed patterns. Is a fixed pattern acceptable for light and matter, given that point 0 was chosen to avoid one for records? A31 sharpened this: light-like matter needs a painted-on sign pattern, either on the whole rule (records can show it, and it can never be the field's pattern) or on the hopping only (one direction of the possibilities is favoured, against your Q3 for 16 of 24 turns). Which, if either?
+18. **What a tick means (A32).** In the point-0 shape, any tick schedule shows in the records only in proportion to the chance of a record per tick. Would "records form at set ticks" then be a physical statement or a bookkeeping one? If you keep set ticks, A32 lists the choices:
     - does the chance per tick scale with the tick's length?
     - one global tick, or neighbourhood ticks that need each place to remember its phase?
     - which time-stretch paces a record's step between places of different gravity?
     - do same-tick neighbours see each other's new records?
-    - does a forming site look at the records present at its own tick (then chains of new records can outrun one site per tick), or at the previous tick's (a memory)?
-    - does recording follow each place's own time (needed for gravity if record-counting clocks are to agree; only partly possible for motion)?
-    - would a neighbourhood tick timed by the records around each spot fit your idea of an influenced tick? It would need no extra memory, since records are permanent (not yet tried).
-    - by "minimum tick", did you mean a smallest possible tick, which nothing tonight derives, or a longest allowed one, which follows if records must keep up with light?
+    - does recording follow each place's own time (needed for gravity; only partly possible for motion)?
 
     This is exploration of your instinct, not a position.
-19. **Sealing records in.** May a record step only into a neighbouring spot that already holds something like its own content (A30)? That lets a fully recorded region last forever, and it fits the stricter reading of "admissible" (decision 15). But a lone record in calm empty space could then never move, and records would not keep moving forever (section 7). The alternative, fixed odds (A31's preference), lets records move but makes every fully recorded region slowly dissolve.
-20. **Recording light next to records.** May light-like possibilities be recorded next to existing records? A fully recorded region is dark to light only if so (A30), but in glass or water that recording must be very weak if records are nucleon-sized (A28).
-21. **Gravity's places.** If gravity's field lives in one qubit per place and records never lock it, may the places carrying it be ones that never hold records (A31)? As built, every place carries part of the field, so this needs a one-qubit field that leaves some places free (not built), and it is a fixed pattern of record-free places. Under it, no region can ever be fully recorded. Otherwise records wall off gravity ripples, which detected ripples rule out if matter carries about one record per nucleon.
-22. **Pairs only?** Should the change be built from pairs of neighbours only? With three-spot terms, the calm, aligned emptiness allows more rules, including a handed one, though none tried makes single ripples move like light (fourth review).
-23. **A shared-possibility background?** A background whose spots share their possibilities, instead of all pointing one way, gives light-like ripples with the plain rule and no painted pattern (a comparison from magnets, not adopted). But next to matter it gets recorded and heats (A28). Is it worth exploring?
+19. **Sealing records in.** May a record step only into a neighbouring spot that already holds something like its own content (A30)? That lets a fully recorded region last forever, but a lone record in empty space could then never move.
+20. **Recording light next to records.** May light-like possibilities be recorded next to existing records? A fully recorded region is dark to light only if so (A30), but in glass or water that recording must be very weak (A28).
+21. **Gravity's places.** If gravity's field lives in one qubit per place and records never lock it, may the places carrying it be ones that never hold records (A31)? Otherwise records wall off gravity waves.
 
 *Still running: A33 (a search for a calm empty background that supplies the sign pattern itself) and a fourth hostile review (A34) of A28, A30, A31, A32 and this draft.*

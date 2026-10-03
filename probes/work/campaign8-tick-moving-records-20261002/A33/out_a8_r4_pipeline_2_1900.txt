@@ -1,0 +1,1 @@
+stage 2 [1900,2800): 900 done; certified impure (3^3 box) 36; not certified & still mobile on L=10: 52   (45.7s)

@@ -1,0 +1,4 @@
+  basis dims: {'V': 2, 'C': 2, 'E': 7, 'F': 7}  self-commuting nonzero shapes: {'V': 3, 'C': 3, 'E': 31, 'F': 31}
+  distinct bilinear constraint matrices per role pair: {'CF': 1, 'EE': 4, 'EF': 3, 'EV': 1, 'FC': 1, 'FE': 3, 'FF': 4, 'VE': 1}
+r2<=2: commuting nonzero solutions (mod 2): 697   (0.0s)
+  ... with exact sign invariance of all four shapes: 157 (of which translation-invariant: 3)   (1.3s)

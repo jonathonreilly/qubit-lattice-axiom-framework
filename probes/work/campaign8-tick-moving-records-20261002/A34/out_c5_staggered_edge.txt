@@ -1,0 +1,18 @@
+Lx=8, L=8: single-particle gap at E=0: 1.137e+00
+   wall star #0: nu in [0.0146, 0.9854], min(nu,1-nu) = 0.0146, smallest many-body eigenvalue = 1.340e-05
+   wall star #1: nu in [0.0146, 0.9854], min(nu,1-nu) = 0.0146, smallest many-body eigenvalue = 1.340e-05
+   wall star #2: nu in [0.0146, 0.9854], min(nu,1-nu) = 0.0146, smallest many-body eigenvalue = 1.340e-05
+   wall star #3: nu in [0.0146, 0.9854], min(nu,1-nu) = 0.0146, smallest many-body eigenvalue = 1.340e-05
+   bulk 7-star: min(nu,1-nu) = 0.0122, smallest many-body eigenvalue = 4.680e-06
+Lx=10, L=10: single-particle gap at E=0: 2.846e-01
+   wall star #0: nu in [0.0157, 0.9843], min(nu,1-nu) = 0.0157, smallest many-body eigenvalue = 1.535e-05
+   wall star #1: nu in [0.0157, 0.9843], min(nu,1-nu) = 0.0157, smallest many-body eigenvalue = 1.535e-05
+   wall star #2: nu in [0.0157, 0.9843], min(nu,1-nu) = 0.0157, smallest many-body eigenvalue = 1.535e-05
+   wall star #3: nu in [0.0157, 0.9843], min(nu,1-nu) = 0.0157, smallest many-body eigenvalue = 1.535e-05
+   bulk 7-star: min(nu,1-nu) = 0.0129, smallest many-body eigenvalue = 5.160e-06
+Lx=12, L=12: single-particle gap at E=0: 7.707e-01
+   wall star #0: nu in [0.0152, 0.9848], min(nu,1-nu) = 0.0152, smallest many-body eigenvalue = 1.441e-05
+   wall star #1: nu in [0.0152, 0.9848], min(nu,1-nu) = 0.0152, smallest many-body eigenvalue = 1.441e-05
+   wall star #2: nu in [0.0152, 0.9848], min(nu,1-nu) = 0.0152, smallest many-body eigenvalue = 1.441e-05
+   wall star #3: nu in [0.0152, 0.9848], min(nu,1-nu) = 0.0152, smallest many-body eigenvalue = 1.441e-05
+   bulk 7-star: min(nu,1-nu) = 0.0126, smallest many-body eigenvalue = 4.939e-06

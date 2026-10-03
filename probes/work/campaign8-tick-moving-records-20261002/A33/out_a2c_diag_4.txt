@@ -1,0 +1,5 @@
+dims {'V': 3, 'C': 3, 'E': 12, 'F': 12}  constraints {'CE': 2, 'CF': 2, 'EC': 2, 'EE': 9, 'EF': 10, 'EV': 2, 'FC': 2, 'FE': 10, 'FF': 9, 'FV': 2, 'VE': 2, 'VF': 2} (0.2s)
+  role V: self-commuting 7, + exact sign 7  (0.3s)
+  role C: self-commuting 7, + exact sign 7  (0.3s)
+  role E: self-commuting 319, + exact sign 159  (0.4s)
+  role F: self-commuting 319, + exact sign 159  (0.5s)

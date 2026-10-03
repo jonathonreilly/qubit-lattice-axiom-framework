@@ -1,0 +1,7 @@
+(1) 8-ring exact: adjacent -n pair -> separated: <H_R> 4.000000 -> 0.000000 (change -4.000000 J)
+    lone -n record stepping: 4.000000 -> 4.000000 (change +0.000000 J)
+    adjacent +n pair -> separated: change +0.000000 J
+(2b) 3D jam, one blind step off a flat face (-n contents): energy change -20.0 J
+(2a) 3D lone -n record, one blind step: energy change +0.0 J
+(2c) +n contents: every product snapshot has the same energy (all n_i.n_j = 1): change 0 J
+     27-record -n jam: energy as a block 2079 J vs fully dispersed 1863 J -> change -216 J (= -2J x gained record-calm contacts)

@@ -1,0 +1,14 @@
+group sizes O,D4z,C4z,C3,T: 24 8 4 3 12
+star exactly O-invariant: True ; face exactly O-invariant: True
+face = Z(-1, -1, 0) Y(-1, 0, -1) Y(-1, 0, 1) Z(-1, 1, 0) X(0, -1, -1) X(0, -1, 1) X(0, 1, -1) X(0, 1, 1) Z(1, -1, 0) Y(1, 0, -1) Y(1, 0, 1) Z(1, 1, 0)
+site-centred ball r^2<=1: |B|=7  dim O-invariant=1  dim D4z-invariant=4
+site-centred ball r^2<=2: |B|=19  dim O-invariant=2  dim D4z-invariant=7
+site-centred ball r^2<=3: |B|=27  dim O-invariant=2  dim D4z-invariant=9
+site-centred ball r^2<=4: |B|=33  dim O-invariant=3  dim D4z-invariant=12
+site-centred ball r^2<=5: |B|=57  dim O-invariant=5  dim D4z-invariant=18
+site-centred ball r^2<=6: |B|=81  dim O-invariant=7  dim D4z-invariant=24
+cube-centred ball |y-c|^2<=0.75: |B|=8  dim O-invariant=0  dim C3-invariant=4
+cube-centred ball |y-c|^2<=2.75: |B|=32  dim O-invariant=2  dim C3-invariant=20
+cube-centred ball |y-c|^2<=4.75: |B|=56  dim O-invariant=4  dim C3-invariant=36
+cube-centred ball |y-c|^2<=6.75: |B|=88  dim O-invariant=6  dim C3-invariant=56
+O-invariant basis on the star: ['X(-1, 0, 0) Y(0, -1, 0) Z(0, 0, -1) Z(0, 0, 1) Y(0, 1, 0) X(1, 0, 0)'] equals star: True

@@ -599,3 +599,12 @@ Its "stopped time" is the absence of record events. That matches gravitational c
 ## 7. Plain-language summary
 
 If the "Option R" rules hold, a region where every spot holds a record is a place where nothing can ever happen again: no new record can appear inside, none can move, and nothing from outside can reach in. With one particular choice of how records step (a record may only step into a neighbouring spot that already holds something like itself), the region also never loses records into empty surroundings and lasts forever. The price is that a lone record in empty space can never move either. But the region is not black the way a black hole is. Things that hit its edge are caught only part of the time: things moving near the grid's top speed are caught almost always, slow things mostly bounce off, and no setting of the edge catches everything at every speed. A rough, spongy edge helps a little, but not for the slowest things, and anything that records never lock, such as a never-recorded "stretch" field for gravity, is never caught at all. Whatever is caught becomes a permanent record on the edge in plain view, so the region keeps a readable log of what fell in, where a black hole hides it. A sealed region gives off nothing and never wears away, while a region whose records can wander off falls apart in a time that grows with its size far more slowly than a black hole's would. Whether its stopped time also means that clocks stop in the gravity sense depends on a choice for you. If each spot holds only one set of possibilities, a full region has nothing left to carry gravity, so everything stops there. If each spot can also hold a never-recorded part for gravity, clocks there keep running, only slower.
+
+---
+
+## ERRATA from the fourth hostile review (A34/REVIEW.md), added by the coordinator
+
+- Line ~108: the seal fails for any content 'not opposite to the quiet axis' (+n leaks too), not just 'off axis' (C68).
+- Line ~422: R_h at nuclear density ≈ 25 km, not 6 km (C69).
+- The 'speed-only' law holds at Γ = 2t for both terminations and both bands. But Γ = 2t is optimal only for massless waves; massive waves are best caught at Γ = 0.67–6.0 (C65).
+- 'Lapse keeps running, N = 1 − U > 0' is linear-order only. The centre lapse 1 − 3C/4 < 0 for C > 4/3, so it is open in the black-hole regime (C66).

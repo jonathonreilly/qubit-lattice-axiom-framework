@@ -588,3 +588,15 @@ Every run: `run.sh` (nice 10, four thread caps = 1, 55 s alarm, load gate < 6). 
 - Suppose every tick carried a real chance of a record, not a tiny one. Then ticks much shorter than the time light needs to cross one grid step would freeze things next to records, and much longer ticks would let things outrun the records. That would pin the tick to about that crossing time.
 - But odds that large would make ordinary glass and water cloudy.
 - So as things stand, the tick is only limited from above by that crossing time.
+
+---
+
+## ERRATA from the fourth hostile review (A34/REVIEW.md), added by the coordinator
+
+- Line ~55: add 'or, up to an unreadable global shift, a two-sub-grid checkerboard (A16 C7's cost)' (C77).
+- Line ~339: prefix 'For left–right-symmetric weights (d = 0),' (C82).
+- Line ~456: the optima are 0.244 and 0.037; for small c, τ* ≈ c/(2√2 J). 0.050 was a grid-edge artifact (C79).
+- D36: no minimum tick follows; a longest allowed tick follows given the premises. A 'pinned' tick needs order-1 chances plus an aim of near-fastest recording (C79).
+- D21 assumes Dirac-like (two-band) matter, which over the calm background needs the painted sign pattern (C80).
+- D2 scope: the constant 4 assumes a two-outcome menu; first order in δ; H_∂S covers the whole support's boundary; one limit per finite window; global offset unreadable for stationary preparations (C81).
+- D24's example weight breeds next to −n records (C83).

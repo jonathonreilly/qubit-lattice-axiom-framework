@@ -1,0 +1,2 @@
+  valid (self-commuting + exact sign): {'V': 3, 'C': 3, 'E': 31, 'F': 31}
+r2<=3: commuting + exact-sign solutions: 697 (translation-invariant: 3)   (0.1s)

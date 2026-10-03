@@ -1,0 +1,3 @@
+  basis dims: {'V': 2, 'C': 2, 'E': 9, 'F': 9}  self-commuting nonzero shapes: {'V': 3, 'C': 3, 'E': 31, 'F': 31}
+  distinct bilinear constraint matrices per role pair: {'CE': 1, 'CF': 2, 'EC': 1, 'EE': 6, 'EF': 6, 'EV': 2, 'FC': 2, 'FE': 6, 'FF': 6, 'FV': 1, 'VE': 2, 'VF': 1}
+r2<=3: commuting + exact-sign solutions: 697 (translation-invariant: 3)   (1.6s)

@@ -1,0 +1,4 @@
+role V at (0, 0, 0), v=(2, 0, 0), margin 1 (|B|=45): MOVER FOUND, |supp|=1   (0.0s)
+    Q = Z(1, 0, 0)
+role V at (0, 0, 0), v=(2, 2, 0), margin 1 (|B|=75): MOVER FOUND, |supp|=2   (0.0s)
+    Q = Z(1, 0, 0) Z(2, 1, 0)

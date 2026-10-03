@@ -354,3 +354,15 @@ All runs went through `run.sh`: `nice -n 10`, all four thread caps at 1, a 55 s 
 ## 8. Plain-language summary
 
 Put together, tonight's best shape works for records. They sit still or swap with an empty neighbour, they never pile onto one spot, faraway choices cannot steer them, and empty space far from records stays exactly quiet. But this lane found a sharp limit on everything else. If empty space is the tidy, lined-up kind that the shape needs, a rule that treats every spot and every turn alike can only make slow, heavy ripples over it, never anything that moves like light. To get light-like matter, a fixed pattern of plus and minus signs must be painted onto the rule. That pattern either lets records tell neighbouring sub-grids apart, or makes the rule favour one direction of the possibilities. It also can never be the same pattern the gravity field needs, because the field's pattern keeps the grid's quarter turns and this one cannot (proved). A field that is never recorded also needs its own places where records never form. So the record side holds up, but light, matter and gravity each still need something put in by hand. The most useful next step is a quick exact search for an empty background whose own structure supplies that pattern.
+
+---
+
+## ERRATA from the fourth hostile review (A34/REVIEW.md), added by the coordinator
+
+- D2 (line ~62): add 'among nearest-neighbour pair terms; glued star terms (e.g. the chiral three-spin term) also keep it calm' (A34 C56).
+- Line ~254: 'a vacuum that is not a stationary product state (e.g. the entangled antiferromagnetic ground state, COMPARATOR)' (C57).
+- D11: '…for a −n record with no recorded neighbour before or after the step; joining or leaving a cluster changes ⟨H⟩ by 2J per contact (EXACT)' (C60).
+- K2(c): grade ARGUED, not 'EXACT (combination)' (C62).
+- Lines ~200 and ~356: 'face-diagonal half turns' instead of 'quarter turns' (C58).
+- Theorem S: 'two separate patterns' is not proved. Tying KS to the role layout as one choice (1 of 16) keeps T (12 of 24 turns) (C58).
+- D10 collides with A25's layout, where every place has a field job (C61).

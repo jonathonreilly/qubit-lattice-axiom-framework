@@ -1,0 +1,1 @@
+r2<=2 candidates 0..156: 157 screened; with any mobile single defect on L=4: 24; with a locally creatable single defect: 0   (0.4s)

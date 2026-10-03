@@ -1,0 +1,74 @@
+[site-centred, O, |d|^2<=6] invariant shapes dim 7 -> 127 nonzero; pure covariant TI states (exact sign, isotropic, primitive): 45   (23.6s)
+   |supp|=6 label-sum(z=1)=(0, 0) quiet-dim(star)=1 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+      u = X(-1, 0, 0) Y(0, -1, 0) Z(0, 0, -1) Z(0, 0, 1) Y(0, 1, 0) X(1, 0, 0)
+   |supp|=12 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=40, single creatable=no, mobile v=0; L=6: k=72, single creatable=no, mobile v=0; L=8: k=104, single creatable=no, mobile v=0
+      u = Z(-1, -1, 0) Y(-1, 0, -1) Y(-1, 0, 1) Z(-1, 1, 0) X(0, -1, -1) X(0, -1, 1) X(0, 1, -1) X(0, 1, 1) Z(1, -1, 0) Y(1, 0, -1) Y(1, 0, 1) Z(1, 1, 0)
+   |supp|=18 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=72, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=6 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=72, single creatable=no, mobile v=0; L=8: k=128, single creatable=no, mobile v=0
+      u = X(-2, 0, 0) Y(0, -2, 0) Z(0, 0, -2) Z(0, 0, 2) Y(0, 2, 0) X(2, 0, 0)
+   |supp|=12 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=72, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+      u = X(-2, 0, 0) X(-1, 0, 0) Y(0, -2, 0) Y(0, -1, 0) Z(0, 0, -2) Z(0, 0, -1) Z(0, 0, 1) Z(0, 0, 2) Y(0, 1, 0) Y(0, 2, 0) X(1, 0, 0) X(2, 0, 0)
+   |supp|=30 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=72, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=42 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=48, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=30 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=24, single creatable=no, mobile v=0; L=8: k=128, single creatable=no, mobile v=0
+   |supp|=48 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=48, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=36 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=120, single creatable=no, mobile v=0; L=8: k=104, single creatable=no, mobile v=0
+   |supp|=42 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=30 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=48, single creatable=no, mobile v=0; L=8: k=128, single creatable=no, mobile v=0
+   |supp|=36 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=96, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=24 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=120, single creatable=no, mobile v=0; L=8: k=200, single creatable=no, mobile v=0
+   |supp|=30 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=120, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=36 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=96, single creatable=no, mobile v=0; L=8: k=104, single creatable=no, mobile v=0
+   |supp|=42 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=48, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=30 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=96, single creatable=no, mobile v=0; L=8: k=128, single creatable=no, mobile v=0
+   |supp|=36 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=48, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=42 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=24, single creatable=no, mobile v=0; L=8: k=152, single creatable=no, mobile v=0
+   |supp|=48 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=120, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=36 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=120, single creatable=no, mobile v=0; L=8: k=104, single creatable=no, mobile v=0
+   |supp|=42 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=48, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=30 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=24, single creatable=no, mobile v=0; L=8: k=128, single creatable=no, mobile v=0
+   |supp|=36 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=96, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=48 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=144, single creatable=no, mobile v=0; L=8: k=224, single creatable=no, mobile v=0
+   |supp|=54 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=60 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=72, single creatable=no, mobile v=0; L=8: k=104, single creatable=no, mobile v=0
+   |supp|=66 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=96, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=54 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=48, single creatable=no, mobile v=0; L=8: k=128, single creatable=no, mobile v=0
+   |supp|=60 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=72, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=66 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=96, single creatable=no, mobile v=0; L=8: k=152, single creatable=no, mobile v=0
+   |supp|=72 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=96, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=60 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=96, single creatable=no, mobile v=0; L=8: k=104, single creatable=no, mobile v=0
+   |supp|=66 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=72, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=54 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=72, single creatable=no, mobile v=0; L=8: k=128, single creatable=no, mobile v=0
+   |supp|=60 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=48, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=48 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=72, single creatable=no, mobile v=0; L=8: k=200, single creatable=no, mobile v=0
+   |supp|=54 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=144, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=60 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=144, single creatable=no, mobile v=0; L=8: k=104, single creatable=no, mobile v=0
+   |supp|=66 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=54 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=48, single creatable=no, mobile v=0; L=8: k=128, single creatable=no, mobile v=0
+   |supp|=60 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=72, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=66 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=72, single creatable=no, mobile v=0; L=8: k=152, single creatable=no, mobile v=0
+   |supp|=72 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=6: k=96, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+[cube-centred, O, |y-c|^2<=6.75] invariant shapes dim 6 -> 63 nonzero; pure covariant TI states (exact sign, isotropic, primitive): 0   (26.5s)
+[site-centred, T only, |d|^2<=3] invariant shapes dim 4 -> 15 nonzero; pure covariant TI states (exact sign, isotropic, primitive): 15   (26.5s)
+   |supp|=6 label-sum(z=1)=(0, 0) quiet-dim(star)=1 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+      u = Z(-1, 0, 0) X(0, -1, 0) Y(0, 0, -1) Y(0, 0, 1) X(0, 1, 0) Z(1, 0, 0)
+   |supp|=6 label-sum(z=1)=(0, 0) quiet-dim(star)=1 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+      u = X(-1, 0, 0) Y(0, -1, 0) Z(0, 0, -1) Z(0, 0, 1) Y(0, 1, 0) X(1, 0, 0)
+   |supp|=6 label-sum(z=1)=(0, 0) quiet-dim(star)=1 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+      u = Y(-1, 0, 0) Z(0, -1, 0) X(0, 0, -1) X(0, 0, 1) Z(0, 1, 0) Y(1, 0, 0)
+   |supp|=12 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=40, single creatable=no, mobile v=0; L=6: k=72, single creatable=no, mobile v=0; L=8: k=104, single creatable=no, mobile v=0
+      u = Z(-1, -1, 0) Y(-1, 0, -1) Y(-1, 0, 1) Z(-1, 1, 0) X(0, -1, -1) X(0, -1, 1) X(0, 1, -1) X(0, 1, 1) Z(1, -1, 0) Y(1, 0, -1) Y(1, 0, 1) Z(1, 1, 0)
+   |supp|=18 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=18 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=72, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=18 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=12 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=40, single creatable=no, mobile v=0; L=6: k=72, single creatable=no, mobile v=0; L=8: k=104, single creatable=no, mobile v=0
+      u = X(-1, -1, 0) Z(-1, 0, -1) Z(-1, 0, 1) X(-1, 1, 0) Y(0, -1, -1) Y(0, -1, 1) Y(0, 1, -1) Y(0, 1, 1) X(1, -1, 0) Z(1, 0, -1) Z(1, 0, 1) X(1, 1, 0)
+   |supp|=18 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=18 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=18 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=72, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=12 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=40, single creatable=no, mobile v=0; L=6: k=72, single creatable=no, mobile v=0; L=8: k=104, single creatable=no, mobile v=0
+      u = Y(-1, -1, 0) X(-1, 0, -1) X(-1, 0, 1) Y(-1, 1, 0) Z(0, -1, -1) Z(0, -1, 1) Z(0, 1, -1) Z(0, 1, 1) Y(1, -1, 0) X(1, 0, -1) X(1, 0, 1) Y(1, 1, 0)
+   |supp|=18 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=72, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=18 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+   |supp|=18 label-sum(z=1)=(0, 0) quiet-dim(star)=0 :: L=4: k=16, single creatable=no, mobile v=0; L=6: k=24, single creatable=no, mobile v=0; L=8: k=32, single creatable=no, mobile v=0
+total 26.9s

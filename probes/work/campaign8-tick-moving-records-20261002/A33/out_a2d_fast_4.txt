@@ -1,0 +1,2 @@
+  valid (self-commuting + exact sign): {'V': 7, 'C': 7, 'E': 159, 'F': 159}
+r2<=4: commuting + exact-sign solutions: 77665 (translation-invariant: 7)   (2.0s)

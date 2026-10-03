@@ -1,0 +1,11 @@
+(1) covariance under the 24 glued turns, max ||U H U^dag - H||: {'T': '1.4e-13', 'P3': '3.4e-13', 'pair': '6.9e-14'}
+    norms: ||T|| = 19.60, ||P3|| = 48.00, ||T - proj onto pair span|| below
+(2) calm: max residual ||H psi - E psi|| over 20 random aligned states: {'T': '7.2e-16', 'P3': '6.8e-14'}
+(3) calm next to a record (compressed), max residual: {'T, record +n': '4.8e-16', 'P3, record +n': '5.2e-14', 'T, record -n': '6.0e-16', 'P3, record -n': '3.4e-14'}
+(4) T   : one-flip block off-diagonal norm 0.000; two-flip block norm 27.713; face-diagonal hop <+e1|H|+e2> = 0.000+0.000j
+(4) P3  : one-flip block off-diagonal norm 29.394; two-flip block norm 65.727; face-diagonal hop <+e1|H|+e2> = 2.000+0.000j
+(4) pair: one-flip block off-diagonal norm 6.928; two-flip block norm 15.492; face-diagonal hop <+e1|H|+e2> = 0.000+0.000j
+    T: distance from span(pair Heisenberg terms on the star, identity) = 1.000 (relative)
+    P3: distance from span(pair Heisenberg terms on the star, identity) = 0.000 (relative)
+lattice one-flip band (J=-1.0, lam=0.3): E(0)=0.000000; curvature (E(2h)-2E(h)+E(0))/h^2 = -15.2000; slope (E(h)-E(0))/h = -7.60e-03  -> quadratic, no cone
+(5) T: full one-flip block norm relative to the vacuum energy = 0.0e+00 (0 => single ripples untouched)

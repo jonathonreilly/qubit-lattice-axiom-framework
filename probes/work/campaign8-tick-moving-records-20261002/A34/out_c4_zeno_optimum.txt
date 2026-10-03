@@ -1,0 +1,5 @@
+c=0.5  : optimum J*tau = 0.2437 (A32 rule c/2 = 0.2500); max rate 0.7105 J; rate at J*tau = 0.05: 0.2797 J
+c=0.1  : optimum J*tau = 0.0372 (A32 rule c/2 = 0.0500); max rate 0.7072 J; rate at J*tau = 0.05: 0.6776 J
+c=0.05 : optimum J*tau = 0.0181 (A32 rule c/2 = 0.0250); max rate 0.7071 J; rate at J*tau = 0.05: 0.4533 J
+c=0.01 : optimum J*tau = 0.0036 (A32 rule c/2 = 0.0050); max rate 0.7071 J; rate at J*tau = 0.05: 0.1000 J
+continuous limit: best gamma = 2.828 J, max rate 0.7071 J -> tau* = c/gamma* = c/(2.83 J)

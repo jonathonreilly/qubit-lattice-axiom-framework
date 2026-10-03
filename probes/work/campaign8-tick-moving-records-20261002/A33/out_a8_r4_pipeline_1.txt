@@ -1,0 +1,1 @@
+stage 1: 77665 candidates; label-diverse at every role site: 6896 (TI among them 7); certified impure by a one-site logical: 70769   (3.6s)

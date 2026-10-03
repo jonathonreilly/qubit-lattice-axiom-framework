@@ -281,3 +281,12 @@ Every run used `nice -n 10`, the four thread caps set to 1, and a 55 s alarm.
 ## 7. Plain-language summary
 
 Suppose a record could form only at a spot that already has a recorded neighbour. Then empty space far from every record never forms one, whatever its possibilities are doing, and light crossing it is left completely alone, which fits light from distant galaxies arriving unrecorded. The rule cannot carry news from far away, because it looks only at the records next door, and those always agree with the spot they sit on. The price is that a world with no records would stay empty forever, so the world must start with some. The spots right next to records still need care: if empty space there is the half-filled kind, records creep into it and each new one heats its surroundings, so empty space there would have to be the tidy, lined-up kind. Whether everything fills up and stops depends on one more choice: if a spot fully surrounded by records may still form one, the grid fills and stops; if it may not, or if records form only where something is going on, records stop multiplying but keep moving forever.
+
+---
+
+## ERRATA from the fourth hostile review (A34/REVIEW.md), added by the coordinator
+
+- Lines ~25 and ~74: add 'on average over unread outcomes elsewhere; per outcome they change at once to agree with distant records (Q1)' (C74).
+- Line ~169: λ_min = 5e-6 is a conservative stand-in; A28's computed 3D value 5.3e-4 gives 3e-88. The heating chain is ARGUED, order of magnitude (C73).
+- The Q4 consequence is a reading (ARGUED), not a result (C75).
+- Edge floor: EXACT for the uniform sea; A34 checked the staggered (KS) sea full rank (ν ∈ [0.015, 0.985]) (C72).

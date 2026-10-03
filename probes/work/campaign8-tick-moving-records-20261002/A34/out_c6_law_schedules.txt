@@ -1,0 +1,1 @@
+u/tau (mod 1) allowed: [(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)), (Fraction(1, 2), Fraction(1, 2), Fraction(1, 2))]

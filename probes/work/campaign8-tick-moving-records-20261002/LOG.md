@@ -1531,3 +1531,63 @@ The agent's sandbox blocked writing REPORT.md; the coordinator saved it. C38 is 
 - The tick can be influenced by gravity's slowing, but what must follow it exactly is how often records form.
 - The tick never touches how light travels.
 - "Minimum distance implies minimum tick" comes out as an upper bound, τ < a/c. It is pinned to ≈ a/c only if every tick has a real chance of a record, which would cloud glass.
+
+## 03:52 (real) A34 FOURTH HOSTILE REVIEW LANDED → c8/A34/REVIEW.md (+ c1–c6 checks). CORRECTIONS C56–C87 (they supersede earlier wording; errata are appended to the A28/A30/A31/A32 reports)
+A34 had read the earlier reviews, so it is not independent of them. A33 had not landed and is not reviewed yet.
+
+**Verdicts**
+
+| Lane | Verdict |
+|---|---|
+| A31 | holds with narrowing |
+| A30 | holds with narrowing |
+| A28 | holds with narrowing |
+| A32 | holds with narrowing |
+| Draft | 1 BLOCKER, 11 MAJOR |
+
+**Key corrections**
+- **C56. "Calm forces Heisenberg" holds for PAIR terms only.**
+  - A chiral three-spin glued star term keeps every aligned state calm, also next to ±n records (A34 c1: covariance 1.4e-13, stationarity 7e-16). Any SU(2)-invariant star term does (Schur).
+  - Single ripples are still one band (the chiral term's one-ripple block is 0).
+- **C57. "Never like light" is for SINGLE ripples over a calm PRODUCT vacuum.**
+  - Groups of ripples are untested.
+  - The plain rule with J > 0 has an entangled stationary antiferromagnetic vacuum with linear ripples (COMPARATOR). It is excluded only because it is full rank at matter's edges (ARGUED).
+- **C58. Theorem S is right, but "two separate patterns" is not proved.** One tied choice (1 of 16) keeping T (12 of 24 turns) exists. The theorem is about face-diagonal half turns, not quarter turns.
+- **C59.** The hop-only KS is hidden from records only if record steps carry the signs.
+- **C60.** Blind swaps are NOT energy-neutral for −n contents in clusters: 2J per contact. A34 c3: −4J, −20J, −216J.
+- **C61.** D10 (field places never record) collides with A25's layout (every place has a field job), so it would forbid all records unless the field is one-qubit and leaves some places free (not built). Under D10 no region can be fully recorded.
+- **C65.** A30's speed-only law at Γ = 2t is general (both terminations and bands, ≤ 8e-16). But Γ = 2t is optimal only for massless waves: heavy waves are caught at 0.987 with Γ = 6, against 0.736 at Γ = 2t.
+- **C66 (BLOCKER).** "Gravity's clocks keep running inside" was linear order applied where gravity is strong: the centre lapse 1 − 3C/4 < 0 for C > 4/3. Now OPEN in the draft.
+- **C67.** Sealing jams and records moving forever need OPPOSITE step rules.
+- **C69.** R_h at nuclear density ≈ 25 km, not 6 km (A30 lane only).
+- **C72.** A34 checked the staggered sea full rank at walls: ν ∈ [0.015, 0.985], min eigenvalue 1.3–1.5e-5.
+- **C73–C76.**
+  - the heating chain is ARGUED;
+  - void evolution is "on average" (Q1 per outcome);
+  - Q4 is a reading;
+  - point-like records at one per nucleon pass the transparency test.
+- **C77.** Law-level ticks: one shared tick OR a two-sub-grid checkerboard half a tick apart (A34 c6). "Neighbourhood ticks need memory" holds construction by construction; record-set phases were not tried.
+- **C78.** "Far too small to see" needs small chances and gentle records.
+- **C79.** NO minimum tick follows, only a longest allowed one. A32's c = 0.1 optimum is 0.037; for small c, τ* ≈ c/(2√2 J). My 0.037 matches A34; the 0.050 was a grid-edge artifact.
+- **C80.** Einstein clock slowing (D21) assumes Dirac-like matter, which needs the painted pattern.
+- **C81–C84.** D2 scope; D20 needs symmetric weights; D24's example breeds; draft wording.
+- **C85.** The numbering collision is fixed: "the record-tick shape", "section N", "bottom-line item N".
+- **C86.** v9.
+- **C87.** The one-page summary draft undid C52, C33 and C35. It must be rebuilt from v9.
+
+**Draft v9.** 54 replacements plus the C85 renaming. v8 is saved as c8/MORNING_DRAFT_v8_pre_A34.md.
+
+**Coordinator spot-checks of A34**
+- R_h at ρ = 2.3e17 kg/m³ = √(3c²/(8πGρ)) = 26 km. CONFIRMED.
+- Centre lapse 1 − 3C/4 (U_centre = 3/2 U_surface = 3C/4). CONFIRMED.
+- Blind-swap energy ⟨H⟩ = J(#bonds − 2#(n,−n) contacts); separating two −n records gives −4J. CONFIRMED by counting.
+- The chiral three-spin term annihilates the fully symmetric (spin-3/2) aligned states, and n·(σ₂×σ₃)|nn⟩ = 0. CONFIRMED by hand.
+- Law-level phase u = (τ/2)(1,1,1): a checkerboard by the parity of x+y+z, which is invariant under site-centred rotations. CONFIRMED.
+
+**New owner questions** (added to the decision list):
+- seal vs move (decision 19);
+- pair terms only?;
+- a shared-possibility (entangled) background?;
+- record-free places (decision 21);
+- record-timed neighbourhood ticks;
+- what "minimum tick" means (smallest vs longest).

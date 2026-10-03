@@ -604,3 +604,90 @@ Two readings of a move, R1 and R3, behave very differently.
 **Coordinator note.**
 - Theorem A logic checked by hand: each bond appears in exactly one layer per period, so phase-mismatched ends never coincide.
 - The deterministic angle lapse also removes A13's random-pacing dephasing. A17 is examining this.
+
+## 23:20 (real) A12 (quiet vacuum vs light) LANDED → c8/A12/REPORT.md (+ c1–c7 scripts)
+
+**Single-tick results**
+- Exactly zero is IMPOSSIBLE for any finite reach or window in the half-filled sea, because its marginals are full rank (lattice Reeh–Schlieder, EXACT).
+- A9's R^-3 is INFRARED: it is the weight of states softer than 0.85/R. The best reach-R single-tick mode falls exponentially, ~e^{-4.6R} (CHECKED).
+
+**Multi-tick windows: exponentially small IS possible**
+- Instrument: time-ordered and energy-absorbing over T ticks (a one-site plus one-slot memory "register", comparable to Unruh–DeWitt/Glauber).
+- Ceiling: ε ∝ e^{-2κT}, κ = arccosh(1/sin(α/2)). EXACT via Chebyshev/Bernstein–Walsh. Massless 1D: 2κ = 1.7627/tick, measured 1.7617.
+- Soft excitations obey time–energy uncertainty, ε ≈ e^{-cET} with c ≈ 1–2. Power laws come only from abrupt windows.
+- Budget: 5–40 cycles of the softest recorded excitation give ε ≤ 1e-61 to 1e-123.
+
+**The catch: memory**
+- A strict-cone window needs a PER-SITE MEMORY, which the axioms do not supply (an import).
+- A memoryless reach-T weight is influenced from outside the past cone (CHECKED ΔP ≤ 1.07e-3).
+- Without memory there is no filtering gain.
+
+**Consequences**
+- "Tick = formation rate" cannot mean the vacuum's own rate.
+- The z=1 photon survives A9's z≥2 obstruction (the window is not frustration-free), at the price of a tiny nonzero rate plus memory.
+- Distant light arrives coherent (VLBI/CMB), so free excitations far from matter must essentially never be recorded. That favours formation gated by existing recorded neighbours ("only when the neighbourhood calls for it").
+
+**Budget note:** one run reached 312 MB for 1.1 s; rerun at 183 MB.
+
+**Coordinator check (EXACT arithmetic)**
+- m=0: 2·arccosh(√2) = 1.7627.
+- m=0.3: 2·arccosh(1/sin((π/2−0.3)/2)) = 2.2244.
+- Both match the report.
+
+## 23:45 (real) A16 HOSTILE REVIEW LANDED → c8/A16/REVIEW.md. CORRECTIONS (these supersede earlier LOG wording)
+
+**C1. A3, "smooth change leaks" is OVERBROAD.**
+- What fails is a time-independent, homogeneous, star-local generator run for a whole tick: Campaign 7 sentence 2 as written. Uniform d=1 hopping fails for every τ > 0.
+- A smooth generator on ONE partner set per tick stays range-1. A10's exp(−iθ SWAP) layers are an example.
+- So Q2's "continuously evolving" is NOT forced to be re-read.
+- "Lone records can't move" holds only for per-tick covariant, homogeneous, number-conserving ticks. Compass-type (non-conserving) covariant gates are not covered.
+
+**C2. A7: "under every rule" is for one hand-built instance.**
+- Correct statement: "there are linked states for which every rule signals".
+- Option A IS the axiom-literal reading (a record "locks" = cut). Present it that way.
+- Option B needs explicit text: any formation whose odds or menu depend on a guided record's place must cut that record. Without it, Q7 plus guided records re-open signalling.
+
+**C3. A1/A2 scope: SINGLE-PARTICLE, translation-invariant steps.**
+- "Two independent proofs" is wrong: both rest on the same algebraic K-theory (stable and unstable forms). Only A2 D5 is self-contained.
+- Faint reach can tip the balance only for movers with ≥2 internal states.
+- Narrowing the Campaign-7 flag must say "single-particle".
+
+**C4. A9.**
+- "Must be tr(Fρ)" holds IF no-signalling, in the supplied sharing model. H2 steering needs Campaign 7 sentences 1, 3 and 4, which are NOT adopted.
+- **The coordinator's Q7 "correction" FAILS as worded.** Under linear instruments the support of the odds varies with unrecorded neighbours, as Admissibility + Q1 require. What signals is setting the menu's FRAME (which possibilities can be locked) as a NONLINEAR function of unrecorded possibilities.
+- Correct reading: "Recorded neighbours may set which possibilities are on offer; unrecorded possibilities shape the odds over them only as a fixed weighted average."
+- Record-set frames are safe only for records cut to agree with their site.
+
+**C5. A4/A6/A8.**
+- Bounded formation time needs a translation-invariant start.
+- The move clock is stored in NO record: readable accumulated time ≤ |R|.
+- "Detailed balance ⇒ flat" is shown only for neighbourhood-blind hops.
+- β = ½ is a dilute mean-field result.
+- Missing from the draft: γ = 0, and the establishment limit (~5e-5 m at Planck steps).
+
+**C6. A5.**
+- Out-of-step ticks ARE readable: mismatched seams are mirror walls (A15).
+- The tie fraction p/(2−p) needs constant p.
+- Relativity is secured only in the 1D toy. In 3D:
+  - strictly covariant spin-½ walks have zero speed (A1 D18);
+  - isotropic cones need KS signs, which privilege a basis, or C3 words, which split linearly (GRB-disfavoured).
+
+**C7. A10/A13 "schedule-covariant" reading: FAILS** (A16 checks rerun by coordinator, reproduced).
+- Single record: T_x = forward restart 1 and T_y = restart 3 (2.8e-17). But T_xT_y, (1,1,0), T_xT_yT_z and site-centred C2z match only the REVERSED round (forward residual 0.15). The relabellings do not form a group action.
+- Two records:
+  - quarter turns need reversed restarts plus a (1,1,1) shift (best TV 0.028 forward, 0 reversed+shift);
+  - odd translations are not realized forward or reversed (worst best-TV 0.04–0.39 forward, 0.07–0.46 reversed).
+  - So sublattices become READABLE, which conflicts with Lattice "No site is privileged", unless the round counts as supplied lattice structure.
+- A13's model also has:
+  - a fixed lock axis, which privileges a possibility;
+  - all records locking the same content.
+  - "The round fixes only aligned states" is overclaimed: the aligned family follows from quietness, not from the round.
+
+**C8. A13 pacing fork.** M² scaling assumes the whole object shares one random pace per arm. Independent constituents give Σm_i², i.e. longer coherence. The fork is not binary: A15's angle lapse avoids it. Event pacing means no change at all where there are no records.
+
+**C9. Jam evaporation (coordinator's own data).**
+- Side 4 lost 0.27/tick (64 records, half-life 120); side 8 lost 0.24/tick (512 records, half-life 1087).
+- So loss rates are about equal: lifetime ∝ N, not "big ones lose faster".
+- The draft's "opposite to Hawking" framing must change to: "8× bigger lasted ~9× longer; nothing like a lifetime ∝ mass³".
+
+**C10. All "must"s about formation and instruments rest on the unadopted Campaign 7 sentences 1, 3 and 4 (and no-signalling).** Read every such "must" as "if those hold".

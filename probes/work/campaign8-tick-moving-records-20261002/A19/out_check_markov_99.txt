@@ -1,0 +1,8 @@
+m=0.6 K0=0.3 g=0.03: 5143 segments; displacement z: mean +0.0207 +- 0.0139, var 1.004;  flip z: mean -0.0117 +- 0.0139, var 0.990;  mean gap 31.25 (censored window; 1/g = 33.3)
+m=0.6 K0=0.3 g=0.1: 17501 segments; displacement z: mean +0.0077 +- 0.0076, var 1.004;  flip z: mean -0.0012 +- 0.0076, var 1.002;  mean gap 9.97 (censored window; 1/g = 10.0)
+m=1.4 K0=0.8 g=0.03: 5143 segments; displacement z: mean +0.0165 +- 0.0139, var 1.037;  flip z: mean +0.0164 +- 0.0139, var 1.005;  mean gap 31.25 (censored window; 1/g = 33.3)
+m=0.15 K0=0.1 g=0.05: 8657 segments; displacement z: mean -0.0040 +- 0.0107, var 1.012;  flip z: mean -0.0066 +- 0.0107, var 0.979;  mean gap 19.38 (censored window; 1/g = 20.0)
+first-registration tick: mean 5.337 +- 0.274 (geometric 1/g = 5.000); P(first = 1) = 0.187 (g = 0.2)
+massless m=0 cut={'kind': 'gauss', 'sig': 0.0}: track slopes mean 1.000000, sd 1.36e-15; max change of (Y - t) along a track: 0.00e+00 cells
+massless m=0 cut={'kind': 'block', 's': 2}: track slopes mean 1.000000, sd 1.46e-15; max change of (Y - t) along a track: 0.00e+00 cells
+massless m=0 cut={'kind': 'gauss', 'sig': 8.0}: track slopes mean 0.999424, sd 4.76e-03; max change of (Y - t) along a track: 2.00e+01 cells

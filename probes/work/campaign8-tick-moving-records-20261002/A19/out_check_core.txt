@@ -1,0 +1,24 @@
+(1) fast step vs explicit pair gates: max |diff| = 4.4e-16
+(2) Bloch matrix vs step on plane waves: 2.2e-14
+(3) eigenphases of -U are +-W with cos W = cos m cos K: 2.2e-16;  plus_band is the -e^(-iW) eigenvector: 2.2e-16
+(4) m=0.6 K0=0.3: packet velocity 0.39593 vs v(K0) = 0.39655  (diff -6.2e-04)
+(4) m=0.3 K0=0.1: packet velocity 0.30465 vs v(K0) = 0.30714  (diff -2.5e-03)
+(4) m=1.0 K0=0.8: packet velocity 0.41820 vs v(K0) = 0.41836  (diff -1.6e-04)
+(4) m=0.6 K0=-0.3: packet velocity -0.39593 vs v(K0) = -0.39655  (diff 6.2e-04)
+(5) m=0.3: one tick from site 2j: P(site 2j+2) = 0.912668 (cos^2 m = 0.912668), P(site 2j+1) = 0.087332 (sin^2 m = 0.087332)
+(5) m=1.0: one tick from site 2j: P(site 2j+2) = 0.291927 (cos^2 m = 0.291927), P(site 2j+1) = 0.708073 (sin^2 m = 0.708073)
+(6,7) m=0.15 n=1: p_RR = 0.977668 (formula 0.977668); mean disp/n = 0.98883; E[x^2]/n^2 = 0.98325
+(6,7) m=0.15 n=2: p_RR = 0.956334 (formula 0.956334); mean disp/n = 0.96675; E[x^2]/n^2 = 0.96948
+(6,7) m=0.15 n=5: p_RR = 0.906926 (formula 0.906926); mean disp/n = 0.90716; E[x^2]/n^2 = 0.92901
+(6,7) m=0.15 n=50: p_RR = 0.909836 (formula 0.909836); mean disp/n = 0.85145; E[x^2]/n^2 = 0.85149
+(6,7) m=0.15 n=1500: p_RR = 0.925183 (formula 0.925183); mean disp/n = 0.85057; E[x^2]/n^2 = 0.85056   [limits 1-sin m = 0.85056, p_RR(inf) = 1 - sin(m)/2 = 0.92528]
+(6,7) m=0.6 n=1: p_RR = 0.681179 (formula 0.681179); mean disp/n = 0.84059; E[x^2]/n^2 = 0.76088
+(6,7) m=0.6 n=2: p_RR = 0.565652 (formula 0.565652); mean disp/n = 0.57259; E[x^2]/n^2 = 0.59974
+(6,7) m=0.6 n=5: p_RR = 0.811015 (formula 0.811015); mean disp/n = 0.46380; E[x^2]/n^2 = 0.44135
+(6,7) m=0.6 n=50: p_RR = 0.702330 (formula 0.702330); mean disp/n = 0.43749; E[x^2]/n^2 = 0.43552
+(6,7) m=0.6 n=1500: p_RR = 0.712892 (formula 0.712892); mean disp/n = 0.43545; E[x^2]/n^2 = 0.43536   [limits 1-sin m = 0.43536, p_RR(inf) = 1 - sin(m)/2 = 0.71768]
+(6,7) m=1.2 n=1: p_RR = 0.131303 (formula 0.131303); mean disp/n = 0.56565; E[x^2]/n^2 = 0.34848
+(6,7) m=1.2 n=2: p_RR = 0.771875 (formula 0.771875); mean disp/n = 0.07427; E[x^2]/n^2 = 0.08853
+(6,7) m=1.2 n=5: p_RR = 0.729492 (formula 0.729492); mean disp/n = 0.09634; E[x^2]/n^2 = 0.07090
+(6,7) m=1.2 n=50: p_RR = 0.544497 (formula 0.544497); mean disp/n = 0.07301; E[x^2]/n^2 = 0.06802
+(6,7) m=1.2 n=1500: p_RR = 0.544116 (formula 0.544116); mean disp/n = 0.06811; E[x^2]/n^2 = 0.06796   [limits 1-sin m = 0.06796, p_RR(inf) = 1 - sin(m)/2 = 0.53398]

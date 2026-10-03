@@ -7,7 +7,10 @@ Status: exploratory probe on a supplied toy model. This is backlog material. It 
 > - Evidence: A9 Theorem 2(d), and the coordinator's independent check `campaign8-tick-moving-records-20261002/toys/verify_menu_signalling.py`. In that check the total-variation distance is 1.0 for an x–b singlet and 1.0 at most over 400 random states. The recorded-neighbour (`field`) rule stays at 3.6e-16.
 > - Treat the `own` columns as an illustration of a non-physical rule only.
 > - The `fixed` and `field` results stand.
-> - Q7 should be read as: the menu is set by the records around the site.
+> - **Revised after the campaign-8 hostile review (A16, 2026-10-02 23:45): Q7 stands.**
+>   - Under straight-average rules, unrecorded neighbours may shape the odds, and with them the menu's support.
+>   - What signals is taking the menu's frame (which possibilities can be locked) as a nonlinear function of unrecorded possibilities.
+>   - Proposed clarification (not approved): "Recorded neighbours may set which possibilities are on offer; unrecorded possibilities shape the odds over them only as a fixed weighted average."
 
 ## The question
 

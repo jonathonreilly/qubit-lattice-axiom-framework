@@ -1,0 +1,4 @@
+seed 11: 10085 segments, z mean -0.0155 +- 0.0100, var 1.020
+seed 12: 10178 segments, z mean -0.0054 +- 0.0099, var 1.003
+seed 13: 10239 segments, z mean +0.0124 +- 0.0099, var 0.991
+pooled: 30502 segments, z mean -0.0028 +- 0.0057

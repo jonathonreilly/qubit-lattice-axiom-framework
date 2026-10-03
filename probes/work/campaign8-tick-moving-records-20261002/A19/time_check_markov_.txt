@@ -1,0 +1,26 @@
+/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/c8/A19/core1d.py:69: RuntimeWarning: invalid value encountered in divide
+  nx, nz = -sm / sW, cm * np.sin(K) / sW
+/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/c8/A19/core1d.py:87: RuntimeWarning: invalid value encountered in divide
+  return a / nrm, b / nrm
+/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/c8/A19/core1d.py:197: RuntimeWarning: invalid value encountered in divide
+  a[i] /= nrm
+/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/c8/A19/core1d.py:198: RuntimeWarning: invalid value encountered in divide
+  b[i] /= nrm
+        9.75 real         9.51 user         0.07 sys
+           102055936  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                9630  page reclaims
+                 198  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 124  voluntary context switches
+                7314  involuntary context switches
+        134154536691  instructions retired
+         35267639507  cycles elapsed
+            98435552  peak memory footprint

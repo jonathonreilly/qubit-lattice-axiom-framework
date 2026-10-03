@@ -1,0 +1,18 @@
+        9.15 real         9.04 user         0.06 sys
+           106594304  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8997  page reclaims
+                  97  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 140  voluntary context switches
+                2974  involuntary context switches
+        133828896728  instructions retired
+         34772498889  cycles elapsed
+            95175136  peak memory footprint

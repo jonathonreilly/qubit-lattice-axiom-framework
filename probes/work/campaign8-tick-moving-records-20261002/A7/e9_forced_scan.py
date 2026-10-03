@@ -11,6 +11,8 @@ Usage: python3 e9_forced_scan.py <ntrials> <seed> <moves: tick|lattice> [real]
 import sys
 import time
 import numpy as np
+import os
+METHOD = os.environ.get('LPMETHOD', 'highs-ipm')
 from mtlp import (Model, history_lp, haar_unitary, rand_state, block_unitary,
                   ring_adj, tick_support_adj)
 
@@ -51,14 +53,15 @@ for tr in range(ntr):
         movB = [tick_support_adj(UB[k][0]) for k in range(T)]
     m = Model(psi0, UA, UB, movA, movB)
     lp, idx = history_lp(m, ns=True, caus=True)
-    r = lp.solve(soft={'NSA': 1.0, 'BORN': 1e4})
+    r = lp.solve(soft={'NSA': 1.0, 'BORN': 1e4}, method=METHOD)
     if r.status == 0:
         vals.append(r.slack_by_tag['NSA'])
         bslack.append(r.slack_by_tag['BORN'])
     else:
         vals.append(np.nan)
 vals = np.array(vals)
-pos = vals[vals > 1e-7]
-print(f"moves={moves} real={real} seed={seed}: forced signalling in {len(pos)}/{ntr} instances; "
+pos = vals[vals > 1e-4]
+print('   sorted NS-A min violations (top 12):', np.round(np.sort(vals[~np.isnan(vals)])[::-1][:12], 5).tolist(), '; count in (1e-7,1e-4]:', int(((vals > 1e-7) & (vals <= 1e-4)).sum()))
+print(f"[{METHOD}] moves={moves} real={real} seed={seed}: forced signalling in {len(pos)}/{ntr} instances; "
       f"max min-violation {np.nanmax(vals):.4e}; median of positives {np.median(pos) if len(pos) else 0:.3e}; "
       f"solver failures {np.isnan(vals).sum()}; max Born slack {max(bslack):.1e}  ({time.time()-t0:.1f}s)")

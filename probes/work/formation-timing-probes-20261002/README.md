@@ -2,6 +2,13 @@
 
 Status: exploratory probe on a supplied toy model. This is backlog material. It is not a landed claim, and it makes no physical reading.
 
+> **Correction (2026-10-02 23:15, campaign 8).** The `own` menu rule used in B2 and D is a signalling rule. In it, the menu axis is the axis of the site's own reduced state, which is a nonlinear function of shared, steerable possibilities. A distant record's menu choice then changes the local record statistics.
+>
+> - Evidence: A9 Theorem 2(d), and the coordinator's independent check `campaign8-tick-moving-records-20261002/toys/verify_menu_signalling.py`. In that check the total-variation distance is 1.0 for an x–b singlet and 1.0 at most over 400 random states. The recorded-neighbour (`field`) rule stays at 3.6e-16.
+> - Treat the `own` columns as an illustration of a non-physical rule only.
+> - The `fixed` and `field` results stand.
+> - Q7 should be read as: the menu is set by the records around the site.
+
 ## The question
 
 The owner asked, during the one-clause walk-through, whether records across the universe form on one shared tick or whether each site forms its record at its own random time. Time would still be the accumulation of records either way. A second part asked whether the answer is about the local neighbourhood or the whole universe.

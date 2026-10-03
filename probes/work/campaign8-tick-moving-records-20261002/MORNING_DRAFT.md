@@ -1,69 +1,79 @@
-# Overnight campaign: what your tick and moving-record ideas do (DRAFT v2)
+# Overnight campaign: what your tick and moving-record ideas do (DRAFT v3)
 
-Everything below explores your instincts. None of it is recorded as your position. Results are toy-level: small supplied models plus derivations, each graded in its lane report as EXACT, CHECKED or ARGUED. Files are on ai/probes under `probes/work/campaign8-tick-moving-records-20261002/`.
+Everything below explores your instincts; none of it is recorded as your position. The results are toy-level: small supplied models plus derivations, graded in each lane report as exact, checked, or argued. The files are on ai/probes under `probes/work/campaign8-tick-moving-records-20261002/`.
 
 ## Headlines
 
-1. **Your two instincts are tied together.**
-   - Suppose records move one site per tick and their positions always match the odds of the shared possibilities. Then the change between records must itself come in strict, local steps. Smooth change leaks too far within one tick. (A3, exact)
-2. **Steps give an exact speed limit, and relativity emerges at low speeds.**
-   - Moving clocks slow by the Einstein amount, with tiny grid-scale corrections.
-   - A global tick and neighbourhood ticks are indistinguishable in the records, except through exact ties and seams. (A5, exact plus checked)
-3. **Gravity-like clock slowing appears, but only under conditions.**
-   - Moving records give each place a steady clock.
-   - Clumps that keep swallowing wanderers slow nearby clocks, falling off as 1/distance. A perfectly swallowing clump stops time inside, and its pull grows with its radius, which is black-hole-like. (A6)
-   - A clump that has merely settled shows no long-range effect. Ordinary crowding clumps always leak, and big ones lose records faster, which is the opposite of Hawking. So the black-hole likeness needs real swallowing, not just crowding. (A4)
-4. **Empty space should not form records on its own.**
-   - If it does, even rarely, every region freezes solid, and any gravity-like effect gets screened. (A4 and A6, exact)
-   - Records should form only where something is going on. (A9 is testing "where the energy is".)
-5. **A standing drift ("all push right") is ruled out by the grid's own rotation symmetry.**
-   - Turning the grid half around reverses any drift, so a symmetric rule can't have one. (A1, exact)
-   - What survives is give-and-take: swaps along lines, and small loops around squares.
+### 1. Your two instincts are tied together
+- Suppose records move one site per tick and their positions always match the odds of the shared possibilities.
+- Then the change between records must also come in strict, local steps. Smooth change leaks too far in a tick. (A3, exact)
+
+### 2. A moving record is a classical thing, a fresh fact at each step
+- Suppose a moving record's position can be read at every tick.
+- Then each step must be a fresh formation that resets the shared possibilities. Otherwise a faraway choice leaks into the record's path, which is faster-than-light signalling. In a two-tick example, no rule at all avoids this. (A7, exact)
+- So readable moving records behave like classical particles: they wander and don't interfere.
+- Things that do interfere, like electrons in a double slit, have to be the unrecorded possibilities moving, registered only now and then.
+
+### 3. Steps give an exact speed limit, and relativity emerges at low speeds (A5)
+- Moving clocks slow by the Einstein amount, with tiny grid-scale corrections.
+- The records can't tell a single universe-wide tick from neighbourhood ticks. The only traces are exact ties and seams.
+
+### 4. Gravity-like clock slowing appears, but only under conditions (A6, A8, A4)
+- Moving records give each place a steady clock.
+- Clumps that keep swallowing wanderers slow nearby clocks, falling off as 1/distance.
+- **For all clocks to slow alike**, everything, including the change between records, has to be paced by local record events. In that sense your beat would be local and set by what's around it.
+- **Mismatches with real gravity:**
+  - the next-order correction comes out at half of general relativity's;
+  - there are no gravitational waves;
+  - gravity's weakness has to be put in by hand (a 10⁻¹⁸ factor);
+  - packed matter only "counts" at its skin.
+
+### 5. Empty space must not make records on its own (A4, A6, A9)
+- If empty space forms records at any steady rate, every region freezes, and gravity-like effects get screened.
+- Exact quiet needs special kinds of emptiness, lined-up or paired-off. The repo's current vacuum, the half-filled sea, isn't quiet: any local rule makes records in it at a small steady rate. A12 is testing whether an "energy-absorbing" rule spanning many ticks can bring that rate down far enough.
+
+### 6. A standing one-way drift is ruled out in open space (A1)
+- The grid's rotation symmetry forbids it.
+- Strict one-site steps also can't tip the left/right handedness balance, which is the chirality problem. (A1, A2: exact, by two independent proofs)
+- A11 is testing whether one-way flows can live on the edges of recorded regions instead.
+
+## One correction to your menu decision (important)
+- The menu can be set by the records around a site: recorded neighbours. That's safe. (A9 + my check: zero signalling)
+- If the menu depended on the site's own unrecorded, shared possibilities, a faraway choice would show up locally.
+  - My check found complete, maximal signalling (TV = 1).
+  - The "own-state" menu rule in yesterday's timing probes is that kind of rule, so its columns are illustrative only.
+- So "set by the conditions" should mean "set by the records around it".
 
 ## Your ideas, one at a time
 
 ### 1. Records form on set ticks
-- **Global vs neighbourhood tick.** The records can't tell them apart. The only traces are linked neighbours forming on the very same tick, and seams where tick rates differ. (A5 T3.1, exact)
-- **How visible the beat is.** Linked neighbours tie a fraction p/(2−p) of the time, where p is the chance per tick. Under condition-set menus, tied pairs don't share a frame. A tiny p makes the beat invisible. (A5, exact)
-- **What it costs.**
-  - Energy is defined only up to whole turns per tick.
-  - A "time-doubler" partner appears.
-  - Internal clocks must work like mass for time dilation to be universal.
-  - Any rule for the chance of forming must be linear in the possibilities, or it signals faster than light. (A5)
+- The records can't tell a global tick from neighbourhood ticks; the only traces are exact ties and seams. (A5)
+- Linked neighbours tie a fraction p/(2−p) of the time, where p is the chance per tick. A tiny p makes the beat invisible.
+- For gravity-like time dilation, the beat that clocks feel has to be local and paced by events. (A8)
 
 ### 2. Records move one site per tick
-- **It gives a steady clock.** Forming alone can't: each place fills about once, so time counted only by new records is bounded in every region. (A4 and A6, exact)
-- **The consistent move rule** follows the net push of odds across each link. On a line it is pinned down uniquely. (A3, exact)
-- **Puzzle 1: a lone record can't move.**
-  - With exactly one qubit's worth of possibilities per site and a rule symmetric under the grid's turns, a single record never moves. (A3, A1, exact)
-  - Motion needs more structure: two movers per site, or a pattern of pairings that alternates through the tick. (A10 is testing the alternating version, which is close to the framework's staggered fermions.)
-- **Puzzle 2: the trail.**
-  - If a moving record's position is readable at every tick, the natural rules let a distant choice show up in its trail, i.e. faster-than-light signalling. (A3; A7 is checking for any way out.)
+- **It gives a steady clock.** New records alone can't, because each place fills only about once. (A4/A6, exact)
+- **Lone records can't move.** With one qubit per site and a turn-symmetric rule, a single record never moves; it needs extra structure. (A3/A1, exact) A10 is testing alternating pairings, close to the framework's staggered fermions.
+- **Readable at every tick means re-formation at every step.** That makes moving records classical. (A7)
 
 ### 3. Possibilities flow
-- **A net drift** must be the same across every cut and can't start or stop. Neighbourhood schedules can't make it, and the grid's rotation symmetry forbids it. (A1, exact)
-- **Handedness, the chirality question.**
-  - Steps that reach strictly one site per tick can never tip the balance between left- and right-handed movers. (A1, exact given a known theorem)
-  - A rotation-symmetric step with a faint reach beyond its neighbours can: it carries net handedness 2. (A1)
-  - So chirality from ticked steps needs one of: faint reach, many-body structure, or boundaries.
+- Net drift is the same across every cut. It can't start or stop. The rotation symmetry forbids it in open space. (A1)
+- **Chirality:** strict one-site steps keep left and right handedness balanced. Faint longer reach can tip the balance. (A1/A2, exact)
 
 ### 4. A full region as a black hole
-- **Crowding clumps** (moves tilted toward crowds): none is sealed. Edges leak, and holes inside keep time slowly ticking. Big clumps lose records faster than small ones, which is opposite to black-hole evaporation. (A4)
-- **Perfectly swallowing clumps:** time stops inside, pull grows with radius (black-hole-like), and nearby clocks slow as 1/r. (A6)
+- **Crowding clumps** always leak, and big ones lose records faster, which is the opposite of Hawking. (A4)
+- **Swallowing clumps** stop time inside, their pull grows with their radius, and nearby clocks slow as 1/r. (A6/A8)
 
-### 5. Infinite grid; can empty space form records?
-- **If it can:** everything freezes.
-- **If it can't:** records spread as fronts from where they already are, and events go on forever but thin out. (A4)
-- **For gravity-like clocks:** empty space must stay quiet. (A6)
+### 5. The infinite grid, and does empty space form records?
+- **If it does:** everything freezes.
+- **If it doesn't:** activity spreads from existing records and events thin out forever. (A4)
+- **The chance of forming must be linear and local,** a straight average of a local weighting. Records then form only where something is going on. (A9, exact)
 
 ## Decisions this raises (yours)
-
-1. **Do both formation and change step on the tick?** Moving records force the change to step. (A3)
-2. **Strict one-site reach, or faint reach?**
-   - Strict keeps record positions consistent. (A3)
-   - Faint allows net handedness from simple steps. (A1)
-   - It's a real fork.
-3. **Is a moving record's position readable every tick, or only when something registers it?** (A3, A7)
-4. **Does empty space form records on its own?** The results say no.
-5. **Is time counted by new records only (bounded per region), or by all record events including moves?**
-6. **Does "permanent" mean "never destroyed, may relocate"?** That would change the Record axiom's wording, so it needs your exact text and approval.
+1. **Strict steps.** Do the change and record formation both step on the tick? Moving records force the change to step. (A3)
+2. **Reach.** Strict one-site reach (record positions stay consistent) or faint reach (handedness can tip)? (A3 vs A1/A2)
+3. **Readability.** Is a moving record's position readable at every tick (classical wanderers) or only when registered (interference survives)? (A7)
+4. **Empty space.** Does it form records? The results say no, which then calls the repo's half-filled-sea vacuum into question. (A9, A12)
+5. **Time.** Is it counted by new records only, which is bounded per region, or by all record events including moves?
+6. **Permanence.** Does "permanent" mean "never destroyed, may re-form at a neighbour"? That's a Record-axiom wording change, so it needs your exact text.
+7. **Menu.** Confirm the reading "the menu is set by the records around it".

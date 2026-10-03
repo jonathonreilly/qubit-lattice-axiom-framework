@@ -1,0 +1,14 @@
+trials = 3000; distant conditions = no record / menu Z / menu X / random menu
+non-vacuity: mean trace distance between Z-branch and X-branch states of (x,y) = 0.527
+rule           max change  mean change
+L-chance        7.772e-16    1.715e-16
+L-joint         4.441e-16    1.203e-16
+L-2tick         7.772e-16    1.780e-16
+N-square        9.201e-02    6.317e-03
+N-impurity      4.042e-01    1.174e-01
+N-product       8.220e-02    8.899e-03
+N-2tick         4.205e-02    4.714e-03
+N-menu          4.687e-01    1.245e-01
+Bell example, no record at b : product rule P(form,lock 0/1) = [0.25 0.25]; instrument rule = [0.  0.5]
+Bell example, menu Z at b    : product rule P(form,lock 0/1) = [0.  0.5]; instrument rule = [0.  0.5]
+Bell example, menu X at b    : product rule P(form,lock 0/1) = [0.25 0.25]; instrument rule = [0.  0.5]

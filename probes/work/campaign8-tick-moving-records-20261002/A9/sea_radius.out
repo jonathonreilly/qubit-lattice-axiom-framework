@@ -1,0 +1,10 @@
+sanity: ||P+P+ r - P+ r|| / ||P+ r|| = 3.5e-16; tr-weight of P+ at a site = 0.5000
+R= 0: sites in ball      1; vacuum rate eps(R) = 5.000e-01
+R= 1: sites in ball      7; vacuum rate eps(R) = 1.279e-02
+R= 2: sites in ball     33; vacuum rate eps(R) = 1.279e-02  local slope d ln eps / d ln R = +0.00
+R= 3: sites in ball    123; vacuum rate eps(R) = 2.420e-03  local slope d ln eps / d ln R = -4.11
+R= 4: sites in ball    257; vacuum rate eps(R) = 1.372e-03  local slope d ln eps / d ln R = -1.97
+R= 6: sites in ball    925; vacuum rate eps(R) = 3.750e-04  local slope d ln eps / d ln R = -3.20
+R= 8: sites in ball   2109; vacuum rate eps(R) = 1.738e-04  local slope d ln eps / d ln R = -2.67
+R=12: sites in ball   7153; vacuum rate eps(R) = 4.920e-05  local slope d ln eps / d ln R = -3.11
+R=16: sites in ball  17077; vacuum rate eps(R) = 2.054e-05  local slope d ln eps / d ln R = -3.04

@@ -1,0 +1,145 @@
+===== e1_conveyor_bond.py =====
+--- T = 1 tick(s); A settings {1, H} each tick; B = conveyor ---
+  sigma=((0, 0),): Born_T support [(0, 1, np.float64(0.25)), (0, 2, np.float64(0.25)), (1, 1, np.float64(0.25)), (1, 2, np.float64(0.25))]
+  sigma=((1, 0),): Born_T support [(0, 1, np.float64(0.5)), (1, 2, np.float64(0.5))]
+  C (+causality) alone      : True
+  C + NS (multi-tick, both) : True
+  C + Markov-L at tick 0    : False (HiGHS status 2: The problem is infeasible. (HiGHS Status)
+--- T = 2 tick(s); A settings {1, H} each tick; B = conveyor ---
+  sigma=((0, 0), (0, 0)): Born_T support [(0, 2, np.float64(0.25)), (0, 3, np.float64(0.25)), (1, 2, np.float64(0.25)), (1, 3, np.float64(0.25))]
+  sigma=((0, 0), (1, 0)): Born_T support [(0, 2, np.float64(0.5)), (1, 3, np.float64(0.5))]
+  sigma=((1, 0), (0, 0)): Born_T support [(0, 2, np.float64(0.5)), (1, 3, np.float64(0.5))]
+  sigma=((1, 0), (1, 0)): Born_T support [(0, 2, np.float64(0.25)), (0, 3, np.float64(0.25)), (1, 2, np.float64(0.25)), (1, 3, np.float64(0.25))]
+  C (+causality) alone      : True
+  C + NS (multi-tick, both) : True
+  C + Markov-L at tick 0    : False (HiGHS status 2: The problem is infeasible. (HiGHS Status)
+  C + Markov-L at tick 1    : False (HiGHS status 2: The problem is infeasible. (HiGHS Status)
+ 0.50 real 0.28 user 0.07 sys
+ 79495168 maximum resident set size
+===== e2_bond_bond.py =====
+(a) CHSH of record positions after one tick = 2.828427124746  (2*sqrt2 = 2.828427124746)
+T=1: (b) C + Markov-L per tick: [True];  (d) C + NS (history LP, 32 vars): True
+T=2: (b) C + Markov-L per tick: [True, True];  (d) C + NS (history LP, 384 vars): True
+T=3: (b) C + Markov-L per tick: [True, True, True];  (d) C + NS (history LP, 6144 vars): True
+(c) correlated forgetful re-draw: max deviation from C / Markov-L = 3.3e-16
+(e) setting pair (0, 0): max P(B stays) under C + Markov-L = 0.792893   [forgetful value 0.5]
+(e) setting pair (0, 1): max P(B stays) under C + Markov-L = 0.792893   [forgetful value 0.5]
+(e) setting pair (1, 0): max P(B stays) under C + Markov-L = 0.792893   [forgetful value 0.5]
+(e) setting pair (1, 1): max P(B stays) under C + Markov-L = 0.792893   [forgetful value 0.5]
+(e') max of sum over 4 setting pairs of [P(A stays)+P(B stays)] = 5.171573  (forgetful: 4.0, full memory: 8.0)
+ 0.82 real 0.78 user 0.04 sys
+ 119750656 maximum resident set size
+===== e15_triangle.py =====
+theta=0.125pi: P(a1!=b1)=0.146447 (sin^2 th=0.146447); P(a3!=idx b3)=0.146447 (sin^2(phi-th)=0.146447); triangle interval for P(a1!=a3): [0.000000, 0.292893]
+theta=0.375pi: P(a1!=b1)=0.853553 (sin^2 th=0.853553); P(a3!=idx b3)=0.146447 (sin^2(phi-th)=0.146447); triangle interval for P(a1!=a3): [0.707107, 1.000000]
+forced gap = 0.414214  (sqrt2-1 = 0.414214)
+[lattice moves] min over all C+I2 rules of sum_h |mu_A^th1(h) - mu_A^th0(h)| = 0.828427 (2(sqrt2-1) = 0.828427); Born slack 0.0e+00
+     dual certificate: b.y = 0.828427, max(A^T y) = 0.0e+00, max |y|/w on soft rows = 1.000000
+[flow moves] min over all C+I2 rules of sum_h |mu_A^th1(h) - mu_A^th0(h)| = 0.828427 (2(sqrt2-1) = 0.828427); Born slack 0.0e+00
+     dual certificate: b.y = 0.828427, max(A^T y) = 0.0e+00, max |y|/w on soft rows = 1.000000
+ 0.29 real 0.26 user 0.04 sys
+ 79691776 maximum resident set size
+===== e17_triangle_2tick.py =====
+B splits its branches at tick 1       : min sum|mu_A diff| = 0.828427  -> min TV = 0.414214  (sqrt2-1 = 0.414214); vars 48
+B idle at tick 1 (no registration)    : min sum|mu_A diff| = 0.000000  -> min TV = 0.000000  (sqrt2-1 = 0.414214); vars 64
+ 0.29 real 0.26 user 0.04 sys
+ 79396864 maximum resident set size
+===== e18_triangle_line.py =====
+A splits its branches at tick 1   : min sum|mu_B diff| = 0.828427 (TV 0.414214; sqrt2-1 = 0.414214); certificate b.y = 0.828427, max A^T y = 1.8e-15; Markov-L feasible per tick: [True, False]
+     theta=0.125pi: P(b1 != a1) = 0.146447;  P(b2 != branch(a2)) = 0.146447
+     theta=0.375pi: P(b1 != a1) = 0.853553;  P(b2 != branch(a2)) = 0.146447
+control: A idle at tick 1         : min sum|mu_B diff| = 0.000000 (TV 0.000000; sqrt2-1 = 0.414214); certificate b.y = 0.000000, max A^T y = 0.0e+00; Markov-L feasible per tick: [True, True]
+     theta=0.125pi: P(b1 != a1) = 0.146447;  P(b2 != branch(a2)) = 0.146447
+     theta=0.375pi: P(b1 != a1) = 0.853553;  P(b2 != branch(a2)) = 0.146447
+ 0.29 real 0.26 user 0.03 sys
+ 79577088 maximum resident set size
+===== e16_partial_cut.py =====
+lam=0.000: worst triangle gap over settings = +0.4140
+lam=0.100: worst triangle gap over settings = +0.3454
+lam=0.200: worst triangle gap over settings = +0.2805
+lam=0.250: worst triangle gap over settings = +0.2499
+lam=0.290: worst triangle gap over settings = +0.2263
+lam=0.300: worst triangle gap over settings = +0.2206
+lam=0.400: worst triangle gap over settings = +0.1661
+lam=0.500: worst triangle gap over settings = +0.1180
+lam=0.586: worst triangle gap over settings = +0.0823
+lam=0.700: worst triangle gap over settings = +0.0440
+lam=1.000: worst triangle gap over settings = +0.0000
+threshold lam* (triangle family, grid 1 deg) ~ 0.9997;  1 - 1/sqrt2 = 0.2929
+ 0.12 real 0.11 user 0.00 sys
+ 27197440 maximum resident set size
+===== e12_certificate.py =====
+single B choice at tick 0: min NS-A violation (simplex) = 0.280255; Born slack -9.8e-08
+certificate: b.y = 0.280255; max(A^T y) = 0.00e+00; max|y|/w (soft rows) = 1.000000
+TV between A's 4-time history laws for B's two choices (optimal rule): 0.140620
+A-histories with the largest law differences (a0,a1,a2,a3): r=0 vs r=1
+   (1, 0, 0, 0): 0.1468  0.0765
+   (1, 0, 0, 1): 0.0392  0.1096
+   (1, 1, 1, 0): 0.0415  0.0789
+   (1, 1, 1, 1): 0.0409  0.0035
+   (1, 0, 1, 1): 0.0329  0.0000
+   (1, 0, 1, 0): 0.0310  0.0639
+   (1, 1, 1, 2): 0.0000  0.0000
+   (1, 1, 2, 2): 0.0127  0.0127
+sigma ((0, 0), (0, 0), (0, 0)) time 0: A-marginal [0.5144 0.4856 0.     0.     0.     0.    ]
+sigma ((0, 0), (0, 0), (0, 0)) time 1: A-marginal [0.5538 0.4462 0.     0.     0.     0.    ]
+sigma ((0, 0), (0, 0), (0, 0)) time 2: A-marginal [0.5495 0.1959 0.2503 0.     0.     0.0043]
+sigma ((0, 0), (0, 0), (0, 0)) time 3: A-marginal [0.4358 0.3095 0.029  0.2213 0.0043 0.    ]
+sigma ((0, 1), (0, 0), (0, 0)) time 0: A-marginal [0.5144 0.4856 0.     0.     0.     0.    ]
+sigma ((0, 1), (0, 0), (0, 0)) time 1: A-marginal [0.5538 0.4462 0.     0.     0.     0.    ]
+sigma ((0, 1), (0, 0), (0, 0)) time 2: A-marginal [0.5495 0.1959 0.2503 0.     0.     0.0043]
+sigma ((0, 1), (0, 0), (0, 0)) time 3: A-marginal [0.4358 0.3095 0.029  0.2213 0.0043 0.    ]
+ 0.33 real 0.29 user 0.04 sys
+ 87588864 maximum resident set size
+===== e3_plaquettes.py 2 tick 5 1 01 01 =====
+T=2 moves=tick settings A@[0, 1] B@[0, 1]: 5 random linked instances, history LP vars ~4096, 1.0s
+  C alone feasible        : 5/5
+  C + NS feasible         : 5/5
+  C + Markov-L (all ticks): 0/5;  infeasible at tick k: [5, 5]
+ 1.27 real 1.24 user 0.05 sys
+ 107544576 maximum resident set size
+===== e3_plaquettes.py 2 lattice 12 3 01 01 =====
+T=2 moves=lattice settings A@[0, 1] B@[0, 1]: 12 random linked instances, history LP vars ~20736, 19.6s
+  C alone feasible        : 12/12
+  C + NS feasible         : 12/12
+  C + Markov-L (all ticks): 0/12;  infeasible at tick k: [6, 11]
+ 19.90 real 19.69 user 0.16 sys
+ 194953216 maximum resident set size
+===== e9_forced_scan.py 400 8 tick =====
+   sorted NS-A min violations (top 12): [0.15638, 0.11851, 0.11176, 0.02626, 0.01394, 0.01391, 0.01322, 0.01023, 0.0, 0.0, 0.0, 0.0] ; count in (1e-7,1e-4]: 0
+[highs-ds] moves=tick real=False seed=8: forced signalling in 8/400 instances; max min-violation 1.5638e-01; median of positives 2.010e-02; solver failures 0; max Born slack 0.0e+00  (28.9s)
+ 29.23 real 28.64 user 0.21 sys
+ 94158848 maximum resident set size
+===== e9_forced_scan.py 400 9 tick real =====
+   sorted NS-A min violations (top 12): [0.54398, 0.46301, 0.42503, 0.4248, 0.33828, 0.3078, 0.27122, 0.25778, 0.25038, 0.23057, 0.23056, 0.22832] ; count in (1e-7,1e-4]: 2
+[highs-ds] moves=tick real=True seed=9: forced signalling in 106/400 instances; max min-violation 5.4398e-01; median of positives 6.200e-02; solver failures 0; max Born slack 0.0e+00  (21.2s)
+ 21.55 real 21.27 user 0.16 sys
+ 97271808 maximum resident set size
+===== e9_forced_scan.py 20 9 lattice real =====
+   sorted NS-A min violations (top 12): [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] ; count in (1e-7,1e-4]: 0
+[highs-ipm] moves=lattice real=True seed=9: forced signalling in 0/20 instances; max min-violation 1.3088e-15; median of positives 0.000e+00; solver failures 0; max Born slack 6.1e-15  (31.7s)
+ 32.11 real 31.64 user 0.27 sys
+ 226525184 maximum resident set size
+===== e10_rings.py 6 2 3 01 60 2 lattice =====
+   sorted NS-A min violations (top 12): [0.39118, 0.10768, 0.04615, 0.01868, 0.0002, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] ; count in (1e-7,1e-4]: 4
+[highs-ds] ring n=6 w=2 T=3 B@[0, 1] moves=lattice complex=False seed=2: forced signalling in 5/60; max 3.9118e-01; failures 0; max Born slack 1.9e-15; vars<= 5184 (3.5s)
+ 3.84 real 3.71 user 0.07 sys
+ 99057664 maximum resident set size
+===== e10_rings.py 6 2 3 01 60 2 tick =====
+   sorted NS-A min violations (top 12): [0.46683, 0.10769, 0.04886, 0.03337, 0.00287, 0.00138, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] ; count in (1e-7,1e-4]: 2
+[highs-ds] ring n=6 w=2 T=3 B@[0, 1] moves=tick complex=False seed=2: forced signalling in 6/60; max 4.6683e-01; failures 0; max Born slack 0.0e+00; vars<= 1024 (0.6s)
+ 0.94 real 0.91 user 0.04 sys
+ 86507520 maximum resident set size
+===== e10_rings.py 6 2 3 12 60 3 lattice =====
+   sorted NS-A min violations (top 12): [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0] ; count in (1e-7,1e-4]: 0
+[highs-ds] ring n=6 w=2 T=3 B@[1, 2] moves=lattice complex=False seed=3: forced signalling in 0/60; max 9.2186e-08; failures 0; max Born slack 3.1e-16; vars<= 5184 (4.9s)
+ 5.22 real 5.10 user 0.07 sys
+ 103415808 maximum resident set size
+===== e19_laneM_setting.py =====
+lane-M geometry, 50 instances: linked: C+Markov-L feasible 0/50, C+NS feasible 50/50; unlinked control: C+Markov-L feasible 50/50
+===== e20_general_phi.py =====
+phi=0.0833pi: LP min TV = 0.224745;  sin+cos-1 = 0.224745
+phi=0.1667pi: LP min TV = 0.366025;  sin+cos-1 = 0.366025
+phi=0.2500pi: LP min TV = 0.414214;  sin+cos-1 = 0.414214
+phi=0.3333pi: LP min TV = 0.366025;  sin+cos-1 = 0.366025
+phi=0.4167pi: LP min TV = 0.224745;  sin+cos-1 = 0.224745

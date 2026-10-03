@@ -309,3 +309,109 @@ Two readings of a move, R1 and R3, behave very differently.
 **Budget note:** run5d_gn.py peaked at 510 MB for about 8 s, over the 300 MB cap. No harm resulted; logged honestly.
 
 **Coordinator cross-check:** A1 and A2 reach the same theorem by different routes (Suslin SL=E, and K-theory SK1 = 0 with PW additivity). The coordinator's random strictly-local walks gave W3 = 0 and the quasi-local covariant walks gave W3 = ±1, ±2. The three are consistent.
+
+## 22:45 A8 (additive, universal clock source) LANDED → c8/A8/REPORT.md (+ a8_* scripts)
+
+**(i) Additivity: conditional yes.**
+- **The identity (EXACT):** Q = q·Σ_i N_i. This is a lapse-weighted charge, comparable to the Tolman/Komar mass ∫(ρ+3p)N without the pressure term.
+- **Bounds:** qN/(1+qḡ) ≤ Q ≤ min(qN, Cap).
+- **One-parameter collapse:** t = qN/(4πR), the "compactness" (EXACT for the continuum ball; CHECKED on the lattice).
+  - t ≪ 1: additive.
+  - t ≫ 1: capacity ∝ R, the surface clock → 0 and the interior is frozen. This is black-hole-like, with crossover R_c = √(3/(qn)).
+- **Q1 exclusion:** a packed lump captures only at its skin (area law for weak q, capacity for strong q). So additivity needs matter that is sparse at the lattice scale (CHECKED: packed-cube area law 0.3315 vs 0.3333).
+- **The shared-possibility flow is not a second carrier (EXACT):**
+  - B0: a fixed two-site change that keeps every locked content must be non-interacting. Keeping locks therefore means compression: the recorded site acts as a one-site field (the "push" model of the timing probes).
+  - So recorded sites are walls, and a jammed region holds no flow.
+  - A coherent flow gives a 1/r² shadow (Le Sage-like, ARGUED).
+
+**(ii) Universality: conditional yes.**
+- Every event must be gated by one wanderer arrival. Presence-gating gives the WRONG sign.
+- The change between records must itself be event-paced, i.e. a local, influenced tick. A globally paced change leaves atomic-type clocks unslowed.
+- β is locked at 1/2 under universality (EXACT, mean field). β = 1 needs a hop law that kills arrival gating, so universality and β = 1 are incompatible in this class.
+
+**(iii) Emergent sink: conditional yes (CHECKED).**
+- Rule: a wanderer stops on content agreement with STOPPED neighbours. Gauss then emerges: J_MC/J_pred = 0.97–1.01, deficit/Poisson = 1.02.
+- Runaway DLA-like accretion follows.
+- It needs a "stopped" status visible in the conditions. With content alone (R-all), clumps dissolve and there is no field.
+
+**(iv) Weakness: not natural.** It needs q ≈ 10⁻¹⁸ on a Planck lattice, while the odds are O(1) (Q4 gives ½).
+
+**Falsifiers**
+- binding counted twice (Nordtvedt-type);
+- composition dependence O(n);
+- β = ½ and γ = 0;
+- no waves;
+- establishment time ~50 μm;
+- runaway accretion.
+
+**Owner-relevant synthesis**
+- Gravity-like dilation that is universal needs the tick to be LOCAL and INFLUENCED: everything paced by local record events.
+- A5 already showed that a global vs neighbourhood tick can't be told apart by the record network. A8 adds that if the beat is to behave like gravity, the experienced beat must vary by neighbourhood.
+
+## 23:00 A9 (formation where the energy is) LANDED → c8/A9/REPORT.md (+ scripts)
+
+**Theorem 1 (EXACT).** No-signalling, locality and steering (via Q1 sharing) force the per-tick formation chance to be tr(F_x ρ), with 0 ≤ F_x ≤ 1 on the star for each recorded-neighbour pattern. Dependence on the classical record contents is unrestricted.
+
+**Theorem 2 (EXACT).** The formation step must be a local instrument. Specifically:
+- **(b)** Lock odds must be computed AFTER the formation update; the product rule signals (0.08). This is a flag for Campaign-7 sentence 3, "odds from the site's own part", which must be read post-update.
+- **(c)** A no-record tick must also update the possibilities (√(1−F) is the minimal choice); otherwise two-tick histories signal (0.04).
+- **(d)** Menus may depend freely on RECORDS (Q7). A menu set by unrecorded or shared possibilities signals, by up to 0.47.
+
+**Quiet vacuum**
+- **Criterion (EXACT):** a vacuum is quiet iff its star marginals are rank-deficient, iff it is a frustration-free zero-energy ground state of ΣF_x.
+- **Q4 plus quiet ⇒ neighbours must share.**
+- **Covariant quiet vacua exist:**
+  - ferromagnetic (aligned) states;
+  - Klein singlet coverings (7-body star projector);
+  - the cluster state (finite internal covariance only).
+- **The half-filled staggered sea, the repo's vacuum ruling, is NOT quiet.** No local linear rule leaves it quiet (EXACT for the massless sea).
+  - The best rank-1 vacuum rate is 5e-6 per tick; the energy-based rate is 0.012.
+  - A quasi-local weight's vacuum rate falls as R^-3.
+  - On Planck ticks, staying unfrozen needs ε ≲ 1e-61, a cosmological-constant-like fine-tuning (dimensional only).
+
+**F = the change's own energy (a named conditional, not forced)**
+- It forces a frustration-free change, whose gapless excitations have z ≥ 2 (comparator).
+- That conflicts with photons (z = 1). Cross-link: the repo's photon velocity → 0 at the RK point.
+
+**Other consequences**
+- Records form where things happen. Covariance makes records relational.
+- Soft "dark" modes escape recording: exactly |⟨u|ψ0⟩|².
+- Lone-hole odds p0:
+  - Klein: ≥ 1/7!, so it freezes.
+  - Ferro: zero iff all six recorded neighbours agree.
+  - Variant B (records not in F): thinning, but 19–55% of excitations end up caged.
+- Source tracking energy density: majority carriers act as a transparent absorber with source ∝ e (closer to T00). Minority carriers act as exporters, giving the wrong sign.
+
+**Coordinator verification (CHECKED; toys/verify_menu_signalling.py, independent)**
+- Setup: x, its neighbour y, and distant b; b's menu is Z or X.
+- "Own-state" menu (axis of x's own Bloch vector): TV of x's record content between b=Z and b=X is 1.0000 for the x–b singlet, and the maximum over 400 random states is 1.0000. That is MAXIMAL signalling.
+- "Recorded-neighbour" menu (axis from y's record): max TV 3.6e-16. No signalling.
+
+**CONSEQUENCES**
+- **(1)** Owner's Q7 ("menu set by the conditions, incl. recorded neighbours") must be read as set by RECORDS, or by one joint linear instrument. Otherwise it signals.
+- **(2)** The "own" menu rule in the 2026-10-02 timing probes (ai/probes bebecfb8fa, B2/D 'own' columns) is a signalling rule, so those columns are illustrative only. The 'field' (recorded-neighbour) results stand.
+- A correction note will be added to that README.
+
+## 23:10 A7 (readable trails and signalling) LANDED → c8/A7/REPORT.md (+ e1–e20, mtlp.py)
+
+- **Lemma 1 (EXACT).** If each record's move odds use only local data (L_odds), multi-tick no-signalling follows automatically. The obstruction is therefore not locality.
+- **Step 2 (EXACT).** Moves that are independent given the past (Bell local causality) fail consistency. CHSH reaches 2√2.
+- **Step 3 (EXACT).** If no position is ever registered, a correlated "forgetful re-draw" satisfies all four conditions (C, L, NS, I).
+- **Step 5 (EXACT).** The one-site limit itself registers positions: a record's later position remembers its earlier one.
+- **Step 6, main result (EXACT).** Readable positions every tick plus uncut linked possibilities force signalling under EVERY rule. Wigner/triangle argument, minimal instance: B's own two-tick history moves with A's distant choice by TV ≥ √2 − 1 = 0.414. The LP attains this, with a dual certificate.
+- **Step 8.**
+  - A full cut of the reading record (R1) restores everything (EXACT).
+  - Cutting the partner does not help.
+  - Partial cuts fail for every λ < 1, with gap ≈ (1−λ)²/2 (CHECKED).
+- **Step 9.**
+  - Under R1, interference across ticks is lost and records diffuse.
+  - The conveyor drift survives, because the index is a property of the tick.
+- **Owner fork (Step 10).**
+  - (A) Readable every tick ⇒ each step is a re-formation with the cut. Records behave like classical wanderers.
+  - (B) Readable only when a new formation registers the position. Between registrations the possibilities move (R3) and interference survives.
+  - The middle option (readable every tick, uncut) is inconsistent with no-signalling.
+- **Real-physics read.** Interfering objects (electrons, molecules) cannot be readable moving records. They must be unrecorded possibilities (B). Readable macroscopic tracks behave like (A).
+- **Budget note.** e3 (3 ticks, 64 setting sequences) peaked at 461 MB once, over the cap; it was replaced by smaller runs.
+- **Coordinator check (EXACT by hand).**
+  - P(b1≠a1) = sin²θ and P(b2≠α) = sin²(θ−φ).
+  - At φ = π/4, θ ∈ {π/8, 3π/8}, P(b1≠b2) lies in [0, 0.293] vs [0.707, 1]. Gap ≥ 0.414 = √2 − 1.

@@ -8,6 +8,8 @@ Usage: python3 e10_rings.py <n> <w> <T> <Bticks> <ntrials> <seed> <moves> [compl
 import sys
 import time
 import numpy as np
+import os
+METHOD = os.environ.get('LPMETHOD', 'highs-ipm')
 from mtlp import (Model, history_lp, haar_unitary, block_unitary, ring_adj, tick_support_adj)
 
 n = int(sys.argv[1]); w = int(sys.argv[2]); T = int(sys.argv[3])
@@ -51,13 +53,14 @@ for tr in range(ntr):
     m = Model(psi0, UA, UB, movA, movB)
     lp, idx = history_lp(m, ns=True, caus=True)
     nv = max(nv, lp.nv)
-    r = lp.solve(soft={'NSA': 1.0, 'BORN': 1e4})
+    r = lp.solve(soft={'NSA': 1.0, 'BORN': 1e4}, method=METHOD)
     if r.status == 0:
         vals.append(r.slack_by_tag['NSA'])
         bslack.append(r.slack_by_tag['BORN'])
     else:
         vals.append(np.nan)
 vals = np.array(vals)
-pos = vals[vals > 1e-7]
-print(f"ring n={n} w={w} T={T} B@{Bt} moves={moves} complex={cplx} seed={seed}: forced signalling in "
+pos = vals[vals > 1e-4]
+print('   sorted NS-A min violations (top 12):', np.round(np.sort(vals[~np.isnan(vals)])[::-1][:12], 5).tolist(), '; count in (1e-7,1e-4]:', int(((vals > 1e-7) & (vals <= 1e-4)).sum()))
+print(f"[{METHOD}] ring n={n} w={w} T={T} B@{Bt} moves={moves} complex={cplx} seed={seed}: forced signalling in "
       f"{len(pos)}/{ntr}; max {np.nanmax(vals):.4e}; failures {np.isnan(vals).sum()}; max Born slack {max(bslack):.1e}; vars<= {nv} ({time.time()-t0:.1f}s)")

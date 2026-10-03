@@ -1,0 +1,20 @@
+/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/c8/A25/check_colloc.py:79: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  W = sp.kron(sp.diags([1, 1, 1, 2, 2, 2]), W1, format='csr') * r
+        1.68 real         1.51 user         0.06 sys
+           200065024  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14844  page reclaims
+                 766  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 495  voluntary context switches
+                 852  involuntary context switches
+         25711184787  instructions retired
+          6152594171  cycles elapsed
+           184746536  peak memory footprint

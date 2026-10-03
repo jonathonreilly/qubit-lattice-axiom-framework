@@ -1094,3 +1094,42 @@ Two readings of a move, R1 and R3, behave very differently.
 **Coordinator verification (CHECKED, independent 1D 3-qubit implementation of SW).**
 - Completeness error ≤ 1.6e-15 (blind and content weights).
 - Covariance under a global SU(2) rotating all possibilities together with the content: ≤ 1.0e-15. This is the unglued property.
+
+## 02:00 (real) A24 (energy-gentle record locks) LANDED → c8/A24/REPORT.md (+ lock_energy_1d, mediated_ct, floquet_energy, capture_*, ticked_capture)
+
+**What a lock costs (EXACT).** ΔE = −Σ_{k≠l} Re⟨ψ_k|H|ψ_l⟩.
+- A lock injects exactly the shared interference energy its rival possibilities carry through the terms at the recording site.
+- Locality: only terms touching x change.
+
+**Settled possibilities (EXACT).**
+- Locks that commute with H as operators are STERILE: they register nothing the change carried.
+- "Settled" means the rivals no longer overlap through any local term at x. Such a record leaves every local energy and momentum density unchanged on average: ZERO ghost source.
+- A slow, lone, freely spreading excitation is never settled.
+- No linear F can fire only on settled possibilities (V5). The rule must use support (caught configurations) plus slowness.
+
+**Mediated sharp records MOVE the cost onto the probe (EXACT).**
+- The cost is exactly the probe's depth below its band centre.
+- Softer probes cost more: 1.96 of 2.
+
+**"CATCH FIRST, RECORD LATER" (EXACT construction; CHECKED).**
+- The probe is caught at a trap site, and its spare energy is emitted as an excitation. The trap's one-site record is then settled.
+- A single lock costs ~0, up to tails (ticked toy: 2.6e-8 to 6.9e-8).
+- Constant-chance formation costs ≈ κħΓ_f per record, with κ = ½cot k_e (CHECKED 0.4%; ticked toy κ ≈ 0.4–0.5).
+- The mover feels only A19's coarse recoil cut (shift −0.619 vs −0.60).
+
+**Floors for unsettled records**
+- Cramér–Rao: ħ²/(8mσ²) per axis.
+- ~ħc/σ below the Compton length.
+- At one-site sharpness, the depth ≈ (π/2)ħ/τ, which is Planck-scale.
+
+**Heating bounds (Earth's heat flow)**
+
+| Record type | Allowed rate |
+|---|---|
+| Unsettled sharp | ≤ 4e-48 per nucleon per s (≈ A19's 1e-90 per Planck tick) |
+| Direct at 1 Å, nucleon | ≤ 5e-17 per s |
+| Settled | negligible |
+
+**Owner decision.** Does a record form only on a caught, settled possibility, slowly compared with the tick? Neither Record nor the formation weight implies this.
+
+**Comparators.** Real detection is catch-and-amplify (Glauber); the result is the record-level analogue of Wigner–Araki–Yanase / Ozawa.

@@ -172,7 +172,12 @@
   - A stepping rule gives two wave polarisations at light speed, with no time-doubled twin, full light bending, and all matter falling alike.
 - **Conditions:**
   - Its stepping rule places different field components at different site roles. That is a supplied pattern, i.e. one of point 3's ways out (A25 is checking whether it can be made fully symmetric).
-  - Forming a record must not change energy, or a phantom weight remains where the record formed (A24 is checking whether that is possible).
+  - Forming a record must not change energy, or a phantom weight remains where the record formed. A24 found this is possible, but only one way: catch first, record later.
+    - A small thing is caught at one spot, and its spare energy flies off.
+    - The record then forms at the catching spot. It costs nothing once the spare energy has left.
+    - Recording anything still freely spreading jolts it by about half its whole energy range, which is enormous on the finest grid.
+    - So records must form only on caught, settled things, and slowly. This matches how real detectors work (absorb, then amplify).
+    - It is a decision for you; the axioms don't imply it.
   - How one qubit per site hosts the field is open.
   - The Mercury term needs second order.
 - **The repo** has unaudited notes in this direction. Extending your approved "kinetic isotropy" primitive to such a field would supply Einstein's weights. That would be your call.
@@ -233,5 +238,6 @@ My overnight note was too strong; the reviewers caught it.
 11. **Direct records.** May a lone moving thing form records straight from its own neighbourhood? If so, it loses all inertia (A19).
 12. **How unrecorded things move.** Light and matter waves need a reversible change that moves something (point 3). Which gives: longer reach, a supplied pattern, more room per site, or sameness only on average?
 13. **A gravity field.** May the shared possibilities carry a never-locked "shape" field that the fixed rule passes along? May the gluing to the grid tilt from place to place as part of that field? Must a forming record leave energy unchanged (A23)?
+14. **When records form.** Only on caught, settled things, slowly compared with the tick (A24)? This is needed for energy bookkeeping under the gravity field, and for straight tracks (A19).
 
-*Still running: A24 (energy-gentle records), A25 (symmetric stepping rule for the shape field), A26 (matter coupled to the shape field).*
+*Still running: A25 (symmetric stepping rule for the shape field), A26 (matter coupled to the shape field).*

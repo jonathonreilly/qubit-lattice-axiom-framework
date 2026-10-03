@@ -36,23 +36,28 @@ def om_upper(K, Uu, c):
     kw = dict(mu=c.get('mu', 0.0), delta=c.get('delta', 0.0), mode=c.get('mode', 'os'), N=1 - Uu)
     if c['rule'] == 'field':
         kw.update(fx=1 - Uu, fy=1 - Uu)
+    if ALT:
+        Um = bloch_batch(np.array([K]), th0, order='alt2', **kw)[0]
+        return 0.5 * np.sort(-np.angle(np.linalg.eigvals(Um)))[2:].mean()
     Um = bloch_batch(np.array([K]), th0, **kw)[0]
     return np.sort(-np.angle(np.linalg.eigvals(Um)))[2:].mean()
 
 
 flat = os.environ.get("A26_FLAT", "0") == "1"
 TASTE = {"": None, "+": 1, "-": -1}[os.environ.get("A26_TASTE", "")]
+ALT = os.environ.get("A26_ALT", "0") == "1"
 for name in which:
     c = cases[name]
     t0 = time.time()
     Uf = 0 * U if flat else U
     W = Walk2D(Lx, Ly, th0, N=1 - Uf, hxx=2 * Uf, hyy=2 * Uf, mu=c.get('mu', 0.0), delta=c.get('delta', 0.0),
                mode=c.get('mode', 'os'), rule=c['rule'])
+    W.alt = ALT
     psi = packet(Lx, Ly, (Lx // 4, y0), (c['q0'], 0.0), sig, th0, mu=c.get('mu', 0.0), delta=c.get('delta', 0.0),
-                 mode=c.get('mode', 'os'), stripe=True, taste=TASTE)
+                 mode=c.get('mode', 'os'), stripe=True, taste=TASTE, order='alt2' if ALT else 'xy')
     ts, ys = [], []
     for t in range(T + 1):
-        if t % 10 == 0:
+        if t % 10 == 0:          # even times only (alternating order has period 2)
             ts.append(t); ys.append(centroid(psi)[1] / 2.0)
         psi = W.step(psi)
     a_meas = 2 * np.polyfit(np.array(ts, float), np.array(ys), 2)[0]
@@ -64,5 +69,5 @@ for name in which:
     a_sc = -domdU * g * d2
     if flat:
         print("%-13s FLAT reference a_y = %.4e (%.1f s)" % (name, a_meas, time.time() - t0)); continue
-    print(("T3=%s " % os.environ.get("A26_TASTE", "mix")) + "%-13s a_y = %.4e ; semiclassical %.4e (ratio %.4f) ; a_y/(c^2 g) = %.4f ; carrier speed %.3f c ; %.1f s"
+    print(("alt=%d T3=%s " % (ALT, os.environ.get("A26_TASTE", "mix"))) + "%-13s a_y = %.4e ; semiclassical %.4e (ratio %.4f) ; a_y/(c^2 g) = %.4f ; carrier speed %.3f c ; %.1f s"
           % (name, a_meas, a_sc, a_meas / a_sc, a_meas / c2g, vx / np.sin(th0), time.time() - t0))

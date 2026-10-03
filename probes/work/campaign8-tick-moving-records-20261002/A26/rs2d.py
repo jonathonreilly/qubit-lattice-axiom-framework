@@ -88,19 +88,31 @@ class Walk2D:
         p, q = gate(psi[:, 0::2], psi[:, 1::2], s); psi[:, 0::2], psi[:, 1::2] = p, q
         return psi
 
-    def step(self, psi):
-        psi = psi * self.mh
+    alt = False          # if True, alternate block order xy, yx, xy, ... (removes the 2nd-order BCH term)
+    _n = 0
+
+    def xblock(self, psi):
         if self.beta:
             psi = self.R(psi, -1.0)            # R^dag first (rightmost in R Ux R^dag)
         psi = self.lx(psi, self.tx_e, self.tx_o)
         if self.beta:
             psi = self.R(psi, +1.0)
-        psi = self.ly(psi, self.ty_e, self.ty_o)
+        return psi
+
+    def step(self, psi):
+        psi = psi * self.mh
+        if self.alt and self._n % 2 == 1:
+            psi = self.ly(psi, self.ty_e, self.ty_o)
+            psi = self.xblock(psi)
+        else:
+            psi = self.xblock(psi)
+            psi = self.ly(psi, self.ty_e, self.ty_o)
+        self._n += 1
         return psi * self.mh
 
 
 # ---------------- Bloch (flat medium) for packet preparation: must match Walk2D with uniform fields
-def bloch_batch(K, th0, mu=0.0, delta=0.0, beta=0.0, imx=0.0, imy=0.0, fx=1.0, fy=1.0, N=1.0, mode='os'):
+def bloch_batch(K, th0, mu=0.0, delta=0.0, beta=0.0, imx=0.0, imy=0.0, fx=1.0, fy=1.0, N=1.0, mode='os', order='xy'):
     """K: (n,2) cell momenta; returns (n,4,4) cycle matrices. internal index 2i+j for site (2cx+i, 2cy+j)."""
     n = K.shape[0]
     def layer(bonds):
@@ -131,6 +143,10 @@ def bloch_batch(K, th0, mu=0.0, delta=0.0, beta=0.0, imx=0.0, imy=0.0, fx=1.0, f
         Ux = Rm @ Ux @ np.conj(np.transpose(Rm, (0, 2, 1)))
     epsd = np.array([(-1.0) ** (i + j) for i in (0, 1) for j in (0, 1)])
     Mh = np.diag(np.exp(-0.5j * mu * N * epsd))
+    if order == 'yx':
+        return Mh @ Ux @ Uy @ Mh
+    if order == 'alt2':                       # two cycles: xy first, then yx
+        return (Mh @ Ux @ Uy @ Mh) @ (Mh @ Uy @ Ux @ Mh)
     return Mh @ Uy @ Ux @ Mh
 
 
@@ -174,7 +190,7 @@ def packet(Lx, Ly, c0, K0, sig, th0, chi=None, upper=True, cut=1e-10, stripe=Fal
     Ks = np.column_stack([kx[sel], ky[sel]])
     U = bloch_batch(Ks, th0, **kw)
     w, V = np.linalg.eig(U)
-    om = -np.angle(w)
+    om = -np.angle(w)          # for order='alt2' this is twice the per-cycle quasi-energy (small, no wrap)
     keep = (om > 0) if upper else (om < 0)
     Vi = np.linalg.inv(V)
     Pp = np.einsum('nij,nj,njk->nik', V, keep.astype(float), Vi)

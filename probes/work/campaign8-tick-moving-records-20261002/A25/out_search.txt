@@ -1,0 +1,13 @@
+central member (all parameters 0): covariance err 0e+00; s5 per corner [np.float64(0.847), np.float64(0.847), np.float64(0.847)]
+random member: covariance err under O 0e+00
+500 random members: best max_K s5 = 0.328, median 0.739
+after Nelder-Mead from the 4 best: best max_K s5 = 0.320 at theta = [ 0.421 -0.888  0.555  0.632 -0.308  0.121 -0.134  1.694  0.403]; dim S_K at (pi,0,0),(pi,pi,0),(pi,pi,pi) = [5, 5, 6]
+   per-corner s5 at the optimum: [np.float64(0.216), np.float64(0.216), np.float64(0.32)]  (all must be ~0 to pass)
+   optimum 0.320: per-corner s5 [np.float64(0.216), np.float64(0.216), np.float64(0.32)]
+   optimum 0.320: per-corner s5 [np.float64(0.216), np.float64(0.216), np.float64(0.32)]
+   optimum 0.320: per-corner s5 [np.float64(0.216), np.float64(0.216), np.float64(0.32)]
+   optimum 0.320: per-corner s5 [np.float64(0.216), np.float64(0.216), np.float64(0.32)]
+Wilson lift r=0.01: max |eig| over the N=4 zone = 1.4116
+Wilson lift r=0.05: max |eig| over the N=4 zone = 2.1307
+Wilson lift r=0.25: max |eig| over the N=4 zone = 4.7913
+done in 11.6s

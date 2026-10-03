@@ -1,0 +1,42 @@
+U1 central differences, N=6:  |Vc Dc| = 0.0, |Rc Dc| = 0.0, |Rc Mc + Divc Dc^T| = 0.0  (exact)
+   all 48 rotations about a site commute exactly with both layers: True
+   symbol = V_EH(sin k): max dev 3.3e-16;  momenta where the potential vanishes identically: 8 -> [(np.float64(0.0), np.float64(0.0), np.float64(0.0)), (np.float64(0.0), np.float64(0.0), np.float64(1.0)), (np.float64(0.0), np.float64(1.0), np.float64(0.0)), (np.float64(0.0), np.float64(1.0), np.float64(1.0)), (np.float64(1.0), np.float64(0.0), np.float64(0.0)), (np.float64(1.0), np.float64(0.0), np.float64(1.0)), (np.float64(1.0), np.float64(1.0), np.float64(0.0)), (np.float64(1.0), np.float64(1.0), np.float64(1.0))]
+   near corner [1 0 0]*pi: 4 largest |phase|/(tau|q|) = [1. 1. 1. 1.]  (a full second massless graviton)
+   near corner [1 1 0]*pi: 4 largest |phase|/(tau|q|) = [1. 1. 1. 1.]  (a full second massless graviton)
+   near corner [1 1 1]*pi: 4 largest |phase|/(tau|q|) = [1. 1. 1. 1.]  (a full second massless graviton)
+U2 tastes (side 6 = 2x3): the 8 role translates partition the collocated components: |sum E E^T - I| = 0.0
+   |Vc - (1/4) sum_s E_s Vstag E_s^T| = 0.0;  |Mc - sum_s E_s Mstag E_s^T| = 0.0;  |Dc - (1/2) sum_s E_s Dstag E_s^T| = 0.0  (exact)
+U3 Wilson-type term r*sum_a |Delta_a h|^2 (r=0.25): gauge invariance |(Vc+W) Dc| = 4.250 (lost); rotations still exact: True
+   with W: non-unit eigenvalues per k range 0..12 of 12 (gauge directions now move); max |eig| over zone 4.791
+   corners (k/pi, max|eig|): [((np.int64(0), np.int64(0), np.int64(1)), 2.618), ((np.int64(0), np.int64(1), np.int64(0)), 2.618), ((np.int64(0), np.int64(1), np.int64(1)), 3.732), ((np.int64(1), np.int64(0), np.int64(0)), 2.618), ((np.int64(1), np.int64(0), np.int64(1)), 3.732), ((np.int64(1), np.int64(1), np.int64(0)), 3.732), ((np.int64(1), np.int64(1), np.int64(1)), 4.791)]  (|eig|>1: the indefinite DeWitt trace mode is driven unstable)
+   traceless-only Wilson term: |(Vc+Wtl) Dc| = 4.250; non-unit eigenvalues per k 0..12 of 12 (vs 4 for the gauge-invariant tick); max |eig| 3.732
+   momentum row |Dc^T p| over 20 ticks from constraint-surface data, without W: 2.5e-14
+   momentum row |Dc^T p| over 20 ticks from constraint-surface data, with W   : 7.6e+11
+U4 one-sided (forward) differences at sites: gauge invariance |Vf Df| = 1.000 (lost); site rotations commuting with Vf: 12/48 (6/24 proper); sign patterns of those: [(-1, -1, -1), (1, 1, 1)]
+   S1 ownership storage (exactly gauge-invariant): on-site-relabelling rotations about a site that commute with Vp: 6/48 (3/24 proper) = the rotations fixing the (+,+,+) octant
+U5 dim Hom_G(gauge vector -> symmetric tensor) at the zone corners (G = little group of K):
+   K=[1, 0, 0] pi, O  (|G_K|= 8): collocated 1;  staggered (twisted) 3
+   K=[1, 0, 0] pi, Oh (|G_K|=16): collocated 0;  staggered (twisted) 3
+   K=[1, 1, 0] pi, O  (|G_K|= 8): collocated 1;  staggered (twisted) 5
+   K=[1, 1, 0] pi, Oh (|G_K|=16): collocated 0;  staggered (twisted) 5
+   K=[1, 1, 1] pi, O  (|G_K|=24): collocated 0;  staggered (twisted) 4
+   K=[1, 1, 1] pi, Oh (|G_K|=48): collocated 0;  staggered (twisted) 4
+   K=(pi,pi,pi), diagonal     components, collocated: A1:1, E:1
+   K=(pi,pi,pi), diagonal     components, staggered : A1:1, E:1
+   K=(pi,pi,pi), off-diagonal components, collocated: T2:1
+   K=(pi,pi,pi), off-diagonal components, staggered : A1:1, E:1
+   K=(pi,pi,pi), gauge vector, staggered: A1:1, E:1
+U6 covariant collocated gauge generators: covariance error (O, Oh) and dim of limiting gauge span S_K at corners
+   (dim S_K >= 5 forces a zero-frequency transverse mode at K; see report)
+   central       : cov err O 0e+00, Oh 0e+00; IR = central to 0e+00; dim S_K: {'(pi,0,0)': 6, '(pi,pi,0)': 6, '(pi,pi,pi)': 6}
+   smear1        : cov err O 0e+00, Oh 0e+00; IR = central to 2e-10; dim S_K: {'(pi,0,0)': 6, '(pi,pi,0)': 5, '(pi,pi,pi)': 3}
+   smear2        : cov err O 0e+00, Oh 0e+00; IR = central to 2e-10; dim S_K: {'(pi,0,0)': 5, '(pi,pi,0)': 3, '(pi,pi,pi)': 3}
+   chiral        : cov err O 0e+00, Oh 2e+00; IR = central to 5e-06; dim S_K: {'(pi,0,0)': 5, '(pi,pi,0)': 5, '(pi,pi,pi)': 6}
+   smear1+chiral : cov err O 0e+00, Oh 2e+00; IR = central to 5e-06; dim S_K: {'(pi,0,0)': 4, '(pi,pi,0)': 5, '(pi,pi,pi)': 6}
+U7 covariant local potentials (range<=2 in each direction), exactly gauge-invariant under each generator:
+   group O: 126 covariant Hermitian range-2 forms
+   central       :   1 gauge-invariant forms; (pi,0,0): common kernel 6; (pi,pi,0): common kernel 6; (pi,pi,pi): common kernel 6; generic member rank at random k: [3, 3, 3, 3, 3]
+   smear1        :   1 gauge-invariant forms; (pi,0,0): common kernel 6; (pi,pi,0): common kernel 6; (pi,pi,pi): common kernel 6; generic member rank at random k: [3, 3, 3, 3, 3]
+   chiral        :   1 gauge-invariant forms; (pi,0,0): common kernel 5; (pi,pi,0): common kernel 5; (pi,pi,pi): common kernel 6; generic member rank at random k: [3, 3, 3, 3, 3]
+   smear1+chiral :   1 gauge-invariant forms; (pi,0,0): common kernel 5; (pi,pi,0): common kernel 5; (pi,pi,pi): common kernel 6; generic member rank at random k: [3, 3, 3, 3, 3]
+done in 1.4s

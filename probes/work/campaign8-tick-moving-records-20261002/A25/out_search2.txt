@@ -1,0 +1,9 @@
+screen: best sum-objective 0.783; double-smearing member: 0.846 (per corner [np.float64(0.628), np.float64(0.218), np.float64(0.0)])
+   NM optimum sum 0.310: per-corner s5 (pi,0,0),(pi,pi,0),(pi,pi,pi) = [np.float64(0.001), np.float64(0.001), np.float64(0.309)]
+   NM optimum sum 0.311: per-corner s5 (pi,0,0),(pi,pi,0),(pi,pi,pi) = [np.float64(0.001), np.float64(0.001), np.float64(0.309)]
+   NM optimum sum 0.313: per-corner s5 (pi,0,0),(pi,pi,0),(pi,pi,pi) = [np.float64(0.002), np.float64(0.002), np.float64(0.309)]
+   NM optimum sum 0.434: per-corner s5 (pi,0,0),(pi,pi,0),(pi,pi,pi) = [np.float64(0.0), np.float64(0.008), np.float64(0.426)]
+   NM optimum sum 0.523: per-corner s5 (pi,0,0),(pi,pi,0),(pi,pi,pi) = [np.float64(0.0), np.float64(0.0), np.float64(0.523)]
+   NM optimum sum 0.611: per-corner s5 (pi,0,0),(pi,pi,0),(pi,pi,pi) = [np.float64(0.0), np.float64(0.0), np.float64(0.611)]
+   smallest max-over-corners reached: 0.309  (passing needs ~0 at all three)
+done in 10.4s

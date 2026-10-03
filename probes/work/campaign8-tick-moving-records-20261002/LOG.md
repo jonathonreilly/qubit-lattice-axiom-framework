@@ -1591,3 +1591,38 @@ A34 had read the earlier reviews, so it is not independent of them. A33 had not 
 - record-free places (decision 21);
 - record-timed neighbourhood ticks;
 - what "minimum tick" means (smallest vs longest).
+
+## 04:21 (real) A33 (can the calm background supply the π flux?) LANDED → c8/A33/REPORT.md (+ a0–a23)
+The agent's sandbox blocked writing REPORT.md; the coordinator saved it. It reuses A20's grp.py/pauli.py and A31's c5 mobility test (cited).
+
+**Answer: NO within every class searched, for an EXACT structural reason.**
+- **THEOREM C (EXACT; commutative algebra).** Take any pure stabilizer vacuum on Z³, of any period and any qubits per cell, with INDEPENDENT checks (as many check orbits per cell as qubits). It has no superselected excitation that moves in 3 independent directions: planes at best.
+  - Proof: the charge module has projective dimension ≤ 2 (free resolution 0 → R^t → R^{2t} → R^t), so by Auslander–Buchsbaum it has depth ≥ 1 and no finite-length submodule. 3D mobility would create one.
+  - 3D mobility therefore needs redundant checks with local relations: a gauge structure, Gauss plus Bianchi, as in the 3D toric code (COMPARATOR).
+- **THEOREM A (EXACT).** In a translation-invariant covariant vacuum with one qubit per site, a single defect cannot move at all. This extends A31 D14 to A20's whole module.
+- **Period-2 searches (EXACT for the stated finite classes).**
+  - One check per site at |d|² ≤ 2, 3, 4: 157, 697 and 77,665 commuting covariant candidates. Every 3D-mobile candidate carries an impurity certificate (a free local qubit).
+  - Redundant checks (≤ 2 per role, |d|² ≤ 2, 3): no pure vacuum.
+  - Caveat: "pure-looking" survivors are CHECKED by box certificates, not proved.
+- **Positive (EXACT).** A covariant pure period-2 "layer" vacuum gives single defects that move in planes with π per plaquette (uniform law sign s_E = −1), i.e. 2D Dirac cones within layers. There is no velocity along the normal.
+- **NEW OPEN ROUTE (EXACT symmetry statement; not built).** Theorem S assumed trivial site parities.
+  - For a one-state-per-site excitation, the plaquette flux = |t_xa|²|t_ac|²·p(x)p(c), where p is the parity under the face-diagonal half turn at the two fixed corners.
+  - In a period-2 vacuum, π on every face is symmetry-allowed if p_V ≠ p_F and p_E ≠ p_C.
+  - So a state-level pattern is NOT excluded from supplying KS. That would also reopen sharing with F6.
+- **Calm.** Calm period-2 vacua exist; #87 is star-local and quiet, but its defects are immobile. The law that keeps #87 also has the translation-invariant star as a ground state, so the law does not pick out the pattern.
+- **Owner decisions.** Role-dependent site quantum numbers (parities) for matter in a 1-of-8 state pattern? A uniform law sign (s_E = −1)?
+
+**Coordinator check** (toys/verify_A33_parity.py; own code)
+- Random Hermitian hopping on a plaquette (x, a, c, b), symmetrized over ⟨U_g⟩ for a g that fixes x and c and swaps a↔b with site parities p.
+- Flux = |t_xa|²|t_ac|²·p(x)p(c) to 7.3e-16 over 2000 trials; the sign equals p(x)p(c) whenever no amplitude vanishes.
+- Parity formula CONFIRMED.
+- Theorem C's proof logic re-read by hand: pd ≤ 2 → depth ≥ 1 → no finite-length submodule; mobility in 3 directions gives R·s a quotient of R/(y_i^n − 1), which has finite length. Sound.
+- NOT re-run: the searches.
+
+**Consequence for A31's Theorem S** (to be added to the draft). "Two patterns, never one" is proved only for matter ripples with no internal labels (trivial parities). With role-dependent parities, the background's own 8-fold pattern could supply the twist (allowed; not built).
+
+## 04:27 (real) Launched A36, launched A37, and resumed A34 as the fifth reviewer
+- **A36: ticks timed by the surrounding records** (brief: c8/A36_PROMPT.md). A34's open question 5; the owner's "influenced / neighbourhood" tick without memory.
+- **A37: records that push the possibilities ("flow") instead of trading places ("swap")** (brief: c8/A37_PROMPT.md). This is the owner's own picture: "i wasnt thinking swap but flow neighborhoods can shift" and "the probabilities can all push right".
+- **A34 resumed** to review A33, the one-page summary (rebuilt from v9 after C87) and the draft's new A33 text. It will also get A36 and A37 when they land.
+- Load at dispatch: 2.41, RAM 38%.

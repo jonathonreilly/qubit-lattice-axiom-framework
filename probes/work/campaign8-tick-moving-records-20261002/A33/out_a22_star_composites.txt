@@ -1,0 +1,10 @@
+L=8 face-diagonal dipole {0,(1,-1,0)}: 7 moves; shortest [(-1, -1, 0), (1, 1, 0), (-2, -2, 0), (2, 2, 0), (-3, -3, 0), (3, 3, 0)]   (0.0s)
+L=8 axis dipole {0,(1,0,0)}: 0 moves; shortest []   (0.0s)
+L=8 8-defect composite Q: 63 moves; shortest [(-1, 0, 1), (-1, 1, 0), (0, -1, 1), (0, 1, -1), (1, -1, 0), (1, 0, -1)]   (0.0s)
+Z3 mover for the face-diagonal dipole by (1, 1, 0): |supp| 1
+Z3 mover for the face-diagonal dipole by (1, -1, 0): none in box
+Z3 mover for the face-diagonal dipole by (0, 0, 1): none in box
+Z3 movers for Q: by u=(1, -1, 0): |supp| 4; by w=(0, 1, -1): |supp| 15; by (1,0,0): none in box
+planon Q loop (u then w then -u then -w): W = 1 * product of 2 stars (0 of them at Q's own defects); vacuum sign s=1: loop phase 1
+planon Q loop (u then w then -u then -w): W = 1 * product of 2 stars (0 of them at Q's own defects); vacuum sign s=-1: loop phase 1
+(0.1s)

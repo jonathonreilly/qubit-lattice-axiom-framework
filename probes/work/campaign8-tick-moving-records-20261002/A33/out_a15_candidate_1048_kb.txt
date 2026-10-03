@@ -1,0 +1,8 @@
+#1048 sol={'V': 3, 'C': 4, 'E': 418, 'F': 1233}
+  k(8) = 116 of N=512   (0.0s)
+  k(12) = 300 of N=1728   (0.1s)
+  k(16) = 676 of N=4096   (0.4s)
+  box 4^3: dim commutant 7; no anticommuting pair   (0.5s)
+  box 5^3: dim commutant 40; no anticommuting pair   (0.5s)
+  box 6^3: dim commutant 62; IMPURE (anticommuting local logicals)   (0.6s)
+done (0.6s)

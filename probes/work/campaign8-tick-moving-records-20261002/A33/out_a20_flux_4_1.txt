@@ -1,0 +1,21 @@
+T_u = Z(1, 2, 0)
+T_w = Y(1, 0, 2)
+loop W = +Y(1, 0, 2) Z(1, 2, 0) Z(1, 2, 4) Y(1, 4, 2)
+W = c * prod of 1 generators, c = 1; generators per role in A: {'V': 0, 'C': 0, 'E': 1, 'F': 0}; defect site in A: False
+   signs (1, 1, 1, 1): loop phase 1
+   signs (1, 1, 1, -1): loop phase 1
+   signs (1, 1, -1, 1): loop phase -1
+   signs (1, 1, -1, -1): loop phase -1
+   signs (1, -1, 1, 1): loop phase 1
+   signs (1, -1, 1, -1): loop phase 1
+   signs (1, -1, -1, 1): loop phase -1
+   signs (1, -1, -1, -1): loop phase -1
+   signs (-1, 1, 1, 1): loop phase 1
+   signs (-1, 1, 1, -1): loop phase 1
+   signs (-1, 1, -1, 1): loop phase -1
+   signs (-1, 1, -1, -1): loop phase -1
+   signs (-1, -1, 1, 1): loop phase 1
+   signs (-1, -1, 1, -1): loop phase 1
+   signs (-1, -1, -1, 1): loop phase -1
+   signs (-1, -1, -1, -1): loop phase -1
+(0.1s)

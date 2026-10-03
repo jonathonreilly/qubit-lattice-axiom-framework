@@ -1,0 +1,20 @@
+C2a. F = 1 (deterministic), seed at the origin. Reaches after n cycles:
+     L1 reach (lattice steps), Linf reach, reach along an axis, recorded sites.
+  2D G     12 cycles =  12 fine instants: L1  12, Linf  12, axis  12, sites    313
+  2D UP    12 cycles =  48 fine instants: L1  24, Linf  12, axis  12, sites    625
+  2D DOWN  12 cycles =  48 fine instants: L1  23, Linf  12, axis  12, sites    621
+  3D G      8 cycles =   8 fine instants: L1   8, Linf   8, axis   8, sites    833
+  3D UP     8 cycles =  48 fine instants: L1  24, Linf   8, axis   8, sites   4913
+  3D DOWN   8 cycles =  48 fine instants: L1  15, Linf   8, axis   8, sites   3165
+  [elapsed 0.0s]
+
+C2b. Small F (chance per cycle), 2D, seed at origin; cycles needed to reach Linf distance 30.
+     ratio = cycles(G) / cycles(schedule) (> 1 means faster than one shared tick).
+  F=0.4: G 48.4 (1.000+-0.012)  UP 42.7 (1.134+-0.013)  DOWN 43.2 (1.121+-0.012)  PER 41.0 (1.180+-0.014)  PERfix 25.3 (1.911+-0.023)
+  [elapsed 1.2s]
+  F=0.2: G 79.4 (1.000+-0.016)  UP 75.7 (1.050+-0.017)  DOWN 76.1 (1.044+-0.015)  PER 74.7 (1.063+-0.015)  PERfix 41.8 (1.900+-0.027)
+  [elapsed 3.2s]
+  F=0.1: G 151.0 (1.000+-0.016)  UP 139.6 (1.081+-0.021)  DOWN 139.1 (1.085+-0.019)  PER 141.6 (1.066+-0.019)  PERfix 78.8 (1.916+-0.030)
+  [elapsed 6.0s]
+  F=0.05: G 285.9 (1.000+-0.027)  UP 276.4 (1.034+-0.033)  DOWN 268.9 (1.063+-0.028)  PER 271.6 (1.052+-0.026)  PERfix 144.2 (1.983+-0.060)
+  [elapsed 9.0s]

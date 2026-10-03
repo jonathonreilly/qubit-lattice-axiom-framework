@@ -174,3 +174,16 @@ I tested whether calm empty space could, by its own arrangement, give moving dis
 Inside those sheets the empty space really can supply the twist. A uniform choice of sign in the rule makes a disturbance circling any small square pick up the needed half-turn, but this only gives sheet-bound motion, never light-like motion in all directions. To move freely in three directions, the background would need more conditions than sites, linked to each other the way electric charge and magnetic field are linked. None of the tidy, turn-respecting versions of that I could build stayed fully settled. Some quiet backgrounds with an 8-fold pattern do exist; their disturbances cannot move.
 
 The open hope is a different mechanism: an ordinary local ripple that behaves differently on the different sub-grids of an 8-fold patterned background. The grid's symmetries no longer forbid such a ripple from feeling the twist everywhere, but nobody has built one yet.
+
+---
+
+## ERRATA from the fifth review round (A34/REVIEW2.md), added by the coordinator
+- Theorem C covers superselected (protected) excitations in Pauli-stabilizer vacua. Locally creatable excitations move freely in 3D but get no projective twist from the vacuum's translations (C88).
+- A33:143 torus immobility does not imply Z³ immobility (movers by multiples of L wrap to loops), so "all immobile on Z³" (A33:91) is CHECKED, not EXACT (C91).
+- A33:43: "every pure" should be "every pure-looking (28)". The calm law there also has the unpatterned star as a ground state (C91).
+- A33:37: the "planes only" π flux is the background-charge mechanism; the parity route is a different, non-fractionalized mechanism (C91).
+- A33:152: "symmetry fractionalization" is the wrong comparator (C91).
+- Parity route (C89):
+  - on one qubit, vertex and cube creators must be multi-site, and σ^axis at edge and face places has parity −1;
+  - a massless cone needs equal role energies; staggered energies gap it and other unequal ones split it (A34 c7);
+  - sharing with F6 also needs more room per place.

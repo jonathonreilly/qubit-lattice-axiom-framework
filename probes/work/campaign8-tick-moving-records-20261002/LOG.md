@@ -1626,3 +1626,32 @@ The agent's sandbox blocked writing REPORT.md; the coordinator saved it. It reus
 - **A37: records that push the possibilities ("flow") instead of trading places ("swap")** (brief: c8/A37_PROMPT.md). This is the owner's own picture: "i wasnt thinking swap but flow neighborhoods can shift" and "the probabilities can all push right".
 - **A34 resumed** to review A33, the one-page summary (rebuilt from v9 after C87) and the draft's new A33 text. It will also get A36 and A37 when they land.
 - Load at dispatch: 2.41, RAM 38%.
+
+## 04:44 (real) FIFTH REVIEW ROUND (A34 resumed) LANDED → c8/A34/REVIEW2.md (+ c7_parity_route). CORRECTIONS C88–C99
+This round is by the same agent as the fourth, so it is not independent of it.
+
+**Verdicts.** A33 holds (minor narrowing). Draft A33 text: 2 MAJOR. Summary: 3 MAJOR.
+
+**Corrections**
+- **C88.** Theorem C covers disturbances the background PROTECTS (superselected), in Pauli-stabilizer backgrounds. Locally creatable ripples move freely in 3D but get no twist from the background's repeat this way. The layer vacuum's in-sheet cones sit at the defect's creation energy and need the uniform law sign s_E = −1.
+- **C89.** The parity route allows the twist; light needs more.
+  - On one qubit per site, vertex and cube places offer only the identity as a one-dimensional label, so their creators must be multi-site. Edge and face places have σ^axis with parity −1.
+  - In the 8-band π-flux toy (A34 c7): unequal bond magnitudes keep the cone (slope 1.4); a staggered role energy gaps it (0.40); other unequal role energies break or split it.
+  - So a massless cone needs three tunings, and the route may more naturally give heavy matter.
+- **C91 (lane).** Torus immobility is CHECKED, not EXACT (a mover by a multiple of L wraps to a closed loop). "Every pure" should be "every pure-looking (28)". The comparator "symmetry fractionalization" is wrong.
+- **C95–C98 (summary).**
+  - restored the Q3 gluing hypothesis in Theorem N's statement;
+  - undid three reversions (C32 "matter bends light", C61 never-recorded places, C48 handedness scope);
+  - restored four conditionals (C84, C79, C62/C72, C74);
+  - minor wording.
+- **C99.** The provenance count.
+
+**Applied**
+- **Draft v10.** v9 saved as c8/MORNING_DRAFT_v9_pre_A34b.md.
+  - Bottom-line item 2 A33 text; item 5 light wording.
+  - Section 10 A33 bullets (C88, C89).
+  - Line-92 and two-patterns heading (C93).
+  - Decisions 17 and 24 (C88, C89); new decisions 25 (heavy vs light from the parity route) and 26 (protected disturbances vs ordinary ripples).
+- **Summary.** Replaced by the reviewer's drop-in from REVIEW2 §3, with one coordinator change: the count is "six rounds by four agents", because A21 also reviewed twice (REVIEW + REVIEW_FINAL). Decision range 0–26.
+
+**Coordinator spot-check of c7.** Read the output: the parity table and the 8-band toy numbers are as stated in C89.

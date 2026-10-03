@@ -1,0 +1,16 @@
+C1. Local record law at time T across a distant choice (b: none / Z / X).
+    tau=0.4, 6 periods (12 sub-instants), J=1. TV over the 8 local configurations of (y,x,z).
+  state 0, c=0.3: record-set tick: max TV = 2.55e-16 (prob. sum err 4.4e-16);  possibility-set tick (theta=0.5): max TV = 2.030e-01
+  state 0, c=0.8: record-set tick: max TV = 2.29e-16 (prob. sum err 6.7e-16);  possibility-set tick (theta=0.5): max TV = 1.907e-01
+  state 1, c=0.3: record-set tick: max TV = 2.72e-16 (prob. sum err 4.4e-16);  possibility-set tick (theta=0.5): max TV = 1.369e-01
+  state 1, c=0.8: record-set tick: max TV = 2.90e-16 (prob. sum err 3.3e-16);  possibility-set tick (theta=0.5): max TV = 1.719e-01
+  state 2, c=0.3: record-set tick: max TV = 1.98e-16 (prob. sum err 1.3e-15);  possibility-set tick (theta=0.5): max TV = 1.169e-01
+  state 2, c=0.8: record-set tick: max TV = 2.50e-16 (prob. sum err 1.0e-15);  possibility-set tick (theta=0.5): max TV = 1.300e-01
+  state 3, c=0.3: record-set tick: max TV = 2.60e-16 (prob. sum err 1.8e-15);  possibility-set tick (theta=0.5): max TV = 1.789e-01
+  state 3, c=0.8: record-set tick: max TV = 2.50e-16 (prob. sum err 1.6e-15);  possibility-set tick (theta=0.5): max TV = 9.003e-02
+
+C1b. The same with a maximally entangled b-x pair (|00>+|11>)/sqrt2 on (b,x), y,z in |0>:
+  c=0.3, record-set tick: max TV = 2.359e-16
+  c=0.3, possibility-set tick: max TV = 3.279e-01
+  c=0.8, record-set tick: max TV = 1.631e-16
+  c=0.8, possibility-set tick: max TV = 4.428e-01

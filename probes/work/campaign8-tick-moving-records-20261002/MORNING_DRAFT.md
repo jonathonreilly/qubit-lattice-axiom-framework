@@ -4,7 +4,7 @@
 
 1. **Moving records and the tick.** Records that move one site per tick hang together only if each step is a fresh formation. That makes readable moving records classical "dust": they wander and never interfere. It also forces the change between records to come in strict one-site steps. Anything that interferes stays unrecorded between formations.
 2. **One tick or many.** One shared tick works. Neighbourhood ticks work if they keep in step. For time to run differently in different places, the amount of change per tick must vary, smoothly. How often ticks come cannot vary.
-3. **Gravity.** Gravity-like clock slowing appears in the toys, with the right one-over-distance shape. A carefully dialled package even matches Einstein's main numbers for light and planets. But gravity carried by records cannot make waves or hold a moving Moon. The candidate left open is a field carried by the shared possibilities.
+3. **Gravity.** Gravity-like clock slowing appears in the toys, with the right one-over-distance shape. But gravity carried by records cannot make waves or hold a moving Moon. The road left open is a field carried by the shared possibilities. Its "shape" version is pinned down by the grid's own symmetry to exactly Einstein's linear gravity, with one condition: forming a record must not change energy.
 4. **Empty space** must essentially never form records, or every region freezes. With the repo's current half-filled-sea vacuum that is hard to arrange.
 5. **Handedness.** Ticks by themselves do not produce a preferred handedness. This is exact for single free particles.
 
@@ -84,9 +84,23 @@
   - the wandering records that carry the slowing must not slow down themselves;
   - nearest-neighbour versions jitter far too much.
 - **The deeper problem (argued).** With diffusing carriers, a moving body's field survives only in a thin wake behind it, so a moving Earth could not hold the Moon. There are also no gravitational waves, and no frame dragging (a spinning body twisting nearby paths). Records struggle here because they carry no momentum: a crowd of them can only spread out, not ripple. Wanderers that fly straight instead give the wrong fall-off with distance.
-- **The candidate left open.** Gravity carried by a collective ripple of the shared possibilities, changing by a fixed rule on a shared tick, the way light works in the photon lane.
-  - A fixed rule in which possibilities set the pace does not leak faraway choices (second reviewer's check, confirmed). Only rules computed from the possibilities' current state leak.
-  - The repo has field-type graviton notes on main, all unaudited: a lattice "linearised graviton", and graviton polarisations tied to the staggered sea. Several rest on the half-filled sea that point 7 puts in doubt. A23 is mapping this route.
+- **The candidate left open, now mapped (A23).** Gravity carried by a field of the shared possibilities: a smooth stretch that records never lock, carried neighbour to neighbour at light speed by the fixed rule, and pushed by energy and motion.
+  - **Any such field fixes the record-based failures at once:**
+    - a fixed rule in which the field sets the pace does not leak faraway choices (second reviewer's check);
+    - moving bodies get proper fields, not wakes;
+    - one-over-distance comes free;
+    - noise is tiny;
+    - gravity's weakness becomes "matter is very light on the grid".
+  - **A one-number-per-place (scalar) field fails.** Light bends the wrong way unless the grid's rest frame is singled out, and the waves are the wrong kind.
+  - **A "shape" field, which also says how each direction is squeezed and twisted, works.** The grid's own turns plus exact bookkeeping fix every remaining number exactly as in Einstein's linear gravity (checked, and confirmed by hand). A local stepping rule then gives:
+    - two wave polarisations at light speed, and no time-doubled twin;
+    - full light bending;
+    - all matter falling alike.
+  - **What it costs or leaves open:**
+    - forming a record must not change energy, or the field keeps a phantom weight where the record formed, so records must form gently, through go-betweens (the same direction as inertia, point 2);
+    - how one qubit per site can host the field;
+    - the next-order (Mercury) term.
+  - **Repo.** The repo already has unaudited notes in this direction: a lattice graviton Hessian, a stepping rule for the photon to copy, and a weighting that matches A18's. Extending your already-approved "kinetic isotropy" primitive to such a field would supply Einstein's weights. That would be your call.
 
 ### 7. Empty space must essentially never form records, or every region freezes (A4, A6, A9, A12)
 - **Freezing.** At any steady rate, empty space freezes within about one over that rate, in ticks.
@@ -147,4 +161,6 @@ My overnight note on this was too strong; the reviewers caught it.
 10. **Pacing.** When two neighbours' change per tick differs, does passing between them go at the product (full light bending), the average, or the slower of the two (half bending)? And are the wandering records that carry the slowing slowed themselves (A14, A18)?
 11. **Direct records.** May a lone moving thing form records straight from its own neighbourhood? If so, it loses all inertia (A19).
 
-*Still running: A22 (the time-doubled twin), A23 (map of the field route), and a second-reviewer pass on A20.*
+12. **A gravity field.** May the shared possibilities carry a never-locked "shape" field that the fixed rule passes along, and that multiplies how much changes locally? May the gluing to the grid tilt from place to place as part of that field? Must a forming record leave energy unchanged (A23)?
+
+*Still running: A22 (the time-doubled twin), and a second-reviewer pass on A20.*

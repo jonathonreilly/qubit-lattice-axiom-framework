@@ -165,7 +165,7 @@ for name, G in (('O_h', Oh), ('O', O)):
     for _ in range(40):
         k = rng.normal(size=3); g = gauge_vectors(k, B3)
         for c in range(3):
-            rows.append(np.array([Ck(basis[:, a], k, 6, 3) @ g[:, c] for a in range(d_inv)]))
+            rows.append(np.array([Ck(basis[:, a], k, 6, 3) @ g[:, c] for a in range(d_inv)]).T)
     A = np.vstack(rows)
     N, s = null_space(A)
     say(f'C2 {name}: invariant O(k^2) quadratic forms = {d_inv}; gauge-invariant = {N.shape[1]}  (P,S commute: {comm:.1e})')
@@ -247,7 +247,7 @@ rows = []
 for _ in range(40):
     k = rng.normal(size=4); g = gauge_vectors(k, B4b)
     for c in range(4):
-        rows.append(np.array([Ck(basis4[:, a], k, 10, 4) @ g[:, c] for a in range(d4)]))
+        rows.append(np.array([Ck(basis4[:, a], k, 10, 4) @ g[:, c] for a in range(d4)]).T)
 A = np.vstack(rows)
 N4, s4 = null_space(A)
 say(f'C5 B4(384) hypercubic: invariant O(k^2) forms on Sym^2(R^4) = {d4}; 4D gauge-invariant = {N4.shape[1]}  ({time.time() - t5:.1f}s)')
@@ -304,32 +304,49 @@ for _ in range(50):
     wH = max(wH, np.abs((cH @ Kh - cH) @ Ncm).max())
 say(f'   with mT2=1.1 the Hamiltonian row changes by up to {wH:.2e} per kinetic shear (not preserved)')
 
-def phases(kv, tau, M):
+def tt_basis(s):
+    """orthonormal basis (6x2) of symmetric traceless tensors transverse to s"""
+    sh = s / np.linalg.norm(s)
+    a = np.array([1.0, 0, 0]) if abs(sh[0]) < 0.9 else np.array([0, 1.0, 0])
+    u = np.cross(sh, a); u /= np.linalg.norm(u); w = np.cross(sh, u)
+    e1 = coords(np.outer(u, u) - np.outer(w, w), B3); e2 = coords(np.outer(u, w) + np.outer(w, u), B3)
+    return np.array([e1 / np.linalg.norm(e1), e2 / np.linalg.norm(e2)]).T
+
+def tt_block(kv, tau, M):
     U, cm, cH, s, _ = leapfrog(kv, tau, M)
-    ev = np.linalg.eigvals(U)
-    nontriv = ev[np.abs(ev - 1) > 1e-6]
-    return nontriv, s
+    Tt = tt_basis(s)
+    Pp = np.zeros((12, 4)); Pp[:6, :2] = Tt; Pp[6:, 2:] = Tt
+    leak = np.linalg.norm(U @ Pp - Pp @ (Pp.T @ U @ Pp))
+    ev = np.linalg.eigvals(Pp.T @ U @ Pp)
+    # power traces: spectrum should be {1 x8} + TT eigenvalues
+    Uj = np.eye(12); tr_err = 0.0
+    for j in range(1, 13):
+        Uj = Uj @ U
+        tr_err = max(tr_err, abs(np.trace(Uj) - (8 + np.sum(ev ** j).real)) / max(1.0, np.abs(ev).max() ** j))
+    return ev, s, leak, tr_err
 
 grid = np.linspace(-np.pi, np.pi, 13)
 for tau in (0.99 / np.sqrt(3), 1.01 / np.sqrt(3)):
-    maxmod, maxph, nmodes, formula_err = 0.0, 0.0, set(), 0.0
+    maxmod, maxph, formula_err, maxleak, maxtr = 0.0, 0.0, 0.0, 0.0, 0.0
     for kx in grid:
         for ky in grid:
             for kz in grid:
                 kv = np.array([kx, ky, kz])
                 if np.allclose(kv, 0):
                     continue
-                nt, s = phases(kv, tau, Mgr)
-                nmodes.add(len(nt))
-                maxmod = max(maxmod, np.abs(nt).max() if nt.size else 0)
-                if nt.size and np.all(np.abs(np.abs(nt) - 1) < 1e-9):
-                    th = np.abs(np.angle(nt)).max(); maxph = max(maxph, th)
-                    c = 1 - tau ** 2 * (s @ s) / 2
-                    formula_err = max(formula_err, abs(np.cos(th) - c))
-    say(f'   tau={tau:.5f} (tau*sqrt3={tau * np.sqrt(3):.2f}): nontrivial eigenvalue counts {sorted(nmodes)}; max |eig| {maxmod:.6f}; max phase/pi {maxph / np.pi:.4f}; |cos(theta)-(1-tau^2 s^2/2)| max {formula_err:.1e}')
+                ev, s, leak, trerr = tt_block(kv, tau, Mgr)
+                maxleak = max(maxleak, leak); maxtr = max(maxtr, trerr)
+                maxmod = max(maxmod, np.abs(ev).max())
+                if np.all(np.abs(np.abs(ev) - 1) < 1e-9):
+                    th = np.abs(np.angle(ev)).max(); maxph = max(maxph, th)
+                    formula_err = max(formula_err, abs(np.cos(th) - (1 - tau ** 2 * (s @ s) / 2)))
+    say(f'   tau={tau:.5f} (tau*sqrt3={tau * np.sqrt(3):.2f}): TT block invariance leak max {maxleak:.1e}; power-trace check (spectrum = 1 x8 + TT) max dev {maxtr:.1e}; max |eig| {maxmod:.6f}; max TT phase/pi {maxph / np.pi:.4f}; |cos(theta)-(1-tau^2 s^2/2)| max {formula_err:.1e}')
 kv = np.array([0.02, 0.01, -0.015]); tau = 0.4
-nt, s = phases(kv, tau, Mgr)
-say(f'   small k: theta/(tau|k|) = {np.abs(np.angle(nt)).max() / (tau * np.linalg.norm(kv)):.6f} (z=1, speed 1); modes {len(nt)} = 2 polarizations x (+/-)')
+ev, s, leak, trerr = tt_block(kv, tau, Mgr)
+say(f'   small k: theta/(tau|k|) = {np.abs(np.angle(ev)).max() / (tau * np.linalg.norm(kv)):.6f} (z=1, speed 1); TT eigenvalues {np.round(ev, 8)}')
+corner = np.array([np.pi] * 3)
+ev, s, leak, trerr = tt_block(corner, 0.99 / np.sqrt(3), Mgr)
+say(f'   zone corner (pi,pi,pi), tau*sqrt3=0.99: TT phases/pi {np.round(np.abs(np.angle(ev)) / np.pi, 6)} (approach 1 only as tau -> 1/sqrt3)')
 
 # ---------------------------------------------------------------- C7
 for kv in (np.array([0, 0, 0.2]), np.array([0.13, -0.21, 0.07])):

@@ -1,0 +1,13 @@
+  [contact] m=0.100 k0=0.050 vrel=0.0841 T=15491 M=8192: D=1.5254e-07 (fwd 2.994e-08, refl 1.226e-07); ord fwd 0.0523 refl 9.4766e-01; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 4.8e-05; doubled in image bands 0.1123
+  [contact] m=0.100 k0=0.100 vrel=0.1629 T=4162 M=4096: D=1.7818e-07 (fwd 3.779e-08, refl 1.404e-07); ord fwd 0.1695 refl 8.3047e-01; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 3.3e-05; doubled in image bands 0.1044
+  [contact] m=0.100 k0=0.200 vrel=0.2920 T=1208 M=2048: D=1.1587e-07 (fwd 2.646e-08, refl 8.941e-08); ord fwd 0.3892 refl 6.1080e-01; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 9.7e-06; doubled in image bands 0.0756
+  [contact] m=0.100 k0=0.400 vrel=0.4333 T=449 M=1024: D=1.1079e-08 (fwd 3.009e-09, refl 8.070e-09); ord fwd 0.5747 refl 4.2527e-01; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 4.7e-07; doubled in image bands 0.0411
+  [S1] m=0.100 k0=0.050 vrel=0.0841 T=15491 M=8192: D=4.0586e-07 (fwd 2.028e-07, refl 2.031e-07); ord fwd 0.5000 refl 4.9998e-01; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 4.4e-05; doubled in image bands 0.0435
+  [S1] m=0.100 k0=0.100 vrel=0.1629 T=4162 M=4096: D=4.8043e-07 (fwd 2.402e-07, refl 2.403e-07); ord fwd 0.5000 refl 4.9998e-01; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 3.1e-05; doubled in image bands 0.0378
+  [S1] m=0.100 k0=0.200 vrel=0.2920 T=1208 M=2048: D=2.2175e-07 (fwd 1.109e-07, refl 1.109e-07); ord fwd 0.5000 refl 4.9999e-01; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 1.0e-05; doubled in image bands 0.0324
+  [S1] m=0.100 k0=0.400 vrel=0.4333 T=449 M=1024: D=1.4924e-08 (fwd 7.462e-09, refl 7.462e-09); ord fwd 0.5000 refl 5.0000e-01; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 4.0e-07; doubled in image bands 0.0172
+  [nnodd] m=0.100 k0=0.050 vrel=0.0841 T=15491 M=8192: D=1.4407e-07 (fwd 4.433e-08, refl 9.975e-08); ord fwd 0.4344 refl 5.6555e-01; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 5.6e-05; doubled in image bands 0.1111
+  [nnodd] m=0.100 k0=0.100 vrel=0.1629 T=4162 M=4096: D=1.7305e-07 (fwd 6.604e-08, refl 1.070e-07); ord fwd 0.8105 refl 1.8951e-01; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 2.2e-05; doubled in image bands 0.1573
+  [nnodd] m=0.100 k0=0.200 vrel=0.2920 T=1208 M=2048: D=1.2858e-07 (fwd 7.432e-08, refl 5.426e-08); ord fwd 0.9907 refl 9.2567e-03; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 7.4e-06; doubled in image bands 0.1843
+  [nnodd] m=0.100 k0=0.400 vrel=0.4333 T=449 M=1024: D=1.3505e-08 (fwd 1.011e-08, refl 3.397e-09); ord fwd 0.9305 refl 6.9507e-02; dbl share of refl 0.0000; one-shifted 0.0e+00; unfinished 5.3e-07; doubled in image bands 0.1436
+  total 30.6 s

@@ -1,0 +1,10 @@
+  [r2] m=0.300 k0=0.025 vrel=0.1611 T=15688 M=8192: D=4.6972e-01 (fwd 2.352e-01, refl 2.345e-01); ord fwd 0.2957 refl 2.3448e-01; dbl share of refl 0.5000; one-shifted 0.0e+00; unfinished 5.4e-05; doubled in image bands 1.0000
+  [r2] m=0.300 k0=0.035 vrel=0.2248 T=8150 M=8192: D=4.4400e-01 (fwd 2.227e-01, refl 2.213e-01); ord fwd 0.3346 refl 2.2130e-01; dbl share of refl 0.5000; one-shifted 0.0e+00; unfinished 5.0e-05; doubled in image bands 1.0000
+  [r2] m=0.300 k0=0.050 vrel=0.3190 T=4103 M=8192: D=3.9778e-01 (fwd 2.002e-01, refl 1.976e-01); ord fwd 0.4045 refl 1.9763e-01; dbl share of refl 0.5000; one-shifted 0.0e+00; unfinished 4.3e-05; doubled in image bands 1.0000
+  [r2] m=0.300 k0=0.070 vrel=0.4411 T=2171 M=4096: D=3.3249e-01 (fwd 1.683e-01, refl 1.642e-01); ord fwd 0.5033 refl 1.6420e-01; dbl share of refl 0.5000; one-shifted 0.0e+00; unfinished 3.3e-05; doubled in image bands 1.0000
+  [r2] m=0.300 k0=0.100 vrel=0.6143 T=1127 M=4096: D=2.4551e-01 (fwd 1.258e-01, refl 1.197e-01); ord fwd 0.6347 refl 1.1973e-01; dbl share of refl 0.5000; one-shifted 0.0e+00; unfinished 2.0e-05; doubled in image bands 1.0000
+  [r2] m=0.300 k0=0.140 vrel=0.8224 T=625 M=2048: D=1.6207e-01 (fwd 8.488e-02, refl 7.719e-02); ord fwd 0.7607 refl 7.7190e-02; dbl share of refl 0.5000; one-shifted 0.0e+00; unfinished 1.0e-05; doubled in image bands 1.0000
+  [r2] m=0.300 k0=0.200 vrel=1.0808 T=355 M=2048: D=9.0194e-02 (fwd 4.938e-02, refl 4.081e-02); ord fwd 0.8690 refl 4.0812e-02; dbl share of refl 0.5000; one-shifted 0.0e+00; unfinished 3.0e-06; doubled in image bands 1.0000
+  [r2] m=0.300 k0=0.400 vrel=1.5660 T=159 M=2048: D=1.8965e-02 (fwd 1.294e-02, refl 6.025e-03); ord fwd 0.9750 refl 6.0254e-03; dbl share of refl 0.5000; one-shifted 0.0e+00; unfinished 4.4e-08; doubled in image bands 1.0000
+  [r2] m=0.300 k0=0.800 vrel=1.8365 T=108 M=1024: D=3.1739e-03 (fwd 3.008e-03, refl 1.662e-04); ord fwd 0.9967 refl 1.6616e-04; dbl share of refl 0.5000; one-shifted 0.0e+00; unfinished 4.4e-10; doubled in image bands 1.0000
+  total 16.9 s

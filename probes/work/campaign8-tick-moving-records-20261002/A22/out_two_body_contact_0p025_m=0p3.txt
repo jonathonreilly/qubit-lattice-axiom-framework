@@ -1,0 +1,2 @@
+  [contact] m=0.300 k0=0.025 vrel=0.1611 T=15688 M=8192: D=4.1433e-01 (fwd 2.072e-01, refl 2.072e-01); ord fwd 0.3784 refl 2.0717e-01; dbl share of refl 0.5000; one-shifted 0.0e+00; unfinished 5.9e-05; doubled in image bands 1.0000
+  total 8.7 s

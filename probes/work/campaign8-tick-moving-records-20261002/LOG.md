@@ -916,3 +916,52 @@ Two readings of a move, R1 and R3, behave very differently.
 - Add a bottom line at the top.
 - Reduce jargon.
 - Add decisions 9 (memory), 10 (pacing composition, and whether the carriers are slowed) and 11 (direct records lose inertia).
+
+## 01:10 (real) A23 (field-route map) LANDED → c8/A23/REPORT.md (+ spin2_cubic_check.py)
+
+**What any field route gets**
+- No signalling: a FIXED coupling (EXACT).
+- No wakes: the z=1 wave carrier makes a moving source's field the boosted static field (EXACT, continuum).
+- 1/r from gaplessness alone, with no sink needed (EXACT).
+- Noise ∝ G², so gravity's weakness reads as "matter is light on the grid", m_p/m_P = 7.7e-20 (ARGUED).
+- Momentum lives in unrecorded possibilities.
+
+**Scalar branch: FAILS.**
+- γ = −1 (conformal); γ = 1 only with a preferred frame (stratified).
+- No frame dragging.
+- Wrong waves: one scalar polarization.
+
+**Tensor branch (spin-2): the grid's symmetry FORCES Einstein's linear gravity.**
+- Cubic covariance plus linearized gauge invariance leave exactly ONE O(k²) potential, the linearized Einstein–Hilbert form (CHECKED 1e-15).
+- Preserving the Hamiltonian constraint (named conditional F4) forces GR's kinetic weights (−½, 1, 1): isotropy, no birefringence, no extra scalar (CHECKED; EXACT by hand). Other weights give a birefringent wave plus a ghost or unstable scalar.
+- A local reversible leapfrog ("Yee for spin-2") tick:
+  - preserves both constraints;
+  - z = 1;
+  - phases < π, so no time doubler, for τ < 1/√3;
+  - exactly 2 polarizations (CHECKED, symbol level).
+- γ = 1 when the lapse paces the field's own change (CHECKED 1.000000).
+- Universality is FORCED by source conservation (EXACT; Weinberg comparator).
+- 4D: hypercubic B4 plus gauge invariance give 4D linearized EH. The owner-approved kinetic-isotropy primitive, EXTENDED to a gauge-invariant field, would supply GR's kinetic weights. That would be an owner decision.
+
+**New costs**
+- **(f) The source must be conserved energy-momentum.** So forming a record must not change energy, or a permanent "ghost source" remains. One-site locks of moving matter inject band-scale energy, so locks must be energy-gentle (mediated/coarse). This is the same direction A19 reached from inertia.
+- **(g) Payload:** how one qubit per site hosts the field. OPEN.
+- **β = 1 needs second order.** OPEN; comparators HKT/Deser.
+
+**Ranked decisive tests**
+1. energy-gentle locks;
+2. payload;
+3. real-space covariant Yee-for-spin-2;
+4. matter coupling;
+5. second order.
+
+**Repo cross-reference (all UNAUDITED at e485eab6b0)**
+- The Regge "linearised graviton" note; its corrected title is "Finite spectra and metric projections of a supplied cubic-Coxeter Regge Hessian".
+- The U1 Yee leapfrog tick, which is the template.
+- The spatial-half (2,1) weight note, which is A18's product.
+- The TT polarisation/KS-sea note: shear needs a frame.
+- The ring photon: quiet only at RK.
+
+**Coordinator verification**
+- Reran spin2_cubic_check.py: C1 gives 3 kinetic forms; C2 gives 9 → 1 gauge-invariant; C3 gives (−0.5, 1, 1); C5 gives 9 → 1; C7 gives γ = 1.000000.
+- Independent hand check: the 3D DeWitt kinetic term π_ijπ_ij − ½(tr π)² has weights (1 − 3/2, 1, 1) = (−½, 1, 1) on (A1, E, T2) with normalized trace. That matches C3.

@@ -1,0 +1,10 @@
+  [S1nnn] m=0.300 k0=0.025 vrel=0.1611 T=15688 M=8192: D=1.1057e-02 (fwd 5.528e-03, refl 5.528e-03); ord fwd 0.4944 refl 4.9443e-01; dbl share of refl 0.0111; one-shifted 0.0e+00; unfinished 7.6e-05; doubled in image bands 1.0000
+  [S1nnn] m=0.300 k0=0.035 vrel=0.2248 T=8150 M=8192: D=2.0212e-02 (fwd 1.011e-02, refl 1.011e-02); ord fwd 0.4899 refl 4.8986e-01; dbl share of refl 0.0202; one-shifted 0.0e+00; unfinished 7.4e-05; doubled in image bands 1.0000
+  [S1nnn] m=0.300 k0=0.050 vrel=0.3190 T=4103 M=8192: D=3.6037e-02 (fwd 1.802e-02, refl 1.802e-02); ord fwd 0.4819 refl 4.8195e-01; dbl share of refl 0.0360; one-shifted 0.0e+00; unfinished 6.7e-05; doubled in image bands 1.0000
+  [S1nnn] m=0.300 k0=0.070 vrel=0.4411 T=2171 M=4096: D=5.6797e-02 (fwd 2.840e-02, refl 2.840e-02); ord fwd 0.4716 refl 4.7158e-01; dbl share of refl 0.0568; one-shifted 0.0e+00; unfinished 5.2e-05; doubled in image bands 1.0000
+  [S1nnn] m=0.300 k0=0.100 vrel=0.6143 T=1127 M=4096: D=8.0754e-02 (fwd 4.038e-02, refl 4.038e-02); ord fwd 0.4596 refl 4.5961e-01; dbl share of refl 0.0808; one-shifted 0.0e+00; unfinished 3.0e-05; doubled in image bands 1.0000
+  [S1nnn] m=0.300 k0=0.140 vrel=0.8224 T=625 M=2048: D=9.8298e-02 (fwd 4.915e-02, refl 4.915e-02); ord fwd 0.4508 refl 4.5084e-01; dbl share of refl 0.0983; one-shifted 0.0e+00; unfinished 1.3e-05; doubled in image bands 1.0000
+  [S1nnn] m=0.300 k0=0.200 vrel=1.0808 T=355 M=2048: D=1.0729e-01 (fwd 5.365e-02, refl 5.365e-02); ord fwd 0.4464 refl 4.4635e-01; dbl share of refl 0.1073; one-shifted 0.0e+00; unfinished 3.0e-06; doubled in image bands 1.0000
+  [S1nnn] m=0.300 k0=0.400 vrel=1.5660 T=159 M=2048: D=1.0779e-01 (fwd 5.390e-02, refl 5.390e-02); ord fwd 0.4461 refl 4.4610e-01; dbl share of refl 0.1078; one-shifted 0.0e+00; unfinished 2.1e-08; doubled in image bands 1.0000
+  [S1nnn] m=0.300 k0=0.800 vrel=1.8365 T=108 M=1024: D=1.0210e-01 (fwd 5.105e-02, refl 5.105e-02); ord fwd 0.4490 refl 4.4895e-01; dbl share of refl 0.1021; one-shifted 0.0e+00; unfinished 1.1e-10; doubled in image bands 1.0000
+  total 17.1 s

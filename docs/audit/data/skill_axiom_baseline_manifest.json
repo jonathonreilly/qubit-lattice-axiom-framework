@@ -40,11 +40,11 @@
    "sections": {
     "Audit-Pipeline Treatment": "1675192b0825",
     "Dependencies": "558201f7c8a5",
-    "What This Declares": "dd991444447f",
-    "What This Does Not Do": "e8d8fe1542d7",
+    "What This Declares": "916c55423c03",
+    "What This Does Not Do": "277e0273cf44",
     "Why It Is A Primitive": "8a73f8e23402"
    },
-   "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+   "sha256": "6c4a433b4cd47ec889e0cb5d539f211728458591f73f5368faac81b7b56726b3"
   },
   "docs/MINIMAL_AXIOMS_2026-06-29.md": {
    "sections": {
@@ -90,23 +90,23 @@
  },
  "targets": {
   "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
-   "block_lines": 106,
-   "block_sha256": "c60ef159b23b35f27d61986d77e88ef6152f4603909db76a532281112bf3e2d2",
+   "block_lines": 109,
+   "block_sha256": "ed3ef3e0133db062294dd61d1aba2913106174ea7a0cd98261302c6c93b156ae",
    "spans": [
     "primitives"
    ]
   },
   "docs/ai_methodology/skills/audit-loop/SKILL.md": {
-   "block_lines": 194,
-   "block_sha256": "d09a5fa4208fbc37ff7052965cd2606bfaccca068f5ffd309b40ecab70a4f0e0",
+   "block_lines": 196,
+   "block_sha256": "e75cca5c5739fccda05086826a3fcbe015381cdfec63b4a8a41116c307bc5155",
    "spans": [
     "axioms",
     "primitives"
    ]
   },
   "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md": {
-   "block_lines": 189,
-   "block_sha256": "16e3fc3edd3c1229ca17f2eb59ac541a016ceda3abb8fc150b507a5e11105715",
+   "block_lines": 192,
+   "block_sha256": "403a9441db98251e36e5f29de0dba865ffd03258b0143757ede45865d6df31bc",
    "spans": [
     "axioms",
     "primitives"

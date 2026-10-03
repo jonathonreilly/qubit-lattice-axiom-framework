@@ -29,9 +29,11 @@ analogue of the `LATTICE` axiom's spatial **cubic adjacency** `a_x = a_y = a_z`.
 It carries no dimensionless dynamical content: no mass ratio, coupling, mixing
 angle, phase, selector, readout bridge, or empirical fit is supplied by it. It
 is not a fourth spatial dimension, not a new dynamics, and not a re-axiomatization
-of time: the framework's time remains emergent and derived (the single-clock
-codimension-1 evolution theorem); this primitive fixes only the one dimensionless
-graining ratio relating that emergent time to space.
+of time: the framework's time remains emergent. The single-clock codimension-1
+evolution theorem derives one evolution group only from a supplied time axis,
+step and single clock; its axis is a premise there, not a derivation. This
+primitive fixes only the one dimensionless graining ratio relating that emergent
+time to space.
 
 ## Why It Is A Primitive
 
@@ -65,7 +67,8 @@ claims; they are not supplied by this primitive declaration.
   named axioms in `MINIMAL_AXIOMS_2026-06-29.md`: Lattice, Qubit,
   Admissibility, and Record.
 - It does not re-axiomatize time. The emergent single-clock evolution remains
-  derived; this primitive normalizes only the one graining ratio `c_t / c_s`.
+  conditional on its supplied axis, step and single-clock premises; this
+  primitive normalizes only the one graining ratio `c_t / c_s`.
 - It does not supply any dimensionless dynamical quantity. No mass ratio,
   coupling, mixing angle, phase, or selector is supplied; dimensionless physics
   must derive from retained-grade framework content or remain conditional/open.

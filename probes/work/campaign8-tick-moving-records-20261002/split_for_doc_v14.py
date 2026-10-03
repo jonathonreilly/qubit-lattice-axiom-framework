@@ -32,7 +32,7 @@ for p in parts[1:]:
             if q.startswith("## Your menu decision"): secs["menu"] = q
             elif q.startswith("## The assembled model"): secs["a13"] = q.replace("## The assembled model (A13)", "## The assembled model of the earlier shape (A13)", 1)
             elif q.startswith("## Decisions this raises"): secs["dec"] = q.replace("## Decisions this raises (yours)", "## Decisions for you: the full list (0 to 27)", 1)
-order = ["s1", "s2"] + [f"f{n}" for n in range(16)] + ["menu", "a13", "dec"]
+order = ["s1", "s2"] + [f"f{n}" for n in range(17)] + ["menu", "a13", "dec"]
 for key in order:
     md = reindent(secs[key])
     md = re.sub(r"(?m)^\*(Final review round|Running now|Still running).*\*\s*$", "", md).rstrip() + "\n"

@@ -1,0 +1,11 @@
+=== contest_vmc.py 8 2000 col:0.2,col:0.4,col:0.8 (1-min load 2.36, free mem 32%) ===
+L=8: N=512; specs ['col:0.2', 'col:0.4', 'col:0.8']; budget/state 90s
+col:0.2: MF gap 2.442; sweeps 1878 in 81s; acc flip 0/0 pair 152282/1063936; drift 1.9e-12
+   e_J' = -0.99270 +- 0.00112; c2 = +0.38068 +- 0.00176; E(j=0.3) = -0.76429 +- 0.00030 (halves -0.7643/-0.7643)
+col:0.4: MF gap 2.285; sweeps 1916 in 81s; acc flip 0/0 pair 149667/1083392; drift 1.6e-12
+   e_J' = -0.95426 +- 0.00129; c2 = +0.32751 +- 0.00205; E(j=0.3) = -0.75776 +- 0.00034 (halves -0.7582/-0.7573)
+col:0.8: MF gap 2.166; sweeps 2000 in 68s; acc flip 0/0 pair 104189/1126400; drift 1.9e-12
+   e_J' = -0.80675 +- 0.00277; c2 = +0.10422 +- 0.00437; E(j=0.3) = -0.74422 +- 0.00050 (halves -0.7451/-0.7434)
+232.91 real       230.79 user         0.73 sys
+214417408  maximum resident set size
+done

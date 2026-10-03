@@ -1,0 +1,11 @@
+j=0.3: exact E0/bond = -0.84518 (degeneracy 1, next -0.82939)
+   lp:0.0   : E/bond -0.72698  overlap with exact ground space 0.4380
+   lp:0.1   : E/bond -0.72744  overlap with exact ground space 0.4389
+   lp:0.2   : E/bond -0.72798  overlap with exact ground space 0.4403
+   lp:0.3   : E/bond -0.72610  overlap with exact ground space 0.4383
+   neel:0.05: E/bond -0.72665  overlap with exact ground space 0.4341
+   neel:0.1 : E/bond -0.72563  overlap with exact ground space 0.4229
+   neel:0.3 : E/bond -0.71496  overlap with exact ground space 0.3308
+   col:0.1  : E/bond -0.72647  overlap with exact ground space 0.4355
+   col:0.4  : E/bond -0.71983  overlap with exact ground space 0.3982
+   col:0.8  : E/bond -0.70900  overlap with exact ground space 0.2809

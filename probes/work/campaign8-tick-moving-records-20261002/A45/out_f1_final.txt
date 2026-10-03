@@ -1,0 +1,23 @@
+=== f1_statistics.py  (1-min load 2.69, free mem 33%) ===
+(1) GF(2) census: Z-decorations on the six links at a vertex
+   group sizes: O=24, C2z-subgroup=2, three axis C2s=3, C3(111) subgroup=3
+   O, fermion, switching allowed        consistent = False
+   O, fermion, no switching             consistent = False
+   O, boson                             consistent = True
+   {1,C2z}, fermion, switching          consistent = False
+   C3(111) only, fermion, switching     consistent = True
+   no covariance, fermion               consistent = True
+   covariant V-qubit Pauli assignments: ['IIIIII', 'XXYYZZ']
+   with V factors IIIIII: fermion consistent = False
+   with V factors XXYYZZ: fermion consistent = False
+(2) Pauli lemma on a 5x5x5 window (random monomials)
+   C2 about z (soldered)                        anticommuting pairs (A, gA): 0 / 3000
+   C2 about x+y (soldered)                      anticommuting pairs (A, gA): 1541 / 3000
+   C2 about z + quarter phase on fixed qubits   anticommuting pairs (A, gA): 1483 / 3000
+(3) dense Levin-Wen T-junction check, 9 qubits
+   covariant hops (t_-x = C2z t_+x, t_+z C2z-invariant): T-junction phases seen: [(1+0j)]  max residual 0.0e+00, antipodal pairs anticommuting: 0/60
+   Bravyi-Kitaev-ordered hops (not covariant): T-junction (+x,-x,+z) phase (-1+0j), (+x,+y,+z) phase (-1+0j), residuals 0.0e+00 0.0e+00
+   BK: is C2z(t_+x) a phase times t_-x?  residual = 1.000 (0 would mean covariant)
+done
+3.39 real         3.25 user         0.03 sys
+80576512  maximum resident set size

@@ -1,0 +1,15 @@
+=== f2_parton_u1.py  (1-min load 1.89, free mem 33%) ===
+(1) covariant u_d for NN e_x                   dim 2; (1, sx, sy, sz) coefficients: [1.000+0.000i, -0.000+0.000i, 0.000+0.000i, 0.000+0.000i]; [0.000+0.000i, 0.000+1.000i, 0.000-0.000i, 0.000-0.000i]
+(1) covariant u_d for face diagonal (1,1,0)    dim 2; (1, sx, sy, sz) coefficients: [1.000+0.000i, -0.000+0.000i, 0.000+0.000i, 0.000+0.000i]; [0.000-0.000i, 0.000+0.707i, 0.000+0.707i, 0.000+0.000i]
+(1) covariant u_d for axis-2 (2,0,0)           dim 2; (1, sx, sy, sz) coefficients: [1.000+0.000i, -0.000+0.000i, 0.000+0.000i, 0.000+0.000i]; [0.000+0.000i, 0.000+1.000i, 0.000-0.000i, 0.000-0.000i]
+(1) covariant u_d for body diagonal (1,1,1)    dim 2; (1, sx, sy, sz) coefficients: [-1.000+0.000i, -0.000+0.000i, -0.000+0.000i, 0.000+0.000i]; [0.000+0.000i, 0.000+0.577i, 0.000+0.577i, 0.000+0.577i]
+(2) Bloch covariance over 24 turns x 200 k: max deviation 2.3e-15
+(3) |[eta+, bond]| opposite sublattices  t: 0.00e+00, i sx: 0.00e+00, i sy: 0.00e+00, i sz: 0.00e+00
+(3) |[eta+, bond]| same sublattice       t: 2.00e+00, i sx: 2.00e+00, i sy: 2.00e+00, i sz: 2.00e+00
+    |[N, bond(i sx)]| = 0.0e+00
+(4) lambda'=0.0 nodes: 000 |E|=0e+00 v=[2.000,2.000]; 001 |E|=2e-16 v=[2.000,2.000]; 010 |E|=2e-16 v=[2.000,2.000]; 011 |E|=3e-16 v=[2.000,2.000]; 100 |E|=2e-16 v=[2.000,2.000]; 101 |E|=3e-16 v=[2.000,2.000]; 110 |E|=3e-16 v=[2.000,2.000]; 111 |E|=4e-16 v=[2.000,2.000]
+(4) lambda'=0.3 nodes: 000 |E|=0e+00 v=[3.697,3.697]; 001 |E|=5e-16 v=[2.000,3.690]; 010 |E|=5e-16 v=[2.000,3.697]; 011 |E|=4e-16 v=[0.326,2.000]; 100 |E|=5e-16 v=[2.000,3.692]; 101 |E|=4e-16 v=[0.303,2.000]; 110 |E|=3e-16 v=[0.335,2.000]; 111 |E|=6e-17 v=[0.303,0.303]
+    lambda'=0.3: min |E| over a 40^3 grid, farther than 0.3 from every node: 0.094
+done
+8.57 real         8.46 user         0.03 sys
+34881536  maximum resident set size

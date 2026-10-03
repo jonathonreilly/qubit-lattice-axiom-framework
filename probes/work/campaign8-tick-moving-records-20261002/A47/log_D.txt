@@ -1,0 +1,8 @@
+=== contest_vmc.py 8 2600 lp:0.2,lp:0.3 (1-min load 2.63, free mem 34%) ===
+L=8: N=512; specs ['lp:0.2', 'lp:0.3']; budget/state 135s
+lp:0.2: MF gap 1.266; sweeps 2600 in 83s; acc flip 7104/731781 pair 107076/732539; drift 2.7e-12
+   e_J' = -1.00589 +- 0.00195; c2 = +0.39859 +- 0.00315; E(j=0.3) = -0.76674 +- 0.00031 (halves -0.7663/-0.7671)
+lp:0.3: MF gap 0.573; sweeps 2600 in 99s; acc flip 32144/732293 pair 109770/732027; drift 3.9e-12
+   e_J' = -0.99989 +- 0.00167; c2 = +0.39386 +- 0.00254; E(j=0.3) = -0.76357 +- 0.00032 (halves -0.7642/-0.7629)
+184.86 real       183.33 user         0.66 sys
+200523776  maximum resident set size

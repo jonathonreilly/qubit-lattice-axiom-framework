@@ -8,7 +8,9 @@ checks the source packet needed for re-audit:
 * the registered kinetic-isotropy primitive supplies only the lattice-unit
   c_lattice = 1 bridge;
 * the one-tick-one-edge companion packet and cache are present, and its current
-  retained-bounded ledger status is exposed rather than silently assumed;
+  ledger status is read from the tracked ledger shard and matched by the note,
+  so the tick/edge tie is used as a supplied premise rather than silently
+  assumed to be an established bridge;
 * the physical-c normalization used by this row is explicit; and
 * with those supplied inputs, l_P / c equals t_P at the note's stated
   tolerance.
@@ -20,28 +22,26 @@ import hashlib
 import json
 from pathlib import Path
 
+AUDIT_TIMEOUT_SEC = 120
+
 
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md"
 AXIOM_NODES = ROOT / "docs" / "audit" / "data" / "axiom_premise_nodes.json"
-AUDIT_LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+LEDGER_SHARDS = ROOT / "docs" / "audit" / "data" / "ledger"
 KINETIC_PRIMITIVE_NOTE = ROOT / "docs" / "KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md"
 
 COMPANION_ID = "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08"
 COMPANION_NOTE = ROOT / "docs" / "MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md"
 COMPANION_RUNNER = ROOT / "scripts" / "min_time_step_tied_to_lattice_edge_by_locality_runner.py"
 COMPANION_CACHE = ROOT / "logs" / "runner-cache" / "min_time_step_tied_to_lattice_edge_by_locality_runner.txt"
+CLOCK_RATE_NO_GO_ID = "post_record_clock_rate_interface_2026-06-06"
 
 C_LIGHT_M_PER_S = 299_792_458.0
 C_LATTICE = 1.0
 PLANCK_LENGTH_M = 1.616255e-35
 PLANCK_TIME_S = PLANCK_LENGTH_M / C_LIGHT_M_PER_S
 REL_TOL = 1.0e-7
-RETAINED_GRADE_EFFECTIVE_STATUSES = {
-    "retained",
-    "retained_bounded",
-    "retained_no_go",
-}
 
 PASS = 0
 FAIL = 0
@@ -70,6 +70,14 @@ def cache_header(cache_path: Path) -> dict[str, str]:
         key, value = line.split(":", 1)
         fields[key.strip()] = value.strip()
     return fields
+
+
+def ledger_row(claim_id: str) -> dict:
+    """Read one row from the git-tracked ledger shard (source of truth)."""
+    shard = LEDGER_SHARDS / claim_id[:2] / f"{claim_id}.json"
+    if not shard.exists():
+        return {}
+    return json.loads(shard.read_text(encoding="utf-8"))
 
 
 def rel(path: Path) -> str:
@@ -131,9 +139,11 @@ def main() -> int:
         "c_lattice bridge plus SI conversion",
     )
 
-    section("A3. companion tick/edge packet exposed as retained-bounded")
-    ledger = json.loads(AUDIT_LEDGER.read_text(encoding="utf-8"))
-    companion_row = ledger.get("rows", {}).get(COMPANION_ID, {})
+    section("A3. companion tick/edge packet and its current ledger status")
+    companion_row = ledger_row(COMPANION_ID)
+    companion_type = companion_row.get("claim_type")
+    companion_status = companion_row.get("effective_status")
+    print(f"  companion row: claim_type={companion_type}, effective_status={companion_status}")
     companion_cache_fields = cache_header(COMPANION_CACHE) if COMPANION_CACHE.exists() else {}
     companion_cache_text = (
         COMPANION_CACHE.read_text(encoding="utf-8", errors="replace")
@@ -154,14 +164,20 @@ def main() -> int:
         "finite BFS/cone verifier marker",
     )
     check(
-        "current ledger exposes companion as retained-grade authority",
-        companion_row.get("effective_status") in RETAINED_GRADE_EFFECTIVE_STATUSES,
-        f"effective status {companion_row.get('effective_status')}",
+        "companion row is present in the tracked ledger shard",
+        bool(companion_row) and companion_type is not None and companion_status is not None,
+        f"{COMPANION_ID[:2]}/{COMPANION_ID}.json",
     )
     check(
-        "source note records the companion's retained-bounded effective status",
-        "The current generated ledger exposes that companion with effective status\n   `retained_bounded`." in note_text,
-        "boundary text present",
+        "source note states the companion's current claim type and effective status",
+        f"That companion row is an `{companion_type}` (current effective status `{companion_status}`);" in note_text,
+        f"{companion_type} / {companion_status}",
+    )
+    check(
+        "source note states the Planck-time identification conditionally on the supplied tie",
+        "Then, conditional on the tie, the minimum time step is the Planck time" in note_text
+        and "this step is\n   a supplied premise, not a derived bridge" in note_text,
+        "tick/edge tie used as a supplied premise",
     )
 
     section("A4. physical-c normalization and Planck-time arithmetic")
@@ -192,15 +208,22 @@ def main() -> int:
         "no physical-c derivation claim",
     )
     check(
-        "no new axiom/admission/primitive is introduced",
-        "No **new** axiom, admitted premise, **or** primitive." in note_text,
+        "no new axiom/primitive is introduced",
+        "No **new** axiom or primitive." in note_text,
         "uses existing scale-reference primitive and companion packet",
     )
     check(
-        "safe conclusion consumes the retained companion and explicit c conversion",
-        "The companion one-tick-one-edge row is now\n`retained_bounded`" in note_text
+        "safe conclusion is conditional on the open tick/edge gate plus explicit c conversion",
+        f"The companion one-tick-one-edge row is an\n`{companion_type}` (`{companion_status}`), so `a_τ = a_s/c` holds only when that tie is\nsupplied" in note_text
         and "with the explicit SI `c` normalization this gives" in note_text,
-        "retained companion plus unit conversion",
+        "supplied tie plus unit conversion",
+    )
+    clock_row = ledger_row(CLOCK_RATE_NO_GO_ID)
+    check(
+        "source note states the clock-rate no-go row's current claim type and status",
+        bool(clock_row)
+        and f"a `{clock_row.get('claim_type')}` row, currently `{clock_row.get('effective_status')}`" in note_text,
+        f"{clock_row.get('claim_type')} / {clock_row.get('effective_status')}",
     )
 
     print()

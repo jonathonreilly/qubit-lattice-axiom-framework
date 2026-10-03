@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py
-runner_sha256: 895b2071dc8a5e85bc5655c67d37d2cd7afa0f5b979dc2be1bf0b25aab6aa2ab
+runner_sha256: dc5ec98f3d32b20da7509dcb24280facaa096b0ebc73d2a62b5e7b36d3637841
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 
@@ -21,15 +21,17 @@ A2. kinetic-form c bridge
   [PASS] source note records emergent-c-to-physical-c split  | c_lattice bridge plus SI conversion
 
 ========================================================================================
-A3. companion tick/edge packet exposed as retained-bounded
+A3. companion tick/edge packet and its current ledger status
 ========================================================================================
+  companion row: claim_type=open_gate, effective_status=unaudited
   [PASS] companion note exists  | docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md
   [PASS] companion runner exists  | scripts/min_time_step_tied_to_lattice_edge_by_locality_runner.py
   [PASS] companion cache exists  | logs/runner-cache/min_time_step_tied_to_lattice_edge_by_locality_runner.txt
-  [PASS] companion cache is SHA-fresh  | 645c2764d305388a31f8537c259f119e2b6cdb080c3fb0555a448403ab5c32e4 == 645c2764d305388a31f8537c259f119e2b6cdb080c3fb0555a448403ab5c32e4
+  [PASS] companion cache is SHA-fresh  | 06ffa0b1be9ac22f4a4be23db455b16f4b329585f796579667682056a22a3aaa == 06ffa0b1be9ac22f4a4be23db455b16f4b329585f796579667682056a22a3aaa
   [PASS] companion runner/cache closes its finite reachability checks  | finite BFS/cone verifier marker
-  [PASS] current ledger exposes companion as retained-grade authority  | effective status retained_bounded
-  [PASS] source note records the companion's retained-bounded effective status  | boundary text present
+  [PASS] companion row is present in the tracked ledger shard  | mi/min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08.json
+  [PASS] source note states the companion's current claim type and effective status  | open_gate / unaudited
+  [PASS] source note states the Planck-time identification conditionally on the supplied tie  | tick/edge tie used as a supplied premise
 
 ========================================================================================
 A4. physical-c normalization and Planck-time arithmetic
@@ -46,11 +48,12 @@ A4. physical-c normalization and Planck-time arithmetic
 A5. bounded-support minimality boundary
 ========================================================================================
   [PASS] source note is updated to bounded-support re-audit scope  | no physical-c derivation claim
-  [PASS] no new axiom/admission/primitive is introduced  | uses existing scale-reference primitive and companion packet
-  [PASS] safe conclusion consumes the retained companion and explicit c conversion  | retained companion plus unit conversion
+  [PASS] no new axiom/primitive is introduced  | uses existing scale-reference primitive and companion packet
+  [PASS] safe conclusion is conditional on the open tick/edge gate plus explicit c conversion  | supplied tie plus unit conversion
+  [PASS] source note states the clock-rate no-go row's current claim type and status  | no_go / unaudited
 
-runner_check_breakdown = {A: 17, B: 0, C: 0, D: 0, total_pass: 17}
-TOTAL: PASS=17 FAIL=0
+runner_check_breakdown = {A: 19, B: 0, C: 0, D: 0, total_pass: 19}
+TOTAL: PASS=19 FAIL=0
 
 ----- stderr -----
 

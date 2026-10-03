@@ -1,0 +1,34 @@
+(1) bond orbits under G_s (2Z^3 x| O about a vertex-role site): 3
+    plaquette products over all 8 G_s-invariant sign patterns: [1] (+1 only => no pi flux)
+(4) bonds whose G_s-orbit changes under a unit shift along their own axis: 0 (0 => no dimerization component)
+(2) KS fluxes: [-1] (all -1 => pi everywhere)
+    KS site sums: [-2, 2, 6]
+    period-2 gauges: site-sum sets found = [(-6, -2), (-6, -2, 2), (-6, -2, 2, 6), (-2, 2, 6), (2, 6)]
+best stabilizer size: 24
+  M=[[1, 0, 0], [0, 1, 0], [0, 0, 1]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[1, 0, 0], [0, -1, 0], [0, 0, -1]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[-1, 0, 0], [0, 1, 0], [0, 0, -1]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[-1, 0, 0], [0, -1, 0], [0, 0, 1]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[1, 0, 0], [0, 0, 1], [0, -1, 0]] t=(1, 1, 1) fixed point mod 2: None
+  M=[[1, 0, 0], [0, 0, -1], [0, 1, 0]] t=(1, 1, 1) fixed point mod 2: None
+  M=[[-1, 0, 0], [0, 0, 1], [0, 1, 0]] t=(1, 1, 1) fixed point mod 2: (0.5, 0, 1)
+  M=[[-1, 0, 0], [0, 0, -1], [0, -1, 0]] t=(1, 1, 1) fixed point mod 2: (0.5, 0, 1)
+  M=[[0, 1, 0], [1, 0, 0], [0, 0, -1]] t=(1, 1, 1) fixed point mod 2: (0, 1, 0.5)
+  M=[[0, 1, 0], [-1, 0, 0], [0, 0, 1]] t=(1, 1, 1) fixed point mod 2: None
+  M=[[0, -1, 0], [1, 0, 0], [0, 0, 1]] t=(1, 1, 1) fixed point mod 2: None
+  M=[[0, -1, 0], [-1, 0, 0], [0, 0, -1]] t=(1, 1, 1) fixed point mod 2: (0, 1, 0.5)
+  M=[[0, 1, 0], [0, 0, 1], [1, 0, 0]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[0, 1, 0], [0, 0, -1], [-1, 0, 0]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[0, -1, 0], [0, 0, 1], [-1, 0, 0]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[0, -1, 0], [0, 0, -1], [1, 0, 0]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[0, 0, 1], [1, 0, 0], [0, 1, 0]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[0, 0, 1], [-1, 0, 0], [0, -1, 0]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[0, 0, -1], [1, 0, 0], [0, -1, 0]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[0, 0, -1], [-1, 0, 0], [0, 1, 0]] t=(0, 0, 0) fixed point mod 2: (0, 0, 0)
+  M=[[0, 0, 1], [0, 1, 0], [-1, 0, 0]] t=(1, 1, 1) fixed point mod 2: None
+  M=[[0, 0, 1], [0, -1, 0], [1, 0, 0]] t=(1, 1, 1) fixed point mod 2: (0, 0.5, 1)
+  M=[[0, 0, -1], [0, 1, 0], [1, 0, 0]] t=(1, 1, 1) fixed point mod 2: None
+  M=[[0, 0, -1], [0, -1, 0], [-1, 0, 0]] t=(1, 1, 1) fixed point mod 2: (0, 0.5, 1)
+site sums of this pattern: [2, 6]
+KS site sums: [-2, 2, 6]
+cosets mapping it to minus itself: 0

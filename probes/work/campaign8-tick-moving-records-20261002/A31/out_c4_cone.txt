@@ -1,0 +1,17 @@
+(1) plain Heisenberg (eta = 1):
+  one band: band [-24.000, -0.000]
+      matches -4J sum(1-cos k_a) [one analytic band, quadratic at k=0]: max dev 6.8e-14
+(2) KS gauge: site sums [-2.0, 2.0, 6.0]
+      spectrum range [-17.548, 9.548]; the site-sum potential mixes tastes, so the cone is distorted
+(3) constant-site-sum gauge: site sums [0.0]
+      plaquette products over all 1536 plaquettes: [-1]
+  cone at the emptiness energy: 8 levels nearest E_c=+0.000: [-0.0, 0.0, 0.0, 0.0, -0.0, -0.0, 0.0, 0.0]  gap at E_c = 0.0000
+      levels equal +-4J sqrt(sum_a cos^2 k_a) (pi-flux cones at k=(+-pi/2)^3, E_c = 0): max dev 6.8e-14
+(4) masses on the constant-site-sum-0 pattern (gap at E_c = 0):
+    pair-term site sums carry no staggered part: sum_x eps_x s_x = 0.0 (identically 0 for any bond weights)
+  (a) staggered on-site mu=0.3 (by hand): 8 levels nearest E_c=+0.000: [-0.3, -0.3, 0.3, 0.3, 0.3, -0.3, 0.3, -0.3]  gap at E_c = 0.6000
+  (b) bond dimerization 10% on all axes: 8 levels nearest E_c=+0.000: [-0.0, -0.0, -0.2928, -0.2928, 1.0928, 1.0928, 1.6, 1.6]  gap at E_c = 0.0000
+  (c) role-symmetric modulation on class A (+10%): 8 levels nearest E_c=+0.000: [-0.0, 0.0, -0.0, 0.0, -0.0, 0.0, 0.0, 0.0]  gap at E_c = 0.0000
+  (c) role-symmetric modulation on class B (+10%): 8 levels nearest E_c=+0.000: [-0.0, 0.0, -0.0, 0.0, 0.0, 0.0, -0.0, -0.0]  gap at E_c = 0.0000
+  (c) role-symmetric modulation on class C (+10%): 8 levels nearest E_c=+0.000: [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]  gap at E_c = 0.0000
+  (d) staggered next-nearest exchange 0.05: 8 levels nearest E_c=+0.000: [0.0, 0.0, 1.6, -1.6, 1.6, -1.6, -1.6, 1.6]  gap at E_c = 0.0000

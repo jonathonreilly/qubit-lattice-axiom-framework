@@ -1,0 +1,26 @@
+M=200: P(lock occupied)=0.500000  mean dE under old generator=0.848852 J  mean excess above new walled ground state=0.208312 J  (2*C_01=0.848852)
+M=400: P(lock occupied)=0.500000  mean dE under old generator=0.848833 J  mean excess above new walled ground state=0.210251 J  (2*C_01=0.848833)
+M=800: P(lock occupied)=0.500000  mean dE under old generator=0.848828 J  mean excess above new walled ground state=0.211227 J  (2*C_01=0.848828)
+
+M=800, lock 'occupied': new Fermi level -0.0039; excitation occupations (particles above, holes below)
+  eps-eF      n (particle) or 1-n (hole)   T_loc = |eps-eF| / ln(1/n - 1)
+  +0.0118    8.040e-02                    0.0048
+  -0.0118    5.953e-02                    0.0043
+  +0.0275    2.415e-02                    0.0074
+  -0.0275    3.218e-02                    0.0081
+  +0.0981    3.857e-03                    0.0177
+  -0.0981    1.103e-02                    0.0218
+  +0.3013    5.555e-04                    0.0402
+  -0.3012    3.653e-03                    0.0537
+  +0.5995    1.233e-04                    0.0666
+  -0.5991    1.571e-03                    0.0928
+  +1.0017    2.945e-05                    0.0960
+  -1.0006    6.746e-04                    0.1371
+  +1.4989    5.853e-06                    0.1244
+  -1.5015    2.223e-04                    0.1785
+  particles with 0<eps-eF<0.01: 0.4738
+  particles with 0<eps-eF<0.03: 0.6169
+  particles with 0<eps-eF<0.10: 0.6912
+  particles with 0<eps-eF<0.30: 0.7276
+  particles with 0<eps-eF<1.00: 0.7419
+  particles with 0<eps-eF<2.00: 0.7433

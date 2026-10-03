@@ -133,5 +133,8 @@ elif mode == 'porous':
             # compare with smooth disk of radius a and radius a+d/2
             s1, _, _ = solve(dist <= a, Gam, k)
             s2, _, _ = solve(dist <= a + d / 2, Gam, k)
-            print(f"Gam={Gam} k={k:.3f}: porous sigma={sm:6.2f} (seeds {vals[0]:.2f},{vals[1]:.2f},{vals[2]:.2f})  "
-                  f"smooth a={a}: {s1:6.2f}  smooth a={a+d//2}: {s2:6.2f}  geometric 2(a+d/2)={2*(a+d/2):.0f}")
+            s3, _, _ = solve(dist <= a + d, Gam, k)
+            nrec_p = int(((dist <= a) | ((dist > a) & (dist <= a + d) & (np.random.default_rng(1000).random((N, N)) < np.clip(1 - (dist - a) / (d + 1), 0, 1)))).sum())
+            print(f"Gam={Gam} k={k:.3f}: porous sigma={sm:6.2f} (seeds {vals[0]:.2f},{vals[1]:.2f},{vals[2]:.2f}; records {nrec_p})  "
+                  f"smooth a={a}: {s1:6.2f}  a={a+d//2}: {s2:6.2f}  a={a+d}: {s3:6.2f} (records {int((dist <= a + d).sum())})  "
+                  f"porous/2(a+d)={sm/(2*(a+d)):.3f}  smooth(a+d)/2(a+d)={s3/(2*(a+d)):.3f}")

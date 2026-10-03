@@ -1,0 +1,1 @@
+axis-independent pi-flux pattern with constant |site sum| = 2: not found (20 restarts)

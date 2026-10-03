@@ -1,0 +1,17 @@
+(i) best absorption over Gam, then over k, for surface field eps (hopping -t convention)
+  eps=+0.0: max_k A* = 1.000000 at k=1.5708 (Gam_opt=2.0000); black iff |eps|<t -> yes
+  eps=+0.5: max_k A* = 1.000000 at k=2.0945 (Gam_opt=1.7320); black iff |eps|<t -> yes
+  eps=+0.9: max_k A* = 1.000000 at k=2.6905 (Gam_opt=0.8718); black iff |eps|<t -> yes
+  eps=+1.0: max_k A* = 1.000000 at k=3.1415 (Gam_opt=0.0002); black iff |eps|<t -> no
+  eps=+1.5: max_k A* = 0.800000 at k=2.3005 (Gam_opt=2.2360); black iff |eps|<t -> no
+  eps=+2.0: max_k A* = 0.666667 at k=2.0945 (Gam_opt=3.4640); black iff |eps|<t -> no
+  eps=-2.0: max_k A* = 0.666667 at k=1.0471 (Gam_opt=3.4640); black iff |eps|<t -> no
+  eps=2: closed-form check A*(2pi/3) = 0.6666666666666667
+
+(ii) catch-first capture into an emission channel: A(k) at several k; threshold A/k at k->0
+  g=1.0 tC=1.0 V=0.0: A at k=[0.01,0.3,0.8,pi/2,2.3,3.0] = ['1.0000', '1.0000', '1.0000', '1.0000', '1.0000', '1.0000'];  A(k=1e-3)/1e-3 = 1000.000
+  g=1.0 tC=1.0 V=0.5: A at k=[0.01,0.3,0.8,pi/2,2.3,3.0] = ['0.0515', '0.7822', '0.9647', '0.9839', '0.8680', '0.0000'];  A(k=1e-3)/1e-3 = 5.278
+  g=1.0 tC=1.0 V=1.0: A at k=[0.01,0.3,0.8,pi/2,2.3,3.0] = ['0.0340', '0.6354', '0.8981', '0.9282', '0.0000', '0.0000'];  A(k=1e-3)/1e-3 = 3.458
+  g=0.7 tC=1.0 V=1.0: A at k=[0.01,0.3,0.8,pi/2,2.3,3.0] = ['0.0224', '0.4812', '0.7680', '0.8126', '-0.0000', '0.0000'];  A(k=1e-3)/1e-3 = 2.260
+  g=1.0 tC=2.0 V=1.0: A at k=[0.01,0.3,0.8,pi/2,2.3,3.0] = ['0.0192', '0.4359', '0.7533', '0.8730', '0.8257', '0.3104'];  A(k=1e-3)/1e-3 = 1.935
+  gC self-consistency |g(E - g) - 1| max = 2.223188599257471e-16

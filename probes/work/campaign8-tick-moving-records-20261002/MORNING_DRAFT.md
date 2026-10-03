@@ -28,6 +28,13 @@
    - **Matter on that field (A26).** In a ticked toy, matter tied to the field in the simplest fixed way follows the field's geometry at the level of rays and to first order. Light is delayed and bent by the full amount, provided the field's space-stretch is twice its time-slowing; that is A23's static solution, which needs the time-stretch to pace the field's own change, a supplied choice. Everything whose weight sits at single places falls alike. Supplied: the tie itself; the rule that a uniform stretch must go unnoticed (a new condition); how link weight is classed; a three-move shuffle inside 2×2 blocks for the diagonal ripple (checked in 2D only); and the matter step's own fixed pattern of partner pairs and signs. See point 6 for why this matter has not yet been built in point 2's smooth shape.
 5. **Empty space** must essentially never form records, or every region freezes. If records form only next to records (A28), empty space is exactly quiet whatever it is made of, and distant light crosses it untouched. The half-filled-sea vacuum then causes trouble only at the skin of matter, where records would creep into it and heat it. The world must also start with some records.
 6. **Handedness.** Neither ticks nor smooth change give single free particles on a uniform grid a preferred handedness (exact for steps of strictly limited reach and for any smooth change). Interactions and record edges are untested.
+7. **Your black-hole idea (A30, checked).** Inside the point-2 shape, a fully recorded region is literally a place where nothing can ever happen again: nothing forms or moves inside, and nothing outside can reach in. With one stepping choice it never wears away. But it is grey, not black:
+   - it catches fast things almost always and bounces slow ones;
+   - no setting catches everything at every speed;
+   - it is dark only to what it can record;
+   - what it catches stays on its skin as permanent records in plain view, a library rather than a vault.
+
+   Whether gravity's clocks stop inside depends on a choice for you (point 9).
 
 ## How to read this
 
@@ -231,6 +238,28 @@
 - **Drift:** a standing one-way drift is ruled out by the grid's rotation symmetry.
 - **Circulation:** on a flat 2D toy, a round of trades circulates possibilities one way around every recorded region. In 3D with all 24 turns, nothing survives on flat faces or straight edges; slanted edges are open.
 
+### 9. Your black-hole idea under the point-0 shape (A30, checked)
+- **What "nothing happens" means there (exact, within point 0):**
+  - no record forms or moves inside a full region;
+  - the possibilities inside never change;
+  - nothing from outside can ever reach in;
+  - if time is the piling-up of records, the region has used up all its time.
+- **Sealing is possible as a choice.** If a record may step only into a neighbouring spot that already holds something like its own content, and the region's contents are the opposite of calm empty space, the region never loses a record (exact).
+  - The price: a lone record in empty space can never move either.
+  - With any other stepping odds the region slowly dissolves, in a time that grows with its size far more slowly than a black hole's lifetime would.
+- **Grey, not black (exact, checked).** Its edge catches part of whatever hits it.
+  - At the best catching strength, how much is caught depends only on the speed of what arrives: things near the grid's top speed are caught almost always, slow things mostly bounce.
+  - Catching harder makes it reflect more, not less (the edge starts acting like a mirror).
+  - No edge rule catches everything at every speed, and the records' own pull on what arrives can cap catching at two-thirds.
+  - A rough, spongy edge helps somewhat, but never for the slowest things.
+  - Anything records never lock (such as a never-recorded gravity field, or light under a rule that ignores light) is never caught at all.
+- **A library, not a vault.** Whatever is caught becomes a permanent record on the skin, in plain view, layered in the order it arrived. A black hole hides what fell in.
+- **No glow.** A sealed region gives off nothing. No rule found here makes it glow with a temperature that depends on its size, as black holes are expected to (a comparison, not adopted).
+- **Would Einstein's gravity call it a black hole?** If each recorded spot carries ordinary mass, any packed region bigger than about 10⁻²⁶ m (about 14 kg, at one nucleon per spot) would lie inside its own horizon (a comparison from memory, not adopted). But the gravity field route is only worked out for weak gravity, so it cannot yet describe a horizon.
+- **Do clocks stop inside?** That depends on a choice for you.
+  - If each spot holds only its one qubit's possibilities (the axioms as written), a full region has nothing left to carry gravity, so everything stops. But then its contents do not pull on anything, and gravity ripples bounce off it.
+  - If each spot can also hold a never-recorded part for gravity (decision 13's "more room per place"), gravity's clocks keep running inside, only slower.
+
 ## Your menu decision (Q7 stands)
 
 My overnight note was too strong; the reviewers caught it.
@@ -277,5 +306,7 @@ My overnight note was too strong; the reviewers caught it.
 16. **The calm background's direction.** Under point 0, empty space stays calm only if every record's content lies along its direction. Is that direction fixed by the law (which privileges a possibility), or passed on from a first record (A29)?
 17. **Light and matter under point 0.** No smooth, everywhere-alike change on one qubit per site has yet produced light-like ripples over a calm background; the matter and the field built tonight both use fixed patterns. Is a fixed pattern acceptable for light and matter, given that point 0 was chosen to avoid one for records? If a pattern is used, should matter's sub-grids, its 2×2 cells and the field's 8 layouts be one shared choice (A31 is checking whether they can be)?
 18. **What a tick means.** If record chances per tick are scaled down to avoid freezing, ticks become almost undetectable at Planck spacing (argued). Would "records form at set ticks" then be a physical statement or a bookkeeping one? This is exploration of your instinct, not a position.
+19. **Sealing records in.** May a record step only into a neighbouring spot that already holds something like its own content (A30)? That lets a fully recorded region last forever, but a lone record in empty space could then never move.
+20. **Recording light next to records.** May light-like possibilities be recorded next to existing records? A fully recorded region is dark to light only if so (A30), but in glass or water that recording must be very weak (A28).
 
-*Still running: A30 (your black-hole idea under the point-0 shape) and A31 (assembling the point-0 shape into one model, including whether one shared pattern could serve matter and the field).*
+*Still running: A31 (assembling the point-0 shape into one model, including whether one shared pattern could serve matter and the field) and A32 (your tick questions redone inside the point-0 shape).*

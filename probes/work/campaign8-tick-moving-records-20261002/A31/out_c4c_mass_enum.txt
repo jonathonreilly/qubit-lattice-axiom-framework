@@ -1,0 +1,1 @@
+pi-flux patterns with axis-independent signs (period 2): 128; site-sum sets: [(-6, -2), (-6, -2, 2), (-6, -2, 2, 6), (-2, 2, 6), (2, 6)]; constant: 0

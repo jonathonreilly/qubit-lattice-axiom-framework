@@ -1,0 +1,32 @@
+Planck: m_P=2.1765e-08 kg, l_P=1.6162e-35 m, t_P=5.3909e-44 s, E_P=1.9563e+09 J
+
+electron mass per site: m=9.1090e-31 kg, density 2.158e+74 kg/m^3
+  R_h = 8.6313e-25 m = 5.3406e+10 l_P ; check l_P*sqrt(3 m_P/(8 pi m)) = 8.6313e-25
+  N_h = 6.3805e+32 sites, M_h = 5.8120e+02 kg, r_s(M_h) = 8.6313e-25 m (= R_h)
+  Hawking (COMPARATOR) for M_h: T_H = 2.1108e+20 K, lifetime ~ 1.6510e-08 s
+
+nucleon mass per site: m=1.6726e-27 kg, density 3.962e+77 kg/m^3
+  R_h = 2.0143e-26 m = 1.2463e+09 l_P ; check l_P*sqrt(3 m_P/(8 pi m)) = 2.0143e-26
+  N_h = 8.1091e+27 sites, M_h = 1.3563e+01 kg, r_s(M_h) = 2.0143e-26 m (= R_h)
+  Hawking (COMPARATOR) for M_h: T_H = 9.0448e+21 K, lifetime ~ 2.0983e-13 s
+
+Planck mass per site: m=2.1765e-08 kg, density 5.156e+96 kg/m^3
+  R_h = 5.5838e-36 m = 3.4549e-01 l_P ; check l_P*sqrt(3 m_P/(8 pi m)) = 5.5838e-36
+  N_h = 1.7275e-01 sites, M_h = 3.7599e-09 kg, r_s(M_h) = 5.5838e-36 m (= R_h)
+  Hawking (COMPARATOR) for M_h: T_H = 3.2628e+31 K, lifetime ~ 4.4700e-42 s
+
+(pi/2) E_P per site (A24 sharp-record depth): m=3.4189e-08 kg, density 8.099e+96 kg/m^3
+  R_h = 4.4552e-36 m = 2.7566e-01 l_P ; check l_P*sqrt(3 m_P/(8 pi m)) = 4.4552e-36
+  N_h = 8.7747e-02 sites, M_h = 3.0000e-09 kg, r_s(M_h) = 4.4552e-36 m (= R_h)
+  Hawking (COMPARATOR) for M_h: T_H = 4.0893e+31 K, lifetime ~ 2.2705e-42 s
+
+Scalings: R_h ~ a^(3/2) m^(-1/2); M_h ~ a^(3/2) m^(-1/2) c^3/G^(3/2)... i.e. M_h = (4pi/3)(3/(8pi))^(3/2) m_P^(3/2) m^(-1/2) at a=l_P
+prefactor (4pi/3)(3/(8pi))^(3/2) = 0.17274707473566772
+Earth-mass jam at nucleon/site density: R = 1.532e-18 m vs r_s = 8.866e-03 m -> C = 5.786e+15
+Sun-mass jam at nucleon/site density: R = 1.062e-16 m vs r_s = 2.954e+03 m -> C = 2.781e+19
+
+Linear field route at the jam (uniform ball): U_surface = C/2, U_centre = 3C/4; lapse N = 1 - U
+  C=1.0e-06: N_surface=1.0000, N_centre=1.0000  (GR exterior at R: sqrt(1-C)=1.0000)
+  C=1.0e-01: N_surface=0.9500, N_centre=0.9250  (GR exterior at R: sqrt(1-C)=0.9487)
+  C=5.0e-01: N_surface=0.7500, N_centre=0.6250  (GR exterior at R: sqrt(1-C)=0.7071)
+  C=1.0e+00: N_surface=0.5000, N_centre=0.2500  (GR exterior at R: sqrt(1-C)=0.0000)

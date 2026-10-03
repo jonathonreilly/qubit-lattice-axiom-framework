@@ -1,0 +1,19 @@
+(1) dim of covariant two-site operators on a z-bond = 5 (expect 5)
+    II          in covariant space: residual 0.0e+00
+    ZI-IZ       in covariant space: residual 1.1e-15
+    ZZ          in covariant space: residual 2.4e-15
+    XX+YY       in covariant space: residual 2.7e-15
+    DMz=XY-YX   in covariant space: residual 1.9e-15
+    ZI+IZ       (non-covariant control) residual 1.41
+    XX-YY       (non-covariant control) residual 1.41
+    XZ+ZX       (non-covariant control) residual 1.41
+(2) stationarity residual ||(H-<H>)|n..n>|| on the open 2x2x2 cube (12 bonds)
+    n=axis z   : Heisenberg 0.0e+00  compass 2.828  DM 4.000  J+K+D mix 1.166
+    n=body diag: Heisenberg 2.6e-15  compass 2.309  DM 4.000  J+K+D mix 1.058
+    n=random   : Heisenberg 5.8e-15  compass 2.522  DM 4.000  J+K+D mix 1.101
+(3) chirality s_a.(s_b x s_c) on |n..n>, n=axis z: ||C psi|| = 0.0e+00
+(3) chirality s_a.(s_b x s_c) on |n..n>, n=random: ||C psi|| = 2.4e-16
+(2b) n=axis z   : singular values of [r_K, r_D] = 4.000, 2.828  (min > 0 => only K=D=0 is stationary)
+(2b) n=body diag: singular values of [r_K, r_D] = 4.000, 2.309  (min > 0 => only K=D=0 is stationary)
+(2b) n=random   : singular values of [r_K, r_D] = 4.000, 2.343  (min > 0 => only K=D=0 is stationary)
+(2b) n=random2  : singular values of [r_K, r_D] = 4.000, 2.568  (min > 0 => only K=D=0 is stationary)

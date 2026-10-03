@@ -1,0 +1,8 @@
+(A) 3x3 patch fluxes: [np.float64(-1.0), np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)] pulled-back: [np.float64(-1.0), np.float64(-1.0), np.float64(-1.0), np.float64(-1.0)]
+(B) 4x2 torus site sums: KS [np.float64(0.0), np.float64(4.0)]  dimer [np.float64(2.0)]
+  (A) 3x3 patch, C4   XXZ  : max TV  E1 4.5e-15; E2 0.0e+00; E3 blind SW, record 0 3.7e-01; E3s signed SW 7.6e-15; E3b blind SW, record 1 2.8e-01; E4 two-site X readout 2.9e-01
+  (A) 3x3 patch, C4   SHEIS: max TV  E1 5.4e-01; E2 5.5e-01; E3 blind SW, record 0 5.0e-01; E3b blind SW, record 1 4.9e-01; E4 two-site X readout 3.5e-01
+  (B1) 4x2 torus KS    XXZ  : max TV  E1 3.3e-15; E2 5.5e-15; E3 blind SW, record 0 3.3e-15; E3s signed SW 3.2e-15; E3b blind SW, record 1 2.2e-01; E4 two-site X readout 4.2e-02
+  (B1) 4x2 torus KS    SHEIS: max TV  E1 3.3e-15; E2 3.5e-01; E3 blind SW, record 0 2.4e-01; E3b blind SW, record 1 5.4e-01; E4 two-site X readout 1.1e-01
+  (B2) 4x2 torus dimer XXZ  : max TV  E1 0.0e+00; E2 9.9e-15; E3 blind SW, record 0 2.4e-15; E3s signed SW 1.9e-15; E3b blind SW, record 1 2.6e-01; E4 two-site X readout 4.2e-02
+  (B2) 4x2 torus dimer SHEIS: max TV  E1 0.0e+00; E2 8.1e-02; E3 blind SW, record 0 3.7e-15; E3b blind SW, record 1 4.5e-01; E4 two-site X readout 4.2e-02

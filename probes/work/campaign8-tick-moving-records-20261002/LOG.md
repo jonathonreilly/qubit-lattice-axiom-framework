@@ -1333,3 +1333,63 @@ The reviewer had read the earlier reviews, so it is not independent of them.
 - 16: who sets the calm background's direction;
 - 17: light and matter under Option R (patterns, and one shared cell);
 - 18: what a tick means at Planck spacing.
+
+## 02:35 (real) Launched A32: the owner's tick instinct redone inside Option R (brief: c8/A32_PROMPT.md)
+- **Why.** C38 says the stepped-tick results (A5, A15) were for ticked change and need redoing under Option R. The owner's explicit open questions: global or neighbourhood? constant or influenced? the match to real physics? and "explore the tick more".
+- **Questions:**
+  1. out-of-step record ticks (mirror walls? readable seams? per-site phase = memory?);
+  2. a lapse-paced record tick vs lapse-paced possibilities (one clock or two?);
+  3. frame effects at Planck ticks vs Lorentz bounds;
+  4. simultaneous formation (I1/I2);
+  5. minimum distance vs minimum tick.
+- **Load at dispatch:** 2.36, RAM 41%. Concurrent: A30 and A31.
+
+## 02:50 (real) A30 (the owner's black-hole instinct I5 under Option R) LANDED → c8/A30/REPORT.md
+The agent's sandbox blocked writing REPORT.md; the coordinator saved it from the final message. Scripts: q1_*, q2_*, q4_horizon, q6_heat.
+
+**Provenance.** A30 saw the coordinator's 1D pre-derivation in the LOG, so its Step 1.2 is not blind to it for ε = 0.
+
+**Q1, wall or absorber**
+- **A grey absorber, never black at all energies.**
+  - 1D rate law with the records' own surface field ε (EXACT): A = 2tΓ sin k/(t² + ε² + Γ²/4 + 2tε cos k + tΓ sin k).
+  - Critical coupling Γ_c = 2|t + εe^{ik}|.
+  - At Γ = 2t (ε = 0), capture depends only on speed: A = 2u/(1+u), u = v/2t. Fast, light-like waves are almost all swallowed (1 − A ≈ (E/4t)²); slow matter mostly bounces (A ≈ 2v/v_max).
+- **Threshold theorem (EXACT).** Any finite-range capture with energy-independent rates has |R| → 1 at the band edges, so it is black only at isolated energies. Catch-first is black at all energies only if it is a copy of the medium with no energy released, which is no catch.
+- **Per-tick law (EXACT).** Sure capture per tick gives A(π/2) = x/(1+x/4)² → 0 as the dose x → 0 (Zeno).
+- **The records' own field.** It caps capture: black needs |ε| < t; in the J·SWAP toy (ε = 2J) the cap is exactly 2/3.
+- **Graded layers.** Near-black only above k_min·L ≈ 4–8.
+- **2D disk.** σ_abs/(2a) = 0.46–1.05, always below the lattice width.
+- **What can be caught.** Never-locked content (an F1 field, or light under a light-blind rule) is never captured: "a jam is dark only to what it can record".
+
+**Q2, leak or seal**
+- **Seal theorem (EXACT; CHECKED ≤ 2.7e-32).** With β = 0 (content weight only) and the jam content antipodal to the quiet axis, jam plus emptiness is a fixed point of all of Option R.
+  - Cost: lone void records never move, and the seal fails if any content is off axis.
+- **Leak otherwise.** Blind odds always leak. The record sector is exactly a classical exclusion process, with t_half ≈ 0.11R²/p in 3D, i.e. lifetime ∝ M^{2/3} (vs Hawking M³).
+
+**Q3, "time stops": four exact senses** (no events; matter frozen; interior isolated; record-time exhausted).
+- Under the axioms AS WRITTEN (M₂(C) per site, the record locks it), a jam is also a hole in the field: no gravity source, field waves bounce.
+- Under an enlarged site domain (owner decision, C54), the lapse keeps running inside, N = 1 − U > 0 at linear order.
+
+**Q4 (COMPARATOR).** A grid-density jam is inside its own horizon once R ≥ R_h = ℓ_P√(3m_P/(8πm)): about 2e-26 m and 14 kg for one nucleon per site, 580 kg for electrons. The linear field route cannot describe horizons.
+
+**Q5, information.** Captures become permanent surface records in plain view: "a library, not a vault". A volume-law record count would clash with the Bekenstein bound if the jam were inside its horizon (ARGUED).
+
+**Q6, evaporation.**
+- A sealed jam emits nothing (EXACT).
+- No Option R channel gives T ∝ 1/M (ARGUED).
+- In an entangled vacuum, surface locks release non-thermal, power-law heat (0.21 J per lock, reproducing A28 c2 from independent code).
+
+**Coordinator check** (toys/verify_A30_capture.py; own wave-packet code)
+- (a) ε-generalized rate law vs packets at five (k, Γ, ε) points, including ε = 2t at k = 2π/3, Γ = 2√3: agreement ≤ 2e-5.
+- (b) Per-tick sure capture at k = π/2, τ = 0.5/0.25/0.1/0.05: 0.6400/0.3950/0.1814/0.0952 vs x/(1+x/4)² = 0.6400/0.3951/0.1814/0.0952.
+- (c) Formula scan: max A = 0.80000 at ε = 1.5t and 0.66667 at ε = 2t (k = 2π/3, Γ = 2√3).
+- (d) Staggered-mass chain (m = 0.2, 0.6), Γ = 2t, upper band, right-moving packets: captured 0.6453/0.9055/0.6241/0.8477 vs 2u/(1+u) = 0.6453/0.9056/0.6242/0.8477.
+  - My first run used left-moving packets that had not fully arrived (2–3% low). Fixed.
+- Horizon arithmetic re-done by hand: R_h = 1.25e9 ℓ_P = 2.0e-26 m, 8.1e27 sites, 13.6 kg.
+- NOT re-run: 2D disk, seal and dissolve runs.
+
+**My reading for the owner.**
+- A full region is literally a place where nothing can happen again, and with one stepping choice it never wears away.
+- But it is a grey, not black, absorber: it catches fast things and bounces slow ones.
+- It shows what it caught as permanent records on its skin.
+- Whether gravity's clocks stop inside depends on whether a site can hold a never-recorded part.

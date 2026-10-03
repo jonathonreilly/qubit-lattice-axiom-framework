@@ -1,0 +1,19 @@
+(1) bond orbits under G_s (2Z^3 x| O about a vertex-role site): 3
+    plaquette products over all 8 G_s-invariant sign patterns: [1] (+1 only => no pi flux)
+(4) bonds whose G_s-orbit changes under a unit shift along their own axis: 0 (0 => no dimerization component)
+(2) KS fluxes: [-1] (all -1 => pi everywhere)
+    KS site sums: [-2, 2, 6]
+    period-2 gauges: site-sum sets found = [(-6, -2), (-6, -2, 2), (-6, -2, 2, 6), (-2, 2, 6), (2, 6)]
+    annealed gauges on 4^3: best total |site sum - 2| = 0 (0 => a pi-flux sign pattern with constant site sum 2 exists)
+    annealed gauges on 4^3: best total |site sum - 0| = 0 (0 => a pi-flux sign pattern with constant site sum 0 exists)
+(3) distinct period-2 pi-flux sign patterns: 128; largest exact stabilizer (cosets of 2Z^3): 24 of 192 (the field's role pattern keeps 24 of them: all rotations about a vertex-role site)
+(5) elements of G_s/2Z^3 (24 rotations about vertex 0) that also preserve a 2x2x2 block decomposition:
+    block corner offset c0=(0, 0, 0): 3 of 24 rotations
+    block corner offset c0=(0, 0, 1): 3 of 24 rotations
+    block corner offset c0=(0, 1, 0): 3 of 24 rotations
+    block corner offset c0=(0, 1, 1): 3 of 24 rotations
+    block corner offset c0=(1, 0, 0): 3 of 24 rotations
+    block corner offset c0=(1, 0, 1): 3 of 24 rotations
+    block corner offset c0=(1, 1, 0): 3 of 24 rotations
+    block corner offset c0=(1, 1, 1): 3 of 24 rotations
+(6) in-cell xy face-diagonal pairs mapped to out-of-cell pairs by the site-centred half turn: 16 of 16

@@ -1,0 +1,11 @@
+star state on 6^3: rank of flip patterns 192 of 216; weights of single-site patterns [4]
+   two-defect pattern {x, x+v} creatable by a local operator (single defect hops by v): e_x: no; 2e_x: no; e_x+e_y: no; 2e_x+2e_y: no; e_x+e_y+e_z: no; 2(e_x+e_y+e_z): no; e_x+2e_y: no; 3e_x: no
+   single defect creatable alone: no
+face state on 6^3: rank of flip patterns 144 of 216; weights of single-site patterns [8]
+   two-defect pattern {x, x+v} creatable by a local operator (single defect hops by v): e_x: no; 2e_x: no; e_x+e_y: no; 2e_x+2e_y: no; e_x+e_y+e_z: no; 2(e_x+e_y+e_z): no; e_x+2e_y: no; 3e_x: no
+   single defect creatable alone: no
+star: displacements v (of 215) for which a lone defect can be moved by ANY Pauli operator: 0
+face: displacements v (of 215) for which a lone defect can be moved by ANY Pauli operator: 0
+L=4: star N-rank=16, face N-rank=40  (growth with L => sub-extensive ground-space degeneracy, fracton-like)
+L=6: star N-rank=24, face N-rank=72  (growth with L => sub-extensive ground-space degeneracy, fracton-like)
+L=8: star N-rank=32, face N-rank=104  (growth with L => sub-extensive ground-space degeneracy, fracton-like)

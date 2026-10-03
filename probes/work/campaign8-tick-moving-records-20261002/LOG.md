@@ -1723,3 +1723,43 @@ The agent did not write REPORT.md; the coordinator saved it. This is the owner's
 - Window {x, y, a, b} with a random 8×8 unitary step H_{y,a,b} → H_{x,a,b}, split W₁ = {x, a}, W₂ = {y, b}.
 - Flux = 1.000000 qubit in 5/5 random unitaries; the individual I values vary (2.04–2.17 vs 0.04–0.17). CONFIRMED.
 - NOT re-run: the enumerations, the energy table and the Monte Carlo.
+
+## 05:13 (real) Launched A38: patterned calm backgrounds and light-like ripples (brief: c8/A38_PROMPT.md; 60-minute box)
+- **Targets:**
+  - A31 open edge 5: patterned calm product vacua with compass, DM and star terms;
+  - A33's parity route: ripple parities from a state-level texture;
+  - magnon Berry-phase flux (COMPARATOR mechanism).
+- **Tasks:**
+  1. calm period-2 textures under a pattern-free glued law;
+  2. records;
+  3. 8×8 magnon bands, plaquette fluxes, cones;
+  4. readability;
+  5. verdict.
+- **Load at dispatch:** 3.96, RAM 35%. Concurrent: A34 (review of A36 and A37).
+
+## 05:19 (real) REVIEW ROUND 7 (A34 resumed) on A36, A37 and their draft and summary text → c8/A34/REVIEW3.md (+ c8–c10). CORRECTIONS C100–C115
+This is the same agent as rounds 5 and 6.
+
+**Verdicts.** A36 holds (minor). A37 holds (minor). Draft: 4 MAJOR (C100, C101, C109, C110).
+
+**Key corrections**
+- **C100 (cross-lane).** On the gravity-field route the time-stretch is a field of the shared possibilities, so ticks paced by it would signal (A36 D2). Only the CHANCES can follow possibility-carried gravity. A32 D13's lapse-paced ticks work only for a fixed, given lapse.
+- **C101.** The A36 construction's costs:
+  - I2 holds per instant of the shared clock, not per spot cycle (per cycle a chain can advance as many sites as instants in use);
+  - the numbered cycle is a pattern in TIME;
+  - supplied items (numbering, table, claim rule across instants, same-pattern order).
+- **C102.** Without a numbered cycle, record-event triggers are memory-free set moments, but they break one site per tick.
+- **C103.** Faintness also needs the chance to scale with each spot's own interval. A fixed chance with record-set periods shows at order 1, as record-dependent rates.
+- **C104.** The "shared clock" is the existing shared tick, numbered.
+- **C105.** 57 vs 33 classes depends on whether the law tells r from −r (privilege).
+- **C109 (fairness).** The return flow holds only if nothing is made or destroyed (fill-behind: flux 0, A34 c10).
+- **C110.** Persistence is for LINE pushes, which on a line are the untidy rules. Flow-around makes records TURN (A34 c9: left 0.32, right 0.32, same 0.18; "always left" circles at +0.27 quarter-turns per tick).
+- **C111.** The whole-line shift is the owner's standing-conveyor picture.
+- **C112, C113.** Flow-around wording; clash tangles.
+- **C115.** Provenance: seven rounds.
+
+**Spot checks by A34**
+- c8 confirms A36's O(F) speed-up (excess about 0.34F).
+- c10 gives flux 1.000000 for swap and 0.000000 for fill-behind.
+
+**Applied.** Draft v11 (v10 saved as c8/MORNING_DRAFT_v10_pre_A34c.md): 25 replacements, plus decision-18 and decision-27 owner questions. Summary updated accordingly. Errata appended to the A36 and A37 reports.

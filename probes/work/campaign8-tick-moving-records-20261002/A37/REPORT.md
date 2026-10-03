@@ -232,3 +232,15 @@ Every run used `nice -n 10`, all four thread caps at 1 and a 55 s alarm (`run.sh
 ## 7. Plain-language summary
 
 When a record steps into a neighbouring spot, what was there has to go somewhere. If every spot always holds exactly one spot's worth of possibilities and nothing is made or destroyed, then overall exactly one spot's worth must end up back where the record came from, whatever the rule. On a single line the only tidy way to do that is the swap. "Everything pushes right" does exist, but only if the push runs all the way along an endless empty line, which changes things arbitrarily far away at the same moment. The only other options are to wipe out a spot's worth of possibilities each step, or to let something jump back several spots. On the full grid there is a real alternative: the possibilities can flow around the record, from the front to the side, back along the side, and into the spot the record left. It obeys all the rules, but since no side is special it must pick one at random, which slightly blurs linked possibilities. In calm empty space it makes no difference at all. It matters only near busy, linked possibilities: later records show where things went, nothing can slip past a pushing record on a line, and if a record's stepping odds look at its neighbours, pushing makes it keep going (or get hemmed in) where swapping makes it bounce back. That is a memory left in what it pushed, not true momentum; with odds that ignore the neighbours, records move exactly the same way under every rule. When two pushing records get in each other's way, "one wins with its relative probability" still works, but only if the law settles the whole tangle at once.
+
+---
+
+## ERRATA from review round 7 (A34/REVIEW3.md), added by the coordinator
+
+- Step 1's return flow holds only for conservative steps (nothing made or destroyed); fill-behind has flux 0 (A34 c10) (C109).
+- Step 2 is exact for steps that move whole contents; general quantum steps rest on an index argument (open edge 3) (C114).
+- Step 4's 3D result assumes the record's content does not pick the side (C112, C114).
+- Turning under flow-around is now CHECKED (A34 c9): random side gives left 0.32, right 0.32, same 0.18; 'always left' circles (C110).
+- The persistence numbers are for line pushes, which on a line are the untidy rules (C110).
+- The whole-line shift is the owner's standing conveyor picture (C111).
+- A30's sealed-jam capture assumed swap; it needs redoing for push rules (C114).

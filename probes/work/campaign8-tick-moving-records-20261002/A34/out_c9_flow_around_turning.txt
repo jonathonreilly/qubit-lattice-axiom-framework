@@ -1,0 +1,5 @@
+SW  : p(same) 0.179  p(left) 0.180  p(right) 0.182  p(back) 0.458  | MSD after 400 ticks    148.8  | net quarter-turns per tick -0.002
+PL1 : p(same) 0.460  p(left) 0.179  p(right) 0.180  p(back) 0.180  | MSD after 400 ticks    833.3  | net quarter-turns per tick -0.001
+PSr : p(same) 0.183  p(left) 0.319  p(right) 0.320  p(back) 0.178  | MSD after 400 ticks    383.2  | net quarter-turns per tick -0.001
+PSl : p(same) 0.180  p(left) 0.456  p(right) 0.184  p(back) 0.180  | MSD after 400 ticks    268.8  | net quarter-turns per tick +0.272
+(random-walk reference: p = 0.25 each; MSD = 400 for unit steps)

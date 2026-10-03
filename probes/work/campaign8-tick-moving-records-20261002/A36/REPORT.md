@@ -472,3 +472,16 @@ Every run used `run.sh`: `nice -n 10`, four thread caps at 1, a 55 s alarm and a
 ## 7. Plain-language summary
 
 Can the tick vary by neighbourhood and be influenced without memory? Yes, but only on top of one shared clock. Records never change once made and carry no time of their own, so on their own they cannot mark a later moment. What they can do is choose which instants of a shared clock each spot uses: a spot with one recorded neighbour might use the first instant of each round, and a spot with two the second. That needs no memory, because the records stay where they are, and it treats every place and direction alike. Without a shared clock, the only set moments records give are the moments new records form. Then one record could set off a chain that records a whole region at a single moment, if the chance of each new record is high enough. The ticks can be influenced only by the records right next to a spot. They cannot be influenced by the unrecorded possibilities, because that would let a faraway choice send a message. Nor can they be influenced by a heavy body farther away, so this is not gravity's slowing. If each tick's chance of a record stays fixed, clocks that count records would run at different rates depending on how crowded their spot is, which clashes with all clocks slowing together. If instead the chance shrinks with the tick's length, the influence all but vanishes from what records show. Far from all records nothing sets a tick and nothing forms, which fits. The possibilities still change there, and that change is the only time empty space has.
+
+---
+
+## ERRATA from review round 7 (A34/REVIEW3.md), added by the coordinator
+
+- D2: add 'given no-signalling (Campaign 7 sentence 4, unadopted)' (C107).
+- D9(c) and Answer: 'odds' should be 'rates'. Admissibility's odds concern which possibility a forming record locks, not the rate of forming (reading note 2). The fixed-chance case means the same chance per firing for every class (C107).
+- D7(e): the O(F) speed-up is confirmed by A34 c8 (excess about 0.34F); the F = 0.1 point was a fluctuation (C107).
+- D12(c): a full jam has no empty spots, and gravity's clocks inside are open (C66) (C107).
+- D13: add the rule's range (RT1) to the supplied list (C107).
+- D6: the numbered cycle is a pattern in time; I2 holds per instant of the shared clock, not per spot's cycle (C101).
+- Cross-lane: ticks cannot follow a lapse carried by the shared possibilities (D2 + A31 K4(b)); only the chances can (C100).
+- The 57 classes assume the law tells r from −r (a privileged possibility); with an inherited axis, 33 (C105).

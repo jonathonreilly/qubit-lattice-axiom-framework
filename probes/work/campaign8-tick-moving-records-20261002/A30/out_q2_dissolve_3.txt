@@ -1,0 +1,6 @@
+d=3 N=48 claim prob p=0.15: t_half vs R (records inside initial ball < half)
+R=  2 N0=    33  t_half=     3.6 +-   0.4  t_half*p/R^2=0.136 +- 0.016  t_half/N0^(2/d)=0.352
+R=  3 N0=   123  t_half=     7.9 +-   0.3  t_half*p/R^2=0.131 +- 0.005  t_half/N0^(2/d)=0.318
+R=  4 N0=   257  t_half=    12.2 +-   0.4  t_half*p/R^2=0.115 +- 0.004  t_half/N0^(2/d)=0.303
+R=  6 N0=   925  t_half=    27.6 +-   0.5  t_half*p/R^2=0.115 +- 0.002  t_half/N0^(2/d)=0.291
+R=  8 N0=  2109  t_half=    47.9 +-   0.4  t_half*p/R^2=0.112 +- 0.001  t_half/N0^(2/d)=0.291

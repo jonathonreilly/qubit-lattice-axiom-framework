@@ -1,0 +1,7 @@
+flat face (full-height recorded column, periodic y): absorption per row vs exact 1D law
+k=1.5708 ky=0.000 Gam=2.0: A_row(solver)=0.999814  A_1D(exact)=1.000000  reflected (into frame)/row=1.000000  sum=1.999814
+k=0.5890 ky=0.000 Gam=2.0: A_row(solver)=0.714703  A_1D(exact)=0.714298  reflected (into frame)/row=1.285204  sum=1.999907
+k=0.3927 ky=0.000 Gam=2.0: A_row(solver)=0.554530  A_1D(exact)=0.553537  reflected (into frame)/row=1.450097  sum=2.004627
+k=2.2089 ky=0.000 Gam=0.5: A_row(solver)=0.548618  A_1D(exact)=0.548600  reflected (into frame)/row=1.451373  sum=1.999991
+k=2.7489 ky=0.000 Gam=2.0: A_row(solver)=0.554530  A_1D(exact)=0.553537  reflected (into frame)/row=1.450097  sum=2.004627
+k=0.9817 ky=0.491 Gam=2.0: A_row(solver)=0.907935  A_1D(exact)=0.907981  reflected (into frame)/row=1.092008  sum=1.999943

@@ -1,0 +1,8 @@
+full            r=1e-02: max growth 0.6928 per unit time;  growth / r^(1/4) = 2.191;  growth / r^(1/2) = 6.928
+full            r=1e-03: max growth 0.3382 per unit time;  growth / r^(1/4) = 1.902;  growth / r^(1/2) = 10.694
+full            r=1e-04: max growth 0.1945 per unit time;  growth / r^(1/4) = 1.945;  growth / r^(1/2) = 19.453
+full            r=1e-05: max growth 0.1101 per unit time;  growth / r^(1/4) = 1.958;  growth / r^(1/2) = 34.822
+traceless-only  r=1e-02: max growth 0.4456 per unit time;  growth / r^(1/4) = 1.409;  growth / r^(1/2) = 4.456
+traceless-only  r=1e-03: max growth 0.2958 per unit time;  growth / r^(1/4) = 1.663;  growth / r^(1/2) = 9.353
+traceless-only  r=1e-04: max growth 0.1736 per unit time;  growth / r^(1/4) = 1.736;  growth / r^(1/2) = 17.362
+traceless-only  r=1e-05: max growth 0.0991 per unit time;  growth / r^(1/4) = 1.762;  growth / r^(1/2) = 31.340

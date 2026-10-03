@@ -1,0 +1,3 @@
+k0=2.3562 (m0=48) Gam=8.0 disk a=8: T=65.1, ticks=1301 (tau=0.05), packet weight on the 9 grid momenta used = 1.000000, initial tail on disk 3.4e-05
+  captured: rate dynamics 0.078748 | per-tick Option R 0.078910 | stationary prediction 0.078749
+  rate/pred = 1.0000, tick/pred = 1.0020;  sigma_abs(k0) = 10.087 vs 2a = 16

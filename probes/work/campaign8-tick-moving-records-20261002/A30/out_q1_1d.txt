@@ -1,0 +1,45 @@
+=== (a) rate model: captured fraction, packet run vs exact formula (s=40, M=1200) ===
+k0=1.571 Gam= 2.0 eps=+0.0: packet 0.999961  formula 0.999961  diff +0.0e+00
+k0=0.600 Gam= 2.0 eps=+0.0: packet 0.721661  formula 0.721661  diff -1.2e-12
+k0=2.400 Gam= 0.5 eps=+0.0: packet 0.482349  formula 0.482349  diff +3.4e-12
+k0=1.000 Gam= 8.0 eps=+0.0: packet 0.567282  formula 0.567282  diff -1.1e-14
+k0=1.200 Gam= 2.0 eps=+2.0: packet 0.400290  formula 0.400290  diff -3.7e-14
+k0=1.200 Gam= 4.0 eps=-1.0: packet 0.828118  formula 0.828118  diff -7.4e-15
+
+=== (b) per-tick model (eps=0): packet run vs exact per-tick formula ===
+k0=1.571 f=0.19 tau=0.10 (dose 2t tau=0.20): packet 0.999304  formula 0.999304  diff -2.5e-07
+k0=1.000 f=0.50 tau=0.20 (dose 2t tau=0.40): packet 0.846746  formula 0.846752  diff -5.2e-06
+k0=0.600 f=1.00 tau=0.30 (dose 2t tau=0.60): packet 0.289173  formula 0.289197  diff -2.5e-05
+k0=2.000 f=0.30 tau=0.50 (dose 2t tau=1.00): packet 0.730271  formula 0.730268  diff +2.4e-06
+
+=== (c) rate model: critical coupling and Zeno (eps=0) ===
+argmax_Gam A(k,Gam) = 2t for all 200 k: max |Gam_opt - 2| = 0.0005 (grid 0.005); A_max = 2 sin k/(1+sin k) to 1e-6
+Zeno: k=0.300 Gam=   20.0: A=1.10567e-01  8 t sin k/Gam=1.18208e-01
+Zeno: k=0.300 Gam=  100.0: A=2.33562e-02  8 t sin k/Gam=2.36416e-02
+Zeno: k=0.300 Gam= 1000.0: A=2.36136e-03  8 t sin k/Gam=2.36416e-03
+Zeno: k=1.571 Gam=   20.0: A=3.30579e-01  8 t sin k/Gam=4.00000e-01
+Zeno: k=1.571 Gam=  100.0: A=7.68935e-02  8 t sin k/Gam=8.00000e-02
+Zeno: k=1.571 Gam= 1000.0: A=7.96810e-03  8 t sin k/Gam=8.00000e-03
+threshold: Gam=0.5 k=1e-03: A=9.4073e-04  A/k=0.9407  (2tGam/(t^2+Gam^2/4)=0.9412)
+threshold: Gam=0.5 k=1e-02: A=9.3675e-03  A/k=0.9368  (2tGam/(t^2+Gam^2/4)=0.9412)
+threshold: Gam=2.0 k=1e-03: A=1.9980e-03  A/k=1.9980  (2tGam/(t^2+Gam^2/4)=2.0000)
+threshold: Gam=2.0 k=1e-02: A=1.9802e-02  A/k=1.9802  (2tGam/(t^2+Gam^2/4)=2.0000)
+threshold: Gam=8.0 k=1e-03: A=9.4073e-04  A/k=0.9407  (2tGam/(t^2+Gam^2/4)=0.9412)
+threshold: Gam=8.0 k=1e-02: A=9.3675e-03  A/k=0.9368  (2tGam/(t^2+Gam^2/4)=0.9412)
+black only where V = -t e^{ik}: eps=0 -> k=pi/2, Gam=2t; A(pi/2,2)= 1.0
+
+=== (d) per-tick: Zeno for sure capture (f=1) as the tick shrinks; best f per dose ===
+f=1 tau= 0.50: A(k=pi/2) = 0.64000   R = +0.6000+0.0000i  (hard wall at site 1 would be R=-e^(-2ik)=+1)
+f=1 tau= 0.20: A(k=pi/2) = 0.33058   R = +0.8182-0.0000i  (hard wall at site 1 would be R=-e^(-2ik)=+1)
+f=1 tau= 0.10: A(k=pi/2) = 0.18141   R = +0.9048-0.0000i  (hard wall at site 1 would be R=-e^(-2ik)=+1)
+f=1 tau= 0.05: A(k=pi/2) = 0.09518   R = +0.9512-0.0000i  (hard wall at site 1 would be R=-e^(-2ik)=+1)
+f=1 tau= 0.02: A(k=pi/2) = 0.03921   R = +0.9802+0.0000i  (hard wall at site 1 would be R=-e^(-2ik)=+1)
+f=1 tau= 0.01: A(k=pi/2) = 0.01980   R = +0.9900+0.0000i  (hard wall at site 1 would be R=-e^(-2ik)=+1)
+dose 2t tau=0.10: best f = 0.095 (rate-matched 1-exp(-2t tau)=0.095), A_max(k=pi/2) = 1.00000
+dose 2t tau=0.20: best f = 0.180 (rate-matched 1-exp(-2t tau)=0.181), A_max(k=pi/2) = 0.99998
+dose 2t tau=0.50: best f = 0.395 (rate-matched 1-exp(-2t tau)=0.393), A_max(k=pi/2) = 1.00000
+dose 2t tau=1.00: best f = 0.640 (rate-matched 1-exp(-2t tau)=0.632), A_max(k=pi/2) = 1.00000
+per-tick threshold: tau=0.1 k=1e-02: A=1.9834e-02, A/k=1.9834
+per-tick threshold: tau=0.1 k=3e-02: A=5.8338e-02, A/k=1.9446
+per-tick threshold: tau=0.5 k=1e-02: A=2.0639e-02, A/k=2.0639
+per-tick threshold: tau=0.5 k=3e-02: A=6.0654e-02, A/k=2.0218

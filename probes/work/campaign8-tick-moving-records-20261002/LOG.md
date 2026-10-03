@@ -1059,8 +1059,8 @@ Two readings of a move, R1 and R3, behave very differently.
   - linear, complete, at most one site per tick;
   - content kept, so A7's obstruction does not arise;
   - covariant under the 24 soldered turns;
-  - NOT glued: invariant under turning space alone AND under turning the possibilities alone. Q3 is satisfied.
-- This fixes all of A21 C23's complaints about D23.
+  - NOT glued: invariant under turning space alone AND under turning the possibilities alone. Q3 is satisfied [C27-note: for the step; the toy change (Heisenberg) does not use the gluing; light-like matter needs it].
+- This fixes all of A21 C23's complaints [A29: all except, for the blind weight, odds that ignore the neighbours] about D23.
 
 **CL claim rule**
 - Each empty site claims at most one record. Contested records pick uniformly.
@@ -1071,7 +1071,7 @@ Two readings of a move, R1 and R3, behave very differently.
 
 **Quiet emptiness.** It is undisturbed only if the record content is along its axis (n_r = ±n), or if the step is blind or activity-weighted.
 
-**Theorem N does not apply.** The smooth change is not NN-reach per tick: its reach outside the 3-site window is ≈ 2τ⁴, and it is the identity at its isolated NN instants. It moves content, with magnon speed 2J sin k.
+**Theorem N's strict per-tick reach is dropped** [A29 C27: A20 relaxation 3 (quasi-locality) for possibilities; relaxation 6 for records]. The smooth change is not NN-reach per tick: its reach outside the 3-site window is ≈ 2τ⁴, and it is the identity at its isolated NN instants. It moves content, with magnon speed 2J sin k.
 
 **No time doubler below the aliasing bound (max|E|τ < π).**
 - Spatial doubling remains: 3D net chirality 0, W3 = 0.
@@ -1089,7 +1089,7 @@ Two readings of a move, R1 and R3, behave very differently.
 - Q2 "evolves continuously" holds literally.
 - I1 and I2 hold exactly for records.
 - It removes A13's supplied round (the sub-grid privilege).
-- The field route is viable: smooth covariant field dynamics, with no staggered roles needed.
+- The field route is viable: smooth covariant field dynamics, [A29 C29: FAILS; spatial roles (A25 F6) are still needed in continuous time; only the temporal leapfrog layers go].
 
 **Coordinator verification (CHECKED, independent 1D 3-qubit implementation of SW).**
 - Completeness error ≤ 1.6e-15 (blind and content weights).
@@ -1114,7 +1114,7 @@ Two readings of a move, R1 and R3, behave very differently.
 **"CATCH FIRST, RECORD LATER" (EXACT construction; CHECKED).**
 - The probe is caught at a trap site, and its spare energy is emitted as an excitation. The trap's one-site record is then settled.
 - A single lock costs ~0, up to tails (ticked toy: 2.6e-8 to 6.9e-8).
-- Constant-chance formation costs ≈ κħΓ_f per record, with κ = ½cot k_e (CHECKED 0.4%; ticked toy κ ≈ 0.4–0.5).
+- Constant-chance formation costs ≈ κħΓ_f per record, with κ = ½cot k_e (CHECKED 0.4%; ticked toy κ ≈ 0.37–0.50).
 - The mover feels only A19's coarse recoil cut (shift −0.619 vs −0.60).
 
 **Floors for unsettled records**
@@ -1144,7 +1144,7 @@ Two readings of a move, R1 and R3, behave very differently.
 New conditional G1 (the matter half of F4): a uniform lapse or a uniform stretch must be undetectable by local matter.
 
 **Results**
-- **Matter sees the field's own metric (EXACT, eikonal, first order, given F2).** H² = N²μ² + N²θ0² qᵀ(EᵀE)q, so g^{ij} = δ − h. Light and massive packets follow the same metric. γ_matter = γ_field. No composition rule is needed: mean, min and geometric-mean bond lapse agree at first order.
+- **Matter sees the field's own metric (EXACT, eikonal, first order, small dose, given F2).** H² = N²μ² + N²θ0² qᵀ(EᵀE)q, so g^{ij} = δ − h. Light and massive packets follow the same metric. γ_matter = γ_field. No composition rule is needed: mean, min and geometric-mean bond lapse agree at first order.
 - **Numbers.** 1D delay ratio extrapolates to 1.999; 2D bending to 1.995. Matter's 1 + γ follows h: 1.000 / 1.505 / 2.019 for h = 0, U, 2U. A18's product rule gives 2.019 whatever h is. Moving packets fall as 1 + γv² with γ = 0.988.
 - **The coupling form is forced by G1 at linear order.** Uniform h is pure gauge, so there is exactly one frame factor per hop (per derivative), none on mass terms, and one lapse per term. The lattice-level form stays a named conditional.
 - **Dose.** The angle form gives a slope sin(θ0Ne)/sinθ0, i.e. A18 D4's γ_eff. An amplitude form, sin θ_b = Ne sin θ0, is exact at any dose (1.005 vs 0.884 at θ0 = 0.6).
@@ -1152,7 +1152,7 @@ New conditional G1 (the matter half of F4): a uniform lapse or a uniform stretch
 - **Two-site masses.**
   - Operator-support (OS) coupling gives rest 2δNe and falls 2× (1.974).
   - Stress (ST) coupling gives rest 2δN and falls 1× (0.990).
-  - OS makes a resting clock feel a pure-gauge stretch. Its stress has ∫S^ij ≠ 0 at rest, against the Laue identity, so the momentum constraint fails. F4 therefore selects ST.
+  - OS makes a resting clock feel a pure-gauge stretch. Its stress has ∫S^ij ≠ 0 at rest, against the Laue identity, so the momentum constraint fails. G1 (a new conditional, the matter half of F4) selects ST at long wavelength [EXACT core, ARGUED application].
   - So A18 D3's order-one violation is a symptom of a coupling the field forbids [EXACT core; ARGUED application].
   - Price: the lattice must class the staggered part of each bond angle as mass (frame-free) and the uniform part as motion. That split is supplied.
 - **Shear.**
@@ -1270,3 +1270,66 @@ New conditional G1 (the matter half of F4): a uniform lapse or a uniform stretch
 - Gating makes empty space exactly quiet and lets distant light through untouched, for any kind of emptiness.
 - The emptiness problem does not vanish, though. It moves to the skin of matter: if empty space next to matter is the half-filled kind, records creep into it and heat things far too much.
 - So the gated picture prefers a tidy, lined-up emptiness, at least next to matter. Separately, the world must start with some records.
+
+## 02:13 (real) Launched A31: assembly v2 of the Option R package (brief: c8/A31_PROMPT.md)
+- **Tasks:**
+  1. the assembled model, with the status of each ingredient;
+  2. spatial doubling for matter under smooth change (KS/π-flux forced? a supplied pattern? readable from records?);
+  3. one shared 2×2×2 cell for matter tastes and field roles;
+  4. a pairwise consistency sweep;
+  5. a minimal supplied-items ledger plus owner decisions;
+  6. the top open problem.
+- **Load at dispatch:** 2.80, RAM 39% free.
+- **Concurrent:** A29 (review, read-mostly) and A30 (black hole, small numerics). A29's corrections will be forwarded to A31 when they land.
+
+## 02:27 (real) A29 THIRD HOSTILE REVIEW LANDED → c8/A29/REVIEW.md (+ thmA_continuous, wilson_continuous, wilson_small_r). CORRECTIONS C27–C55 (these supersede earlier wording; the LOG lines it named are fixed inline)
+
+**Verdicts**
+
+| Lane | Verdict |
+|---|---|
+| A27 | holds with narrowing; "no staggered roles" FAILS |
+| A23 | holds with narrowing |
+| A26 | holds with narrowing |
+| A24 | holds with narrowing |
+| A22 | holds with narrowing |
+| A25 | holds |
+| Draft v7 | needs changes (1 BLOCKER) |
+
+The reviewer had read the earlier reviews, so it is not independent of them.
+
+**Key corrections**
+- **C27 (MAJOR).** Option R does not escape Theorem N. It takes two of its listed exits at once: quasi-locality (A20 relaxation 3) for possibilities and irreversibility for records. New and exact by construction: the two fit together, so records still move at most one site per tick.
+- **C28 (BLOCKER, draft).** Decision 0 said the price "is an exact speed limit"; it is LOSING one. Fixed.
+- **C29.** Theorem A applies in continuous time (A29 CHECKED on three O_h-covariant collocated families):
+  - |V(K)| ≤ 2e-32;
+  - a full second massless graviton at the corner;
+  - the staggered control is gapped (ω² = 12).
+  - The S17 patches are unstable in continuous time too, with growth about 2r^{1/4}.
+- **C30 (MAJOR).** Option R's calm vacuum carries only z = 2 ripples, and calm needs every record's content on the vacuum axis. That axis must be law-fixed (privilege) or inherited (first frame open). Light-like content in Option R is NOT built.
+- **C31 (MAJOR, cross-lane).** A26's matter is a stepped, patterned circuit (A10 round, staggered mass, KS signs, 2×2 cells). By its own D9 (EXACT in the Trotter limit), a smooth NN generator cannot carry the taste-blind cross shear: the sandwich is a time-ordered in-cell diagonal operator. Matter on the field is NOT yet built in Option R's shape.
+- **C32.** A26 holds at eikonal, first order, small dose; full bending needs h = 2U (A23 D16, the lapse pacing the field); G1 is new; supplied list restored; "matter bends light" garble fixed.
+- **C33.** A23 fixes the form at O(k²) GIVEN F1 and F4 (named conditionals). Ratios only: the speed relative to light and G are not fixed. The reviewer re-derived D10 and D11 by hand.
+- **C34.** The scalar field gives γ = −1 (NO bending), not "bends the wrong way". "Fails" is ARGUED/COMPARATOR.
+- **C35 (MAJOR).**
+  - A24's "only one way" is overbroad. "Settled ⇒ zero ghost" is EXACT and sufficient. Catch-and-emit is one supplied CHECKED toy, not yet available in the framework's own change.
+  - "Half the energy range" applies to sharp records only.
+  - "Must only" becomes "almost all; the rest rate-bounded".
+- **C37.** A22 overstated: "nothing local", "half or more" (5.3–50% for distinguishable pairs), the iff scope (1D two-layer), the arc lemma (over emptiness), and the heating extrapolation (ARGUED).
+- **C38 (MAJOR, cross-lane).** Option R drops the strict cone, so the stepped-tick results need redoing there: A5's exact cone and 1D Lorentz identities, the tick results (mirror walls, schedule independence), and point 1.
+- **C40 (MAJOR, axiom fit).** Under SW, a moved record's content may be off its new site's menu. The claim rule and the activity weight are range 2. The blind weight ignores neighbours ("varies with"). A swap is not re-forming. "Menus set by records" is the proposed text, not Q7 as decided.
+- **C42–C55 (minor).**
+  - provenance: A16 predates A20, so only A21 checked Theorem N;
+  - "28%" is the τ = 1 value (∝ τ⁴/2);
+  - Q1 already approves "change at once to agree";
+  - A28's Q4 consequence;
+  - handedness scope;
+  - decision-list alignment;
+  - more than one qubit per site as a Qubit-axiom-level decision (C54);
+  - A23's supplied list (C55).
+
+**Draft v8.** All 55 replacements were applied, and v7 is saved as c8/MORNING_DRAFT_v7_pre_A29.md. The review's six owner questions are added as decisions 15–18; #4 was merged into decision 13.
+- 15: a moved record's admissibility;
+- 16: who sets the calm background's direction;
+- 17: light and matter under Option R (patterns, and one shared cell);
+- 18: what a tick means at Planck spacing.

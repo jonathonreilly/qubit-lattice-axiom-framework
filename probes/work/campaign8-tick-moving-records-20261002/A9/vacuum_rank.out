@@ -1,0 +1,25 @@
+(a) half-filled staggered sea, 7-site star, antiperiodic L^3 torus
+  dense vs k-space m=0.0 L=6: filled=108/216, min|E|=0.866, max|nu_dense - nu_k| = 6.66e-16
+  dense vs k-space m=0.0 L=8: filled=256/512, min|E|=0.663, max|nu_dense - nu_k| = 3.89e-16
+  m=0.0 L= 8 nu=[0.0122, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.9878] min eig rho_A=4.625e-06 sum8=3.700e-05 sum32=1.480e-04 sum96=2.418e-02 tr=1.000000
+  m=0.0 L=12 nu=[0.0126, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.9874] min eig rho_A=4.930e-06 sum8=3.944e-05 sum32=1.577e-04 sum96=2.496e-02 tr=1.000000
+  m=0.0 L=16 nu=[0.0126, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.9874] min eig rho_A=4.970e-06 sum8=3.976e-05 sum32=1.590e-04 sum96=2.506e-02 tr=1.000000
+  m=0.0 L=24 nu=[0.0126, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.9874] min eig rho_A=4.984e-06 sum8=3.987e-05 sum32=1.595e-04 sum96=2.510e-02 tr=1.000000
+  m=0.0 L=32 nu=[0.0126, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.9874] min eig rho_A=4.986e-06 sum8=3.989e-05 sum32=1.596e-04 sum96=2.510e-02 tr=1.000000
+  m=0.0 L=48 nu=[0.0126, 0.5000, 0.5000, 0.5000, 0.5000, 0.5000, 0.9874] min eig rho_A=4.987e-06 sum8=3.989e-05 sum32=1.596e-04 sum96=2.511e-02 tr=1.000000
+  dense vs k-space m=0.5 L=6: filled=108/216, min|E|=1.000, max|nu_dense - nu_k| = 2.22e-16
+  dense vs k-space m=0.5 L=8: filled=256/512, min|E|=0.830, max|nu_dense - nu_k| = 6.66e-16
+  m=0.5 L= 8 nu=[0.0032, 0.6834, 0.6834, 0.7171, 0.7171, 0.7171, 0.9799] min eig rho_A=1.452e-07 sum8=3.347e-06 sum32=6.006e-05 sum96=2.197e-02 tr=1.000000
+  m=0.5 L=12 nu=[0.0031, 0.6832, 0.6832, 0.7184, 0.7184, 0.7184, 0.9793] min eig rho_A=1.429e-07 sum8=3.305e-06 sum32=5.952e-05 sum96=2.233e-02 tr=1.000000
+  m=0.5 L=16 nu=[0.0031, 0.6832, 0.6832, 0.7185, 0.7185, 0.7185, 0.9793] min eig rho_A=1.425e-07 sum8=3.296e-06 sum32=5.938e-05 sum96=2.235e-02 tr=1.000000
+  m=0.5 L=24 nu=[0.0031, 0.6832, 0.6832, 0.7185, 0.7185, 0.7185, 0.9793] min eig rho_A=1.425e-07 sum8=3.295e-06 sum32=5.937e-05 sum96=2.235e-02 tr=1.000000
+  m=0.5 L=32 nu=[0.0031, 0.6832, 0.6832, 0.7185, 0.7185, 0.7185, 0.9793] min eig rho_A=1.425e-07 sum8=3.295e-06 sum32=5.937e-05 sum96=2.235e-02 tr=1.000000
+  m=0.5 L=48 nu=[0.0031, 0.6832, 0.6832, 0.7185, 0.7185, 0.7185, 0.9793] min eig rho_A=1.425e-07 sum8=3.295e-06 sum32=5.937e-05 sum96=2.235e-02 tr=1.000000
+(b) antiferromagnetic Heisenberg ground states
+  1D ring N=16: E0/N=-0.446394 gap=0.2702; 3-site star marginal eigenvalues min=7.0729e-03 max=4.5347e-01
+  2D 4x4 torus: E0/N=-0.701780 gap=0.5786; 5-site star marginal eigenvalues min=3.4112e-04 max=2.1981e-01; weight in star spin 5/2 = 1.2746e-02
+(c) Klein check: dim S=7/2 sector = 8 (expect 8)
+  covering x-n1: <P_7/2(star)> = 3.08e-33
+  covering x-n6: <P_7/2(star)> = -4.34e-19
+  random superposition of the 6 coverings: <P_7/2(star)> = 4.18e-19; single-site marginal of x = [[0.5, 0.0], [0.0, 0.5]]
+(d) 7-qubit product states: min symmetric weight, random search = 1.0099e-02; local optimisation = 8.9286e-03; 4 up + 3 down = 2.8571e-02 (1/35 = 2.8571e-02); Marcus floor 1/7! = 1.9841e-04

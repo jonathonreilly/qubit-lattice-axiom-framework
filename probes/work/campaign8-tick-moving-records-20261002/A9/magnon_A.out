@@ -1,0 +1,10 @@
+vacuum: total formation chance per tick = 0.0e+00 (exact 0)
+uniform magnon (a globally rotated vacuum), 200 ticks: max total chance = 5.8e-30 (exact 0)
+plane wave k=0.209: total chance = 0.014568, 2c(1-cos k) = 0.014568
+plane wave k=0.628: total chance = 0.127322, 2c(1-cos k) = 0.127322
+plane wave k=1.466: total chance = 0.596981, 2c(1-cos k) = 0.596981
+plane wave k=3.142: total chance = 1.333333, 2c(1-cos k) = 1.333333
+[A] magnon on one site E0/J=1.000: first record at tick   6.51+-1.40; magnon recorded in 287/300 (mean tick    9.7), never recorded 13 (variant-A prediction from the uniform-state weight: 10.0); u-records before 0.89, halo 1.30; vacuum-content share 0.70; |u-record - magnon record| median 1.0, max 14
+[A] packet k=0.30      E0/J=0.071: first record at tick  34.45+-3.30; magnon recorded in 242/300 (mean tick   39.7), never recorded 58 (variant-A prediction from the uniform-state weight: 47.3); u-records before 1.14, halo 0.82; vacuum-content share 0.71; |u-record - magnon record| median 1.0, max 15
+[A] packet k=1.20      E0/J=0.648: first record at tick   2.19+-0.35; magnon recorded in 300/300 (mean tick    6.3), never recorded 0 (variant-A prediction from the uniform-state weight: 0.0); u-records before 1.15, halo 1.16; vacuum-content share 0.70; |u-record - magnon record| median 1.0, max 10
+[A] packet k=2.40      E0/J=1.717: first record at tick   0.32+-0.04; magnon recorded in 300/300 (mean tick    2.1), never recorded 0 (variant-A prediction from the uniform-state weight: 0.0); u-records before 0.58, halo 1.58; vacuum-content share 0.68; |u-record - magnon record| median 1.0, max 12

@@ -31,22 +31,20 @@ def resid(x):
 
 
 def jacfun(x):
-    """Analytic Jacobian of resid (rows: [Re E00, Re E01, Re E11] per k then Im E01 per k)."""
+    """Analytic Jacobian of resid, vectorized. dE_ab = c d_ai conj(U_bj) + conj(c) U_aj d_bi."""
     U = (Ph @ unpack(x)).reshape(-1, 2, 2)
-    M = U.shape[0]
-    cols = []
+    I2 = np.eye(2)
+    blocks = []
     for part in (1.0, 1j):
-        for v in range(nv):
-            c = part * Ph[:, v]  # (M,)
-            for i in range(2):
-                for j in range(2):
-                    # dE_ab = c d_ai conj(U_bj) + conj(c) U_aj d_bi
-                    dE = np.zeros((M, 2, 2), complex)
-                    dE[:, i, :] += c[:, None] * U[:, :, j].conj()
-                    dE[:, :, i] += c.conj()[:, None] * U[:, :, j]
-                    e = dE[:, iu[0], iu[1]]
-                    cols.append(np.concatenate([e.real.ravel(), e[:, 1].imag.ravel()]))
-    return np.array(cols).T
+        c = part * Ph  # (M, nv)
+        # T1[m,v,i,j,a,b] = c[m,v] d_ai conj(U[m,b,j]);  T2 = conj(c) U[m,a,j] d_bi
+        T1 = np.einsum("mv,ai,mbj->mvijab", c, I2, U.conj())
+        T2 = np.einsum("mv,maj,bi->mvijab", c.conj(), U, I2)
+        dE = (T1 + T2).reshape(len(U), 4 * nv, 2, 2)
+        e = dE[:, :, iu[0], iu[1]]  # (M, 4nv, 3)
+        blocks.append(np.concatenate([e.real.transpose(0, 2, 1).reshape(-1, 4 * nv),
+                                      e[:, :, 1].imag], axis=0))
+    return np.concatenate(blocks, axis=1)
 
 
 def F_and_grad(x):
@@ -74,10 +72,10 @@ for s in range(nseed):
     x = np.concatenate([rng.normal(size=4 * nv), rng.normal(size=4 * nv)]) / np.sqrt(2 * nv)
     x = minimize(F_and_grad, x, jac=True, method="L-BFGS-B",
                  options={"maxiter": 3000, "ftol": 1e-30, "gtol": 1e-14}).x
-    sol = least_squares(resid, x, jac=jacfun, method="lm", xtol=1e-15, ftol=1e-15, gtol=1e-15, max_nfev=5000)
+    sol = least_squares(resid, x, jac=jacfun, method="lm", xtol=1e-15, ftol=1e-15, gtol=1e-15, max_nfev=300)
     d, sm, w = measure(sol.x)
     rows.append((s, d, sm, w))
     print(f"  seed {s:2d}: sup|UU^+-1| = {d:.2e}  min sing.val = {sm:.3e}  W3_GL = {w:+.4f}", flush=True)
-    if time.time() - t0 > 50:
+    if time.time() - t0 > 45:
         break
 print(f"time {time.time()-t0:.1f}s")

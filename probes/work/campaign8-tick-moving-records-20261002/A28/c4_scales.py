@@ -65,3 +65,13 @@ for cc in (5.4e-44, 1e-3):
     for lam in (5e-6, 5.3e-4):
         adv = cc * lam * 13.8e9 * 3.156e7 / tP
         print(f'  creep: c = {cc:.1e}/tick, floor {lam:.1e}: advance over the age ~ {adv:.2e} sites = {adv * lP:.2e} m')
+
+# Ungated comparison: sharp false records in VOIDS at eps per site per tick, each injecting
+# ~E_P (c2: 0.21-0.85 J in lattice units), must not build up more than the observed dark-energy
+# density over the age of the universe (a generous ceiling).  Gating makes this rate exactly 0.
+age = 13.8e9 * 3.156e7
+rho_DE = 0.69 * rho_c * c ** 2  # J/m^3
+pdens = EP / (lP ** 3 * tP)     # W/m^3 at one sharp record per site per tick
+for eJ in (0.21, 0.85):
+    print(f'void heating (ungated, sharp records, {eJ} E_P each): eps_void <~ {rho_DE / age / (eJ * pdens):.1e} per site per tick '
+          f'(compare A12/A4 freezing 1.2e-61)')

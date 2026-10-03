@@ -24,7 +24,7 @@
    - **The road left open** is a field carried by the shared possibilities. The grid's own symmetry pins its "shape" version to Einstein's linear gravity.
    - **Conditions:** its ripples need a change that moves things, which the smooth change of point 2 provides; the places need a fixed 2×2×2 pattern of jobs, or the field comes out as 8 copies (A25); forming a record must not change energy; and how one qubit per site hosts the field is open.
    - **Matter on that field (A26).** Tied to the field in the simplest fixed way, matter bends light by the full amount and falls alike, with no extra choices. The supplied pieces are how link weight is classed and a small in-block shuffle for one ripple type.
-5. **Empty space** must essentially never form records, or every region freezes. That is hard with the repo's current half-filled-sea vacuum.
+5. **Empty space** must essentially never form records, or every region freezes. If records form only next to records (A28), empty space is exactly quiet whatever it is made of, and distant light crosses it untouched. The half-filled-sea vacuum then causes trouble only at the skin of matter, where records would creep into it and heat it. The world must also start with some records.
 6. **Handedness.** Ticks by themselves do not give a preferred handedness. This is exact for single free particles.
 
 ## How to read this
@@ -196,7 +196,7 @@
   - **My check.** I rebuilt the 2D toy independently: all four bands follow the field's geometry exactly.
 - **The repo** has unaudited notes in this direction. Extending your approved "kinetic isotropy" primitive to such a field would supply Einstein's weights. That would be your call.
 
-### 7. Empty space must essentially never form records, or every region freezes (A4, A6, A9, A12)
+### 7. Empty space must essentially never form records, or every region freezes (A4, A6, A9, A12, A28)
 - **Freezing time.** At any steady rate, empty space freezes within about one over that rate, in ticks.
 - **The half-filled sea.** In the repo's current vacuum, a one-tick, nearest-neighbour, straight-average rule forms false records at least 5 per million times as often as it records a real passing thing. That is the best case; an energy-based rule is about 1 in 80. At Planck ticks:
   - a rule strong enough to record a particle within a second fills empty space within days;
@@ -205,6 +205,18 @@
 - **A hint from the sky.** Light from distant galaxies arrives without forming records on the way.
   - Letting records form only next to existing records would explain this and keep empty space exactly quiet. The cost: an empty grid would stay empty forever.
   - A rule that simply ignores light would explain the first but not the second.
+- **Records form only next to records (A28, checked).** Tested inside the point-0 shape.
+  - **What it gives:**
+    - empty space far from every record never forms one, whatever kind of emptiness it is (exact);
+    - light crossing it is left completely alone;
+    - no faraway influence leaks, because the rule looks only at the records next door, and those always agree with the spot they sit on;
+    - records spread at most one site per tick, provided the rule looks at the records present at the start of the tick.
+  - **The problem moves to the skin of matter.** Next to any record, the half-filled sea always has some chance of being recorded (exact). So records creep into it, and each new one heats its surroundings far beyond what is seen. Next to matter, empty space would have to be the tidy, lined-up kind, or recording there would have to build up slowly over many ticks. My check reproduced the key numbers exactly.
+  - **Other costs:**
+    - a world with no records stays empty forever, so the world must start with some;
+    - whether everything fills up and stops depends on one more choice, namely whether a spot fully surrounded by records may still form one;
+    - in dense transparent matter such as glass or water, light escapes recording only if records are small and sparse, recording is weak, or the rule ignores light.
+  - **One encouraging case.** With a tidy emptiness and records whose content lies along its direction, recording stops once there is nothing left to record, while records keep moving forever: no freezing, no thinning.
 
 ### 8. Handedness, the chirality problem (A1, A2, A11)
 - **Single free particles:** on a uniform grid, steps of strictly limited reach always pair each left-handed mover with a right-handed one. This is exact, resting on one standard algebra theorem reached two ways. Interactions and record edges are untested.
@@ -242,7 +254,7 @@ My overnight note was too strong; the reviewers caught it.
    - a longer reach (4 sites works but scrambles; 2–3 untested);
    - a faint longer reach.
 3. **What moves.** Records re-formed at every step (classical wanderers), or unrecorded possibilities that leave a fresh record only when one forms (interference survives)?
-4. **Empty space.** Does it form records on its own? Keeping regions from freezing says no, which puts the half-filled-sea vacuum in doubt unless a many-tick rule with memory is allowed.
+4. **Empty space.** Does it form records on its own? Keeping regions from freezing says no, which puts the half-filled-sea vacuum in doubt unless a many-tick rule with memory is allowed. One way to say no: records form only next to records (A28). That brings its own choices: the world starts with some records; the rule looks at the records present at the start of each tick; you decide what a fully surrounded spot does; and the emptiness next to matter is tidy, not half-filled.
 5. **Time.** Does it count every formation (unbounded, stored in no record) or only new records (bounded)?
 6. **Menu wording.** The proposed text above.
 7. **Permanence.** Does "permanent" mean "never destroyed, may re-form next door"? That is Record-axiom wording, so it needs your exact text. Under the six-direction step, what a record locks also changes at most steps.
@@ -254,4 +266,4 @@ My overnight note was too strong; the reviewers caught it.
 13. **A gravity field.** May the shared possibilities carry a never-locked "shape" field that the fixed rule passes along? May the gluing to the grid tilt from place to place as part of that field? Must a forming record leave energy unchanged (A23)? May the places carry a fixed 2×2×2 pattern of jobs for it, one of 8 layouts that never changes (A25)? If matter is tied to it (A26): is weight carried in links classed as weight rather than motion, and is the in-block shuffle allowed?
 14. **When records form.** Only on caught, settled things, slowly compared with the tick (A24)? This is needed for energy bookkeeping under the gravity field, and for straight tracks (A19).
 
-*Still running: A28 (records form only next to records, under the A27 shape) and a third hostile review (A29) of A22–A27 and this draft.*
+*Still running: a third hostile review (A29) of A22–A27 and this draft; A30 (your black-hole idea under the point-0 shape). Next: A31, assembling the point-0 shape into one model.*

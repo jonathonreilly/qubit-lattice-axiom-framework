@@ -19,3 +19,5 @@ A19 bound 1e-90 /nucleon/tick at ~E_P each = 2.19e-11 W/kg of matter
   creep: c = 5.4e-44/tick, floor 5.3e-04: advance over the age ~ 2.31e+14 sites = 3.74e-21 m
   creep: c = 1.0e-03/tick, floor 5.0e-06: advance over the age ~ 4.04e+52 sites = 6.53e+17 m
   creep: c = 1.0e-03/tick, floor 5.3e-04: advance over the age ~ 4.28e+54 sites = 6.92e+19 m
+void heating (ungated, sharp records, 0.21 E_P each): eps_void <~ 6.8e-184 per site per tick (compare A12/A4 freezing 1.2e-61)
+void heating (ungated, sharp records, 0.85 E_P each): eps_void <~ 1.7e-184 per site per tick (compare A12/A4 freezing 1.2e-61)

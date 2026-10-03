@@ -1,0 +1,5 @@
+P(at least one formation within 6 ticks); ring N=6, one record at site 0
+  vacuum=aligned weight=B: |0> = n: 0.000e+00   |1> = -n: 8.882e-16   |+> off axis: 6.561e-02   
+  vacuum=aligned weight=A: |0> = n: 0.000e+00   |1> = -n: 7.176e-01   |+> off axis: 4.297e-01   
+  vacuum=random  weight=B: |0> = n: 3.989e-01   |1> = -n: 3.936e-01   |+> off axis: 3.880e-01   
+  vacuum=random  weight=A: |0> = n: 6.586e-01   |1> = -n: 6.609e-01   |+> off axis: 6.100e-01   

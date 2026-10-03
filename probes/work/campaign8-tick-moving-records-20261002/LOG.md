@@ -1134,7 +1134,7 @@ Two readings of a move, R1 and R3, behave very differently.
 
 **Comparators.** Real detection is catch-and-amplify (Glauber); the result is the record-level analogue of Wigner–Araki–Yanase / Ozawa.
 
-## 02:05 (real) A26 (matter on the field through fixed lapse and frame couplings) LANDED → c8/A26/REPORT.md (+ walk2d, rs2d, s0–s3, t0–t5)
+## 01:52 (real) A26 (matter on the field through fixed lapse and frame couplings) LANDED → c8/A26/REPORT.md (+ walk2d, rs2d, s0–s3, t0–t5)
 
 **Setup.** A18's time-symmetric one-site-mass Dirac step in 1D and 2D, on a static field N = 1 − U, h_ij = 2Uδ_ij (A23 D16). Fixed couplings:
 - lapse × every term;
@@ -1178,7 +1178,7 @@ New conditional G1 (the matter half of F4): a uniform lapse or a uniform stretch
 
 **My reading for the owner.** The field route now has a working matter side. If matter is tied to the field in the simplest fixed way, light bends by the full amount and everything falls alike. The condition is that weight carried in links is not itself stretched, and the field's own bookkeeping already forbids that. The diagonal kind of gravitational ripple is felt only through a fixed in-block shuffle (supplied).
 
-## 02:20 (real) A25 (real-space covariant spin-2 tick, "Yee for spin-2") LANDED → c8/A25/REPORT.md (+ stag2, check_hp, check_cp, check_colloc, limits)
+## 01:59 (real) A25 (real-space covariant spin-2 tick, "Yee for spin-2") LANDED → c8/A25/REPORT.md (+ stag2, check_hp, check_cp, check_colloc, limits)
 
 **The staggered construction works.**
 - **Layout.** h_ii and π_ii sit at vertices; h_ij and π_ij at faces. In the curl-split form, C = curl h sits at edges and cubes.
@@ -1209,3 +1209,64 @@ New conditional G1 (the matter half of F4): a uniform lapse or a uniform stretch
 - Under Option R, a collocated, covariant field with exact standard gauge invariance therefore has a spatial doubler at (π,π,π), or 8 graviton copies with symmetric differences.
 - **Corrected statement:** Option R removes the field's time doubler and its tick-schedule roles. It does NOT remove the need for a role pattern in space (F6), unless a lattice-modified gauge symmetry is found (open, A25 §6.3) or 8 graviton copies are accepted.
 - The draft's §0 "What it keeps" and decision 13 must change. Sent to A29 for an independent ruling.
+
+## 02:07 (real) Launched A30: the owner's black-hole instinct (I5) under the Option R package (brief: c8/A30_PROMPT.md)
+- **Questions:**
+  1. wall vs absorber at a jam surface (1D exact capture/reflection; Zeno; critical coupling; graded surface; 2D cross-section);
+  2. leak vs seal under SW odds;
+  3. what "time stops inside" can mean when the field (F1) stays unlocked;
+  4. a horizon estimate at grid density (comparator);
+  5. information on the surface records;
+  6. evaporation vs Hawking.
+- **Load at dispatch:** 3.56, RAM 35% free. Running alongside A28 (numeric, finishing) and A29 (review, near read-only).
+- **Coordinator pre-derivation**, not given to A30. For a 1D tight-binding wall with surface capture rate Γ: |r|² = (t² + Γ²/4 − tΓ sin k)/(t² + Γ²/4 + tΓ sin k). It is black only at k = π/2 with Γ = 2t. Fast capture reflects (Zeno). A30's result is to be compared against this.
+- **Pre-derivation CHECKED** (toys/zeno_wall_1d.py; wave packet, L = 1600, σ = 60). Reflected norm matches the formula to 1e-4 at k = π/2, π/3 and π/6 for Γ = 0.2 to 20.
+  - Exact duality Γ ↔ 4t²/Γ: fast capture reflects exactly as much as slow capture.
+  - Black only at k = π/2, Γ = 2t.
+  - Slow movers (k → 0) reflect most.
+  - So a sharp one-site capture surface is a mirror for slow matter.
+
+## 02:09 (real) A28 (gated formation under Option R: "records form only next to records") LANDED → c8/A28/REPORT.md (+ c1–c5)
+
+**Candidate G.** F_x = Σ_R |R⟩⟨R| ⊗ F^(R), with F^(∅) = 0 and a linear local weight for R ≠ ∅, combined with Option R (smooth compressed change, SW, CL).
+
+**Results**
+- **(a) Voids are EXACTLY quiet for ANY vacuum.**
+  - A site with no recorded neighbour never forms a record, and its no-record update is the identity. Voids evolve by the smooth change alone, so light in voids is never recorded or disturbed.
+  - A12's Reeh–Schlieder result covers record-ignoring weights only (C15).
+  - Comparator arithmetic: an ungated sharp rule on a full-rank sea would need ε_void ≲ 1e-184 per site per tick (dark-energy heating).
+- **(a') The edge floor (EXACT).** P(form | R) ≥ λ_min(ρ_U)·tr F^(R). Next to a record, a free-fermion sea is FULL RANK on the unrecorded star (EXACT: trigonometric-polynomial argument).
+  - 1D: ν = {0.0756, 0.9244}, min many-body eigenvalue 5.71e-3.
+  - 3D planar wall: ν ∈ [0.092, 0.908], 5.27e-4.
+  - So records BREED into a full-rank (half-filled) sea at matter's edges, and the quiet-vacuum criterion (rank deficiency) moves to the edges.
+- **(b) No signalling.** Gating is classical control by records, and records are cut to agree with their sites. Package toy TV ≤ 4.1e-16; agreement 1.05e-15.
+  - Uncut contrast (GHZ): TV ≥ (c/z)p/4.
+  - Gating on START-OF-TICK records gives a strict record cone of one site per tick. Post-step gating gives 2; in-tick gating gives unbounded chains. That choice is named.
+- **(c) Freezing is decided by the enclosed-hole rule.**
+  - Open enclosure: fills and freezes (V1).
+  - Blind enclosure: thins (V2).
+  - The quiet class (weight B on an aligned emptiness, record contents on its axis) is an EXACT dark sector: formation stops once excitations are used up, and steps continue forever (V3: 2.05e-2 events per site per tick, steady). Off-axis records breed.
+- **(d) Light near matter (ARGUED model).**
+  - The intergalactic medium and galaxies pass for records up to nucleon size.
+  - Fibre and water fail by 10²–10⁵ with nucleon-sized recorded balls, unless the weight ignores light, records are sparse, or κ is small.
+- **Costs**
+  - An empty world never starts, so a preparation of records is required (EXACT).
+  - Full-rank sea at edges:
+    - breeding (Fisher–KPP fronts);
+    - A6 screening flips to anti-screening;
+    - each sharp edge record injects ~0.21–0.85 J (8/(3π)J closed form).
+    With J ~ E_P, the heating bound gives c ≲ 3e-86 per tick, so a real excitation beside a record would be recorded about once per 1.6e42 s. So a z = 1 sea needs a quiet emptiness or windows at edges.
+  - Q4 must be read as conditional on formation.
+  - Further named choices: the enclosure rule, start-of-tick gating, and whether "no records" is a state the law never leaves.
+
+**Coordinator check** (toys/verify_A28_edge.py; closed forms plus my own 3D mode sums)
+- 1D wall star: C11 = C22 = ½ and C12 = 4/(3π), so ν = ½ ± 4/(3π) = {0.0756, 0.9244} and min many-body eigenvalue 5.713e-3. EXACT match; finite N = 200/800 agrees to 2e-5.
+- 1D bulk 3-site star: ν = ½, ½ ± √2/π, so 1.242e-3. Match.
+- 3D planar wall (open x, periodic y and z, small twist), L = 16 and 24: wall 6-star ν ∈ [0.092, 0.908], min 5.27e-4; bulk 7-star 2.58e-4. Match.
+- GHZ uncut contrast re-derived by hand: P(step, then form) = (c/z)·½·p·½ with b unrecorded, and 0 with a Z record on b. Match.
+- NOT re-run: c3 2D growth, c5 dark-sector ring, c4 arithmetic.
+
+**My reading for the owner**
+- Gating makes empty space exactly quiet and lets distant light through untouched, for any kind of emptiness.
+- The emptiness problem does not vanish, though. It moves to the skin of matter: if empty space next to matter is the half-filled kind, records creep into it and heat things far too much.
+- So the gated picture prefers a tidy, lined-up emptiness, at least next to matter. Separately, the world must start with some records.

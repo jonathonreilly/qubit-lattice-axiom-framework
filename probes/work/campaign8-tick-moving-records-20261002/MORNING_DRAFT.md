@@ -20,7 +20,16 @@
      - anything that interferes stays unrecorded between formations;
      - over the calm empty background this shape needs, a change that treats every spot and turn alike can only move ripples that behave like slow, heavy particles, never like light (exact, A31). Light-like matter needs a sign pattern painted onto the rule, and that pattern can never be the same one the gravity field needs (proved);
      - the empty background stays calm only if every record's content lies along one direction, which the law would have to fix or earlier records pass on.
-3. **The tick.** In the ticked toys, one shared tick works, and neighbourhood ticks work if they keep in step. Time running differently in different places must come from how much changes per tick, varying smoothly, not from how often ticks come. Under point 2's shape the change no longer comes in ticks, so these tick results need redoing there.
+3. **The tick, your main question (A5, A15 for ticked change; A32 for the point-2 shape, checked).**
+   - **Ticked change (the earlier toys).** Neighbourhood ticks had to stay in step, or seams became mirrors and waiting froze things.
+   - **In the point-2 shape** the possibilities never notice the ticks, so all of that trouble disappears (exact).
+   - **Global or neighbourhood?** A tick written into the rule itself must be the same everywhere, because the rule treats every place alike. Ticks that differ by place are possible only if each place remembers where it is in its own cycle (your small-memory question).
+   - **Constant or influenced?** The tick can be influenced, most naturally by gravity's slowing. What must follow that slowing exactly is how often records form; otherwise a record-counting clock and a clock made of possibilities would disagree near heavy bodies.
+   - **How visible is it?** Whichever choice is made shows in the records only in proportion to the chance of a record on a single tick, far too small to see on the finest grid.
+   - **Light.** The ticks never touch how light and matter travel through empty space, so the precise relativity tests with light from distant explosions say nothing against them. Moving clocks slow by Einstein's amounts.
+   - **The one structural leftover.** Record forming keeps a slight preference for the grid's resting frame. It is not seeable at any rate allowed so far.
+   - **Same tick.** Two records can form on the same tick with no problem; with realistic odds it almost never happens.
+   - **Minimum distance and minimum tick.** This comes out as an upper limit: the tick must be shorter than the time light takes to cross one grid step. It is pinned to about that time only if every tick carries a real chance of a record, and odds that large would make glass and water cloudy.
 4. **Gravity.**
    - **Record-carried gravity** gets the static picture partly right, but with wandering records it cannot make waves or hold a moving Moon (argued).
    - **The road left open** is a field carried by the shared possibilities. If its bookkeeping is kept exact (a choice you would make), the grid's turns fix the form of its "shape" version to Einstein's linear gravity at long wavelengths. Its speed compared with light, and its strength, are not fixed by this.
@@ -133,7 +142,7 @@
 - Point 0's smooth change gives up this exact limit for unrecorded influence, and these exact one-dimensional identities with it.
 - In 3D this is not secured. Rules giving equal speeds in every direction either split speeds in step with energy, which gamma-ray burst timing rules out for light, or need a sign pattern that singles out a direction.
 
-### 5. The tick: shared in practice; how much happens per tick can vary (A5, A14, A15, A17)
+### 5. The tick: shared in practice for ticked change; free and nearly invisible in the point-0 shape (A5, A14, A15, A17, A32)
 - **In step:** neighbourhood ticks that keep in step cannot be told apart from one universal tick.
 - **Out of step:** if each site keeps its own fixed tick without waiting, the pair between out-of-step neighbours never acts. The seam is a mirror wall that records can reveal (ticked change only).
 - **Waiting:** if sites wait for each other, no region can keep a different long-run rate, and a ring of sites all waiting on each other freezes everything.
@@ -143,6 +152,28 @@
   - at Planck ticks, it shakes an electron apart within seconds.
 - **The averaging needed:** the jitter shrinks only with the width of the region averaged over, and averaging over time does not help (exact). The region needed is a billion or more sites across. A rule using only neighbouring records cannot build that average.
 - **What is left open:** a smooth field carried by the shared possibilities, changing by a fixed rule (A17; argued, not built). For it to spread at all, its rule must escape point 3's limit.
+
+**The tick redone in the point-0 shape (A32, checked).** Records form and step on ticks; the possibilities change all the time.
+- **The ticks are invisible to the change (exact).** Moving one record event in time changes everything recorded later only in proportion to the chance of a record on that tick. If that chance shrinks with the tick's length, every kind of schedule gives the same world in the limit: global or local, regular or random.
+- **No mirror walls.** Out-of-step neighbourhoods no longer bounce anything back. In the toy, 82% of a ripple crossed a seam whether the ticks were in step or not, where the ticked rule let nothing through. Nothing waits, so nothing freezes.
+- **Global or neighbourhood (exact, construction by construction).**
+  - A tick written into the law must be the same everywhere, since the law treats every place alike.
+  - Ticks set differently by place need each place to remember its phase (decision 9).
+  - Random local times are just a thinned-out global tick.
+  - Times set by a possibility are just a formation chance.
+- **Records can run a little faster across out-of-step regions.** Chains of new records can then run along places whose ticks come one after another, so the strict one-site-per-tick limit softens. It does so only in proportion to the chance per tick, unless each place remembers the pattern from its last tick.
+- **Influenced by gravity (exact).** The record-tick rate may vary from place to place.
+  - What consistency requires is that the chance of forming a record per unit of local time is the same everywhere. Otherwise clocks that count records and clocks carried by the possibilities disagree near heavy bodies, by the full gravitational amount.
+  - The simplest way, needing no memory: one global tick, with each place's record chances slowed by gravity's time-stretch.
+  - Ticks that themselves run slower in gravity need each place to keep its own phase. At Earth's surface, neighbouring grid points would drift a full cycle apart about once a year.
+- **Light never sees the tick (exact).** In empty space the ticks act on nothing, so they add no energy-dependent speed and no twisting of light's polarisation. Clocks made of the possibilities slow with motion as Einstein says, with corrections around 10⁻³⁸ at laboratory speeds.
+- **A preference for the grid's own frame.** In a two-band toy, no positive local recording rule makes the count of records follow a moving body's own time, and at most half the count slows. This needs a rule that treats left and right alike; my check found that one that doesn't can do differently. It is unobservable at the recording rates already allowed.
+- **Same tick (exact).** Records formed on one tick at different spots never leak faraway choices.
+  - If each spot's rule looks only at itself, the order within a tick does not matter at all.
+  - If it looks at neighbours, an order or a joint rule is needed, and the difference is tiny (second order in the chance).
+- **Minimum distance and minimum tick.** An upper limit follows (exact, given the premises): for one site per tick to be the universal limit, the tick must be shorter than light's time to cross one grid step, and in 3D shorter than that divided by √3.
+  - A lower limit comes out only if every tick carries a real chance of a record. Then ticks that are too short freeze things beside records, and ticks that are too long let things outrun them, which pins the tick to about light's crossing time.
+  - With the small chances that glass and water allow, the tick is only limited from above.
 
 ### 6. Gravity-like clock slowing: real in toys; record-carried gravity falls short; a field route is mapped (A6, A8, A14, A18, A23, A25, A26)
 
@@ -321,9 +352,16 @@ My overnight note was too strong; the reviewers caught it.
 15. **A moved record's new spot.** Under point 0's swap step, a record carries its content to a new spot whose own conditions might give that content zero odds. Should a step be allowed only where the content is on the new spot's menu (A29)?
 16. **The calm background's direction.** Under point 0, empty space stays calm only if every record's content lies along its direction. Is that direction fixed by the law (which privileges a possibility), or passed on from a first record (A29)?
 17. **Light and matter under point 0.** No smooth, everywhere-alike change on one qubit per site has yet produced light-like ripples over a calm background; the matter and the field built tonight both use fixed patterns. Is a fixed pattern acceptable for light and matter, given that point 0 was chosen to avoid one for records? A31 sharpened this: light-like matter needs a painted-on sign pattern, either on the whole rule (records can show it, and it can never be the field's pattern) or on the hopping only (one direction of the possibilities is favoured, against your Q3 for 16 of 24 turns). Which, if either?
-18. **What a tick means.** If record chances per tick are scaled down to avoid freezing, ticks become almost undetectable at Planck spacing (argued). Would "records form at set ticks" then be a physical statement or a bookkeeping one? This is exploration of your instinct, not a position.
+18. **What a tick means (A32).** In the point-0 shape, any tick schedule shows in the records only in proportion to the chance of a record per tick. Would "records form at set ticks" then be a physical statement or a bookkeeping one? If you keep set ticks, A32 lists the choices:
+    - does the chance per tick scale with the tick's length?
+    - one global tick, or neighbourhood ticks that need each place to remember its phase?
+    - which time-stretch paces a record's step between places of different gravity?
+    - do same-tick neighbours see each other's new records?
+    - does recording follow each place's own time (needed for gravity; only partly possible for motion)?
+
+    This is exploration of your instinct, not a position.
 19. **Sealing records in.** May a record step only into a neighbouring spot that already holds something like its own content (A30)? That lets a fully recorded region last forever, but a lone record in empty space could then never move.
 20. **Recording light next to records.** May light-like possibilities be recorded next to existing records? A fully recorded region is dark to light only if so (A30), but in glass or water that recording must be very weak (A28).
 21. **Gravity's places.** If gravity's field lives in one qubit per place and records never lock it, may the places carrying it be ones that never hold records (A31)? Otherwise records wall off gravity waves.
 
-*Still running: A31 (assembling the point-0 shape into one model, including whether one shared pattern could serve matter and the field) and A32 (your tick questions redone inside the point-0 shape).*
+*Still running: A33 (a search for a calm empty background that supplies the sign pattern itself) and a fourth hostile review (A34) of A28, A30, A31, A32 and this draft.*

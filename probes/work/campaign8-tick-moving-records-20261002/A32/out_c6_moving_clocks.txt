@@ -27,3 +27,9 @@ C6. Moving internal clocks under smooth lattice change (1D two-band block)
     muon g-2 ring, p = 3.09 GeV              k a = 2.53e-19   v^2 tan^2(ka) = 6.40e-38
     Li+ ions at 0.34c (Ives-Stilwell type)   k a = 1.92e-19   v^2 tan^2(ka) = 4.28e-39
     1 PeV cosmic-ray proton                  k a = 8.19e-14   v^2 tan^2(ka) = 6.71e-27
+
+C6b. Can a positive local formation weight make a counting clock tick in proper time?
+  Single-particle two-band toy; translation-invariant weight with constant 2x2 block F = a + b sz + d sx (PSD iff a >= sqrt(b^2+d^2)).
+  Upper-band count rate <F>(k) = a + (b m + d sin k)/omega.  Proper-time counting needs <F>(k)/<F>(0) = m/omega = R(k).
+  best dilating fraction over 20000 random PSD weights: f = 0.500000 (a=0.7786, b=0.7786, d=0.0000); exact bound 1/2 at a = b, d = 0
+  example m=0.1, k=0.3: v=0.9049, proper-time factor R=0.3205; best positive weight counts at (1+R)/2 = 0.6603; number weight (a=1,b=d=0) counts at 1 (lattice time)

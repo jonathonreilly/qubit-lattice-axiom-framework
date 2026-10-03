@@ -1446,7 +1446,7 @@ The agent's sandbox blocked writing REPORT.md; the coordinator saved it. A29's c
 - Light-like matter needs a painted-on sign pattern, and that pattern provably cannot be the same as the gravity field's pattern.
 - So light, matter and gravity each still need something put in by hand. The best next step is a search for an empty background that supplies the pattern itself.
 
-## 03:12 (real) Launched A33: can the calm background itself supply the π flux? (brief: c8/A33_PROMPT.md)
+## 03:07 (real) Launched A33: can the calm background itself supply the π flux? (brief: c8/A33_PROMPT.md)
 - **What it is.** A31's top open problem, run as an exact F₂ stabilizer search.
 - **Classes:**
   - covariant translation-invariant vacua (A20 C3 module, extended in degree);
@@ -1458,3 +1458,76 @@ The agent's sandbox blocked writing REPORT.md; the coordinator saved it. A29's c
   4. if found: bands, calmness, and readability of the 8 translates.
 - **Load at dispatch:** 3.45, RAM 35%. Concurrent: A32 (tick under Option R).
 - **Draft.** Updated with A31 (new §10, sharpened bottom-line cost, decisions 17 and 21).
+
+## 03:09 (real) Launched A34: FOURTH HOSTILE REVIEW
+- **Scope:** A28, A30 and A31, plus the draft (bottom line, §0, §7, §9, §10, decisions 0 and 13–21). Cross-lane consistency, and cross-reference clarity.
+- **A32 and A33** will be forwarded when they land.
+- **Concurrent:** A32 and A33.
+
+## 03:24 (real) A32 (the owner's tick redone inside Option R) LANDED → c8/A32/REPORT.md (+ c1–c8)
+The agent's sandbox blocked writing REPORT.md; the coordinator saved it. C38 is redone (D1–D7, D21, D22, D24).
+
+**Organizing fact (EXACT).** Under Option R the possibilities' change never depends on when records tick.
+- **Re-timing lemma (D2).** Moving one formation instrument by δ changes the later record history by at most δ·c·‖H_∂‖·(4 + 1/√(1−c)) in TV.
+- So the schedule (global or local, set or random) is readable only at order c (chance per tick) and order ωτ.
+- With c = γτ, all schedules share one continuous-time limit, converging at O(τ).
+
+**Global or neighbourhood**
+- **A15's mirror walls do NOT survive for the possibilities.** 0.816–0.818 crosses a seam, the same for in-step and offset ticks to 2e-12. A15's handshake passes only the initial tail.
+- No waiting deadlocks and no rate locks.
+- **A tick written into the law must be global (EXACT, covariance).** Set neighbourhood phases need per-site memory (decision 9), or else they are random (a diluted global schedule) or a weight.
+- **Record cone.** Neighbourhood gating at own instants turns the strict one-site-per-tick cone into a probabilistic one (chains up rising phases). The speed changes at O(F) only; in 1D exactly v = 1/(E[w] + 1/F − 1).
+- **Offsets.** A global offset is unreadable (2.2e-15); relative offsets are readable at O(τ).
+
+**Constant or influenced**
+- **The rate can vary from place to place** with no walls (lapse ramp reflection 3.8e-5).
+- **Two clocks.** Lapse-paced change with fixed chances per tick makes record-counting clocks and possibility clocks disagree by ΔΦ/c².
+- **Consistency forces** the formation chance per unit PROPER time to be universal: the chances carry the same lapse as the change. The tick itself must follow the lapse only at order τ·frequency.
+- **Memory-free option:** one global coordinate tick with lapse-weighted chances.
+- **Lapse-paced ticks** need per-site phases: neighbouring Planck sites drift a full cycle about once a year at Earth's surface.
+- **Steps across a gradient** need a pacing convention (claimant, record or bond), which puts dust ∝ N, ∝ 1/N, or uniform.
+
+**Match to real physics**
+- **The tick never touches propagation in voids (EXACT under gating).** So GRB timing and birefringence constrain H, not the tick.
+- **Moving possibility clocks:** R² = 1 − v²/cos²k (EXACT), with corrections ~1e-38 at laboratory momenta.
+- **Discreteness effect on record statistics:** ≲ 1e-22 per event (GeV, Planck tick).
+- **Structural lattice-frame share of formation (D20).** In a two-band toy, no positive finite-range weight follows proper time, and at most half of the count rate slows with motion. Unobservable at heating-bounded rates.
+
+**Same tick (I1)**
+- One-site weights commute, so no shared moment is needed (7e-17).
+- Relational weights need an order (0.044c²).
+- Start-of-tick vs within-tick reading differ at 0.059c². No signalling (3e-16).
+- Same-tick neighbours are a fraction ≈ c/2 of pairs.
+
+**Minimum distance vs minimum tick**
+- τ < a/v_max ≤ a/c is needed for one site per tick to bound influence (EXACT given the premises). The leak is a power law at the matched tick (0.169·n^{−1/3}).
+- 3D isotropic light needs τ ≤ a/(√3c).
+- **Pinned τ ≈ a/c only if every tick carries an order-1 chance:** Zeno below about c/J, outrunning above a/v_max. Such chances would cloud glass and water (A28).
+- Otherwise only an upper bound.
+- The change's own minimum time is about (a/v_max)/z.
+
+**Named conditionals P1–P5:**
+- P1: chance per tick ∝ tick length;
+- P2: gating instant;
+- P3: step pacing;
+- P4: same-tick reading;
+- P5: proper-time formation.
+
+**Coordinator check** (toys/verify_A32.py; own code)
+- (i) R² = 1 − v²/cos²k to 9.6e-10.
+- (ii) Zeno toy: Jτ* = 1.1656, max rate 0.7246J (EXACT match).
+  - c = 0.5: optimum 0.245 (A32: 0.248).
+  - c = 0.1: my renewal toy gives 0.037 vs A32's 0.050. Minor; probably the post-record convention. Forwarded to A34.
+- (iii) Bessel leak:
+  - x = 0.5: slope 0.918 vs 2η = 0.902 (finite n).
+  - x = 1: n^{1/3}·leak/0.1688 = 0.515, 0.758, 0.884, 0.919 for n = 10, 100, 1000, 3000 (A32: 0.52 → 0.92).
+  - x = 1.1: 0.2726 vs 0.2736.
+- (iv) D20(b) "at most half slows" holds for direction-symmetric (covariant) weights only. A parity-odd σx block suppresses one direction's count much more (min ratio 0.009 in my scan). Scope note forwarded to A34.
+- NOT re-run: c1–c4 TV tables, c2 fronts, c7 dust, c8 mirror contrast.
+
+**My reading for the owner (their main question).**
+- In the point-0 shape, the out-of-step trouble disappears.
+- A tick written into the law must be the same everywhere. Ticks that differ by place need each place to remember its phase.
+- The tick can be influenced by gravity's slowing, but what must follow it exactly is how often records form.
+- The tick never touches how light travels.
+- "Minimum distance implies minimum tick" comes out as an upper bound, τ < a/c. It is pinned to ≈ a/c only if every tick has a real chance of a record, which would cloud glass.

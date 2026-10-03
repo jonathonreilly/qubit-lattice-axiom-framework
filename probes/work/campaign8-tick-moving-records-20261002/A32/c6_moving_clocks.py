@@ -63,3 +63,30 @@ for name, pGeV, vv in [("muon g-2 ring, p = 3.09 GeV", 3.09, 0.9994), ("Li+ ions
                        ("1 PeV cosmic-ray proton", 1e6, 1.0)]:
     ka = pGeV * GeV_per_EP
     print(f"    {name:<40} k a = {ka:.2e}   v^2 tan^2(ka) = {vv**2*np.tan(ka)**2:.2e}")
+
+print("\nC6b. Can a positive local formation weight make a counting clock tick in proper time?")
+print("  Single-particle two-band toy; translation-invariant weight with constant 2x2 block F = a + b sz + d sx (PSD iff a >= sqrt(b^2+d^2)).")
+print("  Upper-band count rate <F>(k) = a + (b m + d sin k)/omega.  Proper-time counting needs <F>(k)/<F>(0) = m/omega = R(k).")
+rng = np.random.default_rng(66)
+m = 0.1
+ks = np.linspace(-0.5, 0.5, 201)
+w = np.sqrt(np.sin(ks) ** 2 + m ** 2)
+R = m / w
+best = None
+for trial in range(20000):
+    b = rng.uniform(-1, 1); d = 0.0 if trial % 2 == 0 else rng.uniform(-1, 1)
+    a = np.sqrt(b * b + d * d) * (1 + rng.exponential(0.5)) if trial % 3 else np.sqrt(b * b + d * d)
+    Fk = a + (b * m + d * np.sin(ks)) / w
+    F0 = a + b
+    if F0 <= 1e-9:
+        continue
+    ratio = Fk / F0
+    # dilating fraction: fit ratio = (1-f) + f R  (f=1 would be proper-time counting)
+    f = np.dot(ratio - 1, R - 1) / np.dot(R - 1, R - 1)
+    resid = np.max(np.abs(ratio - ((1 - f) + f * R)))
+    if best is None or f > best[0]:
+        best = (f, a, b, d, resid)
+print(f"  best dilating fraction over 20000 random PSD weights: f = {best[0]:.6f} (a={best[1]:.4f}, b={best[2]:.4f}, d={best[3]:.4f}); exact bound 1/2 at a = b, d = 0")
+k1 = 0.3; w1 = np.sqrt(np.sin(k1) ** 2 + m ** 2); v1 = np.sin(k1) * np.cos(k1) / w1; R1 = m / w1
+print(f"  example m={m}, k={k1}: v={v1:.4f}, proper-time factor R={R1:.4f}; best positive weight counts at (1+R)/2 = {(1+R1)/2:.4f};"
+      f" number weight (a=1,b=d=0) counts at 1 (lattice time)")

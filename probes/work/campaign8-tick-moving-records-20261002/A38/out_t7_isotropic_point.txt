@@ -1,0 +1,12 @@
+(ii) calm family, corner level 0: smallest rms direction-spread of the 8 corner slopes = 3.407e-13 (relative)
+     slopes of the 8 modes at the optimum, min/max over 40 directions: [(np.float64(-1.938), np.float64(-1.938)), (np.float64(-1.938), np.float64(-1.938)), (np.float64(-0.0), np.float64(-0.0)), (np.float64(-0.0), np.float64(-0.0)), (np.float64(0.0), np.float64(0.0)), (np.float64(0.0), np.float64(0.0)), (np.float64(1.938), np.float64(1.938)), (np.float64(1.938), np.float64(1.938))]
+     KS control (pi flux): levels at k=0 of this cell convention [-3.464, -3.464, -3.464, -3.464, 3.464, 3.464, 3.464, 3.464]; slope spread over directions 0.00e+00; slopes [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+     law at the optimum: pair part (J,K,D) = [-0.0, -0.0, 0.0] ; largest coefficient on non-pair terms 1.0
+     200 directions, linear coefficient per sorted mode min/max: [(np.float64(-1.938), np.float64(-1.938)), (np.float64(-1.938), np.float64(-1.938)), (np.float64(0.001), np.float64(0.001)), (np.float64(0.001), np.float64(0.001)), (np.float64(0.001), np.float64(0.001)), (np.float64(0.001), np.float64(0.001)), (np.float64(1.939), np.float64(1.939)), (np.float64(1.939), np.float64(1.939))]
+     curvature of the 4 middle modes min/max: [(np.float64(0.53), np.float64(0.69)), (np.float64(0.53), np.float64(0.69)), (np.float64(0.54), np.float64(0.8)), (np.float64(0.54), np.float64(0.8))]
+     zero-cost points on a 25^3 grid: 9: [[-0.5, -0.5, -0.5], [-0.5, -0.5, 0.5], [-0.5, 0.5, -0.5], [-0.5, 0.5, 0.5], [0.0, 0.0, 0.0], [0.5, -0.5, -0.5], [0.5, -0.5, 0.5], [0.5, 0.5, -0.5], [0.5, 0.5, 0.5]] (units of pi)
+     smallest gap between neighbouring bands over the grid (excluding Gamma and corners): 0.000e+00
+     bandwidth: -1.435 .. 2.530; spectrum symmetric about 0: False
+     Gamma levels: [-0.0, -0.0, 2.1267, 2.1267, 2.1267, 2.1267, 2.1267, 2.1267]
+     NN face phases/pi at the optimum: [nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]  |W|: [np.float64(0.0)]
+time 10.8 s

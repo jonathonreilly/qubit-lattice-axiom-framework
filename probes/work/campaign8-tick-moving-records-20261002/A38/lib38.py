@@ -39,8 +39,19 @@ def spinors(m):
     return up, dn
 
 
+_BC = {}
+
+
 def site_B(m):
-    """B[a, fout, fin] = <b_fout| sigma^a |b_fin>, b_0 = |m>, b_1 = |mbar>."""
+    """B[a, fout, fin] = <b_fout| sigma^a |b_fin>, b_0 = |m>, b_1 = |mbar>  (memoised)."""
+    key = tuple(np.round(np.asarray(m, float), 12))
+    if key in _BC:
+        return _BC[key]
+    _BC[key] = _site_B(m)
+    return _BC[key]
+
+
+def _site_B(m):
     up, dn = spinors(m)
     b = [up, dn]
     B = np.zeros((3, 2, 2), complex)
@@ -268,3 +279,18 @@ def plaquette_fluxes(hop):
                 W *= H1(hop, p[i], p[(i + 1) % 4])
             res.append((x, "xyz"[a] + "xyz"[b], abs(W), np.angle(W) / np.pi if abs(W) > 1e-12 else np.nan))
     return res
+
+
+def bloch_batch(terms, ks):
+    """H(k) for an array of k points (nk,3) -> (nk,8,8), vectorised"""
+    agg = {}
+    for a, b, d, amp, _, _ in terms:
+        key = (a, b, tuple(int(v) for v in d))
+        agg[key] = agg.get(key, 0) + amp
+    keys = list(agg)
+    A = np.array([agg[k] for k in keys]); D = np.array([k[2] for k in keys], float)
+    ph = np.exp(1j * (np.asarray(ks) @ D.T)) * A          # nk x ne
+    H = np.zeros((len(ks), 8, 8), complex)
+    for e, (a, b, _) in enumerate(keys):
+        H[:, b, a] += ph[:, e]
+    return H

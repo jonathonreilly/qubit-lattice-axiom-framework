@@ -1,0 +1,6 @@
+(4) pair law, record content +m (background) : largest surviving flip amplitude near it 8.882e-16
+(4) pair law, record content -m              : largest surviving flip amplitude near it 2.828e+00
+(4) pair law, record content +z axis         : largest surviving flip amplitude near it 1.230e+00
+(4) pair law, record content (1,1,-1)/sqrt3  : largest surviving flip amplitude near it 1.886e+00
+(4) calm star family next to a -m record: smallest singular value 1.993e-15 (largest 4.930); members calm next to it: 3 dims of 24
+time 2.3 s

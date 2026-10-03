@@ -1,0 +1,25 @@
+(A) pair law, record content +m (background) : largest flip amplitude it causes 0.000e+00
+(A) pair law, record content -m              : largest flip amplitude it causes 2.828e+00
+(A) pair law, record content +z              : largest flip amplitude it causes 1.230e+00
+(A) pair law, record content (1,1,-1)/sqrt3  : largest flip amplitude it causes 1.886e+00
+    pair law, contents on a 31x61 sphere grid: smallest largest-amplitude 4.580e-02 at theta=0.942, phi=0.838 (background direction theta=0.955, phi=0.785)
+(A) calm star family next to a -m record: calm subspace dimension 8 of 24
+    record-calm direction 0: largest one-flip matrix element 1.434e-01; pair part [0.0, 0.0, -0.0]
+    record-calm direction 1: largest one-flip matrix element 1.221e-01; pair part [0.0, 0.0, -0.0]
+    record-calm direction 2: largest one-flip matrix element 9.667e-02; pair part [-0.0, -0.0, -0.0]
+    record-calm direction 3: largest one-flip matrix element 2.433e-01; pair part [-0.0, -0.0, -0.0]
+    record-calm direction 4: largest one-flip matrix element 2.436e-01; pair part [0.0, 0.0, 0.0]
+    record-calm direction 5: largest one-flip matrix element 1.903e-01; pair part [0.0, 0.0, 0.0]
+    record-calm direction 6: largest one-flip matrix element 2.222e-01; pair part [-0.0, -0.0, 0.0]
+    record-calm direction 7: largest one-flip matrix element 7.267e-02; pair part [-0.0, -0.0, -0.0]
+    time 1.2 s
+(B) zone corner: H(R) - (tr/8) I over all 24 calm directions: max 3.52e-15 (8-fold level for every member)
+(B) pair law: corner-level cost +1.39e-16; slopes |dE/dk| of the 8 modes at the corner over 60 directions: smallest mode min 0.166 max 3.921; largest mode min 4.076 max 4.899; linearity check 1.6e-06; zero-cost grid points (21^3) 81
+    Gamma levels [-8.0, -8.0, -8.0, 0.0, 0.0, 8.0, 8.0, 8.0]; growth ratio of the zero modes for doubling dk: 4.00 (2 = linear, 4 = quadratic)
+(B) calm member 1 (corner level at 0): corner-level cost -5.42e-15; slopes |dE/dk| of the 8 modes at the corner over 60 directions: smallest mode min 0.294 max 6.232; largest mode min 9.385 max 10.599; linearity check 1.3e-03; zero-cost grid points (21^3) 9
+    Gamma levels [-11.041, -11.041, -11.041, -0.0, 0.0, 19.379, 19.379, 19.379]; growth ratio of the zero modes for doubling dk: 4.00 (2 = linear, 4 = quadratic)
+(B) calm member 2 (corner level at 0): corner-level cost -1.11e-15; slopes |dE/dk| of the 8 modes at the corner over 60 directions: smallest mode min 0.323 max 2.055; largest mode min 7.463 max 8.663; linearity check 3.5e-03; zero-cost grid points (21^3) 9
+    Gamma levels [-16.387, -16.387, -16.387, -8.508, -8.508, -8.508, -0.0, -0.0]; growth ratio of the zero modes for doubling dk: 4.00 (2 = linear, 4 = quadratic)
+(B) calm member 3 (corner level at 0): corner-level cost -6.22e-15; slopes |dE/dk| of the 8 modes at the corner over 60 directions: smallest mode min 0.181 max 1.853; largest mode min 3.987 max 4.438; linearity check 8.9e-06; zero-cost grid points (21^3) 9
+    Gamma levels [-5.211, -5.211, -5.211, -0.0, -0.0, 5.259, 5.259, 5.259]; growth ratio of the zero modes for doubling dk: 4.00 (2 = linear, 4 = quadratic)
+time 7.7 s

@@ -1,0 +1,12 @@
+(1) random covariant star-local laws (not calm in general): NN face phases/pi seen [np.float64(-0.666667), np.float64(0.666667)]; pattern +2/3 at even corners, -2/3 at odd corners: True
+(2) |d|^2=0: singular values over the calm family [19.59591794, 0.0, 0.0, 0.0]
+(2) |d|^2=1: singular values over the calm family [9.79795897, 0.0, 0.0, 0.0]
+(2) |d|^2=2: singular values over the calm family [8.5997416, 4.61880215, 0.0, 0.0]
+(2) |d|^2=4: singular values over the calm family [4.61880215, 3.26598632, 0.0, 0.0]
+    rank of the whole one-flip map on the calm family: 5
+    pair law J=K=1: smallest |cost| on 13^3 grid 1.02e-16; spectrum symmetric about 0: True; cost levels at Gamma [-8.0, -8.0, -8.0, -0.0, 0.0, 8.0, 8.0, 8.0]; at corner [-0.0, -0.0, -0.0, -0.0, 0.0, 0.0, 0.0, 0.0]
+       near Gamma: |cost| of the lowest mode / dk along (100),(110),(111),(1-10): [0.002, 0.001, 0.0, 0.001]
+       near corner: |cost| of the lowest mode / dk along (100),(110),(111),(1-10): [4.0, 2.828, 0.0, 2.828]
+    random calm member 0: smallest |cost| on 13^3 grid 1.92e-16; spectrum symmetric about 0: False; cost levels at Gamma [-2.108, -2.108, -2.108, -0.0, 0.0, 7.649, 7.649, 7.649]; at corner [3.338, 3.338, 3.338, 3.338, 3.338, 3.338, 3.338, 3.338]
+       near Gamma: |cost| of the lowest mode / dk along (100),(110),(111),(1-10): [0.006, 0.003, 0.012, 0.003]
+       near corner: |cost| of the lowest mode / dk along (100),(110),(111),(1-10): [3327.904, 3328.76, 3329.078, 3328.76]

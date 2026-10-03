@@ -1,0 +1,2 @@
+(ii) calm family, corner level 0: smallest rms direction-spread of the 8 corner slopes = 3.407e-13 (relative)
+     slopes of the 8 modes at the optimum, min/max over 40 directions: [(np.float64(-1.938), np.float64(-1.938)), (np.float64(-1.938), np.float64(-1.938)), (np.float64(-0.0), np.float64(-0.0)), (np.float64(-0.0), np.float64(-0.0)), (np.float64(0.0), np.float64(0.0)), (np.float64(0.0), np.float64(0.0)), (np.float64(1.938), np.float64(1.938)), (np.float64(1.938), np.float64(1.938))]

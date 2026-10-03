@@ -1,0 +1,4 @@
+Clifford (all-8-modes Dirac cone at the corner) residual, best of 12 starts: 2.236e-01
+slopes at that point (min/max over 40 directions): [(np.float64(-0.0), np.float64(-0.0)), (np.float64(-0.0), np.float64(-0.0)), (np.float64(-0.0), np.float64(-0.0)), (np.float64(-0.0), np.float64(-0.0)), (np.float64(0.0), np.float64(0.0)), (np.float64(0.0), np.float64(0.0)), (np.float64(0.0), np.float64(0.0)), (np.float64(0.0), np.float64(0.0))]
+t6 optimum: Clifford residual 0.6124
+time 4.7 s

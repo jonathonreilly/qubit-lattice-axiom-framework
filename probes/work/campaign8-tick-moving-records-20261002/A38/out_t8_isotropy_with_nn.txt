@@ -1,0 +1,8 @@
+NN hop 0->e_x over the 24 calm directions: |max| = 1.4121 ; phase of nonzero entries/pi: [np.float64(0.166667)]
+corner level 0, NN hop / rms slope fixed at 0.25: smallest relative slope spread 5.838e-02 (constraint residual -5.1e-01)
+corner level 0, NN hop / rms slope fixed at 0.5: smallest relative slope spread 5.655e-02 (constraint residual -4.7e-01)
+corner level 0, NN hop / rms slope fixed at 1.0: smallest relative slope spread 8.437e-02 (constraint residual -5.1e+00)
+isotropic optimum: largest hop between even and odd sites 2.80e-02 (decoupled into two fcc sublattices)
+  sublattice parity 0: slopes of its 4 modes at the corner (10 directions): [[-1.938, 0.0, 0.0, 1.938]]
+  sublattice parity 1: slopes of its 4 modes at the corner (10 directions): [[-1.938, 0.0, 0.0, 1.938]]
+time 6.7 s

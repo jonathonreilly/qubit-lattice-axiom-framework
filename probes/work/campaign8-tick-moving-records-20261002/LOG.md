@@ -1781,3 +1781,35 @@ This is the same agent as rounds 5 and 6.
   - the A36 block in §5 flattened into plain bullets (same content);
   - decision 18's sub-list reordered (same items).
 - Local FINAL_REPORT.md stays the archival source.
+
+## 05:29 (real) Launched A39: is a quiet empty background compatible with light-like ripples? (brief: c8/A39_PROMPT.md; 55-minute box)
+- **Chain under test:** quiet (rank-deficient star marginals) ⇒ frustration-free parent? ⇒ z ≥ 2 (COMPARATOR theorems)?
+- **Loopholes to examine:** non-ground stationary vacua (π-flux magnons over |0⟩); quiet only at edges under gating; composite ripples; light carried by the record structure.
+- **Load at dispatch:** 3.14, RAM 32%. Concurrent: A38.
+
+## 05:36 (real) A38 (patterned calm backgrounds and light-like ripples) LANDED → c8/A38/REPORT.md (+ t1–t9)
+The coordinator saved the report from the final message.
+
+**Answer: no π twist for the whole class (EXACT). Only a partly light-like point, with star terms and tuning (CHECKED).**
+- **D1 (EXACT; exhaustive 8 of 40,320).** The only period-2 product texture mapped to a translate by all 24 glued turns is H8: m(r) = ((−1)^{r_x}, (−1)^{r_y}, (−1)^{r_z})/√3, i.e. 8 body diagonals.
+  - A25's role layout cannot be a product texture.
+- **D2 (EXACT).** H8's only calm pair law is K = J, D = 0.
+- **D5 (EXACT symmetry argument).**
+  - The face twist is ±2π/3 under EVERY glued covariant law, never π: half-turns swap bond ends, which pins the hop phases.
+  - A33's parity route does not apply, because no face-diagonal half-turn fixes a site of H8.
+- **D4.** With the pair law the zero-cost ripples are nodal LINES along the body diagonals, not cones. A Klein-type 4-sublattice map relates H8 to Néel(111).
+- **D6.** Star-local glued terms keeping H8 calm form a 24-dimensional family; every member has an 8-fold zone-corner level.
+  - Tuning gives an isotropic point with E = ±1.938|q| (2+2 modes), plus 4 heavy modes and 2 heavy zone-centre zero modes.
+  - Narrows A31 D4: "a cone needs π per face" holds for NN-only ripple hopping.
+- **D7.** Records holding +m (the local axis) keep H8 calm; others do not. A covariant quiet formation weight exists (1 − P, rank 8 of 128).
+- **D8.** The translate is readable at first order, as expected for a state-level pattern.
+
+**Coordinator check** (toys/verify_A38.py; own code)
+- (a) All 48 signed permutations map H8 to a translate. CONFIRMED.
+- (b) Pair law K = J, D = 0: double flips 2e-16 and single flips 1e-15, so calm.
+  - (J, K, D) = (1,0,0), (1,0.5,0), (1,1,0.3), (1,−2,0) give double flips 0.667, 0.333, 0.346, 2.000; single flips 0 (C3).
+  - CONFIRMED.
+- (c) Face Wilson loops for three laws (K = J; random; random with D) on 9 faces each: phase = ±0.6667π every time, alternating with corner parity. |W| = 16 for the pair law (matches A38). CONFIRMED.
+- NOT re-run: star-family spectra, isotropic optimum, records scan.
+
+**Status.** Late result, checked by the coordinator; NOT hostile-reviewed. The doc's late section says so.

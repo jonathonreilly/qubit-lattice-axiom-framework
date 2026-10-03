@@ -1,0 +1,25 @@
+Traceback (most recent call last):
+  File "/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/c8/A38/t6_isotropy.py", line 74, in <module>
+    sgn = eta(x if s_ == 1 else tuple(y), d)
+  File "/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/c8/A38/t6_isotropy.py", line 68, in <lambda>
+    eta = lambda x, d: [1, (-1) ** x[0], (-1) ** (x[0] + x[1])][d]
+                           ~~~~~^^~~~~~
+ValueError: Integers to negative integer powers are not allowed.
+        5.21 real         4.73 user         0.09 sys
+           102612992  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12074  page reclaims
+                1032  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 945  voluntary context switches
+                2356  involuntary context switches
+         83194858642  instructions retired
+         19125663040  cycles elapsed
+            81854920  peak memory footprint

@@ -1,0 +1,23 @@
+(a) fixed-place lemma
+   Clifford quarter-turn actions N (N^4 = 1), Pauli a: N^2 a anticommutes with a in 0 of 48 cases
+   control, half-turn alone (M^2 = 1): M a anticommutes with a in 12 cases (M = face-diagonal half-turns: 6 distinct)
+   non-Clifford N (124 rational axes x 6 angles x 3 Paulis = 2232): a, Na, N^2a all Pauli in 120 cases; N^2a perpendicular to a in 0
+(b) vertex qubit + six links, every looser action rho_v of Gamma on the vertex qubit
+   O (24 turns)             homs  58 | covariant vertex assignments  124 (nonzero   66) | fermion-consistent 0 
+   T (12 even turns)        homs  33 | covariant vertex assignments  132 (nonzero   99) | fermion-consistent 0 
+   D2 (3 axis half-turns)   homs  52 | covariant vertex assignments 1600 (nonzero 1548) | fermion-consistent 0 
+   {1, C2z}                 homs  10 | covariant vertex assignments 1408 (nonzero 1398) | fermion-consistent 96 {(-1,): 96}
+(c) far vertex places v +- 2e_a (all six), induced looser actions, vertex qubit and links included
+   O (24 turns)         far-place stabilizer homs 16 | distinct far sign patterns 1 | vertex patterns 2 | fermion-consistent combos 0
+   T (12 even turns)    far-place stabilizer homs 10 | distinct far sign patterns 2 | vertex patterns 2 | fermion-consistent combos 0
+   control {1, C2z} (no quarter turn, no pairing): fermion-consistent in 5376 of 25600 choices
+      e.g. C2z at v+2e_z: [[1, 0, 0], [0, 1, 0], [0, 0, 1]], at v-2e_z: [[-1, 0, 0], [0, 0, 1], [0, 1, 0]]; hop +x carries (I, Y), hop +y carries (I, Y) there
+   D2 pairing check (hop +x, far places v+-2e_z, every induced looser action): net C2z sign -1 in 0 of 40 cases
+(d) dense 7-qubit junction phases
+   48 random looser O-actions on the vertex qubit (classes {'axis': 16, 'sign twist': 10, 'soldered': 21, 'trivial': 1}), random covariant dressings:
+   covariance residual (max over 24 turns x 6 hops, up to phase and B_v): 2.7e-15
+   junction phases seen: {('T-junction', (1-0j)): 576, ('corner', (-1-0j)): 136, ('corner', (1+0j)): 248}
+   control {1, C2z} escape (vertex qubit): C2z acts on the vertex qubit by [[-1, 0, 0], [0, 0, 1], [0, 1, 0]]; vertex Paulis YZYZII
+      {1, C2z} covariance residual 2.4e-16; junction phases over all 20 triples: Counter({(-1+0j): 20})
+      Clifford vertex actions for C4z squaring to rho(C2z) and mapping p(+x) to p(+y): 0; for C3(111) mapping p(+x)->p(+y)->p(+z): 0
+done

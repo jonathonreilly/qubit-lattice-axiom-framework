@@ -1,0 +1,26 @@
+(A) KS signs, one internal state per place, 4^3 torus (one-particle sector)
+   each of the 24 turns about a site is a symmetry up to a Z relabeling: True
+   each unit translation is a symmetry up to a Z relabeling: True
+   without relabeling, turns that keep the signs exactly: 4 of 24
+   24 turns about a site: W_a^4 = 1, W_b^3 = 1, (W_a W_b)^2 = 1  (a = C4z, b = C3(111));
+      projective invariant lam1^3 lam2^4 lam3^-6 = 1.0  (-1: the relabeled turns compose only up to the global charge parity)
+   defects W_g W_h W_gh^-1 over all 24x24 pairs of turns: [1] (all global)
+   unit translations: Tx Ty Tx^-1 Ty^-1 = -1, Ty Tz.. = -1, Tz Tx.. = -1
+   period-2 translations: commutators [1, 1, 1]
+   turn-translation relations W_g T_e W_g^-1 T_ge^-1: [1]
+   KS one-particle spectrum: min -3.4641 max 3.4641, symmetric: True, distinct |E| levels 4
+(B) hop-only (XY) form under relabelings of exact turns; glued form
+   XY bond: linear conserved charges m_x.s_x + m_y.s_y: null-space dim 1, vector [0j, 0j, (-0.707107+0j), (-0+0j), 0j, (-0.707107+0j)]
+   largest number of turns about a place keeping an axis (up to sign): 8 of 24
+   glued form: spectra of s.s [-3.0, 1.0, 1.0, 1.0] and -s.s [-1.0, -1.0, -1.0, 3.0] (no on-site relabeling maps one to the other)
+(C) one-part charged hop through a spin-1/2 link
+   Q3: quarter turn about the +x link maps its outward raising operator to (0.000-1.000i) x itself (residual 0e+00)
+   Q3: quarter turn about the +y link maps its outward raising operator to (0.000-1.000i) x itself (residual 1e-17)
+   Q3: quarter turn about the +z link maps its outward raising operator to (0.000-1.000i) x itself (residual 0e+00)
+   200 random (non-Clifford) frame changes of Q3: phases seen [(np.float64(0.0), np.float64(-1.0))], residual 4e-16
+   corner with one qubit under a soldered-class action: an invariant charge axis would need R_g n = +-n for all 24 turns: none (max stabilizer of an axis = 8)
+   looser link action: group-law residual 0e+00; outward raising maps to outward raising with phases [(np.float64(1.0), np.float64(0.0))]
+      the twist relative to Q3 on a link's own stabilizer undoes the turn about its axis: 10 distinct twists
+   Gauss law: ||[G_v, t]|| = 0.0e+00, ||[G_(v+d), t]|| = 0.0e+00 (t nonzero: True)
+   exact Q3, ring (two raising, two lowering, parallel pairs) phases under the 24 turns: [(np.float64(1.0), np.float64(0.0))]
+done

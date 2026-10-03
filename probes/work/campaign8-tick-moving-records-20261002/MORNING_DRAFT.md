@@ -18,7 +18,7 @@
      - no exact speed limit for unrecorded influence: a leak beyond one site per tick always remains, and it stays exponentially faint only if the change per tick is small;
      - readable moving records are classical "dust": they wander, never interfere, and act as walls for the possibilities;
      - anything that interferes stays unrecorded between formations;
-     - as built so far, its change moves only ripples that behave like slow massive particles over its calm empty background; light-like ripples are not built yet in this shape;
+     - over the calm empty background this shape needs, a change that treats every spot and turn alike can only move ripples that behave like slow, heavy particles, never like light (exact, A31). Light-like matter needs a sign pattern painted onto the rule, and that pattern can never be the same one the gravity field needs (proved);
      - the empty background stays calm only if every record's content lies along one direction, which the law would have to fix or earlier records pass on.
 3. **The tick.** In the ticked toys, one shared tick works, and neighbourhood ticks work if they keep in step. Time running differently in different places must come from how much changes per tick, varying smoothly, not from how often ticks come. Under point 2's shape the change no longer comes in ticks, so these tick results need redoing there.
 4. **Gravity.**
@@ -80,7 +80,7 @@
 - **No exact speed limit for unrecorded influence.** A leak beyond one site per tick always remains, and it stays exponentially faint only if the change per tick is small.
 - **The change per tick becomes readable** (argued). So "one universal tick or local ticks" now has real content, though at Planck ticks the effects are tiny and the tick becomes nearly undetectable in practice.
 - **Steps that look at their neighbours nudge them slightly.** Steps that ignore the neighbours do not.
-- **Only slow-particle ripples so far.** The only change built so far for this shape moves ripples that behave like slow massive particles over its calm empty background, not like light. A light-like version over a calm background is not built yet.
+- **Only slow-particle ripples, provably (A31).** Over a calm empty background of the simple kind (every spot pointing the same way), a change that treats every spot and turn alike must reduce to one simple form, and its ripples behave like slow, heavy particles, never like light (exact). Light-like ripples need a fixed pattern of plus and minus signs on the rule (see section 10).
 - **A direction for the calm background.** The empty background stays calm only if every record's content lies along the background's own direction. The rule cannot take that direction from the unrecorded possibilities without leaking faraway choices. So it must either be fixed by the law, which privileges a possibility, or passed on from earlier records, and who sets the first one is open.
 - **Smaller costs:**
   - overlapping formation spots need an ordering rule;
@@ -260,6 +260,22 @@
   - If each spot holds only its one qubit's possibilities (the axioms as written), a full region has nothing left to carry gravity, so everything stops. But then its contents do not pull on anything, and gravity ripples bounce off it.
   - If each spot can also hold a never-recorded part for gravity (decision 13's "more room per place"), gravity's clocks keep running inside, only slower.
 
+### 10. Putting the point-0 shape together (A31, checked)
+A31 assembled everything into one model, giving each ingredient its status: axiom text, your decided readings, unadopted Campaign 7 sentences, named choices, or supplied patterns.
+- **What holds up: records.** They sit still or trade places with an empty neighbour, never pile onto one spot, cannot be steered by faraway choices, and empty space far from records stays exactly quiet.
+- **The sharp limit (exact, checked).** Calm empty space needs every spot pointing the same way. Then the only rule that treats every spot and turn alike and leaves it calm is the simplest "align with your neighbour" rule. Its ripples behave like slow, heavy particles, never like light.
+- **Light-like matter needs a painted-on sign pattern.** A fixed pattern of plus and minus signs on the neighbour links, the standard lattice trick, gives light-like ripples. It comes in two versions:
+  - **Signs on the whole rule.** Records can tell neighbouring sub-grids apart once things interact.
+  - **Signs on the hopping only.** This can be hidden from records, but the rule then favours one direction of the possibilities, and 16 of the 24 turns are no longer treated alike.
+- **Two patterns, not one (proved).** The gravity field's 2×2×2 job pattern keeps certain half-turns of the grid; the sign pattern light needs can never keep them. So in the version that keeps your gluing, matter and gravity need two separate supplied patterns. They might share one only in the hop-only version, which needs a piece not yet found.
+- **New: gravity's places never hold records (exact).** If gravity's field lives in the same one qubit per place and records never lock it, then the places carrying the field must never be recorded. Otherwise matter walls the field off: in the Earth, gravity ripples would die out within about 70 m, yet ripples that crossed the Earth have been detected (a comparison, not adopted).
+- **Also:**
+  - the field's bookkeeping can hold only on average, never exactly for every state, if records are to register anything;
+  - the time-stretch that paces the field has to be a moving part of the field, so each place holds more;
+  - record chances must also slow with the time-stretch, so record clocks run slow in gravity like everything else.
+- **Ticks become bookkeeping if the chances per tick shrink with the tick,** which avoids freezing and keeps records from outrunning light. Four choices then drop out: the claim rule, start-of-tick gating, the formation order and the change per tick.
+- **The most useful next step:** look for a calm empty background whose own structure supplies the sign pattern. Then the pattern would be a fact about the state, like the field's layout, not a rule painted onto the law. That search is running now (A33).
+
 ## Your menu decision (Q7 stands)
 
 My overnight note was too strong; the reviewers caught it.
@@ -304,9 +320,10 @@ My overnight note was too strong; the reviewers caught it.
 14. **When records form.** Only on caught, settled things, slowly compared with the tick (A24)? Under the gravity field this is needed for almost all records (others only extremely rarely), and it also gives straight tracks (A19).
 15. **A moved record's new spot.** Under point 0's swap step, a record carries its content to a new spot whose own conditions might give that content zero odds. Should a step be allowed only where the content is on the new spot's menu (A29)?
 16. **The calm background's direction.** Under point 0, empty space stays calm only if every record's content lies along its direction. Is that direction fixed by the law (which privileges a possibility), or passed on from a first record (A29)?
-17. **Light and matter under point 0.** No smooth, everywhere-alike change on one qubit per site has yet produced light-like ripples over a calm background; the matter and the field built tonight both use fixed patterns. Is a fixed pattern acceptable for light and matter, given that point 0 was chosen to avoid one for records? If a pattern is used, should matter's sub-grids, its 2×2 cells and the field's 8 layouts be one shared choice (A31 is checking whether they can be)?
+17. **Light and matter under point 0.** No smooth, everywhere-alike change on one qubit per site has yet produced light-like ripples over a calm background; the matter and the field built tonight both use fixed patterns. Is a fixed pattern acceptable for light and matter, given that point 0 was chosen to avoid one for records? A31 sharpened this: light-like matter needs a painted-on sign pattern, either on the whole rule (records can show it, and it can never be the field's pattern) or on the hopping only (one direction of the possibilities is favoured, against your Q3 for 16 of 24 turns). Which, if either?
 18. **What a tick means.** If record chances per tick are scaled down to avoid freezing, ticks become almost undetectable at Planck spacing (argued). Would "records form at set ticks" then be a physical statement or a bookkeeping one? This is exploration of your instinct, not a position.
 19. **Sealing records in.** May a record step only into a neighbouring spot that already holds something like its own content (A30)? That lets a fully recorded region last forever, but a lone record in empty space could then never move.
 20. **Recording light next to records.** May light-like possibilities be recorded next to existing records? A fully recorded region is dark to light only if so (A30), but in glass or water that recording must be very weak (A28).
+21. **Gravity's places.** If gravity's field lives in one qubit per place and records never lock it, may the places carrying it be ones that never hold records (A31)? Otherwise records wall off gravity waves.
 
 *Still running: A31 (assembling the point-0 shape into one model, including whether one shared pattern could serve matter and the field) and A32 (your tick questions redone inside the point-0 shape).*

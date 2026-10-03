@@ -1393,3 +1393,68 @@ The agent's sandbox blocked writing REPORT.md; the coordinator saved it from the
 - But it is a grey, not black, absorber: it catches fast things and bounces slow ones.
 - It shows what it caught as permanent records on its skin.
 - Whether gravity's clocks stop inside depends on whether a site can hold a never-recorded part.
+
+## 03:05 (real) A31 (assembly v2 of the Option R package) LANDED → c8/A31/REPORT.md (+ c1–c5)
+The agent's sandbox blocked writing REPORT.md; the coordinator saved it. A29's corrections were folded in.
+
+**The assembled model.** A 32-row table with the status of each ingredient (AX, Q, C7-Sn, I-n, NC, SP, PREP, PROP).
+
+**Key results**
+- **D1 (EXACT).** Glued, homogeneous NN pair terms are J σ·σ + K σ^aσ^a (compass) + D(σ_x × σ_{x+a})_a (DM); the bond invariants are 5-dimensional.
+- **D2 (EXACT). Calm forces Heisenberg.**
+  - A product vacuum |n⟩^⊗ that is exactly stationary forces K = 0.
+  - Once any record holds −n, it also forces D = 0, so H = J Σσ·σ.
+- **D3 (EXACT, harmonic order). No light cone over a calm product vacuum.**
+  - Single excitations form one analytic band (z = 2).
+  - A Bogoliubov cone needs a non-stationary vacuum.
+  - This sharpens C30 from "not built" to "impossible in the class".
+- **D4–D5. A cone needs π flux, and only signs are available.** The π-flux sign pattern is KS, unique up to gauge. Two forms:
+  - **GLUED** (signs on the whole exchange): physical, since no on-site relabelling maps σ·σ to −σ·σ.
+  - **HOP-ONLY** (signs on XX+YY): a Z gauge, but it privileges the axis z, so glued covariance survives for only 8 of 24 turns. That is against Q3 and the Qubit axiom.
+- **D6 (CHECKED). Can records show the pattern?**
+  - Hop-only with Z records and a signed step: no.
+  - Hop-only with a pattern-blind swap: yes, TV 0.37.
+  - Glued: yes, TV 0.54 (one excitation, non-uniform sums), 0.081 (two excitations), 0.45 (next to a −n record).
+- **THEOREM S (EXACT).** A π-flux pattern is never preserved by a face-diagonal half turn: the turn would force the plaquette product to be +1.
+  - A25's role layout is kept by all 24 turns about vertex- and cube-role sites, and every plaquette touches such a site.
+  - So matter's KS pattern can NEVER share the field's layout in the glued form: two patterns.
+  - Hop-only form: one shared label is possible only with a privileged axis, one-site masses, and a cell-free taste-singlet shear operator (OPEN).
+- **D10 (EXACT). Field places never hold records.** This follows from F1 + Record + one qubit per site. Otherwise records wall the field: one record per nucleon gives gravitational waves in the Earth a mass ≈ 2.9e-9 eV, a range of about 70 m, against detected waves that crossed the Earth (COMPARATOR).
+- **D15 (EXACT).** F4 can hold only at state level if records register anything.
+- **K4 (ARGUED). The lapse.** It must be a dynamical field component (more payload), and record odds must carry the lapse too (record clocks redshift).
+- **D13 (continuum reading, ARGUED).** Formation and step chances per tick must scale with τ. The claim rule, start-of-tick gating, the ordering rule and the dose per tick then drop out: ticks become bookkeeping.
+- **D14 (CHECKED).** A20's covariant calm stabilizer vacua (star, face) have immobile single defects (fracton-like).
+- **Ledger.** 14 ranked supplied items. The top three:
+  1. more than one qubit per site for the field;
+  2. a privileged possibility axis;
+  3. matter's π-flux pattern.
+- **Top open problem.** A homogeneous glued star-local change on one qubit per site with light-cone excitations over a calm vacuum, all patterns at state level. Next calculation: a Clifford search over A20's equivariant module for a calm stabilizer vacuum with mobile defects and an emergent π-flux mover phase.
+
+**Coordinator check** (toys/verify_A31.py; own code)
+- (a) Bond-stabilizer invariant two-site operators (D4 group: C4 about the bond, C2 with swap; soldered SU(2) lift): dim = 5. CONFIRMED.
+- (b) 3×3 torus, uniform |n⟩^⊗9:
+  - the compass is never stationary (min residual 2.17 over 63 axes);
+  - DM is stationary without records (7e-16) and next to a +n record (6e-16), but NOT next to a −n record (2.83);
+  - Heisenberg next to a −n record: 1.7e-15.
+  - D2 CONFIRMED.
+- (c) KS signs on 4³ have flux −1 on every plaquette. Exactly 4 of the 24 site-centred rotations preserve them exactly, at each of 4 sites tested. None is a face-diagonal half turn (6 exist among the 24). Theorem S CONFIRMED on KS.
+- NOT re-run: c3 readability tables, c5 stabilizer defects, the c2 enumeration.
+
+**My reading for the owner.**
+- The point-0 shape holds up for records.
+- But over the calm empty background it needs, a rule that treats every spot and turn alike can make only slow, heavy ripples, never light (exact).
+- Light-like matter needs a painted-on sign pattern, and that pattern provably cannot be the same as the gravity field's pattern.
+- So light, matter and gravity each still need something put in by hand. The best next step is a search for an empty background that supplies the pattern itself.
+
+## 03:12 (real) Launched A33: can the calm background itself supply the π flux? (brief: c8/A33_PROMPT.md)
+- **What it is.** A31's top open problem, run as an exact F₂ stabilizer search.
+- **Classes:**
+  - covariant translation-invariant vacua (A20 C3 module, extended in degree);
+  - period-2 vacua with a state-level pattern only (like F6).
+- **Tests:**
+  1. calm (frustration-free covariant parent);
+  2. single-defect mobility (F₂ rank, L = 4/6/8);
+  3. emergent π flux from the mover commutators;
+  4. if found: bands, calmness, and readability of the 8 translates.
+- **Load at dispatch:** 3.45, RAM 35%. Concurrent: A32 (tick under Option R).
+- **Draft.** Updated with A31 (new §10, sharpened bottom-line cost, decisions 17 and 21).

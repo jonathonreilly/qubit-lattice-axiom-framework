@@ -1,0 +1,11 @@
+n=z       : residual Heisenberg 0.0e+00  compass 4.243  DM 0.0e+00
+n=x       : residual Heisenberg 1.6e-15  compass 3.000  DM 2.4e-16
+n=random  : residual Heisenberg 7.5e-15  compass 2.555  DM 7.1e-16
+n=random2 : residual Heisenberg 4.3e-15  compass 2.723  DM 5.9e-16
+Heisenberg on one-flip states: weight leaving the one-flip sector 8.72e-14 (into two flips 1.93e-14; back to the calm state 6.8e-15)
+DM         on one-flip states: weight leaving the one-flip sector 9.96e+00 (into two flips 9.96e+00; back to the calm state 5.0e-16)
+one-flip block of J s.s + 0.4 DM: 9 levels [4.4777, 5.7358, 6.2642, 7.5223, 11.1067, 11.3709, 12.6291, 12.8933, 18.0] (single band, uniform Peierls phase, no flux)
+record content +n, n=z     : residual of compressed Heisenberg 0.0e+00; compressed DM 0.00e+00
+record content -n, n=z     : residual of compressed Heisenberg 0.0e+00; compressed DM 4.00e+00
+record content +n, n=random: residual of compressed Heisenberg 1.7e-14; compressed DM 5.08e-16
+record content -n, n=random: residual of compressed Heisenberg 2.6e-15; compressed DM 3.29e+00

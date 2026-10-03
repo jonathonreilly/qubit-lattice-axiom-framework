@@ -1,0 +1,3 @@
+(7a) plaquettes at site 0 mapped to themselves by the face-diagonal half turn: 2; their flux for every invariant pattern: always +1
+(7b) group O (24): 24 elements, 12 bond orbits, pi-flux patterns: 0
+(7c) group T (12): 12 elements, 20 bond orbits, pi-flux patterns: 2048

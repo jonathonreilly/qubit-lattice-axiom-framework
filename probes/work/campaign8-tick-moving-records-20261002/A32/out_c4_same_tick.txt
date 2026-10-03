@@ -1,0 +1,12 @@
+C4. Same-tick formation at neighbouring sites x=1, y=2 (random entangled 5-qubit start)
+  c       W1 one-site: TV(xy,yx)   W2 star: TV(xy,yx)   /c^2      W3 menu start-of-tick vs within-tick   /c^2    P(both form, W2)
+  0.4     8.67e-18                 7.014e-03            0.0438    9.496e-03                              0.0593  1.744e-02
+  0.2     5.95e-17                 1.750e-03            0.0438    2.374e-03                              0.0593  4.361e-03
+  0.1     6.97e-17                 4.373e-04            0.0437    5.935e-04                              0.0593  1.090e-03
+  0.05    4.48e-18                 1.093e-04            0.0437    1.484e-04                              0.0593  2.725e-04
+  0.025   5.90e-17                 2.732e-05            0.0437    3.709e-05                              0.0593  6.814e-05
+
+  No-signalling: TV of the (x,y) record law across b's choices {none, Z record, X record}, c = 0.2
+    W2 order xy: max TV = 3.07e-16;  random order: max TV = 3.02e-16;  total prob = 1.000000000000000
+    W2 order yx: max TV = 2.53e-16;  random order: max TV = 3.02e-16;  total prob = 1.000000000000000
+  completeness ||sum K^dag K - 1|| = 9.09e-15

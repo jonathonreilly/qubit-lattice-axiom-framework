@@ -1,0 +1,9 @@
+     initial Gaussian tail already in B: 1.714e-11
+(i)  A15 ticked change, handshake seam, theta=pi/4, 400 sub-steps: weight in B = 1.714e-11, in A = 0.999999999983
+     control, B in step with A: weight in B = 0.147140
+(ii) Option R, smooth hopping, no detectors: weight in B after t=60 = 0.999661
+     tau=0.2   gamma=0.2: in B (B in step) = 0.815578, in B (B offset tau/2) = 0.815578, |diff| = 2.21e-12; recorded by B detectors 0.14941027 vs 0.14943912 (|diff| 2.9e-05); totals 1.000000000000 / 0.999999999999
+     tau=0.1   gamma=0.2: in B (B in step) = 0.817259, in B (B offset tau/2) = 0.817259, |diff| = 6.53e-13; recorded by B detectors 0.14836560 vs 0.14837978 (|diff| 1.4e-05); totals 0.999999999999 / 0.999999999998
+     tau=0.05  gamma=0.2: in B (B in step) = 0.818085, in B (B offset tau/2) = 0.818085, |diff| = 7.55e-13; recorded by B detectors 0.14785022 vs 0.14785725 (|diff| 7.0e-06); totals 0.999999999998 / 0.999999999997
+     (the seam is not a wall: what reaches B is set by the smooth change and the detectors' chances; the tick offset
+      only re-times the detectors, an O(tau) effect)

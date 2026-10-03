@@ -1,0 +1,5 @@
+  claimant-scheduled   pi(end)/pi(start) = 0.700000   max|pi - candidate|: prop. N 5.2e-15, prop. 1/N 3.7e-03, uniform 1.7e-03
+  record-scheduled     pi(end)/pi(start) = 1.428571   max|pi - candidate|: prop. N 3.7e-03, prop. 1/N 3.0e-15, uniform 2.0e-03
+  bond-symmetric       pi(end)/pi(start) = 1.000000   max|pi - candidate|: prop. N 1.7e-03, prop. 1/N 2.0e-03, uniform 6.0e-16
+  N(end)/N(start) = 0.7: claimant scheduling piles dust where clocks run FAST, record scheduling where they
+  run SLOW (ratio 1/0.7 = 1.428571), the symmetric bond lapse gives no drift.

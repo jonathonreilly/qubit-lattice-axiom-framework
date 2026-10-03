@@ -245,3 +245,12 @@ Then:
 ## 7. Plain-language summary
 
 Can empty space be both quiet and carry light? Not if the thing that triggers records can sense light ripples directly and empty space is the calmest possible state. In that case I proved that the gentlest ripples must spread slowly, like waves in a magnet, never like light. Quiet empty space can carry light in three ways, each with a price. First, light could be invisible to records, so that only matter gets recorded and light is noticed only when matter absorbs it; this needs separate places that never record, and it needs matter never to appear out of empty space, which real physics does allow. Second, records could form slowly and only in response to energy actually delivered; then empty space is not perfectly quiet but almost so, and each spot needs a small memory the axioms do not supply. Third, empty space could be not the calmest state; that needs a painted pattern of signs, and the toy shows that quietness then breaks under a small sideways nudge. Light built from pairs of slow ripples does not help, and quiet only next to matter just moves the problem to matter's edges.
+
+---
+
+## ERRATA from review round 8 (A34/REVIEW4.md), added by the coordinator
+
+- §3.3(a) item 5 'needs a painted sign pattern': only in A39's toy; A38's H8 is a state-pattern example (C120, C133).
+- Fragility: the 1.0000 control is a GAPPED ground state; the same vacuum made the ground state without a gap returns 0.04 at δ = 0.10, its loss into one zero-cost flip (A34 c12). Discriminating evidence is the zero-cost pair count (139 vs 0), not survival (C120).
+- §3.3(e) cost 3 'matter number exactly conserved': only no term may create matter from matter-empty space; matter number may still change where matter already is (C133).
+- (f) needs the ground state (C123). Theorem T bounds only the softest ripple near k0; the no-twist (RK/ice-like) case is not covered; general theorems COMPARATOR (C119).

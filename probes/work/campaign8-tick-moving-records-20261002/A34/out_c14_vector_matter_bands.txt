@@ -1,0 +1,8 @@
+t=0.000 zero flux: bands 3; smallest neighbouring-band gap on grid 6.042e-03; smallest |E| 1.052e-03; symmetric about 0 everywhere: False
+t=0.000 pi flux  : bands 12; smallest neighbouring-band gap on grid 3.646e-04; smallest |E| 2.362e-04; symmetric about 0 everywhere: True
+t=0.785 zero flux: bands 3; smallest neighbouring-band gap on grid 5.187e-02; smallest |E| 2.000e-04; symmetric about 0 everywhere: False
+t=0.785 pi flux  : bands 12; smallest neighbouring-band gap on grid 1.038e-06; smallest |E| 5.192e-07; symmetric about 0 everywhere: True
+t=1.571 zero flux: bands 3; smallest neighbouring-band gap on grid 6.079e-02; smallest |E| 3.150e-04; symmetric about 0 everywhere: False
+t=1.571 pi flux  : bands 12; smallest neighbouring-band gap on grid 2.810e-05; smallest |E| 4.925e-05; symmetric about 0 everywhere: True
+t=2.356 zero flux: bands 3; smallest neighbouring-band gap on grid 3.390e-02; smallest |E| 8.027e-06; symmetric about 0 everywhere: False
+t=2.356 pi flux  : bands 12; smallest neighbouring-band gap on grid 1.170e-05; smallest |E| 7.775e-04; symmetric about 0 everywhere: True

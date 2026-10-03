@@ -1888,3 +1888,31 @@ The coordinator saved the report from the final message.
 - NOT re-run: k1 enumeration, k2 hollow-star structure, k3 layouts, k4 loop table.
 
 **Status.** Late, coordinator-checked; forwarded to A34 for the final review round together with A38/A39.
+
+## 06:40 (real) REVIEW ROUND 8 (A34 resumed: A38, A39, A40 and the doc's late text) → c8/A34/REVIEW4.md (+ c11–c14). CORRECTIONS C116–C144
+**Scope.** Same agent as rounds 5–7; this round covers only the late lanes.
+
+**Verdicts.** A38 holds with narrowings. A39 holds, but the doc overstated it. A40's pieces mostly hold as graded, but the verdict and the doc overstated.
+
+**Key corrections**
+- **C116 (EXACT; c11).** H8 is NOT the ground state of its calm pair law (either sign; 27 of 64 one-flip states below on 4³), nor at any zero-cost linear touching (A39's positivity lemma). So all of A38's light offers fall under A39 escape (a).
+- **C117.** A38 did not "test" the parity route. The route cannot be set up on pointing backgrounds (no half-turn fixes a site); it needs shared-possibility backgrounds or more room.
+- **C118.** "The half turn light needs" applies to NN hopping only; A38's tuned point is isotropic without π.
+- **C119.** Theorem T bounds only the softest ripple near k₀; T4 (local twist) was hidden; RK/ice-like vacua are not covered; the general theorems are COMPARATOR.
+- **C120 (c12).** The 100% fragility control was gapped. A gapless ground-state control returns 0.04 at δ = 0.1 (loss into one zero-cost flip). The discriminator is the zero-cost pair count, not survival. "Needs a painted pattern" holds for A39's toy only.
+- **C121.** The summary sentences are corrected accordingly.
+- **C122–C131.** Comparators labelled; (f) needs the ground state; pair-ripple grading; edge-quietness scope; decision ties; nodal-line wording; records (the −m subfamily); the 2×2×2 scope; A38's owner decisions; provenance (eight rounds).
+- **C134 (EXACT; c13).** No glued covariant hop for one-component charged matter through a light link (−i phase under a quarter turn about the link axis). Charged matter needs a vector index (2-parameter family). So "the twist comes free" is NOT shown. Neutral vector matter can get isotropic touchings from the rule itself (i S^a).
+- **C135.** Light-like matter over S1's quiet empty matter vacuum has negative energies, so that vacuum is not the lowest state (escape (a) for matter).
+- **C136.** Every place carries more than one qubit (the job label at every place).
+- **C137.** Records stepping two sites departs from I2; Q7's recorded-neighbour clause needs reach 2, which changes Admissibility's NN wording.
+- **C138.** S1 is a candidate, not shown coherent; three pieces are open.
+- **C139.** Factor-wise Record changes the axiom's TEXT (needs the owner's wording).
+- **C140.** The clean-split no-go is scoped to star-local coupling.
+- **C141.** Bundle list completed.
+- **C142.** Records at V must lock charge-definite possibilities (Gauss).
+
+**Applied**
+- **Doc (rev 35):** §12, §13 and §14 lead and list blocks replaced; §10 route sentence; summary late-results sentence (now including an A40 sentence); provenance "eight rounds"; decisions 23 and 24 appends.
+- **Local:** draft v12 (v11 saved as MORNING_DRAFT_v11_pre_A34d.md); summary; FINAL_REPORT reassembled.
+- **Errata** appended to the A38, A39 and A40 reports.

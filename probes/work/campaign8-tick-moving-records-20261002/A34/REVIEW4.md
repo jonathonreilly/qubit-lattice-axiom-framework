@@ -1,19 +1,25 @@
-# A34 hostile review, round 8 (REVIEW4): A38, A39 and the doc's late text
+# A34 hostile review, round 8 (REVIEW4): A38, A39, A40 and the doc's late text
 
 **Scope.** This round covers:
 - A38: D1, D2, D5 (the half-turn argument and its scope), D6, the D4 narrowing and D7.
 - A39: Theorem T, Lemma V, the twist and positivity lemmas, the grading of "frustration-free ⇒ z ≥ 2", the escapes (especially (e)) and c1's fragility numbers.
-- MORNING_DRAFT.md (05:52): sections 12 and 13 (lines 349–370), and the A38 sentence at the end of line 331.
-- MORNING_SUMMARY_DRAFT.md (05:52): the A38/A39 sentences in line 48.
+- A40, added mid-round: the S1 verdict's grading, "factor-wise Record", payload exactness, T1/T3 (generalized Theorem S), T5's gauge argument on a torus versus Z³, T8 (the mass pattern) and the quantum-link photon comparator.
+- MORNING_DRAFT.md: sections 12 and 13 (lines 349–370, version of 05:52), section 14 (lines 372–390, added 06:20), and the A38 sentence at the end of line 331. Lines 1–370 are unchanged between the two versions, so line numbers hold.
+- MORNING_SUMMARY_DRAFT.md (05:52): the A38/A39 sentences in line 48. As of 06:20 it has no A40 text.
 
 **Sources.** I worked only from primary files:
 - A38: REPORT.md, A38_PROMPT.md and toys/verify_A38.py.
 - A39: REPORT.md, A39_PROMPT.md, the code and output of c1–c3, and toys/verify_A39_edge.py.
-- LOG.md lines 1727–1870.
+- A40: REPORT.md, A40_PROMPT.md, the code and output of k1–k4, and toys/verify_A40_flux.py.
+- Also BRIEF.md (the axioms verbatim) and A25 REPORT.md §3.3 and §6, for the role label.
+- LOG.md lines 1727–1900.
 
 **Rules followed.** I ran no git, made no repo edits and did not touch any other agent's files or the draft. All scripts are in `SP/c8/A34/`.
 
-**Counts.** 6 MAJOR (C116–C121), 10 MINOR on doc text (C122–C131), 1 OPTIONAL outside the requested scope (C132), and 1 MINOR on lane and LOG wording (C133).
+**Counts.**
+- A38/A39: 6 MAJOR (C116–C121), 10 MINOR on doc text (C122–C131), 1 OPTIONAL outside the requested scope (C132), and 1 MINOR on lane and LOG wording (C133).
+- A40: 5 MAJOR (C134–C138), 5 MINOR on doc text (C139–C143), and 1 MINOR on lane and LOG wording (C144).
+- In all: 11 MAJOR, 15 MINOR on doc text, 1 OPTIONAL and 2 lane/LOG.
 
 ## Verdicts
 
@@ -68,14 +74,56 @@
     - "Needs a painted sign pattern" is true of A39's toy only; A38's H8 is a counterexample (C120).
     - The c1 numbers replicate exactly in my own code, but the comparison is confounded: the control vacuum is gapped (C120, my check c12).
 
+### A40: most pieces hold as graded; the verdict and the doc's section 14 overstate it
+
+- **K1 (EXACT): holds.**
+  - Turns about a V place have orbits {V}, {E}, {F} and {C} on the 8 classes, so a kinds pattern that moves with the layout is a role function.
+  - A kinds pattern on a different translate would be a second 1-of-8 label, and the combined pattern would not map to a translate of itself under the turns. So "the same choice" is forced, not merely convenient.
+- **G1 (EXACT; checked on A25's builder): holds.** It says where gravity's content acts (V and F). It does not say where extra room is needed (C136).
+- **3.4 and k3 (EXACT within 270 combinations): hold.** The criterion doing the work is that charged matter and the lapse share one star (a place and its six neighbours). The doc should state it (C140).
+- **The S1 verdict (ARGUED overall): overstated.** "Coherent" has not been shown. Three load-bearing pieces are open, and one of them is excluded in its simplest form: the charged hop (C134), light's fast phase on this grid (COMPARATOR), and matter's empty space (C135). See C138.
+- **"Factor-wise Record": a change to the axiom's text, not a reading.**
+  - Once a place's domain is a product of factors, "locks exactly one admissible local possibility" means a one-dimensional projector of the whole place, which would also lock gravity's factors.
+  - Restricting it to the matter factor changes what "local possibility" means. That needs the owner's exact text, as decision 7 already says for permanence (C139).
+- **Payload.**
+  - "No finite domain holds A25's field" (tr[h, π] = 0 ≠ i·dim) is EXACT, given A25's canonical pairs.
+  - "≥ 2 qubits for a glued charge" is EXACT. The constraint is in fact stronger: a charged hop through a glued link is covariant only if the matter states carry a vector index, so a one-component charge cannot hop at all (EXACT; c13).
+  - "E and C keep one qubit" contradicts A25's own covariance construction, in which every place carries its 8-valued role label in its content (A25 S9.2; A40 §3.6 says so itself). See C136.
+  - Light's one qubit per link is correctly graded COMPARATOR. The lapse pair is correctly graded ARGUED.
+  - The weight W1 = N̂ ⊗ F_m needs N̂ ≥ 0, which a linearized lapse 1 + δN does not satisfy. A positive function of the lapse must be supplied (C144).
+- **T1/T3, generalized Theorem S (EXACT): hold, for matter with one internal state per place** (kept real signs, or A33's parities). They do not cover matter with internal components. For neutral vector matter, the covariant hop i S^a already gives same-speed-in-every-direction touchings at k = 0, with no flux and no pattern, plus a flat middle band (EXACT; c13).
+- **T5.**
+  - **The classical part is EXACT.** On Z³, two link configurations with equal flux through every square differ by a gauge change. On the 4³ torus, the flux through every square leaves the holonomies around the torus's cycles undetermined. k4's explicit gauge functions settle those as well; the coordinator's square-only check (verify_A40_flux.py) would not do so on its own, though the conclusion stands because of k4.
+  - **Both checks concern a classical link pattern, not light's quantum ground state.**
+  - **The physical inference fails in its simplest form.** A light link's raising operator picks up a phase −i under a quarter turn about the link's own axis (EXACT; c13). So no hop of one-component charged matter through a link is covariant: there are 0 covariant parameters, and A40's example of a charge on the singlet is one such case.
+  - Covariant charged hops exist only when the matter states carry a vector index. For a triplet charge over a singlet empty state, they form a family with 2 real parameters, made of helicity-changing matrices.
+  - So "the single-particle problem is KS on the coarse lattice" (T5, T7) does not describe glued charged matter. What matter feels around a square is light's flux combined with a matrix holonomy, and that has not been analysed (my c14 scan was inconclusive).
+- **T6 (COMPARATOR).**
+  - A uniform coefficient on light's square term is covariant under every turn (EXACT; c13, an explicit 4-qubit check), so "one uniform sign, not a pattern" holds at the level of symmetry.
+  - That the sign selects a π-flux fast-light phase comes from pyrochlore spin ice (six-sided rings on the diamond lattice) and is transferred to cubic squares. A40 flags this transfer for L2 but not at T6.
+- **T8 (EXACT for one-component matter): holds as arithmetic.** A one-place staggered mass on the coarse lattice has period 4, giving a further 1-of-2 label.
+  - It is moot for glued charged matter, which cannot be one-component (C134).
+  - No mass removes the negative-energy branch over an empty matter vacuum (C135).
+  - A mass generated by the dynamics would be a state-level 1-of-2 choice, not necessarily a supplied one (ARGUED).
+- **T9 (ARGUED in A40; EXACT for single particles via A39's positivity lemma).** It is left out of A40's verdict costs and out of section 14 (C135).
+- **Records never adjacent (EXACT).** The consequences for I2, A28 and Q7 are only partly in the doc (C137).
+
 ## What I ran
 
-All runs used `nice -n 10` with the four thread caps at 1. The 1-minute load was 2.47–5.64 at run time, always under 6.
+All runs used `nice -n 10` with the four thread caps at 1. The 1-minute load was 2.23–5.64 at run time, always under 6.
 
 | Script | Toy | Result | Time, memory |
 |---|---|---|---|
 | `c11_h8_not_ground.py` | One-flip block over H8 on a 4³ torus, calm pair law J(σ·σ + σ^aσ^a), J = ±1 | Double-flip amplitude 2.0e-16 (calm). One-flip energies relative to H8 run from −8.0000 to +8.0000; 27 of 64 lie below zero; the spectrum is symmetric about 0. Identical for J = +1 and J = −1. | 0.20 s, 28 MB |
 | `c12_fragility_control.py` | A39 c1's toy, rebuilt in my own code: 4×3 π-flux torus, 12 qubits, the same slow on-off cycle of δΣX (period 400, dt = 0.5) | See the table below | 3.6–6.2 s per run, ≤ 96 MB |
+| `c13_glued_link_hops.py` | Glued action on A40's light links (E = σ^a, U = (σ^b + iσ^c)/2) and on matter hops through them, for all 24 turns | See the list below | 0.18 s, 64 MB |
+| `c14_vector_matter_bands.py` | Bands of c13's covariant charged vector hops in classical zero-flux and π-flux link backgrounds, on a 20³ grid | Exploratory and inconclusive: band gaps and \|E\| reach about 1e-6 to 1e-3 on the grid, and the π-flux spectrum is symmetric about 0. Not used for any claim. | 3.0 s, 64 MB |
+
+c13 results:
+1. **Link phase.** A z-link's raising operator picks up −i under a quarter turn about its own axis. Over all 24 turns and 3 directions the phases are ±1 and ±i.
+2. **Square term.** Light's square term U U U† U†, pushed forward by each of the 24 turns in each of the 3 planes, equals the image square's own term or its conjugate (maximum deviation 3.3e-16). So a uniform coefficient respects every turn.
+3. **Charged hops through a link that respect all 24 turns.** One-component (turn-scalar) matter: 0 real parameters. Triplet matter over a singlet empty state: 2 real parameters.
+4. **Neutral vector matter without links.** Covariant hops have 3 real parameters, and i S^a is among them (residual 1.3e-15). Its slopes at k = 0 are −2, 0 and +2 in all 200 directions tested.
 
 c12 results:
 
@@ -323,7 +371,7 @@ c12 results:
   - Line 360: `### 13. Late result: can quiet empty space carry light? (A39; checked by me and by one hostile review round)`
   - Line 1: replace "(v11, after seven review rounds)" with "(after eight review rounds)". The version number is the coordinator's.
   - Line 51:
-    > Eight rounds of hostile review by four separate agents attacked the main claims (the second reviewed twice and the fourth four times; each later round had read the earlier ones; the eighth covered only the late sections 12 and 13), and their corrections are included.
+    > Eight rounds of hostile review by four separate agents attacked the main claims (the second reviewed twice and the fourth four times; each later round had read the earlier ones; the eighth covered only the late sections 12 to 14), and their corrections are included.
   - Summary line 10:
     > Eight rounds of hostile review, by four separate agents, attacked the claims, and their corrections are folded in.
 
@@ -351,6 +399,146 @@ These are for the coordinator's record wherever lane text is quoted.
 - **A39 §3.3(e) cost 3 and LOG table row (e): "matter number exactly conserved".** Change to "no term may create matter from matter-empty space (matter number may still change where matter already is)". A term such as g·n_m(r)(a†_{r′} + a_{r′}) and its adjoint both vanish on |0_m⟩, so Ω stays exactly quiet.
 - **LOG table row (f).** Add "needs the ground state".
 
+### C134 — MAJOR (section 14): "the twist comes free (exact core)" assumes a charged hop that cannot respect the turns
+
+- **Where.** Draft line 382.
+- **Quote.** "**The twist comes free (exact core; my check).** Matter hopping from corner to corner passes through light's links. If light's own calm state carries a half-turn twist around every square, which needs only one uniform sign in light's rule, not a pattern, then matter feels exactly the twist it needs for light-like motion. That calm state looks the same after every turn of the grid; my check confirmed this on all 192 squares for all 24 turns. Whether light really settles into that state on this grid is a comparison with known magnet models, not shown here."
+- **What is wrong.**
+  - **The simple charged hop is not covariant.** "Matter feels exactly the twist it needs" assumes the simple one-component hop ψ†_V U ψ_V′ (KS on the coarse lattice: A40 T5, T7). Under the glued action, a link's raising operator picks up −i under a quarter turn about the link's own axis. No one-component charge can compensate for that phase, so no such hop is covariant (EXACT; c13: 0 parameters).
+  - **Covariant charged hops need a vector index.** They exist only when matter states carry a vector index (for example a triplet charge over a singlet empty state; 2 real parameters), with matrices that rotate the internal state as it hops. Matter then feels light's flux combined with a matrix holonomy, which nobody has analysed. A40 lists the charged hop as open edge 2; its simplest form is now excluded.
+  - **"My check confirmed this" concerns a classical link pattern.** The check covers the flux through every square of a classical link pattern after each turn, not light's quantum ground state. A40 T6's "one uniform sign" is fine at the level of symmetry: c13 confirms that a uniform square-term coefficient respects every turn.
+  - **T1/T3 are scoped to one-component matter.** Matter with internal components can get a covariant twisting hop from the rule itself, giving same-speed motion in every direction with no pattern (EXACT; c13), so light's twist is not the only option.
+  - **The comparison was made on a different grid.** It comes from spin ice on the pyrochlore lattice (six-sided rings), not cubic squares.
+- **Corrected wording.**
+  - Light's uniform π pattern respects every turn up to gauge (EXACT, classical), and its square-term sign respects the turns (EXACT).
+  - Matter cannot hop through a glued link with one internal state (EXACT); with a vector index it can, and what its ripples do is open.
+  - Light's settling into the π phase on this grid is COMPARATOR, from another grid.
+- **Replacement text** for line 382:
+  > - **The twist from light: promising, not shown (symmetry facts exact; the rest open).** Matter hopping from corner to corner passes through light's links. A half-turn twist in light's links around every square needs only one uniform sign in light's rule, not a pattern, and that twisted pattern of links looks the same after every turn of the grid, up to a relabelling that changes nothing physical (exact; my check on all 192 squares for all 24 turns, and the review confirmed that one uniform sign on light's square term respects every turn). But a charged hop through a link respects the turns only if matter at each corner has internal parts that turn with the grid: matter with a single internal state cannot hop through light's links at all (exact; fourth review's check). So this matter is not the simple one-part kind for which light's twist gives exactly light-like motion, and what its ripples do has not been worked out. Matter with internal parts can also get a twist from the rule itself, with no pattern (shown for uncharged matter, with a heavy partner beside the light-like ripples; fourth review's check), so light's twist is one option, not the only one. Whether light really settles into the twisted state on this grid is a comparison with magnet models on a different grid, not shown here.
+
+### C135 — MAJOR (section 14): matter's empty space is left out; light-like matter over a never-recording empty space has negative energies
+
+- **Where.** Section 14's price list (lines 383–389). Nothing there covers it.
+- **Quote (A40 §3.8 T9, ARGUED).** "Over an empty, quiet matter vacuum, the lower Dirac branch is made of real one-particle states with no sea. A39's loopholes (a) and (a′) still bear on matter."
+  - It is absent from A40's verdict costs (§2 item 9; §3.9) and from section 14.
+- **What is wrong.**
+  - S1 relies on A39's escape (e), which needs a quiet, empty matter vacuum.
+  - Any zero-cost linear touching for single matter particles forces negative energies (A39's positivity lemma; EXACT). So the empty matter vacuum is then not the lowest state: section 13's third way out, now for matter, with its costs.
+  - A mass does not help: the lower branch −√(m² + v²p²) stays negative.
+  - Lifting every state above zero puts the light-like point at a finite energy with slower states below it (A39's (a′)).
+  - Filling the negative states (a sea) breaks quietness (A39 cost 4; A9; the doc's decision 4).
+  - This is the main physics price of S1's matter, and the doc omits it.
+- **Corrected wording.** Light-like single-particle matter over S1's quiet empty matter vacuum makes that vacuum not the lowest state (EXACT, single particles). The alternatives are a finite-energy touching or a filled sea, which is not quiet.
+- **Replacement text** (new price bullet after line 388):
+  >   - Light-like matter over empty space that never records has states of negative energy, so its empty space is then not its calmest state: section 13's third way out, now for matter (exact for single particles; A39). A simple mass does not change this. Lifting all of matter's states above zero leaves slower matter states below the light-like point; filling the negative states, as real physics does with its sea, would make empty space record.
+
+### C136 — MAJOR (section 14): the payload is understated; every place holds more than one qubit's worth
+
+- **Where.** Draft line 384 (and line 375's "needs only half the places").
+- **Quotes.**
+  - Line 384: "Places hold more than one qubit's worth: corner and face places for gravity's parts, and corners need at least two qubits for charged matter."
+  - Line 375: "**Gravity needs only half the places (exact).**"
+- **What is wrong.**
+  - A25 makes its layout covariant by putting "role labels in the site content" (A25 S9.2; open edge 1: "a role label of 8 values"). A40's own payload table lists "an 8-valued role label" for all places.
+  - With the pattern held in the state and a law that treats all places alike, each place has to carry its job in its content. So E and C places hold more than one qubit as well.
+  - The alternative, places built differently by job, distinguishes sites by something other than "the supplied lattice structure alone" (Lattice axiom).
+  - If no place is privileged, every place must also have the same domain, which means every place carries the union of all jobs' content. A40 says so (§3.6, ARGUED), but its verdict ("E and C keep one qubit") and section 14 do not.
+  - G1 (EXACT) says where gravity's content acts, not where room is needed.
+- **Corrected wording.** Gravity's content acts on half the places (EXACT). Every place holds more than one qubit's worth: at least its 8-valued job label, and the union of all jobs if every place must have the same room (ARGUED).
+- **Replacement text.**
+  - Line 384:
+    >   - Every place holds more than one qubit's worth (argued). Each carries its 8-way job label, as in gravity's own construction; corner and face places also carry gravity's parts, and corners need at least two qubits for charged matter. If every place must have the same room (no place privileged), every place carries all of it.
+  - Line 375, first words: replace "**Gravity needs only half the places (exact).**" with "**Gravity's content sits on only half the places (exact).**" Keep the rest.
+
+### C137 — MAJOR (section 14): never-adjacent matter places conflict with your I2, empty Q7's recorded-neighbour clause for matter, and need a two-site rule
+
+- **Where.** Draft line 386.
+- **Quote.** "Matter places are never next-door neighbours, so records step two places at a time, and "records form only next to records" would have to look two places away."
+- **What is wrong.**
+  - **I2.** Your instinct I2 says a record moves at most one grid space per tick. In S1 a record can only move between matter places two spaces apart, since nothing between them ever records (EXACT). The doc does not say that this departs from I2.
+  - **Q7.** Q7 stands: "The menu ... is set by the conditions, including recorded neighbours." The Admissibility axiom is a nearest-neighbour rule. In S1 a matter place's nearest neighbours are light places, which never record. So under a nearest-neighbour rule, no matter place's odds can depend directly on another matter place's record (other records reach it only indirectly, through the change of the shared possibilities), and Q7's recorded-neighbour clause never applies to matter (EXACT).
+  - **The cost of keeping it.** Keeping that clause meaningful means a rule that reaches two places, which changes the axiom's "nearest-neighbor" wording. A40 notes the reach-2 point (§3.7) but frames it as working "only at reach 2", without saying that this changes the axiom.
+  - **Fairness.** Under the owner rules, the doc must show where a layout departs from the owner's picture.
+- **Corrected wording.** The records' step is two places (EXACT), which departs from I2 unless I2 is counted on the coarse grid of matter places. Under a nearest-neighbour rule, Q7's recorded-neighbour clause is vacuous for matter (EXACT), so keeping it needs a rule reaching two places (an axiom-wording change). A28's gate likewise has to look two places away (EXACT).
+- **Replacement text** for line 386:
+  >   - Matter places are never next-door neighbours, and nothing between them ever records (exact). So records step two places at a time, which departs from your instinct that a record moves at most one grid space per tick (I2) unless that is counted on the coarser grid of matter places. "Records form only next to records" would have to look two places away. And a rule that looks only at next-door neighbours could never let a matter place's odds depend directly on another matter place's record (only indirectly, through how the shared possibilities change), so your Q7 clause "including recorded neighbours" would reach matter only if the rule looks two places away, which changes the nearest-neighbour wording of the rule's axiom.
+
+### C138 — MAJOR (section 14): the opening says everything "fits"; coherence is not shown
+
+- **Where.** Draft line 373.
+- **Quote.** "Possibly yes: the same 8-way pattern gravity already needs can sort places into kinds so that light, gravity and records-bearing matter all fit. It works only if matter shares places with part of gravity, so it is not a clean three-way split (argued overall; the pieces are exact or checked as marked)."
+- **What is wrong.**
+  - "All fit" and "it works" overstate A40's ARGUED verdict, which itself overstates ("coherent single supplied choice").
+  - Three load-bearing pieces are open:
+    - the charged hop, which in its simplest form is excluded (C134);
+    - light's fast twisted phase on this grid, which is COMPARATOR;
+    - matter's empty space (C135).
+  - The pattern is also not a single choice once a one-place mass is wanted (T8: a further 1-of-2 label).
+- **Corrected wording.** A candidate layout with no contradiction found among the pieces checked (ARGUED). It is not shown to be coherent, and several pieces remain open.
+- **Replacement text** for line 373:
+  > Possibly, but not shown: the same 8-way pattern gravity already needs can sort places into kinds that light, gravity and records-bearing matter could share, with no contradiction found so far. It needs matter to share places with part of gravity, so it is not a clean three-way split, and three load-bearing pieces are open: how charged matter hops through light's links, whether light settles into the needed state on this grid, and matter's empty space (argued overall; the pieces are exact or checked as marked).
+
+### C139 — MINOR (section 14): "factor-wise Record" changes the axiom's text and is not a reading
+
+- **Where.** Draft line 385.
+- **Quote.** "Record must be read as locking one place's matter share only, which is a wording choice for you."
+- **What is wrong.**
+  - "Read as" suggests a non-governing reading note.
+  - With a multi-factor place, "locks exactly one admissible local possibility" (Record, verbatim) would lock the whole place, gravity included. Restricting it to the matter factor changes the axiom's text.
+  - It also presupposes the Qubit change, since the axiom gives each site the domain M₂(C).
+  - The doc already treats such changes as needing the owner's exact text (decision 7).
+- **Replacement text** for line 385:
+  >   - Record's wording would change: a record would lock one possibility of a place's matter share only, not of the whole place. That changes the Record axiom's text and needs your exact wording (as in decision 7); it presupposes the change to more room per place.
+
+### C140 — MINOR (section 14): the clean-split no-go needs its coupling-reach condition
+
+- **Where.** Draft line 376.
+- **Quote.** "No arrangement that keeps every kind on its own places lets charged matter feel gravity's slowing of time."
+- **What is wrong.** k3's criterion is that matter and the lapse share one star. With longer-reaching coupling terms the enumeration does not apply.
+- **Replacement text** for line 376:
+  > - **A clean split fails (exact, within 270 arrangements tried).** No arrangement that keeps every kind on its own places lets charged matter feel gravity's slowing of time through rule terms that stay within one place and its six neighbours.
+
+### C141 — MINOR (section 14): the bundle list is incomplete, and decision 17's entry overstates
+
+- **Where.** Draft line 390.
+- **Quote.** "It bundles several of your decisions into one picture: 13 (room per place), 17 (matter's twist, now from light rather than painted), 21 (gravity's places never record, now share by share), 22 (rules on small groups), 24, and A39's "light invisible to records"."
+- **What is wrong.**
+  - A40 §3.9 also lists decisions 4, 8, 27, 16, 20 and I5.
+  - The Qubit and Record axiom texts change, and so does Admissibility's nearest-neighbour wording if Q7's clause is to reach matter (C137).
+  - "Now from light" is not shown (C134).
+- **Replacement text** for line 390:
+  > - **Why it matters.** It bundles several of your decisions into one picture: 13 (room per place, now at every place), 17 (matter's twist, possibly from light rather than painted; not yet shown for charged matter), 21 (gravity's places never record, now share by share), 22 (rules on small groups), 24, and A39's "light invisible to records". It also touches 4 (the next-to-records rule), 8 and 27 (how records step), 16, 20, your instincts I2 and I5, Q7's recorded neighbours, and the wording of the Qubit, Record and nearest-neighbour axioms.
+
+### C142 — MINOR (section 14): records at corner places must lock charge-definite possibilities
+
+- **Where.** Draft line 378.
+- **Quote.** "**Corner places:** matter, together with gravity's stretch parts and its time-slowing. Records lock only matter's share of each such place."
+- **What is wrong.**
+  - Light's links carry Gauss's law at the corners: the charge at a corner equals the flux of light out of it.
+  - A record's cut with a projector that does not commute with the corner's charge creates a mix of charges, while the links stay unchanged, so Gauss's law fails at that place (EXACT).
+  - So the menu at corner places must consist of charge-definite possibilities. This is a constraint on the menus, and A40 does not state it.
+- **Replacement text** for line 378:
+  >   - **Corner places:** matter, together with gravity's stretch parts and its time-slowing. Records lock only matter's share of each such place, and only possibilities with a definite charge; otherwise light's bookkeeping (Gauss's law) breaks at that place (exact; fourth review).
+
+### C143 — MINOR: section 14's label, and no A40 item in the summary
+
+- **Where.** Draft line 372; MORNING_SUMMARY_DRAFT.md line 48, which has no A40 sentence as of 06:20.
+- **Replacement text.**
+  - Line 372: `### 14. Late result: one pattern of kinds of places for everything? (A40; checked by me and by one hostile review round)`
+  - Optional summary sentence, appended to line 48:
+    > A synthesis lane (A40) found that the same 8-way pattern gravity needs could sort places into kinds for light, gravity and matter, but only with matter sharing places with part of gravity, more room at every place, a change to the Record axiom's wording, records stepping two places at a time, and open questions about how charged matter hops through light's links and about matter's empty space.
+
+### C144 — MINOR (A40 report and LOG; not doc text)
+
+- **§2 item 5 and M2 example: "a charge projector onto the singlet".** With the singlet charged, the empty state is a triplet, which is degenerate and singles out a direction. Either way the hop needs a vector index (c13). Suggest the charged triplet over an empty singlet. Open edge 2 ("glued gauge-covariant hop for a two-qubit turn-scalar charge") is answered: none exists for a one-component charge, and a 2-parameter family exists for a triplet.
+- **T5 "(EXACT; CHECKED k4)".** Add "for classical link patterns; on a torus, equal square fluxes do not by themselves fix the holonomies around the cycles; k4's explicit gauges do".
+- **LOG 06:20, "T5's core ... CONFIRMED".** Add "(square fluxes of the classical pattern; gauge equivalence on the torus rests on k4)".
+- **T6.** Add "from pyrochlore spin ice (six-sided rings on the diamond lattice), not verified for cubic squares".
+- **T7 "The single-particle problem is KS on the coarse lattice".** Add "for one-component hops, which glued charged matter cannot have (A34 c13)".
+- **§3.7 W1 = N̂_V ⊗ F_matter "(EXACT)".** Add "needs N̂ ≥ 0; a linearized lapse 1 + δN is not, so a positive function of the lapse is supplied".
+- **§2 item 9 and §3.9 costs.** Add "matter's quiet empty vacuum is not its lowest state if matter is light-like (T9; A39)" and "the 8-valued role label at every place". Replace "a factor-wise reading of Record" with "a change to the Record axiom's text".
+- **§3.9, "E and C keep one qubit".** This is true only if places are built differently by job. Under the state-level label (A25 S9.2) every place carries more (C136).
+
 ## Fine as written (checked; no change needed)
 
 - **Line 351.** The question is framed fairly.
@@ -366,10 +554,24 @@ These are for the coordinator's record wherever lane text is quoted.
   - Q7 is untouched;
   - memory and two kinds of places are presented as costs and decisions, not adoptions.
   - The only convention slips are the two unlabelled comparisons (C122, C123).
+- **Section 14.**
+  - **Line 374 ("No new pattern", exact).** Correct (K1). The combined pattern's covariance forces the same translate.
+  - **Lines 377, 379, 380 and 381 (the S1 layout).** Accurate to A40.
+  - **Line 387 ("Matter must never appear out of empty space").** The accurate rendering (see C133 on A39's stronger wording).
+  - **Line 388 (mass).** Correct for one-component matter (T8); C135 adds that a mass does not remove the negative branch.
+  - **Line 389 (no fully recorded region; "your black-hole picture changes").** EXACT in S1 and fair to I5.
+  - **The last sentence of line 382** ("a comparison with known magnet models, not shown here") is honest. C134 keeps it and names the different grid.
+  - **Owner rules.** No possibility is "read", no beat is adopted, and choices are framed as yours. The exceptions are the two items C137 and C139 make explicit: Q7's clause and the Record wording.
 
 ## Owner decisions raised or sharpened by this round (all yours)
 
-1. Is an empty background that is not the calmest state acceptable at all? It is the only way A38's light-like point arises (C116, C120).
+1. Is an empty background that is not the calmest state acceptable at all? It is the only way A38's light-like point arises (C116, C120). For S1 it applies to matter too (C135).
 2. If the 8-fold route is pursued, may its background have spots that share their possibilities, or more room per place? A pointing background cannot carry it (C117).
 3. A38's four decisions (C130).
 4. Under "light invisible to records": may matter multiply only where matter already is? A39's argument needs only that, not exact conservation (C133).
+5. S1's decisions:
+   - Would you change Record's text to lock one possibility of a place's matter share (C139)?
+   - Would you accept records stepping two places, against I2 (C137)?
+   - Would you widen the rule's reach to two places so that Q7's recorded-neighbour clause reaches matter (C137)?
+   - Would you accept every place carrying its job label (C136)?
+   - Would you accept matter whose charged states have internal parts that turn with the grid, the only kind that can hop through light's links (C134)?

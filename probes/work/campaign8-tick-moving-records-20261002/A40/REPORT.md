@@ -361,3 +361,14 @@ Tolerance: zeros are exact (integer or dyadic arithmetic). k2's 0.0 is a floatin
 ## 6. Plain-language summary
 
 The grid's places can be sorted into kinds using the same 8-way pattern that gravity already needs, so no new pattern is added. Gravity needs only half the places if its rule may use small groups of places, not just pairs. But no arrangement keeps every kind on its own places and still lets charged matter feel gravity's slowing of time. The arrangement that works puts matter on the same places as gravity's stretch parts, with records fixing only matter's share of each place. Light sits on the places between them, and one place in eight has no job. Light's own calm state can then give matter the half-turn twist it needs, with nothing painted on. The price: places that hold more than one site's worth, records that move two places at a time and never touch light or gravity, and matter that never appears out of empty space.
+
+---
+
+## ERRATA from review round 8 (A34/REVIEW4.md), added by the coordinator
+
+- Open edge 2 answered (A34 c13, EXACT): no glued covariant hop exists for one-component charged matter (a link's raising operator picks up −i under a quarter turn about its axis); a 2-parameter family exists for a charged triplet over an empty singlet. T5/T7's 'KS on the coarse lattice' therefore does not describe glued charged matter (C134, C144).
+- T5: EXACT for classical link patterns; on a torus, equal square fluxes do not fix the cycle holonomies; k4's explicit gauges do (C144).
+- T6: the comparator is pyrochlore spin ice (hexagonal rings), not verified for cubic squares (C144).
+- W1 = N̂ ⊗ F_m needs N̂ ≥ 0; a linearized lapse is not; a positive function of the lapse is supplied (C144).
+- Verdict costs: add matter's empty vacuum not lowest if matter is light-like (T9, A39), the 8-valued role label at EVERY place, and 'a change to the Record axiom's text' instead of 'a factor-wise reading' (C135, C136, C139, C144).
+- S1 verdict is 'a candidate with no contradiction found among pieces checked', not 'coherent' (C138). Records stepping two sites departs from I2; Q7's recorded-neighbour clause needs reach 2 (an Admissibility wording change) (C137). Records at V must lock charge-definite possibilities (Gauss) (C142).

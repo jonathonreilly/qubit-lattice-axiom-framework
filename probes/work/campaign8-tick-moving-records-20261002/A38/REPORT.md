@@ -181,3 +181,13 @@ Take a period-2 product texture (one direction m_r per site of the 2×2×2 cell)
 ## 7. Plain-language summary
 
 I looked for a calm, patterned empty background in which neighbouring sub-grids point different ways, under a rule that treats every spot and turn alike. If the pattern must look the same after any turn of the grid, apart from a shift, there is exactly one such background: the 8 spots of each small cube point to the cube's 8 corners. One simple rule keeps it calm. Ripples on it get a twist on every square face, but it is always a third of a turn, never the half turn that light-like motion needs, and no rule of this kind can change that (proved). With the simple rule, the ripples form lines of zero-cost motion rather than cones. With richer three-spot rules and carefully chosen strengths, some ripples move the same speed in every direction at zero cost, but heavy, slow ripples sit at the same spot and energy. So no sign pattern needs painting on, but the background, extra kinds of rule terms, and finely set numbers are all put in by hand, and the result is only partly light-like.
+
+---
+
+## ERRATA from review round 8 (A34/REVIEW4.md), added by the coordinator
+
+- D5 'under EVERY glued covariant law': on nearest-neighbour faces, whenever nearest-neighbour hops are nonzero; loops through longer hops are not covered (C133).
+- D6 'narrows A31 D4': CHECKED; the isotropic point has 2+2 linear modes plus 4 heavy ones, and H8 is not the ground state there (C133).
+- D7 'others do not': under the pair law; an 8-dimensional star subfamily also keeps −m records calm (C133).
+- NEW (A34 c11, EXACT): H8 is not the ground state of its calm pair law, for either sign (27 of 64 one-flip states below on 4³), nor at any zero-cost linear touching (A39 positivity lemma). So A38's light-like offers fall under A39 escape (a) (C116).
+- The parity route cannot be set up on H8 (no half-turn fixes a site); A38 did not test the route, it showed the route needs a non-pointing background (C117).

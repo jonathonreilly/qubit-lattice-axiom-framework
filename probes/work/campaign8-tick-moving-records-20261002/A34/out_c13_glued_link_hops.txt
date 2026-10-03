@@ -1,0 +1,9 @@
+(1) phase of a z-link's raising operator under a quarter turn about its own axis: -1j
+    phases over all 24 turns and 3 link directions: [(-1+0j), (-0-1j), (-0+1j), (1+0j)]
+(2) square term pushed forward by each of 24 turns, 3 planes: max distance to the image square's P or P^dag = 3.3e-16
+(3) charged hops through light's link, covariant under all 24 turns: turn-scalar matter: 0 real parameters; vector (triplet) matter: 2 real parameters
+(4) neutral vector matter, no link: covariant hops: 3 real parameters
+    i S^a lies in that space: residual 1.3e-15
+    hop i S^a: slopes at k=0 over 200 directions: min/max per band [-2. -0.  2.] [-2.  0.  2.]
+(5) vector charged hop #0: |M_x| = 0.577; square holonomy eigenvalues [-0.0056-0.0041j -0.0056+0.0041j  0.    -0.j    ]
+(5) vector charged hop #1: |M_x| = 0.577; square holonomy eigenvalues [-0.0056-0.0041j -0.0056+0.0041j -0.    +0.j    ]

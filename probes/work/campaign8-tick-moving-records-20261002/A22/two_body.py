@@ -13,6 +13,7 @@ from tb import Rel, bands, PI
 
 phi = 0.8
 CASES = dict(
+    free=dict(geom="ladder", V=None),
     contact=dict(geom="ladder", V=[(0, "all", phi)]),
     nn=dict(geom="ladder", V=[(1, "all", phi), (-1, "all", phi)]),
     nnodd=dict(geom="ladder", V=[(1, "odd", phi), (-1, "odd", phi)]),

@@ -1,0 +1,9 @@
+1D m=0.0: stepped -> gap at w=0 0.000 (k=0), gap at w=pi 0.000 (k=-1.00 pi); smooth -> gap minima 2E*tau=0.000 at k/pi = [-1.  0.  1.] (both at quasi-energy 0)
+1D m=0.3: stepped -> gap at w=0 0.600 (k=0), gap at w=pi 0.600 (k=-1.00 pi); smooth -> gap minima 2E*tau=0.600 at k/pi = [-1.  0.  1.] (both at quasi-energy 0)
+
+3D H_W, tau=1.0: max |d| tau = 1.732 (pi = 3.142); min distance of eigenphase from pi on 40^3 grid = 1.410; grid fraction within 0.05 of pi = 0.0000
+   chiralities at the 8 TRIM (quasi-energy 0): [ 1. -1. -1.  1. -1.  1.  1. -1.]; net +0.000
+   W3 (grid 20^3) = -0.0000
+
+3D H_W, tau=2.0: max |d| tau = 3.464 (pi = 3.142); min distance of eigenphase from pi on 40^3 grid = 0.002; grid fraction within 0.05 of pi = 0.0307
+   chiralities at the 8 TRIM (quasi-energy 0): [ 1. -1. -1.  1. -1.  1.  1. -1.]; net -0.000

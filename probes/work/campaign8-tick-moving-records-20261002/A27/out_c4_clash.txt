@@ -1,0 +1,5 @@
+CL (claim rule): total prob 0.999999999999999; P(both at y) 0.0e+00; TV none/Z 2.78e-17, none/X 2.01e-16, Z/X 1.87e-16
+   law (A pos, B pos): {(-1, 1): np.float64(0.07638), (-1, 2): np.float64(0.19639), (-1, 3): np.float64(0.0667), (0, 1): np.float64(0.12331), (0, 2): np.float64(0.26321), (0, 3): np.float64(0.09205), (1, 2): np.float64(0.14103), (1, 3): np.float64(0.04094)}
+literal I3: total prob 1.000000000000000; P(both at y) 0.0e+00; TV none/Z 3.53e-03, none/X 3.53e-03, Z/X 7.07e-03
+   law (A pos, B pos): {(-1, 1): np.float64(0.08606), (-1, 2): np.float64(0.21038), (-1, 3): np.float64(0.08606), (0, 1): np.float64(0.11362), (0, 2): np.float64(0.21588), (0, 3): np.float64(0.08831), (1, 2): np.float64(0.14906), (1, 3): np.float64(0.05062)}
+CL at the clash site: P(y takes A | y takes someone) = 0.500000  (relative odds wA/(wA+wB))

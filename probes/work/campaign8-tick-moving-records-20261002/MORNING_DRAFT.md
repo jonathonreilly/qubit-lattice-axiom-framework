@@ -48,7 +48,11 @@
   - The loose pinning comes from records forming on something small that bumped the thing, as in the textbook account of cloud-chamber tracks (a comparison, not adopted).
   - Records formed straight from the thing's own neighbourhood make it forget its speed.
   - This toy moves things with a fixed round of partner pairs; see point 3.
-- **Catch: a "time-doubled" twin.** In the toy, a bump made at a single site sends about half of whatever bounces back into a twin that flickers at the tick rate. Nothing like that is seen, so it must be avoided or shown to be invisible. A22 is checking this.
+- **Catch, now resolved: the "time-doubled" twin (A22).**
+  - A twin that flickers at the tick rate exists exactly when each tick fully swaps a set of partners, which is also what lets light run at the grid's top speed.
+  - In that case nothing local can remove it, and slow collisions push half or more of their outcome into the twin.
+  - With small changes per tick (which A18's gravity package needs anyway), the twin cannot be produced by a few-particle collision, and many-particle production falls off extremely fast.
+  - The price: light runs well below the grid's top speed.
 
 ### 3. How can anything move at all? (A3, A10, A20, plus my check)
 - **The exact limit (A20).** Take any reversible step on one qubit per site that treats every site and every turn of the grid exactly alike on every tick, with possibilities turning along with the grid (your Q3). If a site's possibilities can reach only its six neighbours in one tick, the step changes nothing at all. That stops everything, not just records: light and matter waves could not move either.
@@ -185,4 +189,4 @@ My overnight note was too strong; the reviewers caught it.
 12. **How unrecorded things move.** Light and matter waves need a reversible change that moves something (point 3). Which gives: longer reach, a supplied pattern, more room per site, or sameness only on average?
 13. **A gravity field.** May the shared possibilities carry a never-locked "shape" field that the fixed rule passes along? May the gluing to the grid tilt from place to place as part of that field? Must a forming record leave energy unchanged (A23)?
 
-*Still running: A22 (time-doubled twin), A24 (energy-gentle records), A25 (symmetric stepping rule for the shape field), A26 (matter coupled to the shape field).*
+*Still running: A24 (energy-gentle records), A25 (symmetric stepping rule for the shape field), A26 (matter coupled to the shape field).*

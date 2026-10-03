@@ -1,0 +1,45 @@
+(a) identity L1 on random instances (d = 12)
+   max |direct - double commutator| (incl. completeness) = 5.3e-15
+
+(b) one-site binary lock at the packet centre; (c) full sharp instrument
+   k0=0.000: <H>=-1.99957 (-2cos k0 = -2.00000); binary lock dE=+6.646e-02 vs -(bond energies at x) +6.646e-02; full sharp dE = +1.99957 = depth below centre; per record (dE/<n_x>) binary: +3.9983
+   k0=0.300: <H>=-1.91026 (-2cos k0 = -1.91067); binary lock dE=+6.349e-02 vs -(bond energies at x) +6.349e-02; full sharp dE = +1.91026 = depth below centre; per record (dE/<n_x>) binary: +3.8197
+   k0=1.000: <H>=-1.08037 (-2cos k0 = -1.08060); binary lock dE=+3.591e-02 vs -(bond energies at x) +3.591e-02; full sharp dE = +1.08037 = depth below centre; per record (dE/<n_x>) binary: +2.1603
+   k0=1.571: <H>=-0.00000 (-2cos k0 = -0.00000); binary lock dE=+3.582e-16 vs -(bond energies at x) +3.582e-16; full sharp dE = +0.00000 = depth below centre; per record (dE/<n_x>) binary: +0.0000
+   k0=2.500: <H>=+1.60194 (-2cos k0 = +1.60229); binary lock dE=-5.325e-02 vs -(bond energies at x) -5.325e-02; full sharp dE = -1.60194 = depth below centre; per record (dE/<n_x>) binary: -3.2032
+
+(d) unsharp position-diagonal Lueders instruments: dE = (1 - B)(-<H>);  R = 8 sigma^2 (1 - B) -> I_F sigma^2 >= 1
+   sigma=  1.0: gauss R=  0.940  laplace R=  1.404  triangle R=  1.151  uniform R=  2.500
+   sigma=  2.0: gauss R=  0.985  laplace R=  1.824  triangle R=  1.709  uniform R=  4.571
+   sigma=  4.0: gauss R=  0.996  laplace R=  1.954  triangle R=  1.887  uniform R=  9.286
+   sigma=  8.0: gauss R=  0.999  laplace R=  1.988  triangle R=  1.951  uniform R= 18.643
+   sigma= 16.0: gauss R=  1.000  laplace R=  1.997  triangle R=  1.987  uniform R= 36.655
+   sigma= 32.0: gauss R=  1.000  laplace R=  1.999  triangle R=  2.269  uniform R= 73.994
+   direct Kraus sum (L=64, Gaussian sigma=2.5): dE=3.635003e-02; (1-B)(-<H>)=3.635003e-02; continuum J cos k/(4 sigma^2) x e^(-1/(8w^2)) = 3.671474e-02
+   Gaussian sigma=2.0: dE = 5.8772e-02; hbar^2/(8 m* sigma^2) x (-<H>/2J) = 5.9696e-02
+   Gaussian sigma=8.0: dE = 3.7273e-03; hbar^2/(8 m* sigma^2) x (-<H>/2J) = 3.7310e-03
+   Gaussian sigma=32.0: dE = 2.3317e-04; hbar^2/(8 m* sigma^2) x (-<H>/2J) = 2.3319e-04
+
+(e) fixed block partitions (pixels of s sites), averaged over the partition offset
+   s=  2: mean dE = 9.5513e-01; (1/s)(-<H>) = 9.5513e-01; Gaussian with the same variance (sigma^2=(s^2-1)/12): 9.5513e-01
+   s=  4: mean dE = 4.7756e-01; (1/s)(-<H>) = 4.7756e-01; Gaussian with the same variance (sigma^2=(s^2-1)/12): 1.9103e-01; explicit projectors offset 0: 4.7756e-01 vs -(cut bonds) 4.7756e-01
+   s=  8: mean dE = 2.3878e-01; (1/s)(-<H>) = 2.3878e-01; Gaussian with the same variance (sigma^2=(s^2-1)/12): 4.5482e-02
+   s= 16: mean dE = 1.1939e-01; (1/s)(-<H>) = 1.1939e-01; Gaussian with the same variance (sigma^2=(s^2-1)/12): 1.1237e-02
+   s= 32: mean dE = 5.9696e-02; (1/s)(-<H>) = 5.9696e-02; Gaussian with the same variance (sigma^2=(s^2-1)/12): 2.8010e-03; explicit projectors offset 0: 5.9697e-02 vs -(cut bonds) 5.9697e-02
+   s= 64: mean dE = 2.9848e-02; (1/s)(-<H>) = 2.9848e-02; Gaussian with the same variance (sigma^2=(s^2-1)/12): 6.9973e-04
+
+(f) sparse (one-sublattice) support
+   max |bond energy| = 0.0e+00; binary lock dE = 0.0e+00; <H> = 0.0e+00 (already at the band centre)
+
+(g) static trap bound state on an open chain (site 0 has on-site energy -V): one-site lock at the trap
+   V=  0.25: Eb=-2.01556 (exact -2.01556); |c0|^2=0.12403; lock dE=4.37983e-01; 2|c0|^2(H00-Eb)=4.37983e-01; closed form 4.37983e-01; 4J^2/V=1.6000e+01
+   V=  0.50: Eb=-2.06155 (exact -2.06155); |c0|^2=0.24254; lock dE=7.57464e-01; 2|c0|^2(H00-Eb)=7.57464e-01; closed form 7.57464e-01; 4J^2/V=8.0000e+00
+   V=  1.00: Eb=-2.23607 (exact -2.23607); |c0|^2=0.44721; lock dE=1.10557e+00; 2|c0|^2(H00-Eb)=1.10557e+00; closed form 1.10557e+00; 4J^2/V=4.0000e+00
+   V=  2.00: Eb=-2.82843 (exact -2.82843); |c0|^2=0.70711; lock dE=1.17157e+00; 2|c0|^2(H00-Eb)=1.17157e+00; closed form 1.17157e+00; 4J^2/V=2.0000e+00
+   V=  4.00: Eb=-4.47214 (exact -4.47214); |c0|^2=0.89443; lock dE=8.44582e-01; 2|c0|^2(H00-Eb)=8.44582e-01; closed form 8.44582e-01; 4J^2/V=1.0000e+00
+   V=  8.00: Eb=-8.24621 (exact -8.24621); |c0|^2=0.97014; lock dE=4.77720e-01; 2|c0|^2(H00-Eb)=4.77720e-01; closed form 4.77720e-01; 4J^2/V=5.0000e-01
+   V= 16.00: Eb=-16.12452 (exact -16.12452); |c0|^2=0.99228; lock dE=2.47108e-01; 2|c0|^2(H00-Eb)=2.47108e-01; closed form 2.47108e-01; 4J^2/V=2.5000e-01
+   V= 64.00: Eb=-64.03124 (exact -64.03124); |c0|^2=0.99951; lock dE=6.24543e-02; 2|c0|^2(H00-Eb)=6.24543e-02; closed form 6.24543e-02; 4J^2/V=6.2500e-02
+
+(h) diamond chain flat band (hubs h_j; top t_j, bottom b_j bonded to h_j and h_{j+1})
+   flat-band count at E=0: 42 of 120; |H cls| = 0.0e+00; one-site lock dE = 0.0e+00

@@ -1,0 +1,14 @@
+mover: J_A=0.05 (m_A=10), K_A=0.5, v_A=0.0479, w_A=8.0; <H_A>=-0.087587; K sd 0.0625.  contact U=1.5, L=260
+direct locks on the mover instead: sharp dE = -<H_A> = +0.08759 (mover half-bandwidth 2J_A = 0.1); Gaussian sigma = w_B = 12.0: J_A cos K_A/(4 sigma^2) = 7.618e-05
+
+q=-1.300 (v_B=1.927), T=69: norm 1.000000000000; total energy -0.62180138 -> -0.62180138
+   collision: <H_A> -0.087587 -> -0.039388, <H_B> -0.534533 -> -0.582438, contact 3.2e-04 -> 2.4e-05; P(reflected) 0.3653, P(transmitted) 0.6341
+   given reflected probe: mover <H_A> +0.044101 (change +1.317e-01), mover K -2.0300 (shift -2.5300; -2|q| = -2.600), mover K sd 0.0998; probe <H_B> -0.66721
+   given transmitted:     mover <H_A> -0.087571 (change +1.557e-05), mover K shift +0.0003, K sd 0.0628
+   SHARP PROBE LOCK (record wherever the probe is): dE = +0.582438; -<H_B> = +0.582438 (2 J_B cos q = +0.5350); per reflected-probe record: +0.66721; mover share of dE: exactly 0
+
+q=-1.571 (v_B=2.000), T=67: norm 1.000000000000; total energy -0.08726059 -> -0.08726059
+   collision: <H_A> -0.087587 -> -0.028021, <H_B> +0.000007 -> -0.059276, contact 3.2e-04 -> 3.6e-05; P(reflected) 0.3487, P(transmitted) 0.6507
+   given reflected probe: mover <H_A> +0.082934 (change +1.705e-01), mover K -2.5564 (shift -3.0564; -2|q| = -3.142), mover K sd 0.1012; probe <H_B> -0.17049
+   given transmitted:     mover <H_A> -0.087573 (change +1.450e-05), mover K shift +0.0003, K sd 0.0628
+   SHARP PROBE LOCK (record wherever the probe is): dE = +0.059276; -<H_B> = +0.059276 (2 J_B cos q = -0.0000); per reflected-probe record: +0.17049; mover share of dE: exactly 0

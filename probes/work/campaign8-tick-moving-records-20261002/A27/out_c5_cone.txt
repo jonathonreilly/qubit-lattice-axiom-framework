@@ -1,0 +1,17 @@
+Nearest content A's choice can place is 7 sites from B.  TV of B's record history by tick n:
+   n:        1        2        3        4        5        6        7        8        9       10       11       12
+ strict theta=1.0:  0.0e+00  0.0e+00  0.0e+00  0.0e+00  0.0e+00  0.0e+00  0.0e+00  1.3e-02  1.5e-02  3.7e-02  3.7e-02  3.7e-02
+     smooth x=0.5:  9.2e-17  1.1e-12  3.0e-10  1.4e-08  2.8e-07  2.9e-06  2.0e-05  1.0e-04  4.1e-04  1.3e-03  3.5e-03  8.1e-03
+     smooth x=1.0:  1.1e-12  1.5e-08  3.2e-06  1.1e-04  1.3e-03  8.1e-03  2.8e-02  5.8e-02  7.7e-02  7.7e-02  7.7e-02  7.7e-02
+     smooth x=2.0:  1.5e-08  1.1e-04  8.2e-03  5.0e-02  5.0e-02  5.0e-02  5.4e-02  5.4e-02  5.4e-02  5.9e-02  5.9e-02  6.3e-02
+
+Per-site leak beyond the record cone after n ticks, 1D: |J_{n+1}(n x)|^2 (Debye rate 2*eta(x) per tick)
+  x=0.5: n=5,10,20,40 -> 1.78e-05 1.23e-07 8.45e-12 6.63e-20   eta=0.4509
+  x=0.9: n=5,10,20,40 -> 7.10e-03 3.87e-03 1.36e-03 2.32e-04   eta=0.0313
+  x=1.0: n=5,10,20,40 -> 1.72e-02 1.52e-02 1.22e-02 9.28e-03   eta=0.0000
+  x=1.2: n=5,10,20,40 -> 6.04e-02 7.31e-02 5.13e-02 6.18e-04   eta=0.0000
+
+3D, L1 cone (one grid space per tick): max over |d|_1 = n+1 of prod_a J_{d_a}(n x)^2
+  x=0.200 (L1 top speed 3x = 0.60 sites/tick): n=6,12,24 -> 6.97e-07 4.51e-09 6.37e-13
+  x=0.333 (L1 top speed 3x = 1.00 sites/tick): n=6,12,24 -> 2.58e-04 1.09e-04 3.98e-05
+  x=0.500 (L1 top speed 3x = 1.50 sites/tick): n=6,12,24 -> 5.33e-03 2.14e-03 2.85e-04

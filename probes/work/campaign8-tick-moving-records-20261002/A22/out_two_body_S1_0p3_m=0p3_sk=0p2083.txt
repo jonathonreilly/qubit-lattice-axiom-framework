@@ -1,0 +1,2 @@
+  [S1] m=0.300 k0=0.300 vrel=1.3815 T=197 M=2048: D=3.3743e-01 (fwd 1.687e-01, refl 1.687e-01); ord fwd 0.3313 refl 3.3126e-01; dbl share of refl 0.3374; one-shifted 0.0e+00; unfinished 5.0e-05; doubled in image bands 1.0000
+  total 0.0 s

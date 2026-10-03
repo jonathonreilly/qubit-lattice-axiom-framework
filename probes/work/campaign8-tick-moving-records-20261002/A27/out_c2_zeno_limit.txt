@@ -1,0 +1,13 @@
+compression identity  ||QHQ - Q(H_rest + J*field)Q|| = 2.32e-15
+
+fine-tick limit at fixed change-time t = 1.0: projected (re-cut every tick) vs compressed
+  ticks     10: survival (record content stayed every tick) 0.903327; 1-survival 9.667e-02; ||psi_n/|psi_n| - psi_compressed|| 4.480e-02
+  ticks    100: survival (record content stayed every tick) 0.989535; 1-survival 1.046e-02; ||psi_n/|psi_n| - psi_compressed|| 4.466e-03
+  ticks   1000: survival (record content stayed every tick) 0.998945; 1-survival 1.055e-03; ||psi_n/|psi_n| - psi_compressed|| 4.465e-04
+  ticks  10000: survival (record content stayed every tick) 0.999894; 1-survival 1.056e-04; ||psi_n/|psi_n| - psi_compressed|| 4.465e-05
+  tau=0.1: one-tick leak 1.0784e-02  vs tau^2 <H(1-Q)H> = 1.0832e-02
+  tau=0.01: one-tick leak 1.0836e-04  vs tau^2 <H(1-Q)H> = 1.0832e-04
+  compressed dynamics t=0.0: weight of |r> per site [-0. -0. -0.  1. -0.  1. -0.]
+  compressed dynamics t=0.5: weight of |r> per site [-0.    -0.    -0.     1.     0.193  0.6    0.207]
+  compressed dynamics t=1.0: weight of |r> per site [-0.    -0.    -0.     1.     0.326  0.217  0.457]
+  compressed dynamics t=1.5: weight of |r> per site [-0.    -0.    -0.     1.     0.105  0.542  0.353]

@@ -1009,3 +1009,31 @@ Two readings of a move, R1 and R3, behave very differently.
 **C26. LOG wording.**
 - "The clean covariant one-site move … handed per A1 D22" becomes: "For one isolated record, a covariant one-site move: a six-outcome lock on its own qubit, then a swap. Several records need exclusion and a clash rule. It is handed only if a mirror leaves possibilities unflipped; trails are mirror-identical."
 - A20's "nothing moves … not records" becomes "nothing moves under any reversible change".
+
+## 01:35 (real) A22 (time doublers) LANDED → c8/A22/REPORT.md (+ sym_check, arc_check, two_body, heat2, task4)
+
+**When the twin exists (EXACT).** An exact time-doubled partner exists IFF one partner set is FULLY swapped every tick (cos θe cos θo = 0), i.e. maximal steps.
+- The doubler's mass is π − θe − θo.
+- The massless light speed is v = sin θ = cos(M_dbl/2). So light at the lattice cone ⟺ a massless doubler.
+
+**Maximal steps: interactions cannot remove it (EXACT, CHECKED).**
+- Joint staggering Λ survives every record-basis-diagonal and every spin-½-covariant interaction.
+- Covariant interactions act in one Λ-lane, so slow collisions are maximally doubling:
+  - distinguishable particles: 41–50%;
+  - identical, covariant: 92–99.9%.
+- Non-covariant two-lane phases suppress it as ~k² in 1D. In 3D they do so only with tuned scattering lengths.
+
+**Small steps remove it.**
+- The doubler mass is ≈ π, so no collision of fewer than ~90–200 excitations can populate it (arc lemma, EXACT).
+- Many-body heating goes as e^{−c/θ0} (prethermal comparators). The toy gives c ≈ 10–16. Extrapolated to θ0 = 6e-3: ~1e724 ticks.
+
+**Visibility**
+- Hidden from single-tick diagonal formation and from energy windows (EXACT).
+- It shows in tick-alternating fringes and incoherent collisions.
+- Under a lapse it would carry a Planck-scale violation of the equivalence principle.
+- Correction to A5: doubled content made in collisions runs its comoving clocks FORWARD.
+
+**VERDICT.** A suppressible nuisance, cured by a SMALL change per tick (which A18 needs anyway). It is fatal only for maximal-step rounds.
+- Trade-off: light then runs ≈ θ0 × (the lattice cone). This is consistent with Option R and smooth change as the θ → 0 limit.
+
+**Coordinator check (EXACT by hand).** For θe = θo = θ: M_dbl = π − 2θ, so cos(M_dbl/2) = sin θ = the light speed.

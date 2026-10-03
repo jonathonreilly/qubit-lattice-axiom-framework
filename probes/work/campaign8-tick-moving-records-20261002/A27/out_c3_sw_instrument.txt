@@ -1,0 +1,13 @@
+24 rotations, SU(2) lift error 2.2e-16
+SW : completeness 3.2e-15; 24-rotation covariance 3.4e-15; spatial-alone 1.9e-15; internal-alone 4.7e-15
+D23: completeness 2.2e-16; 24-rotation covariance 1.8e-15; spatial-alone 0.58; internal-alone 0.49   (nonzero = glued)
+SW odds = (c/6) tr(G rho_y) on a random linked star: max error 6.2e-17
+D23 odds = (1 + n_r.v)/6 whatever the neighbours hold: max error 1.1e-16
+alpha=0.15 beta=0.85 c=0.60: coherence kept 0.984539 (others empty), 0.984772 (others random); first-order formula 0.985707
+alpha=0.15 beta=0.85 c=0.06: coherence kept 0.998564 (others empty), 0.998564 (others random); first-order formula 0.998571
+alpha=0.00 beta=1.00 c=0.60: coherence kept 0.947214 (others empty), 0.948117 (others random); first-order formula 0.950000
+alpha=0.00 beta=1.00 c=0.06: coherence kept 0.994987 (others empty), 0.994987 (others random); first-order formula 0.995000
+alpha=0.50 beta=0.50 c=0.60: coherence kept 1.000000 (others empty), 1.000000 (others random); first-order formula 1.000000
+alpha=0.50 beta=0.50 c=0.06: coherence kept 1.000000 (others empty), 1.000000 (others random); first-order formula 1.000000
+alpha=1.00 beta=1.00 c=0.60: coherence kept 1.000000 (others empty), 1.000000 (others random); first-order formula 1.000000
+alpha=1.00 beta=1.00 c=0.06: coherence kept 1.000000 (others empty), 1.000000 (others random); first-order formula 1.000000

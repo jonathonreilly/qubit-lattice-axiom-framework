@@ -1,0 +1,9 @@
+small steps          n=1: phases in [0.0000, 0.4000], occupied arc 0.4000, lemma bound n(2te+2to+J) = 0.5000  -> no umklapp (arc < 2pi)
+small steps          n=2: phases in [0.0128, 0.7937], occupied arc 0.7809, lemma bound n(2te+2to+J) = 1.0000  -> no umklapp (arc < 2pi)
+small steps          n=3: phases in [0.0426, 1.1764], occupied arc 1.1338, lemma bound n(2te+2to+J) = 1.5000  -> no umklapp (arc < 2pi)
+moderate             n=1: phases in [0.0603, 6.2832], occupied arc 0.9000, lemma bound n(2te+2to+J) = 1.1000  -> no umklapp (arc < 2pi)
+moderate             n=2: phases in [0.0267, 1.7811], occupied arc 1.7544, lemma bound n(2te+2to+J) = 2.2000  -> no umklapp (arc < 2pi)
+moderate             n=3: phases in [0.0879, 2.6293], occupied arc 2.5414, lemma bound n(2te+2to+J) = 3.3000  -> no umklapp (arc < 2pi)
+A19 full-swap round  n=1: phases in [0.0000, 5.6832], occupied arc 5.2872, lemma bound n(2te+2to+J) = 5.6832  -> no umklapp (arc < 2pi)
+A19 full-swap round  n=2: phases in [0.0000, 5.8676], occupied arc 5.8676, lemma bound n(2te+2to+J) = 11.3664  -> bound >= 2pi: wraps possible
+A19 full-swap round  n=3: phases in [0.0000, 6.0772], occupied arc 6.0453, lemma bound n(2te+2to+J) = 17.0496  -> bound >= 2pi: wraps possible

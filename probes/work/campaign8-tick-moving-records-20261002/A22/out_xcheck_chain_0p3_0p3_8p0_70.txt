@@ -1,0 +1,2 @@
+S=256 m=0.3 k0=0.3 w=8.0 T=70: |U v| = 1.000000000000
+doubled weight (both cell momenta near pi) = 0.3326; total 1.000000

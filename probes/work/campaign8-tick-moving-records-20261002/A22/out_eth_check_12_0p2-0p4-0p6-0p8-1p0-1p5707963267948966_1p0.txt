@@ -1,0 +1,7 @@
+L=12 dim=924 V-scale=1.0: H0 spectrum per site [-0.121, 1.264], infinite-T <H0>/L = 0.684, <O>_inf = 0.2273
+  theta=0.2000: Floquet eigenstates <H0>/L: sd 0.2513 (range -0.110..1.263);  <O>: sd 0.0465
+  theta=0.4000: Floquet eigenstates <H0>/L: sd 0.2447 (range -0.077..1.258);  <O>: sd 0.0454
+  theta=0.6000: Floquet eigenstates <H0>/L: sd 0.2268 (range 0.077..1.248);  <O>: sd 0.0423
+  theta=0.8000: Floquet eigenstates <H0>/L: sd 0.1844 (range 0.187..1.209);  <O>: sd 0.0357
+  theta=1.0000: Floquet eigenstates <H0>/L: sd 0.1048 (range 0.443..1.026);  <O>: sd 0.0209
+  theta=1.5708: Floquet eigenstates <H0>/L: sd 0.0570 (range 0.352..0.812);  <O>: sd 0.0186

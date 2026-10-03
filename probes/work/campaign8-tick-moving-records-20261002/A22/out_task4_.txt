@@ -1,0 +1,9 @@
+(a) || Lambda U psi + U Lambda psi || = 0.00e+00  (Lambda U = -U Lambda)
+(b) max |density(psi) - density(Lambda psi)| over 50 ticks, all sites: 0.00e+00
+    coherent mix psi + 0.5 Lambda psi: weight ratio at cell 300 vs pure psi, ticks 0..3: 1.623, 0.377, 1.623, 0.377  (alternates: fringe (1 +- 2*0.5*cos)/1.25)
+(c) T=  8 DPSS(NW=3) window tuned to ordinary content (Omega=-2.684): ordinary 8.530e-02, doubled image 1.271e-14  (ratio 1.5e-13; window shifted by pi on psi: 1.271e-14)
+(c) T= 16 DPSS(NW=3) window tuned to ordinary content (Omega=-2.684): ordinary 1.535e-01, doubled image 2.311e-12  (ratio 1.5e-11; window shifted by pi on psi: 2.311e-12)
+(c) T= 32 DPSS(NW=3) window tuned to ordinary content (Omega=-2.684): ordinary 2.636e-01, doubled image 2.392e-11  (ratio 9.1e-11; window shifted by pi on psi: 2.392e-11)
+(c) T= 64 DPSS(NW=3) window tuned to ordinary content (Omega=-2.684): ordinary 3.113e-01, doubled image 8.986e-11  (ratio 2.9e-10; window shifted by pi on psi: 8.986e-11)
+(d) clock rate per unit delta: ordinary band+ at K0 +0.6294; its Lambda image +0.6294; band+ at K0+pi -0.6294; band- at K0+pi +0.6294  (dW/dm = +0.6292)
+(e) || Z P_singlet Z - P_triplet0 || = 0.0e+00  (so a singlet-weight formation rule is not Lambda-invariant on flipped bonds)

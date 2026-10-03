@@ -14,6 +14,7 @@
    - That step is exactly symmetric, is not tied to the grid's directions (your Q3 holds), and a claim rule keeps two records off one site.
    - Between ticks, the shared possibilities change smoothly, the same everywhere and in every direction, leaving recorded spots as they are. Campaign 7's change sentence comes back as written, and your "evolves continuously" holds literally between record events (at ticks, records still cut and trade places). This holds for the simple toy change; the light-like pieces built tonight (matter in A26, the shape field in A25) still use fixed patterns.
    - This does not escape bottom-line item 1's limit; it uses two of its ways out at once. The smooth change reaches past the neighbours in every tick (only faintly, if the change per tick is small), and records move by steps that cannot be undone. What is new is that the two fit together: records still move at most one site per tick. In the simple toy it needs no supplied pattern to move things, and it has no time-doubled twin while the change per tick stays below a simple bound. (The gravity field still needs a pattern: bottom-line item 4.)
+   - **Swap or flow (A37, checked).** Whatever the rule, when a record steps, exactly one spot's worth of possibilities must flow back to where it came from (exact). On a single line the only tidy way is the swap; "everything pushes right" exists only as an endless conveyor that changes things arbitrarily far away at once. On the full grid the possibilities can genuinely flow around the record, but with no special side it must pick one at random. Section 11 has the details.
    - **Costs:**
      - no exact speed limit for unrecorded influence: a leak beyond one site per tick always remains, and it stays exponentially faint only if the change per tick is small;
      - readable moving records are classical "dust": they wander, never interfere, and act as walls for the possibilities;
@@ -325,6 +326,22 @@ A31 assembled everything into one model, giving each ingredient its status: axio
   - **Free 3D motion of a protected disturbance needs more conditions than places,** tied together by rules among the conditions (as charge and field lines are tied in the textbook toric code; a comparison, not adopted). In the classes searched, none of the turn-respecting versions pinned every spot down: each left some spot's possibilities free. One reason (A33, exact): turning possibilities along with the grid forces the textbook layout's edge places to use one kind of flip only, which makes them classical.
   - **The open hope:** an ordinary local ripple that behaves differently on the different sub-grids of an 8-fold patterned background (a different "parity" under the half-turns). The grid's symmetry allows this to supply the twist on every face (exact symmetry statement; my check), but no one has built it. Further conditions are known (fifth review's check): on one qubit per place, the ripple at vertex-type and cube-type places must be made by an operator spread over several places; a light-like cone also needs the ripple's energy to be the same on all four kinds of place (otherwise the cone opens a gap or splits), and to cost nothing at the cone. So the route may more naturally give heavy matter than light.
 
+### 11. Swap or flow: your picture of records pushing the possibilities (A37, checked)
+- **The one fixed fact (exact).** Each spot always holds exactly one spot's worth of possibilities. So when a record steps from one spot to the next, net exactly one spot's worth must end up back on the side it came from, whatever the rule. Pushing versus swapping only decides which content lands where. My check confirmed this for random rules: always exactly one qubit's worth.
+- **On a single line (exact).** If nothing is made or destroyed and nothing jumps more than one site, the only rule is the swap.
+  - Your "everything pushes right" exists only as an endless conveyor: everything ahead shifts and a fresh spot appears behind. That changes things arbitrarily far away at the same moment, breaking every speed limit, and it needs an endless empty line.
+  - The other options are a push that sends one piece back several sites, or a push that wipes out one spot's worth each step.
+- **On the full grid (exact, checked).** The possibilities can flow around the record: front to side, back along the side, and into the spot the record left.
+  - It obeys all the rules and reaches at most two sites.
+  - In 3D no side is special, so the rule must pick one at random, which slightly blurs linked possibilities nearby. In 2D a "always turn left" rule is allowed.
+- **When it makes a difference.**
+  - In calm empty space: no difference at all (exact).
+  - If records' stepping odds ignore their neighbours, records move exactly the same way under every rule (exact): no drag and no momentum.
+  - If the odds look at the neighbours, it matters. A record that steps onto something leaves it behind under swap, so it tends to bounce back. Under push it shoves it ahead, so it tends to keep going (or, with the opposite preference, gets hemmed in).
+  - That is a memory left in what was pushed, not true momentum.
+  - Later records can show where linked possibilities ended up, and on a line nothing can slip past a pushing record.
+- **Clashes.** "One wins with its relative probability" still works for pushing records, but only if the law settles each tangle of overlapping pushes at once. Combining separately computed odds lets faraway choices leak.
+
 ## Your menu decision (Q7 stands)
 
 My overnight note was too strong; the reviewers caught it.
@@ -389,5 +406,6 @@ My overnight note was too strong; the reviewers caught it.
 24. **An 8-fold patterned background for matter.** May matter's empty background carry an 8-fold pattern held in the state (1 of 8, like the field's jobs), so that its ripples can behave differently on the different sub-grids (A33)? The grid's symmetry then allows the background itself to supply the twist light-like matter needs, possibly with the same pattern as the gravity field (which would also need more room per place, decision 13). Not built yet. Whether it gives light rather than heavy matter is open, and records might still show the pattern (argued). It would trade a pattern painted onto the law for a pattern held in the state. A related choice (A33): may the rule carry a uniform minus sign on one kind of term? A33's in-sheet twist needs one.
 25. **Heavy or light from that route.** If an 8-fold patterned background gives ripples the twist but they come out heavy, would heavy matter from this route be welcome (it supplies the mass the painted version lacked), or is light the point (fifth review)?
 26. **What matter is.** Should matter be disturbances the background protects, which would need a background with more conditions than places (blocked so far on one qubit per place), or ordinary ripples with sub-grid labels (fifth review)?
+27. **How a stepping record moves the possibilities (A37).** By swapping (the simplest), by flowing around it with a random side (full grid only), or by a push that sends one piece back several sites? Should records' stepping odds look at their neighbours? That is the only case where push and swap differ for how records move: push makes them keep going, swap makes them bounce.
 
-*Running now: A36 (ticks timed by the surrounding records) and A37 (records that push the possibilities aside instead of trading places), plus a fifth review of A33, A36, A37 and this report.*
+*Final review round of A36, A37 and this report in progress.*

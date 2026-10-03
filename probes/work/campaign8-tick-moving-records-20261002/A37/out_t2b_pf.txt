@@ -1,0 +1,7 @@
+J=0.4 tau=0.15 (dose 2J tau=0.12) c=0.3 M=50; record content -n
+  random start 0, attract: SW: corr -6.60e-02  PA: corr +1.54e-01  PF: corr +4.81e-02
+  random start 0, repel: SW: corr -4.73e-02  PA: corr -7.20e-02  PF: corr -6.17e-02
+  random start 1, attract: SW: corr -1.09e-02  PA: corr +5.18e-02  PF: corr +2.06e-02
+  random start 1, repel: SW: corr -1.16e-02  PA: corr -2.14e-02  PF: corr -1.67e-02
+  random start 2, attract: SW: corr -8.32e-02  PA: corr +1.18e-01  PF: corr +2.38e-02
+  random start 2, repel: SW: corr +2.03e-02  PA: corr -2.09e-02  PF: corr -4.21e-03

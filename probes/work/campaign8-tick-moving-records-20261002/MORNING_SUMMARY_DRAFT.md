@@ -21,6 +21,7 @@ Then nothing can move: not records, not light, not matter. Something has to give
 - **How it works.** In this option, records step at most one site per tick by trading places with an empty neighbour, and the shared possibilities change smoothly in between.
 - **It uses two of the limit's ways out at once.** The smooth change reaches past next door (faintly, if the change per tick is small), and records' steps cannot be undone. The two fit together, so records still move at most one site per tick.
 - **The price.** Unrecorded influence loses its exact speed limit. A leak always remains, and it stays exponentially faint only if the change per tick is small.
+- **Swap or flow (A37, checked).** Whatever the rule, when a record steps, exactly one spot's worth of possibilities must flow back to where it came from (exact). On a single line the only tidy way is the swap; your "everything pushes right" exists only as an endless conveyor that changes things arbitrarily far away at once. On the full grid the possibilities can genuinely flow around the record, picking a side at random. Over calm empty space it makes no difference. It changes how records move only if their stepping odds look at their neighbours: push makes them keep going, swap makes them bounce back. That is a memory in what was pushed, not momentum.
 
 **3. Your tick, in that shape (checked).**
 - **No more seams.** The possibilities never notice the ticks, so the earlier troubles (mirror seams, freezing while waiting) disappear.
@@ -54,7 +55,7 @@ Then nothing can move: not records, not light, not matter. Something has to give
     - almost all records formed gently, on caught, settled things (one working toy: "catch first, record later").
 - **Handedness.** Neither ticks nor smooth change give single free particles on a uniform grid a preferred handedness (exact); interactions and record edges are untested.
 
-**The decisions that matter most (all yours; the full list, 0 to 26, is at the end)**
+**The decisions that matter most (all yours; the full list, 0 to 27, is at the end)**
 - **(0)** Do you want the record-tick shape, at the price of no exact speed limit for unrecorded influence?
 - **(4)** Records form only next to records?
 - **(13)** May a place hold more than one qubit's worth, for gravity?

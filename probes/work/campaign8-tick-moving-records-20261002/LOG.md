@@ -1686,3 +1686,40 @@ The agent's sandbox blocked writing REPORT.md; the coordinator saved it. This an
 - Under O × (r ↔ −r): 33. Under O_h: 56, so exactly one mirror pair.
 - All match A36's D6(f); Burnside also re-done by hand.
 - NOT re-run: c1–c6 (signalling, cone, readability, cascades, ringing).
+
+## 05:05 (real) A34 resumed for the next review round: A36 plus the draft's and summary's A36 text
+A37 will be forwarded when it lands. Pushed f146043119 (A36).
+
+## 05:08 (real) A37 (records that push the possibilities, "flow", vs "swap") LANDED → c8/A37/REPORT.md (+ t1–t5)
+The agent did not write REPORT.md; the coordinator saved it. This is the owner's own picture: "i wasnt thinking swap but flow neighborhoods can shift" and "the probabilities can all push right".
+
+**Results**
+- **RETURN FLOW (EXACT).** Every record step x → y moves net exactly one site's worth of possibilities from y's side to x's side, for any rule.
+  - Classically this is counting.
+  - In the quantum case it is the Choi-state flux ½[I(K₁:R₂) − I(K₂:R₁)] = 1 qubit for ANY unitary step.
+  - Push vs swap only decides which content lands where.
+- **1D (EXACT).** Under conservation, NN displacement and finite reach, the step is the swap (or a global relabelling).
+  - "All push right" exists only as the half-line conveyor P∞. It changes possibilities arbitrarily far away in one tick (TV 0.245 at 30 sites) and breaks every cone.
+  - The alternatives are a capped push with a long return jump, or push/fill rules that destroy one site's worth per step.
+  - This corrects the earlier "in 1D flow = swap", which holds only under those three conditions.
+- **2D/3D (EXACT + CHECKED).** Flow-around works (front → side → back → vacated spot): conservative, linear, footprint 2.
+  - In 3D a deterministic covariant flow-around is impossible: the quarter turn about the step axis forces the front content onto the axis. So the side must be random.
+  - The random side blurs structured neighbourhoods (purity 0.50 in 2D).
+  - In 2D a handed deterministic choice is covariant (cf. A11).
+- **Where it differs.**
+  - Over calm product backgrounds: none (EXACT).
+  - With neighbour-blind odds the records' motion is identical under every rule (EXACT + CHECKED): no drag, no inertia.
+  - With neighbour-sensitive odds favouring excitations, swap gives reversal and push gives persistence: p_same 0.26–0.29 vs 0.69–0.71.
+  - In a classical gas analog, push is self-propelled at 0.154 sites per tick with a pile ahead; repulsive push gets caged.
+  - This is memory in the pushed content, NOT inertia (ARGUED).
+  - Under 1D push rules content never crosses a record.
+- **Costs.**
+  - Admissibility is the same as SW (C40); under β = 0 every rule is a re-formation and swap = fill-behind.
+  - Refills must be calm (C30 axis); a non-calm refill costs O(J) per step.
+  - Overlapping pushes need one joint instrument per conflict cluster; combining relative odds across sites signals (3.5e-3).
+- **Theorem N / A1.** Compatible: the push is part of the irreversible record event. Finite pushes carry no standing flux; only P∞ does, and it breaks every cone.
+
+**Coordinator check** (toys/verify_A37_flux.py; own code)
+- Window {x, y, a, b} with a random 8×8 unitary step H_{y,a,b} → H_{x,a,b}, split W₁ = {x, a}, W₂ = {y, b}.
+- Flux = 1.000000 qubit in 5/5 random unitaries; the individual I values vary (2.04–2.17 vs 0.04–0.17). CONFIRMED.
+- NOT re-run: the enumerations, the energy table and the Monte Carlo.

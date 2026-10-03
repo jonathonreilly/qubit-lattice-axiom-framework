@@ -19,8 +19,8 @@ import numpy as np
 from scipy.linalg import expm
 signal.alarm(55)
 
-J, tau, c = 0.25, 0.2, 0.5
-M = 60
+J, tau, c = 0.4, 0.15, 0.3
+M = 50
 D = 2 * M + 1
 NONE = 2 * M
 nz = -1.0                         # (n_r)_z for r = |1> = -n
@@ -227,7 +227,7 @@ elif mode == "energy-cone":
         keys = set(absl) | set(ref)
         tv = 0.5 * sum(abs(absl.get(k, 0) - ref.get(k, 0)) for k in keys)
         print(f"  {rule:5s} TV = {tv:.6f}")
-else:  # mc
+elif mode == "mc":
     we, wv = WEIGHTS[wsel]
     T, ntraj = 100, 1500
     print(f"Monte Carlo: weights {wsel} (w_exc={we}, w_vac={wv}), {ntraj} trajectories x {T} ticks, excitation starts at +1")
@@ -235,3 +235,19 @@ else:  # mc
         r = mc(rule, we, wv, basis(1), T, ntraj, seed=2026)
         print(f"  {rule:5s} steps/traj {r['nsteps']:.2f}  MSD {r['msd']:7.2f}  mean X {r['meanX']:+6.2f}  lag-1 step corr {r['C1']:+.4f}  "
               f"exc ahead {r['ahead']:.3f} behind {r['behind']:.3f} erased {r['erased']:.3f}  carry slope {r['slope']:+.3f}  edge {r['edge']:.1e}")
+
+if mode == "pfcheck":
+    rng = np.random.default_rng(11)
+    for trial in range(3):
+        v = np.zeros(D, complex)
+        for s in range(-6, 7):
+            if s != 0:
+                v[idx(s)] = rng.normal() + 1j * rng.normal()
+        v /= np.linalg.norm(v)
+        for wname in ("attract", "repel"):
+            line = []
+            for rule in ("SW", "PA", "PF"):
+                P, left, n = exact_two_steps(rule, *WEIGHTS[wname], v)
+                tot = sum(P.values())
+                line.append(f"{rule}: corr {((P[(1,1)]+P[(-1,-1)]-P[(1,-1)]-P[(-1,1)])/tot):+.2e}")
+            print(f"  random start {trial}, {wname}: " + "  ".join(line))

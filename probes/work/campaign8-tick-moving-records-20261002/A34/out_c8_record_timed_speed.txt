@@ -1,0 +1,4 @@
+F=0.4: cycles G 48.4, UP 42.8; ratio 1.1306 +- 0.0021; excess/F = 0.327 +- 0.005  (1500 runs each)
+F=0.2: cycles G 80.9, UP 75.7; ratio 1.0684 +- 0.0031; excess/F = 0.342 +- 0.015  (1000 runs each)
+F=0.1: cycles G 147.4, UP 141.6; ratio 1.0407 +- 0.0045; excess/F = 0.407 +- 0.045  (600 runs each)
+F=0.05: cycles G 278.3, UP 273.6; ratio 1.0172 +- 0.0070; excess/F = 0.344 +- 0.140  (300 runs each)

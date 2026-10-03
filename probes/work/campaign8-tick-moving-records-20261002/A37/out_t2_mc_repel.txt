@@ -1,0 +1,8 @@
+J=0.25 tau=0.2 (dose 2J tau=0.1) c=0.5 M=60; record content -n
+Monte Carlo: weights repel (w_exc=0.2, w_vac=1.0), 1500 trajectories x 100 ticks, excitation starts at +1
+  SW    steps/traj 47.64  MSD   47.79  mean X  -0.99  lag-1 step corr -0.0204  exc ahead 0.733 behind 0.267 erased 0.000  carry slope -0.376  edge 2.8e-18
+  PL1   steps/traj 47.21  MSD   46.33  mean X  -0.27  lag-1 step corr +0.0285  exc ahead 0.574 behind 0.426 erased 0.000  carry slope -0.424  edge 4.1e-14
+  PL2   steps/traj 47.45  MSD   45.86  mean X  -0.33  lag-1 step corr +0.0245  exc ahead 0.572 behind 0.428 erased 0.000  carry slope -0.319  edge 1.3e-13
+  Pinf  steps/traj 49.47  MSD   46.86  mean X  -0.65  lag-1 step corr -0.0046  exc ahead 1.000 behind 0.000 erased 0.000  carry slope +0.612  edge 2.2e-04
+  PA    steps/traj 47.82  MSD   41.52  mean X  -2.43  lag-1 step corr -0.0341  exc ahead 1.000 behind 0.000 erased 0.000  carry slope +0.270  edge 2.2e-14
+  PF    steps/traj 48.67  MSD   46.81  mean X  -1.47  lag-1 step corr -0.0170  exc ahead 0.615 behind 0.000 erased 0.385  carry slope +0.284  edge 4.6e-23

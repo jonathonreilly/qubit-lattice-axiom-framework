@@ -1,0 +1,17 @@
+C5a. 1D: P(cascade reaches >= d sites to the right) vs F^d
+  F=0.3 d=1: MC 0.30048  exact F^d 0.30000
+  F=0.3 d=3: MC 0.02696  exact F^d 0.02700
+  F=0.3 d=6: MC 0.00067  exact F^d 0.00073
+  F=0.6 d=1: MC 0.59975  exact F^d 0.60000
+  F=0.6 d=3: MC 0.21732  exact F^d 0.21600
+  F=0.6 d=6: MC 0.04696  exact F^d 0.04666
+
+C5b. 3D box (61^3), seed at the centre; cascade = open cluster (site chance F) touching the seed.
+     F       mean sites   P(reach>=10)  P(reach>=20)  P(hits box edge, 30)
+     0.1     0.8          0.00          0.00          0.00
+     0.2     5.0          0.00          0.00          0.00
+     0.25    9.8          0.03          0.00          0.00
+     0.3     478.5        0.60          0.47          0.10
+     0.35    39881.8      0.77          0.73          0.73
+     0.45    96697.3      1.00          1.00          1.00
+  [elapsed 0.6s]  (site-percolation threshold on the simple cubic lattice is about 0.3116: COMPARATOR)

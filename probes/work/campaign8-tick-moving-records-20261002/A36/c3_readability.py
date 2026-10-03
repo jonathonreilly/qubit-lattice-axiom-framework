@@ -23,7 +23,8 @@ Expected: TV(G,PH), TV(G,C), TV(PER,C), TV(PERfix,Cr) all O(tau); TV(PERfix,C) o
 """
 import signal, itertools, time
 import numpy as np
-from scipy.linalg import expm
+from scipy.sparse import lil_matrix
+from scipy.sparse.linalg import expm_multiply
 signal.alarm(55)
 t0 = time.time()
 L, J, gamma, T = 10, 1.0, 0.5, 8.0
@@ -127,6 +128,9 @@ def ticked(schedule, tau):
             for (x, c) in firing:
                 nxt = []
                 for (cc, rr) in parts:
+                    if cc.nex == 0:          # nothing left to record (weight c|1><1| vanishes)
+                        nxt.append((cc, rr))
+                        continue
                     nx = cc.n_op(x)
                     Kn = np.eye(len(cc.basis)) - nx + np.sqrt(1 - c) * nx
                     nxt.append((cc, Kn @ rr @ Kn.conj().T))
@@ -168,7 +172,7 @@ def continuum(rate):
         d = len(CONF[k].basis)
         offs[k] = (tot, d)
         tot += d * d
-    G = np.zeros((tot, tot), complex)
+    G = lil_matrix((tot, tot), dtype=complex)
     for k in keys:
         cf = CONF[k]; o, d = offs[k]
         Id = np.eye(d)
@@ -188,7 +192,7 @@ def continuum(rate):
     v0 = np.zeros(tot, complex)
     o, d = offs[keys[0]]
     v0[o:o + d * d] = rho0.reshape(-1, order='F')
-    vT = expm(G * T) @ v0
+    vT = expm_multiply((G * T).tocsr(), v0)
     dist = {}
     for k in keys:
         cf = CONF[k]; o, d = offs[k]
@@ -217,11 +221,23 @@ for tau in (0.4, 0.2, 0.1, 0.05, 0.025):
           f"    (sum-1: {abs(sum(Pg.values())-1):.0e})")
 print(f"    [elapsed {time.time()-t0:.1f}s]")
 
-print("\nC3b. Large chances per firing (c = 1 - 0.5 = 0.5 and 1), tau = 0.5: record-set phases at order 1")
+print("\nC3b. Order-1 chances per firing (c = 0.5 and 1) at tau = 0.5: nothing small suppresses TV(G,PH)")
 for c_fix in (0.5, 1.0):
     gsave = gamma
     gamma = c_fix / 0.5
     Pg = ticked('G', 0.5); Pph = ticked('PH', 0.5)
     gamma = gsave
     print(f"    c = {c_fix}: TV(G, PH) = {tv(Pg, Pph):.4f}")
+print(f"    [elapsed {time.time()-t0:.1f}s]")
+
+print("\nC3c. Separate 'order c' from 'order tau*frequency': fixed tau = 0.1, vary gamma (c = gamma*tau).")
+print("     E[#] = expected number of records formed by T; per event = TV(G,PH)/E[#].")
+print("    gamma    c        TV(G,PH)    TV/c       E[#]     per event   per event/tau")
+for g_ in (1.0, 0.5, 0.25, 0.125, 0.0625):
+    gamma = g_
+    Pg = ticked('G', 0.1); Pph = ticked('PH', 0.1)
+    d = tv(Pg, Pph)
+    En = sum(len(k) * v for k, v in Pg.items())
+    print(f"    {g_:<8} {g_*0.1:<8.4g} {d:.3e}   {d/(g_*0.1):.4f}    {En:.4f}   {d/En:.3e}   {d/En/0.1:.4f}")
+gamma = 0.5
 print(f"    [elapsed {time.time()-t0:.1f}s]")

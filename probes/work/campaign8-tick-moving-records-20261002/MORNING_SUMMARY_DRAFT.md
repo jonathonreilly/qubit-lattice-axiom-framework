@@ -24,8 +24,8 @@ Then nothing can move: not records, not light, not matter. Something has to give
 
 **3. Your tick, in that shape (checked).**
 - **No more seams.** The possibilities never notice the ticks, so the earlier troubles (mirror seams, freezing while waiting) disappear.
-- **Global or neighbourhood.** A tick written into the rule is the same everywhere if the rule treats every place exactly alike; the only other way is a checkerboard of two sub-grids half a tick apart, which records can faintly tell apart. Set ticks that differ by place needed a per-place memory in every construction tried; ticks timed by the surrounding records were not tried.
-- **Influenced.** The tick can be influenced by gravity. If clocks that count records are to agree with other clocks near heavy bodies (your choice), how often records form must follow gravity's slowing exactly.
+- **Global or neighbourhood.** A tick written into the rule is the same everywhere if the rule treats every place exactly alike (or a checkerboard of two sub-grids half a tick apart, which records can faintly tell apart). Ticks can still differ by place without memory if one shared clock runs underneath: the records around each spot choose which of its instants that spot uses (A36). Without a shared clock, set ticks that differ by place need a per-place memory.
+- **Influenced.** Ticks chosen by records feel only the records in contact, not gravity (A36). The tick can also be influenced by gravity. If clocks that count records are to agree with other clocks near heavy bodies (your choice), how often records form must follow gravity's slowing exactly.
 - **Visible?** With the small chances per tick that freezing and heating already require, the choice is far too faint to see.
 - **Light.** If records form only next to records, the tick never touches how light crosses empty space.
 - **Minimum tick.** No smallest tick follows. If one site per tick is to be the limit for all influence, the tick must be shorter than light's time to cross one grid step.

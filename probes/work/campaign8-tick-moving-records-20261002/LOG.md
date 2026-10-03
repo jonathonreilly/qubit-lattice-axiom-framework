@@ -1655,3 +1655,34 @@ This round is by the same agent as the fourth, so it is not independent of it.
 - **Summary.** Replaced by the reviewer's drop-in from REVIEW2 §3, with one coordinator change: the count is "six rounds by four agents", because A21 also reviewed twice (REVIEW + REVIEW_FINAL). Decision range 0–26.
 
 **Coordinator spot-check of c7.** Read the output: the parity table and the 8-band toy numbers are as stated in C89.
+
+## 05:00 (real) A36 (ticks timed by the surrounding records) LANDED → c8/A36/REPORT.md (+ c1–c6)
+The agent's sandbox blocked writing REPORT.md; the coordinator saved it. This answers A34 open question 5 and the owner's "influenced / neighbourhood" tick.
+
+**Answer: conditional YES, but only on top of ONE SHARED CLOCK.**
+- **D1.** Records carry no time: content is in M₂(C), and formation order cannot be recovered from a snapshot.
+- **D2 (EXACT; steering).** Set times cannot depend on the possibilities: a possibility-set tick signals (TV 0.090–0.443), a record-set one does not (≤ 2.9e-16). A linear dependence is just a formation weight, i.e. random times.
+- **D4 (EXACT given Q2, D2, no memory).** Without a shared clock and memory, the only set instants are record events (zero-delay triggers). Everything else is random.
+- **D5. Zero-delay triggers make cascades:** F^d in 1D; in 3D a percolation-like threshold near 0.31 (73% reach the box edge at F = 0.35). This breaks the record cone in film time.
+- **D6 (EXACT construction).** With a shared clock (instants plus a dial of L positions) and a covariant class table, each spot acts at the instants its recorded-neighbour pattern selects.
+  - The result is set, varies by neighbourhood, is influenced by records, needs NO memory, and puts NO spatial pattern into the law.
+  - A28's gate is the L = 1 case.
+  - Pattern classes: 10 (recorded or not; 9 gate-open); 57 with contents ±r (33 if r ↔ −r is also a symmetry); exactly one mirror-image pair (56 under O_h).
+- **D7. Cone.** Strict per instant of the shared clock. Per cycle, up to the number of instants in use (F = 1: the octahedron becomes a cube). At small chances, O(F).
+- **D9. Readability.**
+  - With chance scaling (P1): order c and order ωτ only (≤ 0.025τ per event).
+  - With fixed chances (P1′): record-set rates are readable at order 1, and at leading order equal record-dependent formation odds with no set ticks.
+- **D11. "Influenced" means by records IN CONTACT, not gravity.**
+  - It cannot follow −GM/r: wrong range, no mass dependence.
+  - P1′ conflicts with P5 (proper-time formation).
+  - Under P1 with lapse-weighted chances there is no conflict, and no leading-order influence.
+  - Records also shape the ringing of nearby possibilities, but the times stay random.
+- **D12. Voids** need no rule: no class, no tick, no formation. The change's film parameter is a void's only time.
+- **Supplied:** the shared clock, the class table, P1/P1′, P2/P4, the claim convention across instants, same-class ordering, the gate and a preparation.
+- **Corrects** A32 D8(e) ("a delay needs memory OR a shared clock"), and the draft's "ticks set by the surrounding records were not tried".
+
+**Coordinator check** (own enumeration code)
+- Neighbour-pattern classes under the 24 proper turns: 10 (2 colours); 57 (3 colours).
+- Under O × (r ↔ −r): 33. Under O_h: 56, so exactly one mirror pair.
+- All match A36's D6(f); Burnside also re-done by hand.
+- NOT re-run: c1–c6 (signalling, cone, readability, cascades, ringing).

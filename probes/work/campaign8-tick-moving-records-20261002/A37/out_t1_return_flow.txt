@@ -1,0 +1,21 @@
+(a) 1D windows, record at x stepping to y = x+1, every content moving at most one site
+   n= 6 x=2 other records []:    4 maps; f(y)=x and the rest adjacent transpositions in 4/4
+   n= 8 x=3 other records []:    9 maps; f(y)=x and the rest adjacent transpositions in 9/9
+   n=10 x=4 other records []:   25 maps; f(y)=x and the rest adjacent transpositions in 25/25
+   n=10 x=4 other records [8]:   10 maps; f(y)=x and the rest adjacent transpositions in 10/10
+   n=10 x=4 other records [1, 8]:    4 maps; f(y)=x and the rest adjacent transpositions in 4/4
+   through-flow (one item in at the left, one out at the right), n=8: 1 map(s); global shift: [True]
+   fresh content at x, one item out at the right end: 3 map(s); half-line conveyor (left part fixed, right part shifted): 1 (others differ only by adjacent swaps on the left)
+(b) 2D windows: the loop through the record's bond, flux and displacement identities
+   3x3 window:     45 maps; loop length through the record's bond: {2: 21, 4: 16, 6: 6, 8: 2}; flux identity failures 0 (over 4 cuts each); displacement-sum failures 0
+   3x4 window:    388 maps; loop length through the record's bond: {2: 196, 4: 110, 6: 54, 8: 22, 10: 5, 12: 1}; flux identity failures 0 (over 4 cuts each); displacement-sum failures 0
+   4x4 window:   5136 maps; loop length through the record's bond: {2: 2392, 4: 1001, 6: 839, 8: 532, 10: 252, 12: 91, 14: 25, 16: 4}; flux identity failures 0 (over 4 cuts each); displacement-sum failures 0
+   4x5 window:  85861 maps; loop length through the record's bond: {2: 39058, 4: 17122, 6: 13657, 8: 7967, 10: 4184, 12: 2435, 14: 1018, 16: 331, 18: 78, 20: 11}; flux identity failures 0 (over 4 cuts each); displacement-sum failures 0
+(c) 3D window around the bond (x,y): NN bijections that commute with the quarter turns about the step axis
+   12-site window: 48 NN maps; f(y)=x in 16; loops (f(y) a side site) in 32
+   commuting with the quarter turns: 2 maps; f(y)=x in 2 of them
+(d) quantum: Choi-state information flux of a unitary step between the two possibility spaces
+   swap                   cut 0.5: 0.000000-0.000000 -> +0.000000 | cut 1.5: 2.000000-0.000000 -> +1.000000 | cut 2.5: 0.000000-0.000000 -> +0.000000 | cut 3.5: 0.000000-0.000000 -> +0.000000
+   capped line push L=1   cut 0.5: 0.000000-0.000000 -> +0.000000 | cut 1.5: 2.000000-0.000000 -> +1.000000 | cut 2.5: 2.000000-2.000000 -> +0.000000 | cut 3.5: 0.000000-0.000000 -> +0.000000
+   random unitary         cut 0.5: 0.598281-0.598281 -> -0.000000 | cut 1.5: 2.135123-0.135123 -> +1.000000 | cut 2.5: 0.610397-0.610397 -> +0.000000 | cut 3.5: 0.508378-0.508378 -> +0.000000
+   (cut 1.5 separates x=1 from y=2; the others do not)

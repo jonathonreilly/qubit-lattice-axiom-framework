@@ -1,0 +1,8 @@
+J=0.25 tau=0.2 (dose 2J tau=0.1) c=0.5 M=60; record content -n
+Monte Carlo: weights blind (w_exc=1.0, w_vac=1.0), 1500 trajectories x 100 ticks, excitation starts at +1
+  SW    steps/traj 50.25  MSD   48.04  mean X  +0.16  lag-1 step corr -0.0020  exc ahead 0.572 behind 0.428 erased 0.000  carry slope -0.333  edge 1.9e-13
+  PL1   steps/traj 50.25  MSD   48.04  mean X  +0.16  lag-1 step corr -0.0020  exc ahead 0.570 behind 0.430 erased 0.000  carry slope -0.285  edge 2.1e-13
+  PL2   steps/traj 50.25  MSD   48.04  mean X  +0.16  lag-1 step corr -0.0020  exc ahead 0.570 behind 0.430 erased 0.000  carry slope -0.156  edge 1.0e-13
+  Pinf  steps/traj 50.25  MSD   48.04  mean X  +0.16  lag-1 step corr -0.0020  exc ahead 1.000 behind 0.000 erased 0.000  carry slope +0.609  edge 3.0e-04
+  PA    steps/traj 50.25  MSD   48.04  mean X  +0.16  lag-1 step corr -0.0020  exc ahead 1.000 behind 0.000 erased 0.000  carry slope +0.285  edge 1.9e-13
+  PF    steps/traj 50.25  MSD   48.04  mean X  +0.16  lag-1 step corr -0.0020  exc ahead 0.221 behind 0.000 erased 0.779  carry slope +0.276  edge 1.9e-13

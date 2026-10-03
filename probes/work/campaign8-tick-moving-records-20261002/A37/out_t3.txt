@@ -1,0 +1,15 @@
+(1) two records whose capped pushes overlap (different targets, shared push region); b Bell-linked with y1
+   literal  law(no choice) A 0.199687 B 0.199687 neither 0.600625; TV none/Z 3.53e-03, none/X 2.50e-16, Z/X 3.53e-03
+   uniform  law(no choice) A 0.199687 B 0.199687 neither 0.600625; TV none/Z 1.39e-17, none/X 2.50e-16, Z/X 2.36e-16
+   joint    law(no choice) A 0.225000 B 0.225000 neither 0.550000; TV none/Z 0.00e+00, none/X 1.53e-16, Z/X 1.53e-16
+   joint rule: P(A goes | someone goes) = 0.500000; relative odds wA/(wA+wB) = 0.500000
+   joint rule, y2 = cos(0.3)|0>+sin(0.3)|1>: P(A | someone) = 0.623150, wA/(wA+wB) = 0.623150
+   joint rule, y2 = cos(1.1)|0>+sin(1.1)|1>: P(A | someone) = 0.697325, wA/(wA+wB) = 0.697325
+   joint instrument completeness error 4.4e-16
+(2) record steps x -> y; y was Bell-linked with b.  P(Z-records agree with b), P(X-records agree), I(site:b) bits
+   SW   x: Z 1.000 X 1.000 I 2.000 | y+1: Z 0.500 X 0.500 I 0.000 | y+2: Z 0.500 X 0.500 I 0.000 | y+3: Z 0.500 X 0.500 I 0.000   (global purity 1.000)
+   PL1  x: Z 0.500 X 0.500 I 0.000 | y+1: Z 1.000 X 1.000 I 2.000 | y+2: Z 0.500 X 0.500 I 0.000 | y+3: Z 0.500 X 0.500 I 0.000   (global purity 1.000)
+   PL2  x: Z 0.500 X 0.500 I 0.000 | y+1: Z 1.000 X 1.000 I 2.000 | y+2: Z 0.500 X 0.500 I 0.000 | y+3: Z 0.500 X 0.500 I 0.000   (global purity 1.000)
+   Pwin x: Z 0.500 X 0.500 I 0.000 | y+1: Z 1.000 X 1.000 I 2.000 | y+2: Z 0.500 X 0.500 I 0.000 | y+3: Z 0.500 X 0.500 I 0.000   (global purity 1.000)
+   PA   x: Z 0.500 X 0.500 I 0.000 | y+1: Z 1.000 X 0.500 I 1.000 | y+2: Z 0.500 X 0.500 I 0.000 | y+3: Z 0.500 X 0.500 I 0.000   (global purity 0.500)
+   PF   x: Z 0.500 X 0.500 I 0.000 | y+1: Z 0.500 X 0.500 I 0.000 | y+2: Z 0.500 X 0.500 I 0.000 | y+3: Z 0.500 X 0.500 I 0.000   (global purity 0.500)

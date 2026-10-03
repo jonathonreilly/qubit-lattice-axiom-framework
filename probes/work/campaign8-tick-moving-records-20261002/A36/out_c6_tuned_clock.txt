@@ -1,0 +1,17 @@
+C6. Ringing pitch at x set by the records: Omega = J sqrt((k_x-k_z)^2 + 4)
+  k_x=1, k_z=1: Omega spectrum 2.000000, formula 2.000000; peak spacing of formation density 3.14200 vs 2pi/Omega 3.14159; swing at x 1.000
+  k_x=2, k_z=1: Omega spectrum 2.236068, formula 2.236068; peak spacing of formation density 2.81020 vs 2pi/Omega 2.80993; swing at x 0.800
+  k_x=3, k_z=1: Omega spectrum 2.828427, formula 2.828427; peak spacing of formation density 2.22140 vs 2pi/Omega 2.22144; swing at x 0.500
+  k_x=4, k_z=1: Omega spectrum 3.605551, formula 3.605551; peak spacing of formation density 1.74260 vs 2pi/Omega 1.74264; swing at x 0.308
+  k_x=5, k_z=1: Omega spectrum 4.472136, formula 4.472136; peak spacing of formation density 1.40500 vs 2pi/Omega 1.40496; swing at x 0.200
+
+C6b. Is the formation time set? Probability of forming within the first ringing period, and the
+     spread (std) of the formation time in units of the period, k_x = k_z = 1:
+  gamma=0.05   P(formed by T)=0.9933  P(in first period)=0.0755  std/period=11.600
+  gamma=0.5    P(formed by T)=1.0000  P(in first period)=0.5469  std/period=1.254
+  gamma=2.0    P(formed by T)=1.0000  P(in first period)=0.9706  std/period=0.276
+  gamma=8.0    P(formed by T)=1.0000  P(in first period)=0.7690  std/period=0.601
+  gamma=50.0   P(formed by T)=1.0000  P(in first period)=0.2188  std/period=3.972
+
+C6c. Scan of gamma (k_x = k_z = 1): the smallest spread of the formation time, in ringing periods
+  smallest std/period = 0.226 at gamma = 2.674 J (mean formation time 0.451 periods)

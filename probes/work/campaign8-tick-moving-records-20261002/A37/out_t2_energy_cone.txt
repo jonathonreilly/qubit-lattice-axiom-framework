@@ -1,0 +1,15 @@
+J=0.25 tau=0.2 (dose 2J tau=0.1) c=0.5 M=60; record content -n
+Energy <H> change of one step to the right (given it happens), relative to the calm vacuum, units of J:
+  exc at +1              SW:+0.000  PL1:+0.000  PL2:+0.000  Pinf:+0.000  PA:+0.000  PF:+0.000
+  exc at +2              SW:+4.000  PL1:+4.000  PL2:+0.000  Pinf:+0.000  PA:+4.000  PF:+4.000
+  exc at +3              SW:+0.000  PL1:+0.000  PL2:+4.000  Pinf:+0.000  PA:+0.000  PF:+0.000
+  exc at -1              SW:-4.000  PL1:-4.000  PL2:-4.000  Pinf:-4.000  PA:-4.000  PF:-4.000
+  packet k=pi/2 near +5  SW:+0.018  PL1:+0.007  PL2:+0.085  Pinf:+0.000  PA:+0.018  PF:+0.018
+  no excitation          SW:+0.000  PL1:+0.000  PL2:+0.000  Pinf:+0.000  PA:+0.000  PF:+0.000
+One tick, excitation 30 sites ahead: TV of its absolute position law, step allowed (blind, c=0.5) vs no step possible
+  SW    TV = 0.000000
+  PL1   TV = 0.000000
+  PL2   TV = 0.000000
+  Pinf  TV = 0.245037
+  PA    TV = 0.000000
+  PF    TV = 0.000000

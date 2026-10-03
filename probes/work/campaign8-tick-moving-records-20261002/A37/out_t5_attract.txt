@@ -1,0 +1,13 @@
+ring L=200, runs 300, ticks 1500, gas density 0.3, hop prob 0.3, c=0.5, weights attract (w_exc=1.0, w_vac=0.2)
+  SW  MSD     224.3  mean |X|/T 0.0078  lag-1 step corr -0.1462  excitations left 1.000  train ahead: mean 0.4, max 5
+      density behind (s=-15..-1, oriented along net travel): 0.27 0.33 0.31 0.26 0.26 0.26 0.28 0.36 0.32 0.26 0.32 0.36 0.28 0.28 0.26
+      density ahead  (s=+1..+15):                           0.25 0.33 0.32 0.28 0.23 0.27 0.32 0.26 0.32 0.30 0.30 0.28 0.30 0.33 0.29
+  PL1 MSD     676.2  mean |X|/T 0.0138  lag-1 step corr +0.1411  excitations left 1.000  train ahead: mean 0.4, max 3
+      density behind (s=-15..-1, oriented along net travel): 0.30 0.32 0.29 0.25 0.33 0.30 0.32 0.27 0.30 0.28 0.28 0.31 0.25 0.31 0.26
+      density ahead  (s=+1..+15):                           0.28 0.33 0.31 0.29 0.27 0.32 0.28 0.27 0.34 0.29 0.29 0.30 0.27 0.32 0.27
+  PA  MSD   54631.8  mean |X|/T 0.1544  lag-1 step corr +0.4414  excitations left 1.000  train ahead: mean 37.5, max 79
+      density behind (s=-15..-1, oriented along net travel): 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00
+      density ahead  (s=+1..+15):                           0.80 0.91 0.91 0.94 0.93 0.97 0.98 0.98 0.99 0.98 0.99 0.99 1.00 1.00 1.00
+  PF  MSD     290.5  mean |X|/T 0.0092  lag-1 step corr +0.0334  excitations left 0.704  train ahead: mean 0.0, max 1
+      density behind (s=-15..-1, oriented along net travel): 0.09 0.09 0.05 0.04 0.04 0.05 0.04 0.04 0.07 0.03 0.01 0.02 0.02 0.01 0.01
+      density ahead  (s=+1..+15):                           0.01 0.02 0.03 0.03 0.05 0.07 0.05 0.07 0.12 0.11 0.09 0.10 0.10 0.13 0.10

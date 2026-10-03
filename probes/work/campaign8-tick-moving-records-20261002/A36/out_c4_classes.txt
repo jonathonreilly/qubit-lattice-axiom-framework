@@ -1,0 +1,8 @@
+C4. Recorded-neighbour pattern classes on Z^3 (6 neighbours):
+  recorded / not, 24 proper turns: 10 classes (with mirrors: 10); with at least one recorded
+  neighbour (gate open): 9.  By count k: [1, 1, 2, 2, 2, 1, 1]
+  empty / r / -r, 24 proper turns: 57 classes (with mirrors 56); with the swap r<->-r: 33 (with mirrors 32)
+  -> mirror-image pairs among the r/-r patterns (proper - full): 1 without swap, 1 with swap
+  2D (4 neighbours, 4 turns): 6 classes, 5 with a recorded neighbour
+  chiral pattern (and its mirror image is a different class): {'+x': '.', '-x': 'r', '+y': '.', '-y': '-r', '+z': 'r', '-z': '-r'}
+  chiral pattern (and its mirror image is a different class): {'+x': '.', '-x': 'r', '+y': '.', '-y': '-r', '+z': '-r', '-z': 'r'}

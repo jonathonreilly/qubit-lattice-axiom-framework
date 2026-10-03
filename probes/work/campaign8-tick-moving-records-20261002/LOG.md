@@ -415,3 +415,64 @@ Two readings of a move, R1 and R3, behave very differently.
 - **Coordinator check (EXACT by hand).**
   - P(b1≠a1) = sin²θ and P(b2≠α) = sin²(θ−φ).
   - At φ = π/4, θ ∈ {π/8, 3π/8}, P(b1≠b2) lies in [0, 0.293] vs [0.707, 1]. Gap ≥ 0.414 = √2 − 1.
+
+## 23:30 A10 (staggered cycling ticks) LANDED → c8/A10/REPORT.md (+ t1–t11)
+
+**Motion with one qubit per site: YES (EXACT).**
+- The mechanism is cycled partial swaps G(θ) = exp(−iθ SWAP). These are the only number-conserving gates that commute with every on-site rotation (S1).
+- A3's Step 10 is evaded because no single tick is covariant.
+- The plain cycle is exactly covariant under (2Z)³⋊O: cube-centred rotations plus translations by 2. Unit translations hold up to relabelling which pairing comes first.
+- Direction is carried by the sublattice, not the content.
+
+**Plain cycle**
+- It factorizes as U = W⊗W⊗W.
+- Movers: eight one-way sheets along the body diagonals. No isotropic cone.
+
+**An isotropic cone needs the Kogut–Susskind sign pattern (π flux).**
+- Time-symmetric blocks make the cone isotropic at linear order (205 directions checked).
+- Content: two Dirac cones (2L+2R Weyl), ν3 = 0. This is the 3D Hamiltonian staggered count.
+- Every available mass gaps both copies equally.
+- Covariance holds only up to re-phasing. That re-phasing is unavoidable (no T-invariant pattern carries π flux), but invisible to records that start from record configurations.
+
+**Order effects**
+- C3-symmetric cycles carry an energy-linear split ±sin²θ|q|²n_xn_yn_z, the A5 T6.4 class, which GRB bounds disfavour.
+- Palindromic cycles remove the split but keep only 8 of the 24 rotations.
+
+**Many-body**
+- Finite depth, number-conserving, index 1 on every axis.
+- With interacting records, odd rotations act only together with time reversal (schedule-word lemma).
+
+**Admissibility**
+- A "schedule-covariant" reading is a NAMED conditional.
+- It brings five supplied choices: N1 global schedule phase, N2 word, N3 single angle, N4 sign pattern, N5 sublattice labelling.
+
+**Coordinator verification (CHECKED; toys/verify_A10_1d.py, independent)**
+- S1: the commutant of {u⊗u} has dimension 2 (span{1, SWAP}).
+- S4: the 1D dispersion cos ω = cos θe cos θo − sin θe sin θo cos K matches exact eigenphases to 3.3e-15 for four (θe, θo) pairs, after removing the overall gate phase e^{i(θe+θo)}.
+
+## 22:40 (real) A11 (one-way flows on record walls) LANDED → c8/A11/REPORT.md (+ check scripts)
+
+**2D (supplied toy): YES, under the named reading SC (EXACT, CHECKED).**
+- A handed 4-sub-step swap cycle (+x, +y, −x, −y on a two-sublattice pattern) is exactly the identity in the bulk.
+- It carries exactly one qubit per cycle one way around EVERY recorded region, of any shape, including a single record. The direction is clockwise for the right-handed schedule. The mirror schedule is the inverse cycle and reverses it.
+- The circulation is fixed by the bulk winding count (D4 loop-linking identity; D5).
+- The net flow through any full line is zero, consistent with A1: this is circulation, not a conveyor.
+- The cycle is covariant only up to cyclic relabelling of sub-steps (SC). Strictly covariant transfer layers do nothing (EXACT).
+
+**3D (Z³, 24 site rotations): NO under SC (EXACT, D10).**
+- The face C2 and the C3 rotations are commutators in O, so every sub-step must be invariant under the face C2 about every site. That means no transfers at all.
+- Under a weaker flux-level reading:
+  - the lattice Ampère law gives K = M×n̂ on periodic facets (EXACT; 12 slabs);
+  - covariance forces M = 0, so no flow on periodic facets or axis hinges.
+- Low-symmetry hinges are OPEN.
+- 3D circulation is an AXIAL vector, so "proper rotations only" does not shelter it (unlike W3). Surface conveyors need a supplied direction.
+
+**Consistency with A10 (coordinator).**
+- A10's exact covariance of the plain cycle holds in the ONE-RECORD sector, with cube-centred rotations; unit translations are relabellings.
+- In the many-body sector A10 itself finds no unit translation, and odd rotations only with time reversal (S7).
+- A11's D10 concerns full transfer cycles on site contents (many-body) with site rotations. So there is no contradiction.
+
+**Coordinator verification (CHECKED; toys/verify_A11_2d.py, independent).**
+- On a 24×24 torus the bulk is the identity.
+- Around an s×s locked block (s = 1–4), 2s+1 sites move as ONE orbit with winding −1 (right-handed) and +1 (mirror).
+- No site farther than one site from the block moves.

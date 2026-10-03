@@ -1,0 +1,12 @@
+mover m=1.2 K=0.8, probe m=0.1 q=-0.05: channels (+,+) 0.8551  (-,-) 0.1449  (+,-) 1.1e-05  (-,+) 1.1e-05
+   quasi-energy W_A+W_B: in 1.4273;  out (+,+) 1.4290;  out (-,-) 4.8566  [time-umklapp prediction 2pi - in = 4.8558]
+   (-,-) channel mean momenta K_A' -2.424, K_B' -3.106  (in: +0.800, -0.050);  band-preserving probe reversal weight 0.0768, mover momentum change there -0.1542 (2q = -0.100)
+m_A=1.2 K_A=0.8 (v0=+0.269), probe m=0.1 q=-0.05: probe reflected (right-moving): weight 0.1533; mover velocity mean +0.2273, sd 0.0174; share of time-umklapp (mover band flipped) 0.499
+m_A=1.2 K_A=0.8 (v0=+0.269), probe m=0.1 q=-0.05: probe transmitted: weight 0.8457; mover velocity mean +0.2683, sd 0.0121; share of time-umklapp (mover band flipped) 0.081
+   direct sharp site cut instead: mean velocity (1-sin m) v0 = +0.0183, sd ~ sqrt((1-sin m) - mean^2) = 0.2601
+m_A=0.6 K_A=0.8 (v0=+0.724), probe m=0.1 q=-0.05: probe reflected (right-moving): weight 0.0452; mover velocity mean +0.5093, sd 0.0509; share of time-umklapp (mover band flipped) 0.498
+m_A=0.6 K_A=0.8 (v0=+0.724), probe m=0.1 q=-0.05: probe transmitted: weight 0.9520; mover velocity mean +0.7226, sd 0.0169; share of time-umklapp (mover band flipped) 0.008
+   direct sharp site cut instead: mean velocity (1-sin m) v0 = +0.3151, sd ~ sqrt((1-sin m) - mean^2) = 0.5797
+m_A=0.3 K_A=0.8 (v0=+0.918), probe m=0.1 q=-0.05: probe reflected (right-moving): weight 0.0132; mover velocity mean +0.4244, sd 0.1267; share of time-umklapp (mover band flipped) 0.490
+m_A=0.3 K_A=0.8 (v0=+0.918), probe m=0.1 q=-0.05: probe transmitted: weight 0.9836; mover velocity mean +0.9176, sd 0.0076; share of time-umklapp (mover band flipped) 0.002
+   direct sharp site cut instead: mean velocity (1-sin m) v0 = +0.6469, sd ~ sqrt((1-sin m) - mean^2) = 0.5348

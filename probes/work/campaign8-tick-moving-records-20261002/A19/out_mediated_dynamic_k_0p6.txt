@@ -1,0 +1,9 @@
+phi=0.6: total weight 1.0000000000
+  mover band +, probe band +: weight 0.8551
+  mover band +, probe band -: weight 0.0000
+  mover band -, probe band +: weight 0.0000
+  mover band -, probe band -: weight 0.1449
+  probe right-moving weight 0.1533
+  in the right-moving-probe branch: P(K_A' within 0.15 of K_A + 2q = 0.70) = 0.4767; within 0.15 of K_A = 0.2531; elsewhere (hard, lattice-scale transfers) = 0.5228
+  right-moving probe K_B': fraction within 0.15 of -q = 0.5004
+  mover left its band (- band weight): 0.1449

@@ -1,0 +1,6 @@
+mover m_A=1.2 K_A=0.8 (v=+0.269), probe m_p=0.1 q=-0.05 (v=-0.446) w_p=30.0 cells, phi=0.6, T=400; norm 1.000000000000
+free mover at T: K mean +0.8000, K sd 0.0500, + band 1.0000, position 257.5 sd 11.11 cells
+probe weight right of the mover (reflected) 0.1684, left (transmitted) 0.8215, near the mover 0.0101
+  reflected-probe single-site records: mover K mean -0.2094 (shift vs free -1.0094; 2q = -0.100), K sd 1.9587, + band 0.5579, position sd 11.17 cells (free 11.11)
+  transmitted-probe single-site records: mover K mean +0.8006 (shift vs free +0.0006; 2q = -0.100), K sd 0.8915, + band 0.9170, position sd 11.11 cells (free 11.11)
+  direct sharp site cut of the mover: K sd 1.8138 (uniform 1.8138), + band 0.5000

@@ -1,0 +1,5 @@
+oct r=1: |B|=7  dim(solutions of linear constraints) = 3
+cube r=1: |B|=27  dim(solutions of linear constraints) = 7
+oct r=2: |B|=25  dim(solutions of linear constraints) = 7
+cube r=2: |B|=125  dim(solutions of linear constraints) = 25
+oct r=3: |B|=63  dim(solutions of linear constraints) = 15

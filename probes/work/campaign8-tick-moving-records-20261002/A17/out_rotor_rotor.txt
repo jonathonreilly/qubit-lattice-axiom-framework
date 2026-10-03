@@ -1,0 +1,7 @@
+mode=rotor: L=12, chips=173 (u=0.100), replicas=200; Var of time-integrated ball(R=1) occupation:
+   T=  300: Var =     32.53   Var/T = 0.1084
+   T=  600: Var =     32.57   Var/T = 0.0543
+   T= 1200: Var =     31.60   Var/T = 0.0263
+   T= 3000: Var =     31.38   Var/T = 0.0105
+elapsed 3.4 s
+3.44 real         3.41 user         0.02 sys 41009152  maximum resident set size  exit=0

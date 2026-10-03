@@ -1,0 +1,5 @@
+oct r=1: linear dim 3 -> affine solution set: particular + 0-dim
+cube r=1: linear dim 7 -> affine solution set: particular + 0-dim
+oct r=2: linear dim 7 -> affine solution set: particular + 1-dim
+cube r=2: linear dim 25 -> affine solution set: particular + 9-dim
+oct r=3: linear dim 15 -> affine solution set: particular + 5-dim

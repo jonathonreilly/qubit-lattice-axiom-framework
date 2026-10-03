@@ -1,0 +1,21 @@
+mover before: K mean +1.0000, K sd 0.0500, + band 1.0000, position sd 10.00 cells (m_A=0.6, K_A=1.0, v=0.776)
+  mover weight inside the defect window: 0.99960671
+direct sharp site cut: <K sd> 1.8138 (uniform on the zone: 1.8138), <+ band> 0.5000
+
+probe m_p=0.3 q=-0.1 (v=-0.307) w_p=12.0 cells, phi=0.6, T=436: completeness |sum_y|M|^2-1| <= 4.0e-14
+  P(reflected) = 0.4673 (range over mover sites 0.2444..0.5142); total outcome probability 0.999607
+  reflected-probe records: mover K mean +0.8441 (shift -0.1559; recoil 2q = -0.200), K sd 0.0802, + band 0.9984, position sd 8.56 cells
+  transmitted-probe records: mover K mean +0.9994 (shift -0.0006), K sd 0.0547, + band 0.9655, position sd 10.05
+  most likely reflected record y=584: |M_y(x)|^2 profile sd 16.00 cells (probe w_p=12.0); phase slope of M_y over mover cells -0.1574 rad/cell (kick; 2|q| = 0.200)
+
+probe m_p=0.3 q=-0.05 (v=-0.160) w_p=24.0 cells, phi=0.6, T=1123: completeness |sum_y|M|^2-1| <= 1.0e-13
+  P(reflected) = 0.7516 (range over mover sites 0.6658..0.7756); total outcome probability 0.999607
+  reflected-probe records: mover K mean +0.9150 (shift -0.0850; recoil 2q = -0.100), K sd 0.0613, + band 0.9992, position sd 9.20 cells
+  transmitted-probe records: mover K mean +0.9923 (shift -0.0077), K sd 0.0619, + band 0.9666, position sd 10.06
+  most likely reflected record y=634: |M_y(x)|^2 profile sd 14.89 cells (probe w_p=24.0); phase slope of M_y over mover cells -0.0634 rad/cell (kick; 2|q| = 0.100)
+
+probe m_p=0.3 q=-0.1 (v=-0.307) w_p=24.0 cells, phi=0.6, T=593: completeness |sum_y|M|^2-1| <= 5.4e-14
+  P(reflected) = 0.4505 (range over mover sites 0.3150..0.4741); total outcome probability 0.999607
+  reflected-probe records: mover K mean +0.8126 (shift -0.1874; recoil 2q = -0.200), K sd 0.0622, + band 0.9983, position sd 8.91 cells
+  transmitted-probe records: mover K mean +0.9995 (shift -0.0005), K sd 0.0535, + band 0.9653, position sd 10.01
+  most likely reflected record y=696: |M_y(x)|^2 profile sd 16.63 cells (probe w_p=24.0); phase slope of M_y over mover cells -0.1926 rad/cell (kick; 2|q| = 0.200)

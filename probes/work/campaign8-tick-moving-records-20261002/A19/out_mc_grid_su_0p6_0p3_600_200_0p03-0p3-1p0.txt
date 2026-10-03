@@ -1,0 +1,12 @@
+cut=su {'kind': 'gauss', 'sig': 0.0, 'single_use': True}  m=0.6 K0=0.3 v0=v(K0)=0.39655 cells/tick  T=600 B=200 M=2048 cells  packet w0=20.0
+cols: g | E[Y(t)]/t at t=75,150,300,600 | sd Y(t) | slope mean, sd, rmse vs v0 | half-slopes s1,s2, corr12, same-sign | resid | <#reg> | final K mean, sd, plus-band wt
+g=0.03  | +0.1692 +0.1549 +0.0879 +0.0332 |   27.47   55.66  103.27  163.80 | +0.0226 0.3166 0.4900 | +0.0830 -0.0244 +0.130 0.545 |   30.79 |   18.0 | +2.1976 2.4666 0.5000
+      parity corr r_MC = +0.4168 +- 0.0156 (n=3402) vs exact r = +0.4269;  exact D_track = 50.660 vs Var Y(T)/T = 44.715
+      per segment: mu_MC = 13.6999 +- 0.4256 vs exact 14.6599; M2_MC = 803.966 +- 33.075 vs exact 953.327
+g=0.3   | -0.0027 +0.0024 +0.0005 +0.0043 |   24.67   29.70   34.93   49.20 | +0.0033 0.0950 0.4045 | +0.0009 +0.0133 -0.107 0.505 |   15.43 |  100.0 | +1.6534 2.6679 0.5000
+      parity corr r_MC = +0.3931 +- 0.0065 (n=19808) vs exact r = +0.3568;  exact D_track = 4.698 vs Var Y(T)/T = 4.034
+      per segment: mu_MC = 2.5289 +- 0.0355 vs exact 1.6717; M2_MC = 31.320 +- 0.714 vs exact 8.642
+g=1.0   | +0.0080 -0.0053 -0.0021 +0.0005 |   24.62   27.32   34.90   47.91 | +0.0031 0.0924 0.4041 | +0.0010 -0.0068 +0.177 0.603 |   11.11 |  113.5 | +1.1724 2.8040 0.5000
+      parity corr r_MC = +0.4406 +- 0.0060 (n=22494) vs exact r = +0.3624;  exact D_track = 2.137 vs Var Y(T)/T = 3.826
+      per segment: mu_MC = 1.3176 +- 0.0369 vs exact 0.8406; M2_MC = 32.403 +- 1.228 vs exact 0.761
+elapsed 17.9 s

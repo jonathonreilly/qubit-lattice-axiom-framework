@@ -691,3 +691,121 @@ Two readings of a move, R1 and R3, behave very differently.
 - The draft's "opposite to Hawking" framing must change to: "8× bigger lasted ~9× longer; nothing like a lifetime ∝ mass³".
 
 **C10. All "must"s about formation and instruments rest on the unadopted Campaign 7 sentences 1, 3 and 4 (and no-signalling).** Read every such "must" as "if those hold".
+
+## 00:05 (real) A18 (shared-beat GR package P1–P4) LANDED → c8/A18/REPORT.md (+ pn_rays.py, lapse1d.py, estimator.py, noise3d.py)
+
+**What the package achieves (EXACT eikonal; CHECKED)**
+- The ingredients:
+  - a shared beat;
+  - change per beat set by records, with one-site phases ∝ N and two-site angles ∝ N_xN_y;
+  - one-site rest energies;
+  - an exponential lapse N = e^{−U}.
+- Result: EXACTLY the exponential (Yilmaz-type) metric ds² = −e^{−2U}dt² + e^{2U}dx². That gives γ = β = 1, i.e. 1PN light bending (4M/b), Shapiro delay and perihelion (factor 1.000000).
+- Species with one-site masses redshift and fall universally (0.4% at σ = 200). Two-site masses fall about 2× faster, an EP violation at order one.
+- Smooth gradients do not reflect (≤ 5e-9).
+
+**What must be supplied**
+- θ0 ≲ 6e-3, because γ_eff = 2θ0·cotθ0 − 1. Light then runs at ≲ 1% of the lattice cone.
+- The cone must sit at the vacuum's quasi-energy.
+- A10's time-symmetric word.
+- Formation odds ∝ N.
+- UNPACED wanderers. Paced wanderers give β = 1/4 or 0, so the carrier of gravity runs on absolute time.
+- Dimension-based weights for every other term (D7). Gauge plaquettes weighted by site count would give γ = 2 for photons.
+
+**γ and β are DIALLED IN, not derived**
+- γ = b/a − 1, which needs the product composition b = 2a.
+- β = (1 + FF''/F'²)/2, which needs F exponential.
+
+**Nearest-neighbour versions fail (EXACT)**
+- A finite m-site estimator gives a polynomial pace. Exponential response then yields β = 1 − 1/(2m) = 11/12 for 6 neighbours, so Mercury comes out at 44.2″ vs 42.98″.
+- Shot noise needs an averaging radius R ≳ 1e9/u∞.
+
+**Beyond 1PN**
+- 2PN bending 4π(M/b)² vs 15π/4.
+- No horizon (N ≥ 1/e).
+- Shadow +4.6%.
+- NO gravitational waves.
+- NO frame dragging (g0i ≡ 0).
+- **MOVING SOURCES CARRY ONLY A WAKE (D23):** upstream screening beyond D/v ~ 1e-33 m. A moving Earth would hold no Moon. This sinks the diffusive-carrier mechanism of A6/A8 for any moving source; a WAVE carrier is needed.
+
+**Honest assessment:** a proof of possibility for static weak-field geometry, with the two GR numbers dialled in. It is not a derivation, and it fails waves, frame dragging and moving bodies.
+
+**Coordinator check (EXACT by hand)**
+- PPN: U_N = aU and g_ij = 1 + 2(b−a)U give γ = b/a − 1.
+- Perihelion factor at β = 11/12: (4 − 11/12)/3 = 1.0278, giving 44.17″.
+
+## 00:45 (real) A17 (pacing noise vs universality) LANDED → c8/A17/REPORT.md (+ z3_floor, torus_mc, dirac_pacing, predvar_check, phys_numbers, rotor_scaling)
+
+**Redshift vs noise**
+- The redshift difference between branches is a fixed, run-independent phase (COW-type). It costs NO visibility (EXACT; CHECKED |O| ≥ 0.9994).
+- Dephasing comes only from SHOT NOISE in what the beat counts.
+- Per-site or NN beats are effectively independent at separated places, so A13's estimate STANDS. It is optimistic by ≥ 11×: 80 ps at 100 amu, u = ½.
+
+**Theorem 2, capacity floor (EXACT for linear drives)**
+- S_N(0) ≥ 2(1−u)/(uκ·Cap(K)).
+- The noise falls with capacity (∝ radius), not with volume.
+- Time windows do not help, because the zero-frequency gain is 1.
+- NN star at u = ½: ≥ 2.07 ticks.
+
+**Stronger falsifier**
+- A per-site beat scrambles every massive particle within each branch (EXACT 2nd-order toy, CHECKED 0.05975 vs 0.05989): an electron every ~3 s at u = ½.
+- Matter would not persist.
+
+**Requirements from experiment**
+- Interferometers need a smooth average over R ≈ 4e9 (Rb) to 1.5e12 (25 kDa) sites at u = ½, up to 1.5e18 at u = 1e-6.
+- No NN record rule can build this:
+  - L1: same-tick reading breaks the cone;
+  - L2: the snapshot holds no history;
+  - L3: record relays carry the same floor.
+
+**Way out (ARGUED, not constructed)**
+- A smooth beat FIELD carried by the shared possibilities, set by record activity, with wave-like transport.
+- This refines D6 from "the change waits for events" to "the change advances by a smooth dose set by record activity".
+- It matches the coordinator's gravity synthesis: wave-carrying gravity must be a collective field of the possibilities.
+
+**Other results**
+- Ballistic carriers are quiet but give a 1/r² shadow.
+- Rotor (deterministic) relocation gives bounded variance (Var 31–33 flat in T), but needs a mutable per-site pointer that is not a record.
+- Skip pacing fixes "no change in the void" but is too noisy.
+
+**Coordinator check (EXACT arithmetic).** Floor at u = ½, κ = 1/12, Cap = 11.62: 2.065 ticks.
+
+## 00:20 (real) A19 (tracks and inertia) LANDED → c8/A19/REPORT.md (+ core1d, exact_sharp, mc_grid, mediated*, track3d)
+
+**Sharp (one-site) registration: NO inertia (EXACT).**
+- Each record resets the mover completely (Markov). k0 is forgotten after the first record.
+- Only the sublattice/direction bit survives, with probability 1 − sin(m)/2 per record.
+- Momentum is spread over the whole zone, so a slow massive mover becomes a near-light-speed zigzag.
+- Zeno-type freezing appears only for lattice-heavy movers.
+- Direct records formed from the mover's own neighbourhood are always star-sharp (R1, EXACT). That includes A13's c·P_singlet. So A13's model, as written, has no inertia for directly registered massive movers.
+
+**Coarse registration (cut width σ ≫ ħ/p): NEWTON'S FIRST LAW EMERGES.**
+- Mean momentum is conserved (EXACT).
+- The track runs at v(k0) (CHECKED ≤ 0.011).
+- Direction persists for ~4(σp/ħ)² records.
+- The optimal rate gives a standard-quantum-limit precision δv ≈ √(ħ/MT) (CHECKED within ~25%).
+- Sliding unsharp cuts heat but never freeze. Only fixed pixel partitions freeze slow movers.
+- Recorded sites act as traps: a frozen mover stays frozen at high rate (refutes the agent's own prior).
+
+**Mediated records give coarse cuts while keeping "a record locks exactly one possibility" (R2, EXACT structure; CHECKED).**
+- The record forms on a probe that bumped the mover. The mover feels a broad partial cut plus recoil.
+- Mott-track-like (comparator).
+
+**Time-umklapp (R3, CHECKED).**
+- Contact collisions put an O(1) share (~50%) of the reflected weight into the time-doubled channel (K → K+π).
+- That is a falsifier unless it is suppressed or shown to be invisible.
+
+**3D (A10 signed cycle, L=48).** Coarse cuts keep the direction (speed 1.01, cos 0.90–0.93). Sharp cuts erase it.
+
+**Physical scales (ARGUED)**
+- Heating bound: direct sharp registration of matter < 1e-90 per nucleon per Planck tick.
+- Coarseness needed: about 0.2 nm for a 1 eV electron.
+- A thrown ball passes easily.
+
+**Coordinator check (EXACT numerics).** ⟨v²⟩ over the zone = 1 − sin m to 6 digits:
+
+| m | ⟨v²⟩ | 1 − sin m |
+|---|---|---|
+| 0.15 | 0.850562 | 0.850562 |
+| 0.6 | 0.435358 | 0.435358 |
+| 1.4 | 0.014550 | 0.014550 |

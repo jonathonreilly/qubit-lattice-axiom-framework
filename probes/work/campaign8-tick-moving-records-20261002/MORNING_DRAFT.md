@@ -49,6 +49,17 @@
   - **Strength:** gravity's weakness has to be put in by hand, as a capture chance of about 10⁻¹⁸.
   - **Packed matter:** a packed clump counts only at its skin, not by how many records it holds.
 - **Clocks:** a gas of wanderers gives a steady rate of events, but no record stores that count. A readable clock needs something that keeps capturing records.
+- **A package that matches Einstein to first order (A18).** Combine:
+  - a shared beat;
+  - nearby records setting how much changes per beat, with passing between neighbours slowed twice over;
+  - one particular exponential shape for the slowing.
+
+  This reproduces exactly the right first-order light bending, radar delay and Mercury orbit, and things whose mass sits at single sites fall alike. But both key numbers are dialled in by choices, not derived. A rule that sees only nearest neighbours cannot make the exponential; it gives Mercury 44.2″ against the measured 42.98″.
+- **The deeper problem (A18, plus my synthesis, argued).** In every record-based version, a moving body's field only trails behind it in a thin wake, so a moving Earth could not hold the Moon. There are also no gravitational waves and no frame dragging. Two facts block the record route:
+  - the pace cannot be set by the shared possibilities, or faraway choices leak (A9, A15);
+  - readable records carry no momentum (A7, A13).
+
+  So a gravity with waves would have to be a collective ripple of the possibilities themselves, with fixed dynamics on a shared beat, the way the photon lane works. That is the direction the repo's gravity lane already takes.
 
 ### 6. Empty space must not make records on its own, or every region freezes (A4, A6, A9, A12)
 - At any steady rate, every region freezes within about one over that rate in ticks.
@@ -78,10 +89,20 @@ My overnight note on this was too strong, and the reviewer caught it.
 - See big-picture points 4 and 5.
 - Linked neighbours tie on the same tick a fraction p/(2−p) of the time, if each site has the same fixed chance p per tick. This has not been computed for chances that depend on the possibilities.
 - **If the change itself waits for record events:** all clocks slow alike, but nothing changes where there are no records.
-  - Random waiting would wash out atom interference within about a nanosecond, if a whole atom keeps one pace.
-  - Setting the change per beat from records, rather than random events, avoids this. That is being checked now (A17).
+- **The jitter problem (A13, A17):** a beat that counts the record events next to each spot jitters.
+  - That jitter washes out atom interference in under a nanosecond.
+  - Worse, it would shake every particle apart: an electron within seconds.
+  - The real slowing near a heavy body is not the problem. It is the same every run, so it only shifts the interference pattern, exactly as experiments see.
+  - The jitter shrinks only with the width of the region averaged over, and averaging over time doesn't help (exact).
+  - A quiet, local, influenced beat therefore has to be a smooth field carried by the shared possibilities and set by records, not each spot waiting for events. A rule that sees only neighbouring records cannot build it without breaking the speed limit.
 
 ### 2. Records move one site per tick
+- **Everyday motion, i.e. inertia (A19).** A thing that has never been recorded can coast, and the records it leaves now and then can line up into a straight trail. That holds only if each record pins it down loosely, over a stretch much wider than its own ripples.
+  - **Pinned to one exact spot:** it forgets its speed and direction every time. The trail becomes a jittery zigzag, or a very heavy thing recorded every step freezes.
+  - **Records formed directly from the thing's own neighbourhood** are always the sharp kind.
+  - **The loose kind comes from records forming on something small and soft** that bumped the thing and was then recorded itself. That is how real particle tracks form in a detector.
+  - With mediated records, Newton's first law comes out of the toy, and a thrown ball easily qualifies.
+  - **Catch:** sharp contact bumps put about half the bounce into a "time-doubled" partner state, which must be suppressed.
 - **Steady event rate:** wandering records give each place a steady rate of moves, but no record stores it.
 - **Time from new records alone:** across a uniform grid each spot fills only about once on average. If you count every formation including moves, time keeps running wherever records move, but that count is not stored anywhere.
 - **Can a lone record move at all?**
@@ -136,7 +157,4 @@ One toy puts all of this together consistently:
 8. **Sub-grids:** do you accept a rule that, once records meet, tells sites apart by sub-grid (A10, A13)? A20's alternative is pending.
 
 *Still running:*
-- A17: pacing noise;
-- A18: a package aimed at Einstein's full first-order results;
-- A19: do registrations make straight tracks (inertia)?
 - A20: turn-symmetric motion.

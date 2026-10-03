@@ -1,0 +1,3 @@
+D=600: sample Var(ph_pred) over 20000 = 0.3882 (s.e. 0.0039); exact 0.3857
+D=100: sample Var(ph_pred) over 20000 = 0.0693 (s.e. 0.0007); exact 0.0698
+9.25 real         8.88 user         0.11 sys 231161856  maximum resident set size  exit=0

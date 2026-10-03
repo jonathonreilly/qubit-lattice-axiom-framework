@@ -1,0 +1,15 @@
+mover m=1.2 K=0.8, probe m=0.1 q=-0.05: channels (+,+) 0.8551  (-,-) 0.1449  (+,-) 1.1e-05  (-,+) 1.1e-05
+   quasi-energy W_A+W_B: in 1.4273;  out (+,+) 1.4290;  out (-,-) 4.8566  [time-umklapp prediction 2pi - in = 4.8558]
+   (-,-) channel mean momenta K_A' -2.424, K_B' -3.106  (in: +0.800, -0.050);  band-preserving probe reversal weight 0.0768, mover momentum change there -0.1542 (2q = -0.100)
+mover m=1.2 K=0.8, probe m=0.3 q=-0.05: channels (+,+) 0.8016  (-,-) 0.1983  (+,-) 5.2e-05  (-,+) 5.2e-05
+   quasi-energy W_A+W_B: in 1.6196;  out (+,+) 1.6212;  out (-,-) 4.6621  [time-umklapp prediction 2pi - in = 4.6636]
+   (-,-) channel mean momenta K_A' -2.482, K_B' -3.052  (in: +0.800, -0.050);  band-preserving probe reversal weight 0.1124, mover momentum change there -0.2499 (2q = -0.100)
+mover m=0.6 K=0.8, probe m=0.1 q=-0.05: channels (+,+) 0.9694  (-,-) 0.0306  (+,-) 1.3e-07  (-,+) 1.3e-07
+   quasi-energy W_A+W_B: in 1.0699;  out (+,+) 1.0715;  out (-,-) 5.2151  [time-umklapp prediction 2pi - in = 5.2132]
+   (-,-) channel mean momenta K_A' -2.624, K_B' -2.905  (in: +0.800, -0.050);  band-preserving probe reversal weight 0.0227, mover momentum change there -0.3771 (2q = -0.100)
+mover m=1.4 K=0.8, probe m=0.1 q=-0.05: channels (+,+) 0.7958  (-,-) 0.2041  (+,-) 4.5e-05  (-,+) 4.5e-05
+   quasi-energy W_A+W_B: in 1.5639;  out (+,+) 1.5655;  out (-,-) 4.7188  [time-umklapp prediction 2pi - in = 4.7193]
+   (-,-) channel mean momenta K_A' -2.400, K_B' -3.132  (in: +0.800, -0.050);  band-preserving probe reversal weight 0.0983, mover momentum change there -0.1202 (2q = -0.100)
+mover m=1.2 K=0.8, probe m=0.1 q=-0.15: channels (+,+) 0.9514  (-,-) 0.0486  (+,-) 4.3e-09  (-,+) 4.3e-09
+   quasi-energy W_A+W_B: in 1.4956;  out (+,+) 1.4963;  out (-,-) 4.7887  [time-umklapp prediction 2pi - in = 4.7875]
+   (-,-) channel mean momenta K_A' -2.467, K_B' +3.118  (in: +0.800, -0.150);  band-preserving probe reversal weight 0.0157, mover momentum change there -0.3878 (2q = -0.300)

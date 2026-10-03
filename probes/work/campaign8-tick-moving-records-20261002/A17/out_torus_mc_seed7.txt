@@ -1,0 +1,13 @@
+L=20, Nw=400 (u=0.0500), replicas M=500, T=1200; relative s.e. of a variance ~ 0.063
+ kernel             Var_MC/T    Var_exact/T   ratio    asymptotic slope   naive 1/|K| scaling
+ ball R=0             92.4776     94.9208    0.974      95.8972   exact/exact(R=0) = 1.0000 vs 1/|K| = 1.0000
+ ball R=1             30.6569     33.8813    0.905      34.6898   exact/exact(R=0) = 0.3569 vs 1/|K| = 0.1429
+ ball R=2             16.5560     17.3421    0.955      18.0182   exact/exact(R=0) = 0.1827 vs 1/|K| = 0.0303
+ ball R=3              8.9766      9.0889    0.988       9.6052   exact/exact(R=0) = 0.0958 vs 1/|K| = 0.0081
+ diff R=2, D=1         4.6818      4.2929    1.091       4.3510
+ diff R=2, D=3        22.2614     20.8443    1.068      21.2528
+ diff R=2, D=6        31.4908     32.1710    0.979      33.1348
+ diff R=2, D=10       34.6664     35.0095    0.990      36.2703
+ windowed W=100 (ball R=2): Var_MC = 18193.7, exact 18725.5; windowed/raw exact = 0.8998 vs total-weight ratio 0.9175 (1/W would be 0.0100)
+elapsed 6.2 s
+6.26 real         6.09 user         0.06 sys 74432512  maximum resident set size  exit=0

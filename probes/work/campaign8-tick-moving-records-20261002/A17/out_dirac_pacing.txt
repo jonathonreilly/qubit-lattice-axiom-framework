@@ -1,0 +1,19 @@
+== Part A: within-branch scrambling (m=0.01, p=0.25, T=200, sigma=30, 60 realizations) ==
+ R=  0: E[1-F] = 0.05800 +- 0.00029; E[-ln F] = 0.05975; 2nd-order pred = 0.05989;  naive m^2 T Var(d) = 0.06000
+ R=  3: E[1-F] = 0.00838 +- 0.00009; E[-ln F] = 0.00841; 2nd-order pred = 0.00842;  naive m^2 T Var(d) = 0.00857
+ R=200: E[1-F] = 0.00010 +- 0.00001; E[-ln F] = 0.00010; 2nd-order pred = 0.00009;  naive m^2 T Var(d) = 0.00015
+
+== Part B: two branches in one shared dose field (m=0.15, p=0.05, R=200, T=200, sigma=30, 600 runs) ==
+ D=600: mean|O| = 0.980124 (single run, ideal 1);  max|phase - predicted| = 3.87e-02 rad
+        rms|phase - predicted| = 1.02e-02 rad (phase sd 0.632)
+        Var(phase) = 0.3999 vs point-kernel formula 0.4264, packet-weighted exact 0.3857 (s.e. ~0.06 rel);  ensemble |E O| = 0.8041 vs mean|O| * exp(-Var_pk/2) = 0.8082
+ D=100: mean|O| = 0.980272 (single run, ideal 1);  max|phase - predicted| = 3.99e-02 rad
+        rms|phase - predicted| = 1.21e-02 rad (phase sd 0.248)
+        Var(phase) = 0.0614 vs point-kernel formula 0.1063, packet-weighted exact 0.0698 (s.e. ~0.06 rel);  ensemble |E O| = 0.9507 vs mean|O| * exp(-Var_pk/2) = 0.9467
+
+== Part C: deterministic gradient N(x) = 1 + g (x - xc), g = 1e-4, D = 600, T = 200 (no noise) ==
+ m=0.05: arg O = -0.5726 rad vs -m g D T = -0.6000;  |O| = 0.999379; centroid shift = -1.858 vs -(1/2) g T^2 m/tan(m) = -1.998
+ m=0.15: arg O = -1.7890 rad vs -m g D T = -1.8000;  |O| = 0.999880; centroid shift = -2.009 vs -(1/2) g T^2 m/tan(m) = -1.985
+
+elapsed 38.4 s
+38.48 real        37.94 user         0.30 sys 240140288  maximum resident set size  exit=0

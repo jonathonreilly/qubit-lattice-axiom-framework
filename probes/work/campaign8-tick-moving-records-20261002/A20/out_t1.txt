@@ -1,0 +1,14 @@
+(a) up-to-phase commutation residual min_lambda ||GaGb - lambda GbGa|| :
+   th=0.0000  lambda=1.000+0.000j  residual=0.00e+00
+   th=0.3000  lambda=0.985+0.000j  residual=4.92e-01
+   th=0.7854  lambda=0.500+0.000j  residual=2.45e+00
+   th=1.0000  lambda=-0.003+0.000j  residual=2.83e+00
+   th=1.5708  lambda=-1.000+0.000j  residual=4.90e-16
+   th=2.0000  lambda=-0.367+0.000j  residual=2.63e+00
+   th=3.1416  lambda=1.000+0.000j  residual=8.48e-32
+(b) pi/4: Ad_A Ad_B (Z0) = +X(0, 0, 0) Y(0, 1, 0)    Ad_B Ad_A (Z0) = -Y(0, 0, 0) X(1, 0, 0)
+(c) sigma^x_0 anticommutes with 4 compass bond terms (even -> fixed by the pi/2 product)
+(c) sigma^y_0 anticommutes with 4 compass bond terms (even -> fixed by the pi/2 product)
+(c) sigma^z_0 anticommutes with 4 compass bond terms (even -> fixed by the pi/2 product)
+(d) offsets d (|d|_inf<=3) with [S_0, S_d] != 0: []
+(d) rotations fixing S_0 exactly (with sign): 24/24 ; S_0 hermitian: True ; S_0 = +X(-1, 0, 0) Y(0, -1, 0) Z(0, 0, -1) Z(0, 0, 1) Y(0, 1, 0) X(1, 0, 0)

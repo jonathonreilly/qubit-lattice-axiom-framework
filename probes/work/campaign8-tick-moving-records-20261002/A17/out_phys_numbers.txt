@@ -1,0 +1,44 @@
+(a) A13 baseline, per-site Poisson pace with tau_e = t_P:  t_coh = hbar^2/(tau_e M^2 c^4)
+   electron         Mc^2/hbar = 7.763e+20 /s   t_coh = 3.078e+01 s   (m = M/m_P = 4.19e-23)
+   neutron          Mc^2/hbar = 1.427e+24 /s   t_coh = 9.103e-06 s   (m = M/m_P = 7.70e-20)
+   Rb-87            Mc^2/hbar = 1.230e+26 /s   t_coh = 1.226e-09 s   (m = M/m_P = 6.63e-18)
+   100 amu          Mc^2/hbar = 1.415e+26 /s   t_coh = 9.262e-10 s   (m = M/m_P = 7.63e-18)
+   Cs-133           Mc^2/hbar = 1.881e+26 /s   t_coh = 5.243e-10 s   (m = M/m_P = 1.01e-17)
+   25 kDa molecule  Mc^2/hbar = 3.538e+28 /s   t_coh = 1.482e-14 s   (m = M/m_P = 1.91e-15)
+
+(b) per-site pace at carrier density u (S_site = (1-p)/p ticks, p = s u(1-u)):
+   u=5.0e-01: p=7.970e-02, S_site=1.155e+01 ticks; t_coh(100 amu)=8.02e-11 s, t_coh(25 kDa)=1.28e-15 s; electron within-branch scrambling rate = 3.75e-01 /s
+   u=5.0e-02: p=1.514e-02, S_site=6.504e+01 ticks; t_coh(100 amu)=1.42e-11 s, t_coh(25 kDa)=2.28e-16 s; electron within-branch scrambling rate = 2.11e+00 /s
+   u=1.0e-06: p=3.188e-07, S_site=3.137e+06 ticks; t_coh(100 amu)=2.95e-16 s, t_coh(25 kDa)=4.72e-21 s; electron within-branch scrambling rate = 1.02e+05 /s
+
+(c) comparator demands (from memory, unverified): S_max = 1/((Mc^2/hbar)^2 t_obs), in ticks
+   neutron, 50 us : S_max = 1.82e-01 ticks  (suppression vs Poisson at one event per tick: 1.8e-01)
+   Rb-87, 2 s     : S_max = 6.13e-10 ticks  (suppression vs Poisson at one event per tick: 6.1e-10)
+   25 kDa, 10 ms  : S_max = 1.48e-12 ticks  (suppression vs Poisson at one event per tick: 1.5e-12)
+
+(d) required averaging radius R_min (sites; metres) for S_ball(R) <= S_max:
+   diffusive carriers, uniform ball (floor kernel is 1.2x better):
+   u=5.0e-01:  neutron, 50 us: 1.3e+01 (2.0e-34 m);  Rb-87, 2 s: 3.7e+09 (6.0e-26 m);  25 kDa, 10 ms: 1.5e+12 (2.5e-23 m)
+   u=5.0e-02:  neutron, 50 us: 2.4e+02 (3.9e-33 m);  Rb-87, 2 s: 7.1e+10 (1.1e-24 m);  25 kDa, 10 ms: 2.9e+13 (4.7e-22 m)
+   u=1.0e-06:  neutron, 50 us: 1.3e+07 (2.0e-28 m);  Rb-87, 2 s: 3.7e+15 (6.0e-20 m);  25 kDa, 10 ms: 1.5e+18 (2.5e-17 m)
+   ballistic carriers (v = 1), uniform ball:
+   u=5.0e-01:  neutron, 50 us: 2.0e+00 (3.2e-35 m);  Rb-87, 2 s: 3.4e+04 (5.5e-31 m);  25 kDa, 10 ms: 7.0e+05 (1.1e-29 m)
+   u=1.0e-06:  neutron, 50 us: 1.4e+03 (2.3e-32 m);  Rb-87, 2 s: 2.4e+07 (3.9e-28 m);  25 kDa, 10 ms: 4.9e+08 (7.9e-27 m)
+
+(e) long-time cross-correlation of the pace at r >> R: C_Phi(r) = A * hbar G / r with A = 2(1-u)/(4 pi u kappa)
+   u=5.0e-01: A = 1.910e+00
+   u=5.0e-02: A = 3.629e+01
+   u=1.0e-06: A = 1.910e+06
+   check c^4 t_P l_P / (hbar G) = 1.000000
+   diffusive correlation build-up time at r = 1e-09 m: r^2/(6 kappa) ticks = 4.13e+08 s
+   diffusive correlation build-up time at r = 1e-06 m: r^2/(6 kappa) ticks = 4.13e+14 s
+
+(f) grid-scale tail of a sharp-ball kernel: scrambling into grid-scale states ~ (Mc^2/hbar)^2 t_P S_site * 9/R^4
+   electron                : per-site rate 3.75e-01 /s; rate bound 5e-37 /s (from memory) -> R >~ 1.6e+09 sites (2.6e-26 m)
+   nucleon (as elementary) : per-site rate 1.27e+06 /s; rate bound 3e-42 /s (from memory) -> R >~ 1.4e+12 sites (2.3e-23 m)
+
+(g) suppression of slow (diffusive) pace noise for particle dynamics at wavevector q: (2 kappa M/m_P)^2
+   electron: 4.9e-47
+   nucleon : 1.6e-40
+   25 kDa  : 1.0e-31
+0.10 real         0.04 user         0.02 sys 27410432  maximum resident set size  exit=0

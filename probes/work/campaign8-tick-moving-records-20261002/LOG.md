@@ -965,3 +965,47 @@ Two readings of a move, R1 and R3, behave very differently.
 **Coordinator verification**
 - Reran spin2_cubic_check.py: C1 gives 3 kinetic forms; C2 gives 9 → 1 gauge-invariant; C3 gives (−0.5, 1, 1); C5 gives 9 → 1; C7 gives γ = 1.000000.
 - Independent hand check: the 3D DeWitt kinetic term π_ijπ_ij − ½(tr π)² has weights (1 − 3/2, 1, 1) = (−½, 1, 1) on (A1, E, T2) with normalized trace. That matches C3.
+
+## 01:15 (real) A21 FINAL (including A20 and lock-and-move) → c8/A21/REVIEW_FINAL.md. CORRECTIONS C21–C26
+
+**C21. Theorem N STANDS (EXACT), with every step N1–N6 checked. But it is about ALL REVERSIBLE MOTION, not records.**
+- Statement: reversible, nearest-neighbour (face) reach, one qubit per site, ordinary (ungraded) product, exact soldered covariance on EVERY tick ⇒ the identity.
+- Light, matter waves and field ripples cannot move either.
+- The proof never uses unit translations, so it is slightly stronger than stated.
+- Graded (fermionic) products and diagonal reach (non-Clifford) are OPEN.
+
+**C22. THE FORK.**
+- If records follow the possibilities (A3 consistency), the change is held to one site, and nothing moves.
+- If records step by their OWN irreversible rule, A3's premise fails, so the change may reach further per tick (ARGUED).
+- One of these must give:
+  1. longer reach for the change (4 sites works for Clifford but scrambles; 2–3 untested);
+  2. a supplied pattern (sub-grids/schedule);
+  3. more than one qubit per site (a Qubit-axiom change);
+  4. symmetry only on average;
+  5. irreversible moves (records only).
+
+**C23. Lock-and-move.**
+- One record: STANDS (complete, covariant).
+- As a multi-record rule: FAILS as written.
+  - Two records enter one site with probability up to 1/9 (axis) or 5/36 (face-diagonal) per tick, which breaks one-per-site.
+  - There is no stay outcome. Fix: a blocked record stays put. The clash rule is not built.
+- Its lockable possibilities are the grid's six directions, so formation is GLUED to the grid. That conflicts with Q3 (formation odds unglued).
+- Content is renewed at most steps.
+- The odds ignore the neighbours, against Admissibility's "varies with".
+- Handedness is CONVENTION-dependent: the axioms have no mirror. Trails are mirror-identical.
+- It is classical dust and has no bearing on chirality.
+
+**C24. The field route collides with Theorem N.**
+- No ripple moves under one-site, exactly-symmetric-per-tick rules.
+- So the field route needs one of C22's ways out.
+- A23's leapfrog uses staggered ROLES, i.e. supplied structure. A25 is testing this.
+- If the photon lane's rule runs smoothly and the same everywhere, it already reaches past one site per tick (A3).
+
+**C25. Draft omissions.**
+- The photon-mass cross-constraint (u∞ ≲ 1e-47).
+- The galaxy-sized averaging cost in A18.
+- "Independent reviews" overstates: the second reviewer read the first.
+
+**C26. LOG wording.**
+- "The clean covariant one-site move … handed per A1 D22" becomes: "For one isolated record, a covariant one-site move: a six-outcome lock on its own qubit, then a swap. Several records need exclusion and a clash rule. It is handed only if a mirror leaves possibilities unflipped; trails are mirror-identical."
+- A20's "nothing moves … not records" becomes "nothing moves under any reversible change".

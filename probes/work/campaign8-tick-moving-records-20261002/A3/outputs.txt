@@ -1,0 +1,162 @@
+===== t1_brickwork_one_record.py =====
+[Dirac-type brickwork theta=pi/4, record formed at site 0] ticks=40 N=8
+   max|J_MH - forced flow|              = 1.67e-16
+   max outflow excess (<=0 feasible)     = 2.78e-17
+   exact propagation max|Q_t - P_t|      = 4.44e-16
+   MC (M=200000) max TV over ticks         = 0.0036;  worst chi2/dof = 2.47; min p = 0.0157 (Bonferroni 0.001/41 = 2.4e-05)
+   counterexample SYM        : max TV(Q_t, P_t) = 0.8736
+   counterexample SYM_BOND   : max TV(Q_t, P_t) = 0.8749
+   counterexample DECOH      : max TV(Q_t, P_t) = 0.8749
+   counterexample LOCAL_BORN : max TV(Q_t, P_t) = 0.2457
+[random-gate brickwork, record formed at site 0] ticks=40 N=8
+   max|J_MH - forced flow|              = 4.44e-16
+   max outflow excess (<=0 feasible)     = 0.00e+00
+   exact propagation max|Q_t - P_t|      = 1.44e-15
+   MC (M=200000) max TV over ticks         = 0.0031;  worst chi2/dof = 1.99; min p = 0.052 (Bonferroni 0.001/41 = 2.4e-05)
+   counterexample SYM        : max TV(Q_t, P_t) = 0.5520
+   counterexample SYM_BOND   : max TV(Q_t, P_t) = 0.4980
+   counterexample DECOH      : max TV(Q_t, P_t) = 0.4637
+   counterexample LOCAL_BORN : max TV(Q_t, P_t) = 0.2078
+[random-gate brickwork, random possibility state] ticks=40 N=8
+   max|J_MH - forced flow|              = 1.94e-16
+   max outflow excess (<=0 feasible)     = -1.74e-04
+   exact propagation max|Q_t - P_t|      = 8.33e-16
+   MC (M=200000) max TV over ticks         = 0.0035;  worst chi2/dof = 2.12; min p = 0.0379 (Bonferroni 0.001/41 = 2.4e-05)
+   counterexample SYM        : max TV(Q_t, P_t) = 0.4822
+   counterexample SYM_BOND   : max TV(Q_t, P_t) = 0.4821
+   counterexample DECOH      : max TV(Q_t, P_t) = 0.4821
+   counterexample LOCAL_BORN : max TV(Q_t, P_t) = 0.2014
+[tree tick] max|pi_min(J_MH^+) - pi_L1-minimal LP| over 10 ticks = 2.08e-16
+===== t2_coinshift_nonuniqueness.py =====
+[Hadamard coin-shift, record formed at site 0, coin (1,i)/sqrt2]  min entry of pi_MH = 0.00e+00;  MIN-MH outflow excess = 5.55e-17
+   MH     : max|Q_t-P_t| = 4.4e-16;  mean P(move)/tick = 1.0000; mean signed displacement/tick = -0.0000
+   MIN-MH : max|Q_t-P_t| = 3.9e-15;  mean P(move)/tick = 1.0000; mean signed displacement/tick = -0.0000
+   L1     : max|Q_t-P_t| = 3.2e-15;  mean P(move)/tick = 1.0000; mean signed displacement/tick = +0.0500
+[Hadamard coin-shift, random possibility state]  min entry of pi_MH = 0.00e+00;  MIN-MH outflow excess = -4.71e-03
+   MH     : max|Q_t-P_t| = 2.5e-16;  mean P(move)/tick = 1.0000; mean signed displacement/tick = +0.4353
+   MIN-MH : max|Q_t-P_t| = 1.5e-15;  mean P(move)/tick = 0.5977; mean signed displacement/tick = +0.4353
+   L1     : max|Q_t-P_t| = 1.9e-15;  mean P(move)/tick = 0.4650; mean signed displacement/tick = -0.0539
+[rotation coin theta=0.3, random state]  min entry of pi_MH = 0.00e+00;  MIN-MH outflow excess = -4.20e-03
+   MH     : max|Q_t-P_t| = 3.3e-16;  mean P(move)/tick = 1.0000; mean signed displacement/tick = +0.1539
+   MIN-MH : max|Q_t-P_t| = 7.2e-16;  mean P(move)/tick = 0.4578; mean signed displacement/tick = +0.1539
+   L1     : max|Q_t-P_t| = 1.1e-15;  mean P(move)/tick = 0.4308; mean signed displacement/tick = -0.0057
+[d=1 conveyor (pure shift), uniform odds]  min entry of pi_MH = 0.00e+00;  MIN-MH outflow excess = 2.78e-17
+   MH     : max|Q_t-P_t| = 8.3e-16;  mean P(move)/tick = 1.0000; mean signed displacement/tick = +1.0000
+   MIN-MH : max|Q_t-P_t| = 8.3e-16;  mean P(move)/tick = 1.0000; mean signed displacement/tick = +1.0000
+   L1     : max|Q_t-P_t| = 0.0e+00;  mean P(move)/tick = 0.0000; mean signed displacement/tick = +0.0000
+[d=1 conveyor (pure shift), random state]  min entry of pi_MH = 0.00e+00;  MIN-MH outflow excess = 2.78e-17
+   MH     : max|Q_t-P_t| = 8.3e-16;  mean P(move)/tick = 1.0000; mean signed displacement/tick = +1.0000
+   MIN-MH : max|Q_t-P_t| = 1.1e-15;  mean P(move)/tick = 1.0000; mean signed displacement/tick = +1.0000
+   L1     : max|Q_t-P_t| = 3.3e-16;  mean P(move)/tick = 0.7633; mean signed displacement/tick = +0.6624
+[traced flow] coin-shift Hadamard : HS formula per cut = [0. 0. 0. 0. 0. 0. 0. 0.]; basis sum of J_MH = [0. 0. 0. 0. 0. 0. 0. 0.]
+[traced flow] d=1 right shift     : HS formula per cut = [1. 1. 1. 1. 1. 1. 1. 1.]; basis sum of J_MH = [1. 1. 1. 1. 1. 1. 1. 1.]
+[traced flow] d=2 right shift     : HS formula per cut = [2. 2. 2. 2. 2. 2. 2. 2.]; basis sum of J_MH = [2. 2. 2. 2. 2. 2. 2. 2.]
+===== t3_feasibility_random_walks.py =====
+random range-1 d=2 walks: 400 walks x 6 ticks = 2400 ticks; max matrix element beyond range 1 = 0.0e+00
+  (a) ticks with NO nearest-neighbour coupling (LP)      : 0
+  (b) ticks with some pi_MH < 0                          : 2092  (most negative -0.093)
+  (c) ticks where minimal MH rule breaks the outflow bound: 0  (largest excess 0.000e+00)
+  (d) repaired rule on those ticks: max outflow excess = -1.00e+00, max|P_t T - P_t+1| = 0.00e+00
+===== t3b_operator_identity_and_2d.py =====
+1D rings N in {5,6,8}, d in {1,2,3}, 20 random range-1 ticks each:
+   max |B_x - A_x| (operator identity)        = 1.77e-15
+   max eigenvalue of B_x - Pi_x      (<= 0?)   = 1.23e-15
+   max eigenvalue of -B_x - Pi_x+1   (<= 0?)   = 1.64e-15
+   max |Im K - Im K^T| (lambda-flow)           = 1.11e-16
+2D torus 4x4, d=4 coin-hop-coin walks (max element beyond range 1 = 0.0e+00):
+   ticks tested = 600; ticks where minimal MH rule breaks outflow bound = 0; largest excess = 0.000e+00
+   max |Im K - Im K^T| (lambda-flow) in 2D     = 9.714e-17
+===== t3c_plaquette_probe.py =====
+4-cycle, d=1: ticks=570, max forbidden element = 1.0e-13
+   ticks with non-zero lambda flow (Im K - Im K^T) : 235  (max 2.209e-01)
+   ticks where minimal MH rule breaks outflow bound: 68  (largest excess 7.649e-02)
+   ticks with no nearest-neighbour coupling (LP)   : 0
+      example: excess 1.416e-02, P_t = [0.6324 0.0512 0.2136 0.1028], P_t+1 = [0.2082 0.2047 0.0141 0.5731]
+      example: excess 1.977e-02, P_t = [0.1482 0.7253 0.0311 0.0954], P_t+1 = [0.7017 0.1956 0.0843 0.0184]
+4-cycle, d=2: ticks=570, max forbidden element = 1.0e-13
+   ticks with non-zero lambda flow (Im K - Im K^T) : 280  (max 1.412e-01)
+   ticks where minimal MH rule breaks outflow bound: 20  (largest excess 5.323e-02)
+   ticks with no nearest-neighbour coupling (LP)   : 0
+      example: excess 6.127e-05, P_t = [0.4276 0.0103 0.3188 0.2433], P_t+1 = [0.1189 0.0839 0.1774 0.6198]
+      example: excess 8.251e-03, P_t = [0.1108 0.1089 0.0453 0.735 ], P_t+1 = [0.324  0.0879 0.3165 0.2716]
+plaquette repair (d=1): 68 infeasible ticks repaired; max outflow excess after repair = 7.79e-16; max|P_t T - P_t+1| = 1.22e-15; MH circulation outside feasible interval by up to 7.649e-02
+===== t4_hamiltonian_tick.py =====
+(a) record formed at site 0, one tick U = exp(-i H tau):
+   tau= 1.00: P(dist>=2) = 2.850e-01; LP least long-jump mass = 2.850e-01; tau^4/2 = 5.000e-01
+   tau= 0.50: P(dist>=2) = 2.719e-02; LP least long-jump mass = 2.719e-02; tau^4/2 = 3.125e-02
+   tau= 0.25: P(dist>=2) = 1.886e-03; LP least long-jump mass = 1.886e-03; tau^4/2 = 1.953e-03
+   tau= 0.10: P(dist>=2) = 4.972e-05; LP least long-jump mass = 4.967e-05; tau^4/2 = 5.000e-05
+   tau= 0.05: P(dist>=2) = 3.121e-06; LP least long-jump mass = 3.120e-06; tau^4/2 = 3.125e-06
+(b) random possibility states, tau = 1 and 0.25:
+   tau=1.0: states with no NN-only coupling: 217/300; largest least long-jump mass = 3.064e-01
+   tau=0.25: states with no NN-only coupling: 8/300; largest least long-jump mass = 1.086e-02
+(c) 20 ticks from a point mass, tau = 1: least long-jump mass per tick
+   0.285 0.282 0.019 0.063 0.202 0.175 0.000 0.371 0.465 0.026 0.087 0.007 0.061 0.395 0.249 0.000 0.306 0.341 0.002 0.000
+(d) spreading of the record on an open chain of 201 sites, Dirac-type brickwork theta=pi/4:
+   tick  10: variance R3 (guided, = Born odds) =    29.54;   R1 (re-formed each tick) =   9.50
+   tick  20: variance R3 (guided, = Born odds) =   117.29;   R1 (re-formed each tick) =  19.50
+   tick  40: variance R3 (guided, = Born odds) =   468.77;   R1 (re-formed each tick) =  39.50
+   tick  80: variance R3 (guided, = Born odds) =  1874.67;   R1 (re-formed each tick) =  79.50
+===== t5_two_records.py =====
+[two records formed at sites 0 and 4 (product start)] configs=28, ticks=30
+   simultaneous MIN-MH: ticks breaking the outflow bound = 27/30 (largest excess 4.167e-02)  -> not a valid rule on those ticks
+   L1 (LP)   exact max|Q_t-P_t| = 4.9e-16
+   SEQ (fixed bond order) exact max|Q_t-P_t| = 5.6e-16; sub-step outflow excess <= 0.0e+00
+   SEQ-AVG (all 24 orders) exact max|Q_t-P_t| = 6.1e-16; min entry of T = 0.00e+00
+   order dependence: max |pi_order - pi_order'| = 7.135e-02
+   SEQ-AVG Monte Carlo (M=200000): max TV = 0.0057, min chi2 p over 31 ticks = 0.000104
+   BOND-LOCAL (independent, bond-marginal odds): max TV(Q_t, P_t) = 0.3691
+[random linked (entangled) possibility state] configs=28, ticks=30
+   simultaneous MIN-MH: ticks breaking the outflow bound = 30/30 (largest excess 2.248e-02)  -> not a valid rule on those ticks
+   L1 (LP)   exact max|Q_t-P_t| = 4.4e-16
+   SEQ (fixed bond order) exact max|Q_t-P_t| = 2.5e-16; sub-step outflow excess <= -2.2e-05
+   SEQ-AVG (all 24 orders) exact max|Q_t-P_t| = 2.8e-16; min entry of T = 0.00e+00
+   order dependence: max |pi_order - pi_order'| = 5.974e-02
+   SEQ-AVG Monte Carlo (M=200000): max TV = 0.0051, min chi2 p over 31 ticks = 0.105
+   BOND-LOCAL (independent, bond-marginal odds): max TV(Q_t, P_t) = 0.4280
+[two-bond example] Psi = (|L,L> + e^{i phi}|R,R>)/sqrt2, Hadamard on each bond
+   phi=0.000: P_t=[0.5 0.  0.  0.5], P_t+1=[0.5 0.  0.  0.5]; bond-1 odds [0.5 0.5]->[0.5 0.5], bond-2 odds [0.5 0.5]->[0.5 0.5]
+   phi=1.571: P_t=[0.5 0.  0.  0.5], P_t+1=[0.25 0.25 0.25 0.25]; bond-1 odds [0.5 0.5]->[0.5 0.5], bond-2 odds [0.5 0.5]->[0.5 0.5]
+===== t5c_lambda_config.py =====
+two records, brickwork layer: max |Im K - Im K^T| over 50 random linked states = 6.355e-02
+===== t6_collisions.py =====
+[two records, formed at sites 0 and 1] records=2, configs=15, ticks=24; amplitude needing a 2-site move = 0.0e+00
+   CONFIG-L1 (valid by Theorem A): max TV(Q_t, P_t) = 5.0e-16
+   simultaneous CONFIG-MINMH: ticks breaking outflow bound = 11/24 (largest excess 3.575e-02)
+   I3-LITERAL (independent proposals + relative-odds collisions): max TV(Q_t, P_t) = 0.3559  (one-body proposal outflow excess 0.0e+00)
+   I3-LITERAL from the exact odds, one tick: max joint TV = 0.3934; max one-body (per-record) TV = 0.1162
+[two records, random linked state] records=2, configs=15, ticks=24; amplitude needing a 2-site move = 0.0e+00
+   CONFIG-L1 (valid by Theorem A): max TV(Q_t, P_t) = 1.5e-15
+   simultaneous CONFIG-MINMH: ticks breaking outflow bound = 17/24 (largest excess 3.612e-02)
+   I3-LITERAL (independent proposals + relative-odds collisions): max TV(Q_t, P_t) = 0.4797  (one-body proposal outflow excess 0.0e+00)
+   I3-LITERAL from the exact odds, one tick: max joint TV = 0.4961; max one-body (per-record) TV = 0.0539
+[three records, random linked state] records=3, configs=20, ticks=24; amplitude needing a 2-site move = 0.0e+00
+   CONFIG-L1 (valid by Theorem A): max TV(Q_t, P_t) = 6.5e-16
+   simultaneous CONFIG-MINMH: ticks breaking outflow bound = 24/24 (largest excess 3.544e-02)
+   I3-LITERAL (independent proposals + relative-odds collisions): max TV(Q_t, P_t) = 0.4248  (one-body proposal outflow excess 0.0e+00)
+   I3-LITERAL from the exact odds, one tick: max joint TV = 0.4240; max one-body (per-record) TV = 0.0530
+===== t7_no_signalling.py =====
+400 random trials (linked Psi, random gates; two settings at A)
+  (1) max change of B's single-tick odds with A's setting          = 1.7e-15
+      max change of B's conditional move odds (SEQ-AVG, from LL)    = 0.482
+  (2) max change of B's two-tick statistics g(b,b') with A's setting:
+      MIN-MH      : 2.279e-01  (rule valid in 123/400 trials for both settings)
+      L1          : 2.423e-01
+      SEQ-A-first : 3.235e-01
+      SEQ-B-first : 2.220e-16
+      SEQ-AVG     : 1.618e-01
+      MH-direct   : nan  (pi_MH >= 0 in 0/400 trials for both settings)
+  (3) trials where SOME equivariant coupling has two-tick no-signalling both ways: 400/400
+===== t7b_no_signalling_nn.py =====
+200 random instances (linked Psi on 16 configurations, two settings each side)
+  (NS)  two-tick no-signalling both ways achievable : 200/200
+  (LOC) each record's two-tick statistics = its own minimal bond rule : 0/200
+===== t8_lemma_classification.py =====
+N=5: {'pairs': 37, 'not-converged': 2, 'shift-right': 1}
+N=6: {'pairs': 39, 'shift-right': 1}
+N=7: {'not-converged': 1, 'pairs': 38, 'shift-left': 1}
+N=8: {'pairs': 36, 'not-converged': 2, 'shift-left': 1, 'shift-right': 1}
+===== t9_continuum_limit.py =====
+tau=1e-01: max|J_MH/tau - J_cont| on bonds = 1.45e-01; max|J_MH| beyond nearest neighbours = 7.02e-04
+tau=1e-02: max|J_MH/tau - J_cont| on bonds = 1.46e-02; max|J_MH| beyond nearest neighbours = 7.02e-07
+tau=1e-03: max|J_MH/tau - J_cont| on bonds = 1.46e-03; max|J_MH| beyond nearest neighbours = 7.01e-10

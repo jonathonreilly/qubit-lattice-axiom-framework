@@ -1,0 +1,11 @@
+theta=0.3000 s=0.0873: record E[x^2]: formula vs exact chain max |diff| = 8.2e-13; E[x^2]/T at T=400: 0.0957 (s/(1-s) = 0.0957); mean drift at T=400: 0.0478 (limit s/(2(1-s)) = 0.0478)
+      unrecorded excitation <x^2>/t^2 at t=100,200,400: 0.0447, 0.0447, 0.0447;  record <x^2>/t: 0.0956, 0.0957, 0.0957
+theta=0.6000 s=0.3188: record E[x^2]: formula vs exact chain max |diff| = 4.1e-12; E[x^2]/T at T=400: 0.4678 (s/(1-s) = 0.4680); mean drift at T=400: 0.2340 (limit s/(2(1-s)) = 0.2340)
+      unrecorded excitation <x^2>/t^2 at t=100,200,400: 0.1747, 0.1747, 0.1747;  record <x^2>/t: 0.4669, 0.4675, 0.4678
+theta=0.7854 s=0.5000: record E[x^2]: formula vs exact chain max |diff| = 1.1e-13; E[x^2]/T at T=400: 0.9987 (s/(1-s) = 1.0000); mean drift at T=400: 0.5000 (limit s/(2(1-s)) = 0.5000)
+      unrecorded excitation <x^2>/t^2 at t=100,200,400: 0.2929, 0.2929, 0.2929;  record <x^2>/t: 0.9950, 0.9975, 0.9987
+theta=1.2000 s=0.8687: record E[x^2]: formula vs exact chain max |diff| = 5.7e-14; E[x^2]/T at T=400: 6.5613 (s/(1-s) = 6.6160); mean drift at T=400: 3.3080 (limit s/(2(1-s)) = 3.3080)
+      unrecorded excitation <x^2>/t^2 at t=100,200,400: 0.6377, 0.6377, 0.6376;  record <x^2>/t: 6.3971, 6.5065, 6.5613
+3D cycle theta=0.6000: E[r^2] after 20 cycles = 55.836584, 3 x 1D formula(2C) = 55.836584, |diff| = 3.6e-13, prob conserved to 6.6e-15; per tick -> 0.4653 (asymptote per tick s/(1-s) = 0.4680)
+3D cycle theta=0.7854: E[r^2] after 20 cycles = 118.500000, 3 x 1D formula(2C) = 118.500000, |diff| = 0.0e+00, prob conserved to 0.0e+00; per tick -> 0.9875 (asymptote per tick s/(1-s) = 1.0000)
+0.33 real         0.29 user         0.01 sys 74498048  maximum resident set size  exit=0

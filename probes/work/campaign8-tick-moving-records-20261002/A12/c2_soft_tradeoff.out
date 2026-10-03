@@ -1,0 +1,29 @@
+eps*(T,E) = least vacuum rate at recording efficiency eta >= 1/2 for excitations in [E/2, 3E/2]
+  E*T | E=0.1 : T   eps*      ln eps* | E=0.2 : T   eps*      ln eps* | E=0.4 : T   eps*      ln eps*
+    5 |     50 2.220e-03   -6.110 |     25 2.256e-03   -6.094 |     12 3.529e-03   -5.647 | 
+   10 |    100 1.326e-07  -15.836 |     50 1.423e-07  -15.765 |     25 1.776e-07  -15.544 | 
+   15 |    150 4.889e-12  -26.044 |     75 5.577e-12  -25.912 |     38 6.329e-12  -25.786 | 
+   20 |    200 8.550e-17  -36.998 |    100 6.319e-17  -37.300 |     50 3.396e-16  -35.619 | 
+   25 |    250 -1.742e-16      nan |    125 -1.609e-16      nan |     62 5.564e-17  -37.428 | 
+   30 |    300 -3.618e-16      nan |    150 -1.256e-16      nan |     75 -2.978e-17      nan | 
+E=0.1: d ln eps*/d(E T) over E*T=15..30 = +nan
+E=0.2: d ln eps*/d(E T) over E*T=15..30 = +nan
+E=0.4: d ln eps*/d(E T) over E*T=15..30 = +nan
+collapse test at fixed E*T: spread of ln eps* across E=0.1,0.2,0.4 vs what sqrt(E)*T scaling would need
+  E*T=10: ln eps* = -15.84, -15.77, -15.54  (a sqrt(E)*T law would differ by factor 2 between E=0.1 and 0.4)
+  E*T=20: ln eps* = -37.00, -37.30, -35.62  (a sqrt(E)*T law would differ by factor 2 between E=0.1 and 0.4)
+  E*T=30: ln eps* = nan, nan, nan  (a sqrt(E)*T law would differ by factor 2 between E=0.1 and 0.4)
+
+Dolph-Chebyshev centred at E (main-lobe half-width E): eps, eta_I, and -2*arccosh(sec(E/2))*(T-1)
+  E=0.1 T=  100 (E*T= 10): eps=4.074e-03 ln=   -5.50  pred -2kap(T-1)=   -9.90  eta_I=0.904
+  E=0.1 T=  200 (E*T= 20): eps=2.572e-07 ln=  -15.17  pred -2kap(T-1)=  -19.91  eta_I=0.982
+  E=0.1 T=  400 (E*T= 40): eps=7.378e-16 ln=  -34.84  pred -2kap(T-1)=  -39.92  eta_I=0.999
+  E=0.1 T=  800 (E*T= 80): eps=4.346e-33 ln=  -74.52  pred -2kap(T-1)=  -79.93  eta_I=1.000
+  E=0.2 T=   50 (E*T= 10): eps=2.225e-03 ln=   -6.11  pred -2kap(T-1)=   -9.82  eta_I=0.906
+  E=0.2 T=  100 (E*T= 20): eps=1.382e-07 ln=  -15.79  pred -2kap(T-1)=  -19.83  eta_I=0.981
+  E=0.2 T=  200 (E*T= 40): eps=3.874e-16 ln=  -35.49  pred -2kap(T-1)=  -39.87  eta_I=0.999
+  E=0.2 T=  400 (E*T= 80): eps=2.174e-33 ln=  -75.21  pred -2kap(T-1)=  -79.93  eta_I=1.000
+  E=0.4 T=   25 (E*T= 10): eps=1.277e-03 ln=   -6.66  pred -2kap(T-1)=   -9.66  eta_I=0.906
+  E=0.4 T=   50 (E*T= 20): eps=7.602e-08 ln=  -16.39  pred -2kap(T-1)=  -19.73  eta_I=0.981
+  E=0.4 T=  100 (E*T= 40): eps=1.936e-16 ln=  -36.18  pred -2kap(T-1)=  -39.87  eta_I=0.999
+  E=0.4 T=  200 (E*T= 80): eps=8.884e-34 ln=  -76.10  pred -2kap(T-1)=  -80.14  eta_I=1.000

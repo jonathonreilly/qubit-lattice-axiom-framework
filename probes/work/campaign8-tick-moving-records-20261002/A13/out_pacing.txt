@@ -1,0 +1,10 @@
+p=0.3, omega=0.2, t=200: exact V=0.18610, Monte Carlo V=0.18598 (s.e. ~0.0022); small-omega form exp(-t p(1-p) omega^2) = 0.18637
+p=0.05, omega=0.5, t=400: exact V=0.00929, Monte Carlo V=0.01000 (s.e. ~0.0022); small-omega form exp(-t p(1-p) omega^2) = 0.00865
+p=0.8, omega=0.05, t=1000: exact V=0.67032, Monte Carlo V=0.67069 (s.e. ~0.0022); small-omega form exp(-t p(1-p) omega^2) = 0.67032
+physical scale (tau_e = Planck time unless stated):
+  electron            : Mc^2/hbar = 7.763e+20 /s; t_coh = 3.08e+01 s; tau_e for 1 s coherence <= 1.66e-42 s = 3.1e+01 t_P
+  neutron             : Mc^2/hbar = 1.427e+24 /s; t_coh = 9.10e-06 s; tau_e for 1 s coherence <= 4.91e-49 s = 9.1e-06 t_P
+  100 amu atom        : Mc^2/hbar = 1.415e+26 /s; t_coh = 9.26e-10 s; tau_e for 1 s coherence <= 4.99e-53 s = 9.3e-10 t_P
+  Cs-133              : Mc^2/hbar = 1.881e+26 /s; t_coh = 5.24e-10 s; tau_e for 1 s coherence <= 2.83e-53 s = 5.2e-10 t_P
+  25,000 amu molecule : Mc^2/hbar = 3.538e+28 /s; t_coh = 1.48e-14 s; tau_e for 1 s coherence <= 7.99e-58 s = 1.5e-14 t_P
+0.14 real         0.12 user         0.01 sys 44220416  maximum resident set size  exit=0

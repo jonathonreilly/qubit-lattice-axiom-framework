@@ -1,0 +1,3 @@
+unitarity err 0.0e+00; filled modes 400 of 800
+real-space eps (Hann, T=64, m=0.3) = 6.1492e-09  (C1 k-space: 6.149e-09)
+support of w_hat: sites -63..+63 (strict cone: within T-1 = 63)

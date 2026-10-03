@@ -1,0 +1,10 @@
+theta = 0.6
+  K=0.000: phase +2.400000 (|phase|/K^2 = nan) weight/c even 1.0000 odd 1.0000 | phase +0.000000 (|phase|/K^2 = nan) weight/c even 0.0000 odd 0.0000
+  K=0.050: phase +2.399572 (|phase|/K^2 = 959.8290) weight/c even 0.9998 odd 0.9998 | phase +0.000428 (|phase|/K^2 = 0.1710) weight/c even 0.0002 odd 0.0002
+  K=0.100: phase +2.398291 (|phase|/K^2 = 239.8291) weight/c even 0.9991 odd 0.9991 | phase +0.001709 (|phase|/K^2 = 0.1709) weight/c even 0.0009 odd 0.0009
+  K=0.200: phase +2.393172 (|phase|/K^2 = 59.8293) weight/c even 0.9963 odd 0.9963 | phase +0.006828 (|phase|/K^2 = 0.1707) weight/c even 0.0037 odd 0.0037
+  K=3.042: phase +1.256448 (|phase|/K^2 = 0.1358) weight/c even 0.5206 odd 0.5206 | phase +1.143552 (|phase|/K^2 = 0.1236) weight/c even 0.4794 odd 0.4794
+  K=3.092: phase +1.228230 (|phase|/K^2 = 0.1285) weight/c even 0.5103 odd 0.5103 | phase +1.171770 (|phase|/K^2 = 0.1226) weight/c even 0.4897 odd 0.4897
+  K=3.142: phase +1.200000 (|phase|/K^2 = 0.1216) weight/c even 0.5000 odd 0.5000 | phase +1.200000 (|phase|/K^2 = 0.1216) weight/c even 0.4858 odd 0.5142
+  predicted: soft-branch coefficient tan(th)/4 per round = 0.1710 (from cos w = cos^2 th - sin^2 th cos K);  crossing phase 2 th = 1.2000
+0.06 real         0.04 user         0.01 sys 27344896  maximum resident set size  exit=0

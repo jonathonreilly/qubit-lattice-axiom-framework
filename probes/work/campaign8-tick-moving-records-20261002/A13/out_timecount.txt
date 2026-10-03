@@ -1,0 +1,13 @@
+(a) quiet emptiness, L=16, u=0.2, s=0.5: records at start 797, at end 797 (distinct records constant)
+    t=500: C2 per site mean/t = 0.07831 (s u(1-u) with realized u: 0.07836); min C2 over sites = 23, max = 58; C1 total = 0
+    t=1000: C2 per site mean/t = 0.07833 (s u(1-u) with realized u: 0.07836); min C2 over sites = 52, max = 105; C1 total = 0
+    t=2000: C2 per site mean/t = 0.07834 (s u(1-u) with realized u: 0.07836); min C2 over sites = 116, max = 191; C1 total = 0
+    t=3000: C2 per site mean/t = 0.07837 (s u(1-u) with realized u: 0.07836); min C2 over sites = 191, max = 283; C1 total = 0
+    sites with an arrival during ticks 2001-3000: 1.0000
+(b) noisy emptiness p=0.01 (illustration only): rho0=0.1953
+    t=500: density=0.99561; C1 per site mean = 0.8003 (bound 1-rho0 = 0.8047); C2 per site mean = 24.228
+    t=1000: density=1.00000; C1 per site mean = 0.8047 (bound 1-rho0 = 0.8047); C2 per site mean = 24.440
+    t=2000: density=1.00000; C1 per site mean = 0.8047 (bound 1-rho0 = 0.8047); C2 per site mean = 24.440
+    t=3000: density=1.00000; C1 per site mean = 0.8047 (bound 1-rho0 = 0.8047); C2 per site mean = 24.440
+    events per site during ticks 2001-3000: 0.00e+00 (frozen: time stops everywhere)
+0.39 real         0.25 user         0.02 sys 34717696  maximum resident set size  exit=0

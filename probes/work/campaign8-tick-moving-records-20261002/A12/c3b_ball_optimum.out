@@ -1,0 +1,9 @@
+L=32: ball up to R=7 has 1419 sites; hermiticity err 1.4e-16
+  R  sites  eps_opt (lambda_min) #eig<1e-6  eps_A9 (cut P+e0)
+  1      7             1.263e-02         0          1.279e-02
+  2     33             3.726e-04         0          1.279e-02   d ln eps_opt/dR = -3.52
+  3    123             7.717e-06         0          2.418e-03   d ln eps_opt/dR = -3.88
+  4    257             6.289e-08         3          1.370e-03   d ln eps_opt/dR = -4.81
+  5    515             7.439e-10        25          6.791e-04   d ln eps_opt/dR = -4.44
+  6    925             7.328e-12       107          3.712e-04   d ln eps_opt/dR = -4.62
+  7   1419             6.727e-14       210          2.376e-04   d ln eps_opt/dR = -4.69

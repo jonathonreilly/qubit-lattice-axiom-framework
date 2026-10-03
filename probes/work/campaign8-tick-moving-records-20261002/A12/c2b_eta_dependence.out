@@ -1,0 +1,4 @@
+eta0=0.1: E=0.1: ln eps* at ET=4,8,12 =   -9.15  -17.96  -26.95; c = 2.23 | E=0.2: ln eps* at ET=4,8,12 =   -9.07  -17.85  -26.79; c = 2.21
+eta0=0.5: E=0.1: ln eps* at ET=4,8,12 =   -4.14  -11.88  -19.87; c = 1.97 | E=0.2: ln eps* at ET=4,8,12 =   -4.13  -11.85  -19.77; c = 1.96
+eta0=0.9: E=0.1: ln eps* at ET=4,8,12 =     nan     nan  -13.87; c = nan | E=0.2: ln eps* at ET=4,8,12 =     nan     nan  -13.83; c = nan
+eta0=0.99: E=0.1: ln eps* at ET=4,8,12 =     nan     nan     nan; c = nan | E=0.2: ln eps* at ET=4,8,12 =     nan     nan     nan; c = nan

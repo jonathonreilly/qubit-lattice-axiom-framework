@@ -476,3 +476,131 @@ Two readings of a move, R1 and R3, behave very differently.
 - On a 24×24 torus the bulk is the identity.
 - Around an s×s locked block (s = 1–4), 2s+1 sites move as ONE orbit with winding −1 (right-handed) and +1 (mirror).
 - No site farther than one site from the block moves.
+
+## 22:55 (real) A13 (assembled model) LANDED → c8/A13/REPORT.md (+ toy1d_assembled.py, walks.py, timecount.py, pacing_noise.py, bands_weight.py)
+
+**The assembled model, M1–M13**
+- **Change:** strict pair steps G(θ) = cos θ − i sin θ·SWAP on a cycling round of pairings (A10).
+- **Vacuum:** the aligned emptiness |n⟩^⊗, exactly quiet. The round fixes ONLY aligned states (EXACT).
+- **Formation:**
+  - chance c·⟨P_singlet⟩ on record-free pairs;
+  - post-update lock odds;
+  - √(1−F) no-record update;
+  - menus set by records.
+- **Records:** relocate by re-forming at the empty partner (option A), so they are readable every tick.
+- **Interference:** stays in unrecorded possibilities (option B).
+- **Optional held status (M13):** gives swallowing clumps.
+
+**Consistency (EXACT by construction, CHECKED in 1D)**
+- (C): branch law = |G|² chain to 4.4e-16.
+- (L): one-site reach, strict cone.
+- (NS): B's 4-tick history moves with A's choice by TV ≤ 3.2e-16.
+  - Controls without the no-record update: 2.6e-3 to 3.3e-2.
+  - Product rule: 2e-3 to 1.45e-2.
+  - Cone control: 3.0e-3 once the cone reaches B.
+- Quiet vacuum: rate exactly 0, with no breeding.
+- One record per site; permanence as relocation (count preserved in every branch).
+
+**Time (EXACT)**
+- Distinct records are bounded (≤ 1−ρ0 per site).
+- Formation events, relocations included, are unbounded where records move: rate s·u(1−u), CHECKED 0.07837 vs 0.07836.
+- Readable accumulated time in a fixed region is ≤ |R|.
+- The round tick is an opportunity, global or local only by convention. The EXPERIENCED tick is the local, event-paced formation count.
+- Time stops in full AND in empty regions, and runs fastest at half filling.
+
+**Two kinds of things**
+- Readable records are persistent random walkers (dust): no momentum, E[x²] → sT/(1−s), no interference.
+- Unrecorded possibilities are ballistic, interfere, and are Lorentz-like at low speed.
+- Tracks are stationary fresh records formed from unrecorded movers.
+
+**PACING FORK (new)**
+- If the change advances every round, only record clocks slow: non-universal.
+- If the change waits for local events, slowing is universal, but random pacing dephases heavy superpositions. Visibility is |1−p+pe^{iω}|^{2t}, giving t_coh ≈ ħ²/(M²c⁴τ_e).
+- Coordinator arithmetic at τ_e = t_P:
+
+| Object | t_coh |
+|---|---|
+| electron | 31 s |
+| neutron | 9.3 μs |
+| 100 amu | 0.93 ns |
+| 25 kDa | 15 fs |
+
+- Real interferometers are far longer (comparator), so event pacing needs ~1e9 noise suppression or sub-Planck steps.
+
+**Other constraints**
+- Formation scale c ≲ 1e-43 at Planck ticks for 1 s of interference (ARGUED).
+- Failures: chirality doubled; β = ½, γ = 0; no waves; weakness unnatural; records carry no momentum.
+
+**Owner decisions D1–D8**
+1. May records move?
+2. Readable every step?
+3. Stepped round?
+4. Which emptiness?
+5. What time counts?
+6. Does change wait for events?
+7. Strict reach?
+8. Held status?
+
+**Budget note:** the first toy run peaked at 497 MB for ~5 s, replaced by a smaller run.
+
+## 23:05 (real) A14 (spatial sector / light bending) LANDED → c8/A14/REPORT.md (+ g1d/w2d/s3d/d2d scripts)
+
+**Event pacing alone (OR reading).** n = 1/N gives HALF the GR bending and delay: γ = 0 at every order (EXACT eikonal). Two caveats:
+- It needs the ripple cone to sit at zero vacuum-relative quasi-energy. A10's cone sits at an offset relative to the all-0 reference, which gives colour dependence or repulsion.
+- Random event timing adds noise.
+
+**Static records as walls: FAIL.**
+- Records pin, so ⟨a|h|a⟩ depends on content (EXACT lemma). That brings masses, colour dependence, and loss Γ/|δω| ≈ 1.2–2.6.
+- Near a clump the long-range wall population is the wanderers, and they are DEPLETED. Ripples are therefore faster there: the wrong sign, and only O(u∞) in size.
+- The crushed-ice shift −Cap₁·ρ (Cap₁ = 3.957) is CHECKED.
+- New cross-constraint: if wanderers pin light-like ripples, the photon-mass bound needs u∞ ≲ 1e-47 to 1e-92 per Planck site.
+
+**Idle sites as walls (AND reading): first-order SUCCESS as a named conditional.**
+- The rule: a site with no event in its neighbourhood on a tick holds its possibilities. A two-site step then needs events at both ends in one tick.
+- Transport goes as N² while one-site clocks go as N. So n = 1/N² = 1 − 2Φ + …, i.e. γ = 1. EXACT eikonal; CHECKED drift ratio AND/OR = 1.984.
+- It NEEDS:
+  - a GLOBAL coincidence tick (local N-paced ticks give γ = 0);
+  - no one-ended steps;
+  - dilute activity;
+  - no triangles;
+  - species with one-site rest energy and two-site motion (A10's masses are two-site, which does not fit).
+- β stays ½ (EXACT, MF), so the perihelion comes out 7/6 of GR (Mercury fails).
+- A fresh/spent exchange with a ratio clock would give β = 1, but no ingredient supplies it.
+
+**Owner-relevant.** In this toy, the owner's "set tick" (a global beat) has a POSITIVE role: the coincidence window for AND gating, which is what gives full light bending.
+
+**Coordinator check (EXACT by hand).** For n = N^{−k} with N = 1 − U, n − 1 ≈ kU, so the bending ratio AND/OR = 2 at first order. This matches the measured 1.984.
+
+## 23:12 (real) A15 (local beats and moving records) LANDED → c8/A15/REPORT.md (+ seam/selftimed/rate/anglelapse scripts)
+
+**Rigid local clocks.**
+- Theorem A (EXACT): under the handshake rule, a bond whose two ends disagree in phase NEVER acts, for any angle or geometry.
+- So every disagreement is a perfect mirror: each side evolves as if the other were recorded ("phantom lock", CHECKED as an exact permutation equality).
+- In 2D A11 cycles the wall carries two counter-propagating channels with net 0.
+- Transmission needs one of two things:
+  - a second gate at the seam within one sub-step, which breaks the cone there (T 0.64–1.00);
+  - unrecorded randomness, which destroys coherence (T = 2/9 at full swap).
+- Rate differences:
+  - commensurate 2:1 steps only: they refract, totally reflect half the fast band, and transmit 0.5000 at full swap (CHECKED);
+  - smooth gradients become opaque stacks of walls (T 0.021 / 0.157).
+
+**Waiting (self-timed) local clocks.**
+- Seams heal: records move exactly as under one global beat (T = 1 − 2e-10).
+- Theorem B (EXACT): rates lock, |c(x) − c(y)| ≤ 2p. No sustained rate differences, and a slow region throttles everything.
+- Theorem C (EXACT): a waiting loop freezes the whole connected grid. Random initial phases deadlock in 40/40 runs (2D/3D).
+
+**Event-paced, set by records.** C and NS hold; TV is 2.7e-16. Pacing by uncut possibilities signals (0.257, 0.096). The E1 variant stays ballistic; E2/E3 become diffusive.
+
+**ANGLE LAPSE (S14, CHECKED).**
+- Setup: one shared beat, with the gate angle (change per beat) set by records and varying in space.
+- Smooth lapse ramps transmit 1.0000. Sharp steps transmit 0.984–0.992.
+- θ_xy = θ0·N realizes A8's ΣN(x)h_x deterministically.
+
+**Conclusion (ARGUED as a package).**
+- Moving records need a beat that is SHARED in every readable respect (equal rates, no waiting loops), but no master clock.
+- Neighbourhood-dependent time (gravity) must live in HOW MUCH CHANGE PER BEAT (set by records), not in HOW OFTEN the beat comes.
+- Real physics: sustained redshift with no reflection of light at gradients contradicts any beat-rate lapse in these toys. The angle lapse survives.
+
+**Coordinator note.**
+- Theorem A logic checked by hand: each bond appears in exactly one layer per period, so phase-mismatched ends never coincide.
+- The deterministic angle lapse also removes A13's random-pacing dephasing. A17 is examining this.

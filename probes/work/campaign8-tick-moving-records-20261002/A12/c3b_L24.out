@@ -1,0 +1,7 @@
+L=24: ball up to R=5 has 515 sites; hermiticity err 1.5e-16
+  R  sites  eps_opt (lambda_min) #eig<1e-6  eps_A9 (cut P+e0)
+  1      7             1.263e-02         0          1.279e-02
+  2     33             3.714e-04         0          1.279e-02   d ln eps_opt/dR = -3.53
+  3    123             7.556e-06         0          2.413e-03   d ln eps_opt/dR = -3.90
+  4    257             5.799e-08         3          1.364e-03   d ln eps_opt/dR = -4.87
+  5    515             6.145e-10        25          6.721e-04   d ln eps_opt/dR = -4.55

@@ -1,0 +1,9 @@
+T= 16 capture Q=0.5  : P(form|vac)=1.395e-11  P(form|matched particle)=0.4952  ratio=2.816e-11  single-mode eps=5.218e-06  max angle=0.397
+T= 16 capture Q=0.9  : P(form|vac)=2.510e-11  P(form|matched particle)=0.8171  ratio=3.072e-11  single-mode eps=8.104e-05  max angle=0.699
+T= 16 capture Q=0.99 : P(form|vac)=2.761e-11  P(form|matched particle)=0.7241  ratio=3.813e-11  single-mode eps=5.309e-04  max angle=0.930
+T= 32 capture Q=0.5  : P(form|vac)=4.418e-17  P(form|matched particle)=0.4952  ratio=8.922e-17  single-mode eps=3.095e-08  max angle=0.336
+T= 32 capture Q=0.9  : P(form|vac)=5.658e-17  P(form|matched particle)=0.8151  ratio=6.942e-17  single-mode eps=2.025e-06  max angle=0.593
+T= 32 capture Q=0.99 : P(form|vac)=1.388e-16  P(form|matched particle)=0.7160  ratio=1.938e-16  single-mode eps=2.736e-05  max angle=0.800
+T= 48 capture Q=0.5  : P(form|vac)=1.857e-17  P(form|matched particle)=0.4951  ratio=3.751e-17  single-mode eps=7.551e-10  max angle=0.304
+T= 48 capture Q=0.9  : P(form|vac)=6.842e-17  P(form|matched particle)=0.8143  ratio=8.402e-17  single-mode eps=1.327e-07  max angle=0.542
+T= 48 capture Q=0.99 : P(form|vac)=6.018e-17  P(form|matched particle)=0.7131  ratio=8.440e-17  single-mode eps=3.281e-06  max angle=0.730

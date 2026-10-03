@@ -1,0 +1,7 @@
+weight(|E|<0.05) = 1.697e-05  vs (4/(3 pi^2)) Ec^3 = 1.689e-05
+weight(|E|<0.1) = 1.357e-04  vs (4/(3 pi^2)) Ec^3 = 1.351e-04
+weight(|E|<0.2) = 1.094e-03  vs (4/(3 pi^2)) Ec^3 = 1.081e-03
+R= 6: eps_A9 = 3.750e-04 equals the weight of states with |E| < 0.1402 = 0.841/R
+R= 8: eps_A9 = 1.738e-04 equals the weight of states with |E| < 0.1086 = 0.869/R
+R=12: eps_A9 = 4.920e-05 equals the weight of states with |E| < 0.0713 = 0.856/R
+R=16: eps_A9 = 2.054e-05 equals the weight of states with |E| < 0.0533 = 0.853/R

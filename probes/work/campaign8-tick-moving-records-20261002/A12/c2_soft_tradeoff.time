@@ -1,0 +1,24 @@
+c2_soft_tradeoff.py:76: RuntimeWarning: invalid value encountered in log
+  line += f"{T:6d} {eps:9.3e} {np.log(eps):8.3f} | "
+c2_soft_tradeoff.py:79: RuntimeWarning: invalid value encountered in log
+  x = np.array([5, 10, 15, 20, 25, 30], float); y = np.log([res[(int(v), E)] for v in x])
+c2_soft_tradeoff.py:84: RuntimeWarning: invalid value encountered in log
+  ys = [np.log(res[(ET, E)]) for E in (0.1, 0.2, 0.4)]
+        1.51 real         1.37 user         0.04 sys
+            62865408  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+                8814  page reclaims
+                 323  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 380  voluntary context switches
+                1321  involuntary context switches
+         16239366874  instructions retired
+          4716113059  cycles elapsed
+            51200456  peak memory footprint

@@ -1,0 +1,41 @@
+N_age = 8.079e+60 ticks; per-tick bounds: age (A4): 1.24e-61, 1/r to 1 AU (A6): 9.72e-94, 1/r to Hubble (A6): 1.16e-123
+
+1 GeV: E = 8.19e-20 rad/tick
+   age (A4)             c=1: T = 1.12e+21 ticks = 6.04e-23 s, reach 1.81e-14 m, E*T = 91.8 rad = 14.6 periods, per-window eps_w = 1.4e-40
+   age (A4)             c=2: T = 5.64e+20 ticks = 3.04e-23 s, reach 9.12e-15 m, E*T = 46.2 rad = 7.4 periods, per-window eps_w = 7.0e-41
+   1/r to 1 AU (A6)     c=1: T = 2.02e+21 ticks = 1.09e-22 s, reach 3.26e-14 m, E*T = 165.1 rad = 26.3 periods, per-window eps_w = 2.0e-72
+   1/r to 1 AU (A6)     c=2: T = 1.01e+21 ticks = 5.46e-23 s, reach 1.64e-14 m, E*T = 82.9 rad = 13.2 periods, per-window eps_w = 9.8e-73
+   1/r to Hubble (A6)   c=1: T = 2.85e+21 ticks = 1.54e-22 s, reach 4.61e-14 m, E*T = 233.7 rad = 37.2 periods, per-window eps_w = 3.3e-102
+   1/r to Hubble (A6)   c=2: T = 1.43e+21 ticks = 7.71e-23 s, reach 2.31e-14 m, E*T = 117.2 rad = 18.6 periods, per-window eps_w = 1.7e-102
+
+1 MeV: E = 8.19e-23 rad/tick
+   age (A4)             c=1: T = 1.04e+24 ticks = 5.59e-20 s, reach 1.68e-11 m, E*T = 84.9 rad = 13.5 periods, per-window eps_w = 1.3e-37
+   age (A4)             c=2: T = 5.23e+23 ticks = 2.82e-20 s, reach 8.45e-12 m, E*T = 42.8 rad = 6.8 periods, per-window eps_w = 6.5e-38
+   1/r to 1 AU (A6)     c=1: T = 1.93e+24 ticks = 1.04e-19 s, reach 3.12e-11 m, E*T = 158.2 rad = 25.2 periods, per-window eps_w = 1.9e-69
+   1/r to 1 AU (A6)     c=2: T = 9.70e+23 ticks = 5.23e-20 s, reach 1.57e-11 m, E*T = 79.5 rad = 12.6 periods, per-window eps_w = 9.4e-70
+   1/r to Hubble (A6)   c=1: T = 2.77e+24 ticks = 1.49e-19 s, reach 4.47e-11 m, E*T = 226.8 rad = 36.1 periods, per-window eps_w = 3.2e-99
+   1/r to Hubble (A6)   c=2: T = 1.39e+24 ticks = 7.49e-20 s, reach 2.24e-11 m, E*T = 113.7 rad = 18.1 periods, per-window eps_w = 1.6e-99
+
+1 eV (optical): E = 8.19e-29 rad/tick
+   age (A4)             c=1: T = 8.71e+29 ticks = 4.69e-14 s, reach 1.41e-05 m, E*T = 71.3 rad = 11.3 periods, per-window eps_w = 1.1e-31
+   age (A4)             c=2: T = 4.39e+29 ticks = 2.37e-14 s, reach 7.10e-06 m, E*T = 36.0 rad = 5.7 periods, per-window eps_w = 5.4e-32
+   1/r to 1 AU (A6)     c=1: T = 1.76e+30 ticks = 9.51e-14 s, reach 2.85e-05 m, E*T = 144.5 rad = 23.0 periods, per-window eps_w = 1.7e-63
+   1/r to 1 AU (A6)     c=2: T = 8.86e+29 ticks = 4.78e-14 s, reach 1.43e-05 m, E*T = 72.6 rad = 11.6 periods, per-window eps_w = 8.6e-64
+   1/r to Hubble (A6)   c=1: T = 2.60e+30 ticks = 1.40e-13 s, reach 4.20e-05 m, E*T = 213.0 rad = 33.9 periods, per-window eps_w = 3.0e-93
+   1/r to Hubble (A6)   c=2: T = 1.30e+30 ticks = 7.03e-14 s, reach 2.11e-05 m, E*T = 106.9 rad = 17.0 periods, per-window eps_w = 1.5e-93
+
+CMB 6e-4 eV: E = 4.91e-32 rad/tick
+   age (A4)             c=1: T = 1.30e+33 ticks = 7.02e-11 s, reach 2.10e-02 m, E*T = 64.0 rad = 10.2 periods, per-window eps_w = 1.6e-28
+   age (A4)             c=2: T = 6.58e+32 ticks = 3.55e-11 s, reach 1.06e-02 m, E*T = 32.3 rad = 5.1 periods, per-window eps_w = 8.1e-29
+   1/r to 1 AU (A6)     c=1: T = 2.79e+33 ticks = 1.50e-10 s, reach 4.51e-02 m, E*T = 137.2 rad = 21.8 periods, per-window eps_w = 2.7e-60
+   1/r to 1 AU (A6)     c=2: T = 1.40e+33 ticks = 7.56e-11 s, reach 2.27e-02 m, E*T = 68.9 rad = 11.0 periods, per-window eps_w = 1.4e-60
+   1/r to Hubble (A6)   c=1: T = 4.18e+33 ticks = 2.26e-10 s, reach 6.76e-02 m, E*T = 205.7 rad = 32.7 periods, per-window eps_w = 4.9e-90
+   1/r to Hubble (A6)   c=2: T = 2.10e+33 ticks = 1.13e-10 s, reach 3.39e-02 m, E*T = 103.2 rad = 16.4 periods, per-window eps_w = 2.4e-90
+
+1 ueV (radio): E = 8.19e-35 rad/tick
+   age (A4)             c=1: T = 7.04e+35 ticks = 3.80e-08 s, reach 1.14e+01 m, E*T = 57.7 rad = 9.2 periods, per-window eps_w = 8.7e-26
+   age (A4)             c=2: T = 3.56e+35 ticks = 1.92e-08 s, reach 5.76e+00 m, E*T = 29.2 rad = 4.6 periods, per-window eps_w = 4.4e-26
+   1/r to 1 AU (A6)     c=1: T = 1.60e+36 ticks = 8.61e-08 s, reach 2.58e+01 m, E*T = 130.8 rad = 20.8 periods, per-window eps_w = 1.6e-57
+   1/r to 1 AU (A6)     c=2: T = 8.03e+35 ticks = 4.33e-08 s, reach 1.30e+01 m, E*T = 65.7 rad = 10.5 periods, per-window eps_w = 7.8e-58
+   1/r to Hubble (A6)   c=1: T = 2.43e+36 ticks = 1.31e-07 s, reach 3.93e+01 m, E*T = 199.3 rad = 31.7 periods, per-window eps_w = 2.8e-87
+   1/r to Hubble (A6)   c=2: T = 1.22e+36 ticks = 6.58e-08 s, reach 1.97e+01 m, E*T = 100.0 rad = 15.9 periods, per-window eps_w = 1.4e-87

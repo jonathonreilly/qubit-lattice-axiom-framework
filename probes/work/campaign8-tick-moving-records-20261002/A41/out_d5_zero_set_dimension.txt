@@ -1,0 +1,4 @@
+theta=0.5000 pi: |C H6 C^-1 + H6| at a random k = 2.2e-16; zeros found 12/12; zero-mode counts [2]; rank of first-order conditions [2, 3] -> local dimension of the zero set [0, 1]
+theta=0.0000 pi: |C H6 C^-1 + H6| at a random k = 2.6e+00; zeros found 12/12; zero-mode counts [2]; rank of first-order conditions [1] -> local dimension of the zero set [2]
+theta=0.2500 pi: |C H6 C^-1 + H6| at a random k = 2.4e+00; zeros found 12/12; zero-mode counts [1, 2]; rank of first-order conditions [1, 2] -> local dimension of the zero set [1, 2]
+theta=0.4375 pi: |C H6 C^-1 + H6| at a random k = 6.6e-01; zeros found 12/12; zero-mode counts [1, 2]; rank of first-order conditions [1, 2] -> local dimension of the zero set [1, 2]

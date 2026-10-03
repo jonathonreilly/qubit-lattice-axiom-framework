@@ -1,0 +1,54 @@
+(A) zero flux theta=0.0625 pi: lower-pair touchings found from 40 starts: 24 distinct
+    k/pi = [0.64439 0.64439 0.64439] E = -0.737801 (third band +1.4756): slopes q=1e-5 band0 -1.9211..-0.1492, band1 0.1482..1.9161; smallest |slope| 1.48e-01; slope(q=1e-3) - slope(q=1e-5) max 3.9e-04
+      splitting along the softest of 300 directions at q=1e-4,1e-3,1e-2: ['1.36e-04', '1.36e-03', '1.36e-02']
+      splitting along [111]: ['2.07e-04', '2.07e-03', '2.07e-02']
+      splitting along [1-10]: ['1.36e-04', '1.36e-03', '1.36e-02']
+      splitting along [11-2]: ['1.36e-04', '1.36e-03', '1.37e-02']
+    k/pi = [-0.14439  0.14439 -0.85561] E = -0.737801 (third band +1.4756): slopes q=1e-5 band0 -1.9249..-0.1469, band1 0.1474..1.9274; smallest |slope| 1.47e-01; slope(q=1e-3) - slope(q=1e-5) max 3.9e-04
+      splitting along the softest of 300 directions at q=1e-4,1e-3,1e-2: ['1.36e-04', '1.36e-03', '1.36e-02']
+      splitting along [111]: ['1.46e-04', '1.46e-03', '1.46e-02']
+      splitting along [1-10]: ['1.87e-04', '1.87e-03', '1.87e-02']
+      splitting along [11-2]: ['1.55e-04', '1.55e-03', '1.55e-02']
+    k/pi = [-0.85561 -0.14439  0.14439] E = -0.737801 (third band +1.4756): slopes q=1e-5 band0 -1.9219..-0.1490, band1 0.1480..1.9170; smallest |slope| 1.48e-01; slope(q=1e-3) - slope(q=1e-5) max 3.9e-04
+      splitting along the softest of 300 directions at q=1e-4,1e-3,1e-2: ['1.36e-04', '1.36e-03', '1.37e-02']
+      splitting along [111]: ['1.46e-04', '1.46e-03', '1.46e-02']
+      splitting along [1-10]: ['1.87e-04', '1.87e-03', '1.87e-02']
+      splitting along [11-2]: ['1.55e-04', '1.55e-03', '1.55e-02']
+    k/pi = [ 0.14439 -0.85561 -0.14439] E = -0.737801 (third band +1.4756): slopes q=1e-5 band0 -1.9218..-0.1471, band1 0.1480..1.9264; smallest |slope| 1.47e-01; slope(q=1e-3) - slope(q=1e-5) max 3.9e-04
+      splitting along the softest of 300 directions at q=1e-4,1e-3,1e-2: ['1.36e-04', '1.36e-03', '1.36e-02']
+      splitting along [111]: ['1.46e-04', '1.46e-03', '1.46e-02']
+      splitting along [1-10]: ['1.36e-04', '1.36e-03', '1.37e-02']
+      splitting along [11-2]: ['2.01e-04', '2.01e-03', '2.01e-02']
+(A) zero flux theta=0.2500 pi: lower-pair touchings found from 40 starts: 23 distinct
+    k/pi = [-0.25 -0.25  0.75] E = -1.414214 (third band +2.8284): slopes q=1e-5 band0 -1.2316..-0.3830, band1 0.3830..1.2316; smallest |slope| 3.83e-01; slope(q=1e-3) - slope(q=1e-5) max 3.7e-04
+      splitting along the softest of 300 directions at q=1e-4,1e-3,1e-2: ['7.66e-05', '7.66e-04', '7.66e-03']
+      splitting along [111]: ['9.43e-05', '9.43e-04', '9.43e-03']
+      splitting along [1-10]: ['2.00e-04', '2.00e-03', '2.00e-02']
+      splitting along [11-2]: ['2.40e-04', '2.40e-03', '2.40e-02']
+    k/pi = [-0.25  0.75 -0.25] E = -1.414214 (third band +2.8284): slopes q=1e-5 band0 -1.2311..-0.3827, band1 0.3827..1.2311; smallest |slope| 3.83e-01; slope(q=1e-3) - slope(q=1e-5) max 3.7e-04
+      splitting along the softest of 300 directions at q=1e-4,1e-3,1e-2: ['7.65e-05', '7.65e-04', '7.66e-03']
+      splitting along [111]: ['9.43e-05', '9.43e-04', '9.43e-03']
+      splitting along [1-10]: ['2.31e-04', '2.31e-03', '2.31e-02']
+      splitting along [11-2]: ['2.11e-04', '2.11e-03', '2.11e-02']
+    k/pi = [ 0.75 -0.25 -0.25] E = -1.414214 (third band +2.8284): slopes q=1e-5 band0 -1.2329..-0.3958, band1 0.3958..1.2329; smallest |slope| 3.96e-01; slope(q=1e-3) - slope(q=1e-5) max 3.7e-04
+      splitting along the softest of 300 directions at q=1e-4,1e-3,1e-2: ['7.92e-05', '7.92e-04', '7.94e-03']
+      splitting along [111]: ['9.43e-05', '9.43e-04', '9.43e-03']
+      splitting along [1-10]: ['2.31e-04', '2.31e-03', '2.31e-02']
+      splitting along [11-2]: ['2.11e-04', '2.11e-03', '2.11e-02']
+    k/pi = [-0.75 -0.75  0.75] E = -1.414214 (third band +2.8284): slopes q=1e-5 band0 -1.2297..-0.3889, band1 0.3889..1.2297; smallest |slope| 3.89e-01; slope(q=1e-3) - slope(q=1e-5) max 3.7e-04
+      splitting along the softest of 300 directions at q=1e-4,1e-3,1e-2: ['7.78e-05', '7.78e-04', '7.78e-03']
+      splitting along [111]: ['2.11e-04', '2.11e-03', '2.11e-02']
+      splitting along [1-10]: ['2.31e-04', '2.31e-03', '2.31e-02']
+      splitting along [11-2]: ['9.43e-05', '9.43e-04', '9.49e-03']
+(B) pi flux theta=pi/2: det H6 max on grid -7.37e-01 (never positive); min|E| on grid 1.44e-01
+    zeros from 60 starts: 60 converged, 60 distinct (mod 2pi)
+    k/pi = [ 0.      -0.5      0.38416]: zero modes of H6 2 (so 4 of the 12 bands at E=0); other |E| min 2.4495; slopes of the 4 bands: per band min..max -1.358..-0.074; -1.358..-0.074; 0.074..1.358; 0.074..1.358; q=1e-3 vs 1e-5 max diff 2.8e-04
+    k/pi = [ 0.38416  0.      -0.5    ]: zero modes of H6 2 (so 4 of the 12 bands at E=0); other |E| min 2.4495; slopes of the 4 bands: per band min..max -1.369..-0.123; -1.369..-0.123; 0.123..1.369; 0.123..1.369; q=1e-3 vs 1e-5 max diff 2.8e-04
+    k/pi = [-1.       0.5      0.28855]: zero modes of H6 2 (so 4 of the 12 bands at E=0); other |E| min 2.4495; slopes of the 4 bands: per band min..max -1.408..-0.072; -1.408..-0.072; 0.072..1.408; 0.072..1.408; q=1e-3 vs 1e-5 max diff 2.2e-04
+    k/pi = [-0.75098 -1.      -0.5    ]: zero modes of H6 2 (so 4 of the 12 bands at E=0); other |E| min 2.4495; slopes of the 4 bands: per band min..max -1.413..-0.126; -1.413..-0.126; 0.126..1.413; 0.126..1.413; q=1e-3 vs 1e-5 max diff 1.8e-04
+    k/pi = [0.5     0.41863 0.     ]: zero modes of H6 2 (so 4 of the 12 bands at E=0); other |E| min 2.4495; slopes of the 4 bands: per band min..max -1.340..-0.090; -1.340..-0.090; 0.090..1.340; 0.090..1.340; q=1e-3 vs 1e-5 max diff 2.7e-04
+    k/pi = [-0.5      0.38416 -0.     ]: zero modes of H6 2 (so 4 of the 12 bands at E=0); other |E| min 2.4495; slopes of the 4 bands: per band min..max -1.364..-0.091; -1.364..-0.091; 0.091..1.364; 0.091..1.364; q=1e-3 vs 1e-5 max diff 2.8e-04
+    around the first zero: min over 300 directions of min|E| at radius 1e-03: 7.41e-05 (linear point ~ r*slope_min; a line through it would give ~0)
+    around the first zero: min over 300 directions of min|E| at radius 1e-02: 7.42e-04 (linear point ~ r*slope_min; a line through it would give ~0)
+    around the first zero: min over 300 directions of min|E| at radius 5e-02: 3.73e-03 (linear point ~ r*slope_min; a line through it would give ~0)
+(C) pi flux theta=pi/4: 176 points on the zero set: |E| max 3.4e-15; |grad E| of the zero band 0.203..1.559 (normal slope; tangent slopes vanish by construction); next |E| min 0.116

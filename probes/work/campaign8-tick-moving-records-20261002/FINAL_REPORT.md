@@ -412,6 +412,12 @@ Possibly, but not shown: the same 8-way pattern gravity already needs can sort p
   - No region can ever be fully recorded, so your black-hole picture changes: light and gravity run through any cluster of records.
 - **Why it matters.** It bundles several of your decisions into one picture: 13 (room per place, now at every place), 17 (matter's twist, possibly from light rather than painted; not yet shown for charged matter), 21 (gravity's places never record, now share by share), 22 (rules on small groups), 24, and A39's "light invisible to records". It also touches 4 (the next-to-records rule), 8 and 27 (how records step), 16, 20, your instincts I2 and I5, Q7's recorded neighbours, and the wording of the Qubit, Record and nearest-neighbour axioms.
 
+**Follow-up on the twist from light (A41; checked by me, not hostile-reviewed).** The only charged matter that can hop through light's links while respecting the turns has three internal states that turn as it hops, and its rule has one free angle.
+- **With light's half-turn twist on every square:** perfectly round light-like cones appear at exactly one setting of that angle (same speed in every direction, checked over 300 directions). But straight lines of zero-energy states come with them, and any other setting gives the cones a gap.
+- **Without the twist:** the hop itself already makes crossings at zero energy for one setting, but they are lopsided (twice as fast along one diagonal as across it) and a flat band runs through them (exact; my check reproduced both).
+- **Always:** negative energies exist, so matter's empty state is never its lowest (exact).
+- **So** the twist-from-light route gives near-misses, not clean light. The free angle would be one more choice put in by hand.
+
 ## Your menu decision (Q7 stands)
 
 My overnight note was too strong; the reviewers caught it.

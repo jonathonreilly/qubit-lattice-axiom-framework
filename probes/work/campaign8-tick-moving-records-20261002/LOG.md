@@ -1916,3 +1916,27 @@ The coordinator saved the report from the final message.
 - **Doc (rev 35):** §12, §13 and §14 lead and list blocks replaced; §10 route sentence; summary late-results sentence (now including an A40 sentence); provenance "eight rounds"; decisions 23 and 24 appends.
 - **Local:** draft v12 (v11 saved as MORNING_DRAFT_v11_pre_A34d.md); summary; FINAL_REPORT reassembled.
 - **Errata** appended to the A38, A39 and A40 reports.
+
+## 07:09 (real) A41 (charged triplet matter through light's links, 0 vs π flux) LANDED → c8/A41/REPORT.md (+ d1–d9)
+The coordinator saved the report from the final message.
+
+**Results**
+- **The covariant charged-triplet hop family in closed form (EXACT; matches c13 to 9e-16).** M^(a) = α e₋^(a)e_aᵀ − ᾱ e_a e₋^(a)ᵀ, which lowers the spin along the hop. One real angle θ ∈ [0, π/2] matters.
+- **π flux reduces exactly** to H24 ≅ 2H6 ⊕ 2(−H6).
+- **Tr H(k) = 0 at every k (EXACT),** so negative one-particle energies always exist and the empty matter vacuum is never lowest.
+- **Zero flux.**
+  - θ = 0: H0 = √2t B(k)·S, a flat band at 0 plus 8 spin-1 triple points at (π/4)(odd)³, ANISOTROPIC with slopes (2, 1, 1)t (EXACT).
+  - θ = π/2: 8 anisotropic triple points plus zero surfaces.
+  - Interior θ: no E = 0 touching; Weyl-type points at ±E.
+- **π flux.**
+  - θ = 0: a zero-energy SURFACE, no point cones (EXACT).
+  - θ = π/2 ONLY: 16 ISOTROPIC cones at E = 0 (slope 0.9428t ≈ 2√2/3 in 300 directions; CHECKED) PLUS 12 straight zero-energy nodal lines. Off θ = π/2 the cones are gapped.
+- **Verdict (ARGUED).** No clean light-like motion in this family. The closest is π flux at the single angle θ = π/2: isotropic cones shared with nodal lines. θ is a further supplied choice.
+
+**Coordinator check** (inline; own code). θ = 0 zero-flux closed form B(k) = (cos k_z + sin k_y, cos k_x + sin k_z, cos k_y + sin k_x):
+- 8 nodes of B on (π/4)(odd)³;
+- Jacobian singular values × √2t = (2, 1, 1)t at a node. EXACT match.
+- Tr M = 0 ⇒ Tr H = 0 ⇒ negative energies wherever H ≠ 0: trivially exact.
+- NOT re-run: the π-flux cone census or the nodal lines.
+
+**Status.** Coordinator-checked, NOT hostile-reviewed; added to the doc as a follow-up note under §14.

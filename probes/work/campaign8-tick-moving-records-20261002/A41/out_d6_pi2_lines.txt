@@ -1,0 +1,4 @@
+30 zeros: 26 with first-order rank 2 (s3 < 1e-6), 4 with rank 3 (s3 0.94..0.94)
+  rank-2 zeros: |E|min along the null direction at delta=1e-3, 1e-2: max 7.2e-16, 5.4e-16; along the other two directions: min 9.4e-04, 9.4e-03
+  rank-3 zeros: |E|min along the weakest direction at delta=1e-3, 1e-2: min 9.4e-04, 9.4e-03 (linear -> isolated point)
+  tracked a line from a rank-2 zero at k/pi [ 0.3485 -1.     -0.5   ]: 150 steps of 0.02, max |E|min on it 6.4e-16; end k/pi [ 1.3034 -1.     -0.5   ]; extent /pi [0.955 0.    0.   ]

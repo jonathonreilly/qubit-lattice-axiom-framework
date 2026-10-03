@@ -1,0 +1,8 @@
+(i) pi flux theta=pi/2: on the 24 lines k_a in {0,pi}, k_b = +-pi/2 (61 points each): 2nd smallest |E(H6)| max 7.3e-01; zero-mode counts of H6 seen [0, 2]
+    40 random-start minimizations: 40 reached |E| < 1e-9; max distance of those zeros from the line set 1.6e+00
+(ii) zero flux theta=0.0625 pi: 24 distinct lower-pair touchings; energies (count): -0.73780 (8), -0.49901 (12), -0.39018 (4); upper pair touches at k+(pi,pi,pi): max gap 9.8e-15
+    E=-0.73780 e.g. k/pi=[ 0.1444 -0.8556 -0.1444]: slopes band0 -1.922..-0.148, band1 0.148..1.921; splitting/q min 1.363 max 2.070
+    E=-0.49901 e.g. k/pi=[-0.8596  0.25    0.6404]: slopes band0 -1.827..0.092, band1 -0.116..1.827; splitting/q min 0.647 max 3.537
+    E=-0.39018 e.g. k/pi=[-0.25 -0.25 -0.25]: slopes band0 -1.961..-0.276, band1 0.276..1.961; splitting/q min 0.553 max 3.922
+(ii) zero flux theta=0.2500 pi: 21 distinct lower-pair touchings; energies (count): -1.41421 (21); upper pair touches at k+(pi,pi,pi): max gap 5.1e-15
+    E=-1.41421 e.g. k/pi=[-0.25 -0.25 -0.25]: slopes band0 -1.414..-1.000, band1 1.000..1.414; splitting/q min 2.000 max 2.828

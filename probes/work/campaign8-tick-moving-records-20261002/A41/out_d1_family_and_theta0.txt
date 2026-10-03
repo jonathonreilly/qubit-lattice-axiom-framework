@@ -1,0 +1,20 @@
+(1) closed form in c13's span: residual 8.9e-16; c13's basis in the closed form's span: residual 3.1e-16; rank of closed form pair 2
+    singular values of M^(z)(theta=0.3), t=1: [1. 1. 0.]; traces of M^(a): 0.0e+00
+    M^(z): <0|M|+1> = (0.955336-0.29552j), <-1|M|0> = (0.955336+0.29552j), other matrix elements max 0.0e+00  (theta = 0.3: amplitudes e^(-i theta), e^(+i theta) up to the basis sign)
+(2) pi flux, 200 random (k, theta): |spec H24 - (2 H6 + 2(-H6))| max 7.1e-15; |spec H12 - (H6 + (-H6))| max 5.3e-15; |spec H6(k+pi e_a) + spec H6(k)| max 4.0e-15
+    KS cell matrices P_a: max |{P_a,P_b} - 2 delta_ab| = 0; symmetric: True; Tr(P_x P_y P_z) = 0
+(3) zero flux, theta=0: |H0 - sqrt2 B.S| max 8.9e-16 (200 random k); middle band max |E| on 36^3 grid 2.4e-15; band edges -3.463804 .. 3.463804 (2 sqrt3 = 3.464102)
+    nodes B(k)=0 among the 64 points with odd multiples of pi/4: 8
+    node k/(pi/4) = [-3 -1  1]: chirality sign det J = -1; slopes sqrt2*sv(J) = [2. 1. 1.]; fast axis ~ [-1.  1. -1.]; 300 dirs, q=1e-5: lower band slope -1.9930..-1.0003, middle 9.3e-16, upper 1.0003..1.9930; q=1e-3 vs 1e-5 max diff 3.5e-04
+    node k/(pi/4) = [-3  1  3]: chirality sign det J = +1; slopes sqrt2*sv(J) = [2. 1. 1.]; fast axis ~ [-1. -1.  1.]; 300 dirs, q=1e-5: lower band slope -1.9911..-1.0000, middle 1.0e-15, upper 1.0000..1.9911; q=1e-3 vs 1e-5 max diff 3.5e-04
+    node k/(pi/4) = [-1 -1 -1]: chirality sign det J = +1; slopes sqrt2*sv(J) = [2. 1. 1.]; fast axis ~ [1. 1. 1.]; 300 dirs, q=1e-5: lower band slope -1.9891..-1.0000, middle 8.0e-16, upper 1.0000..1.9891; q=1e-3 vs 1e-5 max diff 3.5e-04
+    node k/(pi/4) = [-1  1 -3]: chirality sign det J = -1; slopes sqrt2*sv(J) = [2. 1. 1.]; fast axis ~ [-1.  1.  1.]; 300 dirs, q=1e-5: lower band slope -1.9844..-1.0000, middle 8.1e-16, upper 1.0000..1.9844; q=1e-3 vs 1e-5 max diff 3.5e-04
+    node k/(pi/4) = [ 1 -3 -1]: chirality sign det J = -1; slopes sqrt2*sv(J) = [2. 1. 1.]; fast axis ~ [-1. -1.  1.]; 300 dirs, q=1e-5: lower band slope -1.9911..-1.0000, middle 1.2e-15, upper 1.0000..1.9911; q=1e-3 vs 1e-5 max diff 3.5e-04
+    node k/(pi/4) = [ 1  3 -3]: chirality sign det J = +1; slopes sqrt2*sv(J) = [2. 1. 1.]; fast axis ~ [-1.  1. -1.]; 300 dirs, q=1e-5: lower band slope -1.9930..-1.0003, middle 8.4e-16, upper 1.0003..1.9930; q=1e-3 vs 1e-5 max diff 3.5e-04
+    node k/(pi/4) = [ 3 -3  1]: chirality sign det J = +1; slopes sqrt2*sv(J) = [2. 1. 1.]; fast axis ~ [-1.  1.  1.]; 300 dirs, q=1e-5: lower band slope -1.9844..-1.0000, middle 7.7e-16, upper 1.0000..1.9844; q=1e-3 vs 1e-5 max diff 3.5e-04
+    node k/(pi/4) = [3 3 3]: chirality sign det J = -1; slopes sqrt2*sv(J) = [2. 1. 1.]; fast axis ~ [-1. -1. -1.]; 300 dirs, q=1e-5: lower band slope -1.9891..-1.0000, middle 1.2e-15, upper 1.0000..1.9891; q=1e-3 vs 1e-5 max diff 3.5e-04
+    on the 36^3 grid, min |B| at distance > 0.3 from the 8 nodes: 0.241 (> 0: no other nodes)
+(4) pi flux, theta=0: |H6 - sqrt2 sum N_ai sigma_a S^i| max 3.1e-16; spectrum = that of sqrt2 sum_i lam_i sigma_i S^i (lam = signed singular values of N) to 4.0e-15; det N = cxcycz + sxsysz (checked)
+    det N on the 36^3 grid: min -0.994, max 0.994 -> changes sign: zero set is a surface
+    232 surface points: two smallest |E| of H6 max 2.5e-15, 2.8e-15; third smallest min 2.449
+    zero modes' slopes along the surface normal: both same sign in 1.00 of points, |slope| range 0.943..1.154; first-order formula 2sqrt2|grad detN|/(l1^2+l2^2) matches to 6.0e-07; slope along a tangent max 4.8e-06

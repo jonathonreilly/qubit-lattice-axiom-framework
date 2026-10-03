@@ -1,0 +1,22 @@
+L=4  cells=64  state (C,p) dim 960
+Q1 exact constraint algebra (0.0 = exactly zero):
+   C-layer keeps C-rows:   |div1C A| = 0.0,  |trC A| = 0.0
+   C-layer, Hamiltonian row on C: |RC A + Div D^T| = 0.0  (preserved iff D^T p = 0)
+   p-layer, momentum row:  |D^T B + (1/2) CurlV^T div1C| = 0.0  (summation by parts; so D^T p is preserved iff div1C C = 0, itself preserved by every layer)
+   p-layer leaves C (hence all C-rows and RC C) untouched by construction
+Q2 power traces j=1..15: spectrum = 1 x11 + {e^(+-i theta) x2} with cos theta = 1 - tau^2 s^2/2: max dev 2.2e-13 over 63 k
+   eigvals with |phase|>1e-5 per k: min 4, max 4  (4 = two polarizations)
+Q3 100 ticks, every layer: |C - Curl h|/|C| <= 2.5e-12; relative rows: momentum 2.0e-13, Hamiltonian 1.4e-12, C-compatibility 6.9e-15
+Q4 C-layer on Z^3 (side 8): max Manhattan reach 1, max Chebyshev 1; distinct neighbour sites read per output component: [4]
+Q4 p-layer on Z^3 (side 8): max Manhattan reach 1, max Chebyshev 1; distinct neighbour sites read per output component: [4, 6]
+Q5 every rotation (48) about every site class maps layer L_s to L_s' EXACTLY (role relabelling + pattern map): True
+   centre vertex(000) : rotations keeping the role pattern s=000: 48/48 (24/24 proper); the rest map it to another translate
+   centre face(110)   : rotations keeping the role pattern s=000: 16/48 (8/24 proper); the rest map it to another translate
+   centre face(101)   : rotations keeping the role pattern s=000: 16/48 (8/24 proper); the rest map it to another translate
+   centre face(011)   : rotations keeping the role pattern s=000: 16/48 (8/24 proper); the rest map it to another translate
+   centre edge(100)   : rotations keeping the role pattern s=000: 16/48 (8/24 proper); the rest map it to another translate
+   centre edge(010)   : rotations keeping the role pattern s=000: 16/48 (8/24 proper); the rest map it to another translate
+   centre edge(001)   : rotations keeping the role pattern s=000: 16/48 (8/24 proper); the rest map it to another translate
+   centre cube(111)   : rotations keeping the role pattern s=000: 48/48 (24/24 proper); the rest map it to another translate
+   unit translations map L_s to L_(s+e) exactly: True; patterns reached: 8 of 8 role translates
+done in 0.9s

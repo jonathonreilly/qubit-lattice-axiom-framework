@@ -1,0 +1,12 @@
+tau=0.01 rule=SW : n=1: TV(Z,X)=6.6e-11 TV(none,Z)=6.9e-17  [total prob 1.000000000000]
+tau=0.01 rule=REN: n=1: TV(Z,X)=6.3e-02 TV(none,Z)=6.3e-02  [total prob 1.000000000000]
+tau=0.02 rule=SW : n=1: TV(Z,X)=1.0e-09 TV(none,Z)=5.6e-17  [total prob 1.000000000000]
+tau=0.02 rule=REN: n=1: TV(Z,X)=6.3e-02 TV(none,Z)=6.3e-02  [total prob 1.000000000000]
+tau=0.05 rule=SW : n=1: TV(Z,X)=4.1e-08 TV(none,Z)=2.1e-14  [total prob 1.000000000000]
+tau=0.05 rule=REN: n=1: TV(Z,X)=6.2e-02 TV(none,Z)=6.2e-02  [total prob 1.000000000000]
+tau=0.1 rule=SW : n=1: TV(Z,X)=6.5e-07 TV(none,Z)=5.3e-12  [total prob 1.000000000000]
+tau=0.1 rule=REN: n=1: TV(Z,X)=6.1e-02 TV(none,Z)=6.1e-02  [total prob 1.000000000000]
+tau=0.2 rule=SW : n=1: TV(Z,X)=1.0e-05 TV(none,Z)=1.3e-09  [total prob 1.000000000000]
+tau=0.2 rule=REN: n=1: TV(Z,X)=5.5e-02 TV(none,Z)=5.5e-02  [total prob 1.000000000000]
+        0.72 real         0.66 user         0.02 sys
+            94076928  maximum resident set size

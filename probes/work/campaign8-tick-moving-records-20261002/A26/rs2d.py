@@ -151,13 +151,18 @@ def from_cells(c):
     return psi
 
 
-def packet(Lx, Ly, c0, K0, sig, th0, chi=None, upper=True, cut=1e-10, **kw):
-    """positive-band (upper=True) Gaussian packet centred at cell c0 with carrier cell momentum K0 (relative K*)"""
+T3CELL = np.kron(np.array([[0, -1j], [1j, 0]]), np.array([[0, 1], [1, 0]]))   # taste T3 = Y_x X_y (s1_span)
+
+
+def packet(Lx, Ly, c0, K0, sig, th0, chi=None, upper=True, cut=1e-10, stripe=False, taste=None, **kw):
+    """positive-band (upper=True) Gaussian packet centred at cell c0 with carrier cell momentum K0 (relative K*).
+    stripe=True: plane wave in x (K0[0] must be commensurate, 2 pi n / (Lx/2)), Gaussian only in y."""
     Lcx, Lcy = Lx // 2, Ly // 2
     cx = np.arange(Lcx)[:, None]; cy = np.arange(Lcy)[None, :]
     dxc = (cx - c0[0] + Lcx / 2) % Lcx - Lcx / 2
     dyc = (cy - c0[1] + Lcy / 2) % Lcy - Lcy / 2
-    env = np.exp(-(dxc ** 2 + dyc ** 2) / (4 * sig ** 2)) * np.exp(1j * ((np.pi + K0[0]) * cx + (np.pi + K0[1]) * cy))
+    ex2 = 0 * dxc if stripe else dxc ** 2
+    env = np.exp(-(ex2 + dyc ** 2) / (4 * sig ** 2)) * np.exp(1j * ((np.pi + K0[0]) * cx + (np.pi + K0[1]) * cy))
     chi = np.array([1, 0.3 + 0.2j, -0.4j, 0.5]) if chi is None else chi
     cells = env[:, :, None] * chi[None, None, :]
     ft = np.fft.fft2(cells, axes=(0, 1))
@@ -173,6 +178,16 @@ def packet(Lx, Ly, c0, K0, sig, th0, chi=None, upper=True, cut=1e-10, **kw):
     keep = (om > 0) if upper else (om < 0)
     Vi = np.linalg.inv(V)
     Pp = np.einsum('nij,nj,njk->nik', V, keep.astype(float), Vi)
+    if taste is not None:
+        # within the (2-dim) band subspace, keep the eigvector of P T3 P with eigenvalue sign = taste
+        for n in range(Pp.shape[0]):
+            P = 0.5 * (Pp[n] + Pp[n].conj().T)
+            Q = P @ T3CELL @ P
+            Q = 0.5 * (Q + Q.conj().T)
+            ev, EV = np.linalg.eigh(Q)
+            j = np.argmax(ev) if taste > 0 else np.argmin(ev)
+            v = EV[:, j]
+            Pp[n] = np.outer(v, v.conj())
     vecs = ft[sel]
     ft2 = np.zeros_like(ft)
     ft2[sel] = np.einsum('nij,nj->ni', Pp, vecs)

@@ -1,0 +1,26 @@
+m = 0.01 (Compton length 1/m = 100 cells), mover at K = 0 (W = m):
+   sigma_s=    0.25 sites: dE=1.5604e+00   nonrel (1/2)cot m/sigma^2=7.9997e+02   rel sqrt(2/pi)cos m/sigma=3.1914e+00   band-centre limit pi/2-m=1.5608
+   sigma_s=    0.50 sites: dE=1.3885e+00   nonrel (1/2)cot m/sigma^2=1.9999e+02   rel sqrt(2/pi)cos m/sigma=1.5957e+00   band-centre limit pi/2-m=1.5608
+   sigma_s=    1.00 sites: dE=7.8871e-01   nonrel (1/2)cot m/sigma^2=4.9998e+01   rel sqrt(2/pi)cos m/sigma=7.9784e-01   band-centre limit pi/2-m=1.5608
+   sigma_s=    2.00 sites: dE=3.9004e-01   nonrel (1/2)cot m/sigma^2=1.2500e+01   rel sqrt(2/pi)cos m/sigma=3.9892e-01   band-centre limit pi/2-m=1.5608
+   sigma_s=    4.00 sites: dE=1.9043e-01   nonrel (1/2)cot m/sigma^2=3.1249e+00   rel sqrt(2/pi)cos m/sigma=1.9946e-01   band-centre limit pi/2-m=1.5608
+   sigma_s=   10.00 sites: dE=7.1234e-02   nonrel (1/2)cot m/sigma^2=4.9998e-01   rel sqrt(2/pi)cos m/sigma=7.9784e-02   band-centre limit pi/2-m=1.5608
+   sigma_s=   30.00 sites: dE=1.9564e-02   nonrel (1/2)cot m/sigma^2=5.5554e-02   rel sqrt(2/pi)cos m/sigma=2.6595e-02   band-centre limit pi/2-m=1.5608
+   sigma_s=  100.00 sites: dE=3.5452e-03   nonrel (1/2)cot m/sigma^2=4.9998e-03   rel sqrt(2/pi)cos m/sigma=7.9784e-03   band-centre limit pi/2-m=1.5608
+   sigma_s=  300.00 sites: dE=5.1825e-04   nonrel (1/2)cot m/sigma^2=5.5554e-04   rel sqrt(2/pi)cos m/sigma=2.6595e-03   band-centre limit pi/2-m=1.5608
+   sigma_s= 1000.00 sites: dE=4.9632e-05   nonrel (1/2)cot m/sigma^2=4.9998e-05   rel sqrt(2/pi)cos m/sigma=7.9784e-04   band-centre limit pi/2-m=1.5608
+   sigma_s= 3000.00 sites: dE=5.5508e-06   nonrel (1/2)cot m/sigma^2=5.5554e-06   rel sqrt(2/pi)cos m/sigma=2.6595e-04   band-centre limit pi/2-m=1.5608
+   sigma_s=10000.00 sites: dE=4.9995e-07   nonrel (1/2)cot m/sigma^2=4.9998e-07   rel sqrt(2/pi)cos m/sigma=7.9784e-05   band-centre limit pi/2-m=1.5608
+m = 0.1 (Compton length 1/m = 10 cells), mover at K = 0 (W = m):
+   sigma_s=    0.25 sites: dE=1.4704e+00   nonrel (1/2)cot m/sigma^2=7.9733e+01   rel sqrt(2/pi)cos m/sigma=3.1756e+00   band-centre limit pi/2-m=1.4708
+   sigma_s=    0.50 sites: dE=1.3012e+00   nonrel (1/2)cot m/sigma^2=1.9933e+01   rel sqrt(2/pi)cos m/sigma=1.5878e+00   band-centre limit pi/2-m=1.4708
+   sigma_s=    1.00 sites: dE=7.0971e-01   nonrel (1/2)cot m/sigma^2=4.9833e+00   rel sqrt(2/pi)cos m/sigma=7.9390e-01   band-centre limit pi/2-m=1.4708
+   sigma_s=    2.00 sites: dE=3.2122e-01   nonrel (1/2)cot m/sigma^2=1.2458e+00   rel sqrt(2/pi)cos m/sigma=3.9695e-01   band-centre limit pi/2-m=1.4708
+   sigma_s=    4.00 sites: dE=1.3438e-01   nonrel (1/2)cot m/sigma^2=3.1146e-01   rel sqrt(2/pi)cos m/sigma=1.9847e-01   band-centre limit pi/2-m=1.4708
+   sigma_s=   10.00 sites: dE=3.5359e-02   nonrel (1/2)cot m/sigma^2=4.9833e-02   rel sqrt(2/pi)cos m/sigma=7.9390e-02   band-centre limit pi/2-m=1.4708
+   sigma_s=   30.00 sites: dE=5.1664e-03   nonrel (1/2)cot m/sigma^2=5.5370e-03   rel sqrt(2/pi)cos m/sigma=2.6463e-02   band-centre limit pi/2-m=1.4708
+   sigma_s=  100.00 sites: dE=4.9470e-04   nonrel (1/2)cot m/sigma^2=4.9833e-04   rel sqrt(2/pi)cos m/sigma=7.9390e-03   band-centre limit pi/2-m=1.4708
+   sigma_s=  300.00 sites: dE=5.5324e-05   nonrel (1/2)cot m/sigma^2=5.5370e-05   rel sqrt(2/pi)cos m/sigma=2.6463e-03   band-centre limit pi/2-m=1.4708
+   sigma_s= 1000.00 sites: dE=4.9829e-06   nonrel (1/2)cot m/sigma^2=4.9833e-06   rel sqrt(2/pi)cos m/sigma=7.9390e-04   band-centre limit pi/2-m=1.4708
+   sigma_s= 3000.00 sites: dE=5.5370e-07   nonrel (1/2)cot m/sigma^2=5.5370e-07   rel sqrt(2/pi)cos m/sigma=2.6463e-04   band-centre limit pi/2-m=1.4708
+   sigma_s=10000.00 sites: dE=4.9833e-08   nonrel (1/2)cot m/sigma^2=4.9833e-08   rel sqrt(2/pi)cos m/sigma=7.9390e-05   band-centre limit pi/2-m=1.4708

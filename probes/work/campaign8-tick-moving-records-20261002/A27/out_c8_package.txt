@@ -1,0 +1,4 @@
+tau=0.1 rule=SW : n=1: TV(Z,X)=6.5e-07 TV(none,Z)=5.3e-12; n=2: TV(Z,X)=1.3e-05 TV(none,Z)=1.9e-08; n=3: TV(Z,X)=8.6e-05 TV(none,Z)=8.1e-06  [total prob 1.000000000000]
+tau=0.1 rule=REN: n=1: TV(Z,X)=6.1e-02 TV(none,Z)=6.1e-02; n=2: TV(Z,X)=6.6e-02 TV(none,Z)=6.6e-02; n=3: TV(Z,X)=8.4e-02 TV(none,Z)=8.4e-02  [total prob 1.000000000000]
+tau=0.5 rule=SW : n=1: TV(Z,X)=3.0e-04 TV(none,Z)=1.7e-06; n=2: TV(Z,X)=3.3e-03 TV(none,Z)=1.7e-04; n=3: TV(Z,X)=1.4e-02 TV(none,Z)=3.6e-03  [total prob 1.000000000000]
+tau=0.5 rule=REN: n=1: TV(Z,X)=3.0e-02 TV(none,Z)=3.0e-02; n=2: TV(Z,X)=3.1e-02 TV(none,Z)=3.1e-02; n=3: TV(Z,X)=3.6e-02 TV(none,Z)=3.1e-02  [total prob 1.000000000000]

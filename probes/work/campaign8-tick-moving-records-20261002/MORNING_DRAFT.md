@@ -1,4 +1,4 @@
-# Overnight campaign: what your tick and moving-record ideas do (v6, after two hostile reviews)
+# Overnight campaign: what your tick and moving-record ideas do (v7, after two hostile reviews)
 
 ## Bottom line
 
@@ -9,14 +9,20 @@
    - exactly alike for every site and every turn of the grid on every tick, with possibilities turning along with the grid (your Q3).
 
    Then it changes nothing at all. Nothing can move: not records, not light, not matter. So one thing has to give. The options are a longer reach per tick, a supplied pattern of partners, more room per site, sameness only on average, or, for records only, steps that cannot be undone.
-2. **Moving records.** Records whose place can be read every tick must re-form at each step. That makes them classical "dust": they wander and never interfere. Anything that interferes stays unrecorded between formations.
-   - If records follow the shared possibilities, the change is held to one site per tick, and point 1 bites.
-   - If records step by their own rule, the change can reach further.
+2. **The most coherent way through found tonight: "ticks for records, smooth change for possibilities" (A27).**
+   - Records form and step only on ticks. A record steps at most one site per tick, by trading places with an empty neighbour, with odds set by what that neighbour holds.
+   - That step is exactly symmetric, is not tied to the grid's directions (your Q3 holds), and a claim rule keeps two records off one site.
+   - Between ticks, the shared possibilities change smoothly, the same everywhere and in every direction, leaving recorded spots as they are. Campaign 7's change sentence comes back as written, and your "evolves continuously" holds literally.
+   - This gets around point 1's limit, needs no supplied pattern, and has no time-doubled twin.
+   - **Costs:**
+     - unrecorded influence has no exact speed limit, only an exponentially faint leak, and only if the change per tick is small;
+     - readable moving records are classical "dust": they wander, never interfere, and act as walls for the possibilities;
+     - anything that interferes stays unrecorded between formations.
 3. **The tick.** One shared tick works, and neighbourhood ticks work if they keep in step. In these toys, time running differently in different places must come from how much changes per tick, varying smoothly. It cannot come from how often ticks come.
 4. **Gravity.**
    - **Record-carried gravity** gets the static picture partly right, but cannot make waves or hold a moving Moon.
    - **The road left open** is a field carried by the shared possibilities. The grid's own symmetry pins its "shape" version to Einstein's linear gravity.
-   - **Two conditions:** its ripples need a change that moves things (point 1), and forming a record must not change energy.
+   - **Conditions:** its ripples need a change that moves things, which the smooth change of point 2 provides; forming a record must not change energy; and how one qubit per site hosts the field is open.
 5. **Empty space** must essentially never form records, or every region freezes. That is hard with the repo's current half-filled-sea vacuum.
 6. **Handedness.** Ticks by themselves do not give a preferred handedness. This is exact for single free particles.
 
@@ -32,6 +38,44 @@
 - **Files:** ai/probes → `probes/work/campaign8-tick-moving-records-20261002/`. That covers every lane report, the log, both reviews, and my own checks.
 
 ## What we found
+
+### 0. Ticks for records, smooth change for possibilities (A27, checked)
+
+**Why it is needed.** The exact limit (point 3) shows that a reversible change held to one site per tick, and exactly symmetric on every tick, moves nothing. The alternatives each carry a cost:
+- cycling partner pairs (sub-grid privilege);
+- a longer reach (scrambling);
+- more room per site;
+- sameness only on average.
+
+**What A27 found instead.** A27 separates the two kinds of motion.
+
+**Records**
+- They are classical facts, and they step on ticks by their own rule.
+- The step: a record trades places with one empty neighbour, with odds that are a straight average over what that neighbour holds, or with fixed odds.
+- What it satisfies:
+  - It never moves more than one site per tick.
+  - Its content is kept.
+  - It is symmetric under all 24 turns.
+  - It is not tied to the grid's directions (my check).
+  - When two records want one spot, the spot "claims" one with the right relative odds, and they never share. The literal "both try, then pick by odds" rule leaks faraway choices; the claim rule does not.
+
+**Possibilities**
+- They change smoothly and identically everywhere between ticks, holding recorded spots fixed, so records act as fixed weights and walls.
+- This change is not limited to one site per tick, so the exact limit does not bind it, and it moves things without any supplied pattern.
+- Below a simple bound on the change per tick, there is no time-doubled twin.
+
+**What you give up**
+- **No exact speed limit for unrecorded influence.** A faint, exponentially small leak remains, and only if the change per tick is small.
+- **The change per tick becomes readable.** So "one universal tick or local ticks" now has real content.
+- **Steps that look at their neighbours nudge them slightly.** Steps that ignore the neighbours do not.
+- **Smaller costs:**
+  - overlapping formation spots need an ordering rule;
+  - left- and right-handed things still come in equal amounts.
+
+**What it keeps**
+- Your records-on-ticks instinct, and one site per tick, exactly for records.
+- Campaign 7's change sentence, as written.
+- The gravity field route, with smooth field dynamics and no staggered roles.
 
 ### 1. One site per tick limits the change too (A3)
 - If moving records' places always match the odds, the change can carry possibilities at most one site per tick.
@@ -172,6 +216,7 @@ My overnight note was too strong; the reviewers caught it.
 
 ## Decisions this raises (yours)
 
+0. **The overall shape (A27).** Do you want "ticks for records, smooth change for possibilities"? Records step one site per tick by their own symmetric swap rule, and the shared possibilities change smoothly in between. The price is an exact speed limit for unrecorded influence. Several decisions below then simplify: decisions 1, 2, 8 and 12 mostly resolve in its favour.
 1. **Change within a tick.** May the change run smoothly within a tick on one set of neighbour pairs? That pattern of pairs is supplied structure: it cannot treat every site and turn alike on every tick (A20).
 2. **Reach of the change.** Choose between:
    - strictly one site per tick, in which case nothing moves if every tick treats every site and turn alike (A20);

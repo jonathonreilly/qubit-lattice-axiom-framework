@@ -1037,3 +1037,60 @@ Two readings of a move, R1 and R3, behave very differently.
 - Trade-off: light then runs ≈ θ0 × (the lattice cone). This is consistent with Option R and smooth change as the θ → 0 limit.
 
 **Coordinator check (EXACT by hand).** For θe = θo = θ: M_dbl = π − 2θ, so cos(M_dbl/2) = sin θ = the light speed.
+
+## 01:45 (real) A27 (Option R: ticks for records, smooth change for possibilities) LANDED → c8/A27/REPORT.md (+ c1–c9)
+
+**Verdict: CONDITIONAL YES. Option R holds together as one package.**
+
+**The compression reading of "kept" (EXACT; CHECKED)**
+- The smooth change holds each locked possibility fixed.
+- Each record acts on its neighbours as a one-site field and a wall.
+- Compression is the fine-tick limit of re-cutting (Zeno dynamics; distance 4.5e-2 → 4.5e-5).
+
+**The "carried" reading fails (Lemma C, EXACT)**
+- No complete star-local instrument keeps a carried record agreeing with content that the smooth change spread beyond the star.
+- Renormalized star odds are not affine, so they signal (TV 1/6).
+- The linear "clip" completion has unbounded reach, and Zeno freezes it.
+
+**SW swap-relocation step (EXACT by construction)**
+- Kraus operators K_y = √(c/6)·SWAP_xy·√W_y, plus a stay outcome.
+- Three weights: content, blind, activity.
+- Properties:
+  - linear, complete, at most one site per tick;
+  - content kept, so A7's obstruction does not arise;
+  - covariant under the 24 soldered turns;
+  - NOT glued: invariant under turning space alone AND under turning the possibilities alone. Q3 is satisfied.
+- This fixes all of A21 C23's complaints about D23.
+
+**CL claim rule**
+- Each empty site claims at most one record. Contested records pick uniformly.
+- Linear, range 2, covariant, exact exclusion; I3 holds exactly at contested sites.
+- Literal I3 (independent proposals) signals: TV 3.5e-3 to 7.1e-3. CL gives ≤ 2e-16.
+
+**Back-action trade-off (EXACT).** Coherence kept = 1 − (c/12)(√α − √β)² + O(c²). Neighbour-sensitive odds disturb the neighbours; blind steps do not.
+
+**Quiet emptiness.** It is undisturbed only if the record content is along its axis (n_r = ±n), or if the step is blind or activity-weighted.
+
+**Theorem N does not apply.** The smooth change is not NN-reach per tick: its reach outside the 3-site window is ≈ 2τ⁴, and it is the identity at its isolated NN instants. It moves content, with magnon speed 2J sin k.
+
+**No time doubler below the aliasing bound (max|E|τ < π).**
+- Spatial doubling remains: 3D net chirality 0, W3 = 0.
+- Continuous generation forbids the quasi-local W3 ≠ 0 walks.
+
+**Costs**
+- No exact speed limit for unrecorded influence. Leaks are exponentially small ONLY if the dose per tick is small (6Jτ < 1 in 3D). Assembled toy: TV ≈ 6.5e-3·τ⁴.
+- The dose per tick Jτ becomes READABLE, and A5's schedule independence is no longer exact.
+- Overlapping formation stars need an ordering rule.
+- Records are dust and walls.
+- Chirality stays doubled.
+
+**Fit**
+- Campaign 7 sentence 2 is RESTORED clause by clause.
+- Q2 "evolves continuously" holds literally.
+- I1 and I2 hold exactly for records.
+- It removes A13's supplied round (the sub-grid privilege).
+- The field route is viable: smooth covariant field dynamics, with no staggered roles needed.
+
+**Coordinator verification (CHECKED, independent 1D 3-qubit implementation of SW).**
+- Completeness error ≤ 1.6e-15 (blind and content weights).
+- Covariance under a global SU(2) rotating all possibilities together with the content: ≤ 1.0e-15. This is the unglued property.

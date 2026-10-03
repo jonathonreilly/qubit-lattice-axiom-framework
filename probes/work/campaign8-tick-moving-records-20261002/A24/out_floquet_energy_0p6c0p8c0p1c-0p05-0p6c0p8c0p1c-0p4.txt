@@ -1,0 +1,21 @@
+m=0.1: mean_K W = 1.570796326794897 (pi/2 = 1.570796326794897); band [0.1000, 3.0416]
+m=0.6: mean_K W = 1.570796326794897 (pi/2 = 1.570796326794897); band [0.6000, 2.5416]
+m=1.2: mean_K W = 1.570796326794897 (pi/2 = 1.570796326794897); band [1.2000, 1.9416]
+
+mover m=0.6 K=0.8 (v=+0.724), probe m=0.1 q=-0.05 (|v|=0.446), T=352: norm 1.0000000000
+   lifted energy W_A+W_B: start 1.0713 (W_A 0.9586, W_B 0.1128); after collision 1.1981 (W_A 0.9961, W_B 0.2020)
+   channel (+,+): mean W_A+W_B 1.0715;  time-umklapp (-,-): weight 0.0306, mean W_A+W_B 5.2151 (2 pi - start = 5.2118); umklapp share of the collision's lifted-energy change +0.1266 of +0.1267
+   SHARP PROBE LOCK, all outcomes: dE = pi/2 - <W_B> = +1.3688 (probe half-band 1.4708); mover share exactly 0
+   per reflected-probe record (weight 0.0452): lock dE = +0.0069; mover's lifted energy change from the collision +0.6093
+      reflected-probe records in channel ('+', '+'): weight 0.0227; lock dE = pi/2 - W_B = +1.2227; mover lifted-energy change -0.2380; pair change from the collision -0.0027
+      reflected-probe records in channel ('-', '-'): weight 0.0225; lock dE = pi/2 - W_B = -1.2203; mover lifted-energy change +1.4647; pair change from the collision +4.1431
+   direct sharp lock on the mover instead: pi/2 - W_A = +0.6122
+
+mover m=0.6 K=0.8 (v=+0.724), probe m=0.1 q=-0.4 (|v|=0.968), T=191: norm 1.0000000000
+   lifted energy W_A+W_B: start 1.3703 (W_A 0.9586, W_B 0.4117); after collision 1.3789 (W_A 0.9616, W_B 0.4173)
+   channel (+,+): mean W_A+W_B 1.3703;  time-umklapp (-,-): weight 0.0024, mean W_A+W_B 4.9164 (2 pi - start = 4.9129); umklapp share of the collision's lifted-energy change +0.0087 of +0.0087
+   SHARP PROBE LOCK, all outcomes: dE = pi/2 - <W_B> = +1.1535 (probe half-band 1.4708); mover share exactly 0
+   per reflected-probe record (weight 0.0012): lock dE = -0.0000; mover's lifted energy change from the collision +0.6122
+      reflected-probe records in channel ('+', '+'): weight 0.0006; lock dE = pi/2 - W_B = +0.8657; mover lifted-energy change -0.2960; pair change from the collision -0.0025
+      reflected-probe records in channel ('-', '-'): weight 0.0006; lock dE = pi/2 - W_B = -0.8657; mover lifted-energy change +1.5204; pair change from the collision +3.5451
+   direct sharp lock on the mover instead: pi/2 - W_A = +0.6122

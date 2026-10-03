@@ -1,0 +1,5 @@
+V=0.2: emitted k_e=0.5462 (v_e=1.039); predicted (inj/record)/f = cot(k_e)/2 = +0.8225; f=0.01: +0.8254 (P(capture) 0.314); f=0.003: +0.8225 (P(capture) 0.313)
+V=0.6: emitted k_e=0.8573 (v_e=1.512); predicted (inj/record)/f = cot(k_e)/2 = +0.4328; f=0.01: +0.4345 (P(capture) 0.399); f=0.003: +0.4330 (P(capture) 0.399)
+V=1.0: emitted k_e=1.0990 (v_e=1.781); predicted (inj/record)/f = cot(k_e)/2 = +0.2551; f=0.01: +0.2561 (P(capture) 0.439); f=0.003: +0.2552 (P(capture) 0.439)
+V=1.5: emitted k_e=1.3648 (v_e=1.958); predicted (inj/record)/f = cot(k_e)/2 = +0.1045; f=0.01: +0.1047 (P(capture) 0.462); f=0.003: +0.1043 (P(capture) 0.462)
+V=1.9: emitted k_e=1.5663 (v_e=2.000); predicted (inj/record)/f = cot(k_e)/2 = +0.0023; f=0.01: +0.0020 (P(capture) 0.467); f=0.003: +0.0020 (P(capture) 0.467)

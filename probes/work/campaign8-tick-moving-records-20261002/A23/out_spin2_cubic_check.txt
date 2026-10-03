@@ -1,0 +1,30 @@
+C1 O_h(48): invariant quadratic (kinetic) forms on Sym^2(R^3): 3
+C1 O(24): invariant quadratic (kinetic) forms on Sym^2(R^3): 3
+C2 O_h: invariant O(k^2) quadratic forms = 9; gauge-invariant = 0  (P,S commute: 0.0e+00)
+C2 O: invariant O(k^2) quadratic forms = 9; gauge-invariant = 0  (P,S commute: 0.0e+00)
+   EH gauge check |V g| max: 1.1e-16
+   potential on TT direction / k^2: +0.500000;  on transverse-trace direction / k^2: -0.500000
+C3 Hamiltonian-constraint preservation: solution space dim 1; (mA1, mE, mT2) ∝ [-0.5  1.   1. ]
+C4 GR  (mA1,mE,mT2)=(-1/2,1,1) | axis: lambda^2/k^2 = [-1.+0.j -0.-0.j] | face: lambda^2/k^2 = [-1.+0.j -0.+0.j] | body: lambda^2/k^2 = [-1.+0.j -0.+0.j] | rand: lambda^2/k^2 = [-1.-0.j -0.-0.j]
+C4 aniso mT2=1.1               | axis: lambda^2/k^2 = [-1.1-0.j -1. +0.j -0. -0.j] | face: lambda^2/k^2 = [-1.1     +0.j -1.024404+0.j  0.024404-0.j] | body: lambda^2/k^2 = [-1.066667+0.j  0.033333+0.j] | rand: lambda^2/k^2 = [-1.097197+0.j -1.020809-0.j  0.018006-0.j]
+C4 lambda shift mA1=-0.40      | axis: lambda^2/k^2 = [-1.      -0.j  0.066667-0.j] | face: lambda^2/k^2 = [-1.      +0.j  0.066667-0.j] | body: lambda^2/k^2 = [-1.      +0.j  0.066667-0.j] | rand: lambda^2/k^2 = [-1.      -0.j  0.066667+0.j]
+C4 lambda shift mA1=-0.60      | axis: lambda^2/k^2 = [-1.      -0.j -0.066667-0.j] | face: lambda^2/k^2 = [-1.      -0.j -0.066667-0.j] | body: lambda^2/k^2 = [-1.      +0.j -0.066667-0.j] | rand: lambda^2/k^2 = [-1.      -0.j -0.066667+0.j]
+   (lambda^2 = -omega^2: negative -> oscillation at speed sqrt(-lambda^2); positive -> exponential growth)
+   mA1=-0.40: physical kinetic weight on transverse-trace momentum e_T.Q M e_T = +0.1333; potential weight e_T.V e_T/k^2 = -0.5000
+   mA1=-0.50: physical kinetic weight on transverse-trace momentum e_T.Q M e_T = -0.0000; potential weight e_T.V e_T/k^2 = -0.5000
+   mA1=-0.60: physical kinetic weight on transverse-trace momentum e_T.Q M e_T = -0.1333; potential weight e_T.V e_T/k^2 = -0.5000
+C5 B4(384) hypercubic: invariant O(k^2) forms on Sym^2(R^4) = 9; 4D gauge-invariant = 0  (1.1s)
+C6 per-shear constraint preservation over 200 random k: momentum rows max 3.2e-15; Hamiltonian row on momentum-constraint surface max 2.3e-15
+   with mT2=1.1 the Hamiltonian row changes by up to 1.36e-01 per kinetic shear (not preserved)
+   tau=0.57158 (tau*sqrt3=0.99): nontrivial eigenvalue counts [4, 7, 8, 10]; max |eig| 1.000230; max phase/pi 0.3873; |cos(theta)-(1-tau^2 s^2/2)| max 3.9e-16
+   tau=0.58312 (tau*sqrt3=1.01): nontrivial eigenvalue counts [4, 6, 7, 8, 10]; max |eig| 1.326584; max phase/pi 0.4521; |cos(theta)-(1-tau^2 s^2/2)| max 4.4e-16
+   small k: theta/(tau|k|) = 0.999992 (z=1, speed 1); modes 4 = 2 polarizations x (+/-)
+C7 static source k=[0.  0.  0.2]: lapse n=-6.25000, U=-n=+6.25000 (k^2 U = 0.2500), psi_T=+12.50000, PPN gamma = psi_T/(2U) = 1.000000; residual 5.2e-16
+C7 static source k=[ 0.13 -0.21  0.07]: lapse n=-3.79363, U=-n=+3.79363 (k^2 U = 0.2500), psi_T=+7.58725, PPN gamma = psi_T/(2U) = 1.000000; residual 3.2e-16
+   (without the lapse multiplying the field potential the static equations read Vm h = 0 and r.h = rho: inconsistent for rho != 0)
+   unpaced variant least-squares residual: 0.3333 (nonzero = no static solution)
+C8 proposed Regge dispersion 4sinh^2(w/2)=s^2 continued: band top 2*asinh(sqrt3) = 2.633916 < pi = 3.141593
+   Yee/leapfrog band top at step h=0.3000: 2*asin(h*sqrt3) = 1.092801
+   Yee/leapfrog band top at step h=0.5000: 2*asin(h*sqrt3) = 2.094395
+   Yee/leapfrog band top at step h=0.5774: 2*asin(h*sqrt3) = 3.141475
+done in 3.4s

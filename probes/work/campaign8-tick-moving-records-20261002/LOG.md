@@ -848,3 +848,71 @@ Two readings of a move, R1 and R3, behave very differently.
   - it gives a persistent walk: from content +x it continues with 1/3, turns with 2/3, and never reverses.
 - This is the clean covariant one-site move: the record re-forms next door and its new content points the way it stepped (content-locked, handed per A1 D22).
 - Cost: a six-direction (non-orthogonal) menu, which is a named conditional, not fixed by the axioms.
+
+## 00:55 (real) A21 SECOND HOSTILE REVIEW LANDED → c8/A21/REVIEW.md (A21 resumed to review A20 too). CORRECTIONS C11–C20 (these supersede earlier wording)
+
+**C11. "Pace cannot be set by the shared possibilities" FAILS as worded.**
+- A21's r2 check, rerun by the coordinator, compares two rules:
+
+| Rule | TV |
+|---|---|
+| FIXED coupling: exp(−iθ\|1⟩⟨1\|_{a1} ⊗ SWAP_{a2a3}), a possibility sets the pace coherently | 2.7e-16 (no signal) |
+| Nonlinear dial (A15) | 6.9e-2 |
+
+- Only NONLINEAR state-set dials signal. So the field route (gravity as a collective ripple of the possibilities with FIXED dynamics) is consistent, not self-contradictory.
+
+**C12. "Every record-based version gives only a wake" holds only for DIFFUSING carriers.**
+- Ballistic carriers make no wake but give a 1/r² shadow.
+- Persistence is capped by sub-mm inverse-square tests.
+- Phrase the field route as "the candidate left open", not "would have to be".
+
+**C13. Repo gravity lane (verified on origin/main).**
+- Unaudited field-type graviton notes exist:
+  - REGGE_SECOND_VARIATION … NATIVE_LINEARISED_GRAVITON (2026-09-03);
+  - UNIVERSAL_GR_GRAVITON_DISPERSION_LORENTZ_ISOTROPY (06-08);
+  - TWO_TT_GRAVITON_POLARISATIONS … PI_FLUX_SEA (09-04).
+- Several rest on the half-filled/π-flux sea that point 6 puts in doubt.
+- Cite these as unaudited, with that caveat.
+
+**C14. Vacuum figure.**
+- "5 per million ticks" is per UNIT formation strength. The correct statement is a RATIO: false records ≥ 5e-6 × true recordings (best case); energy rule ~1/80.
+- At Planck ticks:
+  - a rule strong enough to record a particle within ~1 s fills empty space within days (energy rule: ~80 s);
+  - a rule weak enough to keep space clear for the universe's age needs ~70,000 years to record anything.
+
+**C15. A12 scope and memory.**
+- The lattice Reeh–Schlieder result is for record-ignoring, finite-reach/window weights. It assumes a graded (fermion-bilinear) product, which the axioms do not fix.
+- The ceiling e^{−2κT} is per (T + spatial reach), for a fixed finite seed.
+- Per-site memory recurs in A12, A15 S0 and A17 (accumulator/rotor). Present it as ONE owner decision.
+- A memory made of matter is not excluded.
+- "Records next to records" is one of two ways to keep light unrecorded; a light-blind rule is the other. Its cost: an empty grid never starts.
+
+**C16. A14.**
+- AND gating's γ = 1 holds in the averaged small-dose limit only. Real events bring the jitter floor (A17).
+- Light speed ∝ wanderer activity², so light stops in voids.
+- "Global" should read "shared" (in-step local ticks suffice).
+- The photon-mass cross-constraint u∞ ≲ 1e-47 to 1e-92 must be stated.
+
+**C17. A15 / A17.**
+- A deterministic per-site record-set angle STILL jitters (A17 D1), which overturns A16 C8's "angle lapse avoids random pacing".
+- Only a smooth wide average escapes.
+- Formation odds per tick must carry the same factor N.
+
+**C18. A18 costs to state.**
+- The γ = β = 1 match holds for TWO-SITE light. Four-site loop light gets γ = 2 (1.5× too much bending) unless dimension-based weights are added.
+- Light runs at < 1% of the grid limit.
+- The wanderers must be unslowed (an absolute clock).
+- With u∞ ≲ 1e-47, the smoothing radius reaches ~50 kpc.
+- The NN β = 11/12 holds for one specific exponential rule; tuned rules can hit β = 1. The decisive NN failure is JITTER, not β.
+
+**C19. A19.**
+- In 1D the direction bit partly survives (1 − sin m/2). It is erased in 3D.
+- A13's c·P_singlet is star-sharp, so A13's model as written gives massive movers NO inertia; it needs mediated records.
+- The time-umklapp share falls as m², so the real-world size is not computed. It is a POTENTIAL falsifier.
+
+**C20. Draft.**
+- Use "tick" throughout.
+- Restore A16's Q7 condition: menus may be set only by records cut to agree with their site.
+- Add a bottom line at the top.
+- Reduce jargon.
+- Add decisions 9 (memory), 10 (pacing composition, and whether the carriers are slowed) and 11 (direct records lose inertia).

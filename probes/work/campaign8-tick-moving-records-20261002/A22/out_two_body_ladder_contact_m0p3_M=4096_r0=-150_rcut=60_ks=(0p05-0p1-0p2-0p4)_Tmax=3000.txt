@@ -1,0 +1,8 @@
+[ladder_contact_m0.3] geom=ladder m=0.3 V=[(0, 'all', 0.8)] phi_e=0.0 phi_o=0.0  M=4096 T=1920 norm=1.000000000000 unfinished(|r|<rcut)=4.62e-04
+   totals: transmitted ord 4.0496e-01 dbl 2.6843e-02 | reflected ord 5.4030e-01 dbl 2.6862e-02 | other band pairs/regions 5.8e-04
+        k   v_rel        D(k)       R(k) Dshare_of_refl  unitarity
+    0.050  0.3229  2.8804e-01 2.8764e-01         0.5015   0.929389
+    0.100  0.6127  1.1897e-01 1.1295e-01         0.5267   0.931151
+    0.200  1.0786  3.1049e-02 3.2817e-02         0.4749   1.089767
+    0.400  1.5666  1.5819e-02 4.1411e-02         0.2787   0.001445
+   (0.6 s)

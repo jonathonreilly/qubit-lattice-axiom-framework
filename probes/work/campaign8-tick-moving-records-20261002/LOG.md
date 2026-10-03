@@ -1917,7 +1917,7 @@ The coordinator saved the report from the final message.
 - **Local:** draft v12 (v11 saved as MORNING_DRAFT_v11_pre_A34d.md); summary; FINAL_REPORT reassembled.
 - **Errata** appended to the A38, A39 and A40 reports.
 
-## 07:09 (real) A41 (charged triplet matter through light's links, 0 vs π flux) LANDED → c8/A41/REPORT.md (+ d1–d9)
+## 07:05 (real) A41 (charged triplet matter through light's links, 0 vs π flux) LANDED → c8/A41/REPORT.md (+ d1–d9)
 The coordinator saved the report from the final message.
 
 **Results**
@@ -1940,3 +1940,23 @@ The coordinator saved the report from the final message.
 - NOT re-run: the π-flux cone census or the nodal lines.
 
 **Status.** Coordinator-checked, NOT hostile-reviewed; added to the doc as a follow-up note under §14.
+
+## 07:08 (real) Review round 9 (A34 resumed, short): A41, the doc's A41 note, and a final consistency skim of the one-page summary
+
+## 07:16 (real) OWNER AWAKE. Owner: "have sonnet 5.5 workers check the summary of the night against the current science in the repo for all sections, then bring back the laymans summary and lets decide what to do next"
+- **Launched 7 read-only Sonnet 5.5 checker workers** (brief: c8/CHECK_BRIEF.md), against origin/main pinned at b6fda5ae1d. The ledger is now sharded at docs/audit/data/ledger, read via .claude/commands/ledger.md.
+  - G1: limit + record-tick shape (§0–3)
+  - G2: tick (§4–5)
+  - G3: gravity (§6)
+  - G4: empty space + black hole + A39 (§7, 9, 13)
+  - G5: handedness + assembly (§8, 10)
+  - G6: late light/matter (§12, 14, A41)
+  - G7: flow + premises + menu + A13 + decisions
+- **Review round 9** (A34: A41 + summary skim) is still running.
+
+## 07:20 (real) REVIEW ROUND 9 (A34: A41 + summary skim) → c8/A34/REVIEW5.md. CORRECTIONS C145–C155. Applied to the doc (rev 44) and local files (draft v13).
+- **C145.** A41's doc note now states the toy's conditions (classical links, least room, nearest-corner hops).
+- **C146.** "Never lowest" holds for the hop alone; the allowed μ·1 lifts energies (A39 (a′)).
+- **C147.** One sign of charge, so no antimatter, with two qubits per corner.
+- **C150.** "Light-like matter needs a painted pattern" holds only for one internal state per place.
+- **C151–C155.** Summary: A40 sentence tail updated with A41; empty-space bullet lists A39's third way out (blind to light); black-hole note under A40; decision (17) adds the internal-parts option; provenance "nine rounds".

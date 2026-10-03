@@ -156,3 +156,10 @@ Build the Bloch bands (3 bands; 24 for the 2×2×2 KS cell) and scan the family.
 ## 5. Plain-language summary for the owner
 
 I took the only kind of charged matter that can hop through light's links while respecting the grid's turns. That matter has three internal states, which turn as it hops. With no twist in light's links, it already has point-like crossings at zero energy for one setting of its one free angle. But they are lopsided, twice as fast along one diagonal as across it, with a dead-flat band running through them. With light's half-turn twist on every square, most settings give zero-energy sheets or lines instead of cones. At exactly one setting, perfectly round cones appear (same speed in every direction), but they come with straight lines of zero-energy states, and nudging the setting gives the cones a gap. In every case negative energies exist, so the empty state of matter is never the lowest one.
+
+---
+
+## ERRATA from review round 9 (A34/REVIEW5.md), added by the coordinator
+- "Never the lowest state of the one-particle sector" holds for the hop alone; the turn-allowed on-site energy μ·1 (Schur) shifts Tr H to 3μ and can lift all energies above 0, moving every zero-energy crossing to E = μ (A39 (a′)) (C146, C149).
+- With two qubits per corner, charge has one sign only (no antimatter); a filled sea would carry net charge, which Gauss's law on a closed grid forbids (EXACT) (C147, C149).
+- Verdict scope: nearest-corner hops only; zero and π flux are the only uniform backgrounds the turns allow (EXACT) (C149).

@@ -1,0 +1,5 @@
+L=fcc16: N=16; specs ['lam2:0.2', 'lam2:0.4']; budget/state 132s
+lam2:0.2: MF gap 2.939; sweeps 6000 in 1s; acc flip 172/52661 pair 9597/52939; drift 2.5e-13
+   e_J' = -1.09098 +- 0.00670; e_K' = -0.36682 +- 0.00222; ring = +0.27756 +- 0.00645
+lam2:0.4: MF gap 0.980; sweeps 6000 in 1s; acc flip 2412/52661 pair 9954/52939; drift 1.1e-13
+   e_J' = -1.07161 +- 0.00639; e_K' = -0.35426 +- 0.00278; ring = +0.24939 +- 0.00627

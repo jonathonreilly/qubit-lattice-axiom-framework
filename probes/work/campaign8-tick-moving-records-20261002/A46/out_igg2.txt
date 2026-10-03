@@ -1,0 +1,6 @@
+fd(1,1,0)   t2         : gauged |M eps + eps M*| = 2.00  (breaks eta-SU(2) -> U(1))
+fd(1,1,0)   i lam2 s.d : gauged |M eps + eps M*| = 2.00  (breaks eta-SU(2) -> U(1))
+fd(1,-1,0)  t2         : gauged |M eps + eps M*| = 2.00  (breaks eta-SU(2) -> U(1))
+fd(1,-1,0)  i lam2 s.d : gauged |M eps + eps M*| = 2.00  (breaks eta-SU(2) -> U(1))
+axis(2,0,0) t2         : gauged |M eps + eps M*| = 2.00  (breaks eta-SU(2) -> U(1))
+axis(2,0,0) i lam2 s.d : gauged |M eps + eps M*| = 2.00  (breaks eta-SU(2) -> U(1))

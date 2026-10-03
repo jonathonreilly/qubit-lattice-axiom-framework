@@ -1,0 +1,40 @@
+L=8 m=0.0: e_J' -1.0026, ring +0.3124, face-diagonal c2 +0.3930
+L=8 m=0.05: e_J' -1.0322, ring +0.3076, face-diagonal c2 +0.4415
+L=8 m=0.1: e_J' -1.0719, ring +0.2961, face-diagonal c2 +0.5139
+L=8 m=0.2: e_J' -1.1283, ring +0.2667, face-diagonal c2 +0.6261
+collinear family (L=6) m=0.1: e_J' -1.0072, ring +0.3091, face-diagonal c2 +0.3967
+collinear family (L=6) m=0.2: e_J' -0.9954, ring +0.3057, face-diagonal c2 +0.3800
+collinear family (L=6) m=0.4: e_J' -0.9572, ring +0.2846, face-diagonal c2 +0.3273
+collinear family (L=6) m=0.8: e_J' -0.8062, ring +0.2057, face-diagonal c2 +0.0950
+points (J2, R) where the pi-flux singlet is lowest: 90 of 1071; J2 range 0.25-0.425, R range -1.4..-0.55
+   J2=0.250 R=-1.35: margin 0.0012 over AF m=0.05
+   J2=0.250 R=-1.20: margin 0.0004 over AF m=0.05
+   J2=0.275 R=-1.30: margin 0.0016 over COL m=0.1
+   J2=0.275 R=-1.15: margin 0.0011 over COL m=0.1
+   J2=0.275 R=-1.00: margin 0.0006 over COL m=0.1
+   J2=0.275 R=-0.85: margin 0.0001 over COL m=0.1
+   J2=0.300 R=-1.30: margin 0.0018 over COL m=0.1
+   J2=0.300 R=-1.15: margin 0.0013 over COL m=0.1
+   J2=0.300 R=-1.00: margin 0.0008 over COL m=0.1
+   J2=0.300 R=-0.85: margin 0.0003 over COL m=0.1
+   J2=0.325 R=-1.35: margin 0.0021 over COL m=0.1
+   J2=0.325 R=-1.20: margin 0.0016 over COL m=0.1
+   J2=0.325 R=-1.05: margin 0.0011 over COL m=0.1
+   J2=0.325 R=-0.90: margin 0.0007 over COL m=0.1
+   J2=0.325 R=-0.75: margin 0.0002 over COL m=0.1
+   J2=0.350 R=-1.35: margin 0.0023 over COL m=0.1
+   J2=0.350 R=-1.20: margin 0.0018 over COL m=0.1
+   J2=0.350 R=-1.05: margin 0.0013 over COL m=0.1
+   J2=0.350 R=-0.90: margin 0.0008 over COL m=0.1
+   J2=0.350 R=-0.75: margin 0.0004 over COL m=0.1
+   J2=0.375 R=-1.20: margin 0.0020 over COL m=0.1
+   J2=0.375 R=-1.05: margin 0.0015 over COL m=0.1
+   J2=0.375 R=-0.90: margin 0.0010 over COL m=0.1
+   J2=0.375 R=-0.75: margin 0.0005 over COL m=0.1
+   J2=0.375 R=-0.60: margin 0.0001 over COL m=0.1
+   J2=0.400 R=-0.95: margin 0.0014 over COL m=0.1
+   J2=0.400 R=-0.80: margin 0.0009 over COL m=0.1
+   J2=0.400 R=-0.65: margin 0.0004 over COL m=0.1
+   J2=0.425 R=-0.85: margin 0.0012 over COL m=0.1
+   J2=0.425 R=-0.70: margin 0.0008 over COL m=0.1
+best margin +0.0023 at J2=0.35, R=-1.35 (runner-up COL m=0.1)

@@ -1,0 +1,27 @@
+L=fcc16: (e_J', ring) by m: m=0.0: (-1.0905, +0.2842); m=0.3: (-1.1382, +0.2394); m=1.0: (-1.1916, +0.1084)
+   rho = -1.21: lowest changes FM -> AF m=0.0
+   rho = -1.06: lowest changes AF m=0.0 -> AF m=0.3
+   rho = -0.40: lowest changes AF m=0.3 -> AF m=1.0
+   rho = -0.02: lowest changes AF m=1.0 -> Neel LSWT
+   window where the pi-flux singlet (m=0) is lowest: [-1.21, -1.07]
+   closest approach: at rho = -1.21 the pi-flux singlet is -0.0065 per bond above the lowest other state
+L=4: (e_J', ring) by m: m=0.0: (-1.0383, +0.3301); m=0.1: (-1.0552, +0.3245); m=0.2: (-1.1027, +0.2977); m=0.4: (-1.1645, +0.2377); m=0.8: (-1.1936, +0.1451)
+   rho = -1.23: lowest changes FM -> AF m=0.2
+   rho = -1.03: lowest changes AF m=0.2 -> AF m=0.4
+   rho = -0.31: lowest changes AF m=0.4 -> AF m=0.8
+   rho = -0.00: lowest changes AF m=0.8 -> Neel LSWT
+   window where the pi-flux singlet (m=0) is lowest: EMPTY
+   closest approach: at rho = -1.23 the pi-flux singlet is 0.0245 per bond above the lowest other state
+L=6: (e_J', ring) by m: m=0.0: (-1.0081, +0.3133); m=0.1: (-1.0627, +0.2984); m=0.2: (-1.1183, +0.2722); m=0.4: (-1.1708, +0.2227); m=0.8: (-1.1898, +0.1319)
+   rho = -1.22: lowest changes FM -> AF m=0.2
+   rho = -1.05: lowest changes AF m=0.2 -> AF m=0.4
+   rho = -0.20: lowest changes AF m=0.4 -> AF m=0.8
+   rho = -0.03: lowest changes AF m=0.8 -> Neel LSWT
+   window where the pi-flux singlet (m=0) is lowest: EMPTY
+   closest approach: at rho = -1.22 the pi-flux singlet is 0.0600 per bond above the lowest other state
+L=8: (e_J', ring) by m: m=0.0: (-1.0047, +0.3103); m=0.2: (-1.1250, +0.2709); m=0.5: (-1.1865, +0.1867); m=1.0: (-1.1823, +0.0979)
+   rho = -1.22: lowest changes FM -> AF m=0.2
+   rho = -0.73: lowest changes AF m=0.2 -> AF m=0.5
+   rho = -0.04: lowest changes AF m=0.5 -> Neel LSWT
+   window where the pi-flux singlet (m=0) is lowest: EMPTY
+   closest approach: at rho = -1.22 the pi-flux singlet is 0.0722 per bond above the lowest other state

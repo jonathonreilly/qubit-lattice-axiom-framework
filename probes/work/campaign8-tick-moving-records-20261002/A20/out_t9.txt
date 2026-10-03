@@ -1,0 +1,8 @@
+F_0 = +Z(-1, -1, 0) Y(-1, 0, -1) Y(-1, 0, 1) Z(-1, 1, 0) X(0, -1, -1) X(0, -1, 1) X(0, 1, -1) X(0, 1, 1) Z(1, -1, 0) Y(1, 0, -1) Y(1, 0, 1) Z(1, 1, 0)
+(a) F_0 exactly fixed by 24 /24 rotations; hermitian: True
+    offsets |d|_inf<=4 with [F_0,F_d]!=0: []
+(b) star circuit image of X_0 matches symbol A mod 2: True ; of Z_0: True
+    face circuit image of X_0 matches symbol B mod 2: True ; of Z_0: True
+(c) alpha(Y_0) == i alpha(X_0) alpha(Z_0): True ; hermitian: True True
+    exact covariance failures over 24 rotations x 3 Paulis: 0
+    support of alpha(X_0): 145 sites; max |v|_inf = 4

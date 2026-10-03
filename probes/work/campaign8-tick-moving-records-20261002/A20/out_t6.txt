@@ -1,0 +1,4 @@
+number of subalgebras (set partitions of 4): 15
+commuting pairs with nontrivial supports on both sites: 1
+   T_x blocks: [[(1, -1), (-1, 1)], [(1, 1), (-1, -1)]]   T_z blocks: [[(1, -1), (-1, 1)], [(1, 1), (-1, -1)]]
+C4z fixed Bloch directions (eigenvalue 1): [[0.0, 0.0, 1.0]]

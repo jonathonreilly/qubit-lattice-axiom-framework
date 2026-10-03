@@ -1,0 +1,12 @@
+Delta = w1**2*w2 + w1**2*w3 + w1*w2**2 + w1*w3**2 + w2**2*w3 + w2*w3**2
+det M == 1 : True
+trace M nonzero: True ; equals Delta^2: False
+S3-equivariant: True
+w-degrees per entry: [[(4, 5, 3), (5, 5, 2)], [(2, 5, 5), (3, 5, 4)]]
+z-range (max |v|_inf): 5  support sizes: [129, 64, 64, 129]
+  t=1: radius(M^t)=5  identity=False
+  t=2: radius(M^t)=9  identity=False
+  t=3: radius(M^t)=13  identity=False
+  t=4: radius(M^t)=17  identity=False
+  t=5: radius(M^t)=21  identity=False
+  t=6: radius(M^t)=25  identity=False

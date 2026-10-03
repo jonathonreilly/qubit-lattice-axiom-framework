@@ -105,11 +105,15 @@ My overnight note on this was too strong, and the reviewer caught it.
   - **Catch:** sharp contact bumps put about half the bounce into a "time-doubled" partner state, which must be suppressed.
 - **Steady event rate:** wandering records give each place a steady rate of moves, but no record stores it.
 - **Time from new records alone:** across a uniform grid each spot fills only about once on average. If you count every formation including moves, time keeps running wherever records move, but that count is not stored anywhere.
-- **Can a lone record move at all?**
-  - With one qubit per site, it never moves under a step that is the same every tick, keeps the record count, reaches one site, and treats all turns alike (A3).
-  - Cycling partner pairs does move it (A10).
-  - But once two records meet, that rule tells sites apart by which of 8 interleaved sub-grids they sit on, and some turns match only with the round run backwards (reviewer's check, reproduced). That conflicts with "No site is privileged" unless the round counts as supplied lattice structure.
-  - A20 is testing a turn-symmetric alternative built from your "glued to the grid" choice.
+- **Can a lone record move at all?** A20 settles this sharply.
+  - **Reversible steps can't do it (exact).** Any reversible step that reaches only nearest neighbours and treats every site and every turn exactly alike on every tick changes nothing at all. This holds for every such rule.
+  - **Cycling partner pairs does move records (A10).** But once two records meet, sites can be told apart by which of 8 sub-grids they sit on, which conflicts with "No site is privileged".
+  - **Longer reach:** fully symmetric rules reaching 4 sites per tick do move things, but what travels is a spreading web of links, not a record.
+  - **The clean answer is an irreversible step,** which A7 requires for readable moving records anyway. The record re-forms next door, and its new content points the way it stepped.
+    - It is exactly symmetric under all 24 turns, as my check confirms.
+    - It continues straight 1/3 of the time and turns 2/3 of the time, and never steps straight back.
+    - This is close to your earlier "a record moves the way its content points".
+    - **The cost:** a menu of six direction possibilities, which the axioms don't fix.
 
 ### 3. Possibilities flow
 - A net drift is the same across every dividing plane, cannot start or stop, and is forbidden by the rotation symmetry in open space.
@@ -154,7 +158,6 @@ One toy puts all of this together consistently:
 5. **Time:** does it count every formation (unbounded, but stored in no record) or only new records (bounded)?
 6. **Menu reading:** the proposed text above.
 7. **Permanence:** does "permanent" mean "never destroyed, may re-form next door"? That is Record-axiom wording, so it needs your exact text.
-8. **Sub-grids:** do you accept a rule that, once records meet, tells sites apart by sub-grid (A10, A13)? A20's alternative is pending.
+8. **How records step:** do moving records re-form next door with a six-direction menu, so the record's content points the way it stepped (fully symmetric)? Or do you prefer a supplied sub-grid pattern (A10), or a longer reach per tick (A20)?
 
 *Still running:*
-- A20: turn-symmetric motion.

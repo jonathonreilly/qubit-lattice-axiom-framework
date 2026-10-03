@@ -1,0 +1,10 @@
+A^2 = 1: True  B^2 = 1: True  AB == BA: False
+radius(AB) = 4  trace(AB) terms: 24  supports: [95, 100, 100, 95]
+  t=1: radius((AB)^t)=4  |supp alpha^t(X_0)|=145
+  t=2: radius((AB)^t)=8  |supp alpha^t(X_0)|=633
+  t=3: radius((AB)^t)=12  |supp alpha^t(X_0)|=2449
+  t=4: radius((AB)^t)=16  |supp alpha^t(X_0)|=4369
+  t=5: radius((AB)^t)=20  |supp alpha^t(X_0)|=5921
+  t=6: radius((AB)^t)=24  |supp alpha^t(X_0)|=12841
+  t=7: radius((AB)^t)=28  |supp alpha^t(X_0)|=25089
+  t=8: radius((AB)^t)=32  |supp alpha^t(X_0)|=33697

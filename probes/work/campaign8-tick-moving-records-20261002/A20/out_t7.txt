@@ -1,0 +1,8 @@
+cube r=2 s=(0, 0, 0, 0, 0, 0, 0, 0, 0): roundtrip=True N0 polynomial=True symmetric=True trN0=Delta*detN0: True  detN0=0  N0=[['0', '0'], ['0', '0']]
+cube r=2 s=(0, 0, 0, 0, 1, 0, 1, 0, 0): roundtrip=True N0 polynomial=True symmetric=True trN0=Delta*detN0: True  detN0=0  N0=[['w1 + w2 + w3', 'w1**2 + w2**2 + w3**2'], ['1', 'w1 + w2 + w3']]
+cube r=2 s=(1, 0, 0, 0, 0, 0, 0, 0, 0): roundtrip=True N0 polynomial=True symmetric=True trN0=Delta*detN0: True  detN0=0  N0=[['0', '1'], ['0', '0']]
+cube r=2 s=(1, 0, 1, 0, 1, 0, 1, 0, 0): roundtrip=True N0 polynomial=True symmetric=True trN0=Delta*detN0: True  detN0=0  N0=[['w1 + w2 + w3 + 1', 'w1**2 + w2**2 + w3**2 + 1'], ['1', 'w1 + w2 + w3 + 1']]
+oct r=3 s=(0, 0, 0, 0, 0): roundtrip=True N0 polynomial=True symmetric=True trN0=Delta*detN0: True  detN0=0  N0=[['0', '0'], ['0', '0']]
+oct r=3 s=(0, 0, 1, 1, 0): roundtrip=True N0 polynomial=True symmetric=True trN0=Delta*detN0: True  detN0=0  N0=[['0', 'w1 + w2 + w3'], ['0', '0']]
+oct r=3 s=(1, 0, 0, 0, 0): roundtrip=True N0 polynomial=True symmetric=True trN0=Delta*detN0: True  detN0=0  N0=[['0', '1'], ['0', '0']]
+oct r=3 s=(1, 0, 1, 1, 0): roundtrip=True N0 polynomial=True symmetric=True trN0=Delta*detN0: True  detN0=0  N0=[['0', 'w1 + w2 + w3 + 1'], ['0', '0']]

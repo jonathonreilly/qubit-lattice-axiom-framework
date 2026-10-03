@@ -1,0 +1,7 @@
+range r = 5
+(1) [f,T_v f]=0 all v: True   [f,T_v h] = delta_v0: True
+(2) C4x f=f: True  C2y f=f: True  C3^2 f = h: True  f + C3f + C3^2f = 0: True
+(3) C4x(aX) = + aX (need +);  C2y(aX) = - aX (need -)
+    i*aX*aZ = + aY  -> overall sign of aX to choose: +
+    C3^3(aX) == aX: True
+EXACT COVARIANT LIFT EXISTS: True

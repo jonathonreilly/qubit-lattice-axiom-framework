@@ -809,3 +809,42 @@ Two readings of a move, R1 and R3, behave very differently.
 | 0.15 | 0.850562 | 0.850562 |
 | 0.6 | 0.435358 | 0.435358 |
 | 1.4 | 0.014550 | 0.014550 |
+
+## 00:40 (real) A20 (covariant motion, compass gates) LANDED → c8/A20/REPORT.md (+ t1–t9, cliff_* scripts)
+
+**THEOREM N (EXACT).** Every nearest-neighbour (reach-1) REVERSIBLE tick on Z³ qubits that commutes with the soldered rotations about every site is the IDENTITY.
+- The proof uses support algebras. It needs no number conservation and no Clifford structure, so it covers compass gates and every other gate.
+- This closes the gap A16 flagged in A3 Step 10.
+- Consequence: under strict I2 (NN reach), per-tick soldered covariance, one qubit per site and reversibility, NOTHING moves.
+
+**Gate products**
+- Compass gates commute up to phase only at θ ∈ (π/2)Z.
+- Commuting ticks never transport.
+- The star family S_x is covariant but static.
+
+**Clifford ticks**
+- Classified exactly: M = 1 + P·N0·adj(P).
+- A Clifford tick moves only if det N0 ≠ 0, and then its reach is ≥ 4.
+- A reach-4 covariant mover exists: U = A·B with star and face gates. It is exactly covariant with signs (24×3 checks, 0 failures), has no sublattice and no schedule, and has a light cone of 4t.
+- BUT what moves is a spreading web of links (a fractal scrambler):
+  - no gliders;
+  - no invariant stabilizer vacuum survives a moving tick.
+- Non-Clifford ticks at reach 2–3 are OPEN.
+
+**Minimal relaxations**
+1. longer reach;
+2. supplied sublattice (A10; loses covariance);
+3. quasi-locality;
+4. statistical covariance;
+5. multi-qubit sites;
+6. IRREVERSIBLE covariant moves (A1 D23 lock-and-move).
+
+**Coordinator synthesis plus verification (CHECKED; toys/verify_lock_and_move.py).**
+- Theorem N covers REVERSIBLE ticks only.
+- A7 already forces readable moving records to RE-FORM at each step, which is irreversible.
+- The A1 D23 lock-and-move channel K_v = 3^{-1/2} P_v ⊗ T_v (six axis directions) has three properties:
+  - it is complete (Σ P_v/3 = 1);
+  - it is exactly covariant under all 24 soldered proper rotations;
+  - it gives a persistent walk: from content +x it continues with 1/3, turns with 2/3, and never reverses.
+- This is the clean covariant one-site move: the record re-forms next door and its new content points the way it stepped (content-locked, handed per A1 D22).
+- Cost: a six-direction (non-orthogonal) menu, which is a named conditional, not fixed by the axioms.

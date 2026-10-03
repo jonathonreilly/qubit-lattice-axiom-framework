@@ -1,0 +1,30 @@
+ring L=8, sigma=[1, -1, -1, 1, 1, -1, -1, 1], m=0.6
+residuals  ||L U L^-1 - (-1)^N U|| / ||U||   and   ||L U L^-1 - U|| / ||U||
+  S1 step: full swap (even) + partial swap pi/2-m (odd)                  doubler 1.7e-16   plain 1.4e+00   (unitarity 3.1e-15)
+  + |11> phase 0.9 on odd (equal-sign) bonds                             doubler 1.7e-16   plain 1.4e+00   (unitarity 7.3e-15)
+  + |11> phase 0.9 on even (flipped, full-swap) bonds                    doubler 1.7e-16   plain 1.4e+00   (unitarity 5.4e-15)
+  + diagonal NNN phase n_s n_{s+2} (0.7)                                 doubler 1.7e-16   plain 1.4e+00   (unitarity 3.1e-15)
+  + staggered on-site phase 0.3 (-1)^s n_s                               doubler 1.7e-16   plain 1.4e+00   (unitarity 3.4e-15)
+  BREAK: even layer partial, theta_e = pi/2 - 0.1                        doubler 2.8e-01   plain 1.4e+00   (unitarity 4.8e-15)
+  BREAK: + NNN partial swap layer exp(-i 0.3 SWAP_{s,s+2})               doubler 1.0e+00   plain 1.4e+00   (unitarity 1.1e-14)
+  + extra FULL-swap layer on flipped pairs (0,2),(1,3),(4,6),(5,7)       doubler 1.4e+00   plain 2.7e-16   (unitarity 3.8e-15)
+  small steps: theta_e = theta_o = 0.05 (no full swap)                   doubler 1.4e+00   plain 1.4e-01   (unitarity 8.2e-15)
+
+2-excitation sector, S1 step (m=0.6): hard-core qubit evolution vs free-boson evolution of the same one-particle step
+  start in flipped (sigma sigma = -1)  : max double-occupancy weight of free bosons 2.50e-31, max ||qubit - free|| over 12 ticks 3.14e-15
+  start in equal-sign (sigma sigma = +1): max double-occupancy weight of free bosons 5.99e-01, max ||qubit - free|| over 12 ticks 9.43e-01
+
+one-excitation spectrum on a ring of 4000 sites (closed form + check):  pi-rotation invariance and doubler mass
+  theta_e=1.571 theta_o=1.271: dist(spectrum, spectrum+pi) = 0.003;  cone masses: ordinary |te-to| = 0.300, doubler pi-te-to = 0.300; occupied arc length = 5.083 + gap(s)
+  theta_e=1.271 theta_o=1.571: dist(spectrum, spectrum+pi) = 0.003;  cone masses: ordinary |te-to| = 0.300, doubler pi-te-to = 0.300; occupied arc length = 5.083 + gap(s)
+  theta_e=1.521 theta_o=1.221: dist(spectrum, spectrum+pi) = 0.100;  cone masses: ordinary |te-to| = 0.300, doubler pi-te-to = 0.400; occupied arc length = 4.883 + gap(s)
+  theta_e=0.600 theta_o=0.600: dist(spectrum, spectrum+pi) = 1.940;  cone masses: ordinary |te-to| = 0.000, doubler pi-te-to = 1.942; occupied arc length = 2.400 + gap(s)
+  theta_e=0.050 theta_o=0.050: dist(spectrum, spectrum+pi) = 3.041;  cone masses: ordinary |te-to| = 0.000, doubler pi-te-to = 3.042; occupied arc length = 0.200 + gap(s)
+  theta_e=1.200 theta_o=0.900: dist(spectrum, spectrum+pi) = 0.742;  cone masses: ordinary |te-to| = 0.300, doubler pi-te-to = 1.042; occupied arc length = 3.600 + gap(s)
+
+massless walk theta_e = theta_o = theta: band slope at the cone vs cos(M_doubler/2)
+  theta=1.5708: slope 1.000000   cos(M/2) = 1.000000   (cells per tick)
+  theta=1.2000: slope 0.932039   cos(M/2) = 0.932039   (cells per tick)
+  theta=0.6000: slope 0.564642   cos(M/2) = 0.564642   (cells per tick)
+  theta=0.1000: slope 0.099833   cos(M/2) = 0.099833   (cells per tick)
+  theta=0.0060: slope 0.005999   cos(M/2) = 0.006000   (cells per tick)

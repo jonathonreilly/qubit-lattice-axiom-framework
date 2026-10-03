@@ -1177,3 +1177,35 @@ New conditional G1 (the matter half of F4): a uniform lapse or a uniform stretch
 - NOT re-run: the 16/48-modulation span (D9) and the real-space delay, bending and fall runs. Those are the agent's own.
 
 **My reading for the owner.** The field route now has a working matter side. If matter is tied to the field in the simplest fixed way, light bends by the full amount and everything falls alike. The condition is that weight carried in links is not itself stretched, and the field's own bookkeeping already forbids that. The diagonal kind of gravitational ripple is felt only through a fixed in-block shuffle (supplied).
+
+## 02:20 (real) A25 (real-space covariant spin-2 tick, "Yee for spin-2") LANDED → c8/A25/REPORT.md (+ stag2, check_hp, check_cp, check_colloc, limits)
+
+**The staggered construction works.**
+- **Layout.** h_ii and π_ii sit at vertices; h_ij and π_ij at faces. In the curl-split form, C = curl h sits at edges and cubes.
+- **Each layer** is NN (face-NN on the Z³ parity roles; composed reach 3) and keeps the momentum and Hamiltonian constraint rows by exact identities.
+- **Symbol** = A23's to 1.3e-15: 2 tensor polarizations at z = 1, no spatial or time doubler, no extra mode. Stable for τ < 1/√3.
+- **Covariance.** Exact under all 48 cubic maps about vertex- or cube-role sites, with components relabelled and the role pattern carried along (𝒪 L_s 𝒪⁻¹ = L_s′). Only 16 of 48 about face- or edge-role sites.
+- **Price, new conditional F6.**
+  - A fixed period-2 role pattern, 1 of 8 translates. It is a conserved, superselected state label, the same 8 as the repo's U(1) role compiler.
+  - Plus a payload beyond one qubit (unbounded real content per role).
+  - A25 sits outside Theorem N through escapes 2 (pattern) and 3 (more than one qubit).
+
+**Theorem A (EXACT).** Take h and ξ collocated, with a covariant gauge generator of the standard form δh = gξᵀ + ξgᵀ for any covariant local g.
+- Then g(π,π,π) = 0, because the corner is rotation-fixed and T1 has no invariant vector.
+- Every exactly gauge-invariant potential then has V(π,π,π) = 0 on all six directions: a doubler.
+- Symmetric differences give exactly 8 decoupled copies of the staggered theory (the taste identity, checked 0.0).
+- Wilson-type and one-sided patches break gauge invariance, are unstable (max |eig| up to 4.79) or lose covariance.
+- Lattice-modified generators are OPEN. Lemma C: they must vanish on the transverse components along the zone edges.
+
+**Coordinator check** (toys/verify_A25_symbol.py; own Fourier code with s_k = 2 sin(k/2), V = ¼ h:inc h, M = 2 − δδ)
+- Tick K(τ/2)P(τ)K(τ/2), τ = ½, 400 momenta including zone edges and the corner. The characteristic polynomial = (z−1)⁸(z² − 2cz + 1)² with c = 1 − τ²s²/2, to 5.8e-15. So EXACTLY 2 polarizations and no extra mode. (Plain eig miscounts here because of Jordan blocks for the gauge modes; the characteristic polynomial and power traces settle it.)
+- Continuous time (the Option R form, H = ½πMπ + V): char poly of M·V = z⁴(z − s²)², to 1.4e-14. So 2 modes with ω² = s², and NO negative ω² from the conformal sector.
+- |VD| = 4e-15 (gauge invariance). R·M ∝ Div·Dᵀ to 7e-15 (constraint propagation).
+- Collocated central differences: V = 0 exactly at all 8 zone corners (doublers).
+
+**COORDINATOR CORRECTION K1 (cross-lane; supersedes A27's and the draft's wording).**
+- A27 said: "A smooth covariant field generator needs no staggered roles, and there is no doubler below the aliasing bound."
+- That holds for TIME doublers only. Theorem A is about the SPATIAL operators (g(k) and V(k)), so it applies equally to a continuous-time generator.
+- Under Option R, a collocated, covariant field with exact standard gauge invariance therefore has a spatial doubler at (π,π,π), or 8 graviton copies with symmetric differences.
+- **Corrected statement:** Option R removes the field's time doubler and its tick-schedule roles. It does NOT remove the need for a role pattern in space (F6), unless a lattice-modified gauge symmetry is found (open, A25 §6.3) or 8 graviton copies are accepted.
+- The draft's §0 "What it keeps" and decision 13 must change. Sent to A29 for an independent ruling.

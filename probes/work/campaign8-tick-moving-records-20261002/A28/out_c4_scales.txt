@@ -1,0 +1,21 @@
+n_b0 = 0.254 m^-3 ; IGM columns: z<6 6.972e+26, z<1090 1.374e+30 nucleons/m^2
+kappa_max (per contact tick, v_L = 1) = tau_allowed / (A * column):
+  medium                                                            H-pt      H-ball      H-atom
+  silica fibre, 1 km (0.2 dB/km at 1550 nm)                     2.22e+34    3.92e-06    9.88e-16
+  pure water, 1 m (abs ~5e-3/m at 420 nm)                       5.30e+36    9.36e-04    2.36e-13
+  Earth atmosphere, zenith (extra tau <~ 0.05)                  5.13e+36    9.06e-04    2.29e-13
+  Galactic ISM, 1 kpc at n_H = 1/cm^3 (extra tau <~ 0.1)        1.48e+42    2.61e+02    6.58e-08
+  IGM z<6 (quasar continua; extra tau <~ 0.1)                   9.15e+40    1.62e+01    4.08e-09
+  since recombination z<1090 (CMB; extra tau <~ 0.1)            4.64e+37    8.21e-03    2.07e-12
+  (kappa_max > 1 means no constraint: recording on every contact tick is allowed)
+
+A19 bound 1e-90 /nucleon/tick at ~E_P each = 2.19e-11 W/kg of matter
+  H-pt (1 recorded site/nucleon)     edge sites/nucleon 6.00e+00; floor lambda_min = 5.0e-06 -> formation strength c <~ 3.3e-86/tick -> time to record a true excitation ~ 1.6e+42 s
+  H-pt (1 recorded site/nucleon)     edge sites/nucleon 6.00e+00; floor lambda_min = 5.3e-04 -> formation strength c <~ 3.1e-88/tick -> time to record a true excitation ~ 1.7e+44 s
+  H-ball (r = 0.84 fm/nucleon)       edge sites/nucleon 3.40e+40; floor lambda_min = 5.0e-06 -> formation strength c <~ 5.9e-126/tick -> time to record a true excitation ~ 9.2e+81 s
+  H-ball (r = 0.84 fm/nucleon)       edge sites/nucleon 3.40e+40; floor lambda_min = 5.3e-04 -> formation strength c <~ 5.6e-128/tick -> time to record a true excitation ~ 9.7e+83 s
+  (age of the universe ~ 4.36e+17 s = 8.08e+60 ticks)
+  creep: c = 5.4e-44/tick, floor 5.0e-06: advance over the age ~ 2.18e+12 sites = 3.52e-23 m
+  creep: c = 5.4e-44/tick, floor 5.3e-04: advance over the age ~ 2.31e+14 sites = 3.74e-21 m
+  creep: c = 1.0e-03/tick, floor 5.0e-06: advance over the age ~ 4.04e+52 sites = 6.53e+17 m
+  creep: c = 1.0e-03/tick, floor 5.3e-04: advance over the age ~ 4.28e+54 sites = 6.92e+19 m

@@ -1,0 +1,13 @@
+partitions with nontrivial support on both sites: 12
+parallel g=0                         commuting pairs: 144
+perpendicular g=pi/2                 commuting pairs: 1
+    T_x blocks [[(0, 1), (1, 0)], [(0, 0), (1, 1)]] | T_z blocks [[(0, 1), (1, 0)], [(0, 0), (1, 1)]]
+g=pi/3                               commuting pairs: 0
+g=2pi/3 (axis d-branch, cos=-1/2)    commuting pairs: 0
+g=acos(1/3)                          commuting pairs: 0
+g=1 rad                              commuting pairs: 0
+g=pi/4                               commuting pairs: 0
+g=0.123                              commuting pairs: 0
+exact angle sets (t = tan(g/2); t=0 parallel, t=1 perpendicular) -> number of pairs:
+    (0,) -> 143 pairs
+    (-1, 0, 1) -> 1 pairs

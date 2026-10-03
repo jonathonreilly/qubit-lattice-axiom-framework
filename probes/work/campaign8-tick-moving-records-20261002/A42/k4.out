@@ -1,0 +1,6 @@
+(a) <a,b> has order 24 ; a^2 = half-turn about z: [[-1, 0, 0], [0, -1, 0], [0, 0, 1]]
+    homomorphisms found: 156; with a^2 != 1: 0; image types: [(1, 'rotations only', 'a acts as rotation'), (2, 'rotations only', 'a acts as rotation'), (2, 'with reflections', 'a acts as reflection'), (6, 'with reflections', 'a acts as reflection')]
+(b) graded self-commuting:  C1: True  D=span{1,n}: True  span{1,gamma}: False  M2: False
+    two Majoranas gamma_t = cos t g1 + sin t g2 anticommute iff t1-t2 = pi/2 mod pi: [False, False, False, True, False, False, False]
+(c) coefficient at 2e of M^dag M with M_{-e}=M_e is M_e^T M_e; Frobenius norm for a random M_e: 11.1932 (zero only for M_e = 0, since tr M_e^T M_e = |M_e|^2)
+(d) 1D two-way Majorana shift: CAR preserved=True; reflection-covariant with onsite swap=True; with trivial onsite action=False

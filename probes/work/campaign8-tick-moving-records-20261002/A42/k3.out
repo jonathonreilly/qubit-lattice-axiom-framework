@@ -1,0 +1,12 @@
+(a) n_z . n_x = sqrt(2)*sin(2*theta)/2 - cos(2*theta)/4 + 1/4
+    perpendicular at theta in {0, -pi/2 + atan(4*sqrt(2)/7)/2}
+    parallel (|dot|=1) at theta in {-atan(2*sqrt(2))/2 + pi/2}
+    theta = 0  n_z = [0, 0, 1]  n_x = [1, 0, 0]
+    theta = atan(sqrt(2))  n_z = [sqrt(3)/3, sqrt(3)/3, sqrt(3)/3]  n_x = [sqrt(3)/3, sqrt(3)/3, sqrt(3)/3]
+    theta = -atan(2*sqrt(2))  n_z = [-2/3, -2/3, 1/3]  n_x = [1/3, -2/3, -2/3]
+    d-branch: n_z = d_z, n_x = [0, sqrt(2)/2, -sqrt(2)/2]  dot = -1/2
+(b) n_a = e_a                max |[alpha(sw_x), alpha(b_y)]| over mixed controls = 1.2172  (nonzero => not an automorphism)
+(b) n_a = (I - 2ww^T) e_a    max |[alpha(sw_x), alpha(b_y)]| over mixed controls = 0.3542  (nonzero => not an automorphism)
+(c) C_s'  trace support [(-1, 0, 0), (0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0), (1, 0, 0)]  |supp alpha^t(X0)| t=1..8: [7, 13, 43, 49, 79, 85, 259, 265]  |supp alpha^t(Z0)|: [7, 13, 43, 49, 55, 85, 259, 265]
+(c) C_s   trace support [(-1, 0, 0), (0, -1, 0), (0, 0, -1), (0, 0, 1), (0, 1, 0), (1, 0, 0)]  |supp alpha^t(X0)| t=1..8: [1, 7, 13, 43, 49, 55, 85, 259]  |supp alpha^t(Z0)|: [7, 13, 43, 49, 55, 85, 259, 265]
+(c) L_s   trace support []  |supp alpha^t(X0)| t=1..8: [7, 1, 7, 1, 7, 1, 7, 1]  |supp alpha^t(Z0)|: [1, 1, 1, 1, 1, 1, 1, 1]

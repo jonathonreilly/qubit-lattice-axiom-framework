@@ -1,0 +1,23 @@
+[i] Neel LSWT vs 12 J sqrt(1-g^2) (g = mean cos), all 8 folded bands at 40 random k: max dev 3.6e-14; slope 4 sqrt(3) = 6.9282
+    w/|k| at |k|=0.2 along [1. 0. 0.]: 6.90516
+    w/|k| at |k|=0.2 along [0.577 0.577 0.577]: 6.91282
+    w/|k| at |k|=0.2 along [0.707 0.707 0.   ]: 6.91090
+[ii] spiral w at k=(0,0,pi): [0.     6.9282 6.9282 9.798 ]
+[ii] spiral w at k=(pi,0,0): [2.1347 5.2523 8.2712 9.5626]
+[ii] spiral w at k=(0,pi,pi): [2.1347 5.2523 8.2712 9.5626]
+[ii] spiral w at k=(pi,pi,pi): [0.     6.9282 6.9282 9.798 ]
+[ii] spiral w at k=(pi/2,pi/2,pi/2): [0.     6.9282 6.9282 9.798 ]
+[ii] spiral w at k=(pi/2,pi/2,-pi/2): [0.     6.9282 6.9282 9.798 ]
+[ii] spiral w at k=(pi,pi,0): [0.     6.9282 6.9282 9.798 ]
+[ii] lowest branch: min over 4000 random k = 0.2964 at k = [3.059 3.078 0.009] (away from k=0 nothing soft)
+[ii] in-plane phase 0.0: E/site = -1.732050807569
+[ii] in-plane phase 0.3: E/site = -1.732050807569
+[ii] in-plane phase 1.1: E/site = -1.732050807569
+    spiral soft branch w/|k| at |k|=0.2 along [1. 0. 0.]: 2.80792
+    spiral soft branch w/|k| at |k|=0.2 along [0.577 0.577 0.577]: 2.82686
+    spiral soft branch w/|k| at |k|=0.2 along [ 0.707 -0.707  0.   ]: 2.81421
+    spiral soft branch w/|k| at |k|=0.2 along [0.707 0.707 0.   ]: 2.82049
+[ii] greedy minimization of the pure Moriya energy, 6 random starts on 4^3: best E/site = -1.73205 (spiral: -1.73205)
+[iii] soldered ansatz, L=6 antiperiodic, half filling: gap at the filling level 3.464; |<s_x>| = 2.2e-16; per bond <s.s> = +0.0798, <(e.s)(e.s)> = -0.0798, <e.(s x s)> = -1.0e-17  (unprojected)
+[iii] singlet  ansatz, L=6 antiperiodic, half filling: gap at the filling level 0.000; |<s_x>| = 9.8e-02; per bond <s.s> = -0.1631, <(e.s)(e.s)> = -0.0542, <e.(s x s)> = -9.0e-04  (unprojected)
+[iii] periodic L=6: zero modes of the soldered hopping = 16 (eight nodes x two), filling level at E=0 (half filling = 216 of 432 states; levels below 0: 208)

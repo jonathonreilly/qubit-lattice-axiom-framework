@@ -1,0 +1,31 @@
+== the four actions (menu matrices) ==
+trivial     hom-failures=0 det={1} split={'A1': np.int64(3), 'A2': np.int64(0), 'E': np.int64(0), 'T1': np.int64(0), 'T2': np.int64(0)} |image|=1 commutant-dim(M3R)=9
+sign_twist  hom-failures=0 det={1} split={'A1': np.int64(1), 'A2': np.int64(2), 'E': np.int64(0), 'T1': np.int64(0), 'T2': np.int64(0)} |image|=2 commutant-dim(M3R)=5
+axis        hom-failures=0 det={1} split={'A1': np.int64(0), 'A2': np.int64(1), 'E': np.int64(1), 'T1': np.int64(0), 'T2': np.int64(0)} |image|=6 commutant-dim(M3R)=2
+full        hom-failures=0 det={1} split={'A1': np.int64(0), 'A2': np.int64(0), 'E': np.int64(0), 'T1': np.int64(1), 'T2': np.int64(0)} |image|=24 commutant-dim(M3R)=1
+quarter turn about z acts on Bloch vectors as:
+  trivial     [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]  eigenvalues [1.0, 1.0, 1.0]
+  sign_twist  [[1.0, 0.0, 0.0], [0.0, -1.0, 0.0], [0.0, 0.0, -1.0]]  eigenvalues [1.0, -1.0, -1.0]
+  axis        [[-0.0, -1.0, -0.0], [-1.0, -0.0, -0.0], [-0.0, -0.0, -1.0]]  eigenvalues [1.0, -1.0, -1.0]
+  full        [[0.0, -1.0, 0.0], [1.0, 0.0, 0.0], [0.0, 0.0, 1.0]]  eigenvalues [1j, -1j, (1+0j)]
+onsite turns that commute with the whole image (centralizer in SO(3)), spot tests:
+  trivial     commuting: ['half-turn w', 'rot x 0.7', 'half-turn (y+z)', 'rot w 2pi/3', 'rot w 0.7']
+  sign_twist  commuting: ['rot x 0.7', 'half-turn (y+z)']
+  axis        commuting: ['half-turn w']
+  full        commuting: []
+
+== covariance of explicit nearest-neighbour ticks (fail counts; 0 = exactly covariant) ==
+tick                                   triv twist axis full | SU2 Pauli  C3   T flip
+onsite rot x (0.7)                        0     0   56   56 |   9     4   3   7    0
+onsite rot z (0.7)                        0    24   56   56 |   9     4   3   7    0
+onsite half-turn w                        0    36    0   54 |   9     9   0   9    0
+onsite half-turn (y+z)                    0     0   48   56 |   9     4   3   7    0
+Ising x (0.37)                            0     0   48   48 |   9     0   3   3    2
+Ising z (0.37)                            0     0   48   48 |   9     0   3   3    2
+Ising w (0.37)                            0    36    0   54 |   9     9   0   9    3
+Ising z (pi/4)                            0     0   48   48 |   9     0   3   3    0
+mover C_s = CZ_z . H_xz                   0    24   60   64 |   9     4   3   7    0
+mover C_s' = CZ_z . H_yz                  0     0   60   64 |   9     4   3   7    0
+w-controlled: Ising w . half-turn w       0    36    0   54 |   9     9   0   9    3
+
+nontrivial (alpha(P_0) != P_0 for some P): {'onsite rot x (0.7)': True, 'onsite rot z (0.7)': True, 'onsite half-turn w': True, 'onsite half-turn (y+z)': True, 'Ising x (0.37)': True, 'Ising z (0.37)': True, 'Ising w (0.37)': True, 'Ising z (pi/4)': True, 'mover C_s = CZ_z . H_xz': True, "mover C_s' = CZ_z . H_yz": True, 'w-controlled: Ising w . half-turn w': True}

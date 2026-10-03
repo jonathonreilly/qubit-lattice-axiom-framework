@@ -1,0 +1,40 @@
+[A] SU(2) lifts: max |U s_a U^dag - sum_b R_ba s_b| over 24 turns = 3.1e-16
+[B] nodes of h(k)=sum sin k_a s_a at the eight points k in {0,pi}^3
+  n=(0, 0, 0): ||h(k0)||=0.0e+00  Clifford defect 0.0e+00  velocity tensor diag [1. 1. 1.]  hand +1  slopes over 300 dirs: lower -1.00000000..-1.00000000, upper 1.00000000..1.00000000
+  n=(0, 0, 1): ||h(k0)||=1.2e-16  Clifford defect 0.0e+00  velocity tensor diag [ 1.  1. -1.]  hand -1  slopes over 300 dirs: lower -1.00000000..-1.00000000, upper 1.00000000..1.00000000
+  n=(0, 1, 0): ||h(k0)||=1.2e-16  Clifford defect 0.0e+00  velocity tensor diag [ 1. -1.  1.]  hand -1  slopes over 300 dirs: lower -1.00000000..-1.00000000, upper 1.00000000..1.00000000
+  n=(0, 1, 1): ||h(k0)||=1.2e-16  Clifford defect 0.0e+00  velocity tensor diag [ 1. -1. -1.]  hand +1  slopes over 300 dirs: lower -1.00000000..-1.00000000, upper 1.00000000..1.00000000
+  n=(1, 0, 0): ||h(k0)||=1.2e-16  Clifford defect 0.0e+00  velocity tensor diag [-1.  1.  1.]  hand -1  slopes over 300 dirs: lower -1.00000000..-1.00000000, upper 1.00000000..1.00000000
+  n=(1, 0, 1): ||h(k0)||=1.2e-16  Clifford defect 0.0e+00  velocity tensor diag [-1.  1. -1.]  hand +1  slopes over 300 dirs: lower -1.00000000..-1.00000000, upper 1.00000000..1.00000000
+  n=(1, 1, 0): ||h(k0)||=1.7e-16  Clifford defect 0.0e+00  velocity tensor diag [-1. -1.  1.]  hand +1  slopes over 300 dirs: lower -1.00000000..-1.00000000, upper 1.00000000..1.00000000
+  n=(1, 1, 1): ||h(k0)||=1.7e-16  Clifford defect 0.0e+00  velocity tensor diag [-1. -1. -1.]  hand -1  slopes over 300 dirs: lower -1.00000000..-1.00000000, upper 1.00000000..1.00000000
+  hands: [1, -1, -1, 1, -1, 1, 1, -1], sum 0, (+)4 (-)4
+  |E(k0+q)| = sqrt(sum sin^2 q_a) at all 8 nodes: max dev 4.4e-16 (same speed and same lattice corrections at every node)
+  E/|q| at |q|=0.2 along [1. 0. 0.]: 0.993347
+  E/|q| at |q|=0.2 along [0.577 0.577 0.577]: 0.997779
+  E/|q| at |q|=0.2 along [0.707 0.707 0.   ]: 0.996670
+  bands: 2 in total (2x2 symbol); min |E| on a 40^3 grid at distance >=0.3 from every node: 0.3090
+[C] Bloch covariance U(R) h(k) U(R)^dag = h(Rk): max dev over 24 turns x 40 k = 8.5e-16
+[C] real-space covariance on the 4^3 torus (128 states), all 24 turns about a site: max dev 1.6e-16; zero modes 16 (expect 16)
+[C] inversion (spin axial): |PHP + H| = 0.0e+00;  |eps H eps + H| = 0.0e+00;  |(eps P) H (eps P)^T - H| = 0.0e+00
+[C] time reversal s_y K: |s_y conj(H) s_y - H| = 0.0e+00
+[D] class sizes from the 24 turns: [1 8 3 6 6] (expect [1 8 3 6 6])
+[D] |chi_1/2|^2 per class = [4.00000000e+00 1.00000000e+00 1.49975978e-32 2.00000000e+00
+ 1.49975978e-32]  -> End(spinor) contains T1 x1, A1 x1
+[D] linear 2-dim rep A1+A1 : End contains T1 x0  (no vector of internal operators -> no covariant k.Gamma term)
+[D] linear 2-dim rep A1+A2 : End contains T1 x0  (no vector of internal operators -> no covariant k.Gamma term)
+[D] linear 2-dim rep A2+A2 : End contains T1 x0  (no vector of internal operators -> no covariant k.Gamma term)
+[D] linear 2-dim rep E     : End contains T1 x0  (no vector of internal operators -> no covariant k.Gamma term)
+[D] linear rep T1    : End contains T1 x1
+[D] linear rep A1+T1 : End contains T1 x3
+[D] vacuum + spin-1/2 doublet (3 states): (lift of a quarter turn)^4 = diag[ 1. -1. -1.] -> conjugation by it is not the identity on M_3
+[E] spin-1 walk sum sin k_a S^a: middle band max |E| over 200 random k = 6.4e-16 (exactly flat)
+[E] covariant triplet hop (p=0.31, r=-0.47, q=0.5) at t=0.01 along [1. 0. 0.]: E-E(Gamma) = [-1.0031e-02  4.7000e-05  9.9690e-03]  (middle/t^2 = 0.4700)
+[E] covariant triplet hop (p=0.31, r=-0.47, q=0.5) at t=0.02 along [1. 0. 0.]: E-E(Gamma) = [-0.020123  0.000188  0.019875]  (middle/t^2 = 0.4700)
+[E] covariant triplet hop (p=0.31, r=-0.47, q=0.5) at t=0.01 along [0.577 0.577 0.577]: E-E(Gamma) = [-1.0005e-02 -5.0000e-06  9.9950e-03]  (middle/t^2 = -0.0500)
+[E] covariant triplet hop (p=0.31, r=-0.47, q=0.5) at t=0.02 along [0.577 0.577 0.577]: E-E(Gamma) = [-2.002e-02 -2.000e-05  1.998e-02]  (middle/t^2 = -0.0500)
+[E] A1+T1, |alpha+i beta|=1.00, gamma=1.0: max|H^2 - gamma^2 k^2| = 1.78e-15; volume element G1G2G3 eigenvalues [0.+1.j 0.+1.j 0.+1.j 0.+1.j]
+[E] A1+T1, |alpha+i beta|=1.00, gamma=1.0: max|H^2 - gamma^2 k^2| = 1.78e-15; volume element G1G2G3 eigenvalues [0.+1.j 0.+1.j 0.+1.j 0.+1.j]
+[E] A1+T1, |alpha+i beta|=1.00, gamma=0.5: max|H^2 - gamma^2 k^2| = 1.54e+01; volume element G1G2G3 eigenvalues [0.+0.5j   0.+0.5j   0.+0.125j 0.+0.5j  ]
+[E] A1+T1, |alpha+i beta|=1.00, gamma=0.0: max|H^2 - gamma^2 k^2| = 1.22e+01; volume element G1G2G3 eigenvalues [nan]
+[E] walk (x) inert spinor: covariance under U(x)U max dev 9.9e-16; spectrum at k=0 with d*s.s' (d=0.1): [-0.3  0.1  0.1  0.1] (singlet/triplet split) -> the doubled cone needs d=0 or a flavour symmetry

@@ -357,6 +357,18 @@ The background-held pattern of section 10 does not give light here: ripples alwa
 - **Records.** Records holding the background's own local direction keep it calm; other contents disturb it. A single record shows which of the 8 layouts is the real one, which is expected for a pattern held in the state.
 - **What stays open.** Backgrounds whose spots share their possibilities instead of each pointing one way (decision 23), groups of ripples rather than single ones, and A39's question: whether quiet empty space can carry light at all.
 
+### 13. Late result: can quiet empty space carry light? (A39; checked by me, not hostile-reviewed)
+Not if records can sense the rule's energy directly and empty space is its calmest state: then the gentlest ripples spread slowly, like waves in a magnet, never like light (exact, under stated conditions).
+- **The tension, made exact.** Suppose three things hold: whatever triggers records can sense every part of the rule's energy; empty space is exactly quiet; and the ripples are of the usual kind. Then empty space must be the rule's calmest state, and the rule must be calm at every spot of it. Such rules only allow ripples whose energy grows with the square of their wavenumber: slow and heavy-like, not light. This was derived in the lane; published results agree (a comparison, not adopted).
+- **Three ways out, each with a price.**
+  - **Light invisible to records.** Records form only on matter, and light is noticed only when matter absorbs it, which is how photons are actually detected. The price: places that never record, a law that treats kinds of places differently, and matter that never appears out of empty space (real physics does allow that).
+  - **Slow, energy-selective recording.** Records form only when energy is actually delivered, slowly, as real detectors do. Empty space is then almost, not exactly, quiet. The price: a small memory at every spot, which the axioms do not supply.
+  - **Empty space not the calmest state.** It is possible, but it needs a painted sign pattern and lets energies drop below the vacuum's. It is also fragile: in the toy it survived a gentle passing disturbance only 72% of the time, against 100% for a calmest-state vacuum.
+- **What does not help.**
+  - Light built from pairs of slow ripples is still slow at the bottom (checked on a 64×64 grid).
+  - "Records form only next to records" moves the problem to matter's edges. A light-carrying emptiness next to a record is never exactly quiet: in my check its smallest edge value is about 0.006, while the aligned emptiness gives zero.
+- **A further decision for you.** Which way out, if any? (Light invisible to records ties to decisions 21 and 24; slow energy-selective recording ties to decision 9, memory.)
+
 ## Your menu decision (Q7 stands)
 
 My overnight note was too strong; the reviewers caught it.

@@ -1,0 +1,19 @@
+== 1D ring of 13, site 0 recorded (content Z=+1); unrecorded sites 1..12 -> qubits 0..11 ==
+  J>0 antiferromagnetic    wall x1.0 : GS gap to next 3.516e-01; edge-star U={1,2} min eig 1.048e-02; bulk star min eig 3.151e-03
+  J>0 antiferromagnetic    wall x3.0 : GS gap to next 1.530e-01; edge-star U={1,2} min eig 1.195e-04; bulk star min eig 2.641e-03
+  J>0 antiferromagnetic    wall x10.0: GS gap to next 3.592e-01; edge-star U={1,2} min eig 2.968e-06; bulk star min eig 3.028e-03
+  J>0 antiferromagnetic    wall x30.0: GS gap to next 4.080e-01; edge-star U={1,2} min eig 5.233e-08; bulk star min eig 3.169e-03
+  J<0 aligned              wall x1.0 : GS gap to next 1.162e-01; edge-star U={1,2} min eig 3.389e-31; bulk star min eig 1.418e-31
+== 2D 4x3 torus, site (0,0) recorded (content Z=+1); 11 unrecorded qubits ==
+  J>0 antiferromagnetic   : GS gap to next 2.779e+00; edge star U (4 sites) min eig 1.519e-04
+  J<0 aligned             : GS gap to next 5.994e-01; edge star U (4 sites) min eig 4.464e-33
+== finite-size gaps on rings (z check), H = J sum sigma.sigma ==
+  N= 6: antiferromagnetic gap 2.7390 (gap*N 16.434);  aligned gap 2.0000 (gap*N^2 72.000; formula 4(1-cos 2pi/N) = 2.0000)
+  N= 8: antiferromagnetic gap 2.0907 (gap*N 16.726);  aligned gap 1.1716 (gap*N^2 74.981; formula 4(1-cos 2pi/N) = 1.1716)
+  N=10: antiferromagnetic gap 1.6930 (gap*N 16.930);  aligned gap 0.7639 (gap*N^2 76.393; formula 4(1-cos 2pi/N) = 0.7639)
+  N=12: antiferromagnetic gap 1.4234 (gap*N 17.081);  aligned gap 0.5359 (gap*N^2 77.169; formula 4(1-cos 2pi/N) = 0.5359)
+== static structure factor of the conserved density, N=12 ring ==
+  antiferromagnetic: k=0.524  S(k)=0.1925  S(k)/k=0.3677
+  antiferromagnetic: k=1.047  S(k)=0.4114  S(k)/k=0.3929
+  antiferromagnetic: k=1.571  S(k)=0.6787  S(k)/k=0.4321
+  aligned vacuum: S(k) of the flip operator = 1 for all k (product state, EXACT)

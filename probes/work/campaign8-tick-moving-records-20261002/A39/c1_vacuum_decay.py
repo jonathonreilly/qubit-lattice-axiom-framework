@@ -66,31 +66,29 @@ def star_mask(x, y):
 smask = [star_mask(x, y) for y in range(Ly) for x in range(Lx)]
 Fdiag = np.mean([((states & m) != 0).astype(float) for m in smask], axis=0)
 
+
 v0 = np.zeros(D, complex); v0[0] = 1.0
-cases = {
-  "A0 pi-flux hopping, no perturbation (stationary, not ground)": Hpi,
-  "A  pi-flux hopping + 0.10 X (not ground)": Hpi + 0.10*X,
-  "A' pi-flux hopping + 0.03 X (not ground)": Hpi + 0.03*X,
-  f"B  pi-flux + h={W+0.5:.3f} n + 0.10 X (ground, gapped)": Hpi + (W+0.5)*Nop + 0.10*X,
-  f"B' pi-flux + h={W+0.5:.3f} n + 0.03 X (ground, gapped)": Hpi + (W+0.5)*Nop + 0.03*X,
-}
-# check Omega's place in the unperturbed many-body spectrum of pi-flux hopping (flip-number blocks)
-for n in range(0, N+1):
-    sel = np.where(nflip == n)[0]
-    if sel.size > 800:  # only report small blocks exactly
-        continue
-    ev = np.linalg.eigvalsh(Hpi[sel][:, sel].toarray())
-    if n <= 2:
-        print(f"  pi-flux block n={n}: lowest {ev.min():.4f}, #states with E<0: {(ev < -1e-9).sum()} of {sel.size}")
-tgrid_stop, num = 80.0, 161
-for name, H in cases.items():
-    H = H.tocsr()
-    psi = expm_multiply(-1j*H, v0, start=0.0, stop=tgrid_stop, num=num, endpoint=True)
-    surv = np.abs(psi[:, 0])**2
-    p = np.abs(psi)**2
-    nd = p @ nflip / N
-    Fx = p @ Fdiag
-    late = slice(num//2, num)
-    print(f"{name}\n   survival: min {surv.min():.4f}, mean over t in [40,80] {surv[late].mean():.4f}; "
-          f"flip density mean [40,80] {nd[late].mean():.4f} (max {nd.max():.4f}); "
-          f"star-weight chance mean [40,80] {Fx[late].mean():.4f} (max {Fx.max():.4f})")
+# (1) Resonant manifold: unperturbed states within |E - E_Omega| < w, by flip-number block.
+def count_res(Hd, w):
+    tot = 0
+    for n in range(1, N+1):
+        sel = np.where(nflip == n)[0]
+        ev = np.linalg.eigvalsh(Hd[sel][:, sel].toarray())
+        tot += int((np.abs(ev) < w).sum())
+    return tot
+HB0 = (Hpi + (W+0.5)*Nop).tocsr()
+for w in (0.05, 0.2):
+    print(f"states with |E - E_Omega| < {w}: pi-flux (Omega not ground) {count_res(Hpi.tocsr(), w)};"
+          f" with field (Omega ground) {count_res(HB0, w)}  [of {D-1}]")
+# (2) Slow switch-on/off cycle of an off-axis field: delta(t) = dmax*sin^2(pi t / Ttot).
+def cycle(H0m, dmax, Ttot=400.0, dt=0.5):
+    v = v0.copy(); steps = int(Ttot/dt)
+    for k in range(steps):
+        d = dmax*np.sin(np.pi*(k+0.5)*dt/Ttot)**2
+        v = expm_multiply(-1j*dt*(H0m + d*X), v)
+    p = np.abs(v)**2
+    return p[0], p @ nflip / N, p @ Fdiag
+for dmax in (0.03, 0.10):
+    for name, H0m in (("pi-flux, Omega not ground", Hpi.tocsr()), ("pi-flux + field, Omega ground", HB0)):
+        s, nd, fx = cycle(H0m, dmax)
+        print(f"cycle dmax={dmax}: {name:32s} back-to-vacuum prob {s:.4f}; flip density {nd:.2e}; star-weight chance {fx:.2e}")

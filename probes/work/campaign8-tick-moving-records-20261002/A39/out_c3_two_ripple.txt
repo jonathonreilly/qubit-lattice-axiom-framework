@@ -1,0 +1,25 @@
+L=64, relative-coordinate dimension 4095; even n only (odd n carry a half-step twist offset in the relative momentum)
+== Model 1: aligned vacuum, frustration-free rule (eps0 = 4, V = -2) ==
+  K=0.1963 along (1, 0): lowest two-ripple E=1.925636e-02, continuum bottom 2eps(K/2)=1.926109e-02, E/K^2=0.4995
+  K=0.3927 along (1, 0): lowest two-ripple E=7.683970e-02, continuum bottom 2eps(K/2)=7.685888e-02, E/K^2=0.4983
+  K=0.5890 along (1, 0): lowest two-ripple E=1.721944e-01, continuum bottom 2eps(K/2)=1.722387e-01, E/K^2=0.4963
+  K=0.7854 along (1, 0): lowest two-ripple E=3.044004e-01, continuum bottom 2eps(K/2)=3.044819e-01, E/K^2=0.4935
+  K=0.9817 along (1, 0): lowest two-ripple E=4.721811e-01, continuum bottom 2eps(K/2)=4.723149e-01, E/K^2=0.4899
+   local exponents d ln E / d ln K: [1.997 1.99  1.98  1.967]
+  K=0.2777 along (1, 1): lowest two-ripple E=3.851269e-02, continuum bottom 2eps(K/2)=3.852219e-02, E/K^2=0.4995
+  K=0.5554 along (1, 1): lowest two-ripple E=1.536788e-01, continuum bottom 2eps(K/2)=1.537178e-01, E/K^2=0.4983
+  K=0.8330 along (1, 1): lowest two-ripple E=3.443856e-01, continuum bottom 2eps(K/2)=3.444773e-01, E/K^2=0.4963
+  K=1.1107 along (1, 1): lowest two-ripple E=6.087885e-01, continuum bottom 2eps(K/2)=6.089637e-01, E/K^2=0.4935
+  K=1.3884 along (1, 1): lowest two-ripple E=9.443242e-01, continuum bottom 2eps(K/2)=9.446299e-01, E/K^2=0.4899
+   local exponents d ln E / d ln K: [1.997 1.99  1.98  1.967]
+  K=0: lowest bosonic energies [-0.          0.01926103  0.0192798 ] (zero mode = uniformly rotated vacuum family, as expected)
+== Model 2: gapped flips (m = 0.5), NN attraction tuned to put the K=0 pair at E=0 ==
+  tuned V* = -5.979987; single-flip gap m = 0.5; two-flip continuum bottom at K=0 = 1.0
+  K=0.0000: bound pair E=1.787015e-12; next state 1.0014
+  K=0.1963: bound pair E=1.334319e-02, E/K^2=0.3461; next state 1.0207
+  K=0.3927: bound pair E=5.306783e-02, E/K^2=0.3441; next state 1.0782
+  K=0.5890: bound pair E=1.182617e-01, E/K^2=0.3408; next state 1.1736
+  K=0.7854: bound pair E=2.074126e-01, E/K^2=0.3362; next state 1.3058
+  K=0.9817: bound pair E=3.184221e-01, E/K^2=0.3304; next state 1.4736
+   local exponents d ln E / d ln K: [1.992 1.976 1.953 1.921]
+  classical check, t=0: pair 2*eps0+V* = 3.020; 2x2 block 4*eps0+4V* = -5.920; 3x3 block 9*eps0+12V* = -31.260

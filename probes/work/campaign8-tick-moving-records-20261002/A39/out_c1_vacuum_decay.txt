@@ -1,0 +1,11 @@
+pi flux through all 12 plaquettes: OK
+one-flip energies, pi flux: [-2.8284 -2.2361 -2.2361 -2.     -1.     -1.      1.      1.      2.
+  2.2361  2.2361  2.8284]
+one-flip energies, zero flux: [-4. -2. -2. -1. -1. -0.  1.  1.  1.  1.  3.  3.]
+pi-flux one-flip band: min -2.8284 max 2.8284; #negative = 6 of 12
+states with |E - E_Omega| < 0.05: pi-flux (Omega not ground) 139; with field (Omega ground) 0  [of 4095]
+states with |E - E_Omega| < 0.2: pi-flux (Omega not ground) 267; with field (Omega ground) 0  [of 4095]
+cycle dmax=0.03: pi-flux, Omega not ground        back-to-vacuum prob 0.9904; flip density 1.70e-03; star-weight chance 6.52e-03
+cycle dmax=0.03: pi-flux + field, Omega ground    back-to-vacuum prob 1.0000; flip density 2.10e-09; star-weight chance 1.05e-08
+cycle dmax=0.1: pi-flux, Omega not ground        back-to-vacuum prob 0.7192; flip density 8.62e-02; star-weight chance 2.43e-01
+cycle dmax=0.1: pi-flux + field, Omega ground    back-to-vacuum prob 1.0000; flip density 3.31e-08; star-weight chance 1.66e-07

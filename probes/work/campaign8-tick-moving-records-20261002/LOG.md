@@ -1813,3 +1813,40 @@ The coordinator saved the report from the final message.
 - NOT re-run: star-family spectra, isotropic optimum, records scan.
 
 **Status.** Late result, checked by the coordinator; NOT hostile-reviewed. The doc's late section says so.
+
+## 05:52 (real) A39 (can quiet empty space carry light-like ripples?) LANDED → c8/A39/REPORT.md (+ c1–c3)
+The coordinator saved the report from the final message.
+
+**Theorem T (EXACT).** Assume:
+- T1: homogeneous finite range;
+- T2: quiet, F_xΩ = 0;
+- T3: VISIBILITY, h_y ≤ C Σ_{x near y} F_x;
+- T4: gaplessness carried by a local twist, with S(k) ≥ s₀.
+
+Then Ω is the ground state, the change is frustration-free, and ε(k) ≤ (C/s₀)|k−k₀|², so no z = 1 ripple is softest at k₀.
+- **Supporting lemmas (EXACT, derived in-lane):** Lemma V (visibility bridge); the twist lemma (frustration-free version, and a clustering version for ground-state product vacua); a positivity lemma (a linear touching at zero energy forces negative energies).
+- **Recalled theorems:** Gosset–Mozgunov and Masaoka–Soejima–Watanabe are COMPARATOR only.
+- **Gap not covered:** a frustration-free vacuum with a unique ground state, no zero-mode twist and power-law correlations (RK-like).
+
+**Escapes and costs**
+
+| Escape | What it does | Cost |
+|---|---|---|
+| (e) light in the kernel | records blind to light | field places never record; the law tells kinds of places apart; matter number exactly conserved (no vacuum pair creation); light recorded only via matter |
+| (f) energy-selective slow formation | A12 windows | per-site memory; vacuum rate exponentially small, not zero |
+| (b) gating | frees voids | the edges remain; the AFM vacuum is full rank next to records |
+| (a) excited (non-ground) stationary vacuum | — | painted signs; negative energies; fragile: return probability 0.72 vs 1.0000 for a ground-state vacuum under a slow δ = 0.1 cycle; incompatible with (f) |
+| (a′) finite-energy cone | — | a rest-energy offset on light |
+
+- **Composites.** No linear branch at the bottom (EXACT for one ripple and isolated pair bound states; CHECKED on 64²: exponents 1.92–2.00).
+- **Record-carried light** cannot interfere (ARGUED).
+
+**Coordinator check** (toys/verify_A39_edge.py; own exact diagonalization)
+- Open Heisenberg chain N = 10/12 with a record (content up) at the left edge (compressed field), edge star = sites (1,2).
+- AFM (J > 0): smallest eigenvalue 6.1e-3 / 5.9e-3 at wall ×1; 4.7e-4 / 4.4e-4 at ×3; 8.4e-6 / 7.9e-6 at ×10. Full rank, decaying roughly as a power of the wall strength.
+- Aligned (ferro): 1.9e-31 / 4.0e-31, so quiet.
+- CONFIRMS A39 (b) qualitatively. A39's 1.05e-2 is a different geometry.
+- Lemma V and the twist-lemma logic were re-read by hand: sound (standard variational bound).
+- NOT re-run: c1 fragility, c3 two-ripple.
+
+**Status.** Late result, coordinator-checked, NOT hostile-reviewed.

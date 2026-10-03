@@ -15,6 +15,7 @@ import sys, time, itertools
 import numpy as np
 import scipy.sparse as sp
 from stag2 import *
+from limits import span_dim
 
 t0 = time.time()
 tau = 0.5
@@ -243,7 +244,7 @@ for kind in ('central', 'smear1', 'smear2', 'chiral', 'smear1+chiral'):
     cO, cOh = covariant(D, O), covariant(D, Oh)
     k0 = 1e-4 * np.array([0.3, 0.5, -0.2])
     clim = np.abs(D(k0) / 1e-4 - gen('central')(k0) / 1e-4).max()
-    dims = {nm: limit_span_dim(D, K) for nm, K in corners.items()}
+    dims = {nm: span_dim(D, K) for nm, K in corners.items()}   # absolute-threshold union count (limits.py)
     print(f'   {kind:14s}: cov err O {cO:.0e}, Oh {cOh:.0e}; IR = central to {clim:.0e}; dim S_K: {dims}')
 
 

@@ -1,0 +1,20 @@
+/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/c8/A25/check_search.py:114: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  for nm, Wm in (('full', sp.kron(sp.diags([1, 1, 1, 2, 2, 2]), W1, format='csr')),):
+       13.19 real        12.50 user         0.14 sys
+            78528512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14675  page reclaims
+                1046  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 865  voluntary context switches
+                7848  involuntary context switches
+        203536780371  instructions retired
+         46122519238  cycles elapsed
+            56492488  peak memory footprint

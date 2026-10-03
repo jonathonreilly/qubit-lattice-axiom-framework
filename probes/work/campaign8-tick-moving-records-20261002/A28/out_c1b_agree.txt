@@ -1,0 +1,3 @@
+branches 981; worst |(1-P_content)psi|/|psi| on recorded sites = 1.05e-15
+formations 786; formed with no PRE-tick recorded neighbour: 0
+formed records left with no recorded neighbour after the same tick (gating record moved away): 96

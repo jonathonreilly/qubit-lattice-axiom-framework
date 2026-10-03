@@ -48,8 +48,11 @@ def packet(Nc, c0, K0, sig, the, tho, mN):
     return psi / np.linalg.norm(psi)
 
 
+GF = float(os.environ.get("A26_GF", "1.0"))      # field's spatial strength: h = 2 GF U (A23 D16 gives GF = 1)
+
+
 def bond_factor(U, rule):
-    N = 1 - U; h = 2 * U; e = 1 - h / 2
+    N = 1 - U; h = 2 * GF * U; e = 1 - h / 2
     Nn, en = np.roll(N, -1), np.roll(e, -1)
     Nb = 0.5 * (N + Nn); eb = 0.5 * (e + en)       # = 1 - (h + h')/4
     return {'field-mean': Nb * eb, 'field-min': np.minimum(N, Nn) * eb, 'field-geo': np.sqrt(N * Nn * e * en),
@@ -57,9 +60,12 @@ def bond_factor(U, rule):
 
 
 def make_stepper(U, th0, delta, mu, rule, mode='os'):
-    B, Nb, eb = bond_factor(U, rule)
+    amp = rule.endswith('-amp')
+    B, Nb, eb = bond_factor(U, rule.replace('-amp', ''))
     par = np.where(np.arange(U.size) % 2 == 0, 1.0, -1.0)      # even bond (2c,2c+1): +1 ; odd: -1
-    if mode == 'os':
+    if amp:                                                       # amplitude coupling: sin(angle) = B sin(th0)
+        ang = np.arcsin(B * np.sin(th0 + par * delta))
+    elif mode == 'os':
         ang = (th0 + par * delta) * B
     else:
         ang = Nb * (th0 * eb + par * delta)
@@ -134,8 +140,11 @@ if "m" in PARTS:
         for rule in rules:
             dt = arrival(Usite, rule) - t0
             # exact-dispersion eikonal: omega conserved, local K, local group velocity
-            Bc = bond_factor(Usite, rule)[0]
-            thE, thO = th0 * Bc[0::2], th0 * Bc[1::2]
+            Bc = bond_factor(Usite, rule.replace('-amp', ''))[0]
+            if rule.endswith('-amp'):
+                thE, thO = np.arcsin(Bc[0::2] * np.sin(th0)), np.arcsin(Bc[1::2] * np.sin(th0))
+            else:
+                thE, thO = th0 * Bc[0::2], th0 * Bc[1::2]
             cosK = (np.cos(thE) * np.cos(thO) - np.cos(om0)) / (np.sin(thE) * np.sin(thO))
             K = 2 * np.pi - np.arccos(np.clip(cosK, -1, 1))
             v = -np.sin(thE) * np.sin(thO) * np.sin(K) / np.sin(om0)

@@ -1,0 +1,89 @@
+U(K*) massless quasi-energies: [-1.54074396e-33 -0.00000000e+00  5.55111512e-17  2.22044605e-16]
+cone slopes over 13 directions: min 0.29552021 max 0.29552021 ; sin(th) = 0.29552021
+one-site mass mu=0.05 N=1.00: rest quasi-energies [-0.05 -0.05  0.05  0.05]  mu*N=0.050000000000
+one-site mass mu=0.05 N=0.90: rest quasi-energies [-0.045 -0.045  0.045  0.045]  mu*N=0.045000000000
+one-site mass mu=0.20 N=0.80: rest quasi-energies [-0.16 -0.16  0.16  0.16]  mu*N=0.160000000000
+two-site x-mass dx=0.025: rest quasi-energies [-0.05 -0.05  0.05  0.05] (expect +-2dx = 0.05)
+|S P S^dag - exp(i b X_x Y_y)| = 1.11e-16
+[wall 0.27 s] [peak RSS 56 MB]
+Trotter cone: Ax = -ish, |Ax - (-kron(Y,I))| = 1.4e-10 ; |Ay - (-kron(Z,Y))| = 1.4e-10 ; {Ax,Ay} = 0.0e+00
+   mass Bx  anticommutes with Ax, Ay: 0.0e+00 0.0e+00
+   mass By  anticommutes with Ax, Ay: 0.0e+00 0.0e+00
+   mass eps anticommutes with Ax, Ay: 0.0e+00 0.0e+00
+   T1 = G3 * Bx  : hermitian 0.0e+00, square-1 5.6e-10, [T,Ax] 0.0e+00, [T,Ay] 0.0e+00
+   T2 = G3 * By  : hermitian 0.0e+00, square-1 5.6e-10, [T,Ax] 0.0e+00, [T,Ay] 0.0e+00
+   T3 = G3 * eps : hermitian 0.0e+00, square-1 5.6e-10, [T,Ax] 0.0e+00, [T,Ay] 0.0e+00
+   T1 T2 = i T3 ? 2.0e+00
+   spin-taste basis orthogonality: max |tr(Bi Bj)/4 - delta| = 1.1e-09
+   X_y (unsigned real y-hop)      = -1.000 Ax.T3   (residual 0.0e+00)
+   Y_y (unsigned imag y-hop)      = +1.000 1.T1   (residual 0.0e+00)
+   Z_y X_x ((-1)^y real x-hop)    = +1.000 Ay.T3   (residual 0.0e+00)
+   Z_y Y_x ((-1)^y imag x-hop)    = -1.000 1.T2   (residual 0.0e+00)
+   X_x Y_y (in-cell diagonal)     = +1.000 G3.1   (residual 0.0e+00)
+[trotter th=1.00] gap-free combinations: 8 of 16; taste-singlet frame image rank 2, sv [0.5 0.5 0.  0. ]
+      residual of CROSS shear (Ay in Cx = Ax in Cy) outside image: 1.000e+00 ; of PLUS shear: 0.000e+00
+      taste-graded cross shear (Ay.T3 in Cx, Ax.T3 in Cy) image sv: [0.5 0.5]
+      xe0re    0:+0.50 Ay.T3; 0:+0.50 G3.T1
+      xe0im    0:-0.50 1.T2; 0:-0.50 Ax.1
+      xe1re    0:-0.50 Ay.T3; 0:+0.50 G3.T1
+      xe1im    0:+0.50 1.T2; 0:-0.50 Ax.1
+      xo0re    0:-0.50 Ay.T3; 0:-0.50 G3.T1; qx:+0.50 1.T2; qx:+0.50 Ax.1
+      xo0im    0:-0.50 1.T2; 0:-0.50 Ax.1; qx:-0.50 Ay.T3; qx:-0.50 G3.T1
+      xo1re    0:+0.50 Ay.T3; 0:-0.50 G3.T1; qx:-0.50 1.T2; qx:+0.50 Ax.1
+      xo1im    0:+0.50 1.T2; 0:-0.50 Ax.1; qx:+0.50 Ay.T3; qx:-0.50 G3.T1
+      ye0re    0:-0.50 Ax.T3; 0:+0.50 G3.T2
+      ye0im    0:+0.50 1.T1; 0:-0.50 Ay.1
+      ye1re    0:-0.50 Ax.T3; 0:-0.50 G3.T2
+      ye1im    0:+0.50 1.T1; 0:+0.50 Ay.1
+      yo0re    0:+0.50 Ax.T3; 0:-0.50 G3.T2; qy:-0.50 1.T1; qy:+0.50 Ay.1
+      yo0im    0:+0.50 1.T1; 0:-0.50 Ay.1; qy:+0.50 Ax.T3; qy:-0.50 G3.T2
+      yo1re    0:+0.50 Ax.T3; 0:+0.50 G3.T2; qy:-0.50 1.T1; qy:-0.50 Ay.1
+      yo1im    0:+0.50 1.T1; 0:+0.50 Ay.1; qy:+0.50 Ax.T3; qy:+0.50 G3.T2
+[floquet th=0.10] gap-free combinations: 8 of 16; taste-singlet frame image rank 2, sv [4.9750e-01 4.9750e-01 4.6628e-10 3.5061e-10]
+      residual of CROSS shear (Ay in Cx = Ax in Cy) outside image: 1.000e+00 ; of PLUS shear: 7.581e-09
+      taste-graded cross shear (Ay.T3 in Cx, Ax.T3 in Cy) image sv: [0.4992 0.4992]
+[floquet th=0.30] gap-free combinations: 8 of 16; taste-singlet frame image rank 2, sv [4.7767e-01 4.7767e-01 1.2113e-10 9.8158e-11]
+      residual of CROSS shear (Ay in Cx = Ax in Cy) outside image: 1.000e+00 ; of PLUS shear: 3.606e-10
+      taste-graded cross shear (Ay.T3 in Cx, Ax.T3 in Cy) image sv: [0.4925 0.4925]
+[floquet th=0.60] gap-free combinations: 8 of 16; taste-singlet frame image rank 2, sv [4.1267e-01 4.1267e-01 2.5283e-10 2.1585e-10]
+      residual of CROSS shear (Ay in Cx = Ax in Cy) outside image: 1.000e+00 ; of PLUS shear: 4.445e-08
+      taste-graded cross shear (Ay.T3 in Cx, Ax.T3 in Cy) image sv: [0.4705 0.4705]
+[floquet th=1.00] gap-free combinations: 8 of 16; taste-singlet frame image rank 2, sv [2.7015e-01 2.7015e-01 1.5075e-10 9.0844e-11]
+      residual of CROSS shear (Ay in Cx = Ax in Cy) outside image: 1.000e+00 ; of PLUS shear: 5.397e-09
+      taste-graded cross shear (Ay.T3 in Cx, Ax.T3 in Cy) image sv: [0.4207 0.4207]
+[wall 0.68 s] [peak RSS 63 MB]
+flat cone: all 4 slopes / sin(th): min 0.9999999996 max 0.9999999998
+--- shear amplitude h = 0.02   (th = 0.30, dose factor th cot th = 0.9698)
+   plus  h_xx=-h_yy=h, BL   per-band b: [-0.0194 -0.0194 -0.0194 -0.0194]  c: [-1.98607e-12 -3.25776e-12 -3.10462e-12 -2.66421e-12]  (fit resid 1.6e-10)  metric x dose: b=-0.01940 c=+0.00000
+   cross h_xy=h,       BL   per-band b: [+1.45857e-12 +6.96949e-13 +6.61404e-13 +1.92946e-12]  c: [-1.23295e-12 -2.22142e-12 -1.78058e-12 -1.94458e-12]  (fit resid 1.5e-10)  metric x dose: b=+0.00000 c=-0.01940
+   cross h_xy=h,       P2   per-band b: [-1.43863e-12 +3.28700e-12 -2.73778e-12 +4.95282e-12]  c: [-2.62513e-12 -7.58875e-13 -9.14369e-12 -1.40814e-12]  (fit resid 1.3e-02)
+   cross h_xy=h,       FR   per-band b: [+8.83297e-14 +1.33010e-12 +2.74405e-12 +3.31960e-12]  c: [-0.02 -0.02 -0.02 -0.02]  (fit resid 1.6e-10)  metric x dose: b=+0.00000 c=-0.02000
+   plus+cross,    BL + FR   per-band b: [-0.0194 -0.0194 -0.0194 -0.0194]  c: [-0.02 -0.02 -0.02 -0.02]  (fit resid 1.5e-10)
+   cross h_xy=0.02 BL: v(45)/v0 = [1. 1. 1. 1.] ; v(135)/v0 = [1. 1. 1. 1.] ; metric 0.98995 / 1.00995
+   cross h_xy=0.02 P2: v(45)/v0 = [0.99 0.99 1.01 1.01] ; v(135)/v0 = [0.99 0.99 1.01 1.01] ; metric 0.98995 / 1.00995
+   cross h_xy=0.02 FR: v(45)/v0 = [0.98995 0.98995 0.98995 0.98995] ; v(135)/v0 = [1.00995 1.00995 1.00995 1.00995] ; metric 0.98995 / 1.00995
+--- shear amplitude h = 0.05   (th = 0.30, dose factor th cot th = 0.9698)
+   plus  h_xx=-h_yy=h, BL   per-band b: [-0.04849 -0.04849 -0.04849 -0.04849]  c: [-2.10423e-12 -1.02053e-12 -1.88574e-12 -2.55523e-12]  (fit resid 1.5e-10)  metric x dose: b=-0.04849 c=+0.00000
+   cross h_xy=h,       BL   per-band b: [+1.45857e-12 +6.96949e-13 +6.61404e-13 +1.92946e-12]  c: [-1.23295e-12 -2.22142e-12 -1.78058e-12 -1.94458e-12]  (fit resid 1.5e-10)  metric x dose: b=+0.00000 c=-0.04849
+   cross h_xy=h,       P2   per-band b: [+2.50735e-12 -1.99593e-12 -2.77408e-12 -8.01820e-13]  c: [-1.02121e-14 -6.52434e-13 -5.61553e-12 -3.23477e-12]  (fit resid 3.2e-02)
+   cross h_xy=h,       FR   per-band b: [+1.79697e-12 +1.82711e-13 +8.49740e-13 +1.57448e-12]  c: [-0.05 -0.05 -0.05 -0.05]  (fit resid 1.6e-10)  metric x dose: b=+0.00000 c=-0.05000
+   plus+cross,    BL + FR   per-band b: [-0.04849 -0.04849 -0.04849 -0.04849]  c: [-0.04997 -0.04997 -0.04997 -0.04997]  (fit resid 1.6e-10)
+   cross h_xy=0.05 BL: v(45)/v0 = [1. 1. 1. 1.] ; v(135)/v0 = [1. 1. 1. 1.] ; metric 0.97468 / 1.02470
+   cross h_xy=0.05 P2: v(45)/v0 = [0.97499 0.97499 1.02499 1.02499] ; v(135)/v0 = [0.97499 0.97499 1.02499 1.02499] ; metric 0.97468 / 1.02470
+   cross h_xy=0.05 FR: v(45)/v0 = [0.97468 0.97468 0.97468 0.97468] ; v(135)/v0 = [1.0247 1.0247 1.0247 1.0247] ; metric 0.97468 / 1.02470
+--- conformal field h_ij = 2U delta, lapse N = 1-U, field coupling (bond factor N_b e_b, e_b = 1-U)
+   U=0.01 field (N e) : cone speed/v0 = 0.98068291 (isotropy spread 5.4e-11); sin(th N e)/sin th = 0.98068291; effective (1+gamma) = -dln v/dU / (th cot th) = 2.0113
+   U=0.01 lapse only  : cone speed/v0 = 0.99029733 (isotropy spread 5.5e-11); sin(th N e)/sin th = 0.99029733; effective (1+gamma) = -dln v/dU / (th cot th) = 1.0053
+   U=0.01 frame only  : cone speed/v0 = 0.99029733 (isotropy spread 5.5e-11); sin(th N e)/sin th = 0.99029733; effective (1+gamma) = -dln v/dU / (th cot th) = 1.0053
+   U=0.05 field (N e) : cone speed/v0 = 0.90502843 (isotropy spread 5.8e-11); sin(th N e)/sin th = 0.90502843; effective (1+gamma) = -dln v/dU / (th cot th) = 2.0579
+   U=0.05 lapse only  : cone speed/v0 = 0.95139840 (isotropy spread 5.5e-11); sin(th N e)/sin th = 0.95139840; effective (1+gamma) = -dln v/dU / (th cot th) = 1.0275
+   U=0.05 frame only  : cone speed/v0 = 0.95139840 (isotropy spread 5.5e-11); sin(th N e)/sin th = 0.95139840; effective (1+gamma) = -dln v/dU / (th cot th) = 1.0275
+[wall 0.24 s] [peak RSS 56 MB]
+3D Trotter cone: A_a anticommute, square to 1: max dev 5.6e-10
+[trotter th=1.00] gap-free combos 24 of 48; singlet-frame image rank 3; sv [3.536e-01 3.536e-01 3.536e-01 2.946e-17 2.216e-17 2.448e-34 0.000e+00
+ 0.000e+00 0.000e+00]
+    residual outside image: cross shear (xy) 1.000e+00 ; plus shear 3.337e-16 ; conformal 1.194e-15
+[floquet th=0.30] gap-free combos 24 of 48; singlet-frame image rank 3; sv [3.378e-01 3.378e-01 3.378e-01 3.927e-10 3.040e-10 2.534e-10 2.077e-10
+ 1.857e-10 1.469e-10]
+    residual outside image: cross shear (xy) 1.000e+00 ; plus shear 1.085e-09 ; conformal 1.442e-09
+[wall 0.92 s] [peak RSS 63 MB]

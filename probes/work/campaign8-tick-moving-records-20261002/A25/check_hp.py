@@ -210,4 +210,18 @@ th_exp = 2 * np.arcsin(tau * np.linalg.norm(s) / 2)
 pred = np.cos(nt * th_exp) * h
 print(f'   real-space TT standing wave, {nt} ticks: |h(t) - cos(n theta) h(0)| max {np.abs(zz[:6*n] - pred).max():.1e}; '
       f'R h = {np.abs(R @ zz[:6*n]).max():.1e}; D^T p = {np.abs(D.T @ zz[6*n:]).max():.1e}')
+
+# ---------------------------------------------------------------- P9 stability threshold from the real-space tick
+for tt in (0.99 / np.sqrt(3), 1.01 / np.sqrt(3)):
+    A_, B_, C_ = layers_hp(ops, tt)
+    Ukk = bloch(lat, (C_ @ B_ @ A_).tocsr(), Z12, Z12, ks)
+    mods, phs = [], []
+    for i, k in enumerate(ks):
+        if np.allclose(k, 0):
+            continue
+        Tt = tt_basis_orth(2 * np.sin(k / 2))
+        Pp = np.zeros((12, 4)); Pp[:6, :2] = Tt; Pp[6:, 2:] = Tt
+        ev = np.linalg.eigvals(Pp.T @ (T @ Ukk[i] @ np.linalg.inv(T)) @ Pp)
+        mods.append(np.abs(ev).max()); phs.append(np.abs(np.angle(ev)).max())
+    print(f'P9 tau*sqrt3 = {tt*np.sqrt(3):.2f}: TT-block max |eig| over the zone {max(mods):.12f}; max TT phase/pi {max(phs)/np.pi:.4f}')
 print(f'done in {time.time() - t0:.1f}s')

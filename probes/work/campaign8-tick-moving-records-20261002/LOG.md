@@ -1133,3 +1133,47 @@ Two readings of a move, R1 and R3, behave very differently.
 **Owner decision.** Does a record form only on a caught, settled possibility, slowly compared with the tick? Neither Record nor the formation weight implies this.
 
 **Comparators.** Real detection is catch-and-amplify (Glauber); the result is the record-level analogue of Wigner–Araki–Yanase / Ozawa.
+
+## 02:05 (real) A26 (matter on the field through fixed lapse and frame couplings) LANDED → c8/A26/REPORT.md (+ walk2d, rs2d, s0–s3, t0–t5)
+
+**Setup.** A18's time-symmetric one-site-mass Dirac step in 1D and 2D, on a static field N = 1 − U, h_ij = 2Uδ_ij (A23 D16). Fixed couplings:
+- lapse × every term;
+- lapse × frame × every hop;
+- for shear, the x-block is conjugated by the in-cell sandwich R = S P(β) S†.
+
+New conditional G1 (the matter half of F4): a uniform lapse or a uniform stretch must be undetectable by local matter.
+
+**Results**
+- **Matter sees the field's own metric (EXACT, eikonal, first order, given F2).** H² = N²μ² + N²θ0² qᵀ(EᵀE)q, so g^{ij} = δ − h. Light and massive packets follow the same metric. γ_matter = γ_field. No composition rule is needed: mean, min and geometric-mean bond lapse agree at first order.
+- **Numbers.** 1D delay ratio extrapolates to 1.999; 2D bending to 1.995. Matter's 1 + γ follows h: 1.000 / 1.505 / 2.019 for h = 0, U, 2U. A18's product rule gives 2.019 whatever h is. Moving packets fall as 1 + γv² with γ = 0.988.
+- **The coupling form is forced by G1 at linear order.** Uniform h is pure gauge, so there is exactly one frame factor per hop (per derivative), none on mass terms, and one lapse per term. The lattice-level form stays a named conditional.
+- **Dose.** The angle form gives a slope sin(θ0Ne)/sinθ0, i.e. A18 D4's γ_eff. An amplitude form, sin θ_b = Ne sin θ0, is exact at any dose (1.005 vs 0.884 at θ0 = 0.6).
+- **One-site masses.** Rest frequency is exactly μN at any dose, so all one-site species fall alike on geodesics.
+- **Two-site masses.**
+  - Operator-support (OS) coupling gives rest 2δNe and falls 2× (1.974).
+  - Stress (ST) coupling gives rest 2δN and falls 1× (0.990).
+  - OS makes a resting clock feel a pure-gauge stretch. Its stress has ∫S^ij ≠ 0 at rest, against the Laue identity, so the momentum constraint fails. F4 therefore selects ST.
+  - So A18 D3's order-one violation is a symptom of a coupling the field forbids [EXACT core; ARGUED application].
+  - Price: the lattice must class the staggered part of each bond angle as mass (frame-free) and the uniform part as motion. That split is supplied.
+- **Shear.**
+  - Bond lengths are blind to h_xy.
+  - No nearest-neighbour cell-periodic hop modulation (16 in 2D, 48 in 3D) gives a taste-blind cross shear: the reachable frame is diagonal only, and the cross residual is 1.000 at Floquet doses up to 1.0.
+  - Period-2 Peierls phases give the two tastes OPPOSITE shears.
+  - The fixed depth-3 in-cell sandwich R = exp(iβ X_x Y_y), a relative spin-frame tilt between hop directions, gives every band the metric response.
+- **Lattice effects**
+  - D13: x-then-y block order adds a taste-dependent sideways drift for moving massive packets (measured 0.0347 vs 0.0349). Alternating the order removes it.
+  - D14: the cone offset (A18 D5) persists; E_c = 0 is supplied.
+- **No signalling** for the fixed coupling (TV 2.5e-16). A dial computed from the state signals (4.0e-3).
+- **Comparators** (memory): γ = 1 vs Cassini needs the amplitude form or θ0 ≲ 6e-3. Universal fall at eikonal order. Bond-only or period-2 coupling would contradict GW polarisation data and the equivalence principle respectively.
+
+**Coordinator check** (toys/verify_A26_symbol.py; own 2×2-cell Bloch code with a different index convention, written from the report's statements)
+- Cone at K* = (π, π) to 2e-16. Flat slope/sin θ = 1 in all 4 bands at 0/30/45/60/90/135°.
+- Rest frequency = μN exactly at doses 0.05, 0.6 and 1.2, with a diagonal frame and shear present.
+- **Shear h_xy = 0.05 via the sandwich.** All 4 bands give 0.974679 at 45° and 1.024695 at 135°, which is exactly √(qᵀgq). Taste-blind CONFIRMED.
+- Massive: (ω² − N²μ²) ratios 0.949–0.951 vs the metric 0.950, and 1.049–1.051 vs 1.050.
+- Sandwich identity: R = exp(+iβ X_xY_y) to 2.2e-16.
+- Period-2 Peierls φ = 0.02 gives bands {0.98995 ×2, 1.00995 ×2}, i.e. two tastes with h = ∓φ. CONFIRMED.
+- Two-site rest frequency, one split axis, doses 0.3 and 0.9: OS 0.017100 = 2δNe and ST 0.018000 = 2δN, exact. (With both axes split the two add in quadrature, √2×, ratio still e.)
+- NOT re-run: the 16/48-modulation span (D9) and the real-space delay, bending and fall runs. Those are the agent's own.
+
+**My reading for the owner.** The field route now has a working matter side. If matter is tied to the field in the simplest fixed way, light bends by the full amount and everything falls alike. The condition is that weight carried in links is not itself stretched, and the field's own bookkeeping already forbids that. The diagonal kind of gravitational ripple is felt only through a fixed in-block shuffle (supplied).

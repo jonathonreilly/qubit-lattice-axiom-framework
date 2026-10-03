@@ -35,10 +35,10 @@ def gen(th):
         M = np.zeros((6, 3), complex)
         for j in range(3):
             l, m = [x for x in range(3) if x != j]
-            M[hidx(j, j), j] = 2j * np.sin(k[j]) * (1 + a1 * (c2(k[l]) * c2(k[m]) - 1) + a2 * ((c2(k[l]) + c2(k[m])) / 2 - 1))
+            M[hidx(j, j), j] = 2j * np.sin(k[j]) * ((1 - a1 - a2) + a1 * c2(k[l]) * c2(k[m]) + a2 * (c2(k[l]) + c2(k[m])) / 2)
         for (i, j) in ((0, 1), (0, 2), (1, 2)):
             m = 3 - i - j
-            f = lambda i_, j_: 1 + b1 * (c2(k[j_]) - 1) + b2 * (c2(k[m]) - 1) + b3 * (c2(k[j_]) * c2(k[m]) - 1) + b4 * (c2(k[i_]) - 1)
+            f = lambda i_, j_: (1 - b1 - b2 - b3 - b4) + b1 * c2(k[j_]) + b2 * c2(k[m]) + b3 * c2(k[j_]) * c2(k[m]) + b4 * c2(k[i_])
             M[hidx(i, j), j] += 1j * np.sin(k[i]) * f(i, j)
             M[hidx(i, j), i] += 1j * np.sin(k[j]) * f(j, i)
             p, q = ORI[(i, j)]

@@ -1,0 +1,25 @@
+flatx  taste mix: travelled (120.6, 0.0) cells; direction angle 0.00002 rad (slope dy/dx 0.00002)
+[wall 2.20 s] [peak RSS 77 MB]
+BLx    taste mix: travelled (120.6, 0.0) cells; direction angle 0.00002 rad (slope dy/dx 0.00002)
+[wall 2.22 s] [peak RSS 84 MB]
+P2x    taste mix: travelled (120.8, 4.8) cells; direction angle 0.03986 rad (slope dy/dx 0.03988)
+[wall 2.22 s] [peak RSS 77 MB]
+P2x    taste +  : travelled (120.8, -12.5) cells; direction angle -0.10297 rad (slope dy/dx -0.10333)
+[wall 2.28 s] [peak RSS 78 MB]
+P2x    taste -  : travelled (120.8, 12.3) cells; direction angle 0.10180 rad (slope dy/dx 0.10214)
+[wall 2.30 s] [peak RSS 77 MB]
+FRx    taste mix: travelled (120.6, -11.9) cells; direction angle -0.09821 rad (slope dy/dx -0.09852)
+[wall 3.18 s] [peak RSS 78 MB]
+FRx    taste +  : travelled (120.6, -12.2) cells; direction angle -0.10060 rad (slope dy/dx -0.10093)
+[wall 3.23 s] [peak RSS 84 MB]
+FRx    taste -  : travelled (120.6, -11.8) cells; direction angle -0.09716 rad (slope dy/dx -0.09746)
+[wall 3.26 s] [peak RSS 81 MB]
+flatd  taste mix: travelled (86.3, 85.8) cells; direction angle 0.78280 rad (slope dy/dx 0.99482)
+[wall 2.41 s] [peak RSS 160 MB]
+BLd    taste mix: travelled (78.2, 94.0) cells; direction angle 0.87681 rad (slope dy/dx 1.20185)
+[wall 2.41 s] [peak RSS 164 MB]
+controlled step unitary: |W W^dag - 1| = 8.9e-16 ; commutes with f's possibility projector: 0.0e+00
+rule CTRL: max TV of local record odds (formation at m00, record at m11) between distant conditions (60 random 6-qubit states) = 2.498e-16
+rule DIAL: max TV of local record odds (formation at m00, record at m11) between distant conditions (60 random 6-qubit states) = 4.041e-03
+reduced state of b before/after the controlled step: |diff| = 2.8e-16
+[wall 0.87 s] [peak RSS 58 MB]

@@ -30,7 +30,7 @@ U6 covariant collocated gauge generators: covariance error (O, Oh) and dim of li
    (dim S_K >= 5 forces a zero-frequency transverse mode at K; see report)
    central       : cov err O 0e+00, Oh 0e+00; IR = central to 0e+00; dim S_K: {'(pi,0,0)': 6, '(pi,pi,0)': 6, '(pi,pi,pi)': 6}
    smear1        : cov err O 0e+00, Oh 0e+00; IR = central to 2e-10; dim S_K: {'(pi,0,0)': 6, '(pi,pi,0)': 5, '(pi,pi,pi)': 3}
-   smear2        : cov err O 0e+00, Oh 0e+00; IR = central to 2e-10; dim S_K: {'(pi,0,0)': 5, '(pi,pi,0)': 3, '(pi,pi,pi)': 3}
+   smear2        : cov err O 0e+00, Oh 0e+00; IR = central to 2e-10; dim S_K: {'(pi,0,0)': 5, '(pi,pi,0)': 5, '(pi,pi,pi)': 3}
    chiral        : cov err O 0e+00, Oh 2e+00; IR = central to 5e-06; dim S_K: {'(pi,0,0)': 5, '(pi,pi,0)': 5, '(pi,pi,pi)': 6}
    smear1+chiral : cov err O 0e+00, Oh 2e+00; IR = central to 5e-06; dim S_K: {'(pi,0,0)': 4, '(pi,pi,0)': 5, '(pi,pi,pi)': 6}
 U7 covariant local potentials (range<=2 in each direction), exactly gauge-invariant under each generator:
@@ -39,4 +39,4 @@ U7 covariant local potentials (range<=2 in each direction), exactly gauge-invari
    smear1        :   1 gauge-invariant forms; (pi,0,0): common kernel 6; (pi,pi,0): common kernel 6; (pi,pi,pi): common kernel 6; generic member rank at random k: [3, 3, 3, 3, 3]
    chiral        :   1 gauge-invariant forms; (pi,0,0): common kernel 5; (pi,pi,0): common kernel 5; (pi,pi,pi): common kernel 6; generic member rank at random k: [3, 3, 3, 3, 3]
    smear1+chiral :   1 gauge-invariant forms; (pi,0,0): common kernel 5; (pi,pi,0): common kernel 5; (pi,pi,pi): common kernel 6; generic member rank at random k: [3, 3, 3, 3, 3]
-done in 1.4s
+done in 1.3s

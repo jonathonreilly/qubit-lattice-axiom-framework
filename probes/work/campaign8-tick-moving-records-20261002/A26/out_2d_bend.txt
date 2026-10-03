@@ -1,0 +1,15 @@
+== massless bump U0=0.03
+tag m0 mu=0.000 q0=0.60: group velocity vx = 0.37451 cells/cycle (light cone sin th0 = 0.38942); packet y-std at bump 13.73 cells; flat slopes early 5.45e-05 late -2.01e-03
+   field  measured deflection -0.05750 rad ; ray prediction (point b) -0.09203, (averaged over impact spread) -0.05508 ; measured/averaged 1.0438 ; d omega/dU = -0.43842
+   lapse  measured deflection -0.02829 rad ; ray prediction (point b) -0.04601, (averaged over impact spread) -0.02754 ; measured/averaged 1.0271 ; d omega/dU = -0.21921
+   frame  measured deflection -0.02829 rad ; ray prediction (point b) -0.04601, (averaged over impact spread) -0.02754 ; measured/averaged 1.0271 ; d omega/dU = -0.21921
+   deflection ratio field/lapse = 2.0325  ->  measured (1 + gamma) for these packets
+   eikonal expectation of the ratio: massless 2 ; massive (1+v^2) with v = 0.9617 c -> 1.9249; exact symbol ratio 2.0000
+[wall 0.07 s] [peak RSS 28 MB]
+== massless bump U0=0.015
+tag m0h mu=0.000 q0=0.60: group velocity vx = 0.37451 cells/cycle (light cone sin th0 = 0.38942); packet y-std at bump 13.73 cells; flat slopes early 5.45e-05 late -2.01e-03
+   field  measured deflection -0.02812 rad ; ray prediction (point b) -0.04601, (averaged over impact spread) -0.02754 ; measured/averaged 1.0211 ; d omega/dU = -0.43842
+   lapse  measured deflection -0.01397 rad ; ray prediction (point b) -0.02301, (averaged over impact spread) -0.01377 ; measured/averaged 1.0143 ; d omega/dU = -0.21921
+   deflection ratio field/lapse = 2.0135  ->  measured (1 + gamma) for these packets
+   eikonal expectation of the ratio: massless 2 ; massive (1+v^2) with v = 0.9617 c -> 1.9249; exact symbol ratio 2.0000
+[wall 0.05 s] [peak RSS 28 MB]

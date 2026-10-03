@@ -171,4 +171,16 @@ for e in list(np.eye(3, dtype=int)) + [np.array([1, 1, 1])]:
         if maxabs(Tm @ Ls @ Tm.T - Lt) != 0.0:
             tok = False
 print(f'   unit translations map L_s to L_(s+e) exactly: {tok}; patterns reached: {len(cache)} of 8 role translates')
+
+# composed tick reach on Z^3
+Ufull = (layers0[0] @ layers0[1] @ layers0[0] - sp.identity(NSLOT * nz)).tocoo()
+keep = Ufull.data != 0
+yr = zc[Ufull.row[keep] % nz]; yc = zc[Ufull.col[keep] % nz]
+d = (yc - yr + N // 2) % N - N // 2
+print(f'   composed tick C(tau/2) p(tau) C(tau/2): max Manhattan reach {np.abs(d).sum(1).max()} (three nearest-neighbour layers)')
+# checkerboard: C-roles have odd role weight, p-roles even; site-centred rotations preserve the colour of every site
+w = np.array([sum(int(b) for b in ((y + 0) % 2)) % 2 for y in zc])
+rowsC = np.unique((layers0[0] - sp.identity(NSLOT * nz)).tocoo().row % nz)
+rowsP = np.unique((layers0[1] - sp.identity(NSLOT * nz)).tocoo().row % nz)
+print(f'   checkerboard colour (parity of coordinate sum) of sites updated by the C-layer: {set(w[rowsC].tolist())}; by the p-layer: {set(w[rowsP].tolist())}')
 print(f'done in {time.time() - t0:.1f}s')

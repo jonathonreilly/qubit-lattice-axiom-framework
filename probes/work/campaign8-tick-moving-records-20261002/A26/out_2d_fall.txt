@@ -1,0 +1,12 @@
+== standard xy order, sigma=72, g=1e-4, T=1400 (rest, os, st)
+alt=0 T3=mix rest15        a_y = 1.4984e-05 ; semiclassical 1.5051e-05 (ratio 0.9956) ; a_y/(c^2 g) = 0.9881 ; carrier speed 0.000 c ; 4.3 s
+alt=0 T3=mix rest08        a_y = 1.5032e-05 ; semiclassical 1.5132e-05 (ratio 0.9933) ; a_y/(c^2 g) = 0.9912 ; carrier speed -0.000 c ; 4.3 s
+alt=0 T3=mix os            a_y = 2.9805e-05 ; semiclassical 3.0101e-05 (ratio 0.9902) ; a_y/(c^2 g) = 1.9654 ; carrier speed -0.000 c ; 4.4 s
+alt=0 T3=mix st            a_y = 1.4979e-05 ; semiclassical 1.5051e-05 (ratio 0.9952) ; a_y/(c^2 g) = 0.9878 ; carrier speed -0.000 c ; 4.3 s
+[wall 17.35 s] [peak RSS 56 MB]
+== alternating order, sigma=72 (moving: field vs lapse)
+alt=1 T3=mix move15        a_y = 1.9311e-05 ; semiclassical 1.9418e-05 (ratio 0.9945) ; a_y/(c^2 g) = 1.2734 ; carrier speed 0.586 c ; 4.4 s
+alt=1 T3=mix move15_lapse  a_y = 1.4454e-05 ; semiclassical 1.4488e-05 (ratio 0.9976) ; a_y/(c^2 g) = 0.9531 ; carrier speed 0.586 c ; 4.2 s
+alt=1 T3=mix move06        a_y = 2.4987e-05 ; semiclassical 2.5184e-05 (ratio 0.9922) ; a_y/(c^2 g) = 1.6477 ; carrier speed 0.871 c ; 4.2 s
+alt=1 T3=mix move06_lapse  a_y = 1.4234e-05 ; semiclassical 1.4273e-05 (ratio 0.9972) ; a_y/(c^2 g) = 0.9386 ; carrier speed 0.871 c ; 4.3 s
+[wall 17.24 s] [peak RSS 55 MB]

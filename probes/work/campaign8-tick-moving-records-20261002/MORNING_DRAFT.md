@@ -23,6 +23,7 @@
    - **Record-carried gravity** gets the static picture partly right, but cannot make waves or hold a moving Moon.
    - **The road left open** is a field carried by the shared possibilities. The grid's own symmetry pins its "shape" version to Einstein's linear gravity.
    - **Conditions:** its ripples need a change that moves things, which the smooth change of point 2 provides; forming a record must not change energy; and how one qubit per site hosts the field is open.
+   - **Matter on that field (A26).** Tied to the field in the simplest fixed way, matter bends light by the full amount and falls alike, with no extra choices. The supplied pieces are how link weight is classed and a small in-block shuffle for one ripple type.
 5. **Empty space** must essentially never form records, or every region freezes. That is hard with the repo's current half-filled-sea vacuum.
 6. **Handedness.** Ticks by themselves do not give a preferred handedness. This is exact for single free particles.
 
@@ -129,7 +130,7 @@
 - **The averaging needed:** the jitter shrinks only with the width of the region averaged over, and averaging over time does not help (exact). The region needed is a billion or more sites across. A rule using only neighbouring records cannot build that average.
 - **What is left open:** a smooth field carried by the shared possibilities, changing by a fixed rule (A17; argued, not built). For it to spread at all, its rule must escape point 3's limit.
 
-### 6. Gravity-like clock slowing: real in toys; record-carried gravity falls short; a field route is mapped (A6, A8, A14, A18, A23)
+### 6. Gravity-like clock slowing: real in toys; record-carried gravity falls short; a field route is mapped (A6, A8, A14, A18, A23, A26)
 
 **The basic effect**
 - With a thin gas of wandering records, and clumps that keep swallowing them, nearby clocks slow with the right sign, falling off as one over distance.
@@ -180,6 +181,15 @@
     - It is a decision for you; the axioms don't imply it.
   - How one qubit per site hosts the field is open.
   - The Mercury term needs second order.
+- **Matter on the field (A26, checked).**
+  - Suppose matter is tied to the shape field in the simplest fixed way: each place's own change slows with the local time-stretch, and each step to a neighbour also stretches with the local space-stretch.
+  - Then light and matter both follow the field's own geometry.
+    - Light bends by the full amount. A18's separate choice of how two neighbours' slowings combine is no longer needed: the stretch of the steps supplies it.
+    - Everything whose weight sits at single places falls alike, and moving things fall slightly faster in the proportion nature shows.
+  - **Weight carried in links.** It falls twice as fast unless it is classed as weight rather than motion. The field's own bookkeeping requires that classing anyway, but at grid level it is supplied.
+  - **The diagonal ripple.** One of the two ripple types is felt only if each step's sense of direction is turned by a fixed three-move shuffle inside each 2×2 block. No simpler local tweak does it; one tweak makes the two copies of each particle feel opposite ripples. The shuffle is supplied.
+  - **Precision.** Measured light bending needs a small change per tick, or one specific way of writing the coupling.
+  - **My check.** I rebuilt the 2D toy independently: all four bands follow the field's geometry exactly.
 - **The repo** has unaudited notes in this direction. Extending your approved "kinetic isotropy" primitive to such a field would supply Einstein's weights. That would be your call.
 
 ### 7. Empty space must essentially never form records, or every region freezes (A4, A6, A9, A12)
@@ -237,7 +247,7 @@ My overnight note was too strong; the reviewers caught it.
 10. **Pacing.** When neighbours' change per tick differs, does passing between them go at the product (full light bending), the average, or the slower of the two (half bending)? Are the carriers of the slowing slowed themselves (A14, A18)?
 11. **Direct records.** May a lone moving thing form records straight from its own neighbourhood? If so, it loses all inertia (A19).
 12. **How unrecorded things move.** Light and matter waves need a reversible change that moves something (point 3). Which gives: longer reach, a supplied pattern, more room per site, or sameness only on average?
-13. **A gravity field.** May the shared possibilities carry a never-locked "shape" field that the fixed rule passes along? May the gluing to the grid tilt from place to place as part of that field? Must a forming record leave energy unchanged (A23)?
+13. **A gravity field.** May the shared possibilities carry a never-locked "shape" field that the fixed rule passes along? May the gluing to the grid tilt from place to place as part of that field? Must a forming record leave energy unchanged (A23)? If matter is tied to it (A26): is weight carried in links classed as weight rather than motion, and is the in-block shuffle allowed?
 14. **When records form.** Only on caught, settled things, slowly compared with the tick (A24)? This is needed for energy bookkeeping under the gravity field, and for straight tracks (A19).
 
-*Still running: A25 (symmetric stepping rule for the shape field), A26 (matter coupled to the shape field).*
+*Still running: A25 (symmetric stepping rule for the shape field), A28 (records form only next to records, under the A27 shape).*

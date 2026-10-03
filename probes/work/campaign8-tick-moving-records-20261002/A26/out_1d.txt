@@ -1,0 +1,84 @@
+(b) Bloch facts, uniform U, at the cone K = pi
+   U=0.00: one-site rest omega/(mu N) = 1.000000000000 ; two-site os omega/(2 delta N e) = 1.000000000000 ; two-site st omega/(2 delta N) = 1.000000000000
+   U=0.05: one-site rest omega/(mu N) = 1.000000000000 ; two-site os omega/(2 delta N e) = 1.000000000000 ; two-site st omega/(2 delta N) = 1.000000000000
+   U=0.10: one-site rest omega/(mu N) = 1.000000000000 ; two-site os omega/(2 delta N e) = 1.000000000000 ; two-site st omega/(2 delta N) = 1.000000000000
+[wall 0.05 s] [peak RSS 27 MB]
+(m) massless delay through U = U0 exp(-((c-1500)/80)^2): N = 1-U, h = 2U
+   th0=0.20 U0=0.050 field-mean delay   74.841 cycles ; exact-dispersion eikonal   74.840 (ratio 1.00002) ; small-dose metric   75.376
+   th0=0.20 U0=0.050 field-min  delay   74.978 cycles ; exact-dispersion eikonal   74.977 (ratio 1.00002) ; small-dose metric   75.376
+   th0=0.20 U0=0.050 field-geo  delay   74.841 cycles ; exact-dispersion eikonal   74.840 (ratio 1.00002) ; small-dose metric   75.376
+   th0=0.20 U0=0.050 lapse      delay   36.723 cycles ; exact-dispersion eikonal   36.721 (ratio 1.00006) ; small-dose metric   37.002
+   th0=0.20 U0=0.050 frame      delay   36.723 cycles ; exact-dispersion eikonal   36.721 (ratio 1.00006) ; small-dose metric   37.002
+   th0=0.20 U0=0.050 and        delay   74.841 cycles ; exact-dispersion eikonal   74.840 (ratio 1.00002) ; small-dose metric   75.376
+      field-mean delay / lapse-only delay = 2.0380   (=> 1+gamma for light)
+      field-min  delay / lapse-only delay = 2.0417   (=> 1+gamma for light)
+      field-geo  delay / lapse-only delay = 2.0380   (=> 1+gamma for light)
+      lapse      delay / lapse-only delay = 1.0000   (=> 1+gamma for light)
+      frame      delay / lapse-only delay = 1.0000   (=> 1+gamma for light)
+      and        delay / lapse-only delay = 2.0380   (=> 1+gamma for light)
+[wall 5.17 s] [peak RSS 29 MB]
+(m) massless delay through U = U0 exp(-((c-1500)/80)^2): N = 1-U, h = 2U
+   th0=0.20 U0=0.025 field-mean delay   36.382 cycles ; exact-dispersion eikonal   36.380 (ratio 1.00006) ; small-dose metric   36.659
+   th0=0.20 U0=0.025 lapse      delay   18.024 cycles ; exact-dispersion eikonal   18.023 (ratio 1.00008) ; small-dose metric   18.165
+      field-mean delay / lapse-only delay = 2.0185   (=> 1+gamma for light)
+      lapse      delay / lapse-only delay = 1.0000   (=> 1+gamma for light)
+[wall 2.25 s] [peak RSS 28 MB]
+(m) massless delay through U = U0 exp(-((c-1500)/80)^2): N = 1-U, h = 2U
+   th0=0.60 U0=0.050 field-mean delay   23.516 cycles ; exact-dispersion eikonal   23.516 (ratio 0.99998) ; small-dose metric   26.521
+   th0=0.60 U0=0.050 lapse      delay   11.510 cycles ; exact-dispersion eikonal   11.509 (ratio 1.00003) ; small-dose metric   13.019
+      field-mean delay / lapse-only delay = 2.0431   (=> 1+gamma for light)
+      lapse      delay / lapse-only delay = 1.0000   (=> 1+gamma for light)
+[wall 0.84 s] [peak RSS 28 MB]
+(m) massless delay through U = U0 exp(-((c-1500)/80)^2): N = 1-U, h = 2U
+   th0=0.60 U0=0.025 field-mean delay   11.403 cycles ; exact-dispersion eikonal   11.402 (ratio 1.00004) ; small-dose metric   12.899
+   th0=0.60 U0=0.025 lapse      delay    5.642 cycles ; exact-dispersion eikonal    5.641 (ratio 1.00015) ; small-dose metric    6.391
+   th0=0.60 U0=0.025 field-mean-amp delay   12.965 cycles ; exact-dispersion eikonal   12.964 (ratio 1.00006) ; small-dose metric   12.899
+   th0=0.60 U0=0.025 lapse-amp  delay    6.424 cycles ; exact-dispersion eikonal    6.423 (ratio 1.00011) ; small-dose metric    6.391
+      field-mean delay / lapse-only delay = 2.0210   (=> 1+gamma for light)
+      lapse      delay / lapse-only delay = 1.0000   (=> 1+gamma for light)
+      field-mean-amp delay / lapse-only delay = 2.2979   (=> 1+gamma for light)
+      lapse-amp  delay / lapse-only delay = 1.1385   (=> 1+gamma for light)
+[wall 1.37 s] [peak RSS 29 MB]
+== GF=0.0
+(m) massless delay through U = U0 exp(-((c-1500)/80)^2): N = 1-U, h = 2U
+   th0=0.20 U0=0.025 field-mean delay   18.024 cycles ; exact-dispersion eikonal   18.023 (ratio 1.00008) ; small-dose metric   18.165
+   th0=0.20 U0=0.025 lapse      delay   18.024 cycles ; exact-dispersion eikonal   18.023 (ratio 1.00008) ; small-dose metric   18.165
+   th0=0.20 U0=0.025 and        delay   36.382 cycles ; exact-dispersion eikonal   36.380 (ratio 1.00006) ; small-dose metric   36.659
+      field-mean delay / lapse-only delay = 1.0000   (=> 1+gamma for light)
+      lapse      delay / lapse-only delay = 1.0000   (=> 1+gamma for light)
+      and        delay / lapse-only delay = 2.0185   (=> 1+gamma for light)
+[wall 2.98 s] [peak RSS 29 MB]
+== GF=0.5
+(m) massless delay through U = U0 exp(-((c-1500)/80)^2): N = 1-U, h = 2U
+   th0=0.20 U0=0.025 field-mean delay   27.120 cycles ; exact-dispersion eikonal   27.118 (ratio 1.00007) ; small-dose metric   27.329
+   th0=0.20 U0=0.025 lapse      delay   18.024 cycles ; exact-dispersion eikonal   18.023 (ratio 1.00008) ; small-dose metric   18.165
+   th0=0.20 U0=0.025 and        delay   36.382 cycles ; exact-dispersion eikonal   36.380 (ratio 1.00006) ; small-dose metric   36.659
+      field-mean delay / lapse-only delay = 1.5046   (=> 1+gamma for light)
+      lapse      delay / lapse-only delay = 1.0000   (=> 1+gamma for light)
+      and        delay / lapse-only delay = 2.0185   (=> 1+gamma for light)
+[wall 3.02 s] [peak RSS 29 MB]
+== GF=1.0
+(m) massless delay through U = U0 exp(-((c-1500)/80)^2): N = 1-U, h = 2U
+   th0=0.20 U0=0.025 field-mean delay   36.382 cycles ; exact-dispersion eikonal   36.380 (ratio 1.00006) ; small-dose metric   36.659
+   th0=0.20 U0=0.025 lapse      delay   18.024 cycles ; exact-dispersion eikonal   18.023 (ratio 1.00008) ; small-dose metric   18.165
+   th0=0.20 U0=0.025 and        delay   36.382 cycles ; exact-dispersion eikonal   36.380 (ratio 1.00006) ; small-dose metric   36.659
+      field-mean delay / lapse-only delay = 2.0185   (=> 1+gamma for light)
+      lapse      delay / lapse-only delay = 1.0000   (=> 1+gamma for light)
+      and        delay / lapse-only delay = 2.0185   (=> 1+gamma for light)
+[wall 2.97 s] [peak RSS 28 MB]
+(f) free fall from rest in a lapse gradient: U = g (c - c0), N = 1 - U, h = 2U ; g = 1e-4 per cell
+   packet width sigma = 150 cells, T = 1500 cycles
+   one-site mu=0.05       a = 8.6875e-06 ; semiclassical 8.7259e-06 (ratio 0.9956) ; a/(c^2 g) = 0.9948
+   one-site mu=0.10       a = 8.6804e-06 ; semiclassical 8.7041e-06 (ratio 0.9973) ; a/(c^2 g) = 0.9939
+   two-site os d=0.025    a = 1.7210e-05 ; semiclassical 1.7349e-05 (ratio 0.9920) ; a/(c^2 g) = 1.9706
+   two-site st d=0.025    a = 8.6291e-06 ; semiclassical 8.6743e-06 (ratio 0.9948) ; a/(c^2 g) = 0.9881
+   universality ratios vs one-site mu=0.05: one-site mu=0.05 1.0000; one-site mu=0.10 0.9992; two-site os d=0.025 1.9810; two-site st d=0.025 0.9933
+[wall 0.39 s] [peak RSS 28 MB]
+(f) free fall from rest in a lapse gradient: U = g (c - c0), N = 1 - U, h = 2U ; g = 1e-4 per cell
+   packet width sigma = 300 cells, T = 1500 cycles
+   one-site mu=0.05       a = 8.7065e-06 ; semiclassical 8.7259e-06 (ratio 0.9978) ; a/(c^2 g) = 0.9969
+   one-site mu=0.10       a = 8.6899e-06 ; semiclassical 8.7041e-06 (ratio 0.9984) ; a/(c^2 g) = 0.9950
+   two-site os d=0.025    a = 1.7241e-05 ; semiclassical 1.7349e-05 (ratio 0.9938) ; a/(c^2 g) = 1.9742
+   two-site st d=0.025    a = 8.6479e-06 ; semiclassical 8.6743e-06 (ratio 0.9970) ; a/(c^2 g) = 0.9902
+   universality ratios vs one-site mu=0.05: one-site mu=0.05 1.0000; one-site mu=0.10 0.9981; two-site os d=0.025 1.9803; two-site st d=0.025 0.9933
+[wall 0.64 s] [peak RSS 28 MB]

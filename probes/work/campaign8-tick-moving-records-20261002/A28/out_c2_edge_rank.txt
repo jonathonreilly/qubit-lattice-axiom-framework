@@ -1,0 +1,11 @@
+(1) 1D half-filled chain, open (wall) left end
+  N=200: wall-adjacent star nu = [0.075574 0.924426]  min MB eig = 5.7114e-03 | bulk star nu = [0.049823 0.5      0.950177]  min MB eig = 1.2412e-03
+  N=400: wall-adjacent star nu = [0.075584 0.924416]  min MB eig = 5.7129e-03 | bulk star nu = [0.049837 0.5      0.950163]  min MB eig = 1.2419e-03
+  N=800: wall-adjacent star nu = [0.075586 0.924414]  min MB eig = 5.7132e-03 | bulk star nu = [0.049841 0.5      0.950159]  min MB eig = 1.2420e-03
+(2) 3D simple-cubic half-filled sea, planar wall at z=-1, periodic x,y
+  L=16x16x32 filling 0.5000: wall star nu in [0.0918,0.9082] min MB eig 5.264e-04 | bulk 7-star nu in [0.0908,0.9092] min MB eig 2.574e-04
+  L=24x24x48 filling 0.5000: wall star nu in [0.0918,0.9082] min MB eig 5.268e-04 | bulk 7-star nu in [0.0908,0.9092] min MB eig 2.576e-04
+(3) energy injected by one sharp lock at the wall-adjacent site (1D, units of hopping J)
+  N=200: P(lock 1)=0.500000  mean dE under old generator = 0.848852 J ; mean excess above new walled ground state = 0.208312 J ; 2*C_01 = 0.848852
+  N=400: P(lock 1)=0.500000  mean dE under old generator = 0.848833 J ; mean excess above new walled ground state = 0.210251 J ; 2*C_01 = 0.848833
+  N=800: P(lock 1)=0.500000  mean dE under old generator = 0.848828 J ; mean excess above new walled ground state = 0.211227 J ; 2*C_01 = 0.848828

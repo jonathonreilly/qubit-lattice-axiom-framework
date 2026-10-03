@@ -10,4 +10,4 @@ after Nelder-Mead from the 4 best: best max_K s5 = 0.320 at theta = [ 0.421 -0.8
 Wilson lift r=0.01: max |eig| over the N=4 zone = 1.4116
 Wilson lift r=0.05: max |eig| over the N=4 zone = 2.1307
 Wilson lift r=0.25: max |eig| over the N=4 zone = 4.7913
-done in 11.6s
+done in 12.4s

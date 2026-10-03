@@ -1,0 +1,11 @@
+GHZ closed-form example (claim then gated formation), P(move & form):
+  cut  : b no record 0.0000   b Z-record 0.0000   |diff| = 0.0000
+  uncut: b no record 0.2500   b Z-record 0.0000   |diff| = 0.2500
+seed 0: histories  294  total prob 0.999999999999999  CUT TV(abs,Z)=1.8e-16 TV(abs,X)=2.5e-16 TV(Z,X)=7.3e-17 | UNCUT TV=8.91e-03 8.58e-03 3.91e-03
+seed 1: histories  294  total prob 1.000000000000002  CUT TV(abs,Z)=4.1e-16 TV(abs,X)=3.6e-16 TV(Z,X)=5.0e-17 | UNCUT TV=3.22e-03 3.28e-03 2.57e-04
+seed 2: histories  294  total prob 0.999999999999998  CUT TV(abs,Z)=3.9e-16 TV(abs,X)=4.0e-16 TV(Z,X)=1.6e-17 | UNCUT TV=1.71e-03 1.84e-03 2.67e-04
+seed 3: histories  294  total prob 0.999999999999999  CUT TV(abs,Z)=3.0e-16 TV(abs,X)=3.6e-16 TV(Z,X)=6.4e-17 | UNCUT TV=1.30e-03 1.69e-03 1.68e-03
+seed 4: histories  294  total prob 0.999999999999998  CUT TV(abs,Z)=2.7e-16 TV(abs,X)=1.8e-16 TV(Z,X)=8.6e-17 | UNCUT TV=1.23e-03 1.74e-03 8.16e-04
+seed 5: histories  294  total prob 1.000000000000001  CUT TV(abs,Z)=1.9e-16 TV(abs,X)=1.4e-16 TV(Z,X)=5.4e-17 | UNCUT TV=3.27e-03 1.41e-03 2.64e-03
+worst CUT TV over seeds and pairs: 4.09e-16
+UNCUT max TV over pairs: worst 8.912e-03, smallest-per-seed 1.690e-03

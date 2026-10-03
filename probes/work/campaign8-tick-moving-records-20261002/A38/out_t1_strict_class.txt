@@ -1,0 +1,45 @@
+(a) bijections cell -> 8 body diagonals kept by all 24 turns up to translation: 8 of 40320
+    they are exactly the 8 translates of H8 (m^a(r) = (-1)^{r_a}/sqrt3): True
+    control uniform (1,1,1)     : strict condition holds? False
+    control Neel along (1,1,1)  : strict condition holds? False
+    control random              : strict condition holds? False
+    exact site stabiliser of H8 about a site: order 3 (C3 about the local body diagonal)
+    face-diagonal half-turns that keep H8 exactly about some site: 0 of 6x8
+(b) H8 under J s.s + K s^a s^a + D DM: singular values [5.656854, 4.618802, 0.0]; calm laws (J,K,D) = [[1.0, 1.0, 0.0]]
+    control uniform (1,1,1)     : calm (J,K,D) null space = [[-0.0, -0.0, -1.0], [1.0, 0.0, 0.0]]
+    control Neel along (1,1,1)  : calm (J,K,D) null space = [[0.316228, -0.948683, -0.0]]
+    Klein four-sublattice rotation maps H8 to a Neel state along a body diagonal: True ; neel(0) = [1. 1. 1.]
+(c) NN pair                                   : 3 independent glued covariant terms
+(c) NNN pair (face diagonal, inside a star)   : 4 independent glued covariant terms
+(c) pair at distance 2 (inside a star)        : 3 independent glued covariant terms
+(c) 3-spin L (x, x+a, x+b)                    : 12 independent glued covariant terms
+(c) 3-spin straight (x-a, x, x+a)             : 2 independent glued covariant terms
+(c) 3-spin octant (x+a, x+b, x+c)             : 11 independent glued covariant terms
+(c) 3-spin (x-a, x+b, x+a)                    : 12 independent glued covariant terms
+    H8 with all 47 star-local terms: calm subspace dimension 24; flip patterns 384
+    calm direction 0: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NN pair', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 1: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NN pair', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 2: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 3: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 4: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 5: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 6: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 7: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 8: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 9: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 10: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 11: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 12: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 13: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 14: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 15: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 16: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 17: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 18: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 19: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 20: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 21: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NN pair', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 22: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    calm direction 23: uses ['3-spin (x-a, x+b, x+a)', '3-spin L (x, x+a, x+b)', '3-spin octant (x+a, x+b, x+c)', '3-spin straight (x-a, x, x+a)', 'NNN pair (face diagonal, inside a star)', 'pair at distance 2 (inside a star)']
+    A34's chiral term T alone on H8: largest flip amplitude 2.1773 (patterns of size [3])
+time 0.9 s

@@ -1763,3 +1763,21 @@ This is the same agent as rounds 5 and 6.
 - c10 gives flux 1.000000 for swap and 0.000000 for fill-behind.
 
 **Applied.** Draft v11 (v10 saved as c8/MORNING_DRAFT_v10_pre_A34c.md): 25 replacements, plus decision-18 and decision-27 owner questions. Summary updated accordingly. Errata appended to the A36 and A37 reports.
+
+## 05:26 (real) MORNING REPORT PUBLISHED as a private Claude Docs doc: https://claude.ai/artifact/3FXXMkwir3hJsoEqH26snt
+- **Title:** "Overnight campaign 8: what your tick and moving-record ideas do".
+- **Doc identifiers:** project 12398035-ccbd-4004-9c4b-fed1744a3fc5, tab 6ccf3b70-7a44, node 23eb2099-779a.
+- **Content:**
+  - the one-page summary (the reviewer's drop-in plus later corrections);
+  - How to read this;
+  - sections 0–11;
+  - menu decision;
+  - the A13 model;
+  - decisions 0–27;
+  - files and provenance, with a lanes table.
+- **Pending block .371:** "Late result: A38". It is filled when A38 lands, or removed if nothing usable comes.
+- **Doc vs local source:**
+  - nested-list indentation converted to 4 spaces;
+  - the A36 block in §5 flattened into plain bullets (same content);
+  - decision 18's sub-list reordered (same items).
+- Local FINAL_REPORT.md stays the archival source.

@@ -1,0 +1,34 @@
+calm family dimension 24 of 47
+  one-flip entries with |d|^2=0: 8 entries, rank over the calm family 1
+  one-flip entries with |d|^2=1: 48 entries, rank over the calm family 1
+  one-flip entries with |d|^2=2: 96 entries, rank over the calm family 2
+  one-flip entries with |d|^2=4: 48 entries, rank over the calm family 2
+(2) calm laws with zero on-site cost and NN hops only: dimension 20
+   direction 0: pair part (J,K,D) = [0.017051, 0.017051, 0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 1: pair part (J,K,D) = [0.118807, 0.118807, -0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 2: pair part (J,K,D) = [0.086061, 0.086061, 0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 3: pair part (J,K,D) = [-0.567035, -0.567035, 0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 4: pair part (J,K,D) = [0.118842, 0.118842, -0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 5: pair part (J,K,D) = [-0.509071, -0.509071, -0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 6: pair part (J,K,D) = [-0.118137, -0.118137, -0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 7: pair part (J,K,D) = [1.0, 1.0, 0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 8: pair part (J,K,D) = [-0.217415, -0.217415, -0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 9: pair part (J,K,D) = [0.285278, 0.285278, -0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 10: pair part (J,K,D) = [-1.0, -1.0, 0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 11: pair part (J,K,D) = [0.316076, 0.316076, 0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 12: pair part (J,K,D) = [0.172222, 0.172222, 0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 13: pair part (J,K,D) = [0.125078, 0.125078, 0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 14: pair part (J,K,D) = [0.545741, 0.545741, -0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 15: pair part (J,K,D) = [-0.395146, -0.395146, -0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 16: pair part (J,K,D) = [0.167161, 0.167161, 0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 17: pair part (J,K,D) = [0.072311, 0.072311, -0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 18: pair part (J,K,D) = [-0.151845, -0.151845, -0.0], uses kinds [0, 3, 4, 5, 6]
+   direction 19: pair part (J,K,D) = [-0.073843, -0.073843, 0.0], uses kinds [0, 3, 4, 5, 6]
+   random member 0: |W| values [np.float64(0.0115)]; (face, phase/pi) values [('xy', np.float64(-0.6667)), ('xy', np.float64(0.6667)), ('yz', np.float64(-0.6667)), ('yz', np.float64(0.6667)), ('zx', np.float64(-0.6667)), ('zx', np.float64(0.6667))]
+   random member 1: |W| values [np.float64(0.0977)]; (face, phase/pi) values [('xy', np.float64(-0.6667)), ('xy', np.float64(0.6667)), ('yz', np.float64(-0.6667)), ('yz', np.float64(0.6667)), ('zx', np.float64(-0.6667)), ('zx', np.float64(0.6667))]
+   random member 2: |W| values [np.float64(1.5506)]; (face, phase/pi) values [('xy', np.float64(-0.6667)), ('xy', np.float64(0.6667)), ('yz', np.float64(-0.6667)), ('yz', np.float64(0.6667)), ('zx', np.float64(-0.6667)), ('zx', np.float64(0.6667))]
+   random member 3: |W| values [np.float64(5.7764)]; (face, phase/pi) values [('xy', np.float64(-0.6667)), ('xy', np.float64(0.6667)), ('yz', np.float64(-0.6667)), ('yz', np.float64(0.6667)), ('zx', np.float64(-0.6667)), ('zx', np.float64(0.6667))]
+(3) random calm member: distinct face phases/pi 2: [np.float64(-0.6667), np.float64(0.6667)]
+   targeted search for phase pi on all 24 faces per cell (whole calm family): best residual 4.899e+00
+   faces at the best point (face, |W|, phase/pi): [('xy', np.float64(0.0542), np.float64(-0.6667)), ('xy', np.float64(0.0542), np.float64(0.6667)), ('yz', np.float64(0.0542), np.float64(-0.6667)), ('yz', np.float64(0.0542), np.float64(0.6667)), ('zx', np.float64(0.0542), np.float64(-0.6667)), ('zx', np.float64(0.0542), np.float64(0.6667))]
+time 38.9 s

@@ -1,0 +1,20 @@
+=== vmc.py 6 4000 sold:90,sold:62.5,sold:40 (1-min load 2.67, free mem 33%) ===
+cluster 6: N=216, oriented bonds 648; states ['sold:90', 'sold:62.5', 'sold:40']; nsweep 4000; budget/state 90s
+th=90.0deg (t=+0.000, lam=+1.000): MF gap 3.464; sweeps 4000 in 16s; acc flip 0/474989 exch 69426/475411; inverse drift 2.5e-13
+   e_J = +0.33790 +- 0.00125 (halves +0.33722/+0.33858; |Im| 4.9e-19)
+   e_K = -0.33545 +- 0.00089 (halves -0.33648/-0.33441; |Im| 2.7e-18)
+   e_D = +0.00000 +- 0.00000 (halves +0.00000/-0.00000; |Im| 1.9e-04)
+   |<s^a>| site-avg = [0.     0.     0.0022]; diag corr per direction (xx,yy,zz): e0: [-0.3397  0.3397  0.3356]; e1: [ 0.3371 -0.3371  0.3312]; e2: [ 0.3382  0.3382 -0.3295]
+th=62.5deg (t=+0.462, lam=+0.887): MF gap 1.146; sweeps 4000 in 35s; acc flip 130969/474922 exch 108865/475478; inverse drift 5.8e-13
+   e_J = +0.25301 +- 0.00100 (halves +0.25388/+0.25214; |Im| 3.2e-04)
+   e_K = -0.28209 +- 0.00052 (halves -0.28132/-0.28286; |Im| 4.2e-04)
+   e_D = -0.16987 +- 0.00037 (halves -0.16989/-0.16985; |Im| 4.0e-04)
+   |<s^a>| site-avg = [0.0013 0.001  0.0003]; diag corr per direction (xx,yy,zz): e0: [-0.2832  0.2691  0.2676]; e1: [ 0.2675 -0.2823  0.2663]; e2: [ 0.2675  0.2674 -0.2808]
+th=40.0deg (t=+0.766, lam=+0.643): MF gap 0.427; sweeps 4000 in 51s; acc flip 231985/474624 exch 188877/475776; inverse drift 1.5e-12
+   e_J = -0.29258 +- 0.00090 (halves -0.29262/-0.29255; |Im| 4.4e-04)
+   e_K = -0.21414 +- 0.00055 (halves -0.21403/-0.21424; |Im| 3.3e-04)
+   e_D = -0.42153 +- 0.00054 (halves -0.42201/-0.42104; |Im| 1.1e-03)
+   |<s^a>| site-avg = [0.0005 0.0001 0.0007]; diag corr per direction (xx,yy,zz): e0: [-0.2139 -0.0389 -0.0393]; e1: [-0.0393 -0.2143 -0.0407]; e2: [-0.0388 -0.0383 -0.2141]
+103.39 real       101.71 user         0.51 sys
+55820288  maximum resident set size
+done

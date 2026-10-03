@@ -1,0 +1,21 @@
+cluster fcc16: N=16, oriented bonds 48; states ['sold:90', 'sold:45', 'pi', 'sold:0']; nsweep 4000; budget/state 68s
+th=90.0deg (t=+0.000, lam=+1.000): MF gap 4.899; sweeps 4000 in 1s; acc flip 0/35126 exch 2255/35274; inverse drift 4.2e-15
+   e_J = +0.32428 +- 0.00419 (halves +0.32428/+0.32429; |Im| 1.6e-18)
+   e_K = -0.38167 +- 0.00387 (halves -0.38137/-0.38197; |Im| 1.1e-17)
+   e_D = +0.00000 +- 0.00000 (halves +0.00000/-0.00000; |Im| 4.6e-05)
+   |<s^a>| site-avg = [0.   0.   0.25]; diag corr per direction (xx,yy,zz): e0: [-0.6449  0.6449  0.3762]; e1: [ 0.1972 -0.1972  0.1416]; e2: [ 0.379   0.379  -0.3029]
+th=45.0deg (t=+0.707, lam=+0.707): MF gap 1.464; sweeps 4000 in 1s; acc flip 15798/35139 exch 6398/35261; inverse drift 2.0e-14
+   e_J = +0.03663 +- 0.00278 (halves +0.03841/+0.03485; |Im| 3.4e-04)
+   e_K = -0.17201 +- 0.00228 (halves -0.17182/-0.17220; |Im| 2.0e-03)
+   e_D = -0.36084 +- 0.00270 (halves -0.35945/-0.36223; |Im| 9.0e-06)
+   |<s^a>| site-avg = [0.0056 0.0014 0.0017]; diag corr per direction (xx,yy,zz): e0: [-0.1743  0.1077  0.1029]; e1: [ 0.106  -0.1762  0.0992]; e2: [ 0.1069  0.1032 -0.1654]
+KS pi-flux: MF gap 4.899; sweeps 4000 in 1s; acc flip 0/0 exch 12961/70400; inverse drift 2.3e-15
+   e_J = -1.08526 +- 0.00508 (halves -1.07742/-1.09311; |Im| 6.2e-18)
+   e_K = -0.35937 +- 0.00248 (halves -0.35810/-0.36064; |Im| 2.4e-18)
+   e_D = +0.00000 +- 0.00000 (halves +0.00000/+0.00000; |Im| 4.1e-03)
+   |<s^a>| site-avg = [0. 0. 0.]; diag corr per direction (xx,yy,zz): e0: [-0.3722 -0.3722 -0.3543]; e1: [-0.3631 -0.3631 -0.341 ]; e2: [-0.3735 -0.3735 -0.3428]
+th=0.0deg (t=+1.000, lam=+0.000): MF gap 2.828; sweeps 4000 in 1s; acc flip 0/0 exch 10260/70400; inverse drift 2.9e-15
+   e_J = -0.97408 +- 0.01041 (halves -0.97867/-0.96950; |Im| 2.6e-18)
+   e_K = -0.32452 +- 0.00363 (halves -0.32596/-0.32308; |Im| 1.5e-18)
+   e_D = +0.00000 +- 0.00000 (halves +0.00000/-0.00000; |Im| 6.7e-04)
+   |<s^a>| site-avg = [0. 0. 0.]; diag corr per direction (xx,yy,zz): e0: [-0.3177 -0.3177 -0.3359]; e1: [-0.3204 -0.3204 -0.3384]; e2: [-0.3181 -0.3181 -0.3354]

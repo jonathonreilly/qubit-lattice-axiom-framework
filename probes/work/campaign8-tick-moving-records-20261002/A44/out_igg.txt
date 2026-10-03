@@ -1,0 +1,6 @@
+(t + i lam s^a), staggered-gauged (x i): max |M eps + eps M*| over 60 random (t,lam,a) = 0.0e+00  -> eta-SU(2) invariant
+same without the staggered gauge, t=0, lam=1: 2.0 (not invariant in this gauge)
+KS pi-flux scalar hop +-1, staggered-gauged: 0.0e+00
+second-neighbour real hop t'=1 (same sublattice, gauged factor -1): 2.0  -> breaks SU(2) to U(1)
+explicit 2-site Fock check, i*(t + i lam s^z), t=.3 lam=1: |[eta+, H]| = 0.0e+00
+explicit 2-site Fock check, (t + i lam s^z) ungauged: |[eta+, H]| = 2.1e+00

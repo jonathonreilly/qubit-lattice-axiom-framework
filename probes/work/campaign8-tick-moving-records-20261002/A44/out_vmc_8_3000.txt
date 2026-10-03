@@ -1,0 +1,6 @@
+cluster 8: N=512, oriented bonds 1536; states ['sold:90']; nsweep 3000; budget/state 270s
+th=90.0deg (t=+0.000, lam=+1.000): MF gap 2.651; sweeps 3000 in 67s; acc flip 0/844924 exch 121667/844676; inverse drift 1.1e-11
+   e_J = +0.33614 +- 0.00092 (halves +0.33550/+0.33677; |Im| 7.4e-17)
+   e_K = -0.33567 +- 0.00075 (halves -0.33538/-0.33596; |Im| 3.5e-17)
+   e_D = +0.00000 +- 0.00000 (halves +0.00000/+0.00000; |Im| 1.5e-04)
+   |<s^a>| site-avg = [0.     0.     0.0026]; diag corr per direction (xx,yy,zz): e0: [-0.3339  0.3339  0.3346]; e1: [ 0.3358 -0.3358  0.3384]; e2: [ 0.3364  0.3364 -0.3374]

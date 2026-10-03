@@ -1,0 +1,10 @@
+=== vmc.py 8 2500 sold:0 (1-min load 3.39, free mem 47%) ===
+cluster 8: N=512, oriented bonds 1536; states ['sold:0']; nsweep 2500; budget/state 270s
+th=0.0deg (t=+1.000, lam=+0.000): MF gap 0.634; sweeps 2500 in 88s; acc flip 0/0 exch 190181/1408000; inverse drift 6.6e-13
+   e_J = -0.88002 +- 0.00852 (halves -0.87523/-0.88481; |Im| 5.5e-16)
+   e_K = -0.29315 +- 0.00284 (halves -0.29134/-0.29496; |Im| 1.6e-16)
+   e_D = +0.00000 +- 0.00000 (halves +0.00000/+0.00000; |Im| 1.1e-04)
+   |<s^a>| site-avg = [0. 0. 0.]; diag corr per direction (xx,yy,zz): e0: [-0.2918 -0.2918 -0.296 ]; e1: [-0.2923 -0.2923 -0.2938]; e2: [-0.2934 -0.2934 -0.2954]
+90.04 real        88.67 user         0.37 sys
+177111040  maximum resident set size
+done

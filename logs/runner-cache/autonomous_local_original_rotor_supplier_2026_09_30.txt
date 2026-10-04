@@ -1,0 +1,217 @@
+===== runner cache v1 =====
+runner: scripts/autonomous_local_original_rotor_supplier_2026_09_30.py
+runner_sha256: d06bd7aed04fcde0fcedac6b6ddd4d620f44829cc5d2ccb4f2e7fe09c3d24a4c
+input_fingerprint_sha256: d4a372751f43d79e31eb70aa651f36025b1ee5b22cf69084292913d8bf0d0a59
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+{
+  "clock_matrix_fixture": [
+    {
+      "K": 6,
+      "dimension": 26,
+      "energy_changes": {
+        "clock": -0.06870793908471118,
+        "interaction": 0.035932194411865806,
+        "system": 0.032775744672841035,
+        "total": -3.552713678800501e-15
+      },
+      "floating_comparison_allowance": 1e-12,
+      "joint_vector_error_vs_K32": 7.907276949098338e-06,
+      "minimum_total_energy": 0.3454620982564414,
+      "proved_vector_tail_upper": 0.051840000000000004
+    },
+    {
+      "K": 8,
+      "dimension": 34,
+      "energy_changes": {
+        "clock": -0.06870793908689343,
+        "interaction": 0.03593219441393712,
+        "system": 0.032775744672941746,
+        "total": -1.5987211554602254e-14
+      },
+      "floating_comparison_allowance": 1e-12,
+      "joint_vector_error_vs_K32": 1.66524530585386e-08,
+      "minimum_total_energy": 0.3454620982564413,
+      "proved_vector_tail_upper": 0.001672820168067227
+    },
+    {
+      "K": 10,
+      "dimension": 42,
+      "energy_changes": {
+        "clock": -0.06870793908687745,
+        "interaction": 0.03593219441393734,
+        "system": 0.03277574467294185,
+        "total": 1.7763568394002505e-15
+      },
+      "floating_comparison_allowance": 1e-12,
+      "joint_vector_error_vs_K32": 2.036923817611863e-11,
+      "minimum_total_energy": 0.3454620982564412,
+      "proved_vector_tail_upper": 3.231584415584416e-05
+    }
+  ],
+  "clock_prefix_and_record_code": {
+    "actual_matched_label_transition": -1,
+    "matched_code_commutator_norm_squared": 0,
+    "protected_clock_prefix_words": 27,
+    "wrapped_shift_boundary_commutator_defect": -9
+  },
+  "clock_resources": {
+    "alpha_denominator": {
+      "bit_length": 252,
+      "decimal_digits": 76
+    },
+    "local_register_qubits": {
+      "one_clock": 4463,
+      "one_link": 32,
+      "one_record": 4
+    },
+    "magnetic_union_B_counts": {
+      "10": 12,
+      "11": 6
+    },
+    "passed": true,
+    "rational_bounds": {
+      "clock_ground_zero_initial_energy": "N*Kclock*(2*pi/ell)",
+      "cut_over_alpha_upper": "1/5",
+      "each_source_moment_added_error_upper": "1/1000",
+      "endpoint_energy_error_upper": "3/4000",
+      "jitter_over_alpha_upper": "1/5",
+      "positive_total_energy_norm_upper": "hbar+2*N*Kclock*(2*pi/ell)+vbar",
+      "pulse_over_alpha_upper": "1/5",
+      "smooth_over_alpha_upper": "1/5",
+      "sweep_over_alpha": "<=1/5 (exact rational comparison)"
+    },
+    "resource_sizes": {
+      "Fejer_degree_M": {
+        "bit_length": 3714,
+        "decimal_digits": 1118
+      },
+      "M2_block_side": {
+        "bit_length": 124,
+        "decimal_digits": 38
+      },
+      "clock_dimension": {
+        "bit_length": 4463,
+        "decimal_digits": 1344
+      },
+      "clock_halfband_K": {
+        "bit_length": 4462,
+        "decimal_digits": 1344
+      },
+      "first_omitted_Dyson_order_k": {
+        "bit_length": 748,
+        "decimal_digits": 226
+      },
+      "interaction_range_upper_M2_L1": {
+        "bit_length": 127,
+        "decimal_digits": 38
+      },
+      "n_bins": {
+        "bit_length": 367,
+        "decimal_digits": 111
+      },
+      "original_center_gates": {
+        "bit_length": 380,
+        "decimal_digits": 115
+      },
+      "packet_halfband_k0": {
+        "bit_length": 3510,
+        "decimal_digits": 1057
+      },
+      "qubits_per_A_cell": {
+        "bit_length": 370,
+        "decimal_digits": 112
+      },
+      "stored_real_Fourier_coefficients_upper": {
+        "bit_length": 4095,
+        "decimal_digits": 1233
+      },
+      "total_M2_sites": {
+        "bit_length": 384,
+        "decimal_digits": 116
+      }
+    },
+    "scope": "Exact finite apparatus arithmetic composed with the rotor certificate recomputed in this runner.",
+    "source": {
+      "K": 1,
+      "L": 24,
+      "N": 6912,
+      "R": 1346132804,
+      "T": 1,
+      "delta": 1,
+      "kappa": 1
+    },
+    "source_bounds": {
+      "Pbar": 2042197978594194972180493758811238400,
+      "Qmax": 55826819647489,
+      "g_sweep": 552960,
+      "g_weighted": 2073600,
+      "hbar": 6233267583906527668483842050
+    },
+    "whole_magnetic_pair_qubits_upper": 2136
+  },
+  "execution": {
+    "cpu_seconds": 0.022992,
+    "peak_rss_bytes": 36913152,
+    "wall_seconds": 0.023001749999821186
+  },
+  "package_local_integrity_reads": [
+    "paired source note; source hashes only"
+  ],
+  "rotor_prefix_and_loss": {
+    "boundary_missing_loss_flux_on_unit_input": 1,
+    "safe_rotor_Dyson_words": 41
+  },
+  "rotor_resources": {
+    "L": 24,
+    "N": 6912,
+    "error_upper_exponents_base_2": {
+      "energy_first_moment": -294478807,
+      "energy_second_moment": -294478745,
+      "marked_trace_error": -334457869,
+      "source_current_first_moment": -294478771,
+      "source_current_second_moment": -294478688
+    },
+    "g_weighted": 2073600,
+    "maximum_births": 3456,
+    "product_link_cutoff": 1346132804,
+    "tail_start_k": 336531472,
+    "v": 17915904,
+    "x": 18952704
+  },
+  "scientific_source_identities": {
+    "docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md": "29602b548895fe0fd7dcfb256aadaee35dbbaf8f226147d9d4c847b2a068c4b3",
+    "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md": "1b466fe23c26d772279333d0aef92303563836e1b330028819cd2861399f5b48",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+  },
+  "scope": "Conditional original rotor-word, clock-module and finite resource checks; no native selection or full-torus numerical simulation.",
+  "source_words": {
+    "B_relocations_at_fixed_count": 896,
+    "individually_zero_box_truncated_hops_omega": 0,
+    "legal_three_neighbor_magnetic_subword_returns": 1220,
+    "original_coherent_mark_cross_sign_matrix_element": 1,
+    "original_star_birth_words": 9720,
+    "product_zero_box_compressed_A_pair_omega": -70,
+    "successive_birth_layers": [
+      1,
+      45,
+      150,
+      35,
+      0
+    ],
+    "whole_axial_pair_omega_diagonal_SstarS": 35
+  }
+}
+per_element: checked exact original birth shifts and individual clock momentum prefixes.
+per_site: checked complete cubic-star labels and charge/field changes on all local occupancy words.
+per_mode: checked compressed Fourier shifts, protected Dyson words and the matched record code.
+per_block: checked actual overlapping-star compression and a separate finite controller-energy fixture.
+lattice_wide: checked symbolic finite-torus resource bounds; no full torus matrix was executed.
+TOTAL: PASS=6 FAIL=0 (six check groups; finite evidence for the paired conditional proof)
+
+----- stderr -----
+

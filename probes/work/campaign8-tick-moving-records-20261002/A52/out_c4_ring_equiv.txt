@@ -1,0 +1,16 @@
+(a) CZ circuit V (pairs of star links where the two tournaments disagree) maps every hop of one random
+    record background / tournament choice to the other's: mismatches 0 of 1152 (CZ gates used: [475, 492, 477, 456, 528, 486])
+    dense star check (U(1) raise operators, CZ in the field basis), f0 -> each of 8 records: max residual 0.0e+00
+(b) torus (2, 2, 2) T0  uniform: states     864, flip edges     6912, negative-sign edges    4224, sign inconsistencies 0
+(b) torus (2, 2, 2) T0  random : states     864, flip edges     6912, negative-sign edges    3376, sign inconsistencies 0
+(b) torus (2, 2, 2) T31 uniform: states     864, flip edges     6912, negative-sign edges    4224, sign inconsistencies 0
+(b) torus (2, 2, 2) T31 random : states     864, flip edges     6912, negative-sign edges    3952, sign inconsistencies 0
+(b) torus (2, 2, 3) T0  uniform: states   34080, flip edges   367872, negative-sign edges  196992, sign inconsistencies 0
+(b) torus (2, 2, 3) T0  random : states   34080, flip edges   367872, negative-sign edges  188464, sign inconsistencies 0
+(b) torus (2, 2, 3) T31 uniform: states   34080, flip edges   367872, negative-sign edges  196992, sign inconsistencies 0
+(b) torus (2, 2, 3) T31 random : states   34080, flip edges   367872, negative-sign edges  179496, sign inconsistencies 0
+(b) torus (2, 2, 4) T0  uniform: states  250000 (capped), flip edges  1525878, negative-sign edges  738450, sign inconsistencies 0
+(b) torus (2, 2, 4) T0  random : states  250000 (capped), flip edges  1525878, negative-sign edges  806886, sign inconsistencies 0
+(b) torus (2, 2, 4) T31 uniform: states  250000 (capped), flip edges  1525878, negative-sign edges  738450, sign inconsistencies 0
+(b) torus (2, 2, 4) T31 random : states  250000 (capped), flip edges  1525878, negative-sign edges  756085, sign inconsistencies 0
+done

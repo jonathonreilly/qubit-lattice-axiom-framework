@@ -1,0 +1,17 @@
+(A) corner star (6 link qubits), dense
+   covariance U_g t_i[f] U_g^dag = c t_{gi}[gf]: max residual 1.3e-15 over 24 x 8 x 6; phases c seen: [np.complex128(-1+0j), np.complex128(-1j), np.complex128(-0+1j), np.complex128(1+0j)]
+   Gauss: max ||[G_v, t_i] - t_i|| = 0.0e+00 (G_v = outward field / 2)
+   junction phases, all 8 records x 20 triples x 6 orderings: {np.complex128(-1+0j): 960}, max residual 0.0e+00
+   control, no record (O-covariant decorations, 20 samples): {('T', np.complex128(1+0j)): 240, ('corner', np.complex128(1+0j)): 160}
+   control, BK order made C3-covariant by summing its 3 images: C3 covariance residual 9.2e-16; junctions {'scalar': 10, 'not scalar': 10} (max residual 4.00)
+   control, same BK order for every record (no transport): max covariance residual 1.000
+(B) one coarse cube: 12 link qubits, 8 corner records, turns about the cube centre
+   uniform f0  covariance: hops max residual 8.9e-16, loop ops 3.1e-16 | corner junctions {(np.complex128(-1+0j), True): 8}
+               decorated loop vs off-loop hops (t L = c L t): {(np.complex128(1-0j), True): 48} | bare ring loop: {np.complex128(-1+0j): 12, np.complex128(1+0j): 36}
+   random 0    covariance: hops max residual 1.1e-15, loop ops 3.1e-16 | corner junctions {(np.complex128(-1+0j), True): 8}
+               decorated loop vs off-loop hops (t L = c L t): {(np.complex128(1-0j), True): 48} | bare ring loop: {np.complex128(-1+0j): 12, np.complex128(1+0j): 36}
+   random 1    covariance: hops max residual 8.9e-16, loop ops 3.1e-16 | corner junctions {(np.complex128(-1+0j), True): 8}
+               decorated loop vs off-loop hops (t L = c L t): {(np.complex128(1-0j), True): 48} | bare ring loop: {np.complex128(-1+0j): 14, np.complex128(1+0j): 34}
+   random 2    covariance: hops max residual 8.9e-16, loop ops 3.1e-16 | corner junctions {(np.complex128(-1+0j), True): 8}
+               decorated loop vs off-loop hops (t L = c L t): {(np.complex128(1+0j), True): 48} | bare ring loop: {np.complex128(1+0j): 36, np.complex128(-1+0j): 12}
+done

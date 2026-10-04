@@ -1,0 +1,6 @@
+group C4z, places vlinks, target all: 12 free seeds, 14 params, 25 starts
+   outcomes: {'not scalar': 25}
+   smallest final residual norm (incl. target): 4.523e+00
+   theta patterns at scalar optima: {}
+   wall 22.0 s
+done

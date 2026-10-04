@@ -1,0 +1,38 @@
+(1) A45 GF(2) system (link decorations at a corner, Gauss-parity switching allowed)
+   O (no record)                      |G|=24  fermion(sw)=False fermion(no sw)=False boson(sw)=True 
+   T (12 even)                        |G|=12  fermion(sw)=False fermion(no sw)=False boson(sw)=True 
+   C3  = Stab(body diag 111)          |G|= 3  fermion(sw)=True  fermion(no sw)=True  boson(sw)=True 
+   D3  = Stab(line 111)               |G|= 6  fermion(sw)=True  fermion(no sw)=True  boson(sw)=True 
+   C4  = Stab(axis +z)                |G|= 4  fermion(sw)=False fermion(no sw)=False boson(sw)=True 
+   D4  = Stab(line z)                 |G|= 8  fermion(sw)=False fermion(no sw)=False boson(sw)=True 
+   C2' = Stab(face diag 110)          |G|= 2  fermion(sw)=True  fermion(no sw)=True  boson(sw)=True 
+   D2' = Stab(line 110)               |G|= 4  fermion(sw)=False fermion(no sw)=False boson(sw)=True 
+   D2  (three axis half-turns)        |G|= 4  fermion(sw)=False fermion(no sw)=False boson(sw)=True 
+   C2z                                |G|= 2  fermion(sw)=False fermion(no sw)=False boson(sw)=True 
+   trivial (generic record)           |G|= 1  fermion(sw)=True  fermion(no sw)=True  boson(sw)=True 
+(2) strict tournaments (orientations of the 15 leg pairs) invariant under each group
+   O (no record)                      invariant tournaments:     0  (transitive orders among them: 0)
+   T (12 even)                        invariant tournaments:     0  (transitive orders among them: 0)
+   C3  = Stab(body diag 111)          invariant tournaments:    32  (transitive orders among them: 0)
+   D3  = Stab(line 111)               invariant tournaments:     0  (transitive orders among them: 0)
+   C4  = Stab(axis +z)                invariant tournaments:     0  (transitive orders among them: 0)
+   D4  = Stab(line z)                 invariant tournaments:     0  (transitive orders among them: 0)
+   C2' = Stab(face diag 110)          invariant tournaments:     0  (transitive orders among them: 0)
+   D2' = Stab(line 110)               invariant tournaments:     0  (transitive orders among them: 0)
+   D2  (three axis half-turns)        invariant tournaments:     0  (transitive orders among them: 0)
+   C2z                                invariant tournaments:     0  (transitive orders among them: 0)
+   trivial (generic record)           invariant tournaments: 32768  (transitive orders among them: 720)
+(3) the 32 C3(111) tournaments: transport to the 8 body diagonals
+   tournaments with 0 conflicts, covariant family on 8 diagonals, all fermionic: 32 / 32
+   example T_f0 (row i: legs j whose field factor hop i carries):
+      hop +x: ['-x', '+y', '-y', '-z']
+      hop -x: ['-y']
+      hop +y: ['-x', '-y', '+z', '-z']
+      hop -y: ['-z']
+      hop +z: ['+x', '-x', '-y', '-z']
+      hop -z: ['-x']
+   pairs whose orientation differs from T_f0, per body diagonal f: {(1, 1, 1): 0, (1, 1, -1): 7, (1, -1, 1): 7, (1, -1, -1): 8, (-1, 1, 1): 7, (-1, 1, -1): 8, (-1, -1, 1): 8, (-1, -1, -1): 15}
+(4) control: a fermionic tournament that is NOT C3-invariant (BK order -x<-y<-z<+x<+y<+z)
+   is tournament: True; transport conflicts over the 24 turns: 16 (0 = well defined)
+   distinct tournaments assigned to f0 by the 3 turns in Stab(f0): 3
+done

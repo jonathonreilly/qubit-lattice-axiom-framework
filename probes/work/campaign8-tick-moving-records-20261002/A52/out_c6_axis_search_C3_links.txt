@@ -1,0 +1,8 @@
+group C3, places links, target all: 10 free seeds, 10 params, 12 starts
+   outcomes: {'scalar': 12}
+   smallest final residual norm (incl. target): 5.208e-13
+   theta patterns at scalar optima: {(((-1-0j), 20),): 12}
+   example with a -1 (start 0): thetas {'+x-x+y': (-1-0j), '+x-x-y': (-1+0j), '+x-x+z': (-1-0j), '+x-x-z': (-1-0j), '+x+y-y': (-1-0j), '+x+y+z': (-1-0j), '+x+y-z': (-1-0j), '+x-y+z': (-1-0j), '+x-y-z': (-1+0j), '+x+z-z': (-1-0j), '-x+y-y': (-1-0j), '-x+y+z': (-1-0j), '-x+y-z': (-1+0j), '-x-y+z': (-1+0j), '-x-y-z': (-1+0j), '-x+z-z': (-1+0j), '+y-y+z': (-1-0j), '+y-y-z': (-1+0j), '+y+z-z': (-1-0j), '-y+z-z': (-1-0j)}
+      seed rotations (SO(3)) at non-link seed places: {}
+   wall 2.1 s
+done

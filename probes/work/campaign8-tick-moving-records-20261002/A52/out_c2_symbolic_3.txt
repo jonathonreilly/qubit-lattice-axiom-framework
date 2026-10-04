@@ -1,0 +1,28 @@
+coarse torus (3, 3, 3): 27 corners, 81 links, 81 plaquettes
+(a) uniform f0 background, all 32 C3 tournaments; (b) random body-diagonal backgrounds
+   pair rule (anticommute iff share a corner) violations, junction counts, Gauss violations:
+      uniform  runs 32: max violations 0; junction tallies [((-1, 540),)]; Gauss violations 0
+      random   runs  4: max violations 0; junction tallies [((-1, 540),)]; Gauss violations 0
+(c) covariance of the law as a function of the records (turns about a corner and a cube centre, translations)
+   tournament  0, uniform background: covariance mismatches 0 of 4131 hop images
+   tournament  0, random  background: covariance mismatches 0 of 4131 hop images
+   tournament 13, uniform background: covariance mismatches 0 of 4131 hop images
+   tournament 13, random  background: covariance mismatches 0 of 4131 hop images
+   tournament 31, uniform background: covariance mismatches 0 of 4131 hop images
+   tournament 31, random  background: covariance mismatches 0 of 4131 hop images
+   control (records held fixed, not turned): mismatches 1701 of 1944
+(d) loop products around plaquettes (Z2 version, exact phases)
+   T0 uniform: S_p^2 phases {0}; S_p anticommuting with hops 0, with Gauss 0, with other S 0
+      off-loop field factors per S_p: min 6 max 6; bare X-loops anticommuting with an off-loop hop: 81 of 81 plaquettes (486 pairs)
+      cube relation (product of 6 faces) phases i^k, k in [0]; plane products (i^k): {(0, 1): 0, (0, 2): 0, (1, 2): 0}
+   T0 random : S_p^2 phases {0}; S_p anticommuting with hops 0, with Gauss 0, with other S 0
+      off-loop field factors per S_p: min 4 max 8; bare X-loops anticommuting with an off-loop hop: 81 of 81 plaquettes (486 pairs)
+      cube relation (product of 6 faces) phases i^k, k in [0]; plane products (i^k): {(0, 1): 0, (0, 2): 0, (1, 2): 0}
+   T31 uniform: S_p^2 phases {0}; S_p anticommuting with hops 0, with Gauss 0, with other S 0
+      off-loop field factors per S_p: min 6 max 6; bare X-loops anticommuting with an off-loop hop: 81 of 81 plaquettes (486 pairs)
+      cube relation (product of 6 faces) phases i^k, k in [0]; plane products (i^k): {(0, 1): 0, (0, 2): 0, (1, 2): 0}
+   T31 random : S_p^2 phases {0}; S_p anticommuting with hops 0, with Gauss 0, with other S 0
+      off-loop field factors per S_p: min 4 max 8; bare X-loops anticommuting with an off-loop hop: 81 of 81 plaquettes (486 pairs)
+      cube relation (product of 6 faces) phases i^k, k in [0]; plane products (i^k): {(0, 1): 0, (0, 2): 0, (1, 2): 0}
+   control, bare hops (no decorations): junction tally {1: 540}
+done

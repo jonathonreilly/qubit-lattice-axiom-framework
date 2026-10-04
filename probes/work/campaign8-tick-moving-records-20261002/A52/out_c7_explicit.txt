@@ -1,0 +1,7 @@
+explicit rule == transported T0 for all 8 body diagonals: True
+rule is a tournament for all f: True
+rule covariant under the 24 turns: True
+plaquette at (0, 0, 0) in plane xy: off-loop field factors of the decorated ring: ['(0, 0, 0)+z', '(0, 2, 0)+y', '(0, 2, 0)-x', '(2, 0, 0)+z', '(2, 0, 0)-z', '(2, 2, 0)-z']
+plaquette at (0, 0, 0) in plane xz: off-loop field factors of the decorated ring: ['(0, 0, 0)+y', '(0, 0, 2)+y', '(0, 0, 2)-y', '(2, 0, 0)+x', '(2, 0, 0)-z', '(2, 0, 2)-y']
+plaquette at (0, 0, 0) in plane yz: off-loop field factors of the decorated ring: ['(0, 0, 0)+x', '(0, 0, 2)+z', '(0, 0, 2)-y', '(0, 2, 0)+x', '(0, 2, 0)-x', '(0, 2, 2)-x']
+done

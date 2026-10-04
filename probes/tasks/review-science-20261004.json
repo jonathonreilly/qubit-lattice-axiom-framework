@@ -443,12 +443,13 @@
     "parse": {
       "summary": "(?m)^SUMMARY: (.*)"
     },
-    "research_target": "Prove a bounded physical tick/record/edge identification with all clock and update premises explicit, or identify the first missing supplier. Six-neighbour BFS reachability does not prove elapsed time, all-neighbour realization or light speed. The landed Planck packet supplies only conditional unit arithmetic and independent rounded-fixture consistency. A transfer-relative one-clock theorem assumes its axis, step and single-clock clauses. Do not adopt a new clock law or numerical primitive.",
+    "research_target": "Prove a bounded physical tick/record/edge identification with all clock and update premises explicit, or identify the first missing supplier. Six-neighbour BFS reachability does not prove elapsed time, all-neighbour realization or light speed. The landed Planck packet supplies only conditional unit arithmetic and independent rounded-fixture consistency. A transfer-relative one-clock theorem assumes its axis, step and single-clock clauses. Do not adopt a new clock law or numerical primitive. Independently distinguish the chosen Planck reference unit from the dimensionless physical spacing ratio r=a_s/l_P. The corrected packet proves only a_tau=r*t_P given the supplied tick/edge and physical-c bridge. r=1 is a numerical fixture, not a consequence of the registered ruler; derive or explicitly expose this self-consistency supplier before claiming a physical Planck-time minimum.",
     "source_paths": [
       "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
       "docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md",
       "docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md",
       "docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md",
+      "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
       "scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py"
     ],
     "related_tasks": [
@@ -456,37 +457,42 @@
       "J:derive:deferred-20260925-clock-formation-selection:a1"
     ],
     "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
-    "what": "Prove a bounded physical tick/record/edge identification with all clock and update premises explicit, or identify the first missing supplier. Six-neighbour BFS reachability does not prove elapsed time, all-neighbour realization or light speed. The landed Planck packet supplies only conditional unit arithmetic and independent rounded-fixture consistency. A transfer-relative one-clock theorem assumes its axis, step and single-clock clauses. Do not adopt a new clock law or numerical primitive. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "what": "Prove a bounded physical tick/record/edge identification with all clock and update premises explicit, or identify the first missing supplier. Six-neighbour BFS reachability does not prove elapsed time, all-neighbour realization or light speed. The landed Planck packet supplies only conditional unit arithmetic and independent rounded-fixture consistency. A transfer-relative one-clock theorem assumes its axis, step and single-clock clauses. Do not adopt a new clock law or numerical primitive. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task. Independently distinguish the chosen Planck reference unit from the dimensionless physical spacing ratio r=a_s/l_P. The corrected packet proves only a_tau=r*t_P given the supplied tick/edge and physical-c bridge. r=1 is a numerical fixture, not a consequence of the registered ruler; derive or explicitly expose this self-consistency supplier before claiming a physical Planck-time minimum.",
     "source_branch": {
       "name": "main",
-      "head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+      "head": "94083c1bb4c89d746c8e4214b46a260efc16a433",
       "on_origin": true
     },
     "source_objects": [
       {
         "path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
         "sha256": "e6952f8bb3fb033a96e9fac6e10d877b3b3576f7ead872f2140ed832ac166700",
-        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+        "commit": "94083c1bb4c89d746c8e4214b46a260efc16a433"
       },
       {
         "path": "docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md",
-        "sha256": "a559491bc5710f0f54c18d191033592dd97baaf3eb7f07f4cef2792270b6b740",
-        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+        "sha256": "cd30888631f0039c41ea6cc5fa0c094e5166f82a195c62cc432b6f42d9ad460f",
+        "commit": "94083c1bb4c89d746c8e4214b46a260efc16a433"
       },
       {
         "path": "docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md",
         "sha256": "9c70abdc9b80bb0f6dcfc1ec35596f8b96030ec8942a1bd6e839d39d99696f46",
-        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+        "commit": "94083c1bb4c89d746c8e4214b46a260efc16a433"
       },
       {
         "path": "docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md",
         "sha256": "461f375c3a36e58aee197299cd8bc433f8ec2bc0c347b1140adae2e791fd9859",
-        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+        "commit": "94083c1bb4c89d746c8e4214b46a260efc16a433"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+        "commit": "94083c1bb4c89d746c8e4214b46a260efc16a433"
       },
       {
         "path": "scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py",
-        "sha256": "954035d850299ef9d36ce60dda0324d2eb39a190d49d286c0a081b41bd5a824d",
-        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+        "sha256": "b8c38640f035d723affc64bd8b9f68a379d4ac983dc497fc5393ed86e3ae45ae",
+        "commit": "94083c1bb4c89d746c8e4214b46a260efc16a433"
       }
     ]
   },

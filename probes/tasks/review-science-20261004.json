@@ -79,16 +79,18 @@
     "parse": {
       "summary": "(?m)^SUMMARY: (.*)"
     },
-    "research_target": "At J=1 and J=5/2, prove the exact scalar Schur part vanishes at each certified vector zero throughout the stated epsilon ranges. Establish rigorous locations of the known line/plane-family nodes inside the full shifted box X=x+mz^2+lambda epsilon+a1 epsilon z, Y=y+b1 epsilon z, then use the proved vector uniqueness. The enforced complement-gap bound already keeps C invertible. A floating match at4e-8 is not this proof.",
+    "research_target": "At J=1 and J=5/2, prove the exact scalar Schur part vanishes at each certified vector zero throughout the stated epsilon ranges. Establish rigorous locations of the known line/plane-family nodes inside the full shifted box X=x+mz^2+lambda epsilon+a1 epsilon z, Y=y+b1 epsilon z, then use the proved vector uniqueness. The enforced complement-gap bound already keeps C invertible. A floating match at4e-8 is not this proof. Try a shorter exact route before family-location bounds: verify that the global paired-spectrum identity from the same comparator applies throughout the unfolded box. For Hermitian paired eigenvalues detH is nonnegative. At a vector-numerator zero, the block determinant gives detH=N0^2/detC; the enforced detC<0 would force N0=0. Check the converse with the even zero-eigenvalue multiplicity and invertible complement. This is a candidate route for independent verification, not an already-promoted theorem; check matching matrix conventions and all hypotheses literally.",
     "source_paths": [
       "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_ABOVE_J_EQUALS_TWO_THE_FLIPPING_LINE_NODE_IS_A_CUBIC_POINT_THAT_EMITS_A_PLANE_PAIR_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_ACROSS_COUPLING_REGIMES_BOUNDED_THEOREM_NOTE_2026-10-01.md",
       "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_CUBIC_FLIP_POINTS_HAVE_EXPLICIT_DEGREE_ONE_NEIGHBOURHOODS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "scripts/composite_site_network_flux_free_certified_touching_census_across_coupling_regimes_2026_10_01.py",
       "scripts/composite_site_network_flux_free_cubic_flip_points_have_explicit_degree_one_neighbourhoods_2026_10_01.py",
       "scripts/composite_site_network_flux_free_region_b_line_node_flip_is_a_cubic_point_emitting_a_plane_pair_2026_10_01.py"
     ],
     "related_tasks": [],
     "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
-    "what": "At J=1 and J=5/2, prove the exact scalar Schur part vanishes at each certified vector zero throughout the stated epsilon ranges. Establish rigorous locations of the known line/plane-family nodes inside the full shifted box X=x+mz^2+lambda epsilon+a1 epsilon z, Y=y+b1 epsilon z, then use the proved vector uniqueness. The enforced complement-gap bound already keeps C invertible. A floating match at4e-8 is not this proof. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "what": "At J=1 and J=5/2, prove the exact scalar Schur part vanishes at each certified vector zero throughout the stated epsilon ranges. Establish rigorous locations of the known line/plane-family nodes inside the full shifted box X=x+mz^2+lambda epsilon+a1 epsilon z, Y=y+b1 epsilon z, then use the proved vector uniqueness. The enforced complement-gap bound already keeps C invertible. A floating match at4e-8 is not this proof. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task. Try a shorter exact route before family-location bounds: verify that the global paired-spectrum identity from the same comparator applies throughout the unfolded box. For Hermitian paired eigenvalues detH is nonnegative. At a vector-numerator zero, the block determinant gives detH=N0^2/detC; the enforced detC<0 would force N0=0. Check the converse with the even zero-eigenvalue multiplicity and invertible complement. This is a candidate route for independent verification, not an already-promoted theorem; check matching matrix conventions and all hypotheses literally.",
     "source_branch": {
       "name": "main",
       "head": "2868a0c453e667d1267f0e1e7403732a11893d78",
@@ -101,8 +103,18 @@
         "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
       },
       {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_ACROSS_COUPLING_REGIMES_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "26ea04b4e26432e8763fc984190284f62ee2478a57a07c0c1aa6bb8ad79a2a84",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
         "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_CUBIC_FLIP_POINTS_HAVE_EXPLICIT_DEGREE_ONE_NEIGHBOURHOODS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
         "sha256": "85050dcb0a24a37ddd471b821db48ec23301f63d899d9f7c09b3909af84df50b",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_certified_touching_census_across_coupling_regimes_2026_10_01.py",
+        "sha256": "95eff14789f60cb0392aef67d75324f7fe6be5418597e991c58f289f742fb69d",
         "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
       },
       {

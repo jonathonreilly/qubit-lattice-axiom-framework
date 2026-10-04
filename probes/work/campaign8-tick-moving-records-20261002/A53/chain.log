@@ -1,0 +1,351 @@
+=== lz24.py 6 B4_r4 rand (1-min load 2.40, free mem 38%) ===
+[L6_B4_r4_rand] resume phase p1 at step 121; setup 0.3s
+  p1 step 125: E0/N -2.0157014990  E1/N -2.0085823542  resid est 1.63e-01  [8s]
+  p1 step 130: E0/N -2.0157643403  E1/N -2.0091124584  resid est 1.08e-01  [17s]
+  p1 step 135: E0/N -2.0157900188  E1/N -2.0093829184  resid est 7.53e-02  [27s]
+  p1 step 140: E0/N -2.0158057262  E1/N -2.0095786980  resid est 8.88e-02  [37s]
+  p1 step 145: E0/N -2.0158314821  E1/N -2.0100072852  resid est 1.02e-01  [47s]
+  p1 step 150: E0/N -2.0158679439  E1/N -2.0109079378  resid est 1.02e-01  [57s]
+  p1 step 155: E0/N -2.0158941657  E1/N -2.0116467063  resid est 7.17e-02  [66s]
+  p1 step 160: E0/N -2.0159063320  E1/N -2.0119764343  resid est 5.60e-02  [76s]
+  p1 step 165: E0/N -2.0159176640  E1/N -2.0122812520  resid est 6.50e-02  [86s]
+  p1 step 170: E0/N -2.0159358656  E1/N -2.0127742898  resid est 1.01e-01  [96s]
+  p1 step 175: E0/N -2.0159619152  E1/N -2.0134148588  resid est 8.60e-02  [106s]
+  p1 step 180: E0/N -2.0159812847  E1/N -2.0138001958  resid est 6.21e-02  [117s]
+  p1 step 185: E0/N -2.0159926946  E1/N -2.0139929244  resid est 5.82e-02  [127s]
+  p1 step 190: E0/N -2.0160066623  E1/N -2.0142036388  resid est 7.77e-02  [137s]
+  p1 step 195: E0/N -2.0160379112  E1/N -2.0145867551  resid est 1.14e-01  [147s]
+  p1 step 200: E0/N -2.0160838421  E1/N -2.0149591088  resid est 1.11e-01  [157s]
+  p1 step 205: E0/N -2.0161107727  E1/N -2.0151054243  resid est 8.64e-02  [169s]
+  p1 step 210: E0/N -2.0161310648  E1/N -2.0151931720  resid est 7.70e-02  [179s]
+  p1 step 215: E0/N -2.0161583298  E1/N -2.0152901128  resid est 1.04e-01  [189s]
+  p1 step 220: E0/N -2.0162044013  E1/N -2.0154156995  resid est 1.27e-01  [200s]
+  p1 step 225: E0/N -2.0162524689  E1/N -2.0155116083  resid est 1.08e-01  [210s]
+  p1 step 230: E0/N -2.0162873658  E1/N -2.0155660899  resid est 9.85e-02  [221s]
+  p1 step 235: E0/N -2.0163238020  E1/N -2.0156135689  resid est 1.32e-01  [231s]
+  p1 step 240: E0/N -2.0163951506  E1/N -2.0156871493  resid est 1.63e-01  [242s]
+  checkpoint: phase p1 step 242  [246s]
+246.21 real       242.00 user         1.35 sys
+191086592  maximum resident set size
+=== t2_prod.py 6 B4_inner 211,221,222,223 (1-min load 4.26, free mem 33%) ===
+L=6 rule B4_inner; parton VMC E/N (A51) -1.7268
+ block (2, 1, 1) (n=2): restricted-rule singlet GS E_A/n -1.50000 -> product E/N -1.50000; self-consistent best E/N -1.500000 (iter 0; intra -1.50000, inter +0.00000); n_inter_terms 0; E-history/N first..last -1.50000..-1.50000 (1 it); vs parton +0.22680  [1s]
+ block (2, 2, 1) (n=4): restricted-rule singlet GS E_A/n -1.61239 -> product E/N -1.61239; self-consistent best E/N -1.612390 (iter 0; intra -1.61239, inter +0.00000); n_inter_terms 0; E-history/N first..last -1.61239..-1.61239 (1 it); vs parton +0.11441  [1s]
+ block (2, 2, 2) (n=8): restricted-rule singlet GS E_A/n -1.65459 -> product E/N -1.65459; self-consistent best E/N -1.654594 (iter 0; intra -1.65459, inter +0.00000); n_inter_terms 0; E-history/N first..last -1.65459..-1.65459 (1 it); vs parton +0.07221  [2s]
+ block (2, 2, 3) (n=12): restricted-rule singlet GS E_A/n -1.66065 -> product E/N -1.66065; self-consistent best E/N -1.660651 (iter 0; intra -1.66065, inter +0.00000); n_inter_terms 0; E-history/N first..last -1.66065..-1.66065 (1 it); vs parton +0.06615  [3s]
+3.34 real         2.92 user         0.11 sys
+127549440  maximum resident set size
+=== t2_cubeparton.py 6 B4_inner 211,221,222 (1-min load 4.26, free mem 32%) ===
+block (2, 1, 1): block-parton MF gap 2.0000, max|Im| 6.1e-17, S check 0.0e+00; product E/N -1.50000 (block GS product -1.50000); |<block GS|block parton>|^2 1.0000  [0.3s]
+block (2, 2, 1): block-parton MF gap 2.8284, max|Im| 0.0e+00, S check 1.9e-16; product E/N -1.61239 (block GS product -1.61239); |<block GS|block parton>|^2 1.0000  [0.3s]
+block (2, 2, 2): block-parton MF gap 3.4641, max|Im| 7.7e-18, S check 4.6e-16; product E/N -1.65137 (block GS product -1.65459); |<block GS|block parton>|^2 0.9940  [0.3s]
+0.60 real         0.54 user         0.05 sys
+150732800  maximum resident set size
+=== lz24.py 6 B4_r4 rand (1-min load 4.26, free mem 32%) ===
+[L6_B4_r4_rand] resume phase p1 at step 242; setup 0.2s
+  p1 step 245: E0/N -2.0164755492  E1/N -2.0157492033  resid est 1.32e-01  [6s]
+  p1 step 250: E0/N -2.0165180525  E1/N -2.0157759488  resid est 1.01e-01  [17s]
+  p1 step 255: E0/N -2.0165495725  E1/N -2.0157938979  resid est 1.03e-01  [27s]
+  p1 step 260: E0/N -2.0166045988  E1/N -2.0158226335  resid est 1.47e-01  [37s]
+  p1 step 265: E0/N -2.0166717581  E1/N -2.0158544976  resid est 1.44e-01  [48s]
+  p1 step 270: E0/N -2.0167179552  E1/N -2.0158749175  resid est 9.41e-02  [58s]
+  p1 step 275: E0/N -2.0167351884  E1/N -2.0158823286  resid est 5.82e-02  [68s]
+  p1 step 280: E0/N -2.0167453745  E1/N -2.0158867166  resid est 5.40e-02  [78s]
+  p1 step 285: E0/N -2.0167574132  E1/N -2.0158920210  resid est 6.35e-02  [88s]
+  p1 step 290: E0/N -2.0167689937  E1/N -2.0158973382  resid est 4.90e-02  [99s]
+  p1 step 295: E0/N -2.0167738920  E1/N -2.0158996780  resid est 3.01e-02  [110s]
+  p1 step 300: E0/N -2.0167759046  E1/N -2.0159006654  resid est 2.02e-02  [120s]
+  pass 1 done: m = 300, E0/N -2.0167759046
+  checkpoint: phase p2 step 62  [247s]
+246.96 real       243.39 user         1.29 sys
+191430656  maximum resident set size
+=== t2_prod.py 8 B4_inner 221,222,224 (1-min load 4.15, free mem 34%) ===
+L=8 rule B4_inner; parton VMC E/N (A51) -1.69469
+ block (2, 2, 1) (n=4): restricted-rule singlet GS E_A/n -1.59654 -> product E/N -1.59654; self-consistent best E/N -1.596541 (iter 0; intra -1.59654, inter +0.00000); n_inter_terms 0; E-history/N first..last -1.59654..-1.59654 (1 it); vs parton +0.09815  [2s]
+ block (2, 2, 2) (n=8): restricted-rule singlet GS E_A/n -1.63287 -> product E/N -1.63287; self-consistent best E/N -1.632871 (iter 0; intra -1.63287, inter +0.00000); n_inter_terms 0; E-history/N first..last -1.63287..-1.63287 (1 it); vs parton +0.06182  [4s]
+ block (2, 2, 4) (n=16): restricted-rule singlet GS E_A/n -1.64353 -> product E/N -1.64353; self-consistent best E/N -1.643535 (iter 0; intra -1.64353, inter +0.00000); n_inter_terms 0; E-history/N first..last -1.64353..-1.64353 (1 it); vs parton +0.05116  [10s]
+10.34 real         9.75 user         0.18 sys
+172048384  maximum resident set size
+=== t2_cubeparton.py 8 B4_inner 211,221,222 (1-min load 3.90, free mem 37%) ===
+block (2, 1, 1): block-parton MF gap 2.0000, max|Im| 6.1e-17, S check 0.0e+00; product E/N -1.50000 (block GS product -1.50000); |<block GS|block parton>|^2 1.0000  [0.5s]
+block (2, 2, 1): block-parton MF gap 2.8284, max|Im| 0.0e+00, S check 1.9e-16; product E/N -1.59654 (block GS product -1.59654); |<block GS|block parton>|^2 1.0000  [0.6s]
+block (2, 2, 2): block-parton MF gap 3.4641, max|Im| 7.7e-18, S check 4.6e-16; product E/N -1.63001 (block GS product -1.63287); |<block GS|block parton>|^2 0.9937  [0.6s]
+0.98 real         0.81 user         0.06 sys
+215040000  maximum resident set size
+=== t3_once16.py  (1-min load 3.90, free mem 35%) ===
+[16] distinct star four-sets 428 of 35N = 560; pairs wrapped 120, once 120
+  once=False: E0/N -2.33458 (next -2.21807); parton <H>/N -1.77524; gap +0.5593; |<GS|parton>|^2 1.984e-04; GS S check 1.7e-14  [3s]
+  once=True: E0/N -4.79881 (next -4.40487); parton <H>/N -3.87318; gap +0.9256; |<GS|parton>|^2 7.162e-01; GS S check -4.4e-14  [4s]
+[24] distinct star four-sets 804 of 35N = 840; pairs wrapped 240, once 240
+4.59 real         4.45 user         0.08 sys
+192593920  maximum resident set size
+=== lz24.py 6 B4_r4 rand (1-min load 3.98, free mem 32%) ===
+[L6_B4_r4_rand] resume phase p2 at step 62; setup 0.2s
+  checkpoint: phase p2 step 181  [246s]
+246.66 real       243.21 user         1.26 sys
+174456832  maximum resident set size
+=== t2_prod.py 10 B4_inner 221,222 (1-min load 3.97, free mem 31%) ===
+L=10 rule B4_inner; parton VMC E/N (A51) -1.66264
+ block (2, 2, 1) (n=4): restricted-rule singlet GS E_A/n -1.58052 -> product E/N -1.58052; self-consistent best E/N -1.580525 (iter 0; intra -1.58052, inter +0.00000); n_inter_terms 0; E-history/N first..last -1.58052..-1.58052 (1 it); vs parton +0.08212  [4s]
+ block (2, 2, 2) (n=8): restricted-rule singlet GS E_A/n -1.61240 -> product E/N -1.61240; self-consistent best E/N -1.612400 (iter 0; intra -1.61240, inter +0.00000); n_inter_terms 0; E-history/N first..last -1.61240..-1.61240 (1 it); vs parton +0.05024  [8s]
+8.98 real         8.44 user         0.16 sys
+170754048  maximum resident set size
+=== t2_prod.py 6 B4_inner 233 (1-min load 3.89, free mem 32%) ===
+L=6 rule B4_inner; parton VMC E/N (A51) -1.7268
+ block (2, 3, 3) (n=18): restricted-rule singlet GS E_A/n -1.66593 -> product E/N -1.66593; self-consistent best E/N -1.665933 (iter 0; intra -1.66593, inter +0.00000); n_inter_terms 0; E-history/N first..last -1.66593..-1.66593 (1 it); vs parton +0.06087  [59s]
+59.12 real        57.97 user         0.33 sys
+146456576  maximum resident set size
+=== t2_blocks.py 6:B4_inner,8:B4_inner,10:B4_inner 222,223,224,233 (1-min load 3.26, free mem 35%) ===
+rule L6 B4_inner: block (2, 2, 2) (n=8, sector 35): E/N -1.654594  [0s]
+rule L6 B4_inner: block (2, 2, 3) (n=12, sector 462): E/N -1.660651  [0s]
+rule L6 B4_inner: block (2, 2, 4) (n=16, sector 6435): E/N -1.665817  [2s]
+rule L6 B4_inner: block (2, 3, 3) (n=18, sector 48620): E/N -1.665933  [31s]
+   interface gain (2x2x4 - 2 cubes) -0.1796; dressed-cube estimate E(222)/8 + 3 dE/8 = -1.72194 (ARGUED)
+rule L8 B4_inner: block (2, 2, 2) (n=8, sector 35): E/N -1.632871  [31s]
+rule L8 B4_inner: block (2, 2, 3) (n=12, sector 462): E/N -1.638893  [31s]
+rule L8 B4_inner: block (2, 2, 4) (n=16, sector 6435): E/N -1.643535  [33s]
+rule L8 B4_inner: block (2, 3, 3) (n=18, sector 48620): E/N -1.644075  [66s]
+   interface gain (2x2x4 - 2 cubes) -0.1706; dressed-cube estimate E(222)/8 + 3 dE/8 = -1.69685 (ARGUED)
+rule L10 B4_inner: block (2, 2, 2) (n=8, sector 35): E/N -1.612400  [66s]
+rule L10 B4_inner: block (2, 2, 3) (n=12, sector 462): E/N -1.617194  [66s]
+rule L10 B4_inner: block (2, 2, 4) (n=16, sector 6435): E/N -1.621027  [68s]
+rule L10 B4_inner: block (2, 3, 3) (n=18, sector 48620): E/N -1.621207  [108s]
+   interface gain (2x2x4 - 2 cubes) -0.1380; dressed-cube estimate E(222)/8 + 3 dE/8 = -1.66417 (ARGUED)
+108.48 real       107.42 user         0.53 sys
+138723328  maximum resident set size
+=== t2_blocks.py 6:B4_r4,8:B4_r4,10:B4_r4 222,223,224,233 (1-min load 3.37, free mem 33%) ===
+rule L6 B4_r4: block (2, 2, 2) (n=8, sector 35): E/N -1.658665  [0s]
+rule L6 B4_r4: block (2, 2, 3) (n=12, sector 462): E/N -1.664245  [0s]
+rule L6 B4_r4: block (2, 2, 4) (n=16, sector 6435): E/N -1.669415  [2s]
+rule L6 B4_r4: block (2, 3, 3) (n=18, sector 48620): E/N -1.669082  [30s]
+   interface gain (2x2x4 - 2 cubes) -0.1720; dressed-cube estimate E(222)/8 + 3 dE/8 = -1.72317 (ARGUED)
+rule L8 B4_r4: block (2, 2, 2) (n=8, sector 35): E/N -1.646234  [30s]
+rule L8 B4_r4: block (2, 2, 3) (n=12, sector 462): E/N -1.652287  [30s]
+rule L8 B4_r4: block (2, 2, 4) (n=16, sector 6435): E/N -1.657248  [32s]
+rule L8 B4_r4: block (2, 3, 3) (n=18, sector 48620): E/N -1.657729  [61s]
+   interface gain (2x2x4 - 2 cubes) -0.1762; dressed-cube estimate E(222)/8 + 3 dE/8 = -1.71232 (ARGUED)
+rule L10 B4_r4: block (2, 2, 2) (n=8, sector 35): E/N -1.649383  [61s]
+rule L10 B4_r4: block (2, 2, 3) (n=12, sector 462): E/N -1.655544  [61s]
+rule L10 B4_r4: block (2, 2, 4) (n=16, sector 6435): E/N -1.660686  [63s]
+rule L10 B4_r4: block (2, 3, 3) (n=18, sector 48620): E/N -1.661012  [91s]
+   interface gain (2x2x4 - 2 cubes) -0.1808; dressed-cube estimate E(222)/8 + 3 dE/8 = -1.71720 (ARGUED)
+91.83 real        90.60 user         0.49 sys
+138674176  maximum resident set size
+=== lz24.py 6 B4_r4 rand (1-min load 3.53, free mem 32%) ===
+[L6_B4_r4_rand] resume phase p2 at step 181; setup 0.2s
+  checkpoint: phase p2 step 296  [246s]
+246.35 real       240.87 user         1.65 sys
+191283200  maximum resident set size
+=== an24.py 6 B4_r4 L6_B4_r4_rand (1-min load 3.87, free mem 39%) ===
+0.77 real         0.47 user         0.08 sys
+191561728  maximum resident set size
+Traceback (most recent call last):
+FileNotFoundError: [Errno 2] No such file or directory: 'gs24_L6_B4_r4_rand.npy'
+=== vmc53.py 6 222 0.6 20000 101 (1-min load 3.87, free mem 40%) ===
+L=6 block 222 delta 0.6: 324 of 648 bonds scaled; MF gap 3.0199  [0.7s]
+measured 16978 in 265s; acc pair 511242/3883248; drift 2.2e-13
+Casimir estimator max |dev| 2.4e-11
+  E/N under B4_inner: -1.69543 +- 0.00039
+  E/N under B4_r4: -1.69739 +- 0.00041
+  <O_c>/N first 4 classes: (0, 0, 1):-2.7223 (0, 1, 1):+1.6894 (1, 1, 1):-0.4756 (0, 0, 2):+0.3616; four-spin: T0:-0.1746 T2:-0.0676 C0:-0.2303 Dm0:+0.0084 Dm1:+0.0251 Y0:+0.0354 Y1:+0.0557 Y2:+0.0559
+266.29 real       262.96 user         1.42 sys
+118587392  maximum resident set size
+=== lz24.py 6 B4_r4 rand (1-min load 3.77, free mem 33%) ===
+[L6_B4_r4_rand] resume phase p2 at step 296; setup 0.3s
+DONE L6_B4_r4_rand: m = 300; <psi|H|psi>/N -2.0167759046; residual |Hpsi - E psi| 2.02e-02  [9s]
+9.56 real         8.78 user         0.18 sys
+191266816  maximum resident set size
+=== an24.py 6 B4_r4 L6_B4_r4_rand (1-min load 3.35, free mem 35%) ===
+[L6_B4_r4_rand] GS <H>/N -2.01677590 (residual 2.0e-02); parton <H>/N -1.748825; gap +0.2680/site; |<GS|parton>|^2 4.404e-11; parton weight on <H> below its own mean: E_p var/N 0.1104
+4.81 real         4.53 user         0.11 sys
+191627264  maximum resident set size
+Traceback (most recent call last):
+    error_rewrite(e, 'typing')
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/numba/core/dispatcher.py", line 365, in error_rewrite
+    raise e.with_traceback(None)
+numba.core.errors.TypingError: Failed in nopython mode pipeline (step: nopython frontend)
+=== vmc53.py 6 222 0.3 20000 102 (1-min load 3.32, free mem 32%) ===
+L=6 block 222 delta 0.3: 324 of 648 bonds scaled; MF gap 3.0790  [0.7s]
+measured 16956 in 265s; acc pair 494736/3878712; drift 1.2e-12
+Casimir estimator max |dev| 4.8e-11
+  E/N under B4_inner: -1.66359 +- 0.00045
+  E/N under B4_r4: -1.66677 +- 0.00044
+  <O_c>/N first 4 classes: (0, 0, 1):-2.4574 (0, 1, 1):+1.2308 (1, 1, 1):-0.2745 (0, 0, 2):+0.0863; four-spin: T0:-0.0400 T2:-0.0126 C0:-0.1401 Dm0:+0.0012 Dm1:+0.0024 Y0:+0.0061 Y1:+0.0111 Y2:+0.0104
+266.30 real       262.53 user         1.28 sys
+112410624  maximum resident set size
+=== an24.py 6 B4_r4 L6_B4_r4_rand (1-min load 10.06, free mem 33%) ===
+SKIPPED: load 10.06 >= 6
+  [chain] retry 1 for an24.py 6 B4_r4 L6_B4_r4_rand
+=== an24.py 6 B4_r4 L6_B4_r4_rand (1-min load 7.69, free mem 35%) ===
+SKIPPED: load 7.69 >= 6
+  [chain] retry 2 for an24.py 6 B4_r4 L6_B4_r4_rand
+=== an24.py 6 B4_r4 L6_B4_r4_rand (1-min load 5.69, free mem 33%) ===
+[L6_B4_r4_rand] GS <H>/N -2.01677590 (residual 2.0e-02); parton <H>/N -1.748825; gap +0.2680/site; |<GS|parton>|^2 4.404e-11; parton weight on <H> below its own mean: E_p var/N 0.1104
+  <T_e1>: GS -0.999409   parton +1.000000
+  <T_e2>: GS -0.999409   parton +1.000000
+  <T_e3>: GS -0.999409   parton +1.000000
+  S check: GS 2.1e-06, parton -1.7e-11  [6s]
+  <s.s> 001x1        (72 pairs): GS mean +0.0315 (min +0.0300 max +0.0329)   parton -1.0554
+  <s.s> 002x3        (24 pairs): GS mean -0.2028 (min -0.2031 max -0.2026)   parton +0.5000
+  <s.s> 011x1        (72 pairs): GS mean +0.0568 (min +0.0516 max +0.0597)   parton +0.4018
+  <s.s> 011x2        (36 pairs): GS mean -0.9705 (min -1.0036 max -0.9437)   parton +0.6358
+  <s.s> 111x2        (12 pairs): GS mean +0.0191 (min +0.0189 max +0.0192)   parton -0.2850
+  <s.s> 111x3        (24 pairs): GS mean -0.1063 (min -0.1067 max -0.1059)   parton -0.3782
+  <s.s> far          (36 pairs): GS mean -0.0065 (min -0.0073 max -0.0059)   parton -0.3148
+  GS decomposition (coef*<op>/N): (0, 0, 1):+1.000*+0.095 (0, 1, 1):+0.768*-2.741 (1, 1, 1):-0.005*-0.300 (0, 0, 2):+0.373*-0.608 T0:+0.899*-0.031 T2:+0.636*-0.028 C0:+1.082*-0.069 Dm0:+0.119*+0.028 Dm1:+0.190*-0.159 Y0:+0.235*+0.419 Y1:+0.235*+0.116 Y2:+0.207*+1.163
+  parton <op>/N: (0, 0, 1):-3.166 (0, 1, 1):+3.113 (1, 1, 1):-1.420 (0, 0, 2):+1.500 T0:-0.819 T2:-0.631 C0:-0.682 Dm0:+0.201 Dm1:+0.263 Y0:+0.386 Y1:+0.385 Y2:+0.385
+  GS: singlet weight cubes 0.107 [0.107,0.107] (random 0.055); plaquettes 0.142 [0.141,0.144] (random 0.125); (002)-triangles S=1/2 weight 0.601 (random 0.5; 8 triangles)  [33s]
+  parton: singlet weight cubes 0.352 [0.352,0.352] (random 0.055); plaquettes 0.436 [0.386,0.461] (random 0.125); (002)-triangles S=1/2 weight 0.250 (random 0.5; 8 triangles)  [38s]
+  cube-singlet product on the 24-site cluster: open-cube GS E/8 -1.65867; wrapped <H>/N -1.63276; |<GS|cubes>|^2 0.0000; |<parton|cubes>|^2 0.1615  [40s]
+40.25 real        39.09 user         0.44 sys
+453525504  maximum resident set size
+=== vmc53.py 6 222 0.85 20000 103 (1-min load 4.26, free mem 31%) ===
+L=6 block 222 delta 0.85: 324 of 648 bonds scaled; MF gap 3.2357  [0.7s]
+measured 16684 in 265s; acc pair 536263/3819960; drift 1.7e-13
+Casimir estimator max |dev| 2.8e-11
+  E/N under B4_inner: -1.72130 +- 0.00019
+  E/N under B4_r4: -1.72268 +- 0.00020
+  <O_c>/N first 4 classes: (0, 0, 1):-2.9675 (0, 1, 1):+2.2376 (1, 1, 1):-0.8124 (0, 0, 2):+0.7156; four-spin: T0:-0.3842 T2:-0.1821 C0:-0.3605 Dm0:+0.0339 Dm1:+0.0864 Y0:+0.0979 Y1:+0.1414 Y2:+0.1415
+266.33 real       262.92 user         1.43 sys
+119537664  maximum resident set size
+=== lz24.py 6 B4_r4 parton (1-min load 3.18, free mem 34%) ===
+[L6_B4_r4_parton] resume phase p1 at step 0; setup 0.3s
+  p1 step 5: E0/N -1.7649209682  E1/N -1.5772313194  resid est 1.52e+00  [11s]
+  p1 step 10: E0/N -1.8833797490  E1/N -1.7595524082  resid est 3.06e+00  [21s]
+  p1 step 15: E0/N -1.9316168326  E1/N -1.8134581320  resid est 2.58e+00  [32s]
+  p1 step 20: E0/N -1.9766378092  E1/N -1.8902765941  resid est 3.78e+00  [42s]
+  p1 step 25: E0/N -1.9993307344  E1/N -1.9118085962  resid est 1.39e+00  [53s]
+  p1 step 30: E0/N -2.0040172705  E1/N -1.9212243976  resid est 6.72e-01  [63s]
+  p1 step 35: E0/N -2.0049156549  E1/N -1.9272327449  resid est 3.67e-01  [73s]
+  p1 step 40: E0/N -2.0051261903  E1/N -1.9328035373  resid est 1.92e-01  [84s]
+  p1 step 45: E0/N -2.0052180071  E1/N -1.9449696504  resid est 1.40e-01  [94s]
+  p1 step 50: E0/N -2.0053516383  E1/N -1.9792960403  resid est 1.99e-01  [104s]
+  p1 step 55: E0/N -2.0056544488  E1/N -1.9969426536  resid est 2.87e-01  [115s]
+  p1 step 60: E0/N -2.0058776393  E1/N -1.9999570048  resid est 2.06e-01  [127s]
+  p1 step 65: E0/N -2.0059695218  E1/N -2.0007018446  resid est 1.08e-01  [138s]
+  p1 step 70: E0/N -2.0060029526  E1/N -2.0009456173  resid est 9.91e-02  [149s]
+  p1 step 75: E0/N -2.0060780986  E1/N -2.0015189565  resid est 2.00e-01  [160s]
+  p1 step 80: E0/N -2.0063032162  E1/N -2.0031494637  resid est 2.70e-01  [170s]
+  p1 step 85: E0/N -2.0066216657  E1/N -2.0043228361  resid est 2.22e-01  [180s]
+  p1 step 90: E0/N -2.0067403649  E1/N -2.0045612987  resid est 1.52e-01  [191s]
+  p1 step 95: E0/N -2.0068096660  E1/N -2.0046770817  resid est 1.48e-01  [201s]
+  p1 step 100: E0/N -2.0068769554  E1/N -2.0047806503  resid est 1.18e-01  [211s]
+  p1 step 105: E0/N -2.0069632045  E1/N -2.0049078712  resid est 1.60e-01  [222s]
+  p1 step 110: E0/N -2.0070521532  E1/N -2.0050368483  resid est 1.40e-01  [232s]
+  p1 step 115: E0/N -2.0071460458  E1/N -2.0051738033  resid est 2.04e-01  [242s]
+  checkpoint: phase p1 step 117  [247s]
+247.07 real       243.65 user         1.50 sys
+191447040  maximum resident set size
+=== lz24.py 6 B4_r4 parton (1-min load 3.76, free mem 39%) ===
+[L6_B4_r4_parton] resume phase p1 at step 117; setup 0.2s
+  p1 step 120: E0/N -2.0077035408  E1/N -2.0058791782  resid est 8.63e-01  [6s]
+  p1 step 125: E0/N -2.0106496846  E1/N -2.0066889208  resid est 7.50e-01  [17s]
+  p1 step 130: E0/N -2.0122651069  E1/N -2.0067881786  resid est 4.47e-01  [28s]
+  p1 step 135: E0/N -2.0128842993  E1/N -2.0068167714  resid est 3.04e-01  [40s]
+  p1 step 140: E0/N -2.0134623721  E1/N -2.0068461287  resid est 4.27e-01  [52s]
+  p1 step 145: E0/N -2.0141343657  E1/N -2.0068974606  resid est 4.30e-01  [63s]
+  p1 step 150: E0/N -2.0144092913  E1/N -2.0069333234  resid est 1.92e-01  [75s]
+  p1 step 155: E0/N -2.0144694287  E1/N -2.0069441743  resid est 7.81e-02  [85s]
+  p1 step 160: E0/N -2.0144829419  E1/N -2.0069470436  resid est 3.89e-02  [95s]
+  p1 step 165: E0/N -2.0144875412  E1/N -2.0069481932  resid est 3.44e-02  [106s]
+  p1 step 170: E0/N -2.0144937967  E1/N -2.0069504467  resid est 4.41e-02  [116s]
+  p1 step 175: E0/N -2.0144989564  E1/N -2.0069539926  resid est 3.12e-02  [127s]
+  p1 step 180: E0/N -2.0145015284  E1/N -2.0069575262  resid est 1.82e-02  [138s]
+  p1 step 185: E0/N -2.0145020839  E1/N -2.0069587300  resid est 7.85e-03  [148s]
+  p1 step 190: E0/N -2.0145022848  E1/N -2.0069592956  resid est 7.89e-03  [159s]
+  p1 step 195: E0/N -2.0145025924  E1/N -2.0069607655  resid est 1.11e-02  [169s]
+  p1 step 200: E0/N -2.0145028500  E1/N -2.0069641270  resid est 7.13e-03  [181s]
+  p1 step 205: E0/N -2.0145029394  E1/N -2.0069673056  resid est 2.97e-03  [191s]
+  p1 step 210: E0/N -2.0145029562  E1/N -2.0069683267  resid est 1.23e-03  [201s]
+  p1 step 215: E0/N -2.0145029581  E1/N -2.0069684700  resid est 4.63e-04  [212s]
+  p1 step 220: E0/N -2.0145029585  E1/N -2.0069685047  resid est 2.36e-04  [222s]
+  pass 1 done: m = 220, E0/N -2.0145029585, next Ritz -2.0069685047 -2.0057313091; |<v0|Ritz0>|^2 = y_0^2 = 1.595467e-10, |<v0|Ritz1>|^2 = 7.968e-06
+DONE L6_B4_r4_parton (pass 1 only)
+223.05 real       217.82 user         1.54 sys
+191578112  maximum resident set size
+=== vmc53.py 8 222 0.6 6000 201 (1-min load 3.74, free mem 30%) ===
+L=8 block 222 delta 0.6: 768 of 1536 bonds scaled; MF gap 2.4774  [2.3s]
+measured 3614 in 264s; acc pair 263345/2004480; drift 1.2e-12
+Casimir estimator max |dev| 4.1e-11
+  E/N under B4_inner: -1.66823 +- 0.00036
+  E/N under B4_r4: -1.68353 +- 0.00043
+  <O_c>/N first 4 classes: (0, 0, 1):-2.7155 (0, 1, 1):+1.6831 (1, 1, 1):-0.4717 (0, 0, 2):+0.3318; four-spin: T0:-0.1702 T2:-0.0575 C0:-0.2277 Dm0:+0.0077 Dm1:+0.0244 Y0:+0.0312 Y1:+0.0530 Y2:+0.0533
+266.78 real       261.89 user         1.58 sys
+199360512  maximum resident set size
+=== vmc53.py 6 221 0.6 20000 104 (1-min load 5.18, free mem 36%) ===
+L=6 block 221 delta 0.6: 432 of 648 bonds scaled; MF gap 2.7423  [0.7s]
+measured 16693 in 265s; acc pair 480714/3821688; drift 3.5e-13
+Casimir estimator max |dev| 4.4e-11
+  E/N under B4_inner: -1.69058 +- 0.00035
+  E/N under B4_r4: -1.69231 +- 0.00036
+  <O_c>/N first 4 classes: (0, 0, 1):-2.6726 (0, 1, 1):+1.5819 (1, 1, 1):-0.4197 (0, 0, 2):+0.3862; four-spin: T0:-0.1769 T2:-0.0679 C0:-0.1997 Dm0:+0.0101 Dm1:+0.0272 Y0:+0.0329 Y1:+0.0517 Y2:+0.0519
+266.53 real       262.28 user         1.45 sys
+105119744  maximum resident set size
+=== lzpg.py 6 B4_r4 (1-min load 4.25, free mem 31%) ===
+[pg_L6_B4_r4] term-list defects: point group [0.         0.00268422 0.00268422 0.         0.00268422 0.
+ 0.         0.00268422 0.         0.00268422 0.00268422 0.        ], translations [0.0, 0.0, 0.0]; kept 6 elements [0, 3, 5, 6, 8, 11]; matvec invariance check 4.1e-15; parton characters [1.       0.686554 0.686554 0.686554 0.686554 1.      ]  [9s]
+10.00 real         9.31 user         0.20 sys
+190709760  maximum resident set size
+Traceback (most recent call last):
+AssertionError
+=== lzpg.py 6 B4_r4 (1-min load 4.06, free mem 41%) ===
+[pg_L6_B4_r4] term-list defects: point group [0.         0.00268422 0.00268422 0.         0.00268422 0.
+ 0.         0.00268422 0.         0.00268422 0.00268422 0.        ], translations [0.0, 0.0, 0.0]; kept 6 elements [0, 3, 5, 6, 8, 11]; matvec invariance check 4.1e-15; parton characters [1.       0.686554 0.686554 0.686554 0.686554 1.      ]  [8s]
+8.93 real         8.69 user         0.10 sys
+190251008  maximum resident set size
+Traceback (most recent call last):
+AssertionError
+=== lzpg.py 6 B4_r4 (1-min load 4.04, free mem 40%) ===
+[pg_L6_B4_r4] term-list defects: point group [0.         0.00268422 0.00268422 0.         0.00268422 0.
+ 0.         0.00268422 0.         0.00268422 0.00268422 0.        ], translations [0.0, 0.0, 0.0]; kept 6 elements [0, 3, 5, 6, 8, 11]; matvec invariance check 4.1e-15; parton characters [1.       0.686554 0.686554 0.686554 0.686554 1.      ]  [9s]
+9.08 real         8.82 user         0.12 sys
+191299584  maximum resident set size
+Traceback (most recent call last):
+AssertionError
+[chain] queue empty Sun Oct  4 09:50:55 EDT 2026
+=== lzpg.py 6 B4_r4 (1-min load 3.34, free mem 39%) ===
+[pgA1_L6_B4_r4] term-list defects: point group [0.         0.00268422 0.00268422 0.         0.00268422 0.
+ 0.         0.00268422 0.         0.00268422 0.00268422 0.        ], translations [0.0, 0.0, 0.0]; kept 6 elements [0, 3, 5, 6, 8, 11]; matvec invariance check 4.1e-15; parton characters [1.       0.686554 0.686554 0.686554 0.686554 1.      ]  [9s]
+  kept group = proper rotations (D3); parton weight in A1 (k=0 part already 1): 0.791036
+  |P_A1 D p|^2 = 0.791036 (should equal the A1 weight)
+  step 10: Ritz/N -1.89389468 -1.75949652 -1.55510066; resid est 2.7e+00; |<p_A1|Ritz_k>|^2 6.5006e-03 9.813e-01 1.055e-02 (x wA1 0.7910 for the parton)  [31s]
+  step 20: Ritz/N -1.98923061 -1.89907299 -1.76431359; resid est 2.2e+00; |<p_A1|Ritz_k>|^2 9.5183e-05 4.398e-03 7.616e-01 (x wA1 0.7910 for the parton)  [53s]
+  step 30: Ritz/N -2.00492687 -1.92072967 -1.85685555; resid est 3.6e-01; |<p_A1|Ritz_k>|^2 3.5237e-05 1.907e-03 5.877e-03 (x wA1 0.7910 for the parton)  [75s]
+  step 40: Ritz/N -2.00544872 -1.93285088 -1.90688160; resid est 1.6e-01; |<p_A1|Ritz_k>|^2 3.3633e-05 5.564e-04 2.071e-03 (x wA1 0.7910 for the parton)  [97s]
+  step 50: Ritz/N -2.00569242 -1.99325993 -1.92733740; resid est 2.4e-01; |<p_A1|Ritz_k>|^2 3.2124e-05 2.580e-06 1.033e-03 (x wA1 0.7910 for the parton)  [118s]
+  step 60: Ritz/N -2.00607224 -2.00144893 -1.93272993; resid est 1.5e-01; |<p_A1|Ritz_k>|^2 2.7260e-05 6.935e-06 4.473e-04 (x wA1 0.7910 for the parton)  [140s]
+  step 70: Ritz/N -2.00618075 -2.00224195 -1.97332049; resid est 1.9e-01; |<p_A1|Ritz_k>|^2 2.5413e-05 8.692e-06 4.248e-07 (x wA1 0.7910 for the parton)  [161s]
+  step 80: Ritz/N -2.00675570 -2.00459360 -1.99756858; resid est 1.9e-01; |<p_A1|Ritz_k>|^2 1.3674e-05 1.885e-05 1.707e-06 (x wA1 0.7910 for the parton)  [183s]
+  step 90: Ritz/N -2.00692622 -2.00486314 -1.99821406; resid est 1.7e-01; |<p_A1|Ritz_k>|^2 1.0823e-05 2.132e-05 2.079e-06 (x wA1 0.7910 for the parton)  [205s]
+  step 100: Ritz/N -2.00708529 -2.00507512 -1.99906520; resid est 1.0e-01; |<p_A1|Ritz_k>|^2 8.5298e-06 2.313e-05 2.502e-06 (x wA1 0.7910 for the parton)  [227s]
+  checkpoint step 106  [241s]
+241.58 real       236.92 user         1.71 sys
+204718080  maximum resident set size
+=== lzpg.py 6 B4_r4 (1-min load 3.68, free mem 34%) ===
+[pgA1_L6_B4_r4] term-list defects: point group [0.         0.00268422 0.00268422 0.         0.00268422 0.
+ 0.         0.00268422 0.         0.00268422 0.00268422 0.        ], translations [0.0, 0.0, 0.0]; kept 6 elements [0, 3, 5, 6, 8, 11]; matvec invariance check 4.1e-15; parton characters [1.       0.686554 0.686554 0.686554 0.686554 1.      ]  [9s]
+  kept group = proper rotations (D3); parton weight in A1 (k=0 part already 1): 0.791036
+  |P_A1 D p|^2 = 0.791036 (should equal the A1 weight)
+  step 110: Ritz/N -2.00727343 -2.00535211 -2.00187836; resid est 3.3e-01; |<p_A1|Ritz_k>|^2 6.1523e-06 2.392e-05 2.953e-06 (x wA1 0.7910 for the parton)  [18s]
+DONE pgA1_L6_B4_r4
+18.19 real        17.54 user         0.24 sys
+202473472  maximum resident set size
+=== lzpg.py 6 B4_r4 (1-min load 3.45, free mem 31%) ===
+[pgA1_L6_B4_r4] term-list defects: point group [0.         0.00268422 0.00268422 0.         0.00268422 0.
+ 0.         0.00268422 0.         0.00268422 0.00268422 0.        ], translations [0.0, 0.0, 0.0]; kept 6 elements [0, 3, 5, 6, 8, 11]; matvec invariance check 4.1e-15; parton characters [1.       0.686554 0.686554 0.686554 0.686554 1.      ]  [9s]
+  kept group = proper rotations (D3); parton weight in A1 (k=0 part already 1): 0.791036
+  |P_A1 D p|^2 = 0.791036 (should equal the A1 weight)
+  step 10: Ritz/N -1.89389468 -1.75949652 -1.55510066; resid est 2.7e+00; |<p_A1|Ritz_k>|^2 6.5006e-03 9.813e-01 1.055e-02 (x wA1 0.7910 for the parton)  [34s]
+  step 20: Ritz/N -1.98923061 -1.89907299 -1.76431359; resid est 2.2e+00; |<p_A1|Ritz_k>|^2 9.5183e-05 4.398e-03 7.616e-01 (x wA1 0.7910 for the parton)  [55s]
+  step 30: Ritz/N -2.00492687 -1.92072967 -1.85685555; resid est 3.6e-01; |<p_A1|Ritz_k>|^2 3.5237e-05 1.907e-03 5.877e-03 (x wA1 0.7910 for the parton)  [77s]
+  step 40: Ritz/N -2.00544872 -1.93285088 -1.90688160; resid est 1.6e-01; |<p_A1|Ritz_k>|^2 3.3633e-05 5.564e-04 2.071e-03 (x wA1 0.7910 for the parton)  [99s]
+  step 50: Ritz/N -2.00569242 -1.99325993 -1.92733740; resid est 2.4e-01; |<p_A1|Ritz_k>|^2 3.2124e-05 2.580e-06 1.033e-03 (x wA1 0.7910 for the parton)  [121s]
+  step 60: Ritz/N -2.00607224 -2.00144893 -1.93272993; resid est 1.5e-01; |<p_A1|Ritz_k>|^2 2.7260e-05 6.935e-06 4.473e-04 (x wA1 0.7910 for the parton)  [143s]
+  step 70: Ritz/N -2.00618075 -2.00224195 -1.97332049; resid est 1.9e-01; |<p_A1|Ritz_k>|^2 2.5413e-05 8.692e-06 4.248e-07 (x wA1 0.7910 for the parton)  [164s]
+  step 80: Ritz/N -2.00675570 -2.00459360 -1.99756858; resid est 1.9e-01; |<p_A1|Ritz_k>|^2 1.3674e-05 1.885e-05 1.707e-06 (x wA1 0.7910 for the parton)  [185s]
+  step 90: Ritz/N -2.00692622 -2.00486314 -1.99821406; resid est 1.7e-01; |<p_A1|Ritz_k>|^2 1.0823e-05 2.132e-05 2.079e-06 (x wA1 0.7910 for the parton)  [207s]
+  step 100: Ritz/N -2.00708529 -2.00507512 -1.99906520; resid est 1.0e-01; |<p_A1|Ritz_k>|^2 8.5298e-06 2.313e-05 2.502e-06 (x wA1 0.7910 for the parton)  [228s]
+  checkpoint step 106  [241s]
+241.30 real       236.00 user         1.56 sys
+191283200  maximum resident set size
+[chain] queue empty Sun Oct  4 09:59:59 EDT 2026

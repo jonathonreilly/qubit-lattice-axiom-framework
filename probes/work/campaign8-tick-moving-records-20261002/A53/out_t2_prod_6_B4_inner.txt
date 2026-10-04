@@ -1,0 +1,2 @@
+L=6 rule B4_inner; parton VMC E/N (A51) -1.7268
+ block (2, 3, 3) (n=18): restricted-rule singlet GS E_A/n -1.66593 -> product E/N -1.66593; self-consistent best E/N -1.665933 (iter 0; intra -1.66593, inter +0.00000); n_inter_terms 0; E-history/N first..last -1.66593..-1.66593 (1 it); vs parton +0.06087  [59s]

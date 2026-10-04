@@ -1,0 +1,15 @@
+[pgA1_L6_B4_r4] term-list defects: point group [0.         0.00268422 0.00268422 0.         0.00268422 0.
+ 0.         0.00268422 0.         0.00268422 0.00268422 0.        ], translations [0.0, 0.0, 0.0]; kept 6 elements [0, 3, 5, 6, 8, 11]; matvec invariance check 4.1e-15; parton characters [1.       0.686554 0.686554 0.686554 0.686554 1.      ]  [9s]
+  kept group = proper rotations (D3); parton weight in A1 (k=0 part already 1): 0.791036
+  |P_A1 D p|^2 = 0.791036 (should equal the A1 weight)
+  step 10: Ritz/N -1.89389468 -1.75949652 -1.55510066; resid est 2.7e+00; |<p_A1|Ritz_k>|^2 6.5006e-03 9.813e-01 1.055e-02 (x wA1 0.7910 for the parton)  [34s]
+  step 20: Ritz/N -1.98923061 -1.89907299 -1.76431359; resid est 2.2e+00; |<p_A1|Ritz_k>|^2 9.5183e-05 4.398e-03 7.616e-01 (x wA1 0.7910 for the parton)  [55s]
+  step 30: Ritz/N -2.00492687 -1.92072967 -1.85685555; resid est 3.6e-01; |<p_A1|Ritz_k>|^2 3.5237e-05 1.907e-03 5.877e-03 (x wA1 0.7910 for the parton)  [77s]
+  step 40: Ritz/N -2.00544872 -1.93285088 -1.90688160; resid est 1.6e-01; |<p_A1|Ritz_k>|^2 3.3633e-05 5.564e-04 2.071e-03 (x wA1 0.7910 for the parton)  [99s]
+  step 50: Ritz/N -2.00569242 -1.99325993 -1.92733740; resid est 2.4e-01; |<p_A1|Ritz_k>|^2 3.2124e-05 2.580e-06 1.033e-03 (x wA1 0.7910 for the parton)  [121s]
+  step 60: Ritz/N -2.00607224 -2.00144893 -1.93272993; resid est 1.5e-01; |<p_A1|Ritz_k>|^2 2.7260e-05 6.935e-06 4.473e-04 (x wA1 0.7910 for the parton)  [143s]
+  step 70: Ritz/N -2.00618075 -2.00224195 -1.97332049; resid est 1.9e-01; |<p_A1|Ritz_k>|^2 2.5413e-05 8.692e-06 4.248e-07 (x wA1 0.7910 for the parton)  [164s]
+  step 80: Ritz/N -2.00675570 -2.00459360 -1.99756858; resid est 1.9e-01; |<p_A1|Ritz_k>|^2 1.3674e-05 1.885e-05 1.707e-06 (x wA1 0.7910 for the parton)  [185s]
+  step 90: Ritz/N -2.00692622 -2.00486314 -1.99821406; resid est 1.7e-01; |<p_A1|Ritz_k>|^2 1.0823e-05 2.132e-05 2.079e-06 (x wA1 0.7910 for the parton)  [207s]
+  step 100: Ritz/N -2.00708529 -2.00507512 -1.99906520; resid est 1.0e-01; |<p_A1|Ritz_k>|^2 8.5298e-06 2.313e-05 2.502e-06 (x wA1 0.7910 for the parton)  [228s]
+  checkpoint step 106  [241s]

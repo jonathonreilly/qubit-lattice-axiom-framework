@@ -1,0 +1,4 @@
+[16] distinct star four-sets 428 of 35N = 560; pairs wrapped 120, once 120
+  once=False: E0/N -2.33458 (next -2.21807); parton <H>/N -1.77524; gap +0.5593; |<GS|parton>|^2 1.984e-04; GS S check 1.7e-14  [3s]
+  once=True: E0/N -4.79881 (next -4.40487); parton <H>/N -3.87318; gap +0.9256; |<GS|parton>|^2 7.162e-01; GS S check -4.4e-14  [4s]
+[24] distinct star four-sets 804 of 35N = 840; pairs wrapped 240, once 240

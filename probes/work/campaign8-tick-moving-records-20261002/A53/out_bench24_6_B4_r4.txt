@@ -1,0 +1,9 @@
+N=24; parton MF gap at half filling 4.0000  [0.1s]
+   (other twists, info) twist [0 0 0]: gap 0.0000
+   (other twists, info) twist [3.14 0.   0.  ]: gap 4.4721
+   (other twists, info) twist [3.14 3.14 0.  ]: gap 4.4721
+pair types: 001x1:72, 002x3:24, 011x1:72, 011x2:36, 111x2:12, 111x3:24, far:36
+rule L6 B4_r4: 240 pairs; sector (flip-even) 1352078  [0.5s]
+matvec: first (incl. compile) 2.1s, second 1.88s; <x|H|x>/N -0.35168
+parton amplitudes 5.9s; max|Im|/max|psi| 3.1e-16
+parton <H>/N -1.748825; var/N 0.1104  [12.3s]

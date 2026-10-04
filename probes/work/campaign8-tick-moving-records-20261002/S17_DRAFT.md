@@ -10,7 +10,7 @@ Your aim is to show that the axioms can be the basis of matter and light. Here i
   - Light's loop rule then carries extra factors. In empty space light behaves exactly as before, but with charges present this is a real change, not a relabeling (A54).
 - **Electron-like matter, route 2: the half-particle background.**
   - At mean field it gives fermions and a light-like field together, but no rule found makes it the calmest state (A44, A46, A47, A49, A51).
-  - Under its best farther-reaching rule it beats every simple rival on grids up to 1,000 places, while on 16 places the exact calmest state is far below it. [A53: does that gap persist?]
+  - Under its best farther-reaching rule it beats every rival computed on grids of 216 to 1,000 places (A51, A53). The far-lower states on small exactly solvable grids turned out to be quirks of how those grids wrap (A53). A near-tie with loosely linked cubes is unsettled.
 - **Decisions this leaves with you:**
   - 29: records at every corner, or a two-place relabeling reading;
   - 4: records only next to records, which here would be counted two steps apart;

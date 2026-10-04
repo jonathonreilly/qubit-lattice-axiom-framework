@@ -1,0 +1,15 @@
+rule L6 B4_inner: block (2, 2, 2) (n=8, sector 35): E/N -1.654594  [0s]
+rule L6 B4_inner: block (2, 2, 3) (n=12, sector 462): E/N -1.660651  [0s]
+rule L6 B4_inner: block (2, 2, 4) (n=16, sector 6435): E/N -1.665817  [2s]
+rule L6 B4_inner: block (2, 3, 3) (n=18, sector 48620): E/N -1.665933  [31s]
+   interface gain (2x2x4 - 2 cubes) -0.1796; dressed-cube estimate E(222)/8 + 3 dE/8 = -1.72194 (ARGUED)
+rule L8 B4_inner: block (2, 2, 2) (n=8, sector 35): E/N -1.632871  [31s]
+rule L8 B4_inner: block (2, 2, 3) (n=12, sector 462): E/N -1.638893  [31s]
+rule L8 B4_inner: block (2, 2, 4) (n=16, sector 6435): E/N -1.643535  [33s]
+rule L8 B4_inner: block (2, 3, 3) (n=18, sector 48620): E/N -1.644075  [66s]
+   interface gain (2x2x4 - 2 cubes) -0.1706; dressed-cube estimate E(222)/8 + 3 dE/8 = -1.69685 (ARGUED)
+rule L10 B4_inner: block (2, 2, 2) (n=8, sector 35): E/N -1.612400  [66s]
+rule L10 B4_inner: block (2, 2, 3) (n=12, sector 462): E/N -1.617194  [66s]
+rule L10 B4_inner: block (2, 2, 4) (n=16, sector 6435): E/N -1.621027  [68s]
+rule L10 B4_inner: block (2, 3, 3) (n=18, sector 48620): E/N -1.621207  [108s]
+   interface gain (2x2x4 - 2 cubes) -0.1380; dressed-cube estimate E(222)/8 + 3 dE/8 = -1.66417 (ARGUED)

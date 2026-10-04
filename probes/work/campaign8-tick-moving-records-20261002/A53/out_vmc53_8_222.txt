@@ -1,0 +1,6 @@
+L=8 block 222 delta 0.6: 768 of 1536 bonds scaled; MF gap 2.4774  [2.3s]
+measured 3614 in 264s; acc pair 263345/2004480; drift 1.2e-12
+Casimir estimator max |dev| 4.1e-11
+  E/N under B4_inner: -1.66823 +- 0.00036
+  E/N under B4_r4: -1.68353 +- 0.00043
+  <O_c>/N first 4 classes: (0, 0, 1):-2.7155 (0, 1, 1):+1.6831 (1, 1, 1):-0.4717 (0, 0, 2):+0.3318; four-spin: T0:-0.1702 T2:-0.0575 C0:-0.2277 Dm0:+0.0077 Dm1:+0.0244 Y0:+0.0312 Y1:+0.0530 Y2:+0.0533

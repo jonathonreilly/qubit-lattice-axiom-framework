@@ -1,0 +1,3 @@
+block (2, 1, 1): block-parton MF gap 2.0000, max|Im| 6.1e-17, S check 0.0e+00; product E/N -1.50000 (block GS product -1.50000); |<block GS|block parton>|^2 1.0000  [0.3s]
+block (2, 2, 1): block-parton MF gap 2.8284, max|Im| 0.0e+00, S check 1.9e-16; product E/N -1.61239 (block GS product -1.61239); |<block GS|block parton>|^2 1.0000  [0.3s]
+block (2, 2, 2): block-parton MF gap 3.4641, max|Im| 7.7e-18, S check 4.6e-16; product E/N -1.65137 (block GS product -1.65459); |<block GS|block parton>|^2 0.9940  [0.3s]

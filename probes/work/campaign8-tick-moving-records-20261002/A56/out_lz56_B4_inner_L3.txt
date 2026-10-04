@@ -1,0 +1,4 @@
+[B4_inner_L3] n=24 D=1352078 pairs 216 four-sets 100; resume phase p2 at step 88; setup 0.3s
+DONE B4_inner_L3: m = 115; E = <psi|H|psi> -40.196882660665 (E/N -1.67487011); residual |H psi - E psi| 4.31e-08; sum<s.s> -2.3e-12; |<cube product|psi>|^2 0.8001  [32s]
+  two-place energy by cube pair: 0-0: -12.0296, 0-1: -0.4569, 0-2: -0.4569, 1-1: -12.2480, 1-2: -0.7396, 2-2: -12.2480
+  inter-cube bonds with J > 0.3, mean <s.s> [count]: 0-1 001: -0.567 [4]; 0-1 002: +0.101 [8]; 0-1 011: +0.251 [8]; 0-2 001: -0.567 [4]; 0-2 002: +0.101 [8]; 0-2 011: +0.251 [8]; 1-2 011: -0.507 [2]

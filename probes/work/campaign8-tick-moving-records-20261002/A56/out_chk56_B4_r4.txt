@@ -1,0 +1,12 @@
+line3: n=24 pairs 132 (inter-cube 48; independent enumeration match True); four-sets 88 (spanning 1/2/3 cubes: 24/64/0; 10^3-torus restriction match True)
+L3: n=24 pairs 136 (inter-cube 52; independent enumeration match True); four-sets 100 (spanning 1/2/3 cubes: 24/64/12; 10^3-torus restriction match True)
+line2: n=16 pairs 80 (inter-cube 24; independent enumeration match True); four-sets 48 (spanning 1/2/3 cubes: 16/32/0; 10^3-torus restriction match True)
+edge2: n=16 pairs 60 (inter-cube 4; independent enumeration match True); four-sets 16 (spanning 1/2/3 cubes: 16/0/0; 10^3-torus restriction match True)
+cube: E -13.2693202416 (E/N -1.658665); lowest singlets [np.float64(-13.26932), np.float64(-12.11916), np.float64(-12.11916)]; lowest levels [-13.26932 -12.11916 -12.11916 -11.07302]
+line2: kernel |tab - gen| 2.0e-13; S=0 GS E -26.7106452242 (E/N -1.669415; state 0 of the flip-even sector, sum<s.s> 1.1e-13); Delta = E - 2 E_cube -0.172005; <prod|H|prod> - 2E_cube +2.1e-14; start S-checks sum<s.s>: prod 5.6e-14 rand-singlet -6.8e-14  [4s]
+edge2: kernel |tab - gen| 1.8e-13; S=0 GS E -27.2881313796 (E/N -1.705508; state 0 of the flip-even sector, sum<s.s> 1.2e-13); Delta = E - 2 E_cube -0.749491; <prod|H|prod> - 2E_cube +1.8e-14; start S-checks sum<s.s>: prod 5.6e-14 rand-singlet -6.8e-14  [4s]
+corner2: kernel |tab - gen| 1.7e-13; S=0 GS E -26.5386508400 (E/N -1.658666; state 0 of the flip-even sector, sum<s.s> 5.0e-14); Delta = E - 2 E_cube -0.000010; <prod|H|prod> - 2E_cube +1.8e-14; start S-checks sum<s.s>: prod 5.6e-14 rand-singlet -6.8e-14  [5s]
+far2: kernel |tab - gen| 1.7e-13; S=0 GS E -26.5386404831 (E/N -1.658665; state 0 of the flip-even sector, sum<s.s> 5.2e-14); Delta = E - 2 E_cube +0.000000; <prod|H|prod> - 2E_cube +2.5e-14; start S-checks sum<s.s>: prod 5.6e-14 rand-singlet -6.8e-14  [5s]
+line3: D=1352078; tab matvec 0.89s; |tab - gen| 6.5e-13 (gen kernel 2.0s); <prod|H|prod> - 3E_cube -1.3e-13  [12s]
+L3: D=1352078; tab matvec 0.95s; <prod|H|prod> - 3E_cube -1.1e-13  [14s]
+RESULT cube=-13.2693202416 line2=-26.7106452242 edge2=-27.2881313796 corner2=-26.5386508400 far2=-26.5386404831

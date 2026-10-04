@@ -10,7 +10,7 @@ Your aim is to show that the axioms can be the basis of matter and light. Here i
   - Light's loop rule then carries extra factors. In empty space light behaves exactly as before, but with charges present this is a real change, not a relabeling (A54).
 - **Electron-like matter, route 2: the half-particle background.**
   - At mean field it gives fermions and a light-like field together. With short rules, ordered magnets beat it (A44, A46, A47, A49).
-  - Under its best farther-reaching rule it beats every rival computed on grids of 216 to 1,000 places (A51, A53). The far-lower states on small exactly solvable grids turned out to be quirks of how those grids wrap (A53). A near-tie with loosely linked cubes is unsettled.
+  - Under its best farther-reaching rule it beats every rival computed on grids of 216 to 1,000 places (A51, A53). The far-lower states on small exactly solvable grids turned out to be quirks of how those grids wrap (A53). A crystal of linked cubes is a close rival and the contest is open: edge-sharing cubes come within 0.008 per place (A56).
 - **Decisions this leaves with you:**
   - 29: records at every corner, or a two-place relabeling reading;
   - 4: records only next to records, which here would be counted two steps apart;

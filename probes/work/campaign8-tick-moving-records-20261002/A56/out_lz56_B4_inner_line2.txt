@@ -1,0 +1,20 @@
+[B4_inner_line2] start: <v0|H|v0> -25.316831; 3 E_cube -26.473499
+[B4_inner_line2] n=16 D=6435 pairs 104 four-sets 48; resume phase p1 at step 0; setup 0.2s
+  p1 step 5: E0 -26.574355500516  E1 -19.347940139610  resid est 5.72e-01  [0s]
+  p1 step 10: E0 -26.643969869938  E1 -25.294088881276  resid est 2.25e-01  [0s]
+  p1 step 15: E0 -26.652507923830  E1 -25.688559424164  resid est 5.50e-02  [0s]
+  p1 step 20: E0 -26.653054813443  E1 -25.776519977010  resid est 1.45e-02  [0s]
+  p1 step 25: E0 -26.653078965184  E1 -25.794549671280  resid est 2.35e-03  [0s]
+  p1 step 30: E0 -26.653079613953  E1 -25.795944913209  resid est 4.95e-04  [0s]
+  p1 step 35: E0 -26.653079639547  E1 -25.796098316421  resid est 8.05e-05  [0s]
+  p1 step 40: E0 -26.653079640497  E1 -25.796116883465  resid est 3.48e-05  [0s]
+  p1 step 45: E0 -26.653079640630  E1 -25.796133457747  resid est 8.41e-06  [0s]
+  p1 step 50: E0 -26.653079640639  E1 -25.796143094200  resid est 3.71e-06  [0s]
+  p1 step 55: E0 -26.653079640641  E1 -25.796217062471  resid est 1.51e-06  [0s]
+  p1 step 60: E0 -26.653079640642  E1 -25.836455695035  resid est 5.29e-07  [0s]
+  p1 step 65: E0 -26.653079640642  E1 -25.864788841898  resid est 1.39e-07  [0s]
+  p1 step 70: E0 -26.653079640642  E1 -25.868604312844  resid est 2.74e-08  [0s]
+  pass 1 done: m = 70, E0 -26.653079640642 (E0/N -1.66581748), next Ritz -25.86860431 -25.79610710; |<v0|Ritz0>|^2 0.8124
+DONE B4_inner_line2: m = 70; E = <psi|H|psi> -26.653079640642 (E/N -1.66581748); residual |H psi - E psi| 2.74e-08; sum<s.s> -2.6e-14; |<cube product|psi>|^2 0.8831  [1s]
+  two-place energy by cube pair: 0-0: -12.2037, 0-1: -0.4318, 1-1: -12.2037
+  inter-cube bonds with J > 0.3, mean <s.s> [count]: 0-1 001: -0.800 [4]; 0-1 002: +0.174 [8]; 0-1 011: +0.376 [8]

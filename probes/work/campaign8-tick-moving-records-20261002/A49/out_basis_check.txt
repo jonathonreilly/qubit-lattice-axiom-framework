@@ -1,0 +1,41 @@
+== bilinears (soldered frame, per-site HS-normalized) ==
+  J1   S1:   9 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  K1   S1:   3 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  D1   S1:   6 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  J2   S1:  18 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  Kn2  S1:   6 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  Kd2  S1:  24 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  D2   S1:  24 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  J3   S1:   9 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  K3   S1:   3 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  D3   S1:   6 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  J4   S2:  12 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  Kd4  S2:  36 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+  D4   S2:  24 canonical strings; covariance defect 0.0e+00; all coefficients real: True
+== completeness: rank of group averages of all 9 Pauli seeds per bond class vs named operators ==
+  NN: rank(all seeds) = 3; rank(named) = 3; rank(union) = 3
+  FD: rank(all seeds) = 4; rank(named) = 4; rank(union) = 4
+  A2: rank(all seeds) = 3; rank(named) = 3; rank(union) = 3
+  BD: rank(all seeds) = 3; rank(named) = 3; rank(union) = 3
+== four-spin terms: Klein duals of dual-frame SU(2)-invariant (s.s)(s.s) ==
+  T0   S1:  180 strings; covariance defect 0.0e+00; |gavg(Klein seed) - Klein(posavg seed)| = 0.0e+00
+  T2   S1:  108 strings; covariance defect 0.0e+00; |gavg(Klein seed) - Klein(posavg seed)| = 0.0e+00
+  C0   S1:  168 strings; covariance defect 0.0e+00; |gavg(Klein seed) - Klein(posavg seed)| = 0.0e+00
+  Dm0  S1:   27 strings; covariance defect 0.0e+00; |gavg(Klein seed) - Klein(posavg seed)| = 0.0e+00
+  Dm1  S1:   45 strings; covariance defect 0.0e+00; |gavg(Klein seed) - Klein(posavg seed)| = 0.0e+00
+  Y0   S1:  108 strings; covariance defect 0.0e+00; |gavg(Klein seed) - Klein(posavg seed)| = 0.0e+00
+  Y1   S1:  108 strings; covariance defect 0.0e+00; |gavg(Klein seed) - Klein(posavg seed)| = 0.0e+00
+  Y2   S1:  108 strings; covariance defect 0.0e+00; |gavg(Klein seed) - Klein(posavg seed)| = 0.0e+00
+  P0   S2:   45 strings; covariance defect 0.0e+00; |gavg(Klein seed) - Klein(posavg seed)| = 0.0e+00
+  P1   S2:   27 strings; covariance defect 0.0e+00; |gavg(Klein seed) - Klein(posavg seed)| = 0.0e+00
+  shape T (S1): dual SU(2)-invariant pairings rank 2; ALL covariant weight-4 operators on this support: 42
+  shape C (S1): dual SU(2)-invariant pairings rank 1; ALL covariant weight-4 operators on this support: 27
+  shape Dm (S1): dual SU(2)-invariant pairings rank 2; ALL covariant weight-4 operators on this support: 15
+  shape Y (S1): dual SU(2)-invariant pairings rank 3; ALL covariant weight-4 operators on this support: 45
+  shape P (S2): dual SU(2)-invariant pairings rank 2; ALL covariant weight-4 operators on this support: 15
+n(S1) = 18 (bilinear 10, four-spin 8); n(S2 extra) = 5; n(S1 u S2) = 23
+== Klein duals of dual-frame s.s per separation, expanded on the soldered basis ==
+  d=(1, 0, 0): dual s.s = -1.0000 J1 + +1.1547 K1  (residual 6.7e-16)
+  d=(1, 1, 0): dual s.s = -1.0000 J2 + +1.1547 Kn2  (residual 0.0e+00)
+  d=(2, 0, 0): dual s.s = +1.0000 J3 + +0.0000 K3  (residual 0.0e+00)
+  d=(1, 1, 1): dual s.s = +1.0000 J4  (residual -2.2e-16)

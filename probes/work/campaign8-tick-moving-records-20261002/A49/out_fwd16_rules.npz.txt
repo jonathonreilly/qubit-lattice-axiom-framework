@@ -1,0 +1,25 @@
+S^z=0 sector 12870; norms kept in sector: parton 1.000000  [1s]
+ed16_S1inv sign +1: E0/N -0.41915 (deg 3); next levels/N -0.41915 -0.41915 -0.41631 -0.41631
+     parton      : <H>/N -0.37723  var/N 0.0002889  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.001 0.001
+     neel_z_0.05 : <H>/N -0.37656  var/N 0.0017  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.001 0.001
+     col_z_0.1   : <H>/N -0.37591  var/N 0.00458  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.001 0.001   [113s]
+ed16_S1inv sign -1: E0/N -2.63564 (deg 1); next levels/N -1.99003 -1.84389 -1.64490 -1.62869
+     parton      : <H>/N +0.37723  var/N 0.0002889  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     neel_z_0.05 : <H>/N +0.37656  var/N 0.0017  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     col_z_0.1   : <H>/N +0.37591  var/N 0.00458  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000   [117s]
+vmc6_S1inv sign +1: E0/N -0.49405 (deg 1); next levels/N -0.46278 -0.46278 -0.46278 -0.44995
+     parton      : <H>/N -0.37063  var/N 0.001549  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     neel_z_0.05 : <H>/N -0.36997  var/N 0.003035  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     col_z_0.1   : <H>/N -0.36934  var/N 0.005532  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000   [154s]
+vmc6_S1inv sign -1: E0/N -2.65018 (deg 1); next levels/N -2.00284 -1.84384 -1.65821 -1.62806
+     parton      : <H>/N +0.37063  var/N 0.001549  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     neel_z_0.05 : <H>/N +0.36997  var/N 0.003035  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     col_z_0.1   : <H>/N +0.36934  var/N 0.005532  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000   [158s]
+vmc8_S1inv sign +1: E0/N -0.46071 (deg 1); next levels/N -0.43498 -0.43498 -0.43157 -0.43157
+     parton      : <H>/N -0.37108  var/N 0.002617  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     neel_z_0.05 : <H>/N -0.37042  var/N 0.004177  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     col_z_0.1   : <H>/N -0.36982  var/N 0.006441  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000   [190s]
+vmc8_S1inv sign -1: E0/N -2.66032 (deg 1); next levels/N -2.01093 -1.83856 -1.66525 -1.62210
+     parton      : <H>/N +0.37108  var/N 0.002617  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     neel_z_0.05 : <H>/N +0.37042  var/N 0.004177  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     col_z_0.1   : <H>/N +0.36982  var/N 0.006441  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000   [194s]

@@ -1,0 +1,23 @@
+lp0 singlet-mode      : 8742 configs; max|C - C_exact| = 7.49e+00 (max|C_exact| 18.00); max|<h> - exact| = 2.79e-14  [6s]
+lp0 naive full-mode   : 8742 configs; max|C - C_exact| = 7.49e+00 (max|C_exact| 18.00); max|<h> - exact| = 2.78e-14  [13s]
+nee111_0.1 full-mode  : 65536 configs; max|C - C_exact| = 1.35e-12 (max|C_exact| 17.56); max|<h> - exact| = 3.64e-14  [60s]
+polarized full-mode   : 65536 configs; max|C - C_exact| = 1.22e-11  [106s]
+== lowest relative variance: full set vs dual-SU(2)-invariant subspace (16 sites) ==
+  lp0.0        | S1: full 0.000171 / inv 0.000171 (2nd 0.0226) | S1uS2: full -2.31e-14 / inv -2.39e-14 (2nd 0.000631)
+  lp0.1        | S1: full 0.000318 / inv 0.00033 (2nd 0.0224) | S1uS2: full 5.45e-05 / inv 6.27e-05 (2nd 0.00085)
+  lp0.2        | S1: full 0.00258 / inv 0.00274 (2nd 0.023) | S1uS2: full 0.000674 / inv 0.000751 (2nd 0.00427)
+  neez_0.05    | S1: full 0.000996 / inv 0.000996 (2nd 0.0224) | S1uS2: full 0.000325 / inv 0.000325 (2nd 0.00191)
+  neez_0.1     | S1: full 0.00338 / inv 0.00338 (2nd 0.0218) | S1uS2: full 0.00122 / inv 0.00122 (2nd 0.00457)
+  neez_0.3     | S1: full 0.0171 / inv 0.0171 (2nd 0.0227) | S1uS2: full 0.00597 / inv 0.00597 (2nd 0.00881)
+  nee111_0.05  | S1: full 0.000996 / inv 0.000996 (2nd 0.0224) | S1uS2: full 0.000325 / inv 0.000325 (2nd 0.00191)
+  nee111_0.1   | S1: full 0.00338 / inv 0.00338 (2nd 0.0218) | S1uS2: full 0.00122 / inv 0.00122 (2nd 0.00457)
+  nee111_0.3   | S1: full 0.0171 / inv 0.0171 (2nd 0.0227) | S1uS2: full 0.00597 / inv 0.00597 (2nd 0.00881)
+  colz_0.1     | S1: full 0.00263 / inv 0.00267 (2nd 0.0231) | S1uS2: full 0.000193 / inv 0.0002 (2nd 0.00515)
+  colz_0.4     | S1: full 0.0248 / inv 0.0279 (2nd 0.0316) | S1uS2: full 0.00251 / inv 0.00417 (2nd 0.0125)
+  col111_0.1   | S1: full 0.00267 / inv 0.00267 (2nd 0.0231) | S1uS2: full 0.0002 / inv 0.0002 (2nd 0.00515)
+  col111_0.4   | S1: full 0.0279 / inv 0.0279 (2nd 0.0316) | S1uS2: full 0.00417 / inv 0.00417 (2nd 0.0125)
+  cs_product   | S1: full -5.81e-14 / inv -5.82e-14 (2nd -3.06e-14) | S1uS2: full -6.08e-14 / inv -6.1e-14 (2nd -3.08e-14)
+  gs_J1        | S1: full -2.62e-13 / inv -3.3e-14 (2nd -3.7e-15) | S1uS2: full -3.08e-13 / inv -3.29e-14 (2nd -4.47e-15)
+  gs_dualJ1    | S1: full -4.76e-15 / inv -6.26e-15 (2nd -3.11e-15) | S1uS2: full -1.09e-14 / inv -1.27e-14 (2nd -3.44e-15)
+  polarized    | S1: full -4.21e-14 / inv -1.76e-14 (2nd -9.51e-16) | S1uS2: full -4.06e-14 / inv -1.83e-14 (2nd -1.5e-15)
+done 106s

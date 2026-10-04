@@ -1,0 +1,11 @@
+pi-flux singlet (lam'=0): S^z=0 configs with psi=0: 4128 of 12870; S^2 check <psi|S^z-sector> ok
+   (i)  Wigner-Eckart on all S^z=0 configs vs exact C: max diff 1.90e-13
+   (ii) estimator enumeration vs WE masked to supp(psi): max diff 1.25e-12
+   (iii) support loss: max|C_masked - C_exact| = 7.49e+00; lowest lam S1 exact vs masked: -2.084e-14 vs -5.396e-14  [16s]
+random-hopping singlet: S^z=0 configs with psi=0: 0 of 12870; S^2 check <psi|S^z-sector> ok
+   (i)  Wigner-Eckart on all S^z=0 configs vs exact C: max diff 1.75e-14
+   (ii) estimator enumeration vs WE masked to supp(psi): max diff 3.11e-14
+   (iii) support loss: max|C_masked - C_exact| = 1.75e-14; lowest lam S1 exact vs masked: -1.499e-15 vs 1.034e-14  [35s]
+L=4: log10(smallest/largest singular value) over random S^z=0 configs: min -17.3, median -16.0; exactly singular (< -12): 210/300  [35s]
+L=6: log10(smallest/largest singular value) over random S^z=0 configs: min -6.2, median -2.9; exactly singular (< -12): 0/300  [37s]
+L=8: log10(smallest/largest singular value) over random S^z=0 configs: min -6.3, median -3.5; exactly singular (< -12): 0/120  [42s]

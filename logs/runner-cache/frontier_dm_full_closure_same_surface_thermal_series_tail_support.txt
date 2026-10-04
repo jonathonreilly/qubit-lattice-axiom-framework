@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py
-runner_sha256: 1524f80f3aa133bc9f8850770d0208b82e0d03d3b08857f9eba407e6ea988cb6
+runner_sha256: da7a6ee8f8d774e9cf5129a1c2dbf0d0efbb00ab06449c479fcb9337b3d53e99
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 19.69
+elapsed_sec: 23.85
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -28,18 +28,17 @@ PART 2: EXACT TAIL INEQUALITIES
 ========================================================================================
 PART 3: CONDITIONAL LIVE DM-SLICE SERIES/TAIL SUPPORT EXHIBIT
 ========================================================================================
-  [SUPPORT] alpha_lo lies inside the exact series/tail support interval  (R=[5.442019867867, 5.442019867931], eval=5.442019867924)
-  [SUPPORT] alpha_lo support interval is extremely narrow  (width=6.358735760159e-11)
-  [SUPPORT] alpha_conv lies inside the exact series/tail support interval  (R=[5.447934280692, 5.447934280753], eval=5.447934280746)
-  [SUPPORT] alpha_conv support interval is extremely narrow  (width=6.074962755065e-11)
-  [SUPPORT] alpha_hi lies inside the exact series/tail support interval  (R=[5.482855571890, 5.482855571936], eval=5.482855571931)
-  [SUPPORT] alpha_hi support interval is extremely narrow  (width=4.645972495609e-11)
+  [SUPPORT] alpha_lo lies inside the exact series/tail support interval (to double roundoff)  (R=[7.971567066957, 7.971567066957], eval=7.971567066957)
+  [SUPPORT] alpha_lo support interval is extremely narrow  (width=0.000000000000e+00)
+  [SUPPORT] alpha_pin lies inside the exact series/tail support interval (to double roundoff)  (R=[5.447934280692, 5.447934280753], eval=5.447934280746)
+  [SUPPORT] alpha_pin support interval is extremely narrow  (width=6.074962755065e-11)
+  [SUPPORT] alpha_hi lies inside the exact series/tail support interval (to double roundoff)  (R=[8.067175363433, 8.067175363433], eval=8.067175363433)
+  [SUPPORT] alpha_hi support interval is extremely narrow  (width=0.000000000000e+00)
 
   alpha_lo   = 0.090667836017286
-  alpha_conv = 0.090899546858439
+  alpha_pin  = 0.045449773429219  (comparator pin, outside the admitted family)
   alpha_hi   = 0.092264992618360
-  sigma_conv = 0.145077095756643
-  R_conv     = 5.447934280745940
+  R_pin      = 5.447934280745940
 
 ========================================================================================
 BOTTOM LINE

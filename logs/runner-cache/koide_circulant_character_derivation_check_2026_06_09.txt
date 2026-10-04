@@ -3,7 +3,7 @@ runner: scripts/koide_circulant_character_derivation_check_2026_06_09.py
 runner_sha256: 0920711f580406efabc10d054fc63918a27dbfdb499aa311c18e19cfa67cd54b
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.32
+elapsed_sec: 0.89
 status: ok
 ----- stdout -----
 ==========================================================================

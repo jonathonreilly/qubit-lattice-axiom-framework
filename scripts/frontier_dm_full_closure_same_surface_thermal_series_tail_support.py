@@ -13,6 +13,16 @@ Purpose:
 Scope:
   This is still support, not theorem-grade current-bank selector closure.
   It hardens the thermal layer around the actual remaining DM selector gate.
+
+Corrigendum 2026-09-30 (Sommerfeld argument):
+  The shared helper's series argument was b = pi * alpha (kernel
+  y/(1-e^{-y}) with y = pi alpha / v).  The radial Schroedinger equation gives
+  y = 2 pi alpha / v_rel, so the helper now uses b = 2 pi * alpha.  The
+  series/tail structure and inequalities below are unchanged; only the
+  coupling scale is.  With the corrected kernel the archived middle sample
+  alpha_conv = 0.0908995 (root of the half-argument kernel) is replaced by the
+  corrected comparator pin, which lies outside the admitted family.  See
+  scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py.
 """
 
 from __future__ import annotations
@@ -23,8 +33,8 @@ from dm_full_closure_same_surface_thermal_support_common import (
     ALPHA_HI,
     ALPHA_LO,
     attractive_thermal_bounds,
+    converged_comparator_pin,
     converged_same_surface_ratio,
-    converged_sigma_root,
     exact_j1_meijerg,
     exact_j2_meijerg,
     same_surface_ratio_bounds,
@@ -122,11 +132,11 @@ def part3_live_dm_slice_support() -> None:
     print("=" * 88)
 
     omega_b = float(omega_b_from_eta(ETA_OBS))
-    sigma_conv, alpha_conv, r_conv = converged_sigma_root(omega_b)
+    alpha_pin, r_pin = converged_comparator_pin(omega_b)
 
     samples = [
         ("alpha_lo", ALPHA_LO),
-        ("alpha_conv", alpha_conv),
+        ("alpha_pin", alpha_pin),
         ("alpha_hi", ALPHA_HI),
     ]
 
@@ -134,9 +144,12 @@ def part3_live_dm_slice_support() -> None:
         r_lo, r_hi = same_surface_ratio_bounds(alpha)
         r_eval = converged_same_surface_ratio(alpha)
         width = r_hi - r_lo
+        # The corrected kernel (b = 2 pi alpha) shrinks the series tail below
+        # double precision at the live endpoints, so the enclosure can collapse
+        # to one double: test containment to double-precision roundoff.
         support(
-            f"{label} lies inside the exact series/tail support interval",
-            r_lo < r_eval < r_hi,
+            f"{label} lies inside the exact series/tail support interval (to double roundoff)",
+            r_lo - 1.0e-12 <= r_eval <= r_hi + 1.0e-12,
             f"R=[{r_lo:.12f}, {r_hi:.12f}], eval={r_eval:.12f}",
         )
         support(
@@ -147,10 +160,9 @@ def part3_live_dm_slice_support() -> None:
 
     print()
     print(f"  alpha_lo   = {ALPHA_LO:.15f}")
-    print(f"  alpha_conv = {alpha_conv:.15f}")
+    print(f"  alpha_pin  = {alpha_pin:.15f}  (comparator pin, outside the admitted family)")
     print(f"  alpha_hi   = {ALPHA_HI:.15f}")
-    print(f"  sigma_conv = {sigma_conv:.15f}")
-    print(f"  R_conv     = {r_conv:.15f}")
+    print(f"  R_pin      = {r_pin:.15f}")
 
 
 def main() -> int:

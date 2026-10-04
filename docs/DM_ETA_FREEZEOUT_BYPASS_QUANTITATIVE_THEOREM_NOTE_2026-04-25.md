@@ -1,5 +1,9 @@
 # DM eta Freezeout-Bypass Quantitative Theorem
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+
+
 **Date:** 2026-04-25 (revised same day after adversarial review)
 **Status:** **bounded quantitative support theorem** for the open DM-gate
 eta blocker, with a
@@ -13,6 +17,46 @@ identity (open lane G1).
 `scripts/frontier_dm_eta_freezeout_bypass_null_distribution_audit.py` (`PASS = 4, FAIL = 0`).
 **Framework convention:** "axiom" means only the single framework axiom
 `Cl(3)` on `Z^3`.
+
+## Corrigendum (2026-09-30)
+
+Three statements in this note were wrong or mislabelled. The sections below are kept as the record and are
+superseded where they conflict with this corrigendum.
+
+**1. The Sommerfeld factor at `alpha_X = alpha_LM` is not `1.59`.** The thermal kernel behind these numbers used the Sommerfeld factor `S = pi z / (1 - e^{-pi z})`, `z = alpha / v`, where `v` is the relative speed carried by the weight `v^2 e^{-x_f v^2 / 4}`. For a pair of reduced mass `m/2` the s-wave Coulomb factor from the radial Schroedinger equation (wave number `k = m v / 2`, Coulomb parameter `eta = alpha / v`) is `S = 2 pi z / (1 - e^{-2 pi z})`. The old form is the textbook formula written for the per-particle centre-of-mass speed `v/2`; at fixed relative speed it is the correct function at half the coupling, `S_pi(alpha) = S_2pi(alpha/2)`.
+
+- The value `S_vis/S_dark = 1.59` (and `R = 5.477`, `5.48`) is the half-argument kernel's value at
+  `alpha` near `0.0907` to `0.0923` (`1.580` to `1.592`). The corrected value at `alpha = alpha_LM = 0.09067`
+  is `S_vis/S_dark = 2.314`, so `R = 7.972`.
+- The corrected kernel gives `S_vis/S_dark = 1.36` to `1.65` for `alpha_GUT in [0.03, 0.05]` (the band `[1.4, 1.7]`
+  is about that range), and `1.59` needs `alpha` near `0.046`. Read with the corrected kernel, the note's `1.59`
+  therefore corresponds to a coupling near `0.046` while its cross-section `sigma v = pi alpha_X^2 / m^2` uses
+  `0.0907`: two different couplings.
+- Corrected central `eta_pred(m_DM = 16 v)`: with `alpha_LM` in both places, `4.38e-10` (`-28.4%` from `6.12e-10`;
+  the mass that would match is `18.9 v = 4657 GeV`); with one coupling at the comparator-reproducing value
+  `alpha = 0.0454`, `2.55e-9` (`+317%`); the archived `6.38e-10` (`+4.2%`) is reproduced only by reading the two
+  couplings as different (with the corrected `S(alpha = 0.048)`, `R = 5.579`, `eta_pred = 6.26e-10`, `+2.3%`).
+  The `Omega_DM h^2 = 0.1275` at `16 v` depends on `alpha_X` only and is unchanged; the predicted
+  `Omega_b h^2 = Omega_DM h^2 / R` and `eta` inherit the change in `R`.
+- Withdrawn: "the full Planck cosmological pie chart is then reproduced from `m_DM = 16 v` ... with no `eta`
+  import", and the `+4.22%` headline, as statements about a single coupling. The mass-identity audit (`16 v`
+  versus `3860 GeV`) was performed at `R = 5.477` and inherits the same change.
+
+**2. Comparator.** The comparison values used in this lane (`5.469` from the rounded `0.268 / 0.049`, `5.47`, `5.375` / `5.38`, and `5.448` from `0.268` over the BBN `Omega_b`) are not the physical density ratio. The Planck-2018 physical densities, which cancel `h`, give `R_obs = (Omega_c h^2)/(Omega_b h^2) = 0.1200 / 0.02237 = 5.364 +/- 0.065` (`Omega_c h^2 = 0.1200 +/- 0.0012`, `Omega_b h^2 = 0.02237 +/- 0.00015`, TT,TE,EE+lowE+lensing; external comparator recalled from Planck 2018 results VI, not re-fetched; errors propagated as independent, the posterior correlation is not applied). Against that, the archived endpoint ratios `5.442` and `5.483` were `+1.5%` and `+2.2%` (`+1.2` and `+1.8` sigma) misses, not the `0.25%` agreement obtained against `5.469`. The runner comparator `5.4479` (`0.268` over the BBN `Omega_b` for `eta = 6.12e-10`) is itself `+1.6%` (`+1.3` sigma) above `5.364`. In the table above, `R = 5.48` versus `5.38` (`+1.86%`) is `+2.2%` (`+1.8` sigma)
+against `5.364 +/- 0.065`.
+
+**3. "Dark singlet".** In this note the "dark hw=3 singlet `S_3`" is the singlet of the `1+3+3+1` Burnside
+(permutation-orbit) decomposition, not a gauge singlet. In the base x fibre embedding the mass step uses
+(`CL3_COLOR_AUTOMORPHISM_THEOREM`, `DM_ETA_G1_*`), `|111>` is a colour fundamental, a weak-doublet component with
+`Y = +1/3`, and no taste state is a gauge singlet (smallest eigenvalue of `C_3 + C_2` is `0.75`,
+`scripts/dm_dark_candidate_consistency_check.py`). The force behind `alpha_X` is therefore the coupling of a force the
+dark state feels, and `alpha_X = alpha_LM` remains a supplied choice; this note does not derive it.
+
+**Evidence.** `scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py` (radial Schroedinger equation integrated numerically with no closed form, mpmath Coulomb function, independent quadrature; it reproduces the archived numbers as the corrected ones at half the coupling) and `scripts/dm_ratio_comparator_planck_central_values_check.py`. Both are same-family checks by their author, not independent referees. No audit verdict, effective status or status field is changed by this corrigendum. The eta variants above are arithmetic on this note's formula
+`eta = K x_F m^2 / (sqrt(g_*) M_Pl pi alpha_X^2 R 3.65e7)` with the corrected `R`.
+
+**What still stands.** The algebra of the freeze-out-bypass identity `eta = C m_DM^2`, the exact `R_base = 31/9`
+identity, the null-distribution counts, and the open status of the `m_DM = 16 v` mechanism (G1) and of `A0`.
 
 ## Honest framing (post-adversarial-review)
 

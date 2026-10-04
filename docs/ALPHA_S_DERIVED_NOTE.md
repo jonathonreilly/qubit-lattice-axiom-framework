@@ -28,6 +28,67 @@ outcome.
 this bounded lane):** `ALPHA_S_DIRECT_WILSON_LOOP_DERIVATION_THEOREM_NOTE_2026-04-30.md`
 with runner `scripts/frontier_alpha_s_direct_wilson_loop.py`.
 
+
+## Current reproduction boundary (2026-10-04)
+
+The submitted 19,840-configuration, `6^4`, mass-scan and campaign-HMC
+numbers below are **historical reported results whose raw data/code are not
+provided here**. They are not reproduced by the current runner and cannot
+support its PASS. The current own-code run uses three chains of 500 samples,
+discarding ten per chain (1,470 retained), gauge PBC and fermion time APBC on
+`4^4`, at mass 0.1. Its finite covariance and rooted reweighting diagnostics
+have the printed overlap/ESS limits; they are not certified dynamical,
+infinite-volume or physical-VEV predictions. The `Ns=0` linear response is
+not a controlled `Ns=1` extrapolation and does **not** bracket the campaign HMC.
+Exactly at fourth hopping order, `ln det(m+K)` contains
+`[sum_p Re Tr U_p - sum_lines s_mu Re Tr P_line]/(8 m^4)` on `L=4`.
+The local plaquette coefficient is positive in the heavy-mass expansion;
+the winding term and higher orders prevent an all-mass monotonicity conclusion.
+The expansion is not justified by mass 0.1. The degree 16 counts block
+Grassmann components; its interpretation as `4 spin x 4 taste` uses the
+supplied staggered realization, not a derived physical species census.
+Only the three hash-bound April ensemble files and the current finite controls
+are reproducible evidence here. All campaign-derived 214 GeV and taste-count
+readouts below are arithmetic on unverified reported inputs. The replacement
+of a pure-gauge measure by a physical matter-inclusive one remains open.
+
+## Corrigendum (2026-09-30): B1's plaquette is a pure-gauge value; `alpha_s(v)` and the scale label `mu = v` inherit that scope
+
+A same-family check from the 2026-09-29 wall campaign, reproduced by
+`scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py` (numbers
+and caveats in the 2026-09-30 corrigendum of
+`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`), found a scope gap in how
+B1 and B4 can be read. T1 stays exact arithmetic over the declared boundary
+inputs; nothing below sets or predicts an audit outcome.
+
+- **B1 has no fermions in its measure.** `<P> = 0.5934` is the pure-SU(3) Wilson
+  plaquette. B3 counts the gauge vacuum-polarization channel of the staggered
+  Dirac operator, that is fermion modes that the plaquette leaves out. With one
+  dynamical staggered field (4 tastes) in the measure the plaquette at
+  `beta = 6` rises by about `+0.02` on a `4^4` lattice (campaign HMC
+  `+0.0212(11)`; own re-weighting `+0.0062(2)` for 1 taste, `+0.012(1)` for 2).
+  The T1 output `1/(4 pi sqrt(P))` would then be about 0.1015 (`-1.7 %`) at 4
+  tastes and 0.1023 at 2 tastes, against 0.103304. This is illustrative
+  arithmetic on one small lattice, not a result about `alpha_s(v)`.
+- **B1 is a reuse number, and point estimates sit above it.** The repository's
+  own April 2026 ensembles (`outputs/alpha_s_wilson_loop_production/`) give
+  `0.59369(2)` for the same pure-gauge plaquette, and a reduced wall-campaign
+  run gives `0.59372(4)`: about `3e-4` above `0.5934`, no certificate issued
+  (see the plaquette authority note's 2026-09-30 scope section). At `0.59369`
+  the T1 output is 0.103279 (`-0.024 %`). B1 stays exactly what the license
+  says; the estimates are recorded, not adopted.
+- **B4's scale is the pure-gauge readout.** `mu = v = 246.282818290129 GeV` is
+  the hierarchy formula at the pure-gauge `0.5934`. It becomes 245.80 GeV at
+  `0.59369` and about 214 GeV (about 227 to 236 GeV for 1 to 2 tastes) with the
+  fermion-inclusive plaquette above. B4 declares the scale, so nothing here
+  breaks T1, but the label carries the same scope as the hierarchy readout
+  and is not evidence of agreement with the observed VEV. The C1 corollary
+  starts its running at this `v` and is not recomputed here.
+
+Still standing: T1 as arithmetic over B1 to B4, C1 as a quarantined corollary,
+the B3 and B4 declarations. No boundary input is derived or closed by this
+correction.
+
 ## Why this note was repaired (2026-06-10)
 
 The prior revision of this note carried the load-bearing step

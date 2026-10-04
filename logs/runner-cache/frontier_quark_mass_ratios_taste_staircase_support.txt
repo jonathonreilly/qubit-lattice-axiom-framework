@@ -3,7 +3,7 @@ runner: scripts/frontier_quark_mass_ratios_taste_staircase_support.py
 runner_sha256: edba53e97b2d3e9b5eb63becf3de28e97356ea541d32b106937ff1c725688046
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================================

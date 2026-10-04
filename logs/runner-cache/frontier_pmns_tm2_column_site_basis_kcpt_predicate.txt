@@ -3,7 +3,7 @@ runner: scripts/frontier_pmns_tm2_column_site_basis_kcpt_predicate.py
 runner_sha256: a5bf14b2a6503b321f8f7e8060e1e9271aec2ec04f2c70f73ff487af81f98b8a
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 PASS T1 corner overlaps |<e_a|W>|^2 = 1/3 (trimaximal column)

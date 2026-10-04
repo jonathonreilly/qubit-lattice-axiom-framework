@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_ckm_five_sixths_bridge_support.py
 runner_sha256: 261772bf8b7406ab2347a47f7a6a590b494df6e74b067b5d0297a07478d135bb
-timeout_sec: 300
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.05
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ========================================================================

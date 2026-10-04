@@ -8,6 +8,45 @@ after independent review.
 **Claim type:** bounded_theorem
 **Primary runner:** `frontier_quark_route2_honest_gravity_metric_rhoe_characterization.py`
 
+
+## Quantifier boundary (2026-10-04)
+
+The all-site identity holds for the stated seven-site stencil inside a
+Dirichlet box containing all six neighbours. Equality of centre and shell
+readouts follows **only when every interpolation stencil avoids the origin**,
+the anchor ignores it, and the required denominators are nonzero. Locality
+alone does not force this: the six-point control touches the origin and leaks
+the spike. The four-point counterexample refutes interpolation-independent
+interpretation of the size-15 rationals; it does not select a physical
+interpolation. The finite sampled ladder fails a plateau test. Any statement
+below that it “does not converge” means that finite diagnostic only; an
+asymptotic nonconvergence theorem is not supplied.
+
+## Corrigendum (2026-09-30)
+
+**What was wrong.** Section 7 calls `rho_E(15) = +5.257476782081` the sharpened
+target for any future E-center derivation path, and section 6 locates the
+sizes-17-to-21 ladder instability in the extremal floor functional itself
+(as opposed to a porting defect). The size-15 numbers are correct outputs of the runner, but the centre-minus-shell
+part of every ladder row (`q_T`, `q_E`, `rho_E`) is the response of the repo's
+global cubic-spline interpolation to a one-site spike: the centre and shell
+sources give the same lattice potential everywhere except the origin, where they
+differ by exactly `1/6`. With a local interpolation, `q_T = q_E = 1` and
+`rho_E = 0` at every size including 15.
+
+**Corrected statement.** `rho_E(15) = 5.2575` is not a target and the `q_T`
+admission of size 15 against `5/6` is a spline coincidence on a ladder that
+does not converge. The no-convergent-tail verdict of section 4 stands and is now
+explained. The section 6 floor-smoothness observation (E1 shell finite
+differences on a plateau at sizes 17-21) is a separate feature that this
+correction does not test.
+
+**What still stands.** All table rows as outputs of the runner, the anchor and
+isotropy checks, and the statement that this note derives nothing about
+`rho_E`.
+
+**Evidence.** The note `QUARK_ROUTE2_ENDPOINT_TRIPLE_CENTER_MINUS_SHELL_READOUT_IS_A_GLOBAL_CUBIC_SPLINE_ARTEFACT_ON_A_ONE_SITE_SPIKE_BOUNDED_THEOREM_NOTE_2026-09-30.md` proves the identity `phi(e0) - phi(s_unit) = delta_origin / 6` at every site and replays the readout with the interpolation swapped (checker `scripts/frontier_quark_route2_endpoint_triple_center_minus_shell_readout_cubic_spline_artefact_check_2026_09_30.py`, `TOTAL: PASS=24 FAIL=0`). Same-family checks (Claude Sonnet 5.5), no independent referee yet.
+
 ## 1. Scope
 
 This note characterizes the licensed Route-2 gravity-metric E-channel readout reconstruction. It is a theory of the reconstruction: fixed seven-point source, fixed physical shell readout, finite boxes with receding walls, and the resulting finite-size ladder for the dimensionless value
@@ -16,7 +55,7 @@ This note characterizes the licensed Route-2 gravity-metric E-channel readout re
 rho_E = b_e / a_e.
 ```
 
-It does not derive a readout law, does not identify the value with a rational, and does not update any independent status row. The context is the reduction and comparator surface recorded in [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ENDPOINT_READOUT_CONSTRAINTS_NOTE_2026-04-19.md](QUARK_ENDPOINT_READOUT_CONSTRAINTS_NOTE_2026-04-19.md), [TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md](TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md), and the cross-domain comparison boundary in [CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md](CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md). The context-only quotient and derivation-attempt surfaces are `QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md` and `QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md`.
+It does not derive a readout law, does not identify the value with a rational, and does not update any independent status row. The context is the reduction and comparator surface recorded in [QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md](QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md), [QUARK_ENDPOINT_READOUT_CONSTRAINTS_NOTE_2026-04-19.md](QUARK_ENDPOINT_READOUT_CONSTRAINTS_NOTE_2026-04-19.md), [TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md](TENSOR_SUPPORT_CENTER_EXCESS_LAW_NOTE.md), and the cross-domain comparison boundary in [CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/e69519ec7a37f19c096737dab2208de5ce15c192/archive/notes/docs/CTE_RCONN_SPATIAL_TENSOR_COLOR_BRIDGE_IS_A_CROSS_DOMAIN_COINCIDENCE_NARROW_NO_GO_NOTE_2026-06-08.md). The context-only quotient and derivation-attempt surfaces are `QUARK_E_CHANNEL_ENDPOINT_QUOTIENT_LAW_NOTE_2026-04-19.md` and `QUARK_ROUTE2_E_CENTER_LIFT_DERIVATION_ATTEMPT_BOUNDED_NOTE_2026-06-12.md`.
 
 ## 2. Operational Definition
 

@@ -7,6 +7,77 @@ lane can decide whether the candidate is retained.
 **Primary runner:** [`scripts/pmns_tm2_magic_residual_dynamical_generator_runner.py`](../scripts/pmns_tm2_magic_residual_dynamical_generator_runner.py)
 **Cached output:** [`logs/runner-cache/pmns_tm2_magic_residual_dynamical_generator_runner.txt`](../logs/runner-cache/pmns_tm2_magic_residual_dynamical_generator_runner.txt)
 
+## Corrigendum (2026-09-30)
+
+Source-scope correction. Status fields above are unchanged; effective status
+stays with the independent audit lane. Checks are same-family (Claude Sonnet
+5.5), not an independent referee.
+
+**What was wrong.** Theorem item 4 says a `V_4`-invariant `M_nu` keeps
+`theta_13` free because "the `C_3`-doublet block is unconstrained", and the
+Honest auditor read repeats it. That is false. `[M_nu, S] = 0` makes `M_nu`
+block-diagonal in `span{W}` plus the doublet; `[M_nu, P_23] = 0` then forces
+the doublet block to be diagonal in the two `P_23` eigenvectors
+`xi = (2,-1,-1)/sqrt6` (even) and `eta = (0,1,-1)/sqrt2` (odd). The Hermitian
+commutant of `V_4` is 3-dimensional, spanned by `|W><W|`, `|xi><xi|`,
+`|eta><eta|`. Every `V_4`-invariant `M_nu` with a non-degenerate spectrum has
+eigenvectors `W, xi, eta`, electron row `|U_ej|^2 = {1/3, 2/3, 0}`, and, with
+`W` as the second column, `s13^2 = 0`, `s12^2 = 1/3`, `s23^2 = 1/2`
+(tribimaximal), not `s13^2 ~ 0.022`. If two eigenvalues are equal (for
+example a degenerate doublet block), `M_nu` still commutes with `V_4`, but its
+eigenvectors are then not determined by `M_nu`, so it fixes no mixing angle
+either. The runner's part (D) checks the trimaximal
+column and equal `mu`, `tau` rows (both true) and never evaluates `|U_e3|^2`;
+"`theta_13` FREE" in its docstring and in item 4 was a label, not a check.
+Adding the record dephasing of the sibling note to the third flip `S.P_23`
+gives the same `V_4` and the same `theta_13 = 0`.
+
+**Item 5 and runner part (E).** The runner's "`sin^2 theta_13` proxy" is the
+minimum over all nine `|U|^2` entries. In its witness that minimum, 0.0213,
+sits in the `tau` row; the electron row is (0.388, 1/3, 0.279), so `|U_e3|^2`
+is not in 0.015-0.030, and the witness commutes with `S` only (its `mu` and
+`tau` rows differ). The statement in item 5, that an `S`-commuting `M_nu` can
+reach the observed `s13^2`, is true (an `S`-only operator has
+`s13^2 = (2/3) sin^2(phi)` for doublet rotation angle `phi`), but the witness
+does not show it and carries no `mu`-`tau` residual.
+
+**Corrected statement.** Items 1-3 (`S` not in `S_3`; `exp(i pi/3 H_dem)` is a
+phase times `S`; `<S, P_23> = V_4`) stand. Item 4 reads: `[M_nu, V_4] = 0`
+gives the trimaximal column, the `mu`-`tau` modulus residual, maximal
+atmospheric mixing, **and `theta_13 = 0`**. A `mu`-`tau` residual compatible
+with `theta_13 != 0` needs a different condition, for example the
+antiunitary reflection `P_23 M_nu^* P_23 = M_nu` together with
+`[M_nu, S] = 0`; the graph-first residual the repository supplies is the
+unitary invariance `P_23 H P_23 = H`, so the reflection is not supplied here.
+With it the check below finds `s23^2 = 1/2`, `|sin delta| = 1`, `theta_13`
+free, and still `s12^2 = 1/(3 c13^2)`.
+
+**Data scope.** With the trimaximal column as the second PMNS column and
+`U_e = I`, `s12^2 = 1/(3 c13^2) >= 1/3` for every `s13^2`; it is 0.3409 at
+`s13^2 = 0.0222` and 0.3404-0.3416 across the quoted `s13^2` range. The
+NuFIT-6.1 3-sigma range for `s12^2` the repository already quotes
+(`PMNS_DCP_FORECAST_STANDING_DEGRADES_UNDER_NUFIT6_BOUNDED_NOTE_2026-06-08.md`,
+line 28) is [0.2893, 0.3295]. The TM2 form is outside it, and a trimaximal
+electron-row entry `1/3` is outside the rectangle's image at every mass
+position. arXiv:2512.03809 (Ding, Li, Lu, Petcov; the statement is in the body
+text, not the abstract) reports the TM2-type patterns disagree with the first
+JUNO `sin^2 theta_12` measurement at the 3.6 sigma level. The April sum-rule
+note that the 2026-08-05 historic intake wraps
+(`docs/historic_intake/HISTORIC_KOIDE_PMNS_SUM_RULES_NOTE_2026_04_21_INTAKE_NOTE_2026-08-05.md`,
+audit unset) already lists TM2 as not fitting (0.294 against 1/3).
+
+**TM1.** The same paper finds a different literature pattern, TM1 (first
+column `xi`), inside the JUNO 3-sigma range. This repository does not supply
+it: the record dephasing fixes `W` as a column, not `xi`, and with the flip
+`S.P_23` it gives the `V_4` result above. The historic intake cited above
+lists TM1 as not fitting its NuFIT-based comparator (0.684 against 2/3); that
+note does not use the JUNO measurement. Nothing here adopts TM1 as a framework
+result.
+
+**Evidence.** `scripts/pmns_tm2_scope_check_solar_angle_outside_nufit61_and_v4_commutant_forces_theta13_zero_2026_09_30.py`
+(26 PASS, 0 FAIL): commutant dimensions, the runner's own seed-7 `M_nu`
+(electron row 0, 1/3, 2/3), the part (E) witness, the reflection family.
+
 ## Audit context
 
 The conditional TM2 lemmas

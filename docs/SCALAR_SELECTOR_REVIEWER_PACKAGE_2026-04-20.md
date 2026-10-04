@@ -1,5 +1,12 @@
 # Scalar-Selector Cycle 1 — Reviewer Package
 
+**Precision comparison scope (2026-10-04):** “450 sigma” below denotes the
+nominal ratio residual divided by the quadrature of the supplied PDG-2024
+quoted errors, assuming independence. It is not a joint posterior tail
+probability or a radiative mass-scheme theorem. The tested conclusion is that
+the exact supplied pole-mass shape misses those precision comparators.
+
+
 **Claim type:** open_gate
 **Status:** historical / diagnostic — reviewer handoff context only
 **Date:** 2026-04-20
@@ -14,6 +21,27 @@ This note is preserved for audit/history/instrumentation per
 "current package" voice below reflect the 2026-04-20 / 2026-04-21 reviewer
 handoff snapshot, not live production-lane status; for current package
 authority, follow the `publication/ci3_z3/` references above.
+
+---
+
+## Corrigendum (2026-09-30)
+
+§2 says `δ = 2/9` ≈ 0.222 rad fits PDG "to machine precision". That is wrong.
+The fit is close, not exact. The exact Brannen pair (`r = 1/2`, i.e. the `√2`
+coefficient, with `δ = 2/9`) predicts `m_μ/m_e = 206.77032`; PDG 2024
+(`m_e = 0.51099895000(15)`, `m_μ = 105.6583755(23)` MeV) gives
+`206.768283 ± 0.000005`. The relative miss is `9.8×10⁻⁶`, about 450σ, and the
+`δ` that fits `m_μ/m_e` exactly at `r = 1/2` is `2/9 − 1.75×10⁻⁷`. An estimator
+of `δ` limited by the tau-mass error (relative `5×10⁻⁵`) does place `2/9`
+within about 0.4σ, but that tests `δ` with `r` fitted from the same three
+masses, not the exact pair. Corrected wording for §2: `δ = 2/9` ≈ 0.222 rad
+fits the PDG pole masses to about `10⁻⁵` in `m_μ/m_e` (each mass to about
+`3×10⁻⁵` with the scale fitted), and is excluded as an exact value at pole-mass
+precision. An exact claim must name its mass scheme and scale; a leading-order
+QED pole-to-MS-bar conversion moves `Q` by about `10⁻³`. Nothing else in this
+historical note changes, and no derivation of `δ` is claimed. Evidence:
+`scripts/koide_exact_pair_pole_mass_precision_check_2026_09_30.py` (same-family
+author check, not an independent referee).
 
 ---
 

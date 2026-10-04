@@ -6,6 +6,69 @@
 **Claim type:** bounded_theorem
 **Primary runner:** `scripts/frontier_plaquette_self_consistency_finite_mc_repair.py`
 
+
+## Current reproduction boundary (2026-10-04)
+
+The submitted 19,840-configuration, `6^4`, mass-scan and campaign-HMC
+numbers below are **historical reported results whose raw data/code are not
+provided here**. They are not reproduced by the current runner and cannot
+support its PASS. The current own-code run uses three chains of 500 samples,
+discarding ten per chain (1,470 retained), gauge PBC and fermion time APBC on
+`4^4`, at mass 0.1. Its finite covariance and rooted reweighting diagnostics
+have the printed overlap/ESS limits; they are not certified dynamical,
+infinite-volume or physical-VEV predictions. The `Ns=0` linear response is
+not a controlled `Ns=1` extrapolation and does **not** bracket the campaign HMC.
+Exactly at fourth hopping order, `ln det(m+K)` contains
+`[sum_p Re Tr U_p - sum_lines s_mu Re Tr P_line]/(8 m^4)` on `L=4`.
+The local plaquette coefficient is positive in the heavy-mass expansion;
+the winding term and higher orders prevent an all-mass monotonicity conclusion.
+The expansion is not justified by mass 0.1. The degree 16 counts block
+Grassmann components; its interpretation as `4 spin x 4 taste` uses the
+supplied staggered realization, not a derived physical species census.
+Only the three hash-bound April ensemble files and the current finite controls
+are reproducible evidence here. All campaign-derived 214 GeV and taste-count
+readouts below are arithmetic on unverified reported inputs. The replacement
+of a pure-gauge measure by a physical matter-inclusive one remains open.
+
+## Scope note (2026-09-30): point estimates of the same quantity
+
+The reuse license above is unchanged. For the record, two point estimates of the
+same pure-gauge Wilson plaquette at `beta = 6`, each with its source. They are
+point estimates, not certificates, and neither replaces the admitted reuse
+number.
+
+- `0.59369(2)`: weighted mean of the `1 x 1` space-time Wilson loops of the
+  repository's April 2026 production ensembles,
+  `outputs/alpha_s_wilson_loop_production/ensemble_{12x12x12x24,16x16x16x32,24x24x24x48}_unsmeared.json`,
+  500 configurations each (`0.593692(44)`, `0.593671(33)`, `0.593741(61)`;
+  chi-squared 1.0 for 2 degrees of freedom), recomputed with Madras-Sokal errors by
+  `scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py`.
+- `0.59372(4)`: a reduced heatbath plus overrelaxation run at `L = 12` and `16`
+  of the 2026-09-29 wall campaign (code outside the repository; a same-family
+  check, not an independent referee).
+
+Both lie about `3e-4` above `0.5934`, which is twelve times the April error
+bar. Neither is a certificate under
+`PLAQUETTE_MC_CERTIFICATION_PROTOCOL_NOTE_2026-06-11.md`: the reduced run's
+total budget is `4.3e-5`, so its `2 sigma` (`8.5e-5`) is above the grade-4 limit
+`5e-5`; its `L^-4` fit fails the protocol's gate (chi-squared 63 for 2 degrees
+of freedom), and step 6 of the protocol then says no certificate is issued; the
+April ensembles have no infinite-volume fit. Read against the protocol's
+pre-registered bands, a conforming certificate at these values would fall in
+Band D (`|d| > 1e-4`). No such certificate exists, so nothing the protocol lists
+under Band D is re-opened by this note, but the licensed `0.5934` should not be
+read as good to `+/- 5e-5`. The 2026-05-05 finite-size fit `0.59400(37)`
+is within one sigma of `0.59372`. The repository's analytic "bridge-support
+upper candidate" `0.59353` (a non-theorem candidate, see
+`PLAQUETTE_BOOTSTRAP_FRAMEWORK_INTEGRATION_NOTE_2026-05-03.md`) is `1.6e-4`
+below the April mean, about 6.5 sigma of the April error; that tension is
+recorded here, not resolved.
+
+The quantity above is the pure-gauge plaquette. A plaquette measured with
+dynamical staggered fermions in the measure is a different number (about `+0.02`
+higher on a `4^4` lattice with one staggered field); see the 2026-09-30
+corrigendum of `HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`.
+
 ## Actual claim
 
 For a finite periodic `L^4` lattice with `SU(3)` link variables and Wilson single-plaquette action

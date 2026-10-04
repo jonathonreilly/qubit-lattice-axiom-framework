@@ -14,6 +14,30 @@ audit verdict and downstream status are set only by the independent
 audit lane.
 **Primary runner:** [`scripts/frontier_hierarchy_ew_vev_observable_identification_bridge.py`](../scripts/frontier_hierarchy_ew_vev_observable_identification_bridge.py)
 
+
+## Current reproduction boundary (2026-10-04)
+
+The submitted 19,840-configuration, `6^4`, mass-scan and campaign-HMC
+numbers below are **historical reported results whose raw data/code are not
+provided here**. They are not reproduced by the current runner and cannot
+support its PASS. The current own-code run uses three chains of 500 samples,
+discarding ten per chain (1,470 retained), gauge PBC and fermion time APBC on
+`4^4`, at mass 0.1. Its finite covariance and rooted reweighting diagnostics
+have the printed overlap/ESS limits; they are not certified dynamical,
+infinite-volume or physical-VEV predictions. The `Ns=0` linear response is
+not a controlled `Ns=1` extrapolation and does **not** bracket the campaign HMC.
+Exactly at fourth hopping order, `ln det(m+K)` contains
+`[sum_p Re Tr U_p - sum_lines s_mu Re Tr P_line]/(8 m^4)` on `L=4`.
+The local plaquette coefficient is positive in the heavy-mass expansion;
+the winding term and higher orders prevent an all-mass monotonicity conclusion.
+The expansion is not justified by mass 0.1. The degree 16 counts block
+Grassmann components; its interpretation as `4 spin x 4 taste` uses the
+supplied staggered realization, not a derived physical species census.
+Only the three hash-bound April ensemble files and the current finite controls
+are reproducible evidence here. All campaign-derived 214 GeV and taste-count
+readouts below are arithmetic on unverified reported inputs. The replacement
+of a pure-gauge measure by a physical matter-inclusive one remains open.
+
 ## 1. Claim
 
 Given:
@@ -205,6 +229,27 @@ re-audit of the repaired arithmetic source and closure of a physical
 support a physical `d = 4` selection. Until then, the 0.0255% match
 remains a **bounded numerical match on the canonical surface**, with four
 named context inputs.
+
+### 5.1a Corrigendum (2026-09-30): a fourth selection knob, the fermion content of the plaquette
+
+The list above names three selection knobs. A same-family check from the
+2026-09-29 wall campaign (numbers and caveats in the 2026-09-30 corrigendum of
+`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`; reproduced by
+`scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py`) adds a
+fourth: which plaquette enters `u_0`. The `<P> = 0.5934` of Section 4 is the
+pure-gauge plaquette. With the block's own staggered field in the plaquette
+measure (4 tastes) the plaquette at `beta = 6` rises by about `+0.02` on a `4^4`
+lattice and the readout falls to about 214 GeV (about 227 to 236 GeV for 1 to 2
+tastes); the continuous fit on `N` then gives about 15.94 instead of 16.0001. So
+the `0.0255 %` match and the `N = 16.0001` landing hold only for the pure-gauge
+plaquette, and only if that plaquette is `0.5934` to about `5e-5`. Point
+estimates of it (`0.59369(2)` from the repository's April 2026 ensembles,
+`0.59372(4)` from a reduced wall-campaign run; no certificate issued) put the
+readout at 245.80 GeV (`-0.195 %` from Section 4) and `N` at 15.9993. The
+label above (bounded numerical match on the canonical surface, four named
+context inputs) is unchanged; its reading as support for the structural
+reading is weaker than Section 5.1 states, because the match sits at a
+fermion-free plaquette.
 
 ### 5.2 What this bridge does NOT do
 

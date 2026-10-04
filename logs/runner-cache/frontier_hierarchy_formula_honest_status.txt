@@ -3,7 +3,7 @@ runner: scripts/frontier_hierarchy_formula_honest_status.py
 runner_sha256: 9907401d908e18ec696b66b6cd4e6e8340a74c292c156ff370c208838b46ab48
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.07
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ==============================================================================

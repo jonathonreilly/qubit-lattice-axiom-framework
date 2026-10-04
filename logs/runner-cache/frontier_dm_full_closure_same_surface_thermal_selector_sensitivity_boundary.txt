@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_thermal_selector_sensitivity_boundary.py
-runner_sha256: 57a9267997331a3c86b32edf139725724a88a576372e2f3e126749d2b0f4e491
+runner_sha256: 634469c54ea141cc5e40ece3144fdabb2abd4bfc0e1e9338d51e2038fce201bd
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 1.23
+elapsed_sec: 0.53
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,32 +11,34 @@ DM FULL CLOSURE SAME-SURFACE THERMAL SELECTOR SENSITIVITY BOUNDARY
 ========================================================================================
 
 ========================================================================================
-PART 1: BASELINE APPARENT MATCH
+PART 1: BASELINE ON THE COARSE RETAINED GRID (CORRECTED KERNEL)
 ========================================================================================
-  [C] PASS: The coarse retained runner gives an apparent near-match to 9/62  (sigma_base=0.145161097420491, sigma_struct=0.145161290322581)
+  [C] PASS: The coarse retained runner has no crossing on the family: both endpoint images exceed the comparator ratio  (R(alpha_lo)=7.971560233, R(alpha_hi)=8.067168410, R_target=5.447934281)
 
 ========================================================================================
-PART 2: QUADRATURE REFINEMENT DESTROYS THE APPARENT MATCH
+PART 2: QUADRATURE REFINEMENT MOVES THE ENDPOINT IMAGES FAR LESS THAN THEIR GAP TO THE COMPARATOR
 ========================================================================================
-  [C] PASS: Refining the thermal quadrature shifts the selector root by far more than the apparent 9/62 residual  (sigma_2000=0.145161097420491, sigma_4000=0.145600347860581, sigma_8000=0.145584750712540)
-  [C] PASS: The refined roots also move materially away from 9/62  (sigma_8000=0.145584750712540, sigma_16000=0.145580852564623, sigma_struct=0.145161290322581)
+  [C] PASS: At every refinement the family still lies entirely above the comparator: no root at any resolution  (min R(alpha_lo)=7.971519371, min R(alpha_hi)=8.067126827, R_target=5.447934281)
+  [C] PASS: The refinement spread of the endpoint images is negligible next to their gap to the comparator  (spread(alpha_lo)=6.681e-06, spread(alpha_hi)=6.799e-06, gap=2.523585)
 
-  sigma_2000  = 0.145161097420491
-  sigma_4000  = 0.145600347860581
-  sigma_8000  = 0.145584750712540
-  sigma_16000 = 0.145580852564623
-  sigma_9/62  = 0.145161290322581
+  npts=  2000  R(alpha_lo)=7.971519371457  R(alpha_hi)=8.067126826967
+  npts=  4000  R(alpha_lo)=7.971524462429  R(alpha_hi)=8.067132007815
+  npts=  8000  R(alpha_lo)=7.971525734429  R(alpha_hi)=8.067133302271
+  npts= 16000  R(alpha_lo)=7.971526052336  R(alpha_hi)=8.067133625791
+  R_target = 5.447934280746
+  sigma_9/62 = 0.145161290322581  (no root exists on sigma in [0,1], so the clue has no referent)
 
 ========================================================================================
 BOTTOM LINE
 ========================================================================================
   Honest status:
-    - the apparent 9/62 match in the coarse retained thermal runner is not stable
-    - the retained same-surface thermal kernel is not yet numerically converged enough
-      to support a structural selector claim
+    - with the corrected 2 pi kernel the family does not reach the comparator at
+      any quadrature resolution, so there is no selector root to compare with 9/62
+    - the archived apparent 9/62 match and its instability belonged to the
+      half-argument kernel and are superseded
     - so 9/62 must not be promoted as a DM selector law on the current branch
-    - the correct next step is to replace the retained thermal average with a
-      converged or exact thermal theorem before attempting further selector collapse
+    - the exact rational/group skeleton is unaffected; the thermal layer must be
+      re-derived before any selector collapse is attempted
 
 ========================================================================================
 SUMMARY: classified_pass=3 fail=0

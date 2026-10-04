@@ -62,6 +62,9 @@ PStack experiment: dm-coulomb-from-lattice
 """
 
 from __future__ import annotations
+
+# Explicit bounded execution cap; scientific content is unchanged by this metadata.
+AUDIT_TIMEOUT_SEC = 120
 import sys
 import time
 import math
@@ -402,12 +405,17 @@ log("  Green's function.")
 log()
 
 def sommerfeld_analytic(alpha_eff_val, v):
+    # Corrigendum 2026-09-30: for the RELATIVE speed v (reduced mass m/2,
+    # k = mu*v) the s-wave Coulomb factor is 2*pi*zeta/(1 - exp(-2*pi*zeta)),
+    # zeta = alpha/v.  The earlier pi*zeta form is half the correct argument
+    # (it is the textbook formula in terms of the per-particle CM speed v/2).
+    # See scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py.
     if abs(v) < 1e-15:
         return 0.0
     zeta = alpha_eff_val / v
     if abs(zeta) < 1e-10:
         return 1.0
-    return (PI * zeta) / (1.0 - np.exp(-PI * zeta))
+    return (2.0 * PI * zeta) / (1.0 - np.exp(-2.0 * PI * zeta))
 
 v_rel = 2.0 / math.sqrt(25)
 zeta = alpha_eff / v_rel

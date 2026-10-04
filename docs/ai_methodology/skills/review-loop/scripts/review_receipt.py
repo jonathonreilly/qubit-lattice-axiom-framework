@@ -20,6 +20,33 @@ def require(condition, message):
         raise ValueError(message)
 
 
+def declared_review_timeout_for(repo, cache, runner):
+    """Resolve an explicit review cap without changing audit runtime policy."""
+    repo = repo.resolve()
+    source_cap = cache.declared_timeout_for(runner)
+    if source_cap is not None:
+        return source_cap
+    try:
+        path = repo_file(repo, Path(runner).as_posix())
+        # A literal invalid cap must not be repaired by a sidecar silently.
+        if cache.TIMEOUT_HEADER_RE.search(path.read_text()):
+            return None
+        declarations = read_json(repo_file(
+            repo, 'docs/audit/data/runner_timeout_declarations.json').read_bytes())
+        if type(declarations.get('schema_version')) is not int or declarations['schema_version'] != 1:
+            return None
+        entry = declarations.get('runners', {}).get(Path(runner).as_posix())
+        if not isinstance(entry, dict):
+            return None
+        cap = entry.get('timeout_sec')
+        if (type(cap) is not int or cap <= 0
+                or entry.get('source_sha256') != digest(path.read_bytes())):
+            return None
+        return cap
+    except (OSError, ValueError, TypeError, AttributeError):
+        return None
+
+
 def require_current_parent(repo, graph, ids, dependency):
     """Permit dated premise aliases only for the registry-selected current source.
 
@@ -275,6 +302,8 @@ def check(repo, record, require_cache=False):
     for ref in reviewer['references']:
         evidence(ref)
     required_tools = {'docs/audit/scripts/build_citation_graph.py', 'docs/audit/scripts/static_pipeline_checkpoint.py', 'scripts/runner_cache.py', 'scripts/audit_packet_script_deps.py', 'docs/audit/scripts/ledger_io.py'}
+    if (repo / 'docs/audit/data/runner_timeout_declarations.json').exists():
+        required_tools.add('docs/audit/data/runner_timeout_declarations.json')
     require(required_tools <= categories['tooling'], 'repository preflight API hashes must be bound as tooling inputs')
     for name in ('docs/audit/data/axiom_premise_nodes.json', 'docs/audit/data/doc_authority_registry.json'):
         if (repo / name).exists():
@@ -317,7 +346,7 @@ def check(repo, record, require_cache=False):
                 require_current_parent(repo, graph, ids, dependency)
             require(isinstance(note['dependency_rationale'], str) and note['dependency_rationale'].strip(), 'dependency rationale required, including empty dependency lists')
             for runner in {primary} | helpers:
-                require(cache.declared_timeout_for(runner), f'runner timeout missing: {runner}')
+                require(declared_review_timeout_for(repo, cache, runner), f'runner timeout missing: {runner}')
                 declared_inputs = cache.declared_input_paths(runner)
                 require(declared_inputs != (), f'invalid input declaration: {runner}')
                 require(set(declared_inputs or ()) <= bound.keys(), f'undeclared receipt input: {runner}')

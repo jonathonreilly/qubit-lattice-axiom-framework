@@ -3,7 +3,7 @@ runner: scripts/frontier_ckm_down_type_scale_convention_support.py
 runner_sha256: 3d922cc99109cbd5426f66c50d24b422a5446519c8bcd5bb49d9c0423acfaf38
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.39
+elapsed_sec: 0.53
 status: ok
 ----- stdout -----
 CKM DOWN-TYPE FIVE-SIXTHS ALGEBRA AND SHARED-TRANSPORT COVARIANCE

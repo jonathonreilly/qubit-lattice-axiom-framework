@@ -46,6 +46,28 @@ positive mechanism candidate — conditional on A1 equipartition + P1
 
 ---
 
+
+## Landing correction to the comparator (2026-10-04)
+
+The common-scale diagnostic uses four-loop mass/coupling running with
+explicit **two-loop** bottom-threshold coupling and strange-mass matching:
+`m_s^(4)(mb) = [1 + (89/432)(alpha_s^(5)(mb)/pi)^2] m_s^(5)(mb)`.
+It is a mixed-truncation diagnostic, not a fully matched four-loop prediction;
+three-loop decoupling and truncation/systematic uncertainties remain open.
+The earlier precise numbers below omitted strange-mass matching and are
+superseded by the corrected runner. The mismatch remains about 19%.
+The quoted PDG-2024 quark-mass errors are **90% confidence halfwidths**;
+combining them with the 68% coupling error in quadrature measures sensitivity,
+not a one-sigma significance or a joint statistical rejection. Any “16 sigma”
+reading below is withdrawn. Ratio scale invariance applies to a common,
+fixed-flavour, mass-independent QCD theory. The SM example only checks its
+sampled scales in a supplied truncated one-loop flow (fixed tau Yukawa,
+imported initial data, no threshold matching); it supplies no all-scale bound.
+Mixed-scale root fits are restricted to the bracket `[1.3,8] GeV`; a root below
+that bracket is not evaluated without charm matching.
+Source for decoupling conventions: [RunDec, Eqs. 20 and 28](https://arxiv.org/pdf/hep-ph/0004189).
+No framework coefficient, exponent or scale is derived by this comparison.
+
 ## §0 Scope correction (amendment 2026-04-18)
 
 **This note's original outcome framing was overly strong and is corrected
@@ -838,6 +860,26 @@ closes it scope-limitedly as falsified. The two notes are consistent:
 the CKM-dual note explicitly disclaims "closure of the absolute bottom
 scale" as out of scope. The positive mechanism for the absolute scale is
 the Fourier-basis circulant spectrum of §5.2.
+
+## Corrigendum (2026-09-30)
+
+**What was wrong.** §5.4 says the CKM-dual `m_s/m_b` prediction "matches the
+threshold-local self-scale observed ratio to +0.2%" and calls that the dual
+note's success. That comparator divides the strange mass at 2 GeV by the bottom
+mass at its own mass. The ratio of two MS-bar masses at one energy is
+energy-independent, so the scale-consistent test is at one common scale, and
+there (four-loop QCD running, PDG 2024 inputs `m_s(2 GeV) = 93.5(8) MeV`,
+`m_b(m_b) = 4.183(7) GeV`, `alpha_s(M_Z) = 0.1180(9)`) the prediction misses
+`m_s(m_b)/m_b(m_b) = 0.018878` by `+18.6% +- 1.2%`; the exponent that fits is
+`0.7975`, not `5/6`. The `+0.2%` is a mixed-scale convention coincidence, not a
+success.
+
+**What still stands.** The scope statement of §5.4: the dual note is a
+mass-ratio lane and does not close the absolute `m_b` scale, and nothing in
+this note's no-go result depends on the `+0.2%`. The status of this note is
+unchanged; audit status remains with the independent audit lane. Full table and
+evidence: `CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`
+(Corrigendum).
 
 ---
 

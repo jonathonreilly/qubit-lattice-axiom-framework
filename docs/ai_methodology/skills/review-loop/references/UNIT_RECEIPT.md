@@ -129,10 +129,18 @@ replace every placeholder and include complete file/input lists.
   and in `inputs.parents`. Empty dependencies are legitimate with an explicit
   rationale. The checker never invents premise links from contextual references.
 - The helper list matches actual graph/packet closure. Each runner declares a
-  timeout; all literal declared inputs are readable and bound. An absent input
+  timeout, either in its source or as an explicit per-runner source-SHA-bound
+  entry in `docs/audit/data/runner_timeout_declarations.json`. There is no
+  implicit default in this contract. Source edits invalidate sidecar entries;
+  source declarations take precedence. Bind the sidecar as a tooling input
+  when present so the preflight rechecks its disk and index bytes. These entries
+  avoid metadata edits to widely imported unchanged science helpers; they do
+  not change the required cap, scientific scope or execution freshness checks.
+  The fallback belongs to review tooling; audit runtime policy is unchanged.
+  All literal declared inputs are readable and bound. An absent input
   declaration differs from an invalid empty/dynamic declaration. This validates
-  declared closure, not arbitrary Python I/O. Check the actual cache API's
-  `declared_timeout_for` for every primary and discovered helper before freezing
+  declared closure, not arbitrary Python I/O. Check the actual receipt API's
+  `declared_review_timeout_for` (which first uses the cache API's source declaration) for every primary and discovered helper before freezing
   or executing the unit; a fresh existing cache does not establish this required
   metadata. Apply any justified metadata correction before capturing evidence.
 - `reviewer.references` binds execution receipts, independent controls, external

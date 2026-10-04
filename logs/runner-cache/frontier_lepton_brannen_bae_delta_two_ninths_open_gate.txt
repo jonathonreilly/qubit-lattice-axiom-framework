@@ -3,7 +3,7 @@ runner: scripts/frontier_lepton_brannen_bae_delta_two_ninths_open_gate.py
 runner_sha256: a5cedba72987cc5090801ef105ebbb9a138138a2a367a1360b7e4b1f0413977e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.30
 status: ok
 ----- stdout -----
 Charged-lepton Brannen-BAE delta=2/9 open gate

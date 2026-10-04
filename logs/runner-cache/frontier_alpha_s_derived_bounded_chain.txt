@@ -3,7 +3,7 @@ runner: scripts/frontier_alpha_s_derived_bounded_chain.py
 runner_sha256: 4d573811f07f392dd17f5ad4a84c4c0d131eeacd17caf5dcd742f6c810686276
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.10
 status: ok
 ----- stdout -----
 ============================================================================

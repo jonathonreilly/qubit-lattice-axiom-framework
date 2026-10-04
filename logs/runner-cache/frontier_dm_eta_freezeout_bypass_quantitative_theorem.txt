@@ -3,7 +3,7 @@ runner: scripts/frontier_dm_eta_freezeout_bypass_quantitative_theorem.py
 runner_sha256: 280cf0c11826eb37fbc8931cd450b5a13d90bcfce2f588392cc820988b51baf4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 

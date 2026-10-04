@@ -3,7 +3,7 @@ runner: scripts/frontier_complete_prediction_chain.py
 runner_sha256: e5abb0dd1735111a5ed5cd8ac3069ba66a3c6c59715ec59b4565b1c7ef87f446
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.03
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 ==============================================================================

@@ -1,5 +1,9 @@
 # Quark Generation-Stratified Ward Free-Matrix No-Go
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+
+
 **Date:** 2026-04-28
 
 **Status:** proposed_no_go exact negative boundary for Lane 3 target 3C.

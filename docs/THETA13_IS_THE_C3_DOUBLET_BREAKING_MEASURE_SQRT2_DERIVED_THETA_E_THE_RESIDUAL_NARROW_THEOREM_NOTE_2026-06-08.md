@@ -6,6 +6,46 @@
 **Primary runner:** [`scripts/theta13_is_c3_doublet_breaking_sqrt2_charged_lepton_runner.py`](../scripts/theta13_is_c3_doublet_breaking_sqrt2_charged_lepton_runner.py)
 **Cached output:** [`logs/runner-cache/theta13_is_c3_doublet_breaking_sqrt2_charged_lepton_runner.txt`](../logs/runner-cache/theta13_is_c3_doublet_breaking_sqrt2_charged_lepton_runner.txt)
 
+## Corrigendum (2026-09-30)
+
+Source-scope correction. Status fields above are unchanged; effective status
+stays with the independent audit lane. Checks are same-family (Claude Sonnet
+5.5), not an independent referee.
+
+The relation `sin theta_13 = sin theta_e / sqrt2` is exact for the stated
+construction (`PMNS = U_e^dag U_nu`, real 1-2 rotation `theta_e`,
+`U_nu = (xi, W, eta)`) and stands. Three statements around it need this scope:
+
+- **"The only missing number is `theta_e`"** (What this advances). With a real
+  `theta_e = 12.16 deg`, the PMNS solar angle of the same construction is
+  `s12^2 = 0.2005` (0.4813 for the opposite sign of `theta_e`), outside the
+  NuFIT-6.1 3-sigma range [0.2893, 0.3295] the repository already quotes
+  (`PMNS_DCP_FORECAST_STANDING_DEGRADES_UNDER_NUFIT6_BOUNDED_NOTE_2026-06-08.md`,
+  line 28). Once `theta_e != 0` the second PMNS column is no longer trimaximal.
+  Reaching mid-range `s12^2` needs a second parameter, a relative phase of about
+  77 degrees in the 1-2 rotation, which the note does not name.
+- **"The framework derives the trimaximal column (TM2)"** (Audit context). Without
+  the charged-lepton rotation the TM2 sum rule is `s12^2 = 1/(3 c13^2)`, at least
+  `1/3` for every `s13^2` and 0.3409 at `s13^2 = 0.0222`, also outside that range.
+  arXiv:2512.03809 (Ding, Li, Lu, Petcov; the statement is in the body text, not
+  the abstract) reports the TM2-type patterns disagree with the first JUNO
+  `sin^2 theta_12` measurement at the 3.6 sigma level. See the Corrigenda in
+  `PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md`
+  and
+  `PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md`.
+- **"`theta_13` is the free TM2 parameter"** (Audit context). It is free for the
+  record dephasing alone. The TM2 package of the cited notes also carries the
+  `mu`-`tau` residual; realised as the unitary invariance `[M_nu, P_23] = 0`
+  it forces `theta_13 = 0` (Corrigendum in the magic-residual note). Here
+  `theta_13` comes from the charged-lepton rotation acting on the tribimaximal
+  `U_nu`, which is itself the `V_4` case with `theta_13 = 0`.
+
+TM1 (first column `xi`) is a literature pattern the same paper finds inside the
+JUNO 3-sigma range; this repository does not supply it, and nothing here adopts
+it as a framework result. Evidence:
+`scripts/pmns_tm2_scope_check_solar_angle_outside_nufit61_and_v4_commutant_forces_theta13_zero_2026_09_30.py`
+(26 PASS, 0 FAIL).
+
 ## Audit context
 
 The framework derives the **trimaximal column** (TM2) — the neutrino records einselect the C₃ singlet

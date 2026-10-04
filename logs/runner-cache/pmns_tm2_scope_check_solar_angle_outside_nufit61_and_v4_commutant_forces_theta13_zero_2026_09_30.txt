@@ -1,0 +1,53 @@
+===== runner cache v1 =====
+runner: scripts/pmns_tm2_scope_check_solar_angle_outside_nufit61_and_v4_commutant_forces_theta13_zero_2026_09_30.py
+runner_sha256: 3b6fe7dd3b1df6be4068b704fdcae6b28128ad8d655b48602bf5364a9f7b750a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.12
+status: ok
+----- stdout -----
+============================================================================
+PMNS TM2 SCOPE CHECK: solar angle vs NuFIT-6.1, and V4 commutant => theta13 = 0
+============================================================================
+
+(A) TM2 solar angle s12^2 = 1/(3 c13^2) against the repo-quoted NuFIT-6.1 rectangle
+  [PASS] TM2 at s13^2 = 0.0222 gives s12^2 = 0.3409, above the 3-sigma top 0.3295  (s12^2=0.34090, range=[0.2893,0.3295])
+  [PASS] across the whole quoted s13^2 range TM2 gives s12^2 in [0.3404, 0.3416], all outside  ([0.34036,0.34160])
+  [PASS] for EVERY s13^2 in [0,0.6] the TM2 sum rule gives s12^2 >= 1/3 > 0.3295  (minimum 1/3 at s13^2 = 0)
+  [PASS] a trimaximal electron-row entry 1/3 lies outside the image of the rectangle at every mass position (nu1, nu2, nu3)  (|Ue1|^2 in [0.6543,0.6960], |Ue2|^2 in [0.2823,0.3227], |Ue3|^2 in [0.02064,0.02420])
+
+(B) V4 = <S, P23>: commutant, electron row, theta13
+  [PASS] <S,P23> is the Klein four-group (order 4, abelian, involutions)
+  [PASS] Hermitian commutant of S alone has real dimension 5 (1 + 2x2 block)  (dim=5)
+  [PASS] Hermitian commutant of P23 alone has real dimension 5  (dim=5)
+  [PASS] Hermitian commutant of V4 has real dimension 3  (dim=3)
+  [PASS] that commutant is exactly span{P_W, P_xi, P_eta}
+  [PASS] every non-degenerate V4-invariant M has electron row |U_ej|^2 = {0, 1/3, 2/3}  (3000 samples, patterns=[(0.0, 0.33333333, 0.66666667)])
+  [PASS] hence the TM2 ordering gives s13^2 = 0, s12^2 = 1/3, s23^2 = 1/2 (tribimaximal), never 0.022  (max s13^2=2.69e-23)
+  [PASS] the runner's own V4-symmetrised M_nu (seed 7): trimaximal column and equal mu,tau rows, but electron row (0,1/3,2/3)  (electron row=[0.0, 0.333333, 0.666667])
+  [PASS] a V4-invariant M with a degenerate doublet block has a repeated eigenvalue (two equal masses) and every rotated doublet basis is an eigenbasis: theta13 is then not fixed by M  (eigenvalues=[0.7, 1.3, 1.3], |U_e3|^2 = (2/3) sin^2(phi) for any phi)
+  [PASS] record dephasing D applied to M commuting with S.P23 gives an operator commuting with S, S.P23 and P23 (V4)
+  [PASS] its electron row is (0, 1/3, 2/3): theta13 = 0 again (the record does not supply a TM1-type pattern)  ([0.0, 0.333333, 0.666667])
+
+(C) what would keep theta13 free: [M,S]=0 plus an ANTIUNITARY mu-tau reflection (not supplied)
+  [PASS] with the antiunitary reflection and [M,S]=0, theta13 in the data window occurs (so theta13 is free there)  (393 of 20000 samples)
+  [PASS] in that family s23^2 = 1/2 and |sin delta| = 1 exactly
+  [PASS] but s12^2 = 1/(3 c13^2) in [0.3404, 0.3416]: still outside the NuFIT-6.1 3-sigma range  (s12^2 in [0.34038,0.34160])
+
+(D) the runner's 'theta13 proxy' (part E of the magic-residual runner)
+  [PASS] the runner's witness is found (seed 3); its proxy value is the global minimum 0.0213  (min=0.0213)
+  [PASS] that minimum sits in the tau row, not the electron row  (row of minimum=2 (0=e,1=mu,2=tau))
+  [PASS] the witness's electron-row minimum is 0.279, far outside the band 0.015-0.030 (|U_e3|^2 is not 0.0213)  (electron row=[0.3878, 0.3333, 0.2789])
+  [PASS] the witness commutes with S only: its mu and tau rows differ (no mu-tau residual)
+  [PASS] an S-commuting operator (no P23) reaches s13^2 = 0.0222 with the trimaximal column, and then s12^2 = 0.3409, outside the range  (s13^2=0.02220, s12^2=0.34090)
+
+(E) theta13 note: PMNS = R12(theta_e)^T (xi, W, eta)
+  [PASS] |U_e3| = sin(theta_e)/sqrt2 holds exactly (the note's sqrt2 relation is right)  (theta_e at s13^2=0.0222: 12.16 deg)
+  [PASS] with a real theta_e the PMNS solar angle is 0.2005 (or 0.4813 for the other sign): both outside [0.2893,0.3295]; the second column is no longer trimaximal  (s12^2=0.2005 / 0.4813)
+  [PASS] a second (phase) parameter of about 77 degrees would be needed to reach mid-range s12^2; the note names theta_e as the only residual  (phi=77.0 deg for s12^2=0.3094)
+============================================================================
+TOTAL: PASS=26 FAIL=0
+VERDICT: TM2 solar angle is outside the repo-quoted NuFIT-6.1 range at every s13^2; a V4-invariant (unitary P23) M forces theta13 = 0; the runner's theta13 proxy is not |U_e3|^2.
+
+----- stderr -----
+

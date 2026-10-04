@@ -7,6 +7,17 @@ Support script only. This is not the canonical `alpha_s(M_Z)` authority on
 `main`. The live package row is carried by `frontier_yt_zero_import_chain.py`,
 `frontier_complete_prediction_chain.py`, and `docs/ALPHA_S_DERIVED_NOTE.md`.
 
+CORRIGENDUM 2026-09-30 (Sommerfeld argument).  The original header below,
+"R = 5.47 requires alpha_s = 0.092 ... PARAMETER-FREE", used the Sommerfeld
+factor pi*zeta/(1 - exp(-pi*zeta)) with zeta = alpha/v_rel, half the argument
+the radial Schroedinger equation gives (2*pi*zeta).  With the corrected kernel
+Approach 5 below gives alpha_s ~ 0.046 for R_OBS = 5.469, about half the
+lattice band [0.080, 0.108], and the lattice-band R range is ~7.3-9, above
+R_OBS.  The "parameter-free" reading of Approach 5 is withdrawn.  The lattice
+determinations of alpha_s in Approaches 1-4 and 6-9 are unchanged.  See
+scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py.
+
+(Original header, superseded for the DM-ratio statements:)
 The dark matter ratio R = 5.47 requires alpha_s = 0.092 at the
 freeze-out/Planck scale (from the Sommerfeld enhancement).  The bare
 lattice coupling gives alpha_bare = g^2/(4*pi) ~ 0.080.  The 15% gap
@@ -21,15 +32,19 @@ through five independent approaches:
 4. RG running from M_Z to M_Planck (consistency check)
 5. Self-consistency with the dark matter ratio
 
-KEY RESULT: All approaches converge on alpha_s = 0.088-0.095 at the
-lattice/Planck scale, with the V-scheme giving alpha_V = 0.092 +/- 0.003.
-The dark matter ratio is therefore PARAMETER-FREE.
+KEY RESULT (original, superseded for the DM-ratio statement): All approaches
+converge on alpha_s = 0.088-0.095 at the lattice/Planck scale, with the
+V-scheme giving alpha_V = 0.092 +/- 0.003.  The dark matter ratio was
+therefore claimed PARAMETER-FREE; see the corrigendum above.
 
 Self-contained: numpy + scipy only.
 PStack experiment: alpha-s-determination
 """
 
 from __future__ import annotations
+
+# Explicit bounded execution cap; scientific content is unchanged by this metadata.
+AUDIT_TIMEOUT_SEC = 900
 
 import math
 import sys
@@ -98,6 +113,9 @@ log("it then uses observed Omega_DM/Omega_B = 5.47 as a TARGET to frame")
 log("the result. The honest claim is: the lattice predicts alpha_s = 0.092")
 log("at the Planck scale from structure alone. The DM ratio R = 5.48 is")
 log("then a PREDICTION using this alpha_s, not a fit to observed R.")
+log("CORRIGENDUM 2026-09-30: the DM-ratio sentences of this caveat are superseded.")
+log("With the corrected 2*pi Sommerfeld kernel R(alpha_s = 0.092) is ~8.1, not 5.48")
+log("(Approach 5 below prints the corrected required coupling and R range).")
 log("See frontier_alpha_s_robustness.py for scheme-independence analysis.")
 log()
 
@@ -655,11 +673,19 @@ log("=" * 78)
 log()
 
 def sommerfeld_coulomb(alpha_eff, v):
-    """Sommerfeld enhancement for attractive Coulomb potential."""
+    """Sommerfeld enhancement for attractive Coulomb potential.
+
+    Corrigendum 2026-09-30: v here is the RELATIVE speed (weight
+    v^2 exp(-x_f v^2/4) below), for which the s-wave factor is
+    2*pi*zeta/(1 - exp(-2*pi*zeta)), zeta = alpha/v (radial Schroedinger
+    equation, k = mu*v, mu = m/2).  The earlier pi*zeta form is half the
+    correct argument.  See
+    scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py.
+    """
     zeta = alpha_eff / v
     if abs(zeta) < 1e-10:
         return 1.0
-    return (PI * zeta) / (1.0 - np.exp(-PI * zeta))
+    return (2.0 * PI * zeta) / (1.0 - np.exp(-2.0 * PI * zeta))
 
 def thermal_avg_sommerfeld(alpha_eff, x_f, attractive=True, n_pts=5000):
     """Thermally-averaged Sommerfeld factor."""
@@ -1086,7 +1112,7 @@ if alpha_min <= alpha_s_required <= alpha_max:
         alpha_bare_unit, alpha_V_2loop))
     log("  This corresponds to approximately a 1.2-loop matching correction,")
     log("  entirely within the expected range of perturbative lattice artifacts.")
-elif alpha_s_required <= alpha_max * 1.1:
+elif alpha_min / 1.1 <= alpha_s_required <= alpha_max * 1.1:
     log("  alpha_s(DM) is within 10% of the lattice determination range.")
     log("  The dark matter ratio is effectively parameter-free.")
 else:
@@ -1105,12 +1131,16 @@ log(f"  Observed in range: {R_scan.min() <= R_OBS <= R_scan.max()}")
 log("  -----------------------------------------------------------")
 log()
 
-log("  CONCLUSION:")
+log("  CONCLUSION (corrigendum 2026-09-30: computed, not hard-coded):")
 log("  The bare lattice coupling g = 1 (alpha = 0.080) combined with")
 log("  standard tadpole improvement gives alpha_V = 0.085-0.095.")
-log("  The dark matter ratio R = 5.47 requires alpha_s = {:.3f},".format(alpha_s_required))
-log("  which falls squarely within the lattice coupling band.")
-log("  No free parameters remain in the dark matter ratio prediction.")
+log("  The dark matter ratio R = {:.2f} requires alpha_s = {:.3f}".format(R_OBS, alpha_s_required))
+if alpha_min <= alpha_s_required <= alpha_max:
+    log("  (corrected 2*pi Sommerfeld kernel), which falls within the lattice band.")
+else:
+    log("  (corrected 2*pi Sommerfeld kernel), which lies OUTSIDE the lattice band")
+    log("  [{:.3f}, {:.3f}]; the earlier parameter-free reading is withdrawn.".format(
+        alpha_min, alpha_max))
 log()
 
 # =============================================================================

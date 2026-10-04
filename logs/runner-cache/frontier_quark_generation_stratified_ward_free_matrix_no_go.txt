@@ -1,7 +1,7 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_generation_stratified_ward_free_matrix_no_go.py
 runner_sha256: 811cef980de177a55ff6f8d25c3d5b32477afbb546554b5ef04bee67d2209702
-input_fingerprint_sha256: 431b0640fae01b9c1ee020ff254bd75a7a6096b21be46ccc44f4f8626ee4bc22
+input_fingerprint_sha256: 811e955666352d6782366ebca76ae8fc7450184185f36b8338bd6d651d0516a8
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.09

@@ -3,7 +3,7 @@ runner: scripts/frontier_hierarchy_ew_vev_observable_identification_bridge.py
 runner_sha256: 3cda6c27d952d64b7fc84ac65d33f42231b4d18eea060e676062eb710ac5e0b5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.43
 status: ok
 ----- stdout -----
 Section 1: Dimensional fourth-root compression (cited source)

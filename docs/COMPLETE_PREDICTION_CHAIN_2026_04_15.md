@@ -1,5 +1,9 @@
 # Complete Prediction Chain: Cl(3) on Z^3
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+
+
 **Date:** 2026-04-15
 **Status:** support - inventory of the prediction chain composed of upstream proposed and audited rows; this row is not itself a strong derivation claim independent of those upstream rows
 **Scripts:** `scripts/frontier_complete_prediction_chain.py`,
@@ -28,6 +32,117 @@ as outside retention scope by design). See
 [HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md](HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md)
 for the four open primitives P1-P4 and the branch-local route search
 record.
+
+
+
+## Current reproduction boundary (2026-10-04)
+
+The submitted 19,840-configuration, `6^4`, mass-scan and campaign-HMC
+numbers below are **historical reported results whose raw data/code are not
+provided here**. They are not reproduced by the current runner and cannot
+support its PASS. The current own-code run uses three chains of 500 samples,
+discarding ten per chain (1,470 retained), gauge PBC and fermion time APBC on
+`4^4`, at mass 0.1. Its finite covariance and rooted reweighting diagnostics
+have the printed overlap/ESS limits; they are not certified dynamical,
+infinite-volume or physical-VEV predictions. The `Ns=0` linear response is
+not a controlled `Ns=1` extrapolation and does **not** bracket the campaign HMC.
+Exactly at fourth hopping order, `ln det(m+K)` contains
+`[sum_p Re Tr U_p - sum_lines s_mu Re Tr P_line]/(8 m^4)` on `L=4`.
+The local plaquette coefficient is positive in the heavy-mass expansion;
+the winding term and higher orders prevent an all-mass monotonicity conclusion.
+The expansion is not justified by mass 0.1. The degree 16 counts block
+Grassmann components; its interpretation as `4 spin x 4 taste` uses the
+supplied staggered realization, not a derived physical species census.
+Only the three hash-bound April ensemble files and the current finite controls
+are reproducible evidence here. All campaign-derived 214 GeV and taste-count
+readouts below are arithmetic on unverified reported inputs. The replacement
+of a pure-gauge measure by a physical matter-inclusive one remains open.
+
+## Landing correction to the comparator (2026-10-04)
+
+The common-scale diagnostic uses four-loop mass/coupling running with
+explicit **two-loop** bottom-threshold coupling and strange-mass matching:
+`m_s^(4)(mb) = [1 + (89/432)(alpha_s^(5)(mb)/pi)^2] m_s^(5)(mb)`.
+It is a mixed-truncation diagnostic, not a fully matched four-loop prediction;
+three-loop decoupling and truncation/systematic uncertainties remain open.
+The earlier precise numbers below omitted strange-mass matching and are
+superseded by the corrected runner. The mismatch remains about 19%.
+The quoted PDG-2024 quark-mass errors are **90% confidence halfwidths**;
+combining them with the 68% coupling error in quadrature measures sensitivity,
+not a one-sigma significance or a joint statistical rejection. Any “16 sigma”
+reading below is withdrawn. Ratio scale invariance applies to a common,
+fixed-flavour, mass-independent QCD theory. The SM example only checks its
+sampled scales in a supplied truncated one-loop flow (fixed tau Yukawa,
+imported initial data, no threshold matching); it supplies no all-scale bound.
+Mixed-scale root fits are restricted to the bracket `[1.3,8] GeV`; a root below
+that bracket is not evaluated without charm matching.
+Source for decoupling conventions: [RunDec, Eqs. 20 and 28](https://arxiv.org/pdf/hep-ph/0004189).
+No framework coefficient, exponent or scale is derived by this comparison.
+
+## Corrigendum (2026-09-30)
+
+**What was wrong.** Section 11.3 says the bounded `5/6` bridge gives
+`V_cb = (m_s/m_b)^{5/6}` "to `0.23%` on the threshold-local self-scale
+comparator". That comparator divides the strange mass at 2 GeV by the bottom
+mass at its own mass. The ratio of two MS-bar masses at one energy is
+energy-independent, so the scale-consistent test is at one common scale. With
+four-loop QCD running and PDG 2024 inputs (`m_s(2 GeV) = 93.5(8) MeV`,
+`m_b(m_b) = 4.183(7) GeV`, `alpha_s(M_Z) = 0.1180(9)`) the bridge prediction
+misses `m_s(m_b)/m_b(m_b) = 0.018878` by `+18.6% +- 1.2%` (about 16 sigma with
+PDG errors, atlas `|V_cb|` taken as exact; `+16.9%` to `+20.4%` across standard
+input sets). The exponent that fits is `0.7975`, not `5/6`.
+
+**Corrected statement.** The `0.23%` is a mixed-scale convention coincidence and
+is not evidence for the bridge; the Section 11.3 clause "full bridge/scale
+closure remains open" stands and is understated. Other rows of this inventory
+are not affected by this correction. The status of this note is unchanged; audit
+status remains with the independent audit lane. Full table and evidence:
+`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md` (Corrigendum).
+
+
+## Corrigendum (2026-09-30): the single computed input is the pure-gauge plaquette, and the `v` match is not a physical agreement
+
+A same-family check from the 2026-09-29 wall campaign, reproduced by the spot
+check in `scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py`
+(details and numbers in the 2026-09-30 corrigendum of
+`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`), found two scope errors in
+how this inventory presents the plaquette and the `v` row. No status label
+here changes and no audit field is touched.
+
+- **The plaquette has no fermions in its measure.** Section 2 calls
+  `<P> = 0.5934` "the unique output of the axiom's own dynamics" and an
+  evaluation on "the SU(3) gauge theory that Cl(3) on Z^3 generates". It is the
+  pure-gauge Wilson plaquette at `beta = 6`, with no dynamical matter. The same
+  chain uses a staggered fermion block (taste count, staircase, Ward identity,
+  the vacuum-polarization channel behind the vertex power), whose modes the
+  plaquette measure leaves out. With one dynamical staggered field (4 tastes) on
+  a `4^4` lattice the plaquette at `beta = 6` rises by about `+0.02` (campaign
+  HMC `+0.0212(11)`; own re-weighting `+0.0062(2)` for 1 taste and `+0.012(1)`
+  for 2), and the hierarchy readout falls from 246.28 GeV to about 214 GeV (about
+  227 to 236 GeV for 1 to 2 tastes). The statements "the `+0.0255 %` match is
+  real and robust on the canonical surface" (Sections 3.2, 8.5 and 9; the same
+  figure appears in 11.6 and 12) therefore hold for the pure-gauge value only. They are not an agreement of the
+  framework with the observed VEV, and the `BOUNDED` label on the `v` row is the
+  correct reading. Small lattice, same-volume difference, rooting and the
+  infinite-volume shift not run.
+- **The licensed number is a reuse number, not a certified Monte Carlo value.**
+  Sections 2, 11.4 and 12 say the plaquette is "computed ... by lattice MC".
+  The chain carries the licensed `0.5934` (admitted reuse number, see
+  `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`). Point estimates of the same quantity:
+  `0.59369(2)` from the repository's own April 2026 ensembles
+  (`outputs/alpha_s_wilson_loop_production/`) and `0.59372(4)` from a reduced
+  wall-campaign run; both about `3e-4` above `0.5934`, no certificate issued. At
+  `0.59369` the `v` readout is 245.80 GeV (`-0.195 %`) and `alpha_s(v)` is
+  0.103279 instead of 0.103304, so the `+0.0255 %` residual changes sign; the
+  shift is inside the `+/- 0.0006` that `YT_ZERO_IMPORT_CHAIN_NOTE.md` quotes for
+  the plaquette. If
+  the fermion-inclusive plaquette above were used, `alpha_s(v)` would be about
+  0.1015 (`-1.7 %`, illustrative arithmetic `1/(4 pi sqrt(P))`). The other rows
+  (`m_t`, `sin^2 theta_W`, `1/alpha_EM`, `y_t`, `m_H`) are not recomputed here and
+  are not asserted unchanged.
+
+Still standing: the inventory role of this note, the `BOUNDED` label on `v`, and
+the open primitives P1 to P4.
 
 ---
 

@@ -1,5 +1,9 @@
 # Quark Mass Ratios from the Taste-Staircase + EWSB Cascade
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+
+
 **Date:** 2026-04-25
 
 **Status:** bounded zero-import support packet for the down-type quark
@@ -29,6 +33,62 @@ lane.
   generation structure from the taste cube.
 - [`OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md`](./OBSERVABLE_PRINCIPLE_FROM_AXIOM_NOTE.md) — hierarchy theorem `v = M_Pl (7/8)^{1/4} alpha_LM^16`.
 - `DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md` — predecessor bounded lane; this note sharpens that route with an explicit zero-import presentation and a cubic-exact NNI consistency check.
+
+
+## Landing correction to the comparator (2026-10-04)
+
+The common-scale diagnostic uses four-loop mass/coupling running with
+explicit **two-loop** bottom-threshold coupling and strange-mass matching:
+`m_s^(4)(mb) = [1 + (89/432)(alpha_s^(5)(mb)/pi)^2] m_s^(5)(mb)`.
+It is a mixed-truncation diagnostic, not a fully matched four-loop prediction;
+three-loop decoupling and truncation/systematic uncertainties remain open.
+The earlier precise numbers below omitted strange-mass matching and are
+superseded by the corrected runner. The mismatch remains about 19%.
+The quoted PDG-2024 quark-mass errors are **90% confidence halfwidths**;
+combining them with the 68% coupling error in quadrature measures sensitivity,
+not a one-sigma significance or a joint statistical rejection. Any “16 sigma”
+reading below is withdrawn. Ratio scale invariance applies to a common,
+fixed-flavour, mass-independent QCD theory. The SM example only checks its
+sampled scales in a supplied truncated one-loop flow (fixed tau Yukawa,
+imported initial data, no threshold matching); it supplies no all-scale bound.
+Mixed-scale root fits are restricted to the bracket `[1.3,8] GeV`; a root below
+that bracket is not evaluated without charm matching.
+Source for decoupling conventions: [RunDec, Eqs. 20 and 28](https://arxiv.org/pdf/hep-ph/0004189).
+No framework coefficient, exponent or scale is derived by this comparison.
+
+## Corrigendum (2026-09-30)
+
+**What was wrong.** Sections 4 and 7 (and the runner's Part 2 description in
+Section 9) report `m_s/m_b` at `+0.20%` and `m_d/m_b` at `+3.51%` against the
+"threshold-local self-scale comparator". Those comparators divide a mass at 2 GeV
+by the bottom mass at `m_b`. The ratio of two MS-bar masses at one energy is
+energy-independent, so the scale-consistent test is at one common scale. With
+four-loop QCD running and PDG 2024 inputs (`m_s(2 GeV) = 93.5(8) MeV`,
+`m_b(m_b) = 4.183(7) GeV`, `alpha_s(M_Z) = 0.1180(9)`), `m_s(m_b)/m_b(m_b) = 0.018878`
+against the prediction `0.02239`: a deviation of `+18.6% +- 1.2%` (about 16 sigma
+with PDG errors, atlas `|V_cb|` taken as exact; `+16.9%` to `+20.4%` across
+standard input sets; `+20.6%` from lattice mass ratios with no running). For
+`m_d/m_b`, with this note's own `m_d/m_s = 4.67/93.4`, the common-scale deviation
+is `+22.5%` (observed `0.000944`, prediction `0.001156`).
+
+**Corrected statement.** The exponent that fits the common-scale `m_s/m_b` is
+`ln|V_cb| / ln(m_s/m_b) = 0.7975`, not `5/6` (at `5/6` the prefactor would have
+to be `1.153`), and it stays `0.79` to `0.80` up to the Planck scale under
+one-loop Standard-Model running. The `+0.20%` needs the strange mass quoted at
+`1.99 GeV`; the same mixed ratio fits `4/5` at `3.9 GeV`. It is a convention
+coincidence, so the `m_s/m_b` `+0.20%` and `m_d/m_b` `+3.51%` entries are
+withdrawn as agreement. `m_d/m_s` is a ratio of two masses at 2 GeV, needs no
+scale convention, and keeps its `+3.30%`. The `|V_cb|` and `|V_us|` rows compare
+the atlas values with measured mixing entries, not mass ratios, and are not
+affected.
+
+**What still stands.** The closed forms, the two algebraically matching
+presentations (Path A and Path B), the cubic-exact NNI self-consistency
+(Section 5) and Section 8 (what this note does not claim), including item 7. The
+status of this note is unchanged by this corrigendum; audit status remains with
+the independent audit lane. Full table and evidence:
+`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md` (Corrigendum). Check:
+`python3 scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py`.
 
 ## 1. Support statement
 

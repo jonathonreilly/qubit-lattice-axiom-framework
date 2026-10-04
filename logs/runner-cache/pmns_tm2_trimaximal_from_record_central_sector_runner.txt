@@ -3,7 +3,7 @@ runner: scripts/pmns_tm2_trimaximal_from_record_central_sector_runner.py
 runner_sha256: 900746c3fbc549f765e636b199ca5b67df2fbf1f02c055aee47b778fc2453128
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.18
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 ========================================================================

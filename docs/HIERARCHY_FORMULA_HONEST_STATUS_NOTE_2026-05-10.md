@@ -50,6 +50,139 @@ note and its own source for overclaim/back-propagation tokens, and
 quarantines all PDG comparators in a terminal class-D section.
 Deterministic, stdlib-only, well under one minute.
 
+
+## Current reproduction boundary (2026-10-04)
+
+The submitted 19,840-configuration, `6^4`, mass-scan and campaign-HMC
+numbers below are **historical reported results whose raw data/code are not
+provided here**. They are not reproduced by the current runner and cannot
+support its PASS. The current own-code run uses three chains of 500 samples,
+discarding ten per chain (1,470 retained), gauge PBC and fermion time APBC on
+`4^4`, at mass 0.1. Its finite covariance and rooted reweighting diagnostics
+have the printed overlap/ESS limits; they are not certified dynamical,
+infinite-volume or physical-VEV predictions. The `Ns=0` linear response is
+not a controlled `Ns=1` extrapolation and does **not** bracket the campaign HMC.
+Exactly at fourth hopping order, `ln det(m+K)` contains
+`[sum_p Re Tr U_p - sum_lines s_mu Re Tr P_line]/(8 m^4)` on `L=4`.
+The local plaquette coefficient is positive in the heavy-mass expansion;
+the winding term and higher orders prevent an all-mass monotonicity conclusion.
+The expansion is not justified by mass 0.1. The degree 16 counts block
+Grassmann components; its interpretation as `4 spin x 4 taste` uses the
+supplied staggered realization, not a derived physical species census.
+Only the three hash-bound April ensemble files and the current finite controls
+are reproducible evidence here. All campaign-derived 214 GeV and taste-count
+readouts below are arithmetic on unverified reported inputs. The replacement
+of a pure-gauge measure by a physical matter-inclusive one remains open.
+
+## Corrigendum (2026-09-30): the plaquette input is the pure-gauge value, and the quenched readout match is not evidence of agreement
+
+Two scope errors were found by the 2026-09-29 wall campaign (an attack and a
+kill check on the hierarchy wall and on the plaquette wall; the checkers share
+a model family with the author, so these are same-family checks, not
+independent referees) and reproduced below by a separate spot check
+(`scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py`).
+Nothing in T1, D1 or C1 changes as arithmetic over the declared inputs. What
+changes is what the comparator residual, the B1 resolution window and F4 may be
+read as.
+
+**(1) The plaquette in B1 has no fermions in its measure; the formula's
+determinant does.** `<P> = 0.5934` is the pure-SU(3) Wilson plaquette (no
+dynamical matter). T1(ii) puts a staggered field on the block, that is fermion
+modes in the measure, but the note carries the pure-gauge plaquette into `u_0`,
+`alpha_LM` and C1 without saying that the two disagree about the measure. That
+is an unlabelled premise, not a derived step. The determinant weights larger
+plaquettes more (hopping expansion: `ln det(m + K)` contains
+`+ (1/(8 m^4)) sum_p Re Tr U_p`; checked exactly in the runner), so with the
+staggered field dynamical the plaquette at fixed `beta` rises, and the readout
+falls with elasticity `-4`.
+
+Spot check (own code, not the campaign's HMC; periodic `4^4`, `beta = 6`,
+one-component staggered operator, mass 0.1; quenched Metropolis ensemble of
+19,840 configurations with plaquette 0.59686(8), re-weighted by `det(D)^Ns`;
+`Ns = 1` is one staggered field = 4 tastes, unrooted). The linear response is
+`cov(P, ln det) = +0.0260(7)` per staggered field (0.0284(8) at mass 0.02,
+0.0123(3) at mass 0.5, 0.0003 at mass 3, where the fermions decouple as the
+hopping expansion predicts). Readout `v_cand` at `0.5934 + dP`:
+
+- 1 taste (`Ns = 1/4`, re-weighted): `dP = +0.0062(2)`, readout 236 GeV
+  (`-4.1 %`), 160 times the quoted `+0.0255 %`.
+- 2 tastes (`Ns = 1/2`, re-weighted, effective sample 116 of 19,840):
+  `dP = +0.0119(11)`, readout 227 GeV (`-7.6 %`, 300 times). The campaign's
+  HMC kill check gave `dP = +0.0072(25)`, readout 235 GeV (`-4.7 %`, 185
+  times); the two differ by 1.7 sigma, so the two-taste readout is 227 to 235 GeV.
+- 4 tastes (`Ns = 1`, one staggered field): the campaign's HMC gives
+  `dP = +0.0212(11)`, readout 214 GeV (`-13 %`, 510 times); the spot check's
+  linear response `+0.026` (208 GeV) brackets it from above. Re-weighting is
+  not reliable at `Ns = 1` on this lattice (effective sample about 3), so this
+  row is bracketed by the spot check, not reproduced by it.
+- 8 and 16 tastes (the DELTA0 E4 count): 193 and 163 GeV (campaign HMC). The
+  species count 16 is not a taste count under this note's own B3b
+  regulator-dependence no-go (staggered: 4 tastes before rooting), and the
+  taste-census note reads the low-energy content of the coarse staggered
+  sector as two tastes of one four-component Dirac field, so these rows are
+  not supported by the repository's own counts.
+
+So with dynamical staggered content in the plaquette measure the readout lies
+about 4 to 16 percent below 246.28 GeV for 1 to 4 tastes, at least 100 times the
+quoted residual; only the pure-gauge plaquette gives 246.28 GeV. Scope of the
+check: one small lattice; `dP` is a same-volume difference added to the quoted
+infinite-volume value; the infinite-volume shift, the rooting and the
+light-mass limit are not run. On `6^4` (440 configurations, mass 0.1; quenched
+plaquette 0.59459(23)) the linear response is `+0.031(3)` against `+0.0260(7)`
+on `4^4`, so it does not shrink with volume there; re-weighting is unusable at
+that size. The mean-field probe
+`HIERARCHY_DELTA0_ATTACHMENT_MEAN_FIELD_FEEDBACK_PROBE_NOTE_2026-06-11.md` puts
+taste modes into a one-link saddle for `u` and finds a small shift; that is a
+different (declared mean-field) model and is not reconciled with the plaquette
+shift found here.
+
+**(1b) What the degree 16 counts.** The `u_0`-degree 16 of T1(ii) is the number
+of Grassmann components per colour of one staggered field on the block
+(`16 = 4 spin x 4 taste`; the runner finds 16 zero modes of the free operator on
+the periodic `4^4` torus). One coupling factor per Dirac flavour would give
+`alpha^4`; `alpha^16` needs one factor per Grassmann component. This does not
+change B4, which stays open (identity (S) is still bookkeeping); it states what
+the missing attachment rule would have to supply.
+
+**(2) The licensed value versus point estimates.** The plaquette authority
+licenses `0.5934` only as an admitted reuse number. Point estimates of the same
+pure-gauge quantity, with their sources: `0.59369(2)` from the repository's own
+April 2026 production ensembles (`outputs/alpha_s_wilson_loop_production/`,
+`12^3 x 24`, `16^3 x 32`, `24^3 x 48`, 500 configurations each, `beta = 6`,
+`1 x 1` space-time loops, recomputed by the runner above with
+Madras-Sokal errors; the three volumes agree, chi-squared 1.0 for 2 degrees of
+freedom), and `0.59372(4)` from a reduced heatbath run at `L = 12` and `16`
+in the wall campaign (code outside the repository). Both lie about `3e-4`
+above `0.5934`. This is not a certificate and does not replace the license: the
+reduced run misses the protocol's grade-4 budget (total 4.3e-5, so `2 sigma` is
+8.5e-5, above 5e-5) and fails its own `L^-4` fit gate (chi-squared 63 for 2 degrees
+of freedom), and the April ensembles have no infinite-volume fit. At
+`<P> = 0.59369` the same formula gives `u_0 = 0.877789`, `alpha_LM = 0.0906568`,
+`K = 2.013285e-17` and `v_cand = 245.80 GeV` (`-0.195 %` from C1, about 8 times
+the quoted residual), and the comparator residual changes sign. `0.59369` is
+inside the `+/- 0.0006` that `YT_ZERO_IMPORT_CHAIN_NOTE.md` quotes for the
+plaquette, so no other number moves by more than that stated uncertainty; but the statements
+listed next assumed `0.5934` is good to `+/- 5e-5`, which the point estimates
+do not support.
+
+**What no longer stands as written.**
+
+- The reading of the `+0.025513 %` residual as sub-resolution in B1 (fenced
+  comparator appendix, item (i)), and the F4 "no admissible tuning" certificate,
+  rest on the pure-gauge plaquette rounding to `0.5934`. They now carry two
+  further unlabelled selections: pure-gauge versus fermionic measure, and the
+  4-decimal value versus the point estimates above. The comparator remains
+  context only; it is not evidence of agreement.
+
+**What still stands.** T1 (species count, determinant degree, the factor
+`(7/8)^(1/4)`, `K` and the elasticities) as exact arithmetic over the declared
+inputs; D1 and C1 as a declared map and readout over the pure-gauge B1 value;
+B2 to B5 open; the demotion of the canonical chain row. No gate is closed, no
+audit status or verdict is changed, and no physical hierarchy scale is
+claimed. Added re-audit trigger: if B1 is re-licensed with the fermion content
+of T1(ii) in the plaquette measure, or at a certified pure-gauge value other than
+`0.5934`, C1, F4 and the fenced comparator appendix must be recomputed.
+
 ## Changelog — A-C-only fourth-root consumer boundary (2026-07-18)
 
 The source theorem cited at S5 has been narrowed at its dimensional part.

@@ -15,6 +15,47 @@ the audited Route-2 readout / time-coupling notes.
 Route-2 readout-to-slice coupling family. Names the missing readout-map
 endpoint triple as the single open theorem target for this row.
 
+
+## Quantifier boundary (2026-10-04)
+
+The all-site identity holds for the stated seven-site stencil inside a
+Dirichlet box containing all six neighbours. Equality of centre and shell
+readouts follows **only when every interpolation stencil avoids the origin**,
+the anchor ignores it, and the required denominators are nonzero. Locality
+alone does not force this: the six-point control touches the origin and leaks
+the spike. The four-point counterexample refutes interpolation-independent
+interpretation of the size-15 rationals; it does not select a physical
+interpolation. The finite sampled ladder fails a plateau test. Any statement
+below that it “does not converge” means that finite diagnostic only; an
+asymptotic nonconvergence theorem is not supplied.
+
+## Corrigendum (2026-09-30)
+
+**What was wrong.** This note names the readout-map endpoint triple
+`(beta_T/alpha_T, alpha_T/alpha_E, beta_E/alpha_E) = (-1, -2, 21/4)` as the
+single open theorem target, as if it were a property of the lattice gravity
+metric waiting to be derived. Its two centre-minus-shell entries (`-1` and
+`21/4`) are not. The centre and shell sources give the same lattice potential
+at every site except the origin, where they differ by exactly `1/6`, and the
+size-15 values come from the repo's global cubic-spline interpolation ringing on
+that one-site spike. With a local interpolation the same readout gives
+`beta_T/alpha_T = beta_E/alpha_E = 0` (`q_T = q_E = 1`, `rho_E = 0`) at every
+box size, size 15 included.
+
+**Corrected statement.** For those two entries there is no field value to
+derive; the sentence naming the missing triple as the next theorem target is
+withdrawn. The middle entry `alpha_T/alpha_E` is a shell-only quantity and is
+not decided by this correction. This corrigendum does not change the row's type
+or any status.
+
+**What still stands.** The exact conditional coupling family, the restricted
+readout class and its algebra, and the inherited non-uniqueness of `P_R`
+(`rho_E = 0` and `rho_E = 21/4` are both admissible maps on the restricted
+class). What is withdrawn is only the description of the triple as a
+derivable property of the field.
+
+**Evidence.** The note `QUARK_ROUTE2_ENDPOINT_TRIPLE_CENTER_MINUS_SHELL_READOUT_IS_A_GLOBAL_CUBIC_SPLINE_ARTEFACT_ON_A_ONE_SITE_SPIKE_BOUNDED_THEOREM_NOTE_2026-09-30.md` proves the identity `phi(e0) - phi(s_unit) = delta_origin / 6` at every site and replays the readout with the interpolation swapped (checker `scripts/frontier_quark_route2_endpoint_triple_center_minus_shell_readout_cubic_spline_artefact_check_2026_09_30.py`, `TOTAL: PASS=24 FAIL=0`). Same-family checks (Claude Sonnet 5.5), no independent referee yet.
+
 ## Audit boundary
 
 This note assembles a conditional Route-2 coupling family on the s3-time

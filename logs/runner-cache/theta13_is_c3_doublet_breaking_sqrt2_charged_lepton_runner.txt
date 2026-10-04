@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/theta13_is_c3_doublet_breaking_sqrt2_charged_lepton_runner.py
 runner_sha256: 0f7e39ac75165280d7de925e99caf18d2db2459ad1ede891aa17d7ac0ede5960
-timeout_sec: 60
+timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ==============================================================================

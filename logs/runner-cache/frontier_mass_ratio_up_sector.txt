@@ -3,7 +3,7 @@ runner: scripts/frontier_mass_ratio_up_sector.py
 runner_sha256: 4f8907237a1c0e38a30eed57d43b5f1cad2028068744967f4cf9077ab9c9733c
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================

@@ -56,7 +56,6 @@ Sets no audit status. PDG values are comparators only.
 """
 from __future__ import annotations
 
-import json
 import os
 
 import numpy as np
@@ -118,7 +117,7 @@ def main():
     check("cross-check gate vs the RETAINED-BOUNDED fixed-locus note: it states the "
           "forced weights (1,2), L_3(1,2)=2/9, the 1/9 contrast, and the core identity "
           "(all located mechanically)",
-          "L₃(1,2)=2/9" in note.replace(" ", "") or "L₃(1,2) = 2/9" in note,
+          "L_C_3(N)=(1/3)(1/3+1/3)=2/9." in "".join(note.split()),
           detail="the chain consumes the landed arithmetic, re-proven above")
 
     # ------------------------------------------------------------------ E2
@@ -189,12 +188,18 @@ def main():
 
     # ------------------------------------------------------------------ E4
     section("E4: the comparator -- m_tau prediction and the fitted-phase residual")
-    check("with r = 1/2 (separate comparator context) and |delta| = 2/9 EXACT, the predicted "
-          "m_mu and m_tau land at the PDG values (m_tau inside about 1 sigma of the "
-          "PDG band; comparator only)",
-          abs(mmu_p1 - mmu) / mmu < 2e-3 and abs(mtau_p1 - mtau_pdg) < 1.2 * dmtau,
-          detail=f"m_mu: pred {mmu_p1:.4f} vs {mmu} ({abs(mmu_p1-mmu)/mmu:.1e}); "
-                 f"m_tau: pred {mtau_p1:.2f} vs {mtau_pdg} +/- {dmtau}")
+    # Fixed-shape agreement must use the precise electron/muon uncertainty;
+    # a loose 0.2% gate masked this discrepancy in the historical runner.
+    ratio_obs = mmu / me
+    ratio_error = ((0.0000023 / me)**2 + (mmu * 0.00000000015 / me**2)**2)**0.5
+    nominal_residual = abs(mmu_p1 / me - ratio_obs) / ratio_error
+    check("the exact r=1/2, delta=2/9 shape FAILS the quoted precise electron/muon comparison",
+          nominal_residual > 100,
+          detail=f"MODEL_MATCH=FAIL; ratio prediction {mmu_p1/me:.9f}, quoted {ratio_obs:.9f}; "
+                 f"nominal error-normalized residual {nominal_residual:.1f} (no posterior significance claim)")
+    check("the older tau comparator alone remains numerically compatible; it does not validate the joint fixed shape",
+          abs(mtau_p1 - mtau_pdg) < 1.2 * dmtau,
+          detail=f"m_tau: pred {mtau_p1:.2f} vs historical {mtau_pdg} +/- {dmtau}")
     # the PDG-fitted phase vs 2/9 (exact circulant inversion, as in the landed anchor)
     lam_data = np.sqrt([me, mmu, mtau_pdg])
     import itertools
@@ -248,7 +253,7 @@ def main():
         "is NOT used anywhere in this chain -- the circularity is bypassed, not resolved": True,
     }
     for k, v in boundaries.items():
-        check(k, v)
+        print("  [SCOPE, NOT SCIENCE PASS] " + k)
 
     # ------------------------------------------------------------------ E6
     section("E6: K-orbit consistency -- the chain supplies exactly the registrable atom")
@@ -277,17 +282,10 @@ def main():
           "(located mechanically; the identity itself is re-verified symbolically above)",
           all(" ".join(f.split()).lower() in korbit_flat for f in korbit_fragments),
           detail="retained_bounded one-hop form authority; same wiring as the R-eta narrowing note")
-    graph_path = os.path.join(docs, "audit", "data", "citation_graph.json")
-    with open(graph_path, encoding="utf-8") as fh:
-        citation_graph = json.load(fh)
-    graph_deps = citation_graph["nodes"][
-        "koide_delta_eta_density_readout_chain_bounded_theorem_note_2026-06-09"
-    ]["deps"]
-    check("generated citation graph includes the retained_bounded K-orbit authority as "
-          "a load-bearing dependency edge for this repaired note",
-          "tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09"
-          in graph_deps,
-          detail=f"deps={graph_deps}")
+    check("source note explicitly links the supplied K-orbit form used above",
+          "](TIER_A_KORBIT_DETERMINANT_AND_ORIENTATION_INVARIANCE_BOUNDED_NOTE_2026-06-09.md)"
+          in this_note,
+          detail="source wiring only; generated graph or audit status supplies no mathematical premise")
 
     # ------------------------------------------------------------------ E7
     section("E7: honest conditionality and falsifiers")
@@ -298,13 +296,13 @@ def main():
         "only unless separately landed. NOT unconditional; R-eta is the owner/audit decision": True,
         "ZERO new numbers consumed: R-eta is a class identification; 2/9 is retained "
         "arithmetic; PDG values are labeled comparators": True,
-        "FALSIFIER: a tighter m_tau measurement pulling the fitted phase away from 2/9 "
-        "(current residual 7.4e-6 absolute; the chain dies if it grows with precision)": True,
+        "The exact fixed shape already misses the precise electron/muon pair; a tighter m_tau measurement may also pull the fitted phase away from 2/9 "
+        "(historical fitted-phase residual 7.4e-6 absolute; tau compatibility does not rescue the joint shape)": True,
         "the Callan-Harvey 2/N^2 = 2/9 is a DISTINCT object (proven distinct in-repo; "
         "coincides only at d = 3) -- recorded as consistency, not consumed": True,
     }
     for k, v in scope.items():
-        check(k, v)
+        print("  [SCOPE, NOT SCIENCE PASS] " + k)
 
     # ------------------------------------------------------------------ E8
     section("E8: period-fork diagnostic -- period-1 adds no import beyond supplied R-eta")
@@ -346,7 +344,7 @@ def main():
     check("counterfactual boundary: had the masses matched the pi-row, this chain could "
           "not have absorbed that result by convention; it would require a new retained "
           "readout context or would falsify this R-eta chain",
-          True, detail="the comparator agreement supports R-eta but does not derive it")
+          True, detail="tau-only compatibility does not validate the exact joint shape or derive R-eta")
 
     print("\n" + "=" * 88)
     print(f"SUMMARY: PASS={PASS} FAIL={FAIL}")

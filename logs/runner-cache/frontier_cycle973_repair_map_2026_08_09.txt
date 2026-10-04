@@ -4,7 +4,7 @@ runner_sha256: dd3855113912284f47be48ef2d1293abe5b2d03f59d34740be1190662457e019
 input_fingerprint_sha256: fbf6706058f4c3b6e4f25d49c41913e0caa91ce5be82e3935af3e9bf9ca9a30d
 timeout_sec: 300
 exit_code: 0
-elapsed_sec: 0.64
+elapsed_sec: 0.84
 status: ok
 ----- stdout -----
 PASS A_PINNED_SNAPSHOT :: commit=323d7fc32d77598f74ea6cd4d30c38dda0fe5070; objects={"docs_tree":"7dbc99ea9bb07250a72fff4722d37cdc1c573daf","scripts_tree":"b74e1639fc2a2250c0de2a56ad33665533a22c81","snapshot_commit":"323d7fc32d77598f74ea6cd4d30c38dda0fe5070","snapshot_tree":"45f8bd67eedaccb34918cb6804e850e1ba7f21fb"}; working_tree_corpus_reads=0

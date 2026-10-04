@@ -1,5 +1,9 @@
 # Dark Matter and Lepton Sector — Synthesis Note
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+
+
 **Date:** 2026-04-19  
 **Branch:** `frontier/dm-leptons-review`  
 **Status:** support - structural or confirmatory support note
@@ -182,6 +186,20 @@ M_N_target / M1 = 4.002
 power k_target = 7.44, between the integer lattice nodes k=7 (M3 scale,
 6.15 × 10¹¹ GeV) and k=8 (M1 scale, 5.58 × 10¹⁰ GeV). The transport
 gap is NOT closeable by a single ALPHA_LM integer power step.
+
+### Corrigendum (2026-09-30): Section 3.3
+
+The heading and first sentence below ("N1 ... is the framework's DM candidate") are wrong. Section 3.2 gives the
+washout parameter `k_decay = K = Gamma_D / H(T = M1) = 47.24` for `M1 = 5.323e10 GeV`. With
+`H(T = M1) = 1.66 sqrt(g_*) M1^2 / M_Pl = 3.98e3 GeV` (`g_* = 106.75`) this is `Gamma = 47.24 H = 1.88e5 GeV`, i.e. a
+lifetime `tau = hbar / Gamma = 3.5e-30 s`, about `8e-48` of the age of the universe. N1 is the leptogenesis parent
+and decays at once; it cannot be dark matter. The lane's other candidates are not consistent with it or with each
+other: the April "two gauge singlets" do not exist in the base x fibre embedding the mass step uses (no taste state
+is a gauge singlet; smallest eigenvalue of `C_3 + C_2` is `0.75`), and the 3.94 TeV state carries colour there. The
+three-candidate conflict is conditional on that embedding, an unaudited input. Evidence:
+`scripts/dm_dark_candidate_consistency_check.py` (a same-family check by its author; the lifetime is arithmetic on
+this note's supplied inputs). What stands: the Davidson-Ibarra bound, the transport numbers, and the mass `M1`
+as a leptogenesis-source mass. No audit verdict, effective status or status field is changed by this corrigendum.
 
 ### 3.3 DM candidate status
 

@@ -1,5 +1,10 @@
 # Mass Spectrum Derived — Five-Phase Attack Closure
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+**Primary runner:** `scripts/koide_exact_pair_pole_mass_precision_check_2026_09_30.py`
+
+
 **Date:** 2026-04-19
 **Status:** bounded - bounded or caveated result note
 lane on `main`. Mixed closure: two bounded quark phases (Phase 1 down-type
@@ -9,6 +14,63 @@ one bounded/conditional cosmology cascade (Phase 5).
 **Attack plan:** `/Users/jonBridger/.claude/plans/zesty-nibbling-pretzel.md`
 **Framework convention:** "axiom" means only the single framework
 axiom `Cl(3)` on `Z^3`.
+
+
+## Landing correction to the comparator (2026-10-04)
+
+The common-scale diagnostic uses four-loop mass/coupling running with
+explicit **two-loop** bottom-threshold coupling and strange-mass matching:
+`m_s^(4)(mb) = [1 + (89/432)(alpha_s^(5)(mb)/pi)^2] m_s^(5)(mb)`.
+It is a mixed-truncation diagnostic, not a fully matched four-loop prediction;
+three-loop decoupling and truncation/systematic uncertainties remain open.
+The earlier precise numbers below omitted strange-mass matching and are
+superseded by the corrected runner. The mismatch remains about 19%.
+The quoted PDG-2024 quark-mass errors are **90% confidence halfwidths**;
+combining them with the 68% coupling error in quadrature measures sensitivity,
+not a one-sigma significance or a joint statistical rejection. Any “16 sigma”
+reading below is withdrawn. Ratio scale invariance applies to a common,
+fixed-flavour, mass-independent QCD theory. The SM example only checks its
+sampled scales in a supplied truncated one-loop flow (fixed tau Yukawa,
+imported initial data, no threshold matching); it supplies no all-scale bound.
+Mixed-scale root fits are restricted to the bracket `[1.3,8] GeV`; a root below
+that bracket is not evaluated without charm matching.
+Source for decoupling conventions: [RunDec, Eqs. 20 and 28](https://arxiv.org/pdf/hep-ph/0004189).
+No framework coefficient, exponent or scale is derived by this comparison.
+
+## Corrigendum (2026-09-30)
+
+**What was wrong.** Phase 1 and the "Retained vs bounded vs conditional" and
+"Safe wording" sections report `m_s/m_b = 0.02237` at `+0.13%` (the sibling notes
+quote `0.02239` at `+0.2%`) and `m_d/m_b` at `+3.6%`, and call this a
+sub-percent down-type chain. Phase 2 reads `f_23 = 0.998` ("2-3 down-dominant at 0.2%") and a
+"saturated" `|V_cb|^2`. All of these use `m_s(2 GeV)/m_b(m_b)`: the strange
+mass at 2 GeV against the bottom mass at its own mass. The ratio of two MS-bar
+masses at one energy is energy-independent, so the scale-consistent test is at
+one common scale. With four-loop QCD running and PDG 2024 inputs
+(`m_s(2 GeV) = 93.5(8) MeV`, `m_b(m_b) = 4.183(7) GeV`, `alpha_s(M_Z) = 0.1180(9)`),
+`m_s(m_b)/m_b(m_b) = 0.018878`, so the Phase 1 `m_s/m_b` prediction misses by
+about `+18.5%` to `+18.6%` (about 16 sigma with PDG errors, atlas `|V_cb|` taken
+as exact; `+16.9%` to `+20.4%` across standard input sets; `+20.6%` from lattice
+mass ratios with no running). `m_d/m_b` (with the table's `m_d/m_s = 4.67/93.4`)
+misses by `+22.5%` at one scale. `m_d/m_s` is a ratio of two masses at 2 GeV,
+needs no scale convention, and keeps its `+3.3%`. On one common scale the
+partition is `f_23 = 0.867`, so the "saturation" of `|V_cb|^2` and the Phase 2
+`m_c/m_t` diagnosis built on it are artefacts of the mixed comparator; the
+up-sector consequences are not recomputed here (the `m_c` and `m_t` comparators
+carry conventions of their own).
+
+**Corrected statement.** The exponent that fits the common-scale `m_s/m_b` is
+`0.7975`, not `5/6` (a prefactor `1.153` at `5/6`), and it stays `0.79` to `0.80`
+up to the Planck scale under one-loop Standard-Model running. The `+0.2%` is a
+convention coincidence (it needs the strange mass quoted at `1.99 GeV`), so the
+`m_s/m_b` and `m_d/m_b` entries in the "RETAINED" list and the phrase
+"sub-percent down-type chain" in "Safe wording" are withdrawn. (Here "retained"
+is this index's prose label, not an audit status, and no status is changed.)
+
+**What still stands.** The Phase 1 algebra and predicted values, the
+`m_d/m_s` comparison, and the scope statements of the other phases. Full table
+and evidence: `CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`
+(Corrigendum).
 
 ## Scope
 

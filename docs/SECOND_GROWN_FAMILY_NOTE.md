@@ -6,6 +6,10 @@ audit_required_before_effective_status_change: true
 bare_retained_allowed: false
 ---
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+
+
 # Second Grown Family Live Battery Note
 
 **Date:** 2026-06-08
@@ -58,7 +62,7 @@ Primary packet:
 
 - [`scripts/second_grown_family_battery.py`](../scripts/second_grown_family_battery.py)
 - [`logs/runner-cache/second_grown_family_battery.txt`](../logs/runner-cache/second_grown_family_battery.txt)
-- [`archive_unlanded/grown-family-missing-artifacts-2026-04-30/SECOND_GROWN_FAMILY_NOTE.md`](../archive_unlanded/grown-family-missing-artifacts-2026-04-30/SECOND_GROWN_FAMILY_NOTE.md)
+- [`archive_unlanded/grown-family-missing-artifacts-2026-04-30/SECOND_GROWN_FAMILY_NOTE.md`](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/blob/e69519ec7a37f19c096737dab2208de5ce15c192/archive_unlanded/grown-family-missing-artifacts-2026-04-30/SECOND_GROWN_FAMILY_NOTE.md)
 
 2026-06-09 source-packet import repair: the primary battery now imports the
 five child runners below and verifies that each imported module path is the

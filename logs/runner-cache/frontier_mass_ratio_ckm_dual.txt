@@ -3,7 +3,7 @@ runner: scripts/frontier_mass_ratio_ckm_dual.py
 runner_sha256: 631fa51e583ff084b03610176a994e04c373bdd547db00d088f283729278f588
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 ========================================================================

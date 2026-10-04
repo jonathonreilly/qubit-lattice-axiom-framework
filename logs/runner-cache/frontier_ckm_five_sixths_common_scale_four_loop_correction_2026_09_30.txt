@@ -1,0 +1,133 @@
+===== runner cache v1 =====
+runner: scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py
+runner_sha256: 6b136ae51ce75d1ab8c67bda9c5138e37a553ef9df6f6ec086748f4b161761b8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.48
+status: ok
+----- stdout -----
+COMMON-SCALE FOUR-LOOP CHECK OF THE DOWN-TYPE FIVE-SIXTHS BRIDGE (comparator correction)
+
+A. Exact bookkeeping (Fraction)
+-------------------------------
+  [PASS] C_F - T_F = 5/6 and 1/(C_F - T_F) = 6/5
+  [PASS] beta_0(nf=5) = 23/12
+  [PASS] beta_1(nf=5) = 29/12
+  [PASS] beta_2(nf=5) = 9769/3456
+  [PASS] gamma_1(nf=5) = 253/72 and gamma_1(nf=4) = 263/72
+  [PASS] float coefficient tables agree with the Fractions (nf=5)
+  R_pred = [alpha_s(v)/sqrt6]^(6/5) = 0.0223897316   (alpha_s(v)=0.103303816122, V_atlas=0.04217361)
+  [PASS] R_pred reproduces the repository comparator 0.0223897316  (0.0223897316159)
+
+B. Running engine: closed forms and an independent second path
+--------------------------------------------------------------
+  [PASS] one-loop coupling matches the closed form  (0.124430654916 vs 0.124430654916)
+  [PASS] one-loop mass factor matches (a/a0)^(gamma0/beta0)  (1.1682310398)
+  [PASS] 4-loop coupling: RK4 in ln mu^2 equals quadrature-in-coupling path  (0.09586965015 vs 0.09586965015)
+  [PASS] 4-loop mass factor: RK4 equals quadrature path  (1.1838708249 vs 1.1838708249)
+  [PASS] running down and back up returns the start
+  [PASS] alpha_s^(4)(2 GeV) converges with loop order (|d3| < |d2|)  (L1..L4 = 0.2677, 0.2966, 0.3001, 0.3014)
+  alpha_s(M_Z)=0.1180 -> alpha_s^(5)(m_b)=0.22457, alpha_s^(4)(m_b)=0.22474, alpha_s^(4)(2 GeV)=0.30141
+  [PASS] alpha_s^(4)(2 GeV) lies in the standard 0.29-0.31 window  (0.30141)
+
+C. R = m_s/m_b does not run: a bridge on R needs one common scale
+-----------------------------------------------------------------
+  [PASS] ln(m_s/m_b) is exactly constant under nf=5 running (universal gamma_m)  (spread=2.77e-15)
+  [PASS] mixed ratio m_s(mu_s)/m_b(m_b) has slope d ln R/d ln mu_s ~ -0.28 at 2 GeV  (slope=-0.2813)
+  => 1% in the mixed ratio corresponds to 3.6% in the strange-mass scale.
+
+D. Common nf=5 scale: four-loop QCD running, two-loop matching, PDG 2024 inputs
+-------------------------------------------------------------------------------
+  alpha_s^(4)(2 GeV)=0.30141, alpha_s^(4)(m_b)=0.22474, transport m_s(2 GeV)/m_s(m_b)=1.18529
+  m_s(m_b) = 78.88 MeV;  R_common = m_s(m_b)/m_b(m_b) = 0.018858  (1/R = 53.03)
+  [PASS] second integration path reproduces R_common  (0.01885818 vs 0.01885818)
+  R_pred/R_common - 1 = +18.73%
+  [PASS] common-scale miss with two-loop matching is about +18.7% (18.4% to 18.8%)  (+18.727%)
+  [PASS] the miss exceeds the repository one-loop value +15.5%
+  [PASS] the notes' comparator 93.4 MeV / 4.180 GeV reproduces their +0.20% (+0.2024%)  (+0.2024%)
+  [PASS] with PDG 2024 central values the mixed-scale ratio m_s(2 GeV)/m_b(m_b) also gives |miss| < 0.5%  (+0.167%)
+  mixed-scale comparator 0.022352; bridge misses it by +0.17%
+  exponent needed: p = ln V / ln R_common = 0.7973   (5/6 = 0.8333)
+  [PASS] needed exponent on the common surface is about 0.7973 within 0.001  (0.79731)
+  [PASS] needed exponent differs from 5/6 by more than 0.03
+  prefactor needed at exponent 5/6: c = V/R^(5/6) = 1.1538
+  [PASS] prefactor needed at exponent 5/6 is 1.15 (1.14 to 1.17)  (1.1538)
+  linear error propagation (ms 0.8 MeV, mb 7 MeV, alpha_s(MZ) 0.0009): miss = +18.73% +- 1.16%  -> 16.2 combined quoted-error units (not significance)
+  [PASS] miss exceeds 15 combined quoted-error halfwidth units (mass errors are 90% CL, alpha error 68%; atlas V_cb exact)  (16.2 combined quoted-error units (not significance))
+  miss by loop order (1..4): +12.0%, +17.1%, +18.4%, +18.7%
+  [PASS] loop order does not rescue the bridge: every order gives at least +11%
+  [PASS] miss grows monotonically with loop order (1..4)
+  repository comparator m_s(m_b)=81.0 MeV -> transport 1.15309; four-loop running of 93.4 MeV gives 1.18512
+  [PASS] repository m_s(m_b)=81.0 MeV is not reproduced by four-loop running of m_s(2 GeV)=93.4 MeV  (78.81 MeV)
+
+E. Supplied input sensitivities; FLAG flavour conventions not rematched; no-running lattice chain
+-------------------------------------------------------------------------------------------------
+  PDG24 listing (93.5, 4.183)                  R=0.018858  miss=+18.73%  p=0.7973
+  PDG24 lattice-only m_s (92.74, 4.183)        R=0.018705  miss=+19.70%  p=0.7957
+  FLAG24 Nf=2+1+1 (93.46, 4.200)               R=0.018759  miss=+19.36%  p=0.7962
+  FLAG24 Nf=2+1 (92.4, 4.171)                  R=0.018701  miss=+19.73%  p=0.7956
+  FLAG24 2+1+1, alpha_s(MZ)=0.1184             R=0.018723  miss=+19.58%  p=0.7959
+  high-side corner (94.3, 4.176, 0.1171)       R=0.019136  miss=+17.00%  p=0.8003
+  low-side corner (92.7, 4.190, 0.1189)        R=0.018580  miss=+20.51%  p=0.7943
+  [PASS] every supplied diagnostic tuple misses by 16% to 21% (FLAG nf conventions not fully rematched)  (range +17.0% .. +20.5%)
+  [PASS] no standard input set gets the exponent within 0.03 of 5/6
+  FLAG 2024 chain: m_b/m_s = 53.86, R = 0.018565, miss = +20.60%, p = 0.7942
+  [PASS] lattice mass-ratio chain (no running, no 2 GeV convention) misses by +20.6% (20.4% to 20.8%)  (+20.602%)
+  measured-style |V_cb|=0.0392: V^(6/5)/R_common - 1 = +8.8%, exponent p = 0.8157
+  measured-style |V_cb|=0.0410: V^(6/5)/R_common - 1 = +14.8%, exponent p = 0.8044
+  measured-style |V_cb|=0.0422: V^(6/5)/R_common - 1 = +18.8%, exponent p = 0.7972
+  [PASS] against |V_cb| = 0.0392 / 0.0410 / 0.0422 the common-scale miss is +8.6% / +14.6% / +18.7% (each within 0.3%)
+  [PASS] the exponent stays above 0.79 and below 0.82 for every measured |V_cb| (never 5/6)
+  |V_cb| needed for an exact 5/6 on the common surface: 0.0366
+  [PASS] exact 5/6 on the common surface needs |V_cb| = 0.0366, below every measured value 0.039-0.042  (0.03655)
+
+F. The +0.2% needs a strange-mass scale of 1.99 GeV
+---------------------------------------------------
+  exponent 4/5: m_s(mu_s)/m_b(m_b) = V^(1/p) at mu_s = 3.923 GeV
+  exponent 5/6: m_s(mu_s)/m_b(m_b) = V^(1/p) at mu_s = 1.988 GeV
+  exponent 6/7: m_s(mu_s)/m_b(m_b) = V^(1/p) at mu_s = 1.429 GeV
+  exponent 8/9: UNTESTED outside bracket: no root in nf=4 domain [1.3,8] GeV; charm matching below it is not implemented
+  [PASS] exponent 5/6 fits the mixed ratio only at mu_s = 1.99 GeV (1.95 to 2.03)  (1.988 GeV)
+  [PASS] exponent 4/5 would fit at mu_s ~ 3.9 GeV, so the '2 GeV' surface is not singled out by the data alone  (3.923 GeV)
+
+G. Downstream quantities built on the mixed-scale comparator
+------------------------------------------------------------
+  [PASS] m_d/m_s (both at 2 GeV) keeps its +3.3%: it needs no scale convention  (+3.30%)
+  m_d/m_b: prediction 0.001156; mixed-scale comparator 4.67/4180 -> +3.51%; common-scale comparator (m_d/m_s)_obs R_common = 0.000943 -> +22.68%
+  [PASS] m_d/m_b: the mixed-scale +3.5% becomes +22.5% at one common scale  (mixed +3.51%, common +22.68%)
+  up-type partition f_23: mixed comparator 0.9983, common-scale comparator 0.8666
+  [PASS] f_23 = 0.9983 is reproduced on the mixed comparator (the '2-3 down-dominant at 0.2%' figure)  (0.99832)
+  [PASS] on one common scale f_23 = 0.867: the '0.2% saturation of |V_cb|^2' is an artefact of the mixed comparator  (0.8666)
+
+H. One-loop Standard-Model running of the Yukawa matrices to M_Pl
+-----------------------------------------------------------------
+  [PASS] initial condition reproduces V_cb and m_s/m_b  (V_cb=0.042173, R=0.018858)
+  mu= 1.630e+02 GeV  y_t=0.9369  V_cb=0.04217  m_s/m_b=0.018858  p=0.7973
+  mu= 7.937e+03 GeV  y_t=0.7946  V_cb=0.04334  m_s/m_b=0.019379  p=0.7959
+  mu= 3.864e+05 GeV  y_t=0.7029  V_cb=0.04424  m_s/m_b=0.019780  p=0.7948
+  mu= 1.882e+07 GeV  y_t=0.6365  V_cb=0.04498  m_s/m_b=0.020107  p=0.7939
+  mu= 9.162e+08 GeV  y_t=0.5848  V_cb=0.04560  m_s/m_b=0.020384  p=0.7932
+  mu= 4.461e+10 GeV  y_t=0.5427  V_cb=0.04613  m_s/m_b=0.020623  p=0.7926
+  mu= 2.172e+12 GeV  y_t=0.5073  V_cb=0.04660  m_s/m_b=0.020832  p=0.7920
+  mu= 1.058e+14 GeV  y_t=0.4768  V_cb=0.04702  m_s/m_b=0.021018  p=0.7915
+  mu= 5.150e+15 GeV  y_t=0.4500  V_cb=0.04739  m_s/m_b=0.021185  p=0.7911
+  mu= 2.507e+17 GeV  y_t=0.4261  V_cb=0.04773  m_s/m_b=0.021334  p=0.7907
+  mu= 1.221e+19 GeV  y_t=0.4045  V_cb=0.04803  m_s/m_b=0.021470  p=0.7904
+  mu= 1.221e+19 GeV  y_t=0.4045  V_cb=0.04803  m_s/m_b=0.021470  p=0.7904
+  [PASS] running V_cb and m_s/m_b rise by the same factor (equal to 0.1%), as the top-Yukawa flow predicts  (1.1390 vs 1.1385)
+  [PASS] needed exponent stays within 0.788-0.798 at the sampled scales of the supplied truncated one-loop SM flow  (p from 0.7973 to 0.7904)
+  [PASS] sampled exponents stay at least 0.035 from 5/6; no continuous all-scale bound is tested
+  [PASS] it moves toward smaller p as mu rises (the wrong direction for 5/6)
+  variant y_t(m_t) = 0.9269                  p(M_Pl) = 0.7906
+  variant y_t(m_t) = 0.9469                  p(M_Pl) = 0.7901
+  variant |V_cb| = 0.0392 (exclusive-like)   p(M_Pl) = 0.8094
+  [PASS] y_t(m_t) = 0.9269 and 0.9469 leave p(M_Pl) within 0.788-0.794  (0.7906, 0.7901)
+  [PASS] with |V_cb| = 0.0392 the exponent at M_Pl is still 0.80-0.82, not 5/6  (0.8094)
+
+================================================================
+TOTAL: PASS=47, FAIL=0
+Comparator content only: the runner derives no mass, exponent or scale.
+================================================================
+
+----- stderr -----
+

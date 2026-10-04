@@ -1,9 +1,36 @@
 # DM Full Closure Same-Surface Thermal Selector Sensitivity Boundary
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+
+
 **Status:** bounded - bounded or caveated result note
 **Date:** 2026-04-16  
 **Branch:** `codex/dm-thermal-review-2026-04-17`  
 **Script:** `scripts/frontier_dm_full_closure_same_surface_thermal_selector_sensitivity_boundary.py`
+
+## Corrigendum (2026-09-30)
+
+The roots quoted below (`sigma_2000 = 0.145161`, `sigma_4000 = 0.145600`, `sigma_8000 = 0.145585`,
+`sigma_16000 = 0.145581`) belong to a kernel with a half-sized Sommerfeld argument. They are superseded;
+the sections below are kept as the record.
+
+**1. Sommerfeld argument.** The thermal kernel behind these numbers used the Sommerfeld factor `S = pi z / (1 - e^{-pi z})`, `z = alpha / v`, where `v` is the relative speed carried by the weight `v^2 e^{-x_f v^2 / 4}`. For a pair of reduced mass `m/2` the s-wave Coulomb factor from the radial Schroedinger equation (wave number `k = m v / 2`, Coulomb parameter `eta = alpha / v`) is `S = 2 pi z / (1 - e^{-2 pi z})`. The old form is the textbook formula written for the per-particle centre-of-mass speed `v/2`; at fixed relative speed it is the correct function at half the coupling, `S_pi(alpha) = S_2pi(alpha/2)`.
+
+With the corrected kernel there is **no root** on `sigma in [0, 1]` at any quadrature resolution: on the
+uniform grids of 2000, 4000, 8000 and 16000 points `R(alpha_lo)` runs `7.971519` to `7.971526` and
+`R(alpha_hi)` runs `8.067127` to `8.067134`, against the comparator `5.447934`. The refinement spread
+(`7e-6`) is negligible next to the gap (`2.52`), so quadrature is not the issue. The apparent `9/62`
+near-coincidence was a coincidence of the half-argument kernel; `9/62` must still not be promoted (the answer
+"No, not yet" stands, now because there is no selector root to compare with).
+
+**Evidence.** `scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py` (radial Schroedinger equation integrated numerically with no closed form, mpmath Coulomb function, independent quadrature; it reproduces the archived numbers as the corrected ones at half the coupling) and `scripts/dm_ratio_comparator_planck_central_values_check.py`. Both are same-family checks by their author, not independent referees. No audit verdict, effective status or status field is changed by this corrigendum. The runner
+`scripts/frontier_dm_full_closure_same_surface_thermal_selector_sensitivity_boundary.py` is repaired to certify
+the absence of a root at every resolution. The comparator (see the bounding-theorem note's corrigendum) was also
+a rounded value; against `5.364 +/- 0.065` the family is far above it either way.
+
+**What still stands.** The exact rational/group skeleton (`R_base = 31/9`, the `8/9` and `1/9` channel
+fractions, the low-`z` coefficients), and "the branch must not promote `9/62` as a DM selector law".
 
 ## Question
 

@@ -9,6 +9,44 @@ unsupplied live-DM-slice constants).
 **Audit status:** assigned only by the independent audit lane.
 **Script:** `scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py`
 
+
+## Numerical certification boundary (2026-10-04)
+
+The positive-series tail inequalities are analytic statements conditional on
+the supplied integral model. Their current special-function evaluations and
+conversion to doubles have no certified rounding budget. “Certified” API
+names are retained for compatibility; numerical endpoint intervals, including
+collapsed double endpoints, are **support diagnostics**, not rigorous interval
+certificates. Numerical controls compare implementations to tolerance.
+The no-crossing implication is conditional on the supplied monotonicity and
+endpoint separation; no physical selector, thermal model or full DM closure
+is derived. This boundary supersedes numerical “rigorous/certified” readings
+of the outputs below.
+
+## Corrigendum (2026-09-30)
+
+The sample-point intervals in the Consequence section below were computed with a half-sized Sommerfeld
+argument (`b = pi alpha` in the series). They are superseded; the sections below are kept as the record.
+
+**1. Sommerfeld argument.** The thermal kernel behind these numbers used the Sommerfeld factor `S = pi z / (1 - e^{-pi z})`, `z = alpha / v`, where `v` is the relative speed carried by the weight `v^2 e^{-x_f v^2 / 4}`. For a pair of reduced mass `m/2` the s-wave Coulomb factor from the radial Schroedinger equation (wave number `k = m v / 2`, Coulomb parameter `eta = alpha / v`) is `S = 2 pi z / (1 - e^{-2 pi z})`. The old form is the textbook formula written for the per-particle centre-of-mass speed `v/2`; at fixed relative speed it is the correct function at half the coupling, `S_pi(alpha) = S_2pi(alpha/2)`. In the series this changes `b = pi alpha` to `b = 2 pi alpha`; the
+positive-series identities, the tail inequalities and the `J1`/`J2` Meijer-G forms are written in terms of
+a generic `y` and are unchanged.
+
+Corrected exact-series/tail intervals on the same conditional sample points (the middle sample is now the
+comparator-reproducing coupling, which lies outside the admitted family; the archived `alpha_conv` was the
+root of the half-argument kernel):
+
+- `alpha_lo = 0.090667836017286`: `R in [7.971567066957, 7.971567066957]` (was `[5.442019867867, 5.442019867931]`);
+- `alpha_pin = 0.045449773429219`: `R in [5.447934280692, 5.447934280753]` (archived `alpha_conv = 0.0908995`
+  gave `[5.447934280692, 5.447934280753]` because `S_pi(alpha) = S_2pi(alpha / 2)`);
+- `alpha_hi = 0.092264992618360`: `R in [8.067175363433, 8.067175363433]` (was `[5.482855571890, 5.482855571936]`).
+
+The larger `b` makes the series converge faster: at the live endpoints the enclosure collapses to one double.
+
+**Evidence.** `scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py` (radial Schroedinger equation integrated numerically with no closed form, mpmath Coulomb function, independent quadrature; it reproduces the archived numbers as the corrected ones at half the coupling) and `scripts/dm_ratio_comparator_planck_central_values_check.py`. Both are same-family checks by their author, not independent referees. No audit verdict, effective status or status field is changed by this corrigendum. The runner `scripts/frontier_dm_full_closure_same_surface_thermal_series_tail_support.py` is
+repaired (containment is tested to double-precision roundoff). **What still stands:** the series/tail
+structure and the conclusion that this is support, not theorem-grade selector closure.
+
 ## 2026-05-28 Review Repair (thermal-kernel core split from live-DM constants)
 
 This note is narrowed to the pure thermal-kernel series/tail certificate it

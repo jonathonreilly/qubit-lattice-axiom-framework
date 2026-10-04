@@ -1,9 +1,63 @@
 # Up-Type Mass Ratios from the CKM Inversion (Phase 2 of mass spectrum)
 
+**Type:** bounded_theorem
+**Claim type:** bounded_theorem
+
+
 **Date:** 2026-04-17
 **Status:** bounded secondary lane (one conditional partition)
 **Primary runner:** `scripts/frontier_mass_ratio_up_sector.py`
 **Depends on:** `DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md` (Phase 1)
+
+
+## Landing correction to the comparator (2026-10-04)
+
+The common-scale diagnostic uses four-loop mass/coupling running with
+explicit **two-loop** bottom-threshold coupling and strange-mass matching:
+`m_s^(4)(mb) = [1 + (89/432)(alpha_s^(5)(mb)/pi)^2] m_s^(5)(mb)`.
+It is a mixed-truncation diagnostic, not a fully matched four-loop prediction;
+three-loop decoupling and truncation/systematic uncertainties remain open.
+The earlier precise numbers below omitted strange-mass matching and are
+superseded by the corrected runner. The mismatch remains about 19%.
+The quoted PDG-2024 quark-mass errors are **90% confidence halfwidths**;
+combining them with the 68% coupling error in quadrature measures sensitivity,
+not a one-sigma significance or a joint statistical rejection. Any “16 sigma”
+reading below is withdrawn. Ratio scale invariance applies to a common,
+fixed-flavour, mass-independent QCD theory. The SM example only checks its
+sampled scales in a supplied truncated one-loop flow (fixed tau Yukawa,
+imported initial data, no threshold matching); it supplies no all-scale bound.
+Mixed-scale root fits are restricted to the bracket `[1.3,8] GeV`; a root below
+that bracket is not evaluated without charm matching.
+Source for decoupling conventions: [RunDec, Eqs. 20 and 28](https://arxiv.org/pdf/hep-ph/0004189).
+No framework coefficient, exponent or scale is derived by this comparison.
+
+## Corrigendum (2026-09-30)
+
+**What was wrong.** The observation-comparator partition `f_23 = 0.9983`
+("2-3 down-dominant at 0.2%") and the diagnosis that the Phase 1 down-sector
+bridge "saturates `|V_cb|^2` to within 0.2%" both take the observed
+`(m_s/m_b)` from the mixed-scale ratio `m_s(2 GeV)/m_b(m_b) = 0.02234`. The
+ratio of two MS-bar masses at one energy is energy-independent, so the
+scale-consistent comparator is at one common scale. With four-loop QCD running
+and PDG 2024 inputs (`m_s(2 GeV) = 93.5(8) MeV`, `m_b(m_b) = 4.183(7) GeV`,
+`alpha_s(M_Z) = 0.1180(9)`), `m_s(m_b)/m_b(m_b) = 0.018878`; the Phase 1
+prediction `0.02239` misses it by `+18.6% +- 1.2%`, and `f_23 = 0.867`, not
+`0.9983`. The saturation is therefore an artefact of the mixed comparator, and
+the "10x too small" reading of `m_c/m_t` that rests on it is withdrawn. The
+up-sector consequences at the common scale are not recomputed here: the `m_c`
+and `m_t` comparators carry conventions of their own.
+
+**Corrected statement.** The exponent that fits the common-scale down-type
+`m_s/m_b` is `ln|V_cb| / ln(m_s/m_b) = 0.7975`, not `5/6`, and the `+0.2%` needs
+the strange mass quoted at `1.99 GeV`; it is a convention coincidence. The
+`f_12 = 0.9839` partition uses `m_d/m_s` (both masses at 2 GeV), needs no scale
+convention and is unchanged.
+
+**What still stands.** The parallel-bridge algebra, the partition equations,
+the `(1, 1)` and `(0, 0)` edge statements, and the bounded status and scope of
+this lane. The status of this note is unchanged by this corrigendum; audit
+status remains with the independent audit lane. Full table and evidence:
+`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md` (Corrigendum).
 
 ## Safe statement
 

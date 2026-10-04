@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py
+runner_sha256: aaf12b0deed7f6014bf3dc6686eed78696e827d5d00a54a9b14834a123ebcbd3
+input_fingerprint_sha256: 290f39c69535913d4e6b3da10d077a50a65280c35eb3b87552f14ddf9675902d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 67.68
+status: ok
+----- stdout -----
+Spot check: tastes in the plaquette measure and the hierarchy readout
+(same-family check on a small lattice; not a certificate, no audit status)
+
+--- [A] readout arithmetic (declared map; no data) ---
+  [PASS][A] v(0.5934) reproduces the note's C1 readout 246.282818 GeV  (v = 246.282818290)
+  [PASS][A] elasticity d ln v / d ln P = -4  (-4.000000000)
+  [PASS][A] a plaquette shift of only ~0.004 already moves the readout by 100x the quoted residual  (dP_min = 0.00385)
+  [PASS][A] the licensed 4-decimal half-step (5e-5) corresponds to a readout window of ~0.034 %  (0.0337 %)
+
+--- [P] plaquette point estimate from the repository's April 2026 ensembles ---
+  [PASS][P] 12x12x12x24: 500 configurations at beta = 6; W(1,1) = 0.593692 +/- 0.000044 (tau_int 0.45)
+  [PASS][P] 16x16x16x32: 500 configurations at beta = 6; W(1,1) = 0.593671 +/- 0.000033 (tau_int 0.47)
+  [PASS][P] 24x24x24x48: 500 configurations at beta = 6; W(1,1) = 0.593741 +/- 0.000061 (tau_int 0.59)
+  [PASS][P] three volumes agree (chi^2 < 6 for 2 dof)  (chi^2 = 1.02)
+  [PASS][P] weighted mean is 0.59369(2)  (0.593688 +/- 0.000024)
+  [PASS][P] the point estimate lies above 0.5934 by ~3e-4 (> 8 sigma of its own error)  (offset +2.88e-04 = 11.9 sigma)
+        readout at this point estimate: 245.805 GeV (-0.194 % vs the licensed-P readout)
+  [PASS][P] readout at the point estimate is ~0.2 % below the licensed-P readout, i.e. ~8x the quoted residual
+
+--- [C] counting: what the u_0-degree 16 counts ---
+  [PASS][C] 2^4 block operator (eta phases, all-antiperiodic): D^2 = -4 I
+  [PASS][C] det(u_0 D + m) = (m^2 + 4 u_0^2)^8
+  [PASS][C] u_0-degree of |det| at m = 0 is 16 = number of block sites = Grassmann components per colour  (degree = 16.000000000)
+  [PASS][C] free one-component staggered operator (periodic 4^4, m = 0) has exactly 16 zero modes  (16 zero modes)
+  [PASS][C] 16 low-energy components = 4 spin components x 4 tastes (one staggered field = 4 Dirac flavours)  (tastes = 4)
+        consequence: one coupling factor per Dirac flavour gives exponent 4 = 16/4, not 16; exponent 16 needs a factor per Grassmann component (the open B4 attachment, unchanged).
+
+--- [G] exact gauge-algebra checks of the determinant's coupling to the plaquette ---
+  [PASS][G] K = hopping part of D is anti-Hermitian
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+  [PASS][G] ln det(m + K) is gauge invariant; det is real positive  (124.163400062 vs 124.163400062)
+  [PASS][G] free-field ln det matches (3 colours) x (1/2) sum_k ln(m^2 + sum sin^2 k)  (219.81353741 vs 219.81353741)
+  [PASS][G] Tr K^4 differs between two configurations by -(1/2) d(sum_p Re Tr U_p) + (1/2) d(winding Polyakov term)  (lhs -478.152367, rhs -478.152367)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+  [PASS][G] at m = 20 the regression slope of ln det on the leading hopping-expansion form is 1 (corrections O(m^-2))  (slope = 0.9887)
+        => at heavy mass, ln det(m + K) = const + [plaquette - signed winding]/(8 m^4) + O(m^-6).
+        The local plaquette coefficient is positive; this is not all-mass monotonicity.
+
+--- [M] Monte Carlo spot check (own code): quenched 4^4 ensemble re-weighted by det(D)^Ns ---
+        3 chains x 500 configurations, spacing 10 sweeps, m = 0.1, 60 s
+  [PASS][M] quenched 4^4 plaquette in the range of the earlier codes (0.5960-0.5985)  (0.59703 +/- 0.00027)
+  [PASS][M] cold-start and hot-start chains agree within 3 combined sigma  (|diff| = 1.72e-03, combined sigma = 7.61e-04)
+  [PASS][M] first-order slope cov(P, ln det) per staggered field is positive at > 4 sigma  (0.0255 +/- 0.0019)
+        Ns = 0.25 1 taste (rooted)     dP = +0.0057 +/- 0.0007  (ESS 211/1470)   readout v(0.5934 + dP) = 237.0 GeV (-3.8 %)
+        Ns = 0.5  2 tastes (rooted)    dP = +0.0116 +/- 0.0041  (ESS 6/1470)   readout v(0.5934 + dP) = 228.0 GeV (-7.4 %)
+        Ns = 1    4 tastes (unrooted)  linear response only: dP ~ +0.0255   readout 208.1 GeV (-15.5 %)  [re-weighting unreliable at Ns = 1; the wall-campaign HMC gives dP = +0.0212(11) -> 214 GeV, not rerun here]
+  [PASS][M] 1 taste: dP is positive at > 5 sigma and the readout shift exceeds 100x the quoted residual  (+0.0057 +/- 0.0007, 237.0 GeV)
+        (2-taste re-weighting has effective sample 6 of 1470 here: informational only, no gate; the 19,840-configuration run of the correction gave +0.0119(11), readout 227 GeV)
+  [PASS][M] the Ns=0 slope extrapolation at Ns=1 exceeds 100x the residual; not a controlled four-taste estimate or bound  (208.1 GeV)
+
+SCOPE: 4^4 lattice, m = 0.1, dP is a same-volume difference; infinite-volume shift, rooting and the
+       light-mass limit are not checked here; the April ensembles give a point estimate, not a certificate.
+
+TOTAL: PASS=26 FAIL=0
+
+----- stderr -----
+

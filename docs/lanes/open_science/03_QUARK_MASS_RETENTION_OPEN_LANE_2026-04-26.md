@@ -15,6 +15,59 @@ sub-target.
 **Non-claim boundary:** the top mass is retained; the remaining five quark
 masses are not.
 
+
+## Landing correction to the comparator (2026-10-04)
+
+The common-scale diagnostic uses four-loop mass/coupling running with
+explicit **two-loop** bottom-threshold coupling and strange-mass matching:
+`m_s^(4)(mb) = [1 + (89/432)(alpha_s^(5)(mb)/pi)^2] m_s^(5)(mb)`.
+It is a mixed-truncation diagnostic, not a fully matched four-loop prediction;
+three-loop decoupling and truncation/systematic uncertainties remain open.
+The earlier precise numbers below omitted strange-mass matching and are
+superseded by the corrected runner. The mismatch remains about 19%.
+The quoted PDG-2024 quark-mass errors are **90% confidence halfwidths**;
+combining them with the 68% coupling error in quadrature measures sensitivity,
+not a one-sigma significance or a joint statistical rejection. Any “16 sigma”
+reading below is withdrawn. Ratio scale invariance applies to a common,
+fixed-flavour, mass-independent QCD theory. The SM example only checks its
+sampled scales in a supplied truncated one-loop flow (fixed tau Yukawa,
+imported initial data, no threshold matching); it supplies no all-scale bound.
+Mixed-scale root fits are restricted to the bracket `[1.3,8] GeV`; a root below
+that bracket is not evaluated without charm matching.
+Source for decoupling conventions: [RunDec, Eqs. 20 and 28](https://arxiv.org/pdf/hep-ph/0004189).
+No framework coefficient, exponent or scale is derived by this comparison.
+
+## Corrigendum (2026-09-30)
+
+**What was wrong.** Sections 1 and 2 count the down-type "threshold-local
+self-scale" matches (`m_s/m_b = 0.02239`, `+0.2%`; `m_d/m_b`, `+3.5%`) as
+sub-percent bounded-companion results, and Section 2 says "perturbative QCD
+shifts give Δp ~ 0.01". Those comparators divide a mass at 2 GeV by the bottom
+mass at its own mass. The ratio of two MS-bar masses at one energy is
+energy-independent, so the scale-consistent test is at one common scale. With
+four-loop QCD running and PDG 2024 inputs (`m_s(2 GeV) = 93.5(8) MeV`,
+`m_b(m_b) = 4.183(7) GeV`, `alpha_s(M_Z) = 0.1180(9)`), `m_s(m_b)/m_b(m_b) = 0.018878`
+and the bridge prediction misses by `+18.6% +- 1.2%` (about 16 sigma with PDG
+errors, atlas `|V_cb|` taken as exact; `+16.9%` to `+20.4%` across standard input
+sets; `+20.6%` from lattice mass ratios with no running); `m_d/m_b` misses by
+`+22.5%`. The exponent that fits the common-scale `m_s/m_b` is `0.7975`, not `5/6`
+(a shift of `0.036`, not `0.01`, and no running can supply it: the RG-invariant
+ratio does not run), and it stays `0.79` to `0.80` up to the Planck scale under
+one-loop Standard-Model running.
+
+**Corrected planning input.** Target 3A should not be read as "prove the
+non-perturbative dynamics that closes a small residual". The bridge as written
+(exponent `5/6`, prefactor `1`) has no scale-consistent numerical support; on the
+RG-invariant ratio it would need a prefactor `1.15` or an exponent `0.80`. The
+`+0.2%` is a mixed-scale convention coincidence (it needs the strange mass quoted
+at `1.99 GeV`). `m_d/m_s`, a ratio of two masses at 2 GeV, keeps its `+3.3%`.
+
+**What still stands.** Every non-claim and firewall statement of this lane, and
+the exact identity `C_F - T_F = 5/6`. The status of this note is unchanged by
+this corrigendum; audit status remains with the independent audit lane. Full
+table and evidence: `CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`
+(Corrigendum).
+
 ## 2026-04-27 Dependency Firewall
 
 The [Quark Lane 3 bounded-companion retention firewall](../../QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md)

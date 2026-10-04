@@ -1,0 +1,102 @@
+===== runner cache v1 =====
+runner: scripts/frontier_bh_entropy_zero_mode_pure_vs_mixed_2026_09_30.py
+runner_sha256: 7ec7ecf0b864dc48c52e4891ccae17e39516c3a5d1f3e482bedbc3c0f674b629
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 8.21
+status: ok
+----- stdout -----
+==========================================================================
+BH Entropy Zero-Mode Prescription Comparison (pure vs mixed)
+==========================================================================
+
+Open L x L half-filled square lattice, t = 1, cut at x = L/2.
+Prescriptions: mixed C=P_-+P_0/2, empty C=P_-, pure C=P_-+random
+half of the zero space (mean of 6 Haar draws, seed 20260930).
+Widom reference value (exact geometric integral, not a limit here):
+  c_Widom(2D) = 1/6 = 0.166667
+
+--------------------------------------------------------------------------
+Part A.  Analytic eigenbasis cross-checks
+--------------------------------------------------------------------------
+  [PASS] analytic sine-mode products are exact eigenvectors of the dense H (L=12)  (max |H v - E v| = 1.61e-15, max |Phi^T Phi - 1| = 2.44e-15)
+  [PASS] zero space is exactly {j+k=L+1}: L zero modes, none accidental (L=12)  (analytic = 12, dense = 12)
+  [PASS] mixed S_corr matches frontier_bh_entropy_rt_ratio_widom.measure_rt (L=8,16,24)  (max |dS| = 1.78e-14)
+  [PASS] both prescriptions have Tr C = L^2/2; the pure C is a projector (L=8)  (|C^2 - C| = 7.77e-16)
+  [PASS] mixed state carries global entropy L ln 2 (one bit-worth per zero mode)  (S_global = 5.545177, L ln 2 = 5.545177; pure states: 0)
+
+--------------------------------------------------------------------------
+Part B.  r(L) = S / (L ln chi_eff) for the three prescriptions
+--------------------------------------------------------------------------
+    L zero | chi   S_mixed  r_mixed | chi   S_empty  r_empty |    S_pure     +-   chi   r_pure | (Sm-Sp)/L
+  --------------------------------------------------------------------------------------------------------
+    6    6 |   6    4.2743   0.3976 |   5    3.0627   0.3172 |    3.0838  0.307   6.0   0.2868 |    0.1984
+    8    8 |   8    6.0266   0.3623 |   7    4.4278   0.2844 |    4.3566  0.283   8.0   0.2619 |    0.2087
+   10   10 |  10    7.8553   0.3412 |   9    5.8697   0.2671 |    5.8726  0.232  10.0   0.2550 |    0.1983
+   12   12 |  12    9.7459   0.3268 |  11    7.3736   0.2563 |    7.5299  0.189  12.0   0.2525 |    0.1847
+   16   16 |  16   13.6757   0.3083 |  15   10.5305   0.2430 |   10.5943  0.114  16.0   0.2388 |    0.1926
+   20   20 |  20   17.7647   0.2965 |  19   13.8467   0.2351 |   14.0910  0.067  20.0   0.2352 |    0.1837
+   24   24 |  24   21.9818   0.2882 |  23   17.2910   0.2298 |   17.4129  0.111  24.0   0.2283 |    0.1904
+   28   28 |  28   26.3063   0.2819 |  27   20.8428   0.2259 |   20.9435  0.071  28.0   0.2245 |    0.1915
+   32   32 |  32   30.7231   0.2770 |  31   24.4869   0.2228 |   24.5988  0.147  32.0   0.2218 |    0.1914
+   40   40 |  40   39.7911   0.2697 |  39   32.0096   0.2184 |   32.1281  0.090  40.0   0.2177 |    0.1916
+   48   48 |  48   49.1210   0.2644 |  47   39.7944   0.2153 |   39.7640  0.126  48.0   0.2140 |    0.1949
+   56   56 |  56   58.6698   0.2603 |  55   47.7979   0.2130 |   47.9128  0.081  56.0   0.2125 |    0.1921
+   64   64 |  64   68.4063   0.2570 |  63   55.9892   0.2112 |   56.0846  0.082  64.0   0.2107 |    0.1925
+
+--------------------------------------------------------------------------
+Part C.  The O(L) zero-mode term
+--------------------------------------------------------------------------
+  S_mixed - S_pure = 0.1946 L -0.103   (L >= 16, max residual 0.118)
+  [PASS] S_mixed - S_pure is linear in L with slope in (0.15, 0.25) on L >= 16  (slope = 0.1946, max residual = 0.118)
+  (for scale: the zero space holds L modes; global mixed entropy is L ln 2 = 0.6931 L)
+  L=40: r_mixed = 0.2697, r_pure = 0.2177, r_empty = 0.2184
+        excess over 1/6: mixed 0.1030, pure 0.0511; share removed by the pure state = 50.4%
+  [PASS] at L=40 a pure half-filled state removes 35%-65% of r - 1/6 (vs mixed)  (share removed = 50.4%)
+  [PASS] pure and empty-zero-mode states agree to 0.01 in r for L >= 12  (max |r_pure - r_empty| = 0.0042)
+
+--------------------------------------------------------------------------
+Part D.  Fits: c + a/ln L (tail) and the linear-in-1/L intercept
+--------------------------------------------------------------------------
+    window |  mixed c       a |  empty c       a |   pure c       a
+  L>=16    |   0.1543   0.426 |   0.1472   0.264 |   0.1513   0.245
+  L>=24    |   0.1558   0.420 |   0.1507   0.251 |   0.1532   0.238
+  L>=32    |   0.1568   0.416 |   0.1526   0.243 |   0.1547   0.232
+  L>=40    |   0.1576   0.414 |   0.1539   0.238 |   0.1569   0.223
+  [PASS] every prescription's tail intercept (L>=16,24,32) lies in (0.13, 0.18), near 1/6 and far from 1/4  (range = 0.1472 .. 0.1568)
+
+  linear-in-1/L intercept on the neighbouring runner's sizes [6, 8, 10, 12, 16, 20, 24, 32, 40, 48]:
+    mixed = 0.2492   empty = 0.2008   pure = 0.2078
+  [PASS] mixed 1/L intercept reproduces the quoted 0.2492 (to 4 decimals)  (value = 0.2492)
+  [PASS] the 1/L intercept depends on the zero-mode prescription: pure state lies more than 0.02 below the mixed one  (mixed - pure = 0.0413)
+    mixed 1/L intercept by window: L>=6: 0.2472, L>=16: 0.2416, L>=32: 0.2374
+
+  two-parameter fits on L >= 24 (max residual; intercept):
+    mixed: c + a/ln L -> resid 0.00012, c = 0.1558    c + b/L -> resid 0.00078, c = 0.2391
+    empty: c + a/ln L -> resid 0.00023, c = 0.1507    c + b/L -> resid 0.00032, c = 0.2003
+    pure : c + a/ln L -> resid 0.00066, c = 0.1532    c + b/L -> resid 0.00048, c = 0.2003
+    (the two forms extrapolate to different intercepts; the L <= 64
+     data separate them clearly only for the mixed state)
+
+  [INFO] Scope: finite L <= 64 only.  The tail intercepts are
+         model-dependent fits (c + a/ln L); they point to about 1/6
+         for every prescription but prove no limit, and the 1/4
+         value is not shown for any of them.
+
+==========================================================================
+SUMMARY: PASS=11  FAIL=0
+==========================================================================
+
+Runtime: 8.1 s
+per_element: checked — each Gaussian correlation eigenvalue contributes binary entropy; mixed r(64) = 0.257004, pure r(64) = 0.210711.
+per_site: checked — every sampled L in [6, 8, 10, 12, 16, 20, 24, 28, 32, 40, 48, 56, 64] uses the straight cut at x = L/2.
+per_mode: checked — 64 analytic zero modes at L=64, 6 Haar frames per size.
+per_block: checked — S_mixed - S_pure = 0.1946 L on L>=16; L=40 share removed 50.4%.
+lattice_wide: checked — tail intercepts 0.1472..0.1576; 1/L intercepts mixed 0.2492, pure 0.2078; no all-L limit is claimed.
+
+All finite-L<=64 checks passed.  On the tested sizes the zero-mode difference has a fitted linear-in-L
+contribution of area-term size, and the 1/L intercept 0.2492 is
+prescription dependent; the asymptotic coefficient is not shown to be 1/4.
+
+----- stderr -----
+

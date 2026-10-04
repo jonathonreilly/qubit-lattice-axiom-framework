@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_delta_eta_density_readout_chain_2026_06_09.py
-runner_sha256: 702fba6ff9b40ce244f42f9372f7f942ebd90fc312fe8012bf01c58b31b15d09
+runner_sha256: eef1f16c506c9b5a132db51fb251978e35e0fe50aee8c5664384836166dc64b7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.48
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -35,30 +35,31 @@ E3: the period fork, computed honestly (the alternative packaging fails)
 ----------------------------------------------------------------------------------------
 E4: the comparator -- m_tau prediction and the fitted-phase residual
 ----------------------------------------------------------------------------------------
-  [PASS] with r = 1/2 (separate comparator context) and |delta| = 2/9 EXACT, the predicted m_mu and m_tau land at the PDG values (m_tau inside about 1 sigma of the PDG band; comparator only)  --  m_mu: pred 105.6594 vs 105.6583755 (9.8e-06); m_tau: pred 1776.98 vs 1776.86 +/- 0.12
+  [PASS] the exact r=1/2, delta=2/9 shape FAILS the quoted precise electron/muon comparison  --  MODEL_MATCH=FAIL; ratio prediction 206.770315973, quoted 206.768282988; nominal error-normalized residual 451.6 (no posterior significance claim)
+  [PASS] the older tau comparator alone remains numerically compatible; it does not validate the joint fixed shape  --  m_tau: pred 1776.98 vs historical 1776.86 +/- 0.12
   [PASS] the PDG-fitted phase agrees with 2/9 WITHIN the m_tau-uncertainty-induced band (diff ~7e-6 absolute ~ 1 sigma of the +/-0.12 MeV band; comparator only, not a derivation input)  --  delta_fit = 0.222229631 vs 2/9 = 0.222222222 (diff 7.4e-06; 1-sigma band 8.3e-06)
 
 ----------------------------------------------------------------------------------------
 E5: no-go boundary compliance
 ----------------------------------------------------------------------------------------
   [PASS] the radian-bridge audit forecloses PERIODIC (q*pi) sources; the density L_3(1,2) is a RATIONAL spectral count outside its Type-A bin -- and the audit itself carries the eta/2-9 value as an unforeclosed witness (grep: '2/9' appears in the audit's own witness inventory)  --  enumeration no-go, not an impossibility theorem; this route is outside its bins
-  [PASS] the eigenline/cobordism no-gos police Wilson-MARK selection on the rank-2 zero-mode space; this chain is a READOUT identification (which number the registered phase equals), not a mark-selection claim -- their scope is not entered (the line-selection question remains with the carrier surface and the unaudited chirality-selector companion)
-  [PASS] the gated CP-odd vacuum route (gated on the physical carrier surface) is NOT used anywhere in this chain -- the circularity is bypassed, not resolved
+  [SCOPE, NOT SCIENCE PASS] the eigenline/cobordism no-gos police Wilson-MARK selection on the rank-2 zero-mode space; this chain is a READOUT identification (which number the registered phase equals), not a mark-selection claim -- their scope is not entered (the line-selection question remains with the carrier surface and the unaudited chirality-selector companion)
+  [SCOPE, NOT SCIENCE PASS] the gated CP-odd vacuum route (gated on the physical carrier surface) is NOT used anywhere in this chain -- the circularity is bypassed, not resolved
 
 ----------------------------------------------------------------------------------------
 E6: K-orbit consistency -- the chain supplies exactly the registrable atom
 ----------------------------------------------------------------------------------------
   [PASS] conj(H(delta)) = H(-delta) on the supplied circulant class; with the registrability bridge, the registrable atom is |delta| -- exactly what the chain supplies; the sign stays frame content
   [PASS] the circulant-class form consumed here matches the retained_bounded K-orbit form authority: that note carries the exact H(delta) form, the exact conjugation/sign-flip statement, and the bounded |delta| atom boundary (located mechanically; the identity itself is re-verified symbolically above)  --  retained_bounded one-hop form authority; same wiring as the R-eta narrowing note
-  [PASS] generated citation graph includes the retained_bounded K-orbit authority as a load-bearing dependency edge for this repaired note  --  deps=['koide_aps_c3_fixed_locus_weights_bridge_narrow_theorem_note_2026-06-05', 'tier_a_korbit_determinant_and_orientation_invariance_bounded_note_2026-06-09', 'registrable_readout_additive_even_phase_free_narrow_theorem_note_2026-06-10', 'koide_a1_radian_bridge_irreducibility_audit_note_2026-04-24']
+  [PASS] source note explicitly links the supplied K-orbit form used above  --  source wiring only; generated graph or audit status supplies no mathematical premise
 
 ----------------------------------------------------------------------------------------
 E7: honest conditionality and falsifiers
 ----------------------------------------------------------------------------------------
-  [PASS] delta = 2/9 is a THEOREM conditional on: {R-eta (proposed identification), the supplied circulant class; physical carrier identification rides with the AC_phi_lambda admission}. The r=1/2 subsumption row is comparator context only unless separately landed. NOT unconditional; R-eta is the owner/audit decision
-  [PASS] ZERO new numbers consumed: R-eta is a class identification; 2/9 is retained arithmetic; PDG values are labeled comparators
-  [PASS] FALSIFIER: a tighter m_tau measurement pulling the fitted phase away from 2/9 (current residual 7.4e-6 absolute; the chain dies if it grows with precision)
-  [PASS] the Callan-Harvey 2/N^2 = 2/9 is a DISTINCT object (proven distinct in-repo; coincides only at d = 3) -- recorded as consistency, not consumed
+  [SCOPE, NOT SCIENCE PASS] delta = 2/9 is a THEOREM conditional on: {R-eta (proposed identification), the supplied circulant class; physical carrier identification rides with the AC_phi_lambda admission}. The r=1/2 subsumption row is comparator context only unless separately landed. NOT unconditional; R-eta is the owner/audit decision
+  [SCOPE, NOT SCIENCE PASS] ZERO new numbers consumed: R-eta is a class identification; 2/9 is retained arithmetic; PDG values are labeled comparators
+  [SCOPE, NOT SCIENCE PASS] The exact fixed shape already misses the precise electron/muon pair; a tighter m_tau measurement may also pull the fitted phase away from 2/9 (historical fitted-phase residual 7.4e-6 absolute; tau compatibility does not rescue the joint shape)
+  [SCOPE, NOT SCIENCE PASS] the Callan-Harvey 2/N^2 = 2/9 is a DISTINCT object (proven distinct in-repo; coincides only at d = 3) -- recorded as consistency, not consumed
 
 ----------------------------------------------------------------------------------------
 E8: period-fork diagnostic -- period-1 adds no import beyond supplied R-eta
@@ -66,10 +67,10 @@ E8: period-fork diagnostic -- period-1 adds no import beyond supplied R-eta
   [PASS] the pi of the standard packaging is the det-sign mechanism: arg det = pi * n_minus (mod 2pi) for a real spectrum (computed witness)  --  n_minus=2, arg det = -0.000000 = pi*n_minus mod 2pi
   [PASS] the det-phase door is CLOSED on the checked det-class surface (multiplicative lemma re-verified): K-invariance forces the phase character k = 0, so the standard det-sign route supplies no registrable pi*n_minus phase  --  this does not exclude a future non-det-class readout context
   [PASS] import accounting: period-1 (delta = L) consumes zero additional imports beyond the supplied R-eta premise; the pi-packaging (delta = pi*L) consumes ONE unexplained dimensionless constant whose standard mechanism is unavailable by (b). This keeps the direct reading as the zero-additional-import option beyond supplied R-eta on known mechanisms  --  bounded claim: no currently retained registrable pi-source
-  [PASS] counterfactual boundary: had the masses matched the pi-row, this chain could not have absorbed that result by convention; it would require a new retained readout context or would falsify this R-eta chain  --  the comparator agreement supports R-eta but does not derive it
+  [PASS] counterfactual boundary: had the masses matched the pi-row, this chain could not have absorbed that result by convention; it would require a new retained readout context or would falsify this R-eta chain  --  tau-only compatibility does not validate the exact joint shape or derive R-eta
 
 ========================================================================================
-SUMMARY: PASS=24 FAIL=0
+SUMMARY: PASS=19 FAIL=0
 ========================================================================================
 
 ----- stderr -----

@@ -13,6 +13,22 @@ normalization identities below.
 **Primary runner:** [`scripts/dm_thermal_average_sommerfeld_normalization.py`](../scripts/dm_thermal_average_sommerfeld_normalization.py)
 **Runner cache:** [`logs/runner-cache/dm_thermal_average_sommerfeld_normalization.txt`](../logs/runner-cache/dm_thermal_average_sommerfeld_normalization.txt)
 
+## Corrigendum (2026-09-30)
+
+**Which speed.** The display `f_MB(v) ~ v^2 exp(-m_chi v^2 / (2 T))` and the substitution
+`v -> sqrt(2T/m_chi) sqrt(t)` describe a single particle's speed and correspond to `a = x_f / 2`. The certificate,
+the runner and the downstream notes use `a = x_f / 4`, which is the distribution of the RELATIVE speed of a pair
+(reduced mass `m_chi / 2`): `v_rel^2 exp(-m_chi v_rel^2 / (4 T))`, with substitution
+`v_rel -> sqrt(4T/m_chi) sqrt(t)`. Read `v` as `v_rel` throughout; the finite normalization algebra proven by the
+runner is unchanged.
+
+**Which kernel.** This note fixes only the argument `z = alpha_eff / v_rel` and leaves the enhancement `S(z)` open.
+For relative speed the s-wave Coulomb factor from the radial Schroedinger equation (`k = m_chi v_rel / 2`) is
+`S = 2 pi z / (1 - e^{-2 pi z})`, not `pi z / (1 - e^{-pi z})` as the same-surface thermal helpers used before
+2026-09-30 (the textbook formula written for the per-particle CM speed `v_rel / 2`). See
+`scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py`; a same-family check by its author. No audit
+verdict, effective status or status field is changed by this corrigendum.
+
 ## Purpose
 
 This note documents the finite normalization algebra consumed by the

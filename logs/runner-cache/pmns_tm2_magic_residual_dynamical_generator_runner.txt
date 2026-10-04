@@ -3,7 +3,7 @@ runner: scripts/pmns_tm2_magic_residual_dynamical_generator_runner.py
 runner_sha256: 396d64b36468b95010ae1c1c4ca55981883f82b647a2c3556a74c0fb9fc649f5
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.12
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================

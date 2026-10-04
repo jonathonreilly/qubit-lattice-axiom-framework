@@ -1,0 +1,51 @@
+===== runner cache v1 =====
+runner: scripts/dm_ratio_comparator_planck_central_values_check.py
+runner_sha256: c45403a0287f737640a871793c1b40c83acb877178ecd60d26b656ed26498137
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.14
+status: ok
+----- stdout -----
+========================================================================================
+DM LANE COMPARATOR: R = Omega_DM/Omega_b AGAINST PLANCK-2018 CENTRAL VALUES
+========================================================================================
+Same-family check by its author; the Planck numbers are external comparators.
+
+========================================================================================
+PART 1: THE OBSERVED RATIO
+========================================================================================
+  [PASS] R_obs = 0.1200 / 0.02237 = 5.3643  (R_obs=5.3643)
+  [PASS] Independent-error propagation gives sigma_R = 0.065  (sigma_R=0.0646)
+
+========================================================================================
+PART 2: WHAT THE ROUNDED COMPARATORS DID
+========================================================================================
+  [PASS] The rounded comparator 0.268/0.049 = 5.469 sits above the Planck-central ratio  (5.469 is +1.96% (+1.6 sigma) from 5.3643)
+  [PASS] Three-digit rounding alone moves the comparator over [5.40, 5.54], wider than sigma_R  (0.2675/0.0495 = 5.404, 0.2685/0.0485 = 5.536)
+  archived R(alpha_lo)     5.4420: -0.50% from 5.469, +1.45% (+1.2 sigma) from Planck central
+  archived R(alpha_hi)     5.4829: +0.25% from 5.469, +2.21% (+1.8 sigma) from Planck central
+  note headline R = 5.48   5.4800: +0.19% from 5.469, +2.16% (+1.8 sigma) from Planck central
+  [PASS] The archived endpoint ratios are +1.2 and +1.8 sigma from the Planck-central ratio (not 0.2-0.5% hits)  (+1.20 sigma, +1.84 sigma)
+  [PASS] R = 5.48 sits 0.2% above 5.469 but 2.1% above the Planck-central ratio  (+0.19% vs +2.16%)
+
+========================================================================================
+PART 3: THE REPAIRED LANE ENDPOINT RATIOS (2 pi Sommerfeld argument)
+========================================================================================
+  R(alpha_lo) = 7.971567: +48.6% (+40 sigma) from Planck central
+  R(alpha_hi) = 8.067175: +50.4% (+42 sigma) from Planck central
+  [PASS] With the corrected Sommerfeld argument both endpoint ratios exceed the Planck-central ratio by more than 30 percent  (+48.6%, +50.4%)
+
+========================================================================================
+BOTTOM LINE
+========================================================================================
+  Against the Planck-2018 central ratio 5.364 +/- 0.065 the archived endpoint ratios
+  5.442 and 5.483 were +1.2 and +1.8 sigma misses, not 0.2-0.5% hits; the smaller
+  offsets came from the rounded comparator 5.469.  With the corrected Sommerfeld
+  argument the endpoint ratios are about 8 and the comparison is moot.
+
+========================================================================================
+SUMMARY: PASS=7 FAIL=0
+========================================================================================
+
+----- stderr -----
+

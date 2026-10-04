@@ -22,6 +22,31 @@
 > finite-link canonical slot `s`. This note derives neither `W-PHYS` nor
 > `SLOT-ID`; neither condition chain-satisfies a dependency.
 
+## Corrigendum (2026-09-30)
+
+The "Numerical consequence" below (`R(DM) = 5.48`, "0.25% from observed 5.47", sensitivity `[5.22, 5.78]`)
+is wrong twice over. The paragraphs below are kept as the record and are superseded where they conflict with
+this corrigendum.
+
+**1. Sommerfeld argument.** The thermal kernel behind these numbers used the Sommerfeld factor `S = pi z / (1 - e^{-pi z})`, `z = alpha / v`, where `v` is the relative speed carried by the weight `v^2 e^{-x_f v^2 / 4}`. For a pair of reduced mass `m/2` the s-wave Coulomb factor from the radial Schroedinger equation (wave number `k = m v / 2`, Coulomb parameter `eta = alpha / v`) is `S = 2 pi z / (1 - e^{-2 pi z})`. The old form is the textbook formula written for the per-particle centre-of-mass speed `v/2`; at fixed relative speed it is the correct function at half the coupling, `S_pi(alpha) = S_2pi(alpha/2)`. With the corrected kernel, `R(alpha_plaq = 0.0923) = 8.067` (not `5.48`),
+and `g in [0.95, 1.05]` (`alpha` proportional to `g^2`) gives `R in [7.53, 8.64]` (not `[5.22, 5.78]`).
+Reproducing the Planck-central `R = 5.364` would need `alpha` near `0.0438`, about `0.47 x alpha_plaq`
+(arithmetic only; no proposal).
+
+**2. Comparator.** `5.47` is the rounded `0.268 / 0.049`. Planck-2018 physical densities give
+`R_obs = 0.1200 / 0.02237 = 5.364 +/- 0.065` (external comparator recalled from Planck 2018 results VI, not
+re-fetched; errors propagated as independent). The archived `5.483` was a `+2.2%` (`+1.8` sigma) miss, not a
+0.25% match.
+
+The DM-ratio cross-check therefore does **not** support `g_bare = 1` as stated. The Wilson-surface bridge below
+and the `W-PHYS` / `SLOT-ID` conditions are unaffected.
+
+**Evidence.** `scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py` (radial Schroedinger equation
+integrated numerically with no closed form, mpmath Coulomb function, independent quadrature; it reproduces the
+archived numbers as the corrected ones at half the coupling) and
+`scripts/dm_ratio_comparator_planck_central_values_check.py`. Both are same-family checks by their author, not
+independent referees. No audit verdict, effective status or status field is changed by this corrigendum.
+
 The 2026-06-18 repair removes the circular-looking step in the older source
 where the `beta = 2 N_c = 6` surface was effectively hard-coded and then used
 to solve for `g_bare = 1`. The repaired parent now sources the two distinct

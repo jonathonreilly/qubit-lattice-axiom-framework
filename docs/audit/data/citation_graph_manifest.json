@@ -1,6 +1,6 @@
 {
- "edge_count": 15264,
- "node_count": 6814,
+ "edge_count": 15269,
+ "node_count": 6815,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16977,6 +16977,10 @@
   "quark_route2_endpoint_step_free_active_branch_slopes_bounded_note_2026-06-12": {
    "deps_hash": "3d17605417dc",
    "out_degree": 1
+  },
+  "quark_route2_endpoint_triple_center_minus_shell_readout_is_a_global_cubic_spline_artefact_on_a_one_site_spike_bounded_theorem_note_2026-09-30": {
+   "deps_hash": "bebe96f124fc",
+   "out_degree": 5
   },
   "quark_route2_eta_floor_hf_boundary_note": {
    "deps_hash": "e3b0c44298fc",

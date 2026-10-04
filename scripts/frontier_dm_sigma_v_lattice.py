@@ -42,6 +42,9 @@ Self-contained: numpy + scipy only.
 
 from __future__ import annotations
 
+# Explicit bounded execution cap; scientific content is unchanged by this metadata.
+AUDIT_TIMEOUT_SEC = 900
+
 import math
 import os
 import sys
@@ -84,7 +87,8 @@ ALPHA_PLAQ = -np.log(P_1LOOP) / C1_PLAQ
 U0 = P_1LOOP**0.25
 ALPHA_V = ALPHA_BARE / U0**4
 
-# Observed comparison
+# Historical rounded comparator; the current physical-density comparison is
+# separately checked in dm_ratio_comparator_planck_central_values_check.py.
 OMEGA_DM = 0.268
 OMEGA_B = 0.049
 R_OBS = OMEGA_DM / OMEGA_B
@@ -1109,10 +1113,15 @@ def compute_alpha_plaq(g):
 
 
 def sommerfeld_coulomb(alpha_eff, v):
+    # Corrigendum 2026-09-30: v is the RELATIVE speed (weight v^2 exp(-x_f v^2/4)
+    # below); the s-wave Coulomb factor is 2*pi*zeta/(1 - exp(-2*pi*zeta)),
+    # zeta = alpha/v (radial Schroedinger equation, k = mu*v, mu = m/2).  The
+    # earlier pi*zeta form is half the correct argument.  See
+    # scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py.
     zeta = alpha_eff / v if abs(v) > 1e-15 else 0.0
     if abs(zeta) < 1e-10:
         return 1.0
-    return (PI * zeta) / (1.0 - np.exp(-PI * zeta))
+    return (2.0 * PI * zeta) / (1.0 - np.exp(-2.0 * PI * zeta))
 
 
 def thermal_avg_S(alpha_eff, x_f, attractive=True, n_pts=2000):
@@ -1164,10 +1173,16 @@ if R_at_self_dual is not None:
 else:
     R_sd_close = False
 
-record("B4_R_at_self_dual",
-       "BOUNDED",
-       R_sd_close,
-       f"R at self-dual g=1: {R_at_self_dual:.3f} ({dev_sd:.1f}% dev)")
+log(f"  [MODEL_MATCH: {'PASS' if R_sd_close else 'FAIL'}] historical self-dual ratio agreement")
+record("B4_corrected_kernel_rejects_archived_self_dual_agreement",
+       "DIAGNOSTIC",
+       R_at_self_dual is not None and np.isfinite(R_at_self_dual) and not R_sd_close,
+       f"expected failed model match, R={R_at_self_dual:.3f}, {dev_sd:.1f}% from the archived rounded comparator")
+if not R_sd_close:
+    log("  CORRIGENDUM 2026-09-30: with the corrected 2*pi Sommerfeld argument the")
+    log("  self-dual point g=1 does NOT reproduce the observed ratio.  The earlier")
+    log("  result (R = 5.483, 0.2% from 5.469) used the half-argument pi kernel and")
+    log("  is withdrawn: the model fails its old 5% agreement criterion; B4 checks that rejection.")
 
 
 # ===========================================================================

@@ -3,7 +3,7 @@ runner: scripts/frontier_sigma_hier_uniqueness_theorem.py
 runner_sha256: fa68d56412f3e244bca4f2f49705a40bd4591285d9b4cd21da41197d0271f5e0
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.13
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ================================================================================

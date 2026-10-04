@@ -1,0 +1,641 @@
+[
+  {
+    "id": "J:derive:review-20261004-cubic-unfolding:a1",
+    "problem": "review-20261004-cubic-unfolding",
+    "title": "An exhaustive general-J cubic and exceptional-point unfolding",
+    "type": "judgment",
+    "lane": "review-science-20261004",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "For the supplied four-site comparator, prove an exhaustive actual neighbourhood census near the line flip on each stated open J interval and at the exceptional root J^3-4J-4=0. The landed analytic isolation/degree and exact family identities are available; leading-form counts and finite searches do not exclude extra pairs. Supply uniform or explicitly pointwise remainder, scalar-zero, uniqueness and domain bounds. Start with one coupling interval or the exceptional point, not an unsupported all-parameter assertion.",
+    "source_paths": [
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_ABOVE_J_EQUALS_TWO_THE_FLIPPING_LINE_NODE_IS_A_CUBIC_POINT_THAT_EMITS_A_PLANE_PAIR_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_BIRTH_TOUCHINGS_AT_KAPPA_C_ARE_EXACT_CUBIC_POINTS_OF_CHARGE_ONE_FOR_EVERY_J_BETWEEN_0_AND_2_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_LINE_NODES_OUTSIDE_THE_COUPLING_TRIANGLE_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "scripts/composite_site_network_flux_free_birth_touchings_are_exact_cubic_points_of_charge_one_for_every_j_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_line_nodes_outside_the_coupling_triangle_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_region_b_line_node_flip_is_a_cubic_point_emitting_a_plane_pair_2026_10_01.py"
+    ],
+    "related_tasks": [
+      "J:derive:campaign5-20260926-handover-double-weyl:a1"
+    ],
+    "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
+    "what": "For the supplied four-site comparator, prove an exhaustive actual neighbourhood census near the line flip on each stated open J interval and at the exceptional root J^3-4J-4=0. The landed analytic isolation/degree and exact family identities are available; leading-form counts and finite searches do not exclude extra pairs. Supply uniform or explicitly pointwise remainder, scalar-zero, uniqueness and domain bounds. Start with one coupling interval or the exceptional point, not an unsupported all-parameter assertion. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "source_branch": {
+      "name": "main",
+      "head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_ABOVE_J_EQUALS_TWO_THE_FLIPPING_LINE_NODE_IS_A_CUBIC_POINT_THAT_EMITS_A_PLANE_PAIR_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "33ee04522acd4a5ac33f3a7c64e790ea84040810ebdfca5ac00c2fb17803572c",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_BIRTH_TOUCHINGS_AT_KAPPA_C_ARE_EXACT_CUBIC_POINTS_OF_CHARGE_ONE_FOR_EVERY_J_BETWEEN_0_AND_2_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "34af77bb4fb24254ac81fe984a2ad5b49f8bf1f9f4835ff28f6c5a3bedf84be0",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_LINE_NODES_OUTSIDE_THE_COUPLING_TRIANGLE_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "29e40457080ccb60b420bb5027e84541c66a10b848db72bf164a77e8c60fed2f",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_birth_touchings_are_exact_cubic_points_of_charge_one_for_every_j_2026_10_01.py",
+        "sha256": "09cacd795d5a0cb057fe725306adfe9c4e0127355d5a4d9c9148227e2d130e6d",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_line_nodes_outside_the_coupling_triangle_2026_10_01.py",
+        "sha256": "300fd887fd49a8fe7b4f6379b167af3c6e861ea272a1b52154ca2978786047f8",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_region_b_line_node_flip_is_a_cubic_point_emitting_a_plane_pair_2026_10_01.py",
+        "sha256": "d5b931ba486cc4c27250878e40c7773e2a652b506acfb154ea04b88656fa0df2",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      }
+    ]
+  },
+  {
+    "id": "J:derive:review-20261004-fixed-flip-band-identification:a1",
+    "problem": "review-20261004-fixed-flip-band-identification",
+    "title": "Identify the certified unfolded Pauli zeros as band touchings",
+    "type": "judgment",
+    "lane": "review-science-20261004",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "At J=1 and J=5/2, prove the exact scalar Schur part vanishes at each certified vector zero throughout the stated epsilon ranges. Establish rigorous locations of the known line/plane-family nodes inside the full shifted box X=x+mz^2+lambda epsilon+a1 epsilon z, Y=y+b1 epsilon z, then use the proved vector uniqueness. The enforced complement-gap bound already keeps C invertible. A floating match at4e-8 is not this proof.",
+    "source_paths": [
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_ABOVE_J_EQUALS_TWO_THE_FLIPPING_LINE_NODE_IS_A_CUBIC_POINT_THAT_EMITS_A_PLANE_PAIR_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_CUBIC_FLIP_POINTS_HAVE_EXPLICIT_DEGREE_ONE_NEIGHBOURHOODS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "scripts/composite_site_network_flux_free_cubic_flip_points_have_explicit_degree_one_neighbourhoods_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_region_b_line_node_flip_is_a_cubic_point_emitting_a_plane_pair_2026_10_01.py"
+    ],
+    "related_tasks": [],
+    "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
+    "what": "At J=1 and J=5/2, prove the exact scalar Schur part vanishes at each certified vector zero throughout the stated epsilon ranges. Establish rigorous locations of the known line/plane-family nodes inside the full shifted box X=x+mz^2+lambda epsilon+a1 epsilon z, Y=y+b1 epsilon z, then use the proved vector uniqueness. The enforced complement-gap bound already keeps C invertible. A floating match at4e-8 is not this proof. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "source_branch": {
+      "name": "main",
+      "head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_ABOVE_J_EQUALS_TWO_THE_FLIPPING_LINE_NODE_IS_A_CUBIC_POINT_THAT_EMITS_A_PLANE_PAIR_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "33ee04522acd4a5ac33f3a7c64e790ea84040810ebdfca5ac00c2fb17803572c",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_CUBIC_FLIP_POINTS_HAVE_EXPLICIT_DEGREE_ONE_NEIGHBOURHOODS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "85050dcb0a24a37ddd471b821db48ec23301f63d899d9f7c09b3909af84df50b",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_cubic_flip_points_have_explicit_degree_one_neighbourhoods_2026_10_01.py",
+        "sha256": "55d560d4803ea4857e7689376ca183804a1c83fb68482aa865d66b9f76a51d79",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_region_b_line_node_flip_is_a_cubic_point_emitting_a_plane_pair_2026_10_01.py",
+        "sha256": "d5b931ba486cc4c27250878e40c7773e2a652b506acfb154ea04b88656fa0df2",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      }
+    ]
+  },
+  {
+    "id": "J:derive:review-20261004-anisotropic-event-coverage:a1",
+    "problem": "review-20261004-anisotropic-event-coverage",
+    "title": "Bind exact event points to boxes and close one kappa gap",
+    "type": "judgment",
+    "lane": "review-science-20261004",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "First rigorously enclose one exact plane-event coordinate in its1e-9 Krawczyk box; the old1e-8 floating proximity is insufficient. Then extend a certified kappa census to one currently unproved event neighbourhood with actual captures. Keep six or seven executed cells separate from author development ranges. The exact line-index flip does not alone prove a global count transition.",
+    "source_paths": [
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_KAPPA_INTERVAL_CERTIFICATES_REACH_THE_EXACT_EVENTS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_NODE_COUNT_VERSUS_KAPPA_AT_AN_ANISOTROPIC_COUPLING_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_LINE_NODE_FLIP_COUPLING_IS_AN_EXACT_RESULTANT_ROOT_AND_THE_J_TWO_ZONE_CENTRE_HAS_DEGREE_ZERO_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_TOUCHING_COUNT_IS_CERTIFIED_ON_WHOLE_KAPPA_INTERVALS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "scripts/composite_site_network_flux_free_kappa_interval_certificates_extended_to_the_exact_event_gaps_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_line_node_flip_coupling_exact_and_j_two_zone_centre_degree_zero_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_node_count_versus_kappa_at_an_anisotropic_coupling_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_touching_count_certified_on_whole_kappa_intervals_2026_10_01.py"
+    ],
+    "related_tasks": [],
+    "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
+    "what": "First rigorously enclose one exact plane-event coordinate in its1e-9 Krawczyk box; the old1e-8 floating proximity is insufficient. Then extend a certified kappa census to one currently unproved event neighbourhood with actual captures. Keep six or seven executed cells separate from author development ranges. The exact line-index flip does not alone prove a global count transition. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "source_branch": {
+      "name": "main",
+      "head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_KAPPA_INTERVAL_CERTIFICATES_REACH_THE_EXACT_EVENTS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "226924ab0ac234b2e8ddbd496553fc22847bda9d27a1dc7f4bef62e4e2bd23b0",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_NODE_COUNT_VERSUS_KAPPA_AT_AN_ANISOTROPIC_COUPLING_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "18977b930c07d73828080de09cd3d88db171300a0a8f889cf2a6a0a83e102646",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_LINE_NODE_FLIP_COUPLING_IS_AN_EXACT_RESULTANT_ROOT_AND_THE_J_TWO_ZONE_CENTRE_HAS_DEGREE_ZERO_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "9cee03104dbf76123261b645357b1a6fd7f9cc05e303202a8cf844951b46b29c",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_TOUCHING_COUNT_IS_CERTIFIED_ON_WHOLE_KAPPA_INTERVALS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "ba66236d09f77e0673f8d117f9e4991df1b72a5610adbc374060a09ddfa12f7a",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_kappa_interval_certificates_extended_to_the_exact_event_gaps_2026_10_01.py",
+        "sha256": "324d0de00c0ab7b3085d17d94cd531669d19a28c7ce193ab32b007ffce0afb23",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_line_node_flip_coupling_exact_and_j_two_zone_centre_degree_zero_2026_10_01.py",
+        "sha256": "3b9c573150348c274fc4bb45bddedb75438a0eab0eded1a7e269456fefba7506",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_node_count_versus_kappa_at_an_anisotropic_coupling_2026_10_01.py",
+        "sha256": "b83a6c0cc9bd6c84b1a8c7c52f98b6e66ecd5f0415ac0d2e2a194e5d0e1b09ca",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_touching_count_certified_on_whole_kappa_intervals_2026_10_01.py",
+        "sha256": "225c60d55dec2cd2d62598d0263b5bf40320ea44efcdb973bcefa0307dff5dbe",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      }
+    ]
+  },
+  {
+    "id": "J:derive:review-20261004-interval-chern-integers:a1",
+    "problem": "review-20261004-interval-chern-integers",
+    "title": "Authenticate the reported lattice Chern integers",
+    "type": "judgment",
+    "lane": "review-science-20261004",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Implement disjoint interval enclosures of occupied overlaps, link determinants, branch-consistent plaquette phases and their total on one already gap-certified slice. Prove that the resulting total encloses one integer and verify the hypotheses of the stated continuum/lattice admissibility bridge. A positive middle gap, admissibility bound, mesh agreement or30-digit floating sum does not authenticate the reported integer. Then extend only with explicit certificates.",
+    "source_paths": [
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_ANISOTROPIC_TOUCHINGS_EXIST_WITH_UNIT_CHARGE_BY_INTERVAL_GAP_CERTIFICATES_AND_LATTICE_CHERN_NUMBERS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_SLICE_CHERN_NUMBERS_MATCH_THE_CERTIFIED_CENSUS_CHARGES_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "scripts/composite_site_network_flux_free_anisotropic_touchings_certified_by_lattice_chern_numbers_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_slice_chern_numbers_match_the_certified_census_charges_2026_10_01.py"
+    ],
+    "related_tasks": [
+      "J:derive:deferred-20260925-band-gauge:a1"
+    ],
+    "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
+    "what": "Implement disjoint interval enclosures of occupied overlaps, link determinants, branch-consistent plaquette phases and their total on one already gap-certified slice. Prove that the resulting total encloses one integer and verify the hypotheses of the stated continuum/lattice admissibility bridge. A positive middle gap, admissibility bound, mesh agreement or30-digit floating sum does not authenticate the reported integer. Then extend only with explicit certificates. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "source_branch": {
+      "name": "main",
+      "head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_ANISOTROPIC_TOUCHINGS_EXIST_WITH_UNIT_CHARGE_BY_INTERVAL_GAP_CERTIFICATES_AND_LATTICE_CHERN_NUMBERS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "a4a2ae4ba02dbc50d4c2776f8cb26d21e068a15411687e2f765fa9c18e30bc6a",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_SLICE_CHERN_NUMBERS_MATCH_THE_CERTIFIED_CENSUS_CHARGES_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "c15319baabc31b2d290d95032d43a8f3aa008f76002422d818800adcae597bad",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_anisotropic_touchings_certified_by_lattice_chern_numbers_2026_10_01.py",
+        "sha256": "31b35995aac1916b7870776acc5b4469523a6a96dc487aa6323aabaf4671d746",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_slice_chern_numbers_match_the_certified_census_charges_2026_10_01.py",
+        "sha256": "63f6ce15568bd01adf27f6bc271a4cac9d6b060299dd8bdd747bff38d31780b2",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      }
+    ]
+  },
+  {
+    "id": "J:derive:review-20261004-boundary-degeneracies:a1",
+    "problem": "review-20261004-boundary-degeneracies",
+    "title": "Resolve one omitted boundary degeneracy",
+    "type": "judgment",
+    "lane": "review-science-20261004",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "For the supplied comparator resolve one omitted boundary case: u=P/4, equal in-plane couplings, or an endpoint merger. Compute exact jets and complementary gap, prove punctured-neighbourhood isolation or exhibit the nonisolated set, and derive the local occupied-bundle statement. Seven finite boundary fixtures do not settle all intermediate couplings.",
+    "source_paths": [
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_AT_BOUNDARY_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_FOR_J_AT_LEAST_TWO_THE_LINE_FAMILY_BRINGS_FOUR_NODES_ABOVE_KAPPA_PLUS_AND_THE_FIRST_PLANE_FAMILY_HAS_NO_HANDOVER_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_LINE_NODES_OUTSIDE_THE_COUPLING_TRIANGLE_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "scripts/composite_site_network_flux_free_certified_touching_census_at_boundary_couplings_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_line_nodes_outside_the_coupling_triangle_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_touching_families_for_j_at_least_two_2026_10_01.py"
+    ],
+    "related_tasks": [],
+    "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
+    "what": "For the supplied comparator resolve one omitted boundary case: u=P/4, equal in-plane couplings, or an endpoint merger. Compute exact jets and complementary gap, prove punctured-neighbourhood isolation or exhibit the nonisolated set, and derive the local occupied-bundle statement. Seven finite boundary fixtures do not settle all intermediate couplings. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "source_branch": {
+      "name": "main",
+      "head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_AT_BOUNDARY_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "2fbadd79094124119c3db5d7d29fc56f9b5052f62c622e21df97ff87f8795bb9",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_FOR_J_AT_LEAST_TWO_THE_LINE_FAMILY_BRINGS_FOUR_NODES_ABOVE_KAPPA_PLUS_AND_THE_FIRST_PLANE_FAMILY_HAS_NO_HANDOVER_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "a85651be561b05dd0583ffcb9b0abb131c0e9000a7072b6f0b383c297e07aa1b",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_LINE_NODES_OUTSIDE_THE_COUPLING_TRIANGLE_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "29e40457080ccb60b420bb5027e84541c66a10b848db72bf164a77e8c60fed2f",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_certified_touching_census_at_boundary_couplings_2026_10_01.py",
+        "sha256": "6f1a20629aa822fa44a90c6b963a6c1be0f21266f913ef74dbcb19c1f05ac76d",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_line_nodes_outside_the_coupling_triangle_2026_10_01.py",
+        "sha256": "300fd887fd49a8fe7b4f6379b167af3c6e861ea272a1b52154ca2978786047f8",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_touching_families_for_j_at_least_two_2026_10_01.py",
+        "sha256": "6b04078628a3af81ac5639dfb77bbbd8b18ccb4172402cca6f021b73cad710fd",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      }
+    ]
+  },
+  {
+    "id": "J:derive:review-20261004-anisotropic-algebraic-classification:a1",
+    "problem": "review-20261004-anisotropic-algebraic-classification",
+    "title": "Classify anisotropic node algebra beyond finite fixtures",
+    "type": "judgment",
+    "lane": "review-science-20261004",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Prove one open algebraic branch/exceptional-locus result for the supplied positive-coupling comparator. Separate roots in certified brackets from a complete real torus census; enforce signs, nonzero denominators and torus realizability. Finite quintic/cubic examples do not establish a universal degree or orbit pattern. A complete open arc or exact exceptional-locus counterexample is useful; do not extrapolate a sample table.",
+    "source_paths": [
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_ACROSS_COUPLING_REGIMES_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_WITH_CHARGES_AT_FIVE_ANISOTROPIC_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_OFF_PLANE_TOUCHINGS_ARE_QUINTIC_ALGEBRAIC_POINTS_AT_FIVE_ANISOTROPIC_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_CELL_CUT_SURFACE_ARC_AT_KAPPA_THREE_TENTHS_IS_AN_INTERVAL_CERTIFIED_ALGEBRAIC_CURVE_ENDING_AT_THE_LINE_NODE_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "scripts/composite_site_network_flux_free_certified_touching_census_across_coupling_regimes_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_certified_touching_census_with_charges_at_five_anisotropic_couplings_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_exact_surface_arc_of_the_cell_cut_slab_at_kappa_three_tenths_2026_10_01.py",
+      "scripts/composite_site_network_flux_free_off_plane_touchings_are_quintic_algebraic_points_at_five_anisotropic_couplings_2026_10_01.py"
+    ],
+    "related_tasks": [],
+    "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
+    "what": "Prove one open algebraic branch/exceptional-locus result for the supplied positive-coupling comparator. Separate roots in certified brackets from a complete real torus census; enforce signs, nonzero denominators and torus realizability. Finite quintic/cubic examples do not establish a universal degree or orbit pattern. A complete open arc or exact exceptional-locus counterexample is useful; do not extrapolate a sample table. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "source_branch": {
+      "name": "main",
+      "head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_ACROSS_COUPLING_REGIMES_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "26ea04b4e26432e8763fc984190284f62ee2478a57a07c0c1aa6bb8ad79a2a84",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_CERTIFIED_TOUCHING_CENSUS_WITH_CHARGES_AT_FIVE_ANISOTROPIC_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "a9a7a5386d0f29480dbc5418edaa85c26d97c53ac24850c53bc6c97bf545d227",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_OFF_PLANE_TOUCHINGS_ARE_QUINTIC_ALGEBRAIC_POINTS_AT_FIVE_ANISOTROPIC_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "fe4d95928e0fcf6439ced8c4ab7b6551066c535d238cc3f0784d335ccd555dad",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_CELL_CUT_SURFACE_ARC_AT_KAPPA_THREE_TENTHS_IS_AN_INTERVAL_CERTIFIED_ALGEBRAIC_CURVE_ENDING_AT_THE_LINE_NODE_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "e835ab7f9e2b1e2d826ec1feb69d00b5c0bc5f0956ac85010cf1e9f1633c496f",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_certified_touching_census_across_coupling_regimes_2026_10_01.py",
+        "sha256": "95eff14789f60cb0392aef67d75324f7fe6be5418597e991c58f289f742fb69d",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_certified_touching_census_with_charges_at_five_anisotropic_couplings_2026_10_01.py",
+        "sha256": "dae34fab9de520abf864984c886ec1b5aa2b6c99f0bbfcff3026e9db81abdc51",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_exact_surface_arc_of_the_cell_cut_slab_at_kappa_three_tenths_2026_10_01.py",
+        "sha256": "a53f3c10ec04243cd95e63f52e7072c3226576835d610750ad83ed9254dcac05",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_off_plane_touchings_are_quintic_algebraic_points_at_five_anisotropic_couplings_2026_10_01.py",
+        "sha256": "49bd1b9f0ac5f27f21a93fcf73cb036dd14af08d76fad4d7549e0cf685b6b6f4",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      }
+    ]
+  },
+  {
+    "id": "J:derive:review-20261004-edge-all-size-asymptotic:a1",
+    "problem": "review-20261004-edge-all-size-asymptotic",
+    "title": "Prove a finite-edge asymptotic beyond two numerical sizes",
+    "type": "judgment",
+    "lane": "review-science-20261004",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Derive the all-N edge localisation or splitting asymptotic from the actual boundary recurrence, with controlled constants and its coupling domain. Treat v=0 compact modes separately and use abs(Jz) for arbitrary nonzero real Jz. The landed high-precision N10/12 ratio is a diagnostic; it is not the asymptotic theorem.",
+    "source_paths": [
+      "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_CELL_CUT_SLAB_HAS_AN_EXACT_SURFACE_ZERO_LINE_AT_F1_ONE_HALF_FOR_EQUAL_IN_PLANE_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+      "scripts/composite_site_network_flux_free_exact_surface_zero_line_of_the_cell_cut_slab_2026_10_01.py"
+    ],
+    "related_tasks": [
+      "J:derive:deferred-20260925-band-gauge:a1"
+    ],
+    "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
+    "what": "Derive the all-N edge localisation or splitting asymptotic from the actual boundary recurrence, with controlled constants and its coupling domain. Treat v=0 compact modes separately and use abs(Jz) for arbitrary nonzero real Jz. The landed high-precision N10/12 ratio is a diagnostic; it is not the asymptotic theorem. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "source_branch": {
+      "name": "main",
+      "head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": "docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_THE_CELL_CUT_SLAB_HAS_AN_EXACT_SURFACE_ZERO_LINE_AT_F1_ONE_HALF_FOR_EQUAL_IN_PLANE_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-10-01.md",
+        "sha256": "0e547659921abd69df80def4e159170a61bbaba0a8a24494b2ccdc67e12e41f8",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/composite_site_network_flux_free_exact_surface_zero_line_of_the_cell_cut_slab_2026_10_01.py",
+        "sha256": "9bda5e19d8ddcc0f6d11445c8425aafaee6178836285cc0ca78d4c7152dab4d1",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      }
+    ]
+  },
+  {
+    "id": "J:derive:review-20261004-physical-tick-edge-bridge:a1",
+    "problem": "review-20261004-physical-tick-edge-bridge",
+    "title": "Close or obstruct the physical tick-to-edge bridge",
+    "type": "judgment",
+    "lane": "review-science-20261004",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Prove a bounded physical tick/record/edge identification with all clock and update premises explicit, or identify the first missing supplier. Six-neighbour BFS reachability does not prove elapsed time, all-neighbour realization or light speed. The landed Planck packet supplies only conditional unit arithmetic and independent rounded-fixture consistency. A transfer-relative one-clock theorem assumes its axis, step and single-clock clauses. Do not adopt a new clock law or numerical primitive.",
+    "source_paths": [
+      "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+      "docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md",
+      "scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py"
+    ],
+    "related_tasks": [
+      "J:derive:review-20260929-wall-formation-and-clock-selection:a1",
+      "J:derive:deferred-20260925-clock-formation-selection:a1"
+    ],
+    "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
+    "what": "Prove a bounded physical tick/record/edge identification with all clock and update premises explicit, or identify the first missing supplier. Six-neighbour BFS reachability does not prove elapsed time, all-neighbour realization or light speed. The landed Planck packet supplies only conditional unit arithmetic and independent rounded-fixture consistency. A transfer-relative one-clock theorem assumes its axis, step and single-clock clauses. Do not adopt a new clock law or numerical primitive. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "source_branch": {
+      "name": "main",
+      "head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+        "sha256": "e6952f8bb3fb033a96e9fac6e10d877b3b3576f7ead872f2140ed832ac166700",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md",
+        "sha256": "a559491bc5710f0f54c18d191033592dd97baaf3eb7f07f4cef2792270b6b740",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/MIN_TIME_STEP_TIED_TO_THE_LATTICE_EDGE_BY_CAUSAL_LOCALITY_RATIO_DERIVED_SCALE_IS_THE_CLOCK_RATE_NO_GO_NARROW_THEOREM_NOTE_2026-06-08.md",
+        "sha256": "9c70abdc9b80bb0f6dcfc1ec35596f8b96030ec8942a1bd6e839d39d99696f46",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md",
+        "sha256": "461f375c3a36e58aee197299cd8bc433f8ec2bc0c347b1140adae2e791fd9859",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py",
+        "sha256": "954035d850299ef9d36ce60dda0324d2eb39a190d49d286c0a081b41bd5a824d",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      }
+    ]
+  },
+  {
+    "id": "J:derive:review-20261004-clock-policy-coordinated-repair:a1",
+    "problem": "review-20261004-clock-policy-coordinated-repair",
+    "title": "Repair conditional-clock wording with governed cache recapture",
+    "type": "judgment",
+    "lane": "review-science-20261004",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Recover the reviewed wording correction from frozen author commit113ab6987c308338c53759368761e5521ab91b10 on fix/time-wording-current-axioms. Synchronize the kinetic primitive quotation, registry, audit skill and physics claim-status text to say that the axis, step and single clock are supplied premises, without changing the approved primitive grant. Regenerate the real axiom-baseline manifest. Build the dependency census first and prepare actual bounded re-executions for affected governed caches, which may number thousands. Do not restamp headers, waive policy freshness, change the cache epoch or claim this policy patch already landed. Deliver the minimal verified source repair and execution plan for supervisor integration.",
+    "source_paths": [
+      "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+      "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "docs/ai_methodology/skills/audit-loop/SKILL.md",
+      "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "docs/audit/data/skill_axiom_baseline_manifest.json"
+    ],
+    "related_tasks": [
+      "J:derive:review-20260929-wall-formation-and-clock-selection:a1"
+    ],
+    "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
+    "what": "Recover the reviewed wording correction from frozen author commit113ab6987c308338c53759368761e5521ab91b10 on fix/time-wording-current-axioms. Synchronize the kinetic primitive quotation, registry, audit skill and physics claim-status text to say that the axis, step and single clock are supplied premises, without changing the approved primitive grant. Regenerate the real axiom-baseline manifest. Build the dependency census first and prepare actual bounded re-executions for affected governed caches, which may number thousands. Do not restamp headers, waive policy freshness, change the cache epoch or claim this policy patch already landed. Deliver the minimal verified source repair and execution plan for supervisor integration. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "unlanded_repair_source": {
+      "name": "fix/time-wording-current-axioms",
+      "head": "113ab6987c308338c53759368761e5521ab91b10",
+      "paths": [
+        "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "docs/ai_methodology/skills/audit-loop/SKILL.md",
+        "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+        "docs/audit/data/skill_axiom_baseline_manifest.json"
+      ],
+      "on_origin": true,
+      "source_objects": [
+        {
+          "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+          "sha256": "6c4a433b4cd47ec889e0cb5d539f211728458591f73f5368faac81b7b56726b3"
+        },
+        {
+          "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+          "sha256": "601e39a1ef57ac7f9f0d5a7fdcc51f9bb1a06800d54432010e363f5800061047"
+        },
+        {
+          "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
+          "sha256": "ac1c192a3707800da56e5ff5407b7103e13ad0352569ee6c80d8246a4d146cbe"
+        },
+        {
+          "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+          "sha256": "a6ca0ff038d2950103b6b8b4dbda9021c701360fc93ce5a406a361c412ba43f8"
+        },
+        {
+          "path": "docs/audit/data/skill_axiom_baseline_manifest.json",
+          "sha256": "11b9889d7ccb007575eead706733408b7faa48a0c33a460e402e15a0929f6acd"
+        }
+      ]
+    },
+    "source_branch": {
+      "name": "main",
+      "head": "2868a0c453e667d1267f0e1e7403732a11893d78",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": "docs/AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03.md",
+        "sha256": "e6952f8bb3fb033a96e9fac6e10d877b3b3576f7ead872f2140ed832ac166700",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/ai_methodology/skills/audit-loop/SKILL.md",
+        "sha256": "2c9e197d8194a8b957e263cc4be9a5f36fbbb89c8341ff296ec16543be53b5a2",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+        "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      },
+      {
+        "path": "docs/audit/data/skill_axiom_baseline_manifest.json",
+        "sha256": "e2fe4183a44fdbf749bd4797984188d69380ad1c91653e00ce8b55b9b460e105",
+        "commit": "2868a0c453e667d1267f0e1e7403732a11893d78"
+      }
+    ]
+  },
+  {
+    "id": "J:derive:review-20261004-ice-angular-seed-errors:a1",
+    "problem": "review-20261004-ice-angular-seed-errors",
+    "title": "Estimate cubic-ice angular covariance with independent-seed errors",
+    "type": "judgment",
+    "lane": "review-science-20261004",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Read the preserved draft source and controls, then independently estimate one angular covariance multiset with seed-level uncertainty, autocorrelation/mixing diagnostics, consistent FFT/projector normalization and a predeclared equivalence margin. The four original runner seeds pass but a second seed group fails; reported0.2%/0.25% descriptive ranges are not simultaneous confidence bounds or a model theorem. Verify the tiny exact control with disjoint machinery, distinguish sampling error from finite-size anisotropy and return one checked result plus the first unresolved step. No assertion that the original draft was scientifically landed.",
+    "source_paths": [
+      "docs/CUBIC_ICE_SMALL_WAVEVECTOR_COVARIANCE_KEEPS_THE_TRANSVERSE_ANGULAR_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "logs/runner-cache/cubic_ice_small_wavevector_covariance_keeps_the_transverse_angular_form_2026_09_24.txt",
+      "scripts/cubic_ice_small_wavevector_covariance_keeps_the_transverse_angular_form_2026_09_24.py"
+    ],
+    "related_tasks": [
+      "J:derive:deferred-20260926-cubic-couplings-and-gauss-screens:a1"
+    ],
+    "completion_criterion": "A proved conditional result, exact counterexample or checked partial result with the first unresolved step; source recovery alone is not completion.",
+    "what": "Read the preserved draft source and controls, then independently estimate one angular covariance multiset with seed-level uncertainty, autocorrelation/mixing diagnostics, consistent FFT/projector normalization and a predeclared equivalence margin. The four original runner seeds pass but a second seed group fails; reported0.2%/0.25% descriptive ranges are not simultaneous confidence bounds or a model theorem. Verify the tiny exact control with disjoint machinery, distinguish sampling error from finite-size anisotropy and return one checked result plus the first unresolved step. No assertion that the original draft was scientifically landed. Owner-requested review transfer as science work, not a PR snapshot or adoption. Fetch current main, verify the pinned source objects, and read the actual axiom memo and registered primitive grants. Check related tasks, active claims, completed attempts and referee reports before selecting ONE distinct obligation. Deliver numbered PROVED/CHECKED/ASSUMED steps in probes/work/derive/<problem>/<worker>/ATTEMPT.md, a self-contained disjoint check.py and RECOVERY_STATUS.json listing hashes, the first unresolved step and remaining work. Known review corrections are background, not a new HIT. Commit the checker before run_probe.py; print SUMMARY and HIT only for a demonstrated new result or defect. Use claim.py and ordinary cross-model confirmation. Source recovery alone is not completion. Do not start workers, spawn agents, create PRs, change budgets or edit scientific/audit authority in this task.",
+    "source_branch": {
+      "name": "claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924",
+      "head": "c2f56b729f4aae3eb8acf115c2be4fa074269d46",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": "docs/CUBIC_ICE_SMALL_WAVEVECTOR_COVARIANCE_KEEPS_THE_TRANSVERSE_ANGULAR_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "a6843b8c9bc984103e741c1f000b9d305a856e6c1f786f34a6416d7a49270af3",
+        "commit": "c2f56b729f4aae3eb8acf115c2be4fa074269d46"
+      },
+      {
+        "path": "logs/runner-cache/cubic_ice_small_wavevector_covariance_keeps_the_transverse_angular_form_2026_09_24.txt",
+        "sha256": "f489e6c3f3deff83055d8b96d39f3ac0ff3b5fda02d2c6c9b96fa0e21da95041",
+        "commit": "c2f56b729f4aae3eb8acf115c2be4fa074269d46"
+      },
+      {
+        "path": "scripts/cubic_ice_small_wavevector_covariance_keeps_the_transverse_angular_form_2026_09_24.py",
+        "sha256": "4a726939426fd3c8f2b0bf38140701e3e545ee83aa9549fd8326b28dbe7ef30a",
+        "commit": "c2f56b729f4aae3eb8acf115c2be4fa074269d46"
+      }
+    ]
+  }
+]

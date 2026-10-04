@@ -92,3 +92,8 @@ The [review-drain recovery bundle](work/deferred-science-20260924/README.md) pre
 ## Mobile-record draft consolidation (2026-09-26)
 
 [Sixteen-draft research map](work/mobile-record-draft-triage-20260926/README.md): five new J tasks and two augmented existing J tasks cover the mobile-record/quantum draft stack. The original source branches remain, with exact identities in the source map. This is a research transfer, not a science landing or proof certification. Tasks require independent recovery of useful bounded lemmas and one precise remaining scientific obligation; no replacement PRs or copied snapshot packs.
+
+
+## Reviewed source obligations - 2026-10-04
+
+[Ten focused J work tasks](review-science-20261004.md) advance the remaining comparator, physical-clock and ice-covariance obligations after the PR drain. Claim them through the normal maximum-thinking judgment queue. This catalog transfer launches no workers and copies no PR snapshot packs.

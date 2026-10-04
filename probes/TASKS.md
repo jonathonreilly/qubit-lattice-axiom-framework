@@ -41,3 +41,8 @@ Hand-written (`probes/tasks/*.json` has the exact commands, hit patterns and par
 ## Reviewed science work — 2026-09-29
 
 19 scientific judgment units are available through `claim.py next --kind J`. The research targets, related tasks and frozen source recovery are in `tasks/review-science-20260929.json` and `work/review-science-20260929/README.md`. These are work obligations; author wall labels and empirical claims are unverified. No PR snapshots or workers were added.
+
+
+## Reviewed science work - 2026-10-04
+
+Ten focused J units: [work map](review-science-20261004.md), [exact task definitions](tasks/review-science-20261004.json). These are proof, certification and seed-error obligations against pinned source, not PR snapshots. The clock-policy repair needs actual cache recapture; the ice draft needs independent-seed errors. Claim through the existing maximum-thinking J campaign. Stale generated tasks for closed/transferred PRs have been retired from TASKS.json.

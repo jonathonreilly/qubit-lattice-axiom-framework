@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_projector_energy_offset_depends_on_the_guide_and_the_population_2026_10_01.py
+runner_sha256: 4b7ee230d23dd87ffb99a61333eeee08cd1b7bb4fb31fa1043b16656871d0eb4
+timeout_sec: 7200
+exit_code: 0
+elapsed_sec: 3492.32
+status: ok
+----- stdout -----
+offset_runner: FULL mode
+[PASS] pair guide on random 4^3 states: E_L, per-plaquette rates and typed N_pair, N_flip against brute force (schemes one, SD, orient6) :: 4470 hops; max rel |E_L - brute| 4.51e-15; max rel |rate - psi ratio| 6.71e-15; max integer difference of N_pair,t and N_flip 0 (E_L and rates: float, tolerance 1e-12)
+   [     4 s] 2^3: 9600 Gauss states, flip component 864 states, exact E0 = -9.026721
+[PASS] exact 2^3 projected energy, pair guide alpha 0.2, gamma -0.016 (one), within 3 standard errors (8 independent runs, 960 walkers) :: E -9.02754 +- 0.00122; minus exact -0.00081 (-0.66 se)
+[PASS] exact 2^3 projected energy, pair guide alpha 0.3, SD gamma (-0.04, -0.04), within 3 standard errors (8 independent runs, 960 walkers) :: E -9.02666 +- 0.00100; minus exact +0.00006 (+0.06 se)
+[PASS] exact 2^3 population scaling of the energy offset, pair guide alpha 0.2 gamma -0.05 (reported, 4 runs per size) :: N_w 960: +0.00082 +- 0.00547; N_w 3840: +0.00266 +- 0.00147; N_w 15360: +0.00313 +- 0.00338
+   [   199 s] old L 8 NW 960 seed 1 NGEN 2500 alpha 0.2 gamma 0.0: sd(E_L) 6.529; sd(log mean wt) 0.00762; ESS 0.9908; sd(walker log wt) 0.0961; nd@1.0 0.0921 nd@2.0 0.0260; C(0.105) 0.500 C(1.005) 0.075; accsd(1.005) 3.763; u(Lc=0) 0.28854+-0.00006; u(Lc=40) 0.28860+-0.00007; Nflip/Np 0.3073; Npair/Np 0.4061; 135 s
+   [   332 s] old L 8 NW 960 seed 2 NGEN 2500 alpha 0.2 gamma 0.0: sd(E_L) 6.571; sd(log mean wt) 0.00802; ESS 0.9907; sd(walker log wt) 0.0967; nd@1.0 0.0896 nd@2.0 0.0243; C(0.105) 0.463 C(1.005) 0.083; accsd(1.005) 3.666; u(Lc=0) 0.28871+-0.00007; u(Lc=40) 0.28878+-0.00007; Nflip/Np 0.3076; Npair/Np 0.4067; 133 s
+   [   465 s] pair L 8 NW 960 seed 1 NGEN 2500 alpha 0.35 gamma -0.049: sd(E_L) 4.824; sd(log mean wt) 0.00869; ESS 0.9949; sd(walker log wt) 0.0714; nd@1.0 0.1415 nd@2.0 0.0424; C(0.105) 0.577 C(1.005) 0.095; accsd(1.005) 3.146; u(Lc=0) 0.28872+-0.00009; u(Lc=40) 0.28886+-0.00010; Nflip/Np 0.3066; Npair/Np 0.3960; 133 s
+   [   595 s] pair L 8 NW 960 seed 2 NGEN 2500 alpha 0.35 gamma -0.049: sd(E_L) 4.792; sd(log mean wt) 0.00653; ESS 0.9950; sd(walker log wt) 0.0708; nd@1.0 0.1435 nd@2.0 0.0439; C(0.105) 0.578 C(1.005) 0.088; accsd(1.005) 3.128; u(Lc=0) 0.28875+-0.00006; u(Lc=40) 0.28880+-0.00006; Nflip/Np 0.3067; Npair/Np 0.3963; 131 s
+[PASS] 8^3, 960 walkers, 2 seeds: pair guide's lag-2 ancestor fraction exceeds the old guide's (alpha 0.35, gamma -0.049) :: old: u(Lc=0) 0.28863+-0.00009, u(Lc=40) 0.28869, nd@1.0 0.0908, nd@2.0 0.0251, sd(E_L) 6.550; pair: u(Lc=0) 0.28873+-0.00002, u(Lc=40) 0.28883, nd@1.0 0.1425, nd@2.0 0.0431, sd(E_L) 4.808; lag-2 ancestor ratio pair/old 1.72
+   [  1602 s] old L 16 NW 960 seed 1 NGEN 2000 alpha 0.2 gamma 0.0: sd(E_L) 17.565; sd(log mean wt) 0.08077; ESS 0.9366; sd(walker log wt) 0.2573; nd@1.0 0.0041 nd@2.0 0.0014; C(0.105) 0.437 C(1.005) 0.038; accsd(1.005) 10.406; u(Lc=0) 0.28687+-0.00009; u(Lc=40) 0.28749+-0.00011; Nflip/Np 0.3050; Npair/Np 0.4015; 1005 s
+   [  2572 s] pair L 16 NW 960 seed 1 NGEN 2000 alpha 0.35 gamma -0.049: sd(E_L) 12.892; sd(log mean wt) 0.05145; ESS 0.9648; sd(walker log wt) 0.1900; nd@1.0 0.0081 nd@2.0 0.0020; C(0.105) 0.550 C(1.005) 0.062; accsd(1.005) 8.535; u(Lc=0) 0.28755+-0.00007; u(Lc=40) 0.28814+-0.00010; Nflip/Np 0.3046; Npair/Np 0.3917; 971 s
+[PASS] 16^3, 960 walkers, seed 1: u(Lc=0) of old and pair guide differ by more than 4 combined standard errors (guide dependence of the estimator) :: old u(Lc=0) 0.28687+-0.00009, u(Lc=40) 0.28749; pair u(Lc=0) 0.28755+-0.00007, u(Lc=40) 0.28814; difference +0.00068 = 5.9 combined se; nd@1.0 0.0041 -> 0.0081, nd@2.0 0.0014 -> 0.0020; sd(E_L) 17.57 -> 12.89
+   [  2640 s] old guide L 16 N_w   240 seed 1 NGEN 2000: u(Lc=0) 0.28606+-0.00010; ESS/N_w 0.942; N_eff 9.3 (N_eff/N_w 0.039); 67 s
+   [  2791 s] old guide L 16 N_w   480 seed 1 NGEN 2000: u(Lc=0) 0.28662+-0.00011; ESS/N_w 0.939; N_eff 10.3 (N_eff/N_w 0.021); 151 s
+   [  3055 s] old guide L 16 N_w   960 seed 1 NGEN 2000: u(Lc=0) 0.28664+-0.00004; ESS/N_w 0.938; N_eff 24.6 (N_eff/N_w 0.026); 264 s
+   [  3491 s] old guide L 16 N_w  1920 seed 1 NGEN 2000: u(Lc=0) 0.28699+-0.00008; ESS/N_w 0.936; N_eff 15.6 (N_eff/N_w 0.008); 436 s
+[PASS] 16^3 old guide population series N_w = [240, 480, 960, 1920] completed with finite u, N_eff and a fit (u_inf reported, not asserted) :: N_w 240: u 0.28606+-0.00010, ESS/N_w 0.942, N_eff 9.3; N_w 480: u 0.28662+-0.00011, ESS/N_w 0.939, N_eff 10.3; N_w 960: u 0.28664+-0.00004, ESS/N_w 0.938, N_eff 24.6; N_w 1920: u 0.28699+-0.00008, ESS/N_w 0.936, N_eff 15.6; fit u = u_inf - c N_w^-k: k 0.05 (chi2 < min+1 for k in [0.05, 0.45], at the grid bound), u_inf 0.29425, c 0.011, chi2 6.03 (4 points, 3 parameters); k = 1 fit: u_inf 0.28691, chi2 9.28
+elapsed 3491 s
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/gaussian_lattice_maxwell_comparator_finite_size_energy_beside_the_ring_projector_2026_10_01.py
+runner_sha256: 2f75f771bbcc01b1bd5ce2da6c476252544955ee1453b091a7526cd4cb1c18a5
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.08
+status: ok
+----- stdout -----
+[PASS] explicit comparator spectrum on L = 4, 6, 8 (test couplings U = 1.7, K = 1.2): the curl preserves the Gauss law, C^T C has kernel N + 2 and 2(N - 1) nonzero eigenvalues, and the oscillator zero-point energy equals sqrt(UK) N Z(L) :: L = 4: kernel 66 (N + 2 = 66), oscillators 126, |E_explicit - sqrt(UK) N Z(L)| 2.8e-14; L = 6: kernel 218 (N + 2 = 218), oscillators 430, |E_explicit - sqrt(UK) N Z(L)| 1.1e-13; L = 8: kernel 514 (N + 2 = 514), oscillators 1022, |E_explicit - sqrt(UK) N Z(L)| 0.0e+00
+[PASS] Z_inf = BZ average of |s(k)| by the heat-kernel integral; independent checks: shifted midpoint sum on 96^3, and the image heat kernel of Z(4), Z(8) against the direct sums :: Z_inf 2.38760224285959; midpoint 96^3 2.3876022475; image Z(4) 2.380300791831 vs 2.380300791832, Z(8) 2.387184614173 vs 2.387184614174
+[PASS] the comparator's u(L) - u_inf = (v/3)(Z_inf - Z(L)) is positive and decreasing for L = 4 to 128, and L^4 (Z(L) - Z_inf) tends to -Z_E/pi^2 with Z_E = sum_(n != 0) |n|^-4 (continuum Casimir constant) :: L = 4: 2.495e-03; L = 6: 4.601e-04; L = 8: 1.427e-04; L = 12: 2.784e-05; L = 16: 8.776e-06; L = 20: 3.588e-06; L = 24: 1.729e-06; Z_E/pi^2 1.67507382, L^4 (Z - Z_inf) at L = 128 -1.675199
+[PASS] beside the landed ring-model projector energies per plaquette (8^3 0.2884, 12^3 0.2881, 16^3 0.2868, 24^3 0.2851): from 8^3 the comparator's finite-size shift is at least five times smaller than the projector's decrease on 16^3 and 24^3 (reported) :: L = 12: comparator -1.15e-04, projector -3.70e-04, ratio 3; L = 16: comparator -1.34e-04, projector -1.68e-03, ratio 13; L = 24: comparator -1.41e-04, projector -3.35e-03, ratio 24; whole comparator shift at 8^3 1.43e-04; 2 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15310,
- "node_count": 6834,
+ "edge_count": 15341,
+ "node_count": 6843,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17862,9 +17862,17 @@
    "deps_hash": "785ba75e68d8",
    "out_degree": 5
   },
+  "ring_component_matched_population_curvature_diagnostic_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "81eff1913129",
+   "out_degree": 1
+  },
   "ring_family_uniformity_cycle737_bounded_theorem_note_2026-07-28": {
    "deps_hash": "f38aec7a66e3",
    "out_degree": 7
+  },
+  "ring_model_a_population_free_pure_structure_factor_agrees_with_large_population_forward_walking_on_4_and_6_cubed_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "00a2467f5afb",
+   "out_degree": 4
   },
   "ring_model_between_the_rokhsar_kivelson_and_pure_ring_points_small_torus_and_variational_diagnostics_bounded_theorem_note_2026-09-24": {
    "deps_hash": "dd5d9f9e9fba",
@@ -17906,9 +17914,17 @@
    "deps_hash": "23469ac78b3a",
    "out_degree": 5
   },
+  "ring_model_on_16_cubed_a_doubled_population_reproduces_the_slow_late_rise_of_the_curvature_estimate_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "446534970fa1",
+   "out_degree": 4
+  },
   "ring_model_on_16_cubed_a_longer_projection_leaves_the_energy_unchanged_and_moves_the_curvature_estimate_within_its_errors_bounded_theorem_note_2026-09-28": {
    "deps_hash": "69b6130e0ee3",
    "out_degree": 6
+  },
+  "ring_model_on_16_cubed_a_pair_plaquette_guide_leaves_the_late_curvature_rise_and_shifts_the_energy_by_ten_standard_errors_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "761c8bc2cc26",
+   "out_degree": 5
   },
   "ring_model_on_16_cubed_a_threefold_finer_resampling_interval_leaves_the_energy_and_the_curvature_estimate_unchanged_bounded_theorem_note_2026-09-28": {
    "deps_hash": "e0ccfbd227f5",
@@ -17918,9 +17934,17 @@
    "deps_hash": "e0b7794d7396",
    "out_degree": 5
   },
+  "ring_model_on_16_cubed_the_pair_guide_energy_also_rises_with_the_population_by_about_half_the_old_guide_rise_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "01426bbbb0e5",
+   "out_degree": 5
+  },
   "ring_model_on_16_cubed_the_per_field_guide_curvature_estimate_holds_under_a_fourfold_population_bounded_theorem_note_2026-09-27": {
    "deps_hash": "ecf3c895199f",
    "out_degree": 6
+  },
+  "ring_model_on_16_cubed_the_projector_energy_depends_on_the_guide_by_six_standard_errors_and_the_effective_population_stays_below_twenty_five_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "bde604976446",
+   "out_degree": 4
   },
   "ring_model_on_24_cubed_a_longer_projection_raises_the_curvature_estimate_from_0_81_to_1_05_and_leaves_the_energy_unchanged_bounded_theorem_note_2026-09-28": {
    "deps_hash": "2392f55f73c0",
@@ -17972,6 +17996,14 @@
   },
   "ring_model_the_ten_cubed_point_lies_between_the_linear_and_level_readings_and_a_constant_plus_a_linear_term_fits_the_four_sizes_mildly_better_than_a_power_bounded_theorem_note_2026-09-24": {
    "deps_hash": "f5bb5f169ef1",
+   "out_degree": 3
+  },
+  "ring_model_the_zero_winding_gauss_sector_has_frozen_flip_components_on_every_even_torus_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "55d3abe14575",
+   "out_degree": 2
+  },
+  "ring_model_three_spectral_moments_bound_the_spread_of_the_transverse_weight_and_on_8_cubed_keep_at_least_84_percent_of_it_within_a_factor_two_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "392d66fc9521",
    "out_degree": 3
   },
   "ring_model_two_regulators_a_region_bounded_by_records_matches_the_torus_at_size_eight_and_the_walker_population_is_the_larger_regulator_bounded_theorem_note_2026-09-25": {
@@ -20041,6 +20073,10 @@
   "the_formation_unit_that_preserves_the_sea_is_a_whole_class_of_the_superlattice_role_pattern_the_eigen_set_criterion_is_one_particle_and_its_minimal_sets_are_the_parity_classes_bounded_note_2026-09-04": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "the_gaussian_lattice_maxwell_comparator_finite_size_energy_shift_is_far_smaller_than_the_ring_projector_energy_decrease_on_16_and_24_cubed_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "55ea48108359",
+   "out_degree": 3
   },
   "the_generated_staggered_mass_responds_to_the_diagonal_metric_and_to_no_shear_a_length_dressed_nn_law_is_shear_blind_and_the_vacuums_even_sum_translations_forbid_any_nn_t2_coupling_bounded_theorem_note_2026-09-04": {
    "deps_hash": "9e73aafcf5e7",

@@ -1,0 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_16_cubed_curvature_late_drift_population_test_2026_10_01.py
+runner_sha256: dcde8f7c88064c6150dd974e9df084002aeabcc26c254ccdd54e8a0f7752126b
+timeout_sec: 28800
+exit_code: 0
+elapsed_sec: 10332.08
+status: ok
+----- stdout -----
+[PASS] exact 2^3 control at dtau = 0.015 with one guide for all three fields: projected ground energies in the cyclic-triple probe field at k = pi agree with exact diagonalization of the canonical flip component (independent runs per field) :: h = 0.0: exact -9.026721, projector -9.01970+-0.00403 (+1.7 sigma; 8 runs, scatter 0.0079, mean bin error 0.0114); h = 0.15: exact -9.227240, projector -9.22237+-0.00347 (+1.4 sigma; 8 runs, scatter 0.0098, mean bin error 0.0080); h = 0.3: exact -9.869211, projector -9.87151+-0.00286 (-0.8 sigma; 8 runs, scatter 0.0068, mean bin error 0.0081); 11 s
+[PASS] 16^3 at k = 2 pi/16, a guide per field, 1920 walkers, seeds 411 and 412, projection to 90: energy per plaquette and curvature estimate in three windows (reported) :: window [7.5, 30): chi 1.0209+-0.0223 (seeds 1.0127, 1.0292), u 0.28708; window [30, 60): chi 1.0856+-0.0436 (seeds 1.0419, 1.1292), u 0.28698; window [60, 90): chi 1.1047+-0.0138 (seeds 1.1095, 1.1000), u 0.28690; [30, 60) minus [7.5, 30): chi seeds +0.0292, +0.1000, u -0.00010; [60, 90) minus [30, 60): chi seeds +0.0676, -0.0292, u -0.00007; 960 walkers (the landed 16^3 projection-to-90 note): 1.0264 +- 0.0252, 1.0579 +- 0.0173, 1.1130 +- 0.0212, u 0.28676, 0.28682, 0.28670; 10330 s
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

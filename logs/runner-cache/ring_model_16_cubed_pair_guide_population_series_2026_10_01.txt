@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_16_cubed_pair_guide_population_series_2026_10_01.py
+runner_sha256: 0c68357ddc2910f84f44fd39f609318ea074bbad2802116ec62350ab7db5eea3
+timeout_sec: 5400
+exit_code: 0
+elapsed_sec: 1369.84
+status: ok
+----- stdout -----
+pseries_runner: FULL mode
+[PASS] check 0: pair guide on random 4^3 states: E_L, per-plaquette rates and typed N_pair, N_flip against brute force (schemes one, SD, orient6) :: 4470 hops; max rel |E_L - brute| 4.51e-15; max rel |rate - psi ratio| 6.71e-15; max integer difference of N_pair,t and N_flip 0 (E_L and rates: float, tolerance 1e-12)
+   [   203 s] pair L 16 N_w  240 seed 1 NGEN 2000 alpha 0.35 gamma -0.049: u(Lc=0) 0.28723+-0.00008; u(Lc=40) 0.28769+-0.00009; ESS/N_w 0.9665; N_eff 8.9; nd@1.0 0.0135; nd@2.0 0.0053; sd(E_L) 12.64; 200 s
+   [   592 s] pair L 16 N_w  480 seed 1 NGEN 2000 alpha 0.35 gamma -0.049: u(Lc=0) 0.28726+-0.00006; u(Lc=40) 0.28763+-0.00007; ESS/N_w 0.9661; N_eff 12.0; nd@1.0 0.0119; nd@2.0 0.0036; sd(E_L) 12.69; 390 s
+   [  1369 s] pair L 16 N_w  960 seed 1 NGEN 2000 alpha 0.35 gamma -0.049: u(Lc=0) 0.28757+-0.00005; u(Lc=40) 0.28777+-0.00005; ESS/N_w 0.9641; N_eff 23.9; nd@1.0 0.0077; nd@2.0 0.0017; sd(E_L) 13.00; 777 s
+[PASS] check 1: all 3 runs on 16^3 completed with finite u(Lc=0), u(Lc=40), ESS/N_w, N_eff and ancestor fractions :: pair seed 1 N_w (240, 480, 960); run time 1366 s
+[PASS] check 2: spread (max minus min) of the pair-guide u(Lc=0) series next to the landed old-guide series (reported; no conclusion asserted) :: pair, seed 1, N_w [240, 480, 960]: u 0.28723, 0.28726, 0.28757, bin errors 0.00008, 0.00006, 0.00005, spread 0.00034, u(N_w 960) - u(N_w 240) +0.00034; landed old, seed 1, N_w [240, 480, 960, 1920]: u 0.28606, 0.28662, 0.28664, 0.28699, bin errors 0.00010, 0.00011, 0.00004, 0.00008, spread 0.00093 (first three N_w: 0.00058), u(960) - u(240) +0.00058; spread ratio pair/old 0.58 (first three N_w), 0.36 (all four)
+[PASS] check 3: the largest-population pair run here minus the landed seed-1 pair value at 960 walkers (reported; a fresh realisation of the same settings) :: pair N_w 960: 0.28757+-0.00005 vs landed 0.28755+-0.00007: +0.00002 (+0.2 combined se); landed old at 960 through the pair code 0.28687+-0.00009
+elapsed 1369 s; stdout 1994 characters before this line
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

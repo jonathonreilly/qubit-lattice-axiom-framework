@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_population_free_pure_structure_factor_by_reptation_on_small_tori_2026_10_01.py
+runner_sha256: 50226f1f802a879c106fbf2dcaea627a54692bc35abc41f708921d1ca5f2eda1
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 586.92
+status: ok
+----- stdout -----
+[exact 2^3, 864-state component] E0 = -9.026721; pure S(pi) = 1.01215; mixed S (guide exp(0.2 N_flip)) = 0.98972   (2 s)
+[PASS] 2^3 middle S vs exact 1.01215 :: 1.0119+-0.0015 (six modes, 12 chains, path 19.2), 0.2 SE (limit 3); window 1.0120, cyclic 1.0139
+[PASS] 2^3 ends S vs exact mixed 0.98972 :: 0.9907+-0.0009, 1.1 SE; E_ends -9.0274+-0.0017 vs exact -9.026721 (reported)
+[PASS] 2^3 integrity (middle replay = incremental, head = replay, no overflow) :: max profile-vs-middle diff 4.4e-16
+[4^3, k=pi/2] FW (3840 walkers) S at lags 0.0: 0.8524+-0.0011 (1.000 distinct), 2.0: 0.6700+-0.0053 (0.213 distinct), 3.0: 0.6497+-0.0072 (0.133 distinct), 4.0: 0.6374+-0.0080 (0.091 distinct), 6.0: 0.6269+-0.0127 (0.050 distinct)
+[4^3] landed 120-walker value 0.688 (supplied for comparison; not asserted)
+[PASS] 4^3 middle S (reptation) vs forward walking :: 0.6196+-0.0188 (10 chains) vs 0.6374+-0.0080 (lag 4.0): 0.9 combined SE (limit 3); window 0.6253+-0.0139, cyclic 0.6236+-0.0199
+[PASS] 4^3 integrity :: max diff 1.3e-15
+[PASS] 4^3 production shift range >= 1.5 path lengths in every chain :: min/max 2.24/3.49; burn-in range min 1.60; moves/chain ~3.8e+05
+[4^3] mixed: reptation ends 0.8443+-0.0018 vs FW lag 0 0.8524+-0.0011; middle 0.6196+-0.0188
+[6^3 chain canon0] mid 0.528 win 0.501 ends 0.689 | shift range burn/prod 1.56/1.85 path lengths, 2.0e+06 moves | integrity ok
+[6^3 chain canon1] mid 0.447 win 0.454 ends 0.686 | shift range burn/prod 1.54/1.78 path lengths, 6.8e+06 moves | integrity ok
+[6^3 chain canon2] mid 0.553 win 0.549 ends 0.687 | shift range burn/prod 1.73/2.03 path lengths, 2.2e+06 moves | integrity ok
+[6^3 chain canon3] mid 0.526 win 0.524 ends 0.685 | shift range burn/prod 1.44/1.71 path lengths, 3.1e+06 moves | integrity ok
+[6^3 chain loop 0] mid 0.450 win 0.461 ends 0.673 | shift range burn/prod 1.78/1.75 path lengths, 9.0e+06 moves | integrity ok
+[6^3 chain loop 1] mid 0.569 win 0.544 ends 0.694 | shift range burn/prod 1.71/2.10 path lengths, 2.0e+06 moves | integrity ok
+[6^3 chain loop 2] mid 0.483 win 0.494 ends 0.682 | shift range burn/prod 1.49/1.86 path lengths, 2.0e+06 moves | integrity ok
+[6^3 chain loop 3] mid 0.474 win 0.477 ends 0.684 | shift range burn/prod 1.68/1.66 path lengths, 1.2e+07 moves | integrity ok
+[6^3, k=pi/3] FW (3840 walkers) S at lags 0.0: 0.6862+-0.0024 (1.000 distinct), 2.0: 0.5072+-0.0096 (0.080 distinct), 3.0: 0.4979+-0.0082 (0.042 distinct), 4.0: 0.4964+-0.0088 (0.026 distinct), 6.0: 0.5015+-0.0113 (0.014 distinct)
+[PASS] 6^3 middle S (reptation, canonical + loop starts) vs forward walking :: 0.5037+-0.0165 (8 chains; canonical 0.5135, loop 0.4940) vs 0.4964+-0.0088 (lag 4.0): 0.4 combined SE (limit 3); window 0.5005+-0.0128
+[PASS] 6^3 integrity :: max diff 4.0e-15
+[PASS] 6^3 production shift range >= 1.5 path lengths in every chain :: min/max 1.66/2.10
+[6^3] mixed: reptation ends 0.6849+-0.0021 vs FW lag 0 0.6862+-0.0024; middle 0.5037+-0.0165
+TOTAL: PASS=9 FAIL=0   (runtime 586 s)
+
+----- stderr -----
+

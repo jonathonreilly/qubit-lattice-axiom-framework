@@ -1,0 +1,11 @@
+===== runner cache v1 =====
+runner: scripts/ring_matched_population_kernel_2026_09_27.py
+runner_sha256: b0acac7225015e3d93f90216ee2942d578e644f28bff3656454d94f9d8108b0e
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.25
+status: ok
+----- stdout -----
+
+----- stderr -----
+

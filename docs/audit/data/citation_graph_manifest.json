@@ -1,6 +1,6 @@
 {
- "edge_count": 15394,
- "node_count": 6857,
+ "edge_count": 15410,
+ "node_count": 6864,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3582,6 +3582,10 @@
    "deps_hash": "4fbc4ff44eb4",
    "out_degree": 1
   },
+  "composite_site_network_flux_free_above_j_equals_two_the_flipping_line_node_is_a_cubic_point_that_emits_a_plane_pair_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "9b24c4431ffb",
+   "out_degree": 2
+  },
   "composite_site_network_flux_free_anisotropic_touchings_exist_with_unit_charge_by_interval_gap_certificates_and_lattice_chern_numbers_bounded_theorem_note_2026-10-01": {
    "deps_hash": "f9e925fb6836",
    "out_degree": 4
@@ -3597,6 +3601,14 @@
   "composite_site_network_flux_free_birth_touchings_at_kappa_c_are_exact_cubic_points_of_charge_one_for_every_j_between_0_and_2_bounded_theorem_note_2026-10-01": {
    "deps_hash": "eac342b79c03",
    "out_degree": 4
+  },
+  "composite_site_network_flux_free_certified_touching_census_across_coupling_regimes_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "1d2c24b543ee",
+   "out_degree": 2
+  },
+  "composite_site_network_flux_free_certified_touching_census_at_boundary_couplings_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "a7de7f9d6535",
+   "out_degree": 2
   },
   "composite_site_network_flux_free_certified_touching_census_with_charges_at_five_anisotropic_couplings_bounded_theorem_note_2026-10-01": {
    "deps_hash": "60b4a4cb7304",
@@ -3614,6 +3626,10 @@
    "deps_hash": "2cc8a89d4d3c",
    "out_degree": 5
   },
+  "composite_site_network_flux_free_kappa_interval_certificates_reach_the_exact_events_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "4a8286e9b2c8",
+   "out_degree": 2
+  },
   "composite_site_network_flux_free_line_nodes_outside_the_coupling_triangle_bounded_theorem_note_2026-10-01": {
    "deps_hash": "0decf033899a",
    "out_degree": 6
@@ -3621,6 +3637,10 @@
   "composite_site_network_flux_free_middle_bands_touch_at_two_exact_points_below_kappa_star_and_six_above_by_an_interval_certificate_bounded_theorem_note_2026-09-26": {
    "deps_hash": "f5aae9dd870e",
    "out_degree": 3
+  },
+  "composite_site_network_flux_free_node_count_versus_kappa_at_an_anisotropic_coupling_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "8678f59d2726",
+   "out_degree": 2
   },
   "composite_site_network_flux_free_off_plane_touchings_are_quintic_algebraic_points_at_five_anisotropic_couplings_bounded_theorem_note_2026-10-01": {
    "deps_hash": "0227049d0ee4",
@@ -3634,6 +3654,10 @@
    "deps_hash": "0227049d0ee4",
    "out_degree": 3
   },
+  "composite_site_network_flux_free_slice_chern_numbers_match_the_certified_census_charges_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "4d3964313190",
+   "out_degree": 3
+  },
   "composite_site_network_flux_free_the_cell_cut_slab_has_an_exact_surface_zero_line_at_f1_one_half_for_equal_in_plane_couplings_bounded_theorem_note_2026-10-01": {
    "deps_hash": "0227049d0ee4",
    "out_degree": 3
@@ -3641,6 +3665,10 @@
   "composite_site_network_flux_free_the_cell_cut_surface_arc_at_kappa_three_tenths_is_an_interval_certified_algebraic_curve_ending_at_the_line_node_bounded_theorem_note_2026-10-01": {
    "deps_hash": "0227049d0ee4",
    "out_degree": 3
+  },
+  "composite_site_network_flux_free_the_cubic_flip_points_have_explicit_degree_one_neighbourhoods_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "0b8d12426b17",
+   "out_degree": 2
   },
   "composite_site_network_flux_free_the_j_two_zone_centre_has_degree_zero_with_explicit_remainder_bounds_and_a_pair_is_born_there_above_kappa_one_half_bounded_theorem_note_2026-10-01": {
    "deps_hash": "ccfd2249bb65",
@@ -13971,8 +13999,8 @@
    "out_degree": 0
   },
   "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08": {
-   "deps_hash": "3c3e26353fe0",
-   "out_degree": 4
+   "deps_hash": "c5126419674c",
+   "out_degree": 5
   },
   "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08": {
    "deps_hash": "e3b0c44298fc",

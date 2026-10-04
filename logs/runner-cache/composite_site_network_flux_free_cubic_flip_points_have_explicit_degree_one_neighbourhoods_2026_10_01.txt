@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_cubic_flip_points_have_explicit_degree_one_neighbourhoods_2026_10_01.py
+runner_sha256: 55d560d4803ea4857e7689376ca183804a1c83fb68482aa865d66b9f76a51d79
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 17.28
+status: ok
+----- stdout -----
+[PASS] 1: exact node data in K (kappa, e^{i x0}, line + flip equations), H0 Hermitian, H0^2 (H0^2-16J^2) = 0, P = 1 - H0^2/(16J^2) rank-2 kernel projector :: nodes i+ i- ii+ ii-; kappa^2 = 3/20 (i), 45/44 (ii)
+[PASS] 2: exact: det T != 0, Laurent identity det Num = |det T|^2 detC detH, detC0 < 0 :: detC0 = i+: -4, ii+: -25
+[PASS] 3: exact Taylor (deg 12): Num(0)=0, no z-linear term, z^2 coeff = -m (x coeff); with x' = x + m z^2 weights <3 vanish, wt-3 = {x',y,z^3}, wt N0 >= 5, wt(detC-detC0) >= 2 :: m = i+: (3/28)*rq, ii+: (-9/26)*rq
+[PASS] 3b: exact det route (4x4 Laurent det H): weights 0-5 vanish, weight 6 = (|n_x|^2 x'^2 + |n_y|^2 y^2 + |n_b|^2 z^6)/(|det T|^2 |detC0|)
+[PASS] 4: exact: n_x,n_y,n_b orthogonal; Gram = landed closed forms (a^2,b^2,g^2), m = -W(J+2)/(4N); deg(D_lead/|D_lead|) = sign det[n]/sign(detC0)^3 :: degrees i+:+1 i-:-1 ii+:+1 ii-:-1; Gram diag (i+) 784/45, 128/45, 3/98; (ii+) 105625/3564, 3828125/891, 3515625/2704
+[PASS] 5: exact inequalities on B_rho (rho_i = 29/500, rho_ii = 69/1000): (A) K_D rho^2 < |detC0|, (B) K_G rho < s, (C) K_0 rho^2 + K_G rho < s :: i+: s>=0.1750 K_G=2.907 K_0=0.933 K_D=0.243; ii+: s>=5.4440 K_G=78.544 K_0=2.223 K_D=3.969
+[PASS] 5c: control (non-vacuity): the same inequalities (A),(B),(C) fail at rho = 3/50 (i) and 7/100 (ii)
+[PASS] 6: consequence: |N_lead + tG| >= (s - K_G rho) N^3 > 0 (t in [0,1]): Num = 0 at the node and nowhere else, degree +1 at +x0 / -1 at -x0 on every sphere N = r <= rho, det H > 0, signature (2,2) off node :: ball N^6 = x'^2 + y^2 + z^6 <= rho^6
+[PASS] F1 FLOAT: Laurent objects vs direct numpy Schur complement (same basis), 4 nodes x 150 points :: max deviation 8.2e-13
+[PASS] F2 FLOAT: |G_i| <= K_i N^4, |N0| <= K_0 N^5, |detC-detC0| <= K_D N^2 at 400 ball points/node; Taylor remainder bound at 300 large-argument points; |F - T12| < 1e-9 at 200 points |xi| <= 0.1 :: max ratios G 6.54e-01, N0 5.49e-01, detC 9.52e-01, remainder 8.69e-01; |F - T12| <= 4.2e-12 at |xi| <= 0.1
+[PASS] F3 FLOAT: solid-angle degree of D/|D| on N = rho, rho/2 (T basis and unitary kernel basis): +1 at +x0, -1 at -x0 :: degrees i+:+1.0000/+1.0000 i-:-1.0000/-1.0000 ii+:+1.0000/+1.0000 ii-:-1.0000/-1.0000
+[PASS] F4 FLOAT: sign of Im Tr(P d1H P d2H P d3H) on the axis x' = y = 0, z = +-0.005..+-rho: > 0 at +x0, < 0 at -x0 :: min |T| i+:1.2e-05 i-:1.2e-05 ii+:4.9e-04 ii-:4.9e-04
+[PASS] U1: exact unfolding kappa = kappa_node + eps (cubic in eps, 5th build re-check): x' -> X = x + m z^2 + lam eps + a1 eps z, Y = y + b1 eps z: weight<=3 part = n_x X + n_y Y + n_b (z^3 - mu eps z), mu = (J+2)/kappa^3 = 8YA/(J^2(J+2)) > 0; rest weight >= 4 :: mu = i+: (40/3)*rp*rq, ii+: (44/75)*rp*rq; lam = i+: (-10/21)*rp, ii+: (110/39)*rp
+[PASS] U2: exact: on Q = {|z| <= zeta, X^2+Y^2 <= zeta^6}, |eps| <= eps0: C stays invertible with node inertia; (X,Y) slaved to z by contraction (q1 <= 1/2), |e| <= E m^4, |e'| <= E' m^3, m^6 = z^6+|eps|^3 :: zeta, eps0: i 1/20, 1/62500; ii 1/500, 1/2250000; E, E' (i) 10.69 9.47, (ii) 3.22 3.13
+[PASS] U3: exact: h(z) = z^3 - mu eps z + e(z) has exactly ONE root in |z| <= zeta for -eps0 <= eps < 0 and exactly THREE for 0 < eps <= eps0 (monotone pieces + sign changes): 1 resp. 3 zeros of the Pauli map in the shifted ball :: t_b, t_a (i) 3.319 4.979, (ii) 0.963 1.446
+[PASS] U4: exact: D-index = -sign det L * sign h': (line, emitted pair) = (-1,+1,+1) for eps > 0, (+1) for eps < 0 at +x0, reversed at -x0; sum = ball degree :: sign det L: i+:- i-:+ ii+:- ii-:+
+[PASS] U5: control (non-vacuity): the exact conditions of U2/U3 fail at sigma0 = 1/100 (i), 1/1000 (ii), i.e. eps0 = 1e-4, 1e-6
+[PASS] UF1 FLOAT: direct Schur at kappa_node + eps, eps = +-0.6 eps0, 4 nodes: Newton gives 3 (eps > 0) / 1 (eps < 0) simple separated zeros, local degrees as U4, boundary-sphere degree = node sign :: z/sqrt(eps) (i+): +0.000, +7.186, -7.186; degrees -1.000, +1.000, +1.000
+[PASS] UF2 FLOAT: +x0 Newton zeros = landed exact families (line root c; emitted pair cos x = 1 - J/(4k^2), cos z = (J+2)/(4k^2) - (4+J-J^2)/J, y = 0) :: max deviation 4.1e-08
+TOTAL: PASS=19 FAIL=0   (17 s)
+
+----- stderr -----
+

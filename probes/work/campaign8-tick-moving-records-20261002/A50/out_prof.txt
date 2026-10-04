@@ -1,0 +1,2 @@
+fast map vs build_hops: max diff 0.0e+00
+setup 0.424 s; seeds 0.23 ms; arrays 0.08 ms; evaluate 1.30 ms; residual len 684

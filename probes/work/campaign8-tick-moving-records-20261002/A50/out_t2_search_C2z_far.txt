@@ -1,0 +1,1 @@
+group C2z, places far, target T: 20 free seeds, 52 params, 20 starts

@@ -1,0 +1,5 @@
+batch kd_opp = 0.0 pi: 512 settings
+   336 x T {'ns': 12} | corners {'ns': 8}
+   112 x T {'+1': 12} | corners {'+1': 8}
+    64 x T {'-1': 12} | corners {'ns': 8}
+  all-20-scalar settings with any phase != +1: 0; all 20 = -1: 0

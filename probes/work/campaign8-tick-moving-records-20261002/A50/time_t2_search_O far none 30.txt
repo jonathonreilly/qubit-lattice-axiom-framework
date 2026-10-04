@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/private/tmp/claude-501/-Users-jonreilly-Projects-Physics--claude-worktrees-focused-noyce-9a3983/34c0b720-f781-4af0-9bb7-5d2e1b60d22e/scratchpad/c8/A50/t2_search.py", line 18, in <module>
+    gname, pname, target = sys.argv[1], sys.argv[2], sys.argv[3]
+                                        ~~~~~~~~^^^
+IndexError: list index out of range
+        0.37 real         0.26 user         0.04 sys
+            78528512  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10473  page reclaims
+                 117  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 531  voluntary context switches
+                 178  involuntary context switches
+          3607429367  instructions retired
+          1196896055  cycles elapsed
+            56492488  peak memory footprint

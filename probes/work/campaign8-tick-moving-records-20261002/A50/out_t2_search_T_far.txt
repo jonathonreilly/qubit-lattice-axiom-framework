@@ -1,0 +1,6 @@
+group T, places far, target none: 4 free seeds, 8 params, 25 starts
+   outcomes: {'scalar': 24, 'not scalar': 1}
+   smallest final residual norm (incl. target): 3.403e-15
+   theta patterns at scalar optima: {(((1-0j), 12),): 24}
+   wall 1.5 s
+done

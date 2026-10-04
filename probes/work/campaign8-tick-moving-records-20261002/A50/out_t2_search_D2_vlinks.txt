@@ -1,0 +1,8 @@
+group D2, places vlinks, target one: 12 free seeds, 12 params, 20 starts
+   outcomes: {'scalar': 11, 'not scalar': 9}
+   smallest final residual norm (incl. target): 1.066e-15
+   theta patterns at scalar optima: {(((-1-0j), 2), ((1-0j), 10)): 6, (((1+0j), 12),): 1, (((-1+0j), 4), ((1+0j), 8)): 4}
+   example with a -1 (start 0): thetas {'+x-x+y': (1-0j), '+x-x-y': (1-0j), '+x-x+z': (1-0j), '+x-x-z': (1-0j), '+x+y-y': (-1-0j), '+x+z-z': (1-0j), '-x+y-y': (-1-0j), '-x+z-z': (1-0j), '+y-y+z': (1-0j), '+y-y-z': (1-0j), '+y+z-z': (1+0j), '-y+z-z': (1+0j)}
+      seed rotations (SO(3)) at non-link seed places: {'(0, 0, 0)': [[1.0, -0.0, 0.0], [-0.0, -1.0, 0.0], [0.0, 0.0, -1.0]]}
+   wall 4.2 s
+done

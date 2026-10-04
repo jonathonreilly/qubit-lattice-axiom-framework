@@ -1,0 +1,6 @@
+group T, places vlinks, target one: 4 free seeds, 4 params, 20 starts
+   outcomes: {'scalar': 4, 'not scalar': 16}
+   smallest final residual norm (incl. target): 4.783e+00
+   theta patterns at scalar optima: {(((1+0j), 12),): 4}
+   wall 2.8 s
+done

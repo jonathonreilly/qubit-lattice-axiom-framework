@@ -1,0 +1,6 @@
+{
+"f_old": "A half-turn of the grid always makes the two opposite hops of a charge commute, so the charges behave as bosons.",
+"f_new": "A half-turn of the grid always makes the two opposite hops of a charge commute, so the charges behave as bosons. A50 extends this to hops that turn each place's possibilities along the way by any amount (exact for that class).",
+"a48_tail": "Keeping only one half-turn would allow electron-like charges, but the grid's turns include all three.",
+"a50_bullet": "- **Richer ways of building the charges' hops do not make them electron-like either (A50; its key steps rechecked by me, plus my own scan).** Letting the places along a charge's way turn their possibilities by any amount, not just by the simple flips, still gives bosons under the grid's 24 turns (exact for this class). Keeping only one half-turn does allow the electron-like sign, so the method finds it when it exists. A richer family, in which the corner's possibilities are flipped depending on neighbouring links and pairs of links pick up signs, gives the electron-like sign for some exchanges but never for all of them at once: my scan of 2,048 settings found a consistent sign for every exchange only for bosons. Still open: hop dressings that run around closed loops, and constraints that tie the corner's possibilities to its links."
+}

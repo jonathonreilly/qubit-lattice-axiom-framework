@@ -1,0 +1,3 @@
+fast map vs build_hops: max diff 0.0e+00
+group C2z, window axis (13 places), target T, 76 params, 2 starts
+   start 0: nfev 1062, status 2, cost 9.63e+00, 132.4 s

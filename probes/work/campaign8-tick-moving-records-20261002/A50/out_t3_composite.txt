@@ -1,0 +1,11 @@
+(a) SWAP-type, junction (+x,-x,+z): scalar fit residual 0.968 (nonzero = not scalar)
+    holonomy = SWAP(v,e-x) SWAP(e+x,e+z) on its support: residual 0.0e+00; support rank 16
+    holonomy eigenvalues on support: {np.float64(1.0): 10, np.float64(-1.0): 6}
+(b) CZ-type O-covariant, 18 parameter sets; covariance residual (C4z, C3, C2x) 7.2e-15
+     2 x  T-junctions {(1+0j): 12} | corners {(1-0j): 8}
+     1 x  T-junctions {(-1+0j): 12} | corners {'ns': 8}
+    14 x  T-junctions {'ns': 12} | corners {'ns': 8}
+     1 x  T-junctions {(1-0j): 12} | corners {(1+0j): 8}
+done
+(b') T-junction -1 cases:
+    k_opp/pi 0.5000, k_perp/pi 0.0000, J {'pair-opp': 0, 'with-opp': 0, 'perp-perp': 1}: 24-turn covariance 2.7e-15; T residual max 3.6e-15; corner residuals min 1.000 max 1.000

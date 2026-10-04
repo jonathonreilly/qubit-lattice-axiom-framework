@@ -1,0 +1,15 @@
+group O (24 turns), window 27 places, 60 samples per mode
+ cliff-sparse {'n': 60, 'T scalar': 15, 'all 20 scalar': 14}
+              T-junction patterns: {'all +1': 15}
+              corner patterns (all-20-scalar samples): {'corner all -1': 4, 'corner all +1': 10}
+ cont-sparse  {'n': 60}
+              T-junction patterns: {}
+ cliff-dense  {'n': 60}
+              T-junction patterns: {}
+ cont-dense   {'n': 60}
+              T-junction patterns: {}
+ axis-only    {'n': 60, 'T scalar': 21, 'all 20 scalar': 21}
+              T-junction patterns: {'all +1': 21}
+              corner patterns (all-20-scalar samples): {'corner all -1': 3, 'corner all +1': 18}
+covariance residual (spot checks): 1.1e-15
+done

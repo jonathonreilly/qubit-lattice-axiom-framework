@@ -1,0 +1,8 @@
+(1) own-link transport residual over 24 x 6: 2.9e-16
+(2) mode id    covariance residual (no Gauss bits) 5.8e-16
+(2) mode cliff covariance residual (no Gauss bits) 1.1e-15
+(2) mode cont  covariance residual (no Gauss bits) 1.1e-15
+(2) mode mix   covariance residual (no Gauss bits) 9.6e-16
+(3) factorized vs state-vector theta: 298 scalar junctions compared, max |diff|+res 6.7e-15
+(4) no-symmetry U(1) link dressing: theta = (0.929725+0.368256j) (|theta| 1.000000, res 1.3e-15); formula (0.929725+0.368256j)
+done

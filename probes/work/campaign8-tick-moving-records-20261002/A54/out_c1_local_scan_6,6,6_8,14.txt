@@ -1,0 +1,4 @@
+torus (6, 6, 6), records random, hops fermion: links 648, plaquettes 648; d + d^T check violations 0
+  R2 <=  8: unknowns  13608, equations  46008, rank  12527, inconsistent rows  3410 -> no solution  (1.6 s)
+  R2 <= 14: unknowns  31752, equations  66744, rank  20303, inconsistent rows  2466 -> no solution  (2.0 s)
+done

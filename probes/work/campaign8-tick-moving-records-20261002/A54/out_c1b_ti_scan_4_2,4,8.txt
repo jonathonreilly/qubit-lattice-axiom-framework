@@ -1,0 +1,5 @@
+TI scan, torus 4^3, hops boson, uniform records
+  R2 <=   2: orbit unknowns    12, equations    108, rank     9, inconsistent   40 -> no solution (0.0 s)
+  R2 <=   4: orbit unknowns    21, equations    168, rank    15, inconsistent    0 -> SOLVABLE (0.0 s)
+  R2 <=   8: orbit unknowns    63, equations    366, rank    54, inconsistent    0 -> SOLVABLE (0.0 s)
+done

@@ -1,0 +1,7 @@
+D=2 torus L=3: links 18; smallest range^2 (doubled units) admitting a solution: 9 of max 13; unknowns there 126 (0.0 s)
+D=2 torus L=4: links 32; smallest range^2 (doubled units) admitting a solution: 13 of max 25; unknowns there 384 (0.0 s)
+D=2 torus L=5: links 50; smallest range^2 (doubled units) admitting a solution: 25 of max 41; unknowns there 1050 (0.0 s)
+D=2 torus L=6: links 72; smallest range^2 (doubled units) admitting a solution: 37 of max 61; unknowns there 2016 (0.0 s)
+D=2 torus L=7: links 98; smallest range^2 (doubled units) admitting a solution: 49 of max 85; unknowns there 3822 (0.1 s)
+D=2 torus L=8: links 128; smallest range^2 (doubled units) admitting a solution: 65 of max 113; unknowns there 6912 (0.3 s)
+done

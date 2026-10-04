@@ -1,0 +1,13 @@
+torus (4, 4, 5), records uniform, hops fermion: links 240, plaquettes 240; d + d^T check violations 0
+  R2 <=  2: unknowns    960, equations   3840, rank    799, inconsistent rows  1051 -> no solution  (0.0 s)
+  R2 <=  4: unknowns   1680, equations   7280, rank   1279, inconsistent rows  1594 -> no solution  (0.1 s)
+  R2 <=  6: unknowns   3600, equations  13360, rank   3199, inconsistent rows   799 -> no solution  (0.2 s)
+  R2 <=  8: unknowns   5040, equations  15600, rank   4559, inconsistent rows   599 -> no solution  (0.2 s)
+  R2 <= 10: unknowns   6960, equations  15600, rank   4559, inconsistent rows   599 -> no solution  (0.2 s)
+  R2 <= 12: unknowns   7920, equations  18800, rank   5519, inconsistent rows   692 -> no solution  (0.3 s)
+  R2 <= 14: unknowns  11760, equations  21360, rank   7395, inconsistent rows    64 -> no solution  (0.4 s)
+  R2 <= 16: unknowns  12240, equations  22480, rank   7715, inconsistent rows    80 -> no solution  (0.4 s)
+  R2 <= 18: unknowns  14480, equations  23960, rank   8919, inconsistent rows    80 -> no solution  (0.5 s)
+  R2 <= 20: unknowns  16400, equations  24680, rank   9505, inconsistent rows     0 -> SOLVABLE  (0.5 s)
+  threshold R2 = 20 (torus max 50)
+done

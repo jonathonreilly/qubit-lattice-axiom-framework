@@ -1,0 +1,6 @@
+{
+"a52_tail": "and the corner records must exist (decision 29). Whether light itself really forms on the cubic grid is still not established.",
+"a54_bullet": "- **Light's extra loop factors are a real change, not a relabeling (A54; its key lemma rechecked by me).** In empty space light behaves exactly as before, but the change that would undo the extra factors needs a thread through every corner of the grid; no local relabeling does it (exact for the relabelings tested, with a general argument). If one did, the electron-like charges would turn back into ordinary ones, which cannot happen in three dimensions (it can in one). In physics terms, light with electron-like charges is a different phase of light from light with ordinary charges (a comparison). The sign of light's loop coupling decides which flux the charges feel: one sign gives the half-turn flux and Dirac-like charges (exact in the simplified two-state model).",
+"d29_old": "light's loop rule carries extra field factors (both within your decision 22 answer)",
+"d29_new": "light's loop rule carries extra field factors (both within your decision 22 answer; with charges present this is a real change of light's rule, not a relabeling, A54)"
+}

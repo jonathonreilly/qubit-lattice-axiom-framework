@@ -1,0 +1,5 @@
+  R2 <=  4: unknowns   1536, rank   1086, inconsistent  27099 -> no solution (2.2 s)
+  R2 <=  8: unknowns   4224, rank   3678, inconsistent  27724 -> no solution (11.1 s)
+  R2 <= 12: unknowns   6528, rank   4446, inconsistent  27918 -> no solution (17.5 s)
+  R2 <= 16: unknowns   9888, rank   6060, inconsistent      0 -> SOLVABLE on the sample (30.6 s)
+done

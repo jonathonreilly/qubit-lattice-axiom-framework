@@ -1,0 +1,2 @@
+  R2 <=  4: unknowns   1536, rank   1086, inconsistent 149975 -> no solution (12.2 s)
+  R2 <=  8: unknowns   4224, rank   3678, inconsistent 158153 -> no solution (65.1 s)

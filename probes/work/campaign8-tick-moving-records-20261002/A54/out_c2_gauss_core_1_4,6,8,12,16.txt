@@ -1,0 +1,6 @@
+D=1 torus L=4: links 4; smallest range^2 (doubled units) admitting a solution: 1 of max 9; unknowns there 8 (0.0 s)
+D=1 torus L=6: links 6; smallest range^2 (doubled units) admitting a solution: 1 of max 25; unknowns there 12 (0.0 s)
+D=1 torus L=8: links 8; smallest range^2 (doubled units) admitting a solution: 1 of max 49; unknowns there 16 (0.0 s)
+D=1 torus L=12: links 12; smallest range^2 (doubled units) admitting a solution: 1 of max 121; unknowns there 24 (0.0 s)
+D=1 torus L=16: links 16; smallest range^2 (doubled units) admitting a solution: 1 of max 225; unknowns there 32 (0.0 s)
+done

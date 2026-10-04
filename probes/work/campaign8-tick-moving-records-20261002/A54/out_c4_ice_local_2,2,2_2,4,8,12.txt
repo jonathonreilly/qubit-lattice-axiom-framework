@@ -1,0 +1,6 @@
+torus (2, 2, 2), records uniform: ice states 864 (complete), flip equations 6912 (0.0 s)
+  R2 <=  2: unknowns    120, rank     68, inconsistent      0 -> SOLVABLE on the sample (0.1 s)
+  R2 <=  4: unknowns    156, rank     80, inconsistent      0 -> SOLVABLE on the sample (0.1 s)
+  R2 <=  8: unknowns    288, rank     95, inconsistent      0 -> SOLVABLE on the sample (0.1 s)
+  R2 <= 12: unknowns    300, rank     95, inconsistent      0 -> SOLVABLE on the sample (0.1 s)
+done

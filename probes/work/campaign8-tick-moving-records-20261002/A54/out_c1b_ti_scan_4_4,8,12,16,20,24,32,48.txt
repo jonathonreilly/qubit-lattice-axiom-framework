@@ -1,0 +1,10 @@
+TI scan, torus 4^3, hops fermion, uniform records
+  R2 <=   4: orbit unknowns    21, equations    168, rank    15, inconsistent   34 -> no solution (0.0 s)
+  R2 <=   8: orbit unknowns    63, equations    366, rank    54, inconsistent   70 -> no solution (0.0 s)
+  R2 <=  12: orbit unknowns    99, equations    438, rank    66, inconsistent   70 -> no solution (0.0 s)
+  R2 <=  16: orbit unknowns   156, equations    498, rank    96, inconsistent   72 -> no solution (0.0 s)
+  R2 <=  20: orbit unknowns   198, equations    510, rank   102, inconsistent   40 -> no solution (0.0 s)
+  R2 <=  24: orbit unknowns   240, equations    552, rank   117, inconsistent   44 -> no solution (0.0 s)
+  R2 <=  32: orbit unknowns   273, equations    552, rank   120, inconsistent   32 -> no solution (0.0 s)
+  R2 <=  48: orbit unknowns   297, equations    552, rank   120, inconsistent   32 -> no solution (0.0 s)
+done

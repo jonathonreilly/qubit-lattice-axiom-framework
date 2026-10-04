@@ -1,0 +1,4 @@
+torus (4, 4, 4), records uniform, hops ferm+conj: links 192, plaquettes 192; d + d^T check violations 0
+  R2 <=  4: unknowns   1344, equations   5760, rank   1023, inconsistent rows  1313 -> no solution  (0.1 s)
+  R2 <=  8: unknowns   4032, equations  11904, rank   3615, inconsistent rows   422 -> no solution  (0.2 s)
+done

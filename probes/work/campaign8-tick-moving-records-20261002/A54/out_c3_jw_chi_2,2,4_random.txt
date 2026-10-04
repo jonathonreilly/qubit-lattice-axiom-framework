@@ -1,0 +1,7 @@
+torus (2, 2, 4), records random: B asymmetric entries 0, diagonal ones 0, plaquettes with M dp != 0: 0
+  S_p phases: odd (i or -i) 0; linear part b: found
+  (1) chi X^{dp} chi == S_p exactly (Pauli strings incl. phase): mismatches 0 of 48
+  (2) spin-1/2 ice BFS: states 60003 (capped), edges 275377; edges where chi fails 0; BFS sign inconsistencies 0; chi * chi_BFS takes values [1]
+  (3) chi t_l chi = X_l * prod_{v in J(l)} G_v: form mismatches 0; pair rule (anticommute iff one shared corner) violations 0; anticommutations with bare rings 0; Gauss-string length min/mean/max 0/3.0/13
+  (4) chi = CZ on 208 link pairs; farthest coupled pair distance^2 12 (torus max 24)
+done (4.9 s)

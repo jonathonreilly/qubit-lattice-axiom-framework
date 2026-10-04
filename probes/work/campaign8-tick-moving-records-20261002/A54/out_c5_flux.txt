@@ -1,0 +1,12 @@
+cube (uniform records), charge-free dim 32, K=+1: E0 = -6.000000, degeneracy 1, <S_p> in ground state = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0], gap 4.000
+cube (uniform records), charge-free dim 32, K=-1: E0 = -6.000000, degeneracy 1, <S_p> in ground state = [-1.0, -1.0, -1.0, -1.0, -1.0, -1.0], gap 4.000
+   S_p hermiticity residual 0.0e+00; phases of the six S_p: [0, 0, 0, 0, 0, 0]
+cube (random records), charge-free dim 32, K=+1: E0 = -6.000000, degeneracy 1, <S_p> in ground state = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0], gap 4.000
+cube (random records), charge-free dim 32, K=-1: E0 = -6.000000, degeneracy 1, <S_p> in ground state = [-1.0, -1.0, -1.0, -1.0, -1.0, -1.0], gap 4.000
+   S_p hermiticity residual 0.0e+00; phases of the six S_p: [0, 2, 0, 0, 0, 0]
+torus (2, 2, 2): 11 independent relations; violated by uniform S=+1: 0, by uniform S=-1: 0; eta found (|eta| = 8 links): S_p not flipped 0; hop sign rule violations 0
+torus (2, 2, 3): 15 independent relations; violated by uniform S=+1: 0, by uniform S=-1: 0; eta found (|eta| = 12 links): S_p not flipped 0; hop sign rule violations 0
+torus (3, 3, 3): 30 independent relations; violated by uniform S=+1: 0, by uniform S=-1: 9; no eta (odd plaquette count in some torus plane)
+torus (4, 4, 4): 67 independent relations; violated by uniform S=+1: 0, by uniform S=-1: 0; eta found (|eta| = 64 links): S_p not flipped 0; hop sign rule violations 0
+torus (3, 4, 4): 51 independent relations; violated by uniform S=+1: 0, by uniform S=-1: 0; eta found (|eta| = 48 links): S_p not flipped 0; hop sign rule violations 0
+done (0.0 s)

@@ -12,8 +12,9 @@ checks the source packet needed for re-audit:
   so the tick/edge tie is used as a supplied premise rather than silently
   assumed to be an established bridge;
 * the physical-c normalization used by this row is explicit; and
-* with those supplied inputs, l_P / c equals t_P at the note's stated
-  tolerance.
+* the physical spacing ratio is supplied/open; r=1 is a reference fixture;
+* with those supplied inputs, l_P / c agrees with an independent rounded
+  Planck-time fixture at the note's stated tolerance.
 """
 
 from __future__ import annotations
@@ -130,6 +131,14 @@ def main() -> int:
         scale_node.get("note", ""),
     )
 
+    check(
+        "units reference does not derive the physical spacing ratio",
+        "It does not assert `a/l_P = 1` as a derived theorem" in scale_note.read_text()
+        and "The conditional result is `a_τ=r t_P`" in note_text
+        and "`r=1` is a fixture, not an adopted physical theorem" in note_text,
+        "spacing self-consistency remains a separate open gravity derivation",
+    )
+
     section("A2. kinetic-form c bridge")
     kinetic_node = axiom_nodes.get("nodes", {}).get("kinetic_isotropy_primitive", {})
     kinetic_text = (
@@ -197,7 +206,7 @@ def main() -> int:
     )
     check(
         "source note states the Planck-time identification conditionally on the supplied tie",
-        "Then, conditional on the tie, the minimum time step is the Planck time" in note_text
+        "Then, conditional on the tie and the chosen `r=1` fixture, the reference tick is the Planck time" in note_text
         and "this step is\n   a supplied premise, not a derived bridge" in note_text,
         "tick/edge tie used as a supplied premise",
     )

@@ -2,8 +2,11 @@
 
 **Date:** 2026-06-08 (2026-06-16 kinetic-form `c` bridge repair; 2026-10-03 companion-status repair)
 **Claim type:** bounded_theorem
-**Scope:** bounded-support re-audit packet. The Planck-time arithmetic closes
-from the registered scale-reference primitive, the registered
+**Scope:** bounded-support re-audit packet. Conditional reference-unit
+arithmetic: if the physical spacing ratio `r=a_s/l_P` and the tick/edge tie
+are supplied, `a_τ=r t_P`. The numerical fixture chooses `r=1`; this does
+not derive the physical spacing ratio. The packet uses the registered
+scale-reference primitive, the registered
 kinetic-isotropy primitive, the tick/edge tie of the companion row (an open
 gate, used here as a supplied premise), and the explicit physical-`c` unit
 normalization. This row does not derive the
@@ -42,18 +45,24 @@ the structural OS0 normalization `c_t = c_s`, i.e. the lattice-unit bridge
 seconds/metres value. The approved *scale-reference* primitive is the
 framework's single dimensionful ruler. With the
 supplied tick/edge tie, the kinetic-form bridge, and explicit physical-`c` unit
-normalization, the arithmetic identifies `a_τ = l_P/c = t_P`.
+normalization, the arithmetic gives `a_τ = a_s/c = r t_P`, with
+`r=a_s/l_P` still supplied/open. The displayed fixture chooses `r=1`.
 
 ## Safe statement
 
-**Bounded theorem for re-audit (the one accepted scale reference fixes both
-minima once the tick/edge tie, an open gate, is supplied and read in SI units).**
+**Bounded theorem for re-audit (reference-unit arithmetic, conditional on
+the spacing ratio and tick/edge tie).** Let `r=a_s/l_P>0` denote the
+physical spacing ratio. The supplied tick/edge tie and physical-`c` conversion
+give `a_τ=a_s/c=r(l_P/c)=r t_P`. Equality `a_τ=t_P` requires `r=1`;
+the units reference alone does not prove this physical self-consistency.
 
-1. **The framework accepts one dimensionful scale reference: `a_s = l_P`.** The
+1. **The framework accepts one dimensionful scale reference.** The
    [`SCALE_REFERENCE_PRIMITIVE`](SCALE_REFERENCE_PRIMITIVE_NOTE.md) (owner-approved, registered in
    `docs/audit/data/axiom_premise_nodes.json`) declares the framework's **single** dimensionful
-   reference: `a⁻¹ = M_Pl` (the `PLANCK_SCALE_LANE_STATUS` package pin). Hence the lattice spacing
-   `a_s` = the **Planck length** `l_P` — *already supplied*, carrying **zero** dimensionless content.
+   reference: `a⁻¹ = M_Pl` as the chosen units conversion. The primitive
+   explicitly does not assert `a/l_P = 1` as a derived theorem: physical
+   self-consistency remains an open gravity derivation. The numerical fixture
+   uses Planck reference units; it does not close that dimensionless ratio.
    Per `AXIOM_MINIMALITY_POLICY` §6 this is an approved framework primitive
    rather than a new axiom or bounded-status source. The
    independent audit lane still decides this row's actual status from the
@@ -77,32 +86,35 @@ minima once the tick/edge tie, an open gate, is supplied and read in SI units).*
    `c = 299792458 m/s` exactly as the physical-unit conversion from one
    edge/tick to seconds. That is a unit-normalization certificate, not a
    derivation of the physical light speed from this row.
-5. **Then, conditional on the tie, the minimum time step is the Planck time:** `a_τ = l_P/c = t_P`
+5. **Then, conditional on the tie and the chosen `r=1` fixture, the reference tick is the Planck time:** `a_τ = l_P/c = t_P`
    (`5.3912464×10^-44 s`, verified by the runner at rounded-fixture relative difference `< 1e-7`).
-6. **One scale reference, two minima inside the supplied bridge.** The single approved scale-reference
-   primitive (`a⁻¹ = M_Pl`) fixes **both** the minimum length (`a_s = l_P`) **and** the
-   minimum time step (`a_τ = t_P`), because the one-tick-one-edge tie welds them. This is consistent
+6. **One scale reference, a conditional length/time ratio.** The supplied
+   spacing `a_s=r l_P` and tick/edge tie give `a_τ=r t_P`. For the reference
+   fixture `r=1`, the two displayed values are `l_P` and `t_P`. No physical
+   minimum is proved equal to its reference unit by that convention. This is consistent
    with the clock-rate no-go ([`POST_RECORD_CLOCK_RATE_INTERFACE`](POST_RECORD_CLOCK_RATE_INTERFACE_2026-06-06.md),
    a `no_go` row, currently `unaudited`): the **records** supply the tick/edge *count* (the structure), not the physical
-   rate; the **rate** comes from the accepted scale reference. No contradiction — the no-go is about
-   the records, the unit is the one accepted anchor.
+   rate; a physical rate still needs the supplied spacing and clock bridge.
+   The accepted reference supplies units without selecting that bridge.
 
 ## The correction this records
 
 The companion note framed the absolute scale as "an open no-go needing a supplied Planck/clock
 primitive." That primitive is **already in the framework** (the registered scale-reference primitive).
-So the picture completes:
+The registered ruler supplies units; the physical spacing and clock bridges
+remain separate obligations:
 
 - the records and the supplied tick/edge tie supply the **dimensionless structure** (one tick = one edge; the cone);
 - the one accepted dimensionful anchor (`a⁻¹ = M_Pl`) supplies the **unit**;
-- together they fix **both** the minimum length (`l_P`) and the minimum time step (`t_P`) — the time
-  minimum costs **no extra primitive** (the same one ruler serves both).
+- the supplied spacing ratio and tick/edge bridge give `a_τ=r t_P`;
+  `r=1` is the reference fixture here, not a derived physical minimum.
 
 ## Boundary (honest)
 
-- **Zero new dimensionless content.** `t_P = l_P/c` is the standard definitional relation; the content
-  here is *structural*: the framework's **single** anchor + the locality tie suffice for both minima
-  (a minimality statement), and the minimum time step is *identified* as the Planck time.
+- **Zero newly adopted dimensionless content.** `t_P = l_P/c` is the
+  supplied definitional relation. The spacing ratio `r` is not derived or
+  registered as a primitive. The conditional result is `a_τ=r t_P`; the
+  numerical choice `r=1` is a fixture, not an adopted physical theorem.
 - The scale anchor itself is the accepted (owner-approved) primitive, not a derivation — the framework
   carries one ruler, as the scale-reference primitive states.
 - The kinetic-form bridge itself is the accepted kinetic-isotropy primitive:
@@ -110,7 +122,8 @@ So the picture completes:
 - The tick/edge row is an `open_gate` with current effective status
   `unaudited`. This packet uses its tie as a supplied one-hop premise from the
   record/update tick to the lattice edge/time-step ratio; the Planck-time
-  identification holds only if that gate is closed by a bridge theorem.
+  identification with a physical minimum also needs the spacing ratio
+  `r=1` to be derived or explicitly supplied, in addition to that bridge.
 - `c` is used here as the physical unit conversion `299792458 m/s`; the
   runner checks the normalization explicitly. The emergent-`c` side is the
   lattice-unit `c_lattice = 1` from the kinetic primitive; the SI `c` is a
@@ -123,7 +136,8 @@ The scale reference is an **approved framework primitive**
 `AXIOM_MINIMALITY_POLICY` §6). Per that policy, approved primitives **chain-satisfy dependencies
 without bounding downstream status**. No admission class exists; unresolved
 derivation conditions remain open and carry zero premise weight.
-The scale reference is not the blocker in this row. The kinetic-form bridge is
+The registered units reference is not itself a blocker. The physical
+spacing-ratio and tick/edge suppliers remain open. The kinetic-form bridge is
 also now explicit: the approved kinetic-isotropy primitive supplies
 `c_lattice = 1` at structural scope. The physical-`c` normalization is exposed
 as an exact SI unit-conversion check, not hidden as a derived dynamics claim.
@@ -135,8 +149,10 @@ accepts the repaired bridge surface.
 No **new** axiom or primitive. It *uses* the
 already-approved scale-reference primitive (`a⁻¹ = M_Pl`), the
 already-approved kinetic-isotropy primitive (`c_t = c_s`, structural
-kinetic form only), and the companion locality tie; it adds no second
-dimensionful reference and no dimensionless dynamical value. Finite,
+kinetic form only), and the supplied companion locality tie. The spacing
+ratio `r` remains conditional/open rather than becoming a primitive; this
+packet adds no second dimensionful reference or adopted dimensionless
+dynamical value. Finite,
 memory-safe arithmetic + a tiny BFS.
 
 ## Runner check breakdown
@@ -151,7 +167,7 @@ the physical-`c` normalization is explicit and
 bounded-support conclusion is stated without adding a new axiom, admission,
 primitive, or physical-`c` derivation, and the clock-rate no-go's current
 ledger status is matched. Expected
-`runner_check_breakdown = {A: 20, B: 0, C: 0, D: 0, total_pass: 20}`.
+`runner_check_breakdown = {A: 21, B: 0, C: 0, D: 0, total_pass: 21}`.
 
 The single-clock evolution theorem is conditional on its supplied axis, step
 and single-clock clauses; it does not derive that supply. See
@@ -170,19 +186,22 @@ and `G=6.67430×10^-11 m^3 kg^-1 s^-2`. Their relative difference is an
 arithmetic consistency check of these rounded fixtures. It does not
 assert empirical accuracy at `10^-7`, derive G or ħ, or promote those
 fixtures to framework primitives. The formula `l_P/c=t_P` is conditional
-on the standard supplied definitions; identifying a physical update tick
-with this quantity still requires the open tick/edge bridge.
+on the standard supplied definitions. Identifying a physical update tick
+with this quantity requires both the open tick/edge bridge and the supplied
+or derived spacing ratio `r=1`.
 
 ## Honest auditor read
 
-The framework's registered scale-reference primitive fixes the lattice spacing
-to the Planck length (`a⁻¹ = M_Pl`). The registered kinetic-isotropy primitive
+The framework's registered scale-reference primitive chooses Planck
+reference units (`a⁻¹ = M_Pl`); it does not derive the physical ratio
+`a/l_P = 1`. The registered kinetic-isotropy primitive
 authorizes the lattice-unit edge/tick normalization (`c_lattice = 1`) at
 structural scope only. The companion one-tick-one-edge row is an
 `open_gate` (`unaudited`), so `a_τ = a_s/c` holds only when that tie is
 supplied; with the explicit SI `c` normalization this gives
-`a_τ = l_P/c = t_P`, verified at rounded-fixture relative difference `< 1e-7`. The single
-accepted dimensionful anchor then fixes both the spatial and temporal minima.
+`a_τ = a_s/c = r t_P`. Only the supplied reference fixture `r=1` gives
+`a_τ = l_P/c = t_P`, checked at rounded-fixture relative difference
+`< 1e-7`. Neither physical minimum is selected by that numerical check.
 The note adds no dimensionless content and no new primitive. This row's
 effective status remains for the audit lane until re-audit.
 

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/min_time_step_is_planck_time_from_scale_reference_primitive_runner.py
-runner_sha256: 954035d850299ef9d36ce60dda0324d2eb39a190d49d286c0a081b41bd5a824d
-input_fingerprint_sha256: 84ad7d0da4b643e7d30b305abbe17d2e6bd8f156b69d801790410a93f421e2b8
+runner_sha256: b8c38640f035d723affc64bd8b9f68a379d4ac983dc497fc5393ed86e3ae45ae
+input_fingerprint_sha256: 359b6b080c5a49f69552f09515b8c904f793bdc354e1fafcab641c5374642610
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.04
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 
@@ -13,6 +13,7 @@ A1. registered single scale-reference primitive
 ========================================================================================
   [PASS] scale_reference_primitive is registered in axiom_premise_nodes  | path=docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md
   [PASS] scale primitive is described as units conversion / no dimensionless content  | Explicitly approved framework primitive for the single dimensionful scale reference a^{-1}. Units conversion only: carries no dimensionless content and does not assert a/l_P=1. Dependencies on this primitive chain-satisfy without bounding downstream rows.
+  [PASS] units reference does not derive the physical spacing ratio  | spacing self-consistency remains a separate open gravity derivation
 
 ========================================================================================
 A2. kinetic-form c bridge
@@ -54,8 +55,8 @@ A5. bounded-support minimality boundary
   [PASS] safe conclusion is conditional on the open tick/edge gate plus explicit c conversion  | supplied tie plus unit conversion
   [PASS] source note states the clock-rate no-go row's current claim type and status  | no_go / unaudited
 
-runner_check_breakdown = {A: 20, B: 0, C: 0, D: 0, total_pass: 20}
-TOTAL: PASS=20 FAIL=0
+runner_check_breakdown = {A: 21, B: 0, C: 0, D: 0, total_pass: 21}
+TOTAL: PASS=21 FAIL=0
 
 ----- stderr -----
 

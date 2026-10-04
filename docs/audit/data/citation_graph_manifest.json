@@ -1,6 +1,6 @@
 {
- "edge_count": 15341,
- "node_count": 6843,
+ "edge_count": 15368,
+ "node_count": 6851,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3582,6 +3582,10 @@
    "deps_hash": "4fbc4ff44eb4",
    "out_degree": 1
   },
+  "composite_site_network_flux_free_anisotropic_touchings_exist_with_unit_charge_by_interval_gap_certificates_and_lattice_chern_numbers_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "f9e925fb6836",
+   "out_degree": 4
+  },
   "composite_site_network_flux_free_bands_carry_a_chern_vector_odd_in_the_odd_term_with_a_closed_form_below_the_split_bounded_theorem_note_2026-09-26": {
    "deps_hash": "74980b5c36f3",
    "out_degree": 2
@@ -3589,6 +3593,18 @@
   "composite_site_network_flux_free_bands_with_the_odd_term_two_certified_touchings_of_opposite_charge_become_six_at_kappa_root_3_over_20_bounded_theorem_note_2026-09-26": {
    "deps_hash": "33d1317fbd29",
    "out_degree": 5
+  },
+  "composite_site_network_flux_free_birth_touchings_at_kappa_c_are_exact_cubic_points_of_charge_one_for_every_j_between_0_and_2_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "eac342b79c03",
+   "out_degree": 4
+  },
+  "composite_site_network_flux_free_every_touching_of_the_three_families_has_an_exact_charge_for_all_couplings_and_the_charges_sum_to_zero_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "eac342b79c03",
+   "out_degree": 4
+  },
+  "composite_site_network_flux_free_for_j_at_least_two_the_line_family_brings_four_nodes_above_kappa_plus_and_the_first_plane_family_has_no_handover_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "0227049d0ee4",
+   "out_degree": 3
   },
   "composite_site_network_flux_free_handover_touchings_are_exact_charge_two_points_for_every_j_between_0_and_2_bounded_theorem_note_2026-09-28": {
    "deps_hash": "2cc8a89d4d3c",
@@ -3601,6 +3617,22 @@
   "composite_site_network_flux_free_sector_lowest_pair_excitation_falls_as_one_over_l_to_4000_sites_and_the_odd_term_thins_the_low_levels_bounded_theorem_note_2026-09-25": {
    "deps_hash": "1b272430e7d1",
    "out_degree": 4
+  },
+  "composite_site_network_flux_free_slab_surface_zero_modes_form_arcs_between_projected_touchings_of_opposite_charge_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "0227049d0ee4",
+   "out_degree": 3
+  },
+  "composite_site_network_flux_free_the_cell_cut_slab_has_an_exact_surface_zero_line_at_f1_one_half_for_equal_in_plane_couplings_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "0227049d0ee4",
+   "out_degree": 3
+  },
+  "composite_site_network_flux_free_the_cell_cut_surface_arc_at_kappa_three_tenths_is_an_interval_certified_algebraic_curve_ending_at_the_line_node_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "0227049d0ee4",
+   "out_degree": 3
+  },
+  "composite_site_network_flux_free_the_line_touchings_and_their_charges_are_exact_for_general_couplings_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "0227049d0ee4",
+   "out_degree": 3
   },
   "composite_site_network_flux_free_touchings_at_kappa_one_half_are_exact_charge_two_points_bounded_theorem_note_2026-09-27": {
    "deps_hash": "10b980748499",

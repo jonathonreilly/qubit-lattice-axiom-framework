@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_touching_families_for_j_at_least_two_2026_10_01.py
+runner_sha256: 6b04078628a3af81ac5639dfb77bbbd8b18ccb4172402cca6f021b73cad710fd
+timeout_sec: 1200
+exit_code: 0
+elapsed_sec: 98.99
+status: ok
+----- stdout -----
+[PASS] 1 families: det H, its 3 gradient components, e3, e4 vanish on line, plane (ii), plane (iii) for every kappa, J :: 18 remainders = 0 modulo the family polynomials; in (iii) s is the formal root of s^2 = 5J^2 + 8J + J(J+2)/K (both signs)
+[PASS] 2 line (i), J > 2: both roots in (-1,1) iff K >= K_+(J), none below (K_+(2) = 1/4, K_+(5/2) = 1, K_+(3) = (7+3 sqrt5)/8, K_+(4) = 7/4 + sqrt3) :: q(1) = J^2-4, q(-1) = J^2; Delta = 16K^2-4(J^2-2)K+1, disc_K = 16J^2(J^2-4), K+- roots, K+ K- = 1/16, K_+ increasing; K >= K_+: vertex in (0,1), q(+-1) > 0; K <= K_- < 1/4: q decreasing on [-1,1], q(1) > 0
+[PASS] 3 J = 2: Gamma = (0,0,0) (c = 1) is a line node for every kappa; the other root 1/(2K) - 1 lies in (-1,1) iff K > 1/4; D(Gamma) = 16(J-2)^2(J+2)^2 :: q(c; J=2) = (c-1)(4K(c+1)-2); c2 - 1 = (1-4K)/(2K), c2 + 1 = 1/(2K); D(Gamma) = 16*(J - 2)**2*(J + 2)**2
+[PASS] 4 plane (ii), on J >= 2, real iff 2 <= J < 1 + sqrt5 and K >= K_c^2 = J(J+2)/[4(4+2J-J^2)], no upper limit for J >= 2 (c3 > -1 always); never for J >= 1 + sqrt5 or J < 0 :: J(c3-1) = J(J+2)/(4K)-(4+2J-J^2); K_c^2 - J/8 = J^3/[8(4+2J-J^2)] > 0 (c1 in [-1,1] implied); J(c3+1) = J(J+2)/(4K) + J^2 - 4 > 0 for J >= 2; c1 > 1 for J < 0
+[PASS] 5 plane (iii) never real for J >= 2, either sign of s: |cw|,|cg| <= 1 needs max(J,3J) <= e s <= min(J+4, 3J+4); for J > 2, 3J > J+4 :: at J = 2 it needs s = 6 but s^2 = 36 + 8/K; for 0 < J < 2 it reduces to e = +1, K >= K_h^2 (landed range)
+[PASS] 6 K_c^2 >= K_+ on [2, 1+sqrt5), equality only at J0 (root of J^3-4J-4); (ii) is born at K_c^2 from the line root c* = (J-2)(J+1)/(J+2), the smaller root c- for J < J0, the larger c+ for J > J0 :: A^2 - J^2(J^2-4) = 4(J^3-4J-4)^2/(J^2-2J-4)^2; quartic J^4-2J^3-4J^2+8J+8 has no root in [2, 3.3] (Sturm); c* - 1/(4K_c^2) = (J^3-4J-4)/(J(J+2)); J0 = 2.382975768
+[PASS] 7 every real family point (J != 0) has zero as an EXACT double level, outer levels +-sqrt(tr H^2/2), |outer| >= 2|J|; on the line exactly +-4|J| :: tr M = 0 and M[0,3] = 2J/z3 only, so tr H^2 >= 8J^2 > 0, and e3 = e4 = 0 there; line: e2 - 16J^2 = 0 modulo the line polynomial
+[PASS] 8 Gamma at J = 2 is semi-Dirac: Hessian of det H in f has rank 2, null vector (1,-1,0); det H on the line = 16(c-1)^2(4K(c+1)-2)^2 ~ x^4 (x^8 at K = 1/4) :: N = sum a m m^T = [[-128(16k^2+1), -128(16k^2+1), 256], [same], [256, 256, -512]], eigenvalues -128[16k^2+3 +- sqrt(256k^4-32k^2+9)] < 0, gradient 0, D|line = 16 q(c)^2
+[PASS] 9 J < 0: the line is that of |J| (q depends on J^2); no plane (ii) (c1 > 1); plane (iii) real only at J = -2 (the point Gamma); J -> -J is no symmetry of det H :: with m = -J: s^2 < m(5m-8) = (3m-4)^2 - 4(m-2)^2 < (3m-4)^2 blocks e = -1; e = +1 needs m <= 4/3 but s^2 >= 0 needs m > 8/5; all 16 sign changes of (k, z1, z2, w) fail; odd part of det H has 28 terms, proportional to J k^2
+[PASS] 10 closed-form real regions = independent exact counts (Sturm / rational inequalities) of distinct real family points at all rational couplings below :: 7680 couplings (J = n/8 in [-6,6] without 0, kappa = n/20 in (0,4]); mismatches line 0, plane (ii) 0, plane (iii) 0
+[PASS] cert (J, kappa) = (5/2, 99/100) just below kappa_+ = 1 :: gapped: K = 9801/10000 < K_+ = 1.0000000 (no family node); 9 levels, 0 cubes left, every cleared cube has 2 negative levels (counts [2]), lip 255.6; 22 s
+[PASS] cert (J, kappa) = (4, 1) gapped :: gapped: K = 1 < K_+ = 3.4820508 (no family node); 2 levels, 0 cubes left, every cleared cube has 2 negative levels (counts [2]), lip 276.5; 0 s
+[PASS] cert (J, kappa) = (4, 2) 4 line nodes, both roots :: 4 nodes (4 line, 0 plane (ii)); 13 levels, 29596 cubes left in 4 clusters, 1 node per non-Gamma cluster; Gamma-box uniqueness unchecked, counts [2], outer levels != 0; chirality -++-, sum 0; min Hessian pivot 8.8e+04, gap >= 2.4|f-f*| at every non-Gamma node; 12 s
+[PASS] cert (J, kappa) = (5/2, 3/2) 8 nodes :: 8 nodes (4 line, 4 plane (ii)); 13 levels, 52008 cubes left in 8 clusters, 1 node per non-Gamma cluster; Gamma-box uniqueness unchecked, counts [2], outer levels != 0; chirality -+-+++--, sum 0; min Hessian pivot 3.64e+03, gap >= 0.65|f-f*| at every non-Gamma node; 20 s
+[PASS] cert (J, kappa) = (2, 1) Gamma + 2 line + 4 plane (ii) :: 7 nodes (2 line, 4 plane (ii), Gamma); 13 levels, 165112 cubes left in 7 clusters, 1 node per non-Gamma cluster; Gamma-box uniqueness unchecked, counts [2], outer levels != 0; chirality -+0++--, sum 0; min Hessian pivot 4.27e+03, gap >= 0.96|f-f*| at every non-Gamma node; Gamma: no conical claim; 26 s
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_exact_line_touchings_and_charges_for_general_couplings_2026_10_01.py
+runner_sha256: b821dbc7a5d2ac828f92e76eab7abe6924866f8fe1d753f4459dbd94ae2ec733
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 24.82
+status: ok
+----- stdout -----
+[PASS] 1 even spectrum :: tr M = 0, mu^3 and mu^1 coefficients of det(mu-M) vanish identically in (z1,z2,z3,Jx,Jy,Jz,kappa): spec H = {+-l1,+-l2}, det H = l1^2 l2^2 >= 0, middle touching <=> det H = 0; det M and the mu^2 coeff invariant under f->-f and f1<->f2
+[PASS] 2 line determinant :: on (z,1/z,1): det H = 16 q(c)^2, q = 4k^2c^2 - 2JxJy c + Jz^2-Jx^2-Jy^2-4k^2; mu^2 coeff = 8[Jx^2+Jy^2+Jz^2+2Pc+4k^2(1-c^2)] = 16 Jz^2 at q = 0 (levels 0,0,+-4Jz); Jx=Jy=1 gives the landed 4k^2c^2-2c+J^2-4k^2-2
+[PASS] 3 double zero :: at q(c) = 0: e2(M) = 16 Jz^2, M Pt = 0, Pt^2 = e2 Pt, tr Pt = 2 e2 (Pt/e2 = rank-2 kernel projector), all sixteen 3x3 minors of M vanish (rank 2, adj = 0, grad det H = 0): a genuine double zero level, outer levels +-4Jz
+[PASS] 4 regime table :: q(1) = Jz^2-(Jx+Jy)^2, q(-1) = Jz^2-(Jx-Jy)^2, d^2-(4u+-P)^2 = 4u[(Jx+-Jy)^2-Jz^2] exact; Sturm root count of q in (-1,1) at 600 random rational couplings {'tri': 337, 'big': 84, 'small': 179} vs table (triangle: exactly one root c_- for every kappa; Jz>Jx+Jy: two iff 4k^2>JxJy and d^2>0; Jz<|Jx-Jy|: none): 0 mismatches
+[PASS] 5 exact charge :: Tr(Pt N1 Pt N2 Pt N3) = a(z-c), a = -2^15 Jz^3 k (P-4uc) F_c(c) mod q; T = Im Tr(P d1H P d2H P d3H) = -32 pi^3 k q'(c) F_c(c) sin(2 pi x)/Jz^3 = +64 pi^3 k d F_c(c_-) sin/Jz^3 (q' = -2d) and -64 pi^3 k d F_c(c_+) sin/Jz^3 (q' = +2d); partner node (1-x,x,0) opposite
+[PASS] 6 isotropic reduction :: F_c(Jx=Jy=1) = (J+1+c)((J+2)c+2+J-J^2), root c = (J-2)(J+1)/(J+2); T(general) = T(landed 32 pi^3 k d (J+2)(4k^2+1)F2 sin/(dU-V)) at 9 couplings, max rel diff 7.97e-48 (50 digits), sign F_c = sign F2
+[PASS] 7 sign analysis :: F_c lead coeff > 0, F_c(-1) = -(Jx+Jy)(Jx-Jy)^2-Jz^3 < 0, F_c(1) = (Jx+Jy+Jz)((Jx+Jy)^2+Jz(Jx+Jy)-Jz^2), F_c(c0) = (Jx+Jy+Jz)(Jy^2+Jz^2-Jx^2)(Jx^2+Jz^2-Jy^2)/(4JxJy), du/dc = -F_b/(2(1-c^2)^2) < 0 at c_- (c_- falls from c0 to -1); exact rational test at 300 triangle couplings x 83 kappa: charge +1 -> -1 exactly once iff |Jx^2-Jy^2| < Jz^2 (180 flip, 120 always -1): 0 mismatches
+[PASS] 8 exact rational grid :: independent exact tower arithmetic over Q, 2400 random rational couplings {'tri': 1309, 'big': 366, 'small': 725}, 1833 nodes (both roots): tr M = 0, kernel projector, e2 = 16Jz^2, R = a(z-c), a = -2^15 Jz^3 k (P-4uc) F_c(c) coordinate by coordinate, chirality = -sgn sign F_c: 0 mismatches [22 s]
+[PASS] 9 certified nodes A-E :: closed-form line nodes vs double-precision certified nodes of the anisotropic certificate (open PR 9419) (A (1,.8,1;.45), B (1.2,.8,1;.3), C (1,.8,1;.8), D (1.2,.8,1;.2), E (.9,1.1,1.3;.4)): max|x-f1| 4.7e-16; max|q| 1.1e-50; levels (-4Jz,0,0,4Jz) err 4.3e-50; det V closed form vs 50-digit kernel projector rel 8.8e-50, vs log det V rel 1.2e-14; chirality sign F_c = sign det V = -C (A,B,C: -1; D,E: +1); partner (1-x,x,0) opposite
+[PASS] 10 shear symmetry :: det M(Rf) - det M(f) = (Jx-Jy)(z1z2-1)(z1z2-z3^2)(...) [4 factors], zero iff Jx = Jy; the mu^2 coeff is R-invariant for all couplings: R: f -> (f1,f2,f1+f2-f3) is a spectral symmetry iff Jx = Jy (interpretation only, not asserted: f1+f2 = 2f3 and f1+f2 = 1 are fixed planes of R and SIR in the Jx = Jy group)
+[REPORTED] kappa_c closed form :: kappa_c^2 = [(s^2-2P-Jz^2)(2Jz^3P-4JzPs^2+Jzs^4-4Ps^3+s^5) + (2Jz^2P-Jz^2s^2-4Ps^2+s^4) sqrt(Delta_F)]/(-8(s^2+Jzs-Jz^2)(Jz^3-4Ps+s^3)), s=Jx+Jy, P=JxJy; sympy-rationalised, numerically verified only (6 couplings, max diff vs direct u(c_F) 1.9e-41): kappa_c = 0.343644610979 (1,.8,1), 0.215253011813 (1.2,.8,1), 0.451135797952 (.9,1.1,1.3), 0.387298334621 (1,1,1, = sqrt(.15))
+[REPORTED] off-plane quintic (PSLQ identification, NOT a proof) :: B = (6/5,4/5,1), kappa 3/10: node f = (0.255056929267, 0.589947050396, 0.0426385691717), |grad det H| 1.7e-100; cos 2 pi f3 = 0.964327310302441 root of 864c^5+816c^4-166396c^3+837889c^2+205720c-829767 (residual 7.5e-96 at 100 digits); c1+c2 and c1c2 are rational polynomials of degree 4 in c3 (relation residuals 5.0e-88, 2.1e-86); same pattern (quintic for c3) found at 3 other couplings, see the identification logs
+TOTAL: PASS=10 FAIL=0   (25 s)
+
+----- stderr -----
+

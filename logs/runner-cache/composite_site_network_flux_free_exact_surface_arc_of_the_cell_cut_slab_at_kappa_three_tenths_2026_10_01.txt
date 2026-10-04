@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_exact_surface_arc_of_the_cell_cut_slab_at_kappa_three_tenths_2026_10_01.py
+runner_sha256: a53f3c10ec04243cd95e63f52e7072c3226576835d610750ad83ed9254dcac05
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 64.99
+status: ok
+----- stdout -----
+[PASS] (1) exact blocks and rank structure of B :: offsets {-1,0,1}, H_(L,L-1) = B^dag and A Hermitian exact; B nonzero at [(2, 0), (3, 0), (3, 1)], symbolic rank 2, det B[2:4,0:2] = 4 kappa^2 (z1-1)(z2-1)/(z1 z2) (rank 1 on u=0 or v=0); symbolic blocks vs independent float slab (20 points, N=5) max diff 6.3e-16
+[PASS] (2) bulk quartic = real quadratic in x = mu + 1/mu :: gauge psi=s^L e^{i phi}xi (s=e^{i pi(u+v)}) exact; P(lambda) degree 4 with c0 = 16k^4(z1-1)^2(z2-1)^2 = c4 (z1z2)^2, c3 = c1/(z1z2); P(s mu)/(s^2 mu^2) = 16 det Hh; det Hh*mu^2 = r0(mu^4+1)+r1(mu^3+mu)+r2 mu^2 = mu^2 [r0(x^2-2)+r1 x+r2] with closed forms r0 = K^2 X Y, r1, r2 (x=mu+1/mu, K=9/25)
+[PASS] (3) eliminant Y = c S_u^2 S_v^3 H G', integer form 625 G' = S_u a0 + C_u C_v S_v b0 (irreducible) :: det A_pp = -4 C_u^2 (1+KX); n, g closed forms; K g^2 + mu^2 n n~ = (1+KX) mu^2 det Hh; C1 = -K A1, A2 C1 = A1 C2, Z = K Y (R = -K Y^2); Y factors in (p,q)=(tan(pi u/2),tan(pi v/2)) as p^2 q^3 * G'(deg (10, 8)) * H(deg (16, 10)); G' = const*(S_u a0 + C_u C_v S_v b0), irreducible over Q; H = factor of Res_mu(n,g)
+[PASS] (3b) straight line u = 1/2 is the factor C_u of P :: P = s_u a0 + (1/2)(1+c_u) s_v b0 = 2 C_u (625 G') exactly, so P(u=1/2, v) = 0 for all v while G'(1/2, v) != 0; at u = 1/2: A_pp = 0 and Q4 = (det A_qp)^2 (all roots double, outside the generic theorem)
+[PASS] (4) Xi = n(1)n(-1)+K g(1)g(-1): closed form; Xi = F_tau(1)F_tau(-1) on G' = 0 :: Xi = Xi0(X,Y) + S_u C_u S_v C_v 8K(1+KX)(K(X+Y)-7) exact (K = 9/25); Omega = B1 g(1)g(-1) + A1 (n(1)g(-1)+n(-1)g(1)) is divisible by G' (so Xi = F_tau(1)F_tau(-1) for both roots tau of Eq1 where G' = 0); Xi(0, 1/2) = (1+K)^2 = 1.8496
+[PASS] (5) exact endpoint: node of family (i) :: 625 G'(u,1-u) = 625 S_u (1-2KX)(4KX^2+4(1-K)X-3) exact (2nd factor = landed 4k^2c^2-2c+1-4k^2-2, c=1-2X); at X0=(7 sqrt19-16)/18 (cos 2pi u0=(25-7 sqrt19)/9, u0=0.354913386980, v0=1-u0): Q(-2)=G'=n(-1)=g(-1)=Xi=0 exactly (Groebner reduction), mu=-1 => lambda=+1; float: A+B+B^dag at the node has singular values 9.6e-16, 5.3e-17 (rank 2)
+[PASS] (6) interval corridor u in [1e-5, 0.34]: arc = graph v = f(u), Xi > 0, no unimodular root :: 584 boxes (73 on [1e-5,1e-3], 511 on [1e-3,0.34]), 0 failures, contiguous, 0 of 583 joints fail the common-root test; min certified lower bound of Xi = 0.1140; Res_mu(n,g) != 0, x-roots non-real or |x|>2 on every box (6 s)
+[PASS] (7) node window [0.34, 0.37]: graph exists, dXi/du < 0 along the curve, node on it :: 32 boxes, 0 failures; certified upper bound of dXi/du|curve over the window = -3.3600 < 0; u0 enclosed in [0.354913386979598, 0.354913386979598] (width 8.7e-21); node (u0, 1-u0) inside the V-bracket of its box; 0 failing joints (incl. the joint with the main corridor)
+[PASS] (8) branch-and-bound: {G' = 0, Xi >= 0} lies in the corridor for u in [0.001, 0.499], v in [0, 1] :: cleared by G' != 0: 12621, by Xi < 0: 72, inside the certified corridor: 4059; undecided: 0 (34 s)
+[PASS] (9) float cross-check vs the N = 40 finite-slab top contour (80 x 80 grid) :: flagged top-arc edges 80 (+80 on the u = 1/2 line); G' sign-change edges 252; with Xi > 0: 80; direct 4x4 null-vector criterion: 80; the three sets are equal: True (21 s)
+runtime 65 s, peak RSS 138 MB
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

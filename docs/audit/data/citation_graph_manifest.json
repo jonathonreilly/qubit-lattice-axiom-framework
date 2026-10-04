@@ -1,6 +1,6 @@
 {
- "edge_count": 15368,
- "node_count": 6851,
+ "edge_count": 15394,
+ "node_count": 6857,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3598,6 +3598,10 @@
    "deps_hash": "eac342b79c03",
    "out_degree": 4
   },
+  "composite_site_network_flux_free_certified_touching_census_with_charges_at_five_anisotropic_couplings_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "60b4a4cb7304",
+   "out_degree": 5
+  },
   "composite_site_network_flux_free_every_touching_of_the_three_families_has_an_exact_charge_for_all_couplings_and_the_charges_sum_to_zero_bounded_theorem_note_2026-10-01": {
    "deps_hash": "eac342b79c03",
    "out_degree": 4
@@ -3610,8 +3614,16 @@
    "deps_hash": "2cc8a89d4d3c",
    "out_degree": 5
   },
+  "composite_site_network_flux_free_line_nodes_outside_the_coupling_triangle_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "0decf033899a",
+   "out_degree": 6
+  },
   "composite_site_network_flux_free_middle_bands_touch_at_two_exact_points_below_kappa_star_and_six_above_by_an_interval_certificate_bounded_theorem_note_2026-09-26": {
    "deps_hash": "f5aae9dd870e",
+   "out_degree": 3
+  },
+  "composite_site_network_flux_free_off_plane_touchings_are_quintic_algebraic_points_at_five_anisotropic_couplings_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "0227049d0ee4",
    "out_degree": 3
   },
   "composite_site_network_flux_free_sector_lowest_pair_excitation_falls_as_one_over_l_to_4000_sites_and_the_odd_term_thins_the_low_levels_bounded_theorem_note_2026-09-25": {
@@ -3630,9 +3642,21 @@
    "deps_hash": "0227049d0ee4",
    "out_degree": 3
   },
+  "composite_site_network_flux_free_the_j_two_zone_centre_has_degree_zero_with_explicit_remainder_bounds_and_a_pair_is_born_there_above_kappa_one_half_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "ccfd2249bb65",
+   "out_degree": 4
+  },
+  "composite_site_network_flux_free_the_line_node_flip_coupling_is_an_exact_resultant_root_and_the_j_two_zone_centre_has_degree_zero_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "f9e925fb6836",
+   "out_degree": 4
+  },
   "composite_site_network_flux_free_the_line_touchings_and_their_charges_are_exact_for_general_couplings_bounded_theorem_note_2026-10-01": {
    "deps_hash": "0227049d0ee4",
    "out_degree": 3
+  },
+  "composite_site_network_flux_free_the_touching_count_is_certified_on_whole_kappa_intervals_bounded_theorem_note_2026-10-01": {
+   "deps_hash": "6534d3e589ff",
+   "out_degree": 4
   },
   "composite_site_network_flux_free_touchings_at_kappa_one_half_are_exact_charge_two_points_bounded_theorem_note_2026-09-27": {
    "deps_hash": "10b980748499",

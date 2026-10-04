@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_line_node_flip_coupling_exact_and_j_two_zone_centre_degree_zero_2026_10_01.py
+runner_sha256: 3b9c573150348c274fc4bb45bddedb75438a0eab0eded1a7e269456fefba7506
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 5.23
+status: ok
+----- stdout -----
+[PASS] A0 on the line (x,1-x,0): det H = 16 q(c)^2 symbolic in Jx,Jy,Jz,kappa from the network terms; q and F_c in (s,P,Jz) equal their (Jx,Jy,Jz) forms :: q = 4u c^2 - 2P c - (4u + S)
+[PASS] A1 Res_c(q,F_c) = -(s+Jz) R2(u), R2 = A2 u^2 + B2 u + C2 irreducible over Q[s,P,Jz,u] (factor_list has exactly two factors) :: A2 = 16(s^2+Jz s-Jz^2)(Jz^3-4Ps+s^3), B2 = 4(s^2-2P-Jz^2)(2Jz^3P-4JzPs^2+Jz s^4-4Ps^3+s^5), C2 = P^2(s+Jz)(s^4-4Ps^2-Jz^4)
+[PASS] A2 disc_u(R2) = 16 N1^2 Delta_F; u_(+-) = (N0 +- N1 sqrt(Delta_F))/Den are exact roots of R2 (rational and sqrt parts of Den^2 R2 vanish), Vieta; closed form of the task = u_+ :: Delta_F = disc_c(F_c); N1 = 2Jz^2P-Jz^2s^2-4Ps^2+s^4; Den = -8(s^2+Jz s-Jz^2)(Jz^3-4Ps+s^3)
+[PASS] A3 c_F^(+-) = (-a1 +- sqrt(Delta_F))/(2 a2) are roots of F_c and q(c_F^(+-); u_(+-)) = 0 exactly (shared root): u_(+-) = u(c_F^(+-)), u(c) = -(2Pc+S)/(4(1-c^2)) :: reduction mod r^2 - Delta_F
+[PASS] A4 branch facts (u(c) strictly decreasing bijection, F_c(-1) < 0 < F_c(1), F_c(c0), u_- < 0, Den < 0 in the triangle regime): flip iff Jz < Jx+Jy and |Jx^2-Jy^2| < Jz^2; iso kc^2 = J(J+2)/(4(4+2J-J^2)); exact samples :: iso u_- = -1/4; (1,4/5,1): kc2 = 0.118091618655; (6/5,4/5,1): kc2 = 0.0463338590946; (2,1,5/2): kc2 = 0.565933597037; grid of 400 couplings: criterion vs sign u_+ and u_- < 0, bad = 0 (flip 247, no flip 153)
+[PASS] A5 FLOAT: Bloch kernel-projector triple product at the x<1/2 line node: sign +1 -> -1 across kappa_c(1 +- 1e-3) at six couplings; -1 for all kappa at two no-flip couplings :: kappa_c = 0.34364, 0.21525, 0.45114, 0.75229, 0.38730, 0.66492; 32 points, max |T - T_formula|/|T_formula| = 6.5e-12
+[PASS] B1 Gamma, J = 2: spectrum {0,0,+-8} for every kappa; weighted (x:1, y,z:2) Schur-complement Pauli vector to weight 4 and weight-4 part of det H = 64|d|^2 :: d = (2(y-z), (1-4k^2)x^2/2, -8k y), d0 = 0, d_y4 x^4 coeff (20k^2+1)/48; det H = 16[(1-4K)^2 x^4 + 256K y^2 + 16(y-z)^2]; Hessian eigenvalues 128[16K+3 +- sqrt(256K^2-32K+9)], null (1,-1,0)
+[PASS] B2 kappa = 1/2 (x^2 term absent): weights x:1, y,z:4, d = (2(y-z), x^4/8, -4y) with no weight 1-3 terms; det H = 64|d|^2 at eps^8 (quartic soft direction) :: det H eps^8 part = x**8 + 1280*y**2 - 512*y*z + 256*z**2
+[PASS] B3 local degree of d/|d| at Gamma = 0 for every kappa > 0: leading-map Jacobian 32 a kappa x (4 x^3 at kappa = 1/2) is odd in x, two preimages of opposite sign; rank L = 2, T(Gamma) = 0, d(-theta) = (-d_x,d_y,-d_z) :: pair born at Gamma for kappa > 1/2 = zeros of d_y = x^2 (a + c4 x^2), c4 = (20K+1)/48 > 0, a < 0 iff K > 1/4; float x0_eff/x0_exact at kappa = 0.55, 0.51, 0.505: 0.9838, 0.9967, 0.9983
+[PASS] B4 FLOAT: Fukui flux of the lowest two bands through off-centre weighted ellipsoids enclosing Gamma (kappa = 0.5 and 1, m = 48, 96) is 0; controls: line nodes +-1; pair at kappa = 0.55 :: 8 ellipsoids: max |flux| = 3.5e-16, max |plaquette phase| = 0.27, min middle gap = 1.8e-05; kappa = 1 nodes (1/3,2/3,0), (2/3,1/3,0): +1.000, -1.000; kappa = 0.55 Gamma alone, +x' node, -x' node, all three: -0.000, -1.000, +1.000, +0.000
+TOTAL: PASS=10 FAIL=0   (5 s)
+
+----- stderr -----
+

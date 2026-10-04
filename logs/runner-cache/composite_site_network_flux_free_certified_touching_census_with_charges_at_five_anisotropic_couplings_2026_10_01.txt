@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_certified_touching_census_with_charges_at_five_anisotropic_couplings_2026_10_01.py
+runner_sha256: dae34fab9de520abf864984c886ec1b5aa2b6c99f0bbfcff3026e9db81abdc51
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 16.74
+status: ok
+----- stdout -----
+[PASS] B exact: Q5 irreducible True, 1 root in [-1,1]; ring rank 2 (16 minors, det, tr), Qp^2=a2 Qp, M Qp=0, tr Qp=2 a2, T=c(alpha) t d; line quadratic 1 root(s) in [-1,1]; spectrum even
+[PASS] B charges: sign T (iv) +1,-1,-1,+1 at (t,d)=(+,+),(+,-),(-,+),(-,-), |T|=143.863061; line -1,+1 (|T|=106.49417, closed form agrees True)
+[PASS] B boxes: 6, half-width 5e-05: Hessian PD (min pivot 2.95), node inside (arc 3.6e-08 <= rho 0.00031), a2 >= 15.99, disjoint
+[PASS] B clearing: D > 0 outside the boxes: level 18 (half-width 1.9e-06), 99776 cubes, 860 uncleared of which 0 outside the boxes, 2.3 s
+[PASS] B census: 6 touchings = 4 off-plane + 2 line; charges +1,-1,-1,+1,-1,+1, total +0; float T agrees 2.8e-15
+[PASS] A exact: Q5 irreducible True, 1 root in [-1,1]; ring rank 2 (16 minors, det, tr), Qp^2=a2 Qp, M Qp=0, tr Qp=2 a2, T=c(alpha) t d; line quadratic 1 root(s) in [-1,1]; spectrum even
+[PASS] A charges: sign T (iv) +1,-1,-1,+1 at (t,d)=(+,+),(+,-),(-,+),(-,-), |T|=206.715307; line -1,+1 (|T|=248.48999, closed form agrees True)
+[PASS] A boxes: 6, half-width 5e-05: Hessian PD (min pivot 6.96), node inside (arc 4.1e-08 <= rho 0.00031), a2 >= 15.99, disjoint
+[PASS] A clearing: D > 0 outside the boxes: level 17 (half-width 3.8e-06), 96080 cubes, 792 uncleared of which 0 outside the boxes, 1.9 s
+[PASS] A census: 6 touchings = 4 off-plane + 2 line; charges +1,-1,-1,+1,-1,+1, total +0; float T agrees 4.7e-15
+[PASS] C exact: Q5 irreducible True, 1 root in [-1,1]; ring rank 2 (16 minors, det, tr), Qp^2=a2 Qp, M Qp=0, tr Qp=2 a2, T=c(alpha) t d; line quadratic 1 root(s) in [-1,1]; spectrum even
+[PASS] C charges: sign T (iv) +1,-1,-1,+1 at (t,d)=(+,+),(+,-),(-,+),(-,-), |T|=2274.43865; line -1,+1 (|T|=1900.5056, closed form agrees True)
+[PASS] C boxes: 6, half-width 5e-05: Hessian PD (min pivot 13.1), node inside (arc 2.3e-08 <= rho 0.00031), a2 >= 15.97, disjoint
+[PASS] C clearing: D > 0 outside the boxes: level 17 (half-width 3.8e-06), 78192 cubes, 576 uncleared of which 0 outside the boxes, 1.6 s
+[PASS] C census: 6 touchings = 4 off-plane + 2 line; charges +1,-1,-1,+1,-1,+1, total +0; float T agrees 2.8e-15
+[PASS] F exact: Q5 irreducible True, 1 root in [-1,1]; ring rank 2 (16 minors, det, tr), Qp^2=a2 Qp, M Qp=0, tr Qp=2 a2, T=c(alpha) t d; line quadratic 1 root(s) in [-1,1]; spectrum even
+[PASS] F charges: sign T (iv) +1,-1,-1,+1 at (t,d)=(+,+),(+,-),(-,+),(-,-), |T|=2163.09017; line -1,+1 (|T|=1638.8336, closed form agrees True)
+[PASS] F boxes: 6, half-width 5e-05: Hessian PD (min pivot 250), node inside (arc 3.7e-08 <= rho 0.00031), a2 >= 99.96, disjoint
+[PASS] F clearing: D > 0 outside the boxes: level 16 (half-width 7.6e-06), 43152 cubes, 328 uncleared of which 0 outside the boxes, 1.1 s
+[PASS] F census: 6 touchings = 4 off-plane + 2 line; charges +1,-1,-1,+1,-1,+1, total +0; float T agrees 2.5e-15
+[PASS] G exact: Q5 irreducible True, 1 root in [-1,1]; ring rank 2 (16 minors, det, tr), Qp^2=a2 Qp, M Qp=0, tr Qp=2 a2, T=c(alpha) t d; line quadratic 0 root(s) in [-1,1]; spectrum even
+[PASS] G charges: sign T (iv) +1,-1,-1,+1 at (t,d)=(+,+),(+,-),(-,+),(-,-), |T|=14150.221; line none
+[PASS] G boxes: 4, half-width 5e-05: Hessian PD (min pivot 452), node inside (arc 4.2e-08 <= rho 0.00031), a2 >= 90.7, disjoint
+[PASS] G clearing: D > 0 outside the boxes: level 17 (half-width 3.8e-06), 83488 cubes, 424 uncleared of which 0 outside the boxes, 1.6 s
+[PASS] G census: 4 touchings = 4 off-plane + 0 line; charges +1,-1,-1,+1, total +0; float T agrees 1.7e-15
+[PASS] control box: one box removed: 148 uncleared cubes outside the others at level 18 (fails as it should)
+[PASS] control exact: Q5 constant + 1, or s2 sign flipped: det M, minors nonzero (fail as they should)
+[PASS] control box centre: box centre moved by 4e-4 in f1: node outside (arc 0.00395 > rho 0.000314)
+[PASS] control enclosures: iv table contains 50-digit cos, sin at 37 phases; Taylor bound <= sampled D on 450 random cubes (levels 3, 5, 8), violations 0 (FLOAT sample)
+[INFO] runtime 16.4 s (AUDIT_TIMEOUT_SEC = 300), stdout 3990 bytes
+TOTAL: PASS=29 FAIL=0
+
+----- stderr -----
+

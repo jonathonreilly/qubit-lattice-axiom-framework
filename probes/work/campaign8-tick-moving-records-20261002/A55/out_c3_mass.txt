@@ -1,0 +1,34 @@
+covariance of the 5 record functions on a random background, 52 space-group elements: 0/364 failures
+staggered part m = <eps h>, uniform part <h>, number of distinct values, per background:
+  uniform     | d2.(f x f'): m=+0.000 mean=+0.000 vals=[0.0] | (f.d)[d.(f x f')]: m=+0.000 mean=+0.000 vals=[0.0] | (f'.d)[d.(f x f')]: m=+0.000 mean=+0.000 vals=[0.0]
+  alternating | d2.(f x f'): m=+0.000 mean=+0.000 vals=[0.0] | (f.d)[d.(f x f')]: m=+0.000 mean=+0.000 vals=[0.0] | (f'.d)[d.(f x f')]: m=+0.000 mean=+0.000 vals=[0.0]
+  hedgehog    | d2.(f x f'): m=+0.000 mean=+0.000 vals=[0.0] | (f.d)[d.(f x f')]: m=+0.000 mean=+0.000 vals=[0.0] | (f'.d)[d.(f x f')]: m=+0.000 mean=+0.000 vals=[0.0]
+  cyclic      | d2.(f x f'): m=+0.000 mean=+0.000 vals=[0.0] | (f.d)[d.(f x f')]: m=-12.000 mean=+0.000 vals=[-12.0, 12.0] | (f'.d)[d.(f x f')]: m=-12.000 mean=+0.000 vals=[-12.0, 12.0]
+  anticyclic  | d2.(f x f'): m=+0.000 mean=+0.000 vals=[0.0] | (f.d)[d.(f x f')]: m=+12.000 mean=+0.000 vals=[-12.0, 12.0] | (f'.d)[d.(f x f')]: m=+12.000 mean=+0.000 vals=[-12.0, 12.0]
+  random      | d2.(f x f'): m=+0.344 mean=+0.406 vals=[-20.0, -18.0, -16.0, -14.0] | (f.d)[d.(f x f')]: m=-0.086 mean=+0.102 vals=[-10.0, -8.0, -6.0, -4.0] | (f'.d)[d.(f x f')]: m=-0.086 mean=-0.102 vals=[-10.0, -8.0, -6.0, -4.0]
+pi-flux 8^3, on-site potential lam*h, half-filling gap (pure staggered prediction 2|lam m|):
+  uniform     (f.d)(f'.d)  lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.5e-14
+  uniform     d.(f x f')   lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.4e-14
+  uniform     (f.d)[d.(f x f')] lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.4e-14
+  uniform     (f'.d)[d.(f x f')] lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.4e-14
+  alternating (f.d)(f'.d)  lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.0e-14
+  alternating d.(f x f')   lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.4e-14
+  alternating (f.d)[d.(f x f')] lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.4e-14
+  alternating (f'.d)[d.(f x f')] lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.4e-14
+  hedgehog    (f.d)(f'.d)  lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.0e-14
+  hedgehog    d.(f x f')   lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.4e-14
+  hedgehog    (f.d)[d.(f x f')] lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.4e-14
+  hedgehog    (f'.d)[d.(f x f')] lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.4e-14
+  cyclic      (f.d)(f'.d)  lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.5e-14
+  cyclic      d.(f x f')   lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.4e-14
+  cyclic      (f.d)[d.(f x f')] lam=0.25: staggered m=-3.000, gap=6.0000, 2|m|=6.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 5.2e-14
+  cyclic      (f'.d)[d.(f x f')] lam=0.25: staggered m=-3.000, gap=6.0000, 2|m|=6.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 5.2e-14
+  anticyclic  (f.d)(f'.d)  lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.5e-14
+  anticyclic  d.(f x f')   lam=0.25: staggered m=+0.000, gap=0.0000, 2|m|=0.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.4e-14
+  anticyclic  (f.d)[d.(f x f')] lam=0.25: staggered m=+3.000, gap=6.0000, 2|m|=6.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.6e-14
+  anticyclic  (f'.d)[d.(f x f')] lam=0.25: staggered m=+3.000, gap=6.0000, 2|m|=6.0000, spectrum vs mb +- sqrt(4 sum cos^2 + m^2): 2.6e-14
+  random      (f.d)(f'.d)  lam=0.25: staggered m=+0.000, gap=0.0541, 2|m|=0.0000
+  random      d.(f x f')   lam=0.25: staggered m=+0.000, gap=0.0140, 2|m|=0.0000
+  random      (f.d)[d.(f x f')] lam=0.25: staggered m=-0.021, gap=0.0343, 2|m|=0.0430
+  random      (f'.d)[d.(f x f')] lam=0.25: staggered m=-0.021, gap=0.0015, 2|m|=0.0430
+done

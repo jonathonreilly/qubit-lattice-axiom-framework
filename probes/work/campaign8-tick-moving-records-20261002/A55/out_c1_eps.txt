@@ -1,0 +1,20 @@
+Q1(a) eps under turns x -> c + R(x - c) that map corners to corners (coarse units):
+  corner (0,0,0)             pattern-preserving turns 24: eps kept by 24 (odd perms 12), flipped by  0 (odd perms 0); non-constant ratio 0
+  cube centre (1/2,1/2,1/2)  pattern-preserving turns 24: eps kept by 12 (odd perms 0), flipped by 12 (odd perms 12); non-constant ratio 0
+  link centre (1/2,0,0)      pattern-preserving turns  8: eps kept by  4 (odd perms 2), flipped by  4 (odd perms 2); non-constant ratio 0
+  face centre (1/2,1/2,0)    pattern-preserving turns  8: eps kept by  4 (odd perms 2), flipped by  4 (odd perms 2); non-constant ratio 0
+  rule: eps(c+R(x-c)) = eps(x) * (-1)^{sum(c - Rc)}; for a corner centre the sum is even for all 24 turns.
+Q1(b) eps under coarse translations a: ratio (-1)^{sum a}
+  a=(1, 0, 0): ratio {-1}
+  a=(0, 1, 0): ratio {-1}
+  a=(1, 1, 0): ratio {1}
+  a=(1, 1, 1): ratio {-1}
+  a=(2, 0, 0): ratio {1}
+  a=(1, -1, 0): ratio {1}
+Q1(c) Gauss parity P_v = prod of the 6 leg Z's maps to P_{gv}: 0/6144 mismatches (turns about corners and cube centres)
+Q1(d) U(1) divergence: outward leg field maps to outward leg field under all 24 turns: 0/144 failures
+Q1(e) 8^3 pi flux, m=0.0: max |E_realspace - E_formula| = 2.4e-14; half-filling gap = 0.0000 (2|m| = 0.0000)
+Q1(e) 8^3 pi flux, m=0.3: max |E_realspace - E_formula| = 3.3e-14; half-filling gap = 0.6000 (2|m| = 0.6000)
+Q1(e) 8^3 pi flux, m=1.0: max |E_realspace - E_formula| = 1.9e-14; half-filling gap = 2.0000 (2|m| = 2.0000)
+   {hopping, eps-mass} = 0: 0.0e+00;  T_x: eps(x+e_x) = -eps(x) (from (b))
+done

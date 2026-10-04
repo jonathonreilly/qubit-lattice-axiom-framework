@@ -1,0 +1,14 @@
+(i) uniform flux phi per plaquette, B along (1,1,1) (covariant given uniform records f0):
+  phi=2pi*0/1: 1 bands per cell, half filling = 0.5 bands -> partly filled band (metal); E_F~-0.052
+  phi=2pi*1/2:  4 bands; half-filling direct gap grid 0.7266 -> refined 2.44e-14 at k=[1.5708 1.5708 1.5708]; indirect 0.7266; growth exponent of the splitting near the minimum along x,y,z: [1.0, 1.0, 1.0]
+  phi=2pi*1/4: 16 bands; half-filling direct gap grid 0.0000 -> refined 1.36e-16 at k=[-0. -0.  0.]; indirect 0.0000; growth exponent of the splitting near the minimum along x,y,z: [2.0, 2.0, 2.0]
+  phi=2pi*1/3: 9 bands per cell, half filling = 4.5 bands -> partly filled band (metal); E_F~-0.001
+  phi=2pi*1/6: 36 bands; half-filling direct gap grid 0.0000 -> refined 8.82e-17 at k=[0. 0. 0.]; indirect 0.0000; growth exponent of the splitting near the minimum along x,y,z: [2.0, 2.0, 2.0]
+(ii) zero flux     bottom E=-6.0000, E-E0 ~ k^2/(2 m*): m* = [np.float64(0.5), np.float64(0.5), np.float64(0.5)] (isotropic)
+(ii) pi flux       bottom E=-3.4641, E-E0 ~ k^2/(2 m*): m* = [np.float64(0.866), np.float64(0.866), np.float64(0.866)] (isotropic)
+(ii) pi flux, m=1  bottom E=-3.6056, E-E0 ~ k^2/(2 m*): m* = [np.float64(0.9014), np.float64(0.9014), np.float64(0.9014)] (isotropic)
+     formulas: zero flux m*=1/(2t); pi flux m*=sqrt(12t^2+m^2)/(4t^2) -> sqrt3/2 at m=0
+(iii) Delta=0.0: <1/E> = 0.4553 -> V needed = 2/(6 <1/E>) = 0.7321 t
+(iii) Delta=0.5: <1/E> = 0.4370 -> V needed = 2/(6 <1/E>) = 0.7628 t
+(iii) Delta=1.0: <1/E> = 0.4017 -> V needed = 2/(6 <1/E>) = 0.8298 t
+done

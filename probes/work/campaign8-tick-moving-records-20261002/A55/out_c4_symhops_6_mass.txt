@@ -1,0 +1,12 @@
+R2 <= 6: 81 offsets, template dim 648 (complex)
+H0 bloch check: |E| = 2 sqrt(sum cos^2) max dev 4.4e-15
+TRANS: |G|=8, gauge residual 0.0e+00, symmetric Hermitian terms D=81 (real part rank 41, imaginary part rank 40); KS hop in span: 6.2e-15; eps on-site in span: 2.8e+00 (0 = allowed)
+   node check: |H0(k0)| = 1.2e-16; alpha anticommutators max 0.0e+00; alpha_i^2 = [4.0, 4.0, 4.0]
+   first-order Dirac-mass content of the 81 symmetric terms at the node: max 4.8e-16
+FULL: |G|=192, gauge residual 0.0e+00, symmetric Hermitian terms D=6 (real part rank 6, imaginary part rank 0); KS hop in span: 2.5e-15; eps on-site in span: 2.8e+00 (0 = allowed)
+   first-order Dirac-mass content of the 6 symmetric terms at the node: max 6.7e-16
+C3T: |G|=24, gauge residual 0.0e+00, symmetric Hermitian terms D=29 (real part rank 15, imaginary part rank 14); KS hop in span: 4.4e-15; eps on-site in span: 2.8e+00 (0 = allowed)
+   first-order Dirac-mass content of the 29 symmetric terms at the node: max 4.1e-16
+CYC: |G|=12, gauge residual 0.0e+00, symmetric Hermitian terms D=58 (real part rank 30, imaginary part rank 28); KS hop in span: 2.4e-15; eps on-site in span: 1.5e-15 (0 = allowed)
+   first-order Dirac-mass content of the 58 symmetric terms at the node: max 1.7e+00
+done

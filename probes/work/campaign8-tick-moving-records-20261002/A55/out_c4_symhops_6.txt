@@ -1,0 +1,19 @@
+R2 <= 6: 81 offsets, template dim 648 (complex)
+H0 bloch check: |E| = 2 sqrt(sum cos^2) max dev 4.4e-15
+TRANS: |G|=8, gauge residual 0.0e+00, symmetric Hermitian terms D=81 (real part rank 41, imaginary part rank 40); KS hop in span: 6.2e-15; eps on-site in span: 2.8e+00 (0 = allowed)
+   60 random symmetric additions (norms 0.6 and 2.5): best grid direct gap 0.6337 -> refined local min 8.68e-14; indirect gap 0.1199
+   TR-even only (41 terms): best grid direct gap 0.3711 -> refined 1.00e-13
+   TR-odd only (40 terms): best grid direct gap 0.5245 -> refined 2.83e-13
+FULL: |G|=192, gauge residual 0.0e+00, symmetric Hermitian terms D=6 (real part rank 6, imaginary part rank 0); KS hop in span: 2.5e-15; eps on-site in span: 2.8e+00 (0 = allowed)
+   60 random symmetric additions (norms 0.6 and 2.5): best grid direct gap 0.4883 -> refined local min 7.68e-14; indirect gap 0.3897
+   TR-even only (6 terms): best grid direct gap 0.3887 -> refined 1.44e-15
+   TR-odd only: none
+C3T: |G|=24, gauge residual 0.0e+00, symmetric Hermitian terms D=29 (real part rank 15, imaginary part rank 14); KS hop in span: 4.4e-15; eps on-site in span: 2.8e+00 (0 = allowed)
+   60 random symmetric additions (norms 0.6 and 2.5): best grid direct gap 0.5251 -> refined local min 1.70e-13; indirect gap 0.3268
+   TR-even only (15 terms): best grid direct gap 0.3848 -> refined 7.52e-14
+   TR-odd only (14 terms): best grid direct gap 0.6434 -> refined 1.49e-16
+CYC: |G|=12, gauge residual 0.0e+00, symmetric Hermitian terms D=58 (real part rank 30, imaginary part rank 28); KS hop in span: 2.4e-15; eps on-site in span: 1.5e-15 (0 = allowed)
+   60 random symmetric additions (norms 0.6 and 2.5): best grid direct gap 1.2738 -> refined local min 1.23e+00; indirect gap 1.2448
+   TR-even only (30 terms): best grid direct gap 0.4085 -> refined 3.18e-01
+   TR-odd only (28 terms): best grid direct gap 0.4221 -> refined 4.21e-01
+done

@@ -1,0 +1,15 @@
+(a) O-orbit of (1,1,1): 8 diagonals (f and -f in one orbit: True)
+    group average of a random corner-qubit operator: off-identity part 1.2e-16 (commutant = multiples of 1)
+group elements: 192 (odd: 96)
+(b) two-sublattice backgrounds with an odd stabiliser element: 64/64; e.g. f_e=(1, 1, 1), f_o=(1, 1, -1): R=[[0, 1, 0], [1, 0, 0], [0, 0, -1]], a=(0, 0, 1)
+(c) period-2 backgrounds with F(000)=(1,1,1): 2097152; with no odd stabiliser element: 2083516 (99.3%)
+    even-stabiliser orders among survivors: [(12, 2), (4, 90), (3, 440), (2, 5232), (1, 2077752)]
+    largest stabiliser order without odd elements: 12, 2 backgrounds
+    among the 3000 most symmetric survivors: 92 act transitively on both sublattices
+      stab 12, 8 distinct records: {(0, 0, 0): (1, 1, 1), (0, 0, 1): (1, -1, 1), (0, 1, 0): (-1, 1, 1), (0, 1, 1): (-1, -1, 1), (1, 0, 0): (1, 1, -1), (1, 0, 1): (1, -1, -1), (1, 1, 0): (-1, 1, -1), (1, 1, 1): (-1, -1, -1)}
+      stab 12, 8 distinct records: {(0, 0, 0): (1, 1, 1), (0, 0, 1): (-1, 1, 1), (0, 1, 0): (1, 1, -1), (0, 1, 1): (-1, 1, -1), (1, 0, 0): (1, -1, 1), (1, 0, 1): (-1, -1, 1), (1, 1, 0): (1, -1, -1), (1, 1, 1): (-1, -1, -1)}
+      stab  4, 4 distinct records: {(0, 0, 0): (1, 1, 1), (0, 0, 1): (1, 1, 1), (0, 1, 0): (1, 1, -1), (0, 1, 1): (-1, 1, 1), (1, 0, 0): (-1, 1, -1), (1, 0, 1): (-1, 1, -1), (1, 1, 0): (1, 1, -1), (1, 1, 1): (-1, 1, 1)}
+      stab  4, 4 distinct records: {(0, 0, 0): (1, 1, 1), (0, 0, 1): (1, 1, 1), (0, 1, 0): (1, -1, -1), (0, 1, 1): (1, -1, -1), (1, 0, 0): (1, 1, -1), (1, 0, 1): (1, -1, 1), (1, 1, 0): (1, 1, -1), (1, 1, 1): (1, -1, 1)}
+      stab  4, 4 distinct records: {(0, 0, 0): (1, 1, 1), (0, 0, 1): (1, 1, 1), (0, 1, 0): (1, -1, -1), (0, 1, 1): (1, -1, -1), (1, 0, 0): (1, -1, 1), (1, 0, 1): (1, 1, -1), (1, 1, 0): (1, -1, 1), (1, 1, 1): (1, 1, -1)}
+      stab  4, 4 distinct records: {(0, 0, 0): (1, 1, 1), (0, 0, 1): (1, 1, 1), (0, 1, 0): (-1, 1, 1), (0, 1, 1): (1, 1, -1), (1, 0, 0): (-1, 1, -1), (1, 0, 1): (-1, 1, -1), (1, 1, 0): (-1, 1, 1), (1, 1, 1): (1, 1, -1)}
+done

@@ -1,0 +1,22 @@
+rule rules51_6.npz:B4_inner mapped onto L=8 by class key (19 of 34 classes present)
+[LT] lowest q-orbits of J(k) (two-spin part; Q in units of 2pi/L; span max-min = 22.103):
+  Q (np.int64(0), np.int64(3), np.int64(4)): J(Q) = -2.8491  (J - Jmin)/span = 0.0000  orbit size 12
+  Q (np.int64(1), np.int64(3), np.int64(3)): J(Q) = -2.8026  (J - Jmin)/span = 0.0021  orbit size 24
+  Q (np.int64(0), np.int64(4), np.int64(4)): J(Q) = -2.7640  (J - Jmin)/span = 0.0038  orbit size 3
+  Q (np.int64(0), np.int64(3), np.int64(3)): J(Q) = -2.7519  (J - Jmin)/span = 0.0044  orbit size 12
+  Q (np.int64(2), np.int64(2), np.int64(3)): J(Q) = -2.7318  (J - Jmin)/span = 0.0053  orbit size 24
+  Q (np.int64(1), np.int64(3), np.int64(4)): J(Q) = -2.6738  (J - Jmin)/span = 0.0079  orbit size 24
+  k-points within 2% of span above the minimum: 135 of 512
+[LT fine grid 40^3, infinite lattice] J_min -2.8564 at q/pi = [0.8  0.   1.15]; BZ fraction within 1%: 0.1885, within 5%: 0.4501
+[LSWT] collinear candidates, four-spin terms in Hartree form (E per site, sigma units):
+  ferro (0,0,0)   : E_cl +13.66368  E_LSWT +84.46468  UNSTABLE (min w^2 0.00e+00)
+  layer (pi,0,0)  : E_cl -0.31213  E_LSWT -1.73715  UNSTABLE (min w^2 -6.02e+01)
+  col (pi,pi,0)   : E_cl -0.79665  E_LSWT -0.30594  UNSTABLE (min w^2 -2.52e+01)
+  Neel (pi,pi,pi) : E_cl +0.29311  E_LSWT -2.95100  UNSTABLE (min w^2 -9.09e+01)
+[VMC] <H>/site (binning error), same rule (J_NN = 1; per-site HS norm mod Casimir = 4.771; divide energies by it for unit-norm units):
+  lp:0           -1.72385 +- 0.00011 (9448 samples)
+  lp:0.1         -1.72397 +- 0.00021 (3126 samples)   ref - parton = -0.00013 +- 0.00024 (-0.5 sigma)
+  neez:0.05      -1.72082 +- 0.00044 (3248 samples)   ref - parton = +0.00303 +- 0.00046 (+6.6 sigma)
+  colz:0.1       -1.71851 +- 0.00042 (3165 samples)   ref - parton = +0.00534 +- 0.00043 (+12.3 sigma)
+  fs0            -1.41094 +- 0.00214 (3261 samples)   ref - parton = +0.31291 +- 0.00214 (+146.1 sigma)
+  vbs            -1.49968 +- 0.00130 (1500 samples)   ref - parton = +0.22417 +- 0.00131 (+171.5 sigma)

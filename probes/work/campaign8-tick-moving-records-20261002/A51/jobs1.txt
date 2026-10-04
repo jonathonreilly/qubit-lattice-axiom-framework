@@ -1,0 +1,17 @@
+vmc51.py 6 lp:0 30000 11
+vmc51.py 6 lp:0 30000 12
+vmc51.py 8 lp:0 30000 21
+vmc51.py 8 lp:0 30000 22
+vmc51.py 8 lp:0 30000 23
+vmc51.py 6 neez:0.05 30000 13
+vmc51.py 6 colz:0.1 30000 14
+vmc51.py 6 fs0 30000 15
+vmc51.py 6 lp:0.1 30000 16
+vmc51.py 6 pol 300 17
+vmc51.py 6 cs 300 18
+vmc51.py 8 neez:0.05 30000 24
+vmc51.py 8 neez:0.05 30000 25
+vmc51.py 8 colz:0.1 30000 26
+vmc51.py 8 colz:0.1 30000 27
+vmc51.py 8 lp:0.1 30000 28
+vmc51.py 8 fs0 30000 29

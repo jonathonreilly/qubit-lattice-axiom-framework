@@ -1,0 +1,22 @@
+rule rules51_8.npz[B4_inner]
+[LT] lowest q-orbits of J(k) (two-spin part; Q in units of 2pi/L; span max-min = 36.951):
+  Q (np.int64(0), np.int64(3), np.int64(4)): J(Q) = -2.5871  (J - Jmin)/span = 0.0000  orbit size 12
+  Q (np.int64(0), np.int64(4), np.int64(4)): J(Q) = -2.5081  (J - Jmin)/span = 0.0021  orbit size 3
+  Q (np.int64(0), np.int64(3), np.int64(3)): J(Q) = -2.4393  (J - Jmin)/span = 0.0040  orbit size 12
+  Q (np.int64(1), np.int64(3), np.int64(3)): J(Q) = -2.4039  (J - Jmin)/span = 0.0050  orbit size 24
+  Q (np.int64(1), np.int64(3), np.int64(4)): J(Q) = -2.3556  (J - Jmin)/span = 0.0063  orbit size 24
+  Q (np.int64(1), np.int64(2), np.int64(4)): J(Q) = -2.3268  (J - Jmin)/span = 0.0070  orbit size 24
+  k-points within 2% of span above the minimum: 201 of 512
+[LT fine grid 40^3, infinite lattice] J_min -2.5871 at q/pi = [1.   0.   1.25]; BZ fraction within 1%: 0.2342, within 5%: 0.6076
+[LSWT] collinear candidates, four-spin terms in Hartree form (E per site, sigma units):
+  ferro (0,0,0)   : E_cl +20.29364  E_LSWT +113.91487  UNSTABLE (min w^2 0.00e+00)
+  layer (pi,0,0)  : E_cl -0.53286  E_LSWT -2.07051  UNSTABLE (min w^2 -3.93e+01)
+  col (pi,pi,0)   : E_cl -0.75626  E_LSWT -0.53884  UNSTABLE (min w^2 -1.97e+01)
+  Neel (pi,pi,pi) : E_cl +0.08563  E_LSWT -2.66132  UNSTABLE (min w^2 -6.44e+01)
+[VMC] <H>/site (binning error), same rule (J_NN = 1; per-site HS norm mod Casimir = 4.794; divide energies by it for unit-norm units):
+  lp:0           -1.69469 +- 0.00011 (9448 samples)
+  lp:0.1         -1.69476 +- 0.00020 (3126 samples)   ref - parton = -0.00008 +- 0.00022 (-0.3 sigma)
+  neez:0.05      -1.69109 +- 0.00046 (3248 samples)   ref - parton = +0.00360 +- 0.00047 (+7.6 sigma)
+  colz:0.1       -1.68998 +- 0.00037 (3165 samples)   ref - parton = +0.00471 +- 0.00039 (+12.2 sigma)
+  fs0            -1.42343 +- 0.00184 (3261 samples)   ref - parton = +0.27126 +- 0.00184 (+147.4 sigma)
+  vbs            -1.50000 +- 0.00118 (1500 samples)   ref - parton = +0.19469 +- 0.00118 (+164.6 sigma)

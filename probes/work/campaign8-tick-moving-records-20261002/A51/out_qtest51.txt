@@ -1,0 +1,2 @@
+releig_q lam_min 0.02124875; brute force 0.02124875; ratio check at returned vector 0.02124875
+zero-variance null direction: lam_min 0.114784 (finite, no blow-up)

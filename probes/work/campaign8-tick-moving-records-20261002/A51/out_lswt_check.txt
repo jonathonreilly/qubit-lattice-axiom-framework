@@ -1,0 +1,4 @@
+nk=6 j=0.0: Neel E_LSWT/bond = -1.19347; E/site in J_S=1 units (j=0) = -0.89511; min w^2 3.6e+01
+nk=6 j=0.2: Neel E_LSWT/bond = -0.90591; E/site in J_S=1 units (j=0) = -0.67943; min w^2 8.6e+00
+nk=8 j=0.0: Neel E_LSWT/bond = -1.19407; E/site in J_S=1 units (j=0) = -0.89555; min w^2 2.1e+01
+nk=8 j=0.2: Neel E_LSWT/bond = -0.90694; E/site in J_S=1 units (j=0) = -0.68021; min w^2 4.7e+00

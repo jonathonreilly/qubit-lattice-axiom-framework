@@ -1,0 +1,5 @@
+L=6 N=216 pol: 19 classes, 10 four-spin (8208 four-sets); MF gap nan; mode full; setup 0.6s
+measured 300 in 5s; acc flip 7277/36015 pair 7228/35265; drift 4.2e-16
+Casimir estimator: mean -100.001067, max |dev from -3N/2| 1.05e+03 (zero iff exact singlet)
+<O_c>/site (first 8 classes): (0, 0, 1):-0.9967 (0, 1, 1):-1.9855 (1, 1, 1):+4.0000 (0, 0, 2):+3.0000 (0, 1, 2):-3.9917 (1, 1, 2):-4.0055 (0, 2, 2):+6.0000 (0, 0, 3):-0.4939
+NN s.s per bond -0.3322; four-spin: T0:-0.0010 T2:-0.3836 C0:+0.4183 Dm0:+0.5774 Dm1:+0.2350 Y0:-0.3821 Y1:-0.0008 Y2:+0.0005 P0:+0.2336 P1:+0.1919

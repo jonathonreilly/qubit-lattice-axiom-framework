@@ -1,0 +1,17 @@
+S^z=0 sector 12870; norms kept in sector: parton 1.000000  [1s]
+L6_B4r4_inv sign +1: E0/N -2.33458 (deg 1); next levels/N -2.21807 -2.21807 -2.21807 -2.16497
+     parton      : <H>/N -1.77524  var/N 0.0355  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     neel_z_0.05 : <H>/N -1.77191  var/N 0.07323  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     col_z_0.1   : <H>/N -1.76897  var/N 0.1321  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000   [44s]
+L6_B4r4_inv sign -1: E0/N -13.06401 (deg 1); next levels/N -9.88800 -9.07585 -8.14337 -8.00263
+     parton      : <H>/N +1.77524  var/N 0.0355  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     neel_z_0.05 : <H>/N +1.77191  var/N 0.07323  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     col_z_0.1   : <H>/N +1.76897  var/N 0.1321  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000   [48s]
+L8_B4r4_inv sign +1: E0/N -2.30279 (deg 1); next levels/N -2.18471 -2.18471 -2.17241 -2.17241
+     parton      : <H>/N -1.76626  var/N 0.04171  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     neel_z_0.05 : <H>/N -1.76290  var/N 0.08014  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     col_z_0.1   : <H>/N -1.75996  var/N 0.1402  overlap(ground space) 0.0002  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000   [80s]
+L8_B4r4_inv sign -1: E0/N -13.26677 (deg 1); next levels/N -10.04882 -9.17232 -8.27203 -8.08932
+     parton      : <H>/N +1.76626  var/N 0.04171  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     neel_z_0.05 : <H>/N +1.76290  var/N 0.08014  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000
+     col_z_0.1   : <H>/N +1.75996  var/N 0.1402  overlap(ground space) 0.0000  overlaps(lowest 5) 0.000 0.000 0.000 0.000 0.000   [84s]

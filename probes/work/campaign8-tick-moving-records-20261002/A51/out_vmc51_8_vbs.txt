@@ -1,0 +1,5 @@
+L=8 N=512 vbs: 34 classes, 10 four-spin (19456 four-sets); MF gap nan; mode singlet; setup 1.4s
+measured 1500 in 115s; acc flip 0/0 pair 134885/806400; drift 0.0e+00
+Casimir estimator: mean -768.000000, max |dev from -3N/2| 0.00e+00 (zero iff exact singlet)
+<O_c>/site (first 8 classes): (0, 0, 1):-1.4975 (0, 1, 1):+0.0003 (1, 1, 1):-0.0014 (0, 0, 2):-0.0022 (0, 1, 2):-0.0067 (1, 1, 2):+0.0083 (0, 2, 2):+0.0048 (0, 0, 3):+0.0032
+NN s.s per bond -0.4992; four-spin: T0:-0.0011 T2:-0.0011 C0:+0.0002 Dm0:-0.0002 Dm1:-0.0003 Y0:-0.0001 Y1:-0.0001 Y2:-0.0001 P0:+1.4149 P1:+0.5780

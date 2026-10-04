@@ -1,0 +1,17 @@
+rule rules51_6.npz[B]
+[LT] lowest q-orbits of J(k) (two-spin part; Q in units of 2pi/L; span max-min = 38.469):
+  Q (np.int64(1), np.int64(3), np.int64(3)): J(Q) = -1.7805  (J - Jmin)/span = 0.0000  orbit size 6
+  Q (np.int64(2), np.int64(3), np.int64(3)): J(Q) = -1.4895  (J - Jmin)/span = 0.0076  orbit size 6
+  Q (np.int64(2), np.int64(2), np.int64(3)): J(Q) = -1.4768  (J - Jmin)/span = 0.0079  orbit size 12
+  Q (np.int64(3), np.int64(3), np.int64(3)): J(Q) = -1.4740  (J - Jmin)/span = 0.0080  orbit size 1
+  Q (np.int64(2), np.int64(2), np.int64(2)): J(Q) = -1.3559  (J - Jmin)/span = 0.0110  orbit size 8
+  Q (np.int64(1), np.int64(2), np.int64(2)): J(Q) = -1.3339  (J - Jmin)/span = 0.0116  orbit size 24
+  k-points within 2% of span above the minimum: 108 of 216
+[LSWT] collinear candidates, four-spin terms in Hartree form (E per site, sigma units):
+  ferro (0,0,0)   : E_cl +18.34426  E_LSWT +91.72130  UNSTABLE (min w^2 0.00e+00)
+  layer (pi,0,0)  : E_cl -0.29820  E_LSWT -0.53278  UNSTABLE (min w^2 -1.90e+01)
+  col (pi,pi,0)   : E_cl -0.60527  E_LSWT -1.67358  UNSTABLE (min w^2 -6.88e+01)
+  Neel (pi,pi,pi) : E_cl -0.73702  E_LSWT -1.91682  UNSTABLE (min w^2 -1.88e+00)
+  LT spiral Q=(np.int64(5), np.int64(3), np.int64(3)): E_cl -0.89024  E_LSWT -1.76774  (min w^2 -1.1e-13)
+[VMC] <H>/site (binning error), same rule:
+  lp:0           -1.77056 +- 0.00020 (34138 samples)

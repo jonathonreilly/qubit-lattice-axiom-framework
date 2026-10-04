@@ -1,0 +1,21 @@
+rule rules51_6.npz[B4]
+[LT] lowest q-orbits of J(k) (two-spin part; Q in units of 2pi/L; span max-min = 20.702):
+  Q (np.int64(1), np.int64(2), np.int64(2)): J(Q) = -2.6624  (J - Jmin)/span = 0.0000  orbit size 24
+  Q (np.int64(0), np.int64(2), np.int64(3)): J(Q) = -2.5896  (J - Jmin)/span = 0.0035  orbit size 12
+  Q (np.int64(0), np.int64(3), np.int64(3)): J(Q) = -2.5264  (J - Jmin)/span = 0.0066  orbit size 3
+  Q (np.int64(1), np.int64(2), np.int64(3)): J(Q) = -2.5150  (J - Jmin)/span = 0.0071  orbit size 24
+  Q (np.int64(1), np.int64(1), np.int64(3)): J(Q) = -2.1076  (J - Jmin)/span = 0.0268  orbit size 12
+  Q (np.int64(0), np.int64(2), np.int64(2)): J(Q) = -2.0332  (J - Jmin)/span = 0.0304  orbit size 12
+  k-points within 2% of span above the minimum: 63 of 216
+[LSWT] collinear candidates, four-spin terms in Hartree form (E per site, sigma units):
+  ferro (0,0,0)   : E_cl +12.71083  E_LSWT +78.31840  UNSTABLE (min w^2 0.00e+00)
+  layer (pi,0,0)  : E_cl -0.02044  E_LSWT -0.90704  UNSTABLE (min w^2 -9.88e+01)
+  col (pi,pi,0)   : E_cl -0.73208  E_LSWT -0.24963  UNSTABLE (min w^2 -2.31e+01)
+  Neel (pi,pi,pi) : E_cl +0.19964  E_LSWT -2.77499  UNSTABLE (min w^2 -8.34e+01)
+[VMC] <H>/site (binning error), same rule (J_NN = 1; per-site HS norm mod Casimir = 4.651; divide energies by it for unit-norm units):
+  lp:0           -1.73405 +- 0.00012 (34138 samples)
+  lp:0.1         -1.73400 +- 0.00015 (17014 samples)   ref - parton = +0.00005 +- 0.00019 (+0.2 sigma)
+  neez:0.05      -1.73147 +- 0.00031 (17093 samples)   ref - parton = +0.00258 +- 0.00033 (+7.9 sigma)
+  colz:0.1       -1.73015 +- 0.00027 (16912 samples)   ref - parton = +0.00390 +- 0.00029 (+13.2 sigma)
+  fs0            -1.41954 +- 0.00200 (16962 samples)   ref - parton = +0.31451 +- 0.00200 (+157.0 sigma)
+  vbs            -1.50245 +- 0.00120 (3000 samples)   ref - parton = +0.23159 +- 0.00121 (+191.4 sigma)

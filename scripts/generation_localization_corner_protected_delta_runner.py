@@ -40,12 +40,20 @@ from pathlib import Path
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 120
+
 ROOT = Path(__file__).resolve().parents[1]
 NOTE_PATH = ROOT / "docs" / "GENERATION_LOCALIZATION_MOMENTUM_CORNER_DELTA_JI_PROTECTED_NARROW_THEOREM_NOTE_2026-06-06.md"
 BRIDGE_NOTE = ROOT / "docs" / "GENERATION_CORNER_HF_VQ_SCREENED_POISSON_BRIDGE_NARROW_THEOREM_NOTE_2026-06-07.md"
 BRIDGE_RUNNER = ROOT / "scripts" / "generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.py"
 BRIDGE_CACHE = ROOT / "logs" / "runner-cache" / "generation_corner_hf_vq_screened_poisson_bridge_2026_06_07.txt"
-LEDGER = ROOT / "docs" / "audit" / "data" / "audit_ledger.json"
+LEDGER_SHARDS = ROOT / "docs" / "audit" / "data" / "ledger"
+UPSTREAM_ROWS = (
+    "staggered_self_consistent_two_body_note_2026-04-11",
+    "three_generation_observable_theorem_note",
+    "three_generation_structure_note",
+    "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10",
+)
 
 PASS = 0
 FAIL = 0
@@ -75,16 +83,13 @@ def Vq(q):
     return -G / (eps(q) + MU2)
 
 
-def ledger_rows():
-    data = json.loads(LEDGER.read_text())
-    rows = data["rows"]
-    if not isinstance(rows, dict):
-        raise TypeError("audit ledger rows must be a dictionary")
-    return rows
-
-
-def effective_status(rows, claim_id):
-    row = rows.get(claim_id, {})
+def effective_status(claim_id):
+    """Read an audit-lane status from the tracked ledger shard (printed, never pinned)."""
+    shard = LEDGER_SHARDS / claim_id[:2] / f"{claim_id}.json"
+    try:
+        row = json.loads(shard.read_text())
+    except (OSError, ValueError) as exc:
+        return f"unreadable ({type(exc).__name__})"
     return str(row.get("effective_status") or "")
 
 
@@ -94,7 +99,6 @@ def hf_vq_bridge_source_checks():
     note = NOTE_PATH.read_text()
     bridge = BRIDGE_NOTE.read_text() if BRIDGE_NOTE.exists() else ""
     cache = BRIDGE_CACHE.read_text() if BRIDGE_CACHE.exists() else ""
-    rows = ledger_rows()
     check(
         "target note cites the 2026-06-07 one-hop bridge note, runner, and cache",
         BRIDGE_NOTE.name in note
@@ -113,21 +117,9 @@ def hf_vq_bridge_source_checks():
         BRIDGE_RUNNER.exists() and "TOTAL: PASS=" in cache and "FAIL=0" in cache,
         detail=BRIDGE_CACHE.name if BRIDGE_CACHE.exists() else "missing cache",
     )
-    check(
-        "retained bounded mediator status is read from the ledger without widening it",
-        effective_status(rows, "staggered_self_consistent_two_body_note_2026-04-11") == "retained_bounded",
-        detail=effective_status(rows, "staggered_self_consistent_two_body_note_2026-04-11"),
-    )
-    generation_statuses = [
-        effective_status(rows, "three_generation_observable_theorem_note"),
-        effective_status(rows, "three_generation_structure_note"),
-        effective_status(rows, "three_generation_hw1_distinct_translation_characters_narrow_theorem_note_2026-05-10"),
-    ]
-    check(
-        "generation-corner inputs remain retained or retained_bounded on the current ledger",
-        all(status in {"retained", "retained_bounded"} for status in generation_statuses),
-        detail=str(generation_statuses),
-    )
+    # Audit-lane status fields are live metadata: printed for context, not pass/fail targets.
+    for claim_id in UPSTREAM_ROWS:
+        print(f"  [INFO] upstream effective_status {claim_id}: {effective_status(claim_id)}")
 
 
 def exact_lattice_delta(L):

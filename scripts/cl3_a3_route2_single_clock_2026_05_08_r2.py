@@ -40,6 +40,9 @@ Run:
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+
+
 import numpy as np
 
 PASS = 0

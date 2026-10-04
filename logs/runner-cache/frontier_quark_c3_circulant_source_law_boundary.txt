@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_c3_circulant_source_law_boundary.py
-runner_sha256: 62d1e545690045d69f5b0f9af56d3831351e6a14c1c3aa73b1ebef8db2e9b2f4
-input_fingerprint_sha256: 428b6de31fb385f01625eb9829c8a4a63d0cbd8f254572a61f5e296fe6ce6c38
+runner_sha256: 2c6347b72ac4fab031350f39b9fba5fe0a79fcfbe2acd42cd9c2bee6a4216104
+input_fingerprint_sha256: 6320a498c4a3dc9eea7b75ee8b4c354a4f5d4903d4a8db04e1d5e1b7dd41a721
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================

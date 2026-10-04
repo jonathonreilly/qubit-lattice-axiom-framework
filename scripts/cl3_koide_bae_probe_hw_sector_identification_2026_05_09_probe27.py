@@ -92,6 +92,9 @@ counting fact (retained per STAGGERED_DIRAC_BZ_CORNER_FORCING_THEOREM).
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+
+
 from typing import List, Tuple
 
 import numpy as np

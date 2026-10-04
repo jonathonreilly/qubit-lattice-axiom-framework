@@ -1,6 +1,8 @@
 # Staggered-Dirac Direct Three-State Algebraic Support
 
-**Date:** 2026-05-07
+**Current three-state boundary (2026-10-04):** The three-state result here is the finite corner-label algebra. Any following H_phys recitation is conditional on a supplied isometric embedding of the spatially periodic corner carrier and on implementation of the specified label operators. Those are additional hypotheses, not consequences of the finite runner or RP/OS alone. On finite spatial APBC there are no exact k = pi n corner states. Vacuum cyclicity and clustering concern the chosen vacuum representation and do not exclude other superselection representations. This packet supplies neither a physical embedding nor a species identification.
+
+**Date:** 2026-05-07; 2026-10-02 operator-scope narrowing (Steps 2-3, theorem items (a)-(b))
 **Type:** bounded support theorem
 **Claim type:** bounded_theorem
 **Status:** bounded source support for the direct three-state algebraic
@@ -55,28 +57,23 @@ It does not by itself derive the physical-species / SM-generation reading.
 
 ## Derivation
 
-### Step 1: H_phys is a single Hilbert space with unique vacuum
+### Step 1: Supplied physical embedding
 
-By RP + OS reconstruction (retained): the framework's physical Hilbert
-space `H_phys` is the GNS-like reconstruction from the OS positive
-sesquilinear form, with global cyclic vacuum |Ω⟩.
-
-By RS (retained): for any open region `O ⊂ Λ`, `A(O)|Ω⟩` is dense in
-`H_phys`. The vacuum is cyclic AND separating for `A(O)'`.
-
-By CD (retained): connected correlators decay exponentially; the
-vacuum is unique on the canonical surface; **NO superselection sectors
-on the canonical surface**.
-
-Combined: `H_phys` is a SINGLE Hilbert space with a UNIQUE vacuum.
-There are no separate sectors disconnected from the vacuum.
+Work first on the finite corner-label carrier C^3. A physical interpretation
+requires a supplied isometric embedding into a specified H_phys and an
+implementation of the label operators there. Neither is established by the
+finite runner. RP/OS can construct a representation from its own hypotheses;
+vacuum cyclicity and clustering do not prove this embedding or classify all
+superselection representations.
 
 ### Step 2: hw=1 triplet is a 3-dimensional subspace of H_phys
 
-By BlockT3: the hw=1 BZ
+Under the supplied embedding: the hw=1 BZ
 corners (1,0,0), (0,1,0), (0,0,1) are three orthogonal momentum
 eigenstates within `H_phys`, with distinct simultaneous-eigenvalues
-under lattice translations T_x, T_y, T_z:
+under the plain one-site lattice translations T_x, T_y, T_z (label
+operators on the corner states; at most one of them is a symmetry of
+the Kawamoto-Smit operator in any representative):
 
 ```
 |(1,0,0)⟩: T_x = −1, T_y = +1, T_z = +1
@@ -89,32 +86,36 @@ subspace `H_hw=1 ⊂ H_phys`.
 
 ### Step 3: M_3(C) algebra acts on H_hw=1 in the GNS image
 
-By BlockT3 + NQ: the lattice translations T_x, T_y, T_z combined with
+On the supplied label carrier, by BlockT3 + NQ: the lattice translations T_x, T_y, T_z combined with
 the C_3[111] cyclic generator generate the full M_3(C) algebra on
 `H_hw=1`. The C_3 action is implemented by a unitary on `H_phys` through
-the lattice automorphism / GNS representation. This note does not assert
+the lattice automorphism / GNS representation in the cyclic
+representative of the Block 03 gauge class, where the bare cycle is a
+symmetry of the Kawamoto-Smit operator and preserves the hw=1
+corner-label span; in the Block 03 representative η⁰ the covering
+symmetry carries a sign field and does not preserve the η⁰ hw=1 span
+(exact check: `scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`). This note does not assert
 that the C_3 generator is itself a local element of `A(Λ)`.
 
 Specifically:
-- T_x, T_y, T_z are lattice translation operators in the represented
-  framework dynamics
+- T_x, T_y, T_z are plain one-site lattice translation operators acting
+  on the corner states; they are not jointly symmetries of the
+  represented Kawamoto-Smit dynamics (at most one of them commutes with
+  it in any representative, and its translation symmetries anticommute
+  pairwise)
 - C_3[111] is the cyclic permutation `(1,0,0) → (0,1,0) → (0,0,1) →
-  (1,0,0)` — a lattice-symmetry unitary on the hw=1 subspace
+  (1,0,0)` — the bare corner-label cycle, a lattice-symmetry unitary on
+  the hw=1 label span in the cyclic representative
 
 Both are single-Hilbert-space operators, not charged intertwiners between
 separate DHR sectors.
 
-### Step 4: Three states are in the same superselection sector
+### Step 4: Superselection scope remains open
 
-By Step 1, `H_phys` has a single superselection sector (the vacuum
-sector). All three corner states `|(1,0,0)⟩, |(0,1,0)⟩, |(0,0,1)⟩` lie
-in `H_phys`, hence in the same superselection sector.
-
-The C_3[111] unitary (per Step 3) connects them:
-`C_3[111] |(1,0,0)⟩ = |(0,1,0)⟩`, etc.
-
-Thus the three corners are three connected quantum states inside the same
-represented Hilbert space, not three separate DHR sectors.
+The label calculation does not classify superselection representations. If
+the embedding is supplied inside a chosen vacuum representation, its images
+belong to that chosen representation. This is a conditional placement, not a
+proof that other sectors do not exist.
 
 ### Step 5: Spectral distinctness gives algebraic separation
 
@@ -148,16 +149,19 @@ BZ-corner support chain + RP, RS, CD, LR, LN, SC + M_3(C) on hw=1 +
 no-proper-quotient:
 
 ```
-The hw=1 BZ-corner triplet of the staggered-Dirac realization on Z³
-APBC gives three quantum-mechanically distinct states in the
-RP-OS-reconstructed physical Hilbert space H_phys, characterized by:
-  (a) distinct simultaneous-eigenvalues of T_x, T_y, T_z;
-  (b) connected by the C_3[111] lattice-symmetry unitary in the
-      represented hw=1 surface;
+Conditional on a supplied isometric embedding of the spatially
+periodic hw=1 corner-label triplet and its specified operators, the
+three orthogonal label vectors embed in a supplied H_phys, characterized by:
+  (a) distinct simultaneous-eigenvalues of the plain one-site
+      translations T_x, T_y, T_z (label characters, not jointly
+      symmetries of the Kawamoto-Smit operator);
+  (b) connected by the bare C_3[111] corner-label cycle (a
+      lattice-symmetry unitary in the cyclic representative; in η⁰ its
+      covering symmetry does not preserve the hw=1 span);
   (c) carrying M_3(C) algebra structure (irreducible, no proper
       quotient);
-  (d) all in the same superselection sector (the unique vacuum sector
-      per Reeh-Schlieder + cluster decomposition).
+  (d) within the chosen representation if that embedding is supplied;
+      other superselection representations are not excluded.
 
 The physical-species / SM-generation identification remains an open
 bridge and is not part of this bounded theorem.

@@ -3,14 +3,17 @@
 Charged-lepton curvature kernel: pure-APBC L_t extension runner
 ===============================================================
 
-STATUS: exact structural no-go extension of the Koide-cone weakest link
+STATUS: diagonal-kernel extension plus a realization-scoped off-diagonal check
+(repaired 2026-10-02)
 
 Target behavior:
   a companion runner's authority note
   docs/CHARGED_LEPTON_KOIDE_CONE_ATTEMPT_NOTE.md established, on the minimal
   L_t=4 APBC block, that the off-diagonal source-response curvature
-  b = K_{12} between the three hw=1 species vanishes because those species
-  sit in orthogonal translation-character eigenspaces. The diagonal kernel
+  b = K_{12} between the three hw=1 species vanishes, arguing that those
+  species sit in orthogonal translation-character eigenspaces of a D that
+  commutes with T_x, T_y, T_z. That premise is false (in eta^0, [D, T_x] and
+  [D, T_y] are nonzero), so this runner computes K_ij instead. The diagonal kernel
   then takes the form K_{ii}^{(spec)} = 16 / (m_i^2 + (7/2) u_0^2), and the
   circulant collapses to a * I_3.
 
@@ -24,11 +27,11 @@ blocks, L_t in {4, 6, 8, 12, 16, 24}, and asks two structural questions:
      block, or is b = 0 a structural consequence of translation-character
      orthogonality that holds independently of L_t?
 
-Expected outcome: b = 0 identically for every pure-APBC L_t. The three
-hw=1 sectors live at mutually orthogonal Brillouin corners at every
-finite L_t, and no amount of temporal refinement couples them at the
-quadratic source-response order. This is a theorem-grade NEGATIVE
-structural result that sharpens the attack surface for G5.
+Computed outcome (Part A.2): with exact corner plane waves on spatially
+periodic blocks, b = 0 at every tested L_t, because the spatial hopping
+annihilates corner plane waves and the temporal term pairs label n with
+n xor 111; with spatial APBC and nearest-corner labels, b != 0. The no-go
+is therefore scoped to the periodic-corner realization.
 
 No additional interactions (gauge, Yukawa, scalar mixing) are introduced
 in this runner. Its scope is strictly the pure-APBC kernel extension on
@@ -47,8 +50,16 @@ from __future__ import annotations
 import sys
 from typing import Dict, List, Tuple
 
+import itertools
+import os
+
+os.environ.setdefault("OPENBLAS_NUM_THREADS", "1")
+os.environ.setdefault("OMP_NUM_THREADS", "1")
+
 import numpy as np
 import sympy as sp
+
+AUDIT_TIMEOUT_SEC = 120
 
 np.set_printoptions(precision=10, linewidth=120, suppress=True)
 
@@ -96,9 +107,7 @@ def translation_characters() -> List[Tuple[int, int, int]]:
 
 
 def part0_translation_orthogonality():
-    print("=" * 88)
     print("PART 0: retained hw=1 translation-character orthogonality")
-    print("=" * 88)
 
     chars = translation_characters()
 
@@ -129,13 +138,13 @@ def part0_translation_orthogonality():
     # Consequence: for any pair i != j there exists at least one translation
     # generator T under which X_i and X_j have opposite characters. Projectors
     # P_i (onto X_i) and P_j (onto X_j) therefore lie in orthogonal T-eigenspaces.
-    # No T-invariant quadratic-order propagator carries matrix elements between
-    # P_i and P_j -- this is the structural origin of b = K_{12} = 0.
+    # This is label orthogonality only: the staggered D is not invariant under
+    # T_x, T_y, so it does not by itself force b = 0 (Part A.2 computes K_ij).
     check(
         "translation-character orthogonality: for every pair (i,j), some T "
         "assigns X_i and X_j opposite signs",
         True,
-        "structural origin of b = 0 at quadratic order on pure APBC",
+        "label orthogonality only; D is not T-invariant (Part A.2)",
     )
 
 
@@ -207,9 +216,7 @@ def effective_c_lt(L_t: int) -> Tuple[sp.Expr, bool, sp.Expr]:
 
 
 def part_A1_species_curvature_table(L_t_list: List[int]) -> Dict[int, Dict]:
-    print("=" * 88)
     print("PART A.1: species-diagonal K_ii^(spec) and c(L_t) for pure-APBC L_t")
-    print("=" * 88)
 
     m = sp.symbols("m", positive=True)
     u0 = sp.symbols("u_0", positive=True)
@@ -288,76 +295,107 @@ def part_A1_species_curvature_table(L_t_list: List[int]) -> Dict[int, Dict]:
 # ---------------------------------------------------------------------------
 
 
-def part_A2_offdiagonal_kernel(L_t_list: List[int]) -> Dict[int, sp.Expr]:
-    print("=" * 88)
-    print("PART A.2: off-diagonal K_{12} = b on pure-APBC L_t (structural)")
-    print("=" * 88)
+def _staggered_4d(Ls: int, Lt: int, spatial_apbc: bool) -> np.ndarray:
+    """4D staggered operator: Block 03 eta^0 spatially, eta_t = (-1)^(x1+x2+x3),
+    temporal APBC; spatial boundary periodic or APBC. Sites ordered x1 fastest, t slowest."""
+    sites = [(a, b, c, t) for t in range(Lt) for c in range(Ls) for b in range(Ls) for a in range(Ls)]
+    index = {x: i for i, x in enumerate(sites)}
+    n = len(sites)
+    hop = np.zeros((n, n))
+    for i, x in enumerate(sites):
+        etas = (1.0, (-1.0) ** x[0], (-1.0) ** (x[0] + x[1]), (-1.0) ** (x[0] + x[1] + x[2]))
+        for mu in range(4):
+            y = list(x)
+            y[mu] += 1
+            size = Lt if mu == 3 else Ls
+            sign = 1.0
+            if y[mu] == size:
+                y[mu] = 0
+                if mu == 3 or spatial_apbc:
+                    sign = -1.0
+            hop[i, index[tuple(y)]] += 0.5 * etas[mu] * sign
+    return hop - hop.T
 
-    # Structural statement of the off-diagonal kernel on the hw=1 triplet:
-    #
-    # K_{ij} = -Re Tr[(D+J)^(-1) P_i (D+J)^(-1) P_j]
-    #
-    # The hw=1 species X_1, X_2, X_3 are joint eigenvectors of the three
-    # commuting lattice translations (T_x, T_y, T_z) with joint characters
-    #
-    #     chi_1 = (-1, +1, +1),  chi_2 = (+1, -1, +1),  chi_3 = (+1, +1, -1).
-    #
-    # For any pair (i, j) with i != j, there is at least one translation
-    # generator T (in fact two) under which X_i and X_j have opposite
-    # characters. The pure-APBC Dirac operator D commutes with each T, so
-    # (D+J)^(-1) commutes with T whenever J is species-diagonal on the hw=1
-    # triplet. Consequently the trace
-    #
-    #     Tr[(D+J)^(-1) P_i (D+J)^(-1) P_j]
-    #
-    # decomposes over translation-character eigenspaces. P_i projects onto
-    # the chi_i-eigenspace and P_j onto the chi_j-eigenspace, so the product
-    # P_i X P_j (for any T-invariant X) vanishes as soon as X carries no
-    # character-mixing matrix element between chi_i and chi_j. On a pure-APBC
-    # block with a purely diagonal-mass source J, (D+J)^(-1) is T-invariant
-    # at every L_t, and no such mixing matrix element exists.
-    #
-    # Hence b = K_{12} = 0 identically on every pure-APBC L_t.
 
-    chars = translation_characters()
+def _corner_label_projectors(Ls: int, Lt: int, spatial_apbc: bool) -> Dict[Tuple[int, int, int], np.ndarray]:
+    """Projectors onto spatial plane waves grouped by corner label n, times identity in time.
+    Periodic: the exact corner plane waves k = pi n. APBC: plane waves with nearest corner n."""
+    if spatial_apbc:
+        ks = [(2 * m + 1) * np.pi / Ls for m in range(Ls)]
+    else:
+        ks = [0.0, np.pi]
+    xs = np.array([(a, b, c) for c in range(Ls) for b in range(Ls) for a in range(Ls)])
+    spatial: Dict[Tuple[int, int, int], np.ndarray] = {}
+    for kv in itertools.product(ks, repeat=3):
+        label = tuple(int(np.cos(k) < 0) for k in kv)
+        psi = np.exp(1j * (xs @ np.array(kv))) / np.sqrt(Ls ** 3)
+        spatial.setdefault(label, np.zeros((Ls ** 3, Ls ** 3), dtype=complex))
+        spatial[label] += np.outer(psi, psi.conj())
+    return {lab: np.kron(np.eye(Lt), proj) for lab, proj in spatial.items()}
 
-    results: Dict[int, sp.Expr] = {}
 
-    for L_t in L_t_list:
-        # Symbolically compute K_{ij} on the hw=1 translation-character block.
-        # Represent "commute with T" as: every T-invariant rank-1 projector
-        # in the resolvent basis carries a single joint character. Then
-        # P_i * (T-invariant operator) * P_j projects onto the rank-1 product
-        # chi_i . chi_j, which is nonzero only when chi_i = chi_j.
+HW1_LABELS = [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+HW1_MASSES = {(1, 0, 0): 0.3, (0, 1, 0): 0.5, (0, 0, 1): 0.7}
 
-        # For i = 1, j = 2: chi_1 = (-1, +1, +1), chi_2 = (+1, -1, +1).
-        # Under T_x, chi_1 has eigenvalue -1 while chi_2 has eigenvalue +1,
-        # so P_1 * (T_x-invariant operator) * P_2 = 0.
-        chi_i = chars[0]
-        chi_j = chars[1]
-        opposite_axes = [k for k, (a, b) in enumerate(zip(chi_i, chi_j)) if a != b]
 
-        # By construction opposite_axes is non-empty (size 2) for every pair.
-        # Hence the off-diagonal matrix element is forced to zero by each of
-        # those two axes independently (two separate superselection rules).
-        b_value = sp.Integer(0)
-        results[L_t] = b_value
+def _offdiagonal_curvature(Ls: int, Lt: int, spatial_apbc: bool):
+    d = _staggered_4d(Ls, Lt, spatial_apbc)
+    proj = _corner_label_projectors(Ls, Lt, spatial_apbc)
+    j = 0.4 * np.eye(d.shape[0], dtype=complex)
+    for lab, m in HW1_MASSES.items():
+        j += (m - 0.4) * proj[lab]
+    g = np.linalg.inv(d + j)
+    gp = {a: g @ proj[a] for a in HW1_LABELS}
+    k = {(a, b): -float(np.real(np.sum(gp[a] * gp[b].T)))
+         for a in HW1_LABELS for b in HW1_LABELS}
+    return d, proj, k
 
+
+def part_A2_offdiagonal_kernel(L_t_list: List[int]) -> Dict[str, object]:
+    print("PART A.2: off-diagonal K_ij, computed (repaired 2026-10-02)")
+    # The earlier version set b = 0 "by construction" from the premise that
+    # the staggered D commutes with T_x, T_y, T_z. That premise is false: in
+    # eta^0, [D, T_x] and [D, T_y] are nonzero (substep-4 narrowing note,
+    # 2026-06-10 repair record). Here K_ij = -Re Tr[G P_i G P_j], G = (D+J)^-1,
+    # is computed on a 4D staggered block (L_s = 4) with species-diagonal J
+    # (masses 0.3, 0.5, 0.7 on the hw=1 labels, 0.4 elsewhere), in two
+    # realizations of the hw=1 species projectors.
+    Ls = 4
+    periodic: Dict[int, float] = {}
+    mech_ok = True
+    for Lt in L_t_list:
+        d, proj, k = _offdiagonal_curvature(Ls, Lt, spatial_apbc=False)
+        periodic[Lt] = max(abs(v) for (a, b), v in k.items() if a != b)
+        diag_scale = min(abs(k[(a, a)]) for a in HW1_LABELS)
         check(
-            f"L_t={L_t}: K_{{12}} = 0 by translation-character orthogonality on {len(opposite_axes)} axes",
-            b_value == 0,
-            f"opposite_axes = {opposite_axes} ; b = {b_value}",
+            f"spatially periodic corners, L_t={Lt}: K_ij = 0 for i != j",
+            periodic[Lt] < 1e-9 * diag_scale,
+            f"max|K_ij| < 1e-9 min|K_ii|, min|K_ii| = {diag_scale:.3f}",
+            kind="NUMERIC",
         )
-
-    # Universal statement
-    b_universal_zero = all(results[L_t] == 0 for L_t in L_t_list)
+        # Mechanism: D maps corner label n only to n xor 111 (temporal term).
+        if Lt != min(L_t_list):
+            continue
+        for a in proj:
+            for b in proj:
+                partner = tuple(1 - x for x in a)
+                if b != partner and np.linalg.norm(proj[b] @ d @ proj[a]) > 1e-9:
+                    mech_ok = False
     check(
-        "UNIVERSAL (pure-APBC): b = K_{12} = 0 for every tested L_t",
-        b_universal_zero,
-        f"tested L_t = {sorted(L_t_list)}",
+        "mechanism: on corner plane waves D couples label n only to n xor 111",
+        mech_ok,
+        "spatial hopping annihilates corners; eta_t pairs hw=1 with hw=2",
+        kind="NUMERIC",
     )
-
-    return results
+    _, _, k_apbc = _offdiagonal_curvature(Ls, 4, spatial_apbc=True)
+    coupled = k_apbc[((1, 0, 0), (0, 1, 0))]
+    check(
+        "spatially APBC, nearest-corner labels, L_t=4: K_{100,010} != 0",
+        abs(coupled) > 1e-3,
+        f"K_{{100,010}} = {coupled:.4f} (direction-3 hopping maps label 100 to 010)",
+        kind="NUMERIC",
+    )
+    return {"periodic": periodic, "apbc_coupled": coupled}
 
 
 # ---------------------------------------------------------------------------
@@ -365,46 +403,27 @@ def part_A2_offdiagonal_kernel(L_t_list: List[int]) -> Dict[int, sp.Expr]:
 # ---------------------------------------------------------------------------
 
 
-def part_A3_structural_no_go(b_results: Dict[int, sp.Expr]):
-    print("=" * 88)
-    print("PART A.3: structural no-go theorem for the pure-APBC route")
-    print("=" * 88)
-
-    # Theorem statement (EXACT):
-    #
-    # On the retained hw=1 triplet of the Cl(3)/Z^3 framework, the
-    # observable-principle source-response curvature kernel K evaluated on
-    # any pure-APBC temporal block of length L_t (with species-diagonal
-    # sources restricted to the hw=1 triplet, and the framework-native
-    # staggered Dirac operator as the unperturbed D) is species-diagonal:
-    #
-    #     K_{ii}^(spec) = 4 sum_{n=0..L_t-1} 1 / (m_i^2 + u_0^2 (3 + sin^2 omega_n))
-    #     K_{ij}       = 0   for every i != j and every L_t.
-    #
-    # As a consequence the circulant (a, b) kernel collapses to a . I_3, the
-    # spectral-amplitude vector lands on the trivial C_3 character (|z|=0),
-    # and the Koide cone a_0^2 = 2|z|^2 is unreachable on this attack
-    # surface.
-
-    all_zero = all(v == 0 for v in b_results.values())
+def part_A3_structural_no_go(b_results: Dict[str, object]):
+    print("PART A.3: scoped no-go for the pure-APBC route")
+    periodic = b_results["periodic"]
+    periodic_zero = all(v < 1e-9 for v in periodic.values())
     check(
-        "NO-GO THEOREM (EXACT): no pure-APBC L_t extension of the observable-principle "
-        "curvature kernel on the hw=1 triplet carries cross-species mixing; b = 0 "
-        "holds independently of L_t",
-        all_zero,
-        "translation-character orthogonality is an exact symmetry of every "
-        "pure-APBC L_t block",
+        "NO-GO (scoped): periodic corner labels give b = 0 at every tested L_t",
+        periodic_zero,
+        f"L_t = {sorted(periodic)}; corner annihilation + temporal pairing",
+        kind="NUMERIC",
     )
-
-    # Corollary: with b = 0 for all L_t, the nontrivial-character weight
-    # |z|^2 vanishes identically on the pure-APBC surface, so the Koide-cone
-    # equality a_0^2 = 2 |z|^2 cannot be satisfied with |z| > 0 via L_t
-    # refinement alone.
     check(
-        "COROLLARY (EXACT): Koide cone a_0^2 = 2|z|^2 with |z| > 0 is unreachable "
-        "by pure-APBC L_t extension alone",
-        True,
-        "b = 0 forces |z| = 0 on every pure-APBC L_t block",
+        "SCOPE: spatial APBC with nearest-corner labels gives b != 0",
+        abs(b_results["apbc_coupled"]) > 1e-3,
+        "the pure-APBC lane is not closed",
+        kind="NUMERIC",
+    )
+    check(
+        "COROLLARY (scoped): periodic corners: b = 0 forces |z| = 0 (no Koide cone by L_t)",
+        periodic_zero,
+        "not the APBC nearest-corner realization",
+        kind="NUMERIC",
     )
 
 
@@ -414,111 +433,9 @@ def part_A3_structural_no_go(b_results: Dict[int, sp.Expr]):
 
 
 def part_B_mixing_mechanisms():
-    print("=" * 88)
-    print("PART B: minimal additions that could produce b != 0")
-    print("=" * 88)
-
-    print()
-    print("The pure-APBC no-go in Part A identifies translation-character")
-    print("orthogonality as the structural obstruction. Any mechanism that")
-    print("produces b != 0 must either (i) break the T-invariance of the")
-    print("resolvent, or (ii) insert a channel carrying cross-character matrix")
-    print("elements between the hw=1 species. The minimal candidates, each")
-    print("paired with its leading-order scaling in the coupling, are:")
-    print()
-
-    # Mechanism 1: Two-Higgs insertion
-    print("  [MECH 1] Two-Higgs insertion.")
-    print("    Adds a scalar bilinear that couples distinct hw=1 species through")
-    print("    the Higgs sector. Schematically: L_Y = y_i y_j* X_i^dag Phi_{ij} X_j")
-    print("    with a non-trivial doublet-block selector on Phi. At quadratic")
-    print("    source-response order, the resulting off-diagonal kernel scales as")
-    print()
-    print("        b_Higgs ~ y_i y_j <Phi_{ij}^dag Phi_{ij}> / (Higgs mass gap)^2")
-    print()
-    print("    i.e. b ~ y_i y_j at leading order. RELATED TO ONGOING retained neutrino-mixing")
-    print("    DOUBLET-BLOCK SELECTOR WORK -- NOT ATTACKED IN THIS RUNNER. See")
-    print("    atlas entries")
-    print("      docs/LEPTON_SHARED_HIGGS_UNIVERSALITY_COLLAPSE_NOTE.md")
-    print("      docs/NEUTRINO_DIRAC_TWO_HIGGS_CANONICAL_REDUCTION_NOTE.md")
-    print()
-    check(
-        "MECH 1 scaling: b_Higgs ~ y_i y_j at leading quadratic order",
-        True,
-        "two-Higgs insertion -- identification only",
-        kind="BOUNDED",
-    )
-
-    # Mechanism 2: Retained SU(2)_L gauge-boson exchange
-    print("  [MECH 2] Retained SU(2)_L gauge-boson exchange.")
-    print("    The retained weak isospin gauge interaction acts non-trivially on")
-    print("    the hw=1 triplet via the covariant derivative D_mu. At one-gauge-")
-    print("    boson exchange, the off-diagonal curvature receives the correction")
-    print()
-    print("        b_gauge ~ g_2^2 sum_{W,Z,...} <J_W^mu (P_i -> P_j) . J_W_mu>  ")
-    print("               / M_W^2")
-    print()
-    print("    i.e. b ~ g_2^2 at leading order. The cross-species matrix element")
-    print("    is carried by the off-diagonal isospin currents that connect the")
-    print("    three hw=1 charges (0, +1, -1) in the left-handed Z_3 charge sector.")
-    print("    Structure of correction identified; end-to-end evaluation is out")
-    print("    of scope of this runner.")
-    print()
-    check(
-        "MECH 2 scaling: b_gauge ~ g_2^2 at one-W/Z-exchange order",
-        True,
-        "SU(2)_L gauge-boson exchange -- identification only",
-        kind="BOUNDED",
-    )
-
-    # Mechanism 3: Higher-derivative lattice operators
-    print("  [MECH 3] Higher-derivative lattice operators (Wilson / improvement).")
-    print("    A Wilson-type term r a D^2 or a clover-type improvement operator")
-    print("    does not commute with the individual translations T_i in general,")
-    print("    because the second-derivative structure mixes adjacent Brillouin")
-    print("    corners. The resulting off-diagonal kernel scales as")
-    print()
-    print("        b_Wilson ~ r (a/L_t)^2  (Wilson coefficient r, lattice spacing a)")
-    print()
-    print("    so b vanishes in the continuum limit but is nonzero at finite L_t")
-    print("    with r != 0. This is a lattice-artifact channel, not a true IR")
-    print("    mixing, and is typically tuned away in the retained framework.")
-    print()
-    check(
-        "MECH 3 scaling: b_Wilson ~ r (a/L_t)^2 -- lattice artifact, vanishes in continuum",
-        True,
-        "Wilson / improvement operator -- identification only",
-        kind="BOUNDED",
-    )
-
-    # Mechanism 4: Non-APBC temporal structure
-    print("  [MECH 4] Non-APBC temporal structure.")
-    print("    Anti-periodic boundary conditions with an inserted mass-mixing")
-    print("    matrix M_{ij} (i.e. a non-diagonal temporal hopping on the hw=1")
-    print("    triplet) or a thermal-field-theory modification (Matsubara +")
-    print("    imaginary chemical potential mu_i per species) directly produces")
-    print("    a cross-species propagator at quadratic order. Scaling:")
-    print()
-    print("        b_M ~ M_{ij} / (m_i m_j + u_0^2 c_eff(L_t))    (linear in M_{ij})")
-    print("        b_mu ~ (mu_i - mu_j)^2 / (m^2 + u_0^2 c_eff(L_t))^2   at leading ")
-    print("              order in the chemical-potential split.")
-    print()
-    print("    This is the closest-to-the-kernel deformation: it keeps the")
-    print("    source-response structure but breaks the T-invariance of D.")
-    print()
-    check(
-        "MECH 4 scaling: b_M linear in inserted mass mixing M_{ij}",
-        True,
-        "non-APBC temporal structure -- identification only",
-        kind="BOUNDED",
-    )
-
-    print()
-    print("  All four mechanisms are framework-native extensions of the pure-APBC")
-    print("  kernel. Mechanism 1 is the natural next attack surface for the Koide")
-    print("  cone but is under active work in a SEPARATE thread (retained neutrino-mixing")
-    print("  doublet-block selector) and is NOT attacked by this runner.")
-    print()
+    print("PART B: untested extensions (no scientific PASS assigned)")
+    print("A concrete cross-label operator is needed to test each proposed channel.")
+    print("SU(2) exchange or a Wilson coefficient alone does not establish generation mixing.")
 
 
 # ---------------------------------------------------------------------------
@@ -527,22 +444,10 @@ def part_B_mixing_mechanisms():
 
 
 def part_C_numerical_table(results: Dict[int, Dict], L_t_list: List[int]):
-    print("=" * 88)
     print("PART C: c(L_t) table and large-L_t asymptotics")
-    print("=" * 88)
 
     print()
-    print("  L_t  |  c(L_t) symbolic          |  c(L_t) float     |  b = K_{12}")
-    print("  -----+---------------------------+-------------------+-------------")
-    for L_t in sorted(L_t_list):
-        r = results[L_t]
-        # Keep the raw sympy Rational/expression (do NOT nsimplify, which can
-        # collapse large rationals to nearby algebraic irrationals numerically).
-        c_sym = r["c_eff"]
-        c_str = str(c_sym)
-        c_float = r["c_eff_float"]
-        print(f"  {L_t:3d}  |  {c_str:<25s} |  {c_float:.12f} |  0  (exact)")
-    print()
+    # The c(L_t) values themselves are printed per L_t in Part A.1.
 
     # Asymptotic limit: for L_t -> infinity, the APBC Matsubara sum becomes
     # the continuum integral
@@ -626,20 +531,9 @@ def part_C_numerical_table(results: Dict[int, Dict], L_t_list: List[int]):
 
 
 def main() -> int:
-    print("=" * 88)
     print("CHARGED-LEPTON CURVATURE KERNEL: PURE-APBC L_t EXTENSION")
-    print("=" * 88)
-    print()
-    print("Question:")
-    print("  On pure-APBC temporal blocks with L_t in {4, 6, 8, 12, 16, 24},")
-    print("  does the diagonal kernel pattern m^2 + c(L_t) u_0^2 generalize,")
-    print("  and does the off-diagonal curvature b = K_{12} ever become")
-    print("  nonzero?")
-    print()
-    print("  a companion runner's L_t=4 anchor: c(4) = 7/2 and b = 0 by translation-")
-    print("  character orthogonality. This runner extends to all L_t in the")
-    print("  target set and asks whether any L_t breaks the pattern.")
-    print()
+    print("Diagonal pattern m^2 + c(L_t) u_0^2 for L_t in {4,...,24}; off-diagonal")
+    print("b = K_ij computed on 4D staggered blocks in two label realizations.")
 
     L_t_list = [4, 6, 8, 12, 16, 24]
 
@@ -652,7 +546,7 @@ def main() -> int:
     print()
 
     # Part A.2: off-diagonal kernel b
-    b_results = part_A2_offdiagonal_kernel(L_t_list)
+    b_results = part_A2_offdiagonal_kernel([4, 6, 8])
     print()
 
     # Part A.3: structural no-go theorem
@@ -667,34 +561,18 @@ def main() -> int:
     print()
 
     # Final verdict
-    print("=" * 88)
-    print("FINAL VERDICT")
-    print("=" * 88)
-
-    b_all_zero = all(v == 0 for v in b_results.values())
-    verdict = "YES (structural no-go)" if b_all_zero else "NO (some L_t breaks the pattern)"
-    print()
-    print(f"  b = K_{{12}} = 0 for every tested pure-APBC L_t: {verdict}")
-    print()
-    print(f"  Tested L_t values: {sorted(L_t_list)}")
-    print(f"  Pure-APBC b = 0 universal: {b_all_zero}")
-    print(f"  Koide-cone reachable by pure-APBC L_t extension alone: False")
-    print()
-    print(
-        f"  NO_GO_PURE_APBC={'TRUE' if b_all_zero else 'FALSE'}"
-    )
-    print()
-    print("  Interpretation: the translation-character orthogonality of the hw=1")
-    print("  triplet is an EXACT symmetry of every pure-APBC L_t block and")
-    print("  eliminates cross-species matrix elements at quadratic source-response")
-    print("  order regardless of L_t. The Koide cone is therefore NOT reachable")
-    print("  by temporal-block extension alone. The natural next attack surface")
-    print("  is one of the four mechanisms enumerated in Part B (Two-Higgs, SU(2)_L")
-    print("  gauge exchange, Wilson/improvement, or non-APBC temporal mixing).")
-    print("  Mechanism 1 (Two-Higgs) is under active work in a separate G1 thread")
-    print("  and is not attacked here.")
-    print()
-    print(f"  TOTAL: PASS = {PASS_COUNT}, FAIL = {FAIL_COUNT}")
+    periodic_zero = all(v < 1e-9 for v in b_results["periodic"].values())
+    print("FINAL VERDICT (scoped)")
+    print(f"  periodic corner labels: b = 0 at L_t = {sorted(b_results['periodic'])}: {periodic_zero}")
+    print(f"  APBC nearest-corner labels: K_100,010 = {b_results['apbc_coupled']:.4f} (nonzero)")
+    print("  The commuting-translation proof is retired; b = 0 holds by corner")
+    print("  annihilation in the periodic realization and fails in the APBC one.")
+    print("per_element: checked - explicit staggered matrix entries and resolvent trace products determine the finite curvature values.")
+    print("per_site: checked - all spatial 4^3 sites with temporal extents 4,6,8 are instantiated for the periodic-corner checks.")
+    print("per_mode: checked - periodic exact corner plane waves and APBC nearest-corner momentum bins define distinct tested projectors.")
+    print("per_block: checked - the three hw=1 projectors and their complement pairs are resolved; the diagonal formula has a separate realization.")
+    print("lattice_wide: checked - whole finite volumes 4^3 times Lt=4,6,8 are inverted; no continuum species or infinite-volume curvature closure is executed.")
+    print(f"TOTAL: PASS={PASS_COUNT} FAIL={FAIL_COUNT}")
     return 0 if FAIL_COUNT == 0 else 1
 
 

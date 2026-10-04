@@ -18,6 +18,7 @@ from pathlib import Path
 
 import sympy as sp
 
+AUDIT_TIMEOUT_SEC = 120
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DOCS = REPO_ROOT / "docs"
@@ -47,6 +48,7 @@ def check(name: str, ok: bool, detail: str = "", *, kind: str = "hygiene") -> No
 
 # A. Current authority boundaries.
 minimal_axioms = read_doc("MINIMAL_AXIOMS_2026-06-29.md")
+minimal_axioms_flat = " ".join(minimal_axioms.split())
 three_gen = read_doc("THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md")
 readout_factor = read_doc("KOIDE_Q_READOUT_FACTORIZATION_THEOREM_2026-04-22.md")
 selector = read_doc("KOIDE_Q_MINIMAL_SCALE_FREE_SELECTOR_NOTE_2026-04-22.md")
@@ -64,7 +66,7 @@ check(
 )
 check(
     "Qubit axiom does not supply a physical observable bridge",
-    "physical observable bridges remain downstream" in minimal_axioms,
+    "physical observable bridges remain downstream" in minimal_axioms_flat,
     "The one-site algebra is not a charged-lepton readout theorem.",
 )
 check(

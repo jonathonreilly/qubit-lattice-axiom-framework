@@ -18,6 +18,9 @@ recorded in the source note Section 3). It serves two purposes:
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+
+
 from pathlib import Path
 import sys
 

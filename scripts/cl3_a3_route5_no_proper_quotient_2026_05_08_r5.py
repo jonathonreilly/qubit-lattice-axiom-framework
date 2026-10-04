@@ -44,6 +44,9 @@ Loop: action-first-principles-a3-route5-20260508
 """
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+
+
 from typing import Dict, List, Tuple
 
 import numpy as np

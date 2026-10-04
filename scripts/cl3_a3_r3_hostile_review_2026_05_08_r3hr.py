@@ -34,6 +34,9 @@ EXPECTED RESULT: 8/8 OBSTRUCTION HOLDS, 0 escapes.
 """
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+
+
 from typing import Dict, List, Tuple
 
 import numpy as np

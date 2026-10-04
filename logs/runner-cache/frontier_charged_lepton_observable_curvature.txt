@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_charged_lepton_observable_curvature.py
-runner_sha256: 1b9c7907956d3255d386e88ce66754e81d5f2e63a90a91cdcc4761546a70c6b0
+runner_sha256: 3fa3ac4b0cac48fcb2c5da8d96f432d80993bcbb6eabca68ab76236023e9d514
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.40
+elapsed_sec: 0.45
 status: ok
 ----- stdout -----
 ========================================================================================

@@ -1,6 +1,6 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_generation_fermi_point.py
-runner_sha256: 367b0322a27634056aa9017864859e2b4f9e1ea5ddcbeea9b01577c01fda04fb
+runner_sha256: 1ce4deefe4e7124b822514620fe6c6b67050fc082832c2a71a00cdb4ab33f0a5
 timeout_sec: 120
 exit_code: 0
 elapsed_sec: 0.04

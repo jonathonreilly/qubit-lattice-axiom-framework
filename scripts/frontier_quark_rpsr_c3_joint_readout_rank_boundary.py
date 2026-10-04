@@ -12,6 +12,9 @@ No observed quark masses, fitted Yukawa entries, or CKM mass inputs are used.
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+
+
 from collections import deque
 from pathlib import Path
 import math

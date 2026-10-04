@@ -11,6 +11,9 @@ and YT circulant results as inherited support with A1/P1 still open.
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+
+
 from pathlib import Path
 import math
 import sys

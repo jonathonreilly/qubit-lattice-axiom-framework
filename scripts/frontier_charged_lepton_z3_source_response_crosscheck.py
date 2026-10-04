@@ -66,6 +66,9 @@ Dependencies: sympy, numpy, stdlib.
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+
+
 import sys
 from itertools import product
 

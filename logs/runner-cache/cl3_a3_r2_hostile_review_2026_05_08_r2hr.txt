@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_r2_hostile_review_2026_05_08_r2hr.py
-runner_sha256: 880a03122df51658cacd2ae81c2a000d7297768a130accac2ff86ac0de487f8a
+runner_sha256: 266b5f7b5c8b6e478c33425363dde78801d03edc73fd23f2336e18b59b5fc028
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.35
+elapsed_sec: 0.58
 status: ok
 ----- stdout -----
 ==============================================================================

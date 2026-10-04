@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_quark_rpsr_c3_joint_readout_rank_boundary.py
-runner_sha256: 2974c1d5dfdb3bedf62a836eb3b43949ab66a4c611c7c0a00a900784e5f6d8e7
-input_fingerprint_sha256: bfc0998a1f3732b632d2a25ff6e545f576cc218fe310e4b4869748a5083afdce
+runner_sha256: f655b5d133d018e9694f2d39d3bd69e0805513c36db7dd1fc6a0cadf9b89312e
+input_fingerprint_sha256: 2162ecdf40efaa60b033ece374ab455185b6d4b644bd88955fb945a3de5acfe4
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.09
+elapsed_sec: 0.08
 status: ok
 ----- stdout -----
 ========================================================================================

@@ -1,5 +1,7 @@
 # Quark RPSR-C3 Joint Readout Rank Boundary Note
 
+**Type:** bounded_theorem (finite source-law boundary under the stated supplied inputs; no audit-status assertion)
+
 **Date:** 2026-04-28
 
 **Status:** exact no-go / boundary theorem for Lane 3 targets 3B and 3C.

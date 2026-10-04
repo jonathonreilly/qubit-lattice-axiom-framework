@@ -1,23 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/audit_companion_quark_c3_oriented_ward_splitter_note_hash_drift_hygiene_2026_06_04.py
-runner_sha256: f8ee1f6a02bd5e8e4b562b4b41252dba296de6316d674872f0233233ebf8591f
-timeout_sec: 120
+runner_sha256: 8dd9728720182859c6f3ecd50f5d2b55bb60e935e33ac7ba0cc89878905f5ba8
+timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.21
+elapsed_sec: 0.15
 status: ok
 ----- stdout -----
 
-========================================================================
-Quark C3 Ward splitter current-source hygiene companion
-========================================================================
+== Quark C3 Ward splitter current-source hygiene companion ==
 Parent note: docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md
 Parent runner: scripts/frontier_quark_c3_oriented_ward_splitter_support.py
 Scope: meta evidence only; no theorem claim and no audit-status change.
 Audit-lane values are informational metadata, not pass/fail targets.
 
-========================================================================
-Block 1: live parent runner
-========================================================================
+== Block 1: live parent runner ==
 PASS parent_runner_exit_zero :: exit=0
 PASS parent_runner_total_line_present
 PASS parent_runner_pass_count_at_least_58 :: pass=58
@@ -25,41 +21,34 @@ PASS parent_runner_fail_count_zero :: fail=0
 PASS parent_runner_reports_support_boundary_result
 PASS parent_runner_reports_dependency_graph_repair_block
 
-========================================================================
-Block 2: ledger row presence and live metadata
-========================================================================
+== Block 2: ledger row presence and live metadata ==
 PASS parent_ledger_row_present
 PASS parent_note_exists
 PASS parent_runner_exists
 PASS companion_note_exists
 PASS parent_runner_path_expected
-PASS parent_claim_type_field_present :: claim_type=decoration
-PASS parent_status_fields_present :: effective_status=decoration_under_three_generation_observable_theorem_note audit_status=audited_decoration
-PASS parent_criticality_field_present :: criticality=medium
-PASS parent_load_field_present :: load=2.585
+PASS parent_claim_type_field_present :: claim_type=bounded_theorem
+PASS parent_status_fields_present :: effective_status=unaudited audit_status=unaudited
+PASS parent_criticality_field_present :: criticality=leaf
+PASS parent_load_field_present :: load=1.5
 PASS parent_note_hash_field_present
-PASS parent_note_hash_matches_ledger
-PASS parent_deps_include_current_required_sources :: required=4 row_deps=4
+INFO parent_note_hash_matches_ledger=False; live=985bfa9a00d16723b6628a66c071000d33fbe24acd0d46d12f8b35f20943460f; ledger=87b57250e2214f47120fe841d54e283fe1a2ba5f9d6c69fd34b378203acacdcc; metadata only
+PASS parent_deps_include_current_required_sources :: required=3 row_deps=3
 PASS staggered_gate_not_a_current_row_dependency :: staggered_dep_present=False
 PASS helper_runner_paths_field_present :: count=0
-PASS required_dep_row_present_quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18
-PASS required_dep_status_fields_present_quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18 :: effective_status=decoration_under_three_generation_observable_theorem_note audit_status=audited_decoration
 PASS required_dep_row_present_quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28
-PASS required_dep_status_fields_present_quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28 :: effective_status=retained_bounded audit_status=audited_clean
+PASS required_dep_status_fields_present_quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28 :: effective_status=unaudited audit_status=unaudited
 PASS required_dep_row_present_s3_taste_cube_decomposition_note
-PASS required_dep_status_fields_present_s3_taste_cube_decomposition_note :: effective_status=retained audit_status=audited_clean
+PASS required_dep_status_fields_present_s3_taste_cube_decomposition_note :: effective_status=unaudited audit_status=unaudited
 PASS required_dep_row_present_three_generation_observable_theorem_note
-PASS required_dep_status_fields_present_three_generation_observable_theorem_note :: effective_status=retained audit_status=audited_clean
+PASS required_dep_status_fields_present_three_generation_observable_theorem_note :: effective_status=unaudited audit_status=unaudited
 PASS previous_audit_history_field_present
 
-========================================================================
-Block 3: current parent note content
-========================================================================
+== Block 3: current parent note content ==
 PASS parent_declares_independent_status_authority
 PASS parent_has_dependency_rewire_section
 PASS parent_has_dependency_repair_section
 PASS parent_has_machine_visible_dependency_links
-PASS parent_note_markdown_links_required_dep_quark_c3_oriented_ward_splitter_algebraic_core_split_note_2026-06-18 :: QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md
 PASS parent_note_markdown_links_required_dep_quark_generation_equivariant_ward_degeneracy_no_go_note_2026-04-28 :: QUARK_GENERATION_EQUIVARIANT_WARD_DEGENERACY_NO_GO_NOTE_2026-04-28.md
 PASS parent_note_markdown_links_required_dep_s3_taste_cube_decomposition_note :: S3_TASTE_CUBE_DECOMPOSITION_NOTE.md
 PASS parent_note_markdown_links_required_dep_three_generation_observable_theorem_note :: THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md
@@ -71,9 +60,7 @@ PASS parent_note_disclaims_numerical_quark_ratios
 PASS parent_note_disclaims_absolute_non_top_scale
 PASS parent_note_disclaims_status_change
 
-========================================================================
-Block 4: companion note content
-========================================================================
+== Block 4: companion note content ==
 PASS companion_declares_meta_type
 PASS companion_disclaims_new_theorem
 PASS companion_disclaims_status_change
@@ -82,9 +69,7 @@ PASS companion_documents_current_parent_tally
 PASS companion_documents_dependency_repair
 PASS companion_disclaims_source_readout_resolution
 
-========================================================================
-Block 5: C3 Hermitian normal-form spectrum
-========================================================================
+== Block 5: C3 Hermitian normal-form spectrum ==
 PASS W(0.7,-0.2,0.4)_is_hermitian :: norm=0.00e+00
 PASS W(0.7,-0.2,0.4)_commutes_with_C3 :: norm=0.00e+00
 PASS W(0.7,-0.2,0.4)_spectrum_matches_formula :: predicted=[0.3, 0.5, 1.3] actual=[0.3, 0.5, 1.3]
@@ -98,9 +83,7 @@ PASS W(0.0,1.0,1.5)_is_hermitian :: norm=0.00e+00
 PASS W(0.0,1.0,1.5)_commutes_with_C3 :: norm=0.00e+00
 PASS W(0.0,1.0,1.5)_spectrum_matches_formula :: predicted=[-2.5, 0.5, 2.0] actual=[-2.5, 0.5, 2.0]
 
-========================================================================
-Block 6: splitter boundary and readout checks
-========================================================================
+== Block 6: splitter boundary and readout checks ==
 PASS c_zero_retains_E_doublet_degeneracy :: eigs=[0.25, 0.25, 1.0]
 PASS generic_nonzero_c_gives_three_distinct_eigenvalues :: eigs=[-0.05, 0.55, 1.0]
 PASS c_equals_plus_3b_is_boundary_collision :: eigs=[-2.0, 1.0, 1.0]
@@ -113,10 +96,8 @@ PASS diag(0.7,1.2,0.7)_C3_equivariance_matches_scalar_test :: commutes=False exp
 PASS diag(0.0,0.0,0.0)_C3_equivariance_matches_scalar_test :: commutes=True expected=True
 PASS diag(1.0,2.0,3.0)_C3_equivariance_matches_scalar_test :: commutes=False expected=False
 
-========================================================================
-Summary
-========================================================================
-TOTAL: PASS=74, FAIL=0
+== Summary ==
+TOTAL: PASS=70, FAIL=0
 
 ----- stderr -----
 

@@ -227,7 +227,7 @@ physical-carrier or source/readout bridge.
 
 For a source-side audit-unlock split that isolates this algebraic core from
 physical-carrier provenance, see
-[`QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md`](QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md).
+`archive/notes/docs/QUARK_C3_ORIENTED_WARD_SPLITTER_ALGEBRAIC_CORE_SPLIT_NOTE_2026-06-18.md` (archived provenance; not a live graph dependency).
 
 ## Dependency repair (2026-06-20)
 

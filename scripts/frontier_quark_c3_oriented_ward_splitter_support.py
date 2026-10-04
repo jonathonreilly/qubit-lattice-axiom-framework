@@ -23,6 +23,8 @@ import sys
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 120
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
@@ -189,6 +191,7 @@ def main() -> int:
     block05_text = read(block05_note)
     observable_text = read(observable_note)
     z2_text = read(z2_note)
+    z2_flat = " ".join(z2_text.split())
 
     check(
         "block05 names source/readout primitive as load-bearing",
@@ -196,7 +199,11 @@ def main() -> int:
         or "a source-domain input that breaks or orients the `E` doublet" in block05_text,
     )
     check("observable theorem supplies induced C3[111]", "C3[111]" in observable_text and "X1 -> X2 -> X3 -> X1" in observable_text)
-    check("Z2 support note confirms symmetry-reduced families are support tools", "does not claim a derived flavor hierarchy" in z2_text)
+    check(
+        "Z2 support note confirms symmetry-reduced families are support tools",
+        "finite linear-algebra support tool" in z2_flat
+        and "flavor hierarchy, symmetry breaking, and selector theorems lie outside this note's authority" in z2_flat,
+    )
     check("new note forbids retained mass closure", "does not claim retained" in new_text and "`m_b`" in new_text)
     check("new note forbids observed quark masses as proof inputs", "observed quark masses" in new_text and "Forbidden proof inputs" in new_text)
 

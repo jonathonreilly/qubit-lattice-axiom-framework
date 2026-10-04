@@ -26,9 +26,15 @@ Retained inputs:
 (`retained`),
 [`THREE_GENERATION_STRUCTURE_NOTE`](THREE_GENERATION_STRUCTURE_NOTE.md) (`retained_bounded`),
 [`THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10`](THREE_GENERATION_HW1_DISTINCT_TRANSLATION_CHARACTERS_NARROW_THEOREM_NOTE_2026-05-10.md)
-(`retained`): the three generations are the `hw=1` Brillouin-zone corners
+(`retained`): the three supplied labels are the `hw=1` Brillouin-zone corners
 `k1=(π,0,0), k2=(0,π,0), k3=(0,0,π)`, distinguished by three distinct joint **translation
-characters** under `(T_x, T_y, T_z)` — they carry **no spatial separation**. The mediator is the
+characters** under `(T_x, T_y, T_z)` — they carry **no spatial separation**. (The characters are
+those of the plain one-site translations on the corner plane waves. These translations are
+symmetries of the translation-invariant scalar mediator used below, not of the staggered
+operator, of which at most one is a symmetry in any representative; and the corner labels are
+relative to the staggered gauge representative. The computation below uses only the label
+differences `k_i − k_j`, which a gauge relabelling `n → n xor c` leaves unchanged modulo reciprocal-lattice momenta; exact check:
+`scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`.) The mediator is the
 retained
 [`STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11`](STAGGERED_SELF_CONSISTENT_TWO_BODY_NOTE_2026-04-11.md)
 (`retained_bounded`).
@@ -63,13 +69,16 @@ formula.
 **Theorem.**
 
 1. **Distinct translation characters.** The three corners carry three distinct joint
-   `(T_x, T_y, T_z)` sign characters `(−1,+1,+1), (+1,−1,+1), (+1,+1,−1)` — the retained
-   "translations separate the generations."
+   `(T_x, T_y, T_z)` sign characters `(−1,+1,+1), (+1,−1,+1), (+1,+1,−1)` — characters of the
+   plain one-site translations on the corner plane waves (label data, not symmetry data of the
+   staggered operator).
 
 2. **The `J − I` form is corner-symmetry-protected.** Every generation **pair** has the *same*
    inter-corner transfer `eps(k_i − k_j) = 8` (each pair differs by two `π`-flips). The exchange
    is therefore identical across all three pairs, so the second-order coupling keeps the **exact
-   `C3` (`J − I`) form** — protected by cubic corner symmetry, not assumed.
+   `C3` (`J − I`) form** — protected by cubic corner symmetry (axis permutations of the corner
+   labels, a symmetry of the scalar mediator; the pair differences are representative-independent),
+   not assumed.
 
 3. **`delta < 0` — sign re-confirmed from the momentum picture.** The exact lattice two-fermion
    mutual energy matches the Hartree–Fock formula (verified `L = 4, 6`) and is **negative** for

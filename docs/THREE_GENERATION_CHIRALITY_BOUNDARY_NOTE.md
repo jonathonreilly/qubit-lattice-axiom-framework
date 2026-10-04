@@ -1,6 +1,10 @@
 # Three-Generation / Chirality Boundary Note
 
-**Date:** 2026-04-15
+**Type:** bounded_theorem
+**Primary runner:** [`scripts/frontier_generation_fermi_point.py`](../scripts/frontier_generation_fermi_point.py)
+**Current claim scope:** Finite corner orbit counting only; species and chirality identifications remain separate open bridges.
+
+**Date:** 2026-04-15; 2026-10-02 species-reading narrowing (open bridge)
 **Status:** proposed_retained support note on `main`
 **Scripts:** `scripts/frontier_generation_fermi_point.py`,
 `scripts/frontier_generation_rooting_undefined.py`,
@@ -15,8 +19,9 @@ three-generation / chirality boundary on the current package surface
 The framework's retained matter claim is:
 
 - exact `8 = 1 + 1 + 3 + 3` orbit structure on the physical `Z^3` surface
-- the `hw = 1` triplet is retained as physically distinct species structure on
-  the accepted Hilbert surface
+- the `hw = 1` triplet is retained as an irreducible three-label corner
+  structure on the accepted Hilbert surface; its physical-species reading
+  is an open bridge (narrowed 2026-10-02)
 - rooting is not a well-defined operation in Hamiltonian `Cl(3)` on `Z^3`
 - the retained `hw=1` triplet already carries an exact irreducible generation
   algebra, so no proper exact quotient survives on that retained surface
@@ -31,9 +36,14 @@ This is the safe public boundary for the current paper.
 ### Claimed
 
 1. The Brillouin-zone corner algebra is exact and gives `1 + 1 + 3 + 3`.
-2. On the accepted Hilbert surface, exact observable separation plus
-   no-proper-quotient closure already force the retained `hw=1` triplet to be
-   physically distinct species structure.
+2. On the accepted Hilbert surface, the retained `hw=1` labels carry an
+   irreducible label algebra with no proper exact quotient. This does not by
+   itself force a physical-species reading: the plain translations whose
+   characters separate the labels are not jointly symmetries of the
+   staggered operator (exact check: `scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`),
+   and `THREE_GENERATION_OBSERVABLE_THEOREM_NOTE.md` asserts no
+   observable-sector statement for the staggered operator near its zero
+   modes. The species reading is an open bridge.
 3. In this Hamiltonian `Cl(3)` formulation, rooting / taste-removal is
    undefined as an allowed operation.
 4. On the retained generation surface, the exact operator algebra is
@@ -61,10 +71,11 @@ The clean response to the usual rooting / Nielsen-Ninomiya objection is:
 - the project does **not** claim that a conventional regulator lattice with
   doublers has been repaired by a legal rooting trick
 - instead, the project takes the lattice as physical
-- on that physical-lattice surface, the triplet sectors are retained as
-  species structure because rooting is undefined in the Hamiltonian `Cl(3)`
-  formulation and because the retained `hw=1` generation algebra itself admits
-  no proper exact quotient
+- on that physical-lattice surface, the triplet sectors are retained as an
+  irreducible three-label structure: they cannot be removed by rooting, because
+  rooting is undefined in the Hamiltonian `Cl(3)` formulation, nor by a proper
+  exact quotient of the label algebra; their physical-species reading is an
+  open bridge
 - chirality is then supplied in the full framework by anomaly-forced time and
   anomaly cancellation, not by pretending the purely spatial `Z^3` surface is
   already a finished chiral continuum regulator
@@ -82,8 +93,8 @@ It is claiming a different theory surface.
    isolates the physical-lattice axiom boundary.
 4. [PHYSICAL_LATTICE_NECESSITY_NOTE.md](./PHYSICAL_LATTICE_NECESSITY_NOTE.md)
    closes the no-same-stack / no-same-surface regulator reinterpretation
-   boundary, closes the narrower observable-species semantics step on the
-   accepted Hilbert surface, and also the stronger loophole that a nontrivial
+   boundary (its narrowed scope does not load-bearingly claim
+   physical-species semantics for the `hw=1` triplet), and also the stronger loophole that a nontrivial
    regulator-style family could preserve both accepted live invariants
    `alpha_s(v)` and `v`, so on the retained package contract the
    physical-lattice reading is forced as the unique surviving interpretation;
@@ -101,8 +112,9 @@ It is claiming a different theory surface.
 > + 3`; rooting is not a well-defined operation in Hamiltonian `Cl(3)` on
 > `Z^3`; and the retained `hw=1` triplet already carries an exact irreducible
 > generation algebra, so no proper exact quotient survives on that retained
-> surface. Exact translation observables therefore separate the triplet sectors
-> as physically distinct species on the accepted Hilbert surface. Regulator
+> surface. Plain-translation label characters separate the triplet sectors;
+> these translations are not jointly symmetries of the staggered operator, so
+> the physically-distinct-species reading remains an open bridge. Regulator
 > reinterpretation is not an equivalent reading of the same accepted framework
 > stack because it requires extra continuum/rooting/RG structure not present
 > there. On the accepted one-axiom Hilbert/locality/information surface the
@@ -127,6 +139,6 @@ Current main-branch runner state:
 - `frontier_three_generation_observable_theorem.py`: `PASS=47`, `FAIL=0`
 - `frontier_generation_axiom_boundary.py`: `PASS=31`, `FAIL=0`
 - `frontier_physical_lattice_necessity.py`: closed no-same-stack /
-  no-same-surface regulator reinterpretation; triplet species semantics forced
-  on the accepted Hilbert surface; substrate physicality forced on the
+  no-same-surface regulator reinterpretation; triplet species semantics is
+  logical commentary there, not a load-bearing result; substrate physicality forced on the
   accepted one-axiom framework surface

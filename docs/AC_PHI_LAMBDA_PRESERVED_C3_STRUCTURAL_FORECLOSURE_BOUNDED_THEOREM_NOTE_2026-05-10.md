@@ -1,9 +1,12 @@
 # AC_φλ Preserved-C_3 Structural Foreclosure — 10-Probe A3 Campaign Synthesis (Bounded No-Go Source Note)
 
+**Current negative-claim boundary:** The operator result and withdrawn broader claims are specified in the No-Go Discipline Gate below; campaign-wide physical exhaustion is not asserted.
+
 **Date:** 2026-05-10
 **Type:** no_go (bounded structural foreclosure synthesis)
 **Claim type:** no_go
-**Scope:** backward-looking synthesis over already-landed 10-probe A3
+**Current scope:** A supplied three-label carrier and bare cycle; [H,C]=0 implies equal corner-basis diagonal expectations, with no conclusion about distinct eigenvalues or physical readout.
+**Historical campaign scope (superseded):** backward-looking synthesis over already-landed 10-probe A3
 campaign content (PRs #709–#713 + #719–#723) plus the substep-4 AC
 narrowing parent and the preserved-`C_3` interpretation note. Records
 the single structural reason that AC_φ within `AC_narrow = AC_φ ∧
@@ -21,6 +24,10 @@ genuinely open atom per the 30-probe BAE terminal-synthesis
 **Authority role:** synthesis note — audit verdict and downstream
 status set only by the independent audit lane. Not a new derivation.
 **Primary runner:** [`scripts/ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10.py`](../scripts/ac_phi_lambda_c3_equivariance_schur_diagnostic_2026_05_10.py)
+
+## Superseded campaign record
+
+The inherited sections below record earlier assertions and attempted routes. Their claims of physical exhaustion, universal symmetry, sector uniqueness and required new axioms are withdrawn. They are not current premises or proof. The current finite theorem and unresolved routes are stated in the No-Go Discipline Gate.
 
 ## Authority disclaimer
 
@@ -89,7 +96,7 @@ as the load-bearing structural reason their attack vectors fail.
 
 ## 3. Proof (one-paragraph representation theory)
 
-The cyclic outer automorphism `Ad U_{C_3}` is implemented on
+The cyclic inner automorphism `Ad U_{C_3}` is implemented on
 `H_{hw=1} ≅ ℂ³` by the regular representation of `Z/3ℤ`: in the
 corner-basis `{|c_α⟩}` the generator `U_{C_3}` is the standard
 3-cycle permutation matrix `|c_1⟩ ↦ |c_2⟩ ↦ |c_3⟩ ↦ |c_1⟩` with
@@ -268,10 +275,12 @@ The species-label content of `AC_λ` (free fermion propagator
 block-diagonal on hw=1 corner basis; no inter-corner mixing in the
 free measure) is the **runner-certified bounded candidate** per
 [`STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md`](STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md)
-rigorization addendum (2026-05-09): interval-certified
-Kawamoto-Smit block-diagonality at the BZ corners via the
-simultaneous-diagonalization theorem for commuting operators with
-non-degenerate joint translation eigenvalues. Independent audit
+rigorization addendum (2026-05-09) as repaired 2026-06-10:
+Kawamoto-Smit block-diagonality at the BZ corners by direct
+annihilation (the operator vanishes on every corner plane wave, so its
+hw=1 block is zero). The 2026-06-10 repair record retires the earlier
+simultaneous-diagonalization route, because the one-site translations
+`T_1, T_2` do not commute with the operator. Independent audit
 decides retained-grade promotion.
 
 ### 8.2 `AC_λ.label` — species-naming convention
@@ -505,3 +514,69 @@ form, no new axioms, claim type) are also reported.
   named across the 10-probe inventory plus the literature dive plus
   the AC_φλ decomposition. It is not a relabel of any individual
   probe.
+
+
+## No-Go Discipline Gate — Current Operator Scope (2026-10-04)
+
+The current negative statement is only this: on the supplied three-dimensional
+corner-label carrier, a matrix commuting with the bare three-cycle has equal
+corner-basis diagonal entries. Indeed H_ii = (C H C^-1)_ii = H_(i-1,i-1).
+This is cyclic conjugation, not irreducibility of the C3 representation.
+It does not imply equal eigenvalues, prohibit a physical readout, or establish
+foreclosure from all framework axioms. Earlier universal foreclosure,
+exhaustion, unique-sector and "new axiom required" assertions in this packet
+are withdrawn as current conclusions; the route inventory records attempts.
+The exact periodic corner kinetic compression is separately zero by direct
+annihilation. Finite spatial APBC and the physical embedding remain separate.
+
+- **N1 — Alternative routes.** The existing campaign names five distinct
+  proposal families: Higgs/Yukawa source operators (R1), temporal transfer and
+  clock construction (R2), anomaly/inflow or index operators (R3), Spin(6)
+  tensor/GUT embeddings (R4), and GNS/factor automorphisms (R5). Each is an
+  ATTEMPTED campaign route, not a new review execution of its full physics.
+  At the finite operator reduction each fails to give unequal corner
+  expectations *if* its output commutes with C, by the identity above. The
+  present review checks that identity independently; it does not certify the
+  premise for every output of any of these families. Non-equivariant outputs,
+  different carriers and physical readouts remain open. Five names are not
+  a proof of exhaustion. The direct finite proof, not prior audit grades,
+  supports the stated operator conclusion.
+- **N2 — Wall independence.** No independent wall count is claimed. Physical
+  embedding versus a source selector: implications both ways are unresolved.
+  A source selector versus physical readout: implications both ways are
+  unresolved. An embedding versus a readout: implications both ways are
+  unresolved. C-equivariance is a supplied mathematical domain hypothesis,
+  not a derived physical wall. None of these relations is counted as an
+  independently proved obstruction.
+- **N3 — Hidden premises.** The three-label carrier, bare cycle and operator
+  equivariance are explicit supplied inputs. Cubic substrate geometry alone
+  does not supply their physical realization. RP/OS, vacuum cyclicity,
+  anomaly language or a registered primitive does not silently supply a
+  physical embedding, species interpretation or selector here.
+- **N4 — Residual matching.** The equal-diagonal calculation addresses corner
+  expectations only. Spectrum positivity addresses positivity; chirality
+  pairing addresses n xor 111; factor-center calculations address central
+  projections. Those latter residuals do not match a physical species or
+  hierarchy theorem and are not witnesses closing it. Campaign references
+  remain context, not retained authorities for a broader no-go.
+- **N5 — Resolution.** Each primary's cached certificate records its actual
+  computation. The 3x3 matrix controls resolve elements and label blocks;
+  only the lattice scope, corrected kinetic compression and curvature
+  runners instantiate finite sites. No continuum or thermodynamic physical
+  species statement follows from unexecuted resolutions.
+- **N6 — Partial closure.** A conventional label assignment can be a
+  definition, not a new axiom. It does not select a mass hierarchy or prove
+  a physical carrier. Approved primitives retain their registered grants;
+  no additional primitive or framework premise is introduced here.
+- **N7 — Steelman.** A physical readout could use Fourier-character
+  eigenvectors: H = 3I + C + C^-1 commutes with C, has equal corner
+  expectations and eigenvalues 5,2,2. A further admissible source could split
+  the characters, or an APBC carrier could mix nearest-corner labels. These
+  are concrete escapes from the former broader claim. They do not violate
+  the corrected equal-diagonal identity and remain open physical work.
+- **N8 — Cross-cycle echo.** The current observable note separates the
+  three-label algebra from the twelve-dimensional cell carrier; the corner
+  scope note separates bare label operators from dressed symmetries; the
+  corrected curvature survey gives an APBC counterexample. Those repairs
+  reopen the former physical foreclosure rhetoric. This packet retains
+  only the direct operator result and these explicitly scoped attempts.

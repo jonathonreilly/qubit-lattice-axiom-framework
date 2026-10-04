@@ -1,5 +1,7 @@
 # A3 Route 2 — Single-Clock / Lieb-Robinson C_3[111] Symmetry-Breaking Attack (Bounded Obstruction)
 
+**Current negative-claim boundary:** The operator result and withdrawn broader claims are specified in the No-Go Discipline Gate below; campaign-wide physical exhaustion is not asserted.
+
 **Date:** 2026-05-08
 **Type:** bounded_theorem (sharpened obstruction; no positive closure)
 **Claim type:** bounded_theorem
@@ -8,6 +10,10 @@ status set only by the independent audit lane.
 **Loop:** action_first_principles_2026_05_08 / a3_route2_single_clock_c3_breaking
 **Primary runner:** [`scripts/cl3_a3_route2_single_clock_2026_05_08_r2.py`](../scripts/cl3_a3_route2_single_clock_2026_05_08_r2.py)
 **Cache:** [`logs/runner-cache/cl3_a3_route2_single_clock_2026_05_08_r2.txt`](../logs/runner-cache/cl3_a3_route2_single_clock_2026_05_08_r2.txt)
+
+## Superseded campaign record
+
+The inherited sections below record earlier assertions and attempted routes. Their claims of physical exhaustion, universal symmetry, sector uniqueness and required new axioms are withdrawn. They are not current premises or proof. The current finite theorem and unresolved routes are stated in the No-Go Discipline Gate.
 
 ## Authority disclaimer
 
@@ -62,7 +68,7 @@ clock generator H, Lieb-Robinson velocity v_LR, temporal reflection
 H ≥ 0, fermion-doubling time-momentum) lives in the C_3-trivial
 1D irrep on the spatial point group, hence cannot break spatial C_3.
 
-The obstruction is exhibited by Schur's lemma applied to U_{C_3} on
+The obstruction is exhibited by cyclic conjugation applied to U_{C_3} on
 `H_{hw=1}`: any C_3-symmetric self-adjoint observable has equal
 expectation values on the 3 corner-basis states, regardless of
 whether the observable is constructed from spatial or temporal
@@ -163,7 +169,14 @@ Spatial C_3[111] acts only on spatial coords. The two operations
 The reconstructed transfer matrix `T = exp(-a_τ H)` is built from the
 spatial-symmetric Wilson + staggered action. Hence `T` (and `H`)
 commute with `U_{C_3[111]}` on `H_phys`. Restricted to `H_{hw=1}`,
-`H` is C_3-symmetric and cannot distinguish corners.
+`H` is C_3-symmetric and cannot distinguish corners. Here
+`U_{C_3[111]}` is the symmetry covering the axis cycle. In the cyclic
+representative (`η_1 = (−1)^{x_2}, η_2 = (−1)^{x_3}, η_3 = (−1)^{x_1}`,
+`η_t = (−1)^{x_1+x_2+x_3}`) it is the bare cycle and preserves the hw=1
+corner-label span, which is where the equal-diagonal step applies; in the
+Block 03 representative η⁰ it carries the sign field
+`(−1)^{x_1x_2+x_1x_3}` and does not preserve the η⁰ hw=1 span (exact
+check: `scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`).
 
 ### Attack vector 4: OS reconstruction time-orientation distinguishes corners?
 
@@ -178,7 +191,7 @@ a binary structure has orbit size 1 or 2 under any group action.
 
 Numerically: any C_3-symmetric self-adjoint observable with binary
 spectrum on `C^3` has equal expectation values on the corner basis
-(Schur, verified in runner Section 4).
+(cyclic conjugation, verified in runner Section 4).
 
 ### Attack vector 5: modular conjugation J distinguishes corners?
 
@@ -249,7 +262,7 @@ i.e., O_t is C_3[111]-invariant by construction. Hence on H_{hw=1}:
 
     ⟨c_α | O_t | c_α⟩  =  ⟨c_β | O_t | c_β⟩    for all α, β ∈ {1, 2, 3}
 
-(equal corner-basis expectations, by Schur's lemma).
+(equal corner-basis expectations, by cyclic conjugation).
 
 Therefore no time-direction primitive distinguishes the 3 hw=1
 corners. AC_φ closure cannot proceed via time-direction primitives
@@ -268,7 +281,7 @@ class against AC_φ.
   `S_spatial` is C_3[111]-invariant (cubic symmetry, A2).
 - Every retained time-direction primitive is built from `T[S]` or
   derivatives thereof. Hence each commutes with U_{C_3[111]}.
-- Schur's lemma on `H_{hw=1}`: a C_3-symmetric self-adjoint
+- cyclic conjugation on `H_{hw=1}`: a C_3-symmetric self-adjoint
   operator has equal expectation values on the corner-basis states,
   since
     
@@ -554,7 +567,7 @@ The 7-vector time-direction attack against AC_φ produces a
 **sharpened structural obstruction**: temporal primitives in the
 retained chain are C_3[111]-invariant by construction (C_3 acts only
 on space; time is in the trivial 1D irrep), so they cannot
-distinguish the 3 hw=1 corners by Schur's lemma. The result is the
+distinguish the 3 hw=1 corners by cyclic conjugation. The result is the
 kinematic-primitive exhaustion observation, not a positive closure.
 
 This note is the honest scope on the temporal closure attempt:
@@ -596,3 +609,69 @@ Total: 7 attack vectors evaluated; all FAIL.
 Result: structural obstruction (time-direction primitives are
 C_3[111]-invariant by construction).
 ```
+
+
+## No-Go Discipline Gate — Current Operator Scope (2026-10-04)
+
+The current negative statement is only this: on the supplied three-dimensional
+corner-label carrier, a matrix commuting with the bare three-cycle has equal
+corner-basis diagonal entries. Indeed H_ii = (C H C^-1)_ii = H_(i-1,i-1).
+This is cyclic conjugation, not irreducibility of the C3 representation.
+It does not imply equal eigenvalues, prohibit a physical readout, or establish
+foreclosure from all framework axioms. Earlier universal foreclosure,
+exhaustion, unique-sector and "new axiom required" assertions in this packet
+are withdrawn as current conclusions; the route inventory records attempts.
+The exact periodic corner kinetic compression is separately zero by direct
+annihilation. Finite spatial APBC and the physical embedding remain separate.
+
+- **N1 — Alternative routes.** The existing campaign names five distinct
+  proposal families: Higgs/Yukawa source operators (R1), temporal transfer and
+  clock construction (R2), anomaly/inflow or index operators (R3), Spin(6)
+  tensor/GUT embeddings (R4), and GNS/factor automorphisms (R5). Each is an
+  ATTEMPTED campaign route, not a new review execution of its full physics.
+  At the finite operator reduction each fails to give unequal corner
+  expectations *if* its output commutes with C, by the identity above. The
+  present review checks that identity independently; it does not certify the
+  premise for every output of any of these families. Non-equivariant outputs,
+  different carriers and physical readouts remain open. Five names are not
+  a proof of exhaustion. The direct finite proof, not prior audit grades,
+  supports the stated operator conclusion.
+- **N2 — Wall independence.** No independent wall count is claimed. Physical
+  embedding versus a source selector: implications both ways are unresolved.
+  A source selector versus physical readout: implications both ways are
+  unresolved. An embedding versus a readout: implications both ways are
+  unresolved. C-equivariance is a supplied mathematical domain hypothesis,
+  not a derived physical wall. None of these relations is counted as an
+  independently proved obstruction.
+- **N3 — Hidden premises.** The three-label carrier, bare cycle and operator
+  equivariance are explicit supplied inputs. Cubic substrate geometry alone
+  does not supply their physical realization. RP/OS, vacuum cyclicity,
+  anomaly language or a registered primitive does not silently supply a
+  physical embedding, species interpretation or selector here.
+- **N4 — Residual matching.** The equal-diagonal calculation addresses corner
+  expectations only. Spectrum positivity addresses positivity; chirality
+  pairing addresses n xor 111; factor-center calculations address central
+  projections. Those latter residuals do not match a physical species or
+  hierarchy theorem and are not witnesses closing it. Campaign references
+  remain context, not retained authorities for a broader no-go.
+- **N5 — Resolution.** Each primary's cached certificate records its actual
+  computation. The 3x3 matrix controls resolve elements and label blocks;
+  only the lattice scope, corrected kinetic compression and curvature
+  runners instantiate finite sites. No continuum or thermodynamic physical
+  species statement follows from unexecuted resolutions.
+- **N6 — Partial closure.** A conventional label assignment can be a
+  definition, not a new axiom. It does not select a mass hierarchy or prove
+  a physical carrier. Approved primitives retain their registered grants;
+  no additional primitive or framework premise is introduced here.
+- **N7 — Steelman.** A physical readout could use Fourier-character
+  eigenvectors: H = 3I + C + C^-1 commutes with C, has equal corner
+  expectations and eigenvalues 5,2,2. A further admissible source could split
+  the characters, or an APBC carrier could mix nearest-corner labels. These
+  are concrete escapes from the former broader claim. They do not violate
+  the corrected equal-diagonal identity and remain open physical work.
+- **N8 — Cross-cycle echo.** The current observable note separates the
+  three-label algebra from the twelve-dimensional cell carrier; the corner
+  scope note separates bare label operators from dressed symmetries; the
+  corrected curvature survey gives an APBC counterexample. Those repairs
+  reopen the former physical foreclosure rhetoric. This packet retains
+  only the direct operator result and these explicitly scoped attempts.

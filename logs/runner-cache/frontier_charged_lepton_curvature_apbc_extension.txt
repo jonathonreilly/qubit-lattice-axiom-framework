@@ -1,0 +1,81 @@
+===== runner cache v1 =====
+runner: scripts/frontier_charged_lepton_curvature_apbc_extension.py
+runner_sha256: 7eb1a4e8265f22cfd881d7e53801f5e78757318ad4538807e13d505493196fb5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.93
+status: ok
+----- stdout -----
+CHARGED-LEPTON CURVATURE KERNEL: PURE-APBC L_t EXTENSION
+Diagonal pattern m^2 + c(L_t) u_0^2 for L_t in {4,...,24}; off-diagonal
+b = K_ij computed on 4D staggered blocks in two label realizations.
+PART 0: retained hw=1 translation-character orthogonality
+  [PASS] chars X_1 . X_2 = -1 (species differ on exactly two translation generators)  (dot = -1)
+  [PASS] chars X_1 . X_3 = -1 (species differ on exactly two translation generators)  (dot = -1)
+  [PASS] chars X_2 . X_3 = -1 (species differ on exactly two translation generators)  (dot = -1)
+  [PASS] species X_1 and X_2 disagree on exactly 2 translation generators  (disagreements = 2)
+  [PASS] species X_1 and X_3 disagree on exactly 2 translation generators  (disagreements = 2)
+  [PASS] species X_2 and X_3 disagree on exactly 2 translation generators  (disagreements = 2)
+  [PASS] translation-character orthogonality: for every pair (i,j), some T assigns X_i and X_j opposite signs  (label orthogonality only; D is not T-invariant (Part A.2))
+
+PART A.1: species-diagonal K_ii^(spec) and c(L_t) for pure-APBC L_t
+  [PASS] L_t=4 APBC retained anchor: K_ii^(spec) = 16/(m^2 + (7/2) u_0^2)
+  [PASS] L_t=4 retained anchor: c(4) = 7/2 (degenerate: all sin^2 omega = 1/2)  (c(4) = 7/2)
+  [PASS] L_t=4 anchor: c(4) = 3 + 1/2 exactly (the same 7/2 that drives (7/8)^(1/4))
+
+Per-L_t evaluation:
+
+  [PASS] L_t=4: K_ii^(spec)(m=0) matches effective denominator c_eff (harmonic-mean identity)  (c_eff(4) = 7/2 ~ 3.50000000)
+  [PASS] L_t=6: K_ii^(spec)(m=0) matches effective denominator c_eff (harmonic-mean identity)  (c_eff(6) = 52/15 ~ 3.46666667)
+  [PASS] L_t=8: K_ii^(spec)(m=0) matches effective denominator c_eff (harmonic-mean identity)  (c_eff(8) = 97/28 ~ 3.46428571)
+  [PASS] L_t=12: K_ii^(spec)(m=0) matches effective denominator c_eff (harmonic-mean identity)  (c_eff(12) = 1351/390 ~ 3.46410256)
+  [PASS] L_t=16: K_ii^(spec)(m=0) matches effective denominator c_eff (harmonic-mean identity)  (c_eff(16) = 18817/5432 ~ 3.46410162)
+  [PASS] L_t=24: K_ii^(spec)(m=0) matches effective denominator c_eff (harmonic-mean identity)  (c_eff(24) = 3650401/1053780 ~ 3.46410162)
+  [PASS] L_t=4: degeneracy flag = True (collapses to single-pole form iff all sin^2 equal)
+  [PASS] L_t=6: degeneracy flag = False (collapses to single-pole form iff all sin^2 equal)
+  [PASS] L_t=8: degeneracy flag = False (collapses to single-pole form iff all sin^2 equal)
+  [PASS] L_t=12: degeneracy flag = False (collapses to single-pole form iff all sin^2 equal)
+  [PASS] L_t=16: degeneracy flag = False (collapses to single-pole form iff all sin^2 equal)
+  [PASS] L_t=24: degeneracy flag = False (collapses to single-pole form iff all sin^2 equal)
+
+PART A.2: off-diagonal K_ij, computed (repaired 2026-10-02)
+  [PASS] [NUMERIC] spatially periodic corners, L_t=4: K_ij = 0 for i != j  (max|K_ij| < 1e-9 min|K_ii|, min|K_ii| = 1.052)
+  [PASS] [NUMERIC] spatially periodic corners, L_t=6: K_ij = 0 for i != j  (max|K_ij| < 1e-9 min|K_ii|, min|K_ii| = 2.474)
+  [PASS] [NUMERIC] spatially periodic corners, L_t=8: K_ij = 0 for i != j  (max|K_ij| < 1e-9 min|K_ii|, min|K_ii| = 4.017)
+  [PASS] [NUMERIC] mechanism: on corner plane waves D couples label n only to n xor 111  (spatial hopping annihilates corners; eta_t pairs hw=1 with hw=2)
+  [PASS] [NUMERIC] spatially APBC, nearest-corner labels, L_t=4: K_{100,010} != 0  (K_{100,010} = 3.4022 (direction-3 hopping maps label 100 to 010))
+
+PART A.3: scoped no-go for the pure-APBC route
+  [PASS] [NUMERIC] NO-GO (scoped): periodic corner labels give b = 0 at every tested L_t  (L_t = [4, 6, 8]; corner annihilation + temporal pairing)
+  [PASS] [NUMERIC] SCOPE: spatial APBC with nearest-corner labels gives b != 0  (the pure-APBC lane is not closed)
+  [PASS] [NUMERIC] COROLLARY (scoped): periodic corners: b = 0 forces |z| = 0 (no Koide cone by L_t)  (not the APBC nearest-corner realization)
+
+PART B: untested extensions (no scientific PASS assigned)
+A concrete cross-label operator is needed to test each proposed channel.
+SU(2) exchange or a Wilson coefficient alone does not establish generation mixing.
+PART C: c(L_t) table and large-L_t asymptotics
+
+  [PASS] c(L_t -> infinity) = 2 sqrt(3) ~ 3.4641016 (harmonic mean of 3 + sin^2 w)  (c_inf = 2*sqrt(3) = 3.4641016151)
+  [PASS] [BOUNDED] c(4) in bracket [2 sqrt(3), 7/2]  (c(4) = 3.500000000000)
+  [PASS] [BOUNDED] c(6) in bracket [2 sqrt(3), 7/2]  (c(6) = 3.466666666667)
+  [PASS] [BOUNDED] c(8) in bracket [2 sqrt(3), 7/2]  (c(8) = 3.464285714286)
+  [PASS] [BOUNDED] c(12) in bracket [2 sqrt(3), 7/2]  (c(12) = 3.464102564103)
+  [PASS] [BOUNDED] c(16) in bracket [2 sqrt(3), 7/2]  (c(16) = 3.464101620029)
+  [PASS] [BOUNDED] c(24) in bracket [2 sqrt(3), 7/2]  (c(24) = 3.464101615138)
+  [PASS] [BOUNDED] c(L_t) sequence is non-increasing in L_t (bulk-approach trend)  (sequence = ['3.500000', '3.466667', '3.464286', '3.464103', '3.464102', '3.464102'])
+  [PASS] naive extrapolation c(L_t -> inf) = 3 is INCORRECT; correct value is 2 sqrt(3)  (|c_inf - 3| = 0.464102)
+
+FINAL VERDICT (scoped)
+  periodic corner labels: b = 0 at L_t = [4, 6, 8]: True
+  APBC nearest-corner labels: K_100,010 = 3.4022 (nonzero)
+  The commuting-translation proof is retired; b = 0 holds by corner
+  annihilation in the periodic realization and fails in the APBC one.
+per_element: checked - explicit staggered matrix entries and resolvent trace products determine the finite curvature values.
+per_site: checked - all spatial 4^3 sites with temporal extents 4,6,8 are instantiated for the periodic-corner checks.
+per_mode: checked - periodic exact corner plane waves and APBC nearest-corner momentum bins define distinct tested projectors.
+per_block: checked - the three hw=1 projectors and their complement pairs are resolved; the diagonal formula has a separate realization.
+lattice_wide: checked - whole finite volumes 4^3 times Lt=4,6,8 are inverted; no continuum species or infinite-volume curvature closure is executed.
+TOTAL: PASS=39 FAIL=0
+
+----- stderr -----
+

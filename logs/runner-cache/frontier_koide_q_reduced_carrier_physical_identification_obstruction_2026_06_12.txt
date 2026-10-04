@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_koide_q_reduced_carrier_physical_identification_obstruction_2026_06_12.py
-runner_sha256: 8ea426d05ea31424e21913500e4f4b78bfca7141363a194974c59db900bbd8a7
+runner_sha256: e0ac96e1436902814879d9b126ef374febf77e3d89af6416353d5ee55d027ac7
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 PASS: Record axiom does not supply the missing readout context Current axioms leave readout-context selection downstream.

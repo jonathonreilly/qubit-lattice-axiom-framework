@@ -1,48 +1,36 @@
 ===== runner cache v1 =====
 runner: scripts/cl3_a3_route3_anomaly_inflow_2026_05_08_r3.py
-runner_sha256: 4ede4b0e1f9a3445d4cbc25588db0520cc26319dcf918eed3b9207181a66b4a5
-timeout_sec: 120
+runner_sha256: 9191d91274f4e1c9ed1d80071855e5aec01c80d99bb3a9558f93682e944ad0ba
+timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.19
+elapsed_sec: 0.10
 status: ok
 ----- stdout -----
-==============================================================================
 A3 / AC_phi Route 3 -- Anomaly Inflow Obstruction (Bounded)
-==============================================================================
 
-Loop: a3-route3-anomaly-inflow-20260508
-Companion theorem note:
-  docs/A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md
+Companion: docs/A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md
 
-==============================================================================
 Section 0: hw=1 BZ corner C_3 orbit verification
-==============================================================================
   [PASS] hw=1 corners form a single 3-cycle under C_3[111]
   [PASS] All hw=1 corners have Hamming weight 1
   orbit path: [(1, 0, 0), (0, 1, 0), (0, 0, 1), (1, 0, 0)]
 
-==============================================================================
 Section 1: Universal C_3-symmetric equal-expectation lemma
-==============================================================================
   [PASS] H is self-adjoint
   [PASS] [H, U_{C_3}] = 0
   [PASS] Corner-basis diagonal equal (substep4ac Lemma)
   diagonal: [1.5, 1.5, 1.5]
-  full eigenvalues (NOT corner basis): [0.28038475772933735, 1.3196152422706635, 2.8999999999999995]
+  full eigenvalues (NOT corner basis): [0.2803847577293369, 1.3196152422706633, 2.9000000000000012]
   Full eigenvalues are 3 distinct values, but corner-basis expectations are all equal -- this is the C_3-orbit obstruction.
 
-==============================================================================
 Section 2: Random sweep of universal C_3-symmetric operators
-==============================================================================
   Samples: 200
   Passing equal-expectation: 200
   Max diagonal difference across sweep: 0.00e+00
   Eigenvalue-spread range seen: [0.160, 10.803] (corner expectations equal despite spread)
   [PASS] Universal equal-expectation lemma holds for 200/200 samples
 
-==============================================================================
 Section 3: Seven anomaly-inflow attack vectors (E1 -- E7)
-==============================================================================
 
   --- E1: 't Hooft anomaly matching across boundary of Z^3
       Status: OBSTRUCTION
@@ -71,7 +59,7 @@ Section 3: Seven anomaly-inflow attack vectors (E1 -- E7)
 
   --- E6: Atiyah-Singer index for the staggered Dirac operator
       Status: OBSTRUCTION
-      Structural reason: Index theorem chiral charge is (-1)^hw; all hw=1 corners share hw=1, hence share chiral charge -1. Index theorem groups corners by hw parity and cannot distinguish elements within a fixed hw stratum.
+      Structural reason: Staggered chirality complements BZ-corner labels (hw=1 <-> hw=2), so its hw=1 compression is zero; on unit-cell sites the three |alpha|=1 values are all -1. Either way it treats the hw=1 labels alike and cannot distinguish them.
   [PASS]   expectation equal on hw=1 corners (obstruction confirmed)
 
   --- E7: Nieh-Yan torsion anomaly
@@ -79,9 +67,7 @@ Section 3: Seven anomaly-inflow attack vectors (E1 -- E7)
       Structural reason: A1 + A2 supplies no torsion field; Z^3 is flat. Adding torsion is a new axiom. Even with C_3-symmetric torsion, Nieh-Yan integral is a C_3-symmetric scalar with equal corner expectations.
   [PASS]   expectation equal on hw=1 corners (obstruction confirmed)
 
-==============================================================================
 Section 4: Sanity check -- C_3-breaking operator distinguishes
-==============================================================================
   Operator: diag(1, 2, 3)
   Commutator norm: 2.45
   Corner expectations: [1.0, 2.0, 3.0]
@@ -89,9 +75,7 @@ Section 4: Sanity check -- C_3-breaking operator distinguishes
   [PASS] C_3-breaking operator distinguishes corners by expectation
   -> C_3-breaking operators DO distinguish the corners. Seven anomaly-inflow attack vectors fail to distinguish them because they preserve C_3 by construction.
 
-==============================================================================
 Section 5: Result summary
-==============================================================================
   Total attack vectors checked: 7
   Obstructions found:           7
   Unconditional positive arrows: 0
@@ -101,17 +85,20 @@ Section 5: Result summary
   anomaly inflow CANNOT close A3 / AC_phi from A1+A2 + retained
   upstream stack without new axioms or new C_3-breaking dynamics.
 
-  Structural reason (universal): anomalies attach functorially
-  to symmetries / orbits / cohomology classes, not to individual
-  states within a single symmetry orbit. Any anomaly-inflow
-  operator constructed from C_3-symmetric primitives respects the
-  substep4ac equal-expectation Lemma.
+  Universal reason: anomalies attach to symmetry orbits, not to
+  individual states; C_3-symmetric primitives obey the equal-
+  expectation Lemma.
 
-==============================================================================
+Section 6: N5 execution certificate -- resolved granularity
+per_element: checked - each verdict compares individual corner-basis diagonal entries: C_3-symmetric carriers give [1.5, 1.5, 1.5], while the sanity operator diag(1, 2, 3) gives [1.0, 2.0, 3.0] (the test has teeth).
+per_site: checked - E6 applies the staggered sign site by site on a periodic 4^3 torus; E1, E2, E7 obstruct because Z^3 supplies no boundary, codimension-1 wall or torsion field without a new axiom.
+per_mode: checked - the eigenbasis is resolved apart from the corner basis (eigenvalues [0.280385, 1.319615, 2.9] vs a flat corner diagonal); 200 random C_3-symmetric samples keep equal corner expectations.
+per_block: checked - all 8 corners stratified by Hamming weight into hw = [0, 1, 2, 3]; E6 shows the staggered sign maps hw=1 onto hw=2 (hw=1 compression [[0, 0, 0], [0, 0, 0], [0, 0, 0]]).
+lattice_wide: checked and not executed - the channels act as 3x3 operators on H_{hw=1}; no volume sum, zero-mode count or index is computed, so no whole-lattice invariant is certified here.
+
 EXACT      : PASS = 15, FAIL = 0
 BOUNDED    : PASS = 0, FAIL = 0
-TOTAL      : PASS = 15, FAIL = 0
-==============================================================================
+TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----
 

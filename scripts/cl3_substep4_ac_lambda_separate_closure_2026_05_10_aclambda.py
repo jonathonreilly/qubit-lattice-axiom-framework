@@ -14,8 +14,10 @@ of the substep-4 atomic decomposition decomposes as
 
 with:
   - AC_λ.struct certified as runner-certified bounded candidate via
-    interval-certified Kawamoto-Smit + Reed-Simon simultaneous
-    diagonalization (already cached on main; re-verified here);
+    the vanishing of the Kawamoto-Smit operator on every corner plane
+    wave (exact integer check; the earlier simultaneous-diagonalization
+    route through commuting one-site translations is retired, since
+    [D, T_1] and [D, T_2] are nonzero);
   - AC_λ.label characterized as labeling-convention bridge under
     audit-pending meta companion notes (PR #728, PR #729, PR #790).
 
@@ -41,6 +43,8 @@ import sys
 
 import numpy as np
 import sympy as sp
+
+AUDIT_TIMEOUT_SEC = 60
 
 try:
     from mpmath import iv, mp
@@ -71,11 +75,11 @@ def check(label: str, ok: bool, detail: str = "") -> None:
     print(f"  {marker} {label}{suffix}")
 
 
-print("=" * 88)
+print("=" * 40)
 print("  Substep-4 AC_λ Separate-Closure Candidate (Sharpened, Partial)")
 print("  Companion runner: docs/SUBSTEP4_AC_LAMBDA_SEPARATE_CLOSURE_SHARPENED_")
 print("                    NOTE_2026-05-10_aclambda.md")
-print("=" * 88)
+print("=" * 40)
 print()
 
 
@@ -87,9 +91,9 @@ print()
 # the other) and their conjunction is logically equivalent to the original
 # AC_λ atom from the substep-4 narrowing.
 # =============================================================================
-print("-" * 88)
+print("-" * 40)
 print("  Section 1 — AC_λ atomic sub-decomposition validity")
-print("-" * 88)
+print("-" * 40)
 
 # AC_λ.struct: free fermion propagator block-diagonal on hw=1 corner basis.
 # AC_λ.label: the corner-distinguishing label is species-kind.
@@ -140,9 +144,9 @@ print()
 # logs/runner-cache/cl3_staggered_dirac_substep4_ac_phi_lambda_rigorize_2026_05_09.txt
 # Re-doing the verification here makes this runner self-contained.
 # =============================================================================
-print("-" * 88)
-print("  Section 2 — AC_λ.struct: Kawamoto-Smit block-diagonality")
-print("-" * 88)
+print("-" * 40)
+print("  Section 2 — AC_λ.struct: corner annihilation")
+print("-" * 40)
 
 # Step (i): At every hw=1 BZ corner, K(k) = Σ_μ i·η_μ·sin(k_μ)·γ_μ
 # vanishes because every k_μ ∈ {0, π} gives sin(k_μ) = 0.
@@ -197,57 +201,68 @@ else:
         "mpmath unavailable; symbolic check is sufficient",
     )
 
-# Step (ii): K commutes with all three lattice translations (T_x, T_y, T_z)
-# by translation-invariance of the staggered kinetic action. This is a
-# structural property carried from substep 2 (Kawamoto-Smit forcing).
-# Encoded as the action's translation-invariance: K acts via momentum-
-# space multiplication, and lattice translations act as e^{ik_μ}; both
-# commute on momentum eigenstates.
-check(
-    "Step (ii): K commutes with (T_x, T_y, T_z) by translation invariance",
-    True,
-    "structural property of staggered kinetic action; cited from KS forcing",
-)
+# Step (ii), repaired 2026-10-02: the Kawamoto-Smit operator does NOT
+# commute with all three one-site translations. Exact integer check on the
+# L=4 periodic torus in the Block 03 representative eta^0 (eta_1 = 1,
+# eta_2 = (-1)^x1, eta_3 = (-1)^(x1+x2)), matching the 2026-06-10 repair
+# record of the substep-4 narrowing note.
+L_TORUS = 4
+SITES = [(x1, x2, x3) for x3 in range(L_TORUS) for x2 in range(L_TORUS) for x1 in range(L_TORUS)]
+SITE_INDEX = {x: i for i, x in enumerate(SITES)}
+N_SITES = len(SITES)
 
-# Step (iii): The three hw=1 corners are simultaneous eigenvectors of
-# (T_x, T_y, T_z) with pairwise distinct joint eigenvalue triples
-# ((-1, 1, 1), (1, -1, 1), (1, 1, -1)).
-joint_eigenvalues = [
-    (-1, 1, 1),
-    (1, -1, 1),
-    (1, 1, -1),
+
+def _shift(x, mu):
+    y = list(x)
+    y[mu] = (y[mu] + 1) % L_TORUS
+    return tuple(y)
+
+
+def _translation(mu):
+    t = np.zeros((N_SITES, N_SITES), dtype=np.int64)
+    for x in SITES:
+        t[SITE_INDEX[x], SITE_INDEX[_shift(x, mu)]] = 1
+    return t
+
+
+TRANS = [_translation(mu) for mu in range(3)]
+ETA0 = [
+    np.array([1 for x in SITES], dtype=np.int64),
+    np.array([(-1) ** x[0] for x in SITES], dtype=np.int64),
+    np.array([(-1) ** (x[0] + x[1]) for x in SITES], dtype=np.int64),
 ]
+M_HOP = sum(ETA0[mu][:, None] * TRANS[mu] for mu in range(3))
+TWO_D = M_HOP - M_HOP.T  # 2D, antisymmetric integer matrix
 
-# Pairwise distinctness check
-distinct = True
-for i in range(len(joint_eigenvalues)):
-    for j in range(i + 1, len(joint_eigenvalues)):
-        if joint_eigenvalues[i] == joint_eigenvalues[j]:
-            distinct = False
-            break
-    if not distinct:
-        break
-
+comm = [TWO_D @ TRANS[mu] - TRANS[mu] @ TWO_D for mu in range(3)]
+sq_comm = [TWO_D @ TRANS[mu] @ TRANS[mu] - TRANS[mu] @ TRANS[mu] @ TWO_D for mu in range(3)]
 check(
-    "Step (iii): joint eigenvalues pairwise distinct",
-    distinct,
-    f"((-1,1,1), (1,-1,1), (1,1,-1)) all pairwise distinct",
+    "Step (ii) repaired: [2D,T_1] != 0, [2D,T_2] != 0, [2D,T_3] = 0, [2D,T_mu^2] = 0",
+    bool(np.any(comm[0])) and bool(np.any(comm[1])) and not np.any(comm[2])
+    and all(not np.any(c) for c in sq_comm),
+    f"max|[2D,T_mu]| = {[int(np.max(np.abs(c))) for c in comm]}; "
+    "the commuting-translation premise is false",
 )
 
-# By Reed-Simon I §VIII.5 simultaneous-diagonalization theorem: any operator
-# commuting with all three (T_x, T_y, T_z) is diagonal in the
-# corner basis (since the joint eigenspaces are non-degenerate).
-# Therefore ⟨c_α | K | c_β⟩ = 0 for α ≠ β.
+# Step (iii), repaired: D annihilates every corner plane wave v_n(x) =
+# (-1)^(n.x), so the hw=1 block of D is zero and the free propagator block
+# is (D+m)^{-1} = I/m on the corner labels. No commutation is used.
+corner_vectors = {
+    n: np.array([(-1) ** (n[0] * x[0] + n[1] * x[1] + n[2] * x[2]) for x in SITES], dtype=np.int64)
+    for n in [(a, b, c) for c in (0, 1) for b in (0, 1) for a in (0, 1)]
+}
+annihilated = all(not np.any(TWO_D @ v) for v in corner_vectors.values())
+hw1 = [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
+block = np.array([[int(corner_vectors[a] @ TWO_D @ corner_vectors[b]) for b in hw1] for a in hw1])
 check(
-    "Reed-Simon I §VIII.5 simultaneous-diagonalization applies",
-    True,
-    "non-degenerate joint eigenspaces of commuting (T_x, T_y, T_z)",
+    "Step (iii) repaired: 2D v_n = 0 for all 8 corner plane waves (L=4, exact integers)",
+    annihilated,
+    "D vanishes on the corner carrier",
 )
-
 check(
-    "AC_λ.struct: K diagonal in corner basis ⇒ propagator block-diagonal",
-    True,
-    "⟨χ̄_{c_α}(x) χ_{c_β}(y)⟩_Ω = δ_{αβ} S_α(x−y)",
+    "AC_λ.struct: hw=1 block of D is zero, so (D+m)^{-1} = I/m on the corner labels",
+    annihilated and not np.any(block),
+    "⟨c_α|D|c_β⟩ = 0 for all α, β; block-diagonality by direct annihilation",
 )
 
 print()
@@ -261,9 +276,9 @@ print()
 # (PR #728 C_3-preserved interpretation, PR #729 conventions
 # unification, PR #790 BAE rename).
 # =============================================================================
-print("-" * 88)
+print("-" * 40)
 print("  Section 3 — AC_λ.label: labeling-convention bridge")
-print("-" * 88)
+print("-" * 40)
 
 # Standard particle-physics labeling-convention analogues from PR #728/#729.
 labeling_convention_analogues = [
@@ -317,9 +332,9 @@ print()
 # Hermitian circulant H = aI + bC + b̄C². It's a numerical parameter
 # constraint, not a label-kind or block-diagonality claim.
 # =============================================================================
-print("-" * 88)
+print("-" * 40)
 print("  Section 4 — Independence from AC_φλ (= BAE)")
-print("-" * 88)
+print("-" * 40)
 
 # AC_φλ = BAE constraint: |b|²/a² = 1/2 (Brannen amplitude equipartition)
 # This is a numerical condition on (a, b) parameters, separate from any
@@ -378,9 +393,9 @@ print()
 # AC_λ.struct is about off-diagonal vanishing of the propagator.
 # Both can hold simultaneously without contradiction.
 # =============================================================================
-print("-" * 88)
+print("-" * 40)
 print("  Section 5 — Independence from AC_φ")
-print("-" * 88)
+print("-" * 40)
 
 # Construct a generic C_3[111]-symmetric Hermitian H on H_{hw=1} ≅ C³
 # in the C_3 cyclic basis: H = aI + bC + b̄C² where C is the cyclic
@@ -457,9 +472,9 @@ print()
 #                              + audit-pending-meta companion-note conditional
 #   substep-4 surface tier: bounded_theorem (UNCHANGED)
 # =============================================================================
-print("-" * 88)
+print("-" * 40)
 print("  Section 6 — Partial-ratchet implication")
-print("-" * 88)
+print("-" * 40)
 
 # Pre-narrowing admission count (per substep-4 narrowing note)
 atoms_before = {"AC_φ", "AC_λ", "AC_φλ"}
@@ -510,9 +525,9 @@ print()
 # Verify the source theorem note and this runner do not import any
 # forbidden content.
 # =============================================================================
-print("-" * 88)
+print("-" * 40)
 print("  Section 7 — Forbidden-imports verification")
-print("-" * 88)
+print("-" * 40)
 
 # This runner imports: numpy (linear algebra), sympy (symbolic),
 # mpmath (interval arithmetic). None of these load PDG values or
@@ -538,7 +553,7 @@ check(
 check(
     "No HK + DHR appeal (Block 01 audit retired this)",
     True,
-    "decomposition argues via Reed-Simon simultaneous diagonalization",
+    "decomposition argues via direct corner annihilation",
 )
 
 check(
@@ -561,9 +576,9 @@ print()
 #
 # Verify the runner respects the source-note hygiene rules.
 # =============================================================================
-print("-" * 88)
+print("-" * 40)
 print("  Section 8 — Authority disclaimer / source-note hygiene")
-print("-" * 88)
+print("-" * 40)
 
 check(
     "Runner is a verification, not an audit verdict",
@@ -595,28 +610,19 @@ print()
 # =============================================================================
 # Final summary
 # =============================================================================
-print("=" * 88)
-print(f"  TOTAL: PASS={PASS}, FAIL={FAIL}")
-print("=" * 88)
+print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
 print()
 print("Result classification:")
 print()
 print("  AC_λ atom of the substep-4 atomic decomposition decomposes as")
 print("    AC_λ = AC_λ.struct ∧ AC_λ.label")
 print()
-print("  AC_λ.struct: runner-certified bounded candidate (Kawamoto-Smit)")
+print("  AC_λ.struct: runner-certified bounded candidate (corner annihilation)")
 print("  AC_λ.label : labeling-convention bridge (audit-pending meta)")
-print()
-print("  Conjunction AC_λ is proposed as a SHARPENED BOUNDED support")
-print("  candidate for substep-4 with NO admitted observation of its")
-print("  own beyond inherited Kawamoto-Smit upstream.")
 print()
 print("  Proposed substep-4 admission count: 3 atoms → 2 atoms")
 print("  (AUDIT-PENDING PARTIAL RATCHET)")
 print("  Substep-4 surface tier   : bounded_theorem (UNCHANGED)")
-print()
-print("  Independent audit lane has full authority for verdict and downstream")
-print("  status.")
 
 if FAIL > 0:
     sys.exit(1)

@@ -98,6 +98,8 @@ from typing import Dict, List, Tuple
 
 import numpy as np
 
+AUDIT_TIMEOUT_SEC = 60
+
 # ---------------------------------------------------------------------------
 # Geometry: hw=1 BZ corners on Z^3 APBC and the C_3[111] action
 # ---------------------------------------------------------------------------
@@ -513,46 +515,51 @@ def attack_e6_atiyah_singer_index() -> Dict[str, object]:
     index ind(D) = dim ker(D) - dim ker(D*) of an elliptic operator
     as a topological invariant. For the staggered Dirac operator
     H_phys = i.D on a closed L^3 lattice (even L), the chiral
-    grading is C(x) = (-1)^{x+y+z}. Each BZ corner has a definite
-    parity under C: C-eigenvalue is (-1)^{hw(corner)}.
+    grading is C(x) = (-1)^{x+y+z}.
 
-    Structural obstruction: All three hw=1 corners share the SAME
-      Hamming weight 1 (by definition), so they share the SAME
-      C-eigenvalue (-1)^1 = -1. The index theorem assigns the
-      chiral charge (n_+ - n_-) to a Dirac operator -- a single
-      integer. Within hw=1, every corner contributes the same
-      chiral charge -1. The index theorem cannot distinguish
-      individual corners; it groups them by hw parity.
-
-    This is consistent with STAGGERED_CHIRAL_SYMMETRY_SPECTRUM_THEOREM
-    (2026-05-02): the staggered chirality C anti-commutes with H_phys
-    and pairs eigenvalues +-E, with the chiral charge a function of
-    sublattice parity (= hw parity). All three hw=1 corners share
-    sublattice B (ε = -1), so share the same chiral charge.
+    Repaired 2026-10-02: C is not a (-1)^hw label on BZ corners. On the
+    corner plane waves v_n(x) = (-1)^{n.x} it acts by C v_n = v_{n xor 111},
+    complementing every bit (hw=1 <-> hw=2), so its compression to the
+    hw=1 span is the zero matrix. On the unit-cell sites alpha in {0,1}^3
+    it is diagonal, (-1)^{|alpha|}, and the three |alpha| = 1 sites all
+    carry -1. In either reading the chiral grading treats the three hw=1
+    labels alike, C_3-equivariantly, so the index theorem cannot
+    distinguish them: the obstruction stands with this corrected reason.
     """
     corners = hw1_corners()
-    chiral_charges = [(-1) ** hamming_weight(c) for c in corners]
-    all_equal = len(set(chiral_charges)) == 1
-    # The index-theorem operator on hw=1 is the chirality projector,
-    # which is proportional to identity restricted to one sublattice.
-    O_e6 = (-1.0) * np.eye(3, dtype=complex)  # all hw=1 are sublattice B
+    L = 4
+    sites = [(x1, x2, x3) for x3 in range(L) for x2 in range(L) for x1 in range(L)]
+    eps = np.array([(-1) ** (x[0] + x[1] + x[2]) for x in sites], dtype=np.int64)
+
+    def plane_wave(n: Tuple[int, int, int]) -> np.ndarray:
+        return np.array([(-1) ** (n[0] * x[0] + n[1] * x[1] + n[2] * x[2]) for x in sites],
+                        dtype=np.int64)
+
+    complements = all(
+        np.array_equal(eps * plane_wave(n), plane_wave(tuple(1 - b for b in n)))
+        for n in all_bz_corners()
+    )
+    block = np.array([[int(plane_wave(a) @ (eps * plane_wave(b))) for b in corners]
+                      for a in corners], dtype=np.int64)
+    O_e6 = block.astype(complex)
     diag = [float(np.real(O_e6[alpha, alpha])) for alpha in range(3)]
-    expectation_equal = max(diag) - min(diag) < 1e-12
+    expectation_equal = complements and not np.any(block) and max(diag) - min(diag) < 1e-12
+    cell_site_values = [(-1) ** hamming_weight(c) for c in corners]
     return {
         "vector": "E6: Atiyah-Singer index for the staggered Dirac operator",
         "hw1_corners": corners,
-        "chiral_charges_per_corner": chiral_charges,
-        "all_hw1_chiral_charges_equal": all_equal,
-        "obstruction_index_groups_by_hw_parity": True,
+        "epsilon_complements_corner_labels": complements,
+        "chirality_compression_on_hw1": block.tolist(),
+        "unit_cell_site_values": cell_site_values,
         "operator_corner_diagonal": diag,
         "expectation_equal_on_corners": expectation_equal,
         "status": "OBSTRUCTION",
         "cross_reference": "STAGGERED_CHIRAL_SYMMETRY_SPECTRUM_THEOREM_NOTE_2026-05-02.md",
         "structural_reason": (
-            "Index theorem chiral charge is (-1)^hw; all hw=1 corners "
-            "share hw=1, hence share chiral charge -1. Index theorem "
-            "groups corners by hw parity and cannot distinguish "
-            "elements within a fixed hw stratum."
+            "Staggered chirality complements BZ-corner labels (hw=1 <-> hw=2), "
+            "so its hw=1 compression is zero; on unit-cell sites the three "
+            "|alpha|=1 values are all -1. Either way it treats the hw=1 "
+            "labels alike and cannot distinguish them."
         ),
     }
 
@@ -704,39 +711,29 @@ def n5_execution_certificate() -> None:
     n_corners = len(all_bz_corners())
 
     print(
-        "per_element: checked - every obstruction verdict is the comparison of "
-        "individual corner-basis diagonal entries O[alpha, alpha]: the C_3-symmetric "
-        "carriers give [1.5, 1.5, 1.5] with max minus min under 1e-12, while the "
-        "sanity operator diag(1, 2, 3) separates the same three entries to "
-        "[1.0, 2.0, 3.0] at commutator norm 2.45, showing the test has real teeth."
+        "per_element: checked - each verdict compares individual corner-basis "
+        "diagonal entries: C_3-symmetric carriers give [1.5, 1.5, 1.5], while the "
+        "sanity operator diag(1, 2, 3) gives [1.0, 2.0, 3.0] (the test has teeth)."
     )
     print(
-        "per_site: checked and not executed - no real-space site is instantiated "
-        "anywhere; that absence is itself three of the seven results, since E1 "
-        "obstructs because Z^3 and finite L^3 APBC have no boundary to carry inflow, "
-        "E2 because A1 + A2 supply no codimension-1 domain wall, and E7 because flat "
-        "Z^3 supplies no torsion field, each requiring a new axiom to create."
+        "per_site: checked - E6 applies the staggered sign site by site on a "
+        "periodic 4^3 torus; E1, E2, E7 obstruct because Z^3 supplies no boundary, "
+        "codimension-1 wall or torsion field without a new axiom."
     )
     print(
-        "per_mode: checked - the eigenbasis is resolved separately from the corner "
-        "basis, giving three distinct full eigenvalues [0.280385, 1.319615, 2.9] "
-        "against the flat corner diagonal, and the 200-sample sweep spans "
-        "eigenvalue spreads from 0.160 to 10.803 while every single sample keeps its "
-        "corner expectations equal to 0.00e+00 difference."
+        "per_mode: checked - the eigenbasis is resolved apart from the corner basis "
+        "(eigenvalues [0.280385, 1.319615, 2.9] vs a flat corner diagonal); 200 "
+        "random C_3-symmetric samples keep equal corner expectations."
     )
     print(
-        f"per_block: checked - all {n_corners} Brillouin-zone corners are enumerated "
-        f"and stratified by Hamming weight into the blocks hw = {strata}, and E6 "
-        "computes the staggered chiral charge (-1)^hw for each hw=1 corner, obtaining "
-        f"{e6['chiral_charges_per_corner']}; the index theorem thus resolves the "
-        "sublattice-parity block but is constant inside it, which is the obstruction."
+        f"per_block: checked - all {n_corners} corners stratified by Hamming weight "
+        f"into hw = {strata}; E6 shows the staggered sign maps hw=1 onto hw=2 "
+        f"(hw=1 compression {e6['chirality_compression_on_hw1']})."
     )
     print(
-        "lattice_wide: checked and not executed - each of the seven channels is "
-        "evaluated as a 3x3 operator on H_{hw=1}, with no L^3 volume sum, no zero-mode "
-        "count and no index actually computed by counting kernel dimensions; the "
-        "Atiyah-Singer and Nieh-Yan invariants enter through their structural form "
-        "only, so nothing here is certified by a whole-lattice evaluation."
+        "lattice_wide: checked and not executed - the channels act as 3x3 "
+        "operators on H_{hw=1}; no volume sum, zero-mode count or index is "
+        "computed, so no whole-lattice invariant is certified here."
     )
 
 
@@ -746,13 +743,9 @@ def n5_execution_certificate() -> None:
 
 
 def main() -> int:
-    print("=" * 78)
     print("A3 / AC_phi Route 3 -- Anomaly Inflow Obstruction (Bounded)")
-    print("=" * 78)
     print()
-    print("Loop: a3-route3-anomaly-inflow-20260508")
-    print("Companion theorem note:")
-    print("  docs/A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md")
+    print("Companion: docs/A3_ROUTE3_ANOMALY_INFLOW_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r3.md")
     print()
 
     pass_count = 0
@@ -770,9 +763,7 @@ def main() -> int:
         return condition
 
     # Section 0: orbit-basis verification
-    print("=" * 78)
     print("Section 0: hw=1 BZ corner C_3 orbit verification")
-    print("=" * 78)
     orbit_check = c3_orbit_basis_check()
     check("hw=1 corners form a single 3-cycle under C_3[111]",
           orbit_check["orbit_3cycle"])
@@ -782,9 +773,7 @@ def main() -> int:
     print()
 
     # Section 1: universal equal-expectation lemma (substep4ac restatement)
-    print("=" * 78)
     print("Section 1: Universal C_3-symmetric equal-expectation lemma")
-    print("=" * 78)
     lemma_check = lemma_equal_corner_expectations(a=1.5, b=complex(0.7, -0.3))
     check("H is self-adjoint", lemma_check["self_adjoint"])
     check("[H, U_{C_3}] = 0", lemma_check["c3_symmetric"])
@@ -799,9 +788,7 @@ def main() -> int:
     print()
 
     # Section 2: random sweep verification of universal lemma
-    print("=" * 78)
     print("Section 2: Random sweep of universal C_3-symmetric operators")
-    print("=" * 78)
     sweep = universal_lemma_sweep(num_samples=200)
     print(f"  Samples: {sweep['num_samples']}")
     print(f"  Passing equal-expectation: {sweep['num_passing_equal_expectation']}")
@@ -816,9 +803,7 @@ def main() -> int:
     print()
 
     # Section 3: seven anomaly-inflow attack vectors
-    print("=" * 78)
     print("Section 3: Seven anomaly-inflow attack vectors (E1 -- E7)")
-    print("=" * 78)
     attacks = [
         attack_e1_thooft_anomaly_matching,
         attack_e2_callan_harvey_inflow,
@@ -847,9 +832,7 @@ def main() -> int:
     print()
 
     # Section 4: sanity check -- C_3-breaking operator DOES distinguish
-    print("=" * 78)
     print("Section 4: Sanity check -- C_3-breaking operator distinguishes")
-    print("=" * 78)
     sanity = non_c3_symmetric_distinguishes_corners()
     print(f"  Operator: {sanity['operator']}")
     print(f"  Commutator norm: {sanity['commutator_with_U_C3_norm']:.2f}")
@@ -862,9 +845,7 @@ def main() -> int:
     print()
 
     # Section 5: result summary
-    print("=" * 78)
     print("Section 5: Result summary")
-    print("=" * 78)
     print(f"  Total attack vectors checked: 7")
     print(f"  Obstructions found:           {obstruction_count}")
     print(f"  Unconditional positive arrows: 0")
@@ -874,26 +855,20 @@ def main() -> int:
     print("  anomaly inflow CANNOT close A3 / AC_phi from A1+A2 + retained")
     print("  upstream stack without new axioms or new C_3-breaking dynamics.")
     print()
-    print("  Structural reason (universal): anomalies attach functorially")
-    print("  to symmetries / orbits / cohomology classes, not to individual")
-    print("  states within a single symmetry orbit. Any anomaly-inflow")
-    print("  operator constructed from C_3-symmetric primitives respects the")
-    print("  substep4ac equal-expectation Lemma.")
+    print("  Universal reason: anomalies attach to symmetry orbits, not to")
+    print("  individual states; C_3-symmetric primitives obey the equal-")
+    print("  expectation Lemma.")
     print()
 
     # Section 6: N5 execution certificate (reporting only; no new checks)
-    print("=" * 78)
     print("Section 6: N5 execution certificate -- resolved granularity")
-    print("=" * 78)
     n5_execution_certificate()
     print()
 
     # Final tally
-    print("=" * 78)
     print(f"EXACT      : PASS = {pass_count}, FAIL = {fail_count}")
     print(f"BOUNDED    : PASS = 0, FAIL = 0")
-    print(f"TOTAL      : PASS = {pass_count}, FAIL = {fail_count}")
-    print("=" * 78)
+    print(f"TOTAL: PASS={pass_count} FAIL={fail_count}")
     return 0 if fail_count == 0 else 1
 
 

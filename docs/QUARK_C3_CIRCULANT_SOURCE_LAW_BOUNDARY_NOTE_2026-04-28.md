@@ -1,5 +1,7 @@
 # Quark `C3` Circulant Source-Law Boundary Note
 
+**Type:** bounded_theorem (finite source-law boundary under the stated supplied inputs; no audit-status assertion)
+
 **Date:** 2026-04-28
 
 **Status:** proposed_no_go exact boundary theorem for Lane 3 target 3C. The

@@ -29,6 +29,9 @@ Bounded check (physical interpretation):
        Brillouin zone).  This is a physical assumption, not a theorem.
 """
 
+
+AUDIT_TIMEOUT_SEC = 120
+
 import itertools
 import math
 from collections import Counter

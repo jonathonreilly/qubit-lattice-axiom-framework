@@ -1,5 +1,7 @@
 # A3 / Route 3 Hostile Review — Universal C_3-Orbit Functorial Obstruction CONFIRMED
 
+**Current negative-claim boundary:** The operator result and withdrawn broader claims are specified in the No-Go Discipline Gate below; campaign-wide physical exhaustion is not asserted.
+
 **Date:** 2026-05-08
 **Type:** bounded_theorem (hostile review confirmation)
 **Claim type:** bounded_theorem
@@ -13,6 +15,10 @@ set only by the independent audit lane.
 **Loop:** `a3-route3-hostile-review-20260508`
 **Primary runner:** [`scripts/cl3_a3_r3_hostile_review_2026_05_08_r3hr.py`](../scripts/cl3_a3_r3_hostile_review_2026_05_08_r3hr.py)
 **Cache:** [`logs/runner-cache/cl3_a3_r3_hostile_review_2026_05_08_r3hr.txt`](../logs/runner-cache/cl3_a3_r3_hostile_review_2026_05_08_r3hr.txt)
+
+## Superseded campaign record
+
+The inherited sections below record earlier assertions and attempted routes. Their claims of physical exhaustion, universal symmetry, sector uniqueness and required new axioms are withdrawn. They are not current premises or proof. The current finite theorem and unresolved routes are stated in the No-Go Discipline Gate.
 
 ## Authority disclaimer
 
@@ -155,7 +161,14 @@ OBSTRUCTION HOLDS.**
 Verifies that the 3 hw=1 corners form a single 3-cycle under C_3 with
 no sub-orbits. Verifies all decorations (translation eigenvalues,
 Cl(3) data, chirality, M_3(C) generators) are C_3-permuted along with
-the corners. Identifies that H_{hw=1} carries the regular
+the corners. Here C_3 is the bare corner-label cycle, which is a
+symmetry of the staggered operator in the cyclic representative (where
+it preserves the hw=1 label span; in η⁰ its covering symmetry does
+not), and the translation eigenvalues are characters of the plain
+one-site translations on corner labels: label decorations, not
+symmetry data of the staggered operator, of which at most one plain
+translation is a symmetry in any representative (exact check:
+`scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`). Identifies that H_{hw=1} carries the regular
 representation of C_3 — the canonical "single transitive orbit"
 case. **Verdict: OBSTRUCTION HOLDS.**
 
@@ -307,3 +320,69 @@ forbidden_imports_used: false
 - MINIMAL_AXIOMS: `MINIMAL_AXIOMS_2026-05-03.md`
 - Branch-local hostile-review scratch packets are not source authority;
   this note and paired runner are the landed reviewable surface.
+
+
+## No-Go Discipline Gate — Current Operator Scope (2026-10-04)
+
+The current negative statement is only this: on the supplied three-dimensional
+corner-label carrier, a matrix commuting with the bare three-cycle has equal
+corner-basis diagonal entries. Indeed H_ii = (C H C^-1)_ii = H_(i-1,i-1).
+This is cyclic conjugation, not irreducibility of the C3 representation.
+It does not imply equal eigenvalues, prohibit a physical readout, or establish
+foreclosure from all framework axioms. Earlier universal foreclosure,
+exhaustion, unique-sector and "new axiom required" assertions in this packet
+are withdrawn as current conclusions; the route inventory records attempts.
+The exact periodic corner kinetic compression is separately zero by direct
+annihilation. Finite spatial APBC and the physical embedding remain separate.
+
+- **N1 — Alternative routes.** The existing campaign names five distinct
+  proposal families: Higgs/Yukawa source operators (R1), temporal transfer and
+  clock construction (R2), anomaly/inflow or index operators (R3), Spin(6)
+  tensor/GUT embeddings (R4), and GNS/factor automorphisms (R5). Each is an
+  ATTEMPTED campaign route, not a new review execution of its full physics.
+  At the finite operator reduction each fails to give unequal corner
+  expectations *if* its output commutes with C, by the identity above. The
+  present review checks that identity independently; it does not certify the
+  premise for every output of any of these families. Non-equivariant outputs,
+  different carriers and physical readouts remain open. Five names are not
+  a proof of exhaustion. The direct finite proof, not prior audit grades,
+  supports the stated operator conclusion.
+- **N2 — Wall independence.** No independent wall count is claimed. Physical
+  embedding versus a source selector: implications both ways are unresolved.
+  A source selector versus physical readout: implications both ways are
+  unresolved. An embedding versus a readout: implications both ways are
+  unresolved. C-equivariance is a supplied mathematical domain hypothesis,
+  not a derived physical wall. None of these relations is counted as an
+  independently proved obstruction.
+- **N3 — Hidden premises.** The three-label carrier, bare cycle and operator
+  equivariance are explicit supplied inputs. Cubic substrate geometry alone
+  does not supply their physical realization. RP/OS, vacuum cyclicity,
+  anomaly language or a registered primitive does not silently supply a
+  physical embedding, species interpretation or selector here.
+- **N4 — Residual matching.** The equal-diagonal calculation addresses corner
+  expectations only. Spectrum positivity addresses positivity; chirality
+  pairing addresses n xor 111; factor-center calculations address central
+  projections. Those latter residuals do not match a physical species or
+  hierarchy theorem and are not witnesses closing it. Campaign references
+  remain context, not retained authorities for a broader no-go.
+- **N5 — Resolution.** Each primary's cached certificate records its actual
+  computation. The 3x3 matrix controls resolve elements and label blocks;
+  only the lattice scope, corrected kinetic compression and curvature
+  runners instantiate finite sites. No continuum or thermodynamic physical
+  species statement follows from unexecuted resolutions.
+- **N6 — Partial closure.** A conventional label assignment can be a
+  definition, not a new axiom. It does not select a mass hierarchy or prove
+  a physical carrier. Approved primitives retain their registered grants;
+  no additional primitive or framework premise is introduced here.
+- **N7 — Steelman.** A physical readout could use Fourier-character
+  eigenvectors: H = 3I + C + C^-1 commutes with C, has equal corner
+  expectations and eigenvalues 5,2,2. A further admissible source could split
+  the characters, or an APBC carrier could mix nearest-corner labels. These
+  are concrete escapes from the former broader claim. They do not violate
+  the corrected equal-diagonal identity and remain open physical work.
+- **N8 — Cross-cycle echo.** The current observable note separates the
+  three-label algebra from the twelve-dimensional cell carrier; the corner
+  scope note separates bare label operators from dressed symmetries; the
+  corrected curvature survey gives an APBC counterexample. Those repairs
+  reopen the former physical foreclosure rhetoric. This packet retains
+  only the direct operator result and these explicitly scoped attempts.

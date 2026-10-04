@@ -1,8 +1,10 @@
 """Dependency-chain verification for the direct three-state algebraic support.
 
 Verifies the bounded algebraic support statement: the hw=1 triplet gives
-three translation-character-distinct states in a single H_phys. It does not
-derive the physical-species / SM-generation identification.
+three plain-translation-character-distinct vectors on a supplied label carrier. The
+plain translations and the bare axis cycle are label operators, not jointly
+symmetries of the Kawamoto-Smit operator. It does not derive the
+physical-species / SM-generation identification.
 
 Verifies:
 - All cited premises (RP, RS, CD, LR, LN, SC, M_3(C), no-proper-quotient)
@@ -19,9 +21,11 @@ from __future__ import annotations
 
 from typing import List, Tuple
 
+AUDIT_TIMEOUT_SEC = 60
+
 
 def hw1_corners() -> List[Tuple[int, int, int]]:
-    """The three Hamming-weight-1 BZ corners on Z^3 APBC."""
+    """The three Hamming-weight-1 corner labels (exact spatial PBC states)."""
     return [(1, 0, 0), (0, 1, 0), (0, 0, 1)]
 
 
@@ -61,14 +65,9 @@ def main() -> int:
         ("K8 No-proper-quotient", "THREE_GENERATION_OBSERVABLE_NO_PROPER_QUOTIENT_NARROW_THEOREM_NOTE_2026-05-02 retained"),
     ]
     for name, msg in primitives:
-        checks.append((name, True, msg))
+        print(f"[CONTEXT, NOT VERIFIED] {name}: {msg}")
 
-    # K9: H_phys is a single Hilbert space (RP + RS + CD)
-    checks.append((
-        "K9 H_phys single Hilbert with unique vacuum",
-        True,
-        "RP A11 → H_phys; RS → A(O)|Ω⟩ dense in H_phys; CD → unique vacuum, no superselection sectors on canonical surface"
-    ))
+    print("[OPEN] Isometric embedding and physical operator implementation are supplied hypotheses.")
 
     # K10: Three corners have distinct joint translation eigenvalues
     corners = hw1_corners()
@@ -102,26 +101,7 @@ def main() -> int:
         f"3-cycle: {is_3cycle} (no fixed points: {no_fixed}; (C_3)^3 = id: {cubed_back})"
     ))
 
-    # K13: C_3[111] is a represented lattice-symmetry unitary, not a charged intertwiner.
-    checks.append((
-        "K13 C_3[111] is a represented lattice-symmetry unitary",
-        True,
-        "C_3[111] = cyclic shift of lattice axes is a unitary on H_phys via the lattice automorphism / GNS image; NOT a charged intertwiner connecting separate sectors"
-    ))
-
-    # K14: All three corners in same superselection sector (per K9 + K13)
-    checks.append((
-        "K14 Three corners in same superselection sector",
-        True,
-        "Per K9 (H_phys single sector) + K13 (represented C_3 unitary connects them): three corners are in a single H_phys, NOT three separate DHR sectors"
-    ))
-
-    # K15: Direct three-state algebraic support only.
-    checks.append((
-        "K15 Direct three-state algebraic support only",
-        True,
-        "Three corners are quantum-mechanically distinct states in single H_phys. Physical-species / SM-generation identification remains an open bridge."
-    ))
+    print("[OPEN] Physical embedding, superselection classification and species identity are not tested.")
 
     # Print results
     n_pass = sum(1 for _, ok, _ in checks if ok)
@@ -131,6 +111,7 @@ def main() -> int:
         print(f"[{status}] {name}: {msg}")
     print()
     print(f"SUMMARY: PASS={n_pass} FAIL={n_total - n_pass}")
+    print(f"TOTAL: PASS={n_pass} FAIL={n_total - n_pass}")
     print()
     print("Bounded theorem (T4-revised) — Direct Three-State Algebraic Support — verified.")
     print("This is bounded algebraic support, not closure of the physical-species bridge.")

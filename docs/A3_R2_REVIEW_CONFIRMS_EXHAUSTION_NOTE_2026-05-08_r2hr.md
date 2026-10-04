@@ -1,5 +1,7 @@
 # A3 R2 Hostile Review — Confirms Kinematic-Primitive Exhaustion (Bounded)
 
+**Current negative-claim boundary:** The operator result and withdrawn broader claims are specified in the No-Go Discipline Gate below; campaign-wide physical exhaustion is not asserted.
+
 **Date:** 2026-05-08
 **Type:** bounded_theorem (hostile-review confirmation; sharpens R2's structural argument)
 **Claim type:** bounded_theorem
@@ -9,6 +11,10 @@ status set only by the independent audit lane.
 **Primary runner:** [`scripts/cl3_a3_r2_hostile_review_2026_05_08_r2hr.py`](../scripts/cl3_a3_r2_hostile_review_2026_05_08_r2hr.py)
 **Cache:** [`logs/runner-cache/cl3_a3_r2_hostile_review_2026_05_08_r2hr.txt`](../logs/runner-cache/cl3_a3_r2_hostile_review_2026_05_08_r2hr.txt)
 **Parent:** [`A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md`](A3_ROUTE2_SINGLE_CLOCK_C3_OBSTRUCTION_NOTE_2026-05-08_r2.md) (PR #709, on branch `claude/a3-route2-single-clock-r2-2026-05-08`)
+
+## Superseded campaign record
+
+The inherited sections below record earlier assertions and attempted routes. Their claims of physical exhaustion, universal symmetry, sector uniqueness and required new axioms are withdrawn. They are not current premises or proof. The current finite theorem and unresolved routes are stated in the No-Go Discipline Gate.
 
 ## Authority disclaimer
 
@@ -88,7 +94,7 @@ Most non-trivial case: **topological θ-angle**. The 4D Levi-Civita ε^{μνρσ
 
 **Verdict: SHARPENS R2 (taste-rotation gap in proof, but conclusion holds).**
 
-Deepest non-trivial finding. Under naive C_3 coordinate substitution, the KS staggered phases mismatch on 50% of (x, μ) pairs. The C_3 lift is implemented as a combined (i) coordinate permutation, (ii) spatial taste-rotation field redefinition. Per Golterman 1986, this is the standard staggered cubic shift symmetry; the redefinition is purely spatial. On H_phys, U_C3 factors as `U_C3_spatial ⊗ I_temporal`. R2's claim survives, but the proof should explicitly cite Golterman 1986.
+Deepest non-trivial finding. Under naive C_3 coordinate substitution, the KS staggered phases mismatch on 50% of (x, μ) pairs. The C_3 lift is implemented as a combined (i) coordinate permutation, (ii) spatial taste-rotation field redefinition. Per Golterman 1986, this is the standard staggered cubic shift symmetry; the redefinition is purely spatial. On H_phys, U_C3 factors as `U_C3_spatial ⊗ I_temporal`. R2's claim survives, but the proof should explicitly cite Golterman 1986. Which 3-dim span this symmetry preserves depends on the representative: in the Block 03 representative η⁰ the covering symmetry carries the sign field `(−1)^{x_1x_2+x_1x_3}` and does not preserve the η⁰ hw=1 corner span, while in the cyclic representative (`η_1 = (−1)^{x_2}, η_2 = (−1)^{x_3}, η_3 = (−1)^{x_1}`, `η_t = (−1)^{x_1+x_2+x_3}`) the bare cycle is itself the symmetry and preserves the hw=1 corner-label span. The equal-diagonal step on `H_{hw=1}` is taken in that representative (exact check: `scripts/staggered_dirac_corner_label_symmetry_scope_check_2026_10_02.py`).
 
 ### H5: Single-clock derivation specifics
 
@@ -119,7 +125,7 @@ R2's "v_LR is a scalar bound" claim is correct. Hostile review extracted three s
 
 1. **Bound vs actual.** Both v_LR and the actual group velocity v_g = dE/dp are C_3-invariant.
 2. **Lattice anisotropy at O(a²).** The dispersion has cubic-harmonic l=4 anisotropy, but Σ p_i⁴ is C_3-invariant (sum permutation-symmetric).
-3. **All 8 BZ corners identical.** sin²(πn + q) = sin²(q) for n ∈ {0,1}, so dispersion around each BZ corner is identical. Different fermion species have the same velocity.
+3. **All 8 BZ corners identical.** sin²(πn + q) = sin²(q) for n ∈ {0,1}, so dispersion around each BZ corner is identical. The eight corner labels have the same local velocity.
 
 ## Theorem (hostile-review confirmation)
 
@@ -136,7 +142,10 @@ identified:
   (a) The C_3 lift to the staggered-Dirac action requires a non-trivial
       taste-rotation field redefinition (Golterman 1986). The redefinition
       is purely spatial; no temporal shift is required. R2's proof
-      should explicitly cite this step.
+      should explicitly cite this step. The equal-diagonal step on H_{hw=1}
+      uses the cyclic representative, where the bare cycle is the
+      symmetry and preserves the hw=1 corner-label span; in η⁰ the
+      covering symmetry does not preserve the η⁰ hw=1 span.
 
   (b) Not just the LR bound v_LR but the actual dispersion E(p) and
       group velocity v_g(p) are C_3-invariant. All 8 BZ corner doublers
@@ -353,3 +362,69 @@ angles beyond R2's original 7, opens up a positive closure of AC_φ.
 AC_φ closure remains conditional on either dynamical C_3-breaking from
 beyond-A_min content (Yukawa-Higgs, anomaly, spontaneous), or an
 explicitly approved new framework axiom. No new axiom is proposed here.
+
+
+## No-Go Discipline Gate — Current Operator Scope (2026-10-04)
+
+The current negative statement is only this: on the supplied three-dimensional
+corner-label carrier, a matrix commuting with the bare three-cycle has equal
+corner-basis diagonal entries. Indeed H_ii = (C H C^-1)_ii = H_(i-1,i-1).
+This is cyclic conjugation, not irreducibility of the C3 representation.
+It does not imply equal eigenvalues, prohibit a physical readout, or establish
+foreclosure from all framework axioms. Earlier universal foreclosure,
+exhaustion, unique-sector and "new axiom required" assertions in this packet
+are withdrawn as current conclusions; the route inventory records attempts.
+The exact periodic corner kinetic compression is separately zero by direct
+annihilation. Finite spatial APBC and the physical embedding remain separate.
+
+- **N1 — Alternative routes.** The existing campaign names five distinct
+  proposal families: Higgs/Yukawa source operators (R1), temporal transfer and
+  clock construction (R2), anomaly/inflow or index operators (R3), Spin(6)
+  tensor/GUT embeddings (R4), and GNS/factor automorphisms (R5). Each is an
+  ATTEMPTED campaign route, not a new review execution of its full physics.
+  At the finite operator reduction each fails to give unequal corner
+  expectations *if* its output commutes with C, by the identity above. The
+  present review checks that identity independently; it does not certify the
+  premise for every output of any of these families. Non-equivariant outputs,
+  different carriers and physical readouts remain open. Five names are not
+  a proof of exhaustion. The direct finite proof, not prior audit grades,
+  supports the stated operator conclusion.
+- **N2 — Wall independence.** No independent wall count is claimed. Physical
+  embedding versus a source selector: implications both ways are unresolved.
+  A source selector versus physical readout: implications both ways are
+  unresolved. An embedding versus a readout: implications both ways are
+  unresolved. C-equivariance is a supplied mathematical domain hypothesis,
+  not a derived physical wall. None of these relations is counted as an
+  independently proved obstruction.
+- **N3 — Hidden premises.** The three-label carrier, bare cycle and operator
+  equivariance are explicit supplied inputs. Cubic substrate geometry alone
+  does not supply their physical realization. RP/OS, vacuum cyclicity,
+  anomaly language or a registered primitive does not silently supply a
+  physical embedding, species interpretation or selector here.
+- **N4 — Residual matching.** The equal-diagonal calculation addresses corner
+  expectations only. Spectrum positivity addresses positivity; chirality
+  pairing addresses n xor 111; factor-center calculations address central
+  projections. Those latter residuals do not match a physical species or
+  hierarchy theorem and are not witnesses closing it. Campaign references
+  remain context, not retained authorities for a broader no-go.
+- **N5 — Resolution.** Each primary's cached certificate records its actual
+  computation. The 3x3 matrix controls resolve elements and label blocks;
+  only the lattice scope, corrected kinetic compression and curvature
+  runners instantiate finite sites. No continuum or thermodynamic physical
+  species statement follows from unexecuted resolutions.
+- **N6 — Partial closure.** A conventional label assignment can be a
+  definition, not a new axiom. It does not select a mass hierarchy or prove
+  a physical carrier. Approved primitives retain their registered grants;
+  no additional primitive or framework premise is introduced here.
+- **N7 — Steelman.** A physical readout could use Fourier-character
+  eigenvectors: H = 3I + C + C^-1 commutes with C, has equal corner
+  expectations and eigenvalues 5,2,2. A further admissible source could split
+  the characters, or an APBC carrier could mix nearest-corner labels. These
+  are concrete escapes from the former broader claim. They do not violate
+  the corrected equal-diagonal identity and remain open physical work.
+- **N8 — Cross-cycle echo.** The current observable note separates the
+  three-label algebra from the twelve-dimensional cell carrier; the corner
+  scope note separates bare label operators from dressed symmetries; the
+  corrected curvature survey gives an APBC counterexample. Those repairs
+  reopen the former physical foreclosure rhetoric. This packet retains
+  only the direct operator result and these explicitly scoped attempts.

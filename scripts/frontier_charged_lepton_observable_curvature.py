@@ -28,6 +28,9 @@ PStack experiment: frontier-charged-lepton-hw1-observable-curvature
 
 from __future__ import annotations
 
+AUDIT_TIMEOUT_SEC = 120
+
+
 import sys
 from pathlib import Path
 from typing import Tuple

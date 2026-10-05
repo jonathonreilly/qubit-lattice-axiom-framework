@@ -29,7 +29,9 @@
   "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 4.585,
@@ -37,7 +39,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "18171e0b4fe024a1f8c677d79833545a0addf5fbee29c8f2a0d1cf2cae316721",
+  "note_hash": "68bd43949bd7e7c4ecd232b9410e0a43a527526dee8f2d3d8f7425e5b18465c0",
   "note_path": "docs/CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.085,
+  "load_bearing_score": 5.67,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/ring_model_24_cubed_curvature_with_one_guide_for_all_probe_fields_2026_09_26.py",
   "title": "The ring component's energy-curvature estimates depend on the guide scheme by about a quarter on 16\u00b3 and 24\u00b3",
-  "transitive_descendants": 11,
+  "transitive_descendants": 17,
   "verdict_rationale": null
 }

@@ -26,7 +26,11 @@
   "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/dm_dark_candidate_consistency_check.py",
+    "scripts/dm_ratio_comparator_planck_central_values_check.py",
+    "scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 5.0,
@@ -34,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "8b33d9bb9f09ec31d80d56057a63130b4793d9bf66df3fe8d743c283849aca87",
+  "note_hash": "8ea796adc4ff632a31be2fc9e97908a87aae68baaf765c4472a72f20900482e8",
   "note_path": "docs/DM_THERMAL_AVERAGE_SOMMERFELD_TEXTBOOK_IMPORT_NOTE_2026-05-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -173,7 +177,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

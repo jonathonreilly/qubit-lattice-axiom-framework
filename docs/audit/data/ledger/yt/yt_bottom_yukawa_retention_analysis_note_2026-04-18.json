@@ -36,16 +36,17 @@
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
-    "scripts/canonical_plaquette_surface.py"
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 15.324,
+  "load_bearing_score": 15.326,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "857f671a1201760569cbed287df80798761e2a9ecdb3b7306ed8b16e817450e6",
+  "note_hash": "35b5ed152be7a9ae9ea92ac61abc565263227d31f31dce4c19730dab90189862",
   "note_path": "docs/YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -87,6 +88,6 @@
   },
   "runner_path": "scripts/frontier_yt_bottom_yukawa_retention.py",
   "title": "Bottom Yukawa P1 Retention Analysis Note (b-Quark Ward Extension)",
-  "transitive_descendants": 640,
+  "transitive_descendants": 641,
   "verdict_rationale": null
 }

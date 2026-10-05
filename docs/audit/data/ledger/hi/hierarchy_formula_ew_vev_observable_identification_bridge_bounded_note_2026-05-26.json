@@ -36,7 +36,9 @@
   "direct_in_degree": 0,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 0.0,
@@ -44,7 +46,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "36ed314018101c32fd1cba199664a49842bbc4bec4bf545dc43cc6ee11c93360",
+  "note_hash": "d3c02a56a17e72a34f535c74bc662a673543fbc7b3388e3cbf351049d021cc3e",
   "note_path": "docs/HIERARCHY_FORMULA_EW_VEV_OBSERVABLE_IDENTIFICATION_BRIDGE_BOUNDED_NOTE_2026-05-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

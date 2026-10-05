@@ -15,10 +15,10 @@
   "claim_id": "quark_mass_ratios_taste_staircase_support_note_2026-04-25",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -34,16 +34,17 @@
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
-    "scripts/canonical_plaquette_surface.py"
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.56,
+  "load_bearing_score": 11.562,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "63590caf80218f2a4adbea691621c0d16cfab211e7c8e34831fa0e4dc44f6495",
+  "note_hash": "a2c5a75be13c906f0c89e827aa2f7c0d4d0945e56dab2060417e8eec1efa5a3a",
   "note_path": "docs/QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -85,6 +86,6 @@
   },
   "runner_path": "scripts/frontier_quark_mass_ratios_taste_staircase_support.py",
   "title": "Quark Mass Ratios from the Taste-Staircase + EWSB Cascade",
-  "transitive_descendants": 754,
+  "transitive_descendants": 755,
   "verdict_rationale": null
 }

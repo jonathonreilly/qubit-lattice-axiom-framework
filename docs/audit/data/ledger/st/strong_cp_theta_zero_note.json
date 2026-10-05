@@ -32,16 +32,17 @@
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
-    "scripts/canonical_plaquette_surface.py"
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/strong_cp_ckm_det_check_is_unitarity_only_not_a_leakage_test_2026_09_30.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 19.769,
+  "load_bearing_score": 19.771,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "aba6a82fa00646a6218b47210525a61b61cd61f727aa3a9eb90d29d979f79946",
+  "note_hash": "35f580e0efdf9f4a9bcab0b19a37d134c9b750673fe7d37ffddf6008920fc438",
   "note_path": "docs/STRONG_CP_THETA_ZERO_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -5019,6 +5020,6 @@
   },
   "runner_path": "scripts/frontier_strong_cp_theta_zero.py",
   "title": "Strong CP / \u03b8 = 0 Conditional Action-Surface Closure",
-  "transitive_descendants": 616,
+  "transitive_descendants": 617,
   "verdict_rationale": null
 }

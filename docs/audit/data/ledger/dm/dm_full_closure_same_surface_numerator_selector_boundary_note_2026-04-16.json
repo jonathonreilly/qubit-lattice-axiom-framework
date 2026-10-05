@@ -33,7 +33,10 @@
     "scripts/canonical_plaquette_surface.py",
     "scripts/dm_full_closure_minimal_reduced_cycle_extension_map_common.py",
     "scripts/dm_full_closure_same_surface_thermal_support_common.py",
-    "scripts/dm_leptogenesis_exact_common.py"
+    "scripts/dm_leptogenesis_exact_common.py",
+    "scripts/dm_dark_candidate_consistency_check.py",
+    "scripts/dm_ratio_comparator_planck_central_values_check.py",
+    "scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
@@ -42,7 +45,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "f4aa6ebeca5c8daa84008903094dc1a631eeac79f8b6dce64a79359dc4890907",
+  "note_hash": "16d86d0b80aa047f83613fcc782bbd82c52f37650d44553145873d5b4d7aca3d",
   "note_path": "docs/DM_FULL_CLOSURE_SAME_SURFACE_NUMERATOR_SELECTOR_BOUNDARY_NOTE_2026-04-16.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -494,7 +497,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

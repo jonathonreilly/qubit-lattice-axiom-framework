@@ -26,7 +26,8 @@
     "scale_reference_primitive",
     "min_time_step_tied_to_the_lattice_edge_by_causal_locality_ratio_derived_scale_is_the_clock_rate_no_go_narrow_theorem_note_2026-06-08",
     "kinetic_isotropy_primitive",
-    "post_record_clock_rate_interface_2026-06-06"
+    "post_record_clock_rate_interface_2026-06-06",
+    "axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03"
   ],
   "direct_in_degree": 0,
   "effective_status": "unaudited",
@@ -39,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "e12615aebebd7535a4cc5c5a446bf1ba731f656d4de91744818b51edeb7ec047",
+  "note_hash": "cd30888631f0039c41ea6cc5fa0c094e5166f82a195c62cc432b6f42d9ad460f",
   "note_path": "docs/MIN_TIME_STEP_IS_THE_PLANCK_TIME_FROM_THE_SINGLE_SCALE_REFERENCE_PRIMITIVE_NARROW_THEOREM_NOTE_2026-06-08.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

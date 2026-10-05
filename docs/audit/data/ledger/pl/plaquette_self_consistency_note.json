@@ -26,15 +26,17 @@
   "direct_in_degree": 75,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 47.784,
+  "load_bearing_score": 47.787,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "d91882625a2cc37c1c5c6dad80c13f62d90d1d9bfb6f6ebbc91ea532ec01b73c",
+  "note_hash": "aa88c14333c2d4aaf4cafdf7791aa742518e9b79a95c5884598cde04c7f1bcf0",
   "note_path": "docs/PLAQUETTE_SELF_CONSISTENCY_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -575,7 +577,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,
@@ -585,6 +587,6 @@
   },
   "runner_path": "scripts/frontier_plaquette_self_consistency_finite_mc_repair.py",
   "title": "Plaquette Self-Consistency Finite MC Diagnostic",
-  "transitive_descendants": 1246,
+  "transitive_descendants": 1248,
   "verdict_rationale": null
 }

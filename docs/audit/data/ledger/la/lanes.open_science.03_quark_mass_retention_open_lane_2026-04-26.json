@@ -33,7 +33,9 @@
   "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 6.644,
@@ -41,7 +43,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "3d5efc141c4ff929ea1a6e2c66cfdc7f491cf3dcc7977d03d9f8ddb0988b7926",
+  "note_hash": "0e8e5e51c5f474cf900b8d11f32e101e42f78710f193306ce599fba1b649bf49",
   "note_path": "docs/lanes/open_science/03_QUARK_MASS_RETENTION_OPEN_LANE_2026-04-26.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -37,7 +37,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.307,
+  "load_bearing_score": 4.959,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -58,6 +58,6 @@
   },
   "runner_path": "scripts/ring_model_24_cubed_per_field_curvature_two_more_seeds_2026_09_27.py",
   "title": "On 24\u00b3 four seeds put the per-field curvature estimate at 0.86, below the 16\u00b3 and 20\u00b3 values",
-  "transitive_descendants": 6,
+  "transitive_descendants": 10,
   "verdict_rationale": null
 }

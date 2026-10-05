@@ -30,7 +30,9 @@
   "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/pmns_tm2_scope_check_solar_angle_outside_nufit61_and_v4_commutant_forces_theta13_zero_2026_09_30.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 1.5,
@@ -38,7 +40,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "c64258980c846abe037309150b116f95f3d6ad5e970ea934b546e746a8f5a089",
+  "note_hash": "d34df6dde1d7b75d8d9a6b148498d96ceb87def86626e0db8dcad2dff28a7369",
   "note_path": "docs/THETA13_IS_THE_C3_DOUBLET_BREAKING_MEASURE_SQRT2_DERIVED_THETA_E_THE_RESIDUAL_NARROW_THEOREM_NOTE_2026-06-08.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

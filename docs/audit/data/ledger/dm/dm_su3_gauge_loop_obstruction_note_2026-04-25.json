@@ -29,7 +29,11 @@
   "direct_in_degree": 4,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/dm_dark_candidate_consistency_check.py",
+    "scripts/dm_ratio_comparator_planck_central_values_check.py",
+    "scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 6.087,
@@ -37,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "965f15797b6450763bf2836e86975af4402ef1acc2806725f30ccd11e5313f2e",
+  "note_hash": "737e29195a814e56baba9f653f95816344ded7de283c78b0cd10993c8eae8e48",
   "note_path": "docs/DM_SU3_GAUGE_LOOP_OBSTRUCTION_NOTE_2026-04-25.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

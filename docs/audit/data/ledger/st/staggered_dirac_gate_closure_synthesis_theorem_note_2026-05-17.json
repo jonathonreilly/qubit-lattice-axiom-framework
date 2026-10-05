@@ -64,7 +64,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "17e3cbec382025482f73104350102fc33c416bbe86d66f5f92a2de54f07c3985",
+  "note_hash": "49d1899449c8faa21e6d6f3c8ff3f617ad476f6713d0ca7aa6954647494b5c0d",
   "note_path": "docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -15,10 +15,10 @@
   "claim_id": "mass_spectrum_derived_note",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -33,7 +33,9 @@
   "direct_in_degree": 1,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 4.748,
@@ -41,7 +43,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "6dc2a0c3a69103ad2df944e8d59a2a184b4a38a24a5631a064699ec91c37163e",
+  "note_hash": "4f3e30b71fe8483b3ceb9b9fc01ba2c19d441f7799c8572daafd56427301dfa2",
   "note_path": "docs/MASS_SPECTRUM_DERIVED_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -144,7 +146,7 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": null,
+  "runner_path": "scripts/koide_exact_pair_pole_mass_precision_check_2026_09_30.py",
   "title": "Mass Spectrum Derived \u2014 Five-Phase Attack Closure",
   "transitive_descendants": 18,
   "verdict_rationale": null

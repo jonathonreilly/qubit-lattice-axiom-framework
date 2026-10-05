@@ -31,15 +31,17 @@
   "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/pmns_tm2_scope_check_solar_angle_outside_nufit61_and_v4_commutant_forces_theta13_zero_2026_09_30.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.269,
+  "load_bearing_score": 10.271,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "87e75d5ec2e17e5b56883c16402dfc149686e060ffbc3861e91f4968828710b1",
+  "note_hash": "92e04832bc45707a7dcfbf37d8549cf8d69130ae7793122935f752001448cf27",
   "note_path": "docs/PMNS_TM2_TRIMAXIMAL_COLUMN_FROM_RECORD_CENTRAL_SECTOR_NARROW_THEOREM_NOTE_2026-06-05.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -55,6 +57,6 @@
   },
   "runner_path": "scripts/pmns_tm2_trimaximal_from_record_central_sector_runner.py",
   "title": "PMNS TM2 Trimaximal Column = the Recorded C3-Singlet Central Sector \u2014 Narrow Bridge Theorem",
-  "transitive_descendants": 616,
+  "transitive_descendants": 617,
   "verdict_rationale": null
 }

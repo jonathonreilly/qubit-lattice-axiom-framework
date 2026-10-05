@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,7 +27,7 @@
     "quark_endpoint_readout_constraints_note_2026-04-19",
     "tensor_support_center_excess_law_note"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -49,16 +49,17 @@
     "scripts/frontier_tensor_support_center_excess_law.py",
     "scripts/frontier_tensor_universal_kernel.py",
     "scripts/frontier_tensorial_einstein_regge_completion.py",
-    "scripts/frontier_universal_shell_profile.py"
+    "scripts/frontier_universal_shell_profile.py",
+    "scripts/frontier_quark_route2_endpoint_triple_center_minus_shell_readout_cubic_spline_artefact_check_2026_09_30.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 2.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "5ff17d501ed853c27988e10beb5b3bc89aa11e44d9766ee0c89a37eda2199592",
+  "note_hash": "0b070c74b8680c9dccc69e6ef372996632e2766934e446c7675bc928961a2886",
   "note_path": "docs/QUARK_ROUTE2_HONEST_GRAVITY_METRIC_RHOE_CHARACTERIZATION_NOTE_2026-07-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -74,6 +75,6 @@
   },
   "runner_path": "scripts/frontier_quark_route2_honest_gravity_metric_rhoe_characterization.py",
   "title": "Route-2 Honest Gravity-Metric rho_E Characterization",
-  "transitive_descendants": 1,
+  "transitive_descendants": 2,
   "verdict_rationale": null
 }

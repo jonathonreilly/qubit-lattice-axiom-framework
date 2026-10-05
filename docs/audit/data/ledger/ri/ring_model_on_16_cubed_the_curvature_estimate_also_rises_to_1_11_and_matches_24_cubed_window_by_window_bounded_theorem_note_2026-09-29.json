@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -29,13 +29,13 @@
     "ring_model_on_24_cubed_fresh_seeds_reproduce_the_projection_time_rise_and_a_third_window_puts_the_curvature_estimate_at_1_11_bounded_theorem_note_2026-09-29",
     "minimal_axioms"
   ],
-  "direct_in_degree": 0,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 0.0,
+  "load_bearing_score": 2.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/ring_model_16_cubed_curvature_projection_to_90_2026_09_29.py",
   "title": "Recorded 16\u00b3 projection-window diagnostics and finite comparison with 24\u00b3",
-  "transitive_descendants": 0,
+  "transitive_descendants": 2,
   "verdict_rationale": null
 }

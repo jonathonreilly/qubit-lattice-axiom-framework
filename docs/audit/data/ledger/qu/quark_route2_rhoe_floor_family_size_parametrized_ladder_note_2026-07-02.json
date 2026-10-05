@@ -50,7 +50,8 @@
     "scripts/frontier_tensor_support_center_excess_law.py",
     "scripts/frontier_tensor_universal_kernel.py",
     "scripts/frontier_tensorial_einstein_regge_completion.py",
-    "scripts/frontier_universal_shell_profile.py"
+    "scripts/frontier_universal_shell_profile.py",
+    "scripts/frontier_quark_route2_endpoint_triple_center_minus_shell_readout_cubic_spline_artefact_check_2026_09_30.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
@@ -59,7 +60,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "6d05b59eedeb4ab8f902a7462c2bf44d8a94bbea5f89e6369fc730c1d8511e48",
+  "note_hash": "37d57d59d540eb2a6e0792247bd61dcdf55e883113cb68d50899820c4ab5cf0b",
   "note_path": "docs/QUARK_ROUTE2_RHOE_FLOOR_FAMILY_SIZE_PARAMETRIZED_LADDER_NOTE_2026-07-02.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

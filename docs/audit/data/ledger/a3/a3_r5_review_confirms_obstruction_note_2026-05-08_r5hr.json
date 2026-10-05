@@ -36,12 +36,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.269,
+  "load_bearing_score": 10.271,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "3d92254cc05922083e1fc49a3f57a42539fd28a09ef177d3b692a012dd270270",
+  "note_hash": "1055624c59bee40e902f52c88b050f6a3cd5c39f498373556b262a5d07ec4719",
   "note_path": "docs/A3_R5_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r5hr.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -57,6 +57,6 @@
   },
   "runner_path": "scripts/cl3_a3_r5_hostile_review_2026_05_08_r5hr.py",
   "title": "A3 R5 Hostile Review \u2014 Confirms Obstruction (with Sharpenings)",
-  "transitive_descendants": 616,
+  "transitive_descendants": 617,
   "verdict_rationale": null
 }

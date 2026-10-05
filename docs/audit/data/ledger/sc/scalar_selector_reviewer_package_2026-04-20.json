@@ -36,7 +36,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "7e0788df0d03d6f2f801065f63c19c5bf62aa60665a06f313c9589bd8ee14ea0",
+  "note_hash": "564330e6fcf9bc6baf9c185486ddf64d4b513bbea3b6aba016b2d55150aeb8ca",
   "note_path": "docs/SCALAR_SELECTOR_REVIEWER_PACKAGE_2026-04-20.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -166,7 +166,7 @@
     "D": 0,
     "total_pass": 0
   },
-  "runner_path": "scripts/frontier_koide_kappa_spectrum_operator_bridge_theorem.py",
+  "runner_path": "scripts/koide_exact_pair_pole_mass_precision_check_2026_09_30.py",
   "title": "Scalar-Selector Cycle 1 \u2014 Reviewer Package",
   "transitive_descendants": 8,
   "unattributed_audit_provenance": [

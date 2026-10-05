@@ -51,7 +51,8 @@
     "scripts/frontier_tensor_support_center_excess_law.py",
     "scripts/frontier_tensor_universal_kernel.py",
     "scripts/frontier_tensorial_einstein_regge_completion.py",
-    "scripts/frontier_universal_shell_profile.py"
+    "scripts/frontier_universal_shell_profile.py",
+    "scripts/frontier_quark_route2_endpoint_triple_center_minus_shell_readout_cubic_spline_artefact_check_2026_09_30.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
@@ -60,7 +61,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "0e329640ad337281279cf64f3bc39ee0f614e342ce795c8d379843c4e909ce28",
+  "note_hash": "d999da0c9e11bda68052077540a2472797773e07a6e2dcdc76118af24464c4de",
   "note_path": "docs/S3_TIME_THETA_TO_SLICE_COUPLING_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -38,12 +38,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 9.769,
+  "load_bearing_score": 9.771,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "80cd247ff580530d7f948f472571a2a97e3c6a8b5f361ffd6ae18ce474137082",
+  "note_hash": "28623e5b60a00da3c7a506cac1aa8ec887375eca86eb2102a23e6f4421090cfe",
   "note_path": "docs/A3_R3_REVIEW_CONFIRMS_OBSTRUCTION_NOTE_2026-05-08_r3hr.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -59,6 +59,6 @@
   },
   "runner_path": "scripts/cl3_a3_r3_hostile_review_2026_05_08_r3hr.py",
   "title": "A3 / Route 3 Hostile Review \u2014 Universal C_3-Orbit Functorial Obstruction CONFIRMED",
-  "transitive_descendants": 616,
+  "transitive_descendants": 617,
   "verdict_rationale": null
 }

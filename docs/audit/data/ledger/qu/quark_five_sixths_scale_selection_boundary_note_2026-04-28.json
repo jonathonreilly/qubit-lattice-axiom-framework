@@ -31,7 +31,8 @@
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
-    "scripts/canonical_plaquette_surface.py"
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
@@ -40,7 +41,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "74f88e6a5242377b84180b7117edb75e7ff029cc335a54801a3eb47c2bd54c05",
+  "note_hash": "92158434281c648262b6935c80f399e69bcfcfc6c482d8155812e5722e137c32",
   "note_path": "docs/QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

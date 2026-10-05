@@ -36,7 +36,9 @@
   "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/koide_exact_pair_pole_mass_precision_check_2026_09_30.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 5.307,
@@ -44,7 +46,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "db6abc231531bde9097818534fef3c0bf585a4ac64db9387f0a17b602720c61b",
+  "note_hash": "95a253c6296305a0aab973b532c0275c7fb499fcc78a12a1687bf63ecc17f776",
   "note_path": "docs/CHARGED_LEPTON_BRANNEN_BAE_DELTA_TIER_A_BOUNDED_THEOREM_NOTE_2026-05-30.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

@@ -38,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "87b57250e2214f47120fe841d54e283fe1a2ba5f9d6c69fd34b378203acacdcc",
+  "note_hash": "985bfa9a00d16723b6628a66c071000d33fbe24acd0d46d12f8b35f20943460f",
   "note_path": "docs/QUARK_C3_ORIENTED_WARD_SPLITTER_SUPPORT_NOTE_2026-04-28.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -251,7 +251,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "runner_check_breakdown": {
     "A": 0,
     "B": 0,

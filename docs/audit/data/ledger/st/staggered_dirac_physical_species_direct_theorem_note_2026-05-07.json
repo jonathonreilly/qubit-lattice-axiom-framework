@@ -39,12 +39,12 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.269,
+  "load_bearing_score": 11.271,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "3d63dc2371ff4e0f30d8e5b7254b0fd41d86aa4da28b38118ce1c0e3502c934f",
+  "note_hash": "3cdfd82c3f6af0d1e9f67d3659655cbf3fd480f466c3d2c32e0bf119b1a4a773",
   "note_path": "docs/STAGGERED_DIRAC_PHYSICAL_SPECIES_DIRECT_THEOREM_NOTE_2026-05-07.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -60,6 +60,6 @@
   },
   "runner_path": "scripts/probe_three_states_direct_derivation.py",
   "title": "Staggered-Dirac Direct Three-State Algebraic Support",
-  "transitive_descendants": 616,
+  "transitive_descendants": 617,
   "verdict_rationale": null
 }

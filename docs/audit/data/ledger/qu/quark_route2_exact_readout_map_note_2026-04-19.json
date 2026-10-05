@@ -15,15 +15,15 @@
   "claim_id": "quark_route2_exact_readout_map_note_2026-04-19",
   "claim_scope": null,
   "claim_type": "positive_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "needs_reaudit_after_invalidation",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [],
-  "direct_in_degree": 26,
+  "direct_in_degree": 27,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
@@ -45,16 +45,17 @@
     "scripts/frontier_tensor_support_center_excess_law.py",
     "scripts/frontier_tensor_universal_kernel.py",
     "scripts/frontier_tensorial_einstein_regge_completion.py",
-    "scripts/frontier_universal_shell_profile.py"
+    "scripts/frontier_universal_shell_profile.py",
+    "scripts/frontier_quark_route2_endpoint_triple_center_minus_shell_readout_cubic_spline_artefact_check_2026_09_30.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 19.267,
+  "load_bearing_score": 19.785,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "3a06cefe154ea529001b8369d349cdb233069050af2e79471669bb35d8fe0ee2",
+  "note_hash": "f1e51e080e9d953eaf2aacf5cac9aa2db016567a15ddfa3f32ace3bca9061d50",
   "note_path": "docs/QUARK_ROUTE2_EXACT_READOUT_MAP_NOTE_2026-04-19.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -874,7 +875,7 @@
     }
   ],
   "prose_corrections": [],
-  "prose_status": "clean",
+  "prose_status": "not_evaluated_pre_vocab_lint",
   "relabel_date": "2026-05-06T17:45:26.976973+00:00",
   "relabel_reason": "operator_pre_floor_policy_relabel_2026-05-06",
   "restoration_history": [
@@ -902,6 +903,6 @@
   },
   "runner_path": "scripts/frontier_quark_route2_exact_readout_map.py",
   "title": "Quark Route-2 Exact Readout Map",
-  "transitive_descendants": 76,
+  "transitive_descendants": 77,
   "verdict_rationale": null
 }

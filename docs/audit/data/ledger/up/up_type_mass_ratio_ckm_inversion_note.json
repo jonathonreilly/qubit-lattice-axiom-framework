@@ -15,10 +15,10 @@
   "claim_id": "up_type_mass_ratio_ckm_inversion_note",
   "claim_scope": null,
   "claim_type": "bounded_theorem",
-  "claim_type_author_hint": null,
-  "claim_type_author_hint_raw": null,
+  "claim_type_author_hint": "bounded_theorem",
+  "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
-  "claim_type_provenance": "migration_hint",
+  "claim_type_provenance": "author_hint",
   "criticality": "critical",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
@@ -30,16 +30,17 @@
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [
-    "scripts/canonical_plaquette_surface.py"
+    "scripts/canonical_plaquette_surface.py",
+    "scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py"
   ],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 12.562,
+  "load_bearing_score": 12.564,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "3bbf934e32b127a4bfb3517dd3cbbdbab5cdbd5dff0eb74abcfb1c2d25ba894e",
+  "note_hash": "3706155c4cb43e79a668aa8ba59cee903f96d546648b8f779d3d86ba89f58e88",
   "note_path": "docs/UP_TYPE_MASS_RATIO_CKM_INVERSION_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],
@@ -81,6 +82,6 @@
   },
   "runner_path": "scripts/frontier_mass_ratio_up_sector.py",
   "title": "Up-Type Mass Ratios from the CKM Inversion (Phase 2 of mass spectrum)",
-  "transitive_descendants": 755,
+  "transitive_descendants": 756,
   "verdict_rationale": null
 }

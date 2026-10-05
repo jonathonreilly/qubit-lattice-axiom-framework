@@ -28,7 +28,9 @@
   "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
-  "helper_runner_paths": [],
+  "helper_runner_paths": [
+    "scripts/frontier_bh_entropy_zero_mode_pure_vs_mixed_2026_09_30.py"
+  ],
   "independence": null,
   "intrinsic_status": "unaudited",
   "load_bearing_score": 7.115,
@@ -36,7 +38,7 @@
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
   "max_descendant_status_rank": 30,
-  "note_hash": "97c0776bc495d71dd9369c5aa947d27d527c5c0e8ac806bfa8fa47ac8490d747",
+  "note_hash": "2962af4104ae7b3bf14c2293efc646c4b157c24ebb4c8bebfaff2859bab35510",
   "note_path": "docs/BH_ENTROPY_DERIVED_NOTE.md",
   "notes_for_re_audit_if_any": null,
   "open_dependency_paths": [],

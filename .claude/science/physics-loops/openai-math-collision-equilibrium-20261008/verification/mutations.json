@@ -1,0 +1,55 @@
+[
+  {
+    "mutation": "stoichiometry",
+    "exit_code": 1,
+    "failures": [
+      "FAIL five-conservation-identities: all 1440 integer row-column contractions vanish",
+      "FAIL exact-rank-certificate: stoichiometric rank=22; integer 22x22 determinant=-64; invariant 5x5 determinant=2",
+      "FAIL entropy-production-identity: exact prime-log coefficients cancel; 288 strictly dissipative reaction terms at a rational nonstationary state",
+      "FAIL positive-compatibility-witness: q+epsilon*nu is strictly positive, conserves all five moments, and is not stationary",
+      "FAIL exception: AssertionError: "
+    ],
+    "mutant_sha256": "edca9fcc20613b0bc6de277c8e03ea8df2473a0ae0c2ebf392ee9dae41807d83"
+  },
+  {
+    "mutation": "entropy_sign",
+    "exit_code": 1,
+    "failures": [
+      "FAIL entropy-production-identity: exact prime-log coefficients cancel; 288 strictly dissipative reaction terms at a rational nonstationary state"
+    ],
+    "mutant_sha256": "29e94f5dd8a3edee406c74335d5c68fab46b89bf743b0fe75e0dfeef390a0a64"
+  },
+  {
+    "mutation": "factorial_balance",
+    "exit_code": 1,
+    "failures": [
+      "FAIL exception: AssertionError: "
+    ],
+    "mutant_sha256": "1b7929474abcfe0b16a94284cb3f39f0deb892ecf9d6eb69d88eb101774084df"
+  },
+  {
+    "mutation": "noise_normalization",
+    "exit_code": 1,
+    "failures": [
+      "FAIL exception: AssertionError: "
+    ],
+    "mutant_sha256": "b0eb0271421b579e9c484eb3bc8a33b0258a6f9a89f5f55f0ea63ccc27afd58a"
+  },
+  {
+    "mutation": "lln_trace_bound",
+    "exit_code": 1,
+    "failures": [
+      "FAIL LLN-constant-certificate: ab+cd<=1/4 on the four-coordinate simplex; trace R<=K and Lipschitz bound ||F(x)-F(y)||_2<=4K||x-y||_2 as proved in note"
+    ],
+    "mutant_sha256": "7c1651f616a2ee7f55cb21d2efd558c2df2048faed34d53ff0264d2400b461ec"
+  },
+  {
+    "mutation": "missing_factorials",
+    "exit_code": 1,
+    "source_sha256": "d3479e34b14858934ad41aff52321fca0b264cfcc9da0f7e8b3e6dad571c243b",
+    "mutant_sha256": "3b96447536f54ac4ec67ff48d1a4e5e8ecc4aa39adb749e7bb668885b1b010e5",
+    "failures": [
+      "FAIL exception: AssertionError: "
+    ]
+  }
+]

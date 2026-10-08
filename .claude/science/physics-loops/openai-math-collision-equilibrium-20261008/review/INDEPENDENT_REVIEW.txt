@@ -1,0 +1,287 @@
+SELECTIVE INDEPENDENT MATHEMATICAL REVIEW — 2026-10-08
+
+Disposition: PASS for the exact supplied-model, conditional-support packet
+identified below. No material mathematical defect found in the new proofs or
+their composition with the accepted external import. This is a source-bound
+independent review, not an audit verdict or a change of retained status.
+
+SCOPE AND SOURCE IDENTITY
+
+Physics base: ed04ee2736b5bddb4e9064966505e3c3dfe003de.
+Worktree: /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/collision-equilibrium
+OpenAI/math import revision: adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+
+The following complete files were read; hashes were checked again after the
+independent calculations and runner reproduction. Relative paths below are
+relative to that worktree except for the delivery file.
+
+Note (458 lines):
+  docs/SUPPLIED_FINITE_VELOCITY_COLLISIONS_AND_GIBBS_EQUILIBRATION_BOUNDED_THEOREM_NOTE_2026-10-08.md
+  SHA256 57bf5e13e0fe60320687074bb302f5d4bdaa88313d21075224c4123f16f44639
+Runner (302 lines):
+  scripts/supplied_finite_velocity_collisions_and_gibbs_equilibration_2026_10_08.py
+  SHA256 ffcc9ab17e76cfbfc8af5993b3d11f0ea7c9b6d6fe3de9c60d433aed275d8eda
+Paired cache:
+  logs/runner-cache/supplied_finite_velocity_collisions_and_gibbs_equilibration_2026_10_08.txt
+  SHA256 f268e85b65fa0f4e8592b5d2814e3471e6eb393f37a1a19d0cf8331b5d7ef5c8
+Delivery:
+  /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/collision-equilibrium-delivery.txt
+  SHA256 c7ceb7f5d5d8af7caba8c7561809b0d50cd3c47e6879ee7c4a7715a75b0e8285
+
+The cache is a runner-cache v1 envelope, identifies the exact runner hash
+above, declares timeout_sec=120, exit_code=0, status=ok, and records
+TOTAL: PASS=13 FAIL=0. No cache or source was changed in this review.
+
+EXTERNAL IMPORT MATCH
+
+Accepted declaration: OAI.Problem326.global_bounded_persistent_solution.
+Read complete exact official Model.lean and Main.lean at the pinned revision:
+
+https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MassAction/Model.lean
+  SHA256 a9d86f6faa923fcfaf9e300ecf9a3f3ad221e0d32dcd90a03a52d46aac36858a
+https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/Analysis/MassAction/Main.lean
+  SHA256 60df46a3e981c51183ef9fd7d246d3c2026e508c0c5a33836cdf1a668ca821ca
+
+Main.lean:73-84 quantifies over positive dimension, a finite reaction network,
+weak reversibility, positive fixed rates and a positive initial state. It
+supplies a global forward solution and a positive epsilon (depending on that
+initial state and model) bounding every global solution coordinate between
+epsilon and epsilon inverse for all nonnegative times. Model.lean defines the
+mass-action monomial as the product of coordinate powers, without factorials.
+
+The application in note:82-116 and 218-237 matches these definitions: 27
+species; natural pair-complexes; every directed edge has its one-edge reverse;
+all rates are positive; and summing the two directed mass-action terms gives
+exactly kappa_r nu_r (f_i f_j-f_k f_l). The input state is positive. The
+theorem is not being read as a uniform bound for an entire moment class.
+The note's polynomial ODE solution has the required forward differentiability;
+local polynomial ODE existence also supplies an extension across time zero
+if a curve defined on all reals is used for the Lean solution convention.
+
+Per the owner's instruction, matching provider Lean-verified support is
+accepted. I checked the formal statement and definition match, not the
+provider's full proof or a fresh Lean build. No repeated external verification
+is a gate in this review. The new bridges remain ordinary mathematical proofs
+and exact executable checks, not newly Lean-verified results.
+
+MATHEMATICAL CHECKS AND LINE FINDINGS
+
+1. Collision model and full invariant space — note:42-79 and 120-156.
+   Correct for the declared complete collision set on {-1,0,1}^3, with a
+   positive rate for every reversible pair. A shared input/output species
+   forces equality of the other species by momentum conservation. A repeated
+   input (v,v) could only scatter to (v+w,v-w); conservation of squared speed
+   forces 2|w|^2=0. Thus every nontrivial reaction has four distinct species,
+   and its stoichiometric vector has squared norm four.
+
+   The coordinate-rectangle collisions are actual conserved exchanges; when
+   a rectangle degenerates, its mixed-difference identity is tautological.
+   Their invariant identities remove all mixed terms. Interpolation on the
+   three coordinate values leaves h=a+u.x+theta_x x^2+theta_y y^2+theta_z z^2.
+   The exchanges (+/-e_x)<->(+/-e_y) and (+/-e_x)<->(+/-e_z) force the three
+   quadratic coefficients equal. Conversely these five functions are
+   conserved, and evaluation at zero and signed coordinate axes proves
+   independence. Hence S-perp=row(A), rank(A)=5 and dim(S)=22. This is a
+   complete proof; it does not depend only on a numerical rank test.
+
+   Independently enumerated reactions from four-distinct-species subsets and
+   their three pair partitions, rather than the author's grouped-pair
+   construction. This produced 288 reversible reactions; rational Gaussian
+   elimination of their stoichiometric rows gave rank 22.
+
+2. Positive global ODE, entropy minimizer and convergence — note:160-237.
+   The polynomial vector field is locally Lipschitz, preserves A f, and has
+   mass M. On the positive region each loss term for coordinate i is bounded
+   by kappa_r M f_i, giving f_i(t)>=f_i(0) exp(-M K t). This prevents finite
+   time contact with the boundary, while mass bounds prevent finite time
+   blowup. The compact nonnegative moment fiber contains the given positive
+   state. Entropy is continuous there and strictly convex. Moving a proposed
+   boundary minimizer toward the positive state gives a strictly negative
+   epsilon log(epsilon) term, which dominates its O(epsilon) terms; thus the
+   minimizer is interior. Its constrained gradient is log(f*) in row(A),
+   yielding the claimed Gibbs exponential. Beta need not be positive on this
+   finite velocity set, and no unwarranted restriction is imposed.
+
+   The identity Hdot=-sum kappa_r (x_r-y_r) log(x_r/y_r) has the correct sign
+   and no missing factor two. All rates positive implies D=0 exactly at
+   pairwise balance. Invariant completeness and strict convexity identify
+   the unique positive equilibrium in the moment fiber. The accepted
+   persistence import places the trajectory in a compact positive subset.
+   There D has bounded derivatives and F is bounded, so D(f(t)) is uniformly
+   continuous. Its time integral is finite by the entropy identity, hence
+   D(f(t))->0. Every accumulation point is the same positive minimizer;
+   compactness gives full convergence. This proves the stated long-time
+   conclusion for each fixed positive initial state without asserting a
+   common convergence rate or a class-wide persistence constant.
+
+3. Occupation generator, factorial balance and finite GKLS realization —
+   note:241-269 and 297-333.
+   For every integer N>=1, the supplied jump intensity kappa n_i n_j/N and
+   jump nu preserve the finite count simplex. Four distinct species makes
+   every positive-rate jump feasible and its reverse positive. Communicating
+   components are therefore closed; no unproved equality between moment
+   fibers and components is needed. The exact ratio of factorial weights is
+   (q_k q_l/q_i q_j) n_i n_j/[(n_k+1)(n_l+1)], reducing by Gibbs pair balance
+   to the reverse-intensity ratio. This proves detailed balance and, on each
+   finite irreducible component, uniqueness of the stationary law. Singleton
+   components and N=1 are covered. The rank-one Lindblad operators produce
+   the declared chain on diagonal matrices and a stationary diagonal state;
+   the note does not claim uniqueness among all quantum stationary states.
+
+   NONBLOCKING COVERAGE OBSERVATION — runner:219-242; note:323-325.
+   Every reacting N=2 state has two distinct occupied species with count one;
+   therefore both factorial products on every tested transition equal one.
+   The author's exhaustive N=2 balance check would still pass if the
+   factorials were omitted. Its advertised finite enumeration is accurate,
+   but it does not independently test the nontrivial factorial ratio in
+   Proposition 6. The general cancellation proof is correct. This review
+   additionally checked that ratio at nontrivial occupancies, so this is not
+   an uncovered mathematical obligation or a blocking finding. Retaining
+   the N=4 control below in the runner would improve regression coverage.
+
+   Independent N=4 control: use the axis-pair collision (+e_x,-e_x) ->
+   (+e_y,-e_y), source counts (2,2,0,0), and q=1, kappa=1. Source/target
+   unnormalized factorial weights are 1/4 and 1; forward/reverse intensities
+   are 1 and 1/4. Both fluxes are 1/4. Omitting factorials fails this test.
+   A second independent check used n_i=1+(i mod 3), so N=54, q=1, and direct
+   products of factorial weights for every reaction in both directions:
+   all 576 nontrivial-occupancy balance equalities held exactly.
+
+4. Exact quadratic variation — note:271-290.
+   Generator application to density coordinates gives exactly F, not an
+   approximation. A jump is nu/N and its intensity is N kappa x_r (or
+   N kappa y_r); their product gives the declared predictable bracket
+   (1/N) integral sum kappa nu nu^T (x_r+y_r) ds. The fluctuation bracket
+   loses precisely this 1/N. Every invariant row annihilates this matrix.
+   Writing f(s) instead of its left limit in the Lebesgue-time integral does
+   not change it. All martingales are square integrable on a finite horizon
+   because the state space and jump rates are bounded for fixed N.
+
+   Independently evaluated the carré-du-champ identity
+     L(f_a f_b)-f_a L(f_b)-f_b L(f_a)
+   directly from the finite generator at the N=4 state above, with all 288
+   rates set to one. Compared it with the sum of rate times jump outer
+   product, entry by entry: all 729 entries agreed exactly; trace was 1/2.
+   This calculation was independent of the author's drift/noise functions.
+
+5. Finite-horizon Doob–Gronwall constants and quantifiers — note:337-396.
+   For simplex points, each two-product difference is bounded by the two
+   coordinate differences; Cauchy–Schwarz on the four distinct coordinates
+   gives |delta x|+|delta y|<=2||delta f||_2. Since ||nu||_2=2, L=4K is valid.
+   For a,b,c,d>=0 of total at most one, the stated sum-of-squares identity
+   proves ab+cd<=1/4. Thus tr R=4 sum kappa(x+y)<=K; no factor two is missing.
+   The martingale isometry gives E||M(T)||^2<=KT/N. Doob's inequality for the
+   nonnegative submartingale ||M|| gives E sup||M||^2<=4KT/N, without a
+   dimension factor. Pathwise integral Gronwall gives exp(4KT) multiplying
+   the initial error plus the martingale supremum. Squaring with
+   (a+b)^2<=2a^2+2b^2 yields exactly
+     E sup_[0,T] ||f^N-f||_2^2
+       <= 2 exp(8KT) [E||f^N(0)-f^0||_2^2 + 4KT/N].
+   The bound is valid for every finite T>=0 and N>=1, fixed velocities and
+   fixed positive rates, fixed positive unit-mass deterministic f^0, and
+   every initial grid law. No coordinate independence or exact equality of
+   initial moments is needed. T=0 and singleton components cause no failure.
+   Persistence is unnecessary for this finite-time bound. The note correctly
+   declines to exchange N->infinity with t->infinity.
+
+REPRODUCTION
+
+Ran, without modifying the source or cache:
+  cd /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/collision-equilibrium
+  python3 -B scripts/supplied_finite_velocity_collisions_and_gibbs_equilibration_2026_10_08.py
+Result: exit code 0; TOTAL: PASS=13 FAIL=0. The mathematical disposition above
+does not follow merely from these PASS lines. Separate rational calculations
+and full ordinary-proof review supplied the checks described above.
+
+Independent calculation summary (Python standard-library exact arithmetic;
+no author functions imported; no generated files):
+  four-partition reversible reactions: 288
+  rational stoichiometric row rank: 22
+  N=4 factorial weights: [1/4, 1]
+  N=4 forward/reverse rates: [1, 1/4]
+  N=4 balanced flux: 1/4; omission of factorials rejected
+  N=54 directed nontrivial-factorial comparisons: 576/576
+  N=4 carré-du-champ matrix entries: 729/729; trace=1/2
+
+LIMITS AND REMAINING OBLIGATIONS
+
+No new mathematical obligation was found for the claims as stated. The
+provider persistence theorem is an accepted external import; its full proof
+was not independently reverified. The new invariant, entropy, occupation,
+noise and LLN bridges have not been formalized in Lean in this review. The
+packet remains about supplied D3Q27 velocities, rates, occupation dynamics,
+and quantum instruments. It establishes no derivation of these data from
+the repository axioms or physical record dynamics, no physical clock, no
+continuum Boltzmann limit, no fluctuation limit, no stationary-law limit and
+no empirical identification. Those are scope boundaries already stated in
+the source, not defects in the bounded theorem.
+
+Only this review file was written. No source edit, cache refresh, commit,
+push, formal audit operation, or citation-graph build was performed.
+
+FOLLOW-UP REVIEW — N=4 REGRESSION CONTROL — 2026-10-08
+
+Latest disposition: PASS. The historical nonblocking factorial-coverage
+observation in item 3 above is RESOLVED by the retained N=4 regression control.
+This addendum binds the final note, runner and cache hashes below and
+supersedes their earlier hashes for the current review disposition. The
+original review and observation are preserved as history.
+
+Final source identities in the same worktree:
+  docs/SUPPLIED_FINITE_VELOCITY_COLLISIONS_AND_GIBBS_EQUILIBRATION_BOUNDED_THEOREM_NOTE_2026-10-08.md
+  SHA256 709de4ae3a55353d9b11a20dc3ba036c2ab29c9bac557ec027939b7a2ae90cd6
+  scripts/supplied_finite_velocity_collisions_and_gibbs_equilibration_2026_10_08.py
+  SHA256 d3479e34b14858934ad41aff52321fca0b264cfcc9da0f7e8b3e6dad571c243b
+  logs/runner-cache/supplied_finite_velocity_collisions_and_gibbs_equilibration_2026_10_08.txt
+  SHA256 10c3ec233e999aa705ecb307424228fcb621ffe46bb81202bf18cb2eeacbb89b
+
+Review scope was only the changed source portions, regenerated full cache,
+and the concrete missing-factorials detector. Deleting only runner:244-258
+recovers the exact previously reviewed runner SHA256 ffcc9ab17e76cfbfc8af5993b3d11f0ea7c9b6d6fe3de9c60d433aed275d8eda.
+Reversing only the note's control paragraph, PASS count and control inventory
+edits recovers the exact previously reviewed note SHA256
+57bf5e13e0fe60320687074bb302f5d4bdaa88313d21075224c4123f16f44639.
+Thus the mathematical propositions and all other runner code are byte-for-byte
+unchanged. The unaffected proof and external import reviews carry forward.
+
+Changed runner:244-257 now runs all 288 reversible pair exchanges at N=4,
+using source counts two in each input species and zero elsewhere. The
+stoichiometric update produces target counts one in each of the four distinct
+species. Actual rational Gibbs products divided by factorials are computed
+for both states. Their ratio is
+  (q_i q_j q_k q_l)/(q_i^2 q_j^2/(2!2!))
+    = 4(q_k q_l)/(q_i q_j) = 4.
+The supplied forward rate is kappa*(2*2)/4=kappa and reverse rate is
+kappa*(1*1)/4=kappa/4. Consequently both the detailed-balance assertion and
+the explicit weight/rate ratio assertions are correct for every tested pair
+and its nonuniform positive rate. These are substantive nonunit factorial
+checks. Note:323-328 and 418-429 describe their scope and total accurately.
+
+The regenerated complete cache was read. It binds the final runner hash,
+declares timeout_sec=120, exit_code=0 and status=ok, has empty stderr, and
+contains the new PASS nontrivial-factorial-control for all 288 pair cases.
+Its complete total is TOTAL: PASS=14 FAIL=0.
+
+The author supplied these detector artifacts outside the source worktree:
+  /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/collision-equilibrium-checks/missing_factorials.py
+  SHA256 3b96447536f54ac4ec67ff48d1a4e5e8ecc4aa39adb749e7bb668885b1b010e5
+  /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/collision-equilibrium-checks/missing_factorials.log
+  SHA256 01d5a2fda51a448a5d4d21162c9c2c39a6d8d96fc92a5139df15f77be81909f8
+  /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/collision-equilibrium-checks/mutations.json
+  SHA256 d10125a1abc122073ac6e1a4a6727382d78346e0bd1fdf95cb045b72c41292de
+
+Exact text comparison confirmed that this mutant removes only the divisor
+"/ factorial(state[a])" in the new N=4 weights. Its log shows that the original
+N=2 detailed-balance test passes, then the mutant fails with AssertionError;
+TOTAL: PASS=11 FAIL=1. The matching mutations.json entry records exit code 1
+and the source/mutant hashes above. I also independently ran the same narrow
+mutation in memory: it passed the original N=2 check and raised AssertionError
+at the new N=4 control. No mutant or other file was written by this review.
+This directly demonstrates detection of the prior coverage gap. No opinion
+on the other mutation entries is added by this selective follow-up.
+
+No new mathematical or scope issue was found. Earlier scientific limits and
+the conditional-support / bounded_theorem status are unchanged. The original
+delivery file remains a historical record of the pre-control source hashes;
+this addendum supplies the final reviewed identities. Only this review file
+was appended; no source, cache, import, audit authority or graph was changed.

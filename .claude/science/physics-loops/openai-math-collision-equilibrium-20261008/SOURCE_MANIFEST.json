@@ -1,0 +1,126 @@
+{
+  "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de",
+  "external": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "files": [
+    {
+      "path": "docs/SUPPLIED_FINITE_VELOCITY_COLLISIONS_AND_GIBBS_EQUILIBRATION_BOUNDED_THEOREM_NOTE_2026-10-08.md",
+      "sha256": "709de4ae3a55353d9b11a20dc3ba036c2ab29c9bac557ec027939b7a2ae90cd6"
+    },
+    {
+      "path": "scripts/supplied_finite_velocity_collisions_and_gibbs_equilibration_2026_10_08.py",
+      "sha256": "d3479e34b14858934ad41aff52321fca0b264cfcc9da0f7e8b3e6dad571c243b"
+    },
+    {
+      "path": "logs/runner-cache/supplied_finite_velocity_collisions_and_gibbs_equilibration_2026_10_08.txt",
+      "sha256": "10c3ec233e999aa705ecb307424228fcb621ffe46bb81202bf18cb2eeacbb89b"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "dbf0856a9cc5128ea1f2d44c076e9cda5bbe39ed0b16fd436cd56082ab1c3480"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/APPROACH_A.md",
+      "sha256": "4f7bc0f6f7a474d4ff0478564d71fb54c9db05e8a4426040897d94d074b2d27f"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/ASSUMPTIONS_TRIED.md",
+      "sha256": "87ce54af2875f4ca4b4d541d921d79192fe8d1c9c2ea54107a66e3a70910a4f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "f8a346717f067400f370ce3cc6a08d23f13292fd47e5a08ff26fa454a9c1ed98"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/GOAL.md",
+      "sha256": "0cc9e475cc861ca73c32d0e3b2825b8b83ca6f11068e8aaa590d87520970f34d"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/HANDOFF.md",
+      "sha256": "efa751d781a367df798195b9013a669e8f7d19c1d56764197bfe175ef4679669"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/OWNER_DIRECTION_2026-10-08.md",
+      "sha256": "fbd009bca6212e358c9b3888002e4fe3a9a823a996ecded754f65708c8ad6775"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/PR_BACKLOG.md",
+      "sha256": "29ac2204c4bce543b8d82a46e73d0c09b73eed9b7b20fd2a88bbde74d3258ad2"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/REVIEW_HISTORY.md",
+      "sha256": "c16ee125388204725e197077c5d622e7daa1fe3d83896ead136ea9fec5a5410e"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/STATE.yaml",
+      "sha256": "1f259971756b9fdf0b9360f8dd1db7dc60f59714c2bdb1b2cb823758202da565"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/TRACE_GATE.md",
+      "sha256": "907a596082694a76ff28e5f385910a9e271c54aea3567ff0f0b2c9ec9b11fb3d"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/review/INDEPENDENT_REVIEW.txt",
+      "sha256": "455972b977eefdaaf9616ab3e06607a74b37d1f47e136156fab7eae25a1917f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/LOG_ENCODING.md",
+      "sha256": "f1c87940be75b7280735e5164e958e4241afb044037298ce1f1d113de1d08864"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/entropy_sign.log",
+      "sha256": "6f4273e42313de56f7c7243ebe1df406b96ec63a9034d44cf6d3e340fae0b486"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/entropy_sign.py",
+      "sha256": "29e94f5dd8a3edee406c74335d5c68fab46b89bf743b0fe75e0dfeef390a0a64"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/factorial_balance.log.json",
+      "sha256": "c79819839367fe56df220b2729c9e6f0c20b0415860ed8451ef0393445fbe471"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/factorial_balance.py",
+      "sha256": "1b7929474abcfe0b16a94284cb3f39f0deb892ecf9d6eb69d88eb101774084df"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/lln_trace_bound.log",
+      "sha256": "22028a0ff20c6534e0fc8b74f49830ebc32594a668209cfaa8407d9cfa681ae5"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/lln_trace_bound.py",
+      "sha256": "7c1651f616a2ee7f55cb21d2efd558c2df2048faed34d53ff0264d2400b461ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/missing_factorials.log.json",
+      "sha256": "4f7818fd62745b832fc0a3fc4b19cc72ca2dcc817ab35287da8be7bdcb4a8479"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/missing_factorials.py",
+      "sha256": "3b96447536f54ac4ec67ff48d1a4e5e8ecc4aa39adb749e7bb668885b1b010e5"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/mutation_source_provenance.json",
+      "sha256": "d71faa2c837a3d228378aa41d4da5e17d1cffc8f7e8d6d79695f8681a4ce45ae"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/mutations.json",
+      "sha256": "d10125a1abc122073ac6e1a4a6727382d78346e0bd1fdf95cb045b72c41292de"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/noise_normalization.log.json",
+      "sha256": "4f7818fd62745b832fc0a3fc4b19cc72ca2dcc817ab35287da8be7bdcb4a8479"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/noise_normalization.py",
+      "sha256": "b0eb0271421b579e9c484eb3bc8a33b0258a6f9a89f5f55f0ea63ccc27afd58a"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/stoichiometry.log.json",
+      "sha256": "48d9e6cbbfc4e2bac58180582ef61479ae6d34111f0ea00d5218d2e8e5c72eed"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-collision-equilibrium-20261008/verification/stoichiometry.py",
+      "sha256": "edca9fcc20613b0bc6de277c8e03ea8df2473a0ae0c2ebf392ee9dae41807d83"
+    }
+  ]
+}

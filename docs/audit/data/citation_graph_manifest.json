@@ -1,6 +1,6 @@
 {
- "edge_count": 15410,
- "node_count": 6864,
+ "edge_count": 15412,
+ "node_count": 6865,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19801,6 +19801,10 @@
   "supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15": {
    "deps_hash": "9ae213819916",
    "out_degree": 1
+  },
+  "supplied_finite_velocity_collisions_and_gibbs_equilibration_bounded_theorem_note_2026-10-08": {
+   "deps_hash": "efe5b9e1c075",
+   "out_degree": 2
   },
   "supplied_matched_free_cone_bounded_theorem_note_2026-09-15": {
    "deps_hash": "9d281ffae983",

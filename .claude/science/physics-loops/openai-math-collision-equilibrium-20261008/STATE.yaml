@@ -1,0 +1,27 @@
+{
+  "goal": "Finite collision model, Gibbs limit and particle approximation",
+  "status": "selective source review complete; ready for draft review PR",
+  "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de",
+  "external": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "planning": "eb1f1ca8338848cf2046582e13aef372d8540937",
+  "branch": "physics-loop/openai-math-collision-equilibrium-20261008",
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/collision-equilibrium",
+  "actual_current_surface_status": "conditional-support",
+  "target_claim_type": "bounded_theorem",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "formal_audit": "not performed",
+  "new_lean_formalization": "not performed; concrete targets in note",
+  "import_policy": "Matching provider Lean verification accepted; no duplicate external proof verification gate",
+  "note": "docs/SUPPLIED_FINITE_VELOCITY_COLLISIONS_AND_GIBBS_EQUILIBRATION_BOUNDED_THEOREM_NOTE_2026-10-08.md",
+  "runner": "scripts/supplied_finite_velocity_collisions_and_gibbs_equilibration_2026_10_08.py",
+  "cache": "logs/runner-cache/supplied_finite_velocity_collisions_and_gibbs_equilibration_2026_10_08.txt",
+  "independent_review": true,
+  "checks": 14,
+  "graph_delta": {
+    "nodes_added": 1,
+    "edges_added": 2
+  },
+  "next_action": "Open draft review PR after focused source checks; later integrated-main validation and independent audit are separate",
+  "last_updated": "2026-10-08T11:03:36.787275+00:00"
+}

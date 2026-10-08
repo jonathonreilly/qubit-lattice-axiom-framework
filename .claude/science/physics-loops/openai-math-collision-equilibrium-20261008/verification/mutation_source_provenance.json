@@ -1,0 +1,27 @@
+[
+  {
+    "mutation": "stoichiometry",
+    "source_sha256": "ffcc9ab17e76cfbfc8af5993b3d11f0ea7c9b6d6fe3de9c60d433aed275d8eda",
+    "coverage_note": "Before the independent review added the N=4 factorial control. The tested code families are unchanged; final-source omission check is recorded separately."
+  },
+  {
+    "mutation": "entropy_sign",
+    "source_sha256": "ffcc9ab17e76cfbfc8af5993b3d11f0ea7c9b6d6fe3de9c60d433aed275d8eda",
+    "coverage_note": "Before the independent review added the N=4 factorial control. The tested code families are unchanged; final-source omission check is recorded separately."
+  },
+  {
+    "mutation": "factorial_balance",
+    "source_sha256": "ffcc9ab17e76cfbfc8af5993b3d11f0ea7c9b6d6fe3de9c60d433aed275d8eda",
+    "coverage_note": "Before the independent review added the N=4 factorial control. The tested code families are unchanged; final-source omission check is recorded separately."
+  },
+  {
+    "mutation": "noise_normalization",
+    "source_sha256": "ffcc9ab17e76cfbfc8af5993b3d11f0ea7c9b6d6fe3de9c60d433aed275d8eda",
+    "coverage_note": "Before the independent review added the N=4 factorial control. The tested code families are unchanged; final-source omission check is recorded separately."
+  },
+  {
+    "mutation": "lln_trace_bound",
+    "source_sha256": "ffcc9ab17e76cfbfc8af5993b3d11f0ea7c9b6d6fe3de9c60d433aed275d8eda",
+    "coverage_note": "Before the independent review added the N=4 factorial control. The tested code families are unchanged; final-source omission check is recorded separately."
+  }
+]

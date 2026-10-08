@@ -1,0 +1,574 @@
+EXECUTED KINETIC / FIELD / CHANNEL BRIDGES — 2026-10-07
+
+Outcome
+A positive finite-model result emerged: a 27-velocity reversible collision
+network conserves exactly number, momentum and energy, has detailed balance,
+and fits family 149. Accepting that external persistence theorem yields
+convergence of every positive trajectory to its unique Gibbs equilibrium.
+This is a proposed, supplied collision model, not a derivation of native
+record dynamics or a Boltzmann–Grad/hydrodynamic limit.
+
+There is also an exact trace-preserving qubit reduction of the stated Echo
+free-wait generator. The actual midpoint swap does not descend to that
+reduction. Two complete encoded Echo channels were tested as well; the checked
+channels do not have the generalized-amplitude-damping form. The capacity
+result therefore supplies conditional communication benchmarks, not the
+missing preparation/readout correction or a successful held-out prediction.
+
+Every assigned family was screened at its actual theorem interface. Families
+145/154 do apply to stationary path spaces of a supplied finite moving-record
+sector. Families 093/119/229/273/374 provide conditional inequalities or model
+benchmarks after additional object matching. None of these calculations
+closes the repository's native dynamics, Maxwell phase, fluid limit, or Echo
+validation objective. This sentence reports what was achieved here; it is
+not an impossibility claim about other routes.
+
+Status and reproducibility
+Science SHA: ed04ee2736b5bddb4e9064966505e3c3dfe003de.
+OpenAI/math SHA: adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+Output root K: /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution/kinetic
+Prior exact source root P: /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/kinetic_review
+Pinned baseline root R: /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/repo
+Repository: /Users/jonreilly/Projects/Physics (read through git show at the SHA).
+
+Executed:
+  python3 K/exact_checks.py > K/exact_checks.log
+  python3 K/interface_checks.py > K/interface_checks.log
+  python3 K/echo_composite_check.py > K/echo_composite_check.log
+All three exited 0. JSON results, the finite collision trajectory, and complete
+logs accompany this report. Exact symbolic/integer/rational checks are marked
+below; floating matrix exponentials, eigenvalues, integration and optimization
+are numerical corroboration only. source_manifest.json supplies SHA256s and
+commit-specific URLs. New source-download manifests retain tree/blob identities
+and successful byte matches. HTTP 404 for lean/docs/093.md and 154.md is recorded;
+it is not proof that no formalization exists elsewhere.
+
+The primary hypotheses, theorem statements and proof mechanisms were read.
+No full external proof verification, transitive Lean compilation, comparator
+build, repository audit, PR, claim promotion, premise adoption, empirical fit,
+or new holdout access was performed. No editable prompt files changed. All
+new files are inside K. Prior source identities and premises remain valid;
+P/findings.txt records the earlier complete matching review.
+
+Premise boundary
+R/docs/MINIMAL_AXIOMS_2026-06-29.md:114–130 leaves update laws, Hamiltonians,
+transfer operators, time metric and production dynamics open. Lines 148–151
+and 220–226 remove scalar I/finite additivity from Record. The current primitive
+registry and its source notes do not turn a pointwise realized state into the
+probability ensembles required below. Lane 7's old lines 157–165 still call
+finite additivity axiomatic: that is contextual drift, not a recovered premise.
+All distributions, velocities, energies, clocks, instruments and noise laws in
+our constructions are explicitly supplied mathematical objects.
+
+1. 364 + 149 + 363: a concrete finite collision construction
+
+Definition, independently checked algebra
+Let V={-1,0,1}^3, with one species X_v per velocity. Group unordered pairs
+{i,j} by v_i+v_j and |v_i|^2+|v_j|^2. Join every two distinct pairs in each
+group by reversible reactions X_i+X_j <-> X_k+X_l, both rate constants 1.
+This gives 27 species, 288 reversible pairs / 576 directed reactions. Every
+nontrivial complex has two distinct species: equal input velocities have no
+other pair with the same momentum and energy, by strict convexity.
+
+Let nu=e_k+e_l-e_i-e_j and F(f)=sum nu(f_i f_j-f_k f_l). Exact rational
+stoichiometric rank is 22. The five rows (1,v_x,v_y,v_z,|v|^2) annihilate every
+column and have rank 5, so they span all additive collision invariants.
+An independently implemented elimination modulo 1000003 also has rank 22;
+together with the five exact upper-bound identities this checks the rank.
+The model avoids the content-exchange obstruction by actually changing velocity
+labels during collisions. It consequently needs its own interpretation if
+records are to carry immutable content.
+
+For every alpha,u,beta, f_v*=exp(alpha+u.v-beta|v|^2) satisfies pairwise
+flux balance. We checked it exactly with the rational state
+f_v*=2^(v_x)3^(v_y)5^(v_z)7^(-|v|^2). The H-function
+H(f)=sum_i f_i(log f_i-1) obeys
+  dH/dt = -sum_reversible_pairs (x-y) log(x/y) <= 0,
+  x=f_i f_j, y=f_k f_l.
+This follows by inserting log f into the stoichiometric derivative, not from
+an assumed thermodynamic arrow. Equality at positive f means log f is in the
+five-dimensional invariant span, hence precisely the Gibbs form above.
+
+Finite-model theorem (conditional only at the stated external import)
+For every positive initial f, mass conservation bounds the trajectory; each
+loss term is at most a finite constant times f_i on that mass simplex, so
+positivity holds for every finite time. Polynomial local Lipschitz continuity
+then gives unique global evolution. The positive compatibility class
+P=(f(0)+im N) intersect R_{>0}^27 is nonempty. Our finite network is reversible,
+therefore weakly reversible, and has fixed positive rates. These are exactly
+149's hypotheses.
+
+Accepting family 149, trajectories stay eventually in a compact subset of P.
+The entropy has one positive minimizer in each class: the closed mass-bounded
+class is compact; any boundary minimizer is improved along a segment toward
+the given strictly positive feasible point because the zero-coordinate
+entropy derivative is -infinity. Strict convexity gives uniqueness. Lagrange
+multipliers give log f*=A^T lambda. The omega-limit set lies in the interior;
+LaSalle's argument and the zero-production characterization force it to be
+{f*}. Thus f(t)->f* for every positive initial point. No quantitative convergence
+rate, volume-uniform bound or continuum limit follows from this argument.
+The older, initial-state-dependent boundedness/persistence theorem suffices;
+the Oct 5 classwise uniform permanence theorem is stronger than needed.
+Detailed-balanced mass-action global convergence also has prior mathematical
+routes, which were not exhausted here. Family 149 is sufficient for this
+supplied-model benchmark; it is not claimed necessary, nor is convergence of
+detailed-balanced mass-action systems claimed as new mathematics.
+
+Numerical corroboration: starting from f_i=(i+1)/378, t=800 gives sup distance
+9.90e-12 from the equilibrium determined by the five conserved moments.
+Maximum invariant drift is 1.12e-15; the largest computed entropy increase is
+1.78e-15, floating roundoff rather than an exact monotonicity certificate.
+These numbers illustrate the analytic result and do not prove asymptotics.
+
+Microscopic finite process and GKLS realization
+For N particles, use occupation jumps n->n+nu at rate n_i n_j/N, with the
+reverse reaction too. All nontrivial pairs have i!=j, so the conditional drift
+of f=n/N is exactly F(f). The quadratic variation of sqrt(N) f is
+  sum_pairs nu nu^T (f_i f_j+f_k f_l).
+The exact calculation at N=378 verifies both formulas and annihilation by all
+five conserved rows. The finite-sector stationary law is proportional to
+product_i (f_i*)^(n_i)/n_i!, by the reverse-rate ratio. Expectation closure still
+requires E[F(f)]=F(Ef), which generally fails; no propagation of chaos was
+proved here. This gives a precise future LLN/CLT interface, narrower than 364.
+
+On an ordered two-particle Hilbert basis, bidirectional jumps
+sqrt(kappa)|k,l><i,j| commute with total momentum and energy; equal Gibbs
+weights at their endpoints give diagonal detailed balance and a stationary
+Gibbs state. The commutators were checked exactly for every listed reaction.
+Similarly any finite occupation chain is a diagonal GKLS embedding. A
+27-dimensional single-particle register needs at least five qubits; this is
+an encoding choice, not one native qubit site's derived velocity space. The
+finite GKLS dynamics does not by itself imply the nonlinear marginal ODE.
+A three-channel zero-momentum pair sector has generator with diagonal -2 and
+off-diagonal 1, exact spectrum {0,-3,-3}, and uniform equilibrium; the clock
+is supplied. Rescaling all rates leaves equilibrium unchanged and rescales
+relaxation, illustrating the remaining time-normalization obligation.
+
+Why 364 is not directly applicable to this model
+The exact source requires Newtonian trajectories with a fixed stable radial
+finite-range potential, or elastic hard spheres, an excluded grand-canonical
+initial density, activity epsilon^-2, smooth spatially summable Gaussian
+velocity envelopes, and an independently regular Boltzmann interval. It then
+controls factorial marginals in L1 through that interval. The fluctuation
+companion gives finite-dimensional CLT statements centered at the exact
+microscopic expectation, not tightness or a supplied Born ensemble.
+
+A fixed finite velocity law is atomic, not the required C1 Lebesgue density.
+It has TV distance 1 from every absolutely continuous probability density;
+even refining atomic meshes cannot converge in that TV/L1 identification.
+One exact hard-sphere witness sends (1,0,0),(-1,0,0), with collision normal
+(3/5,4/5,0), to (7/25,-24/25,0), its negative, outside D3Q27. The proposed
+finite jump rule is also a different microscopic trajectory law. Therefore
+364 cannot be applied unchanged to this encoding. Cell smoothing, a growing
+velocity/cutoff family, a weak topology and a consistency/stability/chaos
+argument remain possible routes; they are not ruled out. The useful import is
+364's lifespan extension after the Newtonian model and all of its hypotheses
+have actually been supplied or derived. Its Gaussian/centering discipline is
+also a useful guide for the new finite collision fluctuation calculation.
+
+363 is a selection warning, not a counterexample to the finite theorem
+The Oct 5 hard-sphere result constructs one periodic rough datum with two
+strongly L1-continuous entropy solutions, exact local mass/momentum/energy
+balances, and weighted-integrable gains/losses. It uses unbounded amplitudes
+on shrinking spatial scales. It does not contradict uniqueness of our finite
+locally Lipschitz ODE, nor the smooth Gaussian-bounded class assumed in 364.
+Conservation and an H-inequality alone are consequently an insufficient
+continuum solution-selection contract. Within our finite network, different
+positive overall rates already have the same invariants and equilibrium but
+different derivatives. A velocity-refinement proof must retain compactness,
+regularity/selection and uniform estimates; the finite uniqueness theorem
+cannot simply be passed to a limit.
+
+Exact source addresses
+- 149: K/external/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/introduction.tex:13–60 (objects/theorem), 128–186 (affine trapping/strict increase mechanism); sections/permanence.tex:16–77 (classwise scale iteration).
+- 364: P/external/preprints/The-Boltzmann-Grad-limit-for-stable-radial-potentials-on-regular-kinetic-intervals-September-23-2026/build/sections/00-introduction.tex:46–81,155–214; sections/01-preliminaries.tex:13–39,82–106.
+- Fluctuations: P/external/preprints/Hard-sphere-fluctuations-on-the-regular-Boltzmann-lifespan-September-23-2026/build/sections/01-introduction.tex:75–168,176–232.
+- 363: P/external/preprints/Nonuniqueness-with-local-conservation-for-the-hard-sphere-Boltzmann-equation-October-5-2026/build/paper/01-introduction.tex:33–44,110–177,179–235.
+- Repo finite collision supply: P/repo/docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md:143–197,256–271.
+- Repo streaming: P/repo/docs/ADMISSIBILITY_RULE_FORWARD_STREAMING_ON_THE_26_NEIGHBOURS_ISOTROPY_OF_THE_SECOND_ORDER_TERM_IS_ONE_NUMBER_AND_CONSTANT_RATE_RULES_CAPTURE_ISOTROPICALLY_BOUNDED_THEOREM_NOTE_2026-09-24.md:48–66,142–151,303–305.
+
+2. 362: exact force matching, with a constructive alternative
+
+The supplied Vlasov–Maxwell theorem assumes the full classical relativistic
+Lorentz-force and Maxwell system, one species, no background charge, smooth
+compactly supported nonnegative f0, and smooth bounded-derivative L2 fields
+satisfying Gauss constraints. It claims global classical continuation without
+smallness or symmetry. Its key mechanism is cancellation of signed retarded
+impulses before taking absolute values, followed by momentum-increment bounds.
+
+We tested an exact finite positive-jump encoding of magnetic motion. For a
+velocity-chain generator A with nonnegative rates,
+  A|v|^2 - 2v dot Av = sum_w r(v,w)|w-v|^2.
+If A|v|^2=0 pointwise and Av=v cross B/sqrt(1+|v|^2), then v dot Av=0,
+so every nontrivial jump rate is zero. This is an exact restriction on this
+positive classical finite-jump representation, not on arbitrary encodings.
+The clockwise four-velocity cycle preserves pathwise speed but has drift
+R90 v-v: rotation plus radial damping. All four witnesses were checked exactly.
+
+Constructive escape: for a qubit Bloch vector r and fixed shell parameter q,
+H=-B dot sigma/(2q) gives rdot=r cross B/q exactly, by the Pauli commutator.
+This reproduces homogeneous pure magnetic orientation dynamics without the
+classical-jump damping. It does not provide the spatial density, arbitrary
+momentum magnitude, electric acceleration, self-consistent current, field
+phase or continuum limit. For constant B the signed velocity increment is
+bounded by 2|v| while the absolute force integral grows with time: the source's
+signed-cancellation tactic is therefore meaningful, but not yet a native
+Vlasov–Maxwell derivation. The next decisive test is an explicit (rho,j,E,B)
+map preserving Gauss constraints and yielding the Lorentz generator.
+
+Source: P/external/preprints/Global-classical-solutions-of-the-three-dimensional-relativistic-Vlasov-Maxwell-system-September-23-2026/build/sections/introduction.tex:8–60,152–214; sections/setup.tex:35–104.
+Repo: P/repo/docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md:18–29,196–237,265–285,390–397. Its fixed-cutoff charged thermodynamic phase and common renormalized metric remain explicit gates; the classical PDE theorem assumes downstream objects.
+
+3. 276: legitimate Echo qubit channels, not level deletion
+
+Use a=k10,b=k21,c=k20 and the stated free generator
+L=a D[|0><1|]+b D[|1><2|]+c D[|0><2|], plus diagonal H.
+Define the CPTP map C02 by Kraus operators
+  K0=|g><0|+|e><2|, K1=|g><1|.
+Then C02(rho)=[[rho00+rho11,rho02],[rho20,rho22]]. The exact calculation on
+all nine matrix units verifies K0* K0+K1* K1=I3 and
+  C02 L = (b+c) D[|g><e|] C02.
+The diagonal Hamiltonian descends to the 0–2 energy splitting. Thus free
+waiting descends exactly to ordinary amplitude damping (GAD nu=0) with
+gamma=1-exp(-(b+c)t), including coherences. Encoding a qubit in span{0,2}
+followed by the physical channel and C02 gives this same qubit channel,
+even though span{0,2} itself leaks to level 1.
+
+All three deterministic population partitions were checked symbolically:
+- merge {0,1}, retain 2: always lumpable, decay b+c;
+- merge {1,2}, retain 0: lumpable iff a=c; this is the measured excited
+  population partition, and the published rounded rates have a!=c;
+- merge {0,2}, retain 1: lumpable iff b=0.
+The exact trace-preserving coordinate subspaces are {0,1} always; {0,2}
+only if b=0; {1,2} only if a=c=0. In particular dropping level 0 from the
+actual Echo {1,2} model is not trace preserving.
+
+The S12 midpoint swap does not descend under C02: E00 and E11 have identical
+coarse output |g><g|, but after the swap their outputs are |g><g| and |e><e|.
+No qubit map can reproduce that pulse for all qutrit states from C02 alone.
+This is an exact information-loss witness, not a claim about every encoding.
+
+We also tested whole encoded Echo channels, since failure of intermediate
+lumpability alone would not exclude an end-to-end qubit identification. Write
+A=exp(-a t/2), B=exp(-(b+c)t/2), D=b(A-B)/(b+c-a).
+- Input encoding {0,2}, output C02: the composite has p_exc -> BD p_exc
+  and kills input coherences. It is a classical Z-channel, not nontrivial GAD.
+- Input encoding {1,2}, output C12 that merges 0 into 1 while preserving rho12,
+  followed by output X: p_exc -> 1-AB+B(A-D)p_exc, z -> AB z.
+  GAD would require (AB)^2=B(A-D). The analytic formulas and a separate
+  9x9 matrix-exponential implementation disagree with that required identity
+  at total waits 1,5,10 microseconds using only the already published rounded
+  rates. Complete results are in echo_composite_results.json. Other CPTP
+  encodings are not exhausted by these tests.
+
+What capacity buys
+276 proves a one-letter capacity formula for an actual qubit GAD channel,
+with product input codes and collective decoding, including an optimal
+opposite-phase pair. For the exact free C02 channel, numerical optimization
+using the note's rounded rates gives C=0.82523453,0.51184317,0.31325815 bits/use
+at waits 1,5,10 microseconds. These are conditional mathematical communication
+benchmarks, not predictions of Echo voltage or survival. They give achievable
+subchannel rates (and hence lower bounds for the unconstrained full qutrit
+channel's classical capacity if arbitrary qubit encoding and postprocessing
+are available); they do not identify the full qutrit capacity or hardware
+preparation/readout. The invariant {0,1} restriction supplies another exact
+AD channel at rate a. Neither invariant subspace stays closed under S12.
+
+Source: P/external/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/paper.tex:145–173,208–257.
+Repo: P/repo/docs/QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md:32–74; /Users/jonreilly/Documents/Codex/echo-focused-20261004/CHECKPOINT.md and /Users/jonreilly/Documents/Codex/echo-three-hour-20261004-delivery.json preserve the later unresolved physical-preparation/readout and unused-validation objective. No new empirical series was opened or fitted in this execution.
+
+4. 273: bosonic entropy has a narrower admissible channel interface
+
+The EPnI assumes n finite bosonic modes, independent input ports, finite mean
+energy, and a passive beam splitter. It bounds g^-1(S/n), including internally
+entangled modes within each port. This is a specific infinite-dimensional
+bosonic channel statement, not a generic three-level entropy bound.
+
+Vacuum pure loss restricted to levels 0,1,2 has one coherent jump
+A=|0><1|+sqrt(2)|1><2|. Population matching requires b=2a,c=0, already different
+from Echo's stated rates. Even with those equalities, D[A] differs from the
+separate-jump generator: on E12 its extra gain is exactly sqrt(2) E01. The
+symbolic matrix calculation checks this witness. Matching population rates
+alone does not identify the full quantum channel. A thermal environment adds
+upward jumps, including 2->3, so a closed qutrit truncation is another mismatch.
+
+Positive conditional example: input I3/3 embedded in one bosonic mode, an
+independent vacuum environment and transmissivity 1/2 remain within levels
+0,1,2. Exact binomial thinning gives output (7/12,1/3,1/12). Its entropy is
+0.88769428 nats, above the EPnI lower value 0.73236311 (numerical scalar inverse).
+This is a valid entropy benchmark once the bosonic loss instrument is supplied.
+It does not derive a photon phase or fix the Echo observable.
+
+Source: K/external/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/00-introduction.tex:10–28,32–63. Proof uses heat-flow/metric and minimization machinery in sections 02–05; the full analytic proof was not independently checked here.
+
+5. 093: log-Sobolev control needs the actual measure and scale
+
+The source assumes a centered log-concave Lebesgue probability density in R^n
+with every one-dimensional projection satisfying E exp(<X,theta>^2/a^2)<=2.
+It states Ent_mu(f^2)<=C a^2 integral|Df|^2 with universal C, and associated
+transport control. The uniform convex-body case is included. Discrete spin
+measures and sphere-supported measures do not directly meet this density
+hypothesis. Subgaussianity alone is insufficient: the Gaussian-smoothed
+Rademacher mixture at sigma=1/2 has f(0)/f(1)=2e^-2/(1+e^-8)<1 while
+f(-1)=f(1), an explicit midpoint violation of log concavity.
+
+Exact Gaussian scale: for precision A, the smallest admissible a^2 is
+8/(3 lambda_min(A)), obtained from Eexp(Z^2/a^2)=(1-2 Var(Z)/a^2)^(-1/2).
+For mean-zero massless periodic fields lambda_min=4 sin^2(pi/L), so a^2 grows
+like L^2. A supplied positive mass m^2 gives a^2<=8/(3m^2).
+
+Actual repo interface: the supplied seven-site gain-one linear comparator has
+phi(k)=1-E(k)/7 and covariance sigma^2/(1-phi(k)^2) in the mean-zero sector.
+If Gaussian noise is additionally specified, its stationary law is log-concave
+with precision (I-P^2)/sigma^2. The exact Fourier formula and numerical full
+mode enumeration give a^2 ~ 7 sigma^2 L^2/(3 pi^2), so the theorem's
+"dimension-free" constant does not remove this infrared size dependence.
+The source fixes noise variance, not Gaussianity; the Gaussian input is our
+explicit comparator condition. Entropy decay for a proposed dynamics also
+requires matching its Dirichlet form to the Euclidean gradient form. The next
+useful test is log concavity and a uniform projection scale for the actual
+candidate stationary law, not insertion of a dimension-free label.
+
+Source: K/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/01-introduction.tex:16–36,57–65. Repo comparator: K/repo/docs/ADMISSIBILITY_RULE_RE_RECORDING_AT_EVERY_TICK_STATIC_LAW_STATIONARY_LIGHT_CONE_BILAYER_LONG_RANGE_ORDER_GREEN_FUNCTION_RESPONSE_CONDITIONAL_ON_AN_EXCLUDED_CLAUSE_BOUNDED_THEOREM_NOTE_2026-09-20.md:52–59,100–106. That note explicitly prices its excluded re-recording clause; it is not adopted here.
+
+6. 119: exact noisy Boolean readout benchmarks
+
+The information theorem assumes independent fair input bits and independent
+binary symmetric noise, also independent of the auxiliary binary output.
+It covers randomized binary summaries at fixed initial information, with an
+output-bias refinement. The companion Hellinger inequality permits biased
+Boolean outputs but still has a uniform input cube and product noise.
+
+We exhausted all 256 Boolean functions of three bits at crossover probability
+1/4. Mutual information <= 1-h2(1/4)=0.1887218755 bits was certified by a
+finite integer product inequality (no floating logarithm used in the decision).
+Exactly the six signed coordinates attain equality. The Hellinger inequality
+was separately checked for every function using square-factor normalization
+and rational outward radical bounds at 80-bit precision, with the same six
+exact equality cases. Script comments expose both certificates. This is an
+independent small-instance check, not a proof in arbitrary dimension/noise.
+
+Repo's CNOT pointer-broadcast witness does have classical basis labels, but
+its GHZ output is not a product of independent fair bits. A legitimate use is
+an explicitly calibrated independent-BSC readout stage for a supplied uniform
+register distribution. The theorem would then bound how much one binary
+summary can retain; it does not supply Born weights, production rates, a blank
+boundary or the input/noise independence. Those remain the first interface
+tests before applying the sharper general theorem.
+
+Sources: K/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/main.tex:53–110,176–224,256–317; K/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/main.tex:46–82,126–171. Repo K/repo/docs/RECORD_POINTER_BROADCAST_CIRCUIT_INTERFACE_2026-06-05.md:27–59,74–95.
+
+7. 229: reconstruction tests, capacity and an independence discriminator
+
+Three-state source: uniform root, symmetric channel K=lambda I+(1-lambda)J/3,
+independent edges conditional on parents, lambda in [-1/2,1], regular b>=2 or
+observed independent Poisson tree. Reconstruction iff b lambda^2>1 (or mean
+branching d), including nonreconstruction at equality; Poisson expectation is
+not conditioned on survival. The four-state Oct 5 theorem covers ferromagnetic
+lambda>=0 and proves nonreconstruction at/below the same threshold. Its
+bounded-degree deterministic-tree companion gives an L3 capacity criterion
+with resistances lambda^(-2|e|), 0<lambda<1.
+
+Exact rational posterior enumeration was executed for q=3 and 4, binary trees
+at depths 1 and 2, lambda=1/2 and 4/5. Probabilities normalize exactly; full
+advantages and posterior chi-square values are in exact_checks_results.json.
+They are finite examples, not evidence proving the asymptotic threshold.
+For a regular b-tree, equal flow gives path potential
+  theta^2 sum_{n>=1}(b lambda^2)^(-2n).
+Averaging over uniform rays plus convexity gives the matching lower bound, so
+capacity=sqrt((b lambda^2)^2-1) when b lambda^2>1, zero otherwise. At b=2,
+lambda=4/5 it is sqrt(399)/25 exactly. This explicitly matches the new capacity
+normalization, not an electrical-capacity convention with a different power.
+
+Hypothesis discriminator: create one Markov signal per generation and copy it
+to every descendant at that level. Then all children share the same noise.
+Even with b=2,lambda=4/5 and b lambda^2=32/25>1, boundary advantage is exactly
+(q-1)/q*(4/5)^n -> 0. There is no contradiction: conditional branch independence
+is absent. Mere record count or redundancy is not the theorem's branching
+experiment. The repo's qubit CNOT witness is also binary, not a q=3/4 channel;
+a qutrit/four-state block, uniform root law, actual channel and independent
+tree conditional structure must be supplied. Loops and common environments
+need separate treatment. This is a useful proposed noisy-record diagnostic,
+not a from-axioms objectivity threshold.
+
+Sources: K/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/01-introduction.tex:15–52,113–184; K/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build/sections/01-introduction.tex:11–62,97–149; K/external/preprints/A-Capacity-Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026/build/main.tex:46–111,143–182.
+
+8. 227: SK dynamics screened against local lattice dynamics
+
+Read the model/main theorem of all eight listed papers. The high-temperature
+gap and cutoff, critical mixing/slow-start bounds and low-temperature typical
+start bounds concern zero-field dense independent Gaussian SK couplings with
+1/sqrt(n) normalization and specified heat-bath clocks. The Oct 5 stationary
+and quench autocorrelation universality also allows independent Rademacher
+disorder, still dense SK; the quench starts from independent fair spins.
+Critical time is n^(2/3) in rate-one-per-site units, not per total update.
+The functional limits retain disorder randomness. No model-matching premise
+identifies these dense couplings with the repository's deterministic local
+pair-weight dynamics. Changing time normalization alone changes claimed
+mixing scales, while leaving the stationary law unchanged.
+
+A useful smaller local route was executed instead of importing SK exponents.
+On the 8-vertex cube graph (degree 3), take Ising Gibbs weight
+(3/2)^(number of aligned edges), J=log(3/2)/2, and rate-one single-site heat
+bath. All 2048 directed flip balance identities were checked with rational
+arithmetic. The influence bound is degree*tanh J=3/5. In the common-clock
+maximal coupling, a single disagreement is removed at rate 1 and induces
+neighbor disagreements at total rate <=3/5; path coupling yields expected
+Hamming contraction at rate >=2/5 and TV distance <=8 exp(-2t/5). This is an
+analytic bound for this supplied finite clocked model. Its numerical spectral
+gap is 0.4458979471, consistent with that bound. The local finite construction
+is relevant to heat-bath comparators but is not the full six-axis/sphere model
+or an infinite-volume claim. A larger-lattice influence estimate for the
+actual menu/rates is a concrete follow-on, with its clock explicit.
+
+Sources: K/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/introduction.tex:13–46,99–133,172ff; Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/01-introduction.tex:55–103; Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/introduction.tex:19–65,86–104; Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/build/sections/introduction.tex:9–99; Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/sections/01-introduction.tex:11–73; A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build/introduction.tex:20–60; Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/sections/01-introduction.tex:10–55; Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/01-introduction.tex:11–150. All unprefixed paths in this paragraph have prefix K/external/preprints/.
+
+9. 145 / 154: an actual stationary boundary model qualifies
+
+145 states ordinary mixing implies all finite orders for one invertible
+probability-preserving transformation. Its section 08 ALSO explicitly proves
+an endomorphism corollary for noninvertible measurable probability-preserving
+mixing transformations. Thus irreversibility alone is not a valid reason to
+dismiss it. 154 concerns fixed bounded tuples of consecutive multiple averages
+N^-1 sum_k product_j f_j(T^(jk)x), all N, almost everywhere, with a tuple-dependent
+null set; no rate and no simultaneous assertion over every bounded tuple.
+It imports the multiple-mixing companion and a separate triple-average result.
+
+The repo already supplies a suitable conditional subsystem: fixed-content
+moving records on a finite connected communicating sector with positive pair
+weights and symmetric proposals, with no births during the observation window.
+We instantiated its pair-weight transit on an open 2x3 rectangle with contents
+(+z,+z,-z,+x,empty,empty), (p,q,r)=(3,1,2), c=1. Exact enumeration has 180 states,
+all connected, 672 directed balance identities, minimum positive rate 1/7.
+The numeric gap is 0.04465602056 in supplied rate-one-per-bond units.
+Uniformization proves exp(tQ)>0 for t>0; hence the stationary sampled process
+is mixing. Its two-sided path shift is invertible and probability preserving,
+so 145/154 apply on that stationary path space. This does not assert that a
+physical irreversible transition has an inverse; the shift retains an entire
+sampled history. The single-step physical state process need not be deterministic.
+
+A separate exact two-state example P=[[3/4,1/4],[1/4,3/4]], pi=(1/2,1/2), has
+P(X0=Xn=X2n=0)=(1/8)(1+2^-n)^2 ->1/8. This checks the cylinder interpretation.
+In finite mixing Markov chains this higher-order behavior can already be
+proved directly by matrix products, so the new very general theorem is not
+needed to establish this finite example; it offers a future extension once
+only abstract mixing is known. Finite nontrivial deterministic permutations
+instead have periodic correlations and are not mixing on all observables.
+
+The global growing formation process is not given this stationary measure.
+In particular, the moving-record source warns that fixed-time pre-birth
+sampling and sampling at formation events can differ by an insertion-rate
+bias. No exchange between those ensembles or derived Past Hypothesis follows.
+The stationary construction is a useful precise boundary interface without
+adopting the separately excluded re-recording clause.
+
+Sources: K/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/01-introduction.tex:4–39,97ff; sections/08-consequences.tex:9–60 (endomorphisms); K/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/sections/introduction.tex:4–34,56–70,72–110. Repo K/repo/docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md:48–60,76–92,168–174.
+
+10. 374: transport-map stability, with the sharpness example recomputed
+
+The result assumes uniform source measure on a compact convex body with
+interior in R^d, d>=2, compact target support, and the unique quadratic optimal
+(Brenier) maps. It gives ||T_mu-T_nu||_L2 <= C W2(mu,nu)^(1/3), and the exponent
+is sharp. This does not directly control arbitrary affine calibration maps,
+quantum channels or kinetic semigroups.
+
+We independently integrated the source paper's three-atom construction on
+[-1,1]^2. For 0<a<1/2,b=a/2, convex potentials
+max(-x1,x1,a) and max(-x1,x1,a+b x2) give
+  W2(mu,nu)^2=a^3/4,
+  ||T_mu-T_nu||_L2^2=(a+a^3)/4.
+The first equality has a direct optimality certificate: all original atoms
+have second coordinate zero, so target second moment a b^2 is a universal
+cost lower bound, attained by moving only central mass vertically. The second
+comes from the area where the central cells differ, plus b^2 times the new
+central-cell mass. Exact rational tests for a=1/4,1/16,1/64,1/256 reproduce
+both formulas. The square-root ratio grows, while the one-third ratio tends
+to 2^(-2/3). This is a reproduction of the external example, not a new theorem.
+
+A prospective optimal-transport coarse graining or reconstruction could use
+this quantitative bound after declaring the source, target metric and actual
+optimal map. Echo's affine I/Q centroid conversion is not identified as such
+a Brenier map. No empirical readout map was replaced or calibrated. The first
+useful test is therefore whether a proposed reconstruction is truly quadratic
+optimal transport with the specified source and compact support.
+
+Source: K/external/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/introduction.tex:31–41; sections/sharpness.tex (complete construction and proof read). The theorem's quantitative proof and all dependencies were not independently re-proved here.
+
+11. Disposition and external proof/formalization coverage
+
+Family | Disposition from execution | Source coverage / formal limits
+364 | No unchanged finite-encoding import; precise alternate collision LLN/CLT interface established | Main hypotheses/mechanisms and centering restriction read; no local Lean entry found in earlier scoped lookup; no full analytic validation.
+149 | Positive conditional global convergence for constructed finite collision model | Oct 5 theorem and permanence proof read. lean/docs/149.md covers Sep 25 initial-state-dependent global boundedness/persistence, sufficient for our convergence argument; it does NOT certify the new classwise uniform refinement.
+363 | Continuum selection warning; finite ODE uniqueness preserved | Oct 5 local-conservation theorem read; prior Lean scope covers older Sep 23 nonuniqueness, not the Oct 5 refinement.
+362 | Exact jump-encoding restriction plus unitary fixed-shell escape; PDE bridge remains open | Principal equations, hypotheses, increment mechanism read; Lean scope reports stated global classical result. Prior entry points inspected, not transitively built.
+276 | Exact free-wait AD reduction; pulse and two composite encodings fail checked GAD identities | Capacity theorem/mechanism read. Lean scope covers selected GAD capacity/additivity; arbitrary different partner and separate-measurement refinements are outside selected scope. No build.
+093 | Conditional finite Gaussian comparator; actual infrared scale retained | Theorem and proof roadmap read; scoped Lean docs URL 404. No general log-concavity proof for a repo model.
+119 | Exact 3-bit information and Hellinger benchmarks, conditional readout interface | Both main statements/mechanisms read. Lean scope names soft-channel/information refinement and selected production, not the Hellinger companion's full proof. Full dimension-free scalar certificates not rerun.
+227 | No SK/local-generator identification; finite local heat-bath bound supplied instead | All eight primary model/main statements read; high-temperature and quench mechanisms examined. Lean covers gap, beta<1/2 ratio cutoff, older broad critical bounds, typical starts/covariance, and low-temperature barriers. It does not cover the full beta<1 cutoff location, exact critical exponent, Oct 5 functional/quench universality, or typical-start upper bound as selected claims.
+229 | Exact finite posterior/capacity calculations; independence discriminator | All three primary statements/mechanisms read. Lean scope is only q=3 supercritical direction, not subcritical/equality, q=4, tree capacity or SBM consequences. Full polynomial certificates not rerun.
+273 | Valid finite-support vacuum-loss benchmark; explicit full-generator mismatch to Echo | Principal statement/consequence and channel assumptions read. Lean scope covers EPnI only, not thermal-output/broadcast-capacity consequences. No build.
+374 | Exact sharpness reproduction; prospective OT reconstruction bound | Main statement/sharpness argument read. Lean scope reports stability and sharpness; no transitive build.
+145 | Applies to supplied stationary moving-record path space; endomorphism correction retained | Main and full endomorphism consequence read; proof mechanism examined. Lean scope reports invertible multiple-mixing implication, not a separately selected endomorphism result.
+154 | Applies conditionally to same path space; no rate or universal null-set claim | General Oct 4 theorem and its explicit companion dependencies read. Scoped Lean docs URL 404; no claim of full formalization absence.
+
+The checked-in Lean scope descriptions are claims about selected formalizations,
+not our certification. Comparator challenge holes are not automatically proof
+holes: the prior review inspected separate solution entry-point mappings for
+362/363/276. No result here relies on counting PASS lines, downloads, source
+hashes or independent scripts as a substitute for a general theorem proof.
+
+12. Scope stress test (no audit packet / no universal no-go)
+
+N1. Distinct tested routes: (i) exchange or finite classical collision dynamics;
+(ii) reversible mass-action/GKLS dynamics; (iii) unitary Bloch force encoding;
+(iv) CPTP restriction/coarse graining and whole-channel composition;
+(v) bosonic embedding; (vi) finite stationary path-space construction;
+(vii) noisy product-cube/tree information; (viii) Euclidean Gaussian/OT measures.
+Several succeed in their supplied domains. No claim that all alternatives are
+closed is made. In particular growing encodings and controlled continuum
+limits remain possible. This is not a procedural five-route PASS for every
+individual narrow algebraic counterexample.
+N2. No number of independent walls is asserted. Microscopic identification,
+ensemble selection and limit estimates may constrain each other; no pairwise
+nonimplication is inferred from lack of a derivation. A single complete model
+construction could settle several obligations at once.
+N3. All load-bearing additions are explicit: velocities and collisions; fixed
+positive rates; positive concentrations; quantum instruments; Gaussian or
+product noise; stationary path laws; heat-bath clocks; convex OT source and
+optimality. Phrases such as Gibbs or stationary do not supply these premises.
+N4. The older exchange witness addresses only content=velocity exchange;
+S12 witness addresses only the C02 quotient; 363 addresses a rough entropy
+class; bosonic witness addresses the coherent-vs-separate jump distinction.
+No prior wall is used to reject another class or every possible encoding.
+N5. Exact checks resolve listed matrix units, reaction columns, finite states,
+three-bit functions and shallow tree posteriors. Gaussian/transport formulas
+have the stated mode/geometric scope. They do not execute an infinite native
+lattice, a Boltzmann–Grad limit or an empirical Echo correction.
+N6. Successful partial paths are preserved: 149 + entropy; C02 free-wait AD;
+unitary fixed-shell rotation; finite stationary motion; explicit bosonic loss.
+They can be imported conditionally without asserting a new framework axiom.
+No approved primitive is demoted and no new premise is adopted.
+N7. Strongest counter-route: derive a growing finite encoding with a precise
+coarse-graining and prove consistency/stability/chaos, or find a different
+CPTP encoding preserved by the complete Echo instrument. Either could turn a
+currently mismatched downstream theorem into a real tool. Our finite atomic,
+positive-jump and selected-qubit witnesses do not close those mechanisms.
+N8. The repo's newer moving-record note already replaces the earlier claim
+that equilibrium needs excluded re-recording with a supplied motion-sector
+alternative. That retirement mechanism is actively used in our 145/154 match.
+We retain the later Oct 4 Echo unresolved status rather than reviving an old
+empirical closure. Full historical no-go-ledger/audit scans were outside this
+execution, so no formal no-go-discipline packet PASS or retained verdict is
+claimed. The skill's commit/landing requirement is not executed here. The
+delegated task brief restricted this subtask to its output directory and
+excluded repository commits/audits; the report instead gives scoped results
+and open alternatives.
+
+Best next mathematical target from this subset
+The collision construction now has a complete finite-model contract and a
+positive long-time theorem conditional on 149. Its strongest next step is a
+controlled propagation-of-chaos/velocity-refinement estimate for a chosen
+microscopic process, with clock and energy/readout maps declared. For the
+existing Echo objective, the decisive work remains a physically justified
+complete instrument/readout model validated on unused data; none of the
+capacity or entropy inequalities substitutes for that test.

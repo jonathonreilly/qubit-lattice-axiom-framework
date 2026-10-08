@@ -1,0 +1,2497 @@
+{
+  "generated_at": "2026-10-08T00:43:05.161235+00:00",
+  "science_base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de",
+  "external_source": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "scientific_commit": "7d392547bdfd750bbe9dc3b1a3829e6c35627b06",
+  "final_handoff_commit": "e3ddd8be1479d1634e5550bba90b0ff024d5fbff",
+  "pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9466",
+  "file_count": 497,
+  "total_bytes": 27945311,
+  "files": [
+    {
+      "path": "REPORT.txt",
+      "bytes": 13607,
+      "sha256": "c5446cf2344ee782a2975acea1b0f8f60af22d9f2a09d3a828136da6bfa3f83c"
+    },
+    {
+      "path": "catalogue.json",
+      "bytes": 254317,
+      "sha256": "a9400727f5137964e9856a8227eed1dcde79eea562f5daae81a6ee1e0307f2e1"
+    },
+    {
+      "path": "continuum/213_0.pdf",
+      "bytes": 426428,
+      "sha256": "9c32c0ba2d3d7e3dd0b37c912a8690725773753784c9bdb08220c70bcff90d2a"
+    },
+    {
+      "path": "continuum/213_0.txt",
+      "bytes": 56015,
+      "sha256": "db246bf2b6d9621218afee8de7946a0b58959f5e0286821f7a3b7d4aa1e75f74"
+    },
+    {
+      "path": "continuum/216_0.pdf",
+      "bytes": 885992,
+      "sha256": "5c357d1c416119fa157cddaa3e06854fd47bc1020cb7a797949ee42544272a8a"
+    },
+    {
+      "path": "continuum/216_0.txt",
+      "bytes": 256830,
+      "sha256": "0036222cb7f70a67dfc25a6f5a1a306f85c1d5804e1d2fb19ed48d085f021563"
+    },
+    {
+      "path": "continuum/216_3.pdf",
+      "bytes": 686498,
+      "sha256": "5630748347a3657af3940a9429b440b420fcc31b6fdc96beedb348ae0b68f5a2"
+    },
+    {
+      "path": "continuum/216_3.txt",
+      "bytes": 157888,
+      "sha256": "c534c8d74259f1e6e4968d390ea04217b5667edfde6ab2248b17ea2455282ecf"
+    },
+    {
+      "path": "continuum/216_5.pdf",
+      "bytes": 1520204,
+      "sha256": "5e6a8df09e021c4a114360d4bda50622ccac64d51150045a3df299565b133152"
+    },
+    {
+      "path": "continuum/216_5.txt",
+      "bytes": 538752,
+      "sha256": "a1893dc0674c43899aac95b1ed7ce3e1cae80be058985fcc854407fed2cfd8a9"
+    },
+    {
+      "path": "continuum/218_0.pdf",
+      "bytes": 563704,
+      "sha256": "c693f39898f6f7d74f74cbe919a87b34267ca03e60e62e9efde72df23130756a"
+    },
+    {
+      "path": "continuum/218_0.txt",
+      "bytes": 120789,
+      "sha256": "f9c0d3544c9dce8c4228993ff6b6960ab4a478938f6ba6163938e70fa192e1d9"
+    },
+    {
+      "path": "continuum/218_3.pdf",
+      "bytes": 637241,
+      "sha256": "8a815e7845436e07e663f9bc98ebc45fc642932a83bc9a0d35953ba32e5616c5"
+    },
+    {
+      "path": "continuum/218_3.txt",
+      "bytes": 169914,
+      "sha256": "b85459c9128024fd9bd4983a3d3a0686b3091fbbc8292239dc8a895aab2f5f4e"
+    },
+    {
+      "path": "continuum/219_0.pdf",
+      "bytes": 664775,
+      "sha256": "b90d91abec2e8614ab12bfea2dc37152441e2651ec0482c70fc26665064e58b8"
+    },
+    {
+      "path": "continuum/219_0.txt",
+      "bytes": 167365,
+      "sha256": "c63696f4dd7a714c7641ff2d3c0731b56274c440ae0f3ea25fe17cc2d7df706d"
+    },
+    {
+      "path": "continuum/228_0.pdf",
+      "bytes": 476825,
+      "sha256": "d3c00f7387c84c306cde835b975962752138b0aca201fce5b8d5fc2a2021b0c4"
+    },
+    {
+      "path": "continuum/228_0.txt",
+      "bytes": 81073,
+      "sha256": "dac479af7b689caec0ead67155e099a8f5d4ab63c77b9c9003cda45676617321"
+    },
+    {
+      "path": "continuum/228_1.pdf",
+      "bytes": 536600,
+      "sha256": "d53cafa68c322a072098e8a3cb2e3b7e059b4239ba95466d089632b8ce368587"
+    },
+    {
+      "path": "continuum/228_1.txt",
+      "bytes": 82158,
+      "sha256": "2fa478cecb796b61987082c74c4d40b1bb77ebf8877fb54a42cc215b622dea23"
+    },
+    {
+      "path": "continuum/233_0.pdf",
+      "bytes": 978289,
+      "sha256": "47ce0d33a918fe9d79f3d74cf67ca4bcd43a3eb450afb58609c18db2ed5c1513"
+    },
+    {
+      "path": "continuum/233_0.txt",
+      "bytes": 336439,
+      "sha256": "27ad4db8e8093858188812db7477c71aebf0c5bca4d95da265a1278959c60b4c"
+    },
+    {
+      "path": "continuum/282_0.pdf",
+      "bytes": 1017171,
+      "sha256": "485a44682f95ef0dd756e73644dc348f86a6e51b859ef8442b90b4abd378b89b"
+    },
+    {
+      "path": "continuum/282_0.txt",
+      "bytes": 371559,
+      "sha256": "a97f064b7b639fa2b719f6e88d687cdc1cfb0fe25af3881390764ce3afcdac9d"
+    },
+    {
+      "path": "continuum/365_0.pdf",
+      "bytes": 621749,
+      "sha256": "8e1bdd3a9067234842406dba45efc9e8efae5be0cd72a6c09f6dceee8793badb"
+    },
+    {
+      "path": "continuum/365_0.txt",
+      "bytes": 148747,
+      "sha256": "7dd9efebbccf94feead77612fa7375f10b628c7cefdd6d38c2d71a1560adf00f"
+    },
+    {
+      "path": "continuum/RESULTS.txt",
+      "bytes": 32174,
+      "sha256": "cc51c022a533c3bc65e217f8d0a120a272795be7f3b715a75683863e7539b3a1"
+    },
+    {
+      "path": "continuum/SHA256_MANIFEST.json",
+      "bytes": 24769,
+      "sha256": "5b13fc3479017a0cef068d1597cad817f87f31b561fe08460276e40b17638be6"
+    },
+    {
+      "path": "continuum/adjacent_families.json",
+      "bytes": 28897,
+      "sha256": "7e62cf59c366413fbb3b73199f27cd63542b35a1be08bfbd9b9c4f19ac2213c4"
+    },
+    {
+      "path": "continuum/bridge_checks.json",
+      "bytes": 5152,
+      "sha256": "4c081d411cf91c9218003d3b2d3556c125064c87f7f4dcfb3544932ee9fa1069"
+    },
+    {
+      "path": "continuum/bridge_checks.log",
+      "bytes": 5153,
+      "sha256": "3c4130182b554337dc820564c872f5f0946e9091be96535e9cce80197a6f2359"
+    },
+    {
+      "path": "continuum/bridge_checks.py",
+      "bytes": 7813,
+      "sha256": "b9828fbee7caea449742a0b9da95d68b29298c494ca992bf56c5282b36403650"
+    },
+    {
+      "path": "continuum/evidence_refresh.log",
+      "bytes": 3059,
+      "sha256": "df9d5abeb0bf7703ab5ab315f50d9376b2345623dfed9efb9c17deaf35aa4f19"
+    },
+    {
+      "path": "continuum/evidence_refresh.py",
+      "bytes": 2207,
+      "sha256": "de5656eb8b11237df6f514220b675fe07f84d48fe398247b01fe63da39dc2daa"
+    },
+    {
+      "path": "continuum/external_manifest.json",
+      "bytes": 3309,
+      "sha256": "7f11e8865a171fe93ebc2908752eb39dee565fab343f32ab16f5a16b8c953731"
+    },
+    {
+      "path": "continuum/finalize_evidence.log",
+      "bytes": 219,
+      "sha256": "d4d1ba6491ae39d33dd8714bbc4f62f6acd4b365b03e460625bb19ed6df50294"
+    },
+    {
+      "path": "continuum/finalize_evidence.py",
+      "bytes": 2098,
+      "sha256": "573ac949e36a03082413bac74220f780a484849df3b65049dac67214b76ae5ed"
+    },
+    {
+      "path": "continuum/lean_213.md",
+      "bytes": 1491,
+      "sha256": "c42f93f6e99657086bb87d66e4b8c84e13f501decad985dde4474b5a0bb3d728"
+    },
+    {
+      "path": "continuum/refresh_manifest.json",
+      "bytes": 3059,
+      "sha256": "df9d5abeb0bf7703ab5ab315f50d9376b2345623dfed9efb9c17deaf35aa4f19"
+    },
+    {
+      "path": "continuum/repo/ADMISSIBILITY_BINARY_FULL_CONDITIONAL_COMPATIBILITY_ISING_ACTION_AXIOM_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-10.md",
+      "bytes": 11386,
+      "sha256": "410982aa1926f6eb8027946ba24cee9d4f9001302512c2a04de89cc27ef6c5b6"
+    },
+    {
+      "path": "continuum/repo/ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "bytes": 21734,
+      "sha256": "9a48629b15e7154bb07dcbc81ccab2b78e31030dd47e83e5f66b21ab1af4373f"
+    },
+    {
+      "path": "continuum/repo/ADMISSIBILITY_RULE_NO_MASTER_CLOCK_A_NEIGHBOUR_DETERMINED_SCALE_COVARIANT_TICK_RATE_OBEYS_THE_LATTICE_LAPLACE_EQUATION_RECORDS_ENTER_AS_ADDITIVE_SOURCES_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "bytes": 12205,
+      "sha256": "fe403d12e816037d29b567f06d7a39cc8533372b15b339d360612315be24bf5d"
+    },
+    {
+      "path": "continuum/repo/ADMISSIBILITY_RULE_THE_RECORD_GAS_DOES_MAKE_THE_CHESSBOARD_WHEN_A_RECORDED_BOND_COSTS_A_FACTOR_BELOW_NINE_OVER_62500_AND_THE_TWO_FRAMED_STATES_DIFFER_AT_EVERY_SITE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 26937,
+      "sha256": "833e90780f57fc8d16e7be168af40098d1418186559b56d3810798b9e692096d"
+    },
+    {
+      "path": "continuum/repo/ADMISSIBILITY_RULE_THE_STRONG_FIELD_EXACTLY_BODIES_AT_REST_MAKE_THE_CLOCK_LAW_LINEAR_IN_THE_ROOT_OF_THE_RATE_THE_LEDGER_IS_A_SURFACE_TERM_BOUNDED_BY_A_CAPACITY_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "bytes": 30861,
+      "sha256": "58a8085fa0930ecbf13751e95b39d8e6960192455b62a0e5e1b50173775f6071"
+    },
+    {
+      "path": "continuum/repo/CLOCK_AND_RATE_COVARIANT_EXPONENTIAL_RACES_RECORD_LEVEL_INVISIBILITY_FOR_ORDER_BLIND_RULES_AND_CLOCK_SENSITIVE_HOLE_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md",
+      "bytes": 23386,
+      "sha256": "912fc564bd59fc0928a902589a284b579603c747aecd4d35dd26a5b9c261b606"
+    },
+    {
+      "path": "continuum/repo/COMPACT_ROTOR_MAGNETIC_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-16.md",
+      "bytes": 15997,
+      "sha256": "e8c663da092edaa23ac9c3e9794534211d72de84fbcbbb8f4b3cbf8467350638"
+    },
+    {
+      "path": "continuum/repo/FINITE_CLOCK_STATIC_CHARGE_TRANSFER_HAMILTONIAN_AND_PATH_COMPARISON_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "bytes": 23326,
+      "sha256": "7e8dff1cb419d492c1f9487f663c2392abac96c94bf1c349ceb095f752bdd04c"
+    },
+    {
+      "path": "continuum/repo/GAUGE_WILSON_ELECTRIC_DOMINATED_VOLUME_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "bytes": 24452,
+      "sha256": "a5df21b019b0ec35fce30bccced5c85862595235c1c9aa28779a3574fdc979f3"
+    },
+    {
+      "path": "continuum/repo/NATIVE_GAUGE_TRANSFER_DIMENSION_DIVIDED_WILSON_SECOND_ORDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "bytes": 10296,
+      "sha256": "5b90632f073740993145c9a21b637e0f275339af249efe4420a0f2f79df3a1b0"
+    },
+    {
+      "path": "continuum/repo/PERIODIC_FINITE_CLOCK_VILLAIN_COVARIANCE_AND_OBSERVABLE_MASSLESSNESS_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "bytes": 42216,
+      "sha256": "bfedf452ec4e5b4b19c7099cb4c5e7ebc69aca4198fbdfba1c8788647ddea237"
+    },
+    {
+      "path": "continuum/repo/SQUARE_ICE_IS_GAUSSIAN_AT_LONG_WAVELENGTH_AND_A_ZONE_BOUNDARY_EXCESS_MAKES_THE_SUM_RULE_MISS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 5790,
+      "sha256": "a9442a000c8d0011d7dd570860adeea5e43b637b850982eb5c1c53c0160fed37"
+    },
+    {
+      "path": "continuum/repo/SQUARE_ICE_ON_TORI_SMALLEST_WAVEVECTORS_SIT_ABOVE_THE_CONTINUOUS_CALIBRATION_AS_ON_THE_STRIPS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "bytes": 11997,
+      "sha256": "ad82b78faee5b572f021b9c59ef41c2ca263f550c98577d5c0b171c588952c54"
+    },
+    {
+      "path": "continuum/repo/SUPPLIED_RECORD_LAWS_AND_COMMON_ORDER_KERNELS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "bytes": 32648,
+      "sha256": "750bdd27065ef957228c7316996d6a9cfcb5af19a5407309e532e9c1edc6fce0"
+    },
+    {
+      "path": "continuum/repo/UNIFORM_ICE_STATIC_PHOTON_STIFFENS_IN_A_BACKGROUND_FLUX_AND_SATURATION_LEAVES_SQUARE_ICE_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "bytes": 7486,
+      "sha256": "1c39b5dc2f508267d007dc180928eea25e18cb30717e49fd3099aeef2bcbcd05"
+    },
+    {
+      "path": "continuum/repo/WILSON_SU3_GAUGE_TRANSFER_KERNEL_POSITIVITY_BOUNDED_NOTE_2026-05-30.md",
+      "bytes": 23136,
+      "sha256": "095d6aeaeb8a71e20e29e98c8e7423e41526288ff0678b467e05cc9953fb3635"
+    },
+    {
+      "path": "continuum/su3_kernel_quadrature.json",
+      "bytes": 2161,
+      "sha256": "616d16f0b4a65e60975008b52a5832ba3c518313a5b573be11601c3c6914d820"
+    },
+    {
+      "path": "continuum/su3_kernel_quadrature.log",
+      "bytes": 2162,
+      "sha256": "44809bdf7aa436077b669a8023a24b8668129c9b6f7d83ce886ea32dda45746e"
+    },
+    {
+      "path": "continuum/su3_kernel_quadrature.py",
+      "bytes": 952,
+      "sha256": "957f559c625c69d1f583a72758198f01c25c1b3e9df5aa7adf3c91467b50d982"
+    },
+    {
+      "path": "kinetic/RESULTS.txt",
+      "bytes": 43054,
+      "sha256": "5aa044e3457684c5a6f94fdc1f8795082053cdb29f77b400329ccdc01b63617c"
+    },
+    {
+      "path": "kinetic/collision_trajectory.npz",
+      "bytes": 82950,
+      "sha256": "80d2d57672d1a48ca136aa273e1da5b1f3651808c20bde1455a10193aec4cb46"
+    },
+    {
+      "path": "kinetic/echo_composite_check.log",
+      "bytes": 1692,
+      "sha256": "3cf0fea9dbd05ad3d38209110d931dbfeb550d9a3ec5e11253f284769b9a3baf"
+    },
+    {
+      "path": "kinetic/echo_composite_check.py",
+      "bytes": 2545,
+      "sha256": "a8983f4bb2fece54c666ccd8f1b8200b9160f6bcc313ed960b7bc3ab06afe357"
+    },
+    {
+      "path": "kinetic/echo_composite_results.json",
+      "bytes": 1692,
+      "sha256": "3cf0fea9dbd05ad3d38209110d931dbfeb550d9a3ec5e11253f284769b9a3baf"
+    },
+    {
+      "path": "kinetic/exact_checks.log",
+      "bytes": 9328,
+      "sha256": "4ec6047c1d0d85da2c774e55eacf9b7f1b62a47f6c89cdc23715f98bdbacb15a"
+    },
+    {
+      "path": "kinetic/exact_checks.py",
+      "bytes": 16368,
+      "sha256": "4e2bee32e3301ac5edfc4a37780d3037df4f7c57ee139af2466a7ae9555e9cac"
+    },
+    {
+      "path": "kinetic/exact_checks_results.json",
+      "bytes": 11913,
+      "sha256": "33c9e7b7512b21c6302d72b12ae6f1c3a18142557bfe0318d89d77c4b32d04a1"
+    },
+    {
+      "path": "kinetic/external/lean/docs/119.md",
+      "bytes": 1369,
+      "sha256": "402cb8d3a1043a4f7b4fe44983b258ca3d8e05a85642c55f92aacd403054ab9a"
+    },
+    {
+      "path": "kinetic/external/lean/docs/145.md",
+      "bytes": 887,
+      "sha256": "ea72c0ad0646b0b425402ab4a0ccaa7f4aab5df3c1e0c71101f3ae5411fe04d9"
+    },
+    {
+      "path": "kinetic/external/lean/docs/149.md",
+      "bytes": 1150,
+      "sha256": "97e1aa0f5884acd7606bbd374be3b038ecfd0425ffb9ba74981eb035e83ef15f"
+    },
+    {
+      "path": "kinetic/external/lean/docs/227.md",
+      "bytes": 4377,
+      "sha256": "ecacd9dd0af0bf4f53804288815f2b6d286dcfd2abae45f11b0de7a99ab3f863"
+    },
+    {
+      "path": "kinetic/external/lean/docs/229.md",
+      "bytes": 1429,
+      "sha256": "58030cb8b8a8b994f80e24a9d3f34788081ef8a1bcc90d7bb777ade0ba25d5bb"
+    },
+    {
+      "path": "kinetic/external/lean/docs/273.md",
+      "bytes": 1117,
+      "sha256": "78e1bacfac6f4ffe223e3607912563c718c0840d2775304db9ad192ad9ff1259"
+    },
+    {
+      "path": "kinetic/external/lean/docs/374.md",
+      "bytes": 1138,
+      "sha256": "db319fc02b2a12ef2e60b7322c24b50f1ff41c16366da563da9dc9b3f11d0fa5"
+    },
+    {
+      "path": "kinetic/external/preprints/A-Capacity-Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026/README.md",
+      "bytes": 701,
+      "sha256": "4508d25d64debce5697317415eb19277ec2e52e7843395d1e64047274b364d20"
+    },
+    {
+      "path": "kinetic/external/preprints/A-Capacity-Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026/build/main.tex",
+      "bytes": 29229,
+      "sha256": "0e73632ec22fb64a26e0d0cda579d7b670bf3a75379b1b2747e0a919a6ad2ffd"
+    },
+    {
+      "path": "kinetic/external/preprints/A-Capacity-Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026/build_tree.json",
+      "bytes": 742,
+      "sha256": "d9680c4551bb1a67084a586d2de6b21d41ff13af293b1f67d1ffdec9af826297"
+    },
+    {
+      "path": "kinetic/external/preprints/A-Capacity-Criterion-for-Four-State-Potts-Reconstruction-on-Trees-October-5-2026/listing.json",
+      "bytes": 4412,
+      "sha256": "fe359048dacde40d75c8d1bf46e4e6a17dc5be446026163ca30507823d752535"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/README.md",
+      "bytes": 780,
+      "sha256": "7f5adb927bfae3d0f2b1e4579c96a6eb007bf81d2182fb5c506245f36b4e9684"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/figures/proof-dependencies.tex",
+      "bytes": 2568,
+      "sha256": "aca661c4f4bcbfaeb82d6c94a4e433946741d2778b1665106429a8e2d78a7a98"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/glyph-mappings.tex",
+      "bytes": 3293,
+      "sha256": "be1a92d9e89f75bef7e07e2c6eefacebf353706b3f75c4cb28218a0d33e836b4"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/main.tex",
+      "bytes": 2512,
+      "sha256": "bce695b915a2727affdbbbfed1eb4497d6f3e6cb91be3f50b09401ed4d703690"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/01-introduction.tex",
+      "bytes": 12203,
+      "sha256": "6b737533c3be85eed78ccee2cc3503eb812ac746cac2a55147cb5d4f0b4324f4"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/02-calculus.tex",
+      "bytes": 16975,
+      "sha256": "f6b7662baa97360a3d64a0d6d4e3adcd21115750957200420cfacaea89914de8"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/03-critical.tex",
+      "bytes": 33407,
+      "sha256": "7578a33ef76216413bd90e43d10572ada8451ff41e4aba80a2dc66039735242b"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/04-prediction.tex",
+      "bytes": 32916,
+      "sha256": "a16bb5a0a20ce15682f662c0289778f5f3192dab271ca01e43d95aabebc8ceb0"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/05-hierarchy.tex",
+      "bytes": 35276,
+      "sha256": "55e335e9fced832970acde472e21bcf2ab4724fb150d7536e35f437c5fcadd5f"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/06-matrices.tex",
+      "bytes": 37291,
+      "sha256": "8531578f2cacc3c9e33e27483a7b4bf230579b727981064f3c4e1ace7d85d8a1"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build/sections/07-observations.tex",
+      "bytes": 41568,
+      "sha256": "eed2817d82f03649d1b7384968e309083b7aefcf6155b1a1aa779d3048e27867"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/build_tree.json",
+      "bytes": 3821,
+      "sha256": "e27f1c6a6eddecf73712b44fdc519d50e606257f21c42bf3cf5a57240f185ca9"
+    },
+    {
+      "path": "kinetic/external/preprints/A-dimension-free-logarithmic-Sobolev-inequality-for-subgaussian-log-concave-measures-September-23-2026/listing.json",
+      "bytes": 4688,
+      "sha256": "b0ed862705096de95fba6921fdf46d2708a9e3ca4c0c29d801e661a69e253dc3"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/README.md",
+      "bytes": 741,
+      "sha256": "15f3973d83b91ab9552c73cd70d03e735d410f0f3921f50c5eb61d70556f02ac"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/figures/observation-flow.tex",
+      "bytes": 1941,
+      "sha256": "8b3b914444a7f4ec48ec268351c8399f4b6bc0c87b77503baa2acb4eb6e19d0f"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/main.tex",
+      "bytes": 898,
+      "sha256": "4a9eb17c2de9ab70b31d914c2ec7c77d875fe4baeeb1f291c30ef19bd7bdd1c3"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/references.tex",
+      "bytes": 6808,
+      "sha256": "e2636ddc2f88a36ad5300a3613f7397d4038745cdf83a296542f800f8bf9b04c"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/consequences.tex",
+      "bytes": 11429,
+      "sha256": "a8faee69b8fc408587a84258c1d8660bf7c7cba55582d3cae5d9a7eded58e261"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/entropy.tex",
+      "bytes": 12092,
+      "sha256": "f24d708d1258482770977ba46661a0ff6743f138357f3b63c1ed36499c73e027"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/introduction.tex",
+      "bytes": 13324,
+      "sha256": "2886869df810e8be186a86b7e598357bbc1b960848ffd86fd3352e0436c904ee"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/matrices.tex",
+      "bytes": 38040,
+      "sha256": "dcc5cf4333aa39956798bd936acd290024592912f8ed1f21d894af3cae2ca76c"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/observation.tex",
+      "bytes": 9841,
+      "sha256": "5739220c13e7455daf84af20c2cafc62fb7bdef671fe22c417e31a91a2764b38"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/residuals.tex",
+      "bytes": 47839,
+      "sha256": "6e4f027e4b762cd65b68406144417ea79ffa46de557b6d347b970ec24fb7d09f"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/stability.tex",
+      "bytes": 51774,
+      "sha256": "c9b2d7f04bb10eece997a83d7cf3308bf7da8acec9b3582605bc90cfa360173c"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/terminal.tex",
+      "bytes": 16905,
+      "sha256": "72f4b89077dff71b9bc1287a9d1b878fc9429a0b42edf496fba5701d4cd31a97"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/style.tex",
+      "bytes": 1542,
+      "sha256": "480adc91631d48b6b994bf372cc40f09b0b70b18ef9ba5af754119770bee03fb"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build_tree.json",
+      "bytes": 4071,
+      "sha256": "ad5ca97c905a9a12cffff949090d996f8fc1ac9119e5cfd5875695d787e53c87"
+    },
+    {
+      "path": "kinetic/external/preprints/A-spectral-gap-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/listing.json",
+      "bytes": 4545,
+      "sha256": "c4a6f2e14d8ed554e5710714807436b6184f54ee045d81dfa7189a6e6b099092"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/README.md",
+      "bytes": 695,
+      "sha256": "2628bde4a13644d326cca8a3a7b5c6291e132c2c47de1d453f8c253aa38378fe"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build/connection-figure.tex",
+      "bytes": 3586,
+      "sha256": "8e60060a1b2f352d9cbd01ac0c92d72c24033c3a0f21785e7208abec43f1e75b"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build/introduction.tex",
+      "bytes": 10426,
+      "sha256": "8cb1dbb5ec25cd6d4f9cb1588421361645109bbc2d59a4de40496b11cbd9a1a4"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build/paper.tex",
+      "bytes": 1698,
+      "sha256": "5344c8d90a835d826ee37ef1192a5dd3c9c4c6681efdf5ecb583eece5914fb78"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build/references.tex",
+      "bytes": 6279,
+      "sha256": "5b42873a4a5d850d83e503c3a58571f53e0a47d133deffa422d185ea4a901103"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build/sections/connections.tex",
+      "bytes": 11787,
+      "sha256": "40f5d9e75deb2e3ce0162292773c3d2723fba09bd471fbd1b0406f67cf1f07d0"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build/sections/mixing.tex",
+      "bytes": 6583,
+      "sha256": "2ae5d39072839a4c922105e927f70ab912478d324b7e1f2168b6a3ca440644b5"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build/sections/proposal.tex",
+      "bytes": 16067,
+      "sha256": "0c9e4c50c60bbbbccdfb45947637e9e1904621efce73b8ba924d8bed43a3c619"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build/sections/reverse.tex",
+      "bytes": 7590,
+      "sha256": "46a02b8c100c5d6654f957ef1fc82573984e3f60f452ad8380227ad1dd822000"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build/sections/scalar.tex",
+      "bytes": 10264,
+      "sha256": "2098cc0339307757db326648653217ce040a94f2eec90b4fe3c3d8e0f110a61d"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build/sections/setup.tex",
+      "bytes": 1881,
+      "sha256": "2f23004645206d17094f79e86efdef014566cd6777aa8c7243459a0fa9dfe8fc"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/build_tree.json",
+      "bytes": 3241,
+      "sha256": "3c91bef6fc314b7ee2dbe7a984e2d384cbc778ff15d299d3e3f895daad66d8da"
+    },
+    {
+      "path": "kinetic/external/preprints/A-typical-start-upper-bound-for-low-temperature-SK-Glauber-dynamics-September-24-2026/listing.json",
+      "bytes": 4399,
+      "sha256": "ebd5f9f9803c879c3295dc92131dcb5da3ad2c75922bf3e71fd43cae4385d135"
+    },
+    {
+      "path": "kinetic/external/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/README.md",
+      "bytes": 679,
+      "sha256": "461dccbb1ed432f1e70a60ca9fcc099fb2a9c1512cf39a2ee6e83326678e61fa"
+    },
+    {
+      "path": "kinetic/external/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/figures/interval-gluing.tex",
+      "bytes": 2046,
+      "sha256": "e2e780f61026f8199d1841b6684ac972dc77defe9a656d6fe379c59e3fb5e63e"
+    },
+    {
+      "path": "kinetic/external/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/glyph-mappings.tex",
+      "bytes": 3217,
+      "sha256": "4a6e001f1e3a60bd64f0927bef0d57729861f65845807f0c3082591d98ca0016"
+    },
+    {
+      "path": "kinetic/external/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/paper.tex",
+      "bytes": 1907,
+      "sha256": "0c08adc7a817150444508026a59ff9f8e25d491f4d2c91639f73f5abf0cb88d0"
+    },
+    {
+      "path": "kinetic/external/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/01-introduction.tex",
+      "bytes": 13338,
+      "sha256": "04cd2c4b3d8991748385bfb7d50e3c3815ba4b1c250e38c95f8e672151c8c06a"
+    },
+    {
+      "path": "kinetic/external/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/02-affine.tex",
+      "bytes": 15974,
+      "sha256": "15977542a40ca0da44a9e242b71fe94a325ca2eb8dc7dedd47802dcbc2385cbc"
+    },
+    {
+      "path": "kinetic/external/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build/sections/03-dynamics.tex",
+      "bytes": 19028,
+      "sha256": "df33be267c63470aa2ee876bb09e50c44074d0001ab2dadb957f8482d75172a1"
+    },
+    {
+      "path": "kinetic/external/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/build_tree.json",
+      "bytes": 2666,
+      "sha256": "756c355a6916c62e07306ac890f2f368b389abcc8faf02d81cd638aa6a8cc843"
+    },
+    {
+      "path": "kinetic/external/preprints/Boundedness-and-persistence-of-weakly-reversible-mass-action-systems-September-25-2026/listing.json",
+      "bytes": 4416,
+      "sha256": "49f302525b3c29ce2123dbf2a98900288e8314c71ed7d4b2a26979d9ea942088"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/README.md",
+      "bytes": 623,
+      "sha256": "4a86a42f00f9a1dbc6bd2e78da6ed18bfd78546d356aed2ec76e4f65e46a35db"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/paper.tex",
+      "bytes": 1216,
+      "sha256": "9b1e81631eddc68c5c1d8e79ba4a953acf4ea727627acaf6c4b381b32f0677c1"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/preamble.tex",
+      "bytes": 3590,
+      "sha256": "b5df9fc9f43047feb7f4547c3939e16134e7393f595cc985c1cbbe5b52d0773b"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/accepted-inputs.tex",
+      "bytes": 5201,
+      "sha256": "79976ceb7560eed4afd4f16b422fb20c65fe1db60c0e45979c730b21b1d7389b"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/cap-classical.tex",
+      "bytes": 70929,
+      "sha256": "929d9823bd914ab271b9527b5ab2b45fbe71d6f19687d0a1b2bc9ae8835ad8e0"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/cap-entropy.tex",
+      "bytes": 44522,
+      "sha256": "2fabe680c27c65aa7f2cc66e5a0efcc73e1d23c5ece855807388edb1cf1c6369"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/cap-initialization.tex",
+      "bytes": 54653,
+      "sha256": "b1cf11275d242218bef53af9aaa8d76a3d84033d312942f894cfb8703a4b901c"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/cap-multiscale.tex",
+      "bytes": 59280,
+      "sha256": "c6ac08862fcd0e1f0d8ea859f36fdcebf8c94cdbb0cd8ff93610964de2da33e7"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/cap-static.tex",
+      "bytes": 43594,
+      "sha256": "369f079380d0478649dffc52767b5c5cdd5f79bc40b96ae138b9b368398d43ee"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/dynamics.tex",
+      "bytes": 12952,
+      "sha256": "d6b4c413ee2891be147bc6f3a824477f70a15ab65e72d02920bd82277f2ad9ed"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/introduction.tex",
+      "bytes": 12377,
+      "sha256": "4ed5afcf012ad15abe2b21d9db5f3c2152809431996e505e31ebaff886b7ac02"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/model.tex",
+      "bytes": 4215,
+      "sha256": "5480d813e03f73442059bb9b66bcc728da8f5028ee49e7bde02052ba0baecaa2"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/profile-amplification.tex",
+      "bytes": 63720,
+      "sha256": "4bfe7c7eb6de46c2fb16db4870ea99141dc32c4f78bec584db0c1bdea505fbd0"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/profile-entropy.tex",
+      "bytes": 30532,
+      "sha256": "a3d8df5af30c38cce7aeb9153b38544b205bcce7aab9cac53a41aac4fa620687"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/profile-local.tex",
+      "bytes": 78479,
+      "sha256": "810af3223063744c973849e3d9b3cdeba10c1745b662efbc6e2ef96dccd80175"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/profile-matrices.tex",
+      "bytes": 19244,
+      "sha256": "a6562b9c818092099f9388ce18100378931c2db0d971493d037e91f2ca34c4a2"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/profile-orbits.tex",
+      "bytes": 15695,
+      "sha256": "8556c23f91e3d76c902b41d9f1be3515b37666b7287761d3931f56c769b0a8f1"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/profile-positive.tex",
+      "bytes": 75046,
+      "sha256": "ebd88228f80bb9c49a85448202fc59075ba00be5931832d56db44939f0f5cece"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/profile-roots.tex",
+      "bytes": 23778,
+      "sha256": "8c906f8c2dc75b702b775ceb607503602b38ae224735aaeadf36017170eae51e"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/profile-spectral.tex",
+      "bytes": 63420,
+      "sha256": "fe0b7d135804e7f59f0255ea5475d9ad4b0af4323852231c23af98538f669e6f"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build/sections/proof-overview.tex",
+      "bytes": 13623,
+      "sha256": "6b324759c9ba08198ad2d0358c77bbbb91eb2a54424072ba6a3aee0097cb9e74"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/build_tree.json",
+      "bytes": 6457,
+      "sha256": "4015eeca856742777ecea68ee4d73197d14ab73072947e676b64b4383882c1be"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-mixing-in-the-Sherrington-Kirkpatrick-model-September-25-2026/listing.json",
+      "bytes": 4145,
+      "sha256": "1acb65e21c00ee5248120ffdfe6bf7b4012738ba7d7af9dd98542db7607b9155"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/README.md",
+      "bytes": 653,
+      "sha256": "47b376d24d3ef42d45d0234cb10cb27cd2ea8104e15a441eff64d3cb8f1b8862"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/build/figures/proof-structure.tex",
+      "bytes": 2164,
+      "sha256": "0be5af7877bee432835a6d18f791b5702654ca8aea5b08341ba519d4d42e967d"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/build/paper.tex",
+      "bytes": 4448,
+      "sha256": "c31c9529d620e511079f1d8771362dc5f983cf3dd4db9bf3d1973b5c59a47a5a"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/build/sections/dynamics.tex",
+      "bytes": 22320,
+      "sha256": "fa3a7f6c93ac24ea32f24516b58e275a725af8845788e62163b6e62b29defeeb"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/build/sections/introduction.tex",
+      "bytes": 14223,
+      "sha256": "406f21750d7b48d0b48eb9922169f1451246051a9224a136dd347a4f5aa0f887"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/build/sections/model.tex",
+      "bytes": 4974,
+      "sha256": "6abd3b0b37778ae636a1208a6b19fd7b71c991289307dbef16b7f4ce2c615d1c"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/build/sections/orientation.tex",
+      "bytes": 23484,
+      "sha256": "d41cf968ba019a5bc5eaade945c829f4aa3de78269b7c212a3034546dac3c935"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/build/sections/specification.tex",
+      "bytes": 3408,
+      "sha256": "8b73c2c8643db4fa79fd4d8464f0bb16895be0c84baea7847b3e8fa7810637e0"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/build/sections/spectral.tex",
+      "bytes": 22561,
+      "sha256": "f1edbd8e0a44fd2064e28b6843ca6846bc9c494fceb504980320cdc70c907661"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/build/sections/spherical.tex",
+      "bytes": 20854,
+      "sha256": "3dc54d7cd8c8f36502ddfab8b1475dec551988ea307556b2511270c3ab2e56a8"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/build_tree.json",
+      "bytes": 3517,
+      "sha256": "69495211d370b660b6c12942df174103f1892a6eb9c4c622cd4f2f2463c8726c"
+    },
+    {
+      "path": "kinetic/external/preprints/Critical-slowing-down-in-the-Sherrington-Kirkpatrick-model-September-24-2026/listing.json",
+      "bytes": 4246,
+      "sha256": "4649c2daa786cd1c63019ef56f270658e407e9cf5b9f13f3e55d02636ec65969"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/README.md",
+      "bytes": 702,
+      "sha256": "8d7657ccd304eb946afc3849b8c8859892cb379650ab3521b276ed101f304c96"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/appendices/clock-comparison.tex",
+      "bytes": 7696,
+      "sha256": "8afea0c301b76964815c52a8fd383dc012847e3a8179d89af67c23fc07e1d6fa"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/appendices/comparison.tex",
+      "bytes": 39963,
+      "sha256": "a6eb7f5d96bb12d5adc9e7c10023b56465cae98565b76b906749bce8bd60a960"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/appendices/cutoff.tex",
+      "bytes": 18721,
+      "sha256": "8072f2d103c09406b3cab30cda864c7de0a7bc5be9b0418d3c85da7ecf180ffe"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/appendices/dynamics.tex",
+      "bytes": 16029,
+      "sha256": "74251d8558dfe6bd885240eb46978ed7601b217be1c6cdf295706dc5deae0509"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/appendices/entropy.tex",
+      "bytes": 26311,
+      "sha256": "9a2a4c75c74321743079829f0d7872754c7179e8404f85217c9c138ac38918eb"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/appendices/gradient.tex",
+      "bytes": 12679,
+      "sha256": "4160f03d72b5890f80dd92995ae4348e9bd373b875d867025f59480088bbef9a"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/appendices/introduction.tex",
+      "bytes": 3646,
+      "sha256": "07800833015fa72bbf980b256d2021e1d52590cb228c63e2e1f7837fb7a72fb5"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/appendices/scalar-certificate.tex",
+      "bytes": 18316,
+      "sha256": "b6e8f0c8689eeff9954731c19bc14449604aff36ae2513e66d708dc745bcc538"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/appendices/scalar.tex",
+      "bytes": 19509,
+      "sha256": "847bafff28f156840aebc736758523c19570d913339774205029cb26c2f207fe"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/figures/marked-continuation.tex",
+      "bytes": 1635,
+      "sha256": "586776d980c170bf5376972a53f1edd7ee73fe0306227f8740ed51e841580012"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/figures/network-pinching.tex",
+      "bytes": 1548,
+      "sha256": "db2259a04e0e6db3d5bd340659b98af929ba2060d1d9c9a9c960df7cdacac356"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/figures/proof-dependencies.tex",
+      "bytes": 1589,
+      "sha256": "d502054364a4474486389abf9a45118fc29764310e751b6f3e50bb7b4cd407ab"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/paper.tex",
+      "bytes": 1316,
+      "sha256": "cae331a1c56d439b5f3d2cf2682ea23db2d6042f596ceb02d0ae54909f60b578"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/preamble.tex",
+      "bytes": 2849,
+      "sha256": "1a4f681c1f64ff0cee35b26f661c78b9d37563d43212410a501f9c0607730fa3"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/01-introduction.tex",
+      "bytes": 14321,
+      "sha256": "da85ec3824aaf200eef450894bed91efbf0df938a9e2e6b5fb82b6d09fa1316d"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/02-model-inputs.tex",
+      "bytes": 10371,
+      "sha256": "260c687fa6586ddaeb156fb754e7ed4ea96cec766022bb334b1a83da1057bf82"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/03-static.tex",
+      "bytes": 48200,
+      "sha256": "b37ac6b00e2dd117ca3241119c1034ce50e18ba40da06059c6746b0a403f9e97"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/04-gradient-path.tex",
+      "bytes": 45146,
+      "sha256": "f8777e15bffdeddf128fee330445b1f0d155a88074f7044bf6824c31f2533ebb"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/05-gaussian-calculus.tex",
+      "bytes": 68630,
+      "sha256": "a0e308ed239e862ae53b06b4620938750f815added8eafc4d9ccca026b6e0e7c"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/06-row-spin.tex",
+      "bytes": 43973,
+      "sha256": "5049e5f992509af83bd4d50462f249d3fa8c8cf1b4abb8b5cd86a611293d88cd"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/07-hidden.tex",
+      "bytes": 56418,
+      "sha256": "d93f18c66d10afb26a662dc8fd190be70f3b97ab64340eca9b05641ae00ceb8e"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/08-exact.tex",
+      "bytes": 52196,
+      "sha256": "5014ed55ed830854452902310251e09ce8282e01a4cc96f974d478fac2ab944c"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build/sections/09-cutoff.tex",
+      "bytes": 48256,
+      "sha256": "7f946a458f5e0e77956dbcc588e05e10fec05534fddb79fc11a48638238ab58f"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/build_tree.json",
+      "bytes": 7805,
+      "sha256": "12981cf8c37ff406088d0af52fcd16ecbed6f34a87ca3c48df8bcee84d1adcfa"
+    },
+    {
+      "path": "kinetic/external/preprints/Cutoff-throughout-the-high-temperature-Sherrington-Kirkpatrick-phase-September-24-2026/listing.json",
+      "bytes": 4417,
+      "sha256": "c164a28ef3985d02244edfd737d1720cb4b0ac62c7c5a70c69429d78c0404d31"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/README.md",
+      "bytes": 669,
+      "sha256": "82b9e482c2d88030329459ee496dd9f5c52f3f68ab7d09c5efaabe8aa9f6f9fe"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/figures/spectral-cap.tex",
+      "bytes": 1324,
+      "sha256": "a2114a395f4452f5a45f7ddb6c4878d51c6db0d6a1eadf98461a6f03148907e8"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/main.tex",
+      "bytes": 1154,
+      "sha256": "e779fd7d5d55ab4c7f85642bc7fd8394e0e3ced1658e23892bea78877be8007b"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/preamble.tex",
+      "bytes": 1659,
+      "sha256": "d5a4b06e7d23e1189d61c58ac6a0bcd4b249123fe35815a2de1e49b299ae2f88"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/sections/01-introduction.tex",
+      "bytes": 11629,
+      "sha256": "0af3f93a7203d455cbc1ce7aff16c9014f2343adf954677ed7a619c095dedd96"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/sections/02-edge-law.tex",
+      "bytes": 29440,
+      "sha256": "90b765b9a79fa289c4ce832fd5e52ef6f3506fffa4452fe2e7872d737937904f"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/sections/03-observations.tex",
+      "bytes": 23546,
+      "sha256": "4793e02d16e2cf03e482734dad44956a03b6aa977b239652f11d4c5bad3fb322"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/sections/04-variance.tex",
+      "bytes": 23178,
+      "sha256": "b192a31eaed9b0ee0b1f5b1f72a1cedf1a668788594bb82a82c471c5e4d08f83"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/sections/05-gradient.tex",
+      "bytes": 27926,
+      "sha256": "d6427caeae0172aa6be3d4ff9409cb73f1aa83dfd3a9f8ea8701a6b7de308cad"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/sections/06-microscopic.tex",
+      "bytes": 47699,
+      "sha256": "6201624f7608e44a7b0c233903bc397160ca2ad0a9661be5e4a8f3a52909ccbf"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/sections/07-trace.tex",
+      "bytes": 15451,
+      "sha256": "93f786eb007c1e7d3aaf556e6b2d2d5ae91ac61a40fb5a1a0e2320a032170be6"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/sections/08-comparison.tex",
+      "bytes": 21627,
+      "sha256": "4f967edee018fee7d408c1ddb3f2187c4694cb2471192d67a06452ea8034d19f"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/sections/09-functional.tex",
+      "bytes": 13588,
+      "sha256": "35ea471f2b13d1bde30660e38357ff918ffbc35a93ec90360bc8e9265e0276d0"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build/sections/10-support.tex",
+      "bytes": 12952,
+      "sha256": "ed8aa1f0059636f3b5f81e4ef9eb5e0381316dcdf36370128f6c33e227c69f52"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/build_tree.json",
+      "bytes": 4668,
+      "sha256": "9839f05f4e1b48080d713955e804e158b6785828992bdb8f164bd63ab7e3bd2c"
+    },
+    {
+      "path": "kinetic/external/preprints/Functional-universality-of-critical-SK-autocorrelations-October-5-2026/listing.json",
+      "bytes": 4305,
+      "sha256": "a266c03543b72675be121095d8b3da18e9c7a30a7813767cad4eed34d7170426"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/README.md",
+      "bytes": 1365,
+      "sha256": "5430c1bcd0d10602c467bb0ae53dddbd54fd822c98cdd7af5ef2f00df3af34cd"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/SOURCE-LINEAGE.md",
+      "bytes": 1562,
+      "sha256": "7c465440e4d1930f9f1d1681a7dee198c2c862f7da10df9f2f9f54559f0d09f5"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/figures/proof-regions.tex",
+      "bytes": 1818,
+      "sha256": "ad972a66dc52f1abfe3fbc0416b90fdf3c1f1d947e595449a747491de95f3ecb"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/main.tex",
+      "bytes": 10094,
+      "sha256": "b286e05e0e9321c4a0cb925734a078b127e9d8694e8fccc5d4f6a484bfb0347b"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/arithmetic.tex",
+      "bytes": 5600,
+      "sha256": "e175c68e2674f88282ddf06d0ade02b765f3489d49e31608ef3fd061cbfddc8d"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/central.tex",
+      "bytes": 23653,
+      "sha256": "4299dce6a51124a18754cbd964adfeeded192d145ff78d5518dce6067a63f860"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/conclusion.tex",
+      "bytes": 3080,
+      "sha256": "237d7117ffcbe2357436a7a7106821d71278f27d54be15b598ede1e9482e2761"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/continuation.tex",
+      "bytes": 5134,
+      "sha256": "e66a6045882baf985dd9ea7569ffed62b9ee3b716c90a7f6f8f3b4c15bde5521"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/induction.tex",
+      "bytes": 13596,
+      "sha256": "1a8ce2bbd7dd38bec9c688cbc9b626abcd21218065ff0caf06dc91842ee3d9cf"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/intermediate.tex",
+      "bytes": 19441,
+      "sha256": "6449ecf10b7bd68bd4a7b8ea3eb0d640ddd176d9d37379695272ea28b02d4664"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/large-bias.tex",
+      "bytes": 17181,
+      "sha256": "12e31ef806052b4c6cddcb519e6bcb56d14439a9b2d90aca72077a87485a7d83"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/preliminaries.tex",
+      "bytes": 1879,
+      "sha256": "d1d8b9f19f7a3813de9caf75ad9a2a288bec75dce8804abce00aa556b5fa8fe2"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/references.tex",
+      "bytes": 4886,
+      "sha256": "2e57a8f32d33e9f4895c4debc8879f4e81417b73294b81e44ecfa40ce10d1f98"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/sections/scalar.tex",
+      "bytes": 39523,
+      "sha256": "8b7936e2e2aead6a7f10a1d9fe283d2b9345be59ab93278c5e875c80cdff73e5"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build/supporting/typography-mappings.tex",
+      "bytes": 1732,
+      "sha256": "d7ec677b39df35dc522cf73aaa1ab8dc05f76a3419efe1f0013e8621cf38b2f1"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/build_tree.json",
+      "bytes": 4640,
+      "sha256": "e4a76091f304a18ddd936cbeb85e1c633a92c260b906ac50f6085fa71a2b695f"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/listing.json",
+      "bytes": 7041,
+      "sha256": "1debbf7e62db506418fb1912d89de00c9d102cc08edc8aab97f1e7503a56b6b1"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/verification/README.md",
+      "bytes": 1539,
+      "sha256": "a7ba6c6c45759facfd33e99c420fed56282e680c742af895309951e4cd3dfa6b"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/verification/data/profile_tables.md",
+      "bytes": 182,
+      "sha256": "dad851286c7aa3b16ffc85aeb948733bff2eb33b5b61da982d56654593d347e8"
+    },
+    {
+      "path": "kinetic/external/preprints/Hellinger-contraction-with-arbitrary-Boolean-output-bias-September-24-2026/verification_tree.json",
+      "bytes": 3787,
+      "sha256": "497a63c25e107136f31283ead1071cf21f7d4afb32aaa2c5c89e700db50cd70a"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/README.md",
+      "bytes": 698,
+      "sha256": "87b726bfeeb54facd9befded62bf27425887a6290fe8bc4e464ae7e8803568bb"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/figures/square.tex",
+      "bytes": 1185,
+      "sha256": "612ec646d065435d11af1592aa005bd457031d26fc4db90d3bfec65fd96025d5"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/main.tex",
+      "bytes": 2511,
+      "sha256": "b5845110548f538c476d0d8d981cc3deab5b0e8df294125f763de2c62296eb65"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/sections/channels.tex",
+      "bytes": 14073,
+      "sha256": "0256d0d6f7966b95b96a17f84462891f345ed503b239070046d830304a233032"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/sections/correlations.tex",
+      "bytes": 10385,
+      "sha256": "e58e451b3290966757a6263ad2c4e8f1e2cf5eb48139b61b7ebf74000eedb7a2"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/sections/inputs.tex",
+      "bytes": 10571,
+      "sha256": "c734c3336f55582556863e419983983405ef90b99218f70c4ab7477d93cdeb91"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/sections/introduction.tex",
+      "bytes": 5908,
+      "sha256": "143b7c0839372544863dab5b70c1b0bca66f6b4876d73c56c945be7bb12eb244"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/sections/packing.tex",
+      "bytes": 9110,
+      "sha256": "bd1f4856c207aff455046be19bc1f19e5bf77deb4203f2a768364f41637d33bb"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/sections/selected.tex",
+      "bytes": 16137,
+      "sha256": "2a0338f808b7d93c98f4d2beb400082e83628f584a5c60a1e3e0d9ec921daeba"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build/sections/square.tex",
+      "bytes": 11913,
+      "sha256": "068d972333248fc07c4595c65dbdee0b89c7a8428800a62bfcf52fa9cddb74d0"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/build_tree.json",
+      "bytes": 3499,
+      "sha256": "9cf8ed8504357ef70472d45e68a342682327b0d2b88146ce1cf9a059254e1472"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-Multiple-Ergodic-Averages-for-Mixing-Transformations-October-4-2026/listing.json",
+      "bytes": 4403,
+      "sha256": "509192e619674ec6718846c80853a8f7f0273f749f6eb4d9566c059e777a9565"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/README.md",
+      "bytes": 799,
+      "sha256": "3a843282787054f0b827acf13813214ae96718293ddcaf1460fce500e8c3cd94"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/build/main.tex",
+      "bytes": 2255,
+      "sha256": "db4dbcfcd77d7a8c54945717d835c3567ae973959054b1a1c1698d4e3d9bebbb"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/build/references.tex",
+      "bytes": 5738,
+      "sha256": "26ca75e6be822c09a812ede6952cf0180c09ca9e229cc2c639bc8c49796c0be1"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/build/sections/01-introduction.tex",
+      "bytes": 8579,
+      "sha256": "e563727079f92722e8f7065778db2cab4265fbf24aefe1bdf4d8cf195c1919f3"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/build/sections/02-structure.tex",
+      "bytes": 13542,
+      "sha256": "a78063051320156ba7864319d03581661eb27b7cc3c496ac0894807521e30d84"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/build/sections/03-selected.tex",
+      "bytes": 12401,
+      "sha256": "ca596758ad1e8d0d34ba094fe047cff348e424d54784628c38de9466211b0f17"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/build/sections/04-packing.tex",
+      "bytes": 10115,
+      "sha256": "fa7a928d814bd9b4a8cbd76486278b79eeac90f14f9b61c958533ae7e9c0706b"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/build/sections/05-channels.tex",
+      "bytes": 15382,
+      "sha256": "c64776fbb28e306406ef877807b3eebf6c9eda63d9396c769e0b66fabb8c4b72"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/build/sections/06-activation.tex",
+      "bytes": 25036,
+      "sha256": "222e7b3edbc86cb9b995bcd4718eaf47e2ad46fd98c458ee3b785fc1905ccef2"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/build/sections/07-lower-length.tex",
+      "bytes": 35788,
+      "sha256": "4010577a06970f1ba0c456c4c897c5476d794a5b4bd32021232c03be4f3c8d81"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/build_tree.json",
+      "bytes": 3001,
+      "sha256": "5eaf9e25850683b7196c06cd8ed418b5762bc94de8547bac5452e2ef11bf5b70"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-fourfold-ergodic-averages-for-mixing-transformations-October-4-2026/listing.json",
+      "bytes": 4658,
+      "sha256": "22a61e4dc090d6c2779c52eba742f23ecc2e7e02623a5afb7f5618611523971b"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/README.md",
+      "bytes": 825,
+      "sha256": "bb0a746cab540c583cb34f44ff16a78200aebebaadc7ccb21e8836b9778290dd"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/figures/frozen-depths.tex",
+      "bytes": 900,
+      "sha256": "4ea8d3265b5aa65d9b89e025fd551c25b38aac2ccec11443f319a30402da2df8"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/figures/row-chronology.tex",
+      "bytes": 1178,
+      "sha256": "878d1886eb95bca7c3947a59daa3fbf43b0193ca4d1926c57655642f02b03178"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/main.tex",
+      "bytes": 1189,
+      "sha256": "07dd546f48403e85f851c491582eb704b2595631d1de679aa1a506555038b0cd"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/preamble.tex",
+      "bytes": 1817,
+      "sha256": "f37de871fa72417524317659944ecf81aa7e0b3780f361f72bbf8a9b38975f2a"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/sections/base.tex",
+      "bytes": 65172,
+      "sha256": "fd2963978d23bae95b56b50a35bb70d0bdbd189ddac6084322028610a2e19c1e"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/sections/completion.tex",
+      "bytes": 10377,
+      "sha256": "909c1c6d466d77735dc7540909da9b96ebf0c8b2069cbaf9a3d9dd3c29e10f08"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/sections/ergodic.tex",
+      "bytes": 21399,
+      "sha256": "2e9800f93de2387341af43a51694e13700a199d6bc15333916d53da08451a2f4"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/sections/introduction.tex",
+      "bytes": 9634,
+      "sha256": "89aecfcc7c15361892dedfec02ebecf97d623305c6f8677a3db5a3944bd9946c"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/sections/localization.tex",
+      "bytes": 67179,
+      "sha256": "271499745e01698b87975bc5b183d5be9023bd823c4b5b51792434b90008657e"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/sections/rows.tex",
+      "bytes": 35552,
+      "sha256": "09a3b62e0ef71d814cfd57b6ced296c2b24e96768b29ac9e86c1da80b9e86054"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build/paper/sections/transfer.tex",
+      "bytes": 20285,
+      "sha256": "c40966b29faa8c0c451e354631c35df78e93d495bf1f05a66b1288769c3d4b5d"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/build_tree.json",
+      "bytes": 4395,
+      "sha256": "f75dfbe42a6e2516add1e8f38b95237ee490108fabc6fb97d6e9534da4b6ce03"
+    },
+    {
+      "path": "kinetic/external/preprints/Pointwise-convergence-of-triple-ergodic-averages-for-mixing-transformations-October-4-2026/listing.json",
+      "bytes": 4841,
+      "sha256": "e28dde77e9f5488d2a5105febf0be0279d700a08bd58efbc4f3b06194046d736"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/README.md",
+      "bytes": 663,
+      "sha256": "e302007f4899866a922f5d5acab6658b84f514a07e9ac74a97bbafd9294ec102"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/figures/operator-square.tex",
+      "bytes": 1955,
+      "sha256": "6f7659da7625f1c0ca0a2f4bfad42779ed149e9734d3e50334ed84bc1fef360d"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/main.tex",
+      "bytes": 880,
+      "sha256": "602e12b4a7a3a17fdbd1a7b890b321607c444bb1b59988c808dd86906b079bcb"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/preamble.tex",
+      "bytes": 1441,
+      "sha256": "84a84004ddc89b69f575276fee4d8799e46c1e03b9486a45a9b234d6eaf0ae99"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/01-introduction.tex",
+      "bytes": 10779,
+      "sha256": "88914bccc2fac68b930898a6a5587287ad07d0be7fbec9423931f8f71ddea35a"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/02-reduction.tex",
+      "bytes": 6722,
+      "sha256": "b147db462eab6acfd092f34200534bf18c5937edd283a77f0c533fe9f81e7f52"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/03-arrays.tex",
+      "bytes": 27510,
+      "sha256": "5e7187cda7d67769e7ce1d87716256edd6ddb15467e644042be546f713388777"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/04-operators.tex",
+      "bytes": 30872,
+      "sha256": "ef965821906b6fa095c6c75c91473641e537cdbe7dea072e223fe17df374e76f"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/05-labels-blocks.tex",
+      "bytes": 35534,
+      "sha256": "391011f566ef8406b64d28e0acfa19cb21f537c34f33d6314b0e493d54d9ee9d"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/06-cancellation.tex",
+      "bytes": 14781,
+      "sha256": "1a3b1fa6b356f6c40799c045af30f67cbe52dc5cfc24fd6684b48d7a9f397d24"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/07-main-proof.tex",
+      "bytes": 2105,
+      "sha256": "4cff5e04f9065e6c55bbd81e854dcf560591e0b15f3ccb944126da5bb84aeb61"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build/sections/08-consequences.tex",
+      "bytes": 3714,
+      "sha256": "d0199b629c986c068d8e13122bdf77bd879f610793d8fd741bcd6cf079083603"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/build_tree.json",
+      "bytes": 4102,
+      "sha256": "9489cf97e1c1bcf239b87d04eeed87cc52a20d820acbb0504d4e58eb213b1e68"
+    },
+    {
+      "path": "kinetic/external/preprints/Rokhlins-multiple-mixing-problem-for-one-transformation-September-23-2026/listing.json",
+      "bytes": 4195,
+      "sha256": "10cac54d3a1ca1358d57f5b03ec1d0075c6cdeeef8b9c3eb48431217b592ed9d"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/README.md",
+      "bytes": 548,
+      "sha256": "6a9edf8accb9bc366d580abee0a219b08345832199b9be3e8e9722e93d9e30fd"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/main.tex",
+      "bytes": 2089,
+      "sha256": "ef5cbe7a62fc9af17fc12cc08c79cedd502fa4b40655b91fc30f04d48e5d39aa"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/cells.tex",
+      "bytes": 10119,
+      "sha256": "07eafd506c35c3e2e2708ad204b25e5b43e9659c1f66305eedb29cd46fb24f4e"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/finite_stability.tex",
+      "bytes": 6883,
+      "sha256": "3e6c2bd10771632ab75122be0cc716fe17c13a43bf4dafb54feef22190f33d4e"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/gradient.tex",
+      "bytes": 10271,
+      "sha256": "9ea85375b635fd322e71cb7c87cfc015cff8189b2b64fef3a5dbb7a12abba377"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/introduction.tex",
+      "bytes": 8775,
+      "sha256": "73d98e5f63dc7d89b91ccb5f47737458a84a463288651ca83ae02f930c9c8b60"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/moments.tex",
+      "bytes": 9617,
+      "sha256": "f428b7cd342c95f197954b7ce5ce5d9b688b279a716424492be581a51beb9c17"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build/source/sections/sharpness.tex",
+      "bytes": 7662,
+      "sha256": "2c1682fe0dc4bd8da5883760a909271382ec2a63ef68e8334b5491bb0985c902"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/build_tree.json",
+      "bytes": 3003,
+      "sha256": "985b3390021186b01a1a6d2d48b8dce549adc585d4660729e1c74840298e28ee"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-One-Third-Stability-of-Brenier-Maps-September-25-2026/listing.json",
+      "bytes": 3971,
+      "sha256": "82bef8ca32656f31bc92df63f01c4472cd8e210abca1173a0b14beac44d1159f"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/README.md",
+      "bytes": 643,
+      "sha256": "0e82e66c549753a9362cacf618d7a60883c03ffba06ec88a8e0d47be075b8527"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/figures/reflected-core.tex",
+      "bytes": 774,
+      "sha256": "2b2720249b7f9bf93e579b180833ed3f1cd3aed0cc992f8bf2a64a8adeeecc41"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/main.tex",
+      "bytes": 14721,
+      "sha256": "ad04285e5eaa23a9b7a897f4501176e13f139bb04811c91576d5cc717cb5f8ca"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/canonical.tex",
+      "bytes": 11851,
+      "sha256": "fc449aa1321ed2fd73b4791311a6f61f4de16a99609021e3a94ebcbb381a0ed7"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/capacity.tex",
+      "bytes": 3530,
+      "sha256": "f0a33b2ce10a3055f8333bf817e779417be9819b3acf519008bc26ce07c9f53c"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/flow.tex",
+      "bytes": 4772,
+      "sha256": "9065dd3bd4bf33f66547e58c0a39c5841103f48d134cbe9eea392ec5289653c1"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/reserve.tex",
+      "bytes": 9689,
+      "sha256": "2b4c8b10712f4c15a4e3787c9e0f9687d6020110987f50b1612a3139f221171c"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/scalar.tex",
+      "bytes": 6808,
+      "sha256": "03b64ba1af8ce45b6d4670c0cf919abc119838e9624e06c5c0e2c720032007cb"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/thinning.tex",
+      "bytes": 16065,
+      "sha256": "c52291a2068e607bf09e56761a6e8c0c6ef75b24c3d33385f45899f7a4b96cc8"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build/sections/upgrade.tex",
+      "bytes": 9423,
+      "sha256": "2c0d5677a9dbc7a070dea066b50ceca5e0655fa1beb9cddb0d5f312274a09947"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/build_tree.json",
+      "bytes": 3494,
+      "sha256": "a43d1c92eba8dfb4508d5e6f73f2effd312b3a8888ae03f359e0d0ce1e0a3d88"
+    },
+    {
+      "path": "kinetic/external/preprints/Sharp-binary-information-contraction-on-the-discrete-cube-September-24-2026/listing.json",
+      "bytes": 4222,
+      "sha256": "13226de3392966067f97e64884c8e3c9f2661b3aa8027cd1bf10df7d4577c17f"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/README.md",
+      "bytes": 659,
+      "sha256": "33f889b6d1ed9c4865223fdd0522e08fe6b23b69b18f4beeec6408cf5e7f7577"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/appendices/fixed-depth-crossing.tex",
+      "bytes": 20188,
+      "sha256": "79646b4589becf61d14faccc64219317d2645b0786294912950849de5908ad2f"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/appendices/polynomial-coverage.tex",
+      "bytes": 12315,
+      "sha256": "64dc7ec2aa6907f4efb8674cbdb9952a310ccf8fc8e0980bdb633bdfd3ceda80"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/figures/narrow-increments.tex",
+      "bytes": 2402,
+      "sha256": "9a3eae51883b8ba0564c346e17498849fb44bb26b9228b791b46981192059882"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/figures/protected-block.tex",
+      "bytes": 3113,
+      "sha256": "60115bd188a6f61fee482cd8873b8e8030fe908c6cfa8bccdbf66e31da9a5caf"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/main.tex",
+      "bytes": 1119,
+      "sha256": "f5e4f4b3f849ab8ed616d3fe1e17243a2d68de2a00896ace1c37d88afe1e4da0"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/math-glyph-unicode.tex",
+      "bytes": 2868,
+      "sha256": "a98331f4a923d51f5e876e9d6db1c4cb59ca62b9d4fcdb1d1fdc982e3aa1e634"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/preamble.tex",
+      "bytes": 1472,
+      "sha256": "9ef2e44b84e5e9a9d821da45184efb1a57688c531fe6f3c48cb2f04f95121f32"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/references.tex",
+      "bytes": 5483,
+      "sha256": "5841ff63695db9792cbdb2986d0a05fd420ccc2a357afdc10e49f93bbbb5642e"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/sections/01-introduction.tex",
+      "bytes": 14550,
+      "sha256": "3f1d23d49efbf3800d638a2f6f690299539c82adaee6514cc03d8705c0e79e08"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/sections/02-gaussian.tex",
+      "bytes": 35145,
+      "sha256": "c724ea216dec5c5fed349f5e543aa078253f65d59b1695d64b8e4093bf343cad"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/sections/03-scalar.tex",
+      "bytes": 25193,
+      "sha256": "c275606fdd36a0ed8152474a070d90d480f6fe0df55d6bdd5951cbd5d69e510f"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/sections/04-locking.tex",
+      "bytes": 25437,
+      "sha256": "711551cbed2943886697f33989ee74593c5e06cf5ffe0b54b3d512c77aa2799e"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/sections/05-energy.tex",
+      "bytes": 5722,
+      "sha256": "ae3c21150a4f78a5a00c19f8cf1a57009b268bae0ef5c69fbc8e20f54f48c9c5"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/sections/07-coverage.tex",
+      "bytes": 8948,
+      "sha256": "12eeb23e6b7c49fa27ef9adcf83aa5756188d8417755e9e8542997024741af62"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/sections/08-narrow-locking.tex",
+      "bytes": 27339,
+      "sha256": "a41eda5db46934f574348be1cf7c0d34660e31b2192608aee231e10de0e3530a"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build/sections/09-dynamics.tex",
+      "bytes": 24363,
+      "sha256": "3711befe02a614119344903301f4742c1522b890831338bd74cc7cf3bdca6e8c"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/build_tree.json",
+      "bytes": 5507,
+      "sha256": "8290096accfe9667c19b4c41252f2892e437a108381c3b37df87af0389231c6d"
+    },
+    {
+      "path": "kinetic/external/preprints/Stretched-exponential-barriers-for-typical-SK-initial-states-September-24-2026/listing.json",
+      "bytes": 4280,
+      "sha256": "4566c76ef7c49d51ea879608dda20beaaf64a01d91d5aacda2bb36b25026e2ea"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/README.md",
+      "bytes": 1817,
+      "sha256": "8f64fd7c923f96185f9a080b30389330c914d548a1fcf1bf6c95046a99aab68f"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build/main.tex",
+      "bytes": 2389,
+      "sha256": "0035893bb6aaffa5083321dac8572eac86bca4cc0b135b6ad91d2476d42e43ca"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build/references.tex",
+      "bytes": 3586,
+      "sha256": "927c8cac24dd671e8015c45644c9b086888dbe84598c61d29eaef88b4f4c3c0c"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build/sections/01-introduction.tex",
+      "bytes": 7571,
+      "sha256": "abc566020e54b794078ed8aa30b4db577a5978d1ad736de17d523e2f23c70395"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build/sections/02-experiments.tex",
+      "bytes": 6384,
+      "sha256": "68099107ef8d7096841e53be71467f6f3c07710afe53a600c277fe6272a668d1"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build/sections/03-cone.tex",
+      "bytes": 5668,
+      "sha256": "c5a7a96a2c337de4ca67b9c6d40ac8b6051367220881ff7f3e786a51bce87250"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build/sections/04-tree-decay.tex",
+      "bytes": 5900,
+      "sha256": "bdd1843e9595875097407ab3e06400b6c4e3f91de511ac648a3ec00fc4a364f7"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build/sections/05-polynomial-certificates.tex",
+      "bytes": 14359,
+      "sha256": "00ac158765605d801bbb1e8a51a8df32e2d95948273f6ac025a71d7652c7486b"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build/sections/06-finite-verification.tex",
+      "bytes": 7101,
+      "sha256": "a28c28ca311b64494893f2b51eaf9e1e93bedea15a0ff55f57e3a769bc18ea8f"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build/sections/07-code-appendix.tex",
+      "bytes": 7270,
+      "sha256": "66d3dfeb8a5dbaa41d6cc8bbe8d5801856c5bbc63e40f1a2db7fedae885494f6"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/build_tree.json",
+      "bytes": 3022,
+      "sha256": "4fb1798e7bd234a8adae2aeb80e65ab4395c6b524942ca9527639a478bc1a7a9"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/listing.json",
+      "bytes": 5905,
+      "sha256": "5e3f67c6e2573834a2046412906cb6f4d3bbf83dc4d085d3ea8e39ea36272bb6"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/verification/review/original-solution.md",
+      "bytes": 246,
+      "sha256": "e4a45b9d13d5e6c484c887656a4aa0fe9cfa4088c21bc27b70e23d73a915c6a2"
+    },
+    {
+      "path": "kinetic/external/preprints/The-Reconstruction-Threshold-for-the-Ferromagnetic-Four-State-Potts-Model-October-5-2026/verification_tree.json",
+      "bytes": 5226,
+      "sha256": "425c4fc2a6e582080ac76b9b0503c29ecc004fcbf74ad7bfe6b3277364f3bf19"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/README.md",
+      "bytes": 540,
+      "sha256": "eda66bdd56073660e5b73e2fe2b67b6d12b02ee4b924f056809f872341ec13f7"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/build/main.tex",
+      "bytes": 2091,
+      "sha256": "1ba3e5ae51dde8f6904a4357d24fd3c607df7068e968c22f5093a265a4b151fe"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/build/references.tex",
+      "bytes": 10047,
+      "sha256": "b1d9bd029c81911737c86788e86c2dd2dd3aa4a66d3f0c758cf17d98e3577827"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/00-introduction.tex",
+      "bytes": 14680,
+      "sha256": "e9aacce4cf725d58cd99276a76c989adaee998706a3ffab2a2c0676b506ffb04"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/01-preliminaries.tex",
+      "bytes": 8072,
+      "sha256": "b683c666a9d88280ad831e4065aaf89fb3de43d2098ae987a8ce0267765d5128"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/02-interpolation.tex",
+      "bytes": 17881,
+      "sha256": "fa0efd354ad4de0c006c259d638bb443e8d2a67b66aef372881379521ddf04ee"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/03-minimization.tex",
+      "bytes": 18021,
+      "sha256": "1c8b906076233a4457610751d47ca3b884116c48c003dbaef336aa59e4228d5b"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/04-metric.tex",
+      "bytes": 12252,
+      "sha256": "78647b07afec54d8bd45dc7afd6ead24ac2bd8c5e903ff5bd51cd6b2029c60cb"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/05-stationarity.tex",
+      "bytes": 11701,
+      "sha256": "f0e23fdd40c3a25deccf1faf0df0f60d5374208018876cb571e57df908abf717"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/build/sections/06-broadcast.tex",
+      "bytes": 13395,
+      "sha256": "8b49b01e89082d32db44272db91b675f74a406dacb1b9c07e7abfcec50eae8b8"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/build_tree.json",
+      "bytes": 3013,
+      "sha256": "851b774a3a5682600c4196dd3cde6ef721c9ea6a7638abfff0b5369a41b76d90"
+    },
+    {
+      "path": "kinetic/external/preprints/The-entropy-photon-number-inequality-September-24-2026/listing.json",
+      "bytes": 3872,
+      "sha256": "b4fa962c01fa6f56dd1df5a4d8f42a62a587ddfce382d938832c810c281eec4f"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/README.md",
+      "bytes": 1733,
+      "sha256": "21d2dcc132e82c2c2a71860d8540a19bacbc1802d97fa86d06d8ca1a41307dc9"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/main.tex",
+      "bytes": 1727,
+      "sha256": "5d88a05511b6b43e274c09a72daf438a4446815d087b11c14ec76c48b6318bd4"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/preamble.tex",
+      "bytes": 1484,
+      "sha256": "499dad3501142f627c050289c5c6eae7b695a837a6a4a4590698c66eec1d9b4f"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/01-introduction.tex",
+      "bytes": 11969,
+      "sha256": "a16263f9411f12ee15138954194a86d8577b5f078608570bc5ad464249a6156a"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/02-foundations.tex",
+      "bytes": 22967,
+      "sha256": "0e95da739a293c3d936998e48dddf3feba60afc3f1b0d021554baf7e1722ee5e"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/03-positive.tex",
+      "bytes": 16985,
+      "sha256": "c7036cf9ff22b335db6e27aaa67037fdd31a47ff1e86e89386d9cf3a972c27b9"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/04-local.tex",
+      "bytes": 13195,
+      "sha256": "faa55078a370600f7cb8b9c4f7ac76905028948526317d00766eec129278de4f"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/05-weighted.tex",
+      "bytes": 11718,
+      "sha256": "e896690d5cd0642260c12de5a0ec7e2b082635a78a4ecc36d3ff98235fc31bae"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/06-grid.tex",
+      "bytes": 20815,
+      "sha256": "a2989f955efcd0891437eb77ea6f7f4305b22343f8aa6f374a667a6abe577aa4"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/07-conclusion.tex",
+      "bytes": 4686,
+      "sha256": "3dc6ed24c788e85aa61f2f7206104bc54f9885845b8e23958b11d3a39a23039d"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/appendix-certificates.tex",
+      "bytes": 7977,
+      "sha256": "febb78570d48362eac64a836f35b20541d7727dc8cd7eb13a03ab5fa7c5ad080"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/appendix-grid.tex",
+      "bytes": 8158,
+      "sha256": "fc74a91b5ec1d5dcab8bb23c0d91bdd3ca3c792f3cdc2d582c5d2bc0f0132e24"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/appendix-interval.tex",
+      "bytes": 20688,
+      "sha256": "c1bd6082f83444242bb6999c52b2fc50995d14896e44f8623e39d2dc150c9039"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build/sections/appendix-radial.tex",
+      "bytes": 11760,
+      "sha256": "09624f5ce8802263af710756862158142394a94e2be551595a108e82211ef1dc"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/build_tree.json",
+      "bytes": 4430,
+      "sha256": "b46d8d8b9e180da8aeace9fb7ea887204e254b89350c53c54b2ec1575646cc43"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/listing.json",
+      "bytes": 5872,
+      "sha256": "6419d7b4174b8b24c1b2a0976cc02e3347cf11a8504052a1be7653703ced2690"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/verification/README.md",
+      "bytes": 1222,
+      "sha256": "b869abf2dae5d6feb80d8a390ed4698e1981393a68d58cd1c78b9316702bd78f"
+    },
+    {
+      "path": "kinetic/external/preprints/The-exact-reconstruction-threshold-for-the-three-state-symmetric-channel-September-25-2026/verification_tree.json",
+      "bytes": 1551,
+      "sha256": "0470df158ad4799bc19f82c50b47ece4043aff3df4d468c5235f476586d5367f"
+    },
+    {
+      "path": "kinetic/external/preprints/Triple-ergodic-averages-with-distinct-integer-slopes-October-4-2026/README.md",
+      "bytes": 658,
+      "sha256": "cdc615e64f9daaaad77580b5e7d5bec474c08e405868ed8e0cacd8ff57442165"
+    },
+    {
+      "path": "kinetic/external/preprints/Triple-ergodic-averages-with-distinct-integer-slopes-October-4-2026/build/main.tex",
+      "bytes": 2018,
+      "sha256": "abf12fecea5cddc723b5b02828a96397574ecce96247d9515551556bfb4665c2"
+    },
+    {
+      "path": "kinetic/external/preprints/Triple-ergodic-averages-with-distinct-integer-slopes-October-4-2026/build/references.tex",
+      "bytes": 3105,
+      "sha256": "86ecb7802419c61e4a16ba2e1a71211117c9a59c72cd7419acfc702d20c4e783"
+    },
+    {
+      "path": "kinetic/external/preprints/Triple-ergodic-averages-with-distinct-integer-slopes-October-4-2026/build/sections/analytic.tex",
+      "bytes": 45787,
+      "sha256": "948b6606a1d855f85963825ed830b543146ef9896da5a831c79fc41060417dbd"
+    },
+    {
+      "path": "kinetic/external/preprints/Triple-ergodic-averages-with-distinct-integer-slopes-October-4-2026/build/sections/arithmetic.tex",
+      "bytes": 59330,
+      "sha256": "c41d1491c04d8bf527efd8375c8d45e5638836b0a0249c02e409357641634b73"
+    },
+    {
+      "path": "kinetic/external/preprints/Triple-ergodic-averages-with-distinct-integer-slopes-October-4-2026/build/sections/completion.tex",
+      "bytes": 11558,
+      "sha256": "db3e9979864eeeda829500d3834b65e413a793b8c0039f9d88697251c90b52e3"
+    },
+    {
+      "path": "kinetic/external/preprints/Triple-ergodic-averages-with-distinct-integer-slopes-October-4-2026/build/sections/introduction.tex",
+      "bytes": 7241,
+      "sha256": "1917c6b7018f3a22c41770a1623d1e73d0cce8b14c98f748d573da9965cb7877"
+    },
+    {
+      "path": "kinetic/external/preprints/Triple-ergodic-averages-with-distinct-integer-slopes-October-4-2026/build/sections/local.tex",
+      "bytes": 7027,
+      "sha256": "5f504d04242fc94342ca5400ab122b6137b6d05bf8909cf1c29ae0aa676f4341"
+    },
+    {
+      "path": "kinetic/external/preprints/Triple-ergodic-averages-with-distinct-integer-slopes-October-4-2026/build/sections/transfer.tex",
+      "bytes": 24955,
+      "sha256": "785faff5256be07e5214d882ee14df889f1a79165d9519682610dcc39465c8c1"
+    },
+    {
+      "path": "kinetic/external/preprints/Triple-ergodic-averages-with-distinct-integer-slopes-October-4-2026/build_tree.json",
+      "bytes": 2691,
+      "sha256": "69c3f5f1938e44b627622acf38be48566c2d64d178654393a09d3aa5ce27df22"
+    },
+    {
+      "path": "kinetic/external/preprints/Triple-ergodic-averages-with-distinct-integer-slopes-October-4-2026/listing.json",
+      "bytes": 4268,
+      "sha256": "08df85de9f2d4181f53da4644514313bd0460451229c4c9973bece44d9eff023"
+    },
+    {
+      "path": "kinetic/external/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/README.md",
+      "bytes": 653,
+      "sha256": "4104df10767c86b5ec8f5563228afcf16ce2239b324c9a8203f54588d2577327"
+    },
+    {
+      "path": "kinetic/external/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/figures/intervals.tex",
+      "bytes": 1711,
+      "sha256": "271e9828355573da70f6f078d33e7361f666104e5d79ce66114fbc66f5db2993"
+    },
+    {
+      "path": "kinetic/external/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/main.tex",
+      "bytes": 2146,
+      "sha256": "41b36a8d9101d2f366f9994a26f718f7355f49db0ce23cd0ffecbb8d40d69063"
+    },
+    {
+      "path": "kinetic/external/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/affine.tex",
+      "bytes": 12836,
+      "sha256": "28b8628ce97517025e22d1ac18eabbef39d0b4384f3aa7bad0463b3025d8bec0"
+    },
+    {
+      "path": "kinetic/external/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/introduction.tex",
+      "bytes": 9880,
+      "sha256": "73122c3242d7cdcc86a4d50fc3169e1ef79ade9fbf8b0316f0ebd64cec288bb5"
+    },
+    {
+      "path": "kinetic/external/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/permanence.tex",
+      "bytes": 3136,
+      "sha256": "83ee9746f17f60fa04d74940d47b91b6caaf14c1abb3efc912714e243ebd6479"
+    },
+    {
+      "path": "kinetic/external/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build/sections/trapping.tex",
+      "bytes": 13444,
+      "sha256": "c076318b4fd3ef4b310a74d6302c5a1bd382e2ba180d439f0201c7e7daba97cd"
+    },
+    {
+      "path": "kinetic/external/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/build_tree.json",
+      "bytes": 2654,
+      "sha256": "600ce2b0a8be3997f7c1f2dbc0639b73bb1ff352c5892d1a3fe03fe3b91e865f"
+    },
+    {
+      "path": "kinetic/external/preprints/Uniform-Permanence-in-Weakly-Reversible-Mass-Action-Systems-October-5-2026/listing.json",
+      "bytes": 4247,
+      "sha256": "4587280c002736a8c19cf622912d473b836bc82f00fd48c72a41516073f816b0"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/README.md",
+      "bytes": 774,
+      "sha256": "a4c14568d623077c0cd615ca909ce5e22e7f92ccfabc35210e13194ea6087ef6"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/main.tex",
+      "bytes": 3060,
+      "sha256": "b9870e43832431e7dfc6663665f387c3ae0a1a377df6083e76a7297f44850f3a"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/01-introduction.tex",
+      "bytes": 14040,
+      "sha256": "74f1f9b2cdcf4713accdd9634672bc042d7e81415d8e476d66dcafd8e2e56f9e"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/02-background.tex",
+      "bytes": 10610,
+      "sha256": "a257b3c979b55b522e42a5c2b09cd428682ee74a5a1d331d557139fdd8df319b"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/03-edge-estimates.tex",
+      "bytes": 84577,
+      "sha256": "dfe5063afa2ba2b1ad9c4c6fd7904e0b40aca9e03750107f96c1adcf89cb8479"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/04-warming.tex",
+      "bytes": 68042,
+      "sha256": "becde177de388d862dd97bdc51800911454ca00b66f21e74d03cd9e8eb0c8f35"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/05-gaussian-limits.tex",
+      "bytes": 41851,
+      "sha256": "8892e90057a74bff0d7ecd6568dfbbb97d02dc99dc2d26127ea16ba700f738c5"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/06-entrance-selection.tex",
+      "bytes": 51424,
+      "sha256": "79e00d2bb69db570968dbc2fc9fff2a1acbcbe3eeaed9023a3d04b15efcd94a2"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/07-history-cutoffs.tex",
+      "bytes": 35152,
+      "sha256": "7331f85135815cd7d7b0fcadce7445488f94380d0b3c2475f68b8eab62cd2006"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/08-clock-scores.tex",
+      "bytes": 39927,
+      "sha256": "ded65613e28c7e3e8e84c1427a108b39efe39640e554002a84a6a42f054f295e"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/09-replacement.tex",
+      "bytes": 47028,
+      "sha256": "68ee6c2caced86e01bb12c1b2004407ac0fb5ac4626d6943293e81ae9f42da85"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build/sections/10-completion.tex",
+      "bytes": 2564,
+      "sha256": "5284eb568644a1f255540d49ca49346c4ba84fb35b0a0337d9495274a0771627"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/build_tree.json",
+      "bytes": 3894,
+      "sha256": "16ee4a305fa1466ac7554617439b80d0e58a2921ae7d4f2cae4ff248e3da5a7b"
+    },
+    {
+      "path": "kinetic/external/preprints/Universality-of-critical-quench-autocorrelations-in-the-Sherrington-Kirkpatrick-model-October-5-2026/listing.json",
+      "bytes": 4647,
+      "sha256": "4f75bc9b7740acd24451d6e26927e636a2581f91c2279c7117242fba9c038a49"
+    },
+    {
+      "path": "kinetic/families.json",
+      "bytes": 31712,
+      "sha256": "37c18ebc479293ee4b712f36a00261a5878fa032f441c378150d50c48b02d34e"
+    },
+    {
+      "path": "kinetic/fetch_sources.log",
+      "bytes": 195,
+      "sha256": "2a0b297e4f31a71d90ab47e0d0faba5594f91299abea133b9994b3ef098184c4"
+    },
+    {
+      "path": "kinetic/fetch_sources.py",
+      "bytes": 2558,
+      "sha256": "9cacfc2771930b190599ffa0717f307ed410b218d805047fd04507d8616eaead"
+    },
+    {
+      "path": "kinetic/fetch_sources_extra.log",
+      "bytes": 193,
+      "sha256": "d785fdd5d6ba019610ddb4255fbcf94268e14aad593adb4ead19813e0a222a22"
+    },
+    {
+      "path": "kinetic/interface_checks.log",
+      "bytes": 3743,
+      "sha256": "0e37794ccf08ceceff113e59d382b4e8dcfdf283fc16455e336abc7d8dd25a3d"
+    },
+    {
+      "path": "kinetic/interface_checks.py",
+      "bytes": 7199,
+      "sha256": "74acaaef5fa95c223cd6d7d9263611b780de6bfc4b14ea176cb7b5cb16106c2a"
+    },
+    {
+      "path": "kinetic/interface_checks_results.json",
+      "bytes": 4091,
+      "sha256": "068c6d9216396ec45ab990a96d6346b02b71d8c04d4ab59ca4d8e111510b3b97"
+    },
+    {
+      "path": "kinetic/repo/docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+      "bytes": 29001,
+      "sha256": "38d4121f57b84241c1ca8c87d2396a08e1d4c34e554e65ac797ee70e55138d9f"
+    },
+    {
+      "path": "kinetic/repo/docs/ADMISSIBILITY_RULE_RE_RECORDING_AT_EVERY_TICK_STATIC_LAW_STATIONARY_LIGHT_CONE_BILAYER_LONG_RANGE_ORDER_GREEN_FUNCTION_RESPONSE_CONDITIONAL_ON_AN_EXCLUDED_CLAUSE_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+      "bytes": 34260,
+      "sha256": "2a48708ba534cee105abed3bf28203128e43013e1adb29a3b211671def4505a0"
+    },
+    {
+      "path": "kinetic/repo/docs/RECORD_POINTER_BROADCAST_CIRCUIT_INTERFACE_2026-06-05.md",
+      "bytes": 5131,
+      "sha256": "64b1a89f6bd35427b38c623d1f9408566ac475da8478e02f217de97c9ce620f8"
+    },
+    {
+      "path": "kinetic/source_downloads.json",
+      "bytes": 72209,
+      "sha256": "6cd2922c3b948cd4d4d9c3ab4dfd5e02733d74b5a4e497a9e309ce70348de9d5"
+    },
+    {
+      "path": "kinetic/source_downloads_extra.json",
+      "bytes": 23486,
+      "sha256": "2785a37d0c02687068224b5d4c584a67cc1234a14a977aa8ae337c78af1b772d"
+    },
+    {
+      "path": "kinetic/source_manifest.json",
+      "bytes": 260187,
+      "sha256": "f9b09459fa16248d4835ee442ab46546125d7d8ad49b868a473f5e8eeff0003c"
+    },
+    {
+      "path": "pxp/RESULTS.txt",
+      "bytes": 22317,
+      "sha256": "e067b14741facb2bee1d3705fdaa79eeb1dc834132dc0140ca31eb6a86c2ae8f"
+    },
+    {
+      "path": "pxp/certify_seeds.log",
+      "bytes": 2956,
+      "sha256": "61c706beda9f9e5999caedd69c19348bd356230fb4914442d7b5fe49b364c867"
+    },
+    {
+      "path": "pxp/certify_seeds.py",
+      "bytes": 6690,
+      "sha256": "61c945a097bd96c07a9f8bb408e3408fd84a260ef5a4575282e46ed3f2741a71"
+    },
+    {
+      "path": "pxp/check_transfer_and_dictionary.log",
+      "bytes": 4983,
+      "sha256": "abab4fe4ee2ee67ada8ea26f74c912a12a7f991b86cc21ee45f08a3107a7b8a9"
+    },
+    {
+      "path": "pxp/check_transfer_and_dictionary.py",
+      "bytes": 5045,
+      "sha256": "ec74b6702efd43845e6f64e884d0417b324a0ba2543ecaa10340a015b0e297ec"
+    },
+    {
+      "path": "pxp/exact_moments_L12.json",
+      "bytes": 17016,
+      "sha256": "1f91febff510bc12a1852bad3d9ca8baa16cd33a0a1a3782ade63be197159192"
+    },
+    {
+      "path": "pxp/exact_moments_L6.json",
+      "bytes": 11841,
+      "sha256": "9db581f12437b265281bb2fbea101d95fe37b745529154521353cfcb203cf193"
+    },
+    {
+      "path": "pxp/instructions/CLAIM_STATUS.md",
+      "bytes": 16216,
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35"
+    },
+    {
+      "path": "pxp/instructions/DELIVERY.md",
+      "bytes": 16454,
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": "pxp/instructions/DISCOVERY.md",
+      "bytes": 30709,
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": "pxp/instructions/abstract-algebraic-core-extraction.md",
+      "bytes": 2147,
+      "sha256": "9d0acc81d7637e0e13d05100f00ff3c088d6c1304ea263eb9c7069e44e7cdb68"
+    },
+    {
+      "path": "pxp/instructions/assumption-import-audit.md",
+      "bytes": 7718,
+      "sha256": "7c08c7a6ef4fe7d88dced9397f87625fbc74394f85e96968d4d4e23c39830283"
+    },
+    {
+      "path": "pxp/instructions/literature-bridge-protocol.md",
+      "bytes": 1615,
+      "sha256": "29edda5688fa04cb742ee524522b35dcf41d790d5c49fc46c5b4b1517f0ff5dd"
+    },
+    {
+      "path": "pxp/instructions/proof-search-governance.md",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "pxp/instructions/route-patterns.md",
+      "bytes": 5313,
+      "sha256": "5abc25e17d71bdc9850c514d2b0431b54d5eade724ff04338bc91fd2e1b3c763"
+    },
+    {
+      "path": "pxp/prior_art_search_0.txt",
+      "bytes": 3010,
+      "sha256": "98b5252e1c6728d2fe170ac25e39052640e37643de18c2cb1ac3b99f98715920"
+    },
+    {
+      "path": "pxp/prior_art_search_1.txt",
+      "bytes": 123989,
+      "sha256": "ddedcea4ec071739af705c9ae9c6bc81fef1be28b4fc7563715fd7ae8505fba8"
+    },
+    {
+      "path": "pxp/prior_art_search_2.txt",
+      "bytes": 44135,
+      "sha256": "04ba316bfebd88260a14c39b87b691c76813bff9a57f1f59abdb524f3bf6f575"
+    },
+    {
+      "path": "pxp/prior_art_search_3.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "pxp/proof_manifest_v1.json",
+      "bytes": 1279,
+      "sha256": "a381415f4ee312e8df8d91387557fef7a5cd343f44ebd0dbcedb2b687420e64e"
+    },
+    {
+      "path": "pxp/seed_certificate.json",
+      "bytes": 24212,
+      "sha256": "5dbad3b31022be08956b45da6d6504c5000c543f4cca3677a3df24e17feb32c6"
+    },
+    {
+      "path": "pxp/transfer_dictionary_checks.json",
+      "bytes": 4983,
+      "sha256": "abab4fe4ee2ee67ada8ea26f74c912a12a7f991b86cc21ee45f08a3107a7b8a9"
+    },
+    {
+      "path": "pxp_review/PACKAGING_REVIEW.txt",
+      "bytes": 5304,
+      "sha256": "6c6bcc123847446933c7092b5887d82672f67a3cc6f837e95d975f4dafd45ea8"
+    },
+    {
+      "path": "pxp_review/REVIEW.txt",
+      "bytes": 13100,
+      "sha256": "fd90cbe75df599fe68357053ff34de656ab52ed98a5cea934805f5d11c641cd3"
+    },
+    {
+      "path": "pxp_review/author_transfer_reproduction.json",
+      "bytes": 4514,
+      "sha256": "ecd4940412553a14c432b1e1ba578837f3d4eabdf031abb4ea80ce94de9d875a"
+    },
+    {
+      "path": "pxp_review/author_transfer_reproduction.log",
+      "bytes": 252,
+      "sha256": "3bb2dccc6c60006cdd4c1a30232cb235fe63812d12891da8e463054e3bf5beee"
+    },
+    {
+      "path": "pxp_review/external_provenance_check.json",
+      "bytes": 506,
+      "sha256": "3661bb4f13c8c5f844847ccfa6c6cfca03971eb8b8b9afa5d40a4effde631e11"
+    },
+    {
+      "path": "pxp_review/independent_controls.json",
+      "bytes": 3999,
+      "sha256": "1d01b2bc02a42cfbb3e6eca8a6b150907b57dd51bf1531ed9b36acf4db3812bd"
+    },
+    {
+      "path": "pxp_review/independent_controls.log",
+      "bytes": 3999,
+      "sha256": "1d01b2bc02a42cfbb3e6eca8a6b150907b57dd51bf1531ed9b36acf4db3812bd"
+    },
+    {
+      "path": "pxp_review/independent_controls.py",
+      "bytes": 11063,
+      "sha256": "998f79e216d1d55737171fcbccd6dd54f4ea57725d02a3bbda568682a0210079"
+    },
+    {
+      "path": "pxp_review/packaged_runner_reproduction.log",
+      "bytes": 57172,
+      "sha256": "fcd1833d8a9505390b05fedb91b01471d4cb3b2384c33bad925b46d57ab2026a"
+    },
+    {
+      "path": "pxp_review/packaging_checks.json",
+      "bytes": 2157,
+      "sha256": "054406ead40b91e360772828a599341fb0495c6fa8c6f5e7ec2a8dd5fe448e1b"
+    },
+    {
+      "path": "pxp_review/packaging_final_source_confirmation.json",
+      "bytes": 947,
+      "sha256": "caf47c606b6a6add42f1f4c0b1ba5746984bb3fb662fe5aaa9a7ee0e1adae553"
+    },
+    {
+      "path": "pxp_review/packaging_mutation_diffs.txt",
+      "bytes": 1815,
+      "sha256": "f641327b1fa7909e7b5adaae9fa3fcbf6039e0245c38dd2f9312b00279c0ec13"
+    },
+    {
+      "path": "pxp_review/review_input_hashes.json",
+      "bytes": 2532,
+      "sha256": "e07f27f1c246adec8bbba3c0f72878749f45955abf692c8620e7a0e44d146214"
+    },
+    {
+      "path": "pxp_review/review_output_manifest.json",
+      "bytes": 1408,
+      "sha256": "aff33b544b6d0c09c0f0bcdf3b82c8faecc9d4b5f4103b8cbf0fdd82ce645403"
+    },
+    {
+      "path": "root/113.pdf",
+      "bytes": 617073,
+      "sha256": "1510b15725ee7e92a6c543484c6c02ce7f26347a32c1a11cd66c5890b94c6de1"
+    },
+    {
+      "path": "root/113.txt",
+      "bytes": 122332,
+      "sha256": "9ea943a7022739956a2de91c7d1c3a0dc8180363c0c8258fc3ca247a4fb0e78e"
+    },
+    {
+      "path": "root/120.pdf",
+      "bytes": 797752,
+      "sha256": "3cce6ec72ecade6973049c2b7bfd6bbac378f10e0dfdc303af666271bbb60959"
+    },
+    {
+      "path": "root/120.txt",
+      "bytes": 282385,
+      "sha256": "b379f34e74ba47f22ff2f1b596ca0cfac755288cf69da7c957eaf41abadf619d"
+    },
+    {
+      "path": "root/PR_BODY.md",
+      "bytes": 4744,
+      "sha256": "f35234f776f676d6ab12ba7194b95122b1f951ed2bad2b4a864d13bc1ae7c052"
+    },
+    {
+      "path": "root/RESULTS.txt",
+      "bytes": 12689,
+      "sha256": "94d30e2a899d77a2847b7bbf95ef8a34632f95b0cfc77f557c6fccd435838e2e"
+    },
+    {
+      "path": "root/checks.json",
+      "bytes": 3531,
+      "sha256": "a11ccfb4315afcdd48d5feb14f4405a58d024eb38a0c4bca80b63b66405213f4"
+    },
+    {
+      "path": "root/checks.log",
+      "bytes": 472,
+      "sha256": "48bc4d2ab37e0f5ba04978492467550f587448d9573602661ec0644772b3a7fa"
+    },
+    {
+      "path": "root/checks.py",
+      "bytes": 4991,
+      "sha256": "f77f4fe33b860e05dfff480f52068c9dcede7bfe78ece9caf44ce39684d29900"
+    },
+    {
+      "path": "root/citation_graph_build.log",
+      "bytes": 281,
+      "sha256": "e65ace47f3652d717e1b133ac9f4d9af3fec9f760bdd13dd386fd98d0c5ce982"
+    },
+    {
+      "path": "root/commit_paths.json",
+      "bytes": 1817,
+      "sha256": "a612b9049f0c5bc371de8d1bf9c13d5edd0dcbeb5a5a0f05ee497d1012cb4d7a"
+    },
+    {
+      "path": "root/external/204.pdf",
+      "bytes": 547596,
+      "sha256": "aa18cc9fdf4734cca86ca3a36d6a9be7544e29ca24e2700e0537c938b93d5be3"
+    },
+    {
+      "path": "root/external/204.txt",
+      "bytes": 142640,
+      "sha256": "8fb445d44efef66477e07792e95ab09131de26f6490aa59a2b99c9969f411542"
+    },
+    {
+      "path": "root/external/260.pdf",
+      "bytes": 1073402,
+      "sha256": "84ca5bc05bc907a1da73b742544fe87e6fb9d22ce263c2fbe8f84752f9e5151f"
+    },
+    {
+      "path": "root/external/260.txt",
+      "bytes": 289020,
+      "sha256": "b45f9437e0be9438ba6a26a7bf972224d9f584415f853643e7f9e70c4fceafb0"
+    },
+    {
+      "path": "root/external/262.pdf",
+      "bytes": 467633,
+      "sha256": "e88f3118d513e3133e672b809b58c6c7be43fcf09e802302ac0b569eeccd3298"
+    },
+    {
+      "path": "root/external/262.txt",
+      "bytes": 65174,
+      "sha256": "31aa3cba5ec0df6f3aaee9bb591ee54406ba0e75c8691b180eca102bf66cc802"
+    },
+    {
+      "path": "root/external/263.pdf",
+      "bytes": 840161,
+      "sha256": "5abedb3de1f8ed28c500a0bb91ddf1cc1f31d8ac4ae4aecc6b28c5cef4aeeacf"
+    },
+    {
+      "path": "root/external/263.txt",
+      "bytes": 220026,
+      "sha256": "2bdaf5c24c083b47b362868504b1ab46de055f527afa868c3aee9ce48507e2dc"
+    },
+    {
+      "path": "root/external/267.pdf",
+      "bytes": 697422,
+      "sha256": "262afaeb37eec4bcdfe82b0db97ed6e3042944565abf8eacffffa892cf8dcefb"
+    },
+    {
+      "path": "root/external/267.txt",
+      "bytes": 162938,
+      "sha256": "0d633448c0e809d71bb814e76a7cd48ba97c611d9cdd829203e101e8ddc7390a"
+    },
+    {
+      "path": "root/external/269.pdf",
+      "bytes": 775445,
+      "sha256": "b1bb20744f2bfa517cf927d9b7f48cfb2ca923ab73fd7fc5cbad077af30aa548"
+    },
+    {
+      "path": "root/external/269.txt",
+      "bytes": 179904,
+      "sha256": "58bb8f6efd65ee76d13b02c5adc39099dcc45777199e0bba8fd6a81181246a34"
+    },
+    {
+      "path": "root/external/270.pdf",
+      "bytes": 390331,
+      "sha256": "7a4b12bd2a7e8902c19fbda1fd0a9e73c063d8a7a0353667bceaf4194bffadef"
+    },
+    {
+      "path": "root/external/270.txt",
+      "bytes": 140961,
+      "sha256": "aa7fe9e1a49b63d156696ababa1cca3688bb3464e3ea65ef1eb7f426cf5ec889"
+    },
+    {
+      "path": "root/external/280.pdf",
+      "bytes": 589483,
+      "sha256": "b5f09142bda3ec3d351fe0e35483c07905de6a0f8573681cb5c191cbd3e43d2e"
+    },
+    {
+      "path": "root/external/280.txt",
+      "bytes": 134811,
+      "sha256": "f9cc65b85c2cb62263084847a6743418bae1e18ecf963fd8af86dedcf19a7910"
+    },
+    {
+      "path": "root/external/290.pdf",
+      "bytes": 333040,
+      "sha256": "af9a34e4fa4d0b23d115634d27d413f1013261dbe02b82802c3127c3b0efdb82"
+    },
+    {
+      "path": "root/external/290.txt",
+      "bytes": 49713,
+      "sha256": "fed3259442ae7e61f846e7832a34a648e0f4bea32cb4c2193e5dee96d96160ed"
+    },
+    {
+      "path": "root/external/290b.pdf",
+      "bytes": 361603,
+      "sha256": "7a0b0017ec76bdb23651398ca264127b0a6ad8159dd9f1e123e95f412eb33348"
+    },
+    {
+      "path": "root/external/290b.txt",
+      "bytes": 38006,
+      "sha256": "4888023ef68481cbb580bc8dedfec19a99ac764cdb9e88942c438a330a712561"
+    },
+    {
+      "path": "root/external/325.pdf",
+      "bytes": 315777,
+      "sha256": "d9aa4ef2dccb1f044fdf78afd7a4c93f64e71bd60e53d0f0460329596f199bb6"
+    },
+    {
+      "path": "root/external/325.txt",
+      "bytes": 30619,
+      "sha256": "95cd713b54de194da106d98eaefc64280620d771ed2aa7ac9b516505ef5fd2c5"
+    },
+    {
+      "path": "root/external/354.pdf",
+      "bytes": 352409,
+      "sha256": "ce66c455780d2efc19b18a9b767a7453d2e951d55f4b58d5167ec2716b3974c2"
+    },
+    {
+      "path": "root/external/354.txt",
+      "bytes": 71517,
+      "sha256": "29e318adadf98dab00dcc27bdc3e0c643cf71167b36eb639824209e241e97c1b"
+    },
+    {
+      "path": "root/external_manifest.json",
+      "bytes": 6197,
+      "sha256": "69e3ff8e7312e75ff37f4ba41f991565d2d93ab2d793979246b228d88f49f8fd"
+    },
+    {
+      "path": "root/matching_control.json",
+      "bytes": 1762,
+      "sha256": "fbdf89179a273a8c8f978f83deed185c1efa0708c1b3654041fbcf2105fbc060"
+    },
+    {
+      "path": "root/matching_control.log",
+      "bytes": 1762,
+      "sha256": "fbdf89179a273a8c8f978f83deed185c1efa0708c1b3654041fbcf2105fbc060"
+    },
+    {
+      "path": "root/matching_control.py",
+      "bytes": 2660,
+      "sha256": "dd5ae3f8bef37783e6592781ba46622c5b0d71e9e949da1695e536e274022098"
+    },
+    {
+      "path": "root/matching_external_manifest.json",
+      "bytes": 903,
+      "sha256": "c119efabc3e8e699ba177985a20beaa99674b6f392e383ed261cf748e56b51b7"
+    },
+    {
+      "path": "root/mutations/RESULTS.json",
+      "bytes": 1536,
+      "sha256": "58902b07a60daae832d65313384a9dc5ee13e8f8ee268de1a1e6f2ee9eb52e0c"
+    },
+    {
+      "path": "root/mutations/bootstrap_constant.log",
+      "bytes": 476,
+      "sha256": "933e93bf80ef989e04275efa8c4a744e279151a4e86971905e68c19a610b66c6"
+    },
+    {
+      "path": "root/mutations/bootstrap_constant.py",
+      "bytes": 9482,
+      "sha256": "077531b6ba336208800fe0165aa9495cd277e4a9ff8f611afca47ef0513bd79a"
+    },
+    {
+      "path": "root/mutations/orbit_multiplicity.log",
+      "bytes": 622,
+      "sha256": "5b668f48e852308f2b13c2471ff1c3b82499c1dc1a685448481d42c4e6027d40"
+    },
+    {
+      "path": "root/mutations/orbit_multiplicity.py",
+      "bytes": 9473,
+      "sha256": "c4a5565131ebb42a794ab9a52ff82a3fe755b8c6990d77d9aa08a911abfb1639"
+    },
+    {
+      "path": "root/mutations/plaquette_orientation.log",
+      "bytes": 694,
+      "sha256": "5c665414958e5f6fed9d54e201c144448278b7daf9f81af4cb164cd1c82e8a16"
+    },
+    {
+      "path": "root/mutations/plaquette_orientation.py",
+      "bytes": 9481,
+      "sha256": "3bf85f38da803c4a4550850aae9d1e367ff80376ff96120dadf7a6f279927816"
+    },
+    {
+      "path": "root/mutations/temperature_seed.log",
+      "bytes": 410,
+      "sha256": "e2c730cb99b35f1b82eadd64d1b4ae9ab1543b4107718aaf0fba42402b253c55"
+    },
+    {
+      "path": "root/mutations/temperature_seed.py",
+      "bytes": 9482,
+      "sha256": "cf87895270e70c11a91ad62c61ad8a51c9fd5a9bca1e6d685ba0d31fe6ebb0c1"
+    },
+    {
+      "path": "root/pxp_independent_seed_check.json",
+      "bytes": 1014,
+      "sha256": "486b32dfdfb4f9810d1edc451126325bb7ae02dfb228905353eb490123bc010e"
+    },
+    {
+      "path": "root/pxp_independent_seed_check.log",
+      "bytes": 1014,
+      "sha256": "486b32dfdfb4f9810d1edc451126325bb7ae02dfb228905353eb490123bc010e"
+    },
+    {
+      "path": "root/pxp_independent_seed_check.py",
+      "bytes": 2293,
+      "sha256": "0aab0d2221a1c52ce8d53e04d028390641b103243c3b867827a588a38f645e90"
+    },
+    {
+      "path": "root/vocab_lint.log",
+      "bytes": 81,
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971"
+    }
+  ]
+}

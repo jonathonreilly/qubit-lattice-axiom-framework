@@ -3,6 +3,6 @@ Repository definitions were frozen at ed04ee2736b5bddb4e9064966505e3c3dfe003de; 
 
 The standard measure-theoretic and spectral inputs are Tonelli, finite-measure kernel composition, compact self-adjoint spectral theory and Hilbert–Schmidt identities. Their hypotheses are checked in the proof. Integer walks, graph automorphisms and a rational exponential tail furnish the finite certificate.
 
-The external Haldane bootstrap is a methodological source, fully re-proved at the needed scope. Its spin-one theorem, transfer premise and numerical initialization are not imported. No unresolved external mathematical theorem remains in this milestone's proof graph. The other investigation leads often DO retain full external proofs as unverified imports; they are not premises of this result.
+The external Haldane bootstrap is a methodological source, fully re-proved at the needed scope. Its spin-one theorem, transfer premise and numerical initialization are not imported. No unresolved external mathematical theorem remains in this milestone's proof graph. The follow-up packets apply matching Lean-covered external declarations as accepted support and label uncovered companion results as paper premises. None is a premise of this PXP proof. See PORTFOLIO_INDEX.md for the current disposition.
 
 The current minimal-axiom and primitive-registry sources were read at the frozen revision. No additional primitive, observation, fit, physical readout, state-selection rule or clock calibration enters the result. No authority surface is changed.

@@ -1,0 +1,389 @@
+PXP uniform-gap proof candidate from a spatial path kernel and two purities
+2026-10-07 — author derivation; independent scientific check pending
+
+Current status: conditional-support, proposed bounded_theorem.
+Target: every even periodic PXP chain L>=6, H_L=-sum_i P_(i-1) X_i P_(i+1)
+on binary independent sets of the L-cycle, has a unique ground state and
+gap greater than log(25/14)/4. The same claim is proposed for the entire Gauss
+sector of the supplied staggered height-one link ring, including its two
+frozen sectors, using the exact all-length dictionary proved below.
+
+The proof candidate and exact finite seed certificate are complete at author
+level. This is a theorem of these supplied finite quantum models, not a
+derivation of their Hamiltonian, background, material phase, or physical photon
+from framework axioms. No repo source, prompt, skill, branch or audit changed.
+Nothing here confers a formal audit status. The important remaining task is an
+independent check of the full proof and exact certificate implementation.
+
+Frozen identities
+-----------------
+Repo: ed04ee2736b5bddb4e9064966505e3c3dfe003de.
+External: openai/math adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+Repo target: docs/THE_SPIN_HALF_LINK_RING_IS_GAPPED_AND_CONFINING_THE_PHOTON_QUESTION_NEEDS_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md,
+especially lines 104–167 and 205–212 in the frozen source. Its original claim
+establishes finite matrix checks and explicitly does not prove a uniform gap.
+The PXP dictionary is certified there only for the displayed finite lengths;
+the all-length argument in section 6 below is a new author derivation here.
+
+External mechanism:
+https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/preprints/The-periodic-spin-one-Haldane-gap-September-24-2026/build/bootstrap.tex
+This entire file (lines 1–289) was read. Its squaring, cancellation, doubling,
+interpolation and spectral steps are re-proved in section 4. No Haldane spin-one
+gap theorem, spin-one transfer construction, numerical gap value or Haldane
+certificate is used as an unverified input to the proposed PXP result.
+
+Physics-loop task adaptation: use its proof-search, premise and selective-check
+discipline, with the parent/user's explicit frozen-source and no-repo-write
+instructions controlling delivery. This is a bounded delegated execution,
+not an unattended campaign. This file is the single current checkpoint.
+
+1. Exact target contract and model
+---------------------------------
+For L>=4 let C_L={z in {0,1}^L : z_i z_(i+1)=0 for every i mod L}.
+The Hilbert space has orthonormal basis {|z>:z in C_L}. Let A_L have matrix
+entry 1 between configurations differing at exactly one site, and zero
+otherwise. Thus H_L=-A_L=-sum_i P_(i-1) X_i P_(i+1), restricted to C_L.
+All matrix entries are real; adjacency is symmetric and has degree <=L.
+Every configuration connects to the empty configuration by deleting its
+occupied sites, so the configuration graph is connected. A_L is nonscalar.
+We write Z_L(b)=Tr exp(b A_L), for b>0, with zero energy shift.
+
+Allowed inputs: this explicit supplied model; ordinary tensor composition and
+finite matrix analysis; basic measure theory, compact self-adjoint spectral
+theorem, and exact integer/rational computation. The four framework axioms and
+approved primitives supply no extra dynamics or state-selection premise here.
+Their unchanged pinned registry/memo were read in the preceding applicability
+review. No registered primitive is needed to prove this dimensionless model
+theorem. Multiplication by a separately supplied positive coupling rescales the
+gap in the usual way; this report fixes the coefficient to one.
+
+Forbidden weakenings: a gap fit or positive finite-size gap is not a uniform
+gap; a numerical transfer spectrum is not the all-length trace identity;
+a conditional PXP theorem without an all-length dictionary does not establish
+the original link-ring theorem. Required edge cases: periodic wrap, every even
+L>=6 rather than a dyadic subsequence, zero-flip paths, constrained Hilbert
+space, and the two frozen sectors.
+
+2. Common real spatial spectrum: continuous-time construction
+------------------------------------------------------------
+Fix b>0. The one-site path space Omega_b is the disjoint union over
+a in {0,1} and k in {0,2,4,...} of
+  {a} x {0<t_1<...<t_k<b}.
+For k=0 the simplex is one atom. A point encodes the right-continuous binary
+path w(t)=a + #{j:t_j<=t} modulo 2. Its initial and final values agree.
+Put counting measure on a and ordinary Lebesgue measure on each simplex;
+the zero-dimensional simplex has mass one. Call the resulting measure mu_b.
+It is finite, with mu_b(Omega_b)=2 sum_(k even) b^k/k! = 2 cosh b.
+The space is a countable disjoint union of standard Borel spaces, so its L2
+space is separable. No probability normalization or Poisson survival factor
+is inserted: this is an exponential-series measure, not a Markov jump law.
+
+Define C_b(w,v)=1 if w(t)v(t)=0 for Lebesgue-almost every t in [0,b], and
+0 otherwise. This is a measurable, real, symmetric kernel bounded by one:
+on fixed finite path strata the condition is a finite set of inequalities
+among the jump times. Let K_b be its integral operator on L2(Omega_b,mu_b).
+It is Hilbert–Schmidt since integral |C_b|^2 <=(2 cosh b)^2. It is therefore
+bounded and compact; symmetry makes it self-adjoint. Its nonzero spectrum
+is a finite or countable list of real eigenvalues lambda_j(b), including
+multiplicity, with sum_j |lambda_j|^2 finite, hence sum_j |lambda_j|^4 finite.
+The kernel need not be positive semidefinite; real eigenvalues are sufficient.
+
+Lemma 2.1 (worldline identity). For each finite L>=4,
+  Z_L(b)=integral_(Omega_b^L) product_i C_b(w_i,w_(i+1)) product_i dmu_b(w_i).
+
+Proof. Partition the product path space by each site's initial bit and even
+number of flips. Apart from a null set, all flip times at distinct sites are
+different. Sorting the total m times gives a unique site word (i_1,...,i_m)
+and the global ordered simplex 0<s_1<...<s_m<b. Conversely such a word with
+each site's occurrence count even recovers the local ordered simplices.
+This is the ordinary disjoint shuffle decomposition, with Jacobian one.
+
+The compatibility product is one exactly when all successive configurations
+are legal independent sets. On an open interval between two distinct flip
+times it tests every adjacent pair; initial and final intervals also have
+positive length. At a flip at i, legality before and after is equivalent to
+both neighbors being zero. Hence each legal step has exactly the PXP matrix
+element one. Sitewise even counts give precisely the trace's return to the
+initial configuration. At zero flips the integral simply counts C_L. Events
+at t=0,b or simultaneous events form a null set and add no terms. Each legal
+closed word of length m has simplex volume b^m/m!, so the integral equals
+sum_m b^m Tr(A_L^m)/m!=Tr exp(bA_L). All summands are nonnegative. Tonelli
+therefore justifies every interchange; absolute convergence also follows
+from Tr(A_L^m)<=|C_L| L^m. This pays explicitly for the noncommuting PXP
+projectors: only globally ordered legal paths contribute. QED.
+
+Lemma 2.2 (even spatial moments). For every even L>=4,
+  Z_L(b)=Tr K_b^L=sum_j |lambda_j(b)|^L.
+
+Proof. Let L=2m. Iterated integration gives the kernel C_b^(m)(w,v) of K_b^m;
+it is bounded by mu_b(Omega_b)^(m-1), hence square-integrable. The symmetry
+of C_b gives symmetry of this iterated kernel. The spectral theorem and the
+Hilbert–Schmidt norm give
+  Tr K_b^(2m)=||K_b^m||_HS^2
+            =integral C_b^(m)(w,v)^2 dmu_b(w)dmu_b(v).
+Expand the two copies into their m-step kernel chains. Reversing one chain
+uses symmetry and gives exactly the 2m-cycle integral of Lemma 2.1. Tonelli
+applies because the kernels are nonnegative and the measure finite. This
+avoids any unproved claim that the diagonal of an arbitrary measurable
+trace-class kernel equals its trace. Finally the real compact spectrum gives
+Tr K_b^(2m)=sum_j lambda_j^(2m)=sum_j |lambda_j|^(2m). The same K_b and
+spectrum work for every L; they depend only on b. QED.
+
+This is the previously missing transfer premise. It uses no limit in L,
+no positive-definiteness assumption and no guessed self-adjoint similarity.
+
+3. Separate finite-time construction and its check
+-------------------------------------------------
+There is a second derivation of a finite-time transfer identity. On the full
+L-qubit space write P for projection onto C_L and X_tot=sum_i X_i. For M
+time slices, d=b/M, let B_M=P exp(d X_tot) P restricted to C_L. Its matrix
+entries are (cosh d)^(L-h) (sinh d)^h, h the Hamming distance. Since
+B_M=I+d A_L+O(d^2) for fixed L, B_M^M -> exp(b A_L) in finite-dimensional
+operator norm as M->infinity.
+
+Expand Tr B_M^M as a space-time bit-array sum. For a cyclic M-bit site path p,
+let w_M(p) be the product of cosh d for unchanged adjacent time bits and sinh d
+for changed bits, including the temporal seam. Spatial compatibility is
+p & q=0 at all time slices. Thus the real symmetric matrix
+  K_M(p,q)=sqrt(w_M(p) w_M(q)) 1[p & q=0]
+satisfies Tr B_M^M=Tr K_M^L exactly by rearranging a finite sum. This identity
+alone, with M-dependent spectra, is not used as a substitute for Lemma 2.2;
+it supplies a separate structural check of the weights and seams.
+
+check_transfer_and_dictionary.py compares both transfer directions for
+L=4,6, b=1, M=1,2,4,6,8. Maximum relative disagreement is 2.24e-15.
+Removing the hard-core compatibility fails the target in every tested case.
+The finite M traces approach the independently diagonalized PXP trace;
+their remaining error at M=8 is 0.1263 (L=4) / 0.2043 (L=6), so these are
+checks of the finite identity, not a precision claim for the continuum limit.
+The analytic norm limit above and the direct continuous-time proof supply
+the limiting argument. This author-side alternative shares the model
+specification but uses a different transfer construction from the seed code.
+
+4. Complete two-purity bootstrap proof
+-------------------------------------
+This section re-proves the external bootstrap at the needed generality.
+Suppose a nonscalar finite Hermitian family H_L, even L>=4, has
+Z_L(b)=Tr e^(-b H_L)=sum_j |lambda_j(b)|^L with sum_j |lambda_j(b)|^4 finite.
+Both descriptions count multiplicities. Define
+  S(n,b)=Z_(2n)(b)/Z_n(b)^2,
+  T(n,b)=Z_n(2b)/Z_n(b)^2.
+For even n>=4 they are purities of probability distributions: normalized
+spatial weights |lambda_j|^n and normalized physical Boltzmann weights.
+They consequently lie in (0,1].
+
+4a. Squaring. If nonnegative weights w_j sum to one and P=sum w_j^2, then
+their normalized squares have purity P'=sum w_j^4/P^2. Exactly,
+  1-P'=2 sum_(i<j) w_i^2 w_j^2 / P^2
+       <=2 (sum_(i<j) w_i w_j)^2/P^2
+       =(1-P)^2/(2P^2)=f(1-P),
+where f(u)=u^2/[2(1-u)^2]. Nonnegative summands justify countable sums.
+f is increasing on [0,1). Thus
+  1-S(2n,b)<=f(1-S(n,b)),
+  1-T(n,2b)<=f(1-T(n,b)).
+
+4b. Coupling the updates. Direct cancellation, using the same Z throughout,
+gives
+  S(n,2b)=S(n,b)^2 T(2n,b)/T(n,b)^2,
+  T(4n,b)=T(2n,b)^2 S(2n,2b)/S(2n,b)^2.
+Their denominators are <=1. If S(n,b),T(2n,b)>=1-u and a number C satisfies
+G(u)<=C, where
+  G(u)=1/2 [(1-u)^(-1)+(1-u)^(-2)+(1-u)^(-3)]^2,
+then S(n,2b)>=(1-u)^3. Spatial squaring gives
+  1-S(2n,2b)<=f(1-(1-u)^3)=G(u)u^2<=C u^2.
+If C u<=1, set u_+=C u^2<=u. The second cancellation then gives
+T(4n,b)>=(1-u)^2(1-u_+) >=(1-u)^3. Physical squaring gives
+  1-T(4n,2b)<=G(u)u^2<=u_+.
+The identity for G follows by factoring 1-(1-u)^3. G is increasing because
+each positive summand in its displayed expression is increasing.
+
+4c. Dyadic induction. Suppose at even n0 and b0>0 both purities in 4b are
+>=1-u0, where
+  0<u0<1/6, G(u0)<=C, r=C u0<1, C(1-3u0)>3.
+Let n_j=2^j n0, b_j=2^j b0, u_j=C^(-1) r^(2^j). Then
+u_(j+1)=C u_j^2<u_j<=u0. Repeated 4b gives
+  S(n_j,b_j),T(2n_j,b_j)>=1-u_j.
+
+4d. Every intermediate even length. For nonnegative a_i and q>=p>0,
+  sum a_i^q <= (sum a_i^p)^(q/p).
+Proof: divide by the pth-power sum and use w_i^(q/p)<=w_i for probability
+weights w_i; the zero-sum case is immediate. Therefore for even n<=L<=2n,
+  Z_L(b)<=Z_n(b)^(L/n),
+  Z_L(2b)>=Z_(2n)(2b)^(L/(2n)).
+Combine to obtain
+  T(L,b)>=[T(2n,b) S(n,b)^2]^(L/(2n)).
+The bracket lies in (0,1] and its exponent is <=1. At (n_j,b_j) this implies
+  T(L,b_j)>=(1-u_j)^3>=1-3u_j>1/2.
+
+4e. Spectrum. The largest physical Gibbs weight w0 is at least its purity
+T(L,b_j)>1/2. Two ground vectors would have equal maximal weights, impossible;
+the ground state is unique. If w1 is the weight of any eigenvector at the
+next distinct energy and gamma_L that energy gap, then
+  exp(-b_j gamma_L)=w1/w0
+    <=(1-w0)/w0 <=3u_j/(1-3u_j)
+    <=[3/(C(1-3u0))] r^(2^j) < r^(2^j).
+Consequently gamma_L>log(1/r)/b0. The intervals [n_j,2n_j] cover every even
+L>=n0; no unexamined length subsequence remains. This completes the criterion.
+
+No proof gap was found in these steps. The original spin-one initialization,
+boundary-field paper and other external theorems are not required by this
+specialization. Independent checking of this self-contained proof is pending.
+
+5. Rigorous finite seeds (exact executable certificate)
+------------------------------------------------------
+Use n0=6, b0=4, u0=2/25 and C=7. We need
+  Z_12(4)/Z_6(4)^2 >=23/25,
+  Z_12(8)/Z_12(4)^2 >=23/25.
+
+certify_seeds.py constructs the exact independent-set graph at L=6 (18
+vertices) and L=12 (322 vertices). It computes t_k=Tr A_L^k for k=0,...,256
+as integer closed-walk counts. Rotation is explicitly checked as a graph
+automorphism. Diagonal entries for one representative of each cyclic orbit
+are multiplied by that orbit's size (5 orbits at L=6; 31 at L=12). Each
+vector update is exactly v'_i=sum_(j adjacent i) v_j. This gives the complete
+trace; no eigenvalues or stochastic estimate are used. Odd traces vanish by
+the checked occupation-parity bipartition. Separate uncompressed explicit
+walk enumeration checks t_2,t_4,t_6 via sum_ij (A^(k/2)_ij)^2.
+
+For integer b=4 or 8 and N=256, define the rational lower sum
+  Q_N=sum_(k=0)^N b^k t_k/k!.
+All terms are nonnegative. Since each graph vertex has degree at most L,
+  0<=Z_L(b)-Q_N <=D sum_(k=N+1)^infinity (bL)^k/k!
+    <=D (bL)^(N+1)/(N+1)! / (1-bL/(N+2)) =R_N.
+The last ratio bound is valid because bL/(N+2)<1 and bounds every ratio in
+the remaining tail. This argument is combinatorial and needs no eigenvalue
+rounding bound. Both endpoints Q_N,Q_N+R_N are exact Fractions. The lower
+purity uses the lower numerator and upper denominator squared; all final
+comparisons with 23/25 are exact rational comparisons.
+
+Certificate results (decimals for legibility; full rational endpoints stored):
+  S(6,4) > 0.9246630910706219618218284673832385,
+  T(12,4)> 0.9365536948228503531525298145562988.
+The displayed inequalities use decimals truncated downward from exact lower
+bounds. The widest relative tail bound is 4.422e-23, for Z_12(8); the other
+relative tails are below 5.45e-88 and 2.26e-160. These tail magnitudes are
+diagnostics; the exact rational inequalities in the JSON are load-bearing.
+
+Scalar conditions hold exactly:
+  G(2/25)=1868400625/296071778 <7,
+  r=7(2/25)=14/25<1,
+  7(1-6/25)=133/25>3,
+  0<2/25<1/6.
+Thus sections 2 and 4 plus this certificate propose
+  gamma_L > (1/4) log(25/14), every even L>=6.
+This is an author proof with a finite exact-arithmetic certificate, awaiting
+independent examination; it is not a floating-point extrapolation.
+
+Files: certify_seeds.py, certify_seeds.log, seed_certificate.json,
+exact_moments_L6.json, exact_moments_L12.json. The JSON includes complete
+integer moments, full rational trace/seed bounds, graph hashes, and checks.
+Run: python3 certify_seeds.py (from this directory or by absolute path).
+It uses standard-library arithmetic and under one second in the recorded run;
+timing is not part of the theorem.
+
+6. Exact all-length dictionary for the supplied link ring
+---------------------------------------------------------
+Use the repo's height-one periodic ladder of even L>=4: top rails T_i, bottom
+rails B_i, and upward rungs R_i, orientations exactly as the source. Let
+t_i,b_i,r_i in {-1,+1} denote twice their electric fields. Put s_i=(-1)^i.
+The supplied staggered background is 2rho(t_i)=s_i, 2rho(b_i)=-s_i.
+The Gauss constraints are
+  t_i-t_(i-1)-r_i=s_i,
+  b_i-b_(i-1)+r_i=-s_i.
+Adding gives t_i+b_i=F independent of i, F in {-2,0,2}.
+
+For F=+/-2 all top and bottom signs equal F/2; the rungs are r_i=-s_i.
+Each sector therefore has one basis vector. The oriented plaquette
+W_i=U_Ti U^dag_R(i+1) U^dag_Bi U_Ri, U=(X+iY)/2, cannot act there:
+top and bottom signs agree but its rail raising/lowering requirements oppose.
+W_i^dag also vanishes. Each frozen vector has energy exactly zero.
+
+For F=0, b_i=-t_i. Define z_i=(1-s_i t_i)/2. Because L is even, s_(i-1)=-s_i
+also across the periodic seam. Then the first Gauss equation becomes
+  r_i=s_i[1-2(z_(i-1)+z_i)].
+Its requirement r_i=+/-1 is equivalent to forbidding z_(i-1)=z_i=1.
+Conversely any independent-set z gives the unique allowed signs
+  t_i=s_i(1-2z_i), b_i=-t_i,
+  r_i=s_i[1-2(z_(i-1)+z_i)].
+This is a bijection for every even L>=4, not an extrapolation of the finite
+counts. Its linear extension maps orthonormal bases and is unitary.
+
+Under this bijection, toggling z_i flips exactly T_i,B_i,R_i,R_(i+1).
+It is allowed iff z_(i-1)=z_(i+1)=0. If z_i=0 with these neighbors zero,
+(t_i,b_i,r_i,r_(i+1))=(s_i,-s_i,s_i,-s_i). For s_i=+1, W_i^dag acts; for
+s_i=-1, W_i acts. Each coefficient is one because ordinary spin-1/2
+raising/lowering matrix elements are one. Their adjoints reverse the move.
+If either neighbor is occupied, the toggled independent set is illegal;
+Gauss conservation then makes both plaquette terms vanish (equivalently,
+one of their local raising/lowering factors annihilates that configuration).
+They cannot both act on the same input because their top-rail requirements
+are opposite. Consequently the exact operator identity is
+  H_link|Gauss = H_PXP direct-sum 0 direct-sum 0
+for all even L>=4, in the supplied normalization.
+
+This proves the previously finite-only dictionary at all relevant lengths.
+check_transfer_and_dictionary.py checks it additionally by independent
+Gauss reconstruction and exact local plaquette actions at even L=4,...,16.
+Those finite checks are controls; the symbolic argument above is the all-L
+proof. The proper statement preserves the supplied background and law.
+
+For the full-sector partition function Z_full,L(b)=Z_L(b)+2, the common
+spatial operator is K_b direct-sum I_2. It is again real self-adjoint and
+Hilbert–Schmidt, and Tr(K_b direct-sum I_2)^L=Z_L(b)+2 for every even L.
+The exact seed script adds 2 to both trace endpoints and verifies
+  S_full(6,4)>0.9246613015940813140814104761886408,
+  T_full(12,4)>0.9365536948219019879096531631200829.
+The same 23/25 seed threshold and scalar choices therefore apply, proving
+the same proposed full-sector gap bound by section 4. This explicitly accounts
+for the frozen spectrum; no inference from the dynamic-sector gap is needed.
+
+7. Search, assumptions, alternatives and remaining verification
+---------------------------------------------------------------
+Frozen-repo search logs prior_art_search_0..3.txt cover root science notes
+for PXP, purity, spatial transfer, and worldline/hard-core phrases. The only
+model-relevant PXP hit is the finite link-ring note already used. The other
+PXP hits are unrelated projector products; purity/transfer intersections
+contain no matching uniform constrained-chain gap statement in this searched
+scope. This is not a claim of global literature novelty or exhaustive open-PR
+coverage. No public-priority claim is made.
+
+Approach families:
+  A. Continuous-time worldlines / real compatibility kernel / common real
+     spatial moments: proposed complete, Lemmas 2.1–2.2.
+  B. Discrete-time compressed product / finite transfer-direction identity:
+     analytic identity and finite controls complete; by itself only supports A
+     and does not justify a common limiting spectrum without further work.
+  C. Integer walk traces / uniform exponential tail / finite purity seeds:
+     exact certificate complete, independent implementation review pending.
+  D. Gauss coordinate elimination / basis permutation / all-L link dictionary:
+     proposed complete, section 6; independent review pending.
+  E. Direct frustration-free parent or martingale gap inequality: unexplored;
+     not needed by the current candidate and not asserted unavailable.
+
+Counterfactual controls: normalizing mu_b without restoring its scalar factor
+would alter Z (although length-linear shifts cancel in purities); inserting
+a Markov escape-rate diagonal would change A; using arbitrary unconstrained
+bit histories would change the partition function (negative control executed);
+allowing odd periodic L breaks the alternating-background dictionary at its
+seam; omitting the frozen sectors changes the full link spectrum. These changes
+are not silently allowed in the proposed theorem.
+
+The load-bearing obligations are now explicit proofs/certificates rather than
+an unresolved assertion equivalent to the target. No terminal mathematical
+gap is currently identified by the author; independent checking may reveal
+one and must be free to reject the result. The exact target remains conditional
+on the supplied model and background; no framework-native dynamics or phase
+claim is inferred. The proof gives only a uniform lower bound and uniqueness,
+not the conjectured optimal gap, confinement, long-distance correlators,
+topological order, or a three-dimensional photon.
+
+Independent-check request: inspect (i) path measure/shuffle legality and
+even-cycle trace identity; (ii) complete bootstrap including interpolation;
+(iii) exact moment orbit weighting and rigorous series-tail inequalities;
+(iv) all-length link dictionary and its frozen states. Recompute decisive
+seed comparisons by a materially different exact implementation if possible.
+No formal audit, PR or repo integration is authorized in this task.
+
+Next decision: freeze this source and certificate hashes for an independent
+focused check. If a proof/certificate step fails, preserve the counterexample,
+mark affected descendants provisional and repair only the affected dependency.

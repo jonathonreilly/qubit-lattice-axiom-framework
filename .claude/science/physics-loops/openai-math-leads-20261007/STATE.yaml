@@ -19,17 +19,50 @@
     "kinetic": "362-364,276 and adjacent families",
     "root": "full catalogue screen,271,265,204,260,262,263,267,269,270,280,290 and other leads"
   },
-  "next_action": "Owner/review lane considers PR9466; execute integrated-main landing gates before any later landing; external-proof validation is a separate follow-on decision",
+  "next_action": "Selective PR review/integration through one shared integrated-main landing gate; independent retained-status audit and concrete Lean targets follow separately.",
   "repository_mutations": "isolated note, standalone runner, generated paired cache, citation manifest and loop pack only",
-  "open_pr_snapshot": [],
+  "open_pr_snapshot": [
+    {
+      "slug": "pxp",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9466"
+    },
+    {
+      "slug": "record-models",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9467",
+      "source_commit": "7acd89098f0ab0ff2f317eb395bdd9a7718f398f",
+      "branch": "physics-loop/openai-math-record-models-20261008",
+      "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de"
+    },
+    {
+      "slug": "heisenberg-import",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9468",
+      "source_commit": "7fea46093f5c01790882ac698301a3dcd44c59c6",
+      "branch": "physics-loop/openai-math-heisenberg-import-20261008",
+      "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de"
+    },
+    {
+      "slug": "channel-reduction",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9469",
+      "source_commit": "2276ab46220011f91ba7c8e7942b04d58d2b2c9a",
+      "branch": "physics-loop/openai-math-channel-reduction-20261008",
+      "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de"
+    },
+    {
+      "slug": "collision-equilibrium",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9470",
+      "source_commit": "e95884fe32b5f288943d82d1b72fed8b55d8aca6",
+      "branch": "physics-loop/openai-math-collision-equilibrium-20261008",
+      "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de"
+    }
+  ],
   "checks": "initial review evidence reused on unchanged source revisions",
-  "scientific_milestones": 1,
+  "scientific_milestones": 5,
   "cycles_completed": 1,
   "claim": "Unique finite-volume ground state and gap >log(25/14)/4 for explicit periodic PXP/full staggered link rings at every even L>=6",
   "independent_check": "Mathematical and final packaging review accepted; expected final note identity confirmed",
   "open_mathematical_obligations_for_milestone": [],
   "formal_audit": "not performed",
-  "last_updated": "2026-10-08T00:41:53.412914+00:00",
+  "last_updated": "2026-10-08T11:07:07.936163+00:00",
   "files_touched": [
     "docs/PERIODIC_PXP_AND_STAGGERED_LINK_RING_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-10-07.md",
     "scripts/periodic_pxp_and_staggered_link_ring_uniform_gap_2026_10_07.py",
@@ -42,7 +75,7 @@
     "edges_changed": 0,
     "node": "periodic_pxp_and_staggered_link_ring_uniform_gap_bounded_theorem_note_2026-10-07"
   },
-  "status": "bounded investigation complete; milestone in draft PR",
+  "status": "complete: bounded investigation and five draft review milestones delivered",
   "execution_elapsed_minutes": 614.0,
   "pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9466",
   "pr_state": "open draft, mergeable at creation; no merge performed",
@@ -52,7 +85,43 @@
     "families_with_abstract_screen": 127,
     "families_with_primary_statement_or_bridge_checks": 40
   },
-  "open_external_imports": "Other leads explicitly retain full external proofs unverified; none is a premise of the PXP milestone",
-  "strongest_remaining_obligation": "For new conditional applications: validate external225/213 proofs. For physical continuation: model/background/readout and 3D phase bridges remain outside the proved result.",
-  "elapsed_time_basis": "wall time from initial execution checkpoint, includes session/orchestration time; not CPU time"
+  "open_external_imports": "Accepted exact Lean-covered statements identified by revision/declaration/config. Uncovered companion conclusions remain labeled manuscript premises; local re-verification is not imposed on covered imports.",
+  "strongest_remaining_obligation": "Future integration/audit and optional Lean formalization of our new proofs; no duplicate external formal-verification gate.",
+  "elapsed_time_basis": "wall time from initial execution checkpoint, includes session/orchestration time; not CPU time",
+  "owner_direction_2026_10_08": "Matching OpenAI Lean-verified external theorems are accepted support; independent external re-verification is not a progress or PR gate. Make new mathematical constructions/proofs and consider Lean as part of their later audit.",
+  "followup_worktrees": [
+    {
+      "slug": "record-models",
+      "worktree": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/record-models",
+      "branch": "physics-loop/openai-math-record-models-20261008"
+    },
+    {
+      "slug": "collision-equilibrium",
+      "worktree": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/collision-equilibrium",
+      "branch": "physics-loop/openai-math-collision-equilibrium-20261008"
+    },
+    {
+      "slug": "channel-reduction",
+      "worktree": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/channel-reduction",
+      "branch": "physics-loop/openai-math-channel-reduction-20261008"
+    },
+    {
+      "slug": "heisenberg-import",
+      "worktree": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/heisenberg-import",
+      "branch": "physics-loop/openai-math-heisenberg-import-20261008"
+    }
+  ],
+  "milestone_source_progress": {
+    "record-models": "selectively reviewed, source-bound checks passed, committed and published as open draft PR",
+    "heisenberg-import": "selectively reviewed, source-bound checks passed, committed and published as open draft PR",
+    "channel-reduction": "selectively reviewed, source-bound checks passed, committed and published as open draft PR",
+    "collision-equilibrium": "selectively reviewed, source-bound checks passed, committed and published as open draft PR"
+  },
+  "milestone_reviews": {
+    "pxp": "complete proof and independent exact seed construction",
+    "record-models": "complete bridge review and defect controls",
+    "collision-equilibrium": "complete proof review; N=4 factorial coverage gap resolved and rechecked",
+    "channel-reduction": "independent Liouville/exponential/channel checks; positive exception retained",
+    "heisenberg-import": "algebra/KMS/normalization checked; field coefficient corrected and rechecked"
+  }
 }

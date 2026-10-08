@@ -1,0 +1,34 @@
+{
+  "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de",
+  "external": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "pxp": {
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9466",
+    "science_source_commit": "7d392547bdfd750bbe9dc3b1a3829e6c35627b06"
+  },
+  "followups": {
+    "record-models": {
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9467",
+      "source_commit": "7acd89098f0ab0ff2f317eb395bdd9a7718f398f",
+      "branch": "physics-loop/openai-math-record-models-20261008",
+      "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de"
+    },
+    "heisenberg-import": {
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9468",
+      "source_commit": "7fea46093f5c01790882ac698301a3dcd44c59c6",
+      "branch": "physics-loop/openai-math-heisenberg-import-20261008",
+      "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de"
+    },
+    "channel-reduction": {
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9469",
+      "source_commit": "2276ab46220011f91ba7c8e7942b04d58d2b2c9a",
+      "branch": "physics-loop/openai-math-channel-reduction-20261008",
+      "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de"
+    },
+    "collision-equilibrium": {
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9470",
+      "source_commit": "e95884fe32b5f288943d82d1b72fed8b55d8aca6",
+      "branch": "physics-loop/openai-math-collision-equilibrium-20261008",
+      "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de"
+    }
+  }
+}

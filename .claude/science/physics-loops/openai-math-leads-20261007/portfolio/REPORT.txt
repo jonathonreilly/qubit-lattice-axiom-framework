@@ -1,0 +1,74 @@
+OPENAI MATH RELEASE: EXECUTED REPOSITORY LEAD REVIEW
+Completed October 7, 2026. One bounded portfolio cycle, one independently checked source milestone.
+
+Yes: the release supplied a method that closed a concrete uniform-gap proof obligation for an existing supplied repo model. It also produced useful conditional dictionaries and finite controls. The broad native-physics objectives were not established by this execution.
+
+SOURCE IDENTITIES AND COVERAGE
+Official release: https://openai.com/index/sharing-ai-progress-in-mathematics/
+OpenAI/math: https://github.com/openai/math/tree/adc7f1241b42e322a6451854ab7e4b4c146bf78a
+Science base: ed04ee2736b5bddb4e9064966505e3c3dfe003de; planning snapshot:eb1f1ca8338848cf2046582e13aef372d8540937. A final fetch confirmed both unchanged. The user's original checkout remains untouched.
+
+All372 result-family headings were screened,127 families had abstract screening, and40 had primary-statement/model-interface investigations with computations where useful. The release contains722 manuscripts; this was not an independent verification of all their proofs. catalogue.json records every family and its actual coverage level. No Lean build was performed. Unselected means no concrete use was found in this pass, not that no use can exist.
+
+1. THE CONCRETE PROOF ADVANCE — FAMILY268 / TWO-PURITY BOOTSTRAP
+The existing September3 note had finite-ring gaps and a finite PXP/link dictionary. We now prove, for every even L>=6,
+  gap > log(25/14)/4 = approximately0.1449546238,
+with a unique finite-volume ground state. This holds for H=-sum PXP on independent sets of the periodic cycle and for the entire explicitly supplied staggered spin-half link-ring Gauss sector, including its two frozen states. Coupling is fixed to one; a positive coupling rescales the bound.
+
+The proof constructs a common real compact spatial operator from continuous-time hard-core paths, re-proves the external two-purity criterion, interpolates to every even length, establishes exact finite seeds and proves the all-length Gauss dictionary. No external spin-one gap theorem or initialization is assumed. Thus the adapted criterion is self-contained rather than an unverified imported theorem.
+
+Evidence: exact integer traces through order256 at L6/L12, rigorous rational exponential tails, all four seed inequalities, and exact scalar conditions. Independent full-state and Hilbert–Schmidt calculations reproduce every moment and rational endpoint. Independent exhaustive link enumeration and deliberate seam/constraint/orientation defects challenge the dictionary. The packaged standard-library runner passes in about1.6 seconds; its complete57KB cache is untruncated. Four packaged-runner mutations fail the relevant assertions. Independent proof and final source reviews found no remaining proof-critical defect.
+
+Scope: uniform FINITE-VOLUME bound, not thermodynamic-limit ground-state uniqueness, confinement, correlation lengths, model/background selection, physical readout, or a3D photon theorem. This partially closes the broader earlier note. No global novelty/priority conclusion was checked.
+
+Draft PR9466: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9466
+Remote branch:physics-loop/openai-math-leads-20261007
+Scientific commit:7d392547bdfd750bbe9dc3b1a3829e6c35627b06
+Final handoff commit:e3ddd8be1479d1634e5550bba90b0ff024d5fbff
+Note: /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/worktree/docs/PERIODIC_PXP_AND_STAGGERED_LINK_RING_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-10-07.md
+Proof and packaging reviews: pxp_review/REVIEW.txt and PACKAGING_REVIEW.txt.
+Status: bounded_theorem, conditional-support. Selective independent review complete. Formal audit and the shared integrated-main landing checks remain pending. Nothing merged.
+
+2. STRONG EXISTING-MODEL MATCHES, STILL CONDITIONAL ON EXTERNAL PROOFS
+225 square ice/GFF: The repo already has saturated cubic-ice sectors reducing to independent square-ice layers. We proved the exact balanced-sector arrow dictionary and compatible order of limits, with even-parity controls. Balanced counts agree at4x4,4x6,6x4,6x6; odd-length controls fail as expected. If the external c=1 theorem is verified, this upgrades a specified balanced conditioned planar model from finite two-point evidence to a full GFF-law limit. The planar reduction itself is prior repo work; the unrestricted3D law has not been identified. Full93-page external proof verification is the next decisive step.
+
+213 critical percolation: In the existing supplied independent Exp(1) activation process, formed-site flags are exactly iid Bernoulli(1-exp(-t)); copying changes contents but not activation. Rational finite generator controls support the all-size cylinder argument. The external critical nonpercolation theorem would therefore apply to formed-site clusters at t_c=-log(1-p_c). It supplies no numerical p_c, physical time scale or content-domain geometry. Its full external proof remains unverified here.
+
+271 Heisenberg low-temperature law: Derived and checked the full normalization dictionary, including D=-2J for the supplied ferromagnetic Pauli Hamiltonian, and the leading plus next magnetization coefficient. Exact bond/dispersion and Gaussian-moment checks agree with an independent lattice heat-kernel diagnostic. The many-body thermal law remains an external theorem premise, with thermodynamic/field/temperature limits explicit; it does not select dynamics, coupling sign, thermal state or physical readout. The later correction is not covered by the inspected earlier Lean scope.
+
+145/154 stationary histories: A real existing fixed-content moving-record sector has a180-state connected reversible example, with672 exact detailed-balance identities. Its stationary two-sided path shift meets the probability/mixing interface. Family145 also explicitly handles noninvertible measure-preserving mixing transformations, so irreversibility alone was an invalid reason to dismiss it. For finite mixing Markov chains the higher-order behavior can already be proved directly; the release is a potential generalization, not a needed new theorem for this example. The growing formation process has not been supplied the same stationary law.
+
+3. USEFUL CONSTRUCTIONS AND BENCHMARKS
+149/364 kinetic model: Built a27-velocity network with288 reversible collision pairs. Exact stoichiometric rank22 leaves precisely number, three momentum components and energy. Gibbs detailed balance and entropy production are explicit. Accepting149's persistence result gives convergence from every positive initial state to its class's unique Gibbs equilibrium. This is a supplied-model benchmark; prior detailed-balance convergence routes were not exhausted, so the new theorem is not claimed necessary. Finite occupation drift/noise formulas provide a controlled future LLN/CLT target. No propagation-of-chaos, velocity-refinement or native Boltzmann–Grad limit was proved.
+
+276 Echo: Constructed a legitimate CPTP coarse graining that merges levels0/1 and preserves0–2 coherence. It exactly intertwines free waiting with qubit amplitude damping at rate k21+k20. The midpoint swap does not descend; two whole encoded Echo channels also fail the tested GAD identities. Thus the capacity theorem yields conditional free-wait communication benchmarks, not an empirical Echo closure. No new holdout data or fit was used.
+
+218/233 planar statistical controls: Proved exact conditioned-plane Ising and four-content Ashkin–Teller pair-weight dictionaries. The parent half-filling Ising control has g_c=3-2sqrt(2); the AT critical condition is p-q=2r with p>q and q<=r. The repo's example(3,1,2) is off critical. These are explicit conditioned/restricted models. Additional current/boundary laws are needed for the strongest AT limit, and the Ising perturbed-limit theorem needs a proved small finite-range effective interaction.
+
+113/120 factor counting: Exact incidence/dummy reduction and six complete counting controls establish constant multiplicity product_v(deg(v)-f(v))!. It can transfer unconditioned f-factor counts/sampling. On even cubic hosts the gadget is already bipartite, reducing the novelty of the new general-graph result. No zero-flux conditioning or practical finite-runner speedup was established.
+
+093/119/227/229/273/374: Executed Gaussian/log-concavity scale tests; every3-bit Boolean information/Hellinger case at one noise level; exact finite local heat-bath balance with an analytic contraction bound; finite tree posteriors and the regular-tree capacity; a valid bosonic-loss example and generator mismatch; and the optimal-transport sharpness construction. These are useful scoped controls. They do not create the input measures, clocks, independence or continuum objects required by the broad new theorems.
+
+4. TRANSFERS THAT FAILED THEIR ACTUAL HYPOTHESIS TESTS
+215 gauge gap: Correct physical Wilson-convolution eigenvalues are c_lambda/(d_lambda*c0). One visible spin correlation cannot control hidden neutral channels; an explicit positive Markov counterexample shows it. A fixed-beta one-link contraction proof works, while a beta-uniform one-link gap fails even in a neutral character channel. The repo already contains the relevant dimension-normalized asymptotics and a distinct small-u multi-link gap theorem. The useful remaining route is an all-observable covariance bound for the exact desired multi-link operator and state.
+
+261 Anderson: The actual imaginary-hopping operator has an exact phase-gauge dictionary, but finite torus seams depend on L mod4. Its Gaussian disorder is not the external bounded-uniform law. A deliberately supplied uniform control does match, and its spectrum SET follows by a standard Weyl-sequence argument; localization still depends on the unverified external theorem. The inspected Lean endpoint only proves the spectrum set.
+
+265 area law: A disjoint-dimer family keeps locality, norm-one interactions, a unique ground state and uniform gap1 while varying the entropy per crossed edge continuously. Thus the generic area upper bound does not determine a gravitational coefficient1/4. The repo's band comparator also is not automatically the full projected many-body gap required by the theorem.
+
+204 Spin(10): Tensor-occurrence saturation at this rank already had prior mathematics; the repo already has an explicit atomic invariant/singlet/gap. The unresolved finite-coupling thermodynamic mirror phase is a different obligation.
+
+290 modular recovery: A finite faithful M_d centralizer has dimension at least d, contradicting the scalar-centralizer hypothesis for d>1. The current finite tracial carrier does not acquire a nontrivial modular spectrum from this theorem. A typeIII construction is a distinct possible route, not supplied here.
+
+362/363/364 PDEs: The Vlasov–Maxwell and kinetic results assume their continuum equations and ensembles. A finite positive-jump exact Lorentz encoding fails an energy/drift identity, but a unitary fixed-shell Bloch construction succeeds within its narrower domain. Fixed atomic velocities cannot meet the stated smooth L1 Boltzmann–Grad input; rough entropy nonuniqueness does not contradict the finite ODE or the regular kinetic class. These failures restrict the tested dictionaries, not all growing encodings or limits.
+
+260/264/262/263/267/269/270/280/282/325/354/365 and adjacent leads: Their smooth metric/GR, continuum atomic, bosonic, Landau-level, supersymmetric, conformal-net, numerical-range, Euclidean perimeter or boundary-data hypotheses were not supplied by the present repo constructions. The source-specific reasons and allowed follow-ons are in the component reports/catalogue. Shared words such as gap, SU, scale or entropy are insufficient operator identifications.
+
+5. EVIDENCE, LIMITS AND NEXT DECISIONS
+Detailed reports: root/RESULTS.txt; continuum/RESULTS.txt; kinetic/RESULTS.txt; pxp/RESULTS.txt; pxp_review/REVIEW.txt and PACKAGING_REVIEW.txt. Each separates exact arguments, finite controls, floating diagnostics and unverified external imports. Evidence hashes are in EXECUTION_MANIFEST.json and the component manifests. Original applicability review is ../REVIEW.txt, preserved as prior work rather than silently overwritten.
+
+The milestone source proof has no identified unresolved terminal mathematical lemma. Its independent check was a fresh adversarial reading plus structurally different exact computations, not a formal proof-assistant certification. Other external theorem imports do not gain correctness from that successful PXP check. Formal audit, full landing gates and broad physical identification remain distinct obligations.
+
+Next concrete action: review draft PR9466 using its HANDOFF/TRACE_GATE and independently ratify through the normal later audit path if landed. The next high-value research choice is complete external-proof validation of225 or213 before promoting either exact interface into a new source theorem. Developing the collision model's controlled many-particle limit is a separate supplied-model program; fixing Echo still requires the full physical instrument/readout and unused-data validation.
+
+Wall time since the execution checkpoint at handoff:614.0 minutes, including session/orchestration time; this is not CPU time. No runtime budget was inferred, no automation created, and no main landing performed. No editable prompt/skill/platform instruction files were changed. The investigation used the repository physics-loop workflow with continuous discovery, selective independent checks and one milestone PR.

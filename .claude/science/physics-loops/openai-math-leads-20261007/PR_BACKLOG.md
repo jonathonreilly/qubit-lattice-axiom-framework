@@ -1,4 +1,5 @@
-# Delivery state
-Draft PR [9466](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9466) is open on `physics-loop/openai-math-leads-20261007`, base `main`. GitHub verified it as mergeable at creation; review/branch gates remain pending. Source milestone commit: `7d392547bdfd750bbe9dc3b1a3829e6c35627b06`. No merge or audit verdict was applied.
+# PR disposition
 
-Recovery: `gh pr view 9466`; the next lane should inspect the preserved review reports and run the shared integrated-current-main landing checks before landing. No PR-creation backlog remains.
+Five coherent milestones are published as open draft review PRs9466–9470; all exact links and source commits are in PORTFOLIO_PR_INDEX.json. No PR-creation backlog remains for the completed positive packets. Other investigated leads are preserved as source-bound research findings in PORTFOLIO_INDEX.md and portfolio/.
+
+Future integration must regenerate the combined citation manifest and run one shared integrated-current-main landing gate. Independent audit and new Lean formalization targets remain separate later work. No main merge or backlog drain has run.

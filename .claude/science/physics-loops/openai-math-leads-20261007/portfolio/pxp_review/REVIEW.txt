@@ -1,0 +1,210 @@
+Focused independent mathematical review — PXP uniform gap
+2026-10-07 America/New_York
+
+VERDICT: PASS on the frozen mathematical claim stated below.
+No proof-critical mathematical or computational defect was found. The proof
+and independently reproduced exact certificate establish the stated uniform
+finite-volume bound under the supplied model definitions. This is selective
+independent scientific review, not a formal audit, audit verdict application,
+source integration approval, or derivation of the supplied dynamics from the
+framework axioms.
+
+Exact accepted claim
+--------------------
+For each even L >= 6, on the Hilbert space spanned by binary independent sets
+of the periodic L-cycle, H_L = -sum_i P_(i-1) X_i P_(i+1) has a unique ground
+state and energy gap
+
+    gamma_L > log(25/14)/4.
+
+The supplied height-one periodic spin-1/2 link ring, with the original source's
+orientations, E=Z/2, U=(X+iY)/2, H=-sum_i(W_i+W_i^dag), and staggered static
+background, is unitarily equivalent on its entire Gauss sector to
+
+    H_PXP direct-sum 0 direct-sum 0
+
+for every even L >= 4. Consequently the same uniqueness and gap bound hold on
+the entire link-ring Gauss sector for every even L >= 6, including both frozen
+sectors. These statements fix the supplied coupling to one; a positive common
+coupling rescales the gap. They do not claim a thermodynamic-limit ground-state
+uniqueness theorem, the optimal gap, confinement, a wider-dimensional phase,
+photon identification, or framework-native dynamics.
+
+Frozen scope and source identities
+---------------------------------
+Candidate root:
+  /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution/pxp/
+Reviewed in full: RESULTS.txt, lines 1-389, SHA256
+  e067b14741facb2bee1d3705fdaa79eeb1dc834132dc0140ca31eb6a86c2ae8f.
+Reviewed complete implementations:
+  certify_seeds.py, lines 1-161, SHA256
+    61c945a097bd96c07a9f8bb408e3408fd84a260ef5a4575282e46ed3f2741a71;
+  check_transfer_and_dictionary.py, lines 1-124, SHA256
+    ec74b6702efd43845e6f64e884d0417b324a0ba2543ecaa10340a015b0e297ec.
+All entries of proof_manifest_v1.json were hash-checked, including both complete
+moment arrays, every stored rational bound and the transfer/dictionary data.
+The input hashes were checked again after the substantive checks and remained
+unchanged. Full input identities are in review_input_hashes.json here.
+
+The original link-ring note was read in full from repository commit
+  ed04ee2736b5bddb4e9064966505e3c3dfe003de,
+  docs/THE_SPIN_HALF_LINK_RING_IS_GAPPED_AND_CONFINING_THE_PHOTON_QUESTION_NEEDS_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md,
+SHA256 c0a3118bf0e484bdd485aca9334aba4e902d91cd3340b5f1185717028615a13f.
+Its explicit setting, orientations, algebra, Gauss equations, background and
+normalization supply the definitions checked here. None of its fitted spectral
+values, confinement diagnostics, three-dimensional results or audit labels is
+a premise of the new proof; those separate claims were not re-certified.
+
+The complete external bootstrap.tex, lines 1-289, was read. Its SHA256 is
+  e740ac5a29ea2041d788b648ef1b705138a1ff09c86b689514781511315421b4.
+The local external directory has no Git metadata, so an attempted Git identity
+check was inapplicable. A direct byte comparison against the pinned raw source
+at openai/math commit adc7f1241b42e322a6451854ab7e4b4c146bf78a succeeded; see
+external_provenance_check.json. Its spin-one initialization, transfer theorem
+and numerical certificates are not assumed here. The bootstrap actually used
+is completely re-proved in RESULTS.txt section 4 and was checked on that basis.
+
+Proof-critical coverage and findings
+-----------------------------------
+1. Worldline measure and Dyson/shuffle equality (RESULTS 67-113).
+   The site path measure has mass 2 cosh(b), including one atom for each
+   constant path. No missing factorial, escape-rate diagonal or probability
+   normalization appears. A fixed product of local ordered simplices splits
+   into global shuffle simplices, each of volume b^m/m!, with Jacobian one.
+   Sitewise even flip counts are exactly the trace return condition. Apart
+   from simultaneous flips and endpoint events, a null set on each stratum,
+   adjacent-path compatibility is exactly legality before and after every
+   single-site flip. Initial and final intervals have positive length, so
+   illegal endpoints are not accidentally admitted by the almost-everywhere
+   definition. Tonelli and the stated degree bound justify the summations.
+   Independent closed-word counting at L=4 gave t_0,t_2,t_4,t_6=7,16,80,448,
+   hence coefficients 7,8,10/3,28/45. This is a finite control of the analytic
+   bijection, not a replacement for its all-orders proof.
+
+2. Common spatial spectrum (RESULTS 115-133).
+   The compatibility kernel is measurable, bounded, real and symmetric on a
+   finite measure space. The stated Hilbert--Schmidt and compactness claims
+   follow. For L=2m, Tr(K^(2m))=||K^m||_HS^2 is valid; expanding the two kernel
+   chains and reversing one produces the cycle integral. This avoids a
+   potentially invalid diagonal-trace formula for an arbitrary kernel. Real
+   eigenvalues may be negative, but their even powers are nonnegative. The
+   same operator at fixed b works for every spatial length. No unproved
+   passage from finite Trotter spectra to a common limiting spectrum is used.
+
+3. Full two-purity bootstrap (RESULTS 163-226).
+   I rechecked the countable probability-square inequality, monotonicity of
+   f, both exact cancellation identities, the factorization defining G,
+   monotonicity of G, and the dyadic induction. All hypotheses are satisfied.
+   The norm inequalities have the correct directions in the interpolation
+   step: the denominator uses the upper bound for Z_L(b), while the numerator
+   uses the lower bound from Z_(2n)(2b). The resulting bracket is in (0,1] and
+   its exponent is at most one. Thus the purity bound holds for every even
+   intermediate length, not merely powers of two.
+   Physical Gibbs weights count multiplicities. Purity above 1/2 forces one
+   ground vector, and the ratio to the next distinct level yields the stated
+   gap. Nonscalarity ensures that level exists. The strict final inequality
+   follows from 3/[C(1-3u0)]<1, so replacing '>' by '>=' is unnecessary.
+   No comparison between the spectra of K_b and K_(2b) is assumed; the exact
+   partition-function cancellations supply the coupling between temperatures.
+
+4. Exact seeds, tails and scalar inequalities (RESULTS 232-282).
+   The author's rotation permutation is checked as a graph automorphism; its
+   orbit weighting therefore computes complete traces. The integer recurrence
+   for the common-denominator Taylor numerator is correct. The tail beginning
+   at k=257 is bounded by the geometric ratio (bL)/258<1. Using a lower numerator
+   and an upper denominator for each lower purity is the correct direction.
+   I independently rebuilt vertices as subsets of a cycle and edges by set
+   symmetric difference. For each source vertex I evolved A^k e_source and
+   summed every entry square, using Tr(A^(2k))=||A^k||_HS^2 through k=128.
+   This has no rotation reduction and does not use diagonal-return counts.
+   The edge parity check proves the odd traces vanish. All 257 moments at both
+   L=6 and L=12 match exactly, as do all rational partition-function endpoints
+   and all four purity endpoints for each sector choice. The implementation
+   uses only standard-library integer/Fraction arithmetic for these results.
+
+   Independently checked margins above the exact threshold 23/25, displayed
+   here only as approximate diagnostics:
+     dynamic PXP: S margin 0.004663091070621962,
+                  T margin 0.016553694822850355;
+     full ring:   S margin 0.004661301594081314,
+                  T margin 0.016553694821901988.
+   All comparisons themselves were exact rational comparisons. The four
+   downward-truncated decimal lower bounds printed in RESULTS were separately
+   verified against the exact fractions. The displayed G(2/25) fraction and
+   all bootstrap scalar conditions were also recomputed exactly.
+
+5. All-length Gauss dictionary and frozen sectors (RESULTS 284-338).
+   Adding the two Gauss equations makes t_i+b_i constant. Its possible values
+   exhaust {-2,0,2}. The two nonzero cases each fix every link and prohibit
+   both orientations of every plaquette, giving two distinct zero energies.
+   For flux zero, substituting t_i=s_i(1-2z_i), b_i=-t_i yields exactly
+   r_i=s_i[1-2(z_(i-1)+z_i)]. Requiring r_i=+/-1 forbids precisely adjacent
+   occupied sites. Even L is essential at the periodic seam and is preserved.
+   The basis map is bijective. Its site toggle flips exactly the four face
+   links with the correct raising/lowering orientation and unit coefficient.
+   Thus the operator identity follows for all even L>=4, independently of
+   any finite census extrapolation. Appending I_2 to the spatial operator
+   gives exactly Z_L(b)+2 and preserves every bootstrap hypothesis. Both full
+   sector seeds were checked, so no unsupported inference discards the frozen
+   eigenvalues when claiming the full-sector gap.
+   As an independent control, I enumerated all 2^(3L) link-sign assignments
+   for L=4,6 against vertex incidences constructed from directed edges; I then
+   generated plaquette factors from the oriented face loop. The dimensions
+   were 7+2 and 18+2 and every individual plaquette matrix entry matched.
+   This exhaustive control does not use the author's constant-flux builder.
+
+Discriminating controls and reproduction
+---------------------------------------
+independent_controls.py and its complete .json/.log outputs are in this review
+directory. Reproduction command:
+  python3 /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution/pxp_review/independent_controls.py
+The recorded run completed in about 5.3 seconds on one Python process, without
+BLAS, floating-point eigensolvers or a large allocation. Its complete source
+SHA256 is 998f79e216d1d55737171fcbccd6dd54f4ea57725d02a3bbda568682a0210079.
+
+In addition to the decisive exact seeds, this script checks the finite
+space/time trace identity using integer weights c=3,s=2 at L=4,6 and M=1,2,3,4.
+The identity is polynomial in these weights, so these are exact algebraic
+controls; they are not approximations of a particular inverse temperature.
+Removing the temporal seam or the hard-core compatibility fails every case.
+Reversing one plaquette factor produces Gauss-illegal outputs in the independent
+incidence test. These gates are sensitive to relevant defects. A seed threshold
+alone would not detect omitting the two frozen states; the independent sector
+census and exact endpoint comparisons address that distinct failure mode.
+
+I also executed the author's complete finite transfer/dictionary functions in
+read-only source mode and saved their outputs under this review directory.
+The numerical rows are identical to the frozen rows; maximum relative transfer
+disagreement is 2.2320281066467003e-15. All exact dictionary rows through L=16
+match. The reported M=8 continuum errors, about 0.1263 and 0.2043, are reproduced
+and correctly remain numerical finite-slicing diagnostics. See
+author_transfer_reproduction.json and author_transfer_reproduction.log.
+
+The coordinator's independent tuple/Hamming-graph, unreduced return-count
+implementation and output were inspected as corroboration. The review's exact
+Hilbert--Schmidt computation does not call or copy that implementation. Both
+checks share the explicit model definition and the frozen target; analytical
+review was informed by the proposed proof and was not a blind rediscovery.
+
+Limits, disposition and recovery
+-------------------------------
+There is no unresolved terminal mathematical obligation identified for the
+exact accepted claim. The proof is ordinary mathematical reasoning supported
+by exact executable finite certificates, not a formal proof-assistant result.
+Finite controls are not being used to infer an unproved all-length identity.
+No global literature-novelty or priority conclusion was checked or granted.
+No theorem about thermodynamic-limit representations, correlations,
+confinement, supplied-background selection, higher-dimensional photons or
+framework dynamics follows from this review.
+
+The result is suitable for source milestone packaging with these conditions
+and claim boundaries intact. Packaging must preserve the complete model,
+kernel construction, bootstrap proof and exact reproducible seeds. New proof,
+input or premise bytes require review of the affected closure; this PASS is
+bound to the identities above, not a blanket approval of later integration.
+The reviewer remains available in this same session for correction confirmation.
+
+Only this pxp_review directory was written. No repository source, editable
+prompt, skill, branch, PR, audit status or platform instruction was modified.
+REVIEW.txt is the current recovery checkpoint; the neighboring source-bound
+hash record and complete computational evidence are the supporting artifacts.

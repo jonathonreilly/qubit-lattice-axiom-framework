@@ -18,3 +18,7 @@ Conformance sections:
 12. Validation placement: focused source/runner checks, vocabulary lint, compilation and committed diff check apply here. The full pipeline, strict ledger lint and changed-evidence gate belong to one exact integrated-current-main landing pass; they are pending and are not misreported as run or passed on this author branch.
 
 Final author validation: vocabulary lint reported0 violations, Python compilation passed, exact runner cache remains fresh, and both staged and committed diff checks passed. Source milestone commit is `7d392547bdfd750bbe9dc3b1a3829e6c35627b06`. GitHub verified draft PR9466 as mergeable against main. No full landing pipeline or formal audit was run.
+
+## Portfolio follow-up, 2026-10-08
+
+The owner-directed accepted-import policy and five-unit PR inventory are recorded in PORTFOLIO_INDEX.md. This update changes only branch-local handoff and archived investigation material; the PXP theorem, runner, cache and graph manifest are byte-for-byte unchanged. Each follow-up PR carries its own complete note, runner, cache, exact review and scoped conformance record. No external formal rebuild gate was imposed on matching provider-verified imports.

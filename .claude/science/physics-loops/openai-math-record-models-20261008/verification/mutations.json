@@ -1,0 +1,38 @@
+[
+  {
+    "mutation": "activation_rate",
+    "exit_code": 1,
+    "failures": [
+      "FAIL A2 activation generator: 2466 exact state/rate forward equations"
+    ],
+    "mutant_sha256": "0c41603e7183f2a30492681ce367260da4708a30de371a72140daa2912cfad34"
+  },
+  {
+    "mutation": "arrow_parity",
+    "exit_code": 1,
+    "failures": [
+      "FAIL B2 width4 row dictionary: 256 occupation/arrow entries, separate local constraints",
+      "FAIL B2 width6 row dictionary: 4096 occupation/arrow entries, separate local constraints"
+    ],
+    "mutant_sha256": "d3a5fce18075e7812bc06cf18604b389fcf3067604f2843fc8094768e1efaf24"
+  },
+  {
+    "mutation": "ising_coefficient",
+    "exit_code": 1,
+    "failures": [
+      "FAIL C2 planar gas Ising identity: 4(B-2N)=-2V-sum spin products for all 65536 configurations"
+    ],
+    "mutant_sha256": "c0008db66c874b84d0575d6dd140ebf9e283b482c82becb3ad44e138cdd9e9d2"
+  },
+  {
+    "mutation": "at_coupling",
+    "exit_code": 1,
+    "failures": [
+      "FAIL D1 AT bond dictionary (3, 1, 2): 16 positive bond weights, exact rational fourth powers",
+      "FAIL D1 AT bond dictionary (3, 1, 1): 16 positive bond weights, exact rational fourth powers",
+      "FAIL D1 AT bond dictionary (5, 1, 2): 16 positive bond weights, exact rational fourth powers",
+      "FAIL D1 AT bond dictionary (Fraction(7, 3), Fraction(2, 5), Fraction(11, 7)): 16 positive bond weights, exact rational fourth powers"
+    ],
+    "mutant_sha256": "2dd5d0076202251604d3c7b7163e7eeb368043c9dcf41d0f212a79a8e5d7aa69"
+  }
+]

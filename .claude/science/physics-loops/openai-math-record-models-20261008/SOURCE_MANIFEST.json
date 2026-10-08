@@ -1,0 +1,102 @@
+{
+  "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de",
+  "external": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "files": [
+    {
+      "path": "docs/RECORD_ACTIVATION_CRITICALITY_AND_CONDITIONED_PLANAR_MODELS_BOUNDED_THEOREM_NOTE_2026-10-08.md",
+      "sha256": "acf323362ee9896a3ac69dea12e1c8b415b95b283a297b055fc76b994ee93ed8"
+    },
+    {
+      "path": "scripts/record_activation_criticality_and_conditioned_planar_models_2026_10_08.py",
+      "sha256": "ef74090f208f1ded5ff1f63c4ba3231c850f0541868bffe21d9f9707a0efee71"
+    },
+    {
+      "path": "logs/runner-cache/record_activation_criticality_and_conditioned_planar_models_2026_10_08.txt",
+      "sha256": "5213d712d3326270730e2a628c49e125e834e0ca0c6909275f6c5fee5784f06a"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "01e783345d98bc808b64494064780cf6364c880c94f9a20e0346b1e301e986e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/APPROACH_A.md",
+      "sha256": "ecbbd19feb55dddfccfa47cfc044ad0759db713fbb065eddf8ce9f30f5d533e7"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/ASSUMPTIONS_TRIED.md",
+      "sha256": "45a1c80cebbb1b0dd94f80f325a5275e68309c471cf4e8f405f5e888fe5655b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "9019f704239795ceffdf502c3c30c83c04a3aa645f42d29c04e92d8bfeab9e1a"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/GOAL.md",
+      "sha256": "32df2a4c6fc222437acf91fd40ed605bd0a09f8e9fd7190c47f988c448a4af1b"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/HANDOFF.md",
+      "sha256": "1b73912e3958dbf8acb734e3c91b05156c51407abd5abb3759484f2bdf50883f"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/OWNER_DIRECTION_2026-10-08.md",
+      "sha256": "477a95479b545c74e05078d35d8e7167ce16324c913e5f7302fb6e6af5f764e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/PR_BACKLOG.md",
+      "sha256": "29ac2204c4bce543b8d82a46e73d0c09b73eed9b7b20fd2a88bbde74d3258ad2"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/REVIEW_HISTORY.md",
+      "sha256": "2bca1c862cf9c858df452f393060439cabe387e41d46078bf4c52647a58fe6c6"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/STATE.yaml",
+      "sha256": "098a8a84c3f73c5da83f7575fe305ab5c4895280a85133ac2988fc589b048b27"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/TRACE_GATE.md",
+      "sha256": "c87470faeb0ca4fbc51468196d9a9db0865520930ee49cacd0ef7293a662e2ab"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/review/INDEPENDENT_REVIEW.txt",
+      "sha256": "f835d0679a555842adbbf4134e366ea932b1f7819797e045e4a3229a567c8d3a"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/verification/activation_rate.log",
+      "sha256": "7fabdf643314c777a9703d24be40ea7a9f678194e981dd212f96e99886060ea6"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/verification/activation_rate.py",
+      "sha256": "0c41603e7183f2a30492681ce367260da4708a30de371a72140daa2912cfad34"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/verification/arrow_parity.log",
+      "sha256": "3686c4f0531949a0b2f8e7ceca4f8ca61d6c5003b3ef5015c96931b99277f822"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/verification/arrow_parity.py",
+      "sha256": "d3a5fce18075e7812bc06cf18604b389fcf3067604f2843fc8094768e1efaf24"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/verification/at_coupling.log",
+      "sha256": "b4a0caddf9d0107d85032428abefc34eae727efb0045de7417f206f38eabfd22"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/verification/at_coupling.py",
+      "sha256": "2dd5d0076202251604d3c7b7163e7eeb368043c9dcf41d0f212a79a8e5d7aa69"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/verification/ising_coefficient.log",
+      "sha256": "c67138b9500064ad4e8118fb0750db3fd967dda91a00d00117d0ce534c89acda"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/verification/ising_coefficient.py",
+      "sha256": "c0008db66c874b84d0575d6dd140ebf9e283b482c82becb3ad44e138cdd9e9d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-record-models-20261008/verification/mutations.json",
+      "sha256": "0e00b18f1dde9af515ad3550e3ecb80d6d3c9e002cd787f5afac62a10e9cd8e2"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+Selective independent source review — 2026-10-08
+Reviewer: supervising root, separate from the packet author. This is ordinary mathematical review, not formal retained audit or a Lean build.
+
+Reviewed complete note (215 lines), standalone runner (223 lines), full fresh runner-cache envelope, source delivery and the pinned CriticalZ3 Main exported site theorem. Accepted provider verification is used, not held pending an external rebuild.
+Source identities:
+note SHA256 acf323362ee9896a3ac69dea12e1c8b415b95b283a297b055fc76b994ee93ed8
+runner SHA256 ef74090f208f1ded5ff1f63c4ba3231c850f0541868bffe21d9f9707a0efee71
+cache SHA256 5213d712d3326270730e2a628c49e125e834e0ca0c6909275f6c5fee5784f06a
+OpenAI/math adc7f1241b42e322a6451854ab7e4b4c146bf78a; repo base ed04ee2736b5bddb4e9064966505e3c3dfe003de.
+
+Verdict: no proof-critical defect found in the stated conditional mathematics.
+
+Substantive checks:
+- Reconstructed the finite-cylinder product law directly from independent Exp(lambda) clocks, independently of the runner's forward equations. Countable cylinder uniqueness gives the infinite flag law. The decreasing-path factorial bound and local finiteness justify content assignment without a first global event. Content marks never change activation times. The supplied open-endpoint cluster definition and fixed deterministic critical time match the imported all-site result; p_c>=1/5 and the accepted strict upper bound justify the logarithm.
+- Checked the even-torus occupancy/arrow inverse at both parities and the divergence-sum conservation of horizontal cut flux. The explicit balanced restriction is substantive; no assumption about the other winding enters. The limiting GFF application retains the paper premise, its limit order, unit height jump and mean-zero test condition. It is not described as Lean-verified.
+- Re-derived the planar edge identity: sum sigma_x sigma_y=-2V+8N-4B, after the complementary vertical boundary changes activity from zeta to zeta*g. Thus zeta=g^-3 indeed gives zero field with K=-log(g)/4. The unrestricted cubic phase is not inferred.
+- Reconstructed equal/opposite/orthogonal four-state weights and the equivalence p>q, q<=r, p-q=2r for the specified Ashkin–Teller parameter line. The missing joint primal/dual current coupling is explicit and is not silently imported.
+- Read the complete executable and output. Its arithmetic checks the displayed finite identities; it does not numerically infer any infinite-volume theorem.
+
+Independent runner defect injections are preserved in record-models-checks/mutations.json and separate full logs: altered activation loss rate, reversed arrow parity, wrong Ising coefficient, and doubled AT coupling each fail at the corresponding scientific check, exit1 without import failures. The original source was not mutated. This checks detector sensitivity, not mathematical independence of the external theorems.
+
+Limits: no fresh Lean formalization, production rebuild, retained audit, physical law/readout selection, removal of planar conditioning, numerical p_c, or proof of E225 is claimed. Later Lean bridge targets are concrete audit follow-ups. All unsupported generalizations remain outside the conclusions.
+
+Final packaging delta inspected: only the status sentence now points to this completed selective review and keeps formal audit unset. Arguments and runner unchanged.

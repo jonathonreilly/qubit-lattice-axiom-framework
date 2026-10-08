@@ -1,0 +1,24 @@
+PASS A1 tensor probabilities: 9 exact finite product laws normalize
+PASS A2 activation generator: 2466 exact state/rate forward equations
+PASS A3 content projection: 81 blank-site kernels keep the same flag rate
+PASS A4 state-dependent-rate control: altered singleton derivative=-1/4, iid derivative=0
+PASS A5 static gas Bernoulli law: exact activity-to-density map on 9 finite gases
+PASS B1 local conditioned ice: cubic states=20, fixed-complementary-vertical states=6
+PASS B2 width4 row dictionary: 256 occupation/arrow entries, separate local constraints
+PASS B3 balanced 4x4: occupation=1682, arrows=1682
+PASS B3 balanced 6x4: occupation=67082, arrows=67082
+PASS B4 odd-period control 3x4: occupation=242, arrows=276
+PASS B5 sector restriction is substantive: 4x4 all sectors=2970, balanced=1682
+PASS B2 width6 row dictionary: 4096 occupation/arrow entries, separate local constraints
+PASS B3 balanced 4x6: occupation=46858, arrows=46858
+PASS B3 balanced 6x6: occupation=9399280, arrows=9399280
+PASS B4 odd-period control 3x6: occupation=2600, arrows=3520
+PASS C1 complementary vertical gas boundary: one vertical occupied bond per plane record in all 65536 configurations
+PASS C2 planar gas Ising identity: 4(B-2N)=-2V-sum spin products for all 65536 configurations
+FAIL D1 AT bond dictionary (3, 1, 2): 16 positive bond weights, exact rational fourth powers
+FAIL D1 AT bond dictionary (3, 1, 1): 16 positive bond weights, exact rational fourth powers
+FAIL D1 AT bond dictionary (5, 1, 2): 16 positive bond weights, exact rational fourth powers
+FAIL D1 AT bond dictionary (Fraction(7, 3), Fraction(2, 5), Fraction(11, 7)): 16 positive bond weights, exact rational fourth powers
+PASS D2 AT parameter-line controls: (3,1,2) off line; (3,1,1) endpoint; (5,1,2) interior
+SCOPE: finite algebra and probability checks; external critical extinction and paper-premised GFF are not numerically tested
+TOTAL: PASS=18 FAIL=4

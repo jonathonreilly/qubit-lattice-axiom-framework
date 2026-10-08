@@ -18,6 +18,15 @@ generic software review. Its job is to protect the live claim boundary:
 retained/Nature-grade claims must have artifact support, imported values must
 be explicit, and support-only results must not be promoted by prose.
 
+Original definitions, constructions, derivations, and proofs are welcome.
+Review their actual argument and premises; absence of a prior publication or
+citation is not a defect. New mathematics is distinct from adopting a physical
+axiom or primitive. Under `docs/ai_methodology/SCIENCE_WORKFLOW.md`, complex
+proofs may need Lean verification during audit. Name a concrete unresolved
+proof risk when requesting it; do not impose a blanket Lean or external-review
+gate on otherwise supported original work. A provider's checked theorem covers
+only its matching formal statement, not a new bridge or physical identification.
+
 ## Model And Tool Boundary
 
 Review-loop is a text/code/math review path. Owner direction (2026-09-08):

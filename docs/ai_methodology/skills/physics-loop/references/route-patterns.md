@@ -24,8 +24,10 @@ terminal obligations. Do not treat artifact type as approach-family diversity.
   with no hidden derivation claim.
 - `no-go/obstruction`: collapse a tempting route family into reusable negative
   evidence.
-- `novel construction`: introduce a new mathematical object only when ordinary
-  routes cannot close the gate; include a falsifier and artifact plan.
+- `novel construction`: introduce a new mathematical object when it offers a
+  plausible route to the target; give explicit definitions, hypotheses, a
+  falsifier, and an artifact plan. Check prior work, but do not require proof
+  that ordinary routes are exhausted before developing original mathematics.
 
 ## Dramatic-Step Score
 

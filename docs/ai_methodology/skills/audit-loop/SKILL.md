@@ -15,6 +15,18 @@ without automatically executing the workflow or replacing it with old main text.
 
 Use this skill to audit one claim at a time from the repository audit queue and land the audit result. The standard is hostile field review: the claim must survive an adversarial physicist looking for hidden imports, circular logic, definition-as-derivation, stale numerics, misidentified observables, and overstated closure.
 
+Original mathematics is permitted. Audit a new derivation or proof on its
+argument, hypotheses, and evidence; lack of prior publication is not a failure
+or an imported premise. Complex or load-bearing proofs may need Lean
+verification as part of this audit: name the exact unresolved statement and
+verification risk under `docs/ai_methodology/SCIENCE_WORKFLOW.md`. Check formal
+statement/model correspondence and declared axioms. Accept applicable provider
+Lean-verified mathematical support without a duplicate external-verification
+gate; unformalized companions and new bridges need their own evidence. The
+restricted auditor uses only its supplied packet and tools and reports gaps
+through existing fields. This policy neither invokes audit nor changes verdict
+authority or the response schema.
+
 ## Scope and research cadence
 
 An explicit audit request invokes this lane. Mentioning audit in a science,

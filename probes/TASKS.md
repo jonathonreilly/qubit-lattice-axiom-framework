@@ -46,3 +46,8 @@ Hand-written (`probes/tasks/*.json` has the exact commands, hit patterns and par
 ## Reviewed science work - 2026-10-04
 
 Ten focused J units: [work map](review-science-20261004.md), [exact task definitions](tasks/review-science-20261004.json). These are proof, certification and seed-error obligations against pinned source, not PR snapshots. The clock-policy repair needs actual cache recapture; the ice draft needs independent-seed errors. Claim through the existing maximum-thinking J campaign. Stale generated tasks for closed/transferred PRs have been retired from TASKS.json.
+
+
+## Remaining OpenAI-math bridge work - 2026-10-08
+
+One focused J task selects and advances a concrete remaining interface from the reviewed portfolio: [task definition and pinned source evidence](tasks/review-science-20261008.json). The five canonical milestones landed on main. This is new mathematical work, not a PR review or snapshot recovery task. No workers are launched by this entry.

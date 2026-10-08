@@ -97,3 +97,6 @@ The [review-drain recovery bundle](work/deferred-science-20260924/README.md) pre
 ## Reviewed source obligations - 2026-10-04
 
 [Ten focused J work tasks](review-science-20261004.md) advance the remaining comparator, physical-clock and ice-covariance obligations after the PR drain. Claim them through the normal maximum-thinking judgment queue. This catalog transfer launches no workers and copies no PR snapshot packs.
+
+
+[Remaining OpenAI-math bridge work](tasks/review-science-20261008.json) is enrolled in the existing J queue after the six-PR landing. Advance one concrete proof interface; the pinned historical reports are context, not accepted science or duplicate-verification gates.

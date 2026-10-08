@@ -1,0 +1,61 @@
+[
+  {
+    "id": "J:derive:review-20261008-portfolio-next-bridge:a1",
+    "problem": "review-20261008-portfolio-next-bridge",
+    "title": "Advance one remaining OpenAI-math model bridge",
+    "type": "judgment",
+    "lane": "review-science-20261008",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Select and advance ONE exact mathematical interface remaining outside the five landed OpenAI-math milestones. Start from the pinned portfolio: Wilson normalization and neutral-mode control (215); phase/gauge and boundary twist (261); matching/gadget controls (113/120); dimer entropy/coefficient selection (265); Spin(10) phase interface (204); finite-centralizer hypothesis mismatch (290); or stationary moving-record interfaces (145/154). Read the actual model and theorem statements and current main before choosing. Prioritize a bridge with a concrete new proof obligation and feasible decisive control. Preserve the existing hypothesis mismatches as local comparisons, not general impossibility theorems. The corrected family145 noninvertible-endomorphism observation and the five already-landed results are background, not new hits. Prove a scoped new bridge, give an exact counterexample to a proposed bridge, or record a substantive partial derivation and its first unresolved step. Do not reopen or copy the closed PR packages, demand duplicate verification of a matching accepted Lean theorem, or silently extend a paper-only result to a formalized companion.",
+    "source_paths": [
+      ".claude/science/physics-loops/openai-math-leads-20261007/PORTFOLIO_INDEX.md",
+      ".claude/science/physics-loops/openai-math-leads-20261007/portfolio/REPORT.txt",
+      ".claude/science/physics-loops/openai-math-leads-20261007/portfolio/root/RESULTS.txt",
+      ".claude/science/physics-loops/openai-math-leads-20261007/portfolio/continuum/RESULTS.txt",
+      ".claude/science/physics-loops/openai-math-leads-20261007/portfolio/kinetic/RESULTS.txt"
+    ],
+    "source_branch": {
+      "name": "physics-loop/openai-math-leads-20261007",
+      "head": "845c625265a4bba3caba176f4155c4f513eb04f5",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": ".claude/science/physics-loops/openai-math-leads-20261007/PORTFOLIO_INDEX.md",
+        "sha256": "6f6fac04524ba85260bafa9694f14d8d6861f560fe8b5aee1b689a98740bd779",
+        "commit": "845c625265a4bba3caba176f4155c4f513eb04f5"
+      },
+      {
+        "path": ".claude/science/physics-loops/openai-math-leads-20261007/portfolio/REPORT.txt",
+        "sha256": "c5446cf2344ee782a2975acea1b0f8f60af22d9f2a09d3a828136da6bfa3f83c",
+        "commit": "845c625265a4bba3caba176f4155c4f513eb04f5"
+      },
+      {
+        "path": ".claude/science/physics-loops/openai-math-leads-20261007/portfolio/root/RESULTS.txt",
+        "sha256": "94d30e2a899d77a2847b7bbf95ef8a34632f95b0cfc77f557c6fccd435838e2e",
+        "commit": "845c625265a4bba3caba176f4155c4f513eb04f5"
+      },
+      {
+        "path": ".claude/science/physics-loops/openai-math-leads-20261007/portfolio/continuum/RESULTS.txt",
+        "sha256": "cc51c022a533c3bc65e217f8d0a120a272795be7f3b715a75683863e7539b3a1",
+        "commit": "845c625265a4bba3caba176f4155c4f513eb04f5"
+      },
+      {
+        "path": ".claude/science/physics-loops/openai-math-leads-20261007/portfolio/kinetic/RESULTS.txt",
+        "sha256": "5aa044e3457684c5a6f94fdc1f8795082053cdb29f77b400329ccdc01b63617c",
+        "commit": "845c625265a4bba3caba176f4155c4f513eb04f5"
+      }
+    ],
+    "landed_main": "17a95e60d85afc246fc7c163adef8869ab3f4194",
+    "related_tasks": [],
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation with the first unresolved step; retrieval, review summaries and already-known mismatches are not completion.",
+    "what": "Select and advance ONE exact mathematical interface remaining outside the five landed OpenAI-math milestones. Start from the pinned portfolio: Wilson normalization and neutral-mode control (215); phase/gauge and boundary twist (261); matching/gadget controls (113/120); dimer entropy/coefficient selection (265); Spin(10) phase interface (204); finite-centralizer hypothesis mismatch (290); or stationary moving-record interfaces (145/154). Read the actual model and theorem statements and current main before choosing. Prioritize a bridge with a concrete new proof obligation and feasible decisive control. Preserve the existing hypothesis mismatches as local comparisons, not general impossibility theorems. The corrected family145 noninvertible-endomorphism observation and the five already-landed results are background, not new hits. Prove a scoped new bridge, give an exact counterexample to a proposed bridge, or record a substantive partial derivation and its first unresolved step. Do not reopen or copy the closed PR packages, demand duplicate verification of a matching accepted Lean theorem, or silently extend a paper-only result to a formalized companion. Owner-requested scientific work transfer. Use the existing maximum-thinking J campaign and claim.py ownership protocol; inspect completed attempts and active claims to avoid duplication. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py, and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a demonstrated new result or defect. Follow ordinary cross-model confirmation; this catalog addition starts no workers, changes no budgets and creates no PR snapshots or audit authority."
+  }
+]

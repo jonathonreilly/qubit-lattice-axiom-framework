@@ -1,0 +1,174 @@
+Focused independent mathematical review — supplied ferromagnet packet
+2026-10-08
+
+VERDICT: PASS on the corrected, source-bound packet below.
+One normalization error was found and corrected in this same session. No
+remaining substantive mathematical defect was identified. The order/KMS result
+is supported by the owner-accepted matching OpenAI Lean theorem plus the new
+dictionary checked here. The Bloch-law consequence remains explicitly
+conditional on its separate paper premise. This is not a retained-status audit.
+
+Reviewed package
+----------------
+Root: /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/heisenberg-import/
+Base commit: ed04ee2736b5bddb4e9064966505e3c3dfe003de.
+The applicable SCIENCE_WORKFLOW.md hash is unchanged from the prior review:
+  d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4.
+
+Read complete note, runner and paired cache:
+  docs/SUPPLIED_FERROMAGNET_ORDER_AND_LOW_TEMPERATURE_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-10-08.md
+    SHA256 15111d943236d65b6da32c8ec96ba0c823cd6c3db1bcf7fe73b5b5b0326b7590
+  scripts/supplied_ferromagnet_order_and_low_temperature_normalization_2026_10_08.py
+    SHA256 8c131ecb04243eef3a2e9cf2ee8e99785b8b025c1e036fa201a0c8d2f1da4f26
+  logs/runner-cache/supplied_ferromagnet_order_and_low_temperature_normalization_2026_10_08.txt
+    SHA256 d84847c67bb42229a8829d5d84fd0e7929a1b9413b1f05d51bb4ca1b57fe0ea4
+
+Concrete finding and same-session correction
+-------------------------------------------
+The initial note, SHA256 87cd61a76f3e0eddc9c04906f0c03bc5a36aa1abbcba3ff977ce10b0ef768a1a,
+reversed the field coefficient at lines 185-186. For the same energy term,
+Z=2S_z implies h_S=2h_sigma, not the reverse. The corrected note now states
+  -h_sigma sum Z = -h_S sum S_z, with h_S=2h_sigma.
+I checked that correction directly. Reversing only this edit reproduces the
+initial fully read source hash, confirming that no other note content changed.
+The runner/cache were unchanged. The displayed asymptotic coefficients were
+already correct; the erroneous sentence did not enter Theorem 1's KMS proof.
+
+Substantive mathematical checks
+------------------------------
+1. External theorem and hypotheses (note 73-90, 100; Main.lean 60-69).
+   The accepted theorem has d>=3 and ell>=1 and provides both DynamicsConverges
+   and, for every beta beyond a positive threshold, a translation-invariant
+   KMS state with real spin-Z expectation at least ell/8. Specializing to
+   d=3, ell=1 is valid. Comparator selection and the stated scope agree with
+   the production theorem. The accepted scope does not include the later
+   Bloch coefficients. I did not require or perform a local Lean rebuild,
+   comparator execution or recursive verification of the external library.
+
+2. Qubit orientation and coupling (note 100-119; production Model.lean 195-223).
+   The production matrix unit acts as |a><b|, and magnetic levels are k-ell/2.
+   At ell=1, S+=(|1><0|), giving (S_x,S_y,S_z)=(X,-Y,-Z)/2. Conjugation by
+   X therefore sends all three external spin matrices to the standard Pauli
+   matrices divided by two. The unordered-edge definition selects exactly
+   one orientation of each nearest-neighbor bond. Consequently
+   Phi(H_0)=-sum sigma_x dot sigma_y/4 and H_J=kappa Phi(H_0), kappa=-4J>0.
+   No factor two from directed bonds or sign reversal is missing.
+
+3. Infinite-volume algebra bridge (note 100-114).
+   The production construction is on l2 of finitely supported level
+   configurations. For each finite Lambda, split a configuration into its
+   restriction to Lambda and its outside restriction. The resulting Hilbert
+   space is a direct sum, indexed by outside configurations, of copies of the
+   ordinary finite tensor space. Every Lambda-local matrix acts as the same
+   matrix on each copy. Its operator norm is therefore exactly the ordinary
+   finite matrix norm, and its representation is faithful. The generated
+   local algebra is the union of finite tensor matrix algebras; its norm
+   closure is the quasilocal algebra in the note. This verifies the asserted
+   isometric identification rather than assuming a reference representation
+   supplies an arbitrary tensor norm.
+   The product of on-site conjugations is compatible with identity embeddings
+   and is isometric, so it extends uniquely to the completion. Applying it
+   twice is the identity. It commutes with translations because the same X is
+   used at each site. The note correctly avoids assuming an infinite-product
+   unitary on the particular reference Hilbert space.
+
+4. Dynamics and KMS scaling (note 121-134; Model.lean 225-256).
+   The imported dynamics uses exp(+itH) A exp(-itH), with expanding free boxes,
+   matching the note. The finite-volume intertwining passes through the norm
+   limit by isometry. With beta_ext=kappa beta, the function
+   F_J(z)=F_ext(kappa z) preserves boundedness, continuity, analyticity and both
+   KMS boundary identities, since kappa is positive. Thus beta_c=beta_0/kappa,
+   not kappa beta_0. Pullback by Phi^{-1} preserves the state conditions and
+   translation invariance. Finally Phi(S_z)=Z/2 implies
+   omega_J(Z)=2 omega_ext(S_z)>=1/4 with zero imaginary part. The theorem is
+   existence of an infinite-volume ordered state, not uniqueness, finite
+   zero-field Gibbs magnetization, preparation or a numerical critical point.
+
+5. One-flip and Gaussian identities (note 144-169).
+   The two-spin Pauli dot matrix has diagonal entries 1,-1,-1,1 and exchange
+   entries 2 in the one-down subspace. Subtracting the all-up energy therefore
+   gives -2J times the graph Laplacian on the one-flip sector. On Z^3 its
+   symbol is -4J sum(1-cos k_a), hence D=-2J and the quartic coefficient is
+   -D/12. The 3x3x3 periodic graph has 27 sites and 81 distinct bonds; its
+   six neighbors are distinct, so the runner's geometric Laplacian convention
+   agrees with its independently assembled bond action.
+   Integration by parts yields I_2=I_0/(2a), I_4=3I_0/(4a^2). Summing the
+   three quartic terms and multiplying by a/12 gives 3/(16a) relative to the
+   leading Gaussian. The note correctly integrates a polynomial correction,
+   not a nonintegrable exponential with positive quartic tail.
+
+6. Paper-only coefficients and order of limits (note 171-191).
+   The paper's introduction defines the free-box Hamiltonian with each bond
+   once, pressure normalized by beta times volume, and magnetization as the
+   right derivative of the thermodynamic pressure. Its displayed corollary is
+   S-m_S = zeta(3/2)/(8*pi^(3/2)) (beta_ext*S)^(-3/2)
+           +3*zeta(5/2)/(128*pi^(3/2)) (beta_ext*S)^(-5/2)
+           +o((beta_ext*S)^(-5/2)).
+   A direct finite-volume conversion, followed by the stated limits, gives
+     p_J,beta(h_sigma)=kappa p_(1/2),kappa*beta(2h_sigma/kappa),
+     m_sigma(beta)=2 m_(1/2)(kappa*beta).
+   Therefore beta_ext*S=beta*(-2J), and doubling the deficit gives exactly
+   the two coefficients printed in the note. Fixed J<0 also converts the
+   remainder to o(beta^(-5/2)). The note preserves volume first, positive field
+   to zero second, and low temperature last, and does not identify this
+   pressure-derived magnetization with an arbitrary state from Theorem 1.
+   The Gaussian calculation alone does not establish the interacting
+   many-body remainder; the packet states that limitation correctly.
+
+Executable evidence
+-------------------
+A fresh execution of the complete packaged runner exited zero with empty
+stderr and reproduced the complete paired-cache stdout exactly. I read the
+four mutation sources as diffs and their complete failure logs in
+followup_20261008/heisenberg-checks/: missing basis flip, wrong coupling factor,
+halved exchange amplitude and wrong quartic dispersion are rejected by their
+corresponding substantive assertions. The runner's sampled strip-coordinate
+inequalities are finite controls only; the general KMS conclusion rests on
+the analytic strip map checked above. No PASS count was used as a proof.
+
+External source identities and coverage
+---------------------------------------
+All OpenAI sources below use the accepted pinned revision
+adc7f1241b42e322a6451854ab7e4b4c146bf78a of https://github.com/openai/math.
+Existing local prefix:
+  /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/lattice_review/external/
+Complete accepted theorem/definition/scope reads:
+  lean/OAI/MathematicalPhysics/Heisenberg/Main.lean
+    SHA256 7da9e12ca2a72bb7bf46938aac31dd0ec2c48ecba45eb3f903677cbdbccdc612
+  lean/ComparatorChallenges/Heisenberg.lean
+    SHA256 e943ce9c82349d3555fc658b69cb65bdd9968f293b1f0a4e137cf3fb05ab2bce
+  lean/ComparatorChallenges/Heisenberg.json
+    SHA256 d0bb6369997304d6e50061cfdfa63acc8ff3d653d9cf21f148c8e3508b6ece95
+  lean/docs/271.md
+    SHA256 a3f93c62adc355080af9fc64ced806c979f5abd41c7359749b1c55ef8dd5a883
+Paper scope/model/statement read, not an independent proof audit:
+  preprints/The-first-lattice-correction-to-Blochs-law-October-5-2026/build/main.tex
+    SHA256 fbf731b46c34d504c261a9d0000ea78be35f5671005a1b42048db1e6fa389109
+  same build/sections/01-introduction.tex, complete, especially lines 12-63
+    SHA256 7b071a40e16ac21f80ccea229603cb62092494ccc1eaf9c4d506902b387adb8f
+
+Production sources fetched with coordinator authorization into
+  /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/imports/
+For each filename below the exact source URL is
+  https://raw.githubusercontent.com/openai/math/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/MathematicalPhysics/Heisenberg/<filename>
+  Model.lean — complete 261-line read; production model, state and KMS definitions
+    SHA256 3c2407c5b898c917ded7aff4def47dcd6cd7d692a52bee461e59c6fa9c36c61c
+  LocalAlgebra.lean — selected matrix-unit relations and adjoint/norm definitions,
+    principally lines 1-159; not a complete external-library audit
+    SHA256 98968221b64d626e754e611a3a2b1dacaf872d8644fb1ae9a441cafa21aff44d
+  LocalDynamics.lean — local-core density/finite-support passage, lines 203-246;
+    not its complete convergence proof, which is accepted through the import
+    SHA256 f1bdc3dd4002eef2353a8437ea795e3cfd079422841aec6eed96c935ff4e27a3
+
+Disposition and limits
+----------------------
+The new bridge is mathematically sound on the corrected source. It supports
+the supplied isotropic J<0 equilibrium-order corner and the stated conditional
+normalization consequence, with no derivation of J, the Hamiltonian, physical
+time, temperature, preparation or observable readout from framework axioms.
+No local Lean build or verification of the paper's transitive proof was run or
+required. This review grants no formal audit status or conclusion for other
+couplings or models. Only this review file and the specifically authorized
+downloaded source copies were written; no repository source, prompt, skill,
+commit or status file was changed by the reviewer. New source/premise changes
+require confirmation of the affected closure in this same review session.

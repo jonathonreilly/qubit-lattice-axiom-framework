@@ -1,0 +1,102 @@
+{
+  "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de",
+  "external": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "files": [
+    {
+      "path": "docs/SUPPLIED_FERROMAGNET_ORDER_AND_LOW_TEMPERATURE_NORMALIZATION_BOUNDED_THEOREM_NOTE_2026-10-08.md",
+      "sha256": "15111d943236d65b6da32c8ec96ba0c823cd6c3db1bcf7fe73b5b5b0326b7590"
+    },
+    {
+      "path": "scripts/supplied_ferromagnet_order_and_low_temperature_normalization_2026_10_08.py",
+      "sha256": "8c131ecb04243eef3a2e9cf2ee8e99785b8b025c1e036fa201a0c8d2f1da4f26"
+    },
+    {
+      "path": "logs/runner-cache/supplied_ferromagnet_order_and_low_temperature_normalization_2026_10_08.txt",
+      "sha256": "d84847c67bb42229a8829d5d84fd0e7929a1b9413b1f05d51bb4ca1b57fe0ea4"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "de4ae3b4bd165804a2c0ccfb551c66a26fe4b2f49ff2aab8f22a5933e522aa03"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/APPROACH_A.md",
+      "sha256": "7f2457befed0f0cb658436490342691a462951888fdf762371725fe3bc477b4f"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/ASSUMPTIONS_TRIED.md",
+      "sha256": "5541f87e830f9e68b2d049dc21ccf7a275be66e738a9bf4dfee0f36e44767ede"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "1fd26dd8c0e92f6076de156b94852c8c6e5719851fc7705664a5daff3b66e003"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/GOAL.md",
+      "sha256": "ad99153ce3053701ea080bb2b7ac0ec68949d5915f0d007dd56c0aa0f925aa3e"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/HANDOFF.md",
+      "sha256": "334b9c81b81e44abb4a4348f2088fcb185d87de9f5d211d26b1b485316d44f35"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/OWNER_DIRECTION_2026-10-08.md",
+      "sha256": "28d0183d57ff3e500b24d4ccc7d8dd03aaf18a6be5b28e64a03f9c0310b97a0e"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/PR_BACKLOG.md",
+      "sha256": "29ac2204c4bce543b8d82a46e73d0c09b73eed9b7b20fd2a88bbde74d3258ad2"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/REVIEW_HISTORY.md",
+      "sha256": "a2af3ae4e099447f8718b3e09b5ee9f445b7367dbe9c5a8ae3cc10d094637d30"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/STATE.yaml",
+      "sha256": "7fa73bfd4f26064c431cbc8ad59d8c8b065465c334ff0d131a239dc014c4971f"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/TRACE_GATE.md",
+      "sha256": "cbf034335f9eef5f4f64436ebbca1e72b722e7b4bc73dfd6a12cfd20ebfc2ee1"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/review/INDEPENDENT_REVIEW.txt",
+      "sha256": "285dc89bcd90db7f611ce1c4b9e07196f5868e50da95d86ee52e923d5a1b0fb4"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/verification/basis_orientation.log",
+      "sha256": "8765766eee4dbc31f2dead34e56ddf2ae0414be5ea1f57839d611de352168a89"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/verification/basis_orientation.py",
+      "sha256": "bd51f20dda37163178e86c07a38910da1a7576825f1666e82e09b77ec28104fb"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/verification/coupling_factor.log",
+      "sha256": "8413daca2acbbdbb81991c4e2e9f29fa3f68b764aa601330e9652f47e944f83a"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/verification/coupling_factor.py",
+      "sha256": "52c59273c9c0d55128903c19c539243db493f6c949be18e88ea65380f2c9947c"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/verification/flip_amplitude.log",
+      "sha256": "4218743851629462c28652bc6e2df1d0a6feffa4d120db4a97b0cec7c7f4a879"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/verification/flip_amplitude.py",
+      "sha256": "cbb2a03b22883cf46a8180aa77b901049f518df4b85df328397a62f40467e35b"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/verification/mutations.json",
+      "sha256": "2a54fc6ef8e0836f2dd4f9653eb37383b4bca997e0a82f84940e6ebe0c3911ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/verification/quartic_dispersion.log",
+      "sha256": "130794f8a68b91ea403cc80209114fb73a1955fc91d9741c718e625ad48de277"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-heisenberg-import-20261008/verification/quartic_dispersion.py",
+      "sha256": "743191b57d74d8ae8b3ac30f54b448da18cd770c4ddbd8c827e41e0cefa1ca4d"
+    }
+  ]
+}

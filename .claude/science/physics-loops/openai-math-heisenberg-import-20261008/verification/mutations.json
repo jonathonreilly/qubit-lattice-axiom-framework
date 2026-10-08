@@ -1,0 +1,29 @@
+{
+  "source_sha256": "8c131ecb04243eef3a2e9cf2ee8e99785b8b025c1e036fa201a0c8d2f1da4f26",
+  "mutations": [
+    {
+      "case": "basis_orientation",
+      "returncode": 1,
+      "caught": true,
+      "log": "basis_orientation.log"
+    },
+    {
+      "case": "coupling_factor",
+      "returncode": 1,
+      "caught": true,
+      "log": "coupling_factor.log"
+    },
+    {
+      "case": "flip_amplitude",
+      "returncode": 1,
+      "caught": true,
+      "log": "flip_amplitude.log"
+    },
+    {
+      "case": "quartic_dispersion",
+      "returncode": 1,
+      "caught": true,
+      "log": "quartic_dispersion.log"
+    }
+  ]
+}

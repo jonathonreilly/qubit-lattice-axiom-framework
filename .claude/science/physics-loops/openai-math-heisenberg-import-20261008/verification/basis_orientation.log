@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/heisenberg-checks/basis_orientation.py", line 131, in <module>
+    print(json.dumps(exact_controls(), indent=2))
+                     ~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/heisenberg-checks/basis_orientation.py", line 28, in exact_controls
+    assert all(basis_flip*A*basis_flip.H == B/2
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+               for A, B in zip(external_spin, pauli))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

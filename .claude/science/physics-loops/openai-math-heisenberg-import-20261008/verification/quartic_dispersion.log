@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/heisenberg-checks/quartic_dispersion.py", line 131, in <module>
+    print(json.dumps(exact_controls(), indent=2))
+                     ~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/heisenberg-checks/quartic_dispersion.py", line 103, in exact_controls
+    assert quartic == -D/12
+           ^^^^^^^^^^^^^^^^
+AssertionError

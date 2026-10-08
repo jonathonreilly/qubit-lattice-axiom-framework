@@ -21,6 +21,56 @@ Treat local memory, old commands, and previous model conclusions as retrieval
 aids, never as proof. Use the user's configured model and actual available
 tools; do not infer current model capabilities from a dated name in a prompt.
 
+## Original mathematics and formal verification
+
+Owner direction (2026-10-08): **agents are authorized to develop original
+mathematics in this repository** within the user's scientific task. New
+definitions, constructions, derivations, lemmas, theorems, and proofs are
+welcome. A missing theorem is a possible proof target, not automatically an
+external dependency wall. Prior publication, an external citation, exhaustion
+of conventional methods, and prior Lean formalization are not prerequisites
+for attempting or presenting a new proof. Check existing work to understand
+the gap and avoid duplication; novelty neither establishes nor discredits
+correctness.
+
+Separate a proposed construction, an open proof obligation, a proved
+conditional implication, an empirical prediction, and an independently checked
+result. New mathematical definitions and proved consequences of stated premises
+do not enlarge the physical axiom stack. Adopting a new framework axiom or
+physical primitive still requires explicit owner approval. Supplied dynamics,
+observable identifications, selectors, and empirical values must remain
+explicit premises until derived; a definition or formalization cannot supply
+that derivation.
+
+**Complex or load-bearing proofs may need Lean verification as part of audit.**
+Choose it to resolve a concrete verification risk, such as a subtle domain
+restriction, a long dependency chain, difficult edge cases, or a critical
+lemma with substantial downstream reuse. Name the exact statement and the
+unresolved risk. This is a scoped proof obligation, not a universal requirement
+before discovery, independent review, or a regular PR. Pending formalization
+must be visible to downstream users, without blocking unrelated research.
+Ordinary proofs still require mathematical checking; Lean is not the only
+valid form of proof evidence.
+
+When Lean evidence is used, record the exact source revision, theorem and
+hypotheses, toolchain/dependency versions, checker evidence, and axioms used.
+Check that the formal definitions and statement match the claimed result.
+`sorry`, an admitted lemma, or a custom axiom asserting the desired conclusion
+does not discharge that obligation. Distinguish such assumptions from the
+declared logical foundations. A checked theorem proves its formal statement,
+not its identification with the physical model.
+
+An applicable provider Lean-verified theorem, including OpenAI's, may be used
+as mathematical support with its exact statement, assumptions, and provenance.
+Do not require a second external verification or duplicate local build merely
+because the proof is new or AI-assisted. Evidence for one formal theorem does
+not cover an unformalized companion result or a new repository bridge.
+Independent audit still checks applicability and the complete claimed argument;
+only its existing application path confers formal retained status. A restricted
+auditor must work within its supplied packet and tools, naming missing proof
+evidence through the existing response fields rather than inventing a new
+verdict or accessing unprovided sources.
+
 ## Default research cadence
 
 Owner-selected 2026-09-07: continuous discovery, selective independent checks,
@@ -37,9 +87,10 @@ completion as an established result still requires the full evidence chain.
 
 Deliver a PR at a coherent scientific milestone or explicit handoff. Group
 related lemmas when they form one reviewable argument; avoid indefinitely
-growing branches or PRs that exceed reliable review. Audit the milestone and
-critical landed dependencies when the campaign needs authoritative reuse, and
-perform complete chain verification before claiming the TOE is established.
+growing branches or PRs that exceed reliable review. Create regular PRs by
+default; create a draft only when the user explicitly requests one. Audit the
+milestone and critical landed dependencies when the campaign needs authoritative
+reuse, and perform complete chain verification before claiming the TOE is established.
 Explicit review/audit drains remain available; merely doing science does not
 launch them. The old per-block delivery mode remains opt-in.
 

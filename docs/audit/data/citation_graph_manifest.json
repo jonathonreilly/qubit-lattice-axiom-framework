@@ -1,6 +1,6 @@
 {
- "edge_count": 15410,
- "node_count": 6864,
+ "edge_count": 15418,
+ "node_count": 6869,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15594,6 +15594,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "periodic_pxp_and_staggered_link_ring_uniform_gap_bounded_theorem_note_2026-10-07": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "permanent_local_gaussian_likelihood_protocol_and_dk_postselection_cost_bounded_theorem_note_2026-09-14": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -17290,6 +17294,10 @@
    "deps_hash": "e949a7fd840a",
    "out_degree": 4
   },
+  "qutrit_free_wait_coarse_graining_and_encoded_channels_bounded_theorem_note_2026-10-08": {
+   "deps_hash": "a80dc231e274",
+   "out_degree": 1
+  },
   "qutrit_preparation_transfer_open_gate_note_2026-09-27": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -17381,6 +17389,10 @@
   "reconstructed_h_quasilocal_from_analytic_dispersion_microcausality_bridge_narrow_theorem_note_2026-06-06": {
    "deps_hash": "8e0303c6f18c",
    "out_degree": 2
+  },
+  "record_activation_criticality_and_conditioned_planar_models_bounded_theorem_note_2026-10-08": {
+   "deps_hash": "0817c1727d73",
+   "out_degree": 5
   },
   "record_additivity_does_not_supply_newton_product_bounded_theorem_note_2026-08-13": {
    "deps_hash": "7ea010b16c05",
@@ -19801,6 +19813,14 @@
   "supplied_algebra_action_and_kernel_support_bounded_theorem_note_2026-09-15": {
    "deps_hash": "9ae213819916",
    "out_degree": 1
+  },
+  "supplied_ferromagnet_order_and_low_temperature_normalization_bounded_theorem_note_2026-10-08": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "supplied_finite_velocity_collisions_and_gibbs_equilibration_bounded_theorem_note_2026-10-08": {
+   "deps_hash": "efe5b9e1c075",
+   "out_degree": 2
   },
   "supplied_matched_free_cone_bounded_theorem_note_2026-09-15": {
    "deps_hash": "9d281ffae983",

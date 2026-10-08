@@ -1,5 +1,13 @@
 # AGENTS.md — pointer
 
+Original mathematics is explicitly welcome here. Agents may develop new
+definitions, constructions, derivations, lemmas, theorems, and proofs within
+the user's scientific task. A missing theorem may be a research target;
+prior publication is not required. New mathematics does not by itself add a
+physical axiom or establish a physical identification. Complex proofs may
+need Lean verification as part of audit; it is not a blanket gate on discovery
+or PR creation. Follow the evidence and scope rules in the science workflow.
+
 Agent instructions for this repository live on the standing `ai/execution`
 branch (an orphan branch that never merges into `main`), alongside the other
 AI planning surfaces. Read them from any checkout without touching your

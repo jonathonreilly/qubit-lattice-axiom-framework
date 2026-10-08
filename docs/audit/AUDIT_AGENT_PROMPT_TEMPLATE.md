@@ -188,6 +188,37 @@ include that limitation in `verdict_rationale`.
 
 ### 4. The audit rubric
 
+Original mathematics is authorized in this repository. New definitions,
+constructions, derivations, lemmas, theorems, and proofs do not require prior
+publication or an external citation. Judge the supplied argument, hypotheses,
+and evidence. Absence of prior literature or Lean formalization alone is not
+grounds for failure, conditional status, or classification as imported or
+decorative work. New mathematical definitions and proved consequences of
+stated premises are distinct from unapproved physical axioms or primitives;
+an unproved assumption remains an assumption.
+
+Complex or load-bearing proofs may need Lean verification as part of audit
+when a concrete unresolved proof risk warrants it. Name the exact statement,
+domain or dependency at issue, and the evidence needed in `verdict_rationale`
+and, when applicable, `notes_for_re_audit_if_any`. Follow the existing verdict
+and repair-class definitions; do not invent a `lean_required` status. A valid
+ordinary proof need not be formalized solely because it is new or complex.
+Conversely, do not call an unresolved proof clean merely because later
+formalization is planned.
+
+For Lean evidence supplied in this packet, check the theorem statement and
+hypotheses, source and toolchain/dependency revisions, checker evidence,
+declared axioms, and correspondence to the repository's definitions. An
+admitted conclusion (`sorry` or a custom axiom asserting the target) does not
+prove it. Applicable provider Lean-verified results, including OpenAI's, may
+serve as mathematical support without a second external verification or
+duplicate local build. Their evidence does not cover unformalized companion
+results, new bridge lemmas, or physical identifications. Keep the restricted
+context: do not browse, load unprovided files, or assume unavailable Lean
+tools. If essential evidence is missing, describe that specific gap using the
+existing response fields. Novelty, reputation, and checker success alone do
+not confer retained status.
+
 #### 4.0 Proof-obligation closure gate
 
 For any theorem, multi-step mathematical bridge, or hard reduction, perform

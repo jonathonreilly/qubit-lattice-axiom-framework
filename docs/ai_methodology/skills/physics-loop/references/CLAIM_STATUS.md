@@ -13,9 +13,18 @@ depends on a new axiom, unapproved primitive, same-surface family,
 observational input, fitted selector, open derivation obligation, or
 human judgment, the actual current surface status is **not** `retained`.
 
-**No-new-axiom/no-new-primitive rule.** The repo does NOT accept extensions to
-its axiom stack or primitive registry as part of physics-loop work. `A_min`
-means the current minimum axiom set, Lattice + Qubit + Admissibility + Record,
+**New mathematics is permitted.** Agents may introduce mathematical
+definitions and constructions and prove new lemmas, theorems, and derivations
+from explicit premises. Lack of a prior citation is not an import or proof
+defect. An unproved lemma remains an open obligation; a proved implication
+does not discharge its physical hypotheses. Originality does not grant
+retained status or require new physical axioms. Complex proofs may need Lean
+verification during audit under `docs/ai_methodology/SCIENCE_WORKFLOW.md`.
+
+**No-new-physical-axiom/no-new-framework-primitive rule.** The repo does NOT
+accept extensions to its axiom stack or primitive registry as part of
+physics-loop work. `A_min` means the current minimum axiom set,
+Lattice + Qubit + Admissibility + Record,
 NOT permission to enlarge it. A route or
 counterfactual whose closure requires adopting a new axiom or new framework
 primitive is `infeasible`, regardless of how productive its consequences would

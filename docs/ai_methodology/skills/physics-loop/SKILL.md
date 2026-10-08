@@ -23,6 +23,14 @@ time on named hard residuals before a route can be declared blocked or the
 campaign can end. Preserve useful work durably and prepare reviewable PRs at
 coherent milestones; unfinished research does not need a forced PR.
 
+Original mathematics is explicitly authorized: develop new constructions,
+derivations, lemmas, and proofs from stated premises. A missing theorem may be
+the next research target; prior publication or Lean verification is not an
+entry condition. New mathematics is distinct from adopting a physical axiom
+or primitive. Complex proofs may need Lean as part of audit under
+`docs/ai_methodology/SCIENCE_WORKFLOW.md`; preserve exact scope and open
+obligations. Create regular milestone PRs unless the user requests a draft.
+
 When launched for a long unattended run, the default posture is a **campaign**:
 keep working until the runtime or max-cycle budget is exhausted. If one route
 or lane hits an honest stop, checkpoint it, select the next ranked science

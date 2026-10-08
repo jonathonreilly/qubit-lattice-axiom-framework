@@ -1,6 +1,6 @@
 {
- "edge_count": 15410,
- "node_count": 6864,
+ "edge_count": 15411,
+ "node_count": 6865,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17289,6 +17289,10 @@
   "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04": {
    "deps_hash": "e949a7fd840a",
    "out_degree": 4
+  },
+  "qutrit_free_wait_coarse_graining_and_encoded_channels_bounded_theorem_note_2026-10-08": {
+   "deps_hash": "a80dc231e274",
+   "out_degree": 1
   },
   "qutrit_preparation_transfer_open_gate_note_2026-09-27": {
    "deps_hash": "e3b0c44298fc",

@@ -1,0 +1,272 @@
+Focused mathematical review — channel reduction packet — 2026-10-08
+
+Disposition: no material mathematical defect found in the stated supplied-model
+claims. Recommend conditional-support / bounded_theorem, with the new local
+proofs and their Lean formalization remaining distinct from the accepted external
+capacity import. This is a selective source review, not a formal retained audit.
+
+Reviewed worktree:
+/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/followup_20261008/channel-reduction
+Branch: physics-loop/openai-math-channel-reduction-20261008
+HEAD confirmed: ed04ee2736b5bddb4e9064966505e3c3dfe003de
+Accepted external revision: adc7f1241b42e322a6451854ab7e4b4c146bf78a
+
+1. Frozen reviewed bytes and scope
+
+Read the complete note, complete runner, complete canonical cache and complete
+author delivery. The three worktree paths below are relative to that worktree.
+
+8d54441603309bd6a9545f008daea3d9b099f78ff24a40a62be6f0e40041d483  26787 bytes
+  docs/QUTRIT_FREE_WAIT_COARSE_GRAINING_AND_ENCODED_CHANNELS_BOUNDED_THEOREM_NOTE_2026-10-08.md
+7d837cad1fbc283fd6050286278f42e5b1d03c1ee2041c1bd3ca72e1c89b58c9  15721 bytes
+  scripts/qutrit_free_wait_coarse_graining_and_encoded_channels_2026_10_08.py
+cacc34e5ba5952416dcc45525710336d44f070e2f914b6b493d40fa45ab9266e  5966 bytes
+  logs/runner-cache/qutrit_free_wait_coarse_graining_and_encoded_channels_2026_10_08.txt
+763821b548017a706c8c4667dbbc8ec60cdc7f081cb9904f0023eec7101cbcc9  4907 bytes
+  ../channel-reduction-delivery.txt
+
+The historical author delivery records the earlier note hash 8bf147ca... .
+The parent subsequently changed only its final packaging paragraph. I inspected
+the current paragraph, note lines 546–549: selective source review is recorded
+in the branch packet, while the Lean targets and formal retained audit remain
+later work. This report binds the current 8d544416... bytes, not the old hash.
+The runner/cache hashes still agree exactly with the author delivery and cache
+header. This historical delivery difference is not a mathematical finding.
+
+2. Findings on the load-bearing local proof
+
+(a) CPTP quotient and Hamiltonian intertwining — sound as stated.
+Note lines 125–203 supplies rectangular Kraus operators, not a trace-losing
+coordinate deletion. Their adjoint products sum to I3. C02 maps the entire M3(C)
+linearly onto M2(C), and C02 J02=id. The nine matrix-unit entries at lines
+149–159 have the correct loss rates and Hamiltonian signs. In particular the
+retained coherence sees h0-h2, while the discarded level's h1 imposes no extra
+constraint. The exponential-series step is valid for these finite-dimensional
+bounded linear maps. No assertion that the 0–2 subspace is invariant is needed.
+
+Independent Heisenberg derivation: C02* sends F00,F01,F10,F11 respectively to
+E00+E11,E02,E20,E22. With L3*(O)=i[H,O]+sum rate*(J†OJ-{J†J,O}/2), their images are
+  r E22,
+  (i(h0-h2)-r/2) E02,
+  (i(h2-h0)-r/2) E20,
+  -r E22.
+This closes on the lifted four-observable space and is exactly C02* L2*.
+It independently explains why a drops out and why replacing the Hamiltonian
+splitting by a different pair would be wrong. I also assembled the 9x9 and 4x4
+Liouville matrices directly by column vectorization and checked all 36 entries
+of C L3-L2 C symbolically, using no author-runner function.
+
+(b) Full free propagator — sound, including degenerate rates.
+Note lines 69–123 uses the integral definition of D before its two closed forms.
+D'=bB-aD, B'=-rB imply (1-B-D)'=cB+aD>=0 with zero initial value, so all the
+claimed Kraus weights are nonnegative. The three population equations and six
+coherence equations agree with the supplied generator. At r=a the integral is
+bs exp(-as); at all zero rates the dissipative channel vanishes. Rank-one jump
+Kraus phases have no effect on their population outputs; no missing phase term
+is being suppressed in (4). Kraus completeness plus the ODE initial condition
+therefore proves the exact semigroup formula, not just a population model.
+
+(c) Midpoint quotient witness — correct and narrowly scoped.
+Note lines 264–281 compares two honest input states. C02(E00)=C02(E11), whereas
+C02 S(E00)-C02 S(E11)=diag(1,-1). Therefore even a single-valued map, hence any
+qubit channel, cannot factor this S through this C02 on every qutrit state.
+The note correctly does not extend that obstruction to other encoders, output
+maps, or the entire Echo composition.
+
+(d) Both full Echo formulas and non-GAD statements — sound in the stated basis.
+Note lines 283–394 correctly keeps the equal half waits, the actual S12 pulse,
+and the named output operations. For J02/C02, the output excited population is
+BD p, and every input coherence is discarded after the pulse moves E02 to E01.
+For J12/C12/output-X, the final excited population before X is
+AB(1-p)+BDp. Complementing it gives 1-AB+B(A-D)p. E12 is swapped to E21 between
+the waits, so the two Hamiltonian phases cancel and output X restores its
+orientation; the remaining multiplier is AB.
+
+Writing k=AB and s=B(A-D), GAD in the provider's fixed basis necessarily has
+s=k^2. Conversely for k<1, gamma=1-k^2 and nu=1/(1+k) lie in [0,1], have
+gamma*nu=1-k, and reproduce the entire channel; k=1 is the identity case.
+Thus the iff criterion is complete for this precise convention. The note does
+not assert that this criterion classifies arbitrary input/output unitary changes.
+The rational counterexample has k^2-s=1/64-1/16=-3/64, as claimed.
+For the first Echo map, coherence is zero but its population slope BD is positive
+for finite tau>0,b>0, so the stated fixed-convention non-GAD conclusion follows.
+No universal encoding exclusion or unitary-invariant classification is claimed.
+
+Independent exact check: I exponentiated a freshly constructed 9x9 GKLS
+Liouville generator at a=b=c=1, h=(0,1,3), tau=log(2), then multiplied the pulse,
+encoders and coarse-graining superoperators. This uses nonzero distinct
+Hamiltonian energies and does not call the author's closed-form wait routine
+or its finite Kraus list. In column-vector order (rho00,rho10,rho01,rho11), the
+two resulting qubit matrices are exactly
+  Echo02 = [[1,0,0,15/16], [0,0,0,0], [0,0,0,0], [0,0,0,1/16]],
+  Echo12 = [[1/8,0,0,1/16], [0,1/8,0,0], [0,0,1/8,0], [7/8,0,0,15/16]].
+Both coincide with (13)–(16). Their CPTP status is separately supplied by the
+actual composition, rather than inferred from an arbitrary slope formula.
+
+(e) Positive a=c=0 branch — retained and verified independently.
+Here the 1–2 subspace is invariant, A=1 and D=1-B. On it each half wait is an
+ordinary amplitude-damping channel of survival B, including its diagonal phase.
+The complete map is X AD_B X AD_B. Multiplication of these two qubit channels,
+with an arbitrary phase retained, gives
+  rho11 -> 1-B+B^2 rho11,  rho01 -> B rho01.
+The phase cancels. Thus gamma=1-B^2, nu=1/(1+B) gives the exact provider GAD
+channel, since gamma*nu=1-B and sqrt(1-gamma)=B for 0<=B<=1.
+At B=1 (b=0 or tau=0) this is identity and nu is irrelevant; the displayed
+nu formula gives 1/2 without a singularity. At B=0 it is constant excited,
+GAD(1,1). B=0 is a legitimate GAD endpoint and a limit as b*tau tends to
+infinity, not an attained point with finite nonnegative b,tau. The note's finite
+waiting-time claims are consistent with this distinction. For J02/C02 at zero
+wait the midpoint pulse still occurs and the channel is constant ground; it
+must not be confused with the identity endpoint of the second interface.
+
+(f) Subsidiary scope controls — correct.
+Note lines 396–457 correctly lists the three deterministic two-cell population
+lumpings and the coordinate-subspace leakage conditions. A quantum channel
+identification does not follow solely from those population equalities.
+The bosonic ladder has a coherent gain term absent from the separate jumps:
+(D[E01+sqrt(2)E12]-D[E01]-2D[E12])(E12)=sqrt(2)E01. Hence population matching at
+b=2a,c=0 does not match the quantum generator for a>0. The three displayed
+pure-loss Kraus operators are complete and give (7/12,1/3,1/12) from I3/3.
+The note correctly treats these as scoped controls and imports no bosonic
+entropy theorem through a mismatched generator.
+
+3. Accepted provider theorem: exact statement and definition match
+
+Inspected the complete Model.lean, complete Main.lean, family scope and comparator
+JSON. Read Channel.lean's local_channel and kraus_complete statements/proofs,
+lines 14–77, and the formalization registry's amplitude-damping entry. The
+following pinned sources define the actual import:
+https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/Model.lean
+https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/Channel.lean
+https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/OAI/InformationTheory/AmplitudeDamping/Main.lean
+https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/docs/276.md
+https://github.com/openai/math/blob/adc7f1241b42e322a6451854ab7e4b4c146bf78a/lean/ComparatorChallenges/AmplitudeDamping.json
+
+SHA-256 of the inspected bytes, matching note lines 488–494:
+Model.lean    709ab56f351cb6ebee2497f58ecfb722c4828d60cf3d6cd68f9358d8d7551f08
+Channel.lean  e172ad790e4e02bf10e028b59e87d3339e148be0d208e7638cf9eb391f7cc35d
+Main.lean     24aeebc34cbc3932d57e82236613dd086c1233a27c461717a5337facc7a31d87
+276.md        34d51d11d25cf4d1108b3914cfcb7d13a9df63a0cb3dd82071406f07c0640a99
+Comparator    d5fd3b206d67df3786b22e25c25e9a7364ea70ee02a6d2d8b478b76e9ef7d70b
+
+Model.lean lines 24–33 specifies all four Kraus operators. Channel.lean lines
+39–45 gives, for arbitrary input matrix P and gamma,nu in [0,1], output
+  P11' = gamma*nu P00 + [1-gamma(1-nu)] P11,
+  P01' = sqrt(1-gamma) P01.
+For a state this is p'=(1-gamma)p+gamma*nu, so nu denotes the equilibrium
+excited population, not its complement. The note's free-wait assignment nu=0,
+gamma=1-eta and its positive Echo assignment both match this convention exactly.
+
+Model.lean lines 35–42 defines a memoryless tensor-product channel; lines 44–59
+quantify over all finite ensembles without product/purity restrictions; lines
+61–84 define unrestricted block encodings, a collective POVM, vanishing average
+error and operational unassisted capacity. These are actual communication
+definitions, not a capacity name assigned to the scalar objective. Lines 86–110
+define the objective and equiprobable phase-product ensemble. Main.lean's
+OAI.GAD.main assumes only gamma,nu in [0,1] and proves tensor-power Holevo
+additivity, an attained scalar optimum, equality with operational capacity and
+phase-product attainment of the block Holevo value. The note preserves the
+scope exclusions of arbitrary different partner channels and separate decoding.
+
+For nu=0, Model.v reduces to eta(1-eta)p^2 and its mean output population is
+eta p. Dividing the natural-log objective by log(2) gives exactly note (10).
+The phase-pair output determinant can also be calculated directly:
+(1-eta p)(eta p)-eta p(1-p)=eta(1-eta)p^2. Output-unitary covariance is correctly
+handled by M -> W M W† when transferring a decoder for AD to Ad_W composed with
+AD; this preserves all probabilities and extends to every tensor power.
+The adjoint of the output CPTP map pulls back a valid qubit POVM to a valid
+qutrit POVM. Thus the lower bound on the unconstrained qutrit capacity is valid,
+but the note correctly makes no claim of equality or empirical accessibility.
+
+The production Main proof and the provider-accepted formalization support this
+mathematical import under the latest instruction. I did not rebuild Lean, inspect
+every transitive proof dependency, or independently re-prove the capacity theorem.
+The comparator's challenge placeholder is not substituted for the production
+proof. The newly written qutrit identities, intertwining, Echo composition and
+unitary-capacity bridge are not thereby Lean-formalized. The six later Lean
+targets in note lines 525–544 correctly keep that work explicit.
+
+4. Runner/cache verification and independence limits
+
+Executed, from the reviewed worktree:
+  PYTHONDONTWRITEBYTECODE=1 python3 scripts/qutrit_free_wait_coarse_graining_and_encoded_channels_2026_10_08.py
+Observed exit 0, SymPy 1.14.0 and TOTAL: PASS=145 FAIL=0. Inspected every output
+line and the complete cache, including its exit 0 / status ok / 120-second
+envelope and matching runner hash. No empirical input, optimizer, network input,
+off-repository runtime input or hidden author-data dependency appears in the
+runner. Its symbolic off-diagonal, ODE, encoding, exact finite Kraus and boundary
+checks exercise the advertised calculations; they are not a proof of external
+capacity or physical model adequacy. Nonnegative Kraus weights and the all-time
+semigroup argument are proved in the text rather than inferred from numerical
+sample checks.
+
+The additional reviewer calculation imported no author code. Its all-parameter
+Liouville identity, four-observable adjoint calculation, exact matrix exponential
+at nonzero Hamiltonian and independent two-qubit-channel multiplication are
+different derivations from the author's closed-form propagation checks. Shared
+inputs are the supplied model, notation and intended claim. I also previously
+worked on some kinetic-interface source calculations cited by this packet, so
+this is not blind independent discovery. Both exact implementations use SymPy;
+their shared algebra engine is a remaining implementation correlation. The
+Heisenberg calculation and endpoint arguments above provide a readable analytic
+check apart from the software output. Parent-reported defect-injection checks
+were not relied upon as independent review evidence here.
+
+5. Reproducible independent calculation (no source imports or file writes)
+
+The following is the decisive independent matrix-exponential calculation used in
+this review. Column-vectorization means vec(rho)=(rho00,rho10,...); the rectangular
+channel matrix is sum(conjugate(K) tensor K).
+
+```python
+import sympy as s
+def e(n,i,j):
+    M=s.zeros(n); M[i,j]=1; return M
+def cs(ks):
+    return sum((s.kronecker_product(s.conjugate(K),K) for K in ks),
+               s.zeros(ks[0].rows**2,ks[0].cols**2))
+def liouville(n,H,terms):
+    I=s.eye(n)
+    L=-s.I*(s.kronecker_product(I,H)-s.kronecker_product(H.T,I))
+    for w,J in terms:
+        Q=J.H*J
+        L+=w*(s.kronecker_product(s.conjugate(J),J)
+              -(s.kronecker_product(I,Q)+s.kronecker_product(Q.T,I))/2)
+    return L
+def equal(A,B):
+    return A.shape==B.shape and all(s.simplify(x-y)==0 for x,y in zip(A,B))
+a,b,c=s.symbols('a b c',nonnegative=True)
+h0,h1,h2=s.symbols('h0 h1 h2',real=True)
+L=liouville(3,s.diag(h0,h1,h2),
+            [(a,e(3,0,1)),(b,e(3,1,2)),(c,e(3,0,2))])
+l=liouville(2,s.diag(h0,h2),[(b+c,e(2,0,1))])
+C=cs([s.Matrix([[1,0,0],[0,0,1]]),s.Matrix([[0,1,0],[0,0,0]])])
+assert equal(C*L,l*C)
+E=(s.log(2)*L.subs({a:1,b:1,c:1,h0:0,h1:1,h2:3})).exp()
+S=s.Matrix([[1,0,0],[0,0,1],[0,1,0]])
+X=s.Matrix([[0,1],[1,0]])
+J02=s.Matrix([[1,0],[0,0],[0,1]])
+J12=s.Matrix([[0,0],[1,0],[0,1]])
+C12=cs([s.Matrix([[0,1,0],[0,0,1]]),s.Matrix([[1,0,0],[0,0,0]])])
+T02=s.Matrix([[1,0,0,s.Rational(15,16)], [0,0,0,0],
+              [0,0,0,0], [0,0,0,s.Rational(1,16)]])
+T12=s.Matrix([[s.Rational(1,8),0,0,s.Rational(1,16)],
+              [0,s.Rational(1,8),0,0], [0,0,s.Rational(1,8),0],
+              [s.Rational(7,8),0,0,s.Rational(15,16)]])
+assert equal(C*E*cs([S])*E*cs([J02]),T02)
+assert equal(cs([X])*C12*E*cs([S])*E*cs([J12]),T12)
+B=s.symbols('B',nonnegative=True); theta=s.symbols('theta',real=True)
+F=s.Matrix([[1,0,0,1-B], [0,s.sqrt(B)*s.exp(s.I*theta),0,0],
+            [0,0,s.sqrt(B)*s.exp(-s.I*theta),0], [0,0,0,B]])
+P=cs([X]); gamma=1-B**2; nu=1/(1+B)
+G=s.Matrix([[1-gamma*nu,0,0,gamma*(1-nu)], [0,B,0,0],
+            [0,0,B,0], [gamma*nu,0,0,1-gamma*(1-nu)]])
+assert equal(P*F*P*F,G)
+assert equal(G.subs(B,1),s.eye(4))
+assert equal(G.subs(B,0),s.Matrix([[0,0,0,0],[0,0,0,0],
+                                 [0,0,0,0],[1,0,0,1]]))
+print('independent Liouville, exact Echo exponential and positive GAD branch: OK')
+```
+
+No source, graph, audit, commit or push mutation was made for this review.
+The sole review deliverable is this file. Editable prompt files changed: none.

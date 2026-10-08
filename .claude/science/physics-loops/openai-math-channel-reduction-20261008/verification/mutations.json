@@ -1,0 +1,72 @@
+[
+  {
+    "mutation": "quotient_trace",
+    "exit_code": 1,
+    "failures": [
+      "[FAIL] C02_Kraus_complete",
+      "[FAIL] C02_basis_E11",
+      "[FAIL] GKLS_intertwining_E11",
+      "[FAIL] GKLS_intertwining_E22",
+      "[FAIL] encoded_free_AD_with_phase_e11",
+      "[FAIL] C02_S12_same_before",
+      "[FAIL] complete_Echo_J02_C02_e11",
+      "[FAIL] rational_composite_02_Kraus_complete",
+      "[FAIL] rational_composite_02_matrix_unit_11",
+      "[FAIL] zero_wait_first_Echo_ground_11"
+    ],
+    "mutant_sha256": "4ec6b3766e38c78e8883727c72aa7a5226c59f6c0d85c2d28b877668268213ed"
+  },
+  {
+    "mutation": "hamiltonian_splitting",
+    "exit_code": 1,
+    "failures": [
+      "[FAIL] GKLS_intertwining_E02",
+      "[FAIL] GKLS_intertwining_E20"
+    ],
+    "mutant_sha256": "b3d059deeafb09899e2bcbb0b18a985340abd5942d81908050b27193de8ac13b"
+  },
+  {
+    "mutation": "echo_pulse",
+    "exit_code": 1,
+    "failures": [
+      "[FAIL] C02_S12_different_after: witness = diag(1,-1)",
+      "[FAIL] complete_Echo_J12_C12_X_e00",
+      "[FAIL] complete_Echo_J02_C02_e01",
+      "[FAIL] complete_Echo_J12_C12_X_e01",
+      "[FAIL] complete_Echo_J02_C02_e10",
+      "[FAIL] complete_Echo_J12_C12_X_e10",
+      "[FAIL] complete_Echo_J02_C02_e11",
+      "[FAIL] complete_Echo_J12_C12_X_e11",
+      "[FAIL] rational_composite_02_matrix_unit_01",
+      "[FAIL] rational_composite_02_matrix_unit_10",
+      "[FAIL] rational_composite_12_matrix_unit_00",
+      "[FAIL] rational_composite_12_matrix_unit_01",
+      "[FAIL] rational_composite_12_matrix_unit_10",
+      "[FAIL] zero_wait_second_Echo_identity_00",
+      "[FAIL] zero_wait_second_Echo_identity_01",
+      "[FAIL] zero_wait_first_Echo_ground_01",
+      "[FAIL] zero_wait_second_Echo_identity_10",
+      "[FAIL] zero_wait_first_Echo_ground_10",
+      "[FAIL] zero_wait_second_Echo_identity_11",
+      "[FAIL] zero_wait_first_Echo_ground_11"
+    ],
+    "mutant_sha256": "fe047ac77b86f8c60035d17edbb34fb7b10ebc0f3caca1be7a834aebd8572ac8"
+  },
+  {
+    "mutation": "capacity_determinant",
+    "exit_code": 1,
+    "failures": [
+      "[FAIL] phase_pair_output_determinant"
+    ],
+    "mutant_sha256": "ee43141074c239d9483e4edd4a2cd345bbb48f61f6a80523a54ea826b19ca370"
+  },
+  {
+    "mutation": "bosonic_coherence",
+    "exit_code": 1,
+    "failures": [
+      "[FAIL] bosonic_separate_jump_witness: D[ladder](E12)-D[E01](E12)-2D[E12](E12)=sqrt(2)E01",
+      "[FAIL] bosonic_population_agreement_E22"
+    ],
+    "mutant_sha256": "058de2ae8a424438202e53261e03e487a90976f50fa36392ce79c6b4306f8ea0"
+  }
+]

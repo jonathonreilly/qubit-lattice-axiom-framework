@@ -1,0 +1,110 @@
+{
+  "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de",
+  "external": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "files": [
+    {
+      "path": "docs/QUTRIT_FREE_WAIT_COARSE_GRAINING_AND_ENCODED_CHANNELS_BOUNDED_THEOREM_NOTE_2026-10-08.md",
+      "sha256": "8d54441603309bd6a9545f008daea3d9b099f78ff24a40a62be6f0e40041d483"
+    },
+    {
+      "path": "scripts/qutrit_free_wait_coarse_graining_and_encoded_channels_2026_10_08.py",
+      "sha256": "7d837cad1fbc283fd6050286278f42e5b1d03c1ee2041c1bd3ca72e1c89b58c9"
+    },
+    {
+      "path": "logs/runner-cache/qutrit_free_wait_coarse_graining_and_encoded_channels_2026_10_08.txt",
+      "sha256": "cacc34e5ba5952416dcc45525710336d44f070e2f914b6b493d40fa45ab9266e"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "16bbd69b8c170c20b911ae10f2bd18574c08c3735b21be77f7ef8e49e0bed3a6"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/APPROACH_A.md",
+      "sha256": "362cce348e1e69c972b3ac936e034d3889d6dffe36d9b37b1deef4d9368d0cf2"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/ASSUMPTIONS_TRIED.md",
+      "sha256": "4cc6ee20bdc713ce76185f85fa69c493c62896c201056336242c13bc6b74459a"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "925fbb5a4628059859cc3b34f2c1c7866bac9ecbdfafd031314c0b802b12ed99"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/GOAL.md",
+      "sha256": "07faf8ff1317804a15c3b191f255d52159ffa474310707baf98c9cf69b6ceac7"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/HANDOFF.md",
+      "sha256": "9fdb5cce4c73906b22a8f0d294509c2cd85feb0e91b2dcdd442ea38447c66946"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/OWNER_DIRECTION_2026-10-08.md",
+      "sha256": "6ba8f6049a82bfd399a36533f813e8bc939532482aba4b0841b7cb8fffccaab7"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/PR_BACKLOG.md",
+      "sha256": "29ac2204c4bce543b8d82a46e73d0c09b73eed9b7b20fd2a88bbde74d3258ad2"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/REVIEW_HISTORY.md",
+      "sha256": "094aa6eff4fb871546b7b521fb5016776dded2767ed2ea45a4b1053937736dc0"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/STATE.yaml",
+      "sha256": "e4c667562d6ea781c411f2d3a748207e1714b6815f09cc1e88103c69024e7fb0"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/TRACE_GATE.md",
+      "sha256": "6f059d28aaa56ca4351e4ef56289cf82f8e4cadcce8c79a70f3e641d9ea2a2f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/review/INDEPENDENT_REVIEW.txt",
+      "sha256": "871905c048bd3416df907049753f07e170062e83ff78b0036b7ebcf9e0f4a2dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/verification/bosonic_coherence.log",
+      "sha256": "4b059aba6f15690ee3c977ad6ce6caf48f57f2028324616a32aa4f9aa07284f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/verification/bosonic_coherence.py",
+      "sha256": "058de2ae8a424438202e53261e03e487a90976f50fa36392ce79c6b4306f8ea0"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/verification/capacity_determinant.log",
+      "sha256": "6dbe8725feae88c0653348d3ad0763946bc3319147e6a912f7ad1fbde87f2969"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/verification/capacity_determinant.py",
+      "sha256": "ee43141074c239d9483e4edd4a2cd345bbb48f61f6a80523a54ea826b19ca370"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/verification/echo_pulse.log",
+      "sha256": "46276c664b3f659fb5adb60c11e0bcd730fdeff74251867d9c8541bc7c91c6b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/verification/echo_pulse.py",
+      "sha256": "fe047ac77b86f8c60035d17edbb34fb7b10ebc0f3caca1be7a834aebd8572ac8"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/verification/hamiltonian_splitting.log",
+      "sha256": "3cf5f9df0ed56b0a5ef97b3face1c7b8c836248e82cc7c56ca7355400ee604cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/verification/hamiltonian_splitting.py",
+      "sha256": "b3d059deeafb09899e2bcbb0b18a985340abd5942d81908050b27193de8ac13b"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/verification/mutations.json",
+      "sha256": "afb80924d4c5cd56de076a728f00b2520d4a947ea46f5ca24d49324b67167eea"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/verification/quotient_trace.log",
+      "sha256": "c74438bc5040efd1529f6282db9f0e7ea1985041d29226f54f597631ae286414"
+    },
+    {
+      "path": ".claude/science/physics-loops/openai-math-channel-reduction-20261008/verification/quotient_trace.py",
+      "sha256": "4ec6b3766e38c78e8883727c72aa7a5226c59f6c0d85c2d28b877668268213ed"
+    }
+  ]
+}

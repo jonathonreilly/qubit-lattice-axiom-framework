@@ -14,6 +14,12 @@ main. For the current lifecycle, read
 
 ## Scientific work
 
+- Original mathematics is explicitly authorized within the user's scientific
+  task: develop new definitions, constructions, derivations, lemmas, theorems,
+  and proofs. A missing theorem can be a proof target. Prior publication,
+  external citations, exhaustion of conventional routes, and prior Lean
+  formalization are not prerequisites. Check existing work for the actual gap;
+  novelty alone neither validates nor invalidates a result.
 - Treat TOE completion as a hypothesis to establish, not an outcome a worker
   must produce. A proof, counterexample, falsified premise, or precise open
   obligation can all be useful results. Never manufacture progress to satisfy
@@ -22,7 +28,8 @@ main. For the current lifecycle, read
   Distinguish framework premises, mathematical tools with checked hypotheses,
   provisional lemmas, extra conditions, and empirical inputs. New framework
   axioms/primitives require explicit owner approval; conditional exploration
-  does not silently grant them.
+  does not silently grant them. New mathematical definitions and proved
+  consequences of stated premises are not new physical axioms or primitives.
 - Derive the contested value. An expected test constant is legitimate only
   when justified independently of the implementation tested. Record actual
   commands, failures, uncertainties, and unrun checks. Never fabricate a log,
@@ -31,6 +38,17 @@ main. For the current lifecycle, read
   from a counterexample. A failed search is not an impossibility proof; neither
   an arbitrary number of routes nor inability to imagine alternatives closes
   a quantified theorem.
+
+Complex or load-bearing proofs may need Lean verification as part of audit.
+Name the exact proof obligation and verification risk; do not make Lean a
+blanket prerequisite for discovery or regular PRs. Match formal definitions,
+hypotheses, source/toolchain revisions, checker evidence, and declared axioms
+to the claim; admitted conclusions do not count as proofs. Applicable provider
+Lean-verified results, including OpenAI's, may supply mathematical support
+without a second external verification or duplicate local build. Their scope
+does not automatically cover companion results or new physical bridges.
+Follow `docs/ai_methodology/SCIENCE_WORKFLOW.md` on the science branch for the
+full policy. Proof evidence and formal retained status remain distinct.
 
 ## Cadence — owner-selected 2026-09-07
 
@@ -42,7 +60,8 @@ lemmas only with their open obligations and source revisions explicit.
 Independently check critical steps before substantial downstream reuse.
 
 Deliver a reviewable milestone when it establishes a coherent argument,
-resolves a useful target, or the user requests handoff. Independent review
+resolves a useful target, or the user requests handoff. Create regular PRs;
+use a draft only when the user explicitly requests one. Independent review
 checks the final source revision before authorized landing. Formal audit uses
 a separate restricted context on landed evidence; audit status remains unset
 until that path applies a verdict. Review/audit throughput does not limit

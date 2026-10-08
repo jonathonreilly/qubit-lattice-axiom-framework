@@ -1,0 +1,37 @@
+{
+  "runner_sha256": "0bf9b451b834355729d27ba45ed2ce594e93134540c2c260dce8f76477fe4ee4",
+  "cases": [
+    {
+      "mutation": "orbit_multiplicity",
+      "rejected": true,
+      "exit": 1,
+      "elapsed_sec": 0.05125425010919571,
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution/root/mutations/orbit_multiplicity.log",
+      "source_sha256": "c4a5565131ebb42a794ab9a52ff82a3fe755b8c6990d77d9aa08a911abfb1639"
+    },
+    {
+      "mutation": "temperature_seed",
+      "rejected": true,
+      "exit": 1,
+      "elapsed_sec": 0.9073251658119261,
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution/root/mutations/temperature_seed.log",
+      "source_sha256": "cf87895270e70c11a91ad62c61ad8a51c9fd5a9bca1e6d685ba0d31fe6ebb0c1"
+    },
+    {
+      "mutation": "bootstrap_constant",
+      "rejected": true,
+      "exit": 1,
+      "elapsed_sec": 0.8863679589703679,
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution/root/mutations/bootstrap_constant.log",
+      "source_sha256": "077531b6ba336208800fe0165aa9495cd277e4a9ff8f611afca47ef0513bd79a"
+    },
+    {
+      "mutation": "plaquette_orientation",
+      "rejected": true,
+      "exit": 1,
+      "elapsed_sec": 0.88277304219082,
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution/root/mutations/plaquette_orientation.log",
+      "source_sha256": "3bf85f38da803c4a4550850aae9d1e367ff80376ff96120dadf7a6f279927816"
+    }
+  ]
+}

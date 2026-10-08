@@ -1,0 +1,47 @@
+{
+  "reviewed_note_sha256": "5810cdfcead133e39b621e1339f46ac1381511f5963f39f02244fb7f511e6844",
+  "runner_sha256": "0bf9b451b834355729d27ba45ed2ce594e93134540c2c260dce8f76477fe4ee4",
+  "cache_sha256": "21d3bae21a53377c64ba2b0d6a7b397d3a0a9f8c4a41e5737f572f50c2341a8d",
+  "cache_bytes": 57449,
+  "complete_cache_parsed": true,
+  "all_exact_certificate_data_identical_to_reviewed_frozen_inputs": true,
+  "fresh_runner_stdout_identical_to_cache": true,
+  "elapsed_sec": 1.7001688331365585,
+  "mutation_source_and_assertion_failure_receipts_checked": {
+    "runner_sha256": "0bf9b451b834355729d27ba45ed2ce594e93134540c2c260dce8f76477fe4ee4",
+    "cases": [
+      {
+        "mutation": "orbit_multiplicity",
+        "rejected": true,
+        "exit": 1,
+        "elapsed_sec": 0.05125425010919571,
+        "log": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution/root/mutations/orbit_multiplicity.log",
+        "source_sha256": "c4a5565131ebb42a794ab9a52ff82a3fe755b8c6990d77d9aa08a911abfb1639"
+      },
+      {
+        "mutation": "temperature_seed",
+        "rejected": true,
+        "exit": 1,
+        "elapsed_sec": 0.9073251658119261,
+        "log": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution/root/mutations/temperature_seed.log",
+        "source_sha256": "cf87895270e70c11a91ad62c61ad8a51c9fd5a9bca1e6d685ba0d31fe6ebb0c1"
+      },
+      {
+        "mutation": "bootstrap_constant",
+        "rejected": true,
+        "exit": 1,
+        "elapsed_sec": 0.8863679589703679,
+        "log": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution/root/mutations/bootstrap_constant.log",
+        "source_sha256": "077531b6ba336208800fe0165aa9495cd277e4a9ff8f611afca47ef0513bd79a"
+      },
+      {
+        "mutation": "plaquette_orientation",
+        "rejected": true,
+        "exit": 1,
+        "elapsed_sec": 0.88277304219082,
+        "log": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution/root/mutations/plaquette_orientation.log",
+        "source_sha256": "3bf85f38da803c4a4550850aae9d1e367ff80376ff96120dadf7a6f279927816"
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+Same-session packaging review — PASS
+
+The corrected package faithfully preserves the accepted uniform-gap proof and
+its exact certificate. No further scientific correction is required. This
+confirms source packaging only; it is not a formal audit or audit application.
+
+Reviewed source root:
+  /Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/worktree/
+
+Complete source-bound coverage:
+  docs/PERIODIC_PXP_AND_STAGGERED_LINK_RING_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-10-07.md
+    SHA256 9177a0550cfa6c700232851a5ea8997fc7b3cc8840af126b5c270d8cf2632e51
+  scripts/periodic_pxp_and_staggered_link_ring_uniform_gap_2026_10_07.py
+    SHA256 0bf9b451b834355729d27ba45ed2ce594e93134540c2c260dce8f76477fe4ee4
+  logs/runner-cache/periodic_pxp_and_staggered_link_ring_uniform_gap_2026_10_07.txt
+    SHA256 21d3bae21a53377c64ba2b0d6a7b397d3a0a9f8c4a41e5737f572f50c2341a8d
+    Complete size: 57,449 bytes.
+
+I read the complete initial packaged note and runner, then read and confirmed
+the corrective model-definition/provenance changes in this same session. A
+reverse-diff hash check establishes that these are the only changes since the
+initial full read (initial note hash 5810cdfcead133e39b621e1339f46ac1381511f5963f39f02244fb7f511e6844).
+The accepted proof coverage and scientific limits in REVIEW.txt remain valid.
+Removing the auxiliary finite-Trotter diagnostics removes no premise or proof
+step: the complete continuous-time kernel and even-moment argument remain.
+
+Correction found and resolved:
+The initial package claimed to reproduce the complete supplied link model but
+deferred orientations to another note and did not explicitly declare E=Z/2 or
+H_link=-sum_i(W_i+W_i^dag). Final lines 270-281 now specify the vertices, every
+edge orientation, periodic indices, tensor carrier, E/U, divergence, Gauss
+sector, Hamiltonian and staggered background. They agree with the earlier
+source and the reviewed dictionary; no new physics premise was introduced.
+The earlier limitation quote is now attributed by exact path, section and
+frozen revision. Setting source_of_blocker_text to null rather than user_goal
+avoids false attribution when the present schema lacks a repository-note
+category. Validation of that schema handling remains a mechanical integration
+responsibility, not a scientific premise. The explicit partially_closes scope
+correctly preserves the earlier note's broader unresolved questions.
+
+Certificate and cache verification:
+I parsed the entire cache, including every integer and rational string. Both
+257-entry moment arrays, all three partition-function enclosures, all four
+purity endpoints for each sector family, scalar checks, graph hashes and every
+Gauss-control row match the already independently checked frozen inputs.
+The cache header identifies the current runner hash and successful completion,
+with empty stderr. A fresh execution of the packaged runner produced identical
+complete stdout in about 1.7 seconds; its full output is preserved here in
+packaged_runner_reproduction.log. No source files were modified by the run.
+
+The runner retains the graph-automorphism checks, orbit weights, exact integer
+recurrences, rigorous rational tails, both dynamic and full-sector seeds, and
+local Gauss/plaquette controls. Its output accurately distinguishes those
+finite checks from the all-length analytic proof. The three reported PASS
+groups are supported by actual assertions, not treated as independent proof
+counts. I checked the four supplied mutation source diffs, hashes and complete
+failure logs: lost orbit weights fail the dimension trace, wrong temperature
+fails the physical purity, the reduced bootstrap constant fails the scalar
+hypotheses, and the changed plaquette orientation fails local operator equality.
+These are relevant assertion failures, not timeout or import failures.
+
+Permitted mechanical review-status updates
+-----------------------------------------
+The coordinator may make these exact two replacements without another review
+cycle; they report the completed check and do not change scientific content.
+
+1. Replace:
+   This is selective independent review, not a formal audit verdict; the final source revision still needs confirmation after packaging.
+   With:
+   This is selective independent review, not a formal audit verdict; the final packaged note, runner and paired cache have been checked by the same independent reviewer.
+
+2. Replace the now-stale next-action value:
+   next_trace_action: "Confirm final packaged source against independent review; formal audit remains separate."
+   With:
+   next_trace_action: "Preserve the reviewed scope during integration; formal audit remains separate."
+
+After exactly both replacements, the expected note SHA256 is
+  ec672a69355d59be7c4e6638c37551bd8518062e8a512a21bfb56f6914542713.
+This expected identity and the exact replacements are also stored in
+packaging_final_source_confirmation.json. Other scientific source changes
+require confirmation of their affected closure.
+
+Evidence: packaging_checks.json, packaging_final_source_confirmation.json,
+packaging_mutation_diffs.txt, packaged_runner_reproduction.log, and the original
+REVIEW.txt with its independent controls. No repository files, editable prompts,
+skills, branches or audit statuses were changed by this reviewer.

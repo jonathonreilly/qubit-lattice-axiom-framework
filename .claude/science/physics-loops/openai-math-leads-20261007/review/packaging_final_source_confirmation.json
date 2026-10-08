@@ -1,0 +1,15 @@
+{
+  "reviewed_note_sha256": "9177a0550cfa6c700232851a5ea8997fc7b3cc8840af126b5c270d8cf2632e51",
+  "only_confirmed_model_and_provenance_differences_from_initial_packaging": true,
+  "authorized_status_only_replacements": [
+    {
+      "old": "This is selective independent review, not a formal audit verdict; the final source revision still needs confirmation after packaging.",
+      "new": "This is selective independent review, not a formal audit verdict; the final packaged note, runner and paired cache have been checked by the same independent reviewer."
+    },
+    {
+      "old": "next_trace_action: \"Confirm final packaged source against independent review; formal audit remains separate.\"",
+      "new": "next_trace_action: \"Preserve the reviewed scope during integration; formal audit remains separate.\""
+    }
+  ],
+  "expected_note_sha256_after_both_replacements": "ec672a69355d59be7c4e6638c37551bd8518062e8a512a21bfb56f6914542713"
+}

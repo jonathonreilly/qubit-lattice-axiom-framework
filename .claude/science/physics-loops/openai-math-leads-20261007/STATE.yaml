@@ -1,0 +1,45 @@
+{
+  "goal": "Execute all potentially relevant OpenAI math leads against current repo walls",
+  "mode": "bounded portfolio execution, not an unattended campaign",
+  "delivery": "milestone",
+  "base": "ed04ee2736b5bddb4e9064966505e3c3dfe003de",
+  "external": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+  "planning": "eb1f1ca8338848cf2046582e13aef372d8540937",
+  "started_at": "2026-10-07T14:27:55.105672+00:00",
+  "branch": "physics-loop/openai-math-leads-20261007",
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/worktree",
+  "evidence": "/Users/jonreilly/Documents/Codex/research_runs/openai_math_20261007/execution",
+  "actual_current_surface_status": "conditional-support",
+  "target_claim_type": "bounded_theorem",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "routes": {
+    "pxp": "worldline transfer, purity bootstrap, exact finite seeds",
+    "continuum": "215,225,261 and adjacent families",
+    "kinetic": "362-364,276 and adjacent families",
+    "root": "full catalogue screen,271,265,204,260,262,263,267,269,270,280,290 and other leads"
+  },
+  "next_action": "Run focused conformance checks, commit and open review PR",
+  "repository_mutations": "isolated note, standalone runner, generated paired cache, citation manifest and loop pack only",
+  "open_pr_snapshot": [],
+  "checks": "initial review evidence reused on unchanged source revisions",
+  "scientific_milestones": 1,
+  "cycles_completed": 1,
+  "claim": "Unique finite-volume ground state and gap >log(25/14)/4 for explicit periodic PXP/full staggered link rings at every even L>=6",
+  "independent_check": "Mathematical and final packaging review accepted; expected final note identity confirmed",
+  "open_mathematical_obligations_for_milestone": [],
+  "formal_audit": "not performed",
+  "last_updated": "2026-10-08T00:35:34.705664+00:00",
+  "files_touched": [
+    "docs/PERIODIC_PXP_AND_STAGGERED_LINK_RING_UNIFORM_GAP_BOUNDED_THEOREM_NOTE_2026-10-07.md",
+    "scripts/periodic_pxp_and_staggered_link_ring_uniform_gap_2026_10_07.py",
+    "logs/runner-cache/periodic_pxp_and_staggered_link_ring_uniform_gap_2026_10_07.txt",
+    "docs/audit/data/citation_graph_manifest.json",
+    ".claude/science/physics-loops/openai-math-leads-20261007"
+  ],
+  "graph_delta": {
+    "nodes_added": 1,
+    "edges_changed": 0,
+    "node": "periodic_pxp_and_staggered_link_ring_uniform_gap_bounded_theorem_note_2026-10-07"
+  }
+}

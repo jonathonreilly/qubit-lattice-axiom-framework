@@ -1,0 +1,10 @@
+# Handoff
+Milestone: explicit even-ring PXP and full staggered link-ring uniform gap >log(25/14)/4, unique finite-volume ground state, every even L>=6. The complete proof has selective independent mathematical checking and exact certificates. Status is conditional-support, claim type bounded_theorem. Base ed04ee2736b5bddb4e9064966505e3c3dfe003de; external method source adc7f1241b42e322a6451854ab7e4b4c146bf78a.
+
+Review the note, runner, complete paired cache, intended graph-manifest delta and review reports in this pack. Run one shared integrated-current-main landing validation according to REVIEW_LOOP_PR_CONFORMANCE_SPEC section12 before a later landing. Author execution neither merges nor applies audits. After landing, any retained grade belongs to the independent audit path.
+
+Only the uniform finite-volume gap and all-length sector dictionary advance the earlier broader claim. Thermodynamic ground-state uniqueness, confinement/correlations, selection of background/dynamics, physical readout and three-dimensional phases are not established by this result. No canonical source indexes or lane/publication surfaces were woven; a later reviewer may add an appropriately scoped cross-reference to the earlier note.
+
+Two metadata limitations are explicit: the conformance spec's older status wording conflicts with its cited current CLAIM_STATUS enum, so conditional-support is used; the blocker-source enum has no repository-note category, so null plus exact path/section/revision records the actual origin. No invented enum or misleading attribution is used.
+
+The broader local investigation report contains exact model bridges for other leads, with unverified external theorems marked as imports. Next useful research decisions are external-proof validation for the existing balanced square-ice and independent-activation controls, or a deliberately supplied finite-velocity kinetic benchmark. None is a prerequisite for this milestone.

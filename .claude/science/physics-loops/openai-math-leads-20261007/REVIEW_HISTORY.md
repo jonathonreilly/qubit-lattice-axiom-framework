@@ -16,3 +16,5 @@ Conformance sections:
 10. Propose/ratify: no audit fields or authority outputs mutated; formal audit remains separate.
 11. Facts/counts: source revisions and every claimed count have exact evidence. No global novelty claim or all-release correctness claim.
 12. Validation placement: focused source/runner checks, vocabulary lint, compilation and committed diff check apply here. The full pipeline, strict ledger lint and changed-evidence gate belong to one exact integrated-current-main landing pass; they are pending and are not misreported as run or passed on this author branch.
+
+Final author validation: vocabulary lint reported0 violations, Python compilation passed, exact runner cache remains fresh, and both staged and committed diff checks passed. Source milestone commit is `7d392547bdfd750bbe9dc3b1a3829e6c35627b06`. GitHub verified draft PR9466 as mergeable against main. No full landing pipeline or formal audit was run.

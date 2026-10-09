@@ -1,0 +1,10 @@
+s=6.0 D0=60.0 D1=60.0 n=1000: <N1>=18.434 F1=1.409 <M0>=18.486 F0=1.432 <phi>=340.769 (N1*M0=340.769)
+   relative variance of phi: 0.0830;  no-compounding law F1/N1 + F0/(N1 N0) = 0.0807;  last stage alone F1/N1 = 0.0765
+s=8.0 D0=400.0 D1=400.0 n=800: <N1>=6.501 F1=1.145 <M0>=6.632 F0=1.086 <phi>=43.114 (N1*M0=43.114)
+   relative variance of phi: 0.2125;  no-compounding law F1/N1 + F0/(N1 N0) = 0.2014;  last stage alone F1/N1 = 0.1762
+s=6.0 D0=300.0 D1=40.0 n=800: <N1>=27.387 F1=1.453 <M0>=3.692 F0=1.084 <phi>=101.127 (N1*M0=101.127)
+   relative variance of phi: 0.0679;  no-compounding law F1/N1 + F0/(N1 N0) = 0.0638;  last stage alone F1/N1 = 0.0530
+s=6.0 D0=40.0 D1=300.0 n=800: <N1>=3.770 F1=1.081 <M0>=27.653 F0=1.570 <phi>=104.252 (N1*M0=104.252)
+   relative variance of phi: 0.3014;  no-compounding law F1/N1 + F0/(N1 N0) = 0.3019;  last stage alone F1/N1 = 0.2869
+s=12.0 D0=600.0 D1=600.0 n=500: <N1>=14.846 F1=1.104 <M0>=14.837 F0=1.100 <phi>=220.276 (N1*M0=220.276)
+   relative variance of phi: 0.0784;  no-compounding law F1/N1 + F0/(N1 N0) = 0.0793;  last stage alone F1/N1 = 0.0744

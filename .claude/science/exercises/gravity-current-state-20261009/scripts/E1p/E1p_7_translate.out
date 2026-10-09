@@ -1,0 +1,29 @@
+=== GW proxy (massless link field, single observation event) ===
+BNS, two 12-km stars, 40 Mpc    : Nbar = 5.50e+58 links, rel noise = 4.26e-30 (x10 for (v/c)^-2 quadrupole suppression: 4.3e-29); kappa s/D = 4.9e-19
+BNS, two 12-km stars, 1 Gpc     : Nbar = 2.20e+57 links, rel noise = 2.13e-29 (x10 for (v/c)^-2 quadrupole suppression: 2.1e-28); kappa s/D = 1.9e-20
+100-km ball, 1 Gpc              : Nbar = 6.36e+59 links, rel noise = 1.25e-30 (x10 for (v/c)^-2 quadrupole suppression: 1.3e-29); kappa s/D = 1.9e-20
+1-km ball, 1 Gpc                : Nbar = 6.36e+53 links, rel noise = 1.25e-27 (x10 for (v/c)^-2 quadrupole suppression: 1.3e-26); kappa s/D = 1.9e-22
+arrival offset at 40 Mpc: mean 5.50e-103 s, spread 4.16e-103 s; fractional speed offset 1.3e-118  (GW170817: |cg-c|/c < ~1e-15)
+arrival offset at 1 Gpc: mean 2.20e-104 s, spread 1.66e-104 s; fractional speed offset 2.1e-121  (GW170817: |cg-c|/c < ~1e-15)
+links per event, slab past of depth c t0 = 1.305e+26 m: 5.01e+122
+mean-kernel deviation from G_R at r = 1e-19 m: <sigma>/(2 r^2) = 2.0e-32
+
+=== matter at ell = ell_P ===
+electron: m ell = 4.185e-23, Compton lambda-bar = 3.862e-13 m, m^2 ell = 1.084e-10 /m
+   point-to-point G_m(x,y): noise > mean envelope at m tau > 2.89  -> tau > 1.12e-12 m (any rho)
+   compact-source G_m J, single event: noise = mean at tau = 2 ends: 8.636e+02 m, 1 end: 1.088e+03 m, lower bound: 1.221e+03 m
+   packet of size 1e-06 m: Var/mean^2 = 3.82e-34
+   packet of size 0.001 m: Var/mean^2 = 3.82e-28
+   packet of size 1 m: Var/mean^2 = 3.82e-22
+   packet of size 1000 m: Var/mean^2 = 3.82e-16
+   overlap-free renewal growth of variance: rate 2.766e-11 /m -> e-fold every 3.615e+10 m of proper time; at 1 km factor 1.000
+   mean's slow growth ~0.5 m^3 ell^2 = 2.27e-33 /m -> e-fold 4.41e+32 m
+proton: m ell = 7.685e-20, Compton lambda-bar = 2.103e-16 m, m^2 ell = 3.654e-04 /m
+   point-to-point G_m(x,y): noise > mean envelope at m tau > 2.89  -> tau > 6.08e-16 m (any rho)
+   compact-source G_m J, single event: noise = mean at tau = 2 ends: 3.137e-03 m, 1 end: 3.952e-03 m, lower bound: 4.436e-03 m
+   packet of size 1e-06 m: Var/mean^2 = 4.34e-21
+   packet of size 0.001 m: Var/mean^2 = 4.34e-15
+   packet of size 1 m: Var/mean^2 = 4.34e-09
+   packet of size 1000 m: Var/mean^2 = 4.34e-03
+   overlap-free renewal growth of variance: rate 9.326e-05 /m -> e-fold every 1.072e+04 m of proper time; at 1 km factor 1.098
+   mean's slow growth ~0.5 m^3 ell^2 = 1.40e-23 /m -> e-fold 7.12e+22 m

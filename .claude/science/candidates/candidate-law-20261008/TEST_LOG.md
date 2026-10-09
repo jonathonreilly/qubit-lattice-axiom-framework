@@ -79,3 +79,47 @@ Worker scripts are in session scratch; the supervisor check scripts named below 
 - K2b: does the mirror gap in the continuous-time form?
 - K7b for the H form: how large is the one-loop speed split, and does it need tuning to 1e-15?
 - K3a: the graviton's protection, in either form.
+
+## G0: can one qubit per site host fermions locally? (2026-10-08)
+
+**Verdict: FAIL for the class searched. Not yet recorded in `RESULTS`: the referee is running.**
+
+**The class searched** (13-qubit corner star, exhaustive):
+- **The hops.** One hop per direction: t_δ = σ⁺_{v+2δ} X_{edge δ} σ⁻_v + h.c., times a product of single-qubit dressings, which are:
+  - Pauli letters on the other edges, the far corners and the corner;
+  - Z₄-monomial gates on the edges.
+- **Covariance.** Required under all 24 turns, up to site-local Z₄ phase gates and scalars. This is a superset of the projective tables.
+- **The observable.** The Levin–Wen holonomy on all 20 junctions: 12 T-shaped and 8 corner.
+
+**What the worker found (CHECKED).**
+- Every covariant candidate whose holonomy does not vanish gives +1 on every junction.
+- Class A has 32 covariant patterns of 2048, all +1.
+- Classes B and C (2560, 8192 and 20480 candidates): none gives −1 on any junction.
+- **Controls.** Non-covariant "tournament" dressings give −1 on all 20 junctions. Turn-invariant tournaments exist only for the trivial group and the four C3 subgroups.
+- **Helper face qubits.** They can make the 8 corner junctions −1, but never a T-junction.
+
+**Supervisor's own check (ARGUED, independent of the worker's code).**
+1. Commutation signs between hop factors do not change when a hop is multiplied by a scalar. They do not change under conjugation by a common frame either.
+2. Take the half-turn about an axis ε ⊥ δ. It swaps δ ↔ −δ and fixes e_{±ε}. It swaps e_η ↔ e_{−η} for the third axis η, and e_δ ↔ e_{−δ}.
+3. Covariance gives d_{−δ}(e_{gx}) = d_δ(e_x) for every dressing letter. So:
+   - the e_{±ε} contributions are a letter against itself, which is 0;
+   - the (e_η, e_{−η}) and (e_δ, e_{−δ}) contributions come in equal pairs, which is even.
+4. Only the corner factor is left. It is σ^∓ in both hops, fixed by occupation transfer, and phase frames only rephase it. So the factors commute.
+5. The T-junction sign is therefore +1 for any product dressing, at any range.
+6. The corner junctions are a separate orbit. This is why helper faces can flip them but never the T-junctions.
+
+This matches the worker's pair-sign argument. The plain version: a local fermion needs an ordering of the six directions at each corner, and a half-turn always reverses some pair.
+
+**Scope.** The FAIL does not exclude:
+- sums of several dressed terms per direction;
+- continuous non-Clifford dressings;
+- non-product composites (A50's CZ composite was not re-tested);
+- corner records (A52);
+- non-local strings;
+- more than one qubit per site.
+
+Bravyi–Kitaev superfast needs a fixed tournament, so it fails. Verstraete–Cirac needs auxiliary modes.
+
+**Referee.** codex gpt-5.6-sol xhigh, running (`referee_G0/REFEREE_VERDICT.md` in scratch).
+
+**If confirmed.** Record K2 = 0 for (motion, turns, room) = (·, ·, P) under both turn settings, restricted to the product-dressing class. Under "one qubit per site", fermions then need corner records, non-product composites, or a non-local string.

@@ -51,3 +51,30 @@ Take one massless field in a constant, volume-preserving metric g = exp(−tε),
 - **The mediator.** Whether a graviton exists on such a substrate at all is not tested here.
 
 **The trace twin.** Everpresent Λ: δΛ ~ 1/√V_Hubble ~ 1e-122 in Planck units, the observed order (COMPARATOR, Sorkin). The analogous TT fluctuation over the Hubble volume would be δm_g² ~ H², i.e. m_g ~ 1e-33 eV, below LIGO's 1e-23 eV (suggested).
+
+## Follow-up: why a fixed spatial substrate cannot be both shape-blind and quiet (2026-10-09, written while E2/E3 ran)
+
+**Timing, for honesty.** I wrote this after glimpsing one line of E2's progress ("pooled fits within 2 SE of white noise"). I had seen no E3 result. The lemma is a proof, not a forecast, so it stands or falls on its own; the referee checks it with E2/E3.
+
+**Lemma P (proved, same-family; to be refereed).**
+- **Setting:** a stationary simple point process X in R^d, d ≥ 2, with intensity ρ and finite second moments.
+- **Claim:** if its law is invariant under SL(d) (all volume-preserving linear maps), then its pair correlation g₂ is constant: g₂ ≡ c ≥ 1, with c = 1 exactly when X is (mean-)ergodic. So for every window W,
+
+  Var N(W) = ρ|W| + ρ²(c − 1)|W|² ≥ ρ|W|,
+
+  and S(k) = 1 for every k ≠ 0. The density noise is white; no such set is hyperuniform.
+- **Proof:**
+  - For A ∈ SL(d), AX has the same intensity, and its reduced second factorial moment measure is the push-forward by A.
+  - Invariance in law makes that measure an SL(d)-invariant Radon measure on R^d∖{0}. SL(d) acts transitively there for d ≥ 2, and an invariant measure on a homogeneous space is unique up to scale, so it is c·ρ·Lebesgue. A simple process puts no mass at 0, so g₂ ≡ c.
+  - Var N(W) ≥ 0 for large W forces c ≥ 1. Mean ergodicity, i.e. N(W)/|W| → ρ in L², forces c = 1. ∎
+- **The same holds for the smallest group that matters.** The upper-triangular Iwasawa subgroup AN acts simply transitively on unimodular metrics, so invariance under AN alone already makes the mean energy shape-blind to all orders. AN has two open orbits in R^d, the half-spaces x_d > 0 and x_d < 0. Parity swaps them and g₂ is even, so g₂ is still constant almost everywhere.
+
+**Corollary for E2/E3 (suggested; the readings are the tests').** In a frozen spatial substrate, mean TT shape-blindness that comes from the symmetry of the substrate's law (R1 Lemma L, R2 Lemma A) and suppressed long-wavelength density noise exclude each other.
+- **Diluted Z³, quasicrystals and stealthy hyperuniform sets** have quiet or crystalline density, but their law keeps only finite or rotational symmetry. Their mean TT stiffness is therefore not protected by symmetry: it has one number for icosahedral or decagonal order, two for cubic. It vanishes only by tuning.
+- **Poisson-type sets, frozen or growing,** are protected in mean, but their density noise is white. That was F1a's failure.
+- So no frozen spatial pattern escapes by being cleverer. The choice is between a symmetric law (white noise) and quiet order (an unprotected mean).
+
+**What the lemma does not cover.**
+1. **The stiffness field is a nonlinear local functional of the configuration.** White density noise generically gives white stiffness noise. A stiffness density that is exactly a divergence, a coboundary, would be quiet even on a Poisson set. That is F1a's one reopen condition, and it stays open.
+   - Related: for a *pair-sum* energy, a stealthy set with a band-limited kernel is exactly shape-blind in every realization. But Z³ is the extreme stealthy set, and this is T2's free-level relabelling again: non-local, and it does not survive interactions (Lemma R).
+2. **Spacetime.** The Lorentz group is not transitive on R⁴∖{0}; its orbits are hyperboloids. So Lorentz invariance in law forces only g₂(x) = G(x·x), not a constant, and E1 is not touched by this lemma. The spacetime Poisson sprinkling itself has S ≡ 1 (white in 4D). Whether that white noise is harmless (marginal) is exactly E1's quantitative question.

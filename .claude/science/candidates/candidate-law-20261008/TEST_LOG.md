@@ -430,3 +430,27 @@ Corrections:
 **Recorded in `RESULTS`.** ("K3 gravity", gravity X) = 0. An explicit metric on the rigid grid is a naturalness kill on every room, so **Candidate 1 (Q L O B X) is dead.**
 
 **Added to the matrix.** Gravity option **W**: dynamical geometry on fixed adjacency, with matter coupled only through relations, as in lattice diffeomorphism invariance (Regge/Wetterich). It is the escape the referee identified.
+
+## Prior-art sweep for gravity option W (2026-10-08, Sonnet; literature from abstracts)
+
+**The repo's Regge programme.** Everything in it is unaudited.
+- **Flat-space results.**
+  - Vertex displacements are exact zero modes.
+  - The Regge action matches linearized Einstein–Hilbert, Q_h = −½ Q_EH + O(k⁴).
+  - In 4D there are 15 edge classes against 10 metric components. One spurious direction is flat at quadratic order (Roček–Williams type).
+- **Where it stands.**
+  - The 09-03 4D note was downgraded. It has 7 small singular directions on shell against 5 off shell, which is unexplained, and no physical graviton.
+  - Matter coupling, the physical graviton and nonlinear closure are all open.
+- **The repo's own version of W.** "Embedding-inert" edge-length actions, read as a framework reading of the Lattice axiom being adjacency-only, are stated as a hypothesis (`CUBIC_COXETER_REGGE_LINEARIZED_ACTION_SELECTION_EH_CLASS_..._2026-06-10.md`).
+
+**Literature.**
+- **Wetterich (arXiv:1110.1539).** The invariance means the action does not depend on where the points are placed, and the metric is a collective field. The examples are sigma models and spinor gravity, with no gauge fields shown.
+- **Bahr–Dittrich.** Discretization breaks diffeomorphism symmetry except around flat space. Perfect actions are known only in limited cases.
+- **Hamber.** Regge simulations show smooth and rough phases.
+- **Missing.** No result has a massless spin-2 with interacting matter and untuned couplings on fixed combinatorics.
+
+**Two strains on W.**
+1. Regge needs diagonal edges, which is more than nearest-neighbour adjacency. The Coxeter complex also has only S₄ × inversion symmetry, not all 24 proper turns.
+2. Lengths are not readable unless derived from records.
+
+**Next.** W1 and W2 were pre-registered in `KILL_SHEET.md` and launched.

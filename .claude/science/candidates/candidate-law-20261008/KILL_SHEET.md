@@ -170,3 +170,29 @@ With beables, this passes by construction once K4 passes: there are no new effec
 **FAIL:** c₂ ≠ 0, at least 1e-6 in lattice units, for every rule in the stated family. Then the only fix is a bare graviton-mass counterterm tuned to about 1e-100 of its natural size (LIGO: m_g ≲ 1e-51 M_P). That is a **naturalness kill**, like the cosmological-constant problem, not a logical inconsistency. It is recorded as such.
 
 **INCONCLUSIVE:** c₂ is not converged, or the result depends on the coupling family in a way not covered here.
+
+## W1 and W2 (added 2026-10-08, after K3a″; tests of gravity option W before a Candidate 2 is written)
+
+**Why they were added.** The W prior-art sweep (Sonnet, `TEST_LOG.md`) found two things:
+- W in its explicit form, with dynamical edge lengths entering the matter weights, is essentially K3a″'s vielbein model. It escapes only if the cutoff and measure follow the strain, and a Brillouin zone fixed by adjacency suggests they cannot.
+- W in its position-blind form reduces to K3a.
+
+**W1: interacting vacuum Hessian under uniform edge-length deformation**
+- **The complex.** The cubic (Kuhn/Coxeter) Regge complex with 15 edge classes in 4D, or 7 in 3D. Use 3D if the Hamiltonian form is used.
+- **The weights.** Staggered fermions plus compact U(1), with every weight a function of the edge lengths, fixed by one no-free-parameter rule: DEC Hodge stars, with hops ∝ 1/ℓ and photon weights ∝ ℓ_dual/ℓ. Universal coupling, x_γ = x_f.
+- **The observable.** The vacuum-energy Hessian per cell under uniform edge-length deformation, at O(e⁰) and at O(e²). Decompose it into the constant-metric directions (trace, E_g, T_2g), the vertex-displacement directions, and the non-metric directions.
+- **The control.** K3a″'s no-grid (proper-momentum) run.
+
+**W1 verdict lines:**
+- **PASS:** the TT (E_g and T_2g) second derivatives vanish, to 1e-10 or better, at both orders, with no tuned counterterm.
+- **FAIL:** any nonzero TT term at O(e²) with universal coupling. **A FAIL kills explicit W.**
+- **INCONCLUSIVE:** not converged.
+
+**W2: the vacuum Regge graviton count**
+- **The question.** On the hypercubic Regge complex, with no matter, resolve the open 5-versus-7 null-space count of `docs/THE_REGGE_SECOND_VARIATION_ON_THE_4D_*_2026-09-03.md`. The method:
+  - classify every exact zero mode of the second variation at generic momentum (gauge vertex displacements, physical TT, spurious);
+  - check whether the flat spurious direction is lifted at cubic order.
+
+**W2 verdict lines:**
+- **PASS:** after gauge, exactly 2 physical massless polarizations, and every spurious direction is massive or lifted.
+- **FAIL:** an extra massless non-gauge mode survives.

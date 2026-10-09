@@ -110,3 +110,23 @@ With beables, this passes by construction once K4 passes: there are no new effec
 - **PASS:** three light generations with a mass hierarchy come out of the content, with no supplied labels.
 - **FAIL:** they do not.
 - **Starting point:** the hw=1 triplet is a label algebra, not a symmetry (e69519ec7a), and 4D staggered fermions give 4 tastes.
+
+## K3a′ (added 2026-10-08, after K3a; a new test, K3a's own line is unchanged)
+
+**Why it was added.** K3a found that interacting lattice QED has no exactly conserved finite-range stress. The best range-R stress leaves a vertex defect of 13% at R ≤ 3 and 3.5% at R ≤ 4. Crystal momentum has a 1/r kernel (probe 6), so the defect may fall as a power of R and never reach zero. The question that matters for data is whether a *quasi-local* stress, wide but still microscopic, is good enough.
+
+**The data bar.**
+- Gravitational waves bound the graviton mass at m_g ≲ 1.3e-23 eV (LIGO–Virgo GWTC-3), which is about 1e-51 M_P.
+- The induced mass² coefficient per cell, about e²·defect², must therefore be below about 1e-104.
+- With e² = 4πα, the defect must be below about 1e-51.
+
+**Method.**
+- Extend K3a's best-range-R fit to R = 5, 6, 7 and more, as far as the budget allows.
+- Fit the defect against R with exponential and power-law forms, and report both, with fit quality.
+- Extrapolate the R at which the defect reaches 1e-51.
+
+**PASS:** the extrapolated range is at most 1e15 sites (about 1e-20 m, a factor 1e5 below the proton radius), with a fit that is stable over at least three consecutive R values.
+
+**FAIL:** the defect plateaus, or the extrapolated range exceeds 1e15 sites.
+
+**INCONCLUSIVE:** the fit is not stable over three R values.

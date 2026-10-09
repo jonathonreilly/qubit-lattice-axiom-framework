@@ -186,3 +186,38 @@ The worker is Sonnet 5.5. The referee (codex sol) is running.
 - **A52's corner records.** Under exact turns, a record at every corner holds the direction ordering in the *state*. This is the one known escape, and it is consistent with G0's obstruction: the ordering cannot be in the law, but it can be in the state.
 
 **Effect on priors.** K2(L,P) goes from 0.04 to 0.03 and K2(E,P) stays at 0.04, because the A52 route works under exact turns.
+
+## K3a: graviton mass from the interacting sea (2026-10-08)
+
+**Verdict, read against the pre-registered line: INCONCLUSIVE.** The worker labels it "FAIL, qualified". The pre-registered FAIL needs two things:
+1. **No exact local stress.** CHECKED for the interacting theory, so this half is met.
+2. **Induced terms that are O(1) in lattice units.** NOT met: the interacting remainder is about 1e-5 to 1e-4 per cell (ARGUED).
+
+The line is not changed after the fact.
+
+**What the worker found (Sonnet 5.5).**
+- **The criterion.** The gauge condition Dᵀ F = i[H, 𝒫] holds iff P = Σ𝒫 and L = Σc×𝒫 are both conserved local charges. "Only if" is EXACT; "if" is ARGUED by module duality.
+- **Free fields: an exact local stress exists (CHECKED).**
+  - Staggered fermions, in 1D, 2D and 3D, massive or massless: residual ≤ 4e-14. In 2D the symmetric T is rebuilt explicitly.
+  - Yee Maxwell, with Gauss and Bianchi multipliers: residual 1.6e-11 in 3D.
+- **Interacting lattice QED: no exact finite-range stress (CHECKED, perturbative at O(e)).**
+  - Lattice-scale resonant emission and absorption (|p| ≥ 1.5) exist, with nonzero amplitudes.
+  - Once 400–800 resonances are imposed, no free-conserved momentum survives at ranges 2, 3 or 4.
+  - The best finite-range defect is 13% at R ≤ 3 and 3.5% at R ≤ 4.
+  - A 1D gauge comparator has only the identity and H as local charges.
+- **Size of the mass term.**
+  - At the free level it is about +0.27 / +0.22 per cell (axis / face), which is cutoff-sized, but a coupling can be designed to remove it.
+  - The interacting remainder, about e²·defect², is 1e-5 to 1e-4 per cell (ARGUED). That is about 1e95 above the gravitational-wave bound.
+- **Diagnosis.** It blames the fixed grid plus any local interaction, not the room setting. The listed escapes:
+  - free or integrable matter;
+  - non-explicit (emergent) gravity;
+  - a stress of very long range.
+- **No symmetry forbids the term.** Gauge, translation and cubic symmetry allow two TT numbers.
+
+**Effect on priors.**
+- X loses 0.4× on every room, since the diagnosis is not room-specific.
+- G loses 0.7×, since an emergent graviton faces the same lattice-scale momentum breaking unless an exact emergent constraint protects it.
+
+**Follow-up.** K3a′, pre-registered above before running, asks whether the defect falls fast enough with range: a quasi-local stress about 1e11 sites wide (about 1e-23 m) would be invisible.
+
+**Referee.** codex sol, owed and launched.

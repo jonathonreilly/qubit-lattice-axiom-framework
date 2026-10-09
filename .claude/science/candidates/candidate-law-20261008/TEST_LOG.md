@@ -28,13 +28,30 @@ Worker scripts are in session scratch; the supervisor check scripts named below 
 - **Graviton:** there are 9 hypercubic forms, of which 4 are O(4)-invariant, and exact gauge invariance leaves 1 (CHECKED count). Without exact gauge invariance, 5 anisotropic forms are allowed. **The graviton's protection therefore hangs on K3a,** whether the interacting stress is exactly conserved.
 
 **Conditions found.**
-1. **No positive transfer matrix for gravity.** The conformal mode gives 255 negative eigenvalues at L = 4. "H = −(1/a) log T" cannot define gravity.
+1. **The unreduced Euclidean gravity form is indefinite.** The conformal mode gives 255 negative eigenvalues at L = 4. "H = −(1/a) log T" therefore cannot be taken directly. The referee notes that a positive physical transfer matrix after reduction is open, not excluded.
 2. **Tick size.** Hypercubic means a_t = 2 fine (Z³) edges. A25's leapfrog at τ = a_s is unstable (max|eig| 9.9); τ = a_s/2 is stable but not hypercubic.
 3. **Matter content.** 4D staggered fermions have 4 tastes and a two-step transfer matrix. That differs from the 3D Hamiltonian H_ψ written in `CANDIDATE_1.md`.
 
-**Supervisor check.** Not yet run independently. The fermion and gauge hypercubic invariance is standard. The gravity symbol identities are to be re-run by the referee.
+**Supervisor check.** Not run independently: the referee re-derived it exactly instead. The fermion and gauge hypercubic invariance is standard.
 
-**Referee.** Owed: codex sol, for the gravity construction.
+**Referee: codex gpt-5.6-sol xhigh, CONFIRMED WITH CORRECTIONS (2026-10-08).** It re-ran everything and added an independent exact-arithmetic check.
+
+Confirmed:
+- (a) W(B4) covariance: exact via generators, and the symbol is in fact O(4)-covariant.
+- (b) K(s)D(s) = 0: exact.
+- (c) Spectrum s²{−1, 0×4, ½×5} at every s ≠ 0, so no doublers.
+- (d) The ADM reduction: exact.
+- The fermion and Wilson-gauge invariance on Z⁴: exact. Finite tori need even extents.
+- The 9/4/1 count: exact.
+
+Corrections:
+1. Say "no extra zero modes or doublers", not "no extra modes". Physical counting also uses the constraints.
+2. The shift row is −s₄s_j(h_ij − δ_ij tr₃h). The runner used √2-scaled coordinates.
+3. Photon and graviton share the pole 1/Σ4sin²(k_μ/2). Their numerators differ, and the graviton's is (2/s²)(I − ½tt^T).
+4. The 9/4/1 count covers constant-coefficient two-half-step forms. Gauge symmetry therefore protects the unique leading graviton structure and its single TT speed. It does not protect higher-derivative lattice artefacts, which are Planck-suppressed.
+5. **"No positive transfer matrix" is NOT proven.** Only the unreduced Euclidean form is indefinite (the conformal-factor problem). A positive physical transfer matrix after constraints, gauge reduction or a contour prescription is open.
+
+Prior literature (referee, from memory): Roček–Williams 1981 linearized Regge calculus, Barrett 1987, Höhn 2015. No published source is known for this exact staggered h_μν stencil, which is not a novelty proof.
 
 **Effect on priors.** K7 for Q goes from 0.15 to 0.30, conditional on K3a.
 

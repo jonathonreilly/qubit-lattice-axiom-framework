@@ -370,3 +370,42 @@ Not confirmed:
 6. **The scale.** The 1e15-site bar (1.6e-20 m) is a naturalness benchmark, far stricter than any direct gravity test, which reaches about 50 μm.
 
 **Lesson.** A 16-decade extrapolation cannot decide this. The next test is a direct calculation: **K3a″, pre-registered in the kill sheet.**
+
+## K3a″: the interacting vacuum's shear response, computed directly (2026-10-08)
+
+**Verdict against the fixed line: FAIL, a naturalness kill.** The worker is Sonnet 5.5. The referee (codex sol) is running, and nothing goes into `RESULTS` until it reports.
+
+**What was computed (CHECKED).**
+- **The model.** A continuous-time Hamiltonian with constant spatial h. The photon is in a generalized Coulomb gauge, ∇·(M⁻¹A) = 0. The O(e²) energy is the sum of pair-plus-photon exchange, the diamagnetic term and the Coulomb term.
+- **The coupling rules.**
+  - The fermion hop along j carries Σ_a e_aj σ_a, and the photon energy carries G = g/√g.
+  - Three versions were run: the exponential vielbein (volume-preserving), "vlin" and "lin". vlin and lin differ from exp only by trace responses, so the clean TT value is the exp one.
+  - The face channel was run with nearest-neighbour ("natural") hops and with universal range-2 hops.
+
+**c₂ per e² per cell (L → ∞, converged over L = 8 … 48).**
+
+| Channel | c₂ |
+|---|---|
+| axis | −0.01303 |
+| face, natural | +0.01247 |
+| face, universal | +0.01337 |
+
+- **Size.** At α = 1/137, |c₂| ≈ 1.2e-3 per cell, about 1e101 above the gravitational-wave bar. The opposite signs make it a strongly cubic-anisotropic term.
+- **The axis pieces.** Exchange +0.0016, diamagnetic −0.0086, Coulomb −0.0060.
+
+**No protected zero.**
+- **The family.** c₂ = A x_f² + B x_f x_γ + C x_γ². The axis channel vanishes only at x_γ/x_f = 0.127 or 2.78, meaning light coupled to the metric 0.13 times as strongly as matter. That breaks universality, and nothing protects it. The face channel has no real root.
+- **Counterterms.** Contact terms can cancel c₂, but they are tuned bare counterterms.
+- **Symmetry.** Gauge, translation, cubic and C/P/T symmetry all allow the term.
+- **The free part was already tuned.** Before its counterterm it is +0.267 (axis) and +0.592 (face): an O(1) bare TT-mass term. A structural axis cancellation exists at x_γ = x_f/2, but it is non-universal.
+
+**Controls.**
+- The trace response sums to E2(0) to 7e-9, and isotropic scaling is exact.
+- The continuum pure-gauge control gives about 1e-12, so the effect comes from the grid.
+- Cubic covariance holds to 1e-14 and the vertex Ward identity to 2e-16.
+- An exact-diagonalization check at L = 2 agrees to about 0.1%.
+- The genuine KS staggered result equals the walker result ×½ to 6 digits.
+
+**Plain reading.** On a fixed grid, the interacting vacuum resists being sheared, at about one part in a thousand per cell. A metric field coupled to it therefore picks up a mass at nearly the Planck scale, unless a bare counterterm is tuned to about 1e-100. This is the cosmological-constant problem's twin for the graviton mass. It is a naturalness failure, not a contradiction.
+
+**Referee.** codex sol, running. Among other things it is asked whether a different identification of h, for example as a deformation of the lattice embedding, would absorb the term, and whether the result bears on an emergent graviton.

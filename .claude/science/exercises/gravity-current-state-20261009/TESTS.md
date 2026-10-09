@@ -382,3 +382,42 @@ See SUMMARY.md §8 and `agents/B_referee.md`.
 - **The conditional core survives.** In a local, weakly coupled 3+1 EFT with one massless helicity-2 pole, a Lorentz-invariant S-matrix and no compensator or custodial sector, an exact linearized-diffeomorphism Ward identity forbids an h-only mass. Generic physical labels need protection or extreme tuning. The soft-theorem and bootstrap hypotheses then give universality and GR's structure.
 - **Not proved:** that the grain must be event-like, fluid, coherent, or of unbounded valency. BHS is narrower: it excludes only an intrinsic finite-valency Lorentz-equivariant map on a Poisson sprinkling.
 - **B1 c5** (4D Euclidean random lattice): bounded FAIL for the tested implementation.
+
+### E1′ results (2026-10-09; worker Claude Opus 5.5 xhigh; referee codex sol: gravity INCONCLUSIVE, matter M-INCONCLUSIVE)
+
+Full texts: `agents/E1p_report.md` and `agents/E1p_referee.md`. Scripts: `scripts/E1p/`.
+
+**Confirmed (referee).**
+- Johnston's normalisations are right (a = √ρ/(2π√6), b = −m²/ρ, φ = ρ⁻¹KJ).
+- The law is shape-blind.
+- E[aL] → the massless retarded light-cone kernel, with O(ℓ²/r²) power corrections and no Yukawa factor.
+- E[L²] → 3π, in the limit only.
+- The massless field's mean and diagonal variance (Mecke) are exact. It depends on nothing outside the source-to-observer intervals. Its Fano factors are 1–2.5 for s/ℓ = 6–24, with κ = 3.5, 4.4 and 4.9.
+- Two-stage relays do not compound.
+- Neutron-star merger at 1 Gpc: N̄ = 2.2e57, so the noise is 2.1e-29 *if* F stays O(1).
+
+**Gravity: INCONCLUSIVE.** The worker's PASS is not confirmed, because the uniform large-s/ℓ Fano law was argued, not controlled. Taking κ from s/ℓ ≤ 24 to s/ℓ ~ 1e39 is a long extrapolation (TESTS.md:8). The referee also notes the scalar-to-tensor bridge is not derived. Overturning the result would need κ ~ 7e77, i.e. roughly quadratic growth in s/ℓ.
+
+**Matter: M-INCONCLUSIVE.** The worker's M-FAIL is not confirmed.
+- **Established for single events.** Event-to-event kernels have a ρ-independent two-link floor, sd ∝ m², which crosses the mean at mτ ≈ 2.88 in the continuum regime. The leading compact-source seed law is (√6/96)(mℓ)²(mτ)³.
+- **The mean has a genuine slow growing complex pole.** Re s = (3/(2√6))m³ℓ² = 0.612 m³ℓ²; the referee derived it independently.
+- **Not computed: the physical observable**, a wavepacket travelling a given lab distance into a smeared detector, including regeneration along the trip.
+- **The 4D renewal growth rate 0.2549·m²ℓ is only an overlap-free model.**
+
+### E1′-b: a uniform bound on the massless Fano factor (supervisor follow-up; pre-registered 2026-10-09 before its referee)
+
+**Why.** The E1′ referee left gravity INCONCLUSIVE only for want of a controlled large-s/ℓ noise law. This follow-up supplies a bound, not a fit.
+
+**Claim (supervisor; proved modulo routine geometry; see `agents/supervisor_E1p_b.md`).** For a source J = 1 on a region that straddles x's past light cone and is thick compared with the link shell:
+
+  Var(Σ_y J(y)L(x,y)) / N̄ ≤ 3 + c·(s/D), with a finite geometric constant c, **uniformly in s/ℓ**.
+
+**How it is proved.**
+- The Poisson Poincaré inequality Var F ≤ E∫(D_zF)²ρdz, applied to the add-one cost D_zF = J(z)L(x,z) − Σ_{y: z∈I(y,x)} J(y)L(x,y).
+- The needle overlap |I(y,x) ∩ I(y',x)| ≈ min(V, C·ℓ⁸/b⁴) at transverse offset b. This is CHECKED by Monte Carlo in `scripts/E1p/S2_needle_overlap.py`: overlap·b⁴ → about 23ℓ⁸ for b = 8–32ℓ, and the overlap equals V for b ≪ ℓ.
+- The overlap is integrable over the transverse plane, and the source depth gives the factor s/D.
+
+**Readings (fixed now):**
+- **CONFIRMED:** the referee confirms the bound, with hypotheses stated. The gravity reading's "controlled law" condition is then met, and **E1′ gravity becomes PASS for the scalar link proxy.** At physical parameters F ≤ 3, so the relative noise is ≤ 3.7e-29 at 1 Gpc.
+- **NOT CONFIRMED:** the bound fails, for example a divergent overlap integral or a misapplied inequality. E1′ gravity stays INCONCLUSIVE.
+- **Scope, unchanged by this follow-up:** the tensor bridge, E1's strain crackle, and source-driven (not initial-value) propagation. The referee is asked to say whether the tensor bridge is a scope caveat (as in E1's scalar proxy) or a PASS condition under the fixed reading.

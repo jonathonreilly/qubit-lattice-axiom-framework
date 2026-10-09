@@ -1,6 +1,6 @@
 # E1′ influence along links: worker report (Claude Opus 5.5, xhigh; 2026-10-09)
 
-Verbatim final report. Referee pending (codex gpt-5.6-sol xhigh); verdicts are not recorded in TESTS.md until it returns. Scripts and text outputs in `scripts/E1p/` (data arrays and the Johnston PDFs are not committed).
+Verbatim final report. Refereed by codex gpt-5.6-sol xhigh: **gravity INCONCLUSIVE, matter M-INCONCLUSIVE** (neither of the verdicts below confirmed; `E1p_referee.md`); logged in TESTS.md. Scripts and text outputs in `scripts/E1p/` (data arrays and the Johnston PDFs are not committed).
 
 All runs are in. Here is the report.
 

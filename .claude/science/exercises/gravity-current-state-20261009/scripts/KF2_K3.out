@@ -1,0 +1,16 @@
+(1) lambda in (0,1), 200000 random measures
+   min R*(sigma^2+2/3)^2 = 0.999999633296  (atoms, sigma^2) at min = (1, np.float64(0.3333331499811328)); sign violations = 8693
+   one atom lambda=0.5: sigma^2=0.3333 R=1.0000e+00 bound=1.0000e+00
+   one atom lambda=0.9: sigma^2=0.3333 R=1.0000e+00 bound=1.0000e+00
+   one atom lambda=0.99: sigma^2=0.3333 R=1.0000e+00 bound=1.0000e+00
+   one atom lambda=0.999: sigma^2=0.3333 R=1.0000e+00 bound=1.0000e+00
+(2) atoms at lambda < 0 allowed (site RP, transfer matrix not positive), 200000 samples
+   min R*(sigma^2+2/3)^2 = 0.000109; violations = 7371; samples with D'(1) >= 0 skipped = 49963
+(3) Gaussian time kernel K(q0) = sum_n W(n)(1-cos q0 n), W ~ exp(-n^2/2s^2), normalized to q0^2
+   s=0.5 sigma^2=  0.343  R=9.804e-01  RP bound=9.806e-01  Hankel min/max=-1.07e-12
+   s=1.0 sigma^2=  1.000  R=1.276e-01  RP bound=3.600e-01  Hankel min/max=-1.68e-04
+   s=1.5 sigma^2=  2.250  R=6.388e-04  RP bound=1.176e-01  Hankel min/max=-3.23e-03
+   s=2.0 sigma^2=  4.000  R=2.059e-07  RP bound=4.592e-02  Hankel min/max=-7.75e-03
+   s=3.0 sigma^2=  9.000  R=5.551e-17  RP bound=1.070e-02  Hankel min/max=-1.12e-02
+(4) converse: Nevanlinna-form D = a - b z - sum nu/(t - z) -> Hankel PSD?
+   worst min/max eigenvalue over site and link Hankel matrices = -2.48e-16 (>= -1e-12 means RP holds)

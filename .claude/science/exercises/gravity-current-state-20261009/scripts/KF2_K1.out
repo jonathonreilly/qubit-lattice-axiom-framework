@@ -1,0 +1,44 @@
+L=64
+  case: massive m0=0.2, no Wilson
+    s=0.75 H_E=+3.300e-02 H_T=-1.161e-02  e^-pi2s2=3.9e-03  e^-pi2s2/2=6.2e-02  flat(<5% max)=0.000
+    s=1.00 H_E=+2.627e-03 H_T=-3.695e-04  e^-pi2s2=5.2e-05  e^-pi2s2/2=7.2e-03  flat(<5% max)=0.000
+    s=1.25 H_E=+1.916e-05 H_T=-1.456e-06  e^-pi2s2=2.0e-07  e^-pi2s2/2=4.5e-04  flat(<5% max)=0.000
+    s=1.50 H_E=+2.955e-08 H_T=-1.481e-09  e^-pi2s2=2.3e-10  e^-pi2s2/2=1.5e-05  flat(<5% max)=0.000
+    s=1.75 H_E=+1.303e-10 H_T=-1.683e-11  e^-pi2s2=7.5e-14  e^-pi2s2/2=2.7e-07  flat(<5% max)=0.000
+    s=2.00 H_E=+1.396e-10 H_T=-1.982e-11  e^-pi2s2=7.2e-18  e^-pi2s2/2=2.7e-09  flat(<5% max)=0.000
+  case: massless, no Wilson (subtracted)
+    s=0.75 H_E=+5.362e-02 H_T=-1.531e-02  e^-pi2s2=3.9e-03  e^-pi2s2/2=6.2e-02  flat(<5% max)=0.115
+    s=1.00 H_E=+1.102e-02 H_T=-2.698e-03  e^-pi2s2=5.2e-05  e^-pi2s2/2=7.2e-03  flat(<5% max)=0.536
+    s=1.25 H_E=+8.268e-04 H_T=-1.418e-04  e^-pi2s2=2.0e-07  e^-pi2s2/2=4.5e-04  flat(<5% max)=0.758
+    s=1.50 H_E=+3.052e-05 H_T=-4.886e-06  e^-pi2s2=2.3e-10  e^-pi2s2/2=1.5e-05  flat(<5% max)=0.861
+    s=1.75 H_E=+5.891e-07 H_T=-1.061e-07  e^-pi2s2=7.5e-14  e^-pi2s2/2=2.7e-07  flat(<5% max)=0.912
+    s=2.00 H_E=+5.453e-09 H_T=-1.120e-09  e^-pi2s2=7.2e-18  e^-pi2s2/2=2.7e-09  flat(<5% max)=0.941
+  case: massless + smooth Wilson r=1 (subtracted)
+    s=0.75 H_E=+9.101e-03 H_T=-3.584e-03  e^-pi2s2=3.9e-03  e^-pi2s2/2=6.2e-02  flat(<5% max)=0.000
+    s=1.00 H_E=+6.521e-04 H_T=-8.582e-05  e^-pi2s2=5.2e-05  e^-pi2s2/2=7.2e-03  flat(<5% max)=0.000
+    s=1.25 H_E=+4.894e-06 H_T=-3.692e-07  e^-pi2s2=2.0e-07  e^-pi2s2/2=4.5e-04  flat(<5% max)=0.000
+    s=1.50 H_E=+7.793e-09 H_T=-2.237e-10  e^-pi2s2=2.3e-10  e^-pi2s2/2=1.5e-05  flat(<5% max)=0.000
+    s=1.75 H_E=-9.483e-10 H_T=+1.961e-10  e^-pi2s2=7.5e-14  e^-pi2s2/2=2.7e-07  flat(<5% max)=0.000
+    s=2.00 H_E=-8.360e-10 H_T=+1.721e-10  e^-pi2s2=7.2e-18  e^-pi2s2/2=2.7e-09  flat(<5% max)=0.000
+L=96
+  case: massive m0=0.2, no Wilson
+    s=0.75 H_E=+3.300e-02 H_T=-1.161e-02  e^-pi2s2=3.9e-03  e^-pi2s2/2=6.2e-02  flat(<5% max)=0.000
+    s=1.00 H_E=+2.627e-03 H_T=-3.695e-04  e^-pi2s2=5.2e-05  e^-pi2s2/2=7.2e-03  flat(<5% max)=0.000
+    s=1.25 H_E=+1.916e-05 H_T=-1.456e-06  e^-pi2s2=2.0e-07  e^-pi2s2/2=4.5e-04  flat(<5% max)=0.000
+    s=1.50 H_E=+2.945e-08 H_T=-1.467e-09  e^-pi2s2=2.3e-10  e^-pi2s2/2=1.5e-05  flat(<5% max)=0.000
+    s=1.75 H_E=+1.228e-11 H_T=-5.840e-13  e^-pi2s2=7.5e-14  e^-pi2s2/2=2.7e-07  flat(<5% max)=0.000
+    s=2.00 H_E=+2.313e-14 H_T=-3.874e-13  e^-pi2s2=7.2e-18  e^-pi2s2/2=2.7e-09  flat(<5% max)=0.000
+  case: massless, no Wilson (subtracted)
+    s=0.75 H_E=+5.362e-02 H_T=-1.530e-02  e^-pi2s2=3.9e-03  e^-pi2s2/2=6.2e-02  flat(<5% max)=0.115
+    s=1.00 H_E=+1.102e-02 H_T=-2.669e-03  e^-pi2s2=5.2e-05  e^-pi2s2/2=7.2e-03  flat(<5% max)=0.537
+    s=1.25 H_E=+8.268e-04 H_T=-1.290e-04  e^-pi2s2=2.0e-07  e^-pi2s2/2=4.5e-04  flat(<5% max)=0.759
+    s=1.50 H_E=+3.045e-05 H_T=-3.672e-06  e^-pi2s2=2.3e-10  e^-pi2s2/2=1.5e-05  flat(<5% max)=0.860
+    s=1.75 H_E=+5.839e-07 H_T=-6.951e-08  e^-pi2s2=7.5e-14  e^-pi2s2/2=2.7e-07  flat(<5% max)=0.912
+    s=2.00 H_E=+5.904e-09 H_T=-7.793e-10  e^-pi2s2=7.2e-18  e^-pi2s2/2=2.7e-09  flat(<5% max)=0.941
+  case: massless + smooth Wilson r=1 (subtracted)
+    s=0.75 H_E=+9.101e-03 H_T=-3.584e-03  e^-pi2s2=3.9e-03  e^-pi2s2/2=6.2e-02  flat(<5% max)=0.000
+    s=1.00 H_E=+6.521e-04 H_T=-8.582e-05  e^-pi2s2=5.2e-05  e^-pi2s2/2=7.2e-03  flat(<5% max)=0.000
+    s=1.25 H_E=+4.895e-06 H_T=-3.694e-07  e^-pi2s2=2.0e-07  e^-pi2s2/2=4.5e-04  flat(<5% max)=0.000
+    s=1.50 H_E=+8.756e-09 H_T=-4.234e-10  e^-pi2s2=2.3e-10  e^-pi2s2/2=1.5e-05  flat(<5% max)=0.000
+    s=1.75 H_E=-7.686e-11 H_T=+1.545e-11  e^-pi2s2=7.5e-14  e^-pi2s2/2=2.7e-07  flat(<5% max)=0.000
+    s=2.00 H_E=-7.088e-11 H_T=+1.435e-11  e^-pi2s2=7.2e-18  e^-pi2s2/2=2.7e-09  flat(<5% max)=0.000

@@ -1,0 +1,9 @@
+(i) lambda in [0,1]: D'(1)<0 and D''(1)<=0 via Lagrange identity in 20000/20000 samples
+(ii) outer-zone flatness R_inf vs sigma^2; Lemma-N floor 1/(sigma^2+2/3)^2 shown for comparison
+   positive transfer (lambda>=0): min R_inf*(sigma^2+2/3)^2 = 1.000e+00
+      worst case lam=[0.0022] m=[0.0141] sigma^2=0.333 R_inf=1.000e+00
+   site-RP only (lambda<0 allowed): min R_inf*(sigma^2+2/3)^2 = 1.000e+00
+      worst case lam=[0.0003] m=[0.1658] sigma^2=0.333 R_inf=1.000e+00
+   Gaussian s=1.0: R_inf=7.541e-01  floor=3.600e-01
+   Gaussian s=1.5: R_inf=2.420e-01  floor=1.176e-01
+   Gaussian s=2.0: R_inf=3.725e-02  floor=4.592e-02

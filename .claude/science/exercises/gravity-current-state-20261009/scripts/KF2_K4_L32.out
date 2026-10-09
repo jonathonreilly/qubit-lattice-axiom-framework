@@ -1,0 +1,37 @@
+L=32 R=15 M=0.4 mu=0.3  #n=708  Ward residual=1.5e-14
+s=0.75 smooth E0=2.407681 E2[Coul,trans,dia]=(+0.00714,-0.00644,+0.02228)  K-check=0.0e+00
+       H_X1: free=-7.799e-03  O(e2): Coul=+4.756e-04 trans=+1.826e-03 dia=-4.360e-03  TOTAL=-2.059e-03
+       H_X2: free=+1.923e-03  O(e2): Coul=-4.459e-05 trans=-4.942e-04 dia=+1.052e-03  TOTAL=+5.133e-04
+s=0.75 paths  E0=2.407681 E2[Coul,trans,dia]=(+0.00714,-0.00567,+0.01274)  K-check=4.9e-15
+       H_X1: free=-7.799e-03  O(e2): Coul=+4.756e-04 trans=+1.995e-03 dia=-3.656e-03  TOTAL=-1.185e-03
+       H_X2: free=+1.923e-03  O(e2): Coul=-4.459e-05 trans=+5.436e-04 dia=-5.474e-04  TOTAL=-4.842e-05
+s=1.00 smooth E0=1.997448 E2[Coul,trans,dia]=(+0.00602,-0.00412,+0.01661)  K-check=0.0e+00
+       H_X1: free=-1.845e-04  O(e2): Coul=-1.376e-05 trans=+1.799e-04 dia=-3.349e-04  TOTAL=-1.688e-04
+       H_X2: free=+2.046e-05  O(e2): Coul=+3.352e-06 trans=-2.605e-05 dia=+4.252e-05  TOTAL=+1.982e-05
+s=1.00 paths  E0=1.997448 E2[Coul,trans,dia]=(+0.00602,-0.00427,+0.01023)  K-check=3.3e-15
+       H_X1: free=-1.845e-04  O(e2): Coul=-1.376e-05 trans=+4.579e-04 dia=-7.852e-04  TOTAL=-3.411e-04
+       H_X2: free=+2.046e-05  O(e2): Coul=+3.352e-06 trans=+1.961e-04 dia=-2.522e-04  TOTAL=-5.272e-05
+s=1.25 smooth E0=1.688151 E2[Coul,trans,dia]=(+0.00493,-0.00296,+0.01288)  K-check=0.0e+00
+       H_X1: free=-9.955e-07  O(e2): Coul=-5.319e-07 trans=+3.999e-06 dia=-3.704e-06  TOTAL=-2.368e-07
+       H_X2: free=+8.383e-08  O(e2): Coul=+4.989e-08 trans=-3.719e-07 dia=+1.771e-07  TOTAL=-1.449e-07
+s=1.25 paths  E0=1.688151 E2[Coul,trans,dia]=(+0.00493,-0.00346,+0.00844)  K-check=3.6e-15
+       H_X1: free=-9.955e-07  O(e2): Coul=-5.319e-07 trans=+1.857e-04 dia=-3.062e-04  TOTAL=-1.211e-04
+       H_X2: free=+8.383e-08  O(e2): Coul=+4.989e-08 trans=+1.106e-04 dia=-1.627e-04  TOTAL=-5.201e-05
+s=1.50 smooth E0=1.464416 E2[Coul,trans,dia]=(+0.00397,-0.00230,+0.01026)  K-check=0.0e+00
+       H_X1: free=-1.722e-07  O(e2): Coul=+3.917e-07 trans=-8.271e-08 dia=+1.500e-06  TOTAL=+1.809e-06
+       H_X2: free=+2.822e-08  O(e2): Coul=-5.868e-08 trans=+2.316e-08 dia=-2.373e-07  TOTAL=-2.729e-07
+s=1.50 paths  E0=1.464416 E2[Coul,trans,dia]=(+0.00397,-0.00294,+0.00707)  K-check=2.1e-15
+       H_X1: free=-1.722e-07  O(e2): Coul=+3.917e-07 trans=+1.298e-04 dia=-2.048e-04  TOTAL=-7.464e-05
+       H_X2: free=+2.822e-08  O(e2): Coul=-5.868e-08 trans=+7.262e-05 dia=-1.125e-04  TOTAL=-3.992e-05
+s=1.75 smooth E0=1.299578 E2[Coul,trans,dia]=(+0.00317,-0.00188,+0.00829)  K-check=0.0e+00
+       H_X1: free=-1.879e-07  O(e2): Coul=+5.445e-07 trans=-4.112e-08 dia=+2.011e-06  TOTAL=+2.514e-06
+       H_X2: free=+3.103e-08  O(e2): Coul=-8.278e-08 trans=+1.126e-08 dia=-3.154e-07  TOTAL=-3.870e-07
+s=1.75 paths  E0=1.299578 E2[Coul,trans,dia]=(+0.00317,-0.00255,+0.00596)  K-check=2.7e-15
+       H_X1: free=-1.879e-07  O(e2): Coul=+5.445e-07 trans=+9.826e-05 dia=-1.490e-04  TOTAL=-5.017e-05
+       H_X2: free=+3.103e-08  O(e2): Coul=-8.278e-08 trans=+5.188e-05 dia=-8.172e-05  TOTAL=-2.992e-05
+s=2.00 smooth E0=1.175053 E2[Coul,trans,dia]=(+0.00251,-0.00156,+0.00675)  K-check=0.0e+00
+       H_X1: free=-2.087e-07  O(e2): Coul=+7.114e-07 trans=+6.362e-08 dia=+2.745e-06  TOTAL=+3.520e-06
+       H_X2: free=+3.453e-08  O(e2): Coul=-1.105e-07 trans=-6.066e-09 dia=-4.326e-07  TOTAL=-5.492e-07
+s=2.00 paths  E0=1.175053 E2[Coul,trans,dia]=(+0.00251,-0.00223,+0.00504)  K-check=1.9e-15
+       H_X1: free=-2.087e-07  O(e2): Coul=+7.114e-07 trans=+7.603e-05 dia=-1.108e-04  TOTAL=-3.409e-05
+       H_X2: free=+3.453e-08  O(e2): Coul=-1.105e-07 trans=+3.915e-05 dia=-6.178e-05  TOTAL=-2.274e-05

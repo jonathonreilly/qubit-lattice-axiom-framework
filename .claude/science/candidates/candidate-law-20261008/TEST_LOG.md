@@ -611,3 +611,19 @@ Corrections:
 Phenomenologically that means a specially constrained scalar, or more naturally a massless spin-2 metric sector. **None of these follows from freezing records.**
 
 **Recorded in `RESULTS`.** ("K3 gravity", gravity R) = 0, for record-carried gravity, frozen or as a gas (campaign 8). This is not a no-go for every frozen-record vacuum.
+
+## FR3: can moving records carry gravitational waves? (2026-10-09; owner request)
+
+**Verdict against the fixed line: FAIL for all three of the repo's moving-record models.** The worker is Sonnet 5.5. The referee (codex sol) is running, and nothing goes into `RESULTS` until it reports.
+
+| Model | Conserved | Long-wavelength modes | Helicity ±2? |
+|---|---|---|---|
+| (i) Swap gas (records swap with an unrecorded neighbour; A27) | N | Density diffusion only (EXACT: symmetric generator, real spectrum). Content, including its tensor moment, also diffuses | no |
+| (ii) Wind gas (content = direction of travel; the 09-20 supplied clause) | N and momentum | 2 sound modes, c² = (1−ρ)/3 ≤ 1/3 (in sites per tick, squared); 2 diffusive shear modes; 2 tensor modes that are **gapped and real** (no oscillation) | no: tensor gapped. The six-axis menu has no xy stress, so the × polarisation is absent |
+| (iii) Dense crystal with vacancy hopping | vacancy number | Reversible (Metropolis), so every autocorrelation is monotone and nothing propagates. The sites are the fixed Z³, so there is no displacement field and no phonons (ARGUED) | no |
+
+**Speed.** Matching the light speed would need a tuned ratio between the record rate and the live hopping rate. The wind gas's speed also depends on density, so the 1e-15 speed bound would need density uniform to about 1e-15 (ARGUED).
+
+**Plain reading.** Moving records spread or make sound, but never the stretch-and-squeeze ripple. A tensor wave needs a symmetric-tensor degree of freedom with its own propagating dynamics, and no record model supplies one. Records carry a scalar (number), at most a vector (momentum, under the wind clause), and internal labels. This agrees with campaign 8's "a crowd of records spreads, not ripples".
+
+**Referee.** codex sol, running.

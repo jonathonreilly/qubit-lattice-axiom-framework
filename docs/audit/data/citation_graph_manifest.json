@@ -1,6 +1,6 @@
 {
- "edge_count": 15419,
- "node_count": 6870,
+ "edge_count": 15423,
+ "node_count": 6871,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16849,6 +16849,10 @@
   "probability_readout_underdetermination_cycle912_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7b707271a9a8",
    "out_degree": 2
+  },
+  "product_class_six_axis_pair_chsh_squares_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "b195e1c20342",
+   "out_degree": 4
   },
   "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": {
    "deps_hash": "cbe42f571241",

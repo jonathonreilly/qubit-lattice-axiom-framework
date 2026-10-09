@@ -6,50 +6,52 @@ Stop at `2026-10-10T12:02:06Z`. One worktree only:
 
 ## Done this cycle
 
-Conditional on a two-qubit density and simultaneous proper-cubic Bloch
-action, the invariant families are:
+Cycle 1, conditional on a two-qubit density, is unchanged. Full proper-cubic
+covariance leaves dimension 2 and does not force the singlet. Runner there
+remains `TOTAL: PASS=31 FAIL=0`.
 
-- full group, order 24: dimension 2, span of `I` and `σ·σ`
-- directed axis stabilizer, order 4: dimension 6
-- undirected axis stabilizer, order 8: dimension 3, span of `I`, `XX+YY`, `ZZ`
+Cycle 2 searches `origin/main` at `17a95e60d85` before the new computation.
+Docs naming `(p, q, r)` and docs naming `CHSH` have empty intersection.
+The September formation census leaves the weights free and does not evaluate
+CHSH. No exact comparison with squares 4 and 8 was found.
 
-On `ρ_w = (I + w σ·σ)/4`, positivity is `w ∈ [-1, 1/3]` and the CHSH square
-is `8 w^2`. The value `2√2` sits at `w=-1` only. The undirected family
-achieves CHSH square 8 only at `(u,v)=(-1,-1)` and `(1,-1)`.
+On the declared six-axis product-class pair, with nonnegative `(p,q,r)` not
+all zero and no density:
 
-Runner: `TOTAL: PASS=31 FAIL=0`.
+- coordinate CHSH square is exactly `8(p-q)^2/(9(p+q+4r)^2)`, at most `8/9`,
+  never 4 and never 8
+- setting-blind global sign has square `4(p-q)^2/(p+q+4r)^2`, equal to 4
+  exactly when `r=0` and `pq=0`, and never 8
+- every local readout with values in `[-1,1]` has magnitude at most 2, so
+  its square is at most 4 and is not 8
+- one-axis conditional signs have square `4(p-q)^2/(p+q)^2` when `p+q>0`,
+  equal to 4 exactly when `pq=0`, and never 8
 
-This prunes the route "cubic covariance forces the singlet." It does not
-derive the dynamics clause, and it does not show that the admissibility
-distribution is a density.
+The classical value 2 is attained by the global sign on that boundary. The
+value `2√2` is not attained. Weights stay free. This does not derive the
+dynamics clause.
+
+Runner: `TOTAL: PASS=55 FAIL=0`.
 
 ## Do not touch
 
 Codex already has dirty worktrees for `physics-loop/photon-vacuum-shift-20261009`
 and `physics-loop/toe-dynamics-bridge-20261009` under
 `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009`. Leave them
-alone. Do not open a second worktree. Disk was about 24Gi free after this
-checkout. Home `~/Projects/Physics` stays uncommitted.
+alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitted.
 
 ## Landed this cycle
 
-Commit `9f7ab95597` is on `origin/physics-loop/toe-nn-law-values-20261009`.
+Cycle 1 commit `9f7ab95597` is already on the branch. Cycle 2 is pushed onto
+the same branch for PR 9475. Do not merge it. Do not open a second PR.
+
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
-Do not merge it. The citation manifest was regenerated from a fresh graph
-(6870 nodes, 15419 edges) and `citation_graph.json` was deleted.
 
 ## Next exact action
 
-1. Search `origin/main` for an exact CHSH value of the product-class menu
-   laws `(p,q,r)`. The September formation census already leaves those weights
-   free. Do not repeat that census.
-2. If no exact comparison with CHSH squares 4 and 8 exists, compute one
-   finite menu or records-only law on this same branch, without assuming a
-   two-qubit density. Push onto PR 9475. Do not open a second PR unless the
-   result is a different claim family.
-3. If that comparison already exists, pivot to the directed six-parameter
-   CHSH maximum inside the density family and keep the density hypothesis
-   explicit.
+The menu comparison is now on this branch. Compute the exact CHSH maximum
+of the directed six-parameter family inside the density representation.
+Keep the density hypothesis explicit. Push onto PR 9475.
 
 ## Cleanup
 

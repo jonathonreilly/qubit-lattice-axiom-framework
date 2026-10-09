@@ -1,22 +1,25 @@
 # Route portfolio
 
-Searched `origin/main` at `17a95e60d8` before the computation.
+## Cycle 2 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`17a95e60d85afc246fc7c163adef8869ab3f4194`.
 
 Commands and what they returned:
 
-- `git grep` for Werner, two-site cubic invariant density, and `σ·σ` in
-  `docs/*.md`. Hits were Schumacher–Werner QCA mentions, the extensional
-  nearest-neighbor probe, and edge-record notes. None states the dimension of
-  the simultaneous proper-cubic action on two-qubit Pauli coefficients.
-- `ONLY_CUBIC_INVARIANT_BLOCH_VECTOR_IS_ZERO_BOUNDED_THEOREM_NOTE_2026-08-13`
-  proves the one-site fixed space is `{0}`. This note reproves that control
-  and does not cite it as a premise.
-- `ANGULAR_KERNEL_ORBIT_CLASS_UNDERDETERMINATION_NARROW_NO_GO_NOTE_2026-05-10`
-  is about polynomial weights on forward-cone steps, a different object.
-- `ADMISSIBILITY_FORMATION_ORDER_MENU_ORDER_MIXTURE_MONOTONE_BOX_AND_CUBE_CENSUS_BOUNDED_THEOREM_NOTE_2026-09-13`
-  already leaves product-class orbit weights `(p,q,r)` free. Not repeated.
-- `DYNAMICS_CLAUSE_BELL_VALUES_..._2026-09-24` leaves the dynamics clause
-  underived. That is the consumer of this pruning result.
+- `git grep` for `(p, q, r)` and `(p,q,r)` in `docs` and `scripts` on
+  `origin/main`. Hits are formation, binding-scale, and uniqueness notes.
+  They leave the weights free. The binding-scale note states the odd
+  eigenvalue `(p-q)/(p+q+4r)` and does not mention CHSH.
+- `git grep` file lists for `(p, q, r)` and for `CHSH` under `docs/*.md`.
+  The intersection is empty.
+- `git grep` for `product class` and `CHSH` in the same path. No path hit.
+- The dynamics-clause Bell note of 2026-09-24 proves `|CHSH| ≤ 2` for a
+  different records-only formation reading, and `2√2` for a supplied
+  dynamics clause. It does not evaluate `(p,q,r)`.
+- Cycle 1's density squares are on this branch, not on `origin/main`, and
+  use a representation this cycle does not assume.
 
-Classification: open after the matched-hit review. The executed route is the
-density-representation covariance count. The menu-CHSH route stays queued.
+Classification: open after the matched-hit review. The executed route is
+the exact CHSH comparison of the one-edge product-class law. The directed
+six-parameter density maximum stays queued.

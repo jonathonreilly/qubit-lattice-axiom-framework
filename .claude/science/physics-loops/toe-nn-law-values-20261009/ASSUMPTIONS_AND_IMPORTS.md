@@ -1,4 +1,4 @@
-# Assumptions and imports — cycle 1
+# Assumptions and imports — cycle 2
 
 Supplied by the axioms, and used only as named:
 
@@ -6,17 +6,21 @@ Supplied by the axioms, and used only as named:
 - one-site algebra `M_2(C)`
 - one fixed nearest-neighbor admissibility rule, covariant under those rotations
 - the distribution's values are not axiom content
-- records form, one per site, permanent; a blank site cannot be read
+- a readout value is determined by record content alone
 
-Conditional representation, not an axiom:
+Declared for this cycle, not an axiom:
 
-- a pair law is a density on `C^2 ⊗ C^2`
-- covariance acts by the same proper cubic rotation on both Bloch frames
-- CHSH is computed for that density's Pauli coefficients
+- the six signed axes are the menu
+- nonnegative orbit weights `(p, q, r)`, none selected
+- the pair law is the normalized weight on one edge
+- settings in the CHSH comparison are part of the comparison
+- local randomness is independent across the two wings
 
-Counterfactual: if the pair law is only a classical distribution on a finite
-menu, the dimensions 2, 6, and 3 need not hold. That is the next check, not a
-result of this cycle.
+Not used: a two-qubit density, the dynamics clause, the trace rule, a
+Hamiltonian, the sum rule, literature comparator values, and the three
+registered non-axiom primitives.
 
-Not used: dynamics clause, trace rule, formation rate, Hamiltonian, literature
-comparator values.
+Counterfactual: if the pair is represented by a two-qubit density, cycle 1
+already attains CHSH square 8 at named corners. If a readout depends on the
+other wing, Theorem 4 does not apply. Those are the open routes, not
+corrections of the menu arithmetic.

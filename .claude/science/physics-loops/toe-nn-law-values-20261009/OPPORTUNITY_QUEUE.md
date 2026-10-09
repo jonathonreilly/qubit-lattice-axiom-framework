@@ -1,17 +1,16 @@
 # Opportunity queue
 
-Ranked after cycle 1. Refresh `origin/main` before each search.
+Ranked after cycle 2. Refresh `origin/main` before each search.
+Searched commit for the cycle-2 menu comparison: `17a95e60d85`.
 
-1. **Menu or records-only CHSH against the new corners.** Compare an exact
-   finite-menu or records-only pair law with CHSH squares 4 and 8, without
-   assuming a two-qubit density. This tests whether the Tsirelson corners are
-   an artifact of the density representation. Search first. The product-class
-   weights `(p,q,r)` are already known to be free, so another census of those
-   weights is churn.
-2. **Directed six-parameter CHSH maximum.** Inside the density representation
-   already used, compute the exact CHSH maximum on the directed stabilizer
-   family. Worth doing only if item 1 is already landed or blocked. Still
-   conditional on the density import.
+1. **Menu or records-only CHSH against the new corners.** Done on this
+   branch. The six-axis product-class pair, without a density, has coordinate
+   CHSH square at most `8/9` and no local `[-1,1]` readout has square 8.
+   The global sign attains square 4 only when `r=0` and `pq=0`. Weights stay
+   free. Do not repeat the census or this evaluation.
+2. **Directed six-parameter CHSH maximum.** Next. Inside the density
+   representation already used, compute the exact CHSH maximum on the
+   directed stabilizer family. Keep the density hypothesis explicit.
 3. **Formation site and rate.** The axiom reading says the distribution does
    not supply the formation site, probability, or rate. A derivation of that
    triple is the larger open supplier. Do not invent a hazard law to fill it.

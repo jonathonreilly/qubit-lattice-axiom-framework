@@ -6,25 +6,26 @@ stop_at: 2026-10-10T12:02:06Z
 base_commit: 17a95e60d85afc246fc7c163adef8869ab3f4194
 branch: physics-loop/toe-nn-law-values-20261009
 worktree: /Users/jonreilly/.grok/campaigns/toe-24h-20261009/wt
-cycle: 1
-active_route: proper-cubic two-qubit bond invariants
-approach_family: simultaneous Bloch covariance of one pair
+cycle: 2
+active_route: six-axis product-class pair CHSH squares
+approach_family: records-only orbit weight on one edge, no density
 hard_residual: dynamics clause is supplied, not derived
-strongest_unresolved_obligation: whether a nearest-neighbor distribution that is not a two-qubit density can reach CHSH square 8
+strongest_unresolved_obligation: exact CHSH maximum of the directed six-parameter family inside the density representation
 files_touched:
-  - docs/PROPER_CUBIC_TWO_QUBIT_BOND_INVARIANTS_BOUNDED_THEOREM_NOTE_2026-10-09.md
-  - scripts/proper_cubic_two_qubit_bond_invariants_2026_10_09.py
-  - logs/runner-cache/proper_cubic_two_qubit_bond_invariants_2026_10_09.txt
-runner_result: "TOTAL: PASS=31 FAIL=0"
+  - docs/PRODUCT_CLASS_SIX_AXIS_PAIR_CHSH_SQUARES_BOUNDED_THEOREM_NOTE_2026-10-09.md
+  - scripts/product_class_six_axis_pair_chsh_squares_2026_10_09.py
+  - logs/runner-cache/product_class_six_axis_pair_chsh_squares_2026_10_09.txt
+runner_result: "TOTAL: PASS=55 FAIL=0"
 open_imports:
   - two-qubit density representation of one pair
   - formation site, probability, and rate
 no_go_routes_pruned:
   - full proper-cubic invariance forces the singlet
+  - product-class six-axis pair local readouts reach CHSH square 8
 trace_class: negative_route_pruning
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
-commit: 9f7ab95597
-next_exact_action: Search origin/main for an exact CHSH evaluation of the product-class menu laws before computing one. If absent, compute that comparison on this same branch and push onto PR 9475. Do not open a second PR for a corollary.
+commit: cycle-2 commit on this branch
+next_exact_action: Compute the exact CHSH maximum on the directed six-parameter density family. Keep the two-qubit density hypothesis explicit. Push onto PR 9475. Do not open a second PR.
 stop_condition: stop_at, or disk avail below 8Gi, or no non-overlapping route remains
 do_not_touch:
   - physics-loop/photon-vacuum-shift-20261009
@@ -35,4 +36,4 @@ resource_caps:
   one_worktree: true
   no_extra_clones: true
   python_rss_kill_kb: 1500000
-lock: branch-local until acquired in this worktree
+lock: refreshed in this worktree for holder grok-toe-24h-20261009

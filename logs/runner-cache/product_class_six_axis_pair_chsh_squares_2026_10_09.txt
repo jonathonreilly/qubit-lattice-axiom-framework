@@ -1,0 +1,72 @@
+===== runner cache v1 =====
+runner: scripts/product_class_six_axis_pair_chsh_squares_2026_10_09.py
+runner_sha256: 72845b0dcb7cfcfd19c002981904907b7f4709421ed36f445c0868de3717136d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS menu has six signed axes
+PASS pair orbits are 6 parallel, 6 antiparallel, 24 orthogonal
+PASS pair normalizer is 6p+6q+24r
+PASS one-neighbor normalizer is p+q+4r
+PASS formation and static pair laws use the same normalizer
+PASS probabilities sum to 1 at (3, 1, 2)
+PASS both marginals are uniform at (3, 1, 2)
+PASS probabilities sum to 1 at (5, 2, 4)
+PASS both marginals are uniform at (5, 2, 4)
+PASS probabilities sum to 1 at (1, 0, 0)
+PASS both marginals are uniform at (1, 0, 0)
+PASS probabilities sum to 1 at (0, 1, 0)
+PASS both marginals are uniform at (0, 1, 0)
+PASS probabilities sum to 1 at (1, 1, 1)
+PASS both marginals are uniform at (1, 1, 1)
+PASS probabilities sum to 1 at (0, 0, 1)
+PASS both marginals are uniform at (0, 0, 1)
+PASS each diagonal coordinate sum is 2p-2q
+PASS off-diagonal coordinate sums vanish
+PASS lambda fraction is the reduced coordinate sum
+PASS global-sign unnormalized sum is 6p-6q
+PASS global-sign correlator is lambda_1 = (p-q)/(p+q+4r)
+PASS three times the coordinate correlator is the odd eigenvalue
+PASS (3,1,2) coordinate correlator is 1/18, not the undivided eigenvalue 1/6
+PASS (5,2,4) coordinate correlator is 1/23
+PASS nonnegative weights obey |p-q| <= p+q+4r
+PASS equality |lambda|=1/3 holds only for r=0 and pq=0
+PASS coordinate CHSH square 8 lambda^2 is at most 8/9 and below 4 and 8
+PASS global-sign CHSH square 4 lambda_1^2 is at most 4 and is never 8
+PASS global-sign square equals 4 exactly on the axis-aligned boundary
+PASS equatorial unit settings give direction square 8
+PASS coordinate CHSH square equals 8 lambda^2 at (3, 1, 2)
+PASS coordinate CHSH square equals 8 lambda^2 at (5, 2, 4)
+PASS coordinate CHSH square equals 8 lambda^2 at (1, 0, 0)
+PASS |B+B'|+|B-B'| equals 2 max(|B|,|B'|)
+PASS squared absolute-sum identity holds on the same sample
+PASS sample outcomes in [-1,1] have absolute-sum at most 2
+PASS control: all 16 deterministic sign pairs have |CHSH| at most 2, and 2 occurs
+PASS signed-axis direction combinations are at most 2
+PASS signed-axis direction combination 2 is attained
+PASS setting-blind global sign has CHSH magnitude 2|lambda_1| at (1, 0, 0)
+PASS setting-blind global sign has CHSH magnitude 2|lambda_1| at (0, 1, 0)
+PASS setting-blind global sign has CHSH magnitude 2|lambda_1| at (3, 1, 2)
+PASS conditional alpha is undefined when p=q=0
+PASS one-axis event mass is (p+q)/(3(p+q+4r))
+PASS conditional square 4 alpha^2 equals 4 exactly when pq=0 and p+q>0
+PASS conditional square is never 8
+PASS one-axis conditional CHSH magnitude is 2|alpha| at (3, 1, 2)
+PASS one-axis conditional CHSH magnitude is 2|alpha| at (1, 0, 0)
+PASS one-axis conditional CHSH magnitude is 2|alpha| at (2, 5, 1)
+PASS simultaneous proper-cubic action preserves orbit weights
+PASS same-axis sign sum is 2p-2q
+PASS orthogonal axis-conditional sign sum is 0 while its mass is 4r
+PASS z and x are orthogonal menu axes
+per_element: All 36 ordered pairs of the six signed axes are enumerated, and no other alphabet is tested.
+per_site: The law is one two-site edge. A site with more than one neighbor is not tested.
+per_mode: Coordinate readout, global sign, signed-axis settings, and the one-axis conditional sign law are tested. The sum rule is not.
+per_block: One nearest-neighbor bond is tested. Plaquettes, cubes, and larger windows are not tested.
+lattice_wide: checked and not executed — no infinite-volume statement is claimed or tested.
+TOTAL: PASS=55 FAIL=0
+
+----- stderr -----
+

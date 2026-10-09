@@ -1,0 +1,48 @@
+== pert par=0.1 L=6 N=216 n=80 [1s] S(k1)=0.0113 S(k2)=0.0415 <d_min>=0.593
+   boson_m2=1     | E_g: mean +0.03338+-0.00010 sd*sqrtN 0.0154+-0.0012 stress_sd*sqrtN 0.0144 | T_2g: mean +0.01695+-0.00013 sd*sqrtN 0.0222+-0.0018 stress_sd*sqrtN 0.0097
+   boson_m2=0.04  | E_g: mean +0.03419+-0.00011 sd*sqrtN 0.0178+-0.0014 stress_sd*sqrtN 0.0183 | T_2g: mean +0.02301+-0.00017 sd*sqrtN 0.0288+-0.0023 stress_sd*sqrtN 0.0117
+== pert par=0.1 L=8 N=512 n=60 [7s] S(k1)=0.0053 S(k2)=0.0243 <d_min>=0.553
+   boson_m2=1     | E_g: mean +0.03306+-0.00008 sd*sqrtN 0.0170+-0.0016 stress_sd*sqrtN 0.0156 | T_2g: mean +0.01674+-0.00008 sd*sqrtN 0.0209+-0.0019 stress_sd*sqrtN 0.0093
+   boson_m2=0.04  | E_g: mean +0.03406+-0.00009 sd*sqrtN 0.0191+-0.0018 stress_sd*sqrtN 0.0197 | T_2g: mean +0.02270+-0.00010 sd*sqrtN 0.0269+-0.0025 stress_sd*sqrtN 0.0111
+== pert par=0.1 L=10 N=1000 n=40 [19s] S(k1)=0.0034 S(k2)=0.0162 <d_min>=0.520
+   boson_m2=1     | E_g: mean +0.03306+-0.00007 sd*sqrtN 0.0180+-0.0020 stress_sd*sqrtN 0.0150 | T_2g: mean +0.01671+-0.00008 sd*sqrtN 0.0228+-0.0026 stress_sd*sqrtN 0.0105
+   boson_m2=0.04  | E_g: mean +0.03410+-0.00008 sd*sqrtN 0.0205+-0.0023 stress_sd*sqrtN 0.0191 | T_2g: mean +0.02265+-0.00010 sd*sqrtN 0.0292+-0.0033 stress_sd*sqrtN 0.0127
+== pert par=0.1 L=12 N=1728 n=20 [34s] S(k1)=0.0030 S(k2)=0.0128 <d_min>=0.514
+   boson_m2=1     | E_g: mean +0.03318+-0.00009 sd*sqrtN 0.0199+-0.0032 stress_sd*sqrtN 0.0148 | T_2g: mean +0.01684+-0.00007 sd*sqrtN 0.0197+-0.0032 stress_sd*sqrtN 0.0084
+   boson_m2=0.04  | E_g: mean +0.03425+-0.00011 sd*sqrtN 0.0225+-0.0037 stress_sd*sqrtN 0.0189 | T_2g: mean +0.02282+-0.00009 sd*sqrtN 0.0252+-0.0041 stress_sd*sqrtN 0.0101
+== pert par=0.3 L=6 N=216 n=80 [1s] S(k1)=0.0983 S(k2)=0.3120 <d_min>=0.157
+   boson_m2=1     | E_g: mean +0.01012+-0.00037 sd*sqrtN 0.0592+-0.0047 stress_sd*sqrtN 0.0548 | T_2g: mean +0.00903+-0.00030 sd*sqrtN 0.0551+-0.0044 stress_sd*sqrtN 0.0457
+   boson_m2=0.04  | E_g: mean +0.01164+-0.00045 sd*sqrtN 0.0731+-0.0058 stress_sd*sqrtN 0.0652 | T_2g: mean +0.01066+-0.00038 sd*sqrtN 0.0686+-0.0055 stress_sd*sqrtN 0.0548
+== pert par=0.3 L=8 N=512 n=60 [5s] S(k1)=0.0546 S(k2)=0.2063 <d_min>=0.122
+   boson_m2=1     | E_g: mean +0.00987+-0.00025 sd*sqrtN 0.0557+-0.0051 stress_sd*sqrtN 0.0463 | T_2g: mean +0.00877+-0.00021 sd*sqrtN 0.0603+-0.0056 stress_sd*sqrtN 0.0491
+   boson_m2=0.04  | E_g: mean +0.01145+-0.00031 sd*sqrtN 0.0680+-0.0063 stress_sd*sqrtN 0.0553 | T_2g: mean +0.01034+-0.00027 sd*sqrtN 0.0744+-0.0068 stress_sd*sqrtN 0.0583
+== pert par=0.3 L=10 N=1000 n=40 [14s] S(k1)=0.0369 S(k2)=0.1368 <d_min>=0.094
+   boson_m2=1     | E_g: mean +0.00975+-0.00025 sd*sqrtN 0.0592+-0.0067 stress_sd*sqrtN 0.0508 | T_2g: mean +0.00860+-0.00021 sd*sqrtN 0.0572+-0.0065 stress_sd*sqrtN 0.0470
+   boson_m2=0.04  | E_g: mean +0.01134+-0.00032 sd*sqrtN 0.0734+-0.0083 stress_sd*sqrtN 0.0611 | T_2g: mean +0.01007+-0.00026 sd*sqrtN 0.0710+-0.0080 stress_sd*sqrtN 0.0566
+== pert par=0.3 L=12 N=1728 n=20 [25s] S(k1)=0.0222 S(k2)=0.1008 <d_min>=0.079
+   boson_m2=1     | E_g: mean +0.00999+-0.00027 sd*sqrtN 0.0594+-0.0096 stress_sd*sqrtN 0.0515 | T_2g: mean +0.00917+-0.00025 sd*sqrtN 0.0639+-0.0104 stress_sd*sqrtN 0.0376
+   boson_m2=0.04  | E_g: mean +0.01162+-0.00034 sd*sqrtN 0.0740+-0.0120 stress_sd*sqrtN 0.0619 | T_2g: mean +0.01076+-0.00032 sd*sqrtN 0.0805+-0.0131 stress_sd*sqrtN 0.0447
+== pert par=0.5 L=6 N=216 n=80 [1s] S(k1)=0.2433 S(k2)=0.6612 <d_min>=0.124
+   boson_m2=1     | E_g: mean +0.00372+-0.00042 sd*sqrtN 0.0676+-0.0054 stress_sd*sqrtN 0.0648 | T_2g: mean +0.00381+-0.00030 sd*sqrtN 0.0620+-0.0049 stress_sd*sqrtN 0.0609
+   boson_m2=0.04  | E_g: mean +0.00416+-0.00052 sd*sqrtN 0.0822+-0.0065 stress_sd*sqrtN 0.0767 | T_2g: mean +0.00441+-0.00037 sd*sqrtN 0.0758+-0.0060 stress_sd*sqrtN 0.0722
+== pert par=0.5 L=8 N=512 n=60 [5s] S(k1)=0.1573 S(k2)=0.4230 <d_min>=0.092
+   boson_m2=1     | E_g: mean +0.00357+-0.00029 sd*sqrtN 0.0630+-0.0058 stress_sd*sqrtN 0.0634 | T_2g: mean +0.00392+-0.00031 sd*sqrtN 0.0729+-0.0067 stress_sd*sqrtN 0.0678
+   boson_m2=0.04  | E_g: mean +0.00409+-0.00036 sd*sqrtN 0.0770+-0.0071 stress_sd*sqrtN 0.0744 | T_2g: mean +0.00451+-0.00039 sd*sqrtN 0.0898+-0.0083 stress_sd*sqrtN 0.0800
+== pert par=0.5 L=10 N=1000 n=40 [14s] S(k1)=0.0873 S(k2)=0.3240 <d_min>=0.084
+   boson_m2=1     | E_g: mean +0.00384+-0.00026 sd*sqrtN 0.0639+-0.0072 stress_sd*sqrtN 0.0663 | T_2g: mean +0.00394+-0.00023 sd*sqrtN 0.0660+-0.0075 stress_sd*sqrtN 0.0636
+   boson_m2=0.04  | E_g: mean +0.00449+-0.00032 sd*sqrtN 0.0782+-0.0089 stress_sd*sqrtN 0.0790 | T_2g: mean +0.00459+-0.00028 sd*sqrtN 0.0801+-0.0091 stress_sd*sqrtN 0.0745
+== pert par=0.5 L=12 N=1728 n=20 [25s] S(k1)=0.0538 S(k2)=0.2122 <d_min>=0.058
+   boson_m2=1     | E_g: mean +0.00407+-0.00033 sd*sqrtN 0.0723+-0.0117 stress_sd*sqrtN 0.0549 | T_2g: mean +0.00383+-0.00022 sd*sqrtN 0.0609+-0.0099 stress_sd*sqrtN 0.0600
+   boson_m2=0.04  | E_g: mean +0.00479+-0.00041 sd*sqrtN 0.0885+-0.0144 stress_sd*sqrtN 0.0651 | T_2g: mean +0.00444+-0.00027 sd*sqrtN 0.0751+-0.0122 stress_sd*sqrtN 0.0721
+== pert par=0.8 L=6 N=216 n=80 [1s] S(k1)=0.4981 S(k2)=0.8215 <d_min>=0.112
+   boson_m2=1     | E_g: mean +0.00141+-0.00044 sd*sqrtN 0.0693+-0.0055 stress_sd*sqrtN 0.0712 | T_2g: mean +0.00178+-0.00037 sd*sqrtN 0.0686+-0.0055 stress_sd*sqrtN 0.0657
+   boson_m2=0.04  | E_g: mean +0.00145+-0.00054 sd*sqrtN 0.0842+-0.0067 stress_sd*sqrtN 0.0835 | T_2g: mean +0.00209+-0.00046 sd*sqrtN 0.0834+-0.0066 stress_sd*sqrtN 0.0767
+== pert par=0.8 L=8 N=512 n=60 [4s] S(k1)=0.3380 S(k2)=0.8419 <d_min>=0.092
+   boson_m2=1     | E_g: mean +0.00115+-0.00029 sd*sqrtN 0.0625+-0.0057 stress_sd*sqrtN 0.0633 | T_2g: mean +0.00153+-0.00024 sd*sqrtN 0.0611+-0.0056 stress_sd*sqrtN 0.0699
+   boson_m2=0.04  | E_g: mean +0.00131+-0.00035 sd*sqrtN 0.0750+-0.0069 stress_sd*sqrtN 0.0739 | T_2g: mean +0.00178+-0.00030 sd*sqrtN 0.0745+-0.0069 stress_sd*sqrtN 0.0816
+== pert par=0.8 L=10 N=1000 n=40 [12s] S(k1)=0.2668 S(k2)=0.6316 <d_min>=0.065
+   boson_m2=1     | E_g: mean +0.00087+-0.00028 sd*sqrtN 0.0713+-0.0081 stress_sd*sqrtN 0.0688 | T_2g: mean +0.00080+-0.00028 sd*sqrtN 0.0711+-0.0081 stress_sd*sqrtN 0.0643
+   boson_m2=0.04  | E_g: mean +0.00103+-0.00035 sd*sqrtN 0.0881+-0.0100 stress_sd*sqrtN 0.0805 | T_2g: mean +0.00084+-0.00035 sd*sqrtN 0.0879+-0.0100 stress_sd*sqrtN 0.0751
+== pert par=0.8 L=12 N=1728 n=20 [23s] S(k1)=0.1175 S(k2)=0.5433 <d_min>=0.065
+   boson_m2=1     | E_g: mean +0.00132+-0.00022 sd*sqrtN 0.0589+-0.0096 stress_sd*sqrtN 0.0539 | T_2g: mean +0.00086+-0.00021 sd*sqrtN 0.0596+-0.0097 stress_sd*sqrtN 0.0705
+   boson_m2=0.04  | E_g: mean +0.00149+-0.00028 sd*sqrtN 0.0723+-0.0117 stress_sd*sqrtN 0.0610 | T_2g: mean +0.00095+-0.00026 sd*sqrtN 0.0715+-0.0116 stress_sd*sqrtN 0.0821

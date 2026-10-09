@@ -1,0 +1,18 @@
+== dil nn L=10 n=40 [38s]
+stage 0.3   <N>=  302.1 | E_g: mean +0.05738+-0.00067 sd*sqrtN 0.0791 stress_sd*sqrtN 0.0890 | T_2g: mean -0.07555+-0.00077 sd*sqrtN 0.0918 stress_sd*sqrtN 0.0000
+stage 0.5   <N>=  498.5 | E_g: mean +0.09229+-0.00051 sd*sqrtN 0.0785 stress_sd*sqrtN 0.0807 | T_2g: mean -0.11310+-0.00052 sd*sqrtN 0.0796 stress_sd*sqrtN 0.0000
+stage 0.7   <N>=  701.4 | E_g: mean +0.12491+-0.00036 sd*sqrtN 0.0639 stress_sd*sqrtN 0.0591 | T_2g: mean -0.14459+-0.00033 sd*sqrtN 0.0606 stress_sd*sqrtN 0.0000
+stage 0.9   <N>=  900.5 | E_g: mean +0.15421+-0.00023 sd*sqrtN 0.0450 stress_sd*sqrtN 0.0212 | T_2g: mean -0.17123+-0.00021 sd*sqrtN 0.0402 stress_sd*sqrtN 0.0000
+stage 1.0   <N>= 1000.0 | E_g: mean +0.16770+-0.00000 sd*sqrtN 0.0000 stress_sd*sqrtN 0.0000 | T_2g: mean -0.18319+-0.00000 sd*sqrtN 0.0000 stress_sd*sqrtN 0.0000
+stage-stage correlation of per-realization stiffness (pooled directions):
+  0.3   +1.00 +0.66 +0.45 +0.26 -0.00
+  0.5   +0.66 +1.00 +0.57 +0.24 +0.00
+  0.7   +0.45 +0.57 +1.00 +0.39 -0.00
+  0.9   +0.26 +0.24 +0.39 +1.00 -0.00
+  1.0   -0.00 +0.00 -0.00 -0.00 +1.00
+stage-stage correlation of TOTAL stiffness E'' (extensive):
+  0.3   +1.00 +0.70 +0.52 +0.26 -0.00
+  0.5   +0.70 +1.00 +0.58 +0.24 +0.00
+  0.7   +0.52 +0.58 +1.00 +0.42 -0.00
+  0.9   +0.26 +0.24 +0.42 +1.00 +0.00
+  1.0   -0.00 +0.00 -0.00 +0.00 +1.00

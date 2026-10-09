@@ -1,0 +1,26 @@
+== E3_a1_6_qc_R11.npz: interior n=1430, Ri=7.0
+   window r=0.75 <n>=   1.7  Var(W)/<n> = 1.750e-03
+   window r=1.00 <n>=   4.2  Var(W)/<n> = 1.565e-03
+   window r=1.50 <n>=  14.2  Var(W)/<n> = 1.458e-03
+   window r=2.00 <n>=  33.4  Var(W)/<n> = 1.444e-03
+   window r=2.50 <n>=  65.2  Var(W)/<n> = 1.198e-03
+   window r=3.00 <n>= 113.3  Var(W)/<n> = 9.463e-04
+   S_F(|k|=0.50) = 5.502e-04   (per-site variance 2.210e-03; taper resolution ~0.36)
+   S_F(|k|=0.75) = 8.936e-04   (per-site variance 2.210e-03; taper resolution ~0.36)
+   S_F(|k|=1.00) = 1.224e-03   (per-site variance 2.210e-03; taper resolution ~0.36)
+   S_F(|k|=1.50) = 1.186e-03   (per-site variance 2.210e-03; taper resolution ~0.36)
+   S_F(|k|=2.00) = 1.181e-03   (per-site variance 2.210e-03; taper resolution ~0.36)
+   S_F(|k|=3.00) = 1.161e-03   (per-site variance 2.210e-03; taper resolution ~0.36)
+== E3_a1_7_poisson_R11.npz: interior n=1460, Ri=7.0
+   window r=0.75 <n>=   1.7  Var(W)/<n> = 3.027e-03
+   window r=1.00 <n>=   4.1  Var(W)/<n> = 3.209e-03
+   window r=1.50 <n>=  13.9  Var(W)/<n> = 3.418e-03
+   window r=2.00 <n>=  33.5  Var(W)/<n> = 3.263e-03
+   window r=2.50 <n>=  65.5  Var(W)/<n> = 3.239e-03
+   window r=3.00 <n>= 114.1  Var(W)/<n> = 3.244e-03
+   S_F(|k|=0.50) = 3.480e-03   (per-site variance 2.352e-03; taper resolution ~0.36)
+   S_F(|k|=0.75) = 4.143e-03   (per-site variance 2.352e-03; taper resolution ~0.36)
+   S_F(|k|=1.00) = 3.610e-03   (per-site variance 2.352e-03; taper resolution ~0.36)
+   S_F(|k|=1.50) = 3.622e-03   (per-site variance 2.352e-03; taper resolution ~0.36)
+   S_F(|k|=2.00) = 4.591e-03   (per-site variance 2.352e-03; taper resolution ~0.36)
+   S_F(|k|=3.00) = 3.054e-03   (per-site variance 2.352e-03; taper resolution ~0.36)

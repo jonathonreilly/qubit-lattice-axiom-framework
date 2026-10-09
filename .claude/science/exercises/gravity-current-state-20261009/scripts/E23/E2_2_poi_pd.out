@@ -1,0 +1,30 @@
+== poi pd L=8 n=40 [34s]
+stage 0.25  <N>=  128.0 | E_g: mean +0.00070+-0.00053 sd*sqrtN 0.0452 stress_sd*sqrtN 0.0522 | T_2g: mean +0.00121+-0.00042 sd*sqrtN 0.0449 stress_sd*sqrtN 0.0487
+stage 0.5   <N>=  256.0 | E_g: mean +0.00085+-0.00053 sd*sqrtN 0.0619 stress_sd*sqrtN 0.0595 | T_2g: mean +0.00041+-0.00041 sd*sqrtN 0.0576 stress_sd*sqrtN 0.0619
+stage 1.0   <N>=  512.0 | E_g: mean +0.00082+-0.00044 sd*sqrtN 0.0769 stress_sd*sqrtN 0.0655 | T_2g: mean +0.00024+-0.00036 sd*sqrtN 0.0701 stress_sd*sqrtN 0.0667
+stage 2.0   <N>= 1024.0 | E_g: mean +0.00007+-0.00032 sd*sqrtN 0.0760 stress_sd*sqrtN 0.0679 | T_2g: mean +0.00031+-0.00026 sd*sqrtN 0.0709 stress_sd*sqrtN 0.0765
+stage-stage correlation of per-realization stiffness (pooled directions):
+  0.25  +1.00 +0.39 +0.19 +0.25
+  0.5   +0.39 +1.00 +0.57 +0.36
+  1.0   +0.19 +0.57 +1.00 +0.50
+  2.0   +0.25 +0.36 +0.50 +1.00
+stage-stage correlation of TOTAL stiffness E'' (extensive):
+  0.25  +1.00 +0.39 +0.19 +0.25
+  0.5   +0.39 +1.00 +0.57 +0.36
+  1.0   +0.19 +0.57 +1.00 +0.50
+  2.0   +0.25 +0.36 +0.50 +1.00
+== poi pd L=10 n=20 [80s]
+stage 0.25  <N>=  250.0 | E_g: mean +0.00082+-0.00061 sd*sqrtN 0.0492 stress_sd*sqrtN 0.0487 | T_2g: mean +0.00004+-0.00044 sd*sqrtN 0.0453 stress_sd*sqrtN 0.0534
+stage 0.5   <N>=  500.0 | E_g: mean +0.00024+-0.00048 sd*sqrtN 0.0568 stress_sd*sqrtN 0.0630 | T_2g: mean +0.00038+-0.00032 sd*sqrtN 0.0548 stress_sd*sqrtN 0.0660
+stage 1.0   <N>= 1000.0 | E_g: mean +0.00010+-0.00032 sd*sqrtN 0.0563 stress_sd*sqrtN 0.0612 | T_2g: mean +0.00078+-0.00028 sd*sqrtN 0.0641 stress_sd*sqrtN 0.0634
+stage 2.0   <N>= 2000.0 | E_g: mean +0.00028+-0.00019 sd*sqrtN 0.0571 stress_sd*sqrtN 0.0625 | T_2g: mean +0.00065+-0.00029 sd*sqrtN 0.0808 stress_sd*sqrtN 0.0708
+stage-stage correlation of per-realization stiffness (pooled directions):
+  0.25  +1.00 +0.54 +0.09 -0.13
+  0.5   +0.54 +1.00 +0.33 +0.15
+  1.0   +0.09 +0.33 +1.00 +0.53
+  2.0   -0.13 +0.15 +0.53 +1.00
+stage-stage correlation of TOTAL stiffness E'' (extensive):
+  0.25  +1.00 +0.54 +0.09 -0.13
+  0.5   +0.54 +1.00 +0.33 +0.15
+  1.0   +0.09 +0.33 +1.00 +0.53
+  2.0   -0.13 +0.15 +0.53 +1.00

@@ -1,0 +1,12 @@
+[pd] boson: real-space L=8: E_g +0.0473825 T_2g +0.0140047 | k-space M=8: +0.0473825 +0.0140047 | k-space M=64: +0.0473827 +0.0140046 | stress -5.3e-18 +1.0e-20
+[pd] fermion: real-space L=8: E_g +0.0590372 T_2g +0.1580266 | k-space M=8: +0.0590372 +0.1580266 | k-space M=64: +0.0584541 +0.1586944 | stress -2.8e-17 +6.4e-19
+[nn] boson: real-space L=8: E_g +0.1676956 T_2g -0.1831942 | k-space M=8: +0.1676956 -0.1831942 | k-space M=64: +0.1677019 -0.1831951 | stress -8.1e-20 +0.0e+00
+[nn] fermion: real-space L=8: E_g -0.0411618 T_2g -0.6702649 | k-space M=8: -0.0411618 -0.6702649 | k-space M=64: +0.3113103 -0.6666426 | stress -5.4e-20 +0.0e+00
+FD [pd] p=0.7 dir 0: E' exact +0.000881628 fd +0.000881628 | E'' exact +0.032278176 fd +0.032278176
+FD [pd] p=0.7 dir 2: E' exact +0.000424398 fd +0.000424398 | E'' exact +0.014919398 fd +0.014919398
+FD [nn] p=0.7 dir 0: E' exact +0.001376133 fd +0.001376133 | E'' exact +0.125172238 fd +0.125172238
+FD [nn] p=0.7 dir 2: E' exact +0.000000000 fd -0.000000000 | E'' exact -0.144874766 fd -0.144874766
+FD fermion [pd] p=0.7 T_2g dir: E'' exact +0.095805192 fd +0.095805192
+FD fermion [nn] p=0.7 T_2g dir: E'' exact -0.812215405 fd -0.812215405
+small-p slope [pd] boson: E''/N ~ p * (+0.032934 E_g, +0.038466 T_2g)  (EXACT isolated-pair term)
+small-p slope [nn] boson: E''/N ~ p * (+0.192450 E_g, -0.288675 T_2g)  (EXACT isolated-pair term)

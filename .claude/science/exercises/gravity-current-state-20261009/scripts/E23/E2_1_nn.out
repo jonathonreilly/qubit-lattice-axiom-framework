@@ -1,0 +1,140 @@
+nn p=1.0    L= 8 n=  1 <N>=  512.0 boson_m2=1     | E_g: mean +0.16770+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000 | T_2g: mean -0.18319+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000
+nn p=1.0    L= 8 n=  1 <N>=  512.0 boson_m2=0.04  | E_g: mean +0.17739+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000 | T_2g: mean -0.19819+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000
+nn p=1.0    L= 8 n=  1 <N>=  512.0 fermion_sea    | E_g: mean +0.30844+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000 | T_2g: mean -0.67903+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000
+   [0s]  fermion mu=6.000 T=0.400
+nn p=1.0    L=10 n=  1 <N>= 1000.0 boson_m2=1     | E_g: mean +0.16770+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000 | T_2g: mean -0.18319+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000
+nn p=1.0    L=10 n=  1 <N>= 1000.0 boson_m2=0.04  | E_g: mean +0.17745+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000 | T_2g: mean -0.19821+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000
+nn p=1.0    L=10 n=  1 <N>= 1000.0 fermion_sea    | E_g: mean +0.32423+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000 | T_2g: mean -0.67801+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000
+   [0s]  fermion mu=6.000 T=0.400
+nn p=1.0    L=12 n=  1 <N>= 1728.0 boson_m2=1     | E_g: mean +0.16770+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000 | T_2g: mean -0.18320+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000
+nn p=1.0    L=12 n=  1 <N>= 1728.0 boson_m2=0.04  | E_g: mean +0.17747+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000 | T_2g: mean -0.19821+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000
+nn p=1.0    L=12 n=  1 <N>= 1728.0 fermion_sea    | E_g: mean +0.31696+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000 | T_2g: mean -0.67828+-0.00000 sd*sqrtN 0.0000+-0.0000 stress_sd*sqrtN 0.0000
+   [1s]  fermion mu=6.000 T=0.400
+nn p=0.9    L= 8 n=100 <N>=  461.6 boson_m2=1     | E_g: mean +0.15437+-0.00018 sd*sqrtN 0.0388+-0.0028 stress_sd*sqrtN 0.0175 | T_2g: mean -0.17137+-0.00016 sd*sqrtN 0.0346+-0.0025 stress_sd*sqrtN 0.0000
+nn p=0.9    L= 8 n=100 <N>=  461.6 boson_m2=0.04  | E_g: mean +0.16353+-0.00019 sd*sqrtN 0.0407+-0.0029 stress_sd*sqrtN 0.0193 | T_2g: mean -0.18702+-0.00015 sd*sqrtN 0.0330+-0.0023 stress_sd*sqrtN 0.0000
+nn p=0.9    L= 8 n=100 <N>=  461.6 fermion_sea    | E_g: mean +0.16480+-0.00065 sd*sqrtN 0.1488+-0.0106 stress_sd*sqrtN 0.1038 | T_2g: mean -0.54608+-0.00082 sd*sqrtN 0.1802+-0.0128 stress_sd*sqrtN 0.0000
+   [5s]  fermion mu=5.259 T=0.373
+nn p=0.9    L=10 n= 60 <N>=  901.6 boson_m2=1     | E_g: mean +0.15439+-0.00019 sd*sqrtN 0.0443+-0.0041 stress_sd*sqrtN 0.0188 | T_2g: mean -0.17139+-0.00017 sd*sqrtN 0.0396+-0.0036 stress_sd*sqrtN 0.0000
+nn p=0.9    L=10 n= 60 <N>=  901.6 boson_m2=0.04  | E_g: mean +0.16359+-0.00020 sd*sqrtN 0.0465+-0.0043 stress_sd*sqrtN 0.0207 | T_2g: mean -0.18706+-0.00016 sd*sqrtN 0.0376+-0.0035 stress_sd*sqrtN 0.0000
+nn p=0.9    L=10 n= 60 <N>=  901.6 fermion_sea    | E_g: mean +0.16614+-0.00072 sd*sqrtN 0.1759+-0.0162 stress_sd*sqrtN 0.0991 | T_2g: mean -0.54675+-0.00082 sd*sqrtN 0.1948+-0.0179 stress_sd*sqrtN 0.0000
+   [11s]  fermion mu=5.259 T=0.373
+nn p=0.9    L=12 n= 30 <N>= 1550.2 boson_m2=1     | E_g: mean +0.15373+-0.00026 sd*sqrtN 0.0552+-0.0073 stress_sd*sqrtN 0.0207 | T_2g: mean -0.17080+-0.00023 sd*sqrtN 0.0492+-0.0065 stress_sd*sqrtN 0.0000
+nn p=0.9    L=12 n= 30 <N>= 1550.2 boson_m2=0.04  | E_g: mean +0.16292+-0.00027 sd*sqrtN 0.0581+-0.0076 stress_sd*sqrtN 0.0230 | T_2g: mean -0.18651+-0.00021 sd*sqrtN 0.0467+-0.0061 stress_sd*sqrtN 0.0000
+nn p=0.9    L=12 n= 30 <N>= 1550.2 fermion_sea    | E_g: mean +0.16802+-0.00080 sd*sqrtN 0.1778+-0.0233 stress_sd*sqrtN 0.1262 | T_2g: mean -0.54905+-0.00109 sd*sqrtN 0.2384+-0.0313 stress_sd*sqrtN 0.0000
+   [24s]  fermion mu=5.259 T=0.373
+nn p=0.7    L= 8 n=100 <N>=  359.1 boson_m2=1     | E_g: mean +0.12495+-0.00031 sd*sqrtN 0.0616+-0.0044 stress_sd*sqrtN 0.0569 | T_2g: mean -0.14465+-0.00029 sd*sqrtN 0.0588+-0.0042 stress_sd*sqrtN 0.0000
+nn p=0.7    L= 8 n=100 <N>=  359.1 boson_m2=0.04  | E_g: mean +0.13211+-0.00034 sd*sqrtN 0.0673+-0.0048 stress_sd*sqrtN 0.0646 | T_2g: mean -0.16175+-0.00027 sd*sqrtN 0.0577+-0.0041 stress_sd*sqrtN 0.0000
+nn p=0.7    L= 8 n=100 <N>=  359.1 fermion_sea    | E_g: mean +0.05278+-0.00097 sd*sqrtN 0.2066+-0.0147 stress_sd*sqrtN 0.2690 | T_2g: mean -0.43209+-0.00079 sd*sqrtN 0.1857+-0.0132 stress_sd*sqrtN 0.0000
+   [2s]  fermion mu=4.334 T=0.339
+nn p=0.7    L=10 n= 60 <N>=  700.7 boson_m2=1     | E_g: mean +0.12491+-0.00031 sd*sqrtN 0.0661+-0.0061 stress_sd*sqrtN 0.0491 | T_2g: mean -0.14456+-0.00029 sd*sqrtN 0.0627+-0.0058 stress_sd*sqrtN 0.0000
+nn p=0.7    L=10 n= 60 <N>=  700.7 boson_m2=0.04  | E_g: mean +0.13209+-0.00034 sd*sqrtN 0.0722+-0.0066 stress_sd*sqrtN 0.0560 | T_2g: mean -0.16168+-0.00028 sd*sqrtN 0.0609+-0.0056 stress_sd*sqrtN 0.0000
+nn p=0.7    L=10 n= 60 <N>=  700.7 fermion_sea    | E_g: mean +0.05471+-0.00097 sd*sqrtN 0.2371+-0.0218 stress_sd*sqrtN 0.2607 | T_2g: mean -0.43220+-0.00074 sd*sqrtN 0.1849+-0.0170 stress_sd*sqrtN 0.0000
+   [7s]  fermion mu=4.334 T=0.339
+nn p=0.7    L=12 n= 30 <N>= 1212.1 boson_m2=1     | E_g: mean +0.12506+-0.00027 sd*sqrtN 0.0554+-0.0073 stress_sd*sqrtN 0.0595 | T_2g: mean -0.14473+-0.00026 sd*sqrtN 0.0555+-0.0073 stress_sd*sqrtN 0.0000
+nn p=0.7    L=12 n= 30 <N>= 1212.1 boson_m2=0.04  | E_g: mean +0.13228+-0.00030 sd*sqrtN 0.0602+-0.0079 stress_sd*sqrtN 0.0681 | T_2g: mean -0.16185+-0.00025 sd*sqrtN 0.0551+-0.0072 stress_sd*sqrtN 0.0000
+nn p=0.7    L=12 n= 30 <N>= 1212.1 fermion_sea    | E_g: mean +0.05399+-0.00106 sd*sqrtN 0.2189+-0.0287 stress_sd*sqrtN 0.2946 | T_2g: mean -0.43276+-0.00063 sd*sqrtN 0.1721+-0.0226 stress_sd*sqrtN 0.0000
+   [12s]  fermion mu=4.334 T=0.339
+nn p=0.5    L= 8 n=100 <N>=  256.7 boson_m2=1     | E_g: mean +0.09219+-0.00038 sd*sqrtN 0.0685+-0.0049 stress_sd*sqrtN 0.0859 | T_2g: mean -0.11298+-0.00039 sd*sqrtN 0.0715+-0.0051 stress_sd*sqrtN 0.0000
+nn p=0.5    L= 8 n=100 <N>=  256.7 boson_m2=0.04  | E_g: mean +0.09561+-0.00043 sd*sqrtN 0.0768+-0.0055 stress_sd*sqrtN 0.1000 | T_2g: mean -0.13101+-0.00040 sd*sqrtN 0.0752+-0.0053 stress_sd*sqrtN 0.0000
+nn p=0.5    L= 8 n=100 <N>=  256.7 fermion_sea    | E_g: mean -0.08287+-0.00077 sd*sqrtN 0.1551+-0.0110 stress_sd*sqrtN 0.2319 | T_2g: mean -0.21993+-0.00046 sd*sqrtN 0.1196+-0.0085 stress_sd*sqrtN 0.0000
+   [1s]  fermion mu=2.816 T=0.282
+nn p=0.5    L=10 n= 60 <N>=  502.1 boson_m2=1     | E_g: mean +0.09269+-0.00045 sd*sqrtN 0.0832+-0.0077 stress_sd*sqrtN 0.0765 | T_2g: mean -0.11349+-0.00045 sd*sqrtN 0.0839+-0.0077 stress_sd*sqrtN 0.0000
+nn p=0.5    L=10 n= 60 <N>=  502.1 boson_m2=0.04  | E_g: mean +0.09617+-0.00051 sd*sqrtN 0.0934+-0.0086 stress_sd*sqrtN 0.0896 | T_2g: mean -0.13151+-0.00045 sd*sqrtN 0.0862+-0.0079 stress_sd*sqrtN 0.0000
+nn p=0.5    L=10 n= 60 <N>=  502.1 fermion_sea    | E_g: mean -0.08340+-0.00070 sd*sqrtN 0.1518+-0.0140 stress_sd*sqrtN 0.2155 | T_2g: mean -0.21969+-0.00044 sd*sqrtN 0.1163+-0.0107 stress_sd*sqrtN 0.0000
+   [3s]  fermion mu=2.816 T=0.282
+nn p=0.5    L=12 n= 30 <N>=  859.6 boson_m2=1     | E_g: mean +0.09166+-0.00047 sd*sqrtN 0.0783+-0.0103 stress_sd*sqrtN 0.0869 | T_2g: mean -0.11243+-0.00047 sd*sqrtN 0.0833+-0.0109 stress_sd*sqrtN 0.0000
+nn p=0.5    L=12 n= 30 <N>=  859.6 boson_m2=0.04  | E_g: mean +0.09501+-0.00053 sd*sqrtN 0.0881+-0.0116 stress_sd*sqrtN 0.1014 | T_2g: mean -0.13045+-0.00048 sd*sqrtN 0.0869+-0.0114 stress_sd*sqrtN 0.0000
+nn p=0.5    L=12 n= 30 <N>=  859.6 fermion_sea    | E_g: mean -0.08316+-0.00097 sd*sqrtN 0.1871+-0.0246 stress_sd*sqrtN 0.2502 | T_2g: mean -0.22019+-0.00049 sd*sqrtN 0.1290+-0.0169 stress_sd*sqrtN 0.0000
+   [5s]  fermion mu=2.816 T=0.282
+nn p=0.3116 L= 8 n=100 <N>=  161.9 boson_m2=1     | E_g: mean +0.05906+-0.00051 sd*sqrtN 0.0742+-0.0053 stress_sd*sqrtN 0.1068 | T_2g: mean -0.07740+-0.00058 sd*sqrtN 0.0860+-0.0061 stress_sd*sqrtN 0.0000
+nn p=0.3116 L= 8 n=100 <N>=  161.9 boson_m2=0.04  | E_g: mean +0.05860+-0.00056 sd*sqrtN 0.0794+-0.0056 stress_sd*sqrtN 0.1287 | T_2g: mean -0.09305+-0.00066 sd*sqrtN 0.0991+-0.0070 stress_sd*sqrtN 0.0000
+nn p=0.3116 L= 8 n=100 <N>=  161.9 fermion_sea    | E_g: mean -0.04369+-0.00037 sd*sqrtN 0.0641+-0.0046 stress_sd*sqrtN 0.0683 | T_2g: mean -0.04214+-0.00028 sd*sqrtN 0.0447+-0.0032 stress_sd*sqrtN 0.0000
+   [0s]  fermion mu=1.001 T=0.226
+nn p=0.3116 L=10 n= 60 <N>=  308.4 boson_m2=1     | E_g: mean +0.05811+-0.00039 sd*sqrtN 0.0631+-0.0058 stress_sd*sqrtN 0.1062 | T_2g: mean -0.07637+-0.00046 sd*sqrtN 0.0756+-0.0070 stress_sd*sqrtN 0.0000
+nn p=0.3116 L=10 n= 60 <N>=  308.4 boson_m2=0.04  | E_g: mean +0.05755+-0.00042 sd*sqrtN 0.0671+-0.0062 stress_sd*sqrtN 0.1276 | T_2g: mean -0.09189+-0.00052 sd*sqrtN 0.0880+-0.0081 stress_sd*sqrtN 0.0000
+nn p=0.3116 L=10 n= 60 <N>=  308.4 fermion_sea    | E_g: mean -0.04418+-0.00029 sd*sqrtN 0.0579+-0.0053 stress_sd*sqrtN 0.0637 | T_2g: mean -0.04196+-0.00029 sd*sqrtN 0.0470+-0.0043 stress_sd*sqrtN 0.0000
+   [1s]  fermion mu=1.001 T=0.226
+nn p=0.3116 L=12 n= 30 <N>=  541.8 boson_m2=1     | E_g: mean +0.05958+-0.00041 sd*sqrtN 0.0590+-0.0077 stress_sd*sqrtN 0.0871 | T_2g: mean -0.07803+-0.00046 sd*sqrtN 0.0688+-0.0090 stress_sd*sqrtN 0.0000
+nn p=0.3116 L=12 n= 30 <N>=  541.8 boson_m2=0.04  | E_g: mean +0.05916+-0.00045 sd*sqrtN 0.0635+-0.0083 stress_sd*sqrtN 0.1039 | T_2g: mean -0.09378+-0.00052 sd*sqrtN 0.0790+-0.0104 stress_sd*sqrtN 0.0000
+nn p=0.3116 L=12 n= 30 <N>=  541.8 fermion_sea    | E_g: mean -0.04405+-0.00038 sd*sqrtN 0.0627+-0.0082 stress_sd*sqrtN 0.0562 | T_2g: mean -0.04253+-0.00029 sd*sqrtN 0.0441+-0.0058 stress_sd*sqrtN 0.0000
+   [2s]  fermion mu=1.001 T=0.226
+nn p=0.3    L= 8 n=100 <N>=  154.4 boson_m2=1     | E_g: mean +0.05684+-0.00049 sd*sqrtN 0.0691+-0.0049 stress_sd*sqrtN 0.1044 | T_2g: mean -0.07488+-0.00057 sd*sqrtN 0.0828+-0.0059 stress_sd*sqrtN 0.0000
+nn p=0.3    L= 8 n=100 <N>=  154.4 boson_m2=0.04  | E_g: mean +0.05619+-0.00052 sd*sqrtN 0.0728+-0.0052 stress_sd*sqrtN 0.1260 | T_2g: mean -0.09020+-0.00066 sd*sqrtN 0.0967+-0.0069 stress_sd*sqrtN 0.0000
+nn p=0.3    L= 8 n=100 <N>=  154.4 fermion_sea    | E_g: mean -0.03478+-0.00032 sd*sqrtN 0.0499+-0.0035 stress_sd*sqrtN 0.0445 | T_2g: mean -0.03062+-0.00022 sd*sqrtN 0.0331+-0.0024 stress_sd*sqrtN 0.0000
+   [0s]  fermion mu=0.829 T=0.205
+nn p=0.3    L=10 n= 60 <N>=  301.1 boson_m2=1     | E_g: mean +0.05681+-0.00042 sd*sqrtN 0.0642+-0.0059 stress_sd*sqrtN 0.1035 | T_2g: mean -0.07482+-0.00048 sd*sqrtN 0.0763+-0.0070 stress_sd*sqrtN 0.0000
+nn p=0.3    L=10 n= 60 <N>=  301.1 boson_m2=0.04  | E_g: mean +0.05615+-0.00045 sd*sqrtN 0.0687+-0.0063 stress_sd*sqrtN 0.1246 | T_2g: mean -0.09014+-0.00054 sd*sqrtN 0.0883+-0.0081 stress_sd*sqrtN 0.0000
+nn p=0.3    L=10 n= 60 <N>=  301.1 fermion_sea    | E_g: mean -0.03491+-0.00023 sd*sqrtN 0.0415+-0.0038 stress_sd*sqrtN 0.0393 | T_2g: mean -0.03059+-0.00016 sd*sqrtN 0.0265+-0.0024 stress_sd*sqrtN 0.0000
+   [1s]  fermion mu=0.829 T=0.205
+nn p=0.3    L=12 n= 30 <N>=  514.3 boson_m2=1     | E_g: mean +0.05690+-0.00059 sd*sqrtN 0.0830+-0.0109 stress_sd*sqrtN 0.1090 | T_2g: mean -0.07492+-0.00066 sd*sqrtN 0.0927+-0.0122 stress_sd*sqrtN 0.0000
+nn p=0.3    L=12 n= 30 <N>=  514.3 boson_m2=0.04  | E_g: mean +0.05627+-0.00064 sd*sqrtN 0.0887+-0.0116 stress_sd*sqrtN 0.1314 | T_2g: mean -0.09023+-0.00075 sd*sqrtN 0.1063+-0.0140 stress_sd*sqrtN 0.0000
+nn p=0.3    L=12 n= 30 <N>=  514.3 fermion_sea    | E_g: mean -0.03480+-0.00038 sd*sqrtN 0.0552+-0.0073 stress_sd*sqrtN 0.0477 | T_2g: mean -0.03045+-0.00022 sd*sqrtN 0.0336+-0.0044 stress_sd*sqrtN 0.0000
+   [2s]  fermion mu=0.829 T=0.205
+nn p=0.2    L= 8 n=100 <N>=  103.4 boson_m2=1     | E_g: mean +0.03815+-0.00054 sd*sqrtN 0.0617+-0.0044 stress_sd*sqrtN 0.0937 | T_2g: mean -0.05242+-0.00068 sd*sqrtN 0.0792+-0.0056 stress_sd*sqrtN 0.0000
+nn p=0.2    L= 8 n=100 <N>=  103.4 boson_m2=0.04  | E_g: mean +0.03669+-0.00055 sd*sqrtN 0.0623+-0.0044 stress_sd*sqrtN 0.1138 | T_2g: mean -0.06379+-0.00082 sd*sqrtN 0.0951+-0.0068 stress_sd*sqrtN 0.0000
+nn p=0.2    L= 8 n=100 <N>=  103.4 fermion_sea    | E_g: mean -0.00136+-0.00003 sd*sqrtN 0.0032+-0.0002 stress_sd*sqrtN 0.0022 | T_2g: mean -0.00105+-0.00003 sd*sqrtN 0.0031+-0.0002 stress_sd*sqrtN 0.0000
+   [0s]  fermion mu=0.000 T=0.159
+nn p=0.2    L=10 n= 60 <N>=  199.4 boson_m2=1     | E_g: mean +0.03763+-0.00051 sd*sqrtN 0.0601+-0.0055 stress_sd*sqrtN 0.0869 | T_2g: mean -0.05174+-0.00063 sd*sqrtN 0.0776+-0.0071 stress_sd*sqrtN 0.0000
+nn p=0.2    L=10 n= 60 <N>=  199.4 boson_m2=0.04  | E_g: mean +0.03617+-0.00052 sd*sqrtN 0.0608+-0.0056 stress_sd*sqrtN 0.1055 | T_2g: mean -0.06299+-0.00076 sd*sqrtN 0.0932+-0.0086 stress_sd*sqrtN 0.0000
+nn p=0.2    L=10 n= 60 <N>=  199.4 fermion_sea    | E_g: mean -0.00136+-0.00003 sd*sqrtN 0.0032+-0.0003 stress_sd*sqrtN 0.0024 | T_2g: mean -0.00103+-0.00003 sd*sqrtN 0.0032+-0.0003 stress_sd*sqrtN 0.0000
+   [0s]  fermion mu=0.000 T=0.159
+nn p=0.2    L=12 n= 30 <N>=  342.6 boson_m2=1     | E_g: mean +0.03824+-0.00042 sd*sqrtN 0.0499+-0.0066 stress_sd*sqrtN 0.1051 | T_2g: mean -0.05262+-0.00054 sd*sqrtN 0.0689+-0.0090 stress_sd*sqrtN 0.0000
+nn p=0.2    L=12 n= 30 <N>=  342.6 boson_m2=0.04  | E_g: mean +0.03676+-0.00043 sd*sqrtN 0.0501+-0.0066 stress_sd*sqrtN 0.1274 | T_2g: mean -0.06405+-0.00065 sd*sqrtN 0.0835+-0.0110 stress_sd*sqrtN 0.0000
+nn p=0.2    L=12 n= 30 <N>=  342.6 fermion_sea    | E_g: mean -0.00137+-0.00003 sd*sqrtN 0.0032+-0.0004 stress_sd*sqrtN 0.0030 | T_2g: mean -0.00104+-0.00003 sd*sqrtN 0.0033+-0.0004 stress_sd*sqrtN 0.0000
+   [1s]  fermion mu=0.000 T=0.159
+nn p=0.1    L= 8 n=100 <N>=   52.5 boson_m2=1     | E_g: mean +0.01863+-0.00054 sd*sqrtN 0.0441+-0.0031 stress_sd*sqrtN 0.0702 | T_2g: mean -0.02674+-0.00075 sd*sqrtN 0.0612+-0.0043 stress_sd*sqrtN 0.0000
+nn p=0.1    L= 8 n=100 <N>=   52.5 boson_m2=0.04  | E_g: mean +0.01752+-0.00052 sd*sqrtN 0.0421+-0.0030 stress_sd*sqrtN 0.0855 | T_2g: mean -0.03258+-0.00091 sd*sqrtN 0.0746+-0.0053 stress_sd*sqrtN 0.0000
+nn p=0.1    L= 8 n=100 <N>=   52.5 fermion_sea    | E_g: mean -0.00032+-0.00002 sd*sqrtN 0.0016+-0.0001 stress_sd*sqrtN 0.0009 | T_2g: mean -0.00018+-0.00002 sd*sqrtN 0.0012+-0.0001 stress_sd*sqrtN 0.0000
+   [0s]  fermion mu=0.000 T=0.149
+nn p=0.1    L=10 n= 60 <N>=   99.9 boson_m2=1     | E_g: mean +0.01933+-0.00048 sd*sqrtN 0.0444+-0.0041 stress_sd*sqrtN 0.0824 | T_2g: mean -0.02779+-0.00065 sd*sqrtN 0.0606+-0.0056 stress_sd*sqrtN 0.0000
+nn p=0.1    L=10 n= 60 <N>=   99.9 boson_m2=0.04  | E_g: mean +0.01815+-0.00046 sd*sqrtN 0.0423+-0.0039 stress_sd*sqrtN 0.1003 | T_2g: mean -0.03391+-0.00080 sd*sqrtN 0.0742+-0.0068 stress_sd*sqrtN 0.0000
+nn p=0.1    L=10 n= 60 <N>=   99.9 fermion_sea    | E_g: mean -0.00034+-0.00002 sd*sqrtN 0.0018+-0.0002 stress_sd*sqrtN 0.0011 | T_2g: mean -0.00020+-0.00002 sd*sqrtN 0.0013+-0.0001 stress_sd*sqrtN 0.0000
+   [0s]  fermion mu=0.000 T=0.149
+nn p=0.1    L=12 n= 30 <N>=  174.6 boson_m2=1     | E_g: mean +0.01908+-0.00053 sd*sqrtN 0.0452+-0.0059 stress_sd*sqrtN 0.0770 | T_2g: mean -0.02744+-0.00074 sd*sqrtN 0.0618+-0.0081 stress_sd*sqrtN 0.0000
+nn p=0.1    L=12 n= 30 <N>=  174.6 boson_m2=0.04  | E_g: mean +0.01793+-0.00051 sd*sqrtN 0.0429+-0.0056 stress_sd*sqrtN 0.0938 | T_2g: mean -0.03348+-0.00091 sd*sqrtN 0.0754+-0.0099 stress_sd*sqrtN 0.0000
+nn p=0.1    L=12 n= 30 <N>=  174.6 fermion_sea    | E_g: mean -0.00034+-0.00002 sd*sqrtN 0.0016+-0.0002 stress_sd*sqrtN 0.0010 | T_2g: mean -0.00020+-0.00002 sd*sqrtN 0.0013+-0.0002 stress_sd*sqrtN 0.0000
+   [0s]  fermion mu=0.000 T=0.149
+
+FITS sd ~ N^q (white: q = -0.5)
+nn p=0.9    boson_m2=1     E_g: q = -0.233 +- 0.113
+nn p=0.9    boson_m2=1     T_2g: q = -0.235 +- 0.113
+nn p=0.9    boson_m2=0.04  E_g: q = -0.233 +- 0.113
+nn p=0.9    boson_m2=0.04  T_2g: q = -0.237 +- 0.113
+nn p=0.9    fermion_sea    E_g: q = -0.325 +- 0.113
+nn p=0.9    fermion_sea    T_2g: q = -0.300 +- 0.113
+nn p=0.7    boson_m2=1     E_g: q = -0.535 +- 0.113
+nn p=0.7    boson_m2=1     T_2g: q = -0.509 +- 0.113
+nn p=0.7    boson_m2=0.04  E_g: q = -0.538 +- 0.113
+nn p=0.7    boson_m2=0.04  T_2g: q = -0.506 +- 0.113
+nn p=0.7    fermion_sea    E_g: q = -0.410 +- 0.113
+nn p=0.7    fermion_sea    T_2g: q = -0.548 +- 0.113
+nn p=0.5    boson_m2=1     E_g: q = -0.340 +- 0.113
+nn p=0.5    boson_m2=1     T_2g: q = -0.343 +- 0.113
+nn p=0.5    boson_m2=0.04  E_g: q = -0.338 +- 0.113
+nn p=0.5    boson_m2=0.04  T_2g: q = -0.357 +- 0.113
+nn p=0.5    fermion_sea    E_g: q = -0.396 +- 0.113
+nn p=0.5    fermion_sea    T_2g: q = -0.466 +- 0.113
+nn p=0.3116 boson_m2=1     E_g: q = -0.705 +- 0.114
+nn p=0.3116 boson_m2=1     T_2g: q = -0.688 +- 0.114
+nn p=0.3116 boson_m2=0.04  E_g: q = -0.704 +- 0.114
+nn p=0.3116 boson_m2=0.04  T_2g: q = -0.687 +- 0.114
+nn p=0.3116 fermion_sea    E_g: q = -0.553 +- 0.114
+nn p=0.3116 fermion_sea    T_2g: q = -0.490 +- 0.114
+nn p=0.3    boson_m2=1     E_g: q = -0.420 +- 0.114
+nn p=0.3    boson_m2=1     T_2g: q = -0.465 +- 0.114
+nn p=0.3    boson_m2=0.04  E_g: q = -0.405 +- 0.114
+nn p=0.3    boson_m2=0.04  T_2g: q = -0.480 +- 0.114
+nn p=0.3    fermion_sea    E_g: q = -0.515 +- 0.114
+nn p=0.3    fermion_sea    T_2g: q = -0.581 +- 0.114
+nn p=0.2    boson_m2=1     E_g: q = -0.641 +- 0.114
+nn p=0.2    boson_m2=1     T_2g: q = -0.594 +- 0.114
+nn p=0.2    boson_m2=0.04  E_g: q = -0.643 +- 0.114
+nn p=0.2    boson_m2=0.04  T_2g: q = -0.588 +- 0.114
+nn p=0.2    fermion_sea    E_g: q = -0.512 +- 0.114
+nn p=0.2    fermion_sea    T_2g: q = -0.466 +- 0.114
+nn p=0.1    boson_m2=1     E_g: q = -0.483 +- 0.115
+nn p=0.1    boson_m2=1     T_2g: q = -0.497 +- 0.115
+nn p=0.1    boson_m2=0.04  E_g: q = -0.487 +- 0.115
+nn p=0.1    boson_m2=0.04  T_2g: q = -0.495 +- 0.115
+nn p=0.1    fermion_sea    E_g: q = -0.438 +- 0.115
+nn p=0.1    fermion_sea    T_2g: q = -0.394 +- 0.115

@@ -78,3 +78,8 @@ Take one massless field in a constant, volume-preserving metric g = exp(−tε),
 1. **The stiffness field is a nonlinear local functional of the configuration.** White density noise generically gives white stiffness noise. A stiffness density that is exactly a divergence, a coboundary, would be quiet even on a Poisson set. That is F1a's one reopen condition, and it stays open.
    - Related: for a *pair-sum* energy, a stealthy set with a band-limited kernel is exactly shape-blind in every realization. But Z³ is the extreme stealthy set, and this is T2's free-level relabelling again: non-local, and it does not survive interactions (Lemma R).
 2. **Spacetime.** The Lorentz group is not transitive on R⁴∖{0}; its orbits are hyperboloids. So Lorentz invariance in law forces only g₂(x) = G(x·x), not a constant, and E1 is not touched by this lemma. The spacetime Poisson sprinkling itself has S ≡ 1 (white in 4D). Whether that white noise is harmless (marginal) is exactly E1's quantitative question.
+
+**Prior art inside this packet (my miss, caught by the E2/E3 worker).**
+- `kill_F1a.md:24` already had the pair-theory version as a READING: R3's necessity lemma (`R3_price.md:34`, ρ₂ = a + b/r³ ⇒ b = 0) means a pair-level zero mean forces Poisson pair statistics, which rules out a hyperuniform density.
+- Lemma P reaches the same exclusion from the law's symmetry (SL(d), or AN alone) rather than from a pair-potential functional. That makes it independent of the energy functional, and it gives the variance identity.
+- I did not grep the packet before writing it.

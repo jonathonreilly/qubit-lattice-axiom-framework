@@ -1,0 +1,9 @@
+== stealth par=0.3 L=6 N=216 n=40 [14s] S(k1)=0.0000 S(k2)=0.0000 <d_min>=0.403 chi_eff=0.301 K=4.69 max Phi/N=8.2e-28
+   boson_m2=1     | E_g: mean +0.02297+-0.00048 sd*sqrtN 0.0565+-0.0064 stress_sd*sqrtN 0.0229 | T_2g: mean +0.02559+-0.00041 sd*sqrtN 0.0581+-0.0066 stress_sd*sqrtN 0.0247
+   boson_m2=0.04  | E_g: mean +0.02711+-0.00060 sd*sqrtN 0.0706+-0.0080 stress_sd*sqrtN 0.0269 | T_2g: mean +0.03044+-0.00052 sd*sqrtN 0.0729+-0.0083 stress_sd*sqrtN 0.0294
+== stealth par=0.3 L=8 N=512 n=24 [49s] S(k1)=0.0000 S(k2)=0.0000 <d_min>=0.344 chi_eff=0.301 K=4.72 max Phi/N=3.5e-27
+   boson_m2=1     | E_g: mean +0.02647+-0.00048 sd*sqrtN 0.0636+-0.0094 stress_sd*sqrtN 0.0265 | T_2g: mean +0.02207+-0.00038 sd*sqrtN 0.0565+-0.0083 stress_sd*sqrtN 0.0215
+   boson_m2=0.04  | E_g: mean +0.03140+-0.00060 sd*sqrtN 0.0799+-0.0118 stress_sd*sqrtN 0.0317 | T_2g: mean +0.02607+-0.00049 sd*sqrtN 0.0706+-0.0104 stress_sd*sqrtN 0.0258
+== stealth par=0.3 L=10 N=1000 n=12 [76s] S(k1)=0.0000 S(k2)=0.0000 <d_min>=0.298 chi_eff=0.307 K=4.75 max Phi/N=1.2e-26
+   boson_m2=1     | E_g: mean +0.02358+-0.00045 sd*sqrtN 0.0527+-0.0112 stress_sd*sqrtN 0.0184 | T_2g: mean +0.02314+-0.00035 sd*sqrtN 0.0565+-0.0120 stress_sd*sqrtN 0.0208
+   boson_m2=0.04  | E_g: mean +0.02784+-0.00057 sd*sqrtN 0.0667+-0.0142 stress_sd*sqrtN 0.0223 | T_2g: mean +0.02729+-0.00044 sd*sqrtN 0.0710+-0.0151 stress_sd*sqrtN 0.0242

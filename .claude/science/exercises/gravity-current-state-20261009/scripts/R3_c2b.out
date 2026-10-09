@@ -1,0 +1,5 @@
+FD check E_g: analytic +0.00120900  finite-diff +0.00120900
+FD check T_2g: analytic -0.00057380  finite-diff -0.00057380
+iid box  8 N=  512: rot-avg E''/N = +0.000115 +- 0.000101  (sd 0.00175, n=300) [24s]
+iid box 10 N= 1000: rot-avg E''/N = -0.000058 +- 0.000087  (sd 0.00124, n=200) [65s]
+iid box 12 N= 1728: rot-avg E''/N = +0.000098 +- 0.000110  (sd 0.00085, n=60) [99s]

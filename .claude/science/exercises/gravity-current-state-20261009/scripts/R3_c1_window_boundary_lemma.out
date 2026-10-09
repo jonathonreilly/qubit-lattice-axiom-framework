@@ -1,0 +1,6 @@
+ball, phi=-sqrt(s), E_g: E'' = -L**4/(60*pi**2)   ; -L^4/(60 pi^2) match: True
+ball, phi=-sqrt(s), T_2g: E'' = -L**4/(60*pi**2)   ; -L^4/(60 pi^2) match: True
+cube [-pi,pi]^3, phi=-sqrt(s), E_g: bulk -0.43168942  boundary -0.43168942  finite-diff -0.431689
+cube [-pi,pi]^3, phi=-sqrt(s), T_2g: bulk -0.38282675  boundary -0.38282675  finite-diff -0.382827
+inscribed ball r=pi: -L^4/(60 pi^2) = -0.16449341
+equal-volume ball: -L^4/(60 pi^2) = -0.38977771

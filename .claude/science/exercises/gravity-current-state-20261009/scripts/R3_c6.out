@@ -1,0 +1,8 @@
+N=512: sd*sqrt(N) = 0.0396  (white noise => constant)
+N=1000: sd*sqrt(N) = 0.0392  (white noise => constant)
+N=1728: sd*sqrt(N) = 0.0353  (white noise => constant)
+sigma=0.04 per cell, a = l_P: Born mean free path l = 4pi/W = 0.194 Planck lengths
+sigma=0.01 per cell, a = l_P: Born mean free path l = 4pi/W = 3.11 Planck lengths
+sigma=0.001 per cell, a = l_P: Born mean free path l = 4pi/W = 311 Planck lengths
+sigma=0.04: mean free path > 1 Gpc needs cutoff a^-1 < 7.7e+06 GeV
+sigma=0.01: mean free path > 1 Gpc needs cutoff a^-1 < 1.3e+07 GeV

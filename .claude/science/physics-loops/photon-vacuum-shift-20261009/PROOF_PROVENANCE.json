@@ -1,0 +1,6 @@
+{
+  "base": "17a95e60d85afc246fc7c163adef8869ab3f4194",
+  "report_sha256": "45296a977db66e8ab56c794082499667aa060ed0695f48f1740362522aecf6e3",
+  "proof_section_sha256": "9e4188b500dc02ef4b85c59654350ab5dee70ef6f2d981fee902fea0e1b3502e",
+  "source_conversion": "Proof sections 2-9 copied with Markdown formatting; interaction reference relocated; explicit omega/c_L definitions restored from report section1; translation/parity domain explanation added."
+}

@@ -1,0 +1,16 @@
+slug: photon-vacuum-shift-20261009
+mode: run
+delivery_mode: milestone
+source_base: 17a95e60d85afc246fc7c163adef8869ab3f4194
+branch: physics-loop/photon-vacuum-shift-20261009
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+current_milestone: independently checked source ready for regular PR
+next_action: finish delivery checks and open a regular review PR
+runtime_budget: null
+cycles: 1
+audit_requested: false
+strongest_open_obligation: compact-state comparison and uniform higher-interaction control
+stop_condition: checked coherent milestone with regular PR and explicit handoff

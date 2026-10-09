@@ -1,0 +1,324 @@
+Independent review of the photon continuation reference forms
+Date: 2026-10-09
+Status: complete. T1-T3 confirmed; the packaged-source definition finding is repaired and affected-source confirmation is recorded in section 13.
+
+Frozen inputs
+PHOTON_CONTINUATION.txt
+  /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009/PHOTON_CONTINUATION.txt
+  SHA256 45296a977db66e8ab56c794082499667aa060ed0695f48f1740362522aecf6e3
+photon_probe.py
+  same directory, SHA256 6605a3a223e8e2435633f6d66815916e1dd631367d474b1bc72263d58c9795ab
+Both hashes matched the supplied frozen identities before reading. The complete 475-line report and complete 286-line probe were read. The probe is author evidence, not an independent proof.
+
+Reused independent input
+  /Users/jonreilly/Documents/Codex/research_runs/new_math_policy_20261008/GAUGE_INDEPENDENT_CHECK.txt
+  SHA256 c5b96cd403575be73ccd08992c3021eaf456c00624154a540412a1e6f5920dce
+The hash matches. Only its proved lattice-dispersion triangle-gap inequality is reused. Its coverage does not include a vertex estimate, perturbation coefficient, interacting Hamiltonian, or compact spectrum.
+
+Instruction-source identity
+The current worktree AGENTS.md and SCIENCE_WORKFLOW.md hashes match the copies already fully read for the earlier coherent task: f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f and 05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce. No science, review-loop, audit, or PR workflow was invoked.
+
+Scope
+This is a bounded independent mathematical check of the reference forms T1-T3. It does not assign formal audit/retained status, identify a compact-rotor eigenvalue or pole, approve a physical generator, or assert an all-orders remainder. Only this report and an optional independent checker beside it may be written.
+
+Initial reconstruction checkpoint
+The complete quartic/sextic coefficient reconstructs as -c_L^2 omega/32 minus the two three-photon positive forms. The extensive spectator norm cancels before taking a volume bound; a finite exchange remainder and twice the interference remain. The full-cosine cross terms have a positive degree-two contribution and negative even-degree contributions from degree four upward. All finite-volume denominators are positive on the specified momentum/parity subspaces. The detailed derivation, checker results, final dispositions and remaining limits will be recorded below.
+
+Final mathematical dispositions
+
+T1: CONFIRMED for the complete finite-volume Gaussian coefficient DEFINED in (R6). The direct sextic, quadratic normal-order contributions, spectator 1-to-5 sector, spectator exchange, and both copies of the interference are included. The result is a Hermitian matrix identity for complex external polarizations. No missing Bose factor or wrong resolvent sign was found.
+
+T2: CONFIRMED as an all-L matrix bound for every integer L>=3 and nonzero lattice momentum. The constants 65/48 and 1/96 follow from explicit dispersion, counting and covariance inequalities; they do not come from the author samples.
+
+T3: CONFIRMED for S_g as DEFINED in (F1), with the bare H0 resolvents, two exact full-cosine insertions, 0<g<=1/2, every L>=3 and every nonzero external momentum. The intermediate all-g bound (F7) also follows for finite positive g; its lower endpoint is not asserted to remain positive for large g. The proof does not replace the cosine by its quartic or sextic truncation.
+
+Required mathematical corrections to these statements: none found. The restriction to reference coefficients/forms is essential, not an optional caveat. These dispositions are independent mathematical-review conclusions, not applied audit verdicts or formal retained status.
+
+1. Setup, mode normalization and the volume-independent covariance range
+
+Write N=L^3 and Omega_max=2 sqrt(3). Let C be the real link-start curl, and let u_mu be real orthonormal positive eigenmodes of C^T C, with eigenvalues w_mu^2. In momentum space C(k)^* C(k)=omega(k)^2 I-d(k)d(k)^*, so each nonzero k has two positive modes with frequency omega(k). The zero momentum gives no positive modes. Thus there are exactly 2(N-1) positive real oscillators; the complex Fourier basis is a unitary change of this real basis, not an additional set of oscillators.
+
+For v_pmu=(Cu_mu)_p/sqrt(2w_mu), direct multiplication gives
+  sum_p v_pmu v_pnu = (w_mu/2) delta_mu,nu.                 (1)
+The covariance c_p=sum_mu v_pmu^2 is independent of p by lattice translation and cubic symmetry. Its trace is
+  sum_p c_p = sum_mu w_mu/2 = sum_(k!=0) omega(k),
+so c_p=c_L. The full grid, including its zero term, has mean omega^2=6 because the mean of each cos(k_i) is zero. Since omega<=sqrt(12),
+  mean omega >= mean omega^2/sqrt(12)=sqrt(3),
+  mean omega <= sqrt(mean omega^2)=sqrt(6).
+Consequently 1/sqrt(3)<=c_L<=sqrt(2/3). No Riemann-sum limit is used.
+
+For a normalized one-particle eigenvector f of frequency w, define a_f^dagger=sum_mu f_mu a_mu^dagger and a_f=sum_mu conjugate(f_mu)a_mu. Let z_p=sum_mu v_pmu f_mu. Then
+  sum_p |z_p|^2=w/2.                                      (2)
+This follows from (1), including when f is a complex linear combination in a degenerate frequency space.
+
+2. Denominators, total momentum and conjugation
+
+The reused independent result has the exact interface
+  omega(p)+omega(q)-omega(p+q)
+    >= omega(p)omega(q)[omega(p)+omega(q)]/(8d)
+for all torus momenta, with equality only when at least one frequency is zero. It applies to wrapped momenta without choosing a small-momentum branch.
+
+For n>=3 nonzero momenta, order their frequencies as alpha>=beta>=gamma>=... . Pair the two largest and use ordinary subadditivity for the remaining momenta. If Delta_n=sum_j omega(q_j)-omega(sum_j q_j), this gives
+  Delta_n >= alpha beta(alpha+beta)/(8d)>0,
+  product_j omega(q_j)/Delta_n
+    <= 8d gamma/(alpha+beta) product_(j>=4) omega(q_j)
+    <= 4d (2sqrt(d))^(n-3).                               (3)
+The reference uses d=3, so the last bound is 12 Omega_max^(n-3).
+
+At fixed L the number of positive oscillators is finite and their minimum frequency is positive. There are finitely many occupation states below any fixed energy. The odd total-momentum-k sector, after deleting the entire two-dimensional one-particle space, has n>=3. Equation (3) excludes an eigenvalue at or below w in this sector. High occupation energies tend to infinity, so the restricted inverse (H0-w)^(-1) is bounded and positive at each fixed L. This argument does not produce a volume-uniform operator norm for that inverse. The bounds below control specific vectors instead.
+
+Translation invariance puts v0 and v_g at total momentum zero. Creating the external photon sends their spectator vectors to momentum k. The connected vectors are also at momentum k. Thus every occurrence of the minus resolvent acts on the permitted odd, momentum-k subspace. The plus inverse has no threshold problem and is positive on the relevant sectors.
+
+Let J be coefficient conjugation in the real occupation basis. It is antiunitary, commutes with H0, fixes v0 and v_g, and sends external momentum k to -k. It conjugates the polarization coordinates as well. The exchange calculation initially produces a vector at -k. Its plus-resolvent quadratic form equals the plus-resolvent quadratic form of the connected vector at k by J-invariance and the reality of a self-adjoint quadratic form. One must not identify those vectors without J or silently use the minus denominator at -k.
+
+At a self-inverse zone-boundary momentum, J remains an antiunitary operation within the two-dimensional polarization space. The Fourier basis still contains exactly two modes there. No doubling or halving is introduced. A change of polarization frame at k is unitary, so the resulting two-by-two forms transform by unitary conjugation.
+
+3. Full order-g^4 coefficient: direct terms and spectator cancellation
+
+The elementary vacuum generating function exp(tB)=exp(c t^2/2):exp(tB): yields
+  B^4=:B^4:+6c:B^2:+3c^2,
+  B^6=:B^6:+15c:B^4:+45c^2:B^2:+15c^3.
+Between one-particle states only the degree-two normal-ordered term and the scalar can contribute. Using (2),
+  P1(V4-<V4>_0)P1=-(c/4)H0,
+  P1(V6-<V6>_0)P1=(c^2/16)H0.                            (4)
+Here V4=-sum_p B_p^4/24, V6=sum_p B_p^6/720, and c=c_L.
+
+Put b_p^dagger=sum_mu v_pmu a_mu^dagger and use normalized f. Directly applying the normal-ordered polynomials to vacuum gives
+  v0=-(c/4)sum_p (b_p^dagger)^2 Omega
+       -(1/24)sum_p (b_p^dagger)^4 Omega,
+  C_f=-(1/6)sum_p z_p (b_p^dagger)^3 Omega,
+  s_f=a_f^dagger v0,
+  Q V4 f=s_f+C_f.                                        (5)
+For example [V4,a_f^dagger]=-(1/6)sum_p z_p B_p^3; the one-particle component of this commutator is -(c/4)w f and is deleted by Q. The four-creation part of v0 creates the entire spectator five-particle sector in s_f. It has not been omitted.
+
+Since [H0,a_f^dagger]=w a_f^dagger,
+  (H0-w)^(-1) a_f^dagger v0=a_f^dagger H0^(-1)v0.
+The spectral shift and the CCR then give
+  <s_f,R_k s_f>-<v0,H0^(-1)v0>
+    =<a_f v0,(H0+w)^(-1)a_f v0>.                         (6)
+Indeed a_f a_f^dagger=1+a_f^dagger a_f and
+  a_f H0^(-1)=(H0+w)^(-1)a_f
+on the excited sectors in question. This cancels the extensive vacuum term algebraically before taking any estimate.
+
+Annihilating one photon in v0 gives
+  a_f v0=-(c w/4)Jf+J C_f.                               (7)
+The first summand is one-particle and the second is three-particle. They are orthogonal, including for complex f. On the first summand the plus denominator is 2w. Applying the conjugation argument of section 2 to the second therefore yields
+  <s_f,R_k s_f>-<v0,H0^(-1)v0>
+    =c^2 w/32+K_+(f),
+  K_+(f)=<C_f,(H0+w)^(-1)C_f>.                           (8)
+The finite term c^2w/32 and K_+ are the Bose-exchange remainder; they must not be removed along with the extensive vacuum term.
+
+The interference can be calculated independently of (8). Only the two-particle component of H0^(-1)v0 can pair with a_f C_f:
+  (H0^(-1)v0)_2=-(c/16)sum_mu (a_mu^dagger)^2 Omega,
+  a_f C_f=-(1/2)sum_p |z_p|^2 (b_p^dagger)^2 Omega.
+The elementary normalized-oscillator contraction is
+  <Omega,(sum_mu a_mu^2)(b_p^dagger)^2 Omega>=2c.
+It follows that
+  <s_f,R_k C_f>=c^2 w/32.                                (9)
+There are two interference copies in <s_f+C_f,R_k(s_f+C_f)>.
+
+Substituting (4), (8), (9) and
+  K_-(f)=<C_f,(H0-w)^(-1)C_f>
+into the specified vacuum-subtracted perturbation formula gives
+  <f,D4(k)f>
+    =c^2w/16-[c^2w/32+K_+(f)+2c^2w/32+K_-(f)]
+    =-c^2w/32-K_-(f)-K_+(f).                             (10)
+Because this holds for every complex f in the external two-dimensional space, polarization gives the complete Hermitian matrix identity T1. It is not merely an identity on a chosen pair of real diagonal elements.
+
+This is the full coefficient for the specified finite Gaussian Rayleigh-Schrodinger formula: the degenerate first-order compression is scalar, and Q removes the whole one-particle eigenspace in the invariant momentum/parity sector. It does not establish an analytic eigenbranch for the compact Hamiltonian or an error bound for truncating an interacting expansion.
+
+4. Bose multiplicities, Fourier convention and T2
+
+In a Fourier basis, B_p=sum_alpha[v_palpha a_alpha+conjugate(v_palpha)a_alpha^dagger]. For an external f at k, z_(x,o)=exp(ik.x)b_(o,f)/sqrt(2Nw). Thus the n-creation tensor is
+  T_(alpha_1,...,alpha_n;f)
+     =sum_p z_p product_j conjugate(v_(p,alpha_j)),
+and it vanishes unless sum_j q_j=k modulo reciprocal lattice periods. The minus denominator is sum_j omega(q_j)-w. The plus denominator, after the real-conjugation exchange identification, is sum_j omega(q_j)+w on this same tensor.
+
+A symmetric ordered creation tensor t has squared norm
+  ||sum_(ordered alpha) t_alpha a_alpha1^dagger...a_alphan^dagger Omega||^2
+       =n! sum_(ordered alpha) |t_alpha|^2.                (11)
+This follows by commuting the n annihilators across the creators and summing all n! pairings. Repeated modes do not require an additional correction. For example, a tuple with three identical modes gives norm 3!|t|^2; a multiset with two equal modes has three ordered copies and norm 3^2*2!|t|^2=3!*3|t|^2. These checks distinguish ordered-tensor notation from a sum over occupation multisets.
+
+For the quartic connected coefficient -1/6, equation (11) gives
+  K_+/-(f)=(1/6)sum_(ordered matched triples)
+           |T|^2/[sum_j omega(q_j) +/- w].               (12)
+For arbitrary n, the curl identity ||b_(.,f)||_2=w and ||b_(.,alpha)||_2=omega(q) gives, by the elementary finite-dimensional Holder bound and the lattice Fourier sum,
+  |T_n|^2 <= N^(1-n) w product_j omega(q_j)/2^(n+1).       (13)
+There are at most N^(n-1) ordered momentum choices and 2^n polarization choices. This deliberately overcounts choices involving a forbidden zero mode; it does not omit any legal tuple. It also applies at self-inverse momenta.
+
+For n=3, (3), (12), (13) give
+  K_- <= (1/6)*(w/(16N^2))*(8N^2)*12 = w.
+For the plus denominator, AM-GM and omega_j<=Omega_max imply
+  product_j omega_j/(sum_j omega_j+w)
+     <= product_j omega_j/(sum_j omega_j)
+     <= Omega_max^(n-1)/n.
+At n=3 this is 4, hence K_+<=w/3. Both K forms are positive. Therefore
+  -[1/48+1+1/3]w I <= D4 <= -[1/96]w I,
+which is exactly T2. These are analytic uniform bounds, independent of the numerical boxes checked below.
+
+5. Full cosine: domains and the exact cancellation identity
+
+Fix a finite L and g>0. With y=g^2c, r=exp(-y/2), t=(r-1)/2, vacuum normal ordering of the EXACT cosine gives the coefficients
+  W_g-<W_g>_0 = t sum_p :B_p^2:
+           +sum_(even m>=4) A_m sum_p :B_p^m:,
+  A_m=r(-1)^(m/2+1)g^(m-2)/m!.
+No truncation in m is used here. On vacuum,
+  ||(b_p^dagger)^m Omega||=sqrt(m! c^m).
+Thus the norm-series majorant is a constant times (g sqrt(c))^m/sqrt(m!), which converges for every finite g, even after any fixed polynomial number/energy weight. There are finitely many p at fixed L. The same holds for the one-photon and connected vectors and their creation/annihilation images. These estimates justify the normal-order identities, resolvent forms and limits on these vectors; they do not assert a globally convergent operator Taylor expansion of W_g on arbitrary Fock vectors.
+
+The exact compression is P1(W_g-<W_g>_0)P1=tH0. Write
+  v_g=t sum_p (b_p^dagger)^2 Omega
+         +sum_(even m>=4) A_m sum_p (b_p^dagger)^m Omega,
+  C_(g,f)=sum_(odd n>=3) a_n sum_p z_p (b_p^dagger)^n Omega,
+  a_n=r(-1)^((n-1)/2)g^(n-1)/n!.
+The exponent differs from the report's version by two, so the signs coincide. The identities
+  QW_g f=a_f^dagger v_g+C_(g,f),
+  a_f v_g=t w Jf+J C_(g,f)
+then follow either from the convergent series or from
+  [W_g,a_f^dagger]=sum_p z_p[sin(gB_p)/g-B_p].
+Repeating the exact spectator cancellation yields
+  S_g(f)=t^2w/2+K_(g,-)(f)+K_(g,+)(f)+2 Re X_g(f),
+  X_g(f)=<H0^(-1)v_g,a_f C_(g,f)>.                        (14)
+This is an exact identity for the two-insertion reference functional, including all spectator terms.
+
+6. Interference sign and normalization
+
+Define the real covariance
+  G_tau(p,q)=sum_mu v_pmu v_qmu exp(-tau w_mu).
+Then |G_tau|<=c. Applying (1) before integrating proves the useful exact identity
+  sum_p integral_0^infinity G_tau(p,q)^2 d tau
+    =sum_mu v_qmu^2*(w_mu/2)/(2w_mu)=c/4.                (15)
+For even m>=2 let
+  J_m(f)=sum_(p,q)|z_q|^2 integral_0^infinity G_tau(p,q)^m d tau.
+Since G_tau is real and m even,
+  J_2=cw/8,  0<=J_m<=c^(m-1)w/8.                        (16)
+In particular this step would not be justified by treating a generally complex Fourier covariance as though every even power were positive; the real basis is essential to this version of the sign proof.
+
+For m particles the resolvent contraction is m! integral G_tau^m. The degree-m coefficient of a_f C_(g,f) is
+  (m+1)a_(m+1)=r(-1)^(m/2)g^m/m!.
+For m=2, multiplying by t and 2! gives
+  X_2=-t r g^2 J_2=-t r y w/8>=0.
+For each even m>=4, multiplying the last coefficient by A_m and m! gives
+  X_m=-r^2 g^(2m-2)J_m/m!<=0.                            (17)
+The opposite signs are not a discarded correction. Equation (16) supplies an absolutely convergent majorant and gives
+  -r^2 w[cosh(y)-1-y^2/2]/(8y)
+       <= X_high=sum_(even m>=4)X_m <=0.                 (18)
+For complex f all the dependence in J_m is |z_q|^2, so the same sign statements apply to every polarization. At fixed L, the g^4 limit of X_2 is c^2w/32; the higher interference starts at g^6. This independently checks the factor and sign in (9).
+
+7. Entire connected series and the all-g reference bounds
+
+Particle-number sectors are orthogonal. Squaring the n-creation coefficient and applying (11) leaves r^2g^(2n-2)/n! times the ordered tensor sum. Combining (3), (13), and the mode count gives
+  K_(g,-)(f) <= w F_-,
+  F_-=6r^2g^4 sum_(odd n>=3) x^(n-3)/n!
+      =6r^2g^4[sinh(x)-x]/x^3,
+where x=Omega_max g^2. The plus-denominator estimate of section 4 gives
+  K_(g,+)(f) <= w F_+,
+  F_+=(r^2/2)sum_(odd n>=3) x^(n-1)/(n n!).              (19)
+Both bounds are entire series in finite g after filling removable zero values. The powers of N cancel before the n sum. Positivity permits summing the sector bounds; the factorial majorants justify absolute convergence.
+
+Let
+  A0=t^2/2-t r y/4,
+  H=r^2[cosh(y)-1-y^2/2]/(4y).
+Equations (14), (18), (19) give
+  (A0-H)w <= S_g(f) <= (A0+F_-+F_+)w.                   (20)
+This establishes F7 for all finite positive g without a small-g series truncation. At g=0 the limits are zero. Since all previous steps hold for every normalized complex f, these are matrix inequalities.
+
+8. The explicit small-g constants in T3
+
+For 0<g<=1/2, c<=sqrt(2/3) implies 0<y<1/4, and Omega_max=2sqrt(3) implies 0<x<1. From exp(y/2)>=1+y/2,
+  1-r>=yr/2, hence t^2/2>=(r^2 y^2)/32.
+The other contribution -try/4 to A0 is positive. Also
+  cosh(y)-1-y^2/2 <= y^4 cosh(y)/24 <= y^4/12,
+so
+  A0-H >= r^2 y^2(1/32-y/48) >= r^2 y^2/48.
+Using r^2=exp(-y)>=1-y>=3/4 and c^2>=1/3 proves
+  A0-H >= g^4/192.                                      (21)
+These estimates discard some positive terms and are not an optimality claim.
+
+For the upper bound, |t|<=y/4 and r<=1 give
+  A0<=3y^2/32<=g^4/16.
+For n>=3, 6/n!<=1/(n-3)!; also 6/(n n!)<=(1/3)/(n-3)!. Comparing the odd subseries with the full exponential series in (19) therefore gives
+  F_-<=g^4 exp(x)<3g^4,
+  F_+<=(g^4/3)exp(x)<g^4.
+Thus A0+F_-+F_+<65g^4/16<5g^4. Together with (20)-(21), this proves exactly
+  (g^4/192)w I <= S_g(k) <=5g^4 w I.
+No sampled choice of L or g enters this argument. The all-g inequality (20) and the small-g positive lower bound are separate statements.
+
+9. Independent computational checks and their limits
+
+The companion independent checker is
+  /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/PHOTON_INDEPENDENT_CHECK.py.
+It imports no author module and reads no scientific repository input. It was executed using python3 -B. The exact checksum and complete stdout are appended below.
+
+A. Normalized oscillator matrices. A 120-state normalized three-oscillator basis, with total occupation through seven, was used to apply the actual B^4 and B^6 matrices directly. This cutoff includes every intermediate degree needed for the tested coefficient. A six-row equal-variance tight frame made from two differently rotated orthonormal bases replaces the author's rational Hadamard blocks. The coefficient has three distinct eigenvalues, and a complex unitary basis change gives nonzero complex off-diagonal entries. Direct vacuum-subtracted matrix elements agree with (10) within 3.5e-18. Removing one interference copy changes the coefficient by 0.001953125; removing the plus exchange term changes it by at least 0.000557; omitting vacuum subtraction changes it by about 0.003311. These controls show sensitivity to the contested terms. This toy validates oscillator combinatorics, not a physical cubic Hamiltonian.
+
+B. Real-space curl versus polarization-summed Fourier tensors. The checker builds the actual integer link-start curl on L=3 and L=4 tori, diagonalizes C^T C in real modes, and computes the full ordered three-mode tensor there. It independently computes the same two-by-two forms by summing internal polarizations analytically through the three-by-three matrices C(q)C(q)^*/(2omega(q)) and their entrywise products. Five external momenta include a k/-k pair, two self-inverse zone-boundary cases, and a mixed complex case. External polarizations are deliberately complex. The largest discrepancy between the two representations of either K form is below 4.6e-16. Both the 52/126 real mode counts and the field/J normalizations were checked. For these particular L=3,4 tests every three-particle energy exceeds the external energy even before momentum restriction, so the real-mode tensor denominator is safe. This numerical implementation is not used to justify an unrestricted inverse at larger L; the analytic proof uses the specified momentum restriction throughout.
+
+C. Coordinate-space full cosine. Three-dimensional Gauss-Hermite quadrature evaluates the original cosine and sine functions directly against normalized Hermite wavefunctions, without supplying their normal-ordered coefficients to the integration. Full two-insertion forms are compared with (14), and the cross term is compared with the independently computed covariance-integral series. Degree 10 / 32 nodes per coordinate and degree 14 / 44 nodes agree to about 1.4e-17 or better for g=1/8,1/4,1/2. The positive degree-two cross term and the negative eigenvalues of the higher cross term are observed separately. The highest comparison error against the cancellation identity is below 6e-19. This is finite quadrature and Fock projection; stability under those two cutoffs is not a rigorous numerical tail certificate. The infinite-series claim rests on sections 5-8.
+
+The author probe was fully inspected but its PASS counts were not treated as mathematical evidence for an all-L or infinite-series result. I did not rerun it because the decisive comparisons above use separate implementations. These numerical checks are floating diagnostics, not formal proof certification. The analytic derivation is the load-bearing verification.
+
+10. Scope boundary and remaining work
+
+The reference omits harmonic/gradient zero oscillators, fixes a supplied Gaussian carrier, and uses a supplied clock and frequency function. The original compact Gauss-law Hilbert space, holonomies and electric winding have not thereby been replaced or identified. Neither T1 nor T3 gives a physical photon pole, an eigenbranch with a controlled remainder, a dressed interacting resolvent, uniform convergence of repeated insertions, a compact-state comparison, or a volume-uniform spectral statement. No such implication is used in this review.
+
+The exact open step for a compact photon application remains an independently formulated compact-to-reference construction with correct Gauss/winding/holonomy identification and control of the terms beyond two bare insertions near thresholds that can shrink with L. A different variational route may have different obligations. The present result does not show either route exists, is necessary, or is close to completion.
+
+No mathematical source correction is requested for T1-T3 under their stated definitions. Any later removal of the words defining the reference functional, replacement of its bare resolvent, enlargement to zero modes, or claim of a compact spectral consequence would exceed this review and require new evidence.
+
+11. Independent checker identity and complete execution output
+
+Checker SHA256: 09d8a76b2403be513b32735dab6a7bd3fcd508ed6c9ff657e8f786a967844846
+Command: python3 -B /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/PHOTON_INDEPENDENT_CHECK.py
+Exit code: 0
+The following is the complete stdout from that execution, copied from the tool result without another test run:
+
+{"check": "runtime", "python": "3.13.5", "numpy": "2.4.4"}
+{"check": "normalized_ladder_complete_g4", "basis_size": 120, "cutoff": 7, "frequencies": [1.0, 1.0, 1.0], "variance": 0.25, "errors": {"frame_gram": 1.5071884041319523e-17, "constant_variance": 5.551115123125783e-17, "connected_decomposition": 2.7755575615628914e-17, "direct_sextic": 1.734723475976807e-18, "exchange": 8.673617379884035e-19, "interference": 8.673617379884035e-19, "whole_g4": 3.469446951953614e-18}, "complex_basis_max_offdiagonal": 0.00010576729650771009, "coefficient_eigenvalues": [-0.0036394127188498775, -0.0034664416023100775, -0.0033254991683258745], "omitted_term_discrepancies": {"omit_one_interference_copy": 0.0019531250000000013, "omit_plus_exchange": 0.000557059610833719, "omit_vacuum_subtraction": 0.0033106857074571526}}
+{"check": "real_curl_vs_fourier_projector", "L": 3, "k": [1, 1, 0], "real_modes": 52, "c": 0.7874837254174246, "self_inverse": false, "errors": {"complex_fourier_field": 3.350340325185335e-16, "one_photon_norm": 2.220446049250313e-16, "one_photon_energy": 4.965068306494546e-16, "real_conjugation": 0.0, "real_vs_projector_minus": 2.6367828108421924e-16, "real_vs_projector_plus": 1.318390217505538e-16}, "Kminus_over_omega": [0.008221989463683979, 0.008230785672456428], "Kplus_over_omega": [0.004137616360758489, 0.0041638508751531125], "D4_over_omega": [-0.03177371835377535, -0.031738687630608275]}
+{"check": "real_curl_vs_fourier_projector", "L": 3, "k": [2, 2, 0], "real_modes": 52, "c": 0.7874837254174246, "self_inverse": false, "errors": {"complex_fourier_field": 3.7238012298709097e-16, "one_photon_norm": 2.220446049250313e-16, "one_photon_energy": 6.473657049138937e-16, "real_conjugation": 0.0, "real_vs_projector_minus": 2.4633161285154497e-16, "real_vs_projector_plus": 1.3183950395325177e-16}, "Kminus_over_omega": [0.008221989463683977, 0.008230785672456428], "Kplus_over_omega": [0.004137616360758489, 0.004163850875153111], "D4_over_omega": [-0.03177371835377535, -0.03173868763060827]}
+{"check": "real_curl_vs_fourier_projector", "L": 4, "k": [2, 0, 0], "real_modes": 126, "c": 0.7934335972773076, "self_inverse": true, "errors": {"complex_fourier_field": 2.669617925351802e-16, "one_photon_norm": 4.440892098500626e-16, "one_photon_energy": 4.460365043975677e-16, "real_conjugation": 0.0, "real_vs_projector_minus": 2.185751579951344e-16, "real_vs_projector_plus": 1.092875789886741e-16}, "Kminus_over_omega": [0.007709605415074099, 0.007709605415074102], "Kplus_over_omega": [0.004399673254270922, 0.0043996732542709235], "D4_over_omega": [-0.03178230595960779, -0.03178230595960779]}
+{"check": "real_curl_vs_fourier_projector", "L": 4, "k": [2, 1, 0], "real_modes": 126, "c": 0.7934335972773076, "self_inverse": false, "errors": {"complex_fourier_field": 3.0836816910718464e-16, "one_photon_norm": 4.440892098500626e-16, "one_photon_energy": 4.965068306494546e-16, "real_conjugation": 0.0, "real_vs_projector_minus": 9.36750677209789e-17, "real_vs_projector_plus": 6.493987750527398e-17}, "Kminus_over_omega": [0.008501023490546825, 0.008568207918054056], "Kplus_over_omega": [0.004240248504829506, 0.004293314764080903], "D4_over_omega": [-0.03253454997239773, -0.0324142992856391]}
+{"check": "real_curl_vs_fourier_projector", "L": 4, "k": [2, 2, 2], "real_modes": 126, "c": 0.7934335972773076, "self_inverse": true, "errors": {"complex_fourier_field": 5.055521147046452e-16, "one_photon_norm": 2.9122199613187926e-15, "one_photon_energy": 3.1401849173675503e-16, "real_conjugation": 0.0, "real_vs_projector_minus": 4.579684686989488e-16, "real_vs_projector_plus": 6.571608085758856e-17}, "Kminus_over_omega": [0.011100073179453525, 0.011100073179453614], "Kplus_over_omega": [0.004033454513577125, 0.004033454513577157], "D4_over_omega": [-0.034806554983293554, -0.03480655498329343]}
+{"check": "full_cosine_coordinate_quadrature", "g": 0.125, "cutoff": 14, "hermite_nodes_per_coordinate": 44, "S_eigenvalues": [1.7603111626529082e-06, 1.7945765458003518e-06, 1.836617307991672e-06], "direct_vs_cancellation_error": 5.336307567702092e-20, "cross_vs_covariance_error": 5.823351512373315e-22, "high_cross_eigenvalues": [-1.3091630568113022e-10, -1.1821607785160427e-10, -1.1279936905088968e-10], "positive_degree_two_cross": 4.754422942768513e-07, "rigorous_scalar_high_cross_magnitude_bound": 3.092307212804791e-10, "low_degree_low_nodes_comparison": [1.760311162652989e-06, 1.7945765458004513e-06, 1.836617307991764e-06], "stability_error": 9.952637130238029e-20, "scope": "finite Gaussian quadrature and Fock projection, not a rigorous numerical tail or compact-spectrum certificate"}
+{"check": "full_cosine_coordinate_quadrature", "g": 0.25, "cutoff": 14, "hermite_nodes_per_coordinate": 44, "S_eigenvalues": [2.7914546551052206e-05, 2.8455922202672846e-05, 2.9119609972146096e-05], "direct_vs_cancellation_error": 1.3552527156068805e-20, "cross_vs_covariance_error": 9.232659125071874e-20, "high_cross_eigenvalues": [-8.281068028619817e-09, -7.477717191566517e-09, -7.135084871878812e-09], "positive_degree_two_cross": 7.540528569174908e-06, "rigorous_scalar_high_cross_magnitude_bound": 1.9560345985350055e-08, "low_degree_low_nodes_comparison": [2.7914546551052027e-05, 2.8455922202672704e-05, 2.9119609972145998e-05], "stability_error": 1.7957098481791167e-19, "scope": "finite Gaussian quadrature and Fock projection, not a rigorous numerical tail or compact-spectrum certificate"}
+{"check": "full_cosine_coordinate_quadrature", "g": 0.5, "cutoff": 14, "hermite_nodes_per_coordinate": 44, "S_eigenvalues": [0.0004310034512243654, 0.0004392398746158069, 0.0004493048626552661], "direct_vs_cancellation_error": 5.963111948670274e-19, "cross_vs_covariance_error": 4.607859233063394e-19, "high_cross_eigenvalues": [-5.057561571153914e-07, -4.5669044333439004e-07, -4.357644162970399e-07], "positive_degree_two_cross": 0.00011648504555807929, "rigorous_scalar_high_cross_magnitude_bound": 1.194681028690836e-06, "low_degree_low_nodes_comparison": [0.0004310034512243546, 0.00043923987461579576, 0.00044930486265525266], "stability_error": 1.3444106938820255e-17, "scope": "finite Gaussian quadrature and Fock projection, not a rigorous numerical tail or compact-spectrum certificate"}
+{"check": "completed", "elapsed_seconds": 0.4048934169113636, "scope": "independent finite checks only; uniform and infinite-series claims rely on the written derivation"}
+
+12. Packaged-source follow-up and one actionable finding
+
+During this review the coordinator supplied a newly packaged source and runner. I read the complete packaged note and the complete runner delta against the already-read author probe.
+
+Packaged note:
+  /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/photon_worktree/docs/PHOTON_VACUUM_SUBTRACTION_AND_COSINE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-10-09.md
+  SHA256 5052bef82f4b00f5ebc41e0a09043482c3d40468a272f480dcaa51274126efc0
+Packaged runner:
+  /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/photon_worktree/scripts/photon_vacuum_subtraction_and_cosine_reference_2026_10_09.py
+  SHA256 ca91fbc601fa2f66e569ddf35a385db25f095ceb4572df4ba42729b1087aa7ee
+
+The mathematical proof body preserves the reviewed arguments and the target defines W_g explicitly. The new runner's Fourier Gram/covariance checks and ordered-to-occupation factorial contraction are appropriate additional controls. In particular, collecting each unordered occupation amplitude as minus the sum of ordered tensors divided by 6, then weighting by the product of occupation factorials, checks the ordered 1/6 norm coefficient through a separate contraction. It will detect changing only that Fourier coefficient while leaving the occupation construction fixed. I have not executed or independently repeated the coordinator's mutation experiment, and this static confirmation is not a claim that every possible coordinated error is detected.
+
+Actionable packaging finding [P2]: restore the explicit dispersion and c_L definitions from section 1 of the frozen report. The packaged note uses omega(k) and c_L in its target and body but omits the two displayed definitions
+  omega(k)=(sum_i |exp(i k_i)-1|^2)^(1/2),
+  c_L=(1/(3L^3))sum_(k!=0)omega(k).
+They were outside the copied sections 2-9. The later mode/Gram statements implicitly constrain these symbols, but the theorem's normalization and its primary function should not require reconstructing definitions from identities asserted about them. Add the definitions near the target or at the start of 'Complete reference and domain definitions', with the stated nonzero grid and torus convention. This is a narrow source-completeness correction, not a counterexample or change to T1-T3. The frozen report itself contains both definitions and its mathematical dispositions above remain confirmed.
+
+Final verification and recovery checkpoint
+Both original frozen-file hashes remained unchanged, and the frozen worktree HEAD was verified as 17a95e60d85afc246fc7c163adef8869ab3f4194. The independent checker hash is recorded above. The three theorems are mathematically confirmed at the original frozen report's exact interface. The packaged note needs the definition restoration just described; that correction and any changed source bytes need affected-source confirmation before claiming final packaged-source coverage. No source edit, commit, PR, audit verdict, external message, network access, or installation was performed. Only this report and PHOTON_INDEPENDENT_CHECK.py were written.
+
+13. Affected-source confirmation, 2026-10-09
+
+Final packaged note:
+  /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/photon_worktree/docs/PHOTON_VACUUM_SUBTRACTION_AND_COSINE_REFERENCE_BOUNDED_THEOREM_NOTE_2026-10-09.md
+  SHA256 44c083d40145368b8dd39a5a26a5ba0d61d689405c888b272d4bdb5d01dd78e3
+The hash was verified before inspecting affected text and again immediately before appending this confirmation. The packaged runner remains at the previously inspected hash ca91fbc601fa2f66e569ddf35a385db25f095ceb4572df4ba42729b1087aa7ee.
+
+The definition-restoration finding in section 12 is REPAIRED. Lines 24-28 now state the momentum grid, modulo-2pi sum convention, omega(k)=(sum_i |exp(i k_i)-1|^2)^(1/2), and c_L=(1/(3L^3))sum_(k!=0)omega(k), with the nonzero-grid exclusion explicit. These are exactly the function and normalization used in the checked proofs.
+
+I inspected the added Type metadata, restored definitions and target context, the translation/parity explanation at lines 135-138, and the changed reproduction/review record at lines 548-561. The translation and field-parity explanation agrees with section 2 of this review and fixes the correct momentum/parity sectors without enlarging a resolvent domain. The metadata remains bounded_theorem with an explicitly conditional-support reference-model boundary; it does not declare an applied audit result.
+
+A deterministic comparison of nonblank proof lines against the reviewed frozen report sections 2-9 found only the added four-line translation/parity explanation and the previously understood W_g cross-reference relocation. All proof formulas and other proof text were preserved after ignoring Markdown fences, heading numbering, blank lines and indentation. No unchanged analytic derivation or numerical check was repeated.
+
+The new review record accurately describes the independent methods and the corrected packaging omission. The stated runner baseline count and mutation outcomes are coordinator-reported results; I did not independently re-execute those experiments in this affected-source confirmation. Their inclusion does not enlarge T1-T3 or turn finite diagnostics into proof.
+
+Final disposition: the packaged claim at the exact hash above remains within the already checked T1-T3 scope, and the sole source-completeness finding is closed. No new mathematical issue was found in the affected text. This confirmation does not extend coverage to a compact spectral claim, higher-interaction remainder or dressed resolvent. The only write in this follow-up was this report update.

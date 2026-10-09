@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/proper_cubic_two_qubit_bond_invariants_2026_10_09.py
+runner_sha256: ba0e3902da32b703d358649622425d65e6a896d47da81b735010c62b95fb050a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+PASS group equals det+1 signed permutations
+PASS group order is 24
+PASS one-site fixed Bloch space is 0
+PASS full invariant dimension is 2
+PASS full basis is span of I and sigma dot sigma
+PASS I and sigma dot sigma are invariant
+PASS c12 is not a full invariant
+PASS directed stabilizer order is 4
+PASS directed invariant dimension is 6
+PASS directed basis matches the six listed matrices
+PASS c01 is not directed-invariant
+PASS undirected stabilizer order is 8
+PASS Rz and the x half turn generate the undirected stabilizer
+PASS undirected invariant dimension is 3
+PASS undirected basis is span of I, XX+YY and ZZ
+PASS ZZ survives in the undirected nullspace
+PASS the twist survives in the directed nullspace and dies undirected
+PASS w=1 is not positive
+PASS w=1/3 is positive
+PASS w=-1 is positive
+PASS singlet eigenvalue at w=-1 is 3
+PASS triplet eigenvalue at w=1/3 vanishes
+PASS w=-1/2 has CHSH square 2
+PASS w=-1/2 does not violate
+PASS w squared 1/2 gives CHSH square 4
+PASS singlet CHSH square is 8
+PASS (1,-1) is positive
+PASS (-1,-1) is positive
+PASS |u|=2 has an empty positive interval
+PASS corner (-1,-1) achieves CHSH square 8
+PASS corner (1,-1) achieves CHSH square 8
+TOTAL: PASS=31 FAIL=0
+
+----- stderr -----
+

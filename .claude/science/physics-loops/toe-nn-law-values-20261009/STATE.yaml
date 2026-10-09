@@ -1,0 +1,37 @@
+goal: Isolate the coefficient freedom left by proper-cubic covariance in a two-qubit pair law, without selecting the singlet.
+delivery_mode: milestone
+runtime: 24h
+started_at: 2026-10-09T12:02:06Z
+stop_at: 2026-10-10T12:02:06Z
+base_commit: 17a95e60d85afc246fc7c163adef8869ab3f4194
+branch: physics-loop/toe-nn-law-values-20261009
+worktree: /Users/jonreilly/.grok/campaigns/toe-24h-20261009/wt
+cycle: 1
+active_route: proper-cubic two-qubit bond invariants
+approach_family: simultaneous Bloch covariance of one pair
+hard_residual: dynamics clause is supplied, not derived
+strongest_unresolved_obligation: whether a nearest-neighbor distribution that is not a two-qubit density can reach CHSH square 8
+files_touched:
+  - docs/PROPER_CUBIC_TWO_QUBIT_BOND_INVARIANTS_BOUNDED_THEOREM_NOTE_2026-10-09.md
+  - scripts/proper_cubic_two_qubit_bond_invariants_2026_10_09.py
+  - logs/runner-cache/proper_cubic_two_qubit_bond_invariants_2026_10_09.txt
+runner_result: "TOTAL: PASS=31 FAIL=0"
+open_imports:
+  - two-qubit density representation of one pair
+  - formation site, probability, and rate
+no_go_routes_pruned:
+  - full proper-cubic invariance forces the singlet
+trace_class: negative_route_pruning
+pr_status: not opened
+next_exact_action: Finish the citation manifest if the build succeeded, commit the source triple plus loop pack, push this branch, and open one milestone PR. Then search origin/main for an exact CHSH evaluation of the product-class menu laws before computing one.
+stop_condition: stop_at, or disk avail below 8Gi, or no non-overlapping route remains
+do_not_touch:
+  - physics-loop/photon-vacuum-shift-20261009
+  - physics-loop/toe-dynamics-bridge-20261009
+  - /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009
+resource_caps:
+  ram_gb: 8
+  one_worktree: true
+  no_extra_clones: true
+  python_rss_kill_kb: 1500000
+lock: branch-local until acquired in this worktree

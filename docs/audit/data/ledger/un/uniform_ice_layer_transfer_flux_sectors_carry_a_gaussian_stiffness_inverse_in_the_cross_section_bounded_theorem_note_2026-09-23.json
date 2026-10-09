@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.5,
+  "load_bearing_score": 4.587,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/uniform_ice_layer_transfer_flux_sectors_carry_a_gaussian_stiffness_inverse_in_the_cross_section_2026_09_23.py",
   "title": "Finite flux-sector free energies on three thin cross-sections",
-  "transitive_descendants": 15,
+  "transitive_descendants": 16,
   "verdict_rationale": null
 }

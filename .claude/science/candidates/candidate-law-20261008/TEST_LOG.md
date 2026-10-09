@@ -157,3 +157,32 @@ Bravyi–Kitaev superfast needs a fixed tournament, so it fails. Verstraete–Ci
 - K2(E,P) goes from 0.05 to 0.04.
 
 **Follow-up G0b (launched).** The non-scalar candidates are retested inside local covariant constraint sectors: a Gauss law at corners and the KS π-flux. The question is whether the Chen–Kapustin / Z₂-gauge route gives fermions with one qubit per site.
+
+## G0b: fermions inside a constrained sector? (2026-10-08)
+
+**Verdict: FAIL** for G0's architecture, extended:
+- corner occupation qubits, with edge link qubits;
+- one occupation-transfer monomial per direction;
+- sign-type product dressings, Pauli/Z₄, plus a Z₈ census.
+
+The worker is Sonnet 5.5. The referee (codex sol) is running.
+
+**What the worker found (CHECKED unless marked).**
+- **The holonomy on the occupation domain is c × a Pauli string.**
+  - Corner junctions are +1 as an operator identity, or zero, in every candidate. No sector can make them −1.
+  - T-junctions are +1, zero, or ±Z_{l_a}Z_{l_{−a}}: the parity of the two collinear edges at the corner. The last case is exactly G0's non-scalar set.
+- **The constraint family (194 templates).** It covered vertex Gauss laws, polarizations and coarse-square fluxes.
+  - Only G_v = (−1)^{n_v}∏₆Z commutes with the hops, for 512 tables. In that sector the T-junctions stay non-scalar.
+  - No flux generator commutes with any non-scalar candidate.
+- **Every Pauli stabilizer sector, searched exhaustively.** No scalar −1 is feasible: 0 of 3072 × 12 × 16.
+- **Non-Pauli sectors (ARGUED, with the loop's existence CHECKED).** A closed two-particle hopping loop flips exactly one collinear edge. So no hop-invariant sector that contains dilute two-particle states can have H = −1.
+- **Z₈ dressings.** The 196,608-candidate census is exhaustive and finds no −1 anywhere.
+
+**Plain reading.** With the occupation on the corner and the links on the edges, the exchange sign is either +1 or tied to the edge parity along a line. Moving particles around a loop can flip that parity, so no local constraint can pin it to −1.
+
+**Not excluded.**
+- **Sums and non-product hops.**
+- **Face/cube-qubit architectures.** An example is Chen–Kapustin exact 3D bosonization, with qubits on faces and fermions as fluxes on cubes. It needs a spin-structure or branching choice, which is likely the same ordering obstruction (READING).
+- **A52's corner records.** Under exact turns, a record at every corner holds the direction ordering in the *state*. This is the one known escape, and it is consistent with G0's obstruction: the ordering cannot be in the law, but it can be in the state.
+
+**Effect on priors.** K2(L,P) goes from 0.04 to 0.03 and K2(E,P) stays at 0.04, because the A52 route works under exact turns.

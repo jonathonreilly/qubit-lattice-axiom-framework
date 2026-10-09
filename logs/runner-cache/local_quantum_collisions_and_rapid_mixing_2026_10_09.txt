@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/local_quantum_collisions_and_rapid_mixing_2026_10_09.py
+runner_sha256: 1cd57938685e59608cfafcac1cfdecde5f28a9596c0b738ee971db1918368afb
+input_fingerprint_sha256: 4f33d42196ca68b75f8f5a01d5c685bcfa17cf4abf2c3b4722d03b921023882c
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.13
+status: ok
+----- stdout -----
+D3Q27: velocities=27 pair_complexes=378 reactions=288 four_distinct_species=True
+proper_cubic_collision_orbits=19 orbit_sizes=[3, 3, 6, 6, 6, 12, 12, 12, 12, 12, 12, 24, 24, 24, 24, 24, 24, 24, 24]
+PASS network_and_cubic_orbits
+exact_fiber_averages: N=2..6 fibers=240 assignments=5712; rates_and_factorials=True
+PASS exact_fiber_averages_and_stationary_weights
+local_6x6_unitary_and_all_9_matrix_units: max_residual=0
+PASS local_unitary_and_coherence_matrix_units
+rapid_local_mixing: N=4 path, 36_microstates, t=1, initial=(0,0,1,1)
+target_occupation_probabilities=0.424983107302,0.517913226568,0.057103666130
+  epsilon=1/1   TV_error=0.121481489 series_terms=30
+  epsilon=1/4   TV_error=0.0400839585 series_terms=52
+  epsilon=1/16  TV_error=0.00991848163 series_terms=115
+  epsilon=1/64  TV_error=0.00246091328 series_terms=314
+  epsilon=1/128 TV_error=0.00122872639 series_terms=551
+finite_mixing_example: same_counts=(2,2,0,0) clustered_and_alternating_rates=[0.5, 1.5] target_rate=1
+PASS finite_mixing_and_averaging_example
+per_element: all 288 D3Q27 reversible reaction supports and 24 proper-cubic rotations are enumerated
+per_site: an actual system-plus-qubit unitary and every system matrix unit test local population closure
+per_mode: all four-label occupation fibers on paths N=2 through N=6 and an N=4 square use exact rational rates
+per_block: a 36-state local population chain tests finite mixing, exact macro rates and rapid-mixing convergence
+lattice_wide: checked and not executed — no infinite lattice, native M2 realization, streaming or uniform-N limit is simulated
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

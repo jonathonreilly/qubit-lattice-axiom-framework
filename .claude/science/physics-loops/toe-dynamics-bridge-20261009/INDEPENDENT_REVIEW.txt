@@ -1,0 +1,447 @@
+TRANSPORT INDEPENDENT MATHEMATICAL REVIEW — frozen checkpoint, 2026-10-09
+
+DISPOSITION
+No material mathematical defect was found in the two stated bounded theorems
+at the exact source identities below. Their hypotheses, error comparisons,
+rate normalizations and physical suppliers are explicit. This is a focused
+independent mathematical review, not a retained-status audit or a general
+validation of the research program. No repository source was edited.
+
+The two units do not yet compose into a spatial microscopic-to-fluid theorem.
+The microscopic construction gives a well-mixed occupation process. The
+kinetic construction supplies continuum velocity-dependent streaming and
+proves linear hydrodynamic estimates for that supplied equation. Neither note
+claims the missing spatial interface. This limitation is not a defect in the
+bounded statements actually reviewed.
+
+1. SOURCE IDENTITY AND COVERAGE
+
+Worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree
+HEAD: 17a95e60d85afc246fc7c163adef8869ab3f4194
+The two new notes and runners are working-tree sources at this base. Hashes,
+not HEAD alone, identify the reviewed content. All hashes are SHA-256.
+
+Kinetic note (816 lines):
+docs/D3Q27_DISSIPATIVE_HYDRODYNAMIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-10-09.md
+038e1ed6942d79720aa1dd7360d90f9fa1067016940ceb3554efeb99c21ed0c1
+
+Microscopic note (380 lines):
+docs/LOCAL_QUANTUM_COLLISIONS_AND_RAPID_MIXING_BOUNDED_THEOREM_NOTE_2026-10-09.md
+b607e16371688f2d8d71268bd13d642f2ed8ed4f5e02332cd1eb3147b8d40c2a
+
+Kinetic runner (479 lines):
+scripts/d3q27_dissipative_hydrodynamic_approximation_2026_10_09.py
+a02ce74dc191cd926fd85525eb863a9e1e3d0eda031e8baa5d21ed5a76142861
+
+Microscopic runner (225 lines):
+scripts/local_quantum_collisions_and_rapid_mixing_2026_10_09.py
+1cd57938685e59608cfafcac1cfdecde5f28a9596c0b738ee971db1918368afb
+
+Necessary finite-velocity/count-process parent (462 lines):
+docs/SUPPLIED_FINITE_VELOCITY_COLLISIONS_AND_GIBBS_EQUILIBRATION_BOUNDED_THEOREM_NOTE_2026-10-08.md
+888ede1aba130d9bf4df5ffecfbadf9c4e45dd94a49ca3a350894a052e0677c0
+
+Premise baseline (reused prior complete reads after unchanged-hash check):
+docs/MINIMAL_AXIOMS_2026-06-29.md
+93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753
+docs/audit/data/axiom_premise_nodes.json
+615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37
+
+Both new notes and both runners were read completely. After the packaging
+refresh both final notes were reread completely. The final kinetic-runner
+instrumentation change was inspected against the already-read body and
+executed, including the mutation below. The parent note was read completely;
+its necessary network, finite count law and finite-time large-count argument
+were inspected. No fresh verification of the unrelated external family149
+persistence proof is claimed or needed for these new results.
+
+The initial requested note hashes were 9e28223a... and 541b55e2.... Packaging
+then changed them to the final hashes above. A kinetic-runner intermediate
+snapshot was efef0108.... Only the final a02ce74d... runner is the reproduced
+and mutation-tested runner in this report. No coverage of later edits is
+implied. The current 'proposed_retained' field is explicitly accompanied by
+conditional-support and a statement that an independent retained-status
+audit has not occurred; this review does not change that status.
+
+2. COLLISION ALGEBRA AND TRANSPORT COEFFICIENTS
+
+Reviewed kinetic sections 1–4 (lines 51–448), the relevant parent construction,
+and the complete runner certificate implementations.
+
+The complete D3Q27 model has V={-1,0,1}^3, e=|v|^2, 378 unordered input-pair
+complexes and 288 nontrivial reversible exchanges. Momentum plus energy
+conservation forces each nontrivial exchange to use four distinct velocities:
+a repeated input would force its output to coincide, by strict convexity;
+a common input/output velocity makes the other pair member coincide.
+Coordinate rectangles make collision invariants separable coordinate
+quadratics. Axis-pair exchanges equate the three quadratic coefficients.
+Thus precisely span{1,v1,v2,v3,e} survives, independently of positive rates.
+
+For theta in (0,1), M is the product of weights theta/2 for each nonzero
+coordinate and 1-theta for zero. It is proportional to a^e and hence balances
+every reaction. With W=diag(M), C=sum_r kappa_r M_i M_j nu_r nu_r^T and
+B=W^(-1)C, the collision operator is nonnegative and self-adjoint in the
+M-weighted inner product. Its kernel is the five-dimensional invariant
+space K. The weighted orthogonal projection P and inverse R on K-perp obey
+BR=RB=I-P and RP=PR=0. Positivity of every rate is used here. Comparison
+of quadratic forms gives b=||R|| <= tr(R_unit)/min(kappa) at theta=1/3.
+An independent constrained KKT solve reproduced the exact unit-rate trace
+6224911145567/509693499350, without using the author's (B+P)^(-1)-P routine.
+
+The moment projection identities P(v_a v_b)=delta_ab e/3 and
+P(e v_a)=(1+2 theta)v_a fix the density, momentum and energy normalization.
+The five stress sources and three heat sources form the full constitutive
+response tested here. Arbitrary positive rates may mix these sectors;
+vanishing cross response uses the stated cubic symmetry. Diagonal and
+off-diagonal stress responses are not silently identified.
+
+When the nine axial exchanges have rate alpha and all other rates equal 1,
+the reviewed blocks give
+  mu_D=(4 alpha+31)/(8 alpha^2+133 alpha+170),
+  mu_O=67/1083,   chi=40/441.
+The equality of stress responses is precisely
+  536 alpha^2+4579 alpha-22183=0,
+which has one positive root alpha_*=3.45068979932815.... The runner's alpha=0
+block-coefficient check is an algebraic affine certificate, not an application
+of a positive-rate theorem at zero. Independent full 27-velocity constrained
+solves at alpha=1,7/5,19/7 reproduced all eight responses and the cross zeros.
+
+At theta=1/3 and alpha_*, viscosity is nu=67/361 and the energy-flux
+coefficient is 20/147. The density diffusivity is instead D_rho=4/49.
+Their relation (5/3)D_rho=20/147 is load-bearing for the slow subspace.
+A deliberately confused energy/density coefficient fails the independent
+full-component cancellation. The polynomial quadratic moment witness in
+section 7 has stress j tensor j-|j|^2 I/3 and heat flux -2 rho j/3=(2/5)eta j
+with eta=-5 rho/3. It is finite polynomial algebra, not a nonlinear PDE limit.
+
+3. H4 DIFFUSIVE-TIME THEOREM
+
+Reviewed kinetic lines 449–564, equations (33)–(41), including all-mode
+regularity and the initial comparison. The domain is the supplied periodic
+continuum with velocity set fixed. Initial data have
+  U_0=rho_0(5-3e)/2+3 j_0·v in H_M^4,   div j_0=0.
+They therefore have E=0 and suppress the propagating acoustic part. Means
+need not vanish. Delta belongs to (0,1], and the time interval [0,L] is fixed.
+
+For U solving rho_tau=D_rho Delta rho and j_tau=nu Delta j, define
+  m=-3 D_rho v·grad rho,  w=-RTU+m,  z=-RTw.
+PTU=0. The first cancellation TU+Bw=0 is exact. The next macro cancellation
+U_tau+PTw=0 follows from the moment triples
+  PTRTU = (0, nu Delta j, -(20/147)Delta rho),
+  PTm   = (-D_rho Delta rho, 0, -(5/3)D_rho Delta rho),
+  U_tau = (D_rho Delta rho, nu Delta j, 0).
+Since Bz=-QTw, the full 27-component identity U_tau+Tw+Bz=0 follows.
+Thus H_app=U+delta w+delta^2 z has exactly the residual
+  delta(w_tau+Tz)+delta^2 z_tau.
+There is no omitted higher-order term.
+
+With c=sqrt(3), d=nu, b=||R|| and a=cb+D_rho sqrt(6/5), the four uniform
+bounds are a N1, bca N2, a(d+bc^2)N3 and bca d N4 respectively, exactly as
+in (41). The density factor follows from ||U||_M^2=(5/2)|rho|^2+3|j|^2.
+Duhamel and weighted kinetic contraction add initial and final correctors,
+producing the factors 2 and all constants of (36). H4 gives w in H3, z in
+H2, w_tau in H1 and z_tau in L2. Fourier truncation therefore justifies the
+strong residual and passage to every Fourier mode. The zero mode has no
+corrector or residual and is handled exactly.
+
+The independent off-axis probe uses k=(1,2,-1) and transverse complex
+momentum. Both full-component cancellations have residual below 2.7e-15.
+Its matrix-exponential checks at delta=.3,.1 obey (36). These are additional
+finite diagnostics; the contraction and Sobolev proof, not those samples,
+establishes the continuum all-mode theorem.
+
+4. H5 FINITE ACOUSTIC-TIME THEOREM
+
+Reviewed kinetic lines 566–696, equations (42)–(50). This result allows every
+fixed theta in (0,1) and every fixed positive rate assignment, without cubic
+symmetry. For U_0=PU_0 in H_M^5, the macro equation is
+  U_t+PTU=epsilon PTRTU.
+Its Fourier generator is dissipative in the M inner product, including for
+asymmetric rates. This yields contraction in every Sobolev norm.
+
+Set w=-RTU and z=R^2 TU_t+RQTRTU=-R(w_t+QTw). Noncommuting matrix orderings
+are retained. The full corrector residual is exactly epsilon^2(z_t+Tz).
+Expanding the bounds for U_t and U_tt with both cross orderings gives
+  Z_epsilon=2b^2 c^2 N2+epsilon b^3 c^3 N3,
+  Y_epsilon=4b^2 c^3 N3+4 epsilon b^3 c^4 N4
+            +epsilon^2 b^4 c^5 N5.
+No lost factor was found. H5 implies U_t in H3, U_tt in H1, z in H2 and
+z_t+Tz in L2, as required for Duhamel.
+
+The actual initial datum is U_0-epsilon RTU_0, so its difference from H_app
+is -epsilon^2 z(0). Because Pw=Pz=0, projection gives (45) with Z+LY;
+comparison to U+epsilon w gives (46) with 2Z+LY. Second-order preparation
+removes the initial Z term, and an epsilon^2 I_0 perturbation adds that term
+by contraction. At t=0 the distance from the uncorrected full distribution
+is exactly epsilon||RTU_0||. That observation does not establish necessity
+of this preparation for the projected estimate, and the note does not claim
+such necessity. The linear h is not assumed to be a nonnegative distribution.
+
+Independent asymmetric-rate checks at theta=.4, k=(2,-1,1), epsilon=.4,.13,.04
+verify the exact corrector identity up to floating-point residual 2.2e-14
+and both claimed error bounds. They use a separately assembled operator.
+
+5. LOCAL CHANNEL, COHERENCE AND CONTROLLED LIMIT
+
+Reviewed microscopic lines 45–268 and all associated runner code.
+Each marked reaction independently couples exactly two ordered pair states
+through F=|t><s|+|s><t|, at gamma=kappa(N-1)/(4m). A fresh ancilla for every
+mark and step is a hypothesis. Tracing its exp(-i sqrt(h) A tensor X) gate
+gives the stated two Kraus operators cos(sqrt(h)A), sin(sqrt(h)A) exactly.
+The supplied SWAP interaction and each F preserve total label momentum and
+energy. A zero ancilla Hamiltonian makes this conservation exact for the
+supplied gates; physical switching/preparation costs remain outside the model.
+
+As superoperators, Phi_A=cos(sqrt(h) ad_A), D[A]=-ad_A^2/2 and
+||ad_A||_diamond<=2||A||. For h a^2<=1/4, the two Taylor remainders sum to
+at most [(2/3)e+2 sqrt(e)]h^2 a^4 < 6h^2 a^4. CPTP contraction allows
+local replacement telescoping. Double Duhamel gives h^2||[B,C]||/2 for the
+splitting error; ||D[A]||<=2a^2 then gives at most 2h^2 Lambda^2 after
+summing unordered pairs. Since sum_A a^2=m/epsilon+(N-1)K=Lambda, each
+macrostep costs at most 8h^2 Lambda^2. The remainder after floor(T/h)
+steps costs at most 2h Lambda. This proves the precise diamond estimate
+(5), with the stated no-one-half norm convention, at fixed N,G,epsilon.
+
+Every separate mark preserves the diagonal observable algebra under both
+its channel adjoint and generator adjoint. Consequently arbitrary initial
+coherences and entanglement cannot feed the population evolution. This
+argument does not require decoherence of the full density matrix. Merging
+marks coherently is a different model: the independent checker supplies a
+shared-target merged-mark countercontrol with a nonzero off-diagonal term.
+An independently exponentiated 6-by-6 joint unitary agrees with the channel
+on all nine matrix units to 2.3e-16; the authored runner also checks the
+matrix-unit identity exactly. Neither finite test replaces the algebra proof.
+
+6. PAIR COUNT, FAST MIXING AND EQUILIBRIUM
+
+Connected graph edge transpositions generate all label arrangements in a
+fixed occupation fiber. Uniform fiber averaging therefore uses the exact
+without-replacement pair probability n_i n_j/[N(N-1)], not a product-state
+assumption. Two input orientations and two output arrangements give
+  m * 2n_i n_j/[N(N-1)] * 2gamma = kappa n_i n_j/N.
+All reactions have four distinct labels, so the factors are consistent.
+The N=2 boundary gives kappa/2 when its two input labels are present.
+
+For the finite symmetric interchange generator S, R_mix=int_0^infinity
+(exp(tS)-P)dt satisfies SR_mix=-(I-P), PR_mix=R_mix P=0. With
+u=exp(tPCP)f, the corrected function v=u+epsilon R_mix C u has residual
+  epsilon(R_mix C P C-C R_mix C)u.
+Initial and final correctors each cost epsilon Bc||f||; the integrated
+residual costs 2epsilon T Bc^2||f||. This is exactly (9). Each edge/reaction
+has at most two outgoing marks, hence c<=2 exit_max<=(N-1)K. The finiteness
+argument and the stated crude spectral bound for B are valid at fixed N,G;
+no uniform-in-N mixing estimate is proved or asserted.
+
+The complete population chain is reversible with uniform weight on each
+microscopic communicating component, for every finite epsilon>0. Swaps
+connect all arrangements with given counts and can place any available
+reacting pair on an edge. Thus a count-process component lifts to one
+microscopic component. Its pushforward weight is N!/prod n_v!, hence the
+factorial law. The product q^n is constant on the component by its five
+conserved moments. This proves (11) without characterizing components
+solely by those moments or claiming uniqueness of the full quantum state.
+Empty input species, N=1, N=2 and repeated occupancy in distinct registers
+are scoped correctly. N=0 is explicitly outside the count generator.
+
+A separate five-slot star calculation used 100 configurations in fibers
+of sizes 30,60,10, different from the author's path example. Its averaged
+count generator is
+  [-.8, .8, 0; .4, -.6, .2; 0, 1.2, -1.2].
+It confirms the pair factors, equilibrium pushforward and Poisson equation.
+The full operator sup-norm errors at epsilon=.4,.1,.025 are .0877703,
+.0215779,.00536672, each below its analytic bound. The bounds are loose;
+observed ratios are not used as a proof of the limit.
+
+7. WHAT COMPOSES, AND THE SPATIAL INTERFACE THAT IS STILL MISSING
+
+The channel limit plus fixed-count averaging genuinely composes to the
+parent's supplied well-mixed finite occupation process. A subsequent
+finite-time large-count limit can give the homogeneous mass-action ODE,
+with the stated ordered limits or a selected finite-N error schedule.
+The estimates themselves do not give a simultaneous physical scaling.
+
+They do not yet instantiate the spatial kinetic premise T=v·grad:
+(a) Interchange moves all labels by the same graph rule, not by their
+    velocity-dependent streaming x -> x+v dt.
+(b) The averaging here is over global count fibers. Rapid global mixing
+    can erase spatial variation instead of producing local equilibrium.
+(c) One occupied register per graph slot fixes the local particle number;
+    a position/vacancy or multi-particle-per-cell construction is needed
+    to represent an independently varying spatial mass density.
+(d) Gate spacing h, interchange epsilon, particle count N, the kinetic
+    Knudsen epsilon, and diffusive delta denote different scales. A spatial
+    composition must specify their relation and control streaming,
+    local mixing, statistical fluctuations and any nonlinear linearization
+    errors on the intended time interval, with suitable uniform constants.
+
+The next load-bearing mathematical object is thus an explicit spatial
+microscopic model whose population/large-count evolution approximates the
+supplied streamed kinetic equation. Identifying graph adjacency alone is
+insufficient. This review does not supply that object, infer nonlinear
+Navier–Stokes, select physical viscosity, or promote supplied interactions
+to consequences of the minimal native axioms. Both reviewed notes correctly
+retain these boundaries and name their physical suppliers.
+
+8. REPRODUCTION, RESOLVED INSTRUMENTATION GAP AND LIMITS
+
+Independent checker:
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/transport_independent_check.py
+SHA-256 32335a5c8631408e3b9199bcf4eb3aa3b735af3f40ab14c82afcd26fe22c7941
+Run with Python 3 plus numpy, scipy and sympy. It sets numerical-library
+thread limits to one, imports no author script, and reads no repository data.
+It reconstructs its networks, KKT problems, Fourier operators and finite
+population chain separately. Reproduction: python3 transport_independent_check.py
+Result: 24 PASS, 0 FAIL. Full stdout follows, with all author-runner stdout.
+
+Author kinetic final runner: 18 PASS, 0 FAIL.
+Author microscopic runner: 4 PASS, 0 FAIL.
+These counts document execution, not mathematical independence or proof.
+The independent analytical reconstruction above is the principal review;
+exact rational checks and distinct finite numerical cases add discriminators.
+No floating-point diagnostic is represented as a certified interval bound.
+
+A resolved instrumentation issue is preserved below. Flipping the actual
+initial_h sign can leave the author's t=.7 convergence-ratio test passing.
+The coordinator added a test of the actual prepared input at t=0. On the
+final runner the independent in-memory sign mutation exits 1 and produces
+FAIL actual-initial-preparation, while all the positive-time ratios still
+pass. The wrong corrected initial distances are .03061736, .01530868,
+.00765434 and .00382717, proportional to epsilon. This confirms that the
+new guard detects the preparation error relevant to the theorem's uniform
+interval. The source mathematics did not require repair. No disk mutant
+or source modification was made by this reviewer.
+
+This checkpoint binds exactly the source hashes in section 1. It is not a
+formal audit, Lean verification, proof-assistant certificate, exhaustive
+review of all parent claims, empirical test or independent physical premise
+selection. No retained-status, registry, PR, commit or push operation was
+performed. Only this report and its separate checker were written.
+
+FULL EXECUTION LOGS
+===================
+
+INDEPENDENT CHECK OUTPUT
+checker_sha256: 32335a5c8631408e3b9199bcf4eb3aa3b735af3f40ab14c82afcd26fe22c7941
+exit_code: 0
+PASS fresh_four_species_network 
+PASS independent_KKT_response_1 [35/311, 105/311, 67/1083, 67/1083, 67/1083, 40/441, 40/441, 40/441]
+PASS independent_trace_inverse 6224911145567/509693499350
+PASS independent_KKT_response_7/5 [305/3099, 305/1033, 67/1083, 67/1083, 67/1083, 40/441, 40/441, 40/441]
+PASS independent_KKT_response_19/7 [2051/28907, 6153/28907, 67/1083, 67/1083, 67/1083, 40/441, 40/441, 40/441]
+PASS acoustic_corrector_asymmetric_0.4 {'residual': np.float64(4.644167087411945e-15)}
+PASS acoustic_error_bounds_0.4 {'projected': np.float64(0.029109712336951178), 'corrected': np.float64(0.07386182149550857), 'projected_bound': np.float64(24.108405700852906)}
+PASS acoustic_corrector_asymmetric_0.13 {'residual': np.float64(8.034609830233299e-15)}
+PASS acoustic_error_bounds_0.13 {'projected': np.float64(0.004794175053076329), 'corrected': np.float64(0.010480963429833475), 'projected_bound': np.float64(1.5617545894892286)}
+PASS acoustic_corrector_asymmetric_0.04 {'residual': np.float64(2.127009157059717e-14)}
+PASS acoustic_error_bounds_0.04 {'projected': np.float64(0.0005265585041382216), 'corrected': np.float64(0.0010539721449389244), 'projected_bound': np.float64(0.12176594325186348)}
+PASS diffusive_off_axis_full_cancellation [np.float64(2.4114025569944345e-15), np.float64(2.6787305645012955e-15)]
+PASS wrong_heat_density_coefficient_rejected 
+PASS diffusive_error_bound_0.3 {'error': np.float64(0.7235375361555131), 'bound': np.float64(47.97274614288046)}
+PASS diffusive_error_bound_0.1 {'error': np.float64(0.21948925903471228), 'bound': np.float64(13.518633304655408)}
+PASS separate_mark_diagonal_closure 
+PASS coherent_merged_mark_control 
+PASS joint_unitary_channel_all_units 2.2215299868541707e-16
+PASS star_pair_normalization {'fibers': [30.0, 60.0, 10.0]}
+PASS star_exact_equilibrium 
+PASS star_Poisson_equation 
+PASS star_averaging_bound_0.4 {'operator_sup_error': np.float64(0.08777032254093828), 'bound': np.float64(13.98720000000001)}
+PASS star_averaging_bound_0.1 {'operator_sup_error': np.float64(0.021577940667866544), 'bound': np.float64(3.4968000000000026)}
+PASS star_averaging_bound_0.025 {'operator_sup_error': np.float64(0.005366718441210429), 'bound': np.float64(0.8742000000000006)}
+elapsed_sec 0.3136
+TOTAL: PASS=24 FAIL=0
+
+AUTHOR RUNNER REPRODUCTION
+path: scripts/d3q27_dissipative_hydrodynamic_approximation_2026_10_09.py
+sha256: a02ce74dc191cd926fd85525eb863a9e1e3d0eda031e8baa5d21ed5a76142861
+exit_code: 0
+Supplied D3Q27 dissipative approximation: exact rational certificates
+AUDIT_TIMEOUT_SEC: 180
+PASS complete-network: 27 velocities; two exhaustive enumerations agree on 288 reversible reactions; nine axial exchanges
+PASS conservation-and-balance: all five conserved moments and 288 detailed-balance monomials checked exactly
+PASS exact-kernel-and-inverse: rank 22 certified by BR=RB=I−P and rank(P)=5; R weighted self-adjoint
+PASS explicit-gap-bound: tr R_1=6224911145567/509693499350; ||R_kappa|| <= tr R_1 / min(kappa) at theta=1/3
+PASS complete-cubic-covariance: all 48 signed coordinate permutations preserve M, every collision and the two rate classes
+PASS all-alpha-stress-and-heat-blocks: 972 exact entries at both affine coefficients, all axes; independent flux and matrix implementations
+PASS symbolic-response-certificate: mu_D=(4a+31)/(8a²+133a+170); mu_O=67/1083; chi=40/441 for every a>0
+PASS isotropic-rate-identity: unique positive zero of 536a²+4579a−22183; a*=3.45068979932815 lies in (1,4); supplied rate, no empirical selection
+PASS full-eight-source-poisson-response: full 27-dimensional inverse checks all five stresses, three heat modes and all cross responses at a=1
+PASS complete-constitutive-flux: every density/momentum/energy gradient: zero mass correction, trace-free cubic stress, q=−(20/147) grad(E−rho)
+PASS exact-corrector-residual: all epsilon-polynomial coefficients in L_epsilon(U+epsilon v+epsilon² z)=epsilon²(z_t+Tz), on all five fields
+PASS scientific-discriminators: opposite macro dissipation sign and a removed axial collision each fail their scientific identity
+PASS diffusive-slow-field-solvability: tuned full tensor: rho_tau=(4/49)Delta rho; j_tau=(67/361)Delta j; m=−3(4/49)v·grad rho cancels the macro residual
+PASS diffusive-full-operator-cancellations: exact delta^−1 and delta^0 cancellations on density/two shear modes; confusing energy and density diffusivities fails
+PASS quadratic-slow-mode-moment-witness: all polynomial coefficients: Q-stress=j tensor j−|j|²I/3; H-flux=−2 rho j/3=(2/5) eta j with eta=−5 rho/3; no nonlinear-limit claim
+FOURIER epsilon=1/16 t=0.7 macro_error=0.004636841652 corrected_error=0.006088248191 full_uncorrected_error=0.0641546023
+FOURIER epsilon=1/32 t=0.7 macro_error=0.001220519018 corrected_error=0.00158941824 full_uncorrected_error=0.03328315044
+FOURIER epsilon=1/64 t=0.7 macro_error=0.0003126853381 corrected_error=0.000405677356 full_uncorrected_error=0.01695131045
+FOURIER epsilon=1/128 t=0.7 macro_error=7.910678693e-05 corrected_error=0.0001024498696 full_uncorrected_error=0.008554207161
+PASS actual-initial-preparation: actual prepared h(0) has corrected distances [0.0, 0.0, 0.0, 0.0]; the uniform-time comparison includes t=0
+PASS finite-mode-order-discriminator: halving-epsilon ratios: macro=[3.799073657882229, 3.9033458546715076, 3.952699259726104]; first-corrected=[3.830488438202484, 3.917936794818033, 3.9597644935152454]; uncorrected=[1.9275399547036585, 1.9634558953469818, 1.981634315623882]; floating-point supplement only
+PASS prepared-data-initial-distance: first-prepared datum has ||h(0)−U(0)||=epsilon*0.2449389102; the theorem compares projected fields or the corrected distribution
+per_element: all 288 reversible collisions, five invariant contractions and 972 affine block entries checked exactly
+per_site: the supplied 27-velocity local collision space is complete; no native lattice site or record observable identified
+per_mode: exact corrector polynomials on two Fourier directions; finite-mode exponential supplement; all-mode Sobolev estimates are proved in the note
+per_block: all five stress and three heat sources, all cubic symmetry operations and diffusive slow-field solvability checked; nonlinear flux witness is finite algebra only
+lattice_wide: supplied periodic continuum streaming is a theorem premise; no discrete spatial refinement, native dynamics or nonlinear fluid limit executed
+TOTAL: 18 PASS, 0 FAIL; exact finite identities and supplementary Fourier check; analytic proof in companion note
+
+AUTHOR RUNNER REPRODUCTION
+path: scripts/local_quantum_collisions_and_rapid_mixing_2026_10_09.py
+sha256: 1cd57938685e59608cfafcac1cfdecde5f28a9596c0b738ee971db1918368afb
+exit_code: 0
+D3Q27: velocities=27 pair_complexes=378 reactions=288 four_distinct_species=True
+proper_cubic_collision_orbits=19 orbit_sizes=[3, 3, 6, 6, 6, 12, 12, 12, 12, 12, 12, 24, 24, 24, 24, 24, 24, 24, 24]
+PASS network_and_cubic_orbits
+exact_fiber_averages: N=2..6 fibers=240 assignments=5712; rates_and_factorials=True
+PASS exact_fiber_averages_and_stationary_weights
+local_6x6_unitary_and_all_9_matrix_units: max_residual=0
+PASS local_unitary_and_coherence_matrix_units
+rapid_local_mixing: N=4 path, 36_microstates, t=1, initial=(0,0,1,1)
+target_occupation_probabilities=0.424983107302,0.517913226568,0.057103666130
+  epsilon=1/1   TV_error=0.121481489 series_terms=30
+  epsilon=1/4   TV_error=0.0400839585 series_terms=52
+  epsilon=1/16  TV_error=0.00991848163 series_terms=115
+  epsilon=1/64  TV_error=0.00246091328 series_terms=314
+  epsilon=1/128 TV_error=0.00122872639 series_terms=551
+finite_mixing_example: same_counts=(2,2,0,0) clustered_and_alternating_rates=[0.5, 1.5] target_rate=1
+PASS finite_mixing_and_averaging_example
+per_element: all 288 D3Q27 reversible reaction supports and 24 proper-cubic rotations are enumerated
+per_site: an actual system-plus-qubit unitary and every system matrix unit test local population closure
+per_mode: all four-label occupation fibers on paths N=2 through N=6 and an N=4 square use exact rational rates
+per_block: a 36-state local population chain tests finite mixing, exact macro rates and rapid-mixing convergence
+lattice_wide: checked and not executed — no infinite lattice, native M2 realization, streaming or uniform-N limit is simulated
+TOTAL: PASS=4 FAIL=0
+
+INDEPENDENT IN-MEMORY MUTATION: flip actual initial_h preparation sign
+parent_sha256: a02ce74dc191cd926fd85525eb863a9e1e3d0eda031e8baa5d21ed5a76142861
+exit_code: 1
+Supplied D3Q27 dissipative approximation: exact rational certificates
+AUDIT_TIMEOUT_SEC: 180
+PASS complete-network: 27 velocities; two exhaustive enumerations agree on 288 reversible reactions; nine axial exchanges
+PASS conservation-and-balance: all five conserved moments and 288 detailed-balance monomials checked exactly
+PASS exact-kernel-and-inverse: rank 22 certified by BR=RB=I−P and rank(P)=5; R weighted self-adjoint
+PASS explicit-gap-bound: tr R_1=6224911145567/509693499350; ||R_kappa|| <= tr R_1 / min(kappa) at theta=1/3
+PASS complete-cubic-covariance: all 48 signed coordinate permutations preserve M, every collision and the two rate classes
+PASS all-alpha-stress-and-heat-blocks: 972 exact entries at both affine coefficients, all axes; independent flux and matrix implementations
+PASS symbolic-response-certificate: mu_D=(4a+31)/(8a²+133a+170); mu_O=67/1083; chi=40/441 for every a>0
+PASS isotropic-rate-identity: unique positive zero of 536a²+4579a−22183; a*=3.45068979932815 lies in (1,4); supplied rate, no empirical selection
+PASS full-eight-source-poisson-response: full 27-dimensional inverse checks all five stresses, three heat modes and all cross responses at a=1
+PASS complete-constitutive-flux: every density/momentum/energy gradient: zero mass correction, trace-free cubic stress, q=−(20/147) grad(E−rho)
+PASS exact-corrector-residual: all epsilon-polynomial coefficients in L_epsilon(U+epsilon v+epsilon² z)=epsilon²(z_t+Tz), on all five fields
+PASS scientific-discriminators: opposite macro dissipation sign and a removed axial collision each fail their scientific identity
+PASS diffusive-slow-field-solvability: tuned full tensor: rho_tau=(4/49)Delta rho; j_tau=(67/361)Delta j; m=−3(4/49)v·grad rho cancels the macro residual
+PASS diffusive-full-operator-cancellations: exact delta^−1 and delta^0 cancellations on density/two shear modes; confusing energy and density diffusivities fails
+PASS quadratic-slow-mode-moment-witness: all polynomial coefficients: Q-stress=j tensor j−|j|²I/3; H-flux=−2 rho j/3=(2/5) eta j with eta=−5 rho/3; no nonlinear-limit claim
+FOURIER epsilon=1/16 t=0.7 macro_error=0.0050868408 corrected_error=0.00643686027 full_uncorrected_error=0.06422581163
+FOURIER epsilon=1/32 t=0.7 macro_error=0.001334677727 corrected_error=0.001678449585 full_uncorrected_error=0.03329236971
+FOURIER epsilon=1/64 t=0.7 macro_error=0.0003414855243 corrected_error=0.0004282326291 full_uncorrected_error=0.0169524839
+FOURIER epsilon=1/128 t=0.7 macro_error=8.634296309e-05 corrected_error=0.0001081300394 full_uncorrected_error=0.008554355208
+FAIL actual-initial-preparation: actual prepared h(0) has corrected distances [0.03061736377240435, 0.015308681886202175, 0.007654340943101088, 0.003827170471550544]; the uniform-time comparison includes t=0
+PASS finite-mode-order-discriminator: halving-epsilon ratios: macro=[3.81128769604584, 3.9084459872212087, 3.9549896374754625]; first-corrected=[3.8350036404068315, 3.9194808415577604, 3.9603484057282556]; uncorrected=[1.929145091907131, 1.9638638151878005, 1.9817371958801482]; floating-point supplement only
+PASS prepared-data-initial-distance: first-prepared datum has ||h(0)−U(0)||=epsilon*0.2449389102; the theorem compares projected fields or the corrected distribution
+per_element: all 288 reversible collisions, five invariant contractions and 972 affine block entries checked exactly
+per_site: the supplied 27-velocity local collision space is complete; no native lattice site or record observable identified
+per_mode: exact corrector polynomials on two Fourier directions; finite-mode exponential supplement; all-mode Sobolev estimates are proved in the note
+per_block: all five stress and three heat sources, all cubic symmetry operations and diffusive slow-field solvability checked; nonlinear flux witness is finite algebra only
+lattice_wide: supplied periodic continuum streaming is a theorem premise; no discrete spatial refinement, native dynamics or nonlinear fluid limit executed
+TOTAL: 17 PASS, 1 FAIL; exact finite identities and supplementary Fourier check; analytic proof in companion note

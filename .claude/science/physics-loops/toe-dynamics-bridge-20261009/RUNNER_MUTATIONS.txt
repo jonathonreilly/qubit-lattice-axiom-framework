@@ -1,0 +1,162 @@
+SCIENTIFIC RUNNER MUTATION REVIEW — 2026-10-09
+
+Outcome: two real diagnostic gaps were found and then repaired by the
+coordinator. Both original surviving mutations now produce scientific failure.
+This review changed no repository source and assigns no scientific audit verdict.
+
+Evidence directory:
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/runner_mutations/
+Concise machine summary: summary.json.
+Complete per-execution metadata: combined_results.json.
+Every baseline and mutant script, exact replacement, full stdout and stderr is
+retained there. evidence_manifest.json pins the scratch evidence by SHA256.
+
+Current runner identities and clean baselines
+--------------------------------------------
+Kinetic:
+worktree/scripts/d3q27_dissipative_hydrodynamic_approximation_2026_10_09.py
+SHA256 a02ce74dc191cd926fd85525eb863a9e1e3d0eda031e8baa5d21ed5a76142861
+Fresh baseline: process exit 0; TOTAL: 18 PASS, 0 FAIL.
+
+Photon:
+photon_worktree/scripts/photon_vacuum_subtraction_and_cosine_reference_2026_10_09.py
+SHA256 ca91fbc601fa2f66e569ddf35a385db25f095ceb4572df4ba42729b1087aa7ee
+Fresh baseline: process exit 0; TOTAL: PASS=41 FAIL=0.
+
+Microscopic collision:
+worktree/scripts/local_quantum_collisions_and_rapid_mixing_2026_10_09.py
+SHA256 1cd57938685e59608cfafcac1cfdecde5f28a9596c0b738ee971db1918368afb
+Fresh baseline: process exit 0; TOTAL: PASS=4 FAIL=0.
+
+Paths above are relative to this report's directory. All source identities
+were checked before and after the executions for the applicable batch.
+Python 3.13.5 was used. Declared runner timeouts were respected: kinetic 180s,
+photon and microscopic 120s. No mutation timed out. Each scratch script was
+syntax-checked before execution; assertions, thresholds and exit handling
+were left unchanged. No mutation was counted as rejected because of syntax,
+imports or an unrelated runtime error.
+
+Original batch and scientific predicates
+---------------------------------------
+The original frozen kinetic runner was
+efef0108975676514cdcf76d48b76e1b8ffaa37a0a1bd34dd782b1c93609c0bd,
+with clean baseline 17 PASS. The original frozen photon runner was
+76f5380452b522536dd0dd91e454a59ae62d42df19d5e023aa8e15a972d4ef62,
+with clean baseline 35 PASS. Their exact baseline copies are retained.
+
+All of the following mutations returned subprocess exit 1 through scientific
+checks, except the two explicitly identified survivors:
+
+K01: remove one actual collision; complete-network fails, along with covariance,
+     constitutive and other dependent checks.
+K02: halve the weighted kernel projector; exact-kernel-and-inverse fails.
+K03: change the off-diagonal stress block entry 16/9 to 17/9;
+     all-alpha-stress-and-heat-blocks fails.
+K04: change the heat block entry 79/54 to 80/54; the same block check fails.
+K05: change density diffusivity 4/49 to 5/49;
+     diffusive-slow-field-solvability and full-operator cancellations fail.
+K06: reverse the first corrector sign; exact-corrector-residual fails.
+K07: reverse actual initial preparation U0+epsilon v0 to U0-epsilon v0;
+     originally SURVIVED with exit 0 and all 17 checks passing.
+K08: change the quadratic slow density mode (5-3e)/2 to (5-2e)/2;
+     quadratic-slow-mode-moment-witness fails.
+
+P01: double the quartic coefficient; the exact cross-term identity fails.
+P02: double the sextic coefficient; the exact direct-sixth-order identity fails.
+P03: remove the Fock factorial metric; the exact cross-term identity fails.
+P04: replace the plus resolvent denominator by the minus denominator;
+     the spectator/plus identity fails.
+P05: omit connected/spectator interference in the direct contraction;
+     direct == predicted fails.
+P06: omit vacuum subtraction; direct == predicted fails.
+P07: replace sqrt(2 omega) by sqrt(omega) in Fourier normalization;
+     fourier_reference_gram_L3 fails.
+P08: double the Fourier Bose factor by changing outer/6 to outer/3;
+     originally SURVIVED with exit 0 and all 35 checks passing.
+P09: halve the full-cosine interference contribution from 2 cross to cross;
+     the direct-versus-formula cosine identity fails.
+
+M01: remove one actual microscopic collision support;
+     FAIL network_and_cubic_orbits: AssertionError; process exit 1.
+     This exercises reaction completeness in that check family. It is not
+     represented as a separate perturbation of the cubic-orbit algorithm.
+
+Initial batch total: 18 mutant subprocesses, 16 scientific rejections and
+2 survivors. Both survivors and their passing stdout remain preserved.
+
+The gaps and the verified repairs
+--------------------------------
+K07 exposed missing verification of the actual prepared datum. The original
+test sampled the evolution at t=0.7; its initial-distance predicate only
+checked that ||v0|| was positive. A sign error in h0 therefore remained
+undetected. This is a runner sensitivity gap, not a counterexample to the
+theorem with its stated initial datum.
+
+The coordinator added a corrected-distance check using the actual initial_h
+at t=0 for every sampled epsilon. The full source diff was inspected. K07
+was rerun against a02ce74d... and now exits 1 at actual-initial-preparation.
+Its four initial corrected distances are
+0.03061736377240435, 0.015308681886202175,
+0.007654340943101088, 0.003827170471550544.
+The clean repaired runner returns 18 PASS. This is the narrow missing
+initial-data check; it does not purport to prove the analytic all-data estimate.
+
+P08 exposed that positivity and broad upper/lower bounds do not determine the
+Fourier Bose coefficient. At L=3, k=(1,0,0), the original baseline values were
+Kminus/omega approximately 0.00704360868 and Kplus/omega 0.00436789107;
+the mutant doubled them and still satisfied every original bound.
+
+The coordinator added a distinct contraction path: accumulate the ordered
+cubic vertices into occupation monomials, then contract using factorial
+weights and the two resolvents. The full source diff was inspected. Both
+Fourier matrices are compared with these direct occupation contractions.
+P08 was rerun against ca91fbc6... and now exits 1 at
+fourier_to_occupation_resolvent_L3_k(1,0,0), with residual
+0.017253247218618786 over 918 occupation monomials.
+
+One further mutation P10 targets the newly added reference calculation itself:
+replace its factorial occupation multiplicity by 1. It also exits 1 at that
+scientific identity, with residual 0.0011374891586465425. This checks that the
+reference contraction is sensitive to its own Bose normalization. The clean
+repaired photon runner returns 41 PASS.
+
+Repair batch total: two reruns of original survivors and one new mutation;
+all three return process exit 1 through the intended scientific predicates.
+No source edit was made by this reviewer. Earlier rejection paths were
+unchanged in the inspected source diffs; their earlier results remain
+evidence on their original hashes, not mislabeled executions on new hashes.
+
+Reused microscopic evidence — not rerun
+---------------------------------------
+worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009/MICROSCOPIC_BRIDGE.txt
+SHA256 0a03dd6afd3a8c3a39dba4e2247ec14dabff247a46c9488da11437aaaf50f15b
+Lines 660–685 were read exactly. They record seven actual in-memory main()
+return values of 1 and named scientific FAIL checks, not subprocess exits:
+fiber-rate-half, local-coupling-half, omit-output-arrangement,
+omit-reverse-collisions, remove-environment-flip, remove-fast-mixing,
+and replace-factorial-multiplicity. Their replacements and failed predicates
+are preserved in that report. They are author-reported evidence reused here;
+none of those seven mutations was reexecuted during this review. The new M01
+subprocess test adds coverage of the omitted network-construction family.
+
+Reproduction and limits
+-----------------------
+Execute any retained scratch .py file directly with the same Python and
+PYTHONDONTWRITEBYTECODE=1 to reproduce its exit and stdout; the matching
+metadata records cwd, exact replacement, timeout and source/script hashes.
+run_mutation_review.py, run_micro_network_mutation.py and
+run_repaired_checks.py record the batch procedures. They enforce their
+specified live-source hashes, so the original batch harness intentionally
+does not accept the later repaired live sources. Its frozen scratch copies
+remain directly executable without restoring a repository checkout.
+
+All selected scientific mutations have a recorded rejection at the applicable
+source revision after the two narrow repairs. This reviewer authored the
+kinetic runner earlier; these sensitivity tests are not an independent
+mathematical review of that theorem. The results give bounded diagnostic
+evidence, not exhaustive mutation coverage, theorem validation, formal proof,
+native physical identification or an audit verdict. The finite
+Fourier/occupation checks do not establish all-volume or full-series bounds.
+No commits, caches, graph edits, registry changes or source edits were made
+by this review. All new evidence is outside the worktrees in the assigned
+runner_mutations directory and this report.

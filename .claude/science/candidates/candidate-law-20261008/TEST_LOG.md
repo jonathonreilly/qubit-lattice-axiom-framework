@@ -554,3 +554,35 @@ K3a″'s free-level shear stiffness was already on the 09-28 held branch:
 - **block 191:** "if the member sees the sea, its uniform traceless modes have a gap".
 
 Neither the four sweeps nor the supervisor cited them. K3a″'s new content is the interacting O(e²) term, and W1's is the dynamical-length version. This is the eleventh own-prior-art miss.
+
+## FR1: static field of a frozen cluster (2026-10-09; owner request)
+
+**Verdict against the fixed line: FAIL overall.** The worker is Sonnet 5.5. The referee (codex sol) is running.
+
+**(a) Gapless free-fermion sea** (exact infinite-lattice Kogut–Susskind Green function with a T-matrix over the cluster, CHECKED against brute force and ED). This is the static real-space version of block 193's local T-matrix.
+- **Blocked reading:**
+  - The density shift is exactly 0, by chiral symmetry.
+  - The energy-density shift falls as r⁻⁵ for sublattice-imbalanced clusters and r⁻⁷ for balanced ones.
+  - Imbalanced clusters bind a zero mode with density r⁻⁴.
+  - A test quasiparticle far away sees an unmodified H, so its shift is exactly 0.
+- **Fixed-occupation reading:** density r⁻⁵, energy density r⁻⁷.
+- **N-scaling is nonlinear and irregular.** The cluster is a nonlinear scatterer.
+
+**(b) Ordered Goldstone magnet.**
+- **Spins locked along the order:** no tilt.
+- **Spins locked across the order, with the order pinned at infinity:** a clean 1/r tilt, 4πrθ/α = Q.
+  - **But Q is a capacitance, proportional to the cluster's size, about N^(1/3), not to N.** For N = 1, 8, 27, 64, 125, 216, Q = 3.96, 11.1, 18.9, 27.0, 35.1, 43.3.
+  - It is a scalar angle (XY) or a spin-space vector (Heisenberg).
+- **Order free at infinity:** the tail vanishes (ARGUED).
+- **Antiferromagnet:** balanced cubes give r⁻⁶.
+- **Magnons:** their energy shift falls as r⁻⁴. Test spins couple to the tilt with a sign set by their own direction.
+
+**Plain reading.** A frozen cluster does not by itself make Newtonian gravity on the live qubits:
+- in a gapless sea it is a short-range scatterer, like dirt in a medium;
+- in an ordered magnet it makes a 1/r tilt that grows with size, not record count, and that live excitations feel only at r⁻⁴.
+
+This agrees with block 193 ("missing records do not stretch the walk") and with campaign 8 ("record-carried gravity falls short").
+
+**FR2 (bending)** does not run, since FR1 did not pass.
+
+**FR3 (waves), argued.** Permanent, immobile records cannot oscillate, so they carry no gravitational waves. The moving-record version is untested.

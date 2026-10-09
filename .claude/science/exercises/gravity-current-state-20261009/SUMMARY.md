@@ -1,0 +1,112 @@
+# The gravity wall, current state: exercise summary (2026-10-09)
+
+**How it was run.**
+- The candidate exercise skill in PR #9472 was used, at the owner's request ("run the exercise on the current state of gravity … use opus 5.5 extra agents").
+- The supervisor is Claude Opus 5.5.
+- **Route, kill and test agents:** Claude Opus 5.5 at extra-high (xhigh) effort.
+- **Blind check and outside view:** Opus 5.5 at default effort.
+- **Referee:** every FAIL or no-go was refereed by **codex gpt-5.6-sol (xhigh), another vendor**, before being reported.
+
+**Labels.**
+- **proved:** an exact derivation in this packet. Nothing is landed.
+- **checked:** a computation run here.
+- **suggested:** an argument.
+- **reading:** an interpretation.
+
+This exercise extends the 09-29 gravity exercise.
+
+## 1. The wall, in plain words
+
+We want gravity to come out of the framework's own rules instead of being added as an extra ingredient. The framework is a grid of sites whose neighbours never change. Experiments show that gravity:
+- has waves that travel at light speed;
+- has waves with no mass;
+- has waves that stretch one way while squeezing the other;
+- pulls on everything equally.
+
+Every construction we have built fails at least one of these:
+- **Sites as on/off switches:** the waves are too slow, or carry an extra sideways wobble (09-29).
+- **Sites as continuous dials:** the waves gain a mass. Matter's lowest-energy state on the grid resists being sheared, the way a crystal does, and that resistance is a mass. Only a number set by hand removes it.
+- **Records as the carrier:** no pull at long distances, and no waves.
+
+All of this is seen in the models we built, for small waves and weakly interacting matter.
+
+## 2. What the exercise found
+
+1. **The stiffness half of the wall is a known piece of physics, not a quirk of our models.** Couple gravity to a medium whose points carry fixed labels, and the graviton gets a mass equal to the medium's shear stiffness (Rubakov–Tinyakov, Dubovsky; checked here). Only three things are known to protect it:
+   - an exact gauge redundancy, as in Einstein's theory;
+   - having no spatial labels at all;
+   - a fluid, whose points can be relabelled continuously.
+
+   (checked; literature.)
+2. **The cause is the grid's fixed, regularly repeating sites, not its fixed neighbours.**
+   - **For interacting matter:** no continuous relabelling can undo a shear when the vacuum keeps the grid's repeating pattern ("Lemma R"; proved, same-family).
+   - **The smallest version:** a cutoff fixed by the grid's labels gives a stiffness of K₀⁴/(120π²) per boson. A cutoff that moves with the geometry gives exactly zero (proved; checked).
+   - **Neighbours re-chosen from the geometry:** this alone does not help. A crystal and a glass stay stiff. A random scatter is unstiff only *on average*; every patch carries a random stiffness that scatters gravitational waves (checked; refereed).
+3. **Granting the cosmological constant does not help.** On a cube-symmetric grid the vacuum has three separate responses: one pressure and two shear stiffnesses. Any mechanism that tunes only the pressure cannot touch the shears, and ours have opposite signs (proved; checked).
+4. **Every escape we tried either keeps the stiffness or loses the one shared light speed.** All of these are refereed; details are in `ROUTES.md`.
+   - **A flowing (liquid) vacuum:** it removes the stiffness. But flat space then forces the liquid to have no inertia, and its rest frame splits the speeds of different particles (dead as an untuned escape).
+   - **Frozen random sites:** they fail on per-patch noise.
+   - **Smooth long-range couplings on the grid:** badly obstructed; one variant survives.
+   - **Keeping the grid and paying with supersymmetry or self-tuning:** dead. Supersymmetry would have to stay exact down to about 1 keV.
+   - **Wetterich-style position-blind physics:** the vacuum is a saddle (dead).
+5. **Test T1 (refereed): what protects the shared light speed.**
+   - On a grid that treats time as a fourth grid direction with the same step as space, symmetry forces particles' speeds to stay equal.
+   - With a shape-blind smooth regulator and continuous time, the speeds split by about 0.7 × g²/16π², set by the regulator's shape, not its scale (checked).
+   - So in every tested form, removing the stiffness costs the protection of one light speed. That is a trilemma between positivity, one protected light speed, and zero stiffness, at the free-field level for smooth kernels.
+6. **T2 (keep the grid):** [result pending; see `TESTS.md`].
+7. **None of the routes produces the graviton itself.** The liquid's displacement is a vector. Records carry only scalars and vectors (FR3). The "mediator" half of the wall is untouched (reading, as on 09-29).
+
+## 3. Routes worth doing (at most three)
+
+| Route | What you would have to believe | Cost | First test | What it would change |
+|---|---|---|---|---|
+| **Write the price down once** (a refereed note) | nothing new | 1–2 days plus a referee | assemble T0, R3's surface lemma, Lemma R, the fluid lemma, Lemma A/L plus the realization noise, Lemma N, T1, K3a″/W1 | It turns about fifteen results into one owner-level statement of what massless gravity costs on a fixed grid |
+| **Keep the grid with a positive, time-and-space-alike, smooth or "perfect" regulator** (if T2 passes) | that such a regulator's stiffness can fall faster than any power without tuning, and survive gauge fields | T2 hours; gauge extension days | T2 | the only route that keeps the Lattice axiom |
+| **A spacetime-event substrate** (random events scattered in space-time, causal-set-like) | that a law over sprinkled events can be shape-blind and keep one light speed in every configuration, not just on average | days | per-configuration stiffness noise for a 3+1 sprinkling. **PASS:** no long-wavelength noise and no tadpole | the one architecture no agent killed. **Reading:** "records form as events at random places and times" is exactly this kind of substrate |
+
+## 4. What not to do next
+
+- **Frozen random sites, or neighbours re-chosen on fixed sites:** they fail on per-configuration noise (refereed).
+- **An ordinary liquid vacuum:** flat space switches it off, and its rest frame splits speeds (refereed).
+- **Supersymmetry, self-tuning or frustration-free vacua on the grid:** they miss by many orders, or have no light cone.
+- **Wetterich position-blind actions:** the vacuum is a saddle.
+- **More record-carried gravity models,** frozen or moving: no long-range pull, no tensor waves (FR1 and FR3, refereed).
+- **Long extrapolations instead of direct calculations:** K3a′'s lesson.
+- **Working on an emergent graviton without a named mechanism.**
+
+## 5. The exact price (suggested; assembled from refereed parts)
+
+On the framework's fixed grid of regularly repeating sites, a graviton that is massless to the observed bound needs one of the following:
+1. **A tuned cancellation of two vacuum numbers** (the two shear stiffnesses), to about one part in 10⁹⁸, a second cosmological-constant-sized tuning. This is checked arithmetic.
+2. **A regulator that keeps the grid but suppresses the stiffness parametrically** while staying positive and treating time and space alike. Open, pending T2.
+3. **Giving up the fixed site set** (the Lattice axiom). The replacement must also keep one shared light speed. The only untested candidate is a spacetime-event substrate.
+
+Separately, **none of these produces the graviton itself**. That still needs a mechanism nobody has named.
+
+## 6. Appendix
+
+**Files.**
+- **History and the wall:** `WALL.md` (steps 0–1), with the blind check in `agents/blind_check.md`.
+- **Ledger and reduction:** `ASSUMPTIONS.md` (steps 2–3).
+- **Routes:** `ROUTES.md` and `APPROACH_REGISTRY.md` (steps 4, 6 and 7).
+- **Literature:** `OUTSIDE_VIEW.md` (step 5).
+- **Tests:** `TESTS.md` (T0, T1, T2).
+- **Agent texts:** `agents/` (routes, kills, referees, the supervisor's thread).
+- **Scripts:** `scripts/`.
+
+**Assumptions most likely to be wrong:**
+- "harmonic or weak coupling suffices" (S3);
+- "the vacuum is crystal-like" (S4).
+
+**Assumptions most expensive to be wrong:**
+- the fixed site set (L1);
+- naturalness (S6).
+
+**Candidates for a physics-loop PR:** the price note (route 1).
+
+**Literature worth translating:**
+- Rubakov–Tinyakov and Dubovsky (Lorentz-violating mass taxonomy);
+- Collins et al. (2004);
+- Belenchia–Gambassi–Liberati (Lorentz-naturalness mechanisms);
+- Bombelli–Henson–Sorkin (sprinklings);
+- Bietenholz–Wiese and Hasenfratz (perfect actions).

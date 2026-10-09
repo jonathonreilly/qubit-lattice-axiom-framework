@@ -6,19 +6,20 @@ stop_at: 2026-10-10T12:02:06Z
 base_commit: 17a95e60d85afc246fc7c163adef8869ab3f4194
 branch: physics-loop/toe-nn-law-values-20261009
 worktree: /Users/jonreilly/.grok/campaigns/toe-24h-20261009/wt
-cycle: 6
-active_route: order-blind factor on the achiral orbit of (0, 1, 2)
-approach_family: finite proper-cubic orbit of record values, one explicit bond product
-hard_residual: dynamics clause is supplied, not derived; formation site, probability, and rate are unsupplied; kappa is unselected; other 24-point orbits and higher-rank bond spaces are unclassified
+cycle: 7
+active_route: whether soldered covariance forces kappa on the orbit of (0, 1, 2)
+approach_family: partial-neighbour expansion in one kappa, plus the quarter-turn sectors of one rank-1 product
+hard_residual: dynamics clause is supplied, not derived; formation site, probability, and rate are unsupplied; kappa is unselected; a factor nonlinear in kappa is unclassified; other alphabets stay open
 strongest_unresolved_obligation: formation site, probability, and rate of the nearest-neighbor distribution
 files_touched:
-  - docs/ACHIRAL_ZERO_ONE_TWO_ORBIT_ORDER_BLIND_FACTOR_BOUNDED_THEOREM_NOTE_2026-10-09.md
-  - scripts/achiral_zero_one_two_orbit_order_blind_factor_2026_10_09.py
-  - logs/runner-cache/achiral_zero_one_two_orbit_order_blind_factor_2026_10_09.txt
-runner_result: "TOTAL: PASS=16 FAIL=0"
+  - docs/ZERO_ONE_TWO_SOLDERED_BOND_KAPPA_NOT_FORCED_BOUNDED_THEOREM_NOTE_2026-10-09.md
+  - scripts/zero_one_two_soldered_bond_kappa_not_forced_2026_10_09.py
+  - logs/runner-cache/zero_one_two_soldered_bond_kappa_not_forced_2026_10_09.txt
+runner_result: "TOTAL: PASS=30 FAIL=0"
 open_imports:
-  - the soldered product form on a finite alphabet
-  - the uniform one-site weight and the supplied kappa
+  - the shape 1 + kappa F with F independent of kappa
+  - partial neighbour conditions
+  - the uniform weight on the proper orbit of (0, 1, 2)
   - formation site, probability, and rate
 no_go_routes_pruned:
   - full proper-cubic invariance forces the singlet
@@ -30,10 +31,11 @@ no_go_routes_pruned:
   - proper-cubic covariance selects the quadratic channel ratios or the sign of t
   - the orbit of (0, 1, 2) is a chiral pair
   - the (1, 2, 3) transverse-sign factor varies that orbit
+  - soldered covariance forces a nonzero kappa for a bond factor 1 + kappa F on this orbit
 trace_class: negative_route_pruning
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
-commit: cycle-6 commit on this branch
-next_exact_action: Do not repeat the formation sentence, the CHSH squares, the readout split, the four-channel count, or this achiral-orbit factor. Kappa stays unselected. Other 24-point orbits and higher-rank bond spaces stay unclassified. Do not invent a hazard law.
+commit: cycle-7 commit on this branch
+next_exact_action: Do not repeat the formation sentence, the CHSH squares, the readout split, the four-channel count, the achiral-orbit path factor, or this kappa split. Kappa stays unselected. A factor nonlinear in kappa stays open. Do not invent a hazard law.
 stop_condition: stop_at, or disk avail below 8Gi, or no non-overlapping route remains
 do_not_touch:
   - physics-loop/photon-vacuum-shift-20261009

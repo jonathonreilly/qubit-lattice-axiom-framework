@@ -111,3 +111,24 @@ Classification: open after that matched-hit review. The executed route is
 the proper orbit of `(0, 1, 2)` and one axis-role bond product. No CHSH
 square, no readout weight, and no polynomial of the bond matrix is part of
 the route. The formation triple stays unsupplied.
+
+## Cycle 7 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is audit metadata and was not merged.
+
+Commands and what they returned:
+
+- `git grep -l` for `soldered-covariant` on `origin/main` under `docs` and
+  `scripts`. The hits are the order-blind note of 2026-09-22 and its
+  runner. That note leaves `kappa` as a supplied scale on the exhibited
+  factors and does not decide the orbit of `(0, 1, 2)`.
+- `git grep` for `achiral_zero_one_two` on `origin/main`. No path. The
+  cycle-6 note is on this branch only.
+- `git merge-tree` against `origin/main` reported no content conflict.
+
+Classification: open after that matched-hit review. The executed route is
+the homogeneous expansion of `1 + kappa F` and the quarter-turn sectors on
+this orbit. No path correlation is part of the route. The formation triple
+stays unsupplied.

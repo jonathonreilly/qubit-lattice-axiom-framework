@@ -1,3 +1,37 @@
+# Assumptions and imports — cycle 7
+
+Supplied by the axioms, and used only as named:
+
+- proper cubic rotations
+- source/action left outside the axioms
+- the distribution does not supply the formation site, probability, or rate
+
+Declared for this cycle, not an axiom:
+
+- the formation reading of a nearest-neighbour rule
+- bond factors of the shape `1 + kappa F` with `F` independent of `kappa`
+- partial neighbour conditions
+- the uniform weight on the proper orbit of `(0, 1, 2)`
+- the rank-1 quarter-turn sectors used to populate both branches
+
+Not used: the `3×3` bond correlation, a CHSH score, a readout weight, a
+quadratic channel, the cycle-6 path masses, the dynamics clause, a
+Hamiltonian, literature comparator values, and the three approved primitives
+`scale_reference_primitive`, `kinetic_isotropy_primitive`, and
+`realized_state_primitive`. The premise registry at
+`docs/audit/data/axiom_premise_nodes.json` names those three primitives.
+None is an input here.
+
+The order-blind note is read for the product shape. Its transverse-sign
+rule and its path masses are not steps in these proofs. The achiral-orbit
+note is read only to identify its axis-role bond product with the odd
+positive-cap line.
+
+Counterfactual: if the factor depends on `kappa` in two independent powers,
+Theorem 2 does not apply. If partial neighbour conditions are dropped,
+Theorem 2 does not apply. Formation site, probability, and rate remain
+unsupplied.
+
 # Assumptions and imports — cycle 6
 
 Supplied by the axioms, and used only as named:

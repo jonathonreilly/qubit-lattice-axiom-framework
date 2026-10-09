@@ -13,36 +13,45 @@ Stop at `2026-10-10T12:02:06Z`. One worktree only:
 
 That sentence is still the axiom text. No note was opened that only repeats
 it. No hazard law was invented. The same memo's open-gate list still places
-source/action outside the axioms. Cycle 6 does not close that gate.
+source/action outside the axioms. Cycle 7 does not close that gate.
 
 ## Done this cycle
 
-Cycles 1–5 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
+Cycles 1–6 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
 `TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
-`TOTAL: PASS=61 FAIL=0`, and `TOTAL: PASS=44 FAIL=0`. Do not repeat the
-CHSH specializations, the readout split, or the four quadratic channels.
+`TOTAL: PASS=61 FAIL=0`, `TOTAL: PASS=44 FAIL=0`, and
+`TOTAL: PASS=16 FAIL=0`. Do not repeat the CHSH specializations, the
+readout split, the four quadratic channels, or the achiral-orbit path
+factor.
 
-Cycle 6 searched that same `origin/main` commit for a record alphabet that
-is not the bond correlation. The order-blind note of 2026-09-22 still says
-that generic orbits beyond the exhibited rules are not classified. Its
-chiral pair is the mirror union of `(1, 2, 3)`. No merge with `origin/main`
-was made: the one newer main commit is audit metadata, and `git merge-tree`
-reported no content conflict.
+Cycle 7 searched that same `origin/main` commit for a result that already
+decides whether soldered covariance forces `kappa` on the orbit of
+`(0, 1, 2)`. It does not. The order-blind note still leaves generic orbits
+unclassified, and its exhibited factors leave `kappa` as a supplied scale.
+No merge with `origin/main` was made: the one newer main commit is audit
+metadata, and `git merge-tree` reported no content conflict.
 
-On the proper cubic orbit of `(0, 1, 2)`:
+On bond factors `1 + kappa F` with `F` independent of `kappa`, and with
+partial neighbour conditions:
 
-- the orbit has `24` points and equals its full signed-permutation orbit
-- the transverse-sign factor of `(1, 2, 3)` is identically `0`
-- the axis-role sign defines a bond product fixed by `diag(1, 1, -1)`
-- at `kappa = 1/2` the three-site path is order-blind, the ends are
-  independent, and the adjacent correlation is `1/72`
-- `kappa` is not selected, and the alphabet is not a chiral pair
+- covariance at a nonzero `kappa` does not contain `kappa`
+- normalisation at one nonzero `kappa` holds if and only if it holds for
+  every `kappa`
+- no such product is normalised exactly on a nonempty finite set of
+  nonzero values
+- on the proper orbit of `(0, 1, 2)`, nonzero even quarter-turn families
+  normalise only at `kappa = 0`
+- each odd pure quarter-turn orbit line normalises for every `kappa`
+- the unit positive-cap line is the axis-role bond product of cycle 6,
+  and strict positivity on it is the interval `|kappa| < 1`
+- the bond factor of a pure line depends on `kappa c^2`, not on a
+  preferred pair `(kappa, c)`
 
-The matrix of cycles 1–5 is not used. This does not derive a source
-identification or the formation triple. The orbits of `(1, 1, 2)` and
-`(1, 2, 2)`, mixed alphabets, and higher-rank bond spaces stay open.
+`kappa` is not selected. This does not derive a source identification or
+the formation triple. A factor `1 + kappa F + kappa^2 G` stays open. The
+orbits of `(1, 1, 2)` and `(1, 2, 2)` stay open.
 
-Runner: `TOTAL: PASS=16 FAIL=0`.
+Runner: `TOTAL: PASS=30 FAIL=0`.
 
 ## Do not touch
 
@@ -53,19 +62,19 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 
 ## Landed this cycle
 
-Commits `9f7ab95597`, `caa947d12d`, `a242b4a1f2`, `2c87950822`, and
-`9bd6713a1b` are already on the branch. Cycle 6 is pushed onto the same
-branch for PR 9475. Do not merge it. Do not open a second PR.
+Commits `9f7ab95597`, `caa947d12d`, `a242b4a1f2`, `2c87950822`,
+`9bd6713a1b`, and `caff82f0cf` are already on the branch. Cycle 7 is pushed
+onto the same branch for PR 9475. Do not merge it. Do not open a second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 ## Next exact action
 
-Do not repeat the formation sentence, the CHSH evaluations, the readout
-split, the four-channel count, or this achiral-orbit factor. `kappa` stays
-unselected. Other 24-point orbits and higher-rank bond spaces stay
-unclassified. Do not invent a hazard law. Do not identify a polynomial
-channel with a mass density.
+Do not repeat the formation sentence, the CHSH squares, the readout split,
+the four-channel count, the achiral-orbit path factor, or this kappa split.
+`kappa` stays unselected. A factor nonlinear in `kappa` stays open. Do not
+invent a hazard law. Do not identify a polynomial channel with a mass
+density.
 
 ## Cleanup
 

@@ -70,3 +70,17 @@ orbit is achiral of size `24`. The transverse-sign factor is identically
 `0`. The axis-role product is mirror-fixed, and the path correlation is
 `1/72` at `kappa = 1/2`. Selecting `kappa` is not implied. Other 24-point
 orbits and higher-rank bond spaces are not implied.
+
+Family G: partial-neighbour expansion of one bond factor `1 + kappa F`,
+and the quarter-turn sectors of the rank-1 products on the orbit of
+`(0, 1, 2)`.
+
+Target contract: whether soldered covariance forces a nonzero `kappa`, or
+whether every normalised product of this shape leaves `kappa` free. No
+path mass and no CHSH square.
+
+Terminal status for cycle 7: proved under the product hypothesis.
+Covariance does not contain `kappa`. Normalisation at one nonzero value
+holds for every value, or only at `0`. Both branches occur on this orbit.
+Selecting `kappa` is not implied. A second power `kappa^2 G` is not
+implied.

@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/zero_one_two_soldered_bond_kappa_not_forced_2026_10_09.py
+runner_sha256: 1da4c6948e7317a940f1120e7e4fbe3ce86597924a2edf95dce512508c07654b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24 and the orbit has 24 points
+PASS quarter turn has six orbits of length 4
+PASS the six orbits are the two caps, the two unit heights, and two zero heights
+PASS the section along e_z is the identity, so X_z reads the eigenfunction
+PASS half turn about x is proper, squares to the identity, and sends e_z to -e_z
+PASS all 6 even lines share one cocycle and all 6 odd lines share another
+PASS one even combination and one odd combination keep the sector cocycle
+PASS a sum of the two eigenvalues on the positive cap is not a cocycle
+PASS the quarter turn's raw products match the cocycle on one even and one odd line
+PASS even opposite moment is 8 times the three partner products, on every pair probe
+PASS odd opposite moment obeys the same partner formula
+PASS even perpendicular moment is 2(st+su+tu) on the partner sums
+PASS even directional sum is 4 times the coefficient sum
+PASS every odd family has directional sum 0
+PASS the quadratic (s+t+u)^2 - 2(st+su+tu) - (s^2+t^2+u^2) has every coefficient zero
+PASS on the degree-determining grid, partner-antisymmetric even moments are mean 0, perpendicular 0, and opposite -8(p^2+q^2+r^2)
+PASS each odd pure orbit line has every subset moment zero
+PASS on an odd pure line each point meets exactly one direction
+PASS the odd two-cap family has opposite moment 8, so it is not moment-flat
+PASS the odd cap-plus-equator family has a nonzero perpendicular moment
+PASS the odd positive-cap line has a bond with product +1
+PASS a pure line scales by c^2: the bond product at c=2 is 4 times the product at c=1
+PASS the pure odd line is pointwise 2 at kappa 1 on that bond, while the one-bond average stays 1
+PASS the odd positive-cap line has mean 1 for every mark in {-1,0,1}^6 at four kappa values
+PASS the even positive-cap indicator has sum 4 and the one-bond excess scales as kappa
+PASS unit pure-line opposite bond products are exactly {-1, 0, 1}
+PASS a two-bond odd witness is homogeneous of degree 2 and nonzero at kappa 1
+PASS on each odd line, X_{-z} is a constant sign times X_z composed with the half turn
+PASS the odd positive-cap line reproduces the axis-role bond product
+PASS the subset expansion of one full mark agrees on the witness and the pure line
+per_element: checked each of the 24 record values and each of the 6 directions for support, cocycle ratios, and subset moments
+per_site: one alphabet point carries one record value; no multi-site window or path law was enumerated
+per_mode: even and odd quarter-turn sectors were separated; their sum on one cap is not a cocycle
+per_block: partial neighbour conditions were used only through subset moments and explicit one-bond and two-bond factors
+lattice_wide: checked and not executed — no infinite lattice, no formation rate, and no hazard law
+TOTAL: PASS=30 FAIL=0
+
+----- stderr -----
+

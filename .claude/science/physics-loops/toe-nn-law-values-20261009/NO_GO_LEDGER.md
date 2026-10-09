@@ -67,3 +67,17 @@ N7's steelman is accepted as an out-of-domain escape: a higher-rank bond
 space, or the orbit of `(1, 1, 2)`. `kappa` stays unselected. No hazard
 law was introduced. The source/action open gate stays open. The bond
 matrix of cycles 1–5 is not this carrier.
+
+Cycle 7 does not claim that every bond factor on every alphabet leaves
+`kappa` free, and it does not claim that `kappa` is forced to `0`. The
+scoped statement is narrower: for `phi = 1 + kappa F` with `F` independent
+of `kappa`, and with partial neighbour conditions, normalisation at one
+nonzero `kappa` holds for every `kappa` or only at `0`. On the proper orbit
+of `(0, 1, 2)`, nonzero even quarter-turn rank-1 families are only at `0`,
+and odd pure orbit lines are free for every `kappa`.
+
+N7's steelman is accepted as an out-of-domain escape: a second power
+`kappa^2 G`, or normalisation required only for the full six-neighbour
+condition. `kappa` stays unselected. No hazard law was introduced. The
+source/action open gate stays open. The cycle-6 path correlation is not
+recomputed.

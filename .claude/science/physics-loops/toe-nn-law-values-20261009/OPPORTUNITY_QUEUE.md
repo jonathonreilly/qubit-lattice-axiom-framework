@@ -1,6 +1,6 @@
 # Opportunity queue
 
-Ranked after cycle 6. Refresh `origin/main` before each search.
+Ranked after cycle 7. Refresh `origin/main` before each search.
 Searched commit:
 `d9b869b97944676aaa759915462c529dc276a04c`.
 
@@ -41,6 +41,14 @@ Searched commit:
    `(1, 1, 2)`, `(1, 2, 2)`, mixed alphabets, and higher-rank bond spaces
    stay unclassified. Do not invent a hazard law. Do not overlap the live
    Codex photon or D3Q27 branches.
+8. **Whether covariance forces `kappa` on this same alphabet.** Done on
+   this branch for factors `1 + kappa F` with `F` independent of `kappa`
+   and with partial neighbour conditions. Covariance does not contain
+   `kappa`. Normalisation at one nonzero value holds for every value, or
+   only at `0`. Nonzero even quarter-turn families are the second branch.
+   Odd pure orbit lines are the first, and the unit line's positivity cut
+   is the interval `|kappa| < 1`. Do not repeat the split. A factor
+   `1 + kappa F + kappa^2 G` stays open. Do not invent a hazard law.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

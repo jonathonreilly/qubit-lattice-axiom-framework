@@ -169,3 +169,43 @@ the note states its hypotheses, pins one runner and cache, keeps the
 negative claim inside this alphabet, separates the mirror fold from the
 path enumeration, and does not write an audit verdict. Sections that
 belong to independent review were not run.
+
+2026-10-09 cycle 7 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is whether every normalised
+  soldered-covariant bond product on the orbit of `(0, 1, 2)` leaves
+  `kappa` free, or whether covariance forces a value. Source: the cycle-6
+  handoff, which left `kappa` unselected, and the campaign block that
+  forbids inventing a forced value.
+- V2. Not on `origin/main`. `git grep -l` for `soldered-covariant` hits
+  only the order-blind note and its runner. `git grep` for
+  `achiral_zero_one_two` returns no path. That note's factors keep `kappa`
+  as a supplied scale.
+- V3. Theorems 1–3 of the cycle-7 note, checked by the paired runner.
+  The product shape, partial neighbour conditions, and the formation
+  triple remain open.
+- V4. Before, one axis-role product was normalised at a supplied
+  `kappa = 1/2`. After, covariance does not contain `kappa`, normalisation
+  at one nonzero value holds for every value or only at `0`, and both
+  branches occur on this orbit. Strict positivity on the unit line is
+  `|kappa| < 1`.
+- V5. Not a corollary of repeating the cycle-6 path at another `kappa`.
+  The expansion isolates powers for every `F` independent of `kappa`. The
+  even sector is a family cycle 6 did not test. The path correlation is
+  not recomputed.
+
+No-go gate for the scoped shape is in the cycle-7 source note. The free
+branch is nonempty. A universal claim that every nonlinear factor leaves
+`kappa` free, or that `kappa` is forced to `0`, is not made. Author
+mutations, each on a scratch copy that was deleted: demanding that the
+even positive-cap indicator stay normalised at `kappa = 1` fails one
+check; demanding that an odd pure line have a nonzero subset moment fails
+one. Independent review has not been requested. No audit grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+negative claim inside the linear shape and the partial-neighbour reading,
+separates the cocycle table from the raw quarter-turn product, and does
+not write an audit verdict. Sections that belong to independent review
+were not run.

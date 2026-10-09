@@ -375,3 +375,10 @@ The supervisor writes its own thread before either reports.
 - Owner readings are hypotheses, not rules.
 - Axiom changes are named only as prices.
 - Every no-go or necessity claim that survives into the summary gets the codex sol referee.
+
+### B results (2026-10-09; B1 and B2 Opus 5.5 xhigh plus supervisor thread; referee codex sol: all three CONFIRMED WITH CORRECTIONS)
+
+See SUMMARY.md §8 and `agents/B_referee.md`.
+- **The conditional core survives.** In a local, weakly coupled 3+1 EFT with one massless helicity-2 pole, a Lorentz-invariant S-matrix and no compensator or custodial sector, an exact linearized-diffeomorphism Ward identity forbids an h-only mass. Generic physical labels need protection or extreme tuning. The soft-theorem and bootstrap hypotheses then give universality and GR's structure.
+- **Not proved:** that the grain must be event-like, fluid, coherent, or of unbounded valency. BHS is narrower: it excludes only an intrinsic finite-valency Lorentz-equivariant map on a Poisson sprinkling.
+- **B1 c5** (4D Euclidean random lattice): bounded FAIL for the tested implementation.

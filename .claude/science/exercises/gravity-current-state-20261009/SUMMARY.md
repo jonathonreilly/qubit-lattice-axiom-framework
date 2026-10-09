@@ -79,7 +79,7 @@ All of this is seen in the models we built, for small waves and weakly interacti
 ## 5. The exact price (suggested; assembled from refereed parts)
 
 On the framework's fixed grid of regularly repeating sites, a graviton that is massless to the observed bound needs one of the following:
-1. **A tuned cancellation of two vacuum numbers** (the two shear stiffnesses), to about one part in 10⁹⁸, a second cosmological-constant-sized tuning. This is checked arithmetic.
+1. **A tuned cancellation of two vacuum numbers** (the two shear stiffnesses), each to μ ≤ 2.4e8 eV⁴ = (124 eV)⁴. That is about one part in 10⁹⁸ of their natural size (K3a″'s coefficient of about 1.2e-3 times the reduced Planck mass to the fourth), or 1.1e-104 of M_Pl⁴. It is a second cosmological-constant-sized tuning. Checked arithmetic, confirmed by the referee (B1 c1).
 2. **Giving up the fixed site set** (the Lattice axiom). The replacement must also keep one shared light speed. Frozen spatial replacements fail (E2/E3, §7). The spacetime-event substrate passes the averages exactly, but its noise question is open (E1: INCONCLUSIVE, leaning FAIL; §7).
 
 The middle option from the draft (a regulator that keeps the grid but suppresses the stiffness parametrically) was **closed by T2** (bounded, refereed). The only non-tuned keep-the-grid loophole left is a non-ordinary interacting law that evades Lemma R, and no such law is known.
@@ -134,3 +134,55 @@ Every run used a worker on Opus 5.5 at xhigh and a codex sol referee. Readings w
 - **The spacetime-event substrate is the only architecture whose averages are exactly right.** Its open problem is noise, not the averages.
 - **Its standard wave operator has signed weights.** Waves need signed weights in any step-by-step rule (block 122, on main), and on random events those weights amplify the substrate's noise.
 - **The next test, if wanted:** an event dynamics without that gain (a stable generalized d'Alembertian, or influence passed only along links), or a direct small-ε measurement of the growth exponent.
+
+## 8. Follow-up 2: reasoning backward from gravity to the substrate (2026-10-09)
+
+The owner asked to "reason backward about what the substrate must be to get everything we need for gravity".
+
+**Who did it.**
+- B1 (physics-first) and B2 (framework-first), both Opus 5.5 at xhigh, working independently.
+- The supervisor's own thread, written before either reported.
+- The codex sol referee: **all three CONFIRMED WITH CORRECTIONS.**
+- Texts: `agents/B1_report.md`, `agents/B2_report.md`, `agents/supervisor_thread.md`, `agents/backward_comparison.md`, `agents/B_referee.md`.
+
+**In plain words.**
+Working back from what gravity does, the fabric of space cannot behave like a fixed grid of positions that actually exist. A grid that physically exists resists shear, and that resistance gives the graviton a mass. Rotation or Lorentz symmetry, however large, cannot forbid that mass; Einstein's gauge symmetry can. So any substrate must either:
+- carry an exact version of that gauge symmetry, so that relabelling the grain changes nothing, possibly holding in each actual arrangement or history; or
+- show some other mechanism, with numbers, that keeps the graviton massless, keeps one light speed, and keeps the grain's randomness off long waves.
+
+If it does, the rest follows: the equal pull on everything (Weinberg) and Einstein's nonlinear equations (Deser/Wald). These derivations do **not** prove that the grain must be random events, a fluid, or quantum and unrecorded. They show that those are the known ways to get the protection.
+
+**Proved under stated hypotheses (refereed).**
+- **The gauge identity forbids the mass; rotations and Lorentz symmetry do not.** Linearized gauge invariance, imposed for every momentum, forbids every local mass form of h. Point groups and the Lorentz group leave tr h² invariant. The counts of free mass numbers: cubic O has 2 in the TT channels, icosahedral 1, W(B4) 3.
+- **Poisson randomness is shape-blind in law.** A Poisson process is invariant in law under every volume-preserving map.
+- **Lemma Q, corrected.** A locally finite set invariant under a connected group lies in the group's fixed set. So a classical configuration with two or more points cannot be invariant under full translations, full SL(d) or the full Lorentz group. Its use survives: a classical grain carries those symmetries only in law. It does not exclude internal or gauge symmetries acting on fields over a fixed point set.
+- **BHS:** no Lorentz-equivariant finite-valency neighbour map exists on a Poisson sprinkling.
+- **The classic theorems,** each with its hypotheses: Weinberg–Witten, the soft theorem, and the spin-2 bootstrap.
+
+**Supported by naturalness arguments, not logically forced (referee item 14).**
+- Fixed physical labels give a dangerous shear response.
+- Time and space must be exactly alike.
+- The gauge identity must hold per realization.
+- "Gauge or coherent" exhausts the quiet-noise mechanisms.
+- Records help only as spacetime events.
+
+The five properties (relational, spacetime-like, dynamical, no frozen labels, shared) are **a design programme**, not a theorem. The real exits are tuning, extra symmetries, non-locality, holography, constrained sectors, correlations and strong RG flows.
+
+**New checks (refereed).**
+- **4D Euclidean random lattice** (the finite-valency loophole of BHS): mean zero, but white per-site TT noise of about 0.06, flat over a 16× range in N. This is a **bounded FAIL for the tested implementation** (one kernel, a free scalar), not a class-wide exclusion.
+- **Noise power counting:** mass-type noise is relevant in frozen 3D and marginal in white 4D; kinetic-type noise is irrelevant. "Noise only through dimension ≥ 4 operators" is a **sufficient** criterion, not a necessary one.
+- **A frozen-box record count** (one record per Planck cell) exceeds black-hole entropy by about 2.4e38 for a solar mass, if each cell is an independent O(1)-entropy record.
+
+**Records.**
+- If every Planck-density event were a record that projects a changing matter quantity, matter would heat or Zeno-freeze. The matched bound is about 1e-151 per event.
+- **The tension is resolved if** the event locks only its own occurrence and relations, or something conserved or gauge-invariant. Matter records would then be sparse and coarse.
+- **Reading:** "an event happening" and "a value being locked" have to be different things if spacetime itself is made of events.
+
+**The owner's "neighbourhood moves across the substrate (qubits too)".** In its relational reading, where the law never sees the underlying sites, this has the shape of the textbook escape: relabelling is gauge. To meet everything it would also have to treat time and space alike, and keep its fine structure off long waves, either per realization or by staying quantum. Neither is shown.
+
+**Next tests, in the referee's order.**
+1. **Link-noise propagation with matter.** Phase, amplitude and timing residuals, plus the retarded TT self-energy; E1′ is its first part.
+2. **The interacting hypercubic TT Ward identity.** Does keeping the grid cost only the two shear tunings, or a graviton-speed tuning too?
+3. **Extend the random-lattice check:** direct spectra, a second kernel, fermions.
+4. **The response spectrum of a classical record gas.**
+5. **Coherent against frozen substrate,** as a mechanism demonstration only.

@@ -1,6 +1,6 @@
 # B2 (framework-first backward reasoning): agent report (Claude Opus 5.5, xhigh; 2026-10-09)
 
-Verbatim. Same-family, not refereed; necessity claims go to the codex sol referee before entering the summary. Scripts in `scripts/B2/`.
+Verbatim. Same-family. Refereed by codex sol: CONFIRMED WITH CORRECTIONS (`B_referee.md`); the corrected statements are in SUMMARY.md §8. Scripts in `scripts/B2/`.
 
 # B2 (framework-first): reasoning backward from gravity to the substrate
 

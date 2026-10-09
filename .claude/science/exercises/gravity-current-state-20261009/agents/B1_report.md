@@ -1,6 +1,6 @@
 # B1 (physics-first backward reasoning): agent report (Claude Opus 5.5, xhigh; 2026-10-09)
 
-Verbatim. Same-family, not refereed; necessity claims go to the codex sol referee before entering the summary. Scripts in `scripts/B1/` (c5 imports `scripts/E23/e23_core.py`).
+Verbatim. Same-family. Refereed by codex sol: CONFIRMED WITH CORRECTIONS (`B_referee.md`); the corrected statements are in SUMMARY.md §8. Scripts in `scripts/B1/` (c5 imports `scripts/E23/e23_core.py`).
 
 # B1 report: reasoning backward from what gravity must deliver to what the substrate must be
 

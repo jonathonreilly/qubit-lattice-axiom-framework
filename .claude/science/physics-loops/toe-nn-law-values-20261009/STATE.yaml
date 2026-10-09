@@ -22,8 +22,9 @@ open_imports:
 no_go_routes_pruned:
   - full proper-cubic invariance forces the singlet
 trace_class: negative_route_pruning
-pr_status: not opened
-next_exact_action: Finish the citation manifest if the build succeeded, commit the source triple plus loop pack, push this branch, and open one milestone PR. Then search origin/main for an exact CHSH evaluation of the product-class menu laws before computing one.
+pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
+commit: 9f7ab95597
+next_exact_action: Search origin/main for an exact CHSH evaluation of the product-class menu laws before computing one. If absent, compute that comparison on this same branch and push onto PR 9475. Do not open a second PR for a corollary.
 stop_condition: stop_at, or disk avail below 8Gi, or no non-overlapping route remains
 do_not_touch:
   - physics-loop/photon-vacuum-shift-20261009

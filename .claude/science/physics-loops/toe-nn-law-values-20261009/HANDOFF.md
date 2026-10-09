@@ -31,20 +31,25 @@ and `physics-loop/toe-dynamics-bridge-20261009` under
 alone. Do not open a second worktree. Disk was about 24Gi free after this
 checkout. Home `~/Projects/Physics` stays uncommitted.
 
+## Landed this cycle
+
+Commit `9f7ab95597` is on `origin/physics-loop/toe-nn-law-values-20261009`.
+PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
+Do not merge it. The citation manifest was regenerated from a fresh graph
+(6870 nodes, 15419 edges) and `citation_graph.json` was deleted.
+
 ## Next exact action
 
-1. If `citation_build.log` in the campaign directory ends in `MANIFEST_OK`,
-   review the manifest diff and keep only that generated file.
-2. Commit the note, runner, cache, loop pack, and manifest if present.
-3. Push the branch and open one PR. Do not merge.
-4. Before any new computation, search `origin/main` for an exact CHSH value
-   of the product-class menu laws `(p,q,r)`. The September formation census
-   already leaves those weights free. Do not repeat it.
-5. The useful next discriminator is a finite menu or records-only law whose
-   CHSH square is compared with 4 and with 8, with the density representation
-   not assumed. If that search shows the comparison already exists, pivot to
-   the directed six-parameter CHSH maximum inside the density family, and say
-   that the density hypothesis remains.
+1. Search `origin/main` for an exact CHSH value of the product-class menu
+   laws `(p,q,r)`. The September formation census already leaves those weights
+   free. Do not repeat that census.
+2. If no exact comparison with CHSH squares 4 and 8 exists, compute one
+   finite menu or records-only law on this same branch, without assuming a
+   two-qubit density. Push onto PR 9475. Do not open a second PR unless the
+   result is a different claim family.
+3. If that comparison already exists, pivot to the directed six-parameter
+   CHSH maximum inside the density family and keep the density hypothesis
+   explicit.
 
 ## Cleanup
 

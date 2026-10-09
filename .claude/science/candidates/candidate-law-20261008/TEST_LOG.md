@@ -231,10 +231,31 @@ The line is not changed after the fact.
   - a stress of very long range.
 - **No symmetry forbids the term.** Gauge, translation and cubic symmetry allow two TT numbers.
 
-**Effect on priors.**
-- X loses 0.4× on every room, since the diagnosis is not room-specific.
-- G loses 0.7×, since an emergent graviton faces the same lattice-scale momentum breaking unless an exact emergent constraint protects it.
+**Effect on priors** (moderated after the referee, below).
+- X loses 0.6× on every room.
+- G loses 0.85×.
 
 **Follow-up.** K3a′, pre-registered above before running, asks whether the defect falls fast enough with range: a quasi-local stress about 1e11 sites wide (about 1e-23 m) would be invisible.
 
-**Referee.** codex sol, owed and launched.
+**Referee: codex gpt-5.6-sol xhigh, NOT CONFIRMED as a theorem (2026-10-08).** The bounded obstruction is confirmed; K3a stays INCONCLUSIVE.
+
+Confirmed:
+- **The criterion.** On infinite Z³, for compact support, conservation of [H,P] and [H,L] is necessary and sufficient. L is coordinate-weighted.
+- **Free fields.** 3D Maxwell has an *exact* radius-½ stress, 207 coefficients that are multiples of 1/16 (`checks/referee_K3a/referee_maxwell3d_exact.py`).
+- **The lattice-scale umklapp resonances**, with |p|min ≈ 1.49, are genuine.
+
+Not supported or overclaimed:
+- **"No finite-range charge" holds only for the tested class.** That class is a one-body fermion symbol plus a scalar photon weight, at electron range ≤ 4 and photon range 3, not 4. It omits:
+  - polarization-matrix photon charges;
+  - higher-body and mixed charges;
+  - larger and quasi-local ranges.
+- **The defect percentages are optimizer diagnostics, not bounds.** The drop from 13% to 3.5% blocks extrapolating any floor.
+- **The mass estimate is unsupported.**
+  - The 1e-5–1e-4 figure was α·δ², not e²·δ².
+  - No interacting remainder or graviton pole was computed.
+  - For the strictly linear coupling, the free-level shape coefficients are +0.118/+0.071.
+- **Lattice EMT literature** (Caracciolo et al., Suzuki): EMTs are defined through Ward identities and renormalization. That is not a theorem excluding an exact stress for this Hamiltonian.
+
+Strongest correct statement (referee): genuine lattice-scale resonances obstruct every conserved momentum in the tested bounded class at O(e). The evidence strongly supports generic lattice-scale gauge breaking, but it does not exclude larger-range, quasi-local, polarization-matrix, higher-body or engineered stresses. It does not establish a graviton-mass size either.
+
+**K3a′.** The referee's corrections were passed to the worker before its fit was used.

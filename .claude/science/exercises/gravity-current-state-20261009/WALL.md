@@ -51,22 +51,28 @@ What has happened since. Nothing below is audited. "Refereed" means codex gpt-5.
 
 ## Step 1: the wall
 
-### Plain version (draft for the blind check; at most about 150 words)
+### Plain version (revised after the blind check)
 
-We want gravity to come out of the framework, not be put in. The framework is a fixed grid of sites. Real gravity has four checked features:
-- its waves travel at light speed;
-- they have no mass;
-- they stretch and squeeze space in one pattern;
-- gravity pulls on everything equally.
+We want gravity to come out of the framework's own rules instead of being added as an extra ingredient. A theory that produces gravity explains it; one that adds it only makes room for it.
 
-We can write Einstein's equations for small waves on the grid, but every way we have tried to make them come from the grid's own parts fails one feature:
-- **qubit-like parts:** the waves come out too slow, or carry an extra sideways shake;
-- **continuous parts:** the waves pick up a mass, because the grid's interacting vacuum resists being sheared the way a crystal does, and only a hand-tuned number removes it;
-- **records as the carrier:** there is no long-range pull.
+The framework is a grid of sites that never changes: which sites neighbour which is fixed. Lengths and shapes would be carried by values living on the sites. A "record" is a permanent fact fixed at one site.
 
-This is shown for small waves, specific models we built, and weak interactions. Getting past it means a grid construction with massless, pure, universal gravity and no hand-tuning, or naming the premise that must go.
+Experiments show that gravity:
+- has waves that travel at light speed;
+- has waves with no mass, which is why they reach across the universe;
+- has waves that stretch one way while squeezing the other;
+- pulls on everything equally.
 
-*Analogy only:* a crystal resists shear; a liquid does not.
+Every construction we have built fails at least one of these:
+- **sites holding on/off switches:** the waves are too slow, or wobble sideways as well;
+- **sites holding continuous dials:** the waves gain a mass. Matter's lowest-energy state on the grid resists being sheared, and that resistance acts as the mass. Only a number set by hand cancels it;
+- **records as the carrier:** no pull at long distances.
+
+All of this is seen in the models we built, for small waves and weakly interacting matter. None of it is proved in general.
+
+Getting past the wall means one of two things:
+- a construction with all four features and nothing set by hand;
+- or a proof that one specific starting assumption has to change. The candidates include the on/off sites, the fixed grid, gravity as a wave pattern on the grid, and the demand that nothing be set by hand.
 
 ### Precise version
 
@@ -115,4 +121,15 @@ The emergent route (iv) has no construction.
 
 ### Blind check
 
-See `agents/blind_check.md` (Claude Opus 5.5, fresh context, given only the plain version).
+A fresh agent (Claude Opus 5.5, no files, no context) was given only the first draft of the plain version. Its full text is in `agents/blind_check.md`.
+
+- **Its restatement matched the precise version** on the goal, the failures, the scope and what passing means. It read "fails one feature" as "at least one".
+- **It flagged one real bias:** the closing analogy ("a crystal resists shear; a liquid does not") points at one escape. So does "naming the premise that must go", placed next to "fixed grid". Both were removed or neutralized: the candidate premises are now listed side by side, including the naturalness demand.
+- **It flagged these unclear terms,** all fixed in the revision:
+  - "records" and "carrier" were undefined;
+  - "one pattern" was undescribed;
+  - "picks up a mass" was not explained;
+  - "weak interactions" could be read as the weak nuclear force;
+  - "shown" was ambiguous between proved and seen;
+  - "fixed grid" left open how space can stretch on it;
+  - "fails one feature" should say "at least one".

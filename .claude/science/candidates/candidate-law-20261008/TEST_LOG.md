@@ -165,7 +165,7 @@ Bravyi–Kitaev superfast needs a fixed tournament, so it fails. Verstraete–Ci
 - one occupation-transfer monomial per direction;
 - sign-type product dressings, Pauli/Z₄, plus a Z₈ census.
 
-The worker is Sonnet 5.5. The referee (codex sol) is running.
+The worker is Sonnet 5.5. The referee verdict is below.
 
 **What the worker found (CHECKED unless marked).**
 - **The holonomy on the occupation domain is c × a Pauli string.**
@@ -262,7 +262,7 @@ Strongest correct statement (referee): genuine lattice-scale resonances obstruct
 
 ## G0c: face-qubit bosonization under the 24 turns (2026-10-08)
 
-**Verdict: PASS on the pre-registered line.** The worker is Sonnet 5.5. The referee (codex sol) is running, so priors do not move until it reports.
+**Verdict: PASS on the pre-registered line.** The worker is Sonnet 5.5. The referee verdict is below.
 
 **What the worker found.** The source is the arXiv:1807.07081v2 PDF, read directly.
 
@@ -326,7 +326,7 @@ Corrections:
 
 ## K3a′: how fast does the stress defect fall with range? (2026-10-08)
 
-**Verdict against the fixed line: FAIL.** The worker is Sonnet 5.5, and the K3a referee's corrections were applied. The referee (codex sol) is running, and nothing goes into `RESULTS` until it reports.
+**Verdict against the fixed line: FAIL.** The worker is Sonnet 5.5, and the K3a referee's corrections were applied. The referee verdict is below.
 
 **Protocol.**
 - **Charge class.** Taste-scalar charges with an exact IR constraint.
@@ -373,7 +373,7 @@ Not confirmed:
 
 ## K3a″: the interacting vacuum's shear response, computed directly (2026-10-08)
 
-**Verdict against the fixed line: FAIL, a naturalness kill.** The worker is Sonnet 5.5. The referee (codex sol) is running, and nothing goes into `RESULTS` until it reports.
+**Verdict against the fixed line: FAIL, a naturalness kill.** The worker is Sonnet 5.5. The referee verdict is below.
 
 **What was computed (CHECKED).**
 - **The model.** A continuous-time Hamiltonian with constant spatial h. The photon is in a generalized Coulomb gauge, ∇·(M⁻¹A) = 0. The O(e²) energy is the sum of pair-plus-photon exchange, the diamagnetic term and the Coulomb term.
@@ -475,7 +475,7 @@ Corrections:
 
 ## W1: interacting vacuum on a dynamical-length Regge complex (2026-10-08)
 
-**Verdict against the fixed line: FAIL.** The worker is Sonnet 5.5. The referee (codex sol) is running, and nothing goes into `RESULTS` until it reports.
+**Verdict against the fixed line: FAIL.** The worker is Sonnet 5.5. The referee verdict is below.
 
 **The model.**
 - **The complex.** 3D Kuhn/Coxeter, with 7 edge classes. Each tetrahedron's metric comes from its six edge lengths.
@@ -557,7 +557,7 @@ Neither the four sweeps nor the supervisor cited them. K3a″'s new content is t
 
 ## FR1: static field of a frozen cluster (2026-10-09; owner request)
 
-**Verdict against the fixed line: FAIL overall.** The worker is Sonnet 5.5. The referee (codex sol) is running.
+**Verdict against the fixed line: FAIL overall.** The worker is Sonnet 5.5. The referee verdict is below.
 
 **(a) Gapless free-fermion sea** (exact infinite-lattice Kogut–Susskind Green function with a T-matrix over the cluster, CHECKED against brute force and ED). This is the static real-space version of block 193's local T-matrix.
 - **Blocked reading:**
@@ -614,7 +614,7 @@ Phenomenologically that means a specially constrained scalar, or more naturally 
 
 ## FR3: can moving records carry gravitational waves? (2026-10-09; owner request)
 
-**Verdict against the fixed line: FAIL for all three of the repo's moving-record models.** The worker is Sonnet 5.5. The referee (codex sol) is running, and nothing goes into `RESULTS` until it reports.
+**Verdict against the fixed line: FAIL for all three of the repo's moving-record models.** The worker is Sonnet 5.5. The referee verdict is below.
 
 | Model | Conserved | Long-wavelength modes | Helicity ±2? |
 |---|---|---|---|
@@ -626,7 +626,7 @@ Phenomenologically that means a specially constrained scalar, or more naturally 
 
 **Plain reading.** Moving records spread or make sound, but never the stretch-and-squeeze ripple. A tensor wave needs a symmetric-tensor degree of freedom with its own propagating dynamics, and no record model supplies one. Records carry a scalar (number), at most a vector (momentum, under the wind clause), and internal labels. This agrees with campaign 8's "a crowd of records spreads, not ripples".
 
-**Referee.** codex sol, running.
+**Referee.** See below.
 
 **FR3 referee: codex gpt-5.6-sol xhigh, CONFIRMED WITH CORRECTIONS (2026-10-09).**
 

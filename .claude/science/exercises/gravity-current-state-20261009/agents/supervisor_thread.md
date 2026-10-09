@@ -97,3 +97,73 @@ Take one massless field in a constant, volume-preserving metric g = exp(−tε),
 - **My first caveat was the one that mattered.** It said the BD sum runs over the whole past light cone, whose volume is infinite, so per-realization fluctuations could scale much worse. They do: the row noise gain diverges with the size of the past (EXACT), and the naive evolution is exponentially unstable at the tested ε. Only the extrapolation to physical ε keeps this from a FAIL.
 - **S1** had the coefficient right for a slab past. The referee's "missing Jacobian" was a region convention, slab against diamond (S1b, CHECKED).
 - **Reading (not tested).** Waves need signed weights in any step-by-step rule (block 122, on main as `docs/ADMISSIBILITY_RULE_WAVES_NEED_SIGNED_WEIGHTS_..._2026-09-24.md`; PR #9176 closed after owner integration). On a Poisson substrate, signed weights turn the substrate's noise into a gain that grows with the size of the past. A rule that moves influence only along links, with positive weights (Johnston's massless path sum), avoids the cancellations, but it is a propagator from sources, not an initial-value evolution. Whether the instability is BD-specific is therefore the natural next question. Prior art on path sums: the event era's complex-phase path sums on DAGs, dropped for rank-1 collapse.
+
+## Follow-up 2: my own backward derivation (written 2026-10-09 after launching E1′, B1 and B2, before any of them reported)
+
+**Labels:** comparator (literature), proved or checked (this packet), suggested (argument), reading. Each step names the theorem's hypotheses.
+
+**Step 1. Universality comes free (comparator: Weinberg 1964 soft theorem).**
+- **Statement:** in a Lorentz-invariant S-matrix with a massless spin-2 particle, the particle's soft couplings must all be equal, which is the equivalence principle.
+- **Hypotheses:** exact low-energy Lorentz invariance, a massless spin-2 pole, a local S-matrix.
+- **Consequence:** the substrate does not need a separate mechanism for universal coupling. It needs (i) a massless helicity-2 mode and (ii) Lorentz invariance in the infrared, accurate to the LV bounds.
+- **Completion (comparator: Deser/Feynman self-coupling).** Once those two hold, the low-energy theory is GR.
+
+**Step 2. The graviton cannot be an ordinary composite (comparator: Weinberg–Witten).**
+- **Statement:** a Lorentz-covariant theory with a conserved, Lorentz-covariant stress tensor has no massless helicity-2 particle that carries energy.
+- **Escapes, each a hypothesis failing:**
+  - (a) a gauge redundancy, so the graviton's stress is not gauge-covariant: diffeomorphisms;
+  - (b) the substrate theory does not live in the same spacetime: holographic emergence;
+  - (c) no UV Lorentz invariance, which Step 3 makes costly.
+- **Consequence (suggested):** the graviton is either the substrate's own geometry, carried by a redundancy, or holographic.
+
+**Step 3. One light cone without tuning (comparator: Collins et al.; checked here: T1).**
+- A UV preferred frame feeds infrared speed splits at O(g²/16π²) unless a symmetry protects them.
+- T1 found two sufficient protections: exact Lorentz invariance in law, or a hypercubic symmetry that treats time like space (Z⁴).
+- **Consequence:** time and space must be treated alike. An absolute "now" carried by the substrate is ruled out unless tuned.
+
+**Step 4. No labels that resist shear (comparator: Rubakov–Tinyakov, Dubovsky; proved here: Lemma R; checked here: K3a″, W1).**
+- A medium whose points carry physical labels gives the graviton a mass equal to its shear stiffness. Three things protect against this:
+  - (i) a gauge redundancy (the labels are unphysical);
+  - (ii) no spatial labels at all;
+  - (iii) a fluid's relabelling symmetry.
+- **Excluded:**
+  - (iii) by F1b's kill (refereed): flat space forces ρ + p = 0, which removes the phonon kinetic term, and the fluid's frame splits speeds;
+  - a fixed Z³ or Z⁴ has physical labels and only discrete translations, so Lemma R applies;
+  - K7a's gauge-invariant linear graviton on Z⁴ needs an exactly conserved interacting stress, which a fixed lattice does not supply (K3a, bounded).
+- **Consequence (suggested):** the points of the substrate must be gauge, i.e. physics depends only on relations. Alternatively there are no spatial points at all.
+
+**Step 5. One frozen random pattern is too noisy (proved here: Lemma P, corrected; checked here: E2, E3, F1a).**
+- If shape-blindness comes from the symmetry of the substrate's law, a frozen spatial realization has white noise. Quiet orders are not protected.
+- **Consequence:** the substrate is not one frozen spatial configuration. It is a spacetime structure (E1: marginal by power count, but BD dynamics amplifies the noise), or a quantum sum over configurations (not tested anywhere here), or both.
+
+**Step 6. Lorentz-invariant discreteness has unbounded valency (comparator: Bombelli–Henson–Sorkin).**
+- No Lorentz-invariant rule picks finitely many neighbours from a sprinkling.
+- **Consequence:** under the exact-Lorentz option of Step 3, "nearest-neighbour adjacency" with finite valency must go. Under the Z⁴ option, labels come back and Step 4 bites.
+- **The fork:** keep finite neighbourhoods and pay a redundancy that a fixed grid lacks, or keep Lorentz invariance and accept unbounded valency.
+
+**Step 7. Stability and locality (checked here: E1, E2, E3; E1′ running).**
+- Rules that move influence step by step need signed weights to carry waves (block 122, on main).
+- On a random substrate, signed weights amplify the substrate's noise (E1, inconclusive at physical scales).
+- Massless influence passed along links has no signed recursion (E1′ tests this).
+
+**Step 8. Λ (comparator: Sorkin's everpresent Λ).** A spacetime substrate with N elements predicts δΛ ~ N^(−1/2), about the observed magnitude. This is a positive for spacetime randomness. It reads naturally with "the record count rises".
+
+**Intersection (suggested).** The substrate must be:
+- a **dynamical, relational structure**, in which only the pattern of which elements neighbour which is physical, and labels or positions are gauge;
+- one that treats **time and space alike** (Lorentz in law or hypercubic);
+- one whose **graviton is the pattern's own ripple**, protected by an exact constraint (the redundancy);
+- one whose **realization noise is removed by the dynamics** (a quantum sum over patterns, or a stable propagation rule), not by freezing.
+
+GR satisfies this in the continuum. Causal sets, CDT, spin foams and group field theory are partial discrete examples; each lacks something (a dynamics with a continuum limit, exact Lorentz, or an exact redundancy). Holography is the other escape.
+
+**Reading of the owner's thought** ("the sites are just the substrate; the neighbourhood can move across it, including the qubits"):
+- If physics depends only on the moving neighbourhood pattern and never on which underlying site it sits on, then the underlying sites are a gauge redundancy, which is exactly escape (i) of Step 4. A sheared pattern is just another pattern with the same intrinsic relations, so the shear stiffness tied to fixed labels is gone.
+- The questions this leaves:
+  - Step 6: the moving neighbourhood cannot be a fixed finite set if Lorentz invariance is exact;
+  - Step 5: the pattern must be quantum-summed, not frozen, to kill the noise;
+  - the graviton should be the ripple of the neighbourhood pattern itself, with a constraint that keeps it massless.
+
+**Cheapest discriminating tests (suggested).**
+1. In a small relational model where only the pattern is physical (a 2D causal set or CDT with a BD-type action), does the quantum sum over patterns suppress the per-realization noise that a single frozen pattern has?
+2. Can a record-formation rule produce Lorentz-invariant-in-law event sets, or must the order be supplied (A36)?
+3. Does the pattern's linearized dynamics have a massless TT mode protected by an exact constraint?

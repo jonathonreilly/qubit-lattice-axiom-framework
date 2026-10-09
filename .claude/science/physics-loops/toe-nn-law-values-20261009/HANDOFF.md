@@ -12,38 +12,40 @@ Stop at `2026-10-10T12:02:06Z`. One worktree only:
 > Read with Record, the distribution concerns which possibility a forming record locks, conditional on formation at that site; it does not supply the formation site, probability, or rate.
 
 That sentence is still the axiom text. No note was opened that only repeats
-it. No hazard law was invented.
+it. No hazard law was invented. The same memo's open-gate list still places
+source/action outside the axioms. Cycle 5 does not close that gate.
 
 ## Done this cycle
 
-Cycles 1–3 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
-`TOTAL: PASS=55 FAIL=0`, and `TOTAL: PASS=102 FAIL=0`. Do not repeat the
-CHSH specializations.
+Cycles 1–4 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`, and
+`TOTAL: PASS=61 FAIL=0`. Do not repeat the CHSH specializations or the
+readout split.
 
-Cycle 4 searched that same `origin/main` commit for a readout-weight or
-chirality evaluation of the directed pattern. The handed-rule census is a
-six-letter menu. The Moriya note is a supplied dynamics-clause ground
-state. Neither states the partial trace of this pattern. The parent CHSH
-note on this branch says a one-site reduction was not tested.
+Cycle 5 searched that same `origin/main` commit for a quadratic scalar
+action of one bond correlation. The 2026-06-17 cubic-anisotropy note counts
+weights on the traceless symmetric block only. It is not this nine-entry
+count. No merge with `origin/main` was made: the one newer main commit is
+audit metadata, and `git merge-tree` reported no content conflict.
 
-On the declared directed density:
+On a real `3×3` matrix with the signed-permutation action:
 
-- wing 1 reduces to `(I + q Z)/2` and wing 2 to `(I + p Z)/2`
-- local projective Born weights are `(1 ± q n_z)/2` and `(1 ± p n_z)/2`
-  and do not depend on `u`, `t`, or `v`
-- a coordinate weight `W` contracts to
-  `u(W_xx+W_yy) + v W_zz + t(W_yx-W_xy)`
-- symmetric weights, including every same-direction weight, miss `t`
-- `W_yx=1`, `W_xy=-1` equals `2t`
-- `P = diag(1,-1,1)` has determinant `-1`, so it is not in the proper
-  group of the bond-invariants note, and it replaces `t` by `-t`
-- the positive pure twists `t = ±1` are separated by that readout, at
-  `+2` and `-2`, and not by the local weights
+- the proper group has order `24` and the full group has order `48`
+- both groups leave the same `4`-dimensional space of quadratic invariants
+- a basis is the trace square, the traceless-diagonal square, the
+  symmetric-off-diagonal square, and the antisymmetric square
+- a `3-4-5` rotation, not a signed permutation, forces the middle ratio
+  `9/2` on one tested pair
+- on the directed pattern the symmetric-off-diagonal square is `0`, the
+  antisymmetric square is `4 t^2`, and every invariant quadratic is even
+  in `t`
+- the two pure twists `t = ±1` give the same four values
 
-The sign of `t` is not selected. The density and the instrument stay
-supplied. This does not derive the dynamics clause or the formation triple.
+The four ratios are not selected. The sign of `t` is not selected. The
+matrix stays declared. This does not derive a source identification, the
+derivative-dependent action, or the formation triple.
 
-Runner: `TOTAL: PASS=61 FAIL=0`.
+Runner: `TOTAL: PASS=44 FAIL=0`.
 
 ## Do not touch
 
@@ -54,18 +56,18 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 
 ## Landed this cycle
 
-Commits `9f7ab95597`, `caa947d12d`, and `a242b4a1f2` are already on the
-branch. Cycle 4 is pushed onto the same branch for PR 9475. Do not merge
-it. Do not open a second PR.
+Commits `9f7ab95597`, `caa947d12d`, `a242b4a1f2`, and `2c87950822` are
+already on the branch. Cycle 5 is pushed onto the same branch for PR 9475.
+Do not merge it. Do not open a second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 ## Next exact action
 
-Do not repeat the formation sentence, the three CHSH evaluations, or this
-readout split. Gravity source and action remain the open supplier that
-does not overlap the live Codex branches. Do not invent a hazard law. The
-sign of `t` is still unselected.
+Do not repeat the formation sentence, the CHSH evaluations, the readout
+split, or this four-channel count. The sign of `t` and the four quadratic
+ratios stay unselected. A degree-3 count is not implied; search before
+writing one. Do not invent a hazard law.
 
 ## Cleanup
 

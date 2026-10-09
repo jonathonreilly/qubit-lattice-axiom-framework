@@ -1,0 +1,56 @@
+===== runner cache v1 =====
+runner: scripts/directed_bond_quadratic_action_channels_2026_10_09.py
+runner_sha256: ff9308d120b508e387014e781e55b710b43213d1d325b50d61ed9e42a7c7abe4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.35
+status: ok
+----- stdout -----
+PASS generated closure has order 24
+PASS closure equals the determinant-+1 signed permutations
+PASS all signed permutations have order 48
+PASS both generators lie in the closure
+PASS diag(1,-1,1) has determinant -1 and is outside the closure
+PASS linear invariant dimension is 1
+PASS the linear invariant is the trace
+PASS trace channel is invariant under all 48 signed permutations
+PASS traceless-diagonal channel is invariant under all 48 signed permutations
+PASS symmetric-off-diagonal channel is invariant under all 48 signed permutations
+PASS antisymmetric channel is invariant under all 48 signed permutations
+PASS sample trace on channel trace
+PASS sample trace on channel traceless-diagonal
+PASS sample trace on channel symmetric-off-diagonal
+PASS sample trace on channel antisymmetric
+PASS sample traceless-diagonal on channel trace
+PASS sample traceless-diagonal on channel traceless-diagonal
+PASS sample traceless-diagonal on channel symmetric-off-diagonal
+PASS sample traceless-diagonal on channel antisymmetric
+PASS sample symmetric-off-diagonal on channel trace
+PASS sample symmetric-off-diagonal on channel traceless-diagonal
+PASS sample symmetric-off-diagonal on channel symmetric-off-diagonal
+PASS sample symmetric-off-diagonal on channel antisymmetric
+PASS sample antisymmetric on channel trace
+PASS sample antisymmetric on channel traceless-diagonal
+PASS sample antisymmetric on channel symmetric-off-diagonal
+PASS sample antisymmetric on channel antisymmetric
+PASS T_xx squared is not a cubic invariant
+PASS proper-cubic quadratic invariant dimension is 4
+PASS full signed-permutation quadratic invariant dimension is 4
+PASS the 3-4-5 matrix is a rotation
+PASS the 3-4-5 matrix is not a signed permutation
+PASS rotated diagonal matrix equals the hand product
+PASS traceless-diagonal square moves under the 3-4-5 rotation
+PASS symmetric-off-diagonal square moves under the 3-4-5 rotation
+PASS the rotation forces beta/alpha = 9/2
+PASS the Frobenius ratio agrees on the rotated pair and equals 2
+PASS directed trace channel is (2u+v)^2
+PASS directed traceless-diagonal channel is 6(u-v)^2
+PASS directed symmetric-off-diagonal channel is identically zero
+PASS directed antisymmetric channel is 4 t^2
+PASS every basis channel is even under t to -t
+PASS the two pure twists give the same four channel values
+PASS the symmetric-off-diagonal coefficient is visible off the directed pattern
+TOTAL: PASS=44 FAIL=0
+
+----- stderr -----
+

@@ -98,3 +98,38 @@ negative claim inside the pattern, and does not write an audit verdict.
 Sections that belong to independent review were not run.
 
 PR 9475 remains open against main. Not merged. CI is not a landing signal.
+
+2026-10-09 cycle 5 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is whether proper-cubic covariance selects
+  a quadratic scalar action of one bond correlation, including the sign of
+  `t`. Source: `OPPORTUNITY_QUEUE.md` item 5 before this cycle, and the
+  axiom open-gate bullet naming source/action.
+- V2. Not on `origin/main`. The cubic-anisotropy note counts weights on
+  the traceless symmetric block only. Commands were `git grep` for
+  quadratic invariant polynomials, for `Q_T2`, for `6(u-v)`, and for
+  `c_21-c_12`. None is this nine-entry basis or this directed substitution.
+- V3. Theorems 1–3 of the cycle-5 note, checked by the paired runner.
+  The matrix, the pattern, and the formation triple remain open.
+- V4. Before, the quadratic scalars of this matrix were uncounted. After,
+  both groups leave four channels, one rational rotation forces the middle
+  ratio `9/2` on a tested pair, and the directed pattern is even in `t`.
+- V5. Not a corollary of the cycle-1 linear nullspace or of the cycle-4
+  readout. The linear nullspace fixes matrices, not degree-2 polynomials.
+  The readout sees the sign of `t`. These scalars do not.
+
+No-go gate for the scoped channels is in the cycle-5 source note. The
+antisymmetric square does see `t^2`. A universal claim that every
+functional misses the sign, or that a physical action has been selected,
+is not made. Author mutations, each on a scratch copy that was deleted:
+replacing the antisymmetric difference by a sum fails four checks;
+demanding the directed antisymmetric channel equal `t^2` fails one.
+Independent review has not been requested. No audit grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+negative claim inside degree 2, separates the trace check from Theorems
+1–3, and does not write an audit verdict. Sections that belong to
+independent review were not run. The hand multiplication and the directed
+substitution are the checks that do not share the row-reduction path.

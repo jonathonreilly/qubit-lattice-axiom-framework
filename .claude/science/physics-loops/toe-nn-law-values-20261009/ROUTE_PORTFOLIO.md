@@ -64,3 +64,27 @@ Classification: open after that matched-hit review. The executed route is
 the partial trace and the coordinate-weight coefficient of `t`. The
 conjugation by `P` is included. No CHSH square is part of the route. The
 formation triple stays unsupplied.
+
+## Cycle 5 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is audit metadata and was not merged.
+
+Commands and what they returned:
+
+- `git grep` for quadratic invariant polynomials, for `Q_T2`, and for
+  `6(u-v)` under `docs/*.md` on `origin/main`. No statement of this
+  four-channel basis or of the directed substitution.
+- The cubic-anisotropy note of 2026-06-17 states a two-weight count on the
+  traceless symmetric block `Sym^2_0(R^3)` only. It uses a floating-point
+  argument and a lattice harmonic. It does not row-reduce the nine entries.
+- `git grep` for `c_21-c_12` under `docs/*.md` and `scripts/*.py` on
+  `origin/main` returned no path. The directed pattern is on this branch.
+- A dilute-thermodynamics note names different pair amplitudes inside a
+  different Hamiltonian. It is not this nullspace.
+
+Classification: open after that matched-hit review. The executed route is
+the degree-2 invariant space of one `3×3` correlation and its restriction
+to the directed pattern. No CHSH square and no readout weight is part of
+the route. The formation triple stays unsupplied.

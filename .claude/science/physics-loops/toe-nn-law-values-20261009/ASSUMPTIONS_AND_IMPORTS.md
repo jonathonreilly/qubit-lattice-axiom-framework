@@ -1,3 +1,33 @@
+# Assumptions and imports — cycle 5
+
+Supplied by the axioms, and used only as named:
+
+- proper cubic rotations
+- source/action left outside the axioms
+- the distribution does not supply the formation site, probability, or rate
+
+Declared for this cycle, not an axiom:
+
+- a real `3×3` matrix
+- the signed-permutation action `T -> R T R^T`
+- the four explicit quadratic polynomials
+- the rational `3-4-5` rotation, tested and not adopted as covariance
+- the directed pattern `u`, `t`, `v` for the restriction only
+
+Not used: the dynamics clause, a Hamiltonian, the sum rule, a CHSH score,
+a readout weight, literature comparator values, and the three approved
+primitives `scale_reference_primitive`, `kinetic_isotropy_primitive`, and
+`realized_state_primitive`.
+
+The bond-invariants generators are rewritten in this note. Their nullspace
+is not a step in the quadratic proofs. The linear trace check agrees with
+that nullspace and is not a theorem of this cycle. Cycle 4's readout
+theorems are not inputs.
+
+Counterfactual: if the object is not this matrix, Theorems 1–3 do not
+apply. If the polynomial has degree above 2, Theorem 1 does not apply.
+Formation site, probability, and rate remain unsupplied.
+
 # Assumptions and imports — cycle 4
 
 Supplied by the axioms, and used only as named:

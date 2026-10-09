@@ -44,3 +44,16 @@ and a supplied readout convention. Local projective weights miss `t`.
 Symmetric weights miss `t`. The named antisymmetric weight equals `2t`.
 `P` flips the sign and is not a proper rotation. Selecting that sign is
 not implied.
+
+Quadratic-channel family: degree-2 polynomials on one real `3×3` matrix,
+invariant under signed permutations.
+
+Target contract: the exact dimension and a basis; the effect of one
+rational rotation on the two middle squares; the directed substitution,
+including the sign of `t`. No CHSH square and no readout weight.
+
+Terminal status for cycle 5: proved under the matrix hypothesis. The
+invariant space has dimension `4` for both the proper group and the full
+signed-permutation group. The directed restriction is even in `t` and
+misses the symmetric-off-diagonal coefficient. Selecting the four ratios
+is not implied.

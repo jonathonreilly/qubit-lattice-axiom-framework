@@ -1,6 +1,6 @@
 # Opportunity queue
 
-Ranked after cycle 3. Refresh `origin/main` before each search.
+Ranked after cycle 5. Refresh `origin/main` before each search.
 Searched commit for the directed-square comparison:
 `d9b869b97944676aaa759915462c529dc276a04c`.
 
@@ -24,9 +24,17 @@ Searched commit for the directed-square comparison:
    `t`. Symmetric coordinate weights miss `t`. The antisymmetric weight
    equals `2t`, and `diag(1,-1,1)` flips only that sign. The sign itself
    is not selected. Do not repeat the split.
-5. **Gravity source and action.** Still open, and not this pattern's
-   readout calculation. Take it only if it does not overlap the live Codex
-   photon or D3Q27 branches. Do not invent a hazard law to get there.
+5. **Quadratic scalar channels of one bond correlation.** Done on this
+   branch. Proper-cubic covariance and the full signed-permutation group
+   leave the same four quadratic channels. A `3-4-5` rotation forces the
+   middle ratio `9/2` on one pair. The directed pattern kills the
+   symmetric-off-diagonal channel and sees the twist only as `4 t^2`.
+   Do not repeat the count.
+6. **Degree 3, or a derivative-dependent action.** Still open, and not
+   implied by item 5. The derivative-dependent action named by the
+   cubic-anisotropy note is not a finite row reduction. Search before
+   writing a degree-3 count. Do not invent a hazard law. Do not overlap
+   the live Codex photon or D3Q27 branches.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

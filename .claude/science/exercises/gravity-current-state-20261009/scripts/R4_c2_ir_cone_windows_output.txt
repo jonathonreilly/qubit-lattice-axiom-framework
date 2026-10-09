@@ -1,0 +1,10 @@
+Weyl sea, d2E/deps2 (E = -sum |k|_h):
+  ball K=1, E : -0.00168869   -1/(60 pi^2) = -0.00168869
+  ball K=1, T2: -0.00168869   -1/(60 pi^2) = -0.00168869
+  cube [-pi,pi]^3 (GL n=32): E -0.431689  T2 -0.382827  ratio T2/E 0.8868
+  cube [-pi,pi]^3 (GL n=48): E -0.431689  T2 -0.382827  ratio T2/E 0.8868
+  cube [-pi,pi]^3 (GL n=64): E -0.431689  T2 -0.382827  ratio T2/E 0.8868
+  equal-volume ball (K=3.8978): -0.389778 (both channels)
+  cube: isotropic part (2E+3T2)/5 = -0.402372; anisotropy E-T2 = -0.048863
+Window following the strain: E(h) = -int_{e^{h/2}W0} |e^{-h/2}k| = -int_{W0} |p| d^3p (det e^{h/2}=1): independent of h exactly => 0 in both channels.
+Real scalar zero point (+1/2|k|): each number times -1/2 (opposite sign).

@@ -1,0 +1,17 @@
+H0 = 1.438e-33 eV; rho_Lambda = 2.518e-11 eV^4 = (2.24 meV)^4
+CC bar per Planck cell (a^-1 = M_Pl):            rho_L * a^4      = 1.13e-123
+TT bar per Planck cell from LVK m_g bound:        m_g^2 M^2/8 a^4  = 5.38e-105
+  => the TT bar is weaker than the CC bar by ~10^19
+  K3a'' O(e^2) value 1.2e-03 overshoots the TT bar by ~10^101
+If the landed conditional identity m_g = sqrt6 H0 = 3.52e-33 eV is the target: TT bar per cell = 4.14e-124 (CC bar 1.13e-123; ratio 0.4)
+
+P2: lattice cutoff Lambda = a^-1 free, M independent of the lattice (not induced):
+  mu = 1.2e-03: need Lambda < 562 eV  (electron mass 5.11e5 eV; LHC ~1e13 eV)
+  mu = 3.0e-01: need Lambda < 141 eV  (electron mass 5.11e5 eV; LHC ~1e13 eV)
+P2: M induced by the same lattice (Sakharov, M^2 ~ N Lambda^2/(48 pi^2), N ~ 100):
+  m_g ~ 0.21 Lambda for every Lambda: need Lambda < 6.0e-23 eV
+
+Target strength: 'massless' vs 'm_g < 1.27e-23 eV': the required suppression of mu is 5.4e-105 per cell in the second case, i.e. the tuning is ~10^101 either way.
+  speed defect at 100 Hz for m_g at the bound: 4.7e-22 (GW170817 bar ~1e-15)
+
+SUSY-type sea cancellation broken at 1 TeV (scaling estimate, suggested): residual per cell ~ (TeV/M_Pl)^4 = 4.5e-65; misses TT bar by ~10^40, CC bar by ~10^59

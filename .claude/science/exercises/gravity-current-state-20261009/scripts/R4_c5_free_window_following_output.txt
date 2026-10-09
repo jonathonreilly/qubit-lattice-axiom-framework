@@ -1,0 +1,18 @@
+(1) Weyl-sea energy per cell (naive 2-component, GL n=72):
+   a=0.0   law A (relabelled) -1.1938015404   law B (natural NN) -1.1938015404
+   a=0.05  law A (relabelled) -1.1938015382   law B (natural NN) -1.1952683745
+   a=0.1   law A (relabelled) -1.1938015316   law B (natural NN) -1.1996706609
+   a=0.2   law A (relabelled) -1.1938015074   law B (natural NN) -1.2173065859
+   d2E/da2 at 0, law A: +1.804679e-06
+   d2E/da2 at 0, law B: -1.173367e+00
+(2) IR dispersion: |s(phi^-1(k))| vs |M s(k)| at small k (a=0.2):
+   |k|=0.01: max relative difference 2.28e-06
+   |k|=0.001: max relative difference 5.07e-08
+(3) additivity of phi (a=0.2): max |phi(k+k') - phi(k) - phi(k')| (mod 2pi) over 2000 random pairs:
+   0.560  (0 would mean a group automorphism of T^3)
+(4) hopping range of law A (a=0.2): |Fourier coefficient| of s1(phi^-1(k)) along k2 at range r:
+   range 1: 4.95e-02
+   range 2: 2.34e-03
+   range 3: 7.94e-05
+   range 4: 1.60e-06
+   range 6: 6.91e-10

@@ -80,7 +80,7 @@ All of this is seen in the models we built, for small waves and weakly interacti
 
 On the framework's fixed grid of regularly repeating sites, a graviton that is massless to the observed bound needs one of the following:
 1. **A tuned cancellation of two vacuum numbers** (the two shear stiffnesses), to about one part in 10⁹⁸, a second cosmological-constant-sized tuning. This is checked arithmetic.
-2. **Giving up the fixed site set** (the Lattice axiom). The replacement must also keep one shared light speed. The only untested candidate is a spacetime-event substrate.
+2. **Giving up the fixed site set** (the Lattice axiom). The replacement must also keep one shared light speed. Frozen spatial replacements fail (E2/E3, §7). The spacetime-event substrate passes the averages exactly, but its noise question is open (E1: INCONCLUSIVE, leaning FAIL; §7).
 
 The middle option from the draft (a regulator that keeps the grid but suppresses the stiffness parametrically) was **closed by T2** (bounded, refereed). The only non-tuned keep-the-grid loophole left is a non-ordinary interacting law that evades Lemma R, and no such law is known.
 
@@ -113,3 +113,24 @@ Separately, **none of these produces the graviton itself**. That still needs a m
 - Belenchia–Gambassi–Liberati (Lorentz-naturalness mechanisms);
 - Bombelli–Henson–Sorkin (sprinklings);
 - Bietenholz–Wiese and Hasenfratz (perfect actions).
+
+## 7. Follow-up tests at the owner's request (2026-10-09)
+
+The owner asked: "test the spacetime-event substrate with records as events, and test what happens if we give up the fixed repeating pattern. maybe the grid does not have all sites present? or there is no fixed pattern? or??"
+
+Every run used a worker on Opus 5.5 at xhigh and a codex sol referee. Readings were fixed before running (`TESTS.md`).
+
+| Test | Substrate | Verdict (refereed) | Why |
+|---|---|---|---|
+| E2 | the grid with sites missing at random (frozen, or appearing over time) | **FAIL** | Still stiff against shear on average in both channels at every fraction tested. Every fraction below 1 adds patch-to-patch noise that does not fade at long wavelength |
+| E3a | quasicrystal (icosahedral) | **FAIL** | Quiet, but stiff on average. The stiffness is the same in all directions and is zero only at hand-picked coupling ranges |
+| E3b | evenly spread random sets (hyperuniform) | **FAIL** | Even density does not give even stiffness. Noisy, and stiff on average |
+| E3c | random sites that keep appearing | **FAIL** | Zero on average, but noisy at every stage; nothing ever moves to smooth it |
+| E1 | records as random events in spacetime (causal-set-like; needs a Lattice change plus a supplied time order) | **INCONCLUSIVE, leaning FAIL** | The averages are perfect: no shear stiffness and one light cone, both exact. But in any single set of events the standard wave operator gathers noise from the whole past, a gain that grows with the size of the past (exact), and the step-by-step evolution blows up at the tested scales. Whether it still blows up at Planck-scale settings needs an extrapolation over about 60 decades, which the rules forbid |
+
+**Structural reason for the frozen cases (Lemma P, referee-corrected).** If the rule that places frozen sites looks the same after any volume-preserving stretch (which is how the average stiffness is protected), the pair statistics are forced to be exactly random-like, and density noise is not suppressed. Quiet patterns (crystals, quasicrystals, evenly spread sets) lack that protection. The referee's strongest correct statement: give up *ensemble-symmetry-only protection on a frozen spatial substrate*. That is narrower than "give up the repeating pattern". An exact realization-wise identity (a stress that is a divergence) remains open.
+
+**What this leaves.**
+- **The spacetime-event substrate is the only architecture whose averages are exactly right.** Its open problem is noise, not the averages.
+- **Its standard wave operator has signed weights.** Waves need signed weights in any step-by-step rule (block 122, on main), and on random events those weights amplify the substrate's noise.
+- **The next test, if wanted:** an event dynamics without that gain (a stable generalized d'Alembertian, or influence passed only along links), or a direct small-ε measurement of the growth exponent.

@@ -1,3 +1,24 @@
+# Claim status certificate — cycle 9
+
+- Intended audit claim type: `bounded_theorem`
+- Author surface: bounded-support, conditional on one factor
+  `1 + (1 - 2 t) B^X + (t^2 - t + 1) B^Y` on the two odd cap lines, on
+  partial neighbour conditions, and on the proper cubic orbit of `(0, 1, 2)`
+- Current ledger status of this new note: none yet; do not invent one
+- Audit remains required. This file is not a verdict.
+- Open imports: the factor, partial neighbour conditions, and the uniform
+  weight; formation site, probability, and rate
+- Route pruned: the unique root `t = 1/2` of this factor is a selected interaction
+- The root is the root of the supplied polynomial `1 - 2 t`. At that value
+  the factor is `1 + (3/4) B^Y`, with strictly positive bond values
+- No-go packet in the source note is scoped to this one factor. It does
+  not classify every shifted factor, and it does not queue another pencil
+- The odd cap alphabet stops. The following block's supplier is the
+  formation rule, not a bond factor
+- Runner: `TOTAL: PASS=28 FAIL=0` at the worktree copy, re-run by the author
+  through `runner_cache.py`
+- Independent review has not been requested
+
 # Claim status certificate — cycle 8
 
 - Intended audit claim type: `bounded_theorem`

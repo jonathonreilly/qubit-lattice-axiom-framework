@@ -96,4 +96,18 @@ Terminal status for cycle 8: proved under the product hypothesis. Every
 independent pencil normalises at `0`. The counts are `32` only at `0`,
 `256` at two rationals, and `208` at three. The balance pencil is exactly
 `{0, 1/2}`, both strictly positive. Selecting `t` is not implied. A factor
-that is not `1` at the parameter origin is not implied.
+that is not `1` at the parameter origin is Family I, not a corollary.
+
+Family I: one shifted bond factor on the same two odd cap lines,
+`1 + (1 - 2 t) X + (t^2 - t + 1) Y`, whose value at `t = 0` is not the
+constant `1`.
+
+Target contract: whether this one soldered factor has a unique nonzero
+partial-normalisation value. No path mass, no CHSH square, and no
+coefficient census.
+
+Terminal status for cycle 9: proved under the product hypothesis. The
+unique real normalisation value is `t = 1/2`. There the factor is
+`1 + (3/4) Y`, and the bond values are strictly positive. The root is the
+root of the supplied polynomial `1 - 2 t`. Selecting `t` is not implied.
+The odd cap alphabet stops. Another pencil is not implied.

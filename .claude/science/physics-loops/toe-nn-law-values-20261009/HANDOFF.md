@@ -13,19 +13,49 @@ Stop at `2026-10-10T12:02:06Z`. One worktree only:
 
 That sentence is still the axiom text. No note was opened that only repeats
 it. No hazard law was invented. The same memo's open-gate list still places
-source/action outside the axioms. Cycle 7 does not close that gate.
+source/action outside the axioms. The 2026-07-04 revision still names the
+formation rule — which admissible possibility, at which site, with what
+weight, at what rate — as downstream supplier content. Cycle 9 does not
+close that gate.
 
 ## Done this cycle
 
-Cycles 1–6 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
+Cycles 1–8 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
 `TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
-`TOTAL: PASS=61 FAIL=0`, `TOTAL: PASS=44 FAIL=0`, and
-`TOTAL: PASS=16 FAIL=0`. Do not repeat the CHSH specializations, the
-readout split, the four quadratic channels, or the achiral-orbit path
-factor.
+`TOTAL: PASS=61 FAIL=0`, `TOTAL: PASS=44 FAIL=0`,
+`TOTAL: PASS=16 FAIL=0`, `TOTAL: PASS=30 FAIL=0`, and
+`TOTAL: PASS=31 FAIL=0`. Do not repeat the CHSH specializations, the
+readout split, the four quadratic channels, the achiral-orbit path factor,
+the linear split of `1 + kappa F`, or the quadratic coefficient box.
 
-Cycle 7 is unchanged. Its runner remains `TOTAL: PASS=30 FAIL=0`. Do not
-repeat the linear split of `1 + kappa F`.
+Cycle 9 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
+for a shifted bond factor on the odd cap lines of `(0, 1, 2)`. There is no
+such note on `origin/main`. No merge with `origin/main` was made:
+`git merge-tree` reported no content conflict.
+
+On the one soldered factor
+
+```text
+phi(t) = 1 + (1 - 2 t) B^X + (t^2 - t + 1) B^Y
+```
+
+with partial neighbour conditions:
+
+- `phi(0) = 1 + B^X + B^Y` is not the constant factor `1`
+- partial normalisation holds at exactly one real value, `t = 1/2`
+- there `phi = 1 + (3/4) B^Y`, with bond values `1/4`, `1`, and `7/4`
+- the coefficient vectors at `0` and at `1` have determinant `2`, so this
+  is not the shape `1 + kappa(t) H`
+- `t = 1/2` is the root of the supplied polynomial `1 - 2 t`
+
+`t = 1/2` is not a selected interaction. Covariance holds at every `t`.
+This does not derive a source identification or the formation triple. The
+odd cap alphabet stops. Another pencil is not queued. The supplier for a
+following block is the formation rule, not a bond factor.
+
+Runner: `TOTAL: PASS=28 FAIL=0`.
+
+## Earlier cycle 8, unchanged
 
 Cycle 8 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
 for a quadratic partner-cap pencil on this alphabet. The `kappa^2` hits are
@@ -45,8 +75,9 @@ conditions:
 - `(1, 1, -1, -2)` is exactly `{0, 1/2, 1}`
 
 `t = 1/2` is not a selected interaction. The constant rule remains. This
-does not derive a source identification or the formation triple. A factor
-that is not `1` at the parameter origin stays open.
+does not derive a source identification or the formation triple. The factor
+that is not `1` at the parameter origin is cycle 9, not a second pass
+through this box.
 
 Runner: `TOTAL: PASS=31 FAIL=0`.
 
@@ -92,9 +123,9 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 ## Landed this cycle
 
 Commits `9f7ab95597`, `caa947d12d`, `a242b4a1f2`, `2c87950822`,
-`9bd6713a1b`, `caff82f0cf`, and `5eb33f7edf` are already on the branch.
-Cycle 8 is pushed onto the same branch for PR 9475. Do not merge it. Do
-not open a second PR.
+`9bd6713a1b`, `caff82f0cf`, `5eb33f7edf`, and `61e96f3399` are already on
+the branch. Cycle 9 is pushed onto the same branch for PR 9475. Do not
+merge it. Do not open a second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
@@ -102,9 +133,12 @@ PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 Do not repeat the formation sentence, the CHSH squares, the readout split,
 the four-channel count, the achiral-orbit path factor, the linear kappa
-split, or this quadratic box. No unique nonzero `t` was selected. A factor
-that is not `1` at the parameter origin stays open. Do not invent a hazard
-law. Do not identify a cap line with a mass density.
+split, the quadratic box, or this shifted factor. The odd cap alphabet
+stops. Do not queue another pencil. The following block's supplier is the
+formation rule named in `docs/MINIMAL_AXIOMS_2026-06-29.md`: which
+admissible possibility, at which site, with what weight, and at what rate.
+A note that only quotes that sentence is not that block. Do not invent a
+hazard law. Do not identify a cap line with a mass density.
 
 ## Cleanup
 

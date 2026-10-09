@@ -242,3 +242,36 @@ negative claim inside the coefficient box and the partial-neighbour
 reading, separates the dependent linear shape from the independent census,
 and does not write an audit verdict. Sections that belong to independent
 review were not run.
+
+2026-10-09 cycle 9 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is whether one soldered bond factor on the
+  odd cap lines, not equal to the constant `1` at the parameter origin, has
+  a unique nonzero partial-normalisation value. Source: cycle-8 N7 and
+  `OPPORTUNITY_QUEUE.md` item 9 before this cycle.
+- V2. Not on `origin/main`. `git grep` for `odd cap`, for
+  `orbit of (0, 1, 2)`, and for `partner-cap` hits nothing under the
+  searched docs. The one `unique nonzero` hit is a K-reality predicate
+  note, not this factor.
+- V3. Theorems 1–3 of the cycle-9 note, checked by the paired runner.
+  The formation triple remains open. `t = 1/2` is not a selected law.
+- V4. Before, a non-constant value at `t = 0` was an unclassified escape.
+  After, the declared factor is normalised exactly at `t = 1/2`, where
+  `phi = 1 + (3/4) B^Y` and the bond values are strictly positive.
+- V5. Not a corollary of the quadratic box. Every independent pencil in
+  that box is normalised at `0`. This factor is not normalised at `0`.
+
+No-go gate for the scoped factor is in the cycle-9 source note. A universal
+claim that every shifted factor isolates a parameter is not made. Author
+mutations, each on a scratch copy that was deleted: demanding that the
+factor fail normalisation at `t = 1/2` fails one check; demanding that
+`t^2 - t + 1` vanish at `t = 1` fails one. Independent review has not been
+requested. No audit grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+existence claim inside this one factor and the partial-neighbour reading,
+separates the supplied root from a selected interaction, and does not
+write an audit verdict. Sections that belong to independent review were
+not run.

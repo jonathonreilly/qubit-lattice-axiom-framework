@@ -1,6 +1,6 @@
 # Opportunity queue
 
-Ranked after cycle 7. Refresh `origin/main` before each search.
+Ranked after cycle 9. Refresh `origin/main` before each search.
 Searched commit:
 `d9b869b97944676aaa759915462c529dc276a04c`.
 
@@ -54,7 +54,16 @@ Searched commit:
    None has a unique nonzero rational. The counts are `32`, `256`, and
    `208`. The balance pencil `(1,1,0,-2)` is exactly `{0, 1/2}`, both
    strictly positive. Do not repeat the box. A factor that is not `1` at
-   the parameter origin stays open. Do not invent a hazard law.
+   the parameter origin is item 10. Do not invent a hazard law.
+10. **One shifted cap factor, not equal to the constant `1` at `t = 0`.**
+    Done on this branch for one declared factor,
+    `1 + (1 - 2 t) B^X + (t^2 - t + 1) B^Y`. Partial normalisation holds
+    only at `t = 1/2`, and the bond values there are strictly positive.
+    The root is supplied by `1 - 2 t`. Do not repeat the factor. The odd
+    cap alphabet stops. Do not queue another pencil. The following block's
+    supplier is the formation rule (which possibility, at which site, with
+    what weight, at what rate). Do not open a note that only repeats that
+    sentence. Do not invent a hazard law.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

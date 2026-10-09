@@ -6,16 +6,16 @@ stop_at: 2026-10-10T12:02:06Z
 base_commit: 17a95e60d85afc246fc7c163adef8869ab3f4194
 branch: physics-loop/toe-nn-law-values-20261009
 worktree: /Users/jonreilly/.grok/campaigns/toe-24h-20261009/wt
-cycle: 8
-active_route: whether a quadratic partner-cap pencil isolates a nonzero parameter
-approach_family: odd cap lines X and Y, pencils 1 + t (a X + b Y) + t^2 (c X + d Y), coefficient box {-2,-1,0,1,2}
-hard_residual: dynamics clause is supplied, not derived; formation site, probability, and rate are unsupplied; no unique nonzero t is selected in this box; a factor that is not 1 at the parameter origin stays open; other alphabets stay open
+cycle: 9
+active_route: one shifted cap factor whose value at the origin is not the constant 1
+approach_family: odd cap lines X and Y, one factor 1 + (1 - 2 t) X + (t^2 - t + 1) Y
+hard_residual: dynamics clause is supplied, not derived; formation site, probability, and rate are unsupplied; the unique root 1/2 is the root of the supplied polynomial 1 - 2 t and is not a selected law; the odd cap alphabet is stopped; no further pencil is queued
 strongest_unresolved_obligation: formation site, probability, and rate of the nearest-neighbor distribution
 files_touched:
-  - docs/ZERO_ONE_TWO_PARTNER_CAP_QUADRATIC_PENCIL_NO_UNIQUE_NONZERO_BOUNDED_THEOREM_NOTE_2026-10-09.md
-  - scripts/zero_one_two_partner_cap_quadratic_pencil_2026_10_09.py
-  - logs/runner-cache/zero_one_two_partner_cap_quadratic_pencil_2026_10_09.txt
-runner_result: "TOTAL: PASS=31 FAIL=0"
+  - docs/ZERO_ONE_TWO_SHIFTED_CAP_FACTOR_UNIQUE_NONZERO_ROOT_BOUNDED_THEOREM_NOTE_2026-10-09.md
+  - scripts/zero_one_two_shifted_cap_factor_unique_nonzero_root_2026_10_09.py
+  - logs/runner-cache/zero_one_two_shifted_cap_factor_unique_nonzero_root_2026_10_09.txt
+runner_result: "TOTAL: PASS=28 FAIL=0"
 open_imports:
   - the quadratic pencil in the span of the two odd cap lines
   - the coefficient box {-2,-1,0,1,2}
@@ -34,10 +34,11 @@ no_go_routes_pruned:
   - the (1, 2, 3) transverse-sign factor varies that orbit
   - soldered covariance forces a nonzero kappa for a bond factor 1 + kappa F on this orbit
   - an independent quadratic pencil in this coefficient box isolates a unique nonzero parameter
+  - the exhibited shifted factor's unique root is a selected interaction
 trace_class: negative_route_pruning
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
-commit: cycle-8 commit on this branch
-next_exact_action: Do not repeat the formation sentence, the CHSH squares, the readout split, the four-channel count, the achiral-orbit path factor, the linear kappa split, or this quadratic box. No unique nonzero t was selected. A factor that is not 1 at the parameter origin stays open. Do not invent a hazard law.
+commit: cycle-9 commit on this branch
+next_exact_action: Do not repeat the formation sentence, the CHSH squares, the readout split, the four-channel count, the achiral-orbit path factor, the linear kappa split, the quadratic box, or this shifted factor. The odd cap alphabet stops. Do not queue another pencil. The following block's supplier is the formation rule (which possibility, at which site, with what weight, at what rate), and a note that only quotes that sentence is not that block. Do not invent a hazard law.
 stop_condition: stop_at, or disk avail below 8Gi, or no non-overlapping route remains
 do_not_touch:
   - physics-loop/photon-vacuum-shift-20261009

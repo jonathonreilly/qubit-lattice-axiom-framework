@@ -150,4 +150,28 @@ Commands and what they returned:
 Classification: open after that matched-hit review. The executed route is
 the quadratic pencil in the span of the two odd cap lines, inside one
 coefficient box. No path correlation is part of the route. The formation
-triple stays unsupplied. A factor that is not `1` at `t = 0` stays open.
+triple stays unsupplied. A factor that is not `1` at `t = 0` is cycle 9.
+
+## Cycle 9 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is still audit metadata and was not merged.
+
+Commands and what they returned:
+
+- `git grep -l` for `odd cap` on `origin/main` under `docs/*.md` and
+  `scripts/*.py`. No path.
+- `git grep -l` for `orbit of (0, 1, 2)` on `origin/main` under `docs/*.md`.
+  No path.
+- `git grep -l` for `partner-cap` on `origin/main` under `docs/*.md`. No path.
+- `git grep -l` for `unique nonzero` on `origin/main` under `docs/*.md`.
+  One hit, `docs/KREALITY_PREDICATE_ONE_SHARED_ATOM_ONE_CONSUMER_BOUNDED_NOTE_2026-06-12.md`.
+  That note is not this bond factor.
+- `git merge-tree` against `origin/main` reported no content conflict.
+
+Classification: open after that matched-hit review. The executed route is
+one shifted factor on the two odd cap lines. No path correlation is part
+of the route. The formation triple stays unsupplied. The odd cap alphabet
+stops. Another pencil is not queued. The following block's supplier is
+the formation rule.

@@ -96,3 +96,18 @@ factor that is not `1` at `t = 0`, or normalisation required only for the
 full six-neighbour condition. No unique nonzero `t` was selected. No
 hazard law was introduced. The source/action open gate stays open. The
 linear quarter-turn split is not rerun.
+
+Cycle 9 does not claim that every shifted bond factor has a unique
+nonzero root, and it does not claim that `t = 1/2` is forced. The scoped
+statement is narrower: the one factor
+`1 + (1 - 2 t) B^X + (t^2 - t + 1) B^Y` is not the constant `1` at
+`t = 0`, and partial normalisation holds at exactly one real value,
+`t = 1/2`, where `phi = 1 + (3/4) B^Y` and the bond values are strictly
+positive. The root is the root of the supplied linear polynomial.
+
+N7's steelman is accepted as an out-of-domain escape: a third bond kernel,
+or normalisation required only for the full six-neighbour condition. The
+odd cap alphabet stops. Another pencil is not queued. No hazard law was
+introduced. The source/action open gate stays open. The formation-rule
+supplier is the named supplier for a following block. The quadratic box
+is not rerun.

@@ -1,5 +1,5 @@
 # PR backlog
 
-No backlogged PR. Cycles 1–8 stay on PR 9475. A second PR is not opened.
+No backlogged PR. Cycles 1–9 stay on PR 9475. A second PR is not opened.
 Cluster-cap evaluation is not triggered: this is the same open milestone PR,
 not a third new pull request.

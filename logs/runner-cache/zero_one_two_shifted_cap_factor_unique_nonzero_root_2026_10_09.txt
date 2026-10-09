@@ -1,0 +1,45 @@
+===== runner cache v1 =====
+runner: scripts/zero_one_two_shifted_cap_factor_unique_nonzero_root_2026_10_09.py
+runner_sha256: 35807d965ab6f20131eefd2030875c502bcfcdbc40f925d7bc0aee8482798173
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.22
+status: ok
+----- stdout -----
+PASS the proper cubic group and the orbit of (0, 1, 2) each have 24 elements
+PASS the negative-z section is the half turn about x
+PASS the quarter turn has one height-+2 orbit and one height--2 orbit, each of length 4
+PASS the positive-z section is the identity
+PASS the negative-z section chosen by the same rule is the half turn
+PASS reversing direction swaps the two cap lines
+PASS on each direction the two cap lines have disjoint supports
+PASS each record meets one positive-cap direction and the opposite negative-cap direction, with equal values
+PASS each cap line has directional sum 0 and square sum 4
+PASS distinct directions of one cap line have disjoint supports
+PASS positive-cap opposite bond products are exactly {-1, 0, 1}
+PASS negative-cap opposite bond products are exactly {-1, 0, 1}
+PASS the opposite-z mark pairs include (1, 0) and (0, 1)
+PASS both cap bond kernels are invariant under every proper cubic rotation
+PASS the two cap bond kernels are linearly independent
+PASS one opposite-z condition has excess sum 4 c1 c2 on the integer grid
+PASS at t = 0 the factor is 1 + X + Y, not the constant factor 1
+PASS at t = 1/2 the factor is 1 + (3/4) Y, with the X coefficient zero
+PASS at t = 1 the coefficients are -X + Y, both nonzero
+PASS t^2 - t + 1 has no rational root: the only candidates ±1 are 1 and 3
+PASS the discriminant of t^2 - t + 1 is -3, so there is no other real root
+PASS 1 - 2 t is zero at 1/2 and at 2/4, and not at 0, 1, or 3/2
+PASS the coefficient vectors at t = 0 and t = 1 have determinant 2, so this is not 1 + kappa(t) H
+PASS at t = 1/2 the bond values are (4 + 3 u)/4 for u in {-1, 0, 1}, all positive
+PASS the factor is normalised at t = 1/2 for every partial mark
+PASS the factor is not normalised at t = 0
+PASS the factor is not normalised at t = 1
+PASS a pure line with the surviving scale 3/4 is the value at the unique root, not a second root
+per_element: checked each of the 24 record values, each of the 6 directions, and each of the 24 proper rotations
+per_site: one alphabet point carries one record value; no multi-site window or path law was enumerated
+per_mode: one shifted factor on the two odd cap lines; the coefficient box and the linear quarter-turn split were not rerun
+per_block: partial neighbour conditions were the subset products of this factor, including every mark image
+lattice_wide: checked and not executed — no infinite lattice, no formation rate, and no hazard law
+TOTAL: PASS=28 FAIL=0
+
+----- stderr -----
+

@@ -2,7 +2,8 @@
 
 No literature search was required for the finite-group calculation, the
 directed square, the readout-weight split, the quadratic-channel count, the
-achiral-orbit factor, the kappa split, or the partner-cap pencil. No paper
+achiral-orbit factor, the kappa split, the partner-cap pencil, or the
+shifted cap factor. No paper
 is used as a premise.
 The axis-role sign and the path correlation are defined in the cycle-6 note
 and derived there rather than imported. Cycle 7 identifies that bond

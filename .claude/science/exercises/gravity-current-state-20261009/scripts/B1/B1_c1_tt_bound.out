@@ -1,0 +1,20 @@
+mu_max = m_g^2 M^2/4 = 2.391e+08 eV^4 = (124.3 eV)^4
+  in reduced-Planck units mu/M^4 = 6.801e-102
+  per Planck cell (l_P = 1/M_Pl):  mu/M_Pl^4 = 1.076e-104
+rho_Lambda = 2.514e-11 eV^4 = (2.239 meV)^4 ; rho_L/M_Pl^4 = 1.132e-123
+ratio mu_max / rho_Lambda = 9.508e+18  (shear bar is this much looser than the CC bar)
+
+Required suppression of the vacuum TT modulus, mu/Lambda_c^4, if natural size is Lambda_c^4:
+  Lambda_c = 2 TeV (1e-19 m bar)    1.973e+12 eV : mu/Lambda_c^4 <= 1.577e-41
+  Lambda_c = 10 TeV                 1.000e+13 eV : mu/Lambda_c^4 <= 2.391e-44
+  Lambda_c = 1e16 GeV               1.000e+25 eV : mu/Lambda_c^4 <= 2.391e-92
+  Lambda_c = M_Pl                   1.221e+28 eV : mu/Lambda_c^4 <= 1.076e-104
+
+Unprotected solid substrate: mu = c * a^-4. Largest allowed cutoff a^-1:
+  c = 0.0012   (K3a'' O(e^2) at alpha=1/137): a^-1 <= 668 eV  (a >= 2.95e-10 m)
+  c = 0.27     (free-level natural coupling (K3a)): a^-1 <= 173 eV  (a >= 1.14e-09 m)
+  c = 1        (O(1)): a^-1 <= 124 eV  (a >= 1.59e-09 m)
+
+Induced m_g for an unprotected solid at a = l_P (a^-1 = M_Pl):
+  c = 0.0012: m_g = 4.24e+27 eV  = 3.3e+50 x bound
+  c = 0.27: m_g = 6.36e+28 eV  = 5.0e+51 x bound

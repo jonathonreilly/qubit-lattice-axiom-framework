@@ -586,3 +586,28 @@ This agrees with block 193 ("missing records do not stretch the walk") and with 
 **FR2 (bending)** does not run, since FR1 did not pass.
 
 **FR3 (waves), argued.** Permanent, immobile records cannot oscillate, so they carry no gravitational waves. The moving-record version is untested.
+
+**FR1 referee: codex gpt-5.6-sol xhigh, CONFIRMED WITH CORRECTIONS (2026-10-09).** FR1 remains a FAIL.
+
+Confirmed:
+- **The T-matrix and projector signs,** checked independently to 6e-12.
+- **The Matsubara cutoff.** Changes move the decisive tails by about 1e-4.
+- **The Dirichlet/capacitance solution.** Q/N falls from 3.96 to 0.200 over N = 1 … 216, which decisively excludes Q ∝ N. The pinned-order sector is legitimate.
+
+Corrections:
+1. **"Blocked density exactly 0"** holds only for the particle-hole-symmetric zero-mode ensemble. A filled or empty zero mode gives an r⁻⁴ tail.
+2. **Some exponent claims should be softened.** N = 64 is still crossing over, and the N = 1 diagonal fit spans less than a decade. The verdict "no 1/r" is robust.
+3. **Cell averaging gives the taste-singlet observable.** Species universality was not actually tested.
+4. **The ED validation is overstated.** It is contaminated by periodic images at L = 10.
+5. **The balanced-antiferromagnet tail is generically r⁻⁴** (octupolar, θ ∝ xyz/r⁷). The r⁻⁶ came from a special near-axis ray. A coherently rotated Néel cluster gives the same capacitance-controlled 1/r as the ferromagnet.
+6. **The magnon "clock shift" is a local Hessian proxy,** −|∇θ|² ∝ Q²/r⁴, not a computed eigenfrequency.
+7. **No gauge-field loophole within the family.** Giving frozen sites a gauge charge would give A₀ ∝ N/r, but the probes would feel q·A₀. That is charge-dependent electrostatics, not universal gravity.
+
+**What gravity needs (referee).** Three things:
+- a dynamical massless 1/k² mediator;
+- a source charge that adds up;
+- a coupling to clock energy that is the same for everything.
+
+Phenomenologically that means a specially constrained scalar, or more naturally a massless spin-2 metric sector. **None of these follows from freezing records.**
+
+**Recorded in `RESULTS`.** ("K3 gravity", gravity R) = 0, for record-carried gravity, frozen or as a gas (campaign 8). This is not a no-go for every frozen-record vacuum.

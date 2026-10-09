@@ -163,6 +163,13 @@ RESULTS = {
     # Brillouin zone is the mechanism (free IR cone: -1/(60 pi^2) vs 0 when the
     # window follows the strain). Explicit W fails. Not a universal no-go.
     ("K3 gravity", (("gravity", "W"),)): 0,
+    # FR1 (2026-10-09, owner request), referee CONFIRMED WITH CORRECTIONS: with
+    # records freezing sites, a compact frozen cluster gives no universal N/r
+    # field (free sea: short-range scatterer, ~r^-5/r^-7; Goldstone magnet: 1/r
+    # tilt set by capacitance ~ size, felt only at ~r^-4). Freezing supplies no
+    # massless mediator, additive source or universal coupling. Campaign 8 had
+    # already argued the record-gas version falls short.
+    ("K3 gravity", (("gravity", "R"),)): 0,
 }
 
 

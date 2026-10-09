@@ -137,6 +137,23 @@ This matches the worker's pair-sign argument. The plain version: a local fermion
 
 Bravyi–Kitaev superfast needs a fixed tournament, so it fails. Verstraete–Cirac needs auxiliary modes.
 
-**Referee.** codex gpt-5.6-sol xhigh, running (`referee_G0/REFEREE_VERDICT.md` in scratch).
+**Referee: codex gpt-5.6-sol xhigh, CONFIRMED WITH CORRECTIONS (2026-10-08).** The verdict and the referee's independent script are in `checks/referee_G0/`.
 
-**If confirmed.** Record K2 = 0 for (motion, turns, room) = (·, ·, P) under both turn settings, restricted to the product-dressing class. Under "one qubit per site", fermions then need corner records, non-product composites, or a non-local string.
+**Confirmed, for the narrower class.**
+- **The class:** one directed occupation-transfer monomial per direction, with sign-type product factors (Pauli or Z₄-monomial).
+- **The requirement:** a scalar −1 holonomy on the full unconstrained domain.
+- **The result:** no PASS. Every scalar nonzero holonomy is +1.
+- **The extension:** the obstruction extends to sign-type product dressings of any finite range, by a corrected orbit-parity argument. My half-turn argument needed a second turn to pair the two non-origin sites on the fixed axis.
+
+**Corrections.**
+1. **Non-scalar candidates do reach −1.** "No candidate gives −1 on any junction" is false. The covariant candidate `XS0|S0,S1,S1,S1,S1`, and about 1536 others, give +1 on some link backgrounds and −1 on others. They fail only because the value is not a scalar.
+2. **Gauge sectors were never tested.** No Gauss, stabilizer or flux sector was imposed, although the kill sheet asked for a KS-flux check. String-net and bosonization fermions live inside such a sector, so **the constrained-sector route is open.**
+3. **The helper-face corner flips** fail the exact frame group law.
+4. **"Vanishing" cases** are mostly not proper occupation-transfer hops. They are partial zeros, not statistics.
+5. **The BKSF statement** rules out only an order kept invariant under this restricted action, not every symmetry implementation.
+
+**Recorded.** The narrowed FAIL is recorded as a prior change, not a zero, because the class is narrower than the room setting P:
+- K2(L,P) goes from 0.06 to 0.04;
+- K2(E,P) goes from 0.05 to 0.04.
+
+**Follow-up G0b (launched).** The non-scalar candidates are retested inside local covariant constraint sectors: a Gauss law at corners and the KS π-flux. The question is whether the Chen–Kapustin / Z₂-gauge route gives fermions with one qubit per site.

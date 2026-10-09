@@ -71,8 +71,8 @@ def k1_light(s):
 def k2_matter(s):
     # One-handed fermions with the Standard Model gauge structure.
     base = {
-        ("L", "P"): 0.06, ("L", "M"): 0.15, ("L", "U"): 0.03, ("L", "O"): 0.20,
-        ("E", "P"): 0.05, ("E", "M"): 0.08, ("E", "U"): 0.02, ("E", "O"): 0.10,
+        ("L", "P"): 0.04, ("L", "M"): 0.15, ("L", "U"): 0.03, ("L", "O"): 0.20,
+        ("E", "P"): 0.04, ("E", "M"): 0.08, ("E", "U"): 0.02, ("E", "O"): 0.10,
     }[(s["turns"], s["room"])]
     if s["motion"] == "Q":
         base *= 0.5  # K2a: the body-diagonal mirror selector exists only in continuous time

@@ -503,3 +503,46 @@ Corrections:
 - an action that does not depend on where the points are placed, Wetterich-type, a new candidate with different content.
 
 Otherwise the casualty is the **fixed adjacency itself**, which is the Lattice axiom, and that is an owner decision.
+
+**W1 referee: codex gpt-5.6-sol xhigh, CONFIRMED WITH CORRECTIONS (2026-10-09).**
+
+Confirmed:
+- **The construction.** The Whitney/Galerkin construction is the legitimate lowest-order FEEC Hodge. Note that "parameter-free" does not mean unique.
+- **The photon.** Two IR modes, ω²/q² = 1 ± 4e-6.
+- **The geodesic Hessian formula.** A direct five-point check at L = 12 gives (−0.013915, +0.005659)e². The L = 24 values and the O(e⁰) values both reproduce.
+- **The controls.** Uniform scaling, S₃ covariance and the Ward identity all hold to about 1e-16.
+- **The BZ mechanism, for the free IR cone.** A momentum window fixed in index space gives E″/K₀⁴ = −1/(60π²) = −0.00169, and one that follows the strain gives exactly 0.
+
+Corrections:
+1. **Convergence.** "1e-4 relative" is too strong: the positive E eigenvalue moves by about 1% between L = 16 and 24. It is still converging to a nonzero value.
+2. **The fermion has at least 18 nodes, not 2**, so it is not a single-Weyl regulator. Its normalization is half a Weyl determinant; the physical normalization doubles the O(e²) values and strengthens the FAIL.
+3. **The O(e⁰) stiffness is photon-dominated.** Keeping only the two lowest photon bands still gives nonzero O(e²) E eigenvalues.
+4. **A physical graviton mass needs more.** It needs tadpole cancellation or a stationary background, plus kinetic normalization. The linear-path Hessian is also nonzero, so this does not rescue W1.
+5. **Untested:** a second Hodge or fermion discretization on the same complex. The ED script is not reproducible from the packet.
+
+**What it is not.** It is not a universal no-go. These escapes remain open:
+- exact emergent diffeomorphism constraints;
+- position-blind (Wetterich) actions;
+- embedding-and-reciprocal-cutoff covariance;
+- protected field-content cancellations;
+- suitably dynamical adjacency, which alone is not sufficient.
+
+"TT twin of the cosmological-constant problem" is a naturalness analogy, not a theorem.
+
+**Recorded in `RESULTS`.** ("K3 gravity", gravity W) = 0. **Explicit dynamical-length geometry on fixed adjacency fails.**
+
+## Where gravity stands after wave 1 (2026-10-09, supervisor)
+
+| Option | Status |
+|---|---|
+| Explicit metric, rigid grid (X) | **Dead** (K3a″, refereed) |
+| Explicit dynamical lengths, fixed adjacency (W) | **Dead** (W1, refereed). Vacuum Regge graviton healthy (W2) |
+| Emergent graviton (G) | No construction. Finite-slot harmonic no-gos (probes 10/20/21: light-like TT forces a light-like ±1 partner; exact slides give ω ~ q²). Needs an exact emergent constraint that also protects zero TT stiffness |
+| Induced or entanglement gravity (I) | Jacobson dead on the grid; no propagating spin-2 |
+| Record-carried gravity (R) | Falls short (campaign 8) |
+
+**Escapes outside the tested settings.**
+- Wetterich position-blind actions, a new candidate with different content.
+- Exact field-content cancellation. Lattice SUSY is the obvious kind, but SUSY broken at the TeV scale would leave about (TeV/M_P)⁴ ≈ 1e-60, far above the about 1e-102 needed. This is suggested, not computed.
+- Dynamical adjacency, which changes the Lattice axiom.
+- Accepting tuning, which means inheriting a second cosmological-constant-sized fine-tuning.

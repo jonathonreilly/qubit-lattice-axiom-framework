@@ -156,6 +156,13 @@ RESULTS = {
     # (naturalness kill). The diagnosis is the rigid-grid coupling, not the room,
     # so X fails on every room. Embedding-covariant couplings are option W.
     ("K3 gravity", (("gravity", "X"),)): 0,
+    # W1 (2026-10-08/09), referee CONFIRMED WITH CORRECTIONS: dynamical edge
+    # lengths on the fixed-adjacency Kuhn complex (Whitney/Galerkin Hodge, one
+    # geometry for matter and light) keep a converged O(e^2) TT vacuum stiffness
+    # ~(-1.4e-2, +5.5e-3) e^2 per cell and O(1) at e^0; the fixed label-space
+    # Brillouin zone is the mechanism (free IR cone: -1/(60 pi^2) vs 0 when the
+    # window follows the strain). Explicit W fails. Not a universal no-go.
+    ("K3 gravity", (("gravity", "W"),)): 0,
 }
 
 

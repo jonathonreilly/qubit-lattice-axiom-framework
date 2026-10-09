@@ -32,3 +32,22 @@ Take one massless field in a constant, volume-preserving metric g = exp(−tε),
 | C4 | **The price lemma.** For any local field theory regulated by a fixed label-space cutoff, the static TT modulus is generically nonzero and cancels only by supertrace balance or tuning | L1 | Generalize the IR-cone identity to the lattice band structure and to O(e²); state it as a lemma |
 
 **Lean (a reading).** C1 and C4 together are the honest core. The stiffness face says a fixed crystal substrate makes the vacuum rigid against shear. Gravitational waves are massless, so the substrate must flow (C1), unless something cancels the modulus exactly, which in the known cases is supersymmetry, and that cancellation is broken in nature. This is a layman-simple candidate price: **"space is not a fixed crystal"**. Still to be weighed against the agents' independent routes.
+
+## Follow-up: records as spacetime events (written before E1 reports; 2026-10-09)
+
+**Power count (suggested).**
+- **Static white disorder in 3D:** the random mass² averaged over a region λ³ is about √W·λ^(−3/2). Relative to k² ~ λ⁻², that grows like λ^½. It is **relevant**, and F1a died of it.
+- **Spacetime white disorder in 4D:** averaged over λ⁴, the ratio to k² is about σ, independent of λ. It is **marginal**.
+
+**A crude gravitational-wave phase-noise estimate (suggested).**
+- Along a path of length D there are about D/λ independent coherence regions, each adding a phase of about σ. So δφ ~ σ·√(D/λ).
+- For LIGO waves (λ ~ 1e6 m) over D ~ 1e25 m, δφ ~ 3e9·σ, so we need σ ≲ 3e-10.
+- Smearing over a 4D region of size ℓ averages (ℓ/l_P)⁴ events, so σ_eff ~ σ₀(l_P/ℓ)². That needs ℓ ≳ 6e4·l_P ≈ 1e-30 m, far below the LHC locality bar of 1e-19 m.
+- **On this count E1 would PASS.**
+
+**Caveats that could reverse it.**
+- **The cone.** The Benincasa–Dowker operator sums over the past light cone, whose volume near the cone is infinite (the Lorentz group is non-compact). The known result is that its pointwise fluctuations *grow* with density unless smeared. The true scaling of σ_eff with ℓ may therefore be much worse than (l_P/ℓ)².
+- **Swerves.** These bounds add an independent constraint.
+- **The mediator.** Whether a graviton exists on such a substrate at all is not tested here.
+
+**The trace twin.** Everpresent Λ: δΛ ~ 1/√V_Hubble ~ 1e-122 in Planck units, the observed order (COMPARATOR, Sorkin). The analogous TT fluctuation over the Hubble volume would be δm_g² ~ H², i.e. m_g ~ 1e-33 eV, below LIGO's 1e-23 eV (suggested).

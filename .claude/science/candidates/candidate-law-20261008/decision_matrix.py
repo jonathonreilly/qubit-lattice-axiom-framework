@@ -71,11 +71,11 @@ def k1_light(s):
 def k2_matter(s):
     # One-handed fermions with the Standard Model gauge structure.
     base = {
-        ("L", "P"): 0.06, ("L", "M"): 0.15, ("L", "U"): 0.03, ("L", "O"): 0.18,
+        ("L", "P"): 0.06, ("L", "M"): 0.15, ("L", "U"): 0.03, ("L", "O"): 0.20,
         ("E", "P"): 0.05, ("E", "M"): 0.08, ("E", "U"): 0.02, ("E", "O"): 0.10,
     }[(s["turns"], s["room"])]
     if s["motion"] == "Q":
-        base *= 1.1  # QCA index might evade doubling: open, small credit
+        base *= 0.5  # K2a: the body-diagonal mirror selector exists only in continuous time
     return base
 
 
@@ -112,7 +112,7 @@ def k6_numbers(s):
 
 def k7_one_cone(s):
     # Photon, matter and graviton speeds equal (GW170817, Lorentz tests).
-    return {"H": 0.10, "Q": 0.15}[s["motion"]]  # Q: hypercubic symmetry forbids
+    return {"H": 0.10, "Q": 0.30}[s["motion"]]  # K7a PASS: hypercubic forms exist; Q forbids
     # dimension-4 speed splits only if every sector's Euclidean form is hypercubic
 
 

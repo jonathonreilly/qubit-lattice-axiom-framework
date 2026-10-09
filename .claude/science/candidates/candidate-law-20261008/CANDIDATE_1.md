@@ -47,6 +47,13 @@ Non-abelian links are deferred: the first kill round runs with U(1) only. On qub
 
 The Kogut–Susskind forms below are the leading terms of −(1/a) log T and become exact as a_t → 0.
 
+**Correction after K7a (2026-10-08), see `TEST_LOG.md`.**
+- **Gravity has no positive transfer matrix.** The conformal mode makes Q indefinite, so −(1/a) log T cannot define gravity. The real-time law is the reversible leapfrog itself, built from each sector's hypercubic Euclidean action. The hypercubic setting is a symmetry of those actions, not a transfer-matrix construction.
+- **The tick.** Hypercubic means a_t = 2 fine edges. A25's leapfrog is unstable at that step, so the stable real-time scheme at a_t = a_s is still owed.
+- **Matter in the hypercubic form** is 4D staggered fermions (4 tastes, two-step transfer matrix), not the 3D H_ψ below. In that form K2a found no lattice-symmetry mirror selector.
+
+The H_ψ below is the continuous-time (H) variant's matter.
+
 H = H_E + H_B + H_ψ + H_g + H_int, with:
 - **Light.** This is Kogut–Susskind compact U(1):
   - H_E = (g²/2) Σ_e E_e²

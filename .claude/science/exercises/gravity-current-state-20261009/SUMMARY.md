@@ -186,3 +186,47 @@ The five properties (relational, spacetime-like, dynamical, no frozen labels, sh
 3. **Extend the random-lattice check:** direct spectra, a second kernel, fermions.
 4. **The response spectrum of a classical record gas.**
 5. **Coherent against frozen substrate,** as a mechanism demonstration only.
+
+## 9. Follow-up 2: influence passed along links (E1′, E1′-b; 2026-10-09)
+
+**Setting.** The same records-as-events test setting as E1. Each event is influenced only by events **linked** to it, i.e. with nothing in between: Johnston's path-sum propagator. There is no extra non-locality scale.
+
+**Who did it.** A worker on Opus 5.5 xhigh. The codex sol referee ruled gravity INCONCLUSIVE and matter M-INCONCLUSIVE. The supervisor's follow-up bound E1′-b was then CONFIRMED WITH CORRECTIONS, which made **gravity PASS** (`agents/E1p_*`, `agents/supervisor_E1p_b.md`).
+
+**Massless waves (the stand-in for gravitational waves and light): PASS, for a scalar stand-in.**
+- **The averages are exact.** The influence travels exactly on the light cone and is exactly massless, with only power-law corrections at the Planck scale and no mass.
+- **Within any single set of events,** the wave's noise is counting noise: how many links connect the observer to the source.
+- **The proved bound (E1′-b, refereed):** the noise is never more than about √3 times pure counting noise, for any source size.
+- **The numbers:** for a neutron-star merger at 1 Gpc the relative noise is about 4e-29, and the arrival-time smear is about 1e-104 s.
+- **Nothing outside the source-to-observer region matters,** and relays do not compound the noise.
+- **E1's blow-up was the operator, not the events.** BD's signed step-by-step rule amplified the substrate's noise; positive, link-only influence does not.
+
+**Massive matter: M-INCONCLUSIVE.**
+- A mass needs signed weights in the path sum. This is block 122 again: waves that are not pure light-cone transport need signed weights.
+- **Between two single events,** the massive amplitude becomes noise-dominated beyond about 3 Compton wavelengths, at any density.
+- **Not computed:** whether real particles stay coherent over a kilometre, i.e. a wavepacket measured by a spread-out detector, including regeneration along the trip.
+- **The mean has a slow growing mode,** about 0.61·m³ℓ². For a proton that is one e-fold per 6e22 m; the referee derived it independently.
+
+**Not tested:**
+- the graviton as a tensor (helicity-2) mode, or a gauge constraint;
+- nonlinear gravity;
+- E1's per-realization "crackle" of the order under strain;
+- initial-value evolution, since the link field is source-driven.
+
+**Locality.** Each event has about 5e122 past links over the age of the universe. That unbounded valency is what Lorentz invariance requires (BHS), but only the links into the source enter.
+
+**Axiom conflicts, unchanged.**
+- Lattice is replaced.
+- The causal order is supplied, because records carry no time.
+- Records as events conflict with "one record per site, permanent".
+- At Planck density, an event happening must differ from a value being locked (§8).
+
+**What this means for the backward reasoning (§8).** The event substrate with link-only influence now delivers, for massless scalar waves:
+- shape-blindness in law;
+- one light cone;
+- noise-free long-range propagation.
+
+What it still lacks:
+- a graviton (a gauge mode of the geometry);
+- coherent massive matter;
+- a dynamics for the events themselves.

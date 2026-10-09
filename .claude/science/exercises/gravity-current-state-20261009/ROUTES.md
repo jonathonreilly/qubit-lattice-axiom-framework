@@ -66,3 +66,11 @@ The tests and referee verdicts are in `TESTS.md`.
   - The row noise gain grows with the size of the past (EXACT), and the standard BD evolution is exponentially unstable at the tested ε.
   - The exclusion at physical scales needs an exponent extrapolated over about 60 decades, so the fixed reading gives INCONCLUSIVE.
   - **Rank 3 stays open** but is wounded. Its next test would be a dynamics that avoids the signed-weight noise gain (a stable generalized d'Alembertian, or link path sums), or a direct small-ε exponent.
+
+## Follow-up 2 (2026-10-09): influence along links and backward reasoning
+
+- **Rank 3 (spacetime events) improves.**
+  - With link-only influence, massless scalar waves propagate noise-free (E1′ + E1′-b, refereed PASS). E1's instability belonged to BD's signed recursion.
+  - Matter (signed massive path sums) is M-INCONCLUSIVE.
+  - The graviton itself is still unnamed.
+- **The backward reasoning (refereed CWC) agrees with rank 3's shape:** relational, time and space alike, the graviton a gauge mode of the geometry, noise handled per realization or by coherence. It also says these are naturalness requirements, not theorems.

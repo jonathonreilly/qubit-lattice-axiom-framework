@@ -33,3 +33,13 @@ alone. Signed-axis settings do not give the singlet square `8`. N7's
 steelman is again an out-of-domain escape: a record law that is not this
 density. Formation site, probability, and rate remain unsupplied. No hazard
 law was introduced to fill them.
+
+Cycle 4 does not claim that every readout misses the twist. The
+antisymmetric coordinate weight equals `2t`. The scoped statement is
+narrower: local projective Born weights of this pattern do not depend on
+`t`, and symmetric coordinate weights do not separate `t` from `-t`.
+
+N7's steelman is accepted as an out-of-domain escape: a joint instrument,
+or a pair law that is not this density. The formation sentence was reread
+and still does not supply the site, probability, or rate. No hazard law
+was introduced. The sign of `t` remains unselected.

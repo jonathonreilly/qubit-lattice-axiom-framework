@@ -38,3 +38,29 @@ Command and what it returned:
 Classification: open after that search. The executed route is the elementary
 CHSH square of the declared directed density, plus the signed-axis
 enumeration. The formation triple stays queued.
+
+## Cycle 4 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`.
+
+The formation sentence is still present. It is quoted in `HANDOFF.md` and
+was not given a note of its own.
+
+Commands and what they returned, for the readout-weight pivot:
+
+- `git grep` for `readout weight` with `twist`, for `symmetric readout`,
+  and for `w_yx`, under `docs/*.md`. Hits are complementation, Wilson
+  lines, and a clock no-go. None is this correlation matrix.
+- `git grep` for `diag(1,-1,1)` and `improper reflection`. One historic
+  intake uses `diag(1,1,-1)` as an input to a different kill. It is not
+  the action of `diag(1,-1,1)` on `T`.
+- `git grep` for `one-site reduction` and `partial trace` on the directed,
+  CHSH, bond, twist, and Moriya notes. No hit.
+- Title scan for readout-weight notes. The June selector-tangent prototype
+  is a different carrier.
+
+Classification: open after that matched-hit review. The executed route is
+the partial trace and the coordinate-weight coefficient of `t`. The
+conjugation by `P` is included. No CHSH square is part of the route. The
+formation triple stays unsupplied.

@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/directed_pattern_twist_readout_weights_2026_10_09.py
+runner_sha256: 4f490b7cf7d1f76b7785fff3f050bf6a71fe7e6026d833439f1fe10cba82c538
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS P = diag(1,-1,1) has determinant -1
+PASS P is an involution
+PASS P T P replaces t by -t at (Fraction(2, 1), Fraction(3, 1), Fraction(-1, 1))
+PASS P moves T exactly when t is nonzero at (Fraction(2, 1), Fraction(3, 1), Fraction(-1, 1))
+PASS P T P replaces t by -t at (Fraction(0, 1), Fraction(1, 1), Fraction(-1, 1))
+PASS P moves T exactly when t is nonzero at (Fraction(0, 1), Fraction(1, 1), Fraction(-1, 1))
+PASS P T P replaces t by -t at (Fraction(0, 1), Fraction(-1, 1), Fraction(-1, 1))
+PASS P moves T exactly when t is nonzero at (Fraction(0, 1), Fraction(-1, 1), Fraction(-1, 1))
+PASS P T P replaces t by -t at (Fraction(1, 2), Fraction(1, 3), Fraction(1, 5))
+PASS P moves T exactly when t is nonzero at (Fraction(1, 2), Fraction(1, 3), Fraction(1, 5))
+PASS operator correlator xx equals T
+PASS operator correlator xy equals T
+PASS operator correlator xz equals T
+PASS operator correlator yx equals T
+PASS operator correlator yy equals T
+PASS operator correlator yz equals T
+PASS operator correlator zx equals T
+PASS operator correlator zy equals T
+PASS operator correlator zz equals T
+PASS antisymmetric coordinate weight equals 2t at t=3
+PASS antisymmetric coordinate weight equals 2t at t=1
+PASS antisymmetric coordinate weight equals 2t at t=-1
+PASS antisymmetric coordinate weight equals 2t at t=1/3
+PASS diagonal correlators ignore the sign of t=1
+PASS pure twist t=1 has spectrum 0,0,0,4
+PASS diagonal correlators ignore the sign of t=-1
+PASS pure twist t=-1 has spectrum 0,0,0,4
+PASS the two pure twists are separated by 4
+PASS those readouts are +2 and -2
+PASS reductions are real at (Fraction(0, 1), Fraction(0, 1), Fraction(-2, 1), Fraction(7, 1), Fraction(4, 1))
+PASS wing-1 Bloch vector is (0,0,q) at q=0
+PASS wing-2 Bloch vector is (0,0,p) at p=0
+PASS local reductions ignore t at (Fraction(0, 1), Fraction(0, 1))
+PASS reductions are real at (Fraction(0, 1), Fraction(3, 5), Fraction(1, 2), Fraction(9, 1), Fraction(-1, 1))
+PASS wing-1 Bloch vector is (0,0,q) at q=3/5
+PASS wing-2 Bloch vector is (0,0,p) at p=0
+PASS local reductions ignore t at (Fraction(0, 1), Fraction(3, 5))
+PASS reductions are real at (Fraction(-2, 7), Fraction(0, 1), Fraction(8, 1), Fraction(-3, 1), Fraction(1, 4))
+PASS wing-1 Bloch vector is (0,0,q) at q=0
+PASS wing-2 Bloch vector is (0,0,p) at p=-2/7
+PASS local reductions ignore t at (Fraction(-2, 7), Fraction(0, 1))
+PASS reductions are real at (Fraction(1, 3), Fraction(-1, 5), Fraction(0, 1), Fraction(11, 1), Fraction(2, 1))
+PASS wing-1 Bloch vector is (0,0,q) at q=-1/5
+PASS wing-2 Bloch vector is (0,0,p) at p=1/3
+PASS local reductions ignore t at (Fraction(1, 3), Fraction(-1, 5))
+PASS same-direction weight ignores t at (Fraction(1, 1), Fraction(0, 1), Fraction(0, 1))
+PASS same-direction weight ignores t at (Fraction(0, 1), Fraction(1, 1), Fraction(0, 1))
+PASS same-direction weight ignores t at (Fraction(0, 1), Fraction(0, 1), Fraction(1, 1))
+PASS same-direction weight ignores t at (Fraction(1, 1), Fraction(2, 1), Fraction(3, 1))
+PASS same-direction weight ignores t at (Fraction(3, 1), Fraction(-4, 1), Fraction(5, 1))
+PASS a symmetric joint weight ignores t
+PASS the coordinate antisymmetric weight equals 2t
+PASS basis weight xx has coefficients (u,t,v)
+PASS basis weight xy has coefficients (u,t,v)
+PASS basis weight xz has coefficients (u,t,v)
+PASS basis weight yx has coefficients (u,t,v)
+PASS basis weight yy has coefficients (u,t,v)
+PASS basis weight yz has coefficients (u,t,v)
+PASS basis weight zx has coefficients (u,t,v)
+PASS basis weight zy has coefficients (u,t,v)
+PASS basis weight zz has coefficients (u,t,v)
+per_element: Nine coordinate joint weights and the two local projective instruments on x, y, and z. No POVM is tested.
+per_site: Both one-site reductions of one bond. A third site is not tested.
+per_mode: The twist sign is tested, including t and -t. u, v, p, and q are varied only as controls. No CHSH square is tested.
+per_block: One nearest-neighbor bond. Plaquettes and cubes are not tested.
+lattice_wide: checked and not executed — no infinite-volume or multi-bond statement is claimed or tested.
+TOTAL: PASS=61 FAIL=0
+
+----- stderr -----
+

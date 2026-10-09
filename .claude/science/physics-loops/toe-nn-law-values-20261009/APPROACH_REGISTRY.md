@@ -31,3 +31,16 @@ The elementary square is at most `8`, with equality exactly on the circle
 `p = q = 0`, `v = -1`, `u^2 + t^2 = 1`. Signed-axis square `8` holds at the
 four diagonal points of that circle and fails at the singlet, where the
 magnitude is at most `2`. Removing the density hypothesis is not implied.
+
+Family D: partial traces of the directed density, and the linear coefficient
+of `t` in a coordinate weight matrix.
+
+Target contract: exact wing reductions; the condition `W_xy = W_yx` for
+blindness to `t`; the value `2t` of one antisymmetric weight; the action of
+`diag(1,-1,1)` on `T`. No CHSH square.
+
+Terminal status of Family D for cycle 4: proved under the density hypothesis
+and a supplied readout convention. Local projective weights miss `t`.
+Symmetric weights miss `t`. The named antisymmetric weight equals `2t`.
+`P` flips the sign and is not a proper rotation. Selecting that sign is
+not implied.

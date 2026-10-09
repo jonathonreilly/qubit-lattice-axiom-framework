@@ -1,3 +1,33 @@
+# Assumptions and imports — cycle 4
+
+Supplied by the axioms, and used only as named:
+
+- sites `Z^3`, nearest neighbors, proper cubic rotations
+- one-site algebra `M_2(C)`
+- a readout value is determined by record content alone
+- the distribution does not supply the formation site, probability, or rate
+- Born weight values are outside the axioms
+
+Declared for this cycle, not an axiom:
+
+- the pair is a density of the directed pattern `p, q, v, u, t`
+- a local readout is a projective instrument `n·σ`
+- a joint readout is a real coordinate weight matrix `W`
+- `P = diag(1,-1,1)` is tested as an improper map, not adopted as covariance
+
+Not used: the dynamics clause, a Hamiltonian, the sum rule, literature
+comparator values, and the three approved primitives
+`scale_reference_primitive`, `kinetic_isotropy_primitive`, and
+`realized_state_primitive`.
+
+The bond-invariants identification of `G` is used only to place `P`
+outside that group. The conjugation `P T P` does not use it. Cycle 3's
+CHSH theorems are not inputs.
+
+Counterfactual: if the pair is not this density, Theorems 1–3 do not
+apply. If the readout is a POVM, Theorem 1 does not apply. Formation
+site, probability, and rate remain unsupplied.
+
 # Assumptions and imports — cycle 3
 
 Supplied by the axioms, and used only as named:

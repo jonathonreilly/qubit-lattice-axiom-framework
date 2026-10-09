@@ -60,4 +60,41 @@ negative claim inside the pattern, separates the parent's nullspace from
 Theorems 1–5, and does not write an audit verdict. Sections that belong to
 independent review were not run.
 
+2026-10-09 cycle 4 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The formation sentence is still reading note (2) of
+  `docs/MINIMAL_AXIOMS_2026-06-29.md`. It was quoted in `HANDOFF.md` and
+  not made into its own note. The discriminator actually executed is which
+  readout weights of the directed pattern see the twist. Source: the
+  axiom open-gate list names Born weight values, and the parent CHSH note
+  says a one-site reduction was not tested.
+- V2. Not on `origin/main`. Commands were `git grep` for readout-weight
+  with twist, for `diag(1,-1,1)`, for one-site reduction of the directed
+  bond, and a title scan for readout-weight notes. Hits are other
+  matrices, the six-letter handed census, the Moriya dynamics ground
+  state, and a June selector-tangent prototype. None is this partial trace.
+- V3. Theorems 1–3 of the cycle-4 note, checked by the paired runner.
+  The density, the instrument, and the formation triple remain open.
+- V4. Before, local weights of this pattern were untested. After, they
+  are independent of `t`, symmetric joint weights miss `t`, and one
+  antisymmetric weight equals `2t`. The improper reflection flips only
+  that sign.
+- V5. Not a corollary of the cycle-3 square. That square depends on
+  `u^2+t^2` and does not reduce the state. The partial trace and the
+  weight coefficient `W_yx-W_xy` are not Gram eigenvalues.
+
+No-go gate for the scoped blindness is in the cycle-4 source note. The
+antisymmetric weight does see `t`. A universal claim that every readout
+misses it, or that the physical rule is handed, is not made. Author
+mutations, each on a scratch copy that was deleted: reversing the
+antisymmetric difference fails four checks; demanding the wing-1 Bloch
+number equal `p` fails three. Independent review has not been requested.
+No audit grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+negative claim inside the pattern, and does not write an audit verdict.
+Sections that belong to independent review were not run.
+
 PR 9475 remains open against main. Not merged. CI is not a landing signal.

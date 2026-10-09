@@ -6,28 +6,31 @@ stop_at: 2026-10-10T12:02:06Z
 base_commit: 17a95e60d85afc246fc7c163adef8869ab3f4194
 branch: physics-loop/toe-nn-law-values-20261009
 worktree: /Users/jonreilly/.grok/campaigns/toe-24h-20261009/wt
-cycle: 3
-active_route: directed six-parameter density CHSH maximum
-approach_family: singular values of the directed correlation matrix, with the positivity criterion kept explicit
-hard_residual: dynamics clause is supplied, not derived; formation site, probability, and rate are unsupplied
+cycle: 4
+active_route: directed-pattern readout weights and the twist sign
+approach_family: partial trace of the directed density, plus the symmetry of a coordinate weight matrix
+hard_residual: dynamics clause is supplied, not derived; formation site, probability, and rate are unsupplied; the sign of t is unselected
 strongest_unresolved_obligation: formation site, probability, and rate of the nearest-neighbor distribution
 files_touched:
-  - docs/DIRECTED_STABILIZER_SIX_PARAMETER_CHSH_MAXIMUM_BOUNDED_THEOREM_NOTE_2026-10-09.md
-  - scripts/directed_stabilizer_six_parameter_chsh_maximum_2026_10_09.py
-  - logs/runner-cache/directed_stabilizer_six_parameter_chsh_maximum_2026_10_09.txt
-runner_result: "TOTAL: PASS=102 FAIL=0"
+  - docs/DIRECTED_PATTERN_TWIST_READOUT_WEIGHTS_BOUNDED_THEOREM_NOTE_2026-10-09.md
+  - scripts/directed_pattern_twist_readout_weights_2026_10_09.py
+  - logs/runner-cache/directed_pattern_twist_readout_weights_2026_10_09.txt
+runner_result: "TOTAL: PASS=61 FAIL=0"
 open_imports:
   - two-qubit density representation of one pair
+  - supplied projective instrument or coordinate weight matrix
   - formation site, probability, and rate
 no_go_routes_pruned:
   - full proper-cubic invariance forces the singlet
   - product-class six-axis pair local readouts reach CHSH square 8
   - positive directed six-parameter densities exceed CHSH square 8
   - signed-axis settings give the singlet CHSH square 8
+  - local projective Born weights of the directed pattern depend on the twist
+  - symmetric coordinate weights separate t from -t
 trace_class: negative_route_pruning
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
-commit: cycle-3 commit on this branch
-next_exact_action: Do not repeat the directed square. The formation site, probability, and rate are still unsupplied. Do not invent a hazard law. Search the axiom text before any derivation attempt, and stop that attempt if the text still does not provide the triple.
+commit: cycle-4 commit on this branch
+next_exact_action: Do not repeat the formation sentence, the CHSH squares, or this readout split. Gravity source and action remain open. Do not invent a hazard law. The sign of t is still unselected.
 stop_condition: stop_at, or disk avail below 8Gi, or no non-overlapping route remains
 do_not_touch:
   - physics-loop/photon-vacuum-shift-20261009

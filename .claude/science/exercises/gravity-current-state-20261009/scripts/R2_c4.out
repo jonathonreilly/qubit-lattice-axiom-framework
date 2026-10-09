@@ -1,0 +1,8 @@
+nn    s=0    min/max Hankel eig = -7.872e-17  RP ok
+ratl  s=1    min/max Hankel eig = -3.036e-17  RP ok
+ratl  s=2    min/max Hankel eig = -1.460e-17  RP ok
+ratl  s=4    min/max Hankel eig = -1.829e-17  RP ok
+gauss s=0.5  min/max Hankel eig = -1.066e-12  RP VIOLATED
+gauss s=1    min/max Hankel eig = -1.682e-04  RP VIOLATED
+gauss s=2    min/max Hankel eig = -7.754e-03  RP VIOLATED
+gauss s=3    min/max Hankel eig = -1.123e-02  RP VIOLATED

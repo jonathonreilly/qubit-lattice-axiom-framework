@@ -23,3 +23,18 @@ Commands and what they returned:
 Classification: open after the matched-hit review. The executed route is
 the exact CHSH comparison of the one-edge product-class law. The directed
 six-parameter density maximum stays queued.
+
+## Cycle 3 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`.
+
+Command and what it returned:
+
+- `git grep` on `origin/main` for `directed six`, `c_21-c_12`, and
+  `directed stabilizer` in markdown and Python. The hits are unrelated
+  historic notes. No CHSH evaluation of the directed coefficient pattern.
+
+Classification: open after that search. The executed route is the elementary
+CHSH square of the declared directed density, plus the signed-axis
+enumeration. The formation triple stays queued.

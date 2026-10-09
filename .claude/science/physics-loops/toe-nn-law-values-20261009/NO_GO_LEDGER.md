@@ -22,6 +22,14 @@ Read, and not treated as closing this route:
   `±1`. The sixteen sign pairs are only a control.
 - The September census leaves `(p,q,r)` free and is not a CHSH evaluation.
 
-Live escapes: drop locality of the readout, or return to the density
-representation, or derive the endpoint `w=-1` from a different clause.
-Formation site and rate remain unsupplied by the axioms.
+Live escapes after cycle 2 were: drop locality of the readout, or return to
+the density representation, or derive the endpoint `w=-1` from a different
+clause.
+
+Cycle 3 takes the density escape and does not claim that every
+representation misses square `8`. Inside the directed pattern the elementary
+square is at most `8`, and equality is a circle rather than the singlet
+alone. Signed-axis settings do not give the singlet square `8`. N7's
+steelman is again an out-of-domain escape: a record law that is not this
+density. Formation site, probability, and rate remain unsupplied. No hazard
+law was introduced to fill them.

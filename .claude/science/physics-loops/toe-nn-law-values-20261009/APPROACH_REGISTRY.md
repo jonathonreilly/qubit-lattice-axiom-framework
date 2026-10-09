@@ -19,3 +19,15 @@ Terminal status of Family B for cycle 2: proved. Coordinate square
 `8 lambda^2 ≤ 8/9`. Global-sign square equals 4 only on the named boundary.
 No local `[-1,1]` readout has square 8. The directed six-parameter maximum
 is a different family and is not implied by Family B.
+
+Family C: singular values of the directed correlation matrix, together with
+the four eigenvalues of the declared density pattern.
+
+Target contract: the exact elementary CHSH square on that positive pattern,
+and the signed-axis square as a separate finite comparison.
+
+Terminal status of Family C for cycle 3: proved under the density hypothesis.
+The elementary square is at most `8`, with equality exactly on the circle
+`p = q = 0`, `v = -1`, `u^2 + t^2 = 1`. Signed-axis square `8` holds at the
+four diagonal points of that circle and fails at the singlet, where the
+magnitude is at most `2`. Removing the density hypothesis is not implied.

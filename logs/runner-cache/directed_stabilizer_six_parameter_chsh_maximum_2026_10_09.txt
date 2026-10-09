@@ -1,0 +1,119 @@
+===== runner cache v1 =====
+runner: scripts/directed_stabilizer_six_parameter_chsh_maximum_2026_10_09.py
+runner_sha256: 8cd7acc7905b66af9c7a2aae6b3515e2310fd7a6702d98b04bd3c8415f4e0ecb
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS quarter turn about z fixes e_z and has order 4
+PASS T^T T is diag(r^2,r^2,v^2) at (Fraction(1, 1), Fraction(0, 1), Fraction(-1, 1))
+PASS computational diagonals match at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(1, 1), Fraction(0, 1))
+PASS block product matches the discriminant gap at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(1, 1), Fraction(0, 1))
+PASS antisymmetric twist is fixed by the quarter turn at (Fraction(1, 1), Fraction(0, 1))
+PASS T^T T is diag(r^2,r^2,v^2) at (Fraction(-1, 1), Fraction(0, 1), Fraction(-1, 1))
+PASS computational diagonals match at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(-1, 1), Fraction(0, 1))
+PASS block product matches the discriminant gap at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(-1, 1), Fraction(0, 1))
+PASS antisymmetric twist is fixed by the quarter turn at (Fraction(-1, 1), Fraction(0, 1))
+PASS T^T T is diag(r^2,r^2,v^2) at (Fraction(0, 1), Fraction(1, 1), Fraction(-1, 1))
+PASS computational diagonals match at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(0, 1), Fraction(1, 1))
+PASS block product matches the discriminant gap at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(0, 1), Fraction(1, 1))
+PASS antisymmetric twist is fixed by the quarter turn at (Fraction(0, 1), Fraction(1, 1))
+PASS T^T T is diag(r^2,r^2,v^2) at (Fraction(3, 5), Fraction(4, 5), Fraction(-1, 1))
+PASS computational diagonals match at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(3, 5), Fraction(4, 5))
+PASS block product matches the discriminant gap at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(3, 5), Fraction(4, 5))
+PASS antisymmetric twist is fixed by the quarter turn at (Fraction(3, 5), Fraction(4, 5))
+PASS T^T T is diag(r^2,r^2,v^2) at (Fraction(5, 13), Fraction(12, 13), Fraction(-1, 1))
+PASS computational diagonals match at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(5, 13), Fraction(12, 13))
+PASS block product matches the discriminant gap at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(5, 13), Fraction(12, 13))
+PASS antisymmetric twist is fixed by the quarter turn at (Fraction(5, 13), Fraction(12, 13))
+PASS T^T T is diag(r^2,r^2,v^2) at (Fraction(1, 3), Fraction(1, 7), Fraction(0, 1))
+PASS computational diagonals match at (Fraction(1, 5), Fraction(-1, 5), Fraction(0, 1), Fraction(1, 3), Fraction(1, 7))
+PASS block product matches the discriminant gap at (Fraction(1, 5), Fraction(-1, 5), Fraction(0, 1), Fraction(1, 3), Fraction(1, 7))
+PASS antisymmetric twist is fixed by the quarter turn at (Fraction(1, 3), Fraction(1, 7))
+PASS T^T T is diag(r^2,r^2,v^2) at (Fraction(0, 1), Fraction(3, 4), Fraction(-1, 2))
+PASS computational diagonals match at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 2), Fraction(0, 1), Fraction(3, 4))
+PASS block product matches the discriminant gap at (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 2), Fraction(0, 1), Fraction(3, 4))
+PASS antisymmetric twist is fixed by the quarter turn at (Fraction(0, 1), Fraction(3, 4))
+PASS T^T T is diag(r^2,r^2,v^2) at (Fraction(-1, 3), Fraction(0, 1), Fraction(1, 3))
+PASS computational diagonals match at (Fraction(0, 1), Fraction(0, 1), Fraction(1, 3), Fraction(-1, 3), Fraction(0, 1))
+PASS block product matches the discriminant gap at (Fraction(0, 1), Fraction(0, 1), Fraction(1, 3), Fraction(-1, 3), Fraction(0, 1))
+PASS antisymmetric twist is fixed by the quarter turn at (Fraction(-1, 3), Fraction(0, 1))
+PASS T^T T is diag(r^2,r^2,v^2) at (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+PASS computational diagonals match at (Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+PASS block product matches the discriminant gap at (Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+PASS antisymmetric twist is fixed by the quarter turn at (Fraction(0, 1), Fraction(0, 1))
+PASS T^T T is diag(r^2,r^2,v^2) at (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+PASS computational diagonals match at (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+PASS block product matches the discriminant gap at (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+PASS antisymmetric twist is fixed by the quarter turn at (Fraction(0, 1), Fraction(0, 1))
+PASS symmetric twist is not fixed by the quarter turn
+PASS c_11 unequal to c_22 is not fixed by the quarter turn
+PASS singlet kills |00>, |11>, and the symmetric triplet vector
+PASS singlet multiplies |01>-|10> by 4
+PASS pure twist multiplies |10>-i|01> by 4 and kills |00>
+PASS equatorial images have equal square length at (Fraction(1, 1), Fraction(0, 1))
+PASS equatorial strategy square is 8 r^2 at (Fraction(1, 1), Fraction(0, 1))
+PASS equatorial images have equal square length at (Fraction(-1, 1), Fraction(0, 1))
+PASS equatorial strategy square is 8 r^2 at (Fraction(-1, 1), Fraction(0, 1))
+PASS equatorial images have equal square length at (Fraction(0, 1), Fraction(1, 1))
+PASS equatorial strategy square is 8 r^2 at (Fraction(0, 1), Fraction(1, 1))
+PASS equatorial images have equal square length at (Fraction(3, 5), Fraction(4, 5))
+PASS equatorial strategy square is 8 r^2 at (Fraction(3, 5), Fraction(4, 5))
+PASS equatorial images have equal square length at (Fraction(1, 2), Fraction(1, 3))
+PASS equatorial strategy square is 8 r^2 at (Fraction(1, 2), Fraction(1, 3))
+PASS dropping the twist changes the square at (u,t)=(0,1)
+PASS longitudinal cross term is the rational square root at (Fraction(0, 1), Fraction(1, 1))
+PASS split lengths attain 4(r^2+v^2) at (Fraction(0, 1), Fraction(1, 1))
+PASS branch formula matches the two largest eigenvalues at (Fraction(0, 1), Fraction(1, 1))
+PASS longitudinal cross term is the rational square root at (Fraction(1, 4), Fraction(1, 1))
+PASS split lengths attain 4(r^2+v^2) at (Fraction(1, 4), Fraction(1, 1))
+PASS branch formula matches the two largest eigenvalues at (Fraction(1, 4), Fraction(1, 1))
+PASS longitudinal cross term is the rational square root at (Fraction(1, 9), Fraction(4, 9))
+PASS split lengths attain 4(r^2+v^2) at (Fraction(1, 9), Fraction(4, 9))
+PASS branch formula matches the two largest eigenvalues at (Fraction(1, 9), Fraction(4, 9))
+PASS longitudinal cross term is the rational square root at (Fraction(4, 25), Fraction(9, 25))
+PASS split lengths attain 4(r^2+v^2) at (Fraction(4, 25), Fraction(9, 25))
+PASS branch formula matches the two largest eigenvalues at (Fraction(4, 25), Fraction(9, 25))
+PASS the two branch formulas agree when r^2 = v^2
+PASS isotropic positivity gap factors as (1-3w)(1+w)
+PASS 8 - 2(1-v)^2 factors as 2(3-v)(1+v)
+PASS rational circle point (Fraction(-1, 1), Fraction(0, 1)) is positive with square 8
+PASS circle vector is an eigenvalue-4 state at (Fraction(-1, 1), Fraction(0, 1))
+PASS rational circle point (Fraction(1, 1), Fraction(0, 1)) is positive with square 8
+PASS circle vector is an eigenvalue-4 state at (Fraction(1, 1), Fraction(0, 1))
+PASS rational circle point (Fraction(0, 1), Fraction(1, 1)) is positive with square 8
+PASS circle vector is an eigenvalue-4 state at (Fraction(0, 1), Fraction(1, 1))
+PASS rational circle point (Fraction(0, 1), Fraction(-1, 1)) is positive with square 8
+PASS circle vector is an eigenvalue-4 state at (Fraction(0, 1), Fraction(-1, 1))
+PASS rational circle point (Fraction(3, 5), Fraction(4, 5)) is positive with square 8
+PASS circle vector is an eigenvalue-4 state at (Fraction(3, 5), Fraction(4, 5))
+PASS rational circle point (Fraction(-8, 17), Fraction(15, 17)) is positive with square 8
+PASS circle vector is an eigenvalue-4 state at (Fraction(-8, 17), Fraction(15, 17))
+PASS positive point (Fraction(0, 1), Fraction(0, 1), Fraction(-1, 1), Fraction(1, 2), Fraction(1, 2)) has square 6 below 8
+PASS positive point (Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(1, 2), Fraction(0, 1)) has square 2 below 8
+PASS positive point (Fraction(0, 1), Fraction(0, 1), Fraction(1, 3), Fraction(-1, 3), Fraction(0, 1)) has square 8/9 below 8
+PASS positive point (Fraction(0, 1), Fraction(0, 1), Fraction(-3, 4), Fraction(-3, 4), Fraction(0, 1)) has square 9/2 below 8
+PASS positive point (Fraction(0, 1), Fraction(0, 1), Fraction(1, 1), Fraction(0, 1), Fraction(0, 1)) has square 4 below 8
+PASS positive point (Fraction(1, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(0, 1)) has square 0 below 8
+PASS r^2 = 4 at v = -1 is not positive, so its formal square 32 is not a state
+PASS a nonzero local Bloch number exits the equality slice
+PASS v = 1 forbids a transverse correlation
+PASS signed-axis menu has 1296 strategies
+PASS signed-axis coefficient pairs are exactly the six proved cases
+PASS axis strategy (x,y,y,x) has coefficients (2,-2,0)
+PASS at the singlet, every signed-axis strategy has magnitude at most 2
+PASS at (u,t)=(1,0) and (0,1) on v=-1, signed-axis magnitude is 2
+PASS diagonal point has r^2 = 1 and axis value 2√2
+PASS that axis value has square 8
+PASS Cauchy equality holds for (u,t) parallel to (2,-2)
+PASS direct axis correlators at the diagonal point sum to 2√2
+per_element: The sixteen Pauli coefficients of one bond are the domain; entries outside the declared directed pattern stay zero.
+per_site: The object is one two-site bond. A one-site reduction is not tested.
+per_mode: The modes p, q, v, u, and t are tested, including the twist. The sum rule is not tested.
+per_block: One nearest-neighbor bond is tested. Plaquettes, cubes, and larger windows are not tested.
+lattice_wide: checked and not executed — no infinite-volume or multi-bond statement is claimed or tested.
+TOTAL: PASS=102 FAIL=0
+
+----- stderr -----
+

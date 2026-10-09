@@ -10,28 +10,35 @@ Cycle 1, conditional on a two-qubit density, is unchanged. Full proper-cubic
 covariance leaves dimension 2 and does not force the singlet. Runner there
 remains `TOTAL: PASS=31 FAIL=0`.
 
-Cycle 2 searches `origin/main` at `17a95e60d85` before the new computation.
-Docs naming `(p, q, r)` and docs naming `CHSH` have empty intersection.
-The September formation census leaves the weights free and does not evaluate
-CHSH. No exact comparison with squares 4 and 8 was found.
+Cycle 2 is unchanged. On the six-axis product-class pair, with no density,
+the coordinate CHSH square is at most `8/9`, and no local `[-1,1]` readout
+has square `8`. Runner there remains `TOTAL: PASS=55 FAIL=0`.
 
-On the declared six-axis product-class pair, with nonnegative `(p,q,r)` not
-all zero and no density:
+Cycle 3 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
+before the new computation. A `git grep` for the directed stabilizer and for
+`c_21-c_12` did not find a CHSH evaluation. The directed square is not on
+`origin/main`.
 
-- coordinate CHSH square is exactly `8(p-q)^2/(9(p+q+4r)^2)`, at most `8/9`,
-  never 4 and never 8
-- setting-blind global sign has square `4(p-q)^2/(p+q+4r)^2`, equal to 4
-  exactly when `r=0` and `pq=0`, and never 8
-- every local readout with values in `[-1,1]` has magnitude at most 2, so
-  its square is at most 4 and is not 8
-- one-axis conditional signs have square `4(p-q)^2/(p+q)^2` when `p+q>0`,
-  equal to 4 exactly when `pq=0`, and never 8
+On the declared directed pattern, with the density hypothesis kept explicit,
+`r^2 = u^2 + t^2`:
 
-The classical value 2 is attained by the global sign on that boundary. The
-value `2√2` is not attained. Weights stay free. This does not derive the
-dynamics clause.
+- the Gram eigenvalues are `r^2`, `r^2`, and `v^2`
+- positivity holds exactly when `|p+q| ≤ 1+v` and
+  `(p-q)^2 + 4 r^2 ≤ (1-v)^2`
+- the elementary CHSH square is `8 r^2` or `4(r^2+v^2)`, according as
+  `r^2` or `v^2` is larger
+- on the positive set that square is at most `8`, with equality exactly on
+  the circle `p = q = 0`, `v = -1`, `u^2 + t^2 = 1`
+- signed coordinate-axis settings also have square at most `8`; they attain
+  `8` at the four points where `|u| = |t| = 1/√2`, and at the singlet their
+  magnitude is at most `2`
 
-Runner: `TOTAL: PASS=55 FAIL=0`.
+Square `8` is attained and is not exceeded. It is not forced, and the
+singlet is not the only point that attains it. The value `2√2` is the
+elementary maximum on this conditional family. Weights and the twist stay
+free. This does not derive the dynamics clause or the density.
+
+Runner: `TOTAL: PASS=102 FAIL=0`.
 
 ## Do not touch
 
@@ -42,16 +49,18 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 
 ## Landed this cycle
 
-Cycle 1 commit `9f7ab95597` is already on the branch. Cycle 2 is pushed onto
-the same branch for PR 9475. Do not merge it. Do not open a second PR.
+Commits `9f7ab95597` and `caa947d12d` are already on the branch. Cycle 3 is
+pushed onto the same branch for PR 9475. Do not merge it. Do not open a
+second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 ## Next exact action
 
-The menu comparison is now on this branch. Compute the exact CHSH maximum
-of the directed six-parameter family inside the density representation.
-Keep the density hypothesis explicit. Push onto PR 9475.
+Do not repeat the directed square. The formation site, probability, and rate
+are still unsupplied. Do not invent a hazard law. The next block should
+search the axiom text first and stop if that text still does not provide
+the triple.
 
 ## Cleanup
 

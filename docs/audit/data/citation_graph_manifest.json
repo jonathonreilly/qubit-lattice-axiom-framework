@@ -1,6 +1,6 @@
 {
- "edge_count": 15423,
- "node_count": 6871,
+ "edge_count": 15425,
+ "node_count": 6872,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4357,6 +4357,10 @@
   "directed_ice_sweep_formation_makes_ice_correlations_causal_flux_propagates_as_a_directed_random_walk_bounded_theorem_note_2026-09-22": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "directed_stabilizer_six_parameter_chsh_maximum_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "a66d4817d8d7",
+   "out_degree": 2
   },
   "directional_b_density_stencil_note": {
    "deps_hash": "e3b0c44298fc",

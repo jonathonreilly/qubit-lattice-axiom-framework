@@ -297,7 +297,32 @@ Strongest correct statement (referee): genuine lattice-scale resonances obstruct
 4. **The Hamiltonian is supplied**, and the Gauss law is imposed as a constraint.
 5. **No double-cover sign appears in the group law.** Whether the emergent fermions carry spin-½ under turns (2π → −1) is put to the referee.
 
-**Prior change pending the referee.** If confirmed, K2(L,P) returns to about 0.08. G0/G0b then become a statement about one architecture (corner occupation), not about one qubit per site.
+**Referee: codex gpt-5.6-sol xhigh, CONFIRMED WITH CORRECTIONS (2026-10-08).**
+
+Confirmed:
+- **The Pauli and Majorana conventions.**
+- **All 24 turns,** about both cube centres and vertices, at L = 3 and 4, on the genuine CK A10 framing:
+  - the hop, flux, stabilizer and Hamiltonian covariance all hold;
+  - the dense block reproduces;
+  - **the exchange sign is −1 on all 20 junctions.**
+- **The group law V_gV_h = V_{gh}** for all 576 products, now **exact** over the full affine support. The worker's original 40-sample check was inadequate.
+
+Corrections:
+1. **"Eq. 30 bit-for-bit" was false for the worker's frames,** which had a −G_e sign. It is repaired on the actual CK A10 frame, which gives +G_e on all 81 edges.
+2. **The CZ depth is 12** (DSATUR), not 13. The greedy colouring gave 14. Every gate joins faces of one cube, so locality is secure.
+3. **These are one-component spinless lattice fermions,** with no spin-½ double-group action. On the even sector a 2π spinor sign could not be detected anyway. This is the same kind of fermion the staggered route uses: spin emerges from the taste structure. So it is not a defect for this programme.
+4. **Spin structures.** Only PPP and AAA are fixed by all 24 turns. Only PPP was tested.
+5. **ρ_g is a geometric relabelling,** so the result is crystalline covariance, not a full finite-depth circuit.
+
+**Strongest correct statement (referee).** On the CK A10 framing, each of the 24 proper turns is a face permutation followed by a cube-local diagonal Clifford. That preserves the Gauss-law code, the parity and hop generators, and the fermionic exchange sign, with an exact non-projective group law.
+
+**Effect.** **One qubit per site can carry covariant lattice fermions.** The qubits sit on the face sites, and the fermions are cube fluxes. G0 and G0b are now a statement about one architecture only, corner occupation.
+
+**Open cost.** In a 2×2×2 cell, the U(1) photon link between neighbouring cubes would cross the same face site that holds the CK qubit. Coupling light to these fermions therefore needs a larger cell or a second role (to be designed).
+
+**Reading.** The turns act up to a cube-local CZ dressing. That is broader than "site-local U(1) frame" (L), so L is read here as "up to a locality-preserving local dressing".
+
+**Priors.** K2(L,P) goes from 0.03 to 0.08. K2(E,P) stays at 0.04, because the dressing is not an exact turn.
 
 ## K3a′: how fast does the stress defect fall with range? (2026-10-08)
 
@@ -327,6 +352,21 @@ Strongest correct statement (referee): genuine lattice-scale resonances obstruct
 - **If the induced mass² is quadratic in the defect,** the miss is a miss of the conservative pre-registered bar, not obviously of any experiment.
 - **If it is linear,** the target defect is about 1e-103, so R ≈ 1e35 sites ≈ 1 m. Gravity is tested down to about 50 μm, so that is excluded. The worker argues "linear" from the Ward identity, but no prefactor was computed.
 
-**Referee.** codex sol, running.
+**Referee: codex gpt-5.6-sol xhigh, NOT CONFIRMED. K3a′ is INCONCLUSIVE (2026-10-08).**
 
-**If confirmed.** Record K3 = 0 for gravity X, on every room, since the diagnosis is fixed-grid plus interaction. Candidate 1 then dies, and the next survivor, Q L O B G (emergent graviton), becomes Candidate 2. Nobody has built that construction.
+Confirmed:
+- **The data reproduce.**
+- **The test set is valid.**
+- **A power law beats a constant-rate exponential.**
+
+Not confirmed:
+1. **"Exact Cholesky" is ridge-regularized normal equations.** The solver minimizes mean square but reports mean |defect|, so the number is not the optimum and not a bound. Only one seed exists at R = 16 and 18.
+2. **The scalar class is not shown to be adequate.** The referee's cheap polarization-matrix test at R = 2 changes little, but large R is uncovered.
+3. **The quoted precision on p is not physical.** A defensible range is p ≈ 2.7–3.0.
+4. **Decisively, the extrapolation is not identified.** Other forms fit the observed points equally well:
+   - stretched exponentials with β = 0.01–0.02 give R(1e-51) = 1e13–1e15, which is a PASS;
+   - a power law times exp(−R/1e13), invisible in the data, also gives a PASS.
+5. **The defect-to-mass law is not derived.** Linear dependence is generically allowed, but no self-energy was computed.
+6. **The scale.** The 1e15-site bar (1.6e-20 m) is a naturalness benchmark, far stricter than any direct gravity test, which reaches about 50 μm.
+
+**Lesson.** A 16-decade extrapolation cannot decide this. The next test is a direct calculation: **K3a″, pre-registered in the kill sheet.**

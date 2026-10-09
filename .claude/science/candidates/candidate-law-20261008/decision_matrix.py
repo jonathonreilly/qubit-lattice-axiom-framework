@@ -71,7 +71,7 @@ def k1_light(s):
 def k2_matter(s):
     # One-handed fermions with the Standard Model gauge structure.
     base = {
-        ("L", "P"): 0.03, ("L", "M"): 0.15, ("L", "U"): 0.03, ("L", "O"): 0.20,
+        ("L", "P"): 0.08, ("L", "M"): 0.15, ("L", "U"): 0.03, ("L", "O"): 0.20,
         ("E", "P"): 0.04, ("E", "M"): 0.08, ("E", "U"): 0.02, ("E", "O"): 0.10,
     }[(s["turns"], s["room"])]
     if s["motion"] == "Q":

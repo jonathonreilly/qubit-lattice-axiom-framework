@@ -152,3 +152,21 @@ With beables, this passes by construction once K4 passes: there are no new effec
 **FAIL:** some turn maps the framing to an inequivalent one, meaning no finite-depth local circuit plus gauge transformation relates them, or the hop algebra cannot be preserved.
 
 **INCONCLUSIVE:** the implementation needs a non-local or non-finite-depth map that is not excluded.
+
+## K3a″ (added 2026-10-08, after K3a and K3a′, both refereed INCONCLUSIVE): direct calculation of the interacting shear response
+
+**Why it was added.** Extrapolating a defect over 16 decades cannot decide K3 (referee). The direct quantity is the graviton mass-type term itself, measured as the vacuum's energy response to a uniform traceless shear at q = 0.
+- **Why that quantity.** A constant h_ij is a coordinate rescaling. Linearized gauge invariance then allows only a density (trace) response, and forbids any transverse-traceless (TT) second derivative. A nonzero TT shear coefficient is therefore a graviton mass term (probe 6's "the sea feels shape").
+
+**Method.**
+- Take Candidate 1's matter and light: staggered fermions plus compact/Yee U(1).
+- Couple them to a constant h_ij by a stated local rule. Choose it so that the **free** vacuum is exactly shear-blind (probe 6: possible by design).
+- Compute the vacuum-energy TT shear coefficient c₂ at **O(e²)** by second-order perturbation theory. The intermediate states are a fermion pair plus a photon, so this is a finite lattice integral over two momenta.
+- Converge it in L (or use the infinite-volume integral). Report c₂ in lattice units for at least two coupling rules: the strictly linear one, and one natural alternative such as the exponential vielbein.
+- Check whether any choice inside a stated local family makes c₂ vanish, and if one does, whether a symmetry protects that choice.
+
+**PASS:** c₂ = 0 at O(e²), within numerical precision of 1e-10 in lattice units, for a local coupling rule protected by a symmetry. No tuned bare graviton-mass counterterm is needed.
+
+**FAIL:** c₂ ≠ 0, at least 1e-6 in lattice units, for every rule in the stated family. Then the only fix is a bare graviton-mass counterterm tuned to about 1e-100 of its natural size (LIGO: m_g ≲ 1e-51 M_P). That is a **naturalness kill**, like the cosmological-constant problem, not a logical inconsistency. It is recorded as such.
+
+**INCONCLUSIVE:** c₂ is not converged, or the result depends on the coupling family in a way not covered here.

@@ -295,3 +295,83 @@ Full texts: `agents/E1_report.md` and `agents/E1_referee.md`. Scripts: `scripts/
 **Strongest correct statement (referee, condensed).**
 - **Established:** the event substrate is exactly shape-blind in law and has one real massless cone in mean. Its 4D one-step noise gain grows like ε(T/ℓ_k)². The standard (BD) evolution is genuinely exponentially unstable at ε = 0.2.
 - **Not established:** that the growth rate stays ∝ √ε/ℓ_k down to ε ~ 1e-64, or that the scalar-noise translations are the right GW and swerve observables. Those steps carry the claimed exclusion, so E1 is **INCONCLUSIVE, leaning FAIL**.
+
+## Follow-up 2 at the owner's request (pre-registered 2026-10-09, before any run)
+
+The owner asked: "test the event dynamics with influence passed along links and in parallel reason backward about what the substrate must be to get everything we need for gravity".
+
+This is a **test setting only.** It has the same axiom conflicts as E1: Lattice is replaced, and the causal order is supplied, because records carry no time (A36) and Record says "one record per site; permanent".
+
+### E1′: influence passed along links on records-as-events
+
+**Setting.**
+- A Poisson sprinkling of Minkowski M^{1,3} at density ρ = ℓ⁻⁴.
+- Influence passes only along **links**: y ⋖ x means y ≺ x with no event between them.
+- **Massless:** G₀ = a·L with a = √ρ/(2π√6), Johnston's path-sum propagator.
+- **Massive:** G_m = aL(I − abL)⁻¹ = Σ_{n≥0} a^{n+1}bⁿL^{n+1}, with b = −m²/ρ.
+- The normalisations must be verified against Johnston (arXiv:0806.3083, 0909.0944).
+- The field from a source is φ = G·J, with J a smooth localized source.
+- Control: 1+1, with Johnston's 2D causal-matrix form.
+- There is no non-locality scale beyond ℓ.
+
+**Questions.**
+- **(a) Mean conditions.**
+  - Shape-blindness in law (exact, from E1).
+  - The mean of G₀ and G_m against the continuum retarded Green functions.
+  - One cone in mean: the support of mean G₀ on the light cone, and its width as ρ → ∞.
+- **(b) Massless noise (the graviton proxy).**
+  - The per-realization relative fluctuation of (G₀J)(x) as a function of distance D, source size s and duration, and ρ.
+  - An exact or controlled asymptotic law, including link–link correlations (shared empty intervals), checked numerically over the accessible range.
+  - Does the noise grow with the size of the past beyond the source?
+  - Compounding: the noise after k successive re-emissions (a relay medium).
+- **(c) Massive noise (matter).** The per-realization relative fluctuation of G_m and G_m·J against mτ, at several ρ. Is there exponential growth, and in which variable (mτ, m²ℓτ, m⁴ℓ²τ²)? An exact or controlled law if possible: for example, chain-count variances from Poisson moment formulas.
+- **(d) Translation.**
+  - GW proxy over 1 Gpc: phase and amplitude noise, scattering loss, arrival-time spread against GW170817 (|c_g − c|/c ≲ 1e-15).
+  - The graviton mass, which is massless in mean.
+  - Locality: links are near-null, but every event has unboundedly many past links (BHS). Quantify the count over the cosmic past and say what the locality bar means here.
+
+**Readings (fixed now). Two questions, kept separate.**
+
+*The gravity question:*
+- **PASS:** (a) holds, and the per-realization noise of massless link propagation meets the GW bounds over 1 Gpc with ℓ ≤ 1e-19 m (natural ℓ = ℓ_P). This must be established by an exact or controlled asymptotic law verified in the tested range, not by a long extrapolation of a fitted trend.
+- **FAIL:** (a) fails, or such a law shows the massless noise violates the GW bounds for every ℓ ≤ 1e-19 m.
+- **INCONCLUSIVE:** otherwise.
+
+*The matter question:*
+- **M-PASS:** the massive path sum's per-realization relative noise stays bounded (no exponential growth), and an exact or controlled law keeps electron and proton propagation coherent over ≥ 1 km at ℓ = ℓ_P.
+- **M-FAIL:** by an exact or controlled law, the noise exceeds the mean, so coherence is lost, below 1 km for the electron or the proton at ℓ = ℓ_P.
+- **M-INCONCLUSIVE:** otherwise, including any verdict that would need a long extrapolation.
+
+**Supervisor's expectation (written before launch; suggested).**
+- **Gravity: PASS likely.**
+  - The massless case has no recursion (b = 0), so nothing compounds.
+  - The relative noise should go like (ℓ²D/s³)^{1/2}, about 3e-30 for s = 100 km, D = 1 Gpc, ℓ = ℓ_P.
+  - The arrival spread should be about ℓ²/D.
+  - Links into empty regions (infinite valency) should not matter for a source-driven field.
+- **Matter: M-INCONCLUSIVE or M-FAIL.**
+  - b < 0 brings back alternating signs, and the mean must build the Bessel oscillation by cancellation.
+  - A renewal-type count gives a gain of about 0.06·m⁴ℓ²D², i.e. coherence loss beyond D* ~ 4/(m²ℓ): about 10 km for the proton, 0.3 AU for the electron, about 1 m at 100 GeV.
+  - The renewal model was not a theorem in E1, so this is only a guess.
+
+### B: reasoning backward from gravity's requirements to the substrate
+
+**What it is.** A derivation task, not a test. Start from what gravity must deliver:
+- observed bounds;
+- the classical uniqueness and no-go theorems: Weinberg's soft theorem, Weinberg–Witten, Deser self-coupling, Fierz–Pauli/vDVZ, Rubakov–Tinyakov/Dubovsky, BHS, Collins et al.;
+- this packet's results: Lemma R, Lemma P, E1–E3, T1, T2, and the F1a/F1b/F2 kills;
+- the candidate pack's results: K3a″, W1, FR1–FR3, G0c, K7a;
+- the 09-28/29 probes and exercise.
+
+Then derive what any substrate must be.
+
+**Agents.** Two independent lenses, both Opus 5.5 xhigh:
+- **B1, physics-first:** from experiments and theorems.
+- **B2, framework-first:** from the four axioms and what the repo has derived or excluded.
+
+The supervisor writes its own thread before either reports.
+
+**Rules.**
+- Every necessity claim lists the theorem's hypotheses and where they could fail (headline scope discipline).
+- Owner readings are hypotheses, not rules.
+- Axiom changes are named only as prices.
+- Every no-go or necessity claim that survives into the summary gets the codex sol referee.

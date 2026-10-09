@@ -6,7 +6,22 @@
 
 ## Verdict: DEAD as a separate route (it reduces to F1b)
 
-This is a no-go claim, so the other-vendor referee is required. Its result goes in `agents/kill_F1a_referee.md` once it returns.
+**Other-vendor referee: codex gpt-5.6-sol xhigh, CONFIRMED WITH CORRECTIONS** (`agents/kill_F1a_referee.md`).
+
+- **What stands.** "An SL(3)-invariant point-process law guarantees only that the ensemble-averaged vacuum energy is shear-independent; it supplies no realization-wise Ward identity."
+  - In the models tested, a frozen realization has a random TT tadpole and tangent stiffness with nonzero S(0).
+  - That disorder is IR-relevant and destroys perturbation theory about flat space at tens of lattice spacings.
+  - The cutoff and propagation bounds are incompatible with observation.
+  - **"F1a, relying only on symmetry of the frozen ensemble, is not a viable separate solution."**
+- **Corrections:**
+  1. **The Last–Penrose "exact" no-go is incorrect.** Var F = Σ (1/n!)‖TₙF‖², but the kernels depend on the window, so S(0) = 0 needs only Var F_V = o(\|V\|). Coboundary or conservation identities, for example a stress that is a double curl of a short-range Poisson shot-noise potential, give S(q) ∝ q⁴ with nonzero kernels. **Mobility is sufficient but not proven necessary.**
+  2. **"Strong disorder at every sub-cutoff wavelength" is overstated.** It becomes order one only beyond about 25–35a. Beyond that, it diagnoses breakdown of the Born expansion; it does not compute the strong-disorder phase.
+  3. **The tadpole** diagnoses failure of the flat-background expansion. It is not a reliable prediction of large linearized h. ⟨Φ²⟩ ∝ R also assumes a local density that sources the constraint.
+  4. **Delaunay.** Lemma L protects the ensemble-averaged energy, and hence its ensemble linear response, at every t. The positive Hessian is the finite-N realization-first derivative, and averaging and differentiating do not commute. 3D positivity is unresolved.
+  5. **The tree-level cone identity** is scalar DEC only. The Collins loop claim is generic, not computed here.
+  6. **The window arithmetic is confirmed conditionally:** Λ ≲ 1e7 GeV for ℓ > 1 Gpc, against Λ ≳ 1e11 GeV for cosmic rays. It depends on σ carrying over, one cutoff for everything, and no extra cancellation.
+- **Escapes left open:** "an additional exact realization-wise cancellation, coboundary/conservation identity, or hyperuniform stress construction", each a new protecting mechanism beyond Lemma L/A.
+  - **Supervisor note (READING):** R3's necessity lemma says shear-blindness of the mean, for pair-potential theories, forces a Poisson pair correlation (ρ₂ = a). Hyperuniform density needs ρ₂ ≠ a. So within pair theories, "mean zero" and "hyperuniform" conflict, and a viable construction would need the identity at the level of the stress, not the density.
 
 **Plain version.** Averaged over all possible random site sets, the vacuum does not resist shear. But physics happens in one site set, and in any one the resistance is a random patchwork:
 - it does not thin out at long wavelengths;

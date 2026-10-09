@@ -546,3 +546,11 @@ Corrections:
 - Exact field-content cancellation. Lattice SUSY is the obvious kind, but SUSY broken at the TeV scale would leave about (TeV/M_P)⁴ ≈ 1e-60, far above the about 1e-102 needed. This is suggested, not computed.
 - Dynamical adjacency, which changes the Lattice axiom.
 - Accepting tuning, which means inheriting a second cosmological-constant-sized fine-tuning.
+
+## Prior-art miss (logged 2026-10-09)
+
+K3a″'s free-level shear stiffness was already on the 09-28 held branch:
+- **block 190:** "the seen sea resists shear", with exact infinite-lattice enclosures;
+- **block 191:** "if the member sees the sea, its uniform traceless modes have a gap".
+
+Neither the four sweeps nor the supervisor cited them. K3a″'s new content is the interacting O(e²) term, and W1's is the dynamical-length version. This is the eleventh own-prior-art miss.

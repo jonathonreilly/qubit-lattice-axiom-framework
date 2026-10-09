@@ -196,3 +196,47 @@ With beables, this passes by construction once K4 passes: there are no new effec
 **W2 verdict lines:**
 - **PASS:** after gauge, exactly 2 physical massless polarizations, and every spurious direction is massive or lifted.
 - **FAIL:** an extra massless non-gauge mode survives.
+
+## FR: gravity when records freeze sites (added 2026-10-09; owner request: "test gravity with records freezing sites")
+
+**The setting (the axioms read literally).** A record locks its site's possibility for good, so that site has no live qubit. The live qubits, which carry the shared possibilities, evolve on the remaining sites. A frozen site still counts as a neighbour condition: it is a fixed state that live neighbours feel. Matter is a cluster of N frozen sites. This follows the owner's thought that records are mass; it is a test setting only.
+
+**Prior art these tests build on (they are not re-derived):**
+- **Block 117.** A walker on unrecorded sites freezes when records fill a sublattice.
+- **Block 193 v3.** Missing records do not stretch the walk: periodic patterns give axis speed 1 or 0, and random vacancies at first order act as local scatterers with damping.
+- **Campaign 8 A6–A18.** A gas of wandering records swallowed by clumps gives 1/r clock slowing, but:
+  - half of Einstein's next-order term;
+  - half the light bending;
+  - no waves;
+  - a moving body's field survives only as a wake.
+- **Blocks 190/191.** The free sea resists shear, which gaps the member.
+
+**FR1: the static field of a frozen cluster.** This is the cheapest and most decisive test, so it runs first.
+
+*Method.* Use two live-vacuum classes, which between them cover the obvious long-range mechanisms:
+- **(a) A gapless free-fermion sea.** Staggered hopping on live sites. Frozen sites are blocked, or carry a fixed occupation that acts as a local potential. Run both readings.
+- **(b) An ordered qubit magnet with Goldstone modes.** XY and Heisenberg, ferro and antiferro, in linear spin-wave theory, plus exact checks where small. Frozen sites are spins locked along, or across, the order direction.
+
+For a cluster of N frozen sites, compute two things, then fit the tail over at least a decade in r and check that it scales with N:
+- the static perturbation δ(r) of the live vacuum at distance r;
+- the energy shift, i.e. the clock-rate shift, of a live test excitation at r.
+
+*Lines:*
+- **PASS (Newton-like):** δ ∝ N/r over at least a decade, with the same coefficient within 10% for every live species tested in that vacuum (universality).
+- **FAIL:** the tail falls faster than 1/r, the strength does not scale with N, or species coefficients differ by more than 10%.
+- **INCONCLUSIVE:** no clean asymptotic regime.
+
+*The Goldstone case.* A locked spin transverse to the order is a local field on a gapless mode, so a 1/r tilt is possible. If that happens, report what kind of field it is (scalar or vector). Campaign 8 found a one-number (scalar) field bends light half or not at all.
+
+**FR2 (only if FR1 passes): light bending and universality.**
+- **Method.** Send live wave packets past the cluster and compute their deflection against the Newtonian deflection from FR1's potential.
+- **PASS:** a ratio of 2 ± 0.1 for every species.
+- **FAIL:** anything else.
+
+**FR3: gravitational waves.**
+- **Permanent, immobile records** (the literal axiom). The frozen pattern can change only by adding records, so it cannot oscillate and carries no wave. That contradicts the observed gravitational waves (ARGUED).
+- **Moving records** (the owner's 09-20 reading).
+  - **Method.** Find the record pattern's collective modes.
+  - **PASS:** two transverse-traceless modes at light speed.
+  - **FAIL:** only longitudinal, scalar or vector modes, or none.
+  - **Prior art.** Campaign 8 found that records as locked possibilities carry no momentum, so they spread and do not ripple. Only a supplied clause, "content = direction of travel", gives sound, which is a longitudinal mode.

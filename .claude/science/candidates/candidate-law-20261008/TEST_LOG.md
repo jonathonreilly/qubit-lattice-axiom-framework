@@ -454,3 +454,21 @@ Corrections:
 2. Lengths are not readable unless derived from records.
 
 **Next.** W1 and W2 were pre-registered in `KILL_SHEET.md` and launched.
+
+## W2: vacuum Regge graviton count (2026-10-08)
+
+**Verdict: PASS.** The worker is Sonnet 5.5. A PASS needs no referee under the recording rule.
+
+- **Off the pole: nullity 5 at every real k (EXACT).**
+  - 4 gauge vertex displacements, G_A ξ = 2(z_A−1)Σξ_a.
+  - 1 spurious hyperdiagonal direction e_h.
+  - The 4 body variables are auxiliary and massive at the cutoff.
+  - The conformal mode has the usual wrong sign.
+- **On the shell: nullity 7 = 5 + 2 TT (the plus and cross polarizations).**
+  - The source propagator on conserved sources is −(4/Δ)(T·T′ − ½trT trT′). It has a simple pole whose residue has rank 2 (CHECKED).
+  - **So the repo's "7 vs 5" is a counting convention**: 5 off the pole, 7 on it. It is not an artefact or an extra mode.
+  - Prior art the sweep missed: `docs/REGGE_EXACT_REDUCTION_..._2026-09-13.md:193-231` already proves it, and the worker re-derived it independently.
+- **The spurious direction has a cubic term.** The per-cell action is S = q³/8 + q⁴/32 + … along it. The provenance note's −4√2 t³ + (4023/256) t⁴ is reproduced.
+- **Caveat.** "Has a cubic term" is not "massive": u has no propagator or gradient term, and its stability is untested. Scope: linearized, matter-free, flat background, with S₄ × inversion symmetry only.
+
+**Effect.** The vacuum graviton on the fixed-adjacency Regge complex is healthy. Whether W survives now depends on W1, i.e. interacting matter.

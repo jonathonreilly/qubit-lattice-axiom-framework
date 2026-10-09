@@ -1,0 +1,32 @@
+# (a1) literal R2 kernel, twisted IR mass, r=1
+   1 L=96 m=0.2 r=1 | 16pi^2: A=11.7334 B=1.4314 a=15.0015 b=7.4392 | dc_psi=-10.30196 dc_phi=-3.78115 Delta=-6.52081 | inner/outer Delta: -0.9551 / -5.5657 | Kmax=2.0000 [0s]
+   1 L=128 m=0.1 r=1 | 16pi^2: A=12.7874 B=2.1458 a=16.0157 b=10.4164 | dc_psi=-10.64163 dc_phi=-2.79962 Delta=-7.84200 | inner/outer Delta: -1.2518 / -6.5902 | Kmax=2.0000 [1s]
+   1 L=256 m=0.05 r=1 | 16pi^2: A=13.5819 B=2.8502 a=18.3380 b=13.2627 | dc_psi=-10.73164 dc_phi=-2.53763 Delta=-8.19401 | inner/outer Delta: -1.3291 / -6.8649 | Kmax=2.0000 [9s]
+ 1.5 L=96 m=0.1333 r=1 | 16pi^2: A=33.6400 B=1.4317 a=21.8053 b=7.4300 | dc_psi=-32.20826 dc_phi=-7.18766 Delta=-25.02060 | inner/outer Delta: -0.9486 / -24.0720 | Kmax=0.8889 [0s]
+ 1.5 L=192 m=0.06667 r=1 | 16pi^2: A=35.3213 B=2.1461 a=17.8491 b=10.4065 | dc_psi=-33.17514 dc_phi=-3.72133 Delta=-29.45380 | inner/outer Delta: -1.2495 / -28.2043 | Kmax=0.8889 [3s]
+ 1.5 L=256 m=0.03333 r=1 | 16pi^2: A=36.2779 B=2.8495 a=18.8105 b=13.2611 | dc_psi=-33.42838 dc_phi=-2.77472 Delta=-30.65366 | inner/outer Delta: -1.3315 / -29.3222 | Kmax=0.8889 [9s]
+   2 L=128 m=0.1 r=1 | 16pi^2: A=76.3011 B=1.4317 a=35.0481 b=7.4300 | dc_psi=-74.86933 dc_phi=-13.80903 Delta=-61.06030 | inner/outer Delta: -0.9486 / -60.1117 | Kmax=0.5000 [1s]
+   2 L=256 m=0.05 r=1 | 16pi^2: A=79.2039 B=2.1461 a=21.4112 b=10.4064 | dc_psi=-77.05776 dc_phi=-5.50237 Delta=-71.55539 | inner/outer Delta: -1.2495 / -70.3059 | Kmax=0.5000 [8s]
+   2 L=256 m=0.025 r=1 | 16pi^2: A=80.4803 B=2.8429 a=19.7376 b=13.3274 | dc_psi=-77.63738 dc_phi=-3.20513 Delta=-74.43225 | inner/outer Delta: -1.3637 / -73.0686 | Kmax=0.5000 [8s]
+ 2.5 L=160 m=0.08 r=1 | 16pi^2: A=146.6342 B=1.4317 a=56.8807 b=7.4300 | dc_psi=-145.20245 dc_phi=-24.72535 Delta=-120.47710 | inner/outer Delta: -0.9486 / -119.5285 | Kmax=0.3200 [2s]
+ 2.5 L=256 m=0.04 r=1 | 16pi^2: A=151.5510 B=2.1459 a=27.2840 b=10.4079 | dc_psi=-149.40508 dc_phi=-8.43807 Delta=-140.96701 | inner/outer Delta: -1.2524 / -139.7146 | Kmax=0.3200 [9s]
+ 2.5 L=256 m=0.02 r=1 | 16pi^2: A=153.3648 B=2.8260 a=21.3076 b=13.5438 | dc_psi=-150.53886 dc_phi=-3.88191 Delta=-146.65696 | inner/outer Delta: -1.4724 / -145.1845 | Kmax=0.3200 [9s]
+   3 L=192 m=0.06667 r=1 | 16pi^2: A=251.5574 B=1.4317 a=89.4507 b=7.4300 | dc_psi=-250.12563 dc_phi=-41.01036 Delta=-209.11527 | inner/outer Delta: -0.9486 / -208.1667 | Kmax=0.2222 [3s]
+   3 L=256 m=0.03333 r=1 | 16pi^2: A=259.4790 B=2.1451 a=36.0465 b=10.4150 | dc_psi=-257.33393 dc_phi=-12.81576 Delta=-244.51816 | inner/outer Delta: -1.2497 / -243.2685 | Kmax=0.2222 [8s]
+   3 L=256 m=0.01667 r=1 | 16pi^2: A=262.1104 B=2.7977 a=23.7144 b=14.0085 | dc_psi=-259.31277 dc_phi=-4.85295 Delta=-254.45982 | inner/outer Delta: -1.6821 / -252.7777 | Kmax=0.2222 [8s]
+# L-convergence at s=3, m*s=0.1
+   3 L=160 m=0.03333 r=1 | 16pi^2: A=259.4972 B=2.1259 a=36.1193 b=10.6391 | dc_psi=-257.37135 dc_phi=-12.74009 Delta=-244.63126 | inner/outer Delta: -1.3736 / -243.2577 | Kmax=0.2222 [2s]
+   3 L=192 m=0.03333 r=1 | 16pi^2: A=259.4840 B=2.1384 a=36.0664 b=10.4818 | dc_psi=-257.34554 dc_phi=-12.79228 Delta=-244.55326 | inner/outer Delta: -1.2871 / -243.2661 | Kmax=0.2222 [3s]
+   3 L=224 m=0.03333 r=1 | 16pi^2: A=259.4802 B=2.1433 a=36.0511 b=10.4316 | dc_psi=-257.33691 dc_phi=-12.80973 Delta=-244.52718 | inner/outer Delta: -1.2676 / -243.2596 | Kmax=0.2222 [4s]
+# (a1) Wilson-r dependence at s=2, m*s=0.1
+   2 L=256 m=0.05 r=0.5 | 16pi^2: A=123.1868 B=2.5302 a=231.8635 b=12.9017 | dc_psi=-120.65653 dc_phi=-109.48090 Delta=-11.17563 | inner/outer Delta: +13.7618 / -24.9374 | Kmax=0.5000 [8s]
+   2 L=256 m=0.05 r=2 | 16pi^2: A=40.9200 B=1.6651 a=7.3228 b=8.4020 | dc_psi=-39.25493 dc_phi=+0.53962 Delta=-39.79455 | inner/outer Delta: -3.0202 / -36.7743 | Kmax=0.5000 [9s]
+# (a2) R2 dispersion + Gaussian propagator weight (Collins form), r=1, m*s=0.1; continuum value -0.6917
+ 1+f L=128 m=0.1 r=1 | 16pi^2: A=2.0783 B=1.7344 a=8.3744 b=9.0704 | dc_psi=-0.34384 dc_phi=+0.34800 Delta=-0.69184 | inner/outer Delta: -0.6915 / -0.0004 | Kmax=2.0000 [1s]
+ 2+f L=256 m=0.05 r=1 | 16pi^2: A=2.0782 B=1.7344 a=8.3744 b=9.0704 | dc_psi=-0.34375 dc_phi=+0.34801 Delta=-0.69176 | inner/outer Delta: -0.6914 / -0.0003 | Kmax=0.5000 [13s]
+ 3+f L=256 m=0.03333 r=1 | 16pi^2: A=2.0787 B=1.7333 a=8.3765 b=9.0790 | dc_psi=-0.34536 dc_phi=+0.35126 Delta=-0.69662 | inner/outer Delta: -0.6963 / -0.0003 | Kmax=0.2222 [7s]
+# control: nearest-neighbour Z^3 Hamiltonian (continuous time), Wilson r=1
+  nn L=96 m=0.2 r=1 | 16pi^2: A=2.9780 B=1.6655 a=6.8662 b=8.9932 | dc_psi=-1.31252 dc_phi=+1.06348 Delta=-2.37599 | inner/outer Delta: -1.9665 / -0.4095 | Kmax=12.0000 [0s]
+  nn L=128 m=0.1 r=1 | 16pi^2: A=3.6769 B=2.3355 a=9.4743 b=11.7163 | dc_psi=-1.34136 dc_phi=+1.12096 Delta=-2.46232 | inner/outer Delta: -2.0453 / -0.4170 | Kmax=12.0000 [0s]
+  nn L=256 m=0.05 r=1 | 16pi^2: A=4.3718 B=3.0211 a=12.1898 b=14.4733 | dc_psi=-1.35069 dc_phi=+1.14174 Delta=-2.49243 | inner/outer Delta: -2.0740 / -0.4185 | Kmax=12.0000 [3s]
+  nn L=256 m=0.025 r=1 | 16pi^2: A=5.0709 B=3.7042 a=14.9659 b=17.3157 | dc_psi=-1.36674 dc_phi=+1.17494 Delta=-2.54168 | inner/outer Delta: -2.1228 / -0.4189 | Kmax=12.0000 [3s]

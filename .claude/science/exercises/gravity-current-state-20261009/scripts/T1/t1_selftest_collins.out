@@ -1,0 +1,14 @@
+q0 closed forms: worst rel err 3.1291952699506883e-14
+Collins target: 16pi^2 dc_phi = 4/3 = 1.3333333333333333
+regulator on fermion line only (Collins)
+  m/Lam=0.200  16pi^2 dc_phi=+1.10793  16pi^2 dc_psi=-0.30174  Delta=-1.40966   (16pi^2 a=3.341, b=5.557)
+  m/Lam=0.100  16pi^2 dc_phi=+1.24763  16pi^2 dc_psi=-0.32214  Delta=-1.56977   (16pi^2 a=5.715, b=8.210)
+  m/Lam=0.050  16pi^2 dc_phi=+1.30405  16pi^2 dc_psi=-0.32968  Delta=-1.63374   (16pi^2 a=8.340, b=10.948)
+  m/Lam=0.020  16pi^2 dc_phi=+1.32671  16pi^2 dc_psi=-0.33257  Delta=-1.65928   (16pi^2 a=11.948, b=14.601)
+  m/Lam=0.010  16pi^2 dc_phi=+1.33042  16pi^2 dc_psi=-0.33311  Delta=-1.66352   (16pi^2 a=14.710, b=17.371)
+regulator on both species
+  m/Lam=0.200  16pi^2 dc_phi=+1.10793  16pi^2 dc_psi=+0.00000  Delta=-1.10793   (16pi^2 a=3.341, b=5.557)
+  m/Lam=0.100  16pi^2 dc_phi=+1.24763  16pi^2 dc_psi=+0.00000  Delta=-1.24763   (16pi^2 a=5.715, b=8.210)
+  m/Lam=0.050  16pi^2 dc_phi=+1.30405  16pi^2 dc_psi=+0.00000  Delta=-1.30405   (16pi^2 a=8.340, b=10.948)
+  m/Lam=0.020  16pi^2 dc_phi=+1.32671  16pi^2 dc_psi=+0.00000  Delta=-1.32671   (16pi^2 a=11.948, b=14.601)
+  m/Lam=0.010  16pi^2 dc_phi=+1.33042  16pi^2 dc_psi=+0.00000  Delta=-1.33042   (16pi^2 a=14.710, b=17.371)

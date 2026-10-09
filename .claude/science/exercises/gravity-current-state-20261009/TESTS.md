@@ -36,3 +36,37 @@
   - **INCONCLUSIVE:** otherwise.
 
 **What a FAIL means.** That regulator cannot have both a protected light cone and zero shear stiffness without tuning. This is one corner of R2's regulator trilemma.
+
+### T1 results (2026-10-09; worker Claude Opus 5.5 xhigh; referee pending)
+
+**Method.**
+- Euclidean self-energies, with the q₀ integral done in closed form.
+- δc_ψ = B − A and δc_φ = (b − a)/2 from the coefficients of the time-derivative and space-derivative terms.
+- A twisted IR mass iγ5·m, with m → 0; an ordinary mass drifts.
+- Comparator: Collins et al.'s formula reproduced (16π²δc_φ = 1.3304 vs 4/3, CHECKED).
+
+**Δ ≡ (δc_ψ − δc_φ)/(g²/16π²), at m → 0.**
+
+| σ | (a1) literal R2 kernel | (a2) shape-fixed (Gaussian propagator factor, as in Collins) |
+|---|---|---|
+| 1 | −8.3 | −0.692 |
+| 1.5 | −31.1 | −0.692 |
+| 2 | −75.4 | −0.692 |
+| 2.5 | −148.6 | — |
+| 3 | −258 | −0.697 (L-limited; continuum −0.692) |
+
+**Controls.**
+- Nearest-neighbour Z³ with continuous time: Δ = −2.50 ± 0.03.
+- **Euclidean hypercubic Z⁴ (time on the lattice): Δ = −2×10⁻⁹**, zero by symmetry.
+
+**Verdicts against the fixed readings.**
+- **(a1): INCONCLUSIVE.** |Δ| grows about 31× (roughly ∝ σ³; a flat-band formula matches within 1–15%), so it neither falls (PASS) nor stays flat (FAIL). It is the opposite of a pass.
+  - **Reading (worker):** R2's Gaussian kernel leaves most of the Brillouin zone as a flat band, and those cutoff-scale modes renormalize only the fermion's time-derivative term.
+  - **The flatness that makes the TT stiffness vanish is what breaks the single light cone.**
+  - The reading is not changed after the fact. A growth reading would need a new, dated test.
+- **(a2): FAIL.** |Δ| = 0.69 ≥ 0.1, σ-independent to 1e-4.
+  - The value depends on shape (r = 0.5 gives +0.62, r = 1 gives −0.69, r = 2 gives −1.55). A tuned r zeroes it for one pair of species only: tuning, not protection (Collins).
+  - **Other-vendor referee required before this FAIL is reported onward:** running.
+- **(b): INCONCLUSIVE.** Only the tree level was checked: the DEC identities, and tree speed exactly 1 per configuration for the scalar and for Wilson–Dirac. The one-loop run needs supercell Bloch sampling, about a day of compute plus validation. Collins' argument predicts ⟨Δ⟩ = O(1) (ARGUED).
+
+**Scripts:** `scripts/T1/`.

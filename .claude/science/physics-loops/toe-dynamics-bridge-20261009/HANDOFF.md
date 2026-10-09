@@ -1,5 +1,7 @@
 # Current recovery checkpoint
 
+Regular review PR: [#9473](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473); open against `main`, not a draft.
+
 Source base: `17a95e60d85afc246fc7c163adef8869ab3f4194`.
 Standing instructions: `3a4b2c66a1ead7a1c48b4359627e968f681e3c39`.
 Branch: `physics-loop/toe-dynamics-bridge-20261009`.

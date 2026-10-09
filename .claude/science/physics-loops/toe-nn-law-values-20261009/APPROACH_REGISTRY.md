@@ -84,3 +84,16 @@ Covariance does not contain `kappa`. Normalisation at one nonzero value
 holds for every value, or only at `0`. Both branches occur on this orbit.
 Selecting `kappa` is not implied. A second power `kappa^2 G` is not
 implied.
+
+Family H: quadratic pencils in the span of the two odd cap lines on the
+orbit of `(0, 1, 2)`, coefficients in `{-2,-1,0,1,2}`.
+
+Target contract: whether partial normalisation isolates a unique nonzero
+`t` for an independent pencil, or whether `t = 0` always remains. No path
+mass and no CHSH square.
+
+Terminal status for cycle 8: proved under the product hypothesis. Every
+independent pencil normalises at `0`. The counts are `32` only at `0`,
+`256` at two rationals, and `208` at three. The balance pencil is exactly
+`{0, 1/2}`, both strictly positive. Selecting `t` is not implied. A factor
+that is not `1` at the parameter origin is not implied.

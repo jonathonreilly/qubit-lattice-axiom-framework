@@ -47,8 +47,14 @@ Searched commit:
    `kappa`. Normalisation at one nonzero value holds for every value, or
    only at `0`. Nonzero even quarter-turn families are the second branch.
    Odd pure orbit lines are the first, and the unit line's positivity cut
-   is the interval `|kappa| < 1`. Do not repeat the split. A factor
-   `1 + kappa F + kappa^2 G` stays open. Do not invent a hazard law.
+   is the interval `|kappa| < 1`. Do not repeat the split.
+9. **Quadratic pencils in the odd partner-cap span.** Done on this branch
+   inside coefficients `{-2,-1,0,1,2}`. Determinant `0` is the linear
+   shape and is excluded. Every independent pencil normalises at `0`.
+   None has a unique nonzero rational. The counts are `32`, `256`, and
+   `208`. The balance pencil `(1,1,0,-2)` is exactly `{0, 1/2}`, both
+   strictly positive. Do not repeat the box. A factor that is not `1` at
+   the parameter origin stays open. Do not invent a hazard law.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

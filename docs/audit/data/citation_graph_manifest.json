@@ -1,6 +1,6 @@
 {
- "edge_count": 15432,
- "node_count": 6876,
+ "edge_count": 15433,
+ "node_count": 6877,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -27501,6 +27501,10 @@
   "zero_mode_and_goegenbauer_limit_bounded_theorem_note_2026-09-24": {
    "deps_hash": "57bdff63d860",
    "out_degree": 4
+  },
+  "zero_one_two_partner_cap_quadratic_pencil_no_unique_nonzero_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "zero_one_two_soldered_bond_kappa_not_forced_bounded_theorem_note_2026-10-09": {
    "deps_hash": "c8eee4235fc9",

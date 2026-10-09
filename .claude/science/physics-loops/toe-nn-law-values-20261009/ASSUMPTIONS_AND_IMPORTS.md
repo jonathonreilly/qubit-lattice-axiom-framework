@@ -1,3 +1,32 @@
+# Assumptions and imports — cycle 8
+
+Supplied by the axioms, and used only as named:
+
+- proper cubic rotations
+- source/action left outside the axioms
+- the distribution does not supply the formation site, probability, or rate
+
+Declared for this cycle, not an axiom:
+
+- the formation reading of a nearest-neighbour rule
+- the two odd cap lines on the proper orbit of `(0, 1, 2)`
+- pencils `1 + t (a X + b Y) + t^2 (c X + d Y)`
+- the coefficient box `{-2,-1,0,1,2}`
+- partial neighbour conditions
+- the uniform weight on that orbit
+
+Not used: the `3×3` bond correlation, a CHSH score, a readout weight, a
+quadratic channel, the cycle-6 path masses, the linear quarter-turn moment
+polynomials, the dynamics clause, a Hamiltonian, literature comparator
+values, and the three approved primitives `scale_reference_primitive`,
+`kinetic_isotropy_primitive`, and `realized_state_primitive`. The premise
+registry at `docs/audit/data/axiom_premise_nodes.json` names those three
+primitives. None is an input here.
+
+Counterfactual: if the factor is not `1` at `t = 0`, Theorem 3 does not
+apply. If partial neighbour conditions are dropped, Theorem 2 does not
+apply. Formation site, probability, and rate remain unsupplied.
+
 # Assumptions and imports — cycle 7
 
 Supplied by the axioms, and used only as named:

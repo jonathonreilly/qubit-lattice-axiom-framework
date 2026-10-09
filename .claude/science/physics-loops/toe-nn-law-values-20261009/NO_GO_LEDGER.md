@@ -76,8 +76,23 @@ nonzero `kappa` holds for every `kappa` or only at `0`. On the proper orbit
 of `(0, 1, 2)`, nonzero even quarter-turn rank-1 families are only at `0`,
 and odd pure orbit lines are free for every `kappa`.
 
-N7's steelman is accepted as an out-of-domain escape: a second power
+N7's steelman was accepted as an out-of-domain escape: a second power
 `kappa^2 G`, or normalisation required only for the full six-neighbour
 condition. `kappa` stays unselected. No hazard law was introduced. The
 source/action open gate stays open. The cycle-6 path correlation is not
 recomputed.
+
+Cycle 8 does not claim that every nonlinear bond factor leaves its
+parameter free, and it does not claim that `t = 1/2` is forced. The
+scoped statement is narrower: inside coefficients `{-2,-1,0,1,2}` for
+`1 + t (a X + b Y) + t^2 (c X + d Y)`, with `X` and `Y` the odd cap lines
+and with partial neighbour conditions, a nonzero determinant never has a
+unique nonzero normalised rational. Every such pencil normalises at `0`.
+The balance pencil is exactly `{0, 1/2}`, and both values are strictly
+positive.
+
+N7's steelman is accepted as an out-of-domain escape: a third power, a
+factor that is not `1` at `t = 0`, or normalisation required only for the
+full six-neighbour condition. No unique nonzero `t` was selected. No
+hazard law was introduced. The source/action open gate stays open. The
+linear quarter-turn split is not rerun.

@@ -132,3 +132,22 @@ Classification: open after that matched-hit review. The executed route is
 the homogeneous expansion of `1 + kappa F` and the quarter-turn sectors on
 this orbit. No path correlation is part of the route. The formation triple
 stays unsupplied.
+
+## Cycle 8 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is still audit metadata and was not merged.
+
+Commands and what they returned:
+
+- `git grep` for `kappa^2` and `t^2 G` on `origin/main` under `docs/*.md`.
+  The hits are Majorana flux comparators and curvature gates. None is a
+  bond factor on the orbit of `(0, 1, 2)`.
+- `git grep` for `partner-cap` on `origin/main` under `docs/*.md`. No path.
+- `git merge-tree` against `origin/main` reported no content conflict.
+
+Classification: open after that matched-hit review. The executed route is
+the quadratic pencil in the span of the two odd cap lines, inside one
+coefficient box. No path correlation is part of the route. The formation
+triple stays unsupplied. A factor that is not `1` at `t = 0` stays open.

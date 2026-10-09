@@ -209,3 +209,36 @@ negative claim inside the linear shape and the partial-neighbour reading,
 separates the cocycle table from the raw quarter-turn product, and does
 not write an audit verdict. Sections that belong to independent review
 were not run.
+
+2026-10-09 cycle 8 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is whether a bond factor not of the shape
+  `1 + kappa F` has partial normalisation selecting a unique parameter on
+  the orbit of `(0, 1, 2)`. Source: cycle-7 N7 and `OPPORTUNITY_QUEUE.md`
+  item 8 before this cycle.
+- V2. Not on `origin/main`. `git grep` for `kappa^2` in `docs/*.md` hits
+  Majorana flux comparators and curvature gates. `git grep` for
+  `partner-cap` hits nothing. None is this pencil.
+- V3. Theorems 1–4 of the cycle-8 note, checked by the paired runner.
+  The formation triple remains open. `t = 1/2` is not a selected law.
+- V4. Before, a second power was an unclassified escape. After, every
+  independent pencil in the box normalises at `0`, and the three
+  cardinalities are `32`, `256`, and `208`.
+- V5. Not a corollary of the linear split. That split says a nonempty
+  finite set of nonzero values cannot occur for `1 + kappa F`. The balance
+  pencil is normalised exactly at `{0, 1/2}`.
+
+No-go gate for the scoped box is in the cycle-8 source note. A universal
+claim that no nonlinear factor isolates a parameter is not made. Author
+mutations, each on a scratch copy that was deleted: demanding that the
+balance pencil normalise only at `0` fails one check; demanding that the
+opposite-`z` excess vanish for every coefficient pair fails one.
+Independent review has not been requested. No audit grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+negative claim inside the coefficient box and the partial-neighbour
+reading, separates the dependent linear shape from the independent census,
+and does not write an audit verdict. Sections that belong to independent
+review were not run.

@@ -139,3 +139,71 @@ The verdict is in `scripts/T2/referee/REFEREE_VERDICT.md`.
 - **The minimiser claims are narrowed.** Only A's large-width leading coefficient is proved minimal for a single effective pole.
 - **Lemma R is narrowed.** It excludes ordinary local, additively momentum-conserving interacting extensions, not every conceivable interacting law.
 - **Strongest statement:** "On the fixed Z⁴ grid, every tested proper-distance or minimal-metric family that also has the required positive one-step transfer property (A, B and D) misses the PASS bar and retains a power-law or non-decaying TT response … This is a bounded experimental FAIL, not a theorem that RP plus hypercubic symmetry forces such a floor."
+
+## Follow-up tests at the owner's request (pre-registered 2026-10-09)
+
+The owner asked: "test the spacetime-event substrate with records as events, and test what happens if we give up the fixed repeating pattern. maybe the grid does not have all sites present? or there is no fixed pattern? or??"
+
+These are **test settings only.** The Lattice axiom is not changed by running them.
+
+**What every substrate must meet:**
+- **(A) No TT stiffness on average:** the shape-blind mean.
+- **(B) No TT stiffness noise at long wavelength in each realization:** S(0) = 0, or noise suppressed enough. F1a died here.
+- **(C) One protected light cone:** T1 found hypercubic time–space symmetry sufficient. A preferred frame splits speeds (Collins).
+- **(D) Locality enough to fit current tests.**
+
+**Supervisor power count (suggested, to be checked by E1).**
+- **Static (frozen-in-space) white disorder** in a random mass² is *relevant* in 3D: its strength relative to k² grows like (λ/a)^½. This is F1a's failure.
+- **Spacetime white disorder** (events scattered in 3+1) is *marginal*: the ratio is constant in λ.
+- **So** records-as-events could escape F1a's failure if the per-event noise σ is small, or is smeared over a modest scale ℓ.
+- **Known literature (COMPARATOR):** causal sets predict a fluctuating cosmological constant of the observed order ("everpresent Λ", Sorkin). They also need a non-locality scale to tame the fluctuations of the discrete d'Alembertian (Sorkin 2007; Benincasa–Dowker).
+
+### E1: records as spacetime events (a causal-set-like substrate)
+
+**Setting.**
+- The substrate is the set of record-formation events, a Poisson process in Minkowski spacetime (Lorentz-invariant in law).
+- Fields live on events, and their dynamics uses only the events' causal order. Take the Benincasa–Dowker discrete d'Alembertian in a local form and in a form smeared at non-locality scale ℓ.
+- Work in 1+1 and in 3+1 sprinklings.
+
+**Questions.**
+- **(a)** Is the mean response of the vacuum (or of the discrete d'Alembertian's action) to a constant volume-preserving deformation zero? Expected: yes, exactly, by invariance of the law.
+- **(b)** Is the mean low-energy propagation the same for two species, i.e. one cone in mean?
+- **(c) The decisive question: per-realization noise.**
+  - How does the fluctuation of the effective mass² felt by a long-wavelength mode, and of the TT response, scale with the averaging size λ and with ℓ?
+  - Compare with F1a's static case.
+  - Translate the result into: (i) gravitational-wave propagation over 1 Gpc without significant scattering or phase noise, together with the graviton-mass bound; (ii) observational bounds on "swerves", the Lorentz-invariant momentum diffusion of Dowker–Henson–Sorkin.
+- **(d)** What ℓ is required, and is it below the scales where locality is tested?
+  - Use about 1e-19 m (the LHC) as the locality bar.
+  - State any Lorentz-violation bounds used.
+
+**Readings (fixed now):**
+- **PASS:** some ℓ (or none needed) satisfies the gravitational-wave and graviton-mass bounds *and* the swerve bounds, with ℓ ≤ 1e-19 m. Mean shape-blindness and one mean cone must also hold.
+- **FAIL:** no ℓ satisfies both the noise bounds and the locality bar, or the mean conditions fail.
+- **INCONCLUSIVE:** otherwise, for example if a needed scaling exponent cannot be established.
+
+### E2: a grid with not all sites present (dilution)
+
+**Setting.**
+- Z³, with each site present independently with probability p.
+- Fields live on the present sites. Run two couplings: (i) nearest-neighbour among present sites; (ii) proper-distance couplings (as in R2/R3).
+- Variants: (a) frozen dilution; (b) growing dilution, where sites appear over time as records form and never disappear.
+
+**Compute.** The mean TT stiffness (both channels) against p, and the per-realization noise S(0), for a free scalar (and a fermion sea, if cheap).
+
+**Readings:**
+- **PASS:** at some p, the mean TT stiffness vanishes in both channels without tuning, and S(0) = 0.
+- **FAIL:** the mean stays nonzero for every p, since the law keeps only Z³'s finite symmetry, or S(0) > 0.
+- **INCONCLUSIVE:** otherwise.
+
+### E3: other "no fixed pattern" substrates
+
+**Setting.** Three substrates:
+- aperiodic order: a quasicrystal (a 3D icosahedral or Penrose-type construction, or a 2D analogue if 3D is too costly);
+- a hyperuniform disordered set (for example "stealthy");
+- a Poisson set that keeps growing (sites appear and are never removed).
+
+**Compute.** The mean TT stiffness and the per-realization noise, as in E2.
+
+**Readings:**
+- **PASS:** zero mean TT stiffness and S(0) = 0 at long wavelength, without tuning.
+- **FAIL:** otherwise, with the reason stated.

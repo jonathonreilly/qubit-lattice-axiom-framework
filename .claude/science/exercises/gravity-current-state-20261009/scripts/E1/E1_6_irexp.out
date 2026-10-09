@@ -1,0 +1,9 @@
+  realization 0 N=85878 [15s]
+  realization 1 N=86051 [29s]
+   tau~ 3.25 n=120 Var b1=   1.894 (+-0.244)  Var/tau^2=0.1793
+   tau~ 4.75 n=120 Var b1=   7.170 (+-0.926)  Var/tau^2=0.3178
+   tau~ 6.75 n=120 Var b1=  17.478 (+-2.256)  Var/tau^2=0.3836
+   tau~ 9.25 n=120 Var b1=  36.850 (+-4.757)  Var/tau^2=0.4307
+   tau~12.25 n=120 Var b1=  65.383 (+-8.441)  Var/tau^2=0.4357
+   tau~14.75 n=82 Var b1=  96.374 (+-15.051)  Var/tau^2=0.4430
+   fit Var b1 ~ tau^p over tau>=6.75: p = 2.17

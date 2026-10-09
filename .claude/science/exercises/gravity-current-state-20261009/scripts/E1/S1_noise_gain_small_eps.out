@@ -1,0 +1,7 @@
+Int f_inf^2 u^-1/2 du = 1.54216387989993193196986167969
+C_inf (A^2 / (eps T^2), eps->0) = 6.69547030938021816044372880979
+eps=    0.2  A^2/(eps T^2) = 15.227968   ratio to C_inf = 2.2744
+eps=    0.1  A^2/(eps T^2) = 9.999112   ratio to C_inf = 1.4934
+eps=   0.05  A^2/(eps T^2) = 8.162846   ratio to C_inf = 1.2192
+eps=   0.01  A^2/(eps T^2) = 6.963557   ratio to C_inf = 1.0400
+eps=  0.001  A^2/(eps T^2) = 6.721752   ratio to C_inf = 1.0039

@@ -83,3 +83,10 @@ Take one massless field in a constant, volume-preserving metric g = exp(−tε),
 - `kill_F1a.md:24` already had the pair-theory version as a READING: R3's necessity lemma (`R3_price.md:34`, ρ₂ = a + b/r³ ⇒ b = 0) means a pair-level zero mean forces Poisson pair statistics, which rules out a hyperuniform density.
 - Lemma P reaches the same exclusion from the law's symmetry (SL(d), or AN alone) rather than from a pair-potential functional. That makes it independent of the energy functional, and it gives the variance identity.
 - I did not grep the packet before writing it.
+
+**Lemma P after the referee (codex sol, CONFIRMED WITH CORRECTIONS; `agents/E23_referee.md` §6).**
+- "c = 1 iff ergodic" becomes **c = 1 iff density averages converge in L²**. Translation ergodicity is sufficient, not necessary; a Haar-random unimodular lattice has c = 1.
+- For c > 1 the spectrum is white at k ≠ 0 plus an atom at k = 0, not simply "white".
+- **The AN step needed more:** a contraction diag(t, …, t, t^{−(d−1)}) removes singular mass on x_d = 0, and pair exchange, not parity, equates the two half-spaces. "Smallest group" is withdrawn.
+- **Withdrawn as too strong:** the corollary's "white density ⇒ white stiffness", and "not protected ⇒ stiffness nonzero". What survives is that SL/AN law protection and ensemble-hyperuniform density exclude each other.
+- **Spacetime:** Lorentz orbits include null cones with possible singular measures, so g₂ = G(x²) needs an absolutely continuous density.

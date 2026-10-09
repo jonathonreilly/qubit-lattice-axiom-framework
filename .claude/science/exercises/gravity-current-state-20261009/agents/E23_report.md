@@ -1,6 +1,6 @@
 # E2 and E3: worker report (Claude Opus 5.5, xhigh; 2026-10-09)
 
-Verbatim final report. Referee pending (codex gpt-5.6-sol xhigh); verdicts are not recorded in TESTS.md until it returns. Scripts in `scripts/E23/`.
+Verbatim final report. Refereed by codex gpt-5.6-sol xhigh: E2 and E3 CONFIRMED WITH CORRECTIONS (`E23_referee.md`); logged in TESTS.md. Scripts in `scripts/E23/`.
 
 **What I read first:** the full axioms (`docs/MINIMAL_AXIOMS_2026-06-29.md`, all 233 lines) and `PRIMITIVE_REGISTRY_CHECK.md` (three primitives; none supplies a substrate). In the exercise folder I read SUMMARY, TESTS (E2/E3 readings at `TESTS.md:184-209`, unchanged), R3_price, kill_F1a and its referee, R1 and OUTSIDE_VIEW, and reused their formulas.
 

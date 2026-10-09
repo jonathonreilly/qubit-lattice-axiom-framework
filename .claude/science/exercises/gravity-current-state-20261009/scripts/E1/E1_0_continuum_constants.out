@@ -1,0 +1,23 @@
+== 2D (u,v light-cone coords, dt dx = du dv, V = du*dv) ==
+U=   2  mean(eps sum f)=0.52747346 (target 0.5)  S=0.60785  S/log(U^2)=0.43847
+U=   4  mean(eps sum f)=0.50000084 (target 0.5)  S=0.86743  S/log(U^2)=0.31286
+U=   8  mean(eps sum f)=0.50000000 (target 0.5)  S=1.12736  S/log(U^2)=0.27107
+U=  16  mean(eps sum f)=0.50000000 (target 0.5)  S=1.38729  S/log(U^2)=0.25018
+U=  32  mean(eps sum f)=0.50000000 (target 0.5)  S=1.64722  S/log(U^2)=0.23764
+int g2^2 ds = 0.187500 (exact 3/16 = 0.1875): S(U) ~ 0.1875*log(U^2) + c
+
+== 4D (tau, rapidity eta), V = (pi/24) tau^4 ==
+T=   2  mean(eps sum f)=0.87685529 (target 1)  S=    1.2133  S/T^2=0.30333
+T=   3  mean(eps sum f)=0.99997516 (target 1)  S=    5.2016  S/T^2=0.57796
+T=   4  mean(eps sum f)=1.00000000 (target 1)  S=   13.2029  S/T^2=0.82518
+T=   6  mean(eps sum f)=1.00000000 (target 1)  S=   41.0264  S/T^2=1.13962
+T=   8  mean(eps sum f)=1.00000000 (target 1)  S=   83.7293  S/T^2=1.30827
+T=  12  mean(eps sum f)=1.00000000 (target 1)  S=  211.6638  S/T^2=1.46989
+T=  16  mean(eps sum f)=1.00000000 (target 1)  S=  394.8592  S/T^2=1.54242
+T=  32  mean(eps sum f)=1.00000000 (target 1)  S= 1670.0284  S/T^2=1.63089
+asymptotic S/T^2 -> (pi/2)*int tau g4^2 dtau = 1.67387
+moment int g4(s) s^-1/2 ds = 2.220e-15 (0 => light-cone tail cancels in mean)
+
+White-noise gain A^2 = eps^2 * rho * S = eps * S (rho_k=1):
+  4D: A^2 ~ c' eps (T/l_k)^2 with c' = 1.67387
+  2D: A^2 ~ eps*(0.1875*log(rho_k U^2)+c)

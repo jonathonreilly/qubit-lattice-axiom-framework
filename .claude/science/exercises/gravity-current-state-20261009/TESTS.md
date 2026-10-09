@@ -207,3 +207,57 @@ These are **test settings only.** The Lattice axiom is not changed by running th
 **Readings:**
 - **PASS:** zero mean TT stiffness and S(0) = 0 at long wavelength, without tuning.
 - **FAIL:** otherwise, with the reason stated.
+
+### E2 and E3 results (2026-10-09; worker Claude Opus 5.5 xhigh; referee codex sol: CONFIRMED WITH CORRECTIONS for both)
+
+Full texts: `agents/E23_report.md` and `agents/E23_referee.md`. Scripts: `scripts/E23/`.
+
+**Field and quantity.**
+- A free scalar on the present points, with metric g = e^{th}, h traceless.
+- E″ per present site, in the channels E_g and T_2g.
+- Couplings: nn (unit Z³ bonds among present sites, weight 1/d_g²) and pd (R3's kernel, R = 1.8).
+- Bosons at m² = 1 and 0.04, plus a secondary smeared fermion sea.
+- Noise: sd·√N per direction against box size.
+- Validation reproduced by the referee: crystal pd 0.0473827 / 0.0140046; exact small-p slopes.
+
+**E2, diluted Z³ (frozen and growing): FAIL (bounded).**
+- **Mean:** nonzero in both channels at every p searched, p ∈ {1, .9, .7, .5, .3116, .3, .2, .1}.
+  - **Referee strengthening (analytic):** the nn T_2g mean is strictly negative for **every** p > 0, not just the sampled ones.
+  - The light pd boson crosses zero in E_g only, at a p that depends on the mass, while T_2g stays positive.
+- **Noise:** sd·√N is flat, so the noise is white, for every p < 1.
+  - The 24 extended fits lie at −0.60 to −0.38 against −0.5.
+  - **Referee correction:** those fits cover only p = 0.1, 0.3116 and 0.5. Some three-box fits at other p (for example nn at p = 0.9) are finite-size inconclusive, but none points to suppression.
+  - **Referee correction:** the fixed-N periodic-box estimator is not a rigorous lower bound on S(k → 0). The N^(−½) scaling is strong evidence of extensive fluctuations, not a proof.
+- **Growing dilution:** Theorem A (landed) gives Bernoulli(p(t)) at each time. The stage means equal the frozen ones. The instantaneous-vacuum reading is a fair equilibrium setting; it does not test state preparation or any dynamical cancellation.
+
+**E3: FAIL for all three substrates.**
+- **(a) Icosahedral cut-and-project set, spherical window, density 1 (construction checked).**
+  - The mean is isotropic, exactly so for the hull mean, and it is not zero without choosing the coupling range.
+    - Full functional: −0.0002 ± 0.0001 at R = 1.8; +0.0454 at R = 2.2.
+    - Pair level, confirmed by the referee's independent covariogram calculation: −0.067 (R 1.2), +0.003 (1.8), +0.198 (2.2), −0.092 (3.0).
+  - **Referee correction:**
+    - the quoted errors are phason-patch scatter, not controlled thermodynamic errors;
+    - "R = 1.8 is the crossing" is too precise;
+    - **full-functional S(0) = 0 is NOT established**: the 35× suppression is for the pair functional only;
+    - the polyhedral (Ammann–Kramer) window is untested.
+- **(b) Stealthy hyperuniform (χ = 0.30) and perturbed Z³.**
+  - The mean is +0.024 (real; robust through L = 12).
+  - The stiffness noise is white (q = −0.41 ± 0.08 and −0.50 ± 0.08) even though the density is hyperuniform.
+  - Perturbed Z³ at s ≥ 1.2 is unresolved, which does not affect the verdict.
+- **(c) Growing Poisson.** The mean is 0, as Lemma A predicts, and the noise is white at every stage.
+
+**Lemma P (supervisor; `agents/supervisor_thread.md`): CONFIRMED WITH CORRECTIONS.**
+- **Corrected statement.** A stationary simple point process in R^d (d ≥ 2) with finite local second moments and an SL(d)- or AN-invariant law has reduced second moment measure ρc·dx with c ≥ 1, so Var N(W) = ρ|W| + ρ²(c − 1)|W|².
+  - c = 1 holds iff density averages converge in L². Translation ergodicity is sufficient but not necessary; a Haar-random unimodular lattice has c = 1.
+  - When c > 1, the spectrum is white at k ≠ 0 plus a zero-frequency atom.
+- **AN proof gap closed by the referee.** A contraction argument kills singular mass on x_d = 0, and pair exchange (not parity) equates the two half-space constants. "Smallest group" is not justified.
+- **What survives:** the narrow corollary, that SL- or AN-law protection of the mean and an ensemble-hyperuniform density exclude each other.
+- **What is withdrawn as too strong:** "density noise ⇒ stiffness noise", and "no symmetry protection ⇒ nonzero response".
+
+**Strongest correct statement (referee).** In every tested free-field construction, giving up the repeating pattern, or leaving some sites absent, is not enough:
+- iid dilution keeps a cubic shear response and extensive disorder fluctuations;
+- icosahedral order makes the five TT directions equal but does not make them zero;
+- a hyperuniform density does not make a nonlinear stiffness functional hyperuniform;
+- Poisson law symmetry protects only the ensemble mean.
+
+A frozen spatial law whose shape-blind mean is protected only by SL(d) or AN symmetry cannot also have hyperuniform ensemble density. **This is not a theorem that every frozen substrate fails, or that sites must move.** Still open: an exact realization-wise coboundary or conservation identity, another structural cancellation, a quenched or non-ergodic mechanism, or a spacetime construction (E1). The defensible instruction is to give up *ensemble-symmetry-only protection on a frozen spatial substrate*.

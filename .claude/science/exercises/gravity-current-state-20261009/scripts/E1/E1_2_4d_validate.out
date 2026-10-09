@@ -1,0 +1,7 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/ex_grav/E1/scripts/E1_2_4d_validate.py:18: RuntimeWarning: Mean of empty slice
+  o = np.vstack(vals); R = np.array([v.mean(0) for v in vals])
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/_core/_methods.py:134: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+eps=0.2 T=5.0 N~387 targets=20 <shell>=267  b1=-0.9059+-nan (sd/elem 4.220)  b(x^2)=-0.332+-nan  b(t^2)=-6.743+-nan  <A^2>=8.433  [3s]
+eps=0.1 T=6.0 N~1735 targets=26 <shell>=1154  b1=+0.5280+-nan (sd/elem 2.725)  b(x^2)=+1.065+-nan  b(t^2)=+6.503+-nan  <A^2>=5.035  [0s]
+eps=0.05 T=7.0 N~6249 targets=19 <shell>=3995  b1=-0.5558+-nan (sd/elem 3.604)  b(x^2)=-1.181+-nan  b(t^2)=-12.515+-nan  <A^2>=3.061  [0s]

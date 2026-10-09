@@ -1,0 +1,7 @@
+eps=-0.020  E_frozen=0.9578954  E_retri=0.9499693
+eps=-0.010  E_frozen=0.9577844  E_retri=0.9539407
+eps=-0.005  E_frozen=0.9577917  E_retri=0.9559842
+eps=+0.000  E_frozen=0.9578408  E_retri=0.9578408
+eps=+0.005  E_frozen=0.9579317  E_retri=0.9559843
+eps=+0.010  E_frozen=0.9580646  E_retri=0.9539407
+eps=+0.020  E_frozen=0.9584557  E_retri=0.9499693

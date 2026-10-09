@@ -1,0 +1,3 @@
+(a) 2D cotan, N=1000
+  Eg   G_glass - G_liquid = +2.1064 +- 0.0913  (n=8)
+  T2g  G_glass - G_liquid = +1.9519 +- 0.0942  (n=8)

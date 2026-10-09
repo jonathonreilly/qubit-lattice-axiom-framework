@@ -1,0 +1,15 @@
+realization 0 done
+realization 1 done
+realization 2 done
+realization 3 done
+realization 4 done
+realization 5 done
+realization 6 done
+realization 7 done
+realization 8 done
+realization 9 done
+realization 10 done
+realization 11 done
+3D DEC Eg   e0/site=1.2705  G_glass=-0.0093+-0.0261  G_liquid=-0.0296+-0.0165  (G/e0: -0.0074, -0.0233)
+3D DEC T2g  e0/site=1.2705  G_glass=-0.0076+-0.0435  G_liquid=-0.0034+-0.0185  (G/e0: -0.0060, -0.0026)
+most negative eigenvalue seen (glass DEC can lose positivity): -8.72382475769496e-14

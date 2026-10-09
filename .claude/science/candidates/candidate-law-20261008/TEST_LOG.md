@@ -408,4 +408,25 @@ Not confirmed:
 
 **Plain reading.** On a fixed grid, the interacting vacuum resists being sheared, at about one part in a thousand per cell. A metric field coupled to it therefore picks up a mass at nearly the Planck scale, unless a bare counterterm is tuned to about 1e-100. This is the cosmological-constant problem's twin for the graviton mass. It is a naturalness failure, not a contradiction.
 
-**Referee.** codex sol, running. Among other things it is asked whether a different identification of h, for example as a deformation of the lattice embedding, would absorb the term, and whether the result bears on an emergent graviton.
+**Referee: codex gpt-5.6-sol xhigh, CONFIRMED WITH CORRECTIONS (2026-10-08).**
+
+Confirmed:
+- **The numbers.** Re-run with symmetric five-point differences: at L = 48, axis −0.0130346 and face +0.0124652, with the universal rule +0.0133654.
+- **The generalized Coulomb-gauge reduction,** confirmed to 1e-14.
+- **The face-channel photon averaging** is valid but not unique. Every alternative tried stays positive, from +0.01245 to +0.01375.
+- **The universal rule** is a three-link path. Every path choice gives a nonzero response.
+- **Not the source:** the photon zero mode and the fermion boundary conditions.
+
+Corrections:
+1. **The Coulomb convention should be named.** Using Candidate 1's alternating background charge adds −1/288 (axis) and +1/288 (face). That strengthens the result. With the whole Coulomb term removed, about ∓0.007 remains.
+2. **The free-level counterterm is a c-number.** It cannot create the O(e²) result. An O(e²h²) counterterm can cancel it, and that is the tuning. Cubic symmetry allows separate E_g and T_2g contact terms, so "every local rule fails" is **not proved**.
+3. **The mass interpretation is conditional.**
+   - U(1) gauge invariance does not forbid h_TT², but gravitational diffeomorphism invariance would.
+   - For an independent dynamical metric with this coupling, the term is a graviton mass term.
+   - **A genuine coordinate relabelling that moves the lattice embedding, the reciprocal cutoff and the measure together can protect c₂ = 0.** The no-grid (proper-momentum) control demonstrates this, and Wetterich's "lattice diffeomorphism invariance" (arXiv:1110.1539) is the known framework.
+4. **The 1e-100 tuning number is not derived.** It needs the lattice-to-Planck normalization and the graviton's kinetic term.
+5. **For an emergent graviton, this is a naturalness diagnostic only.** The collective metric operator and its zero-momentum 1PI inverse propagator must still be computed.
+
+**Recorded in `RESULTS`.** ("K3 gravity", gravity X) = 0. An explicit metric on the rigid grid is a naturalness kill on every room, so **Candidate 1 (Q L O B X) is dead.**
+
+**Added to the matrix.** Gravity option **W**: dynamical geometry on fixed adjacency, with matter coupled only through relations, as in lattice diffeomorphism invariance (Regge/Wetterich). It is the escape the referee identified.

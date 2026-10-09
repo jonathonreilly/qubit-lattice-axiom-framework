@@ -45,6 +45,7 @@ FORKS = {
         "X": "explicit metric/shape field as an extra degree of freedom",
         "I": "induced/entanglement gravity (Sakharov, Jacobson), no separate mode",
         "R": "record-carried: records source and carry gravity",
+        "W": "dynamical geometry on fixed adjacency, matter coupled only through relations (lattice diffeomorphism invariance; Regge/Wetterich)",
     },
 }
 ORDER = ["motion", "turns", "room", "records", "gravity"]
@@ -86,6 +87,7 @@ def k3_gravity(s):
         ("X", "P"): 0.012, ("X", "M"): 0.012, ("X", "U"): 0.006, ("X", "O"): 0.036,
         ("I", "P"): 0.02, ("I", "M"): 0.02, ("I", "U"): 0.02, ("I", "O"): 0.02,
         ("R", "P"): 0.01, ("R", "M"): 0.01, ("R", "U"): 0.01, ("R", "O"): 0.01,
+        ("W", "P"): 0.02, ("W", "M"): 0.03, ("W", "U"): 0.01, ("W", "O"): 0.05,
     }[(s["gravity"], s["room"])]
     if s["turns"] == "E":
         base *= 0.8
@@ -121,7 +123,7 @@ AXIOM_FIT = {
     "turns": {"L": 0.95, "E": 1.0},
     "room": {"P": 0.6, "M": 0.5, "U": 1.0, "O": 0.2},
     "records": {"B": 0.6, "F": 0.95, "D": 0.4},
-    "gravity": {"G": 1.0, "X": 0.6, "I": 0.9, "R": 1.0},
+    "gravity": {"G": 1.0, "X": 0.6, "I": 0.9, "R": 1.0, "W": 0.5},
 }
 
 
@@ -147,7 +149,14 @@ CHECKS = [
 # Recorded outcomes: (check name, ((fork, option), ...)) -> 0 or 1.
 # Empty until checks run. Example after a failure of Candidate 1 on K2:
 #   ("K2 matter", (("motion", "H"), ("turns", "L"), ("room", "P"))): 0,
-RESULTS = {}
+RESULTS = {
+    # K3a'' (2026-10-08), referee CONFIRMED WITH CORRECTIONS: an explicit metric
+    # coupled to interacting matter and light on the rigid cubic grid gets a
+    # robust O(e^2) TT shear term ~1e-2 e^2 per cell with no protecting symmetry
+    # (naturalness kill). The diagnosis is the rigid-grid coupling, not the room,
+    # so X fails on every room. Embedding-covariant couplings are option W.
+    ("K3 gravity", (("gravity", "X"),)): 0,
+}
 
 
 def factor(check, deps, fn, s):

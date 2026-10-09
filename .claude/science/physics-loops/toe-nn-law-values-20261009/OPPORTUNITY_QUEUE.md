@@ -1,7 +1,7 @@
 # Opportunity queue
 
-Ranked after cycle 5. Refresh `origin/main` before each search.
-Searched commit for the directed-square comparison:
+Ranked after cycle 6. Refresh `origin/main` before each search.
+Searched commit:
 `d9b869b97944676aaa759915462c529dc276a04c`.
 
 1. **Menu or records-only CHSH against the new corners.** Done on this
@@ -30,11 +30,17 @@ Searched commit for the directed-square comparison:
    middle ratio `9/2` on one pair. The directed pattern kills the
    symmetric-off-diagonal channel and sees the twist only as `4 t^2`.
    Do not repeat the count.
-6. **Degree 3, or a derivative-dependent action.** Still open, and not
-   implied by item 5. The derivative-dependent action named by the
-   cubic-anisotropy note is not a finite row reduction. Search before
-   writing a degree-3 count. Do not invent a hazard law. Do not overlap
-   the live Codex photon or D3Q27 branches.
+6. **Degree 3 of the same bond matrix.** Not opened. A count of that
+   matrix is corollary churn of item 5. Do not write it. Do not identify
+   a polynomial channel with a mass density.
+7. **Chirality of a record alphabet other than the bond matrix.** Done on
+   this branch for one orbit. The proper orbit of `(0, 1, 2)` equals its
+   mirror orbit. The transverse-sign factor of `(1, 2, 3)` is identically
+   `0`. One axis-role product is normalised and fixed by `diag(1, 1, -1)`,
+   with path correlation `1/72` at `kappa = 1/2`. Do not repeat it.
+   `(1, 1, 2)`, `(1, 2, 2)`, mixed alphabets, and higher-rank bond spaces
+   stay unclassified. Do not invent a hazard law. Do not overlap the live
+   Codex photon or D3Q27 branches.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

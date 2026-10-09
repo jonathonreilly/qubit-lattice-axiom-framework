@@ -1,3 +1,31 @@
+# Assumptions and imports — cycle 6
+
+Supplied by the axioms, and used only as named:
+
+- proper cubic rotations
+- source/action left outside the axioms
+- the distribution does not supply the formation site, probability, or rate
+
+Declared for this cycle, not an axiom:
+
+- the formation reading of a nearest-neighbour rule
+- the soldered product shape `1 + kappa X_d(a) X_{-d}(b)`
+- the uniform weight on the proper orbit of `(0, 1, 2)`
+- the supplied value `kappa = 1/2`
+- the three-site path along `e_z`
+
+Not used: the `3×3` bond correlation, a CHSH score, a readout weight, a
+quadratic channel, the dynamics clause, a Hamiltonian, literature
+comparator values, and the three approved primitives
+`scale_reference_primitive`, `kinetic_isotropy_primitive`, and
+`realized_state_primitive`.
+
+The order-blind note is read for its boundary sentence. Its transverse-sign
+rule and its path masses are not steps in these proofs.
+
+Counterfactual: if the alphabet is not the orbit of `(0, 1, 2)`, Theorems
+1–3 do not apply. Formation site, probability, and rate remain unsupplied.
+
 # Assumptions and imports — cycle 5
 
 Supplied by the axioms, and used only as named:

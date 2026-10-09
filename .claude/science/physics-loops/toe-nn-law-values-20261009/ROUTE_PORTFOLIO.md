@@ -88,3 +88,26 @@ Classification: open after that matched-hit review. The executed route is
 the degree-2 invariant space of one `3×3` correlation and its restriction
 to the directed pattern. No CHSH square and no readout weight is part of
 the route. The formation triple stays unsupplied.
+
+## Cycle 6 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is audit metadata and was not merged.
+
+Commands and what they returned:
+
+- `git grep` for `orbit of (0, 1, 2)` under `docs/*.md` and `scripts/*.py`
+  on `origin/main`. No path.
+- `git grep` for `(0, 1, 2)` inside the order-blind note of 2026-09-22.
+  No path. That note's chiral pair is the mirror union of `(1, 2, 3)`.
+- The boundary sentence of that note still says generic orbits beyond the
+  exhibited rules, higher-rank bond spaces, and mixed alphabets are not
+  classified.
+- A degree-3 count of the cycle-5 matrix was not opened. It is the same
+  carrier.
+
+Classification: open after that matched-hit review. The executed route is
+the proper orbit of `(0, 1, 2)` and one axis-role bond product. No CHSH
+square, no readout weight, and no polynomial of the bond matrix is part of
+the route. The formation triple stays unsupplied.

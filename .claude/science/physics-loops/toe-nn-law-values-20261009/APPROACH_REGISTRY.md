@@ -57,3 +57,16 @@ invariant space has dimension `4` for both the proper group and the full
 signed-permutation group. The directed restriction is even in `t` and
 misses the symmetric-off-diagonal coefficient. Selecting the four ratios
 is not implied.
+
+Family F: soldered product factors on a record-value orbit that is not the
+bond correlation and not the chiral pair of `(1, 2, 3)`.
+
+Target contract: whether the proper orbit of `(0, 1, 2)` splits under
+mirrors; whether the transverse-sign factor has support; one explicit
+normalised product and its path correlation at a supplied `kappa`.
+
+Terminal status for cycle 6: proved under the product hypothesis. The
+orbit is achiral of size `24`. The transverse-sign factor is identically
+`0`. The axis-role product is mirror-fixed, and the path correlation is
+`1/72` at `kappa = 1/2`. Selecting `kappa` is not implied. Other 24-point
+orbits and higher-rank bond spaces are not implied.

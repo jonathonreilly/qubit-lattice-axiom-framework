@@ -13,39 +13,36 @@ Stop at `2026-10-10T12:02:06Z`. One worktree only:
 
 That sentence is still the axiom text. No note was opened that only repeats
 it. No hazard law was invented. The same memo's open-gate list still places
-source/action outside the axioms. Cycle 5 does not close that gate.
+source/action outside the axioms. Cycle 6 does not close that gate.
 
 ## Done this cycle
 
-Cycles 1–4 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
-`TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`, and
-`TOTAL: PASS=61 FAIL=0`. Do not repeat the CHSH specializations or the
-readout split.
+Cycles 1–5 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
+`TOTAL: PASS=61 FAIL=0`, and `TOTAL: PASS=44 FAIL=0`. Do not repeat the
+CHSH specializations, the readout split, or the four quadratic channels.
 
-Cycle 5 searched that same `origin/main` commit for a quadratic scalar
-action of one bond correlation. The 2026-06-17 cubic-anisotropy note counts
-weights on the traceless symmetric block only. It is not this nine-entry
-count. No merge with `origin/main` was made: the one newer main commit is
-audit metadata, and `git merge-tree` reported no content conflict.
+Cycle 6 searched that same `origin/main` commit for a record alphabet that
+is not the bond correlation. The order-blind note of 2026-09-22 still says
+that generic orbits beyond the exhibited rules are not classified. Its
+chiral pair is the mirror union of `(1, 2, 3)`. No merge with `origin/main`
+was made: the one newer main commit is audit metadata, and `git merge-tree`
+reported no content conflict.
 
-On a real `3×3` matrix with the signed-permutation action:
+On the proper cubic orbit of `(0, 1, 2)`:
 
-- the proper group has order `24` and the full group has order `48`
-- both groups leave the same `4`-dimensional space of quadratic invariants
-- a basis is the trace square, the traceless-diagonal square, the
-  symmetric-off-diagonal square, and the antisymmetric square
-- a `3-4-5` rotation, not a signed permutation, forces the middle ratio
-  `9/2` on one tested pair
-- on the directed pattern the symmetric-off-diagonal square is `0`, the
-  antisymmetric square is `4 t^2`, and every invariant quadratic is even
-  in `t`
-- the two pure twists `t = ±1` give the same four values
+- the orbit has `24` points and equals its full signed-permutation orbit
+- the transverse-sign factor of `(1, 2, 3)` is identically `0`
+- the axis-role sign defines a bond product fixed by `diag(1, 1, -1)`
+- at `kappa = 1/2` the three-site path is order-blind, the ends are
+  independent, and the adjacent correlation is `1/72`
+- `kappa` is not selected, and the alphabet is not a chiral pair
 
-The four ratios are not selected. The sign of `t` is not selected. The
-matrix stays declared. This does not derive a source identification, the
-derivative-dependent action, or the formation triple.
+The matrix of cycles 1–5 is not used. This does not derive a source
+identification or the formation triple. The orbits of `(1, 1, 2)` and
+`(1, 2, 2)`, mixed alphabets, and higher-rank bond spaces stay open.
 
-Runner: `TOTAL: PASS=44 FAIL=0`.
+Runner: `TOTAL: PASS=16 FAIL=0`.
 
 ## Do not touch
 
@@ -56,18 +53,19 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 
 ## Landed this cycle
 
-Commits `9f7ab95597`, `caa947d12d`, `a242b4a1f2`, and `2c87950822` are
-already on the branch. Cycle 5 is pushed onto the same branch for PR 9475.
-Do not merge it. Do not open a second PR.
+Commits `9f7ab95597`, `caa947d12d`, `a242b4a1f2`, `2c87950822`, and
+`9bd6713a1b` are already on the branch. Cycle 6 is pushed onto the same
+branch for PR 9475. Do not merge it. Do not open a second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 ## Next exact action
 
 Do not repeat the formation sentence, the CHSH evaluations, the readout
-split, or this four-channel count. The sign of `t` and the four quadratic
-ratios stay unselected. A degree-3 count is not implied; search before
-writing one. Do not invent a hazard law.
+split, the four-channel count, or this achiral-orbit factor. `kappa` stays
+unselected. Other 24-point orbits and higher-rank bond spaces stay
+unclassified. Do not invent a hazard law. Do not identify a polynomial
+channel with a mass density.
 
 ## Cleanup
 

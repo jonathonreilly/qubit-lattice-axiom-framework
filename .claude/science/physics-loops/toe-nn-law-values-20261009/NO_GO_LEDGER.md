@@ -55,3 +55,15 @@ N7's steelman is accepted as an out-of-domain escape: a functional that is
 not a degree-2 polynomial, or a readout that is not a cubic scalar. The
 four channel ratios stay unselected. No hazard law was introduced. The
 source/action open gate stays open.
+
+Cycle 6 does not claim that every 24-point record alphabet varies, or that
+variation requires a chiral pair. The scoped statement is narrower: the
+proper orbit of `(0, 1, 2)` is equal to its mirror orbit, the
+transverse-sign factor of `(1, 2, 3)` has no support on it, and one
+axis-role product on that alphabet is normalised and fixed by
+`diag(1, 1, -1)`.
+
+N7's steelman is accepted as an out-of-domain escape: a higher-rank bond
+space, or the orbit of `(1, 1, 2)`. `kappa` stays unselected. No hazard
+law was introduced. The source/action open gate stays open. The bond
+matrix of cycles 1–5 is not this carrier.

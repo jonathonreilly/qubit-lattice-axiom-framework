@@ -6,19 +6,19 @@ stop_at: 2026-10-10T12:02:06Z
 base_commit: 17a95e60d85afc246fc7c163adef8869ab3f4194
 branch: physics-loop/toe-nn-law-values-20261009
 worktree: /Users/jonreilly/.grok/campaigns/toe-24h-20261009/wt
-cycle: 5
-active_route: quadratic scalar channels of one bond correlation
-approach_family: degree-2 polynomials invariant under signed permutations, plus one rational rotation
-hard_residual: dynamics clause is supplied, not derived; formation site, probability, and rate are unsupplied; the sign of t is unselected; the four quadratic channel ratios are unselected
+cycle: 6
+active_route: order-blind factor on the achiral orbit of (0, 1, 2)
+approach_family: finite proper-cubic orbit of record values, one explicit bond product
+hard_residual: dynamics clause is supplied, not derived; formation site, probability, and rate are unsupplied; kappa is unselected; other 24-point orbits and higher-rank bond spaces are unclassified
 strongest_unresolved_obligation: formation site, probability, and rate of the nearest-neighbor distribution
 files_touched:
-  - docs/DIRECTED_BOND_QUADRATIC_ACTION_CHANNELS_BOUNDED_THEOREM_NOTE_2026-10-09.md
-  - scripts/directed_bond_quadratic_action_channels_2026_10_09.py
-  - logs/runner-cache/directed_bond_quadratic_action_channels_2026_10_09.txt
-runner_result: "TOTAL: PASS=44 FAIL=0"
+  - docs/ACHIRAL_ZERO_ONE_TWO_ORBIT_ORDER_BLIND_FACTOR_BOUNDED_THEOREM_NOTE_2026-10-09.md
+  - scripts/achiral_zero_one_two_orbit_order_blind_factor_2026_10_09.py
+  - logs/runner-cache/achiral_zero_one_two_orbit_order_blind_factor_2026_10_09.txt
+runner_result: "TOTAL: PASS=16 FAIL=0"
 open_imports:
-  - the declared 3x3 correlation matrix and its signed-permutation action
-  - the directed coefficient pattern for the restriction
+  - the soldered product form on a finite alphabet
+  - the uniform one-site weight and the supplied kappa
   - formation site, probability, and rate
 no_go_routes_pruned:
   - full proper-cubic invariance forces the singlet
@@ -28,10 +28,12 @@ no_go_routes_pruned:
   - local projective Born weights of the directed pattern depend on the twist
   - symmetric coordinate weights separate t from -t
   - proper-cubic covariance selects the quadratic channel ratios or the sign of t
+  - the orbit of (0, 1, 2) is a chiral pair
+  - the (1, 2, 3) transverse-sign factor varies that orbit
 trace_class: negative_route_pruning
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
-commit: cycle-5 commit on this branch
-next_exact_action: Do not repeat the formation sentence, the CHSH squares, the readout split, or this four-channel count. The sign of t and the four ratios stay unselected. Do not invent a hazard law. A degree-3 count needs a fresh search and is not implied.
+commit: cycle-6 commit on this branch
+next_exact_action: Do not repeat the formation sentence, the CHSH squares, the readout split, the four-channel count, or this achiral-orbit factor. Kappa stays unselected. Other 24-point orbits and higher-rank bond spaces stay unclassified. Do not invent a hazard law.
 stop_condition: stop_at, or disk avail below 8Gi, or no non-overlapping route remains
 do_not_touch:
   - physics-loop/photon-vacuum-shift-20261009

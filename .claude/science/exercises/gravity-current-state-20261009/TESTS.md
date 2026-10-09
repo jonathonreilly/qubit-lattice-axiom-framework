@@ -261,3 +261,37 @@ Full texts: `agents/E23_report.md` and `agents/E23_referee.md`. Scripts: `script
 - Poisson law symmetry protects only the ensemble mean.
 
 A frozen spatial law whose shape-blind mean is protected only by SL(d) or AN symmetry cannot also have hyperuniform ensemble density. **This is not a theorem that every frozen substrate fails, or that sites must move.** Still open: an exact realization-wise coboundary or conservation identity, another structural cancellation, a quenched or non-ergodic mechanism, or a spacetime construction (E1). The defensible instruction is to give up *ensemble-symmetry-only protection on a frozen spatial substrate*.
+
+### E1 results (2026-10-09; worker Claude Opus 5.5 xhigh; referee codex sol: INCONCLUSIVE, leaning FAIL)
+
+Full texts: `agents/E1_report.md` and `agents/E1_referee.md`. Scripts: `scripts/E1/` (the referee's in `scripts/E1/referee/`).
+
+**Setting, as pre-registered (a test setting only).**
+- A Poisson sprinkling of Minkowski space.
+- The Benincasa–Dowker/Sorkin smeared d'Alembertian, with ε = (ℓ/ℓ_k)^d.
+- The 2D and 4D coefficients were checked against the literature (referee).
+- **This setting conflicts with the axioms.** Records as events break Record's "one record per site; permanent", and A36 says records carry no time, so the causal order is supplied.
+
+**What passed (EXACT; confirmed).**
+- **(a) Mean shape-blindness.** A constant determinant-one strain maps the order to the Minkowski order with the same Poisson law, so the whole distribution of every order observable is strain-independent, not just its mean. This is the first substrate in this exercise where both mean conditions come from symmetry.
+  - **But per realization the order "crackles".** It is piecewise constant in strain and jumps when pairs cross nullness. The rms response goes like s^0.51 (five points; not a universal exponent). There is no smooth stiffness term.
+- **(b) One cone in mean.** B̄(p) = F(p², sgn p⁰), so every species shares the real massless cone.
+  - **Referee caveat:** the 4D mean operator also has complex zeros, so "one cone" does not mean "one mode" or "stable". Continuum work reports 4D instability that contour or Wheeler prescriptions can project out (Aslanbeigi–Saravani–Sorkin arXiv:1403.1622; BBL arXiv:1411.6513).
+
+**What grows.**
+- **Row noise gain (EXACT, L² statement, referee item 8).** Every nonzero retarded 4D kernel that depends only on the interval volume has infinite white-noise gain in an infinite Minkowski past, because each proper-time slice carries an infinite hyperboloid volume. Alternating signs cannot cancel |K|². A finite cosmic past makes it finite but huge.
+- **The coefficient (CHECKED).** For the BD weights, A² → 1.6739·ε(T/ℓ_k)² for a diamond of height T, and 4× that, 6.695, for a slab past of depth T (supervisor S1/S1b). The coefficient converges as ε → 0.
+- **Exponential instability (CHECKED at ε = 0.2).** The naive retarded evolution is genuinely exponentially unstable: the referee's 12-realization extension to 10.5ℓ_k fits an exponential at rate 0.645, with log-RSS 0.0095 against 0.145 for a power law.
+  - At ε = 0.05 the series is too short to tell.
+  - The measured rates 0.41, 0.45 and 0.74 compare with renewal predictions 0.33, 0.47 and 0.67.
+- **The renewal model is NOT a theorem.** Overlapping intervals give covariance corrections of 5–24% at ε = 0.2 and 15–66% at ε = 0.1, growing as ε falls. Smooth (correlated) errors are protected by the alternating signs; rough errors see Σw².
+
+**Why the verdict is INCONCLUSIVE, leaning FAIL (fixed reading; TESTS.md:8).**
+- The claimed exclusion needs the instability rate ∝ √ε/ℓ_k down to ε ≈ 7e-64. Then ℓ_k³ > 1.585ℓ_P²L gives ℓ_k ≳ 2.3e-15 m for 1 Gpc and 3.8e-15 m for c·t₀, far above the 1e-19 m bar.
+- That exponent is extrapolated, not established. Keeping the ε = 0.1 calibration, an exponent of about ε^0.71 would already erase the exclusion.
+- The scalar-to-GW and swerve translations are conditional: the tensor rate is asserted, the mapping onto the Philpott–Dowker–Sorkin and Kaloper–Mattingly coefficients is not derived, and the lenient swerve rows assume a preferred-frame cutoff.
+- Coarse GW phase noise alone passes, as the supervisor's pre-registered power count said.
+
+**Strongest correct statement (referee, condensed).**
+- **Established:** the event substrate is exactly shape-blind in law and has one real massless cone in mean. Its 4D one-step noise gain grows like ε(T/ℓ_k)². The standard (BD) evolution is genuinely exponentially unstable at ε = 0.2.
+- **Not established:** that the growth rate stays ∝ √ε/ℓ_k down to ε ~ 1e-64, or that the scalar-noise translations are the right GW and swerve observables. Those steps carry the claimed exclusion, so E1 is **INCONCLUSIVE, leaning FAIL**.

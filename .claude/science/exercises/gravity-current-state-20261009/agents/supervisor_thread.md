@@ -90,3 +90,10 @@ Take one massless field in a constant, volume-preserving metric g = exp(−tε),
 - **The AN step needed more:** a contraction diag(t, …, t, t^{−(d−1)}) removes singular mass on x_d = 0, and pair exchange, not parity, equates the two half-spaces. "Smallest group" is withdrawn.
 - **Withdrawn as too strong:** the corollary's "white density ⇒ white stiffness", and "not protected ⇒ stiffness nonzero". What survives is that SL/AN law protection and ensemble-hyperuniform density exclude each other.
 - **Spacetime:** Lorentz orbits include null cones with possible singular measures, so g₂ = G(x²) needs an absolutely continuous density.
+
+## E1 outcome against my pre-registered expectation (2026-10-09, after the referee)
+
+- **My headline ("on this count E1 would PASS") was a coarse-grained phase-noise count.** That row does pass in E1.
+- **My first caveat was the one that mattered.** It said the BD sum runs over the whole past light cone, whose volume is infinite, so per-realization fluctuations could scale much worse. They do: the row noise gain diverges with the size of the past (EXACT), and the naive evolution is exponentially unstable at the tested ε. Only the extrapolation to physical ε keeps this from a FAIL.
+- **S1** had the coefficient right for a slab past. The referee's "missing Jacobian" was a region convention, slab against diamond (S1b, CHECKED).
+- **Reading (not tested).** Waves need signed weights in any step-by-step rule (block 122, landed in PR #9176). On a Poisson substrate, signed weights turn the substrate's noise into a gain that grows with the size of the past. A rule that moves influence only along links, with positive weights (Johnston's massless path sum), avoids the cancellations, but it is a propagator from sources, not an initial-value evolution. Whether the instability is BD-specific is therefore the natural next question. Prior art on path sums: the event era's complex-phase path sums on DAGs, dropped for rank-1 collapse.

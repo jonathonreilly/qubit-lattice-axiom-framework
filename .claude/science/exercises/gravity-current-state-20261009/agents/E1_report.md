@@ -1,6 +1,6 @@
 # E1 records as spacetime events: worker report (Claude Opus 5.5, xhigh; 2026-10-09)
 
-Verbatim final report. Referee pending (codex gpt-5.6-sol xhigh); the verdict is not recorded in TESTS.md until it returns. Scripts in `scripts/E1/` (literature PDFs the worker fetched are not committed).
+Verbatim final report. Refereed by codex gpt-5.6-sol xhigh: **INCONCLUSIVE, leaning FAIL** (not the FAIL claimed below; `E1_referee.md`); logged in TESTS.md. Scripts in `scripts/E1/` (literature PDFs the worker fetched are not committed).
 
 **E1 verdict: FAIL (bounded). Both mean conditions hold, but no ℓ ≤ 1e-19 m survives the noise once the field is actually propagated.** The FAIL needs the other-vendor referee before it is reported.
 

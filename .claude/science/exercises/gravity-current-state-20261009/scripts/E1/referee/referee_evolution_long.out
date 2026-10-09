@@ -1,0 +1,22 @@
+realization=01 N=21878 closed=-0.37047 -1.1954 -1.5532 -3.9268 -12.595 -14.84 -2.9252
+realization=02 N=21544 closed=-1.2194 -1.578 -1.5811 +1.7608 +10.934 +25.965 +35.402
+realization=03 N=21756 closed=-0.64551 -0.47932 +3.2792 +4.0686 -8.8781 -30.707 -53.263
+realization=04 N=21645 closed=+0.054127 -0.44288 -1.9273 -3.9156 +2.2641 +33.732 +67.216
+realization=05 N=21535 closed=-0.66261 -0.65536 +1.3337 +2.2704 -0.57671 +4.9101 +34.143
+realization=06 N=21890 closed=-0.536 +0.91553 +5.5564 +13.929 +16.694 -1.6987 -36.633
+realization=07 N=21916 closed=+1.4689 +3.5477 +7.1175 +15.272 +35.615 +51.259 +72.986
+realization=08 N=22038 closed=+2.1192 +2.826 +1.9026 +0.65701 +7.6278 +31.612 +56.453
+realization=09 N=21847 closed=+0.52913 +0.98967 +3.231 +2.0636 -4.9449 +4.1516 +22.315
+realization=10 N=21824 closed=+0.38713 +0.89748 +0.35836 -6.2306 -14.67 -10.405 -24.427
+realization=11 N=21815 closed=+0.52521 -1.0579 -3.599 -4.1087 -1.7559 -1.0871 +5.5087
+realization=12 N=21856 closed=+0.96195 +3.1536 +3.5345 -1.3105 -7.9966 -18.593 -49.339
+== eps=0.2 T=13.5 nreal=12 lambda=0.8 ==
+tc= 4.5 open_rms=0.350173 closed_rms=0.959585 closed_median_abs=0.590753 closed_q25_q75=(-0.563375,+0.637334)
+tc= 5.5 open_rms=0.425447 closed_rms=1.80357 closed_median_abs=1.02378 closed_q25_q75=(-0.755994,+1.44875)
+tc= 6.5 open_rms=0.555495 closed_rms=3.44388 closed_median_abs=2.57913 closed_q25_q75=(-1.56019,+3.34303)
+tc= 7.5 open_rms=0.523076 closed_rms=6.73868 closed_median_abs=3.92122 closed_q25_q75=(-3.91843,+2.71999)
+tc= 8.5 open_rms=0.565175 closed_rms=13.7671 closed_median_abs=8.43733 closed_q25_q75=(-8.21698,+8.4542)
+tc= 9.5 open_rms=0.709582 closed_rms=24.3266 closed_median_abs=16.7165 closed_q25_q75=(-11.5141,+27.377)
+tc=10.5 open_rms=0.811336 closed_rms=43.9675 closed_median_abs=36.0174 closed_q25_q75=(-27.4783,+40.6648)
+exp_rate=0.645122 logRSS=0.00946756
+power=4.56671 logRSS=0.145201

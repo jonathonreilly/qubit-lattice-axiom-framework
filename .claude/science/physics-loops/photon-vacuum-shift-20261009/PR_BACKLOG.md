@@ -1,3 +1,6 @@
-# PR state
+# PR milestone
 
-Regular PR planned; no PR opened yet. No draft, author merge or audit application.
+Regular [PR #9474](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9474) is open against `main` with draft mode disabled.
+The source and evidence milestone is delivered for independent integration.
+No author merge or retained-status audit was performed. The PR contains the
+remaining proof obligations and links to this recovery packet.

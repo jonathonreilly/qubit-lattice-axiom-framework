@@ -7,10 +7,11 @@ actual_current_surface_status: conditional-support
 target_claim_type: bounded_theorem
 trace_class: upstream_support
 reachability_to_target: supports
-current_milestone: independently checked source ready for regular PR
-next_action: finish delivery checks and open a regular review PR
+current_milestone: independently checked source delivered in regular PR
+next_action: independent integration then compact-state and higher-interaction control
 runtime_budget: null
 cycles: 1
 audit_requested: false
 strongest_open_obligation: compact-state comparison and uniform higher-interaction control
 stop_condition: checked coherent milestone with regular PR and explicit handoff
+pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9474

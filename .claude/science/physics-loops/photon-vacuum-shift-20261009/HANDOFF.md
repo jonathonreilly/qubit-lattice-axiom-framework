@@ -1,5 +1,7 @@
 # Current checkpoint
 
+Regular review PR: [#9474](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9474); open against `main`, not a draft.
+
 Base `17a95e60d85afc246fc7c163adef8869ab3f4194`; branch
 `physics-loop/photon-vacuum-shift-20261009`. One bounded research milestone.
 

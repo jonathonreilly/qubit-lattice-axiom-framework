@@ -39,7 +39,7 @@ So (D_zF)² ≤ 2J(z)²L_Π(x,z) + 2(Σ_y J(y)L_Π(x,y)1{z∈I(y,x)})².
 
 **Step 5 (integrate).**
 - **The y' integral, for fixed y.**
-  - The shell thickness gives ρ∫dδ' e^{−ρV'/2} ≈ √12·ℓ²/(2r').
+  - The shell thickness gives ∫dδ' e^{−ρV'/2} ≈ (√12/2)·ℓ²/r'. *(Corrected per referee: no ρ prefactor.)*
   - The transverse integral gives ∫d²b·overlap ≈ 13ℓ⁶. It is finite, because b⁻⁴ is integrable in 2D.
   - The depth integral gives at most s.
   - Altogether ρ²∫dy'(…) ≤ c₀·s/D, using ρ²ℓ⁸ = 1.
@@ -56,3 +56,27 @@ So (D_zF)² ≤ 2J(z)²L_Π(x,z) + 2(Σ_y J(y)L_Π(x,y)1{z∈I(y,x)})².
 - D ≫ s ≫ ℓ.
 - The flat, infinite sprinkling of the E1′ setting.
 - A scalar link field. This is not a tensor bridge.
+
+## After the referee (codex sol: CONFIRMED WITH CORRECTIONS; `E1p_b_referee.md`)
+
+**E1′ gravity is PASS for the registered scalar, source-driven proxy G₀ = aL.** The tensor bridge is a scope caveat, not a PASS gate.
+
+**Corrections.**
+1. **B_diag = Diag is a leading-order asymptotic.**
+   - Corrections are O(ℓ²/(Ds) + s/D) and are absorbed into c·s/D.
+   - "Thick" means thick in the cone-normal direction compared with ℓ²/D, with a non-vanishing, slowly varying cross-section where the cone passes.
+   - A thin source at m = m₀ gives B_diag/Diag ≈ 2m₀.
+2. **The overlap depends on the two shell depths.** The usable bound is |I∩I'| ≤ min{ℓ⁴m, ℓ⁴m', Cℓ⁸b⁻⁴·min(m,m')(m^{1/4}+m'^{1/4})⁴}.
+   - The 23 plateau is specific to r = r' and m = m' = 1. The referee's independent runs give about 22.6.
+   - The polynomial m-dependence is harmless, because every moment is exponentially integrable.
+   - 4π is an order of magnitude, not an upper bound.
+3. **The transverse integral is finite:** 2π∫b·db·min(M, A/b⁴) = 2π√(MA).
+4. **"F ≤ 3" means F ≤ 3 + c·s/D.** That is indistinguishable from 3 at physical s/D of about 4e-22.
+
+**Strongest correct statement (referee).** For a bounded, regular source crossing the past cone transversely, with cone-normal thickness ≫ ℓ²/D, bounded aspect ratios and D ≫ s ≫ ℓ:
+
+  Var F ≤ (3 + C′_S·s/D)·N̄, with C′_S independent of ρ and of s/ℓ.
+
+For the neutron-star proxy at 1 Gpc this gives sd/mean ≲ 3.7e-29.
+
+**Not established:** tensor propagation, nonlinear gravity, strain response, or stable initial-value dynamics.

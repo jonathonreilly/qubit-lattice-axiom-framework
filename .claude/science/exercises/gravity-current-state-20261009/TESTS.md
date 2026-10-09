@@ -421,3 +421,13 @@ Full texts: `agents/E1p_report.md` and `agents/E1p_referee.md`. Scripts: `script
 - **CONFIRMED:** the referee confirms the bound, with hypotheses stated. The gravity reading's "controlled law" condition is then met, and **E1′ gravity becomes PASS for the scalar link proxy.** At physical parameters F ≤ 3, so the relative noise is ≤ 3.7e-29 at 1 Gpc.
 - **NOT CONFIRMED:** the bound fails, for example a divergent overlap integral or a misapplied inequality. E1′ gravity stays INCONCLUSIVE.
 - **Scope, unchanged by this follow-up:** the tensor bridge, E1's strain crackle, and source-driven (not initial-value) propagation. The referee is asked to say whether the tensor bridge is a scope caveat (as in E1's scalar proxy) or a PASS condition under the fixed reading.
+
+### E1′-b result (2026-10-09; referee codex sol: CONFIRMED WITH CORRECTIONS)
+
+**E1′ gravity: PASS for the registered scalar, source-driven proxy** (`agents/E1p_b_referee.md`). The bound Var F ≤ (3 + C′_S·s/D)·N̄ holds uniformly in s/ℓ and ρ for regular sources crossing the cone with cone-normal thickness ≫ ℓ²/D. For a neutron-star merger at 1 Gpc this gives relative noise ≲ 3.7e-29.
+
+**Corrections applied** in `agents/supervisor_E1p_b.md`: the shell average is asymptotic, "thick" means cone-normal thickness, the overlap bound depends on the shell depths, and a dimensional typo is fixed.
+
+**Not established, and outside the scope of this PASS:** the tensor/helicity-2 bridge, nonlinear gravity, E1's strain crackle, and initial-value propagation.
+
+**Matter remains M-INCONCLUSIVE.**

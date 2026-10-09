@@ -1,0 +1,4 @@
+N=216: e0/site mean 0.94075  sd 1.15e-02  sd*sqrtN 0.1687 +- 0.0069
+N=512: e0/site mean 0.93902  sd 8.16e-03  sd*sqrtN 0.1847 +- 0.0107
+N=1000: e0/site mean 0.94139  sd 5.79e-03  sd*sqrtN 0.1832 +- 0.0146
+N=1728: e0/site mean 0.94170  sd 3.86e-03  sd*sqrtN 0.1604 +- 0.0182

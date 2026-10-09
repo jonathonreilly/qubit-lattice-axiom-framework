@@ -14,7 +14,7 @@
   - The cutoff and propagation bounds are incompatible with observation.
   - **"F1a, relying only on symmetry of the frozen ensemble, is not a viable separate solution."**
 - **Corrections:**
-  1. **The Last–Penrose "exact" no-go is incorrect.** Var F = Σ (1/n!)‖TₙF‖², but the kernels depend on the window, so S(0) = 0 needs only Var F_V = o(\|V\|). Coboundary or conservation identities, for example a stress that is a double curl of a short-range Poisson shot-noise potential, give S(q) ∝ q⁴ with nonzero kernels. **Mobility is sufficient but not proven necessary.**
+  1. **The Last–Penrose "exact" no-go is incorrect.** Var F = Σ (1/n!)‖TₙF‖², but the kernels depend on the window, so S(0) = 0 needs only Var F_V = o(|V|). Coboundary or conservation identities, for example a stress that is a double curl of a short-range Poisson shot-noise potential, give S(q) ∝ q⁴ with nonzero kernels. **Mobility is sufficient but not proven necessary.**
   2. **"Strong disorder at every sub-cutoff wavelength" is overstated.** It becomes order one only beyond about 25–35a. Beyond that, it diagnoses breakdown of the Born expansion; it does not compute the strong-disorder phase.
   3. **The tadpole** diagnoses failure of the flat-background expansion. It is not a reliable prediction of large linearized h. ⟨Φ²⟩ ∝ R also assumes a local density that sources the constraint.
   4. **Delaunay.** Lemma L protects the ensemble-averaged energy, and hence its ensemble linear response, at every t. The positive Hessian is the finite-N realization-first derivative, and averaging and differentiating do not commute. 3D positivity is unresolved.

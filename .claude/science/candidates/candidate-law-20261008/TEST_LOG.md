@@ -298,3 +298,35 @@ Strongest correct statement (referee): genuine lattice-scale resonances obstruct
 5. **No double-cover sign appears in the group law.** Whether the emergent fermions carry spin-½ under turns (2π → −1) is put to the referee.
 
 **Prior change pending the referee.** If confirmed, K2(L,P) returns to about 0.08. G0/G0b then become a statement about one architecture (corner occupation), not about one qubit per site.
+
+## K3a′: how fast does the stress defect fall with range? (2026-10-08)
+
+**Verdict against the fixed line: FAIL.** The worker is Sonnet 5.5, and the K3a referee's corrections were applied. The referee (codex sol) is running, and nothing goes into `RESULTS` until it reports.
+
+**Protocol.**
+- **Charge class.** Taste-scalar charges with an exact IR constraint.
+- **Solve.** Exact least squares (Cholesky, with no penalty), on 300–400k training resonances.
+- **Test set.** A fixed 150k set, shared by every R.
+- **Convergence.** Seed spread is ≤ 1%. Changing the ridge, doubling the training set, or changing the photon radius barely moves the result (≤ 1.5%).
+- **Not done.** Polarization-matrix photon weights.
+
+**Mean |defect| on the test set.**
+
+| R | 2 | 4 | 6 | 8 | 10 | 12 | 14 | 16 | 18 |
+|---|---|---|---|---|---|---|---|---|---|
+| defect | 0.114 | 0.0224 | 0.00735 | 0.00316 | 0.00162 | 0.00095 | 0.00061 | 0.00044 | 0.00030 |
+
+**Fits.**
+- **Power law:** p = 2.87 ± 0.02, χ²/dof 0.66. Every window of three or more consecutive R gives p between 2.80 and 2.97.
+- **Exponential:** rejected, χ²/dof 122. Its local rate falls like p/R, which is the signature of a power law.
+
+**Extrapolation.** The defect reaches 1e-51 at R ≈ 2e17 to 1e19 sites, above the fixed 1e15 bar. Reaching 1e15 would need p ≥ 3.4. The extrapolation spans 16 decades.
+
+**Physical reading (supervisor).**
+- **At Planck spacing,** 1e17–1e19 sites is about 1e-18 to 1e-16 m, still below the proton radius.
+- **If the induced mass² is quadratic in the defect,** the miss is a miss of the conservative pre-registered bar, not obviously of any experiment.
+- **If it is linear,** the target defect is about 1e-103, so R ≈ 1e35 sites ≈ 1 m. Gravity is tested down to about 50 μm, so that is excluded. The worker argues "linear" from the Ward identity, but no prefactor was computed.
+
+**Referee.** codex sol, running.
+
+**If confirmed.** Record K3 = 0 for gravity X, on every room, since the diagnosis is fixed-grid plus interaction. Candidate 1 then dies, and the next survivor, Q L O B G (emergent graviton), becomes Candidate 2. Nobody has built that construction.

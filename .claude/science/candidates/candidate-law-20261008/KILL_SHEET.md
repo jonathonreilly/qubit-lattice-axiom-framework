@@ -130,3 +130,25 @@ With beables, this passes by construction once K4 passes: there are no new effec
 **FAIL:** the defect plateaus, or the extrapolated range exceeds 1e15 sites.
 
 **INCONCLUSIVE:** the fit is not stable over three R values.
+
+## G0c (added 2026-10-08, after G0 and G0b): face-qubit bosonization
+
+**Why it was added.**
+- G0 and G0b exclude, within the classes tested, fermions built as corner occupation qubits with edge links. Both verdicts were refereed (CONFIRMED WITH CORRECTIONS).
+- The referee identified Chen–Kapustin's exact 3D bosonization (arXiv:1807.07081) as genuinely outside that architecture:
+  - qubits on faces, carrying a 2-form Z₂ gauge field;
+  - fermion parity as cube flux;
+  - face-supported X·Z-dressed hops;
+  - a modified edge Gauss law.
+- It depends on a spin structure and on a cubic-lattice framing (the ∪₁ convention). Whether the 24 turns are a symmetry needs its own calculation.
+- On the doubled cell, face-role sites are exactly "one qubit per site with a pattern".
+
+**Question.** Can all 24 proper turns about a cube centre (and about a vertex) be implemented on the Chen–Kapustin model as locality-preserving maps (finite-depth local unitaries, times gauge transformations, times a change of framing that is itself a local unitary) that preserve:
+1. the bosonized Hamiltonian algebra, up to the gauge constraints;
+2. the fermionic statistics of the cube excitations?
+
+**PASS:** an explicit, locality-preserving implementation of all 24 turns, checked on a finite periodic lattice, preserving the dressed-hop algebra in the constrained sector.
+
+**FAIL:** some turn maps the framing to an inequivalent one, meaning no finite-depth local circuit plus gauge transformation relates them, or the hop algebra cannot be preserved.
+
+**INCONCLUSIVE:** the implementation needs a non-local or non-finite-depth map that is not excluded.

@@ -187,6 +187,23 @@ The worker is Sonnet 5.5. The referee (codex sol) is running.
 
 **Effect on priors.** K2(L,P) goes from 0.04 to 0.03 and K2(E,P) stays at 0.04, because the A52 route works under exact turns.
 
+**Referee: codex gpt-5.6-sol xhigh, CONFIRMED WITH CORRECTIONS (2026-10-08).** This is a bounded no-go.
+
+Confirmed:
+- The holonomy signatures, over all 27,168 class entries. There are 1,536 distinct non-scalar tables (C1 sits inside C2).
+- The 194-template scan.
+- Pauli constraints that commute with every individual hop.
+- The loop lemma, for termwise hop-invariant sectors containing dilute two-particle states.
+- The Z₈ census, for its finite ansatz on the unconstrained domain.
+
+Not covered:
+- dense sectors;
+- subspaces invariant only under the summed Hamiltonian;
+- non-Pauli sectors without dilute states;
+- face-qubit exact bosonization. **Chen–Kapustin (arXiv:1807.07081) is genuinely outside the architecture, and G0's turn obstruction does not transfer without a separate calculation.**
+
+**Follow-up.** G0c was pre-registered in `KILL_SHEET.md` and launched. Its question is whether the 24 turns act locally on the Chen–Kapustin face-qubit model.
+
 ## K3a: graviton mass from the interacting sea (2026-10-08)
 
 **Verdict, read against the pre-registered line: INCONCLUSIVE.** The worker labels it "FAIL, qualified". The pre-registered FAIL needs two things:

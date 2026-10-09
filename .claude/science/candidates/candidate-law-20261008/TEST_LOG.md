@@ -627,3 +627,23 @@ Phenomenologically that means a specially constrained scalar, or more naturally 
 **Plain reading.** Moving records spread or make sound, but never the stretch-and-squeeze ripple. A tensor wave needs a symmetric-tensor degree of freedom with its own propagating dynamics, and no record model supplies one. Records carry a scalar (number), at most a vector (momentum, under the wind clause), and internal labels. This agrees with campaign 8's "a crowd of records spreads, not ripples".
 
 **Referee.** codex sol, running.
+
+**FR3 referee: codex gpt-5.6-sol xhigh, CONFIRMED WITH CORRECTIONS (2026-10-09).**
+
+**The FAIL holds for all three implemented models.**
+
+Corrections:
+1. **Swap gas.** Permanent inert contents add conserved composition fields beyond the single density mode. Those fields are diffusive, including any tensor-valued label.
+2. **The A27 tick is not reversible.** At c = 0.95 it has 302 complex eigenvalues, strongly damped (|λ| ≤ 0.085) and far from a massless branch. Its stationary measure ranges from −28.9% to +13.4% around uniform. "Monotone for every observable" is not a theorem for this tick. There is still no evidence of a hydrodynamic TT wave.
+3. **Wind gas.** It conserves N and momentum. It "has no independent energy mode" (energy ∝ N); the earlier "does not conserve energy" was imprecise. Its sound and shear modes are confirmed within mean field. Along an axis only xx−yy is helicity-2-like, while 2zz−xx−yy mixes with helicity 0. The m = 2 block is purely real (gapped), and the × polarization is absent.
+4. **Detailed balance** gives completely monotone same-observable autocorrelations only for a reversible *continuous-time* generator. That covers the swap gas and the vacancy model, not the A27 tick or wind streaming.
+5. **Vacancy model.** It has no displacement or momentum variable, so no phonons. **A fixed Z³ does not by itself forbid phonons**: displacement and momentum fields on a fixed reference lattice would support them. Phonons are helicity ±1, so they would still fail FR3.
+6. **Speed.** GW170817 bounds an integrated delay, −3e-15 < (v_g − c)/c < 7e-16, not pointwise density uniformity.
+
+**The strongest correct statement (referee).** This is a **model-specific exclusion, not a no-go for all moving-record rules**:
+- the swap and vacancy fields diffuse;
+- the wind gas has scalar sound, vector shear, and one gapped axis-TT-like component, with no × polarization.
+
+Records could in principle carry a symmetric tensor plus a conjugate current with local wave dynamics. That would still need TT constraints, two polarizations, isotropy and an untuned light speed. Such a tensor carried by records is an explicit metric field, so it meets K3a″'s stiffness wall (supervisor reading).
+
+**Recorded.** This is consistent with ("K3 gravity", gravity R) = 0 (FR1). No new key is needed.

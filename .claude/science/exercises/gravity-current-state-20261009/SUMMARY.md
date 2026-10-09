@@ -53,7 +53,9 @@ All of this is seen in the models we built, for small waves and weakly interacti
    - On a grid that treats time as a fourth grid direction with the same step as space, symmetry forces particles' speeds to stay equal.
    - With a shape-blind smooth regulator and continuous time, the speeds split by about 0.7 × g²/16π², set by the regulator's shape, not its scale (checked).
    - So in every tested form, removing the stiffness costs the protection of one light speed. That is a trilemma between positivity, one protected light speed, and zero stiffness, at the free-field level for smooth kernels.
-6. **T2 (keep the grid):** [result pending; see `TESTS.md`].
+6. **Test T2 (refereed): the last keep-the-grid regulator fails.**
+   - Every positive (one-step transfer), time-and-space-alike kernel coupled through true distance keeps a stiffness that falls only as a power of its width. The best is about 6×10⁻⁴ at width 10, with a 1/width² floor. Reaching about 10⁻¹⁰² would need impossibly wide couplings (checked; bounded to the families searched).
+   - The only exact zero relabels momenta directly. It works for free fields, but it is outside the test's contract, and ordinary interacting laws cannot use it, because momentum stops adding up at vertices (checked; Lemma R, narrowed by the referee).
 7. **None of the routes produces the graviton itself.** The liquid's displacement is a vector. Records carry only scalars and vectors (FR3). The "mediator" half of the wall is untouched (reading, as on 09-29).
 
 ## 3. Routes worth doing (at most three)
@@ -61,7 +63,7 @@ All of this is seen in the models we built, for small waves and weakly interacti
 | Route | What you would have to believe | Cost | First test | What it would change |
 |---|---|---|---|---|
 | **Write the price down once** (a refereed note) | nothing new | 1–2 days plus a referee | assemble T0, R3's surface lemma, Lemma R, the fluid lemma, Lemma A/L plus the realization noise, Lemma N, T1, K3a″/W1 | It turns about fifteen results into one owner-level statement of what massless gravity costs on a fixed grid |
-| **Keep the grid with a positive, time-and-space-alike, smooth or "perfect" regulator** (if T2 passes) | that such a regulator's stiffness can fall faster than any power without tuning, and survive gauge fields | T2 hours; gauge extension days | T2 | the only route that keeps the Lattice axiom |
+| **Decide whether to keep the grid and pay the tuning** (an owner decision, not a calculation) | that a second cosmological-constant-sized tuning is acceptable, about 1 part in 10⁹⁸ of two shear numbers | none; it is a choice | — | If yes, gravity work on the fixed grid can proceed with the stiffness carried as a tuned number (like the cosmological constant). The other walls (chirality, the mediator) remain |
 | **A spacetime-event substrate** (random events scattered in space-time, causal-set-like) | that a law over sprinkled events can be shape-blind and keep one light speed in every configuration, not just on average | days | per-configuration stiffness noise for a 3+1 sprinkling. **PASS:** no long-wavelength noise and no tadpole | the one architecture no agent killed. **Reading:** "records form as events at random places and times" is exactly this kind of substrate |
 
 ## 4. What not to do next
@@ -78,8 +80,9 @@ All of this is seen in the models we built, for small waves and weakly interacti
 
 On the framework's fixed grid of regularly repeating sites, a graviton that is massless to the observed bound needs one of the following:
 1. **A tuned cancellation of two vacuum numbers** (the two shear stiffnesses), to about one part in 10⁹⁸, a second cosmological-constant-sized tuning. This is checked arithmetic.
-2. **A regulator that keeps the grid but suppresses the stiffness parametrically** while staying positive and treating time and space alike. Open, pending T2.
-3. **Giving up the fixed site set** (the Lattice axiom). The replacement must also keep one shared light speed. The only untested candidate is a spacetime-event substrate.
+2. **Giving up the fixed site set** (the Lattice axiom). The replacement must also keep one shared light speed. The only untested candidate is a spacetime-event substrate.
+
+The middle option from the draft (a regulator that keeps the grid but suppresses the stiffness parametrically) was **closed by T2** (bounded, refereed). The only non-tuned keep-the-grid loophole left is a non-ordinary interacting law that evades Lemma R, and no such law is known.
 
 Separately, **none of these produces the graviton itself**. That still needs a mechanism nobody has named.
 

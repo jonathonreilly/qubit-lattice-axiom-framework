@@ -101,7 +101,7 @@ The verdict is in `scripts/T1/referee/REFEREE_VERDICT.md`, with an independent u
 - **FAIL:** every reflection-positive hypercubic family tested has a stiffness ≥ c·width^(−p), a power-law floor. Report p and c, and say which family attains the floor.
 - **INCONCLUSIVE:** otherwise.
 
-### T2 results (2026-10-09; worker Claude Opus 5.5 xhigh; referee: codex sol, running)
+### T2 results (2026-10-09; worker Claude Opus 5.5 xhigh; referee: codex sol, CONFIRMED WITH CORRECTIONS)
 
 **Verdict against the fixed readings: FAIL, bounded to the families searched.** Every reflection-positive hypercubic family coupled through proper distance has |κ| ≥ c·σ_N^(−p).
 
@@ -126,3 +126,16 @@ The verdict is in `scripts/T1/referee/REFEREE_VERDICT.md`, with an independent u
 That is R4's free-level escape. Lemma R excludes it for interacting laws, because Φ_ε is not additive, so it cannot act consistently at vertices. **So the floor comes from the coupling rule, not from RP plus hypercubic symmetry.** With interactions, every admissible coupling tested gives a power-law floor.
 
 **Scripts:** `scripts/T2/`.
+
+### T2 referee (codex gpt-5.6-sol xhigh): CONFIRMED WITH CORRECTIONS
+
+The verdict is in `scripts/T2/referee/REFEREE_VERDICT.md`.
+
+- **The bounded FAIL survives.**
+- **The relabelling coupling is outside T2's proper-distance contract.** If it were admitted, it would be an exact free-level PASS. Under the registered contract it is out of scope.
+- **The stiffness calculations are substantially correct.** A and B robustly give p = 2. C trends to p = 2. C′'s σ⁻² term is exactly eliminated, with about σ⁻⁴ as numerical evidence.
+- **Major RP correction: C and C′ do not have a positive one-step transfer matrix at any finite s².** The alias weights decay polynomially while cosh E grows, so the Hausdorff mass diverges. Their finite Hankel passes are false assurance, and they have only link-RP. **So C′'s σ⁻⁴ is not in the RP class.**
+- **The best RP-confirmed performer** is family A's single pole: max|κ| ≈ 0.0647·σ_N⁻², i.e. 6.45e-4 at σ_N = 10.
+- **The minimiser claims are narrowed.** Only A's large-width leading coefficient is proved minimal for a single effective pole.
+- **Lemma R is narrowed.** It excludes ordinary local, additively momentum-conserving interacting extensions, not every conceivable interacting law.
+- **Strongest statement:** "On the fixed Z⁴ grid, every tested proper-distance or minimal-metric family that also has the required positive one-step transfer property (A, B and D) misses the PASS bar and retains a power-law or non-decaying TT response … This is a bounded experimental FAIL, not a theorem that RP plus hypercubic symmetry forces such a floor."

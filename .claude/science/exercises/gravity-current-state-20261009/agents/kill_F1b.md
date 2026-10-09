@@ -6,7 +6,21 @@
 
 ## Verdict: DEAD as an untuned escape
 
-R3's lemma survives only as a statement of the price: a liquid has zero shear stiffness (EXACT). **This is a no-go claim, so the other-vendor referee is required before it is reported** (skill step 8). The referee verdict is in `agents/kill_F1b_referee.md` once it returns.
+R3's lemma survives only as a statement of the price: a liquid has zero shear stiffness (EXACT).
+
+**Other-vendor referee: codex gpt-5.6-sol xhigh, CONFIRMED WITH CORRECTIONS** (`agents/kill_F1b_referee.md`).
+
+- **What stands:** a three-label liquid governed by √−g F(b) exactly removes the TT mass for a supplied metric. With only a CC counterterm, an exactly Minkowski background forces ρ + p = 0, which removes the phonon kinetic term, so the leading fluid EFT is degenerate. Its preferred frame transmits dimension-4 Lorentz violation to interacting matter. Its displacement supplies no helicity-2 mediator, and exact mobile positions exceed a finite local qubit. **"Merely replacing the cubic grid by a conventional continuous-time liquid is dead as a complete untuned escape."**
+- **Corrections:**
+  - The ρ + p ~ M_P⁴ estimate is naturalness only.
+  - The strong-coupling statement is conditional ("the two-derivative F(b) realization is degenerate unless other operators or degrees of freedom supply the leading dynamics"; not a theorem against every quantum liquid).
+  - In K2 the fermion's +1/3 is an order-of-limits artifact, and the sign label is flipped. The Ξ identity and the minimum 3.872e-4 are confirmed.
+  - **"Supersymmetry is the only exception" is false.** Belenchia–Gambassi–Liberati list other mechanisms: Lorentz-covariant UV structure, scale separation, gravitational confinement, special cancellations and strong RG attraction.
+- **Untested architectures, which are changes of route rather than counterexamples:**
+  - Lorentz-covariant **spacetime-event substrates**, such as a Lorentzian Poisson sprinkling;
+  - **number-changing media, i.e. created sites**;
+  - extra dynamical sectors;
+  - SUSY.
 
 ## (2) The full mass matrix (K1, CHECKED, sympy)
 

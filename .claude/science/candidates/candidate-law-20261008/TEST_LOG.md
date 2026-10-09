@@ -472,3 +472,34 @@ Corrections:
 - **Caveat.** "Has a cubic term" is not "massive": u has no propagator or gradient term, and its stability is untested. Scope: linearized, matter-free, flat background, with S₄ × inversion symmetry only.
 
 **Effect.** The vacuum graviton on the fixed-adjacency Regge complex is healthy. Whether W survives now depends on W1, i.e. interacting matter.
+
+## W1: interacting vacuum on a dynamical-length Regge complex (2026-10-08)
+
+**Verdict against the fixed line: FAIL.** The worker is Sonnet 5.5. The referee (codex sol) is running, and nothing goes into `RESULTS` until it reports.
+
+**The model.**
+- **The complex.** 3D Kuhn/Coxeter, with 7 edge classes. Each tetrahedron's metric comes from its six edge lengths.
+- **The weights.** Whitney/Galerkin Hodge stars, with no free parameter: Nédélec mass for the electric term, Raviart–Thomas mass for the magnetic term. Circumcentric DEC is degenerate on this complex, so it could not be used.
+- **The fields.** The photon lives on all 7 edge classes: 2 physical modes plus 4 gapped lattice modes. The fermion is P1-Galerkin Weyl with Peierls links. It is not staggered and has 2 extra nodes.
+- **The coupling.** Universal by construction, since both sectors follow one geometry.
+
+**The TT Hessian (volume-preserving), at L = 24 (converged to about 1e-4).**
+- At O(e⁰), the E-block eigenvalues are −0.931 and +0.403. They are dominated by the gapped photon modes.
+- At O(e²)/e², they are −0.01395 and +0.00552, which is about 1.3e-3 per cell at physical α.
+- The Kuhn complex has only S₃ symmetry, so A1 tadpoles exist.
+
+**The mechanism (CHECKED).**
+- **The local weights are covariant.** Uniform scaling gives E(λ) = E/λ to 2e-16.
+- **The breaking comes from the fixed index-space Brillouin zone.** In a free-fermion diagnostic, a momentum window fixed in index space gives a nonzero TT response, while a window that follows the strain gives about zero.
+- So under strain the lattice's cutoff is not a proper-momentum ball. **A strained fixed-adjacency lattice is a different crystal, and it carries elastic (TT) stiffness at the cutoff scale.**
+
+**Controls.**
+- The exact-diagonalization check at L = 2 agrees to 0.05%.
+- The Ward identity holds to 2e-16.
+- S₃ covariance holds to 1e-16.
+
+**Supervisor reading.** If the referee confirms, this is the TT twin of the cosmological-constant problem. On a lattice whose adjacency, and therefore whose Brillouin zone, is fixed, the vacuum has a cutoff-scale shear stiffness whether the lengths are rigid (K3a″) or dynamical (W1). A graviton coupled to that vacuum is massive unless tuned. Two escapes would remain:
+- an emergent graviton with an exact emergent constraint (no construction exists);
+- an action that does not depend on where the points are placed, Wetterich-type, a new candidate with different content.
+
+Otherwise the casualty is the **fixed adjacency itself**, which is the Lattice axiom, and that is an owner decision.

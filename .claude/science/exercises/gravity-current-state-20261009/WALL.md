@@ -2,7 +2,11 @@
 
 **Setup.**
 - The skill is the candidate exercise skill in PR #9472 (branch `claude/exercise-skill-lessons-20261009`). It is run here at the owner's request: "review and update the exercise skill if needed".
-- The supervisor is Claude Opus 5.5. The route, kill, blind-check and literature agents are Claude Opus 5.5, so the whole exercise is same-family.
+- The supervisor is Claude Opus 5.5. The whole exercise is same-family.
+- **Agent provenance.**
+  - **The blind check and the literature (outside-view) agent:** Claude Opus 5.5 at **default effort**.
+  - **The route agents R1–R4:** first launched at default effort, then **stopped and relaunched on Opus 5.5 at extra-high (xhigh) effort**, at the owner's instruction ("opus 5.5 extra agents"). Their first-launch partial output was discarded unread.
+  - **The kill and test agents:** Opus 5.5 at xhigh.
 - Any test verdict of FAIL or no-go gets an other-vendor referee (codex gpt-5.6-sol, xhigh) before it is reported. That is the skill's new step-8 rule.
 
 **Refresher read (supervisor):**

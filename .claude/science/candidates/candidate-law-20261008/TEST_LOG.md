@@ -259,3 +259,42 @@ Not supported or overclaimed:
 Strongest correct statement (referee): genuine lattice-scale resonances obstruct every conserved momentum in the tested bounded class at O(e). The evidence strongly supports generic lattice-scale gauge breaking, but it does not exclude larger-range, quasi-local, polarization-matrix, higher-body or engineered stresses. It does not establish a graviton-mass size either.
 
 **K3a′.** The referee's corrections were passed to the worker before its fit was used.
+
+## G0c: face-qubit bosonization under the 24 turns (2026-10-08)
+
+**Verdict: PASS on the pre-registered line.** The worker is Sonnet 5.5. The referee (codex sol) is running, so priors do not move until it reports.
+
+**What the worker found.** The source is the arXiv:1807.07081v2 PDF, read directly.
+
+**The construction (EXACT, from the paper):**
+- Fermions sit on cubes, and the qubits sit on faces.
+- Hop: U_f = X_f ∏_{f′ before f} Z_f′, using a within-cube ordering.
+- Parity: W_t = ∏_{f⊂t} Z_f.
+- One Gauss constraint per lattice edge.
+
+**The algebra (CHECKED).**
+- It matches the paper's eq. 30 bit-for-bit.
+- The code space is 2^(L³−1), exactly the even Fock sector.
+- A dense 2×2×2 block reproduces fermion traces and an interacting spectrum to about 1e-14.
+- **The Levin–Wen holonomy is −1 on all 12 T-junctions and all 8 corner junctions.** These are fermions.
+
+**The 24 turns (CHECKED).**
+- **Construction.** V_g = C_g ρ_g, where ρ_g permutes the faces and C_g is a diagonal Clifford: CZ gates between faces of the same cube, at depth ≤ 13, plus Z signs.
+- **Hops.** V_g U_f V_g† equals the rotated hop modulo the stabilizers. This holds for all 24 turns, about cube centres and vertices, at L = 3, 4, 5, under all 64 within-cube orderings.
+- **Parity.** V_g W_t V_g† = W_{gt} exactly.
+- **Group law.** V_gV_h = V_{gh} on the code space for all 576 pairs. Support was sampled on the torus; the dense block is exact.
+- **Controls.** Without C_g, 46 of 48 cases fail. Corrupting one CZ fails.
+- **Why site-local frames cannot do it** (EXACT): the required images put Z on other faces. G0's ordering obstruction is real for relabelling alone, and the CZ network is what removes it.
+
+**Plain reading.** One qubit per site *can* carry fermions, symmetrically under every turn.
+- **Where.** The qubits sit on the face sites of the 2×2×2 cell, and a fermion is a twist of those qubits around a cube.
+- **The price.** A turn acts as a relabelling followed by a shallow, fixed network of two-qubit phase gates. That network changes only phases, never which possibility a record would lock.
+
+**Caveats.**
+1. **This is covariance up to a diagonal dressing.** Whether that reads as "covariant under proper cubic rotations" (Admissibility) is a reading.
+2. **Turns about edge-role or face-role sites** preserve the face pattern for only 8 of 24 turns. The pattern's cost to "rotations about each site" stays (K0, P).
+3. **Spin structure.** Only the PPP and AAA sectors are fully rotation-invariant (ARGUED, not run).
+4. **The Hamiltonian is supplied**, and the Gauss law is imposed as a constraint.
+5. **No double-cover sign appears in the group law.** Whether the emergent fermions carry spin-½ under turns (2π → −1) is put to the referee.
+
+**Prior change pending the referee.** If confirmed, K2(L,P) returns to about 0.08. G0/G0b then become a statement about one architecture (corner occupation), not about one qubit per site.

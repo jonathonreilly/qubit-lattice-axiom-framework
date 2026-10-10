@@ -1,6 +1,6 @@
 # C3 lane X1: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee: CONFIRMED WITH CORRECTIONS, bounded FAIL. Every ensemble-averaged nonzero-q TT stiffness spectrum (two kernels, scalar and fermion functionals) is flat with power S >= 2.07e-3, in finite periodic Poisson ensembles. Not an asymptotic no-go for random lattices** (C3_X1_referee.md).
 
 **Verdict (worker):** FAIL (bounded to the tested implementation). Every direct nonzero-k TT stiffness spectrum is flat (white) and at or above 1e-3, for both kernels and for the fermion seas. K1 scalar (B1 c5's setting): S_TT ≈ 3.6e-3 from qR = 0.18 to 1.41. K2 scalar: about 2.1e-3 to 2.6e-3. Spinless fermion sea: 7.1e-2 on K1 and 3.8e-2 on K2. Frame-sensitive Dirac sea on K1: 1.4e-2. The verdict is the same whether S is read as a power or as an amplitude, so it is decisive under the pre-registered rule. The PASS bar of 5e-11 is missed by at least 7.6 decades. A FAIL needs the codex sol referee.
 

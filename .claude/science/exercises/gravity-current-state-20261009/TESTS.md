@@ -658,3 +658,5 @@ But that mapping has not been derived.
   - **Price (suggested):** a non-locality scale ℓ_k plus a signed hop profile with cancelling moments.
 
 - **K referee (codex sol):** lane K is **INCONCLUSIVE**. The registered setting was neither computed nor defined well enough to compute. K-num is rejected as a lane FAIL; it stands only as a bounded side result for a substitute model. K-ana is partially supported. Strongest statement: "Two shear tunings alone are not established; additional speed-sector protection/tuning remains an open, generically expected cost." See `agents/C3_K_referee.md`.
+
+- **X1 referee (codex sol):** CONFIRMED WITH CORRECTIONS, bounded FAIL. Every ensemble-averaged nonzero-q TT stiffness spectrum (two kernels, scalar and fermion functionals) is flat with power S >= 2.07e-3, in finite periodic Poisson ensembles. Not an asymptotic no-go for random lattices. See `agents/C3_X1_referee.md`.

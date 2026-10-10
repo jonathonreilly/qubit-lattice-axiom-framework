@@ -92,3 +92,11 @@
 - The one-site average is the uniform average on the 24-point orbit.
 - Order-blindness, once the product means hold, is the parent converse.
 - No formation site, probability, or rate is imported.
+
+## Cycle 11
+
+- The ansatz is one height signature, the reversal class of the pair
+  `(a·d, b·d)`. A kernel on two signatures is not in this count.
+- The one-site average is the uniform average on the 24-point orbit.
+- Order-blindness, once the product means hold, is the parent converse.
+- No formation site, probability, or rate is imported.

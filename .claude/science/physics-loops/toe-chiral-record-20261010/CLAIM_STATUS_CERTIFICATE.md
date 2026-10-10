@@ -185,3 +185,23 @@ The sum of the level-+3 cap and the matched cross on a·d = -3 is a
 soldered order-blind kernel with two opposite live directions. The two
 level-3 cap lines have moment 7/6. Kernels outside the cap-pair span
 stay open.
+
+# Claim status certificate — cycle 11
+
+claim_id: single_height_signature_order_blind_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: one proper orbit of (1, 2, 3); one height signature up to reversal; uniform average; one live direction on each opposite signature
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: the parent converse. No formation rate is used.
+
+A slice-zero kernel on one height signature is order-blind only when
+the heights are opposite. Those six kernels are the cap-pair span.
+The other fifteen signatures have only the zero kernel. A sum of two
+signatures stays open.

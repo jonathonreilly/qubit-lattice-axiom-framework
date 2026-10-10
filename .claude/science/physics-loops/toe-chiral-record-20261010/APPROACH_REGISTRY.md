@@ -81,3 +81,12 @@ Family used: the level-`+3` cap plus the matched cross on `a·d = -3`,
 and the moment of the two level-3 cap lines.
 
 Family not used: a kernel outside the cap-pair span. That remains open.
+
+Cycle 11 target contract: whether a slice-zero kernel supported on one
+height signature can be order-blind outside the eighteen cap-pair
+kernels.
+
+Family used: the 21 reversal classes of endpoint heights, the
+pair-moment quadrics, and the cap and cross basis.
+
+Family not used: a sum of two height signatures. That remains open.

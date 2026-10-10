@@ -378,3 +378,48 @@ Conformance, section by section:
     product mean 1, cap moment `7/6`, `PASS=14 FAIL=0`.
 12. Vocabulary lint reported 0 violations on the note. The full audit
     pipeline was not run.
+
+## 2026-10-10 author check, cycle 11
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`. The cap line and the crosses
+   are rebuilt in this runner. They are not lemmas imported from this
+   branch.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/single_height_signature_order_blind_kernel_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `547f16c1b8e1afb2545309fd95514c77a23abd47e40f043cc39aa2febdee00b5`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=27 FAIL=0`.
+3. Scope. Twenty-one height signatures, each of kernel dimension 3.
+   The six opposite signatures are the eighteen cap-pair kernels. The
+   other fifteen have only the zero order-blind kernel. Witness
+   averages `-1/24` and `1/24`. Status line `proposed_retained`.
+   Surface status `bounded-support`. A sum of two signatures stays open.
+4. N-gate does not apply. The artifact classifies one named ansatz. It
+   does not claim that no kernel on two signatures exists.
+5. Obligations are in the note. The missing lemma is a kernel supported
+   on two height signatures.
+6. Mutations, each on a scratch copy, exited 1. Forcing every nonzero
+   sign to `+1` gave `PASS=25 FAIL=2` on independence and spanning.
+   Dropping reversal from the signature failed the count of 21 and the
+   kernel dimension. Leaving the transporting matrix uninverted exited
+   because the explicit kernel was not constant on a bond orbit. An
+   independent closure under quarter-turns about `z` and about `x`
+   gave 24 rotations and orbit 24, with the axis swap of the seed
+   outside the orbit.
+7. One primary runner. No packet helper.
+8. Two markdown links, both to tracked notes on origin/main. Manifest
+   node_count 6880 and edge_count 15440. The new node has out_degree 2.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the parent converse and states that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: 21 signatures, kernel dimension
+    3, witness sums `-1` and `1`, `PASS=27 FAIL=0`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note. The
+    full audit pipeline was not run.

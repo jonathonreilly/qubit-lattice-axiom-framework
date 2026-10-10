@@ -31,3 +31,6 @@ with two live directions.
 
 Cycle 10 takes the sum of the level-`+3` cap and the matched cross on
 `a·d = -3`. It does not take a kernel outside the cap-pair span.
+
+Cycle 11 takes one reversal class of endpoint heights. It does not take
+a sum of two classes.

@@ -47,3 +47,8 @@ Cycle 10 prunes the reading that two live directions force the
 two-neighbour moment off 1. The witness is the level-`+3` cap plus the
 matched cross on `a·d = -3`. The two level-3 cap lines have moment
 `7/6`. It does not say that a kernel outside the cap-pair span exists.
+
+Cycle 11 prunes the reading that a non-opposite height signature still
+hides an order-blind kernel. The witnesses are the moment sums `-1` and
+`1`, whose uniform averages are `-1/24` and `1/24`. It does not say
+that a sum of two signatures lies in the cap-pair span.

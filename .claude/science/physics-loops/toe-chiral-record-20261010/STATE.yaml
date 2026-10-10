@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 10
-runner_result: PASS=14 FAIL=0
+cycle: 11
+runner_result: PASS=27 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Ask whether a soldered order-blind kernel on this orbit lies outside the eighteen cap-pair kernels. Search first. A negative answer must name the ansatz. Do not restate the opposite cap-cross mixture or the 48-point dimension.
+next_exact_action: Ask whether a soldered order-blind kernel on two height signatures lies outside the eighteen cap-pair kernels. Search first. A negative answer must name the ansatz. Do not restate the single-signature cut.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

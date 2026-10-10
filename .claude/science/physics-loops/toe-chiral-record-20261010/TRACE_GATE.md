@@ -156,3 +156,20 @@ The mixture prunes the reading that two live directions force the
 product mean off 1. The moment `7/6` keeps the two level-3 cap lines
 out of the normalised families. Kernels outside the cap-pair span stay
 open.
+
+## Cycle 11
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Ask whether a soldered order-blind kernel on two height signatures lies outside the eighteen cap-pair kernels. Search first. A negative answer must name the ansatz."
+```
+
+The signature count prunes a non-opposite class inside the
+single-signature ansatz. The moment averages `-1/24` and `1/24` keep
+those classes out of the normalised families. Sums of two signatures
+stay open.

@@ -95,14 +95,23 @@ For absolute parameter below 1 the factors are positive. The seed
 `PASS=14 FAIL=0`. This sum lies in the cap-pair span. Kernels outside
 that span are not classified.
 
+Cycle 11. A soldered bond-symmetric kernel supported on one reversal
+class of endpoint heights, with every slice sum 0, has dimension 3.
+There are 21 classes. The kernel is order-blind for a nonzero vector
+only when the heights are opposite. Those six classes are spanned by
+the eighteen cap-pair kernels. On each of the other fifteen classes
+the pair moments leave only zero. Witness sums `-1` and `1` have
+uniform averages `-1/24` and `1/24`. Runner `PASS=27 FAIL=0`. A sum of
+two classes is not classified.
+
 ## Next exact action
 
-Ask whether a soldered order-blind kernel on this orbit lies outside
-the eighteen cap-pair kernels. Search first. A negative answer must
-name the ansatz. Do not restate the opposite cap-cross mixture or the
-48-point dimension. Do not invent a formation rate. Do not return to
-shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
-alphabets.
+Ask whether a soldered order-blind kernel on two height signatures
+lies outside the eighteen cap-pair kernels. Search first. A negative
+answer must name the ansatz. Do not restate the single-signature cut
+or the 48-point dimension. Do not invent a formation rate. Do not
+return to shells, plaquette corner weights, or the `(0,1,2)` and
+`(1,1,2)` alphabets.
 
 ## Cleanup
 

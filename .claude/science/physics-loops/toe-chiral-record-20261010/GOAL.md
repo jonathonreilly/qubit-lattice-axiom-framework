@@ -19,4 +19,8 @@ shows each one-cap-pair support has kernel dimension 3, spanned by the
 cap and two crosses. Six patterns give dimension 18. Cycle 10 adds the
 level-`+3` cap to the matched cross on `a·d = -3`. That sum has two
 live directions and product mean 1. The opposite cap lines have moment
-`7/6`.
+`7/6`. Cycle 11 names the single height-signature ansatz. A nonzero
+slice-zero kernel on one signature is order-blind only when the
+heights are opposite, and those six kernels are the cap-pair span.
+The equal-height case split leaves only zero. A sum of two signatures
+stays open.

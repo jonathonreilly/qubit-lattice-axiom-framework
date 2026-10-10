@@ -669,3 +669,5 @@ But that mapping has not been derived.
   - **It does not validate the M-A packet prefactor used in S0.** See `agents/C3_LemmaL_referee.md`.
 - **Price note v4 referee (codex sol): APPROVE WITH CORRECTIONS** (8 scope and bookkeeping corrections; the numerical audit is clean). See `agents/C3_P_referee.md`.
 - **G-L (link-only lensing):** the worker says FAIL; the adversarial check supports it with corrections. Link/GR = (νΔ)^{−1/2} is a density-independent O(1) mismatch: the link mean de-magnifies where GR magnifies. The codex referee is running.
+
+- **G-L referee (codex sol):** CONFIRMED WITH CORRECTIONS: FAIL for the mean of the unweighted massless one-hop link kernel aL on a fixed curved Poisson sprinkling. Link/GR = (nu Delta)^(-1/2), a density-independent O(1) mismatch (pre-caustic, regular null tubes). It does not extend automatically to G-B (still INCONCLUSIVE), to E1' (flat PASS unchanged), or to weighted links, multi-hop, BD inversion, metric-aware density or other readouts. See `agents/C3_G-L_referee.md`.

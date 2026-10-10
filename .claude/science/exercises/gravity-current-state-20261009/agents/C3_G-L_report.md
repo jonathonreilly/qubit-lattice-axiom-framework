@@ -1,6 +1,6 @@
 # C3 lane G-L: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee: CONFIRMED WITH CORRECTIONS: FAIL for the mean of the unweighted massless one-hop link kernel aL on a fixed curved Poisson sprinkling. Link/GR = (nu Delta)^(-1/2), a density-independent O(1) mismatch (pre-caustic, regular null tubes). It does not extend automatically to G-B (still INCONCLUSIVE), to E1' (flat PASS unchanged), or to weighted links, multi-hop, BD inversion, metric-aware density or other readouts** (C3_G-L_referee.md).
 
 **Verdict (worker):** FAIL (worker reading; same family, unrefereed). Under the TESTS.md rule a FAIL must go to the codex sol referee before it is recorded. Basis: an exact law at leading order in l, exact at every l for plane waves, checked numerically in two independent focusing backgrounds with exact causal order. It gives a density-independent O(1) mismatch: the link mean's cone weight is nu^{-1/2}, GR's is Delta^{1/2}, and nu > 1 under focusing, so where GR magnifies, the link mean demagnifies.
 

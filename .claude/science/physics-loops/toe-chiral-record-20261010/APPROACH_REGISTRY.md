@@ -90,3 +90,12 @@ Family used: the 21 reversal classes of endpoint heights, the
 pair-moment quadrics, and the cap and cross basis.
 
 Family not used: a sum of two height signatures. That remains open.
+
+Cycle 12 target contract: whether an unequal height signature beside
+one partner can be order-blind outside the eighteen cap-pair kernels.
+
+Family used: the pair-moment squares on each of the twelve unequal
+signatures and each of the other twenty signatures.
+
+Family not used: an equal-height signature beside an opposite
+signature. The square test does not decide it.

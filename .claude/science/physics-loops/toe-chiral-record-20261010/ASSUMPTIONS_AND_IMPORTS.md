@@ -100,3 +100,12 @@
 - The one-site average is the uniform average on the 24-point orbit.
 - Order-blindness, once the product means hold, is the parent converse.
 - No formation site, probability, or rate is imported.
+
+## Cycle 12
+
+- The ansatz is one unequal height signature plus at most one partner.
+  An equal-height signature beside an opposite signature is not in
+  this count.
+- The single-signature classification is the cycle-11 note. It is not
+  re-proved here.
+- No formation site, probability, or rate is imported.

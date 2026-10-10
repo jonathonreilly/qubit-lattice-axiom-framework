@@ -52,3 +52,8 @@ Cycle 11 prunes the reading that a non-opposite height signature still
 hides an order-blind kernel. The witnesses are the moment sums `-1` and
 `1`, whose uniform averages are `-1/24` and `1/24`. It does not say
 that a sum of two signatures lies in the cap-pair span.
+
+Cycle 12 prunes the reading that one partner can revive an unequal
+signature. All 240 pairs force the unequal monomials to zero. It does
+not say that an equal-height signature beside an opposite signature
+is zero. The square test leaves that pair open.

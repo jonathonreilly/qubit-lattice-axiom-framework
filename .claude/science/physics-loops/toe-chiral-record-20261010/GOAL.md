@@ -23,4 +23,7 @@ live directions and product mean 1. The opposite cap lines have moment
 slice-zero kernel on one signature is order-blind only when the
 heights are opposite, and those six kernels are the cap-pair span.
 The equal-height case split leaves only zero. A sum of two signatures
-stays open.
+stays open. Cycle 12 shows an unequal signature beside any one partner
+is forced to zero by the pair-moment squares. The kernel drops to that
+partner. An equal-height signature beside one opposite signature is
+not forced by that square test.

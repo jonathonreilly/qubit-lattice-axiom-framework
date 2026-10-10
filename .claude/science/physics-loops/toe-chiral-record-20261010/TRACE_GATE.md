@@ -173,3 +173,19 @@ The signature count prunes a non-opposite class inside the
 single-signature ansatz. The moment averages `-1/24` and `1/24` keep
 those classes out of the normalised families. Sums of two signatures
 stay open.
+
+## Cycle 12
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Ask whether an equal-height signature beside one opposite signature, or two equal-height signatures, can leave the eighteen cap-pair kernels. The square test does not decide it."
+```
+
+The 240 square eliminations prune an unequal signature beside one
+partner. The equal-height control `(-3, -3)` beside `(3, -3)` stays
+outside this ansatz.

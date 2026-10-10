@@ -1,6 +1,6 @@
 {
- "edge_count": 15440,
- "node_count": 6880,
+ "edge_count": 15443,
+ "node_count": 6881,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -20724,6 +20724,10 @@
   },
   "u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12": {
    "deps_hash": "311d6b921eb1",
+   "out_degree": 3
+  },
+  "unequal_height_signature_with_one_partner_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "5859f1e27606",
    "out_degree": 3
   },
   "ungated_sum_of_squares_and_tuning_bounded_theorem_note_2026-09-24": {

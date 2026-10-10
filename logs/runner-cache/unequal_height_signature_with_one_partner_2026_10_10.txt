@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/unequal_height_signature_with_one_partner_2026_10_10.py
+runner_sha256: 6a9db2b13b144c9a47d3aa923991704391cc68db35b79f88ce6cd7ea74ae0698
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 14.23
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS height signatures number 21
+PASS the signatures partition 84 bond orbits
+PASS six opposite, three equal, and twelve unequal signatures
+PASS each unequal signature is forced to zero beside any one partner
+PASS an equal-height signature is not forced by this square test beside one opposite partner
+PASS a one-signature stand-in is not this pair count
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

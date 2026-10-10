@@ -104,11 +104,21 @@ the pair moments leave only zero. Witness sums `-1` and `1` have
 uniform averages `-1/24` and `1/24`. Runner `PASS=27 FAIL=0`. A sum of
 two classes is not classified.
 
+Cycle 12. A slice-zero soldered kernel supported on one unequal height
+signature and at most one other signature has its unequal coordinates
+forced to zero. All 240 partner pairs put the six unequal monomials in
+pivot position with no remaining term. The kernel drops to the partner.
+By the single-signature classification it lies in the eighteen cap-pair
+kernels when it is order-blind and nonzero. The square test does not
+force signature `(-3, -3)` to zero beside `(3, -3)`. Runner
+`PASS=9 FAIL=0`. Equal-height pairs are not classified.
+
 ## Next exact action
 
-Ask whether a soldered order-blind kernel on two height signatures
-lies outside the eighteen cap-pair kernels. Search first. A negative
-answer must name the ansatz. Do not restate the single-signature cut
+Ask whether an equal-height signature beside one opposite signature,
+or two equal-height signatures, can leave the eighteen cap-pair
+kernels. The square test does not decide it. Search first. A negative
+answer must name the ansatz. Do not restate the unequal-partner cut
 or the 48-point dimension. Do not invent a formation rate. Do not
 return to shells, plaquette corner weights, or the `(0,1,2)` and
 `(1,1,2)` alphabets.

@@ -34,3 +34,6 @@ Cycle 10 takes the sum of the level-`+3` cap and the matched cross on
 
 Cycle 11 takes one reversal class of endpoint heights. It does not take
 a sum of two classes.
+
+Cycle 12 takes one unequal height signature plus one partner. It does
+not take an equal-height signature beside an opposite signature.

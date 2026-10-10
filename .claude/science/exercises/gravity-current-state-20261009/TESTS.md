@@ -671,3 +671,13 @@ But that mapping has not been derived.
 - **G-L (link-only lensing):** the worker says FAIL; the adversarial check supports it with corrections. Link/GR = (νΔ)^{−1/2} is a density-independent O(1) mismatch: the link mean de-magnifies where GR magnifies. The codex referee is running.
 
 - **G-L referee (codex sol):** CONFIRMED WITH CORRECTIONS: FAIL for the mean of the unweighted massless one-hop link kernel aL on a fixed curved Poisson sprinkling. Link/GR = (nu Delta)^(-1/2), a density-independent O(1) mismatch (pre-caustic, regular null tubes). It does not extend automatically to G-B (still INCONCLUSIVE), to E1' (flat PASS unchanged), or to weighted links, multi-hop, BD inversion, metric-aware density or other readouts. See `agents/C3_G-L_referee.md`.
+
+### C3 closed (03:20Z; owner's stop: midnight Eastern, 04:00Z)
+
+Every pre-registered lane returned and was recorded. Every FAIL or contested claim was refereed by codex sol:
+- G-A, G-B, G-C, G-L;
+- M-A, M-B, M-C;
+- D, F, K, X1, X2;
+- Lemma L and the price note.
+
+M-D and the three exercises are same-family only, and labelled so. No new work was started after 03:20Z, so nothing is "not completed".

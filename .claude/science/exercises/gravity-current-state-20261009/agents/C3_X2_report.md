@@ -1,6 +1,6 @@
 # C3 lane X2: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee: CONFIRMED WITH CORRECTIONS, bounded FAIL. The FR3 gases have a metric-independent stationary law (G_T = 0) but white stress noise (n_S = 0). Activity stresses have contact responses, and frozen dilution has a positive static shear. Every preregistered model fails; not a theorem about all classical gases** (C3_X2_referee.md).
 
 **Verdict (worker):** FAIL against the fixed reading, bounded to the models tested. Every model has Re G_T(0) != 0, or n <= 1, or both. The two FR3 gases have a stationary law that is exactly independent of the metric. So their configurational TT stress has Re G_T(0) = 0 and Im G_T identically 0, but its noise is white, S(0) > 0, giving n_S = 0. The activity (traffic) stresses have an exact instantaneous response, Re G_T(0) = -0.0700 (swap gas) and -0.1000 (wind gas) per site, and S(0) > 0. E2's frozen dilution has Re G_T(0) = +0.09 to +0.19 per site. B2's predicted FAIL holds, but its predicted route (n = 1 through FDT) does not occur: FDT's conditions fail for both gases, and the measured Im G_T is identically zero. Needs the codex sol referee before it is recorded.
 

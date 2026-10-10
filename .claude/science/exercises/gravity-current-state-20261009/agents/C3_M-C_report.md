@@ -1,6 +1,6 @@
 # C3 lane M-C: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee: CONFIRMED WITH CORRECTIONS** (C3_M-C_referee.md).
 
 **Verdict (worker):** M-C overall: FAIL (no-go), by the readings fixed in PREREG.md. Q1, rules with every weight nonnegative: C0-FAIL, EXACT. Q2, positive hops with the sign moved elsewhere: C1-FAIL, EXACT in both parts (moving the sign is only a relabelling; descent from a positive parent cannot give a 3+1 massive pole). Q3, coherence of the most promising route found: M-PASS, source-driven scope only. That route is C2, a direct kernel with no path sum; it is signed, so it does not rescue 'without signed weights'. Because this is a no-go, the codex sol referee must review it before it is recorded.
 

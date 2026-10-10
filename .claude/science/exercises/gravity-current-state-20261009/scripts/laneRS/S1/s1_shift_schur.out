@@ -1,0 +1,27 @@
+
+== d=2, L=8, m=0.0
+  ||[S_1, h]|| = 0.0e+00;  ||S h S^+ - h(-m)|| = 0.0e+00
+  ||[S_2, h]|| = 0.0e+00;  ||S h S^+ - h(-m)|| = 0.0e+00
+  sectors with (orbit dim 4, dim D_+ 2): commutant dim of restricted symmetry group = 1  [15 k-points]
+
+== d=2, L=8, m=0.5
+  ||[S_1, h]|| = 8.0e+00;  ||S h S^+ - h(-m)|| = 0.0e+00
+  ||[S_2, h]|| = 8.0e+00;  ||S h S^+ - h(-m)|| = 0.0e+00
+  sectors with (orbit dim 4, dim D_+ 2): commutant dim of restricted symmetry group = 2  [16 k-points]
+
+== d=3, L=4, m=0.0
+  ||[S_1, h]|| = 0.0e+00;  ||S h S^+ - h(-m)|| = 0.0e+00
+  ||[S_2, h]|| = 0.0e+00;  ||S h S^+ - h(-m)|| = 0.0e+00
+  ||[S_3, h]|| = 0.0e+00;  ||S h S^+ - h(-m)|| = 0.0e+00
+  sectors with (orbit dim 8, dim D_+ 4): commutant dim of restricted symmetry group = 2  [7 k-points]
+
+== d=3, L=4, m=0.5
+  ||[S_1, h]|| = 8.0e+00;  ||S h S^+ - h(-m)|| = 0.0e+00
+  ||[S_2, h]|| = 8.0e+00;  ||S h S^+ - h(-m)|| = 0.0e+00
+  ||[S_3, h]|| = 8.0e+00;  ||S h S^+ - h(-m)|| = 0.0e+00
+  sectors with (orbit dim 8, dim D_+ 4): commutant dim of restricted symmetry group = 4  [8 k-points]
+
+== multiplicity check (is the commutant commutative?)
+  d=3 m=0.5: commutant dims [4], max ||[X,Y]|| over commutant basis = 9.98e-01 (NON-commutative => multiplicity)
+  d=3 m=0.0: commutant dims [2], max ||[X,Y]|| over commutant basis = 4.19e-15 (commutative => multiplicity-free)
+  d=2 m=0.5: commutant dims [2], max ||[X,Y]|| over commutant basis = 7.41e-16 (commutative => multiplicity-free)

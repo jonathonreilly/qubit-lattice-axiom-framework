@@ -1,0 +1,6 @@
+d=3 m=0.5 r=1: params 432, Moller shells 300, real rows 115200  (17.0s)
+  Gram sv: max 1.363e+03; null (abs 1e-10, rel 1e-9) dim 250; class dim (+ band symbols) 184; surviving + band symbol dim 2
+  smallest non-null sv 2.736e+01, next 3.671e+01; ratio to max 2.008e-02
+  taste-averaged slope=1 along x: in exact null space N1.Z max |.| = 3.44e-12;  min ||C x|| s.t. N1.x=1 : 7.109e+01 (relative to ||C|| scale 1.36e+03)
+  survivors: max |slope matrix at k=0| 7.56e-12; max |trace of slope| 1.37e-11
+time 17.9s

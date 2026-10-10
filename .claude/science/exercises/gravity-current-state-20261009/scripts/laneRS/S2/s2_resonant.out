@@ -1,0 +1,9 @@
+(a) d=3 m=0.0: 30000 shells scanned, 0 within 2% of an O(e) pole
+(b) d=3 m=0.0 K on zone boundary (-pi/2,*,*): 147 shells; T min-sv/max-sv min 3.87e-04; odd R=4 null dim 217 (rows 147 < cols 364 => underdetermined if so); sv min 7.697e-01
+(b) d=3 m=0.0 K = 0: 185 shells; T min-sv/max-sv min 3.50e-05; odd R=4 null dim 364 (rows 185 < cols 364 => underdetermined if so); sv min 9.532e-33
+(a) d=3 m=0.5: 30000 shells scanned, 0 within 2% of an O(e) pole
+(b) d=3 m=0.5 K on zone boundary (-pi/2,*,*): 158 shells; T min-sv/max-sv min 2.20e-04; odd R=4 null dim 206 (rows 158 < cols 364 => underdetermined if so); sv min 2.429e-01
+(b) d=3 m=0.5 K = 0: 174 shells; T min-sv/max-sv min 2.98e-04; odd R=4 null dim 364 (rows 174 < cols 364 => underdetermined if so); sv min 0.000e+00
+(c) d=1 m=0.5: generic sampler found 200 nontrivial shells (expected 0: 1D two-body shells are permutations except special K)
+    K=pi/2 branch (k,pi/2-k)->(-k,pi/2+k): Coulomb T median |T| 1.097e+00; odd f, R=8: null dim 4 of 8; sin2k defect 4.000
+    permutation-only control: null dim 8 of 8 (abs 1e-10 + rel 1e-9 tolerance; relative-only would misreport)

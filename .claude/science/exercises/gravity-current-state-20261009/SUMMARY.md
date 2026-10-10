@@ -302,3 +302,19 @@ Details and referee lines are in `TESTS.md` ("Lane R results").
 - **What decides it next.** The framework's own matter, staggered fermions, carries internal "taste" structure. That might supply the extra conservation the simple case lacks. That is the next test.
 
 Details are in `TESTS.md`, "Lane RN results".
+
+## 13. Lane RS: does the framework's own matter supply the missing momentum? (owner, 2026-10-10)
+
+**In plain words: no.**
+- We tested staggered fermions, the framework's matter, with simple contact interactions and with electromagnetism.
+- Colliding particles on the grid conserve energy and particle number, but never a momentum that could feed the graviton.
+- The fermions' extra "taste" labels don't help. Their band is the simple lattice band in disguise, with momentum doubled, so the same theorem applies.
+
+**Status.** Two refereed bounded FAILs, momentum only. The live graviton route (§11, §12) therefore needs one of:
+- interactions that are not nearest-neighbour, so that momentum is defined non-locally;
+- a lattice momentum added as a new primitive;
+- an untested regime: strong coupling, or matter made of defects.
+
+Each of these is an axiom price, and adopting any of them is the owner's decision.
+
+Details are in `TESTS.md`, "Lane RS results".

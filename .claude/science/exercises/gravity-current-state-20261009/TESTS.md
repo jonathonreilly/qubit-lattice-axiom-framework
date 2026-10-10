@@ -924,3 +924,50 @@ R0 found these. The supervisor's "option 3 untested" was wrong.
 - The price then stays "non-local momentum, or an exact lattice momentum not in the axioms".
 
 **Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.
+
+### Lane RS results (2026-10-10, 19:50Z to about 21:30Z)
+
+**Who and where.**
+- Probes S1 and S2: Claude Opus 5.5 at xhigh (same family as the supervisor).
+- Referees: codex gpt-5.6-sol at xhigh, one per probe.
+- Reports are in `agents/RS_S{1,2}_report.md` and `agents/RS_S{1,2}_referee*.md`; scripts, including the referees' checks, are in `scripts/laneRS/`.
+
+**S1 (nearest-neighbour density–density V, and a hypercube-summed taste-invariant contact U).** Worker: FAIL (bounded). **Referee: CONFIRMED WITH CORRECTIONS, bounded FAIL (momentum only).**
+- **Analytic result.** A regular, coupling-analytic, local or exponentially quasi-local conserved charge with a nonzero taste-universal slope has to satisfy the Born collision intertwiner. Shift averaging, sector sewing on the double cover, and Spohn applied to the exact KG map ε_stag(k) = ½ω_KG(2k; 2m) together exclude it in d = 2 at every mass and in d = 3 at m = 0.
+- **d = 3, m = 0.5.** Numerical only. No odd invariant appears in the matrix spaces through R = 4, and the gaps are order one. There is no all-range theorem.
+- **Corrections:**
+  - at m = 0 and k = 0 the eigenvalue 0 has multiplicity 2^d;
+  - the normalization of the U kernel is off by a factor of 2, which changes no result;
+  - the massless gradient has a cusp, and C¹ locality removes it;
+  - the averaging excludes the required universal slope, not every odd invariant.
+- **Cluster exact diagonalization (6×6, N = 2):** on-shell norm 0.204, distance to the commutant 0.677. This is reproduced, but it is a limited reading.
+
+**S2 (noncompact staggered QED, Born sector at O(e²)).** Worker: FAIL (bounded). **Referee: CONFIRMED WITH CORRECTIONS, bounded FAIL (momentum only).**
+- **Result.** For d = 2 and 3 and m = 0 and 0.5, a perturbatively analytic conserved local or quasi-local charge cannot have a nonzero taste-universal fermion slope.
+- **Why.**
+  - A regular Møller patch is invertible.
+  - The trace of the charge then obeys the scalar staggered collision equation.
+  - The KG map plus analytic periodicity removes the odd slope.
+  - Spohn's theorem also covers m = 0.
+- **Corrections:**
+  - the light-cone inequality holds only for equal-sign bands; opposite-sign bands keep pair resonances;
+  - the O(e) pair resonances add constraints and do not relax any;
+  - the trace lemma constrains only the normalized trace. Traceless equal-magnitude slopes are not excluded analytically, but they are not taste-universal;
+  - the zero photon slope is strongly checked but conditional, because there is no connectivity theorem;
+  - the Z2 reduction is not confirmed.
+
+**Lane RS verdict: FAIL (bounded, momentum only). Both probes are refereed, CONFIRMED WITH CORRECTIONS.**
+- The framework's own matter, staggered fermions, interacting through contact or perturbative QED, supplies no exactly conserved local or quasi-local momentum with a taste-universal slope.
+- So it cannot feed the exact-constraint VS shift constraint.
+- Open:
+  - strong or non-analytic coupling;
+  - power-law-tailed charges;
+  - d = 3, m > 0 beyond R = 4;
+  - number-nonconserving or higher-body leading interactions;
+  - compact confinement;
+  - Z2 gauge fields;
+  - traceless taste sectors, which are not taste-universal.
+
+**Against the registered expectation.** The FAIL in both probes is as expected, but the mechanism is different. Taste structure adds nothing: invertible amplitudes collapse matrix charges onto their trace, and the staggered band is lattice KG at (2k, 2m). No degenerate resonant submanifold rescues anything.
+
+**Price, unchanged:** a non-local momentum, i.e. interactions not nearest-neighbour (against Admissibility), or an exact additive lattice momentum that the axioms do not supply.

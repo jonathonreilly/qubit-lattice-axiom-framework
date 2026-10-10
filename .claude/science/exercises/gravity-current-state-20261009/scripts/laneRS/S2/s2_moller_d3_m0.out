@@ -1,0 +1,10 @@
+d=3 m=0.0: 2400 Moller shells sampled (1.0s)
+T is 16x16 on the + band; min-sv/max-sv: min 4.87e-06, 1st pct 8.94e-04, median 2.12e-01; samples near an O(e) pole (|w^2-D^2|/w^2<0.05): 0
+   generic : n=1200 min ratio 4.87e-06 median 1.52e-01
+   lowK    : n=600 min ratio 1.05e-04 median 1.15e-01
+   lowE    : n=600 min ratio 3.50e-04 median 4.79e-01
+  scalar odd f, R=1: 13 functions, null dim 0 (abs 1e-10 + rel 1e-9); sv min 8.172e-01 max 1.177e+00 ratio 6.944e-01
+  scalar odd f, R=2: 62 functions, null dim 0 (abs 1e-10 + rel 1e-9); sv min 6.958e-01 max 1.904e+00 ratio 3.655e-01
+  scalar odd f, R=3: 171 functions, null dim 0 (abs 1e-10 + rel 1e-9); sv min 5.898e-01 max 2.659e+00 ratio 2.218e-01
+  scalar odd f, R=4: 364 functions, null dim 0 (abs 1e-10 + rel 1e-9); sv min 5.094e-01 max 3.087e+00 ratio 1.650e-01
+time 14.4s

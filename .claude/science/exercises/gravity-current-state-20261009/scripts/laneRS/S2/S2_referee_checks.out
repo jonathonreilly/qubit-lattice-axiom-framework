@@ -1,0 +1,29 @@
+lightcone d=2 m=0.0: largest same-sign residual -3.514450e-03
+lightcone d=2 m=0.5: largest same-sign residual -1.556910e-02
+lightcone d=3 m=0.0: largest same-sign residual -7.993477e-02
+lightcone d=3 m=0.5: largest same-sign residual -9.714420e-02
+mixed-band counterexample m=0.5: lhs=1.000000e+00, omega(0)=0
+mixed-band counterexample m=0.0: lhs=5.910404e-01, omega(0)=0
+dispersion d=2 m=0.0: max identity residual 0.000e+00
+dispersion d=2 m=0.5: max identity residual 0.000e+00
+massless KG d=2: det Hess at (pi,...,pi) = 1.250000e-01
+dispersion d=3 m=0.0: max identity residual 0.000e+00
+dispersion d=3 m=0.5: max identity residual 0.000e+00
+massless KG d=3: det Hess at (pi,...,pi) = -2.405626e-02
+tensor trace formula residual out=1.776e-15
+normalised sums out=1.226989e+00, in=1.597329e+00
+direct formulas out=1.226989e+00, in=1.597329e+00
+fresh Moller d=2 m=0.0 R=6: shells=800, null=0, scalar sv(min,max)=(5.743550e-01,2.328619e+00), T ratio(min,median)=(1.901416e-04,7.100516e-01)
+fresh Moller d=2 m=0.5 R=6: shells=800, null=0, scalar sv(min,max)=(5.519521e-01,2.196642e+00), T ratio(min,median)=(2.316506e-03,7.012285e-01)
+fresh Moller d=3 m=0.0 R=3: shells=1800, null=0, scalar sv(min,max)=(6.067906e-01,2.766167e+00), T ratio(min,median)=(3.007309e-06,2.018208e-01)
+fresh Moller d=3 m=0.5 R=3: shells=1800, null=0, scalar sv(min,max)=(5.949031e-01,2.637281e+00), T ratio(min,median)=(6.909349e-06,2.246327e-01)
+fixed invertible shell d=2 m=0.0: T sv(min,max,ratio)=(6.520939e+00,9.462067e+00,6.891665e-01)
+fixed invertible shell d=2 m=0.5: T sv(min,max,ratio)=(1.426281e+01,2.655068e+01,5.371919e-01)
+fixed invertible shell d=3 m=0.0: T sv(min,max,ratio)=(1.511246e+00,5.563332e+00,2.716440e-01)
+fixed invertible shell d=3 m=0.5: T sv(min,max,ratio)=(2.212464e+00,1.102205e+01,2.007307e-01)
+massless Compton d=2 R=5: shells=700, joint-null=0, joint sv(min,max)=(3.101214e-01,2.657656e+00), photon sv(min,max)=(3.378854e-01,2.583884e+00), T ratio(min,median)=(1.000000e+00,1.000000e+00)
+massless Compton d=3 R=3: shells=1500, joint-null=0, joint sv(min,max)=(1.438174e-01,3.623172e+00), photon sv(min,max)=(1.582821e-01,3.578438e+00), T ratio(min,median)=(5.533348e-04,2.509194e-01)
+forward check m=0.5: sup |v_e,x|=0.618033989, v_ph,x(p=.05)=0.999687516
+fresh-seed matrix d=2 m=0.5 r=4: survivors=2, smallest/max=1.051e-03/1.739e+02=6.043e-06, max survivor slope=1.69e-11
+fresh-seed matrix d=3 m=0.5 r=1: survivors=2, smallest/max=2.868e+01/1.344e+03=2.133e-02, max survivor slope=8.33e-12
+fresh-seed joint matrix m=0.5 r=1 Rp=1: survivors=2, smallest/max=1.645e-01/4.093e+02=4.019e-04, fermion slope=1.55e-12, photon slope=8.24e-15

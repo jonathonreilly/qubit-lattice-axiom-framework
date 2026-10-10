@@ -1,0 +1,6 @@
+d=2 m=0.5: 600 Compton shells (0.3s)
+T_C is 2x2: max-sv median 3.415e-01 min 1.250e-02; min-sv/max-sv min 1.00e+00, 1st pct 1.00e+00, median 1.00e+00
+  Compton alone, odd (f, g): cols 168, rows 600, null dim 0; sv min 1.140e-01 max 2.561e+00 ratio 4.449e-02
+  Compton + Moller, odd (f, g): cols 168, rows 1500, null dim 0; sv min 1.219e-01 max 3.039e+00 ratio 4.013e-02
+  Compton with f odd = 0, odd g alone: cols 84, rows 600, null dim 0; sv min 1.251e-01 max 2.505e+00 ratio 4.995e-02
+time 0.9s

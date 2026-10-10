@@ -1,0 +1,20 @@
+
+== d=2 inter=nn m=0.5: 2250 on-shell processes (0 band-changing) (4.5s); channels hit 6/16; max energy residual 1.6e-15
+  R=8 odd: basis 576 -> 320 block-distinct; nullity 0 (expected trivial 0); sv_max 2.696e+01, smallest nonzero sv 7.379e+00 (ratio 2.74e-01); largest 'null' sv nan; |W| median 6.61e+00, frac |W|<1e-8 0.00
+  R=8 even: basis 580 -> 324 block-distinct; nullity 2 (expected trivial 2); sv_max 2.733e+01, smallest nonzero sv 1.528e-02 (ratio 5.59e-04); largest 'null' sv 6.6e-14; |W| median 6.61e+00, frac |W|<1e-8 0.00
+   (29.7s)
+
+== d=2 inter=nn m=0.0: 2250 on-shell processes (0 band-changing) (4.1s); channels hit 6/16; max energy residual 1.3e-15
+  R=8 odd: basis 576 -> 320 block-distinct; nullity 0 (expected trivial 0); sv_max 2.689e+01, smallest nonzero sv 7.402e+00 (ratio 2.75e-01); largest 'null' sv nan; |W| median 7.07e+00, frac |W|<1e-8 0.00
+  R=8 even: basis 580 -> 322 block-distinct; nullity 2 (expected trivial 2); sv_max 2.700e+01, smallest nonzero sv 1.769e+00 (ratio 6.55e-02); largest 'null' sv 4.4e-14; |W| median 7.07e+00, frac |W|<1e-8 0.00
+   (32.0s)
+
+== d=2 inter=cube m=0.5: 2250 on-shell processes (0 band-changing) (4.6s); channels hit 6/16; max energy residual 1.4e-15
+  R=8 odd: basis 576 -> 320 block-distinct; nullity 0 (expected trivial 0); sv_max 6.725e+01, smallest nonzero sv 1.989e+01 (ratio 2.96e-01); largest 'null' sv nan; |W| median 1.98e+01, frac |W|<1e-8 0.00
+  R=8 even: basis 580 -> 324 block-distinct; nullity 2 (expected trivial 2); sv_max 7.149e+01, smallest nonzero sv 3.928e-02 (ratio 5.49e-04); largest 'null' sv 1.5e-13; |W| median 1.98e+01, frac |W|<1e-8 0.00
+   (31.7s)
+
+== d=2 inter=cube m=0.0: 2250 on-shell processes (0 band-changing) (4.2s); channels hit 6/16; max energy residual 1.6e-15
+  R=8 odd: basis 576 -> 320 block-distinct; nullity 0 (expected trivial 0); sv_max 6.331e+01, smallest nonzero sv 1.955e+01 (ratio 3.09e-01); largest 'null' sv nan; |W| median 1.83e+01, frac |W|<1e-8 0.00
+  R=8 even: basis 580 -> 322 block-distinct; nullity 2 (expected trivial 2); sv_max 6.671e+01, smallest nonzero sv 5.124e+00 (ratio 7.68e-02); largest 'null' sv 1.2e-13; |W| median 1.83e+01, frac |W|<1e-8 0.00
+   (25.5s)

@@ -614,3 +614,12 @@ But that mapping has not been derived.
     - The 1+1 toy exceeds the composite law by a factor that grows with time (1.1–1.6), so channel additivity is not checked.
     - The 1+1 visibility check is circular by construction.
     - Cross-species non-growth is ARGUED for 4D, not CHECKED.
+
+- **Exercise on the formation wall (F_formation): all 9 routes killed** (same family; `agents/C3_exercise_F_formation.md`).
+  - **Herm(2)/Löwner order.** It needs one global identification of every record's algebra: boosts do not preserve the Jordan product, and 40–42% of relations are lost under per-record automorphisms. That amounts to a supplied flat arena.
+  - **Local bulk-nucleation rules cluster.** Fano64 is 6.6 → 34.6 from N = 500 to 2000.
+  - **Real-weight action sums:** an entropy bound, and the action changes sign across d = 4.
+  - **Lorentzian sums:** no coupling window.
+  - **BD-tilted growth:** kill reading met in 74/75 settings.
+  - **Next test (pre-registered by the worker, run).** The only known rule that reproduces 4D statistics (Lemma G: the sprinkling read in random birth order) is TELEOLOGICAL. Its early stages are less ordered than small diamonds (10–19 SE), so it needs the final size in advance.
+  - **The price, stated (reading, not refereed):** either a supplied event set, or a whole-region formation law that knows its final size. Admissibility's nearest-neighbour locality is given up for formation.

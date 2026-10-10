@@ -603,3 +603,14 @@ But that mapping has not been derived.
 - **G-B referee (codex sol):** INCONCLUSIVE. The admixture conjunct is controlled: A_rms = 7.27e-28 at 1 Gpc, far below 1e-3, as an asymptotic ceiling. The PASS clause 'mean exactly the linearized-GR retarded solution' fails only at finite density (the mean is K_rho*T, which equals G_R*T only as density goes to infinity). FAIL is inapplicable. See `agents/C3_G-B_referee.md`.
 
 - **G-C referee (codex sol):** INCONCLUSIVE. The narrow no-go is confirmed only for frozen picture-I, fixed-point, point-marked order functionals with uniform per-realization invariance and an EH ensemble mean. It does not cover independent link fields, picture II, other couplings or a background-free quantum sum. The law-level Ward identity is exact but does not establish the physical quantum-sum branch. See `agents/C3_G-C_referee.md`.
+
+- **M-D (composite coherence): INCONCLUSIVE** (worker; the adversarial check supports it with corrections). No codex referee is needed for a non-FAIL; see `agents/C3_M-D_report.md`.
+  - In the pure shared-link sector, the exponentially growing noise is per constituent: rate k0·m_i·m_j·ℓ per pair channel, never k0·M²·ℓ. The total-mass mapping that drove the M-A tension is therefore not what the substrate gives (EXACT within that sector; ARGUED beyond it).
+  - Conditional on the uncontrolled M-A chain law, the outcome depends on what carries Johnston mass vertices:
+    - nucleons or 313 MeV constituent quarks: Rb-87 decoheres in about 10–90 ms, against the observed 2.3 s and 70 s;
+    - current quarks and electrons with massless binding: about 440 s, which passes.
+  - Equivalently, the 70 s experiment would require every Johnston mass-vertex scale in an atom to be below about 12 MeV.
+  - **Checker corrections.**
+    - The 1+1 toy exceeds the composite law by a factor that grows with time (1.1–1.6), so channel additivity is not checked.
+    - The 1+1 visibility check is circular by construction.
+    - Cross-species non-growth is ARGUED for 4D, not CHECKED.

@@ -19,3 +19,6 @@ does not take the 48-point chiral pair.
 
 Cycle 6 takes the soldered bond-orbit count on the 48 signed
 permutations of `(1, 2, 3)`. It does not take an order-blindness cut.
+
+Cycle 7 takes the transverse-cross formula at absolute heights 1 and 2.
+It does not take a kernel outside those three crosses.

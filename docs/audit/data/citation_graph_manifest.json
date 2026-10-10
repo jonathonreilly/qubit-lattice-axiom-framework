@@ -1,6 +1,6 @@
 {
- "edge_count": 15430,
- "node_count": 6875,
+ "edge_count": 15432,
+ "node_count": 6876,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13757,6 +13757,10 @@
   "lorentz_violation_derived_note": {
    "deps_hash": "7c11d8d637c4",
    "out_degree": 1
+  },
+  "lower_height_transverse_crosses_outside_the_modulus_three_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
   },
   "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",

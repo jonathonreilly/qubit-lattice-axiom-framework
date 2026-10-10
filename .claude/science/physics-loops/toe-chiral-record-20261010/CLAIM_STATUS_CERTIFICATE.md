@@ -106,3 +106,23 @@ open_imports: none. No formation site, probability, or rate is used.
 
 The count prunes the reading that the exhibited one-parameter family is
 the whole bond space on this alphabet. It does not select a factor.
+
+# Claim status certificate — cycle 7
+
+claim_id: lower_height_transverse_crosses_outside_the_modulus_three_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: one proper orbit of (1, 2, 3); uniform average; transverse-cross formula at absolute heights 1 and 2; absolute parameter below 1
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: the parent converse. No formation rate is used.
+
+Each lower-height transverse cross is a soldered order-blind factor
+outside the span of the six cap lines and the modulus-3 transverse
+cross. The sum of the two kernels has moment `23/24`. Kernels outside
+the three crosses stay open.

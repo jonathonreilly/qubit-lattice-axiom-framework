@@ -26,3 +26,9 @@ in the six cap signs. The witness is the transverse-cross slice at
 Cycle 6 prunes only the reading that the 48-point bond space is the
 exhibited one-parameter family. It does not say that order-blindness
 cuts the dimension.
+
+Cycle 7 prunes the reading that every soldered order-blind kernel on
+this orbit lies in the six cap lines and the modulus-3 transverse
+cross. The witnesses are the height-1 and height-2 crosses and the
+mixture moment `23/24`. It does not say that no kernel remains outside
+the three crosses.

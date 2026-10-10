@@ -50,13 +50,25 @@ dimension 300. 264 orbits have 24 images and 48 have 12. Ordered
 covariant bonds form 576 orbits. Runner `PASS=15 FAIL=0`. No factor is
 selected. Order-blindness on this alphabet is not classified.
 
+Cycle 7. The transverse-cross formula at absolute heights 1 and 2 each
+gives a soldered kernel with values in `{-1, 0, 1}`, one live direction
+per record, and slice sums 0. For absolute parameter below 1 the factors
+are positive, and the parent converse makes each family order-blind. The
+six cap lines and the three transverse crosses are linearly independent,
+so each lower-height kernel lies outside the six caps and the modulus-3
+cross. Witnesses: height 1 sends `(-3, -2, -1)` to `(-3, 2, 1)` with
+value `-1`; height 2 sends `(-3, 1, -2)` to `(3, 1, 2)` with value `-1`.
+The sum of the two kernels has two-neighbour moment `23/24`. Runner
+`PASS=19 FAIL=0`. Kernels outside these nine are not classified.
+
 ## Next exact action
 
-Ask whether a soldered order-blind kernel on the 24-point orbit remains
-outside the cap lines and the transverse-cross kernel. Search first.
-Do not restate those exhibits or the 48-point dimension. Do not invent
-a formation rate. Do not return to shells, plaquette corner weights,
-or the `(0,1,2)` and `(1,1,2)` alphabets.
+Ask whether a soldered order-blind kernel on this orbit remains outside
+the six cap lines and the three transverse-cross kernels. Search first.
+A negative answer must name the ansatz. Do not restate the height-1 and
+height-2 exhibits or the 48-point dimension. Do not invent a formation
+rate. Do not return to shells, plaquette corner weights, or the
+`(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

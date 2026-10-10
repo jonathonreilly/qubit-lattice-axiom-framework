@@ -212,3 +212,45 @@ Author checks only. No review-loop PASS and no audit verdict.
     affine dimension 300.
 12. Vocabulary lint is run on the note before commit. The full audit
     pipeline was not run.
+
+## 2026-10-10 author check, cycle 7
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`. The earlier cap lines and the
+   modulus-3 transverse cross are rebuilt in this runner as comparison
+   vectors. They are not lemmas imported from this branch.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/lower_height_transverse_crosses_outside_modulus_three_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `5adff7cc8b73792672cdee785ad4b48f38768faeb1bf810102c2ca61da56a6c9`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=19 FAIL=0`.
+3. Scope. Two kernels, rank 9 against the six cap lines and the
+   height-3 cross, and mixture moment `23/24`. Status line
+   `proposed_retained`. Surface status `bounded-support`. Kernels
+   outside the three crosses stay open.
+4. N-gate does not apply. The artifact exhibits two further kernels.
+   It does not claim that no other order-blind kernel exists.
+5. Obligations are in the note. The missing lemma is whether any
+   soldered order-blind kernel remains outside the three crosses.
+6. Mutations, each on a scratch copy, exited 1. Forcing every nonzero
+   cross to `+1` gave `PASS=11 FAIL=8`. Leaving the transporting matrix
+   uninverted gave `PASS=16 FAIL=3`. Dropping the height-2 term from the
+   sum gave `PASS=18 FAIL=1` on the moment `23/24`. An independent
+   closure under quarter-turns about `z` and about `x` gave 24
+   rotations, orbit 24, four carriers, witnesses `-1`, ranks 7, 8, 8,
+   and 9, and moment `23/24`.
+7. One primary runner. No packet helper.
+8. Two markdown links to notes on origin/main. The manifest refresh for
+   the new node is part of this commit. `citation_graph.json` is deleted
+   after the write.
+9. Machine-status fields match the certificate.
+10. No audit status or ledger output is written.
+11. Counts recomputed this session: witnesses `-1`, rank 9, moment
+    `23/24`, `PASS=19 FAIL=0`.
+12. Vocabulary lint reported 0 violations on the note. The full audit
+    pipeline was not run.

@@ -88,3 +88,20 @@ next_trace_action: "Ask whether a soldered order-blind kernel on the 24-point or
 The count prunes the reading that the exhibited one-parameter family is
 the whole bond space on the 48-point alphabet. It does not cut that
 space by order-blindness.
+
+## Cycle 7
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Ask whether a soldered order-blind kernel on this orbit remains outside the six cap lines and the three transverse-cross kernels. Search first. A negative answer must name the ansatz."
+```
+
+The two lower-height crosses prune the reading that every order-blind
+kernel lies in the six cap lines and the modulus-3 transverse cross.
+The moment `23/24` keeps their sum outside the normalised families.
+Kernels outside the three crosses stay open.

@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/lower_height_transverse_crosses_outside_modulus_three_2026_10_10.py
+runner_sha256: 5adff7cc8b73792672cdee785ad4b48f38768faeb1bf810102c2ca61da56a6c9
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.45
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS each direction has four carriers
+PASS soldered extension is well defined at heights 1, 2, and 3
+PASS the height-1 and height-2 kernels are bond-symmetric
+PASS a matched transverse pair has nonzero cross at heights 1 and 2
+PASS kernel values at heights 1 and 2 lie in {-1, 0, 1}
+PASS each record activates one direction at heights 1 and 2
+PASS every slice has sum 0 at heights 1 and 2
+PASS the height-1 witness bond has value -1
+PASS the height-2 witness bond has value -1
+PASS the height-3 witness bond has value -1
+PASS each lower-height witness slice is orthogonal to the caps and height 3
+PASS the height-1 kernel lies outside the six caps and the modulus-3 cross
+PASS the height-2 kernel lies outside the six caps and the modulus-3 cross
+PASS the nine kernels are linearly independent
+PASS half-parameter factors stay positive
+PASS the sum of the two kernels has two-neighbour moment 23/24
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

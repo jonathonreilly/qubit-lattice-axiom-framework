@@ -45,3 +45,13 @@ after far-end sum 1.
 Family used: exact orbit enumeration and rational row reduction.
 
 Family not used: an order-blindness cut on that space. That remains open.
+
+Cycle 7 target contract: whether a soldered order-blind kernel on this
+orbit remains outside the six cap lines and the modulus-3 transverse
+cross.
+
+Family used: the transverse-cross formula at absolute heights 1 and 2,
+rational row reduction of the nine kernels, and one mixture moment.
+
+Family not used: a kernel outside the three transverse crosses. That
+remains open.

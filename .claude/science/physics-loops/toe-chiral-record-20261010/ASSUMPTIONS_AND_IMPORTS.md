@@ -52,3 +52,14 @@
 - Factors are rational. No positivity, order-blindness, or normalising
   constant beyond the far-end sum is assumed.
 - No formation site, probability, or rate is imported.
+
+## Cycle 7
+
+- The tested kernels are the transverse-cross formula at absolute
+  heights 1 and 2. The comparison kernel is the same formula at height 3.
+- The cap line at level `k` is the product of the transverse signs on
+  `a·d = k` and on the opposite record. No other function on a cap is
+  tested.
+- The one-site average is the uniform average on the 24-point orbit.
+- Order-blindness, once the product means hold, is the parent converse.
+- No formation site, probability, or rate is imported.

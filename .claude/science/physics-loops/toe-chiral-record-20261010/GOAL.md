@@ -10,4 +10,6 @@ three opposite-cap lines outside that span. Cycle 5 exhibits a
 transverse-cross kernel whose slice is orthogonal to all six cap signs.
 The open target on this orbit is any further order-blind kernel. Cycle
 6 counts the soldered bond space on the 48 signed permutations:
-dimension 312, and 300 after far-end sum 1.
+dimension 312, and 300 after far-end sum 1. Cycle 7 exhibits transverse
+crosses at absolute heights 1 and 2 outside the six caps and the
+modulus-3 cross. Their sum has moment `23/24`.

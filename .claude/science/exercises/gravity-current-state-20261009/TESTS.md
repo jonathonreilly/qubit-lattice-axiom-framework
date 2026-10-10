@@ -563,3 +563,5 @@ Reports: `agents/C3_*_report.md`.
 - massive matter (`M_massive_matter`).
 
 Each exercise uses the compressed form: 3 lenses, a kill round, and a next test pre-registered by its worker.
+
+- **M-C referee (codex sol):** CONFIRMED WITH CORRECTIONS. The formal FAIL survives. Exact: no all-nonnegative linear source-to-readout rule has the exact massive retarded KG kernel as its mean, in any dimension (zero-mode proof sin(mt)/m). Lemma D holds only for Fourier-mode descent. The block-122 analogy is scoped. Not excluded: positive massive transport with an added carrier, and nonlinear observables. See `agents/C3_M-C_referee.md`.

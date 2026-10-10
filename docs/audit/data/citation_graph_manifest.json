@@ -1,6 +1,6 @@
 {
- "edge_count": 15443,
- "node_count": 6881,
+ "edge_count": 15446,
+ "node_count": 6882,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5728,6 +5728,10 @@
   },
   "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12": {
    "deps_hash": "fa5aa0d7f9b9",
+   "out_degree": 3
+  },
+  "equal_height_signature_with_one_partner_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "5859f1e27606",
    "out_degree": 3
   },
   "equivalence_principle_harness_note": {

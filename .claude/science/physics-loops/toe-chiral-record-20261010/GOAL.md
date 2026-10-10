@@ -26,4 +26,8 @@ The equal-height case split leaves only zero. A sum of two signatures
 stays open. Cycle 12 shows an unequal signature beside any one partner
 is forced to zero by the pair-moment squares. The kernel drops to that
 partner. An equal-height signature beside one opposite signature is
-not forced by that square test.
+not forced by that square test. Cycle 13 shows the joint slice kernel
+on every pair is the direct sum, and the equal-height block is zero
+beside one opposite or equal-height partner. The triple of
+`(-3, -3)` with both modulus-3 opposite signatures has joint kernel
+10.

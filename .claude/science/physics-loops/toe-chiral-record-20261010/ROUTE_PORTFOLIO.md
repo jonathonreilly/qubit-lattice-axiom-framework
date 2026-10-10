@@ -37,3 +37,7 @@ a sum of two classes.
 
 Cycle 12 takes one unequal height signature plus one partner. It does
 not take an equal-height signature beside an opposite signature.
+
+Cycle 13 takes one equal-height signature plus one opposite or
+equal-height partner. It does not take the extra slice direction in
+the triple `(-3, -3)`, `(-3, 3)`, `(3, -3)`.

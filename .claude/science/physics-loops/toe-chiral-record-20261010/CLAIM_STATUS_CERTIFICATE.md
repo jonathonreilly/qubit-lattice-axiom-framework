@@ -225,3 +225,24 @@ An unequal height signature beside any one partner is forced to zero.
 The kernel drops to that partner and does not leave the eighteen
 cap-pair kernels. An equal-height signature beside one opposite
 signature stays open.
+
+# Claim status certificate — cycle 13
+
+claim_id: equal_height_signature_with_one_partner_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: one proper orbit of (1, 2, 3); one equal-height signature plus one opposite or equal-height partner; uniform average
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: the single-signature classification and, through it, the parent converse. No formation rate is used.
+
+An equal-height signature beside one opposite partner is forced to
+zero, and the kernel is that opposite signature. Two equal-height
+signatures have only the zero kernel with vanishing pair moments.
+The extra slice direction on `(-3, -3)`, `(-3, 3)`, and `(3, -3)`
+stays open. That joint kernel has dimension 10.

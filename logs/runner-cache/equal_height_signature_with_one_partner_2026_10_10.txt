@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/equal_height_signature_with_one_partner_2026_10_10.py
+runner_sha256: b8e2f1bd552dbde54131c5e8d31b1931b69643f912c228ca2e7622e9f2443b37
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 1.05
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS height signatures number 21
+PASS the signatures partition 84 bond orbits
+PASS 210 signature pairs each have joint slice kernel 6
+PASS the triple (-3, -3), (-3, 3), (3, -3) has joint slice kernel 10, the maximum among 1330 triples
+PASS six opposite, three equal, and twelve unequal signatures
+PASS six same-modulus pairs share an axis and match the bilinear normal form
+PASS twelve different-modulus pairs are disjoint and match the product normal form
+PASS three equal-height pairs are disjoint and match both quadric blocks
+PASS setting the third coordinate to 0 leaves u^2, uv+v^2, and -v^2
+PASS the eliminant quartics are 36u^4+54u^3-15u^2-72u+10 and 36u^4-69u^2-81u-26
+PASS those quartics have resultant 113027603142816
+PASS a same-modulus partner vector is a zero and a pure equal-height vector is not
+PASS a one-signature stand-in is not this pair count
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

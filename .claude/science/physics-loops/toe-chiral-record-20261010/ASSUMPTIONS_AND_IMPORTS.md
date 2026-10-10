@@ -109,3 +109,12 @@
 - The single-signature classification is the cycle-11 note. It is not
   re-proved here.
 - No formation site, probability, or rate is imported.
+
+## Cycle 13
+
+- The ansatz is one equal-height signature plus one opposite or
+  equal-height partner. The extra direction in a joint kernel of
+  dimension 10 is not in this count.
+- The single-signature classification is the cycle-11 note. It is not
+  re-proved here.
+- No formation site, probability, or rate is imported.

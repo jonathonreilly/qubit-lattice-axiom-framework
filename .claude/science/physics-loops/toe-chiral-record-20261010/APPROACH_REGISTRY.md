@@ -99,3 +99,13 @@ signatures and each of the other twenty signatures.
 
 Family not used: an equal-height signature beside an opposite
 signature. The square test does not decide it.
+
+Cycle 13 target contract: whether an equal-height signature beside
+one opposite or equal-height partner can be order-blind outside the
+eighteen cap-pair kernels.
+
+Family used: the direct sum on all 210 pairs, the three equal-height
+quadrics, and the same-modulus and different-modulus normal forms.
+
+Family not used: the extra slice direction on `(-3, -3)`, `(-3, 3)`,
+and `(3, -3)`, where the joint kernel has dimension 10.

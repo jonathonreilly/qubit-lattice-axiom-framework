@@ -57,3 +57,10 @@ Cycle 12 prunes the reading that one partner can revive an unequal
 signature. All 240 pairs force the unequal monomials to zero. It does
 not say that an equal-height signature beside an opposite signature
 is zero. The square test leaves that pair open.
+
+Cycle 13 prunes the reading that one opposite or equal-height partner
+can revive an equal-height signature. The joint kernel on every pair
+is the direct sum, and the equal-height quadrics vanish only at the
+origin. It does not say that the extra direction in the triple
+`(-3, -3)`, `(-3, 3)`, `(3, -3)` is zero. That joint kernel has
+dimension 10.

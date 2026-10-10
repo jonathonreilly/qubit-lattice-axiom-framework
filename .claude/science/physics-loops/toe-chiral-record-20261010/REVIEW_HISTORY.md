@@ -479,3 +479,60 @@ Conformance, section by section:
     forced, `PASS=9 FAIL=0`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note. The
     full audit pipeline was not run.
+
+## 2026-10-10 author check, cycle 13
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`, and the cycle-11
+   single-signature note on this branch. The joint-kernel counts, the
+   normal forms, and the resultant are computed in this runner. The
+   identification of an opposite signature with the eighteen is cited,
+   not rebuilt.
+2. Cache. `AUDIT_TIMEOUT_SEC = 300`. The envelope wrote
+   `logs/runner-cache/equal_height_signature_with_one_partner_2026_10_10.txt`.
+   Header `timeout_sec: 300`, `status: ok`, sha256
+   `b8e2f1bd552dbde54131c5e8d31b1931b69643f912c228ca2e7622e9f2443b37`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=16 FAIL=0`.
+   Elapsed 1.05 seconds.
+3. Scope. All 210 signature pairs have joint slice kernel 6. Six
+   same-modulus pairs, twelve different-modulus pairs, and three
+   equal-height pairs match the stated normal forms. The three quadrics
+   vanish only at the origin; the eliminant resultant is
+   `113027603142816`. Status line `proposed_retained`. Surface status
+   `bounded-support`. The triple `(-3, -3)`, `(-3, 3)`, `(3, -3)` has
+   joint slice kernel 10, the maximum among 1330 triples, and stays
+   open. The 84-dimensional bond space is not classified.
+4. N-gate does not apply. The artifact classifies one named ansatz. It
+   does not claim that no kernel on that triple exists.
+5. Obligations are in the note. The missing lemma is the extra slice
+   direction on `(-3, -3)`, `(-3, 3)`, and `(3, -3)`.
+6. Mutations, each on a scratch copy, exited 1. Dropping reversal from
+   the signature gave `PASS=9 FAIL=7` on the signature count, the
+   joint-kernel counts, the opposite-equal-unequal split, and the three
+   normal forms. Replacing the quadric coefficient `-4/3` by `-1` gave
+   `PASS=13 FAIL=3` on the three normal forms. Demanding joint dimension
+   7 instead of 6 gave `PASS=15 FAIL=1` on the 210-pair count. An
+   independent closure under quarter-turns about `z` and about `x`
+   gave 24 rotations and orbit 24, with `(2, 1, 3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Three markdown links. Two point at tracked notes on origin/main.
+   The third points at the cycle-11 single-signature note. Manifest
+   node_count 6882 and edge_count 15446. The new node has out_degree 3
+   and deps_hash `5859f1e27606`. Dependencies are `minimal_axioms`, the
+   2026-09-22 note, and
+   `single_height_signature_order_blind_kernel_bounded_theorem_note_2026-10-10`.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the single-signature classification and the parent converse,
+   and states that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: joint kernel 6 on 210 pairs,
+    witness triple dimension 10, resultant `113027603142816`,
+    `PASS=16 FAIL=0`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note. The
+    full audit pipeline was not run.

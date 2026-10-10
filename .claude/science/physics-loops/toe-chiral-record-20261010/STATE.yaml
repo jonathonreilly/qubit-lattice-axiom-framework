@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 12
-runner_result: PASS=9 FAIL=0
+cycle: 13
+runner_result: PASS=16 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Ask whether an equal-height signature beside one opposite signature, or two equal-height signatures, can leave the eighteen cap-pair kernels. The square test does not decide it. Do not restate the unequal-partner cut.
+next_exact_action: Ask whether the extra slice direction on the signatures (-3, -3), (-3, 3), and (3, -3) is order-blind outside the eighteen. The joint kernel there has dimension 10. Do not restate the one-partner cut.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

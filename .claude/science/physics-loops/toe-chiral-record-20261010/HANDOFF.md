@@ -113,15 +113,25 @@ kernels when it is order-blind and nonzero. The square test does not
 force signature `(-3, -3)` to zero beside `(3, -3)`. Runner
 `PASS=9 FAIL=0`. Equal-height pairs are not classified.
 
+Cycle 13. Every pair of height signatures has joint slice kernel 6, so
+the kernel is the direct sum of the two signature kernels. Beside an
+opposite partner, the pair moments force an equal-height block to
+zero, and the kernel is that opposite signature. Beside a second
+equal-height signature both blocks are zero. The three quadrics have
+only the origin as a common zero; the eliminant resultant is
+`113027603142816`. The triple `(-3, -3)`, `(-3, 3)`, `(3, -3)` has
+joint slice kernel 10, the maximum among 1330 triples. Runner
+`PASS=16 FAIL=0`. That extra direction is not classified.
+
 ## Next exact action
 
-Ask whether an equal-height signature beside one opposite signature,
-or two equal-height signatures, can leave the eighteen cap-pair
-kernels. The square test does not decide it. Search first. A negative
-answer must name the ansatz. Do not restate the unequal-partner cut
-or the 48-point dimension. Do not invent a formation rate. Do not
-return to shells, plaquette corner weights, or the `(0,1,2)` and
-`(1,1,2)` alphabets.
+Ask whether the extra slice direction on the signatures `(-3, -3)`,
+`(-3, 3)`, and `(3, -3)` is order-blind outside the eighteen. The
+joint kernel there has dimension 10. Search first. A negative answer
+must name the ansatz. Do not restate the one-partner cut or the
+48-point dimension. Do not invent a formation rate. Do not return to
+shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
+alphabets.
 
 ## Cleanup
 

@@ -189,3 +189,19 @@ next_trace_action: "Ask whether an equal-height signature beside one opposite si
 The 240 square eliminations prune an unequal signature beside one
 partner. The equal-height control `(-3, -3)` beside `(3, -3)` stays
 outside this ansatz.
+
+## Cycle 13
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Ask whether the extra slice direction on the signatures (-3, -3), (-3, 3), and (3, -3) is order-blind outside the eighteen. The joint kernel there has dimension 10. Do not restate the one-partner cut."
+```
+
+The direct-sum count prunes an equal-height signature beside one
+opposite or equal-height partner. The triple `(-3, -3)`, `(-3, 3)`,
+`(3, -3)` has joint slice kernel 10 and stays outside this ansatz.

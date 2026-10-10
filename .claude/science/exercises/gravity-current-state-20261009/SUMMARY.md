@@ -255,7 +255,7 @@ What it still lacks:
 | K | the cost of keeping the grid | **INCONCLUSIVE** | Two shear tunings alone are not established. Speed-sector tuning is generically expected, unproved |
 | X1 | the random-lattice spectrum | **bounded FAIL** (CWC) | Flat noise, S ≥ 2e-3 |
 | X2 | the response of a classical record gas | **bounded FAIL** (CWC) | Noise without dissipation (n_S = 0) |
-| G-L | link-only lensing (Van Vleck) | [PENDING at the time of writing] | |
+| G-L | link-only lensing (Van Vleck) | **FAIL** (CWC) for the unweighted one-hop link mean | On curved backgrounds the link mean has weight ν^{−1/2} where GR has Δ^{1/2}. It de-magnifies where GR magnifies, an O(1) mismatch at any density. Flat-space results are unchanged. Weighted links, multi-hop and other readouts are open |
 
 **The three walls, after the exercises** (27 routes, all killed; same family, not refereed):
 1. **Formation:** a supplied event set, or a whole-region formation law that knows its final size.
@@ -263,7 +263,7 @@ What it still lacks:
    - a non-locality scale plus a signed hop with cancelling moments. The pre-registered profile FAILs; a post-hoc profile whose first two moments vanish is a lead;
    - or composites with soft binding;
    - or a coherent quantum event dynamics.
-3. **The graviton:** a covariant growth law with Einstein histories, no e^{iS} weighting by interval-count actions, and link readouts that focus like GR (lane G-L).
+3. **The graviton:** a covariant growth law with Einstein histories, no e^{iS} weighting by interval-count actions, and link readouts that focus like GR. **G-L (refereed FAIL) shows that unweighted one-hop links do not focus like GR.** Weighted or multi-hop readouts would be needed.
 
 **Prices, named only as prices, nothing adopted:**
 - the Lattice axiom replaced, and a causal order supplied;
@@ -275,6 +275,5 @@ What it still lacks:
 **What closes next, in the referees' and the exercises' order:**
 - referee Lemma L and the signed-hop ladder;
 - the bound-state chain rate M_pair(R) for composites;
-- link-only lensing (G-L);
 - re-register lane K in an implementable form.
 

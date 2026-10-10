@@ -1,6 +1,6 @@
 # C3 lane M-B: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee: CONFIRMED WITH CORRECTIONS. The lane is INCONCLUSIVE. Theorem A: no jointly Poincare-equivariant isometry with finite event fibers can move amplitude between events. Theorem B: the sprinkling cannot select an antichain. Neither excludes supplied-slice dynamics or link (arc) states. The swerve result holds only for the greedy chain, typically about 9.75 Planck times. An arc unitary, a massive mean and 1 km coherence are all open** (C3_M-B_referee.md).
 
 **Verdict (worker):** INCONCLUSIVE. The no-go covers event states and slice states (EXACT under stated hypotheses) but not link (arc) states, which are the checkerboard's own structure. Arc states survive the definability obstruction. Their simplest unitary form, single-chain or permutation transport, swerves to the light cone within about 20 Planck times. Spreading arc rules remain open: no mean dispersion and no controlled coherence law. The no-go parts need the codex sol referee before they are recorded.
 

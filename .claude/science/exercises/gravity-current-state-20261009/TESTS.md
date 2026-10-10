@@ -565,3 +565,5 @@ Reports: `agents/C3_*_report.md`.
 Each exercise uses the compressed form: 3 lenses, a kill round, and a next test pre-registered by its worker.
 
 - **M-C referee (codex sol):** CONFIRMED WITH CORRECTIONS. The formal FAIL survives. Exact: no all-nonnegative linear source-to-readout rule has the exact massive retarded KG kernel as its mean, in any dimension (zero-mode proof sin(mt)/m). Lemma D holds only for Fourier-mode descent. The block-122 analogy is scoped. Not excluded: positive massive transport with an added carrier, and nonlinear observables. See `agents/C3_M-C_referee.md`.
+
+- **M-B referee (codex sol):** CONFIRMED WITH CORRECTIONS. The lane is INCONCLUSIVE. Theorem A: no jointly Poincare-equivariant isometry with finite event fibers can move amplitude between events. Theorem B: the sprinkling cannot select an antichain. Neither excludes supplied-slice dynamics or link (arc) states. The swerve result holds only for the greedy chain, typically about 9.75 Planck times. An arc unitary, a massive mean and 1 km coherence are all open. See `agents/C3_M-B_referee.md`.

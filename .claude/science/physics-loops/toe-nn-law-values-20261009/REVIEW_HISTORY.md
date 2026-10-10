@@ -1,5 +1,48 @@
 # Review history
 
+2026-10-10 cycle 13 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is whether proper-cubic covariance forces
+  a unique nonzero circulation on the 81 colorings of one unit square by
+  `{0, 1, blank}`, or whether every covariant assignment has circulation
+  0 or a free sign. Source: the campaign block after the ternary-shell
+  census, which closed the six-direction shell family and left the
+  source/action gate open. The formation sentence was not given a note
+  of its own.
+- V2. Not on `origin/main`. Commands were `git grep` for `plaquette
+  circulation`, `four corner records`, `81 color`, and `covariant
+  circulation` under `docs/*.md` and `scripts/*.py`. The hits are a
+  ring-model circulation matrix, a vector-magnetic null probe, fermion
+  corner counts, and unrelated `3^4` arithmetic. None is this rank-3
+  module. `git merge-tree --write-tree --name-only HEAD origin/main`
+  exited 0 with no conflict paths. The audit-metadata commit on
+  `origin/main` was not merged.
+- V3. Theorems 1–3 of the cycle-13 note, checked by the paired runner.
+  A menu that deletes blank corners, the site, and the rate remain open.
+  No coefficient is adopted. No edge flux is formed.
+- V4. Before, this square had no circulation census on this branch.
+  After, the covariant integers have rank 3. Zero is covariant. The sign
+  is free, and it is not the only freedom.
+- V5. Not a corollary of the 729-shell census. That census classifies
+  output orbits on six directions. It does not assign an integer
+  circulation to four corner records.
+
+No-go gate for the scoped miss is in the cycle-13 source note. The rank
+is 3, not a unique nonzero value and not one global sign. A universal
+claim that no carrier can constrain a circulation is not made. Author
+mutations, each on a scratch copy that was deleted: demanding that
+`0101` not be killed prints `FAIL=1`; demanding that the rank be 1
+prints `FAIL=1`. Independent review has not been requested. No audit
+grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+negative claim inside the four-corner character, separates the census
+from the ring-model circulation matrix and the shell censuses, and does
+not write an audit verdict. Sections that belong to independent review
+were not run.
+
 2026-10-10 cycle 12 author pass. Value gate, searched `origin/main` at
 `d9b869b97944676aaa759915462c529dc276a04c`:
 

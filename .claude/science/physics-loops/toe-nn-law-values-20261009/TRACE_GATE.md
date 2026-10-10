@@ -5,8 +5,14 @@ target_blocker_text: "source/action and physical-observable identification"
 source_of_blocker_text: frontier_question
 reachability_to_target: prunes
 artifact_role: theorem
-next_trace_action: "No ternary shell has soldered output type (1,). The only unique invariant laws are the uniform law on 000000, 111111, and bbbbbb, and none is adopted. A menu that deletes blanks is outside the census. The site and the rate stay unsupplied. Do not invent a hazard law."
+next_trace_action: "Proper-cubic covariance does not force a unique nonzero circulation on the 81 square colorings. The covariant integers have rank 3. No coefficient is adopted. No edge flux is formed. The site and the rate stay unsupplied."
 ```
+
+Cycle 13 prunes the reading that proper-cubic covariance forces a unique
+nonzero circulation on the 81 colorings of one unit square. The covariant
+assignments are a free module of rank 3. Zero is covariant, and the three
+coefficients are independent. None is adopted. The quoted blocker below is
+not closed.
 
 Cycle 12 prunes the reading that some shell with entries in `{0, 1, blank}`
 forces one locked direction under the soldered six-direction action. No

@@ -1,6 +1,6 @@
 # Opportunity queue
 
-Ranked after cycle 12. Refresh `origin/main` before each search.
+Ranked after cycle 13. Refresh `origin/main` before each search.
 Searched commit:
 `d9b869b97944676aaa759915462c529dc276a04c`.
 
@@ -89,6 +89,15 @@ Searched commit:
     Do not adopt the uniform law or either point mass. A menu that deletes
     blank directions is outside this census and is not queued. Do not
     invent a hazard law. The site and the rate stay unsupplied.
+14. **Whether one square's corner records force a circulation.** Done on
+    this branch for the 81 colorings in `{0, 1, blank}`. Proper-cubic
+    covariance leaves a free integer module of rank 3. Zero is covariant.
+    The free orbits are `001b`, `011b`, and `01bb`. The other 57 colorings,
+    including `0101`, are forced to 0. No coefficient is adopted. No edge
+    flux is formed. Do not repeat the census. Do not adopt a coefficient.
+    A menu that deletes blank corners is outside this census and is not
+    queued. Do not invent a hazard law. The site and the rate stay
+    unsupplied. The source/action gate stays open.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

@@ -155,3 +155,17 @@ blank directions before the action. No direction was selected. No hazard
 law was introduced. The source/action open gate stays open. The odd cap
 alphabet is not reopened. The one-blank census and the binary census are
 not rerun.
+
+Cycle 13 does not claim that every carrier leaves circulation free, and
+it does not claim that the zero assignment is the physical circulation.
+The scoped statement is narrower: on the 81 colorings of one unit square
+by `{0, 1, blank}`, the covariant integer assignments for the boundary
+sign form a free module of rank 3. Zero is covariant. The three
+coefficients are independent. On 57 colorings, including `0101`, every
+covariant assignment is 0. No coefficient is selected, and no edge flux
+is formed.
+
+N7's steelman is accepted as an out-of-domain escape: a menu that deletes
+blank corners before the character. No coefficient was selected. No hazard
+law was introduced. The source/action open gate stays open. The odd cap
+alphabet is not reopened. The shell censuses are not rerun.

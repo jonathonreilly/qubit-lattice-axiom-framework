@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/plaquette_corner_circulation_not_forced_2026_10_10.py
+runner_sha256: 9980fa953c77369ff8b670fa96b75c0faf428482258c0e003ed2a7521374556b
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS the proper cubic group has 24 elements and exactly 8 preserve the square
+PASS those 8 form the dihedral action, four of each character, and the character is a homomorphism
+PASS enumeration and the Burnside average both give 21 orbits of the 81 colorings
+PASS orbit size times stabilizer order is 8 on every coloring
+PASS the free orbits are 001b, 011b, and 01bb, each of size 8
+PASS the other 18 orbits, 57 colorings, are killed, with sizes 1, 2, and 4
+PASS quarter-turns fix only the three constant colorings, and 0101 is killed
+PASS the three generators are a basis and the rank is 3
+PASS zero is covariant, and each generator disagrees with its negative
+PASS the 01bb generator is not a sign flip of the 001b generator
+PASS swapping 0 with 1 and leaving blanks fixed preserves which orbits are free
+PASS a coloring is killed exactly when a reversing isometry fixes it
+per_element: checked all 81 colorings and all 8 corner-preserving proper isometries
+per_site: one supplied unit square; transport reads the same assignment on any coordinate unit square; no site was selected
+per_mode: one circulation character, the sign of the induced boundary permutation; no edge flux was formed
+per_block: the alphabet {0, 1, blank} on four corners; no bond factor and no deleted-blank menu
+lattice_wide: checked and not executed — no infinite lattice, no formation site, and no formation rate
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

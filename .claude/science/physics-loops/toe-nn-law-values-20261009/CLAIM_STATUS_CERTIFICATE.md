@@ -1,3 +1,26 @@
+# Claim status certificate — cycle 13
+
+- Intended audit claim type: `bounded_theorem`
+- Author surface: bounded-support, conditional on colorings of one unit
+  square by `{0, 1, blank}` and on the circulation character of the eight
+  corner-preserving proper isometries
+- Current ledger status of this new note: none yet; do not invent one
+- Audit remains required. This file is not a verdict.
+- Open imports: the four-corner alphabet, the boundary-sign character, a
+  menu that deletes blank corners, and the formation site and rate
+- Route pruned: proper-cubic covariance forces a unique nonzero circulation
+  on these 81 colorings
+- The covariant assignments are a free module of rank 3. Zero is covariant.
+  The three coefficients are independent, and none is adopted. No edge
+  flux is formed
+- No-go packet in the source note is scoped to this census. It does not
+  classify a deleted-blank menu, and it does not select a coefficient
+- The odd cap alphabet stays stopped. The six-direction shell family stays
+  closed. The rank-3 module is not a selected circulation
+- Runner: `TOTAL: PASS=12 FAIL=0` at the worktree copy, re-run by the author
+  through `runner_cache.py`
+- Independent review has not been requested
+
 # Claim status certificate — cycle 12
 
 - Intended audit claim type: `bounded_theorem`

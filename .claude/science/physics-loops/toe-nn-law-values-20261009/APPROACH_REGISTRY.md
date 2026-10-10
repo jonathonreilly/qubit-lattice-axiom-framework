@@ -151,3 +151,19 @@ shells. No shell has output type `(1,)`. The unique invariant laws are
 the uniform law of mass `1/6` on `000000`, `111111`, and `bbbbbb`. No
 shell forces one direction. Neither the uniform law nor either five-blank
 point mass is selected. A menu that deletes blanks is not implied.
+
+Family M: the 81 colorings of one unit square by `{0, 1, blank}`, and the
+integer assignments that transform by the boundary sign of a
+corner-preserving proper isometry.
+
+Target contract: decide whether that covariance forces a unique nonzero
+circulation, or whether every covariant assignment has circulation 0 or a
+free sign. Name the free orbits if the module is larger. No edge flux, no
+deleted-blank menu, and no six-direction shell.
+
+Terminal status for cycle 13: proved under that character. There are 81
+colorings and 21 orbits. The covariant module is free of rank 3, with
+free orbits `001b`, `011b`, and `01bb`. Zero is covariant. The three
+coefficients are independent, so the circulation is not unique and not
+unique up to one sign. The other 57 colorings are forced to 0. No
+coefficient is selected. A menu that deletes blanks is not implied.

@@ -263,3 +263,32 @@ Classification: open after that matched-hit review. The executed route is
 all 729 shells and the soldered six-direction action. No bond factor and
 no deleted-blank menu is part of the route. The site and the rate stay
 unsupplied. The odd cap alphabet stays stopped.
+
+## Cycle 13 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is still audit metadata and was not merged.
+`git merge-tree --write-tree --name-only HEAD origin/main` exited 0 and
+listed no conflict paths.
+
+Commands and what they returned:
+
+- `git grep` for `plaquette circulation` on `origin/main` under `docs` and
+  `scripts`. The hits are the ring-model circulation matrix, its kernel
+  dimension, and a vector-magnetic null probe. They do not color four
+  corners by `{0, 1, blank}`.
+- `git grep` for `four corner`, `81 color`, and `covariant circulation`.
+  The `3^4 = 81` hits are support tables, rotor adjacency, and other
+  carriers. None is this rank-3 module.
+- Reading note (2) in `docs/MINIMAL_AXIOMS_2026-06-29.md` still withholds
+  the formation site, probability, and rate. The open-gate list still
+  names source/action. Neither sentence is this census.
+- Cycle 12 on this branch closes the six-direction shell family. It does
+  not compute these 81 orbits.
+
+Classification: open after that matched-hit review. The executed route is
+the 81 colorings and the boundary-sign character. No edge flux and no
+deleted-blank menu is part of the route. The site and the rate stay
+unsupplied. The odd cap alphabet stays stopped. The shell family stays
+closed.

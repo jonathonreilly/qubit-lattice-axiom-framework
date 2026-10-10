@@ -7,15 +7,60 @@ Stop at `2026-10-10T12:02:06Z`. One worktree only:
 ## Formation sentence, still present
 
 `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`, in
-`docs/MINIMAL_AXIOMS_2026-06-29.md`, reading note (2), still says the
-distribution does not supply the formation site, probability, or rate.
-No note was opened that only repeats that sentence. No hazard law was
-invented. Cycle 12 does not close the source/action gate. It asks a
-different question: which of the 729 shells with entries in `{0, 1, blank}`
-have soldered output type `(1,)`, or a unique invariant probability on
-the six directions, with the site and the rate left out of the object.
+`docs/MINIMAL_AXIOMS_2026-06-29.md`, reading note (2), still says: "Read
+with Record, the distribution concerns which possibility a forming record
+locks, conditional on formation at that site; it does not supply the
+formation site, probability, or rate." The open-gate list still names
+"source/action and physical-observable identification." No note was opened
+that only repeats those sentences. No hazard law was invented. Cycle 13
+does not close the source/action gate. It asks a different question:
+whether proper-cubic covariance forces a unique nonzero circulation on
+the 81 colorings of one unit square by `{0, 1, blank}`, with the site and
+the rate left out of the object.
 
 ## Done this cycle
+
+Cycles 1–12 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
+`TOTAL: PASS=61 FAIL=0`, `TOTAL: PASS=44 FAIL=0`,
+`TOTAL: PASS=16 FAIL=0`, `TOTAL: PASS=30 FAIL=0`, `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=28 FAIL=0`, `TOTAL: PASS=13 FAIL=0`, `TOTAL: PASS=13 FAIL=0`,
+and `TOTAL: PASS=12 FAIL=0`. Do not repeat the CHSH specializations, the
+readout split, the four quadratic channels, the achiral-orbit path
+factor, the linear split of `1 + kappa F`, the quadratic coefficient box,
+the shifted cap factor, the fully recorded binary census, the one-blank
+census, or the 729-shell census.
+
+Cycle 13 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
+for a census of covariant circulations on the 81 colorings of one unit
+square. The hits that mention plaquette circulation are a ring-model
+matrix kernel, a vector-magnetic null probe, and fermion corner-record
+counts. None is this 81-coloring module. No merge with `origin/main` was
+made: `git merge-tree --write-tree --name-only HEAD origin/main` exited 0
+and listed no conflict paths. The one main-only commit is audit metadata.
+
+On one unit square with each corner in `{0, 1, blank}`:
+
+- exactly 8 proper isometries preserve the four corners; they are the
+  dihedral group, and the circulation character is the boundary sign
+- the 81 colorings form 21 orbits; enumeration and the Burnside average
+  agree, and the group sum is `168`
+- 57 colorings, in 18 orbits, are fixed by a reversing isometry, and
+  every covariant integer assignment vanishes on them
+- the alternating coloring `0101` is one of those zeros
+- the free orbits are `001b`, `011b`, and `01bb`, each of size 8
+- the covariant assignments are a free module of rank 3
+- zero is covariant, `-φ` is covariant whenever `φ` is, and the `01bb`
+  generator is not a sign flip of the `001b` generator
+
+No coefficient is a selected circulation. No edge flux was formed. This
+does not derive a source identification or a formation rate. The odd cap
+alphabet stays stopped. The six-direction shell family stays closed. A
+menu that deletes blank corners stays outside.
+
+Runner: `TOTAL: PASS=12 FAIL=0`.
+
+## Earlier cycle 12, unchanged
 
 Cycles 1–11 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
 `TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
@@ -229,23 +274,27 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 
 ## Landed this cycle
 
-Commits through cycle 11 are already on the branch. Cycle 12 is pushed
+Commits through cycle 12 are already on the branch. Cycle 13 is pushed
 onto the same branch for PR 9475. Do not merge it. Do not open a second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 ## Next exact action
 
-Do not repeat the 729-shell census, the shells `000000`, `111111`, and
-`bbbbbb`, or the uniform law on those shells. Do not adopt either
-five-blank point mass. Do not repeat the one-blank census, the blank
-point mass, the antipode point mass, the binary-shell census, or the
-unsoldered count `1024`. Do not repeat the CHSH squares, the readout
-split, the four-channel count, the achiral-orbit path factor, the linear
-kappa split, the quadratic box, or the shifted cap factor. The odd cap
-alphabet stays stopped. Do not delete blank directions and call the
-result a selected direction. Do not invent a hazard law. Do not identify
-a shell entry with a mass density. The site and the rate stay unsupplied.
+Do not repeat the 81-coloring circulation census, the rank-3 module, or
+the witnesses `001b`, `011b`, `01bb`, and `0101`. Do not adopt a
+coefficient. Do not form an edge flux. Do not repeat the 729-shell
+census, the shells `000000`, `111111`, and `bbbbbb`, or the uniform law
+on those shells. Do not adopt either five-blank point mass. Do not repeat
+the one-blank census, the blank point mass, the antipode point mass, the
+binary-shell census, or the unsoldered count `1024`. Do not repeat the
+CHSH squares, the readout split, the four-channel count, the
+achiral-orbit path factor, the linear kappa split, the quadratic box, or
+the shifted cap factor. The odd cap alphabet stays stopped. The
+six-direction shell family stays closed. Do not delete blank corners, or
+blank directions, and call the result a selected sign. Do not invent a
+hazard law. Do not identify a count with a mass density. The site and the
+rate stay unsupplied.
 
 ## Cleanup
 

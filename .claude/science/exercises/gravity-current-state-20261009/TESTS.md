@@ -773,3 +773,62 @@ R0 found these. The supervisor's "option 3 untested" was wrong.
 - (iv) is INCONCLUSIVE, as expected.
 
 **Decisive next test.** Couple a lattice matter field to the exact-constraint VS/N-type theory through lapse and shift. Can its stress satisfy the Gauss identities exactly, the K3a/Lemma R question, without regenerating μ_E and μ_T2?
+
+## Lane RN: matter coupled to the exact-constraint VS (N-type) theory through lapse and shift (owner, 2026-10-10)
+
+**Owner request:** "run the lapse/shift matter coupling test". This is lane R's decisive next test. It is a test setting only, and nothing here is recorded in the axiom memo.
+
+**Prior art (read first; this lane must go beyond it):**
+- **K3a and its referees** (`candidates/candidate-law-20261008/TEST_LOG.md:236-262`, `checks/referee_K3a*/`):
+  - Free 3D Maxwell has an EXACT stress of radius ½ (207 coefficients).
+  - In staggered QED at O(e), genuine lattice-scale umklapp resonances obstruct every conserved momentum in the tested bounded class: one-body, electron range ≤ 4, scalar photon weight.
+  - The referee left open larger, quasi-local, polarization-matrix, higher-body and engineered stresses.
+- **K3a2:** an O(e²) TT contact term of about 1e-2·e² per cell on the fixed grid.
+- **The landed 09-14 note:** H_N gives linear TT modes and a 1/r response to a supplied source.
+- **Lane R referees:** `agents/R1_referee.md`, `agents/R2_referee.md`.
+
+**Setting.**
+- **Gravity:** the linearized exact-constraint weak VS theory on Z³ (H_N of the 09-14 note), with canonical (h_ij, π_ij).
+- **Coupling:** H = H_N + H_m + N·(C_s − T₀₀) + N_i·(C_i − T₀ᵢ) + ½h_ij·T_ij, with lattice difference operators. Here N and N_i are the lapse and shift multipliers.
+- **Matter:** local lattice laws with a finite local Hilbert space or a bosonic stand-in, free and interacting.
+- **Consistency requirement:** the constraints stay first class. This requires the lattice identities ∂_t T₀₀ + ∇·J = 0 and ∂_t T₀ᵢ + ∇_j T_ij = 0 to hold exactly, using the same T_ij that couples to h.
+
+**Probes** (Claude Opus 5.5 at xhigh, in parallel, same family):
+- **L1, free matter.**
+  - For each of a free lattice scalar, a staggered fermion and Maxwell: find the exact local stress (pseudo-momentum) and verify that the constraints are first class.
+  - Show that the TT modes are gapless with no tuning.
+  - Universality: two species with different masses get the same G.
+  - Newtonian 1/r.
+  - PPN γ from massless matter, i.e. light bending.
+- **L2, interacting matter.** Onsite φ⁴, two-species contact, and Hubbard-type staggered interactions.
+  - Do an exact linear-algebra search for a stress satisfying the identities. Extend the class beyond K3a: longer range, higher-body, matrix-valued, quasi-local with fitted decay.
+  - If there is none, compute what the violation does in the exact-constraint theory: constraints turn second class, giving an extra mode or a TT mass. Compute the induced μ_E and μ_T2 at the first nonvanishing order and compare with natural size.
+- **L3, escapes and literature.**
+  - Lapse-only coupling (no shift): γ, light bending, Shapiro delay.
+  - Matter as defects of the tensor field: vector charges are momentum by construction. Are they mobile, or lineons?
+  - Transverse-diffeomorphism and unimodular variants, and the Hořava projectable case.
+  - Literature: lattice energy-momentum tensors (Caracciolo et al., Suzuki), and Gu–Wen's matter coupling.
+
+**Fixed readings.**
+- **F-PASS / F-FAIL (free matter).** F-PASS: every free law tested has an exact local stress, the constraints stay first class, the TT modes stay gapless untuned, the coupling is universal, the pull is Newtonian 1/r, and γ = 1 at leading order. F-FAIL otherwise, with the failing item named.
+- **PASS.** Some interacting local matter law (stated: Hilbert space, range, interaction) has a local or exponentially quasi-local stress that obeys the identities exactly to the order computed, and with it:
+  - the constraints stay first class;
+  - μ_E = μ_T2 = 0 with no tuning;
+  - G is the same for at least 2 species;
+  - γ = 1 at leading order.
+- **FAIL.** For the interacting classes tested (ranges, body orders and laws stated), no such stress exists, and at least one of the following holds:
+  - the violation makes the constraints second class, with an induced TT mass or extra mode of natural size × (coupling)², untuned;
+  - the escapes tested in L3 fail an observational bar (γ, Shapiro delay, or mobility).
+
+  Bounded to the classes examined.
+- **INCONCLUSIVE.** Otherwise.
+
+**Supervisor expectation (registered before any probe returns).**
+- **L1:** F-PASS. Free lattice fields have exact local pseudo-momentum, and the K3a Maxwell result shows this.
+- **L2:** no finite-range or quasi-local stress for generic interactions. The cause is umklapp: lattice interactions have trigonometric-polynomial kernels with momentum transfer across the zone. The constraints turn second class, and μ comes out of order λ² × natural. That is a bounded FAIL, whose price is a non-local (momentum-space cutoff) interaction.
+- **L3:**
+  - Lapse-only coupling gives γ ≠ 1, failing Cassini (|γ − 1| < 2.3e-5).
+  - Defect matter is restricted in mobility.
+- **Expected lane reading:** FAIL (bounded), with the price "non-local interactions or an exact lattice momentum not in the axioms".
+
+**Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the runs.

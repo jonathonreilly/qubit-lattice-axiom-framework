@@ -118,3 +118,12 @@
 - The single-signature classification is the cycle-11 note. It is not
   re-proved here.
 - No formation site, probability, or rate is imported.
+
+## Cycle 14
+
+- The ansatz is the complement line on the signatures `(-3, -3)`,
+  `(-3, 3)`, and `(3, -3)`. A mixture with the signature kernels is
+  not in this count.
+- The support of the eighteen is the cycle-11 note. It is not
+  re-proved here. The parent converse is not applied.
+- No formation site, probability, or rate is imported.

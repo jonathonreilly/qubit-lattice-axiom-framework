@@ -30,4 +30,5 @@ not forced by that square test. Cycle 13 shows the joint slice kernel
 on every pair is the direct sum, and the equal-height block is zero
 beside one opposite or equal-height partner. The triple of
 `(-3, -3)` with both modulus-3 opposite signatures has joint kernel
-10.
+10. Cycle 14 shows the complement of those three signature kernels
+is one line with moment `2` and uniform average `1/12`.

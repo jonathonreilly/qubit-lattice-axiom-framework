@@ -536,3 +536,57 @@ Conformance, section by section:
     `PASS=16 FAIL=0`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note. The
     full audit pipeline was not run.
+
+## 2026-10-10 author check, cycle 14
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`, and the cycle-11
+   single-signature note on this branch. The complement line and the
+   moment are computed in this runner. The support of the eighteen is
+   cited, not rebuilt. The parent converse is not applied.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/modulus_three_triple_complement_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `b7b8531e204ae5da6e7f4acfc0ab2339713b7bb010af7c4706966520bec5d45e`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=13 FAIL=0`.
+   Elapsed 0.38 seconds.
+3. Scope. The joint slice kernel on `(-3, -3)`, `(-3, 3)`, and
+   `(3, -3)` has dimension 10. The complement of the three signature
+   kernels is one line, with values `-1`, `+1`, and `+1`. Every record
+   has two live directions. The moment is `2` and the uniform average
+   is `1/12`. Status line `proposed_retained`. Surface status
+   `bounded-support`. A mixture with the signature kernels stays open.
+   The 84-dimensional bond space is not classified.
+4. N-gate does not apply. The artifact classifies one named ansatz. It
+   does not claim that no mixture with the signature kernels is
+   order-blind.
+5. Obligations are in the note. The missing lemma is a mixture of the
+   line with the three signature kernels.
+6. Mutations, each on a scratch copy, exited 1. Dropping reversal from
+   the signature failed the count of 21, the joint dimension, and the
+   complement line, then raised `IndexError` before `TOTAL`. Requiring
+   the witness moment to be `0` gave `PASS=12 FAIL=1` on the moment.
+   Requiring joint dimension 9 gave `PASS=12 FAIL=1` on the dimension.
+   An independent closure under quarter-turns about `z` and about `x`
+   gave 24 rotations and orbit 24, with `(2, 1, 3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Three markdown links. Two point at tracked notes on origin/main.
+   The third points at the cycle-11 single-signature note. Manifest
+   node_count 6883 and edge_count 15449. The new node has out_degree 3
+   and deps_hash `5859f1e27606`. Dependencies are `minimal_axioms`, the
+   2026-09-22 note, and
+   `single_height_signature_order_blind_kernel_bounded_theorem_note_2026-10-10`.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the single-signature support of the eighteen and states that
+   the parent converse is not applied and that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: joint kernel 10, one complement
+    line, moment `2`, average `1/12`, `PASS=13 FAIL=0`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note. The
+    full audit pipeline was not run.

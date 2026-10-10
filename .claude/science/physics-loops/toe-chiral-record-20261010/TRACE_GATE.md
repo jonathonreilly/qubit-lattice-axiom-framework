@@ -205,3 +205,18 @@ next_trace_action: "Ask whether the extra slice direction on the signatures (-3,
 The direct-sum count prunes an equal-height signature beside one
 opposite or equal-height partner. The triple `(-3, -3)`, `(-3, 3)`,
 `(3, -3)` has joint slice kernel 10 and stays outside this ansatz.
+
+## Cycle 14
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Ask whether a mixture of the modulus-3 complement line with the three signature kernels can cancel the moment and leave the eighteen. Do not restate the pure-line cut."
+```
+
+The moment `2` prunes the complement line. A mixture of that line
+with the three signature kernels stays outside this ansatz.

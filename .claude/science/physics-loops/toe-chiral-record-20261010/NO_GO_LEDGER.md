@@ -64,3 +64,8 @@ is the direct sum, and the equal-height quadrics vanish only at the
 origin. It does not say that the extra direction in the triple
 `(-3, -3)`, `(-3, 3)`, `(3, -3)` is zero. That joint kernel has
 dimension 10.
+
+Cycle 14 prunes the reading that the complement line on that triple
+is order-blind. The moment on `±e_x` at `(-3, -2, -1)` is `2`, with
+uniform average `1/12`. It does not say that a mixture of the line
+with the three signature kernels has the same moment.

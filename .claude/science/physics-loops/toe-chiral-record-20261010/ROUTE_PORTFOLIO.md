@@ -41,3 +41,6 @@ not take an equal-height signature beside an opposite signature.
 Cycle 13 takes one equal-height signature plus one opposite or
 equal-height partner. It does not take the extra slice direction in
 the triple `(-3, -3)`, `(-3, 3)`, `(3, -3)`.
+
+Cycle 14 takes that complement line alone. It does not take a mixture
+of the line with the three signature kernels.

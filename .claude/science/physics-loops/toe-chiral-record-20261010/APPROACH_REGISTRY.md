@@ -109,3 +109,11 @@ quadrics, and the same-modulus and different-modulus normal forms.
 
 Family not used: the extra slice direction on `(-3, -3)`, `(-3, 3)`,
 and `(3, -3)`, where the joint kernel has dimension 10.
+
+Cycle 14 target contract: whether the complement line on those three
+signatures is order-blind outside the eighteen.
+
+Family used: the quotient by the three signature kernels, the witness
+bonds, and the moment on `±e_x` at `(-3, -2, -1)`.
+
+Family not used: a mixture of the line with those signature kernels.

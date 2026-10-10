@@ -123,15 +123,23 @@ only the origin as a common zero; the eliminant resultant is
 joint slice kernel 10, the maximum among 1330 triples. Runner
 `PASS=16 FAIL=0`. That extra direction is not classified.
 
+Cycle 14. On the signatures `(-3, -3)`, `(-3, 3)`, and `(3, -3)`, the
+joint slice kernel has dimension 10. The complement of the three
+signature kernels is one line, with values `-1`, `+1`, and `+1` on
+one bond orbit of each. Every record has two live directions. The
+moment on `±e_x` at `(-3, -2, -1)` is `2`, and the uniform average is
+`1/12`. The line is outside the eighteen and is not order-blind.
+Runner `PASS=13 FAIL=0`. A mixture with the signature kernels is not
+classified.
+
 ## Next exact action
 
-Ask whether the extra slice direction on the signatures `(-3, -3)`,
-`(-3, 3)`, and `(3, -3)` is order-blind outside the eighteen. The
-joint kernel there has dimension 10. Search first. A negative answer
-must name the ansatz. Do not restate the one-partner cut or the
-48-point dimension. Do not invent a formation rate. Do not return to
-shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
-alphabets.
+Ask whether a mixture of this complement line with the three signature
+kernels can cancel the moment and leave the eighteen. Search first.
+A negative answer must name the ansatz. Do not restate the pure-line
+cut or the 48-point dimension. Do not invent a formation rate. Do not
+return to shells, plaquette corner weights, or the `(0,1,2)` and
+`(1,1,2)` alphabets.
 
 ## Cleanup
 

@@ -246,3 +246,23 @@ zero, and the kernel is that opposite signature. Two equal-height
 signatures have only the zero kernel with vanishing pair moments.
 The extra slice direction on `(-3, -3)`, `(-3, 3)`, and `(3, -3)`
 stays open. That joint kernel has dimension 10.
+
+# Claim status certificate — cycle 14
+
+claim_id: modulus_three_triple_complement_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: one proper orbit of (1, 2, 3); the complement line on signatures (-3, -3), (-3, 3), and (3, -3); uniform average
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: the support of the eighteen is the single-signature note. The parent converse is not applied. No formation rate is used.
+
+The complement of the three signature kernels is one line. Its moment
+on the opposite x-directions at `(-3, -2, -1)` is `2`, with uniform
+average `1/12`. The line is outside the eighteen and is not
+order-blind. A mixture with the signature kernels stays open.

@@ -1,6 +1,6 @@
 # Opportunity queue
 
-Ranked after cycle 14. Refresh `origin/main` before each search.
+Ranked after cycle 15. Refresh `origin/main` before each search.
 Searched commit:
 `d9b869b97944676aaa759915462c529dc276a04c`.
 
@@ -106,11 +106,19 @@ Searched commit:
     not a flux. Do not repeat the witness. Other integer weight vectors on
     these four corners are item 16, not a second pass through this sum.
     Do not invent a hazard law. The site and the rate stay unsupplied.
-16. **Which integer corner weights are covariant.** Not opened. Same
-    alphabet, same character, blank counted as `0`. Do not enlarge the
-    alphabet. Do not adopt a nonzero result as a flux. Do not identify a
-    coefficient with a mass density. A menu that deletes blank corners
-    stays outside and is not queued.
+16. **Which integer corner weights are covariant.** Done on this branch
+    for weights in `Z^4`, with blank counted as `0`. The relation lattice
+    is the even-sum sublattice of index `2` and determinant `-2`. The only
+    solution is `0`. A basis is empty. The zero weight is not a flux. Do
+    not repeat the elimination. A separate integer weight for blank, with
+    color `0` still contributing `0`, is item 17. Do not invent a hazard
+    law. The site and the rate stay unsupplied.
+17. **Which pairs `(u, v)` weigh color `1` and blank separately.** Not
+    opened. Same alphabet, same character, color `0` contributing `0`.
+    Give a basis over `Z`, or prove the only solution is `0`. Do not
+    enlarge the alphabet. Do not adopt a nonzero result as a flux. Do not
+    identify a coefficient with a mass density. A menu that deletes blank
+    corners stays outside and is not queued.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

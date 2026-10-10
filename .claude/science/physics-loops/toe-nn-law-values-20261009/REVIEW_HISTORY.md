@@ -1,5 +1,48 @@
 # Review history
 
+2026-10-10 cycle 15 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is which integer vectors
+  `(w0, w1, w2, w3)` make the weighted corner sum, with blank counted as
+  `0`, covariant for the character already defined. Source: cycle-14 N7
+  and `OPPORTUNITY_QUEUE.md` item 16 before this cycle. The formation
+  sentence was not given a note of its own.
+- V2. Not on `origin/main`. Commands were `git grep` for `integer weight
+  vector`, `weighted corner`, and `corner weight`, and for `blank counted
+  as 0` and `even coordinate sum`, under `docs/*.md` and `scripts/*.py`.
+  The corner-weight hits are physical cell cutting, a fermion
+  Brillouin-zone corner, and a `C3` triplet. The even-sum hits are
+  staggered-mass translations. None is this four-corner kernel.
+  `git merge-tree --write-tree --name-only HEAD origin/main` exited 0
+  with no conflict paths. The audit-metadata commit on `origin/main` was
+  not merged.
+- V3. Theorems 1 and 2 of the cycle-15 note, checked by the paired
+  runner. The only solution is `0`. A basis is empty. The zero weight is
+  not a flux. A separate blank weight, the site, and the rate remain
+  open.
+- V4. Before, every weight other than the alternating pattern was
+  unclassified. After, the relation lattice is the even-sum sublattice
+  of index `2`, and its integer orthogonal is `{0}`.
+- V5. Not a corollary of the alternating-sum witness. That witness rejects
+  one vector. It does not generate the relation lattice or divide the
+  pivot `2`.
+
+No-go gate for the scoped kernel is in the cycle-15 source note. The only
+covariant corner weight is zero. A universal claim that no function of
+the four colors can be covariant is not made. Author mutations, each on
+a scratch copy that was deleted: demanding that the determinant be `1`
+prints `FAIL=1`; demanding that the constant weight meet the required
+value `-1` prints `FAIL=1`. Independent review has not been requested.
+No audit grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+classification inside this four-integer family and the character already
+defined, separates the kernel from the rank-3 orbit table, and does not
+write an audit verdict. Sections that belong to independent review were
+not run.
+
 2026-10-10 cycle 14 author pass. Value gate, searched `origin/main` at
 `d9b869b97944676aaa759915462c529dc276a04c`:
 

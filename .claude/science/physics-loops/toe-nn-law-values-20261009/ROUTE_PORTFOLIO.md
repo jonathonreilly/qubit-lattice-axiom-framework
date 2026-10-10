@@ -321,3 +321,33 @@ this one sum against the character already defined. No coefficient triple
 and no edge flux is part of the route. Other weight vectors stay queued.
 The site and the rate stay unsupplied. The odd cap alphabet stays stopped.
 The shell family stays closed.
+
+## Cycle 15 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is still audit metadata and was not merged.
+`git merge-tree --write-tree --name-only HEAD origin/main` exited 0 and
+listed no conflict paths.
+
+Commands and what they returned:
+
+- `git grep` for `integer weight vector`, `weighted corner`, and
+  `corner weight` on `origin/main` under `docs/*.md` and `scripts/*.py`.
+  The hits are physical cell cutting, a fermion Brillouin-zone corner,
+  and a `C3` triplet with weights `(1/3, 1/3, 1/3)`. None is this
+  four-corner integer kernel.
+- `git grep` for `blank counted as 0` and `even coordinate sum` under
+  those paths. The even-sum hits are staggered-mass translations and a
+  nearest-neighbor adjacency remark. None is the relation lattice of
+  these covariance rows. `blank counted as 0` is not on `origin/main`.
+- Reading note (2) in `docs/MINIMAL_AXIOMS_2026-06-29.md` still withholds
+  the formation site, probability, and rate. The open-gate list still
+  names source/action. Neither sentence is this classification.
+- Cycle 14 on this branch rejects one alternating weight. It does not
+  generate the relation lattice.
+
+Classification: open after that matched-hit review. The executed route is
+the integer kernel of the weighted corner sums. No flux and no separate
+blank weight is part of the route. The site and the rate stay unsupplied.
+The odd cap alphabet stays stopped. The shell family stays closed.

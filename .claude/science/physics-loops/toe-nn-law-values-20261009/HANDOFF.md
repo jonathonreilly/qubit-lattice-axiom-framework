@@ -12,13 +12,57 @@ with Record, the distribution concerns which possibility a forming record
 locks, conditional on formation at that site; it does not supply the
 formation site, probability, or rate." The open-gate list still names
 "source/action and physical-observable identification." No note was opened
-that only repeats those sentences. No hazard law was invented. Cycle 14
+that only repeats those sentences. No hazard law was invented. Cycle 15
 does not close the source/action gate. It asks a different question:
-whether the alternating sum of the four corner values, with blank counted
-as `0`, is covariant for the character defined in cycle 13. The site and
-the rate stay out of the object.
+which integer corner weights, with blank counted as `0`, are covariant
+for the character defined in cycle 13. The site and the rate stay out of
+the object.
 
 ## Done this cycle
+
+Cycles 1–14 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
+`TOTAL: PASS=61 FAIL=0`, `TOTAL: PASS=44 FAIL=0`,
+`TOTAL: PASS=16 FAIL=0`, `TOTAL: PASS=30 FAIL=0`, `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=28 FAIL=0`, `TOTAL: PASS=13 FAIL=0`, `TOTAL: PASS=13 FAIL=0`,
+`TOTAL: PASS=12 FAIL=0`, `TOTAL: PASS=12 FAIL=0`, and
+`TOTAL: PASS=8 FAIL=0`. Do not repeat the CHSH specializations, the
+readout split, the four quadratic channels, the achiral-orbit path
+factor, the linear split of `1 + kappa F`, the quadratic coefficient
+box, the shifted cap factor, the fully recorded binary census, the
+one-blank census, the 729-shell census, the rank-3 circulation census,
+or the alternating-sum witness.
+
+Cycle 15 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
+for a classification of integer weights `(w0, w1, w2, w3)` on the four
+corners, with blank counted as `0`. The corner-weight hits are physical
+cell cutting, a fermion Brillouin-zone corner, and a `C3` triplet. None
+evaluates this weighted sum against the boundary-sign character. The
+even-coordinate-sum hits are staggered-mass translations, not this
+relation lattice. No merge with `origin/main` was made: `git merge-tree
+--write-tree --name-only HEAD origin/main` exited 0 and listed no
+conflict paths. The one main-only commit is audit metadata.
+
+On the same unit square:
+
+- covariance of `sum_i w_i n(c_i)` is the 32 equations `w_{π(i)} = χ(π) w_i`
+- every equation row has even coordinate sum, so the relation lattice sits
+  in the index-2 even-sum sublattice
+- four named rows have determinant `-2` and generate that sublattice
+- exact division of the triangular pivot `2` returns the quotient `0`
+- the only integer solution is `(0,0,0,0)`, and a basis is empty
+- the constant weight `(1,1,1,1)` sends the count on `1000` from `1` to
+  `1` under the other diagonal half turn, whose character is `-1`
+
+The zero weight is not a flux. No corner entry is a mass density. This
+does not derive a source identification or a formation rate. A separate
+integer weight for blank stays unclassified. The odd cap alphabet stays
+stopped. The six-direction shell family stays closed. A menu that deletes
+blank corners stays outside.
+
+Runner: `TOTAL: PASS=6 FAIL=0`.
+
+## Earlier cycle 14, unchanged
 
 Cycles 1–13 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
 `TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
@@ -321,28 +365,30 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 
 ## Landed this cycle
 
-Commits through cycle 13 are already on the branch. Cycle 14 is pushed
+Commits through cycle 14 are already on the branch. Cycle 15 is pushed
 onto the same branch for PR 9475. Do not merge it. Do not open a second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 ## Next exact action
 
-Do not repeat the alternating-sum witness, the value `-2` on `0101`, the
-half-turn `(x, y, z) ↦ (y, x, -z)`, the quarter turn of `1000`, or the
-`192` failing pairs. Do not assign coefficients on `001b`, `011b`, and
-`01bb`. Do not adopt the sum as a flux. Do not repeat the rank-3 census
-or the witnesses as a module basis. The next exact question is which
-integer weight vectors on these four corners, with blank counted as `0`,
-are covariant for the same character. Do not enlarge the alphabet. Do not
-repeat the 729-shell census, the one-blank census, the binary-shell
-census, the unsoldered count `1024`, the CHSH squares, the readout split,
-the four-channel count, the achiral-orbit path factor, the linear kappa
-split, the quadratic box, or the shifted cap factor. The odd cap alphabet
-stays stopped. The six-direction shell family stays closed. Do not delete
-blank corners, or blank directions, and call the result a selected sign.
-Do not invent a hazard law. Do not identify a count with a mass density.
-The site and the rate stay unsupplied.
+Do not repeat the even-sum relation lattice, the determinant `-2`, the
+four named rows, the quotient `0`, or the constant weight on `1000`. Do
+not adopt the zero weight as a flux. Do not repeat the alternating-sum
+witness, the value `-2` on `0101`, the half-turn
+`(x, y, z) ↦ (y, x, -z)`, or the rank-3 census. The next exact question
+is which pairs of integer vectors `(u, v)` make the sum of `u` at color
+`1` and `v` at blank covariant for the same character, with color `0`
+contributing `0`. Give a basis over `Z`, or prove the only solution is
+`0`. Do not enlarge the alphabet. Do not adopt a surviving weight as a
+flux. Do not repeat the 729-shell census, the one-blank census, the
+binary-shell census, the unsoldered count `1024`, the CHSH squares, the
+readout split, the four-channel count, the achiral-orbit path factor,
+the linear kappa split, the quadratic box, or the shifted cap factor.
+The odd cap alphabet stays stopped. The six-direction shell family stays
+closed. Do not delete blank corners, or blank directions, and call the
+result a selected sign. Do not invent a hazard law. Do not identify a
+count with a mass density. The site and the rate stay unsupplied.
 
 ## Cleanup
 

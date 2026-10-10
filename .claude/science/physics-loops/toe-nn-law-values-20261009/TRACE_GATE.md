@@ -5,8 +5,14 @@ target_blocker_text: "source/action and physical-observable identification"
 source_of_blocker_text: frontier_question
 reachability_to_target: prunes
 artifact_role: theorem
-next_trace_action: "The alternating sum of the four corner values, with blank counted as 0, is not covariant for the boundary-sign character. No coefficients are assigned. The sum is not a flux. The site and the rate stay unsupplied."
+next_trace_action: "The only integer corner weight covariant for the boundary-sign character, with blank counted as 0, is zero. The zero weight is not a flux. The site and the rate stay unsupplied."
 ```
+
+Cycle 15 prunes the reading that some nonzero integer corner weight, with
+blank counted as `0`, is a covariant circulation. The relation lattice is
+the even-sum sublattice of index `2`. Exact division returns only the
+zero weight. That weight is not adopted as a flux. The quoted blocker
+below is not closed.
 
 Cycle 14 prunes the reading that this alternating corner sum is a
 covariant circulation. The half-turn `(x, y, z) ↦ (y, x, -z)` fixes

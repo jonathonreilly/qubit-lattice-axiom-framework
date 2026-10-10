@@ -183,3 +183,17 @@ vector, or a menu that deletes blank corners before the sum. No
 coefficient was selected. No hazard law was introduced. The source/action
 open gate stays open. The odd cap alphabet is not reopened. The shell
 censuses and the rank-3 orbit table are not rerun.
+
+Cycle 15 does not claim that every integer function of the four colors
+fails the character, and it does not claim that the zero weight is the
+physical circulation. The scoped statement is narrower: for
+`w` in `Z^4`, the sum `sum_i w_i n(c_i)` with blank contributing `0` is
+covariant exactly at `w = 0`. The relation lattice is the even-sum
+sublattice, of index `2` and determinant `-2`. A basis of the solution
+module is empty. The zero weight is not a flux.
+
+N7's steelman is accepted as an out-of-domain escape: give blank an
+integer other than `0`, or delete blank corners before the sum. No
+coefficient was selected. No hazard law was introduced. The source/action
+open gate stays open. The odd cap alphabet is not reopened. The shell
+censuses and the rank-3 orbit table are not rerun.

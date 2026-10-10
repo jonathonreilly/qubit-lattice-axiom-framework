@@ -1,3 +1,29 @@
+# Claim status certificate — cycle 15
+
+- Intended audit claim type: `bounded_theorem`
+- Author surface: bounded-support, conditional on colorings of one unit
+  square by `{0, 1, blank}`, on the boundary-sign character already
+  defined, and on the numeric map that sends blank to `0` inside the
+  weighted sum
+- Current ledger status of this new note: none yet; do not invent one
+- Audit remains required. This file is not a verdict.
+- Open imports: the four-corner alphabet, the boundary-sign character, the
+  blank-to-zero map inside this family, a separate integer weight for
+  blank, a menu that deletes blank corners, and the formation site and rate
+- Route pruned: a nonzero integer corner weight, with blank counted as
+  `0`, is covariant for that character
+- The relation lattice is the even-sum sublattice, of index `2` and
+  determinant `-2`. The only integer solution is `0`. A basis is empty.
+  The zero weight is not a flux
+- No-go packet in the source note is scoped to this four-integer family.
+  It does not classify a separate blank weight, and it does not select a
+  coefficient
+- The odd cap alphabet stays stopped. The six-direction shell family stays
+  closed. The rank-3 module is not a selected circulation
+- Runner: `TOTAL: PASS=6 FAIL=0` at the worktree copy, re-run by the author
+  through `runner_cache.py`
+- Independent review has not been requested
+
 # Claim status certificate — cycle 14
 
 - Intended audit claim type: `bounded_theorem`

@@ -7,26 +7,54 @@ Stop at `2026-10-10T12:02:06Z`. One worktree only:
 ## Formation sentence, still present
 
 `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`, in
-`docs/MINIMAL_AXIOMS_2026-06-29.md`, reading note (2):
-
-> Read with Record, the distribution concerns which possibility a forming record locks, conditional on formation at that site; it does not supply the formation site, probability, or rate.
-
-That sentence is still the axiom text. No note was opened that only repeats
-it. No hazard law was invented. The same memo's open-gate list still places
-source/action outside the axioms. The 2026-07-04 revision still names the
-formation rule — which admissible possibility, at which site, with what
-weight, at what rate — as downstream supplier content. Cycle 9 does not
-close that gate.
+`docs/MINIMAL_AXIOMS_2026-06-29.md`, reading note (2), still says the
+distribution does not supply the formation site, probability, or rate.
+No note was opened that only repeats that sentence. No hazard law was
+invented. Cycle 10 does not close the source/action gate. It asks a
+different question: what one fully recorded binary shell can force about
+the locked possibility, with the site and the rate left out of the object.
 
 ## Done this cycle
 
-Cycles 1–8 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
+Cycles 1–9 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
 `TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
 `TOTAL: PASS=61 FAIL=0`, `TOTAL: PASS=44 FAIL=0`,
-`TOTAL: PASS=16 FAIL=0`, `TOTAL: PASS=30 FAIL=0`, and
-`TOTAL: PASS=31 FAIL=0`. Do not repeat the CHSH specializations, the
+`TOTAL: PASS=16 FAIL=0`, `TOTAL: PASS=30 FAIL=0`, `TOTAL: PASS=31 FAIL=0`,
+and `TOTAL: PASS=28 FAIL=0`. Do not repeat the CHSH specializations, the
 readout split, the four quadratic channels, the achiral-orbit path factor,
-the linear split of `1 + kappa F`, or the quadratic coefficient box.
+the linear split of `1 + kappa F`, the quadratic coefficient box, or the
+shifted cap factor.
+
+Cycle 10 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
+for a census of fully recorded `{0,1}` shells under the 24 proper cubic
+rotations, and for what those shells force about a locked possibility.
+The hits that quote the formation sentence are not that census. The Q8
+parity pair, the independent-broadcast bounds, and the antipodal fair-coin
+statement are different carriers. No merge with `origin/main` was made:
+`git merge-tree` reported no content conflict. The one main-only commit is
+audit metadata.
+
+On one fully recorded binary shell, with no blank slot:
+
+- the 64 shells form 10 orbits, sizes `1, 1, 3, 3, 6, 6, 8, 12, 12, 12`
+- enumeration and the Burnside average agree
+- under the soldered six-direction menu, the two constant shells force
+  the uniform law of mass `1/6`, support size 6
+- no shell has output type `(1,)`, and singleton output orbits occur only
+  in pairs, so no shell forces one direction
+- the shell `000001` admits both pole point masses and rejects an
+  equatorial point mass
+- under the unsoldered two-label menu there are `1024` covariant
+  deterministic laws, and `511` varying laws lock each label at each shell
+- the `+x` bit is not covariant
+
+The uniform law is not a selected possibility. Neither action is adopted.
+This does not derive a source identification or a formation rate. The odd
+cap alphabet stays stopped.
+
+Runner: `TOTAL: PASS=13 FAIL=0`.
+
+## Earlier cycle 9, unchanged
 
 Cycle 9 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
 for a shifted bond factor on the odd cap lines of `(0, 1, 2)`. There is no
@@ -122,23 +150,21 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 
 ## Landed this cycle
 
-Commits `9f7ab95597`, `caa947d12d`, `a242b4a1f2`, `2c87950822`,
-`9bd6713a1b`, `caff82f0cf`, `5eb33f7edf`, and `61e96f3399` are already on
-the branch. Cycle 9 is pushed onto the same branch for PR 9475. Do not
-merge it. Do not open a second PR.
+Commits through cycle 9 are already on the branch. Cycle 10 is pushed
+onto the same branch for PR 9475. Do not merge it. Do not open a second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 ## Next exact action
 
-Do not repeat the formation sentence, the CHSH squares, the readout split,
-the four-channel count, the achiral-orbit path factor, the linear kappa
-split, the quadratic box, or this shifted factor. The odd cap alphabet
-stops. Do not queue another pencil. The following block's supplier is the
-formation rule named in `docs/MINIMAL_AXIOMS_2026-06-29.md`: which
-admissible possibility, at which site, with what weight, and at what rate.
-A note that only quotes that sentence is not that block. Do not invent a
-hazard law. Do not identify a cap line with a mass density.
+Do not repeat the binary-shell census, the uniform law on a constant
+shell, or the unsoldered count `1024`. Do not repeat the CHSH squares,
+the readout split, the four-channel count, the achiral-orbit path factor,
+the linear kappa split, the quadratic box, or the shifted cap factor.
+The odd cap alphabet stays stopped. Do not adopt the uniform law. A blank
+neighbor is outside this census and is not queued as a pencil. Do not
+invent a hazard law. Do not identify a shell bit with a mass density.
+The site and the rate stay unsupplied.
 
 ## Cleanup
 

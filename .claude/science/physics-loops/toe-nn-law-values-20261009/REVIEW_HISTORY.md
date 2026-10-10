@@ -1,5 +1,43 @@
 # Review history
 
+2026-10-10 cycle 10 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is what one nearest-neighbor condition can
+  force about which possibility a forming record locks, with the site and
+  the rate left unsupplied. Source: the cycle-9 handoff, after the odd cap
+  alphabet stopped, and the formation rule named as downstream supplier
+  content. The formation sentence was not given a note of its own.
+- V2. Not on `origin/main`. Commands were `git grep` for `forming record
+  locks`, for binary-shell orbit phrases, and a reading of the Q8 parity
+  pair, the soldering-menu broadcast bounds, and the antipodal fair-coin
+  statement. None is this 10-orbit table. `git merge-tree` reported no
+  content conflict. The audit-metadata commit on `origin/main` was not
+  merged.
+- V3. Theorems 1–4 of the cycle-10 note, checked by the paired runner.
+  The two actions, blanks, the site, and the rate remain open.
+- V4. Before, a binary shell had no such census on this branch. After,
+  the constant shells force the uniform law of mass `1/6` under the
+  soldered action, no shell forces one direction, and the unsoldered
+  action leaves both labels available.
+- V5. Not a corollary of the Q8 models, of the independent-broadcast
+  bounds, or of the cap-factor cycles. The carrier is the shell, not a
+  bond factor and not the directed correlation.
+
+No-go gate for the scoped miss is in the cycle-10 source note. The uniform
+law is forced only as a distribution on the constant shells, and it is not
+adopted. A universal claim that no menu can constrain a possibility is not
+made. Author mutations, each on a scratch copy that was deleted: demanding
+that a point mass be invariant on the zero shell fails one check; demanding
+that the `+x` bit agree with its quarter-turn image fails one check.
+Independent review has not been requested. No audit grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+negative claim inside the two menus, separates the census from the earlier
+bond-factor cycles, and does not write an audit verdict. Sections that
+belong to independent review were not run.
+
 2026-10-09 cycle 1 author pass. Runner re-executed through `runner_cache.py`:
 `status ok`, exit 0, `TOTAL: PASS=31 FAIL=0`.
 

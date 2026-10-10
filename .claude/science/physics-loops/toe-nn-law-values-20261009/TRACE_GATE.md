@@ -5,8 +5,14 @@ target_blocker_text: "source/action and physical-observable identification"
 source_of_blocker_text: frontier_question
 reachability_to_target: prunes
 artifact_role: theorem
-next_trace_action: "One shifted cap factor has a unique nonzero normalisation value at t = 1/2. That value is the root of the supplied polynomial 1 - 2 t and is not a selected interaction. The odd cap alphabet stops. Do not queue another pencil. The following block's supplier is the formation rule. Formation site, probability, and rate stay unsupplied. Do not invent a hazard law."
+next_trace_action: "No fully recorded binary shell forces one locked possibility. The constant shells force only the uniform six-point law, and only under the soldered action. That law is not adopted. Blanks are outside the census. The site and the rate stay unsupplied. Do not invent a hazard law."
 ```
+
+Cycle 10 prunes the reading that a fully recorded binary six-neighbor
+shell forces one locked possibility. Under the soldered six-direction
+action the two constant shells force the uniform law of mass `1/6`.
+Under the unsoldered two-label action both labels survive at every shell.
+Neither action is adopted. The quoted blocker below is not closed.
 
 The quoted blocker is an open-gate bullet in
 `docs/MINIMAL_AXIOMS_2026-06-29.md`. Cycle 9 does not close it. It exhibits

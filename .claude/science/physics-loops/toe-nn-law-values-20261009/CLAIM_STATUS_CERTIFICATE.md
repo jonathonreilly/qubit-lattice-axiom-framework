@@ -1,3 +1,24 @@
+# Claim status certificate — cycle 10
+
+- Intended audit claim type: `bounded_theorem`
+- Author surface: bounded-support, conditional on fully recorded `{0,1}`
+  shells and on one of two supplied actions, the soldered six-direction
+  menu or the unsoldered two-label menu
+- Current ledger status of this new note: none yet; do not invent one
+- Audit remains required. This file is not a verdict.
+- Open imports: the binary alphabet, full recording of all six neighbors,
+  and the action on the output; blanks; formation site and rate
+- Route pruned: a fully recorded binary shell forces one locked possibility
+- The constant shells force the uniform law of mass `1/6` under the
+  soldered action. That law has support size 6 and is not adopted
+- No-go packet in the source note is scoped to these two menus. It does
+  not classify a blank neighbor, and it does not select either action
+- The odd cap alphabet stays stopped. The uniform law is not a selected
+  possibility
+- Runner: `TOTAL: PASS=13 FAIL=0` at the worktree copy, re-run by the author
+  through `runner_cache.py`
+- Independent review has not been requested
+
 # Claim status certificate — cycle 9
 
 - Intended audit claim type: `bounded_theorem`

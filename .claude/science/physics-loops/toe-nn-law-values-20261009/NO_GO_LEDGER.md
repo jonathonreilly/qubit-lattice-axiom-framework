@@ -111,3 +111,18 @@ odd cap alphabet stops. Another pencil is not queued. No hazard law was
 introduced. The source/action open gate stays open. The formation-rule
 supplier is the named supplier for a following block. The quadratic box
 is not rerun.
+
+Cycle 10 does not claim that every nearest-neighbor condition, on every
+menu, leaves the locked possibility free, and it does not claim that the
+uniform law is the physical rule. The scoped statement is narrower: on a
+fully recorded `{0,1}` shell, the soldered six-direction action gives a
+unique conditional law only for the two constant shells, and that law is
+uniform of mass `1/6`. No shell has output type `(1,)`. The unsoldered
+two-label action has `511` varying covariant laws for each label at each
+shell.
+
+N7's steelman is accepted as an out-of-domain escape: an antipodal menu
+moved by the stabilizer, or a blank neighbor. No unique possibility was
+selected. No hazard law was introduced. The source/action open gate stays
+open. The odd cap alphabet is not reopened. The shifted factor is not
+rerun.

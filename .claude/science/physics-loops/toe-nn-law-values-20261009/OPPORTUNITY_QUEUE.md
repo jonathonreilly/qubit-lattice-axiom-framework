@@ -1,6 +1,6 @@
 # Opportunity queue
 
-Ranked after cycle 9. Refresh `origin/main` before each search.
+Ranked after cycle 10. Refresh `origin/main` before each search.
 Searched commit:
 `d9b869b97944676aaa759915462c529dc276a04c`.
 
@@ -64,6 +64,14 @@ Searched commit:
     supplier is the formation rule (which possibility, at which site, with
     what weight, at what rate). Do not open a note that only repeats that
     sentence. Do not invent a hazard law.
+11. **Which possibility one fully recorded binary shell forces.** Done on
+    this branch for two supplied actions. The 64 shells form 10 orbits.
+    Soldered to the six directions, the constant shells force the uniform
+    law of mass `1/6` and no shell forces one direction. Unsoldered to
+    `{0,1}`, `511` varying covariant laws lock each label at each shell.
+    Do not repeat the census. Do not adopt the uniform law. A blank
+    neighbor is outside the census and is not queued. Do not invent a
+    hazard law. The site and the rate stay unsupplied.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

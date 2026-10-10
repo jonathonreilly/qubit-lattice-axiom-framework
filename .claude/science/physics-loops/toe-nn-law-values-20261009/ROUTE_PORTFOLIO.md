@@ -175,3 +175,33 @@ one shifted factor on the two odd cap lines. No path correlation is part
 of the route. The formation triple stays unsupplied. The odd cap alphabet
 stops. Another pencil is not queued. The following block's supplier is
 the formation rule.
+
+## Cycle 10 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is still audit metadata and was not merged.
+`git merge-tree` reported no `CONFLICT` and no `changed in both`.
+
+Commands and what they returned:
+
+- `git grep` for `forming record locks` on `origin/main` under `docs/*.md`.
+  The hits quote reading note (2) or, in the Cycle-913 selection note,
+  apply a stipulated fingerprint table. None is a census of binary shells.
+- `git grep` for `orbits on {0,1}`, `binary six-neighbor`, `six-bit orbits`,
+  `1024 covariant`, and `constant on orbits` under `docs/*.md` and
+  `scripts/*.py`. The six-bit hits are D4 capacity notes and receiver
+  tables. The constant-on-orbits hits are unrelated scripts. No path states
+  this 10-orbit table.
+- The Q8 conditional-law note of 2026-08-13 uses one parity bit of a
+  six-neighbor shell and two supplied output measures. It does not list
+  the stabilizer orbits.
+- The soldering-menu note of 2026-09-22 bounds an independent broadcast.
+  It is not this conditional lock.
+- The menus-and-Born note forces a fair coin for one antipodal pair of
+  recorded Bloch vectors. That carrier is not a binary shell.
+
+Classification: open after that matched-hit review. The executed route is
+the 64 binary shells and the two supplied output actions. No bond factor
+and no `3×3` correlation is part of the route. The site and the rate stay
+unsupplied. The odd cap alphabet stays stopped.

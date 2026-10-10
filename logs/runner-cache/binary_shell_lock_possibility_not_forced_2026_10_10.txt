@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/binary_shell_lock_possibility_not_forced_2026_10_10.py
+runner_sha256: 0e3ab951e692bcecc87fa63ddef142ae9106878bf8a6c65c12e4dd2bfd7d2c08
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.26
+status: ok
+----- stdout -----
+PASS the proper cubic group has 24 determinant-1 elements and is closed
+PASS enumeration and the Burnside average both give 10 shell orbits
+PASS the ten representatives have the stated shell orbits, stabilizers, and output orbits
+PASS orbit-stabilizer holds on every shell, and no shell has output type (1,)
+PASS complementing every shell bit preserves the output orbits
+PASS each constant shell forces the uniform law and rejects a point mass
+PASS one occupied pole admits both pole point masses and rejects an equatorial point mass
+PASS the three-negative shell has two triple orbits and no covariant point mass
+PASS the opposite-pole shell splits into a pair and an equator, with no singleton
+PASS each uniform-on-one-output-orbit law transports to one stabilizer-invariant law
+PASS a point mass on the constant shell is not well defined under the stabilizer
+PASS unsoldered orbit indicators realize both labels at every shell, and 511 varying laws do so
+PASS the unsoldered +x bit is not covariant: a quarter turn about z moves it
+per_element: checked all 64 binary shells, all 6 directions, and all 24 proper rotations
+per_site: the shell is one site's neighbor tuple; no second site and no site selector was enumerated
+per_mode: two output actions, the soldered six-direction menu and the unsoldered two-label menu
+per_block: one fully recorded binary shell; blanks, partial shells, and bond factors were not enumerated
+lattice_wide: checked and not executed — no infinite lattice, no formation site, and no formation rate
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

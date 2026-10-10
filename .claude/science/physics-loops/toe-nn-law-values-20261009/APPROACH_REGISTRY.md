@@ -111,3 +111,17 @@ unique real normalisation value is `t = 1/2`. There the factor is
 `1 + (3/4) Y`, and the bond values are strictly positive. The root is the
 root of the supplied polynomial `1 - 2 t`. Selecting `t` is not implied.
 The odd cap alphabet stops. Another pencil is not implied.
+
+Family J: fully recorded binary colorings of the six axis directions,
+with two supplied actions on the locked output.
+
+Target contract: the shell orbits; the stabilizer orbits on the six
+directions; whether any shell forces one locked possibility. No bond
+factor and no `3×3` correlation.
+
+Terminal status for cycle 10: proved under those two actions. There are
+10 shell orbits. The constant shells force the uniform law of mass `1/6`
+under the soldered action, and no shell forces one direction. Under the
+unsoldered action, `511` varying laws lock each label at each shell.
+Selecting either action, or the uniform law, is not implied. A blank
+neighbor is not implied.

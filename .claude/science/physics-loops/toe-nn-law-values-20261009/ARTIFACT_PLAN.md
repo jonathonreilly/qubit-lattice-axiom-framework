@@ -1,3 +1,12 @@
+# Artifact plan — cycle 10
+
+- Note: `docs/BINARY_SHELL_LOCK_POSSIBILITY_NOT_FORCED_BOUNDED_THEOREM_NOTE_2026-10-10.md`
+- Runner: `scripts/binary_shell_lock_possibility_not_forced_2026_10_10.py`
+- Cache: `logs/runner-cache/binary_shell_lock_possibility_not_forced_2026_10_10.txt`
+- Manifest: regenerate from a fresh citation graph, then delete the untracked
+  `citation_graph.json`
+- Same PR 9475. No second PR. No audit verdict. No edit to the home checkout.
+
 # Artifact plan — cycle 9
 
 - Note: `docs/ZERO_ONE_TWO_SHIFTED_CAP_FACTOR_UNIQUE_NONZERO_ROOT_BOUNDED_THEOREM_NOTE_2026-10-09.md`

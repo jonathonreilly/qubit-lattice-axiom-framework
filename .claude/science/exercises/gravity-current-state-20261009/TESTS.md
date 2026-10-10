@@ -646,3 +646,13 @@ But that mapping has not been derived.
 - **PASS:** by an exact or controlled argument checked numerically, the link mean reproduces GR's √Δ magnification to O(ℓ²/r²) for O(1) focusing.
 - **FAIL:** a controlled law shows a density-independent O(1) mismatch, e.g. Δ⁻¹ against Δ^{−1/2}, so link-only readout mis-lenses.
 - **INCONCLUSIVE:** otherwise.
+
+- **Exercise on the massive-matter wall (M_massive_matter): all 9 routes killed as written** (same family; `agents/C3_exercise_M_massive_matter.md`).
+  - **Dead:** positive smeared hops (a growing mode in the mean, e^(1.7e4) for Rb at 2.3 s), SJ/Wightman readout, and extinction scoring.
+  - **Wounded:**
+    - compositeness with soft binding. Single-event binding misses Rb at 2.3 s by 15–25×; it passes only with ≥ 15–81 soft re-emitters per nucleon;
+    - a coherent quantum substrate (the textbook kinematic lemma, but the substrate dynamics is open research).
+  - **Lemma L (proved, same family, unrefereed).** For hop weights that depend only on the two events, the variance is exactly a sum of positive ladders with rung ρb²·G_m². So the variance always grows exponentially, at rate κ_F.
+  - **Pre-registered test S0** (signed hop, first moment zero, smeared at ℓ_k): **FAIL.** The 25 kDa molecule bar has an empty ℓ_k window (the molecule treated as an elementary scalar).
+  - **Post hoc, not pre-registered, a lead only:** profiles whose first two moments vanish (Z2) clear every bar at ℓ_k of about 1e-28 to 1e-25 m.
+  - **Price (suggested):** a non-locality scale ℓ_k plus a signed hop profile with cancelling moments.

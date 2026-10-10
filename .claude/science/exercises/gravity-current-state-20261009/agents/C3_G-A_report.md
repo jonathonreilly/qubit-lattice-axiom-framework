@@ -1,6 +1,6 @@
 # C3 lane G-A: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee: FAIL, narrowly scoped to the fixed-coordinate coupling (picture I) and ensemble-RMS noise. The second-chaos bound and the Rosen causal order check out. The local BD action alone triggers FAIL, so the imported 1e-19 m bar is not needed** (C3_G-A_referee.md).
 
 **Verdict (worker):** FAIL (bounded; needs the codex sol referee before it is recorded). A controlled lower bound (Poisson second-chaos inequality) shows that the per-realization crackle dominates the quadratic action at LIGO amplitude, at Planck density, for every registered functional. Local BD: sd >= 2.1e120 hbar against an EH kinetic-term scale of 7.5e38 hbar per wavelength cell, ratio 2.8e81. Smeared BD at l_k = 1e-19 m: ratio >= 3e2 (cell) and >= 1.3e3 (coherent detector volume). Link count: sd >= 3.1e121 links. The response is non-analytic: a step function of h (EXACT). The mean conditions (no mass term, k^2 kinetic term) are not established; they are COMPARATOR/ARGUED only, and the FAIL branch does not need them. Smeared BD with l_k above ~3e-19 m is neither excluded nor shown to pass.
 

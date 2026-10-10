@@ -597,3 +597,5 @@ But that mapping has not been derived.
 - **INCONCLUSIVE:** otherwise.
 
 **Interferometric visibility depends on the covariance between the two arms. The worker must use that observable,** not the variance of a single amplitude.
+
+- **G-A referee (codex sol):** FAIL, narrowly scoped to the fixed-coordinate coupling (picture I) and ensemble-RMS noise. The second-chaos bound and the Rosen causal order check out. The local BD action alone triggers FAIL, so the imported 1e-19 m bar is not needed. See `agents/C3_G-A_referee.md`.

@@ -167,3 +167,34 @@ GR satisfies this in the continuum. Causal sets, CDT, spin foams and group field
 1. In a small relational model where only the pattern is physical (a 2D causal set or CDT with a BD-type action), does the quantum sum over patterns suppress the per-realization noise that a single frozen pattern has?
 2. Can a record-formation rule produce Lorentz-invariant-in-law event sets, or must the order be supplied (A36)?
 3. Does the pattern's linearized dynamics have a massless TT mode protected by an exact constraint?
+
+## Campaign C3: supervisor's expectations (written 2026-10-10 ~01:00Z, after launch, before any result)
+
+**G-A (the order as the graviton).**
+- **Mean:** expected exactly mass-free and exactly gauge-blind in law, because the Poisson law is invariant under volume-preserving maps and order functionals transform covariantly. For the BD action I expect linearized Einstein–Hilbert at O(k²) (comparator: BD 2010).
+- **Per realization:** I expect the crackle to dominate. Pairs crossing nullness flip with probability ∝ ε, so the variance is ∝ ε·N_near-null, against a mean signal ∝ ε²k²N. The noise wins below ε ~ (k²N)^(−1/3)-type thresholds, which are hopeless at h ~ 1e-21 for a single realization.
+- **Expected verdict:** FAIL, or INCONCLUSIVE if the crackle averages over the detector volume in a controlled way. The physically relevant question becomes whether gravity is a coarse-grained order statistic. That is G-C.
+
+**G-B (a tensor on links).**
+- I expect PASS. The non-TT admixture is set by counting noise: relative ~ √(F/N̄), ~1e-29.
+- The mean is exactly the linearized-GR retarded field, since G₀'s mean commutes with derivatives.
+- Scope: this is not protection.
+
+**G-C (protection).**
+- I expect INCONCLUSIVE.
+- "Diffeomorphisms act trivially on the abstract order" is true but empty: it does not define a per-realization graviton.
+- A quantum sum over orders is the only candidate mechanism, and its continuum limit is unsolved.
+
+**M-A (Johnston, packet plus detector).**
+- I expect M-INCONCLUSIVE, leaning FAIL for heavy particles.
+- Regeneration along the trip probably adds variance roughly linearly in proper time, at a rate set by the m²ℓ gain, giving decoherence lengths ~ (m²ℓ)⁻¹ in proper time.
+- That is ~10 km of proper time for a proton (boosted lab distances are longer), and ~3e10 m for an electron.
+- That would put M-PASS at 1 km within reach, if a controlled bound exists.
+
+**M-B (unitary matter on links).** I expect a FAIL-type no-go for a strictly Lorentz-invariant, frame-free unitary rule, because unbounded valency and varying antichain sizes leave no fixed Hilbert space. The escape is SJ-type constructions, which are not step-by-step.
+
+**M-C (mass without signed weights).** The proper-time (Schwinger) representation G_m = ∫dτ e^{−m²τ}·(heat kernel) is positive only in Euclidean signature. In Lorentzian signature the phases e^{−im²s} return. So I expect no positive-weight route for real-time massive propagation. A composite or bound-state route might work but would need an interaction.
+
+**K (keep the grid).** I expect FAIL: some non-gauge-invariant form ≥ 1e-4. K3a showed no conserved interacting stress in the tested class, so W(B4) alone cannot force the five forms to zero.
+
+**X1.** I expect FAIL: white in the direct spectra as well. **X2.** I expect FAIL: n ≤ 1.

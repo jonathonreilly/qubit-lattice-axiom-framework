@@ -623,3 +623,26 @@ But that mapping has not been derived.
   - **BD-tilted growth:** kill reading met in 74/75 settings.
   - **Next test (pre-registered by the worker, run).** The only known rule that reproduces 4D statistics (Lemma G: the sprinkling read in random birth order) is TELEOLOGICAL. Its early stages are less ordered than small diamonds (10–19 SE), so it needs the final size in advance.
   - **The price, stated (reading, not refereed):** either a supplied event set, or a whole-region formation law that knows its final size. Admissibility's nearest-neighbour locality is given up for formation.
+
+- **Exercise on the graviton wall (G_graviton_on_events): all 9 routes killed** (same family; `agents/C3_exercise_G_graviton.md`).
+  - **Route 1 (misframing).** G-A's FAIL ratio holds even with no wave present: it measures the sampling noise of the flat BD action (proved corollary, checked). The route is blocked-equivalent, because masslessness then needs a covariant growth law with Einstein histories (lane F's wall).
+  - **Route 2 (an unrecorded, coherent sum over orders).** Dead under the exact interval volume. The variance functional's TT response tends to I0(h)^{1/2}−1, does not depend on ω, and grows like L².
+  - **Route 3 (spin-ice / Cayley–Menger).** Blocked-equivalent to K3a/F6, with a per-realization Hessian and tadpole.
+  - **N1 (worker test, pre-registered, run).** The exact needle volume in the Rosen wave tends to ρ·I0(h). Both "kill collapses" and "kill as computed" are excluded; the corrected coefficient is about 2× smaller.
+  - **The price, stated (suggested, not refereed).** A massless, smooth graviton on events needs:
+    - a covariant growth law with Einstein histories (lane F);
+    - amplitudes not weighted by e^{iS} of interval-count actions;
+    - link-only readouts that reproduce Van Vleck focusing on curved backgrounds (open).
+
+### C3 lane G-L: link-only lensing (pre-registered 2026-10-10 02:46Z, before any run)
+
+**Why.** The graviton exercise's open check. A one-hop link-sum mean through a curved background scales near the cone as ν^{−1/2}·Δ⁻¹, against GR's Δ^{−1/2}, where Δ is the Van Vleck determinant. With O(1) lensing this could be an O(1) mismatch.
+
+**Setting.** A Poisson sprinkling of a curved background: a thin lens, or a weak-field Schwarzschild or focusing plane-wave region. Massless link propagation G₀ = aL, on the true causal order of that metric.
+
+**Measure.** The mean link-sum amplitude (magnification) behind the lens, against GR's Van Vleck magnification √Δ, as ρ → ∞.
+
+**Readings (fixed now):**
+- **PASS:** by an exact or controlled argument checked numerically, the link mean reproduces GR's √Δ magnification to O(ℓ²/r²) for O(1) focusing.
+- **FAIL:** a controlled law shows a density-independent O(1) mismatch, e.g. Δ⁻¹ against Δ^{−1/2}, so link-only readout mis-lenses.
+- **INCONCLUSIVE:** otherwise.

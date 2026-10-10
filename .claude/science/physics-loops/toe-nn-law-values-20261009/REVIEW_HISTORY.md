@@ -1,5 +1,47 @@
 # Review history
 
+2026-10-10 cycle 12 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is which shells with each axis direction
+  in `{0, 1, blank}` have soldered output type `(1,)`, or a unique
+  invariant probability on the six directions. Source: the campaign block
+  after the one-blank census, which left two or more blanks outside and
+  forbade a two-blank-only sequel. The formation sentence was not given
+  a note of its own.
+- V2. The 57-orbit count of the 729 profiles is on `origin/main`. It
+  classifies support tables and a mirror count, not stabilizer output
+  orbits. Commands were `git grep` for `729`, `57 proper`, `output type`,
+  `unique invariant`, `bbbbbb`, and `singleton output` under `docs/*.md`.
+  No hit names these seven output types or the three constant shells as
+  the unique invariant laws. `git merge-tree` reported no content
+  conflict. The audit-metadata commit on `origin/main` was not merged.
+- V3. Theorems 1–3 of the cycle-12 note, checked by the paired runner.
+  A menu that deletes blanks, the site, and the rate remain open. The
+  uniform law is not adopted.
+- V4. Before, shells with two or more blanks had no output-orbit census
+  on this branch. After, no shell has type `(1,)`, and the only unique
+  invariant laws are the uniform law on `000000`, `111111`, and `bbbbbb`.
+- V5. Not a corollary of the one-blank census or of the binary census.
+  Those censuses exclude part of the alphabet. The support-table count
+  of 57 orbits does not name an invariant probability.
+
+No-go gate for the scoped miss is in the cycle-12 source note. The
+uniform law is forced only as a distribution on the three constant
+shells, and it is not adopted. A universal claim that no menu can
+constrain a direction is not made. Author mutations, each on a scratch
+copy that was deleted: demanding that a point mass be invariant on
+`bbbbbb` prints `FAIL=1`; demanding that the five-blank shells have
+output type `(1,)` prints `FAIL=1`. Independent review has not been
+requested. No audit grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+negative claim inside the soldered six-direction menu, separates the
+census from the support-table count and the earlier shell censuses, and
+does not write an audit verdict. Sections that belong to independent
+review were not run.
+
 2026-10-10 cycle 11 author pass. Value gate, searched `origin/main` at
 `d9b869b97944676aaa759915462c529dc276a04c`:
 

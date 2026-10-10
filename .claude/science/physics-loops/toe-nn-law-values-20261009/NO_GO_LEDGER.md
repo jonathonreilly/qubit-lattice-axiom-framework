@@ -140,3 +140,18 @@ N7's steelman is accepted as an out-of-domain escape: two or more blank
 directions. No point mass was selected. No hazard law was introduced. The
 source/action open gate stays open. The odd cap alphabet is not reopened.
 The binary census is not rerun.
+
+Cycle 12 does not claim that every menu on every alphabet leaves the
+locked direction free, and it does not claim that the uniform law is the
+physical rule. The scoped statement is narrower: on a shell with entries
+in `{0, 1, blank}`, the soldered six-direction action has output type
+`(1,)` for no shell. A unique invariant probability occurs exactly on
+`000000`, `111111`, and `bbbbbb`, and that law is uniform of mass `1/6`.
+The 664 shells with one through five blanks have no unique invariant law.
+On `bbbb0b` both pole point masses are invariant, and neither is selected.
+
+N7's steelman is accepted as an out-of-domain escape: a menu that deletes
+blank directions before the action. No direction was selected. No hazard
+law was introduced. The source/action open gate stays open. The odd cap
+alphabet is not reopened. The one-blank census and the binary census are
+not rerun.

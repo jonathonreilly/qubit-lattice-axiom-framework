@@ -5,8 +5,14 @@ target_blocker_text: "source/action and physical-observable identification"
 source_of_blocker_text: frontier_question
 reachability_to_target: prunes
 artifact_role: theorem
-next_trace_action: "No one-blank shell forces one locked direction under the soldered action. The blank and its antipode are both invariant point masses, and neither is adopted. Two or more blanks are outside the census. The site and the rate stay unsupplied. Do not invent a hazard law."
+next_trace_action: "No ternary shell has soldered output type (1,). The only unique invariant laws are the uniform law on 000000, 111111, and bbbbbb, and none is adopted. A menu that deletes blanks is outside the census. The site and the rate stay unsupplied. Do not invent a hazard law."
 ```
+
+Cycle 12 prunes the reading that some shell with entries in `{0, 1, blank}`
+forces one locked direction under the soldered six-direction action. No
+shell has output type `(1,)`. The unique invariant laws are the uniform
+law on `000000`, `111111`, and `bbbbbb`. None of those laws is adopted.
+The quoted blocker below is not closed.
 
 Cycle 11 prunes the reading that a shell with exactly one blank axis
 direction forces one locked direction under the soldered six-direction

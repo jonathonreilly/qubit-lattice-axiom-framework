@@ -235,3 +235,31 @@ the 192 one-blank shells and the soldered six-direction action. No bond
 factor and no unsoldered label is part of the route. The site and the rate
 stay unsupplied. The odd cap alphabet stays stopped. Two or more blanks
 stay outside.
+
+## Cycle 12 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is still audit metadata and was not merged.
+`git merge-tree` reported no `CONFLICT` and no `changed in both`.
+
+Commands and what they returned:
+
+- `git grep` for `729`, `3^6`, and `57 proper` on `origin/main` under
+  `docs/*.md`. The hits record that the 729 ternary profiles have 57
+  proper-cubic orbits, for support tables and for a mirror count of
+  achiral orbits. They do not name stabilizer output types.
+- `git grep` for `output type`, `unique invariant`, `bbbbbb`, and
+  `singleton output` under `docs/*.md`. No hit is this census.
+- The handed-rule note uses a soldered action on a different alphabet and
+  a supplied empty-background weight `1/6`. It is not the invariant law
+  of a constant shell.
+- Reading note (2) in `docs/MINIMAL_AXIOMS_2026-06-29.md` still withholds
+  the formation site, probability, and rate. It is not this census.
+- Cycles 10 and 11 on this branch leave part of the alphabet outside.
+  They do not compute these 729 output orbits.
+
+Classification: open after that matched-hit review. The executed route is
+all 729 shells and the soldered six-direction action. No bond factor and
+no deleted-blank menu is part of the route. The site and the rate stay
+unsupplied. The odd cap alphabet stays stopped.

@@ -1,6 +1,6 @@
 # Opportunity queue
 
-Ranked after cycle 10. Refresh `origin/main` before each search.
+Ranked after cycle 12. Refresh `origin/main` before each search.
 Searched commit:
 `d9b869b97944676aaa759915462c529dc276a04c`.
 
@@ -77,9 +77,18 @@ Searched commit:
     form 12 orbits. The blank and its antipode are both singleton output
     orbits. No shell forces one direction. Support size 1 occurs, and
     neither point mass is adopted. Do not repeat the census. Do not adopt
-    either point mass. Two or more blanks are outside this census and are
-    not queued. Do not invent a hazard law. The site and the rate stay
-    unsupplied.
+    either point mass. Two or more blanks are outside this census. They are
+    item 13, not a two-blank-only sequel. Do not invent a hazard law. The
+    site and the rate stay unsupplied.
+13. **Which of the 729 ternary shells forces one direction.** Done on this
+    branch for the soldered six-direction menu. No shell has output type
+    `(1,)`. The unique invariant laws are the uniform law of mass `1/6`
+    on `000000`, `111111`, and `bbbbbb`. The 664 shells with one through
+    five blanks have no unique invariant law. On `bbbb0b` both pole point
+    masses transport, and neither is adopted. Do not repeat the census.
+    Do not adopt the uniform law or either point mass. A menu that deletes
+    blank directions is outside this census and is not queued. Do not
+    invent a hazard law. The site and the rate stay unsupplied.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

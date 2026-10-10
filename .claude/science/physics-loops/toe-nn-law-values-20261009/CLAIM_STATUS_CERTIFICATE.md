@@ -1,3 +1,25 @@
+# Claim status certificate — cycle 12
+
+- Intended audit claim type: `bounded_theorem`
+- Author surface: bounded-support, conditional on shells with entries in
+  `{0, 1, blank}` and on the soldered six-direction menu
+- Current ledger status of this new note: none yet; do not invent one
+- Audit remains required. This file is not a verdict.
+- Open imports: the ternary alphabet, the soldered action, a menu that
+  deletes blank directions, and the formation site and rate
+- Route pruned: a ternary shell forces one locked direction under the
+  soldered six-direction action
+- No shell has output type `(1,)`. The unique invariant laws are the
+  uniform law of mass `1/6` on `000000`, `111111`, and `bbbbbb`. That
+  law has support size 6 and is not adopted
+- No-go packet in the source note is scoped to this census. It does not
+  classify a deleted-blank menu, and it does not select a point mass
+- The odd cap alphabet stays stopped. The uniform law is not a selected
+  possibility
+- Runner: `TOTAL: PASS=12 FAIL=0` at the worktree copy, re-run by the author
+  through `runner_cache.py`
+- Independent review has not been requested
+
 # Claim status certificate — cycle 11
 
 - Intended audit claim type: `bounded_theorem`

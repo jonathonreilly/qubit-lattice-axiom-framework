@@ -138,3 +138,16 @@ Terminal status for cycle 11: proved under that action. There are 12
 shell orbits. The blank and its antipode are singleton output orbits on
 every shell. No shell forces one direction. Support size 1 occurs, and
 neither point mass is selected. Two or more blanks are not implied.
+
+Family L: every coloring of the six axis directions by `{0, 1, blank}`,
+under the soldered six-direction action.
+
+Target contract: which shells have output type `(1,)`, and which have a
+unique invariant probability on the six directions. Name them if any
+exist. No bond factor, no deleted-blank menu, and no unsoldered label.
+
+Terminal status for cycle 12: proved under that action. There are 729
+shells. No shell has output type `(1,)`. The unique invariant laws are
+the uniform law of mass `1/6` on `000000`, `111111`, and `bbbbbb`. No
+shell forces one direction. Neither the uniform law nor either five-blank
+point mass is selected. A menu that deletes blanks is not implied.

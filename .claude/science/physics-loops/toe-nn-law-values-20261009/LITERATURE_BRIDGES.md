@@ -1,6 +1,7 @@
 # Literature bridges
 
-No literature search was required for the one-blank shell census, the
+No literature search was required for the ternary-shell census, the
+one-blank shell census, the
 binary-shell orbit census, the
 finite-group calculation, the directed square, the readout-weight split,
 the quadratic-channel count, the achiral-orbit factor, the kappa split,

@@ -662,3 +662,10 @@ But that mapping has not been derived.
 - **X1 referee (codex sol):** CONFIRMED WITH CORRECTIONS, bounded FAIL. Every ensemble-averaged nonzero-q TT stiffness spectrum (two kernels, scalar and fermion functionals) is flat with power S >= 2.07e-3, in finite periodic Poisson ensembles. Not an asymptotic no-go for random lattices. See `agents/C3_X1_referee.md`.
 
 - **X2 referee (codex sol):** CONFIRMED WITH CORRECTIONS, bounded FAIL. The FR3 gases have a metric-independent stationary law (G_T = 0) but white stress noise (n_S = 0). Activity stresses have contact responses, and frozen dilution has a positive static shear. Every preregistered model fails; not a theorem about all classical gases. See `agents/C3_X2_referee.md`.
+
+- **Lemma L referee (codex sol): CONFIRMED WITH CORRECTIONS.**
+  - **Established:** for a deterministic, strictly causal, square-integrable pair kernel on a Poisson process, the covariance of the path-resolvent amplitude is exactly a sum of nonnegative ladders with rung ρb²|G_m|². There are no Johnston-type emptiness overlaps or signed cross terms.
+  - **The exponential conclusion needs more:** translation and Lorentz invariance, a nonzero light-cone normalization and nonzero ends.
+  - **It does not validate the M-A packet prefactor used in S0.** See `agents/C3_LemmaL_referee.md`.
+- **Price note v4 referee (codex sol): APPROVE WITH CORRECTIONS** (8 scope and bookkeeping corrections; the numerical audit is clean). See `agents/C3_P_referee.md`.
+- **G-L (link-only lensing):** the worker says FAIL; the adversarial check supports it with corrections. Link/GR = (νΔ)^{−1/2} is a density-independent O(1) mismatch: the link mean de-magnifies where GR magnifies. The codex referee is running.

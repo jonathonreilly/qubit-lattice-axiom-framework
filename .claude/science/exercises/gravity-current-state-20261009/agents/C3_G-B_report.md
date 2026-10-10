@@ -1,6 +1,6 @@
 # C3 lane G-B: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee: INCONCLUSIVE. The admixture conjunct is controlled: A_rms = 7.27e-28 at 1 Gpc, far below 1e-3, as an asymptotic ceiling. The PASS clause 'mean exactly the linearized-GR retarded solution' fails only at finite density (the mean is K_rho*T, which equals G_R*T only as density goes to infinity). FAIL is inapplicable** (C3_G-B_referee.md).
 
 **Verdict (worker):** PASS within the registered scope: a linearized, source-driven tensor carried on links. Two judgment items are flagged for the referee. (1) The clause "the mean is exactly the linearized-GR retarded solution" is met only in this sense: the mean's de Donder (harmonic-gauge) structure is exact, and the scalar kernel differs from the retarded Green function by the O(l^2/r^2) corrections already accepted in E1'. (2) My PREREG named "F_P grows with s/l at fixed s/D" as an example of lost control. F_P does grow up to s/l of about 24, then stays flat to s/l = 48, everywhere below 2.22 and inside the proved bound.
 

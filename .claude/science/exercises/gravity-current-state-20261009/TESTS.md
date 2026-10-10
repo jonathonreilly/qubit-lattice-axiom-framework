@@ -573,3 +573,27 @@ Each exercise uses the compressed form: 3 lenses, a kill round, and a next test 
 - **F referee (codex sol):** CONFIRMED WITH CORRECTIONS. This is a bounded FAIL, not a universal no-go. Three classes cannot reproduce 4D sprinkling: exchangeable generating-subset growth (link means), frontier-only growth (L <= N-1), and every classical DGC+Bell dynamics including VR towers (asymptotically, since 2+2 and 3+1 densities vanish). A surviving rule must use the order non-exchangeably, or leave the Markovian, classical or Bell-causal scope. See `agents/C3_F_referee.md`.
 
 - **M-A referee (codex sol):** CONFIRMED WITH CORRECTIONS. The worker's M-PASS is not confirmed; the reading is M-INCONCLUSIVE. Exact: the add-one identity, the chaos and Poincare bounds, and the shared-link renewal exponent 0.2549 m^2 l. Not established: the full variance exponent (E2, cross-terms, end factors). Within the unproved closure the 1 MeV/c proton margin fails, and if the chain law were applied to a composite's centre of mass (a mapping not derived) there would be conditional tension with qBounce neutrons (42.5 ms) and Rb-87 interferometry (2.3 s to 70 s). See `agents/C3_M-A_referee.md`.
+
+### C3 lane M-D: composite centre-of-mass coherence on links (pre-registered 2026-10-10 01:58Z, before any run)
+
+**Why.** The M-A referee notes the following conditional result. If Johnston's chain law were applied to a composite's centre of mass using its total mass, it would conflict with:
+- qBounce: ultracold-neutron states kept coherent for 42.5 ms;
+- Rb-87 atom interferometry: 2.3 s, and spatial coherence for up to 70 s.
+
+But that mapping has not been derived.
+
+**Setting.** A bound state of N light constituents (a toy: two or three massive Johnston scalars bound by a short-range attraction carried along links, or the most tractable equivalent), on the E1′ substrate.
+
+**Question.** Does the per-realization noise of the centre-of-mass amplitude scale with:
+- (a) the total mass M, as an elementary Johnston scalar of mass M would;
+- (b) the constituent masses;
+- (c) something else?
+
+**Deliverables.** Derive the scaling by an exact or controlled argument, check it in a toy, then evaluate at ℓ = ℓ_P.
+
+**Readings (fixed now):**
+- **PASS:** a controlled law gives coherence times longer than 70 s for an Rb-87-like composite and longer than 42.5 ms for a neutron-like composite, at ℓ = ℓ_P.
+- **FAIL:** a controlled law gives decoherence below either observed time. The event substrate with Johnston matter is then excluded by experiment.
+- **INCONCLUSIVE:** otherwise.
+
+**Interferometric visibility depends on the covariance between the two arms. The worker must use that observable,** not the variance of a single amplitude.

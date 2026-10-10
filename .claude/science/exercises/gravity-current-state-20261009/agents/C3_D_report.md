@@ -1,6 +1,6 @@
 # C3 lane D: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee: NOT CONFIRMED. The lane is INCONCLUSIVE. Exact narrow no-gos: order alone gives no per-event spinor or frame mark, no handedness, and no gamma.Delta mean of a fixed-fiber kernel. But scalar link propagation plus apparatus differentiation, and the order-only Kahler-Dirac cochain dG, reproduce the massless Dirac response in mean. Chiral matter needs an orientation and spin-transport primitive, as a price** (C3_D_referee.md).
 
 **Verdict (worker):** FAIL (bounded), matching the fixed reading's named example: the order alone gives no spinor structure and no chirality without a frame (exact theorems). A referee is required. Two loopholes are flagged for the referee. (1) Frames held by the source and detector (class E): if the referee counts these as a "link-only spin-1/2 propagator", the verdict becomes INCONCLUSIVE pending lane M. (2) The non-chiral Kähler–Dirac route: its coboundary is order-only and coherent, but its codifferential is untested.
 

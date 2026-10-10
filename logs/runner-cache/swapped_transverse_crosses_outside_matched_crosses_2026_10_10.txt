@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/swapped_transverse_crosses_outside_matched_crosses_2026_10_10.py
+runner_sha256: ff209cb71e685f164de3be5ccd4d5f6a8794b452a7bfc0da6e7982cb3f7cabf7
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.74
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS each direction has four carriers
+PASS soldered extension of the swapped kernels is well defined
+PASS the swapped kernels are bond-symmetric
+PASS a swapped transverse pair has nonzero cross
+PASS swapped kernel values lie in {-1, 0, 1}
+PASS each record activates one direction
+PASS every swapped slice has sum 0
+PASS the swapped height-1 witness bond has value -1
+PASS the swapped height-2 witness bond has value -1
+PASS the swapped height-3 witness bond has value -1
+PASS the matched comparison reproduces three witness values -1
+PASS each swapped witness slice is orthogonal to the caps and its matched cross
+PASS each swapped kernel lies outside the six caps and the three matched crosses
+PASS the twelve kernels are linearly independent
+PASS half-parameter factors stay positive
+PASS matched plus swapped at height 3 stays one-hot with slice sum 0
+PASS the sum across heights 1 and 2 has two-neighbour moment 23/24
+TOTAL: PASS=20 FAIL=0
+
+----- stderr -----
+

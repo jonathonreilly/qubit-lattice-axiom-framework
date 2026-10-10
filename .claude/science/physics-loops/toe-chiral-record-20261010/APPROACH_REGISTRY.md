@@ -55,3 +55,13 @@ rational row reduction of the nine kernels, and one mixture moment.
 
 Family not used: a kernel outside the three transverse crosses. That
 remains open.
+
+Cycle 8 target contract: whether a soldered order-blind kernel on this
+orbit remains outside the six cap lines and the three matched
+transverse crosses.
+
+Family used: the swapped-absolute transverse cross at heights 1, 2,
+and 3, rational row reduction of the twelve kernels, the height-3 sum,
+and one cross-height moment.
+
+Family not used: a kernel outside those twelve. That remains open.

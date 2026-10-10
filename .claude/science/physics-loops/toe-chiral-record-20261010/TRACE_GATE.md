@@ -105,3 +105,21 @@ The two lower-height crosses prune the reading that every order-blind
 kernel lies in the six cap lines and the modulus-3 transverse cross.
 The moment `23/24` keeps their sum outside the normalised families.
 Kernels outside the three crosses stay open.
+
+## Cycle 8
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Ask whether a soldered order-blind kernel on this orbit remains outside the six cap lines, the three matched transverse crosses, and the three swapped transverse crosses. Search first. A negative answer must name the ansatz."
+```
+
+The swapped crosses prune the reading that every order-blind kernel
+lies in the six cap lines and the three matched crosses. The height-3
+sum of matched and swapped still meets the product-mean hypotheses.
+The moment `23/24` keeps a cross-height sum outside those families.
+Kernels outside the twelve stay open.

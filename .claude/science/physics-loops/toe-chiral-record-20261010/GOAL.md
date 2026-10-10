@@ -12,4 +12,6 @@ The open target on this orbit is any further order-blind kernel. Cycle
 6 counts the soldered bond space on the 48 signed permutations:
 dimension 312, and 300 after far-end sum 1. Cycle 7 exhibits transverse
 crosses at absolute heights 1 and 2 outside the six caps and the
-modulus-3 cross. Their sum has moment `23/24`.
+modulus-3 cross. Their sum has moment `23/24`. Cycle 8 exhibits the
+swapped-absolute transverse cross at each height 1, 2, and 3 outside
+those nine kernels. The cross-height sum has moment `23/24`.

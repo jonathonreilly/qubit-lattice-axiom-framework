@@ -126,3 +126,23 @@ Each lower-height transverse cross is a soldered order-blind factor
 outside the span of the six cap lines and the modulus-3 transverse
 cross. The sum of the two kernels has moment `23/24`. Kernels outside
 the three crosses stay open.
+
+# Claim status certificate — cycle 8
+
+claim_id: swapped_transverse_crosses_outside_the_matched_crosses_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: one proper orbit of (1, 2, 3); uniform average; swapped transverse cross at absolute heights 1, 2, and 3; absolute parameter below 1
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: the parent converse. No formation rate is used.
+
+Each swapped transverse cross is a soldered order-blind factor outside
+the span of the six cap lines and the three matched crosses. The sum of
+the swapped kernels at heights 1 and 2 has moment `23/24`. Kernels
+outside the twelve stay open.

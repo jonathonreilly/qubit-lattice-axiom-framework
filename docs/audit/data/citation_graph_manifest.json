@@ -1,6 +1,6 @@
 {
- "edge_count": 15432,
- "node_count": 6876,
+ "edge_count": 15434,
+ "node_count": 6877,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19869,6 +19869,10 @@
   "susceptibility_density_vanishes_identically_1d_ibp_bounded_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "swapped_transverse_crosses_outside_the_matched_crosses_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
   },
   "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28": {
    "deps_hash": "e3b0c44298fc",

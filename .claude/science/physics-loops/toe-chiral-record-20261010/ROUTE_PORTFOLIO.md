@@ -22,3 +22,6 @@ permutations of `(1, 2, 3)`. It does not take an order-blindness cut.
 
 Cycle 7 takes the transverse-cross formula at absolute heights 1 and 2.
 It does not take a kernel outside those three crosses.
+
+Cycle 8 takes the swapped-absolute transverse cross at heights 1, 2,
+and 3. It does not take a kernel outside those twelve.

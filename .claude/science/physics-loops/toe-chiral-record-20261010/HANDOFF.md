@@ -61,14 +61,28 @@ value `-1`; height 2 sends `(-3, 1, -2)` to `(3, 1, 2)` with value `-1`.
 The sum of the two kernels has two-neighbour moment `23/24`. Runner
 `PASS=19 FAIL=0`. Kernels outside these nine are not classified.
 
+Cycle 8. The transverse cross on pairs whose absolute transverse
+coordinates are swapped, at each absolute height 1, 2, and 3, gives a
+soldered kernel with values in `{-1, 0, 1}`, one live direction, and
+slice sums 0. For absolute parameter below 1 the factors are positive,
+and the parent converse makes each family order-blind. The six cap
+lines, the three matched crosses, and these three swapped crosses are
+linearly independent. Witnesses, each of value `-1`: height 1 from
+`(-3, -2, -1)` to `(-2, -3, 1)`; height 2 from `(-3, 1, -2)` to
+`(1, -3, 2)`; height 3 from `(-2, -1, -3)` to `(-1, -2, 3)`. The sum of
+the matched and swapped kernels at height 3 stays one-hot with slice
+sum 0. The sum of the swapped kernels at heights 1 and 2 has moment
+`23/24`. Runner `PASS=20 FAIL=0`. Kernels outside these twelve are not
+classified.
+
 ## Next exact action
 
 Ask whether a soldered order-blind kernel on this orbit remains outside
-the six cap lines and the three transverse-cross kernels. Search first.
-A negative answer must name the ansatz. Do not restate the height-1 and
-height-2 exhibits or the 48-point dimension. Do not invent a formation
-rate. Do not return to shells, plaquette corner weights, or the
-`(0,1,2)` and `(1,1,2)` alphabets.
+the six cap lines, the three matched transverse crosses, and the three
+swapped transverse crosses. Search first. A negative answer must name
+the ansatz. Do not restate those twelve kernels or the 48-point
+dimension. Do not invent a formation rate. Do not return to shells,
+plaquette corner weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

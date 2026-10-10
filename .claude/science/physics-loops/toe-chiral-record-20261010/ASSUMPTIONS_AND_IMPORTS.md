@@ -63,3 +63,12 @@
 - The one-site average is the uniform average on the 24-point orbit.
 - Order-blindness, once the product means hold, is the parent converse.
 - No formation site, probability, or rate is imported.
+
+## Cycle 8
+
+- The tested kernels are the transverse cross on swapped absolute
+  coordinates at heights 1, 2, and 3. The comparison kernels are the
+  six cap lines and the matched transverse crosses at those heights.
+- The one-site average is the uniform average on the 24-point orbit.
+- Order-blindness, once the product means hold, is the parent converse.
+- No formation site, probability, or rate is imported.

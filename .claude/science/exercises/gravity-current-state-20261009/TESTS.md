@@ -681,3 +681,43 @@ Every pre-registered lane returned and was recorded. Every FAIL or contested cla
 - Lemma L and the price note.
 
 M-D and the three exercises are same-family only, and labelled so. No new work was started after 03:20Z, so nothing is "not completed".
+
+## Lane R: gauge redundancy as the primitive (owner, 2026-10-10)
+
+**Owner request:** "run probes on option 3" (option 3 of the status reply: make a gauge redundancy among records the primitive and test whether a massless, protected spin-2 mode comes out). Test settings only; nothing here is recorded in the axiom memo. Any redundancy found is named as a price.
+
+**The question.** Is there a local redundancy on the framework's records or qubits (on Z³, or on events) under which a massless helicity-±2 mode exists *and* is protected, so that no local term allowed by the redundancy gives it a mass?
+
+**Probes** (Claude Opus 5.5, xhigh, run in parallel; same family):
+- **R0, prior art.** The repo (UNIVERSAL_GR_*, GRAVITON_MASS_*, the 09-28 Gu–Wen/Pretko lead, the viability campaign) and the literature (Gu–Wen, Xu, Pretko, Rasmussen–You–Xu, emergent-photon analogues).
+- **R1, framework-native.** Which transformations of record or qubit states leave every physical readout unchanged, and can any of them be local, giving a tensor Gauss law?
+- **R2, lattice computation.** A rank-2 symmetric-tensor model on Z³:
+  - its spectrum and gapless helicities;
+  - its dispersion;
+  - protection against every local term that respects the redundancy, and against the label-dependent shear terms of the stiffness wall;
+  - speed and universality of its coupling to matter.
+- **R3, events.** A quantum sum over event orders, with relabelling of events as the redundancy (G-C's open item).
+
+**Fixed readings** (for each probe, and for the lane overall):
+- **PASS:** an explicit local redundancy, stated as a price, under which a model satisfies all four of:
+  - (i) it has a gapless helicity-±2 mode, with linear dispersion;
+  - (ii) the mode stays gapless under every local term that respects the redundancy (checked against a complete term list to the order stated);
+  - (iii) it couples to matter's energy and momentum universally at linear order;
+  - (iv) it needs no more hand tunings than P0, with one-speed tunings counted too.
+- **FAIL:** for each candidate class, one of the following is shown:
+  - no gapless helicity-2 mode;
+  - protection needs tuning comparable to P0;
+  - the dispersion is not linear without tuning;
+  - universal coupling is impossible.
+
+  Bounded to the classes examined.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation (registered before any probe returns).**
+- Gu–Wen-type models give gapless helicity-±2 modes protected by an emergent gauge structure, as spin ice protects its emergent photon. So (i) and (ii) are expected to pass.
+- (iii) is expected to fail or stay open. The emergent "graviton" sources a conserved vector or fracton charge, not matter's energy and momentum, and Weinberg–Witten-type limits apply once the low-energy theory is Lorentz invariant.
+- (iv) is expected to need at least one speed tuning, a Collins-type split between the graviton and matter.
+- The spatial-only constraint ∂_i E_ij = 0 lacks a Hamiltonian constraint, so the mode content may differ from linearized GR.
+- **Expected lane reading:** INCONCLUSIVE, leaning FAIL on (iii).
+
+**Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the runs.

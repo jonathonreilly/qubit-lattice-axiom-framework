@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 1
-runner_result: PASS=14 FAIL=0
-pr_status: opening
-next_exact_action: Ask whether order-blindness on the 7-site cross cuts the 78-dimensional family to one line. Search origin/main first.
+cycle: 2
+runner_result: PASS=22 FAIL=0
+pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
+next_exact_action: Ask whether every soldered order-blind factor on this orbit is one of the three cap lines. Search first. Do not restate the three lines or the dimension 84 count.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

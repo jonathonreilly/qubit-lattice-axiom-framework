@@ -1,6 +1,6 @@
 {
- "edge_count": 15420,
- "node_count": 6870,
+ "edge_count": 15422,
+ "node_count": 6871,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -20409,6 +20409,10 @@
   "thooft_1981_dual_superconductor_center_vortex_confinement_external_narrow_theorem_note_2026-05-16": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "three_cap_order_blind_lines_on_one_orbit_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
   },
   "three_family_card_missing_distance_live_bridge_note_2026-06-18": {
    "deps_hash": "acb9533ed41f",

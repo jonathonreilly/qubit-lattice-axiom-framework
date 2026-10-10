@@ -3,6 +3,7 @@
 Taken: enumerate the soldered bond-symmetric factors on one proper orbit
 of `(1, 2, 3)` and row-reduce the far-end sums.
 
-Not taken: the 48-point chiral pair, other alphabets, order-blindness,
-and strict positivity. Those remain later discriminators, not corollaries
-of this count.
+Not taken in cycle 1: the 48-point chiral pair and other alphabets.
+
+Cycle 2 takes the cap-sign ansatz on moduli 1, 2, and 3, and the
+two-neighbour moment of a mixture. It does not take a general factor.

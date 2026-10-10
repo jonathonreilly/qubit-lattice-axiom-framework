@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/three_cap_order_blind_lines_2026_10_10.py
+runner_sha256: 4cb0b46cdaa8663b9ffec8e65267122edf7d1cd33cd448a17c8bc86706808650
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.09
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS modulus 1 has mean 0
+PASS modulus 1 cap has 4 points
+PASS modulus 1 activates one direction
+PASS modulus 1 product is covariant
+PASS modulus 1 quarter-turn alternates
+PASS modulus 2 has mean 0
+PASS modulus 2 cap has 4 points
+PASS modulus 2 activates one direction
+PASS modulus 2 product is covariant
+PASS modulus 2 quarter-turn alternates
+PASS modulus 3 has mean 0
+PASS modulus 3 cap has 4 points
+PASS modulus 3 activates one direction
+PASS modulus 3 product is covariant
+PASS modulus 3 quarter-turn alternates
+PASS the three caps are distinct lines
+PASS each pure line has product mean 1
+PASS a mixture of modulus 3 and 2 has moment 25/24
+PASS half-parameter factors stay positive
+TOTAL: PASS=22 FAIL=0
+
+----- stderr -----
+

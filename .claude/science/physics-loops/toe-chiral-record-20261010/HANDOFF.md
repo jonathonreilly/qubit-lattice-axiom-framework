@@ -6,20 +6,28 @@ One worktree. Do not touch PR 9475 or the Codex photon and D3Q27 trees.
 
 ## Done
 
-The proper orbit of `(1, 2, 3)` was already known to be one half of a
-chiral pair. This cycle does not reprove that. It counts soldered
-bond-symmetric factors on that one orbit: linear dimension 84, six
-direction-record orbits, far-end normalisation rank 6, affine dimension
-78. Runner `PASS=14 FAIL=0`. No factor is selected.
+PR https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
+is open. Do not merge it and do not open a second PR.
+
+Cycle 1. Soldered bond-symmetric factors on one proper orbit of
+`(1, 2, 3)`: linear dimension 84, six direction-record orbits, far-end
+rank 6, affine dimension 78. Runner `PASS=14 FAIL=0`. No factor is
+selected.
+
+Cycle 2. Order-blindness on the 7-site cross does not cut that family
+to the exhibited modulus-3 line. The same cap sign on `a·d = 1` and
+`a·d = 2` gives two further strictly positive soldered lines, and the
+parent converse makes each order-blind. A mixture of modulus 3 and
+modulus 2 has a two-neighbour moment `25/24`. Runner `PASS=22 FAIL=0`.
+The rest of the order-blind set is not classified.
 
 ## Next exact action
 
-Ask whether order-blindness on the 7-site cross, or strict positivity,
-cuts this 78-dimensional family to the one-parameter family already
-exhibited in the 2026-09-22 note. Search `origin/main` first. If that cut
-is already proved, do not restate it. Do not invent a formation rate.
-Do not return to shells, plaquette corner weights, or the `(0,1,2)` and
-`(1,1,2)` alphabets.
+Ask whether every soldered order-blind factor on this one orbit is one
+of those three lines. Search first. Do not restate the three lines or
+the dimension count. Do not invent a formation rate. Do not return to
+shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
+alphabets.
 
 ## Cleanup
 

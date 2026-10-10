@@ -13,5 +13,11 @@ exhibited modulus-3 line.
 Family used: the cap-sign formula on each modulus, exact product means,
 and one mixture moment.
 
-Family not used: a general element of the 84-dimensional bond space.
-That is the next missing lemma, not a corollary of the three lines.
+Family not used in cycle 2: a general element of the bond space.
+
+Cycle 3 target contract: which members of the cap span meet the
+product-mean identity.
+
+Family used: the correlation table of the caps and two witness moments.
+
+Family not used: a bond factor outside the span. That remains open.

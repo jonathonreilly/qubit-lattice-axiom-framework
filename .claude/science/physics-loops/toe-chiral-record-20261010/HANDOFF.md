@@ -21,13 +21,19 @@ parent converse makes each order-blind. A mixture of modulus 3 and
 modulus 2 has a two-neighbour moment `25/24`. Runner `PASS=22 FAIL=0`.
 The rest of the order-blind set is not classified.
 
+Cycle 3. Inside the span of those three cap signs, a nonzero scale has
+every product mean equal to 1 only on the three axes. A two-modulus
+witness has moment `13/12`. The mixture `(-2, -2, 1)` cancels the
+pairwise moments and still has three-neighbour moment `-3`. Runner
+`PASS=9 FAIL=0`. Factors outside the span are not classified.
+
 ## Next exact action
 
-Ask whether every soldered order-blind factor on this one orbit is one
-of those three lines. Search first. Do not restate the three lines or
-the dimension count. Do not invent a formation rate. Do not return to
-shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
-alphabets.
+Ask whether a soldered order-blind factor on this orbit can sit outside
+the three-cap span. Search first. Do not restate the span result, the
+three lines, or the dimension count. Do not invent a formation rate.
+Do not return to shells, plaquette corner weights, or the `(0,1,2)` and
+`(1,1,2)` alphabets.
 
 ## Cleanup
 

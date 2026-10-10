@@ -21,3 +21,10 @@
 - The cap sign is the sign of the transverse coordinate product. No other
   function on the cap is tested.
 - No formation site, probability, or rate is imported.
+
+## Cycle 3
+
+- The ansatz is the span of the three cap signs. A factor outside that
+  span is not constrained by this count.
+- The one-site average is the uniform average on the 24-point orbit.
+- Order-blindness, once the product means hold, is the parent converse.

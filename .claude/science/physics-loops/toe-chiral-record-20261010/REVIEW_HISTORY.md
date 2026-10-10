@@ -76,3 +76,36 @@ Conformance, section by section:
    729 patterns, moment `25/24`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note. The
     full audit pipeline was not run.
+
+## 2026-10-10 author check, cycle 3
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+1. Self-containment. Parents are the minimal axioms and the 2026-09-22
+   note on origin/main. The cycle-2 lines are not a lemma here; the axis
+   case is proved from mean 0 and disjoint caps.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. Envelope cache
+   `logs/runner-cache/cap_span_order_blind_axes_2026_10_10.txt`, timeout
+   180, status ok, sha256
+   `49e3ab1cdac4cd3aa1abcdd981877dd4c735d4680f554bb53f4eca64935a9444`,
+   matching `shasum -a 256`. `TOTAL: PASS=9 FAIL=0`.
+3. Scope is the three-cap span only. Status line `proposed_retained`.
+   Surface status `bounded-support`.
+4. N-gate does not apply. The claim is which members of one span meet
+   the product-mean identity. It does not say that no factor outside the
+   span is order-blind.
+5. The missing lemma is named in the note.
+6. Mutations exited 1 for the moment forced to 1, the mixture moment
+   forced to 1, and the off-diagonal correlation forced to 0. An
+   independent generator closure reproduced correlation `1/24`, moment
+   `13/12`, and moment `-3`.
+7. One primary runner. No packet helper.
+8. Two markdown links to notes on origin/main. The manifest refresh for
+   the new node is part of this commit. `citation_graph.json` is deleted
+   after the write.
+9. Machine-status fields match the certificate.
+10. No audit status or ledger output is written.
+11. Counts recomputed this session: orbit 24, correlations `1/24` and
+    `1/8`, moments `13/12` and `-3`.
+12. Vocabulary lint is run on the note before commit. The full audit
+    pipeline was not run.

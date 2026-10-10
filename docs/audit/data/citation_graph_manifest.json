@@ -1,6 +1,6 @@
 {
- "edge_count": 15422,
- "node_count": 6871,
+ "edge_count": 15424,
+ "node_count": 6872,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2657,6 +2657,10 @@
   "canonical_plaquette_alpha_lm_value_certificate_bounded_note_2026-06-16": {
    "deps_hash": "808c1ccb6109",
    "out_degree": 1
+  },
+  "cap_span_order_blind_axes_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
   },
   "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12": {
    "deps_hash": "fc0f62cb0f8d",

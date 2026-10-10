@@ -16,3 +16,6 @@ It does not take a slice outside those six oriented caps.
 
 Cycle 5 takes one transverse-cross kernel on the modulus-3 caps. It
 does not take the 48-point chiral pair.
+
+Cycle 6 takes the soldered bond-orbit count on the 48 signed
+permutations of `(1, 2, 3)`. It does not take an order-blindness cut.

@@ -43,13 +43,20 @@ every neighbour product has mean 1. The slice at `(-2, 1, 3)` is
 nonzero and orthogonal to all six cap signs. Runner `PASS=14 FAIL=0`.
 The rest of the order-blind set on this orbit is not classified.
 
+Cycle 6. The 48 signed permutations of `(1, 2, 3)` carry a soldered
+bond-symmetric space of dimension 312. Twelve far-end rows are
+independent and each totals 48, so far-end sum 1 is an affine space of
+dimension 300. 264 orbits have 24 images and 48 have 12. Ordered
+covariant bonds form 576 orbits. Runner `PASS=15 FAIL=0`. No factor is
+selected. Order-blindness on this alphabet is not classified.
+
 ## Next exact action
 
-Count soldered bond-symmetric factors on the 48-point chiral pair.
-Search first. Do not repeat the existence of the pair, the
-transverse-cross kernel, or the dimension count on the 24-point orbit.
-Do not invent a formation rate. Do not return to shells, plaquette
-corner weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
+Ask whether a soldered order-blind kernel on the 24-point orbit remains
+outside the cap lines and the transverse-cross kernel. Search first.
+Do not restate those exhibits or the 48-point dimension. Do not invent
+a formation rate. Do not return to shells, plaquette corner weights,
+or the `(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

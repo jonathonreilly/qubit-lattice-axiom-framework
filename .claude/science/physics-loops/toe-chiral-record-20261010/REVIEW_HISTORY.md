@@ -179,3 +179,36 @@ Author checks only. No review-loop PASS and no audit verdict.
     `-1`, values `{-1, 0, 1}`.
 12. Vocabulary lint is run on the note before commit. The full audit
     pipeline was not run.
+
+## 2026-10-10 author check, cycle 6
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+1. Self-containment. Parents are the minimal axioms and the 2026-09-22
+   note on origin/main. The 24-point dimension count is not a lemma.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. Envelope cache
+   `logs/runner-cache/chiral_pair_bond_factor_dimension_2026_10_10.txt`,
+   timeout 180, status ok, sha256
+   `4bde0d6d07247e27cf41eddfa3d7ef628bdf6138413500d9eb0cf1f201027f90`,
+   matching `shasum -a 256`. `TOTAL: PASS=15 FAIL=0`.
+3. Scope is the linear bond space on the 48 signed permutations.
+   Status line `proposed_retained`. Surface status `bounded-support`.
+4. N-gate does not apply. The artifact is a positive finite count. It
+   does not claim that no route can select a factor.
+5. The missing lemma is whether order-blindness cuts the affine space.
+6. Mutations exited 1 for the dimension forced to 311, the ordered
+   count forced to 575, the rank forced to 11, and the stand-in forced
+   to dimension 1. An independent closure under quarter-turns about
+   `z` and about `x` gave 24 rotations, alphabet 48, two orbits of 24,
+   dimension 312, sizes 264 of 24 and 48 of 12, 576 ordered orbits, 12
+   rows, rank 12, and row sums 48.
+7. One primary runner. No packet helper.
+8. Two markdown links to notes on origin/main. The manifest refresh for
+   the new node is part of this commit. `citation_graph.json` is deleted
+   after the write.
+9. Machine-status fields match the certificate.
+10. No audit status or ledger output is written.
+11. Counts recomputed this session: dimension 312, ordered 576, rank 12,
+    affine dimension 300.
+12. Vocabulary lint is run on the note before commit. The full audit
+    pipeline was not run.

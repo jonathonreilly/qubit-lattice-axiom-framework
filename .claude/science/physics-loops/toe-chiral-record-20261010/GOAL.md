@@ -8,5 +8,6 @@ line. The answer on the cap-sign ansatz is no. Cycle 3 shows that inside
 the span of those three signs, only the axes work. Cycle 4 exhibits
 three opposite-cap lines outside that span. Cycle 5 exhibits a
 transverse-cross kernel whose slice is orthogonal to all six cap signs.
-The open target on this orbit is any further order-blind kernel. The
-next count is the 48-point chiral pair.
+The open target on this orbit is any further order-blind kernel. Cycle
+6 counts the soldered bond space on the 48 signed permutations:
+dimension 312, and 300 after far-end sum 1.

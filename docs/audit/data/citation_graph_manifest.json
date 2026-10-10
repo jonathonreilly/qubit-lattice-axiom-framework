@@ -1,6 +1,6 @@
 {
- "edge_count": 15428,
- "node_count": 6874,
+ "edge_count": 15430,
+ "node_count": 6875,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2929,6 +2929,10 @@
   "chiral_layer_oscillation_2026-04-09": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "chiral_pair_bond_factor_dimension_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
   },
   "chiral_split_mass_gravity_note": {
    "deps_hash": "e3b0c44298fc",

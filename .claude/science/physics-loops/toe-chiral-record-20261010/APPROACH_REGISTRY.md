@@ -37,3 +37,11 @@ Family used: the transverse-cross formula on the caps `a·e_z = -3` and
 `b·e_z = 3`, extended by proper rotations, with one witness slice.
 
 Family not used: the 48-point chiral pair. That remains open.
+
+Cycle 6 target contract: the dimension of the soldered bond-symmetric
+factors on the 48 signed permutations of `(1, 2, 3)`, and the dimension
+after far-end sum 1.
+
+Family used: exact orbit enumeration and rational row reduction.
+
+Family not used: an order-blindness cut on that space. That remains open.

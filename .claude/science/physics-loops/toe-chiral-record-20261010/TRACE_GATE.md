@@ -72,3 +72,19 @@ next_trace_action: "Count soldered bond-symmetric factors on the 48-point chiral
 The transverse-cross slice prunes the reading that every order-blind
 slice lies in the six cap signs. The rest of the order-blind set stays
 open.
+
+## Cycle 6
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Ask whether a soldered order-blind kernel on the 24-point orbit remains outside the cap lines and the transverse-cross kernel."
+```
+
+The count prunes the reading that the exhibited one-parameter family is
+the whole bond space on the 48-point alphabet. It does not cut that
+space by order-blindness.

@@ -42,3 +42,13 @@
   kernel is the transverse-cross formula above, not an arbitrary slice.
 - The one-site average is the uniform average on the 24-point orbit.
 - Order-blindness, once the product means hold, is the parent converse.
+
+## Cycle 6
+
+- Records are the 48 signed permutations of `(1, 2, 3)`. Covariance is
+  the proper cubic action only.
+- Bond reversal identifies `(direction, left, right)` with
+  `(-direction, right, left)`.
+- Factors are rational. No positivity, order-blindness, or normalising
+  constant beyond the far-end sum is assumed.
+- No formation site, probability, or rate is imported.

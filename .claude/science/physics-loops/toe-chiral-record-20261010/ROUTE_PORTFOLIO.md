@@ -10,3 +10,6 @@ two-neighbour moment of a mixture. It does not take a general factor.
 
 Cycle 3 takes linear combinations of those three signs. It does not take
 a bond factor outside that span.
+
+Cycle 4 takes the opposite cap `a·d = -m` for each modulus `1, 2, 3`.
+It does not take a slice outside those six oriented caps.

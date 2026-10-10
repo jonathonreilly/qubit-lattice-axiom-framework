@@ -51,3 +51,21 @@ open_imports: the parent converse. No formation rate is used.
 
 Inside the span, only the three axes meet the product-mean identity for a
 nonzero scale. Factors outside the span stay open.
+
+# Claim status certificate — cycle 4
+
+claim_id: opposite_cap_lines_outside_the_three_cap_span_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: one proper orbit of (1, 2, 3); uniform average; opposite cap a·d = -m; absolute parameter below 1
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: the parent converse. No formation rate is used.
+
+The three opposite caps are soldered order-blind lines outside the span
+of the caps a·d = 1, 2, 3. Slices outside the six oriented caps stay open.

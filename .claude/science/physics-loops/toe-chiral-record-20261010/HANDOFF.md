@@ -27,13 +27,21 @@ witness has moment `13/12`. The mixture `(-2, -2, 1)` cancels the
 pairwise moments and still has three-neighbour moment `-3`. Runner
 `PASS=9 FAIL=0`. Factors outside the span are not classified.
 
+Cycle 4. Each opposite cap `a·d = -m` for `m` in `{1, 2, 3}` is a
+strictly positive soldered line, with product mean 1 on all 729 weight
+patterns. The bond from `(1, -2, -3)` to `(1, 2, 3)` along `e_z` has
+level `-3` product `-1` and positive-cap product 0, so that line sits
+outside the positive span. Levels `-1` and `-2` have the same
+separation. Runner `PASS=23 FAIL=0`. Slices outside the six oriented
+caps are not classified.
+
 ## Next exact action
 
-Ask whether a soldered order-blind factor on this orbit can sit outside
-the three-cap span. Search first. Do not restate the span result, the
-three lines, or the dimension count. Do not invent a formation rate.
-Do not return to shells, plaquette corner weights, or the `(0,1,2)` and
-`(1,1,2)` alphabets.
+Ask whether a soldered order-blind factor on this orbit can have a
+slice outside the six oriented caps. Search first. Do not restate the
+opposite-cap lines, the positive span, or the dimension count. Do not
+invent a formation rate. Do not return to shells, plaquette corner
+weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

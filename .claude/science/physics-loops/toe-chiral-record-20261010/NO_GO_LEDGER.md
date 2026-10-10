@@ -13,3 +13,8 @@ order-blind factor exists.
 Cycle 3 prunes mixtures inside the cap span. The witnesses are the moment
 `13/12` and the three-neighbour moment `-3`. It does not say that no
 factor outside the span is order-blind.
+
+Cycle 4 prunes the reading that no soldered order-blind factor sits
+outside the positive cap span. The witnesses are the three opposite-cap
+lines and the bond from `(1, -2, -3)` to `(1, 2, 3)`. It does not say
+that no slice outside the six oriented caps is order-blind.

@@ -28,3 +28,10 @@
   span is not constrained by this count.
 - The one-site average is the uniform average on the 24-point orbit.
 - Order-blindness, once the product means hold, is the parent converse.
+
+## Cycle 4
+
+- The positive span is the caps `a·d = m` for `m` in `{1, 2, 3}`. The
+  tested lines are the caps `a·d = -m`. No other function is tested.
+- The one-site average is the uniform average on the 24-point orbit.
+- Order-blindness, once the product means hold, is the parent converse.

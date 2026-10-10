@@ -21,3 +21,11 @@ product-mean identity.
 Family used: the correlation table of the caps and two witness moments.
 
 Family not used: a bond factor outside the span. That remains open.
+
+Cycle 4 target contract: whether a soldered order-blind factor on this
+orbit can sit outside the span of the caps `a·d = 1, 2, 3`.
+
+Family used: the opposite-cap formula on each negative level, exact
+product means, and one named witness bond.
+
+Family not used: a slice outside the six oriented caps. That remains open.

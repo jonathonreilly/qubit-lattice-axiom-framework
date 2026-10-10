@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/opposite_cap_lines_outside_the_three_cap_span_2026_10_10.py
+runner_sha256: 56872d459dcfab37995ea7836e1fe931e6b0b98759cb9a98bec8ce8c3a9484c6
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.02
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS level -1 has mean 0
+PASS level -1 cap has 4 points
+PASS level -1 activates one direction
+PASS level -1 product is covariant
+PASS level -1 quarter-turn alternates
+PASS level -2 has mean 0
+PASS level -2 cap has 4 points
+PASS level -2 activates one direction
+PASS level -2 product is covariant
+PASS level -2 quarter-turn alternates
+PASS level -3 has mean 0
+PASS level -3 cap has 4 points
+PASS level -3 activates one direction
+PASS level -3 product is covariant
+PASS level -3 quarter-turn alternates
+PASS the three opposite caps are distinct
+PASS each opposite line has product mean 1
+PASS each opposite cap is outside the positive span
+PASS the modulus-3 witness bond is (1, -2, -3) with (1, 2, 3)
+PASS half-parameter factors stay positive
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

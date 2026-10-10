@@ -37,3 +37,8 @@ Cycle 8 prunes the reading that every soldered order-blind kernel on
 this orbit lies in the six cap lines and the three matched transverse
 crosses. The witnesses are the three swapped crosses and the moment
 `23/24`. It does not say that no kernel remains outside those twelve.
+
+Cycle 9 prunes the reading that a one-cap-pair support still hides a
+kernel outside the cap and the two crosses. Each pattern has dimension
+3 and is spanned by those three kernels. It does not say that a kernel
+with two live directions is impossible.

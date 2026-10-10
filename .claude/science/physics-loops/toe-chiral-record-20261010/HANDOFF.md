@@ -75,14 +75,24 @@ sum 0. The sum of the swapped kernels at heights 1 and 2 has moment
 `23/24`. Runner `PASS=20 FAIL=0`. Kernels outside these twelve are not
 classified.
 
+Cycle 9. For each sign and each modulus in `{1, 2, 3}`, the soldered
+bond-symmetric kernels supported on `a·d = (sign) m` and
+`b·d = -(sign) m`, with slice sum 0, have dimension 3. Six patterns
+give dimension 18. Each pattern is spanned by the cap line and the
+matched and swapped transverse crosses. The six positive-cap crosses
+lie outside the previous twelve kernels. For absolute parameter below 1
+each of those six is positive and has product mean 1. The sum of the
+positive matched crosses at heights 1 and 2 has moment `23/24`. Runner
+`PASS=22 FAIL=0`. Kernels with two live directions are not classified.
+
 ## Next exact action
 
-Ask whether a soldered order-blind kernel on this orbit remains outside
-the six cap lines, the three matched transverse crosses, and the three
-swapped transverse crosses. Search first. A negative answer must name
-the ansatz. Do not restate those twelve kernels or the 48-point
-dimension. Do not invent a formation rate. Do not return to shells,
-plaquette corner weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
+Ask whether a soldered order-blind kernel with two live directions on
+this orbit remains outside the eighteen cap-pair kernels. Search first.
+A negative answer must name the ansatz. Do not restate the cap-pair
+span or the 48-point dimension. Do not invent a formation rate. Do not
+return to shells, plaquette corner weights, or the `(0,1,2)` and
+`(1,1,2)` alphabets.
 
 ## Cleanup
 

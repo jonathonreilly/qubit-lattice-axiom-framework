@@ -72,3 +72,13 @@
 - The one-site average is the uniform average on the 24-point orbit.
 - Order-blindness, once the product means hold, is the parent converse.
 - No formation site, probability, or rate is imported.
+
+## Cycle 9
+
+- The ansatz is one pattern `a·d = (sign) m` and `b·d = -(sign) m`.
+  A kernel with two live directions is not in this count.
+- The basis on a pattern is the cap line and the matched and swapped
+  crosses. No other support is tested.
+- The one-site average is the uniform average on the 24-point orbit.
+- Order-blindness, once the product means hold, is the parent converse.
+- No formation site, probability, or rate is imported.

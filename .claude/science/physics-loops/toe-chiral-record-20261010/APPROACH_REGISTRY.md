@@ -65,3 +65,11 @@ and 3, rational row reduction of the twelve kernels, the height-3 sum,
 and one cross-height moment.
 
 Family not used: a kernel outside those twelve. That remains open.
+
+Cycle 9 target contract: whether the one-cap-pair ansatz has a kernel
+outside the cap line and the two transverse crosses.
+
+Family used: bond-orbit count on each pattern, the cap line, and the
+matched and swapped crosses, with one cross-pattern moment.
+
+Family not used: a kernel with two live directions. That remains open.

@@ -146,3 +146,22 @@ Each swapped transverse cross is a soldered order-blind factor outside
 the span of the six cap lines and the three matched crosses. The sum of
 the swapped kernels at heights 1 and 2 has moment `23/24`. Kernels
 outside the twelve stay open.
+
+# Claim status certificate — cycle 9
+
+claim_id: one_hot_cap_pair_kernel_span_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: one proper orbit of (1, 2, 3); one cap-pair support a·d = (sign) m and b·d = -(sign) m; uniform average; absolute parameter below 1 on the positive-cap basis
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: the parent converse. No formation rate is used.
+
+Each one-cap-pair pattern has kernel dimension 3 and is spanned by the
+cap line and two transverse crosses. Six patterns give dimension 18.
+Kernels with two live directions stay open.

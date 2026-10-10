@@ -14,4 +14,6 @@ dimension 312, and 300 after far-end sum 1. Cycle 7 exhibits transverse
 crosses at absolute heights 1 and 2 outside the six caps and the
 modulus-3 cross. Their sum has moment `23/24`. Cycle 8 exhibits the
 swapped-absolute transverse cross at each height 1, 2, and 3 outside
-those nine kernels. The cross-height sum has moment `23/24`.
+those nine kernels. The cross-height sum has moment `23/24`. Cycle 9
+shows each one-cap-pair support has kernel dimension 3, spanned by the
+cap and two crosses. Six patterns give dimension 18.

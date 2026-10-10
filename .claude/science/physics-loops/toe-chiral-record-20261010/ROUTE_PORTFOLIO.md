@@ -25,3 +25,6 @@ It does not take a kernel outside those three crosses.
 
 Cycle 8 takes the swapped-absolute transverse cross at heights 1, 2,
 and 3. It does not take a kernel outside those twelve.
+
+Cycle 9 takes the six one-cap-pair supports. It does not take a kernel
+with two live directions.

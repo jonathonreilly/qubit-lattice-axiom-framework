@@ -544,3 +544,5 @@ Not a test. A written, plain-first note assembling the refereed results into one
 - **PASS:** a construction with the correct mean and a controlled noise law meeting the E1′ coherence bars.
 - **FAIL:** a no-go, e.g. no spinor structure from order alone without a frame (referee).
 - **INCONCLUSIVE:** otherwise.
+
+**C3 end time (owner, 2026-10-10 00:54Z):** "End the work exactly at midnight eastern please". The campaign therefore stops at **04:00Z** (00:00 EDT). Any lane not finished by then is recorded as "not completed (stopped at midnight)".

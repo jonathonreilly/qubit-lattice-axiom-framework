@@ -522,3 +522,25 @@ Not a test. A written, plain-first note assembling the refereed results into one
 - **PASS:** some model has Re G_T(0) = 0, with S and Im G_T both vanishing as ω^n, n ≥ 3, untuned.
 - **FAIL:** every model tested has Re G_T(0) ≠ 0 or n ≤ 1.
 - **INCONCLUSIVE:** otherwise.
+
+### Campaign C3, added lanes (pre-registered 2026-10-10 ~01:05Z, before any run)
+
+**Lane F: can records forming produce the event set themselves?**
+- **Setting.** A label-free growth rule: each new event's relations are decided from the existing order only, with no coordinates and no supplied causal order. Examples are sequential-growth or record-formation rules.
+- **Measure:**
+  - interval abundances;
+  - the Myrheim–Meyer dimension;
+  - link statistics against a 4D Poisson sprinkling.
+- **PASS:** a rule whose orders match 4D Poisson-sprinkling statistics within controlled error at accessible sizes, with an exact or controlled argument for large N.
+- **FAIL:** a no-go under stated hypotheses (referee). For example, Markovian label-invariant growth gives non-manifold orders.
+- **INCONCLUSIVE:** otherwise.
+
+**Lane D: spin-½ matter on links.**
+- **Setting.** An order-only or link-only spin-½ propagator.
+- **Measure:**
+  - its mean against the massless (then massive) Dirac retarded propagator: one cone, chirality;
+  - a controlled per-realization noise law;
+  - whether G0c's one-qubit-per-site fermions have an analogue on events.
+- **PASS:** a construction with the correct mean and a controlled noise law meeting the E1′ coherence bars.
+- **FAIL:** a no-go, e.g. no spinor structure from order alone without a frame (referee).
+- **INCONCLUSIVE:** otherwise.

@@ -85,14 +85,24 @@ each of those six is positive and has product mean 1. The sum of the
 positive matched crosses at heights 1 and 2 has moment `23/24`. Runner
 `PASS=22 FAIL=0`. Kernels with two live directions are not classified.
 
+Cycle 10. The sum of the cap line at level `+3` and the matched
+transverse cross on `a·d = -3` is bond-symmetric, takes values in
+`{-1, 0, 1}`, and activates two opposite directions on every record.
+Every slice sums to 0 and every opposite-direction product has mean 1.
+For absolute parameter below 1 the factors are positive. The seed
+`(1, 2, 3)` is live in `e_z` and `-e_z`. The two cap lines at levels
+`+3` and `-3` have moment `7/6` on `e_x` at `(-3, -2, -1)`. Runner
+`PASS=14 FAIL=0`. This sum lies in the cap-pair span. Kernels outside
+that span are not classified.
+
 ## Next exact action
 
-Ask whether a soldered order-blind kernel with two live directions on
-this orbit remains outside the eighteen cap-pair kernels. Search first.
-A negative answer must name the ansatz. Do not restate the cap-pair
-span or the 48-point dimension. Do not invent a formation rate. Do not
-return to shells, plaquette corner weights, or the `(0,1,2)` and
-`(1,1,2)` alphabets.
+Ask whether a soldered order-blind kernel on this orbit lies outside
+the eighteen cap-pair kernels. Search first. A negative answer must
+name the ansatz. Do not restate the opposite cap-cross mixture or the
+48-point dimension. Do not invent a formation rate. Do not return to
+shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
+alphabets.
 
 ## Cleanup
 

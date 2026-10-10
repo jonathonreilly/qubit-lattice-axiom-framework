@@ -165,3 +165,23 @@ open_imports: the parent converse. No formation rate is used.
 Each one-cap-pair pattern has kernel dimension 3 and is spanned by the
 cap line and two transverse crosses. Six patterns give dimension 18.
 Kernels with two live directions stay open.
+
+# Claim status certificate — cycle 10
+
+claim_id: opposite_cap_cross_mixture_two_live_directions_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: one proper orbit of (1, 2, 3); sum of the level-+3 cap and the matched cross on a·d = -3; uniform average; absolute parameter below 1
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: the parent converse. No formation rate is used.
+
+The sum of the level-+3 cap and the matched cross on a·d = -3 is a
+soldered order-blind kernel with two opposite live directions. The two
+level-3 cap lines have moment 7/6. Kernels outside the cap-pair span
+stay open.

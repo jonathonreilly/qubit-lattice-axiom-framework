@@ -16,4 +16,7 @@ modulus-3 cross. Their sum has moment `23/24`. Cycle 8 exhibits the
 swapped-absolute transverse cross at each height 1, 2, and 3 outside
 those nine kernels. The cross-height sum has moment `23/24`. Cycle 9
 shows each one-cap-pair support has kernel dimension 3, spanned by the
-cap and two crosses. Six patterns give dimension 18.
+cap and two crosses. Six patterns give dimension 18. Cycle 10 adds the
+level-`+3` cap to the matched cross on `a·d = -3`. That sum has two
+live directions and product mean 1. The opposite cap lines have moment
+`7/6`.

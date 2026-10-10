@@ -28,3 +28,6 @@ and 3. It does not take a kernel outside those twelve.
 
 Cycle 9 takes the six one-cap-pair supports. It does not take a kernel
 with two live directions.
+
+Cycle 10 takes the sum of the level-`+3` cap and the matched cross on
+`a·d = -3`. It does not take a kernel outside the cap-pair span.

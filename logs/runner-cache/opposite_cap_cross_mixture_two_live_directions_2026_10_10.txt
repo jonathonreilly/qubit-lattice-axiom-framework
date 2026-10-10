@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/opposite_cap_cross_mixture_two_live_directions_2026_10_10.py
+runner_sha256: e5ce15a20b489c0bdd8ff7167ca61bd40ae86d6bf0d19d6797160d01468cd4b6
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS each direction has a carrier
+PASS the mixture is bond-symmetric
+PASS mixture values lie in {-1, 0, 1}
+PASS every record activates two opposite directions
+PASS some record is nonzero in both opposite directions
+PASS the seed (1, 2, 3) is live in e_z and -e_z
+PASS every slice has sum 0
+PASS every opposite-direction product has mean 1
+PASS half-parameter factors stay positive
+PASS the two level-3 cap lines have moment 7/6
+PASS the cap and the opposite cross have disjoint bonds
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

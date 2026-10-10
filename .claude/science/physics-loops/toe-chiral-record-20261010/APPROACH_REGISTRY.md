@@ -73,3 +73,11 @@ Family used: bond-orbit count on each pattern, the cap line, and the
 matched and swapped crosses, with one cross-pattern moment.
 
 Family not used: a kernel with two live directions. That remains open.
+
+Cycle 10 target contract: whether two live directions can keep
+neighbour-product mean 1.
+
+Family used: the level-`+3` cap plus the matched cross on `a·d = -3`,
+and the moment of the two level-3 cap lines.
+
+Family not used: a kernel outside the cap-pair span. That remains open.

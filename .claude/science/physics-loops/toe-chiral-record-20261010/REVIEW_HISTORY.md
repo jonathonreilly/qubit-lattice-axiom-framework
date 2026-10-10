@@ -338,3 +338,43 @@ Conformance, section by section:
     18, moment `23/24`, `PASS=22 FAIL=0`.
 12. Vocabulary lint reported 0 violations on the note. The full audit
     pipeline was not run.
+
+## 2026-10-10 author check, cycle 10
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`. The cap line and the matched
+   cross are rebuilt in this runner. They are not lemmas imported from
+   this branch.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/opposite_cap_cross_mixture_two_live_directions_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `e5ce15a20b489c0bdd8ff7167ca61bd40ae86d6bf0d19d6797160d01468cd4b6`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=14 FAIL=0`.
+3. Scope. One two-direction mixture with product mean 1, and the cap
+   moment `7/6`. Status line `proposed_retained`. Surface status
+   `bounded-support`. Kernels outside the cap-pair span stay open.
+4. N-gate does not apply. The artifact exhibits one mixture. It does
+   not claim that no kernel exists outside the cap-pair span.
+5. Obligations are in the note. The missing lemma is a kernel outside
+   that span.
+6. Mutations, each on a scratch copy, exited 1. Forcing every nonzero
+   sign to `+1` gave `PASS=12 FAIL=2`. Leaving the transporting matrix
+   uninverted gave `PASS=13 FAIL=1`. Replacing the cross by the
+   opposite cap gave `PASS=13 FAIL=1`. An independent closure under
+   quarter-turns about `z` and about `x` gave 24 rotations, orbit 24,
+   cap-product sum 4, and moment `7/6`.
+7. One primary runner. No packet helper.
+8. Two markdown links to notes on origin/main. The manifest refresh for
+   the new node is part of this commit. `citation_graph.json` is deleted
+   after the write.
+9. Machine-status fields match the certificate.
+10. No audit status or ledger output is written.
+11. Counts recomputed this session: two opposite live directions,
+    product mean 1, cap moment `7/6`, `PASS=14 FAIL=0`.
+12. Vocabulary lint reported 0 violations on the note. The full audit
+    pipeline was not run.

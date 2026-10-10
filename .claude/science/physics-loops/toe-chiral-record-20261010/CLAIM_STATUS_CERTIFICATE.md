@@ -69,3 +69,22 @@ open_imports: the parent converse. No formation rate is used.
 
 The three opposite caps are soldered order-blind lines outside the span
 of the caps a·d = 1, 2, 3. Slices outside the six oriented caps stay open.
+
+# Claim status certificate — cycle 5
+
+claim_id: transverse_cross_kernel_outside_six_caps_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: one proper orbit of (1, 2, 3); uniform average; transverse-cross kernel on modulus 3; absolute parameter below 1
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: the parent converse. No formation rate is used.
+
+The transverse-cross kernel is a soldered order-blind factor whose
+witness slice is outside the span of the six cap signs. The rest of the
+order-blind set stays open.

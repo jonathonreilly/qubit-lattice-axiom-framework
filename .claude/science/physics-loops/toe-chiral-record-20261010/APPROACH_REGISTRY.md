@@ -29,3 +29,11 @@ Family used: the opposite-cap formula on each negative level, exact
 product means, and one named witness bond.
 
 Family not used: a slice outside the six oriented caps. That remains open.
+
+Cycle 5 target contract: whether a soldered order-blind factor on this
+orbit can have a slice outside the six cap signs.
+
+Family used: the transverse-cross formula on the caps `a·e_z = -3` and
+`b·e_z = 3`, extended by proper rotations, with one witness slice.
+
+Family not used: the 48-point chiral pair. That remains open.

@@ -35,13 +35,21 @@ outside the positive span. Levels `-1` and `-2` have the same
 separation. Runner `PASS=23 FAIL=0`. Slices outside the six oriented
 caps are not classified.
 
+Cycle 5. The transverse cross product on the caps `a·e_z = -3` and
+`b·e_z = 3`, kept when the transverse absolute values match, extends
+by proper rotations to a soldered kernel with values in `{-1, 0, 1}`.
+Each record activates one direction and every slice sums to 0, so
+every neighbour product has mean 1. The slice at `(-2, 1, 3)` is
+nonzero and orthogonal to all six cap signs. Runner `PASS=14 FAIL=0`.
+The rest of the order-blind set on this orbit is not classified.
+
 ## Next exact action
 
-Ask whether a soldered order-blind factor on this orbit can have a
-slice outside the six oriented caps. Search first. Do not restate the
-opposite-cap lines, the positive span, or the dimension count. Do not
-invent a formation rate. Do not return to shells, plaquette corner
-weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
+Count soldered bond-symmetric factors on the 48-point chiral pair.
+Search first. Do not repeat the existence of the pair, the
+transverse-cross kernel, or the dimension count on the 24-point orbit.
+Do not invent a formation rate. Do not return to shells, plaquette
+corner weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

@@ -144,3 +144,38 @@ Author checks only. No review-loop PASS and no audit verdict.
     named product `-1`.
 12. Vocabulary lint is run on the note before commit. The full audit
     pipeline was not run.
+
+## 2026-10-10 author check, cycle 5
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+1. Self-containment. Parents are the minimal axioms and the 2026-09-22
+   note on origin/main. The cap signs are the span being exited. Their
+   product means are not a lemma here.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. Envelope cache
+   `logs/runner-cache/transverse_cross_kernel_outside_six_caps_2026_10_10.txt`,
+   timeout 180, status ok, sha256
+   `47895b2b14e2493facc040f3dce8850b2026e1d70f72354e0695e82d048296ef`,
+   matching `shasum -a 256`. `TOTAL: PASS=14 FAIL=0`.
+3. Scope is one transverse-cross kernel on one 24-point orbit. Status
+   line `proposed_retained`. Surface status `bounded-support`.
+4. N-gate does not apply. The claim exhibits one kernel outside the six
+   cap signs. It does not say that no further kernel exists.
+5. The missing lemma is named in the note.
+6. Mutations exited 1 for the witness value forced from `-1` to `1`,
+   the value set forced to `{0, 1}`, the live count forced to 2, and
+   the transporting matrix left uninverted. An independent closure
+   under quarter-turns about `z` and about `x` gave 24 rotations, orbit
+   24, four carriers, transport mismatches 0, bond-symmetry failures 0,
+   one live direction, slice sums `{0}`, named value `-1`, and inner
+   products 0 against all six levels.
+7. One primary runner. No packet helper.
+8. Two markdown links to notes on origin/main. The manifest refresh for
+   the new node is part of this commit. `citation_graph.json` is deleted
+   after the write.
+9. Machine-status fields match the certificate.
+10. No audit status or ledger output is written.
+11. Counts recomputed this session: orbit 24, carriers 4, named value
+    `-1`, values `{-1, 0, 1}`.
+12. Vocabulary lint is run on the note before commit. The full audit
+    pipeline was not run.

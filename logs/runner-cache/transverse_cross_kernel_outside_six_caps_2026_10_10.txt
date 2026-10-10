@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/transverse_cross_kernel_outside_six_caps_2026_10_10.py
+runner_sha256: 47895b2b14e2493facc040f3dce8850b2026e1d70f72354e0695e82d048296ef
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS each direction has four carriers
+PASS soldered extension is well defined
+PASS the kernel is bond-symmetric
+PASS a matched transverse pair has nonzero cross
+PASS kernel values lie in {-1, 0, 1}
+PASS each record activates one direction
+PASS every slice has sum 0
+PASS the witness bond (-2, -1, -3) with (-2, 1, 3) has value -1
+PASS the witness slice is orthogonal to the six caps
+PASS the witness slice is outside the six-cap span
+PASS half-parameter factors stay positive
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

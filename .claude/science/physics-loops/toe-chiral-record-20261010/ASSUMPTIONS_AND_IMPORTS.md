@@ -35,3 +35,10 @@
   tested lines are the caps `a·d = -m`. No other function is tested.
 - The one-site average is the uniform average on the 24-point orbit.
 - Order-blindness, once the product means hold, is the parent converse.
+
+## Cycle 5
+
+- The six cap signs are `a·d = k` for `k` in `{±1, ±2, ±3}`. The tested
+  kernel is the transverse-cross formula above, not an arbitrary slice.
+- The one-site average is the uniform average on the 24-point orbit.
+- Order-blindness, once the product means hold, is the parent converse.

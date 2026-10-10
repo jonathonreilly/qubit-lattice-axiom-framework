@@ -56,3 +56,19 @@ next_trace_action: "Ask whether a soldered order-blind factor on this orbit can 
 The three opposite caps prune the reading that the positive span contains
 every soldered order-blind line of this shape. Slices outside the six
 oriented caps stay open.
+
+## Cycle 5
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Count soldered bond-symmetric factors on the 48-point chiral pair. Do not repeat the existence of the pair."
+```
+
+The transverse-cross slice prunes the reading that every order-blind
+slice lies in the six cap signs. The rest of the order-blind set stays
+open.

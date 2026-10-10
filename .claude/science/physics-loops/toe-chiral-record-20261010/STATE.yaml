@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 4
-runner_result: PASS=23 FAIL=0
+cycle: 5
+runner_result: PASS=14 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Ask whether a soldered order-blind factor on this orbit can have a slice outside the six oriented caps. Search first. Do not restate the opposite-cap lines or the earlier counts.
+next_exact_action: Count soldered bond-symmetric factors on the 48-point chiral pair. Search first. Do not repeat the existence of the pair, the transverse-cross kernel, or the earlier counts.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

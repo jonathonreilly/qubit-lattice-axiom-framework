@@ -431,3 +431,94 @@ Full texts: `agents/E1p_report.md` and `agents/E1p_referee.md`. Scripts: `script
 **Not established, and outside the scope of this PASS:** the tensor/helicity-2 bridge, nonlinear gravity, E1's strain crackle, and initial-value propagation.
 
 **Matter remains M-INCONCLUSIVE.**
+
+## Campaign C3 (owner, 2026-10-10 00:47Z, 3 hours): pre-registered before any run
+
+**Owner.**
+- "test the graviton on links and in parallel test matter coherence. Run a 3 hour campaign, use multiple opus 5.5 sub agents on ultra all out on all the remaining options - exercise when we hit walls, keep iterating and working towards closing all lanes. make PRs as needed."
+- Then: "run all 4 next options in parallel, spin up more opus 55 ultra workers on any lane or task that furthers our push here".
+
+**Rules.**
+- Workers are Opus 5.5 at max effort.
+- Any FAIL or no-go gets the codex sol referee before it is recorded.
+- A lane that hits a refereed wall gets a compressed exercise: wall, routes, kills, a new pre-registered test.
+- Every setting is a test setting only. The axiom conflicts of E1/E1′ apply to the event lanes.
+
+### Lane G: the graviton on links
+
+**G-A: the order itself as the graviton.**
+- **Setting.**
+  - Sprinkle once in coordinates.
+  - Recompute the causal order and links under g = η + ε·e(k)cos(k·x), where e is TT polarisation.
+  - Evaluate order-only functionals: link counts, and the 4D BD action, local and smeared.
+- **Measure:**
+  - the mean ΔS(ε,k), which should be quadratic in ε;
+  - its k → 0 limit, the mass term;
+  - its helicity structure (TT against pure-gauge and trace perturbations);
+  - the per-realization response: analytic in ε, or E1's crackle (sd ∝ |ε|^½).
+- **PASS:** by an exact or controlled law, the mean has no mass term, pure gauge gives zero, the TT kinetic term goes like k², and the per-realization response is analytic, or its noise is subdominant to the mean quadratic action for LIGO-amplitude waves (h ~ 1e-21) over a wavelength cell at Planck density.
+- **FAIL:** a mean mass term, or a controlled law showing crackle noise dominating the quadratic action at physical h.
+- **INCONCLUSIVE:** otherwise.
+
+**G-B: a tensor field propagated along links.**
+- **Setting.** h_μν(x) = ρ⁻¹Σ_y G₀(x,y)·T_μν(y), from a conserved quadrupole source, with G₀ = aL.
+- **Measure:**
+  - per realization, the non-TT admixture (helicity 0 and ±1) relative to TT;
+  - the violation of the harmonic-gauge condition at distance D.
+- **PASS:** by a controlled law, the admixture at 1 Gpc stays below 1e-3 of the TT amplitude (conservative against polarisation tests), and the mean is exactly the linearized-GR retarded solution.
+- **FAIL:** a controlled law showing the admixture above that.
+- **INCONCLUSIVE:** otherwise.
+- **Scope.** This tests a linearized graviton carried on links, not its protection.
+
+**G-C: protection.**
+- **Question.** Does any order-only or link-only dynamics carry an exact per-realization identity (diffeomorphism-type, coboundary or conservation) that forbids a TT mass in each realization? Or does a quantum sum over orders supply it?
+- **PASS:** an identity or mechanism exhibited with proof.
+- **FAIL:** a no-go proved under stated hypotheses (sent to the referee).
+- **INCONCLUSIVE:** otherwise.
+
+### Lane M: matter coherence
+
+**M-A: Johnston's massive path sum, packet plus detector.**
+- **Measure.** Var/mean² of the amplitude received by a smeared detector of size σ_d, from a Gaussian packet of width σ and lab momentum p sent from a source, after lab distance L. Include regeneration along the trip.
+- **Method.** An exact or controlled law (Mecke, Poincaré, resolvent bounds), checked by simulation. Evaluate the electron and the proton at laboratory momenta.
+- **Readings (the E1′ M-readings, fixed):**
+  - **M-PASS:** a controlled law gives Var/mean² < 0.1 at L ≥ 1 km for both particles;
+  - **M-FAIL:** a controlled law gives ≥ 1 below 1 km for either;
+  - **M-INCONCLUSIVE:** otherwise.
+
+**M-B: unitary matter on links.**
+- **Setting.** A norm-preserving matter rule along links: Feynman-checkerboard or chiral hopping with a mass-flip amplitude ∝ i·m·ℓ, or any unitary link walk.
+- **Questions.**
+  - Is it definable on a Poisson sprinkling, with unbounded valency and no frame?
+  - Its mean dispersion: massive, with one cone.
+  - Per-realization coherence over 1 km.
+- **PASS:** a definable, Lorentz-invariant-in-law, norm-preserving rule with a massive one-cone mean, and packets coherent over 1 km by a controlled law.
+- **FAIL:** a no-go under stated hypotheses (referee).
+- **INCONCLUSIVE:** otherwise.
+
+### Lane K: the cost of keeping the grid (B1 Test 2, with the referee's corrections)
+
+**Setting.** K7a's staggered h on Z⁴, coupled to lattice QED through the best available stress (K3a's optimized range-R stress).
+
+**Compute.** The O(e²) induced quadratic action at O(q²), decomposed into the W(B4) two-derivative forms.
+
+**Readings:**
+- **PASS:** the 5 non-gauge-invariant forms vanish by an exact identity, or go systematically to 0 under size and precision improvement. Keeping the grid then costs only the two shear tunings.
+- **FAIL:** any of them converged at ≥ 1e-4 relative to the gauge-invariant form. Keeping the grid then also costs a graviton-speed tuning.
+- **INCONCLUSIVE:** otherwise.
+
+### Lane P: the price note
+
+Not a test. A written, plain-first note assembling the refereed results into one owner-level statement of what massless gravity costs on each substrate. It is drafted by a worker, checked against the packet's referee verdicts, and refereed before any PR to main.
+
+### Lane X: extensions (the referee's ranked tests 3–5)
+
+**X1: random-lattice extension.** Direct nonzero-k spectra, a second kernel, and a fermion sea.
+- **PASS:** S_TT(k → 0) → 0, or ≤ 5e-11.
+- **FAIL:** flat and ≥ 1e-3 in the direct k-spectra, for both kernels and for the fermion.
+- **INCONCLUSIVE:** otherwise.
+
+**X2: response of a classical record gas.** S(ω) and G_T(ω) separately, using FDT only after checking that its conditions hold.
+- **PASS:** some model has Re G_T(0) = 0, with S and Im G_T both vanishing as ω^n, n ≥ 3, untuned.
+- **FAIL:** every model tested has Re G_T(0) ≠ 0 or n ≤ 1.
+- **INCONCLUSIVE:** otherwise.

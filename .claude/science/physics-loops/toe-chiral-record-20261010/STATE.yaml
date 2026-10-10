@@ -1,0 +1,18 @@
+goal: Classify the higher-rank soldered bond space on one proper orbit of (1, 2, 3), which the 2026-09-22 note left open.
+delivery_mode: milestone
+runtime: continuous
+base_commit: 0b208e91cfc
+branch: physics-loop/toe-chiral-record-20261010
+worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
+cycle: 1
+runner_result: PASS=14 FAIL=0
+pr_status: opening
+next_exact_action: Ask whether order-blindness on the 7-site cross cuts the 78-dimensional family to one line. Search origin/main first.
+stop_condition: free disk below 10Gi, or no non-overlapping route
+do_not_touch:
+  - physics-loop/toe-nn-law-values-20261009
+  - physics-loop/photon-vacuum-shift-20261009
+  - physics-loop/toe-dynamics-bridge-20261009
+resource_caps:
+  one_worktree: true
+  python_rss_kill_kb: 1500000

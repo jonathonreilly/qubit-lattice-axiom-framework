@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/one_orbit_bond_factor_dimension_2026_10_10.py
+runner_sha256: d0361b815a1fc0417acb48aeb9ee40df8249d7e60954969a6068f4a04b04377b
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.91
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS stabilizer of the seed is trivial
+PASS axis swap of the seed is outside this orbit
+PASS six axis directions
+PASS six orbits of a direction and one record
+PASS bond-symmetric covariant dimension is 84
+PASS 60 orbits have 24 images and 24 orbits have 12
+PASS no bond equals its reverse
+PASS ordered covariant bonds form 144 orbits
+PASS six distinct normalisation rows
+PASS normalisation rank is 6
+PASS each normalisation row sums to 24
+PASS a one-dimensional stand-in is not this space
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

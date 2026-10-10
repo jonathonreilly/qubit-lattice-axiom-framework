@@ -1,6 +1,6 @@
 {
- "edge_count": 15418,
- "node_count": 6869,
+ "edge_count": 15420,
+ "node_count": 6870,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15329,6 +15329,10 @@
   "one_link_exponential_moment_bound_bounded_theorem_note_2026-09-24": {
    "deps_hash": "fa64a37ff82b",
    "out_degree": 3
+  },
+  "one_orbit_bond_factor_dimension_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
   },
   "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13": {
    "deps_hash": "52a20c694372",

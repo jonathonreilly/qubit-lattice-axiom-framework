@@ -6,20 +6,19 @@ stop_at: 2026-10-10T12:02:06Z
 base_commit: 17a95e60d85afc246fc7c163adef8869ab3f4194
 branch: physics-loop/toe-nn-law-values-20261009
 worktree: /Users/jonreilly/.grok/campaigns/toe-24h-20261009/wt
-cycle: 16
-active_route: one shared integer on color 1 and one shared integer on blank, color 0 contributing 0
-approach_family: one exact linear system over Z^2 for the boundary-sign character, no new alphabet
-hard_residual: dynamics clause is supplied, not derived; formation site and rate are unsupplied; the only covariant shared symbol pair is (0, 0) and it is not a flux; the corner-weight family stops; the rank-3 module is not adopted; a menu that deletes blank corners stays outside; the proper orbit of (1, 1, 2) stays unclassified; the odd cap alphabet stays stopped; the six-direction shell family stays closed
-strongest_unresolved_obligation: formation site and rate remain unsupplied; source/action remains an open gate; a coefficient of the rank-3 module is not a selected circulation; the corner-weight family has stopped
+cycle: 17
+active_route: proper orbit of the record value (1, 1, 2) against the full signed-permutation group
+approach_family: one exact orbit count, the same comparison already used for (0, 1, 2), no new alphabet
+hard_residual: dynamics clause is supplied, not derived; formation site and rate are unsupplied; the proper orbit of (1, 1, 2) equals its mirror orbit and that equality is not a selected law; the orbit of (1, 2, 2) stays unenumerated; the only covariant shared symbol pair is (0, 0) and it is not a flux; the corner-weight family stops; the rank-3 module is not adopted; a menu that deletes blank corners stays outside; the odd cap alphabet stays stopped; the six-direction shell family stays closed
+strongest_unresolved_obligation: formation site and rate remain unsupplied; source/action remains an open gate; orbit equality is not a selected law; the corner-weight family has stopped
 files_touched:
-  - docs/PLAQUETTE_CORNER_SYMBOL_PAIR_COVARIANCE_ONLY_ZERO_BOUNDED_THEOREM_NOTE_2026-10-10.md
-  - scripts/plaquette_corner_symbol_pair_covariance_only_zero_2026_10_10.py
-  - logs/runner-cache/plaquette_corner_symbol_pair_covariance_only_zero_2026_10_10.txt
+  - docs/ONE_ONE_TWO_PROPER_ORBIT_EQUALS_MIRROR_ORBIT_BOUNDED_THEOREM_NOTE_2026-10-10.md
+  - scripts/one_one_two_proper_orbit_equals_mirror_orbit_2026_10_10.py
+  - logs/runner-cache/one_one_two_proper_orbit_equals_mirror_orbit_2026_10_10.txt
 runner_result: "TOTAL: PASS=6 FAIL=0"
 open_imports:
-  - the alphabet {0, 1, blank} on the four corners of one unit square
-  - the circulation character given by the boundary sign
-  - a menu that deletes blank corners
+  - the record value (1, 1, 2) under signed permutation matrices
+  - the orbit of (1, 2, 2), unenumerated and not the next block
   - formation site and rate
 no_go_routes_pruned:
   - full proper-cubic invariance forces the singlet
@@ -41,10 +40,11 @@ no_go_routes_pruned:
   - the alternating sum of the four corner values, blank counted as 0, is covariant for that character
   - a nonzero integer corner weight, with blank counted as 0, is covariant for that character
   - a nonzero shared pair (u, v), with color 0 contributing 0, is covariant for that character
+  - the proper orbit of (1, 1, 2) is a chiral pair
 trace_class: negative_route_pruning
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
-commit: cycle-16 commit on this branch
-next_exact_action: The corner-weight family stops after this block. Do not add a third color, a fifth corner, a per-corner blank weight, or a deleted-blank menu. Do not adopt (0, 0) as a flux. Do not repeat the unit count rows, the determinant 1, the four-weight theorem, the alternating-sum witness, or the rank-3 census. The next exact question is whether the proper orbit of (1, 1, 2) equals its mirror orbit under the comparison already used for (0, 1, 2). Search origin/main first. One orbit. Do not classify (1, 2, 2) in the same block. Do not invent a hazard law. The site and the rate stay unsupplied.
+commit: cycle-17 commit on this branch
+next_exact_action: This was the last science block. The following run is deadline cleanup, not another alphabet. Do not enumerate (1, 2, 2). Do not repeat this orbit count. Do not adopt the equality as a law. Do not invent a hazard law. The site and the rate stay unsupplied. Push any unpushed commits on this branch, then at the deadline remove the worktree and write the short handoff. Do not merge. Do not open a second PR.
 stop_condition: stop_at, or disk avail below 8Gi, or no non-overlapping route remains
 do_not_touch:
   - physics-loop/photon-vacuum-shift-20261009
@@ -57,9 +57,10 @@ resource_caps:
   python_rss_kill_kb: 1500000
 lock: refreshed in this worktree for holder grok-toe-24h-20261009
 searched_origin_main: d9b869b97944676aaa759915462c529dc276a04c
-open_after_cycle_16:
-  - the proper orbit of (1, 1, 2), not yet compared with its mirror
-  - the orbit of (1, 2, 2), left out of the next block
+open_after_cycle_17:
+  - deadline cleanup, not another alphabet
+  - the orbit of (1, 2, 2), unenumerated and not the next block
   - formation site and rate
   - source/action identification
 corner_weight_family: stopped after the shared pair (u, v)
+one_one_two_orbit: proper orbit equals the full signed-permutation orbit, 24 points, not a selected law

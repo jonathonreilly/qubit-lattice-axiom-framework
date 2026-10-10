@@ -1,3 +1,14 @@
+# Artifact plan — cycle 17
+
+- Note: `docs/ONE_ONE_TWO_PROPER_ORBIT_EQUALS_MIRROR_ORBIT_BOUNDED_THEOREM_NOTE_2026-10-10.md`
+- Runner: `scripts/one_one_two_proper_orbit_equals_mirror_orbit_2026_10_10.py`
+- Cache: `logs/runner-cache/one_one_two_proper_orbit_equals_mirror_orbit_2026_10_10.txt`
+- Manifest: regenerate from a fresh citation graph, then delete the untracked
+  `citation_graph.json`
+- Same PR 9475. No second PR. No audit verdict. No edit to the home checkout.
+- This is the last science block. The following run is deadline cleanup, not
+  another alphabet.
+
 # Artifact plan — cycle 16
 
 - Note: `docs/PLAQUETTE_CORNER_SYMBOL_PAIR_COVARIANCE_ONLY_ZERO_BOUNDED_THEOREM_NOTE_2026-10-10.md`

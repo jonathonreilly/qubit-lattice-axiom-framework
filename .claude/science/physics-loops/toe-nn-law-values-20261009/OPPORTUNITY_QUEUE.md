@@ -1,6 +1,6 @@
 # Opportunity queue
 
-Ranked after cycle 16. Refresh `origin/main` before each search.
+Ranked after cycle 17. Refresh `origin/main` before each search.
 Searched commit:
 `d9b869b97944676aaa759915462c529dc276a04c`.
 
@@ -38,8 +38,9 @@ Searched commit:
    mirror orbit. The transverse-sign factor of `(1, 2, 3)` is identically
    `0`. One axis-role product is normalised and fixed by `diag(1, 1, -1)`,
    with path correlation `1/72` at `kappa = 1/2`. Do not repeat it.
-   `(1, 1, 2)`, `(1, 2, 2)`, mixed alphabets, and higher-rank bond spaces
-   stay unclassified. Do not invent a hazard law. Do not overlap the live
+   `(1, 1, 2)` is item 18 and is not a selected law. `(1, 2, 2)`, mixed
+   alphabets, and higher-rank bond spaces stay unclassified and are not
+   the next block. Do not invent a hazard law. Do not overlap the live
    Codex photon or D3Q27 branches.
 8. **Whether covariance forces `kappa` on this same alphabet.** Done on
    this branch for factors `1 + kappa F` with `F` independent of `kappa`
@@ -122,11 +123,14 @@ Searched commit:
     a per-corner blank weight, or a deleted-blank menu. Do not invent a
     hazard law. The site and the rate stay unsupplied.
 18. **Whether the proper orbit of `(1, 1, 2)` equals its mirror orbit.**
-    Not opened. Same comparison already used for `(0, 1, 2)` in the
-    order-blind factor note. One orbit. Do not classify `(1, 2, 2)` in
-    the same block. Do not repeat the `(0, 1, 2)` factor. Do not identify
-    a count with a mass density. Do not invent a hazard law. The site and
-    the rate stay unsupplied.
+    Done on this branch for one triple. Both orbits have 24 points. The
+    improper swap of the two unit axes fixes `(1, 1, 2)` and carries every
+    improper image into the proper orbit. The orbit is not a chiral pair.
+    Equality is not a selected law. Do not repeat the count. Do not
+    classify `(1, 2, 2)` next. Do not repeat the `(0, 1, 2)` factor. Do
+    not identify the count `24` with a mass density. Do not invent a
+    hazard law. The site and the rate stay unsupplied. The following run
+    is deadline cleanup, not another alphabet.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

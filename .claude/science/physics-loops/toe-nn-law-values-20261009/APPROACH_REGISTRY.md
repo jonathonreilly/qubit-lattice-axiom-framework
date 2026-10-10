@@ -211,3 +211,18 @@ every coloring. The rows from `1000` and `b000` are the identity, of
 determinant `1`. The only solution is `(0, 0)`. A basis is empty. The
 zero pair is not a flux. The corner-weight family stops. The proper orbit
 of `(1, 1, 2)` is not implied.
+
+Family Q: the proper cubic orbit of the record value `(1, 1, 2)` compared
+with its orbit under the full signed-permutation group.
+
+Target contract: decide whether the two orbits are equal, by the same
+matrix action already used for `(0, 1, 2)`. Name one improper mirror if it
+fixes the seed. Do not adopt equality as a law. Do not enumerate
+`(1, 2, 2)` in the same block.
+
+Terminal status for cycle 17: proved under that action. Both orbits have
+24 points. The swap of the two unit axes has determinant `-1` and fixes
+`(1, 1, 2)`, and it carries every improper image into the proper orbit.
+The orbit is the set of absolute values `1, 1, 2`. It is not a chiral
+pair. Equality is not a selected law. The orbit of `(1, 2, 2)` stays
+unenumerated. This is the last science block.

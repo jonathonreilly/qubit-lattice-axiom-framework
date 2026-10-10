@@ -1,5 +1,46 @@
 # Review history
 
+2026-10-10 cycle 17 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is whether the proper orbit of `(1, 1, 2)`
+  equals its mirror orbit under the comparison already used for
+  `(0, 1, 2)`. Source: cycle-16 `next_exact_action` and
+  `OPPORTUNITY_QUEUE.md` item 18 before this cycle. The formation sentence
+  was not given a note of its own.
+- V2. Not on `origin/main`. Commands were `git grep` for `(1, 1, 2)` with
+  orbit or mirror, for `proper orbit`, and for `mirror orbit`, under
+  `docs/*.md` and `scripts/*.py`. The `(1, 1, 2)` hits are a sample label
+  in a cube-orbit menu and unrelated site tuples. The mirror-orbit hits
+  are a bootstrap availability note. None states this comparison. The
+  achiral note that does state the comparison is on this branch and is
+  about `(0, 1, 2)` only. `git merge-tree --write-tree --name-only HEAD
+  origin/main` exited 0 with no conflict paths. The audit-metadata commit
+  on `origin/main` was not merged.
+- V3. The theorem of the cycle-17 note, checked by the paired runner.
+  Both orbits have 24 points. One improper mirror fixes the seed. The
+  orbit is not a chiral pair. Equality is not a selected law. The site
+  and the rate remain open. `(1, 2, 2)` was not enumerated.
+- V4. Before, this orbit was unclassified. After, it equals its full
+  signed-permutation orbit.
+- V5. Not a corollary of the `(0, 1, 2)` count. That count uses a mirror
+  that fixes a zero coordinate. The mirror here is the swap of the two
+  unit axes, and `diag(-1, 1, 1)` does not fix `(1, 1, 2)`.
+
+No-go gate for the scoped equality is in the cycle-17 source note. The
+proper orbit is not a chiral pair. A universal claim that every 24-point
+orbit equals its mirror orbit is not made. Equality is not a selected
+law. Author mutations, each on a scratch copy that was deleted: demanding
+that the proper orbit have 48 points prints `FAIL=1`; demanding that the
+fixing swap have determinant `+1` prints `FAIL=1`. Independent review has
+not been requested. No audit grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+comparison inside this one triple, separates the equality from a selected
+law and from the `(0, 1, 2)` factor, and does not write an audit verdict.
+Sections that belong to independent review were not run.
+
 2026-10-10 cycle 16 author pass. Value gate, searched `origin/main` at
 `d9b869b97944676aaa759915462c529dc276a04c`:
 

@@ -213,3 +213,19 @@ delete blank corners before the sum. No coefficient was selected. No
 hazard law was introduced. The source/action open gate stays open. The
 odd cap alphabet is not reopened. The shell censuses, the rank-3 orbit
 table, and the four-weight elimination are not rerun.
+
+Cycle 17 does not claim that every 24-point record orbit equals its
+mirror orbit, and it does not claim that the equality is a physical law.
+The scoped statement is narrower: the proper orbit of `(1, 1, 2)` has 24
+points and equals the orbit under all 48 signed permutation matrices. The
+improper swap of the two unit axes fixes the seed. The orbit is not a
+chiral pair. The equality is not a selected law, and the integer `24` is
+not a mass density.
+
+N7's steelman is accepted as an out-of-domain escape: the orbit of
+`(1, 2, 2)`, a mixed alphabet, or a higher-rank bond space. That orbit was
+not enumerated. No coefficient was selected. No hazard law was introduced.
+The source/action open gate stays open. The odd cap alphabet is not
+reopened. The shell censuses, the corner-weight family, and the
+`(0, 1, 2)` factor are not rerun. The following run is deadline cleanup,
+not another alphabet.

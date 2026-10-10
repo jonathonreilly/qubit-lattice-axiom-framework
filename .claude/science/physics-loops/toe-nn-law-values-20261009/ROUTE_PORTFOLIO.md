@@ -383,3 +383,36 @@ route. The corner-weight family stops. The site and the rate stay
 unsupplied. The odd cap alphabet stays stopped. The shell family stays
 closed. The proper orbit of `(1, 1, 2)` stays queued and is not this
 family.
+
+## Cycle 17 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is still audit metadata and was not merged.
+`git merge-tree --write-tree --name-only HEAD origin/main` exited 0 and
+listed no conflict paths.
+
+Commands and what they returned:
+
+- `git grep` for `(1, 1, 2)` on `origin/main` under `docs/*.md` and
+  `scripts/*.py`, kept only where the same line also says orbit or mirror.
+  The hits are a cube-orbit sample label `"mirror-plane generic": (1, 1, 2)`
+  and unrelated site tuples. None compares the proper orbit with the full
+  signed-permutation orbit.
+- `git grep` for `mirror orbit` under those paths. The hits are a
+  bootstrap availability note about free off-mirror orbits. None is this
+  triple.
+- `git grep` for `proper orbit` under those paths. The hits are other
+  carriers. None is `(1, 1, 2)`.
+- The achiral note on this branch states the comparison for `(0, 1, 2)`
+  and says it does not classify `(1, 1, 2)`. That factor is not an input.
+- Reading note (2) in `docs/MINIMAL_AXIOMS_2026-06-29.md` still withholds
+  the formation site, probability, and rate. The open-gate list still
+  names source/action. Neither sentence is this count.
+
+Classification: open after that matched-hit review. The executed route is
+the exact orbit comparison for `(1, 1, 2)` alone. Equality is not adopted
+as a law. `(1, 2, 2)` is not enumerated. The site and the rate stay
+unsupplied. The corner-weight family stays stopped. The odd cap alphabet
+stays stopped. The shell family stays closed. The following run is
+deadline cleanup, not another alphabet.

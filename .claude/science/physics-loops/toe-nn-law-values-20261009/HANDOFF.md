@@ -12,14 +12,59 @@ with Record, the distribution concerns which possibility a forming record
 locks, conditional on formation at that site; it does not supply the
 formation site, probability, or rate." The open-gate list still names
 "source/action and physical-observable identification." No note was opened
-that only repeats those sentences. No hazard law was invented. Cycle 16
+that only repeats those sentences. No hazard law was invented. Cycle 17
 does not close the source/action gate. It asks a different question:
-which pairs `(u, v)` make the sum of `u` at color `1` and `v` at blank
-covariant for the character defined in cycle 13, with color `0`
-contributing `0` and the same pair at every corner. The site and the rate
-stay out of the object. The corner-weight family stops after this block.
+whether the proper orbit of the record value `(1, 1, 2)` equals its orbit
+under the full signed-permutation group, including one improper mirror.
+The site and the rate stay out of the object. This is the last science
+block.
 
 ## Done this cycle
+
+Cycles 1–16 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
+`TOTAL: PASS=61 FAIL=0`, `TOTAL: PASS=44 FAIL=0`,
+`TOTAL: PASS=16 FAIL=0`, `TOTAL: PASS=30 FAIL=0`, `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=28 FAIL=0`, `TOTAL: PASS=13 FAIL=0`, `TOTAL: PASS=13 FAIL=0`,
+`TOTAL: PASS=12 FAIL=0`, `TOTAL: PASS=12 FAIL=0`, `TOTAL: PASS=8 FAIL=0`,
+`TOTAL: PASS=6 FAIL=0`, and `TOTAL: PASS=6 FAIL=0`. Do not repeat the CHSH
+specializations, the readout split, the four quadratic channels, the
+achiral-orbit path factor, the linear split of `1 + kappa F`, the
+quadratic coefficient box, the shifted cap factor, the fully recorded
+binary census, the one-blank census, the 729-shell census, the rank-3
+circulation census, the alternating-sum witness, the four-weight theorem,
+or the shared symbol pair.
+
+Cycle 17 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
+for a comparison of the proper orbit of `(1, 1, 2)` with its full
+signed-permutation orbit. `git grep` for `(1, 1, 2)` together with orbit
+or mirror, under `docs/*.md` and `scripts/*.py`, does not state that
+comparison. The achiral note on this branch states it for `(0, 1, 2)` and
+explicitly does not classify `(1, 1, 2)`. No merge with `origin/main` was
+made: `git merge-tree --write-tree --name-only HEAD origin/main` exited 0
+and listed no conflict paths. The one main-only commit is audit metadata.
+
+On the same signed-permutation action:
+
+- the full set has order `48`, and the determinant `+1` subgroup has order `24`
+- the proper orbit of `(1, 1, 2)` has `24` points and equals the full orbit
+- the improper mirror `[[0, 1, 0], [1, 0, 0], [0, 0, 1]]` fixes the seed
+- that mirror carries every improper image into the proper orbit
+- the orbit is exactly the `24` vectors of absolute values `1, 1, 2`
+- the stabilizer has order `2`, and only the identity is proper
+- a proper cycle sends the seed to `(2, 1, 1)`
+- a proper matrix sends the seed to `(1, 1, -2)`
+- `diag(-1, 1, 1)` does not fix this seed
+
+The two orbits are equal. The orbit is not a chiral pair. The equality is
+not a selected law and not a mass density. This does not derive a source
+identification or a formation rate. The orbit of `(1, 2, 2)` was not
+enumerated. The corner-weight family stays stopped. The odd cap alphabet
+stays stopped. The six-direction shell family stays closed.
+
+Runner: `TOTAL: PASS=6 FAIL=0`.
+
+## Earlier cycle 16, unchanged
 
 Cycles 1–15 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
 `TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
@@ -416,28 +461,23 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 
 ## Landed this cycle
 
-Commits through cycle 15 are already on the branch. Cycle 16 is pushed
+Commits through cycle 16 are already on the branch. Cycle 17 is pushed
 onto the same branch for PR 9475. Do not merge it. Do not open a second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 ## Next exact action
 
-The corner-weight family stops after this block. Do not add a third
-color, a fifth corner, a per-corner blank weight, or a deleted-blank
-menu. Do not adopt `(0, 0)` as a flux. Do not repeat the unit count rows,
-the determinant `1`, the reversal of `1000` or `b000`, the four-weight
-theorem, the alternating-sum witness, or the rank-3 census. The next
-exact question, already left unclassified and not part of this family,
-is whether the proper orbit of `(1, 1, 2)` equals its mirror orbit under
-the same comparison that
-`docs/ACHIRAL_ZERO_ONE_TWO_ORBIT_ORDER_BLIND_FACTOR_BOUNDED_THEOREM_NOTE_2026-10-09.md`
-used for `(0, 1, 2)`. Search `origin/main` first. One orbit. Do not
-classify `(1, 2, 2)` in the same block. Do not repeat the order-blind
-factor of `(0, 1, 2)`. Do not repeat the shell censuses or the cap-factor
-cycles. The odd cap alphabet stays stopped. The six-direction shell
-family stays closed. Do not invent a hazard law. Do not identify a count
-with a mass density. The site and the rate stay unsupplied.
+This was the last science block. The following run is deadline cleanup,
+not another alphabet. Do not enumerate `(1, 2, 2)`. Do not repeat this
+orbit count. Do not adopt the equality as a law. Do not repeat the
+order-blind factor of `(0, 1, 2)`, the shell censuses, the cap-factor
+cycles, or the corner-weight family. The odd cap alphabet stays stopped.
+The six-direction shell family stays closed. Do not invent a hazard law.
+Do not identify the count `24` with a mass density. The site and the rate
+stay unsupplied. At the deadline, push any unpushed commits on this
+branch, remove the worktree, and write the short handoff. Do not merge.
+Do not open a second PR.
 
 ## Cleanup
 

@@ -5,8 +5,14 @@ target_blocker_text: "source/action and physical-observable identification"
 source_of_blocker_text: frontier_question
 reachability_to_target: prunes
 artifact_role: theorem
-next_trace_action: "The only shared pair (u, v) covariant for the boundary-sign character is (0, 0). The zero pair is not a flux. The corner-weight family stops. The site and the rate stay unsupplied."
+next_trace_action: "The proper orbit of (1, 1, 2) equals its mirror orbit and is not a chiral pair. Equality is not a selected law. The orbit of (1, 2, 2) stays unenumerated. The following run is deadline cleanup, not another alphabet. The site and the rate stay unsupplied."
 ```
+
+Cycle 17 prunes the reading that the proper orbit of `(1, 1, 2)` is a
+chiral pair. One improper mirror fixes the seed, so the proper orbit
+already equals the full signed-permutation orbit. Both have 24 points.
+That equality is not adopted as a law. The quoted blocker below is not
+closed. The following run is deadline cleanup, not another alphabet.
 
 Cycle 16 prunes the reading that some nonzero shared pair, with color `0`
 contributing `0`, color `1` contributing `u`, and blank contributing `v`,

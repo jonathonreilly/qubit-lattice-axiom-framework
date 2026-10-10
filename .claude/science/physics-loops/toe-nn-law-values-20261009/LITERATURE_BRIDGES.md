@@ -1,6 +1,7 @@
 # Literature bridges
 
-No literature search was required for the shared symbol-pair kernel, the
+No literature search was required for the `(1, 1, 2)` orbit comparison, the
+shared symbol-pair kernel, the
 corner-weight kernel, the
 alternating corner sum, the
 square-circulation census, the

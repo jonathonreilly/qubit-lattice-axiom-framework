@@ -1,3 +1,25 @@
+# Claim status certificate — cycle 17
+
+- Intended audit claim type: `bounded_theorem`
+- Author surface: bounded-support, conditional on the record value
+  `(1, 1, 2)` and on the signed-permutation action already used to compare
+  one other triple with its mirror
+- Current ledger status of this new note: none yet; do not invent one
+- Audit remains required. This file is not a verdict.
+- Open imports: the triple `(1, 1, 2)`, the orbit of `(1, 2, 2)` left
+  unenumerated, and the formation site and rate
+- Route pruned: the proper orbit of `(1, 1, 2)` is a chiral pair
+- Both orbits have 24 points. One improper mirror fixes the seed. Equality
+  is not a selected law and not a mass density
+- No-go packet in the source note is scoped to this one triple. It does
+  not enumerate `(1, 2, 2)`, and it does not select a coefficient
+- The corner-weight family stays stopped. The odd cap alphabet stays
+  stopped. The six-direction shell family stays closed
+- Runner: `TOTAL: PASS=6 FAIL=0` at the worktree copy, re-run by the author
+  through `runner_cache.py`
+- Independent review has not been requested
+- The following run is deadline cleanup, not another alphabet
+
 # Claim status certificate — cycle 16
 
 - Intended audit claim type: `bounded_theorem`

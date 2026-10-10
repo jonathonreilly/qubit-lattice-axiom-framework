@@ -1,3 +1,33 @@
+# Assumptions and imports — cycle 17
+
+Supplied by the axioms, and used only as named:
+
+- proper cubic rotations about lattice sites
+- source/action left outside the axioms
+- the formation site, probability, and rate left unsupplied
+
+Declared for this cycle, not an axiom:
+
+- the integer triple `(1, 1, 2)`
+- the 48 signed permutation matrices, as the comparison set already used
+  for `(0, 1, 2)`, not as extra symmetries of the admissibility rule
+- the determinant `+1` subset as the proper cubic comparison
+
+Not used: the axis-role bond product, `kappa`, the path correlation
+`1/72`, an edge flux, a corner weight, the shell censuses, a cap pencil,
+a CHSH score, a readout weight, a quadratic channel, the orbit of
+`(1, 2, 2)`, a dynamics clause, a Hamiltonian, literature comparator
+values, and the three approved primitives `scale_reference_primitive`,
+`kinetic_isotropy_primitive`, and `realized_state_primitive`. The premise
+registry at `docs/audit/data/axiom_premise_nodes.json` names those three
+primitives. None is an input here.
+
+Counterfactual: if the seed is `(1, 2, 2)`, or if the action is not the
+signed-permutation action, the theorem does not apply. The witness mirror
+is the swap of the two unit axes. `diag(-1, 1, 1)` does not fix this seed.
+The site and the rate remain unsupplied. Orbit equality is not the next
+selected law. The following run is deadline cleanup, not another alphabet.
+
 # Assumptions and imports — cycle 16
 
 Supplied by the axioms, and used only as named:

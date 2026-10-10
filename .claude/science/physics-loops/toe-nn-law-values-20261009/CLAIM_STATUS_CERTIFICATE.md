@@ -1,3 +1,27 @@
+# Claim status certificate — cycle 14
+
+- Intended audit claim type: `bounded_theorem`
+- Author surface: bounded-support, conditional on colorings of one unit
+  square by `{0, 1, blank}`, on the boundary-sign character already
+  defined, and on the numeric map that sends blank to `0` inside one sum
+- Current ledger status of this new note: none yet; do not invent one
+- Audit remains required. This file is not a verdict.
+- Open imports: the four-corner alphabet, the boundary-sign character, the
+  blank-to-zero map inside this sum, other integer weight vectors, a menu
+  that deletes blank corners, and the formation site and rate
+- Route pruned: the alternating sum of the four corner values is covariant
+  for that character
+- The sum on `0101` is `-2`. The named half-turn requires `+2`. No
+  coefficient triple is assigned. The sum is not a flux
+- No-go packet in the source note is scoped to this one assignment. It
+  does not classify other weight vectors, and it does not select a
+  coefficient
+- The odd cap alphabet stays stopped. The six-direction shell family stays
+  closed. The rank-3 module is not a selected circulation
+- Runner: `TOTAL: PASS=8 FAIL=0` at the worktree copy, re-run by the author
+  through `runner_cache.py`
+- Independent review has not been requested
+
 # Claim status certificate — cycle 13
 
 - Intended audit claim type: `bounded_theorem`

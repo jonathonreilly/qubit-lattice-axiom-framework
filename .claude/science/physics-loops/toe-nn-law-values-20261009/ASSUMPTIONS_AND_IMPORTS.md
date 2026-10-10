@@ -1,3 +1,32 @@
+# Assumptions and imports — cycle 14
+
+Supplied by the axioms, and used only as named:
+
+- translations and proper cubic rotations about lattice sites
+- source/action left outside the axioms
+- the formation site, probability, and rate left unsupplied
+
+Declared for this cycle, not an axiom:
+
+- one unit square and the alphabet `{0, 1, blank}` on its four corners
+- the boundary-sign character already defined on the eight corner-preserving
+  proper isometries
+- the one sum `n(c0) - n(c1) + n(c2) - n(c3)`, with blank contributing `0`
+
+Not used: an edge flux, a coefficient triple, another weight vector, the
+odd cap bond factor, the `3×3` bond correlation, a CHSH score, a readout
+weight, a quadratic channel, the shell censuses, a menu that deletes blank
+corners, a dynamics clause, a Hamiltonian, literature comparator values,
+and the three approved primitives `scale_reference_primitive`,
+`kinetic_isotropy_primitive`, and `realized_state_primitive`. The premise
+registry at `docs/audit/data/axiom_premise_nodes.json` names those three
+primitives. None is an input here.
+
+Counterfactual: if blank corners are deleted before the sum, or if another
+weight vector is substituted, Theorems 1 and 2 do not apply. The witness
+`0101` has no blank. The site and the rate remain unsupplied. The sum is
+not the next selected flux.
+
 # Assumptions and imports — cycle 13
 
 Supplied by the axioms, and used only as named:

@@ -1,3 +1,12 @@
+# Artifact plan — cycle 14
+
+- Note: `docs/PLAQUETTE_CORNER_ALTERNATING_SUM_NOT_COVARIANT_BOUNDED_THEOREM_NOTE_2026-10-10.md`
+- Runner: `scripts/plaquette_corner_alternating_sum_not_covariant_2026_10_10.py`
+- Cache: `logs/runner-cache/plaquette_corner_alternating_sum_not_covariant_2026_10_10.txt`
+- Manifest: regenerate from a fresh citation graph, then delete the untracked
+  `citation_graph.json`
+- Same PR 9475. No second PR. No audit verdict. No edit to the home checkout.
+
 # Artifact plan — cycle 13
 
 - Note: `docs/PLAQUETTE_CORNER_CIRCULATION_NOT_FORCED_BOUNDED_THEOREM_NOTE_2026-10-10.md`

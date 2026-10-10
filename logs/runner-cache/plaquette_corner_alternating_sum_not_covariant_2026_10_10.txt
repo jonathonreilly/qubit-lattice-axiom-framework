@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/plaquette_corner_alternating_sum_not_covariant_2026_10_10.py
+runner_sha256: 350fba13b3ae8d80f614e3c461d835dbe3741956c93cb929d109e791002cadb0
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS the reversal x -> Rx with R swapping x and y and sending z to -z is one corner-preserving proper isometry
+PASS those eight maps are the boundary cycles, four of each character, and the character is a homomorphism
+PASS the reversal fixes 0101, whose alternating sum is -2 rather than the required +2
+PASS the reversal fixes 27 colorings, and the alternating sum is nonzero on 18 of them
+PASS the sign of the corner permutation does not repair the witness
+PASS the quarter turn sends the alternating sum of 1000 from 1 to -1
+PASS blank counts as 0, the alphabet is unchanged, and the sum is not identically zero
+PASS the assignment fails on 192 pairs, including the reversal of 0101
+witness_isometry: R = [[0, 1, 0], [1, 0, 0], [0, 0, -1]], b = (0, 0, 0), perm = (0, 3, 2, 1), chi = -1
+witness_coloring: 0101, value = -2, image = 0101, image_value = -2, required = 2
+per_element: one reversal, one coloring, and the eight boundary characters; 192 failing pairs, with no coefficient triple emitted
+per_site: one supplied unit square; the sum is not read on a second square; no site was selected
+per_mode: the circulation character already defined; the alternating sum was not adopted as a flux
+per_block: alphabet {0, 1, blank}; blank counts as 0 only inside this sum; no fourth color
+lattice_wide: checked and not executed — no infinite lattice, no formation site, and no formation rate
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

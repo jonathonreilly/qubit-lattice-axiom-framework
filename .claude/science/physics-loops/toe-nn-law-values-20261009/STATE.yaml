@@ -6,16 +6,16 @@ stop_at: 2026-10-10T12:02:06Z
 base_commit: 17a95e60d85afc246fc7c163adef8869ab3f4194
 branch: physics-loop/toe-nn-law-values-20261009
 worktree: /Users/jonreilly/.grok/campaigns/toe-24h-20261009/wt
-cycle: 13
-active_route: 81 colorings of one unit square by {0, 1, blank}, circulation character
-approach_family: proper isometries preserving the four corners, integers transforming by the boundary sign
-hard_residual: dynamics clause is supplied, not derived; formation site and rate are unsupplied; the rank-3 circulation module is not adopted; a menu that deletes blank corners is outside the census; no edge flux was formed; the odd cap alphabet stays stopped; the six-direction shell family stays closed
-strongest_unresolved_obligation: formation site and rate remain unsupplied; source/action remains an open gate; a coefficient of the rank-3 module is not a selected circulation
+cycle: 14
+active_route: alternating sum of the four corner values, blank counted as 0
+approach_family: the boundary-sign character already defined, one integer assignment, no new alphabet
+hard_residual: dynamics clause is supplied, not derived; formation site and rate are unsupplied; the alternating sum is not covariant and is not a flux; no coefficient triple was assigned; other integer weight vectors on the four corners are unclassified; the rank-3 module is not adopted; a menu that deletes blank corners stays outside; the odd cap alphabet stays stopped; the six-direction shell family stays closed
+strongest_unresolved_obligation: formation site and rate remain unsupplied; source/action remains an open gate; a coefficient of the rank-3 module is not a selected circulation; other corner-weight vectors are not classified
 files_touched:
-  - docs/PLAQUETTE_CORNER_CIRCULATION_NOT_FORCED_BOUNDED_THEOREM_NOTE_2026-10-10.md
-  - scripts/plaquette_corner_circulation_not_forced_2026_10_10.py
-  - logs/runner-cache/plaquette_corner_circulation_not_forced_2026_10_10.txt
-runner_result: "TOTAL: PASS=12 FAIL=0"
+  - docs/PLAQUETTE_CORNER_ALTERNATING_SUM_NOT_COVARIANT_BOUNDED_THEOREM_NOTE_2026-10-10.md
+  - scripts/plaquette_corner_alternating_sum_not_covariant_2026_10_10.py
+  - logs/runner-cache/plaquette_corner_alternating_sum_not_covariant_2026_10_10.txt
+runner_result: "TOTAL: PASS=8 FAIL=0"
 open_imports:
   - the alphabet {0, 1, blank} on the four corners of one unit square
   - the circulation character given by the boundary sign
@@ -38,10 +38,11 @@ no_go_routes_pruned:
   - a one-blank shell forces one locked direction under the soldered action
   - a ternary shell forces one locked direction under the soldered six-direction action
   - proper-cubic covariance forces a unique nonzero circulation on the 81 square colorings
+  - the alternating sum of the four corner values, blank counted as 0, is covariant for that character
 trace_class: negative_route_pruning
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
-commit: cycle-13 commit on this branch
-next_exact_action: Do not repeat the 81-coloring circulation census, the rank-3 module, or the witnesses 001b, 011b, 01bb, and 0101. Do not adopt a coefficient. Do not form an edge flux. Do not repeat the 729-shell census, the one-blank census, the binary-shell census, or the cap-factor cycles. The odd cap alphabet stays stopped. The six-direction shell family stays closed. Do not delete blank corners and call the result a selected sign. Do not invent a hazard law. The site and the rate stay unsupplied.
+commit: cycle-14 commit on this branch
+next_exact_action: Do not repeat the alternating-sum witness, the value -2 on 0101, the half-turn (x, y, z) -> (y, x, -z), the quarter turn of 1000, or the 192 failing pairs. Do not assign coefficients on 001b, 011b, and 01bb. Do not adopt the sum as a flux. Do not repeat the rank-3 census. The next exact question is which integer weight vectors on these four corners, with blank counted as 0, are covariant for the same character. Do not enlarge the alphabet. Do not repeat the shell censuses or the cap-factor cycles. The odd cap alphabet stays stopped. The six-direction shell family stays closed. Do not delete blank corners and call the result a selected sign. Do not invent a hazard law. The site and the rate stay unsupplied.
 stop_condition: stop_at, or disk avail below 8Gi, or no non-overlapping route remains
 do_not_touch:
   - physics-loop/photon-vacuum-shift-20261009
@@ -54,7 +55,8 @@ resource_caps:
   python_rss_kill_kb: 1500000
 lock: refreshed in this worktree for holder grok-toe-24h-20261009
 searched_origin_main: d9b869b97944676aaa759915462c529dc276a04c
-open_after_cycle_13:
+open_after_cycle_14:
+  - other integer weight vectors on the four corners, blank counted as 0
   - a menu that deletes blank corners before the circulation character
   - formation site and rate
   - source/action identification

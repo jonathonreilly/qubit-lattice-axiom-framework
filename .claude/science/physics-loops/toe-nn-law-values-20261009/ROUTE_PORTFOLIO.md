@@ -292,3 +292,32 @@ the 81 colorings and the boundary-sign character. No edge flux and no
 deleted-blank menu is part of the route. The site and the rate stay
 unsupplied. The odd cap alphabet stays stopped. The shell family stays
 closed.
+
+## Cycle 14 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is still audit metadata and was not merged.
+`git merge-tree --write-tree --name-only HEAD origin/main` exited 0 and
+listed no conflict paths.
+
+Commands and what they returned:
+
+- `git grep` for `alternating sum` on `origin/main` under `docs/*.md` and
+  `scripts/*.py`. The hits are a Weyl character, a charge-gas bound, a
+  monotone formation identity, and other carriers. None is the alternating
+  sum of four corner values in `{0, 1, blank}`.
+- `git grep` for `corner-preserving`, `covariant circulation`, `free module
+  of rank 3`, and `blank counted as 0` under those paths. No hit evaluates
+  this sum. The rank-3 module is on this branch, not on `origin/main`.
+- Reading note (2) in `docs/MINIMAL_AXIOMS_2026-06-29.md` still withholds
+  the formation site, probability, and rate. The open-gate list still
+  names source/action. Neither sentence is this evaluation.
+- Cycle 13 on this branch defines the character and names `0101` as
+  killed. It does not form the alternating sum.
+
+Classification: open after that matched-hit review. The executed route is
+this one sum against the character already defined. No coefficient triple
+and no edge flux is part of the route. Other weight vectors stay queued.
+The site and the rate stay unsupplied. The odd cap alphabet stays stopped.
+The shell family stays closed.

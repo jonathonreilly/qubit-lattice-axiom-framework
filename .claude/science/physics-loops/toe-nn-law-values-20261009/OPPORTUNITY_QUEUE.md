@@ -1,6 +1,6 @@
 # Opportunity queue
 
-Ranked after cycle 13. Refresh `origin/main` before each search.
+Ranked after cycle 14. Refresh `origin/main` before each search.
 Searched commit:
 `d9b869b97944676aaa759915462c529dc276a04c`.
 
@@ -98,6 +98,19 @@ Searched commit:
     A menu that deletes blank corners is outside this census and is not
     queued. Do not invent a hazard law. The site and the rate stay
     unsupplied. The source/action gate stays open.
+15. **Whether the alternating corner sum is that circulation.** Done on
+    this branch for one assignment, `n(c0) - n(c1) + n(c2) - n(c3)`, with
+    blank counted as `0`. It is not covariant. The witness is the half-turn
+    `(x, y, z) ↦ (y, x, -z)` and the coloring `0101`, where the sum is
+    `-2` rather than `+2`. No coefficient triple is assigned. The sum is
+    not a flux. Do not repeat the witness. Other integer weight vectors on
+    these four corners are item 16, not a second pass through this sum.
+    Do not invent a hazard law. The site and the rate stay unsupplied.
+16. **Which integer corner weights are covariant.** Not opened. Same
+    alphabet, same character, blank counted as `0`. Do not enlarge the
+    alphabet. Do not adopt a nonzero result as a flux. Do not identify a
+    coefficient with a mass density. A menu that deletes blank corners
+    stays outside and is not queued.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

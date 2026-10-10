@@ -169,3 +169,17 @@ N7's steelman is accepted as an out-of-domain escape: a menu that deletes
 blank corners before the character. No coefficient was selected. No hazard
 law was introduced. The source/action open gate stays open. The odd cap
 alphabet is not reopened. The shell censuses are not rerun.
+
+Cycle 14 does not claim that every integer function of the four corners
+fails the character, and it does not claim that the alternating sum is the
+physical circulation. The scoped statement is narrower: the one sum
+`n(c0) - n(c1) + n(c2) - n(c3)`, with blank contributing `0`, is not
+covariant. The half-turn `(x, y, z) ↦ (y, x, -z)` fixes `0101` and has
+character `-1`, while the sum is `-2`. No coefficient triple is assigned,
+and the sum is not a flux.
+
+N7's steelman is accepted as an out-of-domain escape: another weight
+vector, or a menu that deletes blank corners before the sum. No
+coefficient was selected. No hazard law was introduced. The source/action
+open gate stays open. The odd cap alphabet is not reopened. The shell
+censuses and the rank-3 orbit table are not rerun.

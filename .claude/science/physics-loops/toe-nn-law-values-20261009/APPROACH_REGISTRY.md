@@ -167,3 +167,16 @@ free orbits `001b`, `011b`, and `01bb`. Zero is covariant. The three
 coefficients are independent, so the circulation is not unique and not
 unique up to one sign. The other 57 colorings are forced to 0. No
 coefficient is selected. A menu that deletes blanks is not implied.
+
+Family N: one alternating sum of the four corner values, with blank
+counted as `0`, tested against the boundary-sign character of Family M.
+
+Target contract: decide whether that one assignment is covariant, and if
+so name its three integer coefficients on `001b`, `011b`, and `01bb`. If
+not, name one isometry and one coloring. Do not adopt the sum as a flux.
+
+Terminal status for cycle 14: proved under that character and that numeric
+map. The assignment is not covariant. The witness is the half-turn
+`(x, y, z) ↦ (y, x, -z)` and the coloring `0101`, where the sum is `-2`
+rather than `+2`. No coefficient triple is assigned. The sum is not a
+flux. Other weight vectors are not implied.

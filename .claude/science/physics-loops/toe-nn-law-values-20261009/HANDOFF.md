@@ -12,13 +12,60 @@ with Record, the distribution concerns which possibility a forming record
 locks, conditional on formation at that site; it does not supply the
 formation site, probability, or rate." The open-gate list still names
 "source/action and physical-observable identification." No note was opened
-that only repeats those sentences. No hazard law was invented. Cycle 13
+that only repeats those sentences. No hazard law was invented. Cycle 14
 does not close the source/action gate. It asks a different question:
-whether proper-cubic covariance forces a unique nonzero circulation on
-the 81 colorings of one unit square by `{0, 1, blank}`, with the site and
-the rate left out of the object.
+whether the alternating sum of the four corner values, with blank counted
+as `0`, is covariant for the character defined in cycle 13. The site and
+the rate stay out of the object.
 
 ## Done this cycle
+
+Cycles 1–13 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
+`TOTAL: PASS=61 FAIL=0`, `TOTAL: PASS=44 FAIL=0`,
+`TOTAL: PASS=16 FAIL=0`, `TOTAL: PASS=30 FAIL=0`, `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=28 FAIL=0`, `TOTAL: PASS=13 FAIL=0`, `TOTAL: PASS=13 FAIL=0`,
+`TOTAL: PASS=12 FAIL=0`, and `TOTAL: PASS=12 FAIL=0`. Do not repeat the
+CHSH specializations, the readout split, the four quadratic channels, the
+achiral-orbit path factor, the linear split of `1 + kappa F`, the
+quadratic coefficient box, the shifted cap factor, the fully recorded
+binary census, the one-blank census, the 729-shell census, or the
+rank-3 circulation census.
+
+Cycle 14 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
+for an evaluation of the alternating sum of four corner values in
+`{0, 1, blank}`, with blank counted as `0`. The alternating-sum hits are
+a Weyl character, a charge-gas bound, and other carriers. None evaluates
+this sum against the boundary-sign character. Cycle 13 on this branch
+defines that character and does not form the sum. No merge with
+`origin/main` was made: `git merge-tree --write-tree --name-only HEAD
+origin/main` exited 0 and listed no conflict paths. The one main-only
+commit is audit metadata.
+
+On the same unit square:
+
+- the assignment is `n(c0) - n(c1) + n(c2) - n(c3)`, with `n(b) = 0`
+- the half-turn `(x, y, z) ↦ (y, x, -z)` preserves the square, has
+  character `-1`, and fixes `0101`
+- the alternating sum on `0101` is `-2`, not the required `+2`
+- that coloring has no blank, so the failure is not the blank convention
+- the same half-turn fixes 27 colorings, and the sum is nonzero on 18
+- the corner-permutation sign of this half-turn is also `-1` and does
+  not repair the witness
+- the quarter turn `x ↦ (1 - y, x, z)` sends the sum of `1000` from `1`
+  to `-1`
+- the character identity fails on 192 pairs
+- no coefficient triple on `001b`, `011b`, and `01bb` is assigned
+
+The sum is not a flux. No corner entry is a mass density. This does not
+derive a source identification or a formation rate. Other integer weight
+vectors on the four corners stay unclassified. The odd cap alphabet stays
+stopped. The six-direction shell family stays closed. A menu that deletes
+blank corners stays outside.
+
+Runner: `TOTAL: PASS=8 FAIL=0`.
+
+## Earlier cycle 13, unchanged
 
 Cycles 1–12 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
 `TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
@@ -274,27 +321,28 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 
 ## Landed this cycle
 
-Commits through cycle 12 are already on the branch. Cycle 13 is pushed
+Commits through cycle 13 are already on the branch. Cycle 14 is pushed
 onto the same branch for PR 9475. Do not merge it. Do not open a second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 ## Next exact action
 
-Do not repeat the 81-coloring circulation census, the rank-3 module, or
-the witnesses `001b`, `011b`, `01bb`, and `0101`. Do not adopt a
-coefficient. Do not form an edge flux. Do not repeat the 729-shell
-census, the shells `000000`, `111111`, and `bbbbbb`, or the uniform law
-on those shells. Do not adopt either five-blank point mass. Do not repeat
-the one-blank census, the blank point mass, the antipode point mass, the
-binary-shell census, or the unsoldered count `1024`. Do not repeat the
-CHSH squares, the readout split, the four-channel count, the
-achiral-orbit path factor, the linear kappa split, the quadratic box, or
-the shifted cap factor. The odd cap alphabet stays stopped. The
-six-direction shell family stays closed. Do not delete blank corners, or
-blank directions, and call the result a selected sign. Do not invent a
-hazard law. Do not identify a count with a mass density. The site and the
-rate stay unsupplied.
+Do not repeat the alternating-sum witness, the value `-2` on `0101`, the
+half-turn `(x, y, z) ↦ (y, x, -z)`, the quarter turn of `1000`, or the
+`192` failing pairs. Do not assign coefficients on `001b`, `011b`, and
+`01bb`. Do not adopt the sum as a flux. Do not repeat the rank-3 census
+or the witnesses as a module basis. The next exact question is which
+integer weight vectors on these four corners, with blank counted as `0`,
+are covariant for the same character. Do not enlarge the alphabet. Do not
+repeat the 729-shell census, the one-blank census, the binary-shell
+census, the unsoldered count `1024`, the CHSH squares, the readout split,
+the four-channel count, the achiral-orbit path factor, the linear kappa
+split, the quadratic box, or the shifted cap factor. The odd cap alphabet
+stays stopped. The six-direction shell family stays closed. Do not delete
+blank corners, or blank directions, and call the result a selected sign.
+Do not invent a hazard law. Do not identify a count with a mass density.
+The site and the rate stay unsupplied.
 
 ## Cleanup
 

@@ -1,5 +1,47 @@
 # Review history
 
+2026-10-10 cycle 14 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is whether the alternating sum of the four
+  corner values in boundary order, with blank counted as `0`, is covariant
+  for the character already defined, and if so what its three coefficients
+  are. Source: the campaign block after the rank-3 census, which forbade
+  adopting a coefficient or forming an edge flux and left this sum
+  unevaluated. The formation sentence was not given a note of its own.
+- V2. Not on `origin/main`. Commands were `git grep` for `alternating sum`,
+  `corner-preserving`, `covariant circulation`, `free module of rank 3`,
+  and `blank counted as 0` under `docs/*.md` and `scripts/*.py`. The
+  alternating-sum hits are a Weyl character, a charge-gas bound, and other
+  carriers. None is this four-corner sum. `git merge-tree --write-tree
+  --name-only HEAD origin/main` exited 0 with no conflict paths. The
+  audit-metadata commit on `origin/main` was not merged.
+- V3. Theorems 1 and 2 of the cycle-14 note, checked by the paired runner.
+  The sum is not covariant. The witness is the half-turn
+  `(x, y, z) ↦ (y, x, -z)` and the coloring `0101`, where the sum is `-2`
+  rather than `+2`. No coefficient triple is assigned. The sum is not a
+  flux. Other weight vectors, the site, and the rate remain open.
+- V4. Before, this sum had not been tested against the character. After,
+  it fails. The failure already occurs on a coloring with no blank.
+- V5. Not a corollary of the rank-3 census. That census says a covariant
+  assignment vanishes on `0101`. It does not evaluate this sum. The value
+  `-2` is computed here.
+
+No-go gate for the scoped miss is in the cycle-14 source note. The sum is
+not covariant, and no coefficients are assigned. A universal claim that no
+weight vector can be covariant is not made. Author mutations, each on a
+scratch copy that was deleted: demanding that the image value on `0101`
+equal `+2` prints `FAIL=1`; demanding that the number of failing pairs be
+`0` prints `FAIL=1`. Independent review has not been requested. No audit
+grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+negative claim inside this one assignment and the character already
+defined, separates the witness from the rank-3 orbit table, and does not
+write an audit verdict. Sections that belong to independent review were
+not run.
+
 2026-10-10 cycle 13 author pass. Value gate, searched `origin/main` at
 `d9b869b97944676aaa759915462c529dc276a04c`:
 

@@ -1,6 +1,7 @@
 # Literature bridges
 
-No literature search was required for the square-circulation census, the
+No literature search was required for the alternating corner sum, the
+square-circulation census, the
 ternary-shell census, the
 one-blank shell census, the
 binary-shell orbit census, the

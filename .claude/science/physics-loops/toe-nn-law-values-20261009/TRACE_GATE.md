@@ -5,8 +5,14 @@ target_blocker_text: "source/action and physical-observable identification"
 source_of_blocker_text: frontier_question
 reachability_to_target: prunes
 artifact_role: theorem
-next_trace_action: "Proper-cubic covariance does not force a unique nonzero circulation on the 81 square colorings. The covariant integers have rank 3. No coefficient is adopted. No edge flux is formed. The site and the rate stay unsupplied."
+next_trace_action: "The alternating sum of the four corner values, with blank counted as 0, is not covariant for the boundary-sign character. No coefficients are assigned. The sum is not a flux. The site and the rate stay unsupplied."
 ```
+
+Cycle 14 prunes the reading that this alternating corner sum is a
+covariant circulation. The half-turn `(x, y, z) ↦ (y, x, -z)` fixes
+`0101` and has character `-1`, while the sum there is `-2`. No
+coefficient triple is assigned. The sum is not adopted as a flux. The
+quoted blocker below is not closed.
 
 Cycle 13 prunes the reading that proper-cubic covariance forces a unique
 nonzero circulation on the 81 colorings of one unit square. The covariant

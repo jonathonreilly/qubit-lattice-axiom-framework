@@ -1,6 +1,6 @@
 # C3 lane F: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee: CONFIRMED WITH CORRECTIONS. This is a bounded FAIL, not a universal no-go. Three classes cannot reproduce 4D sprinkling: exchangeable generating-subset growth (link means), frontier-only growth (L <= N-1), and every classical DGC+Bell dynamics including VR towers (asymptotically, since 2+2 and 3+1 densities vanish). A surviving rule must use the order non-exchangeably, or leave the Markovian, classical or Bell-causal scope** (C3_F_referee.md).
 
 **Verdict (worker):** FAIL, under stated hypotheses. The class is sequential growth in which each new element's set of direct ancestors is exchangeable over the existing elements. That class contains every Markovian, label-invariant, Bell-causal (Rideout-Sorkin CSG) model, at any couplings, including couplings that vary with N. Frontier-only rules are also excluded, and Varadarajan-Rideout era towers are excluded asymptotically through Brightwell-Georgiou. Rules outside these classes are not excluded. needs_referee = true; the codex sol referee must confirm before this is recorded.
 

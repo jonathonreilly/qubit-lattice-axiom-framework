@@ -1,6 +1,6 @@
 # C3 lane K-num: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee (lane K): INCONCLUSIVE; K-num rejected as a lane FAIL (bounded side result only); K-ana partially supported** (C3_K_referee.md).
 
 **Verdict (worker):** FAIL, bounded to the implemented coupling (H1-H6): Euclidean scalar QED on Z^4 with one natural, universal "corner-metric" coupling to K7a-placed h, and a photon-mass IR regulator. One of the 5 anisotropic W(B4) forms (cA4, coefficient of q^2 sum_mu h_mumu^2) comes out at O(e^2) with |cA4|/|kappa2| = 0.229, i.e. 0.057 of the equivalent Einstein-Hilbert coefficient. It converges geometrically in box size to about 1% and is more than 400x above the 1e-4 threshold under every IR regulator tried. A second anisotropic combination (cA1+cA5) is also nonzero, at 0.26. The fixed setting's "best available stress" (K3a's optimized range-R stress) was NOT implemented, so for that setting the reading stays undecided (INCONCLUSIVE). Only 2 of the 5 anisotropic combinations were determined. Needs the codex sol referee before it is recorded.
 

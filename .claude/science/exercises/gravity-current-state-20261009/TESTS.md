@@ -656,3 +656,5 @@ But that mapping has not been derived.
   - **Pre-registered test S0** (signed hop, first moment zero, smeared at ℓ_k): **FAIL.** The 25 kDa molecule bar has an empty ℓ_k window (the molecule treated as an elementary scalar).
   - **Post hoc, not pre-registered, a lead only:** profiles whose first two moments vanish (Z2) clear every bar at ℓ_k of about 1e-28 to 1e-25 m.
   - **Price (suggested):** a non-locality scale ℓ_k plus a signed hop profile with cancelling moments.
+
+- **K referee (codex sol):** lane K is **INCONCLUSIVE**. The registered setting was neither computed nor defined well enough to compute. K-num is rejected as a lane FAIL; it stands only as a bounded side result for a substitute model. K-ana is partially supported. Strongest statement: "Two shear tunings alone are not established; additional speed-sector protection/tuning remains an open, generically expected cost." See `agents/C3_K_referee.md`.

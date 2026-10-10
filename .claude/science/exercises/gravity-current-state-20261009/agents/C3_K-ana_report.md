@@ -1,6 +1,6 @@
 # C3 lane K-ana: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee (lane K): INCONCLUSIVE; K-num rejected as a lane FAIL (bounded side result only); K-ana partially supported** (C3_K_referee.md).
 
 **Verdict (worker):** INCONCLUSIVE against the fixed reading. The analytic lane cannot supply the converged numbers that decide PASS-by-"systematically to 0" against FAIL.
 

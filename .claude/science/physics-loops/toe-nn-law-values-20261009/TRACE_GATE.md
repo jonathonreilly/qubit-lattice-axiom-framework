@@ -5,8 +5,14 @@ target_blocker_text: "source/action and physical-observable identification"
 source_of_blocker_text: frontier_question
 reachability_to_target: prunes
 artifact_role: theorem
-next_trace_action: "No fully recorded binary shell forces one locked possibility. The constant shells force only the uniform six-point law, and only under the soldered action. That law is not adopted. Blanks are outside the census. The site and the rate stay unsupplied. Do not invent a hazard law."
+next_trace_action: "No one-blank shell forces one locked direction under the soldered action. The blank and its antipode are both invariant point masses, and neither is adopted. Two or more blanks are outside the census. The site and the rate stay unsupplied. Do not invent a hazard law."
 ```
+
+Cycle 11 prunes the reading that a shell with exactly one blank axis
+direction forces one locked direction under the soldered six-direction
+action. The blank and its antipode are both singleton output orbits. Both
+point masses are invariant, support size 1 occurs, and neither mass is
+adopted. The quoted blocker below is not closed.
 
 Cycle 10 prunes the reading that a fully recorded binary six-neighbor
 shell forces one locked possibility. Under the soldered six-direction

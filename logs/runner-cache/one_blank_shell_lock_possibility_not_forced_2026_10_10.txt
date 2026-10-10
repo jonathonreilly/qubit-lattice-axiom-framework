@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/one_blank_shell_lock_possibility_not_forced_2026_10_10.py
+runner_sha256: a889a58bf18189070af44812c2df9a3da11469d9c3e915eba43817f51ff397f5
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.63
+status: ok
+----- stdout -----
+PASS the proper cubic group has 24 determinant-1 elements and is closed
+PASS four proper rotations fix each direction, and each of those fixes its antipode
+PASS enumeration and the Burnside average both give 12 orbits of the 192 shells
+PASS the twelve representatives have the stated shell orbits, stabilizers, and output orbits
+PASS every shell stabilizer fixes the blank and its antipode, and the three output types partition the shells
+PASS a constant equator admits both pole point masses and rejects an equatorial point mass
+PASS unequal opposite pairs admit both pole point masses and reject an equatorial point mass
+PASS a trivial stabilizer admits all six point masses and does not identify them
+PASS no one-blank shell has a unique invariant law, and both pole point masses are invariant
+PASS swapping 0 with 1 and leaving the blank fixed preserves the output orbits
+PASS the blank point mass and the antipode point mass each transport to one covariant law
+PASS each uniform-on-one-output-orbit law transports to one stabilizer-invariant law
+PASS an equatorial point mass on the constant-equator shell is not well defined under the stabilizer
+per_element: checked all 192 one-blank shells, all 6 directions, and all 24 proper rotations
+per_site: the shell is one site's neighbor tuple; no second site and no site selector was enumerated
+per_mode: one output action, the soldered six-direction menu; the unsoldered two-label menu was not enumerated
+per_block: exactly one blank direction; fully recorded binary shells and shells with two or more blanks were not enumerated
+lattice_wide: checked and not executed — no infinite lattice, no formation site, and no formation rate
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -205,3 +205,33 @@ Classification: open after that matched-hit review. The executed route is
 the 64 binary shells and the two supplied output actions. No bond factor
 and no `3×3` correlation is part of the route. The site and the rate stay
 unsupplied. The odd cap alphabet stays stopped.
+
+## Cycle 11 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is still audit metadata and was not merged.
+`git merge-tree` reported no `CONFLICT` and no `changed in both`.
+
+Commands and what they returned:
+
+- `git grep` for `blank neighbor`, `exactly one blank`, `one blank
+  direction`, and `blank direction` on `origin/main` under `docs/*.md` and
+  `scripts/*.py`. The markdown hits are the affine channel probe, in which
+  a blank slot contributes `I/2`; the priority-formation note, which
+  orients an edge toward a blank neighbor; the algebra-action note, which
+  counts initially blank neighbors; and an extensional-rule phrase. None
+  is a 12-orbit census of one-blank shells.
+- `git grep` for `output type` under the same paths. The hits are stretch
+  labels and other carriers, not stabilizer orbits of a one-blank shell.
+- The reading-note sentence in `docs/MINIMAL_AXIOMS_2026-06-29.md` still
+  withholds the formation site, probability, and rate. It is not this
+  census.
+- Cycle 10 on this branch leaves a blank neighbor outside its binary
+  census. It does not compute these orbits.
+
+Classification: open after that matched-hit review. The executed route is
+the 192 one-blank shells and the soldered six-direction action. No bond
+factor and no unsoldered label is part of the route. The site and the rate
+stay unsupplied. The odd cap alphabet stays stopped. Two or more blanks
+stay outside.

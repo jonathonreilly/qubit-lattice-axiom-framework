@@ -70,8 +70,16 @@ Searched commit:
     law of mass `1/6` and no shell forces one direction. Unsoldered to
     `{0,1}`, `511` varying covariant laws lock each label at each shell.
     Do not repeat the census. Do not adopt the uniform law. A blank
-    neighbor is outside the census and is not queued. Do not invent a
-    hazard law. The site and the rate stay unsupplied.
+    neighbor is outside that census. It is item 12, not a pencil. Do not
+    invent a hazard law. The site and the rate stay unsupplied.
+12. **Which direction one blank neighbor forces.** Done on this branch for
+    the soldered six-direction menu. The 192 shells with exactly one blank
+    form 12 orbits. The blank and its antipode are both singleton output
+    orbits. No shell forces one direction. Support size 1 occurs, and
+    neither point mass is adopted. Do not repeat the census. Do not adopt
+    either point mass. Two or more blanks are outside this census and are
+    not queued. Do not invent a hazard law. The site and the rate stay
+    unsupplied.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

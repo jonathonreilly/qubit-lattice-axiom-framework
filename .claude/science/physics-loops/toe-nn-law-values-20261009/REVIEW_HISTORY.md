@@ -1,5 +1,45 @@
 # Review history
 
+2026-10-10 cycle 11 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is whether a shell with one blank axis
+  direction, and the other five entries in `{0,1}`, forces one locked
+  direction under the soldered action. Source: the campaign block after
+  the fully recorded binary census, which left a blank neighbor outside.
+  The formation sentence was not given a note of its own.
+- V2. Not on `origin/main`. Commands were `git grep` for `blank neighbor`,
+  `exactly one blank`, `one blank direction`, and `blank direction` under
+  `docs/*.md` and `scripts/*.py`. The hits are a channel probe with `I/2`,
+  a priority rule, an algebra-action count, and unrelated output-type
+  wording. None is this 12-orbit table. `git merge-tree` reported no
+  content conflict. The audit-metadata commit on `origin/main` was not
+  merged.
+- V3. Theorems 1–3 of the cycle-11 note, checked by the paired runner.
+  Two or more blanks, the site, and the rate remain open. Neither point
+  mass is adopted.
+- V4. Before, a one-blank shell had no such census on this branch. After,
+  the blank and its antipode are both singleton output orbits, no shell
+  forces one direction, and support size 1 occurs without being selected.
+- V5. Not a corollary of the fully recorded binary census. That census
+  excludes blanks. The constant-shell uniform law is not the unique law
+  here.
+
+No-go gate for the scoped miss is in the cycle-11 source note. Neither
+point mass is adopted. A universal claim that no blank pattern can
+constrain a possibility is not made. Author mutations, each on a scratch
+copy that was deleted: demanding that the antipode point mass fail on
+`00000b` exits `FAIL=1`; demanding that the `+x` point mass be invariant
+on `00000b` exits `FAIL=1`. Independent review has not been requested. No
+audit grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+negative claim inside the one-blank soldered menu, separates the census
+from the binary-shell census and the bond-factor cycles, and does not
+write an audit verdict. Sections that belong to independent review were
+not run.
+
 2026-10-10 cycle 10 author pass. Value gate, searched `origin/main` at
 `d9b869b97944676aaa759915462c529dc276a04c`:
 

@@ -1,3 +1,33 @@
+# Assumptions and imports — cycle 11
+
+Supplied by the axioms, and used only as named:
+
+- the six nearest-neighbor directions
+- proper cubic rotations
+- source/action left outside the axioms
+
+Declared for this cycle, not an axiom:
+
+- a shell with exactly one blank direction
+- the other five entries in `{0,1}`
+- the soldered action, whose output menu is the same six directions
+
+Not used: the odd cap bond factor, the `3×3` bond correlation, a CHSH
+score, a readout weight, a quadratic channel, the cycle-6 path masses,
+the linear quarter-turn moment polynomials, the quadratic coefficient
+box, the shifted cap factor, the fully recorded binary census, the
+unsoldered two-label menu, a shell with two or more blanks, a dynamics
+clause, a Hamiltonian, literature comparator values, and the three
+approved primitives `scale_reference_primitive`,
+`kinetic_isotropy_primitive`, and `realized_state_primitive`. The premise
+registry at `docs/audit/data/axiom_premise_nodes.json` names those three
+primitives. None is an input here.
+
+Counterfactual: if two or more directions are blank, Theorems 1–3 do not
+apply. If the output menu is not the six directions, Theorem 3 does not
+apply. The site and the rate remain unsupplied. Neither point mass is the
+next selected law.
+
 # Assumptions and imports — cycle 10
 
 Supplied by the axioms, and used only as named:

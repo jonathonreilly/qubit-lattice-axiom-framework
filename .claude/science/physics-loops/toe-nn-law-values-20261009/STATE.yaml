@@ -6,21 +6,20 @@ stop_at: 2026-10-10T12:02:06Z
 base_commit: 17a95e60d85afc246fc7c163adef8869ab3f4194
 branch: physics-loop/toe-nn-law-values-20261009
 worktree: /Users/jonreilly/.grok/campaigns/toe-24h-20261009/wt
-cycle: 10
-active_route: fully recorded binary six-neighbor shells, soldered six-direction menu and unsoldered two-label menu
-approach_family: proper cubic action on {0,1}^6 and on the six output directions
-hard_residual: dynamics clause is supplied, not derived; formation site and rate are unsupplied; neither action is adopted; the uniform law on a constant shell is not a selected possibility; blanks are outside the census; the odd cap alphabet stays stopped
-strongest_unresolved_obligation: formation site and rate remain unsupplied; a blank neighbor is outside this census
+cycle: 11
+active_route: exactly one blank six-neighbor shell, soldered six-direction menu
+approach_family: proper cubic action on one-blank colorings of the six directions
+hard_residual: dynamics clause is supplied, not derived; formation site and rate are unsupplied; neither point mass is adopted; the uniform law is not a selected possibility; two or more blanks are outside the census; the odd cap alphabet stays stopped
+strongest_unresolved_obligation: formation site and rate remain unsupplied; a shell with two or more blanks is outside this census
 files_touched:
-  - docs/BINARY_SHELL_LOCK_POSSIBILITY_NOT_FORCED_BOUNDED_THEOREM_NOTE_2026-10-10.md
-  - scripts/binary_shell_lock_possibility_not_forced_2026_10_10.py
-  - logs/runner-cache/binary_shell_lock_possibility_not_forced_2026_10_10.txt
+  - docs/ONE_BLANK_SHELL_LOCK_POSSIBILITY_NOT_FORCED_BOUNDED_THEOREM_NOTE_2026-10-10.md
+  - scripts/one_blank_shell_lock_possibility_not_forced_2026_10_10.py
+  - logs/runner-cache/one_blank_shell_lock_possibility_not_forced_2026_10_10.txt
 runner_result: "TOTAL: PASS=13 FAIL=0"
 open_imports:
-  - the fully recorded binary alphabet on the six directions
+  - exactly one blank direction, with the other five entries in {0,1}
   - the soldered six-direction output action
-  - the unsoldered two-label output action
-  - blank or partially recorded neighbors
+  - shells with two or more blanks
   - formation site and rate
 no_go_routes_pruned:
   - full proper-cubic invariance forces the singlet
@@ -36,10 +35,11 @@ no_go_routes_pruned:
   - an independent quadratic pencil in this coefficient box isolates a unique nonzero parameter
   - the exhibited shifted factor's unique root is a selected interaction
   - a fully recorded binary shell forces one locked possibility
+  - a one-blank shell forces one locked direction under the soldered action
 trace_class: negative_route_pruning
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
-commit: cycle-10 commit on this branch
-next_exact_action: Do not repeat the binary-shell census, the uniform law, or the unsoldered count 1024. Do not repeat the cap-factor cycles. The odd cap alphabet stays stopped. Do not adopt the uniform law. A blank neighbor is outside this census. Do not invent a hazard law. The site and the rate stay unsupplied.
+commit: cycle-11 commit on this branch
+next_exact_action: Do not repeat the one-blank census, either pole point mass, or the binary-shell census. Do not adopt the blank point mass, the antipode point mass, or the uniform law. Do not repeat the cap-factor cycles. The odd cap alphabet stays stopped. Two or more blanks are outside this census. Do not invent a hazard law. The site and the rate stay unsupplied.
 stop_condition: stop_at, or disk avail below 8Gi, or no non-overlapping route remains
 do_not_touch:
   - physics-loop/photon-vacuum-shift-20261009
@@ -52,6 +52,6 @@ resource_caps:
   python_rss_kill_kb: 1500000
 lock: refreshed in this worktree for holder grok-toe-24h-20261009
 searched_origin_main: d9b869b97944676aaa759915462c529dc276a04c
-open_after_cycle_10:
-  - blank or partially recorded neighbors
-  - an output menu other than the six directions or the unsoldered pair {0,1}
+open_after_cycle_11:
+  - shells with two or more blanks
+  - an output menu other than the six directions

@@ -125,3 +125,16 @@ under the soldered action, and no shell forces one direction. Under the
 unsoldered action, `511` varying laws lock each label at each shell.
 Selecting either action, or the uniform law, is not implied. A blank
 neighbor is not implied.
+
+Family K: shells with exactly one blank axis direction and the other five
+entries in `{0,1}`, under the soldered six-direction action.
+
+Target contract: the shell orbits; whether the blank slot is a singleton
+output orbit; whether any shell forces one locked direction; whether
+every covariant conditional has support larger than one point. No bond
+factor and no unsoldered label.
+
+Terminal status for cycle 11: proved under that action. There are 12
+shell orbits. The blank and its antipode are singleton output orbits on
+every shell. No shell forces one direction. Support size 1 occurs, and
+neither point mass is selected. Two or more blanks are not implied.

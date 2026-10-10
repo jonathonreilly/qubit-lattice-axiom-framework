@@ -10,20 +10,53 @@ Stop at `2026-10-10T12:02:06Z`. One worktree only:
 `docs/MINIMAL_AXIOMS_2026-06-29.md`, reading note (2), still says the
 distribution does not supply the formation site, probability, or rate.
 No note was opened that only repeats that sentence. No hazard law was
-invented. Cycle 10 does not close the source/action gate. It asks a
-different question: what one fully recorded binary shell can force about
-the locked possibility, with the site and the rate left out of the object.
+invented. Cycle 11 does not close the source/action gate. It asks a
+different question: whether a shell with exactly one blank axis direction
+forces one locked direction under the soldered action, with the site and
+the rate left out of the object.
 
 ## Done this cycle
 
-Cycles 1–9 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
+Cycles 1–10 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
 `TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
 `TOTAL: PASS=61 FAIL=0`, `TOTAL: PASS=44 FAIL=0`,
 `TOTAL: PASS=16 FAIL=0`, `TOTAL: PASS=30 FAIL=0`, `TOTAL: PASS=31 FAIL=0`,
-and `TOTAL: PASS=28 FAIL=0`. Do not repeat the CHSH specializations, the
-readout split, the four quadratic channels, the achiral-orbit path factor,
-the linear split of `1 + kappa F`, the quadratic coefficient box, or the
-shifted cap factor.
+`TOTAL: PASS=28 FAIL=0`, and `TOTAL: PASS=13 FAIL=0`. Do not repeat the
+CHSH specializations, the readout split, the four quadratic channels, the
+achiral-orbit path factor, the linear split of `1 + kappa F`, the quadratic
+coefficient box, the shifted cap factor, or the fully recorded binary
+census.
+
+Cycle 11 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
+for a census of shells with exactly one blank axis direction under the 24
+proper cubic rotations. The hits that mention a blank neighbor are a
+channel probe, a priority rule, and an algebra-action count. None is this
+census. No merge with `origin/main` was made: `git merge-tree` reported no
+content conflict. The one main-only commit is audit metadata.
+
+On one shell with exactly one blank and the other five entries in `{0,1}`:
+
+- the 192 shells form 12 orbits, sizes `6, 6, 6, 6, 12, 12`, and six orbits
+  of size `24`
+- enumeration and the Burnside average agree; the group sum is `288`
+- the blank direction and its antipode are singleton output orbits on
+  every shell
+- the output types are `(4,1,1)`, `(2,2,1,1)`, and `(1,1,1,1,1,1)`, with
+  `24`, `24`, and `144` shells
+- no shell has output type `(1,)`, and no shell has a unique invariant law
+- the point mass on the blank and the point mass on the antipode both
+  transport, and they disagree on every shell
+- support size 1 occurs, so it is false that every covariant conditional
+  has support larger than one point
+- neither point mass is selected, and the uniform law is not the only
+  invariant law
+
+This does not derive a source identification or a formation rate. The odd
+cap alphabet stays stopped. Shells with two or more blanks stay outside.
+
+Runner: `TOTAL: PASS=13 FAIL=0`.
+
+## Earlier cycle 10, unchanged
 
 Cycle 10 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
 for a census of fully recorded `{0,1}` shells under the 24 proper cubic
@@ -150,21 +183,22 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 
 ## Landed this cycle
 
-Commits through cycle 9 are already on the branch. Cycle 10 is pushed
+Commits through cycle 10 are already on the branch. Cycle 11 is pushed
 onto the same branch for PR 9475. Do not merge it. Do not open a second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 ## Next exact action
 
-Do not repeat the binary-shell census, the uniform law on a constant
-shell, or the unsoldered count `1024`. Do not repeat the CHSH squares,
-the readout split, the four-channel count, the achiral-orbit path factor,
-the linear kappa split, the quadratic box, or the shifted cap factor.
-The odd cap alphabet stays stopped. Do not adopt the uniform law. A blank
-neighbor is outside this census and is not queued as a pencil. Do not
-invent a hazard law. Do not identify a shell bit with a mass density.
-The site and the rate stay unsupplied.
+Do not repeat the one-blank census, the blank point mass, the antipode
+point mass, the binary-shell census, the uniform law on a constant shell,
+or the unsoldered count `1024`. Do not repeat the CHSH squares, the
+readout split, the four-channel count, the achiral-orbit path factor, the
+linear kappa split, the quadratic box, or the shifted cap factor. The odd
+cap alphabet stays stopped. Do not adopt either point mass or the uniform
+law. Two or more blanks are outside this census and are not queued as a
+pencil. Do not invent a hazard law. Do not identify a shell entry with a
+mass density. The site and the rate stay unsupplied.
 
 ## Cleanup
 

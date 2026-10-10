@@ -1,3 +1,26 @@
+# Claim status certificate — cycle 11
+
+- Intended audit claim type: `bounded_theorem`
+- Author surface: bounded-support, conditional on shells with exactly one
+  blank direction, the other five entries in `{0,1}`, and the soldered
+  six-direction menu
+- Current ledger status of this new note: none yet; do not invent one
+- Audit remains required. This file is not a verdict.
+- Open imports: the one-blank alphabet, the soldered action, shells with
+  two or more blanks, and the formation site and rate
+- Route pruned: a one-blank shell forces one locked direction under the
+  soldered action
+- The blank and its antipode are both singleton output orbits. Both point
+  masses are invariant. Neither is adopted. Support size 1 occurs, and it
+  is not a selected possibility
+- No-go packet in the source note is scoped to this census. It does not
+  classify two or more blanks, and it does not select a point mass
+- The odd cap alphabet stays stopped. The uniform law is not a selected
+  possibility
+- Runner: `TOTAL: PASS=13 FAIL=0` at the worktree copy, re-run by the author
+  through `runner_cache.py`
+- Independent review has not been requested
+
 # Claim status certificate — cycle 10
 
 - Intended audit claim type: `bounded_theorem`

@@ -125,4 +125,18 @@ N7's steelman is accepted as an out-of-domain escape: an antipodal menu
 moved by the stabilizer, or a blank neighbor. No unique possibility was
 selected. No hazard law was introduced. The source/action open gate stays
 open. The odd cap alphabet is not reopened. The shifted factor is not
-rerun.
+rerun. The blank neighbor is cycle 11, not a second pass through the
+binary census.
+
+Cycle 11 does not claim that every blank pattern leaves the locked
+direction free, and it does not claim that the point mass on the blank is
+the physical rule. The scoped statement is narrower: on a shell with
+exactly one blank direction and the other five entries in `{0,1}`, the
+soldered six-direction action makes both the blank and its antipode
+singleton output orbits. No shell has a unique invariant law. Support
+size 1 occurs and is not selected.
+
+N7's steelman is accepted as an out-of-domain escape: two or more blank
+directions. No point mass was selected. No hazard law was introduced. The
+source/action open gate stays open. The odd cap alphabet is not reopened.
+The binary census is not rerun.

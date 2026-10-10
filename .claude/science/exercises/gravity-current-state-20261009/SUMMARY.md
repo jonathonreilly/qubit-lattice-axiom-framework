@@ -230,3 +230,51 @@ What it still lacks:
 - a graviton (a gauge mode of the geometry);
 - coherent massive matter;
 - a dynamics for the events themselves.
+
+## 10. Campaign C3 (owner, 2026-10-10 00:47Z to 04:00Z): every open lane at once
+
+**Who.** 15 research workers on Opus 5.5 at max effort, each followed by an adversarial Opus 5.5 checker at xhigh, and then a codex sol referee (another vendor) on every lane with a FAIL, a no-go or a contested claim. A compressed exercise (3 lenses, a kill round, a next test) ran on each of the three walls. Readings were fixed before every run (`TESTS.md`, "Campaign C3"). Lane reports: `agents/C3_*`.
+
+**In plain words.**
+- **Gravitational waves.** On the event substrate they travel cleanly along links, at the linearized level. But a single frozen set of events cannot carry a smooth graviton, and nothing found so far protects its masslessness.
+- **Matter.** It needs signed or complex weights: that is proved. With signed weights, heavy particles pick up noise, and whether real matter stays coherent depends on what carries mass. That is unresolved, and possibly testable against atom interferometers.
+- **Spacetime cannot grow itself** by any local rule tried. The event set has to be supplied, or formed by a non-local, size-aware law.
+- **Keeping the grid** is not shown to cost only the two shear tunings. Further speed tunings are expected but not established.
+
+| Lane | Question | Verdict (referee) | What it means |
+|---|---|---|---|
+| G-A | the event order itself as the graviton | **FAIL**, scoped to the frozen-embedding picture | On one frozen set of events a wave changes the order in jumps. The jumps' action variance exceeds the wave's own action (about 1e81 for local BD). It is sampling noise, present even without a wave |
+| G-B | a spin-2 field carried on links | **INCONCLUSIVE** (the admixture is a controlled 7.3e-28; the "mean exactly GR" clause fails only at finite density) | Linearized GWs ride links cleanly |
+| G-C | what protects the graviton | **INCONCLUSIVE** | The no-go holds only in the frozen picture. The quantum-sum branch is open |
+| M-A | packet into detector over 1 km | **M-INCONCLUSIVE** | Exact tools, but an uncontrolled growth exponent |
+| M-B | unitary matter on links | **INCONCLUSIVE** | No equivariant isometry moves amplitude between events. Link (arc) states are open |
+| M-C | mass without signed weights | **CWC: no all-nonnegative linear rule gives the massive mean**, in any dimension | Mass needs a sign or a phase somewhere |
+| M-D | composite coherence | INCONCLUSIVE (no codex referee needed) | The noise is per constituent, not total mass. The 70 s Rb result would need every mass-vertex scale below about 12 MeV, conditional on the uncontrolled chain law |
+| D | spin-½ on links | **INCONCLUSIVE** (worker FAIL not confirmed) | Order alone gives no spinor and no handedness. Massless Dirac in mean is reachable. Chiral matter needs an orientation and a spin-transport structure (a price) |
+| F | can records grow spacetime | **bounded FAIL** (CWC) | Exchangeable, frontier-only and classical DGC+Bell growth cannot give 4D |
+| K | the cost of keeping the grid | **INCONCLUSIVE** | Two shear tunings alone are not established. Speed-sector tuning is generically expected, unproved |
+| X1 | the random-lattice spectrum | **bounded FAIL** (CWC) | Flat noise, S ≥ 2e-3 |
+| X2 | the response of a classical record gas | **bounded FAIL** (CWC) | Noise without dissipation (n_S = 0) |
+| G-L | link-only lensing (Van Vleck) | [PENDING at the time of writing] | |
+
+**The three walls, after the exercises** (27 routes, all killed; same family, not refereed):
+1. **Formation:** a supplied event set, or a whole-region formation law that knows its final size.
+2. **Massive matter:**
+   - a non-locality scale plus a signed hop with cancelling moments. The pre-registered profile FAILs; a post-hoc profile whose first two moments vanish is a lead;
+   - or composites with soft binding;
+   - or a coherent quantum event dynamics.
+3. **The graviton:** a covariant growth law with Einstein histories, no e^{iS} weighting by interval-count actions, and link readouts that focus like GR (lane G-L).
+
+**Prices, named only as prices, nothing adopted:**
+- the Lattice axiom replaced, and a causal order supplied;
+- an event happening distinguished from a value being locked;
+- an orientation and spin-transport structure for chiral matter;
+- a formation law beyond nearest-neighbour locality;
+- possibly a non-locality scale for massive matter.
+
+**What closes next, in the referees' and the exercises' order:**
+- referee Lemma L and the signed-hop ladder;
+- the bound-state chain rate M_pair(R) for composites;
+- link-only lensing (G-L);
+- re-register lane K in an implementable form.
+

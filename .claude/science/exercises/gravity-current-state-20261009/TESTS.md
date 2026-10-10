@@ -832,3 +832,63 @@ R0 found these. The supervisor's "option 3 untested" was wrong.
 - **Expected lane reading:** FAIL (bounded), with the price "non-local interactions or an exact lattice momentum not in the axioms".
 
 **Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the runs.
+
+### Lane RN results (2026-10-10, 11:15Z to about 12:50Z)
+
+**Who and where.**
+- Probes L1–L3: Claude Opus 5.5 at xhigh (same family).
+- Referees: codex gpt-5.6-sol at xhigh, one per probe.
+- Files: probe reports in `agents/RN_L{1,2,3}_report.md`, referee reports in `agents/RN_L{1,2,3}_referee.md`, scripts in `scripts/laneRN/`. The referees' own checks are included there.
+
+**L1, free matter. Worker: F-FAIL (item 3 named). Referee: CONFIRMED WITH CORRECTIONS. Recorded as F-FAIL by the fixed binary; scientifically INCONCLUSIVE, since nothing failed and items were left incomplete.**
+- **Free scalar:**
+  - It has an exact local symmetric lattice stress (exact in rational arithmetic).
+  - The lapse/shift coupling is first class at linear order.
+  - The pull is Newtonian 1/r, with the same G for different masses.
+  - γ = c_m²/c_g². Setting γ = 1 is the speed match R2 already counted.
+  - The cubic correction is −Σk⁴/(4k²).
+  - The sign of the h coupling is −½h_ijT_ij in lower-index conventions.
+- **Referee correction:** a unitary seagull H_sg = −½[K_h,[K_h,H_m]], with K_h = ½h_ij Σ X_j P_i, cancels the linear-only TT susceptibilities (−0.0037 and −0.0118) exactly at uniform strain. It is finite-range, and its coefficients are fixed by H_m and P, not tuned. No physical TT mass from free matter is demonstrated.
+- **Open:**
+  - extending the seagull to non-constant h, with a full first-class algebra at O(κ). The matter-only bracket {P,P} lies outside the flat P, T00 span, but the metric-dependent completion was not searched;
+  - the symmetric stresses for the fermion and Maxwell.
+
+**L2, interacting matter. Worker: bounded FAIL. Referee: NOT CONFIRMED, so INCONCLUSIVE.**
+- **Established:** for d ≥ 2, massive nearest-neighbour lattice KG and scalar tight-binding bands have no nonzero odd periodic C¹ collision invariant (consistent with Spohn: only aω + c). So no local or exponentially quasi-local higher-body dressing can give a conserved momentum with a nonzero scalar one-particle action. This holds exactly in contact U, and at O(λ) for analytic onsite φ⁴.
+- **Not established:**
+  - a forced natural-size TT mass. μ_E = −1.009e-6·λ² and μ_T2 = +1.61e-8·λ² per cell are reproduced, but they depend on the coupling design, and the off-shell dressing loophole is real;
+  - "second class" (no bracket-rank computation);
+  - the 5-DOF count, which is wrong.
+- **Open:** matrix-valued (staggered taste) charges; gauge-mediated scattering; non-perturbative effects; zero-scattering laws; alternative coupling completions. XXZ is a valid 1D control only.
+
+**L3, escapes. Referee: CONFIRMED WITH CORRECTIONS.**
+- **Lapse-only coupling: FAIL** for the classes studied:
+  - as a direct multiplier, SK = −DG freezes T00 pointwise (mobility);
+  - as a natural fixed potential, γ = 0 and the Shapiro delay is half of GR's.
+- **The "conserved energy current ⇒ ballistic heat" upgrade of K3a is not established.** It needs a lattice-cohomology lemma, and the φ⁴ numerics were averaged wrongly. The corrected numbers are C(50)/C(0) = 0.05 ± 0.07 and −0.07 ± 0.06.
+- **Defect matter: INCONCLUSIVE.** The kinematics are correct, but universality does not follow from a topological charge, and binding, inertia and stability are not shown.
+- **TDiff, unimodular and Hořava are not escapes.** The projectable scalar has ω² = −(1−2c)Jg k².
+- **Kato–Sakamoto–So** gives the local Leibniz obstruction, but not a blanket theorem that no lattice momentum exists.
+
+**Lane RN verdict: INCONCLUSIVE.**
+- Under the fixed FAIL reading, the "no stress" leg is met only for the scalar single-band interacting classes.
+- The second leg is not met: the mass is not forced, and one L3 escape (defect matter) does not fail a bar.
+- No PASS.
+
+**Strongest combined statement.**
+- Ordinary single-band interacting lattice matter in d ≥ 2 cannot feed the exact-constraint VS shift constraint through a local momentum. So the live N-type route needs one of:
+  - matrix-band (staggered) matter whose tastes supply extra collision invariants;
+  - gauge-mediated interactions;
+  - defect matter with universality still to be shown;
+  - a non-local momentum (price).
+- Free matter couples consistently at linear order, and its uniform-strain TT response is cancelled by a determined seagull.
+
+**Against the registered expectation.**
+- L1 was expected to be F-PASS; it is F-FAIL by the binary, because items are incomplete.
+- L2 was expected to be a bounded FAIL with an O(λ²) natural mass; the mass is reproduced but not forced, so INCONCLUSIVE.
+- L3's lapse-only FAIL was as expected. Defect matter was expected to fail on mobility; it is INCONCLUSIVE instead.
+- The expected lane reading was FAIL; the result is INCONCLUSIVE.
+
+**Next decisive tests:**
+1. Interacting staggered fermions, the framework's own matter: do matrix-valued taste charges give an exact local momentum (a K3a/L2 extension)?
+2. The seagull for non-constant h, with full O(κ) closure, for the free scalar.

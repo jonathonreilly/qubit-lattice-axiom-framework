@@ -1,0 +1,5 @@
+XX                L=10: ||[H,J_E]||_F/(||H||_F ||J_E||_F/sqrt(dim)) = 0.000e+00
+XXZ               L=10: ||[H,J_E]||_F/(||H||_F ||J_E||_F/sqrt(dim)) = 4.769e-17
+XXZ+NNN           L=10: ||[H,J_E]||_F/(||H||_F ||J_E||_F/sqrt(dim)) = 4.012e-01
+Ising-transverse  L=10: ||[H,J_E]||_F/(||H||_F ||J_E||_F/sqrt(dim)) = 2.630e-17
+Ising-tilted      L=10: ||[H,J_E]||_F/(||H||_F ||J_E||_F/sqrt(dim)) = 3.254e-01

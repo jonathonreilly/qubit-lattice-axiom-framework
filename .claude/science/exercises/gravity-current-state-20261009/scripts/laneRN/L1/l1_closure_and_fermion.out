@@ -1,0 +1,10 @@
+=== (a) O(kappa) closure of the matter constraint algebra (free scalar m=0.6) ===
+L= 5 (random test fields): {P,P}: rel. residual 1.000; {T00,T00}: rel. residual 0.000; {P,T00}: rel. residual 0.663
+L= 8 (smooth test fields): {P,P}: rel. residual 1.000; {T00,T00}: rel. residual 0.000; {P,T00}: rel. residual 0.724
+L=12 (smooth test fields): {P,P}: rel. residual 1.000; {T00,T00}: rel. residual 0.000; {P,T00}: rel. residual 0.636
+(continuum control: all three close exactly onto P and T00 -- Dirac hypersurface algebra)
+
+=== (b) staggered fermion on L=6 torus: energy continuity with P_j = 1/2 {J_j, h} ===
+m=0.0: particle continuity err 0.0e+00; energy continuity err 0.0e+00 (dT00/dt = div P, P = (1/2)(J h + h J)); ||[h, P_tot]|| = 0.0e+00; spectrum of P_tot,x vs multiset (1/2) sin 2k_x: max dev 1.3e-15
+m=0.45: particle continuity err 0.0e+00; energy continuity err 0.0e+00 (dT00/dt = div P, P = (1/2)(J h + h J)); ||[h, P_tot]|| = 0.0e+00; spectrum of P_tot,x vs multiset (1/2) sin 2k_x: max dev 1.3e-15
+Symmetric T_ij for the fermion needs a local spin (Belinfante) term; not constructed in this probe.

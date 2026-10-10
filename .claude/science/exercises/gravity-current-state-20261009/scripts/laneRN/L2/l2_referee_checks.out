@@ -1,0 +1,17 @@
+1D TB K=pi branch:
+  max energy residual = 1.332e-15
+  max sin(k) defect   = 3.051920
+  max sin(2k) defect  = 1.360e-15
+1D TB random-sampler control, R=8:
+  singular range      = [1.012e-14, 2.533e-13]
+  worker rel nullity  = 0
+  nullity at abs 1e-10= 8
+2D TB R=8: rows=4000, cols=144, smin=9.822036e-01, smax=1.663379e+00, ratio=5.904869e-01
+3D KG R=4: rows=4000, cols=364, smin=8.970445e-01, smax=1.814135e+00, ratio=4.944751e-01
+3D unequal KG R=4: rows=4000, cols=728, smin=5.390179e-01, smax=1.412064e+00, ratio=3.817233e-01
+H_N scalar chain without G:
+  h_t dot coefficients on (E_t,E_z) = [0.0, -0.7071067811865475]
+  preserving S=0 therefore imposes E_z=0 (for nonzero k)
+m=1, L=48, eps=0.04, tadpole-subtracted I4 response:
+  E: mu_I4/lambda^2=-1.009312499516e-06, full_bare_mu/lambda^2=-8.462972508195e-05, G''=3.469e-13
+  T2: mu_I4/lambda^2=1.610816558707e-08, full_bare_mu/lambda^2=1.610816558707e-08, G''=0.000e+00

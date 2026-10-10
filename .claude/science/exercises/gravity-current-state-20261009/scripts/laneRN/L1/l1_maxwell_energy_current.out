@@ -1,0 +1,5 @@
+Yee Maxwell L=6: transverse dimension 430 of 648 link fields
+max |d^2 D_i/dt^2| on the physical subspace (i=x,y,z): ['6.69e-16', '7.46e-16', '7.07e-16']
+  (on the full unconstrained space: ['5.00e-01', '5.00e-01', '5.00e-01'] )
+sum_x T00(x) form equals H form: 0.0
+scalar control: max|d^2 D/dt^2| = ['4.44e-16', '4.44e-16', '4.44e-16']

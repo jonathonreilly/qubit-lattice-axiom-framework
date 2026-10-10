@@ -1,0 +1,15 @@
+=== (E),(M) exact lattice identities, free scalar, L=6 torus, random points ===
+m= 0.0: max|dT00/dt - div P| = 3.55e-14   max|dP/dt - G[T]| = 7.55e-15   (field scale 42.3)
+m= 0.7: max|dT00/dt - div P| = 4.26e-14   max|dP/dt - G[T]| = 8.44e-15   (field scale 29.3)
+m= 2.3: max|dT00/dt - div P| = 1.67e-13   max|dP/dt - G[T]| = 2.13e-14   (field scale 61.6)
+control: d/dt sum_x pi*forward-diff phi = [1206.915 1112.249 1047.849] (nonzero: not conserved, so no stress exists for it)
+         d/dt sum_x P_j (ours)          = ['-7.1e-15', '8.0e-15', '-3.6e-15']
+
+=== continuum limit of T_ij on a smooth plane wave (k small) ===
+per-quantum T_jj symbol sin^2 k_j/omega vs continuum k_j^2/omega: [0.0035547  0.00128037 0.00056915] [0.00355766 0.00128076 0.00056923]
+
+=== gravity: 09-14 stencils (q diag at sites, q_ij doubled on faces) ===
+max|S(qdot) + J div G| = 7.11e-15  (scale 35.5)
+max|G S^T| = 0.0   integer entries: True
+=> d/dt[S/kappa + T00] = div(-2G + P) exactly at O(sqrt kappa); d/dt[-2G_j + P_j] = -G[T]_j + G[T]_j = 0;
+   lapse/shift terms drop by G S^T = 0; {G, V_N}=0 by the note's R2 G^T = 0 (stencil identity, not re-run here).

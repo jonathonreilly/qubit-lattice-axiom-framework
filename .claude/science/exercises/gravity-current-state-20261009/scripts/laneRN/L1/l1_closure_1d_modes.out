@@ -1,0 +1,7 @@
+rel resid 1.0
+fitted zeta vs continuum Lie bracket (first 5): [-0. -0. -0. -0.  0.] [0.0696 0.0705 0.0724 0.0743 0.0761]
+norm C 0.19803175872366294 norm D(lie) 0.39601287326459417
+kc=0.20: |C - D([xi,eta])| / |C| on modes |k|<kc = 0.0190  (sign check 2.018)
+kc=0.50: |C - D([xi,eta])| / |C| on modes |k|<kc = 0.0999  (sign check 2.091)
+kc=1.00: |C - D([xi,eta])| / |C| on modes |k|<kc = 0.4310  (sign check 2.370)
+kc=3.24: |C - D([xi,eta])| / |C| on modes |k|<kc = 2.2387  (sign check 2.239)

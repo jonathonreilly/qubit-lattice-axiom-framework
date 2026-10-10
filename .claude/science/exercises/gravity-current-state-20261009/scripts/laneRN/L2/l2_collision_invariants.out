@@ -1,0 +1,62 @@
+
+== 1D onsite phi^4 (KG m=1): 3000 nontrivial resonances, max energy residual 3.3e-15, umklapp fraction 0.039
+  R= 1 odd basis     1: odd-nullity    0 (sv_min/sv_max 1.00e+00); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 5.491e-01 | IR-ball(|k|<0.6) fit: defect 5.677e-01 [normal 2.268e-01, umklapp 2.657e+00], IR err 5.6e-03
+  R= 2 odd basis     2: odd-nullity    0 (sv_min/sv_max 2.85e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 8.801e-02 | IR-ball(|k|<0.6) fit: defect 4.065e-01 [normal 1.848e-01, umklapp 1.850e+00], IR err 1.1e-02
+  R= 4 odd basis     4: odd-nullity    0 (sv_min/sv_max 2.12e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 5.104e-02 | IR-ball(|k|<0.6) fit: defect 1.042e-01 [normal 8.964e-02, umklapp 2.846e-01], IR err 2.3e-03
+  R= 8 odd basis     8: odd-nullity    0 (sv_min/sv_max 2.02e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 3.186e-02 | IR-ball(|k|<0.6) fit: defect 8.820e-02 [normal 6.501e-02, umklapp 3.100e-01], IR err 7.2e-04
+  R=16 odd basis    16: odd-nullity    0 (sv_min/sv_max 1.95e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 1.267e-02 | IR-ball(|k|<0.6) fit: defect 7.639e-02 [normal 5.513e-02, umklapp 2.745e-01], IR err 3.6e-04
+  R=32 odd basis    32: odd-nullity    0 (sv_min/sv_max 1.82e-01); even-nullity 1 (+const not in basis) | min defect f'(0)=1: 4.873e-03 | IR-ball(|k|<0.6) fit: defect 6.927e-02 [normal 4.940e-02, umklapp 2.518e-01], IR err 3.2e-04
+  (0.3s)
+
+== 1D Hubbard (TB, up-down contact): 100 nontrivial resonances, max energy residual 6.1e-15, umklapp fraction 0.000
+  R= 1 odd basis     1: odd-nullity    0 (sv_min/sv_max 1.00e+00); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 1.899e-15 | IR-ball(|k|<0.6) fit: defect 1.968e-15 [normal 1.968e-15, umklapp nan], IR err 5.5e-03
+  R= 2 odd basis     2: odd-nullity    0 (sv_min/sv_max 8.41e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 8.867e-16 | IR-ball(|k|<0.6) fit: defect 2.660e-15 [normal 2.660e-15, umklapp nan], IR err 1.0e-04
+  R= 4 odd basis     4: odd-nullity    0 (sv_min/sv_max 3.35e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 6.890e-16 | IR-ball(|k|<0.6) fit: defect 3.409e-15 [normal 3.409e-15, umklapp nan], IR err 4.1e-08
+  R= 8 odd basis     8: odd-nullity    0 (sv_min/sv_max 7.99e-02); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 6.867e-16 | IR-ball(|k|<0.6) fit: defect 4.230e-15 [normal 4.230e-15, umklapp nan], IR err 8.3e-15
+  R=16 odd basis    16: odd-nullity    0 (sv_min/sv_max 1.23e-02); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 3.359e-16 | IR-ball(|k|<0.6) fit: defect 6.035e-15 [normal 6.035e-15, umklapp nan], IR err 1.5e-14
+  R=32 odd basis    32: odd-nullity    0 (sv_min/sv_max 1.71e-03); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 2.383e-16 | IR-ball(|k|<0.6) fit: defect 1.111e-14 [normal 1.111e-14, umklapp nan], IR err 1.6e-13
+  (0.0s)
+
+== 2D onsite phi^4 (KG m=1): 6000 nontrivial resonances, max energy residual 4.4e-15, umklapp fraction 0.388
+  R= 1 odd basis     4: odd-nullity    0 (sv_min/sv_max 8.33e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 7.056e-01 | IR-ball(|k|<0.6) fit: defect 7.368e-01 [normal 5.808e-01, umklapp 9.312e-01], IR err 5.9e-03
+  R= 2 odd basis    12: odd-nullity    0 (sv_min/sv_max 7.44e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 2.443e-01 | IR-ball(|k|<0.6) fit: defect 3.806e-01 [normal 3.719e-01, umklapp 3.939e-01], IR err 1.1e-02
+  R= 4 odd basis    40: odd-nullity    0 (sv_min/sv_max 6.96e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 7.257e-02 | IR-ball(|k|<0.6) fit: defect 2.655e-01 [normal 2.777e-01, umklapp 2.450e-01], IR err 3.4e-03
+  R= 6 odd basis    84: odd-nullity    0 (sv_min/sv_max 6.64e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 3.485e-02 | IR-ball(|k|<0.6) fit: defect 2.005e-01 [normal 2.167e-01, umklapp 1.717e-01], IR err 2.9e-03
+  R= 8 odd basis   144: odd-nullity    0 (sv_min/sv_max 6.28e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 2.107e-02 | IR-ball(|k|<0.6) fit: defect 1.748e-01 [normal 1.912e-01, umklapp 1.451e-01], IR err 1.9e-03
+  (0.7s)
+
+== 2D Hubbard (TB): 6000 nontrivial resonances, max energy residual 1.8e-14, umklapp fraction 0.380
+  R= 1 odd basis     4: odd-nullity    0 (sv_min/sv_max 8.29e-01); even-nullity 1 (+const not in basis) | min defect f'(0)=1: 6.769e-01 | IR-ball(|k|<0.6) fit: defect 7.067e-01 [normal 5.273e-01, umklapp 9.276e-01], IR err 5.8e-03
+  R= 2 odd basis    12: odd-nullity    0 (sv_min/sv_max 7.50e-01); even-nullity 1 (+const not in basis) | min defect f'(0)=1: 2.352e-01 | IR-ball(|k|<0.6) fit: defect 3.704e-01 [normal 3.518e-01, umklapp 3.987e-01], IR err 1.0e-02
+  R= 4 odd basis    40: odd-nullity    0 (sv_min/sv_max 6.92e-01); even-nullity 1 (+const not in basis) | min defect f'(0)=1: 7.479e-02 | IR-ball(|k|<0.6) fit: defect 2.634e-01 [normal 2.723e-01, umklapp 2.481e-01], IR err 3.2e-03
+  R= 6 odd basis    84: odd-nullity    0 (sv_min/sv_max 6.62e-01); even-nullity 1 (+const not in basis) | min defect f'(0)=1: 3.765e-02 | IR-ball(|k|<0.6) fit: defect 2.015e-01 [normal 2.140e-01, umklapp 1.792e-01], IR err 2.8e-03
+  R= 8 odd basis   144: odd-nullity    0 (sv_min/sv_max 6.31e-01); even-nullity 1 (+const not in basis) | min defect f'(0)=1: 2.279e-02 | IR-ball(|k|<0.6) fit: defect 1.729e-01 [normal 1.859e-01, umklapp 1.491e-01], IR err 1.9e-03
+  (0.6s)
+
+== 3D onsite phi^4 (KG m=1): 8000 nontrivial resonances, max energy residual 4.4e-15, umklapp fraction 0.569
+  R= 1 odd basis    13: odd-nullity    0 (sv_min/sv_max 8.33e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 4.231e-01 | IR-ball(|k|<0.6) fit: defect 4.486e-01 [normal 4.169e-01, umklapp 4.713e-01], IR err 5.3e-03
+  R= 2 odd basis    62: odd-nullity    0 (sv_min/sv_max 7.45e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 1.111e-01 | IR-ball(|k|<0.6) fit: defect 2.511e-01 [normal 2.774e-01, umklapp 2.291e-01], IR err 6.0e-03
+  R= 3 odd basis   171: odd-nullity    0 (sv_min/sv_max 6.67e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 4.681e-02 | IR-ball(|k|<0.6) fit: defect 1.726e-01 [normal 2.047e-01, umklapp 1.435e-01], IR err 2.3e-03
+  R= 4 odd basis   364: odd-nullity    0 (sv_min/sv_max 5.89e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 2.400e-02 | IR-ball(|k|<0.6) fit: defect 1.244e-01 [normal 1.530e-01, umklapp 9.721e-02], IR err 1.8e-03
+  (1.4s)
+
+== 3D onsite phi^4 (KG m=0.2): 8000 nontrivial resonances, max energy residual 4.4e-15, umklapp fraction 0.565
+  R= 1 odd basis    13: odd-nullity    0 (sv_min/sv_max 7.99e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 4.188e-01 | IR-ball(|k|<0.6) fit: defect 4.435e-01 [normal 4.234e-01, umklapp 4.584e-01], IR err 5.4e-03
+  R= 2 odd basis    62: odd-nullity    0 (sv_min/sv_max 7.28e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 1.083e-01 | IR-ball(|k|<0.6) fit: defect 2.520e-01 [normal 2.768e-01, umklapp 2.312e-01], IR err 6.0e-03
+  R= 3 odd basis   171: odd-nullity    0 (sv_min/sv_max 6.67e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 4.391e-02 | IR-ball(|k|<0.6) fit: defect 1.678e-01 [normal 1.976e-01, umklapp 1.406e-01], IR err 2.2e-03
+  R= 4 odd basis   364: odd-nullity    0 (sv_min/sv_max 5.80e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 2.189e-02 | IR-ball(|k|<0.6) fit: defect 1.201e-01 [normal 1.458e-01, umklapp 9.568e-02], IR err 1.8e-03
+  (1.3s)
+
+== 3D Hubbard (TB): 8000 nontrivial resonances, max energy residual 2.2e-14, umklapp fraction 0.563
+  R= 1 odd basis    13: odd-nullity    0 (sv_min/sv_max 8.14e-01); even-nullity 1 (+const not in basis) | min defect f'(0)=1: 4.174e-01 | IR-ball(|k|<0.6) fit: defect 4.424e-01 [normal 4.103e-01, umklapp 4.658e-01], IR err 5.3e-03
+  R= 2 odd basis    62: odd-nullity    0 (sv_min/sv_max 7.31e-01); even-nullity 1 (+const not in basis) | min defect f'(0)=1: 1.110e-01 | IR-ball(|k|<0.6) fit: defect 2.508e-01 [normal 2.684e-01, umklapp 2.362e-01], IR err 6.1e-03
+  R= 3 odd basis   171: odd-nullity    0 (sv_min/sv_max 6.62e-01); even-nullity 1 (+const not in basis) | min defect f'(0)=1: 4.804e-02 | IR-ball(|k|<0.6) fit: defect 1.729e-01 [normal 1.981e-01, umklapp 1.505e-01], IR err 2.2e-03
+  R= 4 odd basis   364: odd-nullity    0 (sv_min/sv_max 5.93e-01); even-nullity 1 (+const not in basis) | min defect f'(0)=1: 2.560e-02 | IR-ball(|k|<0.6) fit: defect 1.239e-01 [normal 1.448e-01, umklapp 1.049e-01], IR err 1.8e-03
+  (1.2s)
+
+== 3D two-species contact (KG mA=1, mB=0.5): 8000 nontrivial resonances, max energy residual 4.0e-15, umklapp fraction 0.559
+  R= 1 odd basis    26: odd-nullity    0 (sv_min/sv_max 7.48e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 4.239e-01 | IR-ball(|k|<0.6) fit: defect 4.490e-01 [normal 4.188e-01, umklapp 4.716e-01], IR err 5.3e-03
+  R= 2 odd basis   124: odd-nullity    0 (sv_min/sv_max 6.90e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 1.086e-01 | IR-ball(|k|<0.6) fit: defect 2.508e-01 [normal 2.696e-01, umklapp 2.349e-01], IR err 6.1e-03
+  R= 3 odd basis   342: odd-nullity    0 (sv_min/sv_max 5.93e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 4.594e-02 | IR-ball(|k|<0.6) fit: defect 1.703e-01 [normal 1.940e-01, umklapp 1.490e-01], IR err 2.2e-03
+  R= 4 odd basis   728: odd-nullity    0 (sv_min/sv_max 4.92e-01); even-nullity 0 (+const not in basis) | min defect f'(0)=1: 2.340e-02 | IR-ball(|k|<0.6) fit: defect 1.217e-01 [normal 1.441e-01, umklapp 1.006e-01], IR err 1.8e-03
+  (1.8s)

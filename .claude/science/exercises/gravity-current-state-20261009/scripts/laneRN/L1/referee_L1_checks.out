@@ -1,0 +1,6 @@
+exact rational scalar residuals: E = 0 M = 0
+dense-SVD 3D {P,P} fit: relative residual = 1.000000000000; normalized basis overlap = 0.000e+00
+Gauss-Legendre TT Hessians (paramagnetic E,T2; unitary-seagull E,T2):
+m=0.0: -0.003694426 -0.011781999; +0.003694426 +0.011781999; sums +0.0e+00 +0.0e+00
+m=0.5: -0.003172484 -0.010573954; +0.003172484 +0.010573954; sums +0.0e+00 +0.0e+00
+m=1.0: -0.002317304 -0.008228470; +0.002317304 +0.008228470; sums +0.0e+00 +0.0e+00

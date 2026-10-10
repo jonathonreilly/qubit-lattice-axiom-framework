@@ -1,0 +1,5 @@
+Delta=0.5, J2(nnn ZZ)=0.0: ||[H,Q3]||_F/||Q3||_F = 0.00e+00
+   one-magnon Q3 symbol /i = -8.0000 sin k +8.0000 sin 2k ; slope at 0 = +8.0000
+Delta=0.5, J2(nnn ZZ)=0.3: ||[H,Q3]||_F/||Q3||_F = 8.49e-01
+Delta=1.7, J2(nnn ZZ)=0.0: ||[H,Q3]||_F/||Q3||_F = 1.87e-16
+   one-magnon Q3 symbol /i = -27.2000 sin k +8.0000 sin 2k ; slope at 0 = -11.2000

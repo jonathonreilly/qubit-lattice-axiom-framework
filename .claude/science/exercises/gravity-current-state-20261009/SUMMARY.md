@@ -290,3 +290,15 @@ What it still lacks:
 - **What is left.** One construction has two light-like graviton modes and a 1/r pull: Gu–Wen's "weak" type with both of Einstein's constraints. Nobody has shown that lattice matter can feed it through an exactly conserved stress, or that qubits can realize it. That is the decisive next test.
 
 Details and referee lines are in `TESTS.md` ("Lane R results").
+
+## 12. Lane RN: feeding matter to the live graviton (owner, 2026-10-10)
+
+**Plain version.** We coupled matter to the one graviton construction still standing (§11): the "weak" theory with both of Einstein's constraints.
+
+- **Free particles work at first order.** They have an exactly conserved momentum on the lattice and pull with 1/r and the same G for every mass. A definite extra term, fixed by the matter law rather than tuned, cancels the graviton mass they would otherwise induce.
+- **Interacting particles of the simplest kind cannot feed it.** For d ≥ 2, collisions on a lattice conserve only energy and particle number, never momentum (refereed; Spohn's theorem agrees). Whether this forces a graviton mass was not shown.
+- **Escapes.** Coupling through the lapse alone fails: either matter can't move, or light isn't bent. Matter made of defects of the gravity field might escape, but nothing shows it falls universally.
+- **Verdict: INCONCLUSIVE.**
+- **What decides it next.** The framework's own matter, staggered fermions, carries internal "taste" structure. That might supply the extra conservation the simple case lacks. That is the next test.
+
+Details are in `TESTS.md`, "Lane RN results".

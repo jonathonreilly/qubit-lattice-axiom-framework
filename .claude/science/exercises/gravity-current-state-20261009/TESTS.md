@@ -546,3 +546,20 @@ Not a test. A written, plain-first note assembling the refereed results into one
 - **INCONCLUSIVE:** otherwise.
 
 **C3 end time (owner, 2026-10-10 00:54Z):** "End the work exactly at midnight eastern please". The campaign therefore stops at **04:00Z** (00:00 EDT). Any lane not finished by then is recorded as "not completed (stopped at midnight)".
+
+### C3 progress log (01:52Z)
+
+**Lanes returned**, all pending the codex sol referee:
+- **F (formation):** the worker says FAIL, a bounded no-go; the adversarial check supports it, with a narrower scope.
+- **D (fermions):** the worker says FAIL; the check says not supported, so INCONCLUSIVE. Exact no-gos within their scope: no spinor kernel from order alone, order is parity-even, and no frame has an invariant law.
+- **M-A:** the worker says M-PASS on its grid; the check says M-INCONCLUSIVE because of a missing overlap factor.
+- **M-B:** the worker and the check both say INCONCLUSIVE.
+- **M-C:** the worker says FAIL. The core is confirmed: no all-positive rule has the massive mean.
+
+Reports: `agents/C3_*_report.md`.
+
+**Exercises started on two walls.** They are conditional on the referees, and moot if a wall is overturned:
+- formation (`F_formation`);
+- massive matter (`M_massive_matter`).
+
+Each exercise uses the compressed form: 3 lenses, a kill round, and a next test pre-registered by its worker.

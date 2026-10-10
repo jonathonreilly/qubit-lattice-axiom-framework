@@ -601,3 +601,5 @@ But that mapping has not been derived.
 - **G-A referee (codex sol):** FAIL, narrowly scoped to the fixed-coordinate coupling (picture I) and ensemble-RMS noise. The second-chaos bound and the Rosen causal order check out. The local BD action alone triggers FAIL, so the imported 1e-19 m bar is not needed. See `agents/C3_G-A_referee.md`.
 
 - **G-B referee (codex sol):** INCONCLUSIVE. The admixture conjunct is controlled: A_rms = 7.27e-28 at 1 Gpc, far below 1e-3, as an asymptotic ceiling. The PASS clause 'mean exactly the linearized-GR retarded solution' fails only at finite density (the mean is K_rho*T, which equals G_R*T only as density goes to infinity). FAIL is inapplicable. See `agents/C3_G-B_referee.md`.
+
+- **G-C referee (codex sol):** INCONCLUSIVE. The narrow no-go is confirmed only for frozen picture-I, fixed-point, point-marked order functionals with uniform per-realization invariance and an EH ensemble mean. It does not cover independent link fields, picture II, other couplings or a background-free quantum sum. The law-level Ward identity is exact but does not establish the physical quantum-sum branch. See `agents/C3_G-C_referee.md`.

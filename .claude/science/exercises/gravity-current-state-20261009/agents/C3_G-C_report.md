@@ -1,6 +1,6 @@
 # C3 lane G-C: worker report (Claude Opus 5.5, max effort; 2026-10-10)
 
-Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. Codex sol referee: pending if the verdict is a FAIL or no-go.
+Verbatim. Adversarial check (Opus 5.5 xhigh) below the report. **Codex sol referee: INCONCLUSIVE. The narrow no-go is confirmed only for frozen picture-I, fixed-point, point-marked order functionals with uniform per-realization invariance and an EH ensemble mean. It does not cover independent link fields, picture II, other couplings or a background-free quantum sum. The law-level Ward identity is exact but does not establish the physical quantum-sum branch** (C3_G-C_referee.md).
 
 **Verdict (worker):** FAIL (no-go proved under stated hypotheses H1-H5) for per-realization protection. Quantum-sum branch: the exact Ward identity holds for the law and for every covariant sum over orders (proved), but it is INCONCLUSIVE as protection of the realized physics, because its premises are not established: an unrecorded micro-order, a 4D manifold-like phase, and locality of the sum-level effective action. Per PREREG the two halves are not merged into a PASS. Needs the codex sol referee.
 

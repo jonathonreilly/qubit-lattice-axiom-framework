@@ -1,0 +1,16 @@
+Reviewer exact generator controls; no imports from author code.
+Mass=5/7, physical torus side=7/3, sigma=11/5, gamma=13/17, kappa=19/23.
+Full D3Q27 pair-signature census: 288 exchanges, four distinct species in each.
+Full sparse generator: side cells=3, N=2, states=5886, outgoing edges=11718.
+  h=7/9, w=1/27, one-particle density=135/14.
+  Q on every density coordinate and Q||p||²−2<p,Qp> match the formulas;
+  every target remains in the state space and preserves all five global moments.
+Enumerated independent initial law: N=2, exact E0=825/196.
+Full sparse generator: side cells=2, N=3, states=5984, outgoing edges=17408.
+  h=7/6, w=1/8, one-particle density=40/21.
+  Q on every density coordinate and Q||p||²−2<p,Qp> match the formulas;
+  every target remains in the state space and preserves all five global moments.
+Enumerated independent initial law: N=3, exact E0=1100/1323.
+Overshoot witness: pre-max=10/7, R=15/7, post-max=20/7;
+  actual squared error=275/196 >= exit threshold 3025/6272.
+REVIEWER EXACT CONTROLS COMPLETE; energy and PDE proofs checked analytically.

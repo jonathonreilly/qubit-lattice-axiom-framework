@@ -1,14 +1,15 @@
 # Milestone artifact plan
 
-Transport milestone: two bounded positive theorem notes, two primary runners,
-paired canonical cached stdout, the citation-graph manifest, and this recovery
-pack with independent checker and review records. Preserve the microscopic
-mixing/spatial-streaming distinction and nonlinear moment witness.
+The updated transport PR carries the two previous theorem notes/runners and
+three spatial continuations: nonlinear particle-to-kinetic, exact spatial
+quantum realization, and simultaneous particle-to-linear-fluid composition.
+Each has its own primary runner, declared inputs/timeout and canonical cache.
 
-Photon continuation: independently check the complete vacuum-subtracted
-coefficient and any full-cosine two-insertion estimate before a separate PR.
+The loop pack contains selective independent reviews, their separate exact
+helpers and complete raw logs, primary mutation records, scoped prior-art
+search evidence and final source identities. Review logs are raw executions,
+not cache envelopes. They record limits on independence and finite checks.
 
-Run each final runner through the repository cache envelope with its declared
-timeout. Use actual mutation failures and independent mathematical derivations.
-Source checks precede regular PR creation. Independent retained-status audit
-remains a later lane; no author verdict or generated audit ledger is committed.
+Only the citation-graph manifest may co-land from generated audit surfaces.
+No prompt, skill, axiom registry, audit result, queue or publication authority
+surface is changed. The separate photon PR is outside this continuation.

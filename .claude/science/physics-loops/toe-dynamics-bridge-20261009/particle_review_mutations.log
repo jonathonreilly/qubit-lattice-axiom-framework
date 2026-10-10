@@ -1,0 +1,27 @@
+MUTATION collision_volume: exit=1
+Reviewer exact generator controls; no imports from author code.
+Mass=5/7, physical torus side=7/3, sigma=11/5, gamma=13/17, kappa=19/23.
+ACTIVE MUTANT: collision_volume
+Full D3Q27 pair-signature census: 288 exchanges, four distinct species in each.
+REVIEWER CONTROL FAILURE: coordinate collision mismatch at (0, 1)
+
+MUTATION collision_mass: exit=1
+Reviewer exact generator controls; no imports from author code.
+Mass=5/7, physical torus side=7/3, sigma=11/5, gamma=13/17, kappa=19/23.
+ACTIVE MUTANT: collision_mass
+Full D3Q27 pair-signature census: 288 exchanges, four distinct species in each.
+REVIEWER CONTROL FAILURE: coordinate collision mismatch at (0, 1)
+
+MUTATION hop_bracket_factor: exit=1
+Reviewer exact generator controls; no imports from author code.
+Mass=5/7, physical torus side=7/3, sigma=11/5, gamma=13/17, kappa=19/23.
+ACTIVE MUTANT: hop_bracket_factor
+Full D3Q27 pair-signature census: 288 exchanges, four distinct species in each.
+REVIEWER CONTROL FAILURE: hop bracket mismatch: 13365/343 versus 13365/686
+
+MUTATION cross_cell: exit=1
+Reviewer exact generator controls; no imports from author code.
+Mass=5/7, physical torus side=7/3, sigma=11/5, gamma=13/17, kappa=19/23.
+ACTIVE MUTANT: cross_cell
+Full D3Q27 pair-signature census: 288 exchanges, four distinct species in each.
+REVIEWER CONTROL FAILURE: coordinate collision mismatch at (0, 5)

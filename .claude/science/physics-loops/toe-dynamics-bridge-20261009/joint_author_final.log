@@ -1,0 +1,9 @@
+network: 288 reactions, 9 geometric axial exchanges; C_R(alpha)=124/3+4/3*alpha
+collision: exact nonlinear expansion, weighted edge-square identity and bilinear bound
+weighted population: N=69984, 27 cells; direct jump QV=(45/2, 154814375/5038848)
+initial preparation: exact mass/positivity and multinomial weighted variance=943471/629856
+Fourier controls: 16354 exact alias pairs, 4104 float symbol tests; exact shell majorant=1123/35
+Interpolation: independent midpoint integral=1.67113921, exact-phase formula=1.6805818; finite float control, not an enclosure.
+scaling: classical error power>=1, failure=2, Lambda power=-37, gate error=2
+tuned positive axial rate=3.45068979933; sufficient exponents, no optimality or physical scaling claim
+Finite author controls completed; analytic stochastic/Sobolev/fluid claims rely on the written proofs.

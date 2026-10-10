@@ -1,0 +1,14 @@
+Author exact discriminator; Python standard library, rational arithmetic.
+ACTIVE MUTANT: symmetric_hop
+Exact dilation: two 6x6 unitaries, all 18 system matrix-unit images;
+  Kraus completeness, population closure, and no directed reverse hop.
+  cos=3/5, sin=4/5, jump probability=16/25.
+Merged-source contrast on E_01: target derivative 1;
+  separately marked jumps: 0 (exact).
+Finite ordered four-mark schedule, same initial occupation:
+  input (i,j) gives product-occupation probability 8992/15625;
+  input (j,i) gives product-occupation probability 544/625;
+  difference=-4608/15625=-2 p^2(1-p).
+Full D3Q27 pair-group census: 288 reversible reactions;
+  four distinct species each; 54 directed hop marks per label/cell.
+DISCRIMINATOR FAILURE: streaming normalization/direction mismatch at (((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (1, 0, 0)))

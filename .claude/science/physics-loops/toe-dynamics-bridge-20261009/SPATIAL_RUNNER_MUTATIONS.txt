@@ -1,0 +1,409 @@
+# Spatial runner mutation record
+
+Executed on scratch copies of the final primary sources. These are expected
+nonzero executions; they are not canonical ok caches or theorem proofs.
+
+scripts/spatial_particles_and_nonlinear_kinetic_limit_2026_10_09.py
+source_sha256: 4881c3fd7e3df9a446eb83b7e93df28bb7e683e667ba9364e3694eaa0f8f28a8
+scripts/spatial_quantum_collision_realization_2026_10_09.py
+source_sha256: e4b969804fe943ed69279446ed96ffc5ad87bcb8359f1150c41d34155feb8543
+scripts/spatial_particle_to_linear_fluid_limit_2026_10_09.py
+source_sha256: a8744ee9c9381b2a0aab5a2a09d6c165c9cf08f715900061d5c9f67db2b9dd6f
+
+MUTATION: reaction census
+runner: scripts/spatial_particles_and_nonlinear_kinetic_limit_2026_10_09.py
+before: 'channels.append((i, j, k, l))'
+after: '\n                if i != 0:\n                    channels.append((i, j, k, l))'
+mutant_sha256: f3777121d1d34e715a1a3c91fda690a78d275e92f8a07ab81ae33a82e0a3e3fe
+exit_code: 1
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_0.py", line 218, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_0.py", line 29, in main
+    assert len(channels) == len(set(channels)) == 288
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: cell normalization
+runner: scripts/spatial_particles_and_nonlinear_kinetic_limit_2026_10_09.py
+before: 'rate = gamma * coefficient * mass * counts[a] * counts[b] / (N*w)'
+after: 'rate = gamma * coefficient * mass * counts[a] * counts[b] / N'
+mutant_sha256: b5e45f2b023a81725d52019f0a0a575818ce7837e5c0e8af473eb92bf15bc4bf
+exit_code: 1
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_1.py", line 216, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_1.py", line 128, in main
+    assert collision_events == collision_density
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: collision bracket metric
+runner: scripts/spatial_particles_and_nonlinear_kinetic_limit_2026_10_09.py
+before: 'qv_collision += rate * w * increment**2'
+after: 'qv_collision += rate * increment**2'
+mutant_sha256: 197c94ce8201f02537f3d1b16aebc1f33a17536d7516b5830588e434ca51497a
+exit_code: 1
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_2.py", line 216, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_2.py", line 140, in main
+    assert qv_collision == qv_collision_formula
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: transport orientation
+runner: scripts/spatial_particles_and_nonlinear_kinetic_limit_2026_10_09.py
+before: 'out[at] += sigma * abs(v[axis]) * (field[previous]-field[at]) / h'
+after: 'out[at] -= sigma * abs(v[axis]) * (field[previous]-field[at]) / h'
+mutant_sha256: cc95e47f399f1336b862f08846e615d7b13503edce816d819aebdf34363f5399
+exit_code: 1
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_3.py", line 216, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_3.py", line 129, in main
+    assert hop_events == hop_density
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: local displacement
+runner: scripts/spatial_particles_and_nonlinear_kinetic_limit_2026_10_09.py
+before: 'step = [h*v[axis] if d == axis else F(0) for d in range(3)]'
+after: 'step = [2*h*v[axis] if d == axis else F(0) for d in range(3)]'
+mutant_sha256: 2e0f01c58ebf2c73ffc384c566a7638d63c04d8340e4a1cab124f1dfabed440b
+exit_code: 1
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_4.py", line 216, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_4.py", line 172, in main
+    assert drift == [sigma*x for x in v]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: initial covariance
+runner: scripts/spatial_particles_and_nonlinear_kinetic_limit_2026_10_09.py
+before: 'initial_variance = sum(w*increment**2*N*p*(1-p) for p in probabilities)'
+after: 'initial_variance = sum(w*increment**2*p*(1-p) for p in probabilities)'
+mutant_sha256: 1e654f0d23e5d20f2a656e4cc15c33831104bddfe80eaabcd1667b6631778f9b
+exit_code: 1
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_5.py", line 216, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_5.py", line 197, in main
+    assert initial_variance == initial_formula <= mass**2/(N*w)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: collision locality
+runner: scripts/spatial_particles_and_nonlinear_kinetic_limit_2026_10_09.py
+before: 'def reaction_polynomial(field):\n        out ='
+after: 'def reaction_polynomial(field):\n        average = tuple(w*sum(field[index(z, i)] for z in sites) for i in range(q))\n        field = tuple(average[i] for z in sites for i in range(q))\n        out ='
+mutant_sha256: 8b32f64ebadbcacc98608a1a7f4cdd55f9df5e2d8b79f023adc0e9c9769a091c
+exit_code: 1
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_6.py", line 218, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_6.py", line 130, in main
+    assert collision_events == collision_density
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: ancilla dilation
+runner: scripts/spatial_quantum_collision_realization_2026_10_09.py
+before: 'w = joint_unitary(mapping, co, si)'
+after: 'w = joint_unitary(mapping, F(5, 13), F(12, 13))'
+mutant_sha256: 4358762e075140eb3c0ab228acf298221892645b64936fd5e060f07ebceb07a2
+exit_code: 1
+Author exact discriminator; Python standard library, rational arithmetic.
+DISCRIMINATOR FAILURE: directed dilation/Kraus disagreement
+
+
+MUTATION: ordered schedule witness
+runner: scripts/spatial_quantum_collision_realization_2026_10_09.py
+before: 'for a, b in ((0, 2), (0, 3), (1, 2), (1, 3)):'
+after: 'for a, b in ((1, 2), (1, 3), (0, 2), (0, 3)):'
+mutant_sha256: 0765f4443fff9d29dcaac9982137bbbf4533edf8c4b0827e954f37fc713cf599
+exit_code: 1
+Author exact discriminator; Python standard library, rational arithmetic.
+Exact dilation: two 6x6 unitaries, all 18 system matrix-unit images;
+  Kraus completeness, population closure, and no directed reverse hop.
+  cos=3/5, sin=4/5, jump probability=16/25.
+Merged-source contrast on E_01: target derivative 1;
+  separately marked jumps: 0 (exact).
+DISCRIMINATOR FAILURE: ordered-schedule contrast formula
+
+
+MUTATION: full network census
+runner: scripts/spatial_quantum_collision_realization_2026_10_09.py
+before: 'pair_groups[key].append((a, b))'
+after: '\n            if a != 0:\n                pair_groups[key].append((a, b))'
+mutant_sha256: d21d61476199708af43df3e471d7ae6041460e84b62038cf3019d97d1e4ec142
+exit_code: 1
+Author exact discriminator; Python standard library, rational arithmetic.
+Exact dilation: two 6x6 unitaries, all 18 system matrix-unit images;
+  Kraus completeness, population closure, and no directed reverse hop.
+  cos=3/5, sin=4/5, jump probability=16/25.
+Merged-source contrast on E_01: target derivative 1;
+  separately marked jumps: 0 (exact).
+Finite ordered four-mark schedule, same initial occupation:
+  input (i,j) gives product-occupation probability 8992/15625;
+  input (j,i) gives product-occupation probability 544/625;
+  difference=-4608/15625=-2 p^2(1-p).
+DISCRIMINATOR FAILURE: D3Q27 reaction count
+
+
+MUTATION: geometric rate family
+runner: scripts/spatial_particle_to_linear_fluid_limit_2026_10_09.py
+before: 'row[remaining], row[axis] = s, sign'
+after: 'row[remaining], row[axis] = 0, sign'
+mutant_sha256: ab05f097231b9619e29430328626d4a9872eeeccc1a27f828b7c674d2aac03a1
+exit_code: 1
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_10.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_10.py", line 220, in main
+    v, e, M, reactions, rates, cr = network()
+                                    ~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_10.py", line 49, in network
+    assert len(reactions) == 288 and len(special) == 9
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: collision linearization
+runner: scripts/spatial_particle_to_linear_fluid_limit_2026_10_09.py
+before: 'linear = rate*M[i]*M[j]*nh'
+after: 'linear = -rate*M[i]*M[j]*nh'
+mutant_sha256: 246fa3b20dfcf218672fe5762d3de4745fd6ff8922e1e03b98c6cd90d7dbf528
+exit_code: 1
+network: 288 reactions, 9 geometric axial exchanges; C_R(alpha)=124/3+4/3*alpha
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_11.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_11.py", line 221, in main
+    collision_controls(M, reactions, rates)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_11.py", line 87, in collision_controls
+    assert q == reconstructed
+           ^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: weighted jump metric
+runner: scripts/spatial_particle_to_linear_fluid_limit_2026_10_09.py
+before: 'jump_scale = [1/(N*w*a*M[i]) for _ in cells for i in range(27)]'
+after: 'jump_scale = [1/(N*a*M[i]) for _ in cells for i in range(27)]'
+mutant_sha256: f78a1948fce46bc2143d16c96ab2a9f40ba23404b19ff9129fb1712c6cd0ee35
+exit_code: 1
+network: 288 reactions, 9 geometric axial exchanges; C_R(alpha)=124/3+4/3*alpha
+collision: exact nonlinear expansion, weighted edge-square identity and bilinear bound
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_12.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_12.py", line 222, in main
+    weighted_population_controls(v, e, M, reactions, rates, cr)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_12.py", line 136, in weighted_population_controls
+    assert hop == hop_formula and collision == coll_formula
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: initial fluctuation variance
+runner: scripts/spatial_particle_to_linear_fluid_limit_2026_10_09.py
+before: 'initial = (expected_norm_sq-mean_norm_sq)/N'
+after: 'initial = (expected_norm_sq-mean_norm_sq)'
+mutant_sha256: 909338cbe9e5d28cc8e8416348ce4636e82fa4a390168bf3a8877ab012b8047c
+exit_code: 1
+network: 288 reactions, 9 geometric axial exchanges; C_R(alpha)=124/3+4/3*alpha
+collision: exact nonlinear expansion, weighted edge-square identity and bilinear bound
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_13.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_13.py", line 222, in main
+    weighted_population_controls(v, e, M, reactions, rates, cr)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_13.py", line 145, in weighted_population_controls
+    assert initial == covariance_trace <= 54/(N*w*a*a)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: alias representative
+runner: scripts/spatial_particle_to_linear_fluid_limit_2026_10_09.py
+before: 'k = tuple((u+v+half) % m-half for u, v in zip(p, q))'
+after: 'k = tuple((u+v+half) % m for u, v in zip(p, q))'
+mutant_sha256: 7d7db33ce6d0627cef76357508b2a71156a9f2a8443a158eb15740a9d967a257
+exit_code: 1
+network: 288 reactions, 9 geometric axial exchanges; C_R(alpha)=124/3+4/3*alpha
+collision: exact nonlinear expansion, weighted edge-square identity and bilinear bound
+weighted population: N=69984, 27 cells; direct jump QV=(45/2, 154814375/5038848)
+initial preparation: exact mass/positivity and multinomial weighted variance=943471/629856
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_14.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_14.py", line 223, in main
+    fourier_controls()
+    ~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_14.py", line 159, in fourier_controls
+    assert norm(k) <= norm(tuple(u+v for u, v in zip(p, q)))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: streaming sign
+runner: scripts/spatial_particle_to_linear_fluid_limit_2026_10_09.py
+before: 'symbol = sum((cexp(-1j*s*k[d]*ell)-1)/ell'
+after: 'symbol = sum((1-cexp(-1j*s*k[d]*ell))/ell'
+mutant_sha256: 43972a16f115c5a29289915ccc52004ba35fe3f0808ac61278e8ae2471abdf9e
+exit_code: 1
+network: 288 reactions, 9 geometric axial exchanges; C_R(alpha)=124/3+4/3*alpha
+collision: exact nonlinear expansion, weighted edge-square identity and bilinear bound
+weighted population: N=69984, 27 cells; direct jump QV=(45/2, 154814375/5038848)
+initial preparation: exact mass/positivity and multinomial weighted variance=943471/629856
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_15.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_15.py", line 223, in main
+    fourier_controls()
+    ~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_15.py", line 172, in fourier_controls
+    assert symbol.real <= 1e-14
+           ^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: interpolation map
+runner: scripts/spatial_particle_to_linear_fluid_limit_2026_10_09.py
+before: 'frozen = field(center)'
+after: 'frozen = 0'
+mutant_sha256: 7b30a6b7e0c96b85900aec7d504a18fc040c175c06dd90abe61d3690acba8a1d
+exit_code: 1
+network: 288 reactions, 9 geometric axial exchanges; C_R(alpha)=124/3+4/3*alpha
+collision: exact nonlinear expansion, weighted edge-square identity and bilinear bound
+weighted population: N=69984, 27 cells; direct jump QV=(45/2, 154814375/5038848)
+initial preparation: exact mass/positivity and multinomial weighted variance=943471/629856
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_16.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_16.py", line 223, in main
+    fourier_controls()
+    ~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_16.py", line 193, in fourier_controls
+    assert abs(integral-phase_formula) < 0.01
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: particle scaling
+runner: scripts/spatial_particle_to_linear_fluid_limit_2026_10_09.py
+before: 'amp, cell, mesh, count, step = 3, 6, 2, -23, 76'
+after: 'amp, cell, mesh, count, step = 3, 6, 2, -20, 76'
+mutant_sha256: eff2c6fce5ae51ffdac91ef11640d26f276578a3b5e60cd7723f3011e18a7a0c
+exit_code: 1
+network: 288 reactions, 9 geometric axial exchanges; C_R(alpha)=124/3+4/3*alpha
+collision: exact nonlinear expansion, weighted edge-square identity and bilinear bound
+weighted population: N=69984, 27 cells; direct jump QV=(45/2, 154814375/5038848)
+initial preparation: exact mass/positivity and multinomial weighted variance=943471/629856
+Fourier controls: 16354 exact alias pairs, 4104 float symbol tests; exact shell majorant=1123/35
+Interpolation: independent midpoint integral=1.67113921, exact-phase formula=1.6805818; finite float control, not an enclosure.
+Traceback (most recent call last):
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_17.py", line 229, in <module>
+    main()
+    ~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_17.py", line 224, in main
+    scaling_controls()
+    ~~~~~~~~~~~~~~~~^^
+  File "/var/folders/4x/st_z21996n39j7bxfgns7gtw0000gn/T/spatial-mutants-npirsxvy/mutant_17.py", line 211, in scaling_controls
+    assert failure == quantum == 2 and mark_rate == -37
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+
+MUTATION: quantum built-in gamma
+exit_code: 1
+Author exact discriminator; Python standard library, rational arithmetic.
+ACTIVE MUTANT: gamma
+Exact dilation: two 6x6 unitaries, all 18 system matrix-unit images;
+  Kraus completeness, population closure, and no directed reverse hop.
+  cos=3/5, sin=4/5, jump probability=16/25.
+Merged-source contrast on E_01: target derivative 1;
+  separately marked jumps: 0 (exact).
+Finite ordered four-mark schedule, same initial occupation:
+  input (i,j) gives product-occupation probability 8992/15625;
+  input (j,i) gives product-occupation probability 544/625;
+  difference=-4608/15625=-2 p^2(1-p).
+Full D3Q27 pair-group census: 288 reversible reactions;
+  four distinct species each; 54 directed hop marks per label/cell.
+DISCRIMINATOR FAILURE: collision normalization/output mismatch at (((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (-1, 0, 0)))
+
+
+MUTATION: quantum built-in drop_output
+exit_code: 1
+Author exact discriminator; Python standard library, rational arithmetic.
+ACTIVE MUTANT: drop_output
+Exact dilation: two 6x6 unitaries, all 18 system matrix-unit images;
+  Kraus completeness, population closure, and no directed reverse hop.
+  cos=3/5, sin=4/5, jump probability=16/25.
+Merged-source contrast on E_01: target derivative 1;
+  separately marked jumps: 0 (exact).
+Finite ordered four-mark schedule, same initial occupation:
+  input (i,j) gives product-occupation probability 8992/15625;
+  input (j,i) gives product-occupation probability 544/625;
+  difference=-4608/15625=-2 p^2(1-p).
+Full D3Q27 pair-group census: 288 reversible reactions;
+  four distinct species each; 54 directed hop marks per label/cell.
+DISCRIMINATOR FAILURE: collision normalization/output mismatch at (((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (-1, 0, 0)))
+
+
+MUTATION: quantum built-in symmetric_hop
+exit_code: 1
+Author exact discriminator; Python standard library, rational arithmetic.
+ACTIVE MUTANT: symmetric_hop
+Exact dilation: two 6x6 unitaries, all 18 system matrix-unit images;
+  Kraus completeness, population closure, and no directed reverse hop.
+  cos=3/5, sin=4/5, jump probability=16/25.
+Merged-source contrast on E_01: target derivative 1;
+  separately marked jumps: 0 (exact).
+Finite ordered four-mark schedule, same initial occupation:
+  input (i,j) gives product-occupation probability 8992/15625;
+  input (j,i) gives product-occupation probability 544/625;
+  difference=-4608/15625=-2 p^2(1-p).
+Full D3Q27 pair-group census: 288 reversible reactions;
+  four distinct species each; 54 directed hop marks per label/cell.
+DISCRIMINATOR FAILURE: streaming normalization/direction mismatch at (((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (1, 0, 0)), ((0, 0, 0), (1, 0, 0)))
+
+
+MUTATION: quantum built-in merged_mark
+exit_code: 1
+Author exact discriminator; Python standard library, rational arithmetic.
+ACTIVE MUTANT: merged_mark
+Exact dilation: two 6x6 unitaries, all 18 system matrix-unit images;
+  Kraus completeness, population closure, and no directed reverse hop.
+  cos=3/5, sin=4/5, jump probability=16/25.
+DISCRIMINATOR FAILURE: merged-mark population closure fails: target derivative=1
+
+
+Mutation families: 22
+Unexpected survivors or invalid rejections: []

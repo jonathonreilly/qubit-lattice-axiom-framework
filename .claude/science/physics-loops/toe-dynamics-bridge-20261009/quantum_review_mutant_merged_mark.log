@@ -1,0 +1,6 @@
+Author exact discriminator; Python standard library, rational arithmetic.
+ACTIVE MUTANT: merged_mark
+Exact dilation: two 6x6 unitaries, all 18 system matrix-unit images;
+  Kraus completeness, population closure, and no directed reverse hop.
+  cos=3/5, sin=4/5, jump probability=16/25.
+DISCRIMINATOR FAILURE: merged-mark population closure fails: target derivative=1

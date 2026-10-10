@@ -8,20 +8,20 @@ reachability_to_target: supports
 conditional_surface_status: conditional-support
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "Positive mathematical theorems with explicit supplied-model hypotheses."
+claim_type_reason: "Positive mathematical theorems under explicit supplied-model hypotheses."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-Author proofs and selective independent mathematical checks are complete at
-the source hashes in the handoff. The separate analytical review found no
-material defect in the stated supplied-model theorems.
-There is no scientific retained-status change in this branch. No empirical
-prediction is inferred solely from a chosen model. New proofs are authorized;
-publication or outside verification is not a prerequisite to this PR.
+All three new units have selective independent analytical review tied to final
+note/runner hashes. The reviews found no consequential mathematical defect;
+minor endpoint, supremum and generator-versus-schedule wording fixes are recorded.
+This is independent checking of provisional mathematics, not a retained-status
+audit. No science is merged or audit verdict applied by this author task.
 
-Lean audit candidates: the finite collision identities and symbolic corrector
-cancellations are small formal targets; the Sobolev semigroup and averaging
-estimates require a more substantial analytic library interface. No Lean run
-is claimed. The independent audit can require scoped formalization where useful
-without turning it into a blanket discovery or PR gate.
+New derivations and proofs are authorized without prior publication. Later Lean
+audit targets include partial-permutation population closure and count lifting,
+finite generator/bracket identities, the stopped-energy estimate with its exact
+hypotheses, and discrete Sobolev/semigroup comparison. No Lean run or formal
+verification certificate is claimed. Formalizing the mathematics would not
+supply a native physical carrier or clock.

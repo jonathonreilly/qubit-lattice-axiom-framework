@@ -1,0 +1,6 @@
+Exact continuum phase integral (float evaluation): 1.68058180215022
+Finite geometric-sum midpoint s=12: 1.67113920563932; error=0.00944259651089
+Finite geometric-sum midpoint s=24: 1.67822359962203; error=0.00235820252819; previous/error=4.00414994
+Finite geometric-sum midpoint s=48: 1.67999240426569; error=0.000589397884525; previous/error=4.00103663
+Author direct-space midpoint result matches the independent finite phase sum to printed precision.
+This finite float comparison is not a rigorous enclosure; the analytic interpolation proof is separate.

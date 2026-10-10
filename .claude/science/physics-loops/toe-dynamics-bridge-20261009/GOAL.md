@@ -1,41 +1,28 @@
 # Microscopic dynamics to controlled macroscopic laws
 
-Source base: `17a95e60d85afc246fc7c163adef8869ab3f4194`.
-The user requests the work most likely to unlock a substantial next advance,
-and authorizes starting it. This is a bounded interactive research milestone,
-not an unattended campaign or a request to merge science or apply audits.
+The current user request is to continue the next highest-leverage derivations.
+This is a bounded interactive milestone on the existing coherent science
+branch; no unattended runtime, author merge, or retained-status audit is implied.
+New mathematical constructions and proofs are explicitly authorized.
 
-Target: construct a checked chain from an explicit microscopic collision law
-to dissipative macroscopic equations, deriving its transport coefficients and
-controlling the approximation error. Identify each remaining physical supplier.
-A separate photon continuation probe tests whether the newly proved bare
-denominator bound supports a comparably decisive next step.
+Target: construct an explicit microscopic spatial model, derive its nonlinear
+kinetics, and compose a controlled weak-amplitude limit with macroscopic
+transport. Each physical supplier stays visible. The spatial composition
+was the missing interface after the previous quantum/mixing and fluid notes.
 
-Quantifiers: fixed D3Q27 velocity set; explicitly supplied positive reversible
-rates; periodic spatial domain; small positive kinetic scale; stated regularity
-and initial preparation. A microscopic encoding must state its tensor carrier,
-locality, channel/clock choices, and the invariant population sector exactly.
+Quantifiers: fixed D3Q27 velocities and supplied positive reversible rates;
+finite torus grids and labelled particles; explicit initial preparation,
+classical lifetime or near-equilibrium H4 assumptions; finite time horizons.
+The joint theorem specifies particle, mesh, amplitude and gate-step scales.
 
-Allowed premises: current framework axioms as written, checked mathematical
-identities and independently checked provisional results with their source
-identities, and explicitly supplied model choices. New mathematical objects and
-proofs are permitted. No framework premise is adopted by this work.
+Completion witness: self-contained positive theorems, decisive runners,
+selective independent mathematical checks, source-bound recovery evidence,
+and a regular review PR. This does not change framework premises or confer
+retained status. No observed physical coefficient is used as a fitting target.
 
-Forbidden weakenings: a formal expansion without an error bound is not a fluid
-limit; an encoding is not a native physical selection; matched expectations do
-not give an exact Markov marginal; Gaussian-reference interaction bounds do not
-establish a compact interacting photon branch. No empirical coefficient fitting.
-
-Completion witness: a coherent self-contained theorem/construction, decisive
-runner evidence, focused independent checks, and a regular review PR at a useful
-milestone. Counterexamples or missing terminal obligations remain explicit.
-
-Edges: zero Fourier mode, conserved collision kernel, all positive rate domain,
-initial layers, large wave numbers, finite occupation cutoffs, coherence-to-
-population effects, repeated collision indices, zero photon modes, and the
-compact/reference distinction where used.
-
-Prior work: the October 8 kinetic and gauge checkpoints in
-`/Users/jonreilly/Documents/Codex/research_runs/new_math_policy_20261008/`.
-Their exact statements and proofs must be read before reuse. Earlier six PRs
-are now integrated on main; no open PR was returned by the current GitHub query.
+Initial source base: 17a95e60d85afc246fc7c163adef8869ab3f4194.
+Continuation head: b178e3a5d4c1d1301255596d10ac4e1bc2aeb192.
+Refreshed main for selection: d9b869b97944676aaa759915462c529dc276a04c.
+Standing instruction source: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39.
+The refreshed main changed generated audit/status data, not these scientific
+or methodology dependencies. The collision parent has an unaudited ledger row.

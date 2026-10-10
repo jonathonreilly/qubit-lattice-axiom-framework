@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/spatial_quantum_collision_realization_2026_10_09.py
+runner_sha256: e4b969804fe943ed69279446ed96ffc5ad87bcb8359f1150c41d34155feb8543
+input_fingerprint_sha256: 869655e2b3958a88fac1b29d88b5c2c45199dd90124b58d421db37ea0d978fd0
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.38
+status: ok
+----- stdout -----
+Author exact discriminator; Python standard library, rational arithmetic.
+Exact dilation: two 6x6 unitaries, all 18 system matrix-unit images;
+  Kraus completeness, population closure, and no directed reverse hop.
+  cos=3/5, sin=4/5, jump probability=16/25.
+Merged-source contrast on E_01: target derivative 1;
+  separately marked jumps: 0 (exact).
+Finite ordered four-mark schedule, same initial occupation:
+  input (i,j) gives product-occupation probability 8992/15625;
+  input (j,i) gives product-occupation probability 544/625;
+  difference=-4608/15625=-2 p^2(1-p).
+Full D3Q27 pair-group census: 288 reversible reactions;
+  four distinct species each; 54 directed hop marks per label/cell.
+Exact labelled-to-occupation generator comparison:
+  4096 configurations; 330 fibers; 15920 outgoing targets.
+  Two occupied cells inside a 3x3x3 torus, four velocities, N=4;
+  all streaming targets are kept in the full torus.
+  w=1/27, Omega=4/27, b/ell=7/5,
+  c=5/7, kappa=11/13, gamma=1485/728.
+  n_i=n_j=2 at one cell: total forward rate=1485/91;
+  species separated between cells: total collision rate=0.
+AUTHOR CHECKS COMPLETE: exact identities and declared contrasts verified.
+Not independent review; no numerical or all-size proof claim from this census.
+
+----- stderr -----
+

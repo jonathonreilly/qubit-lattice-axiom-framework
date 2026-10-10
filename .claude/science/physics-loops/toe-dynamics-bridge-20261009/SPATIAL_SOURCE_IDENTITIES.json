@@ -1,0 +1,58 @@
+{
+  "science": {
+    "docs/SPATIAL_PARTICLES_AND_NONLINEAR_KINETIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-09.md": "76ca0244ac3f4f1bcaf345f614e8acd418047e155ce0b40e035c5d3bc4c70c5e",
+    "scripts/spatial_particles_and_nonlinear_kinetic_limit_2026_10_09.py": "4881c3fd7e3df9a446eb83b7e93df28bb7e683e667ba9364e3694eaa0f8f28a8",
+    "docs/SPATIAL_QUANTUM_COLLISION_REALIZATION_BOUNDED_THEOREM_NOTE_2026-10-09.md": "f02fe7fae147bf5aedac035334ab8a34ac89deb3220c9381918e58e30711fff2",
+    "scripts/spatial_quantum_collision_realization_2026_10_09.py": "e4b969804fe943ed69279446ed96ffc5ad87bcb8359f1150c41d34155feb8543",
+    "docs/SPATIAL_PARTICLE_TO_LINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-09.md": "622e9c4e86ba8c181339dae82b293965726c94a717ef947120d1f5516828734b",
+    "scripts/spatial_particle_to_linear_fluid_limit_2026_10_09.py": "a8744ee9c9381b2a0aab5a2a09d6c165c9cf08f715900061d5c9f67db2b9dd6f"
+  },
+  "review_copies": {
+    "PARTICLE_INDEPENDENT_REVIEW.md": {
+      "original_sha256": "eb624e379d7e9083b9fe30b6e640aa6e63669427eb594c08684b4ad70b13c501",
+      "packaged_sha256": "bb776c75e4b54a1dc201531d58d5c0517c2b6af93a132b388ed1535ca8711916",
+      "changes": "relative Markdown links only; packaging provenance comment appended"
+    },
+    "QUANTUM_INDEPENDENT_REVIEW.md": {
+      "original_sha256": "e2232489bbd0aff537a4400a34eb848cae2295d18dda7af0cd762ab0ff4c2ba1",
+      "packaged_sha256": "95d7db2122e45c5fbd37986b19e60da846eb25dc76bd09ea1a9d2ac92976bda3",
+      "changes": "relative Markdown links only; packaging provenance comment appended"
+    },
+    "COMPOSITION_INDEPENDENT_REVIEW.md": {
+      "original_sha256": "3fcbcf5f891008b97c83edd7d4c47a35751672c29005a50640d465ee1fc137e4",
+      "packaged_sha256": "20523c5467afb15ab871bb043c5b32f98e2ea5bda5ca219d25e9cb8c14139ca6",
+      "changes": "relative Markdown links only; packaging provenance comment appended"
+    },
+    "SPATIAL_PRIOR_ART_REVIEW.md": {
+      "original_sha256": "16689053bb9ade9ab78dbab43ea3bc0c9a78fbc2817ec6f6d6834b09010b874a",
+      "packaged_sha256": "ad7c39f937d339d1b80726f23282e75bee9dda7ff61d89b1c755ede1283831bf",
+      "changes": "relative Markdown links only; packaging provenance comment appended"
+    }
+  },
+  "review_evidence": {
+    "composition_review_exact.py": "d1a8ee3da7ec0c8182040667a2ffd62141851c54c40d6a734608a1457f1110c0",
+    "composition_review_midpoint.py": "a81ec6bfaf75ae9b09406500587a6ad64eb73109d6d8840d814b7740902ebc23",
+    "quantum_review_independent_check.py": "5e7577030c34ff01306537d3f377e84b76508a9eb1f6c2f44137c680a8f7b60c",
+    "particle_review_generator.py": "738cbdc54064ec3aaf4b2851afd85126bb57a7d06cafb46f3373f74b784ea669",
+    "SPATIAL_RUNNER_MUTATIONS.txt": "db58ce3346ea4fc6d808f2aeca40a5a0d40ed59f0c72cd237e91c780a572aec3",
+    "joint_author_final.log": "ae69e891d835999e24a0486906a4c38c7eccd0f58d2ab99db64079b68c571b91",
+    "spatial_kinetic_search.txt": "d31d8f3d1e5b742e9350c272640c91d35d0d57993915792a23732c40e1a0097a",
+    "objects_search.txt": "cfe92a9dfef0d43dd8d03c52ade3c609d5c4aa92169534dc1e6779c4818832aa",
+    "motion_collision_search.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "search_context.json": "4b82eb8ebadf7f07e60fd9c6780b9219cdb5f35d142dc99dcbb6043fb3b2e99d",
+    "composition_review_author_runner.log": "ae69e891d835999e24a0486906a4c38c7eccd0f58d2ab99db64079b68c571b91",
+    "composition_review_exact.log": "6fb10da4865b29df01a0ef7655775132cfbabb7221c1aa394e06c6ec349ee3d7",
+    "composition_review_midpoint.log": "701cdf1addd704bc2bc021639027ce02237d9f65caeb3bc841d9c46abe615681",
+    "particle_review_author_rerun.log": "cec8f0b79242eecd803bfb45fcaaf80b78bc30fe97b0a614f13540e61d9da5c0",
+    "particle_review_final_runner.log": "cec8f0b79242eecd803bfb45fcaaf80b78bc30fe97b0a614f13540e61d9da5c0",
+    "particle_review_generator.log": "ffebbe40054e94e250f84e95e42a41eece25d27ca1238c8f491f137e87c5823d",
+    "particle_review_mutations.log": "cb836e2d9d739999bd2038be0a1261fe346c1d1744ed64a32edcd59d43e4c175",
+    "quantum_review_author_reproduction.log": "317cd8d3b973d999c7e3ca621efd8a061840b0ac24ed67d8dfb2b1bbf8761c4e",
+    "quantum_review_independent_check.log": "f91971e42da197c6878cbf922c3d1491505cf473c6a7fa02d63960f8d6400a95",
+    "quantum_review_mutant_drop_output.log": "ae4b270010f96468f637145cda3838dc4903ae0884a3ae8bbea0dfbd54e93714",
+    "quantum_review_mutant_gamma.log": "174db3ade17f62c3626f219c7b1123a3875d676a6ed2a8ade571155a4033ea9e",
+    "quantum_review_mutant_merged_mark.log": "a54b4a3296183a367e41adf9a25f65bf90524e2e6f7fc4348ee4854f8fe590ca",
+    "quantum_review_mutant_symmetric_hop.log": "8f2653831acae49cef0e4ae19c6d2d3d8b557d81ff576d935d30a7924fb4c7e1",
+    "quantum_review_packaging.log": "81bd7e80a92688d432e565b0c795368572d46af72f85c498a15f02d9dfffd012"
+  }
+}

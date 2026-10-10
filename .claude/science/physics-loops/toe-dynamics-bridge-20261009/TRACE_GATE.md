@@ -7,11 +7,16 @@ target_blocker_text: "Construct controlled links from microscopic dynamics to ma
 source_of_blocker_text: user_goal
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: "Test an actual native carrier's two-excitation channel and a nonlinear kinetic limit with the exact thermal moments."
+next_trace_action: "Derive a native carrier-to-population approximation with local transport and collision error, then test finite-amplitude fluid closure."
 ```
 
-The consumer is a future controlled native-to-fluid dynamics chain. The work
-adds a conditional microscopic realization and rigorous linear macroscopic
-limits of its common collision model. It supplies no selection of native rates,
-carrier or clock, and it does not compose fast global mixing with inhomogeneous
-streaming without an additional scale-local construction.
+The new spatial construction and stopped estimate close the mathematical
+composition obligation for an explicitly supplied model. The prior theorem's
+transport coefficients enter a simultaneous limit with O(delta) classical
+path error and O(delta^2) failure probability on each fixed time interval.
+A finite quantum schedule adds an O(delta^2) fixed-time measurement error.
+
+This supports the future native-to-fluid derivation. The physical carrier,
+observables, collision rates, ancillary preparation and autonomous clock
+remain supplied choices. The sufficient large-population/gate exponents are
+not physical scaling predictions or a practical simulation proposal.

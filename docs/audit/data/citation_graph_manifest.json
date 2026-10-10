@@ -1,6 +1,6 @@
 {
- "edge_count": 15421,
- "node_count": 6871,
+ "edge_count": 15426,
+ "node_count": 6874,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19097,6 +19097,18 @@
   "spatial_lattice_gauge_fermion_logarithms_and_metric_attraction_limits_bounded_theorem_note_2026-09-14": {
    "deps_hash": "3615cee7c92c",
    "out_degree": 3
+  },
+  "spatial_particle_to_linear_fluid_limit_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "02ebe8292279",
+   "out_degree": 3
+  },
+  "spatial_particles_and_nonlinear_kinetic_limit_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "3fde0a4e6afc",
+   "out_degree": 1
+  },
+  "spatial_quantum_collision_realization_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "3fde0a4e6afc",
+   "out_degree": 1
   },
   "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19": {
    "deps_hash": "0509803eed09",

@@ -1,0 +1,14 @@
+Standalone exact spatial-generator check; no repository imports
+velocities=27; channels=288; cells=27; particles=1304
+mesh=2/3; normalized_cell_weight=1/27; total_mass=5/3
+event_types=17010; literal count drift equals upwind + local polynomial
+hop bracket trace=870075/1700416; upper_bound=2025/2608
+collision bracket trace=879305625/12611135264; upper_bound=19389375/19342232
+transport energy pairing=-32917/294; negative_square_identity=exact
+local mass transport witness cell 0=-2835/5216
+each collision: one cell, four species, five conserved moments
+each transport event: one neighbor, unchanged velocity, five global conserved moments
+lifted single-particle drift sigma*v and covariance sigma*h*diag(abs(v)): exact
+multinomial initial covariance normalization: exact
+mutations detected: omitted cell-volume factor; globally averaged collisions; removed transport; reversed streaming sign
+finite algebra checks completed; stochastic/PDE inequalities require the written proof

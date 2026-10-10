@@ -1,0 +1,18 @@
+network: 27 velocities, 288 four-distinct reactions, 9 axial reactions
+M_min= 1/216 velocity_component_sum= 54
+C_R(alpha)= 124/3 + alpha * 4/3
+alias exact pairs checked= 134003 ; elementary infinite-shell bound= 1123/35 < 36
+test state: N= 583200 w= 1/27 amplitude= 1/8 ; energy/r_m^2= 89/2500
+exact hop bracket coefficient= 777589/7200 <= 216
+hop energy identity equals directed-edge squared-difference identity
+alpha= 1 collision bracket coefficient= 127401307/1492992 ; bound 8*C_R= 1024/3
+exact generator-energy = deterministic pairing + bracket
+alpha= 3 collision bracket coefficient= 3384099299/37324800 ; bound 8*C_R= 1088/3
+exact generator-energy = deterministic pairing + bracket
+normalization discriminator: dropping w from collision propensity is rejected
+iid direct two-draw enumeration, tilted= False ; full expected error= 23296
+iid direct two-draw enumeration, tilted= True ; full expected error= 559103/24
+exit-overshoot witness: one minimum-weight velocity hop has
+N= 46656 increments= (Fraction(-1, 1), Fraction(1, 1)) jump_norm_squared= 1/2916 r_m_squared= 1/5832
+jump_norm_squared / r_m_squared = 2 (computed from equilibrium counts and amplitude 1/8)
+all exact checks completed; analytic all-parameter arguments remain in the review

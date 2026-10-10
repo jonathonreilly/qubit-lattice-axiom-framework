@@ -1,0 +1,12 @@
+Joint-generator polynomial: 10x10 exact unitary; all 25 matrix-unit populations close.
+Derived Kraus pair I+(cos-1)P, sin*J; proper partial injection, cos=12/13.
+N=5 pair-projector census: 15552 cell configurations; 5100 nonzero reactions.
+gamma=c*kappa/(2*N*w)=2457/1870; doubled or halved rates rejected when active.
+Finite ordered-schedule target probability coefficients, ascending powers of p:
+  input orientation 1: (Fraction(0, 1), Fraction(2, 1), Fraction(-3, 1), Fraction(2, 1))
+  input orientation 2: (Fraction(0, 1), Fraction(2, 1), Fraction(-1, 1))
+  difference: (Fraction(0, 1), Fraction(0, 1), Fraction(-2, 1), Fraction(2, 1)); equal infinitesimal rates, unequal finite occupation laws.
+Taylor norm arithmetic: 2/3 + 2 = 8/3; pair splitting 4 fits 2*(8/3).
+Time-floor discriminator h=1/16, T=1/32: error >= 63/1024 > omitted-floor bound 1/192.
+Including the declared 2*h*Lambda gives 25/192.
+Review-owned finite checks complete. All-size and diamond conclusions use the written derivation.

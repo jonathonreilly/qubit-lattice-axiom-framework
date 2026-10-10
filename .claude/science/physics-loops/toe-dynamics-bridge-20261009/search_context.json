@@ -1,0 +1,8 @@
+{
+  "main": "d9b869b97944676aaa759915462c529dc276a04c",
+  "queries": {
+    "spatial_kinetic": "(spatial.{0,35}kinetic|kinetic.{0,35}spatial|propagation.of.chaos|density.dependent.{0,35}(process|chain)|hydrodynamic.limit)",
+    "motion_collision": "(velocity.dependent.{0,35}(hop|stream)|local.{0,25}collision.{0,35}(particle|occupation)|reaction.transport|reaction.advection|upwind.{0,30}(particle|collision))",
+    "objects": "(D3Q27|finite.velocity|local.occupation.process|cell.{0,25}collision.rate)"
+  }
+}

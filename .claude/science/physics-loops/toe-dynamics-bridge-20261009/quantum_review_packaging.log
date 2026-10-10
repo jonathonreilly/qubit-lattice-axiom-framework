@@ -1,0 +1,9 @@
+displayed equation blocks identical: 22
+Sections 1-5 identical after the single proposed-generator wording replacement.
+Executable runner AST identical after removing docstring and the two AUDIT declarations.
+AUDIT_INPUT_PATHS exist: ['docs/SPATIAL_QUANTUM_COLLISION_REALIZATION_BOUNDED_THEOREM_NOTE_2026-10-09.md', 'docs/SUPPLIED_FINITE_VELOCITY_COLLISIONS_AND_GIBBS_EQUILIBRATION_BOUNDED_THEOREM_NOTE_2026-10-08.md']
+f02fe7fae147bf5aedac035334ab8a34ac89deb3220c9381918e58e30711fff2  worktree/docs/SPATIAL_QUANTUM_COLLISION_REALIZATION_BOUNDED_THEOREM_NOTE_2026-10-09.md
+e4b969804fe943ed69279446ed96ffc5ad87bcb8359f1150c41d34155feb8543  worktree/scripts/spatial_quantum_collision_realization_2026_10_09.py
+worktree relative path logs/runner-cache/spatial_quantum_collision_realization_2026_10_09.txt: exists=False
+worktree relative path SPATIAL_RUNNER_MUTATIONS.txt: exists=False
+worktree relative path QUANTUM_INDEPENDENT_REVIEW.md: exists=False

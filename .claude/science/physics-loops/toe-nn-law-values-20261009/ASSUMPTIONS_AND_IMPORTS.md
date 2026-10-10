@@ -1,3 +1,35 @@
+# Assumptions and imports — cycle 16
+
+Supplied by the axioms, and used only as named:
+
+- translations and proper cubic rotations about lattice sites
+- source/action left outside the axioms
+- the formation site, probability, and rate left unsupplied
+
+Declared for this cycle, not an axiom:
+
+- one unit square and the alphabet `{0, 1, blank}` on its four corners
+- the boundary-sign character already defined on the eight corner-preserving
+  proper isometries
+- one integer `u` for color `1` and one integer `v` for blank, the same
+  pair at every corner, with color `0` contributing `0`
+
+Not used: an edge flux, a per-corner weight vector, the even-sum lattice,
+the odd cap bond factor, the `3×3` bond correlation, a CHSH score, a
+readout weight, a quadratic channel, the shell censuses, a menu that
+deletes blank corners, a third color, a fifth corner, a dynamics clause,
+a Hamiltonian, literature comparator values, and the three approved
+primitives `scale_reference_primitive`, `kinetic_isotropy_primitive`, and
+`realized_state_primitive`. The premise registry at
+`docs/audit/data/axiom_premise_nodes.json` names those three primitives.
+None is an input here.
+
+Counterfactual: if the weights depend on the corner, or if a third color
+or a fifth corner is added, or if blank corners are deleted before the
+sum, Theorems 1 and 2 do not apply. The unit failures use `1000` and
+`b000`. The site and the rate remain unsupplied. The zero pair is not the
+next selected flux. The corner-weight family stops.
+
 # Assumptions and imports — cycle 15
 
 Supplied by the axioms, and used only as named:

@@ -1,3 +1,28 @@
+# Claim status certificate — cycle 16
+
+- Intended audit claim type: `bounded_theorem`
+- Author surface: bounded-support, conditional on colorings of one unit
+  square by `{0, 1, blank}`, on the boundary-sign character already
+  defined, and on one shared integer for color `1` and one shared integer
+  for blank, with color `0` contributing `0`
+- Current ledger status of this new note: none yet; do not invent one
+- Audit remains required. This file is not a verdict.
+- Open imports: the four-corner alphabet, the boundary-sign character, the
+  shared pair `(u, v)`, the proper orbit of `(1, 1, 2)`, and the formation
+  site and rate
+- Route pruned: a nonzero shared pair `(u, v)` is covariant for that
+  character
+- The relation lattice is all of `Z^2`, of index `1` and determinant `1`.
+  The only integer solution is `(0, 0)`. A basis is empty. The zero pair
+  is not a flux. The corner-weight family stops
+- No-go packet in the source note is scoped to this two-integer family.
+  It does not classify `(1, 1, 2)`, and it does not select a coefficient
+- The odd cap alphabet stays stopped. The six-direction shell family stays
+  closed. The rank-3 module is not a selected circulation
+- Runner: `TOTAL: PASS=6 FAIL=0` at the worktree copy, re-run by the author
+  through `runner_cache.py`
+- Independent review has not been requested
+
 # Claim status certificate — cycle 15
 
 - Intended audit claim type: `bounded_theorem`

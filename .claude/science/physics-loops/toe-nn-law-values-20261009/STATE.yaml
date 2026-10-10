@@ -6,15 +6,15 @@ stop_at: 2026-10-10T12:02:06Z
 base_commit: 17a95e60d85afc246fc7c163adef8869ab3f4194
 branch: physics-loop/toe-nn-law-values-20261009
 worktree: /Users/jonreilly/.grok/campaigns/toe-24h-20261009/wt
-cycle: 15
-active_route: integer corner weights of the four corner values, blank counted as 0
-approach_family: one exact linear system over Z for the boundary-sign character, no new alphabet
-hard_residual: dynamics clause is supplied, not derived; formation site and rate are unsupplied; the only covariant integer corner weight is 0 and it is not a flux; a numeric map that sends blank to an integer other than 0 is unclassified; the rank-3 module is not adopted; a menu that deletes blank corners stays outside; the odd cap alphabet stays stopped; the six-direction shell family stays closed
-strongest_unresolved_obligation: formation site and rate remain unsupplied; source/action remains an open gate; a coefficient of the rank-3 module is not a selected circulation; blank does not yet have its own integer weight
+cycle: 16
+active_route: one shared integer on color 1 and one shared integer on blank, color 0 contributing 0
+approach_family: one exact linear system over Z^2 for the boundary-sign character, no new alphabet
+hard_residual: dynamics clause is supplied, not derived; formation site and rate are unsupplied; the only covariant shared symbol pair is (0, 0) and it is not a flux; the corner-weight family stops; the rank-3 module is not adopted; a menu that deletes blank corners stays outside; the proper orbit of (1, 1, 2) stays unclassified; the odd cap alphabet stays stopped; the six-direction shell family stays closed
+strongest_unresolved_obligation: formation site and rate remain unsupplied; source/action remains an open gate; a coefficient of the rank-3 module is not a selected circulation; the corner-weight family has stopped
 files_touched:
-  - docs/PLAQUETTE_CORNER_WEIGHT_COVARIANCE_ONLY_ZERO_BOUNDED_THEOREM_NOTE_2026-10-10.md
-  - scripts/plaquette_corner_weight_covariance_only_zero_2026_10_10.py
-  - logs/runner-cache/plaquette_corner_weight_covariance_only_zero_2026_10_10.txt
+  - docs/PLAQUETTE_CORNER_SYMBOL_PAIR_COVARIANCE_ONLY_ZERO_BOUNDED_THEOREM_NOTE_2026-10-10.md
+  - scripts/plaquette_corner_symbol_pair_covariance_only_zero_2026_10_10.py
+  - logs/runner-cache/plaquette_corner_symbol_pair_covariance_only_zero_2026_10_10.txt
 runner_result: "TOTAL: PASS=6 FAIL=0"
 open_imports:
   - the alphabet {0, 1, blank} on the four corners of one unit square
@@ -40,10 +40,11 @@ no_go_routes_pruned:
   - proper-cubic covariance forces a unique nonzero circulation on the 81 square colorings
   - the alternating sum of the four corner values, blank counted as 0, is covariant for that character
   - a nonzero integer corner weight, with blank counted as 0, is covariant for that character
+  - a nonzero shared pair (u, v), with color 0 contributing 0, is covariant for that character
 trace_class: negative_route_pruning
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
-commit: cycle-15 commit on this branch
-next_exact_action: Do not repeat the even-sum relation lattice, the determinant -2, the four named rows, the quotient 0, or the constant weight on 1000. Do not adopt the zero weight as a flux. Do not repeat the alternating-sum witness or the rank-3 census. The next exact question is which pairs of integer vectors (u, v) make the sum of u at color 1 and v at blank covariant for the same character, with color 0 contributing 0. Give a basis over Z, or prove the only solution is 0. Do not enlarge the alphabet. Do not adopt a surviving weight as a flux. Do not repeat the shell censuses or the cap-factor cycles. The odd cap alphabet stays stopped. The six-direction shell family stays closed. Do not delete blank corners and call the result a selected sign. Do not invent a hazard law. The site and the rate stay unsupplied.
+commit: cycle-16 commit on this branch
+next_exact_action: The corner-weight family stops after this block. Do not add a third color, a fifth corner, a per-corner blank weight, or a deleted-blank menu. Do not adopt (0, 0) as a flux. Do not repeat the unit count rows, the determinant 1, the four-weight theorem, the alternating-sum witness, or the rank-3 census. The next exact question is whether the proper orbit of (1, 1, 2) equals its mirror orbit under the comparison already used for (0, 1, 2). Search origin/main first. One orbit. Do not classify (1, 2, 2) in the same block. Do not invent a hazard law. The site and the rate stay unsupplied.
 stop_condition: stop_at, or disk avail below 8Gi, or no non-overlapping route remains
 do_not_touch:
   - physics-loop/photon-vacuum-shift-20261009
@@ -56,8 +57,9 @@ resource_caps:
   python_rss_kill_kb: 1500000
 lock: refreshed in this worktree for holder grok-toe-24h-20261009
 searched_origin_main: d9b869b97944676aaa759915462c529dc276a04c
-open_after_cycle_15:
-  - a separate integer weight for blank at each corner, with color 0 contributing 0
-  - a menu that deletes blank corners before the circulation character
+open_after_cycle_16:
+  - the proper orbit of (1, 1, 2), not yet compared with its mirror
+  - the orbit of (1, 2, 2), left out of the next block
   - formation site and rate
   - source/action identification
+corner_weight_family: stopped after the shared pair (u, v)

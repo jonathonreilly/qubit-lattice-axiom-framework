@@ -5,8 +5,15 @@ target_blocker_text: "source/action and physical-observable identification"
 source_of_blocker_text: frontier_question
 reachability_to_target: prunes
 artifact_role: theorem
-next_trace_action: "The only integer corner weight covariant for the boundary-sign character, with blank counted as 0, is zero. The zero weight is not a flux. The site and the rate stay unsupplied."
+next_trace_action: "The only shared pair (u, v) covariant for the boundary-sign character is (0, 0). The zero pair is not a flux. The corner-weight family stops. The site and the rate stay unsupplied."
 ```
+
+Cycle 16 prunes the reading that some nonzero shared pair, with color `0`
+contributing `0`, color `1` contributing `u`, and blank contributing `v`,
+is a covariant circulation. The relation lattice is all of `Z^2`, of
+index `1`. Exact division returns only `(0, 0)`. That pair is not adopted
+as a flux. The corner-weight family stops. The quoted blocker below is
+not closed.
 
 Cycle 15 prunes the reading that some nonzero integer corner weight, with
 blank counted as `0`, is a covariant circulation. The relation lattice is

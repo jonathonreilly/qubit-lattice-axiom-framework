@@ -1,6 +1,6 @@
 {
- "edge_count": 15443,
- "node_count": 6884,
+ "edge_count": 15446,
+ "node_count": 6885,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -16213,6 +16213,10 @@
   "plaquette_corner_circulation_not_forced_bounded_theorem_note_2026-10-10": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "plaquette_corner_symbol_pair_covariance_only_zero_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "ecad4e4391f3",
+   "out_degree": 3
   },
   "plaquette_corner_weight_covariance_only_zero_bounded_theorem_note_2026-10-10": {
    "deps_hash": "f88bf29a736e",

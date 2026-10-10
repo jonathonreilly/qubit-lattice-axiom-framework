@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/plaquette_corner_symbol_pair_covariance_only_zero_2026_10_10.py
+runner_sha256: 0734c4303b6af9b3982b52879d0d5d2750316278c5925b1ddad634ab1ca44d21
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS eight proper isometries permute the square, and the boundary sign is a homomorphism
+PASS the shared pair is invariant under every corner permutation, so the residual is (1 - chi) times the sum
+PASS the two unit count rows have determinant 1 and generate every covariance equation over Z
+PASS exact division of the unit pivots returns only the zero pair
+PASS zero passes every pair, and each unit pair fails on the named reversal
+PASS color 0 contributes 0, color 1 contributes u, blank contributes v, and the square stays four corners
+relation_lattice: all of Z^2, index 1, determinant 1
+solution: (0, 0)
+basis: empty
+named_reversal: R = [[0, -1, 0], [-1, 0, 0], [0, 0, -1]], b = (1, 1, 0), perm = (2, 1, 0, 3), chi = -1
+unit_pair_u: (1, 0) on 1000 has value 1; the image 0010 has value 1, not -1
+unit_pair_v: (0, 1) on b000 has value 1; the image 00b0 has value 1, not -1
+cancelled_pair: (1, -1) vanishes on 1b00 and still fails on 1000
+per_element: the two unit count rows generate every covariance equation; the integer kernel is zero
+per_site: one supplied unit square; no second square; no site was selected
+per_mode: the boundary-sign character; the zero pair was not adopted as a flux
+per_block: alphabet {0, 1, blank}; color 0 contributes 0; color 1 contributes u; blank contributes v
+lattice_wide: checked and not executed — no infinite lattice, no formation site, and no formation rate
+family: the corner-weight family stops after this pair
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

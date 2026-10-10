@@ -1,6 +1,6 @@
 # Opportunity queue
 
-Ranked after cycle 15. Refresh `origin/main` before each search.
+Ranked after cycle 16. Refresh `origin/main` before each search.
 Searched commit:
 `d9b869b97944676aaa759915462c529dc276a04c`.
 
@@ -113,12 +113,20 @@ Searched commit:
     not repeat the elimination. A separate integer weight for blank, with
     color `0` still contributing `0`, is item 17. Do not invent a hazard
     law. The site and the rate stay unsupplied.
-17. **Which pairs `(u, v)` weigh color `1` and blank separately.** Not
-    opened. Same alphabet, same character, color `0` contributing `0`.
-    Give a basis over `Z`, or prove the only solution is `0`. Do not
-    enlarge the alphabet. Do not adopt a nonzero result as a flux. Do not
-    identify a coefficient with a mass density. A menu that deletes blank
-    corners stays outside and is not queued.
+17. **Which pairs `(u, v)` weigh color `1` and blank separately.** Done on
+    this branch for one shared pair at every corner, with color `0`
+    contributing `0`. The relation lattice is all of `Z^2`, of index `1`
+    and determinant `1`. The only solution is `(0, 0)`. A basis is empty.
+    The zero pair is not a flux. Do not repeat the elimination. The
+    corner-weight family stops. Do not add a third color, a fifth corner,
+    a per-corner blank weight, or a deleted-blank menu. Do not invent a
+    hazard law. The site and the rate stay unsupplied.
+18. **Whether the proper orbit of `(1, 1, 2)` equals its mirror orbit.**
+    Not opened. Same comparison already used for `(0, 1, 2)` in the
+    order-blind factor note. One orbit. Do not classify `(1, 2, 2)` in
+    the same block. Do not repeat the `(0, 1, 2)` factor. Do not identify
+    a count with a mass density. Do not invent a hazard law. The site and
+    the rate stay unsupplied.
 
 Overlap excluded for the whole campaign: photon vacuum subtraction, D3Q27
 hydrodynamics, and local quantum collision mixing. Those worktrees are dirty

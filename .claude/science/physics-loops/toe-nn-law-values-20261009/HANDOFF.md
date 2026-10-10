@@ -12,13 +12,64 @@ with Record, the distribution concerns which possibility a forming record
 locks, conditional on formation at that site; it does not supply the
 formation site, probability, or rate." The open-gate list still names
 "source/action and physical-observable identification." No note was opened
-that only repeats those sentences. No hazard law was invented. Cycle 15
+that only repeats those sentences. No hazard law was invented. Cycle 16
 does not close the source/action gate. It asks a different question:
-which integer corner weights, with blank counted as `0`, are covariant
-for the character defined in cycle 13. The site and the rate stay out of
-the object.
+which pairs `(u, v)` make the sum of `u` at color `1` and `v` at blank
+covariant for the character defined in cycle 13, with color `0`
+contributing `0` and the same pair at every corner. The site and the rate
+stay out of the object. The corner-weight family stops after this block.
 
 ## Done this cycle
+
+Cycles 1–15 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
+`TOTAL: PASS=61 FAIL=0`, `TOTAL: PASS=44 FAIL=0`,
+`TOTAL: PASS=16 FAIL=0`, `TOTAL: PASS=30 FAIL=0`, `TOTAL: PASS=31 FAIL=0`,
+`TOTAL: PASS=28 FAIL=0`, `TOTAL: PASS=13 FAIL=0`, `TOTAL: PASS=13 FAIL=0`,
+`TOTAL: PASS=12 FAIL=0`, `TOTAL: PASS=12 FAIL=0`, `TOTAL: PASS=8 FAIL=0`,
+and `TOTAL: PASS=6 FAIL=0`. Do not repeat the CHSH specializations, the
+readout split, the four quadratic channels, the achiral-orbit path
+factor, the linear split of `1 + kappa F`, the quadratic coefficient
+box, the shifted cap factor, the fully recorded binary census, the
+one-blank census, the 729-shell census, the rank-3 circulation census,
+the alternating-sum witness, or the four-weight theorem.
+
+Cycle 16 searched `origin/main` at `d9b869b97944676aaa759915462c529dc276a04c`
+for a classification of one shared integer `u` on color `1` and one
+shared integer `v` on blank. The hits that mention a blank corner are a
+terminal-site channel. The hits that mention color `1` are a species
+assignment. `boundary-sign` hits are a Ward overlap and a Maxwell
+generator. `corner-preserving`, `blank counted`, `blank weight`, and
+`contribute an integer` are absent. None evaluates this shared pair
+against the boundary-sign character. No merge with `origin/main` was
+made: `git merge-tree --write-tree --name-only HEAD origin/main` exited 0
+and listed no conflict paths. The one main-only commit is audit metadata.
+
+On the same unit square:
+
+- the sum is `u N_1 + v N_b`, with color `0` contributing `0`
+- every corner-preserving isometry permutes the four colors, so the sum
+  is unchanged
+- the residual is `(1 - χ) φ`; preserving elements contribute only `0`
+- the other diagonal half turn has character `-1`, so `φ` vanishes on
+  every coloring
+- `1000` forces `u = 0` and `b000` forces `v = 0`
+- the two unit rows are the identity, of determinant `1` and index `1`
+- the four-blank row `(0, 4)` is dependent, and its quotient is `0`
+- `(1, 0)` sends `1000` from `1` to `1` under that reversal, not to `-1`
+- `(0, 1)` does the same on `b000` and `00b0`
+- `(1, -1)` vanishes on `1b00` and still fails on `1000`
+
+The only solution is `(0, 0)`. A basis is empty. The zero pair is not a
+flux. No coefficient is a mass density. This does not derive a source
+identification or a formation rate. The corner-weight family stops. A
+third color, a fifth corner, another per-corner weight, and a menu that
+deletes blank corners are not opened. The odd cap alphabet stays stopped.
+The six-direction shell family stays closed.
+
+Runner: `TOTAL: PASS=6 FAIL=0`.
+
+## Earlier cycle 15, unchanged
 
 Cycles 1–14 are unchanged. Their runners remain `TOTAL: PASS=31 FAIL=0`,
 `TOTAL: PASS=55 FAIL=0`, `TOTAL: PASS=102 FAIL=0`,
@@ -365,30 +416,28 @@ alone. Do not open a second worktree. Home `~/Projects/Physics` stays uncommitte
 
 ## Landed this cycle
 
-Commits through cycle 14 are already on the branch. Cycle 15 is pushed
+Commits through cycle 15 are already on the branch. Cycle 16 is pushed
 onto the same branch for PR 9475. Do not merge it. Do not open a second PR.
 
 PR: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9475
 
 ## Next exact action
 
-Do not repeat the even-sum relation lattice, the determinant `-2`, the
-four named rows, the quotient `0`, or the constant weight on `1000`. Do
-not adopt the zero weight as a flux. Do not repeat the alternating-sum
-witness, the value `-2` on `0101`, the half-turn
-`(x, y, z) ↦ (y, x, -z)`, or the rank-3 census. The next exact question
-is which pairs of integer vectors `(u, v)` make the sum of `u` at color
-`1` and `v` at blank covariant for the same character, with color `0`
-contributing `0`. Give a basis over `Z`, or prove the only solution is
-`0`. Do not enlarge the alphabet. Do not adopt a surviving weight as a
-flux. Do not repeat the 729-shell census, the one-blank census, the
-binary-shell census, the unsoldered count `1024`, the CHSH squares, the
-readout split, the four-channel count, the achiral-orbit path factor,
-the linear kappa split, the quadratic box, or the shifted cap factor.
-The odd cap alphabet stays stopped. The six-direction shell family stays
-closed. Do not delete blank corners, or blank directions, and call the
-result a selected sign. Do not invent a hazard law. Do not identify a
-count with a mass density. The site and the rate stay unsupplied.
+The corner-weight family stops after this block. Do not add a third
+color, a fifth corner, a per-corner blank weight, or a deleted-blank
+menu. Do not adopt `(0, 0)` as a flux. Do not repeat the unit count rows,
+the determinant `1`, the reversal of `1000` or `b000`, the four-weight
+theorem, the alternating-sum witness, or the rank-3 census. The next
+exact question, already left unclassified and not part of this family,
+is whether the proper orbit of `(1, 1, 2)` equals its mirror orbit under
+the same comparison that
+`docs/ACHIRAL_ZERO_ONE_TWO_ORBIT_ORDER_BLIND_FACTOR_BOUNDED_THEOREM_NOTE_2026-10-09.md`
+used for `(0, 1, 2)`. Search `origin/main` first. One orbit. Do not
+classify `(1, 2, 2)` in the same block. Do not repeat the order-blind
+factor of `(0, 1, 2)`. Do not repeat the shell censuses or the cap-factor
+cycles. The odd cap alphabet stays stopped. The six-direction shell
+family stays closed. Do not invent a hazard law. Do not identify a count
+with a mass density. The site and the rate stay unsupplied.
 
 ## Cleanup
 

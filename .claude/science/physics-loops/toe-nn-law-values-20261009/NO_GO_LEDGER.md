@@ -197,3 +197,19 @@ integer other than `0`, or delete blank corners before the sum. No
 coefficient was selected. No hazard law was introduced. The source/action
 open gate stays open. The odd cap alphabet is not reopened. The shell
 censuses and the rank-3 orbit table are not rerun.
+
+Cycle 16 does not claim that every integer function of the four colors
+fails the character, and it does not claim that the zero pair is the
+physical circulation. The scoped statement is narrower: for `(u, v)` in
+`Z^2`, the sum `u N_1 + v N_b`, with color `0` contributing `0` and the
+same pair at every corner, is covariant exactly at `(0, 0)`. The relation
+lattice is all of `Z^2`, of index `1` and determinant `1`. A basis of the
+solution module is empty. The zero pair is not a flux. The corner-weight
+family stops.
+
+N7's steelman is accepted as an out-of-domain escape: let the weights
+depend on the corner again, add a third color, add a fifth corner, or
+delete blank corners before the sum. No coefficient was selected. No
+hazard law was introduced. The source/action open gate stays open. The
+odd cap alphabet is not reopened. The shell censuses, the rank-3 orbit
+table, and the four-weight elimination are not rerun.

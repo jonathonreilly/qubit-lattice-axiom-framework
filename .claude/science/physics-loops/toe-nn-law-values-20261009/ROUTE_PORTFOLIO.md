@@ -351,3 +351,35 @@ Classification: open after that matched-hit review. The executed route is
 the integer kernel of the weighted corner sums. No flux and no separate
 blank weight is part of the route. The site and the rate stay unsupplied.
 The odd cap alphabet stays stopped. The shell family stays closed.
+
+## Cycle 16 search
+
+Refreshed `origin/main` immediately before the search. Commit
+`d9b869b97944676aaa759915462c529dc276a04c`. No content conflict with this
+branch. The one main-only commit is still audit metadata and was not merged.
+`git merge-tree --write-tree --name-only HEAD origin/main` exited 0 and
+listed no conflict paths.
+
+Commands and what they returned:
+
+- `git grep` for `blank weight`, `contribute an integer`, and `shared
+  blank` on `origin/main` under `docs/*.md` and `scripts/*.py`. No hit.
+- `git grep` for `blank counted` and `corner-preserving` under those
+  paths. No hit.
+- `git grep` for `boundary-sign` under those paths. The hits are a Ward
+  overlap and a Maxwell generator. Neither evaluates a shared corner
+  symbol pair.
+- A blank-corner hit is the terminal-site channel. A color-`1` hit is a
+  species assignment. Neither is this kernel.
+- Reading note (2) in `docs/MINIMAL_AXIOMS_2026-06-29.md` still withholds
+  the formation site, probability, and rate. The open-gate list still
+  names source/action. Neither sentence is this classification.
+- Cycle 15 on this branch classifies per-corner weights with blank
+  contributing `0`. It does not let blank carry its own integer.
+
+Classification: open after that matched-hit review. The executed route is
+the integer kernel of one shared pair `(u, v)`. No flux is part of the
+route. The corner-weight family stops. The site and the rate stay
+unsupplied. The odd cap alphabet stays stopped. The shell family stays
+closed. The proper orbit of `(1, 1, 2)` stays queued and is not this
+family.

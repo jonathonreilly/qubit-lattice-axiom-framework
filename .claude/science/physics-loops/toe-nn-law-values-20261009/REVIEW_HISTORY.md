@@ -1,5 +1,49 @@
 # Review history
 
+2026-10-10 cycle 16 author pass. Value gate, searched `origin/main` at
+`d9b869b97944676aaa759915462c529dc276a04c`:
+
+- V1. The queued discriminator is which pairs `(u, v)` make the sum of
+  `u` at color `1` and `v` at blank covariant for the character already
+  defined, with color `0` contributing `0` and the same pair at every
+  corner. Source: cycle-15 N7 and `OPPORTUNITY_QUEUE.md` item 17 before
+  this cycle. The formation sentence was not given a note of its own.
+- V2. Not on `origin/main`. Commands were `git grep` for `blank weight`,
+  `contribute an integer`, `shared blank`, `blank counted`,
+  `corner-preserving`, and `boundary-sign`, under `docs/*.md` and
+  `scripts/*.py`. `corner-preserving` and `blank counted` are absent. The
+  blank-corner hits are a terminal-site channel. The color-`1` hits are a
+  species assignment. The boundary-sign hits are a Ward overlap and a
+  Maxwell generator. None is this two-integer kernel.
+  `git merge-tree --write-tree --name-only HEAD origin/main` exited 0
+  with no conflict paths. The audit-metadata commit on `origin/main` was
+  not merged.
+- V3. Theorems 1 and 2 of the cycle-16 note, checked by the paired
+  runner. The only solution is `(0, 0)`. A basis is empty. The zero pair
+  is not a flux. The corner-weight family stops. The site and the rate
+  remain open.
+- V4. Before, a shared blank weight was unclassified. After, the relation
+  lattice is all of `Z^2`, of index `1` and determinant `1`, and its
+  integer kernel is `{0}`.
+- V5. Not a corollary of the four-weight theorem. That theorem fixes
+  blank at `0` and lets the four corner weights vary. It does not let
+  blank carry its own integer, and it does not prove this determinant.
+
+No-go gate for the scoped kernel is in the cycle-16 source note. The only
+covariant shared pair is zero. A universal claim that no function of the
+four colors can be covariant is not made. The corner-weight family stops.
+Author mutations, each on a scratch copy that was deleted: demanding that
+the determinant be `2` prints `FAIL=1`; demanding that `(1, 0)` on the
+image of `1000` meet the required value `-1` prints `FAIL=1`. Independent
+review has not been requested. No audit grade.
+
+Conformance sections touched by this author pass, not a review-loop verdict:
+the note states its hypotheses, pins one runner and cache, keeps the
+classification inside this two-integer family and the character already
+defined, separates the kernel from the per-corner weight lattice, and
+does not write an audit verdict. Sections that belong to independent
+review were not run.
+
 2026-10-10 cycle 15 author pass. Value gate, searched `origin/main` at
 `d9b869b97944676aaa759915462c529dc276a04c`:
 

@@ -1,6 +1,7 @@
 # Literature bridges
 
-No literature search was required for the corner-weight kernel, the
+No literature search was required for the shared symbol-pair kernel, the
+corner-weight kernel, the
 alternating corner sum, the
 square-circulation census, the
 ternary-shell census, the

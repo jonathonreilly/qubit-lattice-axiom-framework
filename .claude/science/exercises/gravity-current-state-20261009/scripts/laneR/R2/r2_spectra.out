@@ -1,0 +1,80 @@
+STEP 1: generic STRONG cubic Hamiltonians (K0 generic cubic, Q = Reynolds(F^T M F), F lowest-degree invariants)
+[S] invariant functionals of lowest degree 1: 8
+--- S
+  [001]  n_phys_modes=5: w~k^1.00 (m^2=4.00, w/k^p=1.695); w~k^1.00 (m^2=1.00, w/k^p=1.960); w~k^1.00 (m^2=1.00, w/k^p=1.960); w~k^1.00 (m^2=4.00, w/k^p=2.550); w~k^1.00 (m^2=0.00, w/k^p=3.328)
+  [110]  n_phys_modes=5: w~k^1.00 (m^2=1.00, w/k^p=1.635); w~k^1.00 (m^2=3.99, w/k^p=1.776); w~k^1.00 (m^2=1.00, w/k^p=2.106); w~k^1.00 (m^2=4.00, w/k^p=2.431); w~k^1.00 (m^2=0.04, w/k^p=3.458)
+  [111]  n_phys_modes=5: w~k^1.00 (m^2=1.85, w/k^p=1.653); w~k^1.00 (m^2=1.85, w/k^p=1.653); w~k^1.00 (m^2=3.11, w/k^p=2.286); w~k^1.00 (m^2=3.11, w/k^p=2.286); w~k^1.00 (m^2=0.00, w/k^p=3.495)
+  rand   n_phys_modes=5: w~k^1.00 (m^2=1.32, w/k^p=1.643); w~k^1.00 (m^2=2.81, w/k^p=1.717); w~k^1.00 (m^2=2.05, w/k^p=2.162); w~k^1.00 (m^2=3.74, w/k^p=2.394); w~k^1.00 (m^2=0.02, w/k^p=3.475)
+[S-tl] invariant functionals of lowest degree 1: 5
+--- S-tl
+  [001]  n_phys_modes=4: w~k^1.00 (m^2=1.00, w/k^p=1.057); w~k^1.00 (m^2=1.00, w/k^p=1.057); w~k^1.00 (m^2=4.00, w/k^p=1.763); w~k^1.00 (m^2=4.00, w/k^p=2.669)
+  [110]  n_phys_modes=4: w~k^1.00 (m^2=1.00, w/k^p=0.881); w~k^1.00 (m^2=1.00, w/k^p=1.334); w~k^1.00 (m^2=4.00, w/k^p=1.857); w~k^1.00 (m^2=4.00, w/k^p=2.541)
+  [111]  n_phys_modes=4: w~k^1.00 (m^2=1.12, w/k^p=1.036); w~k^1.00 (m^2=1.12, w/k^p=1.036); w~k^1.00 (m^2=3.70, w/k^p=2.271); w~k^1.00 (m^2=3.70, w/k^p=2.271)
+  rand   n_phys_modes=4: w~k^1.00 (m^2=1.05, w/k^p=0.935); w~k^1.00 (m^2=1.13, w/k^p=1.192); w~k^1.00 (m^2=3.62, w/k^p=2.016); w~k^1.00 (m^2=3.90, w/k^p=2.470)
+[V] invariant functionals of lowest degree 2: 6
+--- V
+  [001]  n_phys_modes=3: w~k^2.00 (m^2=4.00, w/k^p=1.168); w~k^2.00 (m^2=0.00, w/k^p=1.305); w~k^2.00 (m^2=4.00, w/k^p=1.383)
+  [110]  n_phys_modes=3: w~k^2.00 (m^2=3.38, w/k^p=1.202); w~k^2.00 (m^2=0.48, w/k^p=1.372); w~k^2.00 (m^2=4.00, w/k^p=1.383)
+  [111]  n_phys_modes=3: w~k^2.00 (m^2=4.00, w/k^p=1.316); w~k^2.00 (m^2=4.00, w/k^p=1.316); w~k^2.00 (m^2=0.00, w/k^p=1.364)
+  rand   n_phys_modes=3: w~k^2.00 (m^2=3.58, w/k^p=1.243); w~k^2.00 (m^2=2.41, w/k^p=1.360); w~k^2.00 (m^2=1.73, w/k^p=1.372)
+[V-tl] invariant functionals of lowest degree 3: 5
+--- V-tl
+  [001]  n_phys_modes=2: w~k^3.00 (m^2=4.00, w/k^p=0.660); w~k^3.00 (m^2=4.00, w/k^p=1.076)
+  [110]  n_phys_modes=2: w~k^3.00 (m^2=4.00, w/k^p=0.862); w~k^3.00 (m^2=4.00, w/k^p=1.133)
+  [111]  n_phys_modes=2: w~k^3.00 (m^2=4.00, w/k^p=1.062); w~k^3.00 (m^2=4.00, w/k^p=1.062)
+  rand   n_phys_modes=2: w~k^3.00 (m^2=4.00, w/k^p=0.936); w~k^3.00 (m^2=4.00, w/k^p=1.121)
+
+STEP 2a: add the weak-only (integrated-invariant) terms of lowest degree
+--- S + (+) weak degree-1 term #0
+  [001]  n_phys_modes=7: UNSTABLE(Im=-1.97e-02,m2=4.00); UNSTABLE(Im=-1.52e-02,m2=1.00); UNSTABLE(Im=1.52e-02,m2=1.00); UNSTABLE(Im=1.97e-02,m2=4.00); w~k^1.00 (m^2=0.00, w/k^p=3.328); w~k^0.50 (m^2=1.00, w/k^p=152.287); w~k^0.50 (m^2=4.00, w/k^p=196.683)
+  [110]  n_phys_modes=7: UNSTABLE(Im=-2.02e-02,m2=3.98); UNSTABLE(Im=-1.39e-02,m2=1.00); UNSTABLE(Im=1.39e-02,m2=1.00); UNSTABLE(Im=2.02e-02,m2=3.98); w~k^1.00 (m^2=0.00, w/k^p=3.442); w~k^0.50 (m^2=1.00, w/k^p=139.080); w~k^0.50 (m^2=3.98, w/k^p=201.852)
+  [111]  n_phys_modes=7: UNSTABLE(Im=-2.03e-02,m2=3.96); UNSTABLE(Im=-1.35e-02,m2=1.01); UNSTABLE(Im=1.35e-02,m2=1.01); UNSTABLE(Im=2.03e-02,m2=3.96); w~k^1.00 (m^2=0.00, w/k^p=3.495); w~k^0.50 (m^2=1.01, w/k^p=134.595); w~k^0.50 (m^2=3.96, w/k^p=203.235)
+  rand   n_phys_modes=7: UNSTABLE(Im=-2.02e-02,m2=3.97); UNSTABLE(Im=-1.37e-02,m2=1.01); UNSTABLE(Im=1.37e-02,m2=1.01); UNSTABLE(Im=2.02e-02,m2=3.97); w~k^1.00 (m^2=0.00, w/k^p=3.464); w~k^0.50 (m^2=1.01, w/k^p=137.123); w~k^0.50 (m^2=3.97, w/k^p=202.476)
+--- S + (-) weak degree-1 term #0
+  [001]  n_phys_modes=7: UNSTABLE(Im=-1.97e-02,m2=4.00); UNSTABLE(Im=-1.52e-02,m2=1.00); UNSTABLE(Im=1.52e-02,m2=1.00); UNSTABLE(Im=1.97e-02,m2=4.00); w~k^1.00 (m^2=0.00, w/k^p=3.328); w~k^0.50 (m^2=1.00, w/k^p=152.287); w~k^0.50 (m^2=4.00, w/k^p=196.683)
+  [110]  n_phys_modes=7: UNSTABLE(Im=-2.02e-02,m2=3.98); UNSTABLE(Im=-1.39e-02,m2=1.00); UNSTABLE(Im=1.39e-02,m2=1.00); UNSTABLE(Im=2.02e-02,m2=3.98); w~k^1.00 (m^2=0.00, w/k^p=3.442); w~k^0.50 (m^2=1.00, w/k^p=139.080); w~k^0.50 (m^2=3.98, w/k^p=201.852)
+  [111]  n_phys_modes=7: UNSTABLE(Im=-2.03e-02,m2=3.96); UNSTABLE(Im=-1.35e-02,m2=1.01); UNSTABLE(Im=1.35e-02,m2=1.01); UNSTABLE(Im=2.03e-02,m2=3.96); w~k^1.00 (m^2=0.00, w/k^p=3.495); w~k^0.50 (m^2=1.01, w/k^p=134.595); w~k^0.50 (m^2=3.96, w/k^p=203.235)
+  rand   n_phys_modes=7: UNSTABLE(Im=-2.02e-02,m2=3.97); UNSTABLE(Im=-1.37e-02,m2=1.01); UNSTABLE(Im=1.37e-02,m2=1.01); UNSTABLE(Im=2.02e-02,m2=3.97); w~k^1.00 (m^2=0.00, w/k^p=3.464); w~k^0.50 (m^2=1.01, w/k^p=137.123); w~k^0.50 (m^2=3.97, w/k^p=202.476)
+--- V + (+) weak degree-2 term #0
+  [001]  n_phys_modes=4: UNSTABLE(Im=-9.60e-05,m2=0.00); UNSTABLE(Im=9.60e-05,m2=0.00); w~k^1.00 (m^2=4.00, w/k^p=0.806); w~k^1.00 (m^2=4.00, w/k^p=0.967)
+  [110]  n_phys_modes=4: UNSTABLE(Im=-9.95e-05,m2=0.01); UNSTABLE(Im=9.95e-05,m2=0.01); w~k^1.00 (m^2=3.99, w/k^p=0.848); w~k^1.00 (m^2=4.00, w/k^p=0.967)
+  [111]  n_phys_modes=4: UNSTABLE(Im=-1.01e-04,m2=0.00); UNSTABLE(Im=1.01e-04,m2=0.00); w~k^1.00 (m^2=4.00, w/k^p=0.916); w~k^1.00 (m^2=4.00, w/k^p=0.916)
+  rand   n_phys_modes=4: UNSTABLE(Im=-1.00e-04,m2=0.00); UNSTABLE(Im=1.00e-04,m2=0.00); w~k^1.00 (m^2=4.00, w/k^p=0.870); w~k^1.00 (m^2=4.00, w/k^p=0.953)
+--- V + (-) weak degree-2 term #0
+  [001]  n_phys_modes=5: UNSTABLE(Im=-9.67e-05,m2=4.00); UNSTABLE(Im=-8.06e-05,m2=4.00); UNSTABLE(Im=8.06e-05,m2=4.00); UNSTABLE(Im=9.67e-05,m2=4.00); w~k^1.00 (m^2=0.00, w/k^p=0.960)
+  [110]  n_phys_modes=5: UNSTABLE(Im=-9.67e-05,m2=4.00); UNSTABLE(Im=-8.48e-05,m2=3.99); UNSTABLE(Im=8.48e-05,m2=3.99); UNSTABLE(Im=9.67e-05,m2=4.00); w~k^1.00 (m^2=0.01, w/k^p=0.995)
+  [111]  n_phys_modes=5: UNSTABLE(Im=-9.16e-05,m2=4.00); UNSTABLE(Im=-9.16e-05,m2=4.00); UNSTABLE(Im=9.16e-05,m2=4.00); UNSTABLE(Im=9.16e-05,m2=4.00); w~k^1.00 (m^2=0.00, w/k^p=1.008)
+  rand   n_phys_modes=5: UNSTABLE(Im=-9.53e-05,m2=4.00); UNSTABLE(Im=-8.70e-05,m2=4.00); UNSTABLE(Im=8.70e-05,m2=4.00); UNSTABLE(Im=9.53e-05,m2=4.00); w~k^1.00 (m^2=0.00, w/k^p=1.001)
+--- V-tl + (+) weak degree-3 term #0
+  [001]  n_phys_modes=3: UNSTABLE(Im=-7.12e-07,m2=4.00); UNSTABLE(Im=7.12e-07,m2=4.00); w~k^1.50 (m^2=4.00, w/k^p=71.208)
+  [110]  n_phys_modes=3: UNSTABLE(Im=-7.31e-07,m2=4.00); UNSTABLE(Im=7.31e-07,m2=4.00); w~k^1.50 (m^2=4.00, w/k^p=73.080)
+  [111]  n_phys_modes=3: UNSTABLE(Im=-7.39e-07,m2=4.00); UNSTABLE(Im=7.39e-07,m2=4.00); w~k^1.50 (m^2=4.00, w/k^p=73.910)
+  rand   n_phys_modes=3: UNSTABLE(Im=-7.35e-07,m2=4.00); UNSTABLE(Im=7.35e-07,m2=4.00); w~k^1.50 (m^2=4.00, w/k^p=73.467)
+--- V-tl + (-) weak degree-3 term #0
+  [001]  n_phys_modes=3: UNSTABLE(Im=-7.12e-07,m2=4.00); UNSTABLE(Im=7.12e-07,m2=4.00); w~k^1.50 (m^2=4.00, w/k^p=71.208)
+  [110]  n_phys_modes=3: UNSTABLE(Im=-7.31e-07,m2=4.00); UNSTABLE(Im=7.31e-07,m2=4.00); w~k^1.50 (m^2=4.00, w/k^p=73.080)
+  [111]  n_phys_modes=3: UNSTABLE(Im=-7.39e-07,m2=4.00); UNSTABLE(Im=7.39e-07,m2=4.00); w~k^1.50 (m^2=4.00, w/k^p=73.910)
+  rand   n_phys_modes=3: UNSTABLE(Im=-7.35e-07,m2=4.00); UNSTABLE(Im=7.35e-07,m2=4.00); w~k^1.50 (m^2=4.00, w/k^p=73.467)
+
+STEP 2b: S + cubic shear mass terms mu_E*P_E + mu_T2*P_T2 (gauge broken; full 6x6 phase space)
+--- S + muE=0, muT2=0
+  [001]  n_phys_modes=5: w~k^1.00 (m^2=4.00, w/k^p=1.695); w~k^1.00 (m^2=1.00, w/k^p=1.960); w~k^1.00 (m^2=1.00, w/k^p=1.960); w~k^1.00 (m^2=4.00, w/k^p=2.550); w~k^1.00 (m^2=0.00, w/k^p=3.328)
+  [110]  n_phys_modes=6: w~k^1.00 (m^2=0.00, w/k^p=0.000); w~k^1.00 (m^2=1.00, w/k^p=1.635); w~k^1.00 (m^2=3.90, w/k^p=1.776); w~k^1.00 (m^2=1.00, w/k^p=2.106); w~k^1.00 (m^2=4.00, w/k^p=2.431); w~k^1.00 (m^2=0.04, w/k^p=3.458)
+  [111]  n_phys_modes=6: w~k^1.00 (m^2=0.00, w/k^p=0.000); w~k^1.00 (m^2=1.85, w/k^p=1.653); w~k^1.00 (m^2=1.85, w/k^p=1.653); w~k^1.00 (m^2=3.11, w/k^p=2.286); w~k^1.00 (m^2=3.11, w/k^p=2.286); w~k^1.00 (m^2=0.00, w/k^p=3.495)
+  rand   n_phys_modes=6: w~k^1.00 (m^2=0.00, w/k^p=0.000); w~k^1.00 (m^2=1.32, w/k^p=1.643); w~k^1.00 (m^2=2.77, w/k^p=1.717); w~k^1.00 (m^2=2.05, w/k^p=2.162); w~k^1.00 (m^2=3.74, w/k^p=2.394); w~k^1.00 (m^2=0.02, w/k^p=3.475)
+--- S + muE=0.01, muT2=0
+  [001]  n_phys_modes=6: w~k^1.00 (m^2=1.00, w/k^p=1.960); w~k^1.00 (m^2=1.00, w/k^p=1.960); w~k^1.00 (m^2=4.00, w/k^p=2.550); w~k^1.00 (m^2=0.00, w/k^p=2.910); w~k^0.00 (m^2=0.00, w/k^p=0.089); w~k^0.00 (m^2=4.00, w/k^p=0.089)
+  [110]  n_phys_modes=6: w~k^1.00 (m^2=0.69, w/k^p=0.870); w~k^1.00 (m^2=1.00, w/k^p=2.106); w~k^1.00 (m^2=4.00, w/k^p=2.431); w~k^1.00 (m^2=0.26, w/k^p=3.399); w~k^0.00 (m^2=1.00, w/k^p=0.089); w~k^0.00 (m^2=3.00, w/k^p=0.089)
+  [111]  n_phys_modes=6: w~k^0.30 (m^2=0.00, w/k^p=0.000); w~k^1.00 (m^2=3.00, w/k^p=2.284); w~k^1.00 (m^2=3.00, w/k^p=2.284); w~k^1.00 (m^2=0.00, w/k^p=3.495); w~k^0.00 (m^2=2.00, w/k^p=0.089); w~k^0.00 (m^2=2.00, w/k^p=0.089)
+  rand   n_phys_modes=6: w~k^1.00 (m^2=0.26, w/k^p=0.634); w~k^1.00 (m^2=1.90, w/k^p=2.161); w~k^1.00 (m^2=3.71, w/k^p=2.394); w~k^1.00 (m^2=0.11, w/k^p=3.442); w~k^0.00 (m^2=1.25, w/k^p=0.089); w~k^0.00 (m^2=2.75, w/k^p=0.089)
+--- S + muE=0, muT2=0.01
+  [001]  n_phys_modes=5: w~k^1.00 (m^2=4.00, w/k^p=1.695); w~k^1.00 (m^2=0.00, w/k^p=3.328); w~k^0.00 (m^2=1.00, w/k^p=0.107); w~k^0.00 (m^2=1.00, w/k^p=0.107); w~k^0.00 (m^2=4.00, w/k^p=0.107)
+  [110]  n_phys_modes=6: w~k^1.00 (m^2=2.48, w/k^p=1.399); w~k^1.00 (m^2=1.00, w/k^p=1.635); w~k^1.00 (m^2=0.22, w/k^p=3.052); w~k^0.00 (m^2=1.00, w/k^p=0.107); w~k^0.00 (m^2=1.00, w/k^p=0.107); w~k^0.00 (m^2=4.00, w/k^p=0.107)
+  [111]  n_phys_modes=6: w~k^1.00 (m^2=2.00, w/k^p=1.655); w~k^1.00 (m^2=2.00, w/k^p=1.655); w~k^1.00 (m^2=0.00, w/k^p=2.910); w~k^0.00 (m^2=0.00, w/k^p=0.107); w~k^0.00 (m^2=3.00, w/k^p=0.107); w~k^0.00 (m^2=3.00, w/k^p=0.107)
+  rand   n_phys_modes=6: w~k^1.00 (m^2=2.05, w/k^p=1.505); w~k^1.00 (m^2=1.67, w/k^p=1.647); w~k^1.00 (m^2=0.12, w/k^p=2.994); w~k^0.00 (m^2=0.35, w/k^p=0.107); w~k^0.00 (m^2=1.94, w/k^p=0.107); w~k^0.00 (m^2=3.71, w/k^p=0.107)
+--- S + muE=0.01, muT2=0.02
+  [001]  n_phys_modes=6: w~k^1.00 (m^2=0.00, w/k^p=2.910); w~k^0.00 (m^2=0.00, w/k^p=0.089); w~k^0.00 (m^2=4.00, w/k^p=0.089); w~k^0.00 (m^2=1.00, w/k^p=0.152); w~k^0.00 (m^2=1.00, w/k^p=0.152); w~k^0.00 (m^2=4.00, w/k^p=0.152)
+  [110]  n_phys_modes=6: w~k^1.00 (m^2=0.00, w/k^p=2.910); w~k^0.00 (m^2=1.00, w/k^p=0.089); w~k^0.00 (m^2=3.00, w/k^p=0.089); w~k^0.00 (m^2=1.00, w/k^p=0.152); w~k^0.00 (m^2=1.00, w/k^p=0.152); w~k^0.00 (m^2=4.00, w/k^p=0.152)
+  [111]  n_phys_modes=6: w~k^1.00 (m^2=0.00, w/k^p=2.910); w~k^0.00 (m^2=2.00, w/k^p=0.089); w~k^0.00 (m^2=2.00, w/k^p=0.089); w~k^0.00 (m^2=0.00, w/k^p=0.152); w~k^0.00 (m^2=3.00, w/k^p=0.152); w~k^0.00 (m^2=3.00, w/k^p=0.152)
+  rand   n_phys_modes=6: w~k^1.00 (m^2=0.00, w/k^p=2.910); w~k^0.00 (m^2=1.25, w/k^p=0.089); w~k^0.00 (m^2=2.75, w/k^p=0.089); w~k^0.00 (m^2=0.35, w/k^p=0.152); w~k^0.00 (m^2=1.94, w/k^p=0.152); w~k^0.00 (m^2=3.71, w/k^p=0.152)
+

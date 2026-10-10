@@ -277,3 +277,16 @@ What it still lacks:
 - the bound-state chain rate M_pair(R) for composites;
 - re-register lane K in an implementable form.
 
+
+## 11. Lane R: gauge redundancy as the primitive (owner, 2026-10-10)
+
+**In plain words.** We asked whether a redundancy among records, a gauge symmetry, could keep the graviton massless and also make it pull on all matter equally. Four probes and three other-vendor referees say: **not shown either way (INCONCLUSIVE)**. The route was already partly explored in September; the prior-art probe found that.
+
+- **What works.** A gauge redundancy does forbid the simple mass terms. Breaking it to let matter couple brings back exactly the two shear numbers that P0 tunes.
+- **What fails, in the tested models.**
+  - The simplest lattice versions give waves whose frequency rises as k² or k³, not light-like.
+  - Or they carry extra spin-1 waves.
+  - Or they couple to an emergent charge rather than to matter's energy.
+- **What is left.** One construction has two light-like graviton modes and a 1/r pull: Gu–Wen's "weak" type with both of Einstein's constraints. Nobody has shown that lattice matter can feed it through an exactly conserved stress, or that qubits can realize it. That is the decisive next test.
+
+Details and referee lines are in `TESTS.md` ("Lane R results").

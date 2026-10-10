@@ -721,3 +721,55 @@ M-D and the three exercises are same-family only, and labelled so. No new work w
 - **Expected lane reading:** INCONCLUSIVE, leaning FAIL on (iii).
 
 **Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the runs.
+
+### Lane R results (2026-10-10, 10:28Z to about 11:40Z)
+
+**Who ran it.** Probes R0–R3: Claude Opus 5.5 at xhigh (same family). Referees for R1, R2 and R3: codex gpt-5.6-sol at xhigh. R0 is a prior-art survey and has no verdict. Reports are in `agents/R{0..3}_report.md`, referee reports in `agents/R{1,2,3}_referee.md`, scripts in `scripts/laneR/`.
+
+**Prior-art miss.** Lane R is not new. It was already run as the "tensor / constraint route":
+- the 09-14 note `docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_…_2026-09-14.md` on main;
+- probes 10–21 on PR #9363;
+- the 09-29 wall exercise.
+
+R0 found these. The supervisor's "option 3 untested" was wrong.
+
+- **R1 (framework-native).** Worker: FAIL bounded to 4 classes. **Referee: NOT CONFIRMED, so INCONCLUSIVE.** Narrow negatives:
+  - V gives ω ∝ k² and VS gives ω ∝ k³, in the regular analytic compact class.
+  - Traceful scalar charge cannot couple directly to a generic conserved stress.
+  - Integer gauge parameters allow periodic masses.
+  - The axioms supply no tensor redundancy.
+
+  Corrections:
+  - Lemma D is argued, not proved.
+  - "Compact ⇒ k² or k³" is too broad.
+  - R1-d (non-compact slots) is wrong for effective fields, since a noncompact infrared field can emerge from qubits.
+  - c = ½ comes from constraint preservation within the ansatz, not from closure.
+
+  Open: Gu–Wen N-type at strong coupling; an emergent noncompact VS + Einstein–Hilbert sector; matter as tensor defects.
+- **R2 (rank-2 models on Z³).** Worker: FAIL. **Referee: NOT CONFIRMED, so INCONCLUSIVE.**
+
+  Confirmed:
+  - In the strong class, S, S-tl, V and V-tl have 5, 4, 3 and 2 modes, with dispersions k, k, k² and k³.
+  - Scalar charge gives linear TT modes only together with gapless partners, and its charge cannot be mobile energy.
+  - Strong V/VS theories are too soft, and pure V has no minimal Newtonian source.
+  - Gauge invariance removes A-only TT masses.
+  - Breaking the redundancy brings back exactly P0's μ_E and μ_T2.
+  - The speed tunings are 3, or 4 without P/T, as a local codimension. (iv) is INCONCLUSIVE.
+
+  Open, and the strongest counter-route: **exact-constraint weak VS/N-type**. It has two positive linear TT modes and an attractive 1/r response to a supplied source; what remains open is the exact lattice stress/source bridge and a compact realization. Also open: mixed charges, defect matter, and nonlinear or nonperturbative phases.
+- **R3 (sum over event orders, on top of P1–P4).** Worker: INCONCLUSIVE leaning FAIL. **Referee: CONFIRMED WITH CORRECTIONS.**
+  - The class-A FAIL is not supported; class A is INCONCLUSIVE. A2 and A3 are unsupported, and the variance-to-TT-damping bridge is missing.
+  - Class B (positive fixed-coefficient interval-count weights) is a bounded FAIL: the bilayer sector is not suppressed.
+  - Relabelling is an exact discrete quotient with no local gauge generators.
+  - The orbit-volume T⁶ lemma holds only for short-range timelike kernels.
+  - Prices: R3-a and R3-c stand. R3-b conflicts with P4. R3-d is only a candidate escape.
+
+**Lane R verdict: INCONCLUSIVE.** No PASS. Every refereed negative is class-bounded. The one live construction is the exact-constraint weak (N-type) VS theory, but nothing derives its coupling to matter's energy-momentum on the lattice, or its realization in qubits.
+
+**Against the registered expectation:**
+- (i) holds in the strong class only for scalar charge, and then with partners. It was expected to pass generally.
+- (ii) passes, scoped to local analytic terms.
+- (iii) is unresolved, not failed.
+- (iv) is INCONCLUSIVE, as expected.
+
+**Decisive next test.** Couple a lattice matter field to the exact-constraint VS/N-type theory through lapse and shift. Can its stress satisfy the Gauss identities exactly, the K3a/Lemma R question, without regenerating μ_E and μ_T2?

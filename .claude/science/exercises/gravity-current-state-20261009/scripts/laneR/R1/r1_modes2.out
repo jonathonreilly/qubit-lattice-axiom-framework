@@ -1,0 +1,15 @@
+V_EH omega^2/k^2: [-1. -1. -0.]
+VS_EH omega^2/k^2: [-1. -1.]
+V_EH k= 0.01  omega (=|Im ev|)/k: [0. 0. 1. 1. 1. 1.]  max|Re ev|/k= 0.0
+V_EH k= 0.001  omega (=|Im ev|)/k: [0. 0. 1. 1. 1. 1.]  max|Re ev|/k= 0.0
+VS_EH k= 0.01  omega (=|Im ev|)/k: [1. 1. 1. 1.]  max|Re ev|/k= 0.0
+VS_EH k= 0.001  omega (=|Im ev|)/k: [1. 1. 1. 1.]  max|Re ev|/k= 0.0
+V_EH: transverse-trace mode kinetic DeWitt coefficient s.K.s = 0.0 ; potential s.(-R).s / k^2 = -1.0
+scalar Hamilton block [[0. 0.]
+ [0. 0.]]  F^2 = [[0. 0.]
+ [0. 0.]]
+
+Generic compact invariant quadratic Hamiltonians (random positive coefficients):
+V  slope of omega^2 vs k (all modes, 20 trials): min 4.000 max 4.000 ; max/min speed ratio median 2.432
+VS  slope of omega^2 vs k (all modes, 20 trials): min 6.000 max 6.000 ; max/min speed ratio median 1.390
+F  slope of omega^2 vs k (all modes, 20 trials): min 2.000 max 2.000 ; max/min speed ratio median 5.056

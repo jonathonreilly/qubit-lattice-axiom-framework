@@ -1,0 +1,17 @@
+model        n_phys   omega^2 at k=1e-2 n   slope d log|omega^2| / d log k (per mode)
+V_compact      3   [0. 0. 0.]   slopes(omega^2)=[4. 4. 4.]
+VS_compact     2   [0. 0.]   slopes(omega^2)=[6. 6.]
+F_compact      5   [0.     0.     0.0001 0.0001 0.0001]   slopes(omega^2)=[2. 2. 2. 2. 2.]
+V_EH           3   [-0.0001 -0.0001 -0.    ]   slopes(omega^2)=[2.   2.   1.86]
+VS_EH          2   [-0.0001 -0.0001]   slopes(omega^2)=[2. 2.]
+V_compact helicities of physical subspace (k||z): [-2.  0.  2.]
+VS_compact helicities of physical subspace (k||z): [-2.  2.]
+F_compact helicities of physical subspace (k||z): [-2. -1. -0.  1.  2.]
+F_compact omega^2/k^2 per mode: [0.5 0.5 1.  1.  1. ]
+V_EH omega^2/k^2: [-1. -1. -0.]
+VS_EH omega^2/k^2: [-1. -1.]
+identities |R Gt|=4.3e-16 |S Gt|=1.8e-15 |B Ft|=3.4e-16 |C S^T|=1.9e-15 |Gt^T R|=3.6e-15
+identities |R Gt|=9.6e-16 |S Gt|=3.6e-15 |B Ft|=7.0e-17 |C S^T|=1.2e-15 |Gt^T R|=1.5e-15
+identities |R Gt|=2.2e-16 |S Gt|=1.9e-16 |B Ft|=1.4e-16 |C S^T|=4.1e-16 |Gt^T R|=3.2e-16
+vector gauge : mass form h.h changes under gauge: max |g^T g| = 3.2600442712284608e-06 (nonzero -> mass forbidden by the redundancy)
+fracton gauge : mass form h.h changes under gauge: max |g^T g| = 9.999999198583923e-13 (nonzero -> mass forbidden by the redundancy)

@@ -892,3 +892,35 @@ R0 found these. The supervisor's "option 3 untested" was wrong.
 **Next decisive tests:**
 1. Interacting staggered fermions, the framework's own matter: do matrix-valued taste charges give an exact local momentum (a K3a/L2 extension)?
 2. The seagull for non-constant h, with full O(κ) closure, for the free scalar.
+
+## Lane RS: interacting staggered fermions as the source of an exact lattice momentum (owner, 2026-10-10)
+
+**Owner request:** "run the staggered fermion test". This is lane RN's decisive next test. It is a test setting only, and nothing in it is recorded in the axiom memo.
+
+**The question.** Lane RN's L2 refereed result covers only scalar single-band matter: in d ≥ 2 its collisions conserve no momentum. Can the framework's own matter, staggered fermions, do better? Staggered fermions carry one component per site, have 2^d taste corners, and their dispersion has period π. Do their taste and matrix structure supply an exactly conserved local, or exponentially quasi-local, momentum density once they interact? Such a density would let them feed the exact-constraint VS shift constraint.
+
+**Prior art to extend, not repeat:**
+- K3a: staggered QED at O(e), with a one-body symbol and a scalar photon weight. Its referees left matrix-valued charges open.
+- RN L2 and its referee: the two-body collision reduction (a necessary condition), and Spohn's result that only aω + c survives.
+- RN L1: the free staggered fermion's energy current is exact, and P_j = ½{J_j, h} commutes with h.
+
+**Probes** (Claude Opus 5.5 at xhigh, run in parallel; same model family as the supervisor):
+- **S1 (contact interactions).** Staggered fermions in d = 2 and 3, with a nearest-neighbour density–density interaction (the natural interaction at one per site), plus a taste-invariant four-fermion contact.
+  - Analytic: a collision-invariant analysis with matrix-valued charges (taste and sublattice symbols, the reduced zone).
+  - Numeric: exact null spaces on the on-shell 2↔2 manifold, plus an exact operator check of [H, P] on finite clusters for any candidate.
+- **S2 (gauge-mediated interactions).** Staggered QED at O(e²), with the photon included as a species (Møller and Compton channels), and any further gauge-mediated class that is feasible.
+  - If either probe finds a passer, follow it through: build its symmetric stress, check first class at linear order, check that G is the same for every taste, and check γ.
+
+**Fixed readings.**
+- **PASS.** An interacting staggered law, with d, interaction and range stated, has an exactly conserved local or exponentially quasi-local momentum. Its one-particle action must have a nonzero, taste-universal slope at every taste corner. Both checks must hold: the collision null space and the exact cluster operator check. Its stress must feed the constraints first class at linear order.
+- **FAIL.** For each stated interaction class, there is no odd collision invariant with nonzero slope at the taste corners. This is proved, or checked with order-one singular gaps, matrix-valued charges included. Bounded to those classes.
+  - This lane's FAIL concerns the momentum only. Whether the failure forces a graviton mass is lane RN's open question, and it is not re-asked here.
+- **INCONCLUSIVE.** Otherwise.
+
+**Supervisor expectation (registered before any probe returns).**
+- The period-π dispersion gives taste-shift structure: k_i → π − k_i maps the band to itself. That yields discrete Z2 taste charges, not an additive momentum.
+- Matrix charges add invariants only on resonant, degenerate submanifolds.
+- So both S1 and S2 are expected to FAIL (bounded).
+- The price then stays "non-local momentum, or an exact lattice momentum not in the axioms".
+
+**Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.

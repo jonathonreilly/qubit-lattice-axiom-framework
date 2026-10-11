@@ -1,0 +1,27 @@
+Independent covariance-integral check, S(omega0)/V for lag cutoffs 0.5/1.0/1.5/2.0:
+eps=1:     w0=0 0.207/0.215/0.239/0.258; w0=1 0.206/0.213/0.217/0.213; w0=4 0.190/0.176/0.193/0.212
+eps=0.5:   w0=0 0.241/0.269/0.274/0.291; w0=1 0.236/0.253/0.254/0.254; w0=4 0.210/0.190/0.192/0.198
+eps=0.25:  w0=0 0.187/0.221/0.229/0.224; w0=1 0.187/0.212/0.216/0.217; w0=4 0.191/0.162/0.158/0.158
+eps=0.125: w0=0 0.116/0.148/0.147/0.136; w0=1 0.129/0.158/0.162/0.160; w0=4 0.170/0.133/0.129/0.139
+
+Variance fits, shown as rate,lnA,RSS; free fit also gives p and design-matrix condition number:
+eps=1:     p=0 4.674,-4.73,3.55;  p=-1.5 4.870,-3.20,3.91; free 3.957,-10.31,p=5.47,RSS=2.97,cond=1.1e3
+eps=0.5:   p=0 2.721,-4.93,0.587; p=-1.5 2.949,-3.63,0.510; free 2.939,-3.69,p=-1.43,RSS=0.510,cond=6.2e2
+eps=0.25:  p=0 1.472,-4.52,0.510; p=-1.5 1.746,-3.51,0.387; free 1.697,-3.69,p=-1.23,RSS=0.381,cond=3.2e2
+eps=0.125: p=0 0.781,-4.34,0.536; p=-1.5 1.103,-3.57,0.872; free 0.679,-4.58,p=0.48,RSS=0.515,cond=2.4e2
+
+Physical convention check, op0, l_k=7.9e-20 m, 1 s at 1 Gpc, optical V band:
+sqrt(epsilon)=4.1856757331e-32; tau=1.36019821177e17 m; c_low exponent=45258.5184
+complex one-band growth-frame fraction=5.85837126e-47; real two-band growth-frame fraction=1.17167425e-46
+gamma_boost=2.26856643e8; eta=19.9329760; eta/sinh(eta)=8.78659570e-8
+real observer-frame fraction=1.02950279e-53; observer-frame band penalty=-ln(f)=122.007934
+
+GW side check, s=10 km at 1 Gpc, l_k=1e-19 m, LIGO 20--1000 Hz:
+c_low variance exponent=128.8758; conservative real-band penalty (k_h denominator plus boost)=152.3824; net=-23.5066
+node-ladder exponent with the same real-band convention gives net=+408.8428
+At l_k=7.9e-20 m the c_low net is instead +109.2440.
+
+Corrected finite-distance budget, l_k=7.9e-20 m, 1 s at 1 Gpc:
+LCLT time penalty 1.5 ln(tau/l_k)=125.1546.
+With B=1000 and the observer-frame real-band fractions, ln(N_in/S) is at least
+44011.36 (optical V), 43997.67 (radio 100 MHz), and 43986.16 (VLBI 1 kHz).

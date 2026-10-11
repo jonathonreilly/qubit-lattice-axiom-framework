@@ -1,0 +1,12 @@
+(1) op0, c2 = 0.692180. Direct p(sigma) * 8 pi^2 c2^2 gamma (white level -> 1):
+  gamma = 1e-02: s=0:1.0095  s=0.001:1.0095  s=0.01:1.0095  s=0.1:1.0098  s=0.1:1.0098  s=1:1.0244  s=10:2.6816  s=1e+02:10.9490  s=1e+03:5.8299
+  gamma = 1e-03: s=0:1.0046  s=0.0001:1.0040  s=0.001:1.0006  s=0.01:1.0010  s=0.1:1.0010  s=1:1.0028  s=1e+02:3.1045  s=1e+03:10.9669  s=1e+04:5.8341
+  (G(b)/G(0+) from z1_A at b = gamma*sigma should match the large-sigma entries)
+(2) boosted observer, pole part Phi = 1/(c2 w); gamma = 1e-6, sigma = 1e-3:
+   eta_b = 0: p*8pi^2c2^2 gamma = 1.0005
+   eta_b = 0.5: p_obs/p_rest = 0.95934 ; eta/sinh(eta) = 0.95952
+   eta_b = 1.0: p_obs/p_rest = 0.85067 ; eta/sinh(eta) = 0.85092
+   eta_b = 2.0: p_obs/p_rest = 0.55123 ; eta/sinh(eta) = 0.55144
+   eta_b = 4.0: p_obs/p_rest = 0.14650 ; eta/sinh(eta) = 0.14657
+   eta_b = 6.0: p_obs/p_rest = 0.02972 ; eta/sinh(eta) = 0.02975
+elapsed 36s

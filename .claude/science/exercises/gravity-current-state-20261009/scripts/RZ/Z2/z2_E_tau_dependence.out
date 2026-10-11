@@ -1,0 +1,36 @@
+=== eps=1 (R=3139): node-ladder S_n(0)/V = 0.0988 ; windows early [6.00,8.00] late [8.00,10.00]
+  w0=0: S(w0)/V early (tau~6.7) = 0.211 +- 0.027 ; late (tau~8.8) = 0.216 +- 0.023 ; MC/node(late, w0=0 ref) = 2.19
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 3.44e-03  0.1: 6.87e-03  0.3: 2.06e-02
+         Re rho(delta) MC late at delta=[0.05 0.1  0.2  0.3  0.5  0.75 1.  ]: [ 0.636  0.385  0.15   0.071  0.036 -0.031  0.009]
+         node-ladder rho(delta) (interp)        : [ 0.798  0.515  0.012 -0.202 -0.109  0.017  0.002]
+  w0=1: S(w0)/V early (tau~6.7) = 0.207 +- 0.020 ; late (tau~8.8) = 0.217 +- 0.026 ; MC/node(late, w0=0 ref) = 2.20
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 3.46e-03  0.1: 6.92e-03  0.3: 2.07e-02
+  w0=4: S(w0)/V early (tau~6.7) = 0.170 +- 0.013 ; late (tau~8.8) = 0.188 +- 0.013 ; MC/node(late, w0=0 ref) = 1.90
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 2.99e-03  0.1: 5.98e-03  0.3: 1.79e-02
+=== eps=0.5 (R=1637): node-ladder S_n(0)/V = 0.0692 ; windows early [5.00,7.00] late [7.00,9.00]
+  w0=0: S(w0)/V early (tau~5.7) = 0.264 +- 0.011 ; late (tau~7.7) = 0.276 +- 0.017 ; MC/node(late, w0=0 ref) = 3.99
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 4.40e-03  0.1: 8.80e-03  0.3: 2.64e-02
+         Re rho(delta) MC late at delta=[0.05 0.1  0.2  0.3  0.5  0.75 1.  ]: [0.714 0.491 0.2   0.063 0.016 0.036 0.039]
+         node-ladder rho(delta) (interp)        : [ 0.759  0.416 -0.105 -0.236 -0.067  0.024 -0.002]
+  w0=1: S(w0)/V early (tau~5.7) = 0.250 +- 0.011 ; late (tau~7.7) = 0.257 +- 0.011 ; MC/node(late, w0=0 ref) = 3.71
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 4.09e-03  0.1: 8.18e-03  0.3: 2.45e-02
+  w0=4: S(w0)/V early (tau~5.7) = 0.190 +- 0.007 ; late (tau~7.7) = 0.189 +- 0.009 ; MC/node(late, w0=0 ref) = 2.74
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 3.01e-03  0.1: 6.03e-03  0.3: 1.81e-02
+=== eps=0.25 (R=960): node-ladder S_n(0)/V = 0.0474 ; windows early [4.00,6.00] late [6.00,8.00]
+  w0=0: S(w0)/V early (tau~4.6) = 0.221 +- 0.011 ; late (tau~6.7) = 0.218 +- 0.011 ; MC/node(late, w0=0 ref) = 4.59
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 3.47e-03  0.1: 6.93e-03  0.3: 2.08e-02
+         Re rho(delta) MC late at delta=[0.05 0.1  0.2  0.3  0.5  0.75 1.  ]: [ 0.737  0.494  0.133 -0.037 -0.04   0.043  0.035]
+         node-ladder rho(delta) (interp)        : [ 0.702  0.292 -0.19  -0.226 -0.032  0.024 -0.004]
+  w0=1: S(w0)/V early (tau~4.6) = 0.210 +- 0.009 ; late (tau~6.7) = 0.213 +- 0.011 ; MC/node(late, w0=0 ref) = 4.49
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 3.39e-03  0.1: 6.78e-03  0.3: 2.04e-02
+  w0=4: S(w0)/V early (tau~4.6) = 0.165 +- 0.006 ; late (tau~6.7) = 0.155 +- 0.007 ; MC/node(late, w0=0 ref) = 3.27
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 2.47e-03  0.1: 4.94e-03  0.3: 1.48e-02
+=== eps=0.125 (R=594): node-ladder S_n(0)/V = 0.0320 ; windows early [3.00,5.00] late [5.00,7.00]
+  w0=0: S(w0)/V early (tau~3.5) = 0.143 +- 0.009 ; late (tau~5.7) = 0.156 +- 0.009 ; MC/node(late, w0=0 ref) = 4.88
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 2.49e-03  0.1: 4.98e-03  0.3: 1.49e-02
+         Re rho(delta) MC late at delta=[0.05 0.1  0.2  0.3  0.5  0.75 1.  ]: [ 0.732  0.448 -0.008 -0.183 -0.009  0.055  0.011]
+         node-ladder rho(delta) (interp)        : [ 0.62   0.152 -0.227 -0.185 -0.009  0.021 -0.005]
+  w0=1: S(w0)/V early (tau~3.5) = 0.150 +- 0.006 ; late (tau~5.7) = 0.167 +- 0.009 ; MC/node(late, w0=0 ref) = 5.23
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 2.66e-03  0.1: 5.33e-03  0.3: 1.60e-02
+  w0=4: S(w0)/V early (tau~3.5) = 0.131 +- 0.005 ; late (tau~5.7) = 0.128 +- 0.009 ; MC/node(late, w0=0 ref) = 3.98
+         in-band fraction f = Dw S/(pi V), late: Dw=0.05: 2.03e-03  0.1: 4.06e-03  0.3: 1.22e-02

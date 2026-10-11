@@ -1,0 +1,52 @@
+eps = 1.752e-63, sqrt(eps) = 4.186e-32, sqrt(eps)/l_k = 5.298e-13 /m
+gamma_low = 3.327e-13 /m (proved), gamma_h = 1.449e-12 /m (derived)
+S(0)/V = pi Wh^2 sqrt(eps) l_k / k_h = 2.01e-52 .. 2.22e-52 m  (= 6.7e-61 .. 7.42e-61 s)
+
+In-band fraction (real field) f = 2 Dk (S/V)/pi  (Dk = half-width wavenumber)
+  optical V band, lambda 550 nm, FWHM 90 nm     Dk=9.35e+05 /m : f = 1.19e-46 .. 1.32e-46  (ln f = -105.7 .. -105.6)
+  optical narrow filter, 1 nm at 550 nm         Dk=1.04e+04 /m : f = 1.33e-48 .. 1.47e-48  (ln f = -110.2 .. -110.1)
+  radio 1 GHz, 100 MHz bandwidth                Dk=1.05 /m : f = 1.34e-52 .. 1.48e-52  (ln f = -119.4 .. -119.3)
+  radio 1 GHz, 1 MHz channel                    Dk=0.0105 /m : f = 1.34e-54 .. 1.48e-54  (ln f = -124.0 .. -123.9)
+  VLBI 1 GHz, 1 kHz fringe-rate/channel         Dk=1.05e-05 /m : f = 1.34e-57 .. 1.48e-57  (ln f = -131.0 .. -130.9)
+
+Variance e-fold budgets gamma*tau (rate only) and in-band log relative variance ln(f) + gamma tau (prefactor budget separate)
+  lensed source D=1 Gpc, emission 1 s before retarded time     tau=1.36e+17 m  gamma tau = 4.53e+04 (proved) / 1.97e+05 (derived)  ln(f_opt)+gt = 4.515e+04 ; ln(f_radio)+gt = 4.514e+04
+  lensed source D=1 Gpc, emission 1 h before retarded time     tau=8.16e+18 m  gamma tau = 2.72e+06 (proved) / 1.18e+07 (derived)  ln(f_opt)+gt = 2.715e+06 ; ln(f_radio)+gt = 2.715e+06
+  lensed source D=1 Gpc, emission 1 yr before retarded time    tau=7.64e+20 m  gamma tau = 2.54e+08 (proved) / 1.11e+09 (derived)  ln(f_opt)+gt = 2.543e+08 ; ln(f_radio)+gt = 2.543e+08
+  lensed source D=3 Gpc, emission 1 s before retarded time     tau=2.36e+17 m  gamma tau = 7.84e+04 (proved) / 3.41e+05 (derived)  ln(f_opt)+gt = 7.829e+04 ; ln(f_radio)+gt = 7.827e+04
+  lensed source D=3 Gpc, emission 1 h before retarded time     tau=1.41e+19 m  gamma tau = 4.7e+06 (proved) / 2.05e+07 (derived)  ln(f_opt)+gt = 4.703e+06 ; ln(f_radio)+gt = 4.703e+06
+  lensed source D=3 Gpc, emission 1 yr before retarded time    tau=1.32e+21 m  gamma tau = 4.4e+08 (proved) / 1.92e+09 (derived)  ln(f_opt)+gt = 4.404e+08 ; ln(f_radio)+gt = 4.404e+08
+  lensed source D=5 Gpc, emission 1 s before retarded time     tau=3.04e+17 m  gamma tau = 1.01e+05 (proved) / 4.41e+05 (derived)  ln(f_opt)+gt = 1.011e+05 ; ln(f_radio)+gt = 1.011e+05
+  lensed source D=5 Gpc, emission 1 h before retarded time     tau=1.82e+19 m  gamma tau = 6.07e+06 (proved) / 2.64e+07 (derived)  ln(f_opt)+gt = 6.072e+06 ; ln(f_radio)+gt = 6.072e+06
+  lensed source D=5 Gpc, emission 1 yr before retarded time    tau=1.71e+21 m  gamma tau = 5.69e+08 (proved) / 2.48e+09 (derived)  ln(f_opt)+gt = 5.685e+08 ; ln(f_radio)+gt = 5.685e+08
+  lab lamp at 1 m, on for 1 h                                  tau=1.08e+12 m  gamma tau = 0.359 (proved) / 1.56 (derived)  ln(f_opt)+gt = -105.4 ; ln(f_radio)+gt = -119.1
+  lab lamp at 1 m, on for 1 day                                tau=2.59e+13 m  gamma tau = 8.62 (proved) / 37.5 (derived)  ln(f_opt)+gt = -97.12 ; ln(f_radio)+gt = -110.8
+  lab lamp at 1 m, on for 1 yr                                 tau=9.46e+15 m  gamma tau = 3.15e+03 (proved) / 1.37e+04 (derived)  ln(f_opt)+gt = 3042 ; ln(f_radio)+gt = 3029
+
+Emission delay Dt* at which gamma_low*tau = |ln f| + B  (B = prefactor budget in e-folds)
+  B=   0 optical V band, lambda 550 nm, FWHM 90 nm     D=1 Gpc: tau*=3.18e+14 m, Dt*=5.46e-06 s ; lab (D=1 m): Dt*=1.06e+06 s (12.3 days)
+  B=   0 optical V band, lambda 550 nm, FWHM 90 nm     D=5 Gpc: tau*=3.18e+14 m, Dt*=1.09e-06 s ; lab (D=1 m): Dt*=1.06e+06 s (12.3 days)
+  B=   0 radio 1 GHz, 100 MHz bandwidth                D=1 Gpc: tau*=3.59e+14 m, Dt*=6.96e-06 s ; lab (D=1 m): Dt*=1.2e+06 s (13.9 days)
+  B=   0 radio 1 GHz, 100 MHz bandwidth                D=5 Gpc: tau*=3.59e+14 m, Dt*=1.39e-06 s ; lab (D=1 m): Dt*=1.2e+06 s (13.9 days)
+  B= 300 optical V band, lambda 550 nm, FWHM 90 nm     D=1 Gpc: tau*=1.22e+15 m, Dt*=8.04e-05 s ; lab (D=1 m): Dt*=4.07e+06 s (47.1 days)
+  B= 300 optical V band, lambda 550 nm, FWHM 90 nm     D=5 Gpc: tau*=1.22e+15 m, Dt*=1.61e-05 s ; lab (D=1 m): Dt*=4.07e+06 s (47.1 days)
+  B= 300 radio 1 GHz, 100 MHz bandwidth                D=1 Gpc: tau*=1.26e+15 m, Dt*=8.59e-05 s ; lab (D=1 m): Dt*=4.2e+06 s (48.7 days)
+  B= 300 radio 1 GHz, 100 MHz bandwidth                D=5 Gpc: tau*=1.26e+15 m, Dt*=1.72e-05 s ; lab (D=1 m): Dt*=4.2e+06 s (48.7 days)
+  B=1000 optical V band, lambda 550 nm, FWHM 90 nm     D=1 Gpc: tau*=3.32e+15 m, Dt*=0.000597 s ; lab (D=1 m): Dt*=1.11e+07 s (128 days)
+  B=1000 optical V band, lambda 550 nm, FWHM 90 nm     D=5 Gpc: tau*=3.32e+15 m, Dt*=0.000119 s ; lab (D=1 m): Dt*=1.11e+07 s (128 days)
+  B=1000 radio 1 GHz, 100 MHz bandwidth                D=1 Gpc: tau*=3.36e+15 m, Dt*=0.000612 s ; lab (D=1 m): Dt*=1.12e+07 s (130 days)
+  B=1000 radio 1 GHz, 100 MHz bandwidth                D=5 Gpc: tau*=3.36e+15 m, Dt*=0.000122 s ; lab (D=1 m): Dt*=1.12e+07 s (130 days)
+
+Full budget ln(N_in/S) >= gamma_low*tau - 1.5 ln(tau/l_k) + ln f - B, with B = 1000 (optical V band / radio 100 MHz)
+  lensed source D=1 Gpc, emission 1 s before retarded time     gamma tau=4.53e+04  -1.5 ln(tau/l_k)=-125  => optical 4.403e+04 ; radio 4.401e+04
+  lensed source D=1 Gpc, emission 1 h before retarded time     gamma tau=2.72e+06  -1.5 ln(tau/l_k)=-131  => optical 2.714e+06 ; radio 2.714e+06
+  lensed source D=1 Gpc, emission 1 yr before retarded time    gamma tau=2.54e+08  -1.5 ln(tau/l_k)=-138  => optical 2.543e+08 ; radio 2.543e+08
+  lensed source D=3 Gpc, emission 1 s before retarded time     gamma tau=7.84e+04  -1.5 ln(tau/l_k)=-126  => optical 7.716e+04 ; radio 7.715e+04
+  lensed source D=3 Gpc, emission 1 h before retarded time     gamma tau=4.7e+06  -1.5 ln(tau/l_k)=-132  => optical 4.702e+06 ; radio 4.702e+06
+  lensed source D=3 Gpc, emission 1 yr before retarded time    gamma tau=4.4e+08  -1.5 ln(tau/l_k)=-139  => optical 4.404e+08 ; radio 4.404e+08
+  lensed source D=5 Gpc, emission 1 s before retarded time     gamma tau=1.01e+05  -1.5 ln(tau/l_k)=-126  => optical 9.997e+04 ; radio 9.996e+04
+  lensed source D=5 Gpc, emission 1 h before retarded time     gamma tau=6.07e+06  -1.5 ln(tau/l_k)=-133  => optical 6.071e+06 ; radio 6.071e+06
+  lensed source D=5 Gpc, emission 1 yr before retarded time    gamma tau=5.69e+08  -1.5 ln(tau/l_k)=-139  => optical 5.685e+08 ; radio 5.685e+08
+  lab lamp at 1 m, on for 1 h                                  gamma tau=0.359  -1.5 ln(tau/l_k)=-108  => optical -1213 ; radio -1227
+  lab lamp at 1 m, on for 1 day                                gamma tau=8.62  -1.5 ln(tau/l_k)=-112  => optical -1209 ; radio -1223
+  lab lamp at 1 m, on for 1 yr                                 gamma tau=3.15e+03  -1.5 ln(tau/l_k)=-121  => optical 1921 ; radio 1908

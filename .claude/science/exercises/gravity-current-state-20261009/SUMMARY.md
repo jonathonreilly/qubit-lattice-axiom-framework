@@ -491,3 +491,16 @@ Details and referee lines: `TESTS.md`, "Campaign C4".
 **Late additions to §17 (21:30Z).**
 - **X1 (unrefereed reading).** The 1e-19 m bar is the LHC Drell–Yan bound, and current collider bounds are tighter (≈ 4e-20 m). The event-route noise needs ℓ_k ≈ 4–7e-19 m. That is excluded if ℓ_k is shared with matter.
 - **Y1 (referee: INCONCLUSIVE, strongly leaning FAIL).** The readout noise is not Huygens: light emitted earlier also adds noise. The relevant scale is therefore the source's emission history, not its coherence length. At the photon's collider-bounded ℓ_k, that is about 4.5e4 variance e-folds per second of observing a source at 1 Gpc. What is still missing is the fraction of that noise falling in the observing band, plus a finite-distance normalization.
+
+## 18. Lane RZ: does the event-route noise land in real observing bands? (owner, 2026-10-11)
+
+**In plain words: yes, enough to rule the route out.**
+- The noise is not tied to the light's own frequency. Each random spacetime event re-emits the passing light as an instant flash, so the noise is spread evenly across all frequencies.
+- Only a tiny slice falls in a real telescope band, about e^{-110} to e^{-147}. But the noise grows by more than e^{45,000} for a source at 1 Gpc that has been shining for just one second.
+- So lensed quasars and radio sources would be drowned in noise.
+
+Refereed result: FAIL at the controlled level, bounded to the scalar readout and to sources that switch on at a definite time. Combined with RL2 (lensing correct on average) and RL4 (noise growth proved), the random-events substrate with a shared non-locality scale is excluded by observation.
+
+Two items stay open: sources with no definite switch-on, and a fully proved transfer from the scalar model to real photons.
+
+Details: `TESTS.md`, "Lane RZ results".

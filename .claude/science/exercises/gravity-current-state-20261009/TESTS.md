@@ -2121,3 +2121,34 @@ No PASS or FAIL is recorded for any lane on the basis of X1. E1's fixed readings
 **Supervisor expectation.** The noise is multiplicative on the carrier: each extra chain node rescales the wave's amplitude and phase. So its spectrum sits near ω₀, broadened by the inverse correlation time of the multiplier, and the in-band fraction is O(1). Expected reading: FAIL, if the multiplicative structure is proved.
 
 **Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.
+
+### Lane RZ results (2026-10-11, 21:38Z to 22:31Z)
+
+**Who and where.** Probes Z1 (analytic) and Z2 (numerical) were run by Claude Opus 5.5 at xhigh (same model family). They were refereed together by codex gpt-5.6-sol at xhigh. Files: `agents/RZ_Z{1,2}_report.md`, `agents/RZ_referee.md`; scripts in `scripts/RZ/`.
+
+**Referee verdict: CONFIRMED WITH CORRECTIONS. Lane RZ: FAIL, at the controlled (not fully proved) level, bounded.**
+
+**What the referee confirmed.** Within the stable scalar-layer readout, take finite emissions that are independently phased, have a spacelike past edge, and have a regular turn-on patch. For these:
+- The ladder covariance is driven by |Ψ|², not by the carrier's phase. It has a nonzero white low-frequency level.
+- Including the real-field mirror band and the observer boost, the optical and radio band penalty is only 122–147 e-folds, at 1 s of emission and 1 Gpc.
+- A restricted-shell Fourier bound and a uniformly rescaled RL4 cap-walk local limit theorem control the remaining full-model and finite-distance factors. Both sit well within the 45,258 proved rate e-folds.
+- About 44,000 e-folds remain even after a 1000-e-fold allowance.
+
+So a real lensed optical or radio observation meets the FIXED FAIL condition, at the controlled level.
+
+**Still open:**
+- edgeless sources;
+- a theorem-level transfer from the scalar readout to the photon, including whether ℓ_k is shared.
+
+**Referee corrections:**
+- The τ^{-3/2} power is not measured by the Monte Carlo fit. It follows from RL4's four-dimensional local limit theorem.
+- Lemma F (the filtered U′ step) is controlled by a far-field-shell restriction.
+- **Z1's side claim about RL4's GW gloss.** It is correct only at the old 1e-19 m bar: −23.5 e-folds with c_low, or +409 with the node rate. At the photon value 7.9e-20 m it is +109. RL4's rate is unaffected.
+
+**Against the registered expectation.** The FAIL came out as expected, but by a different mechanism. The noise is not multiplicative on the carrier with an O(1) in-band share. It is white, and its in-band share is about e^{-110} to e^{-147}. The growth budget overwhelms that share.
+
+**Event route, closing state.**
+- Lensing in the mean: positive (RL2).
+- Noise at the locality bar: FAIL, bounded (RL4).
+- Observed lensed light at the collider-bounded photon ℓ_k: FAIL at the controlled level (RZ), with Y1's mechanism confirmed.
+- **Reading:** the event substrate with stable layer readouts and a shared ℓ_k is excluded observationally, at the controlled level, within the stated scope.

@@ -638,3 +638,21 @@ matched coefficient has partner kernel equal to the even space of the
 partner height. The chirality cap pairs with the sign product. The
 witness cross sums are `0` and `-1`. A vector outside the three kernels
 stays outside this ansatz. The ten-kernel coefficient span stays open.
+
+## Cycle 39
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether the swapped cross has a ten-kernel partner outside the even space of the partner height. The even span pairs only with the odd space. Do not claim the ten-kernel coefficient span is settled."
+```
+
+The even span has partner rank 6 on every ordered height pair. The
+partner kernel is the odd space of the partner height. The sign product
+has no partner outside that space. The witness cross sums are `0` and
+`1`. A vector outside the even span stays outside this ansatz. The
+ten-kernel coefficient span stays open.

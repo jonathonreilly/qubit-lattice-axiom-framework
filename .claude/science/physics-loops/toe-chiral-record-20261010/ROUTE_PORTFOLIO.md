@@ -184,3 +184,9 @@ coefficient has partner rank 10. A zero matched coefficient has partner
 kernel equal to the even space of the partner height. It does not take
 a vector outside those three kernels, and it does not classify the
 300-dimensional affine space.
+
+Cycle 39 takes the even span of the source height. Every nonzero vector
+has partner rank 6, and the partner kernel is the odd space of the
+partner height. The sign product has no partner outside that space. It
+does not take a vector outside the even span, and it does not classify
+the 300-dimensional affine space.

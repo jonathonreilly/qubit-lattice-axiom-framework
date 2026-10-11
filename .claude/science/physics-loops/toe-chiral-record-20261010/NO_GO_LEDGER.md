@@ -262,3 +262,10 @@ partner height, and a nonzero matched coefficient has only the partner
 0. The witness kernel cross sums are `0` and `-1`. It does not classify
 a vector outside those three kernels, and it does not classify the
 300-dimensional affine space.
+
+Cycle 39 prunes the reading that the sign product has a ten-kernel
+partner outside the odd space. The whole even span has partner rank 6,
+and the partner kernel is that odd space. The matched cross on the
+witness bond has kernel cross sum `1`. It does not classify a vector
+outside the even span, and it does not classify the 300-dimensional
+affine space.

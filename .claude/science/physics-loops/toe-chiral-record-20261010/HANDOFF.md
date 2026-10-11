@@ -459,15 +459,33 @@ cross sum 0. The chirality cap plus the matched cross has centre pairs
 outside the three kernels is not in this count. The ten-kernel
 coefficient span is not classified. Runner `PASS=8 FAIL=0`.
 
+Cycle 39. On the same alphabet the even span of an ordered height pair
+is the rational span of the even basis of the source height. It is
+3-dimensional, its excluded coefficients are 0, and it meets the three
+excluded axes only at 0. Every nonzero vector has partner rank 6. The
+partner kernel is the odd space of the partner height. On pairs
+`(1, 2)`, `(2, 1)`, and `(1, 3)` that space is spanned by the chirality
+cap, the transverse-sign cap, the swapped cross, and the parallel dot
+plus the oblique dot. On pairs `(3, 1)`, `(2, 3)`, and `(3, 2)` it is
+spanned by the chirality cap, the transverse-sign cap, the oblique dot
+minus the parallel dot, and the orthogonal cross minus half the swapped
+cross. The sign product lies in every even span. At heights 1 and 2 the
+bond on `-e_x` and `-e_y` against the chirality cap has centre pairs
+`(1, -1)` and `(1, 1)` and kernel cross sum 0. Against the matched
+cross the centre pairs are `(1, 0)` and `(1, 1)` and the kernel cross
+sum is `1`. The coefficient triples `(1, 0, 0)` and `(1, 1, 1)` have
+partner rank 6. A vector outside the even span is not in this count.
+The ten-kernel coefficient span is not classified. Runner
+`PASS=8 FAIL=0`.
+
 ## Next exact action
 
-Decide whether the sign product has a ten-kernel partner outside the
-odd space of the partner height. The chirality cap and the
-transverse-sign cap have partner kernel equal to the even space, whose
-excluded coefficients are 0. A nonzero matched coefficient in that span
-has partner rank 10. Do not claim the ten-kernel coefficient span is
-settled. Do not claim the 300-dimensional affine space is classified.
-Do not repeat the bond-space dimension count. Do not return to the
+Decide whether the swapped cross has a ten-kernel partner outside the
+even space of the partner height. The even span pairs only with the odd
+space. The chirality and transverse-sign plane pairs only with the even
+space. Do not claim the ten-kernel coefficient span is settled. Do not
+claim the 300-dimensional affine space is classified. Do not repeat
+the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
 alphabets.

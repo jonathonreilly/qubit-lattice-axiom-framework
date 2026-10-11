@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 38
+cycle: 39
 runner_result: PASS=8 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Decide whether the sign product has a ten-kernel partner outside the odd space of the partner height. The chirality cap and the transverse-sign cap have partner kernel equal to the even space, whose excluded coefficients are 0. A nonzero matched coefficient in that span has partner rank 10. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
+next_exact_action: Decide whether the swapped cross has a ten-kernel partner outside the even space of the partner height. The even span pairs only with the odd space. The chirality and transverse-sign plane pairs only with the even space. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

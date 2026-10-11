@@ -175,3 +175,8 @@ the partner rank is 7 and the partner kernel is the even space of the
 partner height. The chirality cap pairs with the sign product. The
 witness cross sums are `0` and `-1`. The ten-kernel coefficient span is
 not classified.
+Cycle 39 shows that every nonzero vector in the even span has partner
+rank 6, and the partner kernel is the odd space of the partner height.
+The sign product lies in that span. It pairs with the chirality cap,
+with cross sum `0`, and the matched cross on the same bond has cross
+sum `1`. The ten-kernel coefficient span is not classified.

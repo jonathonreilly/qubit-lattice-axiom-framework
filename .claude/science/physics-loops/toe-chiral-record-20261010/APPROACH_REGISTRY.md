@@ -403,3 +403,14 @@ sums `0` and `-1`.
 Family not used: a vector with a nonzero coefficient outside these three
 kernels. That remains open. The 300-dimensional affine space is not
 this family.
+
+Cycle 39 target contract: whether the sign product has a ten-kernel
+partner outside the odd space of the partner height.
+
+Family used: the even span of the source height, the stacked partner
+map of its three generators, its rank-18 kernel, and the witness cross
+sums `0` and `1`.
+
+Family not used: a vector outside the even span, including the swapped
+cross as a source. That remains open. The 300-dimensional affine space
+is not this family.

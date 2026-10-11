@@ -2200,3 +2200,71 @@ Conformance, section by section:
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
     The loop-pack directory is skipped by that lint. The full audit
     pipeline was not run.
+
+## 2026-10-11 author check, cycle 39
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms on origin/main at the base `0b208e91cfc`, the
+   cycle-29 parity-span note, and the cycle-38 chirality,
+   transverse-sign, and matched note, both notes on this branch. The
+   partner kernel, the stacked rank, and the witness sums are computed
+   in this runner. The order-blind converse is not applied. The odd and
+   even bases are named in cycle 29 and recomputed here. The cycle-38
+   span is cited and not re-proved. The dimension count of the soldered
+   bond space is not repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_even_span_partner_kernel_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `5d1c2af478ed102decd306aea526a3f1a1cd54dbcf879f69da08352ce0ccc72b`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=8 FAIL=0`.
+   Elapsed 5.60 seconds.
+3. Scope. The even span of the source height, on the 48 signed
+   permutations of `(1, 2, 3)`. The span is 3-dimensional, its excluded
+   coefficients are 0, and it meets the three excluded axes only at 0.
+   Every nonzero vector has partner rank 6, and the partner kernel is
+   the odd space of the partner height. The sign product lies in every
+   even span and has no partner outside that odd space. The witness
+   centre pairs are `(1, -1)` and `(1, 1)`, with cross sum `0`, and
+   `(1, 0)` and `(1, 1)`, with cross sum `1`. The first left contributes
+   `-1` against the chirality cap and `0` against the matched cross.
+   The second left contributes `1` in both comparisons. The triples
+   `(1, 0, 0)` and `(1, 1, 1)` have partner rank 6. A vector outside
+   the even span is outside the ansatz. The ten-kernel coefficient span
+   is not classified. The full soldered bond space is not classified.
+   Status line `proposed_retained`. Surface status `bounded-support`.
+4. N-gate does not apply. The artifact classifies one named span. It
+   does not claim that no vector outside that span has a nonzero
+   partner.
+5. Obligations are in the note. The missing lemma is whether the
+   swapped cross has a ten-kernel partner outside the even space of the
+   partner height.
+6. Mutations, each on a scratch copy, exited 1. Requiring the stacked
+   rank to be 24 gave `PASS=7 FAIL=1` on the stacked-map check.
+   Requiring the sign-product cross sum to be 1 gave `PASS=7 FAIL=1`
+   on the centre-pair check. Requiring the generator partner rank to be
+   10 gave `PASS=7 FAIL=1` on the odd-space check. An independent
+   generator closure, recomputed in this session, gave 24 rotations,
+   all of determinant 1, and orbit 24, with `(2, 1, 3)` and
+   `(1, 2, -3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Four markdown links. The runner link points at the primary runner.
+   One note link points at the minimal axioms on origin/main. Two point
+   at the cycle-29 parity-span note and the cycle-38 span note on this
+   branch. Manifest node_count 6908 and edge_count 15536. The new node
+   has out_degree 3 and deps_hash `02e1180c1a5c`. Dependencies are
+   `minimal_axioms`, the cycle-29 parity-span note, and the cycle-38
+   span note. `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the odd and even bases and the previous span, and states that
+   the order-blind converse is not applied and that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=8 FAIL=0`, stacked rank
+    18, centre pairs `(1, -1)` and `(1, 1)` with cross sum `0`, and
+    `(1, 0)` and `(1, 1)` with cross sum `1`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
+    The loop-pack directory is skipped by that lint. The full audit
+    pipeline was not run.

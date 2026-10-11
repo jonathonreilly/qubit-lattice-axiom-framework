@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_even_span_partner_kernel_2026_10_10.py
+runner_sha256: 5d1c2af478ed102decd306aea526a3f1a1cd54dbcf879f69da08352ce0ccc72b
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 5.60
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each even basis is 3-dimensional, has excluded coefficients 0, and meets the excluded axes only at 0
+PASS each even generator has partner rank 6 and its kernel is the named odd space, with excluded coefficients 0
+PASS the stacked map has rank 18 and kernel equal to three copies of the odd space, so every nonzero even combination has partner rank 6
+PASS the sign product against the chirality cap has centre pairs (1, -1) and (1, 1) and cross sum 0
+PASS the sign product against the matched cross has centre pairs (1, 0) and (1, 1) and cross sum 1
+PROD-CHI witness [(1, -1), (1, 1)] 0
+PROD-MATCHED witness [(1, 0), (1, 1)] 1
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

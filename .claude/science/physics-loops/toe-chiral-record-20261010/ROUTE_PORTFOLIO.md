@@ -52,3 +52,6 @@ and it does not take the 48-point chiral pair.
 Cycle 16 takes the height-linear family on the 48-point chiral pair.
 It does not take the parent's chiral-cap line, and it does not classify
 the order-blind subset.
+
+Cycle 17 takes the transverse-sign cap on that alphabet. It does not
+classify a factor outside both that cap and the chiral-cap line.

@@ -150,3 +150,15 @@
   Far-end sum 1 is the chiral-pair bond note. The dimension count is
   not repeated.
 - No formation site, probability, or rate is imported.
+
+## Cycle 17
+
+- The ansatz is the transverse-sign cap
+  `phi_d(a, b) = 1 + (1/2) S_d(a) S_{-d}(b)` on the 48 signed
+  permutations of `(1, 2, 3)`. The coefficient `1/2` is a witness, not
+  a selected scale. A factor outside this cap and the chiral-cap line
+  is not in this count.
+- Order-blindness is Theorem 2's converse, applied after bond symmetry
+  and all 729 partner means. Far-end sum 1 is the chiral-pair bond
+  note. The dimension count is not repeated.
+- No formation site, probability, or rate is imported.

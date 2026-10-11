@@ -136,3 +136,13 @@ far-end sums, and the opposite-direction moment at coefficient `1/10`.
 
 Family not used: the parent's chiral-cap line, and any bond factor off
 this line. The order-blind subset remains open.
+
+Cycle 17 target contract: whether a strictly positive order-blind
+factor on the 48-point chiral pair lies outside the exhibited
+chiral-cap line.
+
+Family used: the transverse-sign cap at coefficient `1/2`, its 729
+partner patterns, and the two bonds to `(1, 2, -3)`.
+
+Family not used: a factor outside both the transverse-sign cap and the
+chiral-cap line. That remains open.

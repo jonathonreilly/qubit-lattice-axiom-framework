@@ -82,3 +82,9 @@ factor on the 48-point chiral pair is order-blind. The height-linear
 factor at coefficient `1/10` is strictly positive and has opposite
 moment `71/50`. It does not classify the order-blind subset, and it
 does not re-derive the chiral-cap line.
+
+Cycle 17 prunes the reading that the exhibited chiral cap is the only
+strictly positive order-blind line on the 48-point alphabet. The
+transverse-sign cap at coefficient `1/2` has product mean 1 on all 729
+partner patterns, and two bonds forbid every scale of the chiral cap.
+It does not classify a factor outside both lines.

@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 16
-runner_result: PASS=12 FAIL=0
+cycle: 17
+runner_result: PASS=10 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Ask whether a strictly positive order-blind factor on the 48-point chiral pair lies outside the exhibited chiral-cap line. Do not repeat the dimension count. Do not return to the modulus-3 triple.
+next_exact_action: Ask whether a strictly positive order-blind factor on the 48-point chiral pair lies outside both the chiral-cap line and the transverse-sign cap. Do not repeat the dimension count. Do not return to the modulus-3 triple.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

@@ -38,4 +38,7 @@ coefficient and the equal-height block are both zero, so the mixture
 lies in the eighteen. Cycle 16 shows that on the 48-point chiral
 pair the height-linear family `1 + c (a·d)(b·(-d))` has far-end sum
 48, and at `c = 1/10` the opposite-direction moment on `(1, 2, 3)` is
-`71/50`, so that positive factor is not order-blind.
+`71/50`, so that positive factor is not order-blind. Cycle 17 shows
+that the transverse-sign cap at coefficient `1/2` has every partner
+pattern of mean 1, and the bonds from `(1, 2, 3)` and `(-2, 1, 3)` to
+`(1, 2, -3)` forbid every scale of the chiral cap.

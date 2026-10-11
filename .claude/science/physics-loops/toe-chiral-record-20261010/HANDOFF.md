@@ -146,13 +146,22 @@ positive, and the uniform moment on `±e_z` at `(1, 2, 3)` is `71/50`.
 Order-blindness cuts the normalised space. The order-blind subset is
 not classified. Runner `PASS=12 FAIL=0`.
 
+Cycle 17. On the same alphabet the transverse-sign cap at coefficient
+`1/2` is bond-symmetric and soldered, takes values `1/2`, `1`, and
+`3/2`, and all 729 partner patterns have product mean 1. Every far-end
+sum equals 48. The bonds on `e_z` from `(1, 2, 3)` and `(-2, 1, 3)` to
+`(1, 2, -3)` have transverse products `+1` and `-1` against chiral
+product `-1`, so no scale of the chiral cap matches. Runner
+`PASS=10 FAIL=0`.
+
 ## Next exact action
 
 Ask whether a strictly positive order-blind factor on the 48-point
-chiral pair lies outside the exhibited chiral-cap line. Do not repeat
-the dimension count. Do not return to the modulus-3 triple. Do not
-invent a formation rate. Do not return to shells, plaquette corner
-weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
+chiral pair lies outside both the chiral-cap line and the
+transverse-sign cap. Do not repeat the dimension count. Do not return
+to the modulus-3 triple. Do not invent a formation rate. Do not return
+to shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
+alphabets.
 
 ## Cleanup
 

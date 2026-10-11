@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent_review/independent_controls.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011",
+  "timeout_seconds": 120,
+  "started_utc": "2026-10-11T20:18:25.826361+00:00",
+  "ended_utc": "2026-10-11T20:18:26.807638+00:00",
+  "wall_seconds": 0.9808451249264181,
+  "exit_code": 0,
+  "timed_out": false,
+  "helper_sha256": "5ae7e904b8fd4624e09abb153f3d64c77bad157e06c62bead1cd3e883fe8f593",
+  "log_sha256": "f03aa1cf99f35911aa4fba3ae38de2861ec09aaff16f34a6d9e482c9d5241f51",
+  "author_helper_consulted_before_execution": false,
+  "independent_claim_scope": "Exact finite matrices and rational bookkeeping; not continuum absolute continuity or scattering."
+}

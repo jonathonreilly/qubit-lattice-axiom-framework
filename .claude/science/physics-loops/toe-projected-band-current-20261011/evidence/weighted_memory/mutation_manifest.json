@@ -1,0 +1,74 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/weighted_memory/mutant_trace_norm_half.py"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.5013839588500559,
+    "timeout_seconds": 120,
+    "source": "mutant_trace_norm_half.py",
+    "log": "mutant_trace_norm_half.log",
+    "source_sha256": "aee0ec35bcce6a317db95be2411994cbf314b0ccc196c60703d65c06c3068546",
+    "log_sha256": "a7092108337ebde9d1a7b4bba0d0aa105dae149d7b74f709de538d434fc8f37d",
+    "name": "trace_norm_half",
+    "old": "claimed_trace_norm = 2*sp.sqrt(eta)",
+    "new": "claimed_trace_norm = sp.sqrt(eta)",
+    "intended_assertion": "trace_norm_factor_two",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/weighted_memory/mutant_forward_not_reverse.py"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.5087312920950353,
+    "timeout_seconds": 120,
+    "source": "mutant_forward_not_reverse.py",
+    "log": "mutant_forward_not_reverse.log",
+    "source_sha256": "636be622ed278d2b6ac6a183fb774d53a413cb60a854173e1f6cde08bd15efd4",
+    "log_sha256": "4c5533e4fa2276249937319ac27209f50bddeebccb98b912bf9a8e2f3f5e91c0",
+    "name": "forward_not_reverse",
+    "old": "outgoing = Omega.conjugate().T*zeta",
+    "new": "outgoing = Omega*zeta",
+    "intended_assertion": "reverse_wave_operator_norm_one",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/weighted_memory/mutant_weighted_cross_sign.py"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.680485500022769,
+    "timeout_seconds": 120,
+    "source": "mutant_weighted_cross_sign.py",
+    "log": "mutant_weighted_cross_sign.log",
+    "source_sha256": "fb826ee1cc2051065d05ccfadd747345f529b93ea4e7a6cffce85eb613e72e33",
+    "log_sha256": "8357469a58e3536d87fb53c321c16e7083eda586029647c9133f70d57dcacee8",
+    "name": "weighted_cross_sign",
+    "old": "sp.Rational(1,3)+a*a/3+2*a*sp.diff(a,t,2)",
+    "new": "sp.Rational(1,3)+a*a/3-2*a*sp.diff(a,t,2)",
+    "intended_assertion": "continuous_weighted_formula",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/weighted_memory/mutant_continuous_measure_factor.py"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.6192040420137346,
+    "timeout_seconds": 120,
+    "source": "mutant_continuous_measure_factor.py",
+    "log": "mutant_continuous_measure_factor.log",
+    "source_sha256": "6ec6bf510f935ef59aeae088adde2236ddf5db431fb2695873882dbe84b6f347",
+    "log_sha256": "a3d5a8bfedfb15bdeae14a91b6b2874421b3ad950480264298a48e2aa78a1023",
+    "name": "continuous_measure_factor",
+    "old": "a = sp.integrate(sp.cos(t*x), (x,-1,1))/2",
+    "new": "a = sp.integrate(sp.cos(t*x), (x,-1,1))",
+    "intended_assertion": "normalized_continuous_amplitude",
+    "failed_at_intended_assertion": true
+  }
+]

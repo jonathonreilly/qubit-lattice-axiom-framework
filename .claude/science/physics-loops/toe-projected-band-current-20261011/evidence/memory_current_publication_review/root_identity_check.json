@@ -1,0 +1,7 @@
+{
+  "receipt_sha256": "bc7c29434bbc61591b8a1880cc021a9632d1b887a9a4933f89ac9309f80185b7",
+  "path_hash_occurrences": 84,
+  "distinct_paths": 74,
+  "failures": [],
+  "reading_scope": "Full report, helper and complete raw log read before compaction; this receipt traversal verifies exact source identities, not scientific independence."
+}

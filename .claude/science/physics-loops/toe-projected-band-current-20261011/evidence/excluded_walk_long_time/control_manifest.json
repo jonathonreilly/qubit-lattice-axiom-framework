@@ -1,0 +1,141 @@
+{
+  "baseline_sha256": "4ddc0e1972c6ab13c269ac2f7c18b38811be1d9087a4052df53940cc24245a86",
+  "mutations": [
+    {
+      "name": "inverse_factor",
+      "before": "inverse_c[at+j+1]=c[at]/(2*r)",
+      "after": "inverse_c[at+j+1]=c[at]/r",
+      "expected": "reduced inverse contact coefficient"
+    },
+    {
+      "name": "measure_normalization",
+      "before": "I0=sum(1/(4*r*r) for r,j in nodes)/N",
+      "after": "I0=sum(1/(4*r*r) for r,j in nodes)",
+      "expected": "inverse norm uses averaged measure"
+    },
+    {
+      "name": "missing_compression",
+      "before": "H=P*H0*P",
+      "after": "H=H0",
+      "expected": "actual compression has extra zero vector"
+    },
+    {
+      "name": "auxiliary_state",
+      "before": "physical_kernel=s.eye(dim)-R+zeta*zeta.H",
+      "after": "physical_kernel=s.eye(dim)-R+zeta*zeta.H+C",
+      "expected": "auxiliary contact zero mode excluded from physical kernel"
+    },
+    {
+      "name": "cutoff_mean",
+      "before": "f_cut=(f if r>=cut else 0)-mean_cut",
+      "after": "f_cut=(f if r>=cut else 0)+mean_cut",
+      "expected": "cutoff inverse restores the excluded singlet mean"
+    },
+    {
+      "name": "missing_current_correction",
+      "before": "correction=va[a]*v.H+v*va[a].H",
+      "after": "correction=s.zeros(dim)",
+      "expected": "canonical correction cancels threshold deviation"
+    }
+  ],
+  "executions": [
+    {
+      "name": "baseline",
+      "source": "long_time_checks.py",
+      "sha256": "4ddc0e1972c6ab13c269ac2f7c18b38811be1d9087a4052df53940cc24245a86",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time/long_time_checks.py"
+      ],
+      "exit_code": 0,
+      "expected_assertion": null,
+      "intended_result": true,
+      "seconds": 0.48555608419701457,
+      "log": "baseline.log"
+    },
+    {
+      "name": "inverse_factor",
+      "source": "mutant_inverse_factor.py",
+      "sha256": "089cb327fb6a2d2bc2642ab1b247ccc1769a788ca067060520f9812b28a2ab09",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time/mutant_inverse_factor.py"
+      ],
+      "exit_code": 1,
+      "expected_assertion": "reduced inverse contact coefficient",
+      "intended_result": true,
+      "seconds": 0.31074249977245927,
+      "log": "inverse_factor.log"
+    },
+    {
+      "name": "measure_normalization",
+      "source": "mutant_measure_normalization.py",
+      "sha256": "2ea3fd6e5a4dd8d58f7895ed2da583255f15da647685e9b85a545add9e91b17c",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time/mutant_measure_normalization.py"
+      ],
+      "exit_code": 1,
+      "expected_assertion": "inverse norm uses averaged measure",
+      "intended_result": true,
+      "seconds": 0.32172762509435415,
+      "log": "measure_normalization.log"
+    },
+    {
+      "name": "missing_compression",
+      "source": "mutant_missing_compression.py",
+      "sha256": "539d4e81eebafb1487b75e90385f4be246f0d3948ee2d8954dca0d0d79281bb8",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time/mutant_missing_compression.py"
+      ],
+      "exit_code": 1,
+      "expected_assertion": "actual compression has extra zero vector",
+      "intended_result": true,
+      "seconds": 0.30826816614717245,
+      "log": "missing_compression.log"
+    },
+    {
+      "name": "auxiliary_state",
+      "source": "mutant_auxiliary_state.py",
+      "sha256": "282c7bd1999d403be65fa40d6fb2cd05a2d6c2f29a0128ac374d7bc02600473d",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time/mutant_auxiliary_state.py"
+      ],
+      "exit_code": 1,
+      "expected_assertion": "auxiliary contact zero mode excluded from physical kernel",
+      "intended_result": true,
+      "seconds": 0.30970224970951676,
+      "log": "auxiliary_state.log"
+    },
+    {
+      "name": "cutoff_mean",
+      "source": "mutant_cutoff_mean.py",
+      "sha256": "d2b83345713685309b4094d9e70dd9cc2371e95531bbaec47070d9f3a0f0c19a",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time/mutant_cutoff_mean.py"
+      ],
+      "exit_code": 1,
+      "expected_assertion": "cutoff inverse restores the excluded singlet mean",
+      "intended_result": true,
+      "seconds": 0.37312945909798145,
+      "log": "cutoff_mean.log"
+    },
+    {
+      "name": "missing_current_correction",
+      "source": "mutant_missing_current_correction.py",
+      "sha256": "120e261c507f5bea15c52a6aca6c8d794ca750710e8d63327ebb941e53e303fc",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time/mutant_missing_current_correction.py"
+      ],
+      "exit_code": 1,
+      "expected_assertion": "canonical correction cancels threshold deviation",
+      "intended_result": true,
+      "seconds": 0.3746768329292536,
+      "log": "missing_current_correction.log"
+    }
+  ]
+}

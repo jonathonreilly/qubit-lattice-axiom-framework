@@ -1,0 +1,250 @@
+{
+  "created_at_utc": "2026-10-11T18:44:48.812842+00:00",
+  "task": "bounded weak-K full-zero-space dynamics and actual canonical current",
+  "status": "external author derivation with finite controls; no independent review or audit verdict",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+    "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+    "lines": 549,
+    "coverage": "entire final argument read; final three wording/hypothesis edits read in full diff"
+  },
+  "sources": {
+    "threshold": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TRANSPORT_PROBE.md",
+      "sha256": "8bc423b2d5adf368f4ae09a2bb87730517be243a050b4289dad3a0b217f09526",
+      "coverage": "complete 322 lines"
+    },
+    "canonical_current": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md",
+      "sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe",
+      "coverage": "complete 190 lines"
+    },
+    "canonical_review": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_CANONICAL_REVIEW.md",
+      "sha256": "ced416dce3a7de31b503d73460e2fa449f6ed4e7175400d8376179cbeead0f9c",
+      "coverage": "complete 52 lines; not independent threshold review"
+    },
+    "cook_bridge": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_COOK_BRIDGE_DRAFT.md",
+      "sha256": "2c54b891deeb43a19c5f41de5059aadac7fc8d672dfb68e0b8aa575d27eb3fc7",
+      "coverage": "prior complete 262-line reading reused"
+    },
+    "cook_review": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_COOK_REVIEW.md",
+      "sha256": "a145780abbc767a71dd72b5a9fe3fa4ea6c59015ad57818623fcc81d3c62c75c",
+      "coverage": "previous independent check preserved"
+    },
+    "walk_contract": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "e0536f80a25feb0b368c10a0016a9d09b07b5bd06827751c30029d2eb1d70065",
+      "coverage": "prior complete 226-line reading reused"
+    },
+    "long_time_probe": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "coverage": "complete 457-line argument; re-read in current extension"
+    },
+    "long_time_receipt": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time/receipt.json",
+      "sha256": "bdd9d7b0caedbf168f4e45dead01b7a816f321b5894ae5671c1dcdedb81d35dc",
+      "coverage": "all recorded source, artifact and instruction identities checked unchanged"
+    }
+  },
+  "instructions": {
+    "docs/ai_methodology/skills/physics-loop/SKILL.md": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+    "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+    "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+    "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+    "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "worktree:AGENTS.md": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+    "worktree:docs/ai_methodology/SCIENCE_WORKFLOW.md": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+    "worktree:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+    "worktree:docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "worktree:docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "worktree:docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+  },
+  "local_main": "e485eab6b09b3957df5772104d3ea3980108d7fa",
+  "worktree_head_at_freeze": "31aacf9b83d7992674867e351b68404c18c39627",
+  "freshness_scope": "file-identity bound; local-main comparison only; no remote fetch or external theorem import",
+  "parent_packet": {
+    "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time/receipt.json",
+    "sha256": "bdd9d7b0caedbf168f4e45dead01b7a816f321b5894ae5671c1dcdedb81d35dc",
+    "all_artifacts_rechecked_unchanged": 20,
+    "all_sources_rechecked_unchanged": 7
+  },
+  "protected_publication_files_unchanged": {
+    "FINAL_QUBIT_PORT_NOTE.md": "5d7fbfe0d0603e52c80de047f3ea91bff46b01d3a24b40ba2f796d49c0c3d3ad",
+    "root_qubit_port_primary.py": "0a655a71047cae8fde331eba758ad91da08cc7f5cbaddac4b2335196a9f38f2a",
+    "native_probe/publication_composition_review.md": "f0d4b25cfac7ccc4d422b4c57da187bd641a9ee07b9216efcd5a327f24ebd183",
+    "native_probe/publication_receipt.json": "505b507f6a8c7008d32f1cb1566324fe52bb06c6e20a5c6bada67cfdc4c9da5b",
+    "excluded_walk_review/review_receipt.json": "124795d5e7345eea8eadb601f479c4cdce753f1ad594d8ef7118ea2fc0289fb4"
+  },
+  "execution": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/degenerate_checks.py"
+    ],
+    "exit": 0,
+    "elapsed": 1.0184242078103125,
+    "timeout": 120
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "timeout_seconds": 120,
+    "inputs": "literal, deterministic"
+  },
+  "control_outcomes": {
+    "baseline_checks": 61,
+    "actual_mutants": 8,
+    "all_failed_at_intended_assertion": true,
+    "complete_failure_logs_read": true,
+    "numerical_scope": "finite matrix examples and unvalidated torus quadrature; no grid proof of continuum assertions"
+  },
+  "strongest_proved_statements": [
+    "Explicit bounded effective block on ker H0(0) direct-sum span zeta, including both off-diagonal couplings.",
+    "Gapless strong evolution limit for every fixed initial zero-space vector, uniformly on compact rescaled times; vector-dependent spectral-cutoff error.",
+    "Actual canonical-current block and strong current limit; preserved initial dressing cancellation.",
+    "Strict quadratic effective current response from zeta for equal nonzero kappa components, including a normalizable total-momentum envelope.",
+    "Explicit cone-concentrating transverse family disproves an operator-norm upgrade of the state limit on the entire zero-space unit ball."
+  ],
+  "limits": [
+    "No conclusion for arbitrary lambda-dependent projected positive-band packets.",
+    "No uniform quantitative low-spectral-mass bound or finite-lambda onset for the global current limit.",
+    "No current counterexample follows from the nonuniform state comparison.",
+    "No isolated-eigenvalue continuation, unbounded-dipole identity on zeta, physical-law adoption, universal relaxation, or completeness claim.",
+    "All controls are author controls; independent review of this new proof remains outstanding."
+  ],
+  "editable_prompt_files_changed": [],
+  "writes": "only the named new note and its new excluded_walk_degenerate support directory",
+  "artifacts": [
+    {
+      "path": "EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725
+    },
+    {
+      "path": "excluded_walk_degenerate/baseline.log",
+      "sha256": "88fc08e88c08ac79b33dc8df908c4d0a88f4dadb662f4802382adece491c340f",
+      "bytes": 3741
+    },
+    {
+      "path": "excluded_walk_degenerate/baseline_execution.json",
+      "sha256": "247301d657713eedc23d3d1c6298fe1401c2f7018a5bbc7cc176328486e71236",
+      "bytes": 272
+    },
+    {
+      "path": "excluded_walk_degenerate/degenerate_checks.py",
+      "sha256": "8313796d2a462c37ed1aea0dc32182c9f7dc5b7ba34707d80a033b1c53f3a41a",
+      "bytes": 11546
+    },
+    {
+      "path": "excluded_walk_degenerate/freeze_receipt.py",
+      "sha256": "7a3679ce1e78d7e7afb2967131e054aaecc67600625ba3322f6877e6dc40467c",
+      "bytes": 6505
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_actual_current_sign.log",
+      "sha256": "a8abc0f45df65abe4b53618b5bd1b3858c8e69798026fd735b874e14e5691ab4",
+      "bytes": 2266
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_actual_current_sign.py",
+      "sha256": "4d07d7c02f74a27a97599a6a6ea0072b578ba51217603ebc803ee2da74441815",
+      "bytes": 11545
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_cone_streaming_factor.log",
+      "sha256": "ac5bfa573f1c4fe5e7c579cfacd0ddca8cfd50daf8ed73c329a995f81c626a56",
+      "bytes": 3710
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_cone_streaming_factor.py",
+      "sha256": "327befc68dbca095cd52076663455d2e741fc1722f9dfc32cddc523e714d0e12",
+      "bytes": 11546
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_corrector_sign.log",
+      "sha256": "288a55b598b8e499c11944a1b6dba9b02ceb08cfb476ad94000f13edf3578732",
+      "bytes": 1846
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_corrector_sign.py",
+      "sha256": "b5f96ce43b8ab0366a3ad51271679505997ead330ee6ffe89fe31188308fb852",
+      "bytes": 11545
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_coupling_omission.log",
+      "sha256": "ad85f17bdc17098f377904d193c9e765c65168378d7999f286e04d575c5ac86c",
+      "bytes": 1208
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_coupling_omission.py",
+      "sha256": "15fa0859505fee2e757e1cb0f381b7a229aa4b2edd197d6be26b81e699374774",
+      "bytes": 11547
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_derivative_sign.log",
+      "sha256": "1571553262d1dabada72c306aa0a50fd295168986b7eea11b155ae123f6a269b",
+      "bytes": 945
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_derivative_sign.py",
+      "sha256": "34a7b0dba7091d15e283c4b2a28d0404d6d305e142864565ff5af7f7e9f7d469",
+      "bytes": 11547
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_full_zero_space.log",
+      "sha256": "e393c5670c47a97c3bbf03dc86039ac812e3486e9bfc2e8c96c0792bfd7a751b",
+      "bytes": 936
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_full_zero_space.py",
+      "sha256": "e4ea0de2424fd043a055a4c4b53f6937fee4709c8a055325ddbb1b10d6631d2c",
+      "bytes": 11547
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_placement_omission.log",
+      "sha256": "ed574c726b8631a26c5f828cd08328c082ccc7e087ff9aa82f85b99e613a531c",
+      "bytes": 1354
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_placement_omission.py",
+      "sha256": "8cf3eb6eef5eac7a11cddc2ac7ebafccd013cdbf4b114918779e0764ad10e9bc",
+      "bytes": 11547
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_transverse_projection.log",
+      "sha256": "fc26240ce487b55310ff151777ee643c26d0c5f19b8742057df9bc8e9e9c548d",
+      "bytes": 1040
+    },
+    {
+      "path": "excluded_walk_degenerate/mutant_transverse_projection.py",
+      "sha256": "c7f6bd750523406aff6da26f904f0da3b07c8afc782e575f7bfe341ffdc84736",
+      "bytes": 11547
+    },
+    {
+      "path": "excluded_walk_degenerate/mutation_manifest.json",
+      "sha256": "5d6c83f150b1d94217894b38773d564eeaab6f5be177f5abd869cba56eff2d19",
+      "bytes": 6941
+    },
+    {
+      "path": "excluded_walk_degenerate/prior_statement_search.json",
+      "sha256": "a20dfc6e23c4a209050f9be5cadd4df617cd744dc486aa9faad13429f47556a9",
+      "bytes": 518
+    },
+    {
+      "path": "excluded_walk_degenerate/prior_statement_search.log",
+      "sha256": "4d52c28b389cfd331658b0fe5923756bc4a1673810a12daa8ae8fb8a11c782d5",
+      "bytes": 4916
+    },
+    {
+      "path": "excluded_walk_degenerate/run_mutations.py",
+      "sha256": "5cc4a76dfb8822402b4d250801e145d6baffc8c19651e697630f92749a68eeb5",
+      "bytes": 2853
+    }
+  ],
+  "receipt_scope": "receipt intentionally does not hash itself; its SHA-256 is reported separately"
+}

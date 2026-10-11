@@ -1,0 +1,18 @@
+{
+  "command": [
+    "git",
+    "grep",
+    "-n",
+    "-i",
+    "-E",
+    "(degenerate.{0,30}(zero|effective)|gapless.{0,30}(averag|limit)|strong.{0,30}coupling.{0,30}limit|threshold.{0,30}dress)",
+    "main",
+    "--",
+    "docs/*WALK*.md",
+    "docs/*ADMISSIBILITY*.md"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree",
+  "exit": 0,
+  "main": "e485eab6b09b3957df5772104d3ea3980108d7fa",
+  "scope": "bounded local-main comparison, not a remote or literature novelty survey"
+}

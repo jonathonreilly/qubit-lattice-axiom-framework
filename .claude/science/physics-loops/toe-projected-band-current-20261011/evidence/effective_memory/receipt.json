@@ -1,0 +1,358 @@
+{
+  "created_at_utc": "2026-10-11T19:35:13.623004+00:00",
+  "task": "exact effective dressing memory and continuum coherent transfer",
+  "scope": "external bounded conditional theorem candidate; author checks, no audit verdict",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+    "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+    "bytes": 23222,
+    "lines": 500,
+    "coverage": "complete final source read; all E1-E29 reconstructed while writing and checked in final read"
+  },
+  "source_identity_check": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/source_identity_check.json",
+    "sha256": "b1cb81f2e5ee520c647a4c95c0921e23d4a0a2df0bb56fe51e63cf69fc7d022b",
+    "bytes": 30149
+  },
+  "direct_sources": {
+    "EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725
+    },
+    "EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+      "sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2",
+      "bytes": 20876
+    },
+    "excluded_walk_degenerate/receipt.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/receipt.json",
+      "sha256": "369bebc245e0e7794608d6a1ef29a4ccd3d374a85f3f3bcc20f0f2dd81288dde",
+      "bytes": 12787
+    },
+    "excluded_walk_degenerate_review/independent_review_receipt.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate_review/independent_review_receipt.json",
+      "sha256": "c4d07a7e025986d1bfc2ba2e479ff34c0c4b73cabe21f1ccc68aaedd64144baa",
+      "bytes": 23359
+    },
+    "lean_audit/receipt.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/receipt.json",
+      "sha256": "1564b0bf532aca6c7f43c301455163b1af0afb96405e620eb56c481bdf7ed96d",
+      "bytes": 29021
+    },
+    "parent_reading_coverage": {
+      "EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md": "all 549 lines, current task",
+      "EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md": "all 375 lines, current task",
+      "prior_chain": "previous complete readings reused after exact identities verified; no prior runner replay",
+      "receipts": "parsed identities, not a claim of new manual reading of every historical receipt field"
+    }
+  },
+  "protected_records_verified_unchanged": 104,
+  "lean_packet_unchanged": {
+    "receipt": "1564b0bf532aca6c7f43c301455163b1af0afb96405e620eb56c481bdf7ed96d",
+    "all_small_artifacts_verified": 67
+  },
+  "environment": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "executions": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/memory_controls.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.642091792076826,
+      "timeout_seconds": 120,
+      "inputs": "literal deterministic fixtures"
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_controls.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.2424532920122147,
+      "timeout_seconds": 120
+    }
+  ],
+  "controls": {
+    "counts": [
+      19,
+      3
+    ],
+    "independent_form": "direct matrix inverses/powers and convolution, separate q gradient/Jacobian, unrelated continuous and atomic measures",
+    "exact_vs_floating": "symbolic finite algebra and elementary constants exact; numerical matrix/quadrature/geometry controls floating",
+    "all_baseline_and_mutation_logs_read_completely": true,
+    "unmutated_runs": "both exited zero first time",
+    "mutations": [
+      {
+        "name": "Schur_sign",
+        "old": "scalar_resolvent = 1/(z-self_energy)",
+        "new": "scalar_resolvent = 1/(z+self_energy)",
+        "intended_assertion": "Schur_sign_and_denominator",
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Schur_sign.py"
+        ],
+        "returncode": 1,
+        "elapsed_seconds": 0.8308464167639613,
+        "timeout_seconds": 120,
+        "source": "mutant_Schur_sign.py",
+        "log": "mutant_Schur_sign.log",
+        "source_sha256": "4ea1011b22be62e7a5389d4a33875b05f4e0f44ed69524ef00e32b4a420e89a4",
+        "log_sha256": "f10648448949ec09e3710fbfcdc5c08979c3e9e95813a7167378e195eea36140",
+        "failed_at_intended_assertion": true
+      },
+      {
+        "name": "memory_sign",
+        "old": "zero(sp.diff(a1, t)+conv)",
+        "new": "zero(sp.diff(a1, t)-conv)",
+        "intended_assertion": "Volterra_sign_actual_matrix",
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_memory_sign.py"
+        ],
+        "returncode": 1,
+        "elapsed_seconds": 0.6668655830435455,
+        "timeout_seconds": 120,
+        "source": "mutant_memory_sign.py",
+        "log": "mutant_memory_sign.log",
+        "source_sha256": "ae06621e031aaaf9d7f59b8afe1144a2d1c1b2e343714f744af1c50592f1758a",
+        "log_sha256": "3ca5697408bf1230a3b6bc1592e1041e68db56bae76524208babbf923f3f823f",
+        "failed_at_intended_assertion": true
+      },
+      {
+        "name": "finite_bath_atom_omission",
+        "old": "atom > 0, str(atom)",
+        "new": "atom == 0, str(atom)",
+        "intended_assertion": "finite_bath_nonzero_dressing_atom",
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_finite_bath_atom_omission.py"
+        ],
+        "returncode": 1,
+        "elapsed_seconds": 0.6569725419394672,
+        "timeout_seconds": 120,
+        "source": "mutant_finite_bath_atom_omission.py",
+        "log": "mutant_finite_bath_atom_omission.log",
+        "source_sha256": "e122d204144b0909154e9f22ce16fc1dfa4e8c7e8e50a5c7239dcab87e026caa",
+        "log_sha256": "47260fcb97dfb7c9951c5a4497f026b354922488139f68a249f0b0cb4982fada",
+        "failed_at_intended_assertion": true
+      },
+      {
+        "name": "helicity_half_omission",
+        "old": "density_integrand = sp.Rational(1, 2)*G_lower",
+        "new": "density_integrand = G_lower",
+        "intended_assertion": "normalized_single_helicity_density_constant",
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_helicity_half_omission.py"
+        ],
+        "returncode": 1,
+        "elapsed_seconds": 0.7160925418138504,
+        "timeout_seconds": 120,
+        "source": "mutant_helicity_half_omission.py",
+        "log": "mutant_helicity_half_omission.log",
+        "source_sha256": "28d515c42de67bc8548e0636957d591d1be4e638f1a002a3a4af00cf8d638225",
+        "log_sha256": "e7bbdcbbdabeb512888c340858dd750e8f3a507ad4c23400b3a72e0c4bb63fe8",
+        "failed_at_intended_assertion": true
+      },
+      {
+        "name": "Poisson_factor_two_omission",
+        "old": "rhs = 2*eta*(-mv.imag)",
+        "new": "rhs = eta*(-mv.imag)",
+        "intended_assertion": "Poisson_interval_bound_independent_measure",
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Poisson_factor_two_omission.py"
+        ],
+        "returncode": 1,
+        "elapsed_seconds": 0.7094227913767099,
+        "timeout_seconds": 120,
+        "source": "mutant_Poisson_factor_two_omission.py",
+        "log": "mutant_Poisson_factor_two_omission.log",
+        "source_sha256": "a6e2a6b938c242b4a8d2b5a6fb70e325cc576c074fc24e61d9bb637834baa537",
+        "log_sha256": "ded293094763ceebc0a8b4e77f1b477b0fdd270eefba39d0746024f775a37e32",
+        "failed_at_intended_assertion": true
+      },
+      {
+        "name": "mean_factor_two_omission",
+        "old": "displayed = 2*C*(1+sp.log(2*b*T))/T",
+        "new": "displayed = C*(1+sp.log(2*b*T))/T",
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_mean_factor.py"
+        ],
+        "returncode": 1,
+        "elapsed_seconds": 0.5477855838835239,
+        "timeout_seconds": 120,
+        "source": "mutant_mean_factor.py",
+        "source_sha256": "aba92c0d24e8434904f6b049c78ed977e3c89b126be804d1a68f1c8e591e048f",
+        "log": "mutant_mean_factor.log",
+        "log_sha256": "ae1cb4bd6085eaee2c97d1823362275eb03e6f0fb673b968a7bc74a68ba91df8",
+        "intended_assertion": "mean_kernel_constant",
+        "failed_at_intended_assertion": true
+      }
+    ],
+    "not_independent_review": true,
+    "not_continuum_numerical_proof": true
+  },
+  "strongest_proved_statements": [
+    "Exact real Volterra memory, scalar resolvent and Laplace transform for the normalized dressing amplitude.",
+    "Exact produced transverse probability and weighted q-distribution formulas; finite-time lower and upper transfer bounds.",
+    "For every nonzero kappa, explicit one-cone one-helicity bath lower density on compact interior energies.",
+    "Uniform local dressed-resolvent bound implies absence of interior singular dressing measure; strict compression excludes endpoint atoms.",
+    "Dressing spectral measure is absolutely continuous, so its amplitude and every time derivative vanish at infinite effective time; transverse probability tends to one.",
+    "Finite-horizon mean-transfer bound with explicit resolvent edge term and exact constants.",
+    "The original-walk conclusion has lambda-to-zero before effective-time-to-infinity order only."
+  ],
+  "preserved_counterexample": "Finite 3x3 bath with exact return at 2pi multiples and dressing zero-atom 9/25; no generic block-form decay claim.",
+  "open_obligations": [
+    "quantitative edge and pointwise decay rates",
+    "weighted-current asymptotics",
+    "growing-time original-walk comparison",
+    "arbitrary lambda-dependent free-band preparation",
+    "independent review of complete new analytic proof"
+  ],
+  "imports": "bounded spectral theorem and elementary measure/calculus facts; specialized scattering or limiting-absorption theorem not imported",
+  "freshness": "local identified refs only; no remote freshness or global novelty assertion",
+  "editable_prompt_files_changed": [],
+  "writes": "only the new named note and effective_memory directory",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/baseline.log",
+      "sha256": "c126b7ff2a736ce09303b97479da7bbc4550e96e0240d1ffc9bae2edd156a3d3",
+      "bytes": 1623
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/baseline_execution.json",
+      "sha256": "58ed1859a1cfe3d71b23121e326d8133a42052b99bdf8886ef577b2ef81e7eec",
+      "bytes": 329
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/checkpoint.md",
+      "sha256": "e5442399f0dea76f3655764b0b9e57d1e16480942d8aefda0642bf2dd07bfc7e",
+      "bytes": 2302
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/development_log.md",
+      "sha256": "294103bd9666a742655aee57b7fe82169861db2c0b16f59b1479b08ebc6cb7c9",
+      "bytes": 866
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/freeze_receipt.py",
+      "sha256": "0ee2a477cd31cb31b9ddb1cfb4d624b5266e351aef9d7c1debd2fdbe08ec58a8",
+      "bytes": 9129
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_controls.log",
+      "sha256": "e33f320682ec1a9b153dd597a67a320e74086a95230aaeb7bb5bf08db9fc0de7",
+      "bytes": 1154
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_controls.py",
+      "sha256": "8376f00539c79b580b6c142b5b71b8d0d4ec39cd98f47e9577170e915d5b097c",
+      "bytes": 1787
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_execution.json",
+      "sha256": "06687866e9b859570748e9e0bef9427151cc5383d8d71768d932c3ed93fbb578",
+      "bytes": 282
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_mutation.json",
+      "sha256": "a50024631aa2f949b1b676a34a47da50571d16a9cf7805651841b969820da5ef",
+      "bytes": 750
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/memory_controls.py",
+      "sha256": "10980b8195c33ac813f59632cc028a1dbd8a04e066930786dabea338ed162c4a",
+      "bytes": 8187
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Poisson_factor_two_omission.log",
+      "sha256": "ded293094763ceebc0a8b4e77f1b477b0fdd270eefba39d0746024f775a37e32",
+      "bytes": 1936
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Poisson_factor_two_omission.py",
+      "sha256": "a6e2a6b938c242b4a8d2b5a6fb70e325cc576c074fc24e61d9bb637834baa537",
+      "bytes": 8185
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Schur_sign.log",
+      "sha256": "f10648448949ec09e3710fbfcdc5c08979c3e9e95813a7167378e195eea36140",
+      "bytes": 651
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Schur_sign.py",
+      "sha256": "4ea1011b22be62e7a5389d4a33875b05f4e0f44ed69524ef00e32b4a420e89a4",
+      "bytes": 8187
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_finite_bath_atom_omission.log",
+      "sha256": "47260fcb97dfb7c9951c5a4497f026b354922488139f68a249f0b0cb4982fada",
+      "bytes": 1000
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_finite_bath_atom_omission.py",
+      "sha256": "e122d204144b0909154e9f22ce16fc1dfa4e8c7e8e50a5c7239dcab87e026caa",
+      "bytes": 8188
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_helicity_half_omission.log",
+      "sha256": "e7bbdcbbdabeb512888c340858dd750e8f3a507ad4c23400b3a72e0c4bb63fe8",
+      "bytes": 1701
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_helicity_half_omission.py",
+      "sha256": "28d515c42de67bc8548e0636957d591d1be4e638f1a002a3a4af00cf8d638225",
+      "bytes": 8169
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_mean_factor.log",
+      "sha256": "ae1cb4bd6085eaee2c97d1823362275eb03e6f0fb673b968a7bc74a68ba91df8",
+      "bytes": 409
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_mean_factor.py",
+      "sha256": "aba92c0d24e8434904f6b049c78ed977e3c89b126be804d1a68f1c8e591e048f",
+      "bytes": 1785
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_memory_sign.log",
+      "sha256": "3ca5697408bf1230a3b6bc1592e1041e68db56bae76524208babbf923f3f823f",
+      "bytes": 849
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_memory_sign.py",
+      "sha256": "ae06621e031aaaf9d7f59b8afe1144a2d1c1b2e343714f744af1c50592f1758a",
+      "bytes": 8187
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutation_manifest.json",
+      "sha256": "bf3d92a9a1315a47b6943d31bd956c614ef5c3824afa49b2da6fb84fe1c1f9af",
+      "bytes": 4039
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/run_mutations.py",
+      "sha256": "bd6b05bfae8d3fe87b1aee69d568c0f82729bd8184908f42aaab26a071fb512f",
+      "bytes": 2175
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/source_identity_check.json",
+      "sha256": "b1cb81f2e5ee520c647a4c95c0921e23d4a0a2df0bb56fe51e63cf69fc7d022b",
+      "bytes": 30149
+    }
+  ],
+  "receipt_scope": "All new files except this receipt are hashed; protected parent and Lean artifacts checked; receipt intentionally does not hash itself."
+}

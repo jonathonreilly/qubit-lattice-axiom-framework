@@ -1,0 +1,18 @@
+{
+  "name": "mean_factor_two_omission",
+  "old": "displayed = 2*C*(1+sp.log(2*b*T))/T",
+  "new": "displayed = C*(1+sp.log(2*b*T))/T",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_mean_factor.py"
+  ],
+  "returncode": 1,
+  "elapsed_seconds": 0.5477855838835239,
+  "timeout_seconds": 120,
+  "source": "mutant_mean_factor.py",
+  "source_sha256": "aba92c0d24e8434904f6b049c78ed977e3c89b126be804d1a68f1c8e591e048f",
+  "log": "mutant_mean_factor.log",
+  "log_sha256": "ae1cb4bd6085eaee2c97d1823362275eb03e6f0fb673b968a7bc74a68ba91df8",
+  "intended_assertion": "mean_kernel_constant",
+  "failed_at_intended_assertion": true
+}

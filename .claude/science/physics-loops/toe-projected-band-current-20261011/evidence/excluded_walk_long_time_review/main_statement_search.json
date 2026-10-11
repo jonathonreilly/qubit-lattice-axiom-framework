@@ -1,0 +1,18 @@
+{
+  "working_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree",
+  "command": [
+    "git",
+    "grep",
+    "-n",
+    "-i",
+    "-E",
+    "(zero.energy|threshold|flat.band|reduced.inverse).*(exclu|contact|compress)|(exclu|contact|compress).*(zero.energy|flat.band|reduced.inverse)",
+    "a13caa4885f547c8d206265b031ba7649e539fd9",
+    "--",
+    "docs/ADMISSIBILITY_RULE*.md"
+  ],
+  "exit_code": 0,
+  "local_main": "e485eab6b09b3957df5772104d3ea3980108d7fa",
+  "origin_main": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "scope": "literal bounded repository statement search; no global novelty or literature claim"
+}

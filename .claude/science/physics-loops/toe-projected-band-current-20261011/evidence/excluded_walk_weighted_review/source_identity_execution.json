@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/check_source_identities.py"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 0.0843547498807311,
+  "timeout_seconds": 60,
+  "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/check_source_identities.py",
+  "source_sha256": "53448fcc493ac4539b055d62a72164cc240f2d81fc787037cadea9f55c9432e9",
+  "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/source_identity_check.log",
+  "log_sha256": "335e68071f89fed1967ad4a453991cec7b5f847f0f62da2de131d51b42ed44a0"
+}

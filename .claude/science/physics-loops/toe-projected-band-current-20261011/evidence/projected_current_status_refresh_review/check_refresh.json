@@ -1,0 +1,85 @@
+{
+  "inspected_utc": "2026-10-11T20:26:11.529195+00:00",
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/PROJECTED_CURRENT_PRE_PUBLICATION_REFRESH.md",
+      "sha256": "7543767f5f2377812f78630238e73959b170752de0455fb6ab5f556a2f1868bb",
+      "bytes": 38466,
+      "lines": 877
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "bf894a323464c17faf78ae3402af8ef964635fb8fe2240ece671c0aaffcf5e5d",
+      "bytes": 38699,
+      "lines": 880
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_status_refresh.json",
+      "sha256": "ec7777a9ae9442f7bb7f7658f01b6e35fede27b054ce44f548fd0217fade7858",
+      "bytes": 1728,
+      "lines": 21
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/scripts/excluded_walk_projected_free_band_canonical_current_2026_10_11.py",
+      "sha256": "4451005b466c114b40c943509b13aaa34607b7b8e884ab584df4c19d8b1f30ff",
+      "bytes": 33843,
+      "lines": 713
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_PROJECTED_CURRENT_PUBLICATION_REVIEW.md",
+      "sha256": "076021427ff4e2cbb473363e09b3a043c2a4bae01d24bdfc69a6a42a55be8cf1",
+      "bytes": 21197,
+      "lines": 282
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_publication_review/receipt.json",
+      "sha256": "f2c75a99df4eb6139f5f2329c9471716779a8c2ecb61b180ec5788321b5aab03",
+      "bytes": 73664,
+      "lines": 1460
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_canonical_execution.json",
+      "sha256": "0ab2aa7a739029d2c9039cebc5beab38f06b0c2d099e28c8bb770eebc641e483",
+      "bytes": 8367,
+      "lines": 15
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/logs/runner-cache/excluded_walk_projected_free_band_canonical_current_2026_10_11.txt",
+      "sha256": "b8d7d1a9e68765cb6634f5a68a9e366fca1ee1b89da17fad7d4d170f435f19c5",
+      "bytes": 7803,
+      "lines": 124
+    }
+  ],
+  "exact_edits": [
+    {
+      "before": "has not occurred. This publication candidate composes independently checked\nsupplied-model arguments; its new composition still needs a source-bound check.",
+      "after": "has not occurred. This note composes selectively checked supplied-model\narguments. Its full source-bound publication check is recorded in the milestone\nreview history, with the reviewer\u2019s prior authorship and exact scope explicit.",
+      "exact_unique_replacement": true
+    },
+    {
+      "before": "The final publication runner and delivery record are separate packaging work;\nthis candidate asserts no new runner, mutation, cache or Lean execution.",
+      "after": "The publication primary preserves all four complete author programs. Its\nexecution, actual source-copy controls and cache identities are recorded in\nthe milestone delivery record. No Lean proof of this analytic theorem is\nasserted.",
+      "exact_unique_replacement": true
+    },
+    {
+      "before": "review coverage are recorded in this milestone's DELIVERY_CHECKS.md.",
+      "after": "review coverage are recorded in the [delivery checks](../.claude/science/physics-loops/toe-projected-band-current-20261011/DELIVERY_CHECKS.md).",
+      "exact_unique_replacement": true
+    }
+  ],
+  "other_bytes_unchanged": true,
+  "mathematical_sections_1_through_7_sha256": "645f4f707a07e5629c73795dd2a5150718e3c9b8d4e4fb4b6cbb5aedb84fbe59",
+  "mathematical_sections_bytes": 32188,
+  "primary_unchanged": true,
+  "canonical_execution_recorded_exit_code": 0,
+  "canonical_cache_stdout_matches_record": true,
+  "cache_fingerprint_algorithm_recomputed": false,
+  "canonical_execution_replayed": false,
+  "delivery_link": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-projected-band-current-20261011/DELIVERY_CHECKS.md",
+    "exists_at_inspection": false,
+    "inspected_contents": false,
+    "certified_future_contents": false
+  },
+  "scope": "Narrow status/evidence/link change review. No new science verification or certification of future delivery-pack contents."
+}

@@ -1,0 +1,10 @@
+{
+  "projected_current_publication_review/receipt.json": {
+    "path_sha256_occurrences": 225,
+    "unique_paths": 213
+  },
+  "excluded_walk_weighted_review/independent_review_receipt.json": {
+    "path_sha256_occurrences": 63,
+    "unique_paths": 55
+  }
+}

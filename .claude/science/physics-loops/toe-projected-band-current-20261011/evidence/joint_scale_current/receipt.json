@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-10-11T19:55:37.818902+00:00",
+  "scope": "root joint-scale mathematical draft and exact budget support; independent review pending; no continuum inference from finite checks",
+  "records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "bytes": 11538
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_current/scale_controls.py",
+      "sha256": "1a71fb0d680630d0581fe4f982520d4bc3bc51a2649c2359815c3445c2b4d233",
+      "bytes": 2759
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_current/baseline.log",
+      "sha256": "acc130f9337ead71aca970ef694f3d7b2ec58aeadbdbb603e5bb43fa1c1b2230",
+      "bytes": 1272
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_current/execution.json",
+      "sha256": "7e94ef0022fd2c78bc7924488962e3090da8a1abbd7dd0357701590e0fd43491",
+      "bytes": 447
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+      "sha256": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+      "bytes": 19988
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+      "bytes": 14339
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0",
+      "bytes": 17773
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/kato_1957_primary.pdf",
+      "sha256": "12ce9d67ed67d096f82b55a6ef7b778a83c16d5e2f020d4946d58112f3f93fe5",
+      "bytes": 442573
+    }
+  ],
+  "source_coverage": "Full earlier proofs reused with identified hashes; all-T Q16, B18-B24, L6-L10, D1-D7 and Kato Theorem1 explicitly refreshed. Complete new memory proof/review read.",
+  "new_result": "For any fixed0<gamma<1/2, delta=lambda^3,sigma=lambda^2,T=lambda^-gamma,kappa-radius=lambda^2: original global packet current /lambda^4 tends to -Wplus/(12pi^2 I0).",
+  "obligations": [
+    "independent joint-scale composition check",
+    "final source-bound weighted-memory theorem review"
+  ],
+  "writes": "new external draft and joint_scale_current only; no repo or frozen-source modifications"
+}

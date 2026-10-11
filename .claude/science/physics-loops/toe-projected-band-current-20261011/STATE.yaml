@@ -1,0 +1,16 @@
+loop: toe-projected-band-current-20261011
+mode: milestone_snapshot
+active_branch: physics-loop/toe-projected-band-current-20261011
+base_revision: b9b032ae790c66e762a6296a1306bfb64ae7cd70
+current_main_revision: a13caa4885f547c8d206265b031ba7649e539fd9
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: supports
+provisional_dependencies: complete_parent_walk_delta; supplied_walk_and_energy_placement
+independent_checks: component_arguments_and_both_publication_compositions_checked_at_scoped_sources
+milestone: actual_projected_band_current_and_coherent_memory_limit
+pr_status: ready_for_regular_PR
+next_action: open_regular_stacked_PR_after_final_delivery_checks
+live_campaign_checkpoint: transport_worktree/toe-dynamics-bridge-20261009/STATE.yaml
+stop_condition: campaign_deadline_2026-10-12T16:00:52Z

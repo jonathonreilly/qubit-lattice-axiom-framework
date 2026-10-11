@@ -1,0 +1,21 @@
+{
+  "before_sha256": "7543767f5f2377812f78630238e73959b170752de0455fb6ab5f556a2f1868bb",
+  "after_sha256": "bf894a323464c17faf78ae3402af8ef964635fb8fe2240ece671c0aaffcf5e5d",
+  "note_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+  "changes": [
+    {
+      "before": "has not occurred. This publication candidate composes independently checked\nsupplied-model arguments; its new composition still needs a source-bound check.",
+      "after": "has not occurred. This note composes selectively checked supplied-model\narguments. Its full source-bound publication check is recorded in the milestone\nreview history, with the reviewer\u2019s prior authorship and exact scope explicit."
+    },
+    {
+      "before": "The final publication runner and delivery record are separate packaging work;\nthis candidate asserts no new runner, mutation, cache or Lean execution.",
+      "after": "The publication primary preserves all four complete author programs. Its\nexecution, actual source-copy controls and cache identities are recorded in\nthe milestone delivery record. No Lean proof of this analytic theorem is\nasserted."
+    },
+    {
+      "before": "review coverage are recorded in this milestone's DELIVERY_CHECKS.md.",
+      "after": "review coverage are recorded in the [delivery checks](../.claude/science/physics-loops/toe-projected-band-current-20261011/DELIVERY_CHECKS.md)."
+    }
+  ],
+  "scope": "Status/evidence/link refresh only; all mathematical source bytes remain unchanged.",
+  "prior_composition_review_sha256": "076021427ff4e2cbb473363e09b3a043c2a4bae01d24bdfc69a6a42a55be8cf1"
+}

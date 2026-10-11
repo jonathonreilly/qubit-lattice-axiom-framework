@@ -1,0 +1,9 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_review/independent_measure_controls.py"
+  ],
+  "returncode": 1,
+  "elapsed_seconds": 0.3064617500640452,
+  "timeout_seconds": 120
+}

@@ -1,0 +1,151 @@
+{
+  "baseline_source": "degenerate_checks.py",
+  "baseline_sha256": "8313796d2a462c37ed1aea0dc32182c9f7dc5b7ba34707d80a033b1c53f3a41a",
+  "scope": "actual source-copy executions; author controls, not independent scientific review",
+  "mutations": [
+    {
+      "name": "derivative_sign",
+      "before": "FIRST_DERIVATIVE_SIGN = 1",
+      "after": "FIRST_DERIVATIVE_SIGN = -1",
+      "expected_assertion": "Pauli derivative cross sign",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/mutant_derivative_sign.py"
+      ],
+      "timeout_seconds": 120,
+      "exit_code": 1,
+      "intended_assertion_reached": true,
+      "elapsed_seconds": 0.5293427081778646,
+      "source": "mutant_derivative_sign.py",
+      "source_sha256": "34a7b0dba7091d15e283c4b2a28d0404d6d305e142864565ff5af7f7e9f7d469",
+      "log": "mutant_derivative_sign.log",
+      "log_sha256": "1571553262d1dabada72c306aa0a50fd295168986b7eea11b155ae123f6a269b"
+    },
+    {
+      "name": "transverse_projection",
+      "before": "PROJECT_BOTH_SIDES = True",
+      "after": "PROJECT_BOTH_SIDES = False",
+      "expected_assertion": "transverse projected cross identity",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/mutant_transverse_projection.py"
+      ],
+      "timeout_seconds": 120,
+      "exit_code": 1,
+      "intended_assertion_reached": true,
+      "elapsed_seconds": 0.3961022919975221,
+      "source": "mutant_transverse_projection.py",
+      "source_sha256": "c7f6bd750523406aff6da26f904f0da3b07c8afc782e575f7bfe341ffdc84736",
+      "log": "mutant_transverse_projection.log",
+      "log_sha256": "fc26240ce487b55310ff151777ee643c26d0c5f19b8742057df9bc8e9e9c548d"
+    },
+    {
+      "name": "full_zero_space",
+      "before": "INCLUDE_DRESSING = True",
+      "after": "INCLUDE_DRESSING = False",
+      "expected_assertion": "entire physical zero dimension",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/mutant_full_zero_space.py"
+      ],
+      "timeout_seconds": 120,
+      "exit_code": 1,
+      "intended_assertion_reached": true,
+      "elapsed_seconds": 0.537755792029202,
+      "source": "mutant_full_zero_space.py",
+      "source_sha256": "e4ea0de2424fd043a055a4c4b53f6937fee4709c8a055325ddbb1b10d6631d2c",
+      "log": "mutant_full_zero_space.log",
+      "log_sha256": "e393c5670c47a97c3bbf03dc86039ac812e3486e9bfc2e8c96c0792bfd7a751b"
+    },
+    {
+      "name": "coupling_omission",
+      "before": "KEEP_G = True",
+      "after": "KEEP_G = False",
+      "expected_assertion": "full effective generator includes g",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/mutant_coupling_omission.py"
+      ],
+      "timeout_seconds": 120,
+      "exit_code": 1,
+      "intended_assertion_reached": true,
+      "elapsed_seconds": 0.5402627079747617,
+      "source": "mutant_coupling_omission.py",
+      "source_sha256": "15fa0859505fee2e757e1cb0f381b7a229aa4b2edd197d6be26b81e699374774",
+      "log": "mutant_coupling_omission.log",
+      "log_sha256": "ad85f17bdc17098f377904d193c9e765c65168378d7999f286e04d575c5ac86c"
+    },
+    {
+      "name": "placement_omission",
+      "before": "KEEP_PLACEMENT_CORRECTION = True",
+      "after": "KEEP_PLACEMENT_CORRECTION = False",
+      "expected_assertion": "canonical block including cross 0",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/mutant_placement_omission.py"
+      ],
+      "timeout_seconds": 120,
+      "exit_code": 1,
+      "intended_assertion_reached": true,
+      "elapsed_seconds": 0.5589732499793172,
+      "source": "mutant_placement_omission.py",
+      "source_sha256": "8cf3eb6eef5eac7a11cddc2ac7ebafccd013cdbf4b114918779e0764ad10e9bc",
+      "log": "mutant_placement_omission.log",
+      "log_sha256": "ed574c726b8631a26c5f828cd08328c082ccc7e087ff9aa82f85b99e613a531c"
+    },
+    {
+      "name": "corrector_sign",
+      "before": "CORRECTOR_SIGN = -1",
+      "after": "CORRECTOR_SIGN = 1",
+      "expected_assertion": "cutoff corrector residual sign",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/mutant_corrector_sign.py"
+      ],
+      "timeout_seconds": 120,
+      "exit_code": 1,
+      "intended_assertion_reached": true,
+      "elapsed_seconds": 0.7228094171732664,
+      "source": "mutant_corrector_sign.py",
+      "source_sha256": "b5f96ce43b8ab0366a3ad51271679505997ead330ee6ffe89fe31188308fb852",
+      "log": "mutant_corrector_sign.log",
+      "log_sha256": "288a55b598b8e499c11944a1b6dba9b02ceb08cfb476ad94000f13edf3578732"
+    },
+    {
+      "name": "actual_current_sign",
+      "before": "CURRENT_HPRIME_SIGN = -1",
+      "after": "CURRENT_HPRIME_SIGN = 1",
+      "expected_assertion": "actual canonical expansion lambda=0.04 axis=0",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/mutant_actual_current_sign.py"
+      ],
+      "timeout_seconds": 120,
+      "exit_code": 1,
+      "intended_assertion_reached": true,
+      "elapsed_seconds": 0.7131290421821177,
+      "source": "mutant_actual_current_sign.py",
+      "source_sha256": "4d07d7c02f74a27a97599a6a6ea0072b578ba51217603ebc803ee2da74441815",
+      "log": "mutant_actual_current_sign.log",
+      "log_sha256": "a8abc0f45df65abe4b53618b5bd1b3858c8e69798026fd735b874e14e5691ab4"
+    },
+    {
+      "name": "cone_streaming_factor",
+      "before": "CONE_STREAMING = 2",
+      "after": "CONE_STREAMING = 1",
+      "expected_assertion": "cone matrix cubic polynomial",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/mutant_cone_streaming_factor.py"
+      ],
+      "timeout_seconds": 120,
+      "exit_code": 1,
+      "intended_assertion_reached": true,
+      "elapsed_seconds": 0.8102015829645097,
+      "source": "mutant_cone_streaming_factor.py",
+      "source_sha256": "327befc68dbca095cd52076663455d2e741fc1722f9dfc32cddc523e714d0e12",
+      "log": "mutant_cone_streaming_factor.log",
+      "log_sha256": "ac5bfa573f1c4fe5e7c579cfacd0ddca8cfd50daf8ed73c329a995f81c626a56"
+    }
+  ]
+}

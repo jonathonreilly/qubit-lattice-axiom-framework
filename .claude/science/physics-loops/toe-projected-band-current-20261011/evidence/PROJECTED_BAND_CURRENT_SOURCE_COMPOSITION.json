@@ -1,0 +1,1383 @@
+{
+  "scope": "External publication author composition. No frozen-source or repository writes, no runner changes, no new mathematical result, no independent review or audit verdict.",
+  "publication": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+    "sha256": "ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969",
+    "lines": 859
+  },
+  "base_source": "Q",
+  "sources": {
+    "Q": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+      "sha256": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+      "lines": 420,
+      "reading": "previous full source reading reused; selected complete arguments reread for this composition"
+    },
+    "L": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "lines": 457,
+      "reading": "previous full source reading reused; selected complete arguments reread for this composition"
+    },
+    "D": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "lines": 549,
+      "reading": "previous full source reading reused; selected complete arguments reread for this composition"
+    },
+    "B": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+      "lines": 327,
+      "reading": "previous full source reading reused; selected complete arguments reread for this composition"
+    },
+    "P": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "9f551fc8d3592e83d15a007495a8f9165a5ddb9bc1e98d9dd3f51b6a2584f401",
+      "lines": 1280,
+      "reading": "parent frozen identity; complete canonical-current Section 7 reread and reproduced, existing contract scope reused"
+    }
+  },
+  "reviews": {
+    "EXCLUDED_WALK_LONG_TIME_REVIEW.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_REVIEW.md",
+      "sha256": "b9525df21cac9721603776dc703314b73e2572b874ac5ef733b35933d6260e2f",
+      "lines": 378,
+      "reading": "complete report read for source-bound scope; no new independent check claimed by this author composition"
+    },
+    "EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+      "sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2",
+      "lines": 375,
+      "reading": "complete report read for source-bound scope; no new independent check claimed by this author composition"
+    },
+    "EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_REVIEW.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_REVIEW.md",
+      "sha256": "7fa575475439af53c7c0cf4af74fea66537b75ce42afd7418504de4dd0e31051",
+      "lines": 316,
+      "reading": "complete report read for source-bound scope; no new independent check claimed by this author composition"
+    },
+    "EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_REVIEW.md": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_REVIEW.md",
+      "sha256": "a530a7b1507e7d22af11f08c236af865ec1c8acb004069b249c9b281bcf4cbda",
+      "lines": 329,
+      "reading": "complete report read for source-bound scope; no new independent check claimed by this author composition"
+    }
+  },
+  "all_editorial_operations_in_order": [
+    {
+      "id": 1,
+      "reason": "Publication title, proposal/status/trace metadata and explicit supplied-model preparation contract.",
+      "source_ids": [
+        "Q",
+        "P"
+      ],
+      "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: frontier_discovery\nreachability_to_target: partially_closes\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n# An explicit weak-momentum onset for projected free-band current response\n\nExternal author derivation, 2026-10-11. This is a new quantitative continuation\nof three frozen arguments, not an independent review of them. The supplied\nwalk, clock, spin sector, contact exclusion and canonical energy placement\nremain premises. No physical event clock or kinetic equation is derived.\n\n",
+      "after": "---\nclaim_id: excluded_walk_projected_free_band_canonical_current_bounded_theorem_note_2026-10-11\nclaim_type: bounded_theorem\nclaim_scope: \"For the supplied antisymmetric excluded Weyl pair and canonical compressed energy placement, construct a normalized projection of an actual positive free-band packet with a finite signed current response at the explicit two-scale choice delta=2^-68 lambda^2.\"\nupstream_dependencies:\n  - excluded_walk_low_energy_energy_current_bounded_theorem_note_2026-10-11\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: supports\ntarget_claim_id: null\ntarget_blocker_text: \"Construct controlled links from microscopic dynamics to macroscopic transport.\"\nsource_of_blocker_text: user_goal\nartifact_role: theorem\nnext_trace_action: \"Determine controlled current evolution beyond this specified projected-band preparation before using it in a macroscopic transport argument.\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n# Explicit long-time canonical-current response from projected free-band preparation\n\n**Date:** 2026-10-11\n\n**Type:** bounded_theorem\n\n**Status:** proposed_retained\n\nCurrent surface status: conditional-support. Independent retained-status audit\nhas not occurred. This publication candidate composes independently checked\nsupplied-model arguments; its new composition still needs a source-bound check.\n\nThe walk, continuous generator clock, antisymmetric pair sector, contact\nexclusion, coordinates and canonical local-energy placement are supplied\npremises. This result supports the microscopic-current route toward controlled\nmacroscopic transport. It derives no physical encounter clock or kinetic law.\nThe state is prepared by projecting an actual free positive-band packet at\ntime zero and normalizing once on the whole direct integral.\n\n"
+    },
+    {
+      "id": 2,
+      "reason": "Specify the theorem observable and global time-zero preparation without enlarging Q1-Q2.",
+      "source_ids": [
+        "Q",
+        "B"
+      ],
+      "before": "no claim of an optimal exponent, constant or physical onset scale is made.",
+      "after": "no claim of an optimal exponent, constant or physical onset scale is made.\n\nHere Delta <J_a> means\n\n    <exp(-it H_D)Chi,J_a exp(-it H_D)Chi>-<Chi,J_a Chi>.\n\nThe decomposable H_D, bounded canonical J_a, unit free packet and globally\nnormalized physical Chi are specified below. The statement is for this\nconstructed family at the single displayed finite time, in supplied clock\nunits; it is not a monotonicity or arbitrary-preparation assertion."
+    },
+    {
+      "id": 3,
+      "reason": "Replace author-stage history with the publication contract; preserve exact provenance in the composition map.",
+      "source_ids": [
+        "Q",
+        "L",
+        "D",
+        "B",
+        "P"
+      ],
+      "before": "## 1. Frozen inputs, reading coverage and the exact new obligation\n\nAll paths are relative to\n`/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011`.\n\n| Input | SHA-256 | Actual coverage and role |\n| --- | --- | --- |\n| `EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md` | `0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c` | All 327 lines read. B1-B13 supply the complementary corrector and full physical-space current trace; B14-B20 supply the band preparation and finite momentum-continuity estimates; B21-B24 give the existential target that is quantified here. |\n| `EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md` | `09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324` | All 457 lines read. L1-L5 classify the physical zero space and give explicit cone integrals; L9-L14 define the band and its approximate inverse; L18-L20 control actual free-band preparation. Its leakage result is not used as a current argument. |\n| `EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md` | `b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876` | All 549 lines read. D6-D11 give the effective orbit and its vector-dependent cutoff error; D12-D14 give the actual current remainder; D19-D23 give the diagonal dressing response. The nonuniformity example is preserved. |\n| `EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md` | `79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe` | Previous complete reading and reconstruction reused; it fixes the supplied local-energy placement. |\n\nThese source identities were verified and their bytes remain unchanged.\nNo source review or audit status is conferred by this continuation. The exact\nmissing obligation is the finite vector-dependent low-spectral bound in D11,\nand its combination with B9 for the lambda-dependent projected band. The\nthree source arguments are the matched prior work for this continuation;\nno new repository-wide novelty or open-PR inventory is claimed. No new\nliterature theorem, scattering completeness or Cook regularity is used.\n\nThe new proof uses pointwise bounded evolution, the complete longitudinal\ncutoff including its subtracted mean, and bounded spectral/Duhamel estimates.\nThe parameter choice is made only after these estimates are obtained. All\nnew output is external, with separate controls and a source-bound receipt.\n\n",
+      "after": "## 1. Contract and proof organization\n\nThe [parent low-energy walk theorem](EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md),\nSHA-256 `9f551fc8d3592e83d15a007495a8f9165a5ddb9bc1e98d9dd3f51b6a2584f401`,\nfixes the supplied walk and selected additive symmetric energy placement.\nIts canonical-current argument is reproduced in Section 5. The present proof\nrequires none of the parent's stationary-scattering or Cook-regularity inputs.\nThe complete stacked parent contract remains an explicit upstream dependency;\nits proposed status is not promoted by this composition.\n\nAll relative-torus and local total-momentum integrals use dq/(2pi)^3 and\ndK/(2pi)^3, respectively. The fixed local chart is K=k_1+k_2,\nq=(k_1-k_2)/2. Inner products are linear in their second argument. Even\nsinglet and odd triplet coefficients implement pair antisymmetry. No extra\nexchange or half-torus factor is inserted.\n\nThe argument is finite throughout: classify the entire physical zero space,\ncontrol the two cutoff inverses, compare the transverse evolution, retain its\nsmall dressing amplitude in the actual-current trace, and transfer the signed\nbound to one globally normalized packet of actual free-band preparations.\nEvery estimate needed for the explicit onset is proved below. The frozen\nresearch sources supply provenance, not substitute proofs.\n\nThe source-composition map records exact input hashes, retained argument\nranges, every editorial change, and the separate leakage and nonuniformity\nresults preserved as research. Those separate results are not premises of\nthe signed-current theorem. No new literature theorem or physical primitive\nis introduced by this publication composition.\n\n"
+    },
+    {
+      "id": 4,
+      "reason": "Inline L1-L5 kernel and cone proof, keep Q3/Q4 labels and add the already used normalized epsilon-square identity.",
+      "source_ids": [
+        "L",
+        "Q"
+      ],
+      "before": "All relative-torus integrals use dq/(2pi)^3 and inner products are linear\nin the second slot. Let c be the constant normalized singlet, P=I-|c><c|,\nand H_D(K)=P H0(K)P restricted to ran P, where\n\n    H0(K,q)=sigma_1.sin(K/2+q)+sigma_2.sin(K/2-q),\n    s=sin q, epsilon=|s|, n=s/epsilon,\n    I0=integral 1/(4epsilon^2),\n    zeta(q)=n(q)/(2epsilon(q)sqrt(I0)) in triplet coordinates.\n\nValues at the eight cones are immaterial. Write H_*=H_D(0), let F be the\npointwise transverse-triplet projection, and put\n\n    Pi=F+|zeta><zeta|, Q=P-Pi,\n    E_sigma=1_(0<|H_*|<=sigma)(H_*).                       (Q3)\n\nPi is the complete physical zero projection. The auxiliary contact c is\nexcluded. The source proves, for 0<r<=1/2,\n\n    integral_(epsilon<r) epsilon^-2 <=r,\n    integral_(epsilon>=r) epsilon^-4 <=9/r,\n    integral epsilon^2=3/2,  1/12<=I0<=9/8.               (Q4)\n\nThese are continuum torus bounds, not finite-fixture estimates. They retain\nall eight corner charts and the normalized measure.\n\n",
+      "after": "On each physical fiber let c be the constant normalized singlet and\n\n    H0(K,q)=sigma_1.sin(K/2+q)+sigma_2.sin(K/2-q),\n    C=|c><c|, P=I-C, H_D(K)=P H0(K)P restricted to ran P.\n\nOnly bounded operators act on the singular dressing vector below.\n\nWrite s(q)=sin q, epsilon(q)=|s(q)|, let c be the normalized singlet, and\nlet T_j=sigma_(1,j)c. The three T_j are an orthonormal Cartesian triplet\nbasis. In singlet/triplet coordinates the supplied free symbol at K=0 is\n\n    H0(0,q) = [ 0       2s(q)^T ]\n              [ 2s(q)  0_(3x3) ].                         (L1)\n\nThe antisymmetric fiber has an even singlet coefficient and odd triplet\ncoefficients under q -> -q. The vectors below have those parities. At\nalmost every q the free kernel consists of transverse triplets u with\ns·u=0. The two remaining energies are +/-2epsilon. Values at the eight\ncone points can be chosen arbitrarily because they have measure zero.\n\nDefine\n\n    I0 = integral dq/[4epsilon(q)^2],\n    zeta(q) = [s(q)·T]/[2epsilon(q)^2 sqrt(I0)].            (L2)\n\nNear each cone the squared norm has an integrable 1/|q|^2 singularity in\nthree dimensions. Therefore I0 is finite and zeta is a normalized vector.\nIt is orthogonal to c pointwise and orthogonal to every free transverse\nzero mode. Direct multiplication gives\n\n    H0(0) zeta = c/sqrt(I0),\n    H_D(0) zeta = P H0(0) P zeta = 0.                    (L3)\n\nThus the notation H0^{-1}c is valid only as the reduced inverse on the\northogonal complement of the free kernel, evaluated on this particular\nvector c. H0 has no bounded inverse on the whole fiber.\n\nThis is the entire additional physical zero space. If psi belongs to P\nand H_D(0)psi=0, then H0(0)psi=alpha c for some scalar alpha. Subtract\nalpha sqrt(I0) zeta and obtain a free-kernel vector. Conversely every such\nvector lies in P and is killed by H_D(0). Consequently\n\n    ker H_D(0)|_P = ker H0(0) direct-sum span{zeta}.        (L4)\n\nWrite H_*=H_D(0). Let F be the pointwise transverse-triplet projection,\nwith zero singlet block, and define on the physical space\n\n    Pi=F+|zeta><zeta|, Q=P-Pi,\n    E_sigma=1_(0<|H_*|<=sigma)(H_*).                       (Q3)\n\nThe full extension P H0 P also has the auxiliary vector c. It must not be\ncounted as a physical state. Neither the free flat band nor the dispersive\nenergies approaching zero leave a spectral gap around zero. An isolated\nfinite-multiplicity eigenvalue perturbation theorem is inapplicable.\n\nFor later explicit estimates, changing variables u=sin q in the eight\ncharts gives, for 0<r<=1/2,\n\n    integral_(epsilon<r) epsilon^-2 dq <= r,\n    integral_(epsilon<r) dq <= r^3/3,\n    integral_(epsilon>=r) epsilon^-4 dq <= 9/r,\n    integral epsilon^2=3/2,  1/12 <= I0 <= 9/8.          (Q4)\n\nIndeed the radial coefficient is at most\n4/[pi^2(1-r^2)^(3/2)] <=32/(3sqrt(3)pi^2)<1. The first\ntwo inequalities follow by radial integration. For the third, integrate\nu^-2 from r to 1/2 with that coefficient and bound the remaining integrand\nby 16; 1/r+16<=9/r. The last bound uses epsilon^2<=3, the first inequality\nat r=1/2, and epsilon^-2<=4 outside that region.\n\nThe identity integral epsilon^2=3/2 follows by summing the three\nnormalized sin-squared integrals.\n\n"
+    },
+    {
+      "id": 5,
+      "reason": "Inline the complete symbol and generator-remainder proof with lambda renamed delta.",
+      "source_ids": [
+        "D"
+      ],
+      "before": "                                                               (Q5)",
+      "after": "                                                               (Q5)\n\nThe exact free\nsinglet/triplet block at K=delta kappa is\n\n    [ 0                         2(a_delta*s)^T ]\n    [ 2(a_delta*s)              i b_delta cross ],\n\n    (a_delta)_j=cos(delta kappa_j/2),\n    (b_delta)_j=2sin(delta kappa_j/2)cos q_j.                  (D3)\n\nThe sign follows directly from\n(sigma_(1,l)+sigma_(2,l))T_j=2i epsilon_(ljk) T_k.\nConsequently the bounded self-adjoint derivative B_kappa has zero\nsinglet block and triplet action\n\n    B_kappa u=i d cross u,       d_j=kappa_j cos q_j,\n    ||B_kappa||<=b.                                           (D4)\n\nIt annihilates c and preserves P. The inequalities\n|cos x-1|<=x^2/2 and |sin x-x|<=|x|^3/6 give\n\n    H_D(delta kappa)/delta=H_*/delta+B_kappa+R_delta,\n    ||R_delta||<=r_delta:=delta b^2/4+delta^2 b^3/24.      (D5)\n\nIndeed the singlet-triplet remainder before division by delta has norm\nat most delta^2 b^2/4; the triplet remainder has norm at most\ndelta^3 b^3/24. Compression cannot enlarge either norm."
+    },
+    {
+      "id": 6,
+      "reason": "Inline the effective-block proof and coupled alpha equation.",
+      "source_ids": [
+        "D"
+      ],
+      "before": "    g_kappa=i(d cross n)/(2epsilon sqrt(I0)).             (Q6)",
+      "after": "    g_kappa=i(d cross n)/(2epsilon sqrt(I0)).             (Q6)\n\nTo verify the transverse block, for any transverse u,\n(I-nn^T)(d cross u)=(d·n)n cross u. B_kappa zeta is already\ntransverse, and <zeta,B_kappa zeta>=0 pointwise. This proves both\noff-diagonal entries and their signs. The parities are preserved.\nThe vector g_kappa is in L2 and ||A_kappa||<=b, because D6 is a\ncompression of the bounded D4. No inverse Hamiltonian or derivative\nof zeta is being used. In particular the equations are defined on all Z:\n\n    i partial_tau u=D_kappa u+alpha g_kappa,\n    i partial_tau alpha=<g_kappa,u>.                          (D7)\n\nDropping g_kappa would discard the physical threshold dressing's coupling\nto the free flat band. It is not a consistent reduction of this generator."
+    },
+    {
+      "id": 7,
+      "reason": "Remove historical dependence wording now that the finite comparison is included.",
+      "source_ids": [
+        "Q"
+      ],
+      "before": "bound that was existential in D11:",
+      "after": "bound needed in the finite zero-space comparison below:"
+    },
+    {
+      "id": 8,
+      "reason": "Keep the special-vector scope; move the separate nonuniformity result to the research-preservation map.",
+      "source_ids": [
+        "Q",
+        "D"
+      ],
+      "before": "the zero-space unit ball or contradiction of the frozen nonuniformity\nexample is asserted.",
+      "after": "the zero-space unit ball is asserted."
+    },
+    {
+      "id": 9,
+      "reason": "Inline the positive-band density and spectral-weight proof.",
+      "source_ids": [
+        "L"
+      ],
+      "before": "## 4. The projected band and its complementary spectral estimate",
+      "after": "## 4. The projected band and its complementary spectral estimate\n\nAt K=0 the positive contact spectral density for 0<E<2 is\n\n    rho(0,E)=E^2/(16pi^3) integral_(S^2)\n                 product_j (1-E^2 n_j^2/4)^(-1/2) dOmega. (L6)\n\nThis can be derived without a limiting-absorption theorem: the ++ contact\nweight is 1/2, E=2epsilon, and the eight sin-coordinate charts have the\nJacobian displayed in L6. In particular\n\n    E^2/(4pi^2) <= rho(0,E)\n       <= E^2/[4pi^2(1-E^2/4)^(3/2)].                    (L7)\n\nFor any positive spectral interval I, the squared norm of the free-band\npart of zeta is\n\n    w_I = ||1_I(H0)zeta||^2\n        = I0^-1 integral_I rho(0,E)/E^2 dE.              (L8)"
+    },
+    {
+      "id": 10,
+      "reason": "Make the phase, positivity and F chi=0 argument explicit using L8-L10.",
+      "source_ids": [
+        "L",
+        "B"
+      ],
+      "before": "    A_lambda=<zeta,chi_lambda>=sqrt(w_lambda)/n_lambda.     (Q12)",
+      "after": "    A_lambda=<zeta,chi_lambda>=sqrt(w_lambda)/n_lambda.     (Q12)\n\nThe reduced-inverse relation H0(0)zeta=c/sqrt(I0) on the dispersive\nsubspace gives\n\n    beta_lambda=(I0 w_lambda)^(-1/2)\n                         integral_[5lambda/4,7lambda/4] rho(0,E)/E dE>0.\n\nThus the displayed real square root for n_lambda has the stated phase\nconvention. The positive band contains only singlet and longitudinal triplet\ncomponents; its contact projection introduces no transverse component."
+    },
+    {
+      "id": 11,
+      "reason": "Make the band estimate refer to the included proof.",
+      "source_ids": [
+        "Q",
+        "L"
+      ],
+      "before": "F chi_lambda=0 and Pi chi_lambda=A_lambda zeta. The source's exact contact\nspectral density and volume bound imply",
+      "after": "F chi_lambda=0 and Pi chi_lambda=A_lambda zeta. The exact contact\nspectral density and volume bound above imply"
+    },
+    {
+      "id": 12,
+      "reason": "Update the retained cone-bound label.",
+      "source_ids": [
+        "Q",
+        "L"
+      ],
+      "before": "volume at most lambda^3/3 by L5,",
+      "after": "volume at most lambda^3/3 by Q4,"
+    },
+    {
+      "id": 13,
+      "reason": "Replace the external-only inverse reference by the included construction.",
+      "source_ids": [
+        "Q",
+        "L"
+      ],
+      "before": "The complete\napproximate inverse in L14,",
+      "after": "The complete\napproximate inverse constructed below,"
+    },
+    {
+      "id": 14,
+      "reason": "Inline the complete band inverse; rename the local scalar coefficients F_s,G_l and spell out its already-reviewed norm accounting.",
+      "source_ids": [
+        "L",
+        "Q"
+      ],
+      "before": "                                                               (Q14)",
+      "after": "                                                               (Q14)\n\nPut n(q)=s/epsilon and write vectors in the invariant\nsinglet/longitudinal space as (F_s,G_l), meaning F_s c+G_l n·T. On P, integral F_s=0,\nand the compressed operator acts as\n\n    H_D(F_s,G_l)=(P_s[2epsilon G_l], 2epsilon F_s),\n    P_s f=f-integral f.                                 (L13)\n\nWrite chi_lambda=(F_s,G_l). For x=chi_lambda-A_lambda zeta, the formal\ninverse singlet component is\n\n    f=G_l/(2epsilon)-A_lambda/(4sqrt(I0)epsilon^2).\n\nIt has integral zero but is generally not square-integrable. This is\nprecisely a place where a naive inverse/gap argument fails. Its triplet\npartner g=F_s/(2epsilon) is square-integrable. For 0<r<=min(1/2,a lambda/2),\nuse the allowed singlet\n\n    f_r=1_(epsilon>=r) f-m_r,\n    m_r=integral 1_(epsilon>=r) f\n       =A_lambda/(4sqrt(I0)) integral_(epsilon<r)epsilon^-2.\n\nSet xi_r=(f_r,g). Direct application of L13 shows that the residual\nH_D xi_r-x has only a triplet component,\n\n    A_lambda/(2sqrt(I0)epsilon) 1_(epsilon<r)-2epsilon m_r.\n\nUsing Q4, the free-band lower bound 2epsilon>=a lambda, and triangle\ninequalities gives\n\n    ||H_D xi_r-x|| <= A_lambda sqrt(r)/sqrt(I0),\n    ||xi_r|| <=2/(a lambda n_lambda)\n       +beta_lambda sqrt(I0)/n_lambda\n       +A_lambda/[sqrt(I0) sqrt(r)].                    (L14)\n\nFor example the two terms in the residual have norms at most\nA_lambda[ sqrt(r)+sqrt(3/2)r ]/(2sqrt(I0)), which is bounded\nas stated for r<=1/2. The epsilon^-4 estimate controls f_r; the\nsubtracted constant uses |m_r|<=A_lambda r/(4sqrt(I0)).\n\nIn the inverse norm, each band-supported piece costs at most\n1/(a lambda n_lambda). The constant term of the triplet inverse costs\nbeta_lambda sqrt(I0)/n_lambda. The cutoff singular singlet term costs\n3A_lambda/(4sqrt(I0)sqrt(r)), and its subtracted mean costs at most\nA_lambda r/(4sqrt(I0)); the latter two fit the final term because\n3+r^(3/2)<=4 for r<=1/2. Its zero mean follows from\nintegral G_l/(2epsilon)=A_lambda sqrt(I0)."
+    },
+    {
+      "id": 15,
+      "reason": "Inline both different correctors and every endpoint, residual and bounded-remainder cost.",
+      "source_ids": [
+        "D",
+        "B"
+      ],
+      "before": "C_lambda<=16/(5lambda)+2<4/lambda on the stated lambda range.",
+      "after": "C_lambda<=16/(5lambda)+2<4/lambda on the stated lambda range.\n\n### Two finite evolution comparisons\n\nFor z in ran Pi, fix T>0 and write B=B_kappa, A=A_kappa.\nAll inverses in the following comparison are spectral-cutoff inverses.\n\nFor sigma>0, let\n\n    Q_sigma=1_(|H_*|>sigma)(H_*),\n    E_sigma=1_(0<|H_*|<=sigma)(H_*),\n    v(tau)=exp(-i tau A)z,       A=Pi B Pi,\n    y_sigma(tau)=-H_*^(-1)Q_sigma B v(tau).                   (D9)\n\nThe inverse in D9 is the bounded spectral-cutoff inverse, of norm at\nmost 1/sigma. It is not an inverse on the gapless complement. Let\nw_delta=v+delta y_sigma. Exact differentiation gives\n\n    (H_*/delta+B)w_delta=A v+E_sigma Bv+delta B y_sigma,\n    i partial_tau w_delta=A v+i delta partial_tau y_sigma.\n\nThe residual is therefore\n\n    i partial_tau w_delta-(H_*/delta+B)w_delta\n      =-E_sigma Bv+delta(i partial_tau y_sigma-B y_sigma).   (D10)\n\nWe have ||y_sigma||<=b||z||/sigma and\n||partial_tau y_sigma||<=b^2||z||/sigma. Compare w_delta with\nthe exact unitary evolution, accounting for the initial and final\ncorrectors, then compare the evolutions with and without R_delta.\nBounded-operator Duhamel gives the finite estimate\n\n    sup_(|tau|<=T) ||U_delta(tau)z-v(tau)||\n      <= (2delta b+2T delta b^2)||z||/sigma\n         +T M_z(sigma,T)+T r_delta ||z||,\n\n    M_z(sigma,T)=sup_(|tau|<=T)||E_sigma Bv(tau)||.            (D11)\n\nA vector in ran Q has only singlet and longitudinal-triplet components.\nThe derivative B kills its singlet component and maps its longitudinal\ncomponent to a transverse one. Therefore\n\n    B_kappa Q=F B_kappa Q,  Q B_kappa Q=0.                 (B5)\n\nFirst take x supported spectrally on |H_*|>sigma, sigma>0. Put\n\n    v(tau)=exp(-i tau H_*/delta)x,\n    y(tau)=B_kappa H_*^-1 v(tau),\n    w(tau)=v(tau)+delta y(tau).                            (B7)\n\nThe inverse is restricted to that spectral support, so its norm is at\nmost 1/sigma. By B5, y is in ran F and H_*y=0. Differentiation yields\n`i delta partial_tau y=B_kappa v`. Hence\n\n    [i partial_tau-(H_*/delta+B_kappa)]w=-delta B_kappa y. (B8)\n\nInitial and final correctors have norm at most delta b||x||/sigma;\nthe integrated residual costs T delta b^2||x||/sigma. Duhamel for R_delta\nadds T r_delta||x||. For general fixed x in ran Q, cutting away its\nlow nonzero spectral part E_sigma x gives the bound\n\n    sup_(|tau|<=T)||U_delta(tau)x-exp(-i tau H_*/delta)x||\n      <=2||E_sigma x||\n        +delta(2b+T b^2)||x||/sigma+T r_delta||x||,\n    E_sigma=1_(0<|H_*|<=sigma)(H_*).                      (B9)"
+    },
+    {
+      "id": 16,
+      "reason": "Reproduce the complete parent canonical-current identification, including its core/H1 qualification.",
+      "source_ids": [
+        "P"
+      ],
+      "before": "## 5. Actual current: a finite error with the dressing amplitude retained",
+      "after": "## 5. Actual current: a finite error with the dressing amplitude retained\n\nFor particle i=1,2 let h_i be the supplied one-body walk and X_(i,a) its\nposition operator. Use the additive symmetric local energy densities\n\n    e_x^0=(1/2) sum_(i=1,2) {Pi_(i,x),h_i},\n    e_x=P e_x^0 P,\n    H_D=sum_x e_x=P H0 P, H0=h_1+h_2.\n\nHere P removes coincident sites in the antisymmetric two-record space.\nOn finite-support states the energy first moment is\n\n    D_a=P D0,a P,\n    D0,a=(1/2)({X_(1,a),h_1}+{X_(2,a),h_2}).       (J1)\n\nThe free commutator is bounded:\n\n    i[H0,D0,a]=g_a,\n    g_a=sin(k_(1,a))cos(k_(1,a))\n           +sin(k_(2,a))cos(k_(2,a))\n        =sin K_a cos(2q_a).                        (J2)\n\nThis follows from (1/2){partial_a h_i,h_i}=sin k_(i,a)cos k_(i,a) I.\nThe cross-particle commutators vanish. We compute i[H_D,D_a] first on\nthe common finite-support core and then obtain its bounded extension.\n\nWork in a local total-momentum chart K=k_1+k_2, q=(k_1-k_2)/2, with\nsmooth sections compactly supported in K. Torus q is periodic. Let c be\nthe constant normalized singlet, C=|c><c|, P=I-C in each fiber, and\n\n    h=H0 c, h'_a=partial_(K_a) h,\n    Hdiff=h_1-h_2, H0'=partial_(K_a)H0.\n\nP is independent of K. Since X_(1,a)=i(partial_Ka+partial_qa/2) and\nX_(2,a)=i(partial_Ka-partial_qa/2), direct symmetrization gives\n\n    D0,a=i H0 partial_Ka+(i/2) Hdiff partial_qa+i H0'. (J3)\n\nThe equality partial_qa Hdiff=2H0' is essential to this expression.\nPut Dq=(i/2)Hdiff partial_qa+iH0'. Integration by parts in q gives\nDq^*=(i/2)Hdiff partial_qa, so Dq^* c=0. Also Dq c=i h'_a.\nConsequently the contact blocks are\n\n    C D0,a P psi = i c <h,partial_Ka psi>,\n    P D0,a C (c f) = i partial_Ka(h f).             (J4)\n\nHere c is constant, <c,H0c>=0 and <c,h'_a>=0. These relations retain\nthe derivatives in K; discarding them would give the wrong current.\n\nExpand the compressed commutator:\n\n    i[PH0P,PD0,aP]\n       =P g_a P-i P H0 C D0,a P+i P D0,a C H0 P.\n\nInsert (J4). The terms h<h,partial_Ka psi> cancel. The remaining bounded\nfinite-rank correction is\n\n    J_a=i[H_D,D_a]=P g_a P+F_a,\n    F_a=-|h'_a><h|-|h><h'_a|.                     (J5)\n\nBoth h and h'_a lie in P. Thus (J5) is an operator identity for the bounded\nextension of this canonical current, and not a postulated current choice.\nIt uses the specified compressed local densities in (J1).\nThe finite-support core calculation extends to the smooth compact-chart\nsections used above by H1 approximation: D0,a maps H1 to L2 continuously,\nand H0 and P preserve H1. These sections need not themselves have finite\nspatial support. No self-adjointness claim for the unbounded dipole is\nneeded to identify its bounded commutator extension.\n\nPointwise singlet algebra gives\n\n    h(q)=2 sum_j cos(K_j/2) sin q_j sigma_(1,j)c,\n    h'_a(q)=-sin(K_a/2) sin q_a sigma_(1,a)c,\n    ||h||^2=2 sum_j cos(K_j/2)^2<=6,\n    ||h'_a||=|sin(K_a/2)|/sqrt(2),\n    ||F_a||<=2sqrt(3)|sin(K_a/2)|.                 (J6)\n\nIn particular both g_a and F_a vanish at central total momentum K=0.\nThis is consistent with special zero-current sectors; no nonzero drift\nfor every state is asserted.\n\nThe remainder of this section uses the bounded extension above on L2\nstates; it does not apply the unbounded dipole to zeta."
+    },
+    {
+      "id": 17,
+      "reason": "Replace a scratch-source-only observable reference.",
+      "source_ids": [
+        "Q",
+        "P"
+      ],
+      "before": "canonical current from the source. On the full physical space its linear",
+      "after": "canonical current just derived. On the full physical space its linear"
+    },
+    {
+      "id": 18,
+      "reason": "Inline the full trace identity, retaining noncommutation of epsilon squared with P.",
+      "source_ids": [
+        "B"
+      ],
+      "before": "    sum_a L_a=3P-H_*^2/2-2epsilon^2 F.                   (Q18)",
+      "after": "    sum_a L_a=3P-H_*^2/2-2epsilon^2 F.                   (Q18)\n\nIndeed H0(0)^2=4epsilon^2(I-F), H0(0)c=2v, and Pc=0 give\n\n    H_*^2=4P epsilon^2 P-4epsilon^2 F-4|v><v|.\n\nSumming the three L_a gives `3P-2P epsilon^2 P+2|v><v|`, proving Q18.\nMultiplication by epsilon^2 commutes with F; it need not commute with P.\nIts placement in the displayed formulas matters."
+    },
+    {
+      "id": 19,
+      "reason": "Inline the complete current-remainder argument before specializing Q20.",
+      "source_ids": [
+        "D",
+        "Q"
+      ],
+      "before": "The source also gives the actual-current remainder",
+      "after": "One explicit operator-norm remainder is\n\n    ||J_a(delta kappa)/delta-kappa_a L_a||\n      <=delta^2[(1/6+sqrt(3)/24)|kappa_a|^3\n                                    +|kappa_a|b^2/8].       (D14)\n\nFor D14, ||h||<=sqrt(6), ||v_a||=1/sqrt(2), and\n||h-2v||<=delta^2 b^2/(4sqrt(2)). Also\n||h'_a/delta+kappa_a v_a/2||\n<=delta^2|kappa_a|^3/(48sqrt(2)). Substitute into the exact J_a above and\nuse the cubic sine remainder for its multiplication term. If kappa_a=0,\nJ_a(delta kappa) is exactly zero; no division by kappa_a is needed.\n\nAt kappa0 this gives the actual-current remainder"
+    },
+    {
+      "id": 20,
+      "reason": "Include the complete nonzero-coupling and Taylor proof of Q23, using its weighted-transverse form and no unused zero-space-current theorem.",
+      "source_ids": [
+        "D",
+        "Q"
+      ],
+      "before": "The explicit dressing response D23 gives",
+      "after": "The coupling in Q6 is nonzero. More precisely,\n\n    gamma_kappa^2:=||epsilon g_kappa||^2\n       =(1/(4I0)) integral[|d|^2-(d·n)^2],\n    b^2/(12I0)<=gamma_kappa^2<=b^2/(8I0),\n    gamma_kappa^2>=2b^2/27.                                (D21)\n\nTo verify the bounds, separate-coordinate reflections make all mixed\nintegrals in (d·n)^2 vanish. Cubic symmetry makes the remaining common\ncoefficient L=integral cos^2(q_1)n_1^2. Write\nL=1/3-A0, where A0=integral s_1^4/epsilon^2. Cauchy-Schwarz gives\n\n    A0 integral epsilon^2 >= (integral s_1^2)^2,\n    A0>= (1/2)^2/(3/2)=1/6.\n\nHence 0<=L<=1/6, while integral |d|^2=b^2/2. This proves the\nfirst two bounds in D21; I0<=9/8 proves the last. In particular g_kappa\nis nonzero for every nonzero kappa, not just the chosen diagonal.\n\nThe bounded exponential Taylor remainder gives\n\n    ||u(tau)+i tau g_kappa||<=b^2 tau^2/2,\n    ||epsilon u(tau)||>=|tau|gamma_kappa\n                                      -sqrt(3)b^2 tau^2/2. (D22)\n\nFor 0<|tau|<=sqrt(2)/(9b), the last expression is at least\n|tau|gamma_kappa/2. Thus (2/3)||epsilon u(tau)||^2>=tau^2 gamma_kappa^2/6\n>=tau^2 b^2/81. At kappa0=(1,1,1) and tau0=1/20, the small-time\ncondition holds and this proves"
+    },
+    {
+      "id": 21,
+      "reason": "Inline both positive-projector and physical-normalization estimates, with actual free-band and parity hypotheses.",
+      "source_ids": [
+        "L",
+        "B",
+        "Q"
+      ],
+      "before": "The source's projector formula gives\n||chi_(lambda,K)-chi_lambda||<=16|K|/lambda. Its unchanged q support\nhas epsilon<=7lambda/8 and normalized volume at most lambda^3/3.\nThe free energies move by at most |K|, so phi_(lambda,K) is an actual\npositive free [lambda,2lambda]-band vector. It follows also that\nn_(lambda,K)^2>=1-lambda^3/3. No free-band confinement after projection\nor excluded evolution is asserted.\n\n",
+      "after": "Each positive one-particle projector is (I+ahat.sigma)/2. On the original\nsupport, 5lambda/8<=epsilon<=7lambda/8, and each sine vector changes by at\nmost |K|/2. The unit-direction inequality\n|a/|a|-b/|b||<=2|a-b|/|b| bounds each projector change by\n4|K|/(5lambda). Their product therefore changes by at most\n8|K|/(5lambda)<=2|K|/lambda. It respects pair antisymmetry.\n\nIts action on phi_lambda is nonzero. Normalizing costs at most twice the\nunnormalized distance, so ||phi_(lambda,K)-phi_lambda||<=4|K|/lambda.\nThe unchanged q support has epsilon<=7lambda/8 and normalized volume at\nmost lambda^3/3 by Q4. Cauchy-Schwarz against the constant singlet gives\nn_(lambda,K)^2>=1-lambda^3/3. Both physical projection norms are at least\n1/2; the map u -> Pu/||Pu|| is then Lipschitz with constant four on these\nunit vectors. Consequently\n\n    ||chi_(lambda,K)-chi_lambda||<=16|K|/lambda.\n\nThe two positive free energies together move by at most |K|. Thus the\ninterior band [5lambda/4,7lambda/4] remains inside [lambda,2lambda], and\nphi_(lambda,K) is an actual positive free-band vector. These preparation\nstatements do not assert free-band confinement after contact projection or\nexcluded evolution.\n\n"
+    },
+    {
+      "id": 22,
+      "reason": "Inline B20 including all current factors and the two preparation endpoints.",
+      "source_ids": [
+        "B",
+        "Q"
+      ],
+      "before": "On |kappa-kappa0|<=1/10, the current and bounded-Duhamel estimates B20 give\n||J_a(delta kappa)/delta||<=4, a current Lipschitz constant four, and an\nevolution Lipschitz constant tau0. Therefore the scaled drift at fixed\nchi_lambda changes by at most 9|kappa-kappa0|. Replacing that initial\nstate by chi_(lambda,delta kappa) costs at most 512delta/lambda.\nThese estimates apply directly at finite delta; no off-diagonal limiting\ncurrent formula is used.\n\n",
+      "after": "Here are explicit margins for a full-dimensional K packet. On\n|kappa-kappa0|<=1/10 and 0<delta<=1, the exact canonical formula gives\n\n    ||J_a(delta kappa)/delta||<=4,\n    ||J_a(delta kappa)/delta-J_a(delta kappa0)/delta||\n      <=4|kappa-kappa0|,\n    ||U_(delta,kappa)(tau0)-U_(delta,kappa0)(tau0)||\n      <=tau0|kappa-kappa0|.                              (B20)\n\nFor the first bound, use ||J_a(delta kappa)/delta||\n<=(1+sqrt(3))|kappa_a|<=1.1(1+sqrt(3))<4.\nFor the second bound, the multiplication term costs |kappa-kappa0|.\nThe two rank-one terms cost at most\n`(sqrt(3)+delta/2)|kappa-kappa0|`, since\n`||h||<=sqrt(6)`, `||h'_a(K)-h'_a(K0)||<=delta|kappa-kappa0|/(2sqrt(2))`,\n`||h(K)-h(K0)||<=delta|kappa-kappa0|/sqrt(2)`, and\n`||h'_a(K0)||<=delta/(2sqrt(2))`.\nTheir sum is less than four. The last bound follows from\n`||H_D(K)-H_D(K0)||<=|K-K0|` and bounded Duhamel.\n\nHolding the initial chi_lambda fixed, B20 bounds the change of the scaled\ndrift between kappa and kappa0 by `9|kappa-kappa0|`.\nReplacing it by the actual initial chi_(lambda,delta kappa) costs at most\n`4*4*32delta/lambda=512delta/lambda`, using the preparation bound above and |kappa|<2.\n\n"
+    },
+    {
+      "id": 23,
+      "reason": "Replace author-stage future-review/history prose by exact completed component-review identities and pending publication-composition scope; preserve unused results in the map.",
+      "source_ids": [
+        "Q",
+        "L",
+        "D",
+        "B"
+      ],
+      "before": "## 8. Evidence, limits and next check\n\nThe separate helper `quantitative_band_current/quantitative_controls.py`\nfirst checks all parameter/current/support budgets with exact fractions.\nAn exact three-antipodal-pair fixture then has I0=1 and a longitudinal\nvector orthogonal to zeta. Its cutoff has nonzero removed mean, and the\ncomplete mean-subtracted residual is checked exactly. The floating matrix\npart uses actual sine/cosine points, constructs the physical zero projection,\nand checks five effective orbit times, pointwise bounds, the longitudinal\nQ B component, a nontrivial low-spectral projection, both corrector residuals,\nand the full-space current trace identity. The fixture is not cubic, and no\ncomponentwise rotational equality is claimed for it.\n\nThe finite fixture's weights are not torus quadrature weights satisfying Q4.\nIt checks operator/cutoff algebra; the continuum cone bounds and infinite-\ndimensional evolution estimates rest on the proofs above and the frozen\nsources. No enormous-time floating simulation is offered as verification of\nQ2. The complete source, successful log, tool versions, source identities,\nreading coverage and any failed runs are bound in the separate receipt.\nThese are author controls, not independent research review.\n\nThe incomplete routes remain visible. The uncut formal inverse need not be\nL2. Omitting the singlet mean or the removed zeta coefficient invalidates its\nresidual bound. Strong convergence for fixed vectors does not control all\nlambda-dependent states. Replacing Q21 by an amplitude-blind norm estimate\nloses the useful parameter margin. The source's canonical dressing cancellation\nand its zero-space nonuniformity example are unchanged. This note proves a\npositive response for the specified family; it does not assert a universal\nsign, monotone decay, all-state kinetic approximation or adopted event rate.\n\nIndependent checking is still required for the pointwise-to-spectral step,\nthe finite transverse bound, the small-amplitude current estimate and the\nglobal preparation. The constants are proof choices, not fitted quantities.\nThe previous existential theorem remains intact, and this explicit family\nneeds no gap, absolute-continuity hypothesis or high-order spectral profiles.\nNo repository, frozen science source, registry, prompt, commit, PR or audit\nstatus was changed.\n",
+      "after": "## 8. Evidence scope and preserved research\n\nThe four frozen component notes and their independent research reviews are\nsource-bound in the composition map. The review identities are\n\n- Long-time kernel/band review:\n  `b9525df21cac9721603776dc703314b73e2572b874ac5ef733b35933d6260e2f`.\n- Full-zero-space dynamics review:\n  `c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2`.\n- Two-scale projected-band current review:\n  `7fa575475439af53c7c0cf4af74fea66537b75ce42afd7418504de4dd0e31051`.\n- Explicit-onset review:\n  `a530a7b1507e7d22af11f08c236af865ec1c8acb004069b249c9b281bcf4cbda`.\n\nThose reviews reconstructed the required arguments and reported no\nconsequential source defect within their exact domains. Their earlier\nexistential-onset limitations belong to those earlier sources; the explicit\nestimate Q25-Q27 is supplied by the later quantitative note and its separate\nreview. No component review is silently treated as a review of changed\npublication prose or as an applied retained-status audit.\n\nThe existing author and independently written finite controls remain evidence\nfor their stated algebraic fixtures and parameter budgets. A finite weighted\nfixture is not the torus measure; a finite exponential does not prove the\ngapless evolution theorem. The proof above supplies the continuum integrals,\nspectral-cutoff estimates, actual-current identity and global normalization.\nThe final publication runner and delivery record are separate packaging work;\nthis candidate asserts no new runner, mutation, cache or Lean execution.\n\nThe source map preserves the unused leakage, pure-dressing cancellation,\ngeneric fixed-vector limit, and state-comparison nonuniformity findings in\ntheir original files, with their original scope. They are not converted into\nbroader current no-go claims. Here the uncut inverse may fail to be in L2,\nboth cutoff means are retained, and the small A_lambda factor is essential\nto the finite current margin. The claim remains the specified supplied-model\npacket theorem with conservative explicit constants and a positive momentum\nwidth. No optimized onset, universal current sign, monotone decay, many-body\nclosure or new physical law follows from this construction.\n"
+    },
+    {
+      "id": 24,
+      "reason": "Identify the exact inherited premise scope without importing unused scattering or Cook assumptions.",
+      "source_ids": [
+        "P",
+        "B",
+        "Q"
+      ],
+      "before": "The complete stacked parent contract remains an explicit upstream dependency;\nits proposed status is not promoted by this composition.",
+      "after": "The supplied-walk and canonical-placement contract remains an explicit\nupstream dependency; the parent's proposed status is not promoted by this\ncomposition."
+    },
+    {
+      "id": 25,
+      "reason": "Define n before its first effective-orbit use and remove duplicate singlet definition; cone-point values retain their measure-zero convention.",
+      "source_ids": [
+        "L",
+        "D",
+        "Q"
+      ],
+      "before": "Write s(q)=sin q, epsilon(q)=|s(q)|, let c be the normalized singlet, and\nlet T_j=sigma_(1,j)c.",
+      "after": "Write s(q)=sin q, epsilon(q)=|s(q)| and n(q)=s(q)/epsilon(q) off the cone\npoints; let T_j=sigma_(1,j)c."
+    },
+    {
+      "id": 26,
+      "reason": "Remove a dangling D6 label and replace the source-only Z notation by the publication definition ran Pi.",
+      "source_ids": [
+        "D",
+        "Q"
+      ],
+      "before": "The vector g_kappa is in L2 and ||A_kappa||<=b, because D6 is a\ncompression of the bounded D4. No inverse Hamiltonian or derivative\nof zeta is being used. In particular the equations are defined on all Z:",
+      "after": "The vector g_kappa is in L2 and ||A_kappa||<=b, because A_kappa is a\ncompression of the bounded D4. No inverse Hamiltonian or derivative\nof zeta is being used. The equations act on the entire physical zero\nspace ran Pi:"
+    },
+    {
+      "id": 27,
+      "reason": "Make the unit-norm antecedent and initial dressing coordinate unambiguous after insertion of the coupled-system proof.",
+      "source_ids": [
+        "D",
+        "Q"
+      ],
+      "before": "Its norm is one, so |alpha|<=1.",
+      "after": "The orbit exp(-i tau A_kappa)zeta has norm one, with alpha(0)=1, so\n|alpha|<=1."
+    },
+    {
+      "id": 28,
+      "reason": "Spell out the finite block eigenvector already underlying the frozen density formula; no additional analytic premise.",
+      "source_ids": [
+        "L"
+      ],
+      "before": "This can be derived without a limiting-absorption theorem: the ++ contact\nweight is 1/2, E=2epsilon, and the eight sin-coordinate charts have the\nJacobian displayed in L6.",
+      "after": "The positive eigenvector of L1 is (c+n·T)/sqrt(2), with eigenvalue\nE=2epsilon and contact weight 1/2. The eight sin-coordinate charts,\nfollowed by this radial energy change, give L6 directly. No\nlimiting-absorption theorem is needed."
+    },
+    {
+      "id": 29,
+      "reason": "Use the publication H_* notation throughout the K=0 inverse, avoiding an ambiguous K-dependent H_D and the duplicate n definition.",
+      "source_ids": [
+        "L",
+        "Q"
+      ],
+      "before": "Put n(q)=s/epsilon and write vectors in the invariant\nsinglet/longitudinal space as (F_s,G_l), meaning F_s c+G_l n·T. On P, integral F_s=0,\nand the compressed operator acts as\n\n    H_D(F_s,G_l)=(P_s[2epsilon G_l], 2epsilon F_s),\n    P_s f=f-integral f.                                 (L13)\n\nWrite chi_lambda=(F_s,G_l). For x=chi_lambda-A_lambda zeta, the formal\ninverse singlet component is\n\n    f=G_l/(2epsilon)-A_lambda/(4sqrt(I0)epsilon^2).\n\nIt has integral zero but is generally not square-integrable. This is\nprecisely a place where a naive inverse/gap argument fails. Its triplet\npartner g=F_s/(2epsilon) is square-integrable. For 0<r<=min(1/2,a lambda/2),\nuse the allowed singlet\n\n    f_r=1_(epsilon>=r) f-m_r,\n    m_r=integral 1_(epsilon>=r) f\n       =A_lambda/(4sqrt(I0)) integral_(epsilon<r)epsilon^-2.\n\nSet xi_r=(f_r,g). Direct application of L13 shows that the residual\nH_D xi_r-x has only a triplet component,\n\n    A_lambda/(2sqrt(I0)epsilon) 1_(epsilon<r)-2epsilon m_r.\n\nUsing Q4, the free-band lower bound 2epsilon>=a lambda, and triangle\ninequalities gives\n\n    ||H_D xi_r-x|| <= A_lambda sqrt(r)/sqrt(I0),\n    ||xi_r|| <=2/(a lambda n_lambda)\n       +beta_lambda sqrt(I0)/n_lambda\n       +A_lambda/[sqrt(I0) sqrt(r)].                    (L14)\n\nFor example the two terms in the residual have norms at most\nA_lambda[ sqrt(r)+sqrt(3/2)r ]/(2sqrt(I0)), which is bounded\nas stated for r<=1/2. The epsilon^-4 estimate controls f_r; the\nsubtracted constant uses |m_r|<=A_lambda r/(4sqrt(I0)).\n\nIn the inverse norm, each band-supported piece costs at most\n1/(a lambda n_lambda). The constant term of the triplet inverse costs\nbeta_lambda sqrt(I0)/n_lambda. The cutoff singular singlet term costs\n3A_lambda/(4sqrt(I0)sqrt(r)), and its subtracted mean costs at most\nA_lambda r/(4sqrt(I0)); the latter two fit the final term because\n3+r^(3/2)<=4 for r<=1/2. Its zero mean follows from\nintegral G_l/(2epsilon)=A_lambda sqrt(I0).\n\n",
+      "after": "Write vectors in the invariant\nsinglet/longitudinal space as (F_s,G_l), meaning F_s c+G_l n·T. On P, integral F_s=0,\nand the compressed operator acts as\n\n    H_*(F_s,G_l)=(P_s[2epsilon G_l], 2epsilon F_s),\n    P_s f=f-integral f.                                 (L13)\n\nWrite chi_lambda=(F_s,G_l). For x=chi_lambda-A_lambda zeta, the formal\ninverse singlet component is\n\n    f=G_l/(2epsilon)-A_lambda/(4sqrt(I0)epsilon^2).\n\nIt has integral zero but is generally not square-integrable. This is\nprecisely a place where a naive inverse/gap argument fails. Its triplet\npartner g=F_s/(2epsilon) is square-integrable. For 0<r<=min(1/2,a lambda/2),\nuse the allowed singlet\n\n    f_r=1_(epsilon>=r) f-m_r,\n    m_r=integral 1_(epsilon>=r) f\n       =A_lambda/(4sqrt(I0)) integral_(epsilon<r)epsilon^-2.\n\nSet xi_r=(f_r,g). Direct application of L13 shows that the residual\nH_* xi_r-x has only a triplet component,\n\n    A_lambda/(2sqrt(I0)epsilon) 1_(epsilon<r)-2epsilon m_r.\n\nUsing Q4, the free-band lower bound 2epsilon>=a lambda, and triangle\ninequalities gives\n\n    ||H_* xi_r-x|| <= A_lambda sqrt(r)/sqrt(I0),\n    ||xi_r|| <=2/(a lambda n_lambda)\n       +beta_lambda sqrt(I0)/n_lambda\n       +A_lambda/[sqrt(I0) sqrt(r)].                    (L14)\n\nFor example the two terms in the residual have norms at most\nA_lambda[ sqrt(r)+sqrt(3/2)r ]/(2sqrt(I0)), which is bounded\nas stated for r<=1/2. The epsilon^-4 estimate controls f_r; the\nsubtracted constant uses |m_r|<=A_lambda r/(4sqrt(I0)).\n\nIn the inverse norm, each band-supported piece costs at most\n1/(a lambda n_lambda). The constant term of the triplet inverse costs\nbeta_lambda sqrt(I0)/n_lambda. The cutoff singular singlet term costs\n3A_lambda/(4sqrt(I0)sqrt(r)), and its subtracted mean costs at most\nA_lambda r/(4sqrt(I0)); the latter two fit the final term because\n3+r^(3/2)<=4 for r<=1/2. Its zero mean follows from\nintegral G_l/(2epsilon)=A_lambda sqrt(I0).\n\n"
+    },
+    {
+      "id": 30,
+      "reason": "Define the one-body symbol and site-projection notation locally in the reproduced canonical argument.",
+      "source_ids": [
+        "P"
+      ],
+      "before": "For particle i=1,2 let h_i be the supplied one-body walk and X_(i,a) its\nposition operator. Use the additive symmetric local energy densities",
+      "after": "For particle i=1,2 let h_i be the supplied one-body walk with symbol\nsigma_i.sin k_i, X_(i,a) its position operator, and Pi_(i,x) its projection\nonto site x. Use the additive symmetric local energy densities"
+    },
+    {
+      "id": 31,
+      "reason": "Include the two-endpoint energy-square argument and the proper cyclic symmetry responsible for equal component changes.",
+      "source_ids": [
+        "B",
+        "D",
+        "Q"
+      ],
+      "before": "At the diagonal kappa0 the initial state and evolution are cyclically\ninvariant, so the three changes of <L_a> agree. Initially F chi_lambda=0.",
+      "after": "To see Q19, add and subtract the conserved expectation of\nH_D(delta kappa0)^2. The two endpoint errors are at most\n2||H_D(delta kappa0)^2-H_*^2||, bounded by the displayed right side\nusing Q5 and ||H_D||,||H_*||<=2sqrt(3).\n\nAt the diagonal kappa0, the proper cyclic coordinate rotation acts on\ntriplets by u(q)->R u(R^(-1)q), and on singlets by f(q)->f(R^(-1)q).\nIt preserves the measure and chi_lambda, commutes with H_D(delta kappa0),\nand permutes the three L_a. Their expectation changes therefore agree.\nInitially F chi_lambda=0."
+    }
+  ],
+  "extracted_argument_fragments": [
+    {
+      "id": "fragment_1",
+      "source": "L",
+      "start_line": 75,
+      "end_line": 130,
+      "role": "Complete physical kernel and eight-cone integral bounds, L1-L5.",
+      "original_text": "Write s(q)=sin q, epsilon(q)=|s(q)|, let c be the normalized singlet, and\nlet T_j=sigma_(1,j)c. The three T_j are an orthonormal Cartesian triplet\nbasis. In singlet/triplet coordinates the supplied free symbol at K=0 is\n\n    H0(0,q) = [ 0       2s(q)^T ]\n              [ 2s(q)  0_(3x3) ].                         (L1)\n\nThe antisymmetric fiber has an even singlet coefficient and odd triplet\ncoefficients under q -> -q. The vectors below have those parities. At\nalmost every q the free kernel consists of transverse triplets u with\ns·u=0. The two remaining energies are +/-2epsilon. Values at the eight\ncone points can be chosen arbitrarily because they have measure zero.\n\nDefine\n\n    I0 = integral dq/[4epsilon(q)^2],\n    zeta(q) = [s(q)·T]/[2epsilon(q)^2 sqrt(I0)].            (L2)\n\nNear each cone the squared norm has an integrable 1/|q|^2 singularity in\nthree dimensions. Therefore I0 is finite and zeta is a normalized vector.\nIt is orthogonal to c pointwise and orthogonal to every free transverse\nzero mode. Direct multiplication gives\n\n    H0(0) zeta = c/sqrt(I0),\n    H_D(0) zeta = P H0(0) P zeta = 0.                    (L3)\n\nThus the notation H0^{-1}c is valid only as the reduced inverse on the\northogonal complement of the free kernel, evaluated on this particular\nvector c. H0 has no bounded inverse on the whole fiber.\n\nThis is the entire additional physical zero space. If psi belongs to P\nand H_D(0)psi=0, then H0(0)psi=alpha c for some scalar alpha. Subtract\nalpha sqrt(I0) zeta and obtain a free-kernel vector. Conversely every such\nvector lies in P and is killed by H_D(0). Consequently\n\n    ker H_D(0)|_P = ker H0(0) direct-sum span{zeta}.        (L4)\n\nThe full extension P H0 P also has the auxiliary vector c. It must not be\ncounted as a physical state. Neither the free flat band nor the dispersive\nenergies approaching zero leave a spectral gap around zero. An isolated\nfinite-multiplicity eigenvalue perturbation theorem is inapplicable.\n\nFor later explicit estimates, changing variables u=sin q in the eight\ncharts gives, for 0<r<=1/2,\n\n    integral_(epsilon<r) epsilon^-2 dq <= r,\n    integral_(epsilon<r) dq <= r^3/3,\n    integral_(epsilon>=r) epsilon^-4 dq <= 9/r,\n    1/12 <= I0 <= 9/8.                                  (L5)\n\nIndeed the radial coefficient is at most\n4/[pi^2(1-r^2)^(3/2)] <=32/(3sqrt(3)pi^2)<1. The first\ntwo inequalities follow by radial integration. For the third, integrate\nu^-2 from r to 1/2 with that coefficient and bound the remaining integrand\nby 16; 1/r+16<=9/r. The last bound uses epsilon^2<=3, the first inequality\nat r=1/2, and epsilon^-2<=4 outside that region.",
+      "sha256": "aeca2ab6570ea05f006729031c64383342ba7a72d9ff1979eb9582fd3a457bdd",
+      "start_byte": 4725,
+      "end_byte_exclusive": 7350,
+      "start_column_1_based": 1,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_2",
+      "source": "D",
+      "start_line": 111,
+      "end_line": 136,
+      "role": "Exact K-dependent singlet/triplet block and bounded derivative/remainder, D3-D5.",
+      "original_text": "The exact free\nsinglet/triplet block at K=lambda kappa is\n\n    [ 0                         2(a_lambda*s)^T ]\n    [ 2(a_lambda*s)              i b_lambda cross ],\n\n    (a_lambda)_j=cos(lambda kappa_j/2),\n    (b_lambda)_j=2sin(lambda kappa_j/2)cos q_j.                  (D3)\n\nThe sign follows directly from\n(sigma_(1,l)+sigma_(2,l))T_j=2i epsilon_(ljk) T_k.\nConsequently the bounded self-adjoint derivative B_kappa has zero\nsinglet block and triplet action\n\n    B_kappa u=i d cross u,       d_j=kappa_j cos q_j,\n    ||B_kappa||<=b.                                           (D4)\n\nIt annihilates c and preserves P. The inequalities\n|cos x-1|<=x^2/2 and |sin x-x|<=|x|^3/6 give\n\n    H_D(lambda kappa)/lambda=H_*/lambda+B_kappa+R_lambda,\n    ||R_lambda||<=r_lambda:=lambda b^2/4+lambda^2 b^3/24.      (D5)\n\nIndeed the singlet-triplet remainder before division by lambda has norm\nat most lambda^2 b^2/4; the triplet remainder has norm at most\nlambda^3 b^3/24. Compression cannot enlarge either norm.",
+      "sha256": "453c8708e29115abb373c6d82bea4e17c1a07a2a1be4e90c4dd03987bf771b30",
+      "start_byte": 6136,
+      "end_byte_exclusive": 7129,
+      "start_column_1_based": 55,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_3",
+      "source": "D",
+      "start_line": 146,
+      "end_line": 158,
+      "role": "Full effective block, adjoints, parity and boundedness, D6-D7.",
+      "original_text": "To verify the transverse block, for any transverse u,\n(I-nn^T)(d cross u)=(d·n)n cross u. B_kappa zeta is already\ntransverse, and <zeta,B_kappa zeta>=0 pointwise. This proves both\noff-diagonal entries and their signs. The parities are preserved.\nThe vector g_kappa is in L2 and ||A_kappa||<=b, because D6 is a\ncompression of the bounded D4. No inverse Hamiltonian or derivative\nof zeta is being used. In particular the equations are defined on all Z:\n\n    i partial_tau u=D_kappa u+alpha g_kappa,\n    i partial_tau alpha=<g_kappa,u>.                          (D7)\n\nDropping g_kappa would discard the physical threshold dressing's coupling\nto the free flat band. It is not a consistent reduction of this generator.",
+      "sha256": "24acbe73397cc08c2aea36aba716c95a02b8762b757d664850d0f5615d7e9588",
+      "start_byte": 7445,
+      "end_byte_exclusive": 8159,
+      "start_column_1_based": 1,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_4",
+      "source": "L",
+      "start_line": 134,
+      "end_line": 150,
+      "role": "Exact contact density, Jacobian bounds and reduced-inverse spectral weight, L6-L8.",
+      "original_text": "At K=0 the positive contact spectral density for 0<E<2 is\n\n    rho(0,E)=E^2/(16pi^3) integral_(S^2)\n                 product_j (1-E^2 n_j^2/4)^(-1/2) dOmega. (L6)\n\nThis can be derived without a limiting-absorption theorem: the ++ contact\nweight is 1/2, E=2epsilon, and the eight sin-coordinate charts have the\nJacobian displayed in L6. In particular\n\n    E^2/(4pi^2) <= rho(0,E)\n       <= E^2/[4pi^2(1-E^2/4)^(3/2)].                    (L7)\n\nFor any positive spectral interval I, the squared norm of the free-band\npart of zeta is\n\n    w_I = ||1_I(H0)zeta||^2\n        = I0^-1 integral_I rho(0,E)/E^2 dE.              (L8)",
+      "sha256": "cd1d8883ff00b3bc6539620a5efff44fdc5f538a3808b7bb5b566e06edf04ee8",
+      "start_byte": 7421,
+      "end_byte_exclusive": 8041,
+      "start_column_1_based": 1,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_5",
+      "source": "L",
+      "start_line": 205,
+      "end_line": 242,
+      "role": "Complete singlet/longitudinal inverse, subtracted mean, residual and norm bound, L13-L14.",
+      "original_text": "Put n(q)=s/epsilon and write vectors in the invariant\nsinglet/longitudinal space as (F,G), meaning F c+G n·T. On P, integral F=0,\nand the compressed operator acts as\n\n    H_D(F,G)=(P_s[2epsilon G], 2epsilon F),\n    P_s f=f-integral f.                                 (L13)\n\nWrite chi_lambda=(F,G). For x=chi_lambda-A_lambda zeta, the formal\ninverse singlet component is\n\n    f=G/(2epsilon)-A_lambda/(4sqrt(I0)epsilon^2).\n\nIt has integral zero but is generally not square-integrable. This is\nprecisely a place where a naive inverse/gap argument fails. Its triplet\npartner g=F/(2epsilon) is square-integrable. For 0<r<=min(1/2,a lambda/2),\nuse the allowed singlet\n\n    f_r=1_(epsilon>=r) f-m_r,\n    m_r=integral 1_(epsilon>=r) f\n       =A_lambda/(4sqrt(I0)) integral_(epsilon<r)epsilon^-2.\n\nSet xi_r=(f_r,g). Direct application of L13 shows that the residual\nH_D xi_r-x has only a triplet component,\n\n    A_lambda/(2sqrt(I0)epsilon) 1_(epsilon<r)-2epsilon m_r.\n\nUsing L5, the free-band lower bound 2epsilon>=a lambda, and triangle\ninequalities gives\n\n    ||H_D xi_r-x|| <= A_lambda sqrt(r)/sqrt(I0),\n    ||xi_r|| <=2/(a lambda n_lambda)\n       +beta_lambda sqrt(I0)/n_lambda\n       +A_lambda/[sqrt(I0) sqrt(r)].                    (L14)\n\nFor example the two terms in the residual have norms at most\nA_lambda[ sqrt(r)+sqrt(3/2)r ]/(2sqrt(I0)), which is bounded\nas stated for r<=1/2. The epsilon^-4 estimate controls f_r; the\nsubtracted constant uses |m_r|<=A_lambda r/(4sqrt(I0)).",
+      "sha256": "20a92b9d9b8c12e17f80a59324338869ea47495abfd2e95abc7020f7b70abb47",
+      "start_byte": 10407,
+      "end_byte_exclusive": 11885,
+      "start_column_1_based": 21,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_6",
+      "source": "D",
+      "start_line": 172,
+      "end_line": 201,
+      "role": "Complete high-spectral corrector and finite zero-space estimate, D9-D11.",
+      "original_text": "For sigma>0, let\n\n    Q_sigma=1_(|H_*|>sigma)(H_*),\n    E_sigma=1_(0<|H_*|<=sigma)(H_*),\n    v(tau)=exp(-i tau A)z,       A=Pi B Pi,\n    y_sigma(tau)=-H_*^(-1)Q_sigma B v(tau).                   (D9)\n\nThe inverse in D9 is the bounded spectral-cutoff inverse, of norm at\nmost 1/sigma. It is not an inverse on the gapless complement. Let\nw_lambda=v+lambda y_sigma. Exact differentiation gives\n\n    (H_*/lambda+B)w_lambda=A v+E_sigma Bv+lambda B y_sigma,\n    i partial_tau w_lambda=A v+i lambda partial_tau y_sigma.\n\nThe residual is therefore\n\n    i partial_tau w_lambda-(H_*/lambda+B)w_lambda\n      =-E_sigma Bv+lambda(i partial_tau y_sigma-B y_sigma).   (D10)\n\nWe have ||y_sigma||<=b||z||/sigma and\n||partial_tau y_sigma||<=b^2||z||/sigma. Compare w_lambda with\nthe exact unitary evolution, accounting for the initial and final\ncorrectors, then compare the evolutions with and without R_lambda.\nBounded-operator Duhamel gives the finite estimate\n\n    sup_(|tau|<=T) ||U_lambda(tau)z-v(tau)||\n      <= (2lambda b+2T lambda b^2)||z||/sigma\n         +T M_z(sigma,T)+T r_lambda ||z||,\n\n    M_z(sigma,T)=sup_(|tau|<=T)||E_sigma Bv(tau)||.            (D11)",
+      "sha256": "1de3c0d14b349768103fdd57dac50931a383ff3258451a1d6f829b8fead1e98a",
+      "start_byte": 8699,
+      "end_byte_exclusive": 9848,
+      "start_column_1_based": 25,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_7",
+      "source": "B",
+      "start_line": 92,
+      "end_line": 96,
+      "role": "Exact complementary-to-transverse mapping, B5.",
+      "original_text": "A vector in ran Q has only singlet and longitudinal-triplet components.\nThe derivative B kills its singlet component and maps its longitudinal\ncomponent to a transverse one. Therefore\n\n    B_kappa Q=F B_kappa Q,  Q B_kappa Q=0.                 (B5)",
+      "sha256": "943886cf36b8c464f3ff5024642388a5d45d2d36f1153ab8504d929dc611048a",
+      "start_byte": 4073,
+      "end_byte_exclusive": 4321,
+      "start_column_1_based": 1,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_8",
+      "source": "B",
+      "start_line": 105,
+      "end_line": 125,
+      "role": "Complete complementary cutoff corrector and finite error, B7-B9.",
+      "original_text": "First take x supported spectrally on |H_*|>sigma, sigma>0. Put\n\n    v(tau)=exp(-i tau H_*/delta)x,\n    y(tau)=B_kappa H_*^-1 v(tau),\n    w(tau)=v(tau)+delta y(tau).                            (B7)\n\nThe inverse is restricted to that spectral support, so its norm is at\nmost 1/sigma. By B5, y is in ran F and H_*y=0. Differentiation yields\n`i delta partial_tau y=B_kappa v`. Hence\n\n    [i partial_tau-(H_*/delta+B_kappa)]w=-delta B_kappa y. (B8)\n\nInitial and final correctors have norm at most delta b||x||/sigma;\nthe integrated residual costs T delta b^2||x||/sigma. Duhamel for R_delta\nadds T r_delta||x||. For general fixed x in ran Q, cutting away its\nlow nonzero spectral part E_sigma x gives the bound\n\n    sup_(|tau|<=T)||U_delta(tau)x-exp(-i tau H_*/delta)x||\n      <=2||E_sigma x||\n        +delta(2b+T b^2)||x||/sigma+T r_delta||x||,\n    E_sigma=1_(0<|H_*|<=sigma)(H_*).                      (B9)",
+      "sha256": "91e6837f386e223296e008d6630cc1384314971896d53746e12699e07b250b8b",
+      "start_byte": 4653,
+      "end_byte_exclusive": 5556,
+      "start_column_1_based": 1,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_9",
+      "source": "P",
+      "start_line": 395,
+      "end_line": 472,
+      "role": "Complete supplied canonical energy-placement commutator and bounded current, J1-J6.",
+      "original_text": "For particle i=1,2 let h_i be the repo's one-body walk and X_(i,a) its\nposition operator. Use the additive symmetric local energy densities\n\n    e_x^0=(1/2) sum_(i=1,2) {Pi_(i,x),h_i},\n    e_x=P e_x^0 P,\n    H_D=sum_x e_x=P H0 P, H0=h_1+h_2.\n\nHere P removes coincident sites in the antisymmetric two-record space.\nOn finite-support states the energy first moment is\n\n    D_a=P D0,a P,\n    D0,a=(1/2)({X_(1,a),h_1}+{X_(2,a),h_2}).       (J1)\n\nThe free commutator is bounded:\n\n    i[H0,D0,a]=g_a,\n    g_a=sin(k_(1,a))cos(k_(1,a))\n           +sin(k_(2,a))cos(k_(2,a))\n        =sin K_a cos(2q_a).                        (J2)\n\nThis follows from (1/2){partial_a h_i,h_i}=sin k_(i,a)cos k_(i,a) I.\nThe cross-particle commutators vanish. We compute i[H_D,D_a] first on\nthe common finite-support core and then obtain its bounded extension.\n\nWork in a local total-momentum chart K=k_1+k_2, q=(k_1-k_2)/2, with\nsmooth sections compactly supported in K. Torus q is periodic. Let c be\nthe constant normalized singlet, C=|c><c|, P=I-C in each fiber, and\n\n    h=H0 c, h'_a=partial_(K_a) h,\n    Hdiff=h_1-h_2, H0'=partial_(K_a)H0.\n\nP is independent of K. Since X_(1,a)=i(partial_Ka+partial_qa/2) and\nX_(2,a)=i(partial_Ka-partial_qa/2), direct symmetrization gives\n\n    D0,a=i H0 partial_Ka+(i/2) Hdiff partial_qa+i H0'. (J3)\n\nThe equality partial_qa Hdiff=2H0' is essential to this expression.\nPut Dq=(i/2)Hdiff partial_qa+iH0'. Integration by parts in q gives\nDq^*=(i/2)Hdiff partial_qa, so Dq^* c=0. Also Dq c=i h'_a.\nConsequently the contact blocks are\n\n    C D0,a P psi = i c <h,partial_Ka psi>,\n    P D0,a C (c f) = i partial_Ka(h f).             (J4)\n\nHere c is constant, <c,H0c>=0 and <c,h'_a>=0. These relations retain\nthe derivatives in K; discarding them would give the wrong current.\n\nExpand the compressed commutator:\n\n    i[PH0P,PD0,aP]\n       =P g_a P-i P H0 C D0,a P+i P D0,a C H0 P.\n\nInsert (J4). The terms h<h,partial_Ka psi> cancel. The remaining bounded\nfinite-rank correction is\n\n    J_a=i[H_D,D_a]=P g_a P+F_a,\n    F_a=-|h'_a><h|-|h><h'_a|.                     (J5)\n\nBoth h and h'_a lie in P. Thus (J5) is an operator identity for the bounded\nextension of this canonical current, and not a postulated current choice.\nIt uses the specified compressed local densities in (J1).\nThe finite-support core calculation extends to the smooth compact-chart\nsections used above by H1 approximation: D0,a maps H1 to L2 continuously,\nand H0 and P preserve H1. These sections need not themselves have finite\nspatial support. No self-adjointness claim for the unbounded dipole is\nneeded to identify its bounded commutator extension.\n\nPointwise singlet algebra gives\n\n    h(q)=2 sum_j cos(K_j/2) sin q_j sigma_(1,j)c,\n    h'_a(q)=-sin(K_a/2) sin q_a sigma_(1,a)c,\n    ||h||^2=2 sum_j cos(K_j/2)^2<=6,\n    ||h'_a||=|sin(K_a/2)|/sqrt(2),\n    ||F_a||<=2sqrt(3)|sin(K_a/2)|.                 (J6)\n\nIn particular both g_a and F_a vanish at central total momentum K=0.\nThis is consistent with special zero-current sectors; no nonzero drift\nfor every state is asserted.",
+      "sha256": "db8ef32e23f3e3c62547e4c2f136aac4d640ce57606e89055d8b8e7235f7c574",
+      "start_byte": 25391,
+      "end_byte_exclusive": 28441,
+      "start_column_1_based": 1,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_10",
+      "source": "B",
+      "start_line": 154,
+      "end_line": 160,
+      "role": "Full physical-space current trace proof, B12.",
+      "original_text": "Indeed H0(0)^2=4epsilon^2(I-F), H0(0)c=2v, and Pc=0 give\n\n    H_*^2=4P epsilon^2 P-4epsilon^2 F-4|v><v|.\n\nSumming B11 gives `3P-2P epsilon^2 P+2|v><v|`, proving B12.\nMultiplication by epsilon^2 commutes with F; it need not commute with P.\nIts placement in the displayed formulas matters.",
+      "sha256": "8eba113426a8ffa2bba8742222bf6adff3ae28bbbbe411eb11da353a1ad06a48",
+      "start_byte": 6675,
+      "end_byte_exclusive": 6962,
+      "start_column_1_based": 1,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_11",
+      "source": "D",
+      "start_line": 234,
+      "end_line": 245,
+      "role": "Complete current Taylor remainder and its constants, D14.",
+      "original_text": "One explicit operator-norm remainder is\n\n    ||J_a(lambda kappa)/lambda-kappa_a L_a||\n      <=lambda^2[(1/6+sqrt(3)/24)|kappa_a|^3\n                                    +|kappa_a|b^2/8].       (D14)\n\nFor D14, ||h||<=sqrt(6), ||v_a||=1/sqrt(2), and\n||h-2v||<=lambda^2 b^2/(4sqrt(2)). Also\n||h'_a/lambda+kappa_a v_a/2||\n<=lambda^2|kappa_a|^3/(48sqrt(2)). Substitute into D12 and\nuse the cubic sine remainder for its multiplication term. If kappa_a=0,\nJ_a(lambda kappa) is exactly zero; no division by kappa_a is needed.",
+      "sha256": "858c7dd3d25e596f3d359c5e66c6af8c2c018b3cc5c14d2ee444c3504b2ecbb0",
+      "start_byte": 11272,
+      "end_byte_exclusive": 11787,
+      "start_column_1_based": 1,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_12",
+      "source": "D",
+      "start_line": 304,
+      "end_line": 333,
+      "role": "Coupling integral positivity, bounded Taylor remainder and small-time response, D21-D23.",
+      "original_text": "The coupling in D6 is nonzero. More precisely,\n\n    gamma_kappa^2:=||epsilon g_kappa||^2\n       =(1/(4I0)) integral[|d|^2-(d·n)^2],\n    b^2/(12I0)<=gamma_kappa^2<=b^2/(8I0),\n    gamma_kappa^2>=2b^2/27.                                (D21)\n\nTo verify the bounds, separate-coordinate reflections make all mixed\nintegrals in (d·n)^2 vanish. Cubic symmetry makes the remaining common\ncoefficient L=integral cos^2(q_1)n_1^2. Write\nL=1/3-A0, where A0=integral s_1^4/epsilon^2. Cauchy-Schwarz gives\n\n    A0 integral epsilon^2 >= (integral s_1^2)^2,\n    A0>= (1/2)^2/(3/2)=1/6.\n\nHence 0<=L<=1/6, while integral |d|^2=b^2/2. This proves the\nfirst two bounds in D21; I0<=9/8 proves the last. In particular g_kappa\nis nonzero for every nonzero kappa, not just the chosen diagonal.\n\nThe bounded exponential Taylor remainder gives\n\n    ||u(tau)+i tau g_kappa||<=b^2 tau^2/2,\n    ||epsilon u(tau)||>=|tau|gamma_kappa\n                                      -sqrt(3)b^2 tau^2/2. (D22)\n\nFor 0<|tau|<=sqrt(2)/(9b), the last expression is at least\n|tau|gamma_kappa/2. Combining D20-D22 yields\n\n    1-<z(tau),calJ_a z(tau)>\n          >=tau^2 gamma_kappa^2/6 >=tau^2 b^2/81.           (D23)",
+      "sha256": "f72d514f4f27de843aa79563e3c1712dfcef2a91f494c9dc2ec5fb675a46d25f",
+      "start_byte": 14261,
+      "end_byte_exclusive": 15431,
+      "start_column_1_based": 27,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    },
+    {
+      "id": "fragment_13",
+      "source": "B",
+      "start_line": 236,
+      "end_line": 257,
+      "role": "Full finite-delta current and preparation continuity proof, B20 and ensuing two-endpoint bounds.",
+      "original_text": "Here are explicit margins for a full-dimensional K packet. On\n|kappa-kappa0|<=1/10 and 0<delta<=1, B11 gives\n\n    ||J_a(delta kappa)/delta||<=4,\n    ||J_a(delta kappa)/delta-J_a(delta kappa0)/delta||\n      <=4|kappa-kappa0|,\n    ||U_(delta,kappa)(tau0)-U_(delta,kappa0)(tau0)||\n      <=tau0|kappa-kappa0|.                              (B20)\n\nFor the second bound, the multiplication term costs |kappa-kappa0|.\nThe two rank-one terms cost at most\n`(sqrt(3)+delta/2)|kappa-kappa0|`, since\n`||h||<=sqrt(6)`, `||h'_a(K)-h'_a(K0)||<=delta|kappa-kappa0|/(2sqrt(2))`,\n`||h(K)-h(K0)||<=delta|kappa-kappa0|/sqrt(2)`, and\n`||h'_a(K0)||<=delta/(2sqrt(2))`.\nTheir sum is less than four. The last bound follows from\n`||H_D(K)-H_D(K0)||<=|K-K0|` and bounded Duhamel.\n\nHolding the initial chi_lambda fixed, B20 bounds the change of the scaled\ndrift between kappa and kappa0 by `9|kappa-kappa0|`.\nReplacing it by the actual initial chi_(lambda,delta kappa) costs at most\n`4*4*32delta/lambda=512delta/lambda`, using B19 and |kappa|<2.",
+      "sha256": "0583bc453e9c6d2d114cd28c44981573a9a5f69fb72ec4b387adb10e49883925",
+      "start_byte": 10089,
+      "end_byte_exclusive": 11106,
+      "start_column_1_based": 1,
+      "range_convention": "1-based inclusive lines; 0-based half-open UTF-8 bytes; original_text exact"
+    }
+  ],
+  "unchanged_quantitative_ranges": [
+    {
+      "source": "Q",
+      "source_lines": [
+        1,
+        1
+      ],
+      "publication_lines": [
+        1,
+        1
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        2,
+        3
+      ],
+      "publication_lines": [
+        7,
+        8
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        6,
+        9
+      ],
+      "publication_lines": [
+        16,
+        19
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        11,
+        11
+      ],
+      "publication_lines": [
+        21,
+        21
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        16,
+        32
+      ],
+      "publication_lines": [
+        38,
+        54
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        34,
+        34
+      ],
+      "publication_lines": [
+        56,
+        56
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        37,
+        37
+      ],
+      "publication_lines": [
+        58,
+        58
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        44,
+        44
+      ],
+      "publication_lines": [
+        63,
+        63
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        52,
+        52
+      ],
+      "publication_lines": [
+        65,
+        65
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        57,
+        59
+      ],
+      "publication_lines": [
+        93,
+        95
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        63,
+        64
+      ],
+      "publication_lines": [
+        97,
+        98
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        68,
+        68
+      ],
+      "publication_lines": [
+        100,
+        100
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        71,
+        74
+      ],
+      "publication_lines": [
+        142,
+        145
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        77,
+        77
+      ],
+      "publication_lines": [
+        150,
+        150
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        81,
+        81
+      ],
+      "publication_lines": [
+        153,
+        153
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        84,
+        92
+      ],
+      "publication_lines": [
+        168,
+        176
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        93,
+        99
+      ],
+      "publication_lines": [
+        204,
+        210
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        101,
+        155
+      ],
+      "publication_lines": [
+        228,
+        282
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        157,
+        162
+      ],
+      "publication_lines": [
+        284,
+        289
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        165,
+        166
+      ],
+      "publication_lines": [
+        291,
+        292
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        167,
+        176
+      ],
+      "publication_lines": [
+        312,
+        321
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        177,
+        177
+      ],
+      "publication_lines": [
+        332,
+        332
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        180,
+        185
+      ],
+      "publication_lines": [
+        335,
+        340
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        187,
+        199
+      ],
+      "publication_lines": [
+        342,
+        354
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        201,
+        205
+      ],
+      "publication_lines": [
+        356,
+        360
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        206,
+        216
+      ],
+      "publication_lines": [
+        408,
+        418
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        217,
+        243
+      ],
+      "publication_lines": [
+        483,
+        509
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        244,
+        244
+      ],
+      "publication_lines": [
+        593,
+        593
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        246,
+        249
+      ],
+      "publication_lines": [
+        595,
+        598
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        250,
+        255
+      ],
+      "publication_lines": [
+        607,
+        612
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        259,
+        280
+      ],
+      "publication_lines": [
+        637,
+        658
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        282,
+        326
+      ],
+      "publication_lines": [
+        688,
+        732
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        334,
+        334
+      ],
+      "publication_lines": [
+        739,
+        739
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        342,
+        383
+      ],
+      "publication_lines": [
+        780,
+        821
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        385,
+        385
+      ],
+      "publication_lines": [
+        823,
+        823
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        396,
+        396
+      ],
+      "publication_lines": [
+        826,
+        826
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        404,
+        404
+      ],
+      "publication_lines": [
+        835,
+        835
+      ]
+    },
+    {
+      "source": "Q",
+      "source_lines": [
+        413,
+        413
+      ],
+      "publication_lines": [
+        842,
+        842
+      ]
+    }
+  ],
+  "retained_quantitative_equations": [
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10",
+    "Q11",
+    "Q12",
+    "Q13",
+    "Q14",
+    "Q15",
+    "Q16",
+    "Q17",
+    "Q18",
+    "Q19",
+    "Q20",
+    "Q21",
+    "Q22",
+    "Q23",
+    "Q24",
+    "Q25",
+    "Q26",
+    "Q27",
+    "Q28",
+    "Q29",
+    "Q30",
+    "Q31",
+    "Q32",
+    "Q33"
+  ],
+  "preserved_research_not_promoted": [
+    {
+      "source": "L",
+      "lines": [
+        152,
+        155
+      ],
+      "role": "General maximal band-overlap statement; this publication uses its explicit maximizing state.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "L",
+      "lines": [
+        173,
+        192
+      ],
+      "role": "L10 asymptotics and L11 state-comparison result; finite inequalities replace the asymptotic input for this theorem.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "L",
+      "lines": [
+        195,
+        203
+      ],
+      "role": "L12 averaging statement; its L13-L14 inverse is selected separately for a different spectral estimate.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "L",
+      "lines": [
+        244,
+        270
+      ],
+      "role": "Averaging proof and high-momentum leakage L15-L16; no current conclusion is drawn from leakage.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "L",
+      "lines": [
+        305,
+        360
+      ],
+      "role": "Nonzero-K leakage transfer L20-L22 and its separate global family; the actual-projector proof at 282-304 is selected separately.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "L",
+      "lines": [
+        361,
+        403
+      ],
+      "role": "Canonical pure-dressing cancellation and longitudinal conservation L23-L24, restricted to their stated subspace.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "D",
+      "lines": [
+        162,
+        171
+      ],
+      "role": "D8 generic fixed-vector limit statement; publication retains the finite D9-D11 bound and the later special-orbit quantitative estimate.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "D",
+      "lines": [
+        203,
+        214
+      ],
+      "role": "Compactness proof of the generic fixed-vector limit and its lack of unit-ball or growing-time uniformity.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "D",
+      "lines": [
+        247,
+        301
+      ],
+      "role": "Full effective-current block D15-D20 and its zero-space response; publication uses the full physical trace B12. The cyclic rotation subargument at 293-301 is retained separately.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "D",
+      "lines": [
+        335,
+        400
+      ],
+      "role": "Pure-dressing actual-current limit D24 and its distinct normalizable dressing-prepared family D25.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "D",
+      "lines": [
+        401,
+        484
+      ],
+      "role": "Explicit state-comparison nonuniformity D26-D31; not promoted to a current or kinetic no-go.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "B",
+      "lines": [
+        99,
+        104
+      ],
+      "role": "B6 generic complementary strong-limit statement; its finite proof B7-B9 is selected.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "B",
+      "lines": [
+        127,
+        138
+      ],
+      "role": "B10 generic fixed-vector two-scale limit; publication keeps the finite transverse bound with its A_lambda factor.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "B",
+      "lines": [
+        201,
+        215
+      ],
+      "role": "B16 fixed-band current limit and earlier existential delta onset; finite estimates now give explicit onset.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    },
+    {
+      "source": "B",
+      "lines": [
+        259,
+        306
+      ],
+      "role": "Earlier existential sign transfer and global packet B21-B24, quantitatively completed by Q25-Q33.",
+      "status": "Preserved unchanged in the frozen research source. Only expressly selected subarguments are used here; no enlarged corollary is asserted."
+    }
+  ],
+  "selection_summary": {
+    "physical_kernel_and_cones": "L1-L5, with Q3/Q4 normalization retained",
+    "band_density_and_inverse": "L6-L8; Q12-Q15; complete L13-L14 construction and norm accounting",
+    "effective_dynamics": "D3-D7; Q5-Q11; complete D9-D11 finite comparison",
+    "complement_dynamics": "B5 and B7-B9 in full; Q16-Q17 combines finite errors",
+    "actual_observable": "Parent J1-J6 reproduced; D14 remainder; B12 trace; Q18-Q22 actual-current comparison",
+    "response_and_onset": "D21-D23 weighted response; Q23-Q27 explicit polynomial margins",
+    "preparation_and_global_packet": "L18-L19/B18-B20 proof; Q28-Q33 single global normalization"
+  },
+  "prose_change_reconstruction": "Starting with the exact Q source, apply each before/after replacement in listed order. This was checked to reconstruct every byte of the publication candidate. No unrecorded mutation is permitted.",
+  "dependency_boundary": "Only the unchanged supplied-walk/canonical-placement parent is declared upstream. All new kernel, cone, band-inverse, effective-orbit, complement, explicit-current and global-packet proofs are present in the candidate. No effective-memory derivation, scattering theorem or Cook hypothesis is imported.",
+  "publication_execution": "Runner path, final delivery footer and any publication executions remain root work; not asserted here.",
+  "bookkeeping_attempts": [
+    {
+      "attempt": 1,
+      "outcome": "Stopped before any write: exact fragment-range assertion detected that the initial end_line values included the immediately following blank line, while original_text had been stripped. Every exact fragment hash matched.",
+      "repair": "Set inclusive end_line to the actual final text line and add exact UTF-8 byte offsets plus start-column metadata; source content and mathematical argument unchanged."
+    },
+    {
+      "attempt": 2,
+      "outcome": "Stopped before any write: a deliberately exact all-Q-block comparator found the known Q4 expansion, and a broad reference-token scan also matched the dipole symbol D0 as if it were an equation label.",
+      "repair": "Verify 32 unchanged blocks byte-for-byte; verify original Q4 bounds after whitespace/measure notation normalization plus the exact L5 volume bound. Exclude the defined operator D0 from the equation-label scan. No candidate or source repair was needed."
+    }
+  ],
+  "expanded_prose_source_ranges": [
+    {
+      "operations": [
+        10
+      ],
+      "source": "L",
+      "lines": [
+        146,
+        179
+      ],
+      "scope": "Reduced-inverse beta formula, phase positivity, normalized band construction and absence of transverse component."
+    },
+    {
+      "operations": [
+        14
+      ],
+      "source": "L",
+      "lines": [
+        205,
+        243
+      ],
+      "review": "EXCLUDED_WALK_LONG_TIME_REVIEW.md",
+      "review_lines": [
+        135,
+        175
+      ],
+      "scope": "Complete band inverse and explicit norm-cost accounting; no new bound."
+    },
+    {
+      "operations": [
+        21
+      ],
+      "source": "L",
+      "lines": [
+        282,
+        304
+      ],
+      "additional_source": "B",
+      "additional_lines": [
+        219,
+        234
+      ],
+      "review": "EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_REVIEW.md",
+      "review_lines": [
+        162,
+        188
+      ],
+      "scope": "One-body positive projectors, pair projector, normalized physical projection, contact support-volume bound, actual positive-band margin and antisymmetry."
+    },
+    {
+      "operations": [
+        20
+      ],
+      "source": "D",
+      "lines": [
+        304,
+        333
+      ],
+      "additional_source": "Q",
+      "additional_lines": [
+        282,
+        289
+      ],
+      "scope": "Weighted-transverse inequality equivalent to D23 before its effective-current identification; the same gamma and Taylor estimate."
+    },
+    {
+      "operations": [
+        31
+      ],
+      "source": "B",
+      "lines": [
+        162,
+        168
+      ],
+      "additional_source": "D",
+      "additional_lines": [
+        293,
+        301
+      ],
+      "scope": "Conserved-square endpoint estimate and proper cyclic rotation, applied to the B197-B200 projected-band symmetry."
+    },
+    {
+      "operations": [
+        24
+      ],
+      "source": "B",
+      "lines": [
+        47,
+        51
+      ],
+      "scope": "Only supplied walk/current premises needed; neither scattering completeness nor Cook regularity is used."
+    }
+  ],
+  "publication_argument_sections": [
+    {
+      "heading": "## 1. Contract and proof organization",
+      "publication_lines": [
+        64,
+        93
+      ]
+    },
+    {
+      "heading": "## 2. Fixed physical space and estimates available without a spectral gap",
+      "publication_lines": [
+        94,
+        237
+      ]
+    },
+    {
+      "heading": "## 3. Quantifying the low nonzero spectral mass of the dressing orbit",
+      "publication_lines": [
+        238,
+        291
+      ]
+    },
+    {
+      "heading": "## 4. The projected band and its complementary spectral estimate",
+      "publication_lines": [
+        292,
+        507
+      ]
+    },
+    {
+      "heading": "## 5. Actual current: a finite error with the dressing amplitude retained",
+      "publication_lines": [
+        508,
+        698
+      ]
+    },
+    {
+      "heading": "## 6. One polynomial choice valid on the whole stated band range",
+      "publication_lines": [
+        699,
+        724
+      ]
+    },
+    {
+      "heading": "## 7. Actual K-dependent free preparation and one global normalization",
+      "publication_lines": [
+        725,
+        821
+      ]
+    },
+    {
+      "heading": "## 8. Evidence scope and preserved research",
+      "publication_lines": [
+        822,
+        859
+      ]
+    }
+  ],
+  "current_checkpoint": {
+    "completed": "Full initial 846-line candidate cold-read; edited regions refreshed. Editorial defects were confined to dangling notation, local definitions, unit-norm antecedent and omitted explanatory bridge steps. Every edit is replayable from Q with exact before/after text.",
+    "remaining": "Root final runner path/footer and repository packaging; separate source-bound review of the new composition. No publication execution or formal retained-status audit claimed.",
+    "failed_routes": "None introduced by composition. Earlier inverse/gap, leakage-to-current and uniformity limits remain in the exact preserved research ranges. The stopped range-bookkeeping validation is recorded separately.",
+    "provenance": "All four component reviews read in full; selected complete proof arguments refreshed. Existing complete author-source reading reused; this is not an independent science review."
+  },
+  "quantitative_equation_preservation": {
+    "labels": "Q1 through Q33 each retained exactly once.",
+    "byte_identical_blocks": [
+      "Q1",
+      "Q2",
+      "Q3",
+      "Q5",
+      "Q6",
+      "Q7",
+      "Q8",
+      "Q9",
+      "Q10",
+      "Q11",
+      "Q12",
+      "Q13",
+      "Q14",
+      "Q15",
+      "Q16",
+      "Q17",
+      "Q18",
+      "Q19",
+      "Q20",
+      "Q21",
+      "Q22",
+      "Q23",
+      "Q24",
+      "Q25",
+      "Q26",
+      "Q27",
+      "Q28",
+      "Q29",
+      "Q30",
+      "Q31",
+      "Q32",
+      "Q33"
+    ],
+    "editorial_block_difference": {
+      "label": "Q4",
+      "before": "    integral_(epsilon<r) epsilon^-2 <=r,\n    integral_(epsilon>=r) epsilon^-4 <=9/r,\n    integral epsilon^2=3/2,  1/12<=I0<=9/8.               (Q4)",
+      "after": "    integral_(epsilon<r) epsilon^-2 dq <= r,\n    integral_(epsilon<r) dq <= r^3/3,\n    integral_(epsilon>=r) epsilon^-4 dq <= 9/r,\n    integral epsilon^2=3/2,  1/12 <= I0 <= 9/8.          (Q4)",
+      "reason": "Adds the already proved L5 cone-volume inequality required for preparation, spells out normalized dq and changes spacing. All original Q4 bounds are unchanged.",
+      "source": "L",
+      "lines": [
+        119,
+        130
+      ],
+      "operation": 4
+    }
+  },
+  "composition_validation": {
+    "outcome": "Completed deterministic identity and reconstruction verification; no mathematical proof supplied by this bookkeeping.",
+    "frozen_input_identities_verified": 9,
+    "ordered_unique_replacements_verified": 31,
+    "exact_source_fragment_byte_ranges_verified": 13,
+    "quantitative_equations": "All 33 retained; 32 exact byte-identical blocks and the explicitly recorded Q4 expansion from L5.",
+    "equation_reference_scan": "Every selected B/D/L/J/Q equation reference resolves locally; D0 is the explicitly defined dipole operator, not a numbered equation.",
+    "reading": "The full initial 846-line candidate was cold-read. Every subsequently changed region was reread; the final candidate has 859 lines. Full four-review reading and source-bound earlier component readings are described in sources/reviews.",
+    "limits": "Author composition, not independent science review. No runner, mutation, cache, Lean, repository or audit operation performed."
+  }
+}

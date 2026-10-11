@@ -1,0 +1,316 @@
+{
+  "direct_records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_DRAFT.md",
+      "sha256": "58a96a049701667e673bde1acf98e5346356483101654b3464fe11e94fd02c21",
+      "bytes": 11171,
+      "lines": 245
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222,
+      "lines": 500
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md",
+      "sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324",
+      "bytes": 17059,
+      "lines": 339
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "bytes": 11538,
+      "lines": 236
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0",
+      "bytes": 17773,
+      "lines": 329
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_REVIEW.md",
+      "sha256": "a2bb951a15a90ca8dba4cba928f6307fdde078f30a41f9f07e818561f7bf0484",
+      "bytes": 17802,
+      "lines": 319
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/independent_review_receipt.json",
+      "sha256": "74990de59ab11a8011f4164ce689b0f80153d261c073c486f47b78a1beaf1a28",
+      "bytes": 24896,
+      "lines": 474
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_REVIEW.md",
+      "sha256": "b9525df21cac9721603776dc703314b73e2572b874ac5ef733b35933d6260e2f",
+      "bytes": 21583,
+      "lines": 378
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_REVIEW.md",
+      "sha256": "2867fc1179a7b82b095e7719bc2f9015fdd87b5190626f61b0adfbd4fc318bf6",
+      "bytes": 14967,
+      "lines": 252
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/receipt.json",
+      "sha256": "49bd1d8872a07aea1e5266cb2f07f3ea2aff4d9a9602f7a141e0051037d92b80",
+      "bytes": 7362,
+      "lines": 162
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/receipt.json",
+      "sha256": "333d620163722af83291fb19ade6ac9ea28101b2877daff028cae5beb1d5ecc8",
+      "bytes": 6968,
+      "lines": 133
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent_review/independent_controls.py",
+      "sha256": "5ae7e904b8fd4624e09abb153f3d64c77bad157e06c62bead1cd3e883fe8f593",
+      "bytes": 8790,
+      "lines": 172
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent_review/independent_controls.log",
+      "sha256": "f03aa1cf99f35911aa4fba3ae38de2861ec09aaff16f34a6d9e482c9d5241f51",
+      "bytes": 2732,
+      "lines": 46
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "lines": 230
+    }
+  ],
+  "author_receipt_records_checked": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_DRAFT.md",
+      "sha256": "58a96a049701667e673bde1acf98e5346356483101654b3464fe11e94fd02c21",
+      "bytes": 11171,
+      "lines": 245
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/attempt01_baseline.log",
+      "sha256": "5334f0bcf40d25c818e426c5a19609227335608d89fd162927a00f9ec950361a",
+      "bytes": 1158,
+      "lines": 21
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/attempt01_execution.json",
+      "sha256": "8e7d77095645b5d6869323d9cb9086c1c330b5781c05204cea0ea95e3a200f2d",
+      "bytes": 290,
+      "lines": 10
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/attempt01_outgoing_controls.py",
+      "sha256": "a7754ebe7e7b8d47abbfacfd4d8058ae7058c0662e96e6a7986d74b1eda5c7ad",
+      "bytes": 4147,
+      "lines": 96
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/baseline.log",
+      "sha256": "c69975405aad8484d5a84b446b324172bbeafb5b5744806103d1c92da33a2bf9",
+      "bytes": 1255,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/development_log.md",
+      "sha256": "e766b88b1e48faccde015abee3594d9deb69935c21a96d7e96a5641b4ce34e86",
+      "bytes": 397,
+      "lines": 1
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/execution.json",
+      "sha256": "f3522d568831dc20deaa9d9c1db85276eaf2b3a95e85f50b0c5df539bdaf3c57",
+      "bytes": 290,
+      "lines": 10
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_abel_sign.log",
+      "sha256": "ffbe48d746322e66009b8d3092b7b5745424f1fda12e4a955eb5b24fca14aa08",
+      "bytes": 714,
+      "lines": 12
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_abel_sign.py",
+      "sha256": "ed2802e3b5441bbce2503acdddbf4609c8e0d8f2a1f2aecc03870e94abb6ccc8",
+      "bytes": 4171,
+      "lines": 96
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_cone_power.log",
+      "sha256": "0d73349908d9f6c2d28d127dc0079dcffda2377b1c4dc63fa719234f0f8d7cc6",
+      "bytes": 1409,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_cone_power.py",
+      "sha256": "47d0f56d13ab7e91f35fa3cddc608aa41fad946fa058001bb77daf3d0fe0de8c",
+      "bytes": 4172,
+      "lines": 96
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_energy_moment_factor.log",
+      "sha256": "12a3b47da3fdaaa0768d0e920cce52df05fb5cafa7cc0c0271c49f5d1acd45e4",
+      "bytes": 1247,
+      "lines": 22
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_energy_moment_factor.py",
+      "sha256": "b5f8be442cd5676454d64ca116404b285163ff2dbc5ca7155a7a2882e9d7d8c4",
+      "bytes": 4172,
+      "lines": 96
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_helicity_measure.log",
+      "sha256": "798e7682c87026853ab5ab0b56cffa5952e728b9eca11091d10883b8dba59f0f",
+      "bytes": 1178,
+      "lines": 20
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_helicity_measure.py",
+      "sha256": "fa2da9ef03821cf8d363a3ab153062c33fbe326d6a17410d029f977de3ccefc3",
+      "bytes": 4172,
+      "lines": 96
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_weighted_lower_factor.log",
+      "sha256": "2e06095d02baa8910860637bead57400290868fbcf140000354be10f32c81169",
+      "bytes": 1423,
+      "lines": 29
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_weighted_lower_factor.py",
+      "sha256": "f0967d6228cedb5449f8d3c28c334743a860d959181f20e56077ca69381a8953",
+      "bytes": 4172,
+      "lines": 96
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutation_manifest.json",
+      "sha256": "2a67e8e894e2dcc7219a2409575ccba358ad18e7872bf2b16bdcae774962ba02",
+      "bytes": 3128,
+      "lines": 70
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/outgoing_controls.py",
+      "sha256": "5959a175ffd66638f25b23315d1923c344d51c790ada16a85166671058049c75",
+      "bytes": 4172,
+      "lines": 96
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222,
+      "lines": 500
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md",
+      "sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324",
+      "bytes": 17059,
+      "lines": 339
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "bytes": 11538,
+      "lines": 236
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_REVIEW.md",
+      "sha256": "a2bb951a15a90ca8dba4cba928f6307fdde078f30a41f9f07e818561f7bf0484",
+      "bytes": 17802,
+      "lines": 319
+    }
+  ],
+  "author_first_failure_only_simplification_edits": [
+    [
+      "      (coupling.conjugate().T*Pplus*Pminus*coupling)[0] == 0)",
+      "      zero((coupling.conjugate().T*Pplus*Pminus*coupling)[0]))"
+    ],
+    [
+      "weight_plus = (coupling.conjugate().T*Pplus*coupling)[0]",
+      "weight_plus = s.simplify((coupling.conjugate().T*Pplus*coupling)[0])"
+    ],
+    [
+      "weight_minus = (coupling.conjugate().T*Pminus*coupling)[0]",
+      "weight_minus = s.simplify((coupling.conjugate().T*Pminus*coupling)[0])"
+    ]
+  ],
+  "author_initial_to_final_diff": "--- attempt01\n+++ final\n@@ -55,9 +55,9 @@\n coupling = s.I*s.Matrix([s.Rational(3, 5), s.Rational(4, 5)])\n Pplus, Pminus = (s.eye(2)+J)/2, (s.eye(2)-J)/2\n check('helicity cross term absent',\n-      (coupling.conjugate().T*Pplus*Pminus*coupling)[0] == 0)\n-weight_plus = (coupling.conjugate().T*Pplus*coupling)[0]\n-weight_minus = (coupling.conjugate().T*Pminus*coupling)[0]\n+      zero((coupling.conjugate().T*Pplus*Pminus*coupling)[0]))\n+weight_plus = s.simplify((coupling.conjugate().T*Pplus*coupling)[0])\n+weight_minus = s.simplify((coupling.conjugate().T*Pminus*coupling)[0])\n claimed_each_helicity_weight = s.Rational(1, 2)\n check('helicity half measure', weight_plus == weight_minus == claimed_each_helicity_weight)\n check('even measure resolvent conjugacy',\n",
+  "author_mutant_checks": [
+    {
+      "name": "abel_sign",
+      "exact_single_replacement_verified": true,
+      "recorded_exit_code": 1,
+      "intended_assertion": "Abel causal sign channel 0",
+      "full_log_inspected": true,
+      "reexecuted_by_reviewer": false,
+      "diff": "--- final\n+++ abel_sign\n@@ -36,7 +36,7 @@\n omega = s.sqrt(s.Rational(3, 2))\n u_abel = []\n for j, energy in enumerate((-1, 1)):\n-    integrated = -s.I*g[j]*(s.Rational(2, 3)/(h-s.I*energy)\n+    integrated = s.I*g[j]*(s.Rational(2, 3)/(h-s.I*energy)\n         +s.Rational(1, 6)/(h-s.I*(energy-omega))\n         +s.Rational(1, 6)/(h-s.I*(energy+omega)))\n     candidate = g[j]*M.subs(z, energy+s.I*h)\n"
+    },
+    {
+      "name": "helicity_measure",
+      "exact_single_replacement_verified": true,
+      "recorded_exit_code": 1,
+      "intended_assertion": "helicity half measure",
+      "full_log_inspected": true,
+      "reexecuted_by_reviewer": false,
+      "diff": "--- final\n+++ helicity_measure\n@@ -58,7 +58,7 @@\n       zero((coupling.conjugate().T*Pplus*Pminus*coupling)[0]))\n weight_plus = s.simplify((coupling.conjugate().T*Pplus*coupling)[0])\n weight_minus = s.simplify((coupling.conjugate().T*Pminus*coupling)[0])\n-claimed_each_helicity_weight = s.Rational(1, 2)\n+claimed_each_helicity_weight = s.Rational(1, 1)\n check('helicity half measure', weight_plus == weight_minus == claimed_each_helicity_weight)\n check('even measure resolvent conjugacy',\n       zero(M.subs(z, -1+s.I*h)+s.conjugate(M.subs(z, 1+s.I*h))))\n"
+    },
+    {
+      "name": "energy_moment_factor",
+      "exact_single_replacement_verified": true,
+      "recorded_exit_code": 1,
+      "intended_assertion": "permutation complement factor",
+      "full_log_inspected": true,
+      "reexecuted_by_reviewer": false,
+      "diff": "--- final\n+++ energy_moment_factor\n@@ -65,7 +65,7 @@\n \n # These algebraic margins are distinct from the analytic symmetry proof R8.\n symmetry_complement = F(1)-F(1, 3)\n-energy_moment_ceiling = F(2, 3)\n+energy_moment_ceiling = F(1, 3)\n check('permutation complement factor', symmetry_complement == energy_moment_ceiling)\n interior_cutoff = F(7, 8)\n m0 = 1-energy_moment_ceiling/interior_cutoff**2\n"
+    },
+    {
+      "name": "cone_power",
+      "exact_single_replacement_verified": true,
+      "recorded_exit_code": 1,
+      "intended_assertion": "cone coefficient exact powers",
+      "full_log_inspected": true,
+      "reexecuted_by_reviewer": false,
+      "diff": "--- final\n+++ cone_power\n@@ -76,7 +76,7 @@\n pi2, I0, b, chi = s.symbols('pi2 I0 b chi', positive=True)\n C_squared = s.Integer(32768)**2*pi2*I0**2/(b*b*chi**3)\n cone_coefficient = s.simplify(C_squared*b*b/(4*I0))\n-claimed_cone_coefficient = 2**37*pi2*I0\n+claimed_cone_coefficient = 2**36*pi2*I0\n check('cone coefficient exact powers',\n       zero(cone_coefficient.subs(chi, s.Rational(1, 8))-claimed_cone_coefficient))\n K0 = 90*2**34\n"
+    },
+    {
+      "name": "weighted_lower_factor",
+      "exact_single_replacement_verified": true,
+      "recorded_exit_code": 1,
+      "intended_assertion": "weighted mass constant",
+      "full_log_inspected": true,
+      "reexecuted_by_reviewer": false,
+      "diff": "--- final\n+++ weighted_lower_factor\n@@ -83,7 +83,7 @@\n check('cone rational relaxation',\n       claimed_cone_coefficient.subs({pi2:10, I0:s.Rational(9, 8)}) == K0)\n rstar = m0/(2*K0)\n-c0 = m0**3/(8*K0*K0)\n+c0 = m0**3/(4*K0*K0)\n check('valid positive cone radius', 0 < rstar < F(1, 2))\n check('interior mass after cone removal', m0-K0*rstar == m0/2)\n check('weighted mass constant', rstar*rstar*m0/2 == c0)\n"
+    }
+  ],
+  "author_execution_replayed": false,
+  "scope": "Byte integrity and inspection of preserved author records, not independent execution or continuum evidence."
+}

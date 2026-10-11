@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Schur_sign",
+    "old": "scalar_resolvent = 1/(z-self_energy)",
+    "new": "scalar_resolvent = 1/(z+self_energy)",
+    "intended_assertion": "Schur_sign_and_denominator",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Schur_sign.py"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.8308464167639613,
+    "timeout_seconds": 120,
+    "source": "mutant_Schur_sign.py",
+    "log": "mutant_Schur_sign.log",
+    "source_sha256": "4ea1011b22be62e7a5389d4a33875b05f4e0f44ed69524ef00e32b4a420e89a4",
+    "log_sha256": "f10648448949ec09e3710fbfcdc5c08979c3e9e95813a7167378e195eea36140",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "name": "memory_sign",
+    "old": "zero(sp.diff(a1, t)+conv)",
+    "new": "zero(sp.diff(a1, t)-conv)",
+    "intended_assertion": "Volterra_sign_actual_matrix",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_memory_sign.py"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.6668655830435455,
+    "timeout_seconds": 120,
+    "source": "mutant_memory_sign.py",
+    "log": "mutant_memory_sign.log",
+    "source_sha256": "ae06621e031aaaf9d7f59b8afe1144a2d1c1b2e343714f744af1c50592f1758a",
+    "log_sha256": "3ca5697408bf1230a3b6bc1592e1041e68db56bae76524208babbf923f3f823f",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "name": "finite_bath_atom_omission",
+    "old": "atom > 0, str(atom)",
+    "new": "atom == 0, str(atom)",
+    "intended_assertion": "finite_bath_nonzero_dressing_atom",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_finite_bath_atom_omission.py"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.6569725419394672,
+    "timeout_seconds": 120,
+    "source": "mutant_finite_bath_atom_omission.py",
+    "log": "mutant_finite_bath_atom_omission.log",
+    "source_sha256": "e122d204144b0909154e9f22ce16fc1dfa4e8c7e8e50a5c7239dcab87e026caa",
+    "log_sha256": "47260fcb97dfb7c9951c5a4497f026b354922488139f68a249f0b0cb4982fada",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "name": "helicity_half_omission",
+    "old": "density_integrand = sp.Rational(1, 2)*G_lower",
+    "new": "density_integrand = G_lower",
+    "intended_assertion": "normalized_single_helicity_density_constant",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_helicity_half_omission.py"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.7160925418138504,
+    "timeout_seconds": 120,
+    "source": "mutant_helicity_half_omission.py",
+    "log": "mutant_helicity_half_omission.log",
+    "source_sha256": "28d515c42de67bc8548e0636957d591d1be4e638f1a002a3a4af00cf8d638225",
+    "log_sha256": "e7bbdcbbdabeb512888c340858dd750e8f3a507ad4c23400b3a72e0c4bb63fe8",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "name": "Poisson_factor_two_omission",
+    "old": "rhs = 2*eta*(-mv.imag)",
+    "new": "rhs = eta*(-mv.imag)",
+    "intended_assertion": "Poisson_interval_bound_independent_measure",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Poisson_factor_two_omission.py"
+    ],
+    "returncode": 1,
+    "elapsed_seconds": 0.7094227913767099,
+    "timeout_seconds": 120,
+    "source": "mutant_Poisson_factor_two_omission.py",
+    "log": "mutant_Poisson_factor_two_omission.log",
+    "source_sha256": "a6e2a6b938c242b4a8d2b5a6fb70e325cc576c074fc24e61d9bb637834baa537",
+    "log_sha256": "ded293094763ceebc0a8b4e77f1b477b0fdd270eefba39d0746024f775a37e32",
+    "failed_at_intended_assertion": true
+  }
+]

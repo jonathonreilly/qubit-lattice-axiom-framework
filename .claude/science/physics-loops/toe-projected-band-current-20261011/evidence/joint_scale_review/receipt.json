@@ -1,0 +1,162 @@
+{
+  "review_scope": "Selective independent check of the new root-authored joint-scale composition, not independent re-review of this reviewer's own quantitative/long-time premises, not audit.",
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "lines": 236,
+      "read_this_turn_inclusive_lines": [
+        [
+          1,
+          236
+        ]
+      ],
+      "scope": "Complete target reading; independent downstream scale/current/packet reconstruction."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+      "sha256": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+      "lines": 420,
+      "read_this_turn_inclusive_lines": [
+        [
+          60,
+          296
+        ]
+      ],
+      "scope": "Earlier complete author reading reused; refreshed complete all-T and current arguments. Prior independent review is separate."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_REVIEW.md",
+      "sha256": "a530a7b1507e7d22af11f08c236af865ec1c8acb004069b249c9b281bcf4cbda",
+      "lines": 329,
+      "read_this_turn_inclusive_lines": [],
+      "scope": "Complete prior 329-line reading from immediately preceding composition reused unchanged."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+      "lines": 327,
+      "read_this_turn_inclusive_lines": [
+        [
+          217,
+          306
+        ]
+      ],
+      "scope": "Complete prior reading and immediately preceding full B5/B7-B13 reading reused; B18-B24 refreshed."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "lines": 457,
+      "read_this_turn_inclusive_lines": [
+        [
+          134,
+          179
+        ]
+      ],
+      "scope": "Complete prior author reading reused; exact density and leading band weight refreshed."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "lines": 549,
+      "read_this_turn_inclusive_lines": [],
+      "scope": "Complete prior reading reused; D3-D7/D9-D11/current remainder fully refreshed in immediately preceding composition."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "lines": 500,
+      "read_this_turn_inclusive_lines": [
+        [
+          29,
+          81
+        ],
+        [
+          300,
+          331
+        ]
+      ],
+      "scope": "Partial premise/contract inspection only, not independent review of full memory proof."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0",
+      "lines": 329,
+      "read_this_turn_inclusive_lines": [
+        [
+          1,
+          78
+        ]
+      ],
+      "scope": "Partial findings/identity/scope reading, not replay or complete report review."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md",
+      "sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324",
+      "lines": 339,
+      "read_this_turn_inclusive_lines": [
+        [
+          1,
+          339
+        ]
+      ],
+      "scope": "Complete premise and scope reading; primary Kato import and author evidence not independently checked. Separate review pending."
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_REVIEW.md",
+      "sha256": "2867fc1179a7b82b095e7719bc2f9015fdd87b5190626f61b0adfbd4fc318bf6",
+      "bytes": 14967,
+      "lines": 252
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/independent_controls.py",
+      "sha256": "20c4bb4a4a96129786a909cafef0246e4d3285c587195493366954e9be46911b",
+      "bytes": 5825,
+      "lines": 135
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/independent_controls.log",
+      "sha256": "ede9bffc64e05ab63803980cd09c9dc92e12eca90cb2c1783ad70ac78d4ee588",
+      "bytes": 1040,
+      "lines": 17
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/execution.json",
+      "sha256": "76c28ada4dcd2fd595239440d0b6241703e6a82138df327a44556627d6ecc15c",
+      "bytes": 514,
+      "lines": 11
+    }
+  ],
+  "analytic_coverage": [
+    "All-T finite Q16 use and full parameter domains",
+    "Independent general scale region and chosen polynomial exponents",
+    "Two-sided actual canonical-current trace/error, retaining A_lambda",
+    "Leading band/current normalization",
+    "Growing-time momentum continuity, actual free-band preparation and exact global probability law"
+  ],
+  "conditional_dependency": {
+    "source_sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324",
+    "status": "Separate weighted-memory review pending at this report freeze. Kato import and full memory absolute-continuity proof not independently verified in this review.",
+    "statement_needed": "A unit-norm outgoing transverse datum for the ac dressing vector, giving W(t)->W_+ in (0,3)."
+  },
+  "finite_controls": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/independent_controls.py"
+    ],
+    "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "exit_code": 0,
+    "timeout_seconds": 30,
+    "script_sha256": "20c4bb4a4a96129786a909cafef0246e4d3285c587195493366954e9be46911b",
+    "log_sha256": "ede9bffc64e05ab63803980cd09c9dc92e12eca90cb2c1783ad70ac78d4ee588"
+  },
+  "author_runner_replay": false,
+  "new_mutation_runs": false,
+  "failures": [],
+  "finding": "No consequential defect found in G1 and G4-G10; G10 strict limit remains explicitly conditional on G2-G3 pending their separate review.",
+  "writes": "Only review report and joint_scale_review/; frozen sources and repository unchanged.",
+  "next_decision": "Bind the completed separate weighted review before representing the complete joint limit as independently checked."
+}

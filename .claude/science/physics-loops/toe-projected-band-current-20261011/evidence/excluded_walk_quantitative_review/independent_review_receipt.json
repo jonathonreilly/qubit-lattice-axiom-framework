@@ -1,0 +1,252 @@
+{
+  "created_utc": "2026-10-11T19:32:37.490645+00:00",
+  "review_kind": "Selective independent mathematical research check; no formal audit or retained-status action.",
+  "reviewed_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+    "sha256": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+    "bytes": 19988,
+    "lines": 420,
+    "coverage": "Complete 420-line frozen argument, all Q1-Q33 and scope prose."
+  },
+  "outcome": "No consequential defect found within the reviewed conditional supplied-model scope. Explicit delta=2^-68 lambda^2 closes the constructed-family current and packet budgets.",
+  "scope": {
+    "lambda": "0<lambda<=1/16",
+    "sigma": "2^-40 lambda^(3/2)",
+    "delta": "2^-68 lambda^2",
+    "physical_time": "2^68/(20 lambda^2)",
+    "actual_current_each_component": "Delta <J_a> <= -delta A_lambda^2/43200 <= -2^-68 lambda^3/(388800 pi^2)",
+    "momentum_center": "2^-68 lambda^2 (1,1,1)",
+    "momentum_radius": "2^-68 lambda^3/(6998400 pi^2)",
+    "normalization": "One global physical projection normalization; probability weights contain n_(lambda,K)^2/N^2."
+  },
+  "checked_new_obligations": [
+    "Pointwise effective-orbit bound and longitudinal Q B projection including the removed dressing coefficient.",
+    "Mean-subtracted singlet cutoff, complete residual, inverse norm and spectral-theorem bound with source coefficient 7/2.",
+    "Finite full-range band normalization and complete L14 complementary inverse.",
+    "D11 plus B9 finite transverse estimate without qualitative-limit interchange or singular exponential.",
+    "Full physical current trace, exact actual-Hamiltonian energy conservation, amplitude-retaining error and D23 sign.",
+    "All explicit scale, cutoff-domain, endpoint, current/preparation and positive three-dimensional packet margins.",
+    "Actual positive free-band preparation and common-time direct-integral transfer using one global normalization."
+  ],
+  "independent_evidence": {
+    "pre_freeze_derivation": "New forcing spectral estimate and polynomial/current margins reconstructed before reading the frozen quantitative source; initial coefficient 4 was sufficient. Source improvement to 7/2 checked using orthogonal-projection contraction.",
+    "fixture": "Four equally weighted implicit antipodal pairs, actual sine/cosine data, non-diagonal kappa, exact SymPy arithmetic, nonzero removed dressing coefficient and cutoff mean.",
+    "fixture_I0": "4369/2304; not a continuum value and not used with continuum integral bounds.",
+    "cutoff_mean": "-22068041 sqrt(4369)/44895354672",
+    "discriminator": "Reversing the mean-restoration residual sign fails the exact check.",
+    "parameter_arithmetic": "Exact Fraction/SymPy inequalities, no floating certification of parameter budgets.",
+    "execution": {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_review/independent_quantitative_controls.py"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.4260519170202315,
+      "timeout_seconds": 120
+    },
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "complete_log_read": true,
+    "failed_runs": [],
+    "author_imports": false,
+    "author_replay": false,
+    "limits": "Finite algebra and exact budgets do not certify continuum cone bounds or infinite-dimensional evolution. The analytical reconstruction and unchanged reviewed premises supply those arguments."
+  },
+  "author_evidence_read": {
+    "receipt": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/receipt.json",
+      "sha256": "2eaa2eda5f5fec364669e2d6709421a69528843bc43f55f8a1340d3a158967b5",
+      "bytes": 6521,
+      "lines": 111,
+      "coverage": "Complete receipt; every declared source/output hash and size checked."
+    },
+    "helper": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/quantitative_controls.py",
+      "sha256": "0e9a63cd42abd9fc3d4f68bb1a8568825e25c36c589f2a6f028ad690654f1df9",
+      "bytes": 6923,
+      "lines": 130,
+      "coverage": "Complete 130-line helper read; not replayed or counted as independent evidence."
+    },
+    "log": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/quantitative_controls.log",
+      "sha256": "e7f76bd5e5389431094e9fe0ffc7d89ef4212cfebec39658080a24b1169a3597",
+      "bytes": 796,
+      "lines": 7,
+      "coverage": "Complete successful 7-line author log read; author evidence only."
+    }
+  },
+  "source_and_preservation_records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+      "sha256": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+      "bytes": 19988,
+      "lines": 420,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/receipt.json",
+      "sha256": "2eaa2eda5f5fec364669e2d6709421a69528843bc43f55f8a1340d3a158967b5",
+      "bytes": 6521,
+      "lines": 111,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+      "bytes": 14339,
+      "lines": 327,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md",
+      "sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe",
+      "bytes": 8340,
+      "lines": 190,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_REVIEW.md",
+      "sha256": "7fa575475439af53c7c0cf4af74fea66537b75ce42afd7418504de4dd0e31051",
+      "bytes": 17166,
+      "lines": 316,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_band_current_review/independent_review_receipt.json",
+      "sha256": "8695c83d80ef8084bd2214be1bcbbc8268a9ad663924a415c1b85f642a2a0f88",
+      "bytes": 8055,
+      "lines": 151,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+      "sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2",
+      "bytes": 20876,
+      "lines": 375,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate_review/independent_review_receipt.json",
+      "sha256": "c4d07a7e025986d1bfc2ba2e479ff34c0c4b73cabe21f1ccc68aaedd64144baa",
+      "bytes": 23359,
+      "lines": 418,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_REVIEW.md",
+      "sha256": "b9525df21cac9721603776dc703314b73e2572b874ac5ef733b35933d6260e2f",
+      "bytes": 21583,
+      "lines": 378,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time_review/independent_review_receipt.json",
+      "sha256": "bba5f583d96d04728bb9bacca52bd9de249ae8ed4d582f7ca52e4c8c0d9c4f1d",
+      "bytes": 11255,
+      "lines": 212,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/quantitative_controls.py",
+      "sha256": "0e9a63cd42abd9fc3d4f68bb1a8568825e25c36c589f2a6f028ad690654f1df9",
+      "bytes": 6923,
+      "lines": 130,
+      "author_receipt_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/quantitative_controls.log",
+      "sha256": "e7f76bd5e5389431094e9fe0ffc7d89ef4212cfebec39658080a24b1169a3597",
+      "bytes": 796,
+      "lines": 7,
+      "author_receipt_match": true
+    }
+  ],
+  "instructions": [
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "lines": 230,
+      "coverage": "Applicable instructions previously read in full; exact identity refreshed unchanged for reuse."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27,
+      "coverage": "Applicable instructions previously read in full; exact identity refreshed unchanged for reuse."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245,
+      "coverage": "Applicable instructions previously read in full; exact identity refreshed unchanged for reuse."
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_REVIEW.md",
+      "sha256": "a530a7b1507e7d22af11f08c236af865ec1c8acb004069b249c9b281bcf4cbda",
+      "bytes": 16618,
+      "lines": 329,
+      "coverage": "Complete new 329-line review; Q1-Q33 covered."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_review/independent_quantitative_controls.py",
+      "sha256": "6830ca3e89a92cf548849518b97339e59c2256042f094fb6e9ca2aacdcd8588c",
+      "bytes": 5384,
+      "lines": 122
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_review/independent_quantitative_controls.log",
+      "sha256": "7d332a80ee0f02296febc9e44474b2ef7d0654490736fec57a22e3002f3e1df8",
+      "bytes": 1892,
+      "lines": 28
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_review/independent_execution.json",
+      "sha256": "53bb1c1ffe3d6601527f7153651275a361c8e90e9aac3fe1ddc686826279552d",
+      "bytes": 319,
+      "lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_review/CHECKPOINT.md",
+      "sha256": "abdaf06789ab770059b70eabcbaae1d3b1cd077277cd281869a9506733b7e37a",
+      "bytes": 4622,
+      "lines": 79
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_review/source_identity_verification.json",
+      "sha256": "3957d3c9c2475ab41bcb6b85503ba16461916cf46c2f2e03101926ca89ff7fa6",
+      "bytes": 4590,
+      "lines": 104
+    }
+  ],
+  "remaining_obligations": [
+    "No mathematical source fix requested for these frozen bytes.",
+    "Formal retained status remains outside this research review.",
+    "No Lean proof; formalization would require the spectral-cutoff, Duhamel, continuum cone and direct-integral arguments."
+  ],
+  "nonclaims": [
+    "No operator-norm approximation on the whole zero-space unit ball or uniform theorem for arbitrary band packets.",
+    "No optimized constant/exponent or experimentally meaningful time scale.",
+    "No event clock, kinetic rate, universal current sign or monotone decay.",
+    "No new repository-wide novelty/open-PR search and no generic-K scattering or Cook premise."
+  ],
+  "writes": "Only the new external quantitative review, its checkpoint, independent helper/log/metadata, identity inventory and this receipt. No repository, author source, earlier frozen review/receipt, editable prompt, registry, commit, PR or audit changes."
+}

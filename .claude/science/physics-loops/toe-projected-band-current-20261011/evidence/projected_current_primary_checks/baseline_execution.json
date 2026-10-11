@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_PRIMARY.py"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 1.3591316249221563,
+  "timeout_seconds": 180,
+  "primary_sha256": "a5bec672fe34491dc597a69366af105bb25e6b1e67f5176c0b2b189b5677f162",
+  "log_sha256": "a22c840234eebce26108ba63948cd873ef3f03b58ce651d8c2a336992fca6476"
+}

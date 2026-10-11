@@ -1,0 +1,353 @@
+{
+  "created_utc": "2026-10-11T20:32:35.973134+00:00",
+  "tag_checks": [
+    {
+      "tag": "(E1)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E2)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E3)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E4)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E5)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E6)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E7)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E8)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E9)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E10)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E11)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E12)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E13)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E14)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E15)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E16)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E17)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E18)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E19)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E20)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E21)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E22)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E23)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E24)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E25)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E26)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E27)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E28)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(E29)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W1)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W2)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W3)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W4)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W5)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W6)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W7)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W8)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W9)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W10)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W11)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W12)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W13)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W14)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W15)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W16)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(W17)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(G1)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(G2)",
+      "comparison": "same implication restated together, with complete W1-W9 proof included; mapped literal bridge"
+    },
+    {
+      "tag": "(G3)",
+      "comparison": "same implication restated together, with complete W1-W9 proof included; mapped literal bridge"
+    },
+    {
+      "tag": "(G4)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(G5)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(G6)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(G7)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(G8)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(G9)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(G10)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R1)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R2)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R3)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R4)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R5)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R6)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R7)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R8)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R9)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R10)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R11)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R12)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R13)",
+      "comparison": "byte-identical tagged display block"
+    },
+    {
+      "tag": "(R14)",
+      "comparison": "byte-identical tagged display block"
+    }
+  ],
+  "chunks_verified": 59,
+  "section_numbers": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17"
+  ],
+  "helper_literals_verified": [
+    {
+      "variable": "MEMORY_CONTROLS_SOURCE",
+      "source": "effective_memory/memory_controls.py",
+      "sha256": "10980b8195c33ac813f59632cc028a1dbd8a04e066930786dabea338ed162c4a",
+      "bytes": 8187,
+      "lines": 165,
+      "primary_first_line": 18,
+      "primary_last_line": 183
+    },
+    {
+      "variable": "MEAN_CONTROLS_SOURCE",
+      "source": "effective_memory/mean_controls.py",
+      "sha256": "8376f00539c79b580b6c142b5b71b8d0d4ec39cd98f47e9577170e915d5b097c",
+      "bytes": 1787,
+      "lines": 36,
+      "primary_first_line": 185,
+      "primary_last_line": 221
+    },
+    {
+      "variable": "WEIGHTED_CONTROLS_SOURCE",
+      "source": "weighted_memory/weighted_controls.py",
+      "sha256": "70807cce821d3e2eca3fc96cefd52fa1cfe83c4496801b9c9f2f7b9dd5108c24",
+      "bytes": 4862,
+      "lines": 106,
+      "primary_first_line": 223,
+      "primary_last_line": 329
+    },
+    {
+      "variable": "SCALE_CONTROLS_SOURCE",
+      "source": "joint_scale_current/scale_controls.py",
+      "sha256": "1a71fb0d680630d0581fe4f982520d4bc3bc51a2649c2359815c3445c2b4d233",
+      "bytes": 2759,
+      "lines": 54,
+      "primary_first_line": 331,
+      "primary_last_line": 385
+    },
+    {
+      "variable": "OUTGOING_CONTROLS_SOURCE",
+      "source": "outgoing_resolvent/outgoing_controls.py",
+      "sha256": "5959a175ffd66638f25b23315d1923c344d51c790ada16a85166671058049c75",
+      "bytes": 4172,
+      "lines": 96,
+      "primary_first_line": 387,
+      "primary_last_line": 483
+    }
+  ],
+  "outcome": "All exact reconstruction/identity assertions passed; no new analytic test."
+}

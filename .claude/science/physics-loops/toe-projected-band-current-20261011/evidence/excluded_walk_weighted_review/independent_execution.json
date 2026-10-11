@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/independent_weighted_controls.py"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 0.44994729198515415,
+  "timeout_seconds": 60,
+  "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/independent_weighted_controls.py",
+  "source_sha256": "77878741814c03b127cd88eb6c65a315eea00ec7a8243bef7a0410de5d0b6b53",
+  "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/independent_weighted_controls.log",
+  "log_sha256": "47a88fc3e3b73bbf7d183cc20f3eaefa23df8efe65fd620a581871a6d3a504ec"
+}

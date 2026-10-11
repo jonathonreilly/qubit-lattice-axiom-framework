@@ -1,0 +1,255 @@
+{
+  "scope": "All path/hash/size records in frozen author receipt verified; full helper/baseline reads plus exact single-change mutant comparisons and complete failure logs. No author replay or historical audit certification.",
+  "author_receipt_sha256": "99cad79eeb712071bfc48a04a161df7280cea694f80523dc86c563537f272557",
+  "records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222,
+      "lines": 500
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/source_identity_check.json",
+      "sha256": "b1cb81f2e5ee520c647a4c95c0921e23d4a0a2df0bb56fe51e63cf69fc7d022b",
+      "bytes": 30149,
+      "lines": 569
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+      "sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2",
+      "bytes": 20876,
+      "lines": 375
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/receipt.json",
+      "sha256": "369bebc245e0e7794608d6a1ef29a4ccd3d374a85f3f3bcc20f0f2dd81288dde",
+      "bytes": 12787,
+      "lines": 250
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate_review/independent_review_receipt.json",
+      "sha256": "c4d07a7e025986d1bfc2ba2e479ff34c0c4b73cabe21f1ccc68aaedd64144baa",
+      "bytes": 23359,
+      "lines": 418
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/receipt.json",
+      "sha256": "1564b0bf532aca6c7f43c301455163b1af0afb96405e620eb56c481bdf7ed96d",
+      "bytes": 29021,
+      "lines": 676
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/baseline.log",
+      "sha256": "c126b7ff2a736ce09303b97479da7bbc4550e96e0240d1ffc9bae2edd156a3d3",
+      "bytes": 1623,
+      "lines": 20
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/baseline_execution.json",
+      "sha256": "58ed1859a1cfe3d71b23121e326d8133a42052b99bdf8886ef577b2ef81e7eec",
+      "bytes": 329,
+      "lines": 10
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/checkpoint.md",
+      "sha256": "e5442399f0dea76f3655764b0b9e57d1e16480942d8aefda0642bf2dd07bfc7e",
+      "bytes": 2302,
+      "lines": 38
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/development_log.md",
+      "sha256": "294103bd9666a742655aee57b7fe82169861db2c0b16f59b1479b08ebc6cb7c9",
+      "bytes": 866,
+      "lines": 18
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/freeze_receipt.py",
+      "sha256": "0ee2a477cd31cb31b9ddb1cfb4d624b5266e351aef9d7c1debd2fdbe08ec58a8",
+      "bytes": 9129,
+      "lines": 147
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_controls.log",
+      "sha256": "e33f320682ec1a9b153dd597a67a320e74086a95230aaeb7bb5bf08db9fc0de7",
+      "bytes": 1154,
+      "lines": 3
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_controls.py",
+      "sha256": "8376f00539c79b580b6c142b5b71b8d0d4ec39cd98f47e9577170e915d5b097c",
+      "bytes": 1787,
+      "lines": 36
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_execution.json",
+      "sha256": "06687866e9b859570748e9e0bef9427151cc5383d8d71768d932c3ed93fbb578",
+      "bytes": 282,
+      "lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_mutation.json",
+      "sha256": "a50024631aa2f949b1b676a34a47da50571d16a9cf7805651841b969820da5ef",
+      "bytes": 750,
+      "lines": 18
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/memory_controls.py",
+      "sha256": "10980b8195c33ac813f59632cc028a1dbd8a04e066930786dabea338ed162c4a",
+      "bytes": 8187,
+      "lines": 165
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Poisson_factor_two_omission.log",
+      "sha256": "ded293094763ceebc0a8b4e77f1b477b0fdd270eefba39d0746024f775a37e32",
+      "bytes": 1936,
+      "lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Poisson_factor_two_omission.py",
+      "sha256": "a6e2a6b938c242b4a8d2b5a6fb70e325cc576c074fc24e61d9bb637834baa537",
+      "bytes": 8185,
+      "lines": 165
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Schur_sign.log",
+      "sha256": "f10648448949ec09e3710fbfcdc5c08979c3e9e95813a7167378e195eea36140",
+      "bytes": 651,
+      "lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Schur_sign.py",
+      "sha256": "4ea1011b22be62e7a5389d4a33875b05f4e0f44ed69524ef00e32b4a420e89a4",
+      "bytes": 8187,
+      "lines": 165
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_finite_bath_atom_omission.log",
+      "sha256": "47260fcb97dfb7c9951c5a4497f026b354922488139f68a249f0b0cb4982fada",
+      "bytes": 1000,
+      "lines": 15
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_finite_bath_atom_omission.py",
+      "sha256": "e122d204144b0909154e9f22ce16fc1dfa4e8c7e8e50a5c7239dcab87e026caa",
+      "bytes": 8188,
+      "lines": 165
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_helicity_half_omission.log",
+      "sha256": "e7bbdcbbdabeb512888c340858dd750e8f3a507ad4c23400b3a72e0c4bb63fe8",
+      "bytes": 1701,
+      "lines": 24
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_helicity_half_omission.py",
+      "sha256": "28d515c42de67bc8548e0636957d591d1be4e638f1a002a3a4af00cf8d638225",
+      "bytes": 8169,
+      "lines": 165
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_mean_factor.log",
+      "sha256": "ae1cb4bd6085eaee2c97d1823362275eb03e6f0fb673b968a7bc74a68ba91df8",
+      "bytes": 409,
+      "lines": 5
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_mean_factor.py",
+      "sha256": "aba92c0d24e8434904f6b049c78ed977e3c89b126be804d1a68f1c8e591e048f",
+      "bytes": 1785,
+      "lines": 36
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_memory_sign.log",
+      "sha256": "3ca5697408bf1230a3b6bc1592e1041e68db56bae76524208babbf923f3f823f",
+      "bytes": 849,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_memory_sign.py",
+      "sha256": "ae06621e031aaaf9d7f59b8afe1144a2d1c1b2e343714f744af1c50592f1758a",
+      "bytes": 8187,
+      "lines": 165
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutation_manifest.json",
+      "sha256": "bf3d92a9a1315a47b6943d31bd956c614ef5c3824afa49b2da6fb84fe1c1f9af",
+      "bytes": 4039,
+      "lines": 92
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/run_mutations.py",
+      "sha256": "bd6b05bfae8d3fe87b1aee69d568c0f82729bd8184908f42aaab26a071fb512f",
+      "bytes": 2175,
+      "lines": 45
+    }
+  ],
+  "mutants": [
+    {
+      "name": "Schur_sign",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Schur_sign.py",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Schur_sign.log",
+      "source_sha256": "4ea1011b22be62e7a5389d4a33875b05f4e0f44ed69524ef00e32b4a420e89a4",
+      "log_sha256": "f10648448949ec09e3710fbfcdc5c08979c3e9e95813a7167378e195eea36140",
+      "literal_single_change_verified": true,
+      "failed_at_declared_assertion": true,
+      "diff": "--- memory_controls.py\n+++ mutant_Schur_sign.py\n@@ -32,7 +32,7 @@\n check('direct_block_selfadjoint', zero(A-A.conjugate().T))\n direct_resolvent = ((z*sp.eye(3)-A).inv())[2, 2]\n self_energy = h**2*z/(z**2-f**2)\n-scalar_resolvent = 1/(z-self_energy)\n+scalar_resolvent = 1/(z+self_energy)\n check('Schur_sign_and_denominator', zero(direct_resolvent-scalar_resolvent))\n check('balanced_helicity_weights', zero((g.conjugate().T*D*g)[0]))\n \n"
+    },
+    {
+      "name": "memory_sign",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_memory_sign.py",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_memory_sign.log",
+      "source_sha256": "ae06621e031aaaf9d7f59b8afe1144a2d1c1b2e343714f744af1c50592f1758a",
+      "log_sha256": "3ca5697408bf1230a3b6bc1592e1041e68db56bae76524208babbf923f3f823f",
+      "literal_single_change_verified": true,
+      "failed_at_declared_assertion": true,
+      "diff": "--- memory_controls.py\n+++ mutant_memory_sign.py\n@@ -47,7 +47,7 @@\n K1 = (g.conjugate().T*(sp.cos(f*t)*sp.eye(2)-I*sp.sin(f*t)*D/f)*g)[0]\n K1 = sp.simplify(K1.subs({f: sp.Rational(3, 5), h: sp.Rational(4, 5)}))\n conv = sp.integrate(K1.subs(t, t-s)*a1.subs(t, s), (s, 0, t))\n-check('Volterra_sign_actual_matrix', zero(sp.diff(a1, t)+conv))\n+check('Volterra_sign_actual_matrix', zero(sp.diff(a1, t)-conv))\n check('finite_bath_exact_recurrence', zero(a1.subs(t, 2*sp.pi)-1))\n zero_projection = sp.eye(3)-A1**2\n atom = (e.T*zero_projection*e)[0]\n"
+    },
+    {
+      "name": "finite_bath_atom_omission",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_finite_bath_atom_omission.py",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_finite_bath_atom_omission.log",
+      "source_sha256": "e122d204144b0909154e9f22ce16fc1dfa4e8c7e8e50a5c7239dcab87e026caa",
+      "log_sha256": "47260fcb97dfb7c9951c5a4497f026b354922488139f68a249f0b0cb4982fada",
+      "literal_single_change_verified": true,
+      "failed_at_declared_assertion": true,
+      "diff": "--- memory_controls.py\n+++ mutant_finite_bath_atom_omission.py\n@@ -51,7 +51,7 @@\n check('finite_bath_exact_recurrence', zero(a1.subs(t, 2*sp.pi)-1))\n zero_projection = sp.eye(3)-A1**2\n atom = (e.T*zero_projection*e)[0]\n-check('finite_bath_nonzero_dressing_atom', atom > 0, str(atom))\n+check('finite_bath_nonzero_dressing_atom', atom == 0, str(atom))\n check('finite_bath_not_exponential_decay', zero(sp.diff(a1, t).subs(t, 0)) and\n       sp.diff(a1, t, 2).subs(t, 0) < 0, str(a1))\n \n"
+    },
+    {
+      "name": "helicity_half_omission",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_helicity_half_omission.py",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_helicity_half_omission.log",
+      "source_sha256": "28d515c42de67bc8548e0636957d591d1be4e638f1a002a3a4af00cf8d638225",
+      "log_sha256": "e7bbdcbbdabeb512888c340858dd750e8f3a507ad4c23400b3a72e0c4bb63fe8",
+      "literal_single_change_verified": true,
+      "failed_at_declared_assertion": true,
+      "diff": "--- memory_controls.py\n+++ mutant_helicity_half_omission.py\n@@ -108,7 +108,7 @@\n b, chi, I0, rad = sp.symbols('b chi I0 rad', positive=True)\n r0 = sp.sqrt(chi)/8\n G_lower = b*b*chi/(64*I0*rad**2)\n-density_integrand = sp.Rational(1, 2)*G_lower*rad**2/(2*b)/(2*sp.pi)**3\n+density_integrand = G_lower*rad**2/(2*b)/(2*sp.pi)**3\n cone_density = sp.simplify(2*sp.pi*sp.integrate(density_integrand, (rad, r0/2, r0)))\n target_density = b*chi**sp.Rational(3, 2)/(16384*sp.pi**2*I0)\n check('normalized_single_helicity_density_constant', zero(cone_density-target_density), str(cone_density))\n"
+    },
+    {
+      "name": "Poisson_factor_two_omission",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Poisson_factor_two_omission.py",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_Poisson_factor_two_omission.log",
+      "source_sha256": "a6e2a6b938c242b4a8d2b5a6fb70e325cc576c074fc24e61d9bb637834baa537",
+      "log_sha256": "ded293094763ceebc0a8b4e77f1b477b0fdd270eefba39d0746024f775a37e32",
+      "literal_single_change_verified": true,
+      "failed_at_declared_assertion": true,
+      "diff": "--- memory_controls.py\n+++ mutant_Poisson_factor_two_omission.py\n@@ -157,7 +157,7 @@\n for center, eta in [(-0.1, 0.3), (0.9, 1.2), (1.7, 0.15)]:\n     mass = weights[abs(energies-center) <= eta].sum()\n     mv = (weights/(center+1j*eta-energies)).sum()\n-    rhs = 2*eta*(-mv.imag)\n+    rhs = eta*(-mv.imag)\n     ratios.append(float(mass/rhs))\n check('Poisson_interval_bound_independent_measure', max(ratios) <= 1, ratios)\n print(json.dumps({'checks': checks, 'python': platform.python_version(),\n"
+    },
+    {
+      "name": "mean_factor_two_omission",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_mean_factor.py",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mutant_mean_factor.log",
+      "source_sha256": "aba92c0d24e8434904f6b049c78ed977e3c89b126be804d1a68f1c8e591e048f",
+      "log_sha256": "ae1cb4bd6085eaee2c97d1823362275eb03e6f0fb673b968a7bc74a68ba91df8",
+      "literal_single_change_verified": true,
+      "failed_at_declared_assertion": true,
+      "diff": "--- mean_controls.py\n+++ mutant_mean_factor.py\n@@ -8,7 +8,7 @@\n T, b, C, x = sp.symbols('T b C x', positive=True)\n split_integral = 2*C*(sp.integrate(1, (x, 0, 1/T))+\n                         sp.integrate(1/(T*x), (x, 1/T, 2*b)))\n-displayed = 2*C*(1+sp.log(2*b*T))/T\n+displayed = C*(1+sp.log(2*b*T))/T\n assert sp.simplify(sp.expand_log(split_integral-displayed, force=True)) == 0, 'mean_kernel_constant'\n print(json.dumps({'check': 'mean_kernel_constant', 'domain': '2*b*T>=1'}))\n \n"
+    }
+  ],
+  "count": 31
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "command": [
+      "git",
+      "grep",
+      "-n",
+      "-iE",
+      "(excluded|exclusion|compressed).{0,100}(threshold|zero.energy|flat.band)",
+      "main",
+      "--",
+      "docs/ADMISSIBILITY_RULE*.md"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "grep",
+      "-n",
+      "-iE",
+      "(threshold|zero.energy|flat.band).{0,100}(excluded|exclusion|compressed)",
+      "main",
+      "--",
+      "docs/ADMISSIBILITY_RULE*.md"
+    ],
+    "exit": 0,
+    "stdout": "main:docs/ADMISSIBILITY_RULE_A_FREE_WALKER_NEVER_EMITS_OR_ABSORBS_ONE_OF_THE_MEMBERS_TRAVELLING_DISTURBANCES_ITS_ENERGIES_STAY_INSIDE_THE_MEMBERS_CONE_BOUNDED_THEOREM_NOTE_2026-09-25.md:57:For massless opposite bands define F(k,q)=|s(k)|+|s(k+q)|. The symmetric choice k=-q/2 gives F=2|s(q/2)|=omega(q) for every q. This uses continuous momenta; a finite torus need not contain the half-momentum. For nonzero q, F(0,q)=|s(q)|<omega(q). At k_j=pi/2-q_j/2, F=2|cos(q/2)|, whose squared excess over omega\u00b2 is 4 sum_j cos q_j. Thus sum cos q_j>0 also supplies an explicit continuous path crossing of the target energy. This is a sufficient open region, not a necessary condition for resonance. With mass mu, pair energies are at least 2|mu|, so omega<2|mu| excludes this pair channel. At or above threshold no exclusion follows from that bound. Occupied initial and unoccupied final states, a nonzero coupling matrix element and the supplied quantum energy remain necessary for actual absorption; no rate is derived.\nmain:docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md:4:claim_scope: \"V1\\u2013V3 prove the exact cubic-walk identity and scalar interval 75/100 < 3G(0) < 76/100 with the unchanged N=1000 rational certificate. Conditional on the corrected zero-field sphere static parent and its explicit mathematical imports, beta>76/100 gives M\\u00b2>=1\\u22123G(0)/beta>0 and the corresponding component Fourier bounds. This is a sufficient model condition, not a true transition threshold, physical kernel window or exclusion of other proof routes.\"\nmain:docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md:18:V1\u2013V3 prove the exact cubic-walk identity and scalar interval 75/100 < 3G(0) < 76/100 with the unchanged N=1000 rational certificate. Conditional on the corrected zero-field sphere static parent and its explicit mathematical imports, beta>76/100 gives M\u00b2>=1\u22123G(0)/beta>0 and the corresponding component Fourier bounds. This is a sufficient model condition, not a true transition threshold, physical kernel window or exclusion of other proof routes.\nmain:docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md:32:conditional_surface_status: \"V1\u2013V3 prove the exact cubic-walk identity and scalar interval 75/100 < 3G(0) < 76/100 with the unchanged N=1000 rational certificate. Conditional on the corrected zero-field sphere static parent and its explicit mathematical imports, beta>76/100 gives M\u00b2>=1\u22123G(0)/beta>0 and the corresponding component Fourier bounds. This is a sufficient model condition, not a true transition threshold, physical kernel window or exclusion of other proof routes.\"\nmain:docs/ADMISSIBILITY_RULE_CUBIC_WALK_RETURN_SUM_AND_SPHERE_STATIC_MAGNETIZATION_SUFFICIENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-15.md:98:V1\u2013V3 prove the exact cubic-walk identity and scalar interval 75/100 < 3G(0) < 76/100 with the unchanged N=1000 rational certificate. Conditional on the corrected zero-field sphere static parent and its explicit mathematical imports, beta>76/100 gives M\u00b2>=1\u22123G(0)/beta>0 and the corresponding component Fourier bounds. This is a sufficient model condition, not a true transition threshold, physical kernel window or exclusion of other proof routes. No physical rule is selected and no clause is adopted.\nmain:docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_WITH_VACANCIES_THE_INFRARED_STIFFNESS_IS_SET_BY_THE_BINDING_SCALE_LONG_RANGE_ORDER_ABOVE_THE_NEUTRAL_SCALE_AND_NO_FULL_BOUND_AT_IT_BOUNDED_THEOREM_NOTE_2026-09-24.md:62:- (c) On gamma>=0, c0 decreases strictly from1 (its derivative is zero only at the endpoint). For gamma<0 the odd occupied mode is negative, so the asserted positive-kernel threshold would be false; that region is excluded.\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "grep",
+      "-n",
+      "-iE",
+      "H0\\^.?-1.*c|H_0\\^.?-1.*c|threshold dressing",
+      "main",
+      "--",
+      "docs/ADMISSIBILITY_RULE*.md"
+    ],
+    "exit": 1,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "grep",
+      "-n",
+      "-iE",
+      "contact.*square.integrable|square.integrable.*contact",
+      "main",
+      "--",
+      "docs/ADMISSIBILITY_RULE*.md"
+    ],
+    "exit": 0,
+    "stdout": "main:docs/ADMISSIBILITY_RULE_A_REST_ENERGY_FROM_BINDING_TWO_WALKERS_IS_EXACT_WITH_THE_WALKERS_OWN_SPEED_IN_ONE_DIMENSION_INVISIBLE_UNDER_ONE_RECORD_PER_SITE_AND_ANISOTROPIC_IN_THREE_BOUNDED_THEOREM_NOTE_2026-09-24.md:31:In a fixed coin sector a shift of relative momentum reduces the free energy to a single sine or cosine of amplitude B: B^2=4sin^2(K/2) for equal coins and B^2=4cos^2(K/2) for opposite coins. For real E outside [-|B|,|B|], the contact equation is1=V <(E-epsilon(q))^-1>. The integral equals sign(E)/sqrt(E^2-B^2); substitution z=exp(iq) gives this by the single pole inside the unit circle, or elementary real integration. V<0 therefore selects E=-sqrt(V^2+B^2), not both square roots. The resolvent wave function is proportional to1/(E-epsilon(q)); it is square-integrable and gives a unique relative bound state in that coin fiber. At B=0 it is the coincidence delta with energy V.\n",
+    "stderr": ""
+  }
+]

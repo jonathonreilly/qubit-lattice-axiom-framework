@@ -1,0 +1,27 @@
+{
+  "pdf": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/kato_1957_primary.pdf",
+  "pdf_sha256": "12ce9d67ed67d096f82b55a6ef7b778a83c16d5e2f020d4946d58112f3f93fe5",
+  "pages": 5,
+  "extractor": "pypdf",
+  "text": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/kato_primary_extracted.txt",
+  "text_sha256": "5e262853ce936b49d2806ac957fa04021a07c893c792df319d2a8bea686ecbde",
+  "images": [
+    {
+      "page_index": 0,
+      "printed_page": 260,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/kato_primary_page_260_image_0.png",
+      "width": 4299,
+      "height": 6071,
+      "sha256": "580561d47af7aea802309b5e05e436a90e8204793392fbb6feef0b8febd08bf4"
+    },
+    {
+      "page_index": 3,
+      "printed_page": 263,
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/kato_primary_page_263_image_0.png",
+      "width": 4299,
+      "height": 6071,
+      "sha256": "c57acde5c12b9f36c90913e3ccccc00183e7826705e522f418eefa8cacbc0546"
+    }
+  ],
+  "method": "Original embedded whole-page raster extracted to PNG; no author draft or derived theorem file read."
+}

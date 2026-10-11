@@ -1,0 +1,585 @@
+{
+  "check_count": 127,
+  "checks": [
+    "frozen identity FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+    "frozen identity FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_PRIMARY.py",
+    "frozen identity PROJECTED_BAND_CURRENT_SOURCE_COMPOSITION.json",
+    "frozen identity projected_current_primary_composition.json",
+    "frozen identity EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+    "frozen identity excluded_walk_projected_free_band_canonical_current_2026_10_11.py",
+    "mapped source identity Q",
+    "mapped source identity L",
+    "mapped source identity D",
+    "mapped source identity B",
+    "mapped source identity P",
+    "mapped source identity EXCLUDED_WALK_LONG_TIME_REVIEW.md",
+    "mapped source identity EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+    "mapped source identity EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_REVIEW.md",
+    "mapped source identity EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_REVIEW.md",
+    "unique editorial input 1",
+    "unique editorial input 2",
+    "unique editorial input 3",
+    "unique editorial input 4",
+    "unique editorial input 5",
+    "unique editorial input 6",
+    "unique editorial input 7",
+    "unique editorial input 8",
+    "unique editorial input 9",
+    "unique editorial input 10",
+    "unique editorial input 11",
+    "unique editorial input 12",
+    "unique editorial input 13",
+    "unique editorial input 14",
+    "unique editorial input 15",
+    "unique editorial input 16",
+    "unique editorial input 17",
+    "unique editorial input 18",
+    "unique editorial input 19",
+    "unique editorial input 20",
+    "unique editorial input 21",
+    "unique editorial input 22",
+    "unique editorial input 23",
+    "unique editorial input 24",
+    "unique editorial input 25",
+    "unique editorial input 26",
+    "unique editorial input 27",
+    "unique editorial input 28",
+    "unique editorial input 29",
+    "unique editorial input 30",
+    "unique editorial input 31",
+    "all 31 operations reconstruct every candidate byte",
+    "exact selected fragment fragment_1",
+    "exact selected fragment fragment_2",
+    "exact selected fragment fragment_3",
+    "exact selected fragment fragment_4",
+    "exact selected fragment fragment_5",
+    "exact selected fragment fragment_6",
+    "exact selected fragment fragment_7",
+    "exact selected fragment fragment_8",
+    "exact selected fragment fragment_9",
+    "exact selected fragment fragment_10",
+    "exact selected fragment fragment_11",
+    "exact selected fragment fragment_12",
+    "exact selected fragment fragment_13",
+    "unchanged quantitative range 1",
+    "unchanged quantitative range 2",
+    "unchanged quantitative range 3",
+    "unchanged quantitative range 4",
+    "unchanged quantitative range 5",
+    "unchanged quantitative range 6",
+    "unchanged quantitative range 7",
+    "unchanged quantitative range 8",
+    "unchanged quantitative range 9",
+    "unchanged quantitative range 10",
+    "unchanged quantitative range 11",
+    "unchanged quantitative range 12",
+    "unchanged quantitative range 13",
+    "unchanged quantitative range 14",
+    "unchanged quantitative range 15",
+    "unchanged quantitative range 16",
+    "unchanged quantitative range 17",
+    "unchanged quantitative range 18",
+    "unchanged quantitative range 19",
+    "unchanged quantitative range 20",
+    "unchanged quantitative range 21",
+    "unchanged quantitative range 22",
+    "unchanged quantitative range 23",
+    "unchanged quantitative range 24",
+    "unchanged quantitative range 25",
+    "unchanged quantitative range 26",
+    "unchanged quantitative range 27",
+    "unchanged quantitative range 28",
+    "unchanged quantitative range 29",
+    "unchanged quantitative range 30",
+    "unchanged quantitative range 31",
+    "unchanged quantitative range 32",
+    "unchanged quantitative range 33",
+    "unchanged quantitative range 34",
+    "unchanged quantitative range 35",
+    "unchanged quantitative range 36",
+    "unchanged quantitative range 37",
+    "unchanged quantitative range 38",
+    "all quantitative equations exactly once",
+    "32 quantitative blocks unchanged",
+    "only recorded Q4 expansion",
+    "complete canonical section retained",
+    "literal original bytes block_1_long_time_checks",
+    "literal original bytes block_2_degenerate_checks",
+    "literal original bytes block_3_root_two_scale_controls",
+    "literal original bytes block_4_quantitative_controls",
+    "publication keeps all four literals",
+    "publication wrapper AST unchanged",
+    "actual wrapper isolates independent synthetic globals",
+    "wrapper propagates a failed check",
+    "shared-namespace competitor rejected",
+    "altered embedded sign fails source-identity gate",
+    "independently regrouped polynomial scale margin",
+    "cutoff and preparation domains at maximal lambda",
+    "direct combined diagonal current budget",
+    "both finite preparation endpoints",
+    "fiber-to-global remaining sign budget",
+    "one global projection normalization",
+    "common fiber current bound survives actual weights",
+    "old momentum law predicts a different observable",
+    "publication mathematical body unchanged",
+    "publication footer is exactly 17 appended lines",
+    "publication primary differs only by declared input path",
+    "publication edit identities bind current files",
+    "author baseline identity and external timeout",
+    "author baseline ran each exact literal",
+    "author baseline identifies combined runner"
+  ],
+  "input_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+      "sha256": "ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969",
+      "bytes": 37412,
+      "lines": 859
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_PRIMARY.py",
+      "sha256": "a5bec672fe34491dc597a69366af105bb25e6b1e67f5176c0b2b189b5677f162",
+      "bytes": 33833,
+      "lines": 713
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/PROJECTED_BAND_CURRENT_SOURCE_COMPOSITION.json",
+      "sha256": "5a48688b7694336051ade340089989f0bcc8a50d4e7d6a23c805990f945c8341",
+      "bytes": 94644,
+      "lines": 1383
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_composition.json",
+      "sha256": "ffdc0a26f9caea83e70f41a471c63959e5672dc43379e43172f7ec906e6551b1",
+      "bytes": 1194,
+      "lines": 30
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "7543767f5f2377812f78630238e73959b170752de0455fb6ab5f556a2f1868bb",
+      "bytes": 38466,
+      "lines": 877
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/scripts/excluded_walk_projected_free_band_canonical_current_2026_10_11.py",
+      "sha256": "4451005b466c114b40c943509b13aaa34607b7b8e884ab584df4c19d8b1f30ff",
+      "bytes": 33843,
+      "lines": 713
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-projected-band-current-20261011/PUBLICATION_EDITS.json",
+      "sha256": "16e8e8ce846c546e079463ff2be2a82ede04e20890003d81e2c3a8386acb60ac",
+      "bytes": 1082,
+      "lines": 17
+    }
+  ],
+  "source_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+      "sha256": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+      "bytes": 19988,
+      "lines": 420
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+      "bytes": 14339,
+      "lines": 327
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "9f551fc8d3592e83d15a007495a8f9165a5ddb9bc1e98d9dd3f51b6a2584f401",
+      "bytes": 65166,
+      "lines": 1280
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_REVIEW.md",
+      "sha256": "b9525df21cac9721603776dc703314b73e2572b874ac5ef733b35933d6260e2f",
+      "bytes": 21583,
+      "lines": 378
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+      "sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2",
+      "bytes": 20876,
+      "lines": 375
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_REVIEW.md",
+      "sha256": "7fa575475439af53c7c0cf4af74fea66537b75ce42afd7418504de4dd0e31051",
+      "bytes": 17166,
+      "lines": 316
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_REVIEW.md",
+      "sha256": "a530a7b1507e7d22af11f08c236af865ec1c8acb004069b249c9b281bcf4cbda",
+      "bytes": 16618,
+      "lines": 329
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time/long_time_checks.py",
+      "sha256": "4ddc0e1972c6ab13c269ac2f7c18b38811be1d9087a4052df53940cc24245a86",
+      "bytes": 7815,
+      "lines": 149
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/degenerate_checks.py",
+      "sha256": "8313796d2a462c37ed1aea0dc32182c9f7dc5b7ba34707d80a033b1c53f3a41a",
+      "bytes": 11546,
+      "lines": 264
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/root_two_scale_controls.py",
+      "sha256": "3957104cf4362b83c6f6e11c5cbbff365d34e232dc1134cd09cdc9a97312e4ec",
+      "bytes": 5344,
+      "lines": 122
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/quantitative_controls.py",
+      "sha256": "0e9a63cd42abd9fc3d4f68bb1a8568825e25c36c589f2a6f028ad690654f1df9",
+      "bytes": 6923,
+      "lines": 130
+    }
+  ],
+  "operations": [
+    {
+      "id": 1,
+      "reason": "Publication title, proposal/status/trace metadata and explicit supplied-model preparation contract.",
+      "sources": [
+        "Q",
+        "P"
+      ],
+      "before_sha256": "9ee255b90a79106749839ce0f81fb34aa5ab818d901dfddf82c6ac2c5f85ad63",
+      "after_sha256": "dc875774e9c644d2a52157eb3335a61bb11e384f176f4e51c7ddd27a772a05d4"
+    },
+    {
+      "id": 2,
+      "reason": "Specify the theorem observable and global time-zero preparation without enlarging Q1-Q2.",
+      "sources": [
+        "Q",
+        "B"
+      ],
+      "before_sha256": "50971f694e52ad9696999c01e105cfc1b9b10b246281203e5b4d1839009b13c5",
+      "after_sha256": "7a80687c54140abe2e5e88329fa6c89cdb618edf81885f961611255473240e75"
+    },
+    {
+      "id": 3,
+      "reason": "Replace author-stage history with the publication contract; preserve exact provenance in the composition map.",
+      "sources": [
+        "Q",
+        "L",
+        "D",
+        "B",
+        "P"
+      ],
+      "before_sha256": "befc0700a09ce431d5d5d6b3e5489049d28ef1d21e0318756b7e56a26b96d465",
+      "after_sha256": "d8d9b72da0090a1be87838d7ec0dca3d10514be3f4a72c86430aadc0517b4c97"
+    },
+    {
+      "id": 4,
+      "reason": "Inline L1-L5 kernel and cone proof, keep Q3/Q4 labels and add the already used normalized epsilon-square identity.",
+      "sources": [
+        "L",
+        "Q"
+      ],
+      "before_sha256": "dcffe96f04c374dbc50ac51ed03b1002ec4e48004cc190c0586cd78f2d2a0005",
+      "after_sha256": "b7a948228e38a8555e01167f2b58090237800f22d3fd7de454091a09c5bed3a0"
+    },
+    {
+      "id": 5,
+      "reason": "Inline the complete symbol and generator-remainder proof with lambda renamed delta.",
+      "sources": [
+        "D"
+      ],
+      "before_sha256": "625e3215bd96d58a901d062f55f930f9f431a74539a0d553b3feff06a66c67a1",
+      "after_sha256": "5141d4e0ddc503798afa2cf656df32c29e586b1c15c2b9816a39b4a1fbcf7647"
+    },
+    {
+      "id": 6,
+      "reason": "Inline the effective-block proof and coupled alpha equation.",
+      "sources": [
+        "D"
+      ],
+      "before_sha256": "456b34f751d37262948c8920dbef6e6f58aa127657ece210ced08abbe66092fc",
+      "after_sha256": "16f162b3a269c7c0b6715d3a51b94deb891b3b694b80d7c884723f232fb80c5e"
+    },
+    {
+      "id": 7,
+      "reason": "Remove historical dependence wording now that the finite comparison is included.",
+      "sources": [
+        "Q"
+      ],
+      "before_sha256": "cf074d602db7ad17c05b2f67a4a36a5d564a8a9fac0a2e6693c3938ef3c93300",
+      "after_sha256": "795b2ae1d9b69e191a7c81f7017b3232d2773b576767313751efe0ee7c5891d5"
+    },
+    {
+      "id": 8,
+      "reason": "Keep the special-vector scope; move the separate nonuniformity result to the research-preservation map.",
+      "sources": [
+        "Q",
+        "D"
+      ],
+      "before_sha256": "1367d7cd1815a01d80766031109e41dcf825cb082433c2e324b6d229ba7e3783",
+      "after_sha256": "3628fda51ab0e9210a6faf0fe3b7d284de981209d491d0897ad0cb66d81c4136"
+    },
+    {
+      "id": 9,
+      "reason": "Inline the positive-band density and spectral-weight proof.",
+      "sources": [
+        "L"
+      ],
+      "before_sha256": "6d7643a5df41ee738054076710ba93b512ad5b92dafa7a2bda1ed454bd3445ad",
+      "after_sha256": "17a9daf99caddc6f5806f17a256de0309a4dff22499aee5f35fb7eba3dc2296c"
+    },
+    {
+      "id": 10,
+      "reason": "Make the phase, positivity and F chi=0 argument explicit using L8-L10.",
+      "sources": [
+        "L",
+        "B"
+      ],
+      "before_sha256": "b56c034b7bc7440aa2cfe771fd19ae924cae09943caa8887d9cda6ada283fc37",
+      "after_sha256": "d00af5dcf139b01b3c8988e08ce03f7fb8dc7df4fd2eacfbd53727f6764a64c6"
+    },
+    {
+      "id": 11,
+      "reason": "Make the band estimate refer to the included proof.",
+      "sources": [
+        "Q",
+        "L"
+      ],
+      "before_sha256": "6f2a5798d4c8d81e887e3cfc37bbe97f8c0603769878c6b85e932f093b0825f9",
+      "after_sha256": "15705f2555a11261cd83a0781dfb862ea23ddb405dfd4464123dadb9c3000259"
+    },
+    {
+      "id": 12,
+      "reason": "Update the retained cone-bound label.",
+      "sources": [
+        "Q",
+        "L"
+      ],
+      "before_sha256": "3b078ec2268aa5068f491844003f69e0d444889de9cbe1be3c81c1f7a8fdee68",
+      "after_sha256": "021850b652dc1b4e06ff81867d4847bea467d3bcd7fe1252c176422bfc64c000"
+    },
+    {
+      "id": 13,
+      "reason": "Replace the external-only inverse reference by the included construction.",
+      "sources": [
+        "Q",
+        "L"
+      ],
+      "before_sha256": "98349fc031fb57a2ba44830cf4e6931a76f84b2a6032234085fa6ecb3bf712d8",
+      "after_sha256": "cae1c845369bc69087234e874079f0c8df5130aa5c4cb5dd4b3eaf060558dc71"
+    },
+    {
+      "id": 14,
+      "reason": "Inline the complete band inverse; rename the local scalar coefficients F_s,G_l and spell out its already-reviewed norm accounting.",
+      "sources": [
+        "L",
+        "Q"
+      ],
+      "before_sha256": "17b35ac29d2565dd0b0c2b875e36c8926658c3eb3c64f18209f173c1df531928",
+      "after_sha256": "bacd21722c0894fcfd566de0a6bd5015e9442d874c08e6e9798bef788d836eeb"
+    },
+    {
+      "id": 15,
+      "reason": "Inline both different correctors and every endpoint, residual and bounded-remainder cost.",
+      "sources": [
+        "D",
+        "B"
+      ],
+      "before_sha256": "c9fdfd28e155d326dd2d56bd4c90a060ac89025d8b9ccf643c59973f87770440",
+      "after_sha256": "d649c857edb26b9a8ece414ec452c4577438a82cde33103dad6fb22c99a2b718"
+    },
+    {
+      "id": 16,
+      "reason": "Reproduce the complete parent canonical-current identification, including its core/H1 qualification.",
+      "sources": [
+        "P"
+      ],
+      "before_sha256": "439314948c8d3dfc30ad04d37efc2f41031c5e9dba6a522f0444b7f715763d25",
+      "after_sha256": "9e07b9a1d7674299e2e079f6e5f995aa27a4374c5a0545d48aaed917a82b208c"
+    },
+    {
+      "id": 17,
+      "reason": "Replace a scratch-source-only observable reference.",
+      "sources": [
+        "Q",
+        "P"
+      ],
+      "before_sha256": "2e873f1739df14fa2cb904b151fb8398a59ddd407a412d81a816098186574ce4",
+      "after_sha256": "8dca7f0f456a0d8543635d9e90dd7663f66c9b5b8380901024348b8dc6ad0bae"
+    },
+    {
+      "id": 18,
+      "reason": "Inline the full trace identity, retaining noncommutation of epsilon squared with P.",
+      "sources": [
+        "B"
+      ],
+      "before_sha256": "a5828fc19ab0399bba886a2a9420d1c7f8c93c1aa6d38eee0318884f010407ff",
+      "after_sha256": "0ef36fe86656195b622050bc7d11eed756362cfe03be4eb69b18632bc6798433"
+    },
+    {
+      "id": 19,
+      "reason": "Inline the complete current-remainder argument before specializing Q20.",
+      "sources": [
+        "D",
+        "Q"
+      ],
+      "before_sha256": "3c2dcc157078aafb4b62664cba860032c6cc62dc19415bc588a644eb8e14ea34",
+      "after_sha256": "2a5307d91d978bdfd6937e64eba84e89db3ad656f683bf2d475433883d2c4ec9"
+    },
+    {
+      "id": 20,
+      "reason": "Include the complete nonzero-coupling and Taylor proof of Q23, using its weighted-transverse form and no unused zero-space-current theorem.",
+      "sources": [
+        "D",
+        "Q"
+      ],
+      "before_sha256": "b345439a3442f033b84ba447f7e26fc4e339a06c0a066cf35dd28912a247018b",
+      "after_sha256": "2c050cf4c0eb3b07e43d53eb45cae25ddc7795eee56ceec99bc0e35154750386"
+    },
+    {
+      "id": 21,
+      "reason": "Inline both positive-projector and physical-normalization estimates, with actual free-band and parity hypotheses.",
+      "sources": [
+        "L",
+        "B",
+        "Q"
+      ],
+      "before_sha256": "3109ecb03b8bb99061b0f6cea4bdae0a15e83e13c337711daccbef21a5eb4d7a",
+      "after_sha256": "83a7df7c8772470dca98fc7221c834a927ac4e89256a3ad262993f7c136a0fc7"
+    },
+    {
+      "id": 22,
+      "reason": "Inline B20 including all current factors and the two preparation endpoints.",
+      "sources": [
+        "B",
+        "Q"
+      ],
+      "before_sha256": "8f3b141ab8f14d8f21773d17c15667f8c2a656dbb46dbe666c248bf06bd20176",
+      "after_sha256": "41d3af0a74b31cc617ad806e39381e3af7903ae11488e950d3e46c304770db29"
+    },
+    {
+      "id": 23,
+      "reason": "Replace author-stage future-review/history prose by exact completed component-review identities and pending publication-composition scope; preserve unused results in the map.",
+      "sources": [
+        "Q",
+        "L",
+        "D",
+        "B"
+      ],
+      "before_sha256": "a316ca4be072228c9b4593812eb08b8dc6b3fc54b823d602336cb3322800de58",
+      "after_sha256": "41c562f69fbb64b42d58b8a8a74b1166a8cde10d8716e00b07ede29a82c74ced"
+    },
+    {
+      "id": 24,
+      "reason": "Identify the exact inherited premise scope without importing unused scattering or Cook assumptions.",
+      "sources": [
+        "P",
+        "B",
+        "Q"
+      ],
+      "before_sha256": "9b2b1f06be61d4a0c1af50b2c3b6558a503859282f589971d1cd7012878177bf",
+      "after_sha256": "d952d9ccd9b9b9c20a396f544e642fcab60132515982ab79321a6837101817c9"
+    },
+    {
+      "id": 25,
+      "reason": "Define n before its first effective-orbit use and remove duplicate singlet definition; cone-point values retain their measure-zero convention.",
+      "sources": [
+        "L",
+        "D",
+        "Q"
+      ],
+      "before_sha256": "7e6d499078b5212f6f827a36537b701f1add2f95248645ac9d4b1f89bc037f92",
+      "after_sha256": "d6537d781abdf0856eec3825a3a9c386a65f672e2ee9f0aae338998d8e1e5369"
+    },
+    {
+      "id": 26,
+      "reason": "Remove a dangling D6 label and replace the source-only Z notation by the publication definition ran Pi.",
+      "sources": [
+        "D",
+        "Q"
+      ],
+      "before_sha256": "aeeae08f786adc898ed9e8bcc3efa722cefa2395d6774d98f3602414124c14b2",
+      "after_sha256": "2d2d4fa19ec9c34d34b3cf738f0814718051d03b7202fc70123ce5d9a2425caa"
+    },
+    {
+      "id": 27,
+      "reason": "Make the unit-norm antecedent and initial dressing coordinate unambiguous after insertion of the coupled-system proof.",
+      "sources": [
+        "D",
+        "Q"
+      ],
+      "before_sha256": "624e35f7b4ad070582152041e5ee2253ddcabf47e91578b33e9adb388b0f4177",
+      "after_sha256": "128756649cba720f47d87a254ffb4384ae5b78bb58a68ec6111444e3eb3e61e7"
+    },
+    {
+      "id": 28,
+      "reason": "Spell out the finite block eigenvector already underlying the frozen density formula; no additional analytic premise.",
+      "sources": [
+        "L"
+      ],
+      "before_sha256": "ca7088e9a95b076b2a3e8777fc973e1b710e3424665a29989b519e3c393d7215",
+      "after_sha256": "b17a5a2bf3951b4753e9192279e29085c8f0f00905a29db7e09c403e0ff0813a"
+    },
+    {
+      "id": 29,
+      "reason": "Use the publication H_* notation throughout the K=0 inverse, avoiding an ambiguous K-dependent H_D and the duplicate n definition.",
+      "sources": [
+        "L",
+        "Q"
+      ],
+      "before_sha256": "0739defe4af1d866bc02e3fe397701adc459996b7a9127f22e1058bec981674b",
+      "after_sha256": "554f75356ab54c3615830a72361ee4e67c7eb2e8cd5a0950669292323fe2a205"
+    },
+    {
+      "id": 30,
+      "reason": "Define the one-body symbol and site-projection notation locally in the reproduced canonical argument.",
+      "sources": [
+        "P"
+      ],
+      "before_sha256": "941bf196cc8ea3a91ae93159c769443eff7f83de138dd7707c79ad512b804cba",
+      "after_sha256": "584ebd48591c7f43a857045ff501b94c249c89082957e24df633e4a6d2b21a00"
+    },
+    {
+      "id": 31,
+      "reason": "Include the two-endpoint energy-square argument and the proper cyclic symmetry responsible for equal component changes.",
+      "sources": [
+        "B",
+        "D",
+        "Q"
+      ],
+      "before_sha256": "080e2c442564219b2ff2b8a2216b86e161d7390268247b56675c8574a09aeabe",
+      "after_sha256": "6d7e87258411a243026cfff57f49511494458127d5e2f218bc881f99b7cce09d"
+    }
+  ],
+  "fragment_count": 13,
+  "range_count": 38,
+  "primary_blocks": 4,
+  "author_baseline": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_PRIMARY.py"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.3591316249221563,
+    "timeout_seconds": 180,
+    "primary_sha256": "a5bec672fe34491dc597a69366af105bb25e6b1e67f5176c0b2b189b5677f162",
+    "log_sha256": "a22c840234eebce26108ba63948cd873ef3f03b58ce651d8c2a336992fca6476"
+  },
+  "publication_footer": "\n\n## Publication execution record\n\nThe [primary controls](../scripts/excluded_walk_projected_free_band_canonical_current_2026_10_11.py) embed all four complete frozen author control programs\nin isolated namespaces. The original programs' source-read metadata identifies\nthis combined runner; scientific calculations use their unchanged literal\nfixtures. NumPy, SciPy and SymPy are required. Their finite algebra, matrix\nexamples, exact budgets and unvalidated quadrature do not prove the continuum\ntheorem. Canonical execution, source-copy controls and complete selective\nreview coverage are recorded in this milestone's DELIVERY_CHECKS.md.\n\nThe full parent delta at b9b032ae790c66e762a6296a1306bfb64ae7cd70 must\nland first, or the cumulative delta from main\na13caa4885f547c8d206265b031ba7649e539fd9 must be reviewed together.\nThe supplied-walk and energy-placement contract is used exactly as stated.\nNo flux/form or effective-memory result is a premise of this theorem.\n",
+  "scope": "New assembly, wrapper and finite budget/normalization checks; no author-runner replay, no independent recertification of reviewer-authored L/D arguments."
+}

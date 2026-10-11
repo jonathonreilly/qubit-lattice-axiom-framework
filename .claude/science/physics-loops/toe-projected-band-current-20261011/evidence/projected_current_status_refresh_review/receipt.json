@@ -1,0 +1,138 @@
+{
+  "frozen_utc": "2026-10-11T20:27:13.723227+00:00",
+  "finding": "Three exact status/evidence/link changes; mathematical body and primary unchanged. Delivery pack completion remains explicitly outside this addendum.",
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/PROJECTED_CURRENT_PRE_PUBLICATION_REFRESH.md",
+      "sha256": "7543767f5f2377812f78630238e73959b170752de0455fb6ab5f556a2f1868bb",
+      "bytes": 38466,
+      "lines": 877
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "bf894a323464c17faf78ae3402af8ef964635fb8fe2240ece671c0aaffcf5e5d",
+      "bytes": 38699,
+      "lines": 880
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_status_refresh.json",
+      "sha256": "ec7777a9ae9442f7bb7f7658f01b6e35fede27b054ce44f548fd0217fade7858",
+      "bytes": 1728,
+      "lines": 21
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/scripts/excluded_walk_projected_free_band_canonical_current_2026_10_11.py",
+      "sha256": "4451005b466c114b40c943509b13aaa34607b7b8e884ab584df4c19d8b1f30ff",
+      "bytes": 33843,
+      "lines": 713
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_PROJECTED_CURRENT_PUBLICATION_REVIEW.md",
+      "sha256": "076021427ff4e2cbb473363e09b3a043c2a4bae01d24bdfc69a6a42a55be8cf1",
+      "bytes": 21197,
+      "lines": 282
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_publication_review/receipt.json",
+      "sha256": "f2c75a99df4eb6139f5f2329c9471716779a8c2ecb61b180ec5788321b5aab03",
+      "bytes": 73664,
+      "lines": 1460
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_canonical_execution.json",
+      "sha256": "0ab2aa7a739029d2c9039cebc5beab38f06b0c2d099e28c8bb770eebc641e483",
+      "bytes": 8367,
+      "lines": 15
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/logs/runner-cache/excluded_walk_projected_free_band_canonical_current_2026_10_11.txt",
+      "sha256": "b8d7d1a9e68765cb6634f5a68a9e366fca1ee1b89da17fad7d4d170f435f19c5",
+      "bytes": 7803,
+      "lines": 124
+    }
+  ],
+  "protected_completed_outgoing_review": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_REVIEW.md",
+      "sha256": "8eb1d81e91227a0cda36e75459e32be80b1523709a5f82fc5af4c1e8fd6d74de",
+      "bytes": 16855,
+      "lines": 306
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent_review/receipt.json",
+      "sha256": "c5fb2219ef98d4abce39ef98be784e5c7d1ffde0054cd867214f4713226ba6e0",
+      "bytes": 19528,
+      "lines": 426
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_PROJECTED_CURRENT_STATUS_REFRESH.md",
+      "sha256": "03cd681a83236f60f3160954851bb755c43be2a5a5f60fd53a35090518a90f1c",
+      "bytes": 3846,
+      "lines": 65
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_status_refresh_review/check_refresh.json",
+      "sha256": "0ce0042103c4edc2cc66f4dd949c5ead2a4c5c325f57bfee44bacb2500a1717c",
+      "bytes": 4572,
+      "lines": 85
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_status_refresh_review/check_refresh.log",
+      "sha256": "52a3b27e78d3f95a65fd9c72457b87469783c6f14804d00052bec396452e2dd3",
+      "bytes": 477,
+      "lines": 6
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_status_refresh_review/check_refresh.py",
+      "sha256": "df0ef3797978f1c1a45d88c211da9f54a511e7505c94e86d7c3160a05bca380e",
+      "bytes": 5437,
+      "lines": 99
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_status_refresh_review/exact_note_diff.patch",
+      "sha256": "2f19344368b4034c0ee3115a7d0a696ee0a798f1365d036036e75f122bcd0117",
+      "bytes": 2360,
+      "lines": 36
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_status_refresh_review/execution.json",
+      "sha256": "fe6d8c5c6ded922c10b0f0048522a55edf7ece0671789a8e76162f17d3ecbad8",
+      "bytes": 669,
+      "lines": 14
+    }
+  ],
+  "coverage": "All changed note paragraphs, surrounding status/evidence context, complete declared edit manifest, exact whole-file before/after reconstruction, full canonical execution stdout, cache metadata and byte-equivalent cache stdout. Prior complete unchanged-math/primary review reused at exact identities.",
+  "current_note_sha256": "bf894a323464c17faf78ae3402af8ef964635fb8fe2240ece671c0aaffcf5e5d",
+  "before_recovery_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/PROJECTED_CURRENT_PRE_PUBLICATION_REFRESH.md",
+  "mathematical_sections_1_through_7_sha256": "645f4f707a07e5629c73795dd2a5150718e3c9b8d4e4fb4b6cbb5aedb84fbe59",
+  "execution": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_status_refresh_review/check_refresh.py"
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011",
+    "started_utc": "2026-10-11T20:26:11.496648+00:00",
+    "ended_utc": "2026-10-11T20:26:11.532597+00:00",
+    "wall_seconds": 0.03596070921048522,
+    "timeout_seconds": 30,
+    "exit_code": 0,
+    "helper_sha256": "df0ef3797978f1c1a45d88c211da9f54a511e7505c94e86d7c3160a05bca380e",
+    "log_sha256": "52a3b27e78d3f95a65fd9c72457b87469783c6f14804d00052bec396452e2dd3"
+  },
+  "canonical_runner_replayed": false,
+  "cache_fingerprint_algorithm_recomputed": false,
+  "delivery_observation": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-projected-band-current-20261011/DELIVERY_CHECKS.md",
+    "exists_at_inspection": false,
+    "inspected_contents": false,
+    "certified_future_contents": false
+  },
+  "delivery_observation_utc": "2026-10-11T20:26:11.529195+00:00",
+  "future_delivery_contents_certified": false,
+  "new_science_or_retained_status_verdict": false,
+  "editable_prompt_files_changed": [],
+  "writes": "Only EXCLUDED_WALK_PROJECTED_CURRENT_STATUS_REFRESH.md and projected_current_status_refresh_review/.",
+  "open_obligation": "Owner to complete and bind linked delivery/history/source-copy records; this narrow note refresh does not review future pack contents."
+}

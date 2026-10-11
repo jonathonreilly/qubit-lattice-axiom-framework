@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-10-11T19:55:42.319976+00:00",
+  "scope": "Independent reconstruction recorded before reading the new weighted-memory argument. The author freeze arrived after the reconstruction file was written.",
+  "limited_incidental_exposure": "Initial broad source lookup printed four matching lines from the unfrozen new draft: theorem-name sentence, primary-PDF source-table entry, first H0/V hypothesis line, and warning that wave operators do not put arbitrary vectors in ac(A). No equation or proof from that draft had been read; this exposure is disclosed rather than claiming total blindness.",
+  "new_argument_read": false,
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222,
+      "lines": 500
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0",
+      "bytes": 17773,
+      "lines": 329
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_review/independent_review_receipt.json",
+      "sha256": "5a73e562741e0e10e84101206a0c98d2f3daf4d534898260d14fe85a1f101fe6",
+      "bytes": 24553,
+      "lines": 458
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/kato_1957_primary.pdf",
+      "sha256": "12ce9d67ed67d096f82b55a6ef7b778a83c16d5e2f020d4946d58112f3f93fe5",
+      "bytes": 442573
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/PRE_FREEZE_RECONSTRUCTION.md",
+      "sha256": "42648b16c2cb46d544c1cd1130446e0efa7813bece3c8773336fbc3923647eff",
+      "bytes": 7394,
+      "lines": 162
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/kato_extraction.json",
+      "sha256": "edc6100a0b039e7fd4864c2c73d0a49a3c061e9634fbb704f024e0a971c84753",
+      "bytes": 1332,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/kato_primary_extracted.txt",
+      "sha256": "5e262853ce936b49d2806ac957fa04021a07c893c792df319d2a8bea686ecbde",
+      "bytes": 10977,
+      "lines": 201
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/kato_primary_page_260_image_0.png",
+      "sha256": "580561d47af7aea802309b5e05e436a90e8204793392fbb6feef0b8febd08bf4",
+      "bytes": 394328
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/kato_primary_page_263_image_0.png",
+      "sha256": "c57acde5c12b9f36c90913e3ccccc00183e7826705e522f418eefa8cacbc0546",
+      "bytes": 426277
+    }
+  ],
+  "primary_reading": "All five newly extracted primary pages read; original whole-page images of printed pp.260 and 263 visually inspected. Theorem 1 and its completeness/adjoint proof checked. Theorem 2 is not imported.",
+  "pdf_extraction_note": "pypdf emitted unsupported /90ms-RKSJ-H and /90ms-RKSJ-V encoding warnings. Mathematical theorem symbols and adjoints were checked against the original page images; the visual date is May 15, 1957, correcting an OCR glyph.",
+  "independent_result": "Complete trace-class wave operator maps an ac(A) dressing vector to a normalized transverse profile; pointwise-unitary D yields L1 convergence of q probability, strict positive weighted limits and per-component canonical-current drift in the ordered limit. No rate or joint scale.",
+  "pending": "Read complete frozen new source at 10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324 and controls, then issue source-bound review."
+}

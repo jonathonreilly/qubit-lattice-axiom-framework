@@ -1,0 +1,66 @@
+{
+  "notes": [
+    {
+      "path": "docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "bf894a323464c17faf78ae3402af8ef964635fb8fe2240ece671c0aaffcf5e5d"
+    },
+    {
+      "path": "docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "3954606703f9a66665fb1ee9a27079f7f14e5183f28a8511a38743ef5d455aa1"
+    }
+  ],
+  "runners": [
+    {
+      "path": "scripts/excluded_walk_projected_free_band_canonical_current_2026_10_11.py",
+      "sha256": "4451005b466c114b40c943509b13aaa34607b7b8e884ab584df4c19d8b1f30ff",
+      "identity_status": "fresh",
+      "cache_status": "fresh"
+    },
+    {
+      "path": "scripts/excluded_walk_memory_current_2026_10_11.py",
+      "sha256": "b5cfe4af2e2e56f6a531afaa36c19daded1003d91b3a861ebe177ba87a0ebc33",
+      "identity_status": "fresh",
+      "cache_status": "fresh"
+    }
+  ],
+  "ordinary_local_links": [
+    {
+      "source": "docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md"
+    },
+    {
+      "source": "docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../scripts/excluded_walk_projected_free_band_canonical_current_2026_10_11.py"
+    },
+    {
+      "source": "docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-projected-band-current-20261011/DELIVERY_CHECKS.md"
+    },
+    {
+      "source": "docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-projected-band-current-20261011/DELIVERY_CHECKS.md"
+    },
+    {
+      "source": "docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md"
+    },
+    {
+      "source": "docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md"
+    },
+    {
+      "source": "docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-projected-band-current-20261011/DELIVERY_CHECKS.md"
+    }
+  ],
+  "verified_frozen_evidence_copies": 379,
+  "new_graph_nodes": [
+    "excluded_walk_memory_current_bounded_theorem_note_2026-10-11",
+    "excluded_walk_projected_free_band_canonical_current_bounded_theorem_note_2026-10-11"
+  ],
+  "graph_delta": {
+    "nodes": 2,
+    "edges": 3
+  },
+  "limits": "Mechanical identities and syntax, not independent mathematics, retained audit or global landing checks."
+}

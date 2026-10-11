@@ -1,0 +1,211 @@
+{
+  "primary_sha256": "b5cfe4af2e2e56f6a531afaa36c19daded1003d91b3a861ebe177ba87a0ebc33",
+  "baseline_sha256": "edc40cf14b8aa3ccb491c1a9dd68ff794c4c095506c68c0fa3d17b08f05b34ef",
+  "records": [
+    {
+      "name": "effective_memory_Schur_sign",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 2,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:effective_memory/memory_controls.py>\", line 36, in <module>",
+        "  File \"<frozen-author:effective_memory/memory_controls.py>\", line 15, in check",
+        "AssertionError: Schur_sign_and_denominator"
+      ]
+    },
+    {
+      "name": "effective_memory_memory_sign",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 6,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:effective_memory/memory_controls.py>\", line 50, in <module>",
+        "  File \"<frozen-author:effective_memory/memory_controls.py>\", line 15, in check",
+        "AssertionError: Volterra_sign_actual_matrix"
+      ]
+    },
+    {
+      "name": "effective_memory_finite_bath_atom_omission",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 8,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:effective_memory/memory_controls.py>\", line 54, in <module>",
+        "  File \"<frozen-author:effective_memory/memory_controls.py>\", line 15, in check",
+        "AssertionError: finite_bath_nonzero_dressing_atom"
+      ]
+    },
+    {
+      "name": "effective_memory_helicity_half_omission",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 17,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:effective_memory/memory_controls.py>\", line 114, in <module>",
+        "  File \"<frozen-author:effective_memory/memory_controls.py>\", line 15, in check",
+        "AssertionError: normalized_single_helicity_density_constant"
+      ]
+    },
+    {
+      "name": "effective_memory_Poisson_factor_two_omission",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 19,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:effective_memory/memory_controls.py>\", line 162, in <module>",
+        "  File \"<frozen-author:effective_memory/memory_controls.py>\", line 15, in check",
+        "AssertionError: Poisson_interval_bound_independent_measure"
+      ]
+    },
+    {
+      "name": "weighted_memory_trace_norm_half",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 31,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:weighted_memory/weighted_controls.py>\", line 35, in <module>",
+        "  File \"<frozen-author:weighted_memory/weighted_controls.py>\", line 14, in check",
+        "AssertionError: trace_norm_factor_two"
+      ]
+    },
+    {
+      "name": "weighted_memory_forward_not_reverse",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 33,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:weighted_memory/weighted_controls.py>\", line 47, in <module>",
+        "  File \"<frozen-author:weighted_memory/weighted_controls.py>\", line 14, in check",
+        "AssertionError: reverse_wave_operator_norm_one"
+      ]
+    },
+    {
+      "name": "weighted_memory_weighted_cross_sign",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 38,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:weighted_memory/weighted_controls.py>\", line 62, in <module>",
+        "  File \"<frozen-author:weighted_memory/weighted_controls.py>\", line 14, in check",
+        "AssertionError: continuous_weighted_formula"
+      ]
+    },
+    {
+      "name": "weighted_memory_continuous_measure_factor",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 35,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:weighted_memory/weighted_controls.py>\", line 55, in <module>",
+        "  File \"<frozen-author:weighted_memory/weighted_controls.py>\", line 14, in check",
+        "AssertionError: normalized_continuous_amplitude"
+      ]
+    },
+    {
+      "name": "outgoing_resolvent_abel_sign",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 57,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:outgoing_resolvent/outgoing_controls.py>\", line 43, in <module>",
+        "  File \"<frozen-author:outgoing_resolvent/outgoing_controls.py>\", line 12, in check",
+        "AssertionError: Abel causal sign channel 0"
+      ]
+    },
+    {
+      "name": "outgoing_resolvent_helicity_measure",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 65,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:outgoing_resolvent/outgoing_controls.py>\", line 62, in <module>",
+        "  File \"<frozen-author:outgoing_resolvent/outgoing_controls.py>\", line 12, in check",
+        "AssertionError: helicity half measure"
+      ]
+    },
+    {
+      "name": "outgoing_resolvent_energy_moment_factor",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 67,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:outgoing_resolvent/outgoing_controls.py>\", line 69, in <module>",
+        "  File \"<frozen-author:outgoing_resolvent/outgoing_controls.py>\", line 12, in check",
+        "AssertionError: permutation complement factor"
+      ]
+    },
+    {
+      "name": "outgoing_resolvent_cone_power",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 70,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:outgoing_resolvent/outgoing_controls.py>\", line 80, in <module>",
+        "  File \"<frozen-author:outgoing_resolvent/outgoing_controls.py>\", line 12, in check",
+        "AssertionError: cone coefficient exact powers"
+      ]
+    },
+    {
+      "name": "outgoing_resolvent_weighted_lower_factor",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 74,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:outgoing_resolvent/outgoing_controls.py>\", line 89, in <module>",
+        "  File \"<frozen-author:outgoing_resolvent/outgoing_controls.py>\", line 12, in check",
+        "AssertionError: weighted mass constant"
+      ]
+    },
+    {
+      "name": "mean_kernel_half",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 23,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    exec(compile(source, namespace[\"__file__\"], \"exec\"), namespace, namespace)",
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:effective_memory/mean_controls.py>\", line 12, in <module>",
+        "AssertionError: mean_kernel_constant"
+      ]
+    },
+    {
+      "name": "joint_delta_power",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 48,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    exec(compile(source, namespace[\"__file__\"], \"exec\"), namespace, namespace)",
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:joint_scale_current/scale_controls.py>\", line 21, in <module>",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "global_normalization_removed",
+      "source_exactly_reconstructed": true,
+      "successful_stdout_lines": 50,
+      "successful_stdout_matches_read_baseline": true,
+      "failure_tail": [
+        "    exec(compile(source, namespace[\"__file__\"], \"exec\"), namespace, namespace)",
+        "    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "  File \"<frozen-author:joint_scale_current/scale_controls.py>\", line 51, in <module>",
+        "AssertionError"
+      ]
+    }
+  ],
+  "coverage": "Every complete source copy reconstructed. All successful stdout prefixes byte-normalized against the completely read baseline; only mutated block source digests normalized. Every distinct final exception frame/message read. No unresolved/truncated log portion."
+}

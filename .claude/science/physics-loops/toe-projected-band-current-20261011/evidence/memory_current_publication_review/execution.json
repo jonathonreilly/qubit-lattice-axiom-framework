@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/composition_controls.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011",
+  "started_utc": "2026-10-11T20:40:41.440366+00:00",
+  "ended_utc": "2026-10-11T20:40:41.498340+00:00",
+  "wall_seconds": 0.057986542116850615,
+  "timeout_seconds": 30,
+  "exit_code": 0,
+  "helper_sha256": "6f409349b6461d55c43f71689923912c5efd9dcef6615aef170b6cfb1a2c4203",
+  "log_sha256": "ddd337a012791e6d1ce62181e2b6d86b61b105fd56e83ed4985ced7ca10de27c"
+}

@@ -1,0 +1,8 @@
+{
+  "pdf": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/kato_1957_primary.pdf",
+  "sha256": "12ce9d67ed67d096f82b55a6ef7b778a83c16d5e2f020d4946d58112f3f93fe5",
+  "extractor": "pypdf",
+  "version": "6.11.0",
+  "pages": 5,
+  "initial_attempt": "pymupdf unavailable; command -v pdftotext also unavailable; no installation attempted"
+}

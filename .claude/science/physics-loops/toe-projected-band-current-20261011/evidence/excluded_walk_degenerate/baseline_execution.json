@@ -1,0 +1,9 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate/degenerate_checks.py"
+  ],
+  "exit": 0,
+  "elapsed": 1.0184242078103125,
+  "timeout": 120
+}

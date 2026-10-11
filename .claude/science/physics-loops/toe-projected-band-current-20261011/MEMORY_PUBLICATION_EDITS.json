@@ -1,0 +1,20 @@
+{
+  "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+  "source_sha256": "c05465cee9acb7ee1bc9b0296b4fd5546432bd8188043194b1701a2d3654ef87",
+  "edits": [
+    {
+      "before": "\nclaim_type: bounded_theorem\n",
+      "after": "\nclaim_type: bounded_theorem\nrunner: scripts/excluded_walk_memory_current_2026_10_11.py\n",
+      "reason": "Bind the existing primary in the repository citation graph."
+    },
+    {
+      "before": "Current surface status: conditional-support. The four source arguments have\ncompleted selective independent mathematical checks at the identities recorded\nin Section 17. This publication composition is new and still requires its own\nsource-bound check. No independent retained-status audit is claimed.",
+      "after": "Current surface status: conditional-support. The four source arguments have\ncompleted selective independent mathematical checks at the identities recorded\nin Section 17. The complete publication composition has also received a scoped\nsource-bound check. Its reviewer's prior source authorship is disclosed in the\n[delivery checks](../.claude/science/physics-loops/toe-projected-band-current-20261011/DELIVERY_CHECKS.md);\nthat authorship is not counted as new independent evidence. No independent\nretained-status audit is claimed.",
+      "reason": "Record the completed source-bound composition review, with explicit prior-authorship and audit limits."
+    }
+  ],
+  "appended_text": "\n## Publication evidence and parent dependency\n\nThe [delivery checks](../.claude/science/physics-loops/toe-projected-band-current-20261011/DELIVERY_CHECKS.md)\nrecord final source identities, selective review coverage, canonical primary\nexecution and actual semantic source-copy controls. The primary is self-contained\napart from NumPy, SciPy and SymPy. Its finite controls and literal-helper replay\ndo not replace the continuum proof or independently certify it. No Lean proof\nof the analytic memory/current theorem is asserted.\n\nThis milestone depends on the complete parent walk delta at\nb9b032ae790c66e762a6296a1306bfb64ae7cd70. It must land after that parent or\nreceive cumulative review from main a13caa4885f547c8d206265b031ba7649e539fd9.\nThe separate flux/form and supplied stochastic transport branches are not\npremises of these current and memory results.\n",
+  "publication_sha256": "3954606703f9a66665fb1ee9a27079f7f14e5183f28a8511a38743ef5d455aa1",
+  "scope": "Runner metadata, scoped completed-review status and evidence/parent footer only; mathematical body unchanged.",
+  "preparation_failure": "First unique-substitution guard rejected unanchored claim_type substring because target_claim_type also matched. No source or repository file was changed by that attempt. New substitution includes the preceding newline."
+}

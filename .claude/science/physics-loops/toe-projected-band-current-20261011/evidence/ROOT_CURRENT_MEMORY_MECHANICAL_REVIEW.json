@@ -1,0 +1,14 @@
+{
+  "weighted_memory/receipt.json": {
+    "verified_records": 197,
+    "unique_paths": 181
+  },
+  "joint_scale_review/receipt.json": {
+    "verified_records": 13,
+    "unique_paths": 13
+  },
+  "mutations": {
+    "count": 20,
+    "all_exact_source_edits_and_intended_failures": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "outgoing_resolvent/outgoing_controls.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.5725285410881042,
+  "timeout_seconds": 120,
+  "log_sha256": "c69975405aad8484d5a84b446b324172bbeafb5b5744806103d1c92da33a2bf9"
+}

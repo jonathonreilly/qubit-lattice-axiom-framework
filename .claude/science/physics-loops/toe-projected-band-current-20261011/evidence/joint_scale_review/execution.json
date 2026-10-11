@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/independent_controls.py"
+  ],
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "exit_code": 0,
+  "timeout_seconds": 30,
+  "script_sha256": "20c4bb4a4a96129786a909cafef0246e4d3285c587195493366954e9be46911b",
+  "log_sha256": "ede9bffc64e05ab63803980cd09c9dc92e12eca90cb2c1783ad70ac78d4ee588"
+}

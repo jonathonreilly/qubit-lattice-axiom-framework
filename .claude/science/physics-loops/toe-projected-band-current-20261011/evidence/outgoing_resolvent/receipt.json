@@ -1,0 +1,133 @@
+{
+  "scope": "Author proof R1-R14 and finite controls; independent review pending. No external audit or continuum proof by finite bath.",
+  "source_coverage": "Complete prior proofs reused at frozen hashes; R1-R14 written and reviewed fully by root, actual L5 and complete memory E20-E24/weighted W1-W12 refreshed.",
+  "records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_DRAFT.md",
+      "sha256": "58a96a049701667e673bde1acf98e5346356483101654b3464fe11e94fd02c21",
+      "bytes": 11171
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/attempt01_baseline.log",
+      "sha256": "5334f0bcf40d25c818e426c5a19609227335608d89fd162927a00f9ec950361a",
+      "bytes": 1158
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/attempt01_execution.json",
+      "sha256": "8e7d77095645b5d6869323d9cb9086c1c330b5781c05204cea0ea95e3a200f2d",
+      "bytes": 290
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/attempt01_outgoing_controls.py",
+      "sha256": "a7754ebe7e7b8d47abbfacfd4d8058ae7058c0662e96e6a7986d74b1eda5c7ad",
+      "bytes": 4147
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/baseline.log",
+      "sha256": "c69975405aad8484d5a84b446b324172bbeafb5b5744806103d1c92da33a2bf9",
+      "bytes": 1255
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/development_log.md",
+      "sha256": "e766b88b1e48faccde015abee3594d9deb69935c21a96d7e96a5641b4ce34e86",
+      "bytes": 397
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/execution.json",
+      "sha256": "f3522d568831dc20deaa9d9c1db85276eaf2b3a95e85f50b0c5df539bdaf3c57",
+      "bytes": 290
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_abel_sign.log",
+      "sha256": "ffbe48d746322e66009b8d3092b7b5745424f1fda12e4a955eb5b24fca14aa08",
+      "bytes": 714
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_abel_sign.py",
+      "sha256": "ed2802e3b5441bbce2503acdddbf4609c8e0d8f2a1f2aecc03870e94abb6ccc8",
+      "bytes": 4171
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_cone_power.log",
+      "sha256": "0d73349908d9f6c2d28d127dc0079dcffda2377b1c4dc63fa719234f0f8d7cc6",
+      "bytes": 1409
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_cone_power.py",
+      "sha256": "47d0f56d13ab7e91f35fa3cddc608aa41fad946fa058001bb77daf3d0fe0de8c",
+      "bytes": 4172
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_energy_moment_factor.log",
+      "sha256": "12a3b47da3fdaaa0768d0e920cce52df05fb5cafa7cc0c0271c49f5d1acd45e4",
+      "bytes": 1247
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_energy_moment_factor.py",
+      "sha256": "b5f8be442cd5676454d64ca116404b285163ff2dbc5ca7155a7a2882e9d7d8c4",
+      "bytes": 4172
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_helicity_measure.log",
+      "sha256": "798e7682c87026853ab5ab0b56cffa5952e728b9eca11091d10883b8dba59f0f",
+      "bytes": 1178
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_helicity_measure.py",
+      "sha256": "fa2da9ef03821cf8d363a3ab153062c33fbe326d6a17410d029f977de3ccefc3",
+      "bytes": 4172
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_weighted_lower_factor.log",
+      "sha256": "2e06095d02baa8910860637bead57400290868fbcf140000354be10f32c81169",
+      "bytes": 1423
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutant_weighted_lower_factor.py",
+      "sha256": "f0967d6228cedb5449f8d3c28c334743a860d959181f20e56077ca69381a8953",
+      "bytes": 4172
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/mutation_manifest.json",
+      "sha256": "2a67e8e894e2dcc7219a2409575ccba358ad18e7872bf2b16bdcae774962ba02",
+      "bytes": 3128
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/outgoing_controls.py",
+      "sha256": "5959a175ffd66638f25b23315d1923c344d51c790ada16a85166671058049c75",
+      "bytes": 4172
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md",
+      "sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324",
+      "bytes": 17059
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "bytes": 11538
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_REVIEW.md",
+      "sha256": "a2bb951a15a90ca8dba4cba928f6307fdde078f30a41f9f07e818561f7bf0484",
+      "bytes": 17802
+    }
+  ],
+  "failures": "Initial SymPy structural-equality failure preserved in attempt01 source/log/record; simplification-only repair, no tolerance or science changes.",
+  "new_result": "Abel outgoing-resolvent formula and direction-independent explicit epsilon-weighted lower bound; no convergence rate.",
+  "open_obligations": [
+    "source-bound independent review",
+    "publication composition if selected"
+  ],
+  "editable_prompt_files_changed": []
+}

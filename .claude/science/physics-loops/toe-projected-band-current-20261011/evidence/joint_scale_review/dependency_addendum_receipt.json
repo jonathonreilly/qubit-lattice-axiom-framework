@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-10-11T20:15:42.783150+00:00",
+  "scope": "Final weighted-review dependency refresh only; frozen original joint review is not rewritten.",
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "lines": 236
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_REVIEW.md",
+      "sha256": "2867fc1179a7b82b095e7719bc2f9015fdd87b5190626f61b0adfbd4fc318bf6",
+      "lines": 252
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/receipt.json",
+      "sha256": "49bd1d8872a07aea1e5266cb2f07f3ea2aff4d9a9602f7a141e0051037d92b80",
+      "lines": 162
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md",
+      "sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324",
+      "lines": 339
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_REVIEW.md",
+      "sha256": "a2bb951a15a90ca8dba4cba928f6307fdde078f30a41f9f07e818561f7bf0484",
+      "lines": 319
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/independent_review_receipt.json",
+      "sha256": "74990de59ab11a8011f4164ce689b0f80153d261c073c486f47b78a1beaf1a28",
+      "lines": 474
+    }
+  ],
+  "output": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/DEPENDENCY_ADDENDUM.md",
+    "sha256": "8ef5245b3301a19338eedfc8f3f98610b6d3162538b80fbe01bfaf27e5a1273a",
+    "lines": 11
+  },
+  "coverage": "Complete final 319-line weighted review and full 474-line receipt read. The unchanged complete weighted/joint source readings and original independent joint proof are reused. No source change or new analytic claim.",
+  "execution": "No mathematical helper replay for this addendum.",
+  "excluded": "Root outgoing-resolvent/coercivity extension; audit or retained status.",
+  "originals_preserved": true
+}

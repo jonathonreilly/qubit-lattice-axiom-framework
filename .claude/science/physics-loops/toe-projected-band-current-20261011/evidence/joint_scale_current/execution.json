@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_current/scale_controls.py"
+  ],
+  "exit_code": 0,
+  "seconds": 0.3454183330759406,
+  "timeout_seconds": 60,
+  "source_sha256": "1a71fb0d680630d0581fe4f982520d4bc3bc51a2649c2359815c3445c2b4d233",
+  "log_sha256": "acc130f9337ead71aca970ef694f3d7b2ec58aeadbdbb603e5bb43fa1c1b2230"
+}

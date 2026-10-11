@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_publication_review/composition_controls.py"
+  ],
+  "returncode": 0,
+  "elapsed_seconds": 0.07720920816063881,
+  "timeout_seconds": 120,
+  "source_sha256": "6c7cc436d7bd2096ae1f5564de2c8b772ecd672b790dc2a0ebe01116b473b9f1",
+  "log_sha256": "dd55f94580779a654e37e2cbc2d8b3e01f23debe59e47c9ffff2d5998282b270"
+}

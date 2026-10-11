@@ -1,0 +1,73 @@
+{
+  "baseline_sha256": "3957104cf4362b83c6f6e11c5cbbff365d34e232dc1134cd09cdc9a97312e4ec",
+  "mutations": [
+    {
+      "name": "placement",
+      "before": "PLACEMENT_FACTOR = 1",
+      "after": "PLACEMENT_FACTOR = 0",
+      "expected_assertion": "full physical canonical trace identity",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_placement.py",
+      "source_sha256": "9e4b9f9adebdcbab5987e1759ba14e92e81bab4d49ad71da4b519ad3f1d4a018",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_placement.log",
+      "log_sha256": "37c86f03a6de8379838eff0d9d5894ae5d9e274e2ae865b6abf577bf1cc535bf",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_placement.py"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 0.5302499169483781,
+      "intended_failure": true
+    },
+    {
+      "name": "transverse_trace",
+      "before": "TRANSVERSE_TRACE_FACTOR = 2",
+      "after": "TRANSVERSE_TRACE_FACTOR = 0",
+      "expected_assertion": "full physical canonical trace identity",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_transverse_trace.py",
+      "source_sha256": "78c74ed6d62bae7afacff52fdcea5faced4a3e3cfd3eaf2ddd913b0a8f3e4650",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_transverse_trace.log",
+      "log_sha256": "7c1b7a89507ab4b7f09d5c3b4bb0eee05ba62eb2705702fa2624a9c9adf12e0f",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_transverse_trace.py"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 0.226863665971905,
+      "intended_failure": true
+    },
+    {
+      "name": "high_corrector",
+      "before": "HIGH_CORRECTOR_SIGN = 1",
+      "after": "HIGH_CORRECTOR_SIGN = -1",
+      "expected_assertion": "high-spectrum corrector residual",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_high_corrector.py",
+      "source_sha256": "f20c8013bf7cdcbfe048db4a4114f75c56fa3b919c1f9261f0ed6ad9658c38e4",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_high_corrector.log",
+      "log_sha256": "a6767b396ce91b949fff79c5424815f0c232b2fe0d60f04442d2c6f7f44d9efe",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_high_corrector.py"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 0.3706854577176273,
+      "intended_failure": true
+    },
+    {
+      "name": "global_normalization",
+      "before": "GLOBAL_RENORMALIZATION = True",
+      "after": "GLOBAL_RENORMALIZATION = False",
+      "expected_assertion": "single global projection normalization",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_global_normalization.py",
+      "source_sha256": "d340a82f9e0973f52e1df8c8a3b1dedd2f1c13da3645f278d9eed669c09c7621",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_global_normalization.log",
+      "log_sha256": "f77c1dbd3528a473a0c81412afee0eec4e2245fe236945b0fb0d8ddbfcfa9e5d",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_global_normalization.py"
+      ],
+      "exit_code": 1,
+      "elapsed_seconds": 0.6962141250260174,
+      "intended_failure": true
+    }
+  ]
+}

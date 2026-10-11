@@ -1,0 +1,35 @@
+{
+  "note_sha256": "c05465cee9acb7ee1bc9b0296b4fd5546432bd8188043194b1701a2d3654ef87",
+  "primary_sha256": "b5cfe4af2e2e56f6a531afaa36c19daded1003d91b3a861ebe177ba87a0ebc33",
+  "chunks": 59,
+  "exact_source_fragments": 29,
+  "unique_source_edits": 36,
+  "literal_helpers": [
+    {
+      "path": "effective_memory/memory_controls.py",
+      "sha256": "10980b8195c33ac813f59632cc028a1dbd8a04e066930786dabea338ed162c4a",
+      "lines": 165
+    },
+    {
+      "path": "effective_memory/mean_controls.py",
+      "sha256": "8376f00539c79b580b6c142b5b71b8d0d4ec39cd98f47e9577170e915d5b097c",
+      "lines": 36
+    },
+    {
+      "path": "weighted_memory/weighted_controls.py",
+      "sha256": "70807cce821d3e2eca3fc96cefd52fa1cfe83c4496801b9c9f2f7b9dd5108c24",
+      "lines": 106
+    },
+    {
+      "path": "joint_scale_current/scale_controls.py",
+      "sha256": "1a71fb0d680630d0581fe4f982520d4bc3bc51a2649c2359815c3445c2b4d233",
+      "lines": 54
+    },
+    {
+      "path": "outgoing_resolvent/outgoing_controls.py",
+      "sha256": "5959a175ffd66638f25b23315d1923c344d51c790ada16a85166671058049c75",
+      "lines": 96
+    }
+  ],
+  "root_reading": "All new editorial text and every declared before/after edit read in full. Complete unchanged component arguments/helper sources reused from prior full root readings at verified exact identities. Root authored the outgoing and joint-scale arguments; this is author/composition consistency, not their independent review. New whole-composition review pending."
+}

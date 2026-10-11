@@ -1,0 +1,2370 @@
+{
+  "checked_utc": "2026-10-11T20:40:41.492623+00:00",
+  "scope": "Composition bytes, inherited formula identity, actual-wrapper synthetic execution and preserved author evidence; not continuum proof or author mathematical replay.",
+  "checks": [
+    "frozen input FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+    "frozen input excluded_walk_memory_current_2026_10_11.py",
+    "frozen input memory_current_composition/SOURCE_COMPOSITION.json",
+    "frozen input memory_current_composition/receipt.json",
+    "source input identity M",
+    "source input identity W",
+    "source input identity G",
+    "source input identity P",
+    "source input identity D",
+    "source input identity L",
+    "source input identity R",
+    "chunk 0 index",
+    "chunk 0 exact output slice",
+    "chunk 0 byte bounds",
+    "chunk 0 line bounds",
+    "chunk 0 output digest",
+    "chunk 0 explicit editorial kind",
+    "chunk 1 index",
+    "chunk 1 exact output slice",
+    "chunk 1 byte bounds",
+    "chunk 1 line bounds",
+    "chunk 1 output digest",
+    "chunk 1 original source bytes",
+    "chunk 1 original digest",
+    "chunk 1 source identity",
+    "chunk 1 source byte bounds",
+    "chunk 1 exact edited result",
+    "chunk 2 index",
+    "chunk 2 exact output slice",
+    "chunk 2 byte bounds",
+    "chunk 2 line bounds",
+    "chunk 2 output digest",
+    "chunk 2 explicit editorial kind",
+    "chunk 3 index",
+    "chunk 3 exact output slice",
+    "chunk 3 byte bounds",
+    "chunk 3 line bounds",
+    "chunk 3 output digest",
+    "chunk 3 original source bytes",
+    "chunk 3 original digest",
+    "chunk 3 source identity",
+    "chunk 3 source byte bounds",
+    "chunk 3 edit 0 unique",
+    "chunk 3 edit 1 unique",
+    "chunk 3 edit 2 unique",
+    "chunk 3 exact edited result",
+    "chunk 4 index",
+    "chunk 4 exact output slice",
+    "chunk 4 byte bounds",
+    "chunk 4 line bounds",
+    "chunk 4 output digest",
+    "chunk 4 explicit editorial kind",
+    "chunk 5 index",
+    "chunk 5 exact output slice",
+    "chunk 5 byte bounds",
+    "chunk 5 line bounds",
+    "chunk 5 output digest",
+    "chunk 5 original source bytes",
+    "chunk 5 original digest",
+    "chunk 5 source identity",
+    "chunk 5 source byte bounds",
+    "chunk 5 exact edited result",
+    "chunk 6 index",
+    "chunk 6 exact output slice",
+    "chunk 6 byte bounds",
+    "chunk 6 line bounds",
+    "chunk 6 output digest",
+    "chunk 6 explicit editorial kind",
+    "chunk 7 index",
+    "chunk 7 exact output slice",
+    "chunk 7 byte bounds",
+    "chunk 7 line bounds",
+    "chunk 7 output digest",
+    "chunk 7 original source bytes",
+    "chunk 7 original digest",
+    "chunk 7 source identity",
+    "chunk 7 source byte bounds",
+    "chunk 7 edit 0 unique",
+    "chunk 7 edit 1 unique",
+    "chunk 7 exact edited result",
+    "chunk 8 index",
+    "chunk 8 exact output slice",
+    "chunk 8 byte bounds",
+    "chunk 8 line bounds",
+    "chunk 8 output digest",
+    "chunk 8 explicit editorial kind",
+    "chunk 9 index",
+    "chunk 9 exact output slice",
+    "chunk 9 byte bounds",
+    "chunk 9 line bounds",
+    "chunk 9 output digest",
+    "chunk 9 original source bytes",
+    "chunk 9 original digest",
+    "chunk 9 source identity",
+    "chunk 9 source byte bounds",
+    "chunk 9 exact edited result",
+    "chunk 10 index",
+    "chunk 10 exact output slice",
+    "chunk 10 byte bounds",
+    "chunk 10 line bounds",
+    "chunk 10 output digest",
+    "chunk 10 explicit editorial kind",
+    "chunk 11 index",
+    "chunk 11 exact output slice",
+    "chunk 11 byte bounds",
+    "chunk 11 line bounds",
+    "chunk 11 output digest",
+    "chunk 11 original source bytes",
+    "chunk 11 original digest",
+    "chunk 11 source identity",
+    "chunk 11 source byte bounds",
+    "chunk 11 exact edited result",
+    "chunk 12 index",
+    "chunk 12 exact output slice",
+    "chunk 12 byte bounds",
+    "chunk 12 line bounds",
+    "chunk 12 output digest",
+    "chunk 12 explicit editorial kind",
+    "chunk 13 index",
+    "chunk 13 exact output slice",
+    "chunk 13 byte bounds",
+    "chunk 13 line bounds",
+    "chunk 13 output digest",
+    "chunk 13 original source bytes",
+    "chunk 13 original digest",
+    "chunk 13 source identity",
+    "chunk 13 source byte bounds",
+    "chunk 13 edit 0 unique",
+    "chunk 13 edit 1 unique",
+    "chunk 13 exact edited result",
+    "chunk 14 index",
+    "chunk 14 exact output slice",
+    "chunk 14 byte bounds",
+    "chunk 14 line bounds",
+    "chunk 14 output digest",
+    "chunk 14 explicit editorial kind",
+    "chunk 15 index",
+    "chunk 15 exact output slice",
+    "chunk 15 byte bounds",
+    "chunk 15 line bounds",
+    "chunk 15 output digest",
+    "chunk 15 original source bytes",
+    "chunk 15 original digest",
+    "chunk 15 source identity",
+    "chunk 15 source byte bounds",
+    "chunk 15 edit 0 unique",
+    "chunk 15 edit 1 unique",
+    "chunk 15 exact edited result",
+    "chunk 16 index",
+    "chunk 16 exact output slice",
+    "chunk 16 byte bounds",
+    "chunk 16 line bounds",
+    "chunk 16 output digest",
+    "chunk 16 explicit editorial kind",
+    "chunk 17 index",
+    "chunk 17 exact output slice",
+    "chunk 17 byte bounds",
+    "chunk 17 line bounds",
+    "chunk 17 output digest",
+    "chunk 17 original source bytes",
+    "chunk 17 original digest",
+    "chunk 17 source identity",
+    "chunk 17 source byte bounds",
+    "chunk 17 edit 0 unique",
+    "chunk 17 edit 1 unique",
+    "chunk 17 exact edited result",
+    "chunk 18 index",
+    "chunk 18 exact output slice",
+    "chunk 18 byte bounds",
+    "chunk 18 line bounds",
+    "chunk 18 output digest",
+    "chunk 18 explicit editorial kind",
+    "chunk 19 index",
+    "chunk 19 exact output slice",
+    "chunk 19 byte bounds",
+    "chunk 19 line bounds",
+    "chunk 19 output digest",
+    "chunk 19 original source bytes",
+    "chunk 19 original digest",
+    "chunk 19 source identity",
+    "chunk 19 source byte bounds",
+    "chunk 19 exact edited result",
+    "chunk 20 index",
+    "chunk 20 exact output slice",
+    "chunk 20 byte bounds",
+    "chunk 20 line bounds",
+    "chunk 20 output digest",
+    "chunk 20 explicit editorial kind",
+    "chunk 21 index",
+    "chunk 21 exact output slice",
+    "chunk 21 byte bounds",
+    "chunk 21 line bounds",
+    "chunk 21 output digest",
+    "chunk 21 original source bytes",
+    "chunk 21 original digest",
+    "chunk 21 source identity",
+    "chunk 21 source byte bounds",
+    "chunk 21 edit 0 unique",
+    "chunk 21 edit 1 unique",
+    "chunk 21 exact edited result",
+    "chunk 22 index",
+    "chunk 22 exact output slice",
+    "chunk 22 byte bounds",
+    "chunk 22 line bounds",
+    "chunk 22 output digest",
+    "chunk 22 explicit editorial kind",
+    "chunk 23 index",
+    "chunk 23 exact output slice",
+    "chunk 23 byte bounds",
+    "chunk 23 line bounds",
+    "chunk 23 output digest",
+    "chunk 23 original source bytes",
+    "chunk 23 original digest",
+    "chunk 23 source identity",
+    "chunk 23 source byte bounds",
+    "chunk 23 exact edited result",
+    "chunk 24 index",
+    "chunk 24 exact output slice",
+    "chunk 24 byte bounds",
+    "chunk 24 line bounds",
+    "chunk 24 output digest",
+    "chunk 24 explicit editorial kind",
+    "chunk 25 index",
+    "chunk 25 exact output slice",
+    "chunk 25 byte bounds",
+    "chunk 25 line bounds",
+    "chunk 25 output digest",
+    "chunk 25 original source bytes",
+    "chunk 25 original digest",
+    "chunk 25 source identity",
+    "chunk 25 source byte bounds",
+    "chunk 25 edit 0 unique",
+    "chunk 25 edit 1 unique",
+    "chunk 25 exact edited result",
+    "chunk 26 index",
+    "chunk 26 exact output slice",
+    "chunk 26 byte bounds",
+    "chunk 26 line bounds",
+    "chunk 26 output digest",
+    "chunk 26 explicit editorial kind",
+    "chunk 27 index",
+    "chunk 27 exact output slice",
+    "chunk 27 byte bounds",
+    "chunk 27 line bounds",
+    "chunk 27 output digest",
+    "chunk 27 original source bytes",
+    "chunk 27 original digest",
+    "chunk 27 source identity",
+    "chunk 27 source byte bounds",
+    "chunk 27 edit 0 unique",
+    "chunk 27 edit 1 unique",
+    "chunk 27 exact edited result",
+    "chunk 28 index",
+    "chunk 28 exact output slice",
+    "chunk 28 byte bounds",
+    "chunk 28 line bounds",
+    "chunk 28 output digest",
+    "chunk 28 explicit editorial kind",
+    "chunk 29 index",
+    "chunk 29 exact output slice",
+    "chunk 29 byte bounds",
+    "chunk 29 line bounds",
+    "chunk 29 output digest",
+    "chunk 29 original source bytes",
+    "chunk 29 original digest",
+    "chunk 29 source identity",
+    "chunk 29 source byte bounds",
+    "chunk 29 edit 0 unique",
+    "chunk 29 edit 1 unique",
+    "chunk 29 edit 2 unique",
+    "chunk 29 exact edited result",
+    "chunk 30 index",
+    "chunk 30 exact output slice",
+    "chunk 30 byte bounds",
+    "chunk 30 line bounds",
+    "chunk 30 output digest",
+    "chunk 30 explicit editorial kind",
+    "chunk 31 index",
+    "chunk 31 exact output slice",
+    "chunk 31 byte bounds",
+    "chunk 31 line bounds",
+    "chunk 31 output digest",
+    "chunk 31 original source bytes",
+    "chunk 31 original digest",
+    "chunk 31 source identity",
+    "chunk 31 source byte bounds",
+    "chunk 31 exact edited result",
+    "chunk 32 index",
+    "chunk 32 exact output slice",
+    "chunk 32 byte bounds",
+    "chunk 32 line bounds",
+    "chunk 32 output digest",
+    "chunk 32 explicit editorial kind",
+    "chunk 33 index",
+    "chunk 33 exact output slice",
+    "chunk 33 byte bounds",
+    "chunk 33 line bounds",
+    "chunk 33 output digest",
+    "chunk 33 original source bytes",
+    "chunk 33 original digest",
+    "chunk 33 source identity",
+    "chunk 33 source byte bounds",
+    "chunk 33 exact edited result",
+    "chunk 34 index",
+    "chunk 34 exact output slice",
+    "chunk 34 byte bounds",
+    "chunk 34 line bounds",
+    "chunk 34 output digest",
+    "chunk 34 explicit editorial kind",
+    "chunk 35 index",
+    "chunk 35 exact output slice",
+    "chunk 35 byte bounds",
+    "chunk 35 line bounds",
+    "chunk 35 output digest",
+    "chunk 35 original source bytes",
+    "chunk 35 original digest",
+    "chunk 35 source identity",
+    "chunk 35 source byte bounds",
+    "chunk 35 edit 0 unique",
+    "chunk 35 exact edited result",
+    "chunk 36 index",
+    "chunk 36 exact output slice",
+    "chunk 36 byte bounds",
+    "chunk 36 line bounds",
+    "chunk 36 output digest",
+    "chunk 36 explicit editorial kind",
+    "chunk 37 index",
+    "chunk 37 exact output slice",
+    "chunk 37 byte bounds",
+    "chunk 37 line bounds",
+    "chunk 37 output digest",
+    "chunk 37 original source bytes",
+    "chunk 37 original digest",
+    "chunk 37 source identity",
+    "chunk 37 source byte bounds",
+    "chunk 37 exact edited result",
+    "chunk 38 index",
+    "chunk 38 exact output slice",
+    "chunk 38 byte bounds",
+    "chunk 38 line bounds",
+    "chunk 38 output digest",
+    "chunk 38 explicit editorial kind",
+    "chunk 39 index",
+    "chunk 39 exact output slice",
+    "chunk 39 byte bounds",
+    "chunk 39 line bounds",
+    "chunk 39 output digest",
+    "chunk 39 original source bytes",
+    "chunk 39 original digest",
+    "chunk 39 source identity",
+    "chunk 39 source byte bounds",
+    "chunk 39 exact edited result",
+    "chunk 40 index",
+    "chunk 40 exact output slice",
+    "chunk 40 byte bounds",
+    "chunk 40 line bounds",
+    "chunk 40 output digest",
+    "chunk 40 explicit editorial kind",
+    "chunk 41 index",
+    "chunk 41 exact output slice",
+    "chunk 41 byte bounds",
+    "chunk 41 line bounds",
+    "chunk 41 output digest",
+    "chunk 41 original source bytes",
+    "chunk 41 original digest",
+    "chunk 41 source identity",
+    "chunk 41 source byte bounds",
+    "chunk 41 exact edited result",
+    "chunk 42 index",
+    "chunk 42 exact output slice",
+    "chunk 42 byte bounds",
+    "chunk 42 line bounds",
+    "chunk 42 output digest",
+    "chunk 42 explicit editorial kind",
+    "chunk 43 index",
+    "chunk 43 exact output slice",
+    "chunk 43 byte bounds",
+    "chunk 43 line bounds",
+    "chunk 43 output digest",
+    "chunk 43 original source bytes",
+    "chunk 43 original digest",
+    "chunk 43 source identity",
+    "chunk 43 source byte bounds",
+    "chunk 43 edit 0 unique",
+    "chunk 43 exact edited result",
+    "chunk 44 index",
+    "chunk 44 exact output slice",
+    "chunk 44 byte bounds",
+    "chunk 44 line bounds",
+    "chunk 44 output digest",
+    "chunk 44 explicit editorial kind",
+    "chunk 45 index",
+    "chunk 45 exact output slice",
+    "chunk 45 byte bounds",
+    "chunk 45 line bounds",
+    "chunk 45 output digest",
+    "chunk 45 original source bytes",
+    "chunk 45 original digest",
+    "chunk 45 source identity",
+    "chunk 45 source byte bounds",
+    "chunk 45 edit 0 unique",
+    "chunk 45 exact edited result",
+    "chunk 46 index",
+    "chunk 46 exact output slice",
+    "chunk 46 byte bounds",
+    "chunk 46 line bounds",
+    "chunk 46 output digest",
+    "chunk 46 explicit editorial kind",
+    "chunk 47 index",
+    "chunk 47 exact output slice",
+    "chunk 47 byte bounds",
+    "chunk 47 line bounds",
+    "chunk 47 output digest",
+    "chunk 47 original source bytes",
+    "chunk 47 original digest",
+    "chunk 47 source identity",
+    "chunk 47 source byte bounds",
+    "chunk 47 exact edited result",
+    "chunk 48 index",
+    "chunk 48 exact output slice",
+    "chunk 48 byte bounds",
+    "chunk 48 line bounds",
+    "chunk 48 output digest",
+    "chunk 48 explicit editorial kind",
+    "chunk 49 index",
+    "chunk 49 exact output slice",
+    "chunk 49 byte bounds",
+    "chunk 49 line bounds",
+    "chunk 49 output digest",
+    "chunk 49 original source bytes",
+    "chunk 49 original digest",
+    "chunk 49 source identity",
+    "chunk 49 source byte bounds",
+    "chunk 49 edit 0 unique",
+    "chunk 49 exact edited result",
+    "chunk 50 index",
+    "chunk 50 exact output slice",
+    "chunk 50 byte bounds",
+    "chunk 50 line bounds",
+    "chunk 50 output digest",
+    "chunk 50 explicit editorial kind",
+    "chunk 51 index",
+    "chunk 51 exact output slice",
+    "chunk 51 byte bounds",
+    "chunk 51 line bounds",
+    "chunk 51 output digest",
+    "chunk 51 original source bytes",
+    "chunk 51 original digest",
+    "chunk 51 source identity",
+    "chunk 51 source byte bounds",
+    "chunk 51 edit 0 unique",
+    "chunk 51 edit 1 unique",
+    "chunk 51 edit 2 unique",
+    "chunk 51 edit 3 unique",
+    "chunk 51 edit 4 unique",
+    "chunk 51 edit 5 unique",
+    "chunk 51 edit 6 unique",
+    "chunk 51 edit 7 unique",
+    "chunk 51 edit 8 unique",
+    "chunk 51 edit 9 unique",
+    "chunk 51 edit 10 unique",
+    "chunk 51 exact edited result",
+    "chunk 52 index",
+    "chunk 52 exact output slice",
+    "chunk 52 byte bounds",
+    "chunk 52 line bounds",
+    "chunk 52 output digest",
+    "chunk 52 explicit editorial kind",
+    "chunk 53 index",
+    "chunk 53 exact output slice",
+    "chunk 53 byte bounds",
+    "chunk 53 line bounds",
+    "chunk 53 output digest",
+    "chunk 53 original source bytes",
+    "chunk 53 original digest",
+    "chunk 53 source identity",
+    "chunk 53 source byte bounds",
+    "chunk 53 exact edited result",
+    "chunk 54 index",
+    "chunk 54 exact output slice",
+    "chunk 54 byte bounds",
+    "chunk 54 line bounds",
+    "chunk 54 output digest",
+    "chunk 54 explicit editorial kind",
+    "chunk 55 index",
+    "chunk 55 exact output slice",
+    "chunk 55 byte bounds",
+    "chunk 55 line bounds",
+    "chunk 55 output digest",
+    "chunk 55 original source bytes",
+    "chunk 55 original digest",
+    "chunk 55 source identity",
+    "chunk 55 source byte bounds",
+    "chunk 55 exact edited result",
+    "chunk 56 index",
+    "chunk 56 exact output slice",
+    "chunk 56 byte bounds",
+    "chunk 56 line bounds",
+    "chunk 56 output digest",
+    "chunk 56 explicit editorial kind",
+    "chunk 57 index",
+    "chunk 57 exact output slice",
+    "chunk 57 byte bounds",
+    "chunk 57 line bounds",
+    "chunk 57 output digest",
+    "chunk 57 original source bytes",
+    "chunk 57 original digest",
+    "chunk 57 source identity",
+    "chunk 57 source byte bounds",
+    "chunk 57 edit 0 unique",
+    "chunk 57 exact edited result",
+    "chunk 58 index",
+    "chunk 58 exact output slice",
+    "chunk 58 byte bounds",
+    "chunk 58 line bounds",
+    "chunk 58 output digest",
+    "chunk 58 explicit editorial kind",
+    "full note reconstructed",
+    "17 ordered section headings",
+    "unique tagged block E1",
+    "unique tagged block E2",
+    "unique tagged block E3",
+    "unique tagged block E4",
+    "unique tagged block E5",
+    "unique tagged block E6",
+    "unique tagged block E7",
+    "unique tagged block E8",
+    "unique tagged block E9",
+    "unique tagged block E10",
+    "unique tagged block E11",
+    "unique tagged block E12",
+    "unique tagged block E13",
+    "unique tagged block E14",
+    "unique tagged block E15",
+    "unique tagged block E16",
+    "unique tagged block E17",
+    "unique tagged block E18",
+    "unique tagged block E19",
+    "unique tagged block E20",
+    "unique tagged block E21",
+    "unique tagged block E22",
+    "unique tagged block E23",
+    "unique tagged block E24",
+    "unique tagged block E25",
+    "unique tagged block E26",
+    "unique tagged block E27",
+    "unique tagged block E28",
+    "unique tagged block W1",
+    "unique tagged block W2",
+    "unique tagged block W3",
+    "unique tagged block W4",
+    "unique tagged block W5",
+    "unique tagged block W6",
+    "unique tagged block W7",
+    "unique tagged block W8",
+    "unique tagged block W9",
+    "unique tagged block W10",
+    "unique tagged block W11",
+    "unique tagged block W12",
+    "unique tagged block E29",
+    "unique tagged block W13",
+    "unique tagged block W14",
+    "unique tagged block W15",
+    "unique tagged block G1",
+    "unique tagged block G2",
+    "unique tagged block G3",
+    "unique tagged block G4",
+    "unique tagged block G5",
+    "unique tagged block G6",
+    "unique tagged block G7",
+    "unique tagged block G8",
+    "unique tagged block G9",
+    "unique tagged block G10",
+    "unique tagged block R1",
+    "unique tagged block R2",
+    "unique tagged block R3",
+    "unique tagged block R4",
+    "unique tagged block R5",
+    "unique tagged block R6",
+    "unique tagged block R7",
+    "unique tagged block R8",
+    "unique tagged block R9",
+    "unique tagged block R10",
+    "unique tagged block R11",
+    "unique tagged block R12",
+    "unique tagged block R13",
+    "unique tagged block R14",
+    "unique tagged block W16",
+    "unique tagged block W17",
+    "unique tagged block E1",
+    "unique tagged block E2",
+    "unique tagged block E3",
+    "unique tagged block E4",
+    "unique tagged block E5",
+    "unique tagged block E6",
+    "unique tagged block E7",
+    "unique tagged block E8",
+    "unique tagged block E9",
+    "unique tagged block E10",
+    "unique tagged block E11",
+    "unique tagged block E12",
+    "unique tagged block E13",
+    "unique tagged block E14",
+    "unique tagged block E15",
+    "unique tagged block E16",
+    "unique tagged block E17",
+    "unique tagged block E18",
+    "unique tagged block E19",
+    "unique tagged block E20",
+    "unique tagged block E21",
+    "unique tagged block E22",
+    "unique tagged block E23",
+    "unique tagged block E24",
+    "unique tagged block E25",
+    "unique tagged block E26",
+    "unique tagged block E27",
+    "unique tagged block E28",
+    "unique tagged block E29",
+    "tag exists E1",
+    "exact tagged mathematical block E1",
+    "tag exists E2",
+    "exact tagged mathematical block E2",
+    "tag exists E3",
+    "exact tagged mathematical block E3",
+    "tag exists E4",
+    "exact tagged mathematical block E4",
+    "tag exists E5",
+    "exact tagged mathematical block E5",
+    "tag exists E6",
+    "exact tagged mathematical block E6",
+    "tag exists E7",
+    "exact tagged mathematical block E7",
+    "tag exists E8",
+    "exact tagged mathematical block E8",
+    "tag exists E9",
+    "exact tagged mathematical block E9",
+    "tag exists E10",
+    "exact tagged mathematical block E10",
+    "tag exists E11",
+    "exact tagged mathematical block E11",
+    "tag exists E12",
+    "exact tagged mathematical block E12",
+    "tag exists E13",
+    "exact tagged mathematical block E13",
+    "tag exists E14",
+    "exact tagged mathematical block E14",
+    "tag exists E15",
+    "exact tagged mathematical block E15",
+    "tag exists E16",
+    "exact tagged mathematical block E16",
+    "tag exists E17",
+    "exact tagged mathematical block E17",
+    "tag exists E18",
+    "exact tagged mathematical block E18",
+    "tag exists E19",
+    "exact tagged mathematical block E19",
+    "tag exists E20",
+    "exact tagged mathematical block E20",
+    "tag exists E21",
+    "exact tagged mathematical block E21",
+    "tag exists E22",
+    "exact tagged mathematical block E22",
+    "tag exists E23",
+    "exact tagged mathematical block E23",
+    "tag exists E24",
+    "exact tagged mathematical block E24",
+    "tag exists E25",
+    "exact tagged mathematical block E25",
+    "tag exists E26",
+    "exact tagged mathematical block E26",
+    "tag exists E27",
+    "exact tagged mathematical block E27",
+    "tag exists E28",
+    "exact tagged mathematical block E28",
+    "tag exists E29",
+    "exact tagged mathematical block E29",
+    "unique tagged block W1",
+    "unique tagged block W2",
+    "unique tagged block W3",
+    "unique tagged block W4",
+    "unique tagged block W5",
+    "unique tagged block W6",
+    "unique tagged block W7",
+    "unique tagged block W8",
+    "unique tagged block W9",
+    "unique tagged block W10",
+    "unique tagged block W11",
+    "unique tagged block W12",
+    "unique tagged block W13",
+    "unique tagged block W14",
+    "unique tagged block W15",
+    "unique tagged block W16",
+    "unique tagged block W17",
+    "tag exists W1",
+    "exact tagged mathematical block W1",
+    "tag exists W2",
+    "exact tagged mathematical block W2",
+    "tag exists W3",
+    "exact tagged mathematical block W3",
+    "tag exists W4",
+    "exact tagged mathematical block W4",
+    "tag exists W5",
+    "exact tagged mathematical block W5",
+    "tag exists W6",
+    "exact tagged mathematical block W6",
+    "tag exists W7",
+    "exact tagged mathematical block W7",
+    "tag exists W8",
+    "exact tagged mathematical block W8",
+    "tag exists W9",
+    "exact tagged mathematical block W9",
+    "tag exists W10",
+    "exact tagged mathematical block W10",
+    "tag exists W11",
+    "exact tagged mathematical block W11",
+    "tag exists W12",
+    "exact tagged mathematical block W12",
+    "tag exists W13",
+    "exact tagged mathematical block W13",
+    "tag exists W14",
+    "exact tagged mathematical block W14",
+    "tag exists W15",
+    "exact tagged mathematical block W15",
+    "tag exists W16",
+    "exact tagged mathematical block W16",
+    "tag exists W17",
+    "exact tagged mathematical block W17",
+    "unique tagged block G1",
+    "unique tagged block G2",
+    "unique tagged block G3",
+    "unique tagged block G4",
+    "unique tagged block G5",
+    "unique tagged block G6",
+    "unique tagged block G7",
+    "unique tagged block G8",
+    "unique tagged block G9",
+    "unique tagged block G10",
+    "tag exists G1",
+    "exact tagged mathematical block G1",
+    "tag exists G2",
+    "tag exists G3",
+    "tag exists G4",
+    "exact tagged mathematical block G4",
+    "tag exists G5",
+    "exact tagged mathematical block G5",
+    "tag exists G6",
+    "exact tagged mathematical block G6",
+    "tag exists G7",
+    "exact tagged mathematical block G7",
+    "tag exists G8",
+    "exact tagged mathematical block G8",
+    "tag exists G9",
+    "exact tagged mathematical block G9",
+    "tag exists G10",
+    "exact tagged mathematical block G10",
+    "unique tagged block R1",
+    "unique tagged block R2",
+    "unique tagged block R3",
+    "unique tagged block R4",
+    "unique tagged block R5",
+    "unique tagged block R6",
+    "unique tagged block R7",
+    "unique tagged block R8",
+    "unique tagged block R9",
+    "unique tagged block R10",
+    "unique tagged block R11",
+    "unique tagged block R12",
+    "unique tagged block R13",
+    "unique tagged block R14",
+    "tag exists R1",
+    "exact tagged mathematical block R1",
+    "tag exists R2",
+    "exact tagged mathematical block R2",
+    "tag exists R3",
+    "exact tagged mathematical block R3",
+    "tag exists R4",
+    "exact tagged mathematical block R4",
+    "tag exists R5",
+    "exact tagged mathematical block R5",
+    "tag exists R6",
+    "exact tagged mathematical block R6",
+    "tag exists R7",
+    "exact tagged mathematical block R7",
+    "tag exists R8",
+    "exact tagged mathematical block R8",
+    "tag exists R9",
+    "exact tagged mathematical block R9",
+    "tag exists R10",
+    "exact tagged mathematical block R10",
+    "tag exists R11",
+    "exact tagged mathematical block R11",
+    "tag exists R12",
+    "exact tagged mathematical block R12",
+    "tag exists R13",
+    "exact tagged mathematical block R13",
+    "tag exists R14",
+    "exact tagged mathematical block R14",
+    "literal helper MEMORY_CONTROLS_SOURCE",
+    "literal helper line count MEMORY_CONTROLS_SOURCE",
+    "literal primary line bounds MEMORY_CONTROLS_SOURCE",
+    "literal helper MEAN_CONTROLS_SOURCE",
+    "literal helper line count MEAN_CONTROLS_SOURCE",
+    "literal primary line bounds MEAN_CONTROLS_SOURCE",
+    "literal helper WEIGHTED_CONTROLS_SOURCE",
+    "literal helper line count WEIGHTED_CONTROLS_SOURCE",
+    "literal primary line bounds WEIGHTED_CONTROLS_SOURCE",
+    "literal helper SCALE_CONTROLS_SOURCE",
+    "literal helper line count SCALE_CONTROLS_SOURCE",
+    "literal primary line bounds SCALE_CONTROLS_SOURCE",
+    "literal helper OUTGOING_CONTROLS_SOURCE",
+    "literal helper line count OUTGOING_CONTROLS_SOURCE",
+    "literal primary line bounds OUTGOING_CONTROLS_SOURCE",
+    "primary import guard prevents author execution",
+    "five production block records",
+    "production block correspondence effective_memory/memory_controls.py",
+    "production block correspondence effective_memory/mean_controls.py",
+    "production block correspondence weighted_memory/weighted_controls.py",
+    "production block correspondence joint_scale_current/scale_controls.py",
+    "production block correspondence outgoing_resolvent/outgoing_controls.py",
+    "fresh dict constructed inside actual loop",
+    "three synthetic bodies execute in order",
+    "helper globals do not leak into wrapper module",
+    "actual final success records synthetic block count",
+    "expected actual wrapper failure hash_mismatch",
+    "failure aborts later helper hash_mismatch",
+    "failure prevents final PASS hash_mismatch",
+    "expected actual wrapper failure body_assertion",
+    "failure aborts later helper body_assertion",
+    "failure prevents final PASS body_assertion",
+    "expected actual wrapper failure body_exception",
+    "failure aborts later helper body_exception",
+    "failure prevents final PASS body_exception",
+    "expected actual wrapper failure compile_failure",
+    "failure aborts later helper compile_failure",
+    "failure prevents final PASS compile_failure",
+    "historical recovery index identity",
+    "recovery file FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+    "recovery file excluded_walk_memory_current_2026_10_11.py",
+    "recovery file CHECKPOINT.md",
+    "recovery file COMPOSITION_REPORT.md",
+    "recovery file DEVELOPMENT_LOG.md",
+    "recovery file SOURCE_COMPOSITION.json",
+    "recovery file build_publication.py",
+    "recovery file final_identity_check.json",
+    "recovery file finalize_composition.py",
+    "recovery file primary_execution.json",
+    "recovery file primary_execution_attempt02.json",
+    "recovery file primary_replay.log",
+    "recovery file primary_replay_attempt02.log",
+    "recovery file receipt.json",
+    "recovery file verify_and_replay.py",
+    "recovery file verify_and_replay_attempt01.py",
+    "historical identity FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1320",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1307",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1299",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1290",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1275",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1264",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1261",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1258",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1255",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1247",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1242",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 1196",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 655",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 53",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 52",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 30",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 28",
+    "historical exact edit FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md 3",
+    "historical reconstruction FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+    "historical identity excluded_walk_memory_current_2026_10_11.py",
+    "historical exact edit excluded_walk_memory_current_2026_10_11.py 391",
+    "historical exact edit excluded_walk_memory_current_2026_10_11.py 386",
+    "historical exact edit excluded_walk_memory_current_2026_10_11.py 3",
+    "historical reconstruction excluded_walk_memory_current_2026_10_11.py",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_DRAFT.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/memory_controls.py",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_controls.py",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/weighted_memory/weighted_controls.py",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_current/scale_controls.py",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/outgoing_controls.py",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_REVIEW.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_REVIEW.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_REVIEW.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent_review/receipt.json",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/receipt.json",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/independent_review_receipt.json",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/DEPENDENCY_ADDENDUM.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/dependency_addendum_receipt.json",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/kato_1957_primary.pdf",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_current_2026_10_11.py",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/CHECKPOINT.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/COMPOSITION_REPORT.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/DEVELOPMENT_LOG.md",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/PRE_EXTENSION_DIFF.txt",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/SOURCE_COMPOSITION.json",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/build_publication.py",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/final_identity_check.json",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/finalize_composition.py",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_execution.json",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_execution_attempt02.json",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_execution_extended.json",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_replay.log",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_replay_attempt02.log",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_replay_extended.log",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/verify_and_replay.py",
+    "author receipt identity /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/verify_and_replay_attempt01.py",
+    "successful author replay is exact current primary",
+    "complete author replay log identity",
+    "recorded production replay completed all five blocks in order"
+  ],
+  "counts": {
+    "total": 921,
+    "chunks": 59,
+    "source_fragments": 29,
+    "source_substitutions": 36,
+    "tagged_blocks": 70,
+    "literal_helpers": 5
+  },
+  "direct_inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+      "sha256": "c05465cee9acb7ee1bc9b0296b4fd5546432bd8188043194b1701a2d3654ef87",
+      "bytes": 72064,
+      "lines": 1556
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_current_2026_10_11.py",
+      "sha256": "b5cfe4af2e2e56f6a531afaa36c19daded1003d91b3a861ebe177ba87a0ebc33",
+      "bytes": 24121,
+      "lines": 507
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/SOURCE_COMPOSITION.json",
+      "sha256": "ffe3df5cd8633fa927bbe78e7fbfbeffd7c96efc30dbc969d0c0bf24a31e0fa2",
+      "bytes": 206036,
+      "lines": 1410
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/receipt.json",
+      "sha256": "9dea961421ca868bd4def5eecb5c45982b5c5a421ed49c945f31cac8dd2f2ea6",
+      "bytes": 21084,
+      "lines": 411
+    }
+  ],
+  "source_fragments": [
+    {
+      "index": 0,
+      "kind": "new_editorial_text",
+      "output_first_line": 1,
+      "output_last_line": 84,
+      "reason": "New publication metadata, scope, exact existing conclusion, dependency contract and notation bridge; no new mathematics."
+    },
+    {
+      "index": 1,
+      "kind": "source_fragment",
+      "source_key": "P",
+      "first_line": 96,
+      "last_line": 167,
+      "output_first_line": 85,
+      "output_last_line": 156,
+      "edits": [],
+      "reason": "Physical operator, entire kernel and cone bounds; the companion proof is reproduced here."
+    },
+    {
+      "index": 2,
+      "kind": "new_editorial_text",
+      "output_first_line": 157,
+      "output_last_line": 157,
+      "reason": "Paragraph separation."
+    },
+    {
+      "index": 3,
+      "kind": "source_fragment",
+      "source_key": "M",
+      "first_line": 48,
+      "last_line": 80,
+      "output_first_line": 158,
+      "output_last_line": 190,
+      "edits": [
+        {
+          "before": "The parent proves",
+          "after": "The preceding calculation proves",
+          "occurrences": 1
+        },
+        {
+          "before": "All these operators have the domains specified in the parent:",
+          "after": "All these operators have the following full-space domains:",
+          "occurrences": 1
+        },
+        {
+          "before": "The new theorem concerns",
+          "after": "The effective evolution is",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Exact effective block and dressing evolution conventions."
+    },
+    {
+      "index": 4,
+      "kind": "new_editorial_text",
+      "output_first_line": 191,
+      "output_last_line": 198,
+      "reason": "Restates the companion Q6 transverse-block proof at P211–218 and introduces unchanged D21."
+    },
+    {
+      "index": 5,
+      "kind": "source_fragment",
+      "source_key": "D",
+      "first_line": 306,
+      "last_line": 321,
+      "output_first_line": 199,
+      "output_last_line": 214,
+      "edits": [],
+      "reason": "Nonzero coupling bound and full reflection/Cauchy-Schwarz proof needed by E7."
+    },
+    {
+      "index": 6,
+      "kind": "new_editorial_text",
+      "output_first_line": 215,
+      "output_last_line": 215,
+      "reason": "Paragraph separation."
+    },
+    {
+      "index": 7,
+      "kind": "source_fragment",
+      "source_key": "M",
+      "first_line": 82,
+      "last_line": 182,
+      "output_first_line": 216,
+      "output_last_line": 316,
+      "edits": [
+        {
+          "before": "the parent bound on `||epsilon g||^2`",
+          "after": "D21 for `||epsilon g||^2`",
+          "occurrences": 1
+        },
+        {
+          "before": "For `kappa=k(1,1,1)`, the checked parent identity remains",
+          "after": "For `kappa=k(1,1,1)`, the identity D20 proved in Section 10 gives",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Complete Volterra, finite-time transfer, scalar resolvent, Laplace and field-density arguments E4–E12."
+    },
+    {
+      "index": 8,
+      "kind": "new_editorial_text",
+      "output_first_line": 317,
+      "output_last_line": 320,
+      "reason": "Disambiguates two inherited local parameter names without altering formulas."
+    },
+    {
+      "index": 9,
+      "kind": "source_fragment",
+      "source_key": "M",
+      "first_line": 183,
+      "last_line": 405,
+      "output_first_line": 321,
+      "output_last_line": 543,
+      "edits": [],
+      "reason": "Complete cone-density, local Poisson, endpoint, ac, Fourier, finite-horizon and finite-bath proofs E13–E28."
+    },
+    {
+      "index": 10,
+      "kind": "new_editorial_text",
+      "output_first_line": 544,
+      "output_last_line": 545,
+      "reason": "Publication section heading."
+    },
+    {
+      "index": 11,
+      "kind": "source_fragment",
+      "source_key": "W",
+      "first_line": 43,
+      "last_line": 64,
+      "output_first_line": 546,
+      "output_last_line": 567,
+      "edits": [],
+      "reason": "Exact primary Kato import including forward/reverse limits and complete initial/final subspaces."
+    },
+    {
+      "index": 12,
+      "kind": "new_editorial_text",
+      "output_first_line": 568,
+      "output_last_line": 568,
+      "reason": "Paragraph separation."
+    },
+    {
+      "index": 13,
+      "kind": "source_fragment",
+      "source_key": "W",
+      "first_line": 73,
+      "last_line": 122,
+      "output_first_line": 569,
+      "output_last_line": 618,
+      "edits": [
+        {
+          "before": "The parent supplies",
+          "after": "E2 supplies",
+          "occurrences": 1
+        },
+        {
+          "before": "The parent proves `||g||>0`",
+          "after": "D21 proves `||g||>0`",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Complete operator/domain matching and essential ac dressing premise W2–W5."
+    },
+    {
+      "index": 14,
+      "kind": "new_editorial_text",
+      "output_first_line": 619,
+      "output_last_line": 619,
+      "reason": "Blank line before the new section heading."
+    },
+    {
+      "index": 15,
+      "kind": "source_fragment",
+      "source_key": "W",
+      "first_line": 124,
+      "last_line": 174,
+      "output_first_line": 620,
+      "output_last_line": 672,
+      "edits": [
+        {
+          "before": "## 3. Unit-norm outgoing datum and weighted limit",
+          "after": "## 9. Unit-norm outgoing datum and weighted limit",
+          "occurrences": 1
+        },
+        {
+          "before": "These are strict inequalities for the\nactual outgoing datum; they are not a computed numerical lower bound.\nThe multiplication weight has no positive uniform lower bound near a cone.",
+          "after": "These null-set arguments establish strict inequalities for the\nactual outgoing datum, without a computed lower bound at this step. The\nselected-datum bound is proved in Section 15 using additional moment and\nresolvent control. The multiplication weight alone has no positive uniform\nlower bound near a cone.",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Complete norm-one outgoing-state and weighted-limit argument W6–W9."
+    },
+    {
+      "index": 16,
+      "kind": "new_editorial_text",
+      "output_first_line": 673,
+      "output_last_line": 682,
+      "reason": "Names the exact physical placement and its companion bounded-current derivation, reproducing J1 premises."
+    },
+    {
+      "index": 17,
+      "kind": "source_fragment",
+      "source_key": "D",
+      "first_line": 218,
+      "last_line": 261,
+      "output_first_line": 683,
+      "output_last_line": 725,
+      "edits": [
+        {
+          "before": "Use the source's bounded canonical current extension, derived from its\nspecified compressed local energy densities:",
+          "after": "The bounded canonical current is",
+          "occurrences": 1
+        },
+        {
+          "before": "The lower-right entry retains the exact canonical\ncancellation proved in the frozen probe:",
+          "after": "The lower-right entry retains the exact canonical\ncancellation:",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Actual bounded current, exact weak-momentum remainder, full effective compression and scalar cancellation D12–D16."
+    },
+    {
+      "index": 18,
+      "kind": "new_editorial_text",
+      "output_first_line": 726,
+      "output_last_line": 728,
+      "reason": "Introduces the exact existing D18 expression without importing an unused fixed-time proof reference."
+    },
+    {
+      "index": 19,
+      "kind": "source_fragment",
+      "source_key": "D",
+      "first_line": 273,
+      "last_line": 274,
+      "output_first_line": 729,
+      "output_last_line": 730,
+      "edits": [],
+      "reason": "Dressing/transverse cross term retained exactly (D18)."
+    },
+    {
+      "index": 20,
+      "kind": "new_editorial_text",
+      "output_first_line": 731,
+      "output_last_line": 731,
+      "reason": "Paragraph separation."
+    },
+    {
+      "index": 21,
+      "kind": "source_fragment",
+      "source_key": "D",
+      "first_line": 282,
+      "last_line": 287,
+      "output_first_line": 732,
+      "output_last_line": 736,
+      "edits": [
+        {
+          "before": "The full-zero-space trace identity differs from the frozen probe's\nsinglet/longitudinal identity. Since sum_a r_a=0 and",
+          "after": "On the entire physical zero space, sum_a r_a=0 and",
+          "occurrences": 1
+        },
+        {
+          "before": "sum_a m_a=3-2epsilon^2, D15 gives, for any normalized (u,alpha),",
+          "after": "sum_a m_a=3-2epsilon^2. Thus D15 gives, for any normalized (u,alpha),",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Full-zero-space trace identity D19."
+    },
+    {
+      "index": 22,
+      "kind": "new_editorial_text",
+      "output_first_line": 737,
+      "output_last_line": 739,
+      "reason": "Restores the local orbit definition D263 that was outside the selected current fragment."
+    },
+    {
+      "index": 23,
+      "kind": "source_fragment",
+      "source_key": "D",
+      "first_line": 293,
+      "last_line": 301,
+      "output_first_line": 740,
+      "output_last_line": 748,
+      "edits": [],
+      "reason": "Proper cyclic symmetry and complete effective diagonal-current identity D20."
+    },
+    {
+      "index": 24,
+      "kind": "new_editorial_text",
+      "output_first_line": 749,
+      "output_last_line": 749,
+      "reason": "Paragraph separation."
+    },
+    {
+      "index": 25,
+      "kind": "source_fragment",
+      "source_key": "W",
+      "first_line": 178,
+      "last_line": 213,
+      "output_first_line": 750,
+      "output_last_line": 785,
+      "edits": [
+        {
+          "before": "The checked parent current compression is",
+          "after": "The compression D15 is",
+          "occurrences": 1
+        },
+        {
+          "before": "the parent's proper cyclic\nsymmetry",
+          "after": "the proper cyclic\nsymmetry just proved",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Complete actual effective-current limit and strict coordinate weights W10–W12."
+    },
+    {
+      "index": 26,
+      "kind": "new_editorial_text",
+      "output_first_line": 786,
+      "output_last_line": 795,
+      "reason": "Exact fixed-vector hypothesis from companion D11, plus parameter-scope and bounded-domain clarification."
+    },
+    {
+      "index": 27,
+      "kind": "source_fragment",
+      "source_key": "M",
+      "first_line": 408,
+      "last_line": 419,
+      "output_first_line": 796,
+      "output_last_line": 807,
+      "edits": [
+        {
+          "before": "the\nchecked parent theorem proves",
+          "after": "the\ncompanion proves",
+          "occurrences": 1
+        },
+        {
+          "before": "The parent source explicitly exhibits failure of uniform state\nconvergence over the zero-space unit ball; its vector-dependent compact-time\nbound supplies no automatic interchange with the new infinite-time limit.",
+          "after": "The earlier source exhibits failure of uniform state convergence over the\nzero-space unit ball; the companion's vector-dependent compact-time bound\nsupplies no automatic interchange with this infinite-time limit.",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Ordered unweighted limit and limit-order limitation E29."
+    },
+    {
+      "index": 28,
+      "kind": "new_editorial_text",
+      "output_first_line": 808,
+      "output_last_line": 808,
+      "reason": "Paragraph separation."
+    },
+    {
+      "index": 29,
+      "kind": "source_fragment",
+      "source_key": "W",
+      "first_line": 217,
+      "last_line": 259,
+      "output_first_line": 809,
+      "output_last_line": 851,
+      "edits": [
+        {
+          "before": "The parent's fixed-vector",
+          "after": "The companion's fixed-vector",
+          "occurrences": 1
+        },
+        {
+          "before": "and use the parent's",
+          "after": "and use D14 with",
+          "occurrences": 1
+        },
+        {
+          "before": "No joint schedule, finite-lambda onset, rate, or reversed\norder is justified here. The physical walk time is t/lambda. There is no\nassertion of global trace class after a total-momentum direct integral.\nThese conclusions are for the stated fixed-total-momentum fiber; a new\nnormalizable envelope statement is not included in this extension.",
+          "after": "These ordered estimates alone justify no joint schedule, finite-lambda\nonset, rate, or reversed order. The physical walk time is t/lambda. There\nis no assertion of global trace class after a total-momentum direct integral.\nThe joint theorem below instead uses the finite all-time comparison and a\nspecific actual positive-free-band preparation with a global envelope.",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Complete ordered actual-current limit and separated error W13–W15."
+    },
+    {
+      "index": 30,
+      "kind": "new_editorial_text",
+      "output_first_line": 852,
+      "output_last_line": 859,
+      "reason": "Parameter separation and the joint theorem fixed fiber."
+    },
+    {
+      "index": 31,
+      "kind": "source_fragment",
+      "source_key": "P",
+      "first_line": 294,
+      "last_line": 352,
+      "output_first_line": 860,
+      "output_last_line": 918,
+      "edits": [],
+      "reason": "Exact density, contact weight, preparation normalization and uniform band bounds L6–L8, Q12–Q13."
+    },
+    {
+      "index": 32,
+      "kind": "new_editorial_text",
+      "output_first_line": 919,
+      "output_last_line": 919,
+      "reason": "Paragraph separation."
+    },
+    {
+      "index": 33,
+      "kind": "source_fragment",
+      "source_key": "L",
+      "first_line": 169,
+      "last_line": 177,
+      "output_first_line": 920,
+      "output_last_line": 928,
+      "edits": [],
+      "reason": "Exact leading band-weight and contact-loss asymptotics L10, with analytic integration explanation."
+    },
+    {
+      "index": 34,
+      "kind": "new_editorial_text",
+      "output_first_line": 929,
+      "output_last_line": 933,
+      "reason": "Explains the already-present L10 to G1 algebra; no new asymptotic claim."
+    },
+    {
+      "index": 35,
+      "kind": "source_fragment",
+      "source_key": "G",
+      "first_line": 68,
+      "last_line": 77,
+      "output_first_line": 934,
+      "output_last_line": 943,
+      "edits": [
+        {
+          "before": "The checked sources give",
+          "after": "Q13 and L10 give",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Joint preparation bounds including the exact leading coefficient G1."
+    },
+    {
+      "index": 36,
+      "kind": "new_editorial_text",
+      "output_first_line": 944,
+      "output_last_line": 949,
+      "reason": "Explicit companion proof boundary permitted by the composition task."
+    },
+    {
+      "index": 37,
+      "kind": "source_fragment",
+      "source_key": "P",
+      "first_line": 169,
+      "last_line": 175,
+      "output_first_line": 950,
+      "output_last_line": 956,
+      "edits": [],
+      "reason": "Exact weak-momentum Taylor remainder and evolution Q5."
+    },
+    {
+      "index": 38,
+      "kind": "new_editorial_text",
+      "output_first_line": 957,
+      "output_last_line": 965,
+      "reason": "Reproduces full Q14 cutoff domain and C_lambda definition; refers to complete companion proof."
+    },
+    {
+      "index": 39,
+      "kind": "source_fragment",
+      "source_key": "P",
+      "first_line": 414,
+      "last_line": 418,
+      "output_first_line": 966,
+      "output_last_line": 970,
+      "edits": [],
+      "reason": "Complementary spectral estimate and explicit C_lambda bound Q15."
+    },
+    {
+      "index": 40,
+      "kind": "new_editorial_text",
+      "output_first_line": 971,
+      "output_last_line": 982,
+      "reason": "Reproduces Q11 and all domains as exact companion inputs to Q16; no new bound."
+    },
+    {
+      "index": 41,
+      "kind": "source_fragment",
+      "source_key": "P",
+      "first_line": 488,
+      "last_line": 496,
+      "output_first_line": 983,
+      "output_last_line": 991,
+      "edits": [],
+      "reason": "Complete all-T transverse error bound Q16 and no-phase-average mechanism."
+    },
+    {
+      "index": 42,
+      "kind": "new_editorial_text",
+      "output_first_line": 992,
+      "output_last_line": 995,
+      "reason": "Introduces exact full-space trace input."
+    },
+    {
+      "index": 43,
+      "kind": "source_fragment",
+      "source_key": "P",
+      "first_line": 593,
+      "last_line": 622,
+      "output_first_line": 996,
+      "output_last_line": 1025,
+      "edits": [
+        {
+          "before": "At the diagonal kappa0",
+          "after": "At the diagonal kappa0=(1,1,1)",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Full-space current trace and energy-square conservation bound Q18–Q19, with complete short proof and symmetry."
+    },
+    {
+      "index": 44,
+      "kind": "new_editorial_text",
+      "output_first_line": 1026,
+      "output_last_line": 1042,
+      "reason": "Replaces duplicate G79–106 with precisely the same statements and the complete proof already included at W1–W9."
+    },
+    {
+      "index": 45,
+      "kind": "source_fragment",
+      "source_key": "G",
+      "first_line": 110,
+      "last_line": 171,
+      "output_first_line": 1043,
+      "output_last_line": 1104,
+      "edits": [
+        {
+          "before": "## 4. Actual current comparison, valid at every finite time",
+          "after": "### Actual current comparison, valid at every finite time",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Complete scale substitution and both-sided actual-current comparison G4–G7."
+    },
+    {
+      "index": 46,
+      "kind": "new_editorial_text",
+      "output_first_line": 1105,
+      "output_last_line": 1110,
+      "reason": "Explicit global preparation input boundary."
+    },
+    {
+      "index": 47,
+      "kind": "source_fragment",
+      "source_key": "P",
+      "first_line": 727,
+      "last_line": 754,
+      "output_first_line": 1111,
+      "output_last_line": 1138,
+      "edits": [],
+      "reason": "Actual ++ projector, support, two normalizations and full proof of 16|K|/lambda preparation estimate."
+    },
+    {
+      "index": 48,
+      "kind": "new_editorial_text",
+      "output_first_line": 1139,
+      "output_last_line": 1157,
+      "reason": "Reproduces companion P756–774 finite norm/Lipschitz proof, with the all-finite-time form already stated/proved in G194–199."
+    },
+    {
+      "index": 49,
+      "kind": "source_fragment",
+      "source_key": "G",
+      "first_line": 175,
+      "last_line": 222,
+      "output_first_line": 1158,
+      "output_last_line": 1205,
+      "edits": [
+        {
+          "before": "as in B19-B20.",
+          "after": "by Q28 and B20.",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Complete global normalized construction, exact projected momentum law and joint limit G8–G10."
+    },
+    {
+      "index": 50,
+      "kind": "new_editorial_text",
+      "output_first_line": 1206,
+      "output_last_line": 1215,
+      "reason": "Introduces the separately reviewed frozen outgoing-resolvent extension, without importing spectral-edge work."
+    },
+    {
+      "index": 51,
+      "kind": "source_fragment",
+      "source_key": "R",
+      "first_line": 40,
+      "last_line": 236,
+      "output_first_line": 1216,
+      "output_last_line": 1412,
+      "edits": [
+        {
+          "before": "The memory source proves, for exp(-itA)zeta=(u(t),a(t)),",
+          "after": "Sections 2–5 prove, for exp(-itA)zeta=(u(t),a(t)),",
+          "occurrences": 1
+        },
+        {
+          "before": "The weighted source, using the checked trace-class\nwave-operator theorem on this same Z, supplies a vector u_+ in F with",
+          "after": "Sections 8–9, using the checked trace-class\nwave-operator theorem on this same Z, supply a vector u_+ in F with",
+          "occurrences": 1
+        },
+        {
+          "before": "## 2. Abel representation on the exact physical space",
+          "after": "### Abel representation on the exact physical space",
+          "occurrences": 1
+        },
+        {
+          "before": "## 3. A uniform upper bound on the second energy moment",
+          "after": "### A uniform upper bound on the second energy moment",
+          "occurrences": 1
+        },
+        {
+          "before": "## 4. Interior mass cannot all concentrate at the cones",
+          "after": "### Interior mass cannot all concentrate at the cones",
+          "occurrences": 1
+        },
+        {
+          "before": "The memory source E20 supplies",
+          "after": "Equation E20 supplies",
+          "occurrences": 1
+        },
+        {
+          "before": "The checked cone estimate is integral_(epsilon<r)epsilon^(-2)<=r.",
+          "after": "The cone estimate Q4 is integral_(epsilon<r)epsilon^(-2)<=r.",
+          "occurrences": 1
+        },
+        {
+          "before": "Together with the weighted source, 0<c0<=W_+<3.",
+          "after": "Together with W9, 0<c0<=W_+<3.",
+          "occurrences": 1
+        },
+        {
+          "before": "## 5. The prepared-packet consequence and scope",
+          "after": "### The prepared-packet consequence and scope",
+          "occurrences": 1
+        },
+        {
+          "before": "If the separately reviewed G1-G10 premises are used, R13 gives",
+          "after": "Using the G1–G10 premises established in Sections 12–14, R13 gives",
+          "occurrences": 1
+        },
+        {
+          "before": "The finite-bath recurrence counterexample in the memory source",
+          "after": "The finite-bath recurrence counterexample in Section 7",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Complete R1–R14 premises, Abel representation, selected outgoing moment, cone estimate, exact lower bound and packet implication."
+    },
+    {
+      "index": 52,
+      "kind": "new_editorial_text",
+      "output_first_line": 1413,
+      "output_last_line": 1419,
+      "reason": "Introduces existing weighted toy as finite support only."
+    },
+    {
+      "index": 53,
+      "kind": "source_fragment",
+      "source_key": "W",
+      "first_line": 268,
+      "last_line": 292,
+      "output_first_line": 1420,
+      "output_last_line": 1444,
+      "edits": [],
+      "reason": "Complete unrelated continuous toy and analytic scope W16–W17."
+    },
+    {
+      "index": 54,
+      "kind": "new_editorial_text",
+      "output_first_line": 1445,
+      "output_last_line": 1445,
+      "reason": "Paragraph separation."
+    },
+    {
+      "index": 55,
+      "kind": "source_fragment",
+      "source_key": "M",
+      "first_line": 435,
+      "last_line": 442,
+      "output_first_line": 1446,
+      "output_last_line": 1453,
+      "edits": [],
+      "reason": "Preserved failed routes and distinct ac/endpoint/weight obligations, now within the complete composition."
+    },
+    {
+      "index": 56,
+      "kind": "new_editorial_text",
+      "output_first_line": 1454,
+      "output_last_line": 1454,
+      "reason": "Paragraph separation."
+    },
+    {
+      "index": 57,
+      "kind": "source_fragment",
+      "source_key": "W",
+      "first_line": 326,
+      "last_line": 332,
+      "output_first_line": 1455,
+      "output_last_line": 1463,
+      "edits": [
+        {
+          "before": "Positivity almost everywhere supplies a strict weight for\nthat datum, but no numerical coercivity constant.",
+          "after": "Positivity almost everywhere alone supplies a strict weight for\nthat datum, but no numerical coercivity constant. Section 15 obtains the\nselected-datum lower bound by its additional moment/resolvent argument;\nthere is still no positive coercivity constant for arbitrary unit fields.",
+          "occurrences": 1
+        }
+      ],
+      "reason": "Essential ac and onto-ac premises; the original null-set argument is scoped separately from the new selected-datum estimate."
+    },
+    {
+      "index": 58,
+      "kind": "new_editorial_text",
+      "output_first_line": 1464,
+      "output_last_line": 1556,
+      "reason": "New publication evidence/status footer; resolves only already-reviewed component dependencies and preserves exact limitations."
+    }
+  ],
+  "tagged_formula_checks": [
+    {
+      "tag": "E1",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E2",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E3",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E4",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E5",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E6",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E7",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E8",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E9",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E10",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E11",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E12",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E13",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E14",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E15",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E16",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E17",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E18",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E19",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E20",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E21",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E22",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E23",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E24",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E25",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E26",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E27",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E28",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "E29",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W1",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W2",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W3",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W4",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W5",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W6",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W7",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W8",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W9",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W10",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W11",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W12",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W13",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W14",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W15",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W16",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "W17",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "G1",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "G2",
+      "byte_identical": false,
+      "scope": "Internal restatement backed by complete W proof"
+    },
+    {
+      "tag": "G3",
+      "byte_identical": false,
+      "scope": "Internal restatement backed by complete W proof"
+    },
+    {
+      "tag": "G4",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "G5",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "G6",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "G7",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "G8",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "G9",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "G10",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R1",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R2",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R3",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R4",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R5",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R6",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R7",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R8",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R9",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R10",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R11",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R12",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R13",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    },
+    {
+      "tag": "R14",
+      "byte_identical": true,
+      "scope": "Exact source paragraph"
+    }
+  ],
+  "literal_helpers": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/memory_controls.py",
+      "sha256": "10980b8195c33ac813f59632cc028a1dbd8a04e066930786dabea338ed162c4a",
+      "bytes": 8187,
+      "lines": 165
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_controls.py",
+      "sha256": "8376f00539c79b580b6c142b5b71b8d0d4ec39cd98f47e9577170e915d5b097c",
+      "bytes": 1787,
+      "lines": 36
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/weighted_memory/weighted_controls.py",
+      "sha256": "70807cce821d3e2eca3fc96cefd52fa1cfe83c4496801b9c9f2f7b9dd5108c24",
+      "bytes": 4862,
+      "lines": 106
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_current/scale_controls.py",
+      "sha256": "1a71fb0d680630d0581fe4f982520d4bc3bc51a2649c2359815c3445c2b4d233",
+      "bytes": 2759,
+      "lines": 54
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/outgoing_controls.py",
+      "sha256": "5959a175ffd66638f25b23315d1923c344d51c790ada16a85166671058049c75",
+      "bytes": 4172,
+      "lines": 96
+    }
+  ],
+  "synthetic_success_stdout": "{\"author_block\": \"review_fixture_0.py\", \"sha256\": \"369ce39fa1b275102d06f364ffdcffbab11e4913147fd6395bb2254cb508d19d\", \"phase\": \"begin\"}\nREVIEW_FIXTURE_COMPLETE_0\n{\"author_block\": \"review_fixture_0.py\", \"phase\": \"complete\"}\n{\"author_block\": \"review_fixture_1.py\", \"sha256\": \"abdb5750c397d33935f671a30b9b977a50d5857fe1b221afe211356560402e21\", \"phase\": \"begin\"}\nREVIEW_FIXTURE_COMPLETE_1\n{\"author_block\": \"review_fixture_1.py\", \"phase\": \"complete\"}\n{\"author_block\": \"review_fixture_2.py\", \"sha256\": \"36d2ee770b238ff2a31415a9a1fc1fc4d1c44bd5d74e82d4657aa3227bb4a8b6\", \"phase\": \"begin\"}\nREVIEW_FIXTURE_COMPLETE_2\n{\"author_block\": \"review_fixture_2.py\", \"phase\": \"complete\"}\n{\"status\": \"PASS\", \"isolated_author_blocks\": 3, \"scope\": \"literal author finite controls; no independent continuum proof\"}\n",
+  "expected_wrapper_failures": [
+    {
+      "case": "hash_mismatch",
+      "stdout": "{\"author_block\": \"review_fixture_0.py\", \"sha256\": \"369ce39fa1b275102d06f364ffdcffbab11e4913147fd6395bb2254cb508d19d\", \"phase\": \"begin\"}\nREVIEW_FIXTURE_COMPLETE_0\n{\"author_block\": \"review_fixture_0.py\", \"phase\": \"complete\"}\n",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/composition_controls.py\", line 192, in <module>\n    module[\"main\"]()\n    ~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_current_2026_10_11.py\", line 497, in main\n    assert actual == expected_sha256, (name, actual, expected_sha256)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ('review_bad_hash.py', 'bb3dad92e97b689c5861e015a9e318d7346b892a761dd90b7c2dcba00310a6a6', '0000000000000000000000000000000000000000000000000000000000000000')\n",
+      "expected_exception": "AssertionError"
+    },
+    {
+      "case": "body_assertion",
+      "stdout": "{\"author_block\": \"review_fixture_0.py\", \"sha256\": \"369ce39fa1b275102d06f364ffdcffbab11e4913147fd6395bb2254cb508d19d\", \"phase\": \"begin\"}\nREVIEW_FIXTURE_COMPLETE_0\n{\"author_block\": \"review_fixture_0.py\", \"phase\": \"complete\"}\n{\"author_block\": \"review_assert.py\", \"sha256\": \"7bae7b72dbee7f4ae417ace7dde5748a4302aa18c0fb85cd0337e7720bca4b25\", \"phase\": \"begin\"}\n",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/composition_controls.py\", line 192, in <module>\n    module[\"main\"]()\n    ~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_current_2026_10_11.py\", line 500, in main\n    exec(compile(source, namespace[\"__file__\"], \"exec\"), namespace, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen-author:review_assert.py>\", line 1, in <module>\nAssertionError: deliberate assertion fixture\n",
+      "expected_exception": "AssertionError"
+    },
+    {
+      "case": "body_exception",
+      "stdout": "{\"author_block\": \"review_fixture_0.py\", \"sha256\": \"369ce39fa1b275102d06f364ffdcffbab11e4913147fd6395bb2254cb508d19d\", \"phase\": \"begin\"}\nREVIEW_FIXTURE_COMPLETE_0\n{\"author_block\": \"review_fixture_0.py\", \"phase\": \"complete\"}\n{\"author_block\": \"review_runtime.py\", \"sha256\": \"f3e3f4317d98971c5dea78f4cdbcc02746cf7c5b44f97c1c3bfb1d03fab11aa4\", \"phase\": \"begin\"}\n",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/composition_controls.py\", line 192, in <module>\n    module[\"main\"]()\n    ~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_current_2026_10_11.py\", line 500, in main\n    exec(compile(source, namespace[\"__file__\"], \"exec\"), namespace, namespace)\n    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen-author:review_runtime.py>\", line 1, in <module>\nRuntimeError: deliberate runtime fixture\n",
+      "expected_exception": "RuntimeError"
+    },
+    {
+      "case": "compile_failure",
+      "stdout": "{\"author_block\": \"review_fixture_0.py\", \"sha256\": \"369ce39fa1b275102d06f364ffdcffbab11e4913147fd6395bb2254cb508d19d\", \"phase\": \"begin\"}\nREVIEW_FIXTURE_COMPLETE_0\n{\"author_block\": \"review_fixture_0.py\", \"phase\": \"complete\"}\n{\"author_block\": \"review_syntax.py\", \"sha256\": \"f11df3a44c82d35a4f4190e9909725b6aea4bd01d9231ddc2623614f7ee251a5\", \"phase\": \"begin\"}\n",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/composition_controls.py\", line 192, in <module>\n    module[\"main\"]()\n    ~~~~~~~~~~~~~~^^\n  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_current_2026_10_11.py\", line 500, in main\n    exec(compile(source, namespace[\"__file__\"], \"exec\"), namespace, namespace)\n         ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen-author:review_syntax.py>\", line 1\n    if:\n      ^\nSyntaxError: invalid syntax\n",
+      "expected_exception": "SyntaxError"
+    }
+  ],
+  "historical_reconstructions": [
+    {
+      "current": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+        "sha256": "17103b2c0c1c0d5a84f7e39ebed5de110857ea349140a666caa9e60e2e26af29",
+        "bytes": 60834,
+        "lines": 1320
+      },
+      "exact_edit_count": 18
+    },
+    {
+      "current": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_current_2026_10_11.py",
+      "recovery": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/excluded_walk_memory_current_2026_10_11.py",
+        "sha256": "690be0f97d4b72ffd2360326c883148674ca355daddf09d278eeb6677d9ff7c5",
+        "bytes": 19770,
+        "lines": 408
+      },
+      "exact_edit_count": 3
+    }
+  ],
+  "author_receipt_records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222,
+      "lines": 500
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md",
+      "sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324",
+      "bytes": 17059,
+      "lines": 339
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "bytes": 11538,
+      "lines": 236
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+      "sha256": "ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969",
+      "bytes": 37412,
+      "lines": 859
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_DRAFT.md",
+      "sha256": "58a96a049701667e673bde1acf98e5346356483101654b3464fe11e94fd02c21",
+      "bytes": 11171,
+      "lines": 245
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/memory_controls.py",
+      "sha256": "10980b8195c33ac813f59632cc028a1dbd8a04e066930786dabea338ed162c4a",
+      "bytes": 8187,
+      "lines": 165
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_controls.py",
+      "sha256": "8376f00539c79b580b6c142b5b71b8d0d4ec39cd98f47e9577170e915d5b097c",
+      "bytes": 1787,
+      "lines": 36
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/weighted_memory/weighted_controls.py",
+      "sha256": "70807cce821d3e2eca3fc96cefd52fa1cfe83c4496801b9c9f2f7b9dd5108c24",
+      "bytes": 4862,
+      "lines": 106
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_current/scale_controls.py",
+      "sha256": "1a71fb0d680630d0581fe4f982520d4bc3bc51a2649c2359815c3445c2b4d233",
+      "bytes": 2759,
+      "lines": 54
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/outgoing_controls.py",
+      "sha256": "5959a175ffd66638f25b23315d1923c344d51c790ada16a85166671058049c75",
+      "bytes": 4172,
+      "lines": 96
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0",
+      "bytes": 17773,
+      "lines": 329
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_REVIEW.md",
+      "sha256": "a2bb951a15a90ca8dba4cba928f6307fdde078f30a41f9f07e818561f7bf0484",
+      "bytes": 17802,
+      "lines": 319
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_REVIEW.md",
+      "sha256": "2867fc1179a7b82b095e7719bc2f9015fdd87b5190626f61b0adfbd4fc318bf6",
+      "bytes": 14967,
+      "lines": 252
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_REVIEW.md",
+      "sha256": "8eb1d81e91227a0cda36e75459e32be80b1523709a5f82fc5af4c1e8fd6d74de",
+      "bytes": 16855,
+      "lines": 306
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent_review/receipt.json",
+      "sha256": "c5fb2219ef98d4abce39ef98be784e5c7d1ffde0054cd867214f4713226ba6e0",
+      "bytes": 19528,
+      "lines": 426
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/receipt.json",
+      "sha256": "49bd1d8872a07aea1e5266cb2f07f3ea2aff4d9a9602f7a141e0051037d92b80",
+      "bytes": 7362,
+      "lines": 162
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/independent_review_receipt.json",
+      "sha256": "74990de59ab11a8011f4164ce689b0f80153d261c073c486f47b78a1beaf1a28",
+      "bytes": 24896,
+      "lines": 474
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/DEPENDENCY_ADDENDUM.md",
+      "sha256": "8ef5245b3301a19338eedfc8f3f98610b6d3162538b80fbe01bfaf27e5a1273a",
+      "bytes": 2708,
+      "lines": 11
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/dependency_addendum_receipt.json",
+      "sha256": "151aeb2e37648b0ef468e40538b4d0ce11707a1fe3a704239b946e559a5d82bb",
+      "bytes": 2400,
+      "lines": 45
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/kato_1957_primary.pdf",
+      "sha256": "12ce9d67ed67d096f82b55a6ef7b778a83c16d5e2f020d4946d58112f3f93fe5",
+      "bytes": 442573,
+      "lines": 3648
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "9f551fc8d3592e83d15a007495a8f9165a5ddb9bc1e98d9dd3f51b6a2584f401",
+      "bytes": 65166,
+      "lines": 1280
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+      "sha256": "c05465cee9acb7ee1bc9b0296b4fd5546432bd8188043194b1701a2d3654ef87",
+      "bytes": 72064,
+      "lines": 1556
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_current_2026_10_11.py",
+      "sha256": "b5cfe4af2e2e56f6a531afaa36c19daded1003d91b3a861ebe177ba87a0ebc33",
+      "bytes": 24121,
+      "lines": 507
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/CHECKPOINT.md",
+      "sha256": "3b86bf7cc0204c334494f6bb2d74f9240cf27e77191a961755382f6b2198c48a",
+      "bytes": 1716,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/COMPOSITION_REPORT.md",
+      "sha256": "992aea2e3e43997ca5419a83cedab37d691b6f071e1cb759f14be9368b2892ab",
+      "bytes": 5821,
+      "lines": 17
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/DEVELOPMENT_LOG.md",
+      "sha256": "d552c40c18cb5d7c1ca361bc2b509cc7028b99d9e03c39e1e18500f7085ee723",
+      "bytes": 2786,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/PRE_EXTENSION_DIFF.txt",
+      "sha256": "0cacffbbd60b92b5c8d977c27ac1dc60659b8b4a2b457557921170464ca0472e",
+      "bytes": 25969,
+      "lines": 493
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/SOURCE_COMPOSITION.json",
+      "sha256": "ffe3df5cd8633fa927bbe78e7fbfbeffd7c96efc30dbc969d0c0bf24a31e0fa2",
+      "bytes": 206036,
+      "lines": 1410
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/build_publication.py",
+      "sha256": "a24bf11073305854410e5fc5c3b4238625dccedc83f8beeb05c04b6ff0d506e3",
+      "bytes": 40421,
+      "lines": 619
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/final_identity_check.json",
+      "sha256": "f6d80b05f1bfd0a2159b1ae156cbb80b81409cd0bc50f7fb9abfaa0797dc9f26",
+      "bytes": 8515,
+      "lines": 353
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/finalize_composition.py",
+      "sha256": "dfdef076511e7cd8039227397c8a0253a0a2ff6698e9a728e566513f09ca1766",
+      "bytes": 21198,
+      "lines": 207
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_execution.json",
+      "sha256": "bcfd8c804a6803cb406311535fcc51a4a66a8b9b387717152cd896c8d355b8ad",
+      "bytes": 3945,
+      "lines": 80
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_execution_attempt02.json",
+      "sha256": "c3735e349a0d22779a2bf7b8948a2087e27ac9d488e1f7f6e32659cfe01f6286",
+      "bytes": 3906,
+      "lines": 80
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_execution_extended.json",
+      "sha256": "23b5f29d4e0995ddd3b03100a5bd3ea315516de869c84d2a371b41de4a7a2e1c",
+      "bytes": 4364,
+      "lines": 91
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_replay.log",
+      "sha256": "e60953005599cffa11532f06fc0576a5a1a47b3f2f18eae1326136f19b9877f2",
+      "bytes": 712,
+      "lines": 8
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_replay_attempt02.log",
+      "sha256": "792398316b787fa3e5074cbf4ec0041d10edf06217b65115716d52de002c92c8",
+      "bytes": 6459,
+      "lines": 53
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_replay_extended.log",
+      "sha256": "edc40cf14b8aa3ccb491c1a9dd68ff794c4c095506c68c0fa3d17b08f05b34ef",
+      "bytes": 7951,
+      "lines": 82
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/verify_and_replay.py",
+      "sha256": "cab9c8eab3539fc945ff6d06058a9b8772fbd4a073536a59e36319773a10b9d0",
+      "bytes": 4708,
+      "lines": 89
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/verify_and_replay_attempt01.py",
+      "sha256": "faa123af6b468db2cc45f61e6432f234b52538f9b5925311076afdaaa8dc5212",
+      "bytes": 4738,
+      "lines": 89
+    }
+  ],
+  "author_math_helpers_executed": false,
+  "metadata_validation_is_independent_science": false
+}

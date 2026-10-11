@@ -1,0 +1,104 @@
+{
+  "scope": "Source, author receipt manifest, and frozen prior review identity refresh only; no author replay.",
+  "records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+      "sha256": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+      "bytes": 19988,
+      "lines": 420,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/receipt.json",
+      "sha256": "2eaa2eda5f5fec364669e2d6709421a69528843bc43f55f8a1340d3a158967b5",
+      "bytes": 6521,
+      "lines": 111,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+      "bytes": 14339,
+      "lines": 327,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md",
+      "sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe",
+      "bytes": 8340,
+      "lines": 190,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_REVIEW.md",
+      "sha256": "7fa575475439af53c7c0cf4af74fea66537b75ce42afd7418504de4dd0e31051",
+      "bytes": 17166,
+      "lines": 316,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_band_current_review/independent_review_receipt.json",
+      "sha256": "8695c83d80ef8084bd2214be1bcbbc8268a9ad663924a415c1b85f642a2a0f88",
+      "bytes": 8055,
+      "lines": 151,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+      "sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2",
+      "bytes": 20876,
+      "lines": 375,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate_review/independent_review_receipt.json",
+      "sha256": "c4d07a7e025986d1bfc2ba2e479ff34c0c4b73cabe21f1ccc68aaedd64144baa",
+      "bytes": 23359,
+      "lines": 418,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_REVIEW.md",
+      "sha256": "b9525df21cac9721603776dc703314b73e2572b874ac5ef733b35933d6260e2f",
+      "bytes": 21583,
+      "lines": 378,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time_review/independent_review_receipt.json",
+      "sha256": "bba5f583d96d04728bb9bacca52bd9de249ae8ed4d582f7ca52e4c8c0d9c4f1d",
+      "bytes": 11255,
+      "lines": 212,
+      "expected_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/quantitative_controls.py",
+      "sha256": "0e9a63cd42abd9fc3d4f68bb1a8568825e25c36c589f2a6f028ad690654f1df9",
+      "bytes": 6923,
+      "lines": 130,
+      "author_receipt_match": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/quantitative_controls.log",
+      "sha256": "e7f76bd5e5389431094e9fe0ffc7d89ef4212cfebec39658080a24b1169a3597",
+      "bytes": 796,
+      "lines": 7,
+      "author_receipt_match": true
+    }
+  ],
+  "all_expected_identities_match": true
+}

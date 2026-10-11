@@ -1,0 +1,30 @@
+{
+  "sources": [
+    {
+      "source": "excluded_walk_long_time/long_time_checks.py",
+      "sha256": "4ddc0e1972c6ab13c269ac2f7c18b38811be1d9087a4052df53940cc24245a86",
+      "lines": 149,
+      "namespace": "block_1_long_time_checks"
+    },
+    {
+      "source": "excluded_walk_degenerate/degenerate_checks.py",
+      "sha256": "8313796d2a462c37ed1aea0dc32182c9f7dc5b7ba34707d80a033b1c53f3a41a",
+      "lines": 264,
+      "namespace": "block_2_degenerate_checks"
+    },
+    {
+      "source": "two_scale_band_current/root_two_scale_controls.py",
+      "sha256": "3957104cf4362b83c6f6e11c5cbbff365d34e232dc1134cd09cdc9a97312e4ec",
+      "lines": 122,
+      "namespace": "block_3_root_two_scale_controls"
+    },
+    {
+      "source": "quantitative_band_current/quantitative_controls.py",
+      "sha256": "0e9a63cd42abd9fc3d4f68bb1a8568825e25c36c589f2a6f028ad690654f1df9",
+      "lines": 130,
+      "namespace": "block_4_quantitative_controls"
+    }
+  ],
+  "primary_sha256": "a5bec672fe34491dc597a69366af105bb25e6b1e67f5176c0b2b189b5677f162",
+  "change": "Each source embedded byte-for-byte in a literal and executed in an isolated namespace; __file__ metadata identifies the combined runner."
+}

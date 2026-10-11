@@ -1,0 +1,202 @@
+[
+  {
+    "name": "inverse_factor",
+    "matched_stable_prefix_lines": 1,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/inverse_factor.py::block_1_long_time_checks\", line 54, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/inverse_factor.py::block_1_long_time_checks\", line 16, in check"
+    ],
+    "exception": "AssertionError: reduced inverse contact coefficient"
+  },
+  {
+    "name": "measure_normalization",
+    "matched_stable_prefix_lines": 1,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/measure_normalization.py::block_1_long_time_checks\", line 55, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/measure_normalization.py::block_1_long_time_checks\", line 16, in check"
+    ],
+    "exception": "AssertionError: inverse norm uses averaged measure"
+  },
+  {
+    "name": "missing_compression",
+    "matched_stable_prefix_lines": 1,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/missing_compression.py::block_1_long_time_checks\", line 57, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/missing_compression.py::block_1_long_time_checks\", line 16, in check"
+    ],
+    "exception": "AssertionError: actual compression has extra zero vector"
+  },
+  {
+    "name": "auxiliary_state",
+    "matched_stable_prefix_lines": 1,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/auxiliary_state.py::block_1_long_time_checks\", line 60, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/auxiliary_state.py::block_1_long_time_checks\", line 16, in check"
+    ],
+    "exception": "AssertionError: auxiliary contact zero mode excluded from physical kernel"
+  },
+  {
+    "name": "cutoff_mean",
+    "matched_stable_prefix_lines": 1,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/cutoff_mean.py::block_1_long_time_checks\", line 95, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/cutoff_mean.py::block_1_long_time_checks\", line 16, in check"
+    ],
+    "exception": "AssertionError: cutoff inverse restores the excluded singlet mean"
+  },
+  {
+    "name": "missing_current_correction",
+    "matched_stable_prefix_lines": 1,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/missing_current_correction.py::block_1_long_time_checks\", line 112, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/missing_current_correction.py::block_1_long_time_checks\", line 16, in check"
+    ],
+    "exception": "AssertionError: canonical correction cancels threshold deviation"
+  },
+  {
+    "name": "derivative_sign",
+    "matched_stable_prefix_lines": 12,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/derivative_sign.py::block_2_degenerate_checks\", line 36, in exact",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/derivative_sign.py::block_2_degenerate_checks\", line 25, in check"
+    ],
+    "exception": "AssertionError: Pauli derivative cross sign"
+  },
+  {
+    "name": "transverse_projection",
+    "matched_stable_prefix_lines": 13,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/transverse_projection.py::block_2_degenerate_checks\", line 36, in exact",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/transverse_projection.py::block_2_degenerate_checks\", line 25, in check"
+    ],
+    "exception": "AssertionError: transverse projected cross identity"
+  },
+  {
+    "name": "full_zero_space",
+    "matched_stable_prefix_lines": 17,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/full_zero_space.py::block_2_degenerate_checks\", line 117, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/full_zero_space.py::block_2_degenerate_checks\", line 25, in check"
+    ],
+    "exception": "AssertionError: entire physical zero dimension"
+  },
+  {
+    "name": "coupling_omission",
+    "matched_stable_prefix_lines": 20,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/coupling_omission.py::block_2_degenerate_checks\", line 36, in exact",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/coupling_omission.py::block_2_degenerate_checks\", line 25, in check"
+    ],
+    "exception": "AssertionError: full effective generator includes g"
+  },
+  {
+    "name": "placement_omission",
+    "matched_stable_prefix_lines": 24,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/placement_omission.py::block_2_degenerate_checks\", line 36, in exact",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/placement_omission.py::block_2_degenerate_checks\", line 25, in check"
+    ],
+    "exception": "AssertionError: canonical block including cross 0"
+  },
+  {
+    "name": "corrector_sign",
+    "matched_stable_prefix_lines": 38,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/corrector_sign.py::block_2_degenerate_checks\", line 179, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/corrector_sign.py::block_2_degenerate_checks\", line 25, in check"
+    ],
+    "exception": "AssertionError: cutoff corrector residual sign"
+  },
+  {
+    "name": "actual_current_sign",
+    "matched_stable_prefix_lines": 45,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/actual_current_sign.py::block_2_degenerate_checks\", line 225, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/actual_current_sign.py::block_2_degenerate_checks\", line 25, in check"
+    ],
+    "exception": "AssertionError: actual canonical expansion lambda=0.04 axis=0"
+  },
+  {
+    "name": "cone_streaming_factor",
+    "matched_stable_prefix_lines": 66,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/cone_streaming_factor.py::block_2_degenerate_checks\", line 36, in exact",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/cone_streaming_factor.py::block_2_degenerate_checks\", line 25, in check"
+    ],
+    "exception": "AssertionError: cone matrix cubic polynomial"
+  },
+  {
+    "name": "band_placement",
+    "matched_stable_prefix_lines": 85,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/band_placement.py::block_3_root_two_scale_controls\", line 74, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/band_placement.py::block_3_root_two_scale_controls\", line 20, in exact"
+    ],
+    "exception": "AssertionError: full physical canonical trace identity"
+  },
+  {
+    "name": "band_transverse_trace",
+    "matched_stable_prefix_lines": 85,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/band_transverse_trace.py::block_3_root_two_scale_controls\", line 74, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/band_transverse_trace.py::block_3_root_two_scale_controls\", line 20, in exact"
+    ],
+    "exception": "AssertionError: full physical canonical trace identity"
+  },
+  {
+    "name": "band_high_corrector",
+    "matched_stable_prefix_lines": 88,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/band_high_corrector.py::block_3_root_two_scale_controls\", line 90, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/band_high_corrector.py::block_3_root_two_scale_controls\", line 20, in exact"
+    ],
+    "exception": "AssertionError: high-spectrum corrector residual"
+  },
+  {
+    "name": "global_normalization",
+    "matched_stable_prefix_lines": 95,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/global_normalization.py::block_3_root_two_scale_controls\", line 115, in <module>",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/global_normalization.py::block_3_root_two_scale_controls\", line 20, in exact"
+    ],
+    "exception": "AssertionError: single global projection normalization"
+  },
+  {
+    "name": "explicit_onset_budget",
+    "matched_stable_prefix_lines": 100,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/explicit_onset_budget.py\", line 27, in _run_block",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/explicit_onset_budget.py::block_4_quantitative_controls\", line 14, in <module>"
+    ],
+    "exception": "AssertionError"
+  },
+  {
+    "name": "longitudinal_cutoff_mean",
+    "matched_stable_prefix_lines": 102,
+    "novel_output": [],
+    "final_frames": [
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/longitudinal_cutoff_mean.py\", line 27, in _run_block",
+      "File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_primary_mutations/longitudinal_cutoff_mean.py::block_4_quantitative_controls\", line 46, in <module>"
+    ],
+    "exception": "AssertionError"
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "primary_sha256": "5959a175ffd66638f25b23315d1923c344d51c790ada16a85166671058049c75",
+  "mutations": [
+    {
+      "name": "abel_sign",
+      "old": "integrated = -s.I*g[j]*",
+      "new": "integrated = s.I*g[j]*",
+      "source": "outgoing_resolvent/mutant_abel_sign.py",
+      "source_sha256": "ed2802e3b5441bbce2503acdddbf4609c8e0d8f2a1f2aecc03870e94abb6ccc8",
+      "log": "outgoing_resolvent/mutant_abel_sign.log",
+      "log_sha256": "ffbe48d746322e66009b8d3092b7b5745424f1fda12e4a955eb5b24fca14aa08",
+      "exit_code": 1,
+      "elapsed_seconds": 0.4418591670691967,
+      "timeout_seconds": 120,
+      "intended_assertion": "Abel causal sign channel 0"
+    },
+    {
+      "name": "helicity_measure",
+      "old": "claimed_each_helicity_weight = s.Rational(1, 2)",
+      "new": "claimed_each_helicity_weight = s.Rational(1, 1)",
+      "source": "outgoing_resolvent/mutant_helicity_measure.py",
+      "source_sha256": "fa2da9ef03821cf8d363a3ab153062c33fbe326d6a17410d029f977de3ccefc3",
+      "log": "outgoing_resolvent/mutant_helicity_measure.log",
+      "log_sha256": "798e7682c87026853ab5ab0b56cffa5952e728b9eca11091d10883b8dba59f0f",
+      "exit_code": 1,
+      "elapsed_seconds": 0.4323729588650167,
+      "timeout_seconds": 120,
+      "intended_assertion": "helicity half measure"
+    },
+    {
+      "name": "energy_moment_factor",
+      "old": "energy_moment_ceiling = F(2, 3)",
+      "new": "energy_moment_ceiling = F(1, 3)",
+      "source": "outgoing_resolvent/mutant_energy_moment_factor.py",
+      "source_sha256": "b5f8be442cd5676454d64ca116404b285163ff2dbc5ca7155a7a2882e9d7d8c4",
+      "log": "outgoing_resolvent/mutant_energy_moment_factor.log",
+      "log_sha256": "12a3b47da3fdaaa0768d0e920cce52df05fb5cafa7cc0c0271c49f5d1acd45e4",
+      "exit_code": 1,
+      "elapsed_seconds": 0.4355094591155648,
+      "timeout_seconds": 120,
+      "intended_assertion": "permutation complement factor"
+    },
+    {
+      "name": "cone_power",
+      "old": "claimed_cone_coefficient = 2**37*pi2*I0",
+      "new": "claimed_cone_coefficient = 2**36*pi2*I0",
+      "source": "outgoing_resolvent/mutant_cone_power.py",
+      "source_sha256": "47d0f56d13ab7e91f35fa3cddc608aa41fad946fa058001bb77daf3d0fe0de8c",
+      "log": "outgoing_resolvent/mutant_cone_power.log",
+      "log_sha256": "0d73349908d9f6c2d28d127dc0079dcffda2377b1c4dc63fa719234f0f8d7cc6",
+      "exit_code": 1,
+      "elapsed_seconds": 0.43543954100459814,
+      "timeout_seconds": 120,
+      "intended_assertion": "cone coefficient exact powers"
+    },
+    {
+      "name": "weighted_lower_factor",
+      "old": "c0 = m0**3/(8*K0*K0)",
+      "new": "c0 = m0**3/(4*K0*K0)",
+      "source": "outgoing_resolvent/mutant_weighted_lower_factor.py",
+      "source_sha256": "f0967d6228cedb5449f8d3c28c334743a860d959181f20e56077ca69381a8953",
+      "log": "outgoing_resolvent/mutant_weighted_lower_factor.log",
+      "log_sha256": "2e06095d02baa8910860637bead57400290868fbcf140000354be10f32c81169",
+      "exit_code": 1,
+      "elapsed_seconds": 0.42752112494781613,
+      "timeout_seconds": 120,
+      "intended_assertion": "weighted mass constant"
+    }
+  ]
+}

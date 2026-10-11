@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent_review/source_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011",
+  "started_utc": "2026-10-11T20:20:59.596032+00:00",
+  "ended_utc": "2026-10-11T20:20:59.638334+00:00",
+  "wall_seconds": 0.04231666633859277,
+  "timeout_seconds": 30,
+  "exit_code": 0,
+  "helper_sha256": "a88f6722db8ec8911cb51ae6d3ac2b091de9b1b8e390e26f22aca5a179aaba74",
+  "log_sha256": "a7054160153fee820d639c7f7187b4fa0a9ce4d7dcd3244dd8ea4b172de1fe2f"
+}

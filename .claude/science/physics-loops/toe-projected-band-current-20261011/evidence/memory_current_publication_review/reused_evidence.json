@@ -1,0 +1,51 @@
+[
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_PROJECTED_CURRENT_PUBLICATION_REVIEW.md",
+    "sha256": "076021427ff4e2cbb473363e09b3a043c2a4bae01d24bdfc69a6a42a55be8cf1",
+    "bytes": 21197,
+    "lines": 282,
+    "scope": "Complete prior composition review reused; unchanged P859 and selected parent contract/current coverage."
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_publication_review/receipt.json",
+    "sha256": "f2c75a99df4eb6139f5f2329c9471716779a8c2ecb61b180ec5788321b5aab03",
+    "bytes": 73664,
+    "lines": 1460,
+    "scope": "Prior evidence identity reused; not recursively asserting old mutable publication paths retain older bytes."
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+    "sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2",
+    "bytes": 20876,
+    "lines": 375,
+    "scope": "Complete prior 375-line independent review read; own D source is not recertified here."
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_REVIEW.md",
+    "sha256": "b9525df21cac9721603776dc703314b73e2572b874ac5ef733b35933d6260e2f",
+    "bytes": 21583,
+    "lines": 378,
+    "scope": "Complete prior 378-line independent review read; own L source is not recertified here."
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/AGENTS.md",
+    "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+    "bytes": 1265,
+    "lines": 27,
+    "scope": "Previously read local instructions, unchanged revision."
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+    "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+    "bytes": 15435,
+    "lines": 245,
+    "scope": "Previously read complete workflow, unchanged revision."
+  },
+  {
+    "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+    "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+    "bytes": 14490,
+    "lines": 230,
+    "scope": "Previously read complete skill, same selected-model bounded-review scope; no audit process invoked."
+  }
+]

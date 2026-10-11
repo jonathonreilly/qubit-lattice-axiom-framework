@@ -1,0 +1,111 @@
+{
+  "created_utc": "2026-10-11T19:23:25.494826+00:00",
+  "scope": "External positive author derivation of an explicit weak-momentum onset for one normalized projected-free-band family; conditional-support, not independent review or audit.",
+  "source_inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+      "bytes": 14339,
+      "lines": 327,
+      "reading_coverage": "Complete 327-line argument read; B1-B24.",
+      "frozen_bytes_unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457,
+      "reading_coverage": "Complete 457-line argument read; L1-L20. Exact cone and band-density bounds and L14 reconstructed as needed.",
+      "frozen_bytes_unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549,
+      "reading_coverage": "Complete 549-line argument read; quantitative source D11, canonical remainder D14, response D23 and nonuniformity limits retained.",
+      "frozen_bytes_unchanged": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md",
+      "sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe",
+      "bytes": 8340,
+      "lines": 190,
+      "reading_coverage": "Previous complete 190-line reading and reconstruction reused; exact canonical energy-placement premise. Identity refreshed unchanged.",
+      "frozen_bytes_unchanged": true
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+      "sha256": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+      "bytes": 19988,
+      "lines": 420
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/quantitative_controls.py",
+      "sha256": "0e9a63cd42abd9fc3d4f68bb1a8568825e25c36c589f2a6f028ad690654f1df9",
+      "bytes": 6923,
+      "lines": 130
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/quantitative_controls.log",
+      "sha256": "e7f76bd5e5389431094e9fe0ffc7d89ef4212cfebec39658080a24b1169a3597",
+      "bytes": 796,
+      "lines": 7
+    }
+  ],
+  "source_reading": "Entire 420-line new note and entire 130-line helper cold-read; final Q13 finite-range clarification read in full; complete successful 7-line log inspected.",
+  "result": {
+    "lambda_domain": "0 < lambda <= 1/16",
+    "delta": "2^-68 lambda^2",
+    "sigma": "2^-40 lambda^(3/2)",
+    "time": "2^68/(20 lambda^2)",
+    "K_center": "2^-68 lambda^2 (1,1,1)",
+    "K_support_radius": "2^-68 lambda^3/(6998400 pi^2)",
+    "actual_current_change_each_component": "<= -delta A_lambda^2/43200 <= -2^-68 lambda^3/(388800 pi^2)",
+    "global_preparation": "Free packet unit norm; physical packet divided once by ||P Phi|| with 1-lambda^3/3 <= ||P Phi||^2 <= 1; exact momentum reweighting retained."
+  },
+  "decisive_analytic_steps": [
+    "Pointwise transverse orbit estimate with scalar |alpha|<=1.",
+    "Complete pure-longitudinal Q B orbit and removal of its zeta component.",
+    "Singlet cutoff inverse with nonzero subtracted mean and spectral theorem bound M_zeta <= (7/2)b^2 T sqrt(sigma)/sqrt(I0).",
+    "Complementary low-spectral mass from complete L14 inverse.",
+    "Finite transverse error and amplitude-retaining current trace estimate.",
+    "Explicit polynomial choice, actual positive-band preparation, finite momentum continuity and one global packet normalization."
+  ],
+  "control_run": {
+    "command": "/Users/jonreilly/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_band_current/quantitative_controls.py",
+    "exit_code": 0,
+    "complete_log_read": true,
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "families": [
+      "Exact Fraction parameter, current, cutoff-domain and preparation margins.",
+      "Exact positive-weight three-antipodal-pair I0=1 cutoff fixture with nonzero removed mean 495/1792.",
+      "Five finite effective orbits and nontrivial low-spectral cutoff.",
+      "Both spectral-corrector residuals from finite matrices.",
+      "Full physical-space canonical current trace."
+    ],
+    "scope_limit": "Finite matrix checks do not prove continuum cone integrals, infinite-dimensional evolution estimates, or the final current theorem. They are author controls, not independent analytic verification."
+  },
+  "failed_runs": [],
+  "preserved_incomplete_routes": [
+    "Uncut singlet inverse need not belong to L2.",
+    "Omitting singlet cutoff mean or removed zeta coefficient invalidates the residual.",
+    "Fixed-vector strong convergence is insufficient for lambda-dependent preparation.",
+    "Amplitude-blind state comparison loses the useful lambda margin.",
+    "No estimate uniform over the whole zero-space unit ball; frozen nonuniformity example preserved."
+  ],
+  "open_obligations": [
+    "Independent research check of the new pointwise-to-spectral estimate, finite transverse bound, current margin and global preparation.",
+    "Formal retained status remains outside this author derivation."
+  ],
+  "premise_limits": [
+    "Supplied walk, clock, spin sector, hard contact exclusion and canonical local-energy placement retained.",
+    "Specific constructed packet family; no universal sign or monotone decay.",
+    "No physical event clock, kinetic rate or many-body closure.",
+    "No new literature theorem or repository-wide novelty/open-PR inventory."
+  ],
+  "writes": "Only the new external probe and quantitative_band_current controls/log/receipt; no frozen source, worktree, prompt, registry, commit, PR or audit changes."
+}

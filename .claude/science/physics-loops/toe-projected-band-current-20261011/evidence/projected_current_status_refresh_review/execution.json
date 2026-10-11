@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_status_refresh_review/check_refresh.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011",
+  "started_utc": "2026-10-11T20:26:11.496648+00:00",
+  "ended_utc": "2026-10-11T20:26:11.532597+00:00",
+  "wall_seconds": 0.03596070921048522,
+  "timeout_seconds": 30,
+  "exit_code": 0,
+  "helper_sha256": "df0ef3797978f1c1a45d88c211da9f54a511e7505c94e86d7c3160a05bca380e",
+  "log_sha256": "52a3b27e78d3f95a65fd9c72457b87469783c6f14804d00052bec396452e2dd3"
+}

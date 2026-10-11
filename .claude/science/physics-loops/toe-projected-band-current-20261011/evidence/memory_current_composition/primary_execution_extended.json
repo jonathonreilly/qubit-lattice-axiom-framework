@@ -1,0 +1,91 @@
+{
+  "created_utc": "2026-10-11T20:30:26.264591+00:00",
+  "task": "Exact external composition identity controls and literal author primary replay",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_current_2026_10_11.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011",
+  "timeout_seconds": 180,
+  "returncode": 0,
+  "elapsed_seconds": 1.4361322922632098,
+  "note_sha256": "c05465cee9acb7ee1bc9b0296b4fd5546432bd8188043194b1701a2d3654ef87",
+  "primary_sha256": "b5cfe4af2e2e56f6a531afaa36c19daded1003d91b3a861ebe177ba87a0ebc33",
+  "map_sha256": "ffe3df5cd8633fa927bbe78e7fbfbeffd7c96efc30dbc969d0c0bf24a31e0fa2",
+  "source_checks": [
+    {
+      "source_key": "M",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222
+    },
+    {
+      "source_key": "W",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md",
+      "sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324",
+      "bytes": 17059
+    },
+    {
+      "source_key": "G",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "bytes": 11538
+    },
+    {
+      "source_key": "P",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+      "sha256": "ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969",
+      "bytes": 37412
+    },
+    {
+      "source_key": "D",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725
+    },
+    {
+      "source_key": "L",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625
+    },
+    {
+      "source_key": "R",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_DRAFT.md",
+      "sha256": "58a96a049701667e673bde1acf98e5346356483101654b3464fe11e94fd02c21",
+      "bytes": 11171
+    }
+  ],
+  "literal_helper_checks": [
+    {
+      "source": "effective_memory/memory_controls.py",
+      "sha256": "10980b8195c33ac813f59632cc028a1dbd8a04e066930786dabea338ed162c4a",
+      "bytes": 8187
+    },
+    {
+      "source": "effective_memory/mean_controls.py",
+      "sha256": "8376f00539c79b580b6c142b5b71b8d0d4ec39cd98f47e9577170e915d5b097c",
+      "bytes": 1787
+    },
+    {
+      "source": "weighted_memory/weighted_controls.py",
+      "sha256": "70807cce821d3e2eca3fc96cefd52fa1cfe83c4496801b9c9f2f7b9dd5108c24",
+      "bytes": 4862
+    },
+    {
+      "source": "joint_scale_current/scale_controls.py",
+      "sha256": "1a71fb0d680630d0581fe4f982520d4bc3bc51a2649c2359815c3445c2b4d233",
+      "bytes": 2759
+    },
+    {
+      "source": "outgoing_resolvent/outgoing_controls.py",
+      "sha256": "5959a175ffd66638f25b23315d1923c344d51c790ada16a85166671058049c75",
+      "bytes": 4172
+    }
+  ],
+  "namespace_check": "AST verifies a newly constructed dict inside each iteration and exec with that same dict as globals and locals. Complete helper reading found no cross-block imported-module mutations.",
+  "reconstruction": "Every exact source range, unique edit, output byte range and full concatenation verified.",
+  "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_replay_extended.log",
+  "log_sha256": "edc40cf14b8aa3ccb491c1a9dd68ff794c4c095506c68c0fa3d17b08f05b34ef",
+  "independence": "Author helper replay plus deterministic composition bookkeeping; not new independent mathematics."
+}

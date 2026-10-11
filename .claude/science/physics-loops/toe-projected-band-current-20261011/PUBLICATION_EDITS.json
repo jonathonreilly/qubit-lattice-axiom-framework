@@ -1,0 +1,17 @@
+{
+  "draft_note_sha256": "ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969",
+  "draft_primary_sha256": "a5bec672fe34491dc597a69366af105bb25e6b1e67f5176c0b2b189b5677f162",
+  "publication_note": "docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+  "publication_primary": "scripts/excluded_walk_projected_free_band_canonical_current_2026_10_11.py",
+  "note_edits": [
+    "Add literal primary runner frontmatter field",
+    "Append publication-only execution/dependency footer; pending source-composition wording unchanged"
+  ],
+  "primary_edit": {
+    "before": "docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+    "after": "docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+    "scope": "declared input pathname only; all four full mathematical programs unchanged"
+  },
+  "note_sha256": "7543767f5f2377812f78630238e73959b170752de0455fb6ab5f556a2f1868bb",
+  "primary_sha256": "4451005b466c114b40c943509b13aaa34607b7b8e884ab584df4c19d8b1f30ff"
+}

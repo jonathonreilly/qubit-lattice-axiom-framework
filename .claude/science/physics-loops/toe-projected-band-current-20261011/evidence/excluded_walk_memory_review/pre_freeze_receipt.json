@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-10-11T19:39:57.572071+00:00",
+  "scope": "Independent reconstruction and exact finite controls before reading the forthcoming effective-memory author draft. Not a source-bound review of that draft.",
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+      "sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2",
+      "bytes": 20876,
+      "lines": 375
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate_review/independent_review_receipt.json",
+      "sha256": "c4d07a7e025986d1bfc2ba2e479ff34c0c4b73cabe21f1ccc68aaedd64144baa",
+      "bytes": 23359,
+      "lines": 418
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_review/PRE_FREEZE_RECONSTRUCTION.md",
+      "sha256": "25a7cb608f6db544cb8fe15d7010d559b5597d75cd08cb06039fd2add7893b1d",
+      "bytes": 7436,
+      "lines": 155
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_review/independent_memory_controls.py",
+      "sha256": "4eaa6eba75bf92ca0a088eab4d44cc0f3883b77e2e06aa8a16298d5f721329a8",
+      "bytes": 5086,
+      "lines": 122
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_review/independent_memory_controls.log",
+      "sha256": "fc2deb036057cceef0b19d43953c9384d784b6f26a5dd8f8973266462820eda8",
+      "bytes": 1900,
+      "lines": 36
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_review/independent_execution.json",
+      "sha256": "7c9cf9452e68b56d692aceabafb442af3f35237fe2b8bb3333f508bc92ce0c6f",
+      "bytes": 307,
+      "lines": 9
+    }
+  ],
+  "author_memory_draft_read": false,
+  "new_independent_argument": "Scalar resolvent/Volterra formula, real-analytic coarea bath absolute continuity, constructive interior positivity, bounded scalar Poisson transform, endpoint exclusion via strict pointwise compression, scalar Riemann-Lebesgue decay.",
+  "finite_control_scope": "Weighted exact 5x5 compression of actual 6x6 triplet derivative; helicity weights, three exact resolvents, time jets through order 12, nonzero angular cone-weight limit. Pure-point finite fixture cannot establish continuum decay.",
+  "run": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_review/independent_memory_controls.py"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.6581795830279589,
+    "timeout_seconds": 120
+  },
+  "failed_runs": [],
+  "pending": "Read complete frozen author source once root supplies hash; compare proof and endpoint/time-scope claims before final review."
+}

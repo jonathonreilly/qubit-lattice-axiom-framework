@@ -1,0 +1,112 @@
+{
+  "created_at_utc": "2026-10-11T19:17:45.523225+00:00",
+  "role": "Author exact finite algebra and error-budget controls, separate from independent research review",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+      "bytes": 14339,
+      "lines": 327
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md",
+      "sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe",
+      "bytes": 8340,
+      "lines": 190
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/root_two_scale_controls.py",
+      "sha256": "3957104cf4362b83c6f6e11c5cbbff365d34e232dc1134cd09cdc9a97312e4ec",
+      "bytes": 5344,
+      "lines": 122
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/baseline.log",
+      "sha256": "92046ca62361092a58e15efa74da3ceeecadb22915235899f0a0f5bb5c42697f",
+      "bytes": 1194,
+      "lines": 20
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutation_manifest.json",
+      "sha256": "8f1cbe4ec01c1ab0cedff744eb25acdde77acc622f9e184c015a9f087a4edaea",
+      "bytes": 4110,
+      "lines": 73
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_placement.py",
+      "sha256": "9e4b9f9adebdcbab5987e1759ba14e92e81bab4d49ad71da4b519ad3f1d4a018",
+      "bytes": 5344,
+      "lines": 122
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_placement.log",
+      "sha256": "37c86f03a6de8379838eff0d9d5894ae5d9e274e2ae865b6abf577bf1cc535bf",
+      "bytes": 1105,
+      "lines": 17
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_transverse_trace.py",
+      "sha256": "78c74ed6d62bae7afacff52fdcea5faced4a3e3cfd3eaf2ddd913b0a8f3e4650",
+      "bytes": 5344,
+      "lines": 122
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_transverse_trace.log",
+      "sha256": "7c1b7a89507ab4b7f09d5c3b4bb0eee05ba62eb2705702fa2624a9c9adf12e0f",
+      "bytes": 1119,
+      "lines": 17
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_high_corrector.py",
+      "sha256": "f20c8013bf7cdcbfe048db4a4114f75c56fa3b919c1f9261f0ed6ad9658c38e4",
+      "bytes": 5345,
+      "lines": 122
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_high_corrector.log",
+      "sha256": "a6767b396ce91b949fff79c5424815f0c232b2fe0d60f04442d2c6f7f44d9efe",
+      "bytes": 1119,
+      "lines": 18
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_global_normalization.py",
+      "sha256": "d340a82f9e0973f52e1df8c8a3b1dedd2f1c13da3645f278d9eed669c09c7621",
+      "bytes": 5345,
+      "lines": 122
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/two_scale_band_current/mutant_global_normalization.log",
+      "sha256": "f77c1dbd3528a473a0c81412afee0eec4e2245fe236945b0fb0d8ddbfcfa9e5d",
+      "bytes": 1616,
+      "lines": 25
+    }
+  ],
+  "baseline": {
+    "exit_code": 0,
+    "elapsed_seconds": 0.85455,
+    "failed_runs": 0,
+    "timing_precision": "Previously recorded wall time rounded"
+  },
+  "mutations": "All four actual source replacements reproduced byte-for-byte; complete raw exit-one logs show the intended assertions. These were read in full.",
+  "coverage": "Complete draft and helper/log read by root; exact unequal-radius fixture tests full trace, Q-to-F coupling, complement corrector, and global projection normalization.",
+  "limits": [
+    "Finite model values are not continuum integral estimates",
+    "Ordered-limit proof has no explicit delta onset in this frozen source",
+    "Independent reviewer separately checked source with its own fixture; this author helper was not an input to that review"
+  ],
+  "editable_prompt_files_changed": []
+}

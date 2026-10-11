@@ -1,0 +1,151 @@
+{
+  "created_at_utc": "2026-10-11T19:09:55.365942+00:00",
+  "task": "independent review of ordered two-scale projected free-band canonical-current construction",
+  "outcome": "no consequential defect found in frozen B1-B24 within stated scope; not an audit verdict",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_REVIEW.md",
+    "sha256": "7fa575475439af53c7c0cf4af74fea66537b75ce42afd7418504de4dd0e31051",
+    "bytes": 17166,
+    "lines": 316
+  },
+  "source_and_protected_premise_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+      "bytes": 14339,
+      "lines": 327
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+      "sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2",
+      "bytes": 20876,
+      "lines": 375
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_degenerate_review/independent_review_receipt.json",
+      "sha256": "c4d07a7e025986d1bfc2ba2e479ff34c0c4b73cabe21f1ccc68aaedd64144baa",
+      "bytes": 23359,
+      "lines": 418
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_REVIEW.md",
+      "sha256": "b9525df21cac9721603776dc703314b73e2572b874ac5ef733b35933d6260e2f",
+      "bytes": 21583,
+      "lines": 378
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md",
+      "sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe",
+      "bytes": 8340,
+      "lines": 190
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TRANSPORT_PROBE.md",
+      "sha256": "8bc423b2d5adf368f4ae09a2bb87730517be243a050b4289dad3a0b217f09526",
+      "bytes": 27369,
+      "lines": 322
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_long_time_review/independent_review_receipt.json",
+      "sha256": "bba5f583d96d04728bb9bacca52bd9de249ae8ed4d582f7ca52e4c8c0d9c4f1d",
+      "bytes": 11255,
+      "lines": 212
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_PUBLICATION_REVIEW.md",
+      "sha256": "fe27f1404d47207a20c815912033d575c79bce6cfb915833460db27a871b9c5b",
+      "bytes": 24091,
+      "lines": 416
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_publication_review/identity_receipt.json",
+      "sha256": "47fa6e23ddf211805492777e50383881f2d749db333114622c75185dd94dc10d",
+      "bytes": 9470,
+      "lines": 185
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "lines": 230
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "e0536f80a25feb0b368c10a0016a9d09b07b5bd06827751c30029d2eb1d70065",
+      "bytes": 24980,
+      "lines": 226
+    }
+  ],
+  "independent_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_band_current_review/independent_band_current_controls.py",
+      "sha256": "ff50609fe7257f7e16deb44a3c0dd1abf96756ce541a0bee55a0a7e88050dba4",
+      "bytes": 7853,
+      "lines": 196
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_band_current_review/independent_band_current_controls.log",
+      "sha256": "d44b3413dc617024808c752988bee0c3e8e28ff5018340c72c980d2201497a55",
+      "bytes": 2342,
+      "lines": 19
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_band_current_review/independent_execution.json",
+      "sha256": "fbdc5753f099be52d6fef4a793946a8c328b1a2f1f0d2ccf905c87ca3c59c7e3",
+      "bytes": 319,
+      "lines": 9
+    }
+  ],
+  "execution": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_band_current_review/independent_band_current_controls.py"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.0352931250818074,
+    "timeout_seconds": 120
+  },
+  "coverage": [
+    "Full 327-line frozen source read, B1-B24 reconstructed with quantifiers and every displayed numerical margin.",
+    "Full 190-line canonical-current source reread. Unchanged complete degenerate, long-time and threshold premise readings reused after identity verification.",
+    "New exact full-space trace, non-diagonal BQ=FBQ, complement corrector residual, literal finite free-band preparation and actual-current dynamics controls.",
+    "Exact packet constants and single global normalization independently reconstructed.",
+    "Entire independent helper and complete successful first-run output read."
+  ],
+  "independence": "Operator and error-budget reconstruction, then a different literal finite fixture written before reading the author draft. No author-code imports, author process replay, or torus quadrature. Hints identified claims to test rather than evidence of truth.",
+  "author_control_scope": "Author separately prepared controls were not inputs and were not reviewed in this source-proof packet.",
+  "limits": [
+    "Fixed lambda, then delta tending to zero; delta_1(lambda) existential, no polynomial simultaneous law.",
+    "Constructed projected actual-positive-band preparation only; not generic initial data.",
+    "No off-diagonal-kappa componentwise limit needed or asserted; finite-delta continuity transfers the sign.",
+    "No proof-assistant certification, audit disposition, native-axiom dynamics derivation, monotonicity or many-body rate.",
+    "No uniform-all-time negative corollary is stated in the reviewed source; any separate corollary needs exact scope review."
+  ],
+  "editable_prompt_files_changed": [],
+  "writes": "Only the new review and excluded_walk_band_current_review support directory; previous report/receipts and author/repository files unchanged.",
+  "receipt_scope": "Receipt binds named sources and outputs; it intentionally does not hash itself."
+}

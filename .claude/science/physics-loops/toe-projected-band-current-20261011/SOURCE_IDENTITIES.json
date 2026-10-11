@@ -1,0 +1,1913 @@
+{
+  "scope": "Final publication bytes; excludes this identity file itself.",
+  "base_revision": "b9b032ae790c66e762a6296a1306bfb64ae7cd70",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/APPROACH_REGISTRY.md",
+      "sha256": "dd3724363f36d6df4334368c53b5d92f171a15017817dd4487c57dee8fe0ab8b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/ARTIFACT_PLAN.md",
+      "sha256": "2be17f3fb01cc969e27abbd63c9f0b8280a0c4a7807deeaf933ea90e8ebbadef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "3abfbf15143fc42d520f8071c8fbc9275fe43aff7b46106b892589c5c039facb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "9b77dd293e4ad32d1b9bff9481df0d34b918751d8c8503789ddfffcdff5896e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/DELIVERY_CHECKS.md",
+      "sha256": "d87269da4bef214d14d8b05cbed5b3c8feddc57919e53b87e2ab789476184f57"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/EVIDENCE_MAP.json",
+      "sha256": "4e4de62a6aa23fe0c5b9b8f4fa27eb5aee00e3454531ae332a778ad63d5abf2b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/FINAL_PUBLICATION_EDITS.json",
+      "sha256": "ec7777a9ae9442f7bb7f7658f01b6e35fede27b054ce44f548fd0217fade7858"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/GOAL.md",
+      "sha256": "f9ea44d795db37d5ca01cf56e925fd71e43c1ddf89b0f77435887db3074d22a0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/HANDOFF.md",
+      "sha256": "3b5a99a627b64a6f4402cecb6c70016f1db9a188272956459544982917ffe500"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/LITERATURE_BRIDGES.md",
+      "sha256": "198997ac2ab21eece3296f56a899134e03e17adcbdbd28664b68c9a5b1b6a74e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/MEMORY_PUBLICATION_EDITS.json",
+      "sha256": "5fe94d93db6439b709a3f4ffb812d26f66822aa7cf91cbe88c5637681e7f4a19"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/NO_GO_LEDGER.md",
+      "sha256": "770f9289855940ad05cc607c30f836651b92992eb8ce62114c59047b9fd184cd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/OPPORTUNITY_QUEUE.md",
+      "sha256": "ec27e2c4414398f0a2dec6061d0288a2bc6e4e2e9d0ecddfa53646d2c1e1a71b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/PR_BACKLOG.md",
+      "sha256": "be919b2fa1947cf5b3a1369939ff92a1f1649eec3937059d58299d80236daaca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/PUBLICATION_EDITS.json",
+      "sha256": "16e8e8ce846c546e079463ff2be2a82ede04e20890003d81e2c3a8386acb60ac"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/REVIEW_HISTORY.md",
+      "sha256": "ef568564b28cf8b67569be8e2f9714b59e55e3980bde08b5ed23c64e48aa9cc4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/ROUTE_PORTFOLIO.md",
+      "sha256": "eee32b8ae1551486a9d34997fd4da8163b2ab327e5a425f6b3213da42b43886a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/STATE.yaml",
+      "sha256": "ce002b13940e4892184891e15760dff794b59247e6a26f24e4b51941412ed46b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/TRACE_GATE.md",
+      "sha256": "e6eb2dccdfe6f86313118c1ff964c570f68bcd46b406ad12d79a902b551ed23b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md.gz",
+      "sha256": "305fc1d116a646f29a1c35379609adca1ee9fe6ae50f82a32f01a5043ada6af1",
+      "decompressed_sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md.gz",
+      "sha256": "251931b2757b7d4cda6324e26bcc5d0474f3d0dcd181ebcbfa875223f53f6205",
+      "decompressed_sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md.gz",
+      "sha256": "5d4ea1ec0440fbbed5930b807a33bdbee1bdea29645846d84bd8e1448c887198",
+      "decompressed_sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md.gz",
+      "sha256": "edbf8bce83c90137f05b82ee34a35c6cde396a4625820a2cd073e3244c077107",
+      "decompressed_sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md.gz",
+      "sha256": "a1f14534be334bb72807185e1b84e7dc52319ebeb3c11cc20b73b522cf4885ce",
+      "decompressed_sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_JOINT_SCALE_CURRENT_REVIEW.md.gz",
+      "sha256": "af04a04fe1d8681f004c4abe5d0b5df6bce17e1ee94fde6f9d1723912713c96d",
+      "decompressed_sha256": "2867fc1179a7b82b095e7719bc2f9015fdd87b5190626f61b0adfbd4fc318bf6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md.gz",
+      "sha256": "318462285c6588f40e5cb582e3d56b5c9e9220c849bd92bca112b579e3864290",
+      "decompressed_sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_LONG_TIME_REVIEW.md.gz",
+      "sha256": "9b038235f1cc4479503bb27d28a3de9843a2537353d445739cb8e06df741c6cc",
+      "decompressed_sha256": "b9525df21cac9721603776dc703314b73e2572b874ac5ef733b35933d6260e2f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_MEMORY_CURRENT_PUBLICATION_REVIEW.md.gz",
+      "sha256": "ac534cda323a86084a412d0bec541ff1c970221461f88a2356105775be459fc1",
+      "decompressed_sha256": "426af62b6ca87934f69fad715f690652373c6fcdefb318f8ab9cb4237872e56d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_OUTGOING_RESOLVENT_DRAFT.md.gz",
+      "sha256": "c57197c29109673ab9df0a3ab0083ca9b63b5a53822b3451bb7eb41ca6a4cee2",
+      "decompressed_sha256": "58a96a049701667e673bde1acf98e5346356483101654b3464fe11e94fd02c21"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_OUTGOING_RESOLVENT_REVIEW.md.gz",
+      "sha256": "860dfc67e2d7768274838bdd79f02c07e6bc91a1090103159dc95a765d6e61d2",
+      "decompressed_sha256": "8eb1d81e91227a0cda36e75459e32be80b1523709a5f82fc5af4c1e8fd6d74de"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_PROJECTED_CURRENT_PUBLICATION_REVIEW.md.gz",
+      "sha256": "074cff6662fa7db5baf716751c7580b6eea415c9c6e5130b071a1efceae51e1c",
+      "decompressed_sha256": "076021427ff4e2cbb473363e09b3a043c2a4bae01d24bdfc69a6a42a55be8cf1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_PROJECTED_CURRENT_STATUS_REFRESH.md.gz",
+      "sha256": "8572beb31761e7c2e024e6f68c15758ac6721a5c7a34ab722dd7d08e5ca31307",
+      "decompressed_sha256": "03cd681a83236f60f3160954851bb755c43be2a5a5f60fd53a35090518a90f1c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md.gz",
+      "sha256": "4d9265761319d2d1bc07c8c67370d220da423e245719559b84588e8be3913275",
+      "decompressed_sha256": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_REVIEW.md.gz",
+      "sha256": "e6cd5bf6ad715cbae316afdb7a7200c096782c3773302b8aea3716b5da3fcef1",
+      "decompressed_sha256": "a530a7b1507e7d22af11f08c236af865ec1c8acb004069b249c9b281bcf4cbda"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md.gz",
+      "sha256": "f5ed7e79749464b20228766724b4cc4167d7aa313d8a08f2bbbf6b321adbeb48",
+      "decompressed_sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_REVIEW.md.gz",
+      "sha256": "870c7992389602cf1f6837924e87f554667b6f2d9bb275d87a7d01ab976f2b72",
+      "decompressed_sha256": "7fa575475439af53c7c0cf4af74fea66537b75ce42afd7418504de4dd0e31051"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md.gz",
+      "sha256": "82b524cca6d4f6516a26ede13856e3aa59bc792936910cb76efe9c06babb7b7c",
+      "decompressed_sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_WEIGHTED_MEMORY_REVIEW.md.gz",
+      "sha256": "426b859101e20654f289b3ba6ea347c31a51e4fe43218c7ec62344d4fefc6170",
+      "decompressed_sha256": "a2bb951a15a90ca8dba4cba928f6307fdde078f30a41f9f07e818561f7bf0484"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md.gz",
+      "sha256": "e911210beef2135848a8b871ca332e242ced2382434847c1481521ef570d9056",
+      "decompressed_sha256": "c05465cee9acb7ee1bc9b0296b4fd5546432bd8188043194b1701a2d3654ef87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md.gz",
+      "sha256": "d880bbe4485b0fa8fa8929f073674b145df17e2408dfae088941c7f48b5c014e",
+      "decompressed_sha256": "ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_PRIMARY.py.gz",
+      "sha256": "2db52ca1033371772b881916441bdb7d3a7f4a62cd7d2abb65e812397a26aa85",
+      "decompressed_sha256": "a5bec672fe34491dc597a69366af105bb25e6b1e67f5176c0b2b189b5677f162"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/PROJECTED_BAND_CURRENT_SOURCE_COMPOSITION.json",
+      "sha256": "5a48688b7694336051ade340089989f0bcc8a50d4e7d6a23c805990f945c8341"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/PROJECTED_CURRENT_PRE_PUBLICATION_REFRESH.md.gz",
+      "sha256": "b5a67b0b426d0905b129d0a8d1a05cac6cdc5189602b3ebc2b7e9dfd2dcec5f4",
+      "decompressed_sha256": "7543767f5f2377812f78630238e73959b170752de0455fb6ab5f556a2f1868bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/ROOT_CURRENT_MEMORY_MECHANICAL_REVIEW.json",
+      "sha256": "1c83f73113129867bfea080635aa17137e520fefd4a948c04bc06e13d2a6685f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/ROOT_CURRENT_MEMORY_REVIEW_IDENTITIES.json",
+      "sha256": "acf221c5a2a899683ac375b4ea31df9ba3648f1e62f5ed35267add7359f44af6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/complete_memory_current_mutations.py.gz",
+      "sha256": "0e38b3693450d4f921dbfa696c29666e123962e675cb5eebe58f17891dc20761",
+      "decompressed_sha256": "e9ccab7d01fbda11690ff1fb0a0dee0fe892a77dde282454cfe97c6025730a16"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/current_memory_audit_compatibility.json",
+      "sha256": "104cbd7ba51136ee4b7f31529d08ed1db7e5d87d9575550a18ae4b22f5de5a09"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/current_memory_delivery_mechanical.json",
+      "sha256": "503281a9af94e38fc9d90bea6f25f7b952e0de79095048c9acebdb9bd3c92a73"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/current_memory_final_vocab_fix.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/current_memory_final_vocab_fix.log.gz",
+      "sha256": "2b1f727b758997535f6782b747f8105c8ca1d072603b0ade25b9d6f674adc050",
+      "decompressed_sha256": "5c5af1e042276491d585d17afb3e327b3a3978d34330804361c58b873d315f12"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/current_memory_final_vocab_report.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/current_memory_final_vocab_report.log.gz",
+      "sha256": "323985ae2a0fe5696831394b8bd4a7f2ed2f2e511eda1a69114488a7c5081561",
+      "decompressed_sha256": "1ab533fbd88012a1f198a7e9d3bd24e0298ccab4e6c767fc137b780a56bee364"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/current_memory_graph_build.log.gz",
+      "sha256": "30fe39f732ea65a2f0842c018e9b5636fde8196e37cd2c7ea62fd0783c948d8a",
+      "decompressed_sha256": "d388ed1d34c74a0e59b85f0795c842e773aa6d8c01012873ed2bf8c2efc62146"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/baseline.log.gz",
+      "sha256": "6c2e2a8376cfd336cd6c5ed9b0ded5ea55bfdc1ee7ed0087d60f2cf0edaaf46e",
+      "decompressed_sha256": "c126b7ff2a736ce09303b97479da7bbc4550e96e0240d1ffc9bae2edd156a3d3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/baseline_execution.json",
+      "sha256": "58ed1859a1cfe3d71b23121e326d8133a42052b99bdf8886ef577b2ef81e7eec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/checkpoint.md.gz",
+      "sha256": "7b041da4785e39252e9096dde6ff6ecc4d38bba27250bc55aca5e3bc0e87ba6b",
+      "decompressed_sha256": "e5442399f0dea76f3655764b0b9e57d1e16480942d8aefda0642bf2dd07bfc7e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/development_log.md.gz",
+      "sha256": "0d92dcc6fd471875c151365c2f237aaec5999d7644211db628f9b7b35be14821",
+      "decompressed_sha256": "294103bd9666a742655aee57b7fe82169861db2c0b16f59b1479b08ebc6cb7c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/freeze_receipt.py.gz",
+      "sha256": "8de8f1db128ff4d621a7f59a44a346c4af903d6f8c7ff4e3341bda5c5fe6ce38",
+      "decompressed_sha256": "0ee2a477cd31cb31b9ddb1cfb4d624b5266e351aef9d7c1debd2fdbe08ec58a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mean_controls.log.gz",
+      "sha256": "881d608b2ff5ff9729da0adb8431c0ceed8ba62b611edce6cedd45ca77303026",
+      "decompressed_sha256": "e33f320682ec1a9b153dd597a67a320e74086a95230aaeb7bb5bf08db9fc0de7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mean_controls.py.gz",
+      "sha256": "d272e6f9653c942223334a4700b65ae5705d550a1dfbb5765140c1878da337e9",
+      "decompressed_sha256": "8376f00539c79b580b6c142b5b71b8d0d4ec39cd98f47e9577170e915d5b097c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mean_execution.json",
+      "sha256": "06687866e9b859570748e9e0bef9427151cc5383d8d71768d932c3ed93fbb578"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mean_mutation.json",
+      "sha256": "a50024631aa2f949b1b676a34a47da50571d16a9cf7805651841b969820da5ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/memory_controls.py.gz",
+      "sha256": "3ce1db92d95bef1d7bb769c746cdb49552f736777407469c474daa9fb3c3a803",
+      "decompressed_sha256": "10980b8195c33ac813f59632cc028a1dbd8a04e066930786dabea338ed162c4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_Poisson_factor_two_omission.log.gz",
+      "sha256": "dacf0919c39ae29967a9470431e1b7fed9d331f4b658caae14ef7bb2fbc1c7f0",
+      "decompressed_sha256": "ded293094763ceebc0a8b4e77f1b477b0fdd270eefba39d0746024f775a37e32"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_Poisson_factor_two_omission.py.gz",
+      "sha256": "695b5da8826fc17f593253e5547f1639b530233118530b65ad4c7b510926661c",
+      "decompressed_sha256": "a6e2a6b938c242b4a8d2b5a6fb70e325cc576c074fc24e61d9bb637834baa537"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_Schur_sign.log.gz",
+      "sha256": "95984be33842c12043599881d1adc0e97bb0daf8cd6267f6ceb69d05dca35847",
+      "decompressed_sha256": "f10648448949ec09e3710fbfcdc5c08979c3e9e95813a7167378e195eea36140"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_Schur_sign.py.gz",
+      "sha256": "b87a22d0016cc6d4636214ff8c4b2729a14747e5f6aeb78e37fea00f8476d636",
+      "decompressed_sha256": "4ea1011b22be62e7a5389d4a33875b05f4e0f44ed69524ef00e32b4a420e89a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_finite_bath_atom_omission.log.gz",
+      "sha256": "1d0dd4947b55bff36b92416802ffbfdc987a58d81404e9c1087bfec6edd44c78",
+      "decompressed_sha256": "47260fcb97dfb7c9951c5a4497f026b354922488139f68a249f0b0cb4982fada"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_finite_bath_atom_omission.py.gz",
+      "sha256": "a6993dc407f8b3cb37fe3b84224005a45497fb48aab8ef030c395bb455d04dd3",
+      "decompressed_sha256": "e122d204144b0909154e9f22ce16fc1dfa4e8c7e8e50a5c7239dcab87e026caa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_helicity_half_omission.log.gz",
+      "sha256": "c566a99aad1274af2a41f0e24968a0ef175e050bb8a119225c7f74304deaed78",
+      "decompressed_sha256": "e7bbdcbbdabeb512888c340858dd750e8f3a507ad4c23400b3a72e0c4bb63fe8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_helicity_half_omission.py.gz",
+      "sha256": "894687b9a46382abc4c499255a2cbde0de2769b1913e11eb19cda27dd47b4a7d",
+      "decompressed_sha256": "28d515c42de67bc8548e0636957d591d1be4e638f1a002a3a4af00cf8d638225"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_mean_factor.log.gz",
+      "sha256": "4d0b41d38b8a6e9459554f63e94eb647c8edb404040182c515761eca943c0227",
+      "decompressed_sha256": "ae1cb4bd6085eaee2c97d1823362275eb03e6f0fb673b968a7bc74a68ba91df8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_mean_factor.py.gz",
+      "sha256": "f6867310dd9542c21465e03ce32b3d482bdc52fff07bafd965f3518d2ea67733",
+      "decompressed_sha256": "aba92c0d24e8434904f6b049c78ed977e3c89b126be804d1a68f1c8e591e048f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_memory_sign.log.gz",
+      "sha256": "a57c7690e4eda0926685bd33b38082e37786946c78e922230394ccbc18a2ccfc",
+      "decompressed_sha256": "3ca5697408bf1230a3b6bc1592e1041e68db56bae76524208babbf923f3f823f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutant_memory_sign.py.gz",
+      "sha256": "d4b8f177983e6e3194a060971a0f9a0835e801b6f55f50bf7604d366f7f44c8d",
+      "decompressed_sha256": "ae06621e031aaaf9d7f59b8afe1144a2d1c1b2e343714f744af1c50592f1758a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/mutation_manifest.json",
+      "sha256": "bf3d92a9a1315a47b6943d31bd956c614ef5c3824afa49b2da6fb84fe1c1f9af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/receipt.json",
+      "sha256": "99cad79eeb712071bfc48a04a161df7280cea694f80523dc86c563537f272557"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/run_mutations.py.gz",
+      "sha256": "ef4f4e7e8fb1a2a92d42931ae0f4a631bfb43dacaa895ad8ed92425dbffb5258",
+      "decompressed_sha256": "bd6b05bfae8d3fe87b1aee69d568c0f82729bd8184908f42aaab26a071fb512f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/effective_memory/source_identity_check.json",
+      "sha256": "b1cb81f2e5ee520c647a4c95c0921e23d4a0a2df0bb56fe51e63cf69fc7d022b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_band_current_review/independent_band_current_controls.log.gz",
+      "sha256": "b9c60765f7a3c1024c5558f8a4607dd49fcd95b4027c3748514298db704f5d0c",
+      "decompressed_sha256": "d44b3413dc617024808c752988bee0c3e8e28ff5018340c72c980d2201497a55"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_band_current_review/independent_band_current_controls.py.gz",
+      "sha256": "60a058d57e00c8f38fd098c98e882a53c5d7eee0341232ccd5b05ee8292b58c6",
+      "decompressed_sha256": "ff50609fe7257f7e16deb44a3c0dd1abf96756ce541a0bee55a0a7e88050dba4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_band_current_review/independent_execution.json",
+      "sha256": "fbdc5753f099be52d6fef4a793946a8c328b1a2f1f0d2ccf905c87ca3c59c7e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_band_current_review/independent_review_receipt.json",
+      "sha256": "8695c83d80ef8084bd2214be1bcbbc8268a9ad663924a415c1b85f642a2a0f88"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/baseline.log.gz",
+      "sha256": "705ea26569ec75f9a29d8ba091510d63f2691c9aa0758672ded8e54090a6b5d8",
+      "decompressed_sha256": "88fc08e88c08ac79b33dc8df908c4d0a88f4dadb662f4802382adece491c340f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/baseline_execution.json",
+      "sha256": "247301d657713eedc23d3d1c6298fe1401c2f7018a5bbc7cc176328486e71236"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/degenerate_checks.py.gz",
+      "sha256": "b9943120ea1687fa88cf6ddd97a02ed2aaba275801e938b0650f3b25f162546b",
+      "decompressed_sha256": "8313796d2a462c37ed1aea0dc32182c9f7dc5b7ba34707d80a033b1c53f3a41a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/freeze_receipt.py.gz",
+      "sha256": "076b0cfc01e9b9a1cd185d59301d65cd801539949cb7e1b83c0ecf7379463650",
+      "decompressed_sha256": "7a3679ce1e78d7e7afb2967131e054aaecc67600625ba3322f6877e6dc40467c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_actual_current_sign.log.gz",
+      "sha256": "bd4ab68d1e5f83555d05c784d9ce02d2d28746ed4fb959e8d7a6a90f4cdd4fa6",
+      "decompressed_sha256": "a8abc0f45df65abe4b53618b5bd1b3858c8e69798026fd735b874e14e5691ab4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_actual_current_sign.py.gz",
+      "sha256": "2f35625a6c048c5f12490dfc3b1fbba93f0be4dc3f6a4d44cb39aafb66c10eed",
+      "decompressed_sha256": "4d07d7c02f74a27a97599a6a6ea0072b578ba51217603ebc803ee2da74441815"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_cone_streaming_factor.log.gz",
+      "sha256": "b39276a82da53381329235db9262bfc412ec0a5088f74468b32e3c4b66f671cf",
+      "decompressed_sha256": "ac5bfa573f1c4fe5e7c579cfacd0ddca8cfd50daf8ed73c329a995f81c626a56"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_cone_streaming_factor.py.gz",
+      "sha256": "7af5b0c8b00d3d741f7605e54ae3f8c8d530b1011de9380a9e15a8bfe7224896",
+      "decompressed_sha256": "327befc68dbca095cd52076663455d2e741fc1722f9dfc32cddc523e714d0e12"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_corrector_sign.log.gz",
+      "sha256": "157017bcc988319e1f7c2f161838427579041024d29089f6526c46c8f5e68870",
+      "decompressed_sha256": "288a55b598b8e499c11944a1b6dba9b02ceb08cfb476ad94000f13edf3578732"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_corrector_sign.py.gz",
+      "sha256": "1668249d6e4388bca085c0c023ded8330ec31e65f29407ed2cb01d3599bf6f88",
+      "decompressed_sha256": "b5f96ce43b8ab0366a3ad51271679505997ead330ee6ffe89fe31188308fb852"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_coupling_omission.log.gz",
+      "sha256": "5275111e6273add9d1c045d8d9fe173314a1b1e02627fec8f16394a5fc91abc1",
+      "decompressed_sha256": "ad85f17bdc17098f377904d193c9e765c65168378d7999f286e04d575c5ac86c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_coupling_omission.py.gz",
+      "sha256": "e6484f86b941ede91957889f52e3affc943f41df5f2b146af0acc88709a30188",
+      "decompressed_sha256": "15fa0859505fee2e757e1cb0f381b7a229aa4b2edd197d6be26b81e699374774"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_derivative_sign.log.gz",
+      "sha256": "3f70d5d72c3f13c261b0b094b79df08b61d246b4ef6d5c23accfc4969ae2e5cc",
+      "decompressed_sha256": "1571553262d1dabada72c306aa0a50fd295168986b7eea11b155ae123f6a269b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_derivative_sign.py.gz",
+      "sha256": "bb969a1a02f71daaff14e85cd0b4d749a805779688ffb7e403bb2d8910e803e5",
+      "decompressed_sha256": "34a7b0dba7091d15e283c4b2a28d0404d6d305e142864565ff5af7f7e9f7d469"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_full_zero_space.log.gz",
+      "sha256": "2569539b5266fd37bb1c95695dd88343299a5f6effd2b28f583fea04edc7300f",
+      "decompressed_sha256": "e393c5670c47a97c3bbf03dc86039ac812e3486e9bfc2e8c96c0792bfd7a751b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_full_zero_space.py.gz",
+      "sha256": "9dd3e6092ddf4f3d1154062285acffd41d4dc3417185892b5093899e1f476cc0",
+      "decompressed_sha256": "e4ea0de2424fd043a055a4c4b53f6937fee4709c8a055325ddbb1b10d6631d2c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_placement_omission.log.gz",
+      "sha256": "611e4f5e478be310eb8211f0e3486b55600c3255aa5570f0322b671eba456668",
+      "decompressed_sha256": "ed574c726b8631a26c5f828cd08328c082ccc7e087ff9aa82f85b99e613a531c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_placement_omission.py.gz",
+      "sha256": "7bd637883e3db9a9370410bea1114dc56be7c53f841e14d98aa2bf5ce4bf25ba",
+      "decompressed_sha256": "8cf3eb6eef5eac7a11cddc2ac7ebafccd013cdbf4b114918779e0764ad10e9bc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_transverse_projection.log.gz",
+      "sha256": "9cc0560f2cd84822da06049b1b009bf41d6c95426969ac918a4dcc39ddc97ee7",
+      "decompressed_sha256": "fc26240ce487b55310ff151777ee643c26d0c5f19b8742057df9bc8e9e9c548d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutant_transverse_projection.py.gz",
+      "sha256": "38d2f4dcab66b77eb2bcad6fe98b244813ee6732ae341b0fd712bdc03379356d",
+      "decompressed_sha256": "c7f6bd750523406aff6da26f904f0da3b07c8afc782e575f7bfe341ffdc84736"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/mutation_manifest.json",
+      "sha256": "5d6c83f150b1d94217894b38773d564eeaab6f5be177f5abd869cba56eff2d19"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/prior_statement_search.json",
+      "sha256": "a20dfc6e23c4a209050f9be5cadd4df617cd744dc486aa9faad13429f47556a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/prior_statement_search.log.gz",
+      "sha256": "e46e966fa0f42fea134cc8a53799804951ac058ebbbb559973df934085e53f8d",
+      "decompressed_sha256": "4d52c28b389cfd331658b0fe5923756bc4a1673810a12daa8ae8fb8a11c782d5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/receipt.json",
+      "sha256": "369bebc245e0e7794608d6a1ef29a4ccd3d374a85f3f3bcc20f0f2dd81288dde"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate/run_mutations.py.gz",
+      "sha256": "8385afe66071057f7765dcbcee00617c6acaa9205a122679442e7b094f68eab4",
+      "decompressed_sha256": "5cc4a76dfb8822402b4d250801e145d6baffc8c19651e697630f92749a68eeb5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate_review/evidence_identity_check.json",
+      "sha256": "ae5d4409da66fe8d66ea80994411aa55e61cd30fd23fb2ca394384a91a245599"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate_review/independent_degenerate_controls.log.gz",
+      "sha256": "138275554149e40d242e890113ed32214256c4b0b5d460728956d8c94b9e1575",
+      "decompressed_sha256": "2bd120b5767bc2bd6d91f701164ec43f67dd35bf7e68d01b4028a94850282edc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate_review/independent_degenerate_controls.py.gz",
+      "sha256": "a41374375895a058eb8f9b7c6f634927f23052631bf415b0c22e92bbdda8584a",
+      "decompressed_sha256": "6088cc9ea56e5bb42a408f8b17f0a43921649c8efde24b2f9b2c54096213421c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate_review/independent_execution.json",
+      "sha256": "97337f434d3f21cd2e1e1ba560e0b89306972b9a33844e415b117fff3cf9ac87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_degenerate_review/independent_review_receipt.json",
+      "sha256": "c4d07a7e025986d1bfc2ba2e479ff34c0c4b73cabe21f1ccc68aaedd64144baa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/auxiliary_state.log.gz",
+      "sha256": "1be6aba1376a88da7799e339387c8d5484b13be0a58f762c74fcec6869be2261",
+      "decompressed_sha256": "00d2e51f31da2edd893fcb00ed65b27b1111fc1bc8893059badcd94fa5d6109f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/baseline.log.gz",
+      "sha256": "353c392d49a5d63928da6bee04bdb8850b79145df56c27a05d1dfb442e9276eb",
+      "decompressed_sha256": "a9db12fc8990d6c7da245e51f6133e84066bc6066b0ca59d05448a7e393cb14b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/control_manifest.json",
+      "sha256": "0b1d791429c347f9794fbe4414c4e6e66879188a7f073d15c0343126986d89db"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/control_run.log.gz",
+      "sha256": "41d1d3eee6b9039397fc55ca55dc4448fe3b7bed5728821673ad1ac999538760",
+      "decompressed_sha256": "eae6be31513b83f75e58b31cffa42bf15b6f4e23689827a2b45c3cb1ee3e47ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/cutoff_mean.log.gz",
+      "sha256": "96f3a4e94adfe0620cd37b63c4587e38903a16fe24556472b465e1d8600ea9fb",
+      "decompressed_sha256": "9e3b54f77b4b3d8017ab821bb4c9ccfd97bdee6d40eab8d06bebbe5be84a8684"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/freeze_check.log.gz",
+      "sha256": "e2b40ca5b392eb1aa37bf4ee0db51597d1edcd6133c9bd904f8556de20e2e11e",
+      "decompressed_sha256": "d20773c0ddbde0769e3d650fdb40bdff7d3434b6c92f76c05660a0a9595b1872"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/inverse_factor.log.gz",
+      "sha256": "02e7215e533a7db44924269dce46d5443c0c9f0a73934f4063a1f13a033466d1",
+      "decompressed_sha256": "f16dc6ebc915fb1594a12efa6ede0df89f211c20731a2f9ebdc5654232a41d0b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/long_time_checks.py.gz",
+      "sha256": "b497628b0756f6a058d91009c2f90c8f2f3dac0678e9a1d756f3f6f657d372d7",
+      "decompressed_sha256": "4ddc0e1972c6ab13c269ac2f7c18b38811be1d9087a4052df53940cc24245a86"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/measure_normalization.log.gz",
+      "sha256": "971097dd0f0d9d3acbcaec1c8d60f3f15709743d0e5e701600fcfdfcf284e3d4",
+      "decompressed_sha256": "5bbafe97c5bb2b0396251d714be64c5b1992877874706f2edf223550de080429"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/missing_compression.log.gz",
+      "sha256": "a34e85e680afb35e92b9f7dedcb1c84ccae972c985fcff9cb04242b7feb1fcad",
+      "decompressed_sha256": "48923bc5105f2f45f9ae783500a944f612d863e1dd0da5a6e007cb49944fe601"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/missing_current_correction.log.gz",
+      "sha256": "4afb3e23528ef25dbdca50225a5fcec13c53ce77c6b6df25233f15f279e556d7",
+      "decompressed_sha256": "9d8852820d6e44e796edee06f223ee04ff708a4c5e562c1b9a82a8b90cc1f586"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/mutant_auxiliary_state.py.gz",
+      "sha256": "f49591a96d71d9beaeec4288323e583e54cc76d7e8952c967efcf360ced4460a",
+      "decompressed_sha256": "282c7bd1999d403be65fa40d6fb2cd05a2d6c2f29a0128ac374d7bc02600473d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/mutant_cutoff_mean.py.gz",
+      "sha256": "65435fa0171cf481a494f04b0a509314c74b396fad04b542195c7342eb0479a0",
+      "decompressed_sha256": "d2b83345713685309b4094d9e70dd9cc2371e95531bbaec47070d9f3a0f0c19a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/mutant_inverse_factor.py.gz",
+      "sha256": "4cbca6bd81b9726bd924b09107ded52026ae3f801d58f02286e8a52eac5e8a29",
+      "decompressed_sha256": "089cb327fb6a2d2bc2642ab1b247ccc1769a788ca067060520f9812b28a2ab09"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/mutant_measure_normalization.py.gz",
+      "sha256": "ade107595881c17bddecd7ec5c4941a8c0e9b8e2d983c037c52d91ca68fd590f",
+      "decompressed_sha256": "2ea3fd6e5a4dd8d58f7895ed2da583255f15da647685e9b85a545add9e91b17c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/mutant_missing_compression.py.gz",
+      "sha256": "05a14bb019927f071136bde2892b82ea4eac9c0e496134d3b0f2a2e0c594ca7e",
+      "decompressed_sha256": "539d4e81eebafb1487b75e90385f4be246f0d3948ee2d8954dca0d0d79281bb8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/mutant_missing_current_correction.py.gz",
+      "sha256": "c7eec92938ad49d51324327679939d03158cdaee58e562ba3504249d495b4b12",
+      "decompressed_sha256": "120e261c507f5bea15c52a6aca6c8d794ca750710e8d63327ebb941e53e303fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/prior_statement_search.json",
+      "sha256": "e8335e604d0b7f9e423d3529e750793deb963504fa69730d86ccf665aee93ab6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/prior_statement_search.log.gz",
+      "sha256": "6dd6f7cb02d283018a53042ae91447880dd75a0b64be04fe468d9c70da32d1e9",
+      "decompressed_sha256": "496d6082e6a2b31ac6978de699f10c27f75ea804fda426fb23bbaafaba342923"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/receipt.json",
+      "sha256": "bdd9d7b0caedbf168f4e45dead01b7a816f321b5894ae5671c1dcdedb81d35dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time/run_controls.py.gz",
+      "sha256": "2e81742da01e95e5a8ecff171a3b4dda67a6123a9c0609260eb92b0db2d0cd48",
+      "decompressed_sha256": "0fa791dd621fed192643bee1e26294179f8ad879c60836dabcc5c77f42870f33"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time_review/independent_long_time_controls.log.gz",
+      "sha256": "230a8b2360c645c1d6387a26eeea4e72f3acaca8d15ff70749379fed617e3b4a",
+      "decompressed_sha256": "49fc49dd0c2e99e3e018d314e85871d3ba18fcc37fea115854beb51f123a6538"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time_review/independent_long_time_controls.py.gz",
+      "sha256": "530e6070e8c0277d0edf428ed79391c5b9bd69021285c447ae0cc037dce181e0",
+      "decompressed_sha256": "eabc48691f43da37b1c77a5a3bebaa11b0b6e4c2dcba6871a0a1ac36ec1d7775"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time_review/independent_long_time_controls_initial_type_failure.log.gz",
+      "sha256": "c87e6a1513cc310b09a2fbb31f10e9b91f91d4087d72be75ae80c15d3b638596",
+      "decompressed_sha256": "aac0d1c8b6772e1d927811d88743453a3801664e82144216b5049fdfa1371209"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time_review/independent_long_time_controls_initial_type_failure.py.gz",
+      "sha256": "03f605e64eb74016b672336e83bfd8a14c501648c6e68cc41bdfdf478cf817d0",
+      "decompressed_sha256": "bb10b13ea6b871a33969de4ec37b5f0654a92e4c573187dfe59477e437282253"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time_review/independent_review_receipt.json",
+      "sha256": "bba5f583d96d04728bb9bacca52bd9de249ae8ed4d582f7ca52e4c8c0d9c4f1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time_review/main_statement_search.json",
+      "sha256": "43b8fb129c1ffbeb702f98fac7e8599a8af7943f837b930a0de6f98cf6adf769"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_long_time_review/main_statement_search.log.gz",
+      "sha256": "834743d7f59c2d942a8711c5d1ec8a465e6286931b50fde27b3513b2848bfa0c",
+      "decompressed_sha256": "b401cd9d31e0bd7818784597e38d5f5f985a32177bc24d5fb83bbaa47be8f076"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_current_2026_10_11.py.gz",
+      "sha256": "604f15aeceea7a58614ddaf455eb4e7b8868a1d4981ec391c4f4d6d8aa5c820d",
+      "decompressed_sha256": "b5cfe4af2e2e56f6a531afaa36c19daded1003d91b3a861ebe177ba87a0ebc33"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/CHECKPOINT.md.gz",
+      "sha256": "ab0f60c24c75ac60f3462cdcf7dc2497fe890b737015811c9fbc6c92c4d55ce5",
+      "decompressed_sha256": "e94cea26cb3034bbe4fd3dd0fe392e7eddc7c29f90f0f3efad04da656da7ed56"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/PRE_FREEZE_RECONSTRUCTION.md.gz",
+      "sha256": "2659d362992487c725560c7e07718182887619833c32a38e7b0fca2ff3f5aedf",
+      "decompressed_sha256": "25a7cb608f6db544cb8fe15d7010d559b5597d75cd08cb06039fd2add7893b1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/author_evidence_identity_check.json",
+      "sha256": "42d355d773a4bd94005a5be60933cff67eef214191e670bd28942e561904ce6a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/independent_execution.json",
+      "sha256": "7c9cf9452e68b56d692aceabafb442af3f35237fe2b8bb3333f508bc92ce0c6f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/independent_measure_controls.log.gz",
+      "sha256": "edad87e69d5aaa069f4ec49e3bfa490d21f68a3a9d837fef30881a9a9143a484",
+      "decompressed_sha256": "ef8c5f7b036d633bb16b223030ddfb3792afb2a7f5d88ad00a1947e21e3a74ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/independent_measure_controls.py.gz",
+      "sha256": "15101307ce888c222d7ad95367fbc0b288e857423ae374788c52bf5905dfdb0f",
+      "decompressed_sha256": "19839763c8ee9c56fce163d3ca6e00164027cc2c7f43557a0b6068cfbb4da0d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/independent_measure_controls_attempt1.log.gz",
+      "sha256": "6cefe2d8b87436486d69de32ae8827c9db074800d0a2c24ecfbc78e89aff71a9",
+      "decompressed_sha256": "f568fe664540822a38c39bc9221fd29b5e667bc59551a391c30ea4c132fb6f4f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/independent_measure_controls_attempt1.py.gz",
+      "sha256": "e925f7bc9f09554526379e3e57b55482f6a2f2b6199712909180df1a53e9bb6d",
+      "decompressed_sha256": "8e5f5ec23eadae9e6b50c9278a38fcc9eb3b6612a90462f6ee43213e578f12c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/independent_measure_execution.json",
+      "sha256": "aa8efdba6675d2df240c8fb2104618ef295d3dd079986ee4c7dc0952674c43c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/independent_measure_execution_attempt1.json",
+      "sha256": "2f13b5f8ffafbb1f8eae0e0cb5c24070cf2556161d010c7f1b50dd596a628438"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/independent_memory_controls.log.gz",
+      "sha256": "2188c32382e393a0d3823849d5f0a9cd28ddac5532bdf85c166d8e38dca7a376",
+      "decompressed_sha256": "fc2deb036057cceef0b19d43953c9384d784b6f26a5dd8f8973266462820eda8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/independent_memory_controls.py.gz",
+      "sha256": "154607bf10f3469154ca8c2c62c319e6fc26e5159b0877f9a4180f6c81957fa3",
+      "decompressed_sha256": "4eaa6eba75bf92ca0a088eab4d44cc0f3883b77e2e06aa8a16298d5f721329a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/independent_review_receipt.json",
+      "sha256": "5a73e562741e0e10e84101206a0c98d2f3daf4d534898260d14fe85a1f101fe6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_memory_review/pre_freeze_receipt.json",
+      "sha256": "d66d5e3dd853f6fa4f8dad57f8e7178c76129444e2709a313a29be91827ab34a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_quantitative_review/CHECKPOINT.md.gz",
+      "sha256": "2d3cb87d6d19b0c8b2347558c2bd9b25ab62a83c3c41a47fc2423e3ff74cc36c",
+      "decompressed_sha256": "abdaf06789ab770059b70eabcbaae1d3b1cd077277cd281869a9506733b7e37a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_quantitative_review/independent_execution.json",
+      "sha256": "53bb1c1ffe3d6601527f7153651275a361c8e90e9aac3fe1ddc686826279552d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_quantitative_review/independent_quantitative_controls.log.gz",
+      "sha256": "eec65197978daec3ea5a48daa11cad36013b62d5674ca1aa5cdc9a43df1c9fe5",
+      "decompressed_sha256": "7d332a80ee0f02296febc9e44474b2ef7d0654490736fec57a22e3002f3e1df8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_quantitative_review/independent_quantitative_controls.py.gz",
+      "sha256": "dbaccf90dfdd4cb425abf4778e79ac694f813bb0a06042e7a742139be41d7a88",
+      "decompressed_sha256": "6830ca3e89a92cf548849518b97339e59c2256042f094fb6e9ca2aacdcd8588c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_quantitative_review/independent_review_receipt.json",
+      "sha256": "3126e7c90f269747326d25ee3538a059411649c7206fa435d6e2bf19630d8e10"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_quantitative_review/source_identity_verification.json",
+      "sha256": "3957d3c9c2475ab41bcb6b85503ba16461916cf46c2f2e03101926ca89ff7fa6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/CHECKPOINT.md.gz",
+      "sha256": "74e8cff3568e7d0653ed206460addec3ab8a66e18f84f9afebe5343efbfd3b1c",
+      "decompressed_sha256": "5b5d85e774d7886aebb58b17c486012514df6a393678d88b33f3ec79eb7e9903"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/PRE_FREEZE_RECONSTRUCTION.md.gz",
+      "sha256": "a37b098ecfc2688e5efce54ca6da2ed66aba6df13d883e80f861c5b51aafe7a0",
+      "decompressed_sha256": "42648b16c2cb46d544c1cd1130446e0efa7813bece3c8773336fbc3923647eff"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/check_source_identities.py.gz",
+      "sha256": "927f598b5a6ae01cdb9077a49ab471025f49e29d57f61e8303f46b74c96cf387",
+      "decompressed_sha256": "53448fcc493ac4539b055d62a72164cc240f2d81fc787037cadea9f55c9432e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/development_log.md.gz",
+      "sha256": "d365f5c04c1e9b8176a869600cb9b3357334b10654e103aa739fc90c3198a31f",
+      "decompressed_sha256": "512f754c8c353d8be61e3e79b297fbe320fdae058ababcd21e3fc4decf7559c3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/finalize_review.py.gz",
+      "sha256": "1030db889e45dc74f9f58b5627a07a3de0e592b6d77cee79a2373c45be2859f3",
+      "decompressed_sha256": "554214e202c3869eb8cd0a72534ce168d1550db25bb72c0b1182a0f183a5381b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/independent_execution.json",
+      "sha256": "9b096565e937cdd2f29fcfbfa2a79d647a5a342e8913bfd3921aa5fdc14d754e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/independent_review_receipt.json",
+      "sha256": "74990de59ab11a8011f4164ce689b0f80153d261c073c486f47b78a1beaf1a28"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/independent_weighted_controls.log.gz",
+      "sha256": "95463290cc70afa482219ab17934dfcf61bab9c104390e6bd25711c136236bff",
+      "decompressed_sha256": "47a88fc3e3b73bbf7d183cc20f3eaefa23df8efe65fd620a581871a6d3a504ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/independent_weighted_controls.py.gz",
+      "sha256": "c52a8c189a62d7ecdf482c2447ff196e2797469c3aefe6fc21cd9fce8b8b6ef8",
+      "decompressed_sha256": "77878741814c03b127cd88eb6c65a315eea00ec7a8243bef7a0410de5d0b6b53"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/kato_extraction.json",
+      "sha256": "edc6100a0b039e7fd4864c2c73d0a49a3c061e9634fbb704f024e0a971c84753"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/kato_primary_extracted.txt.gz",
+      "sha256": "269a32cba6751e8120bd2c422a539c701155e80720afa524394398f62862eeda",
+      "decompressed_sha256": "5e262853ce936b49d2806ac957fa04021a07c893c792df319d2a8bea686ecbde"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/pre_source_receipt.json",
+      "sha256": "da6a9f1585b09c9cdf61e8734ed25297e281baaf8b946170ca2b46dd68e77e16"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/source_identity_check.json",
+      "sha256": "a54e72b2690aad6def03b0e9fbee6e423bbdd8badbca0eceec4a53d4acdbb740"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/source_identity_check.log.gz",
+      "sha256": "2f00bd78baf897042bba4f8a7a76c137356b9d11df502ea12822428eddc66e47",
+      "decompressed_sha256": "335e68071f89fed1967ad4a453991cec7b5f847f0f62da2de131d51b42ed44a0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/excluded_walk_weighted_review/source_identity_execution.json",
+      "sha256": "fcd4bff15362987f91a0fd82417d6d8d46f3896ea2ecebf2dc47aeed53a99f68"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/joint_scale_current/baseline.log.gz",
+      "sha256": "03c09d3e5df49e9b626a1aaa81d5032c5faade887fe1f968d57da500c27c1322",
+      "decompressed_sha256": "acc130f9337ead71aca970ef694f3d7b2ec58aeadbdbb603e5bb43fa1c1b2230"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/joint_scale_current/execution.json",
+      "sha256": "7e94ef0022fd2c78bc7924488962e3090da8a1abbd7dd0357701590e0fd43491"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/joint_scale_current/receipt.json",
+      "sha256": "f0b5788e732515b41e8afc608b368ae69febdaf47c08860d04cffd6fa63134a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/joint_scale_current/scale_controls.py.gz",
+      "sha256": "fe3a8a7b82b1041dd832314710bb3ba0141c38a63aeef1d69a9cdaccb18fbc7b",
+      "decompressed_sha256": "1a71fb0d680630d0581fe4f982520d4bc3bc51a2649c2359815c3445c2b4d233"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/joint_scale_review/DEPENDENCY_ADDENDUM.md.gz",
+      "sha256": "c309b6ce337ac63b32fcf891e2c8a3944f9989cd2696e1d58de30cc8e229cddf",
+      "decompressed_sha256": "8ef5245b3301a19338eedfc8f3f98610b6d3162538b80fbe01bfaf27e5a1273a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/joint_scale_review/dependency_addendum_receipt.json",
+      "sha256": "151aeb2e37648b0ef468e40538b4d0ce11707a1fe3a704239b946e559a5d82bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/joint_scale_review/execution.json",
+      "sha256": "76c28ada4dcd2fd595239440d0b6241703e6a82138df327a44556627d6ecc15c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/joint_scale_review/independent_controls.log.gz",
+      "sha256": "c766c621b1b1eddb5cd2e7e583fefdf9d965937f55752d86b8c87f0d3d10f4f1",
+      "decompressed_sha256": "ede9bffc64e05ab63803980cd09c9dc92e12eca90cb2c1783ad70ac78d4ee588"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/joint_scale_review/independent_controls.py.gz",
+      "sha256": "3be55b517bbddc1c4975937f6bc6b3d3df3e2102b3e274779e5c9c73905437d0",
+      "decompressed_sha256": "20c4bb4a4a96129786a909cafef0246e4d3285c587195493366954e9be46911b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/joint_scale_review/receipt.json",
+      "sha256": "49bd1d8872a07aea1e5266cb2f07f3ea2aff4d9a9602f7a141e0051037d92b80"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_canonical_execution.json",
+      "sha256": "a88d2e477b9b8aa99c676dedded596ebe4fd76739538e4855b72e9a9e414d9ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/CHECKPOINT.md.gz",
+      "sha256": "19c99f4dd299aa619817f101c99a369ac344e5791eb75efd7e117fdfdbdc658c",
+      "decompressed_sha256": "3b86bf7cc0204c334494f6bb2d74f9240cf27e77191a961755382f6b2198c48a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/COMPOSITION_REPORT.md.gz",
+      "sha256": "6c9b5f66ebc60ec4d4684bab374981df1626a95f3f706e1a7fa4bf60f5c1475b",
+      "decompressed_sha256": "992aea2e3e43997ca5419a83cedab37d691b6f071e1cb759f14be9368b2892ab"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/DEVELOPMENT_LOG.md.gz",
+      "sha256": "db25a07f724ca14749f75856a72f6521c81aff195dc3b65ce2112729a0b08f00",
+      "decompressed_sha256": "d552c40c18cb5d7c1ca361bc2b509cc7028b99d9e03c39e1e18500f7085ee723"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/PRE_EXTENSION_DIFF.txt.gz",
+      "sha256": "592709ff46c7ec2572c16095c248be029abf6358979a05ccce4fdc09b561395b",
+      "decompressed_sha256": "0cacffbbd60b92b5c8d977c27ac1dc60659b8b4a2b457557921170464ca0472e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/SOURCE_COMPOSITION.json",
+      "sha256": "ffe3df5cd8633fa927bbe78e7fbfbeffd7c96efc30dbc969d0c0bf24a31e0fa2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/build_publication.py.gz",
+      "sha256": "3370eca74be8babe64ba85d6cc01d76c8d571ceaff77f0d0f4c0ea3991ebe609",
+      "decompressed_sha256": "a24bf11073305854410e5fc5c3b4238625dccedc83f8beeb05c04b6ff0d506e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/final_identity_check.json",
+      "sha256": "f6d80b05f1bfd0a2159b1ae156cbb80b81409cd0bc50f7fb9abfaa0797dc9f26"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/finalize_composition.py.gz",
+      "sha256": "f2194a40f71ebd226054a5c8e48190ff9ac120734f32043cef8cebeeeda89364",
+      "decompressed_sha256": "dfdef076511e7cd8039227397c8a0253a0a2ff6698e9a728e566513f09ca1766"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/CHECKPOINT.md.gz",
+      "sha256": "6c6e1bfa52e90c4bbbbcde0d6cee3ce92ee17003004029f23c97ecbe5060802d",
+      "decompressed_sha256": "a29275f376d67f3e500e45b97026de33f3b782f6a73603192e20da4fe4c24741"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/COMPOSITION_REPORT.md.gz",
+      "sha256": "3c4978e00289c058c00a0301ccdeacaf5f801a10921e02c994a860aad4448f69",
+      "decompressed_sha256": "9f459545c804ef921a82685b081001eefbb5bd49893fe5592cff648b059ecec9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/DEVELOPMENT_LOG.md.gz",
+      "sha256": "8d9765763127705ce76c8dffcdc2b5b211164b373d9065df4d296a4e3c3e4252",
+      "decompressed_sha256": "9bba8bae38a37f56f7a08413e6a66cf816b5b625747f03fa1c279c26c2272f55"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md.gz",
+      "sha256": "849fe4a5dba969bbe080c1047712a32c89823b2e860be820de6198f3b365bf06",
+      "decompressed_sha256": "17103b2c0c1c0d5a84f7e39ebed5de110857ea349140a666caa9e60e2e26af29"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/INDEX.json",
+      "sha256": "b4e2f24dc1331fe67f4bdab2cd36acb7e7a2a23051526b933687e5c278f89027"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/SOURCE_COMPOSITION.json",
+      "sha256": "f7c3a91b1f1d811e42b8922c629dbbc1d01b8d4dfe987c2a18ef90fa18f73b1b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/build_publication.py.gz",
+      "sha256": "15c54498d6d7a09037a45914e13afd0c615197a037dfddc0c5572ffff43495fa",
+      "decompressed_sha256": "46b3869e5ff42076d262bb2958d5ce83fdd84b12baaed8bee9da739c19b653ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/excluded_walk_memory_current_2026_10_11.py.gz",
+      "sha256": "1ab2cc51834a056c9df8bcaa8033f902853bfaa9d26cb8b55e27686c8dea6b6d",
+      "decompressed_sha256": "690be0f97d4b72ffd2360326c883148674ca355daddf09d278eeb6677d9ff7c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/final_identity_check.json",
+      "sha256": "2b7bb2696d56a0e5830c1df88913a4dfe293390af7115ad03f2a3d79f6582972"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/finalize_composition.py.gz",
+      "sha256": "5360fc9b0315affc819cf911f140e7f1745b1506dc243b7984443b33fd2ea567",
+      "decompressed_sha256": "5753621867c3492cd96f69a18823330c5d7c8118475aa90ff3abc77dc08a804a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/primary_execution.json",
+      "sha256": "bcfd8c804a6803cb406311535fcc51a4a66a8b9b387717152cd896c8d355b8ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/primary_execution_attempt02.json",
+      "sha256": "c3735e349a0d22779a2bf7b8948a2087e27ac9d488e1f7f6e32659cfe01f6286"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/primary_replay.log.gz",
+      "sha256": "290fe6e2d7b48f1bee4ad2b0d1c3c5b6e07fcc8f067066df6b3dd0dcb466441c",
+      "decompressed_sha256": "e60953005599cffa11532f06fc0576a5a1a47b3f2f18eae1326136f19b9877f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/primary_replay_attempt02.log.gz",
+      "sha256": "b234f8d94ec2a03ea1e018b65ebf4e979a83bc50de254a90ca6b9e0d729dee4e",
+      "decompressed_sha256": "792398316b787fa3e5074cbf4ec0041d10edf06217b65115716d52de002c92c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/receipt.json",
+      "sha256": "9ad615753f62b8d2015a6f51d7447489b51e15e7559cbc6af675f3aed5d28526"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/verify_and_replay.py.gz",
+      "sha256": "9e04e2674022f99b16ddd6b67100e8300b4c97fad973be7d30322d0eff8ae3ad",
+      "decompressed_sha256": "178352b1b02996dc847ec8d7caf9afb3f447179c7fa6f6d5407e54e7fc396725"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/pre_extension/verify_and_replay_attempt01.py.gz",
+      "sha256": "030100ce168f02d484673b3b509cde77242f6dc648e03092e95e7a77928bfd16",
+      "decompressed_sha256": "faa123af6b468db2cc45f61e6432f234b52538f9b5925311076afdaaa8dc5212"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/primary_execution.json",
+      "sha256": "bcfd8c804a6803cb406311535fcc51a4a66a8b9b387717152cd896c8d355b8ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/primary_execution_attempt02.json",
+      "sha256": "c3735e349a0d22779a2bf7b8948a2087e27ac9d488e1f7f6e32659cfe01f6286"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/primary_execution_extended.json",
+      "sha256": "23b5f29d4e0995ddd3b03100a5bd3ea315516de869c84d2a371b41de4a7a2e1c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/primary_replay.log.gz",
+      "sha256": "290fe6e2d7b48f1bee4ad2b0d1c3c5b6e07fcc8f067066df6b3dd0dcb466441c",
+      "decompressed_sha256": "e60953005599cffa11532f06fc0576a5a1a47b3f2f18eae1326136f19b9877f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/primary_replay_attempt02.log.gz",
+      "sha256": "b234f8d94ec2a03ea1e018b65ebf4e979a83bc50de254a90ca6b9e0d729dee4e",
+      "decompressed_sha256": "792398316b787fa3e5074cbf4ec0041d10edf06217b65115716d52de002c92c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/primary_replay_extended.log.gz",
+      "sha256": "47d6fb9ecfe8d856e25f0f335a1dfd8a4eb57165e08215e4978332f3c5e5c2a7",
+      "decompressed_sha256": "edc40cf14b8aa3ccb491c1a9dd68ff794c4c095506c68c0fa3d17b08f05b34ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/receipt.json",
+      "sha256": "9dea961421ca868bd4def5eecb5c45982b5c5a421ed49c945f31cac8dd2f2ea6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/root_composition_intake.json",
+      "sha256": "d3bc9cbeb3be2527f430d31237f7e1d9c6aa654a000415be8fc8fcb3bd260a8c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/verify_and_replay.py.gz",
+      "sha256": "f10f3e6e9a84317fcb5a892ce929d74fd4b0b112be2064e67527910911b32e68",
+      "decompressed_sha256": "cab9c8eab3539fc945ff6d06058a9b8772fbd4a073536a59e36319773a10b9d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_composition/verify_and_replay_attempt01.py.gz",
+      "sha256": "030100ce168f02d484673b3b509cde77242f6dc648e03092e95e7a77928bfd16",
+      "decompressed_sha256": "faa123af6b468db2cc45f61e6432f234b52538f9b5925311076afdaaa8dc5212"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/harness_attempt1.py.gz",
+      "sha256": "fa9b2e4aebfcff8e220ca3136a3aca19b1983c96cfdb01f1671279b2482b86f4",
+      "decompressed_sha256": "2cd002bce3b7b96d4cc408262897b03accfd581de1042fd4ca998b15123025f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/manifest.json",
+      "sha256": "e2df87084e7de37f216c7ca8865d8a8233d236c4fdf19f8f55b52bb6b8d3b10a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/manifest_attempt1.json",
+      "sha256": "1770d215d51b003ccb0413312f8e24230a800b2082e9f777474b0314b47c13ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_effective_memory_Poisson_factor_two_omission.log.gz",
+      "sha256": "b285f386493578843f49b1226efdc22f9a6fec3f629b34a7ee01163c8dbb0445",
+      "decompressed_sha256": "19849ea6c673322c2652c9eefa2b1bc1d1c45407becc7ab2cf38c10c226f9718"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_effective_memory_Poisson_factor_two_omission.py.gz",
+      "sha256": "65d7b6aa3d6cfb559f1c1a1786915f00180cc5a7b1a7877f6ca98e52d92c95ea",
+      "decompressed_sha256": "a4f02495921a1c5be7173a99e31a19d2a7f34329c27027632e80e2a0b0d1b0c3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_effective_memory_Schur_sign.log.gz",
+      "sha256": "4a54b9e0090ff94ca5c326c545bd3557effe8bf2725cde80fa5c14891f63bb2a",
+      "decompressed_sha256": "8b2ae63613481adc66d3019171b29b8720cf4398060abdd57d7ff0d535037550"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_effective_memory_Schur_sign.py.gz",
+      "sha256": "87c90a0c9b2c1d271c5080dad0a4b111c86f809843031e219fa7225f77b57310",
+      "decompressed_sha256": "388cf21f33f7715cd8c2e9dc40f143d46eca8011267cfb04949ce77b260c6881"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_effective_memory_finite_bath_atom_omission.log.gz",
+      "sha256": "eb565691420bd90156dbfba83543f2e5c42fefef47610b9aea21e27d997acb4b",
+      "decompressed_sha256": "0d29432178fc39bc4a15d7f74889b5e471267fb1346d7b8130aa19b76a3e333e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_effective_memory_finite_bath_atom_omission.py.gz",
+      "sha256": "93c122077f9ece01609e03d159168df81e61718ddcbf0682f2d28dffcf5adf85",
+      "decompressed_sha256": "281e221b74deb7771167c9977b30d4f8eed492e765a9b3ecc22f2f61648904b1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_effective_memory_helicity_half_omission.log.gz",
+      "sha256": "b96773dfc67a85d68a06b77e47e4bf95397deffecbb3454f4dca676e15c1c81c",
+      "decompressed_sha256": "97af607ce1e92ee05b7a02ba49ccb928521247f6e32237e0599876dc883e13a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_effective_memory_helicity_half_omission.py.gz",
+      "sha256": "bf4c14e9c59aebb0e68ca9d004f1f6db458a562e13daf37254f155d7f0a72e09",
+      "decompressed_sha256": "d2fe98ad7be7114b5f2c9c8d47062dd3a60ab3a4bbe69d96954fdbe003508729"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_effective_memory_memory_sign.log.gz",
+      "sha256": "2cece8688a5efad08f954449376575848e71bad7268a61c1789f4f0df152c96b",
+      "decompressed_sha256": "72ce966a97444bd4144a18e49b4646b7a13bf7a2a9ac01317ec3808142b35773"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_effective_memory_memory_sign.py.gz",
+      "sha256": "11822fa7e6fa09ff065f5734282c895e946d3b7d4a7895c173317fcd614e0685",
+      "decompressed_sha256": "c2f5fabcd9a8eaacfbffcb7bd296e7f5f0726ac15fa52357129b4d61697f830d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_global_normalization_removed.log.gz",
+      "sha256": "cc8a10c36798bc945d2d9f6f8dad4e4b0d5f9ee200594fe6eb010faea7d9e011",
+      "decompressed_sha256": "fdcdda3951c28a44eff36751e6eecf28b2c524066a05f6a3dea56689e5b8f55c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_global_normalization_removed.py.gz",
+      "sha256": "efe43fa404832c2350fd025115838a1c80478ff690b66d2990bc0dffdf9bfe68",
+      "decompressed_sha256": "8da68e58716d7e2d3a518ef419220dcacb0ee3b215f9188c3dd0bc7f25228504"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_joint_delta_power.log.gz",
+      "sha256": "8eebbdc0a1b3d435f13926a31e7d10f328016408203adb4d477365678511855a",
+      "decompressed_sha256": "957cca2c44cd373df3c629618f7f91f80eda24e0bb5b5ffa9e08aa2251f9c10d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_joint_delta_power.py.gz",
+      "sha256": "9923994c168e608c6c64140a277753bc57d045f0b122ed0c3d9ebedfde69b2c3",
+      "decompressed_sha256": "4efe5de41322313c2338459fe9b2082a88fb6454c1f4e294e38f744c15394844"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_mean_kernel_half.log.gz",
+      "sha256": "d225e53e94624009b18cc65184476faada0e63cb95a91e4f21439ec064e2c148",
+      "decompressed_sha256": "03d6bfc628245084d05e7051b0f03c17bd4f02388fbf4983063d5b7b5b24f5eb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_mean_kernel_half.py.gz",
+      "sha256": "135af7490609342f4bac31949ab12bd282900106ce357d707cbb7aa41d6a5b86",
+      "decompressed_sha256": "9105a9d893eb4651439b6e03322b8111e8381a4fca043863ec8d07cb7e59190d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_outgoing_resolvent_abel_sign.log.gz",
+      "sha256": "31841ea169fbdd778c7cc8a73b8d8581cf0f6c4ddc454cf81984bc97101aece7",
+      "decompressed_sha256": "20e9a7e0c3db79d01ac03854b38740527c9b74ddeb3db8e4bd6ed8cf0efb96f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_outgoing_resolvent_abel_sign.py.gz",
+      "sha256": "a48cbed3c0f321fc71612ff3156652d5af6ff09ca53da9dace340f60128accf6",
+      "decompressed_sha256": "dcce953a5e1152e101ac0bab8a8afca101ac83473ba087950adf54d3c54017f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_outgoing_resolvent_cone_power.log.gz",
+      "sha256": "f26e2196cfa602b1b3a3defca3f7cd31fd393b2488713b15d7d366710fea674b",
+      "decompressed_sha256": "a679af4b137797f8be1c346d4264579fd35f7b4e8e50d18dc491867ddce7d4ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_outgoing_resolvent_cone_power.py.gz",
+      "sha256": "99feca72987be039c45fecc4a421dcb1e03d87676331c8b894313138991fbb71",
+      "decompressed_sha256": "d3851fecf2117fe3cb7bf5ec4d1f1569d05fcd6f951f51adda11040785e9a12d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_outgoing_resolvent_energy_moment_factor.log.gz",
+      "sha256": "5dff0b758c8128b055ff13792cd24ad2d5a80116216408c291f068578505054e",
+      "decompressed_sha256": "e2438a9cc6d47af5d6999e8fff940e2cb0fd9bf09b33ee2297af7dbc31eb6332"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_outgoing_resolvent_energy_moment_factor.py.gz",
+      "sha256": "cfb0eb45e58c657f08af19d34de3e2931bcf9bc13c24feb6c0320b4df3310fda",
+      "decompressed_sha256": "e300dbe5643884fa64303df8787d395877f06d4f9d894bd14925af4b0a70de35"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_outgoing_resolvent_helicity_measure.log.gz",
+      "sha256": "12f02b71e999828e85f1b57647f07ced196df236192ce11034ee1a38007cae1f",
+      "decompressed_sha256": "fdd2420741f99d0253eeb998a63b8c7a88ce6d12b1aed5e50efc68bbe007504e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_outgoing_resolvent_helicity_measure.py.gz",
+      "sha256": "2efee8d36acf4d0e795b336cdc3728409724c4900aa2d6e0010f32fbf51470a9",
+      "decompressed_sha256": "7b8260d430a3e9fca3dfa7c16b3ec4af6fc92ccdbac7621f27caf8f7ac10f26e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_outgoing_resolvent_weighted_lower_factor.log.gz",
+      "sha256": "1134ae488a3a9293c7b7621bef72365b6b16b6f1d50dde8eea924369b8a64b43",
+      "decompressed_sha256": "99cbc21b5fe30b581a8a1cfbd181fa223ec1e188e677f0bc6ea0603b1b6a3b7b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_outgoing_resolvent_weighted_lower_factor.py.gz",
+      "sha256": "11938751dcdeb2894929d02db336fae396cebcaffad404ff07e7ac64a4bb467c",
+      "decompressed_sha256": "cb61af199229379705977c339077455a1e93032ec5759ac8c04c223f61132b2f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_weighted_memory_continuous_measure_factor.log.gz",
+      "sha256": "2c3b100fd3505cd4f905b2610a605d48b368b0da790f7cd751e67aa0fdd80227",
+      "decompressed_sha256": "520f8c63202dda9c562ec624c12af536eef5ff0429febde350604ca05c890896"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_weighted_memory_continuous_measure_factor.py.gz",
+      "sha256": "141d108098c46de407b66c888dc0fe2ca2c11b913aade5961151c64ca4b48e81",
+      "decompressed_sha256": "c0bfb1986dda7dbcf0b6958dfdcc68e4afd50ce9389596a122382d183ed11c61"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_weighted_memory_forward_not_reverse.log.gz",
+      "sha256": "bdef0cb126efb4ba5d114a7a27fd8ac95cff5f8577a4c4fa17182f58e8e4bb0b",
+      "decompressed_sha256": "faa2adda3fbde5b85f1e6ba39ccfc815d6cd7b5a433192136e96aa6138ceffc4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_weighted_memory_forward_not_reverse.py.gz",
+      "sha256": "457a5bcaf8acbf0b54f12cc5a96d72383cd9eac943d2020125e2624d38ff3ee2",
+      "decompressed_sha256": "712ee3f50477f21ed7df677ec6863841803763dcbd346fa637a3964f9ce06bc5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_weighted_memory_trace_norm_half.log.gz",
+      "sha256": "dcb6850490e473853fddc6d943b0068a918f3e6072e8909de3aa4fb73c285af1",
+      "decompressed_sha256": "88da2d99eb3415b88933801aa3fd4e769208b6d579cd35262ce1b58c2e49d9c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_weighted_memory_trace_norm_half.py.gz",
+      "sha256": "0c041382fd3db11d9758c09cdcc7d8f3485326355e2ff333551a0cc13b907e34",
+      "decompressed_sha256": "137088796282f83fa951b8091594af03ed53834e1c3175797af2b11ced42ae6b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_weighted_memory_weighted_cross_sign.log.gz",
+      "sha256": "ba67708e9125e6c9c41f683e5221ab827fe0f707760c12438265ab21e09e99da",
+      "decompressed_sha256": "71cd1db8f7f69207db68c49e80596c956d8dd5c961f71b250470e5e06abc2037"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/mutant_weighted_memory_weighted_cross_sign.py.gz",
+      "sha256": "7b1392c3693090392b5641eedb407ee921b26c48566ea41233b9b70a580dbf46",
+      "decompressed_sha256": "5fbd85d41f11b6d002656374cb3e09c5dd1d09bcba23deaeb01ca30043acf047"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_primary_mutations/root_log_coverage.json",
+      "sha256": "72776be7552e24e20d73b9db94b3336c1e906a7a3c8db39e65c72a9783ae3c0c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_publication_review/CHECKPOINT.md.gz",
+      "sha256": "db83c903a0bd57787ccfde414de37086ebd721bdcb9020811bc9a5063411e873",
+      "decompressed_sha256": "46891fbc2e43aa6cc24e5b4a69e582e7b9c9e40a057a8598e0a34df263377b90"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_publication_review/DEVELOPMENT_LOG.md.gz",
+      "sha256": "b2e2569dc28e450c25082506f90c83c4b1555751382d84823e8b28b66b13aae0",
+      "decompressed_sha256": "0286f56ab8dc5affbb2a82944becc1e686f0bd955876055023baa04b0a7e739b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_publication_review/composition_controls.json",
+      "sha256": "8dd9655c6ef302c380a7a138b1b5a4c3c0c751ce2a22312cd59fe91d7085aafb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_publication_review/composition_controls.log.gz",
+      "sha256": "2687cab09587ecf1b09fbdd62b1595ad8dacfba803fdcb0ea6500ea5596fd0f6",
+      "decompressed_sha256": "ddd337a012791e6d1ce62181e2b6d86b61b105fd56e83ed4985ced7ca10de27c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_publication_review/composition_controls.py.gz",
+      "sha256": "87d0a3711d6a1bb920c3b72a1aeb416e09a9924a3cbc619eeb7fe4482c7ecbbe",
+      "decompressed_sha256": "6f409349b6461d55c43f71689923912c5efd9dcef6615aef170b6cfb1a2c4203"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_publication_review/execution.json",
+      "sha256": "00d586acf6f3df1e794568555c03ed51bcc707b53f1043d50b4aa0adb8a89eb2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_publication_review/receipt.json",
+      "sha256": "bc7c29434bbc61591b8a1880cc021a9632d1b887a9a4933f89ac9309f80185b7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_publication_review/reused_evidence.json",
+      "sha256": "e3839986cb61417b64b046b36a07545d8c98e1cc6c1d51229cb1a714a9921697"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/memory_current_publication_review/root_identity_check.json",
+      "sha256": "347ad0818aa9af6b9bf13668c15ef62c025eea06fcb0af8a92224ffe5b3ec54e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/attempt01_baseline.log.gz",
+      "sha256": "9cb9ea687b9cf591fe13936b6ced0f25dc2851fa7db39adce3188e1b6d1afa75",
+      "decompressed_sha256": "5334f0bcf40d25c818e426c5a19609227335608d89fd162927a00f9ec950361a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/attempt01_execution.json",
+      "sha256": "8e7d77095645b5d6869323d9cb9086c1c330b5781c05204cea0ea95e3a200f2d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/attempt01_outgoing_controls.py.gz",
+      "sha256": "44b6bfb62bc2966f0c3d1e77a9b3c0508ae413c1d5d7d77ae2e167715185aadb",
+      "decompressed_sha256": "a7754ebe7e7b8d47abbfacfd4d8058ae7058c0662e96e6a7986d74b1eda5c7ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/baseline.log.gz",
+      "sha256": "7b71ec5ebe0c9d32193889d627e5f810b4e01e32fb331c115b4a690a8834040e",
+      "decompressed_sha256": "c69975405aad8484d5a84b446b324172bbeafb5b5744806103d1c92da33a2bf9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/development_log.md.gz",
+      "sha256": "adf9dea0c00aa715bbdefddf4e4be0991f012b822a37fdaab2ba109d96b605d4",
+      "decompressed_sha256": "e766b88b1e48faccde015abee3594d9deb69935c21a96d7e96a5641b4ce34e86"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/execution.json",
+      "sha256": "f3522d568831dc20deaa9d9c1db85276eaf2b3a95e85f50b0c5df539bdaf3c57"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/mutant_abel_sign.log.gz",
+      "sha256": "9766bc5570b5c2676b46fe022af3b48f55ff02dcea41636b21fb242aabfc770e",
+      "decompressed_sha256": "ffbe48d746322e66009b8d3092b7b5745424f1fda12e4a955eb5b24fca14aa08"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/mutant_abel_sign.py.gz",
+      "sha256": "b20341ba3d282e9430e544b964b16c3100fffd19912d6ab0bee58bc4a9178e88",
+      "decompressed_sha256": "ed2802e3b5441bbce2503acdddbf4609c8e0d8f2a1f2aecc03870e94abb6ccc8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/mutant_cone_power.log.gz",
+      "sha256": "4c7397d97c14f59e7dfd8b244476826179a9aaad2f81c12659612d9c04e71db9",
+      "decompressed_sha256": "0d73349908d9f6c2d28d127dc0079dcffda2377b1c4dc63fa719234f0f8d7cc6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/mutant_cone_power.py.gz",
+      "sha256": "0e20f4523974ea2fb7ed0313d6734b3637cd29cfff6dd5b94bfa214d46448ab9",
+      "decompressed_sha256": "47d0f56d13ab7e91f35fa3cddc608aa41fad946fa058001bb77daf3d0fe0de8c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/mutant_energy_moment_factor.log.gz",
+      "sha256": "4b86fb1b92dec4a88be7ad1207468aa7a8b557c851cfdc579846d32a40839a01",
+      "decompressed_sha256": "12a3b47da3fdaaa0768d0e920cce52df05fb5cafa7cc0c0271c49f5d1acd45e4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/mutant_energy_moment_factor.py.gz",
+      "sha256": "f79d8cccbd245cfe4df5b981d9fb6aec11c05d393bed3c26bc7bed25c8537330",
+      "decompressed_sha256": "b5f8be442cd5676454d64ca116404b285163ff2dbc5ca7155a7a2882e9d7d8c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/mutant_helicity_measure.log.gz",
+      "sha256": "8202ecc29bc6984673d390bceedda52920a2ec9f1b8800e4abc1be4ad990e523",
+      "decompressed_sha256": "798e7682c87026853ab5ab0b56cffa5952e728b9eca11091d10883b8dba59f0f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/mutant_helicity_measure.py.gz",
+      "sha256": "043419c4e4d340a49aa95ff96d5513191c8452c3423f307b53f90d3236f87917",
+      "decompressed_sha256": "fa2da9ef03821cf8d363a3ab153062c33fbe326d6a17410d029f977de3ccefc3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/mutant_weighted_lower_factor.log.gz",
+      "sha256": "4a6c5bb60a23ee360ffe9d911582f24cf42e08b4cef24a552f56d998f218c519",
+      "decompressed_sha256": "2e06095d02baa8910860637bead57400290868fbcf140000354be10f32c81169"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/mutant_weighted_lower_factor.py.gz",
+      "sha256": "a42d213a335a486092c791b7db9e6a815754dcedf698dcd03fb9795662494c8a",
+      "decompressed_sha256": "f0967d6228cedb5449f8d3c28c334743a860d959181f20e56077ca69381a8953"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/mutation_manifest.json",
+      "sha256": "2a67e8e894e2dcc7219a2409575ccba358ad18e7872bf2b16bdcae774962ba02"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/outgoing_controls.py.gz",
+      "sha256": "d0e840a71bcd5ff4f390e1d2dca745ee2e0edc5ce8b1c7bd4ea71ae6f1342ee7",
+      "decompressed_sha256": "5959a175ffd66638f25b23315d1923c344d51c790ada16a85166671058049c75"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent/receipt.json",
+      "sha256": "333d620163722af83291fb19ade6ac9ea28101b2877daff028cae5beb1d5ecc8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent_review/PRE_HELPER_RECONSTRUCTION.md.gz",
+      "sha256": "c060957b415e8a4a6c3743a4d85af6f9f08263897b8a3be04ac366b859749e1f",
+      "decompressed_sha256": "4d0e03dce3e572e1adcb7b7b088f41f9de72c883b389783faeea75b12a135b46"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent_review/execution.json",
+      "sha256": "3f3dc31a2cb2a69ae7eca60699b2f23260ff1b7f36a96bfbc708c1523d64e302"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent_review/independent_controls.log.gz",
+      "sha256": "1b15b7935f1c734da0b5fd42276e8f99aceec83055b165600b319ddda40eec51",
+      "decompressed_sha256": "f03aa1cf99f35911aa4fba3ae38de2861ec09aaff16f34a6d9e482c9d5241f51"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent_review/independent_controls.py.gz",
+      "sha256": "1dc82a96045fa75281d1e0299d4e313e61046ec4fe2e10b31182f9deac9b687d",
+      "decompressed_sha256": "5ae7e904b8fd4624e09abb153f3d64c77bad157e06c62bead1cd3e883fe8f593"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent_review/receipt.json",
+      "sha256": "c5fb2219ef98d4abce39ef98be784e5c7d1ffde0054cd867214f4713226ba6e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent_review/source_check.json",
+      "sha256": "6be1c3b1eddc0d94fe2a1c493683af5356c6ce6f2a17717842837087a089ac01"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent_review/source_check.log.gz",
+      "sha256": "ac869d0cf7b3472c0e62006a189a74212250d107bf15a6aecd5b3f00dca99b98",
+      "decompressed_sha256": "a7054160153fee820d639c7f7187b4fa0a9ce4d7dcd3244dd8ea4b172de1fe2f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent_review/source_check.py.gz",
+      "sha256": "3795ff96c9627d1f88e8f037134d2179666bea3f278f853b7a3fe47aaec928ab",
+      "decompressed_sha256": "a88f6722db8ec8911cb51ae6d3ac2b091de9b1b8e390e26f22aca5a179aaba74"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent_review/source_check_execution.json",
+      "sha256": "77341c95a3a18d9f4196195c9e80ecc41b7f4ba71638f26d9df668ea760a7b3f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/outgoing_resolvent_root_intake.json",
+      "sha256": "3e98359f6e9661fcca7e7dbfd2a7f09dd776dda7af165d980b1e4acdcf62918d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_canonical_execution.json",
+      "sha256": "0ab2aa7a739029d2c9039cebc5beab38f06b0c2d099e28c8bb770eebc641e483"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_checks/baseline.log.gz",
+      "sha256": "04baa6ec1f797dd2bf1d14482d0de58ec95180790ad092692e14197e6dfacc18",
+      "decompressed_sha256": "a22c840234eebce26108ba63948cd873ef3f03b58ce651d8c2a336992fca6476"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_checks/baseline_execution.json",
+      "sha256": "559487e2c6fc9b5e3b8d1350d6b3acfb29e19d31aae4cc9b44647f9b0b621fff"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_composition.json",
+      "sha256": "ffdc0a26f9caea83e70f41a471c63959e5672dc43379e43172f7ec906e6551b1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/actual_current_sign.log.gz",
+      "sha256": "fc2be682f1d81e7c186d85a6eb690c6fc812aedb40b36fe1399facf89d25dbfb",
+      "decompressed_sha256": "87d108722fa95154d43917711c6cbc0fabbd8449bc1ed144abd98f6f48d59b54"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/actual_current_sign.py.gz",
+      "sha256": "80188d12f26c35a9edcab8f2dfda54b60a4f856ac98c7c1e7be3ce3d283ff077",
+      "decompressed_sha256": "3d09be9e871b713e38db4218cabeb0b394479e0a8b670928ab0156253b8be4fb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/auxiliary_state.log.gz",
+      "sha256": "fa35028207a097588a0b1a5fa14c6e06c62e095789451163b0d8eb9e2fd36eae",
+      "decompressed_sha256": "8deca3bda3702309f2d90551efca633ba26b0a890a344c07cb7bd56adf5d4f73"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/auxiliary_state.py.gz",
+      "sha256": "d9292bf88f40c3d9a61a675d524dc2ef5e7e92a395bf418eff3a5da9d1692341",
+      "decompressed_sha256": "c4a608c262b6d09c289eee4f4ec081902073dea2ed7ba25c70feab6fb250459b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/band_high_corrector.log.gz",
+      "sha256": "7892e85a9873f5f1ab6ed0f76a682ca5bf3cce24700cba49a23cdfd207a19254",
+      "decompressed_sha256": "0e45b56ca2556d5c3752dbb6da5a398763b5d6b853b9e54595b4014d8a70a6bf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/band_high_corrector.py.gz",
+      "sha256": "ee858f949677ce51467d8bd554bec3dec3bcc4106d873b45533da31f6d7a2ee1",
+      "decompressed_sha256": "eb68d3817903ef99fed25fdf52d9f19da30806dc31c00b1bfbe329013b53d2d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/band_placement.log.gz",
+      "sha256": "fcffaa13a9d10017628bc7e3128cfece2a8a22b1381f9ae296d915da7637b023",
+      "decompressed_sha256": "68b653c9fa00a3452d92bc69efe46eb43a6d9f964b27f215867affad47713fca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/band_placement.py.gz",
+      "sha256": "d1a6b22464635f38f057ec9252462899c340d76408cbb61d5bb94124ba0ac3ea",
+      "decompressed_sha256": "8f01aae3dd751a80aa15e8f784a8499cb74488829b7fd50a87d2bd8d5d4b2702"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/band_transverse_trace.log.gz",
+      "sha256": "7e09254a95594cafbeb17e9c59a1a8caf82782b15dd996c9809c2cfee51ad3cf",
+      "decompressed_sha256": "f22e068c5b91e0e38f9a42293d528adbcb19971d6e472a5336fae41a54a65b67"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/band_transverse_trace.py.gz",
+      "sha256": "1f5fb3e2a8653d20900c0279b30ab5b1aa6cfec8d53298b5be28337601725ed4",
+      "decompressed_sha256": "ddc4e491446d3c551ad071191e5b7aa29ebdf6c623de58020409c204d694305d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/cone_streaming_factor.log.gz",
+      "sha256": "2a24d669a1a3fc4c7312e84436c239c1adc0cd26b7532a9702f1c6d27f487b8a",
+      "decompressed_sha256": "60bbc3a50bdfbc89b9318760ad25d31ed2634657f1cdca3daad4aaaf0f67efd8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/cone_streaming_factor.py.gz",
+      "sha256": "987b753a016f16bf1ed5b03626d485ddcb87624afae3d1dc3730c7230c5c3a64",
+      "decompressed_sha256": "dd09bfc98f8bfbdb06b5223195a6a4cd1358df81cd80951d8a9d2a030c0d3ee4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/corrector_sign.log.gz",
+      "sha256": "6778cc84d813cce13dd0e028d5b7faab32500dfdc9e78df2d941a7475e12dacd",
+      "decompressed_sha256": "edd63b8fb55cde7a6bf4d8c46813bcf8d97d378721a934556a56f482b761629c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/corrector_sign.py.gz",
+      "sha256": "0c62aa70370aff05b6cd0b6f1ac997b7001a775f5a69ad15df764b08f24f3dfe",
+      "decompressed_sha256": "ab2be0795f1b5f391f3a2a8cb4086d9a4f819b75f1e87e083a90ebe2d5aa13d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/coupling_omission.log.gz",
+      "sha256": "c88cf1c2861c9c0edbeb6b42c2595ce43c7330c3b90dc78eb855ef35d5f36011",
+      "decompressed_sha256": "de714248f8c09cda4455b208d46fb76799420db6c6e68f8a81fd83278d74ecec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/coupling_omission.py.gz",
+      "sha256": "453ea5e0bdd2c95065b92d87b917636d761ac9730a782b3934132ef915ac3316",
+      "decompressed_sha256": "969a339d7c8d7d15107d87216c2eb4376a2c8b41ebff7cf3ec98dcad2bbffb9e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/cutoff_mean.log.gz",
+      "sha256": "8a26e1d13d277400264ff12a1c36397ddd82822a98cd95141824814ceaa76960",
+      "decompressed_sha256": "cd5b956d5ae02de02c5f914b377779d199debfe6dfc744e1256ae5a064f1b73d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/cutoff_mean.py.gz",
+      "sha256": "7d0dba062c05bec855f6bff16347f96245be0e3e0586f4e8ec7a83f016da14ab",
+      "decompressed_sha256": "dab71b2db7c9af1a19234a3f2a3b78096e982d6e4afeff08751415f6fc35d4ab"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/derivative_sign.log.gz",
+      "sha256": "fcee2f9e7190f1f8293afedc863073f879986299ebee824e02c4bda76004171e",
+      "decompressed_sha256": "8c1dced80991d3a7289c2a1726ec37a0f55eca069f045873cb322bf1f0d7a038"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/derivative_sign.py.gz",
+      "sha256": "ee7740da6c7948fa99142a2b5dd41890e32e3ca1a0614fda976e09ad362206ab",
+      "decompressed_sha256": "1a819ca1fc9fe97f95b376452c499be6f956ed08bdba466e9278af3543aac579"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/explicit_onset_budget.log.gz",
+      "sha256": "a3c678c113eedc6746923dc0fe0d54145771dac2bc0d6811c51d01cee6171a64",
+      "decompressed_sha256": "74d7e95acb9f3c89a96f156660a57ed6c1b8d7d62365a146ed6b0f6d7be71993"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/explicit_onset_budget.py.gz",
+      "sha256": "6629d7e5a8af75306a9a4461452cf9e445f18ca29a3bba431792696b34405d23",
+      "decompressed_sha256": "fd89eda4e03400b0d2e4c682ad2a5bcb57de18f2ba437b7e1c40e5ad8ee75796"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/full_zero_space.log.gz",
+      "sha256": "31561840a526f4f26ac3d4e0c9b7b64b36b4d5ebeb0a9c60f5f903bb474b7497",
+      "decompressed_sha256": "6c5959b8951bf53bfc87b07467a970f745529cd94ccde4ff200f81ad6ca514fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/full_zero_space.py.gz",
+      "sha256": "05947a5fe80438596a2b52bc10d535fcbb3e2244474cfa552d958d8c54356a8c",
+      "decompressed_sha256": "94e69e76db1b526d6a588a7068951e33dbb40d343ef3c6e866e74530d505e08a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/global_normalization.log.gz",
+      "sha256": "c0828a058a1619c371a2b769afdebf39778a24e258360d72a60071bdcb1d0a31",
+      "decompressed_sha256": "a02bf411ef2606078ee6d959808122a2d80c6ef45793d154746c66e70c57ed48"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/global_normalization.py.gz",
+      "sha256": "e480c29839e6a029f780e7ecc6ed8c6fea451c937228db2d78f964e1537f3fa2",
+      "decompressed_sha256": "5161650bd6d08dca9991dbdfe1b2c3265a94d773642790c235a51e3d8fc27d41"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/inverse_factor.log.gz",
+      "sha256": "64942a1fe7cd2231fe0760069d2015e80b0ac5978f2003e8b53f5b8695c4e24e",
+      "decompressed_sha256": "3693844dcef950f8316db331c79172a7ea9ee31f1de0a88fe7f26b52cc5c11fd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/inverse_factor.py.gz",
+      "sha256": "b0bd73a81a10db51d484ba87bce142e2d46adbf5c5db538db58d6fd8f325efdf",
+      "decompressed_sha256": "3e616242771034c8052c87f26726198e0152af7f01ecb9a3921e143671a2293e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/longitudinal_cutoff_mean.log.gz",
+      "sha256": "8be0dd10f8f0745d8bd7186c5f1b22d4731972c10973c1bf4bb8287a8338cb5a",
+      "decompressed_sha256": "b21b1506c5621989069929d6a602c63fbc6a5e084410fb400b3799fc647692ff"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/longitudinal_cutoff_mean.py.gz",
+      "sha256": "0678bdc8e846314a2b55d293732bae0c4b3ba91cace01da7c1e4d01d101d7f19",
+      "decompressed_sha256": "adb325998f4ac7e6c975d2b98be3eeafedcf13eebf5064511d47090b49ae2865"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/manifest.json",
+      "sha256": "8085684fd5c17071a87e42036a686653ffd442757741835e5ed32171741092df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/measure_normalization.log.gz",
+      "sha256": "d18797a38e34cb411ace7d25d7884a3a4b99cfb6d0c6c157295386d2f42b0b91",
+      "decompressed_sha256": "6937108ec2762a74465552afc244f6bd8436bd9fe743e70f68e9805f10ea8bbb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/measure_normalization.py.gz",
+      "sha256": "cb7663a8c12caab6d3014f4717bd4fbc030876917d54af7c03aea13c58bd3461",
+      "decompressed_sha256": "2e0876eeefd8b06d1ba898a17ceb1ec777efa79c31dbaa393600c31f8b684c29"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/missing_compression.log.gz",
+      "sha256": "3b40f79c1a39eb540827d491155272f55624c9a08b1de8f17b0b9051428aea0c",
+      "decompressed_sha256": "3cca3a714db0a29225c0ebc085c293c3a4b0458dbb24d885c06bc8ef9b9dedcb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/missing_compression.py.gz",
+      "sha256": "45e9e363f57a2c1b07c06dd2637fcad64988061ba0e70cc1f237a808925052e4",
+      "decompressed_sha256": "c20c53df30bec84ca3313d09a8a78e68d1d0d4b6615d8865410d99209ba5ae09"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/missing_current_correction.log.gz",
+      "sha256": "b373efa2da9d510c2ff447f62fa12c9f28208727a66325300447c47eaeb8e4f3",
+      "decompressed_sha256": "7d9bf80c1d153d685c9ba1087f5073b75d1bffc0a0b94334aa300c9c51e92c17"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/missing_current_correction.py.gz",
+      "sha256": "bbfa3a5e039a2dfe1f855e1dc7a1f3c3597979774455eebf90a79c33b0267cab",
+      "decompressed_sha256": "31c296465f9c8c07cfa07eba7f7a283c9b073ada0744f3c46291145eb52c475e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/placement_omission.log.gz",
+      "sha256": "a7f6bae6a452dcd03046f2a15fb4494e59509079d813f5a0e981e4c4180d7482",
+      "decompressed_sha256": "0d7eff20a2fce8812ede4884155e7055d425a2ecd959dbed5b0fac8f7e5ce706"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/placement_omission.py.gz",
+      "sha256": "57765daaa2299bd97383a277e19644bf99d24dcb275f8f462ac1d836949b6041",
+      "decompressed_sha256": "33ec08263cb68205727c18054b1d8c1403b8e009adc739c4e937dfb244df7082"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/root_log_coverage.json",
+      "sha256": "641f56996729189490972db700caea23dc1f30277f411670f6f2cc94e9a2d474"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/transverse_projection.log.gz",
+      "sha256": "351a219705dfbfa4a6e51e8830c956ab120520107b0b6f4cd0d6a965434dcd6d",
+      "decompressed_sha256": "7d55b8fb0b0a8bdba50e62bb8f28c3d0d904ecefde62e8c1bd7d711f0b3cf18f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_primary_mutations/transverse_projection.py.gz",
+      "sha256": "700fd1c3c1c290c4e8a61ae2ca59872444a37b9c6a460c2fbc57c2d70cc2de73",
+      "decompressed_sha256": "abd8be4b352c4e409910f20c70e4cd598c7a8c25bde9823b0dc9babd25a5e6bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_publication_review/CHECKPOINT.md.gz",
+      "sha256": "1ff74ecf3f79a8c6cd14cf72380ab643224b2321d44753b5ec11fc485ccf5c57",
+      "decompressed_sha256": "5f1d4851684a5192f504969533127e1cbccb106e5466328e659422b1888118e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_publication_review/composition_control_results.json",
+      "sha256": "cfb56bbac28081fc0003367f71e41e354ec6d5c7a098490201ab1b4759a43124"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_publication_review/composition_controls.log.gz",
+      "sha256": "a3ac74431c355306edbdd1749166dd2676bcf393b8d2fccbf6b18cfc564d0211",
+      "decompressed_sha256": "dd55f94580779a654e37e2cbc2d8b3e01f23debe59e47c9ffff2d5998282b270"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_publication_review/composition_controls.py.gz",
+      "sha256": "85f2841a9a572b232ef6cd31167fab387cb58051c7ca4f8ae446c5270b3d4dd8",
+      "decompressed_sha256": "6c7cc436d7bd2096ae1f5564de2c8b772ecd672b790dc2a0ebe01116b473b9f1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_publication_review/composition_execution.json",
+      "sha256": "5d05304be645337a3fe8b154e4e6557d80163549bb1184718fa635c8f00c3604"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_publication_review/freeze_receipt.py.gz",
+      "sha256": "e4b17e2fde39725cf0d474e26d8b70c9c7c629a996785ee84ac8a7ad2ba10dd1",
+      "decompressed_sha256": "8b444420e7396af9a1012feb7062943152c02b59dd875e723e5f21ce599d55a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_publication_review/namespace_control.log.gz",
+      "sha256": "bb6f57b201d871d285be8b1147d0fcfe0c04b23e472ed7c9eff0582c32ccaf5b",
+      "decompressed_sha256": "9852eb848a8bb96c571612657caa0eb77a67a44dfb125c365fee5a6ff7908619"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_publication_review/receipt.json",
+      "sha256": "f2c75a99df4eb6139f5f2329c9471716779a8c2ecb61b180ec5788321b5aab03"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_publication_review/shared_namespace_competitor.py.gz",
+      "sha256": "da1fe61091a728945ca130fcd92f5fd606b3c6b5fca9a72497de7f4fa5564c01",
+      "decompressed_sha256": "a0aea25d8cdf3ad5fedfa6c4dea2c5f6cc958e85eb2a0eda1d2cf9740690aab3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_status_refresh.json",
+      "sha256": "ec7777a9ae9442f7bb7f7658f01b6e35fede27b054ce44f548fd0217fade7858"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_status_refresh_review/check_refresh.json",
+      "sha256": "0ce0042103c4edc2cc66f4dd949c5ead2a4c5c325f57bfee44bacb2500a1717c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_status_refresh_review/check_refresh.log.gz",
+      "sha256": "52faa702ef7e8ed7fde1d06b9aab631f96ec973e9b1f430bbb2da5f98727e678",
+      "decompressed_sha256": "52a3b27e78d3f95a65fd9c72457b87469783c6f14804d00052bec396452e2dd3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_status_refresh_review/check_refresh.py.gz",
+      "sha256": "bc34551583f7c34ee160b88d2ed4e874f39d7226f56531db3f0eeb34af507464",
+      "decompressed_sha256": "df0ef3797978f1c1a45d88c211da9f54a511e7505c94e86d7c3160a05bca380e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_status_refresh_review/exact_note_diff.patch.gz",
+      "sha256": "2d1ec4dac92fc43f0837c78403df1d3f68facbdcd466a6a57192b0cd79df942d",
+      "decompressed_sha256": "2f19344368b4034c0ee3115a7d0a696ee0a798f1365d036036e75f122bcd0117"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_status_refresh_review/execution.json",
+      "sha256": "fe6d8c5c6ded922c10b0f0048522a55edf7ece0671789a8e76162f17d3ecbad8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/projected_current_status_refresh_review/receipt.json",
+      "sha256": "358234d359aa86f6e77025321379049a63a4c41d1440efb079e3d15f75baa97e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/quantitative_band_current/quantitative_controls.log.gz",
+      "sha256": "287a3a7f135f00674984807de236dced5c19e79033cf784cee7b0dba01dd2644",
+      "decompressed_sha256": "e7f76bd5e5389431094e9fe0ffc7d89ef4212cfebec39658080a24b1169a3597"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/quantitative_band_current/quantitative_controls.py.gz",
+      "sha256": "9085ac1c0ef952cccb9437902afcb586344e9dadc122048c025606d432b97aaa",
+      "decompressed_sha256": "0e9a63cd42abd9fc3d4f68bb1a8568825e25c36c589f2a6f028ad690654f1df9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/quantitative_band_current/receipt.json",
+      "sha256": "2eaa2eda5f5fec364669e2d6709421a69528843bc43f55f8a1340d3a158967b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/run_memory_current_mutations.py.gz",
+      "sha256": "fa9b2e4aebfcff8e220ca3136a3aca19b1983c96cfdb01f1671279b2482b86f4",
+      "decompressed_sha256": "2cd002bce3b7b96d4cc408262897b03accfd581de1042fd4ca998b15123025f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/author_receipt.json",
+      "sha256": "e1c6f76499ea7cf1eb3810ef49a1e0d7fbca35c5e0b37a5c9fe2a74b2b6c56e4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/baseline.log.gz",
+      "sha256": "cd1056cbe04e77e50652c3c3287c4aa4ea549536e2adcd23be115cc12fd3e65b",
+      "decompressed_sha256": "92046ca62361092a58e15efa74da3ceeecadb22915235899f0a0f5bb5c42697f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/mutant_global_normalization.log.gz",
+      "sha256": "b8159a15c79b68a4f578465c11fb08fc63dc111a212988e9bb68fa2e40cd83f2",
+      "decompressed_sha256": "f77c1dbd3528a473a0c81412afee0eec4e2245fe236945b0fb0d8ddbfcfa9e5d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/mutant_global_normalization.py.gz",
+      "sha256": "ee6218dd01a039c3cd716eb1719e1c1a15bfd59bd8d025e2a210f6f867a3c6de",
+      "decompressed_sha256": "d340a82f9e0973f52e1df8c8a3b1dedd2f1c13da3645f278d9eed669c09c7621"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/mutant_high_corrector.log.gz",
+      "sha256": "c1ef8c7716867f216782d13c86798a2b16c6622ce41bce944735bd5e2b12bb02",
+      "decompressed_sha256": "a6767b396ce91b949fff79c5424815f0c232b2fe0d60f04442d2c6f7f44d9efe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/mutant_high_corrector.py.gz",
+      "sha256": "8684ff793652c3edb2b48a8e7d0a7a337fcaa13da840f78413d53fa08302a277",
+      "decompressed_sha256": "f20c8013bf7cdcbfe048db4a4114f75c56fa3b919c1f9261f0ed6ad9658c38e4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/mutant_placement.log.gz",
+      "sha256": "d69e0a893305db0c7166c04003dec64b9a69d751520b7de880b02861d7851ce6",
+      "decompressed_sha256": "37c86f03a6de8379838eff0d9d5894ae5d9e274e2ae865b6abf577bf1cc535bf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/mutant_placement.py.gz",
+      "sha256": "c2ddf883ec40bdafc0e2d3eb364c46d210c89e92a257c0b0c3230cf20f3857ef",
+      "decompressed_sha256": "9e4b9f9adebdcbab5987e1759ba14e92e81bab4d49ad71da4b519ad3f1d4a018"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/mutant_transverse_trace.log.gz",
+      "sha256": "97d85e35ddc5f6566cca1a0e14d9e9c9287a2932557b6a0cc78eb225b0b012a0",
+      "decompressed_sha256": "7c1b7a89507ab4b7f09d5c3b4bb0eee05ba62eb2705702fa2624a9c9adf12e0f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/mutant_transverse_trace.py.gz",
+      "sha256": "f0bdb618290a1cae6676f2be0101cf1c6d7f7542a26900bf850696646b025f4f",
+      "decompressed_sha256": "78c74ed6d62bae7afacff52fdcea5faced4a3e3cfd3eaf2ddd913b0a8f3e4650"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/mutation_manifest.json",
+      "sha256": "8f1cbe4ec01c1ab0cedff744eb25acdde77acc622f9e184c015a9f087a4edaea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/two_scale_band_current/root_two_scale_controls.py.gz",
+      "sha256": "b136f011e117e5461611cb791427a8552e46dfecac1f0488da3c42393fc2a0b7",
+      "decompressed_sha256": "3957104cf4362b83c6f6e11c5cbbff365d34e232dc1134cd09cdc9a97312e4ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/baseline.log.gz",
+      "sha256": "fc733e82e1b790c22cb5e984bf1c4aef2a21eefc004f79c3b786de44c838722f",
+      "decompressed_sha256": "c4dfc5aa6457871d653eb55d3c8d3fc24664cec6cdf479658e364d980554ce5a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/baseline_execution.json",
+      "sha256": "6bf849ab705f9fd7bc0c368d06ed16bf1daa489dcd7e89a6f00fc042d8355c56"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/checkpoint.md.gz",
+      "sha256": "4fca1a63e8cccd0804ca481fbc394cd9680632349fcdf0ee82e72822523ed7b2",
+      "decompressed_sha256": "4f666713461a6a6a80f3d4432c3c27c4d1fcd7b269f15b3f850fc796ca65d4cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/development_log.md.gz",
+      "sha256": "7174d41ee50746e1d95fe4b514c110f2b78678fe650bc824bba84f26a2b5f9cb",
+      "decompressed_sha256": "eb09b6bbffc3e643b020814943291a1220a11d0a6526024a2f24dae0dcecb4f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/extract_primary.py.gz",
+      "sha256": "a600c3345b261af3faff2e9e72c0b57f3e5134357f43e3e80a572e0ba8ab6e99",
+      "decompressed_sha256": "65dd73160ccc8567c04eefed88bd73308a53d1f9feadd133414df9d72341cf2e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/extraction.json",
+      "sha256": "d185813f6ac82192917f403278fb0972718f17c3fd1f81ecf2dbd65d77d149f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/extraction_attempt01.log.gz",
+      "sha256": "636020d2f29244e694f8914632e4ffea50898f2d90f3eeabcdb1222cb5408ab1",
+      "decompressed_sha256": "5890fe6246de661ec13828286c630eb80463cc4bcae044a08d6df45e9bf22a97"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/extraction_final.log.gz",
+      "sha256": "52fd1bbd18f880372a837647502af6bb6d154ba815c99c2507b2b96e94bfa49e",
+      "decompressed_sha256": "a1812d85d375a8519a5b16611253e1178ba5b66bee803ffb8f13530a7384610e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/freeze_receipt.py.gz",
+      "sha256": "c9ceb704f21790bc7b38ee795402f8f60e80b76b02e16da23cf559652fca2e96",
+      "decompressed_sha256": "a4b02094f2bd52e3c740d81c3fd1b317bb2da28f44c26892fda0f05ac7cf056c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/kato_extracted.txt.gz",
+      "sha256": "8ee274803a4fe5e8a895734a8d74f132db42a55d5c8a6d7f98a3cafb45167604",
+      "decompressed_sha256": "68dd7d0249f2667919eb29229570ce588aba332f2fb420cb61f132f63e0f75f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/mutant_continuous_measure_factor.log.gz",
+      "sha256": "491ff82a688eccbf121341bbd335b381b3ff454c98107014d3cf431b00f1500c",
+      "decompressed_sha256": "a3d5a8bfedfb15bdeae14a91b6b2874421b3ad950480264298a48e2aa78a1023"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/mutant_continuous_measure_factor.py.gz",
+      "sha256": "679057e7ffd86487eb9a4fc4475a2f863f1e129779ff12044df4bf1d169e530f",
+      "decompressed_sha256": "6ec6bf510f935ef59aeae088adde2236ddf5db431fb2695873882dbe84b6f347"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/mutant_forward_not_reverse.log.gz",
+      "sha256": "e5e32dc88e4e1ea6af498084778292326b0a8973d3a8360ea2283e07a7bdb0e1",
+      "decompressed_sha256": "4c5533e4fa2276249937319ac27209f50bddeebccb98b912bf9a8e2f3f5e91c0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/mutant_forward_not_reverse.py.gz",
+      "sha256": "0b32711936992284e70a9de24469e983c336acea293c6abf63ad3ebaddbab8c2",
+      "decompressed_sha256": "636be622ed278d2b6ac6a183fb774d53a413cb60a854173e1f6cde08bd15efd4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/mutant_trace_norm_half.log.gz",
+      "sha256": "d9bd3762d1313cac9230099bb4c22c8fec49d269e798c958486d1d104a96fc91",
+      "decompressed_sha256": "a7092108337ebde9d1a7b4bba0d0aa105dae149d7b74f709de538d434fc8f37d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/mutant_trace_norm_half.py.gz",
+      "sha256": "d20938190f54af2b8bc431caf5b1a741f71d3064abe8d60e845c2610b8a01b9f",
+      "decompressed_sha256": "aee0ec35bcce6a317db95be2411994cbf314b0ccc196c60703d65c06c3068546"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/mutant_weighted_cross_sign.log.gz",
+      "sha256": "24707a585e005957d76eba192cbc0f5e8cbc8a68c482023a27fc7aa6b41db32e",
+      "decompressed_sha256": "8357469a58e3536d87fb53c321c16e7083eda586029647c9133f70d57dcacee8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/mutant_weighted_cross_sign.py.gz",
+      "sha256": "542ee886344e56c456c6edf76a9e9536961af6ba7ce5303bfff22cc1ef4fcf21",
+      "decompressed_sha256": "fb826ee1cc2051065d05ccfadd747345f529b93ea4e7a6cffce85eb613e72e33"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/mutation_manifest.json",
+      "sha256": "3ec66c187598882132984a552271b611bf7d3333eca0d225f728f80bb5efacb7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/receipt.json",
+      "sha256": "a9a25c7df59b6efe058b4496038a8232e39baba04826290c6f1ffa8f32cbf8ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/run_controls.py.gz",
+      "sha256": "0ce4279b3f86ff99aa1d724b70be6770f94e9fdd3c7abcc160a238d211c1ac77",
+      "decompressed_sha256": "796382ce86570e721a2e5064029e045c82388080caac6526c3b9efdf2f6d440d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/weighted_memory/weighted_controls.py.gz",
+      "sha256": "9aa2dfdf38a0729edf409fc99178cfc08212c2499c0bacd6ce09b22669cecc90",
+      "decompressed_sha256": "70807cce821d3e2eca3fc96cefd52fa1cfe83c4496801b9c9f2f7b9dd5108c24"
+    },
+    {
+      "path": "docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "3954606703f9a66665fb1ee9a27079f7f14e5183f28a8511a38743ef5d455aa1"
+    },
+    {
+      "path": "docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "bf894a323464c17faf78ae3402af8ef964635fb8fe2240ece671c0aaffcf5e5d"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "58cdf969b5829210072f014318bd9e660f09000a67c9a2494e0f9f1b6dc5f3df"
+    },
+    {
+      "path": "logs/runner-cache/excluded_walk_memory_current_2026_10_11.txt",
+      "sha256": "fc6aadb4c2f1c685f86425887578e506820bd40e1a0d99f0568a0d1541cf314f"
+    },
+    {
+      "path": "logs/runner-cache/excluded_walk_projected_free_band_canonical_current_2026_10_11.txt",
+      "sha256": "b8d7d1a9e68765cb6634f5a68a9e366fca1ee1b89da17fad7d4d170f435f19c5"
+    },
+    {
+      "path": "scripts/excluded_walk_memory_current_2026_10_11.py",
+      "sha256": "b5cfe4af2e2e56f6a531afaa36c19daded1003d91b3a861ebe177ba87a0ebc33"
+    },
+    {
+      "path": "scripts/excluded_walk_projected_free_band_canonical_current_2026_10_11.py",
+      "sha256": "4451005b466c114b40c943509b13aaa34607b7b8e884ab584df4c19d8b1f30ff"
+    }
+  ]
+}

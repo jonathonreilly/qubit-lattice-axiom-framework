@@ -1,0 +1,964 @@
+{
+  "frozen_utc": "2026-10-11T20:47:55.160814+00:00",
+  "finding": "No consequential composition defect found; no source repair requested at the exact frozen identities.",
+  "scope": "Bounded publication composition/claim-scope and actual-wrapper check. Not independent recertification of the reviewer's M/W/D/L proofs, future delivery or a retained-status decision.",
+  "target_note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+    "sha256": "c05465cee9acb7ee1bc9b0296b4fd5546432bd8188043194b1701a2d3654ef87",
+    "bytes": 72064,
+    "lines": 1556
+  },
+  "target_primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_current_2026_10_11.py",
+    "sha256": "b5cfe4af2e2e56f6a531afaa36c19daded1003d91b3a861ebe177ba87a0ebc33",
+    "bytes": 24121,
+    "lines": 507
+  },
+  "complete_current_reading": {
+    "note_inclusive_lines": [
+      [
+        1,
+        1556
+      ]
+    ],
+    "primary_inclusive_lines": [
+      [
+        1,
+        507
+      ]
+    ],
+    "all_36_source_substitutions_and_all_editorial_text": true,
+    "author_extended_log_and_initial_missing_dependency_traceback": true,
+    "joint_dependency_addendum_and_receipt": true
+  },
+  "source_coverage": [
+    {
+      "key": "M",
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+        "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+        "bytes": 23222,
+        "lines": 500
+      },
+      "complete_prior_reading_reused": true,
+      "prior_authorship": true,
+      "rendered_source_fragments_read_and_verified": [
+        {
+          "original_inclusive_lines": [
+            48,
+            80
+          ],
+          "publication_inclusive_lines": [
+            158,
+            190
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            82,
+            182
+          ],
+          "publication_inclusive_lines": [
+            216,
+            316
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            183,
+            405
+          ],
+          "publication_inclusive_lines": [
+            321,
+            543
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            408,
+            419
+          ],
+          "publication_inclusive_lines": [
+            796,
+            807
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            435,
+            442
+          ],
+          "publication_inclusive_lines": [
+            1446,
+            1453
+          ]
+        }
+      ],
+      "additional_original_lines_refreshed": [],
+      "scope": "Composition/premise matching; prior authorship is not new independent scientific review."
+    },
+    {
+      "key": "W",
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md",
+        "sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324",
+        "bytes": 17059,
+        "lines": 339
+      },
+      "complete_prior_reading_reused": true,
+      "prior_authorship": true,
+      "rendered_source_fragments_read_and_verified": [
+        {
+          "original_inclusive_lines": [
+            43,
+            64
+          ],
+          "publication_inclusive_lines": [
+            546,
+            567
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            73,
+            122
+          ],
+          "publication_inclusive_lines": [
+            569,
+            618
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            124,
+            174
+          ],
+          "publication_inclusive_lines": [
+            620,
+            672
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            178,
+            213
+          ],
+          "publication_inclusive_lines": [
+            750,
+            785
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            217,
+            259
+          ],
+          "publication_inclusive_lines": [
+            809,
+            851
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            268,
+            292
+          ],
+          "publication_inclusive_lines": [
+            1420,
+            1444
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            326,
+            332
+          ],
+          "publication_inclusive_lines": [
+            1455,
+            1463
+          ]
+        }
+      ],
+      "additional_original_lines_refreshed": [],
+      "scope": "Composition/premise matching; prior authorship is not new independent scientific review."
+    },
+    {
+      "key": "G",
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+        "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+        "bytes": 11538,
+        "lines": 236
+      },
+      "complete_prior_reading_reused": true,
+      "prior_authorship": false,
+      "rendered_source_fragments_read_and_verified": [
+        {
+          "original_inclusive_lines": [
+            68,
+            77
+          ],
+          "publication_inclusive_lines": [
+            934,
+            943
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            110,
+            171
+          ],
+          "publication_inclusive_lines": [
+            1043,
+            1104
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            175,
+            222
+          ],
+          "publication_inclusive_lines": [
+            1158,
+            1205
+          ]
+        }
+      ],
+      "additional_original_lines_refreshed": [],
+      "scope": "Composition/premise matching; prior authorship is not new independent scientific review."
+    },
+    {
+      "key": "P",
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+        "sha256": "ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969",
+        "bytes": 37412,
+        "lines": 859
+      },
+      "complete_prior_reading_reused": true,
+      "prior_authorship": false,
+      "rendered_source_fragments_read_and_verified": [
+        {
+          "original_inclusive_lines": [
+            96,
+            167
+          ],
+          "publication_inclusive_lines": [
+            85,
+            156
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            294,
+            352
+          ],
+          "publication_inclusive_lines": [
+            860,
+            918
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            169,
+            175
+          ],
+          "publication_inclusive_lines": [
+            950,
+            956
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            414,
+            418
+          ],
+          "publication_inclusive_lines": [
+            966,
+            970
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            488,
+            496
+          ],
+          "publication_inclusive_lines": [
+            983,
+            991
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            593,
+            622
+          ],
+          "publication_inclusive_lines": [
+            996,
+            1025
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            727,
+            754
+          ],
+          "publication_inclusive_lines": [
+            1111,
+            1138
+          ]
+        }
+      ],
+      "additional_original_lines_refreshed": [
+        [
+          169,
+          362
+        ],
+        [
+          403,
+          510
+        ]
+      ],
+      "scope": "Composition/premise matching; prior authorship is not new independent scientific review."
+    },
+    {
+      "key": "D",
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+        "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+        "bytes": 25725,
+        "lines": 549
+      },
+      "complete_prior_reading_reused": true,
+      "prior_authorship": true,
+      "rendered_source_fragments_read_and_verified": [
+        {
+          "original_inclusive_lines": [
+            306,
+            321
+          ],
+          "publication_inclusive_lines": [
+            199,
+            214
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            218,
+            261
+          ],
+          "publication_inclusive_lines": [
+            683,
+            725
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            273,
+            274
+          ],
+          "publication_inclusive_lines": [
+            729,
+            730
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            282,
+            287
+          ],
+          "publication_inclusive_lines": [
+            732,
+            736
+          ]
+        },
+        {
+          "original_inclusive_lines": [
+            293,
+            301
+          ],
+          "publication_inclusive_lines": [
+            740,
+            748
+          ]
+        }
+      ],
+      "additional_original_lines_refreshed": [],
+      "scope": "Composition/premise matching; prior authorship is not new independent scientific review."
+    },
+    {
+      "key": "L",
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+        "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+        "bytes": 21625,
+        "lines": 457
+      },
+      "complete_prior_reading_reused": true,
+      "prior_authorship": true,
+      "rendered_source_fragments_read_and_verified": [
+        {
+          "original_inclusive_lines": [
+            169,
+            177
+          ],
+          "publication_inclusive_lines": [
+            920,
+            928
+          ]
+        }
+      ],
+      "additional_original_lines_refreshed": [],
+      "scope": "Composition/premise matching; prior authorship is not new independent scientific review."
+    },
+    {
+      "key": "R",
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_DRAFT.md",
+        "sha256": "58a96a049701667e673bde1acf98e5346356483101654b3464fe11e94fd02c21",
+        "bytes": 11171,
+        "lines": 245
+      },
+      "complete_prior_reading_reused": true,
+      "prior_authorship": false,
+      "rendered_source_fragments_read_and_verified": [
+        {
+          "original_inclusive_lines": [
+            40,
+            236
+          ],
+          "publication_inclusive_lines": [
+            1216,
+            1412
+          ]
+        }
+      ],
+      "additional_original_lines_refreshed": [],
+      "scope": "Composition/premise matching; prior authorship is not new independent scientific review."
+    }
+  ],
+  "protected_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+      "sha256": "c05465cee9acb7ee1bc9b0296b4fd5546432bd8188043194b1701a2d3654ef87",
+      "bytes": 72064,
+      "lines": 1556
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_memory_current_2026_10_11.py",
+      "sha256": "b5cfe4af2e2e56f6a531afaa36c19daded1003d91b3a861ebe177ba87a0ebc33",
+      "bytes": 24121,
+      "lines": 507
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/SOURCE_COMPOSITION.json",
+      "sha256": "ffe3df5cd8633fa927bbe78e7fbfbeffd7c96efc30dbc969d0c0bf24a31e0fa2",
+      "bytes": 206036,
+      "lines": 1410
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/receipt.json",
+      "sha256": "9dea961421ca868bd4def5eecb5c45982b5c5a421ed49c945f31cac8dd2f2ea6",
+      "bytes": 21084,
+      "lines": 411
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222,
+      "lines": 500
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md",
+      "sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324",
+      "bytes": 17059,
+      "lines": 339
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "bytes": 11538,
+      "lines": 236
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+      "sha256": "ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969",
+      "bytes": 37412,
+      "lines": 859
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_DRAFT.md",
+      "sha256": "58a96a049701667e673bde1acf98e5346356483101654b3464fe11e94fd02c21",
+      "bytes": 11171,
+      "lines": 245
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/memory_controls.py",
+      "sha256": "10980b8195c33ac813f59632cc028a1dbd8a04e066930786dabea338ed162c4a",
+      "bytes": 8187,
+      "lines": 165
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/effective_memory/mean_controls.py",
+      "sha256": "8376f00539c79b580b6c142b5b71b8d0d4ec39cd98f47e9577170e915d5b097c",
+      "bytes": 1787,
+      "lines": 36
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/weighted_memory/weighted_controls.py",
+      "sha256": "70807cce821d3e2eca3fc96cefd52fa1cfe83c4496801b9c9f2f7b9dd5108c24",
+      "bytes": 4862,
+      "lines": 106
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_current/scale_controls.py",
+      "sha256": "1a71fb0d680630d0581fe4f982520d4bc3bc51a2649c2359815c3445c2b4d233",
+      "bytes": 2759,
+      "lines": 54
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent/outgoing_controls.py",
+      "sha256": "5959a175ffd66638f25b23315d1923c344d51c790ada16a85166671058049c75",
+      "bytes": 4172,
+      "lines": 96
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0",
+      "bytes": 17773,
+      "lines": 329
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_REVIEW.md",
+      "sha256": "a2bb951a15a90ca8dba4cba928f6307fdde078f30a41f9f07e818561f7bf0484",
+      "bytes": 17802,
+      "lines": 319
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_REVIEW.md",
+      "sha256": "2867fc1179a7b82b095e7719bc2f9015fdd87b5190626f61b0adfbd4fc318bf6",
+      "bytes": 14967,
+      "lines": 252
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_OUTGOING_RESOLVENT_REVIEW.md",
+      "sha256": "8eb1d81e91227a0cda36e75459e32be80b1523709a5f82fc5af4c1e8fd6d74de",
+      "bytes": 16855,
+      "lines": 306
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/outgoing_resolvent_review/receipt.json",
+      "sha256": "c5fb2219ef98d4abce39ef98be784e5c7d1ffde0054cd867214f4713226ba6e0",
+      "bytes": 19528,
+      "lines": 426
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/receipt.json",
+      "sha256": "49bd1d8872a07aea1e5266cb2f07f3ea2aff4d9a9602f7a141e0051037d92b80",
+      "bytes": 7362,
+      "lines": 162
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_weighted_review/independent_review_receipt.json",
+      "sha256": "74990de59ab11a8011f4164ce689b0f80153d261c073c486f47b78a1beaf1a28",
+      "bytes": 24896,
+      "lines": 474
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/DEPENDENCY_ADDENDUM.md",
+      "sha256": "8ef5245b3301a19338eedfc8f3f98610b6d3162538b80fbe01bfaf27e5a1273a",
+      "bytes": 2708,
+      "lines": 11
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/joint_scale_review/dependency_addendum_receipt.json",
+      "sha256": "151aeb2e37648b0ef468e40538b4d0ce11707a1fe3a704239b946e559a5d82bb",
+      "bytes": 2400,
+      "lines": 45
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/kato_1957_primary.pdf",
+      "sha256": "12ce9d67ed67d096f82b55a6ef7b778a83c16d5e2f020d4946d58112f3f93fe5",
+      "bytes": 442573,
+      "lines": 3648
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "9f551fc8d3592e83d15a007495a8f9165a5ddb9bc1e98d9dd3f51b6a2584f401",
+      "bytes": 65166,
+      "lines": 1280
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/CHECKPOINT.md",
+      "sha256": "3b86bf7cc0204c334494f6bb2d74f9240cf27e77191a961755382f6b2198c48a",
+      "bytes": 1716,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/COMPOSITION_REPORT.md",
+      "sha256": "992aea2e3e43997ca5419a83cedab37d691b6f071e1cb759f14be9368b2892ab",
+      "bytes": 5821,
+      "lines": 17
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/DEVELOPMENT_LOG.md",
+      "sha256": "d552c40c18cb5d7c1ca361bc2b509cc7028b99d9e03c39e1e18500f7085ee723",
+      "bytes": 2786,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/PRE_EXTENSION_DIFF.txt",
+      "sha256": "0cacffbbd60b92b5c8d977c27ac1dc60659b8b4a2b457557921170464ca0472e",
+      "bytes": 25969,
+      "lines": 493
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/build_publication.py",
+      "sha256": "a24bf11073305854410e5fc5c3b4238625dccedc83f8beeb05c04b6ff0d506e3",
+      "bytes": 40421,
+      "lines": 619
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/final_identity_check.json",
+      "sha256": "f6d80b05f1bfd0a2159b1ae156cbb80b81409cd0bc50f7fb9abfaa0797dc9f26",
+      "bytes": 8515,
+      "lines": 353
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/finalize_composition.py",
+      "sha256": "dfdef076511e7cd8039227397c8a0253a0a2ff6698e9a728e566513f09ca1766",
+      "bytes": 21198,
+      "lines": 207
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_execution.json",
+      "sha256": "bcfd8c804a6803cb406311535fcc51a4a66a8b9b387717152cd896c8d355b8ad",
+      "bytes": 3945,
+      "lines": 80
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_execution_attempt02.json",
+      "sha256": "c3735e349a0d22779a2bf7b8948a2087e27ac9d488e1f7f6e32659cfe01f6286",
+      "bytes": 3906,
+      "lines": 80
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_execution_extended.json",
+      "sha256": "23b5f29d4e0995ddd3b03100a5bd3ea315516de869c84d2a371b41de4a7a2e1c",
+      "bytes": 4364,
+      "lines": 91
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_replay.log",
+      "sha256": "e60953005599cffa11532f06fc0576a5a1a47b3f2f18eae1326136f19b9877f2",
+      "bytes": 712,
+      "lines": 8
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_replay_attempt02.log",
+      "sha256": "792398316b787fa3e5074cbf4ec0041d10edf06217b65115716d52de002c92c8",
+      "bytes": 6459,
+      "lines": 53
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/primary_replay_extended.log",
+      "sha256": "edc40cf14b8aa3ccb491c1a9dd68ff794c4c095506c68c0fa3d17b08f05b34ef",
+      "bytes": 7951,
+      "lines": 82
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/verify_and_replay.py",
+      "sha256": "cab9c8eab3539fc945ff6d06058a9b8772fbd4a073536a59e36319773a10b9d0",
+      "bytes": 4708,
+      "lines": 89
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/verify_and_replay_attempt01.py",
+      "sha256": "faa123af6b468db2cc45f61e6432f234b52538f9b5925311076afdaaa8dc5212",
+      "bytes": 4738,
+      "lines": 89
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_PROJECTED_CURRENT_PUBLICATION_REVIEW.md",
+      "sha256": "076021427ff4e2cbb473363e09b3a043c2a4bae01d24bdfc69a6a42a55be8cf1",
+      "bytes": 21197,
+      "lines": 282
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/projected_current_publication_review/receipt.json",
+      "sha256": "f2c75a99df4eb6139f5f2329c9471716779a8c2ecb61b180ec5788321b5aab03",
+      "bytes": 73664,
+      "lines": 1460
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+      "sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2",
+      "bytes": 20876,
+      "lines": 375
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_REVIEW.md",
+      "sha256": "b9525df21cac9721603776dc703314b73e2572b874ac5ef733b35933d6260e2f",
+      "bytes": 21583,
+      "lines": 378
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "lines": 230
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/INDEX.json",
+      "sha256": "b4e2f24dc1331fe67f4bdab2cd36acb7e7a2a23051526b933687e5c278f89027",
+      "bytes": 7440,
+      "lines": 102
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+      "sha256": "17103b2c0c1c0d5a84f7e39ebed5de110857ea349140a666caa9e60e2e26af29",
+      "bytes": 60834,
+      "lines": 1320
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/excluded_walk_memory_current_2026_10_11.py",
+      "sha256": "690be0f97d4b72ffd2360326c883148674ca355daddf09d278eeb6677d9ff7c5",
+      "bytes": 19770,
+      "lines": 408
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/CHECKPOINT.md",
+      "sha256": "a29275f376d67f3e500e45b97026de33f3b782f6a73603192e20da4fe4c24741",
+      "bytes": 1465,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/COMPOSITION_REPORT.md",
+      "sha256": "9f459545c804ef921a82685b081001eefbb5bd49893fe5592cff648b059ecec9",
+      "bytes": 4738,
+      "lines": 17
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/DEVELOPMENT_LOG.md",
+      "sha256": "9bba8bae38a37f56f7a08413e6a66cf816b5b625747f03fa1c279c26c2272f55",
+      "bytes": 1724,
+      "lines": 10
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/SOURCE_COMPOSITION.json",
+      "sha256": "f7c3a91b1f1d811e42b8922c629dbbc1d01b8d4dfe987c2a18ef90fa18f73b1b",
+      "bytes": 155690,
+      "lines": 1137
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/build_publication.py",
+      "sha256": "46b3869e5ff42076d262bb2958d5ce83fdd84b12baaed8bee9da739c19b653ef",
+      "bytes": 32845,
+      "lines": 535
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/final_identity_check.json",
+      "sha256": "2b7bb2696d56a0e5830c1df88913a4dfe293390af7115ad03f2a3d79f6582972",
+      "bytes": 6906,
+      "lines": 287
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/finalize_composition.py",
+      "sha256": "5753621867c3492cd96f69a18823330c5d7c8118475aa90ff3abc77dc08a804a",
+      "bytes": 17096,
+      "lines": 189
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/primary_execution.json",
+      "sha256": "bcfd8c804a6803cb406311535fcc51a4a66a8b9b387717152cd896c8d355b8ad",
+      "bytes": 3945,
+      "lines": 80
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/primary_execution_attempt02.json",
+      "sha256": "c3735e349a0d22779a2bf7b8948a2087e27ac9d488e1f7f6e32659cfe01f6286",
+      "bytes": 3906,
+      "lines": 80
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/primary_replay.log",
+      "sha256": "e60953005599cffa11532f06fc0576a5a1a47b3f2f18eae1326136f19b9877f2",
+      "bytes": 712,
+      "lines": 8
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/primary_replay_attempt02.log",
+      "sha256": "792398316b787fa3e5074cbf4ec0041d10edf06217b65115716d52de002c92c8",
+      "bytes": 6459,
+      "lines": 53
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/receipt.json",
+      "sha256": "9ad615753f62b8d2015a6f51d7447489b51e15e7559cbc6af675f3aed5d28526",
+      "bytes": 17560,
+      "lines": 342
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/verify_and_replay.py",
+      "sha256": "178352b1b02996dc847ec8d7caf9afb3f447179c7fa6f6d5407e54e7fc396725",
+      "bytes": 4710,
+      "lines": 89
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/verify_and_replay_attempt01.py",
+      "sha256": "faa123af6b468db2cc45f61e6432f234b52538f9b5925311076afdaaa8dc5212",
+      "bytes": 4738,
+      "lines": 89
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_MEMORY_CURRENT_PUBLICATION_REVIEW.md",
+      "sha256": "426af62b6ca87934f69fad715f690652373c6fcdefb318f8ab9cb4237872e56d",
+      "bytes": 18555,
+      "lines": 302
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/CHECKPOINT.md",
+      "sha256": "46891fbc2e43aa6cc24e5b4a69e582e7b9c9e40a057a8598e0a34df263377b90",
+      "bytes": 2806,
+      "lines": 45
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/DEVELOPMENT_LOG.md",
+      "sha256": "0286f56ab8dc5affbb2a82944becc1e686f0bd955876055023baa04b0a7e739b",
+      "bytes": 2490,
+      "lines": 37
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/composition_controls.json",
+      "sha256": "8dd9655c6ef302c380a7a138b1b5a4c3c0c751ce2a22312cd59fe91d7085aafb",
+      "bytes": 89231,
+      "lines": 2370
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/composition_controls.log",
+      "sha256": "ddd337a012791e6d1ce62181e2b6d86b61b105fd56e83ed4985ced7ca10de27c",
+      "bytes": 4279,
+      "lines": 58
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/composition_controls.py",
+      "sha256": "6f409349b6461d55c43f71689923912c5efd9dcef6615aef170b6cfb1a2c4203",
+      "bytes": 14430,
+      "lines": 266
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/execution.json",
+      "sha256": "00d586acf6f3df1e794568555c03ed51bcc707b53f1043d50b4aa0adb8a89eb2",
+      "bytes": 671,
+      "lines": 14
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/reused_evidence.json",
+      "sha256": "e3839986cb61417b64b046b36a07545d8c98e1cc6c1d51229cb1a714a9921697",
+      "bytes": 2479,
+      "lines": 51
+    }
+  ],
+  "controls_summary": {
+    "total": 921,
+    "chunks": 59,
+    "source_fragments": 29,
+    "source_substitutions": 36,
+    "tagged_blocks": 70,
+    "literal_helpers": 5
+  },
+  "tagged_mathematical_blocks": {
+    "exact": 68,
+    "restated": [
+      "G2",
+      "G3"
+    ],
+    "restatement_basis": "Complete unchanged W1-W9 same-space proof and exact norm-one/weighted conclusions."
+  },
+  "wrapper_controls": {
+    "actual_main_function": true,
+    "synthetic_success_blocks": 3,
+    "fresh_namespace_function_globals_guard_and_order": true,
+    "expected_failures": [
+      "hash_mismatch",
+      "body_assertion",
+      "body_exception",
+      "compile_failure"
+    ],
+    "later_helper_aborted_and_final_PASS_suppressed": true,
+    "full_tracebacks_in_log": true,
+    "author_math_helpers_executed": false,
+    "new_scientific_source_mutant_runs": false
+  },
+  "execution": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/composition_controls.py"
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011",
+    "started_utc": "2026-10-11T20:40:41.440366+00:00",
+    "ended_utc": "2026-10-11T20:40:41.498340+00:00",
+    "wall_seconds": 0.057986542116850615,
+    "timeout_seconds": 30,
+    "exit_code": 0,
+    "helper_sha256": "6f409349b6461d55c43f71689923912c5efd9dcef6615aef170b6cfb1a2c4203",
+    "log_sha256": "ddd337a012791e6d1ce62181e2b6d86b61b105fd56e83ed4985ced7ca10de27c"
+  },
+  "historical_recovery": {
+    "index": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_composition/pre_extension/INDEX.json",
+      "sha256": "b4e2f24dc1331fe67f4bdab2cd36acb7e7a2a23051526b933687e5c278f89027",
+      "bytes": 7440,
+      "lines": 102
+    },
+    "recovered_records": 16,
+    "exact_current_note_and_primary_reconstructed": true,
+    "substantive_review_of_every_historical_item": false
+  },
+  "source_reviews_reused": "M c8dbb786..., W a2bb951a..., G 2867fc11... with exact dependency addendum, R 8eb1d81e..., prior P composition 07602142...; exact records retained above and in report.",
+  "parent_reading": "Prior lines 1-103 and canonical Section 7 lines 393-472 only at 9f551fc8...; no new full reading/review of all 1280 lines.",
+  "Kato_import": "Previously inspected exact archived PDF 12ce9d67...; all five extracted pages and original pages 260/263. Same hypotheses/conventions checked by composition, no new theorem import/network lookup.",
+  "author_replay": "Recorded five-block success inspected and bound; not replayed or counted as independent continuum evidence.",
+  "control_failures": "Formal controls passed first run. Four synthetic failures were intentional. Read-only inspection/launch path mistakes are documented in DEVELOPMENT_LOG.md; no frozen-file or helper change followed.",
+  "limitations": [
+    "No independent recertification of own earlier source proofs.",
+    "No continuum theorem inferred from finite or floating controls.",
+    "No convergence rate or explicit final-sign onset from the W(T) limit.",
+    "Uniform selected-datum c0 is not arbitrary-vector coercivity.",
+    "No global direct-integral trace-class premise or uniform scattering time over kappa.",
+    "No future delivery pack, cache, Lean coverage, scientific mutation evidence, audit disposition or landing certified."
+  ],
+  "editable_prompt_files_changed": [],
+  "repository_files_changed": [],
+  "network_actions": [],
+  "delegation": false,
+  "model_or_reasoning_changed": false,
+  "writes": "Only EXCLUDED_WALK_MEMORY_CURRENT_PUBLICATION_REVIEW.md and memory_current_publication_review/.",
+  "next_decision": "Bounded review complete. Any later publication/delivery changes require their own source-bound refresh."
+}

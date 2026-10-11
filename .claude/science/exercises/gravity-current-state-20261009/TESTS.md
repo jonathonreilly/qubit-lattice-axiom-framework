@@ -1089,3 +1089,72 @@ The phrase "interactions not nearest-neighbour (against Admissibility)" in the R
 - The measure-zero premise was wrong for codimension-1 walls.
 - G2 is as expected: exponential suppression, c of order 1.
 - G3 adds a requirement that was not foreseen: the momentum that feeds the shift must equal the energy current, which forces SLAC matter.
+
+## Lane RC: carrying the energy current (owner, 2026-10-11)
+
+**Owner request:** "continue with the next tests". This lane follows lane RG's open items. It is a test setting only, and nothing here is recorded in the axiom memo.
+
+### What lane RG left
+The shift source must equal the energy current. Two refereed results set this up:
+- G3: div P_shift = div J_E.
+- The RN L3 referee: the equality holds only up to divergence-free improvements.
+
+So feeding the shift needs a conserved total energy current whose one-particle symbol is E∇E, i.e. ballistic energy transport. If that momentum is the sawtooth, the dispersion must be exactly SLAC, and the interactions must be free of umklapp.
+
+### Probes
+All three run in parallel on Claude Opus 5.5 at xhigh (same model family as the supervisor).
+
+**C1. Reduction and emergent SLAC bands.**
+- (a) Prove or refute the reduction: (shift-source closure) + (odd collision invariant on an umklapp-free law) ⇒ f is linear on the lifted zone ⇒ E² = c²|k|² + const exactly.
+- (b) Can a nearest-neighbour network of finitely many fields per site produce an exact SLAC band as an emergent quasiparticle band? Examples: a polaron, or a band dressed by gapless mediators. Candidate obstruction: k is transcendental over the field of trigonometric polynomials, so no eigenvalue branch of a finite trig-polynomial matrix equals √(m² + c²k²) on an open set.
+- (c) Readout Q1: the best approximation error to the SLAC band as a function of network depth n.
+
+**C2. Strong-coupling candidates.** The aim is the open corner of lane RG. Survey exactly solvable or strongly coupled lattice models in d ≥ 2 and ask whether any has an exactly conserved total energy current, i.e. ballistic thermal transport at T > 0 in the thermodynamic limit. Candidates:
+- the Kitaev honeycomb model (free Majoranas in a static Z2 flux);
+- toric-code-type and fracton models;
+- free-fermion-like models with interactions;
+- models with extensively many local conserved quantities.
+
+For each candidate:
+- compute [H, J_E] exactly, by operator algebra or exact diagonalization on clusters;
+- search linear spaces of local improvements for a conserved current;
+- estimate the Drude weight with finite-size scaling.
+
+Restricting conservation to one sector does not count as exact.
+
+**C3. Gravity-side closure for free matter** (lane RN L1's open item).
+- Search for a metric-dependent local completion that makes the full O(κ) constraint algebra of the free scalar close with non-constant h: a seagull plus h-dependent corrections to the constraints, within a stated ansatz of range and polynomial order.
+- Prior art: Bahr and Dittrich showed that discretization breaks diffeomorphism symmetry on curved backgrounds, which turns constraints second class. Compare with the RN L1 referee's unitary seagull.
+
+### Fixed readings
+**C1**
+- **PASS:** a finite network gives an exact SLAC band.
+- **FAIL:** the reduction holds, and the impossibility is proved for the stated class (finite-component quadratic networks, plus any further class stated).
+- **INCONCLUSIVE:** otherwise.
+- **Q1 is recorded as a number.**
+
+**C2**
+- **PASS:** an interacting nearest-neighbour model in d ≥ 2, stated explicitly, has an exactly conserved local or quasi-local total energy current in all sectors. This must be shown by an exact operator identity plus a Drude weight that stays nonzero under finite-size scaling.
+- **FAIL:** every candidate examined has [H, J_E] ≠ 0, and no improved local current is conserved within the searched spaces. Bounded to the candidates examined.
+- **INCONCLUSIVE:** otherwise.
+
+**C3**
+- **C-PASS:** a local completion within the stated ansatz closes the O(κ) algebra for non-constant h.
+- **C-FAIL:** it is proved impossible within the ansatz.
+- **INCONCLUSIVE:** otherwise.
+
+### Lane verdict
+- **PASS** needs both C1 or C2 PASS and C3 C-PASS.
+- **FAIL** needs either:
+  - C1 FAIL and C2 FAIL (refereed), or
+  - C3 C-FAIL (refereed) on a class that free matter cannot avoid.
+- **INCONCLUSIVE:** otherwise.
+
+### Supervisor expectation (registered before any probe returns)
+- **C1:** the reduction holds, and the transcendence obstruction makes exact SLAC bands impossible for finite networks. FAIL, with the approximation error exponential in depth.
+- **C2:** the Kitaev honeycomb conserves the current only within flux sectors, and at T > 0 flux scattering spoils it. No candidate passes. FAIL (bounded), or INCONCLUSIVE if the survey is thin.
+- **C3:** following Bahr–Dittrich, a fixed lattice cannot close the hypersurface-deformation algebra beyond uniform strain. C-FAIL within the ansatz, or INCONCLUSIVE.
+- **Lane:** FAIL (bounded).
+
+### Rules
+Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.

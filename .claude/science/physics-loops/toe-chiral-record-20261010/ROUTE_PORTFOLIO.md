@@ -147,3 +147,9 @@ parity-kernel coefficients and a nonzero excluded coefficient, and
 every nonzero vector in either span has that span or the other span
 as its partner kernel. It does not take a vector outside the two
 spans, and it does not classify the 300-dimensional affine space.
+
+Cycle 33 takes the equal-coefficient line through the chirality cap,
+the transverse-sign cap, and the matched cross. A nonzero scale has
+partner rank 10, so the only ten-kernel partner is 0. It does not
+take a different ratio of those three kernels, and it does not
+classify the 300-dimensional affine space.

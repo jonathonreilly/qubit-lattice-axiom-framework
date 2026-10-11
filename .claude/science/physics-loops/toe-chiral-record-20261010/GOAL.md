@@ -127,3 +127,9 @@ on `{1, 3}`. The swapped-orthogonal vector at heights 1 and 2 has
 centre pairs `(-2, 0)` and `(0, 2)`. The same vectors at heights 1
 and 3 have witness cross sum `-4`. A vector outside both spans is
 not in this count. The ten-kernel coefficient span is not classified.
+Cycle 33 shows that the equal-coefficient line through the chirality
+cap, the transverse-sign cap, and the matched cross lies outside both
+spans. A nonzero scale has partner rank 10 on every ordered height
+pair, so the only ten-kernel partner is 0. The witness cross sums are
+`4` and `8`. A different ratio of these three kernels is not in this
+count. The ten-kernel coefficient span is not classified.

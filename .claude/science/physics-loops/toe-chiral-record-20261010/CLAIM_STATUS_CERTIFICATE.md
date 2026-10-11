@@ -665,3 +665,25 @@ pairs `{1, 2}` and `{2, 3}` and to the other span on `{1, 3}`. The
 witness cross sums are `0` and `-4`. A vector outside both spans is
 outside the ansatz. The ten-kernel coefficient span is not classified.
 The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 33
+
+claim_id: chiral_pair_chi_ts_matched_line_cross_moments_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); equal coefficients on the chirality cap, the transverse-sign cap, and the matched cross; witness directions (-1, 0, 0) and (0, -1, 0)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The parity kernels are the cycle-29 note. The ten-kernel basis is the cycle-26 note. The two ratio spans are the cycle-32 note. No formation rate is used.
+
+The equal-coefficient line lies outside both ratio spans. A nonzero
+scale has partner rank 10 on every ordered height pair, so the only
+ten-kernel partner is 0. The witness cross sums are `4` and `8`. A
+different ratio of these three kernels is outside the ansatz. The
+ten-kernel coefficient span is not classified. The 300-dimensional
+affine space is not classified.

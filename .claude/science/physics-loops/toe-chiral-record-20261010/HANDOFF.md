@@ -370,16 +370,28 @@ at height 2. The centre pairs on `-e_x` and `-e_y` are `(-2, 0)` and
 both spans is not in this count. The ten-kernel coefficient span is
 not classified. Runner `PASS=10 FAIL=0`.
 
+Cycle 33. On the same alphabet the equal-coefficient line through the
+chirality cap, the transverse-sign cap, and the matched cross lies
+outside both ratio spans, because the sum has chirality coefficient 1
+and both spans have chirality coefficient 0. A nonzero scale has
+partner rank 10 on every ordered height pair, so the only ten-kernel
+partner is 0. At coefficient 1 the bond on `-e_x` and `-e_y` against
+the height-2 chirality cap has centre pairs `(2, 1)` and `(-2, -1)`
+and kernel cross sum `4`. Twice the line has centre pairs `(4, 1)` and
+`(-4, -1)` and kernel cross sum `8`. A different ratio of these three
+kernels is not in this count. The ten-kernel coefficient span is not
+classified. Runner `PASS=7 FAIL=0`.
+
 ## Next exact action
 
-Decide whether the sum of the chirality cap, the transverse-sign cap,
-and the matched transverse cross can pair with a nonzero ten-kernel
-vector and still have every cross moment equal to 0. That vector lies
-outside both ratio spans. Do not claim the ten-kernel coefficient
-span is settled. Do not claim the 300-dimensional affine space is
-classified. Do not repeat the bond-space dimension count. Do not
-return to the modulus-3 triple. Do not invent a formation rate. Do not
-return to shells, plaquette corner weights, or the `(0,1,2)` and
+Decide whether the chirality cap plus twice the transverse-sign cap
+plus the matched transverse cross can pair with a nonzero ten-kernel
+vector and still have every cross moment equal to 0. That ratio is
+outside the equal-coefficient line. Do not claim the ten-kernel
+coefficient span is settled. Do not claim the 300-dimensional affine
+space is classified. Do not repeat the bond-space dimension count. Do
+not return to the modulus-3 triple. Do not invent a formation rate. Do
+not return to shells, plaquette corner weights, or the `(0,1,2)` and
 `(1,1,2)` alphabets.
 
 ## Cleanup

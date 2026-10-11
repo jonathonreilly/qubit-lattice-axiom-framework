@@ -334,3 +334,14 @@ centre pairs `(-2, 0)`, `(0, 2)`, `(0, 0)`, and `(-2, 2)`.
 Family not used: a vector outside the two spans, including the sum of
 the chirality cap, the transverse-sign cap, and the matched cross.
 That remains open. The 300-dimensional affine space is not this family.
+
+Cycle 33 target contract: whether the equal-coefficient line through
+the chirality cap, the transverse-sign cap, and the matched cross has
+a nonzero ten-kernel partner.
+
+Family used: the six partner ranks, the doubling of every partner row,
+and the witness cross sums `4` and `8`.
+
+Family not used: a different ratio, including twice the transverse-sign
+cap. That remains open. The 300-dimensional affine space is not this
+family.

@@ -215,3 +215,10 @@ at heights 1 and 2 are `(-2, 0)` and `(0, 2)`. The same vectors at
 heights 1 and 3 have kernel cross sum `-4`. It does not classify a
 vector outside the two spans, and it does not classify the
 300-dimensional affine space.
+
+Cycle 33 prunes the reading that the sum of the chirality cap, the
+transverse-sign cap, and the matched cross has a nonzero partner.
+A nonzero scale has partner rank 10. The witness kernel cross sums
+are `4` and `8`. It does not classify a different ratio of those
+three kernels, and it does not classify the 300-dimensional affine
+space.

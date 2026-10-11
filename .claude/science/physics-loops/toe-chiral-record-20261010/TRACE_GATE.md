@@ -530,3 +530,20 @@ coefficients and a nonzero excluded coefficient, and every nonzero
 vector has a three-dimensional partner kernel. A vector outside both
 spans stays outside this ansatz. The ten-kernel coefficient span stays
 open.
+
+## Cycle 33
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether the chirality cap plus twice the transverse-sign cap plus the matched transverse cross can pair with a nonzero ten-kernel vector and still have every cross moment equal to 0. That ratio is outside the equal-coefficient line. Do not claim the ten-kernel coefficient span is settled."
+```
+
+The equal-coefficient line has partner rank 10 on every ordered height
+pair, so a nonzero scale pairs only with 0. The witness cross sums are
+`4` and `8`. A different ratio stays outside this ansatz. The
+ten-kernel coefficient span stays open.

@@ -299,3 +299,12 @@ are `4` and `2`. Inside the span, a nonzero swapped-dot or scaled
 coefficient has a nonzero partner exactly on one ratio span. It does
 not classify a vector outside that span, and it does not classify the
 300-dimensional affine space. This is not an N-gate no-go.
+
+Cycle 44 prunes the reading that a vector with a nonzero even part and
+a nonzero part in one ratio span, or the chirality cap plus that span,
+has a nonzero ten-kernel partner. Both cases have partner rank 10. The
+witness kernel cross sums are `-2` and `-4`. Inside the sum, a nonzero
+swapped-dot or scaled coefficient has a nonzero partner exactly on that
+ratio span. It does not classify a vector that meets both ratio spans,
+and it does not classify the 300-dimensional affine space. This is not
+an N-gate no-go.

@@ -929,3 +929,26 @@ cross sums are `4` and `2`. A vector outside the span of the chirality
 cap and the two ratio spans is outside the ansatz. The ten-kernel
 coefficient span is not classified. The 300-dimensional affine space is
 not classified.
+
+# Claim status certificate — cycle 44
+
+claim_id: chiral_pair_even_one_span_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); even space, chirality cap, and one ratio span; witness directions (-1, 0, 0) and (0, -1, 0)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space and its odd partner are named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+A nonzero vector in the sum of the even space, the chirality cap, and
+one ratio span has a nonzero ten-kernel partner if and only if it lies
+in exactly one summand. A nonzero swapped-dot or scaled coefficient has
+such a partner exactly when the vector lies in the ratio span. The
+witness cross sums are `-2` and `-4`. A vector that meets the other
+ratio span is outside the ansatz. The ten-kernel coefficient span is
+not classified. The 300-dimensional affine space is not classified.

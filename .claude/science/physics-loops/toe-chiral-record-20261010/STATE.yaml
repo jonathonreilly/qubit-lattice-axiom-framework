@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 43
-runner_result: PASS=8 FAIL=0
+cycle: 44
+runner_result: PASS=7 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Decide whether a vector outside the span of the chirality cap and the two ratio spans, with a nonzero coefficient on the swapped transverse dot or the scaled cross-dot kernel, has a ten-kernel partner other than 0. Inside that span, such a partner exists exactly on one ratio span. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
+next_exact_action: Decide whether a vector that meets both ratio spans and has a nonzero even part, with a nonzero coefficient on the swapped transverse dot or the scaled cross-dot kernel, has a ten-kernel partner other than 0. Inside the even space, the chirality cap, and one ratio span, such a partner exists exactly on that ratio span. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

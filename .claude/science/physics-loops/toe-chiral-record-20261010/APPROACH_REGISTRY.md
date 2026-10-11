@@ -461,3 +461,15 @@ sums `4` and `2`.
 Family not used: a vector outside the span of the chirality cap and the
 two ratio spans. That remains open. The 300-dimensional affine space is
 not this family.
+
+Cycle 44 target contract: whether a vector in the even space, the
+chirality cap, and one ratio span, with a nonzero coefficient on the
+swapped transverse dot or the scaled cross-dot kernel, has a ten-kernel
+partner other than 0.
+
+Family used: the seven-generator partner map, its rank-46 kernel, and
+the witness cross sums `-2` and `-4`.
+
+Family not used: a vector that meets both ratio spans and has a nonzero
+even part. That remains open. The 300-dimensional affine space is not
+this family.

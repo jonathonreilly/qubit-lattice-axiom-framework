@@ -212,3 +212,8 @@ chirality cap. A nonzero vector in the sum has a nonzero ten-kernel
 partner exactly on one span, and the cap plus a nonzero sum vector has
 partner rank 10. It does not take a vector outside that span, and it
 does not classify the 300-dimensional affine space.
+
+Cycle 44 takes the even space, the chirality cap, and one ratio span.
+A nonzero vector has a nonzero ten-kernel partner exactly on one
+summand. It does not take a vector that meets the other ratio span, and
+it does not classify the 300-dimensional affine space.

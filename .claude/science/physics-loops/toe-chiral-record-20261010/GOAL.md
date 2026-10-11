@@ -208,3 +208,10 @@ The swapped transverse dot and the scaled cross-dot kernel share that
 block kernel. The witness cross sums are `4` and `2`. A vector outside
 the span of the chirality cap and the two ratio spans is not in this
 count. The ten-kernel coefficient span is not classified.
+Cycle 44 shows that a nonzero vector in the sum of the even space, the
+chirality cap, and one ratio span has a nonzero ten-kernel partner if
+and only if it lies in exactly one summand. A nonzero swapped-dot or
+scaled coefficient has such a partner exactly on that ratio span. The
+witness cross sums are `-2` and `-4`. A vector that meets the other
+ratio span is not in this count. The ten-kernel coefficient span is not
+classified.

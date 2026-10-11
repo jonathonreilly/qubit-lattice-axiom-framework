@@ -2549,3 +2549,72 @@ Conformance, section by section:
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
     The loop-pack directory is skipped by that lint. The full audit
     pipeline was not run.
+
+## 2026-10-11 author check, cycle 44
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms on origin/main at the base `0b208e91cfc`, the
+   cycle-39 even-span note, and the cycle-32 ratio-span note, both
+   notes on this branch. The seven-generator kernel and the witness
+   sums are computed in this runner. The order-blind converse is not
+   applied. The even space and its odd partner are named in cycle 39.
+   The two spans are named in cycle 32. The partner kernel of the even
+   space alone is not the claim of this note. The dimension count of
+   the soldered bond space is not repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_even_one_span_partner_kernel_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `c98edd2f397242e22641b66f9b3ee2e5523a26f443ccab17d2df65164dfb23c0`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=7 FAIL=0`.
+   Elapsed 21.33 seconds.
+3. Scope. The even space, the chirality cap, and one ratio span, on the
+   48 signed permutations of `(1, 2, 3)`. A nonzero vector in the sum
+   has a nonzero ten-kernel partner if and only if it lies in exactly
+   one summand. The seven-generator map has rank 46 and nullity 24.
+   The odd space, the even space, and the partner span meet pairwise
+   only at 0. A nonzero swapped-dot or scaled coefficient has a
+   nonzero partner exactly when the vector lies in the ratio span. The
+   witness centre pairs are `(-1, 0)` and `(-1, 2)` with cross sum
+   `-2`, and `(-3, 0)` and `(1, -4)` with cross sum `-4`. A vector
+   that meets the other ratio span is outside the ansatz. The
+   ten-kernel coefficient span is not classified. The full soldered
+   bond space is not classified. Status line `proposed_retained`.
+   Surface status `bounded-support`.
+4. N-gate does not apply. The artifact classifies vectors inside the
+   even space, the chirality cap, and one ratio span. It does not claim
+   that no vector meeting both ratio spans has a nonzero partner.
+5. Obligations are in the note. The missing lemma is whether a vector
+   that meets both ratio spans and has a nonzero even part, with a
+   nonzero coefficient on the swapped transverse dot or the scaled
+   cross-dot kernel, has a ten-kernel partner other than 0.
+6. Mutations, each on a scratch copy, exited 1. Requiring the
+   seven-generator rank to be 40 gave `PASS=6 FAIL=1` on the product
+   map. Requiring the swapped-orthogonal cross sum to be 0 gave
+   `PASS=6 FAIL=1` on the centre-pair check. Requiring the sum of the
+   even space, the chirality cap, and one span to have rank 6 gave
+   `PASS=6 FAIL=1` on the membership check. An independent generator
+   closure, recomputed in this session, gave 24 rotations, all of
+   determinant 1, alphabet 48, and orbit 24, with `(2, 1, 3)` and
+   `(1, 2, -3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Four markdown links. The runner link points at the primary runner.
+   One note link points at the minimal axioms on origin/main. Two point
+   at the cycle-39 even-span note and the cycle-32 ratio-span note on
+   this branch. Manifest node_count 6913 and edge_count 15551. The new
+   node has out_degree 3 and deps_hash `8817e2ad5d19`. Dependencies are
+   `minimal_axioms`, the cycle-39 even-span note, and the cycle-32
+   ratio-span note. `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the even space and the two spans, and states that the
+   order-blind converse is not applied and that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=7 FAIL=0`, seven-generator
+    rank 46, centre pairs `(-1, 0)` and `(-1, 2)` with cross sum `-2`,
+    and `(-3, 0)` and `(1, -4)` with cross sum `-4`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
+    The loop-pack directory is skipped by that lint. The full audit
+    pipeline was not run.

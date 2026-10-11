@@ -559,17 +559,36 @@ sum `2`. A vector outside the span of the chirality cap and the two
 ratio spans is not in this count. The ten-kernel coefficient span is
 not classified. Runner `PASS=8 FAIL=0`.
 
+Cycle 44. On the same alphabet the even space, the chirality cap, and
+one ratio span form a 7-dimensional sum. The seven-generator map has
+rank 46 and nullity 24. The kernel is the product of the odd space on
+the even blocks, the even space on the chirality block, and the partner
+ratio span on the span blocks. Those three spaces meet pairwise only at
+0, so a nonzero vector has a nonzero ten-kernel partner exactly on one
+summand. A nonzero swapped-dot or scaled coefficient has such a partner
+exactly when the vector lies in the ratio span. At heights 1 and 2 the
+bond on `-e_x` and `-e_y` has lefts `(-1, -2, -3)` and `(-1, -2, 3)`.
+The sign product plus the swapped-orthogonal generator, against that
+generator, has rights `(1, -2, -3)` and `(3, 2, -1)`, centre pairs
+`(-1, 0)` and `(-1, 2)`, and kernel cross sum `-2`. The sign product
+plus the cap generator, against that generator, has rights `(1, -3, -2)`
+and `(-3, 2, 1)`, centre pairs `(-3, 0)` and `(1, -4)`, and kernel cross
+sum `-4`. A vector that meets the other ratio span is not in this count.
+The ten-kernel coefficient span is not classified. Runner
+`PASS=7 FAIL=0`.
+
 ## Next exact action
 
-Decide whether a vector outside the span of the chirality cap and the
-two ratio spans, with a nonzero coefficient on the swapped transverse
-dot or the scaled cross-dot kernel, has a ten-kernel partner other than
-0. Inside that span, such a partner exists exactly on one ratio span.
-Do not claim the ten-kernel coefficient span is settled. Do not claim
-the 300-dimensional affine space is classified. Do not repeat the
-bond-space dimension count. Do not return to the modulus-3 triple. Do
-not invent a formation rate. Do not return to shells, plaquette corner
-weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
+Decide whether a vector that meets both ratio spans and has a nonzero
+even part, with a nonzero coefficient on the swapped transverse dot or
+the scaled cross-dot kernel, has a ten-kernel partner other than 0.
+Inside the even space, the chirality cap, and one ratio span, such a
+partner exists exactly on that ratio span. Do not claim the ten-kernel
+coefficient span is settled. Do not claim the 300-dimensional affine
+space is classified. Do not repeat the bond-space dimension count. Do
+not return to the modulus-3 triple. Do not invent a formation rate. Do
+not return to shells, plaquette corner weights, or the `(0,1,2)` and
+`(1,1,2)` alphabets.
 
 ## Cleanup
 

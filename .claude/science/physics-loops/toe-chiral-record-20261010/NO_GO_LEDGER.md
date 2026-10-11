@@ -179,3 +179,13 @@ moment `97/96`. It does not prune the height-1 chirality cap plus the
 height-2 sign-product cap, whose two-direction means equal 1. It does
 not classify the coefficient span of two bases, and it does not
 classify the 300-dimensional affine space.
+
+Cycle 29 prunes the reading that the two cap mixtures are the whole
+cross-moment story inside the parity span. Odd and even spaces have
+dimensions 4 and 3. Two nonzero odd vectors have a nonzero cross
+moment, and so do two nonzero even vectors. An odd vector with an
+even vector does not. The witnesses are moments `97/96` and `95/96`,
+and the parallel-oblique sum with the sign product. It does not
+classify a coefficient on the matched cross, the swapped transverse
+dot, or the scaled cross-dot kernel, and it does not classify the
+300-dimensional affine space.

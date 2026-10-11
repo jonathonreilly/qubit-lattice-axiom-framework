@@ -575,3 +575,25 @@ two-neighbour moment `97/96`. The height-1 chirality cap plus the
 height-2 sign-product cap has every two-direction mean equal to 1.
 The coefficient span of two opposite-height bases is not classified.
 The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 29
+
+claim_id: chiral_pair_cross_height_parity_span_cross_moments_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); parity span of two opposite-height bases; witness far ends (1, -3, -2), (-3, 2, -1), (2, -1, -3), and (-1, 3, -2)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: Theorem 2's converse is applied only to the odd-even mixture at coefficient 1/2. The ten-kernel basis is the cycle-26 note. Bond symmetry on one height is the cycle-27 note. No formation rate is used.
+
+Inside the parity span, every cross moment vanishes exactly when the
+odd coefficient vectors are not both nonzero and the even coefficient
+vectors are not both nonzero. The matched cross, the swapped transverse
+dot, and the scaled cross-dot kernel are outside the ansatz. The
+ten-kernel coefficient span is not classified. The 300-dimensional
+affine space is not classified.

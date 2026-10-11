@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_cross_height_parity_span_cross_moments_2026_10_10.py
+runner_sha256: c594649216b0c60cc5c503203797e9d66a699374e89f203811e7fa2ed8b46b07
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.39
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each height-partner pair has odd dimension 4, even dimension 3, and trivial intersection
+PASS the odd-odd and even-even products have rank 25 on each height pair
+PASS both-odd and both-even cap pairs have moment 97/96, and swapped at heights 1 and 2 has moment 95/96
+PASS an odd vector with an even vector has every cross moment equal to 0
+PASS swapped kernels pass at heights 1 and 3, and heights 2 and 3 have witness moment 95/96
+PASS the odd-even mixture at coefficient 1/2 is strictly positive, with means 1 and at most two live directions
+CHI moment 97/96
+PROD moment 97/96
+SWAPPED 1,2 moment 95/96
+SWAPPED 2,3 moment 95/96
+MIXTURE values 1/2 1 3/2
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

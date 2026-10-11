@@ -121,3 +121,9 @@ chirality caps have moment `97/96`. The chirality cap plus the
 sign-product cap has every two-direction mean equal to 1. It does not
 classify the coefficient span of two bases, and it does not classify
 the 300-dimensional affine space.
+
+Cycle 29 takes the parity span of seven kernels at two absolute
+heights. The odd-odd and even-even products have rank 25. It does not
+take the matched cross, the swapped transverse dot, or the scaled
+cross-dot kernel, and it does not classify the 300-dimensional affine
+space.

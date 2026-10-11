@@ -326,3 +326,19 @@
   identity is the cycle-27 note. The bond-space dimension count is not
   repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 29
+
+- The ansatz is the rational span of seven named kernels. The matched
+  cross, the swapped transverse dot, and the scaled cross-dot kernel
+  are outside it. A general ten-kernel coefficient pair is not in this
+  count.
+- Odd and even are the two-centre sign conditions for a named height
+  and partner. The split depends on that pair of heights.
+- The one-site average is the uniform average on the 48-point alphabet.
+- Order-blindness is Theorem 2's converse, applied only to the
+  parallel-oblique sum plus the sign product at coefficient `1/2`.
+  Bond symmetry on one height is the cycle-27 note. The ten-kernel
+  basis is the cycle-26 note. The bond-space dimension count is not
+  repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

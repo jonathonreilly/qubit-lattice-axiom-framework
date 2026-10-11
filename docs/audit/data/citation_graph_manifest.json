@@ -1,6 +1,6 @@
 {
- "edge_count": 15494,
- "node_count": 6897,
+ "edge_count": 15498,
+ "node_count": 6898,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2936,6 +2936,10 @@
   },
   "chiral_pair_cross_height_cap_mixture_product_means_bounded_theorem_note_2026-10-10": {
    "deps_hash": "47c28a336ede",
+   "out_degree": 4
+  },
+  "chiral_pair_cross_height_parity_span_cross_moments_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "96b7746df63d",
    "out_degree": 4
   },
   "chiral_pair_height_line_order_blind_cut_bounded_theorem_note_2026-10-10": {

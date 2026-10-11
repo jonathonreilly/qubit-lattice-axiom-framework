@@ -98,4 +98,9 @@ this count. Cycle 28 shows that the height-1 and height-2 chirality
 caps at coefficient `1/2` have two-neighbour moment `97/96`, while the
 height-1 chirality cap plus the height-2 sign-product cap has every
 two-direction mean equal to 1. The coefficient span of two bases is
-not classified.
+not classified. Cycle 29 names the parity span of seven kernels inside
+each opposite-height basis. Odd and even spaces have dimensions 4 and
+3. Cross moments vanish exactly when the odd parts are not both
+nonzero and the even parts are not both nonzero. The matched cross,
+the swapped transverse dot, and the scaled cross-dot kernel lie
+outside that span. The ten-kernel coefficient span is not classified.

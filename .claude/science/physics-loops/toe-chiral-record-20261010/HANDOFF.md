@@ -301,12 +301,31 @@ record meets at most two live directions, so every neighbour product of
 that second mixture has mean 1. These two mixtures do not classify the
 coefficient span of two bases. Runner `PASS=9 FAIL=0`.
 
+Cycle 29. On the same alphabet the parity span is the rational span of
+the chirality cap, the transverse-sign cap, their sign product, the
+swapped transverse cross, the parallel transverse dot, the matched
+oblique dot, and the orthogonal swapped cross. The matched transverse
+cross, the swapped transverse dot, and the scaled cross-dot kernel lie
+outside it. For each height and partner, the span splits into an odd
+space of dimension 4 and an even space of dimension 3. Cross moments
+of two parity-span vectors vanish exactly when the odd parts are not
+both nonzero and the even parts are not both nonzero. The height-1 and
+height-2 chirality caps, and the two sign-product caps, have moment
+`97/96`. The swapped crosses at heights 1 and 2, and at heights 2 and
+3, have moment `95/96`. The swapped crosses at heights 1 and 3 have
+every cross moment equal to 0. The parallel-oblique sum plus the
+height-2 sign product, at coefficient `1/2`, takes values `1/2`, `1`,
+and `3/2` and has every cross moment equal to 0. The ten-kernel
+coefficient span is not classified. Runner `PASS=9 FAIL=0`.
+
 ## Next exact action
 
-Decide which rational coefficient pairs on two opposite-height bases
-have every cross moment equal to 0. The two exhibited cap mixtures do
-not classify that span. Do not claim the 300-dimensional affine space
-is classified. Do not repeat the bond-space dimension count. Do not
+Decide whether a nonzero coefficient on the matched cross, the swapped
+transverse dot, or the scaled cross-dot kernel can pair with a nonzero
+vector at the other height and still have every cross moment equal to
+0. The parity span is settled. Do not claim the ten-kernel coefficient
+span is settled. Do not claim the 300-dimensional affine space is
+classified. Do not repeat the bond-space dimension count. Do not
 return to the modulus-3 triple. Do not invent a formation rate. Do not
 return to shells, plaquette corner weights, or the `(0,1,2)` and
 `(1,1,2)` alphabets.

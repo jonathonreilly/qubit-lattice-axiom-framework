@@ -1478,3 +1478,71 @@ Conformance, section by section:
     are `(-1, -2, -3)` and `(-1, -2, 3)`, and their cross sum is `1/2`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
     the loop-pack prose. The full audit pipeline was not run.
+
+## 2026-10-11 author check, cycle 29
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`, the cycle-27 opposite-height
+   mixture note, and the cycle-26 scaled cross-dot basis note, both on
+   this branch. The odd and even bases, the rank-25 product equations,
+   and the witness moments are computed in this runner. Theorem 2's
+   converse is applied only to the odd-even mixture at coefficient
+   `1/2` and is not re-proved. The ten-kernel basis is cited from
+   cycle 26. Bond symmetry on one height is cited from cycle 27. The
+   dimension count of the soldered bond space is not repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_cross_height_parity_span_cross_moments_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `c594649216b0c60cc5c503203797e9d66a699374e89f203811e7fa2ed8b46b07`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=9 FAIL=0`.
+   Elapsed 1.39 seconds.
+3. Scope. The parity span of two opposite-height bases on the 48
+   signed permutations of `(1, 2, 3)`. Odd dimension 4, even dimension
+   3, intersection 0. Every cross moment vanishes exactly when the odd
+   coefficient vectors are not both nonzero and the even coefficient
+   vectors are not both nonzero. Witness moments `97/96` and `95/96`.
+   The odd-even mixture at coefficient `1/2` takes values `1/2`, `1`,
+   and `3/2`. The matched cross, the swapped transverse dot, and the
+   scaled cross-dot kernel are outside the ansatz. The ten-kernel
+   coefficient span is not classified. The full soldered bond space is
+   not classified. Status line `proposed_retained`. Surface status
+   `bounded-support`.
+4. N-gate does not apply. The failing moments prune both-odd and
+   both-even pairs inside the parity span. The check does not claim
+   that no further kernel outside that span has every cross moment
+   equal to 0, and a passing family is exhibited.
+5. Obligations are in the note. The missing lemma is whether a nonzero
+   coefficient on the matched cross, the swapped transverse dot, or the
+   scaled cross-dot kernel can pair with a nonzero vector at the other
+   height and still have every cross moment equal to 0.
+6. Mutations, each on a scratch copy, exited 1. Requiring the product
+   rank to be 24 gave `PASS=8 FAIL=1` on the rank-25 check. Requiring
+   the chirality moment to be 1 gave `PASS=8 FAIL=1` on the cap-moment
+   check. Requiring the heights 2 and 3 swapped moment to be 1 gave
+   `PASS=8 FAIL=1` on that witness. An independent generator closure
+   in this session gave 24 rotations, all of determinant 1, and orbit
+   24, with `(2, 1, 3)` and `(1, 2, -3)` outside the orbit.
+   `1 + (1/2)/48 = 97/96` and `1 - (1/2)/48 = 95/96`.
+7. One primary runner. No packet helper.
+8. Five markdown links. The runner link points at the primary runner.
+   Two note links point at tracked notes on origin/main. Two point at
+   the cycle-27 mixture note and the cycle-26 scaled cross-dot basis
+   note on this branch. Manifest node_count 6898 and edge_count 15498.
+   The new node has out_degree 4 and deps_hash `96b7746df63d`.
+   Dependencies are `minimal_axioms`, the 2026-09-22 note, the cycle-27
+   mixture note, and the cycle-26 scaled cross-dot basis note.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names Theorem 2's converse, the cycle-26 basis, and one-height bond
+   symmetry, and states that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=9 FAIL=0`, odd dimension
+    4, even dimension 3, product rank 25, moments `97/96` and `95/96`,
+    mixture values `1/2`, `1`, and `3/2`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
+    the loop-pack prose. The full audit pipeline was not run.

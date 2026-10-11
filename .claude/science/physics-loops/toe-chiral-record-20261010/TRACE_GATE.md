@@ -458,3 +458,20 @@ The moment `97/96` prunes the reading that every strictly positive sum
 of caps from two heights has neighbour-product mean 1. The sign-product
 mixture shows that not every cross-height sum fails. The coefficient
 span of the two bases stays open.
+
+## Cycle 29
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether a nonzero coefficient on the matched cross, the swapped transverse dot, or the scaled cross-dot kernel can pair with a nonzero vector at the other height and still have every cross moment equal to 0. Do not claim the ten-kernel coefficient span is settled."
+```
+
+The rank-25 product equations settle cross moments inside the parity
+span. Two nonzero odd parts fail, and so do two nonzero even parts.
+The three excluded kernels stay outside this ansatz. The ten-kernel
+coefficient span stays open.

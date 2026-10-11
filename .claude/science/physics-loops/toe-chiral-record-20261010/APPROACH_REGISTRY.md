@@ -284,3 +284,15 @@ plus the height-2 sign-product cap at the same coefficient.
 Family not used: a general coefficient pair on the two ten-kernel
 bases. That remains open. The 300-dimensional affine space is not
 this family.
+
+Cycle 29 target contract: which rational coefficient vectors in the
+parity spans of two opposite-height bases have every cross moment
+equal to 0.
+
+Family used: the odd and even two-centre sign conditions, the 25
+odd-odd and even-even product columns, and the witness moments
+`97/96` and `95/96`.
+
+Family not used: a nonzero coefficient on the matched cross, the
+swapped transverse dot, or the scaled cross-dot kernel. That remains
+open. The 300-dimensional affine space is not this family.

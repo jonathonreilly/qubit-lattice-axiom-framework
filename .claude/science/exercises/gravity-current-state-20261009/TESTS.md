@@ -1995,3 +1995,21 @@ Use:
 **Supervisor expectation.**
 - **RL4:** Lemma U is likely provable, given 60 decades of slack. Lemma T is harder. Expected reading: INCONCLUSIVE, or FAIL if both lemmas close.
 - **N1:** with asymptotic completeness and a mass gap, the theory's one-particle bands are isolated Bloch bands, so M1's T1 sum rule applies to them, and the S-matrix inherits the obstruction. Expected reading: FAIL (bounded, assuming a gap and asymptotic completeness).
+
+### C4 result recorded 20:51Z (N1)
+
+**Lane RN2, N1: INCONCLUSIVE, leaning FAIL.** Referee: CONFIRMED WITH CORRECTIONS (codex sol). The regular-band subclass has a rigorous bounded FAIL. Files: `agents/C4_N1_*`.
+
+**What is established, assuming** exact commutators integrate to a positive-energy Poincaré representation and obey first-moment lattice covariance:
+- The gapped vacuum is invariant.
+- Every fixed-mass spectral subspace is invariant under boosts and lattice translations.
+- Each irreducible component folds into a complete reciprocal-lattice tower, without using particle-number conservation.
+
+**A separate result:** exact closure is impossible if the theory contains a nonzero global joint (T,H) eigenband with all of the following:
+- a C¹ projector;
+- E²/2 ∈ W^{2,1}(T^d);
+- the required commutators in the strong/weak-domain sense.
+
+**What remains open:**
+- A gap plus asymptotic completeness does not supply that global-band hypothesis.
+- The d ≥ 2 index extension lacks its dimension-uniform approximate tube lemma.

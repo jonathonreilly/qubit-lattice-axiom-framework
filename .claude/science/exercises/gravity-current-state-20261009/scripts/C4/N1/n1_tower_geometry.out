@@ -1,0 +1,36 @@
+--- d=2, theta=0, M1=1.0, beta=1.0
+  |Q-theta|=(0.000 pi,0..): E_low=1.000000 next=6.362265 gap=5.362e+00 2p-thr=2.000000  #(n!=0 below 2p-thr) = 0 of 48  n=0 embedded? False
+  |Q-theta|=(0.500 pi,0..): E_low=1.862096 next=4.817324 gap=2.955e+00 2p-thr=2.543109  #(n!=0 below 2p-thr) = 0 of 48  n=0 embedded? False
+  |Q-theta|=(0.900 pi,0..): E_low=2.999063 next=3.597530 gap=5.985e-01 2p-thr=3.463290  #(n!=0 below 2p-thr) = 0 of 48  n=0 embedded? False
+  |Q-theta|=(0.990 pi,0..): E_low=3.266986 next=3.326858 gap=5.987e-02 2p-thr=3.697729  #(n!=0 below 2p-thr) = 1 of 48  n=0 embedded? False
+  |Q-theta|=(0.999 pi,0..): E_low=3.293915 next=3.299902 gap=5.987e-03 2p-thr=3.721542  #(n!=0 below 2p-thr) = 1 of 48  n=0 embedded? False
+  |Q-theta|=(1.000 pi,0..): E_low=3.296908 next=3.296908 gap=0.000e+00 2p-thr=3.724192  #(n!=0 below 2p-thr) = 1 of 48  n=0 embedded? False
+  zone-avg diag Hess(u0)/beta - 1 = [-1. -1.]  (T1 sum rule predicts -1)
+  bulk Hess_11(u0)/beta on 0.902 of zone: min 1.000000 max 1.000000
+--- d=2, theta=pi, M1=1.0, beta=1.0
+  |Q-theta|=(0.000 pi,0..): E_low=1.000000 next=6.362265 gap=5.362e+00 2p-thr=4.872290  #(n!=0 below 2p-thr) = 0 of 48  n=0 embedded? False
+  |Q-theta|=(0.500 pi,0..): E_low=1.862096 next=4.817324 gap=2.955e+00 2p-thr=4.041906  #(n!=0 below 2p-thr) = 0 of 48  n=0 embedded? False
+  |Q-theta|=(0.900 pi,0..): E_low=2.999063 next=3.597530 gap=5.985e-01 2p-thr=3.737419  #(n!=0 below 2p-thr) = 1 of 48  n=0 embedded? False
+  |Q-theta|=(0.990 pi,0..): E_low=3.266986 next=3.326858 gap=5.987e-02 2p-thr=3.724324  #(n!=0 below 2p-thr) = 1 of 48  n=0 embedded? False
+  |Q-theta|=(0.999 pi,0..): E_low=3.293915 next=3.299902 gap=5.987e-03 2p-thr=3.724193  #(n!=0 below 2p-thr) = 1 of 48  n=0 embedded? False
+  |Q-theta|=(1.000 pi,0..): E_low=3.296908 next=3.296908 gap=0.000e+00 2p-thr=3.724192  #(n!=0 below 2p-thr) = 1 of 48  n=0 embedded? False
+  zone-avg diag Hess(u0)/beta - 1 = [-1. -1.]  (T1 sum rule predicts -1)
+  bulk Hess_11(u0)/beta on 0.902 of zone: min 1.000000 max 1.000000
+--- d=3, theta=0, M1=1.0, beta=1.0
+  |Q-theta|=(0.000 pi,0..): E_low=1.000000 next=6.362265 gap=5.362e+00 2p-thr=2.000000  #(n!=0 below 2p-thr) = 0 of 342  n=0 embedded? False
+  |Q-theta|=(0.500 pi,0..): E_low=1.862096 next=4.817324 gap=2.955e+00 2p-thr=2.543109  #(n!=0 below 2p-thr) = 0 of 342  n=0 embedded? False
+  |Q-theta|=(0.900 pi,0..): E_low=2.999063 next=3.597530 gap=5.985e-01 2p-thr=3.463290  #(n!=0 below 2p-thr) = 0 of 342  n=0 embedded? False
+  |Q-theta|=(0.990 pi,0..): E_low=3.266986 next=3.326858 gap=5.987e-02 2p-thr=3.697729  #(n!=0 below 2p-thr) = 1 of 342  n=0 embedded? False
+  |Q-theta|=(0.999 pi,0..): E_low=3.293915 next=3.299902 gap=5.987e-03 2p-thr=3.721542  #(n!=0 below 2p-thr) = 1 of 342  n=0 embedded? False
+  |Q-theta|=(1.000 pi,0..): E_low=3.296908 next=3.296908 gap=0.000e+00 2p-thr=3.724192  #(n!=0 below 2p-thr) = 1 of 342  n=0 embedded? False
+  zone-avg diag Hess(u0)/beta - 1 = [-1. -1. -1.]  (T1 sum rule predicts -1)
+  bulk Hess_11(u0)/beta on 0.614 of zone: min 1.000000 max 1.000000
+--- d=3, theta=pi, M1=1.0, beta=1.0
+  |Q-theta|=(0.000 pi,0..): E_low=1.000000 next=6.362265 gap=5.362e+00 2p-thr=5.797311  #(n!=0 below 2p-thr) = 0 of 342  n=0 embedded? False
+  |Q-theta|=(0.500 pi,0..): E_low=1.862096 next=4.817324 gap=2.955e+00 2p-thr=5.119239  #(n!=0 below 2p-thr) = 1 of 342  n=0 embedded? False
+  |Q-theta|=(0.900 pi,0..): E_low=2.999063 next=3.597530 gap=5.985e-01 2p-thr=4.882408  #(n!=0 below 2p-thr) = 1 of 342  n=0 embedded? False
+  |Q-theta|=(0.990 pi,0..): E_low=3.266986 next=3.326858 gap=5.987e-02 2p-thr=4.872391  #(n!=0 below 2p-thr) = 1 of 342  n=0 embedded? False
+  |Q-theta|=(0.999 pi,0..): E_low=3.293915 next=3.299902 gap=5.987e-03 2p-thr=4.872291  #(n!=0 below 2p-thr) = 1 of 342  n=0 embedded? False
+  |Q-theta|=(1.000 pi,0..): E_low=3.296908 next=3.296908 gap=0.000e+00 2p-thr=4.872290  #(n!=0 below 2p-thr) = 1 of 342  n=0 embedded? False
+  zone-avg diag Hess(u0)/beta - 1 = [-1. -1. -1.]  (T1 sum rule predicts -1)
+  bulk Hess_11(u0)/beta on 0.614 of zone: min 1.000000 max 1.000000

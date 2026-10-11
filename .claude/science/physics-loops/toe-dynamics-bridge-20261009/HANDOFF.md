@@ -13,7 +13,8 @@ while the active science worktree changes.
 
 Active walk publication worktree:
 `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree`,
-branch `physics-loop/toe-excluded-walk-20261011`, direct frozen-main base
+branch `physics-loop/toe-projected-band-current-20261011`, based on parent #9479
+at b9b032ae790c66e762a6296a1306bfb64ae7cd70; original frozen-main base
 a13caa4885f547c8d206265b031ba7649e539fd9. It has no transport-stack dependency.
 The app worktree tool reported that this chat cwd is not a Git repository;
 standard git worktree add created the isolated branch successfully. Current
@@ -224,18 +225,19 @@ worktrees. Do not overwrite frozen proofs or the historical failed controls.
   Root read full316-line review,196-line distinct helper, complete log and
   verified all19 receipt identities. No defect. The independent packet
   explicitly excludes the separate author helper, which root did inspect.
-- spatial_prior_art is deriving a new quantitative extension, external
-  EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md / quantitative_band_current.
-  Candidate spectral estimates give transverse error <=9delta/sigma
-  +17 A_lambda sqrt(sigma)+8sigma/lambda+delta/5. The proposed explicit
-  choices sigma=2^-40 lambda^(3/2), delta=2^-68 lambda^2 may remove
-  existential onset for lambda<=1/16. Author and independent reviewer
-  spatial_kinetic_derivation are checking the full argument and margins;
-  now frozen at ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400
-  (420 lines); author receipt 2eaa2eda5f5fec364669e2d6709421a69528843bc43f55f8a1340d3a158967b5.
-  Root read the complete proof,130-line helper and7-line log and verified all7
-  receipt identities. Separate review reports no defect so far; final receipt
-  pending. Preserve all preceding frozen proofs.
+- Quantitative free-band theorem now checked: EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md
+  420 lines, ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400;
+  author receipt 2eaa2eda5f5fec364669e2d6709421a69528843bc43f55f8a1340d3a158967b5.
+  Root read the full proof,130-line helper and output. The complete329-line
+  independent review is a530a7b1507e7d22af11f08c236af865ec1c8acb004069b249c9b281bcf4cbda;
+  receipt3126e7c90f269747326d25ee3538a059411649c7206fa435d6e2bf19630d8e10.
+  Root read the122-line distinct helper/full output and verified all27 identity
+  records. Sigma=2^-40 lambda^(3/2), delta=2^-68 lambda^2 give an explicit
+  normalizable free-band packet and each-current drift at most
+  -2^-68 lambda^3/(388800 pi^2), time2^68/(20lambda^2), lambda<=1/16.
+  spatial_prior_art is composing a complete publication argument from the
+  four checked sources; FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md
+  is not frozen yet. No effective-memory premise is used there.
 - Scoped Lean module RankOneScattering.lean frozen at
   2f5260a23eecc90c6bf3fabe9e26c4c05a5595fa151b98010097a7ee501b22ae,
   clean normal compilation with only propext/Classical.choice/Quot.sound.
@@ -250,33 +252,48 @@ worktrees. Do not overwrite frozen proofs or the historical failed controls.
   threshold, Cook and physical dynamics remain outside the certificate.
   Lean4.35.0-rc4 and mathlib939d5d5d9e6f07d1d8c80a16fa3fa39a7518b716
   are task-local. Do not copy the runtime/cache/dependency checkout into repo.
-- spatial_quantum_realization now works on a new effective_memory/ derivation:
-  exact scalar resolvent or Volterra equation for the dressing amplitude of
-  A_kappa. No decay, no-eigenstate or Markov assertion is assumed. External
-  EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md is the designated deliverable.
+- Effective memory source frozen: EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md,
+  500 lines,b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c;
+  effective_memory/receipt.json99cad79eeb712071bfc48a04a161df7280cea694f80523dc86c563537f272557.
+  Root read the full proof, both helpers, mutation driver and all raw outputs;
+  all26 artifact identities and6 actual source substitutions/failures match.
+  Exact Volterra/resolvent, one-cone bath lower density, uniform interior
+  Poisson bound and strict-compression endpoint exclusion give absolute
+  continuity of the dressing spectral measure and amplitude decay for kappa!=0.
+  No weighted-current limit or joint original-walk time limit is inferred.
+  A finite-bath recurrence example is preserved. spatial_kinetic_derivation
+  recorded a distinct pre-source reconstruction and is checking the full final
+  proof. Independent final receipt remains pending.
+- spatial_quantum_realization is extending the frozen memory result in
+  EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md / weighted_memory: check the finite-rank
+  Kato comparison on F plus dressing and whether a transverse scattering state
+  gives a positive epsilon-weighted limit. No final source or receipt yet.
 
 ## Current publication preparation
 
-walk_worktree now uses physics-loop/toe-scattering-flux-20261011, based on
-b9b032ae790c66e762a6296a1306bfb64ae7cd70 (parent #9479), without changing
-that published parent branch. Flux/form publication note is1218 lines at
-c70ad03ede2a01c0b49282043a4b20824f64a6b42c3440facae1b6c5e231c0bc;
-primary470lines f8bdf9f014eae164ab283d73910ff38968933637ff25349f5e9c5d1f974dff2a.
-Both author helpers are embedded byte-for-byte. The source map records only
-status/location/headings edits to the mathematical proof bodies. A separate
-composition check is pending. The canonical primary cache is fresh, exit0,
-1.06seconds. All14 real single-change source mutants fail at intended checks,
-with full logs read and exact substitutions verified. The portable repository
-Lean compiler entrypoint compiled the same source at exit0 in42.6986seconds.
-A separate publication pack is toe-scattering-flux-20261011 in walk_worktree.
-It is a snapshot, not a second live checkpoint. Citation graph built at6871
-nodes/15421edges; final compatibility, conformance, staging and PR are pending.
+Regular PR #9480 is OPEN,isDraft=false,attached to this chat:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
+Science revision20ec94848ad264f3167db33028e98399c5c17dd9, branch
+physics-loop/toe-scattering-flux-20261011, based on unchanged parent #9479
+b9b032ae790c66e762a6296a1306bfb64ae7cd70. Complete source-composition check,
+canonical cache,14 actual source mutants, portable Lean compilation, citation,
+vocabulary, links,169 staged-source identities, whitespace and audit-evidence
+compatibility are documented in its DELIVERY_CHECKS.md. No global audit pipeline
+or strict audit lint was run; those remain independent landing gates.
+The source-author composition check is not counted as independent mathematics.
+The historical map-refresh receipt and original compiler/control failures are
+preserved; gzip containers retain their exact original bytes.
+
+walk_worktree now uses physics-loop/toe-projected-band-current-20261011 from
+b9b032ae790c66e762a6296a1306bfb64ae7cd70. This next milestone does not depend
+on the flux/form branch. The complete explicit-current composition is pending.
 
 ## Boundaries and next action
 
 Both checked transport and finite-preparation walk milestones are published.
-Publish the checked flux/form/Lean and long-time current milestones after
-composition checks. Continue explicit current estimates and effective memory.
+The checked flux/form/Lean milestone is also published. Publish the explicit
+long-time current after its composition check; continue effective memory,
+weighted-current asymptotics and a controlled growing-time comparison.
 Keep identities and raw evidence current. Original mathematics is authorized. Lean may verify
 complex scoped obligations during audit; the universal rank-one algebra is now
 compiled and statement-checked, while analytic proof obligations remain separate.

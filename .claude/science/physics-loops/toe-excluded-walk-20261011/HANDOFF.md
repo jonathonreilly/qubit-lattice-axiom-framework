@@ -20,3 +20,7 @@ Delivery checks and publication identifiers are recorded with this snapshot.
 No science merge, applied audit, physical axiom adoption or other-chat message
 is authorized by this milestone. Original derivations and scoped Lean audits
 are allowed; no Lean execution is claimed here.
+
+Published as regular PR #9479, OPEN and isDraft=false, science commit
+0fbdf3fd66fc778faed9ffc11f0f59c4b8994041. Subsequent checkpoint-only edits
+do not change that mathematical source identity.

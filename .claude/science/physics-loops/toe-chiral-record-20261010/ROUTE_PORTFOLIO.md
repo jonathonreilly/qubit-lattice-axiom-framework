@@ -103,3 +103,10 @@ and it raises the exhibited rank inside the 10-dimensional ansatz from
 8 to 9. It does not base the remaining 1-dimensional complement, it
 does not take a mixed-height bond, and it does not classify the
 300-dimensional affine space.
+
+Cycle 26 takes the scaled cross-dot kernel at absolute heights 1, 2,
+and 3. It places that kernel outside the twenty-seven comparison
+kernels and raises the exhibited rank from 9 to 10, so the ten named
+kernels are a basis of the opposite-height ansatz. It does not take a
+mixture of those kernels, it does not take a mixed-height bond, and it
+does not classify the 300-dimensional affine space.

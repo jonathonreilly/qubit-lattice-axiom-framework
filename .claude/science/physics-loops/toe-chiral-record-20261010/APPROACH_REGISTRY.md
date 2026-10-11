@@ -248,3 +248,16 @@ raises the exhibited rank from 8 to 9.
 Family not used: a fifth vector in the remaining 1-dimensional
 complement. That remains open. The 300-dimensional affine space is not
 this family. A mixed-height bond is not this family.
+
+Cycle 26 target contract: name a basis of the 10-dimensional
+slice-zero bond-symmetric soldered kernels on one opposite-height pair.
+
+Family used: the scaled cross-dot kernel at absolute heights 1, 2, and
+3, at coefficient `1/4`, separated by four weighted bonds at each
+height. Inside the 10-dimensional opposite-height ansatz this kernel
+raises the exhibited rank from 9 to 10, so the ten named kernels are a
+basis.
+
+Family not used: a rational mixture of those ten kernels. The
+order-blind subset of the span remains open. The 300-dimensional affine
+space is not this family. A mixed-height bond is not this family.

@@ -156,3 +156,10 @@ each height have alternating sum 0 on the twenty-four and alternating
 sum 2 on this kernel. Inside the 10-dimensional ansatz the rank rises
 from 8 to 9. It does not base the remaining 1-dimensional complement,
 and it does not classify the 300-dimensional affine space.
+
+Cycle 26 names a basis of that ansatz. The scaled cross-dot kernel at
+coefficient `1/4` has neighbour-product mean 1. Four bonds at each
+height have alternating sum 0 on the twenty-seven and alternating sum 4
+on this kernel. The rank rises from 9 to 10, so the ten named kernels
+are a basis. It does not classify the order-blind subset of that span,
+and it does not classify the 300-dimensional affine space.

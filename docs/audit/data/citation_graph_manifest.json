@@ -1,6 +1,6 @@
 {
- "edge_count": 15483,
- "node_count": 6894,
+ "edge_count": 15486,
+ "node_count": 6895,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2955,6 +2955,10 @@
    "out_degree": 3
   },
   "chiral_pair_parallel_transverse_dot_outside_fifteen_kernels_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_scaled_cross_dot_bases_opposite_height_ansatz_bounded_theorem_note_2026-10-10": {
    "deps_hash": "41027eb0d307",
    "out_degree": 3
   },

@@ -509,3 +509,27 @@ so none of the three is a linear combination of the twenty-four. Inside
 the 10-dimensional ansatz the exhibited rank rises from 8 to 9. The
 remaining 1-dimensional complement is not based. The 300-dimensional
 affine space is not classified.
+
+# Claim status certificate — cycle 26
+
+claim_id: chiral_pair_scaled_cross_dot_bases_opposite_height_ansatz_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); scaled cross-dot kernel at absolute heights 1, 2, and 3; coefficient 1/4
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: Theorem 2's converse is applied to each family. Far-end sum 1 is the chiral-pair bond note. No formation rate is used.
+
+Each scaled cross-dot kernel at coefficient `1/4` is strictly positive,
+and every neighbour product has mean 1. Four bonds at each height have
+alternating sum 0 on the twenty-seven comparison kernels and alternating
+sum 4 on this kernel, so none of the three is a linear combination of
+the twenty-seven. Inside the 10-dimensional ansatz the exhibited rank
+rises from 9 to 10. Those ten kernels are a basis. The order-blind
+subset of the span is not classified. The 300-dimensional affine space
+is not classified.

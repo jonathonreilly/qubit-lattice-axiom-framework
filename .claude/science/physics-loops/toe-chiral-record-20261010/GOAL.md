@@ -83,4 +83,10 @@ support disjoint from the three dot kernels. Four bonds at each height,
 with weights `-1`, `-1`, `+1`, and `+1`, have alternating sum 0 on the
 twenty-four comparison kernels and alternating sum 2 on this kernel.
 The same ansatz now has nine independent kernels. One dimension remains
-unnamed.
+unnamed. Cycle 26 shows that the scaled cross-dot kernel at each
+absolute height 1, 2, and 3, at coefficient `1/4`, has neighbour-product
+mean 1. Four bonds at each height, with weights `+1`, `+1`, `-1`, and
+`-1`, have alternating sum 0 on the twenty-seven comparison kernels and
+alternating sum 4 on this kernel. The same ansatz now has rank 10, so
+the ten named kernels are a basis. The order-blind subset of that span
+is not classified.

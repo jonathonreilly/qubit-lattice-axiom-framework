@@ -406,3 +406,21 @@ swapped cross. That prunes the reading that this kernel lies in the span
 of those twenty-four. The orbit rank says nine kernels are now
 independent inside the 10-dimensional ansatz. A fifth vector in the
 remaining complement stays outside this formula.
+
+## Cycle 26
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide which rational mixtures of these ten basis kernels have every neighbour-product mean equal to 1. Do not claim that order-blind subset is classified."
+```
+
+The four bonds with weights `+1`, `+1`, `-1`, and `-1` have alternating
+sum 0 on the twenty-seven kernels and alternating sum 4 on the scaled
+cross-dot kernel. The orbit rank says the ten named kernels are
+independent inside the 10-dimensional ansatz, so they are a basis. A
+mixture of those kernels stays outside this formula.

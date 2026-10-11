@@ -258,15 +258,32 @@ on all twenty-four comparison kernels and alternating sum 2 on this
 kernel. Inside the 10-dimensional opposite-height ansatz the rank rises
 from 8 to 9. Runner `PASS=10 FAIL=0`.
 
+Cycle 26. On the same alphabet the scaled cross-dot kernel at each
+absolute height 1, 2, and 3 is bond-symmetric and soldered. On opposite
+caps it is twice the sign of the negative cross-dot product when the
+absolute transverse coordinates match and the dot product is positive,
+and it is that sign when the coordinates are swapped and the dot product
+is nonzero. It is 0 when either product vanishes or when the coordinates
+match and the dot product is negative. Its product with the parallel-dot
+kernel is 0, and so is its product with the orthogonal swapped cross.
+At coefficient `1/4` each factor takes values `1/2`, `3/4`, `1`, `5/4`,
+and `3/2`. Each record meets at most one live direction and every left
+slice sums to 0, so every neighbour product has mean 1. Every far-end
+sum equals 48. Four bonds at each height, with weights `+1`, `+1`, `-1`,
+and `-1`, have alternating sum 0 on all twenty-seven comparison kernels
+and alternating sum 4 on this kernel. Inside the 10-dimensional
+opposite-height ansatz the rank rises from 9 to 10. Those ten kernels
+are a basis of that ansatz. Runner `PASS=10 FAIL=0`.
+
 ## Next exact action
 
-Exhibit a fifth kernel in the remaining 1-dimensional complement of one
-opposite-height pair, with an exact formula, outside the nine kernels
-now exhibited there. Do not claim that complement is based. Do not claim
-the 300-dimensional affine space is classified. Do not repeat the
-bond-space dimension count. Do not return to the modulus-3 triple. Do
-not invent a formation rate. Do not return to shells, plaquette corner
-weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
+Decide which rational mixtures of these ten basis kernels have every
+neighbour-product mean equal to 1. Do not claim that order-blind subset
+is classified. Do not claim the 300-dimensional affine space is
+classified. Do not repeat the bond-space dimension count. Do not return
+to the modulus-3 triple. Do not invent a formation rate. Do not return
+to shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
+alphabets.
 
 ## Cleanup
 

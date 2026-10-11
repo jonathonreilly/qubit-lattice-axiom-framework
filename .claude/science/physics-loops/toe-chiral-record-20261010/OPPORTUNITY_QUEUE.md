@@ -1,9 +1,10 @@
 # Opportunity queue
 
-1. Decide whether every chirality coefficient on the sum of both
-   swapped-dot generators and twice the cap of one ratio span has
-   partner rank 10. One swapped-dot generator plus twice the cap of the
-   other ratio span has partner rank 10 at every chirality coefficient.
+1. Decide whether every chirality coefficient on the sum of one
+   swapped-dot generator and twice the cap of one ratio span plus the
+   cap of the other ratio span has partner rank 10. Both swapped-dot
+   generators plus twice the cap of one ratio span have partner rank 10
+   at every chirality coefficient, and the swapped-dot coordinate is 0.
    Do not claim the ten-kernel coefficient span is settled. Do not claim
    the 300-dimensional affine space is classified. Do not return to the
    modulus-3 triple.

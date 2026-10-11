@@ -692,3 +692,16 @@ pivot samples do not.
 Family not used: both swapped-dot generators plus twice the cap of one
 ratio span. That remains open. The 300-dimensional affine space is not
 this family.
+
+Cycle 63 target contract: whether every chirality coefficient on the sum
+of both swapped-dot generators and twice the cap of one ratio span has
+partner rank 10.
+
+Family used: both swapped-dot generators plus twice one cap. The
+swapped-dot coordinate is 0. The 17-row pencil has a nonzero constant
+maximal-minor gcd. The twice-minus pivot gcd is constant only on
+(1, 2), (2, 1), and (3, 1).
+
+Family not used: one swapped-dot generator plus twice one cap and the
+other cap. That sum keeps a nonzero swapped-dot coordinate. That remains
+open. The 300-dimensional affine space is not this family.

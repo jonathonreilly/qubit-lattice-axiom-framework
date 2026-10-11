@@ -467,3 +467,12 @@ has swapped-dot coordinate `-1` and scaled coordinate `4`. It does not
 classify both swapped-dot generators plus twice the cap of one ratio
 span, and it does not classify the 300-dimensional affine space. This
 is not an N-gate no-go.
+
+Cycle 63 prunes the reading that some chirality coefficient on the sum
+of both swapped-dot generators and twice the cap of one ratio span has
+a nonzero ten-kernel partner. On every ordered height pair, every
+chirality coefficient has partner rank 10. The swapped-dot coordinates
+cancel, so the swapped-dot coordinate is `0` and the scaled coordinate
+is `4`. It does not classify one swapped-dot generator plus twice one
+cap and the other cap, and it does not classify the 300-dimensional
+affine space. This is not an N-gate no-go.

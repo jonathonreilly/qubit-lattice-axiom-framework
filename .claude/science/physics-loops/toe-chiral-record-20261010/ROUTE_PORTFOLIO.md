@@ -272,3 +272,10 @@ coordinate presentations are in the count. Every chirality coefficient
 has partner rank 10. It does not take the sum of the first and second
 even generators, and it does not classify the 300-dimensional affine
 space.
+
+Cycle 55 takes the sign product plus the second even generator plus
+both swapped-dot generators on every ordered height pair. Both
+coordinate presentations are in the count. Every chirality coefficient
+has partner rank 10. It does not take the sum of the first and third
+even generators, and it does not classify the 300-dimensional affine
+space.

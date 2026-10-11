@@ -290,3 +290,13 @@ pivot minors at chirality coefficients `0`, `1`, `-1`, `-1/2`, and `5/2`
 have a nonzero constant gcd. The sum of the first and second even
 generators is not in this count. The ten-kernel coefficient span is not
 classified.
+Cycle 55 shows that on every ordered height pair, the sign product plus
+the second even generator plus both swapped-dot generators has partner
+rank 10 at every chirality coefficient. On the source-same pairs the
+summed coordinates are sign product `1`, swapped `-2`, parallel `-1`,
+oblique `1`, and orthogonal `2`. On the other three pairs they are sign
+product `1`, swapped `-1`, and orthogonal `2`. The base image has rank
+10. The pivot minors at chirality coefficients `0`, `1`, `-1`, `-1/2`,
+and `5/2` have a nonzero constant gcd. The sum of the first and third
+even generators is not in this count. The ten-kernel coefficient span
+is not classified.

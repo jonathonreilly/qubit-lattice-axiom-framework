@@ -1,8 +1,8 @@
 # Opportunity queue
 
 1. Decide whether every chirality coefficient on the sum of the first
-   and second even generators plus both swapped-dot generators has
-   partner rank 10. The second and third even generators plus both
+   and third even generators plus both swapped-dot generators has
+   partner rank 10. The first and second even generators plus both
    swapped-dot generators have partner rank 10 at every chirality
    coefficient on every ordered height pair. Do not claim the
    ten-kernel coefficient span is settled. Do not claim the

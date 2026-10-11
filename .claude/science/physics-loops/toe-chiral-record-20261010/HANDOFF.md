@@ -705,11 +705,25 @@ partner rank 10. The sum of the first and second even generators is not
 in this count. The ten-kernel coefficient span is not classified.
 Runner `PASS=19 FAIL=0`.
 
+Cycle 55. On every ordered height pair, the first-plus-second even-dot
+sum is the sign product plus the second even generator plus both
+swapped-dot generators. On the source-same pairs the summed vector has
+sign-product coordinate `1`, swapped coordinate `-2`, parallel
+coordinate `-1`, oblique coordinate `1`, and orthogonal coordinate `2`.
+On `(1, 3)`, `(2, 3)`, and `(3, 2)` it has sign-product coordinate `1`,
+swapped coordinate `-1`, and orthogonal coordinate `2`. The base image
+has rank 10. The coefficient pairs compress to 17 rows. The pivot
+minors at chirality coefficients `0`, `1`, `-1`, `-1/2`, and `5/2` have
+a nonzero constant running gcd, so every chirality coefficient has
+partner rank 10. The sum of the first and third even generators is not
+in this count. The ten-kernel coefficient span is not classified.
+Runner `PASS=20 FAIL=0`.
+
 ## Next exact action
 
 Decide whether every chirality coefficient on the sum of the first and
-second even generators plus both swapped-dot generators has partner
-rank 10. The second and third even generators plus both swapped-dot
+third even generators plus both swapped-dot generators has partner rank
+10. The first and second even generators plus both swapped-dot
 generators have partner rank 10 at every chirality coefficient on every
 ordered height pair. Do not claim the ten-kernel coefficient span is
 settled. Do not claim the 300-dimensional affine space is classified.

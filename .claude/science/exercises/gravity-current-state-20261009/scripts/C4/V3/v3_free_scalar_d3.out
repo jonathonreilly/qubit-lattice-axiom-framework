@@ -1,0 +1,25 @@
+scalar d=3 N=14 L=24 m=1.0 ch=E: transl err H 0.0e+00 T1 0.0e+00 T2 0.0e+00; E0/site 1.300034 (check 1/2<w> 1.300034)
+   paramagnetic Hessian/site = -2.31730418e-03  (this IS RN L1 normalisation; V1 norm x4: -9.26921671e-03)
+   honest seagull/site       = +4.28769280e-03  (f-sum would give +2.31730418e-03)
+   full Hessian/site         = +1.97038863e-03  (para+sg +1.97038862e-03);  V1 norm x4: +7.88155451e-03
+   Jacobian prediction (V1 norm, velocity eps sin k; divide by 4 for RN L1) = same grid +7.88155455e-03;  L=40 +7.88155456e-03   [6s]
+scalar d=3 N=14 L=24 m=1.0 ch=T2: transl err H 0.0e+00 T1 0.0e+00 T2 0.0e+00; E0/site 1.300034 (check 1/2<w> 1.300034)
+   paramagnetic Hessian/site = -8.22847008e-03  (this IS RN L1 normalisation; V1 norm x4: -3.29138803e-02)
+   honest seagull/site       = +8.22847008e-03  (f-sum would give +8.22847008e-03)
+   full Hessian/site         = -2.96059473e-12  (para+sg +3.75115043e-12);  V1 norm x4: -1.18423789e-11
+   Jacobian prediction (V1 norm, velocity eps sin k; divide by 4 for RN L1) = same grid +0.00000000e+00;  L=40 +0.00000000e+00   [13s]
+scalar d=3 N=14 L=24 m=0.5 ch=E: transl err H 0.0e+00 T1 0.0e+00 T2 0.0e+00; E0/site 1.221635 (check 1/2<w> 1.221635)
+   paramagnetic Hessian/site = -3.17249067e-03  (this IS RN L1 normalisation; V1 norm x4: -1.26899627e-02)
+   honest seagull/site       = +5.63963960e-03  (f-sum would give +3.17249067e-03)
+   full Hessian/site         = +2.46714894e-03  (para+sg +2.46714893e-03);  V1 norm x4: +9.86859578e-03
+   Jacobian prediction (V1 norm, velocity eps sin k; divide by 4 for RN L1) = same grid +9.86859568e-03;  L=40 +9.86862592e-03   [6s]
+scalar d=3 N=14 L=24 m=0.5 ch=T2: transl err H 0.0e+00 T1 0.0e+00 T2 0.0e+00; E0/site 1.221635 (check 1/2<w> 1.221635)
+   paramagnetic Hessian/site = -1.05739517e-02  (this IS RN L1 normalisation; V1 norm x4: -4.22958069e-02)
+   honest seagull/site       = +1.05739528e-02  (f-sum would give +1.05739517e-02)
+   full Hessian/site         = +1.05249143e-09  (para+sg +1.02669433e-09);  V1 norm x4: +4.20996571e-09
+   Jacobian prediction (V1 norm, velocity eps sin k; divide by 4 for RN L1) = same grid +4.08043969e-09;  L=40 +0.00000000e+00   [13s]
+scalar d=3 N=14 L=24 m=0.0001 ch=E: transl err H 0.0e+00 T1 0.0e+00 T2 0.0e+00; E0/site 1.193799 (check 1/2<w> 1.193799)
+   paramagnetic Hessian/site = -3.69623206e-03  (this IS RN L1 normalisation; V1 norm x4: -1.47849282e-02)
+   honest seagull/site       = +6.38945353e-03  (f-sum would give +3.69623206e-03)
+   full Hessian/site         = +2.69322146e-03  (para+sg +2.69322147e-03);  V1 norm x4: +1.07728859e-02
+   Jacobian prediction (V1 norm, velocity eps sin k; divide by 4 for RN L1) = same grid +1.07728859e-02;  L=40 +1.07818738e-02   [6s]

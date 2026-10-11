@@ -1,0 +1,12 @@
+m=0.5 a=-0.4: mu_E^anom = -8.858941e-03
+m=0.5 a=-0.2: mu_E^anom = -3.227942e-03
+m=0.5 a=+0.0: mu_E^anom = +2.467156e-03
+m=0.5 a=+0.2: mu_E^anom = +8.226353e-03
+m=0.5 a=+0.4: mu_E^anom = +1.404965e-02
+  root a* = -0.08637 (slope at k=0: 0.8273) -> one-parameter tuning of the transported momentum
+m=1.0 a=-0.4: mu_E^anom = -8.387734e-03
+m=1.0 a=-0.2: mu_E^anom = -3.225188e-03
+m=1.0 a=+0.0: mu_E^anom = +1.970389e-03
+m=1.0 a=+0.2: mu_E^anom = +7.198995e-03
+m=1.0 a=+0.4: mu_E^anom = +1.246063e-02
+  root a* = -0.07570 (slope at k=0: 0.8486) -> one-parameter tuning of the transported momentum

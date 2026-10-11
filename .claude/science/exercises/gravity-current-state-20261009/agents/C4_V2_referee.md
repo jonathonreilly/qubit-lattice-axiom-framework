@@ -1,0 +1,23 @@
+# VERDICT: NOT CONFIRMED
+
+Full referee report: [V2_referee.md](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/ref_V2/V2_referee.md:1).
+
+1. **Decisive conflict:** V3 is correct for the genuinely local thermodynamic coupling. Finite-box \(U_LH_LU_L^\dagger\) is isospectral only while its boundary-sensitive terms are retained; copying the bulk kernels changes the density of states. Independent quadrature and exact-flow finite differences give
+   \[
+   \mu_E(m=1)=1.9703886418785\times10^{-3},\qquad \mu_{T2}=0.
+   \]
+   Thus V2’s local \(\mu\equiv0\) requires the extra c-number rule R₀. [V2_referee.md:15](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/ref_V2/V2_referee.md:15), [referee_v2_checks.out:1](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/ref_V2/referee_v2_checks.out:1)
+
+2. **Candidate principles:** Kato fixes the vacuum column only after an off-diagonal gauge and chosen local norm; it does not fix the split, boundary prescription, or R₀. The vacuum first-moment norm generically grows as \(L^2S_B(0)/12\), but not universally when \(S_B(0)=0\), and minimizing it to zero merely restates R. Gell-Mann–Low’s elastic-shell denominator is nonlocal, as V2 says. Sector isospectrality assumes the desired vacuum result. [V2_referee.md:70](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/ref_V2/V2_referee.md:70)
+
+3. **Perturbative claims:** The narrow \(O(\lambda^2)\) Kato interaction/seagull cancellation is exact, but it does not cancel the \(O(\lambda^0)\) free Jacobian response. The conditional formula
+   \[
+   \mu^{(3)}=-2\lambda^3\langle T_4|X_2|T_4\rangle
+   \]
+   has the correct restricted order counting, but the claimed \(10^{-7}\lambda^3\) is only a proxy-scale estimate: no specific \(X_2\) was computed. [V2_referee.md:117](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/ref_V2/V2_referee.md:117)
+
+4. **Defect and universality:** The defect identity and generic \((ka)^2\) scaling are correct; \(0.037\) is a sampling median, not a universal coefficient. The smooth \((a/r)^2\) and contact \(p_Ba\) scalings are plausible for the studied two-body models, but their coefficients are model/regulator dependent. V2’s \(\eta_{\rm mom}=1-f_B/Q\) is not an Eötvös observable: MICROSCOPE measures differential free-fall acceleration/passive-to-inertial mass, while V2 never tested the spatially varying lapse coupling. [V2_referee.md:150](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/ref_V2/V2_referee.md:150), [MICROSCOPE final results](https://doi.org/10.1103/PhysRevLett.129.121102)
+
+5. **Fixed verdict:** PASS is excluded. Under the literal immutable RV2 rubric, the result is still **INCONCLUSIVE, now leaning FAIL**, because the newly discovered free Jacobian anomaly is not exactly either enumerated FAIL disjunct. If the intended FAIL clause covers any unsuppressed nonzero local vacuum Hessian, the physics result is FAIL—but that would broaden the fixed rubric. [V2_referee.md:198](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/ref_V2/V2_referee.md:198)
+
+**Strongest correct statement:** For massive lattice Klein–Gordon matter, full finite-box first-moment conjugation is isospectral only with its boundary-sensitive terms retained; the local bulk thermodynamic coupling instead has \(\mu_E^{\rm free}=1.9703886418785\times10^{-3}\) at \(m=1\) and \(\mu_{T2}^{\rm free}=0\). Hence Rule R and \(P_\lambda\Omega=0\) do not imply total \(\mu=0\); R₀ is additionally required and enforces that result by definition. The interaction-only \(O(\lambda^2)\) cancellation, conditional \(O(\lambda^3)\) formula, defect identity, and model-dependent composite scalings survive, but V2’s coefficient estimate and Eötvös interpretation do not.

@@ -1,0 +1,13 @@
+d=3 N=18 L=12 m=0.5 ch=E: kernel transl. err H 0.0e+00 T1 0.0e+00 T2 0.0e+00; ranges T1 3 T2 5; herm err 0.0e+00; sea gap 0.500; <T1>/site +3.53e-19
+   paramagnetic (linear-only) Hessian/site = -4.66073518e-02
+   honest seagull <sea|T2|sea>/site       = +4.32704371e-02
+   f-sum seagull would be                  = +4.66073518e-02
+   full unitary Hessian/site               = -3.33691467e-03   (para+seagull = -3.33691467e-03)
+   Jacobian-anomaly prediction (same grid) = -3.33691453e-03;  continuum (L=32) -3.94076939e-03   [11s]
+d=3 N=18 L=12 m=0.5 ch=T2: kernel transl. err H 0.0e+00 T1 0.0e+00 T2 0.0e+00; ranges T1 2 T2 4; herm err 0.0e+00; sea gap 0.500; <T1>/site -1.01e-18
+   paramagnetic (linear-only) Hessian/site = -3.72969569e-02
+   honest seagull <sea|T2|sea>/site       = +3.72207535e-02
+   f-sum seagull would be                  = +3.72969569e-02
+   full unitary Hessian/site               = -7.62033111e-05   (para+seagull = -7.62033290e-05)
+   Jacobian-anomaly prediction (same grid) = -7.62033323e-05;  continuum (L=32) -7.59392549e-10   [23s]
+python3 v3_free_fermion_seagull.py 3 18 12 0.5 E,T2  22.69s user 0.45s system 101% cpu 22.900 total

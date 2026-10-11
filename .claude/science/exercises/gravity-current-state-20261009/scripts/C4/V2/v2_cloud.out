@@ -1,0 +1,5 @@
+m=1.0: cloud <1-cos k_x> = 0.862  (uniform-BZ value 1.000); <|k|> = 2.715; P(|k_leg| < 0.3) = 0.0015
+      2->2 sub-scattering of two cloud legs: |DeltaP|/|P_pair| median 0.744, 25-75% [0.315, 1.391]  (cf. 0.037 (ka)^2 at low k); fraction with |Q_i| > pi: 0.41
+m=0.3: cloud <1-cos k_x> = 0.803  (uniform-BZ value 1.000); <|k|> = 2.577; P(|k_leg| < 0.3) = 0.0042
+      2->2 sub-scattering of two cloud legs: |DeltaP|/|P_pair| median 0.692, 25-75% [0.281, 1.321]  (cf. 0.037 (ka)^2 at low k); fraction with |Q_i| > pi: 0.34
+python3 v2_cloud.py  7.89s user 0.10s system 99% cpu 7.996 total

@@ -1769,3 +1769,52 @@ Still open:
 - The mean passes, because a local stable operator inverts to the curved Green function.
 - The noise fails at ℓ_k = 1e-19 m, consistent with the renewal growth of E1 and RL1.
 - So FAIL on noise, or INCONCLUSIVE if the small-ε variance cannot be controlled.
+
+### C4 results recorded 18:57Z (V2, V3): a correction to earlier records
+
+**Lane RV3, V3. CONFIRMED WITH CORRECTIONS (codex sol): (a) FAIL, (b) FAIL (bounded).** Files: `agents/C4_V3_*`.
+
+**Central result (free matter).** Take the uniform-strain coupling as a translation-covariant, finite-range local operator: the bulk commutators of the first-moment flow, periodized onto the torus. Then:
+- the thermodynamic vacuum energy carries the Jacobian of the flow;
+- the T2 flow is divergence-free, so μ_T2 = 0;
+- the E flow gives μ_E = +1.97038864e-3 for the RN-L1 scalar at m = 1, and the corresponding negative value for staggered fermions.
+
+**Why the earlier argument missed this.**
+- Exact unitary isospectrality holds only if the boundary/seam part of the ill-defined torus first moment is kept.
+- The f-sum substitution keeps that extensive boundary piece without saying so, so it never actually evaluated the local seagull.
+- For a fixed, local, translation-covariant probe, the bulk-local construction is the physical one. The formal torus unitary has a privileged seam, so it is not a uniform local strain.
+- The axioms do not uniquely fix this nonlinear coupling; that choice belongs to downstream structure.
+
+**What the surviving response is.** It is an E_g shear coefficient, not a cosmological constant. Removing it requires one of:
+- an added E_g counterterm;
+- a selected momentum symbol (a tuning);
+- the vacuum-referenced subtraction R₀, which holds by definition.
+
+**Verdicts.**
+- **(a) Contact fermions: FAIL.** The dressing is exponentially quasi-local, and the interaction pieces cancel under R. But the total has μ_E ≠ 0 at O(λ⁰).
+- **(b) QED: FAIL, bounded** to the analytic Coulomb-gauge A,E ansatz. The photon-leg tails are non-analytic, and for m < √3 there is no exponential repair.
+
+**CORRECTION to earlier records.** These were recorded with an exact uniform-strain cancellation; the correction is dated here, not edited into them:
+- **RN L1 referee:** "the unitary seagull cancels the uniform-strain TT response exactly." True only for T2, or with the boundary/seam retained. False in E for the local coupling.
+- **C4 I3:** "μ = 0 with the seagull at every L." The same correction applies.
+- **C4 V1:** "W|0_h⟩ exact eigenstate". Holds only with R₀.
+
+So free regular local lattice matter already generates one of P0's two shear numbers (E_g). T_2g stays protected (Liouville).
+
+**Lane RV2, V2. NOT CONFIRMED (codex sol). Result: INCONCLUSIVE, leaning FAIL.** Files: `agents/C4_V2_*`.
+- The referee sides with V3: V2's "μ ≡ 0" needs R₀.
+- Survives:
+  - the narrow O(λ²) cancellation between the Kato interaction and the seagull;
+  - the conditional O(λ³) formula;
+  - the defect identity ΔP = 2 sin(Q/2)(cos κ − cos κ′), with (ka)² scaling.
+- Kato does not fix the split or R₀.
+- Gell-Mann–Low is non-local.
+- The η figure is not an Eötvös observable, because the lapse coupling was not tested.
+- PASS is excluded. Under the literal rubric the result is INCONCLUSIVE, leaning FAIL.
+
+**Lane RV (V1 to V3) overall.** The vacuum-annihilating dressing cancels the interaction part of the TT response at O(λ²), with no tunable number. But even free matter's local coupling leaves the E_g shear mass. So the mechanism works for interactions, not for the free Jacobian, and the lead closes in this form.
+
+**Supervisor's own thread (same family; written before reading the referees).** The supervisor's reasoning agreed with V3:
+- A uniform-strain flow along the lattice momentum symbol is not translation-invariant.
+- Forcing it into translation-invariant local form reweights the zero-point sum by the Jacobian.
+- This is C3's Hessian anomaly appearing in the vacuum.

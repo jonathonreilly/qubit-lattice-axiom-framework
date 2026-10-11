@@ -1,0 +1,5 @@
+L=12: <T+T>/cell = 7.11236e-07 | <T+ V22 T>/cell = +8.56870e-08 | ratio (typical 22 element on cloud) = +0.1205
+L=16: <T+T>/cell = 7.11235e-07 | <T+ V22 T>/cell = +8.56868e-08 | ratio (typical 22 element on cloud) = +0.1205
+L=20: <T+T>/cell = 7.11235e-07 | <T+ V22 T>/cell = +8.56868e-08 | ratio (typical 22 element on cloud) = +0.1205
+compare: V1 E2 = sum E_n|S_n0|^2 = 6.9007e-6 (lambda^2 units); O(lambda^2) Hessian pieces 1.42e-5 (E), 7.7e-7 (T2)
+python3 v2_cloud_scale.py  0.79s user 0.02s system 99% cpu 0.812 total

@@ -271,20 +271,53 @@ worktrees. Do not overwrite frozen proofs or the historical failed controls.
   match. Delta=lambda^3, sigma=lambda^2, T=lambda^-gamma, width=lambda^2 for
   fixed 0<gamma<1/2 give e/A<=275lambda^(1/2-gamma). Actual free-band global
   current divided by lambda^4 tends to -Wplus/(12pi^2 I0). The review kept the
-  then-pending weighted input conditional; a separate dependency addendum is
-  now written and awaits root reading before publication. No sign-onset rate.
+  then-pending weighted input conditional; its separate dependency addendum is
+  now fully read, all seven identities verified, and the dependency resolved.
+  The historical report remains unchanged. No sign-onset rate.
 - Root outgoing-resolvent draft, 245 lines, 58a96a049701667e673bde1acf98e5346356483101654b3464fe11e94fd02c21
   and outgoing_resolvent/receipt.json 333d620163722af83291fb19ade6ac9ea28101b2877daff028cae5beb1d5ecc8
-  are frozen; spatial_quantum_realization is checking the new proof.
-  It derives u_h=M(D+ih)g by Abel averaging, and a direction-uniform positive
-  rational lower bound for Wplus using interior energy mass and cone bounds.
-  No independent result is claimed yet. The first symbolic-control structural
-  equality failure and simplification-only repair are preserved. Five actual
-  source-copy defects fail at their intended assertions.
-- spatial_kinetic_derivation is deriving a quantitative spectral-edge bound
-  from the physical compression. No final source or independently checked
-  claim yet. spatial_prior_art is composing the three checked memory/weighted/
-  joint-scale arguments, excluding the not-yet-checked outgoing extension.
+  now have a complete independent review, 8eb1d81e91227a0cda36e75459e32be80b1523709a5f82fc5af4c1e8fd6d74de,
+  receipt c5fb2219ef98d4abce39ef98be784e5c7d1ffde0054cd867214f4713226ba6e0.
+  Root read all306 report lines, the distinct helper and full33-control log;
+  51 path/hash occurrences,42 unique files matched. Prior memory/weighted
+  authorship is explicit. The new R1-R14 checks are independently reconstructed.
+  The formula u_h=M(D+ih)g and moment/cone proof give
+  Wplus>=6859/60752858276421362793738298982400. This is a bound for the selected
+  outgoing datum, not arbitrary transverse states or a finite-time onset.
+  The first symbolic simplification failure and five actual mutants remain.
+- The complete memory/current publication composition is frozen externally:
+  FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md,1556lines,
+  c05465cee9acb7ee1bc9b0296b4fd5546432bd8188043194b1701a2d3654ef87;
+  primary b5cfe4af2e2e56f6a531afaa36c19daded1003d91b3a861ebe177ba87a0ebc33;
+  map ffe3df5cd8633fa927bbe78e7fbfbeffd7c96efc30dbc969d0c0bf24a31e0fa2;
+  receipt9dea961421ca868bd4def5eecb5c45982b5c5a421ed49c945f31cac8dd2f2ea6.
+  Root read all new text/edits, checked exact59chunk/29fragment/36edit
+  reconstruction, five unchanged full helper bodies and complete replay output.
+  spatial_quantum_realization is checking the complete new composition.
+  The original four-helper package is preserved under pre_extension/.
+- EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md is frozen at452lines,
+  e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623;
+  receipt7a96b9213a8c0faf014f35e4e4bcbdecd54d688bdc6b829b57d189b97fd7bec6.
+  The original worker disconnected twice; spectral_edge_recovery preserved its
+  files and completed the proof. Root read the complete note, both helpers,
+  both successful outputs, eight exact mutations and all failure tracebacks.
+  It proves rank-one domination of b^2-A^2, inverse-edge moment<=12I0/b^2,
+  combined edge mass<=12I0(2chi-chi^2), Poisson proxy<=24I0chi and an explicit
+  mean-survival O((bT)^(-4/5)) bound. Root supplied the L^(5/3) improvement;
+  spatial_prior_art is providing the separate independent review. No pointwise
+  amplitude rate or weighted-current rate is implied. A final scope sentence
+  should be narrowed in publication to avoid saying selected W/G results are
+  globally open. Frozen original remains unchanged.
+- Root EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md is frozen at
+  9729bbbfb26de3c7cf450b8eb81efea6fe2f3597b40289426cf6e9171de30c3d.
+  Conditional on the new edge theorem, the actual globally normalized
+  free-band packet has averaged fixed-transverse occupation divided by lambda
+  equal to1/(8pi^2I0)+O(lambda^(2/9)), with physical horizonlambda^(-59/18).
+  The finite A2-A7 bounds preserve the small amplitude and exact momentum
+  weights. It concerns an O(lambda) probability, not a current rate or the
+  majority of the entire packet. spectral_edge_recovery is independently
+  checking this new composition while retaining S20 as its own author premise.
+  Author arithmetic controls passed; this new draft is not in the active PR.
 
 ## Current publication preparation
 
@@ -308,13 +341,34 @@ primary mutants failed at the intended assertions. Root verified exact source
 substitutions and all hash records, matched stable successful-output prefixes
 to the fully read baseline, and read all distinct failure frames/messages.
 The current and memory/growing-time chain will form one coherent regular PR.
-Canonical final caches, citation manifest and publication checks remain pending.
+The current primary canonical cache is fresh (exit0,1.694s). Its three final
+status/link edits have a scoped addendum03cd681a83236f60f3160954851bb755c43be2a5a5f60fd53a35090518a90f1c;
+mathematical body and primary are unchanged. The future delivery pack was
+explicitly excluded from that addendum. The memory primary has17 actual
+semantic source-copy failures, each with a disclosed expected block-hash
+refresh. One harness expected source text unavailable in virtual-file
+tracebacks; the exact intended line21 failure was verified, original harness
+and unfinished manifest preserved, and the final remaining mutation executed.
+All successful prefixes match the fully read baseline; root read every
+failure frame. Final memory composition review, canonical cache, citation
+manifest and publication checks remain pending. The14-file milestone pack
+and285 exact evidence copies are in preparation; these are bookkeeping,
+not new scientific independence.
+
+Latest read-only repo sync: main unchanged at a13caa4885f547c8d206265b031ba7649e539fd9.
+All nine open PRs were inventoried. Parallel candidate-law PR#9476 now points
+to d009fb786d36a6cab4a7d410630b9382992faa08. Its body reports a new RC lane on
+energy-current conservation and gravitation constraints. Only that summary
+has been inspected here; its claims and negative conclusions are not yet
+accepted or fully reviewed. Read the underlying sources before deciding
+whether they change the next high-leverage route. Do not edit that branch.
 
 ## Boundaries and next action
 
 Both checked transport and finite-preparation walk milestones are published.
-The checked flux/form/Lean milestone is also published. Finish the combined current/memory publication milestone, then continue the
-outgoing-resolvent and quantitative-edge derivations at their checked scopes.
+The checked flux/form/Lean milestone is also published. Finish the combined
+current/memory publication milestone, check the edge and averaged-occupation
+extensions, then reassess the next major route against the updated repo.
 Keep identities and raw evidence current. Original mathematics is authorized. Lean may verify
 complex scoped obligations during audit; the universal rank-one algebra is now
 compiled and statement-checked, while analytic proof obligations remain separate.

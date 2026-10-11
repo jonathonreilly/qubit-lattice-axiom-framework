@@ -1751,3 +1751,21 @@ Still open:
 - The unique repair m₄ = −a/2 restores the lapse. It still leaves the λ > 1 branch unstable below k*, and it costs one exact extra relation.
 - General quadratic actions that break spatial diffeomorphisms give healthy full spectra in a numerical search. On a dense grid there are 9 scalar-sector candidates and 4 candidates across all sectors. All are far from GR.
 - No region compatible with the observational window has been exhibited, and no no-go theorem excludes one.
+
+### C4 sixth wave (18:48Z): lane RL2, the stable layer operators of the event route
+
+**Question.** The RL1 referee left three distinct stable L = 6 layer operators. Their curved-space mean and their physical fixed-source variance are unresolved. For these operators:
+- Does the per-sprinkling inverse reproduce Van Vleck √Δ focusing in the mean on the G-L lens?
+- Is the variance for a fixed source at physical ε (smearing) bounded?
+
+**Probe RL2.** Compute both, using the RL1 scripts and the G-L lens.
+
+**Fixed readings:**
+- **PASS:** at least one stable operator has mean magnification → √Δ, with a density-independent mismatch → 0, and noise bounded at physical parameters (ℓ_k ≤ 1e-19 m over 1 Gpc).
+- **FAIL:** each of the three operators fails at least one of the following: its mean has an O(1) mismatch, or its noise is unbounded at physical parameters.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation:**
+- The mean passes, because a local stable operator inverts to the curved Green function.
+- The noise fails at ℓ_k = 1e-19 m, consistent with the renewal growth of E1 and RL1.
+- So FAIL on noise, or INCONCLUSIVE if the small-ε variance cannot be controlled.

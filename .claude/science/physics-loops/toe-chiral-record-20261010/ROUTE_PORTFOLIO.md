@@ -299,3 +299,9 @@ sum has partner rank 7 only at chirality coefficient 0. The
 opposite-span sum has partner rank 10 at every chirality coefficient.
 It does not take one swapped-dot generator plus both caps, and it does
 not classify the 300-dimensional affine space.
+
+Cycle 59 takes one swapped-dot generator plus both cap generators.
+Every chirality coefficient has partner rank 10. The swapped-dot
+coordinate is `1` or `-1` and the scaled coordinate is `4`. It does
+not take both swapped-dot generators plus both caps, and it does not
+classify the 300-dimensional affine space.

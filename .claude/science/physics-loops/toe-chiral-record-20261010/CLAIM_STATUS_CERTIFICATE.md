@@ -1282,3 +1282,30 @@ maximal-minor gcd is a nonzero constant. One swapped-dot generator plus
 both cap generators is outside this count. The ten-kernel coefficient
 span is not classified. The 300-dimensional affine space is not
 classified.
+
+# Claim status certificate — cycle 59
+
+claim_id: chiral_pair_one_swapped_dot_both_caps_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: every ordered height pair; one swapped-dot generator plus both cap generators; every chirality coefficient
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+On every ordered height pair, one swapped-dot generator plus both cap
+generators lies outside the even space and both ratio spans. The
+plus-dot sum has swapped-dot coordinate 1 and scaled coordinate 4. The
+minus-dot sum has swapped-dot coordinate -1 and scaled coordinate 4.
+The two sums are linearly independent. Each base image has rank 10.
+The maximal-minor gcd is a nonzero constant, so every chirality
+coefficient has partner rank 10. The pivot minors at 0, 1, -1, -1/2,
+1/2, 3/2, 5/2, 2, -2, and -2/3 do not have a constant gcd. The sum of
+both swapped-dot generators and both cap generators is outside this
+count. The ten-kernel coefficient span is not classified. The
+300-dimensional affine space is not classified.

@@ -772,17 +772,32 @@ cross sums are `-2` and `-4`. The sum of one swapped-dot generator and
 both cap generators is not in this count. The ten-kernel coefficient
 span is not classified. Runner `PASS=9 FAIL=0`.
 
+Cycle 59. On every ordered height pair, one swapped-dot generator plus
+both cap generators has partner rank 10 at every chirality coefficient.
+The plus-dot sum has swapped-dot coordinate `1` and scaled coordinate
+`4`. The minus-dot sum has swapped-dot coordinate `-1` and the same
+scaled coordinate. Transverse-sign and sign-product coordinates are
+`0`. Neither sum lies in the even space or in either ratio span. The
+two sums are linearly independent. Each base image has rank 10. The
+coefficient pairs compress to 17 rows, and the gcd of the 10-by-10
+minors is a nonzero constant. The pivot minors at `0`, `1`, `-1`,
+`-1/2`, `1/2`, `3/2`, `5/2`, `2`, `-2`, and `-2/3` do not have a
+constant gcd. At heights 1 and 2 the bond on `-e_x` and `-e_y` against
+the chirality cap has kernel cross sums `-6` and `-4`. The sum of both
+swapped-dot generators and both cap generators is not in this count.
+The ten-kernel coefficient span is not classified. Runner
+`PASS=9 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every chirality coefficient on the sum of one
-swapped-dot generator and both cap generators has partner rank 10.
-That sum has both a nonzero swapped-dot coordinate and a nonzero
-scaled coordinate. One swapped-dot generator plus the cap of the same
-span has partner rank 7 only at chirality coefficient 0, and one
-swapped-dot generator plus the cap of the other span has partner rank
-10 at every chirality coefficient. Do not claim the ten-kernel
-coefficient span is settled. Do not claim the 300-dimensional affine
-space is classified.
+Decide whether every chirality coefficient on the sum of both
+swapped-dot generators and both cap generators has partner rank 10.
+The swapped-dot coordinates cancel, so that sum has swapped-dot
+coordinate 0 and scaled coordinate 4. One swapped-dot generator plus
+both cap generators has swapped-dot coordinate 1 or -1, scaled
+coordinate 4, and partner rank 10 at every chirality coefficient. Do
+not claim the ten-kernel coefficient span is settled. Do not claim the
+300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`

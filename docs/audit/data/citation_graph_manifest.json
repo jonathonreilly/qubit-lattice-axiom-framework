@@ -1,6 +1,6 @@
 {
- "edge_count": 15593,
- "node_count": 6927,
+ "edge_count": 15596,
+ "node_count": 6928,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3033,6 +3033,10 @@
   "chiral_pair_one_parity_one_excluded_cross_moments_bounded_theorem_note_2026-10-10": {
    "deps_hash": "a8dbf1667136",
    "out_degree": 4
+  },
+  "chiral_pair_one_swapped_dot_both_caps_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
   },
   "chiral_pair_one_swapped_dot_one_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
    "deps_hash": "8817e2ad5d19",

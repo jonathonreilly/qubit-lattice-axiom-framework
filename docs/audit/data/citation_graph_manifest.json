@@ -1,6 +1,6 @@
 {
- "edge_count": 15426,
- "node_count": 6874,
+ "edge_count": 15427,
+ "node_count": 6875,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4172,6 +4172,10 @@
   },
   "d3q27_dissipative_hydrodynamic_approximation_bounded_theorem_note_2026-10-09": {
    "deps_hash": "3fde0a4e6afc",
+   "out_degree": 1
+  },
+  "d3q27_nonlinear_fluid_limit_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "05b853535426",
    "out_degree": 1
   },
   "dark_energy_eos_note": {

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_mutations/wrong_fluid_time_jet.py", line 502, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_mutations/wrong_fluid_time_jet.py", line 410, in main
+    assert jt[a] + sum((j[b] * j[a].derivative(b) for b in range(3)), Fourier()) - nu * j[a].laplacian() == 0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

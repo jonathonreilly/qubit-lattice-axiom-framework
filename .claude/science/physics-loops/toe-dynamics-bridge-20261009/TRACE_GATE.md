@@ -1,3 +1,26 @@
+# Active 24-hour continuation trace
+
+Selection main: a13caa4885f547c8d206265b031ba7649e539fd9. The controlled
+nonlinear finite-velocity fluid theorem now has a complete selective independent
+check. It supplies the nonlinear convergence estimate missing from the parent's
+quadratic-moment calculation, on a supplied smooth fluid lifetime. Its status
+is proposed_retained / conditional-support, not independently audited retained.
+The microscopic model, preparation, clock and physical-observable identification
+remain premises. No physical theory is inferred from a supplied-model theorem.
+
+- trace_class: upstream_support
+- reachability_to_target: supports
+- artifact_role: theorem
+- next_trace_action: complete particle-to-nonlinear-fluid composition and test
+  local qubit realization with useful finite-resource bounds.
+
+The cutoff/L2 particle proof has a separate analytical check; final publication
+source and primary runner review remain pending. The qubit port construction and
+its polynomial exclusion-mixing bound are provisional. Current-source route
+selection and evidence limits are recorded in HANDOFF.md and OPPORTUNITY_QUEUE.md.
+
+## Preserved prior milestone trace
+
 # Trace to the physical target
 
 ```yaml

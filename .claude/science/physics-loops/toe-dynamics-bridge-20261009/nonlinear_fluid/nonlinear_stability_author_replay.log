@@ -1,0 +1,16 @@
+tuned alpha_*: full 27-component Krylov Poisson solves for 5 stresses and 3 heat sources; all 64 responses exact in Q(alpha); missing axial reaction rejected
+finite collision and projection: 288 reactions, 9 axial, BR=RB=Q, PR=RP=0, weighted symmetries exact
+analytic fluid jet: nonconstant advected shear and thermal wave; equilibrium polarization exact
+full correctors: all 27 components at delta powers -2,-1,0 and time derivative; all five macro compatibility conditions exact
+nonlinear residual delta=1/3: direct full operator equals exact residual in 77 Fourier modes; missing quadratic term rejected
+nonlinear residual delta=1/5: direct full operator equals exact residual in 77 Fourier modes; missing quadratic term rejected
+nonlinear residual delta=2/11: direct full operator equals exact residual in 77 Fourier modes; missing quadratic term rejected
+macro discriminators: removing pressure correction fails momentum; thermal coefficient 1 preserves mass but fails energy
+parameters: axial_alpha=1, viscosity=67/361, density_diffusion=4/49, thermal_advection=2/5, ux=2/7, uy=3/11, uz=-2/9, shear_amplitude=5/13, thermal_amplitude=4/15
+Fourier support: U=5, w=13, z=23, wt=13, zt=23
+coverage: exact rational finite algebra and one analytic Fourier/time-jet family at t=0; no numerical time integrator or all-data PDE convergence proof
+scope: tuned alpha_* full constitutive responses checked separately from the rational alpha=1 Fourier residual control; analytic proof supplies the general smooth-data result
+result: all author discriminator identities and failing controls verified
+runtime_seconds=27.971504
+python=3.13.5; dependencies=Python standard library only
+script_sha256=42428af72de054de764728f99e2f4446d1fc71cbe68e6aaaed2939032fb70a1a

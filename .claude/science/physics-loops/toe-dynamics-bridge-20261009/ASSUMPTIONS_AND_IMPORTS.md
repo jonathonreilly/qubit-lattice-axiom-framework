@@ -1,28 +1,21 @@
-# Assumptions and imports
+# Current assumptions and imports
 
-The foundation and approved primitive scopes are unchanged. New mathematics is
-permitted; no Hamiltonian, carrier, clock or collision law is adopted as an axiom.
+Foundation and approved primitive scopes are unchanged. New mathematics is
+authorized; no Hamiltonian, carrier, clock or collision law is adopted as an axiom.
 
-| Unit | Explicit supplied data | Provenance and open physical interface |
+| Unit | Exact source and supplied hypotheses | Current check and open interface |
 |---|---|---|
-| Existing linear hydrodynamic theorem | D3Q27 velocities/energy, positive rates, Gibbs reference, torus streaming, regularity/preparation | The supplied collision parent and the branch's independently checked theorem; native identification is open |
-| Existing graph quantum/mixing theorem | 27-level registers, connected mixing graph, local marks, ancillas, fast interchange and clock | Earlier theorem in this PR; its graph is a mixing-slot graph and has no spatial streaming interpretation |
-| New spatial particle/kinetic theorem | Position/velocity particles, mass and multiple occupancy, directed local hops, co-located binary events, rates, clocks, initial law | Constructed explicitly here; fixed-amplitude PDE result has a stated classical lifetime and fixed prefactors |
-| New spatial quantum theorem | Labelled position/velocity tensor factors, separately marked instruments, fresh ancillas, ordering and clock | Constructed explicitly here; addressable particle pairs and supplied spatial labels are not a native one-qubit-per-site encoding |
-| New simultaneous fluid theorem | Tuned nine-reaction rate, Gibbs preparation, mean-zero density fluctuation, divergence-free momentum, H4 data, vanishing amplitude and joint scales | New stopped dissipative proof plus the prior H4 theorem and new quantum bound; the physical rate selection and autonomous carrier remain open |
+| Finite collision and linear hydrodynamic parents | Transport parent 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf; D3Q27 velocities, kinetic energy, positive rates, Gibbs reference, streaming and clock | Prior selective checks reused only after exact hash matching; native identification remains open |
+| Nonlinear fluid theorem | Explicit tuned rate, amplitude delta, prepared initial family, periodic fields on a supplied smooth lifetime | Full correctors, residual, uniform Sobolev estimate and kinetic continuation independently checked against final source; no global fluid-existence or physical-temperature claim |
+| Particle/mesh extension under development | Exact Oct9 count process, normalized multinomial preparation, mesh and population scaling | Two separately started estimates agree on the critical microscopic cancellation; complete final composition remains in review |
+| Local qubit-port construction under development | One-qubit site factors, basis/role pattern, local supplied GKSL law, fast mixing, capacity and clock | Explicit geometry and averaging proof packet received; source/code review remains before publication. Moving occupations are not identified with permanent Records |
 
-The new spatial quantum generator gives exact local occupation dynamics with
-no rapid global mixing assumption. The old mixing theorem remains a separate
-mathematical model and is not silently assigned a spatial continuum limit.
-The new near-equilibrium proof supplies that conditional composition for the
-new spatial model. Its classical claim concerns a whole stochastic path;
-its finite quantum schedule concerns a uniform choice of one measurement time.
+The nonlinear continuum proof is self-contained after the finite constitutive
+parent. Bellouquid's discrete-velocity paper is methodological context, not an
+imported black-box certificate. Finite exact computations and author replay are
+distinguished from the independent analytic check. The notes name useful Lean
+obligations; no Lean execution or formal audit certificate is claimed.
 
-Mathematical tools are finite operator/counting identities, jump martingale
-energy estimates, local semilinear existence, Sobolev product bounds, and
-contractive semigroup comparisons. Their uses and hypotheses are written in
-the notes and selectively checked independently. No external persistence,
-long-time kinetic or Lean theorem is needed by these new proofs. No empirical
-observable, measured viscosity, global nonlinear PDE or nonlinear fluid limit
-is inferred. Source hashes and review coverage are in the handoff and identity
-record. Conditional use does not grant unaudited dependencies retained authority.
+Classical whole-path estimates and quantum one-time measurements have different
+quantifiers. Any new composition must match its actual generator, initialization,
+error metric and scaling rather than transfer an old estimate by substitution.

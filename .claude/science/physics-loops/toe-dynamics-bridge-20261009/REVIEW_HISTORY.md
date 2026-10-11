@@ -85,3 +85,54 @@ squared jump increments (quadratic variation), and that no physical collision
 rate is identified. The composition reviewer confirmed precisely those two
 prose edits, with no formula change, at the final source hash. Its cache and
 identity record were refreshed after this last source edit.
+
+## 2026-10-11 campaign restart
+
+User authorized a 24-hour campaign. Fetched main a13caa4885f and instruction
+revision 3a4b2c66a. Existing scientific/methodology dependencies were checked
+for source identity; main changed only dispatch metadata since d9b869b. New
+branch starts at current main with the preserved #9473 parent merged. All six
+spatial primary source hashes match their previous reviewed identities. Current
+open PR metadata and full Git path inventories are preserved externally. Three
+bounded probes are active; no new result, review PASS, audit or Lean evidence
+is claimed. Automation and fixed deadline are recorded in STATE.yaml.
+
+## Nonlinear fluid selective check, 2026-10-11
+
+The complete proof, parent and final primary runner were read by a separate
+reviewer. It independently reconstructed all five moment equations, pressure
+and mean gauges, uniform energy constants, Fourier-projection justification,
+fixed-delta endpoint continuation and positivity. Its separate rational checker
+derived all quadratic moments, off-diagonal/heat responses and the isotropy
+polynomial; replay of the author runner is labeled separately. No consequential
+defect was found. Root independently read the entire final source, primary
+runner, review and independent helper. A missing local definition of D(j) was
+added and specifically confirmed without changing the argument. Raw review and
+source identities record final coverage. This is not an audit verdict.
+
+Six actual primary-source mutations alter pressure, thermal advection, the
+quadratic residual, tuned reaction rates, projection, and fluid time jets. Each
+exits nonzero at its intended
+mathematical assertion. Full stdout/stderr are retained, with no ok cache for
+mutants. Finite checks do not prove the functional-analytic theorem by sampling.
+
+
+Nonlinear milestone conformance, sections 1–12: (1) the completely read
+constitutive parent is an explicit provisional #9473 dependency, requiring
+parent-first landing or combined review; (2) declared timeout/inputs and final
+canonical cache are fresh; (3) claim type, conditional status and supplied-model
+scope agree across source and recovery pack; (4) this is a positive conditional
+theorem, with no universal negative or no-go conclusion; (5) proof obligations,
+regularity, preparation, continuation and physical suppliers are explicit;
+(6) every primary finite family has an actual failing source mutation and
+selective independent mathematical checks; (7) primary evidence is self-contained,
+while separately authored review helpers are raw review evidence, not hidden
+primary dependencies; (8) source links resolve and the regenerated citation
+manifest adds exactly one node/edge; (9) status/trace/import fields are explicit;
+(10) no author audit verdict or main merge; (11) source identities and current
+refs were refreshed, with counts tied to the actual proposed tree; (12) focused
+checks are in DELIVERY_CHECKS.md and do not claim unrun global landing gates.
+
+The raw packaging diff is losslessly compressed to preserve its context spaces;
+its decompressed source hash remains recorded. This is an evidence-container
+change, not a proof or runner edit. No failed finite control was discarded.

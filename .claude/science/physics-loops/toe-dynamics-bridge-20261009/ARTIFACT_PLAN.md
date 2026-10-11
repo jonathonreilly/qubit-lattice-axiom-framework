@@ -1,15 +1,20 @@
-# Milestone artifact plan
+# Current milestone artifact plan
 
-The updated transport PR carries the two previous theorem notes/runners and
-three spatial continuations: nonlinear particle-to-kinetic, exact spatial
-quantum realization, and simultaneous particle-to-linear-fluid composition.
-Each has its own primary runner, declared inputs/timeout and canonical cache.
+The next regular PR is stacked on the unchanged transport PR #9473. Its first
+coherent source unit is the D3Q27 nonlinear fluid theorem and one self-contained
+primary runner, with declared inputs/timeout and a canonical fresh stdout cache.
+Related particle or local-qubit extensions join this milestone only after their
+arguments and decisive checks are ready; unfinished external probes are not
+presented as completed theorem sources.
 
-The loop pack contains selective independent reviews, their separate exact
-helpers and complete raw logs, primary mutation records, scoped prior-art
-search evidence and final source identities. Review logs are raw executions,
-not cache envelopes. They record limits on independence and finite checks.
+The `nonlinear_fluid/` evidence directory contains a selective independent
+analytic review, its separately implemented exact checker and full raw logs,
+source mutation controls and scoped repository searches. Raw evidence copies
+preserve bytes; their original external paths are explained by its README.
+NONLINEAR_SOURCE_IDENTITIES.json binds source and evidence identities.
 
-Only the citation-graph manifest may co-land from generated audit surfaces.
-No prompt, skill, axiom registry, audit result, queue or publication authority
-surface is changed. The separate photon PR is outside this continuation.
+The previous five theorem units are inherited provisional dependencies, not
+new changes in this stacked PR. Only the citation-graph manifest may co-land
+from generated audit data. No audit result, queue, axiom registry, prompt,
+skill, or publication-authority surface is authored. The main-integration
+recovery branch remains available separately.

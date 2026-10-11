@@ -1,0 +1,8 @@
+four-distinct-velocity enumeration: 288 reactions; 9 axial
+complete bilinear conservation: 729 coordinate-basis pairs; equilibrium polarization: all 15 kernel pairs
+slow quadratic moment coefficients: 10 complete coefficients, all stress and heat components
+full 27-dimensional rational solves: chi = 40/441 ; mu_off = 67/1083
+independently computed Krylov isotropy polynomial: [-22183, 4579, 536] (ascending coefficients)
+viscosity = 67/361 ; density diffusion = 4/49 ; thermal advection = 2/5
+wrong controls rejected: unit-rate isotropy, reversed quadratic collision sign, missing pressure correction -2/3
+scope: exact finite velocity algebra only; no analytic Sobolev, continuation, or convergence proof is executed

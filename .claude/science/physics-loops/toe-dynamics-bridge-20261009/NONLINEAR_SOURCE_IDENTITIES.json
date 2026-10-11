@@ -1,0 +1,41 @@
+{
+  "main_selection_revision": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "parent_revision": "73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf",
+  "publication_branch": "physics-loop/toe-nonlinear-transport-20261011",
+  "sources": {
+    "docs/D3Q27_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md": "c81c0029fb70d1cea0ecf41ee893caf357747bcda138af5d1bef5ed5848a114a",
+    "scripts/d3q27_nonlinear_fluid_limit_2026_10_11.py": "42428af72de054de764728f99e2f4446d1fc71cbe68e6aaaed2939032fb70a1a",
+    "docs/D3Q27_DISSIPATIVE_HYDRODYNAMIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-10-09.md": "038e1ed6942d79720aa1dd7360d90f9fa1067016940ceb3554efeb99c21ed0c1"
+  },
+  "evidence": {
+    "nonlinear_fluid/NONLINEAR_STABILITY_DRAFT.md": "90efaa08d5a2c2fefe9dc1f4114a37f32809fe169884cd6f01d1d826cc5ac1ae",
+    "nonlinear_fluid/NONLINEAR_STABILITY_REVIEW.md": "2eb0b7ba84984aa0515901e2032572931b4eb27a8cde4a75e7729e557fba9a41",
+    "nonlinear_fluid/README.md": "d43967fddf4e75501b5b8ef583ebc09fa6238e9e289bce558a0caf827b1a931e",
+    "nonlinear_fluid/mutations/missing_pressure.stderr": "5ea4a6ad90d9ae97cb895924e29f31369a0533c2d56e4dea8663c4e1a383c703",
+    "nonlinear_fluid/mutations/missing_pressure.stdout": "f11d960fde8c7343dd5e70bbb381900fa632d0b3a118bcddb69713ec5e5d5be1",
+    "nonlinear_fluid/mutations/missing_quadratic_residual.stderr": "87723170d039f6e0af6923d8ed37fcad360f3a1894c64459b54168c42d36f72f",
+    "nonlinear_fluid/mutations/missing_quadratic_residual.stdout": "7954200178c14cc75222f33bfc2d1e65fe207e4256782875e19eb0006e0942d3",
+    "nonlinear_fluid/mutations/source_mutations.json": "caecae93634c30c84743680a53e622f380e5bc3b1bc9d178cc032cd63c3f97ed",
+    "nonlinear_fluid/mutations/wrong_fluid_time_jet.stderr": "76c870f97ddbccd20b1fc1b2cc4a536582eb6b4e910e13ee671fd7b11c04851b",
+    "nonlinear_fluid/mutations/wrong_fluid_time_jet.stdout": "acde531295d5a3fb09907ef5c727551affc20ae91087be5c14e384d0e841d6ac",
+    "nonlinear_fluid/mutations/wrong_projection.stderr": "892ae5855c5661490a88815b02c638aeab9fad051e3c545583f905cfec3c5357",
+    "nonlinear_fluid/mutations/wrong_projection.stdout": "799399c02dd172d9809308521c231d9c0eb109385c93f5eac59fc30fa3e5deda",
+    "nonlinear_fluid/mutations/wrong_thermal.stderr": "c388177cd90b1f9f4e05c28d855a33d0564cb2b65de2f135454d267fb82bb909",
+    "nonlinear_fluid/mutations/wrong_thermal.stdout": "f11d960fde8c7343dd5e70bbb381900fa632d0b3a118bcddb69713ec5e5d5be1",
+    "nonlinear_fluid/mutations/wrong_tuned_reaction.stderr": "8553b6b23d46bd3cab930ee6870250261c4998d218115a2f348d2c2f8af89304",
+    "nonlinear_fluid/mutations/wrong_tuned_reaction.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "nonlinear_fluid/nonlinear_fluid_search.txt": "5b0a9ff64eb10de60f933300f27331d96a6e265e0c1c9da19f31a377cb0bbb3e",
+    "nonlinear_fluid/nonlinear_stability_author_replay.log": "8f75ebe801cd3f92be9fc322700eb9a3d71aec3bfbed08444189923249eb7832",
+    "nonlinear_fluid/nonlinear_stability_packaging_diff.txt.gz": "1dc2d1ddb08ef8e5d1e186f635ec27f4b3cdfe640443ce80441d4a40b22b2e84",
+    "nonlinear_fluid/nonlinear_stability_review_checks.log": "0075cbfcb89a4f4371e220a8e39449c9825443f8235e2dbbd97fe7957c11ef37",
+    "nonlinear_fluid/nonlinear_stability_review_checks.py": "80454e196faf6753cb7557ffce4b48588e520e7665a7b5563266db6335e94f5a",
+    "nonlinear_fluid/uniform_kinetic_search.txt": "897db14ddc995431f300863e4d8469ef036135b414d980a7f54c3479bd866f4f"
+  },
+  "review_scope": "Selective independent analytic and finite-algebra check; no audit verdict or physical identification.",
+  "compressed_evidence": {
+    "nonlinear_fluid/nonlinear_stability_packaging_diff.txt.gz": {
+      "decompressed_sha256": "429ed03b5802003399f940637b1c2a73ed56221bc4100cabe7eaf0bb296de9d2",
+      "encoding": "gzip; mtime=0"
+    }
+  }
+}

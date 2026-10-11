@@ -1,28 +1,31 @@
-# Microscopic dynamics to controlled macroscopic laws
+# Continuing microscopic dynamics and macroscopic transport
 
-The current user request is to continue the next highest-leverage derivations.
-This is a bounded interactive milestone on the existing coherent science
-branch; no unattended runtime, author merge, or retained-status audit is implied.
-New mathematical constructions and proofs are explicitly authorized.
+The user authorized 24 hours of work on the next highest-leverage derivations,
+with a fresh repository sync and regular milestone PRs. The fixed campaign
+window is 2026-10-11 16:00:52 UTC through 2026-10-12 16:00:52 UTC. Do not
+stop at the first milestone, extend the deadline, merge science, or apply audit
+verdicts. Original mathematics and scoped Lean audit work are authorized.
 
-Target: construct an explicit microscopic spatial model, derive its nonlinear
-kinetics, and compose a controlled weak-amplitude limit with macroscopic
-transport. Each physical supplier stays visible. The spatial composition
-was the missing interface after the previous quantum/mixing and fluid notes.
+The active target is to retain nonlinear convection in the supplied spatial
+collision-to-fluid chain, then remove concrete microscopic suppliers where a
+controlled construction is possible. The current nonlinear fluid theorem has
+a complete proof and selective independent check. Particle/mesh composition
+and a literal local-qubit carrier are active provisional extensions. Actual
+energy-current/scattering routes remain in the ranked research queue.
 
-Quantifiers: fixed D3Q27 velocities and supplied positive reversible rates;
-finite torus grids and labelled particles; explicit initial preparation,
-classical lifetime or near-equilibrium H4 assumptions; finite time horizons.
-The joint theorem specifies particle, mesh, amplitude and gate-step scales.
+Quantifiers stay explicit: fixed D3Q27 velocities and supplied rates, Gibbs
+reference, kinetic clock, prepared fluctuations and a supplied smooth fluid
+lifetime. Mathematical convergence does not identify native physical dynamics
+or prove global three-dimensional fluid regularity. No observed coefficient
+is fitted to manufacture closure.
 
-Completion witness: self-contained positive theorems, decisive runners,
-selective independent mathematical checks, source-bound recovery evidence,
-and a regular review PR. This does not change framework premises or confer
-retained status. No observed physical coefficient is used as a fitting target.
+A milestone witness is a complete argument, decisive finite controls, focused
+independent checks on load-bearing steps, exact source/recovery identities and
+a regular PR. Retained status belongs to the independent audit path.
 
-Initial source base: 17a95e60d85afc246fc7c163adef8869ab3f4194.
-Continuation head: b178e3a5d4c1d1301255596d10ac4e1bc2aeb192.
-Refreshed main for selection: d9b869b97944676aaa759915462c529dc276a04c.
-Standing instruction source: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39.
-The refreshed main changed generated audit/status data, not these scientific
-or methodology dependencies. The collision parent has an unaudited ledger row.
+Current selection main: a13caa4885f547c8d206265b031ba7649e539fd9.
+Provisional parent: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf, PR #9473.
+Instructions: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39.
+STATE.yaml and HANDOFF.md are the current operational checkpoint. Previous
+science milestones and their source records remain preserved in this pack
+and in the parent commit. No editable prompt or skill is changed.

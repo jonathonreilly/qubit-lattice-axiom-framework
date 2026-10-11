@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_mutations/wrong_tuned_reaction.py", line 502, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_mutations/wrong_tuned_reaction.py", line 331, in main
+    tuned_response_check(V, energies, M, reactions, axial_indices, K)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_mutations/wrong_tuned_reaction.py", line 115, in tuned_response_check
+    assert inner(sources[i], response[j]) == target
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,3 @@
+tuned alpha_*: full 27-component Krylov Poisson solves for 5 stresses and 3 heat sources; all 64 responses exact in Q(alpha); missing axial reaction rejected
+finite collision and projection: 288 reactions, 9 axial, BR=RB=Q, PR=RP=0, weighted symmetries exact
+analytic fluid jet: nonconstant advected shear and thermal wave; equilibrium polarization exact

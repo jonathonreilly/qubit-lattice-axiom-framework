@@ -1,0 +1,9 @@
+a13caa4885f547c8d206265b031ba7649e539fd9:docs/lanes/open_science/10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md:14:Euler / Navier–Stokes, sound — that turns a thermalized excitation gas into the
+a13caa4885f547c8d206265b031ba7649e539fd9:docs/lanes/open_science/10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md:19:continuum hydrodynamic fields; Euler / Navier–Stokes from the derived
+a13caa4885f547c8d206265b031ba7649e539fd9:docs/lanes/open_science/10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md:34:> "Does the framework give the continuum fluid equations — Euler, Navier–Stokes
+a13caa4885f547c8d206265b031ba7649e539fd9:docs/lanes/open_science/10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md:65:- Euler / Navier–Stokes from the conservation laws;
+a13caa4885f547c8d206265b031ba7649e539fd9:docs/lanes/open_science/10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md:78:### 10B. Euler / Navier–Stokes from conservation laws
+a13caa4885f547c8d206265b031ba7649e539fd9:docs/lanes/open_science/10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md:82:Navier–Stokes corrections. **Approachability:** Tier C.
+a13caa4885f547c8d206265b031ba7649e539fd9:docs/lanes/open_science/10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md:109:**Deferred:** dissipative Navier–Stokes, turbulence (out of initial scope).
+a13caa4885f547c8d206265b031ba7649e539fd9:docs/lanes/open_science/10_CONTINUUM_HYDRODYNAMICS_OPEN_LANE_2026-06-12.md:136:   dissipative Navier–Stokes?
+a13caa4885f547c8d206265b031ba7649e539fd9:docs/lanes/open_science/README.md:135:| 10 | Continuum / hydrodynamics (Euler/Navier–Stokes, sound) | MEDIUM-FOUNDATIONAL | Tier C (gated by Lane 7) | overlaps Lane 7's 7G transport + emergent-continuum work; fold-vs-standalone is an open reviewer decision |

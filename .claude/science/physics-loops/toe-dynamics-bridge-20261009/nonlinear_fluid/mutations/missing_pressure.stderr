@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_mutations/missing_pressure.py", line 502, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_mutations/missing_pressure.py", line 433, in main
+    assert moments(w) == expected_w_moments
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

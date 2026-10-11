@@ -2823,3 +2823,65 @@ Conformance, section by section:
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
     The loop-pack directory is skipped by that lint. The full audit
     pipeline was not run.
+
+## 2026-10-11 author check, cycle 48
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms on origin/main at the base `0b208e91cfc`, the
+   cycle-39 even-span note, and the cycle-32 ratio-span note, both
+   notes on this branch. The constant minor gcd is computed in this
+   runner. The order-blind converse is not applied. The even space is
+   named in cycle 39. The two spans are named in cycle 32. The
+   dimension count of the soldered bond space is not repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_cap_sum_chirality_scale_partner_kernel_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `3e4a75259c4102892df4c07401f6b455a63ef3df5adfd91b8136e80d1368fe92`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=13 FAIL=0`.
+   Elapsed 38.20 seconds.
+3. Scope. The scaled coefficient 4 vector plus an arbitrary chirality
+   coefficient, on the 48 signed permutations of `(1, 2, 3)`. The
+   coefficient pairs compress to 17 rows, and a running gcd of the
+   10-by-10 minors is a nonzero constant, so every chirality
+   coefficient, including 0, has partner rank 10. The swapped-dot
+   coefficient 1 vector is outside this all-scale count. The
+   ten-kernel coefficient span is not classified. The full soldered
+   bond space is not classified. Status line `proposed_retained`.
+   Surface status `bounded-support`.
+4. N-gate does not apply. The artifact classifies every chirality
+   coefficient on the cap sum. It does not claim that the swapped-dot
+   coefficient 1 vector has partner rank 10 at every chirality
+   coefficient.
+5. Obligations are in the note. The missing lemma is whether every
+   chirality coefficient on the swapped-dot coefficient 1 vector has
+   partner rank 10.
+6. Mutations, each on a scratch copy, exited 1. Requiring the
+   coefficient 4 minor gcd degree to be 1 gave `PASS=12 FAIL=1` on the
+   constant-gcd check. Requiring the ten-generator rank to be 48 gave
+   `PASS=12 FAIL=1` on the chirality check. Requiring the even space
+   plus both spans to have rank 8 gave `PASS=12 FAIL=1` on the
+   membership check. An independent generator closure, recomputed
+   earlier in this session, gave 24 rotations, all of determinant 1,
+   alphabet orbit 24, with `(2, 1, 3)` and `(1, 2, -3)` outside the
+   orbit. This runner repeats that closure.
+7. One primary runner. No packet helper.
+8. Four markdown links. The runner link points at the primary runner.
+   One note link points at the minimal axioms on origin/main. Two point
+   at the cycle-39 even-span note and the cycle-32 ratio-span note on
+   this branch. Manifest node_count 6917 and edge_count 15563. The new
+   node has out_degree 3 and deps_hash `8817e2ad5d19`. Dependencies are
+   `minimal_axioms`, the cycle-39 even-span note, and the cycle-32
+   ratio-span note. `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the even space and the two spans, and states that the
+   order-blind converse is not applied and that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=13 FAIL=0`, minor gcd
+    degree 0, and partner rank 10 at every chirality coefficient.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
+    The loop-pack directory is skipped by that lint. The full audit
+    pipeline was not run.

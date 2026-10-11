@@ -509,3 +509,13 @@ coefficient 1.
 Family not used: the scaled coefficient 4 vector at a chirality
 coefficient other than 0 and 1. That remains open. The 300-dimensional
 affine space is not this family.
+
+Cycle 48 target contract: whether every nonzero chirality coefficient
+on the scaled coefficient 4 vector has partner rank 10.
+
+Family used: the 17-row chirality pencil of that vector and its
+constant minor gcd.
+
+Family not used: the swapped-dot coefficient 1 vector at a chirality
+coefficient other than 0 and 1. That remains open. The 300-dimensional
+affine space is not this family.

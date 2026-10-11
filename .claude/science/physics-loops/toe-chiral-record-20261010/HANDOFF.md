@@ -624,17 +624,25 @@ rank 10. At heights 1 and 2, chirality coefficient 1 has cross sums
 The scaled coefficient 4 vector is not in this all-scale count. The
 ten-kernel coefficient span is not classified. Runner `PASS=12 FAIL=0`.
 
+Cycle 48. On the same alphabet the sign product plus both cap generators
+has scaled coefficient 4. The coefficient pairs of that vector and the
+chirality cap compress to 17 rows, and a running gcd of the 10-by-10
+minors is a nonzero constant. Every chirality coefficient therefore has
+partner rank 10. The swapped-dot vector is not in this all-scale count.
+The ten-kernel coefficient span is not classified. Runner
+`PASS=13 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every nonzero chirality coefficient on the scaled
-coefficient 4 vector has partner rank 10. Coefficient 0 and coefficient
-1 both have partner rank 10. The scaled coefficient 4/3 vector has
-partner rank 10 for every nonzero chirality coefficient. Do not claim
-the ten-kernel coefficient span is settled. Do not claim the
-300-dimensional affine space is classified. Do not repeat the bond-space
-dimension count. Do not return to the modulus-3 triple. Do not invent a
-formation rate. Do not return to shells, plaquette corner weights, or
-the `(0,1,2)` and `(1,1,2)` alphabets.
+Decide whether every chirality coefficient on the swapped-dot
+coefficient 1 vector has partner rank 10. Coefficient 0 and coefficient
+1 both have partner rank 10. The scaled coefficient 4 vector has partner
+rank 10 at every chirality coefficient. Do not claim the ten-kernel
+coefficient span is settled. Do not claim the 300-dimensional affine
+space is classified. Do not repeat the bond-space dimension count. Do
+not return to the modulus-3 triple. Do not invent a formation rate. Do
+not return to shells, plaquette corner weights, or the `(0,1,2)` and
+`(1,1,2)` alphabets.
 
 ## Cleanup
 

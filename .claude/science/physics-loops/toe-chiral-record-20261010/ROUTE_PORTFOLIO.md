@@ -233,3 +233,8 @@ Cycle 47 takes every chirality coefficient on the scaled coefficient
 4/3 vector. Every nonzero coefficient has partner rank 10. It does not
 take the scaled coefficient 4 vector at every chirality coefficient,
 and it does not classify the 300-dimensional affine space.
+
+Cycle 48 takes every chirality coefficient on the scaled coefficient 4
+vector. Every coefficient has partner rank 10. It does not take the
+swapped-dot vector at every chirality coefficient, and it does not
+classify the 300-dimensional affine space.

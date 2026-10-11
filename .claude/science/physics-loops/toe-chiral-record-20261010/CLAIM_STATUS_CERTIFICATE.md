@@ -1024,3 +1024,23 @@ gcd is a cube of the chirality coefficient. The witness cross sums at
 coefficient 1 are `-6/5`, `-1/4`, and `1/2`. The scaled coefficient 4
 vector is outside this all-scale count. The ten-kernel coefficient span
 is not classified. The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 48
+
+claim_id: chiral_pair_cap_sum_chirality_scale_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); sign product plus both cap generators; every chirality coefficient
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+Every chirality coefficient on the scaled coefficient 4 vector has
+partner rank 10. The minor gcd is a nonzero constant. The swapped-dot
+vector is outside this all-scale count. The ten-kernel coefficient span
+is not classified. The 300-dimensional affine space is not classified.

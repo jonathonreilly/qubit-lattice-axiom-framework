@@ -335,3 +335,9 @@ partner rank 7. The witness kernel cross sums at coefficient 1 are
 `-6/5`, `-1/4`, and `1/2`. It does not classify the scaled coefficient
 4 vector at every chirality coefficient, and it does not classify the
 300-dimensional affine space. This is not an N-gate no-go.
+
+Cycle 48 prunes the reading that some chirality coefficient on the
+scaled coefficient 4 vector has a nonzero ten-kernel partner. Every
+coefficient has partner rank 10. It does not classify the swapped-dot
+vector at every chirality coefficient, and it does not classify the
+300-dimensional affine space. This is not an N-gate no-go.

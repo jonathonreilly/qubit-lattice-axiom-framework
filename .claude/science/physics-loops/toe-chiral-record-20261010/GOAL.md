@@ -238,3 +238,7 @@ rank 7. The minor gcd is a cube of the chirality coefficient. The
 witness cross sums at coefficient 1 are `-6/5`, `-1/4`, and `1/2`. The
 scaled coefficient 4 vector is not in this all-scale count. The
 ten-kernel coefficient span is not classified.
+Cycle 48 shows that every chirality coefficient on the scaled
+coefficient 4 vector has partner rank 10. The minor gcd is a nonzero
+constant. The swapped-dot vector is not in this all-scale count. The
+ten-kernel coefficient span is not classified.

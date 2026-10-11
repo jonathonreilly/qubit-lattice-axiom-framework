@@ -1,0 +1,18 @@
+op0: I1 = 0.64393  (bare small-eps law z* l_k = 2.8446 sqrt(eps)) ; I_h = int tau hbar^2 (tau<=16) = 0.59373  (node ladder: z_h* l_k = 2.7315 sqrt(eps))
+   eps=1      bare-ladder variance rate: 4.9757 /l = 4.9757 /l_k  (law 2.8446 /l_k; ratio 1.749) -> predicted sd rate 2.488 /l_k
+   eps=0.5    bare-ladder variance rate: 2.4725 /l = 2.9404 /l_k  (law 2.0115 /l_k; ratio 1.462) -> predicted sd rate 1.470 /l_k
+   eps=0.25   bare-ladder variance rate: 1.2276 /l = 1.7361 /l_k  (law 1.4223 /l_k; ratio 1.221) -> predicted sd rate 0.868 /l_k
+   eps=0.125  bare-ladder variance rate: 0.6379 /l = 1.0728 /l_k  (law 1.0057 /l_k; ratio 1.067) -> predicted sd rate 0.536 /l_k
+   eps=0.01   bare-ladder variance rate: 0.0875 /l = 0.2767 /l_k  (law 0.2845 /l_k; ratio 0.973) -> predicted sd rate 0.138 /l_k
+op1: I1 = 0.73033  (bare small-eps law z* l_k = 3.0295 sqrt(eps)) ; I_h = int tau hbar^2 (tau<=16) = 0.63944  (node ladder: z_h* l_k = 2.8347 sqrt(eps))
+   eps=1      bare-ladder variance rate: 4.9769 /l = 4.9769 /l_k  (law 3.0295 /l_k; ratio 1.643) -> predicted sd rate 2.488 /l_k
+   eps=0.5    bare-ladder variance rate: 2.5179 /l = 2.9943 /l_k  (law 2.1421 /l_k; ratio 1.398) -> predicted sd rate 1.497 /l_k
+   eps=0.25   bare-ladder variance rate: 1.2782 /l = 1.8076 /l_k  (law 1.5147 /l_k; ratio 1.193) -> predicted sd rate 0.904 /l_k
+   eps=0.125  bare-ladder variance rate: 0.6752 /l = 1.1356 /l_k  (law 1.0711 /l_k; ratio 1.060) -> predicted sd rate 0.568 /l_k
+   eps=0.01   bare-ladder variance rate: 0.0934 /l = 0.2955 /l_k  (law 0.3029 /l_k; ratio 0.975) -> predicted sd rate 0.148 /l_k
+op2: I1 = 0.88453  (bare small-eps law z* l_k = 3.3340 sqrt(eps)) ; I_h = int tau hbar^2 (tau<=16) = 0.84183  (node ladder: z_h* l_k = 3.2525 sqrt(eps))
+   eps=1      bare-ladder variance rate: 5.0032 /l = 5.0032 /l_k  (law 3.3340 /l_k; ratio 1.501) -> predicted sd rate 2.502 /l_k
+   eps=0.5    bare-ladder variance rate: 2.5776 /l = 3.0653 /l_k  (law 2.3575 /l_k; ratio 1.300) -> predicted sd rate 1.533 /l_k
+   eps=0.25   bare-ladder variance rate: 1.3362 /l = 1.8897 /l_k  (law 1.6670 /l_k; ratio 1.134) -> predicted sd rate 0.945 /l_k
+   eps=0.125  bare-ladder variance rate: 0.7187 /l = 1.2087 /l_k  (law 1.1787 /l_k; ratio 1.025) -> predicted sd rate 0.604 /l_k
+   eps=0.01   bare-ladder variance rate: 0.1022 /l = 0.3231 /l_k  (law 0.3334 /l_k; ratio 0.969) -> predicted sd rate 0.162 /l_k

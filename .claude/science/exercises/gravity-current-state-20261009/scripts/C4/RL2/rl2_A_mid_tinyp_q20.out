@@ -1,0 +1,5 @@
+lens mid A=3: u_obs=153.1736  GR sqrt(Delta)=1.53174  link nu^-1/2=0.74402  G-L link/GR=0.48574
+  p=0.0005 (261s):
+   op0: hhat_lens(q/20)=+0.279724 hhat_flat(q/20)=+0.180705 | ratio q/20=1.54796 q/20=1.54796 Richardson=1.54796 | ratio/sqrt(Delta)=1.01059
+   op1: hhat_lens(q/20)=+0.284520 hhat_flat(q/20)=+0.183864 | ratio q/20=1.54745 q/20=1.54745 Richardson=1.54745 | ratio/sqrt(Delta)=1.01026
+   op2: hhat_lens(q/20)=+0.288566 hhat_flat(q/20)=+0.186541 | ratio q/20=1.54693 q/20=1.54693 Richardson=1.54693 | ratio/sqrt(Delta)=1.00992

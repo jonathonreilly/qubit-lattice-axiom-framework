@@ -1896,3 +1896,32 @@ Determine α, and the constant where possible.
 - **INCONCLUSIVE:** otherwise.
 
 **Supervisor expectation.** The ladder (renewal) structure gives rate ∝ √(Σ w² ε) by the same argument as E1's S1 (where A² ∝ εT² with a convergent coefficient). The exponent is ½ exactly, with constant ≈ ladder, so a provable lower bound gives FAIL by about 1 decade. Reading: FAIL if the lower bound closes, otherwise INCONCLUSIVE.
+
+### C4 results recorded 19:41Z (P1, RL2)
+
+**Lane RP, P1: FAIL** (bounded). Codex sol: CONFIRMED WITH CORRECTIONS. Files: `agents/C4_P1_*`.
+
+The shear responses in the RN-L1 bulk-flow coupling:
+- free KG scalar: F(M);
+- staggered fermion: −½F(2m);
+- naive taste-singlet fermion: −2F(2m).
+
+Key values: F(1) = 1.970388642e-3, and F(M) = c₀ + c₂M² + c₄M⁴ + M⁶[(384π²)⁻¹ln M + c₆] + ….
+
+Consequences:
+- Cancelling to the P0 level at physical masses needs the count rule R0 plus the mass relations R2, R4 and R6.
+- The SM proxy misses R0 by +22F(0).
+- Exactly matched spectra would cancel to all orders. Generic interactions are expected to spoil the cancellation, but this was not computed.
+- The renormalized O(λ) scalar residual vanishes.
+- Photon option B gives exactly 0.71172125. Photon option A and the O(g²) coefficient are argued, not computed.
+- The FAIL is bounded to the analyzed free dispersions and couplings. It is not a universal lattice-SUSY or interaction no-go.
+
+**Lane RL2: INCONCLUSIVE, leaning FAIL.** Codex sol: CONFIRMED WITH CORRECTIONS. The scoped positive result on the mean stays on record. Files: `agents/C4_RL2_*`.
+- **Mean (positive).** For all three stable six-layer operators, GR-like √Δ focusing at leading needle order is strongly supported. The support is the exact plane-wave Volterra reduction plus the Van Vleck cancellation, with independently checked normalizations and rerun numerics.
+- **Variance (unresolved).** The accessible data favor exponential growth at rates close to the ladder estimate. Neither the physical small-ε exponent nor the extended-source proper-time bound is proved.
+
+**Lane RW, lane-level line (supervisor, recording the fixed lane clause).** The fixed clause gives FAIL if W1 or W2 FAILs, refereed.
+- W1 is a FAIL bounded to its h-linear reflection-even quartic dressing ansatz.
+- W2 is INCONCLUSIVE.
+- W3 is INCONCLUSIVE, with FAILs in two subclasses.
+- **Reading:** lane RW is FAIL, bounded to W1's ansatz. The unrestricted question ("does the anomaly force a graviton mass, and is the broken theory healthy?") is INCONCLUSIVE.

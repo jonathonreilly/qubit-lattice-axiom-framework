@@ -1,0 +1,12 @@
+D = 1 Gpc = 3.08568e+25 m ; eps at l_k = 1e-19 m: 6.8240e-64 ; sqrt(eps) = 2.6123e-32
+s = 1.0e4 m (10 km source)     tau = 7.8558e+14 m ; k_crit = 0.00975 (k_h/k_crit = 281..334)
+     op0: n_sd(bar)=280.6, l_k needed 6.55e-19 m | op1: n_sd(bar)=290.9, l_k needed 6.63e-19 m | op2: n_sd(bar)=333.9, l_k needed 6.94e-19 m
+s = 1.2e4 m (E1'-b scale)      tau = 8.6056e+14 m ; k_crit = 0.00890 (k_h/k_crit = 307..366)
+     op0: n_sd(bar)=307.4, l_k needed 6.75e-19 m | op1: n_sd(bar)=318.7, l_k needed 6.83e-19 m | op2: n_sd(bar)=365.7, l_k needed 7.15e-19 m
+s = 3e6 m (one 100 Hz cycle)   tau = 1.3607e+16 m ; k_crit = 0.00056 (k_h/k_crit = 4860..5783)
+     op0: n_sd(bar)=4860.4, l_k needed 1.69e-18 m | op1: n_sd(bar)=5038.9, l_k needed 1.71e-18 m | op2: n_sd(bar)=5782.9, l_k needed 1.79e-18 m
+s = 3e10 m (100 s)             tau = 1.3607e+18 m ; k_crit = 0.00001 (k_h/k_crit = 486041..578287)
+     op0: n_sd(bar)=486040.6, l_k needed 7.86e-18 m | op1: n_sd(bar)=503889.2, l_k needed 7.96e-18 m | op2: n_sd(bar)=578287.1, l_k needed 8.33e-18 m
+op0: PASS at the bar would need c_true <= k_h/281, or exponent alpha >= 0.5388 (vs 1/2 derived)
+op1: PASS at the bar would need c_true <= k_h/291, or exponent alpha >= 0.5390 (vs 1/2 derived)
+op2: PASS at the bar would need c_true <= k_h/334, or exponent alpha >= 0.5400 (vs 1/2 derived)

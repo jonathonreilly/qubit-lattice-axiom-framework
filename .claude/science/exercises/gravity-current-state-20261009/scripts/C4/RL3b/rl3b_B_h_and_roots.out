@@ -1,0 +1,25 @@
+op0: I_h position space (tau<=16) = 0.593730 ; momentum (exact) = 0.595189 ; diff -1.5e-03 ; int h dsigma = 0.24193 (target 1/(2 pi c2))
+   eps=1      var-rate roots: node 1.6230  node+hopvar 4.9757  law 2.7348  (node/law 0.593 ; sd node 0.812)  MC sd rate 2.034/1.931 -> MC/node 2.51/2.38
+   eps=0.5    var-rate roots: node 1.2668  node+hopvar 2.9380  law 1.9338  (node/law 0.655 ; sd node 0.633)  MC sd rate 1.297/1.344 -> MC/node 2.05/2.12
+   eps=0.25   var-rate roots: node 0.9789  node+hopvar 1.7241  law 1.3674  (node/law 0.716 ; sd node 0.489)  MC sd rate 0.683/0.590 -> MC/node 1.40/1.21
+   eps=0.125  var-rate roots: node 0.7480  node+hopvar 1.0490  law 0.9669  (node/law 0.774 ; sd node 0.374)  MC sd rate 0.403/0.424 -> MC/node 1.08/1.13
+   eps=0.05   var-rate roots: node 0.5145  node+hopvar 0.5990  law 0.6115  (node/law 0.841 ; sd node 0.257)
+   eps=0.01   var-rate roots: node 0.2536  node+hopvar 0.2621  law 0.2735  (node/law 0.927 ; sd node 0.127)
+   eps=0.001  var-rate roots: node 0.0849  node+hopvar 0.0852  law 0.0865  (node/law 0.982 ; sd node 0.042)
+op1: I_h position space (tau<=16) = 0.639439 ; momentum (exact) = 0.639705 ; diff -2.7e-04 ; int h dsigma = 0.22950 (target 1/(2 pi c2))
+   eps=1      var-rate roots: node 1.7177  node+hopvar 4.9769  law 2.8353  (node/law 0.606 ; sd node 0.859)
+   eps=0.5    var-rate roots: node 1.3450  node+hopvar 2.9913  law 2.0048  (node/law 0.671 ; sd node 0.672)
+   eps=0.25   var-rate roots: node 1.0414  node+hopvar 1.7936  law 1.4176  (node/law 0.735 ; sd node 0.521)  MC sd rate 0.777/0.771 -> MC/node 1.49/1.48
+   eps=0.125  var-rate roots: node 0.7961  node+hopvar 1.1087  law 1.0024  (node/law 0.794 ; sd node 0.398)
+   eps=0.05   var-rate roots: node 0.5465  node+hopvar 0.6370  law 0.6340  (node/law 0.862 ; sd node 0.273)
+   eps=0.01   var-rate roots: node 0.2672  node+hopvar 0.2766  law 0.2835  (node/law 0.943 ; sd node 0.134)
+   eps=0.001  var-rate roots: node 0.0886  node+hopvar 0.0889  law 0.0897  (node/law 0.988 ; sd node 0.044)
+op2: I_h position space (tau<=16) = 0.841831 ; momentum (exact) = 0.842548 ; diff -7.2e-04 ; int h dsigma = 0.22585 (target 1/(2 pi c2))
+   eps=1      var-rate roots: node 1.8186  node+hopvar 5.0031  law 3.2539  (node/law 0.559 ; sd node 0.909)
+   eps=0.5    var-rate roots: node 1.4350  node+hopvar 3.0619  law 2.3008  (node/law 0.624 ; sd node 0.718)
+   eps=0.25   var-rate roots: node 1.1211  node+hopvar 1.8744  law 1.6269  (node/law 0.689 ; sd node 0.561)  MC sd rate 0.796/0.925 -> MC/node 1.42/1.65
+   eps=0.125  var-rate roots: node 0.8654  node+hopvar 1.1816  law 1.1504  (node/law 0.752 ; sd node 0.433)
+   eps=0.05   var-rate roots: node 0.6020  node+hopvar 0.6942  law 0.7276  (node/law 0.827 ; sd node 0.301)
+   eps=0.01   var-rate roots: node 0.3004  node+hopvar 0.3100  law 0.3254  (node/law 0.923 ; sd node 0.150)
+   eps=0.001  var-rate roots: node 0.1011  node+hopvar 0.1014  law 0.1029  (node/law 0.983 ; sd node 0.051)
+elapsed 2s

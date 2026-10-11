@@ -1,0 +1,42 @@
+=== (a) first-moment boost, 1D lattice KG, exact ===
+P = sin(k)   F = sqrt(m**2 - 2*cos(k) + 2)*cos(k)
+F - H(1-(H^2-m^2)/2) at H=w : 0
+Casimir C = P^2 - 2*int F dH ; dC along flow: 0
+
+=== (b) orbit sum rule for random even V (any generator, not first moment) ===
+trial 0: int F dH / int|F dH| = +1.31e-10;  F(0)/(V(0)^2 w''(0)) = 1.0000;  min F = -92.347 at k = 3.142;  F(pi) = -92.347
+trial 1: int F dH / int|F dH| = +1.05e-10;  F(0)/(V(0)^2 w''(0)) = 1.0000;  min F = -15.700 at k = 3.142;  F(pi) = -15.700
+trial 2: int F dH / int|F dH| = +5.76e-10;  F(0)/(V(0)^2 w''(0)) = 1.0000;  min F = -133.787 at k = 3.142;  F(pi) = -133.787
+trial 3: int F dH / int|F dH| = -6.15e-11;  F(0)/(V(0)^2 w''(0)) = 1.0000;  min F = -1.056 at k = 2.070;  F(pi) = -0.000
+trial 4: int F dH / int|F dH| = +3.35e-12;  F(0)/(V(0)^2 w''(0)) = 1.0000;  min F = -58.315 at k = 2.026;  F(pi) = -12.601
+trial 5: int F dH / int|F dH| = -5.66e-11;  F(0)/(V(0)^2 w''(0)) = 1.0000;  min F = -1.791 at k = 2.042;  F(pi) = -0.001
+
+=== (c) Magueijo-Smolin-type boost: V = w*cos(k/2) (zero at k=pi) ===
+k=1.57081: rapidity s=1.724  H=1.577983  (w_max=2.118962)  m*cosh(s)=2.026e+00
+k=3.00000: rapidity s=4.197  H=2.114234  (w_max=2.118962)  m*cosh(s)=2.329e+01
+k=3.13000: rapidity s=6.561  H=2.118930  (w_max=2.118962)  m*cosh(s)=2.474e+02
+k=3.14151: rapidity s=11.278  H=2.118962  (w_max=2.118962)  m*cosh(s)=2.768e+04
+int F dH / int|F dH| = -5.205317428246488e-11 ; F<0 for k > 1.2309702494560886
+first-moment rapidity period (V=w) tau = 2*int_0^pi dk/w = 4.789232542681681
+
+=== (d) exact Poincare along the band: V_exact = sqrt(w^2-m^2)/w' ===
+k=0.500: V_exact = 8.847e-01   (w = 0.857)
+k=2.000: V_exact = 3.374e+00   (w = 1.823)
+k=3.000: V_exact = 2.989e+01   (w = 2.114)
+k=3.100: V_exact = 1.019e+02   (w = 2.119)
+k=3.140: V_exact = 2.671e+03   (w = 2.119)
+
+=== (e) Fock space: 2-particle [K,P] is not a function of (H_tot, P_tot) ===
+(k1,k2)=(2.400,-0.400) vs (-0.617,2.097): dE=0.0e+00 dP=1.7e-16  d(sum F)=+0.5446
+(k1,k2)=(2.600,-0.400) vs (-3.032,0.238): dE=4.4e-16 dP=0.0e+00  d(sum F)=-0.3696
+(k1,k2)=(2.800,-0.400) vs (-2.599,0.481): dE=-4.4e-16 dP=0.0e+00  d(sum F)=+0.2248
+pairs found with equal (H_tot,P_tot) but different sum F: 3
+
+=== (f) where the 1D deformation sits ===
+local P = sin k : i[K,H] = -P (undeformed {H[1],H[x]});  i[P,K] = H*cos k  -> deformation cos k in {D,H}
+SLAC P = k      : i[P,K] = H (undeformed {D,H});  i[K,H] = -beta(k)*P with beta = sin k/k :
+   k=0.100  beta=+0.9983
+   k=1.000  beta=+0.8415
+   k=2.000  beta=+0.4546
+   k=3.000  beta=+0.0470
+   k=3.142  beta=+0.0000

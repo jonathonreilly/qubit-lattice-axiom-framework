@@ -1925,3 +1925,39 @@ Consequences:
 - W2 is INCONCLUSIVE.
 - W3 is INCONCLUSIVE, with FAILs in two subclasses.
 - **Reading:** lane RW is FAIL, bounded to W1's ansatz. The unrestricted question ("does the anomaly force a graviton mass, and is the broken theory healthy?") is INCONCLUSIVE.
+
+### C4 results recorded 20:23Z (B1, RL3, RL3b)
+
+All three were refereed by codex sol.
+
+**Lane RB, B1: FAIL (bounded), CONFIRMED WITH CORRECTIONS.** Files: `agents/C4_B1_*`. Scope: free matter on a smooth isolated simple Bloch band, in d = 2 and 3.
+- **Smearing forces a first moment.** A regular affine-lapse Hamiltonian smearing necessarily generates a first-moment boost.
+- **No (H, P)-closure.** If u = ω²/2 is cubic-invariant and Morse, [K_a, P_b] cannot close as a single-valued function of (H, P) alone. The obstruction is cubic Hessian invariance plus Morse theory.
+- **No undeformed Poincaré closure.** Exact undeformed positive-β closure is impossible on any bounded K-invariant sector whose commutators exponentiate.
+- **No global undeformed Lorentz action.** A global smooth undeformed Lorentz action with the usual fixed rest point cannot act on the whole Brillouin torus.
+
+Left open:
+- patchwise or singular DSR;
+- fully deformed non-first-moment algebras with extra constraints;
+- non-Morse or touching bands;
+- interacting matter;
+- unbounded sectors.
+
+**Lane RL3: INCONCLUSIVE, leaning FAIL.**
+- **RL3 (worker reported FAIL):** NOT CONFIRMED.
+  - The exact Poisson-chaos variance expansion is sound: Var_ε = Σ_k ε^k a_k, with fixed a_k ≥ 0. So no extrapolation in ε is needed at that stage.
+  - Candidate constants: c_low = 0.717–1.521 and c* = 2.732–3.253.
+  - Not proved:
+    - the uniform comparison across many insertions;
+    - the step from the capped renewal pole to a pointwise lower bound;
+    - a nonzero end factor for the extended source.
+- **RL3b (independent method): CONFIRMED WITH CORRECTIONS, INCONCLUSIVE leaning FAIL.**
+  - The Palm second moment has an exact formal renewal equation.
+  - Its shared-node part has small-ε rate k_h√ε, with k_h = 2.7348, 2.8353, 3.2539 confirmed independently.
+  - A displaced pair loses the z⁻² enhancement, but the bound is not uniform.
+  - The exclusion of 281–334 e-folds is a compelling conditional consequence, not yet a proved FAIL.
+- **The two methods agree:** exponent ½, node-ladder constant about 2.7–3.3, and a miss at the 1e-19 m bar of about 0.8 decades in ℓ_k. The open items are named lemmas: a uniform irreducible-kernel bound, and pole-to-source transfer.
+
+### Wrap-up stance (supervisor, 20:25Z)
+
+No new probes are launched after this point. Every probe has returned and every referee verdict is recorded.

@@ -1,0 +1,48 @@
+=== (a) d=2 lattice KG: W = J grad u ===
+W.grad w = 0
+  zero at Gamma: linearization eigenvalues [-I, I] -> elliptic (rotation)
+  zero at X: linearization eigenvalues [-1, 1] -> hyperbolic (boost-like)
+  zero at X': linearization eigenvalues [-1, 1] -> hyperbolic (boost-like)
+  zero at M: linearization eigenvalues [-I, I] -> elliptic (rotation)
+  orbit through (k,0): E = sqrt(m^2+2(1-cos k)) ; period T ; T/2pi - 1 ; ~ k^2/8 ?
+   k= 0.05  T=    6.2851  T/2pi-1=+3.126e-04  k^2/8=3.125e-04
+   k= 0.20  T=    6.3147  T/2pi-1=+5.015e-03  k^2/8=5.000e-03
+   k= 0.50  T=    6.4832  T/2pi-1=+3.183e-02  k^2/8=3.125e-02
+   k= 1.00  T=    7.1292  T/2pi-1=+1.347e-01  k^2/8=1.250e-01
+   k= 2.00  T=   10.6143  T/2pi-1=+6.893e-01  k^2/8=5.000e-01
+   k= 3.00  T=   26.7356  T/2pi-1=+3.255e+00  k^2/8=1.125e+00
+   k= 3.10  T=   36.5296  T/2pi-1=+4.814e+00  k^2/8=1.201e+00
+   k= 3.14  T=   62.6292  T/2pi-1=+8.968e+00  k^2/8=1.232e+00
+
+=== (b) d=2: undeformed rotation acting on a vector momentum P ===
+trial 0: zeros of p: 4, degree signs sum = 0 (list [1, -1, 1, -1]);  fold cells = 6380;  fraction of fold cells with |adj(Dp)Jp|>0.05 (no W exists there) = 0.938
+trial 1: zeros of p: 4, degree signs sum = 0 (list [1, -1, 1, -1]);  fold cells = 3548;  fraction of fold cells with |adj(Dp)Jp|>0.05 (no W exists there) = 0.941
+trial 2: zeros of p: 4, degree signs sum = 0 (list [1, -1, 1, -1]);  fold cells = 4176;  fraction of fold cells with |adj(Dp)Jp|>0.05 (no W exists there) = 0.966
+trial 3: zeros of p: 12, degree signs sum = 0 (list [1, -1, -1, -1, 1, 1, 1, 1, -1, -1, 1, -1]);  fold cells = 3432;  fraction of fold cells with |adj(Dp)Jp|>0.05 (no W exists there) = 0.792
+trial 4: zeros of p: 12, degree signs sum = 0 (list [1, -1, -1, 1, 1, -1, -1, 1, -1, 1, 1, -1]);  fold cells = 5632;  fraction of fold cells with |adj(Dp)Jp|>0.05 (no W exists there) = 0.884
+
+=== (c) lapse-smearing (first-moment) algebra: double points of (H,P=grad u) ===
+d=2 trial 0: critical points 4, Morse=True, index histogram {0: 1, 1: 2, 2: 1}, orbit-partner pairs with same (H,P=0) but different Hess u: 4 (max |dHess| 2.828)
+d=2 trial 1: critical points 4, Morse=True, index histogram {0: 1, 1: 2, 2: 1}, orbit-partner pairs with same (H,P=0) but different Hess u: 4 (max |dHess| 2.828)
+d=2 trial 2: critical points 4, Morse=True, index histogram {0: 1, 1: 2, 2: 1}, orbit-partner pairs with same (H,P=0) but different Hess u: 4 (max |dHess| 2.828)
+d=2 trial 3: critical points 4, Morse=True, index histogram {0: 1, 1: 2, 2: 1}, orbit-partner pairs with same (H,P=0) but different Hess u: 4 (max |dHess| 2.828)
+d=3 trial 0: critical points 8, Morse=True, index histogram {0: 1, 1: 3, 2: 3, 3: 1}, orbit-partner pairs with same (H,P=0) but different Hess u: 96 (max |dHess| 2.828)
+d=3 trial 1: critical points 14, Morse=True, index histogram {0: 1, 1: 3, 2: 6, 3: 4}, orbit-partner pairs with same (H,P=0) but different Hess u: 192 (max |dHess| 2.877)
+d=3 trial 2: critical points 8, Morse=True, index histogram {0: 1, 1: 3, 2: 3, 3: 1}, orbit-partner pairs with same (H,P=0) but different Hess u: 96 (max |dHess| 3.244)
+d=3 trial 3: critical points 8, Morse=True, index histogram {0: 1, 1: 3, 2: 3, 3: 1}, orbit-partner pairs with same (H,P=0) but different Hess u: 96 (max |dHess| 3.171)
+  d=2 KG van Hove line: k=(a, pi-a) vs k'=(pi-a, a)... use (k1,k2) and (pi-k1, pi-k2) with cos k1 = -cos k2
+   a=0.3: dw=+0.0e+00  |dP|=2.2e-12  Hess(k)=diag[ 0.9553 -0.9553]  Hess(k')=diag[-0.9553  0.9553]
+   a=0.8: dw=+0.0e+00  |dP|=2.2e-12  Hess(k)=diag[ 0.6967 -0.6967]  Hess(k')=diag[-0.6967  0.6967]
+   a=1.2: dw=+0.0e+00  |dP|=0.0e+00  Hess(k)=diag[ 0.3624 -0.3624]  Hess(k')=diag[-0.3624  0.3624]
+
+=== (d) d=3 KG first-moment rotations: do L_ab close so(3)? ===
+  [L12,L23] = [-sin(k3)*cos(k2), 0, sin(k1)*cos(k2)]   L13 = [-sin(k3), 0, sin(k1)]
+  [L12,L23] - cos(k2)*L13 = [0, 0, 0]
+   at k=(0.1, 0.2, 0.3): best scalar c=+0.9801, relative residual 4.540e-17; [L12,L23] tangent to level set of u: 3.5e-18
+   at k=(1.0, 0.5, 0.2): best scalar c=+0.8776, relative residual 1.463e-16; [L12,L23] tangent to level set of u: 0.0e+00
+   at k=(2.0, 1.0, 0.4): best scalar c=+0.5403, relative residual 0.000e+00; [L12,L23] tangent to level set of u: 0.0e+00
+
+=== (e) orbit-average sum rule along a random non-first-moment boost flow, d=2 ===
+   S=   10: <F_11>_orbit = <d^2H/ds^2> = +4.130e-02;  F_11 at rest = +1.0066;  min F_11 on orbit = -0.9505;  H range [1.000,2.236]
+   S=  100: <F_11>_orbit = <d^2H/ds^2> = -5.617e-03;  F_11 at rest = +1.0066;  min F_11 on orbit = -0.9505;  H range [1.000,2.236]
+   S= 1000: <F_11>_orbit = <d^2H/ds^2> = -8.393e-04;  F_11 at rest = +1.0064;  min F_11 on orbit = -0.9505;  H range [1.000,2.236]

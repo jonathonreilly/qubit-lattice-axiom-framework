@@ -1,0 +1,24 @@
+character dimensions: mass=3, two_derivative=9
+named-form ranks: mass=3, two_derivative=9
+continuous O(4) subspace dimension inside the nine forms: 4
+EH symbolic gauge-variation identity: True
+gauge-map rank=8, nullity=1, null_vector=[1, -2, 2, -1, 0, 0, 0, 0, 0]
+mass gauge-map rank=3, nullity=0
+gauge-image split ranks: O4_block=3, anisotropic_block=5
+TT restriction ranks: mass=2, all_two_derivative=4, O4_two_derivative=1
+operator codimensions: full_gauge=11, TT_restriction=5
+doubler sign identity for all (mu,a,nu): True
+fermion gamma audit: anticommutator_error=0.0e+00, normalized_trace_error=2.2e-16
+CC tadpole cancellation shifts (M1,M2,M3)=(t/2, t/2, -t/4)
+fermion rerun L=16,m=0.5: tad=0.436447040, raw_mass=[-0.405311434 -0.356306728  0.040070156], net_mass=[-0.187087914 -0.138083208 -0.069041604], fit_residual=3.33e-03
+fermion rerun cK=[ 1.2331994e-02  3.3445845e-17 -7.3401114e-18 -1.9346545e-03
+  1.5128416e-02  5.9827848e-02 -8.5213007e-03 -1.1243239e-17
+  1.6650739e-03]
+photon rerun L=8: mass=[ 0.103391039  0.20272635  -0.02584776 ], fit_residual=4.13e-02, Weyl_q2=(1.21e-17,0.00e+00)
+photon rerun cK=[ 0.0083518  0.0078467  0.0042354 -0.0065485  0.079709  -0.0246866
+  0.0015601 -0.0595157  0.0149445]
+photon constant-det cross-check L=8: mass=[ 0.103391038  0.202726349 -0.02584776 ], max_delta_vs_loop=8.73e-11
+stored converged QED total mass=[ 0.0521215  0.1662943 -0.0440633]
+stored converged QED total cK=[ 0.013521   0.0065643  0.0050804 -0.0082148  0.084796  -0.0098841
+  0.0004259 -0.0603956  0.0167416]
+smallest absolute named QED cK=4.259e-04

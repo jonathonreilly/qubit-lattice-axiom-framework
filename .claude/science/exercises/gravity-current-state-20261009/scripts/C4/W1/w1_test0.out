@@ -1,0 +1,16 @@
+tquad 20 9.0 max rel err 1/s on [3.9,16]: 4.551914400963142e-15
+tquad 28 9.0 max rel err 1/s on [3.9,16]: 7.549516567451064e-15
+tquad 36 9.0 max rel err 1/s on [3.9,16]: 4.440892098500626e-15
+r 1 monomials 10 orbits 3 0.0s
+   ch E raw functions 6
+   ch T2 raw functions 0
+r 2 monomials 182 orbits 20 0.0s
+   ch E raw functions 51
+   ch T2 raw functions 12
+r 3 monomials 1748 orbits 91 0.9s
+   ch E raw functions 258
+   ch T2 raw functions 121
+L=16 ch=E: I4=1.656164177e-04 A=I4''=2.4224290e-05 mu_undressed=-A/24=-1.00935e-06 | L_mono exact 0.000000000e+00 FD -3.529303947e-21
+L=16 ch=T2: I4=1.656164177e-04 A=I4''=-3.8667432e-07 mu_undressed=-A/24=1.61114e-08 | L_mono exact -4.577823912e-07 FD -4.577822719e-07
+L=24 ch=E: I4=1.656164147e-04 A=I4''=2.4223500e-05 mu_undressed=-A/24=-1.00931e-06 | L_mono exact 1.694065895e-21 FD -2.823443158e-20
+L=24 ch=T2: I4=1.656164147e-04 A=I4''=-3.8659600e-07 mu_undressed=-A/24=1.61082e-08 | L_mono exact -4.577823916e-07 FD -4.577822723e-07

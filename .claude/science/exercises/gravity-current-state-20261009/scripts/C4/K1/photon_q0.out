@@ -1,0 +1,4 @@
+photon L=16 [1s]: masses (cM1,cM2,cM3) = +0.103294682 +0.202773592 -0.025823671; tadpole = +0.00e+00; Weyl checks: Q(1) = +0.00e+00, 4c1+16c3 = +1.85e-10
+photon L=24 [5s]: masses (cM1,cM2,cM3) = +0.103290046 +0.202775917 -0.025822512; tadpole = +0.00e+00; Weyl checks: Q(1) = +4.63e-12, 4c1+16c3 = +8.33e-11
+photon L=32 [17s]: masses (cM1,cM2,cM3) = +0.103289279 +0.202776301 -0.025822320; tadpole = +0.00e+00; Weyl checks: Q(1) = -4.63e-12, 4c1+16c3 = +3.42e-10
+photon L=48 [79s]: masses (cM1,cM2,cM3) = +0.103288996 +0.202776443 -0.025822249; tadpole = +0.00e+00; Weyl checks: Q(1) = -4.63e-12, 4c1+16c3 = -4.35e-10

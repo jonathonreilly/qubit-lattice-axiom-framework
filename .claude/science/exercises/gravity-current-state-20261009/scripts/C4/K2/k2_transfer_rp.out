@@ -1,0 +1,21 @@
+== (a) scalar at xi = 1 ==
+s^2=  0.0: Euclidean transfer eigenvalue e^-E = 1.000000 (>0);  leapfrog tau=a |lambda|max = 1.0000
+s^2=  1.0: Euclidean transfer eigenvalue e^-E = 0.381966 (>0);  leapfrog tau=a |lambda|max = 1.0000
+s^2=  4.0: Euclidean transfer eigenvalue e^-E = 0.171573 (>0);  leapfrog tau=a |lambda|max = 1.0000
+s^2=  8.0: Euclidean transfer eigenvalue e^-E = 0.101021 (>0);  leapfrog tau=a |lambda|max = 5.8284
+s^2= 12.0: Euclidean transfer eigenvalue e^-E = 0.071797 (>0);  leapfrog tau=a |lambda|max = 9.8990
+leapfrog corner value 5+2*sqrt(6) = 9.898979485566356  (K7a: 9.9). Stable leapfrog needs tau^2 * 12 <= 4.
+
+== (b) staggered linearized graviton, temporal gauge ==
+kinetic (s_4^2) form W on h_ij, generalized eigenvalues in the h:h metric: [-0.5   0.25  0.25  0.25  0.25  0.25]
+q=[ 2.041 -2.556  0.418], s4=0.0: TT block / (h:h) = [2.71789531 2.71789531]  vs (s4^2+q^2)/4 = 2.7178953145; constraints vanish on TT: 7.3e-16; rank of constraint rows = 1
+q=[ 2.041 -2.556  0.418], s4=0.7: TT block / (h:h) = [2.84039531 2.84039531]  vs (s4^2+q^2)/4 = 2.8403953145; constraints vanish on TT: 7.3e-16; rank of constraint rows = 3
+q=[ 2.041 -2.556  0.418], s4=1.9: TT block / (h:h) = [3.62039531 3.62039531]  vs (s4^2+q^2)/4 = 3.6203953145; constraints vanish on TT: 7.3e-16; rank of constraint rows = 3
+constraint rows (4x6) singular values: [1.487737 0.676559 0.550109 0.      ] -> kernel dim 3
+
+-- unreduced temporal-gauge propagator: poles in x = s_4^2 and residue signs --
+det K_temporal(x = s_4^2) = -x**4*(4*x + 5)**2/4096
+q^2 = 5/4
+trace-trace propagator  G_tr(x) = -(12*x - 5)/(2*x**2)
+  (a pole at x = -q^2 with residue of the opposite sign to the TT pole, or no pole + polynomial/1/x
+   pieces = non-propagating constraint modes; see report)

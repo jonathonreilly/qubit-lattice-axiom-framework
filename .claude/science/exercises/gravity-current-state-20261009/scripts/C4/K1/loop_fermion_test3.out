@@ -1,0 +1,16 @@
+m=0.5 L=16  [0s]  per NAIVE fermion (/16 per Dirac taste, /4 per 4D staggered field)
+  tadpole t (Gamma_1/V = t tr h) = +0.436447040
+  masses (cM1,cM2,cM3) = -0.405311434 -0.356306728 +0.040070156   fit resid 1.0e-15
+  net masses after CC cancellation  = -0.187087914 -0.138083208 -0.069041604
+  kinetic c_j: F1=+1.2332e-02  F2=+3.3446e-17  F3=-7.3401e-18  F4=-1.9347e-03  A1=+1.5128e-02  A2=+5.9828e-02  A3=-8.5213e-03  A4=-1.1243e-17  A6=+1.6651e-03   fit resid 3.3e-03
+m=0.5 L=24  [2s]  per NAIVE fermion (/16 per Dirac taste, /4 per 4D staggered field)
+  tadpole t (Gamma_1/V = t tr h) = +0.436444108
+  masses (cM1,cM2,cM3) = -0.405297293 -0.356308568 +0.040067770   fit resid 7.0e-16
+  net masses after CC cancellation  = -0.187075239 -0.138086514 -0.069043257
+  kinetic c_j: F1=+1.2633e-02  F2=-1.0261e-17  F3=+1.4440e-17  F4=-2.0135e-03  A1=+1.5119e-02  A2=+5.9248e-02  A3=-8.2892e-03  A4=+1.6175e-17  A6=+1.6712e-03   fit resid 7.9e-04
+m=0.5 L=32  [6s]  per NAIVE fermion (/16 per Dirac taste, /4 per 4D staggered field)
+  tadpole t (Gamma_1/V = t tr h) = +0.436444075
+  masses (cM1,cM2,cM3) = -0.405297124 -0.356308578 +0.040067748   fit resid 5.8e-15
+  net masses after CC cancellation  = -0.187075086 -0.138086541 -0.069043270
+  kinetic c_j: F1=+1.2695e-02  F2=+1.2845e-17  F3=-1.3696e-17  F4=-2.0283e-03  A1=+1.5132e-02  A2=+5.9123e-02  A3=-8.2475e-03  A4=-3.4513e-17  A6=+1.6733e-03   fit resid 2.4e-04
+  constant-metric check (L=32): masses from F(g) Hessian = -0.40529712 -0.35630858 +0.04006775; tadpole +0.43644408

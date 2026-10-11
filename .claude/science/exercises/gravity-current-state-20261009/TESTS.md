@@ -1623,3 +1623,53 @@ Refereed by codex sol: NOT CONFIRMED, so the result is INCONCLUSIVE. Files: `age
 - **INCONCLUSIVE:** otherwise.
 
 **Supervisor expectation.** A healthy region exists at λ ≠ 1, as in healthy Hořava, where the khronon is healthy for an appropriate sign of (λ − 1). It requires α and λ − 1 in the khronometric window. The question is whether the anomaly forces a sign incompatible with that region. Reading: INCONCLUSIVE, leaning PASS-for-health but FAIL-for-tuning, since the khronometric tunings (F1) come on top of P0.
+
+### C4 results recorded 18:15Z (W1, M1, K1, K2, V1)
+
+All five were refereed by codex gpt-5.6-sol at xhigh. Files: `agents/C4_{W1,M1,K1,K2,V1}_*`.
+
+**Lane RW, W1: FAIL bounded to the h-linear reflection-even quartic dressing ansatz (CONFIRMED WITH CORRECTIONS). The unrestricted question is INCONCLUSIVE.**
+- Inside that ansatz the E and T2 cancellation loci are codimension-1 spheres, so cancelling requires tuning.
+- Corrections:
+  - Quadratic dressings were omitted.
+  - The reported dimensions need reflection symmetry.
+  - The "50×" figure is not generic.
+  - v_R is a determined completion built from the state, not a tuning.
+  - Strained normal ordering cancels the bond O(λ′) term with fixed seagulls.
+- The P₄ route was not computed.
+
+**Lane RV, V1: INCONCLUSIVE (NOT CONFIRMED as PASS).**
+- Established:
+  - For massive onsite φ⁴, the vacuum-annihilating dressing fixes an exponentially quasi-local 0↔4 kernel.
+  - The 1↔3 block is gapped.
+  - The 2↔2 block stays obstructed.
+  - Given Rule R, the dressed vertex and the seagull cancel exactly at O(λ²), so μ_E = μ_T2 = 0 with no tunable coefficient.
+- Why this is not a PASS:
+  - R is a vacuum-referenced coupling convention. It is not derived and not basis-free.
+  - It leaves an O(λε) scattering Ward-identity defect, a physical stress defect. That defect conflicts with universal coupling under the usual massless spin-2 assumptions.
+  - The "all orders" claim needs an exact W that was never constructed.
+- **Reading:** a conditional mechanism that works for the vacuum only, and the most promising lead of C4.
+
+**Lane RM, M1: FAIL (bounded) (CONFIRMED WITH CORRECTIONS).**
+- Assume a first-moment boost and strong conservation of the energy current. Then every globally isolated positive-energy composite band has current ∇(E²/2). C3 closure would require Hess = βI, but periodicity forces the averaged anomaly to be −βI. This holds whatever the binding, size, fibre dimension or Chern twist.
+- For finite-range, number-conserving models over an empty vacuum, every finite-N sector is excluded by the bounded-sector theorem.
+- Not excluded:
+  - non-first-moment generators;
+  - non-number-conserving embedded sectors in d ≥ 2;
+  - irrational centres;
+  - massless sectors;
+  - unbounded continuum sectors.
+
+**Lane RK2, K1: N_tune(Z⁴) = 11 = 3 + 8 (CONFIRMED WITH CORRECTIONS). Lane K's question is answered NO.**
+- This is an exact operator-codimension count under the registered definition, after a separate tuning for the cosmological tadpole.
+- It is corroborated by a one-loop example in which every coefficient is nonzero.
+- It is not a universal theorem for every W(B4)-covariant stress.
+- 5 is the rank of the Euclidean TT restriction. It is not a proved physical floor for two helicities.
+
+**Lane RK2, K2: INCONCLUSIVE (CONFIRMED WITH CORRECTIONS).**
+- The free lattice Fierz–Pauli action has an exact linearized gauge identity and 10 affine Killing parameters.
+- The scalar and the naive/staggered fermion have local symmetric stresses, giving exact coupled invariance through O(κ).
+- Their Killing transformations provably fail e(4) closure at O(κ²), and a seagull cannot repair it.
+- The general no-go needs hypotheses that are not established for every reflection-positive theory: compact smooth shells, a Wick-real translation symbol, and a complete boost flow.
+- The free scalar and reduced TT graviton transfer matrices are positive; 9.899 is a leapfrog instability only.
+- Coupled reflection positivity is unproved.

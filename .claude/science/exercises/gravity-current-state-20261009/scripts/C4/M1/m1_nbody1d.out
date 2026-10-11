@@ -1,0 +1,56 @@
+M1 (1b): N-body clusters on Z (N=2,3,4), exact in a truncated relative box (fibre H(Q) is an
+exactly 2pi-periodic analytic family at every box size R).
+Constituents eps(k) = m + 2t(1-cos k) (nearest-neighbour), m=1, t=0.5 -> beta = u''(0) = 2tm = 1.
+(a) soft-core contact attraction U (attractive Bose-Hubbard clusters, McGuire-type);
+(b) hard-core + NN attraction = ferromagnetic XXZ n-magnon strings; compare exact
+    E_n(K) = J sinh(eta) (cosh(n eta) - cos K)/sinh(n eta), Delta = cosh eta.
+For the lowest cluster band: u=E^2/2, beta_N = u''(0), anomaly A(Q)=u''/beta - 1, its zone average,
+the IR anomaly against the constituent's anomaly at Q/N, and the face concentration.
+
+constituent anomaly A_1(k)=u''-1 for eps=m+2t(1-cos k):  A_1(k) = eps*2t cos k + 4t^2 sin^2 k - 1
+N=2 U=-0.25 R=120: E(0)=1.98444 B(0)=0.0156 min gap to next level=0.0162 (Q at min gap +0.00)
+    beta_N/beta = 0.98446  [1 - B/(N m) = 0.99222];  zone avg A = -1.000000 (sum rule => -1);  avg u''=+1.1e-16
+    A(pi/4) = +0.1182   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.1407;  A(face) = -15.995;  min A = -15.995
+N=2 U=-0.50 R=120: E(0)=1.93845 B(0)=0.0616 min gap to next level=0.0622 (Q at min gap +0.00)
+    beta_N/beta = 0.94028  [1 - B/(N m) = 0.96922];  zone avg A = -1.000000 (sum rule => -1);  avg u''=-2.8e-17
+    A(pi/4) = +0.0556   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.1407;  A(face) = -8.000;  min A = -8.000
+N=2 U=-1.00 R=120: E(0)=1.76393 B(0)=0.2361 min gap to next level=0.2367 (Q at min gap +0.00)
+    beta_N/beta = 0.78885  [1 - B/(N m) = 0.88197];  zone avg A = -1.000000 (sum rule => -1);  avg u''=+1.0e-17
+    A(pi/4) = -0.1452   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.1407;  A(face) = -4.000;  min A = -4.000
+N=2 U=-2.00 R=120: E(0)=1.17157 B(0)=0.8284 min gap to next level=0.8291 (Q at min gap +0.00)
+    beta_N/beta = 0.41421  [1 - B/(N m) = 0.58579];  zone avg A = -1.000000 (sum rule => -1);  avg u''=+5.2e-18
+    A(pi/4) = -0.5693   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.1407;  A(face) = -2.000;  min A = -2.000
+N=2 U=-4.00 R=120: E(0)=-0.47214 B(0)=2.4721 min gap to next level=2.4728 (Q at min gap +0.00)
+    beta_N/beta = -0.10557  [1 - B/(N m) = -0.23607];  zone avg A = -1.000000 (sum rule => -1);  avg u''=+1.1e-18
+    A(pi/4) = -1.0418   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.1407;  A(face) = -1.000;  min A = -1.106
+N=3 U=-0.50 R=36: E(0)=2.74571 B(0)=0.2543 min gap to next level=0.1946 (Q at min gap +0.00)
+    beta_N/beta = 0.83241  [1 - B/(N m) = 0.91524];  zone avg A = -1.000000 (sum rule => -1);  avg u''=-1.0e-17
+    A(pi/4) = -0.1367   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.0658;  A(face) = -7.491;  min A = -7.491
+N=3 U=-1.00 R=36: E(0)=1.98070 B(0)=1.0193 min gap to next level=0.7819 (Q at min gap +0.00)
+    beta_N/beta = 0.42630  [1 - B/(N m) = 0.66023];  zone avg A = -1.000000 (sum rule => -1);  avg u''=-7.8e-18
+    A(pi/4) = -0.6029   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.0658;  A(face) = -1.916;  min A = -1.916
+N=3 U=-2.00 R=36: E(0)=-0.46849 B(0)=3.4685 min gap to next level=2.6112 (Q at min gap +0.00)
+    beta_N/beta = -0.03915  [1 - B/(N m) = -0.15616];  zone avg A = -1.000000 (sum rule => -1);  avg u''=-5.4e-20
+    A(pi/4) = -1.0238   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.0658;  A(face) = -0.973;  min A = -1.039
+N=3 U=-4.00 R=36: E(0)=-6.21166 B(0)=9.2117 min gap to next level=6.6334 (Q at min gap +0.00)
+    beta_N/beta = -0.14241  [1 - B/(N m) = -2.07055];  zone avg A = -1.000000 (sum rule => -1);  avg u''=-1.7e-18
+    A(pi/4) = -1.1009   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.0658;  A(face) = -0.857;  min A = -1.142
+N=4 U=-1.00 R=13: E(0)=1.24075 B(0)=2.7593 min gap to next level=1.6958 (Q at min gap +0.00)
+    beta_N/beta = 0.08382  [1 - B/(N m) = 0.31019];  zone avg A = -1.000000 (sum rule => -1);  avg u''=+2.2e-19
+    A(pi/4) = -0.9335   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.0377;  A(face) = -1.108;  min A = -1.108
+N=4 U=-2.00 R=13: E(0)=-4.34609 B(0)=8.3461 min gap to next level=4.8142 (Q at min gap +0.00)
+    beta_N/beta = -0.04375  [1 - B/(N m) = -1.08652];  zone avg A = -1.000000 (sum rule => -1);  avg u''=-6.0e-19
+    A(pi/4) = -1.0310   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.0377;  A(face) = -0.956;  min A = -1.044
+N=4 U=-4.00 R=13: E(0)=-16.16828 B(0)=20.1683 min gap to next level=10.9629 (Q at min gap +0.00)
+    beta_N/beta = -0.02090  [1 - B/(N m) = -4.04207];  zone avg A = -1.000000 (sum rule => -1);  avg u''=+2.2e-19
+    A(pi/4) = -1.0148   constituent A_1(pi/4)=+0.4142, A_1(pi/(4N))=+0.0377;  A(face) = -0.979;  min A = -1.021
+
+XXZ ferromagnet n-magnon strings: hard-core, NN attraction -J*Delta, hopping J/2; J=1
+  Delta=1.5 n=1: max|E_num - E_exact| = 0.00e+00; band max=2.5000 (n->inf limit J sinh eta=1.1180); bandwidth=2.000e+00; own beta_n=5.000e-01; <u''>=-1.4e-17
+  Delta=1.5 n=2: max|E_num - E_exact| = 4.44e-16; band max=1.5000 (n->inf limit J sinh eta=1.1180); bandwidth=6.667e-01; own beta_n=2.778e-01; <u''>=-2.6e-18
+  Delta=1.5 n=3: max|E_num - E_exact| = 5.33e-15; band max=1.2500 (n->inf limit J sinh eta=1.1180); bandwidth=2.500e-01; own beta_n=1.250e-01; <u''>=-1.1e-18
+  Delta=1.5 n=4: max|E_num - E_exact| = 9.33e-15; band max=1.1667 (n->inf limit J sinh eta=1.1180); bandwidth=9.524e-02; own beta_n=5.102e-02; <u''>=+2.7e-20
+  Delta=3.0 n=1: max|E_num - E_exact| = 4.44e-16; band max=4.0000 (n->inf limit J sinh eta=2.8284); bandwidth=2.000e+00; own beta_n=2.000e+00; <u''>=-4.9e-17
+  Delta=3.0 n=2: max|E_num - E_exact| = 8.88e-16; band max=3.0000 (n->inf limit J sinh eta=2.8284); bandwidth=3.333e-01; own beta_n=4.444e-01; <u''>=-1.5e-18
+  Delta=3.0 n=3: max|E_num - E_exact| = 8.44e-15; band max=2.8571 (n->inf limit J sinh eta=2.8284); bandwidth=5.714e-02; own beta_n=8.000e-02; <u''>=-7.6e-19
+  Delta=3.0 n=4: max|E_num - E_exact| = 1.02e-14; band max=2.8333 (n->inf limit J sinh eta=2.8284); bandwidth=9.804e-03; own beta_n=1.384e-02; <u''>=-5.8e-20

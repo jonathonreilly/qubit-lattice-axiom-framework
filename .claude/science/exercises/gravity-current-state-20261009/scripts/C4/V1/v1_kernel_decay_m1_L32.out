@@ -1,0 +1,28 @@
+m=1.0 L=32: t-quadrature for 1/s on [4.000,14.422]: max rel err 3.93e-14 (n=40, beta=9.254)
+single-leg branch-point rate 2 asinh(m/2) = 0.9624 (axis); body-diag per unit |x|_1 differs
+
+--- variant a ---
+C1 three legs at 0, leg4 at r*x     : |K|(r=0,2,..,16) = 1.73e-15 3.94e+00 7.61e-02 3.52e-03 2.49e-04 2.18e-05 2.14e-06 2.24e-07 4.37e-16
+      fitted exp. rate (r in [4,10]) = 1.3561 per site; local rates -17.681 1.974 1.537 1.324 1.218 1.160 1.130 10.027
+C1b three legs at 0, leg1 at r*x    : |K|(r=0,2,..,16) = 1.73e-15 3.94e+00 7.61e-02 3.52e-03 2.49e-04 2.18e-05 2.14e-06 2.24e-07 4.37e-16
+      fitted exp. rate (r in [4,10]) = 1.3561 per site; local rates -17.681 1.974 1.537 1.324 1.218 1.160 1.130 10.027
+C2 pairs (0,0) and (r x, r x)       : |K|(r=0,2,..,16) = 1.73e-15 1.40e-17 5.24e-19 2.41e-20 1.76e-21 2.16e-22 2.16e-23 2.25e-24 5.87e-25
+      fitted exp. rate (r in [4,10]) = 1.3000 per site; local rates 2.410 1.642 1.540 1.308 1.049 1.152 1.131 0.671
+C3 legs 0, r x, r y, r z            : |K|(r=0,2,..,16) = 1.73e-15 3.99e-04 1.38e-08 3.21e-12 1.92e-15 1.86e-18 2.39e-21 3.74e-24 8.90e-35
+      fitted exp. rate (r in [4,10]) = 3.7801 per site; local rates -13.081 5.137 4.182 3.712 3.470 3.328 3.230 12.230
+C4 three legs at 0, leg4 at r*(1,1,0): |K|(r=0,2,..,16) = 1.73e-15 1.75e-01 2.13e-03 5.59e-05 1.95e-06 7.89e-08 3.47e-09 1.60e-10 7.04e-27
+      fitted exp. rate (r in [4,10]) = 1.6979 per site; local rates -16.123 2.205 1.819 1.677 1.605 1.562 1.539 18.832
+[1s]
+
+--- variant phi3pi ---
+C1 three legs at 0, leg4 at r*x     : |K|(r=0,2,..,16) = 1.83e-14 6.86e+01 2.04e+00 1.17e-01 9.42e-03 8.99e-04 9.44e-05 1.04e-05 4.01e-15
+      fitted exp. rate (r in [4,10]) = 1.2847 per site; local rates -17.932 1.759 1.429 1.260 1.174 1.127 1.104 10.837
+C1b three legs at 0, leg1 at r*x    : |K|(r=0,2,..,16) = 1.83e-14 1.27e+01 8.82e-02 2.31e-03 1.14e-04 7.81e-06 6.38e-07 5.76e-08 4.77e-15
+      fitted exp. rate (r in [4,10]) = 1.5502 per site; local rates -17.087 2.484 1.821 1.504 1.341 1.252 1.202 8.154
+C2 pairs (0,0) and (r x, r x)       : |K|(r=0,2,..,16) = 1.83e-14 2.64e-01 1.23e-04 2.72e-07 1.32e-09 9.63e-12 8.85e-14 9.44e-16 7.33e-24
+      fitted exp. rate (r in [4,10]) = 2.7203 per site; local rates -15.151 3.837 3.055 2.664 2.461 2.345 2.270 9.337
+C3 legs 0, r x, r y, r z            : |K|(r=0,2,..,16) = 1.83e-14 1.26e-03 2.33e-08 3.94e-12 1.92e-15 1.61e-18 1.85e-21 2.65e-24 1.40e-34
+      fitted exp. rate (r in [4,10]) = 3.8907 per site; local rates -12.478 5.448 4.343 3.813 3.542 3.385 3.275 11.833
+C4 three legs at 0, leg4 at r*(1,1,0): |K|(r=0,2,..,16) = 1.83e-14 4.46e+00 7.41e-02 2.27e-03 8.73e-05 3.79e-06 1.76e-07 8.50e-09 1.94e-25
+      fitted exp. rate (r in [4,10]) = 1.6451 per site; local rates -16.565 2.049 1.744 1.628 1.569 1.534 1.516 19.161
+[1s]

@@ -1,0 +1,21 @@
+== exact O(kappa) identity:  sum E*L_xi phi  + c * sum_{mn} (dh_mn) T_mn = 0  for all phi, xi ==
+m2= 0.00 L=3: fitted c = -0.500000; max residual |a + c b| = 0.0
+m2= 0.00 L=4: fitted c = -0.500000; max residual |a + c b| = 0.0
+m2= 0.00 L=6: fitted c = -0.500000; max residual |a + c b| = 0.0
+m2= 0.75 L=3: fitted c = -0.500000; max residual |a + c b| = 0.0
+m2= 0.75 L=4: fitted c = -0.500000; max residual |a + c b| = 0.0
+m2= 0.75 L=6: fitted c = -0.500000; max residual |a + c b| = 0.0
+m2= 3.00 L=3: fitted c = -0.500000; max residual |a + c b| = 0.0
+m2= 3.00 L=4: fitted c = -0.500000; max residual |a + c b| = 0.0
+m2= 3.00 L=6: fitted c = -0.500000; max residual |a + c b| = 0.0
+
+=> T_mn is an exactly (off-shell) conserved, symmetric, local stress; with
+   S = S_FP(h) + S_m + kappa * c * sum h_mn T_mn and  delta h = nabla xi + nabla xi,
+   delta phi = kappa L_xi phi, the coupled action is gauge invariant at O(kappa) EXACTLY.
+
+== Killing restriction: pseudo-rotation  L_w phi = w_{nu mu} x_mu D_nu phi  (D = symmetric difference) ==
+rotation in plane (0,1): max |delta S_m| = 0.0
+rotation in plane (0,3): max |delta S_m| = 0.0
+rotation in plane (2,3): max |delta S_m| = 0.0
+=> the restriction of the matter gauge transformation to each lattice Killing rotation
+   (including (4,j) 'Euclidean boosts') is an exact symmetry of the free lattice scalar.

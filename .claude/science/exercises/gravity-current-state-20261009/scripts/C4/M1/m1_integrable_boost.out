@@ -1,0 +1,43 @@
+M1 (3): exact Pauli-string algebra on the infinite chain for translation-invariant local densities.
+K = sum_n n h_n (first moment of the energy density), P = i[H,K] (total energy current; the Tetel'man/
+Sogo-Wadati/Thacker 'boost operator' of integrable chains is exactly this K).
+Checks, as exact operator identities (coefficients are exact rationals up to float printing):
+  C1: [H,P] = 0 ?   (conservation of the energy current; true for XXZ and free chains, false for non-integrable)
+  C3: i[K,P] = -beta H ?  (closure); residual = the part of i[K,P] outside span{h, 1}.
+
+XX (free fermions, Delta=0):
+   energy current P: 2 words, max range 3;  |i[H,P]|_HS = 0.000e+00  (C1: 0 iff current conserved)
+   i[K,P] = -beta H + R:  best beta = -0.500000;  |R|/|i[K,P]| = 0.7071;  max range of R = 4
+   largest residual words: XZZX:-0.1250, YZZY:-0.1250, YY:+0.0000, XX:+0.0000
+XXZ Delta=0.5 (integrable, gapless):
+   energy current P: 6 words, max range 3;  |i[H,P]|_HS = 0.000e+00  (C1: 0 iff current conserved)
+   i[K,P] = -beta H + R:  best beta = -0.666667;  |R|/|i[K,P]| = 0.7454;  max range of R = 4
+   largest residual words: XZZX:-0.1250, YZZY:-0.1250, XZXZ:+0.0625, XYYX:-0.0625
+XXX Delta=1:
+   energy current P: 6 words, max range 3;  |i[H,P]|_HS = 0.000e+00  (C1: 0 iff current conserved)
+   i[K,P] = -beta H + R:  best beta = -1.000000;  |R|/|i[K,P]| = 0.7454;  max range of R = 4
+   largest residual words: XZZX:-0.1250, XZXZ:+0.1250, XYYX:-0.1250, XYXY:+0.1250
+XXZ Delta=2 (integrable, gapped):
+   energy current P: 6 words, max range 3;  |i[H,P]|_HS = 0.000e+00  (C1: 0 iff current conserved)
+   i[K,P] = -beta H + R:  best beta = -1.500000;  |R|/|i[K,P]| = 0.7906;  max range of R = 4
+   largest residual words: ZYYZ:-0.5000, ZXXZ:-0.5000, XZXZ:+0.2500, XYYX:-0.2500
+TFIM g=1, on-site field anchored at n (a non-symmetric density):
+   energy current P: 1 words, max range 2;  |i[H,P]|_HS = 8.000e+00  (C1: 0 iff current conserved)
+   current not conserved: the Poincare relation [H,P]=0 already fails (C1); C3 bracket not formed
+TFIM g=1, symmetric bond density (critical Ising, free Majorana; IR CFT):
+   energy current P: 2 words, max range 2;  |i[H,P]|_HS = 0.000e+00  (C1: 0 iff current conserved)
+   i[K,P] = -beta H + R:  best beta = -2.000000;  |R|/|i[K,P]| = 0.7071;  max range of R = 3
+   largest residual words: ZXZ:+2.0000, YY:-2.0000, ZZ:+0.0000, X:+0.0000
+TFIM g=0.5, symmetric bond density (gapped free Majorana):
+   energy current P: 2 words, max range 2;  |i[H,P]|_HS = 0.000e+00  (C1: 0 iff current conserved)
+   i[K,P] = -beta H + R:  best beta = -0.800000;  |R|/|i[K,P]| = 0.8246;  max range of R = 3
+   largest residual words: ZXZ:+1.0000, X:-0.6000, YY:-0.5000, ZZ:+0.3000
+XXZ Delta=0.5 + NNN J2=0.3 (non-integrable):
+   energy current P: 24 words, max range 5;  |i[H,P]|_HS = 1.042e-01  (C1: 0 iff current conserved)
+   current not conserved: the Poincare relation [H,P]=0 already fails (C1); C3 bracket not formed
+
+Is the residual R of i[K,P] itself conserved (the next charge of the hierarchy)?
+   XXZ Delta=0.5: |i[H, i[K,P]]|_HS = 0.00e+00  (0 => i[K,P] is a conserved charge, range 4)
+   XXZ Delta=2: |i[H, i[K,P]]|_HS = 0.00e+00  (0 => i[K,P] is a conserved charge, range 4)
+   TFIM g=1 sym: |i[H, i[K,P]]|_HS = 0.00e+00  (0 => i[K,P] is a conserved charge, range 3)
+   TFIM g=0.5 sym: |i[H, i[K,P]]|_HS = 0.00e+00  (0 => i[K,P] is a conserved charge, range 3)

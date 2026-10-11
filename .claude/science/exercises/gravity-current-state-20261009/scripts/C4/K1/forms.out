@@ -1,0 +1,12 @@
+[mass] dim of W(B4)-invariant mass forms = 3  (sv gap 1.00e+00 / 1.76e-16)
+[mass] named M1=sum h_mm^2, M2=sum_{m!=n} h_mn^2, M3=(tr h)^2: rank 3  in invariant span: True
+[mass] rank of mass forms restricted to TT modes: 2
+[mass] gauge map rank on mass forms: 3 (3 => no mass combination is gauge invariant)
+[kin] dim of W(B4)-invariant two-derivative forms = 9  (sv gap 8.23e-01 / 3.16e-15)
+[kin] named 9 forms: rank 9 ; invariant: True ; span = invariant space: True
+[kin] O(4)-invariant subspace dim = 4
+[kin] gauge map rank = 8 (gap 2.87e+01/2.52e-13); gauge-invariant forms = 1
+[kin] null vector (coeffs of F1..F4,A1,A2,A3,A4,A6) normalised to F1: [ 1. -2.  2. -1. -0. -0. -0.  0. -0.]
+[kin] gauge-image rank: O(4) block 3 , anisotropic block 5
+[kin] TT-restricted rank: all 9 -> 4; O(4) block -> 1
+[count] W(B4) quadratic forms: masses 3 (TT-visible 2), two-derivative 9 (O(4) 4, gauge-invariant 1); non-gauge-invariant: 3 mass + 8 kinetic = 11; of the kinetic: 3 O(4) + 5 anisotropic

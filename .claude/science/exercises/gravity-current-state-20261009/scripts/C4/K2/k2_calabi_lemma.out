@@ -1,0 +1,12 @@
+nvar=3 degree d=1: dim V(x)P_d = 9, rank(div) = 6, expected = 6 OK
+nvar=3 degree d=2: dim V(x)P_d = 18, rank(div) = 18, expected = 18 OK
+nvar=3 degree d=3: dim V(x)P_d = 30, rank(div) = 30, expected = 30 OK
+nvar=3 degree d=4: dim V(x)P_d = 45, rank(div) = 45, expected = 45 OK
+nvar=3 degree d=5: dim V(x)P_d = 63, rank(div) = 63, expected = 63 OK
+nvar=3 degree d=6: dim V(x)P_d = 84, rank(div) = 84, expected = 84 OK
+nvar=4 degree d=1: dim V(x)P_d = 16, rank(div) = 10, expected = 10 OK
+nvar=4 degree d=2: dim V(x)P_d = 40, rank(div) = 40, expected = 40 OK
+nvar=4 degree d=3: dim V(x)P_d = 80, rank(div) = 80, expected = 80 OK
+nvar=4 degree d=4: dim V(x)P_d = 140, rank(div) = 140, expected = 140 OK
+nvar=4 degree d=5: dim V(x)P_d = 224, rank(div) = 224, expected = 224 OK
+nvar=4 degree d=6: dim V(x)P_d = 336, rank(div) = 336, expected = 336 OK

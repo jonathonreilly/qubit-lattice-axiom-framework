@@ -1,0 +1,5 @@
+axis 0: internal reflection, max |rho^T B(q) rho - B(q)| / |B| = 3.5e-17
+axis 1: internal reflection, max |rho^T B(q) rho - B(q)| / |B| = 3.5e-17
+axis 2: internal reflection, max |rho^T B(q) rho - B(q)| / |B| = 2.1e-18
+axis 3: internal reflection, max |rho^T B(q) rho - B(q)| / |B| = 9.6e-19
+photon (no such symmetry): internal reflection axis 0, max rel dev = 7.1e-02

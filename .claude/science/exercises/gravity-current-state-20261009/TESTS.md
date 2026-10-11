@@ -2023,3 +2023,22 @@ Use:
 - **Still open.** Gaussian or edgeless histories, and the actual prefactor for a finite source at 1 Gpc.
 
 **Lane RL3 / event-route noise: FAIL (bounded).** This follows the fixed RL4 reading: both lemmas are proved within the stated scope. The event substrate with stable layer readouts gets GR's √Δ lensing in the mean (RL2, positive). Its noise, however, grows at least as exp(0.63√ε·τ/ℓ_k). At the 1e-19 m locality bar this fails for edged sources over 1 Gpc. The required ℓ_k is about 7e-19 m, a miss of less than one decade.
+
+### C4 last probe (21:08Z): lane RX, is the 1e-19 m locality bar the right bar?
+
+**Why this matters.** The event-route noise fails at ℓ_k = 1e-19 m by less than one decade; it needs about 7e-19 m (RL4, refereed). That bar came from E1's pre-registration. Two questions follow:
+- What do current observations actually bound for a causal-set or Benincasa–Dowker non-locality scale ℓ_k?
+- Where did the 1e-19 m figure come from?
+
+**Probe X1.** Sources:
+- the packet's own origin for the bar (grep TESTS.md and supervisor_thread);
+- the literature: Belenchia–Benincasa–Liberati–Marin and others on non-local d'Alembertians; LHC and collider effective-field-theory bounds on non-locality; optomechanical bounds; Saravani–Aslanbeigy–Kempf.
+
+Report the strongest bound on ℓ_k with its source, and whether ℓ_k ≈ 7e-19 m is excluded.
+
+**Fixed readings for X1.**
+- **Bar too strict:** the strongest observational bound is weaker than 7e-19 m. The noise result then passes observationally, but the E1-registered bar is not changed. A follow-up test would need a new dated pre-registration.
+- **Bar justified:** some bound excludes 7e-19 m.
+- **Unclear:** otherwise.
+
+No PASS or FAIL is recorded for any lane on the basis of X1. E1's fixed readings stand.

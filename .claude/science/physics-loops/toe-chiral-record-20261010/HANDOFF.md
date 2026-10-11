@@ -655,12 +655,24 @@ on the source-same height pairs are not in this rank-7 count. The
 ten-kernel coefficient span is not classified. Runner
 `PASS=15 FAIL=0`.
 
+Cycle 51. On the source-same ordered height pairs `(1, 2)`, `(2, 1)`,
+and `(3, 1)`, the second even generator plus both swapped-dot generators
+has swapped coordinate `-2`, parallel coordinate `-1`, oblique
+coordinate `1`, and orthogonal coordinate `2`. The base image has rank
+10, so chirality coefficient 0 already has partner rank 10. The
+coefficient pairs compress to 17 rows. The monic pivot minor at
+chirality coefficient 1 is `(c - 2)^2`, and the monic pivot minor at
+coefficient 2 is `c^3(c - 1)`. Their gcd is a nonzero constant, so
+every chirality coefficient has partner rank 10. The sign product plus
+both swapped-dot generators is not in this count. The ten-kernel
+coefficient span is not classified. Runner `PASS=16 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every chirality coefficient on the source-same form of
-the second even generator plus both swapped-dot generators has partner
-rank 10. On `(1, 3)`, `(2, 3)`, and `(3, 2)` those coefficients have
-partner rank 7 at every chirality coefficient. Do not claim the
+Decide whether every chirality coefficient on the sign product plus both
+swapped-dot generators has partner rank 10. On `(1, 2)`, `(2, 1)`, and
+`(3, 1)`, the second even generator plus both swapped-dot generators has
+partner rank 10 at every chirality coefficient. Do not claim the
 ten-kernel coefficient span is settled. Do not claim the 300-dimensional
 affine space is classified. Do not repeat the bond-space dimension
 count. Do not return to the modulus-3 triple. Do not invent a formation

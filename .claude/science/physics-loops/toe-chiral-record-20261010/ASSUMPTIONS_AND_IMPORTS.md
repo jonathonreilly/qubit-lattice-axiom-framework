@@ -575,3 +575,10 @@
 - The minor gcd is a polynomial identity in the chirality coefficient. A kernel cross sum is not an alphabet mean.
 - The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 51
+
+- The ansatz is the second even generator plus both swapped-dot generators, on the source-same ordered height pairs (1, 2), (2, 1), and (3, 1). The sign product plus both swapped-dot generators is not in this rank-10 count.
+- The pivot-minor gcd is a polynomial identity in the chirality coefficient. A kernel cross sum is not an alphabet mean.
+- The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

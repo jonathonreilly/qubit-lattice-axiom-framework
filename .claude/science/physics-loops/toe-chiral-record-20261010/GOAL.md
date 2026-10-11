@@ -253,3 +253,12 @@ partner rank 7 at every chirality coefficient. The summed coordinates
 are swapped `-1` and orthogonal `2`. The source-same height pairs are
 not in this rank-7 count. The ten-kernel coefficient span is not
 classified.
+Cycle 51 shows that on the source-same ordered height pairs `(1, 2)`,
+`(2, 1)`, and `(3, 1)`, the second even generator plus both swapped-dot
+generators has swapped coordinate `-2`, parallel coordinate `-1`,
+oblique coordinate `1`, and orthogonal coordinate `2`. The base image
+has rank 10. The monic pivot minor at chirality coefficient 1 is
+`(c - 2)^2`, and at coefficient 2 it is `c^3(c - 1)`. Their gcd is a
+nonzero constant, so every chirality coefficient has partner rank 10.
+The sign product plus both swapped-dot generators is not in this count.
+The ten-kernel coefficient span is not classified.

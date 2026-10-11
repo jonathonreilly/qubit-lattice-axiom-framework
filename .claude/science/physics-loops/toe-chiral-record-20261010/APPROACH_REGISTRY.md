@@ -542,3 +542,14 @@ projected minor gcd.
 
 Family not used: the source-same form of those coefficients. That
 remains open. The 300-dimensional affine space is not this family.
+
+Cycle 51 target contract: whether every chirality coefficient on the
+source-same form of the second even generator plus both swapped-dot
+generators has partner rank 10.
+
+Family used: the 17-row chirality pencil of that vector on `(1, 2)`,
+`(2, 1)`, and `(3, 1)`, the rank-10 base image, and the constant gcd of
+the pivot minors at coefficients 1 and 2.
+
+Family not used: the sign product plus both swapped-dot generators.
+That remains open. The 300-dimensional affine space is not this family.

@@ -355,3 +355,12 @@ even generator plus both swapped-dot generators has partner rank 7 at
 every chirality coefficient. It does not classify the source-same form
 of those coefficients, and it does not classify the 300-dimensional
 affine space. This is not an N-gate no-go.
+
+Cycle 51 prunes the reading that some chirality coefficient on the
+source-same form of the second even generator plus both swapped-dot
+generators has a nonzero ten-kernel partner. On `(1, 2)`, `(2, 1)`, and
+`(3, 1)`, every chirality coefficient has partner rank 10. The summed
+coordinates are swapped `-2`, parallel `-1`, oblique `1`, and orthogonal
+`2`. It does not classify the sign product plus both swapped-dot
+generators, and it does not classify the 300-dimensional affine space.
+This is not an N-gate no-go.

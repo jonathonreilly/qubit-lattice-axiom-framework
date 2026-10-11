@@ -249,3 +249,8 @@ generators on `(1, 3)`, `(2, 3)`, and `(3, 2)`. Every chirality
 coefficient has partner rank 7. It does not take the source-same form
 of those coefficients, and it does not classify the 300-dimensional
 affine space.
+
+Cycle 51 takes the source-same form of the second even generator plus
+both swapped-dot generators. Every chirality coefficient has partner
+rank 10. It does not take the sign product plus both swapped-dot
+generators, and it does not classify the 300-dimensional affine space.

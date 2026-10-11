@@ -367,3 +367,15 @@ sum `1` on the same bond.
 Family not used: a different ratio, including twice the transverse-sign
 cap together with twice the matched cross. That remains open. The
 300-dimensional affine space is not this family.
+
+Cycle 36 target contract: whether the line through the chirality cap,
+twice the transverse-sign cap, and twice the matched cross has a
+nonzero ten-kernel partner.
+
+Family used: the six partner ranks, the doubling of every partner row,
+the witness cross sums `4` and `8`, and the doubled transverse-sign
+cross sum `3` on the same bond.
+
+Family not used: a different ratio, including twice the chirality cap
+with the other two coefficients equal to 1. That remains open. The
+300-dimensional affine space is not this family.

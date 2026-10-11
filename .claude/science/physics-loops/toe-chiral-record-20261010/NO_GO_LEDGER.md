@@ -237,3 +237,11 @@ cross sums are `2` and `4`. The equal-coefficient vector on the same
 bond has kernel cross sum `1`. It does not classify a different ratio
 of those three kernels, and it does not classify the 300-dimensional
 affine space.
+
+Cycle 36 prunes the reading that the chirality cap plus twice the
+transverse-sign cap plus twice the matched cross has a nonzero partner.
+A nonzero scale has partner rank 10. The witness kernel cross sums
+are `4` and `8`. The doubled transverse-sign vector on the same bond
+has kernel cross sum `3`. It does not classify a different ratio of
+those three kernels, and it does not classify the 300-dimensional
+affine space.

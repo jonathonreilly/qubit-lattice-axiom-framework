@@ -582,3 +582,22 @@ pair, so a nonzero scale pairs only with 0. The witness cross sums are
 `2` and `4`. The equal-coefficient vector on the same bond has cross
 sum `1`. A different ratio stays outside this ansatz. The ten-kernel
 coefficient span stays open.
+
+## Cycle 36
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether twice the chirality cap plus the transverse-sign cap plus the matched transverse cross can pair with a nonzero ten-kernel vector and still have every cross moment equal to 0. That ratio is outside the equal-coefficient line, the doubled transverse-sign line, the doubled matched line, and the line with transverse-sign coefficient 2 and matched coefficient 2. Do not claim the ten-kernel coefficient span is settled."
+```
+
+The line with transverse-sign coefficient 2 and matched coefficient 2
+has partner rank 10 on every ordered height pair, so a nonzero scale
+pairs only with 0. The witness cross sums are `4` and `8`. The doubled
+transverse-sign vector on the same bond has cross sum `3`. A different
+ratio stays outside this ansatz. The ten-kernel coefficient span stays
+open.

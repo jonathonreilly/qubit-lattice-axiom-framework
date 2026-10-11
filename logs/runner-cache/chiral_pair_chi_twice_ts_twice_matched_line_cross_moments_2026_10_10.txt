@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_chi_twice_ts_twice_matched_line_cross_moments_2026_10_10.py
+runner_sha256: 5b4b65f1312bfe2d3a6c9dfa461b56cde7a04f596496085766f89bec9da108c1
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS the doubled sign and matched line is outside the equal-coefficient line, the doubled transverse-sign line, the doubled matched line, and both ratio spans and has two parity coefficients plus one excluded coefficient
+PASS every ordered height pair gives the line partner rank 10, and the doubled line doubles every partner row
+PASS the line against the chirality cap has centre pairs (1, 1) and (-3, -1) and cross sum 4
+PASS twice the line has centre pairs (2, 1) and (-6, -1) and cross sum 8
+PASS the doubled transverse-sign vector on the same bond has centre pairs (1, 1) and (-2, -1) and cross sum 3
+LINE witness [(1, 1), (-3, -1)] 4
+DOUBLE witness [(2, 1), (-6, -1)] 8
+TRANSVERSE witness [(1, 1), (-2, -1)] 3
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

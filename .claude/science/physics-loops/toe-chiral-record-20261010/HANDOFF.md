@@ -788,13 +788,27 @@ swapped-dot generators and both cap generators is not in this count.
 The ten-kernel coefficient span is not classified. Runner
 `PASS=9 FAIL=0`.
 
+Cycle 60. On every ordered height pair, both swapped-dot generators
+plus both cap generators have partner rank 10 at every chirality
+coefficient. The swapped-dot coordinates cancel, so the sum has
+swapped-dot coordinate `0`, matched coordinate `4`, swapped coordinate
+`-2`, orthogonal coordinate `2`, and scaled coordinate `4`. It lies
+outside the even space and outside both ratio spans. The base image has
+rank 10. The coefficient pairs compress to 17 rows, and the gcd of the
+10-by-10 minors is a nonzero constant. The pivot minors at `0`, `1`,
+`-1`, `-1/2`, `1/2`, `3/2`, `5/2`, `2`, `-2`, and `-2/3` do not have a
+constant gcd. At heights 1 and 2 the bond on `-e_x` and `-e_y` against
+the chirality cap has kernel cross sum `-6`. One swapped-dot generator
+plus twice the cap of the same span is not in this count. The
+ten-kernel coefficient span is not classified. Runner `PASS=6 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every chirality coefficient on the sum of both
-swapped-dot generators and both cap generators has partner rank 10.
-The swapped-dot coordinates cancel, so that sum has swapped-dot
-coordinate 0 and scaled coordinate 4. One swapped-dot generator plus
-both cap generators has swapped-dot coordinate 1 or -1, scaled
+Decide whether every chirality coefficient on the sum of one
+swapped-dot generator and twice the cap of the same ratio span has
+partner rank 10. That sum lies in the span and has swapped-dot
+coordinate 1 or -1 and scaled coordinate 4. Both swapped-dot generators
+plus both cap generators have swapped-dot coordinate 0, scaled
 coordinate 4, and partner rank 10 at every chirality coefficient. Do
 not claim the ten-kernel coefficient span is settled. Do not claim the
 300-dimensional affine space is classified.

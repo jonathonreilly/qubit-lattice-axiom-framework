@@ -656,3 +656,15 @@ has a nonzero constant maximal-minor gcd. The ten pivot samples do not.
 Family not used: both swapped-dot generators plus both cap generators.
 The swapped-dot coordinates cancel. That remains open. The
 300-dimensional affine space is not this family.
+
+Cycle 60 target contract: whether every chirality coefficient on the sum
+of both swapped-dot generators and both cap generators has partner rank
+10.
+
+Family used: both swapped-dot generators plus both caps. The swapped-dot
+coordinate is 0 and the scaled coordinate is 4. The 17-row pencil has a
+nonzero constant maximal-minor gcd. The ten pivot samples do not.
+
+Family not used: one swapped-dot generator plus twice the cap of the
+same ratio span. That sum lies in the span. That remains open. The
+300-dimensional affine space is not this family.

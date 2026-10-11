@@ -347,3 +347,11 @@ ratio span. The maximal-minor gcd is a nonzero constant. The pivot
 minors at the ten sample coefficients do not have a constant gcd. The
 sum of both swapped-dot generators and both cap generators is not in
 this count. The ten-kernel coefficient span is not classified.
+Cycle 60 shows that both swapped-dot generators plus both cap generators
+have partner rank 10 at every chirality coefficient on every ordered
+height pair. The swapped-dot coordinate is 0 and the scaled coordinate
+is 4. The sum lies outside the even space and outside both ratio spans.
+The maximal-minor gcd is a nonzero constant. The pivot minors at the
+ten sample coefficients do not have a constant gcd. One swapped-dot
+generator plus twice the cap of the same span is not in this count. The
+ten-kernel coefficient span is not classified.

@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 59
-runner_result: PASS=9 FAIL=0
+cycle: 60
+runner_result: PASS=6 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Decide whether every chirality coefficient on the sum of both swapped-dot generators and both cap generators has partner rank 10. The swapped-dot coordinates cancel, so that sum has swapped-dot coordinate 0 and scaled coordinate 4. One swapped-dot generator plus both cap generators has swapped-dot coordinate 1 or -1, scaled coordinate 4, and partner rank 10 at every chirality coefficient. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
+next_exact_action: Decide whether every chirality coefficient on the sum of one swapped-dot generator and twice the cap of the same ratio span has partner rank 10. That sum lies in the span and has swapped-dot coordinate 1 or -1 and scaled coordinate 4. Both swapped-dot generators plus both cap generators have swapped-dot coordinate 0, scaled coordinate 4, and partner rank 10 at every chirality coefficient. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

@@ -441,3 +441,12 @@ swapped-dot coordinate `-1` and scaled coordinate `4`. It does not
 classify the sum of both swapped-dot generators and both cap
 generators, and it does not classify the 300-dimensional affine space.
 This is not an N-gate no-go.
+
+Cycle 60 prunes the reading that some chirality coefficient on the sum
+of both swapped-dot generators and both cap generators has a nonzero
+ten-kernel partner. On every ordered height pair, every chirality
+coefficient has partner rank 10. The swapped-dot coordinates cancel, so
+the sum has swapped-dot coordinate `0` and scaled coordinate `4`. It
+does not classify one swapped-dot generator plus twice the cap of the
+same span, and it does not classify the 300-dimensional affine space.
+This is not an N-gate no-go.

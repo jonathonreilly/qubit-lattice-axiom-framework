@@ -2042,3 +2042,20 @@ Report the strongest bound on ℓ_k with its source, and whether ℓ_k ≈ 7e-19
 - **Unclear:** otherwise.
 
 No PASS or FAIL is recorded for any lane on the basis of X1. E1's fixed readings stand.
+
+### C4 result recorded 21:14Z (X1): worker reading, not refereed (none required; no lane verdict depends on it)
+
+**X1 reading: the bar is justified, provided ℓ_k is shared with matter.** This is E1's setting, where all fields live on events. File: `agents/C4_X1_report.md`.
+
+**Where the 1e-19 m bar comes from.** It is Belenchia et al. PRL 116, 161303 (2016), quoting Biswas–Okada's LHC Drell–Yan bound of 2.5–3 TeV.
+
+**Current collider bounds**, each on an exponential form factor; they translate to the BD kernel only at order-of-magnitude level, and no BD-specific collider analysis exists:
+- LEP: ℓ < 1.9e-19 m;
+- LHC Drell–Yan: ℓ < 7.9e-20 m;
+- CMS dijets: ℓ < 4.2e-20 m.
+
+**Consequence for the event-route noise.** Its requirement, ℓ_k ≈ 4–7e-19 m, is excluded by factors of about 2–17 if ℓ_k is shared with matter.
+
+**A gravity-only ℓ_k is not bounded at this level.** But lensing is observed mostly with light, and the photon's ℓ_k is collider-bounded. Whether light-lensing noise is acceptable then turns on the effective source extent for incoherent light. At atomic scale it is about 3 e-folds; at 10 km it is about 570. That step is open.
+
+**E1's fixed readings stand.**

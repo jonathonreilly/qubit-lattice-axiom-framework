@@ -207,3 +207,16 @@ on one opposite-height pair, which has dimension 10.
 Family not used: a second vector in the 5-dimensional complement. That
 remains open. The 300-dimensional affine space is not this family. A
 mixed-height bond is not this family.
+
+Cycle 23 target contract: whether a strictly positive order-blind
+factor on the 48-point chiral pair lies outside the span of the fifteen
+kernels and the three parallel-dot kernels.
+
+Family used: the matched oblique transverse-dot sign at absolute heights
+1, 2, and 3, at coefficient `1/2`, separated by two bonds at each
+height. Inside the 10-dimensional opposite-height ansatz this kernel
+raises the exhibited rank from 6 to 7.
+
+Family not used: a third vector in the remaining 3-dimensional
+complement. That remains open. The 300-dimensional affine space is not
+this family. A mixed-height bond is not this family.

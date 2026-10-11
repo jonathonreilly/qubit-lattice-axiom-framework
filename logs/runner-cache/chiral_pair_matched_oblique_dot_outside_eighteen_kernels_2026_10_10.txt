@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_matched_oblique_dot_outside_eighteen_kernels_2026_10_10.py
+runner_sha256: 6740b1d54423e1ce025e0c596d1ce24b4f84a1ba94b2adb60fae48c6d8f236ce
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 9.83
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each matched oblique dot is frame-invariant and soldered
+PASS each matched oblique dot is bond-symmetric
+PASS every left slice sums to 0
+PASS at coefficient 1/2 each matched oblique dot takes values 1/2, 1, and 3/2
+PASS every far-end sum equals 48
+PASS three height pairs separate each matched oblique dot from the eighteen kernels
+PASS each opposite-height pair has the matched oblique dot at rank 7
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

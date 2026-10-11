@@ -81,3 +81,10 @@ Cycle 22 takes the parallel transverse-dot sign at absolute heights 1,
 one kernel outside the fifteen. It does not base the 5-dimensional
 complement, it does not take a mixed-height bond, and it does not
 classify the 300-dimensional affine space.
+
+Cycle 23 takes the matched oblique transverse-dot sign at absolute
+heights 1, 2, and 3. It places one kernel outside the fifteen and the
+three parallel-dot kernels, and it raises the exhibited rank inside the
+10-dimensional ansatz from 6 to 7. It does not base the remaining
+3-dimensional complement, it does not take a mixed-height bond, and it
+does not classify the 300-dimensional affine space.

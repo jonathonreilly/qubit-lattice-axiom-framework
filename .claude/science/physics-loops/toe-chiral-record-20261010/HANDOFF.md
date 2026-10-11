@@ -210,16 +210,33 @@ opposite-height pair the slice-zero bond-symmetric soldered kernels
 are 10-dimensional. The five same-height kernels span 5 of them, and
 this kernel raises the rank to 6. Runner `PASS=10 FAIL=0`.
 
+Cycle 23. On the same alphabet the matched oblique transverse-dot sign
+at each absolute height 1, 2, and 3 is bond-symmetric and soldered. It
+is the sign of the negative transverse dot product when the absolute
+transverse coordinates match and the transverse cross product is
+nonzero, and 0 otherwise. Its support is disjoint from the parallel
+transverse-dot kernel. At coefficient `1/2` each factor takes values
+`1/2`, `1`, and `3/2`. Each record meets at most one live direction and
+every left slice sums to 0, so every neighbour product has mean 1.
+Every far-end sum equals 48. The bonds from `(-3, -2, 1)` to
+`(-3, 2, -1)` and from `(-3, 2, 1)` to `(3, 2, -1)`, from
+`(-3, -1, 2)` to `(-3, 1, -2)` and from `(-3, 1, 2)` to `(3, 1, -2)`,
+and from `(-2, -1, 3)` to `(-2, 1, -3)` and from `(-2, 1, 3)` to
+`(2, 1, -3)`, agree on all fifteen comparison kernels, carry parallel
+dot 0, and differ by 2 on this kernel. Inside the 10-dimensional
+opposite-height ansatz the rank rises from 6 to 7. Runner
+`PASS=10 FAIL=0`.
+
 ## Next exact action
 
-Exhibit a second kernel in the 5-dimensional complement of one
+Exhibit a third kernel in the remaining 3-dimensional complement of one
 opposite-height pair, with an exact formula, outside the five
-same-height kernels and the parallel-dot kernel. Do not claim that
-complement is based. Do not claim the 300-dimensional affine space is
-classified. Do not repeat the bond-space dimension count. Do not return
-to the modulus-3 triple. Do not invent a formation rate. Do not return
-to shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
-alphabets.
+same-height kernels, the parallel-dot kernel, and the matched oblique
+dot. Do not claim that complement is based. Do not claim the
+300-dimensional affine space is classified. Do not repeat the bond-space
+dimension count. Do not return to the modulus-3 triple. Do not invent a
+formation rate. Do not return to shells, plaquette corner weights, or
+the `(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

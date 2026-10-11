@@ -65,4 +65,10 @@ coefficient `1/2`, has neighbour-product mean 1. Two bonds at each
 height agree on the fifteen comparison kernels and differ by 2 on this
 kernel, so none of the three lies in that span. Each opposite-height
 pair carries a 10-dimensional slice-zero bond-symmetric soldered space,
-and this kernel is one line outside the five same-height kernels.
+and this kernel is one line outside the five same-height kernels. Cycle
+23 shows that the matched oblique transverse-dot sign at each absolute
+height 1, 2, and 3, at coefficient `1/2`, has neighbour-product mean 1
+and support disjoint from the parallel-dot kernel. Two bonds at each
+height agree on the fifteen comparison kernels, carry parallel dot 0,
+and differ by 2 on this kernel. The same 10-dimensional ansatz now has
+seven independent kernels.

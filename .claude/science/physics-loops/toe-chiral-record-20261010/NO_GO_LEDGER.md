@@ -127,3 +127,13 @@ on this kernel. The opposite-height slice-zero bond-symmetric soldered
 space is 10-dimensional, and this kernel is one line of the
 5-dimensional complement. It does not base that complement, and it does
 not classify the 300-dimensional affine space.
+
+Cycle 23 prunes the reading that every strictly positive order-blind
+factor on this alphabet lies in the span of those fifteen kernels and
+the three parallel-dot kernels. Each matched oblique dot at coefficient
+`1/2` has neighbour-product mean 1 and support disjoint from the
+parallel-dot kernel. Two bonds at each height agree on the fifteen,
+carry parallel dot 0, and differ by 2 on this kernel. Inside the
+10-dimensional ansatz the rank rises from 6 to 7. It does not base the
+remaining 3-dimensional complement, and it does not classify the
+300-dimensional affine space.

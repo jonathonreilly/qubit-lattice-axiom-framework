@@ -852,13 +852,36 @@ cap has kernel cross sums `-10` and `-2`. One swapped-dot generator
 plus twice one cap and the other cap is not in this count. The
 ten-kernel coefficient span is not classified. Runner `PASS=7 FAIL=0`.
 
+Cycle 64. On every ordered height pair, one swapped-dot generator plus
+twice the cap of one ratio span plus the cap of the other ratio span
+has partner rank 10 at every chirality coefficient. The swapped-dot
+coordinate is `1` or `-1`, the swapped coordinate is `-1`, the
+orthogonal coordinate is `1`, the matched coordinate is `6`, and the
+scaled coordinate is `6`. Doubling the plus cap gives transverse-sign
+coordinate `-1` and sign-product coordinate `-1`. Doubling the minus
+cap gives transverse-sign coordinate `1` and sign-product coordinate
+`1`. Each of the four sums lies in neither ratio span and outside the
+even space. The four sums have rank `3`: the plus-dot twice-plus sum
+plus the minus-dot twice-minus sum equals the plus-dot twice-minus sum
+plus the minus-dot twice-plus sum. The base image has rank 10. The
+coefficient pairs compress to 17 rows, and the gcd of the 10-by-10
+minors is a nonzero constant. The twice-plus pivot gcd has degree `7`
+on every pair. The plus-dot twice-minus pivot gcd has degree `7` on
+`(1, 2)`, `(2, 1)`, and `(3, 1)`, and degree `5` on `(1, 3)`, `(2, 3)`,
+and `(3, 2)`. The minus-dot twice-minus pivot gcd has degree `5` on
+every pair. At heights 1 and 2 the bond on `-e_x` and `-e_y` against
+the chirality cap has kernel cross sums `-10`, `-6`, `-8`, and `-4`.
+Both swapped-dot generators plus twice one cap and the other cap are
+not in this count. The ten-kernel coefficient span is not classified.
+Runner `PASS=9 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every chirality coefficient on the sum of one
-swapped-dot generator and twice the cap of one ratio span plus the cap
-of the other ratio span has partner rank 10. Both swapped-dot
-generators plus twice the cap of one ratio span have partner rank 10
-at every chirality coefficient, and the swapped-dot coordinate is 0.
+Decide whether every chirality coefficient on the sum of both
+swapped-dot generators and twice the cap of one ratio span plus the cap
+of the other ratio span has partner rank 10. One swapped-dot generator
+plus twice one cap and the other cap has partner rank 10 at every
+chirality coefficient, and the swapped-dot coordinate is 1 or -1.
 Do not claim the ten-kernel coefficient span is settled. Do not claim
 the 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the

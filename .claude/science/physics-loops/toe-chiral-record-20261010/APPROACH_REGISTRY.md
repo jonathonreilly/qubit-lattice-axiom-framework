@@ -705,3 +705,18 @@ maximal-minor gcd. The twice-minus pivot gcd is constant only on
 Family not used: one swapped-dot generator plus twice one cap and the
 other cap. That sum keeps a nonzero swapped-dot coordinate. That remains
 open. The 300-dimensional affine space is not this family.
+
+Cycle 64 target contract: whether every chirality coefficient on the sum
+of one swapped-dot generator and twice the cap of one ratio span plus
+the cap of the other ratio span has partner rank 10.
+
+Family used: the four sums, one for each swapped-dot generator and each
+choice of doubled cap. The swapped-dot coordinate is 1 or -1 and the
+scaled coordinate is 6. The 17-row pencil has a nonzero constant
+maximal-minor gcd. The twice-plus pivot gcd has degree 7. The plus-dot
+twice-minus pivot gcd splits by height pair. The minus-dot twice-minus
+pivot gcd has degree 5.
+
+Family not used: both swapped-dot generators plus twice one cap and the
+other cap. That sum cancels the swapped-dot coordinate. That remains
+open. The 300-dimensional affine space is not this family.

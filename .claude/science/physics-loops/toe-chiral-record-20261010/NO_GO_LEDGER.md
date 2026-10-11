@@ -88,3 +88,11 @@ strictly positive order-blind line on the 48-point alphabet. The
 transverse-sign cap at coefficient `1/2` has product mean 1 on all 729
 partner patterns, and two bonds forbid every scale of the chiral cap.
 It does not classify a factor outside both lines.
+
+Cycle 18 prunes the reading that every strictly positive order-blind
+factor on this alphabet lies in the span of the chiral cap and the
+transverse-sign cap. The sign-product cap at coefficient `1/2` has
+product mean 1 on all 729 partner patterns, and three bonds to
+`(-2, -1, -3)` have determinant `4`. It does not classify a factor
+outside those three kernels, and it does not classify the
+300-dimensional affine space.

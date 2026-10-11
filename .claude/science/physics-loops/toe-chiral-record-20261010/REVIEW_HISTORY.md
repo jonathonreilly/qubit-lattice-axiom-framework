@@ -766,3 +766,67 @@ Conformance, section by section:
     `-1`, `PASS=10 FAIL=0`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
     the loop-pack prose. The full audit pipeline was not run.
+
+## 2026-10-10 author check, cycle 18
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`, and the cycle-6 chiral-pair
+   bond note on this branch. The sign-product cocycle, the 729 partner
+   means, and the three-bond determinant are computed in this runner.
+   Theorem 2's converse is applied and not re-proved. Far-end sum 1 is
+   cited from the cycle-6 note. The dimension count is not repeated.
+   The two exhibited caps are comparison tensors, not re-derived.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_sign_product_outside_both_caps_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `a5fde6f7c382367792763f76f254cc3554a0e57ceec22242c050ece923571e43`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=11 FAIL=0`.
+   Elapsed 2.45 seconds.
+3. Scope. The ansatz is `phi_d(a, b) = 1 + (1/2) P_d(a) P_{-d}(b)` on
+   the 48 signed permutations of `(1, 2, 3)`, with `P_d` the product of
+   orbit chirality and the transverse sign on `a·d = 3`. All 729
+   partner patterns have product mean 1. The values are `1/2`, `1`,
+   and `3/2`. Every far-end sum equals 48. The bonds on `e_z` from
+   `(1, 2, 3)`, `(2, -1, 3)`, and `(-2, -1, 3)` to `(-2, -1, -3)` have
+   kernel rows `(1, 1, 1)`, `(1, -1, -1)`, and `(-1, 1, -1)`, and the
+   determinant is `4`. A bond from `(1, 2, 3)` to itself has all three
+   kernels equal to 0. The sign-product factor is not a linear
+   combination of the two exhibited factors. The order-blind subset is
+   not classified, and the 300-dimensional affine space is not
+   classified. Status line `proposed_retained`. Surface status
+   `bounded-support`.
+4. N-gate does not apply. The artifact exhibits one named line outside
+   the span of the two caps. It does not claim that no further
+   order-blind factor exists.
+5. Obligations are in the note. The missing lemma is a strictly positive
+   order-blind factor outside the span of the three kernels.
+6. Mutations, each on a scratch copy, exited 1. Requiring every partner
+   mean to be 2 gave `PASS=10 FAIL=1` on the 729 patterns. Requiring
+   every far-end sum to be 47 gave `PASS=10 FAIL=1` on the far-end sum.
+   Requiring the determinant to be 0 gave `PASS=10 FAIL=1` on the
+   three-bond obstruction. An independent closure under quarter-turns
+   about `z` and about `x` gave 24 rotations and orbit 24, with
+   `(2, 1, 3)` and `(1, 2, -3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Four markdown links. The runner link points at the primary runner.
+   Two note links point at tracked notes on origin/main. One points at
+   the cycle-6 chiral-pair bond note on this branch. Manifest
+   node_count 6887 and edge_count 15462. The new node has out_degree 3
+   and deps_hash `41027eb0d307`. Dependencies are `minimal_axioms`, the
+   2026-09-22 note, and
+   `chiral_pair_bond_factor_dimension_bounded_theorem_note_2026-10-10`.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names Theorem 2's converse and far-end sum 1, and states that no
+   rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: 729 partner patterns, values
+    `1/2`, `1`, and `3/2`, far-end sum 48, determinant `4`,
+    `PASS=11 FAIL=0`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
+    the loop-pack prose. The full audit pipeline was not run.

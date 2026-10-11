@@ -1,6 +1,6 @@
 {
- "edge_count": 15459,
- "node_count": 6886,
+ "edge_count": 15462,
+ "node_count": 6887,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2935,6 +2935,10 @@
    "out_degree": 2
   },
   "chiral_pair_height_line_order_blind_cut_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_sign_product_outside_both_caps_bounded_theorem_note_2026-10-10": {
    "deps_hash": "41027eb0d307",
    "out_degree": 3
   },

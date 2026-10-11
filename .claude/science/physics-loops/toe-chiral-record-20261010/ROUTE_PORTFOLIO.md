@@ -55,3 +55,8 @@ the order-blind subset.
 
 Cycle 17 takes the transverse-sign cap on that alphabet. It does not
 classify a factor outside both that cap and the chiral-cap line.
+
+Cycle 18 takes the sign product of orbit chirality and the transverse
+sign. It does not classify a factor outside the span of that product
+and the two exhibited caps, and it does not classify the
+300-dimensional affine space.

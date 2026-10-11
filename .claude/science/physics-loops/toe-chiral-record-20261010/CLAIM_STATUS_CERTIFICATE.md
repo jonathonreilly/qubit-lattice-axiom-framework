@@ -327,3 +327,24 @@ The transverse-sign cap at coefficient `1/2` is strictly positive and
 every partner pattern has mean 1. The bonds from `(1, 2, 3)` and
 `(-2, 1, 3)` to `(1, 2, -3)` forbid every scale of the chiral cap. A
 factor outside both lines stays open.
+
+# Claim status certificate — cycle 18
+
+claim_id: chiral_pair_sign_product_outside_both_caps_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); sign-product cap; coefficient 1/2; uniform partner patterns
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: Theorem 2's converse is applied to this family. Far-end sum 1 is the chiral-pair bond note. No formation rate is used.
+
+The sign-product cap at coefficient `1/2` is strictly positive and
+every partner pattern has mean 1. Three bonds to `(-2, -1, -3)` have
+determinant `4`, so the kernel is not a linear combination of the
+chiral cap and the transverse-sign cap. A factor outside those three
+kernels stays open. The 300-dimensional affine space is not classified.

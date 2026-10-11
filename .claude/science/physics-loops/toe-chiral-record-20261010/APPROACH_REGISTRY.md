@@ -146,3 +146,15 @@ partner patterns, and the two bonds to `(1, 2, -3)`.
 
 Family not used: a factor outside both the transverse-sign cap and the
 chiral-cap line. That remains open.
+
+Cycle 18 target contract: whether a strictly positive order-blind
+factor on the 48-point chiral pair lies outside both the chiral-cap
+line and the transverse-sign cap.
+
+Family used: the sign product of orbit chirality and the transverse
+sign at coefficient `1/2`, its 729 partner patterns, and three bonds
+to `(-2, -1, -3)`.
+
+Family not used: a factor outside the span of those three kernels.
+That remains open. The 300-dimensional affine space is not this
+family.

@@ -41,4 +41,9 @@ pair the height-linear family `1 + c (a·d)(b·(-d))` has far-end sum
 `71/50`, so that positive factor is not order-blind. Cycle 17 shows
 that the transverse-sign cap at coefficient `1/2` has every partner
 pattern of mean 1, and the bonds from `(1, 2, 3)` and `(-2, 1, 3)` to
-`(1, 2, -3)` forbid every scale of the chiral cap.
+`(1, 2, -3)` forbid every scale of the chiral cap. Cycle 18 shows
+that the sign product of orbit chirality and the transverse sign, at
+coefficient `1/2`, has every partner pattern of mean 1. The bonds on
+`e_z` from `(1, 2, 3)`, `(2, -1, 3)`, and `(-2, -1, 3)` to
+`(-2, -1, -3)` give determinant `4`, so that kernel is not a linear
+combination of the two exhibited caps.

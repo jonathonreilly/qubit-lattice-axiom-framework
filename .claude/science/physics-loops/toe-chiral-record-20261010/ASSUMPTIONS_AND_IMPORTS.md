@@ -162,3 +162,17 @@
   and all 729 partner means. Far-end sum 1 is the chiral-pair bond
   note. The dimension count is not repeated.
 - No formation site, probability, or rate is imported.
+
+## Cycle 18
+
+- The ansatz is the sign-product cap
+  `phi_d(a, b) = 1 + (1/2) P_d(a) P_{-d}(b)` on the 48 signed
+  permutations of `(1, 2, 3)`, where `P_d` is orbit chirality times
+  the transverse sign on the cap `a·d = 3`. The coefficient `1/2` is a
+  witness, not a selected scale. A factor outside the span of this
+  kernel and the two exhibited caps is not in this count.
+- Order-blindness is Theorem 2's converse, applied after bond symmetry
+  and all 729 partner means. Far-end sum 1 is the chiral-pair bond
+  note. The dimension count is not repeated. The 300-dimensional
+  affine space is not classified.
+- No formation site, probability, or rate is imported.

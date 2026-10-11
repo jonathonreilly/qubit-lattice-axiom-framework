@@ -2,8 +2,8 @@ loop: toe-dynamics-bridge-20261009
 mode: campaign
 delivery: milestone
 runtime: 24h
-started_utc: 2026-10-11T16:00:52Z
-deadline_utc: 2026-10-12T16:00:52Z
+started_utc: 2026-10-11 16:00:52+00:00
+deadline_utc: 2026-10-12 16:00:52+00:00
 checkpoint_interval: 30m
 automation_id: toe-derivations-24-hour-campaign
 active_branch: physics-loop/toe-projected-band-current-20261011
@@ -13,14 +13,15 @@ base_revision: a13caa4885f547c8d206265b031ba7649e539fd9
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: explicit_projected_free_band_current_and_effective_memory
+active_route: projected_band_current_memory_and_quantitative_scattering
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
 milestone: nonlinear_transport_walk_and_flux_form_published
-strongest_unresolved_obligation: effective_weighted_current_asymptotics_and_growing_time_comparison
+strongest_unresolved_obligation: outgoing_resolvent_lower_bound_review_and_quantitative_spectral_edges
 provisional_dependencies: supplied_excluded_walk_on_frozen_main; transport_stack_remains_separate
-independent_checks: flux_form_and_explicit_current_sources_checked; scoped_Lean_certificate_checked; memory_review_in_progress
+independent_checks: explicit_current_composition_complete; memory_weighted_and_joint_scale_checks_complete_at_scoped_sources;
+  outgoing_extension_review_in_progress
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_open
@@ -30,8 +31,9 @@ walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
-lock_refresh_before_utc: 2026-10-11T20:15:00Z
-next_action: publish_checked_explicit_current_after_composition_check; review_memory_and_weighted_current
+lock_refresh_before_utc: '2026-10-11T20:55:00Z'
+next_action: compose_one_regular_current_memory_milestone; derive_and_check_quantitative_edges;
+  continue_until_fixed_deadline
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9

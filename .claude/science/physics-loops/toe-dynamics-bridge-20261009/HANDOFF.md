@@ -201,7 +201,7 @@ worktrees. Do not overwrite frozen proofs or the historical failed controls.
 - EXCLUDED_WALK_FLUX_TRANSPORT_FORM_PROBE.md: frozen 468 lines at
   52e8b10cc7db84d65372bfac18a0a0839889b03003190ee0ec310b503115f143.
   Root read/reconstructed its full form normalization, covariance tensor and
-  rank/coercivity, complete author helper/log, and verified all13 receipt files.
+  rank/coercivity, complete author helper/log, and verified all 13 receipt files.
   Root independent three-channel / fourteen-point sphere-design controls passed.
   ROOT_EXCLUDED_WALK_TRANSPORT_FORM_REVIEW.md is
   5ff79b0756214eb75f94b8b64e8eeae4dbb7eefcba4640dc9b97e6be78fbe572;
@@ -235,9 +235,7 @@ worktrees. Do not overwrite frozen proofs or the historical failed controls.
   records. Sigma=2^-40 lambda^(3/2), delta=2^-68 lambda^2 give an explicit
   normalizable free-band packet and each-current drift at most
   -2^-68 lambda^3/(388800 pi^2), time2^68/(20lambda^2), lambda<=1/16.
-  spatial_prior_art is composing a complete publication argument from the
-  four checked sources; FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md
-  is not frozen yet. No effective-memory premise is used there.
+  The complete publication composition is now frozen at ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969. Its complete selective composition review is 076021427ff4e2cbb473363e09b3a043c2a4bae01d24bdfc69a6a42a55be8cf1; receipt f2c75a99df4eb6139f5f2329c9471716779a8c2ecb61b180ec5788321b5aab03. Root read the full review, independent helper and log, and verified all 225 path/hash records (213 distinct files). Prior L/D authorship is explicit. No memory premise is used in the finite-time theorem.
 - Scoped Lean module RankOneScattering.lean frozen at
   2f5260a23eecc90c6bf3fabe9e26c4c05a5595fa151b98010097a7ee501b22ae,
   clean normal compilation with only propext/Classical.choice/Quot.sound.
@@ -252,22 +250,41 @@ worktrees. Do not overwrite frozen proofs or the historical failed controls.
   threshold, Cook and physical dynamics remain outside the certificate.
   Lean4.35.0-rc4 and mathlib939d5d5d9e6f07d1d8c80a16fa3fa39a7518b716
   are task-local. Do not copy the runtime/cache/dependency checkout into repo.
-- Effective memory source frozen: EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md,
-  500 lines,b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c;
-  effective_memory/receipt.json99cad79eeb712071bfc48a04a161df7280cea694f80523dc86c563537f272557.
-  Root read the full proof, both helpers, mutation driver and all raw outputs;
-  all26 artifact identities and6 actual source substitutions/failures match.
-  Exact Volterra/resolvent, one-cone bath lower density, uniform interior
-  Poisson bound and strict-compression endpoint exclusion give absolute
-  continuity of the dressing spectral measure and amplitude decay for kappa!=0.
-  No weighted-current limit or joint original-walk time limit is inferred.
-  A finite-bath recurrence example is preserved. spatial_kinetic_derivation
-  recorded a distinct pre-source reconstruction and is checking the full final
-  proof. Independent final receipt remains pending.
-- spatial_quantum_realization is extending the frozen memory result in
-  EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md / weighted_memory: check the finite-rank
-  Kato comparison on F plus dressing and whether a transverse scattering state
-  gives a positive epsilon-weighted limit. No final source or receipt yet.
+- Effective memory source is frozen at b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c,
+  with complete independent review c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0
+  and receipt 5a73e562741e0e10e84101206a0c98d2f3daf4d534898260d14fe85a1f101fe6.
+  Root read the full source/review, both independent helpers and their logs,
+  plus author source/mutations. The entire dressing spectral measure is ac;
+  amplitude and its derivatives decay, with no rate inferred.
+- Weighted-memory source, 339 lines, 10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324
+  now has independent review a2bb951a15a90ca8dba4cba928f6307fdde078f30a41f9f07e818561f7bf0484,
+  receipt 74990de59ab11a8011f4164ce689b0f80153d261c073c486f47b78a1beaf1a28.
+  Root read the complete source/review, both helpers, baseline and four actual
+  mutant failures; verified 197 author records and 63 independent records.
+  Kato completeness on the same fixed physical space gives a norm-one outgoing
+  transverse datum, positive epsilon-weighted limit and actual-current limit.
+  Its original-walk result is only the explicitly ordered limit.
+- Root joint-scale draft, 236 lines, 4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278
+  has independent review 2867fc1179a7b82b095e7719bc2f9015fdd87b5190626f61b0adfbd4fc318bf6,
+  receipt 49bd1d8872a07aea1e5266cb2f07f3ea2aff4d9a9602f7a141e0051037d92b80.
+  Root read all 252 review lines, complete separate helper and log; all 13 records
+  match. Delta=lambda^3, sigma=lambda^2, T=lambda^-gamma, width=lambda^2 for
+  fixed 0<gamma<1/2 give e/A<=275lambda^(1/2-gamma). Actual free-band global
+  current divided by lambda^4 tends to -Wplus/(12pi^2 I0). The review kept the
+  then-pending weighted input conditional; a separate dependency addendum is
+  now written and awaits root reading before publication. No sign-onset rate.
+- Root outgoing-resolvent draft, 245 lines, 58a96a049701667e673bde1acf98e5346356483101654b3464fe11e94fd02c21
+  and outgoing_resolvent/receipt.json 333d620163722af83291fb19ade6ac9ea28101b2877daff028cae5beb1d5ecc8
+  are frozen; spatial_quantum_realization is checking the new proof.
+  It derives u_h=M(D+ih)g by Abel averaging, and a direction-uniform positive
+  rational lower bound for Wplus using interior energy mass and cone bounds.
+  No independent result is claimed yet. The first symbolic-control structural
+  equality failure and simplification-only repair are preserved. Five actual
+  source-copy defects fail at their intended assertions.
+- spatial_kinetic_derivation is deriving a quantitative spectral-edge bound
+  from the physical compression. No final source or independently checked
+  claim yet. spatial_prior_art is composing the three checked memory/weighted/
+  joint-scale arguments, excluding the not-yet-checked outgoing extension.
 
 ## Current publication preparation
 
@@ -286,14 +303,18 @@ preserved; gzip containers retain their exact original bytes.
 
 walk_worktree now uses physics-loop/toe-projected-band-current-20261011 from
 b9b032ae790c66e762a6296a1306bfb64ae7cd70. This next milestone does not depend
-on the flux/form branch. The complete explicit-current composition is pending.
+on the flux/form branch. The explicit-current composition is checked; 20 actual
+primary mutants failed at the intended assertions. Root verified exact source
+substitutions and all hash records, matched stable successful-output prefixes
+to the fully read baseline, and read all distinct failure frames/messages.
+The current and memory/growing-time chain will form one coherent regular PR.
+Canonical final caches, citation manifest and publication checks remain pending.
 
 ## Boundaries and next action
 
 Both checked transport and finite-preparation walk milestones are published.
-The checked flux/form/Lean milestone is also published. Publish the explicit
-long-time current after its composition check; continue effective memory,
-weighted-current asymptotics and a controlled growing-time comparison.
+The checked flux/form/Lean milestone is also published. Finish the combined current/memory publication milestone, then continue the
+outgoing-resolvent and quantitative-edge derivations at their checked scopes.
 Keep identities and raw evidence current. Original mathematics is authorized. Lean may verify
 complex scoped obligations during audit; the universal rank-one algebra is now
 compiled and statement-checked, while analytic proof obligations remain separate.

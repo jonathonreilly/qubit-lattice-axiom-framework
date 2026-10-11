@@ -1,0 +1,47 @@
+== (1a) PS bound, F2 form dc = (M*/M)^2/(16 pi^2) ==
+  GW-like 1e-15          nonred M* < 4.852e+12 GeV  L=M_Pl/M* > 2.516e+06
+  GW-like 1e-15          red    M* < 9.676e+11 GeV  L=M_Pl/M* > 1.262e+07
+  gamma decay 2.7e-19    nonred M* < 7.973e+10 GeV  L=M_Pl/M* > 1.531e+08
+  gamma decay 2.7e-19    red    M* < 1.590e+10 GeV  L=M_Pl/M* > 7.679e+08
+  PS text 1e-20          nonred M* < 1.534e+10 GeV  L=M_Pl/M* > 7.958e+08
+  PS text 1e-20          red    M* < 3.060e+09 GeV  L=M_Pl/M* > 3.990e+09
+  GZK p/gamma 4e-23      nonred M* < 9.704e+08 GeV  L=M_Pl/M* > 1.258e+10
+  GZK p/gamma 4e-23      red    M* < 1.935e+08 GeV  L=M_Pl/M* > 6.309e+10
+== (1b) PS eq.55 (healthy, vector cured): dc ~ (M*^2/(12 pi^2 M^2)) * ln(Luv^2/M*^2), Luv = M_Pl (grid) ==
+  GW-like 1e-15          nonred M* < 7.285e+11 GeV  log factor 2ln(M_Pl/M*)=33.3  L > 1.676e+07
+  GW-like 1e-15          red    M* < 1.385e+11 GeV  log factor 2ln(M_Pl/M*)=36.6  L > 8.814e+07
+  gamma decay 2.7e-19    nonred M* < 1.069e+10 GeV  log factor 2ln(M_Pl/M*)=41.7  L > 1.142e+09
+  gamma decay 2.7e-19    red    M* < 2.052e+09 GeV  log factor 2ln(M_Pl/M*)=45.0  L > 5.949e+09
+  PS text 1e-20          nonred M* < 1.979e+09 GeV  log factor 2ln(M_Pl/M*)=45.1  L > 6.170e+09
+  PS text 1e-20          red    M* < 3.810e+08 GeV  log factor 2ln(M_Pl/M*)=48.4  L > 3.205e+10
+  GZK p/gamma 4e-23      nonred M* < 1.180e+08 GeV  log factor 2ln(M_Pl/M*)=50.7  L > 1.035e+11
+  GZK p/gamma 4e-23      red    M* < 2.280e+07 GeV  log factor 2ln(M_Pl/M*)=54.0  L > 5.354e+11
+  PS uncured vector term Luv^2/(24 pi^2 M^2) with Luv = M (grid = Planck): 0.004221715985097407 (nonred,red equal if Luv=M)
+  ... with Luv = M_Pl nonred and M reduced: 0.10615058934242844
+== (1c) healthy-Horava window: M* < M_SC ~ sqrt(alpha) c_S^{-1/2} M (GSS eq.15, reduced M) ==
+  alpha=8e-07 gamma=0.01: c_S=1.110e+02  M_SC=2.067e+14 GeV
+  alpha=1e-09 gamma=0.01: c_S=3.139e+03  M_SC=1.374e+12 GeV
+  alpha=1e-12 gamma=0.01: c_S=9.926e+04  M_SC=7.729e+09 GeV
+  alpha=1e-15 gamma=0.01: c_S=3.139e+06  M_SC=4.346e+07 GeV
+  alpha=1e-18 gamma=0.01: c_S=9.926e+07  M_SC=2.444e+05 GeV
+  M*=1.5e+10: need alpha > 2.42e-12 (gamma=0.01) for M* < M_SC; window to 8e-7 weak-PPN
+  M*=2.0e+09: need alpha > 1.65e-13 (gamma=0.01) for M* < M_SC; window to 8e-7 weak-PPN
+== (2) hierarchy sizes on one grid (a^-1 = M_Pl nonred) ==
+  M*=1.5e+10: L=8.140e+08, z=3 coefficient (M_Pl/M*)^4=4.390e+35 lattice units, (M*/M_Pl)^2 = G_Lif = 1.509e-18
+    Z^4 tick (omega<=pi/a): z=3 regime fits only to k_max=(pi M*^2/a)^(1/3)=2.051e+13 GeV = 1.68e-06/a
+    continuous-time gravity: z=1 coeff natural only if gravity cutoff < sqrt(4pi M M*)=1.517e+15 GeV; at cutoff M_Pl the loop/tree ratio ~ (M_Pl/that)^4=4.20e+15
+    species needed for O(1) induced LV in graviton at M*: N ~ 16pi^2 (M/M*)^2 = 1.05e+20
+  M*=2.0e+09: L=6.105e+09, z=3 coefficient (M_Pl/M*)^4=1.389e+39 lattice units, (M*/M_Pl)^2 = G_Lif = 2.683e-20
+    Z^4 tick (omega<=pi/a): z=3 regime fits only to k_max=(pi M*^2/a)^(1/3)=5.354e+12 GeV = 4.38e-07/a
+    continuous-time gravity: z=1 coeff natural only if gravity cutoff < sqrt(4pi M M*)=5.540e+14 GeV; at cutoff M_Pl the loop/tree ratio ~ (M_Pl/that)^4=2.36e+17
+    species needed for O(1) induced LV in graviton at M*: N ~ 16pi^2 (M/M*)^2 = 5.89e+21
+== (2b) dimensional transmutation: Lambda_h/M_Pl = exp(-2pi/(b0 alpha)) (1-loop); 2-loop SU(N) ==
+  SU(2) YM                     b0=7.333: 1-loop alpha_h=0.0413 (1/alpha=24.2); 2-loop alpha_h=0.0384
+  SU(3) YM                     b0=11.000: 1-loop alpha_h=0.0276 (1/alpha=36.3); 2-loop alpha_h=0.0256
+  SU(3)+6 flavours (QCD-like)  b0=7.000: 1-loop alpha_h=0.0433 (1/alpha=23.1); 2-loop alpha_h=0.0413
+  SU(5) YM                     b0=18.333: 1-loop alpha_h=0.0165 (1/alpha=60.5); 2-loop alpha_h=0.0154
+  sensitivity d ln Lambda / d ln alpha = ln(1e9) = 20.7 (no fine tuning: a 5% change in alpha moves Lambda by e^1.04)
+== (2c) spontaneous khronon from a DT sector: alpha,beta ~ (Lambda_h/M)^2 ==
+  Lambda_h=1.0e+09: (Lambda_h/M_Pl)^2=6.71e-21; PS percolation (.../16pi^2)=4.25e-23
+  Lambda_h=1.5e+10: (Lambda_h/M_Pl)^2=1.51e-18; PS percolation (.../16pi^2)=9.56e-21
+  Lambda_h=1.0e+11: (Lambda_h/M_Pl)^2=6.71e-17; PS percolation (.../16pi^2)=4.25e-19

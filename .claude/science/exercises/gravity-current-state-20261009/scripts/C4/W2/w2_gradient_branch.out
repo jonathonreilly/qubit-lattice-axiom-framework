@@ -1,0 +1,6 @@
+WZ consistency (Euler residuals): False
+WZ solutions: []
+RESULT: the ultralocal representative with a constant background gradient is NOT Wess-Zumino consistent
+        (the eps-eps term b(eps2 d_x eps1 - eps1 d_x eps2) is not a total derivative), and no local WZ term
+        in the 12-term ansatz exists.  It cannot stand alone as a c-number cocycle of the abelian linearized
+        gauge group; any completion producing it must also deform {C_s,C_s}.  Use C3's Killing representative.

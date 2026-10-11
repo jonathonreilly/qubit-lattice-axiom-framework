@@ -1581,3 +1581,31 @@ Is there a readout whose mean is link/GR → 1, up to corrections O(ℓ²/r²), 
 - **INCONCLUSIVE:** otherwise.
 
 **Supervisor expectation.** The multi-hop Johnston sum (the full massless propagator) and the BD inverse reproduce the continuum retarded Green function in the mean. In curved spacetime that Green function carries √Δ, so these should PASS in the mean. The unweighted one-hop case fails because one hop lacks the transport factor. Noise for multi-hop sums at physical parameters is the open risk. Reading: PASS in the mean, INCONCLUSIVE on noise.
+
+### Lane RF3 result (recorded 17:41Z): INCONCLUSIVE
+
+F3 was refereed by codex sol: NOT CONFIRMED, so the result is INCONCLUSIVE. Files: `agents/C4_F3_*`.
+
+**What the referee confirmed.** On one grid, an explicit Pospelov–Shang-type Hořava crossover must soften every graviton component that contributes. That brings in large dimensionless separations:
+- M_* of a few 1e9 GeV;
+- L of a few 1e9;
+- a TT k⁶ coefficient of 1e38–1e39.
+
+An explicitly coarse graviton cell writes L into the law. These are legitimate hierarchies beyond P0, though not automatically precision tunings. Minimal, weak hidden-sector loops cannot bend a Planck-stiff graviton without an enormous central charge.
+
+**What stays open.**
+- No all-orders result excludes other dimensional-transmutation mechanisms.
+- A dynamical khronon remains an RF preferred-foliation theory. This corrects the worker's R4 classification.
+
+The hierarchy is established for the explicit R1 and R2 subcases, not for every one-grid realization.
+
+### Lane RW, W2 (recorded 17:41Z): INCONCLUSIVE
+
+Refereed by codex sol: NOT CONFIRMED, so the result is INCONCLUSIVE. Files: `agents/C4_W2_*`.
+
+**What the referee confirmed.** C3 leaves a nonzero Killing-sector obstruction in the 09-14 / L1 single-band construction. Suppose that obstruction is replaced by a homogeneous background coefficient and every gauge-invariant addition is set to zero. Then the minimal λ = 1 Wess–Zumino theory has one extra scalar:
+- dispersion ω² = a k²/(3a − 2M_P²k²);
+- a ghost for the physical sign a < 0;
+- the α term alone does not cure it.
+
+**Why it is not a FAIL.** The anomaly does not uniquely determine that action or its spectrum.

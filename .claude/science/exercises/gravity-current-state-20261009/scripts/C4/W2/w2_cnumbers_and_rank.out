@@ -1,0 +1,45 @@
+=== (A1) vacuum c-numbers per site (lattice units), Weyl ordered ===
+ m     rho        p_c       e_c        a_c=e_c-rho   w=p/rho   rho+p     e_c+p_c
+ 0.0  1.193801  +0.110001  -0.110001  -1.303802    +0.0921  +1.303802  +0.000000
+ 0.5  1.221635  +0.106754  -0.106754  -1.328389    +0.0874  +1.328389  +0.000000
+ 1.0  1.300034  +0.099093  -0.099093  -1.399127    +0.0762  +1.399127  +0.000000
+ 2.0  1.568653  +0.080697  -0.080697  -1.649349    +0.0514  +1.649349  +0.000000
+ grid check (Nq=96, m=0.5): {'rho': 1.221635, 'p': 0.106754, 'e': -0.106754, 'a': -1.328389}
+ -> w_vac != -1 and a_c != 0: one CC counterterm cannot absorb the vacuum energy, the vacuum
+    pressure tadpole and the vacuum Killing c-number at once (3 conditions; see report).
+
+=== (A2) thermal (normal-ordered) anomaly density a_T vs energy density rho_T ===
+ m     T       rho_T         a_T          a_T/rho_T    -<q_c^2>/2-weighted IR estimate ratio
+ 0.0   0.01  1.8368e-09   -1.0734e-12   -5.8437e-04   ratio/T^2 = -5.8437
+ 0.0   0.03  2.6474e-07   -7.5560e-10   -2.8541e-03   ratio/T^2 = -3.1712
+ 0.0   0.10  3.3720e-05   -1.0907e-06   -3.2348e-02   ratio/T^2 = -3.2348
+ 0.0   0.30  3.5337e-03   -1.2095e-03   -3.4229e-01   ratio/T^2 = -3.8032
+ 0.0   1.00  2.5676e-01   -2.1669e-01   -8.4392e-01   ratio/T^2 = -0.8439
+ 0.5   0.01  2.3205e-27   -6.2284e-30   -2.6841e-03   ratio/T^2 = -26.8410
+ 0.5   0.03  4.1496e-12   -3.8441e-14   -9.2637e-03   ratio/T^2 = -10.2930
+ 0.5   0.10  4.7623e-06   -2.3242e-07   -4.8805e-02   ratio/T^2 = -4.8805
+ 0.5   0.30  2.6771e-03   -9.8923e-04   -3.6951e-01   ratio/T^2 = -4.1057
+ 0.5   1.00  2.4636e-01   -2.0906e-01   -8.4860e-01   ratio/T^2 = -0.8486
+ -> a_T < 0 always (cos q - 1 <= 0); a_T/rho_T ~ -(const) (T a)^2 in the IR, O(1) at the zone scale
+
+=== (A3) one-quantum anomaly symbol (cos q_c - 1): zone average ===
+ <cos q_c - 1>_zone = -1.0  (C3: -1 per mode)
+
+=== (B) rank of the irreducible O(kappa) bracket matrix on backgrounds (L^3 torus) ===
+ vacuum / homogeneous isotropic (A_c const, no current)         rank     0 / 864  -> second-class per site 0.000, dof per site = 2 + 0.000
+ density modulation along x (A_c(x) varies), no current         rank   432 / 864  -> second-class per site 2.000, dof per site = 2 + 1.000
+ generic inhomogeneous A_c(x), no current                       rank   432 / 864  -> second-class per site 2.000, dof per site = 2 + 1.000
+ homogeneous beam along x (rotation-anomaly current), A const   rank   384 / 864  -> second-class per site 1.778, dof per site = 2 + 0.889
+ beam + generic inhomogeneous A_c(x)                            rank   816 / 864  -> second-class per site 3.778, dof per site = 2 + 1.889
+ (dof per site = (12 - 2*(#first class) - #second class)/2 = 2 + rank/(2N); no secondary constraints
+  arise where the pairing is invertible, the multipliers n(x) and v.N(x) are fixed instead)
+
+=== (B2) same backgrounds, C3's own (WZ-consistent) Killing representative for the boost block:
+    {C_c[xi], C_s[N]} = - sum_x sum_c xi_c(x) A_c(x) (D_c N)(x)   (rotation block unchanged)
+ vacuum / homogeneous isotropic (A_c const, no current)                   rank   416 / 864  -> dof per site = 2 + 0.963
+ density modulation along x (A_c(x) varies), no current                   rank   416 / 864  -> dof per site = 2 + 0.963
+ generic inhomogeneous A_c(x), no current                                 rank   416 / 864  -> dof per site = 2 + 0.963
+ homogeneous beam along x (rotation-anomaly current), A const             rank   624 / 864  -> dof per site = 2 + 1.444
+ beam + generic inhomogeneous A_c(x)                                      rank   800 / 864  -> dof per site = 2 + 1.852
+ vacuum after the pressure counterterm (A_c = 0 homogeneous), no current  rank     0 / 864  -> dof per site = 2 + 0.000
+ (homogeneous A_c != 0: rank deficit only at momenta with sin p_c = 0 for all c, i.e. p in {0,pi}^3)

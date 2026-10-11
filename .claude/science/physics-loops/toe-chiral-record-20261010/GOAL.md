@@ -59,4 +59,10 @@ transverse-sign cap, and their sign product, at each absolute height
 1 and 2 and at coefficient `1/2`, each have neighbour-product mean 1.
 Five bonds at each height give determinant `-16`, and the first bond
 at each height has all nine comparison kernels equal to 0, so none of
-those six caps lies in the span of the nine.
+those six caps lies in the span of the nine. Cycle 22 shows that the
+parallel transverse-dot sign at each absolute height 1, 2, and 3, at
+coefficient `1/2`, has neighbour-product mean 1. Two bonds at each
+height agree on the fifteen comparison kernels and differ by 2 on this
+kernel, so none of the three lies in that span. Each opposite-height
+pair carries a 10-dimensional slice-zero bond-symmetric soldered space,
+and this kernel is one line outside the five same-height kernels.

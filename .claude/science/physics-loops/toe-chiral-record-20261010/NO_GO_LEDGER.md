@@ -118,3 +118,12 @@ neighbour-product mean 1. Five bonds at each height have determinant
 `-16`, and one bond at each height has all nine comparison kernels
 equal to 0. It does not classify a factor outside those fifteen
 kernels, and it does not classify the 300-dimensional affine space.
+
+Cycle 22 prunes the reading that every strictly positive order-blind
+factor on this alphabet lies in the span of those fifteen kernels. Each
+parallel transverse-dot kernel at coefficient `1/2` has neighbour-product
+mean 1. Two bonds at each height agree on the fifteen and differ by 2
+on this kernel. The opposite-height slice-zero bond-symmetric soldered
+space is 10-dimensional, and this kernel is one line of the
+5-dimensional complement. It does not base that complement, and it does
+not classify the 300-dimensional affine space.

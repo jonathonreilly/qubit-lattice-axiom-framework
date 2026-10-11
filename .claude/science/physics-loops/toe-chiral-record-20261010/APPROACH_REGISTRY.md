@@ -194,3 +194,16 @@ five bonds at each height.
 Family not used: a factor outside the span of those six caps and the
 nine kernels. That remains open. The 300-dimensional affine space is
 not this family. A mixed-height bond is not this family.
+
+Cycle 22 target contract: whether a strictly positive order-blind
+factor on the 48-point chiral pair lies outside the span of the fifteen
+kernels.
+
+Family used: the parallel transverse-dot sign at absolute heights 1, 2,
+and 3, at coefficient `1/2`, separated by two bonds at each height.
+The ansatz named here is the soldered bond-symmetric slice-zero space
+on one opposite-height pair, which has dimension 10.
+
+Family not used: a second vector in the 5-dimensional complement. That
+remains open. The 300-dimensional affine space is not this family. A
+mixed-height bond is not this family.

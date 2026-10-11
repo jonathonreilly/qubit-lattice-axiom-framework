@@ -195,13 +195,30 @@ equal to 0 while the three caps at that height are nonzero. None of
 the six caps is a linear combination of the nine. Runner
 `PASS=10 FAIL=0`.
 
+Cycle 22. On the same alphabet the parallel transverse-dot sign at each
+absolute height 1, 2, and 3 is bond-symmetric and soldered. It is the
+sign of the negative transverse dot product when the transverse cross
+product vanishes on opposite caps of that height, and 0 otherwise. At
+coefficient `1/2` each factor takes values `1/2`, `1`, and `3/2`. Each
+record meets at most one live direction and every left slice sums to 0,
+so every neighbour product has mean 1. Every far-end sum equals 48.
+The bonds from `(-2, -3, 1)` to `(-2, -3, -1)` and to `(2, 3, -1)`,
+from `(-1, -3, 2)` to `(-1, -3, -2)` and to `(1, 3, -2)`, and from
+`(-2, -1, 3)` to `(-2, -1, -3)` and to `(2, 1, -3)`, agree on all
+fifteen comparison kernels and differ by 2 on this kernel. On each
+opposite-height pair the slice-zero bond-symmetric soldered kernels
+are 10-dimensional. The five same-height kernels span 5 of them, and
+this kernel raises the rank to 6. Runner `PASS=10 FAIL=0`.
+
 ## Next exact action
 
-Ask whether a strictly positive order-blind factor on the 48-point
-chiral pair lies outside the span of the nine kernels and these six
-lower-height caps. Do not repeat the dimension count. Do not return to
-the modulus-3 triple. Do not invent a formation rate. Do not return to
-shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
+Exhibit a second kernel in the 5-dimensional complement of one
+opposite-height pair, with an exact formula, outside the five
+same-height kernels and the parallel-dot kernel. Do not claim that
+complement is based. Do not claim the 300-dimensional affine space is
+classified. Do not repeat the bond-space dimension count. Do not return
+to the modulus-3 triple. Do not invent a formation rate. Do not return
+to shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
 alphabets.
 
 ## Cleanup

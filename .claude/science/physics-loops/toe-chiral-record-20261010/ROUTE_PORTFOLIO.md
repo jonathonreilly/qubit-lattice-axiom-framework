@@ -75,3 +75,9 @@ Cycle 21 takes the chirality, transverse-sign, and sign-product caps
 at absolute heights 1 and 2. It does not classify a factor outside
 those six caps and the nine kernels, it does not take a mixed-height
 bond, and it does not classify the 300-dimensional affine space.
+
+Cycle 22 takes the parallel transverse-dot sign at absolute heights 1,
+2, and 3. It names the 10-dimensional opposite-height ansatz and places
+one kernel outside the fifteen. It does not base the 5-dimensional
+complement, it does not take a mixed-height bond, and it does not
+classify the 300-dimensional affine space.

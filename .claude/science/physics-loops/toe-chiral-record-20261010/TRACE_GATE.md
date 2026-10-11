@@ -332,3 +332,21 @@ next_trace_action: "Ask whether a strictly positive order-blind factor on the 48
 The bond on which all nine comparison kernels vanish prunes the reading
 that any of the six lower-height caps lies in that span. A factor
 outside those fifteen kernels stays outside this ansatz.
+
+## Cycle 22
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Exhibit a second kernel in the 5-dimensional complement of one opposite-height pair, with an exact formula, outside the five same-height kernels and the parallel-dot kernel. Do not claim that complement is based."
+```
+
+The two bonds that agree on the fifteen kernels and differ by 2 on the
+parallel-dot kernel prune the reading that this kernel lies in that
+span. The orbit rank says the opposite-height ansatz is 10-dimensional
+and this kernel is one line of a 5-dimensional complement. A second
+vector in that complement stays outside this formula.

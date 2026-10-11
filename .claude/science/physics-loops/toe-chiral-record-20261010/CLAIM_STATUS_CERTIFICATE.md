@@ -412,3 +412,27 @@ at each height have determinant `-16`. One bond at each height has all
 nine comparison kernels equal to 0, so none of the six caps is a linear
 combination of the nine. A factor outside those fifteen kernels stays
 open. The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 22
+
+claim_id: chiral_pair_parallel_transverse_dot_outside_fifteen_kernels_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); parallel transverse-dot sign at absolute heights 1, 2, and 3; coefficient 1/2
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: Theorem 2's converse is applied to each family. Far-end sum 1 is the chiral-pair bond note. No formation rate is used.
+
+Each parallel transverse-dot kernel at coefficient `1/2` is strictly
+positive, and every neighbour product has mean 1. Two bonds at each
+height agree on the fifteen comparison kernels and differ by 2 on this
+kernel, so none of the three is a linear combination of the fifteen.
+The opposite-height slice-zero bond-symmetric soldered space is
+10-dimensional, and this kernel is one line of the 5-dimensional
+complement. That complement is not based. The 300-dimensional affine
+space is not classified.

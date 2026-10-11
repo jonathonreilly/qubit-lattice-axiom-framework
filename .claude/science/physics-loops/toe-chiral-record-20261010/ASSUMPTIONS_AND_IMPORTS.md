@@ -221,3 +221,19 @@
   bond note. The dimension count is not repeated. The 300-dimensional
   affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 22
+
+- The ansatz is the soldered bond-symmetric slice-zero kernels on the
+  bonds `a·d = h` and `b·d = -h`, for one absolute height `h` in
+  `{1, 2, 3}`, on the 48 signed permutations of `(1, 2, 3)`. That space
+  is 10-dimensional. The exhibited kernel is the parallel transverse-dot
+  sign. The coefficient `1/2` is a witness, not a selected scale. The
+  other four dimensions of the complement are not in this count. A
+  mixed-height bond is not in this count.
+- Order-blindness is Theorem 2's converse, applied after bond symmetry
+  and the neighbour-product means. Those means follow from one live
+  direction and a zero left slice. Far-end sum 1 is the chiral-pair
+  bond note. The bond-space dimension count is not repeated. The
+  300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

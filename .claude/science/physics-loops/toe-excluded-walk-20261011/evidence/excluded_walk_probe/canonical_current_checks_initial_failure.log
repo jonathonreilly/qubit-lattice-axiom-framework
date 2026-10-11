@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_probe/canonical_current_checks.py", line 176, in <module>
+    assert free==action(current_poly(a),f)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

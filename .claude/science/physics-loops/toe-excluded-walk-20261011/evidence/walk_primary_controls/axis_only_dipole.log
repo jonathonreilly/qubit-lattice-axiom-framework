@@ -1,0 +1,26 @@
+Supplied excluded-walk finite controls; no claim of infinite-volume certification
+AUDIT_TIMEOUT_SEC=180
+Exact 4x4 singlet resolvent: 48 Gaussian-rational cases agree.
+Exact total-corner atom: r/3 and full rational resolvent identity, r=0..3.
+Exact finite compression: rank-two decoupling and extra -C/z resolvent term.
+Exact stationary 2x2 reduction: shell T=1/G; no limiting-coupling argument.
+Exact rank-one current identity: squared norm = phase defect squared times variance = 2304/3125
+Shell quadrature (0.0, 0.0, 0.0) lambda 0.125 rho/lambda^2 0.0253798756749 continuum 0.0253302959106 absolute difference 4.958e-05
+Shell quadrature (0.0, 0.0, 0.0) lambda 0.0625 rho/lambda^2 0.0253426708629 continuum 0.0253302959106 absolute difference 1.2375e-05
+Shell quadrature (0.0, 0.0, 0.0) lambda 0.03125 rho/lambda^2 0.0253333884022 continuum 0.0253302959106 absolute difference 3.0925e-06
+Shell quadrature (0.0, 0.0, 0.0) lambda 0.015625 rho/lambda^2 0.0253310689556 continuum 0.0253302959106 absolute difference 7.7305e-07
+Shell quadrature (0.2, 0.1, 0.05) lambda 0.125 rho/lambda^2 0.0240500111029 continuum 0.0240004553753 absolute difference 4.9556e-05
+Shell quadrature (0.2, 0.1, 0.05) lambda 0.0625 rho/lambda^2 0.0240128236902 continuum 0.0240004553753 absolute difference 1.2368e-05
+Shell quadrature (0.2, 0.1, 0.05) lambda 0.03125 rho/lambda^2 0.0240035456651 continuum 0.0240004553753 absolute difference 3.0903e-06
+Shell quadrature (0.2, 0.1, 0.05) lambda 0.015625 rho/lambda^2 0.0240012273328 continuum 0.0240004553753 absolute difference 7.7196e-07
+Shell quadrature (0.0, 0.0, 0.25) lambda 0.125 rho/lambda^2 0.0237967976153 continuum 0.0237471524162 absolute difference 4.9645e-05
+Shell quadrature (0.0, 0.0, 0.25) lambda 0.0625 rho/lambda^2 0.0237595433476 continuum 0.0237471524162 absolute difference 1.2391e-05
+Shell quadrature (0.0, 0.0, 0.25) lambda 0.03125 rho/lambda^2 0.0237502487373 continuum 0.0237471524162 absolute difference 3.0963e-06
+Shell quadrature (0.0, 0.0, 0.25) lambda 0.015625 rho/lambda^2 0.0237479262667 continuum 0.0237471524162 absolute difference 7.7385e-07
+Mixed-channel counterexample: E= 0.001 individual energies= 0.70760660440983 0.7066066044098301 contact weight=1/2.
+All finite controls completed; no PV quadrature or analytic theorem certification claimed.
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/walk_primary_controls/mutant_axis_only_dipole.py", line 322, in <module>
+    assert free==action(current_poly(a),f), 'original-position free-current identity'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: original-position free-current identity

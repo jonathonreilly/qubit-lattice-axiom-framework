@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_projection_normalization.py", line 55, in <module>
+    check(s.simplify(distance-2*(1-s.sqrt(1-loss)))==0,'normalized projected-state distance identity')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_projection_normalization.py", line 16, in check
+    assert bool(value),label
+           ~~~~^^^^^^^
+AssertionError: normalized projected-state distance identity

@@ -1,0 +1,8 @@
+Supplied excluded-walk finite controls; no claim of infinite-volume certification
+AUDIT_TIMEOUT_SEC=180
+Exact 4x4 singlet resolvent: 48 Gaussian-rational cases agree.
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/walk_primary_controls/mutant_corner_atom_measure.py", line 130, in <module>
+    assert fs == F(r,3), 'total-corner contact atom'
+           ^^^^^^^^^^^^
+AssertionError: total-corner contact atom

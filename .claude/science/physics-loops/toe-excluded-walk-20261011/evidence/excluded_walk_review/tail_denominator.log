@@ -1,0 +1,9 @@
+Floating Duhamel derivative errors: [2.400274260444071e-07, 6.000680405166434e-08]
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_tail_denominator.py", line 108, in <module>
+    check(s.simplify(actual-claimed)==0,'Cook-tail integrated power and denominator')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_tail_denominator.py", line 16, in check
+    assert bool(value),label
+           ~~~~^^^^^^^
+AssertionError: Cook-tail integrated power and denominator

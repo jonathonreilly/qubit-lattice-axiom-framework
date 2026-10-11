@@ -1,0 +1,123 @@
+{
+  "created_utc": "2026-10-11T18:00:02.119571+00:00",
+  "status": "source-bound independent research review, not an audit verdict",
+  "author_identity_manifest_sha256": "e88f2ec2a92dbeee3c5ce9225e9d29599e90907ee7df4b176aaf369f139a375c",
+  "frozen_author_sources": {
+    "EXCLUDED_WALK_TRANSPORT_PROBE.md": {
+      "sha256": "8bc423b2d5adf368f4ae09a2bb87730517be243a050b4289dad3a0b217f09526",
+      "bytes": 27369
+    },
+    "excluded_walk_probe/exact_and_shell_checks.py": {
+      "sha256": "d2bc72a63fd588a9068884b7091ebbfd7a9eddf25be48cc0321a4458317ba9b1",
+      "bytes": 7975
+    },
+    "excluded_walk_probe/exact_and_shell_checks.log": {
+      "sha256": "a0b6f6729d95dbfb15b9690203f784b99da1b96fad9be8122e5bdc3a438ef8f7",
+      "bytes": 2203
+    },
+    "excluded_walk_probe/matched_statement_search.log": {
+      "sha256": "2b814018c5dee7ceb3f41970c4cc32140faa42c5d77fa888b09ebc4babfc848c",
+      "bytes": 10062
+    },
+    "excluded_walk_probe/finite_time_statement_search.log": {
+      "sha256": "5461eb5b07ceb198abe69283c6258fabe16b72332920372ea96318e582aab07e",
+      "bytes": 2040
+    },
+    "excluded_walk_probe/search_scope_excerpts.log": {
+      "sha256": "9cbd13668f4545c6ea5c6f5be1b4be1846011e93d61c00b7ae92370d437d9d14",
+      "bytes": 30391
+    },
+    "excluded_walk_probe/yafaev_1992_scattering.pdf": {
+      "sha256": "6852364a4b5fccc6a8db834b5ef11e9cabcc8c5dae4c1c98ae171c0322ffe4c6",
+      "bytes": 2162089
+    },
+    "EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md": {
+      "sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe",
+      "bytes": 8340
+    },
+    "excluded_walk_probe/canonical_current_checks.py": {
+      "sha256": "3f59faae468e70b8aa16f7550773570d3c9e9f0c15ffb9bb7ee350dc41d4fdcd",
+      "bytes": 7495
+    },
+    "excluded_walk_probe/canonical_current_checks.log": {
+      "sha256": "35a0666a65053cac3c111537d9ff5ac83218e09cdd814277096286fd428c7754",
+      "bytes": 559
+    },
+    "excluded_walk_probe/canonical_current_checks_initial_failure.py": {
+      "sha256": "f3cf1921255dbeaec867b51e0bc24d98978ac2ca0f2138fed20d70fb222c2ecb",
+      "bytes": 7447
+    },
+    "excluded_walk_probe/canonical_current_checks_initial_failure.log": {
+      "sha256": "dac4bcabacf222fe5135e86feba8df0730ca4222e40900bd6223df783553fe40",
+      "bytes": 297
+    },
+    "EXCLUDED_WALK_CANONICAL_REVIEW.md": {
+      "sha256": "ced416dce3a7de31b503d73460e2fa449f6ed4e7175400d8376179cbeead0f9c",
+      "bytes": 9151
+    },
+    "../worktree/docs/ADMISSIBILITY_RULE_NO_FINITE_RANGE_INTERACTION_KEEPS_TWO_EXCLUDED_RECORDS_TOTAL_ENERGY_CURRENT_ON_THE_PLANE_OR_IN_SPACE_BOUNDED_THEOREM_NOTE_2026-09-26.md": {
+      "sha256": "996dbbc8cebb88bd94f00336fcfebcab97f01209c9a1f717117567f5a2394cb5",
+      "lines": 283,
+      "coverage": "complete source read; generic-K conclusions not imported"
+    },
+    "../worktree/docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md": {
+      "sha256": "e0536f80a25feb0b368c10a0016a9d09b07b5bd06827751c30029d2eb1d70065",
+      "lines": 226,
+      "coverage": "complete source read; generic-K conclusions not imported"
+    },
+    "../worktree/docs/ADMISSIBILITY_RULE_EXACT_BOOKS_NEED_RECORDS_THAT_NEVER_SCATTER_OR_BIND_NOTHING_LOCAL_KEEPS_THEM_UNDER_ONE_RECORD_PER_SITE_BOUNDED_THEOREM_NOTE_2026-09-25.md": {
+      "sha256": "06c78db9394c0a7ffc39f08385d3cf2bb6aaa528639c2b4e34994ed00ed6d88a",
+      "lines": 230,
+      "coverage": "complete source read; generic-K conclusions not imported"
+    },
+    "../worktree/docs/ADMISSIBILITY_RULE_A_REST_ENERGY_FROM_BINDING_TWO_WALKERS_IS_EXACT_WITH_THE_WALKERS_OWN_SPEED_IN_ONE_DIMENSION_INVISIBLE_UNDER_ONE_RECORD_PER_SITE_AND_ANISOTROPIC_IN_THREE_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "sha256": "50c708e3742f9a5daa59f6f1fb48b44fe388d71b9fc2454ede1a9595185d332d",
+      "lines": 106,
+      "coverage": "complete source read; generic-K conclusions not imported"
+    },
+    "excluded_walk_probe/yafaev_page-10.png": {
+      "sha256": "49e166b578e46e9a1b79f65c8c93b16de8c7e7565d745c2674183f34b4d52276",
+      "coverage": "complete rendered page inspected"
+    },
+    "excluded_walk_probe/yafaev_page-11.png": {
+      "sha256": "b3616229e7f42199ab95c476d8278a76a6ebd92e5ff6a6b778e0574ea58f14da",
+      "coverage": "complete rendered page inspected"
+    },
+    "excluded_walk_probe/yafaev_page-12.png": {
+      "sha256": "4a38fa2b47df7843b1bf7cc297a6c41b67cfdbf34bab7ba258a599f534b4790e",
+      "coverage": "complete rendered page inspected"
+    }
+  },
+  "excluded_manifest_entry": "EXCLUDED_WALK_COOK_BRIDGE_DRAFT.md is not a premise and was not read for this review",
+  "review_files": {
+    "EXCLUDED_WALK_THRESHOLD_REVIEW.md": {
+      "sha256": "9168b32dac2634152aa54431dc47dbb91e019818afdc9d84c40c717d51c3f952",
+      "bytes": 26120
+    },
+    "excluded_walk_threshold_review/independent_controls.py": {
+      "sha256": "73801d139ab5aeebd904d374f0ad5ab8fd9a125a167098e54fa8540e9ba0065a",
+      "bytes": 6175
+    },
+    "excluded_walk_threshold_review/independent_controls.log": {
+      "sha256": "427a70da78041a3c4f76143cbecc8abe2e5cedc9616da04ea5f17d6b30632355",
+      "bytes": 2370
+    },
+    "excluded_walk_threshold_review/yafaev_journal_368.png": {
+      "sha256": "10eb0a3cbe737bc25428702a242175418ccb5a3a130d91a98962ef30475f1c0d",
+      "bytes": 187734
+    }
+  },
+  "execution": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "excluded_walk_threshold_review/independent_controls.py"
+    ],
+    "exit_code": 0,
+    "internal_seconds": 0.469,
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "scope": "exact symbolic identities; separately labelled 70-digit finite-dimensional unitary controls; no PV quadrature or infinite-volume theorem certification"
+  },
+  "reading_limits": "All four source-table notes complete; Yafaev Section 2 setup through Theorem 2.4 and (2.9), journal pp368-371; unrelated historical search corpus and separate Cook/canonical-current drafts are not proof premises."
+}

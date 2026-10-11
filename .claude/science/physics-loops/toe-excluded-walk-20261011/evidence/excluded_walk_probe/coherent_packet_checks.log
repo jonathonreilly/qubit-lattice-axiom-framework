@@ -1,0 +1,15 @@
+Exact coherent phase sign and unit normalization: +i gives sigma Im(s)<0; -i reverses it.
+Pure v is an exact zero-change control; no dissipation inference.
+Exact sphere moment control: Var((L dot n)^2)=4/45 for |L|=1.
+Selected domain positive variance lower input D_min= 1575/1024
+Actual lattice coarea: (0.125, 0.0, 0.0) e 1.5 lambda 0.0625 sigma/lambda^3 0.0419266012321 limit 0.0419262745781 mean(y_a^2) 0.1875864158 limit 0.1875
+Actual lattice coarea: (0.125, 0.0, 0.0) e 1.5 lambda 0.03125 sigma/lambda^3 0.0419263696075 limit 0.0419262745781 mean(y_a^2) 0.1875215403 limit 0.1875
+Actual lattice coarea: (0.125, 0.0, 0.0) e 1.5 lambda 0.015625 sigma/lambda^3 0.0419263122277 limit 0.0419262745781 mean(y_a^2) 0.1875053344 limit 0.1875
+Actual lattice coarea: (0.125, 0.0, 0.0) e 1.5 lambda 0.0078125 sigma/lambda^3 0.0419262979156 limit 0.0419262745781 mean(y_a^2) 0.1875012837 limit 0.1875
+Actual lattice coarea: (0.125, 0.015625, 0.015625) e 1.5 lambda 0.0625 sigma/lambda^3 0.0419175025495 limit 0.0419171759942 mean(y_a^2) 0.187545689 limit 0.1874593099
+Actual lattice coarea: (0.125, 0.015625, 0.015625) e 1.5 lambda 0.03125 sigma/lambda^3 0.0419172709925 limit 0.0419171759942 mean(y_a^2) 0.1874808412 limit 0.1874593099
+Actual lattice coarea: (0.125, 0.015625, 0.015625) e 1.5 lambda 0.015625 sigma/lambda^3 0.0419172136289 limit 0.0419171759942 mean(y_a^2) 0.1874646423 limit 0.1874593099
+Actual lattice coarea: (0.125, 0.015625, 0.015625) e 1.5 lambda 0.0078125 sigma/lambda^3 0.0419171993208 limit 0.0419171759942 mean(y_a^2) 0.1874605934 limit 0.1874593099
+Cook powers r= 6 : contact seminorm -9/2 state tail 3 current comparison 4 projection 9/2 canonical C9 powers 11 13
+Cook powers r= 7 : contact seminorm -11/2 state tail 7/2 current comparison 9/2 projection 5 canonical C9 powers 12 14
+Finite controls completed. Angular quadrature is not interval certified; no PV quadrature used.

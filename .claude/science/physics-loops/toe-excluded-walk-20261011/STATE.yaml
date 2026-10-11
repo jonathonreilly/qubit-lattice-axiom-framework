@@ -1,0 +1,11 @@
+loop: toe-excluded-walk-20261011
+mode: milestone_snapshot
+branch: physics-loop/toe-excluded-walk-20261011
+base_revision: a13caa4885f547c8d206265b031ba7649e539fd9
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+source_status: proposed_retained
+independent_audit: not_applied
+publication: reviewed_ready_for_regular_pr
+campaign_deadline_utc: 2026-10-12T16:00:52Z
+live_checkpoint: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009/STATE.yaml

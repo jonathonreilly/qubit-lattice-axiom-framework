@@ -1,0 +1,12 @@
+Exact prolate integration: rho0=D/(4*pi^2), mean(y1^2)=beta/12, fourth=beta^2/80, variance=beta^2/180.
+Exact Cayley-phase expectation: -2*B*R*sig/(B**2 + R**2) ; reversing coherence reverses it; pure contact has zero change.
+Density amplitude power -1 => order-7 global L2(K;L1(E)) power -11/2
+Density amplitude power 0 => order-7 global L2(K;L1(E)) power -9/2
+Density amplitude power 1 => order-7 global L2(K;L1(E)) power -7/2
+Exact joint powers: state 7/2, projection 5, removed probability 10, current error 9/2, form factors 12 and 14; r=6 only yields current order 4.
+Lattice Pauli/coarea fixture kappa= [0.125, 0.0, 0.0] e= 1.5
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_publication_review/independent_packet_controls.py", line 183, in <module>
+    assert erho<.01*ll**2 and ed<.02*ll**2
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

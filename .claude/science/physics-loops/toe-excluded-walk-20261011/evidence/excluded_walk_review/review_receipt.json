@@ -1,0 +1,220 @@
+{
+  "task": "bounded independent Cook-bridge review; no formal audit verdict",
+  "date": "2026-10-11",
+  "memo": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_COOK_REVIEW.md",
+    "sha256": "a145780abbc767a71dd72b5a9fe3fa4ea6c59015ad57818623fcc81d3c62c75c",
+    "lines": 326
+  },
+  "sources": {
+    "cook_final": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_COOK_BRIDGE_DRAFT.md",
+      "sha256": "2c54b891deeb43a19c5f41de5059aadac7fc8d672dfb68e0b8aa575d27eb3fc7",
+      "lines": 262
+    },
+    "walk_contract": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "e0536f80a25feb0b368c10a0016a9d09b07b5bd06827751c30029d2eb1d70065",
+      "lines": 226
+    }
+  },
+  "primary_import": {
+    "url": "https://www.jstage.jst.go.jp/article/pjab1945/33/5/33_5_260/_pdf",
+    "local_pdf_sha256": "12ce9d67ed67d096f82b55a6ef7b778a83c16d5e2f020d4946d58112f3f93fe5",
+    "reading": "complete five-page extracted text; Theorem 1 p.260 and proof inspected; no visual page claim"
+  },
+  "worktree_at_freeze": {
+    "head": "3fbaa00e9d97a19459d197fd0de2d62d45327e90",
+    "local_main": "e485eab6b09b3957df5772104d3ea3980108d7fa",
+    "branch": "physics-loop/toe-nonlinear-transport-20261011",
+    "scope": "file identities, not a claim that the shared worktree is globally frozen"
+  },
+  "environment": {
+    "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0"
+  },
+  "execution": {
+    "working_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/run_independent_controls.py"
+    ],
+    "timeout_seconds_per_process": 90,
+    "baseline_checks": 68,
+    "actual_source_mutants": 8,
+    "all_expected_results": true,
+    "manifest_sha256": "a3b06aeb4c767d213a6e5cf98b10989be22a8034a159bb30e30c63678a89c545",
+    "replayed_author_runner": false
+  },
+  "protected_qubit_files_unchanged": {
+    "FINAL_QUBIT_PORT_NOTE.md": "5d7fbfe0d0603e52c80de047f3ea91bff46b01d3a24b40ba2f796d49c0c3d3ad",
+    "root_qubit_port_primary.py": "0a655a71047cae8fde331eba758ad91da08cc7f5cbaddac4b2335196a9f38f2a",
+    "native_probe/publication_composition_review.md": "f0d4b25cfac7ccc4d422b4c57da187bd641a9ee07b9216efcd5a327f24ebd183",
+    "native_probe/publication_receipt.json": "505b507f6a8c7008d32f1cb1566324fe52bb06c6e20a5c6bada67cfdc4c9da5b"
+  },
+  "artifacts": [
+    {
+      "path": "EXCLUDED_WALK_COOK_REVIEW.md",
+      "sha256": "a145780abbc767a71dd72b5a9fe3fa4ea6c59015ad57818623fcc81d3c62c75c",
+      "bytes": 18578
+    },
+    {
+      "path": "excluded_walk_review/baseline.log",
+      "sha256": "21fbf8d9550d2c442d71387b164338d999f376bef4655a2faf0c0884ab64c3d7",
+      "bytes": 709
+    },
+    {
+      "path": "excluded_walk_review/control_manifest.json",
+      "sha256": "a3b06aeb4c767d213a6e5cf98b10989be22a8034a159bb30e30c63678a89c545",
+      "bytes": 7124
+    },
+    {
+      "path": "excluded_walk_review/control_run.log",
+      "sha256": "0b49184f86efea1471643b930a0c8f596d88947a6995562fc39fde56ceddb41d",
+      "bytes": 4583
+    },
+    {
+      "path": "excluded_walk_review/cook_draft_1286d276.md",
+      "sha256": "1286d276e87e2e2607184b14a5ce3d87fc4bc2a3d75b55f0af644b7fddbab38e",
+      "bytes": 12153
+    },
+    {
+      "path": "excluded_walk_review/cook_draft_2c54b891_final.md",
+      "sha256": "2c54b891deeb43a19c5f41de5059aadac7fc8d672dfb68e0b8aa575d27eb3fc7",
+      "bytes": 12191
+    },
+    {
+      "path": "excluded_walk_review/cook_draft_b70b43fc_original.md",
+      "sha256": "b70b43fc6a518988b59c9a1c4955db6d294030200c1c1fd6e2ef3291c94ff027",
+      "bytes": 11680
+    },
+    {
+      "path": "excluded_walk_review/cook_independent_check.py",
+      "sha256": "b773b5d413a8649b138893a5985d9792bee1a60dc1839b8a03e6971e8f2c83a6",
+      "bytes": 8561
+    },
+    {
+      "path": "excluded_walk_review/cook_sign.log",
+      "sha256": "a4629a44a2b6eed7a634b81830b011c22a7bdd83603d9d6de8b72878a52df85b",
+      "bytes": 719
+    },
+    {
+      "path": "excluded_walk_review/first_structural_equality_failure.log",
+      "sha256": "be2599d33c69d07f5288cac5bf9f422c5f9ca56c8b88f27d7a4954288a0a4a80",
+      "bytes": 714
+    },
+    {
+      "path": "excluded_walk_review/first_structural_equality_source.py",
+      "sha256": "179bfd078609b7f5ddaae2993075803523606a1ed057b6d845e2e172c1503a03",
+      "bytes": 8557
+    },
+    {
+      "path": "excluded_walk_review/fourier_normalization.log",
+      "sha256": "7ed016c34a99c79e030cda174553aad3b761e77493b64b04c9bcba79626e282d",
+      "bytes": 755
+    },
+    {
+      "path": "excluded_walk_review/kato_1957_primary.pdf",
+      "sha256": "12ce9d67ed67d096f82b55a6ef7b778a83c16d5e2f020d4946d58112f3f93fe5",
+      "bytes": 442573
+    },
+    {
+      "path": "excluded_walk_review/kato_download.log",
+      "sha256": "83edbd32b0ba2ad909a2dc959f6d72759abe709bd5c707a6f849c5ba573ee2f1",
+      "bytes": 554
+    },
+    {
+      "path": "excluded_walk_review/mutant_cook_sign.py",
+      "sha256": "2d5c3749d670daf90a46082f784d208c968abb379a8e8e57463ac7aa89678c6b",
+      "bytes": 8562
+    },
+    {
+      "path": "excluded_walk_review/mutant_fourier_normalization.py",
+      "sha256": "3fee759334062ca22e5da47890f1581b2e4402d33248fdb65cc2c29ee1d879fe",
+      "bytes": 8570
+    },
+    {
+      "path": "excluded_walk_review/mutant_projection_normalization.py",
+      "sha256": "29032ef92021dc629fd63149d61437a6443a9d4d4ea284f66c02271f17a3b7e6",
+      "bytes": 8535
+    },
+    {
+      "path": "excluded_walk_review/mutant_rank_two_term.py",
+      "sha256": "f7f212e48cde2fcb4be609400f3e7c64c18039b0fb7942c9cf6c3831eeab29a6",
+      "bytes": 8555
+    },
+    {
+      "path": "excluded_walk_review/mutant_scattering_adjoint.py",
+      "sha256": "ec86c4bd69f364ec729287e589226f25ec6941952dc61a4e81475f7dddc814b0",
+      "bytes": 8561
+    },
+    {
+      "path": "excluded_walk_review/mutant_tail_denominator.py",
+      "sha256": "35825f69408446af2de027634c78fb3df541adb15ca937ec72ac59fa0b96d362",
+      "bytes": 8551
+    },
+    {
+      "path": "excluded_walk_review/mutant_torus_measure.py",
+      "sha256": "f59430e44851ff7664c4ff477610ccb2a1bbc887253eaefc7e4c4d9d39c8c2f7",
+      "bytes": 8559
+    },
+    {
+      "path": "excluded_walk_review/mutant_unchanged_K_law.py",
+      "sha256": "f562bc57a00bc262347fe31e09fbdedfd3aff6e7919b18992539aa2df2a0d820",
+      "bytes": 8517
+    },
+    {
+      "path": "excluded_walk_review/projection_normalization.log",
+      "sha256": "33676ec8e71f0a23921e13d6f2cfd59ba3ab54d71e4d06060f2579017bc364b3",
+      "bytes": 687
+    },
+    {
+      "path": "excluded_walk_review/rank_two_term.log",
+      "sha256": "565c8789ce1c645d2775c2ba6a2d673cf1581272cd3a921fc65c79281189a40b",
+      "bytes": 585
+    },
+    {
+      "path": "excluded_walk_review/run_independent_controls.py",
+      "sha256": "50aa75ad9726f7d3d38814bd42e6f4082b2967c0fd6e511aa0107e66a7a8a0f0",
+      "bytes": 2593
+    },
+    {
+      "path": "excluded_walk_review/scattering_adjoint.log",
+      "sha256": "16bdb9fcca345ab22c8360ccae38f55128d33ceba3adcc113a6bb68353147a46",
+      "bytes": 959
+    },
+    {
+      "path": "excluded_walk_review/tail_denominator.log",
+      "sha256": "95082001004ce95f4069ba5f0d58c6d47c671bbebc4c48f5a9f954216b8b7c8f",
+      "bytes": 719
+    },
+    {
+      "path": "excluded_walk_review/torus_measure.log",
+      "sha256": "8cb63b0929fc008e35f4ae8bf85b48315ea5e83f8ae0bd5ebc7a7bb88e0a729d",
+      "bytes": 622
+    },
+    {
+      "path": "excluded_walk_review/unchanged_K_law.log",
+      "sha256": "8749beeb2a2f7ba26d251597af9bdb064d6da9f42e4b84d179cfb531471ed0d3",
+      "bytes": 990
+    },
+    {
+      "path": "excluded_walk_review/walk_contract_e0536f80.md",
+      "sha256": "e0536f80a25feb0b368c10a0016a9d09b07b5bd06827751c30029d2eb1d70065",
+      "bytes": 24980
+    }
+  ],
+  "limits": [
+    "C10 stationary representation remains conditional",
+    "C12 threshold theorem and uniform channel estimates not certified",
+    "No global absolutely continuous completeness claim",
+    "No physical primitive or placement-current identification",
+    "Finite controls are not infinite scattering computations"
+  ],
+  "receipt_scope": "This receipt excludes its own hash and freeze_check.log; its hash is reported in freeze_check.log and the completion message."
+}

@@ -1,0 +1,16 @@
+Supplied excluded-walk finite controls; no claim of infinite-volume certification
+AUDIT_TIMEOUT_SEC=180
+Exact 4x4 singlet resolvent: 48 Gaussian-rational cases agree.
+Exact total-corner atom: r/3 and full rational resolvent identity, r=0..3.
+Exact finite compression: rank-two decoupling and extra -C/z resolvent term.
+Exact stationary 2x2 reduction: shell T=1/G; no limiting-coupling argument.
+Exact rank-one current identity: squared norm = phase defect squared times variance = 2304/3125
+Shell quadrature (0.0, 0.0, 0.0) lambda 0.125 rho/lambda^2 0.0126899378375 continuum 0.0253302959106 absolute difference 0.01264
+Shell quadrature (0.0, 0.0, 0.0) lambda 0.0625 rho/lambda^2 0.0126713354315 continuum 0.0253302959106 absolute difference 0.012659
+Shell quadrature (0.0, 0.0, 0.0) lambda 0.03125 rho/lambda^2 0.0126666942011 continuum 0.0253302959106 absolute difference 0.012664
+Shell quadrature (0.0, 0.0, 0.0) lambda 0.015625 rho/lambda^2 0.0126655344778 continuum 0.0253302959106 absolute difference 0.012665
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/walk_primary_controls/mutant_missing_relative_corners.py", line 228, in <module>
+    assert errors[-1] < 2e-6, 'eight-cone spectral-density normalization'
+           ^^^^^^^^^^^^^^^^^
+AssertionError: eight-cone spectral-density normalization

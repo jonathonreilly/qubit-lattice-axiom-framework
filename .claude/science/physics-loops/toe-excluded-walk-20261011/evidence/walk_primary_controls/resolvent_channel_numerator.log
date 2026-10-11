@@ -1,0 +1,7 @@
+Supplied excluded-walk finite controls; no claim of infinite-volume certification
+AUDIT_TIMEOUT_SEC=180
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/walk_primary_controls/mutant_resolvent_channel_numerator.py", line 115, in <module>
+    assert exact == scalar_formula(a,b,z), 'singlet resolvent from exact matrix inverse'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: singlet resolvent from exact matrix inverse

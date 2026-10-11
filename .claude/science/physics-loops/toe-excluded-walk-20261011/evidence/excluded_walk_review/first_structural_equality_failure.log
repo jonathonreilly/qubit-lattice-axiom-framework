@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/cook_independent_check.py", line 26, in <module>
+    check(s.factor(V.charpoly().as_expr())==s.Symbol('lambda')*(s.Symbol('lambda')**2-s.Rational(2,3)),'actual rank-two eigenvalues')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/cook_independent_check.py", line 16, in check
+    assert bool(value),label
+           ~~~~^^^^^^^
+AssertionError: actual rank-two eigenvalues

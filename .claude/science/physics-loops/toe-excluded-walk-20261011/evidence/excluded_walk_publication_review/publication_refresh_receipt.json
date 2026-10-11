@@ -1,0 +1,38 @@
+{
+  "scope": "narrow publication identity refresh; original report and receipt unchanged",
+  "exact_single_replacement_verified": true,
+  "before": "and raw logs. The combined source and coherent extension receive a final\nsource-bound check before publication. None of these records is an applied\n",
+  "after": "and raw logs. The combined source and coherent extension received a separate\nsource-bound review of the coefficient, normalization, outgoing regularity and\nfinite-preparation estimates; no consequential defect remained after the stated\ncompression wording correction. None of these records is an applied\n",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_NOTE.md",
+      "sha256": "dbcd5c3685898054fa6b6e38b9aa695985a08157948fa3e4e81f7eddca66667c",
+      "bytes": 65010,
+      "lines": 1278
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "9f551fc8d3592e83d15a007495a8f9165a5ddb9bc1e98d9dd3f51b6a2584f401",
+      "bytes": 65166,
+      "lines": 1280
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_PUBLICATION_REVIEW.md",
+      "sha256": "fe27f1404d47207a20c815912033d575c79bce6cfb915833460db27a871b9c5b",
+      "bytes": 24091,
+      "lines": 416
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_publication_review/identity_receipt.json",
+      "sha256": "47fa6e23ddf211805492777e50383881f2d749db333114622c75185dd94dc10d",
+      "bytes": 9470,
+      "lines": 185
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_publication_review/publication_refresh.md",
+      "sha256": "36dcec9cf3d7edead53a06f501f826ab7230274522133c8afa92fd0d096c4231",
+      "bytes": 1868,
+      "lines": 33
+    }
+  ]
+}

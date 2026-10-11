@@ -1,0 +1,7 @@
+Floating Duhamel derivative errors: [2.400274260444071e-07, 6.000680405166434e-08]
+AC Fourier fixture: {"A2": "sqrt(210)/3", "B2": "39*sqrt(70)/80", "largest_high_precision_quadrature_difference": "3.0712634940368424690211198456493225411029906800240172857321433242e-62"}
+Exact scattering-current fixture: variance = 269/36 norm squared = 269/13
+Exact global-normalization discriminator: old = [1/2, 1/2] new = [0, 1] TV = loss = 1/2
+Scope: exact finite algebra and an explicit ac Fourier packet; floating finite-time derivative control; no finite-matrix claim of infinite wave operators or threshold proof.
+TOTAL: PASS=68 FAIL=0
+Helper SHA256: b773b5d413a8649b138893a5985d9792bee1a60dc1839b8a03e6971e8f2c83a6

@@ -1,0 +1,7 @@
+Exact full Laurent convolution and K-jets: 48 axis/antisymmetric-field cases.
+Free original-position commutator equals sin(K_a) cos(2q_a).
+Compressed commutator equals PgP - |h_a_prime><h| - |h><h_a_prime|.
+All arbitrary K-derivative jets cancel; no Fourier aliasing/truncation used.
+Exact omitted-correction witness (axis,seed,squared field norm): (0, 4, Fraction(23116208, 404015625))
+Exact Parseval norms agree with ||h||^2 and ||h_a_prime||^2 in all axes.
+Scope: these finite controls test J2-J6; band estimates and time inequalities are analytic checks.

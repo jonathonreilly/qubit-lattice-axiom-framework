@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_rank_two_term.py", line 24, in <module>
+    check(zero_matrix(V-V_expected),'rank-two perturbation identity')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_rank_two_term.py", line 16, in check
+    assert bool(value),label
+           ~~~~^^^^^^^
+AssertionError: rank-two perturbation identity

@@ -1,6 +1,6 @@
 {
- "edge_count": 15418,
- "node_count": 6869,
+ "edge_count": 15420,
+ "node_count": 6870,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5889,6 +5889,10 @@
   "exactness_residual_priced_arrow_is_lane_data_cycle923_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7734e49ea328",
    "out_degree": 10
+  },
+  "excluded_walk_low_energy_energy_current_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "e5febf032146",
+   "out_degree": 2
   },
   "exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11": {
    "deps_hash": "50107746920d",

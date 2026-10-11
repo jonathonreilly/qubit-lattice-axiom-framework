@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_torus_measure.py", line 41, in <module>
+    check(torus_average==s.Rational(1,2),'normalized torus spectral-coupling norm')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_torus_measure.py", line 16, in check
+    assert bool(value),label
+           ~~~~^^^^^^^
+AssertionError: normalized torus spectral-coupling norm

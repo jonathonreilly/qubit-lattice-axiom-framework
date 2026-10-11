@@ -1,0 +1,22 @@
+Exact prolate integration: rho0=D/(4*pi^2), mean(y1^2)=beta/12, fourth=beta^2/80, variance=beta^2/180.
+Exact Cayley-phase expectation: -2*B*R*sig/(B**2 + R**2) ; reversing coherence reverses it; pure contact has zero change.
+Density amplitude power -1 => order-7 global L2(K;L1(E)) power -11/2
+Density amplitude power 0 => order-7 global L2(K;L1(E)) power -9/2
+Density amplitude power 1 => order-7 global L2(K;L1(E)) power -7/2
+Exact joint powers: state 7/2, projection 5, removed probability 10, current error 9/2, form factors 12 and 14; r=6 only yields current order 4.
+Lattice Pauli/coarea fixture kappa= [0.125, 0.0, 0.0] e= 1.5
+  lambda= 0.0625 rho/lambda^2= 0.056660071289494 d= 0.041926582636722 ||Z h_prime||/lambda^3= 0.0049899818267133 synthetic-phase current/lambda^4= -0.014924256380883
+  lambda= 0.03125 rho/lambda^2= 0.056613038549842 d= 0.041926351031405 ||Z h_prime||/lambda^3= 0.0049878747553388 synthetic-phase current/lambda^4= -0.014913170530687
+  lambda= 0.015625 rho/lambda^2= 0.056601293693954 d= 0.041926293656423 ||Z h_prime||/lambda^3= 0.0049873484771412 synthetic-phase current/lambda^4= -0.014910401748354
+  lambda= 0.0078125 rho/lambda^2= 0.056598358311952 d= 0.041926279345509 ||Z h_prime||/lambda^3= 0.0049872169381565 synthetic-phase current/lambda^4= -0.014909709720101
+  limiting rho= 0.056597379925212 d= 0.041926274578121
+Lattice Pauli/coarea fixture kappa= [0.125, 0.015625, -0.0125] e= 1.5
+  lambda= 0.0625 rho/lambda^2= 0.056649929121326 d= 0.041919121724757 ||Z h_prime||/lambda^3= 0.0049896849233583 synthetic-phase current/lambda^4= -0.014918930272548
+  lambda= 0.03125 rho/lambda^2= 0.056602896498005 d= 0.04191889017493 ||Z h_prime||/lambda^3= 0.0049875778587274 synthetic-phase current/lambda^4= -0.014907845701573
+  lambda= 0.015625 rho/lambda^2= 0.056591151671234 d= 0.041918832813248 ||Z h_prime||/lambda^3= 0.0049870515821282 synthetic-phase current/lambda^4= -0.014905077238725
+  lambda= 0.0078125 rho/lambda^2= 0.056588216296513 d= 0.041918818505623 ||Z h_prime||/lambda^3= 0.0049869200435377 synthetic-phase current/lambda^4= -0.014904385290324
+  limiting rho= 0.056587237912201 d= 0.041918813739329
+No author source imported; floating quadrature supplies finite controls only.
+python=3.13.5; sympy=1.14.0; numpy=2.4.4; scipy=1.17.1
+runtime_seconds=0.539420
+script_sha256=9b0680c6ed866a28c0ace713653c9bd3086f756912d8a1f4440a78436c3e1c52

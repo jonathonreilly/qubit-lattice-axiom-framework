@@ -1,0 +1,11 @@
+Floating Duhamel derivative errors: [2.400274260444071e-07, 6.000680405166434e-08]
+AC Fourier fixture: {"A2": "sqrt(210)/3", "B2": "39*sqrt(70)/80", "largest_high_precision_quadrature_difference": "3.0712634940368424690211198456493225411029906800240172857321433242e-62"}
+Exact scattering-current fixture: variance = 269/36 norm squared = 269/13
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_unchanged_K_law.py", line 135, in <module>
+    check(actual_new==reported_new,'global projection reweights total-momentum fibers')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_unchanged_K_law.py", line 16, in check
+    assert bool(value),label
+           ~~~~^^^^^^^
+AssertionError: global projection reweights total-momentum fibers

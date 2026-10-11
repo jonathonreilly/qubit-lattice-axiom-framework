@@ -1,0 +1,9 @@
+Floating Duhamel derivative errors: [2.400274260444071e-07, 6.000680405166434e-08]
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_fourier_normalization.py", line 101, in <module>
+    check(discrepancy<mp.mpf('1e-50'),'Fourier-density normalization and h equals i a-prime')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_review/mutant_fourier_normalization.py", line 16, in check
+    assert bool(value),label
+           ~~~~^^^^^^^
+AssertionError: Fourier-density normalization and h equals i a-prime

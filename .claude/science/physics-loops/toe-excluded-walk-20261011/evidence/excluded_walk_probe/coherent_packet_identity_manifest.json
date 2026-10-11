@@ -1,0 +1,124 @@
+{
+  "frozen_main": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "status": "external author derivation; no audit verdict",
+  "files": {
+    "EXCLUDED_WALK_TRANSPORT_PROBE.md": {
+      "sha256": "8bc423b2d5adf368f4ae09a2bb87730517be243a050b4289dad3a0b217f09526",
+      "bytes": 27369,
+      "lines": 322
+    },
+    "excluded_walk_probe/exact_and_shell_checks.py": {
+      "sha256": "d2bc72a63fd588a9068884b7091ebbfd7a9eddf25be48cc0321a4458317ba9b1",
+      "bytes": 7975,
+      "lines": 215
+    },
+    "excluded_walk_probe/exact_and_shell_checks.log": {
+      "sha256": "a0b6f6729d95dbfb15b9690203f784b99da1b96fad9be8122e5bdc3a438ef8f7",
+      "bytes": 2203,
+      "lines": 19
+    },
+    "excluded_walk_probe/matched_statement_search.log": {
+      "sha256": "2b814018c5dee7ceb3f41970c4cc32140faa42c5d77fa888b09ebc4babfc848c",
+      "bytes": 10062,
+      "lines": 27
+    },
+    "excluded_walk_probe/finite_time_statement_search.log": {
+      "sha256": "5461eb5b07ceb198abe69283c6258fabe16b72332920372ea96318e582aab07e",
+      "bytes": 2040,
+      "lines": 6
+    },
+    "excluded_walk_probe/search_scope_excerpts.log": {
+      "sha256": "9cbd13668f4545c6ea5c6f5be1b4be1846011e93d61c00b7ae92370d437d9d14",
+      "bytes": 30391,
+      "lines": 473
+    },
+    "excluded_walk_probe/yafaev_1992_scattering.pdf": {
+      "sha256": "6852364a4b5fccc6a8db834b5ef11e9cabcc8c5dae4c1c98ae171c0322ffe4c6",
+      "bytes": 2162089,
+      "lines": null
+    },
+    "EXCLUDED_WALK_COOK_BRIDGE_DRAFT.md": {
+      "sha256": "2c54b891deeb43a19c5f41de5059aadac7fc8d672dfb68e0b8aa575d27eb3fc7",
+      "bytes": 12191,
+      "lines": 262
+    },
+    "EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md": {
+      "sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe",
+      "bytes": 8340,
+      "lines": 190
+    },
+    "excluded_walk_probe/canonical_current_checks.py": {
+      "sha256": "3f59faae468e70b8aa16f7550773570d3c9e9f0c15ffb9bb7ee350dc41d4fdcd",
+      "bytes": 7495,
+      "lines": 197
+    },
+    "excluded_walk_probe/canonical_current_checks.log": {
+      "sha256": "35a0666a65053cac3c111537d9ff5ac83218e09cdd814277096286fd428c7754",
+      "bytes": 559,
+      "lines": 7
+    },
+    "excluded_walk_probe/canonical_current_checks_initial_failure.py": {
+      "sha256": "f3cf1921255dbeaec867b51e0bc24d98978ac2ca0f2138fed20d70fb222c2ecb",
+      "bytes": 7447,
+      "lines": 195
+    },
+    "excluded_walk_probe/canonical_current_checks_initial_failure.log": {
+      "sha256": "dac4bcabacf222fe5135e86feba8df0730ca4222e40900bd6223df783553fe40",
+      "bytes": 297,
+      "lines": 5
+    },
+    "EXCLUDED_WALK_CANONICAL_REVIEW.md": {
+      "sha256": "ced416dce3a7de31b503d73460e2fa449f6ed4e7175400d8376179cbeead0f9c",
+      "bytes": 9151,
+      "lines": 52
+    },
+    "EXCLUDED_WALK_COHERENT_PACKET_DRAFT.md": {
+      "sha256": "b4ae921cc065fb2f38c1caee5aca3a1cf69bac317a6f6f0f537becd393b6cd38",
+      "bytes": 24543,
+      "lines": 522
+    },
+    "excluded_walk_probe/coherent_packet_checks.py": {
+      "sha256": "21ae25081286984d725daa7e3820886d6d411d233acb615819eb77aee4a13ad0",
+      "bytes": 6981,
+      "lines": 183
+    },
+    "excluded_walk_probe/coherent_packet_checks.log": {
+      "sha256": "105bbe68af4547800077514b4cc2047ae62a99f58b62448e9fdc2616f255eb0c",
+      "bytes": 1903,
+      "lines": 15
+    }
+  },
+  "stationary_primary": {
+    "url": "https://www.numdam.org/item/AIHPA_1992__57_4_361_0.pdf",
+    "coverage": "Section 2 setup, Assumptions 2.1/2.2, Theorems 2.3/2.4 and (2.3)-(2.9); rendered journal pp369-371"
+  },
+  "sources": {
+    "docs/ADMISSIBILITY_RULE_NO_FINITE_RANGE_INTERACTION_KEEPS_TWO_EXCLUDED_RECORDS_TOTAL_ENERGY_CURRENT_ON_THE_PLANE_OR_IN_SPACE_BOUNDED_THEOREM_NOTE_2026-09-26.md": {
+      "sha256": "996dbbc8cebb88bd94f00336fcfebcab97f01209c9a1f717117567f5a2394cb5",
+      "lines": 283,
+      "coverage": "complete source read"
+    },
+    "docs/ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md": {
+      "sha256": "e0536f80a25feb0b368c10a0016a9d09b07b5bd06827751c30029d2eb1d70065",
+      "lines": 226,
+      "coverage": "complete source read"
+    },
+    "docs/ADMISSIBILITY_RULE_EXACT_BOOKS_NEED_RECORDS_THAT_NEVER_SCATTER_OR_BIND_NOTHING_LOCAL_KEEPS_THEM_UNDER_ONE_RECORD_PER_SITE_BOUNDED_THEOREM_NOTE_2026-09-25.md": {
+      "sha256": "06c78db9394c0a7ffc39f08385d3cf2bb6aaa528639c2b4e34994ed00ed6d88a",
+      "lines": 230,
+      "coverage": "complete source read"
+    },
+    "docs/ADMISSIBILITY_RULE_A_REST_ENERGY_FROM_BINDING_TWO_WALKERS_IS_EXACT_WITH_THE_WALKERS_OWN_SPEED_IN_ONE_DIMENSION_INVISIBLE_UNDER_ONE_RECORD_PER_SITE_AND_ANISOTROPIC_IN_THREE_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "sha256": "50c708e3742f9a5daa59f6f1fb48b44fe388d71b9fc2454ede1a9595185d332d",
+      "lines": 106,
+      "coverage": "complete source read"
+    }
+  },
+  "coherent_packet_scope": "Provisional author construction; exact normalized smooth packets, signed nonzero order-lambda^4 canonical-current change and r=7 finite-time Cook composition; uniform threshold derivatives through order seven remain a named analytic dependency. No audit verdict.",
+  "coherent_packet_bookkeeping": "Initial equation-label regex falsely counted a prose reference ending in (P17) as a second definition; restricting label inventory to indented displayed lines verified P1-P37 once each. No scientific source or finite-control change resulted.",
+  "coherent_packet_revision": {
+    "provisional_sha256": "3b459bcd6b63f89fc3cd5b8f90ec03259401c38ba90c96fafb8eed14a488d925",
+    "correction": "Independent publication reviewer caught P3 restriction wording. Replaced it with compression P J_ext P and equality of expectations on P; no formula, coefficient, bound or helper changed.",
+    "final_sha256": "b4ae921cc065fb2f38c1caee5aca3a1cf69bac317a6f6f0f537becd393b6cd38"
+  }
+}

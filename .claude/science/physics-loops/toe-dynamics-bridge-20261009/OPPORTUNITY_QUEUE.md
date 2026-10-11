@@ -1,20 +1,19 @@
 # Current ranked opportunity queue
 
-1. Publish the independently checked approximate partial-factor index bound
-   and uniform microscopic tube scaling. Exact frozen note bccf07d0...9b441,
-   review9118707f...c533c; all evidence read and521 bindings checked.
-2. Freeze and independently review the actual boost-bracket expectation
-   candidate at fixed inverse-energy time. It may distinguish a small mean
-   residual from the established large residual norm; neither implies the
-   other. The new all-component suggestion is unproved until checked.
-3. Read INDEX_TO_PHYSICS_NEXT_OBLIGATION.md when complete and attack the
-   strongest necessary link before the exact full-algebra shift identity.
-   Keep supplied integrated covariance/scattering/global-band assumptions
-   separate; do not create an artificial gap if a conditional bridge exists.
-4. Reassess longer-time rotation/boost expectations, contact-orthogonal
-   preparation or energy placement, and microscopic many-body dynamics using
-   the latest results. Preserve counterexamples rather than promise repair.
+1. Construct compact-patch scattering from supplied microscopic H/P flows,
+   geometric lattice packets and common-q centre projection. Prove all Cook
+   estimates and scoped creator independence/V covariance. Full-GNS exhaustion
+   remains a separate terminal obligation, even after existence or isometry.
+2. Derive the outgoing effective state for the actual X forcing. Avoid the
+   kernel spectrum and Volterra formulas already published in PR9481/#9482.
+   Distinguish an effective large-tau statement from uniform actual dynamics.
+3. Evaluate a quantitative H* gapless limit, growing rescaled time, justified
+   alternative preparation or energy placement only when a new mechanism
+   supports the attempt. Current expectation X is now proved conditionally;
+   it preserves the diagonal norm obstruction rather than undoing it.
+4. Refresh the queue against remote main/relevant open science and new evidence.
+   Preserve failures and counterexamples; no physical axiom is silently added.
 
-Boost milestone#9484 is now published. All earlier milestones stay regular
-open PRs, with no applied audit verdict. Do not duplicate active Y1/RZ or
-chiral cap calculations. Fixed campaign deadline2026-10-12 16:00:52 UTC.
+Eight regular PRs9478–9485 are open. Boost PR9484 now includes X1–X35 and its
+independent reconstruction. Index PR9485 is published. No applied audit verdict
+or merge. Fixed deadline2026-10-12 16:00:52 UTC; start no new work afterward.

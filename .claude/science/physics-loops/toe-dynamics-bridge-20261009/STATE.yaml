@@ -6,34 +6,33 @@ started_utc: 2026-10-11 16:00:52+00:00
 deadline_utc: 2026-10-12 16:00:52+00:00
 checkpoint_interval: 30m
 automation_id: toe-derivations-24-hour-campaign
-active_branch: physics-loop/toe-quantitative-memory-transfer-20261011
-worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree
+active_branch: physics-loop/toe-boost-bracket-control-20261011
+worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/boost_worktree
 checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
 base_revision: a13caa4885f547c8d206265b031ba7649e539fd9
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: interspecies_rigidity_publication_and_evolved_boost_control
+active_route: boost_bracket_domains_and_time_scale; partial_factor_index
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: transport_walk_flux_current_memory_and_quantitative_transfer_published
-strongest_unresolved_obligation: evolved_boost_derivative_estimate_review_and_conditioned_interspecies_stability
+milestone: six_regular_milestones_published_including_exact_and_stability_rigidity
+strongest_unresolved_obligation: sharp_boost_time_scale_and_partial_factor_index_bound
 provisional_dependencies: supplied_excluded_walk_on_frozen_main; transport_stack_remains_separate
 independent_checks: finite_current_and_memory_weighted_joint_outgoing_arguments_checked_at_scoped_sources;
   both_publication_compositions_edge_and_occupation_scoped_checks_complete
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_open
-active_pr_status: regular_PRs_9478_9479_9480_9481_9482_open
-active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9482
+active_pr_status: regular_PRs_9478_through_9483_open
+active_pr_url: null
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
-lock_refresh_before_utc: '2026-10-11T22:10:00Z'
-next_action: publish_checked_interspecies_theorem_and_scoped_Lean; independently_check_evolved_boost_control;
-  finish_conditioned_stability_derivation
+lock_refresh_before_utc: '2026-10-11T22:40:00Z'
+next_action: finish_boost_rotation_source_and_selective_check; prove_or_refute_sharp_time_scale; develop_partial_factor_index
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -42,4 +41,7 @@ current_memory_published_science_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20
 quantitative_memory_parent_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20252
 quantitative_memory_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9482
 quantitative_memory_published_science_revision: ba74c93aab9185d62a9711695dc931446f67c8ba
-latest_candidate_law_revision: b568c14df54a5e64f904f54f0251b2173f9302c3
+latest_candidate_law_revision: 7df738ee434d7732adff53fb42cee7564f3e341f
+boost_parent_revision: b9b032ae790c66e762a6296a1306bfb64ae7cd70
+rigidity_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9483
+rigidity_published_science_revision: aeee46fa0e2879038eec1b8ee8a1e173ac77518e

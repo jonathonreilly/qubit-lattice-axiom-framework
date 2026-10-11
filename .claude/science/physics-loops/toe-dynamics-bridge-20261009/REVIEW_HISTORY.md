@@ -183,3 +183,19 @@ are verified in delivery; (9) status/trace/import fields are explicit; (10) no
 author audit verdict or main merge; (11) hashes/counts are regenerated from
 actual sources; (12) focused delivery checks do not claim unrun shared/global
 landing gates. No Lean execution, editable prompt change or axiom adoption.
+
+
+## Exact and stability rigidity milestone, 2026-10-11
+
+Regular PR#9483 is OPEN,isDraft=false,attached, head
+aeee46fa0e2879038eec1b8ee8a1e173ac77518e, based directly on main.
+The complete exact and quantitative arguments have separate source-bound reviews;
+six general finite-geometry Lean declarations have compiled and received a
+statement/evidence review. The full analytic/stability theorem is not formalized.
+One surviving curl-sign mutation exposed a finite-test weakness and is preserved;
+an explicit symmetric-kernel check repairs it without changing the proof.
+Final13 actual primary mutants fail, both canonical caches are fresh, and all268
+staged identities/whitespace match. Citation adds2nodes1edge. Global audit pipeline
+and strict audit lint remain independent landing gates. No science was merged.
+The live checkpoint now points to the clean boost publication worktree, while
+the exact published checkouts and complete historical evidence are preserved.

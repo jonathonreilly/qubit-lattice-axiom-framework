@@ -1,6 +1,6 @@
 {
- "edge_count": 15563,
- "node_count": 6917,
+ "edge_count": 15566,
+ "node_count": 6918,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2969,6 +2969,10 @@
   "chiral_pair_cross_height_parity_span_cross_moments_bounded_theorem_note_2026-10-10": {
    "deps_hash": "96b7746df63d",
    "out_degree": 4
+  },
+  "chiral_pair_dot_chirality_scale_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
   },
   "chiral_pair_even_both_spans_chirality_partner_kernel_bounded_theorem_note_2026-10-10": {
    "deps_hash": "8817e2ad5d19",

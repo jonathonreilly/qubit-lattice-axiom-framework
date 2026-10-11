@@ -519,3 +519,15 @@ constant minor gcd.
 Family not used: the swapped-dot coefficient 1 vector at a chirality
 coefficient other than 0 and 1. That remains open. The 300-dimensional
 affine space is not this family.
+
+Cycle 49 target contract: whether every chirality coefficient on the
+swapped-dot coefficient 1 vector has partner rank 10.
+
+Family used: the 17-row chirality pencil of that vector and the
+constant gcd of its pivot minors at coefficients 0, 1, 1/3, and -1.
+
+Family not used: a vector that meets both spans and has a nonzero even
+part, other than the scaled coefficient 4/3 vector, the scaled
+coefficient 4 vector, and the swapped-dot coefficient 1 vector. That
+remains open. The chirality cap alone has partner rank 7. The
+300-dimensional affine space is not this family.

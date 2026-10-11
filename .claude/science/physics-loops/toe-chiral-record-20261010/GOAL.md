@@ -242,3 +242,8 @@ Cycle 48 shows that every chirality coefficient on the scaled
 coefficient 4 vector has partner rank 10. The minor gcd is a nonzero
 constant. The swapped-dot vector is not in this all-scale count. The
 ten-kernel coefficient span is not classified.
+Cycle 49 shows that every chirality coefficient on the swapped-dot
+coefficient 1 vector has partner rank 10. The pivot-minor gcd is a
+nonzero constant. A vector with both a nonzero swapped-dot coordinate
+and a nonzero scaled coordinate is not in this all-scale count. The
+ten-kernel coefficient span is not classified.

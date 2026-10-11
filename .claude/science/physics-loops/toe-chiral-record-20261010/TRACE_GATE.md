@@ -827,3 +827,22 @@ Every chirality coefficient on the scaled coefficient 4 vector has
 partner rank 10. The minor gcd is a nonzero constant. The swapped-dot
 vector stays open for a coefficient other than 0 and 1. The ten-kernel
 coefficient span stays open.
+
+## Cycle 49
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether every nonzero chirality coefficient, on every vector that meets both ratio spans and has a nonzero even part, has partner rank 10. The scaled coefficient 4/3 vector, the scaled coefficient 4 vector, and the swapped-dot coefficient 1 vector each do. The chirality cap alone has partner rank 7. Do not claim the ten-kernel coefficient span is settled."
+```
+
+Every chirality coefficient on the swapped-dot coefficient 1 vector has
+partner rank 10. The pivot-minor gcd is a nonzero constant. A vector
+that meets both spans and has a nonzero even part, other than the three
+named witnesses, stays open at a nonzero chirality coefficient. The
+chirality cap alone has partner rank 7. The ten-kernel coefficient span
+stays open.

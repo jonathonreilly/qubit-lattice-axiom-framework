@@ -564,6 +564,10 @@
 ## Cycle 48
 
 - The ansatz is the scaled coefficient 4 vector plus an arbitrary chirality coefficient. The swapped-dot vector is not in this all-scale count.
+
+## Cycle 49
+
+- The ansatz is the swapped-dot coefficient 1 vector plus an arbitrary chirality coefficient. A vector with both a nonzero swapped-dot coordinate and a nonzero scaled coordinate is not in this all-scale count.
 - The minor gcd is a polynomial identity in the chirality coefficient. A kernel cross sum is not an alphabet mean.
 - The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.

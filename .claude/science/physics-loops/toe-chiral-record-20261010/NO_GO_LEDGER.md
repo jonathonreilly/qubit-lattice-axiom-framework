@@ -341,3 +341,9 @@ scaled coefficient 4 vector has a nonzero ten-kernel partner. Every
 coefficient has partner rank 10. It does not classify the swapped-dot
 vector at every chirality coefficient, and it does not classify the
 300-dimensional affine space. This is not an N-gate no-go.
+
+Cycle 49 prunes the reading that some chirality coefficient on the
+swapped-dot coefficient 1 vector has a nonzero ten-kernel partner. Every
+coefficient has partner rank 10. It does not classify every vector in
+the even space and both ratio spans, and it does not classify the
+300-dimensional affine space. This is not an N-gate no-go.

@@ -60,3 +60,8 @@ Cycle 18 takes the sign product of orbit chirality and the transverse
 sign. It does not classify a factor outside the span of that product
 and the two exhibited caps, and it does not classify the
 300-dimensional affine space.
+
+Cycle 19 takes the matched and swapped transverse crosses on the
+height-3 caps. It does not classify a factor outside those two crosses
+and the three caps, and it does not classify the 300-dimensional
+affine space.

@@ -830,3 +830,63 @@ Conformance, section by section:
     `PASS=11 FAIL=0`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
     the loop-pack prose. The full audit pipeline was not run.
+
+## 2026-10-10 author check, cycle 19
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`, and the cycle-6 chiral-pair
+   bond note on this branch. The frame comparison, the left slices, and
+   the five-bond determinant are computed in this runner. Theorem 2's
+   converse is applied and not re-proved. Far-end sum 1 is cited from
+   the cycle-6 note. The dimension count is not repeated. The three
+   caps are comparison tensors, not re-derived.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_transverse_crosses_outside_three_caps_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `b5df59b64d40efb61ab06e24d286dd62b78886f5d8b9194528da32ea6a709634`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=10 FAIL=0`.
+   Elapsed 7.09 seconds.
+3. Scope. The ansatz is the matched and swapped crosses on
+   `a·d = 3` and `b·d = -3`, at coefficient `1/2`, on the 48 signed
+   permutations of `(1, 2, 3)`. Each factor takes values `1/2`, `1`,
+   and `3/2`. Each record meets at most one live direction and every
+   left slice sums to 0. Every far-end sum equals 48. Five bonds from
+   `(-2, -1, 3)` have determinant `8`. Neither cross is a linear
+   combination of the three caps. The order-blind subset is not
+   classified, and the 300-dimensional affine space is not classified.
+   Status line `proposed_retained`. Surface status `bounded-support`.
+4. N-gate does not apply. The artifact exhibits two named kernels
+   outside the three caps. It does not claim that no further
+   order-blind factor exists.
+5. Obligations are in the note. The missing lemma is a strictly positive
+   order-blind factor outside the span of the five kernels.
+6. Mutations, each on a scratch copy, exited 1. Requiring the
+   determinant to be 0 gave `PASS=9 FAIL=1` on the five-bond
+   obstruction. Requiring every far-end sum to be 47 gave
+   `PASS=9 FAIL=1` on the far-end sum. Requiring every left slice to
+   sum to 1 gave `PASS=9 FAIL=1` on the slice check. An independent
+   closure under quarter-turns about `z` and about `x` gave 24
+   rotations and orbit 24, with `(2, 1, 3)` and `(1, 2, -3)` outside
+   the orbit.
+7. One primary runner. No packet helper.
+8. Four markdown links. The runner link points at the primary runner.
+   Two note links point at tracked notes on origin/main. One points at
+   the cycle-6 chiral-pair bond note on this branch. Manifest
+   node_count 6888 and edge_count 15465. The new node has out_degree 3
+   and deps_hash `41027eb0d307`. Dependencies are `minimal_axioms`, the
+   2026-09-22 note, and
+   `chiral_pair_bond_factor_dimension_bounded_theorem_note_2026-10-10`.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names Theorem 2's converse and far-end sum 1, and states that no
+   rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: far-end sum 48, determinant `8`,
+    values `1/2`, `1`, and `3/2`, `PASS=10 FAIL=0`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
+    the loop-pack prose. The full audit pipeline was not run.

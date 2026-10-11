@@ -176,3 +176,18 @@
   note. The dimension count is not repeated. The 300-dimensional
   affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 19
+
+- The ansatz is the matched transverse cross and the swapped transverse
+  cross on the caps `a·d = 3` and `b·d = -3` of the 48 signed
+  permutations of `(1, 2, 3)`, transported by a proper rotation. The
+  coefficient `1/2` is a witness, not a selected scale. A factor
+  outside the span of these two crosses and the three caps is not in
+  this count.
+- Order-blindness is Theorem 2's converse, applied after bond symmetry
+  and the neighbour-product means. Those means follow from one live
+  direction and a zero left slice. Far-end sum 1 is the chiral-pair
+  bond note. The dimension count is not repeated. The 300-dimensional
+  affine space is not classified.
+- No formation site, probability, or rate is imported.

@@ -164,14 +164,23 @@ patterns have product mean 1. Every far-end sum equals 48. The bonds on
 linear combination of the chiral cap and the transverse-sign cap.
 Runner `PASS=11 FAIL=0`.
 
+Cycle 19. On the same alphabet the matched and swapped transverse
+crosses on the caps `a·d = 3` and `b·d = -3` are bond-symmetric and
+soldered. At coefficient `1/2` each factor takes values `1/2`, `1`,
+and `3/2`. Each record meets at most one live direction and every left
+slice sums to 0, so every neighbour product has mean 1. Every far-end
+sum equals 48. Five bonds on `e_z` from `(-2, -1, 3)` have determinant
+`8` against the three caps. Neither cross is a linear combination of
+those caps. Runner `PASS=10 FAIL=0`.
+
 ## Next exact action
 
 Ask whether a strictly positive order-blind factor on the 48-point
-chiral pair lies outside the span of the chiral cap, the
-transverse-sign cap, and the sign-product cap. Do not repeat the
-dimension count. Do not return to the modulus-3 triple. Do not invent
-a formation rate. Do not return to shells, plaquette corner weights,
-or the `(0,1,2)` and `(1,1,2)` alphabets.
+chiral pair lies outside the span of the three caps and the two
+transverse crosses. Do not repeat the dimension count. Do not return
+to the modulus-3 triple. Do not invent a formation rate. Do not return
+to shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
+alphabets.
 
 ## Cleanup
 

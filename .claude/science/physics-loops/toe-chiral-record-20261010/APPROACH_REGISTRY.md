@@ -158,3 +158,15 @@ to `(-2, -1, -3)`.
 Family not used: a factor outside the span of those three kernels.
 That remains open. The 300-dimensional affine space is not this
 family.
+
+Cycle 19 target contract: whether a strictly positive order-blind
+factor on the 48-point chiral pair lies outside the span of the three
+caps.
+
+Family used: the matched and swapped transverse crosses on
+`a·d = 3` and `b·d = -3`, at coefficient `1/2`, with five bonds from
+`(-2, -1, 3)`.
+
+Family not used: a factor outside the span of those two crosses and
+the three caps. That remains open. The 300-dimensional affine space
+is not this family.

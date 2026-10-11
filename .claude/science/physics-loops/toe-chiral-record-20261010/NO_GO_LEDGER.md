@@ -96,3 +96,10 @@ product mean 1 on all 729 partner patterns, and three bonds to
 `(-2, -1, -3)` have determinant `4`. It does not classify a factor
 outside those three kernels, and it does not classify the
 300-dimensional affine space.
+
+Cycle 19 prunes the reading that every strictly positive order-blind
+factor on this alphabet lies in the span of the three caps. Each
+height-3 transverse cross at coefficient `1/2` has neighbour-product
+mean 1, and five bonds from `(-2, -1, 3)` have determinant `8`. It
+does not classify a factor outside those five kernels, and it does
+not classify the 300-dimensional affine space.

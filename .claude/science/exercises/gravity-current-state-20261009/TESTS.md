@@ -2059,3 +2059,22 @@ No PASS or FAIL is recorded for any lane on the basis of X1. E1's fixed readings
 **A gravity-only ℓ_k is not bounded at this level.** But lensing is observed mostly with light, and the photon's ℓ_k is collider-bounded. Whether light-lensing noise is acceptable then turns on the effective source extent for incoherent light. At atomic scale it is about 3 e-folds; at 10 km it is about 570. That step is open.
 
 **E1's fixed readings stand.**
+
+### C4 final probe (21:12Z): lane RY, readout noise for lensed light
+
+**Question.** Assume the photon's non-locality scale ℓ_k is at most 7.9e-20 m (the collider bound, X1). What is the stable-readout noise (RL2/RL4) for the light we actually see lensed? The variance grows in proper time τ ≈ √(2Ds), where s is the source's coherent extent. So the probe must settle what s is for incoherent thermal or atomic emission: the atomic or coherence scale, or the macroscopic source.
+
+**Probe Y1.**
+- Derive the effective s for a fixed-source variance, for incoherent sources made of many independent emitters. Is the variance of a sum of independent emitter fields controlled by each emitter's own s?
+- Evaluate the noise in e-folds for strong-lensing observations, at D of about Gpc and optical/radio frequencies.
+- Compare with what observations require: image flux stability, and VLBI phase coherence.
+
+**Fixed readings.**
+- **PASS:** for realistic incoherent sources, the noise is below 1 e-fold, i.e. negligible, at ℓ_k ≤ 7.9e-20 m. The derivation of s is controlled.
+- **FAIL:** the noise exceeds what observed lensing allows, with s derived.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.**
+- For independent emitters, the variances add, and each grows with that emitter's own τ ≈ √(2D·s_atom), where s_atom is about 1e-10 m to 1 m (coherence length).
+- For s ≈ 1 m and D = 1 Gpc: τ ≈ 2.5e13 m, and the e-folds come to about 0.63·√ε·τ/ℓ_k. The probe must compute ε from ℓ_k: ε = (ℓ/ℓ_k)⁴.
+- Expected reading: borderline. The answer depends on the coherence length, so INCONCLUSIVE.

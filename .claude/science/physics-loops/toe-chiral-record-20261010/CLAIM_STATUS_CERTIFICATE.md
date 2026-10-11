@@ -952,3 +952,28 @@ such a partner exactly when the vector lies in the ratio span. The
 witness cross sums are `-2` and `-4`. A vector that meets the other
 ratio span is outside the ansatz. The ten-kernel coefficient span is
 not classified. The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 45
+
+claim_id: chiral_pair_even_both_spans_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); even space and both ratio spans; witness directions (-1, 0, 0) and (0, -1, 0)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+The even space and both ratio spans form a 9-dimensional sum, and the
+chirality cap lies outside it. The nine-generator map has rank 42 and
+nullity 48. The sign product plus both cap generators has scaled
+coefficient 4 and partner rank 10. The sign product plus one cap
+generator minus one third of the other has scaled coefficient 4/3 and
+partner rank 7. The witness cross sums are `2`, `-4`, and 0. A nonzero
+chirality coefficient is outside the ansatz. The ten-kernel coefficient
+span is not classified. The 300-dimensional affine space is not
+classified.

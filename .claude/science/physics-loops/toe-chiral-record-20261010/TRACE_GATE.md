@@ -751,3 +751,22 @@ summand. A nonzero swapped-dot or scaled coefficient has such a partner
 exactly on that ratio span. The witness cross sums are `-2` and `-4`.
 A vector that meets the other ratio span stays open. The ten-kernel
 coefficient span stays open.
+
+## Cycle 45
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether a vector with a nonzero chirality coefficient, a nonzero even part, and a nonzero part in each ratio span, with a nonzero coefficient on the swapped transverse dot or the scaled cross-dot kernel, has a ten-kernel partner other than 0. Inside the even space and the two ratio spans, the scaled coefficient 4/3 has a 3-dimensional partner and the scaled coefficient 4 has partner rank 10. Do not claim the ten-kernel coefficient span is settled."
+```
+
+Inside the sum of the even space and both ratio spans, the scaled
+coefficient `4/3` has a 3-dimensional ten-kernel partner, and the scaled
+coefficient 4 has partner rank 10. The nine-generator map has rank 42
+and nullity 48. The witness cross sums are `2`, `-4`, and 0. A nonzero
+chirality coefficient stays open. The ten-kernel coefficient span stays
+open.

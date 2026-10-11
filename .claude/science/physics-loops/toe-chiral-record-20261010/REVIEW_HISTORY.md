@@ -2618,3 +2618,75 @@ Conformance, section by section:
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
     The loop-pack directory is skipped by that lint. The full audit
     pipeline was not run.
+
+## 2026-10-11 author check, cycle 45
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms on origin/main at the base `0b208e91cfc`, the
+   cycle-39 even-span note, and the cycle-32 ratio-span note, both
+   notes on this branch. The nine-generator kernel, the cap ratios, and
+   the witness sums are computed in this runner. The order-blind
+   converse is not applied. The even space is named in cycle 39. The
+   two spans are named in cycle 32. The partner kernel of one ratio
+   span is not the claim of this note. The dimension count of the
+   soldered bond space is not repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_even_both_spans_partner_kernel_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `bcc80dcc991fa3024bc5a07bb1bb6afff1023dc39611448e103ed45406ac7d3f`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=9 FAIL=0`.
+   Elapsed 11.32 seconds.
+3. Scope. The even space and both ratio spans, on the 48 signed
+   permutations of `(1, 2, 3)`. The sum is 9-dimensional and the
+   chirality cap lies outside it. The nine-generator map has rank 42
+   and nullity 48, and the kernel projects onto every even coefficient.
+   The scaled coefficient `4/3` has partner rank 7, with the listed
+   3-dimensional kernel on each ordered height pair. The scaled
+   coefficient 4 has partner rank 10. The swapped-dot coefficient 1 has
+   partner rank 10. The witness centre pairs are `(-1, 0)` and
+   `(1, 2)` with cross sum `2`, and `(-3, 0)` and `(1, -4)` with cross
+   sum `-4`. Each listed partner of the coefficient `4/3` vector has
+   cross sum 0 on those directions. A nonzero chirality coefficient is
+   outside the ansatz. The ten-kernel coefficient span is not
+   classified. The full soldered bond space is not classified. Status
+   line `proposed_retained`. Surface status `bounded-support`.
+4. N-gate does not apply. The artifact classifies two cap ratios and
+   one swapped-dot vector inside the even space and both ratio spans.
+   It does not claim that no vector with a nonzero chirality
+   coefficient has a nonzero partner.
+5. Obligations are in the note. The missing lemma is whether a vector
+   with a nonzero chirality coefficient, a nonzero even part, and a
+   nonzero part in each ratio span, with a nonzero coefficient on the
+   swapped transverse dot or the scaled cross-dot kernel, has a
+   ten-kernel partner other than 0.
+6. Mutations, each on a scratch copy, exited 1. Requiring the
+   nine-generator rank to be 40 gave `PASS=8 FAIL=1` on the map check.
+   Requiring the scaled coefficient to be `5/3` gave `PASS=8 FAIL=1`
+   on the cap-ratio check. Requiring the sum of the even space and both
+   spans to have rank 8 gave `PASS=8 FAIL=1` on the membership check.
+   An independent generator closure, recomputed in this session, gave
+   24 rotations, all of determinant 1, alphabet orbit 24, with
+   `(2, 1, 3)` and `(1, 2, -3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Four markdown links. The runner link points at the primary runner.
+   One note link points at the minimal axioms on origin/main. Two point
+   at the cycle-39 even-span note and the cycle-32 ratio-span note on
+   this branch. Manifest node_count 6914 and edge_count 15554. The new
+   node has out_degree 3 and deps_hash `8817e2ad5d19`. Dependencies are
+   `minimal_axioms`, the cycle-39 even-span note, and the cycle-32
+   ratio-span note. `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the even space and the two spans, and states that the
+   order-blind converse is not applied and that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=9 FAIL=0`, nine-generator
+    rank 42, scaled coefficients `4/3` and 4 with partner ranks 7 and
+    10, centre pairs `(-1, 0)` and `(1, 2)` with cross sum `2`, and
+    `(-3, 0)` and `(1, -4)` with cross sum `-4`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
+    The loop-pack directory is skipped by that lint. The full audit
+    pipeline was not run.

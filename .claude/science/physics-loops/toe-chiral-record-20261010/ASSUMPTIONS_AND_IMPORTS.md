@@ -539,3 +539,10 @@
 - The checked sums are two-centre kernel cross sums. A kernel cross sum is not an alphabet mean.
 - The order-blind converse is not applied. The even space and its odd partner are named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 45
+
+- The ansatz is the even space and both ratio spans. A nonzero chirality coefficient is not in this count. The partner kernel of one ratio span is not this claim.
+- The checked sums are two-centre kernel cross sums. A kernel cross sum is not an alphabet mean.
+- The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

@@ -215,3 +215,11 @@ scaled coefficient has such a partner exactly on that ratio span. The
 witness cross sums are `-2` and `-4`. A vector that meets the other
 ratio span is not in this count. The ten-kernel coefficient span is not
 classified.
+Cycle 45 shows that the even space and both ratio spans form a
+9-dimensional sum, with the chirality cap outside it. The
+nine-generator map has rank 42 and nullity 48. The sign product plus
+both cap generators has scaled coefficient 4 and partner rank 10. The
+sign product plus one cap generator minus one third of the other has
+scaled coefficient `4/3` and partner rank 7. The witness cross sums are
+`2`, `-4`, and 0. A nonzero chirality coefficient is not in this count.
+The ten-kernel coefficient span is not classified.

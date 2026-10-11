@@ -308,3 +308,11 @@ swapped-dot or scaled coefficient has a nonzero partner exactly on that
 ratio span. It does not classify a vector that meets both ratio spans,
 and it does not classify the 300-dimensional affine space. This is not
 an N-gate no-go.
+
+Cycle 45 prunes the reading that a nonzero scaled coefficient, on a
+vector that meets both ratio spans and has a nonzero even part, decides
+the ten-kernel partner. The scaled coefficient 4 has partner rank 10,
+and the scaled coefficient 4/3 has a 3-dimensional partner. The witness
+kernel cross sums are `2`, `-4`, and 0. It does not classify a nonzero
+chirality coefficient in that sum, and it does not classify the
+300-dimensional affine space. This is not an N-gate no-go.

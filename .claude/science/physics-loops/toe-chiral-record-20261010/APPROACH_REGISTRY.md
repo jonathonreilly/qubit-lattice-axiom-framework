@@ -473,3 +473,14 @@ the witness cross sums `-2` and `-4`.
 Family not used: a vector that meets both ratio spans and has a nonzero
 even part. That remains open. The 300-dimensional affine space is not
 this family.
+
+Cycle 45 target contract: whether a vector that meets both ratio spans
+and has a nonzero even part, with a nonzero coefficient on the swapped
+transverse dot or the scaled cross-dot kernel, has a ten-kernel partner
+other than 0.
+
+Family used: the nine-generator partner map, its rank-42 kernel, the
+cap ratios 4 and 4/3, and the witness cross sums `2`, `-4`, and 0.
+
+Family not used: a nonzero chirality coefficient in that sum. That
+remains open. The 300-dimensional affine space is not this family.

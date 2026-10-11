@@ -217,3 +217,8 @@ Cycle 44 takes the even space, the chirality cap, and one ratio span.
 A nonzero vector has a nonzero ten-kernel partner exactly on one
 summand. It does not take a vector that meets the other ratio span, and
 it does not classify the 300-dimensional affine space.
+
+Cycle 45 takes the even space and both ratio spans. The scaled
+coefficient 4/3 has a 3-dimensional ten-kernel partner, and the scaled
+coefficient 4 has partner rank 10. It does not take a nonzero chirality
+coefficient, and it does not classify the 300-dimensional affine space.

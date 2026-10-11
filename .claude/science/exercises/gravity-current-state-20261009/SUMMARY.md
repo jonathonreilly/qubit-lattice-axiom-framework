@@ -311,7 +311,7 @@ Details are in `TESTS.md`, "Lane RN results".
 - The fermions' extra "taste" labels don't help. Their band is the simple lattice band in disguise, with momentum doubled, so the same theorem applies.
 
 **Status.** Two refereed bounded FAILs, momentum only. The live graviton route (§11, §12) therefore needs one of:
-- interactions that are not nearest-neighbour, so that momentum is defined non-locally;
+- momentum defined non-locally (power-law tails) with interactions that never scatter across the zone boundary. Correction 2026-10-10: Admissibility fixes only the local rule, and influence can travel through chains of sites, so this is not excluded by the axiom. Whether a nearest-neighbour rule can produce it through gapless networks is untested;
 - a lattice momentum added as a new primitive;
 - an untested regime: strong coupling, or matter made of defects.
 

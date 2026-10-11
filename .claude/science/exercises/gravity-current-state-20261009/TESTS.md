@@ -971,3 +971,18 @@ R0 found these. The supervisor's "option 3 untested" was wrong.
 **Against the registered expectation.** The FAIL in both probes is as expected, but the mechanism is different. Taste structure adds nothing: invertible amplitudes collapse matrix charges onto their trace, and the staggered band is lattice KG at (2k, 2m). No degenerate resonant submanifold rescues anything.
 
 **Price, unchanged:** a non-local momentum, i.e. interactions not nearest-neighbour (against Admissibility), or an exact additive lattice momentum that the axioms do not supply.
+
+### Correction to the lane RS price wording (owner, 2026-10-10)
+
+The owner asked: "we don't have an only-nearest-neighbour rule, right? You can influence through networks of nodes."
+
+**That is correct.** Admissibility (`MINIMAL_AXIOMS_2026-06-29.md:57-61,116-125`) fixes only the local rule: each site's odds are set by its nearest neighbours. It explicitly chooses no Hamiltonian, transfer operator or dynamics. Influence can therefore reach any distance through chains of sites.
+
+The phrase "interactions not nearest-neighbour (against Admissibility)" in the RS entry, and the matching line in SUMMARY §13, overstate what the axiom forbids. The phrase is withdrawn as a statement about the axiom. The RS and RN results themselves are unchanged.
+
+**What the refereed results actually exclude** is defined by the conserved charge's reach, not by how the interactions arose:
+- **Covered:** charges whose momentum density has a summable first moment, i.e. finite range or exponential tails (RN L2, RS S1/S2). Any effective interaction a network of nearest-neighbour steps produces through *gapped* intermediate nodes falls in this class.
+- **Covered:** a gapless photon network at the Born level (S2).
+- **Not covered, and the open form of the owner's idea:** a *gapless* network that produces power-law-tailed charges and interactions. The one candidate momentum that survives ordinary collisions is the sawtooth f = k, whose density has 1/r tails (RN L2). It fails only on umklapp, i.e. scattering across the zone boundary. So the open question is whether a nearest-neighbour rule acting through a gapless network can give matter interactions with no umklapp, and with them an exactly conserved sawtooth momentum.
+
+**Corrected price wording:** "a momentum density with power-law tails, together with matter interactions with no umklapp (whether a nearest-neighbour rule can produce this through gapless networks is untested), or an exact additive lattice momentum that the axioms do not supply."

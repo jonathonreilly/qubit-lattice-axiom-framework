@@ -54,4 +54,9 @@ span of the three caps. Cycle 20 shows that the matched and swapped
 transverse crosses at absolute heights 1 and 2, at coefficient `1/2`,
 each have neighbour-product mean 1. Nine bonds on `e_z` give
 determinant `8`, so none of those four crosses lies in the span of the
-five height-3 kernels.
+five height-3 kernels. Cycle 21 shows that the chirality cap, the
+transverse-sign cap, and their sign product, at each absolute height
+1 and 2 and at coefficient `1/2`, each have neighbour-product mean 1.
+Five bonds at each height give determinant `-16`, and the first bond
+at each height has all nine comparison kernels equal to 0, so none of
+those six caps lies in the span of the nine.

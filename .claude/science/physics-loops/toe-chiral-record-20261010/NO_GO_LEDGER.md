@@ -110,3 +110,11 @@ lower-height transverse cross at coefficient `1/2` has neighbour-product
 mean 1, and nine bonds on `e_z` have determinant `8`. It does not
 classify a factor outside those nine kernels, and it does not classify
 the 300-dimensional affine space.
+
+Cycle 21 prunes the reading that every strictly positive order-blind
+factor on this alphabet lies in the span of those nine kernels. Each
+of the six lower-height cap dressings at coefficient `1/2` has
+neighbour-product mean 1. Five bonds at each height have determinant
+`-16`, and one bond at each height has all nine comparison kernels
+equal to 0. It does not classify a factor outside those fifteen
+kernels, and it does not classify the 300-dimensional affine space.

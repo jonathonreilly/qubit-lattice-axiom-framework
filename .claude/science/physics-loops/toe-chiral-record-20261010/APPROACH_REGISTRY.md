@@ -182,3 +182,15 @@ Family not used: a factor outside the span of those four crosses and
 the five height-3 kernels. That remains open. The 300-dimensional
 affine space is not this family. A sum across heights is not this
 family.
+
+Cycle 21 target contract: whether a strictly positive order-blind
+factor on the 48-point chiral pair lies outside the span of the nine
+kernels.
+
+Family used: the chirality cap, the transverse-sign cap, and their
+sign product at absolute heights 1 and 2, at coefficient `1/2`, with
+five bonds at each height.
+
+Family not used: a factor outside the span of those six caps and the
+nine kernels. That remains open. The 300-dimensional affine space is
+not this family. A mixed-height bond is not this family.

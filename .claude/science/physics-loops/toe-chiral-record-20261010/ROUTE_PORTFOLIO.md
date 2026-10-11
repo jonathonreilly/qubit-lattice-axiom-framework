@@ -70,3 +70,8 @@ Cycle 20 takes the matched and swapped transverse crosses at absolute
 heights 1 and 2. It does not classify a factor outside those four
 crosses and the five height-3 kernels, it does not take a sum across
 heights, and it does not classify the 300-dimensional affine space.
+
+Cycle 21 takes the chirality, transverse-sign, and sign-product caps
+at absolute heights 1 and 2. It does not classify a factor outside
+those six caps and the nine kernels, it does not take a mixed-height
+bond, and it does not classify the 300-dimensional affine space.

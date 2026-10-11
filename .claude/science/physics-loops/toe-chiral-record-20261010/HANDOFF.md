@@ -183,14 +183,26 @@ the five height-3 columns followed by these four crosses. Each
 lower-height cross is nonzero where the other eight kernels vanish, so
 none is a linear combination of the five. Runner `PASS=10 FAIL=0`.
 
+Cycle 21. On the same alphabet the chirality cap, the transverse-sign
+cap, and their sign product, at each absolute height 1 and 2, are
+bond-symmetric and soldered. At coefficient `1/2` each factor takes
+values `1/2`, `1`, and `3/2`. Each cap sign has mean 0 and at most one
+live direction, so every neighbour product has mean 1. Every far-end
+sum equals 48. Five bonds at each height have determinant `-16`. The
+bond from `(-2, -3, 1)` to `(-2, -3, -1)`, and the bond from
+`(-1, -3, 2)` to `(-1, -3, -2)`, each have all nine comparison kernels
+equal to 0 while the three caps at that height are nonzero. None of
+the six caps is a linear combination of the nine. Runner
+`PASS=10 FAIL=0`.
+
 ## Next exact action
 
 Ask whether a strictly positive order-blind factor on the 48-point
-chiral pair lies outside the span of the five height-3 kernels and
-these four lower-height crosses. Do not repeat the dimension count.
-Do not return to the modulus-3 triple. Do not invent a formation rate.
-Do not return to shells, plaquette corner weights, or the `(0,1,2)`
-and `(1,1,2)` alphabets.
+chiral pair lies outside the span of the nine kernels and these six
+lower-height caps. Do not repeat the dimension count. Do not return to
+the modulus-3 triple. Do not invent a formation rate. Do not return to
+shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
+alphabets.
 
 ## Cleanup
 

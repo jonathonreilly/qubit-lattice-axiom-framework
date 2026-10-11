@@ -1,6 +1,6 @@
 {
- "edge_count": 15423,
- "node_count": 6872,
+ "edge_count": 15426,
+ "node_count": 6873,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5901,6 +5901,10 @@
   "excluded_walk_projected_free_band_canonical_current_bounded_theorem_note_2026-10-11": {
    "deps_hash": "27195ce2744b",
    "out_degree": 1
+  },
+  "excluded_walk_quantitative_memory_transfer_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "332559cb2a6d",
+   "out_degree": 3
   },
   "exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11": {
    "deps_hash": "50107746920d",

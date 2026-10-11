@@ -1,0 +1,9 @@
+{
+  "receipt_sha256": "4398c9bd17e25281efa1dfd2ae1d5f22eafc8415adc8b2a736a11b45c40b789d",
+  "verified_path_hash_occurrences": 34,
+  "distinct_paths": 34,
+  "failures": [],
+  "scope": "Identity verification only; root separately read the complete report, reconstruction, helper and raw outputs.",
+  "instruction_identities_verified": 13,
+  "actual_independent_mutants_reconstructed": 2
+}

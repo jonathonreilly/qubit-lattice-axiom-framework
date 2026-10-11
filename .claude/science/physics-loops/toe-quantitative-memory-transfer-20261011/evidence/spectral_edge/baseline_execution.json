@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/edge_controls.py"
+  ],
+  "returncode": 0,
+  "timeout_seconds": 120,
+  "elapsed_seconds": 0.45084591722115874,
+  "source": "edge_controls.py",
+  "source_sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+  "log": "baseline.log",
+  "log_sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc"
+}

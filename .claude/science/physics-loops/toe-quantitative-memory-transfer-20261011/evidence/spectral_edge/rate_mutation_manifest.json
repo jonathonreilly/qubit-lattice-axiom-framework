@@ -1,0 +1,56 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.py"
+    ],
+    "returncode": 1,
+    "timeout_seconds": 120,
+    "elapsed_seconds": 0.30761508317664266,
+    "source": "rate_mutant_kernel_half_constant.py",
+    "source_sha256": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad",
+    "log": "rate_mutant_kernel_half_constant.log",
+    "log_sha256": "b0a319d3bc923ed1837429d5ab58bc4e9891eb360917fbf13e4b72165ce6ca80",
+    "name": "kernel_half_constant",
+    "old": "kernel_coefficient = sp.Integer(10)",
+    "new": "kernel_coefficient = sp.Integer(5)",
+    "intended_assertion": "kernel_L5over4_mass_exact",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.py"
+    ],
+    "returncode": 1,
+    "timeout_seconds": 120,
+    "elapsed_seconds": 0.6211733338423073,
+    "source": "rate_mutant_sinc_half_mean.py",
+    "source_sha256": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b",
+    "log": "rate_mutant_sinc_half_mean.log",
+    "log_sha256": "983c0d14afbb29ede5a2a3062dafe9234e9002ef3192a072448aa2e852c54ea4",
+    "name": "sinc_half_mean",
+    "old": "mean_from_sinc = 2*(h.subs(x,0)*sp.Si(2*duration)",
+    "new": "mean_from_sinc = 1*(h.subs(x,0)*sp.Si(2*duration)",
+    "intended_assertion": "one_sided_sinc_mean_has_correct_derivative_and_origin",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.py"
+    ],
+    "returncode": 1,
+    "timeout_seconds": 120,
+    "elapsed_seconds": 0.687716250307858,
+    "source": "rate_mutant_young_half_bound.py",
+    "source_sha256": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748",
+    "log": "rate_mutant_young_half_bound.log",
+    "log_sha256": "dddfd8528f33cd6fefe8f25aaed66e3582512e6b1d26a1ac8df4b084eadc584a",
+    "name": "young_half_bound",
+    "old": "young_rhs = rho_p_mass**(mp.mpf(6)/5)",
+    "new": "young_rhs = rho_p_mass**(mp.mpf(6)/5)/2",
+    "intended_assertion": "continuous_convolution_Young_bound",
+    "failed_at_intended_assertion": true
+  }
+]

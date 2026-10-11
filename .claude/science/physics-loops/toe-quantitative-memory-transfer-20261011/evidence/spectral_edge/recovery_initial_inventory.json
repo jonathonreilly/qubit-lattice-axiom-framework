@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-10-11T20:27:45.124748+00:00",
+  "scope": "Original files present before recovery writes, to be preserved unchanged except CHECKPOINT.md with an exact backup.",
+  "files": {
+    "spectral_edge/CHECKPOINT.md": {
+      "sha256": "fb10f2ffdf5bbfa9bff9fb944af1b721ff01baec52c16d34481043c80b53dc80",
+      "bytes": 2369
+    },
+    "spectral_edge/baseline.log": {
+      "sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc",
+      "bytes": 1814
+    },
+    "spectral_edge/baseline_execution.json": {
+      "sha256": "499abe0dc5bd30b245543c102082fe16ef45a484aeb222c391a5f40594e458b6",
+      "bytes": 508
+    },
+    "spectral_edge/edge_controls.py": {
+      "sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "bytes": 6595
+    },
+    "spectral_edge/mutant_count_one_edge.log": {
+      "sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+      "bytes": 1612
+    },
+    "spectral_edge/mutant_count_one_edge.py": {
+      "sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+      "bytes": 6597
+    },
+    "spectral_edge/mutant_double_dressing_coefficient.log": {
+      "sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+      "bytes": 985
+    },
+    "spectral_edge/mutant_double_dressing_coefficient.py": {
+      "sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+      "bytes": 6594
+    },
+    "spectral_edge/mutant_drop_compression_defect.log": {
+      "sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+      "bytes": 970
+    },
+    "spectral_edge/mutant_drop_compression_defect.py": {
+      "sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+      "bytes": 6583
+    },
+    "spectral_edge/mutant_mean_half_coefficient.log": {
+      "sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+      "bytes": 1859
+    },
+    "spectral_edge/mutant_mean_half_coefficient.py": {
+      "sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+      "bytes": 6595
+    },
+    "spectral_edge/mutant_poisson_half_constant.log": {
+      "sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+      "bytes": 1762
+    },
+    "spectral_edge/mutant_poisson_half_constant.py": {
+      "sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+      "bytes": 6595
+    },
+    "spectral_edge/mutation_manifest.json": {
+      "sha256": "9c74d6302eff4c6a2fce7f7d08f725a8e3a07d8547aa5c8448dc074251e6da80",
+      "bytes": 4141
+    },
+    "spectral_edge/prior_statement_search.json": {
+      "sha256": "a7b864b8c8a2f9afd8a45339daf7993caab98f0e6b6201244b2f25f71c77deb2",
+      "bytes": 1679
+    },
+    "spectral_edge/prior_statement_search.log": {
+      "sha256": "daaea132d3b5c5268fa2dd8021a7647e149f43052261284f7fd7286d95a69a41",
+      "bytes": 1060
+    },
+    "spectral_edge/run_controls.py": {
+      "sha256": "696be8c7d3b70e141c38056c4b5296328166edaf8291ac6cc9cb528006c8bdd7",
+      "bytes": 2624
+    }
+  }
+}

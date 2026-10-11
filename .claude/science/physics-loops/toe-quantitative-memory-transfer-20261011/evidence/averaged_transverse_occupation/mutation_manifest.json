@@ -1,0 +1,44 @@
+[
+  {
+    "name": "probability_cross_half",
+    "old": "normalized_budget=8*E+4*E**2",
+    "new": "normalized_budget=4*E+4*E**2",
+    "intended_assertion": "normalized probability coefficients",
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_probability_cross_half.py",
+    "source_sha256": "7b6ba75aafbbf707c0662927b2be154bb72f4217b56f24d81a778e97ac3c79fe",
+    "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_probability_cross_half.log",
+    "log_sha256": "5d99db36022f9287f6f9a875bcd5d659ae43b7179eb7cce009fc0a5691911c46",
+    "exit_code": 1,
+    "elapsed_seconds": 0.29478099988773465,
+    "timeout_seconds": 60,
+    "intended_failure": true
+  },
+  {
+    "name": "clock_power",
+    "old": "3+balance==s.Rational(59,18)",
+    "new": "2+balance==s.Rational(59,18)",
+    "intended_assertion": "physical time clock",
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_clock_power.py",
+    "source_sha256": "9b8be529a97016f7062ebf5896aa33d7f7cd37ba813ad688c13a837d0c563911",
+    "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_clock_power.log",
+    "log_sha256": "283e197706d4618ff3735a255e8c6236d03084bfb355841d55bc173ebd3ebc11",
+    "exit_code": 1,
+    "elapsed_seconds": 0.18114766711369157,
+    "timeout_seconds": 60,
+    "intended_failure": true
+  },
+  {
+    "name": "drop_global_normalization",
+    "old": "actual=[w*n/N for w,n in zip(weights,normsq)]",
+    "new": "actual=[w*n for w,n in zip(weights,normsq)]",
+    "intended_assertion": "single normalization exact probability",
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_drop_global_normalization.py",
+    "source_sha256": "202b7feca03635ae3e63c481767cb6e1a9daf918ac68cd11422d157574f48f03",
+    "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_drop_global_normalization.log",
+    "log_sha256": "e349d247832b3f5a2d57f9ee2ccc6f0b224caa88e52ef92229eaa27c365bad94",
+    "exit_code": 1,
+    "elapsed_seconds": 0.16588062467053533,
+    "timeout_seconds": 60,
+    "intended_failure": true
+  }
+]

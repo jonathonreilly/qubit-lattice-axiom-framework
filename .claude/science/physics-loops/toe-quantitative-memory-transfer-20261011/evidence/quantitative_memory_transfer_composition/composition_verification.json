@@ -1,0 +1,629 @@
+{
+  "verified_utc": "2026-10-11T21:01:17.176698+00:00",
+  "scope": "Deterministic composition, exact payload and preservation verification only; no final physics/publication review.",
+  "checks": 122,
+  "all_match": true,
+  "note_sha256": "284686962fe4cce3c59a93b89a9fc33776ffa2310dbc9c8e9c1e8bda809d049e",
+  "primary_sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d",
+  "records": [
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_REVIEW.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_REVIEW.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.before_recovery.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline_execution.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/edge_controls.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutation_manifest.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2_execution.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_execution.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls_attempt1.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutation_manifest.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/receipt.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/receipt_verification.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_initial_inventory.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_statement_search.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_controls.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls_attempt1.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/CHECKPOINT.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/PRE_HELPER_RECONSTRUCTION.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/author_identity_verification.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/author_mutation_and_repair_diffs.txt",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/independent_controls.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/independent_controls_attempt1.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/independent_execution_attempt1.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/receipt.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/verify_author_packet.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/baseline.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/baseline_execution.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_clock_power.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_clock_power.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_drop_global_normalization.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_drop_global_normalization.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_probability_cross_half.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_probability_cross_half.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutation_manifest.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/occupation_controls.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/receipt.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/run_mutations.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/CHECKPOINT.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/PRE_CONTROL_RECONSTRUCTION.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/baseline.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/baseline_execution.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/independent_packet_controls.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_bare_envelope_weights.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_bare_envelope_weights.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_missing_time_jacobian.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_missing_time_jacobian.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutation_manifest.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/pre_control_receipt.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/receipt.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/receipt_verification.json",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "preserved:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/run_independent_controls.py",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source:EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source:EXCLUDED_WALK_SPECTRAL_EDGE_REVIEW.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source:EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source:EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_REVIEW.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source:EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source:EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source:FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source:EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source:EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source:EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source:EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "dependency:docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "dependency:docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "dependency:docs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "final_identity:note",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "final_identity:primary",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "note_segment:metadata, result and dependency contract",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "note_segment:S1-S21 complete effective proof",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "origin_slice:EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "note_segment:band and normalization premises",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "note_segment:A2-A9 complete original-walk composition",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "origin_slice:EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "origin_slice:FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "note_segment:evidence, resolved source reviews and scoped limits",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "entire_S1_S21_source_recovered",
+      "passed": true,
+      "details": "Only section labels and c/c_edge notation differ."
+    },
+    {
+      "check": "entire_A2_A9_source_recovered",
+      "passed": true,
+      "details": "Reverses only the fully recorded premise insertions, labels and review-status edits."
+    },
+    {
+      "check": "literal_payload:EDGE_CONTROLS_SOURCE",
+      "passed": true,
+      "details": {
+        "bytes": 6595,
+        "sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee"
+      }
+    },
+    {
+      "check": "literal_payload:RATE_CONTROLS_SOURCE",
+      "passed": true,
+      "details": {
+        "bytes": 6180,
+        "sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5"
+      }
+    },
+    {
+      "check": "literal_payload:OCCUPATION_CONTROLS_SOURCE",
+      "passed": true,
+      "details": {
+        "bytes": 2258,
+        "sha256": "a81f727a4d2f813e6c58515127fa9836179e24180f90c50224d42bc7368237a1"
+      }
+    },
+    {
+      "check": "primary_claim_id",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "primary_timeout",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "primary_inputs",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "executed_exact_final_primary",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "execution_completed_with_timeout",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "execution_log:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/primary_attempt1.stdout.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "execution_log:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/primary_attempt1.stderr.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "execution_log:/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/primary_attempt1.log",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "three_blocks_49_author_controls",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "no_stderr",
+      "passed": true,
+      "details": null
+    }
+  ]
+}

@@ -1,0 +1,1001 @@
+{
+  "schema": "excluded-walk-quantitative-memory-transfer-composition-v1",
+  "created_utc": "2026-10-11T21:03:21.313729+00:00",
+  "claim_id": "excluded_walk_quantitative_memory_transfer_bounded_theorem_note_2026-10-11",
+  "future_note": "docs/EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+  "future_primary": "scripts/excluded_walk_quantitative_memory_transfer_2026_10_11.py",
+  "primary_artifacts": {
+    "note": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_NOTE.md",
+      "sha256": "284686962fe4cce3c59a93b89a9fc33776ffa2310dbc9c8e9c1e8bda809d049e",
+      "lines": 743
+    },
+    "primary": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_memory_transfer_2026_10_11.py",
+      "sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d"
+    },
+    "reconstruction_map": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/reconstruction_map.json",
+      "sha256": "c29df627eeedeaa21f1ce04abdec65f04aa58d5e3ce0b5266342497a5c9d586f"
+    }
+  },
+  "status": "External exact-source composition complete; no final publication review, PR, audit verdict or retained status claimed.",
+  "stack_dependency": {
+    "pr_number": 9481,
+    "branch": "physics-loop/toe-projected-band-current-20261011",
+    "commit": "d8480b5a6e04102ff076b3dd6f817a2d43f20252",
+    "basis": "Parent dispatch; commit and all three dependency-note blob identities verified locally. No publication or merge action performed by this worker."
+  },
+  "mathematical_scope": "Preserved S4-S21 and A1-A9 supplied-model arguments: inverse-edge form, L5/3 density, mean survival, and actual prepared packet fixed-F averaged occupation. No new mathematical derivation, pointwise amplitude rate, weighted-current rate, generic-state or many-body conclusion.",
+  "source_bound_reviews": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_REVIEW.md",
+      "sha256": "8a6741ea9ea890fb9fdece7a8c241fed537a1fe899dafe34f716f1211171bd40",
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/receipt.json",
+      "receipt_sha256": "1cc248fc02fedd81a2e8d9a91d5b8d7157ad9abc18e2a4b5cfa4f8c87954e055",
+      "scope": "Selective S4-S21 check; inherited source authorship disclosed; no A2-A9 or final composition review."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_REVIEW.md",
+      "sha256": "e4f0f730b1d14d1d444e9e22eb0f6995fdc2dab4c130375491d6b61528d2d12a",
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/receipt.json",
+      "receipt_sha256": "4398c9bd17e25281efa1dfd2ae1d5f22eafc8415adc8b2a736a11b45c40b789d",
+      "scope": "A2-A9 check conditional on S20; reviewer authored S20 and did not independently recertify it."
+    }
+  ],
+  "source_changes": "Only new composition presentation: explicit dependency/model/preparation/Q16 premises, c-to-c_edge notation, exact time Jacobian, runner metadata, completed source-review scopes, and narrow terminal scope wording. Frozen source proofs/helpers/failures untouched.",
+  "reading_coverage": {
+    "complete_independent_edge_review": "All 191 lines and complete receipt read before composition.",
+    "new_note": "All generated proof text read; every later F-definition, time-domain, execution-report and runner-metadata change read. Final note has 743 lines.",
+    "primary": "Entire new wrapper read; all three complete helpers previously read and refreshed at exact unchanged identity; all decoded payload bytes checked.",
+    "other_sources": "Prior complete edge, occupation and required premise-source readings reused at unchanged hashes; complete necessary model, band, Q16, G5, actual projector and normalization arguments refreshed. Full current/memory publication presentation diffs read.",
+    "execution": "Entire combined stdout log and empty stderr read; both reconstruction maps and all new mechanical output inspected."
+  },
+  "execution": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_memory_transfer_2026_10_11.py"
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011",
+    "started_utc": "2026-10-11T20:57:28.827597+00:00",
+    "elapsed_seconds": 1.1481165420264006,
+    "timeout_seconds": 180,
+    "timed_out": false,
+    "returncode": 0,
+    "executed_source_sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d",
+    "source_unchanged": true,
+    "logs": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/primary_attempt1.stdout.log",
+        "sha256": "123c4a4234c2137de4e30f26ead48859387b8a2444349f014c32a57d1923136d"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/primary_attempt1.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/primary_attempt1.log",
+        "sha256": "123c4a4234c2137de4e30f26ead48859387b8a2444349f014c32a57d1923136d"
+      }
+    ],
+    "scope": "Literal author consistency replay; not independent continuum proof or final publication review."
+  },
+  "mechanical_verification": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/composition_verification.json",
+    "sha256": "fc4bdbb6b0c968731b93c0e6669e7c77ec05953e0f71832bcd7ec48fabf9b16d",
+    "checks": 122,
+    "all_match": true,
+    "scope": "Identity, full proof-slice reconstruction, literal helper payload and preservation checks only."
+  },
+  "preservation": {
+    "old_files_checked": 83,
+    "all_unchanged": true,
+    "historical_failures": "All five edge, three rate and three occupation mutation source/log pairs and preserved original rate syntax failure remain unchanged.",
+    "current_repository_edits_by_worker": false,
+    "editable_prompt_files_changed": [],
+    "new_primary_or_verification_failures": []
+  },
+  "instructions": [
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "lines": 130
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "lines": 52
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "lines": 140,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "lines": 434,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/references/DISCOVERY.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "lines": 336,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "lines": 309,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "bytes": 3253,
+      "lines": 67,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/ai-physics-lane-builder/SKILL.md"
+    },
+    {
+      "source": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39:AGENTS.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "bytes": 11558,
+      "lines": 183
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "lines": 230,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "lines": 126,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/references/proof-search-governance.md"
+    }
+  ],
+  "next_action": "Parent source-bound final composition check at these exact identities; any later publication must use the stated prior-milestone dependency and independent audit path for retention.",
+  "records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+      "sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623",
+      "bytes": 20616,
+      "lines": 452,
+      "role": "frozen proof/presentation source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_REVIEW.md",
+      "sha256": "8a6741ea9ea890fb9fdece7a8c241fed537a1fe899dafe34f716f1211171bd40",
+      "bytes": 11836,
+      "lines": 191,
+      "role": "frozen proof/presentation source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md",
+      "sha256": "9729bbbfb26de3c7cf450b8eb81efea6fe2f3597b40289426cf6e9171de30c3d",
+      "bytes": 8420,
+      "lines": 192,
+      "role": "frozen proof/presentation source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_REVIEW.md",
+      "sha256": "e4f0f730b1d14d1d444e9e22eb0f6995fdc2dab4c130375491d6b61528d2d12a",
+      "bytes": 12534,
+      "lines": 231,
+      "role": "frozen proof/presentation source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222,
+      "lines": 500,
+      "role": "frozen proof/presentation source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457,
+      "role": "frozen proof/presentation source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549,
+      "role": "frozen proof/presentation source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+      "sha256": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+      "bytes": 19988,
+      "lines": 420,
+      "role": "frozen proof/presentation source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+      "bytes": 14339,
+      "lines": 327,
+      "role": "frozen proof/presentation source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "bytes": 11538,
+      "lines": 236,
+      "role": "frozen proof/presentation source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.before_recovery.md",
+      "sha256": "fb10f2ffdf5bbfa9bff9fb944af1b721ff01baec52c16d34481043c80b53dc80",
+      "bytes": 2369,
+      "lines": 50,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.md",
+      "sha256": "66d63ab1ff53ae1612e9e200d6dc64d552118979ef148de6c482eefc6271c5de",
+      "bytes": 3105,
+      "lines": 55,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline.log",
+      "sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc",
+      "bytes": 1814,
+      "lines": 21,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline_execution.json",
+      "sha256": "499abe0dc5bd30b245543c102082fe16ef45a484aeb222c391a5f40594e458b6",
+      "bytes": 508,
+      "lines": 13,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/edge_controls.py",
+      "sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "bytes": 6595,
+      "lines": 161,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.log",
+      "sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+      "bytes": 1612,
+      "lines": 24,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.py",
+      "sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+      "bytes": 6597,
+      "lines": 161,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.log",
+      "sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+      "bytes": 985,
+      "lines": 13,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.py",
+      "sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+      "bytes": 6594,
+      "lines": 161,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.log",
+      "sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+      "bytes": 970,
+      "lines": 15,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.py",
+      "sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+      "bytes": 6583,
+      "lines": 161,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.log",
+      "sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+      "bytes": 1859,
+      "lines": 26,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.py",
+      "sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+      "bytes": 6595,
+      "lines": 161,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.log",
+      "sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+      "bytes": 1762,
+      "lines": 24,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.py",
+      "sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+      "bytes": 6595,
+      "lines": 161,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutation_manifest.json",
+      "sha256": "9c74d6302eff4c6a2fce7f7d08f725a8e3a07d8547aa5c8448dc074251e6da80",
+      "bytes": 4141,
+      "lines": 92,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.json",
+      "sha256": "a7b864b8c8a2f9afd8a45339daf7993caab98f0e6b6201244b2f25f71c77deb2",
+      "bytes": 1679,
+      "lines": 37,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.log",
+      "sha256": "daaea132d3b5c5268fa2dd8021a7647e149f43052261284f7fd7286d95a69a41",
+      "bytes": 1060,
+      "lines": 6,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline.log",
+      "sha256": "f54d0b0808ae350102878e51ed2439313117a11152bd9ba73dc279a6e86f1a65",
+      "bytes": 223,
+      "lines": 4,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2.log",
+      "sha256": "f0df57a4bc61f78bb07d0b289a2e14a5e3020e241ac70e7ab16a734c40344cfc",
+      "bytes": 2540,
+      "lines": 16,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2_execution.json",
+      "sha256": "0a46db31548783c59ebc6122f55b63d7026797e5b3b09bb9632a98af265cc0c5",
+      "bytes": 520,
+      "lines": 13,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_execution.json",
+      "sha256": "6c3c0b0963a1e89709e115b73ea61c1e67cc2e05f6c570f90a8232000f6ad03e",
+      "bytes": 514,
+      "lines": 13,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls.py",
+      "sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+      "bytes": 6180,
+      "lines": 132,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls_attempt1.py",
+      "sha256": "5d556a9e02e3799cba52de5ab40b2b90b2deadc8cf9572b2a37f5e753dd70d9f",
+      "bytes": 6179,
+      "lines": 132,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.log",
+      "sha256": "b0a319d3bc923ed1837429d5ab58bc4e9891eb360917fbf13e4b72165ce6ca80",
+      "bytes": 927,
+      "lines": 13,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.py",
+      "sha256": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad",
+      "bytes": 6179,
+      "lines": 132,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.log",
+      "sha256": "983c0d14afbb29ede5a2a3062dafe9234e9002ef3192a072448aa2e852c54ea4",
+      "bytes": 1334,
+      "lines": 18,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.py",
+      "sha256": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b",
+      "bytes": 6180,
+      "lines": 132,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.log",
+      "sha256": "dddfd8528f33cd6fefe8f25aaed66e3582512e6b1d26a1ac8df4b084eadc584a",
+      "bytes": 1783,
+      "lines": 21,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.py",
+      "sha256": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748",
+      "bytes": 6182,
+      "lines": 132,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutation_manifest.json",
+      "sha256": "187813481e99521d1de7510d154ec6a1dcd2b33a9611c00e567fedc65a33ac85",
+      "bytes": 2520,
+      "lines": 56,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/receipt.json",
+      "sha256": "7a96b9213a8c0faf014f35e4e4bcbdecd54d688bdc6b829b57d189b97fd7bec6",
+      "bytes": 31763,
+      "lines": 659,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/receipt_verification.json",
+      "sha256": "29f717eca7d6a42c6c395c22b16882eb41688749286ebb9951ea7b287756ae20",
+      "bytes": 252,
+      "lines": 7,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_initial_inventory.json",
+      "sha256": "e2fffa216e7034af0a8f904b395f5f15fd8d7147dd071c8785dde64c6faeb0de",
+      "bytes": 3101,
+      "lines": 78,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_statement_search.json",
+      "sha256": "abf412a25a690a12d339877ef47fb6efabe6f0a972a99a65a12bcf13c1115554",
+      "bytes": 1009,
+      "lines": 37,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_controls.py",
+      "sha256": "696be8c7d3b70e141c38056c4b5296328166edaf8291ac6cc9cb528006c8bdd7",
+      "bytes": 2624,
+      "lines": 58,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls.py",
+      "sha256": "2e96c388791ce4a8612192da60b83c3bc88532620765373c51a095953b5ca496",
+      "bytes": 2386,
+      "lines": 56,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls_attempt1.py",
+      "sha256": "bd030564c1f1397fa6d4d34f41eccbbed4f25ed8cb6fe94a14573e7053d9d080",
+      "bytes": 2368,
+      "lines": 56,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/CHECKPOINT.md",
+      "sha256": "074ca99bd880051b9074889aaf15e07da8d4911d4c81a7ef1401c82f0c5edc7d",
+      "bytes": 1473,
+      "lines": 26,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/PRE_HELPER_RECONSTRUCTION.md",
+      "sha256": "afba71d956943673b620e9d69e00dffa95b4c53c69743ceda7fb88bdc00cfe4d",
+      "bytes": 5928,
+      "lines": 98,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/author_identity_verification.json",
+      "sha256": "ca6b135885f4a6309d5eb929aa714c6231e7e1b3fbc4005337fe4d3d7e098b88",
+      "bytes": 56198,
+      "lines": 1188,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/author_mutation_and_repair_diffs.txt",
+      "sha256": "c3fc5b024fc1b1109734ea1692eacb98c57de43c5448357e8afc74426b759d3c",
+      "bytes": 4879,
+      "lines": 112,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/independent_controls.py",
+      "sha256": "7fe6580d565adf2d382e62ca3c5b8ba2e0667ae905f2d86223a78db934acb30e",
+      "bytes": 4555,
+      "lines": 86,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/independent_controls_attempt1.log",
+      "sha256": "de98c048e0ea3ad369d75124270c20a73e78655feb75549d56d82e9f6a17c3a7",
+      "bytes": 1198,
+      "lines": 26,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/independent_execution_attempt1.json",
+      "sha256": "c46eefa94078c2586071b5514da06d2d4cc7e9cb6683608517be34ce405cf5fc",
+      "bytes": 374,
+      "lines": 10,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/receipt.json",
+      "sha256": "1cc248fc02fedd81a2e8d9a91d5b8d7157ad9abc18e2a4b5cfa4f8c87954e055",
+      "bytes": 20979,
+      "lines": 426,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/verify_author_packet.py",
+      "sha256": "2a2ccc0cd63a391e9aaeec266be13045fc1c832181ac1204543f406969fdbbd1",
+      "bytes": 4596,
+      "lines": 83,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/baseline.log",
+      "sha256": "3019141ec6047073f14b89c202630e175151ec87cc72433fa5920c36e9579e0a",
+      "bytes": 602,
+      "lines": 15,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/baseline_execution.json",
+      "sha256": "a00369a66cf5fdb75875e9a6f0fcc4df73db782f9fc2c2a6b4cbe1275e18147d",
+      "bytes": 258,
+      "lines": 7,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_clock_power.log",
+      "sha256": "283e197706d4618ff3735a255e8c6236d03084bfb355841d55bc173ebd3ebc11",
+      "bytes": 935,
+      "lines": 17,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_clock_power.py",
+      "sha256": "9b8be529a97016f7062ebf5896aa33d7f7cd37ba813ad688c13a837d0c563911",
+      "bytes": 2258,
+      "lines": 42,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_drop_global_normalization.log",
+      "sha256": "e349d247832b3f5a2d57f9ee2ccc6f0b224caa88e52ef92229eaa27c365bad94",
+      "bytes": 1154,
+      "lines": 20,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_drop_global_normalization.py",
+      "sha256": "202b7feca03635ae3e63c481767cb6e1a9daf918ac68cd11422d157574f48f03",
+      "bytes": 2256,
+      "lines": 42,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_probability_cross_half.log",
+      "sha256": "5d99db36022f9287f6f9a875bcd5d659ae43b7179eb7cce009fc0a5691911c46",
+      "bytes": 897,
+      "lines": 13,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_probability_cross_half.py",
+      "sha256": "7b6ba75aafbbf707c0662927b2be154bb72f4217b56f24d81a778e97ac3c79fe",
+      "bytes": 2258,
+      "lines": 42,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutation_manifest.json",
+      "sha256": "189817211e566e44691e9e921786c19e27354629ae9ff0c024b63889ee486a02",
+      "bytes": 2443,
+      "lines": 44,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/occupation_controls.py",
+      "sha256": "a81f727a4d2f813e6c58515127fa9836179e24180f90c50224d42bc7368237a1",
+      "bytes": 2258,
+      "lines": 42,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/receipt.json",
+      "sha256": "b2cccd048ee59f6cc4581284eec16e9a82b0787fe2a8598fcaf813e88f71dd24",
+      "bytes": 4735,
+      "lines": 76,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/run_mutations.py",
+      "sha256": "ad7ada163e589e5d81ea01509e463f7fea981f8b0365f17e89bc2102977666b4",
+      "bytes": 2909,
+      "lines": 19,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/CHECKPOINT.md",
+      "sha256": "16376c5cb2a235670018e6e5c1aca295de7a229a827aab2486901f37e978681e",
+      "bytes": 3656,
+      "lines": 69,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/PRE_CONTROL_RECONSTRUCTION.md",
+      "sha256": "ceded0652dbf1ebdbb6fffb792175cffa18f9f163a98b40a3246ca8587d43967",
+      "bytes": 7790,
+      "lines": 168,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/baseline.log",
+      "sha256": "a8bdee0f00760783ef3d6c9d9a077fa5974d115eadb8e94825f5b0bc391acfed",
+      "bytes": 1325,
+      "lines": 10,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/baseline_execution.json",
+      "sha256": "c14cb7cceef51c7c12cc992df9b24f1d076352e9f31091d9e8bd8fc9dec48ad7",
+      "bytes": 559,
+      "lines": 13,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/independent_packet_controls.py",
+      "sha256": "6f16fecb72f889104366cca4bed577d9425874549142c67a8624c248b00d5fb5",
+      "bytes": 5592,
+      "lines": 123,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_bare_envelope_weights.log",
+      "sha256": "0b76c9a557482f48edec30ada6aa407aaa0c7a5f6ff97f56ff0c7d3f993f3015",
+      "bytes": 1420,
+      "lines": 18,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_bare_envelope_weights.py",
+      "sha256": "f84b5e08501a93b4335323a6300c5aae43d0352f36772a0c6b75d8f30ee89562",
+      "bytes": 5594,
+      "lines": 123,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_missing_time_jacobian.log",
+      "sha256": "24eea675cccfe8c67b3f47ada66bb771960a23147d6365b80b02ca3ebd087613",
+      "bytes": 1757,
+      "lines": 20,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_missing_time_jacobian.py",
+      "sha256": "7fcf76b98d4b17ec17ac2798704405102f5c6170f418f7fb166aa67ac4351c4f",
+      "bytes": 5584,
+      "lines": 123,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutation_manifest.json",
+      "sha256": "7a2a99930b3483abffcafbe7231687c58fb161feee99aa29e60771deb0f23014",
+      "bytes": 1718,
+      "lines": 38,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/pre_control_receipt.json",
+      "sha256": "34e828cc220020ec58eb59151c52154b55cf7bcb8d470827ba712306db83d753",
+      "bytes": 1123,
+      "lines": 14,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/receipt.json",
+      "sha256": "4398c9bd17e25281efa1dfd2ae1d5f22eafc8415adc8b2a736a11b45c40b789d",
+      "bytes": 21328,
+      "lines": 425,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/receipt_verification.json",
+      "sha256": "8e117d5daff9412eb3877c91f1ee328fb82ec7c573724125195cb7aed9f4fb42",
+      "bytes": 320,
+      "lines": 9,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/run_independent_controls.py",
+      "sha256": "8602a237b9ab86fcafd8c478e6d1407bef503fddf48e1abb5bd45a1f4ba2eaba",
+      "bytes": 2102,
+      "lines": 49,
+      "role": "preserved pre-composition source or historical evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+      "sha256": "ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969",
+      "bytes": 37412,
+      "lines": 859,
+      "role": "frozen proof/presentation source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "3954606703f9a66665fb1ee9a27079f7f14e5183f28a8511a38743ef5d455aa1",
+      "bytes": 73215,
+      "lines": 1575,
+      "role": "prior milestone dependency; exact committed identity at d8480b5a6e04102ff076b3dd6f817a2d43f20252"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "bf894a323464c17faf78ae3402af8ef964635fb8fe2240ece671c0aaffcf5e5d",
+      "bytes": 38699,
+      "lines": 880,
+      "role": "prior milestone dependency; exact committed identity at d8480b5a6e04102ff076b3dd6f817a2d43f20252"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "9f551fc8d3592e83d15a007495a8f9165a5ddb9bc1e98d9dd3f51b6a2584f401",
+      "bytes": 65166,
+      "lines": 1280,
+      "role": "prior milestone dependency; exact committed identity at d8480b5a6e04102ff076b3dd6f817a2d43f20252"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_MEMORY_CURRENT_NOTE.md",
+      "sha256": "c05465cee9acb7ee1bc9b0296b4fd5546432bd8188043194b1701a2d3654ef87",
+      "bytes": 72064,
+      "lines": 1556,
+      "role": "frozen research memory presentation; full presentation-only diff to prior milestone read"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_NOTE.md",
+      "sha256": "284686962fe4cce3c59a93b89a9fc33776ffa2310dbc9c8e9c1e8bda809d049e",
+      "bytes": 33833,
+      "lines": 743,
+      "role": "final external note"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_memory_transfer_2026_10_11.py",
+      "sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d",
+      "bytes": 17775,
+      "lines": 390,
+      "role": "final external primary"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/CHECKPOINT.md",
+      "sha256": "42e93c41e539ab678848935271002df551ebbffa419cf3a5deeb8a515f11c546",
+      "bytes": 3843,
+      "lines": 64,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/RECONSTRUCTION_MAP.md",
+      "sha256": "dd80128b3ec7455ff5d67e0143d1a473b9d9e57e642a1f7b69308f344f248f7c",
+      "bytes": 2820,
+      "lines": 36,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/compose_candidate.py",
+      "sha256": "4d17eb9fc3ceab63a85fb1e71e1a2b32aa0ae94411c0d91852618161b5b1a07c",
+      "bytes": 29028,
+      "lines": 497,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/composition_verification.json",
+      "sha256": "fc4bdbb6b0c968731b93c0e6669e7c77ec05953e0f71832bcd7ec48fabf9b16d",
+      "bytes": 23765,
+      "lines": 629,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/current_dependency_presentation_diffs.txt",
+      "sha256": "7c0fc4122d22708fbec93c1a6b9debdfa026dbe637cd58cdb54a56efd38ccff4",
+      "bytes": 6636,
+      "lines": 100,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_precision_edit/FINAL_EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_NOTE.md",
+      "sha256": "994448d8780a6dd1870ab9d17ba34e1f388cd2424b8be85eb653e95bdf8cfdae",
+      "bytes": 33271,
+      "lines": 733,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_precision_edit/RECONSTRUCTION_MAP.md",
+      "sha256": "b6e4a8d04fbde09687308b4bfa0334fbb9131665f7cedd140dd9a17bf2d5eac0",
+      "bytes": 2827,
+      "lines": 36,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_precision_edit/compose_candidate.py",
+      "sha256": "88d6295cbf6fe4a1df4768c08ad3a9f27c2c1e0ac314ac168569f498f4f01726",
+      "bytes": 28473,
+      "lines": 487,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_precision_edit/excluded_walk_quantitative_memory_transfer_2026_10_11.py",
+      "sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d",
+      "bytes": 17775,
+      "lines": 390,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_precision_edit/reconstruction_map.json",
+      "sha256": "55ebe99d0c49e168249b76aa78edf1d14b06be769a7f4a9703dc55ddba1babe9",
+      "bytes": 8548,
+      "lines": 172,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_runner_metadata/FINAL_EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_NOTE.md",
+      "sha256": "39bb0b948591c531814628a9e12beb4daf2cf253a28fea7b1b4982ae62345daf",
+      "bytes": 33760,
+      "lines": 742,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_runner_metadata/RECONSTRUCTION_MAP.md",
+      "sha256": "e4f557fb9168ff63cb5b0c4658e27061c93fcb9a8b3de5f0af6b09c56c47ad49",
+      "bytes": 2820,
+      "lines": 36,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_runner_metadata/compose_candidate.py",
+      "sha256": "cf0be2b42d0c38acf31652154ef6faf9114b49fc293de1e017f9cc9494bc9fe8",
+      "bytes": 28955,
+      "lines": 496,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_runner_metadata/composition_verification.json",
+      "sha256": "1c8d0e4d7f5c29a2e47a994b95eef13f519a739c0355adaee1bdd57aa6f61175",
+      "bytes": 23765,
+      "lines": 629,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_runner_metadata/excluded_walk_quantitative_memory_transfer_2026_10_11.py",
+      "sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d",
+      "bytes": 17775,
+      "lines": 390,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_runner_metadata/primary_wrapper_readback.txt",
+      "sha256": "7061b48f558899fb5e17b59eeba1bfa3dc8263c17e91d980638c053b5ad7a5af",
+      "bytes": 2798,
+      "lines": 58,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/pre_runner_metadata/reconstruction_map.json",
+      "sha256": "7351d1a144ac2d0de0eabb27f5bb9e08d7680b538549800bdeec08338f9d31fc",
+      "bytes": 8548,
+      "lines": 172,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/primary_attempt1.log",
+      "sha256": "123c4a4234c2137de4e30f26ead48859387b8a2444349f014c32a57d1923136d",
+      "bytes": 6010,
+      "lines": 59,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/primary_attempt1.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "lines": 0,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/primary_attempt1.stdout.log",
+      "sha256": "123c4a4234c2137de4e30f26ead48859387b8a2444349f014c32a57d1923136d",
+      "bytes": 6010,
+      "lines": 59,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/primary_attempt1_execution.json",
+      "sha256": "eec5b1a0c5a725e6de9f00b78861972ec209a1760a7226ec5785424670556b0e",
+      "bytes": 1505,
+      "lines": 29,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/primary_wrapper_readback.txt",
+      "sha256": "7061b48f558899fb5e17b59eeba1bfa3dc8263c17e91d980638c053b5ad7a5af",
+      "bytes": 2798,
+      "lines": 58,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/reconstruction_map.json",
+      "sha256": "c29df627eeedeaa21f1ce04abdec65f04aa58d5e3ce0b5266342497a5c9d586f",
+      "bytes": 8548,
+      "lines": 172,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/run_primary.py",
+      "sha256": "c498415e3617776476388b0db87805601ef9f4b4d744f1e72fc06f9cad5ff8f2",
+      "bytes": 2482,
+      "lines": 46,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/source_inventory_before.json",
+      "sha256": "8443eed3679594bc70ae59f0c83fbe8268332972307e45d5879ff814fda0fe98",
+      "bytes": 20319,
+      "lines": 338,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_transfer_composition/verify_composition.py",
+      "sha256": "d5e3ea6a8bb9266eafc91ed39ec3d522ae207c7878a35d7da2ac3940a0ce1df9",
+      "bytes": 7335,
+      "lines": 115,
+      "role": "composition evidence, generator, execution, readback, checkpoint or preserved earlier candidate"
+    }
+  ],
+  "receipt_note": "Receipt excludes itself and receipt_verification.json to avoid circular hashing; final verification binds this receipt separately."
+}

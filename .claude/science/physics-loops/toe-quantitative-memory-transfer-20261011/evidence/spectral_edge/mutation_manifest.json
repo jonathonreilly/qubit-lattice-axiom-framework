@@ -1,0 +1,92 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.py"
+    ],
+    "returncode": 1,
+    "timeout_seconds": 120,
+    "elapsed_seconds": 0.20691837463527918,
+    "source": "mutant_drop_compression_defect.py",
+    "source_sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+    "log": "mutant_drop_compression_defect.log",
+    "log_sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+    "name": "drop_compression_defect",
+    "old": "compression_defect = Pi*B*(identity-Pi)*B*Pi",
+    "new": "compression_defect = sp.zeros(9)",
+    "intended_assertion": "compression_square_keeps_positive_defect",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.py"
+    ],
+    "returncode": 1,
+    "timeout_seconds": 120,
+    "elapsed_seconds": 0.209563666023314,
+    "source": "mutant_double_dressing_coefficient.py",
+    "source_sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+    "log": "mutant_double_dressing_coefficient.log",
+    "log_sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+    "name": "double_dressing_coefficient",
+    "old": "c = b2/(12*I0_fixture)",
+    "new": "c = b2/(6*I0_fixture)",
+    "intended_assertion": "exact_cubic_dressing_coefficient",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.py"
+    ],
+    "returncode": 1,
+    "timeout_seconds": 120,
+    "elapsed_seconds": 0.3214872498065233,
+    "source": "mutant_count_one_edge.py",
+    "source_sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+    "log": "mutant_count_one_edge.log",
+    "log_sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+    "name": "count_one_edge",
+    "old": "edge_mass = sp.simplify((zeta.H*Pedge*zeta)[0])",
+    "new": "edge_mass = sp.simplify((zeta.H*Pedge*zeta)[0])/2",
+    "intended_assertion": "two_edge_mass_and_longitudinal_coefficient",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.py"
+    ],
+    "returncode": 1,
+    "timeout_seconds": 120,
+    "elapsed_seconds": 0.3299896251410246,
+    "source": "mutant_poisson_half_constant.py",
+    "source_sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+    "log": "mutant_poisson_half_constant.log",
+    "log_sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+    "name": "poisson_half_constant",
+    "old": "poisson_majorant = delta/(2*x)",
+    "new": "poisson_majorant = delta/(4*x)",
+    "intended_assertion": "poisson_bound_factor_two",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.py"
+    ],
+    "returncode": 1,
+    "timeout_seconds": 120,
+    "elapsed_seconds": 0.30897795828059316,
+    "source": "mutant_mean_half_coefficient.py",
+    "source_sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+    "log": "mutant_mean_half_coefficient.log",
+    "log_sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+    "name": "mean_half_coefficient",
+    "old": "H_coefficient = 256*sp.sqrt(sp.pi*I0)",
+    "new": "H_coefficient = 128*sp.sqrt(sp.pi*I0)",
+    "intended_assertion": "mean_bound_optimizer_stationary",
+    "failed_at_intended_assertion": true
+  }
+]

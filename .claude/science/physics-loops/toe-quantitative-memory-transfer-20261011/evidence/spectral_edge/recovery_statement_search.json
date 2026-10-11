@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-10-11T20:27:58.061683+00:00",
+  "fetched_main_commit": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "scope": "Limited matching excluded/walk source notes; no global novelty conclusion; explicit E25-E26 edge obligation is the assigned target.",
+  "queries": [
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(spectral.?edge|edge.?mass|rank.one.{0,40}domina|domina.{0,40}rank.one)",
+        "a13caa4885f547c8d206265b031ba7649e539fd9",
+        "--",
+        "docs/*EXCLUDED*",
+        "docs/*WALK*"
+      ],
+      "returncode": 1,
+      "output": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(inverse.{0,40}moment|moment.{0,40}inverse|L\\^?\\(?5/3|mean.{0,30}survival|survival.{0,30}mean|four.fifths)",
+        "a13caa4885f547c8d206265b031ba7649e539fd9",
+        "--",
+        "docs/*EXCLUDED*",
+        "docs/*WALK*"
+      ],
+      "returncode": 1,
+      "output": ""
+    }
+  ]
+}

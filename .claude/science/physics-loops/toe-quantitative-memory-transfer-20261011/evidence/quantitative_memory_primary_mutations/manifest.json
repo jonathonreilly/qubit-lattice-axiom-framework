@@ -1,0 +1,216 @@
+{
+  "primary": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_memory_transfer_2026_10_11.py",
+  "primary_sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d",
+  "scope": "Actual whole-primary semantic mutations, each with an explicit expected embedded-hash refresh.",
+  "cases": [
+    {
+      "name": "drop_compression_defect",
+      "helper_variable": "EDGE_CONTROLS_SOURCE",
+      "old": "compression_defect = Pi*B*(identity-Pi)*B*Pi",
+      "new": "compression_defect = sp.zeros(9)",
+      "metadata_refresh": {
+        "before": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+        "after": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac"
+      },
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_drop_compression_defect.py",
+      "source_sha256": "ec506cd1d48c43cb1c8f2316ecbb867bb1a958a7f7c38cd82f54b47ac95a9c6f",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_drop_compression_defect.log",
+      "log_sha256": "4e6df5729bd94827d5e85f77472b36137002deae953ebaad67a1e2cccfb4dcde",
+      "exit_code": 1,
+      "elapsed_seconds": 0.34532208275049925,
+      "timeout_seconds": 180,
+      "intended_assertion": "compression_square_keeps_positive_defect",
+      "intended_failure": true
+    },
+    {
+      "name": "double_dressing_coefficient",
+      "helper_variable": "EDGE_CONTROLS_SOURCE",
+      "old": "c = b2/(12*I0_fixture)",
+      "new": "c = b2/(6*I0_fixture)",
+      "metadata_refresh": {
+        "before": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+        "after": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c"
+      },
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_double_dressing_coefficient.py",
+      "source_sha256": "c4e0368b2aaed34953486bd27dd15ce01f57687ae2c4845e47abf05f27d18374",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_double_dressing_coefficient.log",
+      "log_sha256": "ad9713ad3943593e7d48ed2e05a9bf02658b78e7d5587ce329d00f04e7d19cf4",
+      "exit_code": 1,
+      "elapsed_seconds": 0.18723920919001102,
+      "timeout_seconds": 180,
+      "intended_assertion": "exact_cubic_dressing_coefficient",
+      "intended_failure": true
+    },
+    {
+      "name": "count_one_edge",
+      "helper_variable": "EDGE_CONTROLS_SOURCE",
+      "old": "edge_mass = sp.simplify((zeta.H*Pedge*zeta)[0])",
+      "new": "edge_mass = sp.simplify((zeta.H*Pedge*zeta)[0])/2",
+      "metadata_refresh": {
+        "before": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+        "after": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417"
+      },
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_count_one_edge.py",
+      "source_sha256": "27209e0fdebd9fa80f051815f8eaf5beb2ecf09a0a0f96d54ebd991cf712bb3d",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_count_one_edge.log",
+      "log_sha256": "aa553f9bed0dd7c5ff200176c5beb0944f2665bf3d78a51d314804bf62392b1d",
+      "exit_code": 1,
+      "elapsed_seconds": 0.2916567078791559,
+      "timeout_seconds": 180,
+      "intended_assertion": "two_edge_mass_and_longitudinal_coefficient",
+      "intended_failure": true
+    },
+    {
+      "name": "poisson_half_constant",
+      "helper_variable": "EDGE_CONTROLS_SOURCE",
+      "old": "poisson_majorant = delta/(2*x)",
+      "new": "poisson_majorant = delta/(4*x)",
+      "metadata_refresh": {
+        "before": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+        "after": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c"
+      },
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_poisson_half_constant.py",
+      "source_sha256": "3801779958954c4caf765811750f986e174235f1ae0d04888c9e997c03a63baa",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_poisson_half_constant.log",
+      "log_sha256": "a5982cf176413ec29fb3c969fbc813057dd0d83b96683ee35e01cd05cbb785e8",
+      "exit_code": 1,
+      "elapsed_seconds": 0.49336466658860445,
+      "timeout_seconds": 180,
+      "intended_assertion": "poisson_bound_factor_two",
+      "intended_failure": true
+    },
+    {
+      "name": "mean_half_coefficient",
+      "helper_variable": "EDGE_CONTROLS_SOURCE",
+      "old": "H_coefficient = 256*sp.sqrt(sp.pi*I0)",
+      "new": "H_coefficient = 128*sp.sqrt(sp.pi*I0)",
+      "metadata_refresh": {
+        "before": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+        "after": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502"
+      },
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_mean_half_coefficient.py",
+      "source_sha256": "d6c1e234a4840627e69ac12a059ab1bf9a503941b00727e2d0e660facfbd2666",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_mean_half_coefficient.log",
+      "log_sha256": "4e226e413ca7792d3a8b253841adb076436c426076fbcb51192ef2b00f41e536",
+      "exit_code": 1,
+      "elapsed_seconds": 0.3475202089175582,
+      "timeout_seconds": 180,
+      "intended_assertion": "mean_bound_optimizer_stationary",
+      "intended_failure": true
+    },
+    {
+      "name": "kernel_half_constant",
+      "helper_variable": "RATE_CONTROLS_SOURCE",
+      "old": "kernel_coefficient = sp.Integer(10)",
+      "new": "kernel_coefficient = sp.Integer(5)",
+      "metadata_refresh": {
+        "before": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+        "after": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad"
+      },
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_kernel_half_constant.py",
+      "source_sha256": "567db9691378f379db125f6597fa032080afd4532433c35b6d0a13ae21763278",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_kernel_half_constant.log",
+      "log_sha256": "3fe3d5219de844aaec7c7fce09903cbfc1227240bf81f4516e6f3cc88a0df9fc",
+      "exit_code": 1,
+      "elapsed_seconds": 0.40446620900183916,
+      "timeout_seconds": 180,
+      "intended_assertion": "kernel_L5over4_mass_exact",
+      "intended_failure": true
+    },
+    {
+      "name": "sinc_half_mean",
+      "helper_variable": "RATE_CONTROLS_SOURCE",
+      "old": "mean_from_sinc = 2*(h.subs(x,0)*sp.Si(2*duration)",
+      "new": "mean_from_sinc = 1*(h.subs(x,0)*sp.Si(2*duration)",
+      "metadata_refresh": {
+        "before": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+        "after": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b"
+      },
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_sinc_half_mean.py",
+      "source_sha256": "b787bddefb6863dc76869da2d3933db4bd323a375055cd8b1148c3fb2cef9158",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_sinc_half_mean.log",
+      "log_sha256": "7e04ff47192d8cfca67528825673dc24414c421f6e461ff1ddc34c1d0db6f112",
+      "exit_code": 1,
+      "elapsed_seconds": 0.7282935418188572,
+      "timeout_seconds": 180,
+      "intended_assertion": "one_sided_sinc_mean_has_correct_derivative_and_origin",
+      "intended_failure": true
+    },
+    {
+      "name": "young_half_bound",
+      "helper_variable": "RATE_CONTROLS_SOURCE",
+      "old": "young_rhs = rho_p_mass**(mp.mpf(6)/5)",
+      "new": "young_rhs = rho_p_mass**(mp.mpf(6)/5)/2",
+      "metadata_refresh": {
+        "before": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+        "after": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748"
+      },
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_young_half_bound.py",
+      "source_sha256": "9d8d3270405e71a6da697bd9972ecece973c80bf5117016f3b87988aaa805549",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_young_half_bound.log",
+      "log_sha256": "0eb8d66c2d5eb555d96dad4cdcac34fc508091616025012292ab0d7852aa050e",
+      "exit_code": 1,
+      "elapsed_seconds": 0.7756831250153482,
+      "timeout_seconds": 180,
+      "intended_assertion": "continuous_convolution_Young_bound",
+      "intended_failure": true
+    },
+    {
+      "name": "probability_cross_half",
+      "helper_variable": "OCCUPATION_CONTROLS_SOURCE",
+      "old": "normalized_budget=8*E+4*E**2",
+      "new": "normalized_budget=4*E+4*E**2",
+      "metadata_refresh": {
+        "before": "a81f727a4d2f813e6c58515127fa9836179e24180f90c50224d42bc7368237a1",
+        "after": "7b6ba75aafbbf707c0662927b2be154bb72f4217b56f24d81a778e97ac3c79fe"
+      },
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_probability_cross_half.py",
+      "source_sha256": "fa2e73084f2c763dc7949212b32cbee7ce7a3069831d3109fb633df293fddfe7",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_probability_cross_half.log",
+      "log_sha256": "9eeb076b1239b74eadac55519ef45ccebe040671ae12a22ac2da59411cd9ff89",
+      "exit_code": 1,
+      "elapsed_seconds": 1.0003604581579566,
+      "timeout_seconds": 180,
+      "intended_assertion": "normalized probability coefficients",
+      "intended_failure": true
+    },
+    {
+      "name": "clock_power",
+      "helper_variable": "OCCUPATION_CONTROLS_SOURCE",
+      "old": "3+balance==s.Rational(59,18)",
+      "new": "2+balance==s.Rational(59,18)",
+      "metadata_refresh": {
+        "before": "a81f727a4d2f813e6c58515127fa9836179e24180f90c50224d42bc7368237a1",
+        "after": "9b8be529a97016f7062ebf5896aa33d7f7cd37ba813ad688c13a837d0c563911"
+      },
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_clock_power.py",
+      "source_sha256": "04901cde57557d76e31bd8e2fbf488b58661188164fb7e0a262fa1da34527e0d",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_clock_power.log",
+      "log_sha256": "b82036d133967793ab59bcf94b1cdb56c88d1edfe5e4e6463bbf925a6236740a",
+      "exit_code": 1,
+      "elapsed_seconds": 1.0026593329384923,
+      "timeout_seconds": 180,
+      "intended_assertion": "physical time clock",
+      "intended_failure": true
+    },
+    {
+      "name": "drop_global_normalization",
+      "helper_variable": "OCCUPATION_CONTROLS_SOURCE",
+      "old": "actual=[w*n/N for w,n in zip(weights,normsq)]",
+      "new": "actual=[w*n for w,n in zip(weights,normsq)]",
+      "metadata_refresh": {
+        "before": "a81f727a4d2f813e6c58515127fa9836179e24180f90c50224d42bc7368237a1",
+        "after": "202b7feca03635ae3e63c481767cb6e1a9daf918ac68cd11422d157574f48f03"
+      },
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_drop_global_normalization.py",
+      "source_sha256": "d2161807e5057b5c23dc8de7d12e0ed12256b7ca19620068339b96ee38bdcafc",
+      "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/quantitative_memory_primary_mutations/mutant_drop_global_normalization.log",
+      "log_sha256": "5a21a821ebc5863a2f7ec3e15f77f622126d1225e5a3ec5c1bf76a6333fd0235",
+      "exit_code": 1,
+      "elapsed_seconds": 1.0028373752720654,
+      "timeout_seconds": 180,
+      "intended_assertion": "single normalization exact probability",
+      "intended_failure": true
+    }
+  ]
+}

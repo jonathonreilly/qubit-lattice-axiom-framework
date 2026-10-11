@@ -1,0 +1,9 @@
+{
+  "verified_utc": "2026-10-11T20:48:57.532391+00:00",
+  "receipt_sha256": "4398c9bd17e25281efa1dfd2ae1d5f22eafc8415adc8b2a736a11b45c40b789d",
+  "artifact_records_checked": 34,
+  "immutable_instruction_records_checked": 13,
+  "matching_installed_instruction_files_checked": 7,
+  "mismatches": [],
+  "all_match": true
+}

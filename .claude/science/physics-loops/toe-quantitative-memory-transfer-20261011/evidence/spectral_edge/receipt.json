@@ -1,0 +1,659 @@
+{
+  "schema": "excluded-walk-spectral-edge-author-receipt-v1",
+  "created_utc": "2026-10-11T20:35:04.311985+00:00",
+  "role": "Completed author composition; source-bound independent review pending; no formal audit authority.",
+  "primary_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+    "sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623",
+    "bytes": 20616,
+    "lines": 452
+  },
+  "direct_inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222,
+      "lines": 500,
+      "reading_coverage": "Complete source read during this recovery."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0",
+      "bytes": 17773,
+      "lines": 329,
+      "reading_coverage": "Complete source read during this recovery."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457,
+      "reading_coverage": "Complete source read during this recovery."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549,
+      "reading_coverage": "Complete source read during this recovery."
+    }
+  ],
+  "repository_snapshot": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree",
+    "observed_initial_HEAD": "b9b032ae790c66e762a6296a1306bfb64ae7cd70",
+    "HEAD_at_freeze": "b9b032ae790c66e762a6296a1306bfb64ae7cd70",
+    "fetched_origin_main": "a13caa4885f547c8d206265b031ba7649e539fd9",
+    "fetched_planning_branch": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39",
+    "mutation_scope": "No repository source edits, commits, PRs, primitive adoption or audit verdicts by this worker. Fetch only for instruction/source freshness."
+  },
+  "instructions": [
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "lines": 130
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "lines": 52
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "lines": 140,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "lines": 434,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/references/DISCOVERY.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "lines": 336,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "lines": 309,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "bytes": 3253,
+      "lines": 67,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/ai-physics-lane-builder/SKILL.md"
+    },
+    {
+      "source": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39:AGENTS.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "bytes": 11558,
+      "lines": 183
+    }
+  ],
+  "contributions": {
+    "original_worker": "Rank-one compression, inverse-form/edge and Poisson route, earlier logarithmic mean bound, original helper/logs/five mutations. Two streaming disconnects; initial files preserved.",
+    "root": "Proposed weighted-moment to L^(5/3) density and O((bT)^(-4/5)) mean-survival improvement.",
+    "recovery_worker": "Read all four direct sources, checked domains and constants, completed the proof including the special Young derivation, composed the source, authored separate rate controls and froze the packet. This is author work, not independent review."
+  },
+  "original_files_preserved": [
+    {
+      "original": "spectral_edge/CHECKPOINT.md",
+      "preserved_as": "spectral_edge/CHECKPOINT.before_recovery.md",
+      "sha256": "fb10f2ffdf5bbfa9bff9fb944af1b721ff01baec52c16d34481043c80b53dc80"
+    },
+    {
+      "original": "spectral_edge/baseline.log",
+      "preserved_as": "spectral_edge/baseline.log",
+      "sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc"
+    },
+    {
+      "original": "spectral_edge/baseline_execution.json",
+      "preserved_as": "spectral_edge/baseline_execution.json",
+      "sha256": "499abe0dc5bd30b245543c102082fe16ef45a484aeb222c391a5f40594e458b6"
+    },
+    {
+      "original": "spectral_edge/edge_controls.py",
+      "preserved_as": "spectral_edge/edge_controls.py",
+      "sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee"
+    },
+    {
+      "original": "spectral_edge/mutant_count_one_edge.log",
+      "preserved_as": "spectral_edge/mutant_count_one_edge.log",
+      "sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb"
+    },
+    {
+      "original": "spectral_edge/mutant_count_one_edge.py",
+      "preserved_as": "spectral_edge/mutant_count_one_edge.py",
+      "sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417"
+    },
+    {
+      "original": "spectral_edge/mutant_double_dressing_coefficient.log",
+      "preserved_as": "spectral_edge/mutant_double_dressing_coefficient.log",
+      "sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea"
+    },
+    {
+      "original": "spectral_edge/mutant_double_dressing_coefficient.py",
+      "preserved_as": "spectral_edge/mutant_double_dressing_coefficient.py",
+      "sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c"
+    },
+    {
+      "original": "spectral_edge/mutant_drop_compression_defect.log",
+      "preserved_as": "spectral_edge/mutant_drop_compression_defect.log",
+      "sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9"
+    },
+    {
+      "original": "spectral_edge/mutant_drop_compression_defect.py",
+      "preserved_as": "spectral_edge/mutant_drop_compression_defect.py",
+      "sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac"
+    },
+    {
+      "original": "spectral_edge/mutant_mean_half_coefficient.log",
+      "preserved_as": "spectral_edge/mutant_mean_half_coefficient.log",
+      "sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200"
+    },
+    {
+      "original": "spectral_edge/mutant_mean_half_coefficient.py",
+      "preserved_as": "spectral_edge/mutant_mean_half_coefficient.py",
+      "sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502"
+    },
+    {
+      "original": "spectral_edge/mutant_poisson_half_constant.log",
+      "preserved_as": "spectral_edge/mutant_poisson_half_constant.log",
+      "sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2"
+    },
+    {
+      "original": "spectral_edge/mutant_poisson_half_constant.py",
+      "preserved_as": "spectral_edge/mutant_poisson_half_constant.py",
+      "sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c"
+    },
+    {
+      "original": "spectral_edge/mutation_manifest.json",
+      "preserved_as": "spectral_edge/mutation_manifest.json",
+      "sha256": "9c74d6302eff4c6a2fce7f7d08f725a8e3a07d8547aa5c8448dc074251e6da80"
+    },
+    {
+      "original": "spectral_edge/prior_statement_search.json",
+      "preserved_as": "spectral_edge/prior_statement_search.json",
+      "sha256": "a7b864b8c8a2f9afd8a45339daf7993caab98f0e6b6201244b2f25f71c77deb2"
+    },
+    {
+      "original": "spectral_edge/prior_statement_search.log",
+      "preserved_as": "spectral_edge/prior_statement_search.log",
+      "sha256": "daaea132d3b5c5268fa2dd8021a7647e149f43052261284f7fd7286d95a69a41"
+    },
+    {
+      "original": "spectral_edge/run_controls.py",
+      "preserved_as": "spectral_edge/run_controls.py",
+      "sha256": "696be8c7d3b70e141c38056c4b5296328166edaf8291ac6cc9cb528006c8bdd7"
+    }
+  ],
+  "successful_executions": [
+    {
+      "execution_file": "baseline_execution.json",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/edge_controls.py"
+      ],
+      "returncode": 0,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.45084591722115874,
+      "source": "edge_controls.py",
+      "source_sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "log": "baseline.log",
+      "log_sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc"
+    },
+    {
+      "execution_file": "rate_baseline_attempt2_execution.json",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls.py"
+      ],
+      "returncode": 0,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.990037958137691,
+      "source": "rate_controls.py",
+      "source_sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+      "log": "rate_baseline_attempt2.log",
+      "log_sha256": "f0df57a4bc61f78bb07d0b289a2e14a5e3020e241ac70e7ab16a734c40344cfc"
+    }
+  ],
+  "literal_mutations": [
+    {
+      "manifest": "mutation_manifest.json",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.py"
+      ],
+      "returncode": 1,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.20691837463527918,
+      "source": "mutant_drop_compression_defect.py",
+      "source_sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+      "log": "mutant_drop_compression_defect.log",
+      "log_sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+      "name": "drop_compression_defect",
+      "old": "compression_defect = Pi*B*(identity-Pi)*B*Pi",
+      "new": "compression_defect = sp.zeros(9)",
+      "intended_assertion": "compression_square_keeps_positive_defect",
+      "failed_at_intended_assertion": true
+    },
+    {
+      "manifest": "mutation_manifest.json",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.py"
+      ],
+      "returncode": 1,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.209563666023314,
+      "source": "mutant_double_dressing_coefficient.py",
+      "source_sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+      "log": "mutant_double_dressing_coefficient.log",
+      "log_sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+      "name": "double_dressing_coefficient",
+      "old": "c = b2/(12*I0_fixture)",
+      "new": "c = b2/(6*I0_fixture)",
+      "intended_assertion": "exact_cubic_dressing_coefficient",
+      "failed_at_intended_assertion": true
+    },
+    {
+      "manifest": "mutation_manifest.json",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.py"
+      ],
+      "returncode": 1,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.3214872498065233,
+      "source": "mutant_count_one_edge.py",
+      "source_sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+      "log": "mutant_count_one_edge.log",
+      "log_sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+      "name": "count_one_edge",
+      "old": "edge_mass = sp.simplify((zeta.H*Pedge*zeta)[0])",
+      "new": "edge_mass = sp.simplify((zeta.H*Pedge*zeta)[0])/2",
+      "intended_assertion": "two_edge_mass_and_longitudinal_coefficient",
+      "failed_at_intended_assertion": true
+    },
+    {
+      "manifest": "mutation_manifest.json",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.py"
+      ],
+      "returncode": 1,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.3299896251410246,
+      "source": "mutant_poisson_half_constant.py",
+      "source_sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+      "log": "mutant_poisson_half_constant.log",
+      "log_sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+      "name": "poisson_half_constant",
+      "old": "poisson_majorant = delta/(2*x)",
+      "new": "poisson_majorant = delta/(4*x)",
+      "intended_assertion": "poisson_bound_factor_two",
+      "failed_at_intended_assertion": true
+    },
+    {
+      "manifest": "mutation_manifest.json",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.py"
+      ],
+      "returncode": 1,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.30897795828059316,
+      "source": "mutant_mean_half_coefficient.py",
+      "source_sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+      "log": "mutant_mean_half_coefficient.log",
+      "log_sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+      "name": "mean_half_coefficient",
+      "old": "H_coefficient = 256*sp.sqrt(sp.pi*I0)",
+      "new": "H_coefficient = 128*sp.sqrt(sp.pi*I0)",
+      "intended_assertion": "mean_bound_optimizer_stationary",
+      "failed_at_intended_assertion": true
+    },
+    {
+      "manifest": "rate_mutation_manifest.json",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.py"
+      ],
+      "returncode": 1,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.30761508317664266,
+      "source": "rate_mutant_kernel_half_constant.py",
+      "source_sha256": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad",
+      "log": "rate_mutant_kernel_half_constant.log",
+      "log_sha256": "b0a319d3bc923ed1837429d5ab58bc4e9891eb360917fbf13e4b72165ce6ca80",
+      "name": "kernel_half_constant",
+      "old": "kernel_coefficient = sp.Integer(10)",
+      "new": "kernel_coefficient = sp.Integer(5)",
+      "intended_assertion": "kernel_L5over4_mass_exact",
+      "failed_at_intended_assertion": true
+    },
+    {
+      "manifest": "rate_mutation_manifest.json",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.py"
+      ],
+      "returncode": 1,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.6211733338423073,
+      "source": "rate_mutant_sinc_half_mean.py",
+      "source_sha256": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b",
+      "log": "rate_mutant_sinc_half_mean.log",
+      "log_sha256": "983c0d14afbb29ede5a2a3062dafe9234e9002ef3192a072448aa2e852c54ea4",
+      "name": "sinc_half_mean",
+      "old": "mean_from_sinc = 2*(h.subs(x,0)*sp.Si(2*duration)",
+      "new": "mean_from_sinc = 1*(h.subs(x,0)*sp.Si(2*duration)",
+      "intended_assertion": "one_sided_sinc_mean_has_correct_derivative_and_origin",
+      "failed_at_intended_assertion": true
+    },
+    {
+      "manifest": "rate_mutation_manifest.json",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.py"
+      ],
+      "returncode": 1,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.687716250307858,
+      "source": "rate_mutant_young_half_bound.py",
+      "source_sha256": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748",
+      "log": "rate_mutant_young_half_bound.log",
+      "log_sha256": "dddfd8528f33cd6fefe8f25aaed66e3582512e6b1d26a1ac8df4b084eadc584a",
+      "name": "young_half_bound",
+      "old": "young_rhs = rho_p_mass**(mp.mpf(6)/5)",
+      "new": "young_rhs = rho_p_mass**(mp.mpf(6)/5)/2",
+      "intended_assertion": "continuous_convolution_Young_bound",
+      "failed_at_intended_assertion": true
+    }
+  ],
+  "preserved_failure": {
+    "description": "Initial new rate helper failed to parse: one closing parenthesis missing. Only that parenthesis was changed; no mathematical assertion, constant or tolerance changed.",
+    "metadata_file": "rate_baseline_execution.json",
+    "original_source_at_execution": "rate_controls.py",
+    "preserved_source_path": "rate_controls_attempt1.py",
+    "initial_harness_copy": "run_rate_controls_attempt1.py",
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls.py"
+    ],
+    "returncode": 1,
+    "timeout_seconds": 120,
+    "elapsed_seconds": 0.023773625027388334,
+    "source_sha256": "5d556a9e02e3799cba52de5ab40b2b90b2deadc8cf9572b2a37f5e753dd70d9f",
+    "log": "rate_baseline.log",
+    "log_sha256": "f54d0b0808ae350102878e51ed2439313117a11152bd9ba73dc279a6e86f1a65"
+  },
+  "reading_and_check_coverage": {
+    "completed_source": "All 452 lines cold-read after composition.",
+    "original_evidence": "Both complete helper/harness sources, baseline log/metadata, all five exact mutation diffs, full failure logs and prior search read; literal substitutions and hashes verified mechanically. Original runs not replayed.",
+    "new_evidence": "Complete helper/harness sources, successful and failed logs, all three exact mutation diffs, full failure logs read; identities and syntax-only repair checked mechanically.",
+    "claim_evidence": "S4-S20 are an analytic supplied-model proof using frozen E20-E23. The 20 original controls and 15 new controls check exact finite algebra/scalar identities and an unrelated continuous comparator; they are not continuum torus certification.",
+    "floating_scope": "mpmath 50-digit comparisons; no rigorous floating or quadrature error certificate.",
+    "independence": "No source-bound independent review of this completed author composition. No Lean verification."
+  },
+  "open_obligations": [
+    "Independent review of this exact final source and inherited hypotheses.",
+    "Pointwise amplitude Fourier decay rate.",
+    "Weighted canonical-current long-time behavior.",
+    "Growing-time original-walk approximation and lambda-dependent free-band preparations; outside this bounded dispatch."
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+      "sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623",
+      "bytes": 20616,
+      "lines": 452
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.before_recovery.md",
+      "sha256": "fb10f2ffdf5bbfa9bff9fb944af1b721ff01baec52c16d34481043c80b53dc80",
+      "bytes": 2369,
+      "lines": 50
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.md",
+      "sha256": "66d63ab1ff53ae1612e9e200d6dc64d552118979ef148de6c482eefc6271c5de",
+      "bytes": 3105,
+      "lines": 55
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline.log",
+      "sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc",
+      "bytes": 1814,
+      "lines": 21
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline_execution.json",
+      "sha256": "499abe0dc5bd30b245543c102082fe16ef45a484aeb222c391a5f40594e458b6",
+      "bytes": 508,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/edge_controls.py",
+      "sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "bytes": 6595,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.log",
+      "sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+      "bytes": 1612,
+      "lines": 24
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.py",
+      "sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+      "bytes": 6597,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.log",
+      "sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+      "bytes": 985,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.py",
+      "sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+      "bytes": 6594,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.log",
+      "sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+      "bytes": 970,
+      "lines": 15
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.py",
+      "sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+      "bytes": 6583,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.log",
+      "sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+      "bytes": 1859,
+      "lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.py",
+      "sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+      "bytes": 6595,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.log",
+      "sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+      "bytes": 1762,
+      "lines": 24
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.py",
+      "sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+      "bytes": 6595,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutation_manifest.json",
+      "sha256": "9c74d6302eff4c6a2fce7f7d08f725a8e3a07d8547aa5c8448dc074251e6da80",
+      "bytes": 4141,
+      "lines": 92
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.json",
+      "sha256": "a7b864b8c8a2f9afd8a45339daf7993caab98f0e6b6201244b2f25f71c77deb2",
+      "bytes": 1679,
+      "lines": 37
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.log",
+      "sha256": "daaea132d3b5c5268fa2dd8021a7647e149f43052261284f7fd7286d95a69a41",
+      "bytes": 1060,
+      "lines": 6
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline.log",
+      "sha256": "f54d0b0808ae350102878e51ed2439313117a11152bd9ba73dc279a6e86f1a65",
+      "bytes": 223,
+      "lines": 4
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2.log",
+      "sha256": "f0df57a4bc61f78bb07d0b289a2e14a5e3020e241ac70e7ab16a734c40344cfc",
+      "bytes": 2540,
+      "lines": 16
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2_execution.json",
+      "sha256": "0a46db31548783c59ebc6122f55b63d7026797e5b3b09bb9632a98af265cc0c5",
+      "bytes": 520,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_execution.json",
+      "sha256": "6c3c0b0963a1e89709e115b73ea61c1e67cc2e05f6c570f90a8232000f6ad03e",
+      "bytes": 514,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls.py",
+      "sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+      "bytes": 6180,
+      "lines": 132
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls_attempt1.py",
+      "sha256": "5d556a9e02e3799cba52de5ab40b2b90b2deadc8cf9572b2a37f5e753dd70d9f",
+      "bytes": 6179,
+      "lines": 132
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.log",
+      "sha256": "b0a319d3bc923ed1837429d5ab58bc4e9891eb360917fbf13e4b72165ce6ca80",
+      "bytes": 927,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.py",
+      "sha256": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad",
+      "bytes": 6179,
+      "lines": 132
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.log",
+      "sha256": "983c0d14afbb29ede5a2a3062dafe9234e9002ef3192a072448aa2e852c54ea4",
+      "bytes": 1334,
+      "lines": 18
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.py",
+      "sha256": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b",
+      "bytes": 6180,
+      "lines": 132
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.log",
+      "sha256": "dddfd8528f33cd6fefe8f25aaed66e3582512e6b1d26a1ac8df4b084eadc584a",
+      "bytes": 1783,
+      "lines": 21
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.py",
+      "sha256": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748",
+      "bytes": 6182,
+      "lines": 132
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutation_manifest.json",
+      "sha256": "187813481e99521d1de7510d154ec6a1dcd2b33a9611c00e567fedc65a33ac85",
+      "bytes": 2520,
+      "lines": 56
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_initial_inventory.json",
+      "sha256": "e2fffa216e7034af0a8f904b395f5f15fd8d7147dd071c8785dde64c6faeb0de",
+      "bytes": 3101,
+      "lines": 78
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_statement_search.json",
+      "sha256": "abf412a25a690a12d339877ef47fb6efabe6f0a972a99a65a12bcf13c1115554",
+      "bytes": 1009,
+      "lines": 37
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_controls.py",
+      "sha256": "696be8c7d3b70e141c38056c4b5296328166edaf8291ac6cc9cb528006c8bdd7",
+      "bytes": 2624,
+      "lines": 58
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls.py",
+      "sha256": "2e96c388791ce4a8612192da60b83c3bc88532620765373c51a095953b5ca496",
+      "bytes": 2386,
+      "lines": 56
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls_attempt1.py",
+      "sha256": "bd030564c1f1397fa6d4d34f41eccbbed4f25ed8cb6fe94a14573e7053d9d080",
+      "bytes": 2368,
+      "lines": 56
+    }
+  ],
+  "receipt_verification_note": "This receipt excludes itself and the later receipt_verification.json to avoid circular hashes. That verification record binds this exact receipt hash."
+}

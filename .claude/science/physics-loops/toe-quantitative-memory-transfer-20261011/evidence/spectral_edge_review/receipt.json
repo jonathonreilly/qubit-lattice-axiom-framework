@@ -1,0 +1,426 @@
+{
+  "schema": "excluded-walk-spectral-edge-selective-review-v1",
+  "created_utc": "2026-10-11T20:45:40.297138+00:00",
+  "review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_REVIEW.md",
+    "sha256": "8a6741ea9ea890fb9fdece7a8c241fed537a1fe899dafe34f716f1211171bd40",
+    "bytes": 11836,
+    "lines": 191,
+    "coverage": "Complete final report cold-read before freeze."
+  },
+  "scope": "New S4-S21 conditional spectral-edge/inverse-moment/L5over3/mean-rate proof only. No formal audit or native-law authority.",
+  "disposition": {
+    "mathematical_repair_found": false,
+    "publication_scope_wording_repair": "Source lines446-450 and author receipt open_obligations should describe selected weighted/current joint-time claims as outside this note, not globally open. Frozen originals preserved.",
+    "later_original_walk_averaged_occupation_draft": "Not read; outside scope."
+  },
+  "source_inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+      "sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623",
+      "bytes": 20616,
+      "lines": 452,
+      "coverage": "All 452 lines newly read and S4-S21 reconstructed before author helpers."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222,
+      "lines": 500,
+      "coverage": "Earlier complete 500-line reading reused; E13-E26 refreshed in this review."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0",
+      "bytes": 17773,
+      "lines": 329,
+      "coverage": "Earlier complete 329-line reading reused at unchanged identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457,
+      "coverage": "Earlier complete 457-line reading reused; inherited source authorship disclosed."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549,
+      "coverage": "Earlier complete 549-line reading reused; inherited source authorship disclosed."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_WEIGHTED_MEMORY_PROBE.md",
+      "sha256": "10991ee05a61e3fcd2931b9cd90de007c2c2848771450db787e4634dcce3d324",
+      "bytes": 17059,
+      "lines": 339,
+      "coverage": "Earlier complete 339-line reading reused only for terminal scope wording."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "bytes": 11538,
+      "lines": 236,
+      "coverage": "Earlier complete 236-line reading reused only for terminal scope wording."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/receipt.json",
+      "sha256": "7a96b9213a8c0faf014f35e4e4bcbdecd54d688bdc6b829b57d189b97fd7bec6",
+      "bytes": 31763,
+      "lines": 659,
+      "coverage": "All 659 lines read; source identity records independently verified."
+    }
+  ],
+  "review_instructions": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27,
+      "coverage": "Rehashed; previous full reading reused."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245,
+      "coverage": "Rehashed; previous full reading reused."
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "lines": 230,
+      "coverage": "All 230 lines read for this review."
+    }
+  ],
+  "independence": {
+    "inherited_authorship": "Reviewer authored older long-time/degenerate work and composed prior sources; these premises are not independently recertified here.",
+    "root_contribution": "The L5over3/T^-4/5 candidate suggestion came from root before this review.",
+    "sequence": "Full new note read, then analytical reconstruction and distinct exact controls executed, then author receipt/helper/log inspection.",
+    "not_blind": "Author-source evidence paragraphs were visible before independent controls.",
+    "method_overlap": "Scalar kernel and fractional-power bookkeeping overlap necessarily; independent Hadamard compression, continuous gapless multiplier, and uniform-density comparators differ from author fixtures.",
+    "author_evidence_replay": false,
+    "new_analytic_claims": "None about the supplied model beyond checking the stated theorem; comparator counterexamples clarify domain/edge-mass distinctions."
+  },
+  "independent_execution": {
+    "argv": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/independent_controls.py"
+    ],
+    "timeout_seconds": 90,
+    "elapsed_seconds": 1.163351624738425,
+    "source_sha256": "7fe6580d565adf2d382e62ca3c5b8ba2e0667ae905f2d86223a78db934acb30e",
+    "exit_code": 0
+  },
+  "independent_control_count": 20,
+  "author_evidence_coverage": {
+    "complete_helpers": [
+      "edge_controls.py (161 lines)",
+      "rate_controls.py (132 lines)"
+    ],
+    "complete_harnesses": [
+      "run_controls.py (58 lines)",
+      "run_rate_controls.py (56 lines)"
+    ],
+    "mutants": "Each entire mutant reconstructed and verified byte-for-byte from its completely read base and one read literal substitution; all eight complete failure logs read.",
+    "syntax_failure": "Preserved attempt1 source reconstructed from complete current helper plus read exact one-parenthesis reverse delta; original four-line failure log and execution record read.",
+    "other_records": "Both mutation manifests, both checkpoints, all baseline records/logs, recovery/prior search records and inventory read.",
+    "literal_mutation_count": 8,
+    "identity_occurrences": 98,
+    "distinct_identity_paths_or_git_blobs": 57,
+    "identity_mismatches": [],
+    "floating_limit": "Author mpmath comparisons have no certified error enclosure; independent controls are exact symbolic comparisons."
+  },
+  "preservation": {
+    "author_directory_files_rechecked": 38,
+    "all_unchanged": true,
+    "files": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.before_recovery.md",
+        "sha256": "fb10f2ffdf5bbfa9bff9fb944af1b721ff01baec52c16d34481043c80b53dc80",
+        "bytes": 2369,
+        "lines": 50
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.md",
+        "sha256": "66d63ab1ff53ae1612e9e200d6dc64d552118979ef148de6c482eefc6271c5de",
+        "bytes": 3105,
+        "lines": 55
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline.log",
+        "sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc",
+        "bytes": 1814,
+        "lines": 21
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline_execution.json",
+        "sha256": "499abe0dc5bd30b245543c102082fe16ef45a484aeb222c391a5f40594e458b6",
+        "bytes": 508,
+        "lines": 13
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/edge_controls.py",
+        "sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+        "bytes": 6595,
+        "lines": 161
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.log",
+        "sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+        "bytes": 1612,
+        "lines": 24
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.py",
+        "sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+        "bytes": 6597,
+        "lines": 161
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.log",
+        "sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+        "bytes": 985,
+        "lines": 13
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.py",
+        "sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+        "bytes": 6594,
+        "lines": 161
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.log",
+        "sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+        "bytes": 970,
+        "lines": 15
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.py",
+        "sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+        "bytes": 6583,
+        "lines": 161
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.log",
+        "sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+        "bytes": 1859,
+        "lines": 26
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.py",
+        "sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+        "bytes": 6595,
+        "lines": 161
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.log",
+        "sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+        "bytes": 1762,
+        "lines": 24
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.py",
+        "sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+        "bytes": 6595,
+        "lines": 161
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutation_manifest.json",
+        "sha256": "9c74d6302eff4c6a2fce7f7d08f725a8e3a07d8547aa5c8448dc074251e6da80",
+        "bytes": 4141,
+        "lines": 92
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.json",
+        "sha256": "a7b864b8c8a2f9afd8a45339daf7993caab98f0e6b6201244b2f25f71c77deb2",
+        "bytes": 1679,
+        "lines": 37
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.log",
+        "sha256": "daaea132d3b5c5268fa2dd8021a7647e149f43052261284f7fd7286d95a69a41",
+        "bytes": 1060,
+        "lines": 6
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline.log",
+        "sha256": "f54d0b0808ae350102878e51ed2439313117a11152bd9ba73dc279a6e86f1a65",
+        "bytes": 223,
+        "lines": 4
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2.log",
+        "sha256": "f0df57a4bc61f78bb07d0b289a2e14a5e3020e241ac70e7ab16a734c40344cfc",
+        "bytes": 2540,
+        "lines": 16
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2_execution.json",
+        "sha256": "0a46db31548783c59ebc6122f55b63d7026797e5b3b09bb9632a98af265cc0c5",
+        "bytes": 520,
+        "lines": 13
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_execution.json",
+        "sha256": "6c3c0b0963a1e89709e115b73ea61c1e67cc2e05f6c570f90a8232000f6ad03e",
+        "bytes": 514,
+        "lines": 13
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls.py",
+        "sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+        "bytes": 6180,
+        "lines": 132
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls_attempt1.py",
+        "sha256": "5d556a9e02e3799cba52de5ab40b2b90b2deadc8cf9572b2a37f5e753dd70d9f",
+        "bytes": 6179,
+        "lines": 132
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.log",
+        "sha256": "b0a319d3bc923ed1837429d5ab58bc4e9891eb360917fbf13e4b72165ce6ca80",
+        "bytes": 927,
+        "lines": 13
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.py",
+        "sha256": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad",
+        "bytes": 6179,
+        "lines": 132
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.log",
+        "sha256": "983c0d14afbb29ede5a2a3062dafe9234e9002ef3192a072448aa2e852c54ea4",
+        "bytes": 1334,
+        "lines": 18
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.py",
+        "sha256": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b",
+        "bytes": 6180,
+        "lines": 132
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.log",
+        "sha256": "dddfd8528f33cd6fefe8f25aaed66e3582512e6b1d26a1ac8df4b084eadc584a",
+        "bytes": 1783,
+        "lines": 21
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.py",
+        "sha256": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748",
+        "bytes": 6182,
+        "lines": 132
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutation_manifest.json",
+        "sha256": "187813481e99521d1de7510d154ec6a1dcd2b33a9611c00e567fedc65a33ac85",
+        "bytes": 2520,
+        "lines": 56
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/receipt.json",
+        "sha256": "7a96b9213a8c0faf014f35e4e4bcbdecd54d688bdc6b829b57d189b97fd7bec6",
+        "bytes": 31763,
+        "lines": 659
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/receipt_verification.json",
+        "sha256": "29f717eca7d6a42c6c395c22b16882eb41688749286ebb9951ea7b287756ae20",
+        "bytes": 252,
+        "lines": 7
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_initial_inventory.json",
+        "sha256": "e2fffa216e7034af0a8f904b395f5f15fd8d7147dd071c8785dde64c6faeb0de",
+        "bytes": 3101,
+        "lines": 78
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_statement_search.json",
+        "sha256": "abf412a25a690a12d339877ef47fb6efabe6f0a972a99a65a12bcf13c1115554",
+        "bytes": 1009,
+        "lines": 37
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_controls.py",
+        "sha256": "696be8c7d3b70e141c38056c4b5296328166edaf8291ac6cc9cb528006c8bdd7",
+        "bytes": 2624,
+        "lines": 58
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls.py",
+        "sha256": "2e96c388791ce4a8612192da60b83c3bc88532620765373c51a095953b5ca496",
+        "bytes": 2386,
+        "lines": 56
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls_attempt1.py",
+        "sha256": "bd030564c1f1397fa6d4d34f41eccbbed4f25ed8cb6fe94a14573e7053d9d080",
+        "bytes": 2368,
+        "lines": 56
+      }
+    ],
+    "repo_edits": false,
+    "frozen_source_edits": false,
+    "editable_prompt_files_changed": [],
+    "network_calls": false,
+    "audit_or_PR_operations": false
+  },
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/CHECKPOINT.md",
+      "sha256": "074ca99bd880051b9074889aaf15e07da8d4911d4c81a7ef1401c82f0c5edc7d",
+      "bytes": 1473,
+      "lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/PRE_HELPER_RECONSTRUCTION.md",
+      "sha256": "afba71d956943673b620e9d69e00dffa95b4c53c69743ceda7fb88bdc00cfe4d",
+      "bytes": 5928,
+      "lines": 98
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/author_identity_verification.json",
+      "sha256": "ca6b135885f4a6309d5eb929aa714c6231e7e1b3fbc4005337fe4d3d7e098b88",
+      "bytes": 56198,
+      "lines": 1188
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/author_mutation_and_repair_diffs.txt",
+      "sha256": "c3fc5b024fc1b1109734ea1692eacb98c57de43c5448357e8afc74426b759d3c",
+      "bytes": 4879,
+      "lines": 112
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/independent_controls.py",
+      "sha256": "7fe6580d565adf2d382e62ca3c5b8ba2e0667ae905f2d86223a78db934acb30e",
+      "bytes": 4555,
+      "lines": 86
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/independent_controls_attempt1.log",
+      "sha256": "de98c048e0ea3ad369d75124270c20a73e78655feb75549d56d82e9f6a17c3a7",
+      "bytes": 1198,
+      "lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/independent_execution_attempt1.json",
+      "sha256": "c46eefa94078c2586071b5514da06d2d4cc7e9cb6683608517be34ce405cf5fc",
+      "bytes": 374,
+      "lines": 10
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge_review/verify_author_packet.py",
+      "sha256": "2a2ccc0cd63a391e9aaeec266be13045fc1c832181ac1204543f406969fdbbd1",
+      "bytes": 4596,
+      "lines": 83
+    }
+  ],
+  "receipt_note": "This receipt excludes itself to avoid circular hashing. Final response reports its SHA-256."
+}

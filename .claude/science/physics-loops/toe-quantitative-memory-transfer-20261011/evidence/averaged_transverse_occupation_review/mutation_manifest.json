@@ -1,0 +1,38 @@
+[
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_bare_envelope_weights.py"
+    ],
+    "returncode": 1,
+    "timeout_seconds": 120,
+    "elapsed_seconds": 0.49267937522381544,
+    "source": "mutant_bare_envelope_weights.py",
+    "source_sha256": "f84b5e08501a93b4335323a6300c5aae43d0352f36772a0c6b75d8f30ee89562",
+    "log": "mutant_bare_envelope_weights.log",
+    "log_sha256": "0b76c9a557482f48edec30ada6aa407aaa0c7a5f6ff97f56ff0c7d3f993f3015",
+    "name": "bare_envelope_weights",
+    "old": "weights_used = actual_weights",
+    "new": "weights_used = envelope_weights",
+    "intended_assertion": "direct_global_vector_matches_exact_normalization_weights",
+    "failed_at_intended_assertion": true
+  },
+  {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_missing_time_jacobian.py"
+    ],
+    "returncode": 1,
+    "timeout_seconds": 120,
+    "elapsed_seconds": 0.5675857081077993,
+    "source": "mutant_missing_time_jacobian.py",
+    "source_sha256": "7fcf76b98d4b17ec17ac2798704405102f5c6170f418f7fb166aa67ac4351c4f",
+    "log": "mutant_missing_time_jacobian.log",
+    "log_sha256": "24eea675cccfe8c67b3f47ada66bb771960a23147d6365b80b02ca3ebd087613",
+    "name": "missing_time_jacobian",
+    "old": "jacobian_used = sp.Integer(1)",
+    "new": "jacobian_used = delta",
+    "intended_assertion": "physical_time_integral_has_exact_jacobian_cancellation",
+    "failed_at_intended_assertion": true
+  }
+]

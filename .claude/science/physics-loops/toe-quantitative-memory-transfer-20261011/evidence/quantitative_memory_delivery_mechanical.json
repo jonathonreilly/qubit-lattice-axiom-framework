@@ -1,0 +1,32 @@
+{
+  "note_sha256": "69745b81cfbfb6676faa99e9e5491ddc94a8afdb97049802861a7b105bb711d9",
+  "primary_sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d",
+  "publication_reconstruction_exact": true,
+  "cache_fresh": true,
+  "ordinary_links": [
+    {
+      "source": "docs/EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md"
+    },
+    {
+      "source": "docs/EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md"
+    },
+    {
+      "source": "docs/EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md"
+    },
+    {
+      "source": "docs/EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/DELIVERY_CHECKS.md"
+    }
+  ],
+  "verified_frozen_evidence_copies": 145,
+  "citation_delta": {
+    "nodes": 1,
+    "edges": 3
+  },
+  "compatibility_failures": [],
+  "syntax": "ast.parse successful",
+  "scope": "Final mechanical evidence, not a new mathematical or retained-status audit."
+}

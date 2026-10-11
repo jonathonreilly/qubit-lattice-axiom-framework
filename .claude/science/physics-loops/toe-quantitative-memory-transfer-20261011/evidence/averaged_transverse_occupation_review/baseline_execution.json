@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/independent_packet_controls.py"
+  ],
+  "returncode": 0,
+  "timeout_seconds": 120,
+  "elapsed_seconds": 0.7320575420744717,
+  "source": "independent_packet_controls.py",
+  "source_sha256": "6f16fecb72f889104366cca4bed577d9425874549142c67a8624c248b00d5fb5",
+  "log": "baseline.log",
+  "log_sha256": "a8bdee0f00760783ef3d6c9d9a077fa5974d115eadb8e94825f5b0bc391acfed"
+}

@@ -1,0 +1,76 @@
+{
+  "scope": "Root original-walk averaged transverse-occupation composition; author evidence, not independent review. Spectral-edge independent review remains an open dependency.",
+  "records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md",
+      "sha256": "9729bbbfb26de3c7cf450b8eb81efea6fe2f3597b40289426cf6e9171de30c3d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+      "sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/baseline.log",
+      "sha256": "3019141ec6047073f14b89c202630e175151ec87cc72433fa5920c36e9579e0a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/baseline_execution.json",
+      "sha256": "a00369a66cf5fdb75875e9a6f0fcc4df73db782f9fc2c2a6b4cbe1275e18147d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_clock_power.log",
+      "sha256": "283e197706d4618ff3735a255e8c6236d03084bfb355841d55bc173ebd3ebc11"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_clock_power.py",
+      "sha256": "9b8be529a97016f7062ebf5896aa33d7f7cd37ba813ad688c13a837d0c563911"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_drop_global_normalization.log",
+      "sha256": "e349d247832b3f5a2d57f9ee2ccc6f0b224caa88e52ef92229eaa27c365bad94"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_drop_global_normalization.py",
+      "sha256": "202b7feca03635ae3e63c481767cb6e1a9daf918ac68cd11422d157574f48f03"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_probability_cross_half.log",
+      "sha256": "5d99db36022f9287f6f9a875bcd5d659ae43b7179eb7cce009fc0a5691911c46"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_probability_cross_half.py",
+      "sha256": "7b6ba75aafbbf707c0662927b2be154bb72f4217b56f24d81a778e97ac3c79fe"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutation_manifest.json",
+      "sha256": "189817211e566e44691e9e921786c19e27354629ae9ff0c024b63889ee486a02"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/occupation_controls.py",
+      "sha256": "a81f727a4d2f813e6c58515127fa9836179e24180f90c50224d42bc7368237a1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/run_mutations.py",
+      "sha256": "ad7ada163e589e5d81ea01509e463f7fea981f8b0365f17e89bc2102977666b4"
+    }
+  ],
+  "coverage": "Complete new A2-A9 argument and finite helper read. Exact earlier L/B/G premises reused, relevant full passages refreshed. New S4-S20 source read completely after authoring this conditional implication. Baseline and all three complete failure tracebacks read. All source replacements are literal and unique.",
+  "obligations": [
+    "Separate independent check of S20",
+    "Separate independent check of new A2-A9 composition"
+  ],
+  "publication_status": "External research only; not in the active current/memory milestone",
+  "editable_prompt_files_changed": []
+}

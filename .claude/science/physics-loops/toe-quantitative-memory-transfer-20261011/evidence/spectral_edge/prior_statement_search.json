@@ -1,0 +1,37 @@
+{
+  "local_ref": "origin/main",
+  "commit": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "scope": "Read-only limited matching walk/exclusion notes on the identified local origin/main; no fetch and no global or remote novelty claim. The explicit unquantified edge obligation in frozen E25-E26 is the research target.",
+  "commands": [
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(spectral.?edge|edge.?mass|endpoint.{0,30}mass|rank.one.{0,30}domina|inverse.{0,30}form)",
+        "origin/main",
+        "--",
+        "docs/*EXCLUDED*",
+        "docs/*WALK*"
+      ],
+      "returncode": 0,
+      "output": "origin/main:docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md:50:Supply K>0, alpha>0, wbar>0 and real beta. T1 uses the inverse kinetic form and excludes alpha+3beta=0; it does not analyze the additional constraints at that singular ratio. T1 refers only to the bracket of the linear spatial constraint with the quadratic kinetic term at h=0; higher strain orders of a nonlinear constraint are absent. T2\u2013T4 concern nonzero real symbol momentum p. At p=0 the multiplier instead requires e0=0; no finite torus with unbalanced positive mean source is constructed.\n"
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-iE",
+        "(12I0|12 I0|24I0|24 I0|spectral edge term)",
+        "origin/main",
+        "--",
+        "docs/*EXCLUDED*",
+        "docs/*WALK*"
+      ],
+      "returncode": 1,
+      "output": ""
+    }
+  ]
+}

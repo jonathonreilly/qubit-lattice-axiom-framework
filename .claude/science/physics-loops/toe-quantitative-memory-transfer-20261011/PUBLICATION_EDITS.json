@@ -1,0 +1,17 @@
+{
+  "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_NOTE.md",
+  "source_sha256": "284686962fe4cce3c59a93b89a9fc33776ffa2310dbc9c8e9c1e8bda809d049e",
+  "edits": [
+    {
+      "before": "next_trace_action: \"Independently check this exact publication composition and its preserved source premises before any retained-status decision.\"",
+      "after": "next_trace_action: \"Use the explicit occupation estimate in further supplied-model current and many-body tests; retain separate independent audit before effective retained status.\""
+    },
+    {
+      "before": "Current surface status: conditional-support. This is an external publication\ncandidate for a separate follow-on milestone. The exact edge and occupation\nsource arguments have received the selective mathematical checks identified\nbelow. This combined note has not received final publication review or an\nindependent retained-status audit. It changes no status of the prior milestone.",
+      "after": "Current surface status: conditional-support. The exact edge and occupation\nsource arguments have received the selective mathematical checks identified\nbelow. The complete combined note also received a scoped composition check;\nroot authored the occupation source and does not independently recertify it.\nThe distinct source reviews supply that coverage. Final source and delivery\nchecks are recorded below. No independent retained-status audit is claimed."
+    }
+  ],
+  "appended_text": "\n## Publication evidence and complete parent dependency\n\nThe [delivery record](../.claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/DELIVERY_CHECKS.md)\nbinds the complete root composition check, distinct source reviews, exact\npublication edits, canonical cache and actual primary-source mutations.\nThe historical edge and occupation notes, negative controls and failed\nattempts remain preserved losslessly; a source replay is not a new proof.\n\nThe complete parent is regular PR #9481 at\nd8480b5a6e04102ff076b3dd6f817a2d43f20252, including its parent #9479.\nParent-first or cumulative review from main\na13caa4885f547c8d206265b031ba7649e539fd9 is required before landing.\nFlux/form #9480 and stochastic transport #9478 are not premises.\n",
+  "publication_sha256": "69745b81cfbfb6676faa99e9e5491ddc94a8afdb97049802861a7b105bb711d9",
+  "scope": "Next action, accurate review-status prose and delivery/parent footer; no mathematical source change."
+}

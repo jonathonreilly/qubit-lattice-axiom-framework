@@ -1,0 +1,1188 @@
+{
+  "created_utc": "2026-10-11T20:42:42.241056+00:00",
+  "scope": "Identity/literal-mutation verification, not independent scientific proof or execution replay.",
+  "author_receipt_sha256": "7a96b9213a8c0faf014f35e4e4bcbdecd54d688bdc6b829b57d189b97fd7bec6",
+  "records_checked": 98,
+  "unique_sources_checked": 57,
+  "mismatches": [],
+  "records": [
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623",
+      "actual_sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623",
+      "bytes": 20616,
+      "lines": 452,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "actual_sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222,
+      "lines": 500,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0",
+      "actual_sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0",
+      "bytes": 17773,
+      "lines": 329,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "actual_sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "actual_sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623",
+      "actual_sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623",
+      "bytes": 20616,
+      "lines": 452,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.before_recovery.md",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "fb10f2ffdf5bbfa9bff9fb944af1b721ff01baec52c16d34481043c80b53dc80",
+      "actual_sha256": "fb10f2ffdf5bbfa9bff9fb944af1b721ff01baec52c16d34481043c80b53dc80",
+      "bytes": 2369,
+      "lines": 50,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.md",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "66d63ab1ff53ae1612e9e200d6dc64d552118979ef148de6c482eefc6271c5de",
+      "actual_sha256": "66d63ab1ff53ae1612e9e200d6dc64d552118979ef148de6c482eefc6271c5de",
+      "bytes": 3105,
+      "lines": 55,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc",
+      "actual_sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc",
+      "bytes": 1814,
+      "lines": 21,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline_execution.json",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "499abe0dc5bd30b245543c102082fe16ef45a484aeb222c391a5f40594e458b6",
+      "actual_sha256": "499abe0dc5bd30b245543c102082fe16ef45a484aeb222c391a5f40594e458b6",
+      "bytes": 508,
+      "lines": 13,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/edge_controls.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "actual_sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "bytes": 6595,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+      "actual_sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+      "bytes": 1612,
+      "lines": 24,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+      "actual_sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+      "bytes": 6597,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+      "actual_sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+      "bytes": 985,
+      "lines": 13,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+      "actual_sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+      "bytes": 6594,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+      "actual_sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+      "bytes": 970,
+      "lines": 15,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+      "actual_sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+      "bytes": 6583,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+      "actual_sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+      "bytes": 1859,
+      "lines": 26,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+      "actual_sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+      "bytes": 6595,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+      "actual_sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+      "bytes": 1762,
+      "lines": 24,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+      "actual_sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+      "bytes": 6595,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutation_manifest.json",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "9c74d6302eff4c6a2fce7f7d08f725a8e3a07d8547aa5c8448dc074251e6da80",
+      "actual_sha256": "9c74d6302eff4c6a2fce7f7d08f725a8e3a07d8547aa5c8448dc074251e6da80",
+      "bytes": 4141,
+      "lines": 92,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.json",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "a7b864b8c8a2f9afd8a45339daf7993caab98f0e6b6201244b2f25f71c77deb2",
+      "actual_sha256": "a7b864b8c8a2f9afd8a45339daf7993caab98f0e6b6201244b2f25f71c77deb2",
+      "bytes": 1679,
+      "lines": 37,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "daaea132d3b5c5268fa2dd8021a7647e149f43052261284f7fd7286d95a69a41",
+      "actual_sha256": "daaea132d3b5c5268fa2dd8021a7647e149f43052261284f7fd7286d95a69a41",
+      "bytes": 1060,
+      "lines": 6,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "f54d0b0808ae350102878e51ed2439313117a11152bd9ba73dc279a6e86f1a65",
+      "actual_sha256": "f54d0b0808ae350102878e51ed2439313117a11152bd9ba73dc279a6e86f1a65",
+      "bytes": 223,
+      "lines": 4,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "f0df57a4bc61f78bb07d0b289a2e14a5e3020e241ac70e7ab16a734c40344cfc",
+      "actual_sha256": "f0df57a4bc61f78bb07d0b289a2e14a5e3020e241ac70e7ab16a734c40344cfc",
+      "bytes": 2540,
+      "lines": 16,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2_execution.json",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "0a46db31548783c59ebc6122f55b63d7026797e5b3b09bb9632a98af265cc0c5",
+      "actual_sha256": "0a46db31548783c59ebc6122f55b63d7026797e5b3b09bb9632a98af265cc0c5",
+      "bytes": 520,
+      "lines": 13,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_execution.json",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "6c3c0b0963a1e89709e115b73ea61c1e67cc2e05f6c570f90a8232000f6ad03e",
+      "actual_sha256": "6c3c0b0963a1e89709e115b73ea61c1e67cc2e05f6c570f90a8232000f6ad03e",
+      "bytes": 514,
+      "lines": 13,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+      "actual_sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+      "bytes": 6180,
+      "lines": 132,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls_attempt1.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "5d556a9e02e3799cba52de5ab40b2b90b2deadc8cf9572b2a37f5e753dd70d9f",
+      "actual_sha256": "5d556a9e02e3799cba52de5ab40b2b90b2deadc8cf9572b2a37f5e753dd70d9f",
+      "bytes": 6179,
+      "lines": 132,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "b0a319d3bc923ed1837429d5ab58bc4e9891eb360917fbf13e4b72165ce6ca80",
+      "actual_sha256": "b0a319d3bc923ed1837429d5ab58bc4e9891eb360917fbf13e4b72165ce6ca80",
+      "bytes": 927,
+      "lines": 13,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad",
+      "actual_sha256": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad",
+      "bytes": 6179,
+      "lines": 132,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "983c0d14afbb29ede5a2a3062dafe9234e9002ef3192a072448aa2e852c54ea4",
+      "actual_sha256": "983c0d14afbb29ede5a2a3062dafe9234e9002ef3192a072448aa2e852c54ea4",
+      "bytes": 1334,
+      "lines": 18,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b",
+      "actual_sha256": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b",
+      "bytes": 6180,
+      "lines": 132,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.log",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "dddfd8528f33cd6fefe8f25aaed66e3582512e6b1d26a1ac8df4b084eadc584a",
+      "actual_sha256": "dddfd8528f33cd6fefe8f25aaed66e3582512e6b1d26a1ac8df4b084eadc584a",
+      "bytes": 1783,
+      "lines": 21,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748",
+      "actual_sha256": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748",
+      "bytes": 6182,
+      "lines": 132,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutation_manifest.json",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "187813481e99521d1de7510d154ec6a1dcd2b33a9611c00e567fedc65a33ac85",
+      "actual_sha256": "187813481e99521d1de7510d154ec6a1dcd2b33a9611c00e567fedc65a33ac85",
+      "bytes": 2520,
+      "lines": 56,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_initial_inventory.json",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "e2fffa216e7034af0a8f904b395f5f15fd8d7147dd071c8785dde64c6faeb0de",
+      "actual_sha256": "e2fffa216e7034af0a8f904b395f5f15fd8d7147dd071c8785dde64c6faeb0de",
+      "bytes": 3101,
+      "lines": 78,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_statement_search.json",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "abf412a25a690a12d339877ef47fb6efabe6f0a972a99a65a12bcf13c1115554",
+      "actual_sha256": "abf412a25a690a12d339877ef47fb6efabe6f0a972a99a65a12bcf13c1115554",
+      "bytes": 1009,
+      "lines": 37,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_controls.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "696be8c7d3b70e141c38056c4b5296328166edaf8291ac6cc9cb528006c8bdd7",
+      "actual_sha256": "696be8c7d3b70e141c38056c4b5296328166edaf8291ac6cc9cb528006c8bdd7",
+      "bytes": 2624,
+      "lines": 58,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "2e96c388791ce4a8612192da60b83c3bc88532620765373c51a095953b5ca496",
+      "actual_sha256": "2e96c388791ce4a8612192da60b83c3bc88532620765373c51a095953b5ca496",
+      "bytes": 2386,
+      "lines": 56,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls_attempt1.py",
+      "role": "author-listed source/artifact",
+      "expected_sha256": "bd030564c1f1397fa6d4d34f41eccbbed4f25ed8cb6fe94a14573e7053d9d080",
+      "actual_sha256": "bd030564c1f1397fa6d4d34f41eccbbed4f25ed8cb6fe94a14573e7053d9d080",
+      "bytes": 2368,
+      "lines": 56,
+      "matches": true
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:AGENTS.md",
+      "role": "author instruction identity only",
+      "expected_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "actual_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27,
+      "matches": true
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "role": "author instruction identity only",
+      "expected_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "actual_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245,
+      "matches": true
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "role": "author instruction identity only",
+      "expected_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "actual_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35,
+      "matches": true
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "role": "author instruction identity only",
+      "expected_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "actual_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "lines": 130,
+      "matches": true
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/audit/data/axiom_premise_nodes.json",
+      "role": "author instruction identity only",
+      "expected_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "actual_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "lines": 52,
+      "matches": true
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "role": "author instruction identity only",
+      "expected_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "actual_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "lines": 140,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md",
+      "role": "installed author instruction identity only",
+      "expected_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "actual_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "lines": 140,
+      "matches": true
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "role": "author instruction identity only",
+      "expected_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "actual_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "lines": 434,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/.codex/skills/physics-loop/references/DISCOVERY.md",
+      "role": "installed author instruction identity only",
+      "expected_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "actual_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "lines": 434,
+      "matches": true
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "role": "author instruction identity only",
+      "expected_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "actual_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "lines": 336,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md",
+      "role": "installed author instruction identity only",
+      "expected_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "actual_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "lines": 336,
+      "matches": true
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "role": "author instruction identity only",
+      "expected_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "actual_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "lines": 309,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md",
+      "role": "installed author instruction identity only",
+      "expected_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "actual_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "lines": 309,
+      "matches": true
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+      "role": "author instruction identity only",
+      "expected_sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "actual_sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "bytes": 3253,
+      "lines": 67,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/.codex/skills/ai-physics-lane-builder/SKILL.md",
+      "role": "installed author instruction identity only",
+      "expected_sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "actual_sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "bytes": 3253,
+      "lines": 67,
+      "matches": true
+    },
+    {
+      "source": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39:AGENTS.md",
+      "role": "author instruction identity only",
+      "expected_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "actual_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "bytes": 11558,
+      "lines": 183,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.before_recovery.md",
+      "role": "preserved original",
+      "expected_sha256": "fb10f2ffdf5bbfa9bff9fb944af1b721ff01baec52c16d34481043c80b53dc80",
+      "actual_sha256": "fb10f2ffdf5bbfa9bff9fb944af1b721ff01baec52c16d34481043c80b53dc80",
+      "bytes": 2369,
+      "lines": 50,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline.log",
+      "role": "preserved original",
+      "expected_sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc",
+      "actual_sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc",
+      "bytes": 1814,
+      "lines": 21,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline_execution.json",
+      "role": "preserved original",
+      "expected_sha256": "499abe0dc5bd30b245543c102082fe16ef45a484aeb222c391a5f40594e458b6",
+      "actual_sha256": "499abe0dc5bd30b245543c102082fe16ef45a484aeb222c391a5f40594e458b6",
+      "bytes": 508,
+      "lines": 13,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/edge_controls.py",
+      "role": "preserved original",
+      "expected_sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "actual_sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "bytes": 6595,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.log",
+      "role": "preserved original",
+      "expected_sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+      "actual_sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+      "bytes": 1612,
+      "lines": 24,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.py",
+      "role": "preserved original",
+      "expected_sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+      "actual_sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+      "bytes": 6597,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.log",
+      "role": "preserved original",
+      "expected_sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+      "actual_sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+      "bytes": 985,
+      "lines": 13,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.py",
+      "role": "preserved original",
+      "expected_sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+      "actual_sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+      "bytes": 6594,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.log",
+      "role": "preserved original",
+      "expected_sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+      "actual_sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+      "bytes": 970,
+      "lines": 15,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.py",
+      "role": "preserved original",
+      "expected_sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+      "actual_sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+      "bytes": 6583,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.log",
+      "role": "preserved original",
+      "expected_sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+      "actual_sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+      "bytes": 1859,
+      "lines": 26,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.py",
+      "role": "preserved original",
+      "expected_sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+      "actual_sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+      "bytes": 6595,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.log",
+      "role": "preserved original",
+      "expected_sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+      "actual_sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+      "bytes": 1762,
+      "lines": 24,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.py",
+      "role": "preserved original",
+      "expected_sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+      "actual_sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+      "bytes": 6595,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutation_manifest.json",
+      "role": "preserved original",
+      "expected_sha256": "9c74d6302eff4c6a2fce7f7d08f725a8e3a07d8547aa5c8448dc074251e6da80",
+      "actual_sha256": "9c74d6302eff4c6a2fce7f7d08f725a8e3a07d8547aa5c8448dc074251e6da80",
+      "bytes": 4141,
+      "lines": 92,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.json",
+      "role": "preserved original",
+      "expected_sha256": "a7b864b8c8a2f9afd8a45339daf7993caab98f0e6b6201244b2f25f71c77deb2",
+      "actual_sha256": "a7b864b8c8a2f9afd8a45339daf7993caab98f0e6b6201244b2f25f71c77deb2",
+      "bytes": 1679,
+      "lines": 37,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.log",
+      "role": "preserved original",
+      "expected_sha256": "daaea132d3b5c5268fa2dd8021a7647e149f43052261284f7fd7286d95a69a41",
+      "actual_sha256": "daaea132d3b5c5268fa2dd8021a7647e149f43052261284f7fd7286d95a69a41",
+      "bytes": 1060,
+      "lines": 6,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_controls.py",
+      "role": "preserved original",
+      "expected_sha256": "696be8c7d3b70e141c38056c4b5296328166edaf8291ac6cc9cb528006c8bdd7",
+      "actual_sha256": "696be8c7d3b70e141c38056c4b5296328166edaf8291ac6cc9cb528006c8bdd7",
+      "bytes": 2624,
+      "lines": 58,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/edge_controls.py",
+      "role": "execution source",
+      "expected_sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "actual_sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "bytes": 6595,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline.log",
+      "role": "execution log",
+      "expected_sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc",
+      "actual_sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc",
+      "bytes": 1814,
+      "lines": 21,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls.py",
+      "role": "execution source",
+      "expected_sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+      "actual_sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+      "bytes": 6180,
+      "lines": 132,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2.log",
+      "role": "execution log",
+      "expected_sha256": "f0df57a4bc61f78bb07d0b289a2e14a5e3020e241ac70e7ab16a734c40344cfc",
+      "actual_sha256": "f0df57a4bc61f78bb07d0b289a2e14a5e3020e241ac70e7ab16a734c40344cfc",
+      "bytes": 2540,
+      "lines": 16,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.py",
+      "role": "execution source",
+      "expected_sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+      "actual_sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+      "bytes": 6583,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.log",
+      "role": "execution log",
+      "expected_sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+      "actual_sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+      "bytes": 970,
+      "lines": 15,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.py",
+      "role": "execution source",
+      "expected_sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+      "actual_sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+      "bytes": 6594,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.log",
+      "role": "execution log",
+      "expected_sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+      "actual_sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+      "bytes": 985,
+      "lines": 13,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.py",
+      "role": "execution source",
+      "expected_sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+      "actual_sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+      "bytes": 6597,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.log",
+      "role": "execution log",
+      "expected_sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+      "actual_sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+      "bytes": 1612,
+      "lines": 24,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.py",
+      "role": "execution source",
+      "expected_sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+      "actual_sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+      "bytes": 6595,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.log",
+      "role": "execution log",
+      "expected_sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+      "actual_sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+      "bytes": 1762,
+      "lines": 24,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.py",
+      "role": "execution source",
+      "expected_sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+      "actual_sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+      "bytes": 6595,
+      "lines": 161,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.log",
+      "role": "execution log",
+      "expected_sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+      "actual_sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+      "bytes": 1859,
+      "lines": 26,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.py",
+      "role": "execution source",
+      "expected_sha256": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad",
+      "actual_sha256": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad",
+      "bytes": 6179,
+      "lines": 132,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.log",
+      "role": "execution log",
+      "expected_sha256": "b0a319d3bc923ed1837429d5ab58bc4e9891eb360917fbf13e4b72165ce6ca80",
+      "actual_sha256": "b0a319d3bc923ed1837429d5ab58bc4e9891eb360917fbf13e4b72165ce6ca80",
+      "bytes": 927,
+      "lines": 13,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.py",
+      "role": "execution source",
+      "expected_sha256": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b",
+      "actual_sha256": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b",
+      "bytes": 6180,
+      "lines": 132,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.log",
+      "role": "execution log",
+      "expected_sha256": "983c0d14afbb29ede5a2a3062dafe9234e9002ef3192a072448aa2e852c54ea4",
+      "actual_sha256": "983c0d14afbb29ede5a2a3062dafe9234e9002ef3192a072448aa2e852c54ea4",
+      "bytes": 1334,
+      "lines": 18,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.py",
+      "role": "execution source",
+      "expected_sha256": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748",
+      "actual_sha256": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748",
+      "bytes": 6182,
+      "lines": 132,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.log",
+      "role": "execution log",
+      "expected_sha256": "dddfd8528f33cd6fefe8f25aaed66e3582512e6b1d26a1ac8df4b084eadc584a",
+      "actual_sha256": "dddfd8528f33cd6fefe8f25aaed66e3582512e6b1d26a1ac8df4b084eadc584a",
+      "bytes": 1783,
+      "lines": 21,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls_attempt1.py",
+      "role": "preserved syntax-failure source",
+      "expected_sha256": "5d556a9e02e3799cba52de5ab40b2b90b2deadc8cf9572b2a37f5e753dd70d9f",
+      "actual_sha256": "5d556a9e02e3799cba52de5ab40b2b90b2deadc8cf9572b2a37f5e753dd70d9f",
+      "bytes": 6179,
+      "lines": 132,
+      "matches": true
+    },
+    {
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline.log",
+      "role": "preserved syntax-failure log",
+      "expected_sha256": "f54d0b0808ae350102878e51ed2439313117a11152bd9ba73dc279a6e86f1a65",
+      "actual_sha256": "f54d0b0808ae350102878e51ed2439313117a11152bd9ba73dc279a6e86f1a65",
+      "bytes": 223,
+      "lines": 4,
+      "matches": true
+    }
+  ],
+  "literal_mutations": [
+    {
+      "source": "mutant_drop_compression_defect.py",
+      "base": "edge_controls.py",
+      "whole_file_exact_single_substitution": true,
+      "recorded_returncode": 1,
+      "full_log_ends_at_intended_assertion": true,
+      "intended_assertion": "compression_square_keeps_positive_defect"
+    },
+    {
+      "source": "mutant_double_dressing_coefficient.py",
+      "base": "edge_controls.py",
+      "whole_file_exact_single_substitution": true,
+      "recorded_returncode": 1,
+      "full_log_ends_at_intended_assertion": true,
+      "intended_assertion": "exact_cubic_dressing_coefficient"
+    },
+    {
+      "source": "mutant_count_one_edge.py",
+      "base": "edge_controls.py",
+      "whole_file_exact_single_substitution": true,
+      "recorded_returncode": 1,
+      "full_log_ends_at_intended_assertion": true,
+      "intended_assertion": "two_edge_mass_and_longitudinal_coefficient"
+    },
+    {
+      "source": "mutant_poisson_half_constant.py",
+      "base": "edge_controls.py",
+      "whole_file_exact_single_substitution": true,
+      "recorded_returncode": 1,
+      "full_log_ends_at_intended_assertion": true,
+      "intended_assertion": "poisson_bound_factor_two"
+    },
+    {
+      "source": "mutant_mean_half_coefficient.py",
+      "base": "edge_controls.py",
+      "whole_file_exact_single_substitution": true,
+      "recorded_returncode": 1,
+      "full_log_ends_at_intended_assertion": true,
+      "intended_assertion": "mean_bound_optimizer_stationary"
+    },
+    {
+      "source": "rate_mutant_kernel_half_constant.py",
+      "base": "rate_controls.py",
+      "whole_file_exact_single_substitution": true,
+      "recorded_returncode": 1,
+      "full_log_ends_at_intended_assertion": true,
+      "intended_assertion": "kernel_L5over4_mass_exact"
+    },
+    {
+      "source": "rate_mutant_sinc_half_mean.py",
+      "base": "rate_controls.py",
+      "whole_file_exact_single_substitution": true,
+      "recorded_returncode": 1,
+      "full_log_ends_at_intended_assertion": true,
+      "intended_assertion": "one_sided_sinc_mean_has_correct_derivative_and_origin"
+    },
+    {
+      "source": "rate_mutant_young_half_bound.py",
+      "base": "rate_controls.py",
+      "whole_file_exact_single_substitution": true,
+      "recorded_returncode": 1,
+      "full_log_ends_at_intended_assertion": true,
+      "intended_assertion": "continuous_convolution_Young_bound"
+    }
+  ],
+  "frozen_author_directory_inventory": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.before_recovery.md",
+      "sha256": "fb10f2ffdf5bbfa9bff9fb944af1b721ff01baec52c16d34481043c80b53dc80",
+      "bytes": 2369,
+      "lines": 50
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/CHECKPOINT.md",
+      "sha256": "66d63ab1ff53ae1612e9e200d6dc64d552118979ef148de6c482eefc6271c5de",
+      "bytes": 3105,
+      "lines": 55
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline.log",
+      "sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc",
+      "bytes": 1814,
+      "lines": 21
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/baseline_execution.json",
+      "sha256": "499abe0dc5bd30b245543c102082fe16ef45a484aeb222c391a5f40594e458b6",
+      "bytes": 508,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/edge_controls.py",
+      "sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "bytes": 6595,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.log",
+      "sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb",
+      "bytes": 1612,
+      "lines": 24
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_count_one_edge.py",
+      "sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417",
+      "bytes": 6597,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.log",
+      "sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea",
+      "bytes": 985,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_double_dressing_coefficient.py",
+      "sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c",
+      "bytes": 6594,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.log",
+      "sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9",
+      "bytes": 970,
+      "lines": 15
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_drop_compression_defect.py",
+      "sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac",
+      "bytes": 6583,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.log",
+      "sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200",
+      "bytes": 1859,
+      "lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_mean_half_coefficient.py",
+      "sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502",
+      "bytes": 6595,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.log",
+      "sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2",
+      "bytes": 1762,
+      "lines": 24
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutant_poisson_half_constant.py",
+      "sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c",
+      "bytes": 6595,
+      "lines": 161
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/mutation_manifest.json",
+      "sha256": "9c74d6302eff4c6a2fce7f7d08f725a8e3a07d8547aa5c8448dc074251e6da80",
+      "bytes": 4141,
+      "lines": 92
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.json",
+      "sha256": "a7b864b8c8a2f9afd8a45339daf7993caab98f0e6b6201244b2f25f71c77deb2",
+      "bytes": 1679,
+      "lines": 37
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/prior_statement_search.log",
+      "sha256": "daaea132d3b5c5268fa2dd8021a7647e149f43052261284f7fd7286d95a69a41",
+      "bytes": 1060,
+      "lines": 6
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline.log",
+      "sha256": "f54d0b0808ae350102878e51ed2439313117a11152bd9ba73dc279a6e86f1a65",
+      "bytes": 223,
+      "lines": 4
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2.log",
+      "sha256": "f0df57a4bc61f78bb07d0b289a2e14a5e3020e241ac70e7ab16a734c40344cfc",
+      "bytes": 2540,
+      "lines": 16
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_attempt2_execution.json",
+      "sha256": "0a46db31548783c59ebc6122f55b63d7026797e5b3b09bb9632a98af265cc0c5",
+      "bytes": 520,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_baseline_execution.json",
+      "sha256": "6c3c0b0963a1e89709e115b73ea61c1e67cc2e05f6c570f90a8232000f6ad03e",
+      "bytes": 514,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls.py",
+      "sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+      "bytes": 6180,
+      "lines": 132
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls_attempt1.py",
+      "sha256": "5d556a9e02e3799cba52de5ab40b2b90b2deadc8cf9572b2a37f5e753dd70d9f",
+      "bytes": 6179,
+      "lines": 132
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.log",
+      "sha256": "b0a319d3bc923ed1837429d5ab58bc4e9891eb360917fbf13e4b72165ce6ca80",
+      "bytes": 927,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_kernel_half_constant.py",
+      "sha256": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad",
+      "bytes": 6179,
+      "lines": 132
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.log",
+      "sha256": "983c0d14afbb29ede5a2a3062dafe9234e9002ef3192a072448aa2e852c54ea4",
+      "bytes": 1334,
+      "lines": 18
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_sinc_half_mean.py",
+      "sha256": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b",
+      "bytes": 6180,
+      "lines": 132
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.log",
+      "sha256": "dddfd8528f33cd6fefe8f25aaed66e3582512e6b1d26a1ac8df4b084eadc584a",
+      "bytes": 1783,
+      "lines": 21
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutant_young_half_bound.py",
+      "sha256": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748",
+      "bytes": 6182,
+      "lines": 132
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_mutation_manifest.json",
+      "sha256": "187813481e99521d1de7510d154ec6a1dcd2b33a9611c00e567fedc65a33ac85",
+      "bytes": 2520,
+      "lines": 56
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/receipt.json",
+      "sha256": "7a96b9213a8c0faf014f35e4e4bcbdecd54d688bdc6b829b57d189b97fd7bec6",
+      "bytes": 31763,
+      "lines": 659
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/receipt_verification.json",
+      "sha256": "29f717eca7d6a42c6c395c22b16882eb41688749286ebb9951ea7b287756ae20",
+      "bytes": 252,
+      "lines": 7
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_initial_inventory.json",
+      "sha256": "e2fffa216e7034af0a8f904b395f5f15fd8d7147dd071c8785dde64c6faeb0de",
+      "bytes": 3101,
+      "lines": 78
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/recovery_statement_search.json",
+      "sha256": "abf412a25a690a12d339877ef47fb6efabe6f0a972a99a65a12bcf13c1115554",
+      "bytes": 1009,
+      "lines": 37
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_controls.py",
+      "sha256": "696be8c7d3b70e141c38056c4b5296328166edaf8291ac6cc9cb528006c8bdd7",
+      "bytes": 2624,
+      "lines": 58
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls.py",
+      "sha256": "2e96c388791ce4a8612192da60b83c3bc88532620765373c51a095953b5ca496",
+      "bytes": 2386,
+      "lines": 56
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/run_rate_controls_attempt1.py",
+      "sha256": "bd030564c1f1397fa6d4d34f41eccbbed4f25ed8cb6fe94a14573e7053d9d080",
+      "bytes": 2368,
+      "lines": 56
+    }
+  ]
+}

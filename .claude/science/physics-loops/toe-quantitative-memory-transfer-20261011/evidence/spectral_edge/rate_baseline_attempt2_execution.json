@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls.py"
+  ],
+  "returncode": 0,
+  "timeout_seconds": 120,
+  "elapsed_seconds": 0.990037958137691,
+  "source": "rate_controls.py",
+  "source_sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+  "log": "rate_baseline_attempt2.log",
+  "log_sha256": "f0df57a4bc61f78bb07d0b289a2e14a5e3020e241ac70e7ab16a734c40344cfc"
+}

@@ -1,0 +1,780 @@
+{
+  "scope": "Final publication bytes, excluding this identity file itself.",
+  "base_revision": "d8480b5a6e04102ff076b3dd6f817a2d43f20252",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/APPROACH_REGISTRY.md",
+      "sha256": "c3c0365cf2025e44b934a0defcf97820f9eb4227e49d427b12c88d2f36733365"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/ARTIFACT_PLAN.md",
+      "sha256": "ee46752cedf72b3cdc586fa999c717a3c315e1cc2766e52dfe3da6f7a624b63c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "217c06da53034c46830f3f2fed1de19a704a00eb56e5b6226425d280882872ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "d4688ca4d32befbcccc608cc03b29602ab8ca0fdabce809ade1dcf817d6e08d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/DELIVERY_CHECKS.md",
+      "sha256": "937f3733f2826a44ab0d7c203b5d48b8666a46778c9d9c23c2dfa63740b6f5e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/EVIDENCE_MAP.json",
+      "sha256": "bcebd77fc39ca00d9e9197386ff3e8799562e267cf4dcdd699a62a12240b124b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/GOAL.md",
+      "sha256": "9839c54a917bfabc9537d74f6806545685d76168aa0d5b6fede70f73e5c19f2b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/HANDOFF.md",
+      "sha256": "b30903734678ad61936e9cfc2ffd845d3716ce1be90aec6c07c0ec28bfa3bd60"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/LITERATURE_BRIDGES.md",
+      "sha256": "889c5d6d92b5c91c52dcd53b8a408eb60e9b711bc99288bb8722139c7a801d49"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/NO_GO_LEDGER.md",
+      "sha256": "bd97223eff6e29b41024dd7fa040e7f326c97f1437ba6ffd872341d5ecac9c12"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/OPPORTUNITY_QUEUE.md",
+      "sha256": "cc428ccf2b51691d68b83cc5b6d6ca0c7c82e0fe639c1654baa47f4d2c6c154b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/PR_BACKLOG.md",
+      "sha256": "c9a8fb64971b9a46c810ed5e1381e11dff01d01bf80f73d7cfdd38f00188ca87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/PUBLICATION_EDITS.json",
+      "sha256": "72a3c94e5048cc20fd8ec0902291dd0c7e51f9baa6f190cfe4012193fecfe8e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/REVIEW_HISTORY.md",
+      "sha256": "7816340fb4c61471ff700630f64d316e2e306747a494334564987f4a8355011a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/ROUTE_PORTFOLIO.md",
+      "sha256": "a49d67ef0ee271c879ca1d150b58512aedb178a97ef22502bd823e96205e7dd3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/STATE.yaml",
+      "sha256": "4a68fe08f3d756a3297cbc6f7ccd8f28e7cbfeadf1369103a93708c4ad8145ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/TRACE_GATE.md",
+      "sha256": "98c8780e3f6e35c17f025d55f97c46cdee94f563c29398e24ccefec6286f10bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md.gz",
+      "sha256": "f8fa236f2f5b534dc08936616e58b1b4940e84a6996e2e320dfb27b0423f3898",
+      "decompressed_sha256": "9729bbbfb26de3c7cf450b8eb81efea6fe2f3597b40289426cf6e9171de30c3d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_REVIEW.md.gz",
+      "sha256": "78c46d931b3cb3d894d8ce03c7127390632137a845ac86c5f05ff07d5bfc8bac",
+      "decompressed_sha256": "e4f0f730b1d14d1d444e9e22eb0f6995fdc2dab4c130375491d6b61528d2d12a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md.gz",
+      "sha256": "f28aed687ade9c5a95565ca3024f32df44117d806cca7f2fb7d759fa59f9e918",
+      "decompressed_sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/EXCLUDED_WALK_SPECTRAL_EDGE_REVIEW.md.gz",
+      "sha256": "198dd9289657047561539a1f82e0d89c42d45df127187c053002e415a4233544",
+      "decompressed_sha256": "8a6741ea9ea890fb9fdece7a8c241fed537a1fe899dafe34f716f1211171bd40"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/FINAL_EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_NOTE.md.gz",
+      "sha256": "ad161308bcd931632c0e75f5144b0caf5cdc1659e5a1657ca4e008fed46552c0",
+      "decompressed_sha256": "284686962fe4cce3c59a93b89a9fc33776ffa2310dbc9c8e9c1e8bda809d049e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/QUANTITATIVE_MEMORY_PUBLICATION_REVIEW.md.gz",
+      "sha256": "caa0f28d3d43b9cb13f728aeabb2b9e9804ca7fbf6b88a2b71707d5a0f906640",
+      "decompressed_sha256": "0ab9510407c0fdb6ee6a0d7a8c13cb31c054b543ddf7674f1e4706a196228ad6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/baseline.log.gz",
+      "sha256": "226c687648679e20e962b43f618eac2d0dc75e2a725dcb8a98c292068729bbf1",
+      "decompressed_sha256": "3019141ec6047073f14b89c202630e175151ec87cc72433fa5920c36e9579e0a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/baseline_execution.json",
+      "sha256": "a00369a66cf5fdb75875e9a6f0fcc4df73db782f9fc2c2a6b4cbe1275e18147d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/mutant_clock_power.log.gz",
+      "sha256": "f9459385e519efecd8dc756ec4fde1f2e21727d6129244bc4ff4fd27e0c5ee0d",
+      "decompressed_sha256": "283e197706d4618ff3735a255e8c6236d03084bfb355841d55bc173ebd3ebc11"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/mutant_clock_power.py.gz",
+      "sha256": "bcd1dbcce37765aaf4b104676688d4aa1bc258486c9b49cdd66e6b602bb85954",
+      "decompressed_sha256": "9b8be529a97016f7062ebf5896aa33d7f7cd37ba813ad688c13a837d0c563911"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/mutant_drop_global_normalization.log.gz",
+      "sha256": "9b14913bdf39f93bc688e8ac71757f2b61769fbf115f6c3496f9a2bfaa6e0b95",
+      "decompressed_sha256": "e349d247832b3f5a2d57f9ee2ccc6f0b224caa88e52ef92229eaa27c365bad94"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/mutant_drop_global_normalization.py.gz",
+      "sha256": "5e3df2979a0e50eb96caf87f550616e31ed9fd21da08bd4778ba3fe45104d6e3",
+      "decompressed_sha256": "202b7feca03635ae3e63c481767cb6e1a9daf918ac68cd11422d157574f48f03"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/mutant_probability_cross_half.log.gz",
+      "sha256": "4a180d4d336f1e534289713830972172219cb6a070bc018e655c696782ee3c5c",
+      "decompressed_sha256": "5d99db36022f9287f6f9a875bcd5d659ae43b7179eb7cce009fc0a5691911c46"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/mutant_probability_cross_half.py.gz",
+      "sha256": "f4025bf39896b52a43d21695dfdd6c8f0f5e741c520c7e45e1926cefe165134b",
+      "decompressed_sha256": "7b6ba75aafbbf707c0662927b2be154bb72f4217b56f24d81a778e97ac3c79fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/mutation_manifest.json",
+      "sha256": "189817211e566e44691e9e921786c19e27354629ae9ff0c024b63889ee486a02"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/occupation_controls.py.gz",
+      "sha256": "8dfd131958ace2f68b50ef9cc6f972a61fb2327bba05e7bfc3de5fff3f49e4b6",
+      "decompressed_sha256": "a81f727a4d2f813e6c58515127fa9836179e24180f90c50224d42bc7368237a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/receipt.json",
+      "sha256": "b2cccd048ee59f6cc4581284eec16e9a82b0787fe2a8598fcaf813e88f71dd24"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation/run_mutations.py.gz",
+      "sha256": "c7a59a1682eaeceddf7be8ef234d541154b1d6643b5a94a838112f27d76eb984",
+      "decompressed_sha256": "ad7ada163e589e5d81ea01509e463f7fea981f8b0365f17e89bc2102977666b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/CHECKPOINT.md.gz",
+      "sha256": "be6401b06f8bb0f763d32218cfd60ea435b5325332fe1e89e8f9786e14956e7e",
+      "decompressed_sha256": "16376c5cb2a235670018e6e5c1aca295de7a229a827aab2486901f37e978681e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/PRE_CONTROL_RECONSTRUCTION.md.gz",
+      "sha256": "3e2bc4651af2aed03c8b8d35a6c43dbeb0b8b772f8c8a6eac9682e440bbf52b9",
+      "decompressed_sha256": "ceded0652dbf1ebdbb6fffb792175cffa18f9f163a98b40a3246ca8587d43967"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/baseline.log.gz",
+      "sha256": "b072050efe0a0b29dc3bb35485a701bcd351fc5c7f3cbf68a63d9f8a70343e85",
+      "decompressed_sha256": "a8bdee0f00760783ef3d6c9d9a077fa5974d115eadb8e94825f5b0bc391acfed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/baseline_execution.json",
+      "sha256": "c14cb7cceef51c7c12cc992df9b24f1d076352e9f31091d9e8bd8fc9dec48ad7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/independent_packet_controls.py.gz",
+      "sha256": "5611f3c48937116c6ebd75115b55165103ab7f3217acce3c788c70e9707dbb61",
+      "decompressed_sha256": "6f16fecb72f889104366cca4bed577d9425874549142c67a8624c248b00d5fb5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/mutant_bare_envelope_weights.log.gz",
+      "sha256": "95c91c4cfc0b2d6e76477dc2559660d839bd82fc35c671f2cbe3343c2358ce04",
+      "decompressed_sha256": "0b76c9a557482f48edec30ada6aa407aaa0c7a5f6ff97f56ff0c7d3f993f3015"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/mutant_bare_envelope_weights.py.gz",
+      "sha256": "ec2403082971c6b7e40162bb897b76b0a9dc073916d2033478326d45aa574d1b",
+      "decompressed_sha256": "f84b5e08501a93b4335323a6300c5aae43d0352f36772a0c6b75d8f30ee89562"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/mutant_missing_time_jacobian.log.gz",
+      "sha256": "a4329eb6b84ed36d9412980bb251e15cc014afc5437ec8cddc4696fbd1525a46",
+      "decompressed_sha256": "24eea675cccfe8c67b3f47ada66bb771960a23147d6365b80b02ca3ebd087613"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/mutant_missing_time_jacobian.py.gz",
+      "sha256": "b79dee7ff0e27b8b55aa883b7903be0d0ff33ba46d4023f5cbfe8def471c77a4",
+      "decompressed_sha256": "7fcf76b98d4b17ec17ac2798704405102f5c6170f418f7fb166aa67ac4351c4f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/mutation_manifest.json",
+      "sha256": "7a2a99930b3483abffcafbe7231687c58fb161feee99aa29e60771deb0f23014"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/pre_control_receipt.json",
+      "sha256": "34e828cc220020ec58eb59151c52154b55cf7bcb8d470827ba712306db83d753"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/receipt.json",
+      "sha256": "4398c9bd17e25281efa1dfd2ae1d5f22eafc8415adc8b2a736a11b45c40b789d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/receipt_verification.json",
+      "sha256": "8e117d5daff9412eb3877c91f1ee328fb82ec7c573724125195cb7aed9f4fb42"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/root_identity_check.json",
+      "sha256": "0ec459b3d3f493e30067bbb3c2ff307f783943c16a646c89944f8046ae711fed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/averaged_transverse_occupation_review/run_independent_controls.py.gz",
+      "sha256": "3bb1ccc3c29f1fc339d09d4426dcc70b06f910f79fd669ee3afb4171003eff5e",
+      "decompressed_sha256": "8602a237b9ab86fcafd8c478e6d1407bef503fddf48e1abb5bd45a1f4ba2eaba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/check_quantitative_memory_publication.py.gz",
+      "sha256": "23205b9b995b6b8ebaf80aad4151a1f4bb390da9073c0363d68c52df6e73a11d",
+      "decompressed_sha256": "a620d456c6ce3056499b86b436f14ca79e04f88dbb22c3091957aa8f9417eda4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/excluded_walk_quantitative_memory_transfer_2026_10_11.py.gz",
+      "sha256": "d35259698249a154d1ecf965982893b87b4940857babb90bf79b6147cc7a791e",
+      "decompressed_sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_audit_compatibility.json",
+      "sha256": "add21ef7dd97a4298a5cf896d72ecb4097509a579ffcc6a83e3ceac87c5454f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_canonical_execution.json",
+      "sha256": "0ad907ec4e2abfd33bba93739a93548f569b334a69a8a556f9fd71a74457f2a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_delivery_mechanical.json",
+      "sha256": "0545d955b56e13b0b19a8e52ce9216159758a60a746fd5dcbb2baab26bd5a1bf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_final_vocab_fix.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_final_vocab_fix.log.gz",
+      "sha256": "487dccb2e24cb837a9d0ed9da19d11bf0aa0ffded8f33767143b0c9800d296d6",
+      "decompressed_sha256": "362b1dc327f6c877376d95e69b188efc7eba3ef16cff3f65f36b3812e40450f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_final_vocab_report.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_final_vocab_report.log.gz",
+      "sha256": "f36946ee7dcd3e78ccc66f84667bbe68b3d680b4914e90ab3bcc1c60487ca973",
+      "decompressed_sha256": "cef76b84aed72f341b31837b8b501f5bcba27665fac16d7b3a996c3f25382b0b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_graph_build.log.gz",
+      "sha256": "89579927123c25924ab71976ffbfffdf4a364c911a2ef6f4f0951aaf1634a10e",
+      "decompressed_sha256": "403748f651e6cc95495f3b80fcf5fb0e9d673bc108207da621013f98b28752d3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/manifest.json",
+      "sha256": "3f16ceea08fd71fdbb3593435debca4bbcaded11fb66ea125599a9602fd4713a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_clock_power.log.gz",
+      "sha256": "99e9a8d42750537ad619567cecfe6981fb5ca15e797a9d5bca1fbf7d01aedf38",
+      "decompressed_sha256": "b82036d133967793ab59bcf94b1cdb56c88d1edfe5e4e6463bbf925a6236740a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_clock_power.py.gz",
+      "sha256": "16cc1afa88a88486c1faccd4fd3a6cc925197a3f9be314f1c48cf1c1beea3b0f",
+      "decompressed_sha256": "04901cde57557d76e31bd8e2fbf488b58661188164fb7e0a262fa1da34527e0d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_count_one_edge.log.gz",
+      "sha256": "dae96c70bceaab8b88e7f153b2604eab6e61aba905713e81c8616f0db4e4a0d8",
+      "decompressed_sha256": "aa553f9bed0dd7c5ff200176c5beb0944f2665bf3d78a51d314804bf62392b1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_count_one_edge.py.gz",
+      "sha256": "852761980476a7ce76d2c81a260a8ee1c1266e1d58509b70d6d151b1327b0781",
+      "decompressed_sha256": "27209e0fdebd9fa80f051815f8eaf5beb2ecf09a0a0f96d54ebd991cf712bb3d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_double_dressing_coefficient.log.gz",
+      "sha256": "05c5e66c670c1f702d392ba7dc0d883acaa93dd6c8a3bf48e3e40a38e2d800b7",
+      "decompressed_sha256": "ad9713ad3943593e7d48ed2e05a9bf02658b78e7d5587ce329d00f04e7d19cf4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_double_dressing_coefficient.py.gz",
+      "sha256": "67a2532f1ca95fe43b3d75f62b66f2e2d58804647e1ac487f2714c80bc794b20",
+      "decompressed_sha256": "c4e0368b2aaed34953486bd27dd15ce01f57687ae2c4845e47abf05f27d18374"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_drop_compression_defect.log.gz",
+      "sha256": "626ce652326021fe7424a7f0a664b59fd4a4d855b7234b8b424885bb1787689b",
+      "decompressed_sha256": "4e6df5729bd94827d5e85f77472b36137002deae953ebaad67a1e2cccfb4dcde"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_drop_compression_defect.py.gz",
+      "sha256": "79fbf38d97992157705816b39a649228a2ffe2559718be695e4e2a41954b15e7",
+      "decompressed_sha256": "ec506cd1d48c43cb1c8f2316ecbb867bb1a958a7f7c38cd82f54b47ac95a9c6f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_drop_global_normalization.log.gz",
+      "sha256": "63bf00a3a424641d9932d0670327791f338fe5a37b3cc899389053903d585a25",
+      "decompressed_sha256": "5a21a821ebc5863a2f7ec3e15f77f622126d1225e5a3ec5c1bf76a6333fd0235"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_drop_global_normalization.py.gz",
+      "sha256": "a36861d3ba1641dc9efd41e86cf719cf6a5001e0212b3e081c3dc8fafbdc6178",
+      "decompressed_sha256": "d2161807e5057b5c23dc8de7d12e0ed12256b7ca19620068339b96ee38bdcafc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_kernel_half_constant.log.gz",
+      "sha256": "f76dd91523179062d6339ec64828079ad556f5aafcd7cb49fe754311c34b1a9d",
+      "decompressed_sha256": "3fe3d5219de844aaec7c7fce09903cbfc1227240bf81f4516e6f3cc88a0df9fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_kernel_half_constant.py.gz",
+      "sha256": "ee092277a68eac2dfe0f5ce804ff5d613d559ae212427cfc2616294ff613adc8",
+      "decompressed_sha256": "567db9691378f379db125f6597fa032080afd4532433c35b6d0a13ae21763278"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_mean_half_coefficient.log.gz",
+      "sha256": "a1490d72fea20ea75119f1cca2fa2acd004b70319df2b7bbda1721dcc503f011",
+      "decompressed_sha256": "4e226e413ca7792d3a8b253841adb076436c426076fbcb51192ef2b00f41e536"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_mean_half_coefficient.py.gz",
+      "sha256": "d62733472af0670a62da97d27594cd7f8521e9f92270bb08f42bc37e1ff2488c",
+      "decompressed_sha256": "d6c1e234a4840627e69ac12a059ab1bf9a503941b00727e2d0e660facfbd2666"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_poisson_half_constant.log.gz",
+      "sha256": "f3228b9aa8f8e13ca679008531298329b96c9b2c734674b23ec6740f18a24548",
+      "decompressed_sha256": "a5982cf176413ec29fb3c969fbc813057dd0d83b96683ee35e01cd05cbb785e8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_poisson_half_constant.py.gz",
+      "sha256": "5efa715ea7a5995ec6502af5f133d944775a6af0cf90209a53bf4a9e660002f6",
+      "decompressed_sha256": "3801779958954c4caf765811750f986e174235f1ae0d04888c9e997c03a63baa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_probability_cross_half.log.gz",
+      "sha256": "5fe6fdbd67cea887c131526ae900b5130f2bc6368d4716e5722738ca878e3ca2",
+      "decompressed_sha256": "9eeb076b1239b74eadac55519ef45ccebe040671ae12a22ac2da59411cd9ff89"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_probability_cross_half.py.gz",
+      "sha256": "d870f1b37b37071f22a3fa608cd9d3d3640a2131f4038621822fe2508e7237eb",
+      "decompressed_sha256": "fa2e73084f2c763dc7949212b32cbee7ce7a3069831d3109fb633df293fddfe7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_sinc_half_mean.log.gz",
+      "sha256": "2c9fc36a92f80b10d10ed26109e678cac7474da7e10c4e21f48c7dd33fe1bf27",
+      "decompressed_sha256": "7e04ff47192d8cfca67528825673dc24414c421f6e461ff1ddc34c1d0db6f112"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_sinc_half_mean.py.gz",
+      "sha256": "4b145d1b1cf025ccfc91e9c1a5b94888af3c1f1c6ad40022bd4187af3f6fdee1",
+      "decompressed_sha256": "b787bddefb6863dc76869da2d3933db4bd323a375055cd8b1148c3fb2cef9158"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_young_half_bound.log.gz",
+      "sha256": "d120d8f054d60ccecd9905f273a2c6cf331bd27a8b2253f2a398a1424aa395c6",
+      "decompressed_sha256": "0eb8d66c2d5eb555d96dad4cdcac34fc508091616025012292ab0d7852aa050e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/mutant_young_half_bound.py.gz",
+      "sha256": "076d9bbc9850e6f1596971e481141e8f8519607931d799f20c9aedee4a1ddfd3",
+      "decompressed_sha256": "9d8d3270405e71a6da697bd9972ecece973c80bf5117016f3b87988aaa805549"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations/root_log_coverage.json",
+      "sha256": "615894821b17b19a35fd37ed3ebdac5ce18b28eb0e13f982e6abc8927da8a66c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_primary_mutations_driver.log.gz",
+      "sha256": "f51c00d3cd7dc85bcb5298b37a8c9d1c605b53043b8ab18934d421b174bc7fa6",
+      "decompressed_sha256": "488b06c2af5312bbfc65e103f2c6656216a534121b560d6c42a5f11bbc730e26"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_publication_review/root_composition_check.json",
+      "sha256": "b46d39395dda44a18a1a15b5eab5877ca35ac4360630b489216692664f9fbc82"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/CHECKPOINT.md.gz",
+      "sha256": "fcc440986a4c2c495b718f47ed679e548afb46b814d2135a7d2f1c589b5d0167",
+      "decompressed_sha256": "42e93c41e539ab678848935271002df551ebbffa419cf3a5deeb8a515f11c546"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/RECONSTRUCTION_MAP.md.gz",
+      "sha256": "64184d4354eafd71b5323feb5a3d272417201069034473aaa4d9aa2dc173a0a4",
+      "decompressed_sha256": "dd80128b3ec7455ff5d67e0143d1a473b9d9e57e642a1f7b69308f344f248f7c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/compose_candidate.py.gz",
+      "sha256": "7e11acd40136a4adfd75312893e666360bc0b6bf7804c4dea9f7a3c3e9383fe3",
+      "decompressed_sha256": "4d17eb9fc3ceab63a85fb1e71e1a2b32aa0ae94411c0d91852618161b5b1a07c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/composition_verification.json",
+      "sha256": "fc4bdbb6b0c968731b93c0e6669e7c77ec05953e0f71832bcd7ec48fabf9b16d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/current_dependency_presentation_diffs.txt.gz",
+      "sha256": "736a34f97ff5d35db122f6317a89214a990d7869da28e6f27ea27c69e85f0e23",
+      "decompressed_sha256": "7c0fc4122d22708fbec93c1a6b9debdfa026dbe637cd58cdb54a56efd38ccff4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_precision_edit/FINAL_EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_NOTE.md.gz",
+      "sha256": "36d707dba6ec0f6797f2d2579f3190be443286c75e6b8437e2aedea6e0aa7246",
+      "decompressed_sha256": "994448d8780a6dd1870ab9d17ba34e1f388cd2424b8be85eb653e95bdf8cfdae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_precision_edit/RECONSTRUCTION_MAP.md.gz",
+      "sha256": "9ae73ffc92f604f0b2248d1f98da15c71f3f908c3902ea5bce400739156fd6dd",
+      "decompressed_sha256": "b6e4a8d04fbde09687308b4bfa0334fbb9131665f7cedd140dd9a17bf2d5eac0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_precision_edit/compose_candidate.py.gz",
+      "sha256": "afe7e388026e0b49d09276c88fa9b701cb4089dd429bd7bfe244e6fdc44cc5c2",
+      "decompressed_sha256": "88d6295cbf6fe4a1df4768c08ad3a9f27c2c1e0ac314ac168569f498f4f01726"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_precision_edit/excluded_walk_quantitative_memory_transfer_2026_10_11.py.gz",
+      "sha256": "d35259698249a154d1ecf965982893b87b4940857babb90bf79b6147cc7a791e",
+      "decompressed_sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_precision_edit/reconstruction_map.json",
+      "sha256": "55ebe99d0c49e168249b76aa78edf1d14b06be769a7f4a9703dc55ddba1babe9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_runner_metadata/FINAL_EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_NOTE.md.gz",
+      "sha256": "0dc81a0b6394b5ee5d68e3f16999edea453f0ffebb98ae43299af3697a212d22",
+      "decompressed_sha256": "39bb0b948591c531814628a9e12beb4daf2cf253a28fea7b1b4982ae62345daf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_runner_metadata/RECONSTRUCTION_MAP.md.gz",
+      "sha256": "75369692ae65b6b46e9820606994321c39ea509c34a43fecfb91a52dbc7d4bf4",
+      "decompressed_sha256": "e4f557fb9168ff63cb5b0c4658e27061c93fcb9a8b3de5f0af6b09c56c47ad49"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_runner_metadata/compose_candidate.py.gz",
+      "sha256": "b9b21035ed1db00b9cff920490ab6b54e82cd0729456d6292d5b3ff9d48a0223",
+      "decompressed_sha256": "cf0be2b42d0c38acf31652154ef6faf9114b49fc293de1e017f9cc9494bc9fe8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_runner_metadata/composition_verification.json",
+      "sha256": "1c8d0e4d7f5c29a2e47a994b95eef13f519a739c0355adaee1bdd57aa6f61175"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_runner_metadata/excluded_walk_quantitative_memory_transfer_2026_10_11.py.gz",
+      "sha256": "d35259698249a154d1ecf965982893b87b4940857babb90bf79b6147cc7a791e",
+      "decompressed_sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_runner_metadata/primary_wrapper_readback.txt.gz",
+      "sha256": "ec3f4c64a3e19ff41451a5badaf8c16623caf606bcb6e1b8b57b2991741f3a1a",
+      "decompressed_sha256": "7061b48f558899fb5e17b59eeba1bfa3dc8263c17e91d980638c053b5ad7a5af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/pre_runner_metadata/reconstruction_map.json",
+      "sha256": "7351d1a144ac2d0de0eabb27f5bb9e08d7680b538549800bdeec08338f9d31fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/primary_attempt1.log.gz",
+      "sha256": "0123ad6aad8c8d6bab8db09fdbe66c497cb37435cdcd622f30b6bcf2a8c92159",
+      "decompressed_sha256": "123c4a4234c2137de4e30f26ead48859387b8a2444349f014c32a57d1923136d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/primary_attempt1.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/primary_attempt1.stdout.log.gz",
+      "sha256": "0123ad6aad8c8d6bab8db09fdbe66c497cb37435cdcd622f30b6bcf2a8c92159",
+      "decompressed_sha256": "123c4a4234c2137de4e30f26ead48859387b8a2444349f014c32a57d1923136d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/primary_attempt1_execution.json",
+      "sha256": "eec5b1a0c5a725e6de9f00b78861972ec209a1760a7226ec5785424670556b0e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/primary_wrapper_readback.txt.gz",
+      "sha256": "ec3f4c64a3e19ff41451a5badaf8c16623caf606bcb6e1b8b57b2991741f3a1a",
+      "decompressed_sha256": "7061b48f558899fb5e17b59eeba1bfa3dc8263c17e91d980638c053b5ad7a5af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/receipt.json",
+      "sha256": "c1e09e3b251469b7c27d02d79e8a1221c99598850454f02e42ba287f8592269e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/receipt_verification.json",
+      "sha256": "2ea71692af332986cec4939cb461e1b3445003419315ee9838cd26ea62fdb984"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/reconstruction_map.json",
+      "sha256": "c29df627eeedeaa21f1ce04abdec65f04aa58d5e3ce0b5266342497a5c9d586f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/run_primary.py.gz",
+      "sha256": "a447fd1e764cb83d253193ac0c4d5c3b9c7a2a3b24f505b0c95559141f9c385b",
+      "decompressed_sha256": "c498415e3617776476388b0db87805601ef9f4b4d744f1e72fc06f9cad5ff8f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/source_inventory_before.json",
+      "sha256": "8443eed3679594bc70ae59f0c83fbe8268332972307e45d5879ff814fda0fe98"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/quantitative_memory_transfer_composition/verify_composition.py.gz",
+      "sha256": "4f34dd98b0b8549dd207a1d22e816ccbbbe67cc3cfb468b48d6eb69fecb6aa66",
+      "decompressed_sha256": "d5e3ea6a8bb9266eafc91ed39ec3d522ae207c7878a35d7da2ac3940a0ce1df9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/run_quantitative_memory_primary_mutants.py.gz",
+      "sha256": "081ee0d8e7c3b9471b87cee7f55e70b5fa9be8ffb1139367ba4047a6d8af3acb",
+      "decompressed_sha256": "ef35e8de538e30ae5452cd049566453e00d630cf2c8c554251d0a66ba4575b48"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/CHECKPOINT.before_recovery.md.gz",
+      "sha256": "1a07c0870e7fb70fd6c6a413a57757ee7ab76a67cc329d239cbebe766ca7e1eb",
+      "decompressed_sha256": "fb10f2ffdf5bbfa9bff9fb944af1b721ff01baec52c16d34481043c80b53dc80"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/CHECKPOINT.md.gz",
+      "sha256": "2e0c5417a62f1c0ce8c951ee93bb5bd295b57a8623f76fa0a0219d28fe35811f",
+      "decompressed_sha256": "66d63ab1ff53ae1612e9e200d6dc64d552118979ef148de6c482eefc6271c5de"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/baseline.log.gz",
+      "sha256": "6a71981c80cb274786cdb9e8cd666964ce02d0fdde9b7c2b675bba4f3ce1b8ac",
+      "decompressed_sha256": "48890d041bb0d3b93d554a63b56a17101fe27d71641f4e0450820fe3119ae2cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/baseline_execution.json",
+      "sha256": "499abe0dc5bd30b245543c102082fe16ef45a484aeb222c391a5f40594e458b6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/edge_controls.py.gz",
+      "sha256": "e31730a7938960575cb4ac9eacf940d38a3e61ec49912f3bee5bfd6295732bfa",
+      "decompressed_sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/mutant_count_one_edge.log.gz",
+      "sha256": "ddf9c22629834a37ad3d18de8307b963a129e0840f7269b72092ccbe4aa312a4",
+      "decompressed_sha256": "05398a897dd90e61f36d14f6e31f3bc7956c7f19b8804b6139d2980abf4d1ddb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/mutant_count_one_edge.py.gz",
+      "sha256": "e034674420e90ae3453259b3bcf2614df7054010dda01df85716daafbf5cfe98",
+      "decompressed_sha256": "325bf2de2ebf8bc973bdc74e65d5691533c5de7d2e0d662f1200fde99d59a417"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/mutant_double_dressing_coefficient.log.gz",
+      "sha256": "1b244ddf5f082dbc9319edb5753a20fa0f2cc08c4b9471bbe9f83d4ac88efda2",
+      "decompressed_sha256": "e51ec523ee4888eea1255f0dbe567b805bd0f70541f657a7c9582b3b30d874ea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/mutant_double_dressing_coefficient.py.gz",
+      "sha256": "988f0d716f2500d5066d48fa02d84630f19ee37896ac206d848ea77c30eb2ab4",
+      "decompressed_sha256": "143954bc945904a95c71876a68bb2975c44ca7fb53f3d65ce56763353353e56c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/mutant_drop_compression_defect.log.gz",
+      "sha256": "af94944fa452ba38d81da897765df23a9eb6f300680d1d8c50b003935fbb57ce",
+      "decompressed_sha256": "0228cc97ad1a44494a1cc129aee6ee921ed6d25ec3e8e15579f04de3b8fc5cd9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/mutant_drop_compression_defect.py.gz",
+      "sha256": "1b4065bdf632b1908ad9be2a32dffd9b30696fd30233bb26a89c027136afd356",
+      "decompressed_sha256": "ebf545f30e100023968dfbc6c3792f45fd91d780da0f7eb2b26fb25197d136ac"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/mutant_mean_half_coefficient.log.gz",
+      "sha256": "d7ec6abe18b7a5f54446a85162349b2034a00ff6a06e8e49d4a373e16826a09c",
+      "decompressed_sha256": "b8d0a76ab1a48cfd44c80d2ba6046432e08fe9417ef9810a15f5fac248bda200"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/mutant_mean_half_coefficient.py.gz",
+      "sha256": "aa2023d7a814865db7f20f63ec9d2cc0a402e42f180c61811d292092476be4e3",
+      "decompressed_sha256": "027415e69420113318f859e8140eb9b4def61e932e81206544f8259b9ba0c502"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/mutant_poisson_half_constant.log.gz",
+      "sha256": "06541476da128ad817e36a25043ca63b2f5504c9bb013074658113c76d1e0e75",
+      "decompressed_sha256": "a6adcb0637c84cd9bc4a7eb22f16e0f8c240606b182ac50c3e13f87a7eab69d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/mutant_poisson_half_constant.py.gz",
+      "sha256": "0c72d71ff69677c5253fc2f653598a22f3d0dc94a4b660b24af4b427212f0820",
+      "decompressed_sha256": "63d141030df4667b3dec43faaad3f2311a29c14d194c05e0d91ed374ef19559c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/mutation_manifest.json",
+      "sha256": "9c74d6302eff4c6a2fce7f7d08f725a8e3a07d8547aa5c8448dc074251e6da80"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/prior_statement_search.json",
+      "sha256": "a7b864b8c8a2f9afd8a45339daf7993caab98f0e6b6201244b2f25f71c77deb2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/prior_statement_search.log.gz",
+      "sha256": "56543abc9a3fa4d759c8ea9f01427b47ec98e5f711d5213095bcac6308e4a3a9",
+      "decompressed_sha256": "daaea132d3b5c5268fa2dd8021a7647e149f43052261284f7fd7286d95a69a41"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_baseline.log.gz",
+      "sha256": "cd3b1b26662809c4e12bdf6040d51de7027a112600750daa12d2fe214106deea",
+      "decompressed_sha256": "f54d0b0808ae350102878e51ed2439313117a11152bd9ba73dc279a6e86f1a65"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_baseline_attempt2.log.gz",
+      "sha256": "c5447e3b8e3201b4ca6d5318efbc0b7a2fcb84a7d35573110b6ee28612e26a26",
+      "decompressed_sha256": "f0df57a4bc61f78bb07d0b289a2e14a5e3020e241ac70e7ab16a734c40344cfc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_baseline_attempt2_execution.json",
+      "sha256": "0a46db31548783c59ebc6122f55b63d7026797e5b3b09bb9632a98af265cc0c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_baseline_execution.json",
+      "sha256": "6c3c0b0963a1e89709e115b73ea61c1e67cc2e05f6c570f90a8232000f6ad03e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_controls.py.gz",
+      "sha256": "57d730bbaec4e11e9022247eec032fce9d1174b15ea8a973dade8552cb65585d",
+      "decompressed_sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_controls_attempt1.py.gz",
+      "sha256": "38a90e54fc4d9a83c9f0a080380abad80bee322c0ebc8f63d05c9f1c6be0be49",
+      "decompressed_sha256": "5d556a9e02e3799cba52de5ab40b2b90b2deadc8cf9572b2a37f5e753dd70d9f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_mutant_kernel_half_constant.log.gz",
+      "sha256": "018a84ba652d88d2cef72502c44108a46ddbef56d17407d31102067ceba43d73",
+      "decompressed_sha256": "b0a319d3bc923ed1837429d5ab58bc4e9891eb360917fbf13e4b72165ce6ca80"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_mutant_kernel_half_constant.py.gz",
+      "sha256": "8547814c0e2765c6a80b25cc07f140355cc5aa8861b95dfa5ca32977e8897a52",
+      "decompressed_sha256": "1052af9a66481c8052b0c3768543bca92682f72ef294b971c6fb842530ed54ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_mutant_sinc_half_mean.log.gz",
+      "sha256": "c5b6b00e3482f8257f348dd2b90a1143ed6a5da30e3dda2a242adc8d87e0ad00",
+      "decompressed_sha256": "983c0d14afbb29ede5a2a3062dafe9234e9002ef3192a072448aa2e852c54ea4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_mutant_sinc_half_mean.py.gz",
+      "sha256": "0fd9ebc694b37059196d228c468c7cab2f6278841fa98eb8a9eaf7549706fab6",
+      "decompressed_sha256": "c47275bfb2c2cef54b64a2a9b2e7052a6ab0c92fcbd84235b6ef07128699996b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_mutant_young_half_bound.log.gz",
+      "sha256": "abc35849e87b11ea035c9677e2b0acc362a346657668656291a4eae7a0665c66",
+      "decompressed_sha256": "dddfd8528f33cd6fefe8f25aaed66e3582512e6b1d26a1ac8df4b084eadc584a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_mutant_young_half_bound.py.gz",
+      "sha256": "50a2bd582338dc99f00d7a320b2b432e6034dea1237de60692f89143d99be38e",
+      "decompressed_sha256": "3eacda30f309101193f868dccea89d34eda758ebdcc7e59a246540c51b026748"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/rate_mutation_manifest.json",
+      "sha256": "187813481e99521d1de7510d154ec6a1dcd2b33a9611c00e567fedc65a33ac85"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/receipt.json",
+      "sha256": "7a96b9213a8c0faf014f35e4e4bcbdecd54d688bdc6b829b57d189b97fd7bec6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/receipt_verification.json",
+      "sha256": "29f717eca7d6a42c6c395c22b16882eb41688749286ebb9951ea7b287756ae20"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/recovery_initial_inventory.json",
+      "sha256": "e2fffa216e7034af0a8f904b395f5f15fd8d7147dd071c8785dde64c6faeb0de"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/recovery_statement_search.json",
+      "sha256": "abf412a25a690a12d339877ef47fb6efabe6f0a972a99a65a12bcf13c1115554"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/run_controls.py.gz",
+      "sha256": "f3e9ff24a74c0d47fd9f7ec183980535e437bafdfe95350e6336e50555248151",
+      "decompressed_sha256": "696be8c7d3b70e141c38056c4b5296328166edaf8291ac6cc9cb528006c8bdd7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/run_rate_controls.py.gz",
+      "sha256": "7ba0c3f96dbd022effe1eed44e29283a5fcbb24b4b8d63a902f0258cb62bdc7d",
+      "decompressed_sha256": "2e96c388791ce4a8612192da60b83c3bc88532620765373c51a095953b5ca496"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge/run_rate_controls_attempt1.py.gz",
+      "sha256": "cf8b542ef7f860d9382f65d9cd03c3b15458f28e40f1dae02661450444a4c489",
+      "decompressed_sha256": "bd030564c1f1397fa6d4d34f41eccbbed4f25ed8cb6fe94a14573e7053d9d080"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge_review/CHECKPOINT.md.gz",
+      "sha256": "704332e7a3a3a40a9b505c1b0146a6bc794715c39a1604be834dc66dba08e240",
+      "decompressed_sha256": "074ca99bd880051b9074889aaf15e07da8d4911d4c81a7ef1401c82f0c5edc7d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge_review/PRE_HELPER_RECONSTRUCTION.md.gz",
+      "sha256": "fdc8adbbf84de6b5ab4f42ea16fab015ca8e50e0a1a03cd019afc9a0df9cab7b",
+      "decompressed_sha256": "afba71d956943673b620e9d69e00dffa95b4c53c69743ceda7fb88bdc00cfe4d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge_review/author_identity_verification.json",
+      "sha256": "ca6b135885f4a6309d5eb929aa714c6231e7e1b3fbc4005337fe4d3d7e098b88"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge_review/author_mutation_and_repair_diffs.txt.gz",
+      "sha256": "9759299bbba914351c208eab80a69b9acc4de4c8f23e5b4c69e3f5c61f29b461",
+      "decompressed_sha256": "c3fc5b024fc1b1109734ea1692eacb98c57de43c5448357e8afc74426b759d3c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge_review/independent_controls.py.gz",
+      "sha256": "22c3a9b25acbc60e7279d3cda9383e11536987dc83e894e269ad17dec2e55d4d",
+      "decompressed_sha256": "7fe6580d565adf2d382e62ca3c5b8ba2e0667ae905f2d86223a78db934acb30e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge_review/independent_controls_attempt1.log.gz",
+      "sha256": "819678f0280ea101761511dc029ef67bdca1f0bb5ae0124aa8f50baa2fb6cfe5",
+      "decompressed_sha256": "de98c048e0ea3ad369d75124270c20a73e78655feb75549d56d82e9f6a17c3a7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge_review/independent_execution_attempt1.json",
+      "sha256": "c46eefa94078c2586071b5514da06d2d4cc7e9cb6683608517be34ce405cf5fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge_review/receipt.json",
+      "sha256": "1cc248fc02fedd81a2e8d9a91d5b8d7157ad9abc18e2a4b5cfa4f8c87954e055"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge_review/root_identity_check.json",
+      "sha256": "5728ded536c172a50ece8e2abfe8a0b03fe17f9a702104d302513be9423bd828"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-quantitative-memory-transfer-20261011/evidence/spectral_edge_review/verify_author_packet.py.gz",
+      "sha256": "7c2a98892d637b6344e18edc7df9858c66f5ee62eff02abd096af6351d69f023",
+      "decompressed_sha256": "2a2ccc0cd63a391e9aaeec266be13045fc1c832181ac1204543f406969fdbbd1"
+    },
+    {
+      "path": "docs/EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "69745b81cfbfb6676faa99e9e5491ddc94a8afdb97049802861a7b105bb711d9"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "f860544792b8474134c40e351ee048fb4e06603706fdc77f7ddbb9804ff41de9"
+    },
+    {
+      "path": "logs/runner-cache/excluded_walk_quantitative_memory_transfer_2026_10_11.txt",
+      "sha256": "a57d8243ee36264098beb65478e365fc3d1b116cbfa88a5d9bacb123e1d6e227"
+    },
+    {
+      "path": "scripts/excluded_walk_quantitative_memory_transfer_2026_10_11.py",
+      "sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d"
+    }
+  ]
+}

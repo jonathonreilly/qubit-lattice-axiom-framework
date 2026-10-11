@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-10-11T20:39:35.520627+00:00",
+  "stage": "Written after source reconstruction, before any author control/log contents read.",
+  "reconstruction_sha256": "ceded0652dbf1ebdbb6fffb792175cffa18f9f163a98b40a3246ca8587d43967",
+  "inputs": {
+    "EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md": "9729bbbfb26de3c7cf450b8eb81efea6fe2f3597b40289426cf6e9171de30c3d",
+    "EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+    "EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+    "EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+    "EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+    "EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623"
+  },
+  "independence_limit": "Reviewer authored S20 and treats it as an explicit provisional premise; does not independently recertify it."
+}

@@ -1,0 +1,7 @@
+{
+  "receipt_sha256": "1cc248fc02fedd81a2e8d9a91d5b8d7157ad9abc18e2a4b5cfa4f8c87954e055",
+  "verified_path_hash_occurrences": 58,
+  "distinct_paths": 57,
+  "failures": [],
+  "scope": "Identity verification only; root separately read the complete report, reconstruction, helper and raw outputs."
+}

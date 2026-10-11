@@ -1,0 +1,425 @@
+{
+  "schema": "source-bound-physics-composition-review/v1",
+  "created_utc": "2026-10-11T20:48:42.988982+00:00",
+  "review": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_REVIEW.md",
+  "target": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md",
+  "result": "No consequential defect found in A2-A9 conditional on A1 and the supplied-model inputs; no source correction requested. No formal audit verdict.",
+  "independence": {
+    "reviewer": "spectral_edge_recovery",
+    "reconstructed_before_author_controls": true,
+    "pre_control_receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/pre_control_receipt.json",
+    "limit": "Reviewer authored S20 and treats it solely as a provisional author premise; separate independent S20 review remains outside this assignment. Target conclusion was visible before reconstruction.",
+    "decisive_fixture": "Actual normalized direct-sum projected state and exact unitary evolution; no author helper imports."
+  },
+  "reading_coverage": {
+    "current_full_reads": [
+      "192-line occupation draft",
+      "420-line quantitative band note",
+      "327-line two-scale band note",
+      "236-line joint-scale note",
+      "full new independent helper and execution logs",
+      "author helper, 14-control baseline, execution metadata, mutation harness and three complete failure logs; all unique literal source differences"
+    ],
+    "reused_unchanged_full_reads": [
+      "457-line long-time note",
+      "549-line degenerate note",
+      "500-line effective-memory note",
+      "329-line effective-memory review",
+      "452-line authored spectral-edge note"
+    ],
+    "new_reconstruction": "A2-A9: finite band remainder, finite all-T Q16 specialization, amplitude-sensitive squared norm, actual nonzero-K preparation, exact global normalization, physical-time Jacobian, 5/18 balance.",
+    "limits": "No independent recertification of S20, numerical torus proof, Q16 certification, current-rate, many-body, empirical clock or physical primitive conclusion."
+  },
+  "executions": {
+    "independent_baseline": {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/independent_packet_controls.py"
+      ],
+      "returncode": 0,
+      "timeout_seconds": 120,
+      "elapsed_seconds": 0.7320575420744717,
+      "source": "independent_packet_controls.py",
+      "source_sha256": "6f16fecb72f889104366cca4bed577d9425874549142c67a8624c248b00d5fb5",
+      "log": "baseline.log",
+      "log_sha256": "a8bdee0f00760783ef3d6c9d9a077fa5974d115eadb8e94825f5b0bc391acfed"
+    },
+    "independent_mutations": [
+      {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_bare_envelope_weights.py"
+        ],
+        "returncode": 1,
+        "timeout_seconds": 120,
+        "elapsed_seconds": 0.49267937522381544,
+        "source": "mutant_bare_envelope_weights.py",
+        "source_sha256": "f84b5e08501a93b4335323a6300c5aae43d0352f36772a0c6b75d8f30ee89562",
+        "log": "mutant_bare_envelope_weights.log",
+        "log_sha256": "0b76c9a557482f48edec30ada6aa407aaa0c7a5f6ff97f56ff0c7d3f993f3015",
+        "name": "bare_envelope_weights",
+        "old": "weights_used = actual_weights",
+        "new": "weights_used = envelope_weights",
+        "intended_assertion": "direct_global_vector_matches_exact_normalization_weights",
+        "failed_at_intended_assertion": true
+      },
+      {
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_missing_time_jacobian.py"
+        ],
+        "returncode": 1,
+        "timeout_seconds": 120,
+        "elapsed_seconds": 0.5675857081077993,
+        "source": "mutant_missing_time_jacobian.py",
+        "source_sha256": "7fcf76b98d4b17ec17ac2798704405102f5c6170f418f7fb166aa67ac4351c4f",
+        "log": "mutant_missing_time_jacobian.log",
+        "log_sha256": "24eea675cccfe8c67b3f47ada66bb771960a23147d6365b80b02ca3ebd087613",
+        "name": "missing_time_jacobian",
+        "old": "jacobian_used = sp.Integer(1)",
+        "new": "jacobian_used = delta",
+        "intended_assertion": "physical_time_integral_has_exact_jacobian_cancellation",
+        "failed_at_intended_assertion": true
+      }
+    ],
+    "author_controls": "Read and identity-verified; not rerun. 14 baseline controls and 3 recorded intended source-copy failures."
+  },
+  "repository_snapshot": {
+    "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree",
+    "observed_head": "b9b032ae790c66e762a6296a1306bfb64ae7cd70",
+    "main_instruction_commit": "a13caa4885f547c8d206265b031ba7649e539fd9",
+    "no_repository_edits": true
+  },
+  "instructions": [
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "lines": 27
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "lines": 245
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "lines": 35
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "lines": 130
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "lines": 52
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "lines": 140,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "lines": 434,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/references/DISCOVERY.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "lines": 336,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "lines": 309,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "bytes": 3253,
+      "lines": 67,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/ai-physics-lane-builder/SKILL.md"
+    },
+    {
+      "source": "3a4b2c66a1ead7a1c48b4359627e968f681e3c39:AGENTS.md",
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9",
+      "bytes": 11558,
+      "lines": 183
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "lines": 230,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md"
+    },
+    {
+      "source": "a13caa4885f547c8d206265b031ba7649e539fd9:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "lines": 126,
+      "matching_installed_path": "/Users/jonreilly/.codex/skills/physics-loop/references/proof-search-governance.md"
+    }
+  ],
+  "open_dependencies": [
+    "Separate independent review of S20/A1 at its exact source identity; no status change made by this composition review."
+  ],
+  "editable_prompt_files_changed": [],
+  "records": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_REVIEW.md",
+      "sha256": "e4f0f730b1d14d1d444e9e22eb0f6995fdc2dab4c130375491d6b61528d2d12a",
+      "bytes": 12534,
+      "lines": 231,
+      "role": "new independent composition review; conditional on S20"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md",
+      "sha256": "9729bbbfb26de3c7cf450b8eb81efea6fe2f3597b40289426cf6e9171de30c3d",
+      "bytes": 8420,
+      "lines": 192,
+      "role": "source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md",
+      "sha256": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c",
+      "bytes": 14339,
+      "lines": 327,
+      "role": "source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md",
+      "sha256": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+      "bytes": 19988,
+      "lines": 420,
+      "role": "source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md",
+      "sha256": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+      "bytes": 11538,
+      "lines": 236,
+      "role": "source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md",
+      "sha256": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+      "bytes": 21625,
+      "lines": 457,
+      "role": "source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+      "sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623",
+      "bytes": 20616,
+      "lines": 452,
+      "role": "source; S20 is reviewer-authored provisional premise"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+      "bytes": 25725,
+      "lines": 549,
+      "role": "source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+      "bytes": 23222,
+      "lines": 500,
+      "role": "source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0",
+      "bytes": 17773,
+      "lines": 329,
+      "role": "source"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/baseline.log",
+      "sha256": "3019141ec6047073f14b89c202630e175151ec87cc72433fa5920c36e9579e0a",
+      "bytes": 602,
+      "lines": 15,
+      "role": "author consistency evidence, read after independent reconstruction"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/baseline_execution.json",
+      "sha256": "a00369a66cf5fdb75875e9a6f0fcc4df73db782f9fc2c2a6b4cbe1275e18147d",
+      "bytes": 258,
+      "lines": 7,
+      "role": "author consistency evidence, read after independent reconstruction"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_clock_power.log",
+      "sha256": "283e197706d4618ff3735a255e8c6236d03084bfb355841d55bc173ebd3ebc11",
+      "bytes": 935,
+      "lines": 17,
+      "role": "author consistency evidence, read after independent reconstruction"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_clock_power.py",
+      "sha256": "9b8be529a97016f7062ebf5896aa33d7f7cd37ba813ad688c13a837d0c563911",
+      "bytes": 2258,
+      "lines": 42,
+      "role": "author consistency evidence, read after independent reconstruction"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_drop_global_normalization.log",
+      "sha256": "e349d247832b3f5a2d57f9ee2ccc6f0b224caa88e52ef92229eaa27c365bad94",
+      "bytes": 1154,
+      "lines": 20,
+      "role": "author consistency evidence, read after independent reconstruction"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_drop_global_normalization.py",
+      "sha256": "202b7feca03635ae3e63c481767cb6e1a9daf918ac68cd11422d157574f48f03",
+      "bytes": 2256,
+      "lines": 42,
+      "role": "author consistency evidence, read after independent reconstruction"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_probability_cross_half.log",
+      "sha256": "5d99db36022f9287f6f9a875bcd5d659ae43b7179eb7cce009fc0a5691911c46",
+      "bytes": 897,
+      "lines": 13,
+      "role": "author consistency evidence, read after independent reconstruction"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutant_probability_cross_half.py",
+      "sha256": "7b6ba75aafbbf707c0662927b2be154bb72f4217b56f24d81a778e97ac3c79fe",
+      "bytes": 2258,
+      "lines": 42,
+      "role": "author consistency evidence, read after independent reconstruction"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/mutation_manifest.json",
+      "sha256": "189817211e566e44691e9e921786c19e27354629ae9ff0c024b63889ee486a02",
+      "bytes": 2443,
+      "lines": 44,
+      "role": "author consistency evidence, read after independent reconstruction"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/occupation_controls.py",
+      "sha256": "a81f727a4d2f813e6c58515127fa9836179e24180f90c50224d42bc7368237a1",
+      "bytes": 2258,
+      "lines": 42,
+      "role": "author consistency evidence, read after independent reconstruction"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/run_mutations.py",
+      "sha256": "ad7ada163e589e5d81ea01509e463f7fea981f8b0365f17e89bc2102977666b4",
+      "bytes": 2909,
+      "lines": 19,
+      "role": "author consistency evidence, read after independent reconstruction"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/receipt.json",
+      "sha256": "b2cccd048ee59f6cc4581284eec16e9a82b0787fe2a8598fcaf813e88f71dd24",
+      "bytes": 4735,
+      "lines": 76,
+      "role": "author evidence receipt, 16 identities verified"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/CHECKPOINT.md",
+      "sha256": "16376c5cb2a235670018e6e5c1aca295de7a229a827aab2486901f37e978681e",
+      "bytes": 3656,
+      "lines": 69,
+      "role": "review evidence or checkpoint"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/PRE_CONTROL_RECONSTRUCTION.md",
+      "sha256": "ceded0652dbf1ebdbb6fffb792175cffa18f9f163a98b40a3246ca8587d43967",
+      "bytes": 7790,
+      "lines": 168,
+      "role": "review evidence or checkpoint"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/baseline.log",
+      "sha256": "a8bdee0f00760783ef3d6c9d9a077fa5974d115eadb8e94825f5b0bc391acfed",
+      "bytes": 1325,
+      "lines": 10,
+      "role": "review evidence or checkpoint"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/baseline_execution.json",
+      "sha256": "c14cb7cceef51c7c12cc992df9b24f1d076352e9f31091d9e8bd8fc9dec48ad7",
+      "bytes": 559,
+      "lines": 13,
+      "role": "review evidence or checkpoint"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/independent_packet_controls.py",
+      "sha256": "6f16fecb72f889104366cca4bed577d9425874549142c67a8624c248b00d5fb5",
+      "bytes": 5592,
+      "lines": 123,
+      "role": "review evidence or checkpoint"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_bare_envelope_weights.log",
+      "sha256": "0b76c9a557482f48edec30ada6aa407aaa0c7a5f6ff97f56ff0c7d3f993f3015",
+      "bytes": 1420,
+      "lines": 18,
+      "role": "review evidence or checkpoint"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_bare_envelope_weights.py",
+      "sha256": "f84b5e08501a93b4335323a6300c5aae43d0352f36772a0c6b75d8f30ee89562",
+      "bytes": 5594,
+      "lines": 123,
+      "role": "review evidence or checkpoint"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_missing_time_jacobian.log",
+      "sha256": "24eea675cccfe8c67b3f47ada66bb771960a23147d6365b80b02ca3ebd087613",
+      "bytes": 1757,
+      "lines": 20,
+      "role": "review evidence or checkpoint"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutant_missing_time_jacobian.py",
+      "sha256": "7fcf76b98d4b17ec17ac2798704405102f5c6170f418f7fb166aa67ac4351c4f",
+      "bytes": 5584,
+      "lines": 123,
+      "role": "review evidence or checkpoint"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/mutation_manifest.json",
+      "sha256": "7a2a99930b3483abffcafbe7231687c58fb161feee99aa29e60771deb0f23014",
+      "bytes": 1718,
+      "lines": 38,
+      "role": "review evidence or checkpoint"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/pre_control_receipt.json",
+      "sha256": "34e828cc220020ec58eb59151c52154b55cf7bcb8d470827ba712306db83d753",
+      "bytes": 1123,
+      "lines": 14,
+      "role": "review evidence or checkpoint"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation_review/run_independent_controls.py",
+      "sha256": "8602a237b9ab86fcafd8c478e6d1407bef503fddf48e1abb5bd45a1f4ba2eaba",
+      "bytes": 2102,
+      "lines": 49,
+      "role": "review evidence or checkpoint"
+    }
+  ],
+  "receipt_verification_note": "This receipt excludes itself and the verification output to avoid a circular hash; verify its recorded identities independently."
+}

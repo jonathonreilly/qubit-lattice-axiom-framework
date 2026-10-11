@@ -1,0 +1,72 @@
+{
+  "cases": [
+    {
+      "name": "drop_compression_defect",
+      "prefix_lines_matched_complete_read_baseline": 4,
+      "whole_mutated_source_reconstructed": true,
+      "complete_failure_tail_read": true
+    },
+    {
+      "name": "double_dressing_coefficient",
+      "prefix_lines_matched_complete_read_baseline": 6,
+      "whole_mutated_source_reconstructed": true,
+      "complete_failure_tail_read": true
+    },
+    {
+      "name": "count_one_edge",
+      "prefix_lines_matched_complete_read_baseline": 11,
+      "whole_mutated_source_reconstructed": true,
+      "complete_failure_tail_read": true
+    },
+    {
+      "name": "poisson_half_constant",
+      "prefix_lines_matched_complete_read_baseline": 15,
+      "whole_mutated_source_reconstructed": true,
+      "complete_failure_tail_read": true
+    },
+    {
+      "name": "mean_half_coefficient",
+      "prefix_lines_matched_complete_read_baseline": 17,
+      "whole_mutated_source_reconstructed": true,
+      "complete_failure_tail_read": true
+    },
+    {
+      "name": "kernel_half_constant",
+      "prefix_lines_matched_complete_read_baseline": 27,
+      "whole_mutated_source_reconstructed": true,
+      "complete_failure_tail_read": true
+    },
+    {
+      "name": "sinc_half_mean",
+      "prefix_lines_matched_complete_read_baseline": 30,
+      "whole_mutated_source_reconstructed": true,
+      "complete_failure_tail_read": true
+    },
+    {
+      "name": "young_half_bound",
+      "prefix_lines_matched_complete_read_baseline": 33,
+      "whole_mutated_source_reconstructed": true,
+      "complete_failure_tail_read": true
+    },
+    {
+      "name": "probability_cross_half",
+      "prefix_lines_matched_complete_read_baseline": 47,
+      "whole_mutated_source_reconstructed": true,
+      "complete_failure_tail_read": true
+    },
+    {
+      "name": "clock_power",
+      "prefix_lines_matched_complete_read_baseline": 51,
+      "whole_mutated_source_reconstructed": true,
+      "complete_failure_tail_read": true
+    },
+    {
+      "name": "drop_global_normalization",
+      "prefix_lines_matched_complete_read_baseline": 54,
+      "whole_mutated_source_reconstructed": true,
+      "complete_failure_tail_read": true
+    }
+  ],
+  "baseline_read_in_full": true,
+  "normalization": "Only elapsed_seconds and the intentionally changed embedded-source hash metadata."
+}

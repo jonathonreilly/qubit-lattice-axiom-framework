@@ -1,0 +1,172 @@
+{
+  "claim_id": "excluded_walk_quantitative_memory_transfer_bounded_theorem_note_2026-10-11",
+  "future_note": "docs/EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_NOTE.md",
+    "sha256": "39bb0b948591c531814628a9e12beb4daf2cf253a28fea7b1b4982ae62345daf",
+    "lines": 742
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_memory_transfer_2026_10_11.py",
+    "sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d"
+  },
+  "input_identities": {
+    "EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623",
+    "EXCLUDED_WALK_SPECTRAL_EDGE_REVIEW.md": "8a6741ea9ea890fb9fdece7a8c241fed537a1fe899dafe34f716f1211171bd40",
+    "EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md": "9729bbbfb26de3c7cf450b8eb81efea6fe2f3597b40289426cf6e9171de30c3d",
+    "EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_REVIEW.md": "e4f0f730b1d14d1d444e9e22eb0f6995fdc2dab4c130375491d6b61528d2d12a",
+    "EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md": "ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400",
+    "EXCLUDED_WALK_JOINT_SCALE_CURRENT_DRAFT.md": "4d6c82f7c46e0ae1a34f8c0c4ebdab90361ab6f3753a5bf95e89e7d40694c278",
+    "FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md": "ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969",
+    "EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md": "09998aec1dafc9198609237dce2238bc672182d6c1baca3294b8772a5888c324",
+    "EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876",
+    "EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c",
+    "EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md": "0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c"
+  },
+  "sections": [
+    {
+      "label": "metadata, result and dependency contract",
+      "output_lines": [
+        1,
+        117
+      ],
+      "output_sha256": "2368adf64a48c34780d3c0bbbebf9c71a9be7b83db759d89cdcfac0b0bf0f1e5",
+      "origins": [
+        "frozen edge/occupation statements and prior model sources listed in INPUTS"
+      ],
+      "changes": [
+        "new editorial wrapper; no additional mathematical assertion"
+      ]
+    },
+    {
+      "label": "S1-S21 complete effective proof",
+      "output_lines": [
+        118,
+        422
+      ],
+      "output_sha256": "54da0781d789b452e7876d08aed4f49f343e88cdca8adb16f2ebdfbce540325a",
+      "origins": [
+        {
+          "path": "EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md",
+          "sha256": "e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623",
+          "lines": [
+            55,
+            357
+          ],
+          "extracted_sha256": "86e276cbfa5aee5a9d447ba7d2df8999a9a75d3151f4509c1473b6b79a5cd514"
+        }
+      ],
+      "changes": [
+        "section numbers incremented; scalar c renamed c_edge; mathematical text otherwise unchanged"
+      ]
+    },
+    {
+      "label": "band and normalization premises",
+      "output_lines": [
+        423,
+        459
+      ],
+      "output_sha256": "bd76b5745cf2b6027b8c22fefc26d8998afc86980c6e92a0abf402bd3307ae3d",
+      "origins": [
+        "long-time L6-L8; quantitative Q12-Q15; joint-scale G1"
+      ],
+      "changes": [
+        "explicit restatement of imported definitions and bounds; A1 identified with proved S20"
+      ]
+    },
+    {
+      "label": "A2-A9 complete original-walk composition",
+      "output_lines": [
+        460,
+        657
+      ],
+      "output_sha256": "e12628aef7e5fb6ebe6d7e472d1c0338e07657519add4f89b0da07e27602c298",
+      "origins": [
+        {
+          "path": "EXCLUDED_WALK_AVERAGED_TRANSVERSE_OCCUPATION_DRAFT.md",
+          "sha256": "9729bbbfb26de3c7cf450b8eb81efea6fe2f3597b40289426cf6e9171de30c3d",
+          "lines": [
+            60,
+            183
+          ],
+          "extracted_sha256": "844c625fa371a41566da3358cdecab7450f6156bd48c58d84336cd63b90e6d79"
+        },
+        {
+          "path": "FINAL_EXCLUDED_WALK_PROJECTED_BAND_CURRENT_NOTE.md",
+          "sha256": "ecb7eacddc0a11b2636030ed5e4759fabb9945568f3f3f4699f650463f5bf969",
+          "lines": [
+            727,
+            755
+          ],
+          "extracted_sha256": "dbd5351c552c23ad6f93b6245e0e98078b743e4ff00929ff04ed957e37739f85"
+        },
+        "quantitative Q16; joint-scale G4-G5; occupation review Sections 3-5"
+      ],
+      "changes": [
+        "section numbers; pending A1 phrase resolved to S20; full imported Q16/G5 and actual projector proof inserted; exact h normalization and time Jacobian displayed; no constants or claims strengthened"
+      ]
+    },
+    {
+      "label": "evidence, resolved source reviews and scoped limits",
+      "output_lines": [
+        658,
+        742
+      ],
+      "output_sha256": "e8c2cd0abb3d94b24d050868ec3228226ec6c46a5081b43e18a7348f69441da9",
+      "origins": [
+        "complete edge and occupation reviews; frozen helper/evidence packets"
+      ],
+      "changes": [
+        "obsolete pending-source-review prose replaced by exact completed review scopes; globally-open wording narrowed; final composition review remains pending"
+      ]
+    }
+  ],
+  "helper_payloads": [
+    {
+      "variable": "EDGE_CONTROLS_SOURCE",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/edge_controls.py",
+      "sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee",
+      "expected_controls": 20,
+      "modification": "none; exact decoded string bytes"
+    },
+    {
+      "variable": "RATE_CONTROLS_SOURCE",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/spectral_edge/rate_controls.py",
+      "sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5",
+      "expected_controls": 15,
+      "modification": "none; exact decoded string bytes"
+    },
+    {
+      "variable": "OCCUPATION_CONTROLS_SOURCE",
+      "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/averaged_transverse_occupation/occupation_controls.py",
+      "sha256": "a81f727a4d2f813e6c58515127fa9836179e24180f90c50224d42bc7368237a1",
+      "expected_controls": 14,
+      "modification": "none; exact decoded string bytes"
+    }
+  ],
+  "dependency_notes": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "future_relative_path": "docs/EXCLUDED_WALK_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "3954606703f9a66665fb1ee9a27079f7f14e5183f28a8511a38743ef5d455aa1",
+      "lines": 1575,
+      "coverage": "Dependency identity only; necessary complete source arguments reused/refreshed at the frozen research-source revisions."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "future_relative_path": "docs/EXCLUDED_WALK_PROJECTED_FREE_BAND_CANONICAL_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "bf894a323464c17faf78ae3402af8ef964635fb8fe2240ece671c0aaffcf5e5d",
+      "lines": 880,
+      "coverage": "Dependency identity only; necessary complete source arguments reused/refreshed at the frozen research-source revisions."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "future_relative_path": "docs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "9f551fc8d3592e83d15a007495a8f9165a5ddb9bc1e98d9dd3f51b6a2584f401",
+      "lines": 1280,
+      "coverage": "Dependency identity only; necessary complete source arguments reused/refreshed at the frozen research-source revisions."
+    }
+  ],
+  "preservation": "All source proofs, author evidence and historical failures are kept unchanged; the new note resolves only stale review/status prose and scope wording.",
+  "review_boundary": "No new mathematics or final composition review claimed; selective source reviews retain their stated independence limits."
+}

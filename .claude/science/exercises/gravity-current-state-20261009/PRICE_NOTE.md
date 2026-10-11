@@ -245,3 +245,169 @@ Every referee is codex gpt-5.6-sol (xhigh), from another vendor. Verdicts are qu
 **Suggested / not refereed (same model family, no codex referee; §3b, §5b):** M-D, INCONCLUSIVE "(worker; the adversarial check supports it with corrections)" (`TESTS.md:607`); exercise F_formation, "all 9 routes killed" (`TESTS.md:618`); exercise G_graviton_on_events, "all 9 routes killed" (`TESTS.md:627`); exercise M_massive_matter, "all 9 routes killed as written" (`TESTS.md:650`); with them Lemma S, T-F1, N1 and S0. Lane G-L: refereed FAIL (codex sol, CWC; `C3_G-L_referee.md`): for the unweighted one-hop link mean on curved backgrounds, not extending automatically to G-B, E1′ or weighted/multi-hop readouts (`C3_G-L_report.md`).
 
 **Context only, not refereed:** T0 (`TESTS.md:11-15`), whose Weyl value is confirmed inside the W1 referee; the F3 and F7 checks at step 4 (`ROUTES.md:18,22,39`); W2 (`TEST_LOG.md:460`), not used; the trilemma sentence (`SUMMARY.md:55`; `ROUTES.md:54`), built from refereed T1(a2), T2 and F2; lane P's denominator arithmetic (`arith_check.py`); the Planck-convention grep (`C3_P_report.md:198`).
+
+---
+
+# PRICE_NOTE v6 delta (proposed): lanes R–RC and campaign C4
+
+**Status.** This is a proposed delta to `PRICE_NOTE.md` (DRAFT v5). It is not applied and not landed, and nothing in it is adopted. Every item is named only as a price. It was drafted by Claude Opus 5.5 (same family as the workers) and is not refereed.
+
+**Inputs.**
+- The refereed lines in `TESTS.md`, lane R through campaign C4 (`TESTS.md:685-1877`), at commit `c92d127da9`.
+- The `agents/C4_*_referee.md` files. Every referee is codex gpt-5.6-sol at xhigh, from another vendor.
+
+**Pending.** RL2, RP and RB have no referee line; they appear only under open questions.
+
+**Paths.** Bare `C4_*` file names live in `.claude/science/exercises/gravity-current-state-20261009/agents/`.
+
+## 0. In plain words (add to §1, after "Keeping the grid with tuning", `PRICE_NOTE.md:24`)
+
+**The boost wall.**
+- On the grid, ordinary local matter has no boost that fits with its own momentum the way relativity needs. The momentum moves things by differences across neighbours, not by true shifts.
+- Every way tried of feeding the grid's matter to a graviton runs into this, unless the matter stops being ordinary local lattice matter.
+- The refereed cases: free particles; finitely many bands; bound composites; time as a grid direction, at second order. The vacuum shows a related effect; linking it to the same cause is a reading.
+
+**Ways around it, each a price:**
+- a continuum of bands in every cell;
+- matter with long-range (1/r²) hopping;
+- giving up relativity's full constraint algebra for the grid's own time slicing;
+- a coupling rule defined against the vacuum.
+
+**What keeping the grid costs.** Counted honestly, it costs more than the two shear tunings P0 stated:
+- 11 gauge-restoring tunings with time on the grid;
+- at least 6 with continuous time, by a sum the referees did not check as a total.
+
+Free matter alone already produces one of the two shear numbers.
+
+## 1. Status line (replace `PRICE_NOTE.md:3`)
+
+> **Status.** DRAFT v6. It adds the refereed results of lanes R, RN, RS, RG and RC and of campaign C4 (`TESTS.md:685-1877`). It records the correction to the RN L1 seagull claim (`TESTS.md:1797-1802`). It names five new prices, P10–P14. RL2, RL3, RL3b, RL4, RP, RB and RN2 were folded in at wrap-up. Earlier history is unchanged from v5.
+
+## 2. "One row per substrate" (§2, `PRICE_NOTE.md:69-76`)
+
+### 2a. Fixed grid, untuned (`PRICE_NOTE.md:71`): cells to append
+
+- **Averages.** Free matter with the local, translation-covariant strain coupling (V3, CWC):
+  - μ_E = +1.97038864e-3 per cell for the m = 1 scalar (RN-L1 normalization);
+  - staggered fermions: μ_E^stag(m) = −½·μ_E^KG(2m);
+  - μ_T2 = 0 in the thermodynamic limit (`C4_V3_referee.md:19-25,48`).
+
+  This is an E_g shear coefficient, not a cosmological constant: √g·Λ enters E_g and T_2g equally (`C4_V3_referee.md:27`).
+- **One cone.** On Z³ × ℝ, non-compact naive/staggered QED gives c_e − c_γ = −8.55e-3 at α = 1/137 (F2; `C4_F2_referee.md:62`). One-loop running reaches only 7.34e-3 at 1.4 PeV (E2; `C4_E2_referee.md:19`).
+- **Status.** Boost obstruction for regular local matter:
+  - C3: C-FAIL, single band (`TESTS.md:1209-1215`);
+  - I1, I2, I3: finite bands, band-and-zone-averaged anomaly −β (`C4_I2_referee.md:15`);
+  - M1: composites (`C4_M1_referee.md:15`);
+  - K2: Euclidean Z⁴, fails at O(κ²) (`C4_K2_referee.md:17`).
+
+  Each result is bounded to its class.
+
+### 2b. Fixed grid, tuned (`PRICE_NOTE.md:72`): cells to replace
+
+- **Averages.** Zero, by tuning. The E_g counterterm now also absorbs the free-matter term of 2a. The other routes to removing it are a selected momentum symbol, which is itself a tuning, or R₀ (P13), which holds by definition (`C4_V3_referee.md:29`).
+- **One cone.** At ξ = 1, hypercubic symmetry removes rank-2, dimension-4 matter speed splits; ξ = 2 gives −10.26 in units of e²/16π² (`C4_F2_referee.md:62`). Lane K is now answered **NO** (K1, below).
+- **Price: the count is revised.**
+  - **Z⁴, ξ = 1.** N_tune = 11 = 3 + 8. This is the exact operator codimension of linearized gauge restoration, after a separate cosmological-tadpole tuning. A one-loop example has every coefficient nonzero, though it produces one non-EH direction, not eight. 5 = 2 + 3 is the Euclidean-TT restriction rank, "not a proved physical two-helicity floor" (`C4_K1_referee.md:9,15`).
+  - **Z³ × ℝ.** At least 6, assembled as follows:
+    - 2 TT masses (`B_referee.md:26-35`);
+    - at least 1 QED speed counterterm, to about 3e-17 (`C4_F2_referee.md:62`);
+    - 3 graviton-speed directions, a local codimension (R2; `TESTS.md:757`; lane R INCONCLUSIVE).
+
+    That total is the K1 worker's assembly (`C4_K1_report.md:193`): reading, not refereed.
+  - **The referee's caution.** "Saying P0's old '2' is globally incomplete is too broad" (`C4_K1_referee_full.md:146-148`).
+
+### 2c. New rows (insert after `PRICE_NOTE.md:72`)
+
+| Substrate | Averages | Noise per realization | One cone | Graviton | Matter | Status (referee) | Price |
+|---|---|---|---|---|---|---|---|
+| **Fixed grid + exact-constraint VS (N-type) graviton** (lanes R–RC) | Free scalar: exact local stress, first class at linear order, 1/r with the same G (RN L1, `TESTS.md:843-850`). Its E_g response is not cancelled under the local coupling (§3 below) | None (one crystal) | γ = c_m²/c_g², equal to 1 only with R2's speed match (`TESTS.md:848`) | Two linear TT modes and a 1/r response to a supplied source (`TESTS.md:759`) | No conserved local momentum, in each tested class: single-band interacting matter in d ≥ 2 (`TESTS.md:857`); staggered fermions with contact or QED (`TESTS.md:959-960`); exact umklapp-free interactions in the analytic and meromorphic classes (`TESTS.md:1080`); free single-band matter cannot close the algebra (C3, `TESTS.md:1209-1215`) | R, RN, RG, RC: INCONCLUSIVE (`TESTS.md:767,873,1079,1226`). RS: bounded FAIL, momentum only (`TESTS.md:959`) | P14, or an exact additive lattice momentum not in the axioms (`TESTS.md:988`), or matter beyond regular local finite-band (P10) |
+| **Fixed grid, N bands per cell or coarse cells of L³ sites** (RI, RM) | Band-and-zone-averaged C3 anomaly exactly −1 per mode at every finite N or L. Linear-only TT falls as L⁻⁴ in the radial comparator, and is completion-dependent. One φ⁴ calculation gives a speed shift of about 2e-5·λ² through L = 16, with no proven limit (`C4_I3_referee.md:17,21`) | None | As the fixed grid | Supplied | Composites obey the same sum rule (`C4_M1_referee.md:15`) | RI: **FAIL (bounded)**, for regular positive-energy free one-particle Bloch theories and finite-band periodic quadratic networks (`TESTS.md:1402-1424`). M1: **FAIL (bounded)** | P10. Q-RI: P0 needs L* ≈ 1.18e25 (cutoff about 0.65 keV), against L ≤ 7.65e14 from a 10 TeV band; conditional on the linear-only completion (`C4_I3_referee.md:13`) |
+| **Fixed grid, preferred foliation** (RF, RF3, W2, W3) | Cubic-only gravity: six O(k⁰) mass invariants. The static model shows 2 TT suppressions, 1 determinant cancellation and a Cassini-level ratio, not 5 P0-level tunings (`C4_F1_referee.md:11`) | None | Z³ × ℝ QED needs a counterterm to about 3e-17; ξ = 1 removes it (`C4_F2_referee.md:62`) | Projectable fails. Non-projectable matches GSS. The rotation sector stays obstructed in the single-band fixed-generator ansatz (`C4_F1_referee.md:9,17`). Minimal λ = 1 broken theory: a ghost for a < 0, not unique (`C4_W2_referee.md:17`). Khronometric completion: pathological. Repaired m₄ = −a/2: unstable for λ > 1 below k*. General quadratic search: 4 healthy candidates, all far from GR (`C4_W3_referee.md:31`) | Parity-odd b₀ and (k_AF)₀ are forbidden only by the chosen action's parity (`C4_F2_referee.md:9`) | RF: **INCONCLUSIVE** (F1, F2 NOT CONFIRMED). RF3: **INCONCLUSIVE**. W2: **INCONCLUSIVE**. W3: **INCONCLUSIVE**, with bounded FAILs for 2 subclasses | P11. Explicit one-grid subcases also need M_* and L of a few 1e9, and a k⁶ coefficient of 1e38–1e39: hierarchies, "not automatically precision tunings" (`C4_F3_referee.md:17`) |
+
+### 2d. Events, influence along links only (`PRICE_NOTE.md:76`): graviton cell to append
+
+**RL1: INCONCLUSIVE, leaning FAIL** (NOT CONFIRMED as FAIL). For regular pre-caustic scalar propagation:
+- the massless 4D Johnston sum is exactly the one-hop link kernel;
+- extra hops add tails, but no direct-cone term;
+- normalizable one-hop kernels in ρV keep the ν^{-1/2} coefficient;
+- the BD mean has the unstable pair 0.375598 ± 5.052239i;
+- no scalar density repairs a thin Ricci lens at first order;
+- three stable L = 6 operators remain open (`C4_RL1_referee.md:24`); RL2 is pending.
+
+This gives part (iii) of P8 refereed sub-results. P8 itself stays suggested.
+
+## 3. Correction carried into the note (dated 2026-10-11)
+
+**The claim corrected.** The RN L1 referee's statement that a determined unitary seagull cancels free matter's uniform-strain TT response "exactly" (`TESTS.md:851`) holds only:
+- for T_2g; or
+- for the formal finite-box unitary that keeps its boundary/seam terms.
+
+**For the local, translation-covariant coupling it fails in E_g** (`C4_V3_referee.md:10-12,46`; `C4_V2_referee.md:9`).
+
+**The same correction applies to:**
+- I3's "μ = 0 at every L";
+- V1's "exact eigenstate for every h", which holds only with R₀;
+- W1's premise (`TESTS.md:1348`).
+
+**Effect on the note.** v5 never relied on the seagull. The only effect is the larger natural size of P0's E_g number recorded in 2a.
+
+## 4. "The axiom prices" (§5, `PRICE_NOTE.md:160-168`)
+
+**P0, revised (replace `PRICE_NOTE.md:162`).** Keep all four axioms and tune.
+- **Shear.** Two TT counterterms, each leaving at most 5.7e-99 of natural size (`B_referee.md:35`). The E_g natural size now includes the free-matter term (V3).
+- **Count.** Z⁴: 11 by operator codimension (5 as the Euclidean-TT rank). Z³ × ℝ: at least 6 including matter speeds, assembled; the total is a reading (§2b).
+- **Speed sector.** One refereed instance: F2's non-compact naive/staggered QED on Z³ × ℝ needs one counterterm at about 3e-17, and ξ = 1 removes it. The full speed count stays unrefereed.
+- **Touches:** no axiom. **Status:** as in v5, "an owner decision, not a calculation" (`SUMMARY.md:66`).
+
+| # | Price | Axiom or primitive touched | Substrate that pays it | What the refereed record says it buys |
+|---|---|---|---|---|
+| P10 | **A continuum tower per cell:** an infinite-dimensional, unbounded one-particle fibre in each cell (a complete reciprocal-lattice tower) | Qubit: "The full one-site possibility domain has algebraic presentation `M_2(C)`" (`MINIMAL_AXIOMS_2026-06-29.md:47`), at the one-particle level. The microscopic claim is open: it "does not prove an infinite microscopic on-site Hilbert space" (`C4_I1_referee.md:15`) | Fixed grid, N bands | Exact C1 + C3 closure for free matter, given an integrated positive-energy Poincaré representation or band-gluing assumptions; Nelson integrability is assumed. Patches within one tower cannot be decoupled; separate sectors may be (`C4_I1_referee.md:7,13,21`) |
+| P11 | **A preferred foliation:** keep the grid's slicing and give up GR's hypersurface-deformation algebra | No axiom. A time metric is downstream content (`MINIMAL_AXIOMS_2026-06-29.md:185`); the slicing would need a bridge or primitive | Fixed grid, preferred foliation | It removes the boost leg of C3, but not the rotation sector in the single-band fixed-generator ansatz (`C4_F1_referee.md:9`). It costs six cubic mass invariants (`C4_F1_referee.md:11`), the exact relation m₄ = −a/2 when repaired (`C4_W3_referee.md:31`), and one-grid hierarchies (`C4_F3_referee.md:17`). No window-compatible healthy region has been exhibited or excluded. INCONCLUSIVE |
+| P12 | **Time on the grid with the space step (Z⁴, ξ = 1)** | Lattice names Z³ (`MINIMAL_AXIOMS_2026-06-29.md:37`). The Z³ × Z_τ block is that of the registered `kinetic_isotropy_primitive` (`PRICE_NOTE.md:182`, a lane-P reading) | Fixed grid | Matter speeds protected exactly (`C4_F2_referee.md:33`). Costs: N_tune = 11 in the graviton sector (K1); Euclidean, so no boosts; κ² Killing failure (`C4_K2_referee.md:17`); coupled reflection positivity unproved; 9.899 is a real-time leapfrog instability only (`C4_K2_referee.md:13`) |
+| P13 | **A vacuum-referenced coupling rule** (Rule R; R₀ subtracts the strained vacuum energy) | No axiom. A coupling choice the supplied structure does not fix "remains a named conditional" (`MINIMAL_AXIOMS_2026-06-29.md:89-90`) | Fixed grid, all rows | R: the interaction part of μ cancels at O(λ²) with no tunable number, conditionally (`C4_V1_referee.md:17`). R₀: μ = 0 "by definition" (`C4_V3_referee.md:29`). Neither is basis-free or derived (Kato does not fix them; Gell-Mann–Low is non-local, `C4_V2_referee.md:11`). They leave an O(λε) scattering Ward defect, with relative size (ka)² (`C4_V1_referee.md:13`; `C4_V2_referee.md:19`) |
+| P14 | **Non-local (SLAC-type) matter:** 1/r² hopping, or a momentum density with power-law tails and umklapp-free interactions | Not Admissibility as worded, which fixes only the local odds rule (`TESTS.md:979-981`). But no finite-component analytic network produces it (C1, `TESTS.md:1168-1177`), and dressing in D1's class cannot (`C4_D1_referee.md:17`) | N-type row | It can feed the shift constraint: the SLAC stress satisfies the linear first-class identities, but is power-law non-local (`TESTS.md:1066-1067`). Exact SLAC at finite Z forces a 1/r² bare tail amplified by 1/Z (`C4_D1_referee.md:11`) |
+
+## 5. Open questions (append to §6, `PRICE_NOTE.md:184-209`)
+
+- **Pending lanes, pre-registered, no referee line yet.**
+  - **RL2:** the curved mean and the physical variance of the three stable L = 6 operators. It decides part (iii) of P8 (`TESTS.md:1755-1771`).
+  - **RP:** Pauli-type species sum rules for μ_E. Can matter content cancel the free E_g term order by order (`TESTS.md:1822-1851`)?
+  - **RB:** boosts that are not first moments. This is the one hypothesis shared by C3, I1/I2, M1 and K2 (`TESTS.md:1853-1877`).
+- **Open within refereed scope.**
+  - Composite matter outside M1's class: non-number-conserving embedded sectors, massless sectors, unbounded continua (`C4_M1_referee.md:15`).
+  - Decoupled Poincaré sectors (`C4_I1_referee.md:13`).
+  - The Z⁴ general no-go hypotheses, and coupled reflection positivity (`C4_K2_referee.md:11,15`).
+  - Strong-dynamics routes outside E1's spectator class (`C4_E1_referee.md:17`).
+  - QED dressing beyond the analytic Coulomb-gauge ansatz (`C4_V3_referee.md:44`).
+  - Kitaev at all sectors and T > 0 (`TESTS.md:1192-1205`).
+
+## 6. Provenance (append to §7)
+
+| Result | Referee verdict as given | Where |
+|---|---|---|
+| R1, R2 / R3 | NOT CONFIRMED → INCONCLUSIVE / CWC; lane R INCONCLUSIVE | `TESTS.md:736-767` |
+| RN L1 / L2 / L3 | CWC (F-FAIL by binary) / NOT CONFIRMED / CWC; lane INCONCLUSIVE | `TESTS.md:843-873` |
+| RS S1, S2 | each CWC; bounded FAIL, momentum only | `TESTS.md:935-959` |
+| RG G1 / G2 / G3 | NOT CONFIRMED / main checks pass / CWC; lane INCONCLUSIVE | `TESTS.md:1042-1079` |
+| RC C1 / C2 / C3 | CWC FAIL / NOT CONFIRMED / CWC C-FAIL; lane INCONCLUSIVE | `TESTS.md:1168-1226` |
+| C4 I1, I2, I3, M1, D1, D2, E1, E2 | each CONFIRMED WITH CORRECTIONS | `C4_{I1,I2,I3,M1,D1,D2,E1,E2}_referee.md:1` |
+| C4 F1, F2, F3 | each NOT CONFIRMED (INCONCLUSIVE) | `C4_F{1,2,3}_referee.md:1` |
+| C4 K1 / K2 | CWC (N_tune = 11) / CWC (INCONCLUSIVE) | `C4_K{1,2}_referee.md:1` |
+| C4 W1 / W2 / W3 | CWC (bounded FAIL) / NOT CONFIRMED / CWC (INCONCLUSIVE) | `C4_W{1,2,3}_referee.md:1` |
+| C4 V1 / V2 / V3 | NOT CONFIRMED / NOT CONFIRMED / CWC, (a) and (b) FAIL | `C4_V{1,2,3}_referee.md:1` |
+| C4 RL1 | NOT CONFIRMED → INCONCLUSIVE, leaning FAIL | `C4_RL1_referee.md:1` |
+
+### Wrap-up additions to the v6 delta (21:05Z)
+
+These were refereed after the delta was drafted. All verdicts are from codex sol.
+
+- **RP (Pauli-type species sum rules for μ_E): FAIL (bounded).** Cancelling E_g needs the count rule R0 plus the mass relations R2, R4 and R6. R4 is Pauli's quartic supertrace. Only exactly matched spectra cancel to all orders. This turns P0's E_g tuning into the same kind of naturalness problem as the cosmological constant (`C4_P1_referee.md`).
+- **RB (boosts that are not first moments): FAIL (bounded).**
+  - Gravity's affine-lapse smearing forces a first-moment boost.
+  - On the Brillouin torus there is no global undeformed Lorentz action, so no DSR/κ-Poincaré escape on the lattice.
+  - The lattice is therefore a preferred-frame theory (`C4_B1_referee.md`).
+- **RN2 (interacting matter without number conservation): INCONCLUSIVE, leaning FAIL.** A regular-band subclass is a rigorous bounded FAIL (`C4_N1_referee.md`).
+- **Event row update: lensing passes in the mean; noise fails at the bar.**
+  - RL2: GR's √Δ lensing holds in the mean for all three stable layer operators. This is a positive result, and it settles part (iii) of P8 in the mean (`C4_RL2_referee.md`).
+  - RL3, RL3b and RL4: the noise fails the 1e-19 m locality bar for edged sources over 1 Gpc. This is a bounded FAIL, and it needs ℓ_k ≈ 7e-19 m (`C4_RL4_referee.md`).
+  - Price reading: on the event substrate (P1–P4), lensing works if the non-locality scale is about 7e-19 m instead of 1e-19 m. That is a miss of less than one decade.

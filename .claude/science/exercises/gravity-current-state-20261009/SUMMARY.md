@@ -352,3 +352,138 @@ Details are in `TESTS.md`, under "Lane RC results".
 - **Infinite-band networks: FAIL (bounded, refereed).** Making momentum and boosts close exactly needs, for each particle, a whole infinite tower of bands. That is a continuum field in every cell, with unbounded energy per cell. Every finite number of bands, and every coarse-cell version of the grid, only moves the anomaly; it never removes it. A network with N bands is just a finer grid. Still open: interacting matter built as composites of qubits, which this result does not cover.
 - **Preferred time slicing: INCONCLUSIVE.** The healthy Hořava graviton fits on the lattice. But one loop of lattice QED leaves the electron 0.85% slower than light, which needs a tuning to 3×10⁻¹⁷. Only putting time on the lattice with the same step as space removes that. Several escapes remain open.
 - **Dressed bands: FAIL (bounded, refereed).** Dressing a particle with soft quanta shrinks any corner in its energy curve by its residue Z; it never makes one. The exact SLAC corner therefore needs non-local hopping, or Z = 0.
+## 17. Campaign C4 (owner, 2026-10-11): the boost wall
+
+**Who and what.** The campaign ran from 16:21Z, with a planned end at 22:21Z. Probes: Opus 5.5 at xhigh (same family). Every probe recorded so far has a codex gpt-5.6-sol (xhigh) referee, from another vendor. Readings were fixed before each run (`TESTS.md:1245-1877`). This section records **referee verdicts only**. It was updated at wrap-up (about 21:55Z) to include RL2, RL3/RL3b, RP, RB, RN2 and RL4. §16 covered the first wave; this section covers the whole campaign so far. The synthesis was drafted by Claude Opus 5.5 (same family) and is not refereed.
+
+**In plain words.**
+- **The question.** On the grid, can ordinary local matter carry a graviton that is massless and pulls everything alike, without tuning by hand? C4 chased every escape that lane RC left open (§15).
+- **One thing blocks every route tried.** On the grid, a particle's momentum moves it by a difference taken across neighbouring sites, not by a true shift. A boost built from the energy density then does not combine with that momentum the way relativity requires. Closing the algebra would need the curve of E² against momentum to have the same curvature everywhere. A curve that repeats around the zone cannot: its curvature averages to zero, so the misfit averages to a fixed amount of order one. This is C3 (§15).
+- **C4 found the same misfit five more times:**
+  - in bands built from many sub-bands;
+  - in bound composites;
+  - on a grid with time as a fourth direction (Euclidean), at second order;
+  - inside the rotation part of the constraints, when the grid's own time slicing is used;
+  - in the vacuum: free matter's zero-point energy shifts under one of the two shear strains (that this has the same cause is a reading, not refereed).
+- **Escapes.**
+  - Infinitely many bands per cell do close the algebra, but that is a continuum field in every cell (FAIL, bounded).
+  - Dressing particles with soft quanta never makes the needed corner in the energy curve (FAIL, bounded).
+  - Strong dynamics can make matter's speed differences die away, but too slowly in the tested QED case, and it does nothing for the graviton's shear stiffness or speed (FAIL, bounded).
+  - A preferred time slicing is not ruled out, but every version tried costs extra tunings or a large hierarchy (INCONCLUSIVE).
+  - A vacuum-referenced coupling rule cancels the interaction part of the shear response, but not the free part (FAIL for the framework's own fermions).
+- **Costs now have numbers.**
+  - With time on the grid (Z⁴): 11 gauge-restoring tunings by the registered count, not 2.
+  - With continuous time: lattice QED splits the electron and photon speeds by 0.85%, which a counterterm must cancel to 3 parts in 10¹⁷.
+  - Free local matter, on its own, produces one of P0's two shear numbers.
+- **A correction.** Earlier records said a determined "seagull" term cancels free matter's shear response. That holds in one shear channel only (T_2g), not in the other (E_g).
+- **Nothing passed. No lane proved a no-go for all lattice matter either**: every FAIL is bounded to its class.
+
+| Lane | Question | Verdict (referee) | What it means |
+|---|---|---|---|
+| RI | Infinite-band networks | **FAIL (bounded)**; I1, I2, I3 each CWC | Exact closure needs a complete tower of bands per cell (one-particle level). Any finite N, or any coarse cell, keeps a band-and-zone-averaged anomaly of −1 per mode. A uniform L³ supercell is exactly a finer grid |
+| RF | Preferred foliation (the grid's slicing) | **INCONCLUSIVE**; F1, F2 NOT CONFIRMED | Projectable Hořava fails, and so does the single-band fixed-generator realization. Non-projectable Hořava matches GSS on the lattice. Cubic-only gravity allows 6 mass invariants. The QED speed split on Z³ × ℝ needs a tuning to about 3e-17; time on the grid at ξ = 1 removes it |
+| RD | Gapless-dressed bands | **FAIL (bounded)**; D1, D2 CWC | J_E = Z·J_ε0: dressing scales a kink by Z and never creates one. Exact SLAC at finite Z forces a non-local 1/r² bare tail |
+| RE | Emergent Lorentz invariance from strong dynamics | **FAIL (bounded)**; E1, E2 CWC | Relative matter speeds can become irrelevant. The TT vacuum response and the graviton speed cannot. F2's split runs only to 7.34e-3 by 1.4 PeV, missing the bound by 2.76e16 |
+| RW | Does the anomaly force a mass; is the broken theory healthy? | W1: **FAIL bounded to its ansatz** (CWC), unrestricted question INCONCLUSIVE. W2: **INCONCLUSIVE** (NOT CONFIRMED). W3: **INCONCLUSIVE**, with bounded FAILs for two subclasses (CWC) | No lane-level line is recorded. Under the fixed lane clause (`TESTS.md:1370`), W1's bounded FAIL is the only refereed FAIL, and its referee scopes the unrestricted question as INCONCLUSIVE |
+| RM | Composites and continua | **FAIL (bounded)** (CWC) | Bound states obey the same sum rule, whatever their binding or size |
+| RK2 | Z⁴ tuning count; discrete-time algebra | K1: **N_tune(Z⁴) = 11** (CWC); lane K answered **NO**. K2: **INCONCLUSIVE** (CWC) | Z⁴ protects matter speeds but moves the cost into the graviton sector. The free fields close through O(κ) and fail at O(κ²) |
+| RF3 | Z⁴ matter with foliated gravity at a separate UV scale | **INCONCLUSIVE** (NOT CONFIRMED) | The explicit one-grid subcases need hierarchies of order 1e9 (scale) and 1e38–1e39 (a coefficient) |
+| RV, RV2, RV3 | A dressed momentum that annihilates the vacuum | V1: **INCONCLUSIVE**. V2: **INCONCLUSIVE, leaning FAIL** (both NOT CONFIRMED). V3: **(a) FAIL, (b) FAIL (bounded)** (CWC) | The interaction part cancels at O(λ²) under Rule R. The free Jacobian leaves μ_E. The supervisor's summary line: the lead closes in this form (`TESTS.md:1815`) |
+| RL, RL2, RL3 | Event-route lensing, and the noise of the stable readouts | RL1: **INCONCLUSIVE, leaning FAIL**. RL2: **INCONCLUSIVE, leaning FAIL** (CWC), with a **positive mean result**: all three stable six-layer operators give GR's √Δ focusing at leading needle order. RL3: NOT CONFIRMED as FAIL, so **INCONCLUSIVE, leaning FAIL**. RL3b: CWC, **INCONCLUSIVE, leaning FAIL**. **RL4: CWC, FAIL (bounded)**, so **the noise lane is FAIL (bounded)** | Two independent methods agree that the noise grows at rate k√ε/ℓ_k with exponent ½ and k = 2.73–3.25. At the 1e-19 m bar that is 281–334 e-folds, a miss of about 0.8 decades in ℓ_k. RL4 proved both lemmas: c_low = 0.63–0.71 ≫ 0.00975, for sources with a spacelike past edge. The noise fails the 1e-19 m bar. Edgeless sources and the exact prefactor remain open |
+| RP | Species sum rules for μ_E | **FAIL (bounded)** (CWC) | Cancelling needs a count rule R0 plus the mass relations R2, R4 and R6. R4 is Pauli's quartic supertrace. The SM proxy misses R0 by +22F(0). Only exactly matched spectra cancel to all orders |
+| RB | Boosts that are not first moments | **FAIL (bounded)** (CWC) | A regular affine-lapse smearing forces a first-moment boost. For a cubic Morse band, [K,P] cannot close as a function of (H,P). Undeformed closure is impossible on bounded exponentiating sectors. No global smooth undeformed Lorentz action exists on the Brillouin torus. Patchwise or singular DSR, fully deformed algebras, interacting matter and touching bands remain open |
+| RN2 | Interacting matter that does not conserve particle number, d ≥ 2 | **INCONCLUSIVE, leaning FAIL** (CWC) | Under closure, every fixed-mass subspace folds into a complete tower (number conservation not needed). Closure is impossible if any global eigenband has a C¹ projector (a rigorous bounded FAIL for the regular-band subclass). A gap plus asymptotic completeness does not supply that band. The d ≥ 2 index lemma is open |
+
+### The root obstruction, precisely (one statement, six refereed appearances)
+
+**The statement.** Assume a regular local lattice law and a boost that is the first moment of the energy density. Its momentum generates central differences, factor by factor, not translations. Closure with the boost then needs Hess(E²/2) = βI on each band. A periodic band integrates its Hessian to zero, so the anomaly averaged over the zone is −β. That the six results below are one obstruction is the drafter's reading; each appearance is refereed separately.
+
+1. **C3, lane RC (CWC; `TESTS.md:1209-1215`).** In the constant-shift, linear-lapse and rotational sectors, every regular local gravity-dependent completion vanishes. Closure then needs a constant Hessian, which leaves only a Carroll contraction.
+2. **Finite bands: I1, I2 and I3 (CWC).**
+   - Every finite-dimensional periodic C² Bloch matrix has a signed band-and-zone-averaged anomaly of exactly −β per mode (`C4_I2_referee.md:15`; `C4_I3_referee.md:21`).
+   - Exact closure needs a complete reciprocal-lattice tower, i.e. "an infinite-dimensional, unbounded one-particle fibre" (`C4_I1_referee.md:21`).
+3. **Composites: M1 (CWC).** Every globally isolated positive-energy composite band has averaged anomaly −βI, "independently of binding, size, internal fibre dimension or Chern twisting" (`C4_M1_referee.md:15`).
+4. **Euclidean Z⁴: K2 (CWC; verdict INCONCLUSIVE).** Free scalar and naive/staggered fermion couplings are exact through O(κ). Their Killing transformations fail e(4) closure at O(κ²), and a seagull cannot repair it (`C4_K2_referee.md:17`).
+5. **A preferred slicing: F1 (item confirmed; verdict NOT CONFIRMED).** "The rotation sector is inside the momentum-constraint bracket"; lapse transport gives the same obstruction in the fixed-generator single-band ansatz (`C4_F1_referee.md:9`).
+6. **The vacuum: V3 (CWC).**
+   - The bulk-local, translation-covariant uniform-strain coupling makes the vacuum energy carry the flow's Jacobian.
+   - The T_2g flow is divergence-free, so μ_T2 = 0 in the thermodynamic limit (−7.62e-5 at L = 12 for the fermion).
+   - The E_g flow gives μ_E = +1.97038864e-3 for the m = 1 scalar in RN-L1 normalization. For staggered fermions, μ_E^stag(m) = −½·μ_E^KG(2m) (`C4_V3_referee.md:19-25,48`).
+   - "Jacobian = C3's anomaly in the vacuum" is the supervisor's same-family reading (`TESTS.md:1817-1820`).
+   - Related, and refereed: ⟨E_c − H⟩_vac = −(ρ + p) for one band, which a cosmological constant cannot cancel (`C4_I3_referee.md:5-11`; `C4_W2_referee.md:13`).
+
+### The costs (refereed numbers)
+
+- **K1, time on the grid (Z⁴, ξ = 1).**
+  - N_tune(Z⁴) = 11 = 3 masses + 8 kinetic forms. This is the exact operator codimension of linearized gauge restoration, counted after a separate cosmological-tadpole tuning.
+  - It is corroborated by a one-loop example in which every coefficient is nonzero. The loop produces one non-EH direction, not eight basis-independent ones.
+  - 5 = 2 + 3 is only the rank of the Euclidean-TT restriction, "not a proved physical two-helicity floor" (`C4_K1_referee.md:9,15`).
+  - Scope: "Saying P0's old '2' is globally incomplete is too broad" (`C4_K1_referee_full.md:146-148`).
+- **F2 and E2, continuous time (Z³ × ℝ, non-compact naive/staggered QED).**
+  - At one loop, c_e − c_γ = −8.55e-3 at α = 1/137. That allows photon decay above 7.8 MeV and exceeds the 1.4 PeV survival bound by 3.2e16. One relative-speed counterterm must be tuned to about 3e-17 of its natural loop size (`C4_F2_referee.md:62`).
+  - At ξ = 1, hypercubic symmetry removes the split; ξ = 2 gives Δ = −10.26 (in units of e²/16π²).
+  - Running reaches only 7.34e-3 at 1.4 PeV (`C4_E2_referee.md:19`).
+- **V3, free matter alone.**
+  - It produces P0's E_g shear coefficient. The coefficient is not a cosmological constant: √g·Λ enters E_g and T_2g equally.
+  - Removing it needs one of: an E_g counterterm, which is P0's tuning; a selected momentum symbol, which is a tuning; or the vacuum-referenced subtraction R₀, which "enforces that result by definition" (`C4_V3_referee.md:27-29`; `C4_V2_referee.md:23`).
+- **Preferred-slicing costs.**
+  - Cubic-only gravity: six mass invariants, "requiring additional relations beyond P0". The static model shows two TT suppressions, one determinant cancellation and a Cassini-level ratio. It does not show five P0-level tunings (`C4_F1_referee.md:11,17`).
+  - The exactly repaired khronometric completion costs the relation m₄ = −a/2, and its λ > 1 branch stays unstable below k* = μ√(2/(λ−1)) (`C4_W3_referee.md:31`).
+  - One-grid Pospelov–Shang subcases: M_* and L are each a few 1e9, and the TT k⁶ coefficient is 1e38–1e39. These are "legitimate hierarchies beyond P0, though not automatically precision tunings" (`C4_F3_referee.md:17`).
+- **Dressing ansatz (W1).** In the h-linear, reflection-even quartic ansatz, the E and T2 cancellation loci are codimension-one spheres: one tuning per channel (`C4_W1_referee.md:22`).
+- **Q-RI, coarse cells (I3).** Meeting P0 needs L* ≈ 1.18e25, a cutoff near 0.65 keV. A 10 TeV relativistic band caps L at 7.65e14. The two are incompatible, conditional on the linear-only TT completion (`C4_I3_referee.md:13`).
+- **The continuous-time total (reading, not refereed).** 2 TT masses (P0) + at least 1 QED speed (F2) + 3 graviton-speed codimensions (R2, whose lane is INCONCLUSIVE) gives at least 6. That sum is the K1 worker's assembly (`C4_K1_report.md:191-194`).
+
+### Correction to earlier records (dated 2026-10-11; recorded at `TESTS.md:1797-1802`)
+
+**The corrected claim.** The RN L1 referee's statement that a determined unitary seagull cancels free matter's uniform-strain TT response "exactly" (`TESTS.md:851,884`; plain version §12, `SUMMARY.md:298`) holds only:
+- for T_2g; or
+- for the formal finite-box unitary with its boundary/seam terms kept.
+
+For the local, translation-covariant coupling, it is **false in E_g**.
+
+**Why.** The f-sum substitution silently kept an extensive boundary piece, so it never evaluated the local seagull (`C4_V3_referee.md:10-12,46`).
+
+**The same correction applies to:**
+- I3's "μ = 0 at every L";
+- V1's "exact eigenstate for every h", which holds only with R₀;
+- W1's premise "μ = 0 for free matter" (`TESTS.md:1348`).
+
+### What remains open (with the referee's scope)
+
+- **RI.**
+  - Interacting or composite qubit matter beyond M1's class.
+  - Separate complete Poincaré sectors that do not interact (`C4_I1_referee.md:13`).
+  - Nelson integrability, which is assumed.
+  - Arbitrary finite networks, not shown to be fine lattices, and a universal Z_N (`C4_I2_referee.md:15`).
+- **RM.** Non-first-moment generators (RB, pending); non-number-conserving embedded sectors in d ≥ 2; irrational centres; massless sectors; unbounded continuum finite-N sectors (`C4_M1_referee.md:15`).
+- **RD.** General Herglotz momentum dependence; the all-orders 1D Fermi sea; singular or sonic vertices; universal Z = 0; dressed two-band crossings (`C4_D1_referee.md:17`); gauge-complete, strong-coupling and T > 0 dressing (`C4_D2_referee.md:9`).
+- **RF and RF3.**
+  - Non-realizability for all finite-band matter, and a separate gravitational UV scale (`C4_F1_referee.md:17`).
+  - F2's realization C, and parity-odd dimension-3 terms, which only the chosen action's parity forbids (`C4_F2_referee.md:9,58`).
+  - Other dimensional-transmutation mechanisms, and a dynamical khronon (R4), which remains an RF theory (`C4_F3_referee.md:11-13`).
+- **RE.** Emergent diffeomorphism invariance, exact sum rules, gravitational fixed points, scale-separated matching (`C4_E1_referee.md:17`).
+- **RW.**
+  - The P₄ route, O(λ³) and quadratic dressings (`C4_W1_referee.md:20`).
+  - The complete Dirac algorithm and the λ ≠ 1 kinetic structure (`C4_W2_referee.md:15`).
+  - A window-compatible healthy region: none exhibited, and none excluded (`C4_W3_referee.md:29`).
+- **RK2.**
+  - Coupled reflection positivity.
+  - K2's general no-go hypotheses: a compact smooth shell, a Wick-real translation symbol and a complete boost flow (`C4_K2_referee.md:11,15`).
+  - K1 is not universal for every W(B4)-covariant stress.
+- **RV.**
+  - R and R₀ are not derived.
+  - The O(λ³) feedback formula is conditional, with no X₂ computed.
+  - The lapse coupling, i.e. the Eötvös observable, was not tested (`C4_V2_referee.md:17-19`).
+  - QED beyond the analytic Coulomb-gauge A,E ansatz (`C4_V3_referee.md:44`).
+- **RL.** Edgeless (Gaussian) sources, and the actual finite-source prefactor at 1 Gpc (`C4_RL4_referee.md`).
+- **RB.** Patchwise or singular DSR; fully deformed non-first-moment algebras with extra constraints; non-Morse or touching bands.
+
+**Against the registered expectations.**
+- As expected: RI, RD and RM FAIL; K1 > 2; RF, RF3 and K2 INCONCLUSIVE (each registered as "FAIL or INCONCLUSIVE"); W1 a bounded FAIL.
+- W2 was expected to FAIL; it is INCONCLUSIVE.
+- RE was expected INCONCLUSIVE leaning FAIL; it is a bounded FAIL.
+- RV3 was expected to PASS conditionally; it FAILs, on a free-matter term nobody registered.
+- RL was expected to PASS in the mean; it is INCONCLUSIVE leaning FAIL.
+
+Details and referee lines: `TESTS.md`, "Campaign C4".

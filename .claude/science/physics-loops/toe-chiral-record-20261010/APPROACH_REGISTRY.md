@@ -577,3 +577,16 @@ coordinate presentations are in the family.
 Family not used: a sum of two even generators plus both swapped-dot
 generators. That remains open. The 300-dimensional affine space is not
 this family.
+
+Cycle 54 target contract: whether every chirality coefficient on the sum
+of the second and third even generators plus both swapped-dot generators
+has partner rank 10.
+
+Family used: the second-plus-third even-dot sum. One 17-row chirality
+pencil on every ordered height pair, the rank-10 base image, and the
+constant gcd of the pivot minors at coefficients 0, 1, -1, -1/2, and
+5/2. Both coordinate presentations are in the family.
+
+Family not used: the sum of the first and second even generators plus
+both swapped-dot generators. That remains open. The 300-dimensional
+affine space is not this family.

@@ -280,3 +280,13 @@ orthogonal `2`. The base image has rank 10. The pivot minors at
 chirality coefficients `0`, `1`, `-1`, `-1/2`, and `5/2` have a nonzero
 constant gcd. A sum of two even generators is not in this count. The
 ten-kernel coefficient span is not classified.
+Cycle 54 shows that on every ordered height pair, the second and third
+even generators plus both swapped-dot generators have partner rank 10 at
+every chirality coefficient. On the source-same pairs the summed
+coordinates are swapped `-5/2`, parallel `-1`, oblique `1`, and
+orthogonal `3`. On the other three pairs they are swapped `-1`, parallel
+`1`, oblique `1`, and orthogonal `2`. The base image has rank 10. The
+pivot minors at chirality coefficients `0`, `1`, `-1`, `-1/2`, and `5/2`
+have a nonzero constant gcd. The sum of the first and second even
+generators is not in this count. The ten-kernel coefficient span is not
+classified.

@@ -265,3 +265,10 @@ both swapped-dot generators, on every ordered height pair. Both
 coordinate presentations are in the count. Every chirality coefficient
 has partner rank 10. It does not take a sum of two even generators, and
 it does not classify the 300-dimensional affine space.
+
+Cycle 54 takes the second even generator plus the third even generator
+plus both swapped-dot generators on every ordered height pair. Both
+coordinate presentations are in the count. Every chirality coefficient
+has partner rank 10. It does not take the sum of the first and second
+even generators, and it does not classify the 300-dimensional affine
+space.

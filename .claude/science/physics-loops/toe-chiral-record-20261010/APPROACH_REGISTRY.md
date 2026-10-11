@@ -391,3 +391,15 @@ cross sum `4` on the same bond.
 Family not used: a different ratio, including twice the chirality cap
 together with twice the transverse-sign cap. That remains open. The
 300-dimensional affine space is not this family.
+
+Cycle 38 target contract: whether every nonzero rational combination of
+the chirality cap, the transverse-sign cap, and the matched cross has
+partner rank 10, or some combination has a nonzero ten-kernel partner.
+
+Family used: the stacked partner map of the three kernels, its rank-24
+kernel, the even space of the partner height, and the witness cross
+sums `0` and `-1`.
+
+Family not used: a vector with a nonzero coefficient outside these three
+kernels. That remains open. The 300-dimensional affine space is not
+this family.

@@ -460,3 +460,17 @@
   bond-space dimension count is not repeated. The 300-dimensional
   affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 38
+
+- The ansatz is the rational span of the chirality cap, the
+  transverse-sign cap, and the matched cross. A vector with a nonzero
+  coefficient outside those three kernels is not in this count. The
+  five lines through these kernels are not re-proved.
+- The checked sums are two-centre kernel cross sums. A kernel cross
+  sum is not an alphabet mean.
+- The order-blind converse is not applied. The even space is named by
+  the cycle-29 note and recomputed here. The doubled chirality line is
+  the cycle-37 note. The bond-space dimension count is not repeated.
+  The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

@@ -253,3 +253,12 @@ are `-1` and `-2`. The doubled sign and matched vector on the same
 bond has kernel cross sum `4`. It does not classify a different ratio
 of those three kernels, and it does not classify the 300-dimensional
 affine space.
+
+Cycle 38 prunes the reading that every nonzero combination of the
+chirality cap, the transverse-sign cap, and the matched cross has
+partner rank 10. The chirality cap pairs with the sign product. The
+partner kernel of a matched-zero vector is the even space of the
+partner height, and a nonzero matched coefficient has only the partner
+0. The witness kernel cross sums are `0` and `-1`. It does not classify
+a vector outside those three kernels, and it does not classify the
+300-dimensional affine space.

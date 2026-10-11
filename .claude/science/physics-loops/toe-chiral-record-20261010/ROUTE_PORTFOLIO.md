@@ -177,3 +177,10 @@ transverse-sign cap, and the matched cross. A nonzero scale has partner
 rank 10, so the only ten-kernel partner is 0. It does not take a
 different ratio of those three kernels, and it does not classify the
 300-dimensional affine space.
+
+Cycle 38 takes the rational span of the chirality cap, the
+transverse-sign cap, and the matched cross. A nonzero matched
+coefficient has partner rank 10. A zero matched coefficient has partner
+kernel equal to the even space of the partner height. It does not take
+a vector outside those three kernels, and it does not classify the
+300-dimensional affine space.

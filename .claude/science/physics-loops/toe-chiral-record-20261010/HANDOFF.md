@@ -438,15 +438,34 @@ doubled sign and matched vector on the same bond has kernel cross sum
 `4`. A different ratio of these three kernels is not in this count. The
 ten-kernel coefficient span is not classified. Runner `PASS=8 FAIL=0`.
 
+Cycle 38. On the same alphabet the chirality, transverse-sign, and
+matched span is the rational span of those three kernels. It is
+3-dimensional and meets each ratio span of the oblique-matched plane
+only at 0. For every ordered height pair, a nonzero vector in the span
+has partner rank 10 exactly when its matched coefficient is nonzero, and
+then the only ten-kernel partner is 0. When the matched coefficient is
+0, the partner rank is 7 and the partner kernel is the even space of
+the partner height relative to the source height. On pairs `(1, 2)`,
+`(2, 1)`, and `(1, 3)` that space is spanned by the sign product, the
+oblique dot minus the parallel dot, and the orthogonal cross minus half
+the swapped cross. On pairs `(3, 1)`, `(2, 3)`, and `(3, 2)` it is
+spanned by the sign product, the swapped cross, and the parallel dot
+plus the oblique dot. The generators have excluded coefficients 0. The
+chirality cap pairs with the sign product. At heights 1 and 2 the bond
+on `-e_x` and `-e_y` has centre pairs `(-1, 1)` and `(1, 1)` and kernel
+cross sum 0. The chirality cap plus the matched cross has centre pairs
+`(-1, 1)` and `(0, 1)` and kernel cross sum `-1`. The triples
+`(2, -3, 5)` and `(2, -3, 0)` have partner ranks 10 and 7. A vector
+outside the three kernels is not in this count. The ten-kernel
+coefficient span is not classified. Runner `PASS=8 FAIL=0`.
+
 ## Next exact action
 
-Decide whether twice the chirality cap plus twice the transverse-sign
-cap plus the matched transverse cross can pair with a nonzero
-ten-kernel vector and still have every cross moment equal to 0. That
-ratio is outside the equal-coefficient line, the doubled
-transverse-sign line, the doubled matched line, the line with
-transverse-sign coefficient 2 and matched coefficient 2, and the
-doubled chirality line. Do not claim the ten-kernel coefficient span is
+Decide whether the sign product has a ten-kernel partner outside the
+odd space of the partner height. The chirality cap and the
+transverse-sign cap have partner kernel equal to the even space, whose
+excluded coefficients are 0. A nonzero matched coefficient in that span
+has partner rank 10. Do not claim the ten-kernel coefficient span is
 settled. Do not claim the 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to

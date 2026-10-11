@@ -619,3 +619,22 @@ pair, so a nonzero scale pairs only with 0. The witness cross sums are
 `-1` and `-2`. The doubled sign and matched vector on the same bond has
 cross sum `4`. A different ratio stays outside this ansatz. The
 ten-kernel coefficient span stays open.
+
+## Cycle 38
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether the sign product has a ten-kernel partner outside the odd space of the partner height. The chirality cap and the transverse-sign cap have partner kernel equal to the even space, whose excluded coefficients are 0. Do not claim the ten-kernel coefficient span is settled."
+```
+
+The chirality, transverse-sign, and matched span splits on the matched
+coefficient. A nonzero matched coefficient has partner rank 10. A zero
+matched coefficient has partner kernel equal to the even space of the
+partner height. The chirality cap pairs with the sign product. The
+witness cross sums are `0` and `-1`. A vector outside the three kernels
+stays outside this ansatz. The ten-kernel coefficient span stays open.

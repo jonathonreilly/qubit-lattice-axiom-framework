@@ -783,3 +783,28 @@ pair, so the only ten-kernel partner is 0. The witness cross sums are
 cross sum `4`. A different ratio of these three kernels is outside the
 ansatz. The ten-kernel coefficient span is not classified. The
 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 38
+
+claim_id: chiral_pair_chi_ts_matched_span_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); coefficients on the chirality cap, the transverse-sign cap, and the matched cross; witness directions (-1, 0, 0) and (0, -1, 0)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-29 note. The doubled chirality line is the cycle-37 note. No formation rate is used.
+
+The chirality, transverse-sign, and matched span is 3-dimensional and
+meets each ratio span only at 0. A nonzero vector has partner rank 10
+exactly when its matched coefficient is nonzero. When that coefficient
+is 0, the partner rank is 7 and the partner kernel is the even space of
+the partner height, with excluded coefficients 0. The chirality cap
+pairs with the sign product. The witness cross sums are `0` and `-1`.
+A vector outside the three kernels is outside the ansatz. The
+ten-kernel coefficient span is not classified. The 300-dimensional
+affine space is not classified.

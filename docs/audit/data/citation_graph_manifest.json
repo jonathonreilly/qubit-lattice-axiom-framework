@@ -1,6 +1,6 @@
 {
- "edge_count": 15530,
- "node_count": 6906,
+ "edge_count": 15533,
+ "node_count": 6907,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2937,6 +2937,10 @@
   "chiral_pair_chi_ts_matched_line_cross_moments_bounded_theorem_note_2026-10-10": {
    "deps_hash": "889f73d5d53c",
    "out_degree": 4
+  },
+  "chiral_pair_chi_ts_matched_span_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "3d0e417d375a",
+   "out_degree": 3
   },
   "chiral_pair_chi_ts_twice_matched_line_cross_moments_bounded_theorem_note_2026-10-10": {
    "deps_hash": "b39d8220dbf6",

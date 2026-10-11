@@ -167,3 +167,11 @@ The witness cross sums are `-1` and `-2`, and the doubled sign and
 matched vector on the same bond has cross sum `4`. A different ratio of
 these three kernels is not in this count. The ten-kernel coefficient
 span is not classified.
+Cycle 38 shows that the rational span of the chirality cap, the
+transverse-sign cap, and the matched cross is 3-dimensional and meets
+each ratio span only at 0. A nonzero vector has partner rank 10 exactly
+when its matched coefficient is nonzero. When that coefficient is 0,
+the partner rank is 7 and the partner kernel is the even space of the
+partner height. The chirality cap pairs with the sign product. The
+witness cross sums are `0` and `-1`. The ten-kernel coefficient span is
+not classified.

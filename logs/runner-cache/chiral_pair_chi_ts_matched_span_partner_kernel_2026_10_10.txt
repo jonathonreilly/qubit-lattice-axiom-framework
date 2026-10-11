@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_chi_ts_matched_span_partner_kernel_2026_10_10.py
+runner_sha256: d34ca9c864260c7bddf73f661c63cd099808f07fab83999b9462c1dc69c591c7
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 3.04
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS the chirality transverse-sign matched span is 3-dimensional and meets each ratio span only at 0
+PASS each cap has partner rank 7 and its kernel is the named even space, with excluded coefficients 0
+PASS the stacked map has rank 24 and kernel equal to two copies of the even space, so a nonzero matched coefficient has partner rank 10 and a zero matched coefficient has partner rank 7
+PASS the chirality cap against the sign product has centre pairs (-1, 1) and (1, 1) and cross sum 0
+PASS the chirality cap plus the matched cross has centre pairs (-1, 1) and (0, 1) and cross sum -1
+CHI-PROD witness [(-1, 1), (1, 1)] 0
+CHI-MATCHED-PROD witness [(-1, 1), (0, 1)] -1
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

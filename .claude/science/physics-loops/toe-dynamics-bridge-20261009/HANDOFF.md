@@ -30,11 +30,13 @@ Other current proposal snapshots and complete Git inventories are external;
 DYNAMICS_OPPORTUNITIES.md records exactly which sources/ranges informed route
 selection. Proposal headlines are not proof or complete review coverage.
 
-## Published nonlinear fluid milestone
+## Published nonlinear transport milestone
 
 Regular [PR #9478](https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478)
-is open at 3fbaa00e9d97a19459d197fd0de2d62d45327e90 with isDraft=false; it is
-attached to this chat. No merge or audit application occurred.
+is open with isDraft=false and attached to this chat. Its three-unit science
+milestone was published at 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71; later
+checkpoint-only commits do not alter those sources. No merge or audit
+application occurred.
 
 The nonlinear D3Q27 theorem proves a uniform O(delta) kinetic-to-fluid error on
 a supplied smooth fluid lifetime. Complete first/second correctors satisfy all
@@ -68,8 +70,8 @@ are recorded in DELIVERY_CHECKS.md. This is not an audit verdict or Lean proof.
    Final source-bound NONLINEAR_PARTICLE_REVIEW.md is preserved under
    nonlinear_particle/, at hash
    4aec121de3df2c52d8d913e253a0aa35c04b26a44d630264752dae6945eb400a.
-   Citation and delivery checks are complete; the unit is staged for the
-   current regular milestone extension. Root's
+   Citation and delivery checks are complete; the unit is published in the
+   current regular milestone. Root's
    NONLINEAR_PARTICLE_ROOT_DRAFT.md is a separate direct-sampling route with
    stronger regularity, not the selected publication proof.
 2. NATIVE_REALIZATION_PROBE.md supplies an explicit periodic qubit compartment
@@ -103,18 +105,25 @@ are recorded in DELIVERY_CHECKS.md. This is not an audit verdict or Lean proof.
    That draft retains incoming/outgoing spectral regularity, physical
    projection, optional placement-current corrections and the normalizable
    direct-integral step. Kato's trace-class theorem is checked fiberwise;
-   global trace-class completeness is not asserted. Independent review,
-   finite controls and the threshold composition remain open. A separate
+   global trace-class completeness is not asserted. The final Cook review is
+   saved externally at a145780abbc767a71dd72b5a9fe3fa4ea6c59015ad57818623fcc81d3c62c75c;
+   root reading of its complete report/controls and the threshold composition
+   remain open. A separate
    root EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md derives the finite-rank
    contact correction for the compressed additive energy density and a
    finite-time current bound; its analytic reconstruction agrees, and exact
-   Laurent/jet controls have completed. Final source review is being saved.
+   Laurent/jet controls have completed. The final canonical source is
+   79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe;
+   source-bound independent review is saved in EXCLUDED_WALK_CANONICAL_REVIEW.md.
+   Root read the full 197-line exact helper and seven-line output. A separate
+   coherent packet extension now seeks a nonzero leading current change;
+   the contact-aligned family alone has zero asymptotic current change.
 
 ## Boundaries and next action
 
-Extend the regular milestone with the checked particle result and the local
-qubit construction after its final sources and independent review are checked.
-Then continue the excluded-walk threshold and packet proofs. Keep identities
+The checked particle and local-qubit milestone is published. Continue the
+excluded-walk threshold, canonical-current and packet proofs, including a
+nontrivial coherent-packet current-change witness. Keep identities
 and raw evidence current. Original mathematics is authorized. Lean may verify
 complex scoped obligations during audit; no Lean execution is claimed here.
 Do not merge/push science to main, apply audit verdicts, adopt new axioms, or

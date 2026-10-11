@@ -1,6 +1,6 @@
 {
- "edge_count": 15539,
- "node_count": 6909,
+ "edge_count": 15542,
+ "node_count": 6910,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2984,6 +2984,10 @@
   },
   "chiral_pair_matched_oblique_dot_outside_eighteen_kernels_bounded_theorem_note_2026-10-10": {
    "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_odd_space_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "7a304fc545c5",
    "out_degree": 3
   },
   "chiral_pair_one_parity_one_excluded_cross_moments_bounded_theorem_note_2026-10-10": {

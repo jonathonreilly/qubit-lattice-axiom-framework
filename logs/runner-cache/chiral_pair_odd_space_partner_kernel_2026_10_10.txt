@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_odd_space_partner_kernel_2026_10_10.py
+runner_sha256: ab4b35964b4fcdb5d7bcd195627f80d720c0d95a18755e57c88f4993b33001d3
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 7.60
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each odd basis is 4-dimensional, meets the even basis only at 0, and the parallel-oblique sum lies outside the chirality and transverse-sign plane
+PASS each odd generator has partner rank 7 and its kernel is the even space of the partner height, with excluded coefficients 0
+PASS the stacked map has rank 28 and kernel equal to four copies of the even space, so every nonzero odd combination has partner rank 7
+PASS the parallel-oblique sum against the sign product has centre pairs (-1, -1) and (1, -1) and cross sum 0
+PASS the parallel-oblique sum against the chirality cap has centre pairs (-1, -1) and (1, 1) and cross sum 2
+PASS the parallel-oblique sum against the matched cross has centre pairs (-1, 0) and (1, 1) and cross sum 1
+DOT-PROD witness [(-1, -1), (1, -1)] 0
+DOT-CHI witness [(-1, -1), (1, 1)] 2
+DOT-MATCHED witness [(-1, 0), (1, 1)] 1
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

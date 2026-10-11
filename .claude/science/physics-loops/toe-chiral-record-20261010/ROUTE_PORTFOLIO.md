@@ -196,3 +196,8 @@ nonzero scale has partner rank 7 and partner kernel equal to the even
 space of the partner height. On the pairs where it is even, the partner
 kernel is the odd space. It does not take another odd vector, and it
 does not classify the 300-dimensional affine space.
+
+Cycle 41 takes the odd space of the source height. Every nonzero vector
+has partner rank 7, and the partner kernel is the even space of the
+partner height. It does not take a vector with both an odd part and an
+even part, and it does not classify the 300-dimensional affine space.

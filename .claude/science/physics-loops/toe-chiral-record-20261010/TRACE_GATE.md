@@ -676,3 +676,21 @@ partner kernel is the odd space, so every nonzero partner lies outside
 the even space. The witness cross sums are `0`, `-2`, and `-1`. A
 vector other than the swapped cross stays outside this ansatz. The
 ten-kernel coefficient span stays open.
+
+## Cycle 41
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether a vector with both an odd part and an even part has a ten-kernel partner other than 0. The odd space pairs only with the even space. Do not claim the ten-kernel coefficient span is settled."
+```
+
+The odd space has partner rank 7 on every ordered height pair. The
+partner kernel is the even space of the partner height. No ten-kernel
+partner lies outside that space. The witness cross sums are `0`, `2`,
+and `1`. A vector with both an odd part and an even part stays outside
+this ansatz. The ten-kernel coefficient span stays open.

@@ -278,3 +278,10 @@ where the swapped cross is even, the partner kernel is the odd space,
 so every nonzero partner lies outside the even space. It does not
 classify a vector other than the swapped cross, and it does not
 classify the 300-dimensional affine space.
+
+Cycle 41 prunes the reading that some nonzero odd vector has a
+ten-kernel partner outside the even space. Every nonzero vector in the
+odd space has partner rank 7, and the partner kernel is that even space.
+The witness kernel cross sums are `0`, `2`, and `1`. It does not
+classify a vector with both an odd part and an even part, and it does
+not classify the 300-dimensional affine space.

@@ -425,3 +425,15 @@ partner map on the three odd pairs, and the witness cross sums `0`,
 Family not used: a vector in the odd space other than the swapped axis
 and the chirality and transverse-sign plane. That remains open. The
 300-dimensional affine space is not this family.
+
+Cycle 41 target contract: whether a nonzero vector in the odd space,
+outside the chirality and transverse-sign plane and outside the swapped
+axis, has a ten-kernel partner outside the even space of the partner
+height.
+
+Family used: the odd basis of the source height, the stacked partner
+map of its four generators, its rank-28 kernel, and the witness cross
+sums `0`, `2`, and `1`.
+
+Family not used: a vector with both an odd part and an even part. That
+remains open. The 300-dimensional affine space is not this family.

@@ -189,3 +189,9 @@ gives partner rank 6 and partner kernel equal to the odd space, which
 meets the even space only at 0. The witness cross sums on heights 1 and
 2 are `0`, `-2`, and `-1`. The ten-kernel coefficient span is not
 classified.
+Cycle 41 shows that every nonzero vector in the odd space has partner
+rank 7, and the partner kernel is the even space of the partner height.
+The parallel-oblique sum lies in that space at heights 1 and 2 and
+outside the chirality and transverse-sign plane. The witness cross sums
+are `0`, `2`, and `1`. A vector with both an odd part and an even part
+is not in this count. The ten-kernel coefficient span is not classified.

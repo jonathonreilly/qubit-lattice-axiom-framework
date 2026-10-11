@@ -499,3 +499,16 @@
   cycle-39 note. The bond-space dimension count is not repeated.
   The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 41
+
+- The ansatz is the odd space of the source height. A vector with both
+  an odd part and an even part is not in this count. The even-span
+  partner kernel is not re-proved.
+- The checked sums are two-centre kernel cross sums. A kernel cross
+  sum is not an alphabet mean.
+- The order-blind converse is not applied. The odd and even bases are
+  named by the cycle-29 note. The swapped axis is the cycle-40 note.
+  The bond-space dimension count is not repeated. The 300-dimensional
+  affine space is not classified.
+- No formation site, probability, or rate is imported.

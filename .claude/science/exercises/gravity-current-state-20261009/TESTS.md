@@ -1961,3 +1961,37 @@ Left open:
 ### Wrap-up stance (supervisor, 20:25Z)
 
 No new probes are launched after this point. Every probe has returned and every referee verdict is recorded.
+
+### C4 tenth wave (20:27Z). Correction to the stance above.
+
+The line "No new probes after this point" was premature: there are still about 90 minutes before the 21:55Z wrap-up. Two closing probes are launched on the named open lemmas. Each must return by 21:50Z.
+
+#### Lane RL4: close RL3's two lemmas
+
+**Probe RL4.** Prove the two missing lemmas:
+- **Lemma U:** a uniform bound on the irreducible kernel. RL3b needs only |Λ_c| ≤ 7.9e4 at z₀ = 0.0098√ε; power counting gives about 1e-59.
+- **Lemma T:** transfer of the shared-node pole to the extended-source observable, with a nonzero end factor. This is RL3's step from the pole to a pointwise bound plus the end factor.
+
+**Fixed readings.**
+- **PASS:** not applicable. The lane cannot pass by closing lemmas.
+- **FAIL:** both lemmas are proved, so the RL3 lower bound holds and the 1e-19 m bar fails. Lane RL3 then becomes FAIL.
+- **INCONCLUSIVE:** otherwise.
+
+#### Lane RN2: interacting matter that does not conserve particle number, in d ≥ 2 (the M1/B1 open item)
+
+**Probe N1.** For lattice matter on Z^d (d = 2, 3) whose interactions change particle number (e.g. φ³ or Yukawa with pair creation, over an interacting vacuum), ask two questions:
+- Can exact global Poincaré closure (C3's Killing sector) hold for the full interacting theory?
+- Can it hold in a sector that sits inside the continuum? Here M1's bounded-sector theorem does not apply, because each sector is unbounded.
+
+Use:
+- the Haag–Ruelle / asymptotic-completeness route (single-particle bands of the interacting theory are isolated bands, so T1 of M1 applies to them);
+- the cluster-decomposition argument.
+
+**Fixed readings.**
+- **PASS:** an explicit interacting lattice theory with exact Poincaré closure in d ≥ 2.
+- **FAIL:** proved impossible for the stated class, e.g. via the asymptotic single-particle bands plus M1's T1.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.**
+- **RL4:** Lemma U is likely provable, given 60 decades of slack. Lemma T is harder. Expected reading: INCONCLUSIVE, or FAIL if both lemmas close.
+- **N1:** with asymptotic completeness and a mass gap, the theory's one-particle bands are isolated Bloch bands, so M1's T1 sum rule applies to them, and the S-matrix inherits the obstruction. Expected reading: FAIL (bounded, assuming a gap and asymptotic completeness).

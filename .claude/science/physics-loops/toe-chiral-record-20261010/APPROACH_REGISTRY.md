@@ -564,3 +564,16 @@ the pivot minors at coefficients 0, 1, -1, and -1/3.
 Family not used: the third even generator plus both swapped-dot
 generators. That remains open. The 300-dimensional affine space is not
 this family.
+
+Cycle 53 target contract: whether every chirality coefficient on the
+third even generator plus both swapped-dot generators has partner rank
+10.
+
+Family used: the third even-dot family. One 17-row chirality pencil on
+every ordered height pair, the rank-10 base image, and the constant gcd
+of the pivot minors at coefficients 0, 1, -1, -1/2, and 5/2. Both
+coordinate presentations are in the family.
+
+Family not used: a sum of two even generators plus both swapped-dot
+generators. That remains open. The 300-dimensional affine space is not
+this family.

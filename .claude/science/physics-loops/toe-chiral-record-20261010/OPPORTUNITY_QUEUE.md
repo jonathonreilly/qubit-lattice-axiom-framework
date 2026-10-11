@@ -1,8 +1,8 @@
 # Opportunity queue
 
-1. Decide whether every chirality coefficient on the third even
-   generator plus both swapped-dot generators has partner rank 10. The
-   sign product plus both swapped-dot generators has partner rank 10 at
+1. Decide whether every chirality coefficient on the sum of the second
+   and third even generators plus both swapped-dot generators has
+   partner rank 10. The third even-dot family has partner rank 10 at
    every chirality coefficient on every ordered height pair. Do not
    claim the ten-kernel coefficient span is settled. Do not claim the
    300-dimensional affine space is classified. Do not return to the

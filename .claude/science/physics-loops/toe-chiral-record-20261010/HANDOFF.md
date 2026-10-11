@@ -679,11 +679,23 @@ source-same pairs the monic pivot minor at coefficient 0 is
 is not in this count. The ten-kernel coefficient span is not classified.
 Runner `PASS=17 FAIL=0`.
 
+Cycle 53. On every ordered height pair, the third even-dot family is the
+third even generator plus both swapped-dot generators. On the
+source-same pairs the summed vector has swapped coordinate `-5/2` and
+orthogonal coordinate `3`. On `(1, 3)`, `(2, 3)`, and `(3, 2)` it has
+swapped coordinate `-2`, parallel coordinate `1`, oblique coordinate
+`1`, and orthogonal coordinate `2`. The base image has rank 10. The
+coefficient pairs compress to 17 rows. The pivot minors at chirality
+coefficients `0`, `1`, `-1`, `-1/2`, and `5/2` have a nonzero constant
+running gcd, so every chirality coefficient has partner rank 10. A sum
+of two even generators is not in this count. The ten-kernel coefficient
+span is not classified. Runner `PASS=18 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every chirality coefficient on the third even generator
-plus both swapped-dot generators has partner rank 10. The sign product
-plus both swapped-dot generators has partner rank 10 at every chirality
+Decide whether every chirality coefficient on the sum of the second and
+third even generators plus both swapped-dot generators has partner rank
+10. The third even-dot family has partner rank 10 at every chirality
 coefficient on every ordered height pair. Do not claim the ten-kernel
 coefficient span is settled. Do not claim the 300-dimensional affine
 space is classified. Do not repeat the bond-space dimension count. Do

@@ -898,3 +898,20 @@ On every ordered height pair, the sign product plus both swapped-dot
 generators has partner rank 10 at every chirality coefficient. The base
 image has rank 10. The third even generator plus both swapped-dot
 generators stays open. The ten-kernel coefficient span stays open.
+
+## Cycle 53
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether every chirality coefficient on the sum of the second and third even generators plus both swapped-dot generators has partner rank 10. The third even-dot family has partner rank 10 at every chirality coefficient. Do not claim the ten-kernel coefficient span is settled."
+```
+
+On every ordered height pair, the third even generator plus both
+swapped-dot generators has partner rank 10 at every chirality
+coefficient. The base image has rank 10. A sum of two even generators
+stays open. The ten-kernel coefficient span stays open.

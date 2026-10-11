@@ -271,3 +271,12 @@ partner rank 10. On the source-same pairs the monic minor at coefficient
 0 is `(c - 1)^7`. The third even generator plus both swapped-dot
 generators is not in this count. The ten-kernel coefficient span is not
 classified.
+Cycle 53 shows that on every ordered height pair, the third even-dot
+family, the third even generator plus both swapped-dot generators, has
+partner rank 10 at every chirality coefficient. On the source-same pairs
+the summed coordinates are swapped `-5/2` and orthogonal `3`. On the
+other three pairs they are swapped `-2`, parallel `1`, oblique `1`, and
+orthogonal `2`. The base image has rank 10. The pivot minors at
+chirality coefficients `0`, `1`, `-1`, `-1/2`, and `5/2` have a nonzero
+constant gcd. A sum of two even generators is not in this count. The
+ten-kernel coefficient span is not classified.

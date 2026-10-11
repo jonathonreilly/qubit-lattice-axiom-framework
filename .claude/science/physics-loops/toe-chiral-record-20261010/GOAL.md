@@ -104,3 +104,10 @@ each opposite-height basis. Odd and even spaces have dimensions 4 and
 nonzero and the even parts are not both nonzero. The matched cross,
 the swapped transverse dot, and the scaled cross-dot kernel lie
 outside that span. The ten-kernel coefficient span is not classified.
+Cycle 30 shows that inside the rational span of those three excluded
+kernels, every kernel cross sum against a ten-kernel partner vanishes
+exactly when one of the two vectors is 0. The matched kernel at height
+1 with the zero vector at height 2 passes. The matched kernels at
+heights 1 and 2 have witness mean `47/48`. A vector that also has a
+parity-span component is outside that ansatz. The ten-kernel
+coefficient span is not classified.

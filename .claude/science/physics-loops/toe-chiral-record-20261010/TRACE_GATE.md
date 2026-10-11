@@ -475,3 +475,21 @@ The rank-25 product equations settle cross moments inside the parity
 span. Two nonzero odd parts fail, and so do two nonzero even parts.
 The three excluded kernels stay outside this ansatz. The ten-kernel
 coefficient span stays open.
+
+## Cycle 30
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether a vector with both a parity-span component and a nonzero coefficient on the matched cross, the swapped transverse dot, or the scaled cross-dot kernel can pair with a nonzero ten-kernel vector and still have every cross moment equal to 0. Do not claim the ten-kernel coefficient span is settled."
+```
+
+The six partner determinants settle kernel cross sums inside the
+excluded three-kernel span. A nonzero vector there pairs only with the
+zero vector. The witness mean is `47/48`. A vector that also has a
+parity-span component stays outside this ansatz. The ten-kernel
+coefficient span stays open.

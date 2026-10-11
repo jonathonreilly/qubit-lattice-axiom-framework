@@ -296,3 +296,16 @@ odd-odd and even-even product columns, and the witness moments
 Family not used: a nonzero coefficient on the matched cross, the
 swapped transverse dot, or the scaled cross-dot kernel. That remains
 open. The 300-dimensional affine space is not this family.
+
+Cycle 30 target contract: which rational vectors in the span of the
+matched cross, the swapped transverse dot, and the scaled cross-dot
+kernel have every kernel cross sum equal to 0 against a ten-kernel
+partner.
+
+Family used: the six partner determinants of the three-coefficient
+combination, the self-cross sets, and the witness bond with mean
+`47/48`.
+
+Family not used: a vector with both a parity-span component and a
+nonzero excluded coefficient. That remains open. The 300-dimensional
+affine space is not this family.

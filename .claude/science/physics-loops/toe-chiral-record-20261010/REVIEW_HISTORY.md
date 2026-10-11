@@ -1546,3 +1546,72 @@ Conformance, section by section:
     mixture values `1/2`, `1`, and `3/2`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
     the loop-pack prose. The full audit pipeline was not run.
+
+## 2026-10-11 author check, cycle 30
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms on origin/main at the base `0b208e91cfc`, the
+   cycle-29 parity-span note, the cycle-26 scaled cross-dot basis note,
+   and the cycle-27 opposite-height mixture note, the last three on this
+   branch. The partner determinants, the self-cross sets, and the
+   witness mean are computed in this runner. The order-blind converse
+   is not applied. The parity split is cited from cycle 29. The
+   ten-kernel basis is cited from cycle 26. Mean 1 on one height is
+   cited from cycle 27. The dimension count of the soldered bond space
+   is not repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_excluded_kernel_span_cross_moments_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `b059ad14f394816014cbcfb426098a5afc9e709e6496a557425f7fa588c339da`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=9 FAIL=0`.
+   Elapsed 37.24 seconds.
+3. Scope. The rational span of the matched cross, the swapped
+   transverse dot, and the scaled cross-dot kernel, against any
+   ten-kernel partner, on the 48 signed permutations of `(1, 2, 3)`.
+   Every kernel cross sum vanishes exactly when one of the two vectors
+   is 0. The witness centre values are `(0, 1)` and `(0, -1)`, the
+   kernel cross sum is `-1`, and the direct alphabet mean is `47/48`.
+   A vector with both a parity-span component and a nonzero excluded
+   coefficient is outside the ansatz. The ten-kernel coefficient span
+   is not classified. The full soldered bond space is not classified.
+   Status line `proposed_retained`. Surface status `bounded-support`.
+4. N-gate does not apply. The witness mean `47/48` prunes a nonzero
+   excluded vector against a nonzero partner. The check does not claim
+   that no vector outside the excluded span has every cross moment
+   equal to 0, and the zero partner is exhibited.
+5. Obligations are in the note. The missing lemma is whether a vector
+   with both a parity-span component and a nonzero excluded coefficient
+   can pair with a nonzero ten-kernel vector and still have every
+   cross moment equal to 0.
+6. Mutations, each on a scratch copy, exited 1. Requiring the witness
+   mean to be 1 gave `PASS=8 FAIL=1` on the witness-bond check.
+   Requiring the height `(1, 2)` scaled self-cross set to end at 3 gave
+   `PASS=8 FAIL=1` on the scaled-set check. Requiring the zero partner
+   to fail gave `PASS=8 FAIL=1` on the zero-vector check. An independent
+   generator closure in this session gave 24 rotations, all of
+   determinant 1, and orbit 24, with `(2, 1, 3)` and `(1, 2, -3)`
+   outside the orbit.
+7. One primary runner. No packet helper.
+8. Five markdown links. The runner link points at the primary runner.
+   One note link points at the minimal axioms on origin/main. Three
+   point at the cycle-29 parity-span note, the cycle-26 scaled
+   cross-dot basis note, and the cycle-27 mixture note on this branch.
+   Manifest node_count 6899 and edge_count 15502. The new node has
+   out_degree 4 and deps_hash `75525bf61ec1`. Dependencies are
+   `minimal_axioms`, the cycle-29 parity-span note, the cycle-26
+   scaled cross-dot basis note, and the cycle-27 mixture note.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the parity split, the ten-kernel basis, and one-height mean 1,
+   and states that the order-blind converse is not applied and that no
+   rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=9 FAIL=0`, witness slices
+    `(0, 1)` and `(0, -1)`, kernel cross sum `-1`, alphabet mean
+    `47/48`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
+    the loop-pack prose. The full audit pipeline was not run.

@@ -189,3 +189,11 @@ and the parallel-oblique sum with the sign product. It does not
 classify a coefficient on the matched cross, the swapped transverse
 dot, or the scaled cross-dot kernel, and it does not classify the
 300-dimensional affine space.
+
+Cycle 30 prunes the reading that a nonzero excluded-span vector can
+pair with a nonzero ten-kernel vector and keep every kernel cross sum
+equal to 0. The witness is the matched kernels at heights 1 and 2, with
+kernel cross sum `-1` and alphabet mean `47/48`. The matched kernel
+against the zero vector passes. It does not classify a vector that also
+has a parity-span component, and it does not classify the
+300-dimensional affine space.

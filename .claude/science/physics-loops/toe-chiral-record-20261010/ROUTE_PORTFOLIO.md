@@ -127,3 +127,9 @@ heights. The odd-odd and even-even products have rank 25. It does not
 take the matched cross, the swapped transverse dot, or the scaled
 cross-dot kernel, and it does not classify the 300-dimensional affine
 space.
+
+Cycle 30 takes the rational span of those three excluded kernels
+against any ten-kernel partner. Every kernel cross sum vanishes exactly
+when one of the two vectors is 0. It does not take a vector that also
+has a parity-span component, and it does not classify the
+300-dimensional affine space.

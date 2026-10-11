@@ -342,3 +342,19 @@
   basis is the cycle-26 note. The bond-space dimension count is not
   repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 30
+
+- The ansatz is the rational span of the matched cross, the swapped
+  transverse dot, and the scaled cross-dot kernel. The partner is any
+  vector in the ten-kernel space. A vector with both a parity-span
+  component and a nonzero excluded coefficient is not in this count.
+- The one-site average is the uniform average on the 48-point alphabet.
+  The alphabet mean is the direct 48-point sum on one witness bond.
+  A kernel cross sum is not that mean.
+- The order-blind converse is not applied. The zero partner inherits
+  mean 1 from the cycle-27 one-height identity. The parity split is the
+  cycle-29 note. The ten-kernel basis is the cycle-26 note. The
+  bond-space dimension count is not repeated. The 300-dimensional
+  affine space is not classified.
+- No formation site, probability, or rate is imported.

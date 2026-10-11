@@ -318,17 +318,35 @@ height-2 sign product, at coefficient `1/2`, takes values `1/2`, `1`,
 and `3/2` and has every cross moment equal to 0. The ten-kernel
 coefficient span is not classified. Runner `PASS=9 FAIL=0`.
 
+Cycle 30. On the same alphabet the excluded span is the rational span
+of the matched transverse cross, the swapped transverse dot, and the
+scaled cross-dot kernel. For every ordered pair of heights among 1, 2,
+and 3, a vector in that span and a ten-kernel vector at the other
+height have every kernel cross sum equal to 0 exactly when one of the
+two vectors is 0. The matched kernel at height 1 with the zero vector
+at height 2 is such a pair. The matched kernels at heights 1 and 2 fail
+on `-e_x` and `-e_y` at `(-1, -2, -3)` and `(-1, -2, 3)`, with both
+rights `(1, 2, 3)`, centre values `(0, 1)` and `(0, -1)`, kernel cross
+sum `-1`, and direct alphabet mean `47/48`. Matched and swapped-dot
+self-cross sums lie in `{-1, 0, 1}`. Scaled self-cross sums lie in
+`{-4, -1, 0, 2}` on heights `(1, 2)` and `(2, 3)`, and in
+`{-2, 0, 1, 4}` on heights `(1, 3)`. A vector with both a parity-span
+component and a nonzero excluded coefficient is outside this ansatz.
+The ten-kernel coefficient span is not classified. Runner
+`PASS=9 FAIL=0`.
+
 ## Next exact action
 
-Decide whether a nonzero coefficient on the matched cross, the swapped
-transverse dot, or the scaled cross-dot kernel can pair with a nonzero
-vector at the other height and still have every cross moment equal to
-0. The parity span is settled. Do not claim the ten-kernel coefficient
-span is settled. Do not claim the 300-dimensional affine space is
-classified. Do not repeat the bond-space dimension count. Do not
-return to the modulus-3 triple. Do not invent a formation rate. Do not
-return to shells, plaquette corner weights, or the `(0,1,2)` and
-`(1,1,2)` alphabets.
+Decide whether a vector with both a parity-span component and a
+nonzero coefficient on the matched cross, the swapped transverse dot,
+or the scaled cross-dot kernel can pair with a nonzero ten-kernel
+vector and still have every cross moment equal to 0. The excluded
+three-kernel span is settled against any ten-kernel partner. Do not
+claim the ten-kernel coefficient span is settled. Do not claim the
+300-dimensional affine space is classified. Do not repeat the
+bond-space dimension count. Do not return to the modulus-3 triple. Do
+not invent a formation rate. Do not return to shells, plaquette corner
+weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

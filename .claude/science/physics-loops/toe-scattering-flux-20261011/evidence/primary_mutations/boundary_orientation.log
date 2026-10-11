@@ -1,0 +1,7 @@
+Supplied excluded-walk flux/form finite controls; analytical and formal scopes remain separate.
+AUDIT_TIMEOUT_SEC=180
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_publication_mutations/boundary_orientation.py", line 96, in <module>
+    assert outflux==2*G.y-2*z.y*sum(sum(a.abs2() for a in psi[x]) for x in inside)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

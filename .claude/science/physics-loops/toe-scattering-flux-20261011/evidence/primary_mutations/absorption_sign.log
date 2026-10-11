@@ -1,0 +1,7 @@
+Supplied excluded-walk flux/form finite controls; analytical and formal scopes remain separate.
+AUDIT_TIMEOUT_SEC=180
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_publication_mutations/absorption_sign.py", line 86, in <module>
+    assert div==rhs
+           ^^^^^^^^
+AssertionError

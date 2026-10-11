@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+AssertionError
+
+The receipt freeze stopped because SOURCE_COMPOSITION.json changed concurrently
+from 3b446be10accd1e5ffa0909e1c9e4a75e7fae54eac8063d093514a27e024bcaa
+to 8e457c06daf37e38a5c620ceea8e058a1cd28587c5b7ea8e38384294d77eb851.
+The note, primary and parent identities did not change. The subsequent
+representation-only refresh is preserved in composition_refresh.json.

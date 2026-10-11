@@ -1,0 +1,19 @@
+PASS nonparallel Pauli band projector
+PASS singlet band weight
+PASS swap singlet sign
+PASS paired plane phase-average density
+PASS paired contact intensity
+PASS general-K density is a mean, not a pointwise normalization
+PASS nonuniform rank-one unitarity
+PASS actual disjoint-detector probability
+PASS same-detector interference and normalization
+PASS pure contact receives phase only
+PASS pure-contact probabilities unchanged
+PASS state difference need not be detector redistribution
+PASS scaled outgoing angular flux
+PASS scaled paired cross section
+PASS angular normalization antiderivative
+PASS full angular integral after e-squared relation
+PASS integrated scaled flux
+PASS K-zero finite threshold cross section
+Scope: exact finite algebra and coefficient reconstruction; analytic limits reviewed separately.

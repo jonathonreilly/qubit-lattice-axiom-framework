@@ -1,0 +1,923 @@
+{
+  "schema": "publication_source_identities_v1",
+  "base_revision": "b9b032ae790c66e762a6296a1306bfb64ae7cd70",
+  "scope": "All intended new/changed publication files except this identity map itself; historical receipt identities refer to original uncompressed paths, mapped here by hashes.",
+  "records": [
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/APPROACH_REGISTRY.md",
+      "sha256": "09771bfac831991ba4c892687317d925c956abfeee9425267757123424de6656",
+      "bytes": 902
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/ARTIFACT_PLAN.md",
+      "sha256": "e4fff7cd054834cf6b483fe033d5b4d5b1f8b33c9b6a1838273e05d90a4c6c4f",
+      "bytes": 549
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "ce6888558c8ef97ec746c3e734aef117b2a9b203873c92c974e40713e37cde52",
+      "bytes": 1269
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "657878dbdc97c7aba4af6024e0f05550497c5328c28c66e1e43b3d2fff1d9b08",
+      "bytes": 864
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/DELIVERY_CHECKS.md",
+      "sha256": "7bd2573a0fd8d07444bbd461995bb9b84c04ca3653ac23c71c43fbb767d4fda6",
+      "bytes": 3385
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/GOAL.md",
+      "sha256": "dbd481fce5c84138c433656704166422b0f562635dbbec8608252475727a7db4",
+      "bytes": 500
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/HANDOFF.md",
+      "sha256": "f378c8be7dc84c1982cea3c02c26d0b311dfe07bdc5a0c3ca801629546d3916d",
+      "bytes": 1390
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/LITERATURE_BRIDGES.md",
+      "sha256": "74c78f270736c2edbc3cf9da548a4942bebcaf76f74fd958042c5671762b38fe",
+      "bytes": 555
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/NO_GO_LEDGER.md",
+      "sha256": "260bbf3d450a8a86a6b605487b7dd7b5a3c93dcf38efd2219b78c72e8bfe1cdf",
+      "bytes": 490
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/OPPORTUNITY_QUEUE.md",
+      "sha256": "90f95cc5f9a5ae3d7f88d961041fde74a25bb06a600dc4c2ae4bb4e4821354e9",
+      "bytes": 483
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/PR_BACKLOG.md",
+      "sha256": "faf65ea72947163a19105d71eb27927e1c2bfa7ff3b58e79e982564aaed2250c",
+      "bytes": 1568
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/REVIEW_HISTORY.md",
+      "sha256": "0d7405208452b6937cce7bd8655b04e3bf7c684c613302c0c7d684d4f4f60c36",
+      "bytes": 3449
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/ROUTE_PORTFOLIO.md",
+      "sha256": "a8d9b6f598982bc0a6d39f53954c3b8e9974a8f359e2a79ab7b3a03cfadaf132",
+      "bytes": 405
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/SOURCE_COMPOSITION.json",
+      "sha256": "8e457c06daf37e38a5c620ceea8e058a1cd28587c5b7ea8e38384294d77eb851",
+      "bytes": 20168
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/STATE.yaml",
+      "sha256": "a698cbd06dce2ba006d235b7cee2bc9aca49027dc21e5a5fc12303c26bb4a8d3",
+      "bytes": 860
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/TRACE_GATE.md",
+      "sha256": "d2123772c8cb5d315d6cc2247c5db042365629450d27666dfcb910e974a1d312",
+      "bytes": 719
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/EXCLUDED_WALK_FLUX_BRIDGE_PROBE.md.gz",
+      "sha256": "7e13d2184f34a34d68a7886efd1c396e4c99df892ff8a228ba8c205dc58a525a",
+      "bytes": 13436,
+      "decompressed_sha256": "35cfa3095d1abaaeef0e6b77296b42a218615b23f680ee312576adbf924dfc17"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/EXCLUDED_WALK_FLUX_TRANSPORT_FORM_PROBE.md.gz",
+      "sha256": "f096c9791eac2408c5ff165cd9ee90ac2003232bb021d857b5da80c53f45d74a",
+      "bytes": 10528,
+      "decompressed_sha256": "52e8b10cc7db84d65372bfac18a0a0839889b03003190ee0ec310b503115f143"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/FLUX_PUBLICATION_COMPOSITION_REVIEW.md.gz",
+      "sha256": "5eacf97042593c462434607374ded41e2a3dac1380951c2712347b64fcaa0df0",
+      "bytes": 4393,
+      "decompressed_sha256": "e480541bc27bf82ff3e95a739925d845bbe2e210b6db3888a21afcb037375332"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/ROOT_EXCLUDED_WALK_FLUX_REVIEW.md.gz",
+      "sha256": "48e4dc47a072e582429ff237ca82e9b903c50ab98f096622a31fa9bc4dc52805",
+      "bytes": 4625,
+      "decompressed_sha256": "8fbc4a36dc351460bfc151a4bb3c40ea569f437057e2b72da47540c508608214"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/ROOT_EXCLUDED_WALK_LEAN_REVIEW.md.gz",
+      "sha256": "c40162281f9d02f947587601f385c63cb9d412a0c06d6d85965297be2967d8f0",
+      "bytes": 1367,
+      "decompressed_sha256": "3735e869cfd20c5ac15b5d4e081c1da14851567e4bba5cd033ba8edddbcf771c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/ROOT_EXCLUDED_WALK_TRANSPORT_FORM_REVIEW.md.gz",
+      "sha256": "84d3e87f91b0a3188efcfa38e9d272fc7b9ae7db3cd03e98e2e80d269f06f39e",
+      "bytes": 3849,
+      "decompressed_sha256": "5ff79b0756214eb75f94b8b64e8eeae4dbb7eefcba4640dc9b97e6be78fbe572"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/delivery/final_mechanical_checks.json",
+      "sha256": "6ada00a695ac2fb05381f59c06efce765b10d676c7be290ebc4f92674c72af2d",
+      "bytes": 1395
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/delivery/flux_audit_compatibility.json",
+      "sha256": "7027339126e38e07ee204c4c0668d3a051872815398c25a6a3319a8d9627aaf3",
+      "bytes": 240
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/delivery/flux_canonical_execution.json",
+      "sha256": "45840c27e2212159a2d5744c143ccb460a25d51b8120d446526034f69582d92c",
+      "bytes": 4179
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/delivery/flux_composition_root_identity_check.json",
+      "sha256": "5cd7da0b91eead511116bec0d947cfdc09ebfda1ddc8901b29bd676b400e88e3",
+      "bytes": 318
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/delivery/flux_final_vocab.log",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/delivery/flux_graph_build.log",
+      "sha256": "86e458faf148921cffe47f29964154194790abf826e324d07c341c6edbb403be",
+      "bytes": 281
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/delivery/flux_publication_source_diff.txt.gz",
+      "sha256": "3b484664b8ac39d62913a9fc042491d454f28963ef30b78b3e0140ecaf9278b1",
+      "bytes": 5633,
+      "decompressed_sha256": "252958f1577d901eb54b76334853e19d69ddb3f7c3c8bd495934c57ef06b0881"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/delivery/flux_publication_vocab.log",
+      "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+      "bytes": 81
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/flux_controls.log",
+      "sha256": "cea70a1a1fc9bf42b9ae087ab525cbb0f0a934fb872964e2375faab01b5edfb1",
+      "bytes": 1375
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/flux_controls.py",
+      "sha256": "9803c454d4cc7610e0056ef47d389891cecb1680b2dc666c92d6d9ed36476a36",
+      "bytes": 8963
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/identity_manifest.json",
+      "sha256": "bce0efccd70fb05701321215727f78c06cacacd8aa332b2d7b9ceb68177a46f5",
+      "bytes": 7240
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/repo_search_0.log.gz",
+      "sha256": "8e080279c7e74f177d64b8ed4505d8b7f4d58c1de6e4f336ac16106bbd3d5530",
+      "bytes": 14791,
+      "decompressed_sha256": "5cf914fd26cdc1b055a1857143e23f2780d56da3c94ce4417ff8915c0609efaa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/repo_search_1.log.gz",
+      "sha256": "83a9e72d2e2ca691cbb5a8ee2ce639d888f063fe48fb35ed23af0a69e8749dab",
+      "bytes": 16838,
+      "decompressed_sha256": "fda71538de5fdcc8452dc39ad7186c9f5b08706d631c0ebe5ecf356635edaae6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/repo_search_2.log.gz",
+      "sha256": "4b4515a8dcb3cc3f7e5b850d62a465c4bb83ca25decfe506b8bbfa9411088295",
+      "bytes": 51292,
+      "decompressed_sha256": "3a97044aae0170de28c8299a437251e3b2b919fd93dc2e685d69a61628e65bb7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/repo_search_manifest.json",
+      "sha256": "336f1545237b078111a4075ccdbb2e53442591c9364f75bc67ad7586c4dca36e",
+      "bytes": 51008
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_review/independent_flux_controls.log",
+      "sha256": "e0fccf585dafc35ee664309eca9a8b51a753c54a8a9190a8271c02c482ff312e",
+      "bytes": 814
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_review/independent_flux_controls.py",
+      "sha256": "e884c75e88e9c81690d60704a218a56acb2355b1e3ceb9a0c1771f207d7b85ef",
+      "bytes": 3762
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_review/root_review_receipt.json",
+      "sha256": "b6813f040679c5f4f7fc54783908a3e1fbd47c36e842b0c1318f97a4446062cb",
+      "bytes": 2385
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/prior_search_0.log",
+      "sha256": "f85800453d3b5e0a06583ec5d746580a01f37f6f7bb2c49ce29af147ea8d3e0c",
+      "bytes": 1012
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/prior_search_1.log",
+      "sha256": "2814d1acbb3fbabd8fef9aa15720e3f5ba21b81d6339fc01856aeb9401128ef5",
+      "bytes": 539
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/prior_search_2.log",
+      "sha256": "6150fa954f975b76ed5dc2bf3a3bb1fdc91fa970bf074f4fad15282cd8c67573",
+      "bytes": 5290
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/prior_search_manifest.json",
+      "sha256": "c36c31cb1d18599a18adbcb84d7b10996bd4d9ea3622bc3275ad0dc847c5bd48",
+      "bytes": 1429
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/receipt.json",
+      "sha256": "bfc05c9cea6156ed7708ee0bbe189543543edbc62b4fc3ac1da12834360985b6",
+      "bytes": 8563
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/transport_controls.log",
+      "sha256": "aeaec385f509e049b7175c8b7987219ab2e77781b193fa0a352d9dd08a9c44d4",
+      "bytes": 1985
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/transport_controls.py",
+      "sha256": "befeb5d995039a55031ce697e1098370ebed1c3a846657ef3cc1cd1d01830d23",
+      "bytes": 10199
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_review/independent_transport_controls.log",
+      "sha256": "96574e38db0ba015a55a73d98328f9631a5b4fcc957e3b958d51d2945e309b7f",
+      "bytes": 1375
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_review/independent_transport_controls.py",
+      "sha256": "f0cb6a5088268cf16b7a3455fd41a6562160fe46cc758d338d89a5316d2d7fa6",
+      "bytes": 4149
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_review/root_review_receipt.json",
+      "sha256": "70b6fd71161f9aee8a54de1dd647350e4983facd5f48a4c05f23994af2479bcf",
+      "bytes": 3090
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/lean_root_review_receipt.json",
+      "sha256": "b3d0c7d17dc0639ed93f653ac37f9a0b80c669c4edb9bf48557d1a9c51b85d93",
+      "bytes": 2389
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/portable_lean_reproduction/compiler.log",
+      "sha256": "58f04a8d0485e9304892db7db4461ab384dc95e5c4ff4272fdda65451455ac6f",
+      "bytes": 4128
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/portable_lean_reproduction/execution.json",
+      "sha256": "9117fd3b5048e1846aedea332f2e6d6dcb091c0c77b681c8b6f8bd47c15f14d2",
+      "bytes": 1275
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/absorption_sign.log",
+      "sha256": "041752ec87734942c709b6b70c4229a5691964e2651c5d33e2063e9cd60d1959",
+      "bytes": 366
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/absorption_sign.py.gz",
+      "sha256": "b55f6cabd3d8230132d66efa9347934d77a496fe120d7ce9cb80b7d7764ddbd4",
+      "bytes": 7677,
+      "decompressed_sha256": "a59dcca9ab53093b87adb4d3387fe2c5ae34ae18bb85259ce946640970c85d7b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/active_rank.log",
+      "sha256": "0d3b3069bcd4a9909055637beb9b0781a33532e6b6f0ae71b660f7fe5f527b2f",
+      "bytes": 1984
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/active_rank.py.gz",
+      "sha256": "82338034ed9d39612be3ebb69d32aa75981113d90cc1990afdc6ea2276d1776e",
+      "bytes": 7679,
+      "decompressed_sha256": "7dab4b47fecc514188c97b612310645218b2fdd52326bc28302f3657eafff937"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/bond_current_sign.log",
+      "sha256": "98ef1f8c16c908e104d8a5751f601efd84553116d7671321e255622f6f63b613",
+      "bytes": 368
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/bond_current_sign.py.gz",
+      "sha256": "78070f032ccb35d9d393427c8c16abcc604e9f8236b0a85302f83cbb44976c54",
+      "bytes": 7676,
+      "decompressed_sha256": "95d8e4968948f799f02dee818f5ab4a9636087ab70fa9c6f113ad59814611183"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/boundary_orientation.log",
+      "sha256": "3435dd8b421b91800e706cc097947981533f4f85b5330b4f2b24951dd24d8b34",
+      "bytes": 497
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/boundary_orientation.py.gz",
+      "sha256": "7b0a8bc120d28127e81a0d12b346beb3abf381704803fe0d4f6a143eb3d7ed02",
+      "bytes": 7674,
+      "decompressed_sha256": "f40cf3c6f03938c2c75eec7e8a001042ca40630921e784a3da2c7693b6da2d2f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/coarea_corner_measure.log",
+      "sha256": "5df1b221db2c6546fb79385022913c51d4be3eda43ede258691441544967adbd",
+      "bytes": 2429
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/coarea_corner_measure.py.gz",
+      "sha256": "47df19b1f3e6b42ef218ad9c72ccc12788bebe818bf48263602ed867e8ad5a1e",
+      "bytes": 7676,
+      "decompressed_sha256": "d5d065af10fb961f71a86ea1865ffa473adac30695a7725a46ff2f1b0527e4df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/corner_amplitude.log",
+      "sha256": "1982950f57eb50da6b37ad6d116f0a59f094dc1f76dc9b469a35b6ccbfc2fda8",
+      "bytes": 602
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/corner_amplitude.py.gz",
+      "sha256": "f216e550f27c4e87153bbe2a1c99ea6c321d7b3ac5701847786dcd4e2193be5f",
+      "bytes": 7676,
+      "decompressed_sha256": "8abd34cd1ddb1f56a3dd6466cc9b3ce76068659e1ad303b14acd8f4a000740ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/ellipsoid_flux_factor.log",
+      "sha256": "1e273a56fc71816532c32d59cf0b861bf7ae063cb8efab359683755d4e4066da",
+      "bytes": 1573
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/ellipsoid_flux_factor.py.gz",
+      "sha256": "cb37666a6a2ca9dcc031b838ed6fa0b7908d3ae20226c48d8fd90e6108c80afd",
+      "bytes": 7676,
+      "decompressed_sha256": "e500ed83609d9216f6ff383d4198c6fe6e9a503e3e391a8e0e7ab58116e5980c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/ellipsoid_geometry.log",
+      "sha256": "4ed5ecc7df772d32ac92e26fe1c9446454e6b02c4f3094aee0d095db0a026140",
+      "bytes": 2020
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/ellipsoid_geometry.py.gz",
+      "sha256": "e7c7733643df6a4e03a3867c7ee59daab40018af688678e62a6f7e4f72c575ee",
+      "bytes": 7677,
+      "decompressed_sha256": "a194edd3513ac3f2403911ba613551c5f72d748d4466e80b88dcf714af3e9441"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/flux_density_factor.log",
+      "sha256": "3e9841a1253b6f639220d3370e9130e3cdaee473fbbb1e720f01d4e0c860fe50",
+      "bytes": 835
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/flux_density_factor.py.gz",
+      "sha256": "2df08d00ec846e49c20e3a09d5cc4582d764f08d418e6ac5a639d6753ca5189c",
+      "bytes": 7674,
+      "decompressed_sha256": "5a056e79c670b5dac995ebdabc5e1e5a5991e3993b4745b4d85cdf073e61dc9d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/form_pair_factor.log",
+      "sha256": "6d5f69571d91801f16d7c249552c04c0a6d151ca2a1bba2fc0231da8e2893a15",
+      "bytes": 1785
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/form_pair_factor.py.gz",
+      "sha256": "6fbe605ec65780fd6aa2233d3777358a96c88e46be35280faa9be614f6d6f722",
+      "bytes": 7676,
+      "decompressed_sha256": "f73a97d75efbe818f74784ff5470940f86e38e13a1b4874c280e865daa8c8774"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/fourth_moment_cross.log",
+      "sha256": "fb5c489b7182c8d5a08acb0a1f8b7dfe9b101a4c54c7daae792289d614aca291",
+      "bytes": 2021
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/fourth_moment_cross.py.gz",
+      "sha256": "74a5ba344f873d8e662b0b192fdbb888d95678be9fca401e09b571af3f8b9cae",
+      "bytes": 7675,
+      "decompressed_sha256": "59d05268c5d908ebc8125ccbff06bc026cc52777d4e460b1e81da69eb6085a43"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/historical_driver.py",
+      "sha256": "bc669236e02afb9f6d3e8cd8ddd07a33e5fdd3c594aee343a1cdd911bcb59728",
+      "bytes": 2845
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/manifest.json",
+      "sha256": "39e3c9782d70a9f752f9b070fbc27441893b8f41414aa979132d8dcc690b10c6",
+      "bytes": 10877
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/observable_adjoint.log",
+      "sha256": "5ab60f983415cea67db93ac2e8f4a3bc22507e3c760f80d36ba6494e15493b42",
+      "bytes": 1811
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/observable_adjoint.py.gz",
+      "sha256": "ae7b4ca8e5987200f39766445e989577528caa51f6f9539ea50129bccb2b038e",
+      "bytes": 7677,
+      "decompressed_sha256": "6f636b15816c81dc9ea4f3817ce5003530761403ffda86103cc6c543820bb20d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/parity_phase.log",
+      "sha256": "c1e8fd7ead329cacc0ad004ed49c355683232adba87b6294df0fb18fd1d7a9eb",
+      "bytes": 842
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/parity_phase.py.gz",
+      "sha256": "fb0e73752c7f48071ebb8d1f73c1ac496ecdd5cfa1e5139fb84583caf2e947c8",
+      "bytes": 7669,
+      "decompressed_sha256": "9a87503a2dcf238b16bb08c8935291ca394dfadd73a9016d7e1d37eac91ce169"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/tensor_upper_bound.log",
+      "sha256": "b3532076da700c21aed3c74d19828a281866455569588be709e0a3921fb21413",
+      "bytes": 2184
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/primary_mutations/tensor_upper_bound.py.gz",
+      "sha256": "dfa49386cff0158b4aa886c6dc91c13e0e8aa32c1af8ee184ea1b89d2bbb44b7",
+      "bytes": 7678,
+      "decompressed_sha256": "e2c27a6396f8785b8563956b1ec601ffe84272e9dd6882c6bce738cba4738edc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/composition_check.log",
+      "sha256": "ab7ecb5d8a23701badf69c113cc926cef93a3a51e30ad301de62fada99c3571b",
+      "bytes": 817
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/composition_check.py",
+      "sha256": "d9579cbfbcdeac7385f3c1aed0f4bbba07e6d82febe3aa750c78bdbb30ad4137",
+      "bytes": 6363
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/composition_checks.json",
+      "sha256": "2f2905e985137deea54004b6ecee2b51d7f33810aae0bd69ace7c7084afc1413",
+      "bytes": 14015
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/composition_refresh.json",
+      "sha256": "2822918ab85d235cb0bdfffe30341bc3087225325960d2a16ce47835737f39f7",
+      "bytes": 10990
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/flux_replay.log",
+      "sha256": "cea70a1a1fc9bf42b9ae087ab525cbb0f0a934fb872964e2375faab01b5edfb1",
+      "bytes": 1375
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/primary_replay.log",
+      "sha256": "92954054243d7c33e501024a7a729f8fee62bfc05fddb498134322dbb1eb6e1b",
+      "bytes": 3744
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/receipt.json",
+      "sha256": "110294a3a9e7097d53ab4cd0f8b467266c928091a465105e15428619f92cf1dc",
+      "bytes": 35228
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/receipt_attempt01.log",
+      "sha256": "0a9d727defacf86c541abe873dd0eafdb4050ab4955ce40980831a4d85dc4ecd",
+      "bytes": 450
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/refresh_manifest.log",
+      "sha256": "7c6cac1d2a2eb2068e662bc74d3a92355d4fa68fe62bfbdff5e59214e70f55b3",
+      "bytes": 710
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/refresh_manifest.py",
+      "sha256": "82e78b645af055431009d701b7208e2320fc9efd9b32a6c0ede7a7feebaa9703",
+      "bytes": 2264
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/source_composition_current.json",
+      "sha256": "8e457c06daf37e38a5c620ceea8e058a1cd28587c5b7ea8e38384294d77eb851",
+      "bytes": 20168
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-scattering-flux-20261011/evidence/publication_composition/transport_form_replay.log",
+      "sha256": "aeaec385f509e049b7175c8b7987219ab2e77781b193fa0a352d9dd08a9c44d4",
+      "bytes": 1985
+    },
+    {
+      "path": "docs/EXCLUDED_WALK_SCATTERING_FLUX_TRANSPORT_FORM_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "c70ad03ede2a01c0b49282043a4b20824f64a6b42c3440facae1b6c5e231c0bc",
+      "bytes": 63720
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "7bc8461b9b8efa27f2b6965ef470c1ee974dc38de7801a8339996b8cf16df4e9",
+      "bytes": 983561
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/README.md",
+      "sha256": "b07588d2584aabb65ffdba3d290bd7706ee4452c39375f692151a069bb02b690",
+      "bytes": 2856
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/RankOneScattering.lean",
+      "sha256": "2f5260a23eecc90c6bf3fabe9e26c4c05a5595fa151b98010097a7ee501b22ae",
+      "bytes": 8345
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/SCOPE_REPORT.md",
+      "sha256": "cf0cd38ee841656a2ca342891b7bdbf9e5f4bc0aa768357e1c787d7ebf3cd7da",
+      "bytes": 8194
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/axioms.txt",
+      "sha256": "a063cb7a78758b601f6e4e895234e52dd66570200fe5932a07da94ad3ec1c983",
+      "bytes": 964
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalseCoherentSign.lean",
+      "sha256": "097b83e14a414ee9aee2f38d966dac40473f63bbe088f424d90d8cc1f65ec1c6",
+      "bytes": 789
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalseCoherentSign.log.gz",
+      "sha256": "e0186c4f6a3e6cecb1935b2f020bad779537403421a4ecb3330061cfc1142908",
+      "bytes": 532,
+      "decompressed_sha256": "8995a8ba0644f86d670b9b1e9b2feacdddf6b1b7344f512125da551f74daa348"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalseMissingCapWeight.lean",
+      "sha256": "9eca80177b2de8aae95fd7017fc6192c36057ce71284349890e03697fb4fd7be",
+      "bytes": 619
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalseMissingCapWeight.log.gz",
+      "sha256": "af0f5f754ca4e0b4115f6e8f22cc390672ec137e9765c70b3e4d48c8f751e81c",
+      "bytes": 510,
+      "decompressed_sha256": "1313a666cf355484b3e435f285648960753a6d4b1461f896b06aeb513f0c237a"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalseMissingConjugation.lean",
+      "sha256": "beba3e6f65fd2401dafbb289a63e9044da7bf54f5b92dbff3038c6575e6844f8",
+      "bytes": 700
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalseMissingConjugation.log.gz",
+      "sha256": "99656ca0d9ee02b9a87ec32cfa37474991b1326786bc44e9d4fff73c26fa7932",
+      "bytes": 346,
+      "decompressed_sha256": "dbeb879b5ad97a29dad37b89d194a6fd44e4fb40db4cf7f38bf49d7affbf7ede"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalseOverlappingOutgoingZero.lean",
+      "sha256": "13685b59e4f3d87b02bbfd858d897aa20def796a25f9ac5f3d269bcf37838231",
+      "bytes": 261
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalseOverlappingOutgoingZero.log.gz",
+      "sha256": "1c4f0611143900352d66abd9022c0334f0721aa3e2cbaf32961d4da4aa2dc592",
+      "bytes": 165,
+      "decompressed_sha256": "75b2c57dabc5392233fd7d6c0199315a3af6d1caf5615fcf2cc259cc6c07d684"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalsePhaseUnitarity.lean",
+      "sha256": "97b9cd99fafe278d99878448c48d903c0358f8cad9f7d59853613a2b8f9b0225",
+      "bytes": 321
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalsePhaseUnitarity.log.gz",
+      "sha256": "f055d852eefc32d00cb9e5bd19657a3de1d9fb7ffdd8894de357a723c05080c8",
+      "bytes": 156,
+      "decompressed_sha256": "26cb2bc63e7677e4fd77e7fc6916eed510dd700d05a3f8f068dd8d3290a2e1e7"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalseVectorNormalization.lean",
+      "sha256": "e22d169b53b61a5105f6612c8d0138b056a70c3d22a4441437980815b178ff6b",
+      "bytes": 327
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/FalseVectorNormalization.log.gz",
+      "sha256": "3877254ec398b6c984f389764ad0d90d4ede55e4a0acaf04598562cd95167db7",
+      "bytes": 160,
+      "decompressed_sha256": "0b039fa67c7e292729cc8bb13c4dcde41896a17541af7e264bbfc74d3cc7df11"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/PositiveBoundaryWitnesses.lean",
+      "sha256": "bd31a06c53ee5e66f50f120c9d6b7c86fcdcec6f0745384e8113563699342ea5",
+      "bytes": 550
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/controls/PositiveBoundaryWitnesses.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20,
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/false_controls_manifest.json",
+      "sha256": "a12078ef8f9ac1773eecd9f3d3388b0f553b530506868b74ce2beecd954ffee7",
+      "bytes": 7714
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/final_compiler.log",
+      "sha256": "58f04a8d0485e9304892db7db4461ab384dc95e5c4ff4272fdda65451455ac6f",
+      "bytes": 4128
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/ImportCheck.lean.gz",
+      "sha256": "c4f53b2021f2f42c4dced336e133c363ebe521bb69c5d8fa01b9eb6cfe69416c",
+      "bytes": 90,
+      "decompressed_sha256": "1be3504bea4d742970923f4cc7c46512dc164a5227dc3a14432ef563be8d15ad"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/NumeralControlProbe.lean.gz",
+      "sha256": "0065ae57cd502c01e9928cb21de4ee7744ea7c1e931d432b27a511763f453950",
+      "bytes": 164,
+      "decompressed_sha256": "f60a0162132d8cf8d45588be345164e8fe152ffe62b398fb135b3ba9c50f7b5e"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/SCOPED_OBLIGATIONS.md.gz",
+      "sha256": "12932c9987644bc8b438a7d6069ed67dd988c827afe9488f8efd18e75099a8b8",
+      "bytes": 869,
+      "decompressed_sha256": "dbd8102a200b78d8755934278dbafdcf0002e96425186b61dd0a0b854d6569da"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/cache_execution.json.gz",
+      "sha256": "7d727f0c0b4b9d980301169e5ee4b132b6ecf760afe257402b773cd7aca10eb5",
+      "bytes": 637,
+      "decompressed_sha256": "ae2cc52feb4b7d5a94cd32a17e0e2d7de8571c52ec3cf0d1e95ab81ec68ba928"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/freeze_receipt.py.gz",
+      "sha256": "7bae57f58812774efa7a9c8362e93bb23900eb8a9a089ed90a52b026e724870e",
+      "bytes": 2652,
+      "decompressed_sha256": "46b09b7d8634927b4e3eb3d30e93a6ed64f7ab0455846c2f18d348f76796cff5"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/lean_path.json.gz",
+      "sha256": "7fb13990dd662228c37aceb62d1eb5d59098b3b4e332eba685520d7eecdad87d",
+      "bytes": 251,
+      "decompressed_sha256": "6c1b04810e6fa2462ce8397b33d94e86aaa42a3b754feed2aa86421205e3a794"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt01.json.gz",
+      "sha256": "b267dabd4539d9f01f5cfcb1113154ab248ec1fc8cb27282d82e87be159d570e",
+      "bytes": 326,
+      "decompressed_sha256": "8c3688fba6a2711b15f689124e621d81c116884caf17a78a5f9ed05c6eabc57f"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt01.lean.gz",
+      "sha256": "0ff9787a0bea88456f1ee3d1a37eb3c1b7586e5f26fb45e6dd650b2546424aac",
+      "bytes": 1698,
+      "decompressed_sha256": "08d03dc42f8409e19a3cc5b3bc343a8d112089d61d01dec467970c5f1d0e4b1f"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt01.log.gz",
+      "sha256": "8dc16dbc35f1b22b8dd1b9355aab6731d3e02c3b8767cb2bccd63311895e2591",
+      "bytes": 165,
+      "decompressed_sha256": "ef4898f4231aa8f0b48b10f86e7e5b5544e22cfaa16a456ca5dcd08882ba0d42"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt02.json.gz",
+      "sha256": "f3fac75cdb346b374d2de00100e776d705738b267ef7067f43ba8ffc1087c47e",
+      "bytes": 333,
+      "decompressed_sha256": "5e6b0a4bcca4feb133e20bc48de4d3a9c091a929e3572ff95478165cf8d116b3"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt02.lean.gz",
+      "sha256": "0ff9787a0bea88456f1ee3d1a37eb3c1b7586e5f26fb45e6dd650b2546424aac",
+      "bytes": 1698,
+      "decompressed_sha256": "08d03dc42f8409e19a3cc5b3bc343a8d112089d61d01dec467970c5f1d0e4b1f"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt02.log.gz",
+      "sha256": "500b03de208d70d72b43edf53490011c1e70b1be3a95137e59676cd577d5787d",
+      "bytes": 2179,
+      "decompressed_sha256": "03835d82acf8b1c3d70b83fe1335e69762be2f67ff9d22f04ff3c7e52a4152de"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt03.json.gz",
+      "sha256": "30d4580caf3014aacd71ca4170828e99bb83b91fe4b9cf5a945c8bab2cc06a1f",
+      "bytes": 333,
+      "decompressed_sha256": "80fac0404ef05560fad3c103f2845d6fc929a0c5dbf5ec7c2493955a05bb66f9"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt03.lean.gz",
+      "sha256": "623d806892e0cbca3c4996edb5d96687fa77965df51d4ffbdad7ce0102a1ff89",
+      "bytes": 1754,
+      "decompressed_sha256": "4700c9dcc572ee54b316cdff521e296c84cf89f1b54723e9330fe12d6f6f0ac3"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt03.log.gz",
+      "sha256": "83761fe4f62684354cd20c09c2f8dfc91c90470362371938cf73e834a344f3d6",
+      "bytes": 1478,
+      "decompressed_sha256": "64c59c5bc98d2f6474c7c467cdc7f984cd41df2e4fab04667d32552244d344da"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt04.json.gz",
+      "sha256": "168b857262329bd8d181295a7710a1fa908827bd6cb83630a54cf80f54c6ee60",
+      "bytes": 332,
+      "decompressed_sha256": "7274dc0e252d7c2a9b9e6922511e6996b1100c70ad525cb67a2bf0537f6ff7fe"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt04.lean.gz",
+      "sha256": "43e5001d8f759679d2b1e879f1346a9737efa1ff06971e4475c5eca436f32288",
+      "bytes": 1737,
+      "decompressed_sha256": "a65a08bfb1ee3527537367208b469078eddf41afefc5a762161c60ea25f1cf04"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt04.log.gz",
+      "sha256": "5707b379fb2f7a5b13a07c6428ac03bfa7d5d468bb8362d0d74ec1b0bc232104",
+      "bytes": 430,
+      "decompressed_sha256": "d83045076eadd12b44e3a8161ceac8847a8de53a0af5de5e5add0ad0edfbb47f"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt05.json.gz",
+      "sha256": "00505d382bf250ed8415df6203c7535d554f90e08ad2064c714207a8259d8f7a",
+      "bytes": 333,
+      "decompressed_sha256": "45a1293f2e81b690d2c82e45c3034d6974e4b0efa481fbda2073c192671b87b3"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt05.lean.gz",
+      "sha256": "b3e24e568eaf90dc4ba088a4b6d0e1e4a1f1782e93fd5bdded6b57f8fa048f71",
+      "bytes": 2335,
+      "decompressed_sha256": "2f5260a23eecc90c6bf3fabe9e26c4c05a5595fa151b98010097a7ee501b22ae"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/attempt05.log.gz",
+      "sha256": "febdcd7587210f9c9c6ba4d1f0577a3eedec6cb77ace967c53ba49dcf64babe0",
+      "bytes": 850,
+      "decompressed_sha256": "58f04a8d0485e9304892db7db4461ab384dc95e5c4ff4272fdda65451455ac6f"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/cache_setup.log.gz",
+      "sha256": "b0a69915e097f58e623ec8f97c9843199307d731006a1ecebe3dc47c83fe928f",
+      "bytes": 3180,
+      "decompressed_sha256": "6c26e8cb8b112555e992b44eca9160ee3f0858776482dacbe6aae6901d6b72ce"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalseCoherentSign.lean.gz",
+      "sha256": "653f79fa21f8041598b30e0a4f5f65e6c3637706dd627e46a0df5f15a397616d",
+      "bytes": 486,
+      "decompressed_sha256": "097b83e14a414ee9aee2f38d966dac40473f63bbe088f424d90d8cc1f65ec1c6"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalseCoherentSign.log.gz",
+      "sha256": "e0186c4f6a3e6cecb1935b2f020bad779537403421a4ecb3330061cfc1142908",
+      "bytes": 532,
+      "decompressed_sha256": "8995a8ba0644f86d670b9b1e9b2feacdddf6b1b7344f512125da551f74daa348"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalseMissingCapWeight.lean.gz",
+      "sha256": "34fdf2e4deed905da247fd87511074e53abdae93970d806b1b460452f00bfa8a",
+      "bytes": 413,
+      "decompressed_sha256": "9eca80177b2de8aae95fd7017fc6192c36057ce71284349890e03697fb4fd7be"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalseMissingCapWeight.log.gz",
+      "sha256": "af0f5f754ca4e0b4115f6e8f22cc390672ec137e9765c70b3e4d48c8f751e81c",
+      "bytes": 510,
+      "decompressed_sha256": "1313a666cf355484b3e435f285648960753a6d4b1461f896b06aeb513f0c237a"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalseMissingConjugation.lean.gz",
+      "sha256": "543feb3d01e92c944f4ae288b65ede490c47fafbb2ab3c0c3515fcb5b1f9d33e",
+      "bytes": 436,
+      "decompressed_sha256": "beba3e6f65fd2401dafbb289a63e9044da7bf54f5b92dbff3038c6575e6844f8"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalseMissingConjugation.log.gz",
+      "sha256": "99656ca0d9ee02b9a87ec32cfa37474991b1326786bc44e9d4fff73c26fa7932",
+      "bytes": 346,
+      "decompressed_sha256": "dbeb879b5ad97a29dad37b89d194a6fd44e4fb40db4cf7f38bf49d7affbf7ede"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalseOverlappingOutgoingZero.lean.gz",
+      "sha256": "1abb339dee987c6264fb88d7ff937e8a611e25a81a88af7bc6b49b5507bf14c2",
+      "bytes": 202,
+      "decompressed_sha256": "13685b59e4f3d87b02bbfd858d897aa20def796a25f9ac5f3d269bcf37838231"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalseOverlappingOutgoingZero.log.gz",
+      "sha256": "1c4f0611143900352d66abd9022c0334f0721aa3e2cbaf32961d4da4aa2dc592",
+      "bytes": 165,
+      "decompressed_sha256": "75b2c57dabc5392233fd7d6c0199315a3af6d1caf5615fcf2cc259cc6c07d684"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalsePhaseUnitarity.lean.gz",
+      "sha256": "bf522ee83c3dd469f0111688d38bd8656a58c385cd82b86c983672b6b9600d8d",
+      "bytes": 221,
+      "decompressed_sha256": "decaeec736b702e2e63aa3736ed5d150ea7b7d14727ae8d004d3213c5525e288"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalsePhaseUnitarity.log.gz",
+      "sha256": "1e3df7229b64c5c986e0e862eed8bbbf4301d4c9de9702ab60857366e36d43aa",
+      "bytes": 180,
+      "decompressed_sha256": "1706397de2a029807a42a8b110a036e7c69264963d16e82c6e37e1289a60dce3"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalseVectorNormalization.lean.gz",
+      "sha256": "e8f6ee460ad23b2d0371467ebc0fb4ca4bd1250497554916d36c065457cf60f5",
+      "bytes": 225,
+      "decompressed_sha256": "6218cf7cbfd61a07e9eea9d92e6cf9e703ebe88b34b76089c661bf04311ffe0c"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/FalseVectorNormalization.log.gz",
+      "sha256": "52b46086fdd2d3d82526842f86c4dd73362c6fa3127b5017dfc5672b308de7c9",
+      "bytes": 215,
+      "decompressed_sha256": "fa6c099d34cc5856a7036b7137024aaa25dfcff07c3970aee3bead97e88e0a5a"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/PositiveBoundaryWitnesses.lean.gz",
+      "sha256": "0cee9b5590b1bdff50e13e763143b8dbcec65ca03a111431c6e97dce31b379db",
+      "bytes": 265,
+      "decompressed_sha256": "3884ae1d4a34d7c59c631cab76cf5abf96c685e4bb1d588245fe3c3e5dddba75"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/controls/PositiveBoundaryWitnesses.log.gz",
+      "sha256": "64f1ef573955f7a0adcab7a9bf19451c5e72864a9fdaffdb5c5fd463ca674faa",
+      "bytes": 236,
+      "decompressed_sha256": "5a02ad547a967279f9ebda30b5f51f97a77a3d9a2ccb011b8a9484a6c52c008f"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/manifest.json.gz",
+      "sha256": "a5e05169628ceb8b7227ac7a8b0995d2baef05d48ef171d651e6e5bc1746594f",
+      "bytes": 1416,
+      "decompressed_sha256": "766b2c209ac3c71b76944c8374e46ebe82fc546735dabd8b0701110a1c15b4bd"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/control_attempt01/run_false_controls.py.gz",
+      "sha256": "faccec56cca5f6f8c9439d9b90317ed2557cbdeaaadcd27298713b802fcbca33",
+      "bytes": 2220,
+      "decompressed_sha256": "a48a2cc862cd8d029e8d18dd6fd91eafe35e64c6a593b1ecc9e78a7af4804708"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/import_check.log.gz",
+      "sha256": "fdd4f7eeedca61b4763cb7be693196f86871b67b3b211e57c809e34509629b7b",
+      "bytes": 202,
+      "decompressed_sha256": "aff1c246d092482929d42f005da2e379813c556c425cfd1d42402efff3f0b85d"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/import_check02.log.gz",
+      "sha256": "044fab3f3856a33a4c50a6c51e37f8fda72f252c0d03ae5bef4e7aa22bb1223e",
+      "bytes": 342,
+      "decompressed_sha256": "f39117c5644c060587330494be7f15cd17d5c99d00eceec964ffdc7885299554"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/logs/numeral_control_probe.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "bytes": 20,
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/mathlib_setup.log.gz",
+      "sha256": "8e4c0b11ca6a7042cbe52938f9b06cadf72372177fa99244e8af11b11a3e4451",
+      "bytes": 609,
+      "decompressed_sha256": "f0794dee05193bb799bf1b27a674385aae95f5e0c5329f4cf7d5f559a3aacea4"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/run_compile.py.gz",
+      "sha256": "2c4fc8c5a18b4729a2ed64f5bb614503dbac35040029aa679cecf6b4516701ad",
+      "bytes": 762,
+      "decompressed_sha256": "12b8eb52bb33c16bf17c6d87763ac191242b72eea4ac05a853e2a4ef41ed9521"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/run_false_controls.py.gz",
+      "sha256": "ba9be424e8de2d8cd766de1a1880b904ff23d2255ad7e475d628c08366c2a3d3",
+      "bytes": 2312,
+      "decompressed_sha256": "45db0dd94db0bd31b346f4a2a38a1c606775bb5975de499d1c539a27bdfdeb30"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/history/runtime_extract.log.gz",
+      "sha256": "f0b631b653e7d68b69d969ac2eb4dfb1eca97af652ab0a8020455e68a06231ae",
+      "bytes": 256,
+      "decompressed_sha256": "6c6bb439f55b2660c8c1a0f79558d78fb592434dbb44b36da281ec89dec211e6"
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/receipt.json",
+      "sha256": "1564b0bf532aca6c7f43c301455163b1af0afb96405e620eb56c481bdf7ed96d",
+      "bytes": 29021
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/reproduce.py",
+      "sha256": "f45ea001be89c5fbf1f9d2957ca75938ff04c48bbea8fc1ca4b9a25ee872e7be",
+      "bytes": 3566
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/source_identities.json",
+      "sha256": "bb942ca893eb1f058e0479e8686075117fdca213c2e9e31b1f46c86532d433d0",
+      "bytes": 2924
+    },
+    {
+      "path": "formalization/excluded_walk_rank_one/versions.json",
+      "sha256": "303e38272236f33350d2a5d925f67df24561296adfbf7901f294f7a47daa57c4",
+      "bytes": 320
+    },
+    {
+      "path": "logs/runner-cache/excluded_walk_scattering_flux_transport_form_2026_10_11.txt",
+      "sha256": "dcb44b5207f04f5b0f80e5319ea939b365b4b87d5467a5a602811789820814b7",
+      "bytes": 4116
+    },
+    {
+      "path": "scripts/excluded_walk_scattering_flux_transport_form_2026_10_11.py",
+      "sha256": "f8bdf9f014eae164ab283d73910ff38968933637ff25349f5e9c5d1f974dff2a",
+      "bytes": 20798
+    }
+  ]
+}

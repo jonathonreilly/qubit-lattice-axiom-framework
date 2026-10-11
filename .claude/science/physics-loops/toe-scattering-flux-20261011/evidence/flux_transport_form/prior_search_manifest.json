@@ -1,0 +1,47 @@
+[
+  {
+    "revision": "a13caa4885f547c8d206265b031ba7649e539fd9",
+    "command": [
+      "git",
+      "grep",
+      "-n",
+      "-iE",
+      "(scattering|cross.section).*(quadratic form|variance|Dirichlet)|Dirichlet.*(scattering|cross.section)",
+      "a13caa4885f547c8d206265b031ba7649e539fd9",
+      "--",
+      "docs/*.md"
+    ],
+    "count": 2,
+    "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_form/prior_search_0.log"
+  },
+  {
+    "revision": "a13caa4885f547c8d206265b031ba7649e539fd9",
+    "command": [
+      "git",
+      "grep",
+      "-n",
+      "-iE",
+      "(energy.current|current).*(transport tensor|transport form)|transport.*(energy.current|current variance)",
+      "a13caa4885f547c8d206265b031ba7649e539fd9",
+      "--",
+      "docs/*.md"
+    ],
+    "count": 1,
+    "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_form/prior_search_1.log"
+  },
+  {
+    "revision": "a13caa4885f547c8d206265b031ba7649e539fd9",
+    "command": [
+      "git",
+      "grep",
+      "-n",
+      "-iE",
+      "(rank.one|rank one).*(variance|coerciv)|variance.*(rank.one|rank one)",
+      "a13caa4885f547c8d206265b031ba7649e539fd9",
+      "--",
+      "docs/*.md"
+    ],
+    "count": 8,
+    "log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_form/prior_search_2.log"
+  }
+]

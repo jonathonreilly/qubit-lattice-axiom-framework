@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+    "env",
+    "lean",
+    "-R",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/formalization/excluded_walk_rank_one",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/formalization/excluded_walk_rank_one/RankOneScattering.lean",
+    "-o",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_publication_lean_reproduction/RankOneScattering.olean"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+  "exit_code": 0,
+  "elapsed_seconds": 42.69855704205111,
+  "timeout_seconds": 180,
+  "lean_version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)",
+  "mathlib_revision": "939d5d5d9e6f07d1d8c80a16fa3fa39a7518b716",
+  "source_sha256_before": "2f5260a23eecc90c6bf3fabe9e26c4c05a5595fa151b98010097a7ee501b22ae",
+  "source_sha256_after": "2f5260a23eecc90c6bf3fabe9e26c4c05a5595fa151b98010097a7ee501b22ae",
+  "scope": "Rank-one algebra only; no analytical walk theorem formalized"
+}

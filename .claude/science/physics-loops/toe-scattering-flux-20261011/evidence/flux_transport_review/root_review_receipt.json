@@ -1,0 +1,70 @@
+{
+  "created_at_utc": "2026-10-11T19:17:45.517505+00:00",
+  "role": "Independent selective research check by root, not an audit verdict",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/ROOT_EXCLUDED_WALK_TRANSPORT_FORM_REVIEW.md",
+    "sha256": "5ff79b0756214eb75f94b8b64e8eeae4dbb7eefcba4640dc9b97e6be78fbe572",
+    "bytes": 7993,
+    "lines": 136
+  },
+  "source_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_FLUX_TRANSPORT_FORM_PROBE.md",
+      "sha256": "52e8b10cc7db84d65372bfac18a0a0839889b03003190ee0ec310b503115f143",
+      "bytes": 24481,
+      "lines": 468
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_form/receipt.json",
+      "sha256": "bfc05c9cea6156ed7708ee0bbe189543543edbc62b4fc3ac1da12834360985b6",
+      "bytes": 8563,
+      "lines": 135
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_FLUX_BRIDGE_PROBE.md",
+      "sha256": "35cfa3095d1abaaeef0e6b77296b42a218615b23f680ee312576adbf924dfc17",
+      "bytes": 32061,
+      "lines": 628
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/ROOT_EXCLUDED_WALK_FLUX_REVIEW.md",
+      "sha256": "8fbc4a36dc351460bfc151a4bb3c40ea569f437057e2b72da47540c508608214",
+      "bytes": 9830,
+      "lines": 170
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_review/root_review_receipt.json",
+      "sha256": "b6813f040679c5f4f7fc54783908a3e1fbd47c36e842b0c1318f97a4446062cb",
+      "bytes": 2385,
+      "lines": 51
+    }
+  ],
+  "independent_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_review/independent_transport_controls.py",
+      "sha256": "f0cb6a5088268cf16b7a3455fd41a6562160fe46cc758d338d89a5316d2d7fa6",
+      "bytes": 4149,
+      "lines": 92
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_review/independent_transport_controls.log",
+      "sha256": "96574e38db0ba015a55a73d98328f9631a5b4fcc957e3b958d51d2945e309b7f",
+      "bytes": 1375,
+      "lines": 30
+    }
+  ],
+  "source_receipt_files_verified": 13,
+  "execution": {
+    "exit_code": 0,
+    "elapsed_seconds": 1.477,
+    "failed_runs": 0,
+    "timing_precision": "Previously recorded wall time rounded to milliseconds"
+  },
+  "coverage": "Complete 468-line note, complete author helper/log, independent analytic reconstruction, complete separate exact helper and successful output. No consequential defect found; same supplied-model and asymptotic-scalar-observable scope.",
+  "limits": [
+    "No audit status assigned",
+    "Author floating quadrature is not certified",
+    "No microscopic encounter clock or many-body Markov law derived"
+  ],
+  "editable_prompt_files_changed": []
+}

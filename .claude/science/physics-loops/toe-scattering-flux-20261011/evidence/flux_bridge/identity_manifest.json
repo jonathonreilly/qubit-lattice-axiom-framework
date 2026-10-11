@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-11",
+  "status": "External author proof/probe; no independent-review or retained-status claim.",
+  "repository_revision": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TRANSPORT_PROBE.md",
+      "sha256": "8bc423b2d5adf368f4ae09a2bb87730517be243a050b4289dad3a0b217f09526",
+      "bytes": 27369,
+      "lines": 322
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_COOK_BRIDGE_DRAFT.md",
+      "sha256": "2c54b891deeb43a19c5f41de5059aadac7fc8d672dfb68e0b8aa575d27eb3fc7",
+      "bytes": 12191,
+      "lines": 262
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md",
+      "sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe",
+      "bytes": 8340,
+      "lines": 190
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_COHERENT_PACKET_DRAFT.md",
+      "sha256": "b4ae921cc065fb2f38c1caee5aca3a1cf69bac317a6f6f0f537becd393b6cd38",
+      "bytes": 24543,
+      "lines": 522
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_FLUX_BRIDGE_PROBE.md",
+      "sha256": "35cfa3095d1abaaeef0e6b77296b42a218615b23f680ee312576adbf924dfc17",
+      "bytes": 32061,
+      "lines": 628
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_bridge/flux_controls.py",
+      "sha256": "9803c454d4cc7610e0056ef47d389891cecb1680b2dc666c92d6d9ed36476a36",
+      "bytes": 8963,
+      "lines": 206
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_bridge/flux_controls.log",
+      "sha256": "cea70a1a1fc9bf42b9ae087ab525cbb0f0a934fb872964e2375faab01b5edfb1",
+      "bytes": 1375,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_bridge/M6_frozen.md",
+      "sha256": "e0536f80a25feb0b368c10a0016a9d09b07b5bd06827751c30029d2eb1d70065",
+      "bytes": 24980,
+      "lines": 226
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_bridge/repo_search_0.log",
+      "sha256": "5cf914fd26cdc1b055a1857143e23f2780d56da3c94ce4417ff8915c0609efaa",
+      "bytes": 57383,
+      "lines": 146
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_bridge/repo_search_1.log",
+      "sha256": "fda71538de5fdcc8452dc39ad7186c9f5b08706d631c0ebe5ecf356635edaae6",
+      "bytes": 71721,
+      "lines": 231
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_bridge/repo_search_2.log",
+      "sha256": "3a97044aae0170de28c8299a437251e3b2b919fd93dc2e685d69a61628e65bb7",
+      "bytes": 172733,
+      "lines": 551
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_bridge/repo_search_manifest.json",
+      "sha256": "336f1545237b078111a4075ccdbb2e53442591c9364f75bc67ad7586c4dca36e",
+      "bytes": 51008,
+      "lines": 517
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_bridge/shaban_vainberg_2018.pdf",
+      "sha256": "95cd35e4045482e4c7885e598be980cd2e75d426cdbe0d1880fa5bcd02103ffa",
+      "bytes": 324974,
+      "lines": 6432
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_bridge/shaban_vainberg_2018.txt",
+      "sha256": "25c3764493828b1cb545c3669a99ead3423ce54a9372c07d719b67c1621780ff",
+      "bytes": 77868,
+      "lines": 1361
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_bridge/shaban_page8.png",
+      "sha256": "d92df9c2a9588ea3bcf1493d4787d472809b323a2333dfcfd3308b55d95a58a8",
+      "bytes": 160474,
+      "lines": 518
+    }
+  ],
+  "coverage": {
+    "new_note": "Entire 628-line note cold-read; final disjoint-detector prose correction preserves formulas.",
+    "helper": "Entire 206-line helper and complete 13-line exit-0 log read; successful execution not repeated after prose-only correction.",
+    "controls": "64 exact Gaussian-rational local continuity/source identities, finite-box flux, parity zeros, paired normalization, eight-channel unitarity; 24 actual lattice-shell matrix/parity cases plus three angular-integral quadratures.",
+    "limits": "Own author evidence. Finite controls do not prove stationary phase, principal-value regularity, general threshold asymptotics, or independence.",
+    "matched_repo_source": "Complete 226-line M6 frozen copy read. M3/M9 coverage reused from unchanged earlier source map.",
+    "searches": "Raw 146/231/551-hit logs retained. Targeted matched-source reading, not complete reading of all raw hits or a global novelty proof.",
+    "primary": "Shaban/Vainberg arXiv:1812.06390 setup/Fourier convention, Theorem 1, Lemma 2, Theorem 4, amplitude (13), argument through (21); formula (13) visually checked on PDF page 8. Later nonconvex, uniqueness, and perturbed-operator proofs not fully read.",
+    "prior_sources": "Four frozen author sources read previously in full and hashes reverified here; reused only with the named dependency limits in the note."
+  },
+  "open_obligations": [
+    "Independent selective check of supplied-model stationary flux proof, incident/quotient normalization, matrix stationary phase and parity averaging.",
+    "General central asymptotics rely on named provisional frozen threshold coefficient/remainder.",
+    "Optional finite-time beam additionally relies on named order-seven scaled threshold derivatives and Cook bridge.",
+    "No simultaneous far-radius/low-energy remainder or beam-width-to-plane-wave limit supplied.",
+    "No physical clock, many-body closure, kinetic equation or relaxation rate inferred."
+  ],
+  "failed_or_insufficient_routes": [
+    "Pointwise incoherent addition of eight corners fails exact parity zeros.",
+    "Continuum phase exp(i E r/2) is not a fixed-E far-field phase uniformly as r grows.",
+    "A unit angular delta state is not square integrable.",
+    "Net paired incident vector current is not total incoming flux.",
+    "Norm of (S-I)chi is not in general a detector probability.",
+    "Continuum flux-across-surfaces theorem was not applied blindly to a lattice."
+  ],
+  "provenance": {
+    "helper_execution_exit_code": 0,
+    "mathematical_failed_test_runs": 0,
+    "tooling_failures": [
+      "pdftotext absent from PATH; bundled Poppler used successfully.",
+      "fitz unavailable in bundled Python; rendered page with bundled pdftoppm instead."
+    ],
+    "writes": "Only external S note/evidence files; no W or walk_worktree source, commit or PR changes.",
+    "checkpoint": "Proof draft and finite controls frozen; hand off for source-bound selective review."
+  }
+}

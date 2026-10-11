@@ -1,0 +1,11 @@
+Supplied excluded-walk flux/form finite controls; analytical and formal scopes remain separate.
+AUDIT_TIMEOUT_SEC=180
+Exact 4^3 torus: 64 local continuity identities, resolvent absorption identity and all parity zeros verified.
+Exact finite-box outward flux: 711249840946106582750000/4113412469157685789685031
+Exact normalized corner beam: other-corner probability 7/80; total outgoing probability 1.
+Exact paired incident normalization: density 1 and contact intensity 1; ordered single-wave contact intensity 1/2.
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_publication_mutations/flux_density_factor.py", line 208, in <module>
+    assert abs(norm(expected)-Factual)<1e-12*Factual
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

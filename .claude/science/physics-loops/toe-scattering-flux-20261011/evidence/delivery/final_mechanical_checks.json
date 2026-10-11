@@ -1,0 +1,26 @@
+{
+  "fixed_scientific_sources": {
+    "docs/EXCLUDED_WALK_SCATTERING_FLUX_TRANSPORT_FORM_BOUNDED_THEOREM_NOTE_2026-10-11.md": "c70ad03ede2a01c0b49282043a4b20824f64a6b42c3440facae1b6c5e231c0bc",
+    "scripts/excluded_walk_scattering_flux_transport_form_2026_10_11.py": "f8bdf9f014eae164ab283d73910ff38968933637ff25349f5e9c5d1f974dff2a",
+    "formalization/excluded_walk_rank_one/RankOneScattering.lean": "2f5260a23eecc90c6bf3fabe9e26c4c05a5595fa151b98010097a7ee501b22ae"
+  },
+  "cache_status": "fresh",
+  "python_sources_parsed": 9,
+  "local_markdown_links_resolved": [
+    [
+      "docs/EXCLUDED_WALK_SCATTERING_FLUX_TRANSPORT_FORM_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md"
+    ],
+    [
+      "docs/EXCLUDED_WALK_SCATTERING_FLUX_TRANSPORT_FORM_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "../scripts/excluded_walk_scattering_flux_transport_form_2026_10_11.py"
+    ]
+  ],
+  "whitespace_policy": "historical Markdown and raw compiler control output remain lossless gzip; source_diff preserved as gzip",
+  "representation_refresh_after_composition_review": "README sentence documents controls/*.log.gz; original control log bytes unchanged; complete proof, primary, Lean and SOURCE_COMPOSITION unchanged",
+  "not_run": [
+    "combined audit pipeline",
+    "strict audit lint"
+  ],
+  "editable_prompt_files_changed": []
+}

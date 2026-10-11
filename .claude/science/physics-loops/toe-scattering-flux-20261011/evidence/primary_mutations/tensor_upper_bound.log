@@ -1,0 +1,23 @@
+Supplied excluded-walk flux/form finite controls; analytical and formal scopes remain separate.
+AUDIT_TIMEOUT_SEC=180
+Exact 4^3 torus: 64 local continuity identities, resolvent absorption identity and all parity zeros verified.
+Exact finite-box outward flux: 711249840946106582750000/4113412469157685789685031
+Exact normalized corner beam: other-corner probability 7/80; total outgoing probability 1.
+Exact paired incident normalization: density 1 and contact intensity 1; ordered single-wave contact intensity 1/2.
+Actual lattice shell/parity current: (0.0, 0.0, 0.0) lambda 0.0625 max scaled angular-flux error 7.32015644e-05
+Actual lattice shell/parity current: (0.0, 0.0, 0.0) lambda 0.03125 max scaled angular-flux error 1.82720198e-05
+Actual lattice shell/parity current: (0.0, 0.0, 0.0) lambda 0.015625 max scaled angular-flux error 4.56623489e-06
+Actual lattice shell/parity current: (0.125, 0.015625, 0.015625) lambda 0.0625 max scaled angular-flux error 7.22481422e-05
+Actual lattice shell/parity current: (0.125, 0.015625, 0.015625) lambda 0.03125 max scaled angular-flux error 1.80341106e-05
+Actual lattice shell/parity current: (0.125, 0.015625, 0.015625) lambda 0.015625 max scaled angular-flux error 4.50678542e-06
+Eight-corner matrix current relative error: 3.91722e-16
+Limiting ellipsoid angular-flux integral equals 2pi r0 for three parameter pairs.
+Controls complete. Fixed finite identities and non-certified floating geometry; no PV or stationary-phase proof by numerics.
+Exact nonuniform eight-atom form: pi Q = operator norm squared; HS polarization and coercivity verified.
+pi Q witness: 1094231/714420 ; dark and pure-contact states both have zero expectation change.
+Exact sphere polynomial covariance: kappa ('0', '0', '0') rank 0
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_publication_mutations/tensor_upper_bound.py", line 396, in <module>
+    for indices in combinations(range(3),n):assert det([[mat[i][j] for j in indices] for i in indices])>=0
+                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

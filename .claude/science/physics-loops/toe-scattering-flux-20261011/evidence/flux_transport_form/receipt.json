@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-11",
+  "actual_current_surface_status": "conditional-support",
+  "target_claim_type": "bounded_theorem",
+  "role": "Author derivation and controls, not independent review or audit.",
+  "trace_class": "upstream_support",
+  "reachability_to_target": "supports",
+  "named_target": "Normalize the paired scattering-flux form and derive its complete central energy-current tensor without adopting a Markov collision process.",
+  "repository_snapshot": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_FLUX_BRIDGE_PROBE.md",
+      "sha256": "35cfa3095d1abaaeef0e6b77296b42a218615b23f680ee312576adbf924dfc17",
+      "bytes": 32061,
+      "lines": 628
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/ROOT_EXCLUDED_WALK_FLUX_REVIEW.md",
+      "sha256": "8fbc4a36dc351460bfc151a4bb3c40ea569f437057e2b72da47540c508608214",
+      "bytes": 9830,
+      "lines": 170
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_TRANSPORT_PROBE.md",
+      "sha256": "8bc423b2d5adf368f4ae09a2bb87730517be243a050b4289dad3a0b217f09526",
+      "bytes": 27369,
+      "lines": 322
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_COHERENT_PACKET_DRAFT.md",
+      "sha256": "b4ae921cc065fb2f38c1caee5aca3a1cf69bac317a6f6f0f537becd393b6cd38",
+      "bytes": 24543,
+      "lines": 522
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md",
+      "sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe",
+      "bytes": 8340,
+      "lines": 190
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_review/root_review_receipt.json",
+      "sha256": "b6813f040679c5f4f7fc54783908a3e1fbd47c36e842b0c1318f97a4446062cb",
+      "bytes": 2385,
+      "lines": 51
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_FLUX_TRANSPORT_FORM_PROBE.md",
+      "sha256": "52e8b10cc7db84d65372bfac18a0a0839889b03003190ee0ec310b503115f143",
+      "bytes": 24481,
+      "lines": 468
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_form/transport_controls.py",
+      "sha256": "befeb5d995039a55031ce697e1098370ebed1c3a846657ef3cc1cd1d01830d23",
+      "bytes": 10199,
+      "lines": 228
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_form/transport_controls.log",
+      "sha256": "aeaec385f509e049b7175c8b7987219ab2e77781b193fa0a352d9dd08a9c44d4",
+      "bytes": 1985,
+      "lines": 18
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_form/prior_search_0.log",
+      "sha256": "f85800453d3b5e0a06583ec5d746580a01f37f6f7bb2c49ce29af147ea8d3e0c",
+      "bytes": 1012,
+      "lines": 2
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_form/prior_search_1.log",
+      "sha256": "2814d1acbb3fbabd8fef9aa15720e3f5ba21b81d6339fc01856aeb9401128ef5",
+      "bytes": 539,
+      "lines": 1
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_form/prior_search_2.log",
+      "sha256": "6150fa954f975b76ed5dc2bf3a3bb1fdc91fa970bf074f4fad15282cd8c67573",
+      "bytes": 5290,
+      "lines": 8
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_transport_form/prior_search_manifest.json",
+      "sha256": "c36c31cb1d18599a18adbcb84d7b10996bd4d9ea3622bc3275ad0dc847c5bd48",
+      "bytes": 1429,
+      "lines": 47
+    }
+  ],
+  "coverage": {
+    "new_note": "Complete 468-line final argument read, including all changed mathematical and interpretation passages.",
+    "helper": "Complete 228-line helper and complete 18-line successful log read.",
+    "flux_source": "Unchanged 628-line flux note fully read in preceding turn; full new root selective review read and exact identities reverified. Root report is not a review of this transport form.",
+    "coherent_source": "Entire 522-line coherent packet source reread; exact contact normalization and scalar angular moment extended by a new fourth-moment calculation.",
+    "other_sources": "Unchanged threshold and canonical sources previously fully read; only order-zero central G expansion, regular channel geometry, stationary S and asymptotic canonical-current mapping reused.",
+    "prior_search": "All eleven hit lines from three statement searches read. M6 is the matched previously fully read walk source. Other returned scopes are context-only; unrelated complete notes and new open PRs not read.",
+    "literature": "No new imported literature theorem. Previous lattice stationary-phase source and verified hypotheses retained in frozen flux proof.",
+    "instructions": "Physics-loop entry and applicable discovery/claim/delivery references matched local origin/main a13caa by byte comparison. Current science workflow read. Bounded external-file instructions govern delivery; no fetch, branch, PR or audit action undertaken."
+  },
+  "checks": {
+    "execution": "python3 flux_transport_form/transport_controls.py > flux_transport_form/transport_controls.log 2>&1",
+    "exit_code": 0,
+    "exact_matrix": "Eight-atom nonuniform mu and nu; exact complex rational S, pi Q=operator norm squared, HS polarization, chosen-vector coercivity, dark and pure-contact controls.",
+    "exact_moments": "Direct uniform-sphere monomial integration in five rational ellipsoids; full covariance and ranks 0,1,2,3,3; exact principal-minor inequalities for lower/upper tensor bounds.",
+    "actual_lattice": "Nine shell cases, each at two angular quadrature resolutions; actual sine dispersion/coarea/contact weights, all eight corners, phase-space mass, rho and complete centered-current covariance.",
+    "limits": "Author controls only. Floating quadrature is not certified; no numerical G/PV fit or proof of analytical uniformity. Radial-shell method overlaps prior author controls."
+  },
+  "failed_or_insufficient_routes": [
+    "Ordered-component contact normalization would halve the paired-flux form.",
+    "Outer phase-space normalization removes an actual factor lambda^2.",
+    "Changing outer mu to nu with fixed kernel generally breaks detailed balance; the difference-product bilinear form remains symmetric but has different weights.",
+    "Spherical replacement of the contact ellipsoid can erase its weak positive third current direction.",
+    "Positive form cannot be identified with universal statewise current loss because normalized W/||W|| and v give exact zero-change preparations."
+  ],
+  "failed_mathematical_check_runs": 0,
+  "operational_failures": [
+    "One helper-tail read used a duplicated directory name and failed; the corrected path was immediately read in full.",
+    "An early batched instruction read truncated the reference output; the affected references were subsequently read in bounded pieces."
+  ],
+  "cold_read_corrections": [
+    "Disambiguated the ellipsoid square root L from the transport tensor T.",
+    "Defined v0 explicitly and phrased nu as the probability measure induced by the contact vector.",
+    "Narrowed a generic transport-equation caveat to the requested closed Markov collision interpretation.",
+    "Corrected the measure-change warning to distinguish detailed balance from bilinear symmetry."
+  ],
+  "open_obligations": [
+    "New independent source-bound check of T3/T11 normalization, T21 tensor and T25-T28 rank/coercivity.",
+    "General central expansion inherits the named frozen threshold proof; no new PV verification claimed.",
+    "No certified maximal lambda range, physical encounter process, loss-of-coherence derivation or many-body law supplied."
+  ],
+  "checkpoint": "Derivation and evidence frozen for parent selective review; all upstream frozen sources unchanged.",
+  "writes": "Only new external transport-form note and flux_transport_form evidence/receipt. No W/walk_worktree edits, source-prompt edits, commits, PRs or status mutation."
+}

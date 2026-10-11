@@ -1,0 +1,51 @@
+{
+  "review_scope": "source-bound selective independent root research check; no audit verdict or retained status",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_FLUX_BRIDGE_PROBE.md",
+      "sha256": "35cfa3095d1abaaeef0e6b77296b42a218615b23f680ee312576adbf924dfc17",
+      "bytes": 32061
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_bridge/identity_manifest.json",
+      "sha256": "bce0efccd70fb05701321215727f78c06cacacd8aa332b2d7b9ceb68177a46f5",
+      "bytes": 7240
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/ROOT_EXCLUDED_WALK_FLUX_REVIEW.md",
+      "sha256": "8fbc4a36dc351460bfc151a4bb3c40ea569f437057e2b72da47540c508608214",
+      "bytes": 9830
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_review/independent_flux_controls.py",
+      "sha256": "e884c75e88e9c81690d60704a218a56acb2355b1e3ceb9a0c1771f207d7b85ef",
+      "bytes": 3762
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_review/independent_flux_controls.log",
+      "sha256": "e0fccf585dafc35ee664309eca9a8b51a753c54a8a9190a8271c02c482ff312e",
+      "bytes": 814
+    }
+  ],
+  "manifest_artifact_identities_verified": 15,
+  "execution": {
+    "command": [
+      "python3",
+      "independent_flux_controls.py"
+    ],
+    "working_directory": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_review",
+    "exit_code": 0,
+    "outer_wall_seconds": 0.548966375,
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13"
+  },
+  "coverage": {
+    "author_note": "all 628 lines",
+    "author_helper": "all 206 lines; complete successful author log read, not replayed as independent evidence",
+    "independent_helper": "entire newly written helper and complete log read",
+    "primary_source": "selected theorem/hypothesis/amplitude passages and proof through equation21; page8 visually checked, not entire paper",
+    "negative_findings": "no consequential defect in supplied-model claims; no full analysis Lean certificate"
+  },
+  "editable_prompt_files_changed": []
+}

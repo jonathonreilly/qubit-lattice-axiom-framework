@@ -1,0 +1,30 @@
+EXACT independent three-channel flux/variance coefficient
+EXACT squared-norm spectral polynomial
+EXACT opposite eigenvalues from zero trace
+EXACT Hilbert-Schmidt polarization
+EXACT nonuniform-measure coercivity bounds
+EXACT sphere-design normalization
+EXACT sphere-design second moment 0
+EXACT sphere-design fourth moment 0
+EXACT sphere-design second moment 1
+EXACT sphere-design fourth moment 1
+EXACT sphere-design second moment 2
+EXACT sphere-design fourth moment 2
+EXACT sphere-design crossed fourth moment 0,1
+EXACT sphere-design crossed fourth moment 0,2
+EXACT sphere-design crossed fourth moment 1,2
+EXACT rational ellipsoid square root [0, 0, 0]
+EXACT full tensor from 14-point design [0, 0, 0]
+EXACT active rank and quadratic bounds 0
+EXACT rational ellipsoid square root [1/3, 0, 0]
+EXACT full tensor from 14-point design [1/3, 0, 0]
+EXACT active rank and quadratic bounds 1
+EXACT rational ellipsoid square root [1/8, -1/4, 0]
+EXACT full tensor from 14-point design [1/8, -1/4, 0]
+EXACT active rank and quadratic bounds 2
+EXACT rational ellipsoid square root [1/8, -1/4, 1/4]
+EXACT full tensor from 14-point design [1/8, -1/4, 1/4]
+EXACT active rank and quadratic bounds 3
+EXACT diagonal-momentum longitudinal eigenvalue
+EXACT diagonal-momentum transverse eigenvalue
+Scope: exact finite coefficients and rank discriminators; analytic uniformity reviewed separately.

@@ -1,0 +1,12 @@
+[
+  {
+    "command": "lean --version",
+    "exit": 0,
+    "output": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)\n"
+  },
+  {
+    "command": "lake --version",
+    "exit": 0,
+    "output": "Lake version 5.0.0-src+c29b6dd (Lean version 4.35.0-rc4)\n"
+  }
+]

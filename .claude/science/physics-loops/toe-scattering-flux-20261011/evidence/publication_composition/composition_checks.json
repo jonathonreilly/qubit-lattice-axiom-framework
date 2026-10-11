@@ -1,0 +1,270 @@
+{
+  "note": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_SCATTERING_FLUX_TRANSPORT_FORM_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+    "sha256": "c70ad03ede2a01c0b49282043a4b20824f64a6b42c3440facae1b6c5e231c0bc",
+    "bytes": 63720,
+    "lines": 1218
+  },
+  "primary": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/scripts/excluded_walk_scattering_flux_transport_form_2026_10_11.py",
+    "sha256": "f8bdf9f014eae164ab283d73910ff38968933637ff25349f5e9c5d1f974dff2a",
+    "bytes": 20798,
+    "lines": 470
+  },
+  "parent": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+    "sha256": "9f551fc8d3592e83d15a007495a8f9165a5ddb9bc1e98d9dd3f51b6a2584f401",
+    "bytes": 65166,
+    "lines": 1280
+  },
+  "composition_map": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/SOURCE_COMPOSITION.json",
+    "sha256": "3b446be10accd1e5ffa0909e1c9e4a75e7fae54eac8063d093514a27e024bcaa",
+    "bytes": 20171,
+    "lines": 253
+  },
+  "body_coverage": [
+    {
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_FLUX_BRIDGE_PROBE.md",
+        "sha256": "35cfa3095d1abaaeef0e6b77296b42a218615b23f680ee312576adbf924dfc17",
+        "bytes": 32061,
+        "lines": 628
+      },
+      "prose_replacements": 5,
+      "entire_body_matches_after_declared_prose_edits": true
+    },
+    {
+      "source": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_FLUX_TRANSPORT_FORM_PROBE.md",
+        "sha256": "52e8b10cc7db84d65372bfac18a0a0839889b03003190ee0ec310b503115f143",
+        "bytes": 24481,
+        "lines": 468
+      },
+      "prose_replacements": 6,
+      "entire_body_matches_after_declared_prose_edits": true
+    }
+  ],
+  "evidence_copies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/EXCLUDED_WALK_FLUX_BRIDGE_PROBE.md.gz",
+      "sha256": "7e13d2184f34a34d68a7886efd1c396e4c99df892ff8a228ba8c205dc58a525a",
+      "bytes": 13436,
+      "lines": 116
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/EXCLUDED_WALK_FLUX_TRANSPORT_FORM_PROBE.md.gz",
+      "sha256": "f096c9791eac2408c5ff165cd9ee90ac2003232bb021d857b5da80c53f45d74a",
+      "bytes": 10528,
+      "lines": 94
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/ROOT_EXCLUDED_WALK_FLUX_REVIEW.md",
+      "sha256": "8fbc4a36dc351460bfc151a4bb3c40ea569f437057e2b72da47540c508608214",
+      "bytes": 9830,
+      "lines": 170
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/ROOT_EXCLUDED_WALK_TRANSPORT_FORM_REVIEW.md",
+      "sha256": "5ff79b0756214eb75f94b8b64e8eeae4dbb7eefcba4640dc9b97e6be78fbe572",
+      "bytes": 7993,
+      "lines": 136
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/ROOT_EXCLUDED_WALK_LEAN_REVIEW.md",
+      "sha256": "3735e869cfd20c5ac15b5d4e081c1da14851567e4bba5cd033ba8edddbcf771c",
+      "bytes": 2560,
+      "lines": 39
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/lean_root_review_receipt.json",
+      "sha256": "b3d0c7d17dc0639ed93f653ac37f9a0b80c669c4edb9bf48557d1a9c51b85d93",
+      "bytes": 2389,
+      "lines": 55
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/flux_controls.log",
+      "sha256": "cea70a1a1fc9bf42b9ae087ab525cbb0f0a934fb872964e2375faab01b5edfb1",
+      "bytes": 1375,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/flux_controls.py",
+      "sha256": "9803c454d4cc7610e0056ef47d389891cecb1680b2dc666c92d6d9ed36476a36",
+      "bytes": 8963,
+      "lines": 206
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/identity_manifest.json",
+      "sha256": "bce0efccd70fb05701321215727f78c06cacacd8aa332b2d7b9ceb68177a46f5",
+      "bytes": 7240,
+      "lines": 134
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/repo_search_0.log.gz",
+      "sha256": "8e080279c7e74f177d64b8ed4505d8b7f4d58c1de6e4f336ac16106bbd3d5530",
+      "bytes": 14791,
+      "lines": 77
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/repo_search_1.log.gz",
+      "sha256": "83a9e72d2e2ca691cbb5a8ee2ce639d888f063fe48fb35ed23af0a69e8749dab",
+      "bytes": 16838,
+      "lines": 131
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/repo_search_2.log.gz",
+      "sha256": "4b4515a8dcb3cc3f7e5b850d62a465c4bb83ca25decfe506b8bbfa9411088295",
+      "bytes": 51292,
+      "lines": 401
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_bridge/repo_search_manifest.json",
+      "sha256": "336f1545237b078111a4075ccdbb2e53442591c9364f75bc67ad7586c4dca36e",
+      "bytes": 51008,
+      "lines": 517
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/prior_search_0.log",
+      "sha256": "f85800453d3b5e0a06583ec5d746580a01f37f6f7bb2c49ce29af147ea8d3e0c",
+      "bytes": 1012,
+      "lines": 2
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/prior_search_1.log",
+      "sha256": "2814d1acbb3fbabd8fef9aa15720e3f5ba21b81d6339fc01856aeb9401128ef5",
+      "bytes": 539,
+      "lines": 1
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/prior_search_2.log",
+      "sha256": "6150fa954f975b76ed5dc2bf3a3bb1fdc91fa970bf074f4fad15282cd8c67573",
+      "bytes": 5290,
+      "lines": 8
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/prior_search_manifest.json",
+      "sha256": "c36c31cb1d18599a18adbcb84d7b10996bd4d9ea3622bc3275ad0dc847c5bd48",
+      "bytes": 1429,
+      "lines": 47
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/receipt.json",
+      "sha256": "bfc05c9cea6156ed7708ee0bbe189543543edbc62b4fc3ac1da12834360985b6",
+      "bytes": 8563,
+      "lines": 135
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/transport_controls.log",
+      "sha256": "aeaec385f509e049b7175c8b7987219ab2e77781b193fa0a352d9dd08a9c44d4",
+      "bytes": 1985,
+      "lines": 18
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_form/transport_controls.py",
+      "sha256": "befeb5d995039a55031ce697e1098370ebed1c3a846657ef3cc1cd1d01830d23",
+      "bytes": 10199,
+      "lines": 228
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_review/independent_flux_controls.log",
+      "sha256": "e0fccf585dafc35ee664309eca9a8b51a753c54a8a9190a8271c02c482ff312e",
+      "bytes": 814,
+      "lines": 19
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_review/independent_flux_controls.py",
+      "sha256": "e884c75e88e9c81690d60704a218a56acb2355b1e3ceb9a0c1771f207d7b85ef",
+      "bytes": 3762,
+      "lines": 82
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_review/root_review_receipt.json",
+      "sha256": "b6813f040679c5f4f7fc54783908a3e1fbd47c36e842b0c1318f97a4446062cb",
+      "bytes": 2385,
+      "lines": 51
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_review/independent_transport_controls.log",
+      "sha256": "96574e38db0ba015a55a73d98328f9631a5b4fcc957e3b958d51d2945e309b7f",
+      "bytes": 1375,
+      "lines": 30
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_review/independent_transport_controls.py",
+      "sha256": "f0cb6a5088268cf16b7a3455fd41a6562160fe46cc758d338d89a5316d2d7fa6",
+      "bytes": 4149,
+      "lines": 92
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-scattering-flux-20261011/evidence/flux_transport_review/root_review_receipt.json",
+      "sha256": "70b6fd71161f9aee8a54de1dd647350e4983facd5f48a4c05f23994af2479bcf",
+      "bytes": 3090,
+      "lines": 70
+    }
+  ],
+  "parent_sources": [
+    {
+      "stored": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-excluded-walk-20261011/evidence/EXCLUDED_WALK_TRANSPORT_PROBE.md.gz",
+        "sha256": "94d47fa5ad44513d4d0e7b3b8cf466cb08217ca4494a92d4cbd4a2aba0ade66d",
+        "bytes": 12321,
+        "lines": 110
+      },
+      "original_sha256": "8bc423b2d5adf368f4ae09a2bb87730517be243a050b4289dad3a0b217f09526"
+    },
+    {
+      "stored": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-excluded-walk-20261011/evidence/EXCLUDED_WALK_COOK_BRIDGE_DRAFT.md.gz",
+        "sha256": "662824972f23e761ac9466d6fbc10e7e9a7b5f5e9aeb7c604bc9e258cb6d39ab",
+        "bytes": 5315,
+        "lines": 48
+      },
+      "original_sha256": "2c54b891deeb43a19c5f41de5059aadac7fc8d672dfb68e0b8aa575d27eb3fc7"
+    },
+    {
+      "stored": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-excluded-walk-20261011/evidence/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md.gz",
+        "sha256": "23ddb16b30de2a9bbd88509ff50202cf9e7cc6acf6726321508f74b288c51a85",
+        "bytes": 3757,
+        "lines": 35
+      },
+      "original_sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe"
+    },
+    {
+      "stored": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/.claude/science/physics-loops/toe-excluded-walk-20261011/evidence/EXCLUDED_WALK_COHERENT_PACKET_DRAFT.md.gz",
+        "sha256": "1fb73a9d4617ed1fc66bb8da070f0ca6526bf20094b23512122ab6b6f36d07d5",
+        "bytes": 10066,
+        "lines": 72
+      },
+      "original_sha256": "b4ae921cc065fb2f38c1caee5aca3a1cf69bac317a6f6f0f537becd393b6cd38"
+    }
+  ],
+  "runtime": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "source_assertion_nodes": {
+    "FLUX": 17,
+    "TRANSPORT FORM": 21
+  },
+  "replay_logs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_publication_review/flux_replay.log",
+      "sha256": "cea70a1a1fc9bf42b9ae087ab525cbb0f0a934fb872964e2375faab01b5edfb1",
+      "bytes": 1375,
+      "lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_publication_review/transport_form_replay.log",
+      "sha256": "aeaec385f509e049b7175c8b7987219ab2e77781b193fa0a352d9dd08a9c44d4",
+      "bytes": 1985,
+      "lines": 18
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/flux_publication_review/primary_replay.log",
+      "sha256": "92954054243d7c33e501024a7a729f8fee62bfc05fddb498134322dbb1eb6e1b",
+      "bytes": 3744,
+      "lines": 37
+    }
+  ],
+  "replay_scope": "Author controls replayed for namespace/composition consistency only; no independent science, new Lean compilation, mutation or canonical-cache certification."
+}

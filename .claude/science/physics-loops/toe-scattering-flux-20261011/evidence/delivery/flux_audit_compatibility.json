@@ -1,0 +1,9 @@
+{
+  "base": "b9b032ae790c66e762a6296a1306bfb64ae7cd70",
+  "changed_path_count": 169,
+  "checked": [],
+  "control_failures": [],
+  "diff_scope": "committed_and_worktree",
+  "failures": [],
+  "schema": "changed_audit_evidence_readiness_v1"
+}

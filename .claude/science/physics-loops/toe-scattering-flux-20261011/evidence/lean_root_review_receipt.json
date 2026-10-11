@@ -1,0 +1,55 @@
+{
+  "created_at_utc": "2026-10-11T19:19:39.196416+00:00",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/ROOT_EXCLUDED_WALK_LEAN_REVIEW.md",
+    "sha256": "3735e869cfd20c5ac15b5d4e081c1da14851567e4bba5cd033ba8edddbcf771c",
+    "bytes": 2560,
+    "lines": 39
+  },
+  "bound_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/RankOneScattering.lean",
+      "sha256": "2f5260a23eecc90c6bf3fabe9e26c4c05a5595fa151b98010097a7ee501b22ae",
+      "bytes": 8345,
+      "lines": 202
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/receipt.json",
+      "sha256": "1564b0bf532aca6c7f43c301455163b1af0afb96405e620eb56c481bdf7ed96d",
+      "bytes": 29021,
+      "lines": 676
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/SCOPE_REPORT.md",
+      "sha256": "cf0cd38ee841656a2ca342891b7bdbf9e5f4bc0aa768357e1c787d7ebf3cd7da",
+      "bytes": 8194,
+      "lines": 123
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/final_compiler.log",
+      "sha256": "58f04a8d0485e9304892db7db4461ab384dc95e5c4ff4272fdda65451455ac6f",
+      "bytes": 4128,
+      "lines": 58
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/false_controls_manifest.json",
+      "sha256": "a12078ef8f9ac1773eecd9f3d3388b0f553b530506868b74ce2beecd954ffee7",
+      "bytes": 7714,
+      "lines": 140
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/run_compile.py",
+      "sha256": "12b8eb52bb33c16bf17c6d87763ac191242b72eea4ac05a853e2a4ef41ed9521",
+      "bytes": 1407,
+      "lines": 31
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/run_false_controls.py",
+      "sha256": "45db0dd94db0bd31b346f4a2a38a1c606775bb5975de499d1c539a27bdfdeb30",
+      "bytes": 5496,
+      "lines": 114
+    }
+  ],
+  "verified_artifact_count": 67,
+  "scope": "Root statement mapping, source read and recorded compiler/control evidence check; no full analytic Lean verification or audit verdict"
+}

@@ -986,3 +986,48 @@ The phrase "interactions not nearest-neighbour (against Admissibility)" in the R
 - **Not covered, and the open form of the owner's idea:** a *gapless* network that produces power-law-tailed charges and interactions. The one candidate momentum that survives ordinary collisions is the sawtooth f = k, whose density has 1/r tails (RN L2). It fails only on umklapp, i.e. scattering across the zone boundary. So the open question is whether a nearest-neighbour rule acting through a gapless network can give matter interactions with no umklapp, and with them an exactly conserved sawtooth momentum.
 
 **Corrected price wording:** "a momentum density with power-law tails, together with matter interactions with no umklapp (whether a nearest-neighbour rule can produce this through gapless networks is untested), or an exact additive lattice momentum that the axioms do not supply."
+
+## Lane RG: gapless networks and umklapp (owner, 2026-10-10)
+
+**Owner request:** "run the gapless network umklapp test". This follows the owner's correction that influence can travel through networks of nodes. It is a test setting only, and nothing here is recorded in the axiom memo.
+
+**The question.** Take a nearest-neighbour rule that acts through a network of nodes: a finite number of fields per site, covariant under translations and proper cubic rotations, with any depth and with gapless mediators allowed.
+- Can it give matter interactions that vanish exactly on every umklapp configuration, i.e. collisions whose momenta wrap across the zone edge, while staying nonzero on normal ones?
+- If so, the sawtooth momentum f = k, whose density has 1/r tails, is an exact collision invariant (RN L2) and could feed the VS shift constraint.
+
+**Prior art.**
+- RN L2 and its referee: the sawtooth momentum survives ordinary collisions and fails only on umklapp.
+- RS S1 and S2 and their referees: summable-first-moment charges are excluded. A gapless photon at the Born level is covered.
+- The Correction entry above.
+
+**Probes** (Claude Opus 5.5 at xhigh, run in parallel; same model family as the supervisor):
+- **G1, theorem and loopholes.**
+  - Prove or refute: if the 2↔2 amplitude, and every matter–mediator amplitude, is real-analytic on the connected on-shell torus, then vanishing on the umklapp set (which has an interior) forces it to vanish identically. Gapless propagators are meromorphic and singular only at isolated points, so they fall in this class.
+  - Enumerate the sources of non-analyticity a local network can produce: cone points, Fermi surfaces (Kohn anomalies), critical points, the infinite-depth or thermodynamic limit. For each, decide whether it can give an amplitude that vanishes on an open umklapp set but not everywhere.
+- **G2, constructions and the quantitative readout Q.** Build explicit networks:
+  - (a) vertex form factors that vanish at the zone edge, such as (1 + cos k)^n;
+  - (b) a mediator with a Fermi sea (a Lindhard kernel);
+  - (c) deep networks that approximate a smooth momentum-space cutoff.
+
+  Measure the relative umklapp amplitude ε_U against network depth or size n, and fit its decay law.
+- **G3, sourcing and consequence.**
+  - Can a momentum density with 1/r tails, built or carried through the network, source the VS shift constraint consistently at linear order?
+  - If momentum is conserved only up to a residual ε_U, how does the induced TT response scale with ε_U (RN L2's μ)?
+  - Translate this into the network depth or interaction range needed to meet the observational graviton-mass bound.
+
+**Fixed readings.**
+- **PASS.** An explicit network law, with fields, rule and mediator stated, meets all of the following at the order computed:
+  - its effective matter 2↔2 amplitude, and its matter–mediator amplitudes, vanish exactly on all umklapp configurations and are nonzero on normal ones;
+  - so a momentum with a taste-universal slope is an exact collision invariant;
+  - that momentum sources the VS shift constraint consistently at linear order.
+- **FAIL.** For the stated class (finite fields per site, finite-range rule, any network depth), it is shown, proved or checked, that an umklapp-free amplitude must vanish identically: for analytic amplitudes, and for each non-analytic source examined. Bounded to that class.
+- **INCONCLUSIVE.** Otherwise.
+- **Readout Q (recorded as a number; not a pass/fail item).** The best ε_U(n) decay law, and the depth or range n* needed for the induced TT response to meet the bound.
+
+**Supervisor expectation (registered before any probe returns).**
+- **G1:** the identity theorem excludes every analytic class, so exact umklapp-free interactions with local networks are impossible. Fermi-surface and cone non-analyticities live on sets of measure zero and cannot create an open zero set, so FAIL (bounded) in the classes examined.
+- **G2:** ε_U(n) falls exponentially with depth, at best e^{−cn}.
+- **G3:** a 1/r-tailed density can source the constraint only non-locally. The induced TT response is about ε_U² times natural, so n* is of order 10² to 10³ sites.
+- **Expected lane reading:** FAIL (bounded) for exact conservation. Q would reframe the price as "an interaction range of hundreds of grid steps" rather than true non-locality. Whether an approximate constraint is acceptable is a separate question that this lane does not decide.
+
+**Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.

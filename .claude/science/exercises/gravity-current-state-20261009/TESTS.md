@@ -2100,3 +2100,24 @@ No PASS or FAIL is recorded for any lane on the basis of X1. E1's fixed readings
   - Noise at the bar: FAIL, bounded (RL4).
   - The bar itself is justified if ℓ_k is shared (X1, unrefereed).
   - Noise for lensed light: INCONCLUSIVE, strongly leaning FAIL (Y1). The decisive missing piece is the band fraction and finite-distance normalization.
+
+## Lane RZ: the in-band fraction of the event-route noise (owner, 2026-10-11)
+
+**Owner request:** "run the in-band noise fraction test". This is the decisive item that Y1's referee left open. It is a test setting only.
+
+**The question.** RL4 (refereed) and Y1 (referee: INCONCLUSIVE, strongly leaning FAIL) give an all-frequency variance growth rate of at least c_low·√ε·τ/ℓ_k, with τ ≈ √(2D·cΔt). Two things are missing for an observational verdict:
+- **(a)** a positive lower bound on the fraction of that noise power that lands in the observing band, for optical or radio light;
+- **(b)** a finite-distance normalization, i.e. the prefactor at physical D, not only the asymptotic rate.
+
+**Probes.** Both run on Claude Opus 5.5 at xhigh (same family).
+- **Z1 (analytic).** Derive the frequency spectrum of the readout noise. Use the variance kernel, or the two-time covariance of (GJ)(x,t) for a monochromatic source at ω₀. Is the noise concentrated near ω₀ (multiplicative, "phase or amplitude noise" on the carrier), or spread to ~1/ℓ_k frequencies? Prove a lower bound on the in-band fraction, or show it is exponentially small.
+- **Z2 (numerical and normalization).** Compute the noise power spectral density from the ladder/renewal structure (RL2–RL4 code) at accessible ε, with a carrier source. Measure the band fraction and how it scales. Obtain the finite-τ prefactor. Then translate to physical cases: lensed quasars and radio sources at 1 Gpc, and a 1 h lab lamp.
+
+**Fixed readings.**
+- **FAIL:** a proved (or controlled) positive lower bound on the in-band fraction, times the finite-distance variance, exceeds what observed lensing or interferometry allows (≳ 1 in relative variance) for at least one real observation class. With RL4 and Y1, the event route with shared ℓ_k is then an observational FAIL.
+- **PASS:** the in-band fraction is shown to be small enough (e.g. exponentially suppressed by more than the e-fold budget) that observed lensing survives at ℓ_k ≤ 7.9e-20 m.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.** The noise is multiplicative on the carrier: each extra chain node rescales the wave's amplitude and phase. So its spectrum sits near ω₀, broadened by the inverse correlation time of the multiplier, and the in-band fraction is O(1). Expected reading: FAIL, if the multiplicative structure is proved.
+
+**Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.

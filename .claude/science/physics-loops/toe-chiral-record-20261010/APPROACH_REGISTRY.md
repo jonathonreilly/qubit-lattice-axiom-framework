@@ -619,3 +619,18 @@ and 5/2 are not this certificate.
 Family not used: a vector with both a nonzero swapped-dot coordinate
 and a nonzero scaled coordinate. That remains open. The 300-dimensional
 affine space is not this family.
+
+Cycle 57 target contract: whether every chirality coefficient on the sum
+of both swapped-dot generators and the cap generator of one ratio span
+has partner rank 10.
+
+Family used: both swapped-dot generators plus the cap generator of
+either ratio span. One 17-row chirality pencil on every ordered height
+pair, the rank-10 base image, and the nonzero constant gcd of the
+10-by-10 minors. The pivot minors at coefficients 0, 1, -1, -1/2, 1/2,
+3/2, 5/2, 2, -2, and -2/3 are not this certificate.
+
+Family not used: one swapped-dot generator plus the cap generator of
+one ratio span. That vector has both a nonzero swapped-dot coordinate
+and a nonzero scaled coordinate. The 300-dimensional affine space is
+not this family.

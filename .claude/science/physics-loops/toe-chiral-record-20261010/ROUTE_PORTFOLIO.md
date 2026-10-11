@@ -287,3 +287,9 @@ are in the count. Every chirality coefficient has partner rank 10. It
 does not take a vector with both a nonzero swapped-dot coordinate and
 a nonzero scaled coordinate, and it does not classify the
 300-dimensional affine space.
+
+Cycle 57 takes both swapped-dot generators plus the cap generator of
+either ratio span on every ordered height pair. The swapped-dot
+coordinates cancel. Every chirality coefficient has partner rank 10.
+It does not take one swapped-dot generator plus one cap, and it does
+not classify the 300-dimensional affine space.

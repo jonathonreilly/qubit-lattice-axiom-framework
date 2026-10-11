@@ -617,3 +617,10 @@
 - The pivot-minor gcd is a polynomial identity in the chirality coefficient. The five coefficients 0, 1, -1, -1/2, and 5/2 are not this certificate. A kernel cross sum is not an alphabet mean.
 - The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 57
+
+- The ansatz is both swapped-dot generators plus the cap generator of either ratio span, on every ordered height pair. Each sum has swapped-dot coordinate 0 and scaled coordinate 2. A vector with both a nonzero swapped-dot coordinate and a nonzero scaled coordinate is not in this count.
+- The maximal-minor gcd is a polynomial identity in the chirality coefficient. The pivot minors at 0, 1, -1, -1/2, 1/2, 3/2, 5/2, 2, -2, and -2/3 are not this certificate. A kernel cross sum is not an alphabet mean.
+- The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

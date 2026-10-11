@@ -968,3 +968,21 @@ included, have partner rank 10 at every chirality coefficient. The base
 image has rank 10. A vector with both a nonzero swapped-dot coordinate
 and a nonzero scaled coordinate stays open. The ten-kernel coefficient
 span stays open.
+
+## Cycle 57
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether every chirality coefficient on the sum of one swapped-dot generator and the cap generator of one ratio span has partner rank 10. That sum has both a nonzero swapped-dot coordinate and a nonzero scaled coordinate. Do not claim the ten-kernel coefficient span is settled."
+```
+
+On every ordered height pair, both swapped-dot generators plus the cap
+generator of either ratio span have partner rank 10 at every chirality
+coefficient. The swapped-dot coordinate is 0 and the scaled coordinate
+is 2. One swapped-dot generator plus one cap stays open. The
+ten-kernel coefficient span stays open.

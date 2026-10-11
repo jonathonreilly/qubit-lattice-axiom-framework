@@ -414,3 +414,12 @@ other three pairs the omitted coordinates are sign product `1`, swapped
 sum has swapped `-1`. It does not classify a vector with both a nonzero
 swapped-dot coordinate and a nonzero scaled coordinate, and it does not
 classify the 300-dimensional affine space. This is not an N-gate no-go.
+
+Cycle 57 prunes the reading that some chirality coefficient on the sum
+of both swapped-dot generators and the cap generator of one ratio span
+has a nonzero ten-kernel partner. On every ordered height pair, every
+chirality coefficient has partner rank 10. The swapped-dot coordinates
+cancel, so each sum has swapped-dot coordinate `0` and scaled
+coordinate `2`. It does not classify one swapped-dot generator plus one
+cap, and it does not classify the 300-dimensional affine space. This is
+not an N-gate no-go.

@@ -1229,3 +1229,30 @@ included sum has swapped -1. A vector with both a nonzero swapped-dot
 coordinate and a nonzero scaled coordinate is outside this count. The
 ten-kernel coefficient span is not classified. The 300-dimensional
 affine space is not classified.
+
+# Claim status certificate — cycle 57
+
+claim_id: chiral_pair_swapped_dot_one_cap_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: every ordered height pair; both swapped-dot generators plus the cap generator of either ratio span; swapped-dot coordinate 0; scaled coordinate 2; every chirality coefficient
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+On every ordered height pair, both swapped-dot generators plus the cap
+generator of either ratio span have partner rank 10 at every chirality
+coefficient. The swapped-dot coordinates cancel, so each sum has
+swapped-dot coordinate 0 and scaled coordinate 2. The plus cap also has
+transverse-sign coordinate -1, sign-product coordinate -1, matched
+coordinate 2, swapped coordinate -2, and orthogonal coordinate 2. The
+minus cap has transverse-sign coordinate 1 and sign-product coordinate
+1. The pivot minors at 0, 1, -1, -1/2, 1/2, 3/2, 5/2, 2, -2, and -2/3
+do not have a constant gcd. One swapped-dot generator plus one cap is
+outside this count. The ten-kernel coefficient span is not classified.
+The 300-dimensional affine space is not classified.

@@ -738,15 +738,34 @@ both a nonzero swapped-dot coordinate and a nonzero scaled coordinate
 is not in this count. The ten-kernel coefficient span is not
 classified. Runner `PASS=21 FAIL=0`.
 
+Cycle 57. On every ordered height pair, both swapped-dot generators
+plus the cap generator of either ratio span have partner rank 10 at
+every chirality coefficient. The swapped-dot coordinates cancel, so
+each sum has swapped-dot coordinate `0` and scaled coordinate `2`. The
+plus cap also has transverse-sign coordinate `-1`, sign-product
+coordinate `-1`, matched coordinate `2`, swapped coordinate `-2`, and
+orthogonal coordinate `2`. The minus cap has transverse-sign coordinate
+`1` and sign-product coordinate `1`. Neither vector lies in the even
+space or in either ratio span. The base image has rank 10. The
+coefficient pairs compress to 17 rows, and the gcd of the 10-by-10
+minors is a nonzero constant. The pivot minors at `0`, `1`, `-1`,
+`-1/2`, `1/2`, `3/2`, `5/2`, `2`, `-2`, and `-2/3` do not have a
+constant gcd. At heights 1 and 2 the bond on `-e_x` and `-e_y` against
+the chirality cap has kernel cross sums `-6` and `-2`. A vector with
+both a nonzero swapped-dot coordinate and a nonzero scaled coordinate
+is not in this count. The ten-kernel coefficient span is not
+classified. Runner `PASS=9 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every chirality coefficient on the sum of both
-swapped-dot generators and the cap generator of one ratio span has
-partner rank 10. The first and third even generators plus both
-swapped-dot generators, with the second even generator omitted or
-included, have partner rank 10 at every chirality coefficient on every
-ordered height pair. Do not claim the ten-kernel coefficient span is
-settled. Do not claim the 300-dimensional affine space is classified.
+Decide whether every chirality coefficient on the sum of one
+swapped-dot generator and the cap generator of one ratio span has
+partner rank 10. That sum has both a nonzero swapped-dot coordinate
+and a nonzero scaled coordinate. Both swapped-dot generators plus the
+cap generator of either ratio span have swapped-dot coordinate 0,
+scaled coordinate 2, and partner rank 10 at every chirality
+coefficient. Do not claim the ten-kernel coefficient span is settled.
+Do not claim the 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`

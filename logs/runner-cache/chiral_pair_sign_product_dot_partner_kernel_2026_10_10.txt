@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_sign_product_dot_partner_kernel_2026_10_10.py
+runner_sha256: b2fe810ab08648c45ad2fd3aff631bbdae80d088c23841c817a979e92927e380
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 44.76
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS the even space and both ratio spans form a 9-dimensional sum on every ordered height pair, the chirality cap lies outside it, and the excluded kernels sit on the swapped-orthogonal and cap generators
+PASS the nine-generator map has rank 42 and nullity 48, and the kernel projects onto every even coefficient
+PASS the cap ratio 1 : -1/3 has scaled coefficient 4/3 and partner rank 7, and the cap ratio 1 : 1 has scaled coefficient 4 and partner rank 10
+PASS chirality coefficient 1 on the coefficient 4/3 vector, the coefficient 4 vector, and the swapped-dot vector has partner rank 10, and the chirality block meets that partner only at 0
+PASS the maximal minors of the coefficient 4/3 chirality pencil have a cubic monomial gcd
+PASS the maximal minors of the coefficient 4 chirality pencil have a nonzero constant gcd
+PASS the pivot minors of the swapped-dot coefficient 1 chirality pencil have a nonzero constant gcd
+PASS outside the source-same height pairs, the second even generator plus both swapped-dot generators has partner rank 7 at every chirality coefficient
+PASS on the source-same height pairs, the second even generator plus both swapped-dot generators has partner rank 10 at every chirality coefficient
+PASS on every ordered height pair, the sign product plus both swapped-dot generators has partner rank 10 at every chirality coefficient
+PASS the swapped-dot witness has rights (1, -3, -2) and (-1, 2, -3), centre pairs (-1, 0) and (1, 2), and kernel cross sum 2
+PASS the scaled coefficient 4 witness has rights (1, -3, -2) and (-3, 2, 1), centre pairs (-3, 0) and (1, -4), and kernel cross sum -4
+PASS each listed partner of the scaled coefficient 4/3 vector has kernel cross sum 0 on -e_x and -e_y
+PASS the coefficient 4/3 vector plus the chirality cap has cross sums -6/5, -1/4, and 1/2 against the listed partners
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

@@ -262,3 +262,12 @@ has rank 10. The monic pivot minor at chirality coefficient 1 is
 nonzero constant, so every chirality coefficient has partner rank 10.
 The sign product plus both swapped-dot generators is not in this count.
 The ten-kernel coefficient span is not classified.
+Cycle 52 shows that on every ordered height pair, the sign product plus
+both swapped-dot generators has sign-product coordinate `1`, swapped
+coordinate `-2`, and orthogonal coordinate `2`. The base image has rank
+10. The pivot minors at chirality coefficients `0`, `1`, `-1`, and
+`-1/3` have a nonzero constant gcd, so every chirality coefficient has
+partner rank 10. On the source-same pairs the monic minor at coefficient
+0 is `(c - 1)^7`. The third even generator plus both swapped-dot
+generators is not in this count. The ten-kernel coefficient span is not
+classified.

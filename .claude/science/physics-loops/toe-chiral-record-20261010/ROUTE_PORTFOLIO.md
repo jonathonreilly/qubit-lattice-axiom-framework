@@ -254,3 +254,8 @@ Cycle 51 takes the source-same form of the second even generator plus
 both swapped-dot generators. Every chirality coefficient has partner
 rank 10. It does not take the sign product plus both swapped-dot
 generators, and it does not classify the 300-dimensional affine space.
+
+Cycle 52 takes the sign product plus both swapped-dot generators on
+every ordered height pair. Every chirality coefficient has partner rank
+10. It does not take the third even generator plus both swapped-dot
+generators, and it does not classify the 300-dimensional affine space.

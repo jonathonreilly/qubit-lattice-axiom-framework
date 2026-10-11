@@ -364,3 +364,11 @@ coordinates are swapped `-2`, parallel `-1`, oblique `1`, and orthogonal
 `2`. It does not classify the sign product plus both swapped-dot
 generators, and it does not classify the 300-dimensional affine space.
 This is not an N-gate no-go.
+
+Cycle 52 prunes the reading that some chirality coefficient on the sign
+product plus both swapped-dot generators has a nonzero ten-kernel
+partner. On every ordered height pair, every chirality coefficient has
+partner rank 10. The summed coordinates are sign product `1`, swapped
+`-2`, and orthogonal `2`. It does not classify the third even generator
+plus both swapped-dot generators, and it does not classify the
+300-dimensional affine space. This is not an N-gate no-go.

@@ -667,17 +667,29 @@ every chirality coefficient has partner rank 10. The sign product plus
 both swapped-dot generators is not in this count. The ten-kernel
 coefficient span is not classified. Runner `PASS=16 FAIL=0`.
 
+Cycle 52. On every ordered height pair, the sign product plus both
+swapped-dot generators has sign-product coordinate `1`, swapped
+coordinate `-2`, and orthogonal coordinate `2`. The base image has rank
+10, so chirality coefficient 0 already has partner rank 10. The
+coefficient pairs compress to 17 rows. The pivot minors at chirality
+coefficients `0`, `1`, `-1`, and `-1/3` have a nonzero constant running
+gcd, so every chirality coefficient has partner rank 10. On the
+source-same pairs the monic pivot minor at coefficient 0 is
+`(c - 1)^7`. The third even generator plus both swapped-dot generators
+is not in this count. The ten-kernel coefficient span is not classified.
+Runner `PASS=17 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every chirality coefficient on the sign product plus both
-swapped-dot generators has partner rank 10. On `(1, 2)`, `(2, 1)`, and
-`(3, 1)`, the second even generator plus both swapped-dot generators has
-partner rank 10 at every chirality coefficient. Do not claim the
-ten-kernel coefficient span is settled. Do not claim the 300-dimensional
-affine space is classified. Do not repeat the bond-space dimension
-count. Do not return to the modulus-3 triple. Do not invent a formation
-rate. Do not return to shells, plaquette corner weights, or the
-`(0,1,2)` and `(1,1,2)` alphabets.
+Decide whether every chirality coefficient on the third even generator
+plus both swapped-dot generators has partner rank 10. The sign product
+plus both swapped-dot generators has partner rank 10 at every chirality
+coefficient on every ordered height pair. Do not claim the ten-kernel
+coefficient span is settled. Do not claim the 300-dimensional affine
+space is classified. Do not repeat the bond-space dimension count. Do
+not return to the modulus-3 triple. Do not invent a formation rate. Do
+not return to shells, plaquette corner weights, or the `(0,1,2)` and
+`(1,1,2)` alphabets.
 
 ## Cleanup
 

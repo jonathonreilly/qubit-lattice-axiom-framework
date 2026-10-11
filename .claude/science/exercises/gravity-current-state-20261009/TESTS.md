@@ -2013,3 +2013,13 @@ Use:
 **What remains open:**
 - A gap plus asymptotic completeness does not supply that global-band hypothesis.
 - The d ≥ 2 index extension lacks its dimension-uniform approximate tube lemma.
+
+### C4 result recorded 21:01Z (RL4): lane RL3 becomes FAIL (bounded)
+
+**RL4: CONFIRMED WITH CORRECTIONS** (codex sol), FAIL (bounded). Files: `agents/C4_RL4_*`.
+- **The bound.** For all three stable six-layer operators, the windowed rapid-turn chaos kernel obeys |F_k| ≥ (1−2δ)^k |F_k^nn| uniformly in k, with floating-point δ < 0.047.
+- **The rate.** At fixed physical ε, the alternating-cap renewal gives lim inf τ⁻¹ log V_ε(τ) ≥ c_low √ε, with c_low = 0.628–0.712. That is far above the 0.00975 at which the bar fails.
+- **Scope.** The rate transfers to finite sources that have a spacelike past edge and a nonzero regular turn-on patch.
+- **Still open.** Gaussian or edgeless histories, and the actual prefactor for a finite source at 1 Gpc.
+
+**Lane RL3 / event-route noise: FAIL (bounded).** This follows the fixed RL4 reading: both lemmas are proved within the stated scope. The event substrate with stable layer readouts gets GR's √Δ lensing in the mean (RL2, positive). Its noise, however, grows at least as exp(0.63√ε·τ/ℓ_k). At the 1e-19 m locality bar this fails for edged sources over 1 Gpc. The required ℓ_k is about 7e-19 m, a miss of less than one decade.

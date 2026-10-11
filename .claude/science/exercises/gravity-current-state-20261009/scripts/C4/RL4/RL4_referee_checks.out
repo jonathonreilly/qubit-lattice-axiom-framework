@@ -1,0 +1,5 @@
+Independent extrema/root-envelope quadrature (RL4_referee_checks.py):
+op0 h_band=0.01748076455 h_inf=1.028231406 h0=0.769036397 Psi1=6.173499341 S2=18.31365767 QLL=0.004812114 QPL=0.008782288 E2=0.004712926 delta=0.043386312 IW=0.151125275 c_low(no err)=0.629248821
+op1 h_band=0.02000751035 h_inf=1.101019575 h0=0.820588047 Psi1=6.595348273 S2=18.54551624 QLL=0.005142196 QPL=0.009382401 E2=0.004772594 delta=0.043971356 IW=0.172670157 c_low(no err)=0.671746939
+op2 h_band=0.02278616997 h_inf=1.176069844 h0=0.871770584 Psi1=7.144133588 S2=18.99913190 QLL=0.005565540 QPL=0.010163091 E2=0.004889330 delta=0.045393274 IW=0.196103886 c_low(no err)=0.713647731
+For all three operators the g>=3 envelope is maximized at g=3.  Its raw log bound is about -28402, not below -1e8; it is nevertheless overwhelmingly below 3*log(delta), so it does not affect q or delta.

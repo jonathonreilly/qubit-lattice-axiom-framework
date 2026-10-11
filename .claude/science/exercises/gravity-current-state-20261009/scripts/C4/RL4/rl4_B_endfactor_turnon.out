@@ -1,0 +1,6 @@
+kJ=1.0 op0: theta*=10.75 delta=0.0443 q=8.969e-03 S2'=92.773 g2=2.387e-02 | a_0 = 0.3623 : node 0.6879, E_{k-1} 0.2591, a<=k-2 tail 0.0782  (>= half node: True)
+kJ=1.0 op1: theta*=10.75 delta=0.0449 q=9.576e-03 S2'=97.497 g2=2.509e-02 | a_0 = 0.3605 : node 0.7324, E_{k-1} 0.2723, a<=k-2 tail 0.0865  (>= half node: True)
+kJ=1.0 op2: theta*=10.75 delta=0.0463 q=1.037e-02 S2'=103.828 g2=2.672e-02 | a_0 = 0.3572 : node 0.7752, E_{k-1} 0.2827, a<=k-2 tail 0.0966  (>= half node: True)
+kJ=2.0 op0: theta*=10.75 delta=0.0443 q=8.969e-03 S2'=92.773 g2=2.387e-02 | a_0 = 0.3054 : node 0.6878, E_{k-1} 0.2590, a<=k-2 tail 0.0782  (>= half node: True)
+kJ=2.0 op1: theta*=10.75 delta=0.0449 q=9.576e-03 S2'=97.497 g2=2.509e-02 | a_0 = 0.3038 : node 0.7323, E_{k-1} 0.2720, a<=k-2 tail 0.0864  (>= half node: True)
+kJ=2.0 op2: theta*=10.75 delta=0.0463 q=1.037e-02 S2'=103.828 g2=2.672e-02 | a_0 = 0.3011 : node 0.7750, E_{k-1} 0.2827, a<=k-2 tail 0.0966  (>= half node: True)

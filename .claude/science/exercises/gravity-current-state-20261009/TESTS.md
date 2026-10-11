@@ -1327,3 +1327,70 @@ Can the partner bands be decoupled? What does it cost the axioms?
 - **INCONCLUSIVE:** otherwise.
 
 **Supervisor expectation:** the soft-emission threshold gives a cusp of the wrong form, a branch-point power law set by the coupling, or a vanishing residue (the infrared catastrophe). FAIL (bounded).
+
+### C4 second wave (16:55Z): lanes RW and RE
+
+**Where the first wave leaves things.** All of the following are same-family results; their referees are running.
+- **RI.** Exact closure needs the folded-continuum tower, which means unbounded local generators. Every finite N is a finer lattice. Coarse cells move the anomaly to a different place; they never remove it.
+- **RF.** The preferred slicing leaves C3's rotation sector in place. Matter speeds then need 1–9 tunings.
+- **RD.** Dressing scales a kink by Z and never creates one.
+
+Every route therefore ends in one of two places:
+- the lattice as a readout of a continuum;
+- an anomaly at the lattice scale, whose effect on low-energy physics is a question of naturalness.
+
+Two big open questions remain, and the second wave takes each one on directly.
+
+#### Lane RW: does the refereed C3 anomaly force a graviton mass?
+
+**Question.** C3 (refereed) shows that the constraint algebra cannot close for regular local lattice matter. "Not forbidden" is not the same as "generated". Several referees flagged a dressing loophole: an O(λ) off-shell dressing might cancel the induced vacuum TT terms. This lane settles that loophole and the consistency of the theory once the algebra is broken.
+
+- **W1 (cancellation by dressing).** Take the free part completed by the RN L1 unitary seagull, so that μ = 0 for free matter. Add interacting onsite φ⁴. Write the most general local O(λ) dressing of T00, P and T_ij, up to a stated range and polynomial order. Then solve as a linear system: can the dressing cancel μ_E and μ_T2 at O(λ²) exactly?
+  - If it can: is the dressing fixed by the matter law, or is it a free tuning?
+  - Does the cancellation survive at the next order, or for a second interaction?
+- **W2 (consistency of the broken-algebra theory).** Run the Dirac analysis of linearized gravity coupled to matter whose constraint algebra fails at O(κ) as C3 shows. Determine:
+  - which constraints turn second class;
+  - the count of propagating modes;
+  - whether the extra modes are ghosts (Boulware–Deser-like), tachyons or healthy;
+  - their masses in terms of the anomaly.
+
+  Compare with Lorentz-violating massive gravity (Dubovsky; Rubakov–Tinyakov) and Hořava's extra mode.
+
+**Fixed readings.**
+- **W1:**
+  - **PASS:** a dressing fixed by the matter law (no free parameter tuned) cancels μ at O(λ²) and at the next order checked.
+  - **FAIL:** no dressing in the stated ansatz cancels it, or cancellation requires tuning a free parameter.
+  - **INCONCLUSIVE:** otherwise.
+- **W2:**
+  - **PASS:** the broken theory has exactly the 2 TT modes and no ghost or tachyon to the order computed.
+  - **FAIL:** an extra ghost or tachyon appears, or an extra mode with a mass set by the anomaly that violates bounds.
+  - **INCONCLUSIVE:** otherwise.
+- **Lane:**
+  - **PASS:** W1 and W2 both PASS.
+  - **FAIL:** W1 or W2 FAIL, refereed.
+  - **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.**
+- W1: the dressing can cancel μ at O(λ²) only by tuning one parameter per channel, so FAIL (a tuning).
+- W2: the broken algebra brings in extra modes, either a Boulware–Deser-type ghost or the khronon. FAIL, unless the anomaly-induced mass is Planckian and the extra mode decouples, in which case INCONCLUSIVE.
+
+#### Lane RE: emergent Lorentz invariance from strong dynamics
+
+**Question.** Some theories make Lorentz violation irrelevant in the infrared: it decays as a power law at a strongly coupled fixed point (Bednik–Pujolàs–Sibiryakov 2013 holographic examples; Anber–Donoghue; Kostelecký–Samuel; Lorentz symmetry emerging in Dirac and Weyl materials). Could the framework's matter flow to such a point, and does the flow also cure the graviton mass?
+
+- **E1 (theory and literature).** Which Lorentz-violating operators can become irrelevant at a strongly coupled fixed point?
+  - Speed differences can.
+  - Can the TT stiffness, a graviton mass, which is a relevant dimension-2 operator?
+  - Can C3's algebra anomaly become irrelevant?
+  - What does strong dynamics require of the lattice matter, and does it conflict with the axioms or with known physics (the Standard Model is weakly coupled)?
+- **E2 (computation).** Take a lattice model that flows to a Lorentz-invariant fixed point, such as lattice QED3 or a Gross–Neveu–Yukawa model with velocity anisotropy, at large N or by RG. Compute the decay law of the speed anisotropy and of the C3-type anomaly with scale. From that, estimate the suppression available between the Planck scale and 1 TeV.
+
+**Fixed readings.**
+- **PASS:** an explicit mechanism, realizable from a nearest-neighbour rule, that drives every dimension ≤ 4 Lorentz-violating matter coefficient and the TT stiffness below bounds without tuning, with the Standard Model emerging at low energy.
+- **FAIL:** for the classes examined, the TT stiffness, or some Lorentz-violating coefficient that bounds require, cannot be made irrelevant, or the needed running is too slow over the available range.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.**
+- Matter speed differences can decay as a power law at a strongly coupled fixed point. Over 15 decades that could be enough.
+- The graviton mass is a relevant operator in the gravity sector, so the matter fixed point cannot make it irrelevant.
+- Reading: E1 FAIL for the graviton mass, with a partial win for matter speeds. Lane INCONCLUSIVE, leaning FAIL.

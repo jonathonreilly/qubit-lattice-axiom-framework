@@ -1,0 +1,484 @@
+{
+  "created_utc": "2026-10-11T17:32:46.861311+00:00",
+  "status": "conditional-support; proposed_retained; author packet, no formal audit verdict",
+  "repository_read_only": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree",
+  "observed_head": "3fbaa00e9d97a19459d197fd0de2d62d45327e90",
+  "observed_main": "e485eab6b09b3957df5772104d3ea3980108d7fa",
+  "branch": "physics-loop/toe-nonlinear-transport-20261011",
+  "frozen_main_search_baseline": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "publication_note_sha256": "5d7fbfe0d0603e52c80de047f3ea91bff46b01d3a24b40ba2f796d49c0c3d3ad",
+  "publication_runner_sha256": "0a655a71047cae8fde331eba758ad91da08cc7f5cbaddac4b2335196a9f38f2a",
+  "composition_review_sha256": "f0d4b25cfac7ccc4d422b4c57da187bd641a9ee07b9216efcd5a327f24ebd183",
+  "frozen_original_packets": [
+    {
+      "receipt": "receipt.json",
+      "sha256": "9f6274c1fc79a373ecb5c801cb516c4ed220c9863549506454d0f5f86e8c88e2",
+      "files_checked": 15,
+      "all_unchanged": true
+    },
+    {
+      "receipt": "exclusion_mixing_receipt.json",
+      "sha256": "3ce179ac0bd815d42db0ca5daf99e3cf712a9c5318a8c48a03811670fb791922",
+      "files_checked": 11,
+      "all_unchanged": true
+    }
+  ],
+  "original_upstream_refresh": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/SPATIAL_QUANTUM_COLLISION_REALIZATION_BOUNDED_THEOREM_NOTE_2026-10-09.md",
+      "sha256": "f02fe7fae147bf5aedac035334ab8a34ac89deb3220c9381918e58e30711fff2",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/QUTRIT_FREE_WAIT_COARSE_GRAINING_AND_ENCODED_CHANNELS_BOUNDED_THEOREM_NOTE_2026-10-08.md",
+      "sha256": "4968ff87c37f8363cb9d56b7066026afb7bc5cf37e4b555b28884e6b4103a762",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "sha256": "06c624b2bd77da00f404c7e31a125f5ce1db21a3483e7bc662cea0ae8afa3885",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/NATIVE_HALFLINE_CLOCK_COMPLETION_FINITE_HORIZONS_AND_PERMANENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "87d8c6f4b98563cd827f0d8264ec2575c689ec4d7ac018fe5b87d89006181ed3",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_LOCAL_CYCLE_TRANSPORT_AND_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "sha256": "8c1b0dbb2b2cd8897871cf7e98773ff189fd894dfe1ad9ddfb4b732c4cbfa561",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/READ_RESET_CADENCE_INTERFERENCE_CHANNEL_BOUNDED_THEOREM_NOTE_2026-07-17.md",
+      "sha256": "a5cee2bc3d8309324aa78f88b0382aa2f370d5e6f2224b4babfeccf468bdd281",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/LOCAL_REFERENCE_FERMION_ENCODING_OBSTRUCTIONS_AND_CONSTRUCTIVE_GRAPH_ISOMETRIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "240f0f508a02c343b4c239a43d2d6b005b65ac25d17b1f2991f8caf341fceb64",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_WHAT_A_SOURCE_IS_WHEN_RECORDS_MOVE_ONE_MASS_PER_RECORD_NO_ACTION_ACROSS_EMPTY_SPACE_SCREENED_DENSITY_POTENTIAL_SIGNED_TILT_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-20.md",
+      "sha256": "ed44c9582a45387df13e0d645744a6d80c04401c28f01b6f1182764ad81c5e5b",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/NATIVE_PERMANENT_MARKERS_COHERENT_MEDIA_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "308183b0525d60637dd61862b00e814a8a67f2db6b2bf89b5113e7e46d16b0ea",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+      "sha256": "5ed49dd0e0db1183cb464c3daa3748be593387ca177f7bf4ad8d40c215e85e9e",
+      "unchanged_from_original_read": true
+    },
+    {
+      "path": "docs/RECORD_NATIVE_MARKED_PURE_BIRTH_RESOURCE_GENERATOR_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "b0f0fc7559899fbdd69404c6466854e8bc6ba8d5f76b3f9846ca9854a215b022",
+      "unchanged_from_original_read": true
+    }
+  ],
+  "composition_sources": {
+    "LOCAL_QUBIT_NONLINEAR_COMPOSITION_DRAFT.md": "41746837456a3ec325bdce904b802afa966a71af538b080ae7c8b95d2eaa7e4e",
+    "LOCAL_QUBIT_STOPPED_CAPACITY_REFINEMENT.md": "f28c729a079799286d626a6d8b427d4869ee6639e262fbda0264ca896cd5859c",
+    "FINAL_NONLINEAR_PARTICLE_NOTE.md": "ab42c1e6377e360739d01ac9f37f56f98b087997649ebec45be59ea07e23fc90"
+  },
+  "markdown_links": [
+    {
+      "relative_target": "../scripts/local_qubit_port_realization_polynomial_mixing_2026_10_11.py",
+      "resolved_publication_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/root_qubit_port_primary.py",
+      "sha256": "0a655a71047cae8fde331eba758ad91da08cc7f5cbaddac4b2335196a9f38f2a"
+    },
+    {
+      "relative_target": "SPATIAL_QUANTUM_COLLISION_REALIZATION_BOUNDED_THEOREM_NOTE_2026-10-09.md",
+      "resolved_publication_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/SPATIAL_QUANTUM_COLLISION_REALIZATION_BOUNDED_THEOREM_NOTE_2026-10-09.md",
+      "sha256": "f02fe7fae147bf5aedac035334ab8a34ac89deb3220c9381918e58e30711fff2"
+    },
+    {
+      "relative_target": "SPATIAL_PARTICLE_TO_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "resolved_publication_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/SPATIAL_PARTICLE_TO_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "ab42c1e6377e360739d01ac9f37f56f98b087997649ebec45be59ea07e23fc90"
+    },
+    {
+      "relative_target": "QUTRIT_FREE_WAIT_COARSE_GRAINING_AND_ENCODED_CHANNELS_BOUNDED_THEOREM_NOTE_2026-10-08.md",
+      "resolved_publication_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/QUTRIT_FREE_WAIT_COARSE_GRAINING_AND_ENCODED_CHANNELS_BOUNDED_THEOREM_NOTE_2026-10-08.md",
+      "sha256": "4968ff87c37f8363cb9d56b7066026afb7bc5cf37e4b555b28884e6b4103a762"
+    },
+    {
+      "relative_target": "MINIMAL_AXIOMS_2026-06-29.md",
+      "resolved_publication_source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    }
+  ],
+  "python_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "python_version": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "library_versions": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "primary_timeout_sec": 180,
+  "baseline_check_count": 221912,
+  "actual_source_mutations": 24,
+  "execution_record": "native_probe/publication_mutation_results.json",
+  "files": [
+    {
+      "path": "FINAL_QUBIT_PORT_NOTE.md",
+      "sha256": "5d7fbfe0d0603e52c80de047f3ea91bff46b01d3a24b40ba2f796d49c0c3d3ad",
+      "bytes": 43050
+    },
+    {
+      "path": "root_qubit_port_primary.py",
+      "sha256": "0a655a71047cae8fde331eba758ad91da08cc7f5cbaddac4b2335196a9f38f2a",
+      "bytes": 29533
+    },
+    {
+      "path": "native_probe/publication_baseline.log",
+      "sha256": "20c3a5cf66cb682f5f0a01724b59d31e29ef453cbc758decbf12d3e26ac43904",
+      "bytes": 3322
+    },
+    {
+      "path": "native_probe/publication_build.py",
+      "sha256": "7ca968a2586ca5c28ba13f370a5c782c8d70960799040b67da70e7d7da383db8",
+      "bytes": 10073
+    },
+    {
+      "path": "native_probe/publication_capacity_deficit_constant.log",
+      "sha256": "4126c838e2cb7aa4720de1a320bd2e23b65f91be8f12f47f909de4c8228252f9",
+      "bytes": 1552
+    },
+    {
+      "path": "native_probe/publication_collision_capacity_power.log",
+      "sha256": "b1d3e44ea3aa7cd7108a930e5dab4d91eb5448aa8f47d9be453a3f90b73520f2",
+      "bytes": 757
+    },
+    {
+      "path": "native_probe/publication_collision_output_vacancy.log",
+      "sha256": "592fb04cece4ee782fac37fd2c11788a65e318f1e3a79e309c735fab32c11b1a",
+      "bytes": 757
+    },
+    {
+      "path": "native_probe/publication_collision_patch_range.log",
+      "sha256": "3556da91d9a04c81aa667925a83a6ad761f06e33bfff60893c7f7d7d79133078",
+      "bytes": 1672
+    },
+    {
+      "path": "native_probe/publication_complete_graph_gap.log",
+      "sha256": "05d8b191565ce0a36dc88934e1639f1680a491460e2605dea5ec32bd57f0d23b",
+      "bytes": 1932
+    },
+    {
+      "path": "native_probe/publication_composition_baseline.log",
+      "sha256": "c5dbaf330d75c469438578616d984f42f6dc0e2d062e8a7215efbbaa071e00d6",
+      "bytes": 3322
+    },
+    {
+      "path": "native_probe/publication_composition_controls.py",
+      "sha256": "a1aeb46ebfc4c23ba87fa779afee43bb4e4ce4b56a5929a5bc346c6b3ca30f92",
+      "bytes": 8932
+    },
+    {
+      "path": "native_probe/publication_composition_review.md",
+      "sha256": "f0d4b25cfac7ccc4d422b4c57da187bd641a9ee07b9216efcd5a327f24ebd183",
+      "bytes": 10928
+    },
+    {
+      "path": "native_probe/publication_composition_section.md",
+      "sha256": "361330a14b1e1a5538ffa24a7891abb3cbea47b87d673f7c1ac6480aa51da3a4",
+      "bytes": 8706
+    },
+    {
+      "path": "native_probe/publication_count_generator_vacancy.log",
+      "sha256": "2cca26d27e932c00ea5168652bbba19582dae5d9772086bd24bdae9277e34b49",
+      "bytes": 1014
+    },
+    {
+      "path": "native_probe/publication_epsilon_capacity_half.log",
+      "sha256": "bcb213c5eca2233305ab03f3697456809c9e8ad4a4430565c87505241c15850d",
+      "bytes": 2402
+    },
+    {
+      "path": "native_probe/publication_epsilon_mixing_half.log",
+      "sha256": "6f91a9c4c11585011907e3fecfc413628e13c0db5b0988ad044203bde0428022",
+      "bytes": 2426
+    },
+    {
+      "path": "native_probe/publication_fast_fiber_bias.log",
+      "sha256": "66f4cb22dee23d4142bdcb4af37c21f754713b9ad72f99f792ca301cf771c76d",
+      "bytes": 950
+    },
+    {
+      "path": "native_probe/publication_finite_path_fast_rate.log",
+      "sha256": "13ef1c6b72448f7d92dc379df42750e24a776483afd77a4abc94d264d1c64d1f",
+      "bytes": 1073
+    },
+    {
+      "path": "native_probe/publication_freeze.py",
+      "sha256": "bb6b42e376a169a94ae2248a1785d01017243e9f3c912730e8e03babd86dce8f",
+      "bytes": 16626
+    },
+    {
+      "path": "native_probe/publication_freeze_first_failure.log",
+      "sha256": "8a5645085f57686c48086741546c4dec5058a5827d47bb775ec277f937a42d9e",
+      "bytes": 381
+    },
+    {
+      "path": "native_probe/publication_hop_capacity_power.log",
+      "sha256": "19a8bcd0425fcaa8f556389cbb2bc295999925e46d0ce10dfbf538dcf5e3aa98",
+      "bytes": 850
+    },
+    {
+      "path": "native_probe/publication_inactive_factor_readout.log",
+      "sha256": "0745110b53275c0b98889738d57c1360e1bd503aecf06fb7cbc9a2c0f3b36ded",
+      "bytes": 2708
+    },
+    {
+      "path": "native_probe/publication_intermediate_f42eceb.py",
+      "sha256": "f42eceb03827d3bc574fb45293f393f15f5ed5cf1649cb6ebd74d72551a96528",
+      "bytes": 29569
+    },
+    {
+      "path": "native_probe/publication_mutation_results.json",
+      "sha256": "9f4f3d4714a2b825d230d1cecbadfe323e75860cc95b23e1d244617561f1a483",
+      "bytes": 22630
+    },
+    {
+      "path": "native_probe/publication_mutations.log",
+      "sha256": "5abc5c5c010b829e361a0ded90dc8bfd004640e37597ff3ca875ca12d6305abb",
+      "bytes": 14913
+    },
+    {
+      "path": "native_probe/publication_mutations.py",
+      "sha256": "dbf875f1326661b6ff596887ec40c27975447b2b2eb10182ac6ce4439827e861",
+      "bytes": 5063
+    },
+    {
+      "path": "native_probe/publication_native_tree_depth.log",
+      "sha256": "97c4303cbb67a56fd40408f26017724332aacd504c01df787ef7e24cf12d252d",
+      "bytes": 1770
+    },
+    {
+      "path": "native_probe/publication_nonlinear_resource_denominator.log",
+      "sha256": "26db4d54f1034dd3d07f2098837f5538a88fcbf229cc6dcccb7dc0a5db6c80e6",
+      "bytes": 2899
+    },
+    {
+      "path": "native_probe/publication_note_build.py",
+      "sha256": "ae5340579735c96924b99e52fa315d62300ab0e950ee10e24f4d34cb06924fee",
+      "bytes": 22829
+    },
+    {
+      "path": "native_probe/publication_offdiagonal_population_leak.log",
+      "sha256": "30a5e864af71e9b6c3b161e11a351e8b28499fc68a3ec1321980dd6853f6dff0",
+      "bytes": 657
+    },
+    {
+      "path": "native_probe/publication_product_mixing_factor.log",
+      "sha256": "927a1a7103492b087b9f1c1b44cb4e9f27cd633a59c8c6fff575dc314698cb17",
+      "bytes": 2278
+    },
+    {
+      "path": "native_probe/publication_reaction_energy_key.log",
+      "sha256": "e9701a7ed13d4a58f0f986e9950500b6ed591d92ea8838cac694bd261f0dbbba",
+      "bytes": 1902
+    },
+    {
+      "path": "native_probe/publication_renewal_first_gap.log",
+      "sha256": "26d4fa95844f51ff576b36cb7ed5d9c9cc63854c6765f638eb69588f0eb7edac",
+      "bytes": 1670
+    },
+    {
+      "path": "native_probe/publication_selective_quantum_instrument.log",
+      "sha256": "a46c3c1e461f2986b5aa9fda5ad2d71a889f26812f70fa3acd0fbc5fe317c948",
+      "bytes": 2718
+    },
+    {
+      "path": "native_probe/publication_stopped_capacity_allocation.log",
+      "sha256": "1b09db24601c7077569f8b78f54520f87e10329cc3b9a4bc8093c510b5b734ea",
+      "bytes": 3206
+    },
+    {
+      "path": "native_probe/publication_stopped_collision_direction.log",
+      "sha256": "63c2b2ab4bc79fc1e92ad46faa37d70815c0ae1fd5f36ae0c6f3ac97663f842f",
+      "bytes": 2590
+    },
+    {
+      "path": "native_probe/publication_stopped_hop_dimensions.log",
+      "sha256": "0235878320c440b52021cc4b22bb788ce6951d495075f0fa9aa434db40acec83",
+      "bytes": 2611
+    },
+    {
+      "path": "native_probe/publication_streaming_translation.log",
+      "sha256": "3f6361e103881ea9eff88abcb47962795ff3e04da12e95744c5ad722e8ff71b9",
+      "bytes": 1819
+    },
+    {
+      "path": "native_probe/publication_tree_route_return.log",
+      "sha256": "6f745b951f85977eedeec3c8f161f00ac77c1ce0f2beb3e4c4f7a2625e2c6b38",
+      "bytes": 2004
+    },
+    {
+      "path": "native_probe/publication_mutants/capacity_deficit_constant.py",
+      "sha256": "0b3861a3428102ffca1c4edf36eaa1831744ee673ff525d785cecfa6c82227c4",
+      "bytes": 29533
+    },
+    {
+      "path": "native_probe/publication_mutants/collision_capacity_power.py",
+      "sha256": "dcd5c8ddec70255b420b589ef8ab47d9ddfe21191aef583231ce32cedbbe7d49",
+      "bytes": 29531
+    },
+    {
+      "path": "native_probe/publication_mutants/collision_output_vacancy.py",
+      "sha256": "3cc8a79e4a3ab7a2ccf8889ee18711a3dc8e2aee76f0cc92de16b82d150d691e",
+      "bytes": 29487
+    },
+    {
+      "path": "native_probe/publication_mutants/collision_patch_range.py",
+      "sha256": "ce58e07fed2b8026d5ebd88908cb7cde81025730b00b25c8aa3267718b637e91",
+      "bytes": 29533
+    },
+    {
+      "path": "native_probe/publication_mutants/complete_graph_gap.py",
+      "sha256": "d15c48ee8d1a9d7aaf1caf29db1a4a56efcbee2d4ffffb32767871728d01f1e6",
+      "bytes": 29535
+    },
+    {
+      "path": "native_probe/publication_mutants/count_generator_vacancy.py",
+      "sha256": "04a830c8cffd56b217e4bf31f3dbceb24c5b25d417a776fc4eda2ada86d01149",
+      "bytes": 29485
+    },
+    {
+      "path": "native_probe/publication_mutants/epsilon_capacity_half.py",
+      "sha256": "ba5d0c7619b11b2ec2dc6f88c328ab204d066326abd56dc993032123e528e1b7",
+      "bytes": 29531
+    },
+    {
+      "path": "native_probe/publication_mutants/epsilon_mixing_half.py",
+      "sha256": "308cd83db24ef9d1cfe31b9088f511386fc4d68f55763c825a23543f449de8fa",
+      "bytes": 29531
+    },
+    {
+      "path": "native_probe/publication_mutants/fast_fiber_bias.py",
+      "sha256": "da2be109ad146f16ce2748a4bf1e9c9d551937181f5f050546d868a32a3813c1",
+      "bytes": 29558
+    },
+    {
+      "path": "native_probe/publication_mutants/finite_path_fast_rate.py",
+      "sha256": "1819030e66f929ac38af485c435f743c67d9c99370c559da1c4be16381aec19c",
+      "bytes": 29525
+    },
+    {
+      "path": "native_probe/publication_mutants/hop_capacity_power.py",
+      "sha256": "1c17d107b80f8ae27a0854a84d02d5b389ff739710ace6e820abe7b9eb5471e3",
+      "bytes": 29531
+    },
+    {
+      "path": "native_probe/publication_mutants/inactive_factor_readout.py",
+      "sha256": "0edb389f5ab0b802e579952b59d0df2f21a6b1171eacc6fda7b7fc8d73694983",
+      "bytes": 29538
+    },
+    {
+      "path": "native_probe/publication_mutants/native_tree_depth.py",
+      "sha256": "9f7d749d4dbd15eaf52d4edd7a7f411ce923cc28d423e5f78c8ebdcdd1e48801",
+      "bytes": 29529
+    },
+    {
+      "path": "native_probe/publication_mutants/nonlinear_resource_denominator.py",
+      "sha256": "43630121272785ab44d9c5142a07ff1e26627614c71eceb54e910b6274a2651b",
+      "bytes": 29530
+    },
+    {
+      "path": "native_probe/publication_mutants/offdiagonal_population_leak.py",
+      "sha256": "37e9da4f3fb07fd2f5121b216cd1b3151e9ba5dff5d5a1d375954888578e0048",
+      "bytes": 29537
+    },
+    {
+      "path": "native_probe/publication_mutants/product_mixing_factor.py",
+      "sha256": "8149414d995ae17724d7fca3b6ccffc62c6c37a631b064c2848dcff78b844e27",
+      "bytes": 29532
+    },
+    {
+      "path": "native_probe/publication_mutants/reaction_energy_key.py",
+      "sha256": "3daa7c2a4f236f43da734938458f46efaafe08c421ff6e211eb6c92bab1d20b4",
+      "bytes": 29505
+    },
+    {
+      "path": "native_probe/publication_mutants/renewal_first_gap.py",
+      "sha256": "4a312d7398c929129a08dd962ef6a127ca6c70c57899d3688f732a235dd7bfae",
+      "bytes": 29531
+    },
+    {
+      "path": "native_probe/publication_mutants/selective_quantum_instrument.py",
+      "sha256": "83ea6770c6e90d309769964d9aad18f21610f0664c999535b70692fe91a93c6a",
+      "bytes": 29529
+    },
+    {
+      "path": "native_probe/publication_mutants/stopped_capacity_allocation.py",
+      "sha256": "7786f3276c92c3d42e9cd5bfa3737c0c7896025c7a84f533a06365aa8b681a0f",
+      "bytes": 29531
+    },
+    {
+      "path": "native_probe/publication_mutants/stopped_collision_direction.py",
+      "sha256": "7a85e114bf031a8ca783468c861bb2d9a3bf5806733d4b90230ffc1338dac4e1",
+      "bytes": 29533
+    },
+    {
+      "path": "native_probe/publication_mutants/stopped_hop_dimensions.py",
+      "sha256": "f47a6c94af58b26455774c4cc526e107312b179afb5a381e7bfcf37241de2f3e",
+      "bytes": 29520
+    },
+    {
+      "path": "native_probe/publication_mutants/streaming_translation.py",
+      "sha256": "4cab63f22ca80bc8b0f42fb56e833dd3e2ababa35f0b6631f21b2c63aed2d3ba",
+      "bytes": 29537
+    },
+    {
+      "path": "native_probe/publication_mutants/tree_route_return.py",
+      "sha256": "b62cc2ce2d7a2a8bac9daee335b20a535c7539980b7e86fae39bc0b40b25a621",
+      "bytes": 29517
+    }
+  ],
+  "shared_worktree_status_observed_not_authored": "M .claude/science/physics-loops/toe-dynamics-bridge-20261009/HANDOFF.md\n M .claude/science/physics-loops/toe-dynamics-bridge-20261009/PR_BACKLOG.md\n M .claude/science/physics-loops/toe-dynamics-bridge-20261009/STATE.yaml\n?? .claude/science/physics-loops/toe-dynamics-bridge-20261009/nonlinear_particle/\n?? docs/SPATIAL_PARTICLE_TO_NONLINEAR_FLUID_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-11.md\n?? logs/runner-cache/spatial_particle_to_nonlinear_fluid_limit_2026_10_11.txt\n?? scripts/spatial_particle_to_nonlinear_fluid_limit_2026_10_11.py"
+}

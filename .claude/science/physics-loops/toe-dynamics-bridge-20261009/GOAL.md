@@ -10,8 +10,10 @@ The active target is to retain nonlinear convection in the supplied spatial
 collision-to-fluid chain, then remove concrete microscopic suppliers where a
 controlled construction is possible. The current nonlinear fluid theorem has
 a complete proof and selective independent check. Particle/mesh composition
-and a literal local-qubit carrier are active provisional extensions. Actual
-energy-current/scattering routes remain in the ranked research queue.
+and a literal local-qubit carrier now have complete final-source checks and
+join the same regular milestone. The excluded walk's threshold scattering,
+finite-time packets and canonical energy-current estimates are the next active
+derivations, with their own pending source-bound checks.
 
 Quantifiers stay explicit: fixed D3Q27 velocities and supplied rates, Gibbs
 reference, kinetic clock, prepared fluctuations and a supplied smooth fluid

@@ -1,3 +1,49 @@
+# Particle and local-qubit milestone delivery, 2026-10-11
+
+The two added theorem/primary units extend the published nonlinear-fluid unit
+on the same regular PR #9478, stacked on unchanged #9473. Main remains
+a13caa4885f547c8d206265b031ba7649e539fd9 at repeated fetch; instructions remain
+3a4b2c66a1ead7a1c48b4359627e968f681e3c39. Parent-first landing or combined
+review remains required. Root read both complete final arguments, primaries,
+independent review sources and decisive finite controls. Final identities are
+in PARTICLE_QUBIT_SOURCE_IDENTITIES.json.
+
+- Particle primary ran through the canonical cache harness in 1.76034 seconds;
+  qubit primary in 2.82292 seconds. Each declares a 180-second timeout. Both
+  final caches and the unchanged nonlinear-fluid cache report ok/fresh by both
+  cache identity and full cache status checks. No repeated unchanged PDE run
+  was needed.
+- Both new primaries and the two copied independent particle helpers compile.
+  Vocabulary lint --fix found zero violations and changed no source bytes.
+  All eight recorded source hashes, 58 evidence hashes and decompressed raw
+  report hashes match. Independent review explicitly distinguishes inherited
+  particle authorship from independent qubit checks.
+- Root reconstructed all 13 particle and 24 qubit actual altered sources from
+  the manifest fragments and verified source hashes, recorded nonzero exits
+  and intended mathematical AssertionErrors in full preserved raw logs. No
+  syntax failure or execution count is used as a proof of the analytic limits.
+- All 17 local Markdown links in the staged new/changed Markdown resolve to
+  staged regular files after masking code and TeX. Two raw qubit reports retain
+  their historical links in lossless gzip containers; their README explains
+  external development paths, and their decompressed hashes bind the sources.
+- Citation build and manifest generation completed sequentially. The delta
+  from the published nonlinear-fluid tree is exactly two intended theorem
+  nodes and eight dependency edges, with no old node changed: 6877 nodes and
+  15435 edges. Only the manifest is staged from generated audit data.
+- Changed-audit-evidence compatibility covers 154 committed/worktree paths,
+  with checked=[], failures=[] and control_failures=[]. These new proposed
+  claims change no existing audited row. This is compatibility, not an audit.
+- The complete staged addition passes git diff --cached --check. Explicit
+  staging contains science, review/recovery evidence, canonical caches and
+  the citation manifest. No editable prompt or authority surface changed.
+
+No full shared pipeline, strict global lint, combined-current-main landing
+pass, Lean certificate or applied audit verdict is claimed. Independent
+integration owns landing checks. Discovery continues on the separate excluded
+walk/current lane during the fixed 24-hour campaign.
+
+## Previous nonlinear-fluid delivery
+
 # Nonlinear fluid milestone delivery, 2026-10-11
 
 Source base: parent 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf. Selection

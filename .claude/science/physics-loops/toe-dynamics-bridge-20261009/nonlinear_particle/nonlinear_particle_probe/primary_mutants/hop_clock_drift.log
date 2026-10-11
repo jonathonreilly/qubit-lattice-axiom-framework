@@ -1,0 +1,14 @@
+primary_sha256=b23fbf74766b94b3cf9c0882392eee660fe917878c5f9b951c1f701dd131cf64
+mutant_sha256=e9500e391404a6d8a1157b33dc1eed701d12fdd6cf785fced9b130780d779273
+family=exact conditional transport drift
+stdout:
+Supplied nonlinear particle/fluid finite controls; standard library only
+AUDIT_TIMEOUT_SEC=180
+checked: exact count rates at a realizable equilibrium state; both collision directions; volume, clock and quadratic-variation factors
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/hop_clock_drift.py", line 172, in <module>
+    assert actual_hop[z,i]==expected
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

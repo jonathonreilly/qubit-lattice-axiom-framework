@@ -1,0 +1,284 @@
+{
+  "primary_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/root_nonlinear_particle_primary.py",
+  "primary_sha256": "b23fbf74766b94b3cf9c0882392eee660fe917878c5f9b951c1f701dd131cf64",
+  "python": "3.13.5",
+  "runtime_seconds": 4.610486583784223,
+  "mutant_count": 13,
+  "detected_count": 13,
+  "results": [
+    {
+      "name": "cell_volume_jump",
+      "family": "point-jump normalization",
+      "old": "F(sign)/(N*w*delta*M[v])",
+      "new": "F(sign)/(N*delta*M[v])",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/cell_volume_jump.py",
+      "source_sha256": "00e73bee0b7715ff617f35f67e296a54b203c2452da2a6e24ee47785a3aa7c0c",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/cell_volume_jump.log",
+      "log_sha256": "b52f3cab00fb63be731aa93e2dfb73c8a1310e536a402091427b59979f6514b0",
+      "returncode": 1,
+      "runtime_seconds": 0.46224849997088313,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/cell_volume_jump.py\", line 198, in <module>",
+        "    assert exact==Ks*Jr/(N*N*delta*delta)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "missing_hop_endpoint",
+      "family": "two-cell hop energy",
+      "old": "[(cell,v,-jump),(tuple(nxt),v,jump)]",
+      "new": "[(cell,v,-jump)]",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/missing_hop_endpoint.py",
+      "source_sha256": "b561b8457566888cad7e49fd4f28f1b252ba4760166740c2df53ae2b622bf9a3",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/missing_hop_endpoint.log",
+      "log_sha256": "9a73fad3b6121a16a6ae82793de2fc404762c390bf363aca4e8046f29b164287",
+      "returncode": 1,
+      "runtime_seconds": 0.7944422923028469,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/missing_hop_endpoint.py\", line 209, in <module>",
+        "    assert exact==Hd[d]/(N*N*delta*delta*M[v])",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "double_collision_rate",
+      "family": "binary direction and rate count",
+      "old": "rates=(counts[z,i]*counts[z,j]+counts[z,k]*counts[z,l])/(delta*delta*Nc*w)",
+      "new": "rates=2*(counts[z,i]*counts[z,j]+counts[z,k]*counts[z,l])/(delta*delta*Nc*w)",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/double_collision_rate.py",
+      "source_sha256": "0b4e0b16177a934293717b3909ed47d5300f82683bc88d164366efe889e67454",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/double_collision_rate.log",
+      "log_sha256": "419ee70047f79f17924467c42cba60071cfc9796b28d1fe85693ab741119b482",
+      "returncode": 1,
+      "runtime_seconds": 0.19398137461394072,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/double_collision_rate.py\", line 129, in <module>",
+        "    assert collision_bracket*Nc*w*delta**4==2*sum(CRparts)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "collision_volume_drift",
+      "family": "exact conditional collision drift",
+      "old": "net_rate=(nstate[z,i]*nstate[z,j]-nstate[z,k]*nstate[z,l])/(delta*delta*Nstate*w)",
+      "new": "net_rate=(nstate[z,i]*nstate[z,j]-nstate[z,k]*nstate[z,l])/(delta*delta*Nstate)",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/collision_volume_drift.py",
+      "source_sha256": "4ce79d19acb351bca7af012d8f74584026053a90f8b984a14a4acfd11cde21ca",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/collision_volume_drift.log",
+      "log_sha256": "6631d74920a62b551a2f4e299fd2acfac25b4c6aa794cfbef727684e851515c9",
+      "returncode": 1,
+      "runtime_seconds": 0.20032233325764537,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/collision_volume_drift.py\", line 151, in <module>",
+        "    assert actual_coll==[-Bh[i]/(delta*delta)+ghh[i]/delta for i in range(27)]",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "hop_clock_drift",
+      "family": "exact conditional transport drift",
+      "old": "hop_rate=abs(v[d])*nstate[z,i]/delta",
+      "new": "hop_rate=abs(v[d])*nstate[z,i]",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/hop_clock_drift.py",
+      "source_sha256": "e9500e391404a6d8a1157b33dc1eed701d12fdd6cf785fced9b130780d779273",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/hop_clock_drift.log",
+      "log_sha256": "12da631b6daf31e1468fc33449377e953f7bc774fc497be969db96c6790f0185",
+      "returncode": 1,
+      "runtime_seconds": 0.4721019580028951,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/hop_clock_drift.py\", line 172, in <module>",
+        "    assert actual_hop[z,i]==expected",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "clip_exit_energy",
+      "family": "stopping overshoot accounting",
+      "old": "exit_energy=sum(F(1,Nc*Nc*w*stop_delta*stop_delta*M[q]) for q in (i,j,k,l))",
+      "new": "exit_energy=min(radius_squared,sum(F(1,Nc*Nc*w*stop_delta*stop_delta*M[q]) for q in (i,j,k,l)))",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/clip_exit_energy.py",
+      "source_sha256": "15a35cfb7005648af28713f83d219f7af273969bbcb5b75e7573c84e0ec18ab0",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/clip_exit_energy.log",
+      "log_sha256": "c259200f66e179db313ecc94445db0b1749b7899bd1be742484a3898f402fe34",
+      "returncode": 1,
+      "runtime_seconds": 1.5629673339426517,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/clip_exit_energy.py\", line 221, in <module>",
+        "    assert exit_energy>radius_squared",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "halve_drift_coefficient",
+      "family": "projected energy complete square",
+      "old": "Lp=Ap*Ap/lam",
+      "new": "Lp=Ap*Ap/(2*lam)",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/halve_drift_coefficient.py",
+      "source_sha256": "4d48088a12d37bc50970ff1a6f12f5a4d4bfe2071a685983c99ee4ee0d6c8146",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/halve_drift_coefficient.log",
+      "log_sha256": "957bf5763b36483077fcc65aa594327fdf4d168658446f542bf5c2b99864cbd7",
+      "returncode": 1,
+      "runtime_seconds": 1.550318957772106,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/halve_drift_coefficient.py\", line 240, in <module>",
+        "    assert drift==bound",
+        "           ^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "preparation_volume",
+      "family": "initial probability normalization",
+      "old": "p[z,i]=w*M[i]*(1+delta*u)",
+      "new": "p[z,i]=M[i]*(1+delta*u)",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/preparation_volume.py",
+      "source_sha256": "4fa619f911c64bd984c53c8d3d29c223c885d6f4e76e6269390c0aeed9112860",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/preparation_volume.log",
+      "log_sha256": "e17e89bea773856b5d49746314e623616bfac8be40ced6e1283ecdadb1231f48",
+      "returncode": 1,
+      "runtime_seconds": 1.5554186250083148,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/preparation_volume.py\", line 260, in <module>",
+        "    assert 0<p[z,i]<2*w*M[i]",
+        "           ^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "drop_multinomial_covariance",
+      "family": "multinomial covariance trace",
+      "old": "cov=p[z,i]*(int(z==zz)-p[zz,i])",
+      "new": "cov=p[z,i]*int(z==zz)",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/drop_multinomial_covariance.py",
+      "source_sha256": "595aeec558d01d0a4f6c6e57dc320c99815d1f77684a1f036cc489fe6fa963d3",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/drop_multinomial_covariance.log",
+      "log_sha256": "c6dec72b6803c295e7e387c3a8a57ee0493808b616893f9a8ea8be4321b999a7",
+      "returncode": 1,
+      "runtime_seconds": 1.7461046669632196,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/drop_multinomial_covariance.py\", line 286, in <module>",
+        "    assert direct==spectral",
+        "           ^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "lose_microscopic_output",
+      "family": "conservation through collision aliasing",
+      "old": "out[v]+=sign*flux/M[v]",
+      "new": "out[v]+=sign*flux",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/lose_microscopic_output.py",
+      "source_sha256": "a3763f15b66e47ab99fd26e98b088ef2c81408f7c54ea181f76448f7761b6aa2",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/lose_microscopic_output.log",
+      "log_sha256": "54a8e2295008b44091b0ac063b0fc500e5004c2a2495d90b12ccab044fd413b7",
+      "returncode": 1,
+      "runtime_seconds": 1.8902277080342174,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/lose_microscopic_output.py\", line 304, in <module>",
+        "    assert all(sum(M[i]*inv[i]*out[i] for i in range(27))==0 for inv in invariants)",
+        "           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "discard_alias_folding",
+      "family": "quadratic Fourier alias map",
+      "old": "p=principal(q,m)",
+      "new": "p=q",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/discard_alias_folding.py",
+      "source_sha256": "d189e65b278b507252b259092793384fa3e339f7c1caeaf7e9499f770d9043c6",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/discard_alias_folding.log",
+      "log_sha256": "c61dd62c6e2bd3f53d3628a49626d066558b039f8ae5ea656869b8c0e7013cbb",
+      "returncode": 1,
+      "runtime_seconds": 2.080728624947369,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/discard_alias_folding.py\", line 328, in <module>",
+        "    assert direct==folded.get(k,F(0))",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "mesh_too_coarse",
+      "family": "deterministic spatial scale",
+      "old": "mesh_power=2",
+      "new": "mesh_power=1",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/mesh_too_coarse.py",
+      "source_sha256": "f998fc7f20431d471603e3809074165880a6fbab027d7378ddf11a045be1edae",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/mesh_too_coarse.log",
+      "log_sha256": "584fb38465d29eae1c7b0651427f95709851c1318ae89d599487478fffdbbce9",
+      "returncode": 1,
+      "runtime_seconds": 2.0856549157761037,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/mesh_too_coarse.py\", line 357, in <module>",
+        "    assert mesh_power-1>=1",
+        "           ^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "name": "particle_count_too_small",
+      "family": "stopped failure scale",
+      "old": "q=19",
+      "new": "q=18",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/particle_count_too_small.py",
+      "source_sha256": "7aae4c0ce7856c77d0e1cfdbae5d243644ee9766b91c4b85cb64bd08f7f6677e",
+      "log_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/particle_count_too_small.log",
+      "log_sha256": "660a8b975926bd9d8a0bc1b79c92c772402a8ed4755f6a52ddcf11968fccb669",
+      "returncode": 1,
+      "runtime_seconds": 2.0680583752691746,
+      "timeout": false,
+      "scientific_assertion_detected": true,
+      "failure_tail": [
+        "Traceback (most recent call last):",
+        "  File \"/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/particle_count_too_small.py\", line 371, in <module>",
+        "    assert scales['L2_cell_stop']['hop_stopped_failure']==2",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    }
+  ],
+  "coverage_limit": "Scientific controls for finite checks. Detection does not certify the analytic theorem or audit status."
+}

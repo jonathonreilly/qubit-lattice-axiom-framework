@@ -1,0 +1,10 @@
+Exact partial-permutation channel controls: 288 complete matrix units, arbitrary off-diagonal inputs included.
+Exact collision port average: 256 microstates, 81 count fibers; both directions and all vacancy sectors.
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/hop_capacity_power.py", line 92, in <module>
+    check(actual == q*n[0]*(1-sp.Rational(n[1],K)), 'hop port capacity normalization')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/hop_capacity_power.py", line 32, in check
+    assert bool(ok), name
+           ~~~~^^^^
+AssertionError: hop port capacity normalization

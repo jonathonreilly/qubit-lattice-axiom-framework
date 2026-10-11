@@ -1,0 +1,18 @@
+primary_sha256=b23fbf74766b94b3cf9c0882392eee660fe917878c5f9b951c1f701dd131cf64
+mutant_sha256=a3763f15b66e47ab99fd26e98b088ef2c81408f7c54ea181f76448f7761b6aa2
+family=conservation through collision aliasing
+stdout:
+Supplied nonlinear particle/fluid finite controls; standard library only
+AUDIT_TIMEOUT_SEC=180
+checked: exact count rates at a realizable equilibrium state; both collision directions; volume, clock and quadratic-variation factors
+checked: exact nonlinear conditional drift at every species/cell of a nonuniform integer count state; no expectation closure
+checked: actual DFT jump energies for 288 collisions and 54 directed hops in H0,H3,H4
+checked: an admissible stopping overshoot and the exact dissipative complete square, including its sharp coefficient
+checked: positive mass-normalized preparation and full multinomial covariance versus independent Fourier trace
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/lose_microscopic_output.py", line 304, in <module>
+    assert all(sum(M[i]*inv[i]*out[i] for i in range(27))==0 for inv in invariants)
+           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

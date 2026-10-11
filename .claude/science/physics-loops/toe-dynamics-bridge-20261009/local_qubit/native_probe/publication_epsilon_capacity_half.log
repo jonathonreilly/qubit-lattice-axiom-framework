@@ -1,0 +1,24 @@
+Exact partial-permutation channel controls: 288 complete matrix units, arbitrary off-diagonal inputs included.
+Exact collision port average: 256 microstates, 81 count fibers; both directions and all vacancy sectors.
+Exact hop port average: 16 microstates, 9 fibers; rate q*K produces q*n_source*(1-n_target/K).
+Exact micro/count generator: 56 microstates, 16 count states; uniform fast fibers; averaged capacity rates; finite-rate non-lumping.
+Two-time averaging: {"T": 1.0, "nu": 16, "path_bound_using_integrated_mixing_le_1": 0.6111111111111112, "worst_two_time_TV": 0.043487227298979546}
+Two-time averaging: {"T": 1.0, "nu": 64, "path_bound_using_integrated_mixing_le_1": 0.1527777777777778, "worst_two_time_TV": 0.011124060118958931}
+Two-time averaging: {"T": 1.0, "nu": 256, "path_bound_using_integrated_mixing_le_1": 0.03819444444444445, "worst_two_time_TV": 0.0027939491863657843}
+Uniform collision-rate deficit bound checked on every four-count composition through N=9.
+Literal cubic tile: 288 plaquettes; 54 streaming ports; 27 disjoint compartments; K= 5867 active sites= 158409 all physical sites= 1528823808
+Native BFS geometry: maximum radius 1345 maximum diameter 2505 ; large-family size inequalities checked without allocating large cubes.
+Exact complete-graph Poincare controls: 21 fibers, K=2..7, all zero-mean functions.
+Exact route/congestion controls: 1441 labelled trees; endpoint routes: 20796
+Finite spectral controls: all fixed-occupation fibers in those trees; minimum gap*K*(2K-3) = 4.0
+Additional path/star/binary controls: 63 fibers, K=7..9; direct TV checked at six times.
+Exact integrated product control: one component 1/4, two components 5/16.
+Retained connectedness counterexample: two disjoint bonds, one particle, two zero modes; global-uniform mixing fails.
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/epsilon_capacity_half.py", line 400, in <module>
+    check(T0*Ccap/K0<=eps0/2,'capacity part of epsilon allocation')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/epsilon_capacity_half.py", line 32, in check
+    assert bool(ok), name
+           ~~~~^^^^
+AssertionError: capacity part of epsilon allocation

@@ -1,0 +1,14 @@
+primary_sha256=b23fbf74766b94b3cf9c0882392eee660fe917878c5f9b951c1f701dd131cf64
+mutant_sha256=4ce79d19acb351bca7af012d8f74584026053a90f8b984a14a4acfd11cde21ca
+family=exact conditional collision drift
+stdout:
+Supplied nonlinear particle/fluid finite controls; standard library only
+AUDIT_TIMEOUT_SEC=180
+checked: exact count rates at a realizable equilibrium state; both collision directions; volume, clock and quadratic-variation factors
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/collision_volume_drift.py", line 151, in <module>
+    assert actual_coll==[-Bh[i]/(delta*delta)+ghh[i]/delta for i in range(27)]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

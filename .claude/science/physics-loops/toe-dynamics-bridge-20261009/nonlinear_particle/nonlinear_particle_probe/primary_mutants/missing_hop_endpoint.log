@@ -1,0 +1,15 @@
+primary_sha256=b23fbf74766b94b3cf9c0882392eee660fe917878c5f9b951c1f701dd131cf64
+mutant_sha256=b561b8457566888cad7e49fd4f28f1b252ba4760166740c2df53ae2b622bf9a3
+family=two-cell hop energy
+stdout:
+Supplied nonlinear particle/fluid finite controls; standard library only
+AUDIT_TIMEOUT_SEC=180
+checked: exact count rates at a realizable equilibrium state; both collision directions; volume, clock and quadratic-variation factors
+checked: exact nonlinear conditional drift at every species/cell of a nonuniform integer count state; no expectation closure
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/missing_hop_endpoint.py", line 209, in <module>
+    assert exact==Hd[d]/(N*N*delta*delta*M[v])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

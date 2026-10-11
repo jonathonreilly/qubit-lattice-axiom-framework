@@ -1,0 +1,9 @@
+Exact partial-permutation channel controls: 288 complete matrix units, arbitrary off-diagonal inputs included.
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/collision_capacity_power.py", line 83, in <module>
+    check(dict(actual) == dict(expected), 'all-fiber collision count at '+str(n))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/collision_capacity_power.py", line 32, in check
+    assert bool(ok), name
+           ~~~~^^^^
+AssertionError: all-fiber collision count at (1, 1, 0, 0)

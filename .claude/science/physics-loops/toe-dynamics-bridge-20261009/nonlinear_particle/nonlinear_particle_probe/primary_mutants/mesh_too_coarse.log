@@ -1,0 +1,19 @@
+primary_sha256=b23fbf74766b94b3cf9c0882392eee660fe917878c5f9b951c1f701dd131cf64
+mutant_sha256=f998fc7f20431d471603e3809074165880a6fbab027d7378ddf11a045be1edae
+family=deterministic spatial scale
+stdout:
+Supplied nonlinear particle/fluid finite controls; standard library only
+AUDIT_TIMEOUT_SEC=180
+checked: exact count rates at a realizable equilibrium state; both collision directions; volume, clock and quadratic-variation factors
+checked: exact nonlinear conditional drift at every species/cell of a nonuniform integer count state; no expectation closure
+checked: actual DFT jump energies for 288 collisions and 54 directed hops in H0,H3,H4
+checked: an admissible stopping overshoot and the exact dissipative complete square, including its sharp coefficient
+checked: positive mass-normalized preparation and full multinomial covariance versus independent Fourier trace
+checked: actual quadratic alias against a direct cyclotomic DFT, cutoff distinction, complete principal-map geometry, and P Gamma=0 after aliasing
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/mesh_too_coarse.py", line 357, in <module>
+    assert mesh_power-1>=1
+           ^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,501 @@
+{
+  "baseline_sha256": "0a655a71047cae8fde331eba758ad91da08cc7f5cbaddac4b2335196a9f38f2a",
+  "mutations": [
+    {
+      "name": "offdiagonal_population_leak",
+      "before": "('directed bond', 4, {1:2})",
+      "after": "('directed bond', 4, {1:2,2:2})",
+      "expected_assertion": "off-diagonal unit feeds populations"
+    },
+    {
+      "name": "collision_capacity_power",
+      "before": "lam = base * K*K",
+      "after": "lam = base * K",
+      "expected_assertion": "all-fiber collision count"
+    },
+    {
+      "name": "collision_output_vacancy",
+      "before": "vacancy = (1-sp.Rational(n[k],K))*(1-sp.Rational(n[l],K))",
+      "after": "vacancy = 1",
+      "expected_assertion": "all-fiber collision count"
+    },
+    {
+      "name": "hop_capacity_power",
+      "before": "actual=sum((q*K for z in words",
+      "after": "actual=sum((q for z in words",
+      "expected_assertion": "hop port capacity normalization"
+    },
+    {
+      "name": "fast_fiber_bias",
+      "before": "A[i,ix[zz]]+=1; A[i,i]-=1",
+      "after": "rate=1+bit(z,2*a); A[i,ix[zz]]+=rate; A[i,i]-=rate",
+      "expected_assertion": "uniform fast-fiber stationarity"
+    },
+    {
+      "name": "count_generator_vacancy",
+      "before": "rate=base*n[i]*n[j]*(1-sp.Rational(n[k],K))*(1-sp.Rational(n[l],K))",
+      "after": "rate=base*n[i]*n[j]",
+      "expected_assertion": "actual averaged generator equals independent capacity-rate matrix"
+    },
+    {
+      "name": "finite_path_fast_rate",
+      "before": "E=expm((T/2)*(nu*An+Bn))",
+      "after": "E=expm((T/2)*Bn)",
+      "expected_assertion": "two-time count law uniformization control"
+    },
+    {
+      "name": "renewal_first_gap",
+      "before": "rate*sp.exp(-rate*u)*(1+rate*(t-u))",
+      "after": "rate*sp.exp(-rate*u)*(rate*(t-u))",
+      "expected_assertion": "Poisson renewal identity including the first waiting gap"
+    },
+    {
+      "name": "capacity_deficit_constant",
+      "before": "sp.Rational(total**3,16*cap)",
+      "after": "sp.Rational(total**3,32*cap)",
+      "expected_assertion": "collision capacity bound N^3/(16K)"
+    },
+    {
+      "name": "reaction_energy_key",
+      "before": "+(sum(t*t for t in V[i]+V[j]),)",
+      "after": "+()",
+      "expected_assertion": "collision preserves assigned momentum and kinetic energy"
+    },
+    {
+      "name": "collision_patch_range",
+      "before": "(4*r+2,3,0)]",
+      "after": "(4*r+4,3,0)]",
+      "expected_assertion": "collision patch diameter two"
+    },
+    {
+      "name": "streaming_translation",
+      "before": "shift[d]=velocity[d]*side",
+      "after": "shift[d]=velocity[d]*(side-1)",
+      "expected_assertion": "streaming is an actual nearest-neighbor bond across tiles"
+    },
+    {
+      "name": "native_tree_depth",
+      "before": "p=todo.popleft()",
+      "after": "p=todo.pop()",
+      "expected_assertion": "native tree is breadth-first for its actual coordinate graph"
+    },
+    {
+      "name": "complete_graph_gap",
+      "before": "factor=sp.Rational(2,K)",
+      "after": "factor=sp.Rational(1,2*K)",
+      "expected_assertion": "complete-graph Poincare positive-definite Gram"
+    },
+    {
+      "name": "tree_route_return",
+      "before": "return forward+forward[-2::-1]",
+      "after": "return forward",
+      "expected_assertion": "endpoint transposition routing must restore interior sites"
+    },
+    {
+      "name": "product_mixing_factor",
+      "before": "claimed=sp.Rational(5,16)",
+      "after": "claimed=sp.Rational(1,4)",
+      "expected_assertion": "integrated product TV differs from one-compartment TV"
+    },
+    {
+      "name": "epsilon_capacity_half",
+      "before": "ceil_fraction(2*T0*Ccap/eps0)",
+      "after": "ceil_fraction(T0*Ccap/eps0)",
+      "expected_assertion": "capacity part of epsilon allocation"
+    },
+    {
+      "name": "epsilon_mixing_half",
+      "before": "ceil_fraction(2*tau0*B0*(1+T0*B0)/eps0)",
+      "after": "ceil_fraction(tau0*B0*(1+T0*B0)/eps0)",
+      "expected_assertion": "mixing part of epsilon allocation"
+    },
+    {
+      "name": "stopped_collision_direction",
+      "before": "stopped_bound=8*omega**2*contribution/capacity_box",
+      "after": "stopped_bound=4*omega**2*contribution/capacity_box",
+      "expected_assertion": "stopped collision deficit includes both directions"
+    },
+    {
+      "name": "stopped_hop_dimensions",
+      "before": "sum(abs(x) for x in v)*weights[j]**2",
+      "after": "abs(v[0])*weights[j]**2",
+      "expected_assertion": "stopped hopping coefficient from actual equilibrium weights"
+    },
+    {
+      "name": "selective_quantum_instrument",
+      "before": "post=P@evolved@P",
+      "after": "post=evolved",
+      "expected_assertion": "actual quantum selective count-instrument joint law"
+    },
+    {
+      "name": "inactive_factor_readout",
+      "before": "np.kron(np.diag((count_A==n).astype(float)),np.eye(2))",
+      "after": "np.kron(np.diag((count_A==n).astype(float)),np.diag([1,0]))",
+      "expected_assertion": "actual quantum selective count-instrument joint law"
+    },
+    {
+      "name": "nonlinear_resource_denominator",
+      "before": "collision_exit=Km**2*cm/(Nm*wm**2)",
+      "after": "collision_exit=Km**2*cm/(wm**2)",
+      "expected_assertion": "stopped nonlinear resource exponent substitution"
+    },
+    {
+      "name": "stopped_capacity_allocation",
+      "before": "ceil_fraction(2*local_upper/accuracy**2)",
+      "after": "ceil_fraction(local_upper/accuracy**2)",
+      "expected_assertion": "stopped resource capacity allocation"
+    }
+  ],
+  "executions": [
+    {
+      "name": "baseline",
+      "source": "root_qubit_port_primary.py",
+      "source_sha256": "0a655a71047cae8fde331eba758ad91da08cc7f5cbaddac4b2335196a9f38f2a",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/root_qubit_port_primary.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.5353784170001745,
+      "expected_assertion": null,
+      "intended_result": true,
+      "log": "native_probe/publication_baseline.log"
+    },
+    {
+      "name": "offdiagonal_population_leak",
+      "source": "native_probe/publication_mutants/offdiagonal_population_leak.py",
+      "source_sha256": "37e9da4f3fb07fd2f5121b216cd1b3151e9ba5dff5d5a1d375954888578e0048",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/offdiagonal_population_leak.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.3167257090099156,
+      "expected_assertion": "off-diagonal unit feeds populations",
+      "intended_result": true,
+      "log": "native_probe/publication_offdiagonal_population_leak.log"
+    },
+    {
+      "name": "collision_capacity_power",
+      "source": "native_probe/publication_mutants/collision_capacity_power.py",
+      "source_sha256": "dcd5c8ddec70255b420b589ef8ab47d9ddfe21191aef583231ce32cedbbe7d49",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/collision_capacity_power.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.3182645416818559,
+      "expected_assertion": "all-fiber collision count",
+      "intended_result": true,
+      "log": "native_probe/publication_collision_capacity_power.log"
+    },
+    {
+      "name": "collision_output_vacancy",
+      "source": "native_probe/publication_mutants/collision_output_vacancy.py",
+      "source_sha256": "3cc8a79e4a3ab7a2ccf8889ee18711a3dc8e2aee76f0cc92de16b82d150d691e",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/collision_output_vacancy.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.3198204590007663,
+      "expected_assertion": "all-fiber collision count",
+      "intended_result": true,
+      "log": "native_probe/publication_collision_output_vacancy.log"
+    },
+    {
+      "name": "hop_capacity_power",
+      "source": "native_probe/publication_mutants/hop_capacity_power.py",
+      "source_sha256": "1c17d107b80f8ae27a0854a84d02d5b389ff739710ace6e820abe7b9eb5471e3",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/hop_capacity_power.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.3194010001607239,
+      "expected_assertion": "hop port capacity normalization",
+      "intended_result": true,
+      "log": "native_probe/publication_hop_capacity_power.log"
+    },
+    {
+      "name": "fast_fiber_bias",
+      "source": "native_probe/publication_mutants/fast_fiber_bias.py",
+      "source_sha256": "da2be109ad146f16ce2748a4bf1e9c9d551937181f5f050546d868a32a3813c1",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/fast_fiber_bias.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.3194672907702625,
+      "expected_assertion": "uniform fast-fiber stationarity",
+      "intended_result": true,
+      "log": "native_probe/publication_fast_fiber_bias.log"
+    },
+    {
+      "name": "count_generator_vacancy",
+      "source": "native_probe/publication_mutants/count_generator_vacancy.py",
+      "source_sha256": "04a830c8cffd56b217e4bf31f3dbceb24c5b25d417a776fc4eda2ada86d01149",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/count_generator_vacancy.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.3197788749821484,
+      "expected_assertion": "actual averaged generator equals independent capacity-rate matrix",
+      "intended_result": true,
+      "log": "native_probe/publication_count_generator_vacancy.log"
+    },
+    {
+      "name": "finite_path_fast_rate",
+      "source": "native_probe/publication_mutants/finite_path_fast_rate.py",
+      "source_sha256": "1819030e66f929ac38af485c435f743c67d9c99370c559da1c4be16381aec19c",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/finite_path_fast_rate.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.31633158400654793,
+      "expected_assertion": "two-time count law uniformization control",
+      "intended_result": true,
+      "log": "native_probe/publication_finite_path_fast_rate.log"
+    },
+    {
+      "name": "renewal_first_gap",
+      "source": "native_probe/publication_mutants/renewal_first_gap.py",
+      "source_sha256": "4a312d7398c929129a08dd962ef6a127ca6c70c57899d3688f732a235dd7bfae",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/renewal_first_gap.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.4345660423859954,
+      "expected_assertion": "Poisson renewal identity including the first waiting gap",
+      "intended_result": true,
+      "log": "native_probe/publication_renewal_first_gap.log"
+    },
+    {
+      "name": "capacity_deficit_constant",
+      "source": "native_probe/publication_mutants/capacity_deficit_constant.py",
+      "source_sha256": "0b3861a3428102ffca1c4edf36eaa1831744ee673ff525d785cecfa6c82227c4",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/capacity_deficit_constant.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.3816952919587493,
+      "expected_assertion": "collision capacity bound N^3/(16K)",
+      "intended_result": true,
+      "log": "native_probe/publication_capacity_deficit_constant.log"
+    },
+    {
+      "name": "reaction_energy_key",
+      "source": "native_probe/publication_mutants/reaction_energy_key.py",
+      "source_sha256": "3daa7c2a4f236f43da734938458f46efaafe08c421ff6e211eb6c92bab1d20b4",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/reaction_energy_key.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.4348028339445591,
+      "expected_assertion": "collision preserves assigned momentum and kinetic energy",
+      "intended_result": true,
+      "log": "native_probe/publication_reaction_energy_key.log"
+    },
+    {
+      "name": "collision_patch_range",
+      "source": "native_probe/publication_mutants/collision_patch_range.py",
+      "source_sha256": "ce58e07fed2b8026d5ebd88908cb7cde81025730b00b25c8aa3267718b637e91",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/collision_patch_range.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.43111141584813595,
+      "expected_assertion": "collision patch diameter two",
+      "intended_result": true,
+      "log": "native_probe/publication_collision_patch_range.log"
+    },
+    {
+      "name": "streaming_translation",
+      "source": "native_probe/publication_mutants/streaming_translation.py",
+      "source_sha256": "4cab63f22ca80bc8b0f42fb56e833dd3e2ababa35f0b6631f21b2c63aed2d3ba",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/streaming_translation.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.8827859172597528,
+      "expected_assertion": "streaming is an actual nearest-neighbor bond across tiles",
+      "intended_result": true,
+      "log": "native_probe/publication_streaming_translation.log"
+    },
+    {
+      "name": "native_tree_depth",
+      "source": "native_probe/publication_mutants/native_tree_depth.py",
+      "source_sha256": "9f7d749d4dbd15eaf52d4edd7a7f411ce923cc28d423e5f78c8ebdcdd1e48801",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/native_tree_depth.py"
+      ],
+      "exit_code": 1,
+      "seconds": 0.9028641250915825,
+      "expected_assertion": "native tree is breadth-first for its actual coordinate graph",
+      "intended_result": true,
+      "log": "native_probe/publication_native_tree_depth.log"
+    },
+    {
+      "name": "complete_graph_gap",
+      "source": "native_probe/publication_mutants/complete_graph_gap.py",
+      "source_sha256": "d15c48ee8d1a9d7aaf1caf29db1a4a56efcbee2d4ffffb32767871728d01f1e6",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/complete_graph_gap.py"
+      ],
+      "exit_code": 1,
+      "seconds": 1.4380042091943324,
+      "expected_assertion": "complete-graph Poincare positive-definite Gram",
+      "intended_result": true,
+      "log": "native_probe/publication_complete_graph_gap.log"
+    },
+    {
+      "name": "tree_route_return",
+      "source": "native_probe/publication_mutants/tree_route_return.py",
+      "source_sha256": "b62cc2ce2d7a2a8bac9daee335b20a535c7539980b7e86fae39bc0b40b25a621",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/tree_route_return.py"
+      ],
+      "exit_code": 1,
+      "seconds": 1.6184561252593994,
+      "expected_assertion": "endpoint transposition routing must restore interior sites",
+      "intended_result": true,
+      "log": "native_probe/publication_tree_route_return.log"
+    },
+    {
+      "name": "product_mixing_factor",
+      "source": "native_probe/publication_mutants/product_mixing_factor.py",
+      "source_sha256": "8149414d995ae17724d7fca3b6ccffc62c6c37a631b064c2848dcff78b844e27",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/product_mixing_factor.py"
+      ],
+      "exit_code": 1,
+      "seconds": 2.0971357077360153,
+      "expected_assertion": "integrated product TV differs from one-compartment TV",
+      "intended_result": true,
+      "log": "native_probe/publication_product_mixing_factor.log"
+    },
+    {
+      "name": "epsilon_capacity_half",
+      "source": "native_probe/publication_mutants/epsilon_capacity_half.py",
+      "source_sha256": "ba5d0c7619b11b2ec2dc6f88c328ab204d066326abd56dc993032123e528e1b7",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/epsilon_capacity_half.py"
+      ],
+      "exit_code": 1,
+      "seconds": 2.0846996661275625,
+      "expected_assertion": "capacity part of epsilon allocation",
+      "intended_result": true,
+      "log": "native_probe/publication_epsilon_capacity_half.log"
+    },
+    {
+      "name": "epsilon_mixing_half",
+      "source": "native_probe/publication_mutants/epsilon_mixing_half.py",
+      "source_sha256": "308cd83db24ef9d1cfe31b9088f511386fc4d68f55763c825a23543f449de8fa",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/epsilon_mixing_half.py"
+      ],
+      "exit_code": 1,
+      "seconds": 2.029614625032991,
+      "expected_assertion": "mixing part of epsilon allocation",
+      "intended_result": true,
+      "log": "native_probe/publication_epsilon_mixing_half.log"
+    },
+    {
+      "name": "stopped_collision_direction",
+      "source": "native_probe/publication_mutants/stopped_collision_direction.py",
+      "source_sha256": "7a85e114bf031a8ca783468c861bb2d9a3bf5806733d4b90230ffc1338dac4e1",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/stopped_collision_direction.py"
+      ],
+      "exit_code": 1,
+      "seconds": 2.0591517500579357,
+      "expected_assertion": "stopped collision deficit includes both directions",
+      "intended_result": true,
+      "log": "native_probe/publication_stopped_collision_direction.log"
+    },
+    {
+      "name": "stopped_hop_dimensions",
+      "source": "native_probe/publication_mutants/stopped_hop_dimensions.py",
+      "source_sha256": "f47a6c94af58b26455774c4cc526e107312b179afb5a381e7bfcf37241de2f3e",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/stopped_hop_dimensions.py"
+      ],
+      "exit_code": 1,
+      "seconds": 2.2908029998652637,
+      "expected_assertion": "stopped hopping coefficient from actual equilibrium weights",
+      "intended_result": true,
+      "log": "native_probe/publication_stopped_hop_dimensions.log"
+    },
+    {
+      "name": "selective_quantum_instrument",
+      "source": "native_probe/publication_mutants/selective_quantum_instrument.py",
+      "source_sha256": "83ea6770c6e90d309769964d9aad18f21610f0664c999535b70692fe91a93c6a",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/selective_quantum_instrument.py"
+      ],
+      "exit_code": 1,
+      "seconds": 2.4947660830803216,
+      "expected_assertion": "actual quantum selective count-instrument joint law",
+      "intended_result": true,
+      "log": "native_probe/publication_selective_quantum_instrument.log"
+    },
+    {
+      "name": "inactive_factor_readout",
+      "source": "native_probe/publication_mutants/inactive_factor_readout.py",
+      "source_sha256": "0edb389f5ab0b802e579952b59d0df2f21a6b1171eacc6fda7b7fc8d73694983",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/inactive_factor_readout.py"
+      ],
+      "exit_code": 1,
+      "seconds": 2.3063603746704757,
+      "expected_assertion": "actual quantum selective count-instrument joint law",
+      "intended_result": true,
+      "log": "native_probe/publication_inactive_factor_readout.log"
+    },
+    {
+      "name": "nonlinear_resource_denominator",
+      "source": "native_probe/publication_mutants/nonlinear_resource_denominator.py",
+      "source_sha256": "43630121272785ab44d9c5142a07ff1e26627614c71eceb54e910b6274a2651b",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/nonlinear_resource_denominator.py"
+      ],
+      "exit_code": 1,
+      "seconds": 2.330472500063479,
+      "expected_assertion": "stopped nonlinear resource exponent substitution",
+      "intended_result": true,
+      "log": "native_probe/publication_nonlinear_resource_denominator.log"
+    },
+    {
+      "name": "stopped_capacity_allocation",
+      "source": "native_probe/publication_mutants/stopped_capacity_allocation.py",
+      "source_sha256": "7786f3276c92c3d42e9cd5bfa3737c0c7896025c7a84f533a06365aa8b681a0f",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/stopped_capacity_allocation.py"
+      ],
+      "exit_code": 1,
+      "seconds": 2.4829840413294733,
+      "expected_assertion": "stopped resource capacity allocation",
+      "intended_result": true,
+      "log": "native_probe/publication_stopped_capacity_allocation.log"
+    }
+  ]
+}

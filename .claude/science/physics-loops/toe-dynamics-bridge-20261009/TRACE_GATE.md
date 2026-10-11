@@ -11,12 +11,12 @@ remain premises. No physical theory is inferred from a supplied-model theorem.
 - trace_class: upstream_support
 - reachability_to_target: supports
 - artifact_role: theorem
-- next_trace_action: complete particle-to-nonlinear-fluid composition and test
-  local qubit realization with useful finite-resource bounds.
+- next_trace_action: publish the checked particle/qubit composition, then finish
+  independent checks of the excluded-walk threshold and finite-time current.
 
-The cutoff/L2 particle proof has a separate analytical check; final publication
-source and primary runner review remain pending. The qubit port construction and
-its polynomial exclusion-mixing bound are provisional. Current-source route
+The cutoff/L2 particle proof, literal local-qubit construction, polynomial
+exclusion mixing and stopped nonlinear composition now have separate final
+source checks. Their supplied physical interfaces remain explicit. Current-source route
 selection and evidence limits are recorded in HANDOFF.md and OPPORTUNITY_QUEUE.md.
 
 ## Preserved prior milestone trace

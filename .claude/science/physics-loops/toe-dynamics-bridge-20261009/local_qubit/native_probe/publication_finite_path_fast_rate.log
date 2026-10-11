@@ -1,0 +1,12 @@
+Exact partial-permutation channel controls: 288 complete matrix units, arbitrary off-diagonal inputs included.
+Exact collision port average: 256 microstates, 81 count fibers; both directions and all vacancy sectors.
+Exact hop port average: 16 microstates, 9 fibers; rate q*K produces q*n_source*(1-n_target/K).
+Exact micro/count generator: 56 microstates, 16 count states; uniform fast fibers; averaged capacity rates; finite-rate non-lumping.
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/finite_path_fast_rate.py", line 145, in <module>
+    check(error <= bound+1e-12,'two-time count law uniformization control')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/finite_path_fast_rate.py", line 32, in check
+    assert bool(ok), name
+           ~~~~^^^^
+AssertionError: two-time count law uniformization control

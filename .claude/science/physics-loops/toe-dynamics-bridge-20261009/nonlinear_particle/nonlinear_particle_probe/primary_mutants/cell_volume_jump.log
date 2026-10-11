@@ -1,0 +1,15 @@
+primary_sha256=b23fbf74766b94b3cf9c0882392eee660fe917878c5f9b951c1f701dd131cf64
+mutant_sha256=00e73bee0b7715ff617f35f67e296a54b203c2452da2a6e24ee47785a3aa7c0c
+family=point-jump normalization
+stdout:
+Supplied nonlinear particle/fluid finite controls; standard library only
+AUDIT_TIMEOUT_SEC=180
+checked: exact count rates at a realizable equilibrium state; both collision directions; volume, clock and quadratic-variation factors
+checked: exact nonlinear conditional drift at every species/cell of a nonuniform integer count state; no expectation closure
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/cell_volume_jump.py", line 198, in <module>
+    assert exact==Ks*Jr/(N*N*delta*delta)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

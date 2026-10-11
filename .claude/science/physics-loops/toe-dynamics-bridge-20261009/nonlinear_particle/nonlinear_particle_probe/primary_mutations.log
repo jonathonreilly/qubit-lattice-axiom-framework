@@ -1,0 +1,22 @@
+{
+  "primary_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/root_nonlinear_particle_primary.py",
+  "primary_sha256": "b23fbf74766b94b3cf9c0882392eee660fe917878c5f9b951c1f701dd131cf64",
+  "python": "3.13.5",
+  "runtime_seconds": 4.610486583784223,
+  "mutant_count": 13,
+  "detected_count": 13,
+  "coverage_limit": "Scientific controls for finite checks. Detection does not certify the analytic theorem or audit status."
+}
+cell_volume_jump: returncode=1 assertion_detected=True
+missing_hop_endpoint: returncode=1 assertion_detected=True
+double_collision_rate: returncode=1 assertion_detected=True
+collision_volume_drift: returncode=1 assertion_detected=True
+hop_clock_drift: returncode=1 assertion_detected=True
+clip_exit_energy: returncode=1 assertion_detected=True
+halve_drift_coefficient: returncode=1 assertion_detected=True
+preparation_volume: returncode=1 assertion_detected=True
+drop_multinomial_covariance: returncode=1 assertion_detected=True
+lose_microscopic_output: returncode=1 assertion_detected=True
+discard_alias_folding: returncode=1 assertion_detected=True
+mesh_too_coarse: returncode=1 assertion_detected=True
+particle_count_too_small: returncode=1 assertion_detected=True

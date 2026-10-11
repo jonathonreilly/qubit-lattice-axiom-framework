@@ -136,3 +136,50 @@ checks are in DELIVERY_CHECKS.md and do not claim unrun global landing gates.
 The raw packaging diff is losslessly compressed to preserve its context spaces;
 its decompressed source hash remains recorded. This is an evidence-container
 change, not a proof or runner edit. No failed finite control was discarded.
+
+
+## Particle and local-qubit milestone, 2026-10-11
+
+The final particle proof and primary were read completely by root and a
+separate reviewer, including all projected compatibility, cutoff aliasing,
+deterministic continuation, exact multinomial normalization, nonlinear stopped
+energy, actual jump brackets, overshoots and the explicit scale. Its two
+separately implemented finite helpers and all mutation substitutions were read.
+The selected proof is the principal-cutoff route; the stronger-regularity direct
+sampling draft is preserved as a distinct abandoned publication route.
+
+The final qubit proof and primary were read completely by root and a separate
+reviewer. The new proof gives literal coordinate geometry, partial-permutation
+population closure, polynomial exclusion mixing, a Poisson-clock whole-path
+comparison and finite capacity errors. Root derived the nonlinear composition
+and improved it by using the target's pre-stop population envelope only for the
+capacity coupling. Both other agents reconstructed that refinement. The global
+fast-mixing comparison remains unchanged. Target exit is charged once.
+
+The qubit reviewer authored the inherited particle theorem and explicitly does
+not count its reuse as an independent particle proof. Its held-out geometry,
+exact nonuniform deficit calculation, different quantum semigroup/instrument
+fixture and Poisson-renewal coefficient derivation are separately implemented.
+All are preserved with full source/output in the compressed raw review. A final
+wording change specifies inert qubit factors without suggesting their occupied
+state; reverse replacement exactly recovers the fully reviewed previous bytes.
+
+Thirteen particle and twenty-four qubit actual source mutations fail at their
+intended mathematical assertions. Root reconstructed each altered source from
+the exact manifest replacement and verified recorded hashes and raw failures.
+No redundant mutant source copies or massive geometry dump are shipped. Raw
+report compression is lossless, with gzip mtime zero and decompressed hashes.
+Neither author replay nor mutation count is independent analytic evidence.
+
+Milestone conformance, sections 1–12: (1) every parent is carried by #9473 or
+this delta, with parent-first landing or combined review explicit; (2) final
+primary inputs/timeouts and canonical caches are fresh; (3) source/recovery
+claim scopes agree; (4) positive conditional units, no universal negative claim;
+(5) smooth lifetime, preparation, stopping, local geometry, clocks, capacity and
+ideal instruments are named; (6) finite families have actual mutations and
+selective independent checks; (7) primaries are self-contained and raw review
+helpers are not hidden primary dependencies; (8) local links and graph topology
+are verified in delivery; (9) status/trace/import fields are explicit; (10) no
+author audit verdict or main merge; (11) hashes/counts are regenerated from
+actual sources; (12) focused delivery checks do not claim unrun shared/global
+landing gates. No Lean execution, editable prompt change or axiom adoption.

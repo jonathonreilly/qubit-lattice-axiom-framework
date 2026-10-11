@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/offdiagonal_population_leak.py", line 58, in <module>
+    check(not any(diag_twice), title + ': off-diagonal unit feeds populations')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/offdiagonal_population_leak.py", line 32, in check
+    assert bool(ok), name
+           ~~~~^^^^
+AssertionError: directed bond: off-diagonal unit feeds populations

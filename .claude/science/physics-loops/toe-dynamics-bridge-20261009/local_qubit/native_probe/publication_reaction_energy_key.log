@@ -1,0 +1,16 @@
+Exact partial-permutation channel controls: 288 complete matrix units, arbitrary off-diagonal inputs included.
+Exact collision port average: 256 microstates, 81 count fibers; both directions and all vacancy sectors.
+Exact hop port average: 16 microstates, 9 fibers; rate q*K produces q*n_source*(1-n_target/K).
+Exact micro/count generator: 56 microstates, 16 count states; uniform fast fibers; averaged capacity rates; finite-rate non-lumping.
+Two-time averaging: {"T": 1.0, "nu": 16, "path_bound_using_integrated_mixing_le_1": 0.6111111111111112, "worst_two_time_TV": 0.043487227298979546}
+Two-time averaging: {"T": 1.0, "nu": 64, "path_bound_using_integrated_mixing_le_1": 0.1527777777777778, "worst_two_time_TV": 0.011124060118958931}
+Two-time averaging: {"T": 1.0, "nu": 256, "path_bound_using_integrated_mixing_le_1": 0.03819444444444445, "worst_two_time_TV": 0.0027939491863657843}
+Uniform collision-rate deficit bound checked on every four-count composition through N=9.
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/reaction_energy_key.py", line 171, in <module>
+    check(all(V[ab[0]][d]+V[ab[1]][d]==V[cd[0]][d]+V[cd[1]][d] for d in range(3)) and sum(t*t for a in ab for t in V[a])==sum(t*t for a in cd for t in V[a]), 'collision preserves assigned momentum and kinetic energy')
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_mutants/reaction_energy_key.py", line 32, in check
+    assert bool(ok), name
+           ~~~~^^^^
+AssertionError: collision preserves assigned momentum and kinetic energy

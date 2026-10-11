@@ -1,0 +1,8 @@
+reactions 288 ; trace B for rational test rates 12259/216
+pre-stop count state: m 3 N 11943936 delta 1/1024 ; norm2/threshold2 65/256
+exact hopping and collision conditional drifts agree; all jump norms and both bracket bounds checked
+one-draw and multinomial L2 variances agree for nonuniform preparation; omitted cell-weight controls fail
+overshoot witness: N 5971968 increment 1 squared exit ratio 2
+alias witnesses: uncorrected mass 1025/1024 corrected mass 1 squared Taylor residual 3 squared interpolation error 3/2
+delta powers for N>=delta^-19: {'initial': 5, 'hopping': 2, 'collision': 3}
+scope: exact finite drift, normalization, variance, jump and alias witnesses; no stochastic path theorem is inferred from samples

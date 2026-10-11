@@ -1,0 +1,10 @@
+integer alias fibers (m,max noncentral): [(3, 7), (5, 7), (7, 7), (9, 7)]
+geometric axial count: 9 ; C_R and S coefficients of (1,alpha): [Fraction(124, 3), Fraction(4, 3)] [Fraction(97, 432), Fraction(1, 54)]
+exact nonzero quadratic alias H4 energy: 14413447/3888
+exact alias/tail H4 energy ratio: 115307576/11460600347
+tail H4 and sigma^2 H6 bounds agree; all five aliased collision moments vanish
+cutoff preparation velocity sums: -27/2 1
+actual cell interpolation quadrature: 0.1253040270918262
+separate integrated phase expression: 0.1253040340511967
+absolute quadrature discrepancy: 6.96e-09
+scope: finite exact alias witnesses and scalar quadrature; analytic all-grid bounds require the written proof

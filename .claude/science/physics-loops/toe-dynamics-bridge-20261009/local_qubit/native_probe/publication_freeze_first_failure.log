@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/native_probe/publication_freeze.py", line 22, in <module>
+    else:assert row['exit_code']==1 and 'AssertionError: '+row['expected_assertion'] in log
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

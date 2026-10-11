@@ -1,6 +1,6 @@
 {
- "edge_count": 15427,
- "node_count": 6875,
+ "edge_count": 15435,
+ "node_count": 6877,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13686,6 +13686,10 @@
    "deps_hash": "cd53a40964b7",
    "out_degree": 2
   },
+  "local_qubit_port_realization_with_polynomial_mixing_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "d72f61168091",
+   "out_degree": 4
+  },
   "local_record_quench_finite_energy_and_ground_overlap_bounded_theorem_note_2026-09-04": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -19105,6 +19109,10 @@
   "spatial_particle_to_linear_fluid_limit_bounded_theorem_note_2026-10-09": {
    "deps_hash": "02ebe8292279",
    "out_degree": 3
+  },
+  "spatial_particle_to_nonlinear_fluid_limit_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "a3e32f4a3838",
+   "out_degree": 4
   },
   "spatial_particles_and_nonlinear_kinetic_limit_bounded_theorem_note_2026-10-09": {
    "deps_hash": "3fde0a4e6afc",

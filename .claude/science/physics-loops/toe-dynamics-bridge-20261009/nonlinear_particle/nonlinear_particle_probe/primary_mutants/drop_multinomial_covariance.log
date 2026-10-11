@@ -1,0 +1,17 @@
+primary_sha256=b23fbf74766b94b3cf9c0882392eee660fe917878c5f9b951c1f701dd131cf64
+mutant_sha256=595aeec558d01d0a4f6c6e57dc320c99815d1f77684a1f036cc489fe6fa963d3
+family=multinomial covariance trace
+stdout:
+Supplied nonlinear particle/fluid finite controls; standard library only
+AUDIT_TIMEOUT_SEC=180
+checked: exact count rates at a realizable equilibrium state; both collision directions; volume, clock and quadratic-variation factors
+checked: exact nonlinear conditional drift at every species/cell of a nonuniform integer count state; no expectation closure
+checked: actual DFT jump energies for 288 collisions and 54 directed hops in H0,H3,H4
+checked: an admissible stopping overshoot and the exact dissipative complete square, including its sharp coefficient
+
+stderr:
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/nonlinear_particle_probe/primary_mutants/drop_multinomial_covariance.py", line 286, in <module>
+    assert direct==spectral
+           ^^^^^^^^^^^^^^^^
+AssertionError

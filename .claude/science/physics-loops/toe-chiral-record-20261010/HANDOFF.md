@@ -173,14 +173,24 @@ sum equals 48. Five bonds on `e_z` from `(-2, -1, 3)` have determinant
 `8` against the three caps. Neither cross is a linear combination of
 those caps. Runner `PASS=10 FAIL=0`.
 
+Cycle 20. On the same alphabet the matched and swapped transverse
+crosses at absolute heights 1 and 2 are bond-symmetric and soldered.
+At coefficient `1/2` each factor takes values `1/2`, `1`, and `3/2`.
+Each record meets at most one live direction of that cross and every
+left slice sums to 0, so every neighbour product has mean 1. Every
+far-end sum equals 48. Nine bonds on `e_z` have determinant `8` in
+the five height-3 columns followed by these four crosses. Each
+lower-height cross is nonzero where the other eight kernels vanish, so
+none is a linear combination of the five. Runner `PASS=10 FAIL=0`.
+
 ## Next exact action
 
 Ask whether a strictly positive order-blind factor on the 48-point
-chiral pair lies outside the span of the three caps and the two
-transverse crosses. Do not repeat the dimension count. Do not return
-to the modulus-3 triple. Do not invent a formation rate. Do not return
-to shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
-alphabets.
+chiral pair lies outside the span of the five height-3 kernels and
+these four lower-height crosses. Do not repeat the dimension count.
+Do not return to the modulus-3 triple. Do not invent a formation rate.
+Do not return to shells, plaquette corner weights, or the `(0,1,2)`
+and `(1,1,2)` alphabets.
 
 ## Cleanup
 

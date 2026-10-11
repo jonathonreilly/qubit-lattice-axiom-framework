@@ -369,3 +369,24 @@ positive, and every neighbour product has mean 1. Five bonds from
 `(-2, -1, 3)` have determinant `8`, so neither cross is a linear
 combination of the three caps. A factor outside those five kernels
 stays open. The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 20
+
+claim_id: chiral_pair_lower_height_crosses_outside_five_kernels_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); matched and swapped crosses at absolute heights 1 and 2; coefficient 1/2
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: Theorem 2's converse is applied to each family. Far-end sum 1 is the chiral-pair bond note. No formation rate is used.
+
+Each lower-height transverse cross at coefficient `1/2` is strictly
+positive, and every neighbour product has mean 1. Nine bonds on `e_z`
+have determinant `8`, so none of the four crosses is a linear
+combination of the five height-3 kernels. A factor outside those nine
+kernels stays open. The 300-dimensional affine space is not classified.

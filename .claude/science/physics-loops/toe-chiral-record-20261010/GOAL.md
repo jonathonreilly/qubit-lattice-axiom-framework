@@ -50,4 +50,8 @@ combination of the two exhibited caps. Cycle 19 shows that the matched
 and swapped transverse crosses on the caps `a·d = 3` and `b·d = -3`,
 at coefficient `1/2`, each have neighbour-product mean 1. Five bonds
 from `(-2, -1, 3)` give determinant `8`, so neither cross lies in the
-span of the three caps.
+span of the three caps. Cycle 20 shows that the matched and swapped
+transverse crosses at absolute heights 1 and 2, at coefficient `1/2`,
+each have neighbour-product mean 1. Nine bonds on `e_z` give
+determinant `8`, so none of those four crosses lies in the span of the
+five height-3 kernels.

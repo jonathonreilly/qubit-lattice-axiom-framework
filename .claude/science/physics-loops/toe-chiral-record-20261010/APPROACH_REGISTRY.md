@@ -170,3 +170,15 @@ Family used: the matched and swapped transverse crosses on
 Family not used: a factor outside the span of those two crosses and
 the three caps. That remains open. The 300-dimensional affine space
 is not this family.
+
+Cycle 20 target contract: whether a strictly positive order-blind
+factor on the 48-point chiral pair lies outside the span of the five
+height-3 kernels.
+
+Family used: the matched and swapped transverse crosses at absolute
+heights 1 and 2, at coefficient `1/2`, with nine bonds on `e_z`.
+
+Family not used: a factor outside the span of those four crosses and
+the five height-3 kernels. That remains open. The 300-dimensional
+affine space is not this family. A sum across heights is not this
+family.

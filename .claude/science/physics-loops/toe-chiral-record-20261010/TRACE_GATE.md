@@ -300,3 +300,19 @@ next_trace_action: "Ask whether a strictly positive order-blind factor on the 48
 The determinant `8` prunes the reading that either height-3 transverse
 cross lies in the span of the three caps. A factor outside those five
 kernels stays outside this ansatz.
+
+## Cycle 20
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Ask whether a strictly positive order-blind factor on the 48-point chiral pair lies outside the span of the five height-3 kernels and these four crosses. Do not repeat the dimension count."
+```
+
+The determinant `8` prunes the reading that any of the four
+lower-height crosses lies in the span of the five height-3 kernels. A
+factor outside those nine kernels stays outside this ansatz.

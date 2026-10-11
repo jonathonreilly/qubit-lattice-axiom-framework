@@ -361,3 +361,13 @@ and every nonzero coefficient has partner rank 10. The maximal-minor gcd
 is a nonzero multiple of the cube of the chirality coefficient. The
 scaled coordinate is 4. Twice the cap of the other span is not in this
 count. The ten-kernel coefficient span is not classified.
+Cycle 62 shows that one swapped-dot generator plus twice the cap of the
+other ratio span has partner rank 10 at every chirality coefficient on
+every ordered height pair. The plus-dot sum has swapped-dot coordinate
+1 and scaled coordinate 4. The minus-dot sum has swapped-dot coordinate
+-1 and scaled coordinate 4. Neither sum lies in the even space or in
+either ratio span. The two sums are linearly independent. The
+maximal-minor gcd is a nonzero constant. The pivot minors at the ten
+sample coefficients do not have a constant gcd. Both swapped-dot
+generators plus twice the cap of one ratio span are not in this count.
+The ten-kernel coefficient span is not classified.

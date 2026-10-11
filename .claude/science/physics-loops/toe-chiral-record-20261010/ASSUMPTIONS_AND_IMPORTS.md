@@ -652,3 +652,10 @@
 - The maximal-minor gcd is a cube of the chirality coefficient. A kernel cross sum is not an alphabet mean.
 - The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 62
+
+- The ansatz is one swapped-dot generator plus twice the cap of the other ratio span, on every ordered height pair. Each sum lies in neither ratio span and outside the even space. Every chirality coefficient has partner rank 10. Both swapped-dot generators plus twice the cap of one ratio span are not in this count.
+- The maximal-minor gcd is a nonzero constant in the chirality coefficient. The pivot minors at 0, 1, -1, -1/2, 1/2, 3/2, 5/2, 2, -2, and -2/3 are not this certificate. A kernel cross sum is not an alphabet mean.
+- The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

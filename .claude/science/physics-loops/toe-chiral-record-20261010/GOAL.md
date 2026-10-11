@@ -110,4 +110,11 @@ exactly when one of the two vectors is 0. The matched kernel at height
 1 with the zero vector at height 2 passes. The matched kernels at
 heights 1 and 2 have witness mean `47/48`. A vector that also has a
 parity-span component is outside that ansatz. The ten-kernel
+coefficient span is not classified. Cycle 31 settles each plane
+spanned by one parity kernel and one excluded kernel. The twenty
+planes other than oblique plus matched have a nonzero partner only
+when one coefficient is 0. Oblique plus matched has a three-dimensional
+partner kernel at ratios `1` and `-1`. The same vector passes at
+heights 1 and 2 and has witness cross sum `-4` at heights 1 and 3.
+A sum of two parity kernels is outside that ansatz. The ten-kernel
 coefficient span is not classified.

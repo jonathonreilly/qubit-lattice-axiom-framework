@@ -493,3 +493,21 @@ excluded three-kernel span. A nonzero vector there pairs only with the
 zero vector. The witness mean is `47/48`. A vector that also has a
 parity-span component stays outside this ansatz. The ten-kernel
 coefficient span stays open.
+
+## Cycle 31
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether a vector with two or more nonzero parity-kernel coefficients and a nonzero excluded coefficient can pair with a nonzero ten-kernel vector and still have every cross moment equal to 0. Do not claim the ten-kernel coefficient span is settled."
+```
+
+The twenty planes other than oblique plus matched have full partner
+rank whenever both coefficients are nonzero. The oblique-matched plane
+has a three-dimensional partner kernel at ratios `1` and `-1`. A sum
+of two parity kernels stays outside this ansatz. The ten-kernel
+coefficient span stays open.

@@ -358,3 +358,16 @@
   bond-space dimension count is not repeated. The 300-dimensional
   affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 31
+
+- The ansatz is one plane spanned by one parity kernel and one excluded
+  kernel. A sum of two parity kernels is not in this count. A vector
+  with parity coefficient 0 is the excluded span and is not re-proved.
+- The one-site average is not used. The checked sums are two-centre
+  kernel cross sums. A kernel cross sum is not an alphabet mean.
+- The order-blind converse is not applied. The parity kernels are the
+  cycle-29 note. The excluded span is the cycle-30 note. The ten-kernel
+  basis is the cycle-26 note. The bond-space dimension count is not
+  repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

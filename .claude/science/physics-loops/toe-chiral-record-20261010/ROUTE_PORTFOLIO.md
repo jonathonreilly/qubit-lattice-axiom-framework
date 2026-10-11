@@ -133,3 +133,10 @@ against any ten-kernel partner. Every kernel cross sum vanishes exactly
 when one of the two vectors is 0. It does not take a vector that also
 has a parity-span component, and it does not classify the
 300-dimensional affine space.
+
+Cycle 31 takes each plane spanned by one parity kernel and one excluded
+kernel. Twenty of those planes have full partner rank whenever both
+coefficients are nonzero. The oblique-matched plane has a
+three-dimensional partner kernel at ratios `1` and `-1`. It does not
+take a sum of two parity kernels, and it does not classify the
+300-dimensional affine space.

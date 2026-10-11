@@ -309,3 +309,15 @@ combination, the self-cross sets, and the witness bond with mean
 Family not used: a vector with both a parity-span component and a
 nonzero excluded coefficient. That remains open. The 300-dimensional
 affine space is not this family.
+
+Cycle 31 target contract: which vectors in a plane spanned by one
+parity kernel and one excluded kernel have every kernel cross sum
+equal to 0 against a ten-kernel partner.
+
+Family used: the twenty full-rank planes, the oblique-matched ratios
+`1` and `-1` with their three-vector kernels, and the witness cross
+sums `2`, `-4`, and `-1`.
+
+Family not used: a sum of two parity kernels with a nonzero excluded
+coefficient. That remains open. The 300-dimensional affine space is
+not this family.

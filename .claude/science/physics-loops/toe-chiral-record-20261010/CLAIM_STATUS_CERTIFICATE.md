@@ -619,3 +619,25 @@ The witness alphabet mean is `47/48`. A vector with both a parity-span
 component and a nonzero excluded coefficient is outside the ansatz. The
 ten-kernel coefficient span is not classified. The 300-dimensional
 affine space is not classified.
+
+# Claim status certificate — cycle 31
+
+claim_id: chiral_pair_one_parity_one_excluded_cross_moments_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); one parity kernel plus one excluded kernel; witness directions (-1, 0, 0) and (0, -1, 0)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The parity kernels are the cycle-29 note. The excluded span is the cycle-30 note. The ten-kernel basis is the cycle-26 note. No formation rate is used.
+
+Each plane of one parity kernel and one excluded kernel has a known
+partner kernel. Twenty planes force the zero partner when both
+coefficients are nonzero. Oblique plus matched has a three-dimensional
+partner kernel at ratios `1` and `-1`. A sum of two parity kernels is
+outside the ansatz. The ten-kernel coefficient span is not classified.
+The 300-dimensional affine space is not classified.

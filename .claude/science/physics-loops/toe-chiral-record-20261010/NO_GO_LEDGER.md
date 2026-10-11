@@ -197,3 +197,11 @@ kernel cross sum `-1` and alphabet mean `47/48`. The matched kernel
 against the zero vector passes. It does not classify a vector that also
 has a parity-span component, and it does not classify the
 300-dimensional affine space.
+
+Cycle 31 prunes the reading that every mixed parity-excluded vector
+needs the zero partner. Oblique plus matched at ratio `1` has every
+kernel cross sum equal to 0 against itself on heights 1 and 2. The
+same vector has witness cross sum `-4` on heights 1 and 3. Chirality
+plus matched against the chirality cap has witness cross sum `2`. It
+does not classify a sum of two parity kernels, and it does not
+classify the 300-dimensional affine space.

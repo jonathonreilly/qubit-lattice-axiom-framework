@@ -335,15 +335,33 @@ component and a nonzero excluded coefficient is outside this ansatz.
 The ten-kernel coefficient span is not classified. Runner
 `PASS=9 FAIL=0`.
 
+Cycle 31. On the same alphabet each plane spanned by one parity kernel
+and one excluded kernel is settled against any ten-kernel partner. In
+the twenty planes other than the matched oblique dot plus the matched
+cross, both coefficients nonzero forces every kernel cross sum to
+vanish only for the zero partner. In that remaining plane the ratio of
+matched over oblique has a three-dimensional partner kernel exactly at
+`1` and `-1`. On height pairs `{1, 2}` and `{2, 3}` the ratio `1` is
+spanned by matched plus oblique, by minus swapped plus swapped-dot
+plus orthogonal, and by minus the transverse sign minus the sign
+product plus twice matched plus twice scaled. The ratio `-1` reverses
+the signs of matched, swapped-dot, the transverse sign, and the sign
+product. On `{1, 3}` those bases are exchanged. Oblique plus matched
+at heights 1 and 2 has every cross sum equal to 0 against itself. The
+same vector at heights 1 and 3 has witness cross sum `-4`. Chirality
+plus matched against the chirality cap has witness cross sum `2`.
+Oblique plus twice matched against oblique has witness cross sum `-1`.
+A sum of two parity kernels is outside this ansatz. The ten-kernel
+coefficient span is not classified. Runner `PASS=10 FAIL=0`.
+
 ## Next exact action
 
-Decide whether a vector with both a parity-span component and a
-nonzero coefficient on the matched cross, the swapped transverse dot,
-or the scaled cross-dot kernel can pair with a nonzero ten-kernel
-vector and still have every cross moment equal to 0. The excluded
-three-kernel span is settled against any ten-kernel partner. Do not
-claim the ten-kernel coefficient span is settled. Do not claim the
-300-dimensional affine space is classified. Do not repeat the
+Decide whether a vector with two or more nonzero parity-kernel
+coefficients and a nonzero excluded coefficient can pair with a
+nonzero ten-kernel vector and still have every cross moment equal to
+0. Each plane of one parity kernel and one excluded kernel is settled.
+Do not claim the ten-kernel coefficient span is settled. Do not claim
+the 300-dimensional affine space is classified. Do not repeat the
 bond-space dimension count. Do not return to the modulus-3 triple. Do
 not invent a formation rate. Do not return to shells, plaquette corner
 weights, or the `(0,1,2)` and `(1,1,2)` alphabets.

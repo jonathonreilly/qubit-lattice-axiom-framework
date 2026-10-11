@@ -94,4 +94,8 @@ mixture at coefficient `1/32` is strictly positive, with values
 `29/32`, `15/16`, `31/32`, `1`, `33/32`, `17/16`, and `19/16`.
 Coefficient `2` on the chirality cap takes a value `-1` and still has
 one- and two-neighbour means 1. A sum across two heights is not in
-this count.
+this count. Cycle 28 shows that the height-1 and height-2 chirality
+caps at coefficient `1/2` have two-neighbour moment `97/96`, while the
+height-1 chirality cap plus the height-2 sign-product cap has every
+two-direction mean equal to 1. The coefficient span of two bases is
+not classified.

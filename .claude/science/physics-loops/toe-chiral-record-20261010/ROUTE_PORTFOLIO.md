@@ -115,3 +115,9 @@ Cycle 27 takes every rational mixture of the ten kernels on one
 opposite-height pair. The product-mean identity holds on the whole
 span. It does not take a sum across two heights, and it does not
 classify the 300-dimensional affine space.
+
+Cycle 28 takes two named sums of caps at heights 1 and 2. The two
+chirality caps have moment `97/96`. The chirality cap plus the
+sign-product cap has every two-direction mean equal to 1. It does not
+classify the coefficient span of two bases, and it does not classify
+the 300-dimensional affine space.

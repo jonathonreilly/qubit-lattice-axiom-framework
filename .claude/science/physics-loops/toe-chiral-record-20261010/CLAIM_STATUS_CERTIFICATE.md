@@ -554,3 +554,24 @@ mean 1. The equal mixture at coefficient `1/32` is strictly positive.
 Coefficient `2` on the chirality cap is not strictly positive and still
 has those means equal to 1. A sum across two heights is not classified.
 The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 28
+
+claim_id: chiral_pair_cross_height_cap_mixture_product_means_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); height-1 and height-2 caps; coefficient 1/2; witness far ends (1, -3, -2) and (-3, 2, -1)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: Theorem 2's converse is applied only to the passing mixture. The one-height identity is the cycle-27 note. Far-end sum 1 is the chiral-pair bond note. No formation rate is used.
+
+The height-1 and height-2 chirality caps at coefficient `1/2` have
+two-neighbour moment `97/96`. The height-1 chirality cap plus the
+height-2 sign-product cap has every two-direction mean equal to 1.
+The coefficient span of two opposite-height bases is not classified.
+The 300-dimensional affine space is not classified.

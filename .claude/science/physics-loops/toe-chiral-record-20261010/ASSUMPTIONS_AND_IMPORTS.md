@@ -313,3 +313,16 @@
   The bond-space dimension count is not repeated. The 300-dimensional
   affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 28
+
+- The tested mixtures are two named sums of caps at heights 1 and 2,
+  each coefficient `1/2`. A general coefficient pair on the two
+  ten-kernel bases is not in this count.
+- The one-site average is the uniform average on the 48-point alphabet.
+  A neighbour condition names at most one far end in each direction.
+- Order-blindness is Theorem 2's converse, applied only to the passing
+  mixture. Far-end sum 1 is the chiral-pair bond note. The one-height
+  identity is the cycle-27 note. The bond-space dimension count is not
+  repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

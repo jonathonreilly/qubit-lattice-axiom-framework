@@ -273,3 +273,14 @@ as moment checks.
 
 Family not used: a sum of two heights. That remains open. The
 300-dimensional affine space is not this family.
+
+Cycle 28 target contract: whether every strictly positive sum of caps
+at two absolute heights has neighbour-product mean 1.
+
+Family used: the height-1 and height-2 chirality caps at coefficient
+`1/2`, with witness moment `97/96`, and the height-1 chirality cap
+plus the height-2 sign-product cap at the same coefficient.
+
+Family not used: a general coefficient pair on the two ten-kernel
+bases. That remains open. The 300-dimensional affine space is not
+this family.

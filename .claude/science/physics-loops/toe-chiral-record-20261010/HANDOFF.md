@@ -290,14 +290,26 @@ values `-1`, `1`, and `3` and still has those means equal to 1. The
 integer coefficients `1` through `10` are a moment check, not the span.
 Runner `PASS=8 FAIL=0`.
 
+Cycle 28. On the same alphabet the sum of the height-1 and height-2
+chirality caps at coefficient `1/2` is strictly positive, with values
+`1/2`, `1`, and `3/2`. Every one-neighbour mean is 1. The mean on
+`-e_x` and `-e_y` at `(1, -3, -2)` and `(-3, 2, -1)` is `97/96`, and
+`1536` unordered two-direction pairs have mean different from 1. The
+sum of the height-1 chirality cap and the height-2 sign-product cap, at
+the same coefficient, has every two-direction mean equal to 1. Each
+record meets at most two live directions, so every neighbour product of
+that second mixture has mean 1. These two mixtures do not classify the
+coefficient span of two bases. Runner `PASS=9 FAIL=0`.
+
 ## Next exact action
 
-Decide which rational mixtures of two opposite-height bases, at two
-distinct absolute heights, have every neighbour-product mean equal to 1.
-Do not claim the 300-dimensional affine space is classified. Do not
-repeat the bond-space dimension count. Do not return to the modulus-3
-triple. Do not invent a formation rate. Do not return to shells,
-plaquette corner weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
+Decide which rational coefficient pairs on two opposite-height bases
+have every cross moment equal to 0. The two exhibited cap mixtures do
+not classify that span. Do not claim the 300-dimensional affine space
+is classified. Do not repeat the bond-space dimension count. Do not
+return to the modulus-3 triple. Do not invent a formation rate. Do not
+return to shells, plaquette corner weights, or the `(0,1,2)` and
+`(1,1,2)` alphabets.
 
 ## Cleanup
 

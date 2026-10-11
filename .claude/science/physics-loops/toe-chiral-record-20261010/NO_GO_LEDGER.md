@@ -171,3 +171,11 @@ mixture at coefficient `1/32`. Coefficient `2` on the chirality cap is
 not strictly positive and still has the means equal to 1. It does not
 classify a sum across two heights, and it does not classify the
 300-dimensional affine space.
+
+Cycle 28 prunes the reading that every strictly positive sum of two
+caps from different heights has neighbour-product mean 1. The witness
+is the height-1 and height-2 chirality caps at coefficient `1/2`, with
+moment `97/96`. It does not prune the height-1 chirality cap plus the
+height-2 sign-product cap, whose two-direction means equal 1. It does
+not classify the coefficient span of two bases, and it does not
+classify the 300-dimensional affine space.

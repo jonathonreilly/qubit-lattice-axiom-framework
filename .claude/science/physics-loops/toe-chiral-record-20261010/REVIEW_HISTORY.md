@@ -1415,3 +1415,66 @@ Conformance, section by section:
     and `3`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
     the loop-pack prose. The full audit pipeline was not run.
+
+## 2026-10-11 author check, cycle 28
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`, the cycle-27 opposite-height
+   mixture note, and the cycle-6 chiral-pair bond note, both on this
+   branch. The covariance comparison, the witness moment, and the
+   two-direction counts are computed in this runner. Theorem 2's
+   converse is applied only to the passing mixture and is not re-proved.
+   The one-height identity is cited from cycle 27. Far-end sum 1 is
+   cited from the cycle-6 note. The bond-space dimension count is not
+   repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_cross_height_cap_mixture_product_means_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `fcc4a74d41dc883a39a53de49a75090aa8e2d9ce7c08be05b82d987ef472333a`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=9 FAIL=0`.
+   Elapsed 37.99 seconds.
+3. Scope. Two named mixtures of caps at heights 1 and 2, each at
+   coefficient `1/2`, on the 48 signed permutations of `(1, 2, 3)`.
+   Both take values `1/2`, `1`, and `3/2`. The two chirality caps have
+   witness moment `97/96` and `1536` failing unordered pairs. The
+   chirality cap plus the height-2 sign-product cap has every
+   two-direction mean equal to 1. The coefficient span of two bases is
+   not classified. The 300-dimensional affine space is not classified.
+   Status line `proposed_retained`. Surface status `bounded-support`.
+4. N-gate does not apply. The failing moment prunes one reading of
+   cross-height caps. It does not claim that no cross-height mixture
+   has product mean 1, and the passing mixture is exhibited.
+5. Obligations are in the note. The missing lemma is which rational
+   coefficient pairs on two opposite-height bases have every cross
+   moment equal to 0.
+6. Mutations, each on a scratch copy, exited 1. Requiring the witness
+   moment to be 1 gave `PASS=8 FAIL=1` on the chirality-cap check.
+   Requiring the passing bad-pair count to be `-1` gave `PASS=8 FAIL=1`
+   on the sign-product check. Requiring every far-end sum to be 49 gave
+   `PASS=8 FAIL=1` on the far-end sum. An independent generator closure
+   in this session gave 24 rotations, all of determinant 1, and orbit
+   24, with `(2, 1, 3)` and `(1, 2, -3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Five markdown links. The runner link points at the primary runner.
+   Two note links point at tracked notes on origin/main. Two point at
+   the cycle-27 mixture note and the cycle-6 chiral-pair bond note on
+   this branch. Manifest node_count 6897 and edge_count 15494. The new
+   node has out_degree 4 and deps_hash `47c28a336ede`. Dependencies are
+   `minimal_axioms`, the 2026-09-22 note, the cycle-27 mixture note, and
+   `chiral_pair_bond_factor_dimension_bounded_theorem_note_2026-10-10`.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names Theorem 2's converse, the one-height identity, and far-end sum
+   1, and states that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=9 FAIL=0`, witness moment
+    `97/96`, failing unordered pairs `1536`, passing bad pairs `0`,
+    values `1/2`, `1`, and `3/2`, far-end sum 48. The two cross centres
+    are `(-1, -2, -3)` and `(-1, -2, 3)`, and their cross sum is `1/2`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
+    the loop-pack prose. The full audit pipeline was not run.

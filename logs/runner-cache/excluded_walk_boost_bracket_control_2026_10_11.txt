@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/excluded_walk_boost_bracket_control_2026_10_11.py
 runner_sha256: ad158ab067673f7ace2737b96475a45ce91cb3fc1718cf709e5c445f58f2a550
-input_fingerprint_sha256: 221f6b1027831f04ba25dbbb35dbbbf07d0061574f7350fb0dfd5114efef3e29
+input_fingerprint_sha256: aaa8d6b5e24059521230051deede895c16e00473d07001fd985ee27d216094f3
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 18.21
+elapsed_sec: 18.64
 status: ok
 ----- stdout -----
 BEGIN boost_current finite author evidence

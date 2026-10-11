@@ -16,7 +16,8 @@ canonical rank-term cancellation (T15–T17), K-envelope derivative cancellation
 own displayed argument. Those new proofs have no retained-authority status.
 No five-route exhaustive packet is asserted for the separate chart witness
 or mixed-band example. Other packet phases, contact-orthogonal preparation,
-weaker observables and other justified energy placements remain open.
+other justified energy placements remain open. Part V positively resolves
+the actual expectation for this same packet at every fixed finite tau interval.
 
 ## N2 — Condition relationships
 
@@ -61,9 +62,9 @@ truncation, not arbitrary evolved packets by enumeration.
 ## N6 — Partial closure and premises
 
 The periodic auxiliary rotation positively repairs the prepared-state domain
-comparison. It does not define all global rotations. An actual expectation
-bound or a different preparation may answer a different physical question;
-those routes are open. No assertion that an absent primitive or a new axiom
+comparison. It does not define all global rotations. Part V separately proves the actual expectation
+is o(lambda) at fixed rescaled time; the norm obstruction does not block it.
+Different preparations remain open. No assertion that an absent primitive or a new axiom
 is required is made, and no premise is adopted by naming it canonical.
 
 ## N7 — Strongest concrete challenge
@@ -72,9 +73,9 @@ A small contact norm can hide a large K derivative, and a fixed-fiber zero-mode
 argument can disappear after global normalization. The precise obligation is
 H1 convergence of the full forced direct integral, followed by the complete
 first-order bracket. T7–T24 address that obligation, and the separate complete source review is
-recorded in REVIEW_HISTORY.md. For expectations, cancellations unavailable to the norm
-can occur; the present result does not close that route. Larger fixed tau
-also remains open rather than being inferred from the small-tau estimate.
+recorded in REVIEW_HISTORY.md. Part V proves the required forced H1 limit and expectation cancellation
+for each fixed finite tau interval. It preserves the norm lower bound and
+does not extend it to arbitrary fixed tau or unbounded rescaled time.
 
 ## N8 — Earlier related work
 

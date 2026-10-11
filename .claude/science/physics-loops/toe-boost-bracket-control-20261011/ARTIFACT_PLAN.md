@@ -6,3 +6,7 @@ Frozen complete sources, exact publication maps, distinct reviews and raw
 execution/failure history are preserved. Five helper modules execute in
 separate namespaces; the last two identify the publication primary itself.
 No finite result is relabeled a continuum or full-domain theorem.
+
+The fifth complete argument adds the fixed-time H1 forced-state limit and
+all nine expectation estimates. The existing primary is unchanged; its
+finite calculations do not certify the new gapless analytic theorem.

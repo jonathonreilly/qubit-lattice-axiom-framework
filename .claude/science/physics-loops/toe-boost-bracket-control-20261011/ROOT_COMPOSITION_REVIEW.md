@@ -27,7 +27,7 @@ rotation chart is distinguished from the periodic auxiliary operator.
 The sharp-time norm theorem has no expectation conclusion. Every supplied
 physical premise and all unpromoted fixed-time routes remain explicit.
 
-All four original arguments are preserved through PUBLICATION_EDITS.json.
+All five original arguments are preserved through PUBLICATION_EDITS.json.
 The small E wording changes distinguish energy expectation from spectral
 support and state the already assumed time window. Publication frontmatter,
 scope, parent links, source/status statements and the linked N1–N8 assessment
@@ -56,3 +56,19 @@ failed to serialize the returned Path; the already written canonical cache
 provided complete recovery without another scientific run. A lightweight
 header omitted elapsed time; its full header supplied that field. Both
 bookkeeping failures are recorded, separate from the successful execution.
+
+The expectation extension uses frozen X source
+a7161d796001df4af243263acbd03e731d75d0eab2d93795f4b5960eff5acb68.
+Root read all 587 lines, the complete author check, the separate complete
+review and 426-line reconstruction. The latter was frozen before author
+evidence and adds a free-primitive/Volterra argument. Its preserved earlier
+wording needed only the clarification that a differentiated error tends
+uniformly to zero because the original error tends to zero in C1. Root
+suggested the kernel cancellation and all-component extension and therefore
+is a coauthor, not the independent reviewer. No finite runner was added:
+the new obligation was analytic. The old primary and twelve actual semantic
+mutants retain their source identities; they concern the earlier finite
+calculations, not a new proof of X. Exact publication edits affect only
+titles, status, source pointers and scope summaries; every X equation and
+proof step remains unchanged. Uniformity is on fixed compact tau intervals;
+no rate, growing tau, physical covariance or off-diagonal norm bound follows.

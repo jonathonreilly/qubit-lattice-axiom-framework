@@ -22,8 +22,8 @@ author's symbolic and abstract checks.
 The time-threshold extension gives a sharper answer than another loose upper
 bound. It tracks the actual forced contact component through fixed-vector
 averaging and differentiated packet amplitudes. This identifies where the
-proved norm comparison changes scale for the same preparation, while leaving
-current expectations and alternative preparations open. The upper and lower
+proved norm comparison changes scale for the same preparation, with a separate expectation derivation
+now included in Part V; alternative preparations remain open. The upper and lower
 results belong together in one milestone so the time restriction cannot be
 missed by reading only the initial positive estimate.
 
@@ -34,3 +34,9 @@ It has one parent, PR9479, and no dependency on the later memory PR: the small
 zero-space input needed here is explicitly rederived and credited. No merge,
 retained-status assignment, physical axiom or main-branch change is authorized
 by this local OPEN decision.
+
+The regular PR9484 is open. Part V belongs in this same milestone because
+it answers the complementary mean-residual question for exactly the same
+model and preparation. It preserves the positive norm obstruction, avoiding
+an inference from norm size to expectation size. The full proof and its
+distinct review replace the previously open expectation obligation.

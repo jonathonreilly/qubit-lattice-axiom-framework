@@ -57,3 +57,27 @@ failed to serialize the returned Path; the already written canonical cache
 provided complete recovery without another scientific run. A lightweight
 header omitted elapsed time; its full header supplied that field. Both
 bookkeeping failures are recorded, separate from the successful execution.
+
+The reviewed expectation extension changes the declared note input while
+leaving the primary source unchanged. A canonical cache refresh is required
+for that input change; its result will be appended below. The original
+complete-primary mutation evidence remains bound to the unchanged primary.
+No new finite runner is offered as verification of the X continuum theorem.
+The prior worker disconnects and all old source versions remain preserved.
+
+The expectation-input cache refresh exited 0 in 18.64 seconds
+under the declared 180-second timeout. Full stdout is byte-identical to the
+previously read 10,900-byte output, with empty stderr. Input fingerprint:
+aaa8d6b5e24059521230051deede895c16e00473d07001fd985ee27d216094f3.
+The primary remains unchanged; prior actual source mutants therefore remain
+applicable to their finite algebra. The new theorem is checked by the complete
+independent analytic reconstruction, including its alternate Volterra proof.
+
+The refreshed citation graph keeps all 6,871 nodes and 15,421 edges unchanged;
+no dependency changed. Focused compatibility again finds no affected applied
+audit rows or failures. The global combined audit and strict lint remain
+unrun landing gates. The full old 47cb115 publication note, cache, maps and
+sidecars are preserved in the expectation-publication evidence; all new
+author and reviewer bytes are also retained. Ordinary local links, exact
+reconstruction, vocabulary correction/report, final cache/input freshness,
+worktree/index identities and whitespace are checked before commit.

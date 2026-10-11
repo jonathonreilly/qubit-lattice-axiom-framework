@@ -1,7 +1,7 @@
 ---
 claim_id: excluded_walk_boost_bracket_control_bounded_theorem_note_2026-10-11
 claim_type: bounded_theorem
-claim_scope: "For the supplied antisymmetric excluded Weyl pair and canonical additive energy placement, exact compressed boost/current and boost/boost formulas give explicit prepared-packet residual bounds. The boost/current norm is o(lambda) below the lambda^(-1/2) time threshold, has a positive energy-scaled limit at that threshold, and is Theta(sqrt(lambda)) at specified small inverse-energy times. Operator domains and all physical premises remain explicit."
+claim_scope: "For the supplied antisymmetric excluded Weyl pair and canonical additive energy placement, exact compressed boost/current and boost/boost formulas give explicit prepared-packet residual bounds. The boost/current norm is o(lambda) below the lambda^(-1/2) time threshold, has a positive energy-scaled limit at that threshold, and is Theta(sqrt(lambda)) at specified small inverse-energy times. All nine actual residual expectations are o(lambda), uniformly on every fixed finite rescaled-time interval, by an explicit gapless forced-state limit and symmetric-form cancellation. Operator domains and all physical premises remain explicit."
 upstream_dependencies:
   - excluded_walk_low_energy_energy_current_bounded_theorem_note_2026-10-11
 runner: scripts/excluded_walk_boost_bracket_control_2026_10_11.py
@@ -15,7 +15,7 @@ runner: scripts/excluded_walk_boost_bracket_control_2026_10_11.py
 retained-status audit. The supplied walk, continuous clock, antisymmetric pair,
 site exclusion, spatial coordinates and chosen energy placement are premises.
 
-The four complete arguments below use one globally normalized positive-positive
+The five complete arguments below use one globally normalized positive-positive
 origin-cone preparation. Part I gives the exact differential boost/current
 bracket and an explicit norm bound. Part II controls its actual evolution for
 times at most lambda^(-gamma), gamma<1/2. In this interval lambda*t tends to
@@ -28,9 +28,17 @@ Part IV locates the sharp power threshold for the norm in Part II using the
 same packets. At time lambda^(-1/2), its norm divided by lambda tends to a
 strictly positive constant. At time tau/lambda for fixed 0<tau<=1/32768,
 the norm is Theta(sqrt(lambda)). These are diagonal-component norm results;
-they do not give the corresponding expectation or exclude other preparations.
+they do not imply an expectation estimate or exclude other preparations.
 The complete zero-space and integrability arguments are rederived in Part IV,
 with the earlier memory milestone credited as prior mathematical work.
+
+Part V proves the actual expectation result separately: all nine residual
+expectations are o(lambda), uniformly for |tau|<=T at time tau/lambda for
+each fixed finite T. The complete forced state converges in H1_kappa(L2_q)
+to a compressed-kernel evolution. Symmetry controls both cross terms and
+the limiting kernel self-pairing vanishes. Thus a small mean is compatible
+with the larger diagonal residual norm. No convergence rate, growing-tau
+interval or off-diagonal norm lower bound is asserted.
 
 The energy interval stated for the excluded state is an expectation bound.
 It is not preserved individual-cone or spectral support. These estimates do
@@ -2268,3 +2276,594 @@ The entire packet remains external research evidence, with no repository,
 editable prompt, original source, prior review, audit status or physical
 primitive changed. The next scientific gate is an independent check of
 this authored theorem and its hypotheses.
+
+---
+
+# Part V — Actual boost/current expectations at inverse-energy time
+
+Source date: 2026-10-11. Conditional supplied-model mathematical result.
+The complete source-bound independent review found no required repair within
+X1–X35. Review identities, authorship and limits are recorded in the milestone
+evidence. This publication applies no retained-status audit or physical premise.
+
+For exactly the globally normalized B25–B30 packets and the actual excluded
+evolution, the result of the calculation is
+
+\[
+ \boxed{\quad
+ \lim_{\lambda\downarrow0}\sup_{|\tau|\le T}
+ \left|\frac{\langle\psi_\lambda(\tau/\lambda),
+          R_{ab}\psi_\lambda(\tau/\lambda)\rangle}{\lambda}\right|=0
+ \quad (0\le T<\infty),\qquad a,b=1,2,3. \quad}           \tag{X1}
+\]
+
+Here `R_ab=-i[D_a,J_b]-delta_ab H` uses the complete canonical bracket,
+including `[H,J_b] partial_Ka`. This is an asymptotic expectation statement; the
+finite-lambda expectation is not asserted to be identically zero. It does
+not contradict T1–T24: for small fixed positive tau, the norm of the
+diagonal residual on this same state is of order `sqrt(lambda)`. The leading residual
+vector is orthogonal to the leading forced correction in precisely the
+pairing relevant to the expectation.
+
+The proof below also gives the actual forced correction's fixed-time
+`H1_kappa(L2_q)` limit. It uses a spectral cutoff on a compact family of
+fixed residual vectors, not a gap, a bounded inverse on the entire
+complement, or operator-norm averaging.
+
+## 1. Exact contract, sources, and retained limitations
+
+The target is the expectation in (X1), with fixed arbitrary finite rescaled
+time, the exact B25–B30 preparation, the one global contact projection, and
+the original two global normalization constants. Replacing the state by a
+fixed K fiber, a direction delta, a separately normalized fiber, a
+contact-free state, or a dressed kernel state would not answer this target.
+An estimate on `||R_ab psi||` alone also would not answer it.
+
+Let `S` be the original research directory recorded in the milestone's
+EVIDENCE_MAP.json; its source bytes are preserved there. These are the frozen mathematical
+sources read completely for this derivation:
+
+| Source relative to S | SHA-256 | Use |
+|---|---|---|
+| `EXCLUDED_WALK_BOOST_CURRENT_PROBE.md` | `903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923` | B5–B30 operators, full normal form, domains, global/supported bounds, exact preparation |
+| `EXCLUDED_WALK_EVOLVED_BOOST_CONTROL_DRAFT.md` | `d89611986626dbabcf6f9f5c487733d2a520cb9249b7ed0b3a27be35874fd929` | E8–E13 exact forced comparison and its supported residual estimate |
+| `BOOST_CURRENT_INVERSE_ENERGY_PROBE.md` | `76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990` | T3–T16 normalized source, full physical zero space, rescaled normal form; T17–T24 norm result distinguished from the new expectation |
+| `BOOST_CURRENT_INVERSE_ENERGY_REVIEW.md` | `d3c3d00b69b302beb88aef4a1b649f5e685ff7a08bc2c117755fcafde4d74796` | Source-bound independent review of T1–T24, not of the present argument |
+| `boost_inverse_energy_review/PROOF_RECONSTRUCTION.md` | `c0a06917dc1f24207d85656781e250104c81dd613a9a937a140088149bf2f131` | Complete prior reconstruction, checked against the needed source premises |
+
+The supplied sine-Pauli Hamiltonian, antisymmetric pair sector, exclusion
+projection, coordinates, clock, symmetric energy placement, and preparation
+remain premises. This note does not derive their physical identification from
+the framework axioms. The registered scale, kinetic-form isotropy, and
+realized-state primitives are not invoked to supply these dimensionless
+model choices. No new physical axiom or primitive is proposed.
+
+Publication status fields are `target_claim_type: bounded_theorem`,
+`actual_current_surface_status: conditional-support`,
+`trace_class: upstream_support`, `reachability_to_target: supports`,
+`audit_required_before_effective_retained: true`, and
+`bare_retained_allowed: false`. The specific mathematical expectation target
+is addressed; a full boost algebra or physical law is not thereby established.
+The older archived `FIXED_TAU_ROUTE_NOT_USED.md` supplies no theorem premise
+and was not reopened or promoted here.
+
+Root suggested the possible kernel-orthogonality and symmetric-cross-term
+mechanism. The recovered checkpoint suggested a C2/finite-difference route
+for derivatives. Both were proposals. The present author supplies the
+cutoff estimate, the differentiated error equation, and the full expectation
+proof below. These are new author work, not independent review.
+After the complete diagonal draft was preserved, root also proposed checking
+the all-component identity `Q_0,ab z=H_*L_b partial_a(kappa_b z)`. Its
+index structure and symmetry are checked explicitly in Section 6. The same
+proof covers all nine expectations; no off-diagonal norm lower bound is
+claimed. The pre-extension diagonal draft remains byte-for-byte preserved.
+
+## 2. Hilbert space, exact state, and normalization
+
+The relative fiber `mathcal H` is the antisymmetric part of
+`L2(T^3,dq/(2pi)^3; C2 tensor C2)` satisfying
+`u(-q)=-S_swap u(q)`, restricted to `ran P`, where
+
+    c = the constant unit singlet,
+    C=|c><c|,  P=I-C,
+    H0(K)=sum_j [sigma_(1,j) sin(K_j/2+q_j)
+                       +sigma_(2,j) sin(K_j/2-q_j)],
+    H(K)=P H0(K)P on mathcal H,
+    h(K)=H0(K)c=2 sum_j cos(K_j/2) sin(q_j) T_j,
+    T_j=sigma_(1,j)c.                                      (X2)
+
+Every relative inner product uses the complete normalized torus. In
+particular P is one full-torus projection in each K fiber. Total momentum
+has measure `dK/(2pi)^3` in the original compact-support chart. Inner
+products are conjugate linear in the first entry.
+
+For the exact B25 envelope, let `p(t)=(1-t^2)^2` for `|t|<1` and zero
+otherwise. Let F0 be the positive L2 normalization of
+`product_j p(8sqrt(3) kappa_j)`. Let eta be the positive L1 normalization
+of `exp[-1/(1-512^2|y|^2)]` for `|y|<1/512` and zero otherwise. Then
+`F=(eta*F0)/||eta*F0||_2`. It is real, smooth, supported in
+`|kappa|<=65/512<1/4`, with `||F||_2=1`
+and `||partial_j F||_2<=192/7`. The radial f is the positive L2
+normalization of
+
+    exp[-1/((|x|-5/8)(3/4-|x|))],  5/8<|x|<3/4,
+
+and zero outside. Thus f is smooth, even, and has `integral f>0`.
+Let Pi_++ be the product of the two positive Pauli projectors and use exactly
+
+    u_lambda=(2pi)^3 lambda^-3 F(K/lambda) f(q/lambda) Pi_++ c,
+    Z_lambda=||u_lambda||, phi_lambda=u_lambda/Z_lambda,
+    n_lambda=||P phi_lambda||,
+    chi_lambda=P phi_lambda/n_lambda,
+    psi_lambda(t)=exp(-itH)chi_lambda.                        (X3)
+
+Both Z_lambda and n_lambda are single global scalars over K and q. They
+have no K or kappa derivative. The state psi has norm one. Its conserved
+energy expectation obeys `[lambda/2,3lambda]` for `0<lambda<=1/16` by B30.
+This is not a claim of exact interacting spectral support.
+
+Set `c0=(2pi)^(-3/2)` and use the K-only isometry
+
+    (T_lambda u)(kappa,q)=c0 lambda^(3/2) u(lambda kappa,q),
+    T_lambda partial_Kj=lambda^-1 partial_kappaj T_lambda.    (X4)
+
+The target space is `L2(dkappa;mathcal H)` and the entire q torus remains.
+All states and comparisons below have the same compact kappa support.
+
+For `y_+=x+kappa/2`, `y_-=x-kappa/2` and `|kappa|<=1/4`, let
+
+    e_lambda=(|sin(lambda y_+)|+|sin(lambda y_-)|)/lambda,
+    w_lambda=[1+sin(lambda y_+).sin(lambda y_-)
+                  /(|sin(lambda y_+)||sin(lambda y_-)|)]/4,
+    Z_lambda^2=integral |F|^2 |f|^2 w_lambda dkappa dx,
+    a_lambda(s,kappa)=F(kappa)/Z_lambda
+             integral f(x)w_lambda(kappa,x)exp[-is e_lambda(kappa,x)] dx.
+                                                               (X5)
+
+This is exactly `<c,exp[-i(s/lambda)H0(lambda kappa)]
+phi_lambda(lambda kappa)>`, not its rescaled L2 norm. The q Jacobian
+`lambda^3/(2pi)^3` cancels the packet factor `(2pi)^3 lambda^-3`.
+The six-dimensional change of variables in the norm likewise cancels the
+square of that factor. Therefore
+
+    1/4<=w_lambda<=1/2,  1/2<=Z_lambda<=1/sqrt(2),
+    n_lambda^2=1-c0^2 lambda^3 ||a_lambda(0)||^2_(L2 dkappa)->1.
+                                                               (X6)
+
+Because `|y_+|,|y_-|>=1/2` on the fixed support, scaled sine divided by
+lambda extends smoothly to lambda=0, with uniformly nonzero denominators.
+The limiting objects are
+
+    e=|y_+|+|y_-|,
+    w=[1+y_+.y_-/(|y_+||y_-|)]/4,
+    Z0^2=integral |F|^2|f|^2 w,
+    a(s,kappa)=F(kappa)/Z0 integral f(x)w(kappa,x)exp[-is e] dx.
+                                                               (X7)
+
+Extend a_lambda and a by zero outside this small kappa set; they already
+vanish on an open neighborhood of its boundary because of F's support.
+On each compact s interval, a_lambda converges to a with all kappa
+derivatives needed here (orders zero, one, and their first s derivatives),
+uniformly in kappa. The same quantities are uniformly bounded. They are
+compactly supported in kappa. This follows by differentiating the explicit
+fixed-support integrals; no derivative of either global normalizer appears.
+
+## 3. Exact forcing and coefficient regularity
+
+Define the free comparison and its exact error using the initial n_lambda:
+
+    f_free(t)=exp(-itH0)phi_lambda,
+    v_lambda(t)=P f_free(t)/n_lambda,
+    w_phys,lambda(t)=psi_lambda(t)-v_lambda(t).
+
+The projected comparison is not renormalized as time changes. Direct
+differentiation, including `P H0 C f_free=h<c,f_free>`, gives
+
+    i partial_t v_lambda=H v_lambda+h<c,f_free>/n_lambda,
+    w_phys,lambda(0)=0,
+    w_phys,lambda(t)=i/n_lambda integral_0^t
+                 exp[-i(t-s)H]h<c,f_free(s)> ds.               (X8)
+
+The plus i has the sign shown because the source in the equation for
+psi-v is negative. The formula contains the entire contact tail and its
+forcing; no homogeneous zero-mode initial tail is added separately.
+
+Put
+
+    G_lambda(kappa)=H(lambda kappa)/lambda,
+    U_lambda(r,kappa)=exp[-irG_lambda(kappa)],
+    W_lambda(tau)=lambda^-1/2 T_lambda w_phys,lambda(tau/lambda),
+    g_lambda(s,kappa)=c0 h(lambda kappa)a_lambda(s,kappa)/n_lambda.
+
+Then exactly
+
+    W_lambda(tau)=i integral_0^tau U_lambda(tau-s)g_lambda(s) ds,
+    i partial_tau W_lambda=G_lambda W_lambda-g_lambda,
+    W_lambda(0)=0.                                          (X9)
+
+Write `H_*=H(0)`. Taylor expansion of the exact sine symbol gives
+
+    G_lambda=H_*/lambda+B(kappa)+E_lambda(kappa),
+    B(kappa)=sum_j kappa_j V_j,
+    V_j=P[(sigma_(1,j)+sigma_(2,j))cos(q_j)/2]P,
+    ||E_lambda||+sum_j ||partial_j E_lambda||=O(lambda),
+    h(lambda kappa)=h0+O(lambda^2) in C1_kappa(mathcal H),
+    h0=2 sum_j sin(q_j)T_j.                                 (X10)
+
+All norms here are uniform on any fixed compact kappa set. To see the
+orders directly, split each symbol into difference-spin times
+`sin(q_j)cos(lambda kappa_j/2)` plus total-spin times
+`cos(q_j)sin(lambda kappa_j/2)`. The cosine remainder divided by lambda
+is O(lambda); its first kappa derivative is O(lambda). The sine remainder
+is smaller. Each V_j is bounded self-adjoint and annihilates c before
+compression. Also
+
+    ||partial_j G_lambda||<=1,
+    ||partial_j U_lambda(r)||<=|r|.                          (X11)
+
+The latter follows from the bounded-operator Duhamel derivative; its sign
+and exact integrand are
+
+    partial_j U_lambda(r)
+       =-i integral_0^r U_lambda(r-u)(partial_j G_lambda)
+                                            U_lambda(u) du.
+
+With `g(s,kappa)=c0 h0 a(s,kappa)`, (X6)–(X10) give
+
+    g_lambda -> g in C1_kappa(mathcal H), uniformly for |s|<=T.
+                                                               (X12)
+
+In particular W_lambda is uniformly bounded in `H1_kappa(mathcal H)` on
+each finite tau interval. Differentiating (X9) under its integral produces
+exactly these three factors:
+
+    (partial_j U_lambda) h(lambda kappa) a_lambda,
+    U_lambda (partial_j h(lambda kappa)) a_lambda,
+    U_lambda h(lambda kappa) partial_j a_lambda.              (X13)
+
+Each carries the same constant `i c0/n_lambda`. Bounds (X11), (X5)–(X7),
+and (X10) bound every term uniformly; support is compact. The last term
+includes both projector-weight and clock-phase derivatives in a_lambda.
+
+## 4. A gapless cutoff lemma for the full perturbed propagator
+
+Here is the analytic step that was not established by T1–T24. Let H_* be
+bounded self-adjoint on a Hilbert space, let Pi be its exact kernel
+projection, and Q=I-Pi. Let
+
+    G_lambda(kappa)=H_*/lambda+V_lambda(kappa)
+
+be self-adjoint with uniformly bounded V_lambda on a compact parameter set.
+Suppose r(s,kappa) belongs to ran Q, is continuous in (s,kappa), is C1 in
+s, and r and partial_s r are uniformly bounded on `[0,T]` times that set.
+Then
+
+    sup_(0<=t<=T,kappa)
+      ||integral_0^t exp[-i(t-s)G_lambda(kappa)]r(s,kappa) ds|| ->0.
+                                                               (X14)
+
+Proof. Put `S_delta=1_{|H_*|>=delta}` and
+`x_delta=H_*^-1 S_delta r`. This inverse is used only after the cutoff,
+so `||x_delta||<=delta^-1||r||` and
+`||partial_s x_delta||<=delta^-1||partial_s r||`. The family of r values
+is compact because its parameter domain is compact and r is continuous.
+Since `S_delta->Q` strongly as delta decreases to zero, convergence is
+uniform on that compact family:
+
+    epsilon_delta=sup_(s,kappa)||(I-S_delta)r(s,kappa)|| ->0.   (X15)
+
+For clarity, this uniformity follows by a finite epsilon-net and the
+uniform operator bound `||I-S_delta||<=1`; it is not operator-norm
+convergence on the complementary unit ball.
+
+Since `H_*=lambda(G_lambda-V_lambda)` and
+`partial_s U_lambda(t-s)=iU_lambda(t-s)G_lambda`, integration by parts gives
+
+    integral_0^t U_lambda(t-s)S_delta r(s) ds
+      =-i lambda[U_lambda(t-s)x_delta(s)]_(s=0)^(s=t)
+       +i lambda integral_0^t U_lambda(t-s)partial_s x_delta(s) ds
+       -lambda integral_0^t U_lambda(t-s)V_lambda x_delta(s) ds.
+                                                               (X16)
+
+No commutation of V_lambda with H_* or with the cutoff was used. Hence the
+left side of (X14) is at most
+
+    T epsilon_delta
+     +lambda/delta [2 sup||r||+T sup||partial_s r||
+                         +T sup||V_lambda|| sup||r||].        (X17)
+
+First hold delta fixed and take lambda to zero, then take delta to zero.
+This proves the lemma without a gap or a specified convergence rate. The
+same argument applies to a finite set of such residual fields. Negative
+times are covered by reversing time and replacing G_lambda,H_* by their
+negatives, with the source evaluated at the reversed time.
+
+## 5. The actual forced fixed-time H1 limit
+
+Use the physical Hilbert space mathcal H throughout. Let Pi be the full
+kernel projection of H_* and let
+
+    A(kappa)=Pi B(kappa)Pi restricted to ran Pi,
+    z(tau,kappa)=i integral_0^tau
+              exp[-i(tau-s)A(kappa)] Pi g(s,kappa) ds.
+                                                               (X18)
+
+A is bounded self-adjoint on the fixed space ran Pi. Extend its evolution
+only on that space in this formula. Thus
+
+    z(0)=0,  i partial_tau z=A z-Pi g,
+    Pi z=z,  Pi partial_j z=partial_j z.                     (X19)
+
+The last assertion holds because Pi is independent of kappa. Smooth
+bounded parameter differentiation of A and the source proves that z,
+partial_j z, and their time derivatives are continuous and bounded on
+compact (tau,kappa) sets. They have the same compact kappa support as F.
+
+Let `D_lambda=W_lambda-z`. Its exact equation, using (X9)–(X12), is
+
+    i partial_tau D_lambda=G_lambda D_lambda+r+e_lambda,
+    D_lambda(0)=0,
+    r=Q(B z-g),
+    e_lambda=E_lambda z+g-g_lambda.                          (X20)
+
+Every value of r is in ran Q, and its values and time derivatives form
+bounded continuous families on compact sets. By (X14), its Duhamel
+integral vanishes uniformly. Also e_lambda and its first kappa derivatives
+tend uniformly to zero. Unitarity bounds the integral of e_lambda by T
+times its supremum. Therefore
+
+    sup_(|tau|<=T,kappa)||D_lambda(tau,kappa)|| ->0.           (X21)
+
+For each j, differentiate the exact error equation:
+
+    i partial_tau(partial_j D_lambda)
+      =G_lambda partial_j D_lambda
+          +(partial_j G_lambda)D_lambda+partial_j r+partial_j e_lambda,
+    partial_j D_lambda(0)=0,
+    partial_j r=Q(V_j z+B partial_j z-c0 h0 partial_j a).
+                                                               (X22)
+
+The D_lambda term vanishes in its Duhamel integral by (X11) and (X21).
+The partial_j e_lambda term vanishes by (X10)–(X12). The partial_j r
+term is again a fixed Q-valued field with bounded continuous values and
+time derivative, so (X14) applies to it. This proves uniform first kappa
+derivative convergence. Compact support converts it to
+
+\[
+ \sup_{|\tau|\le T}\|W_\lambda(\tau)-z(\tau)\|_{H^1_\kappa(
+                       \mathcal H)}\longrightarrow0.       \tag{X23}
+\]
+
+Equation (X22) explicitly retains differentiation of the propagator through
+partial_j G_lambda. Equation (X12) retains both form-factor and source
+derivatives. Thus (X23) does not infer derivative convergence from L2
+convergence alone, and does not require a C2 interpolation claim.
+
+For this particular model, the full kernel can also be identified directly.
+Write `s_j=sin q_j`, `epsilon=|s|`, `v0=sum_j s_j T_j`, and
+
+    I0=integral dmu/(4epsilon^2),
+    zeta=v0/(2epsilon^2 sqrt(I0)).
+
+Folding the eight sine-squared cells and integrating the radial `|q|^-2`
+majorant gives `1/12<=I0<=pi sqrt(3)/8<9/8`, so zeta is an L2 physical
+vector. At K=0 the singlet/triplet form of H0 is
+`[[0,2s^T],[2s,0]]`. If a physical vector is killed by PH0P, then
+`H0 u=beta c`. Subtracting `beta sqrt(I0) zeta` leaves a transverse
+triplet field. Conversely every transverse triplet field and zeta is
+killed by PH0P. They are orthogonal. Thus
+
+    Pi=F_transverse+|zeta><zeta|,
+    Pi h0=zeta/sqrt(I0),
+    z(tau,kappa)=i c0/sqrt(I0) integral_0^tau
+              exp[-i(tau-s)A(kappa)]zeta a(s,kappa) ds.       (X24)
+
+The excluded auxiliary c is not a physical zero mode. The transverse
+subspace is retained in A; z is not assumed to remain proportional to
+zeta. Zeta's possible lack of H1_q regularity is harmless: the proof uses
+bounded fiber operators and kappa derivatives, never D_b zeta.
+
+## 6. Complete bracket, symmetric form, and its kernel action
+
+The B/T normal form on physical sections is
+
+    R_ab=C_ab(K)+A_b(K)partial_Ka,
+    A_b=[H,J_b],
+    C_ab=delta_ab P(ell_a-H0)P+B_ab,
+    J_b=P[sin K_b cos(2q_b)]P-|h_b><h|-|h><h_b|,
+    h_b=partial_Kb h.                                      (X25)
+
+Here B_ab is exactly all of B13/T4. No rank term is deleted. All
+coefficients are smooth bounded fiber operators; B13 contains no derivative
+of the input in q. They extend R continuously from the common smooth core
+to `H1_K(L2_q)` on compact K support. The stronger supported estimates are
+used below only on f_free, never on the physical correction.
+
+Define
+
+    v_b(q)=sin(q_b)T_b,
+    L_b=P cos(2q_b)P+|v_b><v0|+|v0><v_b|.
+
+Expanding the exact current, including both rank terms, gives
+
+    partial_Ka J_b(0)=delta_ab L_b,
+    A_b(lambda kappa)/lambda -> kappa_b[H_*,L_b],
+    C_ab(lambda kappa) -> delta_ab H_*(L_b-I).                (X26)
+
+The last assertion can be checked before expanding ranks: on the common
+core, with `D_a=i(H partial_Ka+Dcal_a)`, its constant coefficient is
+`H partial_Ka J_b+[Dcal_a,J_b]-delta_ab H`. Since J_b(0)=0 as an
+operator and as a q-dependent expression, the commutator term vanishes
+there. Continuity of the bounded normal form gives the stated L2 identity.
+This argument does not apply the unbounded Dcal to zeta.
+
+For each pair a,b, put
+
+    Q_lambda,ab=C_ab(lambda kappa)
+                    +[A_b(lambda kappa)/lambda]partial_a,
+    Q_0,ab=delta_ab H_*(L_b-I)+kappa_b[H_*,L_b]partial_a.
+
+Then, on the fixed compact support,
+
+    T_lambda R_ab u=Q_lambda,ab T_lambda u,
+    Q_lambda,ab -> Q_0,ab in norm H1_kappa(mathcal H)->L2.       (X27)
+
+Both exact and limiting first-order forms are symmetric on compact-support
+H1 sections. For the exact form this follows first on the common smooth
+core because D_a is symmetric, J_b is bounded self-adjoint and preserves
+the core, and H is bounded self-adjoint. Consequently `-i[D_a,J_b]-delta_ab H`
+is symmetric there. Continuity `H1_K(L2_q)->L2` and density extend the
+pairing identity to the stated Sobolev domain. Alternatively, its coefficient
+identity is `C_ab-C_ab^*=partial_Ka A_b`, with `A_b^*=-A_b`.
+Integration by parts therefore gives the same form identity directly.
+No self-adjoint extension or exponentiation of D_a is needed.
+
+The limiting coefficient identity is explicit:
+
+    delta_ab{H_*(L_b-I)-[H_*(L_b-I)]^*}=delta_ab[H_*,L_b]
+       =partial_a(kappa_b[H_*,L_b]).                       (X28)
+
+For any kernel-valued H1 field z, its first derivative is also kernel
+valued. The complete limiting bracket therefore has the exact action
+
+    Q_0,ab z=H_* L_b (delta_ab z+kappa_b partial_a z)
+             =H_* L_b partial_a(kappa_b z),
+    <z,Q_0,ab z>=0.                                        (X29)
+
+The output in the first identity is in ran H_*, which is orthogonal to
+ker H_* because H_* is bounded self-adjoint. Equivalently, move H_* to
+the first entry and use H_*z=0. The identity holds after integrating over
+kappa and pointwise in kappa wherever the derivative exists. It does not
+say Q_0,ab z is the zero vector. For a unequal to b, both constant terms
+in (X28) vanish and partial_a kappa_b=0; the first-order part is still
+symmetric and (X29) still applies.
+
+Combining (X23) and (X27) also supplies the vector limit
+
+    lambda^-1/2 T_lambda R_ab psi_lambda(tau/lambda)
+                   -> Q_0,ab z(tau) in L2,                 (X30)
+
+uniformly for bounded tau, once the free-comparison estimate below is
+inserted. A possibly nonzero vector in (X30) is compatible with the
+vanishing pairing (X29).
+
+## 7. Every term in the actual expectation
+
+For `|tau|<=T`, free evolution preserves f_free's relative support and
+`lambda||partial_Ka f_free(tau/lambda)||<=60+T`. The full source estimate,
+including its global contact subtraction, is
+
+    ||R_ab v_lambda(tau/lambda)||
+       <=[4lambda^3+eta(32+12 B_a+12|tau|)]/n_lambda
+       <=C_T lambda^(3/2),
+    eta<=lambda^(3/2)/4,  B_a<60.                           (X31)
+
+Also `||v_lambda||<=1/n_lambda=O(1)` and by (X9) or (X23),
+
+    ||w_phys,lambda(tau/lambda)||=sqrt(lambda)||W_lambda(tau)||
+                                                 <=C_T sqrt(lambda).
+                                                               (X32)
+
+For every fixed lambda>0 and finite physical time, psi, v and w_phys
+belong to the same smooth compact-K-support domain. The commutators of
+H and H0 with each individual first q or K derivative are bounded, all
+derivatives of their coefficients are bounded, and P preserves smoothness.
+Duhamel and induction therefore propagate every finite Sobolev order.
+The bounds need not be uniform at these high orders. Thus the exact
+symmetric pairing is legitimate:
+
+    <v,R_ab w_phys>=<R_ab v,w_phys>.                        (X33)
+
+In the following exact decomposition, every vector is evaluated at
+physical time tau/lambda and W at rescaled time tau:
+
+    <psi,R_ab psi>/lambda
+       =<v,R_ab v>/lambda
+          +2 Re<R_ab v,w_phys>/lambda
+          +<W_lambda,Q_lambda,ab W_lambda>.                 (X34)
+
+The first term is O_T(sqrt(lambda)) by (X31). The sum of cross terms
+is O_T(lambda) by (X31)–(X33). This use of symmetry is essential: bounding
+`<v,R_ab w_phys>` by `||v||||R_ab w_phys||` would give an inadequate
+estimate. There is no assumption that v and w_phys are orthogonal.
+
+The last term converges uniformly on bounded tau intervals to
+`<z,Q_0,ab z>` by (X23) and (X27). For example, expand its difference as
+
+    <W-z,Q_lambda,ab W>
+       +<z,(Q_lambda,ab-Q_0,ab)W>
+       +<z,Q_0,ab(W-z)>.
+
+Uniform H1 bounds, coefficient convergence, and strong H1 convergence
+make all three terms vanish. By (X29), the limiting pairing is zero.
+Together with the first two bounds in (X34), this proves (X1).
+
+There is a useful weaker-topology cross-check of this final step. The
+expectation alone only needs (X21), a uniform H1 bound from (X13), and
+symmetry of Q_0,ab. Indeed
+
+    <W,Q_0,ab W>-<z,Q_0,ab z>
+      =<W-z,Q_0,ab W>+<Q_0,ab z,W-z>,                        (X35)
+
+which tends to zero already by strong L2 convergence and uniform H1
+boundedness. The coefficient difference is controlled by (X27). Thus
+the expectation proof has this additional check; it is not logically
+dependent on inferring a derivative limit from a state-norm limit.
+
+At tau=0, W=z=0 and (X31) directly gives the result. Negative finite
+tau obeys the same estimates with absolute times as explained after
+(X17). No statement here covers tau growing without bound as lambda
+tends to zero, and no numerical rate for the gapless limit is claimed.
+
+## 8. Checks, failed shortcuts, and remaining scientific gate
+
+The new load-bearing argument is the explicit analytic proof (X14)–(X23)
+and the exact symmetric-form decomposition (X34). The spectral theorem for
+a bounded self-adjoint operator, unitarity, finite-net compactness, bounded
+operator differentiation, and integration by parts are the mathematical
+tools used; all relevant hypotheses are checked above. No external
+literature value or continuum extrapolation supplies a theorem premise.
+`boost_current_expectation/AUTHOR_CHECK.md` records a corrected-approximate-
+solution check of the cutoff identity, an explicit continuous-spectrum
+diagnostic for the absence of a claimed rate, the all-index form check,
+and the small-tau match to the previously checked Gamma_b. These remain
+author checks, with no claim of independent review.
+
+The source's nonzero differential coefficient and mixed-band counterexample
+remain unchanged. The previously reviewed T1–T24 norm obstruction remains
+unchanged. In particular (X1) is not a norm improvement, a uniform operator
+claim on a low-energy window, or a result for other preparations.
+
+The following shortcuts were considered and not used as proof:
+
+* Substituting inverse-energy time in the old norm upper bound does not
+  decide the expectation. Its failure as a tool is preserved, not recast
+  as a physical obstruction.
+* Isolating the initial Pi component ignores its cancellation with the
+  projected free state. Equation (X8) keeps the exact initial condition.
+* An inverse on the complete gapless complement is unavailable in this
+  argument. Only the cut-off inverse in (X16) is used.
+* Compact-vector convergence is not operator-norm convergence. The finite
+  epsilon-net proof in (X15) specifies exactly the uniformity used.
+* A kernel-only bound on an unproved error would be invalid. Equations
+  (X20)–(X22) first control the entire physical error with unitary estimates.
+* Dropping the source's phase derivative, the derivative coefficient of R,
+  either canonical current rank term, or the common-domain check would
+  leave a different calculation. Each is retained explicitly.
+* The recovered C2/finite-difference proposal is unnecessary: direct
+  differentiation of the exact error equation proves the needed statement.
+
+The separate source-bound independent review checked the cutoff limit,
+the differentiated error equation, exact normalization and symmetric form
+pairings, and reconstructed an alternative free-primitive/Volterra proof.
+Root's mechanism suggestions are disclosed coauthorship. A finite-dimensional
+model or passing provenance check cannot certify this infinite-dimensional
+gapless theorem. No scientific runner is claimed to do so.
+
+Full source identities, recovery copies, author checks and limitations are
+preserved losslessly under the milestone evidence's `boost_current_expectation/`
+and `boost_expectation_review/` paths. The original checkpoint and
+initial manifest were copied byte for byte before further work. No
+editable prompt files changed. No repository edits, PR, merge, audit,
+physical-axiom change, other-chat message, delegation, model override, or
+campaign-deadline extension was performed by this worker.

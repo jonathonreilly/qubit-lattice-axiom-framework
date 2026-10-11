@@ -1241,3 +1241,89 @@ What C3 does not establish:
 - C1 FAIL, as expected.
 - C2 INCONCLUSIVE rather than FAIL; the survey was thin on Kitaev all-sectors and T > 0.
 - C3 C-FAIL, as expected but for a different reason: a global Poincaré obstruction at any h, not a breakdown "beyond uniform strain".
+
+## Campaign C4 (owner, 2026-10-11, 16:21Z to 22:21Z, 6 hours)
+
+**Owner request:** "run the infinite-band network test - push this campaign for the next 6 hours".
+- **End:** 22:21Z (18:21 EDT). Unfinished lanes are marked "not completed (stopped at end)".
+- **Agents:** Opus 5.5 at xhigh.
+- **Referee:** every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded.
+- **Readings:** fixed before each run and not changed afterward.
+- All settings are test settings; any axiom change is named as a price only.
+
+**Lanes opened now, in parallel:**
+- **RI:** infinite-band networks (the owner's named test).
+- **RF:** preferred foliation. Escape (4) of lane RC: use the grid's own time slicing and give up GR's full constraint algebra.
+- **RD:** gapless-dressed bands. Escape (3) of lane RC: can a gapless continuum carry the exact SLAC face cusp?
+
+### Lane RI: infinite-band networks
+
+**Question.** Lane RC's escapes need matter that is not regular local single-band matter. Can a network with unboundedly many bands per cell supply all three of the following at once?
+- an exact SLAC band (C1);
+- no umklapp;
+- a closing global Poincaré sector (C3).
+
+Can the partner bands be decoupled? What does it cost the axioms?
+
+**Probes:**
+- **I1, theorem.** Is exact closure (C1 + C3) equivalent to the folded-continuum ("empty-lattice") tower E_n(k) = √(m² + |k + 2πn|²)? That tower is equivalent to an exact continuous translation generator, and so to infinitely many degrees of freedom per cell.
+  - Prove or refute this.
+  - Treat the partner-band problem: does Theorem A force each scattering partner to be SLAC with the same β?
+  - Identify the axiom cost against `MINIMAL_AXIOMS_2026-06-29.md`.
+- **I2, truncation.** Use N bands per cell, for example the empty-lattice tower truncated, or a coarse cell of the Z³ qubit lattice holding N sites.
+  - Measure the C3 Poincaré defect and the C1 closure residual as functions of N.
+  - Measure interband scattering at the truncation edge.
+  - Decide whether N-band truncation is equivalent to a finer lattice with spacing a/N.
+- **I3, realization within the axioms.** Can Z³ itself supply the tower, with matter living on coarse cells of L³ qubits and the fine grid as its internal bands?
+  - Compute how the C3 anomaly and the induced TT response from lattice-scale loop modes scale with L.
+  - Compare with P0's bound.
+
+**Fixed readings:**
+- **PASS:** an explicit network realizable under the four axioms (Z³, qubits, a nearest-neighbour rule; networks allowed) gives exact closure of C1 + C3 for free matter, with interacting matter free of umklapp. Any further cost is stated.
+- **FAIL:** exact closure is proved to require infinitely many degrees of freedom per cell (a Qubit or Lattice price), with every finite-N truncation inexact, AND the coarse-cell route (I3) leaves a lattice-scale anomaly or TT response that does not fall with L. Bounded to the stated classes.
+- **INCONCLUSIVE:** otherwise.
+- **Readout Q-RI:** the scaling of the defect with N or L, and the N* or L* needed for the P0-level bound.
+
+**Supervisor expectation:**
+- **I1:** exact closure ⇔ the empty-lattice tower ⇔ continuous translations; this costs Qubit/Lattice (infinite local dimension).
+- **I2:** for low-energy modes the defect falls like (ka/N)^p, but at the truncation edge it stays order one.
+- **I3:** the coarse-cell route is the ordinary continuum limit. Low-energy matter is fine, but lattice-scale modes in loops still carry an order-one zone-averaged anomaly, so the induced TT response does not fall with L.
+- **Lane:** FAIL (bounded), with the price "infinite local dimension per cell".
+
+### Lane RF: preferred foliation (the grid's slicing)
+
+**Question.** Give up GR's full constraint algebra. Keep spatial diffeomorphisms, or only the lattice's own symmetries, plus a preferred time slicing, as in khronometric / Hořava–Blas–Pujolas–Sibiryakov (BPS) or Einstein-aether gravity. The C3 boost obstruction then no longer applies. Does the resulting theory, coupled to lattice matter, pass every observational bound?
+- the speed of gravitational waves: GW170817, |c_T − 1| ≲ 1e-15;
+- PPN α1 and α2;
+- binary-pulsar radiation, including dipole radiation;
+- the scalar (khronon) mode's stability and strong coupling;
+- the Lorentz-violating matter couplings induced by lattice loops (the Collins et al. naturalness problem).
+
+**Probes:**
+- **F1, gravity sector.** The healthy-extension Hořava / khronometric parameter space after GW170817. Which region survives (literature, verified), and can the lattice's VS/N-type structure from lane R realize it?
+- **F2, matter sector.** In the preferred-foliation theory, does a lattice-scale loop of matter percolate Lorentz violation into the low-energy matter sector, and at what size? This is the Collins–Perez–Sudarsky–Urrutia–Vucetich problem. Count the tunings needed against the bounds, and compare with P0.
+
+**Fixed readings:**
+- **PASS:** an explicit preferred-foliation theory, realizable on the lattice, that passes every listed bound with no more tunings than P0 and no unstable or strongly coupled scalar at observed scales.
+- **FAIL:** every examined realization violates a listed bound or needs more tunings than P0. Bounded.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation:** GW170817 plus the PPN bounds leave a narrow khronometric window. The matter sector's Lorentz violation from lattice loops needs tunings comparable to P0 (Collins et al.). FAIL on tunings (bounded), or INCONCLUSIVE.
+
+### Lane RD: gapless-dressed bands
+
+**Question.** Lane RC's C1 (B2) left open whether a band dressed by a gapless continuum, a soft-emission threshold, can carry SLAC's exact face cusp, giving E² = m² + β|k|² exactly on the lifted zone.
+
+**Probes:**
+- **D1, analysis.** Treat a single band coupled to a gapless mediator: lattice photon, phonon, or Fermi sea.
+  - Is the dressed dispersion exactly SLAC anywhere?
+  - Can a threshold-touching cusp have exactly the SLAC form?
+  - What happens to the quasiparticle residue at the face (the infrared catastrophe)?
+- **D2, numerics.** Self-consistent one-loop and ladder self-energies in 1D and 2D toy models. Measure the face cusp shape and how far it deviates from SLAC.
+
+**Fixed readings:**
+- **PASS:** an explicit dressed band, under a nearest-neighbour rule with gapless mediators, that equals SLAC exactly on an open set including the face, with a finite residue.
+- **FAIL:** proved or checked that the dressed face cusp differs from SLAC, or that the residue vanishes there, for the stated classes. Bounded.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation:** the soft-emission threshold gives a cusp of the wrong form, a branch-point power law set by the coupling, or a vanishing residue (the infrared catastrophe). FAIL (bounded).

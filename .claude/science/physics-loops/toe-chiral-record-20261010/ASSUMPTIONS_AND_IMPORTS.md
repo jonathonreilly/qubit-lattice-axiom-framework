@@ -553,3 +553,10 @@
 - The checked sums are two-centre kernel cross sums. A kernel cross sum is not an alphabet mean.
 - The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 47
+
+- The ansatz is the scaled coefficient 4/3 vector plus an arbitrary chirality coefficient. The scaled coefficient 4 vector is not in this all-scale count.
+- The checked sums are two-centre kernel cross sums. A kernel cross sum is not an alphabet mean. The minor gcd is a polynomial identity in the chirality coefficient.
+- The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

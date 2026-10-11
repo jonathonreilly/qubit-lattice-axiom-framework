@@ -613,13 +613,24 @@ the chirality cap has cross sums `-6/5`, `-1/4`, and `1/2`. A chirality
 coefficient other than 1 is not given a full partner rank. The
 ten-kernel coefficient span is not classified. Runner `PASS=11 FAIL=0`.
 
+Cycle 47. On the same alphabet the sign product plus one cap generator
+minus one third of the other has scaled coefficient `4/3`. Chirality
+coefficient 0 has partner rank 7. The coefficient pairs of that vector
+and the chirality cap compress to 14 rows, and a running gcd of the
+10-by-10 minors is a nonzero multiple of the cube of the chirality
+coefficient. Every nonzero chirality coefficient therefore has partner
+rank 10. At heights 1 and 2, chirality coefficient 1 has cross sums
+`-6/5`, `-1/4`, and `1/2` against the three partners of coefficient 0.
+The scaled coefficient 4 vector is not in this all-scale count. The
+ten-kernel coefficient span is not classified. Runner `PASS=12 FAIL=0`.
+
 ## Next exact action
 
-Decide whether a chirality coefficient other than 1, on the scaled
-coefficient 4/3 vector, has a ten-kernel partner other than 0. Every
-nonzero chirality coefficient removes the original 3-dimensional
-partner, and coefficient 1 has partner rank 10. Do not claim the
-ten-kernel coefficient span is settled. Do not claim the
+Decide whether every nonzero chirality coefficient on the scaled
+coefficient 4 vector has partner rank 10. Coefficient 0 and coefficient
+1 both have partner rank 10. The scaled coefficient 4/3 vector has
+partner rank 10 for every nonzero chirality coefficient. Do not claim
+the ten-kernel coefficient span is settled. Do not claim the
 300-dimensional affine space is classified. Do not repeat the bond-space
 dimension count. Do not return to the modulus-3 triple. Do not invent a
 formation rate. Do not return to shells, plaquette corner weights, or

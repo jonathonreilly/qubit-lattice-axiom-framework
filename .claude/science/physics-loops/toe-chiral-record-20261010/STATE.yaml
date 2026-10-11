@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 46
-runner_result: PASS=11 FAIL=0
+cycle: 47
+runner_result: PASS=12 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Decide whether a chirality coefficient other than 1, on the scaled coefficient 4/3 vector, has a ten-kernel partner other than 0. Every nonzero chirality coefficient removes the original 3-dimensional partner, and coefficient 1 has partner rank 10. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
+next_exact_action: Decide whether every nonzero chirality coefficient on the scaled coefficient 4 vector has partner rank 10. Coefficient 0 and coefficient 1 both have partner rank 10. The scaled coefficient 4/3 vector has partner rank 10 for every nonzero chirality coefficient. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

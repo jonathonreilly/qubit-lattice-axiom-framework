@@ -232,3 +232,9 @@ swapped-dot coefficient 1 vector each have partner rank 10. The witness
 cross sums are `-6/5`, `-1/4`, and `1/2`. A chirality coefficient other
 than 1 is not given a full partner rank. The ten-kernel coefficient
 span is not classified.
+Cycle 47 shows that every nonzero chirality coefficient on the scaled
+coefficient `4/3` vector has partner rank 10. Coefficient 0 has partner
+rank 7. The minor gcd is a cube of the chirality coefficient. The
+witness cross sums at coefficient 1 are `-6/5`, `-1/4`, and `1/2`. The
+scaled coefficient 4 vector is not in this all-scale count. The
+ten-kernel coefficient span is not classified.

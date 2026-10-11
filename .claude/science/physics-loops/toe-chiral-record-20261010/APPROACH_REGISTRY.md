@@ -497,3 +497,15 @@ and `1/2`.
 
 Family not used: a chirality coefficient other than 1. That remains
 open. The 300-dimensional affine space is not this family.
+
+Cycle 47 target contract: whether a chirality coefficient other than 1,
+on the scaled coefficient 4/3 vector, has a ten-kernel partner other
+than 0.
+
+Family used: the 14-row chirality pencil of that vector, the cubic
+minor gcd, and the witness cross sums `-6/5`, `-1/4`, and `1/2` at
+coefficient 1.
+
+Family not used: the scaled coefficient 4 vector at a chirality
+coefficient other than 0 and 1. That remains open. The 300-dimensional
+affine space is not this family.

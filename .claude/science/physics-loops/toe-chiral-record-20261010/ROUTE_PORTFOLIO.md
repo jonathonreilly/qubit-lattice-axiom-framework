@@ -279,3 +279,11 @@ coordinate presentations are in the count. Every chirality coefficient
 has partner rank 10. It does not take the sum of the first and third
 even generators, and it does not classify the 300-dimensional affine
 space.
+
+Cycle 56 takes the first and third even generators plus both
+swapped-dot generators, with the second even generator omitted or
+included, on every ordered height pair. Both coordinate presentations
+are in the count. Every chirality coefficient has partner rank 10. It
+does not take a vector with both a nonzero swapped-dot coordinate and
+a nonzero scaled coordinate, and it does not classify the
+300-dimensional affine space.

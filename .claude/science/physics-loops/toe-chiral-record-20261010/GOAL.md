@@ -300,3 +300,17 @@ product `1`, swapped `-1`, and orthogonal `2`. The base image has rank
 and `5/2` have a nonzero constant gcd. The sum of the first and third
 even generators is not in this count. The ten-kernel coefficient span
 is not classified.
+Cycle 56 shows that on every ordered height pair, the first and third
+even generators plus both swapped-dot generators, with the second even
+generator omitted or included, have partner rank 10 at every chirality
+coefficient. On the source-same pairs the omitted coordinates are sign
+product `1`, swapped `-5/2`, and orthogonal `3`, and the included sum
+also has parallel `-1` and oblique `1`. On the other three pairs the
+omitted coordinates are sign product `1`, swapped `-2`, parallel `1`,
+oblique `1`, and orthogonal `2`, and the included sum has swapped `-1`.
+The base image has rank 10. The pivot minors at chirality coefficients
+`0`, `1`, `-1`, `-1/2`, `1/2`, `3/2`, `5/2`, `2`, `-2`, and `-2/3` have
+a nonzero constant gcd. The five coefficients `0`, `1`, `-1`, `-1/2`,
+and `5/2` are not this certificate. A vector with both a nonzero
+swapped-dot coordinate and a nonzero scaled coordinate is not in this
+count. The ten-kernel coefficient span is not classified.

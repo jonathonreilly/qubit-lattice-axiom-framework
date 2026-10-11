@@ -603,3 +603,19 @@ constant gcd of the pivot minors at coefficients 0, 1, -1, -1/2, and
 Family not used: the sum of the first and third even generators plus
 both swapped-dot generators. That remains open. The 300-dimensional
 affine space is not this family.
+
+Cycle 56 target contract: whether every chirality coefficient on the sum
+of the first and third even generators plus both swapped-dot generators
+has partner rank 10, together with the sum of all three even generators
+plus both swapped-dot generators.
+
+Family used: the first-and-third even-dot family. One 17-row chirality
+pencil on every ordered height pair, the rank-10 base image, and the
+constant gcd of the pivot minors at coefficients 0, 1, -1, -1/2, 1/2,
+3/2, 5/2, 2, -2, and -2/3. Both members and both coordinate
+presentations are in the family. The five coefficients 0, 1, -1, -1/2,
+and 5/2 are not this certificate.
+
+Family not used: a vector with both a nonzero swapped-dot coordinate
+and a nonzero scaled coordinate. That remains open. The 300-dimensional
+affine space is not this family.

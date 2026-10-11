@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 55
-runner_result: PASS=20 FAIL=0
+cycle: 56
+runner_result: PASS=21 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Decide whether every chirality coefficient on the sum of the first and third even generators plus both swapped-dot generators has partner rank 10. The first and second even generators plus both swapped-dot generators have partner rank 10 at every chirality coefficient on every ordered height pair. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
+next_exact_action: Decide whether every chirality coefficient on the sum of both swapped-dot generators and the cap generator of one ratio span has partner rank 10. The first and third even generators plus both swapped-dot generators, with the second even generator omitted or included, have partner rank 10 at every chirality coefficient on every ordered height pair. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

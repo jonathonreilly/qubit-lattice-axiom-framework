@@ -401,3 +401,16 @@ oblique `1`, and orthogonal `2`. On the other three pairs they are sign
 product `1`, swapped `-1`, and orthogonal `2`. It does not classify the
 sum of the first and third even generators, and it does not classify
 the 300-dimensional affine space. This is not an N-gate no-go.
+
+Cycle 56 prunes the reading that some chirality coefficient on the sum
+of the first and third even generators plus both swapped-dot generators,
+with the second even generator omitted or included, has a nonzero
+ten-kernel partner. On every ordered height pair, every chirality
+coefficient has partner rank 10. On the source-same pairs the omitted
+coordinates are sign product `1`, swapped `-5/2`, and orthogonal `3`,
+and the included sum also has parallel `-1` and oblique `1`. On the
+other three pairs the omitted coordinates are sign product `1`, swapped
+`-2`, parallel `1`, oblique `1`, and orthogonal `2`, and the included
+sum has swapped `-1`. It does not classify a vector with both a nonzero
+swapped-dot coordinate and a nonzero scaled coordinate, and it does not
+classify the 300-dimensional affine space. This is not an N-gate no-go.

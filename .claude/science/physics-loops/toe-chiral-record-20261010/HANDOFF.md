@@ -719,12 +719,32 @@ partner rank 10. The sum of the first and third even generators is not
 in this count. The ten-kernel coefficient span is not classified.
 Runner `PASS=20 FAIL=0`.
 
+Cycle 56. On every ordered height pair, the first-and-third even-dot
+family is the first and third even generators plus both swapped-dot
+generators, with the second even generator omitted or included. On the
+source-same pairs the omitted sum has sign-product coordinate `1`,
+swapped coordinate `-5/2`, and orthogonal coordinate `3`, and the
+included sum also has parallel coordinate `-1` and oblique coordinate
+`1`. On `(1, 3)`, `(2, 3)`, and `(3, 2)` the omitted sum has
+sign-product coordinate `1`, swapped coordinate `-2`, parallel
+coordinate `1`, oblique coordinate `1`, and orthogonal coordinate `2`,
+and the included sum has swapped coordinate `-1`. Each base image has
+rank 10. The coefficient pairs compress to 17 rows. The pivot minors
+at chirality coefficients `0`, `1`, `-1`, `-1/2`, `1/2`, `3/2`, `5/2`,
+`2`, `-2`, and `-2/3` have a nonzero constant running gcd, so every
+chirality coefficient has partner rank 10. The five coefficients `0`,
+`1`, `-1`, `-1/2`, and `5/2` are not this certificate. A vector with
+both a nonzero swapped-dot coordinate and a nonzero scaled coordinate
+is not in this count. The ten-kernel coefficient span is not
+classified. Runner `PASS=21 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every chirality coefficient on the sum of the first and
-third even generators plus both swapped-dot generators has partner rank
-10. The first and second even generators plus both swapped-dot
-generators have partner rank 10 at every chirality coefficient on every
+Decide whether every chirality coefficient on the sum of both
+swapped-dot generators and the cap generator of one ratio span has
+partner rank 10. The first and third even generators plus both
+swapped-dot generators, with the second even generator omitted or
+included, have partner rank 10 at every chirality coefficient on every
 ordered height pair. Do not claim the ten-kernel coefficient span is
 settled. Do not claim the 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the

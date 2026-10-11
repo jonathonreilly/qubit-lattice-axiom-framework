@@ -2200,3 +2200,36 @@ Removing μ_E currently takes one of these:
 - **Expected:** FAIL (bounded).
 
 **Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.
+
+### Lane RV4 results (2026-10-11, 22:44Z to 23:36Z)
+
+**Who ran it.** S1 (theorem) and S2 (numerics) were run on Claude Opus 5.5 at xhigh (same family). Both were refereed by codex gpt-5.6-sol at xhigh and CONFIRMED WITH CORRECTIONS. Files: `agents/RV4_S{1,2}_*`, scripts in `scripts/RV4/`.
+
+**Lane RV4: FAIL (bounded).**
+
+**S1.** Scope: gapped, single-band, free quadratic matter, with RN-L1 energy-current momentum p = ∇(ω²/2).
+- The bulk-flow coupling has the stated Jacobian response.
+- No periodic momentum field makes every shear flow divergence-free (the conformal Killing obstruction).
+  - Axis hopping protects only T_2g.
+  - Body-diagonal hopping protects only E_g.
+- Canonical SLAC leaves μ_E(1) = 1.4832833e-2.
+- The density prescriptions examined reduce to one of three things: a violation of the exact stress, a tuned coefficient, or R₀.
+- A finite-range non-separable symbol can zero both channels at one chosen mass, but the zero drifts with mass.
+- Cancelling over a range of masses is excluded for single-minimum analytic separable symbols, and for Morse symbols without cancellation at coincident critical levels.
+- Compact Ward covariance would enforce μ_E = μ_T2, but it is incompatible with the field-independent e^{−iP[ξ]} bulk response.
+
+**S2.** S2 found a genuine object: a finite-range, mass-independent O(h²) operator seagull for the nearest-neighbour free KG scalar.
+- It cancels the uniform-strain DOS Hessian in both shear channels.
+- It leaves intact RN-L1's linear stress, the linear first-class algebra, 1/r, and universal G.
+
+But it is only a homogeneous O(h²) completion that preserves the DOS. Its selection condition imposes the spectral invariance directly, it is not unique, and it is not derived from the axioms. So it sits in the definition/R₀-type disjunct, and it does not warrant PASS.
+
+**Open:**
+- field-dependent, non-uniform Ward completions;
+- degenerate or coincident-level non-separable bands;
+- multi-band and Berry structures;
+- interactions.
+
+**Against the registered expectation.** FAIL, as expected. Two corrections to my expectation:
+- The obstruction is the conformal Killing condition, which excludes every periodic symbol. I had stated it as linearity.
+- SLAC does not help: its E-flow has a zone-face sink and source.

@@ -1,0 +1,58 @@
+
+================ d=2  range<=4  (20 terms)  L=128 ================
+Q forms at M=1.0 built (0.0s)
+Q forms at M=0.3 built (0.0s)
+-- named symbols (mu_E, mu_T2, mu_tr) at M=1 | M=0.3
+   sin k (separable)                      +3.1518e-03 +0.0000e+00 -1.0392e-02 | +4.6538e-03 +0.0000e+00 -1.7104e-02
+   diag: sin kx cos ky [cos kz]           +0.0000e+00 +3.2556e-03 -3.9851e-03 | +0.0000e+00 +4.9450e-03 -7.5047e-03
+   improved (4/3 sin k - 1/6 sin 2k)      -1.5334e-03 +0.0000e+00 -2.3512e-02 | -4.3098e-04 +0.0000e+00 -3.4199e-02
+   Q_E(M=1.0) eigenvalues: min -7.533e-02 max +8.217e-02  (#neg 10, #pos 10)
+   Q_T2(M=1.0) eigenvalues: min -7.600e-02 max +8.072e-02  (#neg 10, #pos 10)
+-- common zero mu_E=mu_T2=0 at M=1.0: |a - a_sin| = 0.0933
+   largest coefficients: [(np.float64(0.9932), (1, 0)), (np.float64(-0.0849), (2, 0)), (np.float64(0.0264), (1, 2)), (np.float64(-0.0115), (3, 0)), (np.float64(0.0095), (1, 3)), (np.float64(-0.0092), (2, 1))]
+   at M=1.0: mu_E=+1.6068e-16  mu_T2=-2.1283e-16  mu_tr=-1.1879e-02   [F(M2)-scale ref mu_E(sin k)=+3.1518e-03]
+   at M=0.3: mu_E=+7.3796e-04  mu_T2=+2.5855e-04  mu_tr=-1.7999e-02   [F(M2)-scale ref mu_E(sin k)=+4.6538e-03]
+-- common zero mu_E=mu_T2=0 at M=0.3: |a - a_sin| = 0.1059
+   largest coefficients: [(np.float64(0.9914), (1, 0)), (np.float64(-0.0877), (2, 0)), (np.float64(0.033), (1, 2)), (np.float64(-0.0224), (3, 0)), (np.float64(0.0178), (1, 3)), (np.float64(0.0149), (2, 3))]
+   at M=1.0: mu_E=-4.9241e-04  mu_T2=-3.2814e-04  mu_tr=-1.1577e-02   [F(M2)-scale ref mu_E(sin k)=+3.1518e-03]
+   at M=0.3: mu_E=+1.4355e-16  mu_T2=+5.7300e-17  mu_tr=-1.7557e-02   [F(M2)-scale ref mu_E(sin k)=+4.6538e-03]
+-- zero at M=1 AND M=0.3 (4 eqs): |a-a_sin|=0.1532; residual at other masses:
+   M=0.1: mu_E=-7.0262e-05 mu_T2=+5.9361e-05  (sin k mu_E +4.8629e-03)
+   M=0.5: mu_E=+6.2404e-05 mu_T2=-4.2895e-05  (sin k mu_E +4.2925e-03)
+   M=2.0: mu_E=-4.2325e-04 mu_T2=+1.8202e-04  (sin k mu_E +1.4397e-03)
+   M=4.0: mu_E=-6.1546e-04 mu_T2=+2.2351e-04  (sin k mu_E +3.5160e-04)
+-- all-mass conditions: 60 quadratic forms (n<30, E and T2); numerical rank 40 (unknowns 20, minus 1 slope)
+   best sum of squared moments = 1.721e-06 (sin k: 8.537e-03);  |a| = 0.148
+   M=0.1: mu_E=+2.1825e-05 mu_T2=+4.0629e-04  (sin k mu_E +4.8629e-03)
+   M=0.3: mu_E=+2.0015e-05 mu_T2=+3.4186e-04  (sin k mu_E +4.6538e-03)
+   M=1.0: mu_E=+1.3236e-05 mu_T2=+1.5957e-04  (sin k mu_E +3.1518e-03)
+   M=3.0: mu_E=+6.5346e-06 mu_T2=+4.6579e-05  (sin k mu_E +6.7687e-04)
+
+================ d=3  range<=4  (60 terms)  L=48 ================
+Q forms at M=1.0 built (0.7s)
+Q forms at M=0.3 built (0.7s)
+-- named symbols (mu_E, mu_T2, mu_tr) at M=1 | M=0.3
+   sin k (separable)                      +1.9704e-03 +0.0000e+00 -1.5558e-02 | +2.6082e-03 +0.0000e+00 -2.1513e-02
+   diag: sin kx cos ky [cos kz]           +0.0000e+00 +1.0576e-03 -2.7447e-03 | +0.0000e+00 +1.4601e-03 -4.3329e-03
+   improved (4/3 sin k - 1/6 sin 2k)      -2.2768e-03 +0.0000e+00 -3.4149e-02 | -1.8597e-03 +0.0000e+00 -4.4007e-02
+   Q_E(M=1.0) eigenvalues: min -2.941e-02 max +3.640e-02  (#neg 31, #pos 29)
+   Q_T2(M=1.0) eigenvalues: min -2.665e-02 max +2.944e-02  (#neg 30, #pos 30)
+-- common zero mu_E=mu_T2=0 at M=1.0: |a - a_sin| = 0.0747
+   largest coefficients: [(np.float64(0.9949), (1, 0, 0)), (np.float64(-0.0727), (2, 0, 0)), (np.float64(0.0086), (1, 0, 2)), (np.float64(-0.0069), (2, 0, 1)), (np.float64(-0.0067), (3, 0, 0)), (np.float64(0.0022), (1, 0, 3))]
+   at M=1.0: mu_E=-8.6736e-19  mu_T2=-1.9482e-19  mu_tr=-1.7428e-02   [F(M2)-scale ref mu_E(sin k)=+1.9704e-03]
+   at M=0.3: mu_E=+3.7401e-04  mu_T2=+1.8090e-05  mu_tr=-2.3065e-02   [F(M2)-scale ref mu_E(sin k)=+2.6082e-03]
+-- common zero mu_E=mu_T2=0 at M=0.3: |a - a_sin| = 0.0867
+   largest coefficients: [(np.float64(0.9931), (1, 0, 0)), (np.float64(-0.083), (2, 0, 0)), (np.float64(0.0115), (1, 0, 2)), (np.float64(-0.0112), (3, 0, 0)), (np.float64(-0.0098), (2, 0, 1)), (np.float64(-0.0043), (3, 0, 1))]
+   at M=1.0: mu_E=-3.1724e-04  mu_T2=-2.2710e-05  mu_tr=-1.7589e-02   [F(M2)-scale ref mu_E(sin k)=+1.9704e-03]
+   at M=0.3: mu_E=+3.2309e-17  mu_T2=-1.7639e-16  mu_tr=-2.3151e-02   [F(M2)-scale ref mu_E(sin k)=+2.6082e-03]
+-- zero at M=1 AND M=0.3 (4 eqs): |a-a_sin|=0.1709; residual at other masses:
+   M=0.1: mu_E=-1.9383e-05 mu_T2=+6.1300e-06  (sin k mu_E +2.6857e-03)
+   M=0.5: mu_E=+2.0008e-05 mu_T2=-5.2408e-06  (sin k mu_E +2.4672e-03)
+   M=2.0: mu_E=-2.0328e-04 mu_T2=+3.4809e-05  (sin k mu_E +1.0577e-03)
+   M=4.0: mu_E=-3.6005e-04 mu_T2=+5.2963e-05  (sin k mu_E +3.0684e-04)
+-- all-mass conditions: 84 quadratic forms (n<42, E and T2); numerical rank 77 (unknowns 60, minus 1 slope)
+   best sum of squared moments = 4.898e-10 (sin k: 2.695e-03);  |a| = 1.638
+   M=0.1: mu_E=+1.5922e-06 mu_T2=+2.5940e-07  (sin k mu_E +2.6857e-03)
+   M=0.3: mu_E=+1.3519e-06 mu_T2=+2.1320e-07  (sin k mu_E +2.6082e-03)
+   M=1.0: mu_E=+6.0552e-07 mu_T2=+1.0037e-07  (sin k mu_E +1.9704e-03)
+   M=3.0: mu_E=+1.4133e-07 mu_T2=+4.2923e-08  (sin k mu_E +5.5361e-04)

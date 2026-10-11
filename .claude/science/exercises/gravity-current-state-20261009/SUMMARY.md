@@ -504,3 +504,15 @@ Refereed result: FAIL at the controlled level, bounded to the scalar readout and
 Two items stay open: sources with no definite switch-on, and a fully proved transfer from the scalar model to real photons.
 
 Details: `TESTS.md`, "Lane RZ results".
+
+## 19. Lane RV4: can a principle remove the free shear mass? (owner, 2026-10-11)
+
+**In plain words: no principle found. Refereed FAIL, bounded.**
+- **Choosing the grid's momentum.** No choice protects both shear modes. Axis hopping protects one; body-diagonal hopping protects the other.
+- **Long-range (SLAC) momentum** makes it worse, not better.
+- **Tuning** can cancel both modes at a single mass, but the cancellation drifts as the mass changes.
+- **A density-of-states-preserving term.** One genuine local term exists that keeps the spectrum unchanged under strain and so removes the shear mass. But it works only because it imposes that invariance directly. It is not unique, and nothing in the axioms requires it. That makes it the R₀ rule in operator form, not a derivation.
+
+**Status.** The E_g shear mass from free local matter stands. Removing it costs a tuning or an imposed rule.
+
+**Still open.** Field-dependent gauge completions with non-uniform strain, and multi-band matter.

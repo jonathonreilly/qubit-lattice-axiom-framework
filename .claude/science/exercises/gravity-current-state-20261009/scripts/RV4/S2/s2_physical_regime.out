@@ -1,0 +1,7 @@
+sin k      : c_0..c_3 (E) = ['+2.6958e-03', '+2.0258e-03', '+1.2729e-03', '+2.2026e-03']  (c_3 IR-divergent: grid value only)
+improved   : c_0..c_3 (E) = ['-1.8002e-03', '+1.3737e-03', '+7.9057e-04', '+4.5077e-04']  T2 all 0 (separable)
+solution: |a - a_improved| = 0.6106, |a - a_sin| = 0.5917; max constraint violation 2.5e-16
+   c_n (E): ['+8.9e-19', '-5.4e-20', '-5.5e-18', '+7.6e-18']  c_n (T2): ['+2.3e-18', '-1.0e-18', '+5.4e-20', '-8.7e-19']
+   finite mass M=1.0: mu_E=-1.0918e-06 mu_T2=+4.3569e-06 mu_tr=-1.9550e-02  (sin k mu_E +1.9704e-03)
+   finite mass M=0.3: mu_E=-7.4357e-10 mu_T2=+1.5036e-08 mu_tr=-2.6798e-02  (sin k mu_E +2.6082e-03)
+   E∇E violation rms(p_x - sin kx)/rms(sin kx) = 0.4248;  max|a| = 1.163

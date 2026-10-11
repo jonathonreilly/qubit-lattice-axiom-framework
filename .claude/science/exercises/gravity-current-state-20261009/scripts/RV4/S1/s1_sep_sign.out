@@ -1,0 +1,8 @@
+monotone bands: 69 samples
+   m=0.2: min muE = -2.0522e-05  max muE = +6.5847e+00  frac negative = 0.014
+   m=1.0: min muE = +3.8553e-05  max muE = +6.8767e+00  frac negative = 0.000
+   m=3.0: min muE = +3.1171e-06  max muE = +8.2630e+00  frac negative = 0.000
+non-monotone bands: 146 samples
+   m=0.2: min muE = -1.0674e-03  max muE = +5.8555e-02  frac negative = 0.021
+   m=1.0: min muE = -4.4371e-04  max muE = +5.7122e-02  frac negative = 0.027
+   m=3.0: min muE = -4.1556e-05  max muE = +3.5914e-02  frac negative = 0.021

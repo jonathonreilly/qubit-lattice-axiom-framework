@@ -1,0 +1,27 @@
+separable family u = c + a c^2 (monotone bands need a > -1/4): muE(m=1) at a = -0.249: (np.float64(0.0003247258022913396), np.float64(-0.0))
+separable, non-monotone a = -0.4, -0.6: (np.float64(0.00017392616194162824), np.float64(-0.0)) (np.float64(nan), np.float64(nan)) min u -1.1910157291795906
+g, b_E(g), b_T2(g):
+  g=0.2: b_E=0.047715  b_T2=0.013486  diff=+3.423e-02
+  g=0.5: b_E=0.048108  b_T2=0.027872  diff=+2.024e-02
+  g=1.0: b_E=0.045393  b_T2=0.044448  diff=+9.449e-04
+  g=2.0: b_E=0.038133  b_T2=0.069860  diff=-3.173e-02
+  g=4.0: b_E=0.027624  b_T2=0.130638  diff=-1.030e-01
+root g* = 1.0269110395457544
+tuned symbol: g*=1.02691104, b*=0.04520227; mu at m=1, N=48: (np.float64(-1.6942465948706817e-16), np.float64(-1.6550546941171315e-16))  N=96: (np.float64(-1.6897491636366676e-16), np.float64(-1.6576246548222824e-16))
+min u: 0.0036115240572239106
+mass dependence of the tuned symbol (muE, muT2), RN-L1 norm:
+   m=0.05: (np.float64(0.0002451404144130116), np.float64(0.0002628931871783291))
+   m=0.2: (np.float64(0.00023114546581005924), np.float64(0.00024732603482733397))
+   m=0.5: (np.float64(0.00016248407217080705), np.float64(0.00017216357512335391))
+   m=1.0: (np.float64(-1.6864764793012021e-16), np.float64(-1.6588293239028218e-16))
+   m=2.0: (np.float64(-0.0002185428020635359), np.float64(-0.00022205364798812626))
+   m=4.0: (np.float64(-0.0002657200996802455), np.float64(-0.0002667999277357689))
+TRIM Hessians (Theorem C needs Hess ~ I at every nondegenerate critical point):
+   G: u=0.0000 Hess eig=[1. 1. 1.]  psi_E1=+0.0000 psi_E2=+0.0000
+   X: u=2.0000 Hess eig=[-1.            0.0313252499  0.0313252499]  psi_E1=-1.0313 psi_E2=-0.5954
+   M: u=2.0627 Hess eig=[-0.0313252499 -0.0313252499  1.0892042449]  psi_E1=+0.0000 psi_E2=-1.2939
+   R: u=4.2411 Hess eig=[-1.0892042449 -1.0892042449 -1.0892042449]  psi_E1=+0.0000 psi_E2=+0.0000
+   cumulative 2nd-order DOS change C_E(E) at 12 levels: [ 3.74e-05  4.10e-04  1.68e-03  4.37e-03  8.67e-03  1.07e-02  5.48e-03
+  1.07e-03 -1.54e-03 -2.75e-03 -3.10e-03 -3.13e-03]
+   cumulative 2nd-order DOS change C_T2(E) at 12 levels: [ 6.31e-05  6.16e-04  2.17e-03  4.77e-03  7.66e-03  8.44e-03  5.55e-03
+  1.89e-03 -9.35e-04 -2.52e-03 -3.07e-03 -3.13e-03]

@@ -1,0 +1,2 @@
+M=1.0 margin>=0.2: common zero, |b-b_NN|=0.400; alpha=+0.143 beta=-1.456 (12a-2b=+4.634); vmax=1.132; mu at M=0.3: -0.048 +0.148 (/F_NN)
+M=1.0 margin>=0.6: common zero, |b-b_NN|=0.400; alpha=+0.143 beta=-1.456 (12a-2b=+4.634); vmax=1.132; mu at M=0.3: -0.048 +0.148 (/F_NN)

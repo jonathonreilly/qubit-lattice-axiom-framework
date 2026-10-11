@@ -1,0 +1,31 @@
+d=2 sin  E  M=1.0: mu_flow=+3.151813082185e-03 mu_G2=-3.151813082185e-03 sum=+4.337e-19
+d=2 sin  E  M=0.3: mu_flow=+4.653762971171e-03 mu_G2=-4.653762971171e-03 sum=+8.674e-19
+d=2 sin  T2 M=1.0: mu_flow=-0.000000000000e+00 mu_G2=+0.000000000000e+00 sum=+0.000e+00
+d=2 sin  T2 M=0.3: mu_flow=-0.000000000000e+00 mu_G2=+0.000000000000e+00 sum=+0.000e+00
+d=2 diag E  M=1.0: mu_flow=-0.000000000000e+00 mu_G2=+0.000000000000e+00 sum=+0.000e+00
+d=2 diag E  M=0.3: mu_flow=-0.000000000000e+00 mu_G2=+0.000000000000e+00 sum=+0.000e+00
+d=2 diag T2 M=1.0: mu_flow=+3.255558042835e-03 mu_G2=-3.255558042835e-03 sum=+8.674e-19
+d=2 diag T2 M=0.3: mu_flow=+4.945046929152e-03 mu_G2=-4.945046929152e-03 sum=+0.000e+00
+d=2 mix  E  M=1.0: mu_flow=+8.083314759352e-03 mu_G2=-8.083314759352e-03 sum=-1.735e-18
+d=2 mix  E  M=0.3: mu_flow=+9.547923317637e-03 mu_G2=-9.547923317637e-03 sum=+1.735e-18
+d=2 mix  T2 M=1.0: mu_flow=+1.441821338638e-02 mu_G2=-1.441821338638e-02 sum=-3.469e-18
+d=2 mix  T2 M=0.3: mu_flow=+1.653634480469e-02 mu_G2=-1.653634480469e-02 sum=+0.000e+00
+d=3 sin  E  M=1.0: mu_flow=+1.970388641879e-03 mu_G2=-1.970388641879e-03 sum=+4.337e-19
+d=3 sin  E  M=0.3: mu_flow=+2.608176932498e-03 mu_G2=-2.608176932498e-03 sum=+0.000e+00
+d=3 sin  T2 M=1.0: mu_flow=-0.000000000000e+00 mu_G2=+0.000000000000e+00 sum=+0.000e+00
+d=3 sin  T2 M=0.3: mu_flow=-0.000000000000e+00 mu_G2=+0.000000000000e+00 sum=+0.000e+00
+d=3 diag E  M=1.0: mu_flow=-7.175920655213e-21 mu_G2=+7.175920655213e-21 sum=+1.505e-36
+d=3 diag E  M=0.3: mu_flow=-6.924644501629e-21 mu_G2=+6.924644501629e-21 sum=-1.505e-36
+d=3 diag T2 M=1.0: mu_flow=+1.057627750436e-03 mu_G2=-1.057627750436e-03 sum=+0.000e+00
+d=3 diag T2 M=0.3: mu_flow=+1.460141104107e-03 mu_G2=-1.460141104107e-03 sum=+0.000e+00
+d=3 mix  E  M=1.0: mu_flow=+1.175326823881e-03 mu_G2=-1.175326823881e-03 sum=+2.168e-19
+d=3 mix  E  M=0.3: mu_flow=+1.552088581039e-03 mu_G2=-1.552088581039e-03 sum=+2.168e-19
+d=3 mix  T2 M=1.0: mu_flow=+1.101194265680e-03 mu_G2=-1.101194265680e-03 sum=+2.168e-19
+d=3 mix  T2 M=0.3: mu_flow=+1.459912347345e-03 mu_G2=-1.459912347345e-03 sum=+0.000e+00
+G2 mass independence maxdiff=0.000e+00; Fourier max-norm range=3, support_modes=16
+3D NN half-density mu=-8.102748913366e-02; cstar(M=1)=0.00600635
+conformal nonzero-mode full-rank failures=0
+body-diagonal parity zeros=0.0e+00,0.0e+00,0.0e+00,0.0e+00
+body-diagonal <Hess Phi> diagonal=-1.07e-19,+1.88e-20,-4.08e-21 so <Hess Phi-I>=-I
+count d=2: coefficients=20, slope-free=19, Chebyshev moments=30, quadratic conditions=60
+count d=3: coefficients=60, slope-free=59, Chebyshev moments=42, quadratic conditions=84

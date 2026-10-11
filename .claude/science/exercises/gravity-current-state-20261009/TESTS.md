@@ -1609,3 +1609,17 @@ Refereed by codex sol: NOT CONFIRMED, so the result is INCONCLUSIVE. Files: `age
 - the α term alone does not cure it.
 
 **Why it is not a FAIL.** The anomaly does not uniquely determine that action or its spectrum.
+
+#### Lane RW follow-up W3 (17:43Z): is there a ghost-free completion?
+
+**Question.** The W2 referee found that the anomaly does not uniquely determine the Stückelberg/Wess–Zumino action. So the question becomes: does the most general quadratic action, consistent with the C3 anomaly plus every gauge-invariant addition (λ ≠ 1, α, β, higher-derivative terms), allow a choice that has all of the following?
+- only the 2 TT modes propagating, or the extra scalar healthy (no ghost, no tachyon);
+- consistency with the khronometric window (F1);
+- no tuning beyond P0.
+
+**Fixed readings.**
+- **PASS:** an explicit region of parameter space that is ghost-free and tachyon-free, inside the observational window, reached without tuning beyond P0.
+- **FAIL:** every completion within the stated class (quadratic, up to stated derivative order) has a ghost or tachyon, or needs tuning beyond P0.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.** A healthy region exists at λ ≠ 1, as in healthy Hořava, where the khronon is healthy for an appropriate sign of (λ − 1). It requires α and λ − 1 in the khronometric window. The question is whether the anomaly forces a sign incompatible with that region. Reading: INCONCLUSIVE, leaning PASS-for-health but FAIL-for-tuning, since the khronometric tunings (F1) come on top of P0.

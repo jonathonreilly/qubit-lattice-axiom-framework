@@ -330,8 +330,7 @@ worktrees. Do not overwrite frozen proofs or the historical failed controls.
   Root read the full report/reconstruction/helper and all outputs, verified34
   artifact and13 instruction identities, and reconstructed both actual review
   mutants. Its S20 author premise now has the separate completed review above.
-  Both historical sources remain unchanged. spectral_edge_recovery is composing
-  a separate complete edge/occupation note and three-helper primary externally.
+  Both historical sources remain unchanged. The separate edge/occupation composition is now published in regular PR #9482, as recorded below.
 
 ## Current publication preparation
 
@@ -369,38 +368,94 @@ excluding code blocks fixed the scanner without changing any note. The first
 manifest write was repeated after the final graph build completed. These are
 mechanical preparation corrections, not mathematical repairs.
 
-walk_worktree is clean on the next branch
+Regular PR #9482 is OPEN,isDraft=false,attached to this chat:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9482
+Science revision ba74c93aab9185d62a9711695dc931446f67c8ba, branch
 physics-loop/toe-quantitative-memory-transfer-20261011, based on #9481 at
-d8480b5a6e04102ff076b3dd6f817a2d43f20252. No next theorem has yet been copied
-into it. The final quantitative-memory composition is external work in progress.
+d8480b5a6e04102ff076b3dd6f817a2d43f20252. walk_worktree is clean on this branch.
+The final note is 69745b81cfbfb6676faa99e9e5491ddc94a8afdb97049802861a7b105bb711d9;
+primary bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d.
+The composition retains all S1-S21 and A2-A9 mathematics, with explicit exact
+source maps. Root read the full combined argument, wrapper, added premises and
+all baseline outputs. Separate source-bound edge and occupation reviews are
+complete, and their old conditional linkage is now resolved. Root composition
+review discloses authorship of A2-A9 and the suggested Lp route. All eleven
+whole-primary semantic mutations fail at intended assertions, with expected
+helper-hash refresh explicitly disclosed. Canonical run took 1.273159266s,
+exit0/empty stderr, fresh inputs. All168 worktree/index file identities and
+whitespace passed;146 frozen evidence copies are preserved. Citation delta
+one node/three edges, links, vocabulary and focused compatibility completed.
+Global combined audit pipeline and strict audit lint remain independent gates.
 
-Latest repo sync: main unchanged at a13caa4885f547c8d206265b031ba7649e539fd9.
-Candidate-law PR#9476 is frozen for this assessment at
-d009fb786d36a6cab4a7d410630b9382992faa08. Nine source copies and manifest are
-under resume_20261011/repo_sync_rc_2045/. Root read complete C1 and both referee
-sources; C2/C3 have not yet been fully read by root. spatial_prior_art read all
-nine sources and produced NEXT_DERIVATION_RC_ROUTE_ASSESSMENT.md at
- dd6712773c2af435e81bd16c305c2e065f8a99177bc342728a29f750db4923f0.
-Root read that complete assessment. C4 underlying sources remain uninspected;
-no broad exclusion in the summary is accepted as a theorem here.
+Latest repo sync around21:26UTC: main unchanged at
+a13caa4885f547c8d206265b031ba7649e539fd9. Candidate-law PR#9476 advanced from
+d009fb786d36a6cab4a7d410630b9382992faa08 to
+b568c14df54a5e64f904f54f0251b2173f9302c3. Exact changed-path/log inspection shows
+C4 additions and summary/price/test updates; C1/C2/C3 source files are unchanged.
+The new C4 arguments have not been inspected or adopted. No overlapping new
+interspecies or boost/current derivation was found in the changed-path inventory.
+The complete current open-PR inventory is resume_20261011/open_prs_2126.json.
+Root has read the complete frozen C1,C2,C3 reports and their available referees;
+the initial truncated C2 display was closed by a targeted complete reread.
+The frozen RC summary and underlying C4 sources have not been fully read by root.
 
-Two bounded new derivations are active externally. spatial_prior_art is
-computing the actual excluded walk's full boost/current bracket with contact
-and derivative terms, seeking a precisely scoped low-energy residual bound.
-This is a necessary matter-algebra test, not exact gravity closure.
-spatial_quantum_realization is testing interspecies-only collision-invariant
-rigidity in three dimensions. The tentative geometric K2,2 anchor argument
-could remove the self-scattering premise under full affine velocity span;
-cubic covariance needs a genuinely invariant regular domain. These are
-unproved active work, not publication results. No agent writes repo worktrees.
+The interspecies-only theorem is now frozen externally:
+INTERSPECIES_CURRENT_RIGIDITY_PROBE.md,559lines,
+ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8;
+author receipt283511b410dafa614c1e4453483b540e744604e66b538a803516c8294379267f.
+Root read the entire argument and209-line helper/full log. Its separate
+268-line independent review is78c3bc3c8f223b988713cb5bd5210c1a801e8cdc5f428ee648d6284c400d97d6,
+receipt1c3c02926c6c35277fdde7a4b174b85d2471c3c3ec4da9d39681a3c9f2f68de7.
+Root read its complete report,188-line reconstruction, distinct exact helper
+and all15-control output, and verified23author records and43review occurrences
+(42distinctfiles). No mathematical repair was requested. Full affine velocity
+spans and local regular AB shell conservation give one common energy/momentum
+coefficient without AA/BB scattering. The current/cubic corollary requires
+additional current conservation and proper scalar-domain symmetry; common beta
+need not be positive. Domain/support counterexamples are preserved.
+
+The author's scoped Lean packet is frozen in interspecies_rigidity_lean/:
+RigidityGeometry.lean c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df;
+receipt4f1512919a9e4aa41cac168882d3975e4b95f72cd4620876aa7cc959201c9048.
+Root read its full principal source,scope,statement map,positive controls and
+final compiler/axiom logs. The six universal geometry statements and eight
+positive control theorems compile with only standard logical axioms. Full
+labeled extension, anchor extraction, IFT, measure and integration are outside
+formal coverage. Independent statement/evidence review is finishing; false
+controls and historical failures remain preserved. spatial_prior_art is
+composing a self-contained publication note/primary externally. Root alone
+will choose the main-based publication branch and edit repo worktrees.
+
+The boost/current probe is frozen at744lines,
+903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923;
+receipt3b44ce3a7d58f35a973dadd42ee3dc495cc7a9d80a5347ef440ebe0e75646398.
+Root read/reconstructed the complete proof,319-line Fourier control,74-line
+Pauli control and both complete outputs. It retains the nonzero differential
+term [H,J]partial_K, all contact terms and common H1 domain. A specified
+normalizable ++ origin-cone preparation has bracket residual<=384lambda^(3/2),
+commutator<=6lambda^(5/2),energy betweenlambda/2 and3lambda. A normalized
+mixed-band counterexample preserves the restriction to small individual
+momenta. This source itself is prepared-state only and has not been altered.
+
+Root has written EXCLUDED_WALK_EVOLVED_BOOST_CONTROL_DRAFT.md separately.
+It compares actual evolution with the projected free evolution using the
+explicit contact forcing h alpha, then differentiates all three Duhamel
+factors. Its proposed bound is lambda^(3/2)(384+1129t+18lambda t^2), hence
+o(lambda) uniformly fort<=lambda^(-gamma),gamma<1/2. This is an unreviewed
+extension at this checkpoint, not an independently checked result. Constants,
+normalization, propagator-domain and derivative estimates need selective review.
+Meanwhile spatial_quantum_realization is deriving a quantitative version of
+the interspecies rigidity theorem with explicit anchor conditioning; it has
+identified degeneration of a needed extra-anchor separation. No physical
+approximate-current law or derivative inference from mere charge error is made.
 
 ## Boundaries and next action
 
 Both checked transport and finite-preparation walk milestones are published.
 The checked flux/form/Lean and current/memory milestones are also published.
-Compose/check the quantitative edge and averaged-occupation milestone, while
-deriving the new boost/current and interspecies-rigidity questions. Further
-many-body work remains ranked behind these bounded tests.
+Publish the checked interspecies theorem with scoped Lean evidence; independently
+check the actual-evolution boost extension and finish the conditioned stability
+question. Further many-body work remains ranked behind these bounded tests.
 Keep identities and raw evidence current. Original mathematics is authorized. Lean may verify
 complex scoped obligations during audit; the universal rank-one algebra is now
 compiled and statement-checked, while analytic proof obligations remain separate.

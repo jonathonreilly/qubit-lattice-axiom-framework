@@ -668,3 +668,15 @@ nonzero constant maximal-minor gcd. The ten pivot samples do not.
 Family not used: one swapped-dot generator plus twice the cap of the
 same ratio span. That sum lies in the span. That remains open. The
 300-dimensional affine space is not this family.
+
+Cycle 61 target contract: whether every chirality coefficient on the sum
+of one swapped-dot generator and twice the cap of the same ratio span
+has partner rank 10.
+
+Family used: one swapped-dot generator plus twice the same-span cap.
+The 14-row pencil has maximal-minor gcd equal to a cube of the chirality
+coefficient. Partner rank is 7 only at coefficient 0.
+
+Family not used: one swapped-dot generator plus twice the cap of the
+other ratio span. That remains open. The 300-dimensional affine space
+is not this family.

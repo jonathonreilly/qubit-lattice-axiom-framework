@@ -355,3 +355,9 @@ The maximal-minor gcd is a nonzero constant. The pivot minors at the
 ten sample coefficients do not have a constant gcd. One swapped-dot
 generator plus twice the cap of the same span is not in this count. The
 ten-kernel coefficient span is not classified.
+Cycle 61 shows that one swapped-dot generator plus twice the cap of the
+same span lies in that span. Chirality coefficient 0 has partner rank 7,
+and every nonzero coefficient has partner rank 10. The maximal-minor gcd
+is a nonzero multiple of the cube of the chirality coefficient. The
+scaled coordinate is 4. Twice the cap of the other span is not in this
+count. The ten-kernel coefficient span is not classified.

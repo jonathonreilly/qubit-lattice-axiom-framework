@@ -450,3 +450,10 @@ the sum has swapped-dot coordinate `0` and scaled coordinate `4`. It
 does not classify one swapped-dot generator plus twice the cap of the
 same span, and it does not classify the 300-dimensional affine space.
 This is not an N-gate no-go.
+
+Cycle 61 prunes the reading that every chirality coefficient on one
+swapped-dot generator plus twice the cap of the same span has partner
+rank 10. Chirality coefficient 0 has partner rank 7, and every nonzero
+coefficient has partner rank 10. The scaled coordinate is `4`. It does
+not classify twice the cap of the other span, and it does not classify
+the 300-dimensional affine space. This is not an N-gate no-go.

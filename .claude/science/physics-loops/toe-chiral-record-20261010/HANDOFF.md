@@ -802,15 +802,29 @@ the chirality cap has kernel cross sum `-6`. One swapped-dot generator
 plus twice the cap of the same span is not in this count. The
 ten-kernel coefficient span is not classified. Runner `PASS=6 FAIL=0`.
 
+Cycle 61. On every ordered height pair, one swapped-dot generator plus
+twice the cap of the same ratio span lies in that span. The plus sum
+has transverse-sign coordinate `-2`, sign-product coordinate `-2`,
+matched coordinate `4`, swapped-dot coordinate `1`, and scaled
+coordinate `4`. The minus sum has transverse-sign coordinate `2`,
+sign-product coordinate `2`, and swapped-dot coordinate `-1`. Chirality
+coefficient 0 has partner rank 7. The partner kernel is that span on
+`(1, 2)`, `(2, 1)`, `(2, 3)`, and `(3, 2)`, and the other span on
+`(1, 3)` and `(3, 1)`. The 14-row pencil has maximal-minor gcd equal to
+a nonzero multiple of the cube of the chirality coefficient, so every
+nonzero coefficient has partner rank 10. At heights 1 and 2 the
+witness cross sums are `-2` and `2`. Twice the cap of the other span is
+not in this count. The ten-kernel coefficient span is not classified.
+Runner `PASS=6 FAIL=0`.
+
 ## Next exact action
 
 Decide whether every chirality coefficient on the sum of one
-swapped-dot generator and twice the cap of the same ratio span has
-partner rank 10. That sum lies in the span and has swapped-dot
-coordinate 1 or -1 and scaled coordinate 4. Both swapped-dot generators
-plus both cap generators have swapped-dot coordinate 0, scaled
-coordinate 4, and partner rank 10 at every chirality coefficient. Do
-not claim the ten-kernel coefficient span is settled. Do not claim the
+swapped-dot generator and twice the cap of the other ratio span has
+partner rank 10. One swapped-dot generator plus twice the cap of the
+same span has partner rank 7 only at chirality coefficient 0 and
+partner rank 10 at every nonzero coefficient. Do not claim the
+ten-kernel coefficient span is settled. Do not claim the
 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to

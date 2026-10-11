@@ -311,3 +311,8 @@ Every chirality coefficient has partner rank 10. The swapped-dot
 coordinate is `0` and the scaled coordinate is `4`. It does not take
 one swapped-dot generator plus twice the cap of the same span, and it
 does not classify the 300-dimensional affine space.
+
+Cycle 61 takes one swapped-dot generator plus twice the cap of the same
+span. Partner rank is 7 only at chirality coefficient 0. Every nonzero
+coefficient has partner rank 10. It does not take twice the cap of the
+other span, and it does not classify the 300-dimensional affine space.

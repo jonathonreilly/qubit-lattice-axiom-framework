@@ -6,14 +6,15 @@ window is 2026-10-11 16:00:52 UTC through 2026-10-12 16:00:52 UTC. Do not
 stop at the first milestone, extend the deadline, merge science, or apply audit
 verdicts. Original mathematics and scoped Lean audit work are authorized.
 
-The active target is to retain nonlinear convection in the supplied spatial
-collision-to-fluid chain, then remove concrete microscopic suppliers where a
-controlled construction is possible. The current nonlinear fluid theorem has
-a complete proof and selective independent check. Particle/mesh composition
-and a literal local-qubit carrier now have complete final-source checks and
-join the same regular milestone. The excluded walk's threshold scattering,
-finite-time packets and canonical energy-current estimates are the next active
-derivations, with their own pending source-bound checks.
+The nonlinear fluid, particle and local-qubit chain is published in regular
+PR #9478. The supplied excluded walk's central threshold, canonical current,
+finite-time band estimates and nonzero coherent-packet witness are published
+in regular PR #9479, science commit 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041.
+Both received selective source-bound independent checks, not applied audits.
+The next targets are physically normalized pair-scattering flux, controlled
+long-time band dressing and the dynamics of the full degenerate zero space.
+Leakage alone does not establish canonical-current drift; the known cancellation
+and the fixed-initial-vector scope of an effective limit must remain explicit.
 
 Quantifiers stay explicit: fixed D3Q27 velocities and supplied rates, Gibbs
 reference, kinetic clock, prepared fluctuations and a supplied smooth fluid

@@ -6,26 +6,30 @@ started_utc: 2026-10-11T16:00:52Z
 deadline_utc: 2026-10-12T16:00:52Z
 checkpoint_interval: 30m
 automation_id: toe-derivations-24-hour-campaign
-active_branch: physics-loop/toe-nonlinear-transport-20261011
-worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree
+active_branch: physics-loop/toe-excluded-walk-20261011
+worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree
+checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
 base_revision: a13caa4885f547c8d206265b031ba7649e539fd9
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
-parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
+transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: particle_qubit_composition_and_excluded_walk_threshold_scattering
+active_route: excluded_walk_flux_and_degenerate_zero_space_dynamics
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: nonlinear_fluid_particle_qubit_published
-strongest_unresolved_obligation: excluded_walk_uniform_threshold_and_canonical_current_independent_checks
-provisional_dependencies: parent_finite_velocity_collision_and_linear_fluid_results
-independent_checks: nonlinear_fluid_particle_qubit_complete_excluded_walk_active
+milestone: nonlinear_transport_and_finite_preparation_walk_published
+strongest_unresolved_obligation: flux_normalization_and_long_time_canonical_current_for_free_band_packets
+provisional_dependencies: supplied_excluded_walk_on_frozen_main; transport_stack_remains_separate
+independent_checks: fluid_particle_qubit_and_complete_walk_packet_checked; long_time_leakage_review_in_progress
 independent_audit: not_requested
-parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
-pr_status: regular_pr_9478_open
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
-published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
+transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
+transport_pr_status: regular_pr_9478_open
+active_pr_status: regular_pr_9479_open
+active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9479
+walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
+transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
+transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
-lock_refresh_before_utc: 2026-10-11T18:20:00Z
-next_action: complete_excluded_walk_threshold_Cook_canonical_and_coherent_packet_derivations
+lock_refresh_before_utc: 2026-10-11T19:05:00Z
+next_action: independently_check_long_time_leakage; derive_flux_and_gapless_zero_space_effective_dynamics
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion

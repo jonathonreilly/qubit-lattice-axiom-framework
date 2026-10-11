@@ -2078,3 +2078,25 @@ No PASS or FAIL is recorded for any lane on the basis of X1. E1's fixed readings
 - For independent emitters, the variances add, and each grows with that emitter's own τ ≈ √(2D·s_atom), where s_atom is about 1e-10 m to 1 m (coherence length).
 - For s ≈ 1 m and D = 1 Gpc: τ ≈ 2.5e13 m, and the e-folds come to about 0.63·√ε·τ/ℓ_k. The probe must compute ε from ℓ_k: ε = (ℓ/ℓ_k)⁴.
 - Expected reading: borderline. The answer depends on the coherence length, so INCONCLUSIVE.
+
+### C4 result recorded 21:28Z (Y1)
+
+**Lane RY, Y1: INCONCLUSIVE, strongly leaning FAIL.** The codex sol referee did NOT CONFIRM the worker's FAIL. Files: `agents/C4_Y1_*`.
+
+**What the referee confirmed.** Within the stable scalar layer-readout model, take any single finite emission current that has a spacelike past edge and a regular nonzero turn-on patch.
+- Its all-frequency ensemble field-variance rate is set by its full timelike separation from the observer, not by its coherence length. This non-Huygens mechanism is confirmed.
+- For emission Δt before the retarded time, the separation is τ ≈ √(2D·cΔt).
+- Independent phase averaging makes the unfiltered mean noise powers add.
+- At ℓ_k = 7.9e-20 m, the asymptotic exponent budget is already 4.5e4 for one second at 1 Gpc.
+
+**Why it is not yet a FAIL.** There is no finite-distance normalization, and no positive lower bound on the optical/radio band fraction. So this is strong evidence of an instability, but not yet an observational lensing FAIL. Nor is it a no-go for every long-lived source.
+
+### Campaign C4 closed (21:30Z; owner's end 22:21Z)
+
+- Every pre-registered probe returned, and every result is recorded with its referee verdict. No lane is left unfinished.
+- Synthesis: SUMMARY §17 and the PRICE_NOTE v6 delta (with wrap-up additions). X1 and Y1, added after §17 was written, are summarized in the closing entry below.
+- **Closing state of the event route:**
+  - Lensing in the mean: positive (RL2).
+  - Noise at the bar: FAIL, bounded (RL4).
+  - The bar itself is justified if ℓ_k is shared (X1, unrefereed).
+  - Noise for lensed light: INCONCLUSIVE, strongly leaning FAIL (Y1). The decisive missing piece is the band fraction and finite-distance normalization.

@@ -487,3 +487,7 @@ For the local, translation-covariant coupling, it is **false in E_g**.
 - RL was expected to PASS in the mean; it is INCONCLUSIVE leaning FAIL.
 
 Details and referee lines: `TESTS.md`, "Campaign C4".
+
+**Late additions to §17 (21:30Z).**
+- **X1 (unrefereed reading).** The 1e-19 m bar is the LHC Drell–Yan bound, and current collider bounds are tighter (≈ 4e-20 m). The event-route noise needs ℓ_k ≈ 4–7e-19 m. That is excluded if ℓ_k is shared with matter.
+- **Y1 (referee: INCONCLUSIVE, strongly leaning FAIL).** The readout noise is not Huygens: light emitted earlier also adds noise. The relevant scale is therefore the source's emission history, not its coherence length. At the photon's collider-bounded ℓ_k, that is about 4.5e4 variance e-folds per second of observing a source at 1 Gpc. What is still missing is the fraction of that noise falling in the observing band, plus a finite-distance normalization.

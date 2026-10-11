@@ -720,3 +720,17 @@ pivot gcd has degree 5.
 Family not used: both swapped-dot generators plus twice one cap and the
 other cap. That sum cancels the swapped-dot coordinate. That remains
 open. The 300-dimensional affine space is not this family.
+
+Cycle 65 target contract: whether every chirality coefficient on the sum
+of both swapped-dot generators and twice the cap of one ratio span plus
+the cap of the other ratio span has partner rank 10.
+
+Family used: the two sums, one for each choice of doubled cap. The
+swapped-dot coordinate is 0 and the scaled coordinate is 6. The 17-row
+pencil has a nonzero constant maximal-minor gcd. The twice-plus pivot
+gcd has degree 7. The twice-minus pivot gcd has degree 7 on (1, 2),
+(2, 1), and (3, 1), and degree 5 on the other three pairs.
+
+Family not used: both swapped-dot generators plus twice the cap of each
+ratio span. That remains open. The 300-dimensional affine space is not
+this family.

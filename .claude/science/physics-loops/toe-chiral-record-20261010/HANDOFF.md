@@ -875,15 +875,33 @@ Both swapped-dot generators plus twice one cap and the other cap are
 not in this count. The ten-kernel coefficient span is not classified.
 Runner `PASS=9 FAIL=0`.
 
+Cycle 65. On every ordered height pair, both swapped-dot generators
+plus twice the cap of one ratio span plus the cap of the other ratio
+span have swapped-dot coordinate `0`, swapped coordinate `-2`,
+orthogonal coordinate `2`, matched coordinate `6`, and scaled coordinate
+`6`. The twice-plus sum has transverse-sign coordinate `-1` and
+sign-product coordinate `-1`. The twice-minus sum has transverse-sign
+coordinate `1` and sign-product coordinate `1`. Each lies in neither
+ratio span and outside the even space. The two sums are linearly
+independent. The base image has rank 10. The coefficient pairs compress
+to 17 rows, and the gcd of the 10-by-10 minors is a nonzero constant,
+so every chirality coefficient has partner rank 10. The twice-plus
+pivot gcd has degree `7` on every pair. The twice-minus pivot gcd has
+degree `7` on `(1, 2)`, `(2, 1)`, and `(3, 1)`, and degree `5` on
+`(1, 3)`, `(2, 3)`, and `(3, 2)`. At heights 1 and 2 the bond on `-e_x`
+and `-e_y` against the chirality cap has kernel cross sums `-10` and
+`-6`. Twice the cap of each ratio span is not in this count. The
+ten-kernel coefficient span is not classified. Runner `PASS=7 FAIL=0`.
+
 ## Next exact action
 
 Decide whether every chirality coefficient on the sum of both
-swapped-dot generators and twice the cap of one ratio span plus the cap
-of the other ratio span has partner rank 10. One swapped-dot generator
-plus twice one cap and the other cap has partner rank 10 at every
-chirality coefficient, and the swapped-dot coordinate is 1 or -1.
-Do not claim the ten-kernel coefficient span is settled. Do not claim
-the 300-dimensional affine space is classified.
+swapped-dot generators and twice the cap of each ratio span has partner
+rank 10. Both swapped-dot generators plus twice one cap and the other
+cap have partner rank 10 at every chirality coefficient, and the
+swapped-dot coordinate is 0. Do not claim the ten-kernel coefficient
+span is settled. Do not claim the 300-dimensional affine space is
+classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`

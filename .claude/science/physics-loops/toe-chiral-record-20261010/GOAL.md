@@ -393,3 +393,13 @@ degree 5 on the other three pairs. The minus-dot twice-minus pivot gcd
 has degree 5 on every pair. Both swapped-dot generators plus twice one
 cap and the other cap are not in this count. The ten-kernel coefficient
 span is not classified.
+Cycle 65 shows that both swapped-dot generators plus twice the cap of
+one ratio span plus the cap of the other ratio span have partner rank
+10 at every chirality coefficient on every ordered height pair. The
+swapped-dot coordinate is 0 and the scaled coordinate is 6. Each sum
+lies in neither ratio span and outside the even space. The two sums are
+linearly independent. The maximal-minor gcd is a nonzero constant. The
+twice-plus pivot gcd has degree 7 on every pair. The twice-minus pivot
+gcd has degree 7 on (1, 2), (2, 1), and (3, 1), and degree 5 on the
+other three pairs. Twice the cap of each ratio span is not in this
+count. The ten-kernel coefficient span is not classified.

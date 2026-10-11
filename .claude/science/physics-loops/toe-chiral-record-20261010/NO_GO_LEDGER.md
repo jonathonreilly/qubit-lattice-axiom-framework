@@ -486,3 +486,11 @@ is `6`. The four sums have rank `3`. It does not classify both
 swapped-dot generators plus twice one cap and the other cap, and it
 does not classify the 300-dimensional affine space. This is not an
 N-gate no-go.
+
+Cycle 65 prunes the reading that some chirality coefficient on the sum
+of both swapped-dot generators and twice the cap of one ratio span plus
+the cap of the other ratio span has a nonzero ten-kernel partner. On
+every ordered height pair, every chirality coefficient has partner rank
+10. The swapped-dot coordinate is `0` and the scaled coordinate is `6`.
+It does not classify twice the cap of each ratio span, and it does not
+classify the 300-dimensional affine space. This is not an N-gate no-go.

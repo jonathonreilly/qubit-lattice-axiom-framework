@@ -2690,3 +2690,71 @@ Conformance, section by section:
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
     The loop-pack directory is skipped by that lint. The full audit
     pipeline was not run.
+
+## 2026-10-11 author check, cycle 46
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms on origin/main at the base `0b208e91cfc`, the
+   cycle-39 even-span note, and the cycle-32 ratio-span note, both
+   notes on this branch. The ten-generator kernel, the chirality
+   restriction, and the witness sums are computed in this runner. The
+   order-blind converse is not applied. The even space is named in
+   cycle 39. The two spans are named in cycle 32. The partner kernel
+   at chirality coefficient 0 is recomputed here. The dimension count
+   of the soldered bond space is not repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_even_both_spans_chirality_partner_kernel_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `0c8c73fed0602c1a1ba5898a8ae9fd3056d5e4d73955ae49397c73b1ca28c5ea`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=11 FAIL=0`.
+   Elapsed 25.87 seconds.
+3. Scope. The even space, both ratio spans, and the chirality cap, on
+   the 48 signed permutations of `(1, 2, 3)`. The sum is 10-dimensional.
+   The ten-generator map has rank 49 and nullity 51. The chirality cap
+   alone has partner rank 7. The scaled coefficient `4/3` has partner
+   rank 7, and the chirality block has rank 3 on that partner, so every
+   nonzero chirality coefficient removes those partners. Chirality
+   coefficient 1 gives that vector, the scaled coefficient 4 vector,
+   and the swapped-dot coefficient 1 vector partner rank 10. The
+   witness cross sums are `-6/5`, `-1/4`, and `1/2`. A chirality
+   coefficient other than 1 is outside the full partner-rank count.
+   The ten-kernel coefficient span is not classified. The full soldered
+   bond space is not classified. Status line `proposed_retained`.
+   Surface status `bounded-support`.
+4. N-gate does not apply. The artifact classifies chirality coefficient
+   1 on three vectors in the even space and both ratio spans. It does
+   not claim that no other chirality coefficient has a nonzero partner.
+5. Obligations are in the note. The missing lemma is whether a
+   chirality coefficient other than 1, on the scaled coefficient `4/3`
+   vector, has a ten-kernel partner other than 0.
+6. Mutations, each on a scratch copy, exited 1. Requiring the
+   ten-generator rank to be 48 gave `PASS=10 FAIL=1` on the chirality
+   check. Requiring the coefficient `4/3` plus chirality coefficient 1
+   to have partner rank 9 gave `PASS=10 FAIL=1` on the chirality check.
+   Requiring the chirality restriction to have rank 2 gave
+   `PASS=10 FAIL=1` on the chirality check. An independent generator
+   closure, recomputed earlier in this session, gave 24 rotations, all
+   of determinant 1, alphabet orbit 24, with `(2, 1, 3)` and
+   `(1, 2, -3)` outside the orbit. This runner repeats that closure.
+7. One primary runner. No packet helper.
+8. Four markdown links. The runner link points at the primary runner.
+   One note link points at the minimal axioms on origin/main. Two point
+   at the cycle-39 even-span note and the cycle-32 ratio-span note on
+   this branch. Manifest node_count 6915 and edge_count 15557. The new
+   node has out_degree 3 and deps_hash `8817e2ad5d19`. Dependencies are
+   `minimal_axioms`, the cycle-39 even-span note, and the cycle-32
+   ratio-span note. `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the even space and the two spans, and states that the
+   order-blind converse is not applied and that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=11 FAIL=0`, ten-generator
+    rank 49, chirality coefficient 1 with partner rank 10, and cross
+    sums `-6/5`, `-1/4`, and `1/2`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
+    The loop-pack directory is skipped by that lint. The full audit
+    pipeline was not run.

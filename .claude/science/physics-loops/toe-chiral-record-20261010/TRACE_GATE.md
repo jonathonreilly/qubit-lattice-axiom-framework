@@ -770,3 +770,24 @@ coefficient 4 has partner rank 10. The nine-generator map has rank 42
 and nullity 48. The witness cross sums are `2`, `-4`, and 0. A nonzero
 chirality coefficient stays open. The ten-kernel coefficient span stays
 open.
+
+## Cycle 46
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether a chirality coefficient other than 1, on the scaled coefficient 4/3 vector, has a ten-kernel partner other than 0. Every nonzero chirality coefficient removes the original 3-dimensional partner, and coefficient 1 has partner rank 10. Do not claim the ten-kernel coefficient span is settled."
+```
+
+Inside the sum of the even space, both ratio spans, and the chirality
+cap, chirality coefficient 1 on the scaled coefficient `4/3` vector, the
+scaled coefficient 4 vector, and the swapped-dot coefficient 1 vector
+has partner rank 10. Every nonzero chirality coefficient removes the
+original 3-dimensional partner. The ten-generator map has rank 49 and
+nullity 51. The witness cross sums are `-6/5`, `-1/4`, and `1/2`. A
+chirality coefficient other than 1 stays open. The ten-kernel
+coefficient span stays open.

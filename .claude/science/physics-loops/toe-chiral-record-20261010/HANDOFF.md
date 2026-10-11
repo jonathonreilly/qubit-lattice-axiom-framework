@@ -598,15 +598,28 @@ of the coefficient `4/3` vector has cross sum 0 on those directions. A
 nonzero chirality coefficient is not in this count. The ten-kernel
 coefficient span is not classified. Runner `PASS=9 FAIL=0`.
 
+Cycle 46. On the same alphabet the even space, both ratio spans, and
+the chirality cap form a 10-dimensional sum. The ten-generator map has
+rank 49 and nullity 51. The chirality cap alone has partner rank 7.
+The sign product plus one cap generator minus one third of the other
+has scaled coefficient `4/3` and partner rank 7, and the chirality
+block meets that partner only at 0, so every nonzero chirality
+coefficient removes those partners. With chirality coefficient 1, that
+vector, the sign product plus both cap generators, and the swapped-dot
+coefficient 1 vector each have partner rank 10. At heights 1 and 2 the
+bond on `-e_x` and `-e_y` has lefts `(-1, -2, -3)` and `(-1, -2, 3)`.
+Against the three listed partners, the coefficient `4/3` vector plus
+the chirality cap has cross sums `-6/5`, `-1/4`, and `1/2`. A chirality
+coefficient other than 1 is not given a full partner rank. The
+ten-kernel coefficient span is not classified. Runner `PASS=11 FAIL=0`.
+
 ## Next exact action
 
-Decide whether a vector with a nonzero chirality coefficient, a nonzero
-even part, and a nonzero part in each ratio span, with a nonzero
-coefficient on the swapped transverse dot or the scaled cross-dot
-kernel, has a ten-kernel partner other than 0. Inside the even space
-and the two ratio spans, the scaled coefficient 4/3 has a 3-dimensional
-partner and the scaled coefficient 4 has partner rank 10. Do not claim
-the ten-kernel coefficient span is settled. Do not claim the
+Decide whether a chirality coefficient other than 1, on the scaled
+coefficient 4/3 vector, has a ten-kernel partner other than 0. Every
+nonzero chirality coefficient removes the original 3-dimensional
+partner, and coefficient 1 has partner rank 10. Do not claim the
+ten-kernel coefficient span is settled. Do not claim the
 300-dimensional affine space is classified. Do not repeat the bond-space
 dimension count. Do not return to the modulus-3 triple. Do not invent a
 formation rate. Do not return to shells, plaquette corner weights, or

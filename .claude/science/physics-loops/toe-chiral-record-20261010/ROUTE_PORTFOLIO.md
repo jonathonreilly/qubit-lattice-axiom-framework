@@ -222,3 +222,9 @@ Cycle 45 takes the even space and both ratio spans. The scaled
 coefficient 4/3 has a 3-dimensional ten-kernel partner, and the scaled
 coefficient 4 has partner rank 10. It does not take a nonzero chirality
 coefficient, and it does not classify the 300-dimensional affine space.
+
+Cycle 46 takes the even space, both ratio spans, and the chirality cap.
+Chirality coefficient 1 on the scaled coefficient 4/3 vector, the scaled
+coefficient 4 vector, and the swapped-dot coefficient 1 vector has
+partner rank 10. It does not take a chirality coefficient other than 1,
+and it does not classify the 300-dimensional affine space.

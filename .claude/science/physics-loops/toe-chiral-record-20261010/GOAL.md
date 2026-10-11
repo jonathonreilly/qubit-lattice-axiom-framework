@@ -223,3 +223,12 @@ sign product plus one cap generator minus one third of the other has
 scaled coefficient `4/3` and partner rank 7. The witness cross sums are
 `2`, `-4`, and 0. A nonzero chirality coefficient is not in this count.
 The ten-kernel coefficient span is not classified.
+Cycle 46 shows that the even space, both ratio spans, and the chirality
+cap form a 10-dimensional sum. The ten-generator map has rank 49 and
+nullity 51. Every nonzero chirality coefficient removes the
+3-dimensional partner of the scaled coefficient `4/3`. With chirality
+coefficient 1, that vector, the scaled coefficient 4 vector, and the
+swapped-dot coefficient 1 vector each have partner rank 10. The witness
+cross sums are `-6/5`, `-1/4`, and `1/2`. A chirality coefficient other
+than 1 is not given a full partner rank. The ten-kernel coefficient
+span is not classified.

@@ -316,3 +316,14 @@ and the scaled coefficient 4/3 has a 3-dimensional partner. The witness
 kernel cross sums are `2`, `-4`, and 0. It does not classify a nonzero
 chirality coefficient in that sum, and it does not classify the
 300-dimensional affine space. This is not an N-gate no-go.
+
+Cycle 46 prunes the reading that chirality coefficient 1, on a vector
+that meets both ratio spans and has a nonzero even part and a nonzero
+scaled or swapped-dot coefficient, keeps a nonzero ten-kernel partner.
+The coefficient 4/3 vector, the coefficient 4 vector, and the
+swapped-dot coefficient 1 vector each have partner rank 10. Every
+nonzero chirality coefficient removes the original 3-dimensional
+partner of the coefficient 4/3 vector. The witness kernel cross sums
+are `-6/5`, `-1/4`, and `1/2`. It does not classify a chirality
+coefficient other than 1, and it does not classify the 300-dimensional
+affine space. This is not an N-gate no-go.

@@ -977,3 +977,28 @@ partner rank 7. The witness cross sums are `2`, `-4`, and 0. A nonzero
 chirality coefficient is outside the ansatz. The ten-kernel coefficient
 span is not classified. The 300-dimensional affine space is not
 classified.
+
+# Claim status certificate — cycle 46
+
+claim_id: chiral_pair_even_both_spans_chirality_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); even space, both ratio spans, and the chirality cap; witness directions (-1, 0, 0) and (0, -1, 0)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+The even space, both ratio spans, and the chirality cap form a
+10-dimensional sum. The ten-generator map has rank 49 and nullity 51.
+Every nonzero chirality coefficient removes the 3-dimensional partner
+of the scaled coefficient 4/3. With chirality coefficient 1, that
+vector, the scaled coefficient 4 vector, and the swapped-dot coefficient
+1 vector each have partner rank 10. The witness cross sums are `-6/5`,
+`-1/4`, and `1/2`. A chirality coefficient other than 1 is outside the
+full partner-rank count. The ten-kernel coefficient span is not
+classified. The 300-dimensional affine space is not classified.

@@ -484,3 +484,16 @@ cap ratios 4 and 4/3, and the witness cross sums `2`, `-4`, and 0.
 
 Family not used: a nonzero chirality coefficient in that sum. That
 remains open. The 300-dimensional affine space is not this family.
+
+Cycle 46 target contract: whether a vector with a nonzero chirality
+coefficient, a nonzero even part, and a nonzero part in each ratio
+span, with a nonzero coefficient on the swapped transverse dot or the
+scaled cross-dot kernel, has a ten-kernel partner other than 0.
+
+Family used: the ten-generator partner map, its rank-49 kernel,
+chirality coefficient 1 on the cap ratios 4 and 4/3 and on the
+swapped-dot coefficient 1, and the witness cross sums `-6/5`, `-1/4`,
+and `1/2`.
+
+Family not used: a chirality coefficient other than 1. That remains
+open. The 300-dimensional affine space is not this family.

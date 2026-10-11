@@ -1,0 +1,29 @@
+TB d=2: 3004 on-shell samples, max energy residual 1.2e-14
+   lift std cube                  : umklapp fraction 0.398; umklapp samples with every leg >0.03 from the jump set: 1090
+   lift shifted cube              : umklapp fraction 0.394; umklapp samples with every leg >0.03 from the jump set: 1059
+   lift wiggly domain             : umklapp fraction 0.414; umklapp samples with every leg >0.03 from the jump set: 1133
+   lift reduced zone (period pi)  : umklapp fraction 0.426; umklapp samples with every leg >0.03 from the jump set: 1007
+KG m=1 d=2: 3002 on-shell samples, max energy residual 7.5e-15
+   lift std cube                  : umklapp fraction 0.413; umklapp samples with every leg >0.03 from the jump set: 1121
+   lift shifted cube              : umklapp fraction 0.390; umklapp samples with every leg >0.03 from the jump set: 1016
+   lift wiggly domain             : umklapp fraction 0.419; umklapp samples with every leg >0.03 from the jump set: 1159
+   lift reduced zone (period pi)  : umklapp fraction 0.451; umklapp samples with every leg >0.03 from the jump set: 1075
+KG m=0 d=2: 3000 on-shell samples, max energy residual 8.4e-15
+   lift std cube                  : umklapp fraction 0.421; umklapp samples with every leg >0.03 from the jump set: 1110
+   lift shifted cube              : umklapp fraction 0.391; umklapp samples with every leg >0.03 from the jump set: 1073
+   lift wiggly domain             : umklapp fraction 0.425; umklapp samples with every leg >0.03 from the jump set: 1131
+   lift reduced zone (period pi)  : umklapp fraction 0.458; umklapp samples with every leg >0.03 from the jump set: 1127
+TB d=3: 2001 on-shell samples, max energy residual 1.1e-14
+   lift std cube                  : umklapp fraction 0.622; umklapp samples with every leg >0.03 from the jump set: 1085
+   lift shifted cube              : umklapp fraction 0.598; umklapp samples with every leg >0.03 from the jump set: 1048
+   lift wiggly domain             : umklapp fraction 0.640; umklapp samples with every leg >0.03 from the jump set: 1108
+   lift reduced zone (period pi)  : umklapp fraction 0.638; umklapp samples with every leg >0.03 from the jump set: 957
+KG m=0.5 d=3: 2001 on-shell samples, max energy residual 5.3e-15
+   lift std cube                  : umklapp fraction 0.616; umklapp samples with every leg >0.03 from the jump set: 1094
+   lift shifted cube              : umklapp fraction 0.629; umklapp samples with every leg >0.03 from the jump set: 1115
+   lift wiggly domain             : umklapp fraction 0.620; umklapp samples with every leg >0.03 from the jump set: 1108
+   lift reduced zone (period pi)  : umklapp fraction 0.677; umklapp samples with every leg >0.03 from the jump set: 1005
+near-forward umklapp (std lift), TB d=2:
+   |k3-k1|=0.2019  residual -2.2e-16  D/2pi = [1. 0.]
+   |k3-k1|=0.0507  residual 2.2e-16  D/2pi = [1. 0.]
+   |k3-k1|=0.0102  residual 0.0e+00  D/2pi = [1. 0.]

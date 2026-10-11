@@ -1031,3 +1031,61 @@ The phrase "interactions not nearest-neighbour (against Admissibility)" in the R
 - **Expected lane reading:** FAIL (bounded) for exact conservation. Q would reframe the price as "an interaction range of hundreds of grid steps" rather than true non-locality. Whether an approximate constraint is acceptable is a separate question that this lane does not decide.
 
 **Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.
+
+### Lane RG results (2026-10-11, 00:53Z to about 02:40Z)
+
+**Who and where.**
+- Probes G1–G3: Claude Opus 5.5 at xhigh (same family as the supervisor).
+- Referees: codex gpt-5.6-sol at xhigh. One refereed G1 together with G2's constructions; the other refereed G3.
+- Files: `agents/RG_G{1,2,3}_report.md`, `agents/RG_G1G2_referee.md`, `agents/RG_G3_referee*.md`. Scripts, including the referees' checks, are in `scripts/laneRG/`.
+
+**G1, the theorem. Worker: FAIL (bounded). Referee: NOT CONFIRMED → INCONCLUSIVE.**
+- **Confirmed:**
+  - Consider an exact conserved charge that acts additively and diagonally on asymptotic particles, with any integrable lift of crystal momentum. It forces the total 2↔2 amplitude to vanish almost everywhere on an umklapp set of positive measure. For piecewise-smooth domains that set is open.
+  - Any globally meromorphic amplitude on a connected M_reg must then vanish identically. The TB connectivity proof is confirmed; KG connectivity is conditional (checked plus argued).
+  - This rigorously covers:
+    - finite-depth tree exchange;
+    - finite-component quadratic-network resolvents;
+    - nonzero rank-one contact scattering.
+  - Coupling-analytic Born families and factorized positive-spectral-weight exchange are covered only with additional hypotheses.
+  - G1's correction to the supervisor's premise stands: a codimension-1 wall can bound an open zero set.
+- **Not closed, and inside the registered class:**
+  - dressed vertices at fixed strong coupling;
+  - general interfering spectral exchange;
+  - nonperturbative non-contact finite-range potentials. G1-B′ could reduce to fixed-energy inverse scattering, but the step that carries a partial zero patch over to full scattering data is missing.
+- Pauli complementarity is argued at tree level only. Edge-of-the-wedge closure is not available.
+
+**G2, the constructions. Referee: main checks pass, with one correction.**
+- The binomial filter gives an exact on-shell supremum of 16^(−r), nonzero at finite depth.
+- The static Lindhard kernel does not help.
+- **Correction:** the fixed-window and Chebyshev "2↔2 sup" rates did not impose energy conservation. They are certified momentum-space upper bounds, not optimal on-shell rates.
+- These filters are low-pass: they suppress lattice-scale normal scattering as well as umklapp, and do not isolate umklapp.
+
+**G3, sourcing and consequence. Referee: CONFIRMED WITH CORRECTIONS.**
+- **Confirmed:**
+  - With the fixed 09-14 constraints and regular kernels, a matter-only sawtooth shift source requires an exactly SLAC scalar dispersion. Nearest-neighbour KG gives sin k instead.
+  - The SLAC stress satisfies the linear first-class identities, but it is power-law non-local: P ~ R⁻², T is log-corrected R⁻², and neither is absolutely summable.
+  - The E-channel sawtooth dilation has no self-adjoint generator on the fixed-zone space.
+- **Not confirmed:**
+  - The "+1.7 floor" depends on the completion chosen.
+  - The O(λ²) sawtooth coefficients do not converge in L. At L = 127 they are (0.93, −0.44)e-6, and continuum-first integration gives about (0.80, −0.70)e-6.
+  - No vacuum term is forced, because of the dressing loophole.
+- **Not excluded:** network-carried or singular conserved additions, matrix bands, and modified constraint completions.
+
+**Readout Q (conditional).**
+- **Amplitude suppression to 1e-100:** about 83 binomial steps, or 5–9e2 fixed-window steps; roughly 1e-33 to 1e-32 m at Planck spacing.
+- **Depth to meet the induced-TT bound:** n* ≈ 113/c for a quadratic law, doubled for a linear one. This holds only if a design-dependent floor is removed. "No finite n*" applies only if a nonzero floor stays uncancelled.
+
+**Lane RG verdict: INCONCLUSIVE.**
+- An exact umklapp-free interaction is impossible for every analytic or meromorphic class: finite networks, quadratic networks of any depth, contact interactions at any strength, and weak-coupling families.
+- What remains open is non-analytic:
+  - strongly coupled dressed walls;
+  - nonperturbative finite-range potentials.
+- Even with umklapp removed, regular nearest-neighbour matter cannot source the constraint through the sawtooth. That would need SLAC (1/r²-hopping) matter, or a demonstrated network carrier.
+- Approximate suppression is exponential in depth, about 10² steps for 1e-100.
+
+**Against the registered expectation.**
+- G1's FAIL was not confirmed; the open strong-coupling routes are inside the class.
+- The measure-zero premise was wrong for codimension-1 walls.
+- G2 is as expected: exponential suppression, c of order 1.
+- G3 adds a requirement that was not foreseen: the momentum that feeds the shift must equal the energy current, which forces SLAC matter.

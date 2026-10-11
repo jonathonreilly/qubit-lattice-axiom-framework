@@ -1,0 +1,37 @@
+== A. Fourier-algebra check of the separable continuity identities ==
+NN: max absolute algebra residual E=1.332e-15, M=1.776e-15
+SLAC: max absolute algebra residual E=3.553e-15, M=7.994e-15
+
+== B. SLAC bilocal coefficient tails (L=1025) ==
+R= 16: maxP=3.90473192e-03, maxT=1.88113375e-02, sumP(>=R)=6.80247823e+00
+R= 32: maxP=9.75089527e-04, maxT=5.97872157e-03, sumP(>=R)=5.41921945e+00
+R= 64: maxP=2.42751009e-04, maxT=1.80857656e-03, sumP(>=R)=4.04105832e+00
+R=128: maxP=5.97882388e-05, maxT=5.19298767e-04, sumP(>=R)=2.68078021e+00
+R=256: maxP=1.42221033e-05, maxT=1.31953234e-04, sumP(>=R)=1.36107387e+00
+P fit R=16..128: -2.0094
+T fit R=16..128: -1.7262
+T fit R=64..256: -1.8884
+successive P-tail drops per doubling: 1.3833 1.3782 1.3603 1.3197
+
+== C. Fixed-zone E-channel Hessian from the analytic integrand ==
+m=0.0: mu_E=+1.726759132
+m=0.5: mu_E=+1.711505770
+m=1.0: mu_E=+1.668169169
+
+== D. Continuum-first QMC check of the saw-flow I4 class Hessians ==
+Each row is one independently scrambled 2^17-point Sobol integral.
+KG
+eps=0.02: mu_N=+1.209822e-06 (scramble sd 3.2e-08), mu_U=-1.142571e-06 (scramble sd 2.7e-08)
+eps=0.04: mu_N=+1.216201e-06 (scramble sd 2.9e-08), mu_U=-1.149415e-06 (scramble sd 3.1e-08)
+SLAC
+eps=0.02: mu_N=+7.965411e-07 (scramble sd 3.3e-08), mu_U=-6.972062e-07 (scramble sd 3.0e-08)
+eps=0.04: mu_N=+8.048794e-07 (scramble sd 2.4e-08), mu_U=-7.073446e-07 (scramble sd 2.9e-08)
+
+== E. Readout arithmetic ==
+B=5.7e-99: sqrt(B)=7.549834e-50, n_quad=113.107729/c, n_linear=226.215458/c
+B=9.0e-102: sqrt(B)=3.000000e-51, n_quad=116.333227/c, n_linear=232.666455/c
+B=1.0e-99: sqrt(B)=3.162278e-50, n_quad=113.977962/c, n_linear=227.955924/c
+mu_U=3.4e-06 lambda^2: epsmax=5.636019e-50/|lambda|, n=113.400077/c+ln|lambda|/c
+mu_U=4.3e-06 lambda^2: epsmax=5.011614e-50/|lambda|, n=113.517497/c+ln|lambda|/c
+floor/reduced-cell bound=4.093567e+95
+floor/nonreduced-cell bound=2.592593e+98

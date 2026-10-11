@@ -318,3 +318,15 @@ Details are in `TESTS.md`, "Lane RN results".
 Each of these is an axiom price, and adopting any of them is the owner's decision.
 
 Details are in `TESTS.md`, "Lane RS results".
+
+## 14. Lane RG: can a network of nodes make momentum exact? (owner, 2026-10-11)
+
+**Plain version.** The owner's idea: influence travels through chains of sites, so maybe a network can make collisions that never "wrap around" the grid. Then a spread-out momentum would be exactly conserved and could feed the graviton.
+
+- **Exactly: no, for every well-behaved network.** Finite networks, networks of any depth built from linear links, and contact forces of any strength all give collision amplitudes smooth enough that vanishing on the wrap-around collisions forces them to vanish everywhere (refereed).
+- **Still open:** strongly interacting laws whose amplitudes jump across internal walls. These are not excluded, and not constructed.
+- **Approximately: yes.** Smoothing chains suppress wrap-around collisions by a factor of 16 per step, so about 80–900 steps (10⁻³³–10⁻³² m) give 10⁻¹⁰⁰. They also switch off all scattering at lattice-scale momenta.
+- **A new catch.** Even with exact momentum, the graviton's constraint needs that momentum to equal the matter's energy flow. For ordinary nearest-neighbour matter it does not. It would need matter whose hopping falls off as 1/r², or a network that carries the flow itself (not yet shown).
+- **Verdict: INCONCLUSIVE.**
+
+Details are in `TESTS.md`, "Lane RG results".

@@ -1,0 +1,36 @@
+== (a) one-body symbol of the TOTAL energy current, E dE/dk, vs sawtooth k (NN-KG, m=1) ==
+  k= 0.1: E dE/dk = sin k = +0.09983   sawtooth = +0.10000   mismatch = +0.00017
+  k= 0.5: E dE/dk = sin k = +0.47943   sawtooth = +0.50000   mismatch = +0.02057
+  k= 1.0: E dE/dk = sin k = +0.84147   sawtooth = +1.00000   mismatch = +0.15853
+  k= 2.0: E dE/dk = sin k = +0.90930   sawtooth = +2.00000   mismatch = +1.09070
+  k= 3.0: E dE/dk = sin k = +0.14112   sawtooth = +3.00000   mismatch = +2.85888
+  -> with NN-KG matter the shift source P must have symbol sin k (= energy current); a sawtooth P
+     leaves d/dt(scalar constraint) ~ div(J_E - P_saw) != 0 on the constraint surface.
+
+== (b) exact identities (E),(M) with the 09-14 placement, random classical fields, 2D odd torus ==
+  NN-KG  L=9 trial 0: max rel residual (E) = 2.22e-15, (M) = 9.89e-15
+  NN-KG  L=9 trial 1: max rel residual (E) = 3.88e-15, (M) = 1.76e-15
+  SLAC   L=9 trial 0: max rel residual (E) = 2.37e-15, (M) = 3.16e-15
+  SLAC   L=9 trial 1: max rel residual (E) = 2.52e-15, (M) = 1.10e-14
+  SLAC   L=11 trial 0: max rel residual (E) = 3.98e-15, (M) = 2.14e-15
+  SLAC   L=11 trial 1: max rel residual (E) = 4.32e-14, (M) = 8.33e-15
+  [0.0s]
+
+== (c) real-space tails of P (pi_y phi_z coefficient) and T_jj (phi_y phi_z), 1D, density at origin ==
+  NN-KG:   R    max|P coef| at dist R   max|T coef|   sum|P| beyond R   sum|T| beyond R
+            4   1.488e-17            1.056e-17      9.511e-13        1.382e-12
+            8   1.030e-17            9.758e-18      9.508e-13        1.382e-12
+           16   1.408e-17            2.434e-17      9.494e-13        1.380e-12
+           32   9.266e-18            8.644e-18      9.448e-13        1.375e-12
+           64   9.028e-18            1.121e-17      9.271e-13        1.352e-12
+          128   8.128e-18            1.055e-17      8.671e-13        1.265e-12
+  SLAC:   R    max|P coef| at dist R   max|T coef|   sum|P| beyond R   sum|T| beyond R
+            4   6.250e-02            1.497e-01      9.558e+00        4.820e+01
+            8   1.562e-02            5.553e-02      8.185e+00        4.157e+01
+           16   3.905e-03            1.881e-02      6.802e+00        3.505e+01
+           32   9.751e-04            5.979e-03      5.419e+00        2.847e+01
+           64   2.428e-04            1.809e-03      4.041e+00        2.187e+01
+          128   5.979e-05            5.193e-04      2.681e+00        1.527e+01
+  SLAC tail exponents (fit R=16..128): max|P| ~ R^-2.01, max|T| ~ R^-1.73, sum|P| beyond R ~ R^-0.45
+  sawtooth derivative kernel |D(r)| * r (-> 1 means 1/r tail): ['1.0000', '1.0004', '1.0064', '1.1105']
+[0.3s]

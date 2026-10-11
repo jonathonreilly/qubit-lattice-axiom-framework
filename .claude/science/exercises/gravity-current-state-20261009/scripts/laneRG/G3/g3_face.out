@@ -1,0 +1,20 @@
+== (a) flow time to reach the zone face from k0 ==
+  k0=0.5: sawtooth flow reaches pi at s = ln(pi/k0) = 1.838;  sin flow: never (k(s) = 2 atan(tan(k0/2) e^s) < pi)
+  k0=1.0: sawtooth flow reaches pi at s = ln(pi/k0) = 1.145;  sin flow: never (k(s) = 2 atan(tan(k0/2) e^s) < pi)
+  k0=2.0: sawtooth flow reaches pi at s = ln(pi/k0) = 0.452;  sin flow: never (k(s) = 2 atan(tan(k0/2) e^s) < pi)
+  k0=3.0: sawtooth flow reaches pi at s = ln(pi/k0) = 0.046;  sin flow: never (k(s) = 2 atan(tan(k0/2) e^s) < pi)
+  -> the dilation generator sum_x x_j P_j with sawtooth P is not essentially self-adjoint (flow incomplete at the face)
+
+== (b) free SLAC field, E channel with the fixed-BZ completion: mu_E per cell (h = eps diag(1,-1,0)) ==
+  m=0.0: channel E  fixed-BZ completion mu = +1.726759 per cell
+  m=0.0: channel T2 fixed-BZ completion mu = +1.531306 per cell
+  m=0.5: channel E  fixed-BZ completion mu = +1.711506 per cell
+  m=0.5: channel T2 fixed-BZ completion mu = +1.520690 per cell
+  m=1.0: channel E  fixed-BZ completion mu = +1.668169 per cell
+  m=1.0: channel T2 fixed-BZ completion mu = +1.490175 per cell
+  (natural-size comparison: RN L1 linear-only NN-KG E-channel susceptibility -0.0037 at m=0;
+   these fixed-BZ values are the T0 'cutoff fixed by grid labels' effect, not removable by a determined seagull in the E channel)
+
+== (c) T2 channel: sawtooth shear flow is measure-preserving on the torus (unitary exists) ==
+  image of uniform sample under eps=0.08 flow: 8x8 cell counts rel. std = 0.0122 (Poisson 0.0126)
+  fraction of single legs whose k_y wrapped across the face at eps=0.08: 0.0198  (~ eps*<|s|>/(2pi)*... )

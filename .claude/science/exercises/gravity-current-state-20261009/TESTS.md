@@ -1818,3 +1818,34 @@ So free regular local lattice matter already generates one of P0's two shear num
 - A uniform-strain flow along the lattice momentum symbol is not translation-invariant.
 - Forcing it into translation-invariant local form reweights the zero-point sum by the Jacobian.
 - This is C3's Hessian anomaly appearing in the vacuum.
+
+### C4 seventh wave (19:00Z): lane RP, species sum rules for the E_g shear mass
+
+**Question.** V3 (refereed) found that free local matter generates an E_g shear mass:
+- scalar: +1.97e-3 at m = 1;
+- staggered fermion: negative, equal to −½ × scalar(2m).
+
+I3 found that Bose–Fermi pairing cancels the vacuum quantities exactly, for any dispersion.
+
+So can the matter content cancel μ_E species by species? This would be a "Pauli sum rule" for the shear mass, the analogue of Pauli's vacuum-energy sum rules. Expand each species' μ_E(m) in powers of (ma). Cancelling to the P0 level (~1e-99 per cell) at physical masses (ma ≲ 1e-17) then needs a sum rule at each order up to some n. What does each order demand of the content: degree-of-freedom counts, Σm², Σm⁴log m, and so on? Can Standard-Model-like content satisfy the leading rule? What do interactions do?
+
+**Probe P1.**
+- Compute μ_E(m) and the expansion coefficients for:
+  - a real scalar;
+  - a staggered fermion;
+  - a U(1) gauge field (K1 found the photon tadpole is zero by Weyl invariance; what is its μ_E?);
+  - optionally a naive fermion.
+- Derive the sum rules order by order.
+- Count the resulting conditions against P0.
+- Estimate the one-loop interaction corrections (g²/16π²) that break the cancellation.
+
+**Fixed readings:**
+- **PASS:** the leading-order rule is satisfiable by a natural degree-of-freedom count, all higher-order rules up to the P0 level hold without mass relations, and interactions preserve them (a symmetry reason).
+- **FAIL:** the sum rules need mass relations (tunings) or interaction-stable cancellation is impossible without a symmetry the lattice lacks. Bounded to the species examined.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation:**
+- The leading rule is a degree-of-freedom count (bosons against fermions, weighted). That is satisfiable, but not by the SM as it stands.
+- The (ma)² and (ma)⁴ rules need mass relations, as Pauli's sum rules do.
+- Interactions break the cancellation at g²/16π², because lattice SUSY is obstructed (Kato–Sakamoto–So).
+- FAIL (bounded). This turns P0's E_g tuning into a Pauli-type sum-rule problem: the same naturalness problem as the cosmological constant.

@@ -190,3 +190,9 @@ has partner rank 6, and the partner kernel is the odd space of the
 partner height. The sign product has no partner outside that space. It
 does not take a vector outside the even span, and it does not classify
 the 300-dimensional affine space.
+
+Cycle 40 takes the swapped cross. On the pairs where it is odd, a
+nonzero scale has partner rank 7 and partner kernel equal to the even
+space of the partner height. On the pairs where it is even, the partner
+kernel is the odd space. It does not take another odd vector, and it
+does not classify the 300-dimensional affine space.

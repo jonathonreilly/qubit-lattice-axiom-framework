@@ -2268,3 +2268,74 @@ Conformance, section by section:
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
     The loop-pack directory is skipped by that lint. The full audit
     pipeline was not run.
+
+## 2026-10-11 author check, cycle 40
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms on origin/main at the base `0b208e91cfc`, the
+   cycle-29 parity-span note, and the cycle-39 even-span note, both
+   notes on this branch. The odd-pair partner kernel and the witness
+   sums are computed in this runner. The order-blind converse is not
+   applied. The odd and even bases are named in cycle 29. The even-pair
+   partner kernel is cited from cycle 39 and not re-proved. The
+   dimension count of the soldered bond space is not repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_swapped_cross_partner_kernel_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `fbc48b6e52742db912c3c8af36794e918b6044f20a2cb98ed7ab75ba579b5b5a`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=9 FAIL=0`.
+   Elapsed 0.71 seconds.
+3. Scope. The swapped cross on the 48 signed permutations of
+   `(1, 2, 3)`. It is odd on `(1, 2)`, `(2, 1)`, and `(3, 1)`, and even
+   on `(1, 3)`, `(2, 3)`, and `(3, 2)`. On each odd pair a nonzero
+   scale has partner rank 7, and the partner kernel is the even space
+   of the partner height, so no ten-kernel partner lies outside that
+   space. On each even pair the cited partner kernel is the odd space,
+   which meets the even space only at 0. The heights 1 and 2 centre
+   pairs are `(1, -1)` and `(-1, -1)` with cross sum `0`, `(1, -1)` and
+   `(-1, 1)` with cross sum `-2`, and `(1, 0)` and `(-1, 1)` with cross
+   sum `-1`. The heights 1 and 3 centre pairs are `(-1, 1)` and
+   `(-1, -1)` with cross sum `0`, and `(-1, 1)` and `(-1, 1)` with
+   cross sum `-2`. A vector other than the swapped cross is outside the
+   ansatz. The odd space is not settled. The ten-kernel coefficient
+   span is not classified. The full soldered bond space is not
+   classified. Status line `proposed_retained`. Surface status
+   `bounded-support`.
+4. N-gate does not apply. The artifact classifies the swapped cross. It
+   does not claim that no other odd vector has a partner outside the
+   even space.
+5. Obligations are in the note. The missing lemma is whether a nonzero
+   vector in the odd space, outside the chirality and transverse-sign
+   plane and outside the swapped axis, has a ten-kernel partner outside
+   the even space of the partner height.
+6. Mutations, each on a scratch copy, exited 1. Requiring the odd-pair
+   partner rank to be 10 gave `PASS=8 FAIL=1` on the partner-kernel
+   check. Requiring the chirality cross sum to be 0 gave `PASS=8 FAIL=1`
+   on the centre-pair check. Requiring the swapped cross to be even on
+   the odd pairs gave `PASS=8 FAIL=1` on the membership check. An
+   independent generator closure, recomputed in this session, gave 24
+   rotations, all of determinant 1, and orbit 24, with `(2, 1, 3)` and
+   `(1, 2, -3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Four markdown links. The runner link points at the primary runner.
+   One note link points at the minimal axioms on origin/main. Two point
+   at the cycle-29 parity-span note and the cycle-39 even-span note on
+   this branch. Manifest node_count 6909 and edge_count 15539. The new
+   node has out_degree 3 and deps_hash `95da1868a9cc`. Dependencies are
+   `minimal_axioms`, the cycle-29 parity-span note, and the cycle-39
+   even-span note. `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the odd and even bases and the even-span note, and states that
+   the order-blind converse is not applied and that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=9 FAIL=0`, odd-pair partner
+    rank 7, centre pairs `(1, -1)` and `(-1, -1)` with cross sum `0`,
+    `(1, -1)` and `(-1, 1)` with cross sum `-2`, and `(1, 0)` and
+    `(-1, 1)` with cross sum `-1`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note.
+    The loop-pack directory is skipped by that lint. The full audit
+    pipeline was not run.

@@ -656,3 +656,23 @@ partner kernel is the odd space of the partner height. The sign product
 has no partner outside that space. The witness cross sums are `0` and
 `1`. A vector outside the even span stays outside this ansatz. The
 ten-kernel coefficient span stays open.
+
+## Cycle 40
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether a nonzero vector in the odd space, outside the chirality and transverse-sign plane and outside the swapped axis, has a ten-kernel partner outside the even space of the partner height. Do not claim the odd space is settled. Do not claim the ten-kernel coefficient span is settled."
+```
+
+On the pairs where the swapped cross is odd, partner rank is 7 and the
+partner kernel is the even space of the partner height. No ten-kernel
+partner lies outside that space. On the pairs where it is even, the
+partner kernel is the odd space, so every nonzero partner lies outside
+the even space. The witness cross sums are `0`, `-2`, and `-1`. A
+vector other than the swapped cross stays outside this ansatz. The
+ten-kernel coefficient span stays open.

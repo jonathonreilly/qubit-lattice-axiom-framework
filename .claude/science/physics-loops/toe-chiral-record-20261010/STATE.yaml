@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 39
-runner_result: PASS=8 FAIL=0
+cycle: 40
+runner_result: PASS=9 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Decide whether the swapped cross has a ten-kernel partner outside the even space of the partner height. The even span pairs only with the odd space. The chirality and transverse-sign plane pairs only with the even space. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
+next_exact_action: Decide whether a nonzero vector in the odd space, outside the chirality and transverse-sign plane and outside the swapped axis, has a ten-kernel partner outside the even space of the partner height. On the pairs where the swapped cross is odd, its partner kernel is that even space. On the pairs where it is even, the partner kernel is the odd space. Do not claim the odd space is settled. Do not claim the ten-kernel coefficient span is settled. Do not claim the 300-dimensional affine space is classified.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

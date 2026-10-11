@@ -180,3 +180,12 @@ rank 6, and the partner kernel is the odd space of the partner height.
 The sign product lies in that span. It pairs with the chirality cap,
 with cross sum `0`, and the matched cross on the same bond has cross
 sum `1`. The ten-kernel coefficient span is not classified.
+Cycle 40 shows that the swapped cross is odd on pairs `(1, 2)`,
+`(2, 1)`, and `(3, 1)`, and even on pairs `(1, 3)`, `(2, 3)`, and
+`(3, 2)`. On the odd pairs a nonzero scale has partner rank 7, and the
+partner kernel is the even space of the partner height, so no ten-kernel
+partner lies outside that space. On the even pairs the even-span note
+gives partner rank 6 and partner kernel equal to the odd space, which
+meets the even space only at 0. The witness cross sums on heights 1 and
+2 are `0`, `-2`, and `-1`. The ten-kernel coefficient span is not
+classified.

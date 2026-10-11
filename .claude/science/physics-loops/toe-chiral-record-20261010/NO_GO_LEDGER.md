@@ -269,3 +269,12 @@ and the partner kernel is that odd space. The matched cross on the
 witness bond has kernel cross sum `1`. It does not classify a vector
 outside the even span, and it does not classify the 300-dimensional
 affine space.
+
+Cycle 40 prunes the reading that the swapped cross, on the pairs where
+it is odd, has a ten-kernel partner outside the even space. A nonzero
+scale has partner rank 7, and the partner kernel is that even space.
+The witness kernel cross sums are `0`, `-2`, and `-1`. On the pairs
+where the swapped cross is even, the partner kernel is the odd space,
+so every nonzero partner lies outside the even space. It does not
+classify a vector other than the swapped cross, and it does not
+classify the 300-dimensional affine space.

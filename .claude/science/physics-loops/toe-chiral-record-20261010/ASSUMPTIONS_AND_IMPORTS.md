@@ -487,3 +487,15 @@
   names the previous span. The bond-space dimension count is not
   repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 40
+
+- The ansatz is the swapped cross. A vector other than that axis is
+  not in this count. The even-span partner kernel is not re-proved.
+- The checked sums are two-centre kernel cross sums. A kernel cross
+  sum is not an alphabet mean.
+- The order-blind converse is not applied. The odd and even bases are
+  named by the cycle-29 note. The even-pair partner kernel is the
+  cycle-39 note. The bond-space dimension count is not repeated.
+  The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

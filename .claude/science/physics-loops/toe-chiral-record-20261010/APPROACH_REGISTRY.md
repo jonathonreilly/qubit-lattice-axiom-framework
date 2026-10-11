@@ -414,3 +414,14 @@ sums `0` and `1`.
 Family not used: a vector outside the even span, including the swapped
 cross as a source. That remains open. The 300-dimensional affine space
 is not this family.
+
+Cycle 40 target contract: whether the swapped cross has a ten-kernel
+partner outside the even space of the partner height.
+
+Family used: the swapped cross, its odd and even membership, the
+partner map on the three odd pairs, and the witness cross sums `0`,
+`-2`, and `-1`.
+
+Family not used: a vector in the odd space other than the swapped axis
+and the chirality and transverse-sign plane. That remains open. The
+300-dimensional affine space is not this family.

@@ -478,16 +478,41 @@ partner rank 6. A vector outside the even span is not in this count.
 The ten-kernel coefficient span is not classified. Runner
 `PASS=8 FAIL=0`.
 
+Cycle 40. On the same alphabet the swapped cross is odd on ordered pairs
+`(1, 2)`, `(2, 1)`, and `(3, 1)`, and even on `(1, 3)`, `(2, 3)`, and
+`(3, 2)`. On each odd pair a nonzero scale has partner rank 7, and the
+partner kernel is the even space of the partner height, so no ten-kernel
+partner lies outside that space. On `(1, 2)` and `(2, 1)` that space is
+spanned by the sign product, the oblique dot minus the parallel dot, and
+the orthogonal cross minus half the swapped cross. On `(3, 1)` it is
+spanned by the sign product, the swapped cross, and the parallel dot
+plus the oblique dot. The generators have excluded coefficients 0. On
+each even pair the even-span result gives partner rank 6 and partner
+kernel equal to the odd space, which meets the even space only at 0. At
+heights 1 and 2 the bond on `-e_x` and `-e_y` against the sign product
+has centre pairs `(1, -1)` and `(-1, -1)` and kernel cross sum 0.
+Against the chirality cap the centre pairs are `(1, -1)` and `(-1, 1)`
+and the kernel cross sum is `-2`. Against the matched cross the centre
+pairs are `(1, 0)` and `(-1, 1)` and the kernel cross sum is `-1`. At
+heights 1 and 3 the same directions against the chirality cap have
+centre pairs `(-1, 1)` and `(-1, -1)` and kernel cross sum 0. Against
+the sign product the centre pairs are `(-1, 1)` and `(-1, 1)` and the
+kernel cross sum is `-2`. A vector other than the swapped cross is not
+in this count. The odd space is not settled. The ten-kernel coefficient
+span is not classified. Runner `PASS=9 FAIL=0`.
+
 ## Next exact action
 
-Decide whether the swapped cross has a ten-kernel partner outside the
-even space of the partner height. The even span pairs only with the odd
-space. The chirality and transverse-sign plane pairs only with the even
-space. Do not claim the ten-kernel coefficient span is settled. Do not
-claim the 300-dimensional affine space is classified. Do not repeat
-the bond-space dimension count. Do not return to the
-modulus-3 triple. Do not invent a formation rate. Do not return to
-shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
+Decide whether a nonzero vector in the odd space, outside the chirality
+and transverse-sign plane and outside the swapped axis, has a ten-kernel
+partner outside the even space of the partner height. On the pairs where
+the swapped cross is odd, its partner kernel is that even space. On the
+pairs where it is even, the partner kernel is the odd space. Do not
+claim the odd space is settled. Do not claim the ten-kernel coefficient
+span is settled. Do not claim the 300-dimensional affine space is
+classified. Do not repeat the bond-space dimension count. Do not return
+to the modulus-3 triple. Do not invent a formation rate. Do not return
+to shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
 alphabets.
 
 ## Cleanup

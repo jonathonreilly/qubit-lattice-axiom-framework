@@ -424,3 +424,20 @@ sum 0 on the twenty-seven kernels and alternating sum 4 on the scaled
 cross-dot kernel. The orbit rank says the ten named kernels are
 independent inside the 10-dimensional ansatz, so they are a basis. A
 mixture of those kernels stays outside this formula.
+
+## Cycle 27
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide which rational mixtures of two opposite-height bases, at two distinct absolute heights, have every neighbour-product mean equal to 1. Do not claim the 300-dimensional affine space is classified."
+```
+
+The left slices and the disjoint direction supports give product mean 1
+for every rational mixture of one opposite-height basis. That prunes the
+reading that some rational mixture in the span moves a neighbour-product
+mean off 1. A sum across two heights stays outside this ansatz.

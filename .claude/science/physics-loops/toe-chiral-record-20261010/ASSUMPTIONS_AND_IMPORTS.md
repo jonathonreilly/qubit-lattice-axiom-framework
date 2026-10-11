@@ -299,3 +299,17 @@
   bond note. The bond-space dimension count is not repeated. The
   300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 27
+
+- The ansatz is one opposite-height pair and the rational span of its
+  ten basis kernels. A sum across heights is not in this count. The
+  integer box `1` through `10` is a moment check, not the span.
+- The one-site average is the uniform average on the 48-point alphabet.
+  A neighbour condition names at most one far end in each direction.
+- Order-blindness of a strictly positive mixture is Theorem 2's
+  converse, applied after bond symmetry and the product means. Far-end
+  sum 1 is the chiral-pair bond note. The basis is the cycle-26 note.
+  The bond-space dimension count is not repeated. The 300-dimensional
+  affine space is not classified.
+- No formation site, probability, or rate is imported.

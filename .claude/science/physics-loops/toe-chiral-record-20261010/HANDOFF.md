@@ -275,15 +275,29 @@ and alternating sum 4 on this kernel. Inside the 10-dimensional
 opposite-height ansatz the rank rises from 9 to 10. Those ten kernels
 are a basis of that ansatz. Runner `PASS=10 FAIL=0`.
 
+Cycle 27. On the same alphabet every rational mixture of the ten basis
+kernels on one opposite-height pair is bond-symmetric and soldered.
+Every left slice sums to 0, and each record meets at most one live
+direction, so every neighbour product has mean 1. The identity covers
+the whole rational span. The mixture with all ten coefficients equal to
+`1/32` takes the values `29/32`, `15/16`, `31/32`, `1`, `33/32`,
+`17/16`, and `19/16`. The mean on `e_z` at `(1, 2, -3)` is 1, and the
+mean on `-e_x` and `e_z` at `(2, 1, 3)` and `(1, 2, -3)` is 1. At height
+1 the bond on `-e_x` from `(-1, -3, -2)` to `(1, -3, 2)` has chirality
+`1` and scaled value `-2`, and the bond to `(1, -3, -2)` has chirality
+`-1` and scaled value `0`. Coefficient `2` on the chirality cap takes
+values `-1`, `1`, and `3` and still has those means equal to 1. The
+integer coefficients `1` through `10` are a moment check, not the span.
+Runner `PASS=8 FAIL=0`.
+
 ## Next exact action
 
-Decide which rational mixtures of these ten basis kernels have every
-neighbour-product mean equal to 1. Do not claim that order-blind subset
-is classified. Do not claim the 300-dimensional affine space is
-classified. Do not repeat the bond-space dimension count. Do not return
-to the modulus-3 triple. Do not invent a formation rate. Do not return
-to shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
-alphabets.
+Decide which rational mixtures of two opposite-height bases, at two
+distinct absolute heights, have every neighbour-product mean equal to 1.
+Do not claim the 300-dimensional affine space is classified. Do not
+repeat the bond-space dimension count. Do not return to the modulus-3
+triple. Do not invent a formation rate. Do not return to shells,
+plaquette corner weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

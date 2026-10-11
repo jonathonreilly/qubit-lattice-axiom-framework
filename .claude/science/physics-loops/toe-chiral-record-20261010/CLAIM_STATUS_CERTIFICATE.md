@@ -533,3 +533,24 @@ the twenty-seven. Inside the 10-dimensional ansatz the exhibited rank
 rises from 9 to 10. Those ten kernels are a basis. The order-blind
 subset of the span is not classified. The 300-dimensional affine space
 is not classified.
+
+# Claim status certificate — cycle 27
+
+claim_id: chiral_pair_opposite_height_basis_mixtures_product_means_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); one opposite-height pair; rational mixtures of its ten basis kernels; equal coefficients 1/32
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: Theorem 2's converse is applied to each strictly positive mixture. The ten kernels are a basis by the cycle-26 note. Far-end sum 1 is the chiral-pair bond note. No formation rate is used.
+
+Every rational mixture of the ten basis kernels has neighbour-product
+mean 1. The equal mixture at coefficient `1/32` is strictly positive.
+Coefficient `2` on the chirality cap is not strictly positive and still
+has those means equal to 1. A sum across two heights is not classified.
+The 300-dimensional affine space is not classified.

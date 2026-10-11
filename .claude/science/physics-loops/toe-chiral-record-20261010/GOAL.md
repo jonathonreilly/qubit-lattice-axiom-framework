@@ -88,5 +88,10 @@ absolute height 1, 2, and 3, at coefficient `1/4`, has neighbour-product
 mean 1. Four bonds at each height, with weights `+1`, `+1`, `-1`, and
 `-1`, have alternating sum 0 on the twenty-seven comparison kernels and
 alternating sum 4 on this kernel. The same ansatz now has rank 10, so
-the ten named kernels are a basis. The order-blind subset of that span
-is not classified.
+the ten named kernels are a basis. Cycle 27 shows that every rational mixture of those
+ten kernels has every neighbour-product mean equal to 1. The equal
+mixture at coefficient `1/32` is strictly positive, with values
+`29/32`, `15/16`, `31/32`, `1`, `33/32`, `17/16`, and `19/16`.
+Coefficient `2` on the chirality cap takes a value `-1` and still has
+one- and two-neighbour means 1. A sum across two heights is not in
+this count.

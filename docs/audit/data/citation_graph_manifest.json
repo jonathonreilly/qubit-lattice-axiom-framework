@@ -1,6 +1,6 @@
 {
- "edge_count": 15486,
- "node_count": 6895,
+ "edge_count": 15490,
+ "node_count": 6896,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2949,6 +2949,10 @@
   "chiral_pair_matched_oblique_dot_outside_eighteen_kernels_bounded_theorem_note_2026-10-10": {
    "deps_hash": "41027eb0d307",
    "out_degree": 3
+  },
+  "chiral_pair_opposite_height_basis_mixtures_product_means_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "bcc638123a3f",
+   "out_degree": 4
   },
   "chiral_pair_orthogonal_swapped_cross_outside_twenty_four_kernels_bounded_theorem_note_2026-10-10": {
    "deps_hash": "41027eb0d307",

@@ -1350,3 +1350,68 @@ Conformance, section by section:
     `PASS=10 FAIL=0`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
     the loop-pack prose. The full audit pipeline was not run.
+
+## 2026-10-11 author check, cycle 27
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`, the cycle-26 opposite-height
+   basis note, and the cycle-6 chiral-pair bond note, both on this
+   branch. The covariance comparison, the left slices, the live-direction
+   bound, and the moment sums are computed in this runner. Theorem 2's
+   converse is applied only to strictly positive mixtures and is not
+   re-proved. The basis is cited from cycle 26. Far-end sum 1 is cited
+   from the cycle-6 note. The bond-space dimension count is not repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_opposite_height_basis_mixtures_product_means_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `6c4eef871499c749381e175593faaec07a06378c9153420fbfac6ed19c604f39`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=8 FAIL=0`.
+   Elapsed 2.30 seconds.
+3. Scope. The ansatz is the rational span of the ten basis kernels on
+   one opposite-height pair, at each absolute height separately. Every
+   rational mixture has neighbour-product mean 1. The equal mixture at
+   coefficient `1/32` takes values `29/32`, `15/16`, `31/32`, `1`,
+   `33/32`, `17/16`, and `19/16`. The sample means are 1. Coefficient
+   `2` on the chirality cap takes values `-1`, `1`, and `3`. The integer
+   box `1` through `10` is a moment check, not the span. A sum across
+   heights is outside the ansatz. The 300-dimensional affine space is
+   not classified. Status line `proposed_retained`. Surface status
+   `bounded-support`.
+4. N-gate does not apply. The artifact classifies product means on one
+   named span. It does not claim that no order-blind factor exists
+   outside that span, and it does not classify a sum across heights.
+5. Obligations are in the note. The missing lemma is which rational
+   mixtures of two opposite-height bases, at two distinct absolute
+   heights, have every neighbour-product mean equal to 1.
+6. Mutations, each on a scratch copy, exited 1. Requiring every record
+   to have no live direction gave `PASS=7 FAIL=1` on the slice check.
+   Requiring the witness value set to be empty gave `PASS=7 FAIL=1` on
+   the equal mixture. Adding 1 to the one-neighbour target gave
+   `PASS=5 FAIL=3` on the three moment checks. An independent generator
+   closure gave 24 rotations, all of determinant 1, and orbit 24, with
+   `(2, 1, 3)` and `(1, 2, -3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Five markdown links. The runner link points at the primary runner.
+   Two note links point at tracked notes on origin/main. Two point at
+   the cycle-26 basis note and the cycle-6 chiral-pair bond note on
+   this branch. Manifest node_count 6896 and edge_count 15490. The new
+   node has out_degree 4 and deps_hash `bcc638123a3f`. Dependencies are
+   `minimal_axioms`, the 2026-09-22 note, the cycle-26 basis note, and
+   `chiral_pair_bond_factor_dimension_bounded_theorem_note_2026-10-10`.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names Theorem 2's converse, the basis, and far-end sum 1, and states
+   that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=8 FAIL=0`, witness values
+    `29/32`, `15/16`, `31/32`, `1`, `33/32`, `17/16`, and `19/16`, both
+    sample moments 1, overlap bond chirality `1` and scaled `-2`, split
+    bond chirality `-1` and scaled `0`, coefficient-2 values `-1`, `1`,
+    and `3`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
+    the loop-pack prose. The full audit pipeline was not run.

@@ -261,3 +261,15 @@ basis.
 Family not used: a rational mixture of those ten kernels. The
 order-blind subset of the span remains open. The 300-dimensional affine
 space is not this family. A mixed-height bond is not this family.
+
+Cycle 27 target contract: which rational mixtures of the ten basis
+kernels on one opposite-height pair have every neighbour-product mean
+equal to 1.
+
+Family used: the union of the ten supports, the left slices, and the
+linear product identity, with the equal mixture at coefficient `1/32`,
+the coefficient-2 chirality cap, and the integer box `1` through `10`
+as moment checks.
+
+Family not used: a sum of two heights. That remains open. The
+300-dimensional affine space is not this family.

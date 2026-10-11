@@ -110,3 +110,8 @@ kernels and raises the exhibited rank from 9 to 10, so the ten named
 kernels are a basis of the opposite-height ansatz. It does not take a
 mixture of those kernels, it does not take a mixed-height bond, and it
 does not classify the 300-dimensional affine space.
+
+Cycle 27 takes every rational mixture of the ten kernels on one
+opposite-height pair. The product-mean identity holds on the whole
+span. It does not take a sum across two heights, and it does not
+classify the 300-dimensional affine space.

@@ -163,3 +163,11 @@ height have alternating sum 0 on the twenty-seven and alternating sum 4
 on this kernel. The rank rises from 9 to 10, so the ten named kernels
 are a basis. It does not classify the order-blind subset of that span,
 and it does not classify the 300-dimensional affine space.
+
+Cycle 27 prunes the reading that a rational mixture inside one
+opposite-height basis can move a neighbour-product mean off 1. Every
+rational mixture has those means equal to 1. The witness is the equal
+mixture at coefficient `1/32`. Coefficient `2` on the chirality cap is
+not strictly positive and still has the means equal to 1. It does not
+classify a sum across two heights, and it does not classify the
+300-dimensional affine space.

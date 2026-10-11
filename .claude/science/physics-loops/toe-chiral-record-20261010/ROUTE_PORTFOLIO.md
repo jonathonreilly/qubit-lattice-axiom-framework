@@ -206,3 +206,9 @@ Cycle 42 takes a parity vector with both an odd part and an even part.
 Every such vector has partner rank 10, so the only ten-kernel partner
 is 0. It does not take a vector with a nonzero excluded coefficient,
 and it does not classify the 300-dimensional affine space.
+
+Cycle 43 takes the sum of the two ratio spans, together with the
+chirality cap. A nonzero vector in the sum has a nonzero ten-kernel
+partner exactly on one span, and the cap plus a nonzero sum vector has
+partner rank 10. It does not take a vector outside that span, and it
+does not classify the 300-dimensional affine space.

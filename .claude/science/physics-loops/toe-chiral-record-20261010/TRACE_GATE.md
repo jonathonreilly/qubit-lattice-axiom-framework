@@ -712,3 +712,23 @@ A parity vector with both an odd part and an even part has partner rank
 such vector. The witness cross sums are `1`, `-1`, and `-1`. A vector
 with a nonzero excluded coefficient stays outside this ansatz. The
 ten-kernel coefficient span stays open.
+
+## Cycle 43
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether a vector outside the span of the chirality cap and the two ratio spans, with a nonzero coefficient on the swapped transverse dot or the scaled cross-dot kernel, has a ten-kernel partner other than 0. Inside that span, such a partner exists exactly on one ratio span. Do not claim the ten-kernel coefficient span is settled."
+```
+
+Inside the sum of the two ratio spans, a nonzero vector has a nonzero
+ten-kernel partner exactly when it lies in one span. The swapped transverse dot and the scaled
+cross-dot kernel both sit in that sum, and the same block kernel governs
+both. The chirality cap lies outside the sum and does not restore a
+partner. The witness cross sums are `4` and `2`. A vector outside the
+span of the chirality cap and the two ratio spans stays open. The
+ten-kernel coefficient span stays open.

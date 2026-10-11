@@ -291,3 +291,11 @@ ten-kernel partner. Every such vector has partner rank 10. The witness
 kernel cross sums are `1`, `-1`, and `-1`. It does not classify a vector
 with a nonzero excluded coefficient, and it does not classify the
 300-dimensional affine space.
+
+Cycle 43 prunes the reading that a vector in both ratio spans, or the
+chirality cap plus a nonzero sum vector, has a nonzero ten-kernel
+partner. Both cases have partner rank 10. The witness kernel cross sums
+are `4` and `2`. Inside the span, a nonzero swapped-dot or scaled
+coefficient has a nonzero partner exactly on one ratio span. It does
+not classify a vector outside that span, and it does not classify the
+300-dimensional affine space. This is not an N-gate no-go.

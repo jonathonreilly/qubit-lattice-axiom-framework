@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_ratio_span_sum_partner_kernel_2026_10_10.py
+runner_sha256: 71737dc07b2850ccc23fd5e8b1ca845b957fd6ceebeeb6c73cab97a61c2c1ff8
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 14.45
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS the two ratio spans meet only at 0, the chirality cap lies outside their sum, and the two excluded kernels sit on the swapped-orthogonal and cap generators
+PASS the six-generator map has rank 42 and kernel equal to the two partner spans, so a vector in both spans has partner rank 10 and a vector in one span has partner rank 7
+PASS the chirality map has rank 49 and kernel equal to the even space on the chirality block, so the chirality cap plus a nonzero sum vector has partner rank 10
+PASS the swapped-orthogonal generator plus the opposite oblique-matched generator against the oblique-matched generator has centre pairs (0, 0) and (2, 2) and cross sum 4
+PASS the chirality cap plus the swapped-orthogonal generator against the sign product has centre pairs (-1, -1) and (-1, -1) and cross sum 2
+BOTH witness [(0, 0), (2, 2)] 4
+CHI witness [(-1, -1), (-1, -1)] 2
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

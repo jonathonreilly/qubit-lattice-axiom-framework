@@ -538,16 +538,38 @@ centre pairs are `(0, -1)` and `(-1, 1)` and the kernel cross sum is
 excluded coefficient is not in this count. The ten-kernel coefficient
 span is not classified. Runner `PASS=8 FAIL=0`.
 
+Cycle 43. On the same alphabet the two ratio spans meet only at 0, so
+their sum is 6-dimensional. The swapped transverse dot sits only on the
+swapped-orthogonal generator, with opposite signs, and the scaled
+cross-dot kernel sits only on the cap generator, with coefficient 2 on
+both spans. A nonzero vector in the sum has a nonzero ten-kernel partner
+if and only if it lies in exactly one span. The partner is that span on height pairs
+`(1, 2)`, `(2, 1)`, `(2, 3)`, and `(3, 2)`, and the other span on
+`(1, 3)` and `(3, 1)`. A vector with a nonzero part in each span has
+partner rank 10. The chirality cap lies outside the sum, and adding it to a nonzero
+sum vector still has partner rank 10. At heights 1 and 2 the bond on
+`-e_x` and `-e_y` has lefts `(-1, -2, -3)` and `(-1, -2, 3)`. The
+swapped-orthogonal generator plus the opposite oblique-matched
+generator, against the first oblique-matched generator, has rights
+`(1, -2, -3)` and `(-1, 2, -3)`, centre pairs `(0, 0)` and `(2, 2)`,
+and kernel cross sum `4`. The chirality cap plus the swapped-orthogonal
+generator, against the sign product, has rights `(1, -3, -2)` and
+`(-1, 2, -3)`, centre pairs `(-1, -1)` and `(-1, -1)`, and kernel cross
+sum `2`. A vector outside the span of the chirality cap and the two
+ratio spans is not in this count. The ten-kernel coefficient span is
+not classified. Runner `PASS=8 FAIL=0`.
+
 ## Next exact action
 
-Decide whether a vector with a nonzero coefficient on the swapped
-transverse dot or the scaled cross-dot kernel has a ten-kernel partner
-other than 0. A mixed parity vector pairs only with 0. Do not claim the
-ten-kernel coefficient span is settled. Do not claim the 300-dimensional
-affine space is classified. Do not repeat the bond-space dimension
-count. Do not return to the modulus-3 triple. Do not invent a formation
-rate. Do not return to shells, plaquette corner weights, or the
-`(0,1,2)` and `(1,1,2)` alphabets.
+Decide whether a vector outside the span of the chirality cap and the
+two ratio spans, with a nonzero coefficient on the swapped transverse
+dot or the scaled cross-dot kernel, has a ten-kernel partner other than
+0. Inside that span, such a partner exists exactly on one ratio span.
+Do not claim the ten-kernel coefficient span is settled. Do not claim
+the 300-dimensional affine space is classified. Do not repeat the
+bond-space dimension count. Do not return to the modulus-3 triple. Do
+not invent a formation rate. Do not return to shells, plaquette corner
+weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

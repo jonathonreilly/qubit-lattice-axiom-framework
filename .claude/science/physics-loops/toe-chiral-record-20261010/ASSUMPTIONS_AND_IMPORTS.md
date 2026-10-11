@@ -525,3 +525,10 @@
   cycle-41 note. The bond-space dimension count is not repeated. The
   300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 43
+
+- The ansatz is the sum of the two ratio spans, together with the chirality cap. A vector outside that span is not in this count. The partner kernel of one ratio span is not this claim.
+- The checked sums are two-centre kernel cross sums. A kernel cross sum is not an alphabet mean.
+- The order-blind converse is not applied. The two spans are named by the cycle-32 note. The even space is named by the cycle-41 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

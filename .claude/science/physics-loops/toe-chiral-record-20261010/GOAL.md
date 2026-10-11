@@ -200,3 +200,11 @@ part has partner rank 10, so the only ten-kernel partner is 0. The
 orthogonal cross is one such vector. The witness cross sums are `1`,
 `-1`, and `-1`. A vector with a nonzero excluded coefficient is not in
 this count. The ten-kernel coefficient span is not classified.
+Cycle 43 shows that a nonzero vector in the sum of the two ratio spans
+has a nonzero ten-kernel partner if and only if it lies in exactly one
+span. A vector with a nonzero part in each span has partner rank 10.
+The chirality cap plus a nonzero sum vector also has partner rank 10.
+The swapped transverse dot and the scaled cross-dot kernel share that
+block kernel. The witness cross sums are `4` and `2`. A vector outside
+the span of the chirality cap and the two ratio spans is not in this
+count. The ten-kernel coefficient span is not classified.

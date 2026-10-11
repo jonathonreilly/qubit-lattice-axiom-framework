@@ -448,3 +448,16 @@ rank-46 kernel, the orthogonal cross, and the witness cross sums `1`,
 Family not used: a vector with a nonzero coefficient on the swapped
 transverse dot or the scaled cross-dot kernel. That remains open. The
 300-dimensional affine space is not this family.
+
+Cycle 43 target contract: whether a vector with a nonzero coefficient
+on the swapped transverse dot or the scaled cross-dot kernel has a
+ten-kernel partner other than 0, inside the span of the chirality cap
+and the two ratio spans.
+
+Family used: the six-generator partner map of the two ratio spans, its
+rank-42 kernel, the chirality map of rank 49, and the witness cross
+sums `4` and `2`.
+
+Family not used: a vector outside the span of the chirality cap and the
+two ratio spans. That remains open. The 300-dimensional affine space is
+not this family.

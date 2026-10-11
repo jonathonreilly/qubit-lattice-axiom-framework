@@ -13,8 +13,8 @@ while the active science worktree changes.
 
 Active walk publication worktree:
 `/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree`,
-branch `physics-loop/toe-projected-band-current-20261011`, based on parent #9479
-at b9b032ae790c66e762a6296a1306bfb64ae7cd70; original frozen-main base
+branch `physics-loop/toe-quantitative-memory-transfer-20261011`, based on published
+parent #9481 at d8480b5a6e04102ff076b3dd6f817a2d43f20252; original frozen-main base
 a13caa4885f547c8d206265b031ba7649e539fd9. It has no transport-stack dependency.
 The app worktree tool reported that this chat cwd is not a Git repository;
 standard git worktree add created the isolated branch successfully. Current
@@ -293,7 +293,12 @@ worktrees. Do not overwrite frozen proofs or the historical failed controls.
   receipt9dea961421ca868bd4def5eecb5c45982b5c5a421ed49c945f31cac8dd2f2ea6.
   Root read all new text/edits, checked exact59chunk/29fragment/36edit
   reconstruction, five unchanged full helper bodies and complete replay output.
-  spatial_quantum_realization is checking the complete new composition.
+  The complete composition review is now frozen at
+  426af62b6ca87934f69fad715f690652373c6fcdefb318f8ab9cb4237872e56d,
+  receipt bc7c29434bbc61591b8a1880cc021a9632d1b887a9a4933f89ac9309f80185b7.
+  Root read the complete report, helper and output and verified all84 path/hash
+  occurrences(74distinct). Prior M/W/D/L authorship is disclosed; no new
+  independent recertification of those premises is claimed.
   The original four-helper package is preserved under pre_extension/.
 - EXCLUDED_WALK_SPECTRAL_EDGE_PROBE.md is frozen at452lines,
   e63683cdd57ad3994523732ba58b88fbbcc82be815cbde2c2320f0ff9ef3c623;
@@ -304,7 +309,11 @@ worktrees. Do not overwrite frozen proofs or the historical failed controls.
   It proves rank-one domination of b^2-A^2, inverse-edge moment<=12I0/b^2,
   combined edge mass<=12I0(2chi-chi^2), Poisson proxy<=24I0chi and an explicit
   mean-survival O((bT)^(-4/5)) bound. Root supplied the L^(5/3) improvement;
-  spatial_prior_art is providing the separate independent review. No pointwise
+  The separate independent review is complete at
+  8a6741ea9ea890fb9fdece7a8c241fed537a1fe899dafe34f716f1211171bd40,
+  receipt1cc248fc02fedd81a2e8d9a91d5b8d7157ad9abc18e2a4b5cfa4f8c87954e055.
+  Root read the full report/reconstruction/helper/output and verified58
+  path/hash occurrences(57distinct). No mathematical repair was requested. No pointwise
   amplitude rate or weighted-current rate is implied. A final scope sentence
   should be narrowed in publication to avoid saying selected W/G results are
   globally open. Frozen original remains unchanged.
@@ -315,9 +324,14 @@ worktrees. Do not overwrite frozen proofs or the historical failed controls.
   equal to1/(8pi^2I0)+O(lambda^(2/9)), with physical horizonlambda^(-59/18).
   The finite A2-A7 bounds preserve the small amplitude and exact momentum
   weights. It concerns an O(lambda) probability, not a current rate or the
-  majority of the entire packet. spectral_edge_recovery is independently
-  checking this new composition while retaining S20 as its own author premise.
-  Author arithmetic controls passed; this new draft is not in the active PR.
+  majority of the entire packet. The separate A2-A9 review is complete at
+  e4f0f730b1d14d1d444e9e22eb0f6995fdc2dab4c130375491d6b61528d2d12a,
+  receipt4398c9bd17e25281efa1dfd2ae1d5f22eafc8415adc8b2a736a11b45c40b789d.
+  Root read the full report/reconstruction/helper and all outputs, verified34
+  artifact and13 instruction identities, and reconstructed both actual review
+  mutants. Its S20 author premise now has the separate completed review above.
+  Both historical sources remain unchanged. spectral_edge_recovery is composing
+  a separate complete edge/occupation note and three-helper primary externally.
 
 ## Current publication preparation
 
@@ -334,41 +348,59 @@ The source-author composition check is not counted as independent mathematics.
 The historical map-refresh receipt and original compiler/control failures are
 preserved; gzip containers retain their exact original bytes.
 
-walk_worktree now uses physics-loop/toe-projected-band-current-20261011 from
-b9b032ae790c66e762a6296a1306bfb64ae7cd70. This next milestone does not depend
-on the flux/form branch. The explicit-current composition is checked; 20 actual
-primary mutants failed at the intended assertions. Root verified exact source
-substitutions and all hash records, matched stable successful-output prefixes
-to the fully read baseline, and read all distinct failure frames/messages.
-The current and memory/growing-time chain will form one coherent regular PR.
-The current primary canonical cache is fresh (exit0,1.694s). Its three final
-status/link edits have a scoped addendum03cd681a83236f60f3160954851bb755c43be2a5a5f60fd53a35090518a90f1c;
-mathematical body and primary are unchanged. The future delivery pack was
-explicitly excluded from that addendum. The memory primary has17 actual
-semantic source-copy failures, each with a disclosed expected block-hash
-refresh. One harness expected source text unavailable in virtual-file
-tracebacks; the exact intended line21 failure was verified, original harness
-and unfinished manifest preserved, and the final remaining mutation executed.
-All successful prefixes match the fully read baseline; root read every
-failure frame. Final memory composition review, canonical cache, citation
-manifest and publication checks remain pending. The14-file milestone pack
-and285 exact evidence copies are in preparation; these are bookkeeping,
-not new scientific independence.
+Regular PR #9481 is OPEN,isDraft=false,attached to this chat:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9481
+Science revision d8480b5a6e04102ff076b3dd6f817a2d43f20252, based on parent
+#9479 b9b032ae790c66e762a6296a1306bfb64ae7cd70. The two complete notes include
+explicit projected-band current drift, effective memory, outgoing weighted
+limit, growing-time current and explicit selected-datum lower bound. Final
+memory note3954606703f9a66665fb1ee9a27079f7f14e5183f28a8511a38743ef5d455aa1
+changes only metadata/status/footer from the frozen composition. Both canonical
+caches are fresh: current1.694245815s and memory1.942409039s, exit0/empty stderr.
+Twenty current and17 memory primary mutants fail at intended assertions.
+The memory mutants disclose semantic source changes plus hash-metadata refresh;
+the earlier virtual-filename harness issue and all original failures are kept.
+Complete conformance, local OPEN cluster rationale, source maps,380 frozen
+evidence copies, links/vocabulary, citation delta2nodes3edges and407 staged
+identities/whitespace are documented in DELIVERY_CHECKS.md. Global combined
+audit pipeline/strict audit lint were not run and remain independent gates.
+The first local link scan mistook an indented spectral formula for Markdown;
+excluding code blocks fixed the scanner without changing any note. The first
+manifest write was repeated after the final graph build completed. These are
+mechanical preparation corrections, not mathematical repairs.
 
-Latest read-only repo sync: main unchanged at a13caa4885f547c8d206265b031ba7649e539fd9.
-All nine open PRs were inventoried. Parallel candidate-law PR#9476 now points
-to d009fb786d36a6cab4a7d410630b9382992faa08. Its body reports a new RC lane on
-energy-current conservation and gravitation constraints. Only that summary
-has been inspected here; its claims and negative conclusions are not yet
-accepted or fully reviewed. Read the underlying sources before deciding
-whether they change the next high-leverage route. Do not edit that branch.
+walk_worktree is clean on the next branch
+physics-loop/toe-quantitative-memory-transfer-20261011, based on #9481 at
+d8480b5a6e04102ff076b3dd6f817a2d43f20252. No next theorem has yet been copied
+into it. The final quantitative-memory composition is external work in progress.
+
+Latest repo sync: main unchanged at a13caa4885f547c8d206265b031ba7649e539fd9.
+Candidate-law PR#9476 is frozen for this assessment at
+d009fb786d36a6cab4a7d410630b9382992faa08. Nine source copies and manifest are
+under resume_20261011/repo_sync_rc_2045/. Root read complete C1 and both referee
+sources; C2/C3 have not yet been fully read by root. spatial_prior_art read all
+nine sources and produced NEXT_DERIVATION_RC_ROUTE_ASSESSMENT.md at
+ dd6712773c2af435e81bd16c305c2e065f8a99177bc342728a29f750db4923f0.
+Root read that complete assessment. C4 underlying sources remain uninspected;
+no broad exclusion in the summary is accepted as a theorem here.
+
+Two bounded new derivations are active externally. spatial_prior_art is
+computing the actual excluded walk's full boost/current bracket with contact
+and derivative terms, seeking a precisely scoped low-energy residual bound.
+This is a necessary matter-algebra test, not exact gravity closure.
+spatial_quantum_realization is testing interspecies-only collision-invariant
+rigidity in three dimensions. The tentative geometric K2,2 anchor argument
+could remove the self-scattering premise under full affine velocity span;
+cubic covariance needs a genuinely invariant regular domain. These are
+unproved active work, not publication results. No agent writes repo worktrees.
 
 ## Boundaries and next action
 
 Both checked transport and finite-preparation walk milestones are published.
-The checked flux/form/Lean milestone is also published. Finish the combined
-current/memory publication milestone, check the edge and averaged-occupation
-extensions, then reassess the next major route against the updated repo.
+The checked flux/form/Lean and current/memory milestones are also published.
+Compose/check the quantitative edge and averaged-occupation milestone, while
+deriving the new boost/current and interspecies-rigidity questions. Further
+many-body work remains ranked behind these bounded tests.
 Keep identities and raw evidence current. Original mathematics is authorized. Lean may verify
 complex scoped obligations during audit; the universal rank-one algebra is now
 compiled and statement-checked, while analytic proof obligations remain separate.

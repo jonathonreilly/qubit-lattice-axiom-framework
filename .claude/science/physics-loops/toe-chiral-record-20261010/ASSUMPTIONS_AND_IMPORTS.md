@@ -253,3 +253,18 @@
   bond note. The bond-space dimension count is not repeated. The
   300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 24
+
+- The ansatz is the same 10-dimensional opposite-height space. The
+  exhibited kernel is the swapped transverse-dot sign: the sign of the
+  negative transverse dot product on swapped bonds whose transverse dot
+  product is nonzero. The coefficient `1/2` is a witness, not a selected
+  scale. The remaining two dimensions of the complement are not in this
+  count. A mixed-height bond is not in this count.
+- Order-blindness is Theorem 2's converse, applied after bond symmetry
+  and the neighbour-product means. Those means follow from one live
+  direction and a zero left slice. Far-end sum 1 is the chiral-pair
+  bond note. The bond-space dimension count is not repeated. The
+  300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

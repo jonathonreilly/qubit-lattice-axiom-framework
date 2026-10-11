@@ -368,3 +368,22 @@ and differ by 2 on the matched oblique dot prune the reading that this
 kernel lies in the span of those eighteen. The orbit rank says seven
 kernels are now independent inside the 10-dimensional ansatz. A third
 vector in the remaining complement stays outside this formula.
+
+## Cycle 24
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Exhibit a fourth kernel in the remaining 2-dimensional complement of one opposite-height pair, with an exact formula, outside the eight kernels now exhibited there. Do not claim that complement is based."
+```
+
+The two bonds that agree on the fifteen kernels, carry parallel dot 0
+and matched oblique dot 0, and differ by 2 on the swapped dot prune the
+reading that this kernel lies in the span of those twenty-one. The orbit
+rank says eight kernels are now independent inside the 10-dimensional
+ansatz. A fourth vector in the remaining complement stays outside this
+formula.

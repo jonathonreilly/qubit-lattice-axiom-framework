@@ -71,4 +71,9 @@ height 1, 2, and 3, at coefficient `1/2`, has neighbour-product mean 1
 and support disjoint from the parallel-dot kernel. Two bonds at each
 height agree on the fifteen comparison kernels, carry parallel dot 0,
 and differ by 2 on this kernel. The same 10-dimensional ansatz now has
-seven independent kernels.
+seven independent kernels. Cycle 24 shows that the swapped transverse-dot
+sign at each absolute height 1, 2, and 3, at coefficient `1/2`, has
+neighbour-product mean 1 and support disjoint from the parallel-dot
+kernel and the matched oblique dot. Two bonds at each height agree on
+the fifteen comparison kernels, carry those two dots at 0, and differ by
+2 on this kernel. The same ansatz now has eight independent kernels.

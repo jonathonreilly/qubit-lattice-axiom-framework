@@ -137,3 +137,13 @@ carry parallel dot 0, and differ by 2 on this kernel. Inside the
 10-dimensional ansatz the rank rises from 6 to 7. It does not base the
 remaining 3-dimensional complement, and it does not classify the
 300-dimensional affine space.
+
+Cycle 24 prunes the reading that every strictly positive order-blind
+factor on this alphabet lies in the span of those twenty-one kernels.
+Each swapped transverse dot at coefficient `1/2` has neighbour-product
+mean 1 and support disjoint from the parallel-dot kernel and the matched
+oblique dot. Two bonds at each height agree on the fifteen, carry those
+two dots at 0, and differ by 2 on this kernel. Inside the 10-dimensional
+ansatz the rank rises from 7 to 8. It does not base the remaining
+2-dimensional complement, and it does not classify the 300-dimensional
+affine space.

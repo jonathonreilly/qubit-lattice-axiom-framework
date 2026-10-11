@@ -1673,3 +1673,58 @@ All five were refereed by codex gpt-5.6-sol at xhigh. Files: `agents/C4_{W1,M1,K
 - The general no-go needs hypotheses that are not established for every reflection-positive theory: compact smooth shells, a Wick-real translation symbol, and a complete boost flow.
 - The free scalar and reduced TT graviton transfer matrices are positive; 9.899 is a leapfrog instability only.
 - Coupled reflection positivity is unproved.
+
+### C4 fifth wave (18:17Z): following up V1's conditional vacuum mechanism
+
+V1 (refereed INCONCLUSIVE) is the campaign's strongest lead. The referee raised three objections:
+- (i) Rule R is a vacuum-referenced convention: it is not basis-free and not derived.
+- (ii) It leaves an O(λε) scattering Ward-identity defect, which conflicts with universal coupling.
+- (iii) "All orders" needs an exact W that has not been constructed.
+
+#### Lane RV2: can R be made canonical, and does the defect matter?
+
+**Probe V2.**
+- (a) Look for a basis-free, canonical form of R, one that is derived rather than chosen. Candidates:
+  - Kato adiabatic transport of the interacting vacuum;
+  - Gell-Mann–Low dressing;
+  - a variational principle, such as minimal norm of the explicit-position part;
+  - the requirement that the local coupling be a unitary flow of H within the space of local Hamiltonians.
+
+  Show whether any of these selects R uniquely and agrees with V1.
+- (b) Size the scattering-sector Ward defect and its consequences:
+  - universality, i.e. whether a composite's binding energy gravitates with the same G, giving an Eötvös-type violation as a function of (ka);
+  - whether the defect feeds back into the vacuum TT response at higher order (V1 says it never does under R; check);
+  - whether, given (ii), the defect is phenomenologically negligible at physical energies: relative defect O((ka)²) ~ (E/M_Pl)².
+
+**Fixed readings.**
+- **PASS:**
+  - a canonical (basis-free, derived) R that reproduces V1's μ = 0; and
+  - a scattering defect whose effect on universality is below observational bounds at physical energies, with no feedback into μ at the order checked.
+- **FAIL:** either of these:
+  - no candidate principle selects R, and every candidate gives μ ≠ 0;
+  - the defect feeds back into μ at natural size, or violates universality above bounds.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.**
+- Kato transport or Gell-Mann–Low is likely to select V1's sector split up to terms that do not move μ, so R would be canonical (PASS on (a), probable).
+- The universality defect is about (E/M_Pl)², which is negligible.
+- Feedback into μ is possible at O(λ³) through loops of lattice-scale scattering states. This is the real risk.
+- **Reading:** INCONCLUSIVE leaning PASS, with the O(λ³) feedback as the decider.
+
+#### Lane RV3: the V1 mechanism for the framework's own matter
+
+**Probe V3.** Extend V1 to staggered fermions on Z³:
+- with a contact interaction (S1's classes);
+- or with lattice QED at O(e²), where the photon brings a gapless continuum.
+
+Does the vacuum-annihilating dressing exist and stay local? For massless photons the gap Σω ≥ 4m fails and kernels become power-law, so is it local at all? Does the O(λ²)/O(e²) vacuum TT cancellation work, given that rule R is adapted to fermions?
+
+**Fixed readings.**
+- **PASS:** μ = 0 at the first nontrivial order with a local or exponentially quasi-local dressing, for the stated fermion class.
+- **FAIL:** no local dressing exists (e.g. power-law kernels at the order needed), or μ ≠ 0.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.**
+- Massive staggered fermions with contact interactions: works as for φ⁴, so PASS (conditional on R).
+- Massless photon: the 0↔4 analogue, e⁺e⁻γ production from the vacuum, has a denominator ≥ 2m, so it stays gapped. But photon-only channels such as light-by-light are gapless, so power-law kernels appear at O(e⁴). At O(e²) the mechanism may survive.
+- **Reading:** PASS at O(e²) for massive fermions with photons, conditional on R.

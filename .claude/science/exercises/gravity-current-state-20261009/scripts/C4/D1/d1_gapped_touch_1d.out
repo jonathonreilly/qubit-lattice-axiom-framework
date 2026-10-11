@@ -1,0 +1,27 @@
+E_f=3.296908 s=0.952891 Om=E_f-m=2.296908
+stability: max_(k,q) D = 0.000e+00 (0 only at k=pi, q=pi)
+  gap to threshold at k=pi-0.10: 9.7644e-02
+  gap to threshold at k=pi-0.01: 9.5526e-03
+
+b=2: K_face=0.26759718 Z=0.788894; predicted Sigma'(0+) = sK = 0.25499082
+   delta=1e-02: slope = 0.24202479   slope/(sK) = 0.949151
+   delta=1e-03: slope = 0.25116825   slope/(sK) = 0.985009
+   delta=1e-04: slope = 0.25381313   slope/(sK) = 0.995381
+   delta=1e-05: slope = 0.25462162   slope/(sK) = 0.998552
+
+b=3: K_face=0.26572898 Z=0.790059; predicted Sigma'(0+) = sK = 0.25321063
+   delta=1e-02: slope = 0.25064347   slope/(sK) = 0.989862
+   delta=1e-03: slope = 0.25294852   slope/(sK) = 0.998965
+   delta=1e-04: slope = 0.25318428   slope/(sK) = 0.999896
+   delta=1e-05: slope = 0.25320799   slope/(sK) = 0.999990
+
+b=1 (nearest-neighbour vertex): K_face with |q|<pi-cut grows like 1/cut  ->  Z = 0 at the face
+   cut=1e-01: K=1.6261
+   cut=1e-02: K=15.9536
+   cut=1e-03: K=159.1934
+   Sigma_os(pi-delta) - Sigma_os(pi)  vs  sqrt(delta):
+   delta=1e-02: dS = +2.466439e-02   dS/sqrt(delta) = +0.24664
+   delta=1e-03: dS = +7.750469e-03   dS/sqrt(delta) = +0.24509
+   delta=1e-04: dS = +2.443963e-03   dS/sqrt(delta) = +0.24440
+   delta=1e-05: dS = +7.720867e-04   dS/sqrt(delta) = +0.24416
+   delta=1e-06: dS = +2.440769e-04   dS/sqrt(delta) = +0.24408

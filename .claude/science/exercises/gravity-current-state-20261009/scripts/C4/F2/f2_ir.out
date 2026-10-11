@@ -1,0 +1,24 @@
+== photon, per naive fermion (8 Dirac doublers): dc_gamma*16pi^2 = (aB-aE)/2*16pi^2
+m= 0.100 L= 160  dc_gamma(naive)*16pi^2 = -5.26383   per Dirac -0.65798
+m= 0.100 L= 240  dc_gamma(naive)*16pi^2 = -5.26399   per Dirac -0.65800
+m= 0.070 L= 232  dc_gamma(naive)*16pi^2 = -5.31627   per Dirac -0.66453
+m= 0.070 L= 344  dc_gamma(naive)*16pi^2 = -5.31634   per Dirac -0.66454
+m= 0.050 L= 320  dc_gamma(naive)*16pi^2 = -5.34984   per Dirac -0.66873
+m= 0.050 L= 480  dc_gamma(naive)*16pi^2 = -5.34988   per Dirac -0.66874
+m= 0.035 L= 464  dc_gamma(naive)*16pi^2 = -5.39357   per Dirac -0.67420
+m= 0.035 L= 688  dc_gamma(naive)*16pi^2 = -5.39358   per Dirac -0.67420
+
+== fermion (Feynman gauge): dc_f*16pi^2 = (a1-a0)*16pi^2
+m= 0.100 lam= 0.200 L= 104  a0=+5.5214 a1=-10.4567 (tadpole -17.8221)  dc_f*16pi^2 = -15.97808
+m= 0.100 lam= 0.200 L= 152  a0=+5.5214 a1=-10.4566 (tadpole -17.8221)  dc_f*16pi^2 = -15.97801
+m= 0.070 lam= 0.140 L= 144  a0=+6.2455 a1=-9.7697 (tadpole -17.8936)  dc_f*16pi^2 = -16.01520
+m= 0.070 lam= 0.140 L= 216  a0=+6.2455 a1=-9.7696 (tadpole -17.8936)  dc_f*16pi^2 = -16.01510
+m= 0.050 lam= 0.100 L= 200  a0=+6.9243 a1=-9.1096 (tadpole -17.9307)  dc_f*16pi^2 = -16.03390
+m= 0.050 lam= 0.100 L= 304  a0=+6.9243 a1=-9.1095 (tadpole -17.9307)  dc_f*16pi^2 = -16.03380
+m= 0.035 lam= 0.070 L= 288  a0=+7.6412 a1=-8.4033 (tadpole -17.9522)  dc_f*16pi^2 = -16.04448
+m= 0.035 lam= 0.070 L= 432  a0=+7.6412 a1=-8.4032 (tadpole -17.9522)  dc_f*16pi^2 = -16.04439
+m= 0.050 lam= 0.050 L= 200  a0=+7.9935 a1=-8.0621 (tadpole -17.9631)  dc_f*16pi^2 = -16.05567
+m= 0.050 lam= 0.050 L= 304  a0=+7.9938 a1=-8.0612 (tadpole -17.9631)  dc_f*16pi^2 = -16.05496
+m= 0.035 lam= 0.035 L= 288  a0=+8.7088 a1=-7.3473 (tadpole -17.9694)  dc_f*16pi^2 = -16.05608
+m= 0.035 lam= 0.035 L= 432  a0=+8.7089 a1=-7.3465 (tadpole -17.9694)  dc_f*16pi^2 = -16.05542
+elapsed 27.9s

@@ -1,0 +1,5 @@
+total_rows=144
+usable_BW1_or_SC_res_lt_1e-9=109
+p_one_step_range=2..2
+p_four_step_range=2..2
+numeric_match_to_archived_output_ignoring_runtime=yes

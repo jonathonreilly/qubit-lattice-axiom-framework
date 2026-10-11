@@ -1,0 +1,3 @@
+L=24 xi=1.0: a0=-3.762114975118 ax=-3.762114975116 dc_f*16pi^2=+2.234e-12  aE=+1380.3329287076 aB=+1380.3329287078 dc_gamma per Dirac=+0.000000  Delta(4D stag)=-0.0000
+L=32 xi=16.0: a0=+5.404475145643 ax=-10.513354844631 dc_f*16pi^2=-1.592e+01  aE=+606.4201176223 aB=+585.5780545768 dc_gamma per Dirac=-0.651314  Delta(4D stag)=-13.3126
+continuous-time reference at m=0.1, lam=0.2 (f2_ir.out, f2_ir_photon.out): dc_f = -15.978, dc_gamma per Dirac = -0.6579

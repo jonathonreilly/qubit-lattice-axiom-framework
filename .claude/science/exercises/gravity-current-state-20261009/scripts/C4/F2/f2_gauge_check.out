@@ -1,0 +1,4 @@
+semi-analytic Feynman L=10: a0*16pi^2=+4.60318 a1*16pi^2=-11.86373 dc_f*16pi^2=-16.46691
+brute force xi=1.0: a0*16pi^2=+4.60318 a1*16pi^2=-11.86372 dc_f*16pi^2=-16.46690
+brute force xi=0.0: a0*16pi^2=-1.31501 a1*16pi^2=-17.76751 dc_f*16pi^2=-16.45250
+brute force xi=3.0: a0*16pi^2=+16.43954 a1*16pi^2=-0.05616 dc_f*16pi^2=-16.49570

@@ -1,0 +1,45 @@
+== Radial coarse-flat(L) design, m = 0: per fine site ==
+ L      rho        rho_flat   omega_flat  p_x         a_x=<E_x-H>  a+rho+p   <u_xx>     mu_E=mu_T2   A_w(T2)
+    3 7.7596e-01 6.6751e-01 1.5802e+00 1.0588e-02 -7.8655e-01 +1.8e-11 +2.3e-11 -1.6633e-03 -0.399
+    4 5.8809e-01 5.5378e-01 1.1851e+00 3.3500e-03 -5.9144e-01 +5.4e-12 +9.2e-12 -5.2627e-04 -0.399
+    6 3.9416e-01 3.8738e-01 7.9008e-01 6.6173e-04 -3.9482e-01 +1.1e-12 +2.8e-12 -1.0396e-04 -0.399
+    8 2.9600e-01 2.9386e-01 5.9256e-01 2.0938e-04 -2.9621e-01 +3.4e-13 +1.1e-12 -3.2892e-05 -0.399
+   16 1.4812e-01 1.4799e-01 2.9628e-01 1.3086e-05 -1.4814e-01 +2.1e-14 +1.4e-13 -2.0558e-06 -0.399
+   32 7.4069e-02 7.4061e-02 1.4814e-01 8.1787e-07 -7.4070e-02 +1.3e-15 +1.8e-14 -1.2848e-07 -0.399
+   64 3.7035e-02 3.7035e-02 7.4070e-02 5.1117e-08 -3.7035e-02 +8.3e-17 +2.2e-15 -8.0303e-09 -0.399
+  128 1.8518e-02 1.8518e-02 3.7035e-02 3.1948e-09 -1.8518e-02 +5.6e-18 +2.8e-16 -5.0189e-10 -0.399
+  256 9.2588e-03 9.2588e-03 1.8518e-02 1.9968e-10 -9.2588e-03 -7.3e-19 +3.5e-17 -3.1368e-11 -0.399
+ 1024 2.3147e-03 2.3147e-03 4.6294e-03 7.7999e-13 -2.3147e-03 +5.8e-20 +5.5e-19 -1.2253e-13 -0.399
+ 4096 5.7867e-04 5.7867e-04 1.1573e-03 3.0468e-15 -5.7867e-04 -6.5e-21 +8.5e-21 -4.7864e-16 -0.399
+
+== scaled values (Q * L^p) at large L: test of pure power laws ==
+L=   64: rho*L = 2.370243   p_x*L^4 = 0.857603   mu*L^4 = -0.134726   (rho+p_x - rho_flat)*L^4 = 9.641950
+L=  256: rho*L = 2.370247   p_x*L^4 = 0.857603   mu*L^4 = -0.134726   (rho+p_x - rho_flat)*L^4 = 9.641950
+L= 1024: rho*L = 2.370247   p_x*L^4 = 0.857603   mu*L^4 = -0.134726   (rho+p_x - rho_flat)*L^4 = 9.641950
+L= 4096: rho*L = 2.370247   p_x*L^4 = 0.857603   mu*L^4 = -0.134726   (rho+p_x - rho_flat)*L^4 = 9.641937
+
+relative to the fine-NN natural values: mu/mu_NN = 1.1435e+01 L^-4 ; p/p_NN = 7.7963e+00 L^-4 ; rho/rho_NN = 1.9855 L^-1
+L* for mu (TT Hessian, linear-only)           at P0 (refereed 5.7e-99): L* = 6.693e+24
+L* for mu (TT Hessian, linear-only)           at P0 (framework 9.0e-102): L* = 3.357e+25
+L* for vacuum pressure p                      at P0 (refereed 5.7e-99): L* = 6.081e+24
+L* for vacuum pressure p                      at P0 (framework 9.0e-102): L* = 3.051e+25
+L* for vacuum anomaly incl. flat zero-point   at P0 (refereed 5.7e-99): L* = 3.483e+98
+L* for vacuum anomaly incl. flat zero-point   at P0 (framework 9.0e-102): L* = 2.206e+101
+
+mu-based L* = 6.693e+24: coarse cell ell* = 5.421e-10 m ; coarse cutoff pi/ell* = 1.144e+03 eV
+good band must reach 1e+13 eV: L <= 7.650e+14; then mu/natural >= 3.339e-59
+good band must reach 1e+14 eV: L <= 7.650e+13; then mu/natural >= 3.339e-55
+
+== multi-band variant: internal bands exactly flat at energy M (no group velocity, no stress) ==
+contribution per internal mode: rho = M/2, p = 0, mu = 0 (any completion), <E_x - H> = -M/2, A = -1 per quantum.
+M=1.0, L=8: internal fraction 0.998047; rho+p from internal = 0.4990 per fine site (does not fall)
+M=1.0, L=64: internal fraction 0.999996; rho+p from internal = 0.5000 per fine site (does not fall)
+M=1.0, L=1024: internal fraction 1.000000; rho+p from internal = 0.5000 per fine site (does not fall)
+M=2.0, L=8: internal fraction 0.998047; rho+p from internal = 0.9980 per fine site (does not fall)
+M=2.0, L=64: internal fraction 0.999996; rho+p from internal = 1.0000 per fine site (does not fall)
+M=2.0, L=1024: internal fraction 1.000000; rho+p from internal = 1.0000 per fine site (does not fall)
+
+== Bose-Fermi paired variant (one complex boson + one two-band fermion with |eps| = omega, same flow coupling) ==
+vacuum energy E0_B(h) + E0_F(h) = sum_k omega_h(k) - sum_k omega_h(k) = 0 for every h and every design: rho, p, a_x, mu all cancel
+mode by mode (construction-level identity). The operator anomaly sum_k (u_xx-1) eps_k n_k on real quanta has the same sign
+for both statistics and does NOT cancel.

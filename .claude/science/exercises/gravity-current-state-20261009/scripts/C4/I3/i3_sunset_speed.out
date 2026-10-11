@@ -1,0 +1,15 @@
+design          L    N   omega_flat   I_t          I_x          dc2/lambda^2=(I_x-I_t)/12   D(0)=<phi^2>  [s]
+NN(m=0.5)       -   48           -   1.78685e-04  4.06171e-05  -1.15056e-05               0.2185   1
+radial-flat      4   32  1.2485e+00   5.25679e-03  1.02623e-05  -4.37210e-04               0.4046   1
+radial-flat      6   48  8.3233e-01   5.69071e-02  1.02623e-05  -4.74141e-03               0.6026   1
+radial-flat      8   64  6.2425e-01   3.15830e-01  1.02623e-05  -2.63183e-02               0.8020   3
+radial-flat     12   96  4.1616e-01   3.57489e+00  1.02623e-05  -2.97906e-01               1.2019   9
+radial-flat     16  128  3.1212e-01   2.00553e+01  1.02623e-05  -1.67127e+00               1.6022   23
+radial-gapped    4   32  2.0382e+00   3.40600e-04  2.84890e-05  -2.60093e-05               0.2531   23
+radial-gapped    6   48  2.0171e+00   3.28817e-04  3.97993e-05  -2.40848e-05               0.2519   24
+radial-gapped    8   64  2.0096e+00   3.19686e-04  4.45340e-05  -2.29293e-05               0.2512   26
+radial-gapped   12   96  2.0043e+00   3.10819e-04  4.76972e-05  -2.19268e-05               0.2505   31
+radial-gapped   16  128  2.0024e+00   3.07082e-04  4.84299e-05  -2.15543e-05               0.2503   45
+
+Reading: I_t - I_x is the Lorentz-violating part (zero for a Lorentz-invariant regulator).
+Carroll (flat) modes are local in x, so they feed I_t (tau^2 moment) but not I_x (x^2 moment).

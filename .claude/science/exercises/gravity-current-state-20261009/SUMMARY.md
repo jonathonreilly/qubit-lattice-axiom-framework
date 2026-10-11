@@ -345,3 +345,10 @@ Details are in `TESTS.md`, "Lane RG results".
   - giving up Einstein's constraint algebra in favour of a preferred time slicing.
 
 Details are in `TESTS.md`, under "Lane RC results".
+
+## 16. Campaign C4 first wave (owner, 2026-10-11): infinite bands, preferred slicing, dressed bands
+
+**Plain version.**
+- **Infinite-band networks: FAIL (bounded, refereed).** Making momentum and boosts close exactly needs, for each particle, a whole infinite tower of bands. That is a continuum field in every cell, with unbounded energy per cell. Every finite number of bands, and every coarse-cell version of the grid, only moves the anomaly; it never removes it. A network with N bands is just a finer grid. Still open: interacting matter built as composites of qubits, which this result does not cover.
+- **Preferred time slicing: INCONCLUSIVE.** The healthy Hořava graviton fits on the lattice. But one loop of lattice QED leaves the electron 0.85% slower than light, which needs a tuning to 3×10⁻¹⁷. Only putting time on the lattice with the same step as space removes that. Several escapes remain open.
+- **Dressed bands: FAIL (bounded, refereed).** Dressing a particle with soft quanta shrinks any corner in its energy curve by its residue Z; it never makes one. The exact SLAC corner therefore needs non-local hopping, or Z = 0.

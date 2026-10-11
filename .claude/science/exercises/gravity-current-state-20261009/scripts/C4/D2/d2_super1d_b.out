@@ -1,0 +1,19 @@
+# eps=(1-cos k)^2, a=0.5, BW1, q-grid N=32768.  s(d) = [E(pi)-E(pi-d)]/d ; s_th from threshold at d=0.01
+c=0.4: K=pi threshold minimiser k*=-0.4571, th(pi)=0.78974, kink slope |eps'(k*)|=0.0906
+c=0.4 g2=0.3 | E(pi)=0.740735 gap=4.900e-02 Z(pi)=1.903e-02 | s_th=0.0921 | s(d)/s_th=0.000 0.001 0.003 0.008 0.027 0.081 0.268 0.764 | ell=s_th/C=1.85e-01
+c=0.4 g2=0.1 | E(pi)=0.778531 gap=1.121e-02 Z(pi)=5.044e-03 | s_th=0.0921 | s(d)/s_th=0.001 0.002 0.006 0.019 0.064 0.190 0.556 1.135 | ell=s_th/C=7.74e-02
+c=0.4 g2=0.03 | E(pi)=0.788169 gap=1.568e-03 Z(pi)=8.873e-04 | s_th=0.0921 | s(d)/s_th=0.004 0.012 0.042 0.123 0.363 0.697 1.012 1.373 | ell=s_th/C=1.20e-02
+c=0.4 g2=0.01 | E(pi)=0.789545 gap=1.914e-04 Z(pi)=1.176e-04 | s_th=0.0921 | s(d)/s_th=0.035 0.103 0.312 0.622 0.863 0.981 1.122 1.415 | ell=s_th/C=1.44e-03
+c=0.4 g2=0.003 | E(pi)=0.789719 gap=1.746e-05 Z(pi)=1.086e-05 | s_th=0.0921 | s(d)/s_th=0.337 0.644 0.862 0.944 0.986 1.027 1.137 1.420 | ell=s_th/C=1.49e-04
+c=0.4 g2=0.03 window w=0.393: SLAC dev/bw dressed=0.0798 threshold=0.0621; Z range on window 1.62e-04..8.87e-04
+c=0.4 g2=0.03 window w=0.785: SLAC dev/bw dressed=0.0908 threshold=0.0878; Z range on window 1.59e-04..8.87e-04
+c=0.4 g2=0.03 window w=1.571: SLAC dev/bw dressed=0.1072 threshold=0.1060; Z range on window 1.59e-04..2.40e-03
+c=1.0: K=pi threshold minimiser k*=-0.7506, th(pi)=1.93301, kink slope |eps'(k*)|=0.3665
+c=1.0 g2=0.3 | E(pi)=1.848874 gap=8.413e-02 Z(pi)=5.246e-02 | s_th=0.3701 | s(d)/s_th=0.000 0.001 0.003 0.010 0.035 0.104 0.333 0.803 | ell=s_th/C=1.43e-01
+c=1.0 g2=0.1 | E(pi)=1.917292 gap=1.571e-02 Z(pi)=1.299e-02 | s_th=0.3701 | s(d)/s_th=0.002 0.005 0.017 0.050 0.162 0.418 0.803 1.143 | ell=s_th/C=3.02e-02
+c=1.0 g2=0.03 | E(pi)=1.931346 gap=1.660e-03 Z(pi)=1.571e-03 | s_th=0.3701 | s(d)/s_th=0.016 0.049 0.158 0.405 0.734 0.915 1.049 1.243 | ell=s_th/C=3.08e-03
+c=1.0 g2=0.01 | E(pi)=1.932818 gap=1.882e-04 Z(pi)=1.815e-04 | s_th=0.3701 | s(d)/s_th=0.141 0.371 0.702 0.881 0.964 1.006 1.080 1.255 | ell=s_th/C=3.53e-04
+c=1.0 g2=0.003 | E(pi)=1.932989 gap=1.699e-05 Z(pi)=1.643e-05 | s_th=0.3701 | s(d)/s_th=0.725 0.889 0.959 0.982 0.997 1.018 1.084 1.256 | ell=s_th/C=6.90e-05
+c=1.0 g2=0.03 window w=0.393: SLAC dev/bw dressed=0.0481 threshold=0.0426; Z range on window 2.44e-04..1.57e-03
+c=1.0 g2=0.03 window w=0.785: SLAC dev/bw dressed=0.0608 threshold=0.0604; Z range on window 2.39e-04..1.57e-03
+c=1.0 g2=0.03 window w=1.571: SLAC dev/bw dressed=0.0564 threshold=0.0554; Z range on window 2.39e-04..9.57e-03

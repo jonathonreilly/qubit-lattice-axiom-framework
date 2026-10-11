@@ -1,0 +1,25 @@
+1. independent 1D midpoint quadrature
+   n=2: K=0.366775159, sK=0.349496570, slope(delta=1e-4)=0.349463772, ratio=0.9999062
+   n=3: K=1.035126858, sK=0.986362564, slope(delta=1e-4)=0.986308701, ratio=0.9999454
+2. independent marginal-log fit
+   fitted C=0.06912630; local asymptotic C=0.06915904; ratio=0.999527
+3. independent 2D split Gauss--Legendre product quadrature
+   delta=0.020: K=0.083295, slope/(sK)=0.96055
+   delta=0.010: K=0.083295, slope/(sK)=0.97718
+   delta=0.005: K=0.083295, slope/(sK)=0.98704
+4. gapped touching: midpoint result and local closed form
+   delta=1e-03: dSigma/sqrt(delta)=0.245091
+   delta=1e-04: dSigma/sqrt(delta)=0.244396
+   delta=1e-05: dSigma/sqrt(delta)=0.244155
+   local prediction sqrt(s)/4=0.244040
+5. inverse-problem tail on independent k/q grids
+   r=16: tail ratio=1.356363; 1+K=1.366775
+   r=32: tail ratio=1.363218; 1+K=1.366775
+   r=64: tail ratio=1.365647; 1+K=1.366775
+6. exact jump algebra for the self-consistent iteration
+   finite-Z kink factor Z=1/(1+K); mixed-iteration factor=0.401797
+   marginal finite-size d(s0/s)/dlog(1/h): 0.05035, 0.04891, 0.04732, 0.04602
+7. 1D Fermi-sea counterexample to universal one-pair decay kinematics
+   t=0.001, kF=0.1: min[Delta_E(Q)-min(4t,2tQ)]=9.509e-08 for 0<Q<=pi; no single particle-hole energy can match the loss
+8. synthetic sub-marginal power-law check
+   predicted exponent=0.5; fitted exponent=0.496693; all coefficients positive, dSigma/sqrt(delta)=0.567502

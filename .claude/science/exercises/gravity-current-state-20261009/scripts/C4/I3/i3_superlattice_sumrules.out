@@ -1,0 +1,21 @@
+== (1)-(3) block chains: cells of L fine sites, strong inside (Jin), weak between (Jout), m^2 = 0.2 ==
+L= 2 Jin=1.0 Jout=1.0: trace rule sum_n <u_n''> = -3.37e-17; per-band <u_n''> = [ 5.551e-17 -1.388e-17]...; low band c0^2 = 0.2500, own zone-mean anomaly <u0''>/c0^2 - 1 = -1.0000; vacuum-weighted <u_n'' w_n> (first 3) = [-0.1169 -0.0723] vs IBP [-0.1169 -0.0723]; gap to band 2 = 0.001
+L= 2 Jin=4.0 Jout=0.25: trace rule sum_n <u_n''> = +6.90e-20; per-band <u_n''> = [2.568e-17 2.853e-17]...; low band c0^2 = 0.1176, own zone-mean anomaly <u0''>/c0^2 - 1 = -1.0000; vacuum-weighted <u_n'' w_n> (first 3) = [-0.012  -0.0027] vs IBP [-0.012  -0.0027]; gap to band 2 = 2.027
+L= 4 Jin=1.0 Jout=1.0: trace rule sum_n <u_n''> = +1.02e-17; per-band <u_n''> = [ 2.082e-17  8.327e-17 -2.082e-17  4.163e-17]...; low band c0^2 = 0.0625, own zone-mean anomaly <u0''>/c0^2 - 1 = -1.0000; vacuum-weighted <u_n'' w_n> (first 3) = [-0.0159 -0.0425 -0.0304] vs IBP [-0.0159 -0.0425 -0.0304]; gap to band 2 = 0.001
+L= 4 Jin=4.0 Jout=0.25: trace rule sum_n <u_n''> = +2.40e-20; per-band <u_n''> = [ 2.064e-17  1.626e-17  1.924e-18 -6.912e-19]...; low band c0^2 = 0.0526, own zone-mean anomaly <u0''>/c0^2 - 1 = -1.0000; vacuum-weighted <u_n'' w_n> (first 3) = [-0.0033 -0.0034 -0.0007] vs IBP [-0.0033 -0.0034 -0.0007]; gap to band 2 = 0.930
+L= 8 Jin=1.0 Jout=1.0: trace rule sum_n <u_n''> = +6.42e-18; per-band <u_n''> = [ 0.000e+00  4.163e-17 -4.510e-17 -4.510e-17]...; low band c0^2 = 0.0156, own zone-mean anomaly <u0''>/c0^2 - 1 = -1.0000; vacuum-weighted <u_n'' w_n> (first 3) = [-0.0015 -0.0065 -0.0102] vs IBP [-0.0015 -0.0065 -0.0102]; gap to band 2 = 0.000
+L= 8 Jin=4.0 Jout=0.25: trace rule sum_n <u_n''> = +1.47e-19; per-band <u_n''> = [-8.267e-18  1.147e-17  9.101e-18  1.277e-18]...; low band c0^2 = 0.0217, own zone-mean anomaly <u0''>/c0^2 - 1 = -1.0000; vacuum-weighted <u_n'' w_n> (first 3) = [-0.0008 -0.0017 -0.0009] vs IBP [-0.0008 -0.0017 -0.0009]; gap to band 2 = 0.341
+L=16 Jin=1.0 Jout=1.0: trace rule sum_n <u_n''> = -8.81e-18; per-band <u_n''> = [-4.337e-19 -1.301e-18  1.735e-17  2.602e-18]...; low band c0^2 = 0.0039, own zone-mean anomaly <u0''>/c0^2 - 1 = -1.0000; vacuum-weighted <u_n'' w_n> (first 3) = [-0.0001 -0.0006 -0.0013] vs IBP [-0.0001 -0.0006 -0.0013]; gap to band 2 = 0.000
+L=16 Jin=4.0 Jout=0.25: trace rule sum_n <u_n''> = -8.79e-20; per-band <u_n''> = [-1.819e-18  4.344e-18 -5.194e-18 -2.285e-18]...; low band c0^2 = 0.0081, own zone-mean anomaly <u0''>/c0^2 - 1 = -1.0000; vacuum-weighted <u_n'' w_n> (first 3) = [-0.0002 -0.0005 -0.0005] vs IBP [-0.0002 -0.0005 -0.0005]; gap to band 2 = 0.096
+   (Jin = Jout = 1 is the uniform fine chain folded L times: a relabelling, nothing is bought.)
+
+== (4) projector construction: internal bands exactly flat at M^2 = 9 (above the low band max 4.2), low band = coarse NN chain ==
+projector L=4: trace rule sum_n <u_n''> = -2.78e-17; per-band <u_n''> = [-3.218e-16  4.089e-27  1.262e-29  1.287e-27]...; low band c0^2 = 1.0000, own zone-mean anomaly <u0''>/c0^2 - 1 = -1.0000; vacuum-weighted <u_n'' w_n> (first 3) = [-3.7869e-01 -2.2134e-25 -1.1334e-26] vs IBP [-3.7869e-01 -3.6379e-25 -1.6803e-26]; gap to band 2 = 0.951
+projector L=16: trace rule sum_n <u_n''> = -2.78e-17; per-band <u_n''> = [-5.843e-16 -9.264e-27  1.010e-27  1.010e-28]...; low band c0^2 = 1.0000, own zone-mean anomaly <u0''>/c0^2 - 1 = -1.0000; vacuum-weighted <u_n'' w_n> (first 3) = [-3.7869e-01 -4.3631e-25 -2.4638e-25] vs IBP [-3.7869e-01 -5.3761e-25 -2.8910e-25]; gap to band 2 = 0.951
+   internal bands: <u''> = 0 exactly (flat): anomaly A = -1 per quantum, no stress, no momentum.
+
+== count: what a 3D coarse cell of L^3 fine sites holds ==
+L=    2: modes per cell 8.000e+00; relativistic (low-band) modes per cell 1; fraction of modes that must be stress-free (flat) for the L^-4 law: 0.875000
+L=    8: modes per cell 5.120e+02; relativistic (low-band) modes per cell 1; fraction of modes that must be stress-free (flat) for the L^-4 law: 0.998047
+L=   64: modes per cell 2.621e+05; relativistic (low-band) modes per cell 1; fraction of modes that must be stress-free (flat) for the L^-4 law: 0.999996
+L= 1024: modes per cell 1.074e+09; relativistic (low-band) modes per cell 1; fraction of modes that must be stress-free (flat) for the L^-4 law: 1.000000

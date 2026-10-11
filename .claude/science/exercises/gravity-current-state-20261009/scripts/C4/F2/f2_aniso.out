@@ -1,0 +1,8 @@
+L=32 xi=1.0 m=0.1 lam=0.2: dc_f*16pi^2=+0.0000  dc_gamma*16pi^2 per naive-4D=+0.0000 (per Dirac +0.0000; 4D staggered = 4 tastes +0.0000)  Delta(stag 4 tastes) = +0.0000   [0s]
+L=32 xi=2.0 m=0.1 lam=0.2: dc_f*16pi^2=-11.5037  dc_gamma*16pi^2 per naive-4D=-5.7634 (per Dirac -0.3602; 4D staggered = 4 tastes -1.4409)  Delta(stag 4 tastes) = -10.0629   [1s]
+L=32 xi=4.0 m=0.1 lam=0.2: dc_f*16pi^2=-14.9613  dc_gamma*16pi^2 per naive-4D=-9.0149 (per Dirac -0.5634; 4D staggered = 4 tastes -2.2537)  Delta(stag 4 tastes) = -12.7075   [1s]
+L=32 xi=8.0 m=0.1 lam=0.2: dc_f*16pi^2=-15.7395  dc_gamma*16pi^2 per naive-4D=-10.1191 (per Dirac -0.6324; 4D staggered = 4 tastes -2.5298)  Delta(stag 4 tastes) = -13.2097   [3s]
+L=48 xi=1.0 m=0.1 lam=0.2: dc_f*16pi^2=+0.0000  dc_gamma*16pi^2 per naive-4D=-0.0000 (per Dirac -0.0000; 4D staggered = 4 tastes -0.0000)  Delta(stag 4 tastes) = +0.0000   [4s]
+L=48 xi=2.0 m=0.1 lam=0.2: dc_f*16pi^2=-11.5053  dc_gamma*16pi^2 per naive-4D=-5.7661 (per Dirac -0.3604; 4D staggered = 4 tastes -1.4415)  Delta(stag 4 tastes) = -10.0638   [6s]
+L=48 xi=4.0 m=0.1 lam=0.2: dc_f*16pi^2=-14.9633  dc_gamma*16pi^2 per naive-4D=-9.0181 (per Dirac -0.5636; 4D staggered = 4 tastes -2.2545)  Delta(stag 4 tastes) = -12.7088   [10s]
+L=48 xi=8.0 m=0.1 lam=0.2: dc_f*16pi^2=-15.7417  dc_gamma*16pi^2 per naive-4D=-10.1225 (per Dirac -0.6327; 4D staggered = 4 tastes -2.5306)  Delta(stag 4 tastes) = -13.2111   [18s]

@@ -1,0 +1,11 @@
+continuous time (xi=inf), L=160: dc_f=-16.0105  dc_gamma per Dirac=-0.58702  Delta(3D stag, 2 tastes)=-13.6624  Delta per-Dirac-photon=-15.4234
+L=40 xi= 1.0: dc_f=-0.0000  dc_gamma per Dirac=+0.00000  Delta(4D stag, 4 tastes)=-0.0000  Delta per-Dirac-photon=-0.0000  [0s]
+L=40 xi= 1.5: dc_f=-8.0429  dc_gamma per Dirac=-0.18661  Delta(4D stag, 4 tastes)=-7.2965  Delta per-Dirac-photon=-7.8563  [1s]
+L=40 xi= 2.0: dc_f=-11.5014  dc_gamma per Dirac=-0.30976  Delta(4D stag, 4 tastes)=-10.2624  Delta per-Dirac-photon=-11.1917  [2s]
+L=40 xi= 4.0: dc_f=-14.9876  dc_gamma per Dirac=-0.49754  Delta(4D stag, 4 tastes)=-12.9974  Delta per-Dirac-photon=-14.4900  [3s]
+L=40 xi= 8.0: dc_f=-15.7729  dc_gamma per Dirac=-0.56287  Delta(4D stag, 4 tastes)=-13.5214  Delta per-Dirac-photon=-15.2100  [6s]
+L=56 xi= 1.0: dc_f=+0.0000  dc_gamma per Dirac=+0.00000  Delta(4D stag, 4 tastes)=-0.0000  Delta per-Dirac-photon=-0.0000  [8s]
+L=56 xi= 1.5: dc_f=-8.0429  dc_gamma per Dirac=-0.18660  Delta(4D stag, 4 tastes)=-7.2965  Delta per-Dirac-photon=-7.8563  [10s]
+L=56 xi= 2.0: dc_f=-11.5014  dc_gamma per Dirac=-0.30975  Delta(4D stag, 4 tastes)=-10.2624  Delta per-Dirac-photon=-11.1917  [13s]
+L=56 xi= 4.0: dc_f=-14.9876  dc_gamma per Dirac=-0.49754  Delta(4D stag, 4 tastes)=-12.9974  Delta per-Dirac-photon=-14.4900  [20s]
+L=56 xi= 8.0: dc_f=-15.7729  dc_gamma per Dirac=-0.56286  Delta(4D stag, 4 tastes)=-13.5214  Delta per-Dirac-photon=-15.2100  [33s]

@@ -1,0 +1,27 @@
+== check: closed-form k0 integral  int u^2/((u^2+a^2)(u^2+b^2)^2) du = pi/(2b(a+b)^2)
+   a=0.3 b=1.1: numeric 0.7285697249  closed 0.7285697249
+   a=2.0 b=0.5: numeric 0.5026548246  closed 0.5026548246
+
+== photon (per NAIVE fermion = 8 Dirac doublers); units: coefficient per e^2, then x16pi^2
+L=  64 m=0.200  WI Pi_xx(0,0)=+8.14e-08  aE=0.305128  aB=0.241802  (aB-aE)=-0.063326  dc_gamma*16pi^2 = -5.0000   aE log-check: aE*16pi^2/(8*(8/3)) - ln(1/m) = +0.6492
+L=  64 m=0.100  WI Pi_xx(0,0)=+1.62e-05  aE=0.401002  aB=0.384837  (aB-aE)=-0.016166  dc_gamma*16pi^2 = -1.2764   aE log-check: aE*16pi^2/(8*(8/3)) - ln(1/m) = +0.6657
+L=  64 m=0.050  WI Pi_xx(0,0)=+1.34e-04  aE=0.475148  aB=0.832202  (aB-aE)=+0.357054  dc_gamma*16pi^2 = +28.1918   aE log-check: aE*16pi^2/(8*(8/3)) - ln(1/m) = +0.5214
+L= 128 m=0.200  WI Pi_xx(0,0)=+1.61e-13  aE=0.305131  aB=0.241551  (aB-aE)=-0.063579  dc_gamma*16pi^2 = -5.0200   aE log-check: aE*16pi^2/(8*(8/3)) - ln(1/m) = +0.6492
+L= 128 m=0.100  WI Pi_xx(0,0)=+1.85e-08  aE=0.402240  aB=0.335628  (aB-aE)=-0.066612  dc_gamma*16pi^2 = -5.2595   aE log-check: aE*16pi^2/(8*(8/3)) - ln(1/m) = +0.6749
+L= 128 m=0.050  WI Pi_xx(0,0)=+3.96e-06  aE=0.495898  aB=0.440817  (aB-aE)=-0.055080  dc_gamma*16pi^2 = -4.3490   aE log-check: aE*16pi^2/(8*(8/3)) - ln(1/m) = +0.6750
+L= 192 m=0.200  WI Pi_xx(0,0)=+3.33e-16  aE=0.305131  aB=0.241551  (aB-aE)=-0.063579  dc_gamma*16pi^2 = -5.0200   aE log-check: aE*16pi^2/(8*(8/3)) - ln(1/m) = +0.6492
+L= 192 m=0.100  WI Pi_xx(0,0)=+2.44e-11  aE=0.402243  aB=0.335573  (aB-aE)=-0.066669  dc_gamma*16pi^2 = -5.2640   aE log-check: aE*16pi^2/(8*(8/3)) - ln(1/m) = +0.6749
+L= 192 m=0.050  WI Pi_xx(0,0)=+1.31e-07  aE=0.497067  aB=0.429744  (aB-aE)=-0.067323  dc_gamma*16pi^2 = -5.3156   aE log-check: aE*16pi^2/(8*(8/3)) - ln(1/m) = +0.6837
+
+== fermion self-energy (Feynman gauge, photon mass lam, fermion mass m); dc_f*16pi^2
+L=  64 m=0.050 lam=0.100  a0*16pi^2=+6.8955  a1*16pi^2=-9.2436 [tadpole -17.9307, sunset +8.6871]  <A^2>=0.22709  dc_f*16pi^2=-16.1392
+L=  64 m=0.020 lam=0.050  a0*16pi^2=+7.9920  a1*16pi^2=-8.4656 [tadpole -17.9629, sunset +9.4973]  <A^2>=0.22750  dc_f*16pi^2=-16.4576
+L=  64 m=0.010 lam=0.025  a0*16pi^2=+8.4804  a1*16pi^2=-8.1571 [tadpole -17.9719, sunset +9.8148]  <A^2>=0.22762  dc_f*16pi^2=-16.6374
+L= 128 m=0.050 lam=0.100  a0*16pi^2=+6.9241  a1*16pi^2=-9.1141 [tadpole -17.9307, sunset +8.8166]  <A^2>=0.22710  dc_f*16pi^2=-16.0382
+L= 128 m=0.020 lam=0.050  a0*16pi^2=+8.3351  a1*16pi^2=-7.8522 [tadpole -17.9631, sunset +10.1109]  <A^2>=0.22751  dc_f*16pi^2=-16.1874
+L= 128 m=0.010 lam=0.025  a0*16pi^2=+9.3801  a1*16pi^2=-7.0829 [tadpole -17.9725, sunset +10.8896]  <A^2>=0.22762  dc_f*16pi^2=-16.4630
+L= 192 m=0.050 lam=0.100  a0*16pi^2=+6.9243  a1*16pi^2=-9.1096 [tadpole -17.9307, sunset +8.8211]  <A^2>=0.22710  dc_f*16pi^2=-16.0340
+L= 192 m=0.020 lam=0.050  a0*16pi^2=+8.3674  a1*16pi^2=-7.7204 [tadpole -17.9631, sunset +10.2427]  <A^2>=0.22751  dc_f*16pi^2=-16.0878
+L= 192 m=0.010 lam=0.025  a0*16pi^2=+9.6435  a1*16pi^2=-6.6582 [tadpole -17.9725, sunset +11.3144]  <A^2>=0.22762  dc_f*16pi^2=-16.3017
+
+elapsed 9.1s

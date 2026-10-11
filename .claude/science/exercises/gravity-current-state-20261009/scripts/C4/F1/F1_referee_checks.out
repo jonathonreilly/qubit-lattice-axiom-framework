@@ -1,0 +1,19 @@
+GSS/lattice scalar identity: 0
+weak generic alpha ceiling: 8e-07
+hat-alpha2 surrogate ceiling: 3.2e-09
+BBN gamma ceiling at alpha=0: 0.09523809523809523
+generic weak-window fraction in worker box: 2.93040293040293e-08
+cancellation alpha ceiling, weak alpha1: 2.5e-05
+cancellation alpha ceiling, hat-alpha1 surrogate: 2.5e-06
+sample cS: 3138.8241020870164
+sample MSC/M: 5.644383460761037e-07
+sample MSC [GeV] for M=2.435e18 GeV: 1374407372695.3125
+cubic invariant symmetric bilinears: 6
+correlated scalar-mass determinant: 0.0
+correlated family k=1e-02: nk2=-0.263157894737, gamma=1.000000000001
+correlated family k=1e-03: nk2=-0.263157894712, gamma=0.999999999981
+correlated family k=1e-04: nk2=-0.263157895365, gamma=0.999999999561
+worker GR target nk2: -0.2631578947368421
+range 1 Hessian zone average: +0.0
+range 2 Hessian zone average: +0.0
+range 3 Hessian zone average: +0.0

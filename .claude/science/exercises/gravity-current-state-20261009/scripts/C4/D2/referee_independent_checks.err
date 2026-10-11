@@ -1,0 +1,4 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/ref_D2/referee_independent_checks.py:60: IntegrationWarning: The occurrence of roundoff error is detected, which prevents 
+  the requested tolerance from being achieved.  The error may be 
+  underestimated.
+  quad(func, lo, hi, epsabs=2e-11, epsrel=2e-11, limit=500)[0]

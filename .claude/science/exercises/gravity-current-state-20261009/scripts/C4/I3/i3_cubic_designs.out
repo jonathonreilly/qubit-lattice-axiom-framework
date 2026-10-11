@@ -1,0 +1,40 @@
+== Control: RN L1 NN scalar, m=0 (expect muE=-0.003695, muT2=-0.011782) ==
+NN m=0 n=32                  <u_xx>=+2.60e-17 rho=1.19380e+00 p_x=1.10001e-01 a_x=-1.30380e+00 a+rho+p=-9.6e-15 muE=-3.69453e-03 muT2=-1.17819e-02 A_w(T2)=-0.807 IRexp=2.00 A(pi)=-2.000
+NN m=0 n=48                  <u_xx>=+3.88e-17 rho=1.19380e+00 p_x=1.10001e-01 a_x=-1.30380e+00 a+rho+p=-8.9e-16 muE=-3.69453e-03 muT2=-1.17819e-02 A_w(T2)=-0.807 IRexp=2.00 A(pi)=-2.000
+NN m=0.5                     <u_xx>=+3.88e-17 rho=1.22163e+00 p_x=1.06754e-01 a_x=-1.32839e+00 a+rho+p=-4.9e-16 muE=-3.17248e-03 muT2=-1.05740e-02 A_w(T2)=-0.829 IRexp=2.00 A(pi)=-2.000
+NN m=1                       <u_xx>=+3.88e-17 rho=1.30003e+00 p_x=9.90929e-02 a_x=-1.39913e+00 a+rho+p=+1.4e-16 muE=-2.31730e-03 muT2=-8.22847e-03 A_w(T2)=-0.863 IRexp=2.00 A(pi)=-2.000
+
+== Taylor-improved stencils (range r), m=0 ==
+improved r=1                 <u_xx>=+3.88e-17 rho=1.19380e+00 p_x=1.10001e-01 a_x=-1.30380e+00 a+rho+p=-8.9e-16 muE=-3.69453e-03 muT2=-1.17819e-02 A_w(T2)=-0.807 IRexp=2.00 A(pi)=-2.000
+improved r=2                 <u_xx>=+5.75e-17 rho=1.32962e+00 p_x=1.75540e-01 a_x=-1.50516e+00 a+rho+p=-4.2e-16 muE=-9.22343e-03 muT2=-2.47680e-02 A_w(T2)=-0.749 IRexp=4.00 A(pi)=-2.667
+improved r=3                 <u_xx>=+7.81e-17 rho=1.38440e+00 p_x=2.16197e-01 a_x=-1.60060e+00 a+rho+p=-7.5e-16 muE=-1.39445e-02 muT2=-3.42651e-02 A_w(T2)=-0.719 IRexp=inf A(pi)=-3.200
+improved r=4                 <u_xx>=+7.50e-17 rho=1.41380e+00 p_x=2.44460e-01 a_x=-1.65826e+00 a+rho+p=+5.3e-16 muE=-1.77966e-02 muT2=-4.13923e-02 A_w(T2)=-0.701 IRexp=inf A(pi)=-3.657
+improved r=5                 <u_xx>=+1.32e-16 rho=1.43208e+00 p_x=2.65572e-01 a_x=-1.69765e+00 a+rho+p=+1.1e-15 muE=-2.09695e-02 muT2=-4.69631e-02 A_w(T2)=-0.688 IRexp=inf A(pi)=-4.063
+
+== Naive boson w=sin^2 k (8 doubler cones), m=0 ==
+naive m=0                    <u_xx>=-3.64e-17 rho=5.96901e-01 p_x=5.50003e-02 a_x=-6.51901e-01 a+rho+p=-3.5e-15 muE=-1.84727e-03 muT2=-5.89096e-03 A_w(T2)=-0.807 IRexp=2.00 A(pi)=+0.000
+
+== Separable-flat(L): relativistic for |k_i|<pi/L, flat for |k_i|>2pi/L, m=0 ==
+sepflat L=2                  <u_xx>=-3.80e-11 rho=1.39049e+00 p_x=2.17774e-01 a_x=-1.60826e+00 a+rho+p=-4.7e-11 muE=-1.99307e-02 muT2=-3.55485e-02 A_w(T2)=-0.667 IRexp=inf A(pi)=-1.000
+sepflat L=3                  <u_xx>=-2.48e-11 rho=1.09049e+00 p_x=8.57462e-02 a_x=-1.17624e+00 a+rho+p=-1.6e-11 muE=-7.26152e-03 muT2=-8.82666e-03 A_w(T2)=-0.696 IRexp=inf A(pi)=-1.000
+sepflat L=4                  <u_xx>=-1.90e-11 rho=8.74148e-01 p_x=4.55235e-02 a_x=-9.19671e-01 a+rho+p=-5.7e-12 muE=-3.73234e-03 muT2=-3.36384e-03 A_w(T2)=-0.714 IRexp=inf A(pi)=-1.000
+sepflat L=6                  <u_xx>=-1.24e-11 rho=6.18305e-01 p_x=1.91463e-02 a_x=-6.37452e-01 a+rho+p=+3.2e-12 muE=-1.53093e-03 muT2=-8.90053e-04 A_w(T2)=-0.737 IRexp=inf A(pi)=-1.000
+sepflat L=8                  <u_xx>=-9.51e-12 rho=4.76546e-01 p_x=1.04891e-02 a_x=-4.87035e-01 a+rho+p=+5.5e-12 muE=-8.31229e-04 muT2=-3.52997e-04 A_w(T2)=-0.751 IRexp=inf A(pi)=-1.000
+sepflat L=12                 <u_xx>=-6.21e-12 rho=3.26031e-01 p_x=4.54440e-03 a_x=-3.30576e-01 a+rho+p=+8.1e-12 muE=-3.57930e-04 muT2=-9.79266e-05 A_w(T2)=-0.767 IRexp=inf A(pi)=-1.000
+sepflat L=16                 <u_xx>=-4.75e-12 rho=2.47592e-01 p_x=2.52475e-03 a_x=-2.50117e-01 a+rho+p=+9.5e-12 muE=-1.98477e-04 muT2=-3.99069e-05 A_w(T2)=-0.775 IRexp=inf A(pi)=-1.000
+sepflat L=24                 <u_xx>=-3.10e-12 rho=1.67083e-01 p_x=1.10858e-03 a_x=-1.68192e-01 a+rho+p=+9.4e-12 muE=-8.70540e-05 muT2=-1.14077e-05 A_w(T2)=-0.785 IRexp=inf A(pi)=-1.000
+sepflat L=32                 <u_xx>=-2.38e-12 rho=1.26064e-01 p_x=6.19869e-04 a_x=-1.26684e-01 a+rho+p=+8.6e-12 muE=-4.86658e-05 muT2=-4.72475e-06 A_w(T2)=-0.790 IRexp=inf A(pi)=-1.000
+sepflat L=48                 <u_xx>=-1.55e-12 rho=8.45409e-02 p_x=2.73878e-04 a_x=-8.48148e-02 a+rho+p=+1.0e-11 muE=-2.15020e-05 muT2=-1.37389e-06 A_w(T2)=-0.795 IRexp=inf A(pi)=-1.000
+sepflat L=64                 <u_xx>=-1.19e-12 rho=6.35917e-02 p_x=1.53607e-04 a_x=-6.37453e-02 a+rho+p=+9.2e-12 muE=-1.20605e-05 muT2=-5.74119e-07 A_w(T2)=-0.797 IRexp=inf A(pi)=-1.000
+
+   local log-slopes d ln|Q| / d ln L between successive L (separable-flat):
+   L   2->  3: rho -0.60  p_x -2.30  a_x -0.77  muE -2.49  muT2 -3.44
+   L   3->  4: rho -0.77  p_x -2.20  a_x -0.86  muE -2.31  muT2 -3.35
+   L   4->  6: rho -0.85  p_x -2.14  a_x -0.90  muE -2.20  muT2 -3.28
+   L   6->  8: rho -0.91  p_x -2.09  a_x -0.94  muE -2.12  muT2 -3.21
+   L   8-> 12: rho -0.94  p_x -2.06  a_x -0.96  muE -2.08  muT2 -3.16
+   L  12-> 16: rho -0.96  p_x -2.04  a_x -0.97  muE -2.05  muT2 -3.12
+   L  16-> 24: rho -0.97  p_x -2.03  a_x -0.98  muE -2.03  muT2 -3.09
+   L  24-> 32: rho -0.98  p_x -2.02  a_x -0.99  muE -2.02  muT2 -3.06
+   L  32-> 48: rho -0.99  p_x -2.01  a_x -0.99  muE -2.01  muT2 -3.05
+   L  48-> 64: rho -0.99  p_x -2.01  a_x -0.99  muE -2.01  muT2 -3.03

@@ -1,0 +1,2 @@
+bare Q4 w=0.393: dev/bw=0.0125 slope_ratio=0.008; w=0.785: dev/bw=0.0406 slope_ratio=0.004; w=1.571: dev/bw=0.0705 slope_ratio=0.003;
+threshold c=1 w=0.393: dev/bw=0.0043 slope_ratio=0.734; w=0.785: dev/bw=0.0146 slope_ratio=0.607; w=1.571: dev/bw=0.0335 slope_ratio=0.507;

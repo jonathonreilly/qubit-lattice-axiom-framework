@@ -1,0 +1,14 @@
+independent multiband algebra
+  max commutator, correct off-diagonal improvement: 6.282e-13
+  max commutator, sign-mutated improvement:         7.275e+02
+  max change in P from arbitrary diagonal a:        1.589e-14
+  max change in Q from arbitrary diagonal a:        3.949e-09
+  max off-diagonal Q in band frame:                 1.059e-06
+  max relative diagonal error Q vs E u'':           1.999e-07
+crossing-band cyclic Hessian sums: [-3.33066907e-16 -1.33226763e-15]
+trace cyclic Hessian sum: -1.6653345369377348e-15
+determinant windings
+  wind(det T) = -4.000000000
+  wind(det U) = -0.000000000
+  wind(det V) = -4.000000000
+degenerate-block nonuniqueness |[h, i[h,a]]|: 0.0

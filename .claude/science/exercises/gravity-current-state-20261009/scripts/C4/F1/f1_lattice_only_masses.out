@@ -1,0 +1,8 @@
+cubic-invariant O(k^0) quadratic forms on (h_ij, n, n_i): 6  (expect 6: muA1, muE, muT2, mu_n, m4, mu_1)
+  none (gauge-breaking gradients only): k=1e-01: nk2=-0.2632, gamma=+1.0000 | k=1e-02: nk2=-0.2632, gamma=+1.0000 | k=1e-03: nk2=-0.2632, gamma=+1.0000 | k=1e-04: nk2=-0.2632, gamma=+1.0000
+  mu_E = 1e-3 (TT-only mass): k=1e-01: nk2=-0.2597, gamma=+1.0126 | k=1e-02: nk2=-0.2409, gamma=+1.0880 | k=1e-03: nk2=-0.2396, gamma=+1.0935 | k=1e-04: nk2=-0.2396, gamma=+1.0936
+  mu_A1 = 1e-3: k=1e-01: nk2=-0.2276, gamma=+1.1483 | k=1e-02: nk2=+0.4704, gamma=-0.4814 | k=1e-03: nk2=+0.6499, gamma=-0.3347 | k=1e-04: nk2=+0.6522, gamma=-0.3333
+  mu_n = 1e-3: k=1e-01: nk2=-0.2564, gamma=+1.0000 | k=1e-02: nk2=-0.0725, gamma=+1.0000 | k=1e-03: nk2=-0.0010, gamma=+1.0000 | k=1e-04: nk2=-0.0000, gamma=+1.0000
+  m4 = 1e-3: k=1e-01: nk2=-0.3301, gamma=+0.9000 | k=1e-02: nk2=-0.0045, gamma=-9.0000 | k=1e-03: nk2=-0.0000, gamma=-999.0000 | k=1e-04: nk2=-0.0000, gamma=-99999.0000
+  mu_A1=1e-3, m4 tuned to det=0 direction?: k=1e-01: nk2=-0.2750, gamma=+1.0371 | k=1e-02: nk2=+0.0603, gamma=+0.6296 | k=1e-03: nk2=+0.0005, gamma=+0.6663 | k=1e-04: nk2=+0.0000, gamma=+0.6667
+  GR target: n k^2 -> -1/(2(2-a)) = -0.2632, gamma -> 1

@@ -1,0 +1,66 @@
+=== (1) folding identity: N-site NN cell spectrum vs fine NN chain at K = k + 2 pi n ===
+N=  2: max |eig W(k) - w^2_fine(k+2pi n)| / bandwidth = 4.4e-16
+N=  3: max |eig W(k) - w^2_fine(k+2pi n)| / bandwidth = 4.9e-16
+N=  4: max |eig W(k) - w^2_fine(k+2pi n)| / bandwidth = 5.6e-16
+N=  8: max |eig W(k) - w^2_fine(k+2pi n)| / bandwidth = 4.4e-16
+N= 16: max |eig W(k) - w^2_fine(k+2pi n)| / bandwidth = 7.8e-16
+N= 32: max |eig W(k) - w^2_fine(k+2pi n)| / bandwidth = 6.7e-16
+-> the N-site cell is the fine chain (spacing a/N) folded; bands touch exactly at the coarse faces/centre.
+
+=== (2) C1 shift-closure residual f(K)-K, f = N sin(K/N), band n covers |K - 2 pi n| <= pi ===
+   (target: tower f = K on every band; lowest band n=0 is |K|<=pi; truncation edge |K| = pi N)
+  N   band0 sup|f-K|   pi^3/(6N^2)   band1 sup   band2 sup   top band sup |f-K|   top/(pi N)   window|K|<=pi/4
+    2  1.1416e+00   1.2919e+00   nan   nan   6.2832e+00   1.0000   2.003e-02
+    4  3.1317e-01   3.2298e-01   6.596e+00   nan   1.2566e+01   1.0000   5.037e-03
+    8  8.0125e-02   8.0746e-02   2.034e+00   8.317e+00   2.5133e+01   1.0000   1.261e-03
+   16  2.0148e-02   2.0186e-02   5.357e-01   2.404e+00   5.0265e+01   1.0000   3.154e-04
+   32  5.0442e-03   5.0466e-03   1.357e-01   6.233e-01   1.0053e+02   1.0000   7.885e-05
+   64  1.2615e-03   1.2616e-03   3.403e-02   1.572e-01   2.0106e+02   1.0000   1.971e-05
+  128  3.1540e-04   3.1541e-04   8.514e-03   3.940e-02   4.0212e+02   1.0000   4.928e-06
+  256  7.8852e-05   7.8853e-05   2.129e-03   9.855e-03   8.0425e+02   1.0000   1.232e-06
+ 1024  4.9283e-06   4.9283e-06   1.331e-04   6.160e-04   3.2170e+03   1.0000   7.700e-08
+-> band n (n << N): sup|f-K| ~ ((2n+1) pi)^3/(6 N^2); edge band: |f-K| -> pi N (relative 1): the C1 face floor,
+   moved from the coarse face to the fine face (truncation edge).
+
+=== (3) C3 boost anomaly A(K) = cos(K/N) - 1, band-resolved ===
+  N   max|A| band0   (pi/N)^2/2    max|A| band1   A at edge   <A> over all N bands (zone average)
+    2  1.0000e+00   1.2337e+00   nan   -2.0   -1.000000
+    4  2.9289e-01   3.0843e-01   1.7071e+00   -2.0   -1.000000
+    8  7.6120e-02   7.7106e-02   6.1732e-01   -2.0   -1.000000
+   16  1.9215e-02   1.9277e-02   1.6853e-01   -2.0   -1.000000
+   32  4.8153e-03   4.8191e-03   4.3060e-02   -2.0   -1.000000
+   64  1.2045e-03   1.2048e-03   1.0823e-02   -2.0   -1.000000
+  128  3.0118e-04   3.0120e-04   2.7095e-03   -2.0   -1.000000
+  256  7.5298e-05   7.5299e-05   6.7762e-04   -2.0   -1.000000
+ 1024  4.7062e-06   4.7062e-06   4.2355e-05   -2.0   -1.000000
+improved fine stencils (range r_m): A(K) ~ -c_r (K/N)^{2 r_m}, edge values exact -2,-8/3,-16/5,-128/35,-256/63 (C3 referee);
+zone average stays -1 for every r_m and every N.
+  r_m   max|A| band0 for N = 4, 16, 64            A(edge)   zone-avg
+  1    2.929e-01 1.921e-02 1.205e-03     -2.0000   -1.0000
+  2    5.719e-02 2.461e-04 9.674e-07     -2.6667   -1.0000
+  3    1.005e-02 2.838e-06 7.649e-10     -3.2000   -1.0000
+  4    1.682e-03 3.210e-08 1.144e-10     -3.6571   -1.0000
+
+=== (4) loop-weighted anomaly, d = 1 and d = 3 (separable NN fine lattice, boost along x) ===
+   R_s(N) = sum A_x w^s / sum w^s over all modes of the fine zone (= all N^d bands x coarse zone)
+   abs = sum_modes A_x w/2 per coarse cell, divided by N^(d+1) (natural size of a cutoff-N vacuum loop)
+  d = 1
+     N     R_1       R_-1      R_-3      R_-5      abs/N^(d+1)
+      4   -1.3083   -0.5653   -0.0752   -0.0161   -0.8586
+      8   -1.3252   -0.4778   -0.0245   -0.0040   -0.8513
+     16   -1.3308   -0.4114   -0.0075   -0.0010   -0.8494
+     32   -1.3326   -0.3605   -0.0022   -0.0002   -0.8490
+     64   -1.3331   -0.3205   -0.0006   -0.0001   -0.8489
+    128   -1.3333   -0.2885   -0.0002   -0.0000   -0.8488
+    256   -1.3333   -0.2623   -0.0001   -0.0000   -0.8488
+  d = 3
+     N     R_1       R_-1      R_-3      R_-5      abs/N^(d+1)
+      2   -1.0873   -0.8901   -0.5685   -0.2179   -1.3279
+      4   -1.0908   -0.8798   -0.4651   -0.0820   -1.3095
+      8   -1.0917   -0.8758   -0.3875   -0.0268   -1.3049
+     16   -1.0920   -0.8745   -0.3300   -0.0081   -1.3037
+     32   -1.0920   -0.8740   -0.2866   -0.0024   -1.3034
+     64   -1.0921   -0.8739   -0.2532   -0.0007   -1.3033
+-> UV-dominated loop weights (zero-point energy, tadpole) carry an N-independent O(1) relative anomaly;
+   the marginal weight s = -d falls only like 1/ln N; IR-dominated weights (s < -d) fall like a power of N.
+   The absolute vacuum anomaly per coarse cell grows like N^(d+1) (abs/N^(d+1) -> constant).

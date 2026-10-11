@@ -1394,3 +1394,59 @@ Two big open questions remain, and the second wave takes each one on directly.
 - Matter speed differences can decay as a power law at a strongly coupled fixed point. Over 15 decades that could be enough.
 - The graviton mass is a relevant operator in the gravity sector, so the matter fixed point cannot make it irrelevant.
 - Reading: E1 FAIL for the graviton mass, with a partial win for matter speeds. Lane INCONCLUSIVE, leaning FAIL.
+
+### C4 first-wave results (recorded 17:10Z)
+
+All probes were run by Opus 5.5 at xhigh (same model family). Each was refereed by codex gpt-5.6-sol at xhigh. Reports are in `agents/C4_{I1,I2,I3,F1,F2,D1,D2}_report.md`; referee reports in `agents/C4_*_referee*.md`; scripts in `scripts/C4/`.
+
+**Lane RI (infinite-band networks): FAIL (bounded)**, for regular positive-energy free one-particle Bloch theories and finite-band periodic quadratic networks.
+- **I1 — CONFIRMED WITH CORRECTIONS.**
+  - Under first-moment boosts and currents, local closure forces Hess(E_α²/2) = βI on every band.
+  - The periodic trace sum and determinant winding prevent closure at any finite N.
+  - With an integrated positive-energy Poincaré representation, or with band-gluing assumptions, each component unfolds into a complete reciprocal-lattice tower.
+  - So exact closure needs an infinite-dimensional, unbounded one-particle fibre. This holds at the one-particle level only: it does not prove an infinite microscopic site space for interacting composite qubit matter.
+  - The index argument does not give a many-body contradiction.
+  - Separate Poincaré sectors may decouple.
+  - Nelson integrability is assumed, not proved.
+- **I2 — CONFIRMED WITH CORRECTIONS.**
+  - The band- and zone-averaged anomaly is exactly −β per mode for every finite-dimensional periodic C² Bloch matrix.
+  - The C1 face residual summed over branches is ≥ π|β|N.
+  - A uniform L³-site supercell is exactly a fine lattice with spacing a/L. In 3D that takes L³ bands, not L.
+  - The 1D two-band C1 model is the folded a/2 chain.
+  - Arbitrary finite networks are not shown to be fine lattices, and the universal Z_N claim is not shown.
+- **I3 — CONFIRMED WITH CORRECTIONS.**
+  - The anomaly leg is proved: the band-and-zone-averaged anomaly is −1 at every L, the registered quantity.
+  - It is not a proof of a non-decaying physical TT mass:
+    - the linear-only response falls as L⁻⁴;
+    - the unitary completion cancels it;
+    - one φ⁴ calculation gives a speed shift of about 2e-5·λ² through L = 16, with the L → ∞ limit not established.
+  - The identity ⟨E_c − H⟩_vac = −(ρ + p_c) is confirmed for one band.
+- **Lane reading.** Both FAIL legs are met in their stated scopes, so the lane is FAIL, bounded as above. Open: interacting or composite qubit matter, and decoupled separate Poincaré sectors.
+
+**Lane RF (preferred foliation): INCONCLUSIVE.**
+- **F1 — NOT CONFIRMED, so INCONCLUSIVE.**
+  - Established:
+    - the projectable model fails;
+    - the stated single-band, fixed-generator realization fails;
+    - the non-projectable lattice matches GSS;
+    - cubic-only theories allow six mass invariants, which need relations beyond P0.
+  - Not established:
+    - non-realizability for all finite-band matter;
+    - "≥ 5 P0 tunings";
+    - a second anisotropy tuning at 1e-15;
+    - exclusion of a separate gravitational UV scale.
+- **F2 — NOT CONFIRMED, so INCONCLUSIVE.**
+  - The one-loop QED numbers are confirmed: δc_f = −16.06, δc_γ = −0.671 per taste, Δ = −14.72, i.e. c_e − c_γ = −8.55e-3. That needs one counterterm tuned to about 3e-17. ξ = 1 (hypercubic) removes the splittings; ξ = 2 gives −10.26.
+  - The worker's dimension-3 claim needs a correction. Proper cubic rotations do allow b₀ and (k_AF)₀, but C, T and shift symmetries do not forbid them, contrary to the worker's report. Only the parity of the chosen action does.
+  - Not a FAIL: realization C is open, P0's total count is unknown, and the Z⁴-matter / RF-gravity route is open.
+
+**Lane RD (gapless-dressed bands): FAIL (bounded).**
+- **D1 — CONFIRMED WITH CORRECTIONS.**
+  - Lemma K holds for a single scalar band with a finite-range bare dispersion and a stable, uniformly subsonic rainbow/SCBA self-energy satisfying UI: the face jump obeys J_E = Z·J_ε0. So no SLAC cusp at finite residue.
+  - The marginal case and the gapped-touch case have Z = 0 and non-SLAC singularities.
+  - Exact SLAC forces a non-local bare 1/r² tail of size 1/Z.
+  - Open: general Herglotz self-energies, the all-orders 1D Fermi sea, sonic vertices, and two-band crossings.
+- **D2 — CONFIRMED WITH CORRECTIONS.**
+  - In the computed classes and orders, no finite-residue SLAC face appears.
+  - The Cherenkov branch exchange has an exact cusp of non-SLAC form, with Z, ℓ ∝ g⁴.
+  - Fermi faces have nonzero linewidth.

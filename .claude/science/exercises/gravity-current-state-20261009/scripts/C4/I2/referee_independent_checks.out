@@ -1,0 +1,17 @@
+Exact 3D improvement (L is refinement per axis; sites/bands per cell = L^3):
+  L=2, bands=8: residuals=(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+  L=3, bands=27: residuals=(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+  L=4, bands=64: residuals=(Fraction(0, 1), Fraction(0, 1), Fraction(0, 1))
+3D folding spectrum:
+  L=2, bands=8: normalized max error=4.441e-16
+  L=3, bands=27: normalized max error=6.579e-16
+C1 two-band matrix fine-translation test:
+  max ||[h,T_f]||_inf=3.331e-16; max ||T_f^2-e^(-ik)I||_inf=0.000e+00
+Independent d=3 midpoint loop quadrature:
+  N=4: R_1=-1.090879, R_-1=-0.879896, abs/N^4=-1.310001
+  N=16: R_1=-1.092062, R_-1=-0.874549, abs/N^4=-1.304190
+  N=64: R_1=-1.092138, R_-1=-0.873981, abs/N^4=-1.303826
+Flat four-point umklapp fractions 1-(2/3)^d:
+  d=1: 0.333333333333
+  d=2: 0.555555555556
+  d=3: 0.703703703704

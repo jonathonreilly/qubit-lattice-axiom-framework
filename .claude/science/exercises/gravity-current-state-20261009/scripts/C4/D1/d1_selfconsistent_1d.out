@@ -1,0 +1,29 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/D1/d1_selfconsistent_1d.py:119: RuntimeWarning: invalid value encountered in scalar power
+  r = f"   ratio to previous listed: {(sl/prev[1])**(1/(t-prev[0])):+.5f}/step" if prev and abs(prev[1]) > 1e-14 else ""
+=== (a) n=2, kinked (SLAC) bare band: dressed slope vs Z*s0 ===
+N=1024: iters=38 resid=8.3e-13  stab max D=-7.43e-03  K_face=0.272573 Z=0.785810
+       s0=0.952891  dressed slope (two sides) = 0.748800, 0.748800   Z*s0 = 0.748791   ratio sE/(Z s0) = 1.00001
+N=2048: iters=38 resid=8.3e-13  stab max D=-3.71e-03  K_face=0.272573 Z=0.785810
+       s0=0.952891  dressed slope (two sides) = 0.748793, 0.748793   Z*s0 = 0.748791   ratio sE/(Z s0) = 1.00000
+N=4096: iters=38 resid=8.3e-13  stab max D=-1.86e-03  K_face=0.272573 Z=0.785810
+       s0=0.952891  dressed slope (two sides) = 0.748791, 0.748791   Z*s0 = 0.748790   ratio sE/(Z s0) = 1.00000
+
+=== (b) n=2, nearest-neighbour bare band eps0 = A - B cos k, iteration started from exact SLAC ===
+converged iters=41 resid=8.5e-14; K_face(fixed point)=0.196406; predicted kink ratio per step 1-alpha(1+K) = +0.40180
+  iter   0: face slope s = +3.017e-01
+  iter   1: face slope s = +1.146e-01   ratio to previous listed: +0.37977/step
+  iter   2: face slope s = +4.515e-02   ratio to previous listed: +0.39404/step
+  iter   3: face slope s = +1.801e-02   ratio to previous listed: +0.39884/step
+  iter   5: face slope s = +2.895e-03   ratio to previous listed: +0.40098/step
+  iter   8: face slope s = +1.876e-04   ratio to previous listed: +0.40168/step
+  iter  12: face slope s = +4.856e-06   ratio to previous listed: +0.40110/step
+  iter  20: face slope s = -3.135e-08   ratio to previous listed: +nan/step
+  iter  30: face slope s = -3.467e-08   ratio to previous listed: +1.01012/step
+  fixed point face slope = -3.47e-08;  |Fourier coeff| r=1,5,10,20,40: 4.45e-01, 3.61e-06, 8.91e-10, 5.68e-17, 1.77e-17
+
+=== (c) n=1 marginal (Z=0), kinked bare band: face slope vs grid spacing ===
+N=  512 h=1.23e-02: iters=34  dressed face slope = 0.71098   s0/slope = 1.3403   1+C'log(1/h) = 1.2107
+N= 1024 h=6.14e-03: iters=34  dressed face slope = 0.69289   s0/slope = 1.3752   1+C'log(1/h) = 1.2372
+N= 2048 h=3.07e-03: iters=34  dressed face slope = 0.67625   s0/slope = 1.4091   1+C'log(1/h) = 1.2628
+N= 4096 h=1.53e-03: iters=34  dressed face slope = 0.66087   s0/slope = 1.4419   1+C'log(1/h) = 1.2875
+N= 8192 h=7.67e-04: iters=34  dressed face slope = 0.64656   s0/slope = 1.4738   1+C'log(1/h) = 1.3116

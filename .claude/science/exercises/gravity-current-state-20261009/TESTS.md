@@ -2152,3 +2152,51 @@ So a real lensed optical or radio observation meets the FIXED FAIL condition, at
 - Noise at the locality bar: FAIL, bounded (RL4).
 - Observed lensed light at the collider-bounded photon ℓ_k: FAIL at the controlled level (RZ), with Y1's mechanism confirmed.
 - **Reading:** the event substrate with stable layer readouts and a shared ℓ_k is excluded observationally, at the controlled level, within the stated scope.
+
+## Lane RV4: can a principle remove the free shear term? (owner, 2026-10-11)
+
+**Owner request:** "run the vacuum-referenced dressing follow-up on the free shear term". Test setting only.
+
+**The problem.** V3 (refereed) showed three things:
+- The local, translation-covariant uniform-strain coupling of free lattice matter leaves an E_g shear mass, μ_E = +1.97e-3 (scalar, m = 1).
+- This comes from the Jacobian of the momentum flow.
+- The T_2g channel is protected because its flow is divergence-free (Liouville).
+
+Removing μ_E currently takes one of these:
+- an E_g counterterm (tuning);
+- a selected momentum symbol (tuning);
+- R₀ (a definition);
+- exactly matched Bose–Fermi spectra (P1; mass relations).
+
+**The question.** Is there a principle, not a tuning and not a definition, that fixes the free-matter strain coupling so that μ_E = μ_T2 = 0? Candidates:
+- **(a) Non-separable momentum symbols / flows.** The flow v = (sin k_x cos k_y, −cos k_x sin k_y) is divergence-free and ≈ (k_x, −k_y) at small k. Can a single momentum symbol p(k) make every traceless strain flow v = h·p divergence-free? Or at least make every channel's μ vanish?
+- **(b) Covariant measure prescriptions.**
+  - Half-density / √J-weighted couplings.
+  - A Weyl-type volume-form coupling.
+  - Requiring the coupling to equal the formal unitary on the bulk, density of states included.
+- **(c) A conservation or Ward principle** that forces the Jacobian term to cancel, e.g. requiring the vacuum to stay an eigenstate of the strained Hamiltonian with the same energy density, built into the flow.
+- **(d) R₀ restated as a principle,** e.g. "uniform strain is a relabelling, so the vacuum energy density is strain-invariant." Is this derivable from anything in the axioms, or only an imposed rule?
+
+**Probes** (Claude Opus 5.5 at xhigh; same family):
+- **S1 (theorem):** classify (a)–(d).
+  - Conjecture to prove or refute: a strain coupling whose flow is divergence-free in every shear channel exists iff the momentum symbol is linear (SLAC).
+  - For local periodic symbols, find the minimal achievable (μ_E, μ_T2) and whether any principle selects a point with both zero.
+  - Map (b)–(d) to principle, tuning, or definition.
+- **S2 (numerics):**
+  - Scan local momentum symbols and flows, separable and non-separable, range r ≤ 4, in d = 2 and 3, using V3/P1's Jacobian formula. Record μ_E, μ_T2 and the trace channel.
+  - Find the trade-off surface: can both shear channels vanish simultaneously with a local symbol, and at what cost elsewhere (one-cone speed, the C3 anomaly)?
+  - Evaluate the half-density prescription explicitly.
+
+**Fixed readings.**
+- **PASS:** a principle (stated, not tuned or defined) fixes a local free-matter strain coupling with μ_E = μ_T2 = 0. It must keep the free-matter properties established in RN L1 (exact stress, linear first class, 1/r with universal G).
+- **FAIL:** proved that μ_E = μ_T2 = 0 with a local coupling needs a non-local (SLAC) symbol, a tuning, a definition (R₀), or matched spectra. Bounded to the classes examined.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.**
+- Requiring div(h·p) = 0 for all traceless h forces ∂_i p_j = λ δ_ij, so p is linear: SLAC. That is the C3 obstruction again.
+- Non-separable symbols can zero E at the cost of T2.
+- Half-density prescriptions reproduce the formal unitary only with non-local seams.
+- R₀ is not derivable from the axioms.
+- **Expected:** FAIL (bounded).
+
+**Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.

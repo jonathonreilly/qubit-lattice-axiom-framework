@@ -1875,3 +1875,24 @@ For each: does it close with H and P, and would gravity's hypersurface-deformati
 - In d ≥ 2 with cubic symmetry, the umbilic obstruction (I1) kills smooth deformations.
 - Gravity's constraint algebra needs first moments, from the lapse smearing.
 - Expected reading: FAIL (bounded), with 1D DSR as a curiosity.
+
+### C4 ninth wave (19:20Z): lane RL3, the noise exponent theorem for the event route
+
+**Question.** RL2 (worker, unrefereed; referee running) finds two things:
+- The mean of the stable 6-layer inverses gives GR's √Δ lensing.
+- The noise grows like exp(k√ε·τ/ℓ_k) in proper time τ ≈ √(2Ds). At the locality bar this misses by only 0.8–1.9 decades in ℓ_k.
+
+A PASS would need the true small-ε rate exponent to be α ≥ 0.54 rather than ½. Only a theorem can settle this. Extrapolating across 63 decades is forbidden (TESTS.md:5–9).
+
+**Probe RL3.** Prove a small-ε asymptotic result for the variance growth rate of the inverse of a stable layer operator on a Poisson sprinkling:
+- a lower bound or an upper bound, or the exact exponent, from the Wiener–Itô chaos expansion keeping both node and interior insertion amplitudes;
+- alternatively, an exact renewal/ladder argument with controlled error.
+
+Determine α, and the constant where possible.
+
+**Fixed readings.**
+- **PASS:** a proof that the rate exponent is > ½ (e.g. α ≥ 0.54), or that the constant is small enough, so that ℓ_k ≤ 1e-19 m bounds the noise over 1 Gpc for a 10 km source.
+- **FAIL:** a proof that the rate is at least c√ε/ℓ_k with c large enough that the bar fails.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.** The ladder (renewal) structure gives rate ∝ √(Σ w² ε) by the same argument as E1's S1 (where A² ∝ εT² with a convergent coefficient). The exponent is ½ exactly, with constant ≈ ladder, so a provable lower bound gives FAIL by about 1 decade. Reading: FAIL if the lower bound closes, otherwise INCONCLUSIVE.

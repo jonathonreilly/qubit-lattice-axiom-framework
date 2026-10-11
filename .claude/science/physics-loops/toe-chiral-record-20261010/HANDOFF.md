@@ -395,18 +395,32 @@ pairs `(6, 1)` and `(-6, -1)` and kernel cross sum `12`. A different
 ratio of these three kernels is not in this count. The ten-kernel
 coefficient span is not classified. Runner `PASS=7 FAIL=0`.
 
+Cycle 35. On the same alphabet the line through the chirality cap, the
+transverse-sign cap, and twice the matched cross lies outside the
+equal-coefficient line and outside the doubled transverse-sign line.
+It also lies outside both ratio spans, because those spans have
+chirality coefficient 0. A nonzero scale has partner rank 10 on every
+ordered height pair, so the only ten-kernel partner is 0. At
+coefficient 1 the bond on `-e_x` and `-e_y` against the height-2
+chirality cap has rights `(1, -2, -3)` and `(-3, 2, -1)`, centre pairs
+`(0, 1)` and `(-2, -1)`, and kernel cross sum `2`. Twice the line has
+centre pairs `(0, 1)` and `(-4, -1)` and kernel cross sum `4`. The
+equal-coefficient vector on the same bond has kernel cross sum `1`. A
+different ratio of these three kernels is not in this count. The
+ten-kernel coefficient span is not classified. Runner `PASS=8 FAIL=0`.
+
 ## Next exact action
 
-Decide whether the chirality cap plus the transverse-sign cap plus
-twice the matched transverse cross can pair with a nonzero ten-kernel
-vector and still have every cross moment equal to 0. That ratio is
-outside the equal-coefficient line and outside the doubled
-transverse-sign line. Do not claim the ten-kernel coefficient span is
-settled. Do not claim the 300-dimensional affine space is classified.
-Do not repeat the bond-space dimension count. Do not return to the
-modulus-3 triple. Do not invent a formation rate. Do not return to
-shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
-alphabets.
+Decide whether the chirality cap plus twice the transverse-sign cap
+plus twice the matched transverse cross can pair with a nonzero
+ten-kernel vector and still have every cross moment equal to 0. That
+ratio is outside the equal-coefficient line, the doubled
+transverse-sign line, and the doubled matched line. Do not claim the
+ten-kernel coefficient span is settled. Do not claim the
+300-dimensional affine space is classified. Do not repeat the
+bond-space dimension count. Do not return to the modulus-3 triple. Do
+not invent a formation rate. Do not return to shells, plaquette corner
+weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

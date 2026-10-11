@@ -140,3 +140,11 @@ has partner rank 10 on every ordered height pair, so the only
 ten-kernel partner is 0. The witness cross sums are `6` and `12`. A
 different ratio of these three kernels is not in this count. The
 ten-kernel coefficient span is not classified.
+Cycle 35 shows that the line through the chirality cap, the
+transverse-sign cap, and twice the matched cross lies outside the
+equal-coefficient line, the doubled transverse-sign line, and both
+ratio spans. A nonzero scale has partner rank 10 on every ordered
+height pair, so the only ten-kernel partner is 0. The witness cross
+sums are `2` and `4`, and the equal-coefficient vector on the same
+bond has cross sum `1`. A different ratio of these three kernels is
+not in this count. The ten-kernel coefficient span is not classified.

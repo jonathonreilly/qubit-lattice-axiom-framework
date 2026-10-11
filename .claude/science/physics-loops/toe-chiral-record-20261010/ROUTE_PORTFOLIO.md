@@ -159,3 +159,9 @@ transverse-sign cap, and the matched cross. A nonzero scale has
 partner rank 10, so the only ten-kernel partner is 0. It does not
 take a different ratio of those three kernels, and it does not
 classify the 300-dimensional affine space.
+
+Cycle 35 takes the line through the chirality cap, the transverse-sign
+cap, and twice the matched cross. A nonzero scale has partner rank 10,
+so the only ten-kernel partner is 0. It does not take a different
+ratio of those three kernels, and it does not classify the
+300-dimensional affine space.

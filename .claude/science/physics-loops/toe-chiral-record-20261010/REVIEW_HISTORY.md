@@ -1899,3 +1899,78 @@ Conformance, section by section:
     `(-6, -1)` with cross sum `12`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
     the loop-pack prose. The full audit pipeline was not run.
+
+## 2026-10-11 author check, cycle 35
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms on origin/main at the base `0b208e91cfc`, the
+   cycle-34 doubled transverse-sign note, the cycle-33 equal-coefficient
+   note, and the cycle-32 ratio-span note, all three notes on this
+   branch. The partner rank and the witness sums are computed in this
+   runner. The order-blind converse is not applied. The parity kernels
+   are cited from cycles 33 and 34. Both ratio spans are named in cycle
+   32, and this runner recomputes that every generator has chirality
+   coefficient 0. The dimension count of the soldered bond space is not
+   repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_chi_ts_twice_matched_line_cross_moments_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `3cb5566e2a8aaeff1fac352400d378ad3496867a43a78391be09ee562e7556c7`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=8 FAIL=0`.
+   Elapsed 0.56 seconds.
+3. Scope. The doubled matched line on the 48 signed permutations of
+   `(1, 2, 3)`. The chirality cap plus the transverse-sign cap plus
+   twice the matched transverse cross has two nonzero parity-kernel
+   coefficients and one nonzero excluded coefficient. The matched
+   coefficient is 2 and the chirality coefficient is 1, so the sum is
+   outside the equal-coefficient line. The transverse-sign coefficient
+   is 1, so the sum is outside the doubled transverse-sign line. It is
+   also outside both ratio spans. Every ordered height pair gives
+   partner rank 10, and doubling the line doubles every partner row, so
+   the only ten-kernel partner is 0. The witness centre pairs are
+   `(0, 1)` and `(-2, -1)`, with cross sum `2`, and `(0, 1)` and
+   `(-4, -1)`, with cross sum `4`. The first left contributes 0. The
+   equal-coefficient vector on the same bond has centre pairs `(0, 1)`
+   and `(-1, -1)` and cross sum `1`. A different ratio of these three
+   kernels is outside the ansatz. The ten-kernel coefficient span is
+   not classified. The full soldered bond space is not classified.
+   Status line `proposed_retained`. Surface status `bounded-support`.
+4. N-gate does not apply. The artifact prunes one named line. It does
+   not claim that no vector in the ten-kernel coefficient span has a
+   nonzero partner.
+5. Obligations are in the note. The missing lemma is whether the
+   chirality cap plus twice the transverse-sign cap plus twice the
+   matched transverse cross can pair with a nonzero ten-kernel vector
+   and still have every cross moment equal to 0.
+6. Mutations, each on a scratch copy, exited 1. Requiring the height
+   1 and 2 cross sum to be 1 gave `PASS=7 FAIL=1` on the centre-pair
+   check. Requiring the partner rank to differ from 9 gave `PASS=7
+   FAIL=1` on the rank check. Requiring the doubled cross sum to be 1
+   gave `PASS=7 FAIL=1` on the doubled-line check. An independent
+   closure under signed monomial matrices of determinant 1 gave 24
+   rotations, all of determinant 1, and orbit 24, with `(2, 1, 3)` and
+   `(1, 2, -3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Five markdown links. The runner link points at the primary runner.
+   One note link points at the minimal axioms on origin/main. Three
+   point at the cycle-34 doubled transverse-sign note, the cycle-33
+   equal-coefficient note, and the cycle-32 ratio-span note on this
+   branch. Manifest node_count 6904 and edge_count 15522. The new node
+   has out_degree 4 and deps_hash `b39d8220dbf6`. Dependencies are
+   `minimal_axioms`, the cycle-34 doubled transverse-sign note, the
+   cycle-33 equal-coefficient note, and the cycle-32 ratio-span note.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the two earlier lines, the parity kernels, and the two triples,
+   and states that the order-blind converse is not applied and that no
+   rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=8 FAIL=0`, centre pairs
+    `(0, 1)` and `(-2, -1)` with cross sum `2`, `(0, 1)` and `(-4, -1)`
+    with cross sum `4`, and `(0, 1)` and `(-1, -1)` with cross sum `1`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
+    the loop-pack prose. The full audit pipeline was not run.

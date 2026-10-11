@@ -423,3 +423,11 @@ cancel, so each sum has swapped-dot coordinate `0` and scaled
 coordinate `2`. It does not classify one swapped-dot generator plus one
 cap, and it does not classify the 300-dimensional affine space. This is
 not an N-gate no-go.
+
+Cycle 58 prunes the reading that every chirality coefficient on one
+swapped-dot generator plus one cap has partner rank 10. The same-span
+sum has partner rank 7 at coefficient 0 and partner rank 10 at every
+nonzero coefficient. The opposite-span sum has partner rank 10 at every
+coefficient. It does not classify one swapped-dot generator plus both
+caps, and it does not classify the 300-dimensional affine space. This
+is not an N-gate no-go.

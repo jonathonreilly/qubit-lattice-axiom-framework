@@ -293,3 +293,9 @@ either ratio span on every ordered height pair. The swapped-dot
 coordinates cancel. Every chirality coefficient has partner rank 10.
 It does not take one swapped-dot generator plus one cap, and it does
 not classify the 300-dimensional affine space.
+
+Cycle 58 takes one swapped-dot generator plus one cap. The same-span
+sum has partner rank 7 only at chirality coefficient 0. The
+opposite-span sum has partner rank 10 at every chirality coefficient.
+It does not take one swapped-dot generator plus both caps, and it does
+not classify the 300-dimensional affine space.

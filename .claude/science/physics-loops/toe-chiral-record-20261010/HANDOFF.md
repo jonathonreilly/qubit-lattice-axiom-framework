@@ -756,16 +756,33 @@ both a nonzero swapped-dot coordinate and a nonzero scaled coordinate
 is not in this count. The ten-kernel coefficient span is not
 classified. Runner `PASS=9 FAIL=0`.
 
+Cycle 58. On every ordered height pair, one swapped-dot generator plus
+the cap generator of one ratio span splits by span. The same-span sum
+lies in that span. It has swapped-dot coordinate `1` or `-1` and scaled
+coordinate `2`. Chirality coefficient 0 has partner rank 7. The partner
+kernel is that span on pairs `(1, 2)`, `(2, 1)`, `(2, 3)`, and
+`(3, 2)`, and the other span on `(1, 3)` and `(3, 1)`. The 14-row
+pencil has maximal-minor gcd equal to a nonzero multiple of the cube
+of the chirality coefficient, so every nonzero coefficient has partner
+rank 10. The opposite-span sum lies in neither span. Its 17-row pencil
+has a nonzero constant maximal-minor gcd, so every chirality
+coefficient has partner rank 10. At heights 1 and 2 the same-span
+witness cross sums are `-2` and `2`, and the opposite-span witness
+cross sums are `-2` and `-4`. The sum of one swapped-dot generator and
+both cap generators is not in this count. The ten-kernel coefficient
+span is not classified. Runner `PASS=9 FAIL=0`.
+
 ## Next exact action
 
 Decide whether every chirality coefficient on the sum of one
-swapped-dot generator and the cap generator of one ratio span has
-partner rank 10. That sum has both a nonzero swapped-dot coordinate
-and a nonzero scaled coordinate. Both swapped-dot generators plus the
-cap generator of either ratio span have swapped-dot coordinate 0,
-scaled coordinate 2, and partner rank 10 at every chirality
-coefficient. Do not claim the ten-kernel coefficient span is settled.
-Do not claim the 300-dimensional affine space is classified.
+swapped-dot generator and both cap generators has partner rank 10.
+That sum has both a nonzero swapped-dot coordinate and a nonzero
+scaled coordinate. One swapped-dot generator plus the cap of the same
+span has partner rank 7 only at chirality coefficient 0, and one
+swapped-dot generator plus the cap of the other span has partner rank
+10 at every chirality coefficient. Do not claim the ten-kernel
+coefficient span is settled. Do not claim the 300-dimensional affine
+space is classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`

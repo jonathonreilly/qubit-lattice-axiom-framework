@@ -634,3 +634,15 @@ Family not used: one swapped-dot generator plus the cap generator of
 one ratio span. That vector has both a nonzero swapped-dot coordinate
 and a nonzero scaled coordinate. The 300-dimensional affine space is
 not this family.
+
+Cycle 58 target contract: whether every chirality coefficient on the sum
+of one swapped-dot generator and the cap generator of one ratio span
+has partner rank 10.
+
+Family used: one swapped-dot generator plus one cap, same span and
+opposite span. The same-span 14-row pencil has maximal-minor gcd equal
+to a cube of the chirality coefficient. The opposite-span 17-row pencil
+has a nonzero constant maximal-minor gcd.
+
+Family not used: one swapped-dot generator plus both cap generators.
+That remains open. The 300-dimensional affine space is not this family.

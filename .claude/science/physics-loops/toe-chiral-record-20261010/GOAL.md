@@ -329,3 +329,12 @@ the 10-by-10 minors is a nonzero constant. The pivot minors at
 not have a constant gcd. A vector with both a nonzero swapped-dot
 coordinate and a nonzero scaled coordinate is not in this count. The
 ten-kernel coefficient span is not classified.
+Cycle 58 shows that one swapped-dot generator plus one cap splits by
+span. On every ordered height pair, the same-span sum lies in that
+span, has partner rank 7 at chirality coefficient 0, and has partner
+rank 10 at every nonzero coefficient. The maximal-minor gcd is a
+nonzero multiple of the cube of the chirality coefficient. The
+opposite-span sum lies in neither span and has partner rank 10 at every
+chirality coefficient. The maximal-minor gcd is a nonzero constant.
+The sum of one swapped-dot generator and both cap generators is not in
+this count. The ten-kernel coefficient span is not classified.

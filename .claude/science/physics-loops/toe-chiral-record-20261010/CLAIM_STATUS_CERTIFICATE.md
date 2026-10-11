@@ -881,3 +881,25 @@ transverse-sign plane. The witness cross sums are `0`, `2`, and `1`.
 A vector with both an odd part and an even part is outside the ansatz.
 The ten-kernel coefficient span is not classified. The 300-dimensional
 affine space is not classified.
+
+# Claim status certificate — cycle 42
+
+claim_id: chiral_pair_mixed_parity_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); parity span; witness directions (-1, 0, 0) and (0, -1, 0)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The odd and even bases are named by the cycle-29 note. The odd-space partner kernel is the cycle-41 note. No formation rate is used.
+
+A parity vector with both an odd part and an even part has partner rank
+10, so the only ten-kernel partner is 0. The orthogonal cross lies in
+the parity span and in neither summand. The witness cross sums are `1`,
+`-1`, and `-1`. A vector with a nonzero excluded coefficient is outside
+the ansatz. The ten-kernel coefficient span is not classified. The
+300-dimensional affine space is not classified.

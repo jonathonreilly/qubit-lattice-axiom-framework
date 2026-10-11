@@ -523,11 +523,26 @@ A vector with both an odd part and an even part is not in this count.
 The ten-kernel coefficient span is not classified. Runner
 `PASS=9 FAIL=0`.
 
+Cycle 42. On the same alphabet a parity vector with both an odd part and
+an even part has partner rank 10, so the only ten-kernel partner is 0.
+The orthogonal cross lies in the parity span and in neither summand. At
+heights 1 and 2 it is half the swapped cross plus the even generator
+with swapped coefficient `-1/2` and orthogonal coefficient `1`. The sum
+of the chirality cap and the sign product is another mixed vector and
+also has partner rank 10. At heights 1 and 2 the bond on `-e_x` and
+`-e_y` against the sign product has centre pairs `(0, -1)` and
+`(-1, -1)` and kernel cross sum `1`. Against the chirality cap the
+centre pairs are `(0, -1)` and `(-1, 1)` and the kernel cross sum is
+`-1`. Against the matched cross the centre pairs are `(0, 0)` and
+`(-1, 1)` and the kernel cross sum is `-1`. A vector with a nonzero
+excluded coefficient is not in this count. The ten-kernel coefficient
+span is not classified. Runner `PASS=8 FAIL=0`.
+
 ## Next exact action
 
-Decide whether a vector with both an odd part and an even part has a
-ten-kernel partner other than 0. The odd space pairs only with the even
-space. The even space pairs only with the odd space. Do not claim the
+Decide whether a vector with a nonzero coefficient on the swapped
+transverse dot or the scaled cross-dot kernel has a ten-kernel partner
+other than 0. A mixed parity vector pairs only with 0. Do not claim the
 ten-kernel coefficient span is settled. Do not claim the 300-dimensional
 affine space is classified. Do not repeat the bond-space dimension
 count. Do not return to the modulus-3 triple. Do not invent a formation

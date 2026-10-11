@@ -512,3 +512,16 @@
   The bond-space dimension count is not repeated. The 300-dimensional
   affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 42
+
+- The ansatz is a parity vector with both an odd part and an even part.
+  A vector with a nonzero excluded coefficient is not in this count.
+  The pure odd and pure even partner kernels are not this claim.
+- The checked sums are two-centre kernel cross sums. A kernel cross
+  sum is not an alphabet mean.
+- The order-blind converse is not applied. The odd and even bases are
+  named by the cycle-29 note. The odd-space partner kernel is the
+  cycle-41 note. The bond-space dimension count is not repeated. The
+  300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

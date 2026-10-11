@@ -201,3 +201,8 @@ Cycle 41 takes the odd space of the source height. Every nonzero vector
 has partner rank 7, and the partner kernel is the even space of the
 partner height. It does not take a vector with both an odd part and an
 even part, and it does not classify the 300-dimensional affine space.
+
+Cycle 42 takes a parity vector with both an odd part and an even part.
+Every such vector has partner rank 10, so the only ten-kernel partner
+is 0. It does not take a vector with a nonzero excluded coefficient,
+and it does not classify the 300-dimensional affine space.

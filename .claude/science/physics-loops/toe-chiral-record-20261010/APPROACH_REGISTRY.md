@@ -437,3 +437,14 @@ sums `0`, `2`, and `1`.
 
 Family not used: a vector with both an odd part and an even part. That
 remains open. The 300-dimensional affine space is not this family.
+
+Cycle 42 target contract: whether a vector with both an odd part and an
+even part has a ten-kernel partner other than 0.
+
+Family used: the joint partner map of the odd and even bases, its
+rank-46 kernel, the orthogonal cross, and the witness cross sums `1`,
+`-1`, and `-1`.
+
+Family not used: a vector with a nonzero coefficient on the swapped
+transverse dot or the scaled cross-dot kernel. That remains open. The
+300-dimensional affine space is not this family.

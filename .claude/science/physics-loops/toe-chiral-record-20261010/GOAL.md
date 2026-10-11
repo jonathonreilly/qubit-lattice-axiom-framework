@@ -195,3 +195,8 @@ The parallel-oblique sum lies in that space at heights 1 and 2 and
 outside the chirality and transverse-sign plane. The witness cross sums
 are `0`, `2`, and `1`. A vector with both an odd part and an even part
 is not in this count. The ten-kernel coefficient span is not classified.
+Cycle 42 shows that a parity vector with both an odd part and an even
+part has partner rank 10, so the only ten-kernel partner is 0. The
+orthogonal cross is one such vector. The witness cross sums are `1`,
+`-1`, and `-1`. A vector with a nonzero excluded coefficient is not in
+this count. The ten-kernel coefficient span is not classified.

@@ -285,3 +285,9 @@ odd space has partner rank 7, and the partner kernel is that even space.
 The witness kernel cross sums are `0`, `2`, and `1`. It does not
 classify a vector with both an odd part and an even part, and it does
 not classify the 300-dimensional affine space.
+
+Cycle 42 prunes the reading that a mixed parity vector has a nonzero
+ten-kernel partner. Every such vector has partner rank 10. The witness
+kernel cross sums are `1`, `-1`, and `-1`. It does not classify a vector
+with a nonzero excluded coefficient, and it does not classify the
+300-dimensional affine space.

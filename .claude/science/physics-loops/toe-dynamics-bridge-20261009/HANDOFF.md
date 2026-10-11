@@ -167,30 +167,119 @@ worktrees. Do not overwrite frozen proofs or the historical failed controls.
   expectation cancels the finite-rank correction; the longitudinal trace is
   conserved. This is not a canonical-current counterexample. Author checks:
   36 finite controls, six actual mutants. Receipt bdd9d7b0caedbf168f4e45dead01b7a816f321b5894ae5671c1dcdedb81d35dc.
-  spatial_kinetic_derivation is independently checking all proof constants,
-  global preparation, zero-space domain and current cancellations. Root has
-  not yet read a final independent report or the full author receipt bundle.
-- EXCLUDED_WALK_FLUX_BRIDGE_PROBE.md: spatial_prior_art is deriving the
-  finite-beam/plane-wave normalization of pair-scattering flux. The exact
-  source-flux identity 2 Im G and the eight-corner parity structure are
-  promising. No preliminary cross-section coefficient is accepted yet.
-  Preserve exchange convention and incident density; no physical collision
-  clock or many-body closure follows from a small scattering phase.
-- EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md: spatial_quantum_realization
-  derives weak-K effective evolution on the entire zero space (transverse
-  free modes plus zeta), with a gapless strong-limit proof if possible.
-  No isolated-eigenvalue perturbation or unbounded-dipole identity on singular
-  zeta is allowed without justification. Equal-component kappa and even
-  cyclic symmetry may turn transverse mixing into a true linear current
-  response. This would concern fixed zero-space data; a lambda-dependent
-  free-band packet conclusion is a separate unproved interface.
+  Independent complete review is now frozen as EXCLUDED_WALK_LONG_TIME_REVIEW.md,
+  b9525df21cac9721603776dc703314b73e2572b874ac5ef733b35933d6260e2f.
+  Root read the entire review/helper/log and verified all 37 receipt identities;
+  receipt bba5f583d96d04728bb9bacca52bd9de249ae8ed4d582f7ca52e4c8c0d9c4f1d.
+  All author sources, six actual mutations and raw failures were also checked.
+- EXCLUDED_WALK_FLUX_BRIDGE_PROBE.md: frozen 628 lines,
+  35cfa3095d1abaaeef0e6b77296b42a218615b23f680ee312576adbf924dfc17.
+  Root read/reconstructed the full proof, helper/log, and selected primary
+  Shaban/Vainberg passages including a visual Eq13 check. The paired convention
+  gives sigma_pair ->1/(4pi I0^2); the normalized packet instead has positive
+  lambda^2 transfer probability. No beam-area limiting theorem or event clock.
+  Root report ROOT_EXCLUDED_WALK_FLUX_REVIEW.md is
+  8fbc4a36dc351460bfc151a4bb3c40ea569f437057e2b72da47540c508608214;
+  flux_review/root_review_receipt.json is
+  b6813f040679c5f4f7fc54783908a3e1fbd47c36e842b0c1318f97a4446062cb.
+  All15author-manifest identities match. Root's independently constructed
+  nonparallel Pauli/nonuniform3channel/ellipsoid algebra helper passed; its
+  complete log was read. No defect or source repair requested.
+- EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md: frozen 549 lines,
+  b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876.
+  Root read the full argument, 264-line helper, manifest/driver and all eight
+  complete failure logs. All25artifact and8source hashes and exact mutations
+  match. Full zero-space generator includes transverse/dressing couplings;
+  cutoff proof gives fixed-vector strong evolution and actual canonical-current
+  response, with global packets and an explicit nonuniform-state-limit example.
+  EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md is frozen at
+  c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2;
+  independent receipt c4d07a7e025986d1bfc2ba2e479ff34c0c4b73cabe21f1ccc68aaedd64144baa.
+  Root read the complete independent report/helper/log and verified all46 receipt
+  identities. No repair requested.
+- EXCLUDED_WALK_FLUX_TRANSPORT_FORM_PROBE.md: frozen 468 lines at
+  52e8b10cc7db84d65372bfac18a0a0839889b03003190ee0ec310b503115f143.
+  Root read/reconstructed its full form normalization, covariance tensor and
+  rank/coercivity, complete author helper/log, and verified all13 receipt files.
+  Root independent three-channel / fourteen-point sphere-design controls passed.
+  ROOT_EXCLUDED_WALK_TRANSPORT_FORM_REVIEW.md is
+  5ff79b0756214eb75f94b8b64e8eeae4dbb7eefcba4640dc9b97e6be78fbe572;
+  flux_transport_review/root_review_receipt.json is
+  70b6fd71161f9aee8a54de1dd647350e4983facd5f48a4c05f23994af2479bcf.
+  Q_mu=||S*fS-f||^2/pi, order lambda^8 tensor before normalization and
+  lambda^6 after; no microscopic encounter clock or many-body law supplied.
+- Root EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_DRAFT.md frozen at
+  0f88cc71227a51e4f03069d985b535685735cd6f0b7fc80ca6cb6ad46c059c3c.
+  Q B Q=0 and BQ=FBQ permit a cutoff corrector. Full trace identity and
+  exact energy conservation isolate a signed current drift from a truly
+  projected free band. At fixed lambda then sufficiently small delta,
+  normalizable packets give Delta J_a <=-delta*lambda/(388800*pi^2)
+  at t=(1/20)/delta. The published claim candidate is constructive; it does
+  not assert a uniform-all-time no-go. No explicit onset is in this source.
+  Author helper, full baseline and four actual mutation failures read;
+  author receipt e1c6f76499ea7cf1eb3810ef49a1e0d7fbca35c5e0b37a5c9fe2a74b2b6c56e4.
+  EXCLUDED_WALK_TWO_SCALE_FREE_BAND_CURRENT_REVIEW.md frozen at
+  7fa575475439af53c7c0cf4af74fea66537b75ce42afd7418504de4dd0e31051;
+  independent receipt 8695c83d80ef8084bd2214be1bcbbc8268a9ad663924a415c1b85f642a2a0f88.
+  Root read full316-line review,196-line distinct helper, complete log and
+  verified all19 receipt identities. No defect. The independent packet
+  explicitly excludes the separate author helper, which root did inspect.
+- spatial_prior_art is deriving a new quantitative extension, external
+  EXCLUDED_WALK_QUANTITATIVE_BAND_CURRENT_PROBE.md / quantitative_band_current.
+  Candidate spectral estimates give transverse error <=9delta/sigma
+  +17 A_lambda sqrt(sigma)+8sigma/lambda+delta/5. The proposed explicit
+  choices sigma=2^-40 lambda^(3/2), delta=2^-68 lambda^2 may remove
+  existential onset for lambda<=1/16. Author and independent reviewer
+  spatial_kinetic_derivation are checking the full argument and margins;
+  now frozen at ab8de5c1d0d90a3c15ca9cf47133a856947714f6aee5fd5127fc9dcb82263400
+  (420 lines); author receipt 2eaa2eda5f5fec364669e2d6709421a69528843bc43f55f8a1340d3a158967b5.
+  Root read the complete proof,130-line helper and7-line log and verified all7
+  receipt identities. Separate review reports no defect so far; final receipt
+  pending. Preserve all preceding frozen proofs.
+- Scoped Lean module RankOneScattering.lean frozen at
+  2f5260a23eecc90c6bf3fabe9e26c4c05a5595fa151b98010097a7ee501b22ae,
+  clean normal compilation with only propext/Classical.choice/Quot.sound.
+  lean_audit/receipt.json is
+  1564b0bf532aca6c7f43c301455163b1af0afb96405e620eb56c481bdf7ed96d.
+  Root read entire source, scope, final compiler log, harnesses and all current
+  controls/logs; all67 artifact hashes, relevant dependency-source and runtime
+  binary hashes verified. Six false identities reject at mathematical goals;
+  three positive boundary witnesses compile. ROOT_EXCLUDED_WALK_LEAN_REVIEW.md
+  and lean_root_review_receipt.json bind root's statement/evidence check.
+  Only universal rank-one algebra is formalized; analytic scattering, coarea,
+  threshold, Cook and physical dynamics remain outside the certificate.
+  Lean4.35.0-rc4 and mathlib939d5d5d9e6f07d1d8c80a16fa3fa39a7518b716
+  are task-local. Do not copy the runtime/cache/dependency checkout into repo.
+- spatial_quantum_realization now works on a new effective_memory/ derivation:
+  exact scalar resolvent or Volterra equation for the dressing amplitude of
+  A_kappa. No decay, no-eigenstate or Markov assertion is assumed. External
+  EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md is the designated deliverable.
+
+## Current publication preparation
+
+walk_worktree now uses physics-loop/toe-scattering-flux-20261011, based on
+b9b032ae790c66e762a6296a1306bfb64ae7cd70 (parent #9479), without changing
+that published parent branch. Flux/form publication note is1218 lines at
+c70ad03ede2a01c0b49282043a4b20824f64a6b42c3440facae1b6c5e231c0bc;
+primary470lines f8bdf9f014eae164ab283d73910ff38968933637ff25349f5e9c5d1f974dff2a.
+Both author helpers are embedded byte-for-byte. The source map records only
+status/location/headings edits to the mathematical proof bodies. A separate
+composition check is pending. The canonical primary cache is fresh, exit0,
+1.06seconds. All14 real single-change source mutants fail at intended checks,
+with full logs read and exact substitutions verified. The portable repository
+Lean compiler entrypoint compiled the same source at exit0 in42.6986seconds.
+A separate publication pack is toe-scattering-flux-20261011 in walk_worktree.
+It is a snapshot, not a second live checkpoint. Citation graph built at6871
+nodes/15421edges; final compatibility, conformance, staging and PR are pending.
 
 ## Boundaries and next action
 
 Both checked transport and finite-preparation walk milestones are published.
-Continue the new flux, long-time leakage and degenerate-dynamics interfaces.
+Publish the checked flux/form/Lean and long-time current milestones after
+composition checks. Continue explicit current estimates and effective memory.
 Keep identities and raw evidence current. Original mathematics is authorized. Lean may verify
-complex scoped obligations during audit; no Lean execution is claimed here.
+complex scoped obligations during audit; the universal rank-one algebra is now
+compiled and statement-checked, while analytic proof obligations remain separate.
 Do not merge/push science to main, apply audit verdicts, adopt new axioms, or
 message other chats. No editable prompt, skill, or platform instruction changed.
 At the fixed deadline preserve all work, report open obligations, and disable

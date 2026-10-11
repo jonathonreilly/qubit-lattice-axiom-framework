@@ -1065,3 +1065,25 @@ partner rank 10. The pivot-minor gcd is a nonzero constant. A vector
 with both a nonzero swapped-dot coordinate and a nonzero scaled
 coordinate is outside this all-scale count. The ten-kernel coefficient
 span is not classified. The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 50
+
+claim_id: chiral_pair_mixed_even_rank_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: ordered height pairs (1, 3), (2, 3), and (3, 2); second even generator plus both swapped-dot generators; every chirality coefficient
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+On (1, 3), (2, 3), and (3, 2), the second even generator plus both
+swapped-dot generators has partner rank 7 at every chirality
+coefficient. The summed coordinates are swapped -1 and orthogonal 2.
+The source-same form of those coefficients is outside this rank-7
+count. The ten-kernel coefficient span is not classified. The
+300-dimensional affine space is not classified.

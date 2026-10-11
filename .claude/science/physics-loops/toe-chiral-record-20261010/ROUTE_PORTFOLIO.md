@@ -243,3 +243,9 @@ Cycle 49 takes every chirality coefficient on the swapped-dot
 coefficient 1 vector. Every coefficient has partner rank 10. It does
 not take every vector in the even space and both ratio spans, and it
 does not classify the 300-dimensional affine space.
+
+Cycle 50 takes the second even generator plus both swapped-dot
+generators on `(1, 3)`, `(2, 3)`, and `(3, 2)`. Every chirality
+coefficient has partner rank 7. It does not take the source-same form
+of those coefficients, and it does not classify the 300-dimensional
+affine space.

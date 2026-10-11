@@ -846,3 +846,20 @@ that meets both spans and has a nonzero even part, other than the three
 named witnesses, stays open at a nonzero chirality coefficient. The
 chirality cap alone has partner rank 7. The ten-kernel coefficient span
 stays open.
+
+## Cycle 50
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether every chirality coefficient on the source-same form of the second even generator plus both swapped-dot generators has partner rank 10. On (1, 3), (2, 3), and (3, 2) those coefficients have partner rank 7 at every chirality coefficient. Do not claim the ten-kernel coefficient span is settled."
+```
+
+On `(1, 3)`, `(2, 3)`, and `(3, 2)`, the second even generator plus both
+swapped-dot generators has partner rank 7 at every chirality
+coefficient. The source-same form of those coefficients stays open. The
+ten-kernel coefficient span stays open.

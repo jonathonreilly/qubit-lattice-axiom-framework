@@ -643,18 +643,29 @@ and a nonzero scaled coordinate is not in this all-scale count. The
 ten-kernel coefficient span is not classified. Runner
 `PASS=14 FAIL=0`.
 
+Cycle 50. On the ordered height pairs `(1, 3)`, `(2, 3)`, and `(3, 2)`,
+the second even generator plus both swapped-dot generators has swapped
+coordinate `-1` and orthogonal coordinate `2`. The base image has rank
+7 and contains every chirality row. The projected 7-by-7 pivot minors
+at chirality coefficients `0` and `-1` have a nonzero constant running
+gcd, so every chirality coefficient has partner rank 7. A nonzero
+chirality coefficient on a vector that meets both spans and has a
+nonzero even part need not have partner rank 10. The same coefficients
+on the source-same height pairs are not in this rank-7 count. The
+ten-kernel coefficient span is not classified. Runner
+`PASS=15 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every nonzero chirality coefficient, on every vector
-that meets both ratio spans and has a nonzero even part, has partner
-rank 10. The scaled coefficient 4/3 vector, the scaled coefficient 4
-vector, and the swapped-dot coefficient 1 vector each do. The chirality
-cap alone has partner rank 7. Do not claim the ten-kernel coefficient
-span is settled. Do not claim the 300-dimensional affine space is
-classified. Do not repeat the bond-space dimension count. Do not return
-to the modulus-3 triple. Do not invent a formation rate. Do not return
-to shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`
-alphabets.
+Decide whether every chirality coefficient on the source-same form of
+the second even generator plus both swapped-dot generators has partner
+rank 10. On `(1, 3)`, `(2, 3)`, and `(3, 2)` those coefficients have
+partner rank 7 at every chirality coefficient. Do not claim the
+ten-kernel coefficient span is settled. Do not claim the 300-dimensional
+affine space is classified. Do not repeat the bond-space dimension
+count. Do not return to the modulus-3 triple. Do not invent a formation
+rate. Do not return to shells, plaquette corner weights, or the
+`(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

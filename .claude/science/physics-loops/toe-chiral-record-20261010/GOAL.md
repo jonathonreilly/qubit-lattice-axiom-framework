@@ -247,3 +247,9 @@ coefficient 1 vector has partner rank 10. The pivot-minor gcd is a
 nonzero constant. A vector with both a nonzero swapped-dot coordinate
 and a nonzero scaled coordinate is not in this all-scale count. The
 ten-kernel coefficient span is not classified.
+Cycle 50 shows that on the ordered height pairs `(1, 3)`, `(2, 3)`, and
+`(3, 2)`, the second even generator plus both swapped-dot generators has
+partner rank 7 at every chirality coefficient. The summed coordinates
+are swapped `-1` and orthogonal `2`. The source-same height pairs are
+not in this rank-7 count. The ten-kernel coefficient span is not
+classified.

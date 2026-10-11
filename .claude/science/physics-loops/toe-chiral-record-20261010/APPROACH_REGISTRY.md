@@ -531,3 +531,14 @@ part, other than the scaled coefficient 4/3 vector, the scaled
 coefficient 4 vector, and the swapped-dot coefficient 1 vector. That
 remains open. The chirality cap alone has partner rank 7. The
 300-dimensional affine space is not this family.
+
+Cycle 50 target contract: whether every nonzero chirality coefficient,
+on every vector that meets both ratio spans and has a nonzero even
+part, has partner rank 10.
+
+Family used: the second even generator plus both swapped-dot generators
+on `(1, 3)`, `(2, 3)`, and `(3, 2)`, the rank-7 image, and the constant
+projected minor gcd.
+
+Family not used: the source-same form of those coefficients. That
+remains open. The 300-dimensional affine space is not this family.

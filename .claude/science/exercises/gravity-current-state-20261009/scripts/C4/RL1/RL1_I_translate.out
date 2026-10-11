@@ -1,0 +1,8 @@
+l_k = 1e-30 m: sd e-fold length 2.69e-21 m ; e-folds over 1 Gpc = 1.15e+46 ; BD mean e-folds over 1 Gpc = 1.16e+55
+l_k = 1e-25 m: sd e-fold length 2.69e-06 m ; e-folds over 1 Gpc = 1.15e+31 ; BD mean e-folds over 1 Gpc = 1.16e+50
+l_k = 1e-23 m: sd e-fold length 2.69e+00 m ; e-folds over 1 Gpc = 1.15e+25 ; BD mean e-folds over 1 Gpc = 1.16e+48
+l_k = 1e-21 m: sd e-fold length 2.69e+06 m ; e-folds over 1 Gpc = 1.15e+19 ; BD mean e-folds over 1 Gpc = 1.16e+46
+l_k = 1e-19 m: sd e-fold length 2.69e+12 m ; e-folds over 1 Gpc = 1.15e+13 ; BD mean e-folds over 1 Gpc = 1.16e+44
+noise e-folds <= 1 over 1 m    needs l_k >= 7.19e-24 m  (repo locality bar l_k <= 1e-19 m)
+noise e-folds <= 1 over 1 AU   needs l_k >= 3.82e-20 m  (repo locality bar l_k <= 1e-19 m)
+noise e-folds <= 1 over 1 Gpc  needs l_k >= 2.25e-15 m  (repo locality bar l_k <= 1e-19 m)

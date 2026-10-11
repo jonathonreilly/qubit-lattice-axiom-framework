@@ -1728,3 +1728,26 @@ Does the vacuum-annihilating dressing exist and stay local? For massless photons
 - Massive staggered fermions with contact interactions: works as for φ⁴, so PASS (conditional on R).
 - Massless photon: the 0↔4 analogue, e⁺e⁻γ production from the vacuum, has a denominator ≥ 2m, so it stays gapped. But photon-only channels such as light-by-light are gapless, so power-law kernels appear at O(e⁴). At O(e²) the mechanism may survive.
 - **Reading:** PASS at O(e²) for massive fermions with photons, conditional on R.
+
+### C4 results recorded 18:47Z (RL1, W3)
+
+**Lane RL, RL1: INCONCLUSIVE, leaning FAIL.** The codex sol referee did NOT CONFIRM the bounded FAIL. Files are in `agents/C4_RL1_*`.
+
+What the referee confirmed, for regular pre-caustic scalar propagation:
+- The massless 4D Johnston sum is exactly the one-hop link kernel.
+- Extra hops add tails, but no direct-cone delta.
+- Normalizable one-hop kernels that depend only on ρV keep the wrong ν^{-1/2} coefficient.
+- The Palm-kernel mean-inverse identity is exact.
+- The 4D BD mean has an unstable pair at 0.375598 ± 5.052239i.
+- No scalar density repairs a thin, net-focusing Ricci lens at first order.
+
+Still open:
+- Three distinct L = 6 operators remain stable to the scanned resolution.
+- Their curved-space mean and their physical fixed-source variance are unresolved.
+
+**Lane RW, W3: INCONCLUSIVE.** The referee CONFIRMED WITH CORRECTIONS, with bounded FAILs for two subclasses: the khronometric one and the exactly repaired window-side one. Files are in `agents/C4_W3_*`. Conditional on the homogeneous continuum anomaly representative:
+- The anomaly is represented by a metric-nonlocal F. Its coefficient is fixed only modulo invariant additions.
+- In the pure khronometric completion, every nonzero-momentum scalar is pathological for physical a < 0.
+- The unique repair m₄ = −a/2 restores the lapse. It still leaves the λ > 1 branch unstable below k*, and it costs one exact extra relation.
+- General quadratic actions that break spatial diffeomorphisms give healthy full spectra in a numerical search. On a dense grid there are 9 scalar-sector candidates and 4 candidates across all sectors. All are far from GR.
+- No region compatible with the observational window has been exhibited, and no no-go theorem excludes one.

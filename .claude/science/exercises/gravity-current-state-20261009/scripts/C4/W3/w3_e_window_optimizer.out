@@ -1,0 +1,19 @@
+normalisation: GR static via (Phi,Psi) block gives gamma = 1, G = 1 by construction of 'static' (Phi_GR = -J/(2k^2)... see C2/D)
+  start lam=1.050: obj=6.052e+01 gamma=-0.11820 G_eff/G_GR=-0.58074 unhealthy=1 lam=1.0503 eta=1.489 max|c|=0.99 (4s)
+  start lam=1.094: obj=1.202e+02 gamma=+1.02271 G_eff/G_GR=+1.13187 unhealthy=0 lam=1.0935 eta=1.033 max|c|=1.01 (12s)
+  start lam=1.042: obj=1.035e+02 gamma=-0.16377 G_eff/G_GR=-1.10478 unhealthy=2 lam=1.0416 eta=0.582 max|c|=0.72 (20s)
+  start lam=1.093: obj=1.118e+02 gamma=+0.45752 G_eff/G_GR=+9.59751 unhealthy=2 lam=1.0929 eta=0.152 max|c|=0.67 (28s)
+  start lam=1.007: obj=1.568e+02 gamma=+0.14291 G_eff/G_GR=-0.80442 unhealthy=1 lam=1.0070 eta=1.481 max|c|=0.91 (33s)
+  start lam=1.047: obj=2.055e+02 gamma=+2.47037 G_eff/G_GR=+0.47916 unhealthy=2 lam=1.0469 eta=1.217 max|c|=0.96 (37s)
+  start lam=1.007: obj=5.941e+01 gamma=-2.08971 G_eff/G_GR=-0.28184 unhealthy=1 lam=1.0073 eta=0.884 max|c|=0.90 (45s)
+  start lam=1.065: obj=6.537e+01 gamma=-0.11206 G_eff/G_GR=+13.59417 unhealthy=1 lam=1.0653 eta=1.070 max|c|=0.88 (53s)
+  start lam=1.083: obj=6.937e+01 gamma=-2.29039 G_eff/G_GR=-0.21433 unhealthy=1 lam=1.0826 eta=0.896 max|c|=0.46 (57s)
+  start lam=1.033: obj=8.704e+01 gamma=-0.79766 G_eff/G_GR=-0.50739 unhealthy=1 lam=1.0330 eta=0.865 max|c|=0.91 (65s)
+  start lam=1.010: obj=1.614e+02 gamma=+1.24265 G_eff/G_GR=+0.46127 unhealthy=1 lam=1.0102 eta=0.432 max|c|=0.66 (70s)
+  start lam=1.079: obj=5.325e+01 gamma=-0.04519 G_eff/G_GR=-0.47135 unhealthy=1 lam=1.0793 eta=1.661 max|c|=0.96 (74s)
+  start lam=1.089: obj=1.074e+02 gamma=-0.87308 G_eff/G_GR=-0.39649 unhealthy=2 lam=1.0896 eta=1.560 max|c|=0.83 (78s)
+  start lam=1.077: obj=5.570e+01 gamma=-0.20404 G_eff/G_GR=-0.66943 unhealthy=1 lam=1.0768 eta=1.900 max|c|=0.95 (83s)
+BEST: obj=5.325e+01 gamma=-0.045188 G_eff/G_GR=-0.471353 unhealthy=1
+      lam=1.07927 eta=1.6613 masses/|a|=[0.0063, -2.6411, -8.8069, 0.0022, 1.4515]
+      c (c0=-c4) = [-0.6724, -0.5324, 0.2194, -0.4727, 0.6181, 0.5837, -0.7779, 0.1916, 0.3559, 0.6779, -0.9566, -0.2342, 0.5799]
+      c_T^2 = 1.073148

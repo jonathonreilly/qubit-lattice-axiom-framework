@@ -1,0 +1,29 @@
+stable member C = [  0.933243  -9.952513  30.471668 -51.297132  47.611945 -17.767211]  c2 = 0.6741  ladder var rate z* = 4.506
+moment check (k=0,1,2): [0. 0. 0.]
+  zeros in [0.001,20]x[-40,40]: 3.000
+  zeros in [0.0001,0.03]x[-40,40]: 3.000
+  zeros in [0.03,8]x[-12,12]: -0.000
+
+mean inverse of the stable member (Volterra):  tau | Hbar | W = int Hbar dsigma;  continuum target W -> 1/(2 pi c2) = 0.23612
+   1.00 -1.31262e-02  +0.57230
+   2.00 +1.30197e-01  +0.28654
+   3.00 -5.09261e-02  +0.07136
+   4.00 -8.78259e-02  +0.27765
+   5.00 +6.31949e-03  +0.35699
+   6.00 +4.49885e-02  +0.20236
+   8.00 -3.12878e-02  +0.25833
+  10.00 +2.29039e-02  +0.19596
+  12.00 -1.83420e-02  +0.25025
+  15.00 -5.06395e-03  +0.12236
+  20.00 -9.86600e-03  +0.22744
+  25.00 +4.31081e-03  +0.27557
+  30.00 +7.38749e-03  +0.21860
+
+I1 = int u f_C(u)^2 du = 0.53787 ;  small-eps law: z*_var = eps^{3/4} sqrt(4 pi I1) = eps^{3/4} * 2.5998
+  eps=1       ladder var rate z* = 4.5064e+00 /ell   law eps^{3/4} sqrt(4 pi I1) = 2.5998e+00   ratio 1.733
+  eps=0.3     ladder var rate z* = 1.2844e+00 /ell   law eps^{3/4} sqrt(4 pi I1) = 1.0539e+00   ratio 1.219
+  eps=0.1     ladder var rate z* = 4.6935e-01 /ell   law eps^{3/4} sqrt(4 pi I1) = 4.6232e-01   ratio 1.015
+  eps=0.03    ladder var rate z* = 1.8208e-01 /ell   law eps^{3/4} sqrt(4 pi I1) = 1.8741e-01   ratio 0.972
+  eps=0.01    ladder var rate z* = 8.0343e-02 /ell   law eps^{3/4} sqrt(4 pi I1) = 8.2213e-02   ratio 0.977
+  eps=0.003   ladder var rate z* = 3.2930e-02 /ell   law eps^{3/4} sqrt(4 pi I1) = 3.3326e-02   ratio 0.988
+NOTE (18:12Z): the 'stable' L=6 list of this run used a 500-node quadrature and the box [0.03,8]x[-12,12]; superseded by RL1_F4b (1500 nodes, box from Re 0.003): 6 stable members, none of them the member analysed in RL1_F.

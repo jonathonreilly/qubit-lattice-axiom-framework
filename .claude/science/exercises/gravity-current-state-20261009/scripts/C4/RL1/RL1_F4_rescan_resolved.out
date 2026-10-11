@@ -1,0 +1,4 @@
+L=4: members=1  {(#zeros main box, #zeros near-axis strip): count} = {(2, 1): 1}  -> stable: 0
+L=5: members=360  {(#zeros main box, #zeros near-axis strip): count} = {(2, 1): 333, (2, 3): 1, (4, 1): 19, (5, 1): 4, (6, 1): 2, (7, 1): 1}  -> stable: 0
+L=6: members=7320  {(#zeros main box, #zeros near-axis strip): count} = {(0, 1): 6, (2, 1): 6644, (2, 3): 46, (4, 1): 458, (4, 3): 4, (5, 1): 90, (6, 1): 60, (6, 3): 2, (7, 1): 10}  -> stable: 0
+NOTE: F4 (non-b) sampled the left contour edge uniformly; the near-axis count 1 for every member (including BD) is the unresolved fast phase winding next to the double zero at z = 0. Superseded by RL1_F4b.

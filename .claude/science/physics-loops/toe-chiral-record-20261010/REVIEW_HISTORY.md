@@ -590,3 +590,64 @@ Conformance, section by section:
     line, moment `2`, average `1/12`, `PASS=13 FAIL=0`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note. The
     full audit pipeline was not run.
+
+## 2026-10-10 author check, cycle 15
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`, and the cycle-11
+   single-signature note and the cycle-14 complement note on this
+   branch. The pair moments and both singular loci are computed in this
+   runner. The support of the eighteen and the complement coordinate
+   vector are cited, not rebuilt. The parent converse is not applied.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/modulus_three_complement_mixture_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `0b0c9dde376872646f86a92cb6db413b8bc35e9326d4c1b33f1ff681d4ad16f7`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=12 FAIL=0`.
+   Elapsed 0.77 seconds.
+3. Scope. The ansatz is every rational linear mixture of the complement
+   line with the three signature kernels, which is the joint slice
+   kernel. Every cancelling mixture has complement coefficient zero and
+   equal-height block zero, so it lies in the eighteen. No mixture in
+   the ansatz both cancels the two-neighbour moments and leaves the
+   eighteen. The cross moments between the opposite blocks are not
+   solved. A fourth signature is outside the ansatz. The full bond
+   space is not classified. Status line `proposed_retained`. Surface
+   status `bounded-support`.
+4. N-gate does not apply. The artifact prunes one named ansatz. It does
+   not claim that no kernel on the full bond space leaves the eighteen.
+5. Obligations are in the note. The missing lemma is an order-blindness
+   cut on another alphabet.
+6. Mutations, each on a scratch copy, exited 1. Requiring joint
+   dimension 9 gave `PASS=11 FAIL=1` on the ansatz dimension. Replacing
+   the plane factor `e0+e1` by `e0+e2` gave `PASS=10 FAIL=2` on the
+   determinant identity and the plane kernel. Requiring the line sum to
+   be 5 gave `PASS=11 FAIL=1` on the line `e0 = e1 = -e2`. An
+   independent closure under signed permutation matrices of determinant
+   1 gave 24 rotations and orbit 24, with `(2, 1, 3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Five markdown links. The runner link points at the primary runner.
+   Two note links point at tracked notes on origin/main. Two point at
+   the cycle-11 and cycle-14 notes on this branch. Manifest node_count
+   6884 and edge_count 15453. The new node has out_degree 4 and
+   deps_hash `9ac295ff0640`. Dependencies are `minimal_axioms`, the
+   2026-09-22 note,
+   `single_height_signature_order_blind_kernel_bounded_theorem_note_2026-10-10`,
+   and
+   `modulus_three_triple_complement_bounded_theorem_note_2026-10-10`.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the single-signature support of the eighteen and the cycle-14
+   coordinate vector, and states that the parent converse is not applied
+   and that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: the ansatz is the joint slice
+    kernel, the complement coefficient and the equal-height block are
+    both zero on every cancelling mixture, `PASS=12 FAIL=0`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
+    the loop-pack prose. The full audit pipeline was not run.

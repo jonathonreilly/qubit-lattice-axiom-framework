@@ -266,3 +266,24 @@ The complement of the three signature kernels is one line. Its moment
 on the opposite x-directions at `(-3, -2, -1)` is `2`, with uniform
 average `1/12`. The line is outside the eighteen and is not
 order-blind. A mixture with the signature kernels stays open.
+
+# Claim status certificate — cycle 15
+
+claim_id: modulus_three_complement_mixture_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: one proper orbit of (1, 2, 3); rational mixtures in the joint slice kernel of signatures (-3, -3), (-3, 3), and (3, -3); two-neighbour moments
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: the support of the eighteen is the single-signature note. The complement line is the cycle-14 coordinate vector. The parent converse is not applied. No formation rate is used.
+
+Every rational mixture whose two-neighbour moments vanish has
+complement coefficient zero and equal-height block zero, so it lies
+in the eighteen. No mixture in this ansatz both cancels those moments
+and leaves the eighteen. A fourth signature stays open. The 48-point
+alphabet stays open.

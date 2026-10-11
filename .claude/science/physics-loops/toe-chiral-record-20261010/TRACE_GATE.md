@@ -220,3 +220,19 @@ next_trace_action: "Ask whether a mixture of the modulus-3 complement line with 
 
 The moment `2` prunes the complement line. A mixture of that line
 with the three signature kernels stays outside this ansatz.
+
+## Cycle 15
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Ask whether order-blindness cuts the normalised soldered bond space on the 48-point chiral pair. Do not repeat the dimension count."
+```
+
+Vanishing two-neighbour moments prune mixtures of the complement line
+with the three signature kernels. A fourth signature, and the 48-point
+chiral pair, stay outside this ansatz.

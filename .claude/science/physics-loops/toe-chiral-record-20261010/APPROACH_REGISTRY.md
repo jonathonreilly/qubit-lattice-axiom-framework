@@ -117,3 +117,13 @@ Family used: the quotient by the three signature kernels, the witness
 bonds, and the moment on `±e_x` at `(-3, -2, -1)`.
 
 Family not used: a mixture of the line with those signature kernels.
+
+Cycle 15 target contract: whether a rational mixture of that line
+with the three signature kernels can cancel every two-neighbour
+moment and leave the eighteen.
+
+Family used: the ten-coefficient moment span, the two determinantal
+factors, and the kernels on both singular loci.
+
+Family not used: a fourth height signature, and the 48-point chiral
+pair. Both remain open.

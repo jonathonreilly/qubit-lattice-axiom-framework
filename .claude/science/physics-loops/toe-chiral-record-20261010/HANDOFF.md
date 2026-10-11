@@ -132,12 +132,18 @@ moment on `±e_x` at `(-3, -2, -1)` is `2`, and the uniform average is
 Runner `PASS=13 FAIL=0`. A mixture with the signature kernels is not
 classified.
 
+Cycle 15. Every rational linear mixture of that line with the three
+signature kernels whose two-neighbour moments all vanish has complement
+coefficient zero and equal-height block zero. The mixture is supported
+on `(-3, 3)` and `(3, -3)`, so it lies in the eighteen. The cross
+moments between those two blocks are not solved. A fourth signature
+is outside the ansatz. Runner `PASS=12 FAIL=0`.
+
 ## Next exact action
 
-Ask whether a mixture of this complement line with the three signature
-kernels can cancel the moment and leave the eighteen. Search first.
-A negative answer must name the ansatz. Do not restate the pure-line
-cut or the 48-point dimension. Do not invent a formation rate. Do not
+Ask whether order-blindness cuts the normalised soldered bond space on
+the 48-point chiral pair. Do not repeat the dimension count. Do not
+return to the modulus-3 triple. Do not invent a formation rate. Do not
 return to shells, plaquette corner weights, or the `(0,1,2)` and
 `(1,1,2)` alphabets.
 

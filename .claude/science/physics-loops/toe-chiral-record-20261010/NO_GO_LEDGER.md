@@ -69,3 +69,10 @@ Cycle 14 prunes the reading that the complement line on that triple
 is order-blind. The moment on `±e_x` at `(-3, -2, -1)` is `2`, with
 uniform average `1/12`. It does not say that a mixture of the line
 with the three signature kernels has the same moment.
+
+Cycle 15 prunes the reading that a rational mixture of the line with
+those three kernels can cancel every two-neighbour moment and leave
+the eighteen. The complement coefficient and the equal-height block
+are both forced to zero. It does not say that a kernel using a fourth
+signature is inside the eighteen, and it does not cut the 48-point
+alphabet.

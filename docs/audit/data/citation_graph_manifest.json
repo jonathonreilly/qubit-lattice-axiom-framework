@@ -1,6 +1,6 @@
 {
- "edge_count": 15449,
- "node_count": 6883,
+ "edge_count": 15453,
+ "node_count": 6884,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14101,6 +14101,10 @@
   "mixed_os_transfer_representation_bounded_note_2026-05-30": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "modulus_three_complement_mixture_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "9ac295ff0640",
+   "out_degree": 4
   },
   "modulus_three_triple_complement_bounded_theorem_note_2026-10-10": {
    "deps_hash": "5859f1e27606",

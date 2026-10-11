@@ -44,3 +44,7 @@ the triple `(-3, -3)`, `(-3, 3)`, `(3, -3)`.
 
 Cycle 14 takes that complement line alone. It does not take a mixture
 of the line with the three signature kernels.
+
+Cycle 15 takes every rational linear mixture of that line with the
+three signature kernels. It does not take a fourth height signature,
+and it does not take the 48-point chiral pair.

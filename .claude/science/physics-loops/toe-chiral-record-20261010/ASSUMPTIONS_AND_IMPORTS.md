@@ -127,3 +127,14 @@
 - The support of the eighteen is the cycle-11 note. It is not
   re-proved here. The parent converse is not applied.
 - No formation site, probability, or rate is imported.
+
+## Cycle 15
+
+- The ansatz is every rational linear mixture of the complement line
+  with the three signature kernels on `(-3, -3)`, `(-3, 3)`, and
+  `(3, -3)`. A fourth signature is not in this count.
+- Cancellation means every two-neighbour moment vanishes. The parent
+  converse is not applied. The support of the eighteen is the
+  cycle-11 note, and the line is the cycle-14 coordinate vector.
+  Neither is re-proved here.
+- No formation site, probability, or rate is imported.

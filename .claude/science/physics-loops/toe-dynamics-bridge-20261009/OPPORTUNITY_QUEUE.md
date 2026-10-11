@@ -1,14 +1,20 @@
-# Ranked live opportunities
+# Current ranked opportunity queue
 
-1. Finish the source-bound sharp-time review and publish the coherent boost
-   bracket/time-threshold milestone as a regular PR on#9479 after delivery checks.
-2. Resolve the actual residual expectation at fixed inverse-energy time; the
-   new norm asymptotic does not answer it. Forced H1 averaging remains a premise
-   to prove. Active spectral_edge_recovery; root's route contribution disclosed.
-3. Independently check the frozen partial-factor index theorem and its exact
-   RWW/NSY imports. Active partial_factor_review; no physical N1 premises adopted.
-4. After these questions, refresh the physical current-identification/tangent
-   error and many-body opportunity queue against latest main/open science.
+1. Publish the independently checked approximate partial-factor index bound
+   and uniform microscopic tube scaling. Exact frozen note bccf07d0...9b441,
+   review9118707f...c533c; all evidence read and521 bindings checked.
+2. Freeze and independently review the actual boost-bracket expectation
+   candidate at fixed inverse-energy time. It may distinguish a small mean
+   residual from the established large residual norm; neither implies the
+   other. The new all-component suggestion is unproved until checked.
+3. Read INDEX_TO_PHYSICS_NEXT_OBLIGATION.md when complete and attack the
+   strongest necessary link before the exact full-algebra shift identity.
+   Keep supplied integrated covariance/scattering/global-band assumptions
+   separate; do not create an artificial gap if a conditional bridge exists.
+4. Reassess longer-time rotation/boost expectations, contact-orthogonal
+   preparation or energy placement, and microscopic many-body dynamics using
+   the latest results. Preserve counterexamples rather than promise repair.
 
-Six regular PRs#9478–#9483 are already open. No science merge or audit verdict.
-The fixed campaign deadline remains2026-10-12 16:00:52 UTC.
+Boost milestone#9484 is now published. All earlier milestones stay regular
+open PRs, with no applied audit verdict. Do not duplicate active Y1/RZ or
+chiral cap calculations. Fixed campaign deadline2026-10-12 16:00:52 UTC.

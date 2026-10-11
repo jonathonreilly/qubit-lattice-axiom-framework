@@ -387,3 +387,22 @@ reading that this kernel lies in the span of those twenty-one. The orbit
 rank says eight kernels are now independent inside the 10-dimensional
 ansatz. A fourth vector in the remaining complement stays outside this
 formula.
+
+## Cycle 25
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Exhibit a fifth kernel in the remaining 1-dimensional complement of one opposite-height pair, with an exact formula, outside the nine kernels now exhibited there. Do not claim that complement is based."
+```
+
+The four bonds with weights `-1`, `-1`, `+1`, and `+1` have alternating
+sum 0 on the twenty-four kernels and alternating sum 2 on the orthogonal
+swapped cross. That prunes the reading that this kernel lies in the span
+of those twenty-four. The orbit rank says nine kernels are now
+independent inside the 10-dimensional ansatz. A fifth vector in the
+remaining complement stays outside this formula.

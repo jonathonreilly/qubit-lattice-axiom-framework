@@ -1211,3 +1211,71 @@ Conformance, section by section:
     8 with it, values `1/2`, `1`, and `3/2`, `PASS=10 FAIL=0`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
     the loop-pack prose. The full audit pipeline was not run.
+
+## 2026-10-10 author check, cycle 25
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`, and the cycle-6 chiral-pair
+   bond note on this branch. The covariance comparison, the left slices,
+   the four-bond separations, and the orbit ranks are computed in this
+   runner. Theorem 2's converse is applied and not re-proved. Far-end
+   sum 1 is cited from the cycle-6 note. The bond-space dimension count
+   is not repeated. The twenty-four kernels are comparison tensors, not
+   re-derived.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_orthogonal_swapped_cross_outside_twenty_four_kernels_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `2caac686431c4ec6d64bbd2bcdba73f0d8b101473f3f7603aa7aa2e66199e652`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=10 FAIL=0`.
+   Elapsed 10.40 seconds.
+3. Scope. The ansatz is the 10-dimensional soldered bond-symmetric
+   slice-zero space on one opposite-height pair. The exhibited kernel
+   is the orthogonal swapped cross at absolute heights 1, 2, and 3, at
+   coefficient `1/2`, on the 48 signed permutations of `(1, 2, 3)`. Each
+   factor takes values `1/2`, `1`, and `3/2`. Support is disjoint from
+   the three dot kernels and is a proper subset of the swapped-cross
+   support. Each record meets at most one live direction. Every far-end
+   sum equals 48. Four bonds at each height, with weights `-1`, `-1`,
+   `+1`, and `+1`, have alternating sum 0 on the twenty-four comparison
+   kernels and alternating sum 2 on this kernel. The eight earlier
+   kernels have rank 8, and this kernel raises the rank to 9. The
+   remaining 1-dimensional complement is not based. The 300-dimensional
+   affine space is not classified. A mixed-height bond is outside the
+   ansatz. Status line `proposed_retained`. Surface status
+   `bounded-support`.
+4. N-gate does not apply. The artifact exhibits three named kernels
+   outside the twenty-four. It does not claim that no further
+   order-blind factor exists.
+5. Obligations are in the note. The missing lemma is an exact formula
+   for a fifth vector in the remaining 1-dimensional complement.
+6. Mutations, each on a scratch copy, exited 1. Requiring the
+   alternating sum to be 0 gave `PASS=9 FAIL=1` on the three height
+   quadruples. Requiring every far-end sum to be 47 gave `PASS=9 FAIL=1`
+   on the far-end sum. Requiring every left slice to sum to 1 gave
+   `PASS=9 FAIL=1` on the slice check. An independent closure under
+   quarter-turns about `z` and about `x`, checked in this session, gave
+   24 rotations, all of determinant 1, and orbit 24, with `(2, 1, 3)`
+   and `(1, 2, -3)` outside the orbit.
+7. One primary runner. No packet helper.
+8. Four markdown links. The runner link points at the primary runner.
+   Two note links point at tracked notes on origin/main. One points at
+   the cycle-6 chiral-pair bond note on this branch. Manifest
+   node_count 6894 and edge_count 15483. The new node has out_degree 3
+   and deps_hash `41027eb0d307`. Dependencies are `minimal_axioms`, the
+   2026-09-22 note, and
+   `chiral_pair_bond_factor_dimension_bounded_theorem_note_2026-10-10`.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names Theorem 2's converse and far-end sum 1, and states that no
+   rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: far-end sum 48, alternating sum
+    `2`, opposite-height dimension 10, rank 8 before this kernel, rank
+    9 with it, values `1/2`, `1`, and `3/2`, `PASS=10 FAIL=0`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
+    the loop-pack prose. The full audit pipeline was not run.

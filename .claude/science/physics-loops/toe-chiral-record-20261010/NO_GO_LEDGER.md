@@ -147,3 +147,12 @@ two dots at 0, and differ by 2 on this kernel. Inside the 10-dimensional
 ansatz the rank rises from 7 to 8. It does not base the remaining
 2-dimensional complement, and it does not classify the 300-dimensional
 affine space.
+
+Cycle 25 prunes the reading that every strictly positive order-blind
+factor on this alphabet lies in the span of those twenty-four kernels.
+Each orthogonal swapped cross at coefficient `1/2` has neighbour-product
+mean 1 and support disjoint from the three dot kernels. Four bonds at
+each height have alternating sum 0 on the twenty-four and alternating
+sum 2 on this kernel. Inside the 10-dimensional ansatz the rank rises
+from 8 to 9. It does not base the remaining 1-dimensional complement,
+and it does not classify the 300-dimensional affine space.

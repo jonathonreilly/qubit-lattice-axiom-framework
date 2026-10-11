@@ -77,3 +77,10 @@ neighbour-product mean 1 and support disjoint from the parallel-dot
 kernel and the matched oblique dot. Two bonds at each height agree on
 the fifteen comparison kernels, carry those two dots at 0, and differ by
 2 on this kernel. The same ansatz now has eight independent kernels.
+Cycle 25 shows that the orthogonal swapped cross at each absolute height
+1, 2, and 3, at coefficient `1/2`, has neighbour-product mean 1 and
+support disjoint from the three dot kernels. Four bonds at each height,
+with weights `-1`, `-1`, `+1`, and `+1`, have alternating sum 0 on the
+twenty-four comparison kernels and alternating sum 2 on this kernel.
+The same ansatz now has nine independent kernels. One dimension remains
+unnamed.

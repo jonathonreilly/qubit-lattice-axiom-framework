@@ -95,3 +95,11 @@ kernels, and the three matched oblique dots, and it raises the exhibited
 rank inside the 10-dimensional ansatz from 7 to 8. It does not base the
 remaining 2-dimensional complement, it does not take a mixed-height
 bond, and it does not classify the 300-dimensional affine space.
+
+Cycle 25 takes the orthogonal swapped cross at absolute heights 1, 2,
+and 3. It places one kernel outside the fifteen, the three parallel-dot
+kernels, the three matched oblique dots, and the three swapped dots,
+and it raises the exhibited rank inside the 10-dimensional ansatz from
+8 to 9. It does not base the remaining 1-dimensional complement, it
+does not take a mixed-height bond, and it does not classify the
+300-dimensional affine space.

@@ -1158,3 +1158,86 @@ Restricting conservation to one sector does not count as exact.
 
 ### Rules
 Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.
+
+### Lane RC results (2026-10-11, 15:43Z to about 17:30Z)
+
+**Who and where.** Probes C1–C3 were run by Claude Opus 5.5 at xhigh (same family). Each was refereed by codex gpt-5.6-sol at xhigh. Files: `agents/RC_C{1,2,3}_report.md` and `agents/RC_C{1,2,3}_referee*.md`; scripts, including the referees' checks, are in `scripts/laneRC/`.
+
+#### C1: reduction and emergent SLAC
+
+Worker: FAIL (bounded). **Referee: CONFIRMED WITH CORRECTIONS. C1 FAIL, bounded to finite-component analytic quadratic networks and the analytic simple-root dressed subclass.**
+
+What the referee confirmed:
+- **Lemma C (Koszul).** A finite-range, divergence-free improvement is a local curl plus a constant. This resolves the RN L3 referee's caveat. The transverse-projector improvement, with R^-d tails, remains a formal non-regular loophole.
+- **Lemma R.** In d ≥ 2, the C¹ invariants of normal collisions on the lifted zone are λE + b·k + c.
+- **Theorem A.** Under transfer-regular improvements, exact additive conservation and full-support normal collisions:
+  - closure forces E² = m₀² + β|k|²;
+  - closure forbids umklapp;
+  - mutually scattering self-scatterers share β.
+- **Theorem B1, rigorous in every d.** No finite-component periodic real-analytic one-body matrix has an exact SLAC band on any open set.
+- **Theorem B2.** No simple, jointly analytic dressed root can carry the face cusp. A positive-spectral-weight self-energy is therefore excluded wherever its continuum stays gapped. Gapless continua remain open.
+- **Readout Q1.**
+  - A single smooth band has whole-zone error Θ(1/n) and closure floor πc².
+  - The window rates are 3.23, 1.76 and 0.81.
+  - A two-band construction touching at the face converges super-algebraically, but is inexact at every finite n, and its partner-band interaction obstruction is unresolved.
+
+Corrections from the referee:
+- β need not be c² > 0 without a minimum at k = 0.
+- The extension holds through smooth taste degeneracies but not through isolated crossings.
+- "Every scattering mediator" is too broad.
+- The defect value 2.44 is a sample maximum.
+
+#### C2: strong-coupling survey
+
+Worker: FAIL (bounded). **Referee: NOT CONFIRMED, so INCONCLUSIVE.**
+
+What survives:
+- **F1 lemmas.** Hilbert–Schmidt orthogonality, and [H,[H,B]] = 0 ⇒ [H,B] = 0. Exact N-independence also needs alias-free embedding, so N = 8–12 does not exclude every improvement of about 3×3.
+- Commuting-term models are immobile, with J_E ≡ 0. They are vacuous non-PASS cases, not FAIL witnesses.
+- Theorems exclude local conserved currents for TFIM, XX/XYZ and compass (Chiba; Shiraishi–Tasaki; Futami–Tasaki). The reflection reduction is sound.
+- **Kitaev.**
+  - The current matrix is −½[A²,X].
+  - The zero-flux symbol E∇E and the chiral lemma hold for nondegenerate sectors.
+  - The 1e-29 result is machine zero from typical sectors only. Full gauge-orbit sums give r = 0.375 at L = 2 and 0.067 at L = 3.
+  - D(T > 0) = 0 is not proved.
+- Stacked XXZ is real but violates cubic covariance.
+
+No axiom-admissible PASS was found.
+
+#### C3: gravity-side closure for free matter
+
+Worker: C-FAIL. **Referee: CONFIRMED WITH CORRECTIONS. C3 = C-FAIL within the regular local single-band scalar ansatz.**
+
+What the referee confirmed:
+- In the constant-shift, linear-lapse and rotational (global Poincaré) sectors, every regular local gravity-dependent completion vanishes exactly. This holds because GᵀΞ = 0, Gᵀη = 0, and SᵀN = 0 for affine N.
+- Closure then needs Hess(ω²/2) to be constant. A periodic function with constant Hessian is constant, which leaves only a dispersionless Carroll contraction, not GR.
+- Local improvements of T00 or P cannot remove the obstruction.
+- **Mechanism:** P_tot generates central differences factor by factor, not exact translations. Kato–Sakamoto–So is a correct analogy, not the proof.
+
+Corrections from the referee:
+- The exact A(π) sequence is −2, −8/3, −16/5, −128/35, −256/63.
+- The printed IR residual came from an all-momentum fit.
+- Loll proves closure in the continuum limit, not impossibility at finite spacing.
+
+What C3 does not establish:
+- Its class is not shown to be unavoidable for free matter. Non-local, multi-band, infinite-band or network, singular-structure-function, altered-generator and non-GR escapes all remain.
+- So C3 alone does not meet the lane-FAIL clause.
+
+#### Lane RC verdict: INCONCLUSIVE
+
+- C1 FAIL and C3 C-FAIL are refereed. C2 is INCONCLUSIVE.
+- The lane-FAIL clause needs either C1 and C2 both FAIL, or a C3 class that free matter cannot avoid. Neither is met.
+
+**Strongest combined statement.**
+- On a fixed lattice, regular local single-band matter cannot carry a closing hypersurface-deformation algebra, not even free matter (C3). Its momentum generates central differences, not translations, so boosts do not close with it.
+- Feeding the shift needs an exact SLAC band with no umklapp (C1). No finite-component analytic network produces one.
+- The surviving escapes all go beyond regular, local, finite-band matter:
+  - SLAC or other non-local matter;
+  - infinite-band or network matter, including face-touching multi-band constructions;
+  - gapless-dressed bands;
+  - giving up GR's constraint algebra (a preferred foliation).
+
+**Against the registered expectation.**
+- C1 FAIL, as expected.
+- C2 INCONCLUSIVE rather than FAIL; the survey was thin on Kitaev all-sectors and T > 0.
+- C3 C-FAIL, as expected but for a different reason: a global Poincaré obstruction at any h, not a breakdown "beyond uniform strain".

@@ -330,3 +330,18 @@ Details are in `TESTS.md`, "Lane RS results".
 - **Verdict: INCONCLUSIVE.**
 
 Details are in `TESTS.md`, "Lane RG results".
+
+## 15. Lane RC: carrying the energy flow (owner, 2026-10-11)
+
+**Plain version.** Three probes, each refereed. One deeper result came out.
+
+- **The deeper result (C3, refereed).** On a fixed grid, even free particles cannot keep Einstein's constraints consistent. The particles' momentum on the grid moves them by "central differences", not by true shifts. So "momentum" and "boost" do not combine the way relativity needs. No correction that depends on the metric can fix this; it sits in the global symmetry part, where all such corrections vanish. It holds for ordinary local single-band matter, and it does not need collisions at all.
+- **The carrier (C1, refereed).** Feeding the graviton needs particles whose energy is exactly √(m² + c²k²) across the whole grid (the "SLAC" form), with no umklapp. No finite network of nodes can produce that band exactly. Approximations work at low momenta, but leave an order-one error at the zone edge. A two-band trick reduces that error but pushes the problem into the second band.
+- **Strong coupling (C2, INCONCLUSIVE).** No model tested in 2D or 3D, Kitaev's included, has exactly conserved energy flow while respecting the cube symmetry. The survey did not settle Kitaev's full sector sum or its behaviour at finite temperature.
+- **Verdict: INCONCLUSIVE.** The escapes left all go beyond regular, local, finite-band matter:
+  - non-local matter, such as 1/r hopping;
+  - matter with infinitely many bands, or matter built as a network;
+  - matter dressed by gapless modes;
+  - giving up Einstein's constraint algebra in favour of a preferred time slicing.
+
+Details are in `TESTS.md`, under "Lane RC results".

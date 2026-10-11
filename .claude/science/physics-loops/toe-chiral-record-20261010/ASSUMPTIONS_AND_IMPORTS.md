@@ -399,3 +399,17 @@
   ratio spans are the cycle-32 note. The bond-space dimension count is
   not repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 34
+
+- The ansatz is the line through the chirality cap, twice the
+  transverse-sign cap, and the matched cross. A different ratio of
+  those three kernels is not in this count. The equal-coefficient line
+  is not this ansatz.
+- The checked sums are two-centre kernel cross sums. A kernel cross
+  sum is not an alphabet mean.
+- The order-blind converse is not applied. The parity kernels are the
+  cycle-29 note. The equal-coefficient line is the cycle-33 note. The
+  two ratio spans are the cycle-32 note. The bond-space dimension count
+  is not repeated. The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

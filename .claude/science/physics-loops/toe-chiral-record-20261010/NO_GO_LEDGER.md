@@ -222,3 +222,10 @@ A nonzero scale has partner rank 10. The witness kernel cross sums
 are `4` and `8`. It does not classify a different ratio of those
 three kernels, and it does not classify the 300-dimensional affine
 space.
+
+Cycle 34 prunes the reading that the chirality cap plus twice the
+transverse-sign cap plus the matched cross has a nonzero partner.
+A nonzero scale has partner rank 10. The witness kernel cross sums
+are `6` and `12`. It does not classify a different ratio of those
+three kernels, and it does not classify the 300-dimensional affine
+space.

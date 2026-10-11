@@ -1849,3 +1849,29 @@ So can the matter content cancel μ_E species by species? This would be a "Pauli
 - The (ma)² and (ma)⁴ rules need mass relations, as Pauli's sum rules do.
 - Interactions break the cancellation at g²/16π², because lattice SUSY is obstructed (Kato–Sakamoto–So).
 - FAIL (bounded). This turns P0's E_g tuning into a Pauli-type sum-rule problem: the same naturalness problem as the cosmological constant.
+
+### C4 eighth wave (19:18Z): lane RB, boost generators that are not first moments
+
+**Question.** Every obstruction in C3, I1/I2, M1 and K2 assumes the boost generator is the first moment of a local energy density, K = Σ x·h(x) + improvements. The M1 and C3 referees both left non-first-moment generators open. Could some other exact symmetry generator close the global algebra with the lattice H and P? Candidates:
+- generators with higher moments, K = Σ (x·h + x²·q + …);
+- generators that are not local densities but are still quasi-local;
+- deformed (DSR-like) boosts whose algebra closes non-linearly onto H and P.
+
+For each: does it close with H and P, and would gravity's hypersurface-deformation algebra accept it? In GR, the generator must arise from the lapse smearing N = x, so it has to be a first moment. Is that requirement forced?
+
+**Probe B1.**
+- For free lattice matter (one band, finite bands), classify the exact symmetry generators of H that act like boosts at low energy.
+- Check whether any closes an algebra with H and P (exactly, or deformed).
+- Check whether such a generator can arise from a local constraint smearing.
+- Comparator: I1's umbilic argument against deformed boosts in d = 3.
+
+**Fixed readings.**
+- **PASS:** an explicit exact generator that, together with H, P and the rotations, closes an algebra reducing to Poincaré in the infrared, and that arises from a local constraint structure gravity can use.
+- **FAIL:** for the stated classes, no such generator exists (proved), or none can arise from a local smearing.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.**
+- Deformed boosts can close for a single band in 1D. Doubly special relativity is known to give lattice-like dispersions with deformed Lorentz symmetry: E(k) with a maximal momentum.
+- In d ≥ 2 with cubic symmetry, the umbilic obstruction (I1) kills smooth deformations.
+- Gravity's constraint algebra needs first moments, from the lapse smearing.
+- Expected reading: FAIL (bounded), with 1D DSR as a curiosity.

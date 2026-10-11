@@ -1,0 +1,81 @@
+{
+  "outputs": [
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md",
+      "source_sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a",
+      "preserved_source": "evidence/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "# Compact-patch scattering and commutant covariance",
+          "after": "---\nclaim_id: compact_patch_scattering_covariance_bounded_theorem_note_2026-10-11\nclaim_type: bounded_theorem\nclaim_scope: \"Supplied microscopic commuting flows, isolated mass components, finite centre spectrum and separated compact packets imply almost-local creators, finite-product scattering limits and commutant covariance. No Fock isometry or full-GNS completeness is asserted.\"\nupstream_dependencies: []\nrunner: scripts/compact_patch_scattering_covariance_2026_10_11.py\nactual_current_surface_status: conditional-support\n---\n\n# Compact-patch scattering and commutant covariance",
+          "reason": "Publication metadata; explicit supplied hypotheses are not framework authority."
+        },
+        {
+          "before": "**Author status:** conditional support; independent proof review pending.",
+          "after": "**Status:** conditional-support; the complete argument received a separate source review.",
+          "reason": "Record completed scoped review without applying an audit verdict."
+        },
+        {
+          "before": "was downloaded on 2026-10-11 and is preserved as `compact_patch_scattering/sources/BDN_1412.2970v2.pdf`,",
+          "after": "was downloaded on 2026-10-11 and is preserved in the external research directory at `resume_20261011/compact_patch_scattering/sources/BDN_1412.2970v2.pdf`,",
+          "reason": "Distinguish the local reference recovery path from redistributed publication evidence."
+        },
+        {
+          "before": "Complete page texts 7\u201323 and 40\u201343 were read; all page texts are preserved, without claiming all were read.",
+          "after": "Complete page texts 7\u201323 and 40\u201343 were read by the author and independent reviewer; all page texts remain in external recovery, without claiming all were read. The [milestone evidence map](../.claude/science/physics-loops/toe-compact-patch-scattering-20261011/EVIDENCE_MAP.json) records reference hashes and the official URL; complete third-party papers are not redistributed.",
+          "reason": "Make exact literature coverage and recovery explicit."
+        },
+        {
+          "before": "Main `a13caa4885f547c8d206265b031ba7649e539fd9` was checked against the remote main ref.",
+          "after": "All three report identities were also rechecked unchanged at `0cc560e3935fa1ad7623592bf9974680c922d52d`. Main `a13caa4885f547c8d206265b031ba7649e539fd9` was checked against the remote main ref on 2026-10-11 at 23:44 UTC.",
+          "reason": "Record the refreshed source identity; new RV4 science is not adopted."
+        },
+        {
+          "before": "The independent remaining target is exactly the assessment's exhaustion condition",
+          "after": "In the assessment's separate vacuum setting, assume additionally\n\\(E_H(\\{0\\})=|\\Omega\\rangle\\langle\\Omega|\\) and\n\\(\\operatorname{spec}(H)\\subset\\{0\\}\\cup[m,\\infty)\\), with \\(m>0\\).\nLet \\(P_{\\rm sc}\\) project onto the closed span of all relevant constructed\nscattering states over all needed patches, including \\(\\Omega\\). The\ndownstream exhaustion condition in that setting is",
+          "reason": "Exact independently confirmed repair: define the additional unique-vacuum and positive-gap setting only for EX."
+        },
+        {
+          "before": "with the vacuum included in the scattering span. Here \\(P_{\\rm sc}\\) projects onto the relevant full constructed scattering space, not just one compact patch. Neither (27), one-particle density, nor (29) proves (EX). The present theorem also does not prove that all finite-energy excitations belong to isolated mass components, that the common rational denominator exists, or that the supplied continuous generators are microscopic implementations.",
+          "after": "With those additional spectral assumptions, (EX) expresses full-GNS\ncompleteness: the spectral cutoffs \\(\\mathbf1_{[m,E]}(H)\\) tend strongly\nto \\(1-|\\Omega\\rangle\\langle\\Omega|\\) as \\(E\\to\\infty\\), and the local\nvectors \\(A\\Omega\\) are dense. This equivalence is not asserted from\nS1\u2013S4 alone. Neither (27), one-particle density, nor (29) proves (EX).\nThe present theorem also does not prove that all finite-energy excitations\nbelong to isolated mass components, that the common rational denominator\nexists, or that the supplied continuous generators are microscopic\nimplementations.",
+          "reason": "Exact independently confirmed downstream completeness equivalence; S1\u2013S4 are unchanged."
+        },
+        {
+          "before": "The exact author control `compact_patch_scattering/check_clock_and_product.py` checked",
+          "after": "The [finite convention and product control](../scripts/compact_patch_scattering_covariance_2026_10_11.py) preserves the exact author control and checks",
+          "reason": "Point to the self-contained publication runner."
+        },
+        {
+          "before": "The proof is provisional until independently checked.",
+          "after": "A separate reviewer reconstructed the complete argument before inspecting the author-control evidence. The report is `924b2fa9d6175bcbc213d164da6322d3fde0d769f06a5608d4aadc1644f974be`; its sole downstream EX wording finding was resolved by the exact replacement confirmed in addendum `8135fdaf9481c492738eee35d7b360c0e4f864b9213fd9751218bd3ee64f3029`. This selective source review does not apply an audit verdict or retained status.",
+          "reason": "Describe the actual completed review and scope repair."
+        },
+        {
+          "before": "Evidence and exact source bindings are in `compact_patch_scattering/receipt.json`; the current checkpoint is `compact_patch_scattering/CHECKPOINT.md`. Only this new probe and its evidence directory were written. All earlier assessment/review/source files remain unchanged. No repository, prompt, PR, audit, axiom, model, or other-chat action was taken. Fixed campaign deadline: 2026-10-12 16:00:52 UTC.",
+          "after": "The [milestone packet](../.claude/science/physics-loops/toe-compact-patch-scattering-20261011/) preserves the complete original note, author evidence, independent reconstruction, exact EX repair and both review receipts. PUBLICATION_EDITS.json and reconstruct.py reproduce this note and its runner from those frozen sources. Earlier assessments and candidate-law reports are unchanged; no editable prompt, physical axiom, main branch, audit verdict or retained status is changed. The live campaign checkpoint remains in the transport worktree at `toe-dynamics-bridge-20261009/STATE.yaml` and `HANDOFF.md`. Fixed campaign deadline: 2026-10-12 16:00:52 UTC.",
+          "reason": "Replace historical author-only delivery prose with the actual publication and recovery paths."
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "docs/COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "publication_sha256": "3adc57d0236fced52704aa76e4fa7d38abbe08204623162c8fd07404a2a44a05"
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_scattering/check_clock_and_product.py",
+      "source_sha256": "57855b43dbaf43e7bdcb6ef60bcf6e1c56b05b23ff0368c61bbab37a834135f4",
+      "preserved_source": "evidence/compact_patch_scattering/check_clock_and_product.py.gz",
+      "edits": [
+        {
+          "before": "from collections import defaultdict\n",
+          "after": "AUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md\",\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: exact control assertions must be enabled\")\n\nfrom collections import defaultdict\n",
+          "reason": "Declare timeout/input and reject optimized execution; control body unchanged."
+        }
+      ],
+      "appended_text": "\n    print(\"per_element: exact finite character, Fourier, clock and product-word identities checked\")\n    print(\"per_site: checked and not executed \u2014 the supplied local interactions enter the analytic LR hypotheses\")\n    print(\"per_mode: exact finite Fourier convention fixtures; no continuum spectral sampling claim\")\n    print(\"per_block: finite noncommutative products n=1,...,9 checked modulo D_i Omega=0\")\n    print(\"lattice_wide: checked and not executed \u2014 analytic Cook convergence and covariance are proved in the note\")\n    print(\"TOTAL: PASS=9 FAIL=0\")\n    print(\"SCOPE: nine finite control records; no analytic scattering proof, Fock isometry or audit verdict from this runner\")\n",
+      "publication_path": "scripts/compact_patch_scattering_covariance_2026_10_11.py",
+      "publication_sha256": "90d31b659841bf393c2ac56bba106bc35d085290fd8ad5d8ecb24e3563cffabe"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# VERDICT: CONFIRMED WITH CORRECTIONS
+
+Full findings: [E1_referee.md](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/ref_E1/E1_referee.md:1). Independent calculations: [referee_checks.py](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/ref_E1/referee_checks.py:1) and [referee_checks.out](/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/ref_E1/referee_checks.out:1).
+
+1. Common \(T_{00}\) is redundant; relative speeds are exactly marginal at a product fixed point, while the nonconserved spin-2 combination has \(\Delta>4\) under unitarity and unique-stress-tensor assumptions. This agrees with [BPS](https://arxiv.org/abs/1305.0011). (`E1_report.md:71-90`; `E1_referee.md:7`)
+
+2. The proper-cubic representation count is correct. Corrections: the vector window includes \(\Delta=4\); chemical potentials are not generally removable; not every abstract vector is necessarily CPT-odd; and an antiunitary inversion symmetry is sufficient, not necessary. (`E1_report.md:103-124`; `E1_referee.md:11`)
+
+3. The Anber–Donoghue one-loop coefficients and \(C_T\)-weighted cancellations reproduce exactly. The general \(g^2/C_T\) rate and terminal weighted mean remain model-dependent strong-flow claims. “Frozen graviton” means no IR attraction, not no loop renormalization. ([Anber–Donoghue](https://arxiv.org/abs/1102.0789); `E1_referee.md:15`)
+
+4. The \(n=2\) DGLAP mixing identification is correct. The factors \(0.190\) and \(0.779\) are respectively a fixed-\(n_f=6\) singlet mode and an electron-only QED toy, not full-SM universal factors; the QCD nonsinglet factor is about \(0.458\). (`E1_report.md:138-155`; `E1_referee.md:19`)
+
+5. TT stiffness is a local gravity/contact coefficient rather than a nontrivial matter-CFT primary. The \(4/(4+\gamma)\) factor is correct only for the stated linear shell ansatz without cancellations. The physical graviton-mass interpretation is conditional, and P0’s speed-tuning count remains unresolved. (`E1_report.md:160-187`; `PRICE_NOTE.md:20-24`; `E1_referee.md:23`)
+
+6. The freeze-out requirements \(\gamma\simeq1.15\!-\!1.59\) are correct, but the claim that BPW \(\kappa=2\) passes the \(\gamma=2.76\) UHE-proton case is false: it misses by \(1.53\times10^6\). BPW supplies a bottom-up exponent, not a nearest-neighbour SM realization. ([Baggioli–Pujolàs–Wu](https://arxiv.org/abs/2407.11552); `E1_report.md:207-218`; `referee_checks.out:13-18`)
+
+7. The FIXED FAIL criterion is met for the examined spectator-gravity class. It is not a universal no-go: emergent diffeomorphism invariance, exact sum rules, gravitational fixed points, and scale-separated matching remain outside the demonstrated result. (`TESTS.md:1388-1391`; `E1_report.md:232-245`; `E1_referee.md:31`)
+
+**Strongest correct statement:** For a unitary 4D matter flow to a Lorentz-invariant fixed point with a unique stress tensor, no allowed vector deformation in \(3\le\Delta\le4\), and an elementary or induced spectator graviton coupled only through irrelevant gravity, the common matter speed is redundant and interacting matter-sector relative speeds are irrelevant, but matter RG neither makes the local TT vacuum response irrelevant nor attracts the graviton speed to the matter cone; absent a separate gravitational Ward identity, exact sum rule, or UV matching condition, the P0 TT naturalness problem remains and graviton–matter speed matching is an independent unresolved cost, while SM logarithmic running is far too slow. Hence E1 is **FAIL (bounded)** for this class, not a no-go against all strong-dynamics or emergent-gravity constructions.

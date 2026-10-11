@@ -1519,3 +1519,28 @@ Separately, does C3's continuous-time constraint-algebra obstruction have a disc
 - **INCONCLUSIVE:** otherwise.
 
 **Supervisor expectation.** A separate M_* needs the gravity sector to see a coarser effective lattice than matter, roughly 1e9 times coarser. On one grid that is a hierarchy, i.e. a tuning, so FAIL or INCONCLUSIVE.
+
+### Lane RE results (recorded 17:25Z): FAIL (bounded)
+
+E1 and E2 are both CONFIRMED WITH CORRECTIONS by codex gpt-5.6-sol at xhigh. Reports are `agents/C4_E{1,2}_*`.
+
+**E1.** Consider a unitary 4D matter flow to a Lorentz-invariant fixed point, with:
+- a unique stress tensor;
+- no allowed vector deformation with 3 ≤ Δ ≤ 4;
+- a spectator graviton coupled only through irrelevant gravity.
+
+Then:
+- The common matter speed is redundant, and the relative speeds of interacting matter sectors are irrelevant.
+- Matter RG does not make the local TT vacuum response irrelevant.
+- Matter RG does not pull the graviton speed onto the matter cone.
+- Without a separate gravitational Ward identity, sum rule or UV matching, the P0 TT problem remains, and matching the graviton and matter speeds is an independent cost.
+- Standard Model logarithmic running is far too slow.
+
+This is a FAIL bounded to that class, not a no-go against every strong-dynamics or emergent-gravity construction.
+
+**E2.**
+- For F2's realization, the verified one-loop flow only takes the split from 8.55e-3 at the cutoff to 7.34e-3 at 1.4 PeV. Photon survival needs ≤ 2.66e-19, so the flow misses by 2.76e16. This is FIXED reading "running too slow": FAIL (bounded).
+- Corrections:
+  - the SM factor 0.911 depends on the norm used;
+  - S ~ 1e-2 comes from an elementary-species scan, not a universal bound;
+  - the graviton claims are conditional estimates.

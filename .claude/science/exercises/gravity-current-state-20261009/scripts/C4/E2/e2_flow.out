@@ -1,0 +1,60 @@
+M_Pl -> 1 TeV: 16.09 decades, L = 37.04
+
+== (a1) QED with N_f unit-charge Dirac fermions; alpha(1 TeV) = 1/128 ==
+   singlet (all fermions vs photon): d delta/d ln mu = ((2N_f+4)/3)(alpha/pi) delta ; nonsinglet (fermion vs fermion): (4/3)(alpha/pi)
+  N_f = 1: 1/alpha(M_Pl) =  120.1;  suppression M_Pl->TeV: singlet 0.827, nonsinglet 0.881
+  N_f = 3: 1/alpha(M_Pl) =  104.4;  suppression M_Pl->TeV: singlet 0.712, nonsinglet 0.873
+  N_f = 8: 1/alpha(M_Pl) =   65.1;  suppression M_Pl->TeV: singlet 0.430, nonsinglet 0.845
+  (N_f = 1 to m_e instead of TeV, F2's b=1 guess gave 0.887; b = 2 derived here gives 0.787 at fixed alpha = 1/137)
+
+== (a2) QCD: gluon + n_f = 6 quark flavours (same speed), alpha_s(1 TeV) = 0.0885 ==
+  singlet rate = 3.778 alpha_s/pi ; alpha_s(M_Pl) = 0.0190 ; S = (alpha_P/alpha_T)^1.079 = 0.190
+  nonsinglet (quark vs quark): S = (alpha_P/alpha_T)^0.508 = 0.458
+
+== (a3) SM-like: fields B, W, G, Q, u, d, L, e, H (3 flavour-universal generations, no Yukawas) ==
+  M_Pl -> 1e11 GeV (UHECR p): worst-case relative-speed suppression sigma_max = 0.947; next 0.926; best 0.521
+     slowest initial pattern: B:-0.22, W:-0.06, G:+0.58, Q:+0.24, u:+0.20, d:+0.31, L:-0.24, e:-0.53, H:-0.28
+     kick c_e=1: (c_e - c_B) -> 0.817, (c_e - mean) -> 0.880 of initial;  kick c_Q=1: (c_Q - c_G) -> 0.594
+  M_Pl -> 1.4 PeV (LHAASO photon): worst-case relative-speed suppression sigma_max = 0.923; next 0.882; best 0.286
+     slowest initial pattern: B:-0.26, W:-0.01, G:+0.58, Q:+0.25, u:+0.17, d:+0.26, L:-0.18, e:-0.61, H:-0.21
+     kick c_e=1: (c_e - c_B) -> 0.746, (c_e - mean) -> 0.831 of initial;  kick c_Q=1: (c_Q - c_G) -> 0.378
+  M_Pl -> 1 TeV: worst-case relative-speed suppression sigma_max = 0.911; next 0.851; best 0.152
+     slowest initial pattern: B:-0.27, W:+0.02, G:+0.58, Q:+0.25, u:+0.15, d:+0.23, L:-0.14, e:-0.64, H:-0.17
+     kick c_e=1: (c_e - c_B) -> 0.710, (c_e - mean) -> 0.805 of initial;  kick c_Q=1: (c_Q - c_G) -> 0.244
+  couplings at M_Pl: alpha_Y, alpha_2, alpha_3 = [0.018  0.0202 0.0191]
+
+== (b) power-law exponents z (delta ~ (mu/Lambda)^z) and suppression over D decades ==
+  GNY chiral Ising, 4-eps, eps=1, N_f=1 (one-loop, derived)                z = 0.4667: factor over 16.1 decades = 3.11e-08
+  GNY chiral Ising, 4-eps, eps=1, N_f=2 (graphene-like)                    z = 0.6190: factor over 16.1 decades = 1.10e-10
+  GNY, eps=1, N_f -> inf (= 4 - d)                                         z = 1.0000: factor over 16.1 decades = 8.20e-17
+  GNY in d=4 (eps=0): marginal -> logs only                                z = 0.0000: factor over 16.1 decades = 1.00e+00
+  QED3 large N, nonsinglet, N=4 two-comp (64/(5 pi^2 N), derived)          z = 0.3242: factor over 16.1 decades = 6.09e-06
+  QED3 large N, singlet fermion vs bare Maxwell (4 - d)                    z = 1.0000: factor over 16.1 decades = 8.20e-17
+  GN large N, nonsinglet, N=4 (16/(15 pi^2 N), derived)                    z = 0.0270: factor over 16.1 decades = 3.68e-01
+  weakly coupled 4D, gamma ~ 2 alpha/pi at alpha=1/128                     z = 0.0050: factor over 16.1 decades = 8.32e-01
+  4D strongly coupled CFT, z = Delta(T1-T2) - 4 (BPS-type, model-dependent) z = 0.5000: factor over 16.1 decades = 9.05e-09
+  same, z = 1                                                              z = 1.0000: factor over 16.1 decades = 8.20e-17
+  same, z = 2                                                              z = 2.0000: factor over 16.1 decades = 6.72e-33
+
+== (c) F2 initial split delta0 = c_e - c_gamma = -8.55e-3 at a^-1 = M_Pl ==
+  gamma -> e+e- (LHAASO 1.4 PeV), lattice sign           : bound 2.7e-19 at 1.4e+06 GeV (12.94 decades): QED log flow gives 7.34e-03 (miss x2.8e+16); power law needs z >= 1.28
+  IceCube PeV neutrinos (nu vs gamma), either sign       : bound 1.0e-20 at 1.0e+06 GeV (13.09 decades): QED log flow gives 7.33e-03 (miss x7.3e+17); power law needs z >= 1.37
+  UHECR p vacuum Cherenkov (c_p > c_gamma) at 1e20 eV    : bound 4.4e-23 at 1.0e+11 GeV (8.09 decades): QED log flow gives 7.78e-03 (miss x1.8e+20); power law needs z >= 2.51
+  gamma -> p pbar (c_gamma > c_p) at 1.4 PeV             : bound 9.0e-13 at 1.4e+06 GeV (12.94 decades): QED log flow gives 7.34e-03 (miss x8.2e+09); power law needs z >= 0.77
+  GW170817 (c_g vs c_gamma, 3e-15): not reachable by any matter-sector flow; see (d)
+
+== (d) graviton TT stiffness and speed ==
+  canonical h_c = M_Pl h/2: mass term mu_TT h^2 = (4 mu_TT/M_Pl^2) h_c^2 -> m_g^2 ~ mu_TT/M_Pl^2 (dimension-2 coefficient)
+  growth of (m_g/E)^2 from E = M_Pl to E = 1 TeV: x1.5e+32
+  growth of (m_g/E)^2 from E = M_Pl to E = ~1e-15 eV (LIGO band, 100 Hz ~ 4e-13 eV order): x1.5e+86
+  stiffness share from modes below 1e-01 Lambda with LV profile (k/Lambda)^0.0: 1.0e-04  -> flow can remove at most this share; UV share 1 - 1e-04 untouched
+  stiffness share from modes below 1e-03 Lambda with LV profile (k/Lambda)^0.0: 1.0e-12  -> flow can remove at most this share; UV share 1 - 1e-12 untouched
+  stiffness share from modes below 1e-01 Lambda with LV profile (k/Lambda)^0.5: 3.2e-05  -> flow can remove at most this share; UV share 1 - 3e-05 untouched
+  stiffness share from modes below 1e-03 Lambda with LV profile (k/Lambda)^0.5: 3.2e-14  -> flow can remove at most this share; UV share 1 - 3e-14 untouched
+  stiffness share from modes below 1e-01 Lambda with LV profile (k/Lambda)^1.0: 1.0e-05  -> flow can remove at most this share; UV share 1 - 1e-05 untouched
+  stiffness share from modes below 1e-03 Lambda with LV profile (k/Lambda)^1.0: 1.0e-15  -> flow can remove at most this share; UV share 1 - 1e-15 untouched
+  stiffness share from modes below 1e-01 Lambda with LV profile (k/Lambda)^2.0: 1.0e-06  -> flow can remove at most this share; UV share 1 - 1e-06 untouched
+  stiffness share from modes below 1e-03 Lambda with LV profile (k/Lambda)^2.0: 1.0e-18  -> flow can remove at most this share; UV share 1 - 1e-18 untouched
+  graviton-speed pull from 100 matter dof (Sakharov-type estimate): integrated rate 0.053 -> suppression factor >= 0.949 (GW170817 needs 3e-15/8.5e-3 = 4e-13)
+  graviton-speed pull from 1000 matter dof (Sakharov-type estimate): integrated rate 0.528 -> suppression factor >= 0.590 (GW170817 needs 3e-15/8.5e-3 = 4e-13)
+  h anomalous dimension from matter at scale mu ~ c_T mu^2/M_Pl^2: at 1 TeV ~ (1e3/1.22e19)^2 = 6.7e-33 x c_T -> cannot turn the dimension-2 mass into an irrelevant operator

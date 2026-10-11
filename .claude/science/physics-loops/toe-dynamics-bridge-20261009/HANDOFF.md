@@ -9,22 +9,24 @@ math is authorized. Keep the user-selected model and reasoning effort.
 
 ## Active paths, identities and recovery
 
-Active publication pointer: sibling boost_worktree, branch
-physics-loop/toe-boost-bracket-control-20261011, clean at
-773321aa8fdfccc05248682dfc96bf94215034a2, published regular PR9484.
-Current research is external in sibling resume_20261011 (S): compact-patch
-scattering and the actual X forcing's outgoing effective state. Root alone
-writes Git science; authors must not mutate their frozen sources.
+Active publication pointer: sibling scattering_worktree, branch
+physics-loop/toe-compact-patch-scattering-20261011, clean at
+7f4c1a23d1acb7bec85a6aabc78addd2fc70cb00, regular PR9486 open and attached.
+Boost worktree remains clean at773321aa8fdfccc05248682dfc96bf94215034a2.
+Current research is external in sibling resume_20261011 (S): the frozen Fock
+extension, frozen actual-X outgoing effective state, and an in-progress
+quantitative H* corrector. Root alone writes Git science. Frozen author
+sources must not be mutated while their separate reviews run.
 
 One live campaign checkpoint remains here in sibling worktree, branch
 physics-loop/toe-nonlinear-transport-20261011 (#9478). Previous complete state
-and handoff are losslessly archived at history/20261011T232506Z_*.gz. Previous
-checkpoint revision 71cf3876548c23d7cf06c40958bcdc4cfc8faa91. Older full proofs and failed routes remain
+and handoff are losslessly archived at history/20261011T235855Z_*.gz. Previous
+checkpoint revision 62c1a05cbc57e9704b7a3a0cb1483ebf0f7ec699. Older full proofs and failed routes remain
 in those histories and their original source-bound evidence packets. No
 primary checkout edits. The app's managed-worktree tool is unavailable from
 the non-Git chat cwd; owned standard Git worktrees were used.
 
-Latest fetched main a13caa4885f547c8d206265b031ba7649e539fd9 (22:52 UTC).
+Latest fetched main a13caa4885f547c8d206265b031ba7649e539fd9 (23:44 UTC).
 Instruction revision 3a4b2c66a1ead7a1c48b4359627e968f681e3c39. Previously
 read instructions remain byte-verified:
 AGENTS f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f;
@@ -36,7 +38,7 @@ no platform-instruction change is claimed. Skills authorize bounded delegation.
 
 ## Published regular milestones
 
-All eight verified OPEN, isDraft=false, attached; none merged.
+All nine verified OPEN, isDraft=false, attached; none merged.
 
 | PR | Scope | Scientific revision / dependency |
 |---|---|---|
@@ -48,6 +50,7 @@ All eight verified OPEN, isDraft=false, attached; none merged.
 |9483|Exact interspecies rigidity/stability/scoped Lean|aeee46fa0e2879038eec1b8ee8a1e173ac77518e; main-based; rigidity_worktree clean|
 |9484|Boost brackets, sharp norm threshold and all-component actual expectations|773321aa8fdfccc05248682dfc96bf94215034a2; parent9479; boost_worktree clean|
 |9485|Approximate partial-factor index and tube scaling|b8402c17d337f371c0c73696ef170727de9ab5bd; main a13caa48; index_worktree clean|
+|9486|Compact-patch scattering and commutant covariance|7f4c1a23d1acb7bec85a6aabc78addd2fc70cb00; main a13caa48; scattering_worktree clean|
 
 Each complete packet states its premises, shared-source limits and failures.
 Global combined audit pipeline and strict audit lint were not run; independent
@@ -128,38 +131,134 @@ focused compatibility no affected rows/failures. All520 publication identities
 and252 staged changes checked, whitespace clean. Full independent X review is
 the new analytic evidence. PR title/body now include both norm and mean.
 
-## Active bounded derivations and next decisions
+## New compact scattering milestone
 
-partial_factor_review is authoring COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md
-with compact_patch_scattering/ evidence. Joint(H,P) filtering through supplied
-microscopic flows and finite common-q centre projection select a packet;
-geometric translations then control spatial separation. Preserve signs and
-the distinction from globally isolated geometric(H,Q) shells. Full finite-
-product Cook estimates, creator independence and V covariance are being
-derived. Existence does not imply isometry or full-GNS exhaustion. Root has
-not yet read a frozen complete new theorem, and no new scattering result is
-adopted. Primary BDN arXiv1412.2970v2 is being matched with explicit hypotheses.
+PR9486 is based directly on main and is regular/open/attached. Note
+3adc57d0236fced52704aa76e4fa7d38abbe08204623162c8fd07404a2a44a05;
+primary90d31b659841bf393c2ac56bba106bc35d085290fd8ad5d8ecb24e3563cffabe.
+Complete404-line frozen source
+d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a;
+author receipt23a9f9aa165a1b88183b07ab7f5234c5b3294bbfdbd526a3fd475f5752bf3059.
+Independent review924b2fa9d6175bcbc213d164da6322d3fde0d769f06a5608d4aadc1644f974be;
+receipt4664463d5fd978e9d3026660b563f25c5628e46f43a10340169306d474d809aa;
+pre-author-evidence reconstruction6bf05b705a3bfda8f2469aa86fff6bd13d3e0827495ce8ea2408f61c91ee4fcc.
+Root read the complete source, two-line covariance-class amendment, all review
+text/reconstruction/EX check, exact proposed repair and confirmation.81author
+and76review bindings matched. The exact source correction is recorded in
+COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md,
+d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516,
+and addendum8135fdaf9481c492738eee35d7b360c0e4f864b9213fd9751218bd3ee64f3029.
+All six repair bindings matched. Frozen sources remain unchanged.
 
-boost_kernel_dynamics first found its planned kernel/spectral route already
-proved in PR9481 (D6, scalar Schur resolvent, torus helicity measure, source
-absolute continuity, endpoint absence, Volterra evolution); PR9482 already
-adds spectral-edge mean survival. Those results must not be duplicated.
-The genuinely additional candidate concerns the actual X source: its free
-frequencies e(x,kappa)>=5/4 lie outside sigma(A_kappa) subset[-|kappa|,|kappa|].
-Investigate the resolvent-dressed outgoing effective state and decay of the
-free-frequency remainder. An effective large-tau limit alone cannot establish
-uniform growing-tau control of actual lambda dynamics or a rate for H*.
-Target BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md and boost_kernel_effective_dynamics/.
-No new result is yet adopted. Freeze/read/selectively independently check
-each complete changed argument before substantial reuse or a milestone PR.
+S1 supplies microscopic commuting H,K=P/beta flows. S2 supplies isolated
+positive Casimir mass components. S3 supplies finite-order V on those
+components only; S4 supplies compact single-lift charts and separated
+velocities. Joint(H,K) filtering is almost local by a bounded-flow cutoff
+plus Schwartz tail, not an exponential-moment assumption. Finite characters
+select a centre only on the supplied mass component. Geometric packets have
+constant one-particle vacuum vectors; both differentiated terms are retained.
+Rapid equal-time commutators and all n-2 remaining factors give Cook power
+dn-N; N=dn+2 is integrable. Fixed-chart comparison discards only zero-vacuum
+packets with separated commutators. V preserves the direct-property creator
+class even when its transformed seed is not strictly local; finite-time
+conjugation yields covariance on the scattering span.
 
-Latest external PR sources:9476 at407f99203a553b336f98e832213045ed49f7fc13
-(N1/B1/M1 unchanged; prior Y1/RZ arguments not fully read/adopted);9477 at
-313af75871d9c21eb271fff1d7bf0d9e65cd4af5 (new chiral cap partner-kernel
-paths inspected only). Do not duplicate those active lanes. No claim is
-certified from a PR title or source review label.
+The original EX discussion omitted a unique vacuum and positive gap. Its
+reviewed replacement supplies those only for the downstream completeness
+equivalence. No EX, Fock isometry, multiparticle nonzero norm, physical
+implementation, rational-centre necessity or full-algebra shift is claimed.
+BDN1412.2970v2 is a matched mathematical source, not physical authority.
+Author/reviewer read PDF pages7–23,40–43; root needed7,8,14–21,41,42.
 
-Lock refreshed2026-10-11 23:18:52 UTC, expires2026-10-12 00:18:52 UTC.
-Refresh by00:05 from this transport worktree with owner codex-toe-native-20261011.
-Do not extend the fixed campaign deadline. Continue useful science beyond
-these PR milestones; all scientific and tool failures remain explicit.
+Canonical finite control exited0 in0.7586109638214111s/60s, stderr empty,
+nine output records byte-identical to the fully read author baseline. Eight
+actual complete-primary defects fail at intended assertions; full stderr
+and changed lines read, preceding stdout prefixes verified. Citation6870nodes,
+15418edges,4565runners adds one node and no edges, all older nodes unchanged.
+Focused compatibility selects no applied rows/failures.172staged identities,
+vocabulary, whitespace, syntax, links and exact reconstruction pass.148own
+evidence files and70 external-primary-reference bindings are preserved.
+Global combined pipeline and strict audit lint remain unrun landing gates.
+S/prepare_scattering_publication.py and finish_scattering_delivery.py are
+one-shot publication scripts; do not rerun blindly. PR creation succeeded;
+an initial local body comparison incorrectly stripped a preserved newline.
+The full returned body matches exactly, so no external correction was needed.
+
+## Active new proofs and next decisions
+
+K actual forcing source BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md,441lines,
+1c314fc05a26ca27e0828a70ca8132a2bad269b60c127ea37a53e11e95e087c9;
+receipt8767499b08e7721cf1133930fcd9e0a5c703536b46aba5eacd98b81b688d7352.
+Root fully read the prior433-line version and entire final diff, author
+check and prior-art comparison.64final evidence bindings match. Existing
+PR9481 D6/source-measure results and9482 edge results are credited, not new.
+Actual X forcing has frequencies e=|x+k/2|+|x-k/2|>=5/4 while||A_k||<=1/4.
+The forced solution is z=exp(-itau A)v-r with
+v=C(k)chi_k(A)zeta, chi(E)=integral f(x)w(k,x)/(e-E) dx.
+The real-resolvent gap gives mf/8<=chi<=mf/2. Radial nonstationary phase gives
+rapid H1_k decay of r and of the interaction-picture error; no q derivative
+of singular zeta is used. Positive chi² reweights the prior source spectral
+measure. Kappa!=0 absolute continuity gives loss of the dressing projection
+and a positive limiting correction norm/transverse occupation globally.
+Only lambda-first ordered limits of the actual walk are claimed in K.
+
+Author control has38records plus five actual defect failures. First run
+timed out120.008s; preserved source affcfd14... and850-byte prefix remain.
+Caching exact inverses/recursive simplification changed no mathematical
+assertion; second run completed23.803s/120s. Prefix preservation verified.
+Finite fixtures are not continuum or long-time proofs. boost_forcing_review
+is the fresh independent reviewer; reconstruction is being frozen before
+author evidence. No material defect reported so far, but no final verdict
+or future publication is assumed.
+
+Fock source COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md,326lines,
+9bc3a309e8fc35978bcac0c360b8557fb6a3c4484cfc2034a277a94072369404;
+receipt48b2a3fb2aeef107685ade2404e4029741fd9076e22f2d1fd6a3803588026c6d.
+Root read the entire proof and NS0712.3318v1 pages3,4,9–12. Candidate adds
+kerH=C Omega and a positive gap. Compact temporal transfer and all mixed
+lowering-product kernels give uniform finite-energy creator/adjoint bounds.
+Strict mass-dispersion Hessians and clustering yield mixed-chart contraction
+with O(T^-d/2) remainder. Uniform vacuum-word norms prevent product errors
+from growing. Double-commutator velocity partitions give the permanent Gram
+recursion without cross-family velocity separation. Almost-local
+commutators yield spectral absolute continuity; equal-velocity diagonals are
+null and separated tensor boxes are dense. Candidate wave operators are
+isometries across selected mass/centre summands, not onto the full GNS space.
+Root has not yet read/verified all author controls. compact_fock_review is
+performing fresh reconstruction and primary-source checks before author
+evidence; no completed independent verdict is assumed.
+
+Q quantitative corrector is active with boost_kernel_dynamics, under
+boost_hstar_quantitative_corrector/; current CHECKPOINT.md records author
+progress. ROOT_HSTAR_APPROXIMATE_CORRECTOR_LEAD.md is root's unproved lead,
+not an accepted theorem. On the actual longitudinal residual r=beta(q)n,
+subtracting the truncated singlet mean can construct a physical x_delta with
+||x_delta||<=pi C/(4 sqrt(delta)) and small H*x_delta-r without a gap.
+The author reports a candidate bound C sqrt(lambda)(1+T)^3 exp(T/2), retaining
+both endpoints, time derivative and noncommuting bounded perturbation plus
+the full kappa-differentiated equation. The c<1 logarithmic window and K-based
+simultaneous correction-occupation limit remain candidates pending complete
+freeze and fresh independent review. Root proposed the mechanism and is a
+coauthor; do not represent root as its independent checker.
+
+Root+Q author+K reviewer+Fock reviewer occupy all four slots. The completed
+partial_factor_review author is idle. A followup to assess constructive
+full-GNS exhaustion literature/routes was rejected by the tool's concurrency
+limit and did not start. Once a slot frees, dispatch that small conditional
+probe; do not deepen unchecked Fock dependencies or use a generic spectator
+Hilbert space as a purported local-qubit counterexample.
+
+Latest fetch23:44 UTC: main a13caa48 and instructions3a4b2c66 unchanged;
+candidate-law9476 is0cc560e3935fa1ad7623592bf9974680c922d52d. N1/B1/M1
+byte identities are unchanged. New RV4 S1/S2 science concerns gravity shear
+and DOS/seagull completions; full summary/test delta and report headings
+were inspected for overlap, not full arguments or verdicts. Do not duplicate
+that active lane or certify it. Chiral9477 remains313af75871d9c21eb271fff1d7bf0d9e65cd4af5;
+its new partner-kernel science is not adopted. Fetch/inventory failure from
+looking for local CLAUDE.md inside the planning Git tree was recovered by
+verifying unchanged applicable local bytes; no instruction edits occurred.
+
+Lock refreshed2026-10-11 23:44:06.903890 UTC, expires2026-10-12 00:44:06.903890 UTC.
+Refresh by00:30 UTC from this transport worktree with owner codex-toe-native-20261011.
+Do not extend the fixed2026-10-12 16:00:52 UTC campaign deadline. Continue
+useful science through these milestones; all failures and limits remain explicit.

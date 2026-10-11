@@ -287,3 +287,23 @@ complement coefficient zero and equal-height block zero, so it lies
 in the eighteen. No mixture in this ansatz both cancels those moments
 and leaves the eighteen. A fourth signature stays open. The 48-point
 alphabet stays open.
+
+# Claim status certificate — cycle 16
+
+claim_id: chiral_pair_height_line_order_blind_cut_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); height-linear family 1 + c (a·d)(b·(-d)); uniform two-neighbour moments; coefficient 1/10
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: Theorem 2 supplies the moment obstruction. Far-end sum 1 is the chiral-pair bond note. The parent converse is not applied. No formation rate is used.
+
+The height-linear factor at coefficient `1/10` is strictly positive
+and has opposite moment `71/50`, so order-blindness cuts the
+normalised space. The order-blind subset stays open. The chiral-cap
+line is not re-derived.

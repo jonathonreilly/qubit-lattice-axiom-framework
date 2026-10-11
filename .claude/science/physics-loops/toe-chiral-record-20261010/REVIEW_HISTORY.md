@@ -651,3 +651,59 @@ Conformance, section by section:
     both zero on every cancelling mixture, `PASS=12 FAIL=0`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
     the loop-pack prose. The full audit pipeline was not run.
+
+## 2026-10-10 author check, cycle 16
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms and the 2026-09-22 order-blind note, both on
+   origin/main at the base `0b208e91cfc`, and the cycle-6 chiral-pair
+   bond note on this branch. Bond symmetry, soldered covariance, the
+   far-end sums, and the moments are computed in this runner. Theorem 2
+   supplies the moment obstruction and is not re-proved. Far-end sum 1
+   is cited from the cycle-6 note. The dimension count is not repeated.
+   The parent converse is not applied.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_height_line_order_blind_cut_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `e1bf806ef5ff0f83f5d5de5579aa37e467476825877d3c3ec8cdcdff78ddbef0`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=12 FAIL=0`.
+   Elapsed 4.05 seconds.
+3. Scope. The ansatz is `phi_d(a, b) = 1 + c (a·d)(b·(-d))` on the 48
+   signed permutations of `(1, 2, 3)`. Every far-end sum equals 48. At
+   `c = 1/10` the factor is strictly positive and not constant, and the
+   uniform moment on `±e_z` at `(1, 2, 3)` is `71/50`. Order-blindness
+   cuts the normalised space. The order-blind subset is not classified.
+   The parent's chiral-cap line is not re-derived. Status line
+   `proposed_retained`. Surface status `bounded-support`.
+4. N-gate does not apply. The artifact prunes one named line. It does
+   not claim that no strictly positive order-blind factor exists.
+5. Obligations are in the note. The missing lemma is an order-blind
+   factor on this alphabet outside the exhibited chiral-cap line.
+6. Mutations, each on a scratch copy, exited 1. Requiring the witness
+   moment to be `71/49` gave `PASS=11 FAIL=1` on that moment. Requiring
+   every far-end sum to be 47 gave `PASS=11 FAIL=1` on the far-end sum.
+   Requiring the second moment to be `13/3` gave `PASS=11 FAIL=1` on
+   that moment. An independent closure under signed permutation matrices
+   of determinant 1 gave 24 rotations and orbit 24, with `(2, 1, 3)`
+   outside the orbit.
+7. One primary runner. No packet helper.
+8. Four markdown links. The runner link points at the primary runner.
+   Two note links point at tracked notes on origin/main. One points at
+   the cycle-6 chiral-pair bond note on this branch. Manifest
+   node_count 6885 and edge_count 15456. The new node has out_degree 3
+   and deps_hash `41027eb0d307`. Dependencies are `minimal_axioms`, the
+   2026-09-22 note, and
+   `chiral_pair_bond_factor_dimension_bounded_theorem_note_2026-10-10`.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names Theorem 2 and far-end sum 1, and states that the parent
+   converse is not applied and that no rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: far-end sum 48, second moment
+    `14/3`, witness moment `71/50`, `PASS=12 FAIL=0`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
+    the loop-pack prose. The full audit pipeline was not run.

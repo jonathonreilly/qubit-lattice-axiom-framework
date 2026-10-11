@@ -127,3 +127,12 @@ factors, and the kernels on both singular loci.
 
 Family not used: a fourth height signature, and the 48-point chiral
 pair. Both remain open.
+
+Cycle 16 target contract: whether order-blindness cuts the normalised
+soldered bond space on the 48-point chiral pair.
+
+Family used: the height-linear family `1 + c (a·d)(b·(-d))`, its
+far-end sums, and the opposite-direction moment at coefficient `1/10`.
+
+Family not used: the parent's chiral-cap line, and any bond factor off
+this line. The order-blind subset remains open.

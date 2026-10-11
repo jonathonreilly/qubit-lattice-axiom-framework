@@ -139,13 +139,20 @@ on `(-3, 3)` and `(3, -3)`, so it lies in the eighteen. The cross
 moments between those two blocks are not solved. A fourth signature
 is outside the ansatz. Runner `PASS=12 FAIL=0`.
 
+Cycle 16. On the 48 signed permutations of `(1, 2, 3)`, the family
+`phi_d(a, b) = 1 + c (a·d)(b·(-d))` is bond-symmetric and soldered, and
+every far-end sum equals 48. At `c = 1/10` the factor is strictly
+positive, and the uniform moment on `±e_z` at `(1, 2, 3)` is `71/50`.
+Order-blindness cuts the normalised space. The order-blind subset is
+not classified. Runner `PASS=12 FAIL=0`.
+
 ## Next exact action
 
-Ask whether order-blindness cuts the normalised soldered bond space on
-the 48-point chiral pair. Do not repeat the dimension count. Do not
-return to the modulus-3 triple. Do not invent a formation rate. Do not
-return to shells, plaquette corner weights, or the `(0,1,2)` and
-`(1,1,2)` alphabets.
+Ask whether a strictly positive order-blind factor on the 48-point
+chiral pair lies outside the exhibited chiral-cap line. Do not repeat
+the dimension count. Do not return to the modulus-3 triple. Do not
+invent a formation rate. Do not return to shells, plaquette corner
+weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
 
 ## Cleanup
 

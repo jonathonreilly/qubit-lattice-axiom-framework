@@ -48,3 +48,7 @@ of the line with the three signature kernels.
 Cycle 15 takes every rational linear mixture of that line with the
 three signature kernels. It does not take a fourth height signature,
 and it does not take the 48-point chiral pair.
+
+Cycle 16 takes the height-linear family on the 48-point chiral pair.
+It does not take the parent's chiral-cap line, and it does not classify
+the order-blind subset.

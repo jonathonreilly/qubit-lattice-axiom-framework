@@ -35,4 +35,7 @@ is one line with moment `2` and uniform average `1/12`. Cycle 15
 shows that a rational mixture of that line with the three signature
 kernels cancels every two-neighbour moment only when the complement
 coefficient and the equal-height block are both zero, so the mixture
-lies in the eighteen.
+lies in the eighteen. Cycle 16 shows that on the 48-point chiral
+pair the height-linear family `1 + c (a·d)(b·(-d))` has far-end sum
+48, and at `c = 1/10` the opposite-direction moment on `(1, 2, 3)` is
+`71/50`, so that positive factor is not order-blind.

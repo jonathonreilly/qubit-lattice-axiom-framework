@@ -138,3 +138,15 @@
   cycle-11 note, and the line is the cycle-14 coordinate vector.
   Neither is re-proved here.
 - No formation site, probability, or rate is imported.
+
+## Cycle 16
+
+- The ansatz is the height-linear family
+  `phi_d(a, b) = 1 + c (a·d)(b·(-d))` on the 48 signed permutations of
+  `(1, 2, 3)`. The coefficient `1/10` is a witness, not a selected
+  scale. The parent's chiral-cap line is not in this count.
+- Failure means one uniform two-neighbour moment is not 1. Theorem 2
+  supplies that obstruction. The parent converse is not applied.
+  Far-end sum 1 is the chiral-pair bond note. The dimension count is
+  not repeated.
+- No formation site, probability, or rate is imported.

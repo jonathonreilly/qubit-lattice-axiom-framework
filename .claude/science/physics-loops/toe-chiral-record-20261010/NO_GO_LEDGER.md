@@ -76,3 +76,9 @@ the eighteen. The complement coefficient and the equal-height block
 are both forced to zero. It does not say that a kernel using a fourth
 signature is inside the eighteen, and it does not cut the 48-point
 alphabet.
+
+Cycle 16 prunes the reading that every far-end normalised soldered
+factor on the 48-point chiral pair is order-blind. The height-linear
+factor at coefficient `1/10` is strictly positive and has opposite
+moment `71/50`. It does not classify the order-blind subset, and it
+does not re-derive the chiral-cap line.

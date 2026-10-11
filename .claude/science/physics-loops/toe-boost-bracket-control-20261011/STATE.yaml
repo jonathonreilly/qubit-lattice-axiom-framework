@@ -1,0 +1,11 @@
+loop: toe-boost-bracket-control-20261011
+mode: milestone_snapshot
+active_branch: physics-loop/toe-boost-bracket-control-20261011
+base_revision: b9b032ae790c66e762a6296a1306bfb64ae7cd70
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+milestone: prepared_boost_brackets_and_sharp_current_time_threshold
+pr_status: ready_for_regular_PR
+next_action: open_regular_PR_after_explicit_staged_identity_checks
+live_checkpoint: toe-dynamics-bridge-20261009_in_transport_worktree
+stop_condition: fixed_campaign_deadline_2026-10-12T16:00:52Z

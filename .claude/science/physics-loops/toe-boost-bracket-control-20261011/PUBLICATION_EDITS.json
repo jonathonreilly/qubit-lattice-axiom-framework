@@ -1,0 +1,89 @@
+{
+  "publication_path": "docs/EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+  "prefix": "---\nclaim_id: excluded_walk_boost_bracket_control_bounded_theorem_note_2026-10-11\nclaim_type: bounded_theorem\nclaim_scope: \"For the supplied antisymmetric excluded Weyl pair and canonical additive energy placement, exact compressed boost/current and boost/boost formulas give explicit prepared-packet residual bounds. The boost/current norm is o(lambda) below the lambda^(-1/2) time threshold, has a positive energy-scaled limit at that threshold, and is Theta(sqrt(lambda)) at specified small inverse-energy times. Operator domains and all physical premises remain explicit.\"\nupstream_dependencies:\n  - excluded_walk_low_energy_energy_current_bounded_theorem_note_2026-10-11\nrunner: scripts/excluded_walk_boost_bracket_control_2026_10_11.py\n---\n\n# Boost-bracket control for the supplied excluded Weyl pair\n\n**Date:** 2026-10-11. **Type:** bounded_theorem.\n\n**Status:** conditional-support; provisional mathematics, without an applied\nretained-status audit. The supplied walk, continuous clock, antisymmetric pair,\nsite exclusion, spatial coordinates and chosen energy placement are premises.\n\nThe four complete arguments below use one globally normalized positive-positive\norigin-cone preparation. Part I gives the exact differential boost/current\nbracket and an explicit norm bound. Part II controls its actual evolution for\ntimes at most lambda^(-gamma), gamma<1/2. In this interval lambda*t tends to\nzero, so it is shorter than the inverse-energy clock. Part III computes the\nboost/boost contact correction and compares it to a rotation on the prepared\nstate, with the ordinary momentum chart and a periodic auxiliary operator\ndistinguished explicitly. Part III does not inherit Part II's time estimate.\n\nPart IV locates the sharp power threshold for the norm in Part II using the\nsame packets. At time lambda^(-1/2), its norm divided by lambda tends to a\nstrictly positive constant. At time tau/lambda for fixed 0<tau<=1/32768,\nthe norm is Theta(sqrt(lambda)). These are diagonal-component norm results;\nthey do not give the corresponding expectation or exclude other preparations.\nThe complete zero-space and integrability arguments are rederived in Part IV,\nwith the earlier memory milestone credited as prior mathematical work.\n\nThe energy interval stated for the excluded state is an expectation bound.\nIt is not preserved individual-cone or spectral support. These estimates do\nnot construct an exponentiated boost, a physical rotation group, a full\nPoincare algebra, or gravitational dynamics. Constants are conservative.\n\nEach part retains its original equation and section numbering. A reference\nto a section within a part refers to that part. Frozen research sources,\nexplicit publication edits and exact reconstruction are preserved in the\n[milestone evidence](../.claude/science/physics-loops/toe-boost-bracket-control-20261011/).\nThe original sources' historical status prose is superseded only by the\nsource-bound publication review recorded there; no status is inferred from\na finite-control count.\n\n**Parent:** [canonical current and excluded-walk premises](EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md),\ncomplete branch revision b9b032ae790c66e762a6296a1306bfb64ae7cd70.\n**Runner:** [finite algebra and constant controls](../scripts/excluded_walk_boost_bracket_control_2026_10_11.py).\n**Negative-claim scope:** [N1\u2013N8 assessment](../.claude/science/physics-loops/toe-boost-bracket-control-20261011/NO_GO_DISCIPLINE_CHECKLIST.md).\n\n",
+  "parts": [
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md",
+      "source_sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923",
+      "preserved_source": "evidence/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "# Prepared-state boost/current control for the supplied excluded Weyl pair",
+          "after": "# Part I \u2014 Prepared-state boost/current control"
+        },
+        {
+          "before": "Date: 2026-10-11. External research derivation; no repository edits.",
+          "after": "Source date: 2026-10-11. Original argument preserved with the publication edits recorded in the evidence packet."
+        },
+        {
+          "before": "**Status:** proposed conditional mathematical result, with author finite-algebra\ncontrols. This is not an independently reviewed result or a retained-status\naudit.",
+          "after": "**Status:** conditional mathematical result. The source-bound review and its independence limits are recorded in the publication evidence. No retained-status audit is assigned here."
+        }
+      ],
+      "separator": "\n\n"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EVOLVED_BOOST_CONTROL_DRAFT.md",
+      "source_sha256": "d89611986626dbabcf6f9f5c487733d2a520cb9249b7ed0b3a27be35874fd929",
+      "preserved_source": "evidence/EXCLUDED_WALK_EVOLVED_BOOST_CONTROL_DRAFT.md.gz",
+      "edits": [
+        {
+          "before": "# Growing-time boost/current control for the prepared excluded walk",
+          "after": "# Part II \u2014 Growing-time boost/current control"
+        },
+        {
+          "before": "2026-10-11. Root-authored conditional extension, pending selective independent\nreview. No repository, physical axiom, or audit-status change.",
+          "after": "Source date: 2026-10-11. Root-authored conditional extension, with a completed selective independent source review. No physical axiom or audit status is changed."
+        },
+        {
+          "before": "the proposed extension is",
+          "after": "the conditional extension is"
+        },
+        {
+          "before": "The actual energy stays in [lambda/2,3lambda] by conservation.",
+          "after": "The actual energy expectation stays in [lambda/2,3lambda] by conservation. This is not a spectral-support statement."
+        },
+        {
+          "before": "explicit proof below checks;",
+          "after": "explicit proof below;"
+        }
+      ],
+      "separator": "\n\n"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_BOOST_ROTATION_PROBE.md",
+      "source_sha256": "53f883ca7f01cdeb338e1c4d41367695fc6bdb32ee0ceb2905df50238a0c4760",
+      "preserved_source": "evidence/EXCLUDED_WALK_BOOST_ROTATION_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "# Boost/boost bracket and prepared-state rotation control for the excluded Weyl pair",
+          "after": "# Part III \u2014 Boost/boost contact correction and rotation domains"
+        },
+        {
+          "before": " \\boxed{\\ \n \\|(i[D_a,D_b]-\\mathcal M^{\\rm chart}_{ab})\\chi_\\lambda\\|\n",
+          "after": " \\boxed{\n \\|(i[D_a,D_b]-\\mathcal M^{\\rm chart}_{ab})\\chi_\\lambda\\|\n",
+          "reason": "Remove a redundant TeX spacing token that leaves trailing whitespace; no formula change."
+        },
+        {
+          "before": " \\boxed{\\ \n \\|(i[D_a,D_b]-\\mathcal M^{\\rm aux}_{ab})\\chi_\\lambda\\|\n",
+          "after": " \\boxed{\n \\|(i[D_a,D_b]-\\mathcal M^{\\rm aux}_{ab})\\chi_\\lambda\\|\n",
+          "reason": "Remove a redundant TeX spacing token that leaves trailing whitespace; no formula change."
+        }
+      ],
+      "separator": "\n\n"
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md",
+      "source_sha256": "76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990",
+      "preserved_source": "evidence/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "# A time threshold for the supplied excluded-walk boost/current residual",
+          "after": "# Part IV \u2014 A sharp time threshold for the boost/current norm"
+        }
+      ],
+      "separator": ""
+    }
+  ],
+  "publication_sha256": "ccf38ede134d2e26891e5609eefb7e39b52a994edd86405cf915b6b32e571509"
+}

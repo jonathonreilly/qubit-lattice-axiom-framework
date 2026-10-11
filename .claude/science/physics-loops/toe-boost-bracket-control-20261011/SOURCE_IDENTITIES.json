@@ -1,0 +1,1401 @@
+{
+  "base_revision": "b9b032ae790c66e762a6296a1306bfb64ae7cd70",
+  "scope": "Every publication file except this manifest itself.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/APPROACH_REGISTRY.md",
+      "sha256": "6c392529decfd0b6c3c401644fa8103947bb5fdf0da1eb38e4289f39d7557c47"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/ARTIFACT_PLAN.md",
+      "sha256": "e4ef363ab703456d9d92c4b48f86500cb34d16b6b553a3f96d4c6a2b37f92dde"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "0bca34a94ad9b8124cc1d98485ec56cac12b519bfe4053501c36110249878199"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "0e29743ae1af2b78236425f4264a740456e46219d02b9c25f5d7bcc9133c3559"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/DELIVERY_CHECKS.md",
+      "sha256": "fd3df1b0988f756caee84c60db4e92f31c2f29d7ac77a1998e456b4e18e73c09"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/EVIDENCE_MAP.json",
+      "sha256": "a482e8b8263153b43d001dad7798865129cc883aca512724af991918cc0dc06f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/GOAL.md",
+      "sha256": "cf9656b2930b7acd5e78ccbd355d999d5d71d2e022dab28233bf026983963a5a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/HANDOFF.md",
+      "sha256": "91b16903261e76aca1490890e73717655a449de1b95f5cfa7faec26c0f022471"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/LITERATURE_BRIDGES.md",
+      "sha256": "b93bf58aa36e1482d76a9a9549fc6441e4c50e07e04907dda21c3491849835fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "sha256": "73c8c0e5710a5b893f6467dd876f2503e93cd04546a4fe2a41161f6d66a75af4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/NO_GO_LEDGER.md",
+      "sha256": "1e6a9bc4ef4f0c4bc8c1c51aea25c3bfe44437e8ec37ed0425660925a3ff7a34"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/OPPORTUNITY_QUEUE.md",
+      "sha256": "0c2833c527a8cc302ddbac67f6885158236824938f4d8478b7231c3bb0a255cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/PRIMARY_COMPOSITION.json",
+      "sha256": "03d9de30c8c36b059a5c0395bb617960fbbd997694550acdb561808966dada40"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/PR_BACKLOG.md",
+      "sha256": "46e48bf38455a6ef4cec9131c5371ad0544c95bfd9f82023a0b7f6d129c1b428"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/PUBLICATION_EDITS.json",
+      "sha256": "8873def5ee8a52e4e6175be5dcae57e3a8411b43872539e6fb1fccd10aaabc21"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/REVIEW_HISTORY.md",
+      "sha256": "7a17468983e331c77dbcd5cd38c05d4beb9ff44589eb4f34319eadfb9da52c7b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/ROOT_COMPOSITION_REVIEW.md",
+      "sha256": "87f26e578703dd1306183d6bcfe2023ac7afa46b0a74c8973b887bbf85d5e233"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/ROUTE_PORTFOLIO.md",
+      "sha256": "2389434f542a041f159d2b1220ecb64e2ac12c2a84fa64eb73f6194feb779684"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/STATE.yaml",
+      "sha256": "9e924a4def5c02c0e6c27fbe187f78d9fa53cd575dc5ca2da302c5a6e1143c1a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/TRACE_GATE.md",
+      "sha256": "07eaf24dcae045549127ccc3918384bd5ca55f67f589c82d2c058c29333645b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md.gz",
+      "sha256": "47a14d45d34448b823d882481188f906b3a9cf927c5cc9c8cf694cd969158a54",
+      "decompressed_sha256": "76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/BOOST_CURRENT_INVERSE_ENERGY_REVIEW.md.gz",
+      "sha256": "f26354c05b672211f3865504accb2d4aebe2d912467de89e6da507fcadf77bd5",
+      "decompressed_sha256": "d3c3d00b69b302beb88aef4a1b649f5e685ff7a08bc2c117755fcafde4d74796"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "sha256": "9986acb976ebecfbbd4d7b9d7b08f5a31015bb45b9244ca84478757468f963a1",
+      "decompressed_sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/EXCLUDED_WALK_BOOST_ROTATION_PROBE.md.gz",
+      "sha256": "adffd14dde170e16d95280d45570db5aee5d67bcedbcaa1541096be6ffcb8858",
+      "decompressed_sha256": "53f883ca7f01cdeb338e1c4d41367695fc6bdb32ee0ceb2905df50238a0c4760"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/EXCLUDED_WALK_BOOST_ROTATION_REVIEW.md.gz",
+      "sha256": "9041d1704962693fd25ab7fdbbd9e269fd2e7ca690087f2d29820cab57720b40",
+      "decompressed_sha256": "ba684885731403014d4d43113704d3d9b8ec5566e095c4413812f7f270b4e5fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md.gz",
+      "sha256": "23ddb16b30de2a9bbd88509ff50202cf9e7cc6acf6726321508f74b288c51a85",
+      "decompressed_sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/EXCLUDED_WALK_EVOLVED_BOOST_CONTROL_DRAFT.md.gz",
+      "sha256": "2604bc8457e8d02ed46d4a29b22c588e61ab3d664ac4a2812a5808266015337d",
+      "decompressed_sha256": "d89611986626dbabcf6f9f5c487733d2a520cb9249b7ed0b3a27be35874fd929"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/EXCLUDED_WALK_EVOLVED_BOOST_REVIEW.md.gz",
+      "sha256": "32665e268f21f2974dc4ec7cade6ff3ecabd18dd41640e9e71f8b9cbc72ffa1a",
+      "decompressed_sha256": "9cd540482c4cef79471530223dbbde93d36a6ba0aded1c99becf36a68ae263b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/ROOT_EXCLUDED_WALK_BOOST_CURRENT_REVIEW.md.gz",
+      "sha256": "2aa58b5a15955c744dc1a2cfe42fe0d3cd6a04be7acdb728c73ce4fb489517ae",
+      "decompressed_sha256": "c019d73e57462fd5e71ff3dc0552cc49fdcf02f604184e6c779ffc7e5dacd300"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_canonical_execution.json.gz",
+      "sha256": "e0e6dadc138ce358ceaf293f0db44da64d7bce1c1cb9715cbb83c09559f0594d",
+      "decompressed_sha256": "bc4bb627ee2e59edede87397ecb74dec3427d4b17efc23a78c59d6225d1ded63"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_citation_build.log.gz",
+      "sha256": "7967b0cc917803122dfea5252c70174646e345a37f024f098b2eb8369ca51fc4",
+      "decompressed_sha256": "e58f2939eeb171dd23c022755bfd0fab723cdfe2e6c7374ecb508bab988bcbed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current/axis_witness.log.gz",
+      "sha256": "7b6f1a56fcafc94b264bc1305fa88b5820bba2d5f39230276aabd0245ab83b78",
+      "decompressed_sha256": "eaa149d3f384946a576a3b6dc6d78ea9722a178ce4c86b6305c9f6a2c4e507f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current/axis_witness_control.py.gz",
+      "sha256": "f4a3ed45788790ea34015071c5c2581edd9c23ede15cf3ff4ee3228e60178ad2",
+      "decompressed_sha256": "2f09aefbd801fe28ba91ef514c759efb51c633005994d9a9658100326107c563"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current/checkpoint.json.gz",
+      "sha256": "fa4b1caf635d1d77e2bc2f3b91eb0d39ff153d55c2c431dc5caef94af9131050",
+      "decompressed_sha256": "4384e14c08450cf38b3c0f3d4f8904985a61708ddf38eafc0caf5a26d5bf41ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current/exact_controls.py.gz",
+      "sha256": "88d2e227db03a0020b645e6b080e6db032592b62e32f78d8e90ba3ede0ad5f0e",
+      "decompressed_sha256": "c6b2ec3789b768421d9b5cab9547edc27943c4f78403199c58975388f8e74af4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current/first_run.log.gz",
+      "sha256": "4884504f43ba8034915e72b16ca9fbee7a8a9378302f0d950344c1c3c894a789",
+      "decompressed_sha256": "31ba4ea1c54819d3801fecd96f7ea89d458c1bb6c5a6a370a217afd0748bd645"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current/receipt.json.gz",
+      "sha256": "10b64db6d30d804603445ce81e248bc7fceabbbf9934626ee0e859bf5213bd34",
+      "decompressed_sha256": "3b44ce3a7d58f35a973dadd42ee3dc495cc7a9d80a5347ef440ebe0e75646398"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/CHECKPOINT.md.gz",
+      "sha256": "230ce876331308c2776f1160bc03207bb2fe0142892b7509dcd76fe3567cdd96",
+      "decompressed_sha256": "b66f5fd900ca6d93ba19408f67a793612471d664eb0a2168ffc8f6137e1c7329"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/CHECKPOINT_before_mean_ergodic_route.md.gz",
+      "sha256": "8577d91cbfb2db76f1ac7742ecc8a693e51890ffa334c8176fff8bfc5ecdd475",
+      "decompressed_sha256": "b831bee56093bbaefff84f0eae71cba5475e253aa6884bc4b18e3f8abe45a938"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/FIXED_TAU_ROUTE_NOT_USED.md.gz",
+      "sha256": "b49a5c64b29dde61ef5e85dd3004bfdac97e11557e7fcdf490c0ffc63d2d7c69",
+      "decompressed_sha256": "1424f5a9c0671d858a08f293d4b4bae84859f76f40afa7a340e1050a65cd9b59"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/I0_amendment.json.gz",
+      "sha256": "a5e7be843132a1c1103d8e7fbe67cf16cea629e62d3fee98f7df08fab8f5a2f9",
+      "decompressed_sha256": "fd9fe16c48c0ecd91feda21a9ba80744ee73c3c5daab2a38c20eb5b41c0be6b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/MAIN_BEFORE_SELF_CONTAINED_I0.md.gz",
+      "sha256": "bd486ecd172cec4358ec2d617c24cc5bf6691b456e567d1c7d89991451254888",
+      "decompressed_sha256": "92891164e3eb9fb366d809e65be3a6864946cd16fcab30594b64e90faa62bb94"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/RECONSTRUCTION_MAP.md.gz",
+      "sha256": "3404dd829bab7ac4750d936fa44380671aa1190f834b6d7a45a42d696ad1102d",
+      "decompressed_sha256": "d513b08b71b4c82dbc29d1982bd1bd6ccba9814d44623a92883d46a77e505eed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/RECONSTRUCTION_MAP_before_I0.md.gz",
+      "sha256": "1fee035b736ab151602fea3fe02d0c0951b766a42ee345ea20447b424d143e58",
+      "decompressed_sha256": "391930b9c35e8f1e862c442fb44c8cd4e5c22b155f186f235b18a4e9397fa1b8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/baseline.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/baseline.stdout.log.gz",
+      "sha256": "f2fdf24282f9d5cb4d9f5b30955ab3e9d2c02e0ea86f10377513d8a385952bef",
+      "decompressed_sha256": "b4bf05fd5b71e1c4bd8d1bbdce5c697460deb03e56fabb294094e72adefb41e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/baseline_run.json.gz",
+      "sha256": "d538c6ce632b5080a6374da5ef2a8b18721f81722320e963b08cda60dc8fec8f",
+      "decompressed_sha256": "b6c6d00940899b916c544ce9b199a1d6afab381e44b4f96149fea12873a28d4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/bounded_search.json.gz",
+      "sha256": "a78c66ab49e55709cc3dec9815586f055213d47a42373f0c45280f6f6d24e17b",
+      "decompressed_sha256": "64b85af07fe965299918cdea086995d7d76380f5ce85c6f53923c5b2083272e5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/failure_omit_current_rank_terms.py.gz",
+      "sha256": "a3f92f98491e65fb20ed41c3b72c210f1448d8da6a2437595cef7b9d59299cf0",
+      "decompressed_sha256": "6bfa795e35f7dc72666e51e40ee92dcf89b475002db7c198849ea7f29a357568"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/failure_omit_source_clock_derivative.py.gz",
+      "sha256": "7460c778b132fc1e75211f7f0cbe2797286e757d9500e476b250eb1c1a4b6ab5",
+      "decompressed_sha256": "a816515afb27c489e6c7014a57ba3254b0da0bb119cd28af0d04a31e924ec4f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/failure_reverse_duhamel_sign.py.gz",
+      "sha256": "fd1e488943f4710402af12bd655ec07e6c5f2264ca411c43890e316114660cb9",
+      "decompressed_sha256": "ca4320067361ec4b6156587750a877a06d01222897595f3184518743d5323fed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/failure_runs.json.gz",
+      "sha256": "97b95df20d59edce2a00a190a0e9174fb252b7725c698c986ad2388e7142e74c",
+      "decompressed_sha256": "877b2ac6a68f6878516fc0e965f0b93d5f60c944248875c142ac7d478f9d3fdf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/freeze_validation.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/initial_sources.json.gz",
+      "sha256": "1881e7aecb1a0bf93d0eb1ef7227861c4e876cf32d0876b339e72b824a591c65",
+      "decompressed_sha256": "02fa0ddac3c58953ccc8bb07b46028936af491da098764160759512d63b7e1ed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/inverse_energy_controls.py.gz",
+      "sha256": "b93278571cb97c408fa75cfddb36dec2d4cb394db76edc6c820dcff586ac1526",
+      "decompressed_sha256": "6d78602b981cdc197be8531afbf905192e2651ddb26f24be4e25afccc752e02d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/kernel_bound.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/kernel_bound.stdout.log.gz",
+      "sha256": "81d852661dc6e70ec20f11de4c4be2607497d343a993af2ed1bf5e8edb0a67e3",
+      "decompressed_sha256": "1d1c8f3abb824c9416ba213a496742ed0b49aa0d16a2c1da9f8846c674bc6121"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/kernel_bound_control.py.gz",
+      "sha256": "7dae00d7c5dffe89835ad55b3bc6f5b628e26d0b2b1b653e84bee86aa946bf1b",
+      "decompressed_sha256": "6fe2a0b54e4cca013dacea54b70d83c46c4b9e77c31218973f24be7715e28dc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/kernel_bound_run.json.gz",
+      "sha256": "d3b7d260d539f5b9592b888563f107038ba78f45c394c190c6ed632cbfc88993",
+      "decompressed_sha256": "867715b11aa405166570b6857b9d1dfcd106e49a97e2dbf0fd0c41866ef3171c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/omit_current_rank_terms.stderr.log.gz",
+      "sha256": "fb485aba6fd5abc38f25f9cff245233110c97365a361dca6ef77b7e931999003",
+      "decompressed_sha256": "3b797b647e2dd837845a5a3e87d6de9a1cccc01d54686798a190b9b0e2b6a2a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/omit_current_rank_terms.stdout.log.gz",
+      "sha256": "f33392058a8a02153e483ef10c14a9b3b21d9af6a5415fff025c3f09ebf255e0",
+      "decompressed_sha256": "bcbc19679b3b5dd6df77286650cd5674df9c51ab4da39cc4dd79a3bcd2b58743"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/omit_source_clock_derivative.stderr.log.gz",
+      "sha256": "e4a068ffb53b83635444bdca3d80bf30f676e8d5d3330a72d63b3cbf3d41d5e2",
+      "decompressed_sha256": "c0db6897f84e46cdd728bed3113d76a058dd99584b4227e0071f006f9a52beb3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/omit_source_clock_derivative.stdout.log.gz",
+      "sha256": "cf2e8df3f83dfd9c9a519d43f307764f1747492db37f8c7a1e634f0344ff63b9",
+      "decompressed_sha256": "8099cb24212928301ad91b90b296ea1bce6b93376d7ebfb74036c973ab248865"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/receipt.json.gz",
+      "sha256": "2706124cdc4f76a9428703fdf33c8501bccc8b53b6ec6a666950e6e33bfae800",
+      "decompressed_sha256": "0c555b37791acd590c8a8b9686ebd2697873fcffd273eb67d6ed0d8e4b9ec715"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/receipt_validation.json.gz",
+      "sha256": "fa56f1c00ddaee7676e0de24ed08363912ebc27cfa251b8d3a7d822c20282566",
+      "decompressed_sha256": "d070769bc132aab2ceacc2b2d1996e3509b6fabbe89b45fcf4b3fa2eccae7181"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/reverse_duhamel_sign.stderr.log.gz",
+      "sha256": "4199ffd61ee97bfcc6041fa7980586d1c6b3092b3dc8059788ff828d4d30ce47",
+      "decompressed_sha256": "4b3b002bb02a87365a1d6e1ec030953b529836fe6a31235b1d6cff751966ebaa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/reverse_duhamel_sign.stdout.log.gz",
+      "sha256": "9cc71d1ed04e620ed8bc0d947705c4b70540bce85919710b2e1d6222b837d5d4",
+      "decompressed_sha256": "b5a0a53f91e443aede2c2ffd62d7f551164388f033efb3bb6c287f202324c7dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/runtime_identity.json.gz",
+      "sha256": "efcc62939a7013884f8dccaa46a924b6ad8b9dba8d1b50eca0a2dbf21bb8187b",
+      "decompressed_sha256": "1e3b706b01c698f5cdbbea445772fd4749a72993f5a7043fe81c5a6a66b438dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/scope_wording_scan.json.gz",
+      "sha256": "41ab27c852eb43775c97280f91c927ccdf2e7cd1acfd53993db8b58d332b350c",
+      "decompressed_sha256": "0e65c67fb646413637dcb6ee11297ddb7671341ab38bf962249dd959e998ff58"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/scope_wording_scan_before_I0.json.gz",
+      "sha256": "0f7110e0aaac2ba3c20f67180f9a885c9ecaec5b49d81a1c98195535d0417a37",
+      "decompressed_sha256": "c05c070e7f8a1ce85d0c12d4214345be4445e6a392bc794b38cb7e108b4f8f3e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/source_preservation.json.gz",
+      "sha256": "ada686e33f048d8f3f21627af2a3a62a43aca9541e7d1be9261d3b4191aca54b",
+      "decompressed_sha256": "bf49c902d3b86eb3ef2f4df24d629c4ef858b198db3b1e741792bb0d2a2c62df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/sources/PUBLISHED_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md.gz",
+      "sha256": "fc4be0e2e2fcd131e3110ab52cfed446e6214aa8abff6071b4b985359c6ea5f4",
+      "decompressed_sha256": "3954606703f9a66665fb1ee9a27079f7f14e5183f28a8511a38743ef5d455aa1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_inverse_energy/verify_receipt.py.gz",
+      "sha256": "bb721d3953805b88c953b7a93d6d19ea398df8f0f555d681dc1765d694dddc6d",
+      "decompressed_sha256": "4cf230c6563b0afa0db56caea1ae36ea1f6b0d8575d2d023d667e8acda1f01c7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_root_review/abstract_compression_control.log.gz",
+      "sha256": "f61d9dd5d2f97eee8afc542b1675a2489ff8aebd4dc535dd3d80095cbddd08e2",
+      "decompressed_sha256": "cf9445535c2917e0933ede3e3a5e68f70304ffecb61c19b300e5b02a8afb49c6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_root_review/abstract_compression_control.py.gz",
+      "sha256": "8aa76ab4b795a4a9742feae7ce883f8285efa7b879e7529f549c8bda42d82098",
+      "decompressed_sha256": "3787ea016df1f17d7a471b1eb3151b3130aa3f9d5cbdefe07217df1a556f8250"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_root_review/execution.json.gz",
+      "sha256": "d18807423e2a39aeb369c99069e86a29135f9c790921aa5102311bcaa1de41c0",
+      "decompressed_sha256": "c3fee4dc94b81d36ae048d15823b6832e3f89bcb9cdd2d71e790a5af15cd1a60"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_current_root_review/receipt.json.gz",
+      "sha256": "66225f5602bffd86a28fb433b503f313301d7b46f1167c32a08522b9f25e4835",
+      "decompressed_sha256": "4c07fbd1f46b31d547a0d9f1892fd8a3bcd91613a856bd641c4b107d06118ce2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_delivery_mechanical.json.gz",
+      "sha256": "435579fc805bbdcd3ad08a5b0ea0abe5bc83fd221e7189a83bbbb8361f71bb23",
+      "decompressed_sha256": "b575c73811849a8293437551f4bb6c8b1e52f24a59eb281f0d96736535acc354"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_final_reconstruction.log.gz",
+      "sha256": "823f315d1eb384bbeb2dabf6b37c163e8522d7f5cb4b4ff82a6c32cfdbbf4ca3",
+      "decompressed_sha256": "4bcd015e8293ba09183950194f21f48e5b6b41e99e14f8f3201641df1b24895d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_final_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_final_vocab_fix.log.gz",
+      "sha256": "138bbc9c86c1ca07a0b3f44cc85e33e71b8df92d39131eaaa42dd1a90e2a5861",
+      "decompressed_sha256": "417162364adda20f651d0519b8db55b71b7395e04b7b678dc75c0be607c273da"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_final_vocab_report-only.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_final_vocab_report-only.log.gz",
+      "sha256": "729d975b831a4a92b3b0a3bf575ab50b1ba0d07ddfbf347fa8591b053c860452",
+      "decompressed_sha256": "9810a65539076ad74b6ca19ec84ea321880069a281d2373ddc57c000af392047"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_finalize_whitespace.py.gz",
+      "sha256": "d480224ee061e8d91c81672a4d4d5deb90193f74e0fb9f3a0d3dc0fec09c96e4",
+      "decompressed_sha256": "e4c0239f3d12655730a4ba28e1ff8e683949f612d62c767fe58b7cccfb4c3b37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_focused_audit_compat.json.gz",
+      "sha256": "8f1450cac9413792cb92f8b96cd474b4313bf59f6ed05503b8ceefc0f1a0ec26",
+      "decompressed_sha256": "7bc20080e9aa505e021fb03ed7bf2b57d57e8de37f9f7ff151e37e37420db841"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/CHECKPOINT.md.gz",
+      "sha256": "0ce2e799710d15a30e5c43be2632fd82e384bd196bcd31b0185b8c8dc8fcae27",
+      "decompressed_sha256": "fdf3d77fbf29990e25be986b536fa8ecd22e33d469d2e853e0440f34cdee1867"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/FINAL_FREEZE.json.gz",
+      "sha256": "f30db9f189489be5b514c98bfcef153b8def13dd00d0ea6cfc44880ddd31c402",
+      "decompressed_sha256": "aeab7c06981a7b87e13b1b3e5daba7aab32073ec2e25e35c638f2531bbbaa8f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/I0_amendment.diff.gz",
+      "sha256": "2451406f5d393e6df38f885a1e5664c0b0011c1cf4af7e3484af9e345534a055",
+      "decompressed_sha256": "5708af19376ee9606f818325f0d8106d8e73c80e6ef4d10d33ca1c57eaca38f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/PROOF_RECONSTRUCTION.md.gz",
+      "sha256": "34021bb0005dfc378682def87ebaab4112bc2f8d06c0e313a54d19869503e5ef",
+      "decompressed_sha256": "c0a06917dc1f24207d85656781e250104c81dd613a9a937a140088149bf2f131"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/evidence_verification.json.gz",
+      "sha256": "246dc9a555259e12ddcb605b8012e93e327ee96ef7ee1da8345c04d59bfedf3f",
+      "decompressed_sha256": "eb68b5ae3707f59ddd67236fb43fe2a5b3371556df9d2753ffc4a349caba1d0c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/evidence_verification.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/evidence_verification.stdout.log.gz",
+      "sha256": "f3b0fa67118f9cc15dd38796ca77e8b27b5dc3375a66060bc4ad767c40b58d69",
+      "decompressed_sha256": "30c3ebfba8d6dd399b43b0f75ce1aee017a0c254fe5d014f9ed8a592d828b91d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/evidence_verification_run.json.gz",
+      "sha256": "ef2b4b326fb4d8f93c13279fce36297b27c4a2a9807f23282b29ac0aecbc2488",
+      "decompressed_sha256": "930405583940bca939b5ce3462cbf04c2a9ad9df44f9afd100b5fbab9e4d6dc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/final_verification.json.gz",
+      "sha256": "4538f73bd6731aefe4a6851866509c328c7e6a3a973d606d201cd5899ebdd093",
+      "decompressed_sha256": "5da8043a694a3eaf9c6874af1da7e8111adc997339920aa9f2e4f4b0e13383db"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/CHECKPOINT.md.gz",
+      "sha256": "230ce876331308c2776f1160bc03207bb2fe0142892b7509dcd76fe3567cdd96",
+      "decompressed_sha256": "b66f5fd900ca6d93ba19408f67a793612471d664eb0a2168ffc8f6137e1c7329"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/CHECKPOINT_before_mean_ergodic_route.md.gz",
+      "sha256": "8577d91cbfb2db76f1ac7742ecc8a693e51890ffa334c8176fff8bfc5ecdd475",
+      "decompressed_sha256": "b831bee56093bbaefff84f0eae71cba5475e253aa6884bc4b18e3f8abe45a938"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/FIXED_TAU_ROUTE_NOT_USED.md.gz",
+      "sha256": "b49a5c64b29dde61ef5e85dd3004bfdac97e11557e7fcdf490c0ffc63d2d7c69",
+      "decompressed_sha256": "1424f5a9c0671d858a08f293d4b4bae84859f76f40afa7a340e1050a65cd9b59"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/I0_amendment.json.gz",
+      "sha256": "a5e7be843132a1c1103d8e7fbe67cf16cea629e62d3fee98f7df08fab8f5a2f9",
+      "decompressed_sha256": "fd9fe16c48c0ecd91feda21a9ba80744ee73c3c5daab2a38c20eb5b41c0be6b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/MAIN_BEFORE_SELF_CONTAINED_I0.md.gz",
+      "sha256": "bd486ecd172cec4358ec2d617c24cc5bf6691b456e567d1c7d89991451254888",
+      "decompressed_sha256": "92891164e3eb9fb366d809e65be3a6864946cd16fcab30594b64e90faa62bb94"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/RECONSTRUCTION_MAP.md.gz",
+      "sha256": "3404dd829bab7ac4750d936fa44380671aa1190f834b6d7a45a42d696ad1102d",
+      "decompressed_sha256": "d513b08b71b4c82dbc29d1982bd1bd6ccba9814d44623a92883d46a77e505eed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/RECONSTRUCTION_MAP_before_I0.md.gz",
+      "sha256": "1fee035b736ab151602fea3fe02d0c0951b766a42ee345ea20447b424d143e58",
+      "decompressed_sha256": "391930b9c35e8f1e862c442fb44c8cd4e5c22b155f186f235b18a4e9397fa1b8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/baseline.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/baseline.stdout.log.gz",
+      "sha256": "f2fdf24282f9d5cb4d9f5b30955ab3e9d2c02e0ea86f10377513d8a385952bef",
+      "decompressed_sha256": "b4bf05fd5b71e1c4bd8d1bbdce5c697460deb03e56fabb294094e72adefb41e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/baseline_run.json.gz",
+      "sha256": "d538c6ce632b5080a6374da5ef2a8b18721f81722320e963b08cda60dc8fec8f",
+      "decompressed_sha256": "b6c6d00940899b916c544ce9b199a1d6afab381e44b4f96149fea12873a28d4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/bounded_search.json.gz",
+      "sha256": "a78c66ab49e55709cc3dec9815586f055213d47a42373f0c45280f6f6d24e17b",
+      "decompressed_sha256": "64b85af07fe965299918cdea086995d7d76380f5ce85c6f53923c5b2083272e5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/failure_omit_current_rank_terms.py.gz",
+      "sha256": "a3f92f98491e65fb20ed41c3b72c210f1448d8da6a2437595cef7b9d59299cf0",
+      "decompressed_sha256": "6bfa795e35f7dc72666e51e40ee92dcf89b475002db7c198849ea7f29a357568"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/failure_omit_source_clock_derivative.py.gz",
+      "sha256": "7460c778b132fc1e75211f7f0cbe2797286e757d9500e476b250eb1c1a4b6ab5",
+      "decompressed_sha256": "a816515afb27c489e6c7014a57ba3254b0da0bb119cd28af0d04a31e924ec4f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/failure_reverse_duhamel_sign.py.gz",
+      "sha256": "fd1e488943f4710402af12bd655ec07e6c5f2264ca411c43890e316114660cb9",
+      "decompressed_sha256": "ca4320067361ec4b6156587750a877a06d01222897595f3184518743d5323fed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/failure_runs.json.gz",
+      "sha256": "97b95df20d59edce2a00a190a0e9174fb252b7725c698c986ad2388e7142e74c",
+      "decompressed_sha256": "877b2ac6a68f6878516fc0e965f0b93d5f60c944248875c142ac7d478f9d3fdf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/initial_sources.json.gz",
+      "sha256": "1881e7aecb1a0bf93d0eb1ef7227861c4e876cf32d0876b339e72b824a591c65",
+      "decompressed_sha256": "02fa0ddac3c58953ccc8bb07b46028936af491da098764160759512d63b7e1ed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/inverse_energy_controls.py.gz",
+      "sha256": "b93278571cb97c408fa75cfddb36dec2d4cb394db76edc6c820dcff586ac1526",
+      "decompressed_sha256": "6d78602b981cdc197be8531afbf905192e2651ddb26f24be4e25afccc752e02d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/kernel_bound.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/kernel_bound.stdout.log.gz",
+      "sha256": "81d852661dc6e70ec20f11de4c4be2607497d343a993af2ed1bf5e8edb0a67e3",
+      "decompressed_sha256": "1d1c8f3abb824c9416ba213a496742ed0b49aa0d16a2c1da9f8846c674bc6121"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/kernel_bound_control.py.gz",
+      "sha256": "7dae00d7c5dffe89835ad55b3bc6f5b628e26d0b2b1b653e84bee86aa946bf1b",
+      "decompressed_sha256": "6fe2a0b54e4cca013dacea54b70d83c46c4b9e77c31218973f24be7715e28dc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/kernel_bound_run.json.gz",
+      "sha256": "d3b7d260d539f5b9592b888563f107038ba78f45c394c190c6ed632cbfc88993",
+      "decompressed_sha256": "867715b11aa405166570b6857b9d1dfcd106e49a97e2dbf0fd0c41866ef3171c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/omit_current_rank_terms.stderr.log.gz",
+      "sha256": "fb485aba6fd5abc38f25f9cff245233110c97365a361dca6ef77b7e931999003",
+      "decompressed_sha256": "3b797b647e2dd837845a5a3e87d6de9a1cccc01d54686798a190b9b0e2b6a2a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/omit_current_rank_terms.stdout.log.gz",
+      "sha256": "f33392058a8a02153e483ef10c14a9b3b21d9af6a5415fff025c3f09ebf255e0",
+      "decompressed_sha256": "bcbc19679b3b5dd6df77286650cd5674df9c51ab4da39cc4dd79a3bcd2b58743"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/omit_source_clock_derivative.stderr.log.gz",
+      "sha256": "e4a068ffb53b83635444bdca3d80bf30f676e8d5d3330a72d63b3cbf3d41d5e2",
+      "decompressed_sha256": "c0db6897f84e46cdd728bed3113d76a058dd99584b4227e0071f006f9a52beb3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/omit_source_clock_derivative.stdout.log.gz",
+      "sha256": "cf2e8df3f83dfd9c9a519d43f307764f1747492db37f8c7a1e634f0344ff63b9",
+      "decompressed_sha256": "8099cb24212928301ad91b90b296ea1bce6b93376d7ebfb74036c973ab248865"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/receipt.json.gz",
+      "sha256": "2706124cdc4f76a9428703fdf33c8501bccc8b53b6ec6a666950e6e33bfae800",
+      "decompressed_sha256": "0c555b37791acd590c8a8b9686ebd2697873fcffd273eb67d6ed0d8e4b9ec715"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/reverse_duhamel_sign.stderr.log.gz",
+      "sha256": "4199ffd61ee97bfcc6041fa7980586d1c6b3092b3dc8059788ff828d4d30ce47",
+      "decompressed_sha256": "4b3b002bb02a87365a1d6e1ec030953b529836fe6a31235b1d6cff751966ebaa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/reverse_duhamel_sign.stdout.log.gz",
+      "sha256": "9cc71d1ed04e620ed8bc0d947705c4b70540bce85919710b2e1d6222b837d5d4",
+      "decompressed_sha256": "b5a0a53f91e443aede2c2ffd62d7f551164388f033efb3bb6c287f202324c7dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/runtime_identity.json.gz",
+      "sha256": "efcc62939a7013884f8dccaa46a924b6ad8b9dba8d1b50eca0a2dbf21bb8187b",
+      "decompressed_sha256": "1e3b706b01c698f5cdbbea445772fd4749a72993f5a7043fe81c5a6a66b438dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/scope_wording_scan.json.gz",
+      "sha256": "41ab27c852eb43775c97280f91c927ccdf2e7cd1acfd53993db8b58d332b350c",
+      "decompressed_sha256": "0e65c67fb646413637dcb6ee11297ddb7671341ab38bf962249dd959e998ff58"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/scope_wording_scan_before_I0.json.gz",
+      "sha256": "0f7110e0aaac2ba3c20f67180f9a885c9ecaec5b49d81a1c98195535d0417a37",
+      "decompressed_sha256": "c05c070e7f8a1ce85d0c12d4214345be4445e6a392bc794b38cb7e108b4f8f3e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/source_preservation.json.gz",
+      "sha256": "ada686e33f048d8f3f21627af2a3a62a43aca9541e7d1be9261d3b4191aca54b",
+      "decompressed_sha256": "bf49c902d3b86eb3ef2f4df24d629c4ef858b198db3b1e741792bb0d2a2c62df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/sources/PUBLISHED_MEMORY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md.gz",
+      "sha256": "fc4be0e2e2fcd131e3110ab52cfed446e6214aa8abff6071b4b985359c6ea5f4",
+      "decompressed_sha256": "3954606703f9a66665fb1ee9a27079f7f14e5183f28a8511a38743ef5d455aa1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence/verify_receipt.py.gz",
+      "sha256": "bb721d3953805b88c953b7a93d6d19ea398df8f0f555d681dc1765d694dddc6d",
+      "decompressed_sha256": "4cf230c6563b0afa0db56caea1ae36ea1f6b0d8575d2d023d667e8acda1f01c7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_author_evidence_manifest.json.gz",
+      "sha256": "2816f3f38345260b03f80fcccb06184367f2fdab04a0d87b92b788ec757e3cb1",
+      "decompressed_sha256": "ea3dbbc425fd54849ef6d751de58a98529e246fc41ea686bbd51e6c63ef76357"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_inputs/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md.gz",
+      "sha256": "47a14d45d34448b823d882481188f906b3a9cf927c5cc9c8cf694cd969158a54",
+      "decompressed_sha256": "76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_inputs/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "sha256": "9986acb976ebecfbbd4d7b9d7b08f5a31015bb45b9244ca84478757468f963a1",
+      "decompressed_sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_inputs/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md.gz",
+      "sha256": "23ddb16b30de2a9bbd88509ff50202cf9e7cc6acf6726321508f74b288c51a85",
+      "decompressed_sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/frozen_inputs/EXCLUDED_WALK_EVOLVED_BOOST_CONTROL_DRAFT.md.gz",
+      "sha256": "2604bc8457e8d02ed46d4a29b22c588e61ab3d664ac4a2812a5808266015337d",
+      "decompressed_sha256": "d89611986626dbabcf6f9f5c487733d2a520cb9249b7ed0b3a27be35874fd929"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/mutant_source_diffs.txt.gz",
+      "sha256": "0733f76435aed341deb9f7e1aefd84f7feedfe668f56443b18297c96a52d5ac3",
+      "decompressed_sha256": "2f39633a8573204691541184985653406e5f061514f2290d8ccfffb4dcc05e6c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/operational_failures.json.gz",
+      "sha256": "34c5a645e68f9b504603be7da6d9a8964ca9e28494cd23bf7bbc001bd611f95c",
+      "decompressed_sha256": "90e7bc2aa76624f2273d585a3185df9cdc34778e073ea82840e54245d2746a7c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/pre_author_evidence_stage.json.gz",
+      "sha256": "cd87ed06287978a434c143816884df97ed4404bf14c41e734c8e72ad1898f49c",
+      "decompressed_sha256": "33219e134cf8ad48f81c13e8391b80bff67b37edc898bed7f5399cf217a3625b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/receipt.json.gz",
+      "sha256": "cb2f6ba3f96ec0dcb4097fd7acc17bb2c1269fa41e0cb012d8d4ada27f5dddab",
+      "decompressed_sha256": "9d32136c2f57a076dacec228ea4ecf1097782093f3f46830d48d3bed24aaaac0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/source_manifest.json.gz",
+      "sha256": "8be70955a5dc2abd93efd418ba1f6c683c50dd2fbaec5704cbcda0f341ca0a54",
+      "decompressed_sha256": "6a5c907981406c66f96ba663c59bfe9beb3ab3888f8d26f59541acbe7605a9c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review/verify_evidence.py.gz",
+      "sha256": "7997320ac8d9f5fb4072bc4210e439b73989e3c6b0e60d4ef0a0f5142e5db6f8",
+      "decompressed_sha256": "17ce2556f985b41661782cf916911249640a9c6974ab95907ee9e7990d22382d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_review_root_identity_check.json.gz",
+      "sha256": "a2865763d1ff542d46b58f1641d5abfdcc31c3a38bfba11c3aec968af2e27d6a",
+      "decompressed_sha256": "dfb4116484f462bfd941d533790de5e25a5039381acfe09b64a61403f0622af0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_inverse_energy_root_source_validation.json.gz",
+      "sha256": "7711eaf4a789757a8e6a552a3c950aa5dfcc4459172c5dc9a3598de6d9a15c59",
+      "decompressed_sha256": "09a80d42983510ad43c3e1425a4d5f90a27ec6c6f289d0efbebe4b6fc2f8289e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/axis_second_moment.py.gz",
+      "sha256": "3fb15cdace2d1b401b188b10bbc3d9e4114aa66b76d6b5aa28d8ef1bb9cf86c2",
+      "decompressed_sha256": "d272d3efb5bdbdff3c16eecd9d617b1e26fcaf92659854ca3ffb37ba285a5d66"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/axis_second_moment.stderr.log.gz",
+      "sha256": "8cbd8c00826154b1e7dbc84c9357ec297c52ef0b27f9da6ae9d686cc62a20352",
+      "decompressed_sha256": "49c1a38f889835b3d4a167269ff11560e8fc3470e0b16417dadcf86a1bbdd3fb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/axis_second_moment.stdout.log.gz",
+      "sha256": "3fecb7690eeaf5cc13c2d065b493bee408071df1a07fa3b5e465c0941b059fb3",
+      "decompressed_sha256": "d63a78f13a5cb6416b520b71530a76f51e2cbcf4781269a81921d52adb6045e5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/canonical_contact_sign.py.gz",
+      "sha256": "4f4ae4d601d9a198b2bc3392bedb8189c26d0be4c0a66dc864f1553b07d54253",
+      "decompressed_sha256": "b4d0edc2c4c2dd0db5b7f8ad286b45817615cf83300d3513d844c3a567f2386c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/canonical_contact_sign.stderr.log.gz",
+      "sha256": "c7c74be3d153fb95fb7df990695b82c3132d0a3a20893fe46886fbd5029baea9",
+      "decompressed_sha256": "c24a84e2288887552f8cdb01c0c765e88751df9794471d55f3a97c732afad414"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/canonical_contact_sign.stdout.log.gz",
+      "sha256": "8b7837062cf20810b786cc54bd7cffe478f33af0deebac153183b40f37e8bdb5",
+      "decompressed_sha256": "33502429769973521ad4ab18c3526d2e7718aadf61016df94b9203fd39db0e60"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/current_constant_contact_sign.py.gz",
+      "sha256": "2ff99cb225b210148438f6c763202d7aebc789bca2af1529c258318b26c5d932",
+      "decompressed_sha256": "c779b71ac752dbaad6edc114f3e6f8c14ed6e260c6237bea0189e9f8f84af1d3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/current_constant_contact_sign.stderr.log.gz",
+      "sha256": "510b939486afca4f9677e67a11d764acac61ff91113230b042b7c24bfa6e4cf9",
+      "decompressed_sha256": "ba9bd099b7742b02060a22c91b989ceb124c897c1caf8f0927e24b5a3f71f54d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/current_constant_contact_sign.stdout.log.gz",
+      "sha256": "18e611235c51035edf794ac698f6ffe3b120b0314cb9e4963a1431728308770a",
+      "decompressed_sha256": "c8743c9f61fe63ea6e52d37cf98f3163562f042a57d7d5b2e190556f78bd3c14"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/folded_corner_count.py.gz",
+      "sha256": "8de9463f28b1c72955798ff00511f4f14b580df82b42c325ad93e20d1b8dc8e7",
+      "decompressed_sha256": "ad02dbfc232e067fb89d3f95527be75d471a9ba17c536cff9094fa39eeefcc88"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/folded_corner_count.stderr.log.gz",
+      "sha256": "fe6c1d6be65263c264c701fc2219cf2f3708cfb2b5d542a11282a7b0f105dd56",
+      "decompressed_sha256": "656e03f1e737a840caf250807576a3c692d0f81abc22ba818cfd0e55ecddeade"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/folded_corner_count.stdout.log.gz",
+      "sha256": "7b05ce52d3b1b9ddb9fbad8e4a8b8d4dbab60b4bf03f8ad0f1b32a5c61a93524",
+      "decompressed_sha256": "90df5405004cc6260984dc1715a61ab720cd5d2e53e5ce4a03033eeaa59dd95c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/inverse_current_rank.py.gz",
+      "sha256": "9cc7c05c44f60e67fc873f555ef7803f6ef223b7868eb91e9a1b9cfd28009253",
+      "decompressed_sha256": "44b9c2b7f49b7fe9c189c82828bc683189bef0b5b4c3fb99ce5837f2dd266bb3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/inverse_current_rank.stderr.log.gz",
+      "sha256": "5625aa8eeef1a4284db7693798fbae9106a98d8ca384686e7f5984bd7cfa39de",
+      "decompressed_sha256": "d8f629c72848e106f9e45d5ffc301240b53d14773b90517b11073ba672dfd78e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/inverse_current_rank.stdout.log.gz",
+      "sha256": "fab07e1b3685f506b447a1b3976a10b870f2a009e04d4c2851949289bdbc3dcc",
+      "decompressed_sha256": "1b5432bc4f56d735cca8d21d4afc5737e8b3d44d9504df07edd49c5f15234fef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/inverse_duhamel_sign.py.gz",
+      "sha256": "be88b8d5a427b93d515e4b448c8de476cc4a8a00e9b460a6a01142c1d8b53e99",
+      "decompressed_sha256": "be0fd38f4e34ccad2fcfe33c32660854b7f69c11fc68747bf17daaa3b3c3a856"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/inverse_duhamel_sign.stderr.log.gz",
+      "sha256": "a5af1d139dafdfaa53efcea426bfdbfa6e677741ea3f46087b99a3dddb8dc1e8",
+      "decompressed_sha256": "9a5447dde223d3a83d90a4a4b666bcbe51e45109a593c94f29f5bbb1a03b044b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/inverse_duhamel_sign.stdout.log.gz",
+      "sha256": "57923c47a9ddc95a8bf7ce644a52894ae398f740eba1c88e57f33bac3791d554",
+      "decompressed_sha256": "f3a8e111c695d355321b70279803ec78d5a7b6338f6bb6fe6033017fe6fb12ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/inverse_phase_derivative.py.gz",
+      "sha256": "fafa8bc1cb0d7f7baa6408330da03d342b80fac340f2132616c21a561e2acb45",
+      "decompressed_sha256": "e0627597af958e0aecd5ac7012ddb5d3b859ab15b5cccb33bd3f0c9df9b1f011"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/inverse_phase_derivative.stderr.log.gz",
+      "sha256": "dfd3d57aec0997c8d49968d959b6bafb1b79b66f41478293202e1d8e0c102947",
+      "decompressed_sha256": "3ea42a9a6a624705d0ee6517c5f43ae319f3bf944eee313f8e0e7386987e990f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/inverse_phase_derivative.stdout.log.gz",
+      "sha256": "3858bb118701b1479a5ca6145a62cb8df0f5604d15c28d08475bad46e172c80e",
+      "decompressed_sha256": "b62b23a43d27126b63b354b4498576ba6ada0b3578c62c5ccde08caa87b234f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/manifest.json.gz",
+      "sha256": "48847a8496ca611f7cdfd628854a9673c7cee3ca7671b1dc81f85f5cf3462b38",
+      "decompressed_sha256": "187618e45775b620e186ada65f2dd63fae05ed4a3a91e147798d8abb69c98ba9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/omit_current_differential.py.gz",
+      "sha256": "758a9bd88e3279445b7b763d9823aa77fcca9d520b7a8782e2c93e4c19d436bc",
+      "decompressed_sha256": "ddd883685306d08d168542efcb848822a9a8477fa332a6283acb2330650d8f51"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/omit_current_differential.stderr.log.gz",
+      "sha256": "c4ed4685d3ce4e3d602e1fbe539ab4b922619813b2ef39393736caead2cf3b8a",
+      "decompressed_sha256": "5f7f17942a6afdc709c487edd21e3286409fac4b632c528620964bc60eeacb4d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/omit_current_differential.stdout.log.gz",
+      "sha256": "5279563a759e1af50392c6181114efc3072516d902bc872ccd637f28ff6ca122",
+      "decompressed_sha256": "9e543ea0098c1a7f32148f805a2aea42ae487d5dfb17b6a053564fe8c600bea8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/packet_jacobian.py.gz",
+      "sha256": "6ecb09517521837be87c5c281ee2d617257d20d41ed53e1c937570e221c0df65",
+      "decompressed_sha256": "7e640079fc717e75e68ea641e6f4a8b60b009f2fe840b2a6825449834acf517e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/packet_jacobian.stderr.log.gz",
+      "sha256": "08d3df9bdcb658964d6637439cb95ad02a6d3d265caadf1fc78bf8aa6176bb3b",
+      "decompressed_sha256": "e396e838fb9e91e24ad471dc7912eef06742330b9b9266b710a98d5a3873d6d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/packet_jacobian.stdout.log.gz",
+      "sha256": "c4804f84a2b6f58c25834230132bfe47176aff073bf15bbcef3bc4ddad8f4a6a",
+      "decompressed_sha256": "c1c031c2de3a817ac9ee940b875670b5a3b61bba1f0cd359a839246dbf03a7f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/rotation_constant_budget.py.gz",
+      "sha256": "cfd43b6ad4a0f5d08b6b47bd0bee483facbeeb6f5558898ff7c1295379a45e5e",
+      "decompressed_sha256": "dd2f3c5ac9dcd67e90024e499551c6a8751b2cdc768d0589c7508621f0bbf402"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/rotation_constant_budget.stderr.log.gz",
+      "sha256": "c25f8e37e88c396334d2e9a630111ccdb8fd1218cb37c4698ab022ca666b9b22",
+      "decompressed_sha256": "a489d81ffbb8805c307c94acdd353738957c3708289f8c52ee634d81b8f53f8b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/rotation_constant_budget.stdout.log.gz",
+      "sha256": "10b1982dbf3c3ce515c78d277b0a11d2b8d5fc010be34d638c97cc91743355be",
+      "decompressed_sha256": "fd216ed0b600079d757129fb747584af10245d251ca01a6e4087bbc2999ca25c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/rotation_contact_sign.py.gz",
+      "sha256": "b1a172b9839370a7195aac00c61410fc91ede19dea166f440fe766ab9f073378",
+      "decompressed_sha256": "29d0241147c37f297907e1f585f89ca7c029ddab79e37c2fc9f424687de58b70"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/rotation_contact_sign.stderr.log.gz",
+      "sha256": "cc24bc6746099d0af0f45ba9e2d89deb661be0b1f599b9921aabfb81e32e9035",
+      "decompressed_sha256": "e6becb63031df2e1c0fba193a9541a9b8f7d188e39636f5d6a74a327f8377d0a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/rotation_contact_sign.stdout.log.gz",
+      "sha256": "5ac51e9cf05dbc38cd5286f705b5b9b7dd101117a46c5127786dbbc90e29e126",
+      "decompressed_sha256": "a8bc720b6c065a12372e0b828a782e226daa9a9303c6b4aad5110ef886685678"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/rotation_spin_weight.py.gz",
+      "sha256": "ab080dd2c8b34f82e7ee88df54c2ecf2d3c724a165fc74590def17d3e9a6362a",
+      "decompressed_sha256": "e47f84b88e420bba86653252eaaab95769e7b0e5bcdb268a1d287505f0bc1898"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/rotation_spin_weight.stderr.log.gz",
+      "sha256": "6242955247fcdeb30449b66410a848fa9e75ee76ba41a602d9f44a3a9f2bdd61",
+      "decompressed_sha256": "f75336c5c8217a94f550e207104c71bfc470498028576be40dca86272413caf3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations/rotation_spin_weight.stdout.log.gz",
+      "sha256": "87a9eea4afb7c85077b4581a02311aef74c3144f83d57e98bcffb5b1707ca953",
+      "decompressed_sha256": "f6064ee72c7a21a66aac068e8875eeb9cbb6d1c761900506976223f9fe1c274a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_primary_mutations_driver.log.gz",
+      "sha256": "a9938c15ff81286538f44a80898656392351778b6dfce3e7f83a81f951b2fe3c",
+      "decompressed_sha256": "802d8490a02761b91c17d7a19a6ebbdeac194eb2df3bfbdbaa0d9f89648a5eea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/AUTHOR_COMPLETION.md.gz",
+      "sha256": "decff7d563fb4c3c526e06a237831e88e2f2e97bf9052a8439568982d074a1b5",
+      "decompressed_sha256": "a2283622d3ab76bb3f8c1613e83121168667f1bd0fabb76ab336f76e6ce4b484"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/checkpoint.json.gz",
+      "sha256": "ba80207d00b9f8503f07238b58751f04c1667da31b628719fbbe829c19127263",
+      "decompressed_sha256": "de37f9546e202cbfdea230139b7af06c579483f78a4d69fd7c15c73a9be67c87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/exact_rotation_controls.py.gz",
+      "sha256": "b21375e3601b7a2990547b107174f8fcb2807db4518a167df91487c4c5c6792a",
+      "decompressed_sha256": "434b2cb6fb520f06d2a0de2c4287910880e0c0b0a31a335b8dedd9f1efea7959"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/execution.json.gz",
+      "sha256": "6c1457e66ed2b07926f1b6ca149b9de1434605dfe57860d8fd5c440e112e0131",
+      "decompressed_sha256": "d81dfd867d6ea26c5ce50ed0203935c431d6a509d2be54e4c5c69a92785d9f4c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/first_run.log.gz",
+      "sha256": "aee6fa411f9123d61fea6f31ef7fb7941e4cf762b3d66dfbb328519a88f7a42d",
+      "decompressed_sha256": "95ee24b704f07a711b61950c4b3cc0b7dbabd95f677880ca17bb43ac838e96cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/free_boost_note.md.gz",
+      "sha256": "578e663eae1e5119b0a905be9eb1fab7ad688adcc3f8beec49905c768ab00abc",
+      "decompressed_sha256": "18f54c738dfdc404004fe5bc091509f56e3afb5fea2143510d66b42645ff01df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/free_dirac_note.md.gz",
+      "sha256": "4265d724c3e77189d45769591b092fc6e5afd3ff630576db515bf13cfad05027",
+      "decompressed_sha256": "b976f0efbab87757795891b268b9c06d1d1cd2125b4698cba72fe8665fcfe3c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/freeze_verification.json.gz",
+      "sha256": "d96995df1c17448130dde6bea1751abb1ab7673828becfa28d2ea52b9f04a8e1",
+      "decompressed_sha256": "25fd5afd33425324aaa58ddb72238290e8849ecdb14b8ce0fed8df6c31510049"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/prior_art_search.log.gz",
+      "sha256": "299f5d6d50d4f2d197934910f2b643fcbb49d4205c103702921092261e6296f0",
+      "decompressed_sha256": "f4bc954ab46e67da41558aaee7b4283202abbdb1d90f08a4de126c8b0f9b7da2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/prior_art_sources.json.gz",
+      "sha256": "c75e70d26315b0f7e22bd2e49553bfa99e610e200d09f19b1826607f07fe80fc",
+      "decompressed_sha256": "f0d3e91d556705f7c0523c54163190cdd372a55aa374b83f12605986de2c9526"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/receipt.json.gz",
+      "sha256": "c4a311ba0eb6aa065f409eba792435a28b18eb75047458f3c5b26c67ac8f6cc4",
+      "decompressed_sha256": "4327bd22b5c95e2d12940885e4f4777896b93ae6889bc6f9f44cbe58e4d229bd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_diff.patch.gz",
+      "sha256": "d68be599a3c429bf173d358b1baa553872863fe4c4a5a3af64c96a84132d69f3",
+      "decompressed_sha256": "ff6424eadad2eb552147b7bce2b2a9dea8f3290ad19ffa77d5eaea1c53ae4a47"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/EXCLUDED_WALK_BOOST_ROTATION_PROBE.md.gz",
+      "sha256": "ced6e8c606647ae20605a1581f9f309d483235a21b1dd6595d17db36e8f214c5",
+      "decompressed_sha256": "b27195f9db4d7b50d0a97599209b259eaaa99e0b2e6bd6093e5eb94a0e0f306a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/boost_rotation/checkpoint.json.gz",
+      "sha256": "5600d7f21c4de58247d1e68e55858e96457b64303a4d58adf714d3a8f350d2ab",
+      "decompressed_sha256": "1dd62c6f1e0299698a80b7e45fe70f68ef187e899388f9f79b4b1ee10248377e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/boost_rotation/exact_rotation_controls.py.gz",
+      "sha256": "b21375e3601b7a2990547b107174f8fcb2807db4518a167df91487c4c5c6792a",
+      "decompressed_sha256": "434b2cb6fb520f06d2a0de2c4287910880e0c0b0a31a335b8dedd9f1efea7959"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/boost_rotation/execution.json.gz",
+      "sha256": "6c1457e66ed2b07926f1b6ca149b9de1434605dfe57860d8fd5c440e112e0131",
+      "decompressed_sha256": "d81dfd867d6ea26c5ce50ed0203935c431d6a509d2be54e4c5c69a92785d9f4c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/boost_rotation/first_run.log.gz",
+      "sha256": "aee6fa411f9123d61fea6f31ef7fb7941e4cf762b3d66dfbb328519a88f7a42d",
+      "decompressed_sha256": "95ee24b704f07a711b61950c4b3cc0b7dbabd95f677880ca17bb43ac838e96cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/boost_rotation/free_boost_note.md.gz",
+      "sha256": "578e663eae1e5119b0a905be9eb1fab7ad688adcc3f8beec49905c768ab00abc",
+      "decompressed_sha256": "18f54c738dfdc404004fe5bc091509f56e3afb5fea2143510d66b42645ff01df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/boost_rotation/free_dirac_note.md.gz",
+      "sha256": "4265d724c3e77189d45769591b092fc6e5afd3ff630576db515bf13cfad05027",
+      "decompressed_sha256": "b976f0efbab87757795891b268b9c06d1d1cd2125b4698cba72fe8665fcfe3c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/boost_rotation/prior_art_search.log.gz",
+      "sha256": "299f5d6d50d4f2d197934910f2b643fcbb49d4205c103702921092261e6296f0",
+      "decompressed_sha256": "f4bc954ab46e67da41558aaee7b4283202abbdb1d90f08a4de126c8b0f9b7da2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/boost_rotation/prior_art_sources.json.gz",
+      "sha256": "c75e70d26315b0f7e22bd2e49553bfa99e610e200d09f19b1826607f07fe80fc",
+      "decompressed_sha256": "f0d3e91d556705f7c0523c54163190cdd372a55aa374b83f12605986de2c9526"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/boost_rotation/run_controls.py.gz",
+      "sha256": "b0b1fbe703bc0ddd7504c006997369bc47add54e12b91f4d1b2d968ae9180912",
+      "decompressed_sha256": "2f2d1aeff366eb5f547b32e1c1bef2973bb90674415c31d49dc7f153ab5c4639"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/boost_rotation/source_inputs.json.gz",
+      "sha256": "7effb72707235abb472b0d1734b4393a2480ec3f1f53f0163f44dbb98bd1ab7e",
+      "decompressed_sha256": "5deb6772b806ee4599211899d8a6a821bf127f33e01746422eaba5043ae38954"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_initial_20261011T2202Z/manifest.json.gz",
+      "sha256": "049dff00a374dd05f3040cec7e589d7a482d83a2c98ae2ee02ae4167598dd3c5",
+      "decompressed_sha256": "c64cf5452f1c03fc7471a6dd5ab87cfe5d66b5d42904f518203f5b145e5ccd2c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/recovery_source_validation.json.gz",
+      "sha256": "6ff0dcb5d2def8a4bab5f1ba49db1ac39f9160510ca49e9172ab4babe11a1804",
+      "decompressed_sha256": "12fb54e850b17fcb3c3c4e4ab537fe6fe1fd9f8693d843c25f8f9226eb2d78c0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/root_receipt_validation.json.gz",
+      "sha256": "d97117801a71a8d1d674ab88dc9937ac637bf595160672c3dfd65e3306a675e7",
+      "decompressed_sha256": "c240d2dd7cb57aff5f818f3a78fa8d21fd1be0d9f46f471ec3e86f1277b77f57"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/run_controls.py.gz",
+      "sha256": "b0b1fbe703bc0ddd7504c006997369bc47add54e12b91f4d1b2d968ae9180912",
+      "decompressed_sha256": "2f2d1aeff366eb5f547b32e1c1bef2973bb90674415c31d49dc7f153ab5c4639"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/scope_scan.json.gz",
+      "sha256": "61b0f5f08fbe36fef3a8840110540b0a223aafdb1547efeb9642482e3d22246e",
+      "decompressed_sha256": "447a90807e4d6a2aef4404d7e75afa6105ceb1f1d6343e583aaa92e4694cb1da"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation/source_inputs.json.gz",
+      "sha256": "7effb72707235abb472b0d1734b4393a2480ec3f1f53f0163f44dbb98bd1ab7e",
+      "decompressed_sha256": "5deb6772b806ee4599211899d8a6a821bf127f33e01746422eaba5043ae38954"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/CHECKPOINT.md.gz",
+      "sha256": "0072f554ce0102e840a4eb5565596febd9145954db7602488d130b3745bc9f48",
+      "decompressed_sha256": "e2433ea194aade1e829c771231fe58c720803c8f624c00f95b48a2792ac8665e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/FINAL_FREEZE.json.gz",
+      "sha256": "66f1c90af96db37fd72f9b2434266ea1e44f91237a192f6570b53f93e2845aa3",
+      "decompressed_sha256": "edd0f226ecb7f6cbf42add5704b1756263c5a1e4c2cb294b347c1d6455d4d8ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/PROOF_RECONSTRUCTION.md.gz",
+      "sha256": "4cf0336bc0dd9709b8c32a034841371d3e08d79bccb68b43916ee1a5c2235df6",
+      "decompressed_sha256": "01c563c717022399cc265ef16038adf803cdcc687944ce465e83092b3c6fe598"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/evidence_verification.json.gz",
+      "sha256": "48b7f3b79ad7aeaf272fed9f190366ae92586cb13cb2122244b3fcca330f9ee4",
+      "decompressed_sha256": "700048cc82b050c2330ce6f7097f9f2940db24dcd9a18ded3a3e5940087c173c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/evidence_verification.log.gz",
+      "sha256": "69864335628f0da0f235649925f91b0d7361cded9b1efd8e9561b950ac8edba7",
+      "decompressed_sha256": "c3f2b2a0b6dcf77470baf56d9bcc1be0e5a835aadbddf91a26b691956d7c23da"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/final_receipt_validation.json.gz",
+      "sha256": "e5429be7b45aa5bdb1f6008e9e3d07b275d3c848fd8acaf2b1c0ac083e268bbd",
+      "decompressed_sha256": "d7cdb1a21612efaed1766a39ca00d924b23891e66ab327bf968c05228cece633"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/AUTHOR_COMPLETION.md.gz",
+      "sha256": "decff7d563fb4c3c526e06a237831e88e2f2e97bf9052a8439568982d074a1b5",
+      "decompressed_sha256": "a2283622d3ab76bb3f8c1613e83121168667f1bd0fabb76ab336f76e6ce4b484"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/checkpoint.json.gz",
+      "sha256": "ba80207d00b9f8503f07238b58751f04c1667da31b628719fbbe829c19127263",
+      "decompressed_sha256": "de37f9546e202cbfdea230139b7af06c579483f78a4d69fd7c15c73a9be67c87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/exact_rotation_controls.py.gz",
+      "sha256": "b21375e3601b7a2990547b107174f8fcb2807db4518a167df91487c4c5c6792a",
+      "decompressed_sha256": "434b2cb6fb520f06d2a0de2c4287910880e0c0b0a31a335b8dedd9f1efea7959"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/execution.json.gz",
+      "sha256": "6c1457e66ed2b07926f1b6ca149b9de1434605dfe57860d8fd5c440e112e0131",
+      "decompressed_sha256": "d81dfd867d6ea26c5ce50ed0203935c431d6a509d2be54e4c5c69a92785d9f4c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/first_run.log.gz",
+      "sha256": "aee6fa411f9123d61fea6f31ef7fb7941e4cf762b3d66dfbb328519a88f7a42d",
+      "decompressed_sha256": "95ee24b704f07a711b61950c4b3cc0b7dbabd95f677880ca17bb43ac838e96cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/freeze_verification.json.gz",
+      "sha256": "d96995df1c17448130dde6bea1751abb1ab7673828becfa28d2ea52b9f04a8e1",
+      "decompressed_sha256": "25fd5afd33425324aaa58ddb72238290e8849ecdb14b8ce0fed8df6c31510049"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/prior_art_search.log.gz",
+      "sha256": "299f5d6d50d4f2d197934910f2b643fcbb49d4205c103702921092261e6296f0",
+      "decompressed_sha256": "f4bc954ab46e67da41558aaee7b4283202abbdb1d90f08a4de126c8b0f9b7da2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/receipt.json.gz",
+      "sha256": "c4a311ba0eb6aa065f409eba792435a28b18eb75047458f3c5b26c67ac8f6cc4",
+      "decompressed_sha256": "4327bd22b5c95e2d12940885e4f4777896b93ae6889bc6f9f44cbe58e4d229bd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/recovery_diff.patch.gz",
+      "sha256": "d68be599a3c429bf173d358b1baa553872863fe4c4a5a3af64c96a84132d69f3",
+      "decompressed_sha256": "ff6424eadad2eb552147b7bce2b2a9dea8f3290ad19ffa77d5eaea1c53ae4a47"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/recovery_source_validation.json.gz",
+      "sha256": "6ff0dcb5d2def8a4bab5f1ba49db1ac39f9160510ca49e9172ab4babe11a1804",
+      "decompressed_sha256": "12fb54e850b17fcb3c3c4e4ab537fe6fe1fd9f8693d843c25f8f9226eb2d78c0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/run_controls.py.gz",
+      "sha256": "b0b1fbe703bc0ddd7504c006997369bc47add54e12b91f4d1b2d968ae9180912",
+      "decompressed_sha256": "2f2d1aeff366eb5f547b32e1c1bef2973bb90674415c31d49dc7f153ab5c4639"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_author_evidence/scope_scan.json.gz",
+      "sha256": "61b0f5f08fbe36fef3a8840110540b0a223aafdb1547efeb9642482e3d22246e",
+      "decompressed_sha256": "447a90807e4d6a2aef4404d7e75afa6105ceb1f1d6343e583aaa92e4694cb1da"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_inputs/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "sha256": "9986acb976ebecfbbd4d7b9d7b08f5a31015bb45b9244ca84478757468f963a1",
+      "decompressed_sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_inputs/EXCLUDED_WALK_BOOST_ROTATION_PROBE.md.gz",
+      "sha256": "adffd14dde170e16d95280d45570db5aee5d67bcedbcaa1541096be6ffcb8858",
+      "decompressed_sha256": "53f883ca7f01cdeb338e1c4d41367695fc6bdb32ee0ceb2905df50238a0c4760"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_inputs/EXCLUDED_WALK_CANONICAL_CURRENT_DRAFT.md.gz",
+      "sha256": "23ddb16b30de2a9bbd88509ff50202cf9e7cc6acf6726321508f74b288c51a85",
+      "decompressed_sha256": "79bc9fb3b9fd9b703f12de0a4ca4ebd62644c81bd6e15c07f723b6b7a1c977fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_inputs/EXCLUDED_WALK_LOW_ENERGY_ENERGY_CURRENT_BOUNDED_THEOREM_NOTE_2026-10-11.md.gz",
+      "sha256": "ba27c01551da33d8208ebe9e708cd8aae6167efd29c80e1eea032e9ab478f355",
+      "decompressed_sha256": "9f551fc8d3592e83d15a007495a8f9165a5ddb9bc1e98d9dd3f51b6a2584f401"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_inputs/ROOT_EXCLUDED_WALK_BOOST_CURRENT_REVIEW.md.gz",
+      "sha256": "2aa58b5a15955c744dc1a2cfe42fe0d3cd6a04be7acdb728c73ce4fb489517ae",
+      "decompressed_sha256": "c019d73e57462fd5e71ff3dc0552cc49fdcf02f604184e6c779ffc7e5dacd300"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_inputs/free_boost_note.md.gz",
+      "sha256": "578e663eae1e5119b0a905be9eb1fab7ad688adcc3f8beec49905c768ab00abc",
+      "decompressed_sha256": "18f54c738dfdc404004fe5bc091509f56e3afb5fea2143510d66b42645ff01df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_inputs/free_dirac_note.md.gz",
+      "sha256": "4265d724c3e77189d45769591b092fc6e5afd3ff630576db515bf13cfad05027",
+      "decompressed_sha256": "b976f0efbab87757795891b268b9c06d1d1cd2125b4698cba72fe8665fcfe3c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_inputs/prior_art_sources.json.gz",
+      "sha256": "c75e70d26315b0f7e22bd2e49553bfa99e610e200d09f19b1826607f07fe80fc",
+      "decompressed_sha256": "f0d3e91d556705f7c0523c54163190cdd372a55aa374b83f12605986de2c9526"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/frozen_inputs/source_inputs.json.gz",
+      "sha256": "7effb72707235abb472b0d1734b4393a2480ec3f1f53f0163f44dbb98bd1ab7e",
+      "decompressed_sha256": "5deb6772b806ee4599211899d8a6a821bf127f33e01746422eaba5043ae38954"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/pre_author_evidence_stage.json.gz",
+      "sha256": "5b69241e74c296567c3e5428dd99162fe3c39908307289781ec1970140ba2dea",
+      "decompressed_sha256": "e6dbf232139ac44f2962896fe926aa321a03b7daaab91bbedbf987530a9e5c33"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/real_space_control.py.gz",
+      "sha256": "cbaca0aa5ce3ab8d9ed6ba96e98cbb7172f8d8aa143bfdc8d7a295edce325818",
+      "decompressed_sha256": "d07583d51c87a138683ce9a83b79e307ec07956e82478da20a160fd5fb425c9e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/real_space_execution.json.gz",
+      "sha256": "c4b5a4bb2ad187ec6e19bc28471dec38a4724d06ad7a93d389b071ba929d06ff",
+      "decompressed_sha256": "da3e02c607d62ef3b63e178889bba3068b8a9acb177c9d81be45213e154ad2cd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/real_space_first_run.log.gz",
+      "sha256": "128541a28848a01420c7e81bc6dc88bbdf7a34714c44fe3d5d8c4e738eacfb32",
+      "decompressed_sha256": "0f0a52952631f26503b0194e96006c2e29b902ba1473c68428e87d2bde331b90"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/receipt.json.gz",
+      "sha256": "b29c081bf8d7b17fc6bd62241e9d8400a230f56b90f77e9a515e72cd9213fde4",
+      "decompressed_sha256": "b0a99881c775a0a1a112ea5a68d4662443781704ee67e8d676ed33c9b7d470f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/source_manifest.json.gz",
+      "sha256": "954a4ed25e67695bb28163ac70b19c1d9510c91c16489983656d44b60ed0a963",
+      "decompressed_sha256": "b1f999c582ca2117871226f19a32dd4fd1931b54d28708cac7f0028005256c85"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review/verify_evidence.py.gz",
+      "sha256": "6194c03943bdaf303dc0b765ca8e9bdf4726884eda623857cdb6bbb09811f84f",
+      "decompressed_sha256": "501b4b153f5bb2a7338e1b927a569f4b9fb4e1ed8ed7b3269fe2d747cc6d0804"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_rotation_review_root_identity_check.json.gz",
+      "sha256": "0e4b8472a225d4588d9e9ccab04435efd2fc3a86a5a9683c6af5bcdd8732965a",
+      "decompressed_sha256": "81901bb9c98f137eb03850e0e28e19adafb12bc94f9af5ec06c66c3fe8a40e18"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/DELIVERY_CHECKS.md.before.gz",
+      "sha256": "500e56f88a1c0fbd1cc7e8d4e7657ac46158e17075f5d7ad4af1ecab4f49f744",
+      "decompressed_sha256": "6597bf983d9cb3446228300b49d8e17098ce204b77e9990381466460ee7a145b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md.before.gz",
+      "sha256": "8af944125c77a64d7943518d7ddb08ac8fc77c26f4095a5ab3f7677a09fe2fc7",
+      "decompressed_sha256": "f9aeba6f742de5d5c276cf6da7b29d3a189e995a48c429516f7b4ed3dee6b5e1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/PUBLICATION_EDITS.json.before.gz",
+      "sha256": "b7b257224644119f4cc51c107b378202f3e4708a141dc2c4fc19ae934a5e9060",
+      "decompressed_sha256": "717379993f33d59b104602142035d322d318d24930a681f5fa323d3cf80afa1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/ROOT_COMPOSITION_REVIEW.md.before.gz",
+      "sha256": "f096951634d401bccca2d1f70765bc6cf9a761192264c774fc35d99d658bf0f6",
+      "decompressed_sha256": "1ea3052979cd1eed619a7b9e31bdad341a4ef15fdcb38ae859653409b9a4d879"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/SOURCE_IDENTITIES.json.before.gz",
+      "sha256": "6305a798b24bd842aaacd4b57abad6de5d6296436b2e36bf329744b2e5d6c972",
+      "decompressed_sha256": "0a651f12a9e42fcf2bd430cc9f355cebea482b2d8ab1495427a313f80b0a44b8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/canonical_execution_recovered.json.gz",
+      "sha256": "4188d279471c5732abcb447fd92f2721a3b0ac05a301909358c7d0920ed1b3fc",
+      "decompressed_sha256": "396070b2e23b5d6559997f25be8ee522d833fbe9462a733323d0a097fc568c48"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/excluded_walk_boost_bracket_control_2026_10_11.txt.before.gz",
+      "sha256": "1a0b63d89263a817fd45caa97e19eb4c5db1528adf231bba06cd110573648d5d",
+      "decompressed_sha256": "80bd66827bc0b5cab760833e98b183b30464c512f134d190b5511743eace62b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/final_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/final_vocab_fix.log.gz",
+      "sha256": "798e888fef37601d33038c7ce8fd15f5cb2dcd48726f49bd9b195570a40ffd14",
+      "decompressed_sha256": "1e80d561b07d9a0290d3afd05f1d4eb8ead19258cc27cdfb8dbdb79d341b1c5f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/final_vocab_report-only.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/final_vocab_report-only.log.gz",
+      "sha256": "85e24939b746f55afd63917edf06a28120245e3591ba3859aeae90f37d3cc310",
+      "decompressed_sha256": "79bba04199fbe58fedda837511660107c64639dd06b34a9a802c7f008371dfef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/initial_staged_check.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/initial_staged_check.stdout.gz",
+      "sha256": "cf8e79baace9bdbc44591eb3489d6dfb78cf1dc28f214cb50dac9e1e178e7403",
+      "decompressed_sha256": "ea5dee736006986f9bc1943afa184749d67acd03f4ad037c6b1ab5fd5bcaefa7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/reconstruction.log.gz",
+      "sha256": "823f315d1eb384bbeb2dabf6b37c163e8522d7f5cb4b4ff82a6c32cfdbbf4ca3",
+      "decompressed_sha256": "4bcd015e8293ba09183950194f21f48e5b6b41e99e14f8f3201641df1b24895d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/repair.json.gz",
+      "sha256": "7e6f2489202a6d11ce2dbb14cb0336ab9a379341a3c5a45b3b84408867a01228",
+      "decompressed_sha256": "f3bd6d1717a7cbb42a5a0bb79c9ffae1a2889ea02614fafbfee333bf5388c613"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/vocab_fix.log.gz",
+      "sha256": "929ec4be0e5637737c6434fa6df8a27fa97eca9770a8aa739b29518c2f7c7de6",
+      "decompressed_sha256": "28b952afe0c030cfbf2e484e4c2b26c113f802de5a31cfec543b1c6bb76d988d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/vocab_report-only.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/boost_whitespace_repair/vocab_report-only.log.gz",
+      "sha256": "786293f77d33b1d08044f9c5ae2a03fc8508a075ca5af9641e1100cbc75a637d",
+      "decompressed_sha256": "790b1f68e01d4f681834d9c8e2653f41d0b0d1263230fe99c5df866d23213532"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/compose_boost_milestone.py.gz",
+      "sha256": "11293913a1e6c1b699f4e78411034dd150543f176c2af0deca19401e8b1e53b0",
+      "decompressed_sha256": "dd4be523e3d1f4dfeb7836d74616345a7cd34c84bfda76cb441903d32eef9a61"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/compose_boost_primary.py.gz",
+      "sha256": "c3ef76bf799c96ea0a771369df660d84be839b7931d66f5394659ff18855745b",
+      "decompressed_sha256": "da6b2377d5c6195e40d3d163c87fff01abbaf8e7ff0b7610274651cc629543ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review/CHECKPOINT.md.gz",
+      "sha256": "d996fc23b5c6185d4738dc283bc1486fda477b8b6dd14608cf486a7669abaea8",
+      "decompressed_sha256": "b4c1df217e4098b14f5c991ec54e847d96b842ff248be451701018a785fa5dc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review/PRE_CONTROL_RECONSTRUCTION.md.gz",
+      "sha256": "a12a19ed90b71347c7dbaa2df012a424372d4ce1456bc67c18cdc2bf6772cece",
+      "decompressed_sha256": "4abd7dd2c5e9891fa726ad61425fd15d49972a52865f044e37541cff8d12741e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review/execution.json.gz",
+      "sha256": "5881e116bc99a896b3abb1023c03019331e60f2041a91c7d8bec21f8f20aaf0e",
+      "decompressed_sha256": "b4ca471e0bbdfcf727ec4ab168cb41b3dbf0187d03f9a8570d4366b722694f90"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review/finite_vector_control.log.gz",
+      "sha256": "14f6448b204fd8e2551f770496267d9055535d42a6e3e9e1db6a572b57a1334e",
+      "decompressed_sha256": "1a703cd47877e35772afb73339d7104f925877b6abda52e302f9c74e2079303c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review/finite_vector_control.py.gz",
+      "sha256": "bddc0e972045dbb69a1efda3191a8d4b17fbb289c593d157ec3ec9340e00459e",
+      "decompressed_sha256": "7c8451968b776d2f91a43d4a2113ef3b086888c4b578bcd3d6f920765f40c7ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review/freeze_review.py.gz",
+      "sha256": "04778cd5352a4fcf20c12f9a70bd20a02af244635a6af707b722ae3cd4c02ce3",
+      "decompressed_sha256": "f359f0c1d3ab29807641103ba61d252319208cb0bd1d8d38e0047adc27611930"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review/pre_control_receipt.json.gz",
+      "sha256": "2b397e543ea311aa0b449d348d2e00a4d3f08c879f17c21e90aee18c94038dd6",
+      "decompressed_sha256": "32159878cbf8f2a30ef7d7bcfc3c1ba962d90aee4a751f381e2966087d7b6bce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review/receipt.json.gz",
+      "sha256": "52220b4351b15e1b3b04e0b18fa4efa070d16da1b79f7eea48480b12ca698267",
+      "decompressed_sha256": "df93dd7a3b238828d830f9b965b4f105078bba834b277e3483db34a3451c7d84"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review/receipt_validation.json.gz",
+      "sha256": "bf204f271c99da53d6469f8f167fb7d866e8fc1daae3a8cf850d1d77838b88b0",
+      "decompressed_sha256": "1569b23b3cfa10f086f4070bef4ba4d09df527bc6a7d43c5b00820fb2095c127"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review/run_control.py.gz",
+      "sha256": "f851743486053ee7efd8fcbc12bdc6abadd340e086ac09bb4fcf9b529664f357",
+      "decompressed_sha256": "f5a425a2e16f67c1c0aa18ac9a8dc1b048a6e109d9147056706147d2a90b6b82"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review/source_verification.json.gz",
+      "sha256": "cf651bd553c4e4ca0b7b9806131a4b8b98153b695f9dceeb3b90eaa265fdc4b0",
+      "decompressed_sha256": "83797f2bd227e4a7d95303d0937df29662f94f24bb8034a7ea6f42d66562186b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/evolved_boost_review_root_identity_check.json.gz",
+      "sha256": "b843f7bc1116cdcdafd35080efa0d3991de2a322cf57f8534eac830584b8ee44",
+      "decompressed_sha256": "72d35fdf5df126ca189743f2f3d0c2eec4bd1d7e414baa083a23043d4ab4ae43"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/finish_boost_delivery.py.gz",
+      "sha256": "68f867a6a576adeabbc0b102cecf368a0b3dd202d7f5d4418d04e666bf837006",
+      "decompressed_sha256": "06218eafff2b2db7f2ec1e8e2529789f99817209119639f2a1308925d696e903"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/prepare_boost_packet.py.gz",
+      "sha256": "66451d47ebeb5c9bdd95952645c80207c7ff05ad3968f9c990d3c1afb75ae902",
+      "decompressed_sha256": "be2c0b99f0cfb15c2de75ad182e86a35c69152a5778fbf838d2ae72bff86451d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/evidence/run_boost_primary_mutants.py.gz",
+      "sha256": "1ff16448c315d7e53dd200e686b94f9b18c922932cb542bcf46a2ae58204c7ab",
+      "decompressed_sha256": "49fc3751439d8c5323c8472b27490d483aaade79f679871b51ea452993e7960d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-bracket-control-20261011/reconstruct.py",
+      "sha256": "8d6e258a7c3a46c44cda6ab015dc75ae9b4862ecfce0afd66e58bb18565300ca"
+    },
+    {
+      "path": "docs/EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "ccf38ede134d2e26891e5609eefb7e39b52a994edd86405cf915b6b32e571509"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "5af68ee8fba636ffb1f260e8c7213712fd49ad6038e7d50074c80673cc203462"
+    },
+    {
+      "path": "logs/runner-cache/excluded_walk_boost_bracket_control_2026_10_11.txt",
+      "sha256": "b3b0198f29ee093a0abeef86211cbb9155f7d0d908cc68aeba30eab11719e7da"
+    },
+    {
+      "path": "scripts/excluded_walk_boost_bracket_control_2026_10_11.py",
+      "sha256": "ad158ab067673f7ace2737b96475a45ce91cb3fc1718cf709e5c445f58f2a550"
+    }
+  ]
+}

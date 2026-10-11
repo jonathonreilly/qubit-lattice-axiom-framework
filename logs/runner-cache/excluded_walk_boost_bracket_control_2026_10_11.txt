@@ -1,0 +1,136 @@
+===== runner cache v1 =====
+runner: scripts/excluded_walk_boost_bracket_control_2026_10_11.py
+runner_sha256: ad158ab067673f7ace2737b96475a45ce91cb3fc1718cf709e5c445f58f2a550
+input_fingerprint_sha256: 221f6b1027831f04ba25dbbb35dbbbf07d0061574f7350fb0dfd5114efef3e29
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 18.21
+status: ok
+----- stdout -----
+BEGIN boost_current finite author evidence
+Exact Gaussian-rational algebra; 3D q Fourier modes; K jets through degree 2.
+Half-angle (cos,sin) fixtures: [(QQ_I(63/65, 0), QQ_I(16/65, 0)), (QQ_I(12/13, 0), QQ_I(5/13, 0)), (QQ_I(4/5, 0), QQ_I(3/5, 0))]
+canonical current b=0 exact zero
+Hamiltonian-current coefficient b=0 exact zero
+canonical current b=1 exact zero
+Hamiltonian-current coefficient b=1 exact zero
+canonical current b=2 exact zero
+Hamiltonian-current coefficient b=2 exact zero
+full bracket a=0, b=0 exact zero
+full bracket a=0, b=1 exact zero
+full bracket a=0, b=2 exact zero
+full bracket a=1, b=0 exact zero
+full bracket a=1, b=1 exact zero
+full bracket a=1, b=2 exact zero
+full bracket a=2, b=0 exact zero
+full bracket a=2, b=1 exact zero
+full bracket a=2, b=2 exact zero
+nonzero [H_D,J_0] finite-polynomial witness norm^2 = 8619295744/75418890625
+A support-kernel coefficient: 85/8 < 12
+B support-kernel coefficient for lambda<=1: 705/32 < 24
+one-dimensional preparation integrals: 256/315 256/105 ; derivative ratio = 3
+mollified K-envelope gives scaled derivative B_a < 60
+mixed-channel small-total-energy residual/t = -3/sqrt(2); residual/E = -3
+completed 23 exact assertion families
+BEGIN axis_witness finite author evidence
+six exact identities from Pauli matrices and circle moments passed
+c* [H_D,J_b] h = 2 sin(K_b) (sin(q_j)^2+sin(q_k)^2-2 sin(q_b)^2)
+singlet-component squared norm = 3 sin(K_b)^2
+BEGIN boost_rotation finite author evidence
+{"check": "Pauli_direct_dipole_commutator_01", "detail": null}
+{"check": "Pauli_second_derivatives_cancel_01", "detail": null}
+{"check": "Pauli_spin_omission_detected_01", "detail": null}
+{"check": "Pauli_spin_sign_flip_detected_01", "detail": null}
+{"check": "Pauli_direct_dipole_commutator_02", "detail": null}
+{"check": "Pauli_second_derivatives_cancel_02", "detail": null}
+{"check": "Pauli_spin_omission_detected_02", "detail": null}
+{"check": "Pauli_spin_sign_flip_detected_02", "detail": null}
+{"check": "Pauli_direct_dipole_commutator_12", "detail": null}
+{"check": "Pauli_second_derivatives_cancel_12", "detail": null}
+{"check": "Pauli_spin_omission_detected_12", "detail": null}
+{"check": "Pauli_spin_sign_flip_detected_12", "detail": null}
+{"check": "abstract_H_is_Hermitian", "detail": null}
+{"check": "abstract_dipole_symmetry_contract_0", "detail": null}
+{"check": "abstract_dipole_symmetry_contract_1", "detail": null}
+{"check": "abstract_exact_full_compression_defect", "detail": null}
+{"check": "abstract_second_derivative_contact_terms_cancel", "detail": null}
+{"check": "abstract_no_constant_contact_term", "detail": null}
+{"check": "abstract_contact_derivative_is_nonzero", "detail": null}
+{"check": "abstract_omitting_contact_derivative_detected", "detail": null}
+{"check": "abstract_reversing_contact_sign_detected", "detail": null}
+{"check": "abstract_contact_coefficient_divergence_cancels", "detail": null}
+{"check": "abstract_contact_annihilation", "detail": null}
+{"check": "cone_spin_(-1, -1, -1)_01", "detail": null}
+{"check": "cone_spin_(-1, -1, -1)_02", "detail": null}
+{"check": "cone_spin_(-1, -1, -1)_12", "detail": null}
+{"check": "cone_orbital_offset_sign_(-1, -1, -1)", "detail": null}
+{"check": "cone_spin_(-1, -1, 1)_01", "detail": null}
+{"check": "cone_spin_(-1, -1, 1)_02", "detail": null}
+{"check": "cone_spin_(-1, -1, 1)_12", "detail": null}
+{"check": "cone_orbital_offset_sign_(-1, -1, 1)", "detail": null}
+{"check": "cone_spin_(-1, 1, -1)_01", "detail": null}
+{"check": "cone_spin_(-1, 1, -1)_02", "detail": null}
+{"check": "cone_spin_(-1, 1, -1)_12", "detail": null}
+{"check": "cone_orbital_offset_sign_(-1, 1, -1)", "detail": null}
+{"check": "cone_spin_(-1, 1, 1)_01", "detail": null}
+{"check": "cone_spin_(-1, 1, 1)_02", "detail": null}
+{"check": "cone_spin_(-1, 1, 1)_12", "detail": null}
+{"check": "cone_orbital_offset_sign_(-1, 1, 1)", "detail": null}
+{"check": "cone_spin_(1, -1, -1)_01", "detail": null}
+{"check": "cone_spin_(1, -1, -1)_02", "detail": null}
+{"check": "cone_spin_(1, -1, -1)_12", "detail": null}
+{"check": "cone_orbital_offset_sign_(1, -1, -1)", "detail": null}
+{"check": "cone_spin_(1, -1, 1)_01", "detail": null}
+{"check": "cone_spin_(1, -1, 1)_02", "detail": null}
+{"check": "cone_spin_(1, -1, 1)_12", "detail": null}
+{"check": "cone_orbital_offset_sign_(1, -1, 1)", "detail": null}
+{"check": "cone_spin_(1, 1, -1)_01", "detail": null}
+{"check": "cone_spin_(1, 1, -1)_02", "detail": null}
+{"check": "cone_spin_(1, 1, -1)_12", "detail": null}
+{"check": "cone_orbital_offset_sign_(1, 1, -1)", "detail": null}
+{"check": "cone_spin_(1, 1, 1)_01", "detail": null}
+{"check": "cone_spin_(1, 1, 1)_02", "detail": null}
+{"check": "cone_spin_(1, 1, 1)_12", "detail": null}
+{"check": "cone_orbital_offset_sign_(1, 1, 1)", "detail": null}
+{"check": "free_K_coefficient_budget", "detail": null}
+{"check": "free_q_coefficient_budget", "detail": null}
+{"check": "local_contact_Q_budget", "detail": null}
+{"check": "original_radial_envelope_derivative_budget", "detail": null}
+{"check": "positive_projector_q_derivative_budget", "detail": null}
+{"check": "explicit_rotation_norm_budget", "detail": "67137247/768"}
+{"check": "normalized_origin_support_volume", "detail": null}
+{"check": "ordinary_chart_face_trace_jump", "detail": "-2*I*pi*sin(qa)"}
+TOTAL: PASS=63 FAIL=0
+SCOPE: exact finite algebra and constant budgets; no analytic domain/packet proof, independent review, physical rotation representation or evolution theorem certified
+BEGIN inverse_energy finite author evidence
+{"script": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/boost_worktree/scripts/excluded_walk_boost_bracket_control_2026_10_11.py", "sha256": "ad158ab067673f7ace2737b96475a45ce91cb3fc1718cf709e5c445f58f2a550", "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]", "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13", "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O", "numpy": "2.4.4", "scipy": "1.17.1", "sympy": "1.14.0", "evidence_role": "author consistency; independent scientific review pending"}
+{"control": "canonical_coupling", "before_P": "-2*x/3 + y/3 + z/3 + 1", "after_P": "-2*x/3 + y/3 + z/3", "squared_polynomial_mean": "1/12"}
+{"control": "normalization_and_dilation", "compact_envelope_norm2": "2048/3003", "dilation_pairing": "1024/3003", "dilation_norm2": "3072/5005", "state_error_coefficient": "9/16", "derivative_error_coefficient": "955/56", "bracket_error_coefficient": "3117/28", "tau_max": "1/32768"}
+{"control": "actual_forced_vector", "lambda": 0.015625, "tau": 0.37, "kappa": [0.12, -0.08, 0.09], "derivative_component": 1, "augmented_value": [[0.07405758310490386, 0.2426932250590181], [0.01557891389434238, -0.03322254498513844], [0.009803519051999877, -0.0014620157978291824]], "spectral_integral_error": 1.0302454849151126e-15, "frechet_vs_five_point_derivative_error": 4.915977303175726e-12}
+{"control": "shorter_time_finite_model", "lambda": 0.015625, "physical_t": 8.0, "scaled_tau": 0.125, "value_error": 0.26956103151057054, "derivative_error": 0.044888945549776044}
+{"control": "shorter_time_finite_model", "lambda": 0.00390625, "physical_t": 16.0, "scaled_tau": 0.0625, "value_error": 0.17709976064258653, "derivative_error": 0.03087800137597545}
+{"control": "shorter_time_finite_model", "lambda": 0.0009765625, "physical_t": 32.0, "scaled_tau": 0.03125, "value_error": 0.031444199951301, "derivative_error": 0.006638162235339661}
+{"control": "shorter_time_finite_model", "lambda": 0.000244140625, "physical_t": 64.0, "scaled_tau": 0.015625, "value_error": 0.02695267158244208, "derivative_error": 0.004818777373431091}
+{"control": "shorter_time_finite_model", "lambda": 6.103515625e-05, "physical_t": 128.0, "scaled_tau": 0.0078125, "value_error": 0.020696580262191653, "derivative_error": 0.003501198735703033}
+{"control": "shorter_time_finite_model", "lambda": 1.52587890625e-05, "physical_t": 256.0, "scaled_tau": 0.00390625, "value_error": 0.008553513493328484, "derivative_error": 0.0014967694131815107}
+{"control": "shorter_time_finite_model", "lambda": 3.814697265625e-06, "physical_t": 512.0, "scaled_tau": 0.001953125, "value_error": 0.005513256673182808, "derivative_error": 0.0009301228173188939}
+{"control": "fixed_tau_finite_model", "lambda": 0.015625, "scaled_tau": 0.125, "value_error": 0.032568985374413446, "derivative_error": 0.004799649551850529}
+{"control": "fixed_tau_finite_model", "lambda": 0.00390625, "scaled_tau": 0.125, "value_error": 0.0027921372153771186, "derivative_error": 0.000456622994543153}
+{"control": "fixed_tau_finite_model", "lambda": 0.0009765625, "scaled_tau": 0.125, "value_error": 0.002432174682350696, "derivative_error": 0.00037051970533412545}
+{"control": "fixed_tau_finite_model", "lambda": 0.000244140625, "scaled_tau": 0.125, "value_error": 0.0006710116781128782, "derivative_error": 0.00010977473244301444}
+{"control": "fixed_tau_finite_model", "lambda": 6.103515625e-05, "scaled_tau": 0.125, "value_error": 4.209337101775664e-05, "derivative_error": 1.2913892321483139e-05}
+{"control": "fixed_tau_finite_model", "lambda": 1.52587890625e-05, "scaled_tau": 0.125, "value_error": 2.9607000817361647e-05, "derivative_error": 5.905630550744809e-06}
+{"control": "fixed_tau_finite_model", "lambda": 3.814697265625e-06, "scaled_tau": 0.125, "value_error": 5.732149335441766e-06, "derivative_error": 7.777515431085197e-07}
+{"scope": "gapped three-vector model only; no continuum rate or theorem is inferred", "status": "all author consistency controls completed"}
+BEGIN kernel_bound finite author evidence
+{"script": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/boost_worktree/scripts/excluded_walk_boost_bracket_control_2026_10_11.py", "sha256": "ad158ab067673f7ace2737b96475a45ce91cb3fc1718cf709e5c445f58f2a550", "folded_integral_coefficient": "1/(16*pi)", "ball_radius": "sqrt(3)*pi/2", "upper_bound": "sqrt(3)*pi/8", "lower_bound": "1/12", "retained_coarse_upper_bound": "9/8", "role": "author exact arithmetic only; analytic inequalities and kernel completeness proved in note", "status": "completed"}
+per_element: exact Pauli, Fourier-coefficient and finite contact algebra checked; no continuum state-space exhaustion
+per_site: checked and not executed — these author helpers use Fourier and abstract compression, not infinite-site simulation
+per_mode: all eight reflected-corner sign patterns and finite Fourier modes checked; the continuum packet limits remain analytic
+per_block: full nine boost/current components and three boost/boost component pairs checked in the stated finite fixtures
+lattice_wide: checked and not executed — global analytic domain and prepared-packet bounds require the complete source proofs
+TOTAL: PASS=5 FAIL=0
+SCOPE: five preserved author-control modules, including 23 boost/current, 6 axis and 63 rotation checks plus forcing and integral controls; no count certifies the continuum proofs
+
+----- stderr -----
+

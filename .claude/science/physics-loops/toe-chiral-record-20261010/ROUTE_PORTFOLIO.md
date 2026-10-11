@@ -140,3 +140,10 @@ coefficients are nonzero. The oblique-matched plane has a
 three-dimensional partner kernel at ratios `1` and `-1`. It does not
 take a sum of two parity kernels, and it does not classify the
 300-dimensional affine space.
+
+Cycle 32 takes those two three-dimensional spans. Every nonzero
+vector off the oblique-matched line has two or more nonzero
+parity-kernel coefficients and a nonzero excluded coefficient, and
+every nonzero vector in either span has that span or the other span
+as its partner kernel. It does not take a vector outside the two
+spans, and it does not classify the 300-dimensional affine space.

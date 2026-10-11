@@ -1685,3 +1685,74 @@ Conformance, section by section:
     `(0, 0)` and `(-2, 2)`, and `(0, 0)` and `(-1, 1)`.
 12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
     the loop-pack prose. The full audit pipeline was not run.
+
+## 2026-10-11 author check, cycle 32
+
+Author checks only. No review-loop PASS and no audit verdict.
+
+Conformance, section by section:
+
+1. Self-containment. The note and runner are in this delta. The parents
+   are the minimal axioms on origin/main at the base `0b208e91cfc`, the
+   cycle-31 one-parity plane note, the cycle-29 parity-span note, and
+   the cycle-26 scaled cross-dot basis note, the last three on this
+   branch. The bond classes, the partner kernels, and the witness sums
+   are computed in this runner. The order-blind converse is not applied.
+   The parity kernels are cited from cycle 29. The ten-kernel basis is
+   cited from cycle 26. The two triples are named in cycle 31 and their
+   cross sums are recomputed here. The dimension count of the soldered
+   bond space is not repeated.
+2. Cache. `AUDIT_TIMEOUT_SEC = 180`. The envelope wrote
+   `logs/runner-cache/chiral_pair_two_parity_excluded_partner_kernel_2026_10_10.txt`.
+   Header `timeout_sec: 180`, `status: ok`, sha256
+   `255822f9312f67da6a6f0ce21414deed2431a9dfea1cfb110b5e560c7e768c70`,
+   matching `shasum -a 256` of the runner. `TOTAL: PASS=10 FAIL=0`.
+   Elapsed 0.84 seconds.
+3. Scope. The two three-dimensional ratio spans on the 48 signed
+   permutations of `(1, 2, 3)`. A nonzero vector in either span has two
+   or more nonzero parity-kernel coefficients and a nonzero excluded
+   coefficient exactly off that span's oblique-matched line. Every
+   nonzero vector has partner rank 7. The partner kernel is the same
+   span on height pairs `(1, 2)`, `(2, 1)`, `(2, 3)`, and `(3, 2)`, and
+   the other span on `(1, 3)` and `(3, 1)`. The witness centre pairs are
+   `(-2, 0)` and `(0, 2)`, with cross sum `0`, and `(0, 0)` and
+   `(-2, 2)`, with cross sum `-4`. A vector outside both spans is
+   outside the ansatz. The ten-kernel coefficient span is not
+   classified. The full soldered bond space is not classified. Status
+   line `proposed_retained`. Surface status `bounded-support`.
+4. N-gate does not apply. The witness sum `-4` prunes the same-sign
+   pair on heights 1 and 3. The check does not claim that no vector
+   outside the two spans has a nonzero partner, and the height 1 and 2
+   pair is exhibited.
+5. Obligations are in the note. The missing lemma is whether the sum of
+   the chirality cap, the transverse-sign cap, and the matched
+   transverse cross can pair with a nonzero ten-kernel vector and still
+   have every cross moment equal to 0.
+6. Mutations, each on a scratch copy, exited 1. Requiring the height
+   1 and 2 cross sum to be 1 gave `PASS=9 FAIL=1` on the centre-pair
+   check. Requiring the scalar-matrix rank to be 4 gave `PASS=9 FAIL=1`
+   on the scalar check. Requiring the eight directions to number 7 gave
+   `PASS=8 FAIL=2` on the bond-class check and the partner-kernel check.
+   An independent generator closure in this session gave 24 rotations,
+   all of determinant 1, and orbit 24, with `(2, 1, 3)` and `(1, 2, -3)`
+   outside the orbit.
+7. One primary runner. No packet helper.
+8. Five markdown links. The runner link points at the primary runner.
+   One note link points at the minimal axioms on origin/main. Three
+   point at the cycle-31 one-parity plane note, the cycle-29 parity-span
+   note, and the cycle-26 scaled cross-dot basis note on this branch.
+   Manifest node_count 6901 and edge_count 15510. The new node has
+   out_degree 4 and deps_hash `e4033f935191`. Dependencies are
+   `minimal_axioms`, the cycle-31 one-parity plane note, the cycle-29
+   parity-span note, and the cycle-26 scaled cross-dot basis note.
+   `citation_graph.json` was deleted.
+9. Machine-status fields match this certificate. The imports paragraph
+   names the parity kernels, the ten-kernel basis, and the two triples,
+   and states that the order-blind converse is not applied and that no
+   rate is imported.
+10. No audit status, effective status, or ledger output is written.
+11. Counts recomputed in this session: `PASS=10 FAIL=0`, centre pairs
+    `(-2, 0)` and `(0, 2)` with cross sum `0`, and `(0, 0)` and
+    `(-2, 2)` with cross sum `-4`.
+12. `scripts/vocab_lint.py --fix` reported 0 violations on the note and
+    the loop-pack prose. The full audit pipeline was not run.

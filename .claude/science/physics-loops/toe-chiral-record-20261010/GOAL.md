@@ -117,4 +117,13 @@ when one coefficient is 0. Oblique plus matched has a three-dimensional
 partner kernel at ratios `1` and `-1`. The same vector passes at
 heights 1 and 2 and has witness cross sum `-4` at heights 1 and 3.
 A sum of two parity kernels is outside that ansatz. The ten-kernel
-coefficient span is not classified.
+coefficient span is not classified. Cycle 32 shows that inside each
+of the two three-dimensional ratio spans, a nonzero vector has two or
+more nonzero parity-kernel coefficients and a nonzero excluded
+coefficient exactly off the oblique-matched line. Every nonzero
+vector in either span has a three-dimensional partner kernel: the
+same span on height pairs `{1, 2}` and `{2, 3}`, and the other span
+on `{1, 3}`. The swapped-orthogonal vector at heights 1 and 2 has
+centre pairs `(-2, 0)` and `(0, 2)`. The same vectors at heights 1
+and 3 have witness cross sum `-4`. A vector outside both spans is
+not in this count. The ten-kernel coefficient span is not classified.

@@ -641,3 +641,27 @@ coefficients are nonzero. Oblique plus matched has a three-dimensional
 partner kernel at ratios `1` and `-1`. A sum of two parity kernels is
 outside the ansatz. The ten-kernel coefficient span is not classified.
 The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 32
+
+claim_id: chiral_pair_two_parity_excluded_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: 48 signed permutations of (1, 2, 3); the two ratio spans of the oblique-matched plane; witness directions (-1, 0, 0) and (0, -1, 0)
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The parity kernels are the cycle-29 note. The ten-kernel basis is the cycle-26 note. The two triples are named in the cycle-31 note. No formation rate is used.
+
+Inside each ratio span, a nonzero vector has two or more nonzero
+parity-kernel coefficients and a nonzero excluded coefficient exactly
+off the oblique-matched line. Every nonzero vector in either span has
+a three-dimensional partner kernel, equal to the same span on height
+pairs `{1, 2}` and `{2, 3}` and to the other span on `{1, 3}`. The
+witness cross sums are `0` and `-4`. A vector outside both spans is
+outside the ansatz. The ten-kernel coefficient span is not classified.
+The 300-dimensional affine space is not classified.

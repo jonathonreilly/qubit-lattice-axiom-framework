@@ -205,3 +205,13 @@ same vector has witness cross sum `-4` on heights 1 and 3. Chirality
 plus matched against the chirality cap has witness cross sum `2`. It
 does not classify a sum of two parity kernels, and it does not
 classify the 300-dimensional affine space.
+
+Cycle 32 prunes the reading that no vector with two or more nonzero
+parity-kernel coefficients and a nonzero excluded coefficient has a
+nonzero partner. Inside each ratio span, every nonzero vector off the
+oblique-matched line has that pattern, and every nonzero vector in the
+span has a three-dimensional partner kernel. The witness centre pairs
+at heights 1 and 2 are `(-2, 0)` and `(0, 2)`. The same vectors at
+heights 1 and 3 have kernel cross sum `-4`. It does not classify a
+vector outside the two spans, and it does not classify the
+300-dimensional affine space.

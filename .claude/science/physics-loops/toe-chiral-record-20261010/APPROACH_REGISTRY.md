@@ -321,3 +321,16 @@ sums `2`, `-4`, and `-1`.
 Family not used: a sum of two parity kernels with a nonzero excluded
 coefficient. That remains open. The 300-dimensional affine space is
 not this family.
+
+Cycle 32 target contract: whether a vector with two or more nonzero
+parity-kernel coefficients and a nonzero excluded coefficient, inside
+the two ratio spans of the oblique-matched plane, can pair with a
+nonzero ten-kernel vector and keep every kernel cross sum equal to 0.
+
+Family used: the four bond classes of each span, the eight partner-row
+directions of rank 7, the `4` by `3` scalar matrix, and the witness
+centre pairs `(-2, 0)`, `(0, 2)`, `(0, 0)`, and `(-2, 2)`.
+
+Family not used: a vector outside the two spans, including the sum of
+the chirality cap, the transverse-sign cap, and the matched cross.
+That remains open. The 300-dimensional affine space is not this family.

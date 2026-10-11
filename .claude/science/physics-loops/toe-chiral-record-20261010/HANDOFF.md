@@ -354,17 +354,33 @@ Oblique plus twice matched against oblique has witness cross sum `-1`.
 A sum of two parity kernels is outside this ansatz. The ten-kernel
 coefficient span is not classified. Runner `PASS=10 FAIL=0`.
 
+Cycle 32. On the same alphabet the two ratio spans of the
+oblique-matched plane each have dimension 3. A nonzero vector in
+either span has two or more nonzero parity-kernel coefficients and a
+nonzero excluded coefficient exactly when it is off that span's
+oblique-matched line. Every nonzero vector in either span has a
+three-dimensional partner kernel. On height pairs `(1, 2)`, `(2, 1)`,
+`(2, 3)`, and `(3, 2)` the partner kernel is the same span. On
+`(1, 3)` and `(3, 1)` the two spans exchange. Minus the swapped cross
+plus the swapped transverse dot plus the orthogonal cross, at height
+1, has every kernel cross sum equal to 0 against matched plus oblique
+at height 2. The centre pairs on `-e_x` and `-e_y` are `(-2, 0)` and
+`(0, 2)`. The same vectors at heights 1 and 3 have centre pairs
+`(0, 0)` and `(-2, 2)` and kernel cross sum `-4`. A vector outside
+both spans is not in this count. The ten-kernel coefficient span is
+not classified. Runner `PASS=10 FAIL=0`.
+
 ## Next exact action
 
-Decide whether a vector with two or more nonzero parity-kernel
-coefficients and a nonzero excluded coefficient can pair with a
-nonzero ten-kernel vector and still have every cross moment equal to
-0. Each plane of one parity kernel and one excluded kernel is settled.
-Do not claim the ten-kernel coefficient span is settled. Do not claim
-the 300-dimensional affine space is classified. Do not repeat the
-bond-space dimension count. Do not return to the modulus-3 triple. Do
-not invent a formation rate. Do not return to shells, plaquette corner
-weights, or the `(0,1,2)` and `(1,1,2)` alphabets.
+Decide whether the sum of the chirality cap, the transverse-sign cap,
+and the matched transverse cross can pair with a nonzero ten-kernel
+vector and still have every cross moment equal to 0. That vector lies
+outside both ratio spans. Do not claim the ten-kernel coefficient
+span is settled. Do not claim the 300-dimensional affine space is
+classified. Do not repeat the bond-space dimension count. Do not
+return to the modulus-3 triple. Do not invent a formation rate. Do not
+return to shells, plaquette corner weights, or the `(0,1,2)` and
+`(1,1,2)` alphabets.
 
 ## Cleanup
 

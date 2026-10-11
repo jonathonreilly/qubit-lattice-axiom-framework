@@ -371,3 +371,18 @@
   basis is the cycle-26 note. The bond-space dimension count is not
   repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 32
+
+- The ansatz is the two rational spans named as the partner kernels of
+  the oblique-matched plane at ratios `1` and `-1`. A vector outside
+  both spans is not in this count. The chirality cap is one coordinate
+  those spans do not use.
+- The checked sums are two-centre kernel cross sums. A kernel cross
+  sum is not an alphabet mean.
+- The order-blind converse is not applied. The parity kernels are the
+  cycle-29 note. The ten-kernel basis is the cycle-26 note. The two
+  triples are named in the cycle-31 note and their cross sums are
+  recomputed here. The bond-space dimension count is not repeated.
+  The 300-dimensional affine space is not classified.
+- No formation site, probability, or rate is imported.

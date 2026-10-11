@@ -511,3 +511,22 @@ rank whenever both coefficients are nonzero. The oblique-matched plane
 has a three-dimensional partner kernel at ratios `1` and `-1`. A sum
 of two parity kernels stays outside this ansatz. The ten-kernel
 coefficient span stays open.
+
+## Cycle 32
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether the sum of the chirality cap, the transverse-sign cap, and the matched transverse cross can pair with a nonzero ten-kernel vector and still have every cross moment equal to 0. That vector lies outside both spans. Do not claim the ten-kernel coefficient span is settled."
+```
+
+Inside each of the two ratio spans, every nonzero vector off the
+oblique-matched line has two or more nonzero parity-kernel
+coefficients and a nonzero excluded coefficient, and every nonzero
+vector has a three-dimensional partner kernel. A vector outside both
+spans stays outside this ansatz. The ten-kernel coefficient span stays
+open.

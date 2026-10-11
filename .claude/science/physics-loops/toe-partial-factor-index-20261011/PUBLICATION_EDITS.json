@@ -1,0 +1,76 @@
+{
+  "outputs": [
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/APPROXIMATE_PARTIAL_FACTOR_INDEX_PROBE.md",
+      "source_sha256": "bccf07d0ca041c9c0585beccb912ac35e1da12deadae3c50efb78d439cb9b441",
+      "preserved_source": "evidence/APPROXIMATE_PARTIAL_FACTOR_INDEX_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "---\nactual_current_surface_status:",
+          "after": "---\nclaim_id: approximate_partial_factor_index_bounded_theorem_note_2026-10-11\nclaim_type: bounded_theorem\nclaim_scope: \"For spin-chain automorphisms satisfying explicit uniform tails and full-interior block-norm control, a quantified partial-factor index inequality yields a normalized O(log^2 L/L) tube bound. Microscopic finite-range Hamiltonian constants are matched; the full-algebra shift identity and physical representation premises remain supplied.\"\nupstream_dependencies: []\nrunner: scripts/approximate_partial_factor_index_2026_10_11.py\nactual_current_surface_status:",
+          "reason": "Publication metadata; no new physical dependency."
+        },
+        {
+          "before": "Author research probe, 2026-10-11. Independent review pending.",
+          "after": "Source date: 2026-10-11. Status: conditional-support. The complete mathematical argument received a separate source review; no audit verdict or retained status is applied.",
+          "reason": "Record the completed source-bound review without changing status authority."
+        },
+        {
+          "before": "The target is N1 Section 2.2's unproved approximate partial-factor lemma:",
+          "after": "The target is N1 Section 2.2's previously unproved approximate partial-factor lemma:",
+          "reason": "Distinguish the original source obligation from the new proof."
+        },
+        {
+          "before": "Its exact source, B1/M1 premises and prior assessment are copied under `partial_factor_index/sources/`; identities are in `partial_factor_index/SOURCE_IDENTITIES.json`. N1 is unchanged in the later revision reported by the parent. New Y1/RZ material is outside this probe.",
+          "after": "Its exact source, B1/M1 premises and prior assessment are preserved in the [milestone packet](../.claude/science/physics-loops/toe-partial-factor-index-20261011/), with original identities in EVIDENCE_MAP.json. N1 is unchanged through candidate-law revision `407f99203a553b336f98e832213045ed49f7fc13`. New Y1/RZ material is outside this theorem.",
+          "reason": "Make source recovery and latest checked identity explicit."
+        },
+        {
+          "before": "The primary support runner is `partial_factor_index/partial_factor_controls.py`; its complete baseline, mutation failures and execution identities are recorded in that directory's receipt.",
+          "after": "The publication runner is [finite partial-factor controls](../scripts/approximate_partial_factor_index_2026_10_11.py). The milestone packet preserves the original author runner, full baseline and mutation records, the separate review, and publication execution identities.",
+          "reason": "Point to the self-contained publication runner and preserved source evidence."
+        },
+        {
+          "before": "Independent review of this authored proof and the extracted constants remains pending. No Lean verification, audit outcome, source edit to PR9476, or future publication packet is asserted. The source receipt, baseline and actual source-mutant logs are supporting evidence at their exact identities, not a replacement for those remaining checks.",
+          "after": "Independent review of the complete proof and extracted constants found no material correction at the stated mathematical scope. Its report SHA-256 is `9118707fdcc85cdfd0a1160598872fb8544a9de757b3a1efe8e93292719c533c`; the milestone packet records the full reconstruction, source coverage and independent geometric check. No Lean verification, audit outcome or source edit to PR9476 is claimed. Original receipts and finite controls remain supporting evidence at their exact identities; they do not replace the analytic proof or the independent audit path.",
+          "reason": "Replace superseded author status with actual reviewed scope."
+        },
+        {
+          "before": "This is mathematical retirement of the named approximate-index estimate under imports already identified by N1.",
+          "after": "This proves the named approximate-index estimate under imports already identified by N1.",
+          "reason": "Avoid confusing a mathematical proof with a repository status action."
+        },
+        {
+          "before": "Those three steps remain priority targets for independent review.",
+          "after": "Those three steps were explicit targets of the independent source reconstruction.",
+          "reason": "Record actual review coverage."
+        },
+        {
+          "before": "This external author probe does not request a formal no-go packet PASS, apply an audit verdict, or claim independent retained authority.",
+          "after": "This milestone does not request a formal no-go packet PASS, apply an audit verdict, or claim independent retained authority.",
+          "reason": "Identify the publication surface while preserving the authority boundary."
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "docs/APPROXIMATE_PARTIAL_FACTOR_INDEX_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "publication_sha256": "af09c93f146a74e652b7bc14b2de4cba33ac4fe36be650f489d9ed815a2a27bc"
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/partial_factor_index/partial_factor_controls.py",
+      "source_sha256": "f48ad394b16fb96d31f4841defeafa2598a4131f04c8726ce0909e4c799fee9e",
+      "preserved_source": "evidence/partial_factor_index/partial_factor_controls.py.gz",
+      "edits": [
+        {
+          "before": "from fractions import Fraction\n",
+          "after": "AUDIT_TIMEOUT_SEC = 120\nAUDIT_INPUT_PATHS = [\n    \"docs/APPROXIMATE_PARTIAL_FACTOR_INDEX_BOUNDED_THEOREM_NOTE_2026-10-11.md\",\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: finite control assertions must be enabled\")\n\nfrom fractions import Fraction\n",
+          "reason": "Declare timeout/input and reject optimized execution; no control body changed."
+        }
+      ],
+      "appended_text": "\nprint(\"per_element: exact Weyl, Bell, entropy-count and rational geometric identities checked in the declared fixtures\")\nprint(\"per_site: finite qubit-factor matrices and single-site/full-block error discriminators checked\")\nprint(\"per_mode: checked and not executed \u2014 the theorem uses full algebra map norms, not Fourier-mode sampling\")\nprint(\"per_block: explicit full interior/reference density matrices checked; no claim of exhausting every block dimension\")\nprint(\"lattice_wide: checked and not executed \u2014 infinite-chain index and thermodynamic results use matched primary theorems and analytic proofs\")\nprint(\"TOTAL: PASS=33 FAIL=0\")\nprint(\"SCOPE: finite author-control records only; no audit verdict or infinite-chain proof by enumeration\")\n",
+      "publication_path": "scripts/approximate_partial_factor_index_2026_10_11.py",
+      "publication_sha256": "02911089b93ec2feef68453997af046db2a0141f0d8fe71e7731a806189c8298"
+    }
+  ]
+}

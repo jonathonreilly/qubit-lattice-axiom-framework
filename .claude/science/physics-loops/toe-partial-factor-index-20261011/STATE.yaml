@@ -1,0 +1,11 @@
+loop: toe-partial-factor-index-20261011
+mode: milestone_snapshot
+active_branch: physics-loop/toe-partial-factor-index-20261011
+base_revision: a13caa4885f547c8d206265b031ba7649e539fd9
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+milestone: approximate_partial_factor_index_and_uniform_tube_scaling
+pr_status: ready_for_regular_PR
+next_action: open_regular_PR_after_final_staged_checks
+live_checkpoint: toe-dynamics-bridge-20261009_in_transport_worktree
+stop_condition: fixed_campaign_deadline_2026-10-12T16:00:52Z

@@ -1,6 +1,6 @@
 {
  "edge_count": 15418,
- "node_count": 6869,
+ "node_count": 6870,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1965,6 +1965,10 @@
   "antigravity_sign_selector_boundary_note": {
    "deps_hash": "0891dc6c0e92",
    "out_degree": 11
+  },
+  "approximate_partial_factor_index_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "architecture_note_directional_measure": {
    "deps_hash": "d48c8e4fa4ad",

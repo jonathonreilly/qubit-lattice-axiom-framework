@@ -1,0 +1,27 @@
+[
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+    "sha256": "ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8",
+    "bytes": 25603
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md",
+    "sha256": "78c3bc3c8f223b988713cb5bd5210c1a801e8cdc5f428ee648d6284c400d97d6",
+    "bytes": 16476
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/receipt.json",
+    "sha256": "283511b410dafa614c1e4453483b540e744604e66b538a803516c8294379267f",
+    "bytes": 12291
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/receipt.json",
+    "sha256": "4f1512919a9e4aa41cac168882d3975e4b95f72cd4620876aa7cc959201c9048",
+    "bytes": 59080
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.lean",
+    "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+    "bytes": 6711
+  }
+]

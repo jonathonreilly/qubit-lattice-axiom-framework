@@ -1,0 +1,207 @@
+{
+  "validated_at_utc": "2026-10-11T21:57:32.377239+00:00",
+  "receipt_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/receipt.json",
+  "receipt_sha256": "84be0fc8b21555b5000d99c8cf7cb91a1ffa7638f565a040039674da4b6b3cb9",
+  "all_match": true,
+  "binding_count": 28,
+  "distinct_paths": 28,
+  "bindings": [
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_RIGIDITY_STABILITY_PROBE.md",
+      "expected_sha256": "61f240d5e35f9c94d759f63e1d94c2a0677e53f52752c53700faeb50a546039a",
+      "actual_sha256": "61f240d5e35f9c94d759f63e1d94c2a0677e53f52752c53700faeb50a546039a",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/receipt.json",
+      "expected_sha256": "5cdd8a3d902e1034f1ae81ac90f6cdec87d6b65b61d4b2781fbb8d3a249bc905",
+      "actual_sha256": "5cdd8a3d902e1034f1ae81ac90f6cdec87d6b65b61d4b2781fbb8d3a249bc905",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+      "expected_sha256": "ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8",
+      "actual_sha256": "ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md",
+      "expected_sha256": "78c3bc3c8f223b988713cb5bd5210c1a801e8cdc5f428ee648d6284c400d97d6",
+      "actual_sha256": "78c3bc3c8f223b988713cb5bd5210c1a801e8cdc5f428ee648d6284c400d97d6",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity_review/receipt.json",
+      "expected_sha256": "1c3c02926c6c35277fdde7a4b174b85d2471c3c3ec4da9d39681a3c9f2f68de7",
+      "actual_sha256": "1c3c02926c6c35277fdde7a4b174b85d2471c3c3ec4da9d39681a3c9f2f68de7",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EVOLVED_BOOST_REVIEW.md",
+      "expected_sha256": "9cd540482c4cef79471530223dbbde93d36a6ba0aded1c99becf36a68ae263b9",
+      "actual_sha256": "9cd540482c4cef79471530223dbbde93d36a6ba0aded1c99becf36a68ae263b9",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/evolved_boost_review/receipt.json",
+      "expected_sha256": "df93dd7a3b238828d830f9b965b4f105078bba834b277e3483db34a3451c7d84",
+      "actual_sha256": "df93dd7a3b238828d830f9b965b4f105078bba834b277e3483db34a3451c7d84",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/LEAN_RIGIDITY_STATEMENT_REVIEW.md",
+      "expected_sha256": "14d5a11bf7476975b8067fd5d9c7f9e91381804a1b926fb324ff5b9bfd57b519",
+      "actual_sha256": "14d5a11bf7476975b8067fd5d9c7f9e91381804a1b926fb324ff5b9bfd57b519",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean_review/receipt.json",
+      "expected_sha256": "974549d47ca67a1f82591d5cef2ab3fa3a2d5854b3b2404dfa58f265364c00a6",
+      "actual_sha256": "974549d47ca67a1f82591d5cef2ab3fa3a2d5854b3b2404dfa58f265364c00a6",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.lean",
+      "expected_sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+      "actual_sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/receipt.json",
+      "expected_sha256": "4f1512919a9e4aa41cac168882d3975e4b95f72cd4620876aa7cc959201c9048",
+      "actual_sha256": "4f1512919a9e4aa41cac168882d3975e4b95f72cd4620876aa7cc959201c9048",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_NOTE.md",
+      "expected_sha256": "284686962fe4cce3c59a93b89a9fc33776ffa2310dbc9c8e9c1e8bda809d049e",
+      "actual_sha256": "284686962fe4cce3c59a93b89a9fc33776ffa2310dbc9c8e9c1e8bda809d049e",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_memory_transfer_2026_10_11.py",
+      "expected_sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d",
+      "actual_sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "expected_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "actual_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/proof-search-governance.md",
+      "expected_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "actual_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/AGENTS.md",
+      "expected_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "actual_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "matches": true
+    },
+    {
+      "group": "inputs",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "expected_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "actual_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "matches": true
+    },
+    {
+      "group": "artifacts",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_RIGIDITY_STABILITY_REVIEW.md",
+      "expected_sha256": "6fc511af23a82defd672c9c2c2febd7aa542604a9fbac25fd9e1438119504eee",
+      "actual_sha256": "6fc511af23a82defd672c9c2c2febd7aa542604a9fbac25fd9e1438119504eee",
+      "matches": true
+    },
+    {
+      "group": "artifacts",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/CHECKPOINT.md",
+      "expected_sha256": "e337040f4e155145b47ef065d09caf2653d5ab1f884110ea840be3c446770e7b",
+      "actual_sha256": "e337040f4e155145b47ef065d09caf2653d5ab1f884110ea840be3c446770e7b",
+      "matches": true
+    },
+    {
+      "group": "artifacts",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/PRE_HELPER_RECONSTRUCTION.md",
+      "expected_sha256": "742714f8771096b92d43ae2014e92a381960e99f7f3865e63fdcf735006ad884",
+      "actual_sha256": "742714f8771096b92d43ae2014e92a381960e99f7f3865e63fdcf735006ad884",
+      "matches": true
+    },
+    {
+      "group": "artifacts",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/freeze_review.py",
+      "expected_sha256": "37a5af9d91c709f00faf2aaa6ebccff27d531e2020dfeb2767a69d6a18e1bcc3",
+      "actual_sha256": "37a5af9d91c709f00faf2aaa6ebccff27d531e2020dfeb2767a69d6a18e1bcc3",
+      "matches": true
+    },
+    {
+      "group": "artifacts",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/independent_execution.json",
+      "expected_sha256": "e6833cdf0d517573efddee7b7ed59401902cf8ba101fd09d139c661c72108e30",
+      "actual_sha256": "e6833cdf0d517573efddee7b7ed59401902cf8ba101fd09d139c661c72108e30",
+      "matches": true
+    },
+    {
+      "group": "artifacts",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/pre_helper_receipt.json",
+      "expected_sha256": "3121c8a131e23e8f146461e4b9c6d704da0a13c130e098dc4e9bb87d8206c4af",
+      "actual_sha256": "3121c8a131e23e8f146461e4b9c6d704da0a13c130e098dc4e9bb87d8206c4af",
+      "matches": true
+    },
+    {
+      "group": "artifacts",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/run_control.py",
+      "expected_sha256": "23d26c2564264b29e75587737d1f3bd0bdcf1cea301a11d30ef66423a645ba18",
+      "actual_sha256": "23d26c2564264b29e75587737d1f3bd0bdcf1cea301a11d30ef66423a645ba18",
+      "matches": true
+    },
+    {
+      "group": "artifacts",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/smooth_current_control.log",
+      "expected_sha256": "0a33571925e57455683a1d477c9d5de6d32a21dc3b2621a3fbe6df5eb02d0819",
+      "actual_sha256": "0a33571925e57455683a1d477c9d5de6d32a21dc3b2621a3fbe6df5eb02d0819",
+      "matches": true
+    },
+    {
+      "group": "artifacts",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/smooth_current_control.py",
+      "expected_sha256": "1a6213c3a93757328b68ab71fccca2d6bb8494528d544cc0f5b2c9d9736676ba",
+      "actual_sha256": "1a6213c3a93757328b68ab71fccca2d6bb8494528d544cc0f5b2c9d9736676ba",
+      "matches": true
+    },
+    {
+      "group": "artifacts",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/source_verification.json",
+      "expected_sha256": "6c5afbf8feae978b83841f6b6372bc87a472d9ce8f78a7147e927e71aafb6729",
+      "actual_sha256": "6c5afbf8feae978b83841f6b6372bc87a472d9ce8f78a7147e927e71aafb6729",
+      "matches": true
+    },
+    {
+      "group": "artifacts",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/verify_sources.py",
+      "expected_sha256": "ba61150c11097a42bd82bff6794bdff076ef0b1ea5df0f6c333be34dec04acd1",
+      "actual_sha256": "ba61150c11097a42bd82bff6794bdff076ef0b1ea5df0f6c333be34dec04acd1",
+      "matches": true
+    }
+  ],
+  "author_evidence_nested_bindings_also_rechecked": true
+}

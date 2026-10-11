@@ -1,6 +1,6 @@
 {
- "edge_count": 15418,
- "node_count": 6869,
+ "edge_count": 15419,
+ "node_count": 6871,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -11873,6 +11873,14 @@
   "internal_external_su2_merger_record_invariance_companion_note_2026-06-04": {
    "deps_hash": "75cc1b6116cd",
    "out_degree": 2
+  },
+  "interspecies_collision_current_rigidity_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "interspecies_rigidity_stability_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "0c671e841ac3",
+   "out_degree": 1
   },
   "inverse_problem_graph_requirements_note": {
    "deps_hash": "2cb75aeac319",

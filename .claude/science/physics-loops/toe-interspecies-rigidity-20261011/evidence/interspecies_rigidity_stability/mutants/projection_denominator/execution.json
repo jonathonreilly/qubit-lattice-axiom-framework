@@ -1,0 +1,19 @@
+{
+  "name": "projection_denominator",
+  "before": "d11.T / norm2(d11)",
+  "after": "d11.T",
+  "replacements": 2,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator/stability_controls.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator",
+  "timeout_seconds": 120,
+  "timed_out": false,
+  "elapsed_seconds": 0.23487162496894598,
+  "exit_code": 1,
+  "intended_failure": true,
+  "expected_diagnostic": "assert coeff * B == R",
+  "source_sha256": "3acb84797ebc4c4d4b350352841846aa8f1758450ac29db137b526488bd6d998",
+  "log_sha256": "03d8dc6f5c14a5337567f871c3ce951358ec8647a3e9291e0f533243e6fe9fb1"
+}

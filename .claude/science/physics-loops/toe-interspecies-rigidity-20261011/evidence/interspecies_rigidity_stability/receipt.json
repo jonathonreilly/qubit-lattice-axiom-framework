@@ -1,0 +1,1019 @@
+{
+  "schema": "source_bound_authored_mathematics_receipt_v1",
+  "frozen_at_utc": "2026-10-11T21:42:34.024334+00:00",
+  "task": "Explicit quantitative stability of labeled cross-species rigidity",
+  "claim_type": "bounded_theorem",
+  "actual_current_surface_status": "conditional-support",
+  "independent_review": "pending",
+  "audit_verdict": null,
+  "selected_model_and_effort": "unchanged; no delegation",
+  "strongest_statement": {
+    "domain": "arbitrary labeled subsets of R3 with velocity diameter <= D",
+    "conditioning": "six anchors, sigma_min[u,v,d]>=sigma; both third-anchor line heights>=h",
+    "hypothesis": "normalized perpendicular cross-secant error <= epsilon on every nonzero cross edge",
+    "conclusion": "one explicit lambda,b; all residuals <= C epsilon, C <= 5586(D/h)^2(D/sigma)^5",
+    "wedge_variant": "uniform unnormalized wedge error omega gives residual <=2C omega/sigma",
+    "exception_scope": "equal velocities, duplicate labels, arbitrary near/opposite-line positions; no minimum all-pair speed"
+  },
+  "conditional_interfaces": [
+    "C1 integration with intrinsic path-distance factor",
+    "current Hessian approximation requires secant control of DJ rows and the exact specified gradient current",
+    "cubic profile additionally requires individual species scalar symmetry and invariant domains with finite intrinsic diameter",
+    "small value defect implies derivative control only with a separately supplied curve scale and second-derivative bound"
+  ],
+  "counterexamples": [
+    "connected bounded full-span images, fixed initial noncoplanarity: defect<=delta/2 but every homothety error>=1/6",
+    "small sinusoidal charge amplitude with arbitrarily large regular-shell tangent derivative"
+  ],
+  "reading_coverage": {
+    "frozen_exact_note": "complete 559-line source at its requested SHA256",
+    "frozen_independent_review": "complete source at requested SHA256",
+    "new_note": "entire argument S1-S31, then all changed formatting/evidence lines",
+    "new_helper": "complete 262-line final source; no prior helper imported",
+    "wrappers": "complete run_controls.py, run_mutants.py, freeze_receipt.py",
+    "logs": "complete baseline and all four intended assertion-failure tracebacks",
+    "rational_certificates": "generated exact matrix identity checked for every entry; no claim of manually reading every numeric entry",
+    "old_receipts": "source/artifact identities inspected and rehashed; not a new full reading of old Lean/memory arguments",
+    "truncation_recovery": "initial combined instruction display truncated; applicable reference text recovered in bounded calls"
+  },
+  "independence_limits": "Authored extension. Finite dual certificates use a different algebraic formulation, not a separate author/reviewer. Old exact review/Lean evidence does not certify new inequalities.",
+  "proof_imports": "Elementary Euclidean linear algebra and integration only; no external theorem, physical primitive, or literature value imported.",
+  "search_scope": "Bounded stored-local-ref search only; commands/results in bounded_search.json. No freshness or global novelty claim.",
+  "failed_routes": "Pointwise angle division loses uniformity at exceptional lines; finite inverse alone hides conditioning; value-defect differentiation fails. No failed baseline process.",
+  "baseline_execution": {
+    "command": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/runs/baseline01/stability_controls.py"
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/runs/baseline01",
+    "timeout_seconds": 120,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_seconds": 0.4063871670514345,
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "source_sha256": "f468cc2d3e67ae7f1337ea859a1fe7579f719440e628954884f2e92b3752bc7f"
+  },
+  "mutations": {
+    "base_source_sha256": "f468cc2d3e67ae7f1337ea859a1fe7579f719440e628954884f2e92b3752bc7f",
+    "mutants": [
+      {
+        "name": "cycle_sign",
+        "before": "-l11+l21-l22+l12",
+        "after": "-l11+l21+l22-l12",
+        "replacements": 1,
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/cycle_sign/stability_controls.py"
+        ],
+        "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/cycle_sign",
+        "timeout_seconds": 120,
+        "timed_out": false,
+        "elapsed_seconds": 0.25362466694787145,
+        "exit_code": 1,
+        "intended_failure": true,
+        "expected_diagnostic": "assert (cycle - M*c).applyfunc(sp.expand) == ZERO",
+        "source_sha256": "52b18b8104cd47b08283fb4b5dac29d47293607a22c7898d24f9ae817c0d99bf",
+        "log_sha256": "cb6d11a53e4927793e4eee1605ecdf7f932ccc9669ff365a6b5fff50bece1322"
+      },
+      {
+        "name": "projection_denominator",
+        "before": "d11.T / norm2(d11)",
+        "after": "d11.T",
+        "replacements": 2,
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator/stability_controls.py"
+        ],
+        "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator",
+        "timeout_seconds": 120,
+        "timed_out": false,
+        "elapsed_seconds": 0.23487162496894598,
+        "exit_code": 1,
+        "intended_failure": true,
+        "expected_diagnostic": "assert coeff * B == R",
+        "source_sha256": "3acb84797ebc4c4d4b350352841846aa8f1758450ac29db137b526488bd6d998",
+        "log_sha256": "03d8dc6f5c14a5337567f871c3ce951358ec8647a3e9291e0f533243e6fe9fb1"
+      },
+      {
+        "name": "drop_extra_anchor_height",
+        "before": "rho, tau = D / sigma, D / h",
+        "after": "rho, tau = D / sigma, sp.Integer(1)",
+        "replacements": 1,
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/stability_controls.py"
+        ],
+        "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height",
+        "timeout_seconds": 120,
+        "timed_out": false,
+        "elapsed_seconds": 0.25461029121652246,
+        "exit_code": 1,
+        "intended_failure": true,
+        "expected_diagnostic": "h conditioning cannot be dropped",
+        "source_sha256": "0343ebc0dcc9af7a4c5d9b3424e9b276e30253304e2efb34adc73642b08688ea",
+        "log_sha256": "f84503e7c9df7b44f07b4c3f98074696d948928cbc62e46af29a4709a26d3000"
+      },
+      {
+        "name": "drop_wedge_inverse_scale",
+        "before": "return 2 * C * omega / sigma",
+        "after": "return 2 * C * omega",
+        "replacements": 1,
+        "command": [
+          "/opt/homebrew/opt/python@3.13/bin/python3.13",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/stability_controls.py"
+        ],
+        "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale",
+        "timeout_seconds": 120,
+        "timed_out": false,
+        "elapsed_seconds": 0.2769102081656456,
+        "exit_code": 1,
+        "intended_failure": true,
+        "expected_diagnostic": "wedge factor 1/sigma is necessary",
+        "source_sha256": "36ff5e7e8ae9f751e5b1acf597ca65db6616b9b74e062f489d453102a6321a20",
+        "log_sha256": "80ccf791737f34ef0c71ebb48fd7e4bbf6f9daf3697ed391509b78b90ad8243a"
+      }
+    ],
+    "scope": "Four selected mathematical/source controls, not exhaustive mutation coverage."
+  },
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "installation_changes": false,
+    "global_configuration_changes": false
+  },
+  "protected_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+      "relative_to_S": "INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+      "role": "initial frozen source guard",
+      "sha256": "ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8",
+      "bytes": 25603,
+      "logical_lines": 559
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md",
+      "relative_to_S": "INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md",
+      "role": "initial frozen source guard",
+      "sha256": "78c3bc3c8f223b988713cb5bd5210c1a801e8cdc5f428ee648d6284c400d97d6",
+      "bytes": 16476,
+      "logical_lines": 268
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/receipt.json",
+      "relative_to_S": "interspecies_current_rigidity/receipt.json",
+      "role": "initial frozen source guard",
+      "sha256": "283511b410dafa614c1e4453483b540e744604e66b538a803516c8294379267f",
+      "bytes": 12291,
+      "logical_lines": 234
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/receipt.json",
+      "relative_to_S": "interspecies_rigidity_lean/receipt.json",
+      "role": "initial frozen source guard",
+      "sha256": "4f1512919a9e4aa41cac168882d3975e4b95f72cd4620876aa7cc959201c9048",
+      "bytes": 59080,
+      "logical_lines": 1136
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.lean",
+      "relative_to_S": "interspecies_rigidity_lean/RigidityGeometry.lean",
+      "role": "initial frozen source guard",
+      "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+      "bytes": 6711,
+      "logical_lines": 146
+    }
+  ],
+  "prior_artifact_groups": [
+    {
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/receipt.json",
+      "receipt_sha256": "283511b410dafa614c1e4453483b540e744604e66b538a803516c8294379267f",
+      "checked_artifacts": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+          "relative_to_S": "INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8",
+          "bytes": 25603,
+          "logical_lines": 559
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/CHECKPOINT.md",
+          "relative_to_S": "interspecies_current_rigidity/CHECKPOINT.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "c4e93ced25c267203bc3a755266ab2a92b79e918d6ac6635065e4d5d3b58eb8c",
+          "bytes": 2061,
+          "logical_lines": 13
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/DEVELOPMENT_LOG.md",
+          "relative_to_S": "interspecies_current_rigidity/DEVELOPMENT_LOG.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "7de7d35ec5a2a94edab074dc3e5825561fb219878ee0494bef4dbdf4b011f7c3",
+          "bytes": 2442,
+          "logical_lines": 11
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/controls.log",
+          "relative_to_S": "interspecies_current_rigidity/controls.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "ca64e8ebd980711ae0b4b5d50429b77e8545551506cfc17caf6c9f9c0e21a8b6",
+          "bytes": 1612,
+          "logical_lines": 14
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/execution.json",
+          "relative_to_S": "interspecies_current_rigidity/execution.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "45084032f60479e7a4fc4d86276700a7cfe3116315e1da96448e2e9907bf8b74",
+          "bytes": 609,
+          "logical_lines": 13
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/prior_art_search.log",
+          "relative_to_S": "interspecies_current_rigidity/prior_art_search.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "a61bf75e53f8065827cff2d23ba9796e08b20bfb461409ada5532fe41f158c32",
+          "bytes": 6673,
+          "logical_lines": 8
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/rigidity_controls.py",
+          "relative_to_S": "interspecies_current_rigidity/rigidity_controls.py",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "9fd94231d6336964e5b6556396d31363c9ab5aaf4f17298d73d8ad5c3afa3b4e",
+          "bytes": 7697,
+          "logical_lines": 209
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/source_checks.json",
+          "relative_to_S": "interspecies_current_rigidity/source_checks.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "ab7b78728b304cd7319c4dee5365562dbdb2397bab4ad3086fa70c6f383aec25",
+          "bytes": 2269,
+          "logical_lines": 45
+        }
+      ]
+    },
+    {
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/receipt.json",
+      "receipt_sha256": "4f1512919a9e4aa41cac168882d3975e4b95f72cd4620876aa7cc959201c9048",
+      "checked_artifacts": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/AxiomInventory.lean",
+          "relative_to_S": "interspecies_rigidity_lean/AxiomInventory.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "af15ddd780bf3f20a2122bfb39f74c4f7edba48b16dcfdd19e3123263ae1e7f4",
+          "bytes": 916,
+          "logical_lines": 17
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/AxiomInventory.olean",
+          "relative_to_S": "interspecies_rigidity_lean/AxiomInventory.olean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "e9bcdf88b1098bcd8593f9b6706f7ad5accc8958caa4e26c79cbe5298e2014d5",
+          "bytes": 1144,
+          "logical_lines": null
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/CHECKPOINT.md",
+          "relative_to_S": "interspecies_rigidity_lean/CHECKPOINT.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "54fe81169c033d7b7b2506c2df727b21743a220a4e3e509bfdcf5bdc911f9ea5",
+          "bytes": 1377,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.lean",
+          "relative_to_S": "interspecies_rigidity_lean/ControlData.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af",
+          "bytes": 3404,
+          "logical_lines": 91
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.olean",
+          "relative_to_S": "interspecies_rigidity_lean/ControlData.olean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "81b1699900381d68a9b8bce7a3c3fe6ade4e5eaf3271c3067601a1aeb8ea581a",
+          "bytes": 588088,
+          "logical_lines": null
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCoplanarResidual.lean",
+          "relative_to_S": "interspecies_rigidity_lean/FalseCoplanarResidual.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3",
+          "bytes": 350,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCycleSign.lean",
+          "relative_to_S": "interspecies_rigidity_lean/FalseCycleSign.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173",
+          "bytes": 318,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseMissingEdge.lean",
+          "relative_to_S": "interspecies_rigidity_lean/FalseMissingEdge.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa",
+          "bytes": 425,
+          "logical_lines": 10
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseNoNoncoplanarity.lean",
+          "relative_to_S": "interspecies_rigidity_lean/FalseNoNoncoplanarity.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48",
+          "bytes": 335,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.lean",
+          "relative_to_S": "interspecies_rigidity_lean/RigidityGeometry.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+          "bytes": 6711,
+          "logical_lines": 146
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.olean",
+          "relative_to_S": "interspecies_rigidity_lean/RigidityGeometry.olean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "08a9c74f5f2b8f8591b05dd548ed0e42b10b283330536f11254fa1ac63de20e2",
+          "bytes": 659896,
+          "logical_lines": null
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/SCOPED_OBLIGATIONS.md",
+          "relative_to_S": "interspecies_rigidity_lean/SCOPED_OBLIGATIONS.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "059953fa4094c24f2e4c6f4fa3f4140a4f248ec1ec5a299ae7dd037c4d9446bd",
+          "bytes": 1699,
+          "logical_lines": 11
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/SCOPE_REPORT.md",
+          "relative_to_S": "interspecies_rigidity_lean/SCOPE_REPORT.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "7c57cfd772de71e483791bfc8caa4166cf9c51c23b2ae2d11da005148ad8fe24",
+          "bytes": 6894,
+          "logical_lines": 116
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/STATEMENT_MAP.md",
+          "relative_to_S": "interspecies_rigidity_lean/STATEMENT_MAP.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "b1ad69bff414bb6095e8ea5426e832ac0fffd59cf8c7e9d57a652d2fd4b1b468",
+          "bytes": 6154,
+          "logical_lines": 108
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/axioms.txt",
+          "relative_to_S": "interspecies_rigidity_lean/axioms.txt",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "35e6b4915e0c50fbf41c0442b271ddd35ff9aa25d664761692ac3dc7c22140d5",
+          "bytes": 1476,
+          "logical_lines": 14
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/false_controls_manifest.json",
+          "relative_to_S": "interspecies_rigidity_lean/false_controls_manifest.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "b101b464f7ad57ac5901a51a29008830be52b3cddbf9e718d3df6d0b20d5e17e",
+          "bytes": 9580,
+          "logical_lines": 146
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/final_compiler.log",
+          "relative_to_S": "interspecies_rigidity_lean/final_compiler.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "524c550e27cd2fab50e147569f328b6042dcbbb535742a1b1910f504af770490",
+          "bytes": 658,
+          "logical_lines": 6
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/freeze_receipt.py",
+          "relative_to_S": "interspecies_rigidity_lean/freeze_receipt.py",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "a5f42772d945689b749e0b0ccb07ba7c61b9fcad1109f21670fc232cb1e12023",
+          "bytes": 11091,
+          "logical_lines": 160
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt01.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt01.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "326d673ce541947b1bc7bc0b74b4a4e333edec5266dd308458bbdb504edc83d7",
+          "bytes": 1886,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt01.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt01.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "fe9218b0ce105f12ae82ca006dc1d00f43e005510970b99f6c1d3718ea0f8a37",
+          "bytes": 4337,
+          "logical_lines": 93
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt01.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt01.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "914e6b7af5da4bc7be271743fbf1ff3f6876e8e10abf3639737f6d5bbe95ddde",
+          "bytes": 328,
+          "logical_lines": 3
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt02.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt02.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "8b02eb1ce73fac5b1faf9732676ef091519f13962d857112b64380c2ee2f6769",
+          "bytes": 1885,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt02.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt02.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+          "bytes": 6711,
+          "logical_lines": 146
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt02.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt02.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "524c550e27cd2fab50e147569f328b6042dcbbb535742a1b1910f504af770490",
+          "bytes": 658,
+          "logical_lines": 6
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/axiom_inventory.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/axiom_inventory.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "85ed5750b4eefa09e08da59f403a580e041bda2a9005f93aa248ded932b59859",
+          "bytes": 1888,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/axiom_inventory.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/axiom_inventory.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "af15ddd780bf3f20a2122bfb39f74c4f7edba48b16dcfdd19e3123263ae1e7f4",
+          "bytes": 916,
+          "logical_lines": 17
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/axiom_inventory.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/axiom_inventory.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "35e6b4915e0c50fbf41c0442b271ddd35ff9aa25d664761692ac3dc7c22140d5",
+          "bytes": 1476,
+          "logical_lines": 14
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls01.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls01.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "87b53c9073be8417f403e8dfecd92e2d1fc381e3ba589b991691f4124598afca",
+          "bytes": 1877,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls01.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls01.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "7825dd3f0a227fedcb7bbae7c81a01c9739a58502f2db4a4879b0510d881e139",
+          "bytes": 3392,
+          "logical_lines": 91
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls01.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls01.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "460191bc92c6ab1544fcf298348c7f712791b83aa689d13889d443c3a5ca71e5",
+          "bytes": 1460,
+          "logical_lines": 21
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls02.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls02.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "1b7d48d4b2842a0ec099da70f9d14c80b14f9ad99d434acd81e46db4b1584b4b",
+          "bytes": 1876,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls02.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls02.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af",
+          "bytes": 3404,
+          "logical_lines": 91
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls02.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls02.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "d02a5f90246ed313b02a856f6aa8a6ba3766ec74498aab95357dbe53f311f41c",
+          "bytes": 713,
+          "logical_lines": 7
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "f67dffefcce9bb144b419e885703e42cbee4e3d63fd51cd29cdb291013c06a6c",
+          "bytes": 1913,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3",
+          "bytes": 350,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "a49f6c30d309062e284d0980e2d3e80e10b11fcc29caaf92428e46b61f414c13",
+          "bytes": 254,
+          "logical_lines": 4
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.wrapper.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.wrapper.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "8adfe712b8585c89636f52ff56325abe3ba18677feeb694194c55a4d0d6461ea",
+          "bytes": 271,
+          "logical_lines": 6
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCycleSign.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "e064f13c8d04189e4e12d3ba214e316a557ee23556eb3e937bacfc8522609c60",
+          "bytes": 1892,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCycleSign.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173",
+          "bytes": 318,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCycleSign.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "fe87e9af3e508f6a258bf094494ae989d6e4ab51a39b4058002e0fcb43906847",
+          "bytes": 255,
+          "logical_lines": 7
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.wrapper.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCycleSign.wrapper.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "f2d6dda2283152096f71cdcd90c7eee3490c5273c4557b5aa1a5a73b60911ed3",
+          "bytes": 272,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseMissingEdge.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "be94295f6ad29e57066b23346dcada9287f8ad4bc03ac2a10ea4ad73c08eac88",
+          "bytes": 1898,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseMissingEdge.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa",
+          "bytes": 425,
+          "logical_lines": 10
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseMissingEdge.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "b5d242094d3d47c9532178f464545c6eed2599ad61d52a8621dd226ffe9b5b48",
+          "bytes": 247,
+          "logical_lines": 4
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.wrapper.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseMissingEdge.wrapper.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "22fa1d73dc245f206b4dd556881f442e7f4d919f61d0d5b9d65a97009a39a319",
+          "bytes": 264,
+          "logical_lines": 6
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "d8bf6d0aafc7e381fa12d953c95fff32c9d964de652ee87e75d7aaf51c935555",
+          "bytes": 1914,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48",
+          "bytes": 335,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "2304ffd1cfc3e1f7635926d2d0fd069978c4462bbc43d6c5251a7a7a27b38228",
+          "bytes": 239,
+          "logical_lines": 4
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.wrapper.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.wrapper.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "3b1b8ef8aa0ba1891e15bed5a6039f54848b3be9375a374ee3b33c20aadfafa1",
+          "bytes": 256,
+          "logical_lines": 6
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/positive_compiler.log",
+          "relative_to_S": "interspecies_rigidity_lean/positive_compiler.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "d02a5f90246ed313b02a856f6aa8a6ba3766ec74498aab95357dbe53f311f41c",
+          "bytes": 713,
+          "logical_lines": 7
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/run_false_controls.py",
+          "relative_to_S": "interspecies_rigidity_lean/run_false_controls.py",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "1aeb84c116c1786d69940f57dec2c318423cc7691f60f5dbca21f5499ee3d6e0",
+          "bytes": 2494,
+          "logical_lines": 49
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/run_lean.py",
+          "relative_to_S": "interspecies_rigidity_lean/run_lean.py",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "1d57c91acaa62ca7ff4ee09a819afc77bf9fefe0419a4d752ddbb4ca40fb3f42",
+          "bytes": 1910,
+          "logical_lines": 40
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/runtime_identity.json",
+          "relative_to_S": "interspecies_rigidity_lean/runtime_identity.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "8d060e0ac45c048cdeb4240cba7a195ac3a4ee0b8a5c900542a72828f0b55509",
+          "bytes": 1822,
+          "logical_lines": 28
+        }
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_RIGIDITY_STABILITY_PROBE.md",
+      "relative_to_S": "INTERSPECIES_RIGIDITY_STABILITY_PROBE.md",
+      "role": "complete authored conditional stability theorem and adverse examples",
+      "sha256": "61f240d5e35f9c94d759f63e1d94c2a0677e53f52752c53700faeb50a546039a",
+      "bytes": 25659,
+      "logical_lines": 617
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/CHECKPOINT.md",
+      "relative_to_S": "interspecies_rigidity_stability/CHECKPOINT.md",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "77b7f267b05756eec54e26e3efab1308cfebf28ce1c1966d8cc991df07e524be",
+      "bytes": 2627,
+      "logical_lines": 43
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/bounded_search.json",
+      "relative_to_S": "interspecies_rigidity_stability/bounded_search.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "0badc4a8057e36d379b954fc44eb84a4cdd1f6ced7bf9ad0da9d3431b0592dfc",
+      "bytes": 1255,
+      "logical_lines": 31
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/freeze_receipt.py",
+      "relative_to_S": "interspecies_rigidity_stability/freeze_receipt.py",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "3a63a6f551e1b32fb6ef359d6e4f7b33e71f9ef5c511c9e66322a81b83bfb04b",
+      "bytes": 8117,
+      "logical_lines": 126
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/initial_sources.json",
+      "relative_to_S": "interspecies_rigidity_stability/initial_sources.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "fa6334db270803e9390b4611d83979686df8dcb32b9dd8637211faf40341d05d",
+      "bytes": 1243,
+      "logical_lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/cycle_sign/execution.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/cycle_sign/execution.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "cc790c460351b9ff0681e26eb75bfd0f1f950818565d9b7af973c7129f5fc743",
+      "bytes": 872,
+      "logical_lines": 19
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/cycle_sign/full.log",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/cycle_sign/full.log",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "cb6d11a53e4927793e4eee1605ecdf7f932ccc9669ff365a6b5fff50bece1322",
+      "bytes": 827,
+      "logical_lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/cycle_sign/stability_controls.py",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/cycle_sign/stability_controls.py",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "52b18b8104cd47b08283fb4b5dac29d47293607a22c7898d24f9ae817c0d99bf",
+      "bytes": 10762,
+      "logical_lines": 262
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_equal_triangle_anchors.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_equal_triangle_anchors.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "7c50cf2ac3aaa5718f48936a6cc4c4858ceb06ff413137db675b391a520894b6",
+      "bytes": 11289,
+      "logical_lines": 1089
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_nonorthogonal.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_nonorthogonal.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "1c162f60f01f3a7e4b1386c4308cff76bc7454c4b87532e343a82bc258bf71eb",
+      "bytes": 12081,
+      "logical_lines": 1085
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_off_line.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_off_line.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "0952a711723ae71d83738c7703f7c115b814f4c14d15f385555ff6e437b83ff8",
+      "bytes": 11261,
+      "logical_lines": 1085
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_skew_and_duplicates.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_skew_and_duplicates.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "8bede926809d3340f3aa8f15925926115bcf25a9aa61cdcd1f6c2f2e6bf573ad",
+      "bytes": 11262,
+      "logical_lines": 1085
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/execution.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_extra_anchor_height/execution.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "507b1d143d24ffb88069361230ce83fb59eb8c24b8f97a15c860cf2e89856565",
+      "bytes": 927,
+      "logical_lines": 19
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/full.log",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_extra_anchor_height/full.log",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "f84503e7c9df7b44f07b4c3f98074696d948928cbc62e46af29a4709a26d3000",
+      "bytes": 1435,
+      "logical_lines": 19
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/stability_controls.py",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_extra_anchor_height/stability_controls.py",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "0343ebc0dcc9af7a4c5d9b3424e9b276e30253304e2efb34adc73642b08688ea",
+      "bytes": 10770,
+      "logical_lines": 262
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_equal_triangle_anchors.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_equal_triangle_anchors.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "3b874ea9399c2dd8c7439fae1712ed64bbb50adc68b8b8c9fd83a5ed39012d4b",
+      "bytes": 11290,
+      "logical_lines": 1089
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_nonorthogonal.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_nonorthogonal.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "0b9bec006af53ea34dd6f6504c86efb4ee474936c8c167d82cd8a59af01dfd90",
+      "bytes": 12079,
+      "logical_lines": 1085
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_off_line.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_off_line.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "923fdc2ba98262aedffb2351a963651066669f2a6be8e6c05dd51d742a3b7a80",
+      "bytes": 11262,
+      "logical_lines": 1085
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_skew_and_duplicates.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_skew_and_duplicates.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "894746461db1c556e8cc38520585448830b66f398c956d287ce7ee5ebab7c30f",
+      "bytes": 11263,
+      "logical_lines": 1085
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/execution.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/execution.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "acb2dd6dbaeb71ab6e2eddebbbda1f9542df4790c91b36291f986baeddc10489",
+      "bytes": 913,
+      "logical_lines": 19
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/full.log",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/full.log",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "80ccf791737f34ef0c71ebb48fd7e4bbf6f9daf3697ed391509b78b90ad8243a",
+      "bytes": 1476,
+      "logical_lines": 19
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/stability_controls.py",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/stability_controls.py",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "36ff5e7e8ae9f751e5b1acf597ca65db6616b9b74e062f489d453102a6321a20",
+      "bytes": 10754,
+      "logical_lines": 262
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator/certificate_equal_triangle_anchors.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/projection_denominator/certificate_equal_triangle_anchors.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "3b874ea9399c2dd8c7439fae1712ed64bbb50adc68b8b8c9fd83a5ed39012d4b",
+      "bytes": 11290,
+      "logical_lines": 1089
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator/certificate_off_line.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/projection_denominator/certificate_off_line.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "923fdc2ba98262aedffb2351a963651066669f2a6be8e6c05dd51d742a3b7a80",
+      "bytes": 11262,
+      "logical_lines": 1085
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator/certificate_skew_and_duplicates.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/projection_denominator/certificate_skew_and_duplicates.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "894746461db1c556e8cc38520585448830b66f398c956d287ce7ee5ebab7c30f",
+      "bytes": 11263,
+      "logical_lines": 1085
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator/execution.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/projection_denominator/execution.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "8d0995ec50820287641a52152aaf98a9f5ff95462fefd6eb0631a3c2df5022ce",
+      "bytes": 871,
+      "logical_lines": 19
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator/full.log",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/projection_denominator/full.log",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "03d8dc6f5c14a5337567f871c3ce951358ec8647a3e9291e0f533243e6fe9fb1",
+      "bytes": 1284,
+      "logical_lines": 18
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator/stability_controls.py",
+      "relative_to_S": "interspecies_rigidity_stability/mutants/projection_denominator/stability_controls.py",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "3acb84797ebc4c4d4b350352841846aa8f1758450ac29db137b526488bd6d998",
+      "bytes": 10736,
+      "logical_lines": 262
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutation_manifest.json",
+      "relative_to_S": "interspecies_rigidity_stability/mutation_manifest.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "345d8aea9ab600e04e0300437c27b6a45c8a3a69bd1dce6645a87c6dc455cddd",
+      "bytes": 4097,
+      "logical_lines": 82
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/run_controls.py",
+      "relative_to_S": "interspecies_rigidity_stability/run_controls.py",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "30afd406c1a6cdff257ed6f3b36b13b695e4a0af7e5de945be95ec104609326e",
+      "bytes": 1573,
+      "logical_lines": 42
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/run_mutants.py",
+      "relative_to_S": "interspecies_rigidity_stability/run_mutants.py",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "6a755e68fb89e9ce73971f2f246434397ea7749a55a950c5c99af76f31254468",
+      "bytes": 3072,
+      "logical_lines": 67
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/runs/baseline01/certificate_equal_triangle_anchors.json",
+      "relative_to_S": "interspecies_rigidity_stability/runs/baseline01/certificate_equal_triangle_anchors.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "3b874ea9399c2dd8c7439fae1712ed64bbb50adc68b8b8c9fd83a5ed39012d4b",
+      "bytes": 11290,
+      "logical_lines": 1089
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/runs/baseline01/certificate_nonorthogonal.json",
+      "relative_to_S": "interspecies_rigidity_stability/runs/baseline01/certificate_nonorthogonal.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "0b9bec006af53ea34dd6f6504c86efb4ee474936c8c167d82cd8a59af01dfd90",
+      "bytes": 12079,
+      "logical_lines": 1085
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/runs/baseline01/certificate_off_line.json",
+      "relative_to_S": "interspecies_rigidity_stability/runs/baseline01/certificate_off_line.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "923fdc2ba98262aedffb2351a963651066669f2a6be8e6c05dd51d742a3b7a80",
+      "bytes": 11262,
+      "logical_lines": 1085
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/runs/baseline01/certificate_skew_and_duplicates.json",
+      "relative_to_S": "interspecies_rigidity_stability/runs/baseline01/certificate_skew_and_duplicates.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "894746461db1c556e8cc38520585448830b66f398c956d287ce7ee5ebab7c30f",
+      "bytes": 11263,
+      "logical_lines": 1085
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/runs/baseline01/controls.log",
+      "relative_to_S": "interspecies_rigidity_stability/runs/baseline01/controls.log",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "0bd712708a84690e4ac464da092ab66fa41c208f1dcc1dd0cae42574257e45d2",
+      "bytes": 912,
+      "logical_lines": 11
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/runs/baseline01/execution.json",
+      "relative_to_S": "interspecies_rigidity_stability/runs/baseline01/execution.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "7886cc81ed261a645bc1b3f3c129e4dcb2ee9cbd981f6409c7a60285be620374",
+      "bytes": 707,
+      "logical_lines": 14
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/runs/baseline01/stability_controls.py",
+      "relative_to_S": "interspecies_rigidity_stability/runs/baseline01/stability_controls.py",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "f468cc2d3e67ae7f1337ea859a1fe7579f719440e628954884f2e92b3752bc7f",
+      "bytes": 10762,
+      "logical_lines": 262
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/source_checks.json",
+      "relative_to_S": "interspecies_rigidity_stability/source_checks.json",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "6dcf02ed4250ee7b46c7df3c1ee27a9927d481857c70444b6a6a169a492097f2",
+      "bytes": 35196,
+      "logical_lines": 622
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/stability_controls.py",
+      "relative_to_S": "interspecies_rigidity_stability/stability_controls.py",
+      "role": "new helper, snapshot, exact certificate, log, command, checkpoint or source guard",
+      "sha256": "f468cc2d3e67ae7f1337ea859a1fe7579f719440e628954884f2e92b3752bc7f",
+      "bytes": 10762,
+      "logical_lines": 262
+    }
+  ],
+  "remaining_obligations": [
+    "Independent check of S1-S31",
+    "Actual tangent-error and anchor conditioning at application scale",
+    "Physical/current/domain premises remain supplied",
+    "Constant optimality and new Lean formalization not claimed"
+  ],
+  "receipt_self_hash": "reported externally; not included recursively"
+}

@@ -1,0 +1,789 @@
+{
+  "schema": "external-publication-composition-receipt-v1",
+  "frozen_utc": "2026-10-11T21:41:22.849361+00:00",
+  "claim_id": "interspecies_collision_current_rigidity_bounded_theorem_note_2026-10-11",
+  "status": "provisional",
+  "actual_current_surface_status": "conditional-support",
+  "canonical_note": "docs/INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+  "canonical_primary": "scripts/interspecies_collision_current_rigidity_2026_10_11.py",
+  "canonical_evidence_root": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011",
+  "composition_scope": "Author assembly of unchanged I1-I24 mathematics and complete executable author-helper body; new metadata/evidence presentation only.",
+  "independent_mathematical_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md",
+    "sha256": "78c3bc3c8f223b988713cb5bd5210c1a801e8cdc5f428ee648d6284c400d97d6",
+    "status": "completed selective analytic review of frozen proof, not this publication composition"
+  },
+  "scoped_Lean_statement_review": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/LEAN_RIGIDITY_STATEMENT_REVIEW.md",
+    "sha256": "14d5a11bf7476975b8067fd5d9c7f9e91381804a1b926fb324ff5b9bfd57b519",
+    "status": "completed for six declared finite-geometry statements and preserved author compiler evidence; no review compilation"
+  },
+  "checks": {
+    "proof_fragment_byte_identity": "b03944cf7a90d984914e2b54949fb3c80af25689a636f56b68ce98b8174759c6",
+    "helper_body_byte_identity": "b210856e6cf5464f91efa658641642ffdfe99f7f9022cee8e744aa381980d82b",
+    "all_I1_I24_labels_preserved_once": {
+      "I1": 1,
+      "I2": 1,
+      "I3": 1,
+      "I4": 1,
+      "I5": 1,
+      "I6": 1,
+      "I7": 1,
+      "I8": 1,
+      "I9": 1,
+      "I10": 1,
+      "I11": 1,
+      "I12": 1,
+      "I13": 1,
+      "I14": 1,
+      "I15": 1,
+      "I16": 1,
+      "I17": 1,
+      "I18": 1,
+      "I19": 1,
+      "I20": 1,
+      "I21": 1,
+      "I22": 1,
+      "I23": 1,
+      "I24": 1
+    },
+    "historical_receipt_records_rehashed": 235,
+    "distinct_bound_paths": 126,
+    "historical_copies": 82,
+    "compiled_objects_intentionally_omitted": 3,
+    "reconstruction": "exit 0; complete log inspected",
+    "primary_formal_runs": 1,
+    "primary_execution": {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_collision_current_rigidity_2026_10_11.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011",
+      "started_utc": "2026-10-11T21:38:25.178696+00:00",
+      "elapsed_seconds": 0.07185129215940833,
+      "timeout_seconds": 30,
+      "timed_out": false,
+      "exit_code": 0,
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+      "primary_sha256": "3123877c48021d189d288245138a6b7cb0a321141d124ca0b733de8279d7fd12",
+      "log_sha256": "c8acfd4cc0f5f7987889f6e964b09a7882f6707246fb26efe3624372f4a531cf",
+      "scope": "Author finite-evidence replay only; no new analytic proof, independent review, Lean compilation, semantic whole-primary mutants or audit."
+    },
+    "original_output_prefix_byte_identical": true,
+    "relocated_links_bound": [
+      "historical/interspecies_current_rigidity/rigidity_controls.py",
+      "historical/interspecies_current_rigidity/controls.log",
+      "historical/interspecies_current_rigidity/execution.json",
+      "historical/interspecies_current_rigidity/receipt.json"
+    ]
+  },
+  "limits": [
+    "No new independent science review or Lean execution.",
+    "No full theorem formalization or complete upstream-library rebuild/authentication.",
+    "No canonical cache, whole-primary semantic mutants, repository conformance, publication or audit performed.",
+    "No mathematical dependency on historical C1 or candidate PR9476.",
+    "Physical current, conservation, collision measure/selection and domain premises remain application conditions."
+  ],
+  "reading_coverage_and_failures": "PACKAGING_REPORT.md",
+  "no_repository_or_frozen_source_or_prompt_edits": true,
+  "no_runtime_or_installed_dependency_copy": true,
+  "no_network_or_subdelegation": true,
+  "selected_model_and_effort": "unchanged",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_INTERSPECIES_CURRENT_RIGIDITY_NOTE.md",
+      "relative_to_S": "FINAL_INTERSPECIES_CURRENT_RIGIDITY_NOTE.md",
+      "sha256": "148340524d00ce17dd01d3cbe34bca01c7e1ea844021cd4c08c147b9450c30a7",
+      "bytes": 35417,
+      "role": "final publication candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_collision_current_rigidity_2026_10_11.py",
+      "relative_to_S": "interspecies_collision_current_rigidity_2026_10_11.py",
+      "sha256": "3123877c48021d189d288245138a6b7cb0a321141d124ca0b733de8279d7fd12",
+      "bytes": 8648,
+      "role": "final publication candidate"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/CHECKPOINT.md",
+      "relative_to_S": "interspecies_rigidity_publication/CHECKPOINT.md",
+      "sha256": "358da9f46bd037884967f793d40d7eabda7069f2115a9a4d00483060f0bf4c04",
+      "bytes": 1132,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/PACKAGING_REPORT.md",
+      "relative_to_S": "interspecies_rigidity_publication/PACKAGING_REPORT.md",
+      "sha256": "7a26250d71ad7303a7719d8453a647e85ab74d11851caceab0cf379af5f460e3",
+      "bytes": 9858,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/SOURCE_COMPOSITION.json",
+      "relative_to_S": "interspecies_rigidity_publication/SOURCE_COMPOSITION.json",
+      "sha256": "8f85461788616992bc48523951f7b010a20f1bcc7580504cc81f40ddad4441f0",
+      "bytes": 54227,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/assemble.py",
+      "relative_to_S": "interspecies_rigidity_publication/assemble.py",
+      "sha256": "08c4e69a887b941dc2b4ee7aac7009056536cd01dce49fc3440df1ceaa4e3cbf",
+      "bytes": 10540,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/fragments/note_front.txt",
+      "relative_to_S": "interspecies_rigidity_publication/fragments/note_front.txt",
+      "sha256": "79c66d630315de086f9636503fef1e44ada9baa0907572b5842ed57ee5a21094",
+      "bytes": 5173,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/fragments/note_tail.txt",
+      "relative_to_S": "interspecies_rigidity_publication/fragments/note_tail.txt",
+      "sha256": "83512d6a80100a928f90b457ad9e25dabdc7810f35c73baf28d779f8556c76af",
+      "bytes": 8137,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/fragments/primary_front.txt",
+      "relative_to_S": "interspecies_rigidity_publication/fragments/primary_front.txt",
+      "sha256": "1f9b986399478ce3ec7640e360c765edb83c385408fc5b38e8b4350878e58317",
+      "bytes": 1029,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/fragments/primary_tail.txt",
+      "relative_to_S": "interspecies_rigidity_publication/fragments/primary_tail.txt",
+      "sha256": "a6b270608bd1dda1c103544b4d616cd39d435095d8762fcb62919b5a72a0187a",
+      "bytes": 260,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/freeze_receipt.py",
+      "relative_to_S": "interspecies_rigidity_publication/freeze_receipt.py",
+      "sha256": "784cc787bf145f4b89c240e27a3c984d157e89b31ffe91bb26417398c37858f9",
+      "bytes": 6151,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md.gz",
+      "sha256": "6f328e988049d21c926631f87425b9141cb91cb360b25d642e506ef227bfa568",
+      "bytes": 10311,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md.gz",
+      "sha256": "5dce919d9455ef5c3dadb080445d13baf9ab5bbd81e0ae0699b79da484e061a0",
+      "bytes": 7236,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/LEAN_RIGIDITY_STATEMENT_REVIEW.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/LEAN_RIGIDITY_STATEMENT_REVIEW.md.gz",
+      "sha256": "9d3a03c64f4aaff0ffa9934e247c9d8395f889e6e7c0db48fbfb915ca12a65dc",
+      "bytes": 6246,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity/CHECKPOINT.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity/CHECKPOINT.md.gz",
+      "sha256": "7d87677b4fe99d2e42c6a6dbc60b4c4fe33b9d7465bef2da1ab27aee3166f496",
+      "bytes": 1152,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity/DEVELOPMENT_LOG.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity/DEVELOPMENT_LOG.md.gz",
+      "sha256": "99da11274442077f4e942422db1f3384df288b5934b209bb14661b98506c534d",
+      "bytes": 1262,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity/controls.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity/controls.log",
+      "sha256": "ca64e8ebd980711ae0b4b5d50429b77e8545551506cfc17caf6c9f9c0e21a8b6",
+      "bytes": 1612,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity/execution.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity/execution.json",
+      "sha256": "45084032f60479e7a4fc4d86276700a7cfe3116315e1da96448e2e9907bf8b74",
+      "bytes": 609,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity/prior_art_search.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity/prior_art_search.log",
+      "sha256": "a61bf75e53f8065827cff2d23ba9796e08b20bfb461409ada5532fe41f158c32",
+      "bytes": 6673,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity/receipt.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity/receipt.json",
+      "sha256": "283511b410dafa614c1e4453483b540e744604e66b538a803516c8294379267f",
+      "bytes": 12291,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity/rigidity_controls.py",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity/rigidity_controls.py",
+      "sha256": "9fd94231d6336964e5b6556396d31363c9ab5aaf4f17298d73d8ad5c3afa3b4e",
+      "bytes": 7697,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity/source_checks.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity/source_checks.json",
+      "sha256": "ab7b78728b304cd7319c4dee5365562dbdb2397bab4ad3086fa70c6f383aec25",
+      "bytes": 2269,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/CHECKPOINT.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/CHECKPOINT.md.gz",
+      "sha256": "0d554ff636faaa6ed7c01c64ee7e66d386c3995230eb435225fce3c4ae06a8e1",
+      "bytes": 874,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/PRE_HELPER_RECONSTRUCTION.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/PRE_HELPER_RECONSTRUCTION.md.gz",
+      "sha256": "58047adb78c517e6382b3dd7ca551340f71a3b092a184412c1d80f538278a426",
+      "bytes": 4977,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/freeze_review.py",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/freeze_review.py",
+      "sha256": "abc9185afee053717e4f38c50a93d6f5a6081f165c4a4279603f7542d744f0f4",
+      "bytes": 5686,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/independent_collision_controls.py",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/independent_collision_controls.py",
+      "sha256": "0b213ffb0dafd0745346b93c39531198057c3595624f71249705682b3bcf5e8c",
+      "bytes": 7709,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/independent_controls.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/independent_controls.log",
+      "sha256": "51ffdbf17e81029bb4e23bbdca3fb74ab2f18af29394baf33335b312b6d9df72",
+      "bytes": 1708,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/independent_execution.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/independent_execution.json",
+      "sha256": "7f323bbd8ba4b5553c685ea440dca1ddb5202ed2f81b5bddda6d4235f505d80c",
+      "bytes": 656,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/pre_helper_receipt.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/pre_helper_receipt.json",
+      "sha256": "c188863dec03f09cc91e2e6cf44a866f80db25358ff6157cde8dfe35392354ec",
+      "bytes": 5222,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/receipt.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/receipt.json",
+      "sha256": "1c3c02926c6c35277fdde7a4b174b85d2471c3c3ec4da9d39681a3c9f2f68de7",
+      "bytes": 21327,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/run_independent_controls.py",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/run_independent_controls.py",
+      "sha256": "4495350b42521e7ccffddb3fc5aad21116e39cc4fab3cb98e244b77b846cc961",
+      "bytes": 1707,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/source_verification.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/source_verification.json",
+      "sha256": "6c0ba92b299c1dd78c4e04ea1b84a73be8901c755fac7021d54691e5ebf71262",
+      "bytes": 18981,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/verify_source_bindings.py",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_current_rigidity_review/verify_source_bindings.py",
+      "sha256": "1bfc3ada78eb584664cbbc4de7860e65439082331f5f672102c5c7f6698a0974",
+      "bytes": 4034,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/AxiomInventory.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/AxiomInventory.lean",
+      "sha256": "af15ddd780bf3f20a2122bfb39f74c4f7edba48b16dcfdd19e3123263ae1e7f4",
+      "bytes": 916,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/CHECKPOINT.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/CHECKPOINT.md.gz",
+      "sha256": "16506c306956d6b67ff917ae57615a3ff57de77031487e965e6b3979b9dac662",
+      "bytes": 856,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/ControlData.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/ControlData.lean",
+      "sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af",
+      "bytes": 3404,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/FalseCoplanarResidual.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/FalseCoplanarResidual.lean",
+      "sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3",
+      "bytes": 350,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/FalseCycleSign.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/FalseCycleSign.lean",
+      "sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173",
+      "bytes": 318,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/FalseMissingEdge.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/FalseMissingEdge.lean",
+      "sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa",
+      "bytes": 425,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/FalseNoNoncoplanarity.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/FalseNoNoncoplanarity.lean",
+      "sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48",
+      "bytes": 335,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/RigidityGeometry.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/RigidityGeometry.lean",
+      "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+      "bytes": 6711,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/SCOPED_OBLIGATIONS.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/SCOPED_OBLIGATIONS.md.gz",
+      "sha256": "748e2480354ba9a6db896daf38da054413287299af82457f072869d3681a0ce3",
+      "bytes": 1036,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/SCOPE_REPORT.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/SCOPE_REPORT.md.gz",
+      "sha256": "b1558370a2e416b21e9f0f887946fc8155293d887c0c7fa791bafce1b9dbfccb",
+      "bytes": 3269,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/STATEMENT_MAP.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/STATEMENT_MAP.md.gz",
+      "sha256": "fb869c3c41a1a7f419d1639b3a00a71488330b855aa2ce47c14a3b386439a6fe",
+      "bytes": 2855,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/axioms.txt",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/axioms.txt",
+      "sha256": "35e6b4915e0c50fbf41c0442b271ddd35ff9aa25d664761692ac3dc7c22140d5",
+      "bytes": 1476,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/false_controls_manifest.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/false_controls_manifest.json",
+      "sha256": "b101b464f7ad57ac5901a51a29008830be52b3cddbf9e718d3df6d0b20d5e17e",
+      "bytes": 9580,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/final_compiler.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/final_compiler.log",
+      "sha256": "524c550e27cd2fab50e147569f328b6042dcbbb535742a1b1910f504af770490",
+      "bytes": 658,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/freeze_receipt.py",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/freeze_receipt.py",
+      "sha256": "a5f42772d945689b749e0b0ccb07ba7c61b9fcad1109f21670fc232cb1e12023",
+      "bytes": 11091,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt01.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt01.json",
+      "sha256": "326d673ce541947b1bc7bc0b74b4a4e333edec5266dd308458bbdb504edc83d7",
+      "bytes": 1886,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt01.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt01.lean",
+      "sha256": "fe9218b0ce105f12ae82ca006dc1d00f43e005510970b99f6c1d3718ea0f8a37",
+      "bytes": 4337,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt01.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt01.log",
+      "sha256": "914e6b7af5da4bc7be271743fbf1ff3f6876e8e10abf3639737f6d5bbe95ddde",
+      "bytes": 328,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt02.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt02.json",
+      "sha256": "8b02eb1ce73fac5b1faf9732676ef091519f13962d857112b64380c2ee2f6769",
+      "bytes": 1885,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt02.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt02.lean",
+      "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+      "bytes": 6711,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt02.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/attempt02.log",
+      "sha256": "524c550e27cd2fab50e147569f328b6042dcbbb535742a1b1910f504af770490",
+      "bytes": 658,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/axiom_inventory.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/axiom_inventory.json",
+      "sha256": "85ed5750b4eefa09e08da59f403a580e041bda2a9005f93aa248ded932b59859",
+      "bytes": 1888,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/axiom_inventory.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/axiom_inventory.lean",
+      "sha256": "af15ddd780bf3f20a2122bfb39f74c4f7edba48b16dcfdd19e3123263ae1e7f4",
+      "bytes": 916,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/axiom_inventory.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/axiom_inventory.log",
+      "sha256": "35e6b4915e0c50fbf41c0442b271ddd35ff9aa25d664761692ac3dc7c22140d5",
+      "bytes": 1476,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls01.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls01.json",
+      "sha256": "87b53c9073be8417f403e8dfecd92e2d1fc381e3ba589b991691f4124598afca",
+      "bytes": 1877,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls01.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls01.lean",
+      "sha256": "7825dd3f0a227fedcb7bbae7c81a01c9739a58502f2db4a4879b0510d881e139",
+      "bytes": 3392,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls01.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls01.log",
+      "sha256": "460191bc92c6ab1544fcf298348c7f712791b83aa689d13889d443c3a5ca71e5",
+      "bytes": 1460,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls02.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls02.json",
+      "sha256": "1b7d48d4b2842a0ec099da70f9d14c80b14f9ad99d434acd81e46db4b1584b4b",
+      "bytes": 1876,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls02.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls02.lean",
+      "sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af",
+      "bytes": 3404,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls02.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/controls02.log",
+      "sha256": "d02a5f90246ed313b02a856f6aa8a6ba3766ec74498aab95357dbe53f311f41c",
+      "bytes": 713,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.json",
+      "sha256": "f67dffefcce9bb144b419e885703e42cbee4e3d63fd51cd29cdb291013c06a6c",
+      "bytes": 1913,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.lean",
+      "sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3",
+      "bytes": 350,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.log",
+      "sha256": "a49f6c30d309062e284d0980e2d3e80e10b11fcc29caaf92428e46b61f414c13",
+      "bytes": 254,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.wrapper.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.wrapper.log",
+      "sha256": "8adfe712b8585c89636f52ff56325abe3ba18677feeb694194c55a4d0d6461ea",
+      "bytes": 271,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.json",
+      "sha256": "e064f13c8d04189e4e12d3ba214e316a557ee23556eb3e937bacfc8522609c60",
+      "bytes": 1892,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.lean",
+      "sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173",
+      "bytes": 318,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.log",
+      "sha256": "fe87e9af3e508f6a258bf094494ae989d6e4ab51a39b4058002e0fcb43906847",
+      "bytes": 255,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.wrapper.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.wrapper.log",
+      "sha256": "f2d6dda2283152096f71cdcd90c7eee3490c5273c4557b5aa1a5a73b60911ed3",
+      "bytes": 272,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.json",
+      "sha256": "be94295f6ad29e57066b23346dcada9287f8ad4bc03ac2a10ea4ad73c08eac88",
+      "bytes": 1898,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.lean",
+      "sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa",
+      "bytes": 425,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.log",
+      "sha256": "b5d242094d3d47c9532178f464545c6eed2599ad61d52a8621dd226ffe9b5b48",
+      "bytes": 247,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.wrapper.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.wrapper.log",
+      "sha256": "22fa1d73dc245f206b4dd556881f442e7f4d919f61d0d5b9d65a97009a39a319",
+      "bytes": 264,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.json",
+      "sha256": "d8bf6d0aafc7e381fa12d953c95fff32c9d964de652ee87e75d7aaf51c935555",
+      "bytes": 1914,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.lean",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.lean",
+      "sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48",
+      "bytes": 335,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.log",
+      "sha256": "2304ffd1cfc3e1f7635926d2d0fd069978c4462bbc43d6c5251a7a7a27b38228",
+      "bytes": 239,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.wrapper.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.wrapper.log",
+      "sha256": "3b1b8ef8aa0ba1891e15bed5a6039f54848b3be9375a374ee3b33c20aadfafa1",
+      "bytes": 256,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/positive_compiler.log",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/positive_compiler.log",
+      "sha256": "d02a5f90246ed313b02a856f6aa8a6ba3766ec74498aab95357dbe53f311f41c",
+      "bytes": 713,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/receipt.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/receipt.json",
+      "sha256": "4f1512919a9e4aa41cac168882d3975e4b95f72cd4620876aa7cc959201c9048",
+      "bytes": 59080,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/run_false_controls.py",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/run_false_controls.py",
+      "sha256": "1aeb84c116c1786d69940f57dec2c318423cc7691f60f5dbca21f5499ee3d6e0",
+      "bytes": 2494,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/run_lean.py",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/run_lean.py",
+      "sha256": "1d57c91acaa62ca7ff4ee09a819afc77bf9fefe0419a4d752ddbb4ca40fb3f42",
+      "bytes": 1910,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean/runtime_identity.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean/runtime_identity.json",
+      "sha256": "8d060e0ac45c048cdeb4240cba7a195ac3a4ee0b8a5c900542a72828f0b55509",
+      "bytes": 1822,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean_review/CHECKPOINT.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean_review/CHECKPOINT.md.gz",
+      "sha256": "b886652f171d6c322846d00d7dab9d7e6c711a3b5725edfb68da8ce8d927b429",
+      "bytes": 854,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean_review/freeze_review.py",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean_review/freeze_review.py",
+      "sha256": "ebd4afdfe7ac36468d7b7b4cc864748ace15cc79c5043f6979098f8ee0d66977",
+      "bytes": 6175,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean_review/receipt.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean_review/receipt.json",
+      "sha256": "974549d47ca67a1f82591d5cef2ab3fa3a2d5854b3b2404dfa58f265364c00a6",
+      "bytes": 33405,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean_review/source_verification.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean_review/source_verification.json",
+      "sha256": "79421ceb7c268d7397382db5869267f679090a619d5d205e5beecfd8ed1735f9",
+      "bytes": 63359,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/interspecies_rigidity_lean_review/verify_packet.py",
+      "relative_to_S": "interspecies_rigidity_publication/historical/interspecies_rigidity_lean_review/verify_packet.py",
+      "sha256": "4a8db835329242d707e1ee3cb81626e0b2d79cda056316a44b057854806c462b",
+      "bytes": 8650,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/repo_sync_rc_2045/SOURCE_IDENTITIES.json",
+      "relative_to_S": "interspecies_rigidity_publication/historical/repo_sync_rc_2045/SOURCE_IDENTITIES.json",
+      "sha256": "4bcc8fc339fafe9a42d2bc17ad67c23f3e55a21a35f13d740567ecaa41c44e57",
+      "bytes": 3930,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/repo_sync_rc_2045/agents/RC_C1_referee.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/repo_sync_rc_2045/agents/RC_C1_referee.md.gz",
+      "sha256": "4478c86fd7b2d27770c66a8c5dbae706066d9d8d240116c9b443b05dbe5581bd",
+      "bytes": 2939,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/repo_sync_rc_2045/agents/RC_C1_referee_full.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/repo_sync_rc_2045/agents/RC_C1_referee_full.md.gz",
+      "sha256": "6f23dfe3dc0e19db7606dddf605cbfc54869e954f89f0059e9dab225ddd0a7ba",
+      "bytes": 5934,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/historical/repo_sync_rc_2045/agents/RC_C1_report.md.gz",
+      "relative_to_S": "interspecies_rigidity_publication/historical/repo_sync_rc_2045/agents/RC_C1_report.md.gz",
+      "sha256": "019aa2ff78f7d2fdd86e3b74d1930c60aadc760177bc32f1d9408e9e20b6a85a",
+      "bytes": 9323,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/primary.log",
+      "relative_to_S": "interspecies_rigidity_publication/primary.log",
+      "sha256": "c8acfd4cc0f5f7987889f6e964b09a7882f6707246fb26efe3624372f4a531cf",
+      "bytes": 1634,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/primary_execution.json",
+      "relative_to_S": "interspecies_rigidity_publication/primary_execution.json",
+      "sha256": "8cca43c911b3be3ddd416a2bebfc04f193e0b0bd4ac05fb06e3d77c05d903985",
+      "bytes": 933,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/reconstruct.py",
+      "relative_to_S": "interspecies_rigidity_publication/reconstruct.py",
+      "sha256": "3a4bc67328b0f965d92a632814ec783b833083c2cdd0d7cb7567c580ad7fbd0c",
+      "bytes": 2536,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/reconstruction.log",
+      "relative_to_S": "interspecies_rigidity_publication/reconstruction.log",
+      "sha256": "36af1474ec6dc6ad7c9b2230bbedb438575fc04bc25268fb4d285ad77a835902",
+      "bytes": 334,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/run_primary.py",
+      "relative_to_S": "interspecies_rigidity_publication/run_primary.py",
+      "sha256": "81014d96959c894d4d79c121ef487bfe73c700c31c2bdd3265bf8be4edee4611",
+      "bytes": 1626,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_publication/source_binding_verification.json",
+      "relative_to_S": "interspecies_rigidity_publication/source_binding_verification.json",
+      "sha256": "1bf518bfefd708690aae02682d8004cd6d8356ee675b6489c79b77ca2c4d5811",
+      "bytes": 81224,
+      "role": "publication reconstruction, preserved history or actual execution evidence"
+    }
+  ],
+  "receipt_self_hash": "excluded to avoid self-reference; communicated separately"
+}

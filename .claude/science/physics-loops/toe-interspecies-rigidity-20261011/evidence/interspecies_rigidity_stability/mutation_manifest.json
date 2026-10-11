@@ -1,0 +1,82 @@
+{
+  "base_source_sha256": "f468cc2d3e67ae7f1337ea859a1fe7579f719440e628954884f2e92b3752bc7f",
+  "mutants": [
+    {
+      "name": "cycle_sign",
+      "before": "-l11+l21-l22+l12",
+      "after": "-l11+l21+l22-l12",
+      "replacements": 1,
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/cycle_sign/stability_controls.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/cycle_sign",
+      "timeout_seconds": 120,
+      "timed_out": false,
+      "elapsed_seconds": 0.25362466694787145,
+      "exit_code": 1,
+      "intended_failure": true,
+      "expected_diagnostic": "assert (cycle - M*c).applyfunc(sp.expand) == ZERO",
+      "source_sha256": "52b18b8104cd47b08283fb4b5dac29d47293607a22c7898d24f9ae817c0d99bf",
+      "log_sha256": "cb6d11a53e4927793e4eee1605ecdf7f932ccc9669ff365a6b5fff50bece1322"
+    },
+    {
+      "name": "projection_denominator",
+      "before": "d11.T / norm2(d11)",
+      "after": "d11.T",
+      "replacements": 2,
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator/stability_controls.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/projection_denominator",
+      "timeout_seconds": 120,
+      "timed_out": false,
+      "elapsed_seconds": 0.23487162496894598,
+      "exit_code": 1,
+      "intended_failure": true,
+      "expected_diagnostic": "assert coeff * B == R",
+      "source_sha256": "3acb84797ebc4c4d4b350352841846aa8f1758450ac29db137b526488bd6d998",
+      "log_sha256": "03d8dc6f5c14a5337567f871c3ce951358ec8647a3e9291e0f533243e6fe9fb1"
+    },
+    {
+      "name": "drop_extra_anchor_height",
+      "before": "rho, tau = D / sigma, D / h",
+      "after": "rho, tau = D / sigma, sp.Integer(1)",
+      "replacements": 1,
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/stability_controls.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height",
+      "timeout_seconds": 120,
+      "timed_out": false,
+      "elapsed_seconds": 0.25461029121652246,
+      "exit_code": 1,
+      "intended_failure": true,
+      "expected_diagnostic": "h conditioning cannot be dropped",
+      "source_sha256": "0343ebc0dcc9af7a4c5d9b3424e9b276e30253304e2efb34adc73642b08688ea",
+      "log_sha256": "f84503e7c9df7b44f07b4c3f98074696d948928cbc62e46af29a4709a26d3000"
+    },
+    {
+      "name": "drop_wedge_inverse_scale",
+      "before": "return 2 * C * omega / sigma",
+      "after": "return 2 * C * omega",
+      "replacements": 1,
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/stability_controls.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale",
+      "timeout_seconds": 120,
+      "timed_out": false,
+      "elapsed_seconds": 0.2769102081656456,
+      "exit_code": 1,
+      "intended_failure": true,
+      "expected_diagnostic": "wedge factor 1/sigma is necessary",
+      "source_sha256": "36ff5e7e8ae9f751e5b1acf597ca65db6616b9b74e062f489d453102a6321a20",
+      "log_sha256": "80ccf791737f34ef0c71ebb48fd7e4bbf6f9daf3697ed391509b78b90ad8243a"
+    }
+  ],
+  "scope": "Four selected mathematical/source controls, not exhaustive mutation coverage."
+}

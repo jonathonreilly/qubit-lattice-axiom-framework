@@ -1,0 +1,6 @@
+RigidityControls.square_edges_true : SquareEdges
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseNoNoncoplanarity.lean:8:44: error: unsolved goals
+_h : SquareEdges
+⊢ False
+
+COMPILER_EXIT 1

@@ -1,0 +1,45 @@
+{
+  "manifest_sha256": "4bcc8fc339fafe9a42d2bc17ad67c23f3e55a21a35f13d740567ecaa41c44e57",
+  "requested_revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+  "records": [
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/agents/RC_C1_report.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C1_report.md",
+      "sha256": "e26566ce5cdbbd3ef1a3c1621109cefe294cf120d319f0a43cc09e4425054a78",
+      "lines": 266,
+      "verified_sha256": "e26566ce5cdbbd3ef1a3c1621109cefe294cf120d319f0a43cc09e4425054a78",
+      "logical_lines": 266,
+      "newline_count": 266,
+      "final_newline": true,
+      "git_blob_matches": true
+    },
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/agents/RC_C1_referee.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C1_referee.md",
+      "sha256": "46b3b3624ac3c217651ef3c1820625079b414fb535dc206be8410f43d61f4a5c",
+      "lines": 21,
+      "verified_sha256": "46b3b3624ac3c217651ef3c1820625079b414fb535dc206be8410f43d61f4a5c",
+      "logical_lines": 21,
+      "newline_count": 20,
+      "final_newline": false,
+      "git_blob_matches": true
+    },
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/agents/RC_C1_referee_full.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C1_referee_full.md",
+      "sha256": "a36b43eaf213e34ae9852c79a93f808a4e2bfb6dc307f8ca388b78a6db5132e4",
+      "lines": 23,
+      "verified_sha256": "a36b43eaf213e34ae9852c79a93f808a4e2bfb6dc307f8ca388b78a6db5132e4",
+      "logical_lines": 23,
+      "newline_count": 23,
+      "final_newline": true,
+      "git_blob_matches": true
+    }
+  ],
+  "prior_art_search_exit": 0,
+  "prior_art_search_lines": 6,
+  "search_scope": "Fixed candidate revision docs plus RC agent reports only; no global novelty or fresh-main claim."
+}

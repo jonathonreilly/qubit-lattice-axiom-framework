@@ -1,0 +1,157 @@
+{
+  "scope": "Final main-based exact/stability milestone; all proof text preserved with explicit source maps.",
+  "outputs": [
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_INTERSPECIES_CURRENT_RIGIDITY_NOTE.md",
+      "source_sha256": "148340524d00ce17dd01d3cbe34bca01c7e1ea844021cd4c08c147b9450c30a7",
+      "edits": [
+        {
+          "before": "publication_composition_review: pending",
+          "after": "publication_composition_review: completed_with_root_control_strengthening"
+        },
+        {
+          "before": "in Sections 11\u201312; neither formalizes the full theorem. This publication\ncomposition is new and awaits its own source-bound review.",
+          "after": "in Sections 11\u201312; neither formalizes the full theorem. Root checked this\npublication composition against the frozen sources and strengthened one\nfinite control after a deliberate wrong-sign mutation survived. The complete\nmathematical argument is unchanged; Section 10 records that test limitation."
+        },
+        {
+          "before": "that force \\(a=0\\). They verify",
+          "after": "that force \\(a=0\\). The publication also checks six independent symmetric\nmatrix modes in the kernel, identifying the full claimed symmetric family.\nThey verify"
+        },
+        {
+          "before": "as the checked claim contract. Its summary counts thirteen completed finite\ncheck families: eight matrix configurations and five additional algebraic\nfamilies. That count is not a count of proof obligations or assertions.\nThe external packaging replay and source-identity checks are recorded in the\npublication receipt. Canonical-cache validation, whole-primary semantic\nmutation runs, repository conformance and final publication are separate\nintegration work and are not certified here.",
+          "after": "as the checked claim contract. Its summary counts fourteen completed finite\ncheck families: eight matrix configurations and six algebraic families.\nThat count is not a count of proof obligations or assertions.\n\nThe frozen external packaging replay completed thirteen families. In root's\nfirst seven whole-primary semantic mutations, changing the closed-current\ncurl sign survived: rank six and vanishing energy coefficient alone did not\ndistinguish symmetric from antisymmetric off-diagonal coefficients. The final\nprimary appends six explicit symmetric basis modes and checks their linear\nindependence and membership in the kernel. Together with the original rank,\nthese checks identify that finite kernel. The I1\u2013I24 analytic proof and the\nentire original helper body are unchanged. Both the surviving execution and\nthe strengthened-source mutation runs are preserved. They are finite tests,\nnot a replacement for the continuum argument or independent mathematical\nreview. The separate delivery record gives final canonical-cache,\nmutation and repository-conformance outcomes."
+        },
+        {
+          "before": "`reconstruct.py` rebuilds the note and primary from those local fragments\nand preserved originals; `receipt.json` records the actual external\ncomposition checks. Gzip source copies decode to the exact historical\nMarkdown bytes, including obsolete pending-review text.",
+          "after": "`reconstruct.py` rebuilds the frozen external note and primary from those\nlocal fragments and preserved originals; `receipt.json` records the author's\nexternal composition checks. `PUBLICATION_EDITS.json` then maps every root\npublication edit to the final repository note and strengthened primary.\nGzip source copies decode to exact historical Markdown bytes, including\nobsolete pending-review text. `ROOT_COMPOSITION_REVIEW.md` distinguishes\nsource preservation from mathematical review and documents the test repair."
+        }
+      ],
+      "appended_text": "\n## Publication delivery\n\nThe [delivery record](../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/DELIVERY_CHECKS.md)\nbinds source identities, independent review scopes, canonical execution,\nactual primary mutations and final repository checks. This main-based note\nhas no science dependency on the campaign's excluded-walk or transport PRs.\nThe independent audit path retains responsibility for effective retained\nstatus; this publication applies no audit verdict.\n\nThe quantitative companion in this same milestone supplies a stability estimate\nfor the extension left open by Section 9 of this preserved exact argument.\nIts explicit anchor conditioning and derivative-defect premises are separate\nfrom the exact collision identity used here.\n",
+      "publication_path": "docs/INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "publication_sha256": "6609219a9de7b7b021d4a5b89f9be87dae9c653b526f1ffe00534f9795c48740",
+      "preserved_source": "evidence/FINAL_INTERSPECIES_CURRENT_RIGIDITY_NOTE.md.gz"
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_collision_current_rigidity_2026_10_11.py",
+      "source_sha256": "3123877c48021d189d288245138a6b7cb0a321141d124ca0b733de8279d7fd12",
+      "edits": [
+        {
+          "before": "TOTAL counts eight finite matrix families plus five additional algebraic\nfamilies,",
+          "after": "A root-added exact symmetric-family check follows the unchanged original\nbody. TOTAL counts eight finite matrix families plus six algebraic families,"
+        },
+        {
+          "before": "# The preceding body reaches this line only after all original checks complete.\n# Five additional families: skew determinant, cubic group, closed current,\n# collision/support witness, and orbit-ball separation.\nprint(f\"TOTAL: PASS={len(results) + 5} FAIL=0\")\n",
+          "after": "# Identify the six-dimensional kernel itself, not just its dimension.\n# A wrong curl sign can preserve rank and a=0 while replacing symmetry by\n# antisymmetry off the diagonal. These six independent symmetric modes must\n# all solve the original curl constraints.\nsymmetric_current_modes = []\nfor i in range(3):\n    for j in range(i, 3):\n        mode = [Q(0)] * 12\n        mode[3+3*i+j] = 1\n        mode[3+3*j+i] = 1\n        symmetric_current_modes.append(mode)\nassert rank(symmetric_current_modes) == 6\nassert all(dot(row, mode) == 0 for row in curl_rows for mode in symmetric_current_modes)\nprint('closed-current symmetric family: six independent modes in kernel')\n\n# Eight matrix families and six algebraic families, including this kernel check.\nprint(f\"TOTAL: PASS={len(results) + 6} FAIL=0\")\n"
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "scripts/interspecies_collision_current_rigidity_2026_10_11.py",
+      "publication_sha256": "f0f4783b5df183d3b8cc960579b4d3748c2f6b9ddeacc4a2f9539476773a4cd6",
+      "preserved_source": "evidence/interspecies_collision_current_rigidity_2026_10_11.py.gz"
+    },
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_RIGIDITY_STABILITY_PROBE.md",
+      "source_sha256": "61f240d5e35f9c94d759f63e1d94c2a0677e53f52752c53700faeb50a546039a",
+      "edits": [
+        {
+          "before": "---\ntitle:",
+          "after": "---\nclaim_id: interspecies_rigidity_stability_bounded_theorem_note_2026-10-11\nrunner: scripts/interspecies_rigidity_stability_2026_10_11.py\nstatus: provisional\nclaim_scope: \"Uniform quantitative homothety control under explicit six-anchor conditioning and normalized tangent or wedge defects; conditional integration and current consequences.\"\nupstream_dependencies:\n  - interspecies_collision_current_rigidity_bounded_theorem_note_2026-10-11\ntarget_claim_type: bounded_theorem\nartifact_role: theorem\ntarget_claim_id: null\ntarget_blocker_text: \"Quantify the interspecies invariant step under approximate conservation.\"\nsource_of_blocker_text: companion_exact_theorem_open_extension\nconditional_surface_status: null\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\npromotion_path: \"Source-bound independent review and the independent audit path; separately prove physical tangent-defect and conditioning premises.\"\ntitle:",
+          "count": 1
+        },
+        {
+          "before": "(INTERSPECIES_CURRENT_RIGIDITY_PROBE.md)",
+          "after": "(INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md)",
+          "count": 1
+        },
+        {
+          "before": "(INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md.gz)",
+          "count": 1
+        },
+        {
+          "before": "[Exact theorem]",
+          "after": "[Exact theorem; frozen source identity below]",
+          "count": 1
+        },
+        {
+          "before": "The author also authored the exact source.",
+          "after": "The linked exact publication preserves the mathematical source at the hash\nabove; the hash identifies that frozen source, not its new presentation.\nThe author also authored the exact source.",
+          "count": 1
+        },
+        {
+          "before": "(interspecies_rigidity_stability/stability_controls.py)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/stability_controls.py.gz)",
+          "count": 1
+        },
+        {
+          "before": "(interspecies_rigidity_stability/runs/baseline01/controls.log)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/controls.log.gz)",
+          "count": 1
+        },
+        {
+          "before": "(interspecies_rigidity_stability/runs/baseline01/execution.json)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/execution.json)",
+          "count": 1
+        },
+        {
+          "before": "(interspecies_rigidity_stability/mutation_manifest.json)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutation_manifest.json)",
+          "count": 1
+        },
+        {
+          "before": "(interspecies_rigidity_stability/receipt.json)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/receipt.json)",
+          "count": 1
+        },
+        {
+          "before": "The extension awaits a separate\nindependent check; the exact source's prior review does not certify this new\nproof, and the old Lean compilation does not verify these inequalities.",
+          "after": "The source-bound independent stability review is recorded in the milestone\ndelivery packet; the exact source's earlier review does not certify this new\nproof, and the old Lean compilation does not verify these inequalities.",
+          "count": 1
+        },
+        {
+          "before": "independent_review: pending",
+          "after": "independent_review: completed_for_frozen_S1_S31_source",
+          "count": 1
+        }
+      ],
+      "appended_text": "\n## 11. Completed source-bound review and publication controls\n\nThe complete independent review of S1\u2013S31 is preserved at\n`evidence/INTERSPECIES_RIGIDITY_STABILITY_REVIEW.md.gz` in this milestone,\nSHA-256 `6fc511af23a82defd672c9c2c2febd7aa542604a9fbac25fd9e1438119504eee`.\nIts receipt is `interspecies_rigidity_stability_review/receipt.json`,\nSHA-256 `84be0fc8b21555b5000d99c8cf7cb91a1ffa7638f565a040039674da4b6b3cb9`.\nThe reviewer reconstructed every argument before inspecting author controls,\nused a separate exact smooth-current example on a domain excluding the origin,\nand requested no mathematical repair. It does not supply the physical premises.\nRoot read the complete source, review, helpers and raw outputs and verified\nthe final source bindings. The earlier pending-review source remains unchanged.\n\nThe publication primary preserves the entire executable mathematical helper\nbody. Its new metadata binds this note and the exact companion; generated\nfinite dual certificates use a temporary directory. The original full\ncertificates remain in the historical evidence. Its summary counts nine\nfinite control families, not proof obligations. Six actual whole-primary\nmutations test the cycle sign, projection denominator, anchor-height cost,\nwedge scale, potential factor two and cubic average. Their full sources and\nlogs are preserved separately from the four original author mutations.\n\nThe [delivery record](../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/DELIVERY_CHECKS.md)\nand exact publication map bind final canonical and repository checks. All\nSections 2\u20139, including S1\u2013S31, retain the frozen source's mathematical bytes.\nThe scoped Lean packet covers exact finite geometry only; no Lean certificate\nof the stability inequalities is claimed. No audit verdict is applied.\n",
+      "publication_path": "docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "publication_sha256": "2edce221f7943bed0863b47438a5855f66602705cc0446c94db1178536be3d51",
+      "preserved_source": "evidence/INTERSPECIES_RIGIDITY_STABILITY_PROBE.md.gz"
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/stability_controls.py",
+      "source_sha256": "f468cc2d3e67ae7f1337ea859a1fe7579f719440e628954884f2e92b3752bc7f",
+      "edits": [
+        {
+          "before": "#!/usr/bin/env python3\n\"\"\"Exact authored controls for a universal theorem proved in the companion note.\n\nInputs: no CLI inputs, no network, fixed rational/symbolic fixtures below.\nOutputs: stdout and exact finite dual certificates in this script's directory.\nUse run_controls.py: 120-second timeout per process. No continuum claim is\ncertified by finite matrix rank, and no old author helper is imported.\n\"\"\"\n",
+          "after": "#!/usr/bin/env python3\n\"\"\"Exact finite controls for conditional six-anchor interspecies stability.\n\nUses SymPy and fixed rational/symbolic fixtures; no network or physical input.\nThe unchanged mathematical control body writes its finite dual certificates\nonly into a temporary directory. Historical full certificates are preserved\nin the milestone evidence. These controls are author replay, not independent\ncontinuum proof or scoped Lean verification. TOTAL counts nine control\nfamilies, not individual assertions or mathematical proof obligations.\n\"\"\"\nAUDIT_TIMEOUT_SEC = 120\nAUDIT_INPUT_PATHS = [\n    \"docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md\",\n    \"docs/INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md\",\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: exact control assertions must be enabled\")\n\n",
+          "count": 1
+        },
+        {
+          "before": "import sympy as sp",
+          "after": "import sympy as sp\nimport tempfile",
+          "count": 1
+        },
+        {
+          "before": "HERE = Path(__file__).resolve().parent",
+          "after": "_certificate_workspace = tempfile.TemporaryDirectory(prefix=\"toe-rigidity-control-\")\nHERE = Path(_certificate_workspace.name)",
+          "count": 1
+        },
+        {
+          "before": "if __name__ == '__main__':\n    main()\n",
+          "after": "if __name__ == '__main__':\n    main()\n    print('TOTAL: PASS=9 FAIL=0')\n",
+          "count": 1
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "scripts/interspecies_rigidity_stability_2026_10_11.py",
+      "publication_sha256": "b828ce7f6fb136d2d55cc1a19a4f9c41e735a11a4fa56355f623fabdd8115059",
+      "preserved_source": "evidence/interspecies_rigidity_stability/stability_controls.py.gz"
+    }
+  ]
+}

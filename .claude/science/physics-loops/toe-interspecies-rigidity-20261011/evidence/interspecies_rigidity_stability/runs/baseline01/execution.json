@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/runs/baseline01/stability_controls.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/runs/baseline01",
+  "timeout_seconds": 120,
+  "timed_out": false,
+  "exit_code": 0,
+  "elapsed_seconds": 0.4063871670514345,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "source_sha256": "f468cc2d3e67ae7f1337ea859a1fe7579f719440e628954884f2e92b3752bc7f"
+}

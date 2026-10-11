@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+    "env",
+    "lean",
+    "-R",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.lean",
+    "-o",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.olean"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+  "exit": 0,
+  "elapsed_seconds": 26.96838308311999,
+  "timeout_seconds": 120,
+  "source_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls02.lean",
+  "source_sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af",
+  "environment_overrides": {
+    "MATHLIB_CACHE_DIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache",
+    "XDG_CACHE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache/xdg",
+    "LAKE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/lake_home",
+    "TMPDIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/tmp",
+    "LEAN_PATH": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean"
+  },
+  "path_prepend": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin"
+}

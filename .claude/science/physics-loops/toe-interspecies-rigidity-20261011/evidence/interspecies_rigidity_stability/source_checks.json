@@ -1,0 +1,622 @@
+{
+  "initial_source_guards": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+      "relative_to_S": "INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+      "role": "initial frozen source guard",
+      "sha256": "ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8",
+      "bytes": 25603,
+      "logical_lines": 559
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md",
+      "relative_to_S": "INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md",
+      "role": "initial frozen source guard",
+      "sha256": "78c3bc3c8f223b988713cb5bd5210c1a801e8cdc5f428ee648d6284c400d97d6",
+      "bytes": 16476,
+      "logical_lines": 268
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/receipt.json",
+      "relative_to_S": "interspecies_current_rigidity/receipt.json",
+      "role": "initial frozen source guard",
+      "sha256": "283511b410dafa614c1e4453483b540e744604e66b538a803516c8294379267f",
+      "bytes": 12291,
+      "logical_lines": 234
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/receipt.json",
+      "relative_to_S": "interspecies_rigidity_lean/receipt.json",
+      "role": "initial frozen source guard",
+      "sha256": "4f1512919a9e4aa41cac168882d3975e4b95f72cd4620876aa7cc959201c9048",
+      "bytes": 59080,
+      "logical_lines": 1136
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.lean",
+      "relative_to_S": "interspecies_rigidity_lean/RigidityGeometry.lean",
+      "role": "initial frozen source guard",
+      "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+      "bytes": 6711,
+      "logical_lines": 146
+    }
+  ],
+  "prior_artifact_groups": [
+    {
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/receipt.json",
+      "receipt_sha256": "283511b410dafa614c1e4453483b540e744604e66b538a803516c8294379267f",
+      "checked_artifacts": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+          "relative_to_S": "INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8",
+          "bytes": 25603,
+          "logical_lines": 559
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/CHECKPOINT.md",
+          "relative_to_S": "interspecies_current_rigidity/CHECKPOINT.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "c4e93ced25c267203bc3a755266ab2a92b79e918d6ac6635065e4d5d3b58eb8c",
+          "bytes": 2061,
+          "logical_lines": 13
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/DEVELOPMENT_LOG.md",
+          "relative_to_S": "interspecies_current_rigidity/DEVELOPMENT_LOG.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "7de7d35ec5a2a94edab074dc3e5825561fb219878ee0494bef4dbdf4b011f7c3",
+          "bytes": 2442,
+          "logical_lines": 11
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/controls.log",
+          "relative_to_S": "interspecies_current_rigidity/controls.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "ca64e8ebd980711ae0b4b5d50429b77e8545551506cfc17caf6c9f9c0e21a8b6",
+          "bytes": 1612,
+          "logical_lines": 14
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/execution.json",
+          "relative_to_S": "interspecies_current_rigidity/execution.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "45084032f60479e7a4fc4d86276700a7cfe3116315e1da96448e2e9907bf8b74",
+          "bytes": 609,
+          "logical_lines": 13
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/prior_art_search.log",
+          "relative_to_S": "interspecies_current_rigidity/prior_art_search.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "a61bf75e53f8065827cff2d23ba9796e08b20bfb461409ada5532fe41f158c32",
+          "bytes": 6673,
+          "logical_lines": 8
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/rigidity_controls.py",
+          "relative_to_S": "interspecies_current_rigidity/rigidity_controls.py",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "9fd94231d6336964e5b6556396d31363c9ab5aaf4f17298d73d8ad5c3afa3b4e",
+          "bytes": 7697,
+          "logical_lines": 209
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/source_checks.json",
+          "relative_to_S": "interspecies_current_rigidity/source_checks.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "ab7b78728b304cd7319c4dee5365562dbdb2397bab4ad3086fa70c6f383aec25",
+          "bytes": 2269,
+          "logical_lines": 45
+        }
+      ]
+    },
+    {
+      "receipt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/receipt.json",
+      "receipt_sha256": "4f1512919a9e4aa41cac168882d3975e4b95f72cd4620876aa7cc959201c9048",
+      "checked_artifacts": [
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/AxiomInventory.lean",
+          "relative_to_S": "interspecies_rigidity_lean/AxiomInventory.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "af15ddd780bf3f20a2122bfb39f74c4f7edba48b16dcfdd19e3123263ae1e7f4",
+          "bytes": 916,
+          "logical_lines": 17
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/AxiomInventory.olean",
+          "relative_to_S": "interspecies_rigidity_lean/AxiomInventory.olean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "e9bcdf88b1098bcd8593f9b6706f7ad5accc8958caa4e26c79cbe5298e2014d5",
+          "bytes": 1144,
+          "logical_lines": null
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/CHECKPOINT.md",
+          "relative_to_S": "interspecies_rigidity_lean/CHECKPOINT.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "54fe81169c033d7b7b2506c2df727b21743a220a4e3e509bfdcf5bdc911f9ea5",
+          "bytes": 1377,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.lean",
+          "relative_to_S": "interspecies_rigidity_lean/ControlData.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af",
+          "bytes": 3404,
+          "logical_lines": 91
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.olean",
+          "relative_to_S": "interspecies_rigidity_lean/ControlData.olean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "81b1699900381d68a9b8bce7a3c3fe6ade4e5eaf3271c3067601a1aeb8ea581a",
+          "bytes": 588088,
+          "logical_lines": null
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCoplanarResidual.lean",
+          "relative_to_S": "interspecies_rigidity_lean/FalseCoplanarResidual.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3",
+          "bytes": 350,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCycleSign.lean",
+          "relative_to_S": "interspecies_rigidity_lean/FalseCycleSign.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173",
+          "bytes": 318,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseMissingEdge.lean",
+          "relative_to_S": "interspecies_rigidity_lean/FalseMissingEdge.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa",
+          "bytes": 425,
+          "logical_lines": 10
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseNoNoncoplanarity.lean",
+          "relative_to_S": "interspecies_rigidity_lean/FalseNoNoncoplanarity.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48",
+          "bytes": 335,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.lean",
+          "relative_to_S": "interspecies_rigidity_lean/RigidityGeometry.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+          "bytes": 6711,
+          "logical_lines": 146
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.olean",
+          "relative_to_S": "interspecies_rigidity_lean/RigidityGeometry.olean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "08a9c74f5f2b8f8591b05dd548ed0e42b10b283330536f11254fa1ac63de20e2",
+          "bytes": 659896,
+          "logical_lines": null
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/SCOPED_OBLIGATIONS.md",
+          "relative_to_S": "interspecies_rigidity_lean/SCOPED_OBLIGATIONS.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "059953fa4094c24f2e4c6f4fa3f4140a4f248ec1ec5a299ae7dd037c4d9446bd",
+          "bytes": 1699,
+          "logical_lines": 11
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/SCOPE_REPORT.md",
+          "relative_to_S": "interspecies_rigidity_lean/SCOPE_REPORT.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "7c57cfd772de71e483791bfc8caa4166cf9c51c23b2ae2d11da005148ad8fe24",
+          "bytes": 6894,
+          "logical_lines": 116
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/STATEMENT_MAP.md",
+          "relative_to_S": "interspecies_rigidity_lean/STATEMENT_MAP.md",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "b1ad69bff414bb6095e8ea5426e832ac0fffd59cf8c7e9d57a652d2fd4b1b468",
+          "bytes": 6154,
+          "logical_lines": 108
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/axioms.txt",
+          "relative_to_S": "interspecies_rigidity_lean/axioms.txt",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "35e6b4915e0c50fbf41c0442b271ddd35ff9aa25d664761692ac3dc7c22140d5",
+          "bytes": 1476,
+          "logical_lines": 14
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/false_controls_manifest.json",
+          "relative_to_S": "interspecies_rigidity_lean/false_controls_manifest.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "b101b464f7ad57ac5901a51a29008830be52b3cddbf9e718d3df6d0b20d5e17e",
+          "bytes": 9580,
+          "logical_lines": 146
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/final_compiler.log",
+          "relative_to_S": "interspecies_rigidity_lean/final_compiler.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "524c550e27cd2fab50e147569f328b6042dcbbb535742a1b1910f504af770490",
+          "bytes": 658,
+          "logical_lines": 6
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/freeze_receipt.py",
+          "relative_to_S": "interspecies_rigidity_lean/freeze_receipt.py",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "a5f42772d945689b749e0b0ccb07ba7c61b9fcad1109f21670fc232cb1e12023",
+          "bytes": 11091,
+          "logical_lines": 160
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt01.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt01.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "326d673ce541947b1bc7bc0b74b4a4e333edec5266dd308458bbdb504edc83d7",
+          "bytes": 1886,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt01.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt01.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "fe9218b0ce105f12ae82ca006dc1d00f43e005510970b99f6c1d3718ea0f8a37",
+          "bytes": 4337,
+          "logical_lines": 93
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt01.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt01.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "914e6b7af5da4bc7be271743fbf1ff3f6876e8e10abf3639737f6d5bbe95ddde",
+          "bytes": 328,
+          "logical_lines": 3
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt02.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt02.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "8b02eb1ce73fac5b1faf9732676ef091519f13962d857112b64380c2ee2f6769",
+          "bytes": 1885,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt02.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt02.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+          "bytes": 6711,
+          "logical_lines": 146
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt02.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/attempt02.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "524c550e27cd2fab50e147569f328b6042dcbbb535742a1b1910f504af770490",
+          "bytes": 658,
+          "logical_lines": 6
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/axiom_inventory.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/axiom_inventory.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "85ed5750b4eefa09e08da59f403a580e041bda2a9005f93aa248ded932b59859",
+          "bytes": 1888,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/axiom_inventory.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/axiom_inventory.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "af15ddd780bf3f20a2122bfb39f74c4f7edba48b16dcfdd19e3123263ae1e7f4",
+          "bytes": 916,
+          "logical_lines": 17
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/axiom_inventory.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/axiom_inventory.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "35e6b4915e0c50fbf41c0442b271ddd35ff9aa25d664761692ac3dc7c22140d5",
+          "bytes": 1476,
+          "logical_lines": 14
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls01.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls01.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "87b53c9073be8417f403e8dfecd92e2d1fc381e3ba589b991691f4124598afca",
+          "bytes": 1877,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls01.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls01.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "7825dd3f0a227fedcb7bbae7c81a01c9739a58502f2db4a4879b0510d881e139",
+          "bytes": 3392,
+          "logical_lines": 91
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls01.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls01.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "460191bc92c6ab1544fcf298348c7f712791b83aa689d13889d443c3a5ca71e5",
+          "bytes": 1460,
+          "logical_lines": 21
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls02.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls02.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "1b7d48d4b2842a0ec099da70f9d14c80b14f9ad99d434acd81e46db4b1584b4b",
+          "bytes": 1876,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls02.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls02.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af",
+          "bytes": 3404,
+          "logical_lines": 91
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls02.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/controls02.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "d02a5f90246ed313b02a856f6aa8a6ba3766ec74498aab95357dbe53f311f41c",
+          "bytes": 713,
+          "logical_lines": 7
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "f67dffefcce9bb144b419e885703e42cbee4e3d63fd51cd29cdb291013c06a6c",
+          "bytes": 1913,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3",
+          "bytes": 350,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "a49f6c30d309062e284d0980e2d3e80e10b11fcc29caaf92428e46b61f414c13",
+          "bytes": 254,
+          "logical_lines": 4
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.wrapper.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.wrapper.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "8adfe712b8585c89636f52ff56325abe3ba18677feeb694194c55a4d0d6461ea",
+          "bytes": 271,
+          "logical_lines": 6
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCycleSign.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "e064f13c8d04189e4e12d3ba214e316a557ee23556eb3e937bacfc8522609c60",
+          "bytes": 1892,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCycleSign.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173",
+          "bytes": 318,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCycleSign.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "fe87e9af3e508f6a258bf094494ae989d6e4ab51a39b4058002e0fcb43906847",
+          "bytes": 255,
+          "logical_lines": 7
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.wrapper.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseCycleSign.wrapper.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "f2d6dda2283152096f71cdcd90c7eee3490c5273c4557b5aa1a5a73b60911ed3",
+          "bytes": 272,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseMissingEdge.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "be94295f6ad29e57066b23346dcada9287f8ad4bc03ac2a10ea4ad73c08eac88",
+          "bytes": 1898,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseMissingEdge.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa",
+          "bytes": 425,
+          "logical_lines": 10
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseMissingEdge.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "b5d242094d3d47c9532178f464545c6eed2599ad61d52a8621dd226ffe9b5b48",
+          "bytes": 247,
+          "logical_lines": 4
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.wrapper.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseMissingEdge.wrapper.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "22fa1d73dc245f206b4dd556881f442e7f4d919f61d0d5b9d65a97009a39a319",
+          "bytes": 264,
+          "logical_lines": 6
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.json",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "d8bf6d0aafc7e381fa12d953c95fff32c9d964de652ee87e75d7aaf51c935555",
+          "bytes": 1914,
+          "logical_lines": 26
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.lean",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.lean",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48",
+          "bytes": 335,
+          "logical_lines": 9
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "2304ffd1cfc3e1f7635926d2d0fd069978c4462bbc43d6c5251a7a7a27b38228",
+          "bytes": 239,
+          "logical_lines": 4
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.wrapper.log",
+          "relative_to_S": "interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.wrapper.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "3b1b8ef8aa0ba1891e15bed5a6039f54848b3be9375a374ee3b33c20aadfafa1",
+          "bytes": 256,
+          "logical_lines": 6
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/positive_compiler.log",
+          "relative_to_S": "interspecies_rigidity_lean/positive_compiler.log",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "d02a5f90246ed313b02a856f6aa8a6ba3766ec74498aab95357dbe53f311f41c",
+          "bytes": 713,
+          "logical_lines": 7
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/run_false_controls.py",
+          "relative_to_S": "interspecies_rigidity_lean/run_false_controls.py",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "1aeb84c116c1786d69940f57dec2c318423cc7691f60f5dbca21f5499ee3d6e0",
+          "bytes": 2494,
+          "logical_lines": 49
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/run_lean.py",
+          "relative_to_S": "interspecies_rigidity_lean/run_lean.py",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "1d57c91acaa62ca7ff4ee09a819afc77bf9fefe0419a4d752ddbb4ca40fb3f42",
+          "bytes": 1910,
+          "logical_lines": 40
+        },
+        {
+          "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/runtime_identity.json",
+          "relative_to_S": "interspecies_rigidity_lean/runtime_identity.json",
+          "role": "prior packet artifact guard; not a fresh content review",
+          "sha256": "8d060e0ac45c048cdeb4240cba7a195ac3a4ee0b8a5c900542a72828f0b55509",
+          "bytes": 1822,
+          "logical_lines": 28
+        }
+      ]
+    }
+  ],
+  "instructions": [
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md",
+      "relative_to_S": null,
+      "role": "applicable instruction read; fixed external scope overrides unrelated campaign actions",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "logical_lines": 140
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/DISCOVERY.md",
+      "relative_to_S": null,
+      "role": "applicable instruction read; fixed external scope overrides unrelated campaign actions",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "logical_lines": 434
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md",
+      "relative_to_S": null,
+      "role": "applicable instruction read; fixed external scope overrides unrelated campaign actions",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "logical_lines": 336
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md",
+      "relative_to_S": null,
+      "role": "applicable instruction read; fixed external scope overrides unrelated campaign actions",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "logical_lines": 309
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/proof-search-governance.md",
+      "relative_to_S": null,
+      "role": "applicable instruction read; fixed external scope overrides unrelated campaign actions",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "logical_lines": 126
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/abstract-algebraic-core-extraction.md",
+      "relative_to_S": null,
+      "role": "applicable instruction read; fixed external scope overrides unrelated campaign actions",
+      "sha256": "9d0acc81d7637e0e13d05100f00ff3c088d6c1304ea263eb9c7069e44e7cdb68",
+      "bytes": 2147,
+      "logical_lines": 56
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/AGENTS.md",
+      "relative_to_S": null,
+      "role": "applicable instruction read; fixed external scope overrides unrelated campaign actions",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "logical_lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "relative_to_S": null,
+      "role": "applicable instruction read; fixed external scope overrides unrelated campaign actions",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "logical_lines": 35
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "relative_to_S": null,
+      "role": "applicable instruction read; fixed external scope overrides unrelated campaign actions",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "logical_lines": 245
+    }
+  ],
+  "all_recorded_protected_artifacts_unchanged": true,
+  "no_repository_or_prompt_edits_performed": true
+}

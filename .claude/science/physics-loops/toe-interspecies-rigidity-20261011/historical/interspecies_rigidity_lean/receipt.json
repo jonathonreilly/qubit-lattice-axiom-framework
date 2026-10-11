@@ -1,0 +1,1136 @@
+{
+  "schema": "scoped-lean-finite-geometry-evidence-v1",
+  "frozen_at_utc": "2026-10-11T21:20:11.873406+00:00",
+  "scope": "Six finite-geometry theorems for I9-I14, not the full interspecies collision-invariant theorem or physical law.",
+  "formalized_premises": [
+    "arbitrary field K",
+    "additive commutative group V with Module K V",
+    "mathlib AffineIndependent of the four anchor vectors",
+    "all four explicit cross-edge equations for the cycle theorem",
+    "explicit two line parameterizations, residual direction representations and cross residual equation for the exceptional theorem"
+  ],
+  "outside_scope": [
+    "full-affine-span anchor extraction",
+    "full labeled-family extension I7-I8",
+    "off-line confinement and remaining propagation",
+    "shell IFT",
+    "full-support measure upgrade",
+    "integration",
+    "cubic/current corollary",
+    "asymptotic/physical assumptions"
+  ],
+  "independence": "Formalization and controls by the same author as the frozen note; separate independent proof review is not certified here.",
+  "theorems": [
+    {
+      "name": "InterspeciesRigidity.four_affine_coefficients_zero",
+      "source": "RigidityGeometry.lean",
+      "line": 24
+    },
+    {
+      "name": "InterspeciesRigidity.four_cycle_multipliers",
+      "source": "RigidityGeometry.lean",
+      "line": 40
+    },
+    {
+      "name": "InterspeciesRigidity.opposite_skew_line_residuals",
+      "source": "RigidityGeometry.lean",
+      "line": 62
+    },
+    {
+      "name": "InterspeciesRigidity.four_anchor_homothety",
+      "source": "RigidityGeometry.lean",
+      "line": 89
+    },
+    {
+      "name": "InterspeciesRigidity.opposite_skew_direction_not_span",
+      "source": "RigidityGeometry.lean",
+      "line": 116
+    },
+    {
+      "name": "InterspeciesRigidity.opposite_skew_lines_disjoint",
+      "source": "RigidityGeometry.lean",
+      "line": 130
+    },
+    {
+      "name": "RigidityControls.tetra_independent",
+      "source": "ControlData.lean",
+      "line": 16
+    },
+    {
+      "name": "RigidityControls.positive_four_cycle_application",
+      "source": "ControlData.lean",
+      "line": 29
+    },
+    {
+      "name": "RigidityControls.positive_exceptional_application",
+      "source": "ControlData.lean",
+      "line": 35
+    },
+    {
+      "name": "RigidityControls.square_edges_true",
+      "source": "ControlData.lean",
+      "line": 52
+    },
+    {
+      "name": "RigidityControls.square_multipliers_unequal",
+      "source": "ControlData.lean",
+      "line": 57
+    },
+    {
+      "name": "RigidityControls.tetra_three_edges_true",
+      "source": "ControlData.lean",
+      "line": 64
+    },
+    {
+      "name": "RigidityControls.coplanar_residual_true",
+      "source": "ControlData.lean",
+      "line": 72
+    },
+    {
+      "name": "RigidityControls.wrong_cycle_nonzero",
+      "source": "ControlData.lean",
+      "line": 78
+    }
+  ],
+  "theorem_axioms": {
+    "InterspeciesRigidity.four_affine_coefficients_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InterspeciesRigidity.four_cycle_multipliers": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InterspeciesRigidity.opposite_skew_line_residuals": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InterspeciesRigidity.four_anchor_homothety": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InterspeciesRigidity.opposite_skew_direction_not_span": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "InterspeciesRigidity.opposite_skew_lines_disjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RigidityControls.tetra_independent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RigidityControls.positive_four_cycle_application": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RigidityControls.positive_exceptional_application": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RigidityControls.square_edges_true": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RigidityControls.square_multipliers_unequal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RigidityControls.tetra_three_edges_true": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RigidityControls.coplanar_residual_true": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "RigidityControls.wrong_cycle_nonzero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "successful_compilations": [
+    {
+      "command": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "-R",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.lean",
+        "-o",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.olean"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+      "exit": 0,
+      "elapsed_seconds": 34.86988787492737,
+      "timeout_seconds": 120,
+      "source_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt02.lean",
+      "source_sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+      "environment_overrides": {
+        "MATHLIB_CACHE_DIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache",
+        "XDG_CACHE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache/xdg",
+        "LAKE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/lake_home",
+        "TMPDIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/tmp",
+        "LEAN_PATH": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean"
+      },
+      "path_prepend": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin"
+    },
+    {
+      "command": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "-R",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.lean",
+        "-o",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.olean"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+      "exit": 0,
+      "elapsed_seconds": 26.96838308311999,
+      "timeout_seconds": 120,
+      "source_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls02.lean",
+      "source_sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af",
+      "environment_overrides": {
+        "MATHLIB_CACHE_DIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache",
+        "XDG_CACHE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache/xdg",
+        "LAKE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/lake_home",
+        "TMPDIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/tmp",
+        "LEAN_PATH": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean"
+      },
+      "path_prepend": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin"
+    }
+  ],
+  "axiom_inventory_execution": {
+    "command": [
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+      "env",
+      "lean",
+      "-R",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/AxiomInventory.lean",
+      "-o",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/AxiomInventory.olean"
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+    "exit": 0,
+    "elapsed_seconds": 31.326911750249565,
+    "timeout_seconds": 120,
+    "source_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/axiom_inventory.lean",
+    "source_sha256": "af15ddd780bf3f20a2122bfb39f74c4f7edba48b16dcfdd19e3123263ae1e7f4",
+    "environment_overrides": {
+      "MATHLIB_CACHE_DIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache",
+      "XDG_CACHE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache/xdg",
+      "LAKE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/lake_home",
+      "TMPDIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/tmp",
+      "LEAN_PATH": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean"
+    },
+    "path_prepend": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin"
+  },
+  "false_controls": [
+    {
+      "case": "FalseNoNoncoplanarity",
+      "expected_exit": 1,
+      "wrapper_exit": 1,
+      "actual_exit": 1,
+      "reached_intended_mathematical_goal": true,
+      "unexpected_failure_markers": [],
+      "execution": {
+        "command": [
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+          "env",
+          "lean",
+          "-R",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseNoNoncoplanarity.lean",
+          "-o",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseNoNoncoplanarity.olean"
+        ],
+        "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+        "exit": 1,
+        "elapsed_seconds": 31.549654291011393,
+        "timeout_seconds": 120,
+        "source_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.lean",
+        "source_sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48",
+        "environment_overrides": {
+          "MATHLIB_CACHE_DIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache",
+          "XDG_CACHE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache/xdg",
+          "LAKE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/lake_home",
+          "TMPDIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/tmp",
+          "LEAN_PATH": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean"
+        },
+        "path_prepend": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin"
+      },
+      "source_sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48",
+      "log_sha256": "2304ffd1cfc3e1f7635926d2d0fd069978c4462bbc43d6c5251a7a7a27b38228"
+    },
+    {
+      "case": "FalseMissingEdge",
+      "expected_exit": 1,
+      "wrapper_exit": 1,
+      "actual_exit": 1,
+      "reached_intended_mathematical_goal": true,
+      "unexpected_failure_markers": [],
+      "execution": {
+        "command": [
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+          "env",
+          "lean",
+          "-R",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseMissingEdge.lean",
+          "-o",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseMissingEdge.olean"
+        ],
+        "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+        "exit": 1,
+        "elapsed_seconds": 31.54795241681859,
+        "timeout_seconds": 120,
+        "source_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.lean",
+        "source_sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa",
+        "environment_overrides": {
+          "MATHLIB_CACHE_DIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache",
+          "XDG_CACHE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache/xdg",
+          "LAKE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/lake_home",
+          "TMPDIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/tmp",
+          "LEAN_PATH": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean"
+        },
+        "path_prepend": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin"
+      },
+      "source_sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa",
+      "log_sha256": "b5d242094d3d47c9532178f464545c6eed2599ad61d52a8621dd226ffe9b5b48"
+    },
+    {
+      "case": "FalseCoplanarResidual",
+      "expected_exit": 1,
+      "wrapper_exit": 1,
+      "actual_exit": 1,
+      "reached_intended_mathematical_goal": true,
+      "unexpected_failure_markers": [],
+      "execution": {
+        "command": [
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+          "env",
+          "lean",
+          "-R",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCoplanarResidual.lean",
+          "-o",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCoplanarResidual.olean"
+        ],
+        "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+        "exit": 1,
+        "elapsed_seconds": 36.78826741594821,
+        "timeout_seconds": 120,
+        "source_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.lean",
+        "source_sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3",
+        "environment_overrides": {
+          "MATHLIB_CACHE_DIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache",
+          "XDG_CACHE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache/xdg",
+          "LAKE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/lake_home",
+          "TMPDIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/tmp",
+          "LEAN_PATH": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean"
+        },
+        "path_prepend": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin"
+      },
+      "source_sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3",
+      "log_sha256": "a49f6c30d309062e284d0980e2d3e80e10b11fcc29caaf92428e46b61f414c13"
+    },
+    {
+      "case": "FalseCycleSign",
+      "expected_exit": 1,
+      "wrapper_exit": 1,
+      "actual_exit": 1,
+      "reached_intended_mathematical_goal": true,
+      "unexpected_failure_markers": [],
+      "execution": {
+        "command": [
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+          "env",
+          "lean",
+          "-R",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCycleSign.lean",
+          "-o",
+          "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCycleSign.olean"
+        ],
+        "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+        "exit": 1,
+        "elapsed_seconds": 36.88636654103175,
+        "timeout_seconds": 120,
+        "source_snapshot": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.lean",
+        "source_sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173",
+        "environment_overrides": {
+          "MATHLIB_CACHE_DIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache",
+          "XDG_CACHE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/cache/xdg",
+          "LAKE_HOME": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/lake_home",
+          "TMPDIR": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/tmp",
+          "LEAN_PATH": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean"
+        },
+        "path_prepend": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin"
+      },
+      "source_sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173",
+      "log_sha256": "fe87e9af3e508f6a258bf094494ae989d6e4ab51a39b4058002e0fcb43906847"
+    }
+  ],
+  "failed_development_attempt": {
+    "source": "logs/controls01.lean",
+    "log": "logs/controls01.log",
+    "execution": "logs/controls01.json",
+    "cause": "Omitted explicit Finset argument in a mathlib helper invocation.",
+    "repair": "Added Finset.univ; principal geometry proof unchanged.",
+    "failed_sorryAx_diagnostics": "Preserved as failed elaboration, never accepted as evidence."
+  },
+  "other_tooling_observations": [
+    "A runtime-identity command was rejected before process creation due to a duplicated cwd component, then rerun successfully.",
+    "Read-only cache discovery found legacy Mathlib/Data/Real paths absent; the already cached Mathlib/Basic/Real/Basic import was used. No fetch or import compilation failure occurred."
+  ],
+  "runtime": {
+    "runtime_receipt_sha256": "1564b0bf532aca6c7f43c301455163b1af0afb96405e620eb56c481bdf7ed96d",
+    "reused_entrypoint_sha256": "12b8eb52bb33c16bf17c6d87763ac191242b72eea4ac05a853e2a4ef41ed9521",
+    "mathlib_commit": "939d5d5d9e6f07d1d8c80a16fa3fa39a7518b716",
+    "initial_tracked_status": "",
+    "records": {
+      "lean": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+        "sha256": "d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf",
+        "version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)"
+      },
+      "lake": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "sha256": "d2d63c80ca10bd2cc9557d11d59221b95c6eefb078c9652a11ef887ab8a068a5",
+        "version": "Lake version 5.0.0-src+c29b6dd (Lean version 4.35.0-rc4)"
+      },
+      "lake-manifest.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/lake-manifest.json",
+        "sha256": "0d0cfc1d01f64c34bbd40e858428b83ede48be9f6e065339d63ebb851bd49a57"
+      },
+      "lean-toolchain": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/lean-toolchain",
+        "sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7"
+      }
+    },
+    "runtime_archive_validation": "Reused prior receipt of archive SHA256 743f536c58c2580577ef890985b4084e90c6039fce099018d5c0c67c13724218; binaries independently rehashed here. No extraction or fetch.",
+    "new_files_policy": "All new source/log/temp/cache locations restricted to this directory."
+  },
+  "mathlib_commit": "939d5d5d9e6f07d1d8c80a16fa3fa39a7518b716",
+  "mathlib_final_tracked_status": "",
+  "packages": {
+    "Cli": "82c11b9717083154aefc5fe8d4cba4bbf046298f",
+    "LeanSearchClient": "234d9e074fbd6e911b920baf32db5291c3125be0",
+    "Qq": "e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e",
+    "aesop": "04879b1e1de744d5c9777c8cf63fa55a8f652e5e",
+    "batteries": "b71aaf60877e673fdb921f06f20987d12ee8a290",
+    "importGraph": "579f558774c4ac6840e715ba60dabf3030619349",
+    "plausible": "aef59637faa9e85fa2486acaaf906ce3f572af7c",
+    "proofwidgets": "d5ad4a0b79fa7f9818fe1380d05a3f6143823c09"
+  },
+  "library_manual_reading_ranges": {
+    "Mathlib/LinearAlgebra/AffineSpace/Independent.lean": [
+      "25-82",
+      "80-150",
+      "770-840"
+    ],
+    "Mathlib/LinearAlgebra/AffineSpace/Combination.lean": [
+      "220-272",
+      "407-429"
+    ],
+    "Mathlib/LinearAlgebra/LinearIndependent/Defs.lean": [
+      "760-779; explored, not the final direct proof route"
+    ],
+    "Mathlib/Tactic/Module.lean": [
+      "1-70; prior complete reading of 1-160 reused"
+    ],
+    "Mathlib/Tactic/Ring.lean": [
+      "source identity; tactic contract via Module; not a full implementation read"
+    ],
+    "Mathlib/Tactic/NormNum.lean": [
+      "import list only; not a full implementation read"
+    ],
+    "Mathlib/Tactic/FinCases.lean": [
+      "source identity only; ordinary elaboration used"
+    ],
+    "Mathlib/Data/Fin/VecNotation.lean": [
+      "source identity only; ordinary elaboration used"
+    ],
+    "Mathlib/Basic/Real/Basic.lean": [
+      "1-55",
+      "459-510"
+    ]
+  },
+  "library_trust_boundary": "Ordinary pinned upstream cached objects reused; complete transitive library not rebuilt or manually reverified.",
+  "reading_coverage": {
+    "RigidityGeometry.lean": "complete final 146 lines",
+    "ControlData.lean": "complete final 91 lines",
+    "STATEMENT_MAP.md": "complete 108 lines",
+    "SCOPE_REPORT.md": "complete",
+    "successful_logs": "complete principal, controls and axiom inventory",
+    "failed_logs": "complete initial control failure and all four intended false-case failures",
+    "old_runtime_receipt_and_entrypoint": "complete",
+    "original_note": "earlier complete reading reused at unchanged frozen SHA256"
+  },
+  "environment_boundary": {
+    "all_new_writes": "this packet directory",
+    "network_fetch": false,
+    "package_installation": false,
+    "global_configuration_change": false,
+    "repository_or_frozen_source_edit": false,
+    "delegation": false,
+    "selected_model_and_reasoning": "unchanged"
+  },
+  "protected_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+      "relative_to_packet": null,
+      "role": "frozen authored theorem",
+      "sha256": "ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8",
+      "bytes": 25603,
+      "logical_lines": 559
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/receipt.json",
+      "relative_to_packet": null,
+      "role": "frozen authored receipt",
+      "sha256": "283511b410dafa614c1e4453483b540e744604e66b538a803516c8294379267f",
+      "bytes": 12291,
+      "logical_lines": 234
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/receipt.json",
+      "relative_to_packet": null,
+      "role": "reused runtime/formalization receipt, fully read",
+      "sha256": "1564b0bf532aca6c7f43c301455163b1af0afb96405e620eb56c481bdf7ed96d",
+      "bytes": 29021,
+      "logical_lines": 676
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/run_compile.py",
+      "relative_to_packet": null,
+      "role": "reused compilation entrypoint, fully read",
+      "sha256": "12b8eb52bb33c16bf17c6d87763ac191242b72eea4ac05a853e2a4ef41ed9521",
+      "bytes": 1407,
+      "logical_lines": 31
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+      "relative_to_packet": null,
+      "role": "pinned executable, independently rehashed",
+      "sha256": "d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf",
+      "bytes": 49968,
+      "logical_lines": 3
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+      "relative_to_packet": null,
+      "role": "pinned executable, independently rehashed",
+      "sha256": "d2d63c80ca10bd2cc9557d11d59221b95c6eefb078c9652a11ef887ab8a068a5",
+      "bytes": 51664,
+      "logical_lines": 24
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/Mathlib/LinearAlgebra/AffineSpace/Independent.lean",
+      "relative_to_packet": null,
+      "role": "pinned mathlib source; manual coverage separately recorded",
+      "sha256": "c4dddde19e198f23cb7bc43bf5bbe3fb3a55298abb9cce9c8fcf7339e88a7f13",
+      "bytes": 59824,
+      "logical_lines": 1147
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/AffineSpace/Independent.olean",
+      "relative_to_packet": null,
+      "role": "reused cached library object; no full dependency rebuild",
+      "sha256": "b17d6d7af3099a37b5e6297ddeb21425c8e9c5a64b1e733706569c153dfd61fd",
+      "bytes": 344832,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/Mathlib/LinearAlgebra/AffineSpace/Combination.lean",
+      "relative_to_packet": null,
+      "role": "pinned mathlib source; manual coverage separately recorded",
+      "sha256": "3f6594c5f59756dd481b572791c29b79a087fa7291ee1b47bf8c3259b8da45fc",
+      "bytes": 50733,
+      "logical_lines": 987
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/AffineSpace/Combination.olean",
+      "relative_to_packet": null,
+      "role": "reused cached library object; no full dependency rebuild",
+      "sha256": "4a3e07abd6a931441bbf0e6f09e55706d9e0d6ad171a94dc017644dd895f19e5",
+      "bytes": 474960,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/Mathlib/LinearAlgebra/LinearIndependent/Defs.lean",
+      "relative_to_packet": null,
+      "role": "pinned mathlib source; manual coverage separately recorded",
+      "sha256": "1318408cb7ef48e0bb460dfdf12def2d52230879b473aff4b7d5fae49236f375",
+      "bytes": 43137,
+      "logical_lines": 929
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/LinearIndependent/Defs.olean",
+      "relative_to_packet": null,
+      "role": "reused cached library object; no full dependency rebuild",
+      "sha256": "65d879e18e8a2675db3e1d167c25e418df5549c6b48fd49026a18a7eadabdd6c",
+      "bytes": 405976,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/Mathlib/Tactic/Module.lean",
+      "relative_to_packet": null,
+      "role": "pinned mathlib source; manual coverage separately recorded",
+      "sha256": "10bd98b498247affbba4b2b016d4e7e0093b6b4ba1dda2bb17c77ce2a9a9affb",
+      "bytes": 41044,
+      "logical_lines": 767
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Module.olean",
+      "relative_to_packet": null,
+      "role": "reused cached library object; no full dependency rebuild",
+      "sha256": "89b3e9645f2441f0b2182f3c8bbad7da5f077fc8932d9462611f519a550d7aad",
+      "bytes": 1361616,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/Mathlib/Tactic/Ring.lean",
+      "relative_to_packet": null,
+      "role": "pinned mathlib source; manual coverage separately recorded",
+      "sha256": "d3ef5c49ebbd1108ce3f935e5ad95485e143abf02f28c027dba4bb6f3be8196e",
+      "bytes": 166,
+      "logical_lines": 7
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean",
+      "relative_to_packet": null,
+      "role": "reused cached library object; no full dependency rebuild",
+      "sha256": "072f8f496089444370729803d2ad03eda2ef7025af904c829fd83efb5ba1b01c",
+      "bytes": 1648,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/Mathlib/Tactic/NormNum.lean",
+      "relative_to_packet": null,
+      "role": "pinned mathlib source; manual coverage separately recorded",
+      "sha256": "dca9500572c6d887000f3de17c7145b53bf35233afc1ad8026cca908cec7a2fe",
+      "bytes": 430,
+      "logical_lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/.lake/build/lib/lean/Mathlib/Tactic/NormNum.olean",
+      "relative_to_packet": null,
+      "role": "reused cached library object; no full dependency rebuild",
+      "sha256": "dfa1cc627fab2a50ddcdc56483e5835e943e6b0486b55442e1f2fc8061743bcb",
+      "bytes": 2496,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/Mathlib/Tactic/FinCases.lean",
+      "relative_to_packet": null,
+      "role": "pinned mathlib source; manual coverage separately recorded",
+      "sha256": "6e7169614b2cf5eccb0f2a520d2f36030ed5384b633277b61b54a5e9dc490ac0",
+      "bytes": 4924,
+      "logical_lines": 140
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/.lake/build/lib/lean/Mathlib/Tactic/FinCases.olean",
+      "relative_to_packet": null,
+      "role": "reused cached library object; no full dependency rebuild",
+      "sha256": "64309bab94ae61fa28f578aacde8ccf6149bd935785c3be51f7a2ee2a697639f",
+      "bytes": 148672,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/Mathlib/Data/Fin/VecNotation.lean",
+      "relative_to_packet": null,
+      "role": "pinned mathlib source; manual coverage separately recorded",
+      "sha256": "5c636e6d665ce3a6bd7ad3ba5c242371515aa7d1888c8466f71b7d662264cd17",
+      "bytes": 17891,
+      "logical_lines": 509
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/.lake/build/lib/lean/Mathlib/Data/Fin/VecNotation.olean",
+      "relative_to_packet": null,
+      "role": "reused cached library object; no full dependency rebuild",
+      "sha256": "97c9fb250abe5f6d78265e16e50cd4f2fd8f1f9f482df5d0dad42105071ac71e",
+      "bytes": 259968,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/Mathlib/Basic/Real/Basic.lean",
+      "relative_to_packet": null,
+      "role": "pinned mathlib source; manual coverage separately recorded",
+      "sha256": "f15de163c14198d9b60aeb8ac845b4540c198bbb2e80d6153d0dbc8a6c08936f",
+      "bytes": 19159,
+      "logical_lines": 577
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/.lake/build/lib/lean/Mathlib/Basic/Real/Basic.olean",
+      "relative_to_packet": null,
+      "role": "reused cached library object; no full dependency rebuild",
+      "sha256": "0805604d20c395f31145c8508592f2f95d0df02fbc4139c746d0eb07019c9e1f",
+      "bytes": 325968,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/lake-manifest.json",
+      "relative_to_packet": null,
+      "role": "pinned dependency configuration",
+      "sha256": "0d0cfc1d01f64c34bbd40e858428b83ede48be9f6e065339d63ebb851bd49a57",
+      "bytes": 2815,
+      "logical_lines": 86
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/lean-toolchain",
+      "relative_to_packet": null,
+      "role": "pinned dependency configuration",
+      "sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "bytes": 29,
+      "logical_lines": 1
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/AxiomInventory.lean",
+      "relative_to_packet": "AxiomInventory.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "af15ddd780bf3f20a2122bfb39f74c4f7edba48b16dcfdd19e3123263ae1e7f4",
+      "bytes": 916,
+      "logical_lines": 17
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/AxiomInventory.olean",
+      "relative_to_packet": "AxiomInventory.olean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "e9bcdf88b1098bcd8593f9b6706f7ad5accc8958caa4e26c79cbe5298e2014d5",
+      "bytes": 1144,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/CHECKPOINT.md",
+      "relative_to_packet": "CHECKPOINT.md",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "54fe81169c033d7b7b2506c2df727b21743a220a4e3e509bfdcf5bdc911f9ea5",
+      "bytes": 1377,
+      "logical_lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.lean",
+      "relative_to_packet": "ControlData.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af",
+      "bytes": 3404,
+      "logical_lines": 91
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.olean",
+      "relative_to_packet": "ControlData.olean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "81b1699900381d68a9b8bce7a3c3fe6ade4e5eaf3271c3067601a1aeb8ea581a",
+      "bytes": 588088,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCoplanarResidual.lean",
+      "relative_to_packet": "FalseCoplanarResidual.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3",
+      "bytes": 350,
+      "logical_lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCycleSign.lean",
+      "relative_to_packet": "FalseCycleSign.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173",
+      "bytes": 318,
+      "logical_lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseMissingEdge.lean",
+      "relative_to_packet": "FalseMissingEdge.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa",
+      "bytes": 425,
+      "logical_lines": 10
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseNoNoncoplanarity.lean",
+      "relative_to_packet": "FalseNoNoncoplanarity.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48",
+      "bytes": 335,
+      "logical_lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.lean",
+      "relative_to_packet": "RigidityGeometry.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+      "bytes": 6711,
+      "logical_lines": 146
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.olean",
+      "relative_to_packet": "RigidityGeometry.olean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "08a9c74f5f2b8f8591b05dd548ed0e42b10b283330536f11254fa1ac63de20e2",
+      "bytes": 659896,
+      "logical_lines": null
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/SCOPED_OBLIGATIONS.md",
+      "relative_to_packet": "SCOPED_OBLIGATIONS.md",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "059953fa4094c24f2e4c6f4fa3f4140a4f248ec1ec5a299ae7dd037c4d9446bd",
+      "bytes": 1699,
+      "logical_lines": 11
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/SCOPE_REPORT.md",
+      "relative_to_packet": "SCOPE_REPORT.md",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "7c57cfd772de71e483791bfc8caa4166cf9c51c23b2ae2d11da005148ad8fe24",
+      "bytes": 6894,
+      "logical_lines": 116
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/STATEMENT_MAP.md",
+      "relative_to_packet": "STATEMENT_MAP.md",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "b1ad69bff414bb6095e8ea5426e832ac0fffd59cf8c7e9d57a652d2fd4b1b468",
+      "bytes": 6154,
+      "logical_lines": 108
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/axioms.txt",
+      "relative_to_packet": "axioms.txt",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "35e6b4915e0c50fbf41c0442b271ddd35ff9aa25d664761692ac3dc7c22140d5",
+      "bytes": 1476,
+      "logical_lines": 14
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/false_controls_manifest.json",
+      "relative_to_packet": "false_controls_manifest.json",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "b101b464f7ad57ac5901a51a29008830be52b3cddbf9e718d3df6d0b20d5e17e",
+      "bytes": 9580,
+      "logical_lines": 146
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/final_compiler.log",
+      "relative_to_packet": "final_compiler.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "524c550e27cd2fab50e147569f328b6042dcbbb535742a1b1910f504af770490",
+      "bytes": 658,
+      "logical_lines": 6
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/freeze_receipt.py",
+      "relative_to_packet": "freeze_receipt.py",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "a5f42772d945689b749e0b0ccb07ba7c61b9fcad1109f21670fc232cb1e12023",
+      "bytes": 11091,
+      "logical_lines": 160
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt01.json",
+      "relative_to_packet": "logs/attempt01.json",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "326d673ce541947b1bc7bc0b74b4a4e333edec5266dd308458bbdb504edc83d7",
+      "bytes": 1886,
+      "logical_lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt01.lean",
+      "relative_to_packet": "logs/attempt01.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "fe9218b0ce105f12ae82ca006dc1d00f43e005510970b99f6c1d3718ea0f8a37",
+      "bytes": 4337,
+      "logical_lines": 93
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt01.log",
+      "relative_to_packet": "logs/attempt01.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "914e6b7af5da4bc7be271743fbf1ff3f6876e8e10abf3639737f6d5bbe95ddde",
+      "bytes": 328,
+      "logical_lines": 3
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt02.json",
+      "relative_to_packet": "logs/attempt02.json",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "8b02eb1ce73fac5b1faf9732676ef091519f13962d857112b64380c2ee2f6769",
+      "bytes": 1885,
+      "logical_lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt02.lean",
+      "relative_to_packet": "logs/attempt02.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+      "bytes": 6711,
+      "logical_lines": 146
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/attempt02.log",
+      "relative_to_packet": "logs/attempt02.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "524c550e27cd2fab50e147569f328b6042dcbbb535742a1b1910f504af770490",
+      "bytes": 658,
+      "logical_lines": 6
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/axiom_inventory.json",
+      "relative_to_packet": "logs/axiom_inventory.json",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "85ed5750b4eefa09e08da59f403a580e041bda2a9005f93aa248ded932b59859",
+      "bytes": 1888,
+      "logical_lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/axiom_inventory.lean",
+      "relative_to_packet": "logs/axiom_inventory.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "af15ddd780bf3f20a2122bfb39f74c4f7edba48b16dcfdd19e3123263ae1e7f4",
+      "bytes": 916,
+      "logical_lines": 17
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/axiom_inventory.log",
+      "relative_to_packet": "logs/axiom_inventory.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "35e6b4915e0c50fbf41c0442b271ddd35ff9aa25d664761692ac3dc7c22140d5",
+      "bytes": 1476,
+      "logical_lines": 14
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls01.json",
+      "relative_to_packet": "logs/controls01.json",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "87b53c9073be8417f403e8dfecd92e2d1fc381e3ba589b991691f4124598afca",
+      "bytes": 1877,
+      "logical_lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls01.lean",
+      "relative_to_packet": "logs/controls01.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "7825dd3f0a227fedcb7bbae7c81a01c9739a58502f2db4a4879b0510d881e139",
+      "bytes": 3392,
+      "logical_lines": 91
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls01.log",
+      "relative_to_packet": "logs/controls01.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "460191bc92c6ab1544fcf298348c7f712791b83aa689d13889d443c3a5ca71e5",
+      "bytes": 1460,
+      "logical_lines": 21
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls02.json",
+      "relative_to_packet": "logs/controls02.json",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "1b7d48d4b2842a0ec099da70f9d14c80b14f9ad99d434acd81e46db4b1584b4b",
+      "bytes": 1876,
+      "logical_lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls02.lean",
+      "relative_to_packet": "logs/controls02.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af",
+      "bytes": 3404,
+      "logical_lines": 91
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/controls02.log",
+      "relative_to_packet": "logs/controls02.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "d02a5f90246ed313b02a856f6aa8a6ba3766ec74498aab95357dbe53f311f41c",
+      "bytes": 713,
+      "logical_lines": 7
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.json",
+      "relative_to_packet": "logs/false_FalseCoplanarResidual.json",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "f67dffefcce9bb144b419e885703e42cbee4e3d63fd51cd29cdb291013c06a6c",
+      "bytes": 1913,
+      "logical_lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.lean",
+      "relative_to_packet": "logs/false_FalseCoplanarResidual.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3",
+      "bytes": 350,
+      "logical_lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.log",
+      "relative_to_packet": "logs/false_FalseCoplanarResidual.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "a49f6c30d309062e284d0980e2d3e80e10b11fcc29caaf92428e46b61f414c13",
+      "bytes": 254,
+      "logical_lines": 4
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.wrapper.log",
+      "relative_to_packet": "logs/false_FalseCoplanarResidual.wrapper.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "8adfe712b8585c89636f52ff56325abe3ba18677feeb694194c55a4d0d6461ea",
+      "bytes": 271,
+      "logical_lines": 6
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.json",
+      "relative_to_packet": "logs/false_FalseCycleSign.json",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "e064f13c8d04189e4e12d3ba214e316a557ee23556eb3e937bacfc8522609c60",
+      "bytes": 1892,
+      "logical_lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.lean",
+      "relative_to_packet": "logs/false_FalseCycleSign.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173",
+      "bytes": 318,
+      "logical_lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.log",
+      "relative_to_packet": "logs/false_FalseCycleSign.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "fe87e9af3e508f6a258bf094494ae989d6e4ab51a39b4058002e0fcb43906847",
+      "bytes": 255,
+      "logical_lines": 7
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseCycleSign.wrapper.log",
+      "relative_to_packet": "logs/false_FalseCycleSign.wrapper.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "f2d6dda2283152096f71cdcd90c7eee3490c5273c4557b5aa1a5a73b60911ed3",
+      "bytes": 272,
+      "logical_lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.json",
+      "relative_to_packet": "logs/false_FalseMissingEdge.json",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "be94295f6ad29e57066b23346dcada9287f8ad4bc03ac2a10ea4ad73c08eac88",
+      "bytes": 1898,
+      "logical_lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.lean",
+      "relative_to_packet": "logs/false_FalseMissingEdge.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa",
+      "bytes": 425,
+      "logical_lines": 10
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.log",
+      "relative_to_packet": "logs/false_FalseMissingEdge.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "b5d242094d3d47c9532178f464545c6eed2599ad61d52a8621dd226ffe9b5b48",
+      "bytes": 247,
+      "logical_lines": 4
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseMissingEdge.wrapper.log",
+      "relative_to_packet": "logs/false_FalseMissingEdge.wrapper.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "22fa1d73dc245f206b4dd556881f442e7f4d919f61d0d5b9d65a97009a39a319",
+      "bytes": 264,
+      "logical_lines": 6
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.json",
+      "relative_to_packet": "logs/false_FalseNoNoncoplanarity.json",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "d8bf6d0aafc7e381fa12d953c95fff32c9d964de652ee87e75d7aaf51c935555",
+      "bytes": 1914,
+      "logical_lines": 26
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.lean",
+      "relative_to_packet": "logs/false_FalseNoNoncoplanarity.lean",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48",
+      "bytes": 335,
+      "logical_lines": 9
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.log",
+      "relative_to_packet": "logs/false_FalseNoNoncoplanarity.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "2304ffd1cfc3e1f7635926d2d0fd069978c4462bbc43d6c5251a7a7a27b38228",
+      "bytes": 239,
+      "logical_lines": 4
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.wrapper.log",
+      "relative_to_packet": "logs/false_FalseNoNoncoplanarity.wrapper.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "3b1b8ef8aa0ba1891e15bed5a6039f54848b3be9375a374ee3b33c20aadfafa1",
+      "bytes": 256,
+      "logical_lines": 6
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/positive_compiler.log",
+      "relative_to_packet": "positive_compiler.log",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "d02a5f90246ed313b02a856f6aa8a6ba3766ec74498aab95357dbe53f311f41c",
+      "bytes": 713,
+      "logical_lines": 7
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/run_false_controls.py",
+      "relative_to_packet": "run_false_controls.py",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "1aeb84c116c1786d69940f57dec2c318423cc7691f60f5dbca21f5499ee3d6e0",
+      "bytes": 2494,
+      "logical_lines": 49
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/run_lean.py",
+      "relative_to_packet": "run_lean.py",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "1d57c91acaa62ca7ff4ee09a819afc77bf9fefe0419a4d752ddbb4ca40fb3f42",
+      "bytes": 1910,
+      "logical_lines": 40
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/runtime_identity.json",
+      "relative_to_packet": "runtime_identity.json",
+      "role": "new source, object, log, control, execution record or report",
+      "sha256": "8d060e0ac45c048cdeb4240cba7a195ac3a4ee0b8a5c900542a72828f0b55509",
+      "bytes": 1822,
+      "logical_lines": 28
+    }
+  ],
+  "no_retained_status_decision": true,
+  "receipt_self_hash": "Excluded to avoid self-reference; communicated separately."
+}

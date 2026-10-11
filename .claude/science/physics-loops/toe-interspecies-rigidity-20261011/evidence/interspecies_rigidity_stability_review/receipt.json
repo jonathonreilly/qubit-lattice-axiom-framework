@@ -1,0 +1,272 @@
+{
+  "schema": "bounded_independent_physics_review_receipt_v1",
+  "frozen_at_utc": "2026-10-11T21:57:32.375943+00:00",
+  "task": "Independent source-bound review of quantitative interspecies rigidity stability",
+  "review_result": "No consequential mathematical defect identified in S1-S31; no source repair requested at target identity",
+  "target_sha256": "61f240d5e35f9c94d759f63e1d94c2a0677e53f52752c53700faeb50a546039a",
+  "author_receipt_sha256": "5cdd8a3d902e1034f1ae81ac90f6cdec87d6b65b61d4b2781fbb8d3a249bc905",
+  "audit_verdict": null,
+  "retained_status_granted": false,
+  "native_law_or_physical_premises_verified": false,
+  "model_and_reasoning": "inherited unchanged; no delegation",
+  "independence": {
+    "reviewer_authored_target": false,
+    "source_proof_and_control_descriptions_visible": true,
+    "analytic_reconstruction_frozen_before_author_evidence": true,
+    "independent_helper_first_execution_before_author_evidence": true,
+    "author_helper_executed_or_imported": false,
+    "old_exact_review_reused_at_unchanged_identity": true,
+    "old_lean_not_recertification_of_new_inequalities": true,
+    "author_baseline": "inspected as author consistency evidence only"
+  },
+  "coverage": {
+    "new_note": "All 617 lines, S1-S31, including normalized/wedge variants, scale covariance, angular family, counterexample, derivative bridge and scalar/current integration",
+    "exact_source": "Prior full I1-I24 review reused at unchanged identity; complete prior report reread, and I20-I24 source interface reread",
+    "author_helper": "Complete 262-line source; baseline snapshot verified identical",
+    "author_logs": "Full baseline and all four intended assertion-failure logs; none rerun",
+    "author_wrappers": "Complete run_controls.py, run_mutants.py, freeze_receipt.py",
+    "author_receipt": "Complete JSON parsed and all 108 path/hash bindings checked; structured recovery of truncated raw display",
+    "rational_certificates": "All four parsed and coefficient row norms/finite bounds recomputed; no fresh full dual-identity replay or claim of manual inspection of every entry",
+    "historical_hashes": "Preservation checks only, not a new review of unrelated claims"
+  },
+  "independent_control": {
+    "fixture": "Exact smooth two-species gradient current on an origin-excluding annulus; nonzero a and equal-velocity row differences",
+    "execution": {
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/smooth_current_control.py"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review",
+      "started_at_utc": "2026-10-11T21:51:45.787266+00:00",
+      "finished_at_utc": "2026-10-11T21:51:48.189544+00:00",
+      "timeout_seconds": 90,
+      "timed_out": false,
+      "elapsed_seconds": 2.401720541063696,
+      "exit_code": 0,
+      "python": "3.13.5",
+      "runtime_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "runtime_executable_sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5",
+      "helper_sha256": "1a6213c3a93757328b68ab71fccca2d6bb8494528d544cc0f5b2c9d9736676ba",
+      "log_sha256": "0a33571925e57455683a1d477c9d5de6d32a21dc3b2621a3fbe6df5eb02d0819",
+      "author_helper_inspected_before_run": false,
+      "first_execution": true
+    },
+    "scope": "Selected actual-field consistency and adverse alternatives. Analytic reconstruction establishes universal theorem; definitional decomposition identity is bookkeeping only.",
+    "failed_independent_runs": 0,
+    "independent_source_mutant_processes": 0,
+    "dependency_installations": false
+  },
+  "author_evidence": {
+    "receipt_bindings_verified": 108,
+    "receipt_distinct_paths": 104,
+    "source_checks_bindings_verified": 77,
+    "initial_guards_verified": 5,
+    "pre_helper_bindings_verified": 18,
+    "mutation_sources_exactly_match_manifest": true,
+    "mutation_names": [
+      "cycle_sign",
+      "projection_denominator",
+      "drop_extra_anchor_height",
+      "drop_wedge_inverse_scale"
+    ],
+    "all_mutations_fail_at_intended_assertion": true,
+    "historical_failures_preserved": true
+  },
+  "application_obligations": [
+    "actual uniform tangent/Jacobian secant defect and conditioned anchors at desired scale",
+    "current identification and regularity",
+    "individual scalar cubic symmetry, invariant species domains and finite intrinsic diameter for radial conclusions",
+    "physical collision law and measure if required by intended application"
+  ],
+  "inputs": [
+    {
+      "role": "target",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_RIGIDITY_STABILITY_PROBE.md",
+      "sha256": "61f240d5e35f9c94d759f63e1d94c2a0677e53f52752c53700faeb50a546039a",
+      "bytes": 25659
+    },
+    {
+      "role": "author_receipt_identity_only",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/receipt.json",
+      "sha256": "5cdd8a3d902e1034f1ae81ac90f6cdec87d6b65b61d4b2781fbb8d3a249bc905",
+      "bytes": 61380
+    },
+    {
+      "role": "exact_source",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+      "sha256": "ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8",
+      "bytes": 25603
+    },
+    {
+      "role": "reused_exact_review",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md",
+      "sha256": "78c3bc3c8f223b988713cb5bd5210c1a801e8cdc5f428ee648d6284c400d97d6",
+      "bytes": 16476
+    },
+    {
+      "role": "exact_review_receipt",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity_review/receipt.json",
+      "sha256": "1c3c02926c6c35277fdde7a4b174b85d2471c3c3ec4da9d39681a3c9f2f68de7",
+      "bytes": 21327
+    },
+    {
+      "role": "evolved_review_guard",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_EVOLVED_BOOST_REVIEW.md",
+      "sha256": "9cd540482c4cef79471530223dbbde93d36a6ba0aded1c99becf36a68ae263b9",
+      "bytes": 12889
+    },
+    {
+      "role": "evolved_receipt_guard",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/evolved_boost_review/receipt.json",
+      "sha256": "df93dd7a3b238828d830f9b965b4f105078bba834b277e3483db34a3451c7d84",
+      "bytes": 12448
+    },
+    {
+      "role": "lean_review_guard",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/LEAN_RIGIDITY_STATEMENT_REVIEW.md",
+      "sha256": "14d5a11bf7476975b8067fd5d9c7f9e91381804a1b926fb324ff5b9bfd57b519",
+      "bytes": 14319
+    },
+    {
+      "role": "lean_receipt_guard",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean_review/receipt.json",
+      "sha256": "974549d47ca67a1f82591d5cef2ab3fa3a2d5854b3b2404dfa58f265364c00a6",
+      "bytes": 33405
+    },
+    {
+      "role": "lean_principal_guard",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/RigidityGeometry.lean",
+      "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df",
+      "bytes": 6711
+    },
+    {
+      "role": "lean_author_receipt_guard",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/receipt.json",
+      "sha256": "4f1512919a9e4aa41cac168882d3975e4b95f72cd4620876aa7cc959201c9048",
+      "bytes": 59080
+    },
+    {
+      "role": "quantitative_note_guard",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_EXCLUDED_WALK_QUANTITATIVE_MEMORY_TRANSFER_NOTE.md",
+      "sha256": "284686962fe4cce3c59a93b89a9fc33776ffa2310dbc9c8e9c1e8bda809d049e",
+      "bytes": 33833
+    },
+    {
+      "role": "quantitative_primary_guard",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/excluded_walk_quantitative_memory_transfer_2026_10_11.py",
+      "sha256": "bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d",
+      "bytes": 17775
+    },
+    {
+      "role": "review_skill",
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490
+    },
+    {
+      "role": "proof_governance",
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    },
+    {
+      "role": "repository_instructions",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/AGENTS.md",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265
+    },
+    {
+      "role": "science_workflow",
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/walk_worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_RIGIDITY_STABILITY_REVIEW.md",
+      "sha256": "6fc511af23a82defd672c9c2c2febd7aa542604a9fbac25fd9e1438119504eee",
+      "bytes": 17225,
+      "lines": 288,
+      "role": "complete independent review S1-S31"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/CHECKPOINT.md",
+      "sha256": "e337040f4e155145b47ef065d09caf2653d5ab1f884110ea840be3c446770e7b",
+      "bytes": 1119,
+      "lines": 21,
+      "role": "review reconstruction, independent check, full log, source verification, or freeze script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/PRE_HELPER_RECONSTRUCTION.md",
+      "sha256": "742714f8771096b92d43ae2014e92a381960e99f7f3865e63fdcf735006ad884",
+      "bytes": 11492,
+      "lines": 196,
+      "role": "review reconstruction, independent check, full log, source verification, or freeze script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/freeze_review.py",
+      "sha256": "37a5af9d91c709f00faf2aaa6ebccff27d531e2020dfeb2767a69d6a18e1bcc3",
+      "bytes": 5992,
+      "lines": 38,
+      "role": "review reconstruction, independent check, full log, source verification, or freeze script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/independent_execution.json",
+      "sha256": "e6833cdf0d517573efddee7b7ed59401902cf8ba101fd09d139c661c72108e30",
+      "bytes": 1015,
+      "lines": 20,
+      "role": "review reconstruction, independent check, full log, source verification, or freeze script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/pre_helper_receipt.json",
+      "sha256": "3121c8a131e23e8f146461e4b9c6d704da0a13c130e098dc4e9bb87d8206c4af",
+      "bytes": 5501,
+      "lines": 116,
+      "role": "review reconstruction, independent check, full log, source verification, or freeze script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/run_control.py",
+      "sha256": "23d26c2564264b29e75587737d1f3bd0bdcf1cea301a11d30ef66423a645ba18",
+      "bytes": 1464,
+      "lines": 23,
+      "role": "review reconstruction, independent check, full log, source verification, or freeze script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/smooth_current_control.log",
+      "sha256": "0a33571925e57455683a1d477c9d5de6d32a21dc3b2621a3fbe6df5eb02d0819",
+      "bytes": 2886,
+      "lines": 99,
+      "role": "review reconstruction, independent check, full log, source verification, or freeze script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/smooth_current_control.py",
+      "sha256": "1a6213c3a93757328b68ab71fccca2d6bb8494528d544cc0f5b2c9d9736676ba",
+      "bytes": 7443,
+      "lines": 142,
+      "role": "review reconstruction, independent check, full log, source verification, or freeze script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/source_verification.json",
+      "sha256": "6c5afbf8feae978b83841f6b6372bc87a472d9ce8f78a7147e927e71aafb6729",
+      "bytes": 102106,
+      "lines": 1669,
+      "role": "review reconstruction, independent check, full log, source verification, or freeze script"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/verify_sources.py",
+      "sha256": "ba61150c11097a42bd82bff6794bdff076ef0b1ea5df0f6c333be34dec04acd1",
+      "bytes": 4765,
+      "lines": 59,
+      "role": "review reconstruction, independent check, full log, source verification, or freeze script"
+    }
+  ],
+  "mutations_performed": {
+    "repository": false,
+    "authored_sources": false,
+    "prior_review_or_composition_packets": false,
+    "editable_prompts": false,
+    "external_messages": false
+  },
+  "receipt_self_hash": "reported externally, not embedded recursively"
+}

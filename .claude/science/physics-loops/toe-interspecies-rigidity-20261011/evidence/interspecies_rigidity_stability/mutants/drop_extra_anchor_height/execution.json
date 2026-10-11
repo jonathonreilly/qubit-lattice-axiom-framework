@@ -1,0 +1,19 @@
+{
+  "name": "drop_extra_anchor_height",
+  "before": "rho, tau = D / sigma, D / h",
+  "after": "rho, tau = D / sigma, sp.Integer(1)",
+  "replacements": 1,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/stability_controls.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_extra_anchor_height",
+  "timeout_seconds": 120,
+  "timed_out": false,
+  "elapsed_seconds": 0.25461029121652246,
+  "exit_code": 1,
+  "intended_failure": true,
+  "expected_diagnostic": "h conditioning cannot be dropped",
+  "source_sha256": "0343ebc0dcc9af7a4c5d9b3424e9b276e30253304e2efb34adc73642b08688ea",
+  "log_sha256": "f84503e7c9df7b44f07b4c3f98074696d948928cbc62e46af29a4709a26d3000"
+}

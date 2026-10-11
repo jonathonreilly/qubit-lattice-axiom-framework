@@ -1,0 +1,17 @@
+import ControlData
+
+-- Inventory every theorem declared in the two successfully compiled sources.
+#print axioms InterspeciesRigidity.four_affine_coefficients_zero
+#print axioms InterspeciesRigidity.four_cycle_multipliers
+#print axioms InterspeciesRigidity.opposite_skew_line_residuals
+#print axioms InterspeciesRigidity.four_anchor_homothety
+#print axioms InterspeciesRigidity.opposite_skew_direction_not_span
+#print axioms InterspeciesRigidity.opposite_skew_lines_disjoint
+#print axioms RigidityControls.tetra_independent
+#print axioms RigidityControls.positive_four_cycle_application
+#print axioms RigidityControls.positive_exceptional_application
+#print axioms RigidityControls.square_edges_true
+#print axioms RigidityControls.square_multipliers_unequal
+#print axioms RigidityControls.tetra_three_edges_true
+#print axioms RigidityControls.coplanar_residual_true
+#print axioms RigidityControls.wrong_cycle_nonzero

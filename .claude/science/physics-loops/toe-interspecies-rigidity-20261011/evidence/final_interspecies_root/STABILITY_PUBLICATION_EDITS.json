@@ -1,0 +1,102 @@
+{
+  "scope": "Exact preservation of all S1-S31 proof text and executable mathematical helper body; presentation, input metadata and temporary certificate output only.",
+  "proof_sha256": "772bb7b97df7e44fe87215d705aaa76d76730d5bdf47983556252c2e802c75fb",
+  "helper_body_sha256": "cc87a5fc7e1869978ef66441bf46c8218fab8f8dda9ec2171217fc456fcef2b7",
+  "outputs": [
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_RIGIDITY_STABILITY_PROBE.md",
+      "source_sha256": "61f240d5e35f9c94d759f63e1d94c2a0677e53f52752c53700faeb50a546039a",
+      "edits": [
+        {
+          "before": "---\ntitle:",
+          "after": "---\nclaim_id: interspecies_rigidity_stability_bounded_theorem_note_2026-10-11\nrunner: scripts/interspecies_rigidity_stability_2026_10_11.py\nstatus: provisional\nclaim_scope: \"Uniform quantitative homothety control under explicit six-anchor conditioning and normalized tangent or wedge defects; conditional integration and current consequences.\"\nupstream_dependencies:\n  - interspecies_collision_current_rigidity_bounded_theorem_note_2026-10-11\ntarget_claim_type: bounded_theorem\nartifact_role: theorem\ntarget_claim_id: null\ntarget_blocker_text: \"Quantify the interspecies invariant step under approximate conservation.\"\nsource_of_blocker_text: companion_exact_theorem_open_extension\nconditional_surface_status: null\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\npromotion_path: \"Source-bound independent review and the independent audit path; separately prove physical tangent-defect and conditioning premises.\"\ntitle:",
+          "count": 1
+        },
+        {
+          "before": "(INTERSPECIES_CURRENT_RIGIDITY_PROBE.md)",
+          "after": "(INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md)",
+          "count": 1
+        },
+        {
+          "before": "(INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md.gz)",
+          "count": 1
+        },
+        {
+          "before": "[Exact theorem]",
+          "after": "[Exact theorem; frozen source identity below]",
+          "count": 1
+        },
+        {
+          "before": "The author also authored the exact source.",
+          "after": "The linked exact publication preserves the mathematical source at the hash\nabove; the hash identifies that frozen source, not its new presentation.\nThe author also authored the exact source.",
+          "count": 1
+        },
+        {
+          "before": "(interspecies_rigidity_stability/stability_controls.py)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/stability_controls.py.gz)",
+          "count": 1
+        },
+        {
+          "before": "(interspecies_rigidity_stability/runs/baseline01/controls.log)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/controls.log.gz)",
+          "count": 1
+        },
+        {
+          "before": "(interspecies_rigidity_stability/runs/baseline01/execution.json)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/execution.json)",
+          "count": 1
+        },
+        {
+          "before": "(interspecies_rigidity_stability/mutation_manifest.json)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutation_manifest.json)",
+          "count": 1
+        },
+        {
+          "before": "(interspecies_rigidity_stability/receipt.json)",
+          "after": "(../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/receipt.json)",
+          "count": 1
+        },
+        {
+          "before": "The extension awaits a separate\nindependent check; the exact source's prior review does not certify this new\nproof, and the old Lean compilation does not verify these inequalities.",
+          "after": "The source-bound independent stability review is recorded in the milestone\ndelivery packet; the exact source's earlier review does not certify this new\nproof, and the old Lean compilation does not verify these inequalities.",
+          "count": 1
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "publication_sha256": "d1d04eca1378c8f6c7466238fda930f053c54bf0b144cd10ae3f0576b9debf16"
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/stability_controls.py",
+      "source_sha256": "f468cc2d3e67ae7f1337ea859a1fe7579f719440e628954884f2e92b3752bc7f",
+      "edits": [
+        {
+          "before": "#!/usr/bin/env python3\n\"\"\"Exact authored controls for a universal theorem proved in the companion note.\n\nInputs: no CLI inputs, no network, fixed rational/symbolic fixtures below.\nOutputs: stdout and exact finite dual certificates in this script's directory.\nUse run_controls.py: 120-second timeout per process. No continuum claim is\ncertified by finite matrix rank, and no old author helper is imported.\n\"\"\"\n",
+          "after": "#!/usr/bin/env python3\n\"\"\"Exact finite controls for conditional six-anchor interspecies stability.\n\nUses SymPy and fixed rational/symbolic fixtures; no network or physical input.\nThe unchanged mathematical control body writes its finite dual certificates\nonly into a temporary directory. Historical full certificates are preserved\nin the milestone evidence. These controls are author replay, not independent\ncontinuum proof or scoped Lean verification. TOTAL counts nine control\nfamilies, not individual assertions or mathematical proof obligations.\n\"\"\"\nAUDIT_TIMEOUT_SEC = 120\nAUDIT_INPUT_PATHS = [\n    \"docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md\",\n    \"docs/INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md\",\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: exact control assertions must be enabled\")\n\n",
+          "count": 1
+        },
+        {
+          "before": "import sympy as sp",
+          "after": "import sympy as sp\nimport tempfile",
+          "count": 1
+        },
+        {
+          "before": "HERE = Path(__file__).resolve().parent",
+          "after": "_certificate_workspace = tempfile.TemporaryDirectory(prefix=\"toe-rigidity-control-\")\nHERE = Path(_certificate_workspace.name)",
+          "count": 1
+        },
+        {
+          "before": "if __name__ == '__main__':\n    main()\n",
+          "after": "if __name__ == '__main__':\n    main()\n    print('TOTAL: PASS=9 FAIL=0')\n",
+          "count": 1
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "scripts/interspecies_rigidity_stability_2026_10_11.py",
+      "publication_sha256": "b828ce7f6fb136d2d55cc1a19a4f9c41e735a11a4fa56355f623fabdd8115059"
+    }
+  ]
+}

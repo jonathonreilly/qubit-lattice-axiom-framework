@@ -1,0 +1,13 @@
+{
+  "result": {
+    "runner": "scripts/interspecies_rigidity_stability_2026_10_11.py",
+    "status": "ok",
+    "exit_code": 0,
+    "stdout": "EXACT cycle signs, multiplier recovery, and normalized projection identity\nEXACT polynomial nonnegativity certificates for all rho,tau >= 1\nEXACT skew_and_duplicates: rank=26/30, equal_edges=3, dual_bound=36, theorem_C=2187930\nEXACT off_line: rank=26/30, equal_edges=3, dual_bound=93, theorem_C=2187930\nEXACT equal_triangle_anchors: rank=26/30, equal_edges=4, dual_bound=84, theorem_C=2187930\nEXACT nonorthogonal: rank=26/30, equal_edges=3, dual_bound=26897/105, theorem_C=320848031154846/343\nEXACT connected thin-image defect identity and homothety lower bound 1/6\nEXACT velocity dilation: wedge matrix scales, residual matrix is invariant\nEXACT cone family: unit velocities, triangle heights, inverse norm, rho=4/t, tau=4\nEXACT cubic averaging, high-frequency transverse derivative, and potential factor two\nSCOPE: exact finite/symbolic controls; universal proof and supplied physical hypotheses are separate.\nTOTAL: PASS=9 FAIL=0\n",
+    "stderr": "",
+    "elapsed_sec": 0.4333219528198242,
+    "timeout_sec": 120,
+    "live_log": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/rigidity_worktree/logs/runner-cache/.in-progress/interspecies_rigidity_stability_2026_10_11.txt"
+  },
+  "cache_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/rigidity_worktree/logs/runner-cache/interspecies_rigidity_stability_2026_10_11.txt"
+}

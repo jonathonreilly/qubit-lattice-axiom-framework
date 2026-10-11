@@ -1,0 +1,30 @@
+{
+  "reason": "Preserve exact trailing blank lines in source fragments while satisfying ordinary Git whitespace checks.",
+  "reader_original_path": "evidence/original_exact_reconstruct.py.gz",
+  "reader_original_sha256": "3a4bc67328b0f965d92a632814ec783b833083c2cdd0d7cb7567c580ad7fbd0c",
+  "reader_edit": {
+    "before": "    p = D / rel\n    assert p.resolve().is_relative_to(D)\n    raw = p.read_bytes()",
+    "after": "    p = D / rel\n    if not p.exists():\n        p = D / (rel + \".gz\")\n    assert p.resolve().is_relative_to(D)\n    raw = p.read_bytes()"
+  },
+  "reader_final_sha256": "7fbecc015c509b282bfb0a98be410d0681b586feb23d9c9ded76f34a0db8147a",
+  "lossless_fragment_encodings": [
+    {
+      "source": "fragments/note_front.txt",
+      "preserved_path": "fragments/note_front.txt.gz",
+      "raw_sha256": "79c66d630315de086f9636503fef1e44ada9baa0907572b5842ed57ee5a21094",
+      "stored_sha256": "7de04a9d722c2e3e8b46047dcb003628c35446d088956f32012e44758438b553"
+    },
+    {
+      "source": "fragments/note_tail.txt",
+      "preserved_path": "fragments/note_tail.txt.gz",
+      "raw_sha256": "83512d6a80100a928f90b457ad9e25dabdc7810f35c73baf28d779f8556c76af",
+      "stored_sha256": "b53188fe9a4549e742a12f426c52c815a258a22243db875c3c9a7a7e111bdaf8"
+    },
+    {
+      "source": "fragments/primary_front.txt",
+      "preserved_path": "fragments/primary_front.txt.gz",
+      "raw_sha256": "1f9b986399478ce3ec7640e360c765edb83c385408fc5b38e8b4350878e58317",
+      "stored_sha256": "8d02242854ea7453899dcd04dd257885a60e6e1b4db34562c5192aae52e73613"
+    }
+  ]
+}

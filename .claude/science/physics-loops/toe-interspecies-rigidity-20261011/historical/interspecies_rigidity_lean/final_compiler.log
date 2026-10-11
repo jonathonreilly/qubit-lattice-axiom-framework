@@ -1,0 +1,6 @@
+'InterspeciesRigidity.four_affine_coefficients_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InterspeciesRigidity.four_cycle_multipliers' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InterspeciesRigidity.opposite_skew_line_residuals' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InterspeciesRigidity.four_anchor_homothety' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InterspeciesRigidity.opposite_skew_direction_not_span' depends on axioms: [propext, Classical.choice, Quot.sound]
+'InterspeciesRigidity.opposite_skew_lines_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]

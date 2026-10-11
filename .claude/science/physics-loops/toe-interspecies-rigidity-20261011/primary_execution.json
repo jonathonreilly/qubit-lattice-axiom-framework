@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_collision_current_rigidity_2026_10_11.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011",
+  "started_utc": "2026-10-11T21:38:25.178696+00:00",
+  "elapsed_seconds": 0.07185129215940833,
+  "timeout_seconds": 30,
+  "timed_out": false,
+  "exit_code": 0,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "primary_sha256": "3123877c48021d189d288245138a6b7cb0a321141d124ca0b733de8279d7fd12",
+  "log_sha256": "c8acfd4cc0f5f7987889f6e964b09a7882f6707246fb26efe3624372f4a531cf",
+  "scope": "Author finite-evidence replay only; no new analytic proof, independent review, Lean compilation, semantic whole-primary mutants or audit."
+}

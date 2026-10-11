@@ -1,0 +1,67 @@
+{
+  "four_sources_exactly_reconstructed": true,
+  "two_caches_and_inputs_fresh": true,
+  "ordinary_links": [
+    {
+      "source": "docs/INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/rigidity_controls.py"
+    },
+    {
+      "source": "docs/INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/controls.log"
+    },
+    {
+      "source": "docs/INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/execution.json"
+    },
+    {
+      "source": "docs/INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/receipt.json"
+    },
+    {
+      "source": "docs/INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/DELIVERY_CHECKS.md"
+    },
+    {
+      "source": "docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md"
+    },
+    {
+      "source": "docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md.gz"
+    },
+    {
+      "source": "docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/stability_controls.py.gz"
+    },
+    {
+      "source": "docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/controls.log.gz"
+    },
+    {
+      "source": "docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/execution.json"
+    },
+    {
+      "source": "docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutation_manifest.json"
+    },
+    {
+      "source": "docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/receipt.json"
+    },
+    {
+      "source": "docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "target": "../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/DELIVERY_CHECKS.md"
+    }
+  ],
+  "frozen_exact_historical_files": 82,
+  "additional_evidence_files": 130,
+  "citation_delta": {
+    "nodes": 2,
+    "edges": 1
+  },
+  "old_graph_nodes_unchanged": true,
+  "compatibility_failures": [],
+  "scope": "Mechanical source/evidence binding, not an audit verdict or new proof."
+}

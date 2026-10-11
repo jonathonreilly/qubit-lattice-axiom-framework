@@ -1,0 +1,31 @@
+[
+  {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD",
+      "origin/main"
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree",
+    "exit_code": 0,
+    "stdout": "7faf6493528f4064d763a9cdede140d635ef4768\na13caa4885f547c8d206265b031ba7649e539fd9\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "grep",
+      "-n",
+      "-i",
+      "-E",
+      "(interspecies.{0,80}(stability|quantitative)|quantitative.{0,80}(secant|rigidity)|bipartite.{0,80}rigidity|conditioned.{0,80}anchor)",
+      "origin/main",
+      "--",
+      "docs/*.md"
+    ],
+    "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree",
+    "exit_code": 0,
+    "stdout": "origin/main:docs/ai_methodology/raw/protocols.md:12522:- Role-conditioned support-cell identity anchored to local candidate-family offset patterns adds interpretable local structure but still does **not** close the dominant `00` center-spine hard core.\norigin/main:docs/ai_methodology/raw/protocols.md:12585:- Move from coarse oriented-pair summaries to role-conditioned support-cell identity anchored to matched candidate layouts for the three add4 exceptions versus nearest add1 neighbors.\n",
+    "stderr": ""
+  }
+]

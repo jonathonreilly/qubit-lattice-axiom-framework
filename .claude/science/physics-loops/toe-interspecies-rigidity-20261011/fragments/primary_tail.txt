@@ -1,0 +1,5 @@
+
+# The preceding body reaches this line only after all original checks complete.
+# Five additional families: skew determinant, cubic group, closed current,
+# collision/support witness, and orbit-ball separation.
+print(f"TOTAL: PASS={len(results) + 5} FAIL=0")

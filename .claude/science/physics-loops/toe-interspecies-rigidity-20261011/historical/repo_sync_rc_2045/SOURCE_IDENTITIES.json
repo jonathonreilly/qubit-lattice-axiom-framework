@@ -1,0 +1,68 @@
+{
+  "scope": "Read-only source extraction, not review or acceptance of reported verdicts.",
+  "records": [
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/SUMMARY.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/SUMMARY.md",
+      "sha256": "cbfc31e8700a91e0aef55c29872976f4c17411e3e17560942bbc64965431733e",
+      "lines": 354
+    },
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/agents/RC_C1_report.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C1_report.md",
+      "sha256": "e26566ce5cdbbd3ef1a3c1621109cefe294cf120d319f0a43cc09e4425054a78",
+      "lines": 266
+    },
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/agents/RC_C1_referee.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C1_referee.md",
+      "sha256": "46b3b3624ac3c217651ef3c1820625079b414fb535dc206be8410f43d61f4a5c",
+      "lines": 21
+    },
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/agents/RC_C1_referee_full.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C1_referee_full.md",
+      "sha256": "a36b43eaf213e34ae9852c79a93f808a4e2bfb6dc307f8ca388b78a6db5132e4",
+      "lines": 23
+    },
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/agents/RC_C2_report.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C2_report.md",
+      "sha256": "35ab50953206977c4fef2491f936691552d986390f2bc3d4c086eb384150db8e",
+      "lines": 246
+    },
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/agents/RC_C2_referee.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C2_referee.md",
+      "sha256": "59096eeae2c178fd3af746c9bb777a3aa59fb297700912066267af0c0de19623",
+      "lines": 17
+    },
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/agents/RC_C3_report.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C3_report.md",
+      "sha256": "c4ca747adf80fe0f4cb1e3218c3b47813c2923427fcf41df40b4474e471fe08d",
+      "lines": 170
+    },
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/agents/RC_C3_referee.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C3_referee.md",
+      "sha256": "06b603b76bf1ca0abba47f56a1e98a2993df7e8953e100d07232032461cd10e0",
+      "lines": 23
+    },
+    {
+      "revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+      "repo_path": ".claude/science/exercises/gravity-current-state-20261009/agents/RC_C3_referee_full.md",
+      "copy_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C3_referee_full.md",
+      "sha256": "7e7613191d08b98a5a2f21453da66c494d4a2afdc73a0f75acd49bc852db3354",
+      "lines": 310
+    }
+  ]
+}

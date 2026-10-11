@@ -1,0 +1,4 @@
+RigidityControls.tetra_three_edges_true : TetraThreeEdges
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseMissingEdge.lean:9:48: error: unsolved goals
+_h : TetraThreeEdges
+⊢ False

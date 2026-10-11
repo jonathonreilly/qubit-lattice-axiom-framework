@@ -1,0 +1,4 @@
+RigidityControls.coplanar_residual_true : CoplanarResidual
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCoplanarResidual.lean:8:49: error: unsolved goals
+_h : CoplanarResidual
+⊢ False

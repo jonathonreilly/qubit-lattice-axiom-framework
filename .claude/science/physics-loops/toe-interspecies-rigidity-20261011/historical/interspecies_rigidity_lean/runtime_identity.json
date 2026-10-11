@@ -1,0 +1,28 @@
+{
+  "runtime_receipt_sha256": "1564b0bf532aca6c7f43c301455163b1af0afb96405e620eb56c481bdf7ed96d",
+  "reused_entrypoint_sha256": "12b8eb52bb33c16bf17c6d87763ac191242b72eea4ac05a853e2a4ef41ed9521",
+  "mathlib_commit": "939d5d5d9e6f07d1d8c80a16fa3fa39a7518b716",
+  "initial_tracked_status": "",
+  "records": {
+    "lean": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+      "sha256": "d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf",
+      "version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)"
+    },
+    "lake": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+      "sha256": "d2d63c80ca10bd2cc9557d11d59221b95c6eefb078c9652a11ef887ab8a068a5",
+      "version": "Lake version 5.0.0-src+c29b6dd (Lean version 4.35.0-rc4)"
+    },
+    "lake-manifest.json": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/lake-manifest.json",
+      "sha256": "0d0cfc1d01f64c34bbd40e858428b83ede48be9f6e065339d63ebb851bd49a57"
+    },
+    "lean-toolchain": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/lean-toolchain",
+      "sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7"
+    }
+  },
+  "runtime_archive_validation": "Reused prior receipt of archive SHA256 743f536c58c2580577ef890985b4084e90c6039fce099018d5c0c67c13724218; binaries independently rehashed here. No extraction or fetch.",
+  "new_files_policy": "All new source/log/temp/cache locations restricted to this directory."
+}

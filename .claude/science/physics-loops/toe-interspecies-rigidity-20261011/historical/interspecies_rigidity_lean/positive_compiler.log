@@ -1,0 +1,7 @@
+'RigidityControls.tetra_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RigidityControls.positive_four_cycle_application' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RigidityControls.positive_exceptional_application' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RigidityControls.square_edges_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RigidityControls.tetra_three_edges_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RigidityControls.coplanar_residual_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RigidityControls.wrong_cycle_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,21 @@
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.lean:19:48: error: Application type mismatch: The argument
+  hw
+has type
+  ∑ i, w i = 0
+of sort `Prop` but is expected to have type
+  Finset ?m.42
+of sort `Type ?u.15` in the application
+  @Finset.weightedVSub_eq_linear_combination ?m.37 ?m.38 ?m.39 ?m.40 ?m.41 ?m.42 hw
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/ControlData.lean:16:68: error: unsolved goals
+w : Fin (Nat.succ 0).succ.succ.succ → ℚ
+hw : ∑ i, w i = 0
+hv : (Finset.univ.weightedVSub ![z, e₁, e₂, e₃]) w = 0
+i : Fin (Nat.succ 0).succ.succ.succ
+⊢ w i = 0
+'RigidityControls.tetra_independent' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RigidityControls.positive_four_cycle_application' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RigidityControls.positive_exceptional_application' depends on axioms: [propext, sorryAx, Classical.choice, Quot.sound]
+'RigidityControls.square_edges_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RigidityControls.tetra_three_edges_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RigidityControls.coplanar_residual_true' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RigidityControls.wrong_cycle_nonzero' depends on axioms: [propext, Classical.choice, Quot.sound]

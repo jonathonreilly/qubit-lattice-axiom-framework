@@ -1,0 +1,9 @@
+RigidityControls.wrong_cycle_nonzero : WrongCycle ≠ 0
+/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_lean/FalseCycleSign.lean:7:28: error: unsolved goals
+case «0»
+⊢ False
+
+case «1»
+⊢ False
+
+COMPILER_EXIT 1

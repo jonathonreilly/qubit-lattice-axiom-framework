@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/interspecies_collision_current_rigidity_2026_10_11.py
+runner_sha256: f0f4783b5df183d3b8cc960579b4d3748c2f6b9ddeacc4a2f9539476773a4cd6
+input_fingerprint_sha256: d574d58cba0922e0f91e0dabda5023d104d3bf1fc4e128f0e1ccd21e5df4026a
+timeout_sec: 30
+exit_code: 0
+elapsed_sec: 0.14
+status: ok
+----- stdout -----
+{"a": 2, "b": 2, "equal_edges": 0, "image_affine_ranks": [1, 1], "name": "noncoplanar_K22", "nullity": 4, "omitted_edges": [], "rank": 8}
+{"a": 2, "b": 2, "equal_edges": 0, "image_affine_ranks": [1, 1], "name": "delete_one_anchor_edge", "nullity": 6, "omitted_edges": [[1, 1]], "rank": 6}
+{"a": 3, "b": 2, "equal_edges": 0, "image_affine_ranks": [2, 1], "name": "one_opposite_line_residual", "nullity": 5, "omitted_edges": [], "rank": 10}
+{"a": 3, "b": 3, "equal_edges": 0, "image_affine_ranks": [2, 2], "name": "two_opposite_line_residuals_eliminated", "nullity": 4, "omitted_edges": [], "rank": 14}
+{"a": 5, "b": 4, "equal_edges": 3, "image_affine_ranks": [3, 3], "name": "full_span_equal_velocities_and_repeated_label", "nullity": 4, "omitted_edges": [], "rank": 23}
+{"a": 4, "b": 4, "equal_edges": 0, "image_affine_ranks": [3, 3], "name": "full_span_disjoint_images", "nullity": 4, "omitted_edges": [], "rank": 20}
+{"a": 3, "b": 3, "equal_edges": 1, "image_affine_ranks": [1, 1], "name": "collinear_images_not_rigid", "nullity": 8, "omitted_edges": [], "rank": 10}
+{"a": 2, "b": 2, "equal_edges": 0, "image_affine_ranks": [1, 1], "name": "coplanar_K22_flex", "nullity": 5, "omitted_edges": [], "rank": 7}
+exceptional_skew_determinant: 1
+proper_cubic_group: 24 elements; vector fixed dimension 0; matrix commutant dimension 1
+closed-current constraints: dimension 6, all a components forced zero
+non_full_support_measure_witness: charge defect 3/4
+chamber_orbit: min squared separation 6/25 inner radius 1/100
+PASS: exact finite controls; no continuum proof, amplitude support, or physical adoption certified
+closed-current symmetric family: six independent modes in kernel
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

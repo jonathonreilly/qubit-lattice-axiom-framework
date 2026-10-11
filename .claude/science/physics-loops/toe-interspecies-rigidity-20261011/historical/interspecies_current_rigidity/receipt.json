@@ -1,0 +1,234 @@
+{
+  "schema": "bounded-source-bound-derivation-receipt-v1",
+  "frozen_at_utc": "2026-10-11T21:04:05.109795+00:00",
+  "source_revision": "d009fb786d36a6cab4a7d410630b9382992faa08",
+  "author_scope": "Conditional interspecies-only three-dimensional collision-invariant theorem, not independent review or audit. No AA/BB scattering used.",
+  "selected_model_and_effort": "unchanged; no delegation",
+  "reading_coverage": {
+    "C1_report": "complete 266 lines",
+    "C1_short_referee": "complete 21 logical lines, 20 newlines",
+    "C1_full_referee": "complete 23 long lines",
+    "new_note_and_helper": "complete self-read; three final narrow wording edits separately inspected",
+    "old_C1_helpers": "not read or replayed",
+    "other_C1_claims": "read as source context, not newly certified",
+    "workflow": "previous complete reading reused at exact unchanged identity",
+    "other_instructions": "applicable entry/references inspected; external fixed task limits campaign actions"
+  },
+  "strongest_proved_statement": "I1-I3 imply one common lambda and b and species constants c_A,c_B. Velocity image connectedness is unnecessary for the exact labeled geometric lemma.",
+  "conditional_corollary": "The current input J_s=E_s grad E_s plus scalar cubic symmetry on invariant connected regular domains yields E_s^2=e_s+beta |k|^2 with common nonzero beta; its sign is not fixed.",
+  "open_source_obligations": [
+    "Match the intended individual species velocity-image/domain symmetry assumptions.",
+    "Supply the actual full-support regular collision measure and amplitude conservation selection rule.",
+    "Supply the sharp scalar-band and physical-current identification premises.",
+    "Obtain independent review of this newly authored proof."
+  ],
+  "controls": {
+    "formal_run_count": 1,
+    "exit_code": 0,
+    "timeout_seconds": 30,
+    "arithmetic": "Python standard-library Fraction, exact",
+    "rigidity_matrix_cases": 8,
+    "other_checks": [
+      "exceptional skew determinant",
+      "24-element proper cubic group closure, mean and fixed spaces",
+      "closed-current curl constraints",
+      "3/4 charge defect on a regular normal collision",
+      "disjoint symmetry-orbit ball separation"
+    ],
+    "adverse_cases_are": "changed finite inputs; no separate mutated-source execution is claimed",
+    "limits": "Finite constraints are not a continuum proof, amplitude-support check, or independent reviewer."
+  },
+  "search_scope": "Fixed candidate revision docs plus RC agent reports only; no global novelty or fresh-main claim.",
+  "truncated_displays": "Initial combined source/reference displays recovered by bounded rereads; not counted as completed readings until then.",
+  "protected_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C1_report.md",
+      "relative_to_S": "repo_sync_rc_2045/agents/RC_C1_report.md",
+      "role": "complete C1 source reading, exact requested revision",
+      "sha256": "e26566ce5cdbbd3ef1a3c1621109cefe294cf120d319f0a43cc09e4425054a78",
+      "bytes": 21231,
+      "logical_lines": 266
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C1_referee.md",
+      "relative_to_S": "repo_sync_rc_2045/agents/RC_C1_referee.md",
+      "role": "complete C1 source reading, exact requested revision",
+      "sha256": "46b3b3624ac3c217651ef3c1820625079b414fb535dc206be8410f43d61f4a5c",
+      "bytes": 7836,
+      "logical_lines": 21
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/agents/RC_C1_referee_full.md",
+      "relative_to_S": "repo_sync_rc_2045/agents/RC_C1_referee_full.md",
+      "role": "complete C1 source reading, exact requested revision",
+      "sha256": "a36b43eaf213e34ae9852c79a93f808a4e2bfb6dc307f8ca388b78a6db5132e4",
+      "bytes": 13703,
+      "logical_lines": 23
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/repo_sync_rc_2045/SOURCE_IDENTITIES.json",
+      "relative_to_S": "repo_sync_rc_2045/SOURCE_IDENTITIES.json",
+      "role": "fixed extraction identity manifest",
+      "sha256": "4bcc8fc339fafe9a42d2bc17ad67c23f3e55a21a35f13d740567ecaa41c44e57",
+      "bytes": 3930,
+      "logical_lines": 68
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/AGENTS.md",
+      "relative_to_S": null,
+      "role": "instruction identity; scoped external task takes precedence over campaign/repository actions",
+      "sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f",
+      "bytes": 1265,
+      "logical_lines": 27
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "relative_to_S": null,
+      "role": "instruction identity; scoped external task takes precedence over campaign/repository actions",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "logical_lines": 245
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "relative_to_S": null,
+      "role": "instruction identity; scoped external task takes precedence over campaign/repository actions",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "logical_lines": 35
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/SKILL.md",
+      "relative_to_S": null,
+      "role": "instruction identity; scoped external task takes precedence over campaign/repository actions",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "logical_lines": 140
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/DISCOVERY.md",
+      "relative_to_S": null,
+      "role": "instruction identity; scoped external task takes precedence over campaign/repository actions",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "logical_lines": 434
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/CLAIM_STATUS.md",
+      "relative_to_S": null,
+      "role": "instruction identity; scoped external task takes precedence over campaign/repository actions",
+      "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be",
+      "bytes": 16755,
+      "logical_lines": 336
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/DELIVERY.md",
+      "relative_to_S": null,
+      "role": "instruction identity; scoped external task takes precedence over campaign/repository actions",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "logical_lines": 309
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/proof-search-governance.md",
+      "relative_to_S": null,
+      "role": "instruction identity; scoped external task takes precedence over campaign/repository actions",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "logical_lines": 126
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-loop/references/abstract-algebraic-core-extraction.md",
+      "relative_to_S": null,
+      "role": "instruction identity; scoped external task takes precedence over campaign/repository actions",
+      "sha256": "9d0acc81d7637e0e13d05100f00ff3c088d6c1304ea263eb9c7069e44e7cdb68",
+      "bytes": 2147,
+      "logical_lines": 56
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/EXCLUDED_WALK_MEMORY_CURRENT_PUBLICATION_REVIEW.md",
+      "relative_to_S": "EXCLUDED_WALK_MEMORY_CURRENT_PUBLICATION_REVIEW.md",
+      "role": "previous completed packet freeze guard; not a scientific dependency",
+      "sha256": "426af62b6ca87934f69fad715f690652373c6fcdefb318f8ab9cb4237872e56d",
+      "bytes": 18555,
+      "logical_lines": 302
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/memory_current_publication_review/receipt.json",
+      "relative_to_S": "memory_current_publication_review/receipt.json",
+      "role": "previous completed packet freeze guard; not a scientific dependency",
+      "sha256": "bc7c29434bbc61591b8a1880cc021a9632d1b887a9a4933f89ac9309f80185b7",
+      "bytes": 36521,
+      "logical_lines": 964
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+      "relative_to_S": "INTERSPECIES_CURRENT_RIGIDITY_PROBE.md",
+      "role": "authored conditional theorem/counterexample note",
+      "sha256": "ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8",
+      "bytes": 25603,
+      "logical_lines": 559
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/CHECKPOINT.md",
+      "relative_to_S": "interspecies_current_rigidity/CHECKPOINT.md",
+      "role": "supporting evidence or checkpoint",
+      "sha256": "c4e93ced25c267203bc3a755266ab2a92b79e918d6ac6635065e4d5d3b58eb8c",
+      "bytes": 2061,
+      "logical_lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/DEVELOPMENT_LOG.md",
+      "relative_to_S": "interspecies_current_rigidity/DEVELOPMENT_LOG.md",
+      "role": "supporting evidence or checkpoint",
+      "sha256": "7de7d35ec5a2a94edab074dc3e5825561fb219878ee0494bef4dbdf4b011f7c3",
+      "bytes": 2442,
+      "logical_lines": 11
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/controls.log",
+      "relative_to_S": "interspecies_current_rigidity/controls.log",
+      "role": "supporting evidence or checkpoint",
+      "sha256": "ca64e8ebd980711ae0b4b5d50429b77e8545551506cfc17caf6c9f9c0e21a8b6",
+      "bytes": 1612,
+      "logical_lines": 14
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/execution.json",
+      "relative_to_S": "interspecies_current_rigidity/execution.json",
+      "role": "supporting evidence or checkpoint",
+      "sha256": "45084032f60479e7a4fc4d86276700a7cfe3116315e1da96448e2e9907bf8b74",
+      "bytes": 609,
+      "logical_lines": 13
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/prior_art_search.log",
+      "relative_to_S": "interspecies_current_rigidity/prior_art_search.log",
+      "role": "supporting evidence or checkpoint",
+      "sha256": "a61bf75e53f8065827cff2d23ba9796e08b20bfb461409ada5532fe41f158c32",
+      "bytes": 6673,
+      "logical_lines": 8
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/rigidity_controls.py",
+      "relative_to_S": "interspecies_current_rigidity/rigidity_controls.py",
+      "role": "supporting evidence or checkpoint",
+      "sha256": "9fd94231d6336964e5b6556396d31363c9ab5aaf4f17298d73d8ad5c3afa3b4e",
+      "bytes": 7697,
+      "logical_lines": 209
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity/source_checks.json",
+      "relative_to_S": "interspecies_current_rigidity/source_checks.json",
+      "role": "supporting evidence or checkpoint",
+      "sha256": "ab7b78728b304cd7319c4dee5365562dbdb2397bab4ad3086fa70c6f383aec25",
+      "bytes": 2269,
+      "logical_lines": 45
+    }
+  ],
+  "no_frozen_input_or_repository_edits": true,
+  "no_physical_or_audit_adoption": true,
+  "receipt_self_hash": "excluded to avoid self-reference; communicated separately"
+}

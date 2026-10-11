@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review/smooth_current_control.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability_review",
+  "started_at_utc": "2026-10-11T21:51:45.787266+00:00",
+  "finished_at_utc": "2026-10-11T21:51:48.189544+00:00",
+  "timeout_seconds": 90,
+  "timed_out": false,
+  "elapsed_seconds": 2.401720541063696,
+  "exit_code": 0,
+  "python": "3.13.5",
+  "runtime_executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "runtime_executable_sha256": "a1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5",
+  "helper_sha256": "1a6213c3a93757328b68ab71fccca2d6bb8494528d544cc0f5b2c9d9736676ba",
+  "log_sha256": "0a33571925e57455683a1d477c9d5de6d32a21dc3b2621a3fbe6df5eb02d0819",
+  "author_helper_inspected_before_run": false,
+  "first_execution": true
+}

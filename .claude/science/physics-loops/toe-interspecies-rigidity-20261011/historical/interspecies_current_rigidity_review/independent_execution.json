@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_current_rigidity_review/independent_collision_controls.py"
+  ],
+  "started_utc": "2026-10-11T21:13:25.898531+00:00",
+  "elapsed_seconds": 0.37189045920968056,
+  "timeout_seconds": 90,
+  "returncode": 0,
+  "timed_out": false,
+  "source_sha256": "0b213ffb0dafd0745346b93c39531198057c3595624f71249705682b3bcf5e8c",
+  "log_sha256": "51ffdbf17e81029bb4e23bbdca3fb74ab2f18af29394baf33335b312b6d9df72",
+  "scope": "Independent exact controls; not a continuum proof or physical-measure check."
+}

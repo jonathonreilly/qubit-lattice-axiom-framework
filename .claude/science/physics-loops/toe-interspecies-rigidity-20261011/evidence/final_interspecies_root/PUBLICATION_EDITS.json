@@ -1,0 +1,53 @@
+{
+  "scope": "Exact source-preserving presentation changes and an appended finite kernel control; no proof change.",
+  "outputs": [
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/FINAL_INTERSPECIES_CURRENT_RIGIDITY_NOTE.md",
+      "source_sha256": "148340524d00ce17dd01d3cbe34bca01c7e1ea844021cd4c08c147b9450c30a7",
+      "edits": [
+        {
+          "before": "publication_composition_review: pending",
+          "after": "publication_composition_review: completed_with_root_control_strengthening"
+        },
+        {
+          "before": "in Sections 11\u201312; neither formalizes the full theorem. This publication\ncomposition is new and awaits its own source-bound review.",
+          "after": "in Sections 11\u201312; neither formalizes the full theorem. Root checked this\npublication composition against the frozen sources and strengthened one\nfinite control after a deliberate wrong-sign mutation survived. The complete\nmathematical argument is unchanged; Section 10 records that test limitation."
+        },
+        {
+          "before": "that force \\(a=0\\). They verify",
+          "after": "that force \\(a=0\\). The publication also checks six independent symmetric\nmatrix modes in the kernel, identifying the full claimed symmetric family.\nThey verify"
+        },
+        {
+          "before": "as the checked claim contract. Its summary counts thirteen completed finite\ncheck families: eight matrix configurations and five additional algebraic\nfamilies. That count is not a count of proof obligations or assertions.\nThe external packaging replay and source-identity checks are recorded in the\npublication receipt. Canonical-cache validation, whole-primary semantic\nmutation runs, repository conformance and final publication are separate\nintegration work and are not certified here.",
+          "after": "as the checked claim contract. Its summary counts fourteen completed finite\ncheck families: eight matrix configurations and six algebraic families.\nThat count is not a count of proof obligations or assertions.\n\nThe frozen external packaging replay completed thirteen families. In root's\nfirst seven whole-primary semantic mutations, changing the closed-current\ncurl sign survived: rank six and vanishing energy coefficient alone did not\ndistinguish symmetric from antisymmetric off-diagonal coefficients. The final\nprimary appends six explicit symmetric basis modes and checks their linear\nindependence and membership in the kernel. Together with the original rank,\nthese checks identify that finite kernel. The I1\u2013I24 analytic proof and the\nentire original helper body are unchanged. Both the surviving execution and\nthe strengthened-source mutation runs are preserved. They are finite tests,\nnot a replacement for the continuum argument or independent mathematical\nreview. The separate delivery record gives final canonical-cache,\nmutation and repository-conformance outcomes."
+        },
+        {
+          "before": "`reconstruct.py` rebuilds the note and primary from those local fragments\nand preserved originals; `receipt.json` records the actual external\ncomposition checks. Gzip source copies decode to the exact historical\nMarkdown bytes, including obsolete pending-review text.",
+          "after": "`reconstruct.py` rebuilds the frozen external note and primary from those\nlocal fragments and preserved originals; `receipt.json` records the author's\nexternal composition checks. `PUBLICATION_EDITS.json` then maps every root\npublication edit to the final repository note and strengthened primary.\nGzip source copies decode to exact historical Markdown bytes, including\nobsolete pending-review text. `ROOT_COMPOSITION_REVIEW.md` distinguishes\nsource preservation from mathematical review and documents the test repair."
+        }
+      ],
+      "appended_text": "\n## Publication delivery\n\nThe [delivery record](../.claude/science/physics-loops/toe-interspecies-rigidity-20261011/DELIVERY_CHECKS.md)\nbinds source identities, independent review scopes, canonical execution,\nactual primary mutations and final repository checks. This main-based note\nhas no science dependency on the campaign's excluded-walk or transport PRs.\nThe independent audit path retains responsibility for effective retained\nstatus; this publication applies no audit verdict.\n",
+      "publication_path": "docs/INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "publication_sha256": "6444b751650e02616cc90c74ddc6cdc03b22936240abd2ef77d691063b5246b4"
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_collision_current_rigidity_2026_10_11.py",
+      "source_sha256": "3123877c48021d189d288245138a6b7cb0a321141d124ca0b733de8279d7fd12",
+      "edits": [
+        {
+          "before": "TOTAL counts eight finite matrix families plus five additional algebraic\nfamilies,",
+          "after": "A root-added exact symmetric-family check follows the unchanged original\nbody. TOTAL counts eight finite matrix families plus six algebraic families,"
+        },
+        {
+          "before": "# The preceding body reaches this line only after all original checks complete.\n# Five additional families: skew determinant, cubic group, closed current,\n# collision/support witness, and orbit-ball separation.\nprint(f\"TOTAL: PASS={len(results) + 5} FAIL=0\")\n",
+          "after": "# Identify the six-dimensional kernel itself, not just its dimension.\n# A wrong curl sign can preserve rank and a=0 while replacing symmetry by\n# antisymmetry off the diagonal. These six independent symmetric modes must\n# all solve the original curl constraints.\nsymmetric_current_modes = []\nfor i in range(3):\n    for j in range(i, 3):\n        mode = [Q(0)] * 12\n        mode[3+3*i+j] = 1\n        mode[3+3*j+i] = 1\n        symmetric_current_modes.append(mode)\nassert rank(symmetric_current_modes) == 6\nassert all(dot(row, mode) == 0 for row in curl_rows for mode in symmetric_current_modes)\nprint('closed-current symmetric family: six independent modes in kernel')\n\n# Eight matrix families and six algebraic families, including this kernel check.\nprint(f\"TOTAL: PASS={len(results) + 6} FAIL=0\")\n"
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "scripts/interspecies_collision_current_rigidity_2026_10_11.py",
+      "publication_sha256": "f0f4783b5df183d3b8cc960579b4d3748c2f6b9ddeacc4a2f9539476773a4cd6"
+    }
+  ]
+}

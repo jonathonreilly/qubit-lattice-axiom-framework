@@ -1,0 +1,19 @@
+{
+  "name": "cycle_sign",
+  "before": "-l11+l21-l22+l12",
+  "after": "-l11+l21+l22-l12",
+  "replacements": 1,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/cycle_sign/stability_controls.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/cycle_sign",
+  "timeout_seconds": 120,
+  "timed_out": false,
+  "elapsed_seconds": 0.25362466694787145,
+  "exit_code": 1,
+  "intended_failure": true,
+  "expected_diagnostic": "assert (cycle - M*c).applyfunc(sp.expand) == ZERO",
+  "source_sha256": "52b18b8104cd47b08283fb4b5dac29d47293607a22c7898d24f9ae817c0d99bf",
+  "log_sha256": "cb6d11a53e4927793e4eee1605ecdf7f932ccc9669ff365a6b5fff50bece1322"
+}

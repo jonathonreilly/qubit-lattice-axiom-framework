@@ -1,0 +1,16 @@
+{"check": "genuinely_noncoplanar_anchors", "detail": null}
+{"check": "four_edge_cycle_forces_one_multiplier", "detail": "[{l11: l12, l21: l12, l22: l12}]"}
+{"check": "anchor_lines_alone_leave_exceptional_residual", "detail": null}
+{"check": "equal_velocity_endpoints_are_included", "detail": null}
+{"check": "skew_transversality_for_every_parameter", "detail": "constant determinant, including every r,h and equal-anchor endpoint"}
+{"check": "cross_edge_kills_both_line_residuals_without_division_by_parameters", "detail": null}
+{"check": "unequal_mass_AB_shell_parametrization", "detail": null}
+{"check": "actual_AB_collision_rotation_x", "detail": null}
+{"check": "actual_AB_collision_rotation_z", "detail": null}
+{"check": "actual_shell_constraints_have_exact_common_coefficient_family", "detail": {"charge_ansatz_unknowns": 20, "constraint_rank": 14, "family": "lambda E_s + common b dot k + independent species constants", "kernel_dimension": 6}}
+{"check": "equal_Hessians_are_not_common_energy_coefficients_for_unequal_masses", "detail": null}
+{"check": "ordinary_energy_conservation_does_not_supply_current_selection", "detail": null}
+{"check": "negative_common_beta_is_regular_and_current_conserving", "detail": null}
+{"check": "unequal_radial_current_coefficients_fail_on_a_regular_AB_collision", "detail": null}
+{"check": "cubic_counterexample_support_balls_are_disjoint", "detail": {"minimum_squared_separation": "6/25", "twice_support_diameter": "4/100"}}
+{"checks": 15, "elapsed_seconds": 0.10475604189559817, "python": "3.13.5", "scope": "Exact independent geometry and actual continuum-collision ansatz controls; no physical measure verification or unrestricted C1 proof.", "sympy": "1.14.0"}

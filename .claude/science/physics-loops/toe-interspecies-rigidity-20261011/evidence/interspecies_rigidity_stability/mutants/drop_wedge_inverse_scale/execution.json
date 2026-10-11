@@ -1,0 +1,19 @@
+{
+  "name": "drop_wedge_inverse_scale",
+  "before": "return 2 * C * omega / sigma",
+  "after": "return 2 * C * omega",
+  "replacements": 1,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/stability_controls.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale",
+  "timeout_seconds": 120,
+  "timed_out": false,
+  "elapsed_seconds": 0.2769102081656456,
+  "exit_code": 1,
+  "intended_failure": true,
+  "expected_diagnostic": "wedge factor 1/sigma is necessary",
+  "source_sha256": "36ff5e7e8ae9f751e5b1acf597ca65db6616b9b74e062f489d453102a6321a20",
+  "log_sha256": "80ccf791737f34ef0c71ebb48fd7e4bbf6f9daf3697ed391509b78b90ad8243a"
+}

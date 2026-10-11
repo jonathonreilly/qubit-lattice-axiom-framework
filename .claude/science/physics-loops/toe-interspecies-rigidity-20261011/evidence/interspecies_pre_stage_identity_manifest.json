@@ -1,0 +1,1121 @@
+{
+  "base_revision": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "scope": "Every final publication file except this manifest itself.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/APPROACH_REGISTRY.md",
+      "sha256": "a623006a4d644e0dbdf42110b88846b4198f21e54ce10b55f50b9b447bb65a87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/ARTIFACT_PLAN.md",
+      "sha256": "41cbb4e4b2629ed08cba8ade5d5976360fb63252b581829f9c3b3a7d0a69f182"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "4a3ca2a5cac9474249abfdd1bdf77898c3259eafff151520237e0a68039eb851"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/CHECKPOINT.md.gz",
+      "sha256": "2e9f037f2011fa9daa11a46cc1821c4b4a4d41008845b7a37363d57670704777",
+      "decompressed_sha256": "358da9f46bd037884967f793d40d7eabda7069f2115a9a4d00483060f0bf4c04"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "e303468281f07300eebbe61d94240033c8daf895e7cb4b2a80dc6d26e4adf947"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/DELIVERY_CHECKS.md",
+      "sha256": "47bf6130e2b1e0c8f2ceabb7660a35e6a17578ff1c43f1652698438882006472"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/EVIDENCE_MAP.json",
+      "sha256": "133a73d268f4cc6fda2073a38d7c9e0cb9285b933e50f98ad38f614ce83fa1bd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/GOAL.md",
+      "sha256": "18404ca3527e1ee4e6bf0a3cf663d7557846f780813f495224c57d6a24e9d09f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/HANDOFF.md",
+      "sha256": "a49a649dec1e0de4d2c7e3794d8db2e117e2a93b686defc530f423b4df11e8ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/LITERATURE_BRIDGES.md",
+      "sha256": "a3b207ce9b3e476e2baee0072ad2a11a4c86818ae4827a5c253cf7e1847dc7df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/NO_GO_LEDGER.md",
+      "sha256": "3f562f0fb77fe75cf07151572766018da21608b0e8d793777ab8bd642e92f3f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/OPPORTUNITY_QUEUE.md",
+      "sha256": "c561feec6110a4504e1cfb959661dd2bd1fd5282f8297cc999c4625a7ef15338"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/PACKAGING_REPORT.md.gz",
+      "sha256": "176cf1792291b1dba51bca84e640df765b68326b0c349e4078907fab8efe88be",
+      "decompressed_sha256": "7a26250d71ad7303a7719d8453a647e85ab74d11851caceab0cf379af5f460e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/PR_BACKLOG.md",
+      "sha256": "b7f4f7f336eecee7792b955df3114f338286625d10eced45982b7f4e2699f047"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/PUBLICATION_EDITS.json",
+      "sha256": "8a41b9c6514945e204c4fb475d39fe0ebdfde28d9ae2188b348e6ae5b9640ba9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/REVIEW_HISTORY.md",
+      "sha256": "0e6e902f4f38239f57e025ad0f9c346626d06baae1b1519be63cf998a3a8105f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/ROOT_COMPOSITION_REVIEW.md",
+      "sha256": "4d500a6cfb71d337252ee843cd5fe5baf164501395d6171fe8e38082b379a5a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/ROUTE_PORTFOLIO.md",
+      "sha256": "45372162721ac7e8d6981812a9e647a4708e234d6415630af265518d71339665"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/SOURCE_COMPOSITION.json",
+      "sha256": "8f85461788616992bc48523951f7b010a20f1bcc7580504cc81f40ddad4441f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/STATE.yaml",
+      "sha256": "44899fbdabf08631d145ee53a74de7a112f066b5b395f9d6a6171109d7d6bf61"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/TRACE_GATE.md",
+      "sha256": "f3ccd59323c9d614e2fd61c62224f1ff656277e805562aa11f5cda86d81bd7c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/assemble.py",
+      "sha256": "08c4e69a887b941dc2b4ee7aac7009056536cd01dce49fc3440df1ceaa4e3cbf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/FINAL_INTERSPECIES_CURRENT_RIGIDITY_NOTE.md.gz",
+      "sha256": "e8989066366eeecb1a41c68b43559087fb3b95ddeaf08162c99aecc616b7670c",
+      "decompressed_sha256": "148340524d00ce17dd01d3cbe34bca01c7e1ea844021cd4c08c147b9450c30a7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/INTERSPECIES_RIGIDITY_STABILITY_PROBE.md.gz",
+      "sha256": "b28b4b7e4503e3c2cfbcd86484335a5a315cf03b9073579a2837dc4a4d0a4573",
+      "decompressed_sha256": "61f240d5e35f9c94d759f63e1d94c2a0677e53f52752c53700faeb50a546039a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/INTERSPECIES_RIGIDITY_STABILITY_REVIEW.md.gz",
+      "sha256": "7b4a12c53a6ba79c8a0bc94b340281c5910e96a2ca05511f4e558fb7e9196389",
+      "decompressed_sha256": "6fc511af23a82defd672c9c2c2febd7aa542604a9fbac25fd9e1438119504eee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/final_interspecies_root/FINAL_INTERSPECIES_CURRENT_RIGIDITY_NOTE.md.gz",
+      "sha256": "380e7931bc71edae9c7023bfc23a94a1a086516180476fff2b14a68108f39d82",
+      "decompressed_sha256": "6444b751650e02616cc90c74ddc6cdc03b22936240abd2ef77d691063b5246b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/final_interspecies_root/FINAL_INTERSPECIES_RIGIDITY_STABILITY_NOTE.md.gz",
+      "sha256": "b34f8b3006f30f9dac771839cf42361dfafc1effa44a122e851a98c462f90bc4",
+      "decompressed_sha256": "d1d04eca1378c8f6c7466238fda930f053c54bf0b144cd10ae3f0576b9debf16"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/final_interspecies_root/PUBLICATION_EDITS.json",
+      "sha256": "4f26588a1feaa06a7a82a1caa8a043990b5bab4742cc8989ce657b7e7b0b7605"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/final_interspecies_root/STABILITY_PUBLICATION_EDITS.json",
+      "sha256": "045b8f8bc24da236eb4ea9985bc52a9492b2e888ddceb9169c6e7931955d3b9a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/final_interspecies_root/frozen_reconstruction.log.gz",
+      "sha256": "4f497101d6f6460b58c3191b6f2d81f9c48762665d5b5aa0198281304c0730ea",
+      "decompressed_sha256": "36af1474ec6dc6ad7c9b2230bbedb438575fc04bc25268fb4d285ad77a835902"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/final_interspecies_root/interspecies_collision_current_rigidity_2026_10_11.py.gz",
+      "sha256": "d689bfe76885388c9507873bee17d26fd68d5559bc28719c4350788f97403264",
+      "decompressed_sha256": "f0f4783b5df183d3b8cc960579b4d3748c2f6b9ddeacc4a2f9539476773a4cd6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/final_interspecies_root/interspecies_rigidity_stability_2026_10_11.py.gz",
+      "sha256": "367005849e886438bc062d1c5703587cebe6e598f2874f9e3bcb8f5157f4df7e",
+      "decompressed_sha256": "b828ce7f6fb136d2d55cc1a19a4f9c41e735a11a4fa56355f623fabdd8115059"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/final_interspecies_root/root_baseline.log.gz",
+      "sha256": "320800af5a8574213752e3f117630ba4b289921b12af9a73dc629b7204ba27b8",
+      "decompressed_sha256": "b07f101fc6436949c95b214d85dd33df94c16da2798ebe47c66eab4bae38294f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/finalize_interspecies_sources.py.gz",
+      "sha256": "8a872f7fe8e71450577a8b69ba742d7afd3efa2ca64eb551d6c9b2aa5d2c2ce0",
+      "decompressed_sha256": "3242a41fba7a1d5484cdaa5892fb3535d37187812201e8a3a38e93d0c8ce9d28"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/finish_interspecies_delivery.py.gz",
+      "sha256": "6c1eba4133ff78db552fe53af492043793800682793e08b1023d9474a4dcf336",
+      "decompressed_sha256": "16fe2d2804407fc3533ea9d9bcfff97d07e68eacd37e543e90d27c91ebc65dcc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_audit_compatibility.json",
+      "sha256": "229e36e18dcdabcc99439bf9b0ce972e4eb82f1fbf8c128728da56b35b856dd9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_collision_current_rigidity_2026_10_11.py.gz",
+      "sha256": "410d44eafa394845ae3627954a53562612699c4c668bfc6c0a0faa1b67e2d671",
+      "decompressed_sha256": "3123877c48021d189d288245138a6b7cb0a321141d124ca0b733de8279d7fd12"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_collision_current_rigidity_2026_10_11_canonical_execution.json",
+      "sha256": "77f7401ed852389e1877d081e3c6c43441e4e216c33c38234dae12facbd3d20f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_delivery_mechanical.json",
+      "sha256": "d50a1d048d9dfb59ff01eea1925d32d9064b35f255549e64ab17b068e70195b9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_final_vocab_fix.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_final_vocab_fix.log.gz",
+      "sha256": "a1495bb578f6be53fc4d70ba14adb67d2b9d3950594eb87eff1276f36dc4a55a",
+      "decompressed_sha256": "85014494ede425025bf723783bc30ce33d32b0b00d568f501f688a51032e206a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_final_vocab_report-only.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_final_vocab_report-only.log.gz",
+      "sha256": "bd01588946bb683b5caa239611fb511869644a5f5bcd4c790a34e26938182fd4",
+      "decompressed_sha256": "e6efe5beab53c2b3fe797565aa1186ea7ac63049913f66905470d3249468c4d4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_graph_build.log.gz",
+      "sha256": "f9a2219831c0462117a988a9f18369086cc6c8c6bf95fe5f781ae9d3d8674883",
+      "decompressed_sha256": "0a61f8ba48f6ce0776e0c4bcecf5dcf1e1b1a3891fe26b1e178064e9ffd5449f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/drop_anchor_edge.log.gz",
+      "sha256": "f65a1f4944da53a4ba54aec79e9f52f1a17b5497c0d579ab760087e4f80f274b",
+      "decompressed_sha256": "f3a4c2ea6c8cfc7a3c4ae65063b33c32c14a164fd028c254a9d47c939a1a5b3a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/drop_anchor_edge.py.gz",
+      "sha256": "41e92d5fbd1da849d5d0f9a4db3746b05b5523d5aebdd1048f14beaeb0213d52",
+      "decompressed_sha256": "7745b3eb3faddfa43931dd929050656c3dd18ce95fa516016cc03e155ef230fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/manifest.json",
+      "sha256": "622ea7f8b82a5bd195b6c62277fc598167abaa8944b72f96a745697d2284dd90"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/overlapping_cubic_orbit_balls.log.gz",
+      "sha256": "12efd9d2fb9a9ef20591c6aae6e98095b0bd7f574962c173bc0ce66b1645c9e7",
+      "decompressed_sha256": "a81c9f513998c6e275913371866da70ae53bb90f497fe29b8feef81844a53e89"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/overlapping_cubic_orbit_balls.py.gz",
+      "sha256": "5a40c1fa0cf4e007bdf05c534ad413d3ff1ffb28f86e8aa9565528fa11980672",
+      "decompressed_sha256": "b55018aa99ba5d8065b73089139f4990f1b78a48ace0c2b95ab6fd9805c6ff77"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/reverse_cross_species_sign.log.gz",
+      "sha256": "25d8937b538e837760426d8ddcd318bc78d417b6c811a3663f42a446a57629bd",
+      "decompressed_sha256": "1ccd100e20c487cb392ecfd2059ce3d56fb80db21aa222602b67c4cd85d62f7a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/reverse_cross_species_sign.py.gz",
+      "sha256": "a1f398b28c9f48e88d200aa1d00297ca5fa323c6a57a111f46ab67c3a9722750",
+      "decompressed_sha256": "76e4dda37b1d616560bd219b02aaf651d7732c0c4466e08885ed523614b7f38f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/wrong_collision_charge_sign.log.gz",
+      "sha256": "c20257b7a587962712c42c20692e60e70c3213c97212e5aaef728b69055b09c2",
+      "decompressed_sha256": "c84dfcb3487585a46b6846d401179603eda717f76ed3cafb55e555255ff321db"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/wrong_collision_charge_sign.py.gz",
+      "sha256": "0b93be1aed0fe4a5f1a63ff74a637ff9ec414aa3d94193768dc450877e3183ce",
+      "decompressed_sha256": "28d4a1fce73084f5e7ac7e1db0849419c55b67acabb57d811a9ab86ccdbb1ae5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/wrong_cross_product_component.log.gz",
+      "sha256": "98b98123c0589a12018ef1719bcb5d0d7c105c90d73247d88be3f4daf2ebfef0",
+      "decompressed_sha256": "e73b79b13d95d8855255de16a85d2a6f1e1a3a7b626cb8af4416cee4f91cd537"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/wrong_cross_product_component.py.gz",
+      "sha256": "da32c9359613b8fe46165b7447ce6ae5941813bf34d59087865c9aa3363568e2",
+      "decompressed_sha256": "f64e967166952e007f6624613b9bfeeb5f9f7c0e62faad863102520cf23a26e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/wrong_cubic_invariance_sign.log.gz",
+      "sha256": "e33b79feedcc570d7e2484129f7c03df61ad7b7aa773372f8d1b92e4ca9ec186",
+      "decompressed_sha256": "2af7f2e3e193922dbd87dccefab28e0cf47611ec59f10b6d0cf1832a97d3e008"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/wrong_cubic_invariance_sign.py.gz",
+      "sha256": "d8560cb26c6e2ec28cd55b62b7f71606f3911130e22d04890b449c9bd9ca8731",
+      "decompressed_sha256": "49ecf29f8d2ec65dcb3565a3a23c20b2caefd4ccdea790217e05004b5d6453d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/wrong_current_curl_sign.log.gz",
+      "sha256": "5f5d8512e9bb7d4034a08cfcf2b840abf8b3b68d1099e14574ffb015ed389051",
+      "decompressed_sha256": "e56bffa1368714d22ce5077640ceab4312bd9e03230d5961586a6ed7e69cdcda"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations/wrong_current_curl_sign.py.gz",
+      "sha256": "ea7ddb2d23c295d1a61cdf636deb28f28d166ce401157f6d7ca6a889fe5ca195",
+      "decompressed_sha256": "fa7af39dae10b47ef6d4ef6b4ae0d8c1ee2ec4a445294523deb5b36453238e4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/driver.py.gz",
+      "sha256": "1a02191d9039eeb065011cbe83fdd02562ebf4b2c85241c1b264b90930398f58",
+      "decompressed_sha256": "d47ed6f5a32be75fbb86f45e8131979773472b7401e8dbfec66c0c2ed789baa6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/drop_anchor_edge.log.gz",
+      "sha256": "4592d03ae6dd11f2130bf96bb730286345a9df52d3ecc1f499ddab607c695c36",
+      "decompressed_sha256": "3bafa1934a2adc6b5dbbf1f6ad12aa01d7bad9ccfdf63791e1457e7dfd80ab99"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/drop_anchor_edge.py.gz",
+      "sha256": "31c32b510c90aaaa0951dc6f79cc28304e52b8e39ca1305cae241965385f998c",
+      "decompressed_sha256": "bafa0ccc53f0382821ca0ee4adf790bce3722a0b9c085385a80ea33ef635e1a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/manifest.json",
+      "sha256": "f63241b9ed99fbb7697f529685c5186ecd920ee43908ba94cabf3ad97d1fae82"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/overlapping_cubic_orbit_balls.log.gz",
+      "sha256": "004031a9a9d727a78a92124827303e75f6527e9b252c4c0b98c60f2a34edac1b",
+      "decompressed_sha256": "e0bc33bac2548f1c455270ce33fed34bd77949c0b5069d85a6b8d3f9aeb9cfeb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/overlapping_cubic_orbit_balls.py.gz",
+      "sha256": "6bb652ef2e0e7f2c1ee4e000f9c895efe07c66bd72a2b1b87435422871d43fd1",
+      "decompressed_sha256": "831d7effc1ac7704acb6362013d10dee6474d3c15c2c63cceacce59b73ab7bcc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/reverse_cross_species_sign.log.gz",
+      "sha256": "28c57acd7f44a45b23ad1407a722a4a6eb872eeea57f6d7a7907ad50e3f310e8",
+      "decompressed_sha256": "c597d07f234332b6fdbaca0aa99f68ea3407c79305396f351f2e8ad4d5037d90"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/reverse_cross_species_sign.py.gz",
+      "sha256": "3951483b95042b76846f69102676032c0295be2594f3874eea8696cf7a84b63a",
+      "decompressed_sha256": "95ce332e8371e32302814b61b4da0aaee44c874e3739c32614c07d816dd39872"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/wrong_collision_charge_sign.log.gz",
+      "sha256": "50541df95276615b6a532731aebe6544c2a3abece5ff9d5aaa8f274256b290cf",
+      "decompressed_sha256": "8fce65db799e68045755d07b1d385e483f2a2a964fb3fcf34d45f26febfc495a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/wrong_collision_charge_sign.py.gz",
+      "sha256": "42e6798abea478319381d3dcad997ead9c66686ed4526119ae70a1bc4647eae8",
+      "decompressed_sha256": "ed2519f17d876c44a651fa04a04be5e0c427466a7fc669ca40e8b0c69357f38d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/wrong_cross_product_component.log.gz",
+      "sha256": "5a6af2d4fadcfb7094f651c7ff5a285fd65a5d099f77591f325095e0f58899ff",
+      "decompressed_sha256": "d088d71e41ca941e421b2fd56066bc022d9a364a5a9b8effc77df8d0be47aa40"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/wrong_cross_product_component.py.gz",
+      "sha256": "354b815878a9c55a9e2f2d82149a3584448eeb4ddb1b3f32cf32e52c4bd4bb84",
+      "decompressed_sha256": "6d5cb211092e1ad44ebaf8e6b14d9ef1814adda95e3d69b028906dd4a2e76b9f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/wrong_cubic_invariance_sign.log.gz",
+      "sha256": "d867ac90209940115ca5a1468c59c341fdf78ef7b34cc0d960750e601096c33b",
+      "decompressed_sha256": "ccd93a6fa2fecb95490d8885ecc7235c93bfb429f98832d45c4d87febfeefdeb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/wrong_cubic_invariance_sign.py.gz",
+      "sha256": "02aacebdd10b0fc03bdbccf44dc2a10a2e64481c267c1ff91f056e4e61c9ef8b",
+      "decompressed_sha256": "c1954af056d6fc5cfb688ad4276eaf9d3008d48df36f01411157566be09a7fc7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/wrong_current_curl_sign.log.gz",
+      "sha256": "4fa7585fd7ab027873840ccce80a67d5280c6293ffb62057fa4b95898e713175",
+      "decompressed_sha256": "c8acfd4cc0f5f7987889f6e964b09a7882f6707246fb26efe3624372f4a531cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_primary_mutations_pre_strengthening/wrong_current_curl_sign.py.gz",
+      "sha256": "384039c72860c05ee3278925b6658d66c4be49fc4f79e657902c602614fdb9d7",
+      "decompressed_sha256": "ae4dc265659ce519623369d71e46775cf76143242b72c2d1073282550008862c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/CHECKPOINT.md.gz",
+      "sha256": "d4d1a396f8f41d99f8f7d3022eea7e5f7dead3f9b0db0c80fe4ddba73595b402",
+      "decompressed_sha256": "77b7f267b05756eec54e26e3efab1308cfebf28ce1c1966d8cc991df07e524be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/bounded_search.json",
+      "sha256": "0badc4a8057e36d379b954fc44eb84a4cdd1f6ced7bf9ad0da9d3431b0592dfc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/freeze_receipt.py.gz",
+      "sha256": "151ac3ca1ac0a95218fb2dfe759b7f76598122afc7da1710b1c704d752165121",
+      "decompressed_sha256": "3a63a6f551e1b32fb6ef359d6e4f7b33e71f9ef5c511c9e66322a81b83bfb04b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/initial_sources.json",
+      "sha256": "fa6334db270803e9390b4611d83979686df8dcb32b9dd8637211faf40341d05d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/cycle_sign/execution.json",
+      "sha256": "cc790c460351b9ff0681e26eb75bfd0f1f950818565d9b7af973c7129f5fc743"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/cycle_sign/full.log.gz",
+      "sha256": "c124d2d45e577f1bc98daa97646eaec18d47a3eec42fa399d27254ea3e50252e",
+      "decompressed_sha256": "cb6d11a53e4927793e4eee1605ecdf7f932ccc9669ff365a6b5fff50bece1322"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/cycle_sign/stability_controls.py.gz",
+      "sha256": "d9cf298690b9dfe099c99fc26c4909508bedc5371675b2cc38151954fe0834c3",
+      "decompressed_sha256": "52b18b8104cd47b08283fb4b5dac29d47293607a22c7898d24f9ae817c0d99bf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_equal_triangle_anchors.json",
+      "sha256": "7c50cf2ac3aaa5718f48936a6cc4c4858ceb06ff413137db675b391a520894b6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_nonorthogonal.json",
+      "sha256": "1c162f60f01f3a7e4b1386c4308cff76bc7454c4b87532e343a82bc258bf71eb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_off_line.json",
+      "sha256": "0952a711723ae71d83738c7703f7c115b814f4c14d15f385555ff6e437b83ff8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/certificate_skew_and_duplicates.json",
+      "sha256": "8bede926809d3340f3aa8f15925926115bcf25a9aa61cdcd1f6c2f2e6bf573ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/execution.json",
+      "sha256": "507b1d143d24ffb88069361230ce83fb59eb8c24b8f97a15c860cf2e89856565"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/full.log.gz",
+      "sha256": "c57ce90edd7b962c5a83f5f024c9ece4ca8e7e2c1cf56c9081d69f82c49959a7",
+      "decompressed_sha256": "f84503e7c9df7b44f07b4c3f98074696d948928cbc62e46af29a4709a26d3000"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_extra_anchor_height/stability_controls.py.gz",
+      "sha256": "3816249c7dd4a058bb1431ae0fc374897f17d21bb092cf241e7189c5327e8a4a",
+      "decompressed_sha256": "0343ebc0dcc9af7a4c5d9b3424e9b276e30253304e2efb34adc73642b08688ea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_equal_triangle_anchors.json",
+      "sha256": "3b874ea9399c2dd8c7439fae1712ed64bbb50adc68b8b8c9fd83a5ed39012d4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_nonorthogonal.json",
+      "sha256": "0b9bec006af53ea34dd6f6504c86efb4ee474936c8c167d82cd8a59af01dfd90"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_off_line.json",
+      "sha256": "923fdc2ba98262aedffb2351a963651066669f2a6be8e6c05dd51d742a3b7a80"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/certificate_skew_and_duplicates.json",
+      "sha256": "894746461db1c556e8cc38520585448830b66f398c956d287ce7ee5ebab7c30f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/execution.json",
+      "sha256": "acb2dd6dbaeb71ab6e2eddebbbda1f9542df4790c91b36291f986baeddc10489"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/full.log.gz",
+      "sha256": "9f904cafb874f5b009295865bc01bcad53d3ae0642159004add11afb59caa40c",
+      "decompressed_sha256": "80ccf791737f34ef0c71ebb48fd7e4bbf6f9daf3697ed391509b78b90ad8243a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/drop_wedge_inverse_scale/stability_controls.py.gz",
+      "sha256": "7bb5b82b99d06d90365053b5360b116b4410641531700443b5e6302c839aeacf",
+      "decompressed_sha256": "36ff5e7e8ae9f751e5b1acf597ca65db6616b9b74e062f489d453102a6321a20"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/projection_denominator/certificate_equal_triangle_anchors.json",
+      "sha256": "3b874ea9399c2dd8c7439fae1712ed64bbb50adc68b8b8c9fd83a5ed39012d4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/projection_denominator/certificate_off_line.json",
+      "sha256": "923fdc2ba98262aedffb2351a963651066669f2a6be8e6c05dd51d742a3b7a80"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/projection_denominator/certificate_skew_and_duplicates.json",
+      "sha256": "894746461db1c556e8cc38520585448830b66f398c956d287ce7ee5ebab7c30f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/projection_denominator/execution.json",
+      "sha256": "8d0995ec50820287641a52152aaf98a9f5ff95462fefd6eb0631a3c2df5022ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/projection_denominator/full.log.gz",
+      "sha256": "f14948ca3ba8ab509186d97a05c9b81e31589be608de50e7260be35ada756863",
+      "decompressed_sha256": "03d8dc6f5c14a5337567f871c3ce951358ec8647a3e9291e0f533243e6fe9fb1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutants/projection_denominator/stability_controls.py.gz",
+      "sha256": "9acf4b8500db7a5767d11b2e48184ea64d9cc4a3c1717efb88191d3398d20b31",
+      "decompressed_sha256": "3acb84797ebc4c4d4b350352841846aa8f1758450ac29db137b526488bd6d998"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/mutation_manifest.json",
+      "sha256": "345d8aea9ab600e04e0300437c27b6a45c8a3a69bd1dce6645a87c6dc455cddd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/receipt.json",
+      "sha256": "5cdd8a3d902e1034f1ae81ac90f6cdec87d6b65b61d4b2781fbb8d3a249bc905"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/run_controls.py.gz",
+      "sha256": "d3c41b100bc6d2c95d406cd812901634a1043e75bed1904fa6242bd6b582822f",
+      "decompressed_sha256": "30afd406c1a6cdff257ed6f3b36b13b695e4a0af7e5de945be95ec104609326e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/run_mutants.py.gz",
+      "sha256": "b712b134fd7f8b0ca03d37c75ae7cd98c76f9f382f0013ceceef91710d0c9830",
+      "decompressed_sha256": "6a755e68fb89e9ce73971f2f246434397ea7749a55a950c5c99af76f31254468"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/certificate_equal_triangle_anchors.json",
+      "sha256": "3b874ea9399c2dd8c7439fae1712ed64bbb50adc68b8b8c9fd83a5ed39012d4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/certificate_nonorthogonal.json",
+      "sha256": "0b9bec006af53ea34dd6f6504c86efb4ee474936c8c167d82cd8a59af01dfd90"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/certificate_off_line.json",
+      "sha256": "923fdc2ba98262aedffb2351a963651066669f2a6be8e6c05dd51d742a3b7a80"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/certificate_skew_and_duplicates.json",
+      "sha256": "894746461db1c556e8cc38520585448830b66f398c956d287ce7ee5ebab7c30f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/controls.log.gz",
+      "sha256": "14acd03e4d12e79d02ae27f607892ebeb75b7310b50a380ecb8bdc744e0a2369",
+      "decompressed_sha256": "0bd712708a84690e4ac464da092ab66fa41c208f1dcc1dd0cae42574257e45d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/execution.json",
+      "sha256": "7886cc81ed261a645bc1b3f3c129e4dcb2ee9cbd981f6409c7a60285be620374"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/runs/baseline01/stability_controls.py.gz",
+      "sha256": "d7a85ab4716a0bd9519347de65c969d5720c4321ec6c56946c61358c9da065ec",
+      "decompressed_sha256": "f468cc2d3e67ae7f1337ea859a1fe7579f719440e628954884f2e92b3752bc7f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/source_checks.json",
+      "sha256": "6dcf02ed4250ee7b46c7df3c1ee27a9927d481857c70444b6a6a169a492097f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability/stability_controls.py.gz",
+      "sha256": "d7a85ab4716a0bd9519347de65c969d5720c4321ec6c56946c61358c9da065ec",
+      "decompressed_sha256": "f468cc2d3e67ae7f1337ea859a1fe7579f719440e628954884f2e92b3752bc7f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_2026_10_11_canonical_execution.json",
+      "sha256": "f0f634d5a660b679923349b24556ab0ff06e4ea9e12c1d0d09238620ce677a14"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/CHECKPOINT.md.gz",
+      "sha256": "e5fb03cba51ddfccb707eeabf7cb84333405c74051c51d1534d755e47b9cc686",
+      "decompressed_sha256": "e337040f4e155145b47ef065d09caf2653d5ab1f884110ea840be3c446770e7b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/PRE_HELPER_RECONSTRUCTION.md.gz",
+      "sha256": "00c62cf0bc29b7f635e76149e90fb69d3351d8f2b2d792b5e9b3a627e969b2ad",
+      "decompressed_sha256": "742714f8771096b92d43ae2014e92a381960e99f7f3865e63fdcf735006ad884"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/freeze_review.py.gz",
+      "sha256": "c6d8dcfe338fb76efc725f211b7e3a6d5f1e6bc45b5803206d041316a9ed06f6",
+      "decompressed_sha256": "37a5af9d91c709f00faf2aaa6ebccff27d531e2020dfeb2767a69d6a18e1bcc3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/independent_execution.json",
+      "sha256": "e6833cdf0d517573efddee7b7ed59401902cf8ba101fd09d139c661c72108e30"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/pre_helper_receipt.json",
+      "sha256": "3121c8a131e23e8f146461e4b9c6d704da0a13c130e098dc4e9bb87d8206c4af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/receipt.json",
+      "sha256": "84be0fc8b21555b5000d99c8cf7cb91a1ffa7638f565a040039674da4b6b3cb9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/receipt_validation.json",
+      "sha256": "d166b3c050ab7ec1b952da2687bca65e21ebd9aaba2a716903a5e7d168c73640"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/run_control.py.gz",
+      "sha256": "b6f88dfd97e2db379258e9f2d57e02ab796a1c9a2ef3c7cc4ea205ff620577c3",
+      "decompressed_sha256": "23d26c2564264b29e75587737d1f3bd0bdcf1cea301a11d30ef66423a645ba18"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/smooth_current_control.log.gz",
+      "sha256": "fdd18da727a795cd4eddf87588b3319b3c5afd6719190a95856212ad7cfd3dcd",
+      "decompressed_sha256": "0a33571925e57455683a1d477c9d5de6d32a21dc3b2621a3fbe6df5eb02d0819"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/smooth_current_control.py.gz",
+      "sha256": "6a792291abd701da8e353f1e8acc4c3f85790f41168e26b0e1251f2662ab635b",
+      "decompressed_sha256": "1a6213c3a93757328b68ab71fccca2d6bb8494528d544cc0f5b2c9d9736676ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/source_verification.json",
+      "sha256": "6c5afbf8feae978b83841f6b6372bc87a472d9ce8f78a7147e927e71aafb6729"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review/verify_sources.py.gz",
+      "sha256": "ee9f293898ae31e9d99bc8602403ae7daf621ba659937454db5eb21e7ebcc612",
+      "decompressed_sha256": "ba61150c11097a42bd82bff6794bdff076ef0b1ea5df0f6c333be34dec04acd1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_review_root_identity_check.json",
+      "sha256": "a470f4905a1e60572f3f64ecd05d2add4d03c3aba18bff483a59b6cfb1d87cb9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_rigidity_stability_root_identity_check.json",
+      "sha256": "9b251d1c54769a0922c38c28952ef6639158a17b72304b33f2dc9a7fb946be6e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_source_vocab_fix.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_source_vocab_fix.log.gz",
+      "sha256": "1f91c3af79d06ec0f0b546b73f55ac3110f2e6a9a3e8bca644d4a3db8b491512",
+      "decompressed_sha256": "7b6717a71849f3eea22ce04d1d1d43ec5d71aa9adac887f740e8ae8f882da65e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_source_vocab_report-only.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_source_vocab_report-only.log.gz",
+      "sha256": "cf740210451f098c3848e642fa9e598f316616307121c531ac5d01b38347d5fd",
+      "decompressed_sha256": "39e702d3d9ab698ce79ffbfbf3716c8305b30b3f55708c36b70f66d9ac6deac0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/baseline.log.gz",
+      "sha256": "aa51011a337649b68ab807cb69f5366e612a4a359eaf9765684eaa703d4a43d1",
+      "decompressed_sha256": "6ef05747d4e53715023daaf1729772776da7b3cd0b2124ab41023f8269192c22"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/baseline.py.gz",
+      "sha256": "367005849e886438bc062d1c5703587cebe6e598f2874f9e3bcb8f5157f4df7e",
+      "decompressed_sha256": "b828ce7f6fb136d2d55cc1a19a4f9c41e735a11a4fa56355f623fabdd8115059"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/cubic_average_factor.log.gz",
+      "sha256": "1eb9f89b3321bc57c7014bcbf805bff717a3d0b05cfb594788cc3726ae33f7c3",
+      "decompressed_sha256": "b416ec85b27285737b0ad226091dd2ca5fe9a16b5dff33d4593484d50cca7ae9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/cubic_average_factor.py.gz",
+      "sha256": "8f9bc2faeeff50016fb73dd7136470bef0c57e34158dedbda2177c8cb344a321",
+      "decompressed_sha256": "6936e1534879ebbeb81e11512c81bfe43cc44276b373a9513cf00bd434703389"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/cycle_sign.log.gz",
+      "sha256": "62fe727c49ca2561fa465d7cfaafbf93257172a17811d91ed2b910fe27d7359a",
+      "decompressed_sha256": "4b1c35a861bc7e5989cd8fe26e0e0c4e7d7e17cbadad27a82cab987e3c994267"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/cycle_sign.py.gz",
+      "sha256": "00e87015b7103cf78048f9880b468717270988e455dd61b772d46e1dd9a13790",
+      "decompressed_sha256": "89b96fa43d6fb329e8d79754bf6d1fa80afaf399a853a28c494e1a06d83a296f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/drop_extra_anchor_height.log.gz",
+      "sha256": "2f67f70e55bf6fd954e9b28a4a431d5fc59f733c277aea06f743d9105562bb19",
+      "decompressed_sha256": "69c4cc9b1ff9c6d04da9b58ff8bf19f0e1af6525da0f362575c49c0d265c0c1c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/drop_extra_anchor_height.py.gz",
+      "sha256": "e4848989dcecd169f8af4564b7d22ec802b12440e4553d7c2cf041e00480a1a2",
+      "decompressed_sha256": "096a090d9eff57dc7cb79c25b97c4529f7f27a2bda9cff4b05f75d37581617ad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/drop_wedge_inverse_scale.log.gz",
+      "sha256": "ab962f2f706a7115855678aee7b44bb6a0de9c3b8780be9666313f6d2763e4e1",
+      "decompressed_sha256": "a8f1ff1d852aababe3c5b45156b36e1adaa24cc1b9f441982b33cc09fed33062"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/drop_wedge_inverse_scale.py.gz",
+      "sha256": "a3951da09a967980bf89e757e3da03ba2e582077c9ab08059df4292adb7c8384",
+      "decompressed_sha256": "2306fa1bb52ccc830dec9ec50fce71a1ddaa70fe8c6c37898e3447c7dfcce9fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/manifest.json",
+      "sha256": "3f68abbfa11ee0c76992c01c8da621e911eaeb138872079692f13fd153ccefd2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/potential_factor_two.log.gz",
+      "sha256": "fed6ecebbb7bdf747889e48d3bb42b365cd683017f2a430d55baff3491ca3db9",
+      "decompressed_sha256": "5f673ad564b6daa877950f83b47919a8ac2e99ab9e3ebf7b88297dbc2b447d68"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/potential_factor_two.py.gz",
+      "sha256": "6074eea0cd9879f1d81b6e8e67db5817fc4e336a3faa7dfaa3c881c894e0de8c",
+      "decompressed_sha256": "91d6d5bb1b399e9d3ee75ef9e1ff76632329e515cbf495493d7b88a086fafe0f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/projection_denominator.log.gz",
+      "sha256": "e82d70ee7488c2813dc046885ca42e4a9bc0b57118225b33dd9fde501fc940e2",
+      "decompressed_sha256": "16a3523907b90837504aa014717f6cff039ff2d6b56a9c3a928f5ac4d2b009bc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/interspecies_stability_primary_mutations/projection_denominator.py.gz",
+      "sha256": "a2156817dacedf339ed7b6b3285a175f614ab18b738b25c0ed7413254449881d",
+      "decompressed_sha256": "4bc9035c9a3039263ad6216f20abc808565065d6d04966ff607a151a23db534c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/prepare_interspecies_milestone.py.gz",
+      "sha256": "8951494b8c15f33f5dbbf970cb117185c79213209e860b04aac04f26a0f6a262",
+      "decompressed_sha256": "45f5b28e6e69f772852a9f2c4b53ed1f857d37dd9d4e5481401bb520a3439ded"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/prepare_interspecies_stability_publication.py.gz",
+      "sha256": "ccdd77ce90f694f1e25a30e71d2f50f34bd618921acf47d02e12d6a599bc10ef",
+      "decompressed_sha256": "96f71b7689e656006e6eafefbcc96a7ad581762027530fba66154be03055995b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/run_interspecies_primary_mutants.py.gz",
+      "sha256": "febded6583ed8bc25530b1f5db03a6ed6ae5edc5cf55279c30322385f4ef0b8a",
+      "decompressed_sha256": "6bb6ead45cb6b1b2765537caae64300df1b10b1783c32c451744b7a2c1757819"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/evidence/strengthen_interspecies_publication.py.gz",
+      "sha256": "87c38ca5d029733e8fc5499ea394ecf1607ebe0cf6e390638db63fbabe2431fe",
+      "decompressed_sha256": "bcd7a6031945975908e609e3463f3df2974f51981421b95f320f03b7ae7ebd2d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/fragments/note_front.txt",
+      "sha256": "79c66d630315de086f9636503fef1e44ada9baa0907572b5842ed57ee5a21094"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/fragments/note_tail.txt",
+      "sha256": "83512d6a80100a928f90b457ad9e25dabdc7810f35c73baf28d779f8556c76af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/fragments/primary_front.txt",
+      "sha256": "1f9b986399478ce3ec7640e360c765edb83c385408fc5b38e8b4350878e58317"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/fragments/primary_tail.txt",
+      "sha256": "a6b270608bd1dda1c103544b4d616cd39d435095d8762fcb62919b5a72a0187a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/freeze_receipt.py",
+      "sha256": "784cc787bf145f4b89c240e27a3c984d157e89b31ffe91bb26417398c37858f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/INTERSPECIES_CURRENT_RIGIDITY_PROBE.md.gz",
+      "sha256": "6f328e988049d21c926631f87425b9141cb91cb360b25d642e506ef227bfa568",
+      "decompressed_sha256": "ca44d1c852e6cd0437cf9e98913fb5fb106abb1b42567c68fb6bf3e9a60c80b8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/INTERSPECIES_CURRENT_RIGIDITY_REVIEW.md.gz",
+      "sha256": "5dce919d9455ef5c3dadb080445d13baf9ab5bbd81e0ae0699b79da484e061a0",
+      "decompressed_sha256": "78c3bc3c8f223b988713cb5bd5210c1a801e8cdc5f428ee648d6284c400d97d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/LEAN_RIGIDITY_STATEMENT_REVIEW.md.gz",
+      "sha256": "9d3a03c64f4aaff0ffa9934e247c9d8395f889e6e7c0db48fbfb915ca12a65dc",
+      "decompressed_sha256": "14d5a11bf7476975b8067fd5d9c7f9e91381804a1b926fb324ff5b9bfd57b519"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/CHECKPOINT.md.gz",
+      "sha256": "7d87677b4fe99d2e42c6a6dbc60b4c4fe33b9d7465bef2da1ab27aee3166f496",
+      "decompressed_sha256": "c4e93ced25c267203bc3a755266ab2a92b79e918d6ac6635065e4d5d3b58eb8c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/DEVELOPMENT_LOG.md.gz",
+      "sha256": "99da11274442077f4e942422db1f3384df288b5934b209bb14661b98506c534d",
+      "decompressed_sha256": "7de7d35ec5a2a94edab074dc3e5825561fb219878ee0494bef4dbdf4b011f7c3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/controls.log",
+      "sha256": "ca64e8ebd980711ae0b4b5d50429b77e8545551506cfc17caf6c9f9c0e21a8b6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/execution.json",
+      "sha256": "45084032f60479e7a4fc4d86276700a7cfe3116315e1da96448e2e9907bf8b74"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/prior_art_search.log",
+      "sha256": "a61bf75e53f8065827cff2d23ba9796e08b20bfb461409ada5532fe41f158c32"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/receipt.json",
+      "sha256": "283511b410dafa614c1e4453483b540e744604e66b538a803516c8294379267f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/rigidity_controls.py",
+      "sha256": "9fd94231d6336964e5b6556396d31363c9ab5aaf4f17298d73d8ad5c3afa3b4e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity/source_checks.json",
+      "sha256": "ab7b78728b304cd7319c4dee5365562dbdb2397bab4ad3086fa70c6f383aec25"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity_review/CHECKPOINT.md.gz",
+      "sha256": "0d554ff636faaa6ed7c01c64ee7e66d386c3995230eb435225fce3c4ae06a8e1",
+      "decompressed_sha256": "32353b94c5db19259f7b8a5f0e608826fc991c897f0e74a4fcc7ad1b307952b7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity_review/PRE_HELPER_RECONSTRUCTION.md.gz",
+      "sha256": "58047adb78c517e6382b3dd7ca551340f71a3b092a184412c1d80f538278a426",
+      "decompressed_sha256": "567890a3674cddb262bc2320b200d7b106c5a18615f0eae6b69670bf53951836"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity_review/freeze_review.py",
+      "sha256": "abc9185afee053717e4f38c50a93d6f5a6081f165c4a4279603f7542d744f0f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity_review/independent_collision_controls.py",
+      "sha256": "0b213ffb0dafd0745346b93c39531198057c3595624f71249705682b3bcf5e8c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity_review/independent_controls.log",
+      "sha256": "51ffdbf17e81029bb4e23bbdca3fb74ab2f18af29394baf33335b312b6d9df72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity_review/independent_execution.json",
+      "sha256": "7f323bbd8ba4b5553c685ea440dca1ddb5202ed2f81b5bddda6d4235f505d80c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity_review/pre_helper_receipt.json",
+      "sha256": "c188863dec03f09cc91e2e6cf44a866f80db25358ff6157cde8dfe35392354ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity_review/receipt.json",
+      "sha256": "1c3c02926c6c35277fdde7a4b174b85d2471c3c3ec4da9d39681a3c9f2f68de7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity_review/run_independent_controls.py",
+      "sha256": "4495350b42521e7ccffddb3fc5aad21116e39cc4fab3cb98e244b77b846cc961"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity_review/source_verification.json",
+      "sha256": "6c0ba92b299c1dd78c4e04ea1b84a73be8901c755fac7021d54691e5ebf71262"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_current_rigidity_review/verify_source_bindings.py",
+      "sha256": "1bfc3ada78eb584664cbbc4de7860e65439082331f5f672102c5c7f6698a0974"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/AxiomInventory.lean",
+      "sha256": "af15ddd780bf3f20a2122bfb39f74c4f7edba48b16dcfdd19e3123263ae1e7f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/CHECKPOINT.md.gz",
+      "sha256": "16506c306956d6b67ff917ae57615a3ff57de77031487e965e6b3979b9dac662",
+      "decompressed_sha256": "54fe81169c033d7b7b2506c2df727b21743a220a4e3e509bfdcf5bdc911f9ea5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/ControlData.lean",
+      "sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/FalseCoplanarResidual.lean",
+      "sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/FalseCycleSign.lean",
+      "sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/FalseMissingEdge.lean",
+      "sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/FalseNoNoncoplanarity.lean",
+      "sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/RigidityGeometry.lean",
+      "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/SCOPED_OBLIGATIONS.md.gz",
+      "sha256": "748e2480354ba9a6db896daf38da054413287299af82457f072869d3681a0ce3",
+      "decompressed_sha256": "059953fa4094c24f2e4c6f4fa3f4140a4f248ec1ec5a299ae7dd037c4d9446bd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/SCOPE_REPORT.md.gz",
+      "sha256": "b1558370a2e416b21e9f0f887946fc8155293d887c0c7fa791bafce1b9dbfccb",
+      "decompressed_sha256": "7c57cfd772de71e483791bfc8caa4166cf9c51c23b2ae2d11da005148ad8fe24"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/STATEMENT_MAP.md.gz",
+      "sha256": "fb869c3c41a1a7f419d1639b3a00a71488330b855aa2ce47c14a3b386439a6fe",
+      "decompressed_sha256": "b1ad69bff414bb6095e8ea5426e832ac0fffd59cf8c7e9d57a652d2fd4b1b468"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/axioms.txt",
+      "sha256": "35e6b4915e0c50fbf41c0442b271ddd35ff9aa25d664761692ac3dc7c22140d5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/false_controls_manifest.json",
+      "sha256": "b101b464f7ad57ac5901a51a29008830be52b3cddbf9e718d3df6d0b20d5e17e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/final_compiler.log",
+      "sha256": "524c550e27cd2fab50e147569f328b6042dcbbb535742a1b1910f504af770490"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/freeze_receipt.py",
+      "sha256": "a5f42772d945689b749e0b0ccb07ba7c61b9fcad1109f21670fc232cb1e12023"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/attempt01.json",
+      "sha256": "326d673ce541947b1bc7bc0b74b4a4e333edec5266dd308458bbdb504edc83d7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/attempt01.lean",
+      "sha256": "fe9218b0ce105f12ae82ca006dc1d00f43e005510970b99f6c1d3718ea0f8a37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/attempt01.log",
+      "sha256": "914e6b7af5da4bc7be271743fbf1ff3f6876e8e10abf3639737f6d5bbe95ddde"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/attempt02.json",
+      "sha256": "8b02eb1ce73fac5b1faf9732676ef091519f13962d857112b64380c2ee2f6769"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/attempt02.lean",
+      "sha256": "c72e7a9a961d1eec1ff60842ac3e8a5530c8b71dfc1505dc098d7cab780044df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/attempt02.log",
+      "sha256": "524c550e27cd2fab50e147569f328b6042dcbbb535742a1b1910f504af770490"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/axiom_inventory.json",
+      "sha256": "85ed5750b4eefa09e08da59f403a580e041bda2a9005f93aa248ded932b59859"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/axiom_inventory.lean",
+      "sha256": "af15ddd780bf3f20a2122bfb39f74c4f7edba48b16dcfdd19e3123263ae1e7f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/axiom_inventory.log",
+      "sha256": "35e6b4915e0c50fbf41c0442b271ddd35ff9aa25d664761692ac3dc7c22140d5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/controls01.json",
+      "sha256": "87b53c9073be8417f403e8dfecd92e2d1fc381e3ba589b991691f4124598afca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/controls01.lean",
+      "sha256": "7825dd3f0a227fedcb7bbae7c81a01c9739a58502f2db4a4879b0510d881e139"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/controls01.log",
+      "sha256": "460191bc92c6ab1544fcf298348c7f712791b83aa689d13889d443c3a5ca71e5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/controls02.json",
+      "sha256": "1b7d48d4b2842a0ec099da70f9d14c80b14f9ad99d434acd81e46db4b1584b4b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/controls02.lean",
+      "sha256": "4ae162a8a457a47db40816c53ff4fee97ef3c47639ab0fe16d3d4268c65916af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/controls02.log",
+      "sha256": "d02a5f90246ed313b02a856f6aa8a6ba3766ec74498aab95357dbe53f311f41c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.json",
+      "sha256": "f67dffefcce9bb144b419e885703e42cbee4e3d63fd51cd29cdb291013c06a6c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.lean",
+      "sha256": "e2221c76d4d21bc249cde003abe6e476c5a4b5dbe25d8546895a284990f097f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.log",
+      "sha256": "a49f6c30d309062e284d0980e2d3e80e10b11fcc29caaf92428e46b61f414c13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseCoplanarResidual.wrapper.log",
+      "sha256": "8adfe712b8585c89636f52ff56325abe3ba18677feeb694194c55a4d0d6461ea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.json",
+      "sha256": "e064f13c8d04189e4e12d3ba214e316a557ee23556eb3e937bacfc8522609c60"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.lean",
+      "sha256": "d74b31ce94aa3a93526c9ec96b28cd9b66161325ad5a7abe17aeab6075d64173"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.log",
+      "sha256": "fe87e9af3e508f6a258bf094494ae989d6e4ab51a39b4058002e0fcb43906847"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseCycleSign.wrapper.log",
+      "sha256": "f2d6dda2283152096f71cdcd90c7eee3490c5273c4557b5aa1a5a73b60911ed3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.json",
+      "sha256": "be94295f6ad29e57066b23346dcada9287f8ad4bc03ac2a10ea4ad73c08eac88"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.lean",
+      "sha256": "73e4b920a42a14306defe929a1231dfe1c375842488e4037d9662e2f493216fa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.log",
+      "sha256": "b5d242094d3d47c9532178f464545c6eed2599ad61d52a8621dd226ffe9b5b48"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseMissingEdge.wrapper.log",
+      "sha256": "22fa1d73dc245f206b4dd556881f442e7f4d919f61d0d5b9d65a97009a39a319"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.json",
+      "sha256": "d8bf6d0aafc7e381fa12d953c95fff32c9d964de652ee87e75d7aaf51c935555"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.lean",
+      "sha256": "0a745a7509190f09d1cd1ac6eaeecf1e439e5a46d1756137d599c55a01919d48"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.log",
+      "sha256": "2304ffd1cfc3e1f7635926d2d0fd069978c4462bbc43d6c5251a7a7a27b38228"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/logs/false_FalseNoNoncoplanarity.wrapper.log",
+      "sha256": "3b1b8ef8aa0ba1891e15bed5a6039f54848b3be9375a374ee3b33c20aadfafa1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/positive_compiler.log",
+      "sha256": "d02a5f90246ed313b02a856f6aa8a6ba3766ec74498aab95357dbe53f311f41c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/receipt.json",
+      "sha256": "4f1512919a9e4aa41cac168882d3975e4b95f72cd4620876aa7cc959201c9048"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/run_false_controls.py",
+      "sha256": "1aeb84c116c1786d69940f57dec2c318423cc7691f60f5dbca21f5499ee3d6e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/run_lean.py",
+      "sha256": "1d57c91acaa62ca7ff4ee09a819afc77bf9fefe0419a4d752ddbb4ca40fb3f42"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean/runtime_identity.json",
+      "sha256": "8d060e0ac45c048cdeb4240cba7a195ac3a4ee0b8a5c900542a72828f0b55509"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean_review/CHECKPOINT.md.gz",
+      "sha256": "b886652f171d6c322846d00d7dab9d7e6c711a3b5725edfb68da8ce8d927b429",
+      "decompressed_sha256": "edc33f6ce08d09f9f81958dd562a7ace03b0b34df2be041346f3bb6748119d43"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean_review/freeze_review.py",
+      "sha256": "ebd4afdfe7ac36468d7b7b4cc864748ace15cc79c5043f6979098f8ee0d66977"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean_review/receipt.json",
+      "sha256": "974549d47ca67a1f82591d5cef2ab3fa3a2d5854b3b2404dfa58f265364c00a6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean_review/source_verification.json",
+      "sha256": "79421ceb7c268d7397382db5869267f679090a619d5d205e5beecfd8ed1735f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/interspecies_rigidity_lean_review/verify_packet.py",
+      "sha256": "4a8db835329242d707e1ee3cb81626e0b2d79cda056316a44b057854806c462b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/repo_sync_rc_2045/agents/RC_C1_referee.md.gz",
+      "sha256": "4478c86fd7b2d27770c66a8c5dbae706066d9d8d240116c9b443b05dbe5581bd",
+      "decompressed_sha256": "46b3b3624ac3c217651ef3c1820625079b414fb535dc206be8410f43d61f4a5c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/repo_sync_rc_2045/agents/RC_C1_referee_full.md.gz",
+      "sha256": "6f23dfe3dc0e19db7606dddf605cbfc54869e954f89f0059e9dab225ddd0a7ba",
+      "decompressed_sha256": "a36b43eaf213e34ae9852c79a93f808a4e2bfb6dc307f8ca388b78a6db5132e4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/historical/repo_sync_rc_2045/agents/RC_C1_report.md.gz",
+      "sha256": "019aa2ff78f7d2fdd86e3b74d1930c60aadc760177bc32f1d9408e9e20b6a85a",
+      "decompressed_sha256": "e26566ce5cdbbd3ef1a3c1621109cefe294cf120d319f0a43cc09e4425054a78"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/primary.log",
+      "sha256": "c8acfd4cc0f5f7987889f6e964b09a7882f6707246fb26efe3624372f4a531cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/primary_execution.json",
+      "sha256": "8cca43c911b3be3ddd416a2bebfc04f193e0b0bd4ac05fb06e3d77c05d903985"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/receipt.json",
+      "sha256": "6b3535b3a4663130118ca3c564023c258d3de6c17e653e67f375ed1f8577ff6a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/reconstruct.py",
+      "sha256": "3a4bc67328b0f965d92a632814ec783b833083c2cdd0d7cb7567c580ad7fbd0c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/reconstruction.log",
+      "sha256": "36af1474ec6dc6ad7c9b2230bbedb438575fc04bc25268fb4d285ad77a835902"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/run_primary.py",
+      "sha256": "81014d96959c894d4d79c121ef487bfe73c700c31c2bdd3265bf8be4edee4611"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-interspecies-rigidity-20261011/source_binding_verification.json",
+      "sha256": "1bf518bfefd708690aae02682d8004cd6d8356ee675b6489c79b77ca2c4d5811"
+    },
+    {
+      "path": "docs/INTERSPECIES_COLLISION_CURRENT_RIGIDITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "6609219a9de7b7b021d4a5b89f9be87dae9c653b526f1ffe00534f9795c48740"
+    },
+    {
+      "path": "docs/INTERSPECIES_RIGIDITY_STABILITY_BOUNDED_THEOREM_NOTE_2026-10-11.md",
+      "sha256": "2edce221f7943bed0863b47438a5855f66602705cc0446c94db1178536be3d51"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "4047109bc60a70d37eec81cc47ae73f82541ead306e4dc5d6145b98cbf94ef2a"
+    },
+    {
+      "path": "logs/runner-cache/interspecies_collision_current_rigidity_2026_10_11.txt",
+      "sha256": "0422f993fd2f47011eeded47ef5588f58912d299c9dfdcb86f95561c6aab0dbd"
+    },
+    {
+      "path": "logs/runner-cache/interspecies_rigidity_stability_2026_10_11.txt",
+      "sha256": "7a3937d94db22f34eb45bc057f0cb7c224540a8d8edb078266393d42ffb56b4a"
+    },
+    {
+      "path": "scripts/interspecies_collision_current_rigidity_2026_10_11.py",
+      "sha256": "f0f4783b5df183d3b8cc960579b4d3748c2f6b9ddeacc4a2f9539476773a4cd6"
+    },
+    {
+      "path": "scripts/interspecies_rigidity_stability_2026_10_11.py",
+      "sha256": "b828ce7f6fb136d2d55cc1a19a4f9c41e735a11a4fa56355f623fabdd8115059"
+    }
+  ]
+}

@@ -4800,21 +4800,17 @@ Readings:
 - **PASS:** every listed result holds with a subluminal box, with the changed numbers stated, checked.
 - **FAIL:** a listed result fails for every subluminal box (refereed).
 - **INCONCLUSIVE:** otherwise.
-- **R13-8 (set C tuning count):** worker reading OPEN.
-  - Explicit count: 8 coefficients plus the CC for a P/T-symmetric law (e–γ speed, g–γ speed, 3 graviton anisotropies, μ_E, μ_T2, ρ + p), and 11 plus the CC generically.
-  - Scaling: N_s + 7, or 3N_s + 8.
-  - The gauge lemma: graviton mass, anisotropy and birefringence terms exist only through Ward failure.
-  - The earlier "≥ 6" undercounts.
-
-  Referee running.
-- **R14-1 (subluminal box recheck):** worker reading PASS. The listed box results survive at b = 1.4 by restriction to in-box states. The reruns are confirmed, and the rapidity budget falls by 0.357.
-  - **New: exact doublers** in R13-4's b = 1.4 law. Every particle has 7 exact relativistic copies in d = 3.
-  - **Lemma V needs re-scoping.** It covers odd-symbol bands only. Gapped even bands with 0 ≤ h′ ≤ 1 are subluminal for any b < π (R8-2's gapped band already is).
-  - **In subluminal families A ≤ 0 everywhere,** so R9-9's Ξ < 0.
-  - **R9-2's shear cancellation (t*) used a superluminal edge.** Every subluminal edge tried gives μ_E > 0.
-  - **A subluminal Wilson-box Dirac exists,** but with light doublers.
-
-  Referee running.
+- **R13-8 (set C tuning count) — CONFIRMED WITH CORRECTIONS. OPEN, not COUNTED.**
+  - **TT ranks.** In the local quadratic, first-order-on-shell-TT EFT through two derivatives, set C has TT ranks (2, 2, 5) under proper cubic rotations, and (2, 0, 4) with P and T.
+  - **The gauge kernel.** Exact linearized diffeomorphism invariance leaves a two-dimensional degree-2 kernel whose TT image is the single graviton-speed direction. The other TT structures are Ward-defect candidates.
+  - **The P,T-even count.** A valid candidate bookkeeping count is N_s + 7: eight LV conditions plus the CC for one Dirac species. It is not an established one-loop tuning count, because the witnesses are not Ward-complete and no single law generates every coefficient.
+  - **The generic count** 3N_s + 8 assumes removal of two degree-1 graviton terms. Without that assumption it is 3N_s + 10.
+- **R14-1 (subluminal box recheck) — CONFIRMED WITH CORRECTIONS. PASS.**
+  - **The subluminal completion.** A smooth, Gevrey, whole-zone subluminal b = 1.4 odd-symbol completion preserves every listed box/plateau result within its inherited scope, once the d = 2, 3 transition support shrinks to Π₂ < 0.992. Global edge stresses and shell quantities must be recomputed.
+  - **Its doublers.** It has seven exact d = 3 corner valleys with componentwise sign-flipped boosts.
+  - **Lemma V re-scoped.** A separate even gapped completion is subluminal for every b < π with no light corners. This disproves only TESTS' overbroad paraphrase of Lemma V.
+  - **The sign of Ξ and the shear.** For the specific S/G families, A ≤ 0 and the R9-9 vertex gives Ξ < 0. But neither this sign nor a nonzero conditional shear is universal across subluminal bands. The shear-cancelling profile is superluminal (d = 3 v_max = 1.734).
+  - **The Wilson construction** is rigorously subluminal for r ≤ 1/√d, with light doublers.
 
 ### C5 Round 14, items 2–3 (pre-registered 21:15Z; launched now)
 
@@ -4845,13 +4841,21 @@ Readings:
 - **DERIVED:** (a) and (b) proved in the stated subluminal class (refereed).
 - **REFUTED:** an explicit subluminal law with μ_E = 0 or Ξ ≥ 0, checked.
 - **SUGGESTED:** otherwise.
-- **R13-7 (is the e–γ split a theorem?):** worker reading SUGGESTED, with a DERIVED subclass.
-  - Theorem H: a heavy electron's speed shift does not decouple (the lattice 4/3 problem).
-  - Theorem Sgn: in 𝒬_lit⁻ (literal edge, |S| ≤ |q|, photon box inside the electron box) the split cannot vanish on a mass interval.
-  - Not class-wide: one shape tuning nulls the heavy constant.
-  - Physically, one tuning at m → 0 suffices, because Δ is smooth there.
+- **R13-7 (is the e–γ split a theorem?) — CONFIRMED WITH CORRECTIONS. SUGGESTED overall, with a DERIVED regulated literal-edge subclass.**
+  - **The subclass.** At one loop and fixed λ > 0, take a literal-edge Peierls-coupled Dirac electron with:
+    - S odd and periodic, with S(q) = q in its box;
+    - t = d² even and periodic;
+    - |S| ≤ |q|;
+    - the heavy-limit weight convex on the electron edge.
+  - **The result there:**
+    - Δ_λ(m) = c_e − c_γ is real-analytic for m > 0;
+    - δc_γ = O(m⁻³);
+    - δc_e → ¼⟨A(W² − d_x²)/(d_x²W³)⟩ < 0, a lattice 4/3 problem.
 
-  Referee running.
+    So Δ_λ cannot vanish on any open mass interval.
+  - **Extension:** to finitely many extra charged species, only along real-analytic heavy-mass trajectories where their photon contributions decouple.
+  - **Not covered:** Wilson edges, general ℓ¹ generators, partners, arbitrary photon shapes, or λ = 0.
+  - **Outside H2:** the heavy constant changes sign and can be tuned to zero. The next tested coefficient remains nonzero, and no interval-zero law is known.
 
 ### C5 Round 14, items 4–5 (pre-registered 21:15Z; launched now)
 

@@ -3512,3 +3512,31 @@ Readings:
 **R7-3:** referee relaunched after a stream error (16:03Z).
 
 **R8-3 (covariant smeared CQ):** worker readings are "class 𝒞 (covariant smeared Gaussian CQ) EXCLUDED, internally inconsistent" (the trilemma: Newton plus finite radiation imply infinite vacuum excitation), and OPEN overall, with a preferred-frame route left. Referee running (launched 16:02Z).
+
+### C5 Round 8, items 4–5 (pre-registered 16:06Z; launched now)
+
+**R8-4. An explicit lattice field Hamiltonian for invariant-mass vertices (the INV gap named by the R7-5 referee).**
+- Build an explicit, stable (bounded-below), self-adjoint, finite-per-site lattice Hamiltonian on Z³ × ℝ (fermionic allowed). Its pair-creation vertices must be compact smooth functions of the created pair's invariant mass, with every time ordering present, so that R7-5's INV spectral lemma applies.
+- Check:
+  - boundedness below (the vacuum-triple term);
+  - quasi-locality (tails);
+  - the one-loop self-energy is Lorentz-invariant inside the box, computed from the Hamiltonian itself, not from inserted Feynman expressions;
+  - radiative closure at two loops, at least in a toy: does the invariant-mass structure survive?
+
+Readings:
+- **PASS:** an explicit Hamiltonian meeting all four checks at one loop, with two-loop closure in a stated toy.
+- **FAIL:** a no-go: invariant-mass vertices with all time orderings are incompatible with a bounded-below finite-per-site Hamiltonian, in a stated class (refereed).
+- **INCONCLUSIVE:** otherwise.
+
+**R8-5. Gauge fields in box-confined Poincaré.**
+- QED's one-cone split (F2: 8.55e-3) is the decisive open item for the box route.
+- Can a lattice U(1) gauge theory on Z³ × ℝ have:
+  - a photon with exact dispersion ω = |k| in the box (non-analytic, as in R7-1);
+  - a matter coupling that is gauge-invariant and either box-confined or invariant-mass-structured;
+  - an exact Ward identity (charge conservation and gauge invariance)?
+- Compute whether the one-loop vacuum polarization and the electron self-energy keep a common light cone. Identify the obstruction if gauge invariance forbids box-supported vertices (minimal coupling via Peierls phases is point-local).
+
+Readings:
+- **PASS:** an explicit gauge-invariant box law with an exact Ward identity whose one-loop photon and electron cones agree to below 1e-15 without tuning, checked.
+- **FAIL:** a no-go that gauge invariance plus box confinement of the vertex is impossible in a stated class, or a computed unsuppressed one-loop cone split (refereed).
+- **INCONCLUSIVE:** otherwise.

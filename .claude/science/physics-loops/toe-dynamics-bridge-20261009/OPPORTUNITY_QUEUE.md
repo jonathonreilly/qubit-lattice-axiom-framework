@@ -1,8 +1,7 @@
 # Ranked current decisions
 
-1. Supplied-chain PR9490 complete at62d31663. Preserve actual failed and successful delivery evidence.
-2. Prepare accepted actual-current particle filter plus scoped Lean certificate as one regular dependent PR. Direct chain, continuum and scattering dependencies explicit.
-3. Prepare five accepted local-continuum notes as one coherent regular PR, including local UCP comparison and section quotient. No dyadic input.
-4. Finish fresh dyadic refinement review and root helper/evidence reading; decide new milestone only after exact final acceptance. Preserve state/dynamics incompatibility and conditional state-adapted alternative.
-5. Latest9476/9489 ownership read; avoid observation/gravity/event/record and Lorentz-random lattice routes. Keep ranked science scope conditional and original mathematics authorized.
-6. At16:00:52UTC start no new research; checkpoint/report actual results and limits, disable heartbeat. Never extend.
+1. Resolve the state-adapted refinement frontier: exact selected-state compatibility, same intrinsic section quotient, and geometric continuum locality/actual mixed dynamics. Preserve finite-scale Haar state/energy failures and do not predeclare closure.
+2. Execute and publish the fully reviewed five-note local-continuum milestone on exact PR9490; inspect complete source/receipt bindings and all historical failures.
+3. Prepare accepted dyadic local refinement as a regular dependent PR after exact local-continuum parent publication; original controls only, no duplicate science.
+4. Keep the scope gap explicit: intended three-dimensional/interacting realization and framework selection remain open. Active PR9476 owns random-lattice/gravity/observation routes; do not duplicate.
+5. At16:00:52UTC start no new research. Preserve any incomplete result, report outcomes and verification limits, disable the heartbeat. Never extend.

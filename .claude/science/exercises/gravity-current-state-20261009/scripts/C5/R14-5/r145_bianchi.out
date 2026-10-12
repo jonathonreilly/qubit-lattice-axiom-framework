@@ -1,0 +1,8 @@
+C1 r-component - Euler form  = 0
+C1 t-component - energy form = 0
+C2 r-component with rho_E=lam, p_E=g/N-lam : 0
+C2 N^2 * t-component = Derivative(lam(t), t) + 2*g(t)*Derivative(B(t, r), t)/(B(t, r)*N(t, r)) + g(t)*Derivative(A(t, r), t)/(A(t, r)*N(t, r))
+C2 check: equals lam' + g*theta_n*N^... -> 0
+C3 g = -p_nc(t) - rho_nc(t) - 2*Derivative(a(t), (t, 2))/a(t) + 2*Derivative(a(t), t)**2/a(t)**2    [expect -2H' - (rho_nc + p_nc)]: 0
+C3 lam' + 3H g (should vanish for any a(t)) = 0
+C4 N*R_nn(E) = -N*lam0 + 3*g0/2 -> d/dN = -lam0 (g-independent)

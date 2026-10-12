@@ -1,0 +1,40 @@
+[step] D=0.01 (alpha=D/q(uT)=0.00997) W=0.15
+   max|eps| = 1.052e+01 at u-uT = +0.487;  eps(uT+10W) = +1.896e-07;  eps(end) = +6.661e-16
+   eps(uT) = +7.3772e-03;  min normalised Hankel det = 2.96e-05 at u-uT = +0.341 (vs 5.24e-05 before)
+   complex Prony nodes at 4 of 4001 samples; min rho_hat/rho_nc = +0.7163
+   Lt/rho_nc: before = -3.495e-16, at uT+10W = +1.896e-07, end = +6.107e-16
+   lam + rho_v (=Lt): end = +0.000e+00;  lam end = -4.9900 vs -rho_v_final = -4.9900
+   g/H^2: before = +1.232e-05, peak in step = 1.201e+03, end = +6.600e-06
+   CONTROL unimodular (g=0, tuned to initial vacuum): Leff/rho_nc end = -3.076e+05 (= D/rho_nc: +3.076e+05)
+[step] D=0.05 (alpha=D/q(uT)=0.0494) W=0.3
+   max|eps| = 4.426e+00 at u-uT = +0.341;  eps(uT+10W) = +1.588e-05;  eps(end) = +6.661e-16
+   eps(uT) = +3.3431e-02;  min normalised Hankel det = 8.66e-06 at u-uT = -5.600 (vs 8.66e-06 before)
+   complex Prony nodes at 15 of 4001 samples; min rho_hat/rho_nc = -3.4262
+   Lt/rho_nc: before = +1.783e-16, at uT+10W = +1.588e-05, end = +5.982e-16
+   lam + rho_v (=Lt): end = +0.000e+00;  lam end = -4.9500 vs -rho_v_final = -4.9500
+   g/H^2: before = +2.480e-05, peak in step = 4.098e+02, end = +1.104e-05
+   CONTROL unimodular (g=0, tuned to initial vacuum): Leff/rho_nc end = -3.857e+08 (= D/rho_nc: +3.857e+08)
+[step] D=0.3 (alpha=D/q(uT)=0.278) W=0.3
+   max|eps| = 4.832e+02 at u-uT = -0.131;  eps(uT+10W) = +7.740e-05;  eps(end) = +8.882e-16
+   eps(uT) = +2.0354e-01;  min normalised Hankel det = 4.45e-06 at u-uT = +1.397 (vs 8.66e-06 before)
+   complex Prony nodes at 54 of 4001 samples; min rho_hat/rho_nc = -482.2011
+   Lt/rho_nc: before = +1.783e-16, at uT+10W = +7.740e-05, end = +7.873e-16
+   lam + rho_v (=Lt): end = +0.000e+00;  lam end = -4.7000 vs -rho_v_final = -4.7000
+   g/H^2: before = +2.480e-05, peak in step = 6.604e+02, end = +9.756e-06
+   CONTROL unimodular (g=0, tuned to initial vacuum): Leff/rho_nc end = -2.284e+09 (= D/rho_nc: +2.284e+09)
+[step] D=0.7 (alpha=D/q(uT)=0.592) W=0.3
+   max|eps| = 3.533e+01 at u-uT = -0.128;  eps(uT+10W) = +1.390e-04;  eps(end) = -3.331e-16
+   eps(uT) = +4.7975e-01;  min normalised Hankel det = 8.66e-06 at u-uT = -5.600 (vs 8.66e-06 before)
+   complex Prony nodes at 79 of 4001 samples; min rho_hat/rho_nc = -34.3294
+   Lt/rho_nc: before = +1.783e-16, at uT+10W = +1.390e-04, end = -3.857e-16
+   lam + rho_v (=Lt): end = +0.000e+00;  lam end = -4.3000 vs -rho_v_final = -4.3000
+   g/H^2: before = +2.480e-05, peak in step = 6.435e+02, end = +7.406e-06
+   CONTROL unimodular (g=0, tuned to initial vacuum): Leff/rho_nc end = -5.222e+09 (= D/rho_nc: +5.222e+09)
+[step] D=0.01 (alpha=D/q(uT)=0.00995) W=0.02
+   max|eps| = 1.396e+00 at u-uT = -0.012;  eps(uT+10W) = +9.451e-07;  eps(end) = -4.441e-16
+   eps(uT) = +6.1482e-02;  min normalised Hankel det = 1.24e-04 at u-uT = +0.081 (vs 2.48e-04 before)
+   complex Prony nodes at 1 of 4001 samples; min rho_hat/rho_nc = +0.3341
+   Lt/rho_nc: before = +1.162e-16, at uT+10W = +9.451e-07, end = -4.724e-16
+   lam + rho_v (=Lt): end = +0.000e+00;  lam end = -4.9900 vs -rho_v_final = -4.9900
+   g/H^2: before = +4.993e-06, peak in step = 4.773e+02, end = +3.644e-06
+   CONTROL unimodular (g=0, tuned to initial vacuum): Leff/rho_nc end = -1.859e+03 (= D/rho_nc: +1.859e+03)

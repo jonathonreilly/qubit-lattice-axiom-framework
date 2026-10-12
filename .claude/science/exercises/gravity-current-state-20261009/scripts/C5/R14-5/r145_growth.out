@@ -1,0 +1,15 @@
+g = 0 (OX = 0): model == GR exactly; D(1) = 0.9999999999383302 (EdS expectation ~ 1 - small init transient)
+OX = 0.003  (g = 2X):
+   k =    0.3 H0/c: D(1) = 0.99969900; GRsameH = 0.99828640; rel diff = +1.415e-03;  OX*(H0/k)^2 = 3.3e-02
+   k =    1.0 H0/c: D(1) = 0.99956401; GRsameH = 0.99828640; rel diff = +1.280e-03;  OX*(H0/k)^2 = 3.0e-03
+   k =    3.0 H0/c: D(1) = 0.99903490; GRsameH = 0.99828640; rel diff = +7.498e-04;  OX*(H0/k)^2 = 3.3e-04
+   k =   10.0 H0/c: D(1) = 0.99846747; GRsameH = 0.99828640; rel diff = +1.814e-04;  OX*(H0/k)^2 = 3.0e-05
+   k =  100.0 H0/c: D(1) = 0.99828982; GRsameH = 0.99828640; rel diff = +3.425e-06;  OX*(H0/k)^2 = 3.0e-07
+   GRsameH vs flat-EdS D(1)=0.99910...: rel = -1.714e-03  (background effect of the w=-1/3 memory fluid)
+OX = 0.3  (g = 2X):
+   k =    0.3 H0/c: D(1) = 0.96569224; GRsameH = 0.80890591; rel diff = +1.938e-01;  OX*(H0/k)^2 = 3.3e+00
+   k =    1.0 H0/c: D(1) = 0.94524156; GRsameH = 0.80890591; rel diff = +1.685e-01;  OX*(H0/k)^2 = 3.0e-01
+   k =    3.0 H0/c: D(1) = 0.87959659; GRsameH = 0.80890591; rel diff = +8.739e-02;  OX*(H0/k)^2 = 3.3e-02
+   k =   10.0 H0/c: D(1) = 0.82437607; GRsameH = 0.80890591; rel diff = +1.912e-02;  OX*(H0/k)^2 = 3.0e-03
+   k =  100.0 H0/c: D(1) = 0.80917663; GRsameH = 0.80890591; rel diff = +3.347e-04;  OX*(H0/k)^2 = 3.0e-05
+   GRsameH vs flat-EdS D(1)=0.99910...: rel = -1.911e-01  (background effect of the w=-1/3 memory fluid)

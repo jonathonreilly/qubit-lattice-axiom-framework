@@ -4900,3 +4900,18 @@ Readings:
   - The axis-perfect NN model fails off-axis.
 
   Referee running.
+- **R14-5 (averaged-lapse P-T):** worker reading VIABLE in class 𝒵; OPEN outside it.
+  - Lemma C: absorbing a vacuum change forces CMC (York-time) lattice slicing; otherwise unimodular GR and Lemma PT return.
+  - The model is GR on CMC slices with the Friedmann zero-mode replaced by the creation law, equivalently a cuscuton-type constraint fluid.
+  - The checks:
+    - no caustics (maximum principle);
+    - vacuum steps absorbed untuned (residual 1e-16);
+    - growth GR-like.
+  - Prices:
+    - a global instantaneous CMC lapse;
+    - a global reader;
+    - P-T and a clamp;
+    - an arrow (H > 0 forever);
+    - a w = −1 vacuum (the grid zero-point would kill it).
+
+  Referee running.

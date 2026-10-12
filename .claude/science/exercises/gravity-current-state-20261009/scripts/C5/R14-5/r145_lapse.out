@@ -1,0 +1,27 @@
+A. 3D periodic lumpy box
+  L=0.05 c/H, n=48, sigma_ln=2.0: rho/rhobar in [3.26e-04, 9.25e+01]; CG info=0, resid=7.0e-10
+     N in [0.998921, 1.000147]  (min N > 0: True);  rms(N-1) = 1.420e-04; rms(Phi) = 1.421e-04; corr(dN,Phi) = 1.0000
+  L=0.05 c/H, n=48, sigma_ln=3.0: rho/rhobar in [5.53e-06, 1.65e+02]; CG info=0, resid=7.2e-10
+     N in [0.998690, 1.000165]  (min N > 0: True);  rms(N-1) = 1.530e-04; rms(Phi) = 1.531e-04; corr(dN,Phi) = 1.0000
+  L=1.0 c/H, n=48, sigma_ln=3.0: rho/rhobar in [8.87e-06, 1.31e+02]; CG info=0, resid=2.2e-12
+     N in [0.719223, 1.053914]  (min N > 0: True);  rms(N-1) = 4.359e-02; rms(Phi) = 5.411e-02; corr(dN,Phi) = 0.9989
+B. spherical top-hat Delta=200, flat-space radial solution (S = Qbar so N -> 1 far away)
+  cluster R=1.5 Mpc: RH=3.41e-04: N(0)-1 = -1.7337e-05; Newtonian Phi(0) = -0.75*delta*R^2 = -1.7346e-05; N(R)-1 = -1.1555e-05
+  galaxy R=0.25 Mpc: RH=5.68e-05: N(0)-1 = -4.8179e-07; Newtonian Phi(0) = -0.75*delta*R^2 = -4.8182e-07; N(R)-1 = -3.2118e-07
+C. lapse-collapse TOY (flat 3-metric): fixed mass mu = 1.5*delta*R^3 = 1e-6, R decreasing
+  R=1e-02: compactness Q_in R^2 = 5.50e-04: N(0) = 9.9995e-01, N(R) = 0.999967  (positive: True)
+  R=1e-03: compactness Q_in R^2 = 1.00e-03: N(0) = 9.9950e-01, N(R) = 0.999668  (positive: True)
+  R=1e-04: compactness Q_in R^2 = 1.00e-02: N(0) = 9.9502e-01, N(R) = 0.996681  (positive: True)
+  R=1e-05: compactness Q_in R^2 = 1.00e-01: N(0) = 9.5200e-01, N(R) = 0.967949  (positive: True)
+  R=1e-06: compactness Q_in R^2 = 1.00e+00: N(0) = 6.4805e-01, N(R) = 0.761595  (positive: True)
+  R=1e-07: compactness Q_in R^2 = 1.00e+01: N(0) = 8.4507e-02, N(R) = 0.315097  (positive: True)
+  R=1e-08: compactness Q_in R^2 = 1.00e+02: N(0) = 9.0800e-05, N(R) = 0.100000  (positive: True)
+D. Yukawa range l = Qbar^-1/2 of the lapse Green's function (instantaneous on the slice)
+  radiation: Qbar = 6.000 H^2 -> l = 0.408 c/H
+  EdS matter: Qbar = 4.500 H^2 -> l = 0.471 c/H
+  today, Om=0.3, w=-0.95 smooth DE: Qbar = 1.508 H^2 -> l = 0.814 c/H
+   sufficient positivity: Qt(x) >= kappa*rhobar_nc + (kappa/2)(rho+3p)_nc(x) (Lt = 0); dust/radiation >= 0; smooth DE gives (3/2)(1+w) rho_DE >= 0 iff w >= -1
+   DESI-CPL a=1.0: w=-0.750, Qt_min(void, rho_m=0)/(3H0^2 units) = 1.6875 (>0: True)
+   DESI-CPL a=0.7: w=-1.008, Qt_min(void, rho_m=0)/(3H0^2 units) = 2.5955 (>0: True)
+   DESI-CPL a=0.5: w=-1.180, Qt_min(void, rho_m=0)/(3H0^2 units) = 6.6207 (>0: True)
+   DESI-CPL a=0.33: w=-1.326, Qt_min(void, rho_m=0)/(3H0^2 units) = 24.2828 (>0: True)

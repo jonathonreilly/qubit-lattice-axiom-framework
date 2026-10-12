@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-12T14:36:03.183999+00:00",
+  "files": {
+    "AUTHOR_DERIVATION_v1.md": "05f7c3ea85cc01785750e369f44424d94ebf56b6e778b3b25e94cff1eb1d757c",
+    "onshell_probe.py": "71d84d39e1aa400aaaf4b33654fd5041b384d271ed3e06d1314c9fc4a7ed2937",
+    "probe-m001-n16.json": "6665cebce4fb43de1369a38681aa5c2895ca6f0eb3ec490499358b7d54f36149"
+  },
+  "early_checker_exposure": "First structural mass-counterterm message received after onshell_probe.py implementation and first numerical run; final exposition froze afterward. Second spectral-edge message also received before exposition; radiation formula independently derived by author before any checker rate formula was received."
+}

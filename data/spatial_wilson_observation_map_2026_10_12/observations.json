@@ -1,0 +1,248 @@
+{
+  "schema": "campaign-observation-record-v1",
+  "access_date_utc": "2026-10-12",
+  "status": "Published summary comparators; no reconstructed likelihood, detector model or joint fit",
+  "disclosure": "Known public data guided the finite candidate choice. No blind validation or independent prediction is claimed. All numerical lattice controls are synthetic.",
+  "sources": {
+    "timing": {
+      "title": "Stringent Tests of Lorentz Invariance Violation from LHAASO Observations of GRB 221009A",
+      "url": "https://arxiv.org/abs/2402.06009v3",
+      "artifact_url": "https://arxiv.org/html/2402.06009v3",
+      "version": "v3, revised 2026-02-13",
+      "sha256": "68223e14cd290efad3dbda6077301e936024e1a2348093aead06f1ee8be85f4b",
+      "items": "equations (1)-(3), (6)-(8); Table 1, ML MINOS row",
+      "forward_model": "Evolving GRB afterglow, EBL attenuation, detector response and FLRW propagation; bias calibration by shuffled data.",
+      "limitations": "One published subluminal quadratic bound is used. It is not combined with the calibrated or CCF intervals or turned into a Gaussian likelihood. The quoted 6.9e11 GeV value agrees with v2."
+    },
+    "codata": {
+      "title": "NIST 2022 CODATA recommended values, current database on access date",
+      "url": "https://physics.nist.gov/cuu/Constants/",
+      "artifact_url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "version": "2022 adjustment; 2026 adjustment not substituted",
+      "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "items": "electron mass energy equivalent in MeV; fine-structure constant; inverse fine-structure constant; SI defining constants",
+      "limitations": "Adjusted parameters, not raw direct measurements. Correlations are not reproduced here; no joint calibration likelihood is formed."
+    },
+    "fan": {
+      "title": "Electron magnetic moment from a Penning-trap frequency ratio",
+      "url": "https://arxiv.org/abs/2209.13084v2",
+      "version": "v2, 2022-12-07; PRL130071801, 2023",
+      "sha256": "1f27dbaef43d35c347186e1832b3cc6d896d1f3de195e16795ee9f7dc0c8dbf0",
+      "artifact_filename": "electron_moment_v2.pdf",
+      "items": "PDF pages1-4; equations3-6 andTableI",
+      "limitations": "Trap invariance, cavity and drive corrections are supplied; same-measurement extracted alpha in equation8 is not an independent datum."
+    },
+    "parker": {
+      "title": "Measurement of the fine-structure constant as a test of the Standard Model",
+      "url": "https://arxiv.org/abs/1812.04130v1",
+      "version": "v1, 2018",
+      "sha256": "a0cca84bec039ea92cc6060c7b0b384f2b093aa2c7e8ae820bbb6e0108a4e61b",
+      "artifact_filename": "parker_recoil_v1.pdf",
+      "items": "Main pages1-2; alpha-squared extraction equation, recoil and uncertainty values",
+      "limitations": "Atomic recoil, cesium/electron mass ratio and Rydberg theory enter the alpha extraction. Joint covariance with the rubidium result is not available."
+    },
+    "morel_preview": {
+      "title": "Determination of the fine-structure constant with an accuracy of81 parts per trillion",
+      "url": "https://doi.org/10.1038/s41586-020-2964-7",
+      "version": "Nature588,61-65(2020); accessed publisher preview",
+      "sha256": "ea73b37a80201c3c7dafc5d390866834480e2decf42af62300098382ec29a076",
+      "artifact_filename": "morel_nature_2020.pdf",
+      "items": "Abstract only for alpha inverse137.035999206(11)",
+      "limitations": "The downloaded27-page preview is not the full five-page paper; no raw data or reproduced likelihood."
+    },
+    "morel_proceedings": {
+      "title": "Same-collaboration recoil extraction, Moriond2021 proceedings",
+      "url": "https://hal.science/hal-03443551/file/clade.pdf",
+      "version": "HAL03443551v1, 2021-11-27",
+      "sha256": "1eb80a32818a361003dc426520efbad02cdbd999b41f16badfc7c4c900ec06c6",
+      "artifact_filename": "morel_recoil_2020.pdf",
+      "items": "Pages2-6; equation2 and systematicTable1",
+      "limitations": "This is the proceedings, not the Nature article; filename in runtime is historical. Shared mass/Rydberg uncertainties are not independent validations."
+    },
+    "hess": {
+      "title": "High-statistics measurement of the cosmic-ray electron spectrum with H.E.S.S.",
+      "url": "https://arxiv.org/abs/2411.08189v1",
+      "version": "v1, 2024-11-12; PRL133221001",
+      "sha256": "e7e4e588100263a15bb0c010d8bf0a4a2d493c6558465ab836e2cc4269edf184",
+      "artifact_filename": "hess_electrons_v1.pdf",
+      "items": "Main pages4-6 and supplementTableI",
+      "limitations": "No hadron subtraction. Above3TeV dominant hadron contamination cannot be excluded; highest-energy flux is an upper limit on true electrons. Event directions/response and covariance are not supplied here."
+    },
+    "pdg": {
+      "title": "PDG2026 electron listing",
+      "url": "https://pdg.lbl.gov/2026/listings/rpp2026-list-electron.pdf",
+      "version": "2026 listing, PDF created2026-06-01",
+      "sha256": "a49a0b983ab4e63070b0535e0150a49c5cfe7ba29987f6403b664aa3f177e284",
+      "artifact_filename": "pdg2026_electron.pdf",
+      "items": "Pages1-3 mass/anomaly entries and interpretation",
+      "limitations": "Average and Fan single measurement remain distinct; no covariance was supplied to construct another average."
+    },
+    "volkov": {
+      "title": "Electron anomalous magnetic moment tenth-order QED calculation",
+      "url": "https://arxiv.org/abs/2404.00649v2",
+      "version": "v2, 2024-05-27",
+      "sha256": "daeb1ff7d4fd3a3677f1496c763434291ed8593177e59ae46608b22c465d00b7",
+      "artifact_filename": "volkov_qed_v2.pdf",
+      "items": "Pages1-3 equations1-5",
+      "limitations": "TotalC10=5.891(61), no-lepton-loop subset6.828(60), and g2-extracted alpha are different objects. None is used for an unperformed SM residual fit."
+    },
+    "aoyama_revision": {
+      "title": "Revised tenth-order QED Set V contribution",
+      "url": "https://arxiv.org/abs/2412.06473v3",
+      "version": "v3, 2025-03-14",
+      "sha256": "72c20f7909ce7c6e86d8ea3477aaa087011b0bbcfa75f9462f8672ff127a7af0",
+      "artifact_filename": "qed_revision_v3.pdf",
+      "items": "Pages1-2 and sectionVII page6",
+      "limitations": "Revised SetV6.800(128) is a subset, not totalC10. Not combined statistically with another subset or treated as an independent observation."
+    },
+    "hashimoto": {
+      "title": "Relativistic heavy quarks on the anisotropic lattice",
+      "url": "https://arxiv.org/abs/hep-lat/0302012v1",
+      "version": "v1, 2003-02-20",
+      "sha256": "de01d75d38f19d02fca1a1d16df1c1d92f8d77b48601826ef03c5381037bb4f6",
+      "artifact_filename": "hashimoto_hamiltonian_v1.pdf",
+      "items": "Pages5-7,11-18,21-24; equations2.2,4.3,4.31,4.38-4.39,A11,A13-A20",
+      "limitations": "General vertices are convention context; fixed r_s/xi=1 specialization differs from conventional r_s=1 SW Hamiltonian limit. No numerical table imported."
+    },
+    "angelides": {
+      "title": "Mass renormalization of the Schwinger model with Wilson and staggered fermions",
+      "url": "https://arxiv.org/abs/2211.12169v3",
+      "version": "v3, 2023-10-18",
+      "sha256": "7890930c237e418814de5c362b84f2f70e78a53491f361eeeb8e6e859fb1e8cb",
+      "artifact_filename": "angelides_mass_v3.pdf",
+      "items": "Pages2-5; Hamiltonian, Gauss constraint and equation11",
+      "limitations": "Different1+1-dimensional model; context only, no3+1 coefficient imported."
+    }
+  },
+  "data": [
+    {
+      "id": "timing_EQG2_subluminal",
+      "source": "timing",
+      "role": "comparator",
+      "value": 690000000000.0,
+      "unit": "GeV",
+      "type": "published 95 percent lower bound, ML MINOS quadratic subluminal case",
+      "eta2_interval": [
+        -0.31,
+        0.32
+      ],
+      "eta2_best": 0.01,
+      "convention": "v/c=1-(3/2)(E/EQG2)^2 to leading order",
+      "uncertainty": "One-sided model-dependent bound; no Gaussian error or raw likelihood inferred.",
+      "covariance": "One analysis of one event; alternative calibration/CCF rows are not independent data."
+    },
+    {
+      "id": "timing_cosmology",
+      "source": "timing",
+      "role": "nuisance",
+      "z": 0.151,
+      "H0": 67.36,
+      "H0_unit": "km s^-1 Mpc^-1",
+      "Omega_m": 0.315,
+      "type": "flat LambdaCDM convention in the published timing extraction",
+      "uncertainty": "Fixed by that extraction; no independent cosmological fit performed."
+    },
+    {
+      "id": "electron_rest_energy",
+      "source": "codata",
+      "role": "calibration",
+      "value": 0.00051099895069,
+      "unit": "GeV",
+      "standard_uncertainty": 1.6e-13,
+      "type": "CODATA adjusted electron rest energy",
+      "scale_scheme": "physical rest energy; not a bare lattice mass or an MSbar running parameter",
+      "covariance": "CODATA correlated adjustment; threshold sensitivity uses this datum alone."
+    },
+    {
+      "id": "alpha",
+      "source": "codata",
+      "role": "calibration",
+      "value": 0.0072973525643,
+      "standard_uncertainty": 1.1e-12,
+      "type": "low-energy fine-structure constant",
+      "scale_scheme": "explicit tree-level coupling calibration; running and matching corrections not computed",
+      "covariance": "Not assumed independent of electron calibration in a statistical fit."
+    },
+    {
+      "id": "fan_g_over_2",
+      "source": "fan",
+      "role": "comparator",
+      "value": 1.00115965218059,
+      "standard_uncertainty": 1.3e-13,
+      "unit": "dimensionless",
+      "type": "spin/cyclotron frequency ratio after trap/cavity extraction",
+      "covariance": "Single2023 value only; shared cavity systematic across eleven fields. No average with2008; alpha extracted from this same datum is not counted again."
+    },
+    {
+      "id": "cesium_h_over_m",
+      "source": "parker",
+      "role": "comparator",
+      "value": 3.0023694721e-09,
+      "standard_uncertainty": 1.2e-18,
+      "unit": "m^2/s",
+      "type": "atom-interferometer recoil extraction",
+      "covariance": "Same experiment as cesium alpha below; never two independent likelihood factors."
+    },
+    {
+      "id": "cesium_inverse_alpha",
+      "source": "parker",
+      "role": "comparator",
+      "value": 137.035999046,
+      "standard_uncertainty": 2.7e-08,
+      "unit": "dimensionless",
+      "scale_scheme": "low-energy/on-shell coupling extracted via alpha^2=(2R_infinity/c)(mCs/me)(h/mCs)",
+      "covariance": "Shared mass and Rydberg calibration with other extractions; full joint covariance unavailable."
+    },
+    {
+      "id": "rubidium_inverse_alpha",
+      "source": "morel_preview",
+      "role": "comparator",
+      "value": 137.035999206,
+      "standard_uncertainty": 1.1e-08,
+      "unit": "dimensionless",
+      "scale_scheme": "low-energy/on-shell coupling from recoil and supplied atomic/mass/Rydberg model",
+      "covariance": "Conflicting with Cs determination; kept separate, no weighted average. Proceedings source documents extraction and systematics."
+    },
+    {
+      "id": "hess_candidate_endpoint",
+      "source": "hess",
+      "role": "discovery",
+      "value": 40000.0,
+      "unit": "GeV",
+      "type": "electron-like candidate sample endpoint",
+      "interpretation": "not an identified electron-survival energy",
+      "uncertainty": "10percent quoted energy-scale systematic; dominant hadron contamination above3TeV not excluded. No event-specific direction or energy likelihood imported."
+    },
+    {
+      "id": "hess_candidate_count",
+      "source": "hess",
+      "role": "comparator",
+      "value": 265574,
+      "unit": "events",
+      "type": "electron-like sample, not all identified electrons",
+      "covariance": "Same sample as endpoint; not used for a statistical fit."
+    }
+  ],
+  "exact_SI_definitions": {
+    "h_J_s": 6.62607015e-34,
+    "c_m_per_s": 299792458,
+    "elementary_charge_C": 1.602176634e-19,
+    "GeV_per_eV": 1e-09,
+    "role": "calibration"
+  },
+  "selection_and_complexity": {
+    "frozen_grammar": [
+      "relativistic null",
+      "w=1 spatial Wilson with a^2=1-mu tree matching",
+      "w=1 unretuned a=1 comparator",
+      "w=0 doubling comparator"
+    ],
+    "fixed_model_choices": "Continuous time, literal minimal links, Wilson w=1, noncompact Maxwell/Gauss sector, canonical quantum theory and vacuum. No fitted Wilson/clover coefficient.",
+    "supplied_calibrations": "Mass, charge and time/length units; an orientation and completion scale remain candidate parameters. Mass subtraction changes the existing mass-calibration map, not automatically the datum count.",
+    "ranking_rule": "Prefer the simpler relativistic null until an actual cross-family likelihood improvement is established. No numerical complexity score without a justified likelihood and selection measure.",
+    "fit_count": 0,
+    "blind_validation_count": 0,
+    "new_empirical_prediction_count": 0,
+    "empirical_exclusion_count": 0
+  }
+}

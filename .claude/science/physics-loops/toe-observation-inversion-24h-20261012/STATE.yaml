@@ -1,0 +1,172 @@
+{
+  "campaign_id": "toe-observation-inversion-24h-20261012",
+  "goal": "Reverse engineer candidate TOE mechanisms from observations with explicit inference inputs and falsifiable predictions",
+  "mode": "campaign",
+  "delivery": "milestone",
+  "runtime_hours": 24,
+  "started_at": "2026-10-12T11:06:03.933807+00:00",
+  "deadline_at": "2026-10-13T11:06:03.933807+00:00",
+  "checkpoint_interval_minutes": 30,
+  "deep_block_minutes": 90,
+  "base_commit": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "branch": "codex/toe-observation-inversion-24h-20261012",
+  "workdir": "/Users/jonBridger/.codex/worktrees/toe-observation-inversion-24h-20261012/New Axioms Lets Go",
+  "runtime_directory": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012",
+  "skill_source_revision": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "actual_current_surface_status": "open",
+  "target_claim_type": "open_gate",
+  "trace_class": "frontier_discovery",
+  "reachability_to_target": "unknown_frontier",
+  "conditional_surface_status": null,
+  "hypothetical_axiom_status": null,
+  "admitted_observation_status": null,
+  "claim_type_reason": "The broad inverse problem remains open; a conditional exact two-body threshold lemma is independently supported.",
+  "audit_required_before_effective_retained": true,
+  "bare_retained_allowed": false,
+  "cycle_count": 2,
+  "milestone_count": 2,
+  "active_route": "Interacting Wilson candidate: physical magnetic response and independent gamma-ray timing comparison without refitting",
+  "hard_residual": "Close or quantitatively bound on-shell mass, relative speed, magnetic matching and source/detector response before an independent observational prediction. Assess Fan magnetic response plus separate Cs/Rb recoil calibrations followed by sub-100-GeV timing; this split is not frozen yet.",
+  "review_disposition": "Milestone1 canonical science externally landed. Milestone2 source passed prior ordinary review and v6 gates, delivered as PR9494. Cancellation handoff and raw interrupted records are preservation-only additions; no final-head independent review or formal audit claimed.",
+  "provisional_dependencies": [
+    {
+      "artifact": "THRESHOLD_DERIVATION.md",
+      "state": "focused independent exact-support",
+      "checked_sha256": "e93937ca35136c42c7776ad8ca74abc5032249d2646c566d173967186349c12a"
+    },
+    {
+      "artifact": "THRESHOLD_SUPPLEMENT.md",
+      "state": "focused independent exact-support; domain correction applied",
+      "checked_sha256": "3ff2c897635b3be19672ece158d7054d915f031251f5d377bdf0abdf68aeecc8"
+    },
+    {
+      "artifact": "INTERACTION_RATE_DERIVATION.md",
+      "state": "focused independent agreement; canonical normalization and radiative scope corrected",
+      "checked_sha256": "e35807fa55d31c2a0db03b116c1b2db566a7c53d72a729b1963e4b8a882ac5d7"
+    },
+    {
+      "artifact": "NEAR_THRESHOLD_RATE.md",
+      "state": "focused independent agreement on exact onset; old-chi overlap corrected",
+      "checked_sha256": "f8520df52ab8efb66580415e1db1a02c7eef7c165c4eb311c8ea00ed21119164"
+    },
+    {
+      "artifact": "WILSON_MAGNETIC_DERIVATION.md",
+      "state": "focused independent Landau and exact lattice agreement; variable-w scope caveat, actual w=1 target unchanged",
+      "checked_sha256": "da5b4e8ccaaec8a0e2bd2078a949494fa7516970f6f8fbf853d78e6e49f363a9"
+    },
+    {
+      "artifact": "WILSON_CHERENKOV_PRELIMINARY.md",
+      "state": "focused independent agreement on fixed-margin full-torus asymptotic result and exact axis exclusion; explicit finite-r limitations",
+      "checked_sha256": "312159e64cc992e7bbbc31c8bdcb063a21a11a8134731b5079c4d02c64b556ca"
+    },
+    {
+      "artifact": "WILSON_EMISSION_RATE_DERIVATION.md",
+      "state": "focused independent agreement on exact vertex, canonical normalization, fixed-margin asymptotic rate and uniform soft endpoint; final comparison1d727c379df4ad3ed47258271668daab0d38e638ac2a529b6e1420eccde7e9b5",
+      "checked_sha256": "8be35e421e4a22a145d617554e4a6fdc79d534431c713c3d34e8ffcfcf2e8c9f"
+    },
+    {
+      "artifact": "WILSON_MASS_DERIVATION.md",
+      "state": "focused independent Coulomb-gauge and primary-paper agreement; final comparisond0d3662f26c9a53133aa510fded8d41bbe7acf32ec9705b3b0b0034e9ffcf64d",
+      "checked_sha256": "a36aca7cc5dbf0336ef602ba6f2ba7fa9da674d90ede6d832fcba502c9a3ef97"
+    },
+    {
+      "artifact": "WILSON_KINETIC_PRELIMINARY.md",
+      "state": "focused independent pre-exposure derivation and post-exposure comparison complete; local matching only, final4ccd8218f066d5f41d2466ecb05b9e1b251d355cd545db6cd4b1bcc2d98e4983",
+      "checked_sha256": "c79a47d9e524de08ceda689e8afa3e0e388ced94f874d8b65833ee5390d0692d"
+    },
+    {
+      "artifact": "WILSON_KINETIC_LIMIT_PROOF.md",
+      "state": "focused comparison supports uniform subtraction, gauge limit and local-operator scope; not physical pole speed",
+      "checked_sha256": "034463e0729dee100d871e82fae30edb8fb8f51f0bfbceaf1ef0cd57a6b779b9"
+    }
+  ],
+  "open_imports": [
+    "supplied free photon and massive Dirac symbols",
+    "physical photon/electron and clock identification",
+    "weak gauge interaction and vacuum",
+    "primary experimental extraction models",
+    "renormalized relative photon/electron speed matching",
+    "naive Dirac species identification and atmospheric shower response",
+    "squared-amplitude transition rule and golden-rule interpretation",
+    "Wilson coefficient and species-dependent bare speed matching",
+    "magnetic resonance and atomic recoil extraction bridges",
+    "absence or matching of independent Pauli operators",
+    "noncompact Maxwell Gauss/Coulomb sector, filled negative-band vacuum and literal-link quantum action for virtual processes"
+  ],
+  "imports_inventory_complete": true,
+  "no_go_routes": [],
+  "files_touched": [
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/ASSUMPTIONS_AND_IMPORTS.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/PR_BACKLOG.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/CLAIM_STATUS_CERTIFICATE.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/APPROACH_REGISTRY.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/NO_GO_LEDGER.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/TRACE_GATE.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/GOAL.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/REVIEW_HISTORY.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/OPPORTUNITY_QUEUE.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/LITERATURE_BRIDGES.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/ARTIFACT_PLAN.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/HANDOFF.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/ROUTE_PORTFOLIO.md",
+    "docs/PHOTON_ELECTRON_LATTICE_THRESHOLD_AND_RATE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+    "scripts/photon_electron_threshold_and_rate_2026_10_12.py",
+    "data/photon_electron_inverse_2026_10_12/observations.json",
+    "outputs/photon_electron_inverse_2026_10_12/results.json",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_TARGET.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_MAGNETIC_DERIVATION.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_CHERENKOV_PRELIMINARY.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_CHERENKOV_AXIS_PROOF.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_SOURCE_SCOPE.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_PRIOR_ART.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_EMISSION_RATE_DERIVATION.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_EMISSION_ENDPOINT_PROOF.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_RADIATIVE_TARGET.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_MASS_DERIVATION.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_KINETIC_PRELIMINARY.md",
+    "docs/SPATIAL_WILSON_OBSERVATION_MAP_AND_MASS_MATCHING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/WILSON_KINETIC_LIMIT_PROOF.md",
+    "data/spatial_wilson_observation_map_2026_10_12/observations.json",
+    "scripts/spatial_wilson_observation_map_2026_10_12.py",
+    "outputs/spatial_wilson_observation_map_2026_10_12/results.json"
+  ],
+  "pr_urls": [
+    "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9489",
+    "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9494"
+  ],
+  "next_exact_action": "None: explicit user cancellation. Preserve reviewed milestone and interrupted physical-bridge records, finalize PR delivery and archive; no further discovery.",
+  "stop_condition": "Explicit user cancellation received 2026-10-12; campaign will not restart.",
+  "lock_mode": "explicit campaign-local cooperative lock plus exclusive supervisor guard",
+  "packaging_at": "2026-10-13T10:51:03.933807+00:00",
+  "last_checkpoint_at": "2026-10-12T14:55:39.915632+00:00",
+  "current_main_searched": "c5f02064145de24ea44d7f4047b6cce091053cb5",
+  "current_block": "species-resolved Wilson completion across propagation and magnetic response",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "max",
+  "last_author_checks": {
+    "primary_runner": "PASS=6 FAIL=0",
+    "mutation_checks": "six load-bearing mutations failed intended assertions",
+    "fitted_datasets": 0,
+    "empirical_exclusions": 0,
+    "artifact_preflight": "v4 mechanical_status ok; exact reviewed tree8cd279051efa4ac6f38a5c1dee1e001e4770b2fb",
+    "combined_gate": "v4 pipeline, strict lint, changed-evidence exit0; checked1 failures0 control_failures0; immutable runtime combined-v4 receipt",
+    "wilson_rate": "160 exact Ward/eigenspinor controls, 15 decreasing-r shell comparisons plus one quadrature refinement, six infrared-cutoff repeats, 28 sequential-onset integral controls; author checks, synthetic, no nature data.",
+    "wilson_mass": "120 matrix/gauge/naive cases, 20 frequency integrations, Duffy orders12-96 and direct cube24-160; independent18 prepass and7 comparison checks distinct.",
+    "wilson_kinetic": "640 original matrix derivative,160 Ward,160 interband and32 matrix frequency controls; regulator/cubature and exact static-response checks. Independent derivation and comparison complete.",
+    "wilson_paired_runner": "PASS8 FAIL0 after repairing list input and nested helper names while assembling the standalone runner; eight intentional load-bearing mutations each failed its intended assertion.",
+    "wilson_milestone_combined": "combined-v3: pipeline exit0 (265.8s), strict lint exit0, changed-evidence exit0; source tree4d8c9ddf81f50e49e9f0b082dd78b4617fbee6b9. Final citation manifest and scheduling records require final binding."
+  },
+  "milestone_review_base": "f1147ea1fa3fab12bf56ace37b62083cc2bfa405",
+  "user_priority": {
+    "id": "wilson-independent-prediction-20261012",
+    "requested_at": "2026-10-12T13:59:14.435396+00:00",
+    "status": "cancelled_before_observational_test",
+    "instruction_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/USER_PRIORITY.md",
+    "supersedes": "post-Wilson pivot to unrelated observation families",
+    "target": "Wilson candidate: quantitative prediction against independent observations without refitting",
+    "last_notice_restored_at": "2026-10-12T14:10:44.106249+00:00",
+    "acknowledged_at": "2026-10-12T14:14:29.898967+00:00"
+  },
+  "campaign_status": "cancelled",
+  "cancelled_at": "2026-10-12T14:49:05.752804+00:00"
+}

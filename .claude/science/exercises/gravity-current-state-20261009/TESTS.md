@@ -4921,3 +4921,42 @@ Readings:
   - A superluminal edge buys nothing a subluminal one can't.
 
   Referee running.
+
+### C5 Round 15, items 1–3 (pre-registered 21:41Z; launched now)
+
+**R15-1. The CMC lattice-time model (R14-5): causality, stability and strong coupling of the constraint sector, and the vacuum it needs.** Conditional on R14-5, whose referee is running.
+- R14-5's worker builds GR on CMC (York-time) slices, with the Friedmann zero-mode replaced by a P-T creation law. That is a cuscuton-type constraint fluid with an instantaneous elliptic lapse.
+- Test:
+  - (a) Is there superluminal information transfer through the instantaneous lapse when g ≠ 0? (The cuscuton literature argues no.)
+  - (b) Ghosts, gradient instabilities or strong coupling of the extra scalar around FRW and around a static star. Compare with the projectable/non-projectable Hořava pathologies (RN L3).
+  - (c) Does the CMC foliation exist through collapse to black holes?
+  - (d) Can it coexist with the box route's grid zero-point vacuum (w ≥ 0, R11-3)? R14-5 says the model needs a w = −1 vacuum. Is there a pairing or partition that makes the vacuum w = −1?
+
+Readings:
+- **PASS:** (a)–(c) clean (no signalling, no ghost or gradient instability, foliation exists through collapse) and (d) resolved or priced, checked.
+- **FAIL:** a refereed pathology (signalling, ghost, instability) in the stated class.
+- **INCONCLUSIVE:** otherwise.
+
+**R15-2. Set A E1: the spin-2 conserved-noise assembly for the repaired zero-first-moment gain.**
+- R13-6 and R14-2 (worker): E1 with a zero-first-moment gain passes every stated test, but the spin-2 conserved-noise assembly is missing, along with exact finite-start CP and ḣ regularity.
+- Build the spin-2 (TT plus gauge) noise kernel with transverse conserved noise, the zero-first-moment gain, and a finite start. Check:
+  - CP;
+  - Bianchi compatibility (conserved noise source);
+  - TT weights vs the assumed O(1);
+  - the PPN α₁/α₂ at second order;
+  - the budget.
+
+Readings:
+- **VIABLE:** an explicit spin-2 E1 model passing every stated test, checked.
+- **EXCLUDED:** a refereed inconsistency (e.g. conserved spin-2 noise is impossible with the repaired gain).
+- **OPEN:** otherwise.
+
+**R15-3. Graviton production: the auxiliary-irrep escape from X-G / G-mix.**
+- R13-2 (X-G, refereed) and R14-4 (G-mix, worker) cover Gaussians on exactly the six symmetric-tensor pairs. The named open escape is extra canonical pairs (auxiliary irreps), which could absorb the partners.
+- With extra local fields (vectors or scalars, or a second tensor) under the proper cubic group, can a PSD local Gaussian have exactly two linear TT branches and no other gapless branch?
+- If so, is it finite-slot realizable?
+
+Readings:
+- **PRODUCED:** an explicit PSD local Gaussian with auxiliary fields and only the two TT branches gapless and linear, checked.
+- **EXCLUDED:** a refereed no-go covering a stated auxiliary class.
+- **OPEN:** otherwise.

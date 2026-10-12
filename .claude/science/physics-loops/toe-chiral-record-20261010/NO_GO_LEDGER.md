@@ -621,3 +621,13 @@ each of the two generators. The swapped-dot coordinate is `t` or `-t`
 and the scaled coordinate is `2r+2s`. It does not classify both
 swapped-dot generators, and it does not classify the 300-dimensional
 affine space. This is not an N-gate no-go.
+
+Cycle 80 prunes the reading that some triple of positive integers
+(t, r, s), added as t times both swapped-dot generators plus r times
+the plus cap and s times the minus cap, has a chirality coefficient
+with a nonzero ten-kernel partner. On every ordered height pair, every
+positive integer triple has partner rank 10 at every chirality
+coefficient. The swapped-dot coordinate is `0` and the scaled
+coordinate is `2r+2s`. It does not classify unequal scales of the two
+swapped-dot generators, and it does not classify the 300-dimensional
+affine space. This is not an N-gate no-go.

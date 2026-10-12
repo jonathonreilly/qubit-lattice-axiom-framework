@@ -938,3 +938,17 @@ Clearing the positive scale gives (2r+t)^20 or r^20 or r^10.
 Family not used: t times both swapped-dot generators plus the two cap
 multiples. The case t = 1 of that sum is settled. The
 300-dimensional affine space is not this family.
+
+Cycle 80 target contract: whether every triple of positive integers
+(t, r, s) gives partner rank 10, at every chirality coefficient, for
+t times both swapped-dot generators plus r times the plus cap and s
+times the minus cap.
+
+Family used: t times both swapped-dot generators plus every pair of
+positive cap multiples. The swapped-dot coordinate is 0 and the scaled
+coordinate is 2r+2s. Clearing the positive scale gives (2r+t)^20 or
+r^10.
+
+Family not used: unequal positive scales of the two swapped-dot
+generators plus the two cap multiples. The case t = u is settled. The
+300-dimensional affine space is not this family.

@@ -544,3 +544,13 @@ integer t. Each lies in neither ratio span and outside the even space.
 Clearing the positive scale gives (2r+t)^20 or r^20 or r^10. None
 depends on s. Both swapped-dot generators are not in this count. The
 ten-kernel coefficient span is not classified.
+Cycle 80 shows that t times both swapped-dot generators plus r times
+the plus cap and s times the minus cap has partner rank 10 at every
+chirality coefficient on every ordered height pair, for every triple of
+positive integers (t, r, s). The swapped-dot coordinate is 0. The
+swapped coordinate is -2t and the orthogonal coordinate is 2t. The
+matched and scaled coordinates are 2r+2s. The sum lies in neither ratio
+span and outside the even space. Clearing the positive scale gives
+(2r+t)^20 or r^10. None depends on s. Unequal scales of the two
+swapped-dot generators are not in this count. The ten-kernel
+coefficient span is not classified.

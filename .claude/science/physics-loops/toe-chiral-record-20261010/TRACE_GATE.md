@@ -1385,3 +1385,21 @@ every pair of positive cap multiples has partner rank 10 at every
 chirality coefficient. The swapped-dot coordinate is t or -t and the
 scaled coordinate is 2r+2s. Both swapped-dot generators stay open. The
 ten-kernel coefficient span stays open.
+
+## Cycle 80
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether every quadruple of positive integers (t, u, r, s) gives partner rank 10, at every chirality coefficient, for t times the plus swapped-dot generator plus u times the minus swapped-dot generator plus r times the plus cap and s times the minus cap. The case t = u is settled. Do not claim the ten-kernel coefficient span is settled."
+```
+
+On every ordered height pair, t times both swapped-dot generators plus
+every pair of positive cap multiples has partner rank 10 at every
+chirality coefficient. The swapped-dot coordinate is 0 and the scaled
+coordinate is 2r+2s. Unequal scales of the two generators stay open.
+The ten-kernel coefficient span stays open.

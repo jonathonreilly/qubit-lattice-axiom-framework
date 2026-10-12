@@ -1139,13 +1139,32 @@ not this certificate. Both swapped-dot generators are not in this
 count. The ten-kernel coefficient span is not classified. Runner
 `PASS=10 FAIL=0`.
 
+Cycle 80. On every ordered height pair, `t` times both swapped-dot
+generators plus `r` times the plus cap and `s` times the minus cap has
+partner rank 10 at every chirality coefficient, for every triple of
+positive integers `(t, r, s)`. The swapped-dot coordinate is `0`, the
+swapped coordinate is `-2t`, and the orthogonal coordinate is `2t`.
+The transverse-sign and sign-product coordinates are `s-r`, and the
+matched and scaled coordinates are `2r+2s`. The sum lies in neither
+ratio span and outside the even space. The partner row at
+`(t, r, s, c)` is `t` times the row at `(1, r/t, s/t, c/t)`. The
+unit-scale elimination polynomial is `(2r+1)^20` on `(1, 2)`, `(2, 1)`,
+and `(3, 1)`, and `r^10` on `(1, 3)`, `(2, 3)`, and `(3, 2)`. Clearing
+the positive scale gives `(2r+t)^20` on the source-same pairs and
+`r^10` on the other three. None depends on `s`, and none has a positive
+integer root. At heights 1 and 2 the kernel cross sum is `-2t-4r`. The
+pivot gcd is not this certificate. Unequal scales of the two
+swapped-dot generators are not in this count. The ten-kernel
+coefficient span is not classified. Runner `PASS=9 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every triple of positive integers (t, r, s) gives partner
-rank 10, at every chirality coefficient, for t times both swapped-dot
-generators plus r times one ratio-span cap and s times the other. The
-case t = 1 is settled. Do not claim the ten-kernel coefficient span is
-settled. Do not claim the 300-dimensional affine space is classified.
+Decide whether every quadruple of positive integers (t, u, r, s) gives
+partner rank 10, at every chirality coefficient, for t times the plus
+swapped-dot generator plus u times the minus swapped-dot generator plus
+r times the plus cap and s times the minus cap. The case t = u is
+settled. Do not claim the ten-kernel coefficient span is settled. Do
+not claim the 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`

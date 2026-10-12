@@ -1,0 +1,12 @@
+beta= 1.00 E0= 1.0: measured a/g = 1.000000  (prediction beta = 1.0)
+beta= 1.00 E0= 5.0: measured a/g = 1.000000  (prediction beta = 1.0)
+beta= 1.02 E0= 1.0: measured a/g = 1.020000  (prediction beta = 1.02)
+beta= 1.02 E0= 5.0: measured a/g = 1.020000  (prediction beta = 1.02)
+
+channel   f(Ti)       f(Pt)       Delta f     bound |dbeta/beta| <= eta/|Delta f|
+fC      2.022e-03  4.054e-03  +2.033e-03   3.4e-12
+fe      2.514e-04  2.194e-04  -3.200e-05   2.2e-10
+fs      1.139e-02  1.256e-02  +1.178e-03   5.9e-12
+fn      5.417e-01  6.000e-01  +5.833e-02   1.2e-13
+
+F2-size photon-vs-matter split: dbeta/beta = 1.71e-02 -> eta ~ 3.5e-05 vs bound 7e-15: excess x5.0e+09

@@ -1,0 +1,9 @@
+Z3 ball N=2103 [23s]
+  buffer 2: n_int= 910  E_g +0.0473732  T_2g +0.0139983  max site deviation 5.7e-04
+  buffer 3: n_int= 500  E_g +0.0473825  T_2g +0.0140045  max site deviation 1.2e-05
+  buffer 4: n_int= 254  E_g +0.0473827  T_2g +0.0140046  max site deviation 3.0e-07
+  buffer 5: n_int= 108  E_g +0.0473827  T_2g +0.0140046  max site deviation 1.6e-08
+  total E''/N over whole ball (boundary-contaminated): 0.04240155940130688
+Poisson ball N=4271 [163s]
+  buffer 3: n_int=1036  E_g +0.00249  T_2g -0.00098  per-site sd 0.0530
+  buffer 4: n_int= 511  E_g +0.00725  T_2g -0.00002  per-site sd 0.0533

@@ -1,0 +1,18 @@
+k dir (0, 0, 1) eig of h:R on transverse subspace: [-1.  1.  1.]
+k dir (1, 2, 3) eig of h:R on transverse subspace: [-1.  1.  1.]
+c=0.000 (Horava lambda=-0.000): omega^2/(J g k^2) k||z [-1. -1.  1.], generic [-1. -1.  1.];  predicted scalar -(1-2c)=-1.000
+c=0.250 (Horava lambda=-1.000): omega^2/(J g k^2) k||z [-1.  -1.   0.5], generic [-1.  -1.   0.5];  predicted scalar -(1-2c)=-0.500
+c=0.333 (Horava lambda=inf): omega^2/(J g k^2) k||z [-1.       -1.        0.333333], generic [-1.       -1.        0.333333];  predicted scalar -(1-2c)=-0.333
+c=0.450 (Horava lambda=1.286): omega^2/(J g k^2) k||z [-1.  -1.   0.1], generic [-1.  -1.   0.1];  predicted scalar -(1-2c)=-0.100
+c=0.500 (Horava lambda=1.000): omega^2/(J g k^2) k||z [-1. -1.  0.], generic [-1. -1.  0.];  predicted scalar -(1-2c)=-0.000
+c=0.550 (Horava lambda=0.846): omega^2/(J g k^2) k||z [-1.  -1.  -0.1], generic [-1.  -1.  -0.1];  predicted scalar -(1-2c)=0.100
+c=0.750 (Horava lambda=0.600): omega^2/(J g k^2) k||z [-1.  -1.  -0.5], generic [-1.  -1.  -0.5];  predicted scalar -(1-2c)=0.500
+c=1.000 (Horava lambda=0.500): omega^2/(J g k^2) k||z [-1. -1. -1.], generic [-1. -1. -1.];  predicted scalar -(1-2c)=1.000
+--- corrected sign: potential +g/2 h:R(h) with R = -eps eps k k h makes the TT pair positive ---
+c=0.00: (omega^2/(Jgk^2), type, sign kinetic, sign potential): [(np.float64(-1.0), 'scalar', 1.0, -1.0), (np.float64(1.0), 'TT', 1.0, 1.0), (np.float64(1.0), 'TT', 1.0, 1.0)]
+c=0.25: (omega^2/(Jgk^2), type, sign kinetic, sign potential): [(np.float64(-0.5), 'scalar', 1.0, -1.0), (np.float64(1.0), 'TT', 1.0, 1.0), (np.float64(1.0), 'TT', 1.0, 1.0)]
+c=0.45: (omega^2/(Jgk^2), type, sign kinetic, sign potential): [(np.float64(-0.1), 'scalar', 1.0, -1.0), (np.float64(1.0), 'TT', 1.0, 1.0), (np.float64(1.0), 'TT', 1.0, 1.0)]
+c=0.50: (omega^2/(Jgk^2), type, sign kinetic, sign potential): [(np.float64(-0.0), 'scalar', 1.0, -1.0), (np.float64(1.0), 'TT', 1.0, 1.0), (np.float64(1.0), 'TT', 1.0, 1.0)]
+c=0.55: (omega^2/(Jgk^2), type, sign kinetic, sign potential): [(np.float64(0.1), 'scalar', -1.0, -1.0), (np.float64(1.0), 'TT', 1.0, 1.0), (np.float64(1.0), 'TT', 1.0, 1.0)]
+c=0.75: (omega^2/(Jgk^2), type, sign kinetic, sign potential): [(np.float64(0.5), 'scalar', -1.0, -1.0), (np.float64(1.0), 'TT', 1.0, 1.0), (np.float64(1.0), 'TT', 1.0, 1.0)]
+c=1.00: (omega^2/(Jgk^2), type, sign kinetic, sign potential): [(np.float64(1.0), 'scalar', 1.0, 1.0), (np.float64(1.0), 'scalar', 1.0, 1.0), (np.float64(1.0), 'scalar', 1.0, 1.0)]

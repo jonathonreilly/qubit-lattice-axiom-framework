@@ -1,0 +1,6 @@
+R=1.8 m2=0.04  (per-direction stats; 5 TT directions pooled per realization)
+box  6 N=  216 n=400: stress mean -1.19e-04 sd 0.00544 sd*sqrtN 0.0799+-0.0028 | stiff mean -0.00020+-0.00012 sd 0.00543 sd*sqrtN 0.0798+-0.0028  [4s]
+box  8 N=  512 n=300: stress mean +5.83e-05 sd 0.00356 sd*sqrtN 0.0807+-0.0033 | stiff mean -0.00012+-0.00009 sd 0.00357 sd*sqrtN 0.0809+-0.0033  [16s]
+box 10 N= 1000 n=200: stress mean +8.11e-05 sd 0.00250 sd*sqrtN 0.0789+-0.0040 | stiff mean -0.00004+-0.00008 sd 0.00252 sd*sqrtN 0.0798+-0.0040  [62s]
+box 12 N= 1728 n=120: stress mean -9.67e-06 sd 0.00195 sd*sqrtN 0.0811+-0.0053 | stiff mean +0.00001+-0.00008 sd 0.00202 sd*sqrtN 0.0839+-0.0054  [141s]
+box 14 N= 2744 n= 80: stress mean -1.99e-04 sd 0.00160 sd*sqrtN 0.0836+-0.0066 | stiff mean -0.00020+-0.00008 sd 0.00159 sd*sqrtN 0.0834+-0.0066  [399s]

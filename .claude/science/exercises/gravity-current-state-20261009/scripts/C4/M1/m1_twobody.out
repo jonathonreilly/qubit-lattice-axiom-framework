@@ -1,0 +1,113 @@
+M1 (1): exact two-body bound states on Z^d (d=1,2,3), contact attraction U<0.
+Constituents: lattice KG band eps(k)=sqrt(m^2+sum_e 2(1-cos k_e)), m=1, so beta=1 in the IR.
+Bound state at total lattice momentum Q: 1/U = G_Q(E) = <1/(E - eps(q) - eps(Q-q))>_q, E < E_th(Q).
+Reports along lines in the zone: existence (isolated?), u=E_b^2/2, A(Q)=u''/beta-1, the composite IR beta_b,
+the line average of u'' (sum rule), face concentration, rms size.
+
+Only bands with E_b>0 everywhere are analysed for C3 (u=E^2/2 needs positive energy above the vacuum).
+Diagonal lines Q=s(1,..,1): u'' is d^2u/ds^2 divided by d (= the Hessian component along the unit diagonal).
+d=1 m=1.0 U=-0.2: band isolated on whole line; E_b(0)=1.989299 B(0)=Eth-E=1.070e-02 E_b(face)=3.12411 Eth(face)=3.23607
+   beta_b=u''(0)=0.975852  (universal beta=1: IR anomaly A(0)=-2.4148e-02)
+   line avg u'' (spectral)=+5.20e-18  (FD)=-1.46e-15  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -3.575 at Q=-3.142;  width(A_b<-0.5) = 2.970;  A_b(Q=pi/2) = -0.4435
+   share of sum(A_b<0) within 0.5 of face: 0.516
+   rms relative size xi = 6.800 sites
+d=1 m=1.0 U=-0.5: band isolated on whole line; E_b(0)=1.928625 B(0)=Eth-E=7.138e-02 E_b(face)=2.84225 Eth(face)=3.23607
+   beta_b=u''(0)=0.864722  (universal beta=1: IR anomaly A(0)=-1.3528e-01)
+   line avg u'' (spectral)=+1.30e-17  (FD)=-4.31e-15  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -2.692 at Q=-3.142;  width(A_b<-0.5) = 3.608;  A_b(Q=pi/2) = -0.7003
+   share of sum(A_b<0) within 0.5 of face: 0.407
+   rms relative size xi = 2.562 sites
+d=1 m=1.0 U=-1.0: band isolated on whole line; E_b(0)=1.709134 B(0)=Eth-E=2.909e-01 E_b(face)=2.34872 Eth(face)=3.23607
+   beta_b=u''(0)=0.599313  (universal beta=1: IR anomaly A(0)=-4.0069e-01)
+   line avg u'' (spectral)=+8.24e-18  (FD)=+1.43e-15  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -2.187 at Q=-3.142;  width(A_b<-0.5) = 4.001;  A_b(Q=pi/2) = -0.9078
+   share of sum(A_b<0) within 0.5 of face: 0.340
+   rms relative size xi = 1.170 sites
+d=1 m=1.0 U=-1.5: band isolated on whole line; E_b(0)=1.379365 B(0)=Eth-E=6.206e-01 E_b(face)=1.85089 Eth(face)=3.23607
+   beta_b=u''(0)=0.368822  (universal beta=1: IR anomaly A(0)=-6.3118e-01)
+   line avg u'' (spectral)=+4.34e-18  (FD)=+4.34e-18  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -2.070 at Q=-3.142;  width(A_b<-0.5) = 4.099;  A_b(Q=pi/2) = -0.9646
+   share of sum(A_b<0) within 0.5 of face: 0.324
+   rms relative size xi = 0.729 sites
+d=1 m=3.0 U=-2.0: band isolated on whole line; E_b(0)=4.529013 B(0)=Eth-E=1.471e+00 E_b(face)=4.61939 Eth(face)=6.60555
+   beta_b=u''(0)=0.204759  (universal beta=1: IR anomaly A(0)=-7.9524e-01)
+   line avg u'' (spectral)=-1.08e-18  (FD)=+1.30e-18  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -2.019 at Q=-3.142;  width(A_b<-0.5) = 4.148;  A_b(Q=pi/2) = -0.9904
+   share of sum(A_b<0) within 0.5 of face: 0.316
+   rms relative size xi = 0.219 sites
+d=1 m=3.0 U=-4.0: band isolated on whole line; E_b(0)=2.573696 B(0)=Eth-E=3.426e+00 E_b(face)=2.61941 Eth(face)=6.60555
+   beta_b=u''(0)=0.059233  (universal beta=1: IR anomaly A(0)=-9.4077e-01)
+   line avg u'' (spectral)=-6.51e-19  (FD)=-2.17e-19  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -2.004 at Q=-3.142;  width(A_b<-0.5) = 4.197;  A_b(Q=pi/2) = -0.9980
+   share of sum(A_b<0) within 0.5 of face: 0.314
+   rms relative size xi = 0.108 sites
+
+d=2 m=1.0 U=-1.0 x-line: band isolated on whole line; E_b(0)=1.999195 B(0)=Eth-E=1.576e-03 E_b(face)=2.95600 Eth(face)=3.23645
+   beta_b=u''(0)=0.982756  (universal beta=1: IR anomaly A(0)=-1.7244e-02)
+   line avg u'' (spectral)=-1.39e-17  (FD)=+1.45e-15  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -2.344 at Q=-3.142;  width(A_b<-0.5) = 3.632;  A_b(Q=pi/2) = -0.8188
+   share of sum(A_b<0) within 0.5 of face: 0.390
+d=2 m=1.0 U=-1.0 diag: band isolated on whole line; E_b(0)=1.999195 B(0)=Eth-E=1.576e-03 E_b(face)=3.35109 Eth(face)=4.00026
+   beta_b=u''(0)=0.982264  (universal beta=1: IR anomaly A(0)=-1.7736e-02)
+   line avg u'' (spectral)=-8.67e-18  (FD)=-8.67e-18  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -1.688 at Q=-2.651;  width(A_b<-0.5) = 4.222;  A_b(Q=pi/2) = -1.2501
+   share of sum(A_b<0) within 0.5 of face: 0.290
+d=2 m=1.0 U=-1.5 x-line: band isolated on whole line; E_b(0)=1.952485 B(0)=Eth-E=4.829e-02 E_b(face)=2.57597 Eth(face)=3.23645
+   beta_b=u''(0)=0.783107  (universal beta=1: IR anomaly A(0)=-2.1689e-01)
+   line avg u'' (spectral)=-1.30e-17  (FD)=-3.63e-16  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -1.822 at Q=-3.142;  width(A_b<-0.5) = 4.418;  A_b(Q=pi/2) = -1.0913
+   share of sum(A_b<0) within 0.5 of face: 0.308
+d=2 m=1.0 U=-1.5 diag: band isolated on whole line; E_b(0)=1.952485 B(0)=Eth-E=4.829e-02 E_b(face)=2.85778 Eth(face)=4.00026
+   beta_b=u''(0)=0.783107  (universal beta=1: IR anomaly A(0)=-2.1689e-01)
+   line avg u'' (spectral)=-3.47e-18  (FD)=-8.99e-16  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -1.501 at Q=-3.142;  width(A_b<-0.5) = 4.811;  A_b(Q=pi/2) = -1.2247
+   share of sum(A_b<0) within 0.5 of face: 0.257
+d=2 m=3.0 U=-4.0 x-line: band isolated on whole line; E_b(0)=3.109225 B(0)=Eth-E=2.891e+00 E_b(face)=3.15041 Eth(face)=6.60568
+   beta_b=u''(0)=0.064432  (universal beta=1: IR anomaly A(0)=-9.3557e-01)
+   line avg u'' (spectral)=+2.17e-19  (FD)=+2.17e-19  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -2.000 at Q=-3.142;  width(A_b<-0.5) = 4.222;  A_b(Q=pi/2) = -0.9998
+   share of sum(A_b<0) within 0.5 of face: 0.336
+d=2 m=3.0 U=-4.0 diag: band isolated on whole line; E_b(0)=3.109225 B(0)=Eth-E=2.891e+00 E_b(face)=3.18925 Eth(face)=7.12314
+   beta_b=u''(0)=0.064432  (universal beta=1: IR anomaly A(0)=-9.3557e-01)
+   line avg u'' (spectral)=-1.08e-19  (FD)=-4.34e-19  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -1.957 at Q=-3.142;  width(A_b<-0.5) = 4.222;  A_b(Q=pi/2) = -1.0216
+   share of sum(A_b<0) within 0.5 of face: 0.329
+d=3 m=1.0 U=-4.0 x-line: band isolated on whole line; E_b(0)=0.908337 B(0)=Eth-E=1.099e+00 E_b(face)=1.02828 Eth(face)=3.24021
+   beta_b=u''(0)=0.060619  (universal beta=1: IR anomaly A(0)=-9.3938e-01)
+   line avg u'' (spectral)=+5.42e-19  (FD)=+9.04e-17  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -1.930 at Q=-3.142;  width(A_b<-0.5) = 4.222;  A_b(Q=pi/2) = -1.0320
+   share of sum(A_b<0) within 0.5 of face: 0.325
+d=3 m=1.0 U=-4.0 diag: band isolated on whole line; E_b(0)=0.908337 B(0)=Eth-E=1.099e+00 E_b(face)=1.19617 Eth(face)=4.60816
+   beta_b=u''(0)=0.060619  (universal beta=1: IR anomaly A(0)=-9.3938e-01)
+   line avg u'' (spectral)=-5.42e-19  (FD)=+6.05e-17  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -1.746 at Q=-3.142;  width(A_b<-0.5) = 4.614;  A_b(Q=pi/2) = -1.0980
+   share of sum(A_b<0) within 0.5 of face: 0.295
+d=3 m=3.0 U=-7.0 x-line: band isolated on whole line; E_b(0)=0.659976 B(0)=Eth-E=5.342e+00 E_b(face)=0.68033 Eth(face)=6.60709
+   beta_b=u''(0)=0.006745  (universal beta=1: IR anomaly A(0)=-9.9326e-01)
+   line avg u'' (spectral)=-5.42e-20  (FD)=+4.07e-20  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -2.022 at Q=-3.142;  width(A_b<-0.5) = 4.222;  A_b(Q=pi/2) = -0.9891
+   share of sum(A_b<0) within 0.5 of face: 0.339
+d=3 m=3.0 U=-7.0 diag: band isolated on whole line; E_b(0)=0.659976 B(0)=Eth-E=5.342e+00 E_b(face)=0.71943 Eth(face)=7.58299
+   beta_b=u''(0)=0.006745  (universal beta=1: IR anomaly A(0)=-9.9326e-01)
+   line avg u'' (spectral)=-8.13e-20  (FD)=-5.42e-20  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -2.026 at Q=-3.142;  width(A_b<-0.5) = 4.222;  A_b(Q=pi/2) = -0.9871
+   share of sum(A_b<0) within 0.5 of face: 0.340
+d=3 m=1.0 U=-2.0 x-line: band isolated on whole line; E_b(0)=2.006931 B(0)=Eth-E=2.828e-04 E_b(face)=2.81771 Eth(face)=3.24021
+   beta_b=u''(0)=-1.219788  (universal beta=1: IR anomaly A(0)=-2.2198e+00)
+   line avg u'' (spectral)=+4.16e-17  (FD)=-6.94e-18  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -3.628 at Q=-0.098;  width(A_b<-0.5) = 2.945;  A_b(Q=pi/2) = +0.2789
+   share of sum(A_b<0) within 0.5 of face: 0.088
+d=3 m=1.0 U=-2.0 diag: band isolated on whole line; E_b(0)=2.006931 B(0)=Eth-E=2.828e-04 E_b(face)=3.19160 Eth(face)=4.60816
+   beta_b=u''(0)=-1.234193  (universal beta=1: IR anomaly A(0)=-2.2342e+00)
+   line avg u'' (spectral)=+2.78e-17  (FD)=-3.47e-18  => <A_b> = -1.000000, <A_1> = -1.000000
+   min A_b = -3.605 at Q=+0.098;  width(A_b<-0.5) = 5.203;  A_b(Q=pi/2) = -0.7460
+   share of sum(A_b<0) within 0.5 of face: 0.136
+
+d=3 critical-coupling check at Q=0 and Q=(pi,pi,pi): binding energy vs q-grid n (true bound state iff B converges >0)
+   U=-2.0 Q=0.00(1,1,1): B(n=24,40,64) = 5.270e-03, 1.148e-03, 2.828e-04
+   U=-2.0 Q=3.14(1,1,1): B(n=24,40,64) = 1.432e+00, 1.421e+00, 1.417e+00
+   U=-4.0 Q=0.00(1,1,1): B(n=24,40,64) = 1.142e+00, 1.110e+00, 1.099e+00
+   U=-4.0 Q=3.14(1,1,1): B(n=24,40,64) = 3.428e+00, 3.416e+00, 3.412e+00
+   U=-6.0 Q=0.00(1,1,1): B(n=24,40,64) = 3.029e+00, 2.996e+00, 2.985e+00
+   U=-6.0 Q=3.14(1,1,1): B(n=24,40,64) = 5.426e+00, 5.415e+00, 5.411e+00

@@ -1,0 +1,21 @@
+(a) d=2 random finite-range N-band fibres: band-and-zone average of Hess(u)  [closure needs beta*I]
+   N=1  sum_a int Hess u_a = [[-6.2e-14, -6.7e-14],[-6.7e-14, -1.0e-13]]   (=> mean anomaly = -beta*I exactly)
+   N=2  sum_a int Hess u_a = [[3.7e-13, 1.0e-13],[1.0e-13, 1.2e-13]]   (=> mean anomaly = -beta*I exactly)
+   N=4  sum_a int Hess u_a = [[0.0e+00, -3.1e-13],[-3.1e-13, -4.1e-13]]   (=> mean anomaly = -beta*I exactly)
+   N=8  sum_a int Hess u_a = [[-1.0e-12, -3.5e-13],[-3.5e-13, -1.2e-12]]   (=> mean anomaly = -beta*I exactly)
+
+(b) C1-type two-band face-touching construction (1D, beta=m=1):
+    lower band = exact SLAC E0=sqrt(1+k^2) on the zone; partner = tower band 1, sqrt(1+(2pi-rho(k))^2),
+    capped smoothly near k=0 (rho = |k| outside |k|<w).  Analytic branch B (partner) on the zone:
+    w=1.00: int(u_B'') = -6.28322 (pred -2pi=-6.28319); mean anomaly (u_B''-1) = -2.0000; min u_B'' = -5.8; partner >= lower: True
+    w=0.30: int(u_B'') = -6.28322 (pred -2pi=-6.28319); mean anomaly (u_B''-1) = -2.0000; min u_B'' = -20.4; partner >= lower: True
+    w=0.10: int(u_B'') = -6.28322 (pred -2pi=-6.28319); mean anomaly (u_B''-1) = -2.0000; min u_B'' = -62.3; partner >= lower: True
+    w=0.03: int(u_B'') = -6.28322 (pred -2pi=-6.28319); mean anomaly (u_B''-1) = -2.0000; min u_B'' = -208.9; partner >= lower: True
+    -> the partner carries a fixed anomaly -2 (zone mean), independent of the cap; it sits at E ~ sqrt(1+4pi^2) = 6.362
+
+(c) truncated tower with N analytic branches glued into one 2*pi*N-periodic branch U(kappa) (1D):
+    paraboloid U = (1+kappa^2)/2 on |kappa| < pi*N - w, smooth turn at the top; total anomaly int(U''-1):
+    N=  1: int(U''-1) =   -6.2831  (pred -2piN =   -6.2832), located at E ~ 3.3
+    N=  3: int(U''-1) =  -18.8487  (pred -2piN =  -18.8496), located at E ~ 9.5
+    N=  9: int(U''-1) =  -56.5407  (pred -2piN =  -56.5487), located at E ~ 28.3
+    N= 27: int(U''-1) = -169.5743  (pred -2piN = -169.6460), located at E ~ 84.8

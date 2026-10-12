@@ -1,0 +1,11 @@
+  realization 0 N=9599 [5s]
+  realization 1 N=9605 [10s]
+  realization 2 N=9512 [15s]
+  realization 3 N=9488 [19s]
+  realization 4 N=9722 [24s]
+  realization 5 N=9477 [28s]
+   tc=4.5: coarse rms open=0.2665 closed=0.4975 | element rms open=4.926 closed=8.796
+   tc=5.5: coarse rms open=0.3983 closed=0.9653 | element rms open=5.745 closed=15.181 | d ln(coarse closed)/dtc=0.663 d ln/d ln tc=3.30
+   tc=6.5: coarse rms open=0.4422 closed=2.2169 | element rms open=6.725 closed=26.238 | d ln(coarse closed)/dtc=0.831 d ln/d ln tc=4.98
+   tc=7.5: coarse rms open=0.3719 closed=4.7519 | element rms open=7.587 closed=35.959 | d ln(coarse closed)/dtc=0.762 d ln/d ln tc=5.33
+   tc=8.5: coarse rms open=0.4336 closed=8.8540 | element rms open=8.257 closed=42.997 | d ln(coarse closed)/dtc=0.622 d ln/d ln tc=4.97

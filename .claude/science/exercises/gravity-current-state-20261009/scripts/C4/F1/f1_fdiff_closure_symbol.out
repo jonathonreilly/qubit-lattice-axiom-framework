@@ -1,0 +1,18 @@
+(L) linear-lapse / Leibniz sector: weight W_cc(q) = [Hess u(q)]_cc / [Hess u(0)]_cc (FDiff needs 1)
+  range 1: k=0.01: W-1=-5.000e-05; k=0.10: W-1=-4.996e-03; k=0.50: W-1=-1.224e-01; k=1.50: W-1=-9.293e-01; k=3.14: W-1=-2.000e+00;  zone average of W = -8.53e-17 (FDiff needs 1)
+  range 2: k=0.01: W-1=-1.667e-09; k=0.10: W-1=-1.664e-05; k=0.50: W-1=-9.991e-03; k=1.50: W-1=-5.757e-01; k=3.14: W-1=-2.667e+00;  zone average of W = -2.84e-17 (FDiff needs 1)
+  range 3: k=0.01: W-1=-4.996e-14; k=0.10: W-1=-4.988e-08; k=0.50: W-1=-7.338e-04; k=1.50: W-1=-3.210e-01; k=3.14: W-1=-3.200e+00;  zone average of W = -8.53e-17 (FDiff needs 1)
+
+  physical size of (L) for real matter, a = Planck length: (k a)^2/2 at p = 1 GeV -> 3.4e-39; at lattice-scale (loop) modes O(1) (zone average of W-1 = -1)
+
+(R) rotation sector (inside spatial diffeos): min_mu |Hess u - M - mu grad grad^T| / |Hess u| at sample q
+  range 1: q=[0.1  0.2  0.05]: residual = 7.423e-03
+  range 1: q=[ 0.6 -0.4  0.9]: residual = 2.323e-01
+  range 1: q=[ 1.7  0.3 -2.2]: residual = 1.326e+00
+  range 2: q=[0.1  0.2  0.05]: residual = 9.732e-05
+  range 2: q=[ 0.6 -0.4  0.9]: residual = 4.461e-02
+  range 2: q=[ 1.7  0.3 -2.2]: residual = 1.197e+00
+  range 3: q=[0.1  0.2  0.05]: residual = 1.179e-06
+  range 3: q=[ 0.6 -0.4  0.9]: residual = 9.818e-03
+  range 3: q=[ 1.7  0.3 -2.2]: residual = 1.073e+00
+  (any nonzero residual on an open set => no rotation-sector closure; C3 theorem: impossible for periodic u)

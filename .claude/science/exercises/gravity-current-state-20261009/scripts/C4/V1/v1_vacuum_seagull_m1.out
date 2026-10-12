@@ -1,0 +1,5 @@
+m=1.0: t-quadrature max rel err 1/s: 4.1e-14, 1/s^2: 6.8e-14
+L=16 ch=E : control L2-design E2=-6.900684e-06 mu=-1.00935e-06 | piece(ii) seagull sum E_n|S_n0|^2 = 6.900684e-06 (=-E2 at eps=0), its Hessian mu_ii = +1.41915e-05; piece(i) = -piece(ii): mu_i = -1.41915e-05; total mu = mu_i + mu_ii + 0 = 0 (identity) [0s]
+L=16 ch=T2: control L2-design E2=-6.900684e-06 mu=+1.61114e-08 | piece(ii) seagull sum E_n|S_n0|^2 = 6.900684e-06 (=-E2 at eps=0), its Hessian mu_ii = +7.69091e-07; piece(i) = -piece(ii): mu_i = -7.69091e-07; total mu = mu_i + mu_ii + 0 = 0 (identity) [0s]
+L=24 ch=E : control L2-design E2=-6.900684e-06 mu=-1.00931e-06 | piece(ii) seagull sum E_n|S_n0|^2 = 6.900684e-06 (=-E2 at eps=0), its Hessian mu_ii = +1.41914e-05; piece(i) = -piece(ii): mu_i = -1.41914e-05; total mu = mu_i + mu_ii + 0 = 0 (identity) [0s]
+L=24 ch=T2: control L2-design E2=-6.900684e-06 mu=+1.61082e-08 | piece(ii) seagull sum E_n|S_n0|^2 = 6.900684e-06 (=-E2 at eps=0), its Hessian mu_ii = +7.69092e-07; piece(i) = -piece(ii): mu_i = -7.69092e-07; total mu = mu_i + mu_ii + 0 = 0 (identity) [1s]

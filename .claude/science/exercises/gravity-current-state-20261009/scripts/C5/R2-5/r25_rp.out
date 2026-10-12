@@ -1,0 +1,10 @@
+P2 cross-plane kernel M(a',b) =
+ [[1. 1. 0. 1. 1.]
+ [1. 1. 1. 1. 1.]
+ [0. 1. 0. 0. 0.]
+ [1. 1. 0. 1. 1.]
+ [1. 1. 0. 1. 1.]]
+symmetric: True  eigenvalues: [-0.891954 -0.        0.        0.82752   4.064435]
+scalar toy eps=0.3: eigenvalues [0.7 1.3]
+scalar toy eps=0.9: eigenvalues [0.1 1.9]
+scalar toy eps=1.0: eigenvalues [0. 2.]

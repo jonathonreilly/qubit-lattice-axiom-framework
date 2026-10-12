@@ -1,0 +1,26 @@
+== T2e: Hankel RP tests, T = 10, NT = 512, spatial grid 12^3 (incl. 0, pi), m^2 = 0.09 ==
+ A single pole sigma_N=4 [g=1]                k=0 (site,link,haus) -3.4e-16 -3.1e-16 -9.9e-16 | all k worst -5.6e-16 -1.9e-13 -1.1e-15  PASS
+ A 3-pole (a=.2,.5,.3; r=.5,3,10) [g=1]       k=0 (site,link,haus) -2.6e-16 -1.7e-16 -9.2e-16 | all k worst -4.8e-16 -2.8e-14 -9.8e-16  PASS
+ D per-axis single pole sigma_N=4 [g=1]       k=0 (site,link,haus) -3.4e-16 -3.1e-16 -9.9e-16 | all k worst -5.1e-16 -2.9e-15 -1.1e-15  PASS
+ B KL M=0.5 (sigma_N=4) [g=1]                 k=0 (site,link,haus) -3.2e-16 -3.6e-16 -9.2e-16 | all k worst -5.5e-16 -4.3e-13 -1.1e-15  PASS
+ B KL M=0.25 (sigma_N=8) [g=1]                k=0 (site,link,haus) -4.6e-16 -7.6e-16 -9.9e-16 | all k worst -5.2e-16 -2.4e-12 -1.0e-15  PASS
+ A single pole sigma_N=4 [E_g eps=0.3]        k=0 (site,link,haus) -3.4e-16 -3.1e-16 -9.9e-16 | all k worst -5.6e-16 -1.7e-13 -1.1e-15  PASS
+ A 3-pole (a=.2,.5,.3; r=.5,3,10) [E_g eps=0.3] k=0 (site,link,haus) -2.6e-16 -1.7e-16 -9.2e-16 | all k worst -5.0e-16 -2.8e-14 -1.1e-15  PASS
+ D per-axis single pole sigma_N=4 [E_g eps=0.3] k=0 (site,link,haus) -3.4e-16 -3.1e-16 -9.9e-16 | all k worst -5.5e-16 -3.8e-15 -1.2e-15  PASS
+ B KL M=0.5 (sigma_N=4) [E_g eps=0.3]         k=0 (site,link,haus) -3.0e-16 -2.9e-16 -8.6e-16 | all k worst -5.4e-16 -2.8e-13 -1.1e-15  PASS
+ B KL M=0.25 (sigma_N=8) [E_g eps=0.3]        k=0 (site,link,haus) -4.1e-16 -7.1e-16 -8.8e-16 | all k worst -5.2e-16 -2.7e-12 -1.0e-15  PASS
+ A single pole sigma_N=4 [T_2g eps=0.3]       k=0 (site,link,haus) -3.4e-16 -3.1e-16 -9.9e-16 | all k worst -5.6e-16 -1.7e-13 -1.1e-15  PASS
+ A 3-pole (a=.2,.5,.3; r=.5,3,10) [T_2g eps=0.3] k=0 (site,link,haus) -2.6e-16 -1.7e-16 -9.2e-16 | all k worst -5.0e-16 -3.0e-14 -1.0e-15  PASS
+ D per-axis single pole sigma_N=4 [T_2g eps=0.3] k=0 (site,link,haus) -3.4e-16 -3.1e-16 -9.9e-16 | all k worst -5.4e-16 -3.5e-15 -1.1e-15  PASS
+ B KL M=0.5 (sigma_N=4) [T_2g eps=0.3]        k=0 (site,link,haus) -3.4e-16 -2.5e-16 -9.8e-16 | all k worst -5.7e-16 -2.9e-13 -1.1e-15  PASS
+ B KL M=0.25 (sigma_N=8) [T_2g eps=0.3]       k=0 (site,link,haus) -4.5e-16 -9.6e-16 -9.7e-16 | all k worst -5.3e-16 -1.8e-12 -1.1e-15  PASS
+ C perfect action s^2=0.0000 [g=1]            k=0 (site,link,haus) -2.6e-02 -1.4e-13 -1.1e-01 | all k worst -6.4e-02 -1.4e-13 -1.4e-01  VIOLATED
+ C perfect action s^2=0.0833 [g=1]            k=0 (site,link,haus) -1.3e-02 -1.4e-13 -5.2e-02 | all k worst -2.4e-02 -1.4e-13 -5.7e-02  VIOLATED
+ C perfect action s^2=0.1667 [g=1]            k=0 (site,link,haus) -1.1e-04 -1.4e-13 -4.3e-04 | all k worst -5.6e-04 -1.4e-13 -5.9e-04  VIOLATED
+ C perfect action s^2=0.3333 [g=1]            k=0 (site,link,haus) -1.4e-16 -1.4e-13 -5.0e-16 | all k worst -4.3e-06 -1.4e-13 -4.3e-06  VIOLATED
+ C perfect action s^2=4.0000 [g=1]            k=0 (site,link,haus) -2.8e-16 -1.4e-13 -7.6e-16 | all k worst -7.1e-16 -6.3e-13 -1.4e-15  PASS
+ C perfect action s^2=0.1667 [E_g eps=0.3]    k=0 (site,link,haus) -1.1e-04 -1.4e-13 -4.3e-04 | all k worst -5.9e-04 -1.4e-13 -6.4e-04  VIOLATED
+ C perfect action s^2=4.0000 [E_g eps=0.3]    k=0 (site,link,haus) -2.8e-16 -1.4e-13 -7.6e-16 | all k worst -7.9e-16 -8.5e-13 -1.6e-15  PASS
+ control: 4D Gaussian proper-distance sigma=2 [g=1] k=0 (site,link,haus) -7.4e-03 -3.3e-02 -1.3e-02 | all k worst -7.4e-03 -3.9e-01 -1.3e-02  VIOLATED
+ control: 4D Gaussian proper-distance sigma=1 [g=1] k=0 (site,link,haus) -1.2e-04 -4.9e-03 -4.5e-04 | all k worst -2.0e-04 -2.9e-02 -4.5e-04  VIOLATED
+python3 -u T2e_rp_checks.py  25.64s user 12.12s system 99% cpu 37.844 total

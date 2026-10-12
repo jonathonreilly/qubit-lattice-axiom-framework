@@ -1,0 +1,38 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/Q1/q1_B2_surrogate.py:11: RuntimeWarning: invalid value encountered in scalar divide
+  N2 = 0.5*(k1.mean() + k2.mean()); A = 0.5*((a*k1).mean() + (b*k2).mean())/N2
+eps=1/8, carrier w0=1; per time: V/|Psi|^2, then for nbar: [MC prob, MC |<a>_rec|/|mean|  (bootstrap sd)] [surrogate R samples] [surrogate 6000] [circular 2/(2+V_ph)]
+ t=3.52  V/|Psi|^2=47  circularity |E d^2|/V=0.78
+   nbar=0.001  V_ph=   0.05  MC: prob 0.9558 amp 0.975 (sd 0.156) | surr(R): 0.9534 0.726 | surr(6000): 0.9567 0.940 | circ: amp 0.977 prob 0.9550
+   nbar=0.01   V_ph=   0.47  MC: prob 0.6908 amp 0.828 (sd 0.163) | surr(R): 0.6944 1.103 | surr(6000): 0.6887 0.878 | circ: amp 0.811 prob 0.6570
+   nbar=0.03   V_ph=   1.40  MC: prob 0.4212 amp 0.667 (sd 0.165) | surr(R): 0.4169 0.765 | surr(6000): 0.4202 0.736 | circ: amp 0.589 prob 0.3442
+   nbar=0.1    V_ph=   4.66  MC: prob 0.1426 amp 0.451 (sd 0.077) | surr(R): 0.1270 0.598 | surr(6000): 0.1400 0.421 | circ: amp 0.301 prob 0.0884
+ t=4.02  V/|Psi|^2=60  circularity |E d^2|/V=0.56
+   nbar=0.001  V_ph=   0.06  MC: prob 0.9431 amp 0.965 (sd 0.113) | surr(R): 0.9389 0.833 | surr(6000): 0.9430 1.017 | circ: amp 0.971 prob 0.9422
+   nbar=0.01   V_ph=   0.60  MC: prob 0.6219 amp 0.800 (sd 0.134) | surr(R): 0.6084 0.887 | surr(6000): 0.6090 0.743 | circ: amp 0.768 prob 0.5886
+   nbar=0.03   V_ph=   1.81  MC: prob 0.3300 amp 0.636 (sd 0.093) | surr(R): 0.2865 0.536 | surr(6000): 0.3037 0.529 | circ: amp 0.524 prob 0.2730
+   nbar=0.1    V_ph=   6.04  MC: prob 0.0908 amp 0.461 (sd 0.117) | surr(R): 0.0892 0.314 | surr(6000): 0.0773 0.382 | circ: amp 0.249 prob 0.0607
+ t=4.52  V/|Psi|^2=87  circularity |E d^2|/V=0.34
+   nbar=0.001  V_ph=   0.09  MC: prob 0.9190 amp 0.931 (sd 0.292) | surr(R): 0.9208 0.883 | surr(6000): 0.9196 0.948 | circ: amp 0.958 prob 0.9185
+   nbar=0.01   V_ph=   0.87  MC: prob 0.4998 amp 0.603 (sd 0.091) | surr(R): 0.4839 0.655 | surr(6000): 0.4979 0.772 | circ: amp 0.697 prob 0.4853
+   nbar=0.03   V_ph=   2.60  MC: prob 0.2053 amp 0.382 (sd 0.121) | surr(R): 0.1916 0.701 | surr(6000): 0.1943 0.473 | circ: amp 0.434 prob 0.1873
+   nbar=0.1    V_ph=   8.68  MC: prob 0.0406 amp 0.237 (sd 0.133) | surr(R): 0.0412 0.139 | surr(6000): 0.0359 0.222 | circ: amp 0.187 prob 0.0345
+ t=5.02  V/|Psi|^2=91  circularity |E d^2|/V=0.34
+   nbar=0.001  V_ph=   0.09  MC: prob 0.9160 amp 0.972 (sd 0.234) | surr(R): 0.9216 1.408 | surr(6000): 0.9169 0.962 | circ: amp 0.957 prob 0.9150
+   nbar=0.01   V_ph=   0.91  MC: prob 0.4955 amp 0.766 (sd 0.207) | surr(R): 0.4713 0.815 | surr(6000): 0.4821 0.775 | circ: amp 0.688 prob 0.4719
+   nbar=0.03   V_ph=   2.72  MC: prob 0.2066 amp 0.501 (sd 0.191) | surr(R): 0.2068 0.540 | surr(6000): 0.1880 0.384 | circ: amp 0.423 prob 0.1779
+   nbar=0.1    V_ph=   9.08  MC: prob 0.0444 amp 0.142 (sd 0.125) | surr(R): 0.0369 0.425 | surr(6000): 0.0357 0.166 | circ: amp 0.180 prob 0.0321
+ t=5.52  V/|Psi|^2=2876  circularity |E d^2|/V=0.36
+   nbar=0.001  V_ph=   2.88  MC: prob 0.1974 amp 0.275 (sd 0.253) | surr(R): 0.1599 1.012 | surr(6000): 0.1777 0.351 | circ: amp 0.410 prob 0.1682
+   nbar=0.01   V_ph=  28.76  MC: prob 0.0069 amp 0.622 (sd 0.612) | surr(R): 0.0052 0.390 | surr(6000): 0.0047 0.029 | circ: amp 0.065 prob 0.0042
+   nbar=0.03   V_ph=  86.27  MC: prob 0.0006 amp 3.987 (sd 1.051) | surr(R): 0.0007 2.595 | surr(6000): 0.0006 0.872 | circ: amp 0.023 prob 0.0005
+   nbar=0.1    V_ph= 287.57  MC: prob 0.0001 amp 7.104 (sd 1.280) | surr(R): 0.0001 9.488 | surr(6000): 0.0000 2.738 | circ: amp 0.007 prob 0.0000
+ t=6.02  V/|Psi|^2=1462  circularity |E d^2|/V=0.37
+   nbar=0.001  V_ph=   1.46  MC: prob 0.3638 amp 0.527 (sd 0.329) | surr(R): 0.3847 0.772 | surr(6000): 0.3498 0.405 | circ: amp 0.578 prob 0.3336
+   nbar=0.01   V_ph=  14.62  MC: prob 0.0219 amp 0.400 (sd 0.235) | surr(R): 0.0157 0.691 | surr(6000): 0.0168 0.236 | circ: amp 0.120 prob 0.0145
+   nbar=0.03   V_ph=  43.87  MC: prob 0.0037 amp 0.477 (sd 0.571) | surr(R): 0.0018 1.913 | surr(6000): 0.0021 0.063 | circ: amp 0.044 prob 0.0019
+   nbar=0.1    V_ph= 146.22  MC: prob 0.0003 amp 5.741 (sd 0.947) | surr(R): 0.0003 3.110 | surr(6000): 0.0002 0.739 | circ: amp 0.013 prob 0.0002
+ t=6.52  V/|Psi|^2=1390039897562  circularity |E d^2|/V=0.39
+   nbar=0.001  V_ph=1390039897.56  MC: prob 0.0000 amp nan (sd 1.752) | surr(R): 0.0000 nan | surr(6000): 0.0000 10.003 | circ: amp 0.000 prob 0.0000
+   nbar=0.01   V_ph=13900398975.62  MC: prob 0.0000 amp nan (sd 2.065) | surr(R): 0.0000 nan | surr(6000): 0.0000 17.309 | circ: amp 0.000 prob 0.0000
+   nbar=0.03   V_ph=41701196926.85  MC: prob 0.0000 amp nan (sd 1.874) | surr(R): 0.0000 nan | surr(6000): 0.0000 32.549 | circ: amp 0.000 prob 0.0000
+   nbar=0.1    V_ph=139003989756.16  MC: prob 0.0000 amp nan (sd 2.034) | surr(R): 0.0000 nan | surr(6000): 0.0000 nan | circ: amp 0.000 prob 0.0000

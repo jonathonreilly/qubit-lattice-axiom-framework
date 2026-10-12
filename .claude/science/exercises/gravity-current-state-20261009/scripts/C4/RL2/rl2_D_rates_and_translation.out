@@ -1,0 +1,29 @@
+(1) fixed-source field phi: MC sd growth rate per unit proper time (l_k units)
+   op0 eps=1      T=[3. 4. 5. 6. 7. 8. 9.]  sd=[3.372e+01 3.795e+02 2.204e+03 4.201e+04 3.655e+05 3.524e+06 1.739e+07]
+      slope(last4)=2.034 slope(last3)=1.931  ladder-predicted sd rate 2.488  MC/ladder=0.82..0.78 ; law sqrt(eps)*1.422
+   op0 eps=0.5    T=[3. 4. 5. 6. 7. 8.]  sd=[   2.409   11.589   32.522  111.7    375.23  1640.6  ]
+      slope(last4)=1.297 slope(last3)=1.344  ladder-predicted sd rate 1.470  MC/ladder=0.88..0.91 ; law sqrt(eps)*1.006
+   op0 eps=0.25   T=[3. 4. 5. 6. 7. 8.]  sd=[ 0.569  0.94   1.802  4.702  7.105 15.293]
+      slope(last4)=0.683 slope(last3)=0.590  ladder-predicted sd rate 0.868  MC/ladder=0.79..0.68 ; law sqrt(eps)*0.711
+   op0 eps=0.125  T=[3. 4. 5. 6. 7.]  sd=[0.202 0.227 0.324 0.491 0.756]
+      slope(last4)=0.403 slope(last3)=0.424  ladder-predicted sd rate 0.536  MC/ladder=0.75..0.79 ; law sqrt(eps)*0.503
+   op1 eps=0.25   T=[3. 4. 5. 6. 7. 8.]  sd=[ 0.53   1.201  2.27   5.328  9.517 24.922]
+      slope(last4)=0.777 slope(last3)=0.771  ladder-predicted sd rate 0.904  MC/ladder=0.86..0.85 ; law sqrt(eps)*0.711
+   op2 eps=0.25   T=[3. 4. 5. 6. 7. 8.]  sd=[ 0.672  1.51   3.144  5.533 11.255 35.203]
+      slope(last4)=0.796 slope(last3)=0.925  ladder-predicted sd rate 0.945  MC/ladder=0.84..0.98 ; law sqrt(eps)*0.711
+
+(2) translation (D = 1 Gpc).  sd e-folds n = k l_P^2 tau/(2 l_k^3);  bounded (n<=1) needs l_k >= (k l_P^2 tau/2)^(1/3)
+   k=2.73 RL1 (tau = D)                      tau=3.09e+25 m: sd e-folds at l_k=1e-19 m: 1.10e+13 ; needs l_k >= 2.22e-15 m (= 22241.7 x bar)
+   k=2.73 s = 1.2e4 m (E1'-b source scale)   tau=8.71e+14 m: sd e-folds at l_k=1e-19 m: 3.11e+02 ; needs l_k >= 6.77e-19 m (= 6.8 x bar)
+   k=2.73 s = 3e6 m (one 100 Hz cycle)       tau=1.36e+16 m: sd e-folds at l_k=1e-19 m: 4.85e+03 ; needs l_k >= 1.69e-18 m (= 16.9 x bar)
+   k=2.73 s = 3e10 m (100 s of emission)     tau=1.36e+18 m: sd e-folds at l_k=1e-19 m: 4.85e+05 ; needs l_k >= 7.86e-18 m (= 78.6 x bar)
+   k=2.84 RL1 (tau = D)                      tau=3.09e+25 m: sd e-folds at l_k=1e-19 m: 1.14e+13 ; needs l_k >= 2.25e-15 m (= 22536.5 x bar)
+   k=2.84 s = 1.2e4 m (E1'-b source scale)   tau=8.71e+14 m: sd e-folds at l_k=1e-19 m: 3.23e+02 ; needs l_k >= 6.86e-19 m (= 6.9 x bar)
+   k=2.84 s = 3e6 m (one 100 Hz cycle)       tau=1.36e+16 m: sd e-folds at l_k=1e-19 m: 5.05e+03 ; needs l_k >= 1.72e-18 m (= 17.2 x bar)
+   k=2.84 s = 3e10 m (100 s of emission)     tau=1.36e+18 m: sd e-folds at l_k=1e-19 m: 5.05e+05 ; needs l_k >= 7.96e-18 m (= 79.6 x bar)
+   k=3.33 RL1 (tau = D)                      tau=3.09e+25 m: sd e-folds at l_k=1e-19 m: 1.34e+13 ; needs l_k >= 2.38e-15 m (= 23764.5 x bar)
+   k=3.33 s = 1.2e4 m (E1'-b source scale)   tau=8.71e+14 m: sd e-folds at l_k=1e-19 m: 3.79e+02 ; needs l_k >= 7.24e-19 m (= 7.2 x bar)
+   k=3.33 s = 3e6 m (one 100 Hz cycle)       tau=1.36e+16 m: sd e-folds at l_k=1e-19 m: 5.92e+03 ; needs l_k >= 1.81e-18 m (= 18.1 x bar)
+   k=3.33 s = 3e10 m (100 s of emission)     tau=1.36e+18 m: sd e-folds at l_k=1e-19 m: 5.92e+05 ; needs l_k >= 8.40e-18 m (= 84.0 x bar)
+   at the bar l_k = 1e-19 m (k=2.84): noise bounded only for tau <= 2.70e+12 m, i.e. D <= tau^2/(2s) = 2.95e+20 m (9.6 kpc) for s = 1.2e4 m
+   factor by which k*tau must shrink for PASS at the bar (s=1.2e4 m): 323

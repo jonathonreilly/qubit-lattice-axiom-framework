@@ -1,0 +1,4 @@
+   lam=1.00 targets~1107 rms b_lam=0.3595 (+-0.0519) indep-pred=0.2969 ratio=1.21 rms*lam^2=0.3595 [11s]
+   lam=1.40 targets~4199 rms b_lam=0.1757 (+-0.0311) indep-pred=0.1514 ratio=1.16 rms*lam^2=0.3443 [31s]
+   lam=1.80 targets~8520 rms b_lam=0.1253 (+-0.0280) indep-pred=0.0947 ratio=1.32 rms*lam^2=0.4060 [58s]
+   lam=2.20 targets~14237 rms b_lam=0.0505 (+-0.0126) indep-pred=0.0667 ratio=0.76 rms*lam^2=0.2445 [99s]

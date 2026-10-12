@@ -1,0 +1,16 @@
+Delta_QED [per-Dirac photon loop] = dc_f - dc_gamma = -15.39 e^2/16pi^2
+Delta_QED [3D staggered field (2 tastes)] = dc_f - dc_gamma = -14.72 e^2/16pi^2
+Delta_QED [4D staggered (4 tastes)] = dc_f - dc_gamma = -13.38 e^2/16pi^2
+alpha=1/137.04: e^2/16pi^2=5.807e-04  c_e - c_gamma = -8.55e-03  -> photon decay gamma->e+e- above 7.8 MeV
+alpha=1/128.00: e^2/16pi^2=6.217e-04  c_e - c_gamma = -9.15e-03  -> photon decay gamma->e+e- above 7.6 MeV
+alpha=1/100.00: e^2/16pi^2=7.958e-04  c_e - c_gamma = -1.17e-02  -> photon decay gamma->e+e- above 6.7 MeV
+photon-decay bound from a 1.4 PeV photon (LHAASO 2021; comparator): c_gamma - c_e < 2 m_e^2/E^2 = 2.66e-19
+required cancellation for e/gamma: 3.1e-17 of the natural one-loop size
+proton vacuum Cherenkov (c_p > c_gamma) at E = 1e20 eV: c_p - c_gamma < m_p^2/(2E^2) = 4.4e-23
+photon -> p pbar (c_gamma > c_p) at 1.4 PeV: c_gamma - c_p < 2 m_p^2/E^2 = 9.0e-13
+GW170817 (comparator): -3e-15 < c_g - c_gamma < 7e-16
+Pospelov-Shang percolation (dc ~ (M*/M_Pl)^2/16pi^2) < 1e-15  =>  M* < 4.8e+12 GeV  (= 4.0e-07 M_Pl)
+Pospelov-Shang percolation (dc ~ (M*/M_Pl)^2/16pi^2) < 1e-20  =>  M* < 1.5e+10 GeV  (= 1.3e-09 M_Pl)
+Pospelov-Shang percolation (dc ~ (M*/M_Pl)^2/16pi^2) < 1e-22  =>  M* < 1.5e+09 GeV  (= 1.3e-10 M_Pl)
+Chadha-Nielsen-type log running, d(dc)/dln(mu) = b (alpha/pi) dc, from M_Pl to m_e: ln = 51.5; suppression factor = exp(-b*0.120) = 0.887 for b = 1
+tadpole share: fermion tadpole -17.97 vs total -16.06 (e^2/16pi^2); at alpha=1/137: tadpole = -1.04e-02

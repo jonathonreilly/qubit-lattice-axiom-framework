@@ -1,0 +1,10 @@
+det = M_p2*a**2*k**6*(2*M_p2*k**2*omega**2 + a*k**2 - 3*a*omega**2)/128
+omega^2 roots: [a*k**2/(-2*M_p2*k**2 + 3*a)]
+alpha=0 a=+0.01: k=0.05: w2=+1.000e-03 GHOST | k=0.3: w2=-6.000e-03 TACHYON | k=1.0: w2=-5.076e-03 TACHYON | k=5.0: w2=-5.003e-03 TACHYON
+alpha=0 a=-0.01: k=0.05: w2=+7.143e-04 GHOST | k=0.3: w2=+4.286e-03 GHOST | k=1.0: w2=+4.926e-03 GHOST | k=5.0: w2=+4.997e-03 GHOST
+alpha=0.001 a=+0.01: k=0.05: w2=+1.000e-03 GHOST | k=0.3: w2=-6.000e-03 TACHYON | k=1.0: w2=-5.076e-03 TACHYON | k=5.0: w2=-5.003e-03 TACHYON
+alpha=0.001 a=-0.01: k=0.05: w2=+7.143e-04 GHOST | k=0.3: w2=+4.286e-03 GHOST | k=1.0: w2=+4.926e-03 GHOST | k=5.0: w2=+4.997e-03 GHOST
+alpha=0.1 a=+0.01: k=0.05: w2=+1.000e-03 GHOST | k=0.3: w2=-6.000e-03 TACHYON | k=1.0: w2=-5.076e-03 TACHYON | k=5.0: w2=-5.003e-03 TACHYON
+alpha=0.1 a=-0.01: k=0.05: w2=+7.143e-04 GHOST | k=0.3: w2=+4.286e-03 GHOST | k=1.0: w2=+4.926e-03 GHOST | k=5.0: w2=+4.997e-03 GHOST
+alpha=1 a=+0.01: k=0.05: w2=+1.000e-03 GHOST | k=0.3: w2=-6.000e-03 TACHYON | k=1.0: w2=-5.076e-03 TACHYON | k=5.0: w2=-5.003e-03 TACHYON
+alpha=1 a=-0.01: k=0.05: w2=+7.143e-04 GHOST | k=0.3: w2=+4.286e-03 GHOST | k=1.0: w2=+4.926e-03 GHOST | k=5.0: w2=+4.997e-03 GHOST

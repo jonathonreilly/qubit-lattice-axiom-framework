@@ -1,0 +1,3 @@
+L=5: G (375, 750), S (125, 750)
+(a) max|G S^T| = 0
+(b) max|S K + D G| (c=1/2, exact integers) = 0

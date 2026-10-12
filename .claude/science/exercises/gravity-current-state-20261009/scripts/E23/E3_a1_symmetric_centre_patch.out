@@ -1,0 +1,2 @@
+qc Rp=9.0 N=2999 interior=645 [43s] | E_g: mean -0.00094 (per-direction means -0.00094, -0.00094) per-site sd 0.0411 | T_2g: mean -0.00094 (per-direction means -0.00094, -0.00094, -0.00094) per-site sd 0.0570 | stress mean +7.5e-11 per-site sd 0.0342
+qc Rp=9.0 N=2987 interior=581 [50s] | E_g: mean +0.00069 (per-direction means -0.00017, +0.00156) per-site sd 0.0392 | T_2g: mean +0.00057 (per-direction means +0.00215, -0.00075, +0.00033) per-site sd 0.0548 | stress mean -1.1e-04 per-site sd 0.0358

@@ -1,0 +1,8 @@
+(1) photon: max |M(h) shat| / |M| over 200 random (h, p) = 7.5e-16  (exact U(1) invariance with metric)
+(2) fermion Pi_mu_nu(0) (per naive fermion, m=0.3, L=24): max |.| = 1.5e-04; separate pieces are O(1e-1)
+(3) W(B4) covariance of fermion bilinear: max rel dev over 6 random elements = 4.5e-15
+(4) evenness: max |B(q) - B(-q)| / |B| = 4.9e-16
+(2b) fermion Pi_mu_nu(0), m=0.3, L=16: max |.| = 2.06e-03
+(2b) fermion Pi_mu_nu(0), m=0.3, L=24: max |.| = 1.51e-04
+(2b) fermion Pi_mu_nu(0), m=0.3, L=32: max |.| = 1.20e-05
+(2b) fermion Pi_mu_nu(0), m=0.3, L=40: max |.| = 9.81e-07

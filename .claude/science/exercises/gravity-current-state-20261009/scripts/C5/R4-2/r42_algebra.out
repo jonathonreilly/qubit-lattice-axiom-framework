@@ -1,0 +1,14 @@
+(a) g1,g2,g3,Rz preserve G7 exactly, det 1: True
+    Rz g1 Rz^-1 = [[8, 0, 3, 0], [0, 1, 0, 0], [21, 0, 8, 0], [0, 0, 0, 1]]  in Gamma: True ; it is a pure boost on (n0,n2) like g2 (same eigenvalues): True
+    eigenvalues of g1: {8 - 3*sqrt(7): 1, 3*sqrt(7) + 8: 1, 1: 2}
+(b) # expanding/contracting eigenvectors found: 12
+    rank of their span (vector action): 4
+    rank of their span (dual action):   4
+    rank of span(e_+,e_-) of g1 alone (vector): 2
+(c) general real symmetric form invariant under g1,Rz,Rx (vector rep):
+    Matrix([[-7*c15, 0, 0, 0], [0, c15, 0, 0], [0, 0, c15, 0], [0, 0, 0, c15]])
+    free parameters: [c15] -> proportional to G7 = diag(-7,1,1,1): True
+    G7 indefinite (eigenvalues): {-7: 1, 1: 3} => only psd invariant form is 0
+    dual rep invariant forms: Matrix([[-c15/7, 0, 0, 0], [0, c15, 0, 0], [0, 0, c15, 0], [0, 0, 0, c15]])  (prop. to G7^{-1}, indefinite)
+    invariant antisymmetric forms (imag. part of Hermitian): Matrix([[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]])
+(d) dim ker(g1 - 1) = 2  basis: [[0, 0, 1, 0], [0, 0, 0, 1]]

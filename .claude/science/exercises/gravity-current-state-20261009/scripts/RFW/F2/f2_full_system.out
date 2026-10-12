@@ -1,0 +1,23 @@
+== F2 full finite-q system, translation-Killing sector, k1,k2 independent on the complex shell ==
+continuum control m2=0.25 (A deg<=1, X deg<=1)             unknowns=  550 rows= 3000 rank=  506 rel.residual=4.576e-15  (0.1s)
+continuum control m2=0.25 (A deg<=1, X = 0)                unknowns=  500 rows= 3000 rank=  460 rel.residual=6.513e-15  (0.1s)
+continuum control m2=1.0 (A deg<=1, X deg<=1)              unknowns=  550 rows= 3000 rank=  506 rel.residual=5.266e-15  (0.1s)
+continuum control m2=1.0 (A deg<=1, X = 0)                 unknowns=  500 rows= 3000 rank=  460 rel.residual=5.866e-15  (0.1s)
+K2 lattice m2=0.25: rA=1, X = 0                            unknowns=  900 rows= 3000 rank=  860 rel.residual=4.798e-01  (0.3s)
+K2 lattice m2=0.25: rA=1, rX=1                             unknowns= 1350 rows= 4000 rank= 1216 rel.residual=3.205e-01  (0.9s)
+K2 lattice m2=1.0: rA=1, X = 0                             unknowns=  900 rows= 3000 rank=  860 rel.residual=4.450e-01  (0.3s)
+K2 lattice m2=1.0: rA=1, rX=1                              unknowns= 1350 rows= 4000 rank= 1216 rel.residual=2.957e-01  (0.9s)
+K2 lattice m2=1.0: rA=2, X = 0                             unknowns= 4100 rows= 7000 rank= 3740 rel.residual=2.765e-01  (19.3s)
+K2 lattice m2=1.0: rA=2, rX=1                              unknowns= 4550 rows= 8000 rank= 4096 rel.residual=2.396e-01  (34.8s)
+
+== small momentum transfer |q| ~ s (both legs on shell): residual floor vs range r ==
+   (b = O(s); K X = O(s^2); the floor as s -> 0 is the r-independent 1-jet obstruction)
+continuum control m2=1 s=0.3                               unknowns=  550 rows= 3000 rank=  506 rel.residual=4.760e-15  (0.1s)
+K2 lattice m2=1 s=0.3: rA=1, rX=1                          unknowns= 1350 rows= 4000 rank= 1216 rel.residual=3.849e-01  (0.9s)
+K2 lattice m2=1 s=0.3: rA=2, rX=1                          unknowns= 4550 rows= 6000 rank= 4096 rel.residual=1.701e-01  (30.2s)
+continuum control m2=1 s=0.1                               unknowns=  550 rows= 3000 rank=  506 rel.residual=7.151e-15  (0.1s)
+K2 lattice m2=1 s=0.1: rA=1, rX=1                          unknowns= 1350 rows= 4000 rank= 1216 rel.residual=3.567e-01  (0.9s)
+K2 lattice m2=1 s=0.1: rA=2, rX=1                          unknowns= 4550 rows= 6000 rank= 4096 rel.residual=1.713e-01  (30.2s)
+continuum control m2=1 s=0.03                              unknowns=  550 rows= 3000 rank=  506 rel.residual=1.605e-14  (0.1s)
+K2 lattice m2=1 s=0.03: rA=1, rX=1                         unknowns= 1350 rows= 4000 rank= 1216 rel.residual=3.530e-01  (0.9s)
+K2 lattice m2=1 s=0.03: rA=2, rX=1                         unknowns= 4550 rows= 6000 rank= 4096 rel.residual=1.702e-01  (30.3s)

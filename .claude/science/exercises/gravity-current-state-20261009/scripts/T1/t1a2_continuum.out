@@ -1,0 +1,52 @@
+continuum a2, r=1.0
+  m*s= 0.400  16pi^2 dc_psi=-0.26605  16pi^2 dc_phi=+0.55042  Delta=-0.81647
+  m*s= 0.200  16pi^2 dc_psi=-0.35532  16pi^2 dc_phi=+0.76472  Delta=-1.12004
+  m*s= 0.100  16pi^2 dc_psi=-0.38545  16pi^2 dc_phi=+0.76711  Delta=-1.15256
+  m*s= 0.050  16pi^2 dc_psi=-0.38592  16pi^2 dc_phi=+0.66380  Delta=-1.04972
+  m*s= 0.020  16pi^2 dc_psi=-0.37559  16pi^2 dc_phi=+0.52409  Delta=-0.89967
+  m*s= 0.010  16pi^2 dc_psi=-0.36859  16pi^2 dc_phi=+0.45053  Delta=-0.81912
+  m*s= 0.005  16pi^2 dc_psi=-0.36374  16pi^2 dc_phi=+0.40091  Delta=-0.76465
+continuum a2, r=0.5
+  m*s= 0.400  16pi^2 dc_psi=-0.25445  16pi^2 dc_phi=+0.47358  Delta=-0.72803
+  m*s= 0.200  16pi^2 dc_psi=-0.31055  16pi^2 dc_phi=+0.29828  Delta=-0.60883
+  m*s= 0.100  16pi^2 dc_psi=-0.31798  16pi^2 dc_phi=-0.09436  Delta=-0.22362
+  m*s= 0.050  16pi^2 dc_psi=-0.31047  16pi^2 dc_phi=-0.42594  Delta=+0.11547
+  m*s= 0.020  16pi^2 dc_psi=-0.29980  16pi^2 dc_phi=-0.68421  Delta=+0.38441
+  m*s= 0.010  16pi^2 dc_psi=-0.29442  16pi^2 dc_phi=-0.78559  Delta=+0.49117
+  m*s= 0.005  16pi^2 dc_psi=-0.29106  16pi^2 dc_phi=-0.84386  Delta=+0.55280
+continuum a2, r=2.0
+  m*s= 0.400  16pi^2 dc_psi=-0.25861  16pi^2 dc_phi=+0.47208  Delta=-0.73068
+  m*s= 0.200  16pi^2 dc_psi=-0.38512  16pi^2 dc_phi=+0.86683  Delta=-1.25195
+  m*s= 0.100  16pi^2 dc_psi=-0.45510  16pi^2 dc_phi=+1.17420  Delta=-1.62930
+  m*s= 0.050  16pi^2 dc_psi=-0.47752  16pi^2 dc_phi=+1.30181  Delta=-1.77933
+  m*s= 0.020  16pi^2 dc_psi=-0.47500  16pi^2 dc_phi=+1.28979  Delta=-1.76479
+  m*s= 0.010  16pi^2 dc_psi=-0.46752  16pi^2 dc_phi=+1.23872  Delta=-1.70624
+  m*s= 0.005  16pi^2 dc_psi=-0.46105  16pi^2 dc_phi=+1.18959  Delta=-1.65064
+continuum a2, r=1.0, TWISTED IR mass (no 2mW cross term)
+  m*s=0.2000  16pi^2 dc_psi=-0.31771  16pi^2 dc_phi=+0.36063  Delta=-0.67834
+  m*s=0.1000  16pi^2 dc_psi=-0.34373  16pi^2 dc_phi=+0.34800  Delta=-0.69172
+  m*s=0.0500  16pi^2 dc_psi=-0.35250  16pi^2 dc_phi=+0.34225  Delta=-0.69475
+  m*s=0.0200  16pi^2 dc_psi=-0.35563  16pi^2 dc_phi=+0.33934  Delta=-0.69497
+  m*s=0.0100  16pi^2 dc_psi=-0.35618  16pi^2 dc_phi=+0.33756  Delta=-0.69375
+  m*s=0.0050  16pi^2 dc_psi=-0.35634  16pi^2 dc_phi=+0.33242  Delta=-0.68876
+  m*s=0.0025  16pi^2 dc_psi=-0.35639  16pi^2 dc_phi=+0.31276  Delta=-0.66915
+continuum a2, r=0.5, TWISTED IR mass (no 2mW cross term)
+  m*s=0.2000  16pi^2 dc_psi=-0.27062  16pi^2 dc_phi=-0.66099  Delta=+0.39037
+  m*s=0.1000  16pi^2 dc_psi=-0.28197  16pi^2 dc_phi=-0.82633  Delta=+0.54436
+  m*s=0.0500  16pi^2 dc_psi=-0.28518  16pi^2 dc_phi=-0.88070  Delta=+0.59552
+  m*s=0.0200  16pi^2 dc_psi=-0.28623  16pi^2 dc_phi=-0.90012  Delta=+0.61389
+  m*s=0.0100  16pi^2 dc_psi=-0.28640  16pi^2 dc_phi=-0.90472  Delta=+0.61832
+  m*s=0.0050  16pi^2 dc_psi=-0.28645  16pi^2 dc_phi=-0.91066  Delta=+0.62421
+  m*s=0.0025  16pi^2 dc_psi=-0.28647  16pi^2 dc_phi=-0.93054  Delta=+0.64407
+continuum a2, r=2.0, TWISTED IR mass (no 2mW cross term)
+  m*s=0.2000  16pi^2 dc_psi=-0.36747  16pi^2 dc_phi=+0.89881  Delta=-1.26628
+  m*s=0.1000  16pi^2 dc_psi=-0.41840  16pi^2 dc_phi=+1.01872  Delta=-1.43712
+  m*s=0.0500  16pi^2 dc_psi=-0.43892  16pi^2 dc_phi=+1.07469  Delta=-1.51361
+  m*s=0.0200  16pi^2 dc_psi=-0.44720  16pi^2 dc_phi=+1.09921  Delta=-1.54642
+  m*s=0.0100  16pi^2 dc_psi=-0.44881  16pi^2 dc_phi=+1.10311  Delta=-1.55192
+  m*s=0.0050  16pi^2 dc_psi=-0.44930  16pi^2 dc_phi=+1.09975  Delta=-1.54905
+  m*s=0.0025  16pi^2 dc_psi=-0.44944  16pi^2 dc_phi=+1.08063  Delta=-1.53007
+scale check (r=1, m*s=0.1): s=1,2,3 -> [np.float64(-1.15255969), np.float64(-1.15253549), np.float64(-1.15249516)]
+literal-kernel flat-band estimate r=0.5: Delta_flat(s) = {1: np.float64(-15.24), 1.5: np.float64(-51.42), 2: np.float64(-121.89), 2.5: np.float64(-238.08), 3: np.float64(-411.39)}
+literal-kernel flat-band estimate r=1.0: Delta_flat(s) = {1: np.float64(-9.58), 1.5: np.float64(-32.33), 2: np.float64(-76.63), 2.5: np.float64(-149.67), 3: np.float64(-258.63)}
+literal-kernel flat-band estimate r=2.0: Delta_flat(s) = {1: np.float64(-4.79), 1.5: np.float64(-16.16), 2: np.float64(-38.32), 2.5: np.float64(-74.84), 3: np.float64(-129.32)}

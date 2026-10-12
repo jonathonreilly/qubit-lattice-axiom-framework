@@ -1,0 +1,28 @@
+== 1. Polynomial lattice Killing equation, exact coefficient rank ==
+degree <= 1: unknown coefficients=20, exact nullity=10
+degree <= 2: unknown coefficients=60, exact nullity=10
+degree <= 3: unknown coefficients=140, exact nullity=10
+
+== 2. Constructive Calabi/Killing-cokernel homotopy ==
+homogeneous degree 2: symmetric=True, div residual=[0, 0, 0, 0]
+homogeneous degree 3: symmetric=True, div residual=[0, 0, 0, 0]
+homogeneous degree 4: symmetric=True, div residual=[0, 0, 0, 0]
+homogeneous degree 5: symmetric=True, div residual=[0, 0, 0, 0]
+
+== 3. Scalar O(kappa) Ward identity in exact rational arithmetic ==
+2 sum(E L_xi phi) - sum(delta h T) = 0
+
+== 4. Exact non-closure certificates (no shell fit) ==
+scalar: first sign-average fixes c_a=-1; second R=-1/2, predicted=-1
+fermion: first sign-average fixes c_a=1; second R=1/4, predicted=1/2
+example shell roots at m^2=1/4: scalar cos(k4)=17/8 then 21/8; fermion sin(k4)^2=-3/4 then -1
+Both point families lie on their complex shells by choosing the corresponding +/-k_4 root;
+odd translation components cancel in the sign average, while the even cosine defect remains.
+
+== 5. TT kernel, longitudinal zero, and transfer/leapfrog roots ==
+TT plus: Q=(q**2 + t**2)/2, Q/(h:h)=(q**2 + t**2)/4
+TT cross: Q=(q**2 + t**2)/2, Q/(h:h)=(q**2 + t**2)/4
+longitudinal: Q=0, Q/(h:h)=0
+corner Euclidean roots: [7 - 4*sqrt(3), 4*sqrt(3) + 7]
+corner leapfrog roots: [-5 - 2*sqrt(6), -5 + 2*sqrt(6)]
+largest leapfrog modulus: 2*sqrt(6) + 5

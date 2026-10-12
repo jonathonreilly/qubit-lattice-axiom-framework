@@ -1,0 +1,9 @@
+lens quarter A=3: u_obs=153.1628  GR sqrt(Delta)=1.52721  link nu^-1/2=0.82862  G-L link/GR=0.54257
+  p=0.002 (22s):
+   op0: hhat_lens(q/20)=+0.337832 hhat_flat(q/20)=+0.216867 | ratio q/10=1.55802 q/20=1.55779 Richardson=1.55771 | ratio/sqrt(Delta)=1.01997
+   op1: hhat_lens(q/20)=+0.350999 hhat_flat(q/20)=+0.225444 | ratio q/10=1.55718 q/20=1.55692 Richardson=1.55684 | ratio/sqrt(Delta)=1.01940
+   op2: hhat_lens(q/20)=+0.364347 hhat_flat(q/20)=+0.234147 | ratio q/10=1.55634 q/20=1.55606 Richardson=1.55596 | ratio/sqrt(Delta)=1.01883
+  p=0.001 (110s):
+   op0: hhat_lens(q/20)=+0.315259 hhat_flat(q/20)=+0.203874 | ratio q/10=1.54663 q/20=1.54634 Richardson=1.54625 | ratio/sqrt(Delta)=1.01246
+   op1: hhat_lens(q/20)=+0.325281 hhat_flat(q/20)=+0.210432 | ratio q/10=1.54609 q/20=1.54578 Richardson=1.54568 | ratio/sqrt(Delta)=1.01209
+   op2: hhat_lens(q/20)=+0.335097 hhat_flat(q/20)=+0.216861 | ratio q/10=1.54555 q/20=1.54521 Richardson=1.54510 | ratio/sqrt(Delta)=1.01171

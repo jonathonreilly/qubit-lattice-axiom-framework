@@ -1,0 +1,5 @@
+M=1.0 margin>=0.2: common zero, |b-b_NN|=0.153; alpha=+0.112 beta=-2.499 (12a-2b=+6.337); vmax=1.092; mu at M=0.3: -0.073 +0.219 (/F_NN)
+M=1.0 margin>=0.4: common zero, |b-b_NN|=0.153; alpha=+0.112 beta=-2.499 (12a-2b=+6.337); vmax=1.092; mu at M=0.3: -0.073 +0.219 (/F_NN)
+M=1.0 margin>=0.6: common zero, |b-b_NN|=0.153; alpha=+0.112 beta=-2.499 (12a-2b=+6.337); vmax=1.092; mu at M=0.3: -0.073 +0.219 (/F_NN)
+M=1.0 margin>=0.8: common zero, |b-b_NN|=0.154; alpha=+0.176 beta=-1.853 (12a-2b=+5.817); vmax=1.097; mu at M=0.3: -0.049 +0.236 (/F_NN)
+M=1.0 margin>=0.9: common zero, |b-b_NN|=0.159; alpha=+0.237 beta=-1.253 (12a-2b=+5.354); vmax=1.140; mu at M=0.3: -0.024 +0.252 (/F_NN)

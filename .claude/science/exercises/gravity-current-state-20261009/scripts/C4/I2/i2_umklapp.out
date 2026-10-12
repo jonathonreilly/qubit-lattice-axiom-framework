@@ -1,0 +1,35 @@
+=== (A) on-shell 2->2 umklapp fraction vs incoming energy, folded fine lattice d = 2 ===
+N= 4 (E_max=  11.4): umklapp fraction in E_in/E_max bins of 0.2:    -      -   0.000  0.000  0.073  0.263  0.475  0.533  0.493  0.456 
+N= 8 (E_max=  22.6): umklapp fraction in E_in/E_max bins of 0.2:    -   0.000  0.000  0.005  0.086  0.265  0.478  0.534  0.530  0.414 
+N=16 (E_max=  45.3): umklapp fraction in E_in/E_max bins of 0.2:    -      -   0.000  0.003  0.100  0.254  0.491  0.534  0.527  0.444 
+-> the curves coincide in E/E_max (E_max ~ 2 sqrt(2) N): tower umklapp switches on at a fixed fraction of the
+   truncation-edge energy and is O(1) above it, for every N.
+
+   thermal umklapp fraction Gamma_U/Gamma (Boltzmann incoming pairs, same on-shell weights), T in coarse units
+N= 4: T=   2: 2.30e-01  T=   4: 3.76e-01  T=   8: 4.28e-01  T=  16: 4.48e-01  T=  32: 4.56e-01
+N= 8: T=   2: 2.98e-02  T=   4: 2.31e-01  T=   8: 3.75e-01  T=  16: 4.27e-01  T=  32: 4.46e-01
+N=16: T=   2: 7.72e-06  T=   4: 1.92e-02  T=   8: 2.18e-01  T=  16: 3.69e-01  T=  32: 4.24e-01
+-> at fixed T the umklapp fraction falls like exp(-E_th/T) with E_th proportional to N; at T ~ N it is O(1).
+
+=== (B) vacuum-loop umklapp fraction of a contact vertex (zone-averaged, all bands) ===
+d=1 N=  4: flat fraction 0.3342   basketball-weighted fraction 0.1070
+d=1 N= 16: flat fraction 0.3340   basketball-weighted fraction 0.0369
+d=1 N= 64: flat fraction 0.3339   basketball-weighted fraction 0.0135
+d=2 N=  4: flat fraction 0.5559   basketball-weighted fraction 0.4000
+d=2 N= 16: flat fraction 0.5553   basketball-weighted fraction 0.3733
+d=2 N= 64: flat fraction 0.5542   basketball-weighted fraction 0.3630
+d=3 N=  4: flat fraction 0.7047   basketball-weighted fraction 0.6213
+d=3 N= 16: flat fraction 0.7054   basketball-weighted fraction 0.6179
+d=3 N= 64: flat fraction 0.7032   basketball-weighted fraction 0.6149
+   exact flat values: d=1: 1/3, d=2: 5/9, d=3: 19/27 = 0.7037 (sum of three uniforms leaves the zone)
+-> N-independent: in loops, most of the contact-vertex phase space is tower umklapp, for every N.
+
+=== (C) N-band cells without an internal Z_N label: low-band tower umklapp from a cell-site contact vertex ===
+  process: bands (0,0) -> (1,0) at coarse momenta k1 + k2 = k3 + k4 (tower mismatch 2 pi: a LOW-energy tower umklapp)
+  ratio = |V_umklapp| / |V_normal (0,0)->(0,0)|, vertex V = sum_j psi1 psi2 conj(psi3 psi4) over cell sites
+N= 4: delta=0e+00: 2.93e-16  delta=1e-03: 8.59e-04  delta=1e-02: 7.52e-03  delta=1e-01: 1.07e-01
+N= 8: delta=0e+00: 9.71e-16  delta=1e-03: 1.53e-03  delta=1e-02: 3.59e-02  delta=1e-01: 1.57e-01
+N=16: delta=0e+00: 5.29e-15  delta=1e-03: 5.17e-03  delta=1e-02: 6.33e-02  delta=1e-01: 2.97e-01
+-> with the exact Z_N (fine translation) the low-band tower umklapp vertex vanishes (machine zero); any breaking
+   of it switches on tower umklapp among the LOWEST bands, linearly in the breaking.  Tower-normal contact
+   interactions among N bands require the internal Z_N label, i.e. the network to be a fine lattice of spacing a/N.

@@ -1,0 +1,48 @@
+
+== 2D eps=0.0625 U=24.0 (init: u*v < 10.0) ==
+   N~9282  [14s]
+   uv in [10,20) n=  3574  <A^2>= 0.2429  rms open=3.961e-01  rms closed=4.699e-01  closed/open=  1.186
+   uv in [20,40) n=  5793  <A^2>= 0.2786  rms open=4.500e-01  rms closed=6.594e-01  closed/open=  1.465
+   uv in [40,80) n=  8819  <A^2>= 0.3173  rms open=4.919e-01  rms closed=9.475e-01  closed/open=  1.926
+   uv in [80,160) n= 12302  <A^2>= 0.3555  rms open=5.242e-01  rms closed=1.537e+00  closed/open=  2.931
+   uv in [160,320) n= 13693  <A^2>= 0.3930  rms open=5.588e-01  rms closed=2.223e+00  closed/open=  3.978
+   uv in [320,576) n=  6462  <A^2>= 0.4235  rms open=5.764e-01  rms closed=3.324e+00  closed/open=  5.766
+
+== 2D eps=0.015625 U=24.0 (init: u*v < 10.0) ==
+   N~36725  [37s]
+   uv in [10,20) n=  6929  <A^2>= 0.0553  rms open=1.788e-01  rms closed=2.001e-01  closed/open=  1.119
+   uv in [20,40) n= 11399  <A^2>= 0.0633  rms open=2.044e-01  rms closed=2.379e-01  closed/open=  1.164
+   uv in [40,80) n= 17406  <A^2>= 0.0718  rms open=2.262e-01  rms closed=3.053e-01  closed/open=  1.350
+   uv in [80,160) n= 24381  <A^2>= 0.0799  rms open=2.468e-01  rms closed=4.140e-01  closed/open=  1.677
+   uv in [160,320) n= 27618  <A^2>= 0.0882  rms open=2.557e-01  rms closed=5.253e-01  closed/open=  2.054
+   uv in [320,576) n= 13135  <A^2>= 0.0951  rms open=2.701e-01  rms closed=5.305e-01  closed/open=  1.964
+
+== 4D eps=0.02 T=6.0 tau0=3.0 ==
+   N~8585  [18s]
+   tau in [3.0,4.0) n=  3033  <A^2>=   0.181  rms open= 6.900e-01  rms closed= 6.797e-01  closed/open=9.851e-01
+   tau in [4.0,5.0) n=   990  <A^2>=   0.376  rms open= 1.037e+00  rms closed= 1.026e+00  closed/open=9.897e-01
+   tau in [5.0,6.0) n=    79  <A^2>=   0.598  rms open= 1.303e+00  rms closed= 1.394e+00  closed/open=1.070e+00
+
+== 4D eps=0.05 T=7.0 tau0=3.0 ==
+   N~6269  [7s]
+   tau in [3.0,4.0) n=  2574  <A^2>=   0.529  rms open= 1.145e+00  rms closed= 1.129e+00  closed/open=9.867e-01
+   tau in [4.0,5.0) n=  1347  <A^2>=   1.103  rms open= 1.742e+00  rms closed= 1.696e+00  closed/open=9.736e-01
+   tau in [5.0,6.0) n=   456  <A^2>=   1.847  rms open= 2.181e+00  rms closed= 2.396e+00  closed/open=1.099e+00
+   tau in [6.0,7.0) n=    45  <A^2>=   2.672  rms open= 2.570e+00  rms closed= 2.957e+00  closed/open=1.151e+00
+
+== 4D eps=0.1 T=8.0 tau0=3.0 ==
+   N~5434  [4s]
+   tau in [3.0,4.0) n=  2322  <A^2>=   1.350  rms open= 1.771e+00  rms closed= 1.742e+00  closed/open=9.837e-01
+   tau in [4.0,5.0) n=  1607  <A^2>=   2.814  rms open= 2.475e+00  rms closed= 2.732e+00  closed/open=1.104e+00
+   tau in [5.0,6.0) n=   750  <A^2>=   4.817  rms open= 3.591e+00  rms closed= 4.763e+00  closed/open=1.326e+00
+   tau in [6.0,7.0) n=   239  <A^2>=   7.258  rms open= 4.214e+00  rms closed= 7.028e+00  closed/open=1.668e+00
+   tau in [7.0,8.0) n=    21  <A^2>=   9.644  rms open= 5.272e+00  rms closed= 7.828e+00  closed/open=1.485e+00
+
+== 4D eps=0.2 T=9.0 tau0=3.0 ==
+   N~4208  [2s]
+   tau in [3.0,4.0) n=  2762  <A^2>=   3.845  rms open= 2.758e+00  rms closed= 2.740e+00  closed/open=9.938e-01
+   tau in [4.0,5.0) n=  2045  <A^2>=   8.176  rms open= 4.311e+00  rms closed= 4.923e+00  closed/open=1.142e+00
+   tau in [5.0,6.0) n=  1269  <A^2>=  14.422  rms open= 5.744e+00  rms closed= 8.736e+00  closed/open=1.521e+00
+   tau in [6.0,7.0) n=   619  <A^2>=  21.915  rms open= 7.047e+00  rms closed= 1.629e+01  closed/open=2.312e+00
+   tau in [7.0,8.0) n=   168  <A^2>=  31.304  rms open= 8.126e+00  rms closed= 2.754e+01  closed/open=3.390e+00
+   tau in [8.0,9.0) n=    14  <A^2>=  39.616  rms open= 8.070e+00  rms closed= 5.465e+01  closed/open=6.772e+00

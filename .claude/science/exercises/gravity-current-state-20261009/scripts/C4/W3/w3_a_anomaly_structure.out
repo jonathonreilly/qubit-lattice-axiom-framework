@@ -1,0 +1,10 @@
+(a) delta F - dS_anom is a total derivative: True
+    U gauge invariant: True
+    V gauge invariant: True
+    W gauge invariant: True
+    I = F[U,V,W] gauge invariant (up to total derivative): True
+(b) L_WZ(W2) - (I - F) is a total derivative: True
+(c) F at B = E = 0: 0
+    unitary gauge L_GR + F: det M = M_p2*a**2*k**6*(2*M_p2*k**2*omega**2 + a*k**2 - 3*a*omega**2)/128
+    roots in w^2: [a*k**2/(-2*M_p2*k**2 + 3*a)]  (W2: a k^2/(3a - 2 Mp2 k^2))
+(d) h-local mass terms solving delta F_loc = dS_anom: [] (empty => none: non-trivial in the h-local class)

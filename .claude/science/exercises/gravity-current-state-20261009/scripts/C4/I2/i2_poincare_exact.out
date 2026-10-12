@@ -1,0 +1,11 @@
+(1) fine: max|{K_f,H} + P_f| = 0.0, max|{P_f,H}| = 0.0  (fine momentum conserved, exact)
+N=2: (2) unimproved coarse momentum: max|{P_c,H}| = 99.9 (nonzero: not conserved; compare max|P_f/N| = 28.5);  (3) improved: max|K'_c - K_f/N| = 0.0, max|P'_c - P_f/N| = 0.0
+N=3: (2) unimproved coarse momentum: max|{P_c,H}| = 69.8 (nonzero: not conserved; compare max|P_f/N| = 24.5);  (3) improved: max|K'_c - K_f/N| = 0.0, max|P'_c - P_f/N| = 1.213251721310371e-12
+N=4: (2) unimproved coarse momentum: max|{P_c,H}| = 70.5 (nonzero: not conserved; compare max|P_f/N| = 19.8);  (3) improved: max|K'_c - K_f/N| = 0.0, max|P'_c - P_f/N| = 0.0
+N=8: (2) unimproved coarse momentum: max|{P_c,H}| = 47.1 (nonzero: not conserved; compare max|P_f/N| = 10.2);  (3) improved: max|K'_c - K_f/N| = 0.0, max|P'_c - P_f/N| = 0.0
+(4) time-average of (P_c - P_f/N) along the free flow (band-diagonal part); P_f/N for scale:
+   N=2: rms(P_c - P_f/N) = 1.04e+01, |P_f/N| = 5.25e+00;  T=  100: |<diff>_t| = 6.90e-02  T=  400: |<diff>_t| = 1.95e-02  T= 1600: |<diff>_t| = 1.05e-02
+   N=4: rms(P_c - P_f/N) = 1.05e+01, |P_f/N| = 6.88e+00;  T=  100: |<diff>_t| = 3.36e-03  T=  400: |<diff>_t| = 3.00e-02  T= 1600: |<diff>_t| = 6.19e-03
+   N=8: rms(P_c - P_f/N) = 8.45e+00, |P_f/N| = 5.94e+00;  T=  100: |<diff>_t| = 7.28e-02  T=  400: |<diff>_t| = 2.84e-02  T= 1600: |<diff>_t| = 6.23e-03
+-> the N-site-cell network's coarse Poincare generators equal the fine lattice's after a cell-local improvement;
+   without it the coarse momentum is not even conserved (pure interband oscillation, zero band-diagonal part).

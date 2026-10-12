@@ -1,0 +1,24 @@
+nn KG on Z^3: soft Ward defect D/kappa on on-shell non-umklapp 2->2 collisions
+  m=1.0 kappa= 0.4000  median D/kappa=9.012e-03  max=4.485e-02  (n=400)
+  m=1.0 kappa= 0.2000  median D/kappa=2.180e-03  max=1.090e-02  (n=400)
+  m=1.0 kappa= 0.1000  median D/kappa=5.675e-04  max=2.601e-03  (n=400)
+  m=1.0 kappa= 0.0500  median D/kappa=1.394e-04  max=7.844e-04  (n=400)
+  m=1.0 kappa= 0.0250  median D/kappa=3.275e-05  max=1.995e-04  (n=400)
+  m=1.0 kappa= 0.0125  median D/kappa=8.969e-06  max=4.259e-05  (n=400)
+  m=1.0 fitted exponent p (D/kappa ~ kappa^p, small kappa) = 2.004
+  m=0.0 kappa= 0.4000  median D/kappa=9.891e-03  max=6.880e-02  (n=398)
+  m=0.0 kappa= 0.2000  median D/kappa=2.662e-03  max=1.543e-02  (n=400)
+  m=0.0 kappa= 0.1000  median D/kappa=5.647e-04  max=5.568e-03  (n=400)
+  m=0.0 kappa= 0.0500  median D/kappa=1.524e-04  max=1.444e-03  (n=400)
+  m=0.0 kappa= 0.0250  median D/kappa=3.573e-05  max=2.504e-04  (n=400)
+  m=0.0 kappa= 0.0125  median D/kappa=9.547e-06  max=7.925e-05  (n=400)
+  m=0.0 fitted exponent p (D/kappa ~ kappa^p, small kappa) = 1.975
+
+Relative tree-level defect ~ C kappa^2 with kappa = p/M_Pl (C from the m=1 fit at smallest kappa):
+  atom-scale 10 keV        kappa=8.20e-25  D/kappa ~ 3.5e-50
+  nucleon Fermi 0.25 GeV   kappa=2.05e-20  D/kappa ~ 2.2e-41
+  LHC 1 TeV                kappa=8.20e-17  D/kappa ~ 3.5e-34
+  UHECR 1e11 GeV           kappa=8.20e-09  D/kappa ~ 3.5e-18
+
+Umklapp example (m=1): k1=k2=(2.5,0.3,-0.2); out pair with total K-2pi e_x, energy conserved
+  linear-charge defect |sum k_in - sum k_out| = 6.2832 (=2 pi); sin-charge defect = 1.2311

@@ -1,0 +1,4 @@
+family: ['loop_fermion_m0.1.json', 'loop_fermion_m0.15.json', 'loop_fermion_m0.2.json', 'loop_fermion_m0.3.json', 'loop_fermion_m0.5.json', 'photon']
+kinetic (mod EH) singular values: 1.06e-01 3.63e-02 8.66e-04 5.07e-05 3.30e-06 1.53e-07
+fermion-only (mod EH): 3.63e-02 8.69e-04 5.16e-05 5.18e-06 1.60e-07
+masses singular values: 2.60e-01 7.30e-02 7.84e-04

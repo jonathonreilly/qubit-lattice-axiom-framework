@@ -1,0 +1,15 @@
+traceless subspace dim = 5
+|O (proper cubic)| = 24, |I (icosahedral)| = 60, |W(B4)| = 384
+  SO(3) on Sym2(R3)                       : 2 independent mass invariants
+  O proper cubic (24) on Sym2(R3)         : 3 independent mass invariants
+  I icosahedral (60) on Sym2(R3)          : 2 independent mass invariants
+  SO(3) on traceless (5)                  : 1 independent mass invariants
+  O proper cubic on traceless (5)         : 2 independent mass invariants
+  I icosahedral on traceless (5)          : 1 independent mass invariants
+  SO(4) on Sym2(R4)                       : 2 independent mass invariants
+  W(B4) hypercubic (384) on Sym2(R4)      : 3 independent mass invariants
+  SO(3,1) Lorentz on Sym2(R4)             : 2 independent mass invariants
+  -> no rotation/Lorentz/point group gives 0: tr(h^2) is invariant under every orthogonal group.
+(b) rank of span{q xi + xi q} = 10 of 10 -> M(h, delta h) = 0 for all h, delta h forces M = 0 (local mass forms are never gauge invariant)
+(c) E_g: d2/dt2 f(det g)|0 = 0; cubic solid sum g_ii^2: 8; tr g^2: 8
+(c) T_2g: d2/dt2 f(det g)|0 = 0; cubic solid sum g_ii^2: 4; tr g^2: 8

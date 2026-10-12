@@ -1,0 +1,67 @@
+l_k=7.90e-20 m  eps=1.752e-63  sqrt(eps)=4.186e-32  sqrt(eps)/l_k=5.298e-13 /m
+c_low op0 (proved): var rate gamma=3.327e-13/m  2/gamma=6.011e+12 m
+c_low op2 (proved): var rate gamma=3.772e-13/m  2/gamma=5.302e+12 m
+k_h op0 (derived): var rate gamma=1.449e-12/m  2/gamma=1.380e+12 m
+k_h op2 (derived): var rate gamma=1.724e-12/m  2/gamma=1.160e+12 m
+
+=== D = 1 Gpc (flat-space proper-time formula) ===
+source extent                                     s (m)   tau (m)  n_var c_low    n_var k_h  (op0; sd = n_var/2)
+atom size                                      1.00e-10  7.86e+07    2.614e-05    1.138e-04
+optical thermal coherence (~1 um)              1.00e-06  7.86e+09    2.614e-03    1.138e-02
+optical line, 10 ns lifetime (3 m)             3.00e+00  1.36e+13    4.527e+00    1.972e+01
+radio continuum, 100 MHz band (3 m)            3.00e+00  1.36e+13    4.527e+00    1.972e+01
+radio, 1 MHz channel (300 m)                   3.00e+02  1.36e+14    4.527e+01    1.972e+02
+maser line, ~1 km                              1.00e+03  2.48e+14    8.266e+01    3.600e+02
+maser/1 kHz channel (3e5 m) = FRB 1 ms         3.00e+05  4.30e+15    1.432e+03    6.235e+03
+1 s emission                                   3.00e+08  1.36e+17    4.526e+04    1.971e+05
+lensed SN, ~100 d                              2.59e+15  4.00e+20    1.330e+08    5.794e+08
+quasar monitoring 20 yr                        1.89e+17  3.42e+21    1.137e+09    4.952e+09
+quasar lifetime 1e7 yr                         9.46e+22  2.42e+24    8.046e+11    3.504e+12
+  threshold s for n_var=1 (c_low op0): 1.464e-01 m = 4.88e-10 s ; for n_sd=1 (n_var=2): 5.854e-01 m = 1.95e-09 s
+  threshold s for n_var=1 (k_h op0): 7.717e-03 m = 2.57e-11 s ; for n_sd=1 (n_var=2): 3.087e-02 m = 1.03e-10 s
+
+=== D = 3 Gpc (flat-space proper-time formula) ===
+source extent                                     s (m)   tau (m)  n_var c_low    n_var k_h  (op0; sd = n_var/2)
+atom size                                      1.00e-10  1.36e+08    4.527e-05    1.972e-04
+optical thermal coherence (~1 um)              1.00e-06  1.36e+10    4.527e-03    1.972e-02
+optical line, 10 ns lifetime (3 m)             3.00e+00  2.36e+13    7.842e+00    3.415e+01
+radio continuum, 100 MHz band (3 m)            3.00e+00  2.36e+13    7.842e+00    3.415e+01
+radio, 1 MHz channel (300 m)                   3.00e+02  2.36e+14    7.842e+01    3.415e+02
+maser line, ~1 km                              1.00e+03  4.30e+14    1.432e+02    6.235e+02
+maser/1 kHz channel (3e5 m) = FRB 1 ms         3.00e+05  7.45e+15    2.480e+03    1.080e+04
+1 s emission                                   3.00e+08  2.36e+17    7.839e+04    3.414e+05
+lensed SN, ~100 d                              2.59e+15  6.93e+20    2.304e+08    1.004e+09
+quasar monitoring 20 yr                        1.89e+17  5.92e+21    1.969e+09    8.577e+09
+quasar lifetime 1e7 yr                         9.46e+22  4.19e+24    1.393e+12    6.067e+12
+  threshold s for n_var=1 (c_low op0): 4.879e-02 m = 1.63e-10 s ; for n_sd=1 (n_var=2): 1.951e-01 m = 6.51e-10 s
+  threshold s for n_var=1 (k_h op0): 2.572e-03 m = 8.58e-12 s ; for n_sd=1 (n_var=2): 1.029e-02 m = 3.43e-11 s
+
+=== D = 5 Gpc (flat-space proper-time formula) ===
+source extent                                     s (m)   tau (m)  n_var c_low    n_var k_h  (op0; sd = n_var/2)
+atom size                                      1.00e-10  1.76e+08    5.845e-05    2.545e-04
+optical thermal coherence (~1 um)              1.00e-06  1.76e+10    5.845e-03    2.545e-02
+optical line, 10 ns lifetime (3 m)             3.00e+00  3.04e+13    1.012e+01    4.409e+01
+radio continuum, 100 MHz band (3 m)            3.00e+00  3.04e+13    1.012e+01    4.409e+01
+radio, 1 MHz channel (300 m)                   3.00e+02  3.04e+14    1.012e+02    4.409e+02
+maser line, ~1 km                              1.00e+03  5.55e+14    1.848e+02    8.050e+02
+maser/1 kHz channel (3e5 m) = FRB 1 ms         3.00e+05  9.62e+15    3.201e+03    1.394e+04
+1 s emission                                   3.00e+08  3.04e+17    1.012e+05    4.407e+05
+lensed SN, ~100 d                              2.59e+15  8.94e+20    2.975e+08    1.296e+09
+quasar monitoring 20 yr                        1.89e+17  7.64e+21    2.543e+09    1.107e+10
+quasar lifetime 1e7 yr                         9.46e+22  5.40e+24    1.798e+12    7.831e+12
+  threshold s for n_var=1 (c_low op0): 2.927e-02 m = 9.76e-11 s ; for n_sd=1 (n_var=2): 1.171e-01 m = 3.91e-10 s
+  threshold s for n_var=1 (k_h op0): 1.543e-03 m = 5.15e-12 s ; for n_sd=1 (n_var=2): 6.173e-03 m = 2.06e-11 s
+
+Displaced-end suppression z/|Delta| = gamma*l_k^2/r (c=k_h op0):
+  r=1e-15 m: 9.04e-36
+  r=1e-10 m: 9.04e-41
+  r=1e-06 m: 9.04e-45
+  r=1e+00 m: 9.04e-51
+
+Geometric shared proper time tau_x = sqrt(tau^2+r^2/4)-r/2 (exact, rest frame of x-midpoint):
+  tau=7.9e+12 r=1e-10: tau_x=7.9000e+12, tau-tau_x=0.000e+00
+  tau=7.9e+12 r=1e+12: tau_x=7.4158e+12, tau-tau_x=4.842e+11
+  tau=7.9e+12 r=1e+13: tau_x=4.3493e+12, tau-tau_x=3.551e+12
+band parameter l_k*omega/c for optical 600 nm: 8.27e-13  ln = -27.8
+band parameter l_k*omega/c for radio 5 GHz: 8.28e-18  ln = -39.3
+band parameter l_k*omega/c for radio 22 GHz maser: 3.64e-17  ln = -37.9

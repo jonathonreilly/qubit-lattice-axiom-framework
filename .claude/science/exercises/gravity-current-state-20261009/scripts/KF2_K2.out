@@ -1,0 +1,26 @@
+L=64, M=0.2
+(a) truncation, s = 1.5 (untruncated floor ~ 1e-10 at this L, see R2_c1.out)
+  gauss_cut_proper  R=3s  H_E=+1.442e-01 H_T=+6.134e-02  exp(-R^2/2s^2)=1.1e-02
+  gauss_cut_label   R=3s  H_E=-1.530e-02 H_T=-1.741e-02  exp(-R^2/2s^2)=1.1e-02
+  gauss_cut_proper  R=4s  H_E=+9.188e-02 H_T=+1.158e-01  exp(-R^2/2s^2)=3.4e-04
+  gauss_cut_label   R=4s  H_E=-2.530e-03 H_T=-2.016e-03  exp(-R^2/2s^2)=3.4e-04
+  gauss_cut_proper  R=5s  H_E=-1.674e-03 H_T=-1.716e-03  exp(-R^2/2s^2)=3.7e-06
+  gauss_cut_label   R=5s  H_E=-6.236e-05 H_T=-6.775e-05  exp(-R^2/2s^2)=3.7e-06
+  gauss_cut_proper  R=6s  H_E=+2.180e-05 H_T=+2.149e-05  exp(-R^2/2s^2)=1.5e-08
+  gauss_cut_label   R=6s  H_E=-1.024e-06 H_T=-8.788e-07  exp(-R^2/2s^2)=1.5e-08
+  gauss_cut_proper  R=7s  H_E=-3.214e-08 H_T=-4.276e-08  exp(-R^2/2s^2)=2.3e-11
+  gauss_cut_label   R=7s  H_E=-1.695e-09 H_T=-1.812e-09  exp(-R^2/2s^2)=2.3e-11
+(b) generated from a finite-range rule: K = (2/s^2)(1 - exp(-s^2 S_g/2))
+  heat_nn  s=  1.0 H_E=+6.833e-03 H_T=+1.718e-02
+  heat_nn  s=  2.0 H_E=-1.075e-04 H_T=+2.728e-04  local slope dlog|H_E|/dlog s = -5.99
+  heat_nn  s=  4.0 H_E=-7.264e-07 H_T=+3.219e-06  local slope dlog|H_E|/dlog s = -7.21
+  heat_nn  s=  8.0 H_E=-7.858e-09 H_T=+3.658e-08  local slope dlog|H_E|/dlog s = -6.53
+  heat_nn  s= 16.0 H_E=-6.268e-09 H_T=+1.343e-09  local slope dlog|H_E|/dlog s = -0.33
+  heat_imp s=  1.0 H_E=+2.295e-03 H_T=+8.924e-03
+  heat_imp s=  2.0 H_E=-3.162e-05 H_T=+5.261e-05  local slope dlog|H_E|/dlog s = -6.18
+  heat_imp s=  4.0 H_E=-9.543e-08 H_T=+1.936e-07  local slope dlog|H_E|/dlog s = -8.37
+  heat_imp s=  8.0 H_E=-6.304e-10 H_T=+6.413e-10  local slope dlog|H_E|/dlog s = -7.24
+  heat_imp s= 16.0 H_E=-6.168e-09 H_T=+9.790e-10  local slope dlog|H_E|/dlog s = +3.29
+  (L=96 spot check of heat_nn s=8, s=16)
+  heat_nn  s=  8.0 L=96 H_E=-7.517e-09 H_T=+3.652e-08
+  heat_nn  s= 16.0 L=96 H_E=-1.217e-10 H_T=+3.490e-10

@@ -1,0 +1,4 @@
+M=1.0 E : transl.err T1 4.4e-16 T2 4.5e-16 | operator para -4.324279e-03 full -1.480297e-12 | Jacobian form +2.400424e-16  [sin k flow: +3.1518e-03]  (2s)
+M=1.0 T2: transl.err T1 1.1e-16 T2 1.4e-16 | operator para -1.213181e-02 full +2.516506e-11 | Jacobian form -2.146720e-16  [sin k flow: +0.0000e+00]  (4s)
+M=0.3 E : transl.err T1 4.4e-16 T2 4.4e-16 | operator para -8.006144e-03 full +7.379647e-04 | Jacobian form +7.379647e-04  [sin k flow: +4.6538e-03]  (5s)
+M=0.3 T2: transl.err T1 1.1e-16 T2 1.9e-16 | operator para -1.880176e-02 full +2.585476e-04 | Jacobian form +2.585476e-04  [sin k flow: +0.0000e+00]  (7s)

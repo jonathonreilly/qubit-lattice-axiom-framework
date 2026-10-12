@@ -1,0 +1,21 @@
+== trade-off on a 14x14 grid (eps in [0.02,0.7], h in [1e-3,3]), T=100 ==
+  isotropic, L=6:
+    u_bulk <= 1e-02, m(T/2)>0.5: max t90 =  30  at eps=0.178 h=0.0117 (xi=14.22, u=1.1e-03)
+    u_bulk <= 1e-04, m(T/2)>0.5: max t90 =  18  at eps=0.079 h=0.0217 (xi=7.67, u=3.9e-05)
+    u_bulk <= 1e-06, m(T/2)>0.5: max t90 =  10  at eps=0.020 h=0.0403 (xi=4.14, u=1.6e-07)
+    u_bulk <= 1e-08, m(T/2)>0.5: max t90 =   1  at eps=0.020 h=3.0000 (xi=0.09, u=8.0e-09)
+  isotropic, L=8:
+    u_bulk <= 1e-02, m(T/2)>0.5: max t90 =  25  at eps=0.234 h=0.0117 (xi=10.73, u=3.6e-03)
+    u_bulk <= 1e-04, m(T/2)>0.5: max t90 =   8  at eps=0.020 h=0.0403 (xi=3.11, u=1.6e-07)
+    u_bulk <= 1e-06, m(T/2)>0.5: max t90 =   8  at eps=0.020 h=0.0403 (xi=3.11, u=1.6e-07)
+    u_bulk <= 1e-08, m(T/2)>0.5: max t90 =   1  at eps=0.020 h=3.0000 (xi=0.09, u=8.0e-09)
+  anisotropic single column (L=1):
+    u_bulk <= 1e-02, m(T/2)>0.5: max t90 =  37  at eps=0.020 h=0.0117 (xi=23.98, u=8.4e-03)
+    u_bulk <= 1e-04, m(T/2)>0.5: max t90 =   2  at eps=0.020 h=1.6205 (xi=0.62, u=9.9e-05)
+    u_bulk <= 1e-06 and records formed (m>0.5): none on grid
+    u_bulk <= 1e-08 and records formed (m>0.5): none on grid
+== anisotropic single column, large T: xi vs 1/h, kernel K(1->0) vs c^2/(b-a) ==
+  h= 0.050 eps=1e-03: xi=    19.984 (1/h=    20.0); K(0->1)=4.879e-02 (~h=5.0e-02); K(1->0)=1.950e-05 (c^2/(b-a)=2.050e-05)
+  h= 0.020 eps=1e-04: xi=    49.998 (1/h=    50.0); K(0->1)=1.980e-02 (~h=2.0e-02); K(1->0)=4.950e-07 (c^2/(b-a)=5.050e-07)
+  h= 0.010 eps=1e-05: xi=   100.000 (1/h=   100.0); K(0->1)=9.950e-03 (~h=1.0e-02); K(1->0)=9.950e-09 (c^2/(b-a)=1.005e-08)
+  h= 0.002 eps=1e-06: xi=   500.000 (1/h=   500.0); K(0->1)=1.998e-03 (~h=2.0e-03); K(1->0)=4.995e-10 (c^2/(b-a)=5.005e-10)

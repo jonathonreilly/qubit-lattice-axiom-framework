@@ -1,0 +1,5 @@
+simple cubic, NN central springs       : (array([0.  , 0.  , 0.  , 0.25, 0.25]), 2)
+FCC, NN central springs                : (array([0.25, 0.25, 0.5 , 0.5 , 0.5 ]), 5)
+diamond, central, inner sublattice FIXED: (array([0.        , 0.        , 0.66666667, 0.66666667, 0.66666667]), 3)
+diamond, central, inner sublattice relaxes (pentamode): (array([-0., -0.,  0.,  0.,  0.]), 0)
+diamond, + bond-angle term (kb=0.3)    : (array([1.71428571, 1.71428571, 1.71428571, 2.4       , 2.4       ]), 5)

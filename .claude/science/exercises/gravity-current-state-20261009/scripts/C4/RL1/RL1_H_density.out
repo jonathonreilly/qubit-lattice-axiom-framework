@@ -1,0 +1,3 @@
+lens strength 0.02: |ln nu + ln Delta| range 2.461e-03..6.336e-02 ; best scalar-density fit residual: max 6.341e-02, rms 2.372e-02 (rms/rms(rhs) = 0.769)
+lens strength 0.10: |ln nu + ln Delta| range 1.233e-02..3.358e-01 ; best scalar-density fit residual: max 3.276e-01, rms 1.240e-01 (rms/rms(rhs) = 0.773)
+lens strength 0.30: |ln nu + ln Delta| range 3.714e-02..1.199e+00 ; best scalar-density fit residual: max 1.078e+00, rms 4.224e-01 (rms/rms(rhs) = 0.786)

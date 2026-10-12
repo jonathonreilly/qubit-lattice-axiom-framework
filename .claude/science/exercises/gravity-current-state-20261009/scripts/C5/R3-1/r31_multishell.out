@@ -1,0 +1,29 @@
+shell N=-1: 2972320 pts; rel LV std at kappa=0.05: 1.739e-04
+shell N=-2: 4468320 pts; rel LV std at kappa=0.05: 1.867e-04
+shell N=-3: 1486332 pts; rel LV std at kappa=0.05: 4.662e-04
+shell N=-4: 2236240 pts; rel LV std at kappa=0.05: 4.476e-05
+shell N=-5: 1789992 pts; rel LV std at kappa=0.05: 9.629e-04
+shell N=-6: 2230878 pts; rel LV std at kappa=0.05: 3.730e-04
+shell N=-7: 2650773 pts; rel LV std at kappa=0.05: 6.909e-05
+shell N=-8: 1124232 pts; rel LV std at kappa=0.05: 3.949e-04
+shell N=-9: 2314952 pts; rel LV std at kappa=0.05: 2.455e-04
+shell N=-10: 2691936 pts; rel LV std at kappa=0.05: 4.177e-04
+shell N=-11: 3249072 pts; rel LV std at kappa=0.05: 2.306e-05
+shell N=-12: 1119750 pts; rel LV std at kappa=0.05: 5.962e-04
+shell N=-13: 2059752 pts; rel LV std at kappa=0.05: 1.459e-03
+shell N=-14: 3984852 pts; rel LV std at kappa=0.05: 2.380e-05
+shell N=-15: 1587624 pts; rel LV std at kappa=0.05: 2.133e-04
+shell N=-16: 560456 pts; rel LV std at kappa=0.05: 3.056e-04
+shell N=-17: 2092440 pts; rel LV std at kappa=0.05: 9.378e-04
+shell N=-18: 3477768 pts; rel LV std at kappa=0.05: 1.082e-05
+shell N=-19: 2117118 pts; rel LV std at kappa=0.05: 1.257e-03
+shell N=-20: 1339344 pts; rel LV std at kappa=0.05: 1.286e-04
+shell N=-21: 1702512 pts; rel LV std at kappa=0.05: 3.571e-04
+shell N=-22: 4881504 pts; rel LV std at kappa=0.05: 4.544e-06
+shell N=-23: 3115704 pts; rel LV std at kappa=0.05: 5.871e-04
+shell N=-24: 560070 pts; rel LV std at kappa=0.05: 2.142e-04
+
+24 non-empty shells
+kappa=0.2: mean single-shell rel LV 2.306e-03; equal-weight sum rel LV 4.915e-04; ratio 0.213 (1/sqrt(nshell) = 0.204); mean pairwise pattern correlation -0.013
+kappa=0.1: mean single-shell rel LV 7.899e-04; equal-weight sum rel LV 8.946e-05; ratio 0.113 (1/sqrt(nshell) = 0.204); mean pairwise pattern correlation -0.028
+kappa=0.05: mean single-shell rel LV 3.939e-04; equal-weight sum rel LV 1.118e-05; ratio 0.028 (1/sqrt(nshell) = 0.204); mean pairwise pattern correlation -0.036

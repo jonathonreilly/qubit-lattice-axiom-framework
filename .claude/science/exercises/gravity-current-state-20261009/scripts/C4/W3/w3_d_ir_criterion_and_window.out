@@ -1,0 +1,20 @@
+GR reference static (k=100; s, E static gauge modes dropped): Phi k^2 = -2.0000, gamma = Psi/Phi = +1.0000
+(1)+(2) 14 healthy hits from C2:
+   lam=1.0503 K0=+33.866 G0=-14.873  c_T^2=1.814  G_eff/G_GR=-0.585  gamma=-0.117
+   lam=1.0935 K0=+2.998 G0=-28.388  c_T^2=-1.008  G_eff/G_GR=+1.195  gamma=+0.988
+   lam=1.0417 K0=+3.408 G0=-15.005  c_T^2=0.973  G_eff/G_GR=-1.119  gamma=-0.159
+   lam=1.0929 K0=+5.090 G0=-12.751  c_T^2=0.732  G_eff/G_GR=+9.370  gamma=+0.458
+   lam=1.0070 K0=+20.206 G0=-11.569  c_T^2=-9.392  G_eff/G_GR=-0.804  gamma=+0.143
+   lam=1.0469 K0=+22.819 G0=-10.914  c_T^2=0.635  G_eff/G_GR=+0.441  gamma=+2.607
+   lam=1.0073 K0=+16.654 G0=-12.595  c_T^2=1.504  G_eff/G_GR=-0.187  gamma=-3.196
+   lam=1.0653 K0=+38.735 G0=-20.656  c_T^2=0.833  G_eff/G_GR=+13.813  gamma=-0.112
+   lam=1.0826 K0=+3.440 G0=+2.396  c_T^2=2.543  G_eff/G_GR=-0.214  gamma=-2.290
+   lam=1.0330 K0=+31.075 G0=-7.756  c_T^2=4.398  G_eff/G_GR=-0.504  gamma=-0.803
+   lam=1.0102 K0=+21.627 G0=-17.300  c_T^2=-0.066  G_eff/G_GR=+0.460  gamma=+1.245
+   lam=1.0792 K0=+25.335 G0=-30.944  c_T^2=1.081  G_eff/G_GR=-0.478  gamma=-0.045
+   lam=1.0893 K0=+8.550 G0=-7.361  c_T^2=0.577  G_eff/G_GR=-0.393  gamma=-0.885
+   lam=1.0768 K0=+34.886 G0=-39.050  c_T^2=0.717  G_eff/G_GR=-0.669  gamma=-0.208
+   hits with K0 > 0 and G0 < 0: 13/14
+(3) constrained search with c_T = 1 exactly (c0 = -c4):
+   1 healthy hits with c_T = 1 out of 4000 draws
+   gamma=-0.5457 G_eff/G_GR=-1.4430 lam=1.0626 eta=0.532 K0G0=(np.float64(1.31), np.float64(-2.188)) max|c|=0.72

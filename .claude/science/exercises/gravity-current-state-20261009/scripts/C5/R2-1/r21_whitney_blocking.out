@@ -1,0 +1,6 @@
+component (0,0): blocked(dh) - lattice gauge term = 0
+component (0,1): blocked(dh) - lattice gauge term = 0
+component (1,0): blocked(dh) - lattice gauge term = 0
+component (1,1): blocked(dh) - lattice gauge term = 0
+EXACT: True -> with H_nn normalized as above, delta H_mn = D_m Xi_n + D_n Xi_m (m!=n), delta H_nn = D_n Xi_n
+   (i.e. delta H = D Xi + (D Xi)^T with the diagonal carrying the conventional factor 1/2).

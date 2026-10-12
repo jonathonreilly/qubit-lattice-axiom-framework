@@ -1,0 +1,12 @@
+== T2f: relabelling coupling of family-A single pole (sigma_N = 4), m^2 = 0.09 ==
+ L=24 E_g  : relabelled kappa = +1.51e-07   (E(0.1)-E(0) = +7.6e-10);  same kernel, family-A coupling kappa = +1.9580e-03
+ L=24 T_2g : relabelled kappa = -4.11e-08   (E(0.1)-E(0) = -2.0e-10);  same kernel, family-A coupling kappa = +2.8972e-03
+ L=32 E_g  : relabelled kappa = +1.36e-08   (E(0.1)-E(0) = +6.9e-11);  same kernel, family-A coupling kappa = +1.9579e-03
+ L=32 T_2g : relabelled kappa = -2.87e-09   (E(0.1)-E(0) = -1.4e-11);  same kernel, family-A coupling kappa = +2.8972e-03
+ Jacobian det of Phi (T_2g, eps=0.3) over 200 random points: min 0.9999999999 max 1.0000000002
+ IR covariance E_g eps=0.3: D_G/(k^T g^-1 k) at |k|=1e-3 over 20 directions: 0.999995 .. 0.999997
+ IR covariance T_2g eps=0.3: D_G/(k^T g^-1 k) at |k|=1e-3 over 20 directions: 0.999995 .. 0.999997
+ locality (T_2g, eps=0.3): max |coupling| on shell |n|_inf = R:
+   R=1:1.6e-03  R=2:3.5e-04  R=3:1.0e-04  R=4:3.5e-05  R=5:1.5e-05  R=6:6.5e-06  R=7:3.0e-06  R=8:1.5e-06  R=9:7.5e-07  R=10:3.9e-07  R=11:2.0e-07  R=12:1.1e-07
+ time-RP of relabelled kernel (T_2g, eps=0.3), 6 random k, site/link/Hausdorff worst ratio: -9.1e-14
+python3 -u T2f_relabelling.py  3.29s user 0.32s system 99% cpu 3.622 total

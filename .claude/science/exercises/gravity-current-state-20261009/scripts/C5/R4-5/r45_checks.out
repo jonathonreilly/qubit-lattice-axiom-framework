@@ -1,0 +1,19 @@
+(1) aligned time-row prediction Var/rhoV = (2 pi/15) rho s^4:
+    L7: 7.7577   Z4: 0.4189
+(2) Bernoulli thinning, L7, eta=0.7 along x1, T=27, p in {0.3, 0.7}
+    p=0.3  Var(N_rec)=5.5382e+03  predicted p(1-p)<N>+p^2 Var(N_sites)=5.5713e+03  Var(N_rec)/(p rho V)=0.7021 (1-p=0.7)
+    p=0.7  Var(N_rec)=5.6284e+03  predicted p(1-p)<N>+p^2 Var(N_sites)=5.8102e+03  Var(N_rec)/(p rho V)=0.3058 (1-p=0.3)
+(3) boost-averaged L7 (rapidity density ~ sinh^2 eta on [0, eta_max], isotropic direction, fresh u)
+    eta_max=1.0 T= 9  <N>/rhoV=1.00023  Var/rhoV=1.4572e-01 (+-4%)
+    eta_max=1.0 T=13  <N>/rhoV=1.00002  Var/rhoV=7.7998e-02 (+-4%)
+    eta_max=1.0 T=19  <N>/rhoV=1.00001  Var/rhoV=3.6390e-02 (+-4%)
+    eta_max=1.0 T=27  <N>/rhoV=1.00003  Var/rhoV=1.9415e-02 (+-4%)
+    eta_max=1.0 T=38  <N>/rhoV=1.00000  Var/rhoV=1.3300e-02 (+-4%)
+    -> eta_max=1.0: Var ~ T^2.29
+    eta_max=2.0 T= 9  <N>/rhoV=0.99947  Var/rhoV=1.0357e-01 (+-4%)
+    eta_max=2.0 T=13  <N>/rhoV=0.99996  Var/rhoV=5.2406e-02 (+-4%)
+    eta_max=2.0 T=19  <N>/rhoV=1.00009  Var/rhoV=2.9453e-02 (+-4%)
+    eta_max=2.0 T=27  <N>/rhoV=1.00002  Var/rhoV=1.6625e-02 (+-4%)
+    eta_max=2.0 T=38  <N>/rhoV=0.99999  Var/rhoV=9.8925e-03 (+-4%)
+    -> eta_max=2.0: Var ~ T^2.38
+elapsed 13 s

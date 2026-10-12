@@ -1,0 +1,20 @@
+== L=16 m=0.2 lam=0.4
+semi-analytic Feynman L=16: a0*16pi^2=+4.05918 a1*16pi^2=-11.82799 dc_f*16pi^2=-15.88717
+brute force xi=1.0: a0*16pi^2=+4.05918 a1*16pi^2=-11.82798 dc_f*16pi^2=-15.88716
+brute force xi=0.0: a0*16pi^2=-0.83487 a1*16pi^2=-16.69696 dc_f*16pi^2=-15.86208
+brute force xi=3.0: a0*16pi^2=+13.84729 a1*16pi^2=-2.09004 dc_f*16pi^2=-15.93733
+== L=16 m=0.05 lam=0.1
+semi-analytic Feynman L=16: a0*16pi^2=+5.68316 a1*16pi^2=-10.90901 dc_f*16pi^2=-16.59217
+brute force xi=1.0: a0*16pi^2=+5.68316 a1*16pi^2=-10.90899 dc_f*16pi^2=-16.59215
+brute force xi=0.0: a0*16pi^2=-1.38660 a1*16pi^2=-17.97060 dc_f*16pi^2=-16.58400
+brute force xi=3.0: a0*16pi^2=+19.82267 a1*16pi^2=+3.21423 dc_f*16pi^2=-16.60844
+== L=16 m=0.1 lam=0.1
+semi-analytic Feynman L=16: a0*16pi^2=+5.61205 a1*16pi^2=-10.91995 dc_f*16pi^2=-16.53199
+brute force xi=1.0: a0*16pi^2=+5.61205 a1*16pi^2=-10.91993 dc_f*16pi^2=-16.53198
+brute force xi=0.0: a0*16pi^2=-1.31147 a1*16pi^2=-17.81436 dc_f*16pi^2=-16.50289
+brute force xi=3.0: a0*16pi^2=+19.45908 a1*16pi^2=+2.86893 dc_f*16pi^2=-16.59015
+== L=16 m=0.02 lam=0.2
+semi-analytic Feynman L=16: a0*16pi^2=+5.24012 a1*16pi^2=-11.16680 dc_f*16pi^2=-16.40692
+brute force xi=1.0: a0*16pi^2=+5.24012 a1*16pi^2=-11.16679 dc_f*16pi^2=-16.40691
+brute force xi=0.0: a0*16pi^2=-1.22392 a1*16pi^2=-17.62993 dc_f*16pi^2=-16.40601
+brute force xi=3.0: a0*16pi^2=+18.16821 a1*16pi^2=+1.75949 dc_f*16pi^2=-16.40871

@@ -1,0 +1,18 @@
+age in Planck times N_steps = 8.072e+60; 1/N_steps = 1.239e-61
+rho_crit = 3.711e-11 eV^4; rho_CMB = 2.002e-15 eV^4
+  (iii) gravitational-strength state LV: rho_crit/M_Pl^4 = 1.67e-123; rho_CMB/M_Pl^4 = 9.01e-128
+  (iii) gravitational-strength state LV: rho_crit/reduced M_Pl^4 = 1.06e-120; rho_CMB/reduced M_Pl^4 = 5.69e-125
+  SM medium effect, photon in CMB (Euler-Heisenberg, RECALLED formula dv = -(44/135) a^2 rho/m_e^4): |dv| = 5.10e-43
+  SM medium effect, electron thermal-mass anisotropy ~ alpha T0^2/E^2 at E = 1.0e+09 eV: 4.0e-28
+  SM medium effect, electron thermal-mass anisotropy ~ alpha T0^2/E^2 at E = 1.0e+12 eV: 4.0e-34
+  SM medium effect, electron thermal-mass anisotropy ~ alpha T0^2/E^2 at E = 1.4e+15 eV: 2.1e-40
+F1 bound (c_gamma - c_e) = 2.66e-19
+  O(1) record-sector condensate coupled at F2's natural size 8.55e-03: miss factor 3.21e+16 (needs coupling suppression <= 3.1e-17)
+route P2: cumulative records per nucleon over the age at the F7 budget = 2.31e+07
+  records (= persistent worldlines) per lattice site, Earth-density matter (3.3e30 nucleons/m^3): 3.2e-67  -> LV ~ g x 3.2e-67 vs F1 2.7e-19
+  records (= persistent worldlines) per lattice site, cosmic mean baryons (0.25 /m^3): 2.4e-98  -> LV ~ g x 2.4e-98 vs F1 2.7e-19
+gentle arrow: a d_t ln n ~ 1/N_steps = 1.2e-61; quadratic 1.5e-122; dimension-3 b-type ~ M_Pl/N_steps = 1.5e-33 eV (electron b bounds ~1e-22 eV, RECALLED order)
+route P1 (column toy, K(1->0)=eps^2/h, arrow 1/h = age): delta=1e-02: N_rec=2.3e+87, need K(1->0) <= 5.4e-151 per record per step; h = 1.2e-61; eps <= 2.6e-106 (cost -ln eps >= 243)
+route P1 (column toy, K(1->0)=eps^2/h, arrow 1/h = age): delta=1e-06: N_rec=2.3e+87, need K(1->0) <= 5.4e-155 per record per step; h = 1.2e-61; eps <= 2.6e-108 (cost -ln eps >= 248)
+(iii) literal bar in Earth matter: rho/M_Pl^4 = 1.1e-93; tagged-record LV at g=1e-2: 3.2e-69
+flash-law rarity estimate: Gamma/E for a 1 GeV nucleon at 5.3e-11/s = 3.5e-35

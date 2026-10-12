@@ -1,0 +1,22 @@
+== (1) exact pseudo-rotation of the naive Dirac operator (open box, compact support) ==
+plane (3,0) spin-term sign +1: max |[Dirac, L_w] psi| = 5.590e+00
+plane (3,0) spin-term sign -1: max |[Dirac, L_w] psi| = 0.000e+00
+plane (0,1) spin-term sign +1: max |[Dirac, L_w] psi| = 5.590e+00
+plane (0,1) spin-term sign -1: max |[Dirac, L_w] psi| = 0.000e+00
+plane (2,3) spin-term sign +1: max |[Dirac, L_w] psi| = 5.858e+00
+plane (2,3) spin-term sign -1: max |[Dirac, L_w] psi| = 0.000e+00
+(the sign that gives 0 is the exact symmetry; delta psi = L psi, delta psibar = -psibar L)
+
+== (2) spin diagonalisation: shifts used by L map to scalar phases ==
+max deviation from scalar phase over all parity classes, diagonal and two-step shifts: 0.0
+=> F (two-step) and Sigma (diagonal shifts x gamma_a gamma_b) act within one staggered component:
+   the staggered fermion inherits exact pseudo-translations and pseudo-rotations.
+
+== (3) Killing closure for the fermion ==
+m2=0.25: best translation fit of [L_w, F_r] on the shell: relative residual min/max = 0.542/0.978
+m2=1.0: best translation fit of [L_w, F_r] on the shell: relative residual min/max = 0.398/0.976
+
+== (4) Gordon identity on the complex shell (symmetric-stress criterion) ==
+max |v g_mu u - (-i sin k_mu / m) v u| / |v u| = 4.17e-15
+=> zero-momentum on-shell current of translation f: ~ (v dD/dk_mu u) f_nu ~ sin k_mu cos k_mu f_nu;
+   symmetric in (mu,nu) iff f_nu ~ sin 2k_nu: the staggered two-step pseudo-momentum (L1's spectrum).

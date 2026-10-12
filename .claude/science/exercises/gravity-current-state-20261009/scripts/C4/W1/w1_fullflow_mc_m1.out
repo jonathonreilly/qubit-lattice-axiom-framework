@@ -1,0 +1,7 @@
+m=1.0 channel E: MC samples 1.6e+06 (8 chunks); Hessians H per cell (mu2/lam^2 = -H/24); Newton residual 3.6e-15
+   L2 design        int delta(K) w        : H = +2.3544e-05 +- 1.1e-06  -> mu2/lam^2 = -9.810e-07
+   local part       int delta(K) v_loc^2 w: H = -5.6037e-04 +- 4.2e-07  -> mu2/lam^2 = +2.335e-05
+   full flow        int w(k*) v_loc       : H = -2.6564e-07 +- 6.8e-07  -> mu2/lam^2 = +1.107e-08
+   linear-v variant int delta(K) v_loc w  : H = -3.0929e-04 +- 6.9e-07  -> mu2/lam^2 = +1.289e-05
+   local - L2       int delta(K)(v^2-1) w : H = -5.8392e-04 +- 7.4e-07  -> mu2/lam^2 = +2.433e-05
+   int w at eps=0: 1.65413e-04 (lattice I4(L=24) = 1.656164e-04); exact L2 H = 2.42235e-05

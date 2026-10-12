@@ -1,0 +1,44 @@
+F coefficients: c0=+2.695798e-03 c2=-1.012898e-03 c4=+4.792894e-04 c6L=+2.638572e-04 c6=-1.454114e-04
+non-universal lattice ratios: naive(sin p) G(0)/F(0) = 40.804498;  metric scalar F_B(0)/F(0) = 132.005674; photon B/A = 132.005674
+
+per-species weights at each order, relative to one real KG component (flow coupling):
+  order n :   0        2        4        6 (x [c6L ln(lam m) + c6])
+  real KG component                 +1.0000  +1.0000  +1.0000  +1.0000
+  staggered field (2 Dirac)         -0.5000  -2.0000  -8.0000 -32.0000
+  per Dirac (proxy)                 -0.2500  -1.0000  -4.0000 -16.0000
+  per fermionic d.o.f.              -0.0625  -0.2500  -1.0000  -4.0000
+  naive field, 1/2 sin2p (8 Dirac)  -2.0000  -8.0000 -32.0000-128.0000
+  naive-dispersion boson            +0.5000  +2.0000  +8.0000 +32.0000
+
+SM content (unitary gauge; fermions as per-Dirac proxies of staggered fields; gauge bosons option A):
+  R0: sum w = 28.000 (bosons) - 6.000 (fermions) = +22.000  ->  sum c0 = +5.9308e-02 per site = 22.00 x natural
+      R0 would need 112 Dirac fermions for these bosons, or 6.000 bosonic KG components for these fermions
+      with Weyl neutrinos (1.5 Dirac): +22.375
+  R2: sum w lam^2 m^2 = 79395.9 - 89526.0 = -10130.1 GeV^2  (relative -0.113; per Dirac weight -1 x m^2, per boson dof +1)
+  R4: sum w lam^4 m^4 = 7.0395e+08 - 1.0672e+10 = -9.9682e+09 GeV^4  (= Pauli Str M^4 per d.o.f.; relative -0.934)
+
+  framework a^-1 = M_Pl = 1.221e19 GeV; P0 bound 1.08e-104  (identification of normalisations = reading)
+    order 0: residual sum = +5.931e-02; largest single term = 4.313e-02; needed cancellation precision (target/largest) = 2.5e-103; residual/target = 5.5e+102
+    order 2: residual sum = +6.883e-38; largest single term = 6.078e-37; needed cancellation precision (target/largest) = 1.8e-68; residual/target = 6.4e+66
+    order 4: residual sum = -2.150e-70; largest single term = 2.301e-70; needed cancellation precision (target/largest) = 4.7e-35; residual/target = 2.0e+34
+    order 6: residual sum = +3.896e-102; largest single term = 3.919e-102; needed cancellation precision (target/largest) = 2.8e-03; residual/target = 3.6e+02
+    order 8 estimate (|c8| ~ 1e-3 x ln): 1.2e-134 -> negligible
+
+  refereed a^-1 = reduced M_Pl = 2.435e18 GeV; P0 bound 5.7e-99 x 1.2e-3 = 6.8e-102  (identification of normalisations = reading)
+    order 0: residual sum = +5.931e-02; largest single term = 4.313e-02; needed cancellation precision (target/largest) = 1.6e-100; residual/target = 8.7e+99
+    order 2: residual sum = +1.731e-36; largest single term = 1.528e-35; needed cancellation precision (target/largest) = 4.5e-67; residual/target = 2.5e+65
+    order 4: residual sum = -1.359e-67; largest single term = 1.455e-67; needed cancellation precision (target/largest) = 4.7e-35; residual/target = 2.0e+34
+    order 6: residual sum = +5.934e-98; largest single term = 5.969e-98; needed cancellation precision (target/largest) = 1.1e-04; residual/target = 8.7e+03
+    order 8 estimate (|c8| ~ 1e-3 x ln): 4.9e-129 -> negligible
+
+exact pairings (all orders): KG component of mass 2m  <->  2 staggered fields of mass m:  F(2m) - 2*(1/2)F(2m) = 0;  naive-dispersion boson (m) <-> staggered field (m): 1/2F(2m) - 1/2F(2m) = 0
+IR d.o.f. per pair: KG pairing 1 boson vs 16 fermionic; naive-boson pairing 8 vs 8 (bosonic doublers, I3).
+
+one-loop interaction estimate: delta mu ~ kappa (g^2/16 pi^2) c0, kappa = O(1) (suggested, not computed)
+  alpha_em(M_Pl)~1/40 (e^2=4pi alpha) : g^2/16pi^2 = 2.0e-03 -> delta mu ~ 5.4e-06 per species = 5.0e+98 x P0 bound; loop orders of exact cancellation needed ~ 38
+  alpha_s(M_Pl)~1/45                  : g^2/16pi^2 = 1.8e-03 -> delta mu ~ 4.8e-06 per species = 4.4e+98 x P0 bound; loop orders of exact cancellation needed ~ 37
+  y_t(M_Pl)~0.4                       : g^2/16pi^2 = 1.0e-03 -> delta mu ~ 2.7e-06 per species = 2.5e+98 x P0 bound; loop orders of exact cancellation needed ~ 34
+  lambda_H(M_Pl)~0.01                 : g^2/16pi^2 = 6.3e-05 -> delta mu ~ 1.7e-07 per species = 1.6e+97 x P0 bound; loop orders of exact cancellation needed ~ 24
+  exact pairing broken by splitting Delta m^2 ~ (1e+03 GeV)^2: R2 residual ~ |c2| Delta(m^2 a^2) = 6.8e-36 = 6.3e+68 x P0 bound
+  exact pairing broken by splitting Delta m^2 ~ (1e+04 GeV)^2: R2 residual ~ |c2| Delta(m^2 a^2) = 6.8e-34 = 6.3e+70 x P0 bound
+  R2 alone tolerates only |sum w Delta m^2| <= 1.6e-63 GeV^2 (i.e. splittings sqrt = 4.0e-32 GeV) summed over all species

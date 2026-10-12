@@ -1,0 +1,4 @@
+op0 theta=4: per-vertex q=1.925e+01, q*e_w-weighted single-vertex ratio bound ~ 8.141e+01, delta=9.511e+01
+op0 theta=5: per-vertex q=2.535e+01, q*e_w-weighted single-vertex ratio bound ~ 1.072e+02, delta=1.253e+02
+op0 theta=6: per-vertex q=6.026e+01, q*e_w-weighted single-vertex ratio bound ~ 2.548e+02, delta=2.977e+02
+op0 theta=8: per-vertex q=1.946e+00, q*e_w-weighted single-vertex ratio bound ~ 8.229e+00, delta=9.613e+00

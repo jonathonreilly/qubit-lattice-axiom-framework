@@ -1,0 +1,10 @@
+L=4: G (192, 384), S (64, 384)
+(a) max|G S^T| = 0
+(b) max|S K + D G| (c=1/2, exact integers) = 0
+(d) c=1/2: rank[G;SK]-rank G = 0  (0 => S K = L G, weakly invariant)
+(d) c=1/3: rank[G;SK]-rank G = 63  (0 => S K = L G, weakly invariant)
+(d) c=1: rank[G;SK]-rank G = 63  (0 => S K = L G, weakly invariant)
+(d) c=0: rank[G;SK]-rank G = 63  (0 => S K = L G, weakly invariant)
+(c) deg<=1: scalar S^T poly kernel dim = 4 (affine = 4); vector G^T poly kernel dim = 6 (rigid motions = 6)
+(c) deg<=2: scalar S^T poly kernel dim = 4 (affine = 4); vector G^T poly kernel dim = 6 (rigid motions = 6)
+(c) deg<=3: scalar S^T poly kernel dim = 4 (affine = 4); vector G^T poly kernel dim = 6 (rigid motions = 6)

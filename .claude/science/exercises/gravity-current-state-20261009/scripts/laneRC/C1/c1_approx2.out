@@ -1,0 +1,86 @@
+(ii') window, Chebyshev interpolant of k^2 in x = cos k
+ kap=0.25pi  rho_BW=3.2298
+  n   E_n(win)    delta(win)  delta(0.8win)  max|p| on zone
+   1  4.220e-03  4.121e-02  1.107e-02  4.206e+00
+   2  8.961e-05  1.959e-03  4.623e-04  5.498e+00
+   3  2.289e-06  8.874e-05  1.740e-05  6.186e+00
+   4  6.458e-08  3.908e-06  5.436e-07  6.627e+00
+   5  1.940e-09  1.689e-07  2.285e-08  6.941e+00
+   6  6.082e-11  7.205e-09  7.109e-10  7.179e+00
+   7  1.968e-12  3.044e-10  2.941e-11  7.366e+00
+   8  6.528e-14  1.276e-11  1.097e-12  7.520e+00
+   9  2.720e-15  5.725e-13  4.263e-14  7.648e+00
+  10  7.772e-16  2.154e-14  5.218e-15  7.763e+00
+  11  6.661e-16  5.818e-14  4.108e-15  7.736e+00
+  12  8.240e-16  7.250e-14  7.633e-15  1.668e+01
+  local rate of E_n (last points above 1e-13, n=5..7): 3.4466;  fit E_n ~ A n^-1.5 e^(-rho n): rho_fit = 3.1114
+  closure residual delta(win) fit ~ e^(-r n) n^0.5... r_fit (with n^-0.5 prefactor) = 2.9939
+  growth of max|p| on zone per degree: 0.2335  (unconstrained approximant is wild off-window)
+ kap=0.50pi  rho_BW=1.7627
+  n   E_n(win)    delta(win)  delta(0.8win)  max|p| on zone
+   2  7.756e-03  7.208e-02  1.625e-02  6.000e+00
+   4  1.075e-04  2.726e-03  3.508e-04  7.012e+00
+   6  1.927e-06  9.518e-05  1.017e-05  7.503e+00
+   8  3.914e-08  3.186e-06  2.820e-07  7.805e+00
+  10  8.562e-10  1.040e-07  7.080e-09  8.015e+00
+  12  1.968e-11  3.334e-09  1.843e-10  8.172e+00
+  14  4.698e-13  1.057e-10  5.177e-12  8.295e+00
+  16  2.072e-14  2.347e-12  1.541e-13  8.396e+00
+  18  3.896e-15  5.007e-13  2.431e-14  8.507e+00
+  20  2.776e-15  5.604e-13  3.442e-14  9.540e+00
+  22  1.872e-14  3.182e-12  1.684e-13  1.073e+02
+  local rate of E_n (last points above 1e-13, n=10..14): 1.8770;  fit E_n ~ A n^-1.5 e^(-rho n): rho_fit = 1.7234
+  closure residual delta(win) fit ~ e^(-r n) n^0.5... r_fit (with n^-0.5 prefactor) = 1.2867
+  growth of max|p| on zone per degree: 0.3880  (unconstrained approximant is wild off-window)
+ kap=0.75pi  rho_BW=0.8064
+  n   E_n(win)    delta(win)  delta(0.8win)  max|p| on zone
+   4  1.546e-02  1.711e-01  2.599e-02  7.699e+00
+   8  2.693e-04  9.270e-03  6.562e-04  8.322e+00
+  12  6.335e-06  4.495e-04  2.433e-05  8.604e+00
+  16  1.710e-07  2.064e-05  9.080e-07  8.773e+00
+  20  5.002e-09  9.189e-07  2.800e-08  8.888e+00
+  24  1.542e-10  4.007e-08  1.082e-09  8.974e+00
+  28  4.929e-12  1.723e-09  4.152e-11  9.040e+00
+  32  1.599e-13  7.230e-11  1.487e-12  9.094e+00
+  36  1.421e-14  4.308e-12  1.342e-13  9.140e+00
+  40  3.974e-14  1.892e-12  3.344e-13  9.227e+00
+  local rate of E_n (last points above 1e-13, n=24..32): 0.8589;  fit E_n ~ A n^-1.5 e^(-rho n): rho_fit = 0.7942
+  closure residual delta(win) fit ~ e^(-r n) n^0.5... r_fit (with n^-0.5 prefactor) = 0.7091
+  growth of max|p| on zone per degree: 0.0017  (unconstrained approximant is wild off-window)
+
+(iii') window + 0 <= p <= pi^2 on whole zone (stable, bounded band); LP with refinement
+ kap=0.50pi:  n  E_n(win)  delta(win)  min p  max p
+    4  8.411e-05  2.365e-03  8.41e-05  7.025
+    8  2.977e-08  2.600e-06  2.98e-08  7.811
+   12  1.103e-08  1.583e-06  -4.44e-16  5.061
+   16  9.730e-12  2.486e-09  0.00e+00  5.515
+   20  1.131e-08  2.780e-06  -8.51e-16  6.468
+   24  1.662e-09  5.477e-07  -9.83e-16  9.870
+   32  7.062e-10  2.938e-07  -1.87e-16  3.395
+   40  3.072e-08  1.452e-05  -1.26e-15  9.870
+   fitted rate (E_n ~ e^(-r n)) over E>1e-12: r = 0.1418
+ kap=0.75pi:  n  E_n(win)  delta(win)  min p  max p
+    4  8.544e-03  1.310e-01  8.54e-03  7.774
+    8  1.406e-04  6.133e-03  1.41e-04  8.356
+   12  3.226e-06  2.752e-04  3.23e-06  8.625
+   16  8.591e-08  1.205e-05  8.59e-08  8.787
+   20  2.490e-09  5.193e-07  2.49e-09  8.899
+   24  7.626e-11  2.213e-08  7.63e-11  8.982
+   32  1.138e-10  4.828e-08  -1.11e-15  7.267
+   40  7.082e-10  3.564e-07  -1.64e-16  6.656
+   fitted rate (E_n ~ e^(-r n)) over E>1e-12: r = 0.4868
+
+(v') direct approximation of E = sqrt(m^2+k^2) on |k|<=pi/2 (1-band), Chebyshev interpolant; asymptotic local rate
+  m=0.1: E_n = 20:1.24e-03, 30:1.80e-04, 40:2.99e-05, 50:5.38e-06, 60:1.02e-06, 80:4.03e-08;  local rate 0.1614;  predicted min(branch 0.1414, face 1.7627)
+  m=0.3: E_n = 20:2.33e-06, 30:1.95e-08, 40:1.90e-10, 50:2.03e-12, 60:3.06e-14, 80:3.97e-14;  local rate 0.4541;  predicted min(branch 0.4227, face 1.7627)
+  m=1.0: E_n = 20:4.66e-15, 30:4.00e-15, 40:1.07e-14, 50:6.44e-15, 60:7.77e-15, 80:5.62e-14;  local rate nan;  predicted min(branch 1.3653, face 1.7627)
+
+(vi) smooth-filtered Fourier series of k^2, sigma(eta)=exp(-36 eta^8), degree n (bounded, local, whole zone)
+  n    sup err zone   n*err    err |k|<=pi/2   delta zone   delta |k|<=pi/2   delta |k|<=3pi/4   min p
+    8  8.526e-01  6.821  4.178e-02  3.142  7.667e-02  3.909e-01  2.12e-03
+   16  4.263e-01  6.822  1.573e-03  3.142  1.395e-02  7.843e-02  3.14e-05
+   32  2.132e-01  6.822  7.854e-06  3.142  1.337e-04  1.396e-02  -1.32e-09
+   64  1.066e-01  6.822  3.305e-10  3.142  8.101e-09  1.337e-04  4.44e-16
+  128  5.329e-02  6.822  2.449e-15  3.142  4.219e-15  8.101e-09  -4.44e-16
+  256  2.665e-02  6.822  2.336e-15  3.142  9.326e-15  9.326e-15  8.88e-16
+  512  1.332e-02  6.822  2.941e-15  3.142  1.354e-14  1.465e-14  -1.78e-15

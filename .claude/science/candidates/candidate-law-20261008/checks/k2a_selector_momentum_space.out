@@ -1,0 +1,10 @@
+d=3: |H(0)|=0.0e+00, cell dim 8
+  Gamma^2~1 resid 0.0e+00, anticomm resid 0.0e+00, [T,Gamma] resid 0.0e+00
+  chirality X eigs: [-1. -1. -1. -1.  1.  1.  1.  1.]
+  ||ph*Z - (1)X|| = 2.00e+00; [Z,X]=0.0e+00
+  ||ph*Z - (-1)X|| = 6.12e-17; [Z,X]=0.0e+00
+d=4: |H(0)|=0.0e+00, cell dim 16
+  Gamma^2~1 resid 0.0e+00, anticomm resid 0.0e+00, [T,Gamma] resid 0.0e+00
+  [T1T2T3, gamma5] = 0.00e+00 ; {T1T2T3, gamma5} = 2.00e+00
+4D gamma5=+1 block: T1T2T3 eigenvalues [0.+1.j 0.-1.j 0.+1.j 0.-1.j 0.+1.j 0.-1.j 0.+1.j 0.-1.j]
+4D gamma5=-1 block: T1T2T3 eigenvalues [0.+1.j 0.-1.j 0.+1.j 0.-1.j 0.+1.j 0.-1.j 0.+1.j 0.-1.j]

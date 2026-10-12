@@ -1,0 +1,8 @@
+lam=0.0: C(t)=<J(t)J(0)>/<J^2> at t=1,5,10,20,40,60: [1. 1. 1. 1. 1. 1.] ; time-average over [0,60]: 1.000 ; avg over [30,60]: 1.000 ; max rel energy drift 2.4e-05
+lam=0.5: C(t)=<J(t)J(0)>/<J^2> at t=1,5,10,20,40,60: [1.011 1.    1.    0.972 0.948 0.867] ; time-average over [0,60]: 0.966 ; avg over [30,60]: 0.942 ; max rel energy drift 5.8e-05
+lam=2.0: C(t)=<J(t)J(0)>/<J^2> at t=1,5,10,20,40,60: [0.983 0.832 0.71  0.365 0.173 0.047] ; time-average over [0,60]: 0.346 ; avg over [30,60]: 0.149 ; max rel energy drift 5.8e-05
+lam=0.5: C at t=[50, 100, 150, 200, 300, 400]: [ 0.766  0.7    0.303  0.179 -0.052 -0.104]; avg over last half: -0.037; time-average [0,400]: 0.271; drift 3.5e-05
+lam=2.0: C at t=[50, 100, 150, 200]: [0.196 0.149 0.232 0.026]; avg over last half: 0.162; time-average [0,200]: 0.265; drift 4.5e-05
+lam=0.0: mean over t in [75,150] of J(t).J(0)/J(0)^2 (24 traj): 1.000 +- 0.000
+lam=2.0: mean over t in [75,150] of J(t).J(0)/J(0)^2 (24 traj): 0.120 +- 0.107
+lam=4.0: mean over t in [75,150] of J(t).J(0)/J(0)^2 (24 traj): -0.161 +- 0.082

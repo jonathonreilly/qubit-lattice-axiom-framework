@@ -1,0 +1,19 @@
+[001]: eigenvalues of weak degree-4 symbol on the 2 TT polarisations: [-0.1571 -0.1571]
+[110]: eigenvalues of weak degree-4 symbol on the 2 TT polarisations: [-0.1571 -0.1571]
+[111]: eigenvalues of weak degree-4 symbol on the 2 TT polarisations: [-0.1571 -0.1571]
+rand: eigenvalues of weak degree-4 symbol on the 2 TT polarisations: [-0.1571 -0.1571]
+--- V-tl, weak degree-4 term only, sign +1 (strong k^6 term absent)
+  [001]  n_phys_modes=4: UNSTABLE(Im=-4.25e-07,m2=4.00); UNSTABLE(Im=-3.55e-07,m2=4.00); UNSTABLE(Im=3.55e-07,m2=4.00); UNSTABLE(Im=4.25e-07,m2=4.00)
+  [110]  n_phys_modes=4: UNSTABLE(Im=-4.25e-07,m2=4.00); UNSTABLE(Im=-3.73e-07,m2=4.00); UNSTABLE(Im=3.73e-07,m2=4.00); UNSTABLE(Im=4.25e-07,m2=4.00)
+  [111]  n_phys_modes=4: UNSTABLE(Im=-4.03e-07,m2=4.00); UNSTABLE(Im=-4.03e-07,m2=4.00); UNSTABLE(Im=4.03e-07,m2=4.00); UNSTABLE(Im=4.03e-07,m2=4.00)
+  rand   n_phys_modes=4: UNSTABLE(Im=-4.19e-07,m2=4.00); UNSTABLE(Im=-3.83e-07,m2=4.00); UNSTABLE(Im=3.83e-07,m2=4.00); UNSTABLE(Im=4.19e-07,m2=4.00)
+--- V-tl, weak degree-4 term only, sign -1 (strong k^6 term absent)
+  [001]  n_phys_modes=2: w~k^2.00 (m^2=4.00, w/k^p=0.355); w~k^2.00 (m^2=4.00, w/k^p=0.425)
+  [110]  n_phys_modes=2: w~k^2.00 (m^2=4.00, w/k^p=0.373); w~k^2.00 (m^2=4.00, w/k^p=0.425)
+  [111]  n_phys_modes=2: w~k^2.00 (m^2=4.00, w/k^p=0.403); w~k^2.00 (m^2=4.00, w/k^p=0.403)
+  rand   n_phys_modes=2: w~k^2.00 (m^2=4.00, w/k^p=0.383); w~k^2.00 (m^2=4.00, w/k^p=0.419)
+--- V-tl, strong k^6 + 0.3*(sign chosen positive) weak degree-4
+  [001]  n_phys_modes=2: w~k^2.00 (m^2=4.00, w/k^p=0.194); w~k^2.00 (m^2=4.00, w/k^p=0.233)
+  [110]  n_phys_modes=2: w~k^2.00 (m^2=4.00, w/k^p=0.205); w~k^2.00 (m^2=4.00, w/k^p=0.233)
+  [111]  n_phys_modes=2: w~k^2.00 (m^2=4.00, w/k^p=0.221); w~k^2.00 (m^2=4.00, w/k^p=0.221)
+  rand   n_phys_modes=2: w~k^2.00 (m^2=4.00, w/k^p=0.210); w~k^2.00 (m^2=4.00, w/k^p=0.230)

@@ -1,0 +1,11 @@
+case                                        tau(m) n_var c_low=0.628  n_var k_h=2.735
+lensed source, 1 Gpc, T_obs=1 s           1.36e+17         4.526e+04        1.971e+05
+lensed source, 1 Gpc, T_obs=8 h           2.31e+19         7.681e+06        3.345e+07
+lensed source, 1 Gpc, T_obs=1 yr          7.64e+20         2.543e+08        1.107e+09
+lensed source, 5 Gpc, T_obs=1 yr          1.71e+21         5.685e+08        2.476e+09
+Sun, 1 AU, shining 4.6 Gyr                4.35e+25         1.448e+13        6.307e+13
+Sun, 1 AU, T_obs=1 s                      9.48e+09         3.153e-03        1.373e-02
+star at 10 pc, T_obs=1 s                  1.36e+13         4.526e+00        1.971e+01
+lab lamp 1 m, on 1 h                      1.08e+12         3.591e-01        1.564e+00
+D=3.09e+25 s=9.46e+15: ln(1/z)=72.7, ln(2 gamma_b)=11.3, crude end penalty exp(-144)
+D=3.09e+25 s=3.00e+00: ln(1/z)=72.7, ln(2 gamma_b)=29.1, crude end penalty exp(-144)

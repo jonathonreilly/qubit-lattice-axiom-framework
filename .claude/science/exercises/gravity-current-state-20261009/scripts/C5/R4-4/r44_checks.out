@@ -1,0 +1,59 @@
+========================================================================
+[1] free Gaussian: E_tot = m v^2/2 + Q along Bohmian trajectories
+x0= 0.0  E_tot(t=0,1,3,10,100) = +0.25000, +0.20000, +0.07692, +0.00962, +0.00010   E(100)-E(0) = -0.24990  closed form (t->inf) -0.25000
+x0= 0.5  E_tot(t=0,1,3,10,100) = +0.21875, +0.18125, +0.08894, +0.03846, +0.03132   E(100)-E(0) = -0.18743  closed form (t->inf) -0.18750
+x0= 1.0  E_tot(t=0,1,3,10,100) = +0.12500, +0.12500, +0.12500, +0.12500, +0.12500   E(100)-E(0) = +0.00000  closed form (t->inf) +0.00000
+x0= 2.0  E_tot(t=0,1,3,10,100) = -0.25000, -0.10000, +0.26923, +0.47115, +0.49970   E(100)-E(0) = +0.74970  closed form (t->inf) +0.75000
+   Q check x0=0.3, t=0.0: analytic +0.238750  finite-diff +0.238750
+   Q check x0=0.3, t=2.0: analytic +0.119375  finite-diff +0.119375
+   Q check x0=1.2, t=0.0: analytic +0.070000  finite-diff +0.070000
+   Q check x0=1.2, t=2.0: analytic +0.035000  finite-diff +0.035000
+   ensemble mean E_tot: t=0 0.12519, t=100 0.12481; <H> = hbar^2/(8 m s0^2) = 0.12500
+   scale hbar^2/(4 m s0^2) for a nucleon at s0 = 0.1 um: 1.662e-28 J
+========================================================================
+[2] signalling toy: classical field sourced by the point beable X_A(t)
+   <phiL|phiR> at t=0: 1.61e-28 (negligible; conserved in time)
+   t= 0.0: single-time marginal of X_A  mean Z -0.013 X +0.003;  <x^2> Z  65.022 X  64.428;  TV(hist) 0.023
+   t= 2.0: single-time marginal of X_A  mean Z -0.018 X -0.017;  <x^2> Z   2.072 X   1.913;  TV(hist) 0.042
+   t= 4.0: single-time marginal of X_A  mean Z -0.028 X -0.024;  <x^2> Z  69.212 X  67.706;  TV(hist) 0.036
+   fraction of trajectories that change side 0->T: Z-branch 1.000, X-branch 0.000
+   readout I = int_0^T X_A dt:  Z: mean -0.075 sd 6.021;  X: mean -0.070 sd 17.193
+   TV distance between the readout distributions (histogram): 0.785
+   Charlie (shift kappa*I, width 1): kappa= 0.01  TV(Z vs X) = 0.006
+   Charlie (shift kappa*I, width 1): kappa= 0.05  TV(Z vs X) = 0.132
+   Charlie (shift kappa*I, width 1): kappa= 0.20  TV(Z vs X) = 0.602
+   Charlie (shift kappa*I, width 1): kappa= 1.00  TV(Z vs X) = 0.777
+   control (Z vs independent Z): readout TV 0.041; t=T marginal TV 0.044  (noise floor)
+========================================================================
+[3] conditional-wave-function source (R3-4 E1 toy realised exactly)
+   Bob Z: Alice's conditional wf = phiL or phiR -> sourced field g_L or g_R (p=1/2 each)
+   Bob X: conditional wf = (phiL +/- phiR)/sqrt2 -> <T> has half the mass in each packet -> g_mean
+   field distributions {1/2 d(gL) + 1/2 d(gR)} vs {d(gmean)}: TV = 1 (single shot)
+========================================================================
+[4] BMV discriminator (parameters as recalled for Bose et al. 2017)
+   quantum Newtonian coupling: branch phases (rad) LL:0.352, RR:0.352, RL:0.791, LR:0.226;  concurrence 0.156
+   beable-sourced classical field, actual (X1,X2)=(L,L): concurrence 6.21e-17
+   beable-sourced classical field, actual (X1,X2)=(R,L): concurrence 7.85e-17
+   beable-sourced classical field, actual (X1,X2)=(L,R): concurrence 0.00e+00
+   beable-sourced classical field, actual (X1,X2)=(R,R): concurrence 6.21e-17
+========================================================================
+[5] beable momentum in the reflection (X) branch: p = v (m=1)
+   X+ branch: mean beable momentum t=0 +0.064, t=T -0.047;  per-trajectory <|p_f - p_i|> = 7.988  (k0 = 4.0)
+   left-starting trajectories: p_i mean +4.000 -> p_f mean -3.972
+   (Alice's beable reverses its momentum with no local partner: the total beable
+    momentum of the isolated free pair changes per realization; dP/dt = -sum grad Q)
+========================================================================
+[6] illustrative quenched-vacuum noise (SUGGESTED; assumption n_v ~ alpha*Lambda^3)
+   Planck cutoff: n_v = 1.73e+102 m^-3, white-noise dPhi/c^2 at 1 Gpc ~ (G m_e/c^2) sqrt(n_v L) = 4.94e+06
+   1 TeV cutoff: n_v = 9.49e+53 m^-3, white-noise dPhi/c^2 at 1 Gpc ~ (G m_e/c^2) sqrt(n_v L) = 3.66e-18
+========================================================================
+[7] active mass from the beable stress alone (no quantum-potential stress)
+   H 1s: E[V(r_actual)] = -27.193 eV (2E0 = -27.211); sd 26.62 eV per atom
+   beable-sourced active energy - inertial energy = E[V] - E0 = -13.587 eV per atom = 1.45e-08 of m_H
+   Al: TF electronic binding    8.27 keV/atom; missing fraction 3.29e-07
+   Fe: TF electronic binding   41.66 keV/atom; missing fraction 7.99e-07
+   Pt: TF electronic binding  540.69 keV/atom; missing fraction 2.98e-06
+   Be: TF electronic binding    0.53 keV/atom; missing fraction 6.30e-08
+   Ti: TF electronic binding   28.21 keV/atom; missing fraction 6.31e-07
+   Fe - Al difference of active/passive ratio (electrons only, estimate): 4.70e-07  vs LLR bound 4e-12 (1986) / 3.9e-14 (2023): margin 7.1 decades
+done

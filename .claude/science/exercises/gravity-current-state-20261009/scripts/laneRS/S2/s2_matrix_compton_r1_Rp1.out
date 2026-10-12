@@ -1,0 +1,8 @@
+[photon class: diag integer freq; off-diag integer + (e_i+e_j)/2-shifted freq]
+m=0.5 r=1 Rp=1: fermion params 432, photon params 486; Moller 200, Compton 600 shells (28.3s)
+  null dim 378; class dim 542; surviving symbol dim 2
+  sv max 4.273e+02; smallest non-null 1.511e-01; threshold 4.3e-07
+  survivors: max |fermion taste-avg slope| 1.49e-12; max |photon pol-avg slope| 1.18e-14
+  min ||C x|| s.t. fermion slope=1: 2.331e+01
+  min ||C x|| s.t. photon slope=1: 7.244e+00
+time 31.1s

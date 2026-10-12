@@ -1,0 +1,24 @@
+=== zeroth order: sum_x delta_c T00 = {H_m, P_tot_c} and sum_x delta_c P_a = {P_tot_a, P_tot_c} ===
+max |.| = 0.0 (exactly 0: zeroth-order structure functions vanish)
+
+=== {H,H} control: {K_b, H_m} with K_b = sum x_b T00 must be +-P_tot_b (lattice energy continuity) ===
+max |{K_b,H_m} + P_tot_b| = 0.0  -> the h-blind {H,H} relation closes exactly (as L1 found)
+
+=== boost sector {D,H}: L_bc := {K_b, P_tot_c} = sum_x x_b delta_c T00(x) ===
+max |L_bc + delta_bc E_c| = 0.0  (exact identity: {K_b,P_tot_c} = -delta_bc sum_k cos k_c * energy_k)
+continuum requirement: L_bc = -delta_bc H_m + const * P_tot (structure functions constant at this order)
+(b,c)=(0,0): relative residual of fit by span(H, P_tot, K_e, sum x P) = 0.3727;  coef on H = +1.8682
+(b,c)=(1,1): relative residual of fit by span(H, P_tot, K_e, sum x P) = 0.3955;  coef on H = +0.2903
+(b,c)=(0,1): L_bc identically 0 (continuum value also 0)
+
+   defect identity: E_c - H_m = -(1/4) sum_x [ (d_c pi)^2 + d_c phi * d_c(w^2 phi) ]  (pure lattice artifact, O(a^2 k^2))
+max |E_c - H_m - defect formula| = 0.0
+random lattice-scale fields: |E_c - H_m|/|H_m| median 1.152
+
+=== rotation sector {D,D}: R_c;ab := {L_ab, P_tot_c},  L_ab = sum_x [X^(a)_b P_a(x) - X^(b)_a P_b(x)] ===
+    (the symmetric part sym(p' x eta) is absorbable by P^(1)[uniform strain]; the antisymmetric part is h-blind)
+(a,b,c)=(0,1,1): relative residual of fit by span(H, P_tot, K_e, sum x P) = 0.8303; coef on P_tot = [ 0.3713  0.841  -0.2423]
+(a,b,c)=(0,1,0): relative residual of fit by span(H, P_tot, K_e, sum x P) = 0.8831; coef on P_tot = [-0.2234  0.2262  1.6529]
+(a,b,c)=(0,1,2): R identically 0 (continuum value also 0)
+(a,b,c)=(1,2,2): relative residual of fit by span(H, P_tot, K_e, sum x P) = 0.7361; coef on P_tot = [-0.9353  1.6747  0.048 ]
+max |R - closed form -(delta_bc Q_ca - delta_ac Q_cb)| = 0.0  (Q_ca has symbol cos k_c sin k_a)

@@ -1,0 +1,4 @@
+trial 0 scalar: net 0.0 dipole [0. 0. 0.] | vector: net [0. 0. 0.] angular [0. 0. 0.]
+trial 1 scalar: net 0.0 dipole [0. 0. 0.] | vector: net [0. 0. 0.] angular [0. 0. 0.]
+trial 2 scalar: net 0.0 dipole [0. 0. 0.] | vector: net [0. 0. 0.] angular [0. 0. 0.]
+one record formed at a site: net count +1 (monopole), dipole += x: not reachable by any compact E change

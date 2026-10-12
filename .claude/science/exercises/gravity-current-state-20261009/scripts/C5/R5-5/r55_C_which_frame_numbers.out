@@ -1,0 +1,72 @@
+
+######## lattice spacing a = 1.616e-35 m
+  kernel 4-shell{1,2,3,4} P=4.2
+    optical photon 500 nm, 1 m lab arm           : l/a =  4.92e+27, R_l =  5.01e+83, Phi per unit d =  9.45e+90 rad, d_1 =  1.06e-91
+    optical photon 500 nm, 1 Gpc (quasar/GRB)    : l/a =  4.92e+27, R_l =  5.01e+83, Phi per unit d = 2.92e+116 rad, d_1 = 3.43e-117
+    radio 21 cm, 1 Gpc                           : l/a =  2.07e+33, R_l = 3.71e+100, Phi per unit d = 5.14e+127 rad, d_1 = 1.94e-128
+    gamma 1 GeV (1.24e-15 m), 1 Gpc              : l/a =  1.22e+19, R_l =  7.65e+57, Phi per unit d =  1.79e+99 rad, d_1 = 5.58e-100
+    electron, tau = 1 ns (biprism)               : lC/a =  2.39e+22, R_lC =  5.73e+67, Phi per unit d =  6.67e+79 rad, d_1 =  1.50e-80
+    neutron, tau = 0.1 ms (crystal interferometer): lC/a =  1.30e+19, R_lC =  9.25e+57, Phi per unit d =  1.98e+78 rad, d_1 =  5.05e-79
+    Cs-133 atom, 70 s (sum over 133 nucleons)    : lC/a =  1.30e+19, R_lC =  9.25e+57, Phi per unit d =  1.84e+86 rad, d_1 =  5.43e-87
+    25 kDa molecule, 7 ms (sum over nucleons)    : lC/a =  1.30e+19, R_lC =  9.25e+57, Phi per unit d =  3.46e+84 rad, d_1 =  2.89e-85
+  kernel smooth-f L=3 P=2e-3
+    optical photon 500 nm, 1 m lab arm           : l/a =  4.92e+27, R_l =  2.39e+80, Phi per unit d =  4.50e+87 rad, d_1 =  2.22e-88
+    optical photon 500 nm, 1 Gpc (quasar/GRB)    : l/a =  4.92e+27, R_l =  2.39e+80, Phi per unit d = 1.39e+113 rad, d_1 = 7.20e-114
+    radio 21 cm, 1 Gpc                           : l/a =  2.07e+33, R_l =  1.77e+97, Phi per unit d = 2.45e+124 rad, d_1 = 4.08e-125
+    gamma 1 GeV (1.24e-15 m), 1 Gpc              : l/a =  1.22e+19, R_l =  3.64e+54, Phi per unit d =  8.54e+95 rad, d_1 =  1.17e-96
+    electron, tau = 1 ns (biprism)               : lC/a =  2.39e+22, R_lC =  2.73e+64, Phi per unit d =  3.18e+76 rad, d_1 =  3.15e-77
+    neutron, tau = 0.1 ms (crystal interferometer): lC/a =  1.30e+19, R_lC =  4.41e+54, Phi per unit d =  9.42e+74 rad, d_1 =  1.06e-75
+    Cs-133 atom, 70 s (sum over 133 nucleons)    : lC/a =  1.30e+19, R_lC =  4.41e+54, Phi per unit d =  8.77e+82 rad, d_1 =  1.14e-83
+    25 kDa molecule, 7 ms (sum over nucleons)    : lC/a =  1.30e+19, R_lC =  4.41e+54, Phi per unit d =  1.65e+81 rad, d_1 =  6.07e-82
+  kernel flat L=4 P=5.9e-4
+    optical photon 500 nm, 1 m lab arm           : l/a =  4.92e+27, R_l =  7.04e+79, Phi per unit d =  1.33e+87 rad, d_1 =  7.53e-88
+    optical photon 500 nm, 1 Gpc (quasar/GRB)    : l/a =  4.92e+27, R_l =  7.04e+79, Phi per unit d = 4.10e+112 rad, d_1 = 2.44e-113
+    radio 21 cm, 1 Gpc                           : l/a =  2.07e+33, R_l =  5.22e+96, Phi per unit d = 7.23e+123 rad, d_1 = 1.38e-124
+    gamma 1 GeV (1.24e-15 m), 1 Gpc              : l/a =  1.22e+19, R_l =  1.07e+54, Phi per unit d =  2.52e+95 rad, d_1 =  3.97e-96
+    electron, tau = 1 ns (biprism)               : lC/a =  2.39e+22, R_lC =  8.05e+63, Phi per unit d =  9.37e+75 rad, d_1 =  1.07e-76
+    neutron, tau = 0.1 ms (crystal interferometer): lC/a =  1.30e+19, R_lC =  1.30e+54, Phi per unit d =  2.78e+74 rad, d_1 =  3.60e-75
+    Cs-133 atom, 70 s (sum over 133 nucleons)    : lC/a =  1.30e+19, R_lC =  1.30e+54, Phi per unit d =  2.59e+82 rad, d_1 =  3.86e-83
+    25 kDa molecule, 7 ms (sum over nucleons)    : lC/a =  1.30e+19, R_lC =  1.30e+54, Phi per unit d =  4.86e+80 rad, d_1 =  2.06e-81
+
+######## lattice spacing a = 1.000e-19 m
+  kernel 4-shell{1,2,3,4} P=4.2
+    optical photon 500 nm, 1 m lab arm           : l/a =  7.96e+11, R_l =  2.12e+36, Phi per unit d =  3.99e+43 rad, d_1 =  2.51e-44
+    optical photon 500 nm, 1 Gpc (quasar/GRB)    : l/a =  7.96e+11, R_l =  2.12e+36, Phi per unit d =  1.23e+69 rad, d_1 =  8.12e-70
+    radio 21 cm, 1 Gpc                           : l/a =  3.34e+17, R_l =  1.57e+53, Phi per unit d =  2.17e+80 rad, d_1 =  4.60e-81
+    gamma 1 GeV (1.24e-15 m), 1 Gpc              : l/a =  1.97e+03, R_l =  3.23e+10, Phi per unit d =  7.57e+51 rad, d_1 =  1.32e-52
+    electron, tau = 1 ns (biprism)               : lC/a =  3.86e+06, R_lC =  2.42e+20, Phi per unit d =  2.82e+32 rad, d_1 =  3.55e-33
+    neutron, tau = 0.1 ms (crystal interferometer): lC/a =  2.10e+03, R_lC =  3.91e+10, Phi per unit d =  8.35e+30 rad, d_1 =  1.20e-31
+    Cs-133 atom, 70 s (sum over 133 nucleons)    : lC/a =  2.10e+03, R_lC =  3.91e+10, Phi per unit d =  7.78e+38 rad, d_1 =  1.29e-39
+    25 kDa molecule, 7 ms (sum over nucleons)    : lC/a =  2.10e+03, R_lC =  3.91e+10, Phi per unit d =  1.46e+37 rad, d_1 =  6.84e-38
+  kernel smooth-f L=3 P=2e-3
+    optical photon 500 nm, 1 m lab arm           : l/a =  7.96e+11, R_l =  1.01e+33, Phi per unit d =  1.90e+40 rad, d_1 =  5.26e-41
+    optical photon 500 nm, 1 Gpc (quasar/GRB)    : l/a =  7.96e+11, R_l =  1.01e+33, Phi per unit d =  5.86e+65 rad, d_1 =  1.71e-66
+    radio 21 cm, 1 Gpc                           : l/a =  3.34e+17, R_l =  7.47e+49, Phi per unit d =  1.03e+77 rad, d_1 =  9.67e-78
+    gamma 1 GeV (1.24e-15 m), 1 Gpc              : l/a =  1.97e+03, R_l =  1.54e+07, Phi per unit d =  3.61e+48 rad, d_1 =  2.77e-49
+    electron, tau = 1 ns (biprism)               : lC/a =  3.86e+06, R_lC =  1.15e+17, Phi per unit d =  1.34e+29 rad, d_1 =  7.46e-30
+    neutron, tau = 0.1 ms (crystal interferometer): lC/a =  2.10e+03, R_lC =  1.86e+07, Phi per unit d =  3.98e+27 rad, d_1 =  2.51e-28
+    Cs-133 atom, 70 s (sum over 133 nucleons)    : lC/a =  2.10e+03, R_lC =  1.86e+07, Phi per unit d =  3.70e+35 rad, d_1 =  2.70e-36
+    25 kDa molecule, 7 ms (sum over nucleons)    : lC/a =  2.10e+03, R_lC =  1.86e+07, Phi per unit d =  6.96e+33 rad, d_1 =  1.44e-34
+  kernel flat L=4 P=5.9e-4
+    optical photon 500 nm, 1 m lab arm           : l/a =  7.96e+11, R_l =  2.97e+32, Phi per unit d =  5.60e+39 rad, d_1 =  1.78e-40
+    optical photon 500 nm, 1 Gpc (quasar/GRB)    : l/a =  7.96e+11, R_l =  2.97e+32, Phi per unit d =  1.73e+65 rad, d_1 =  5.78e-66
+    radio 21 cm, 1 Gpc                           : l/a =  3.34e+17, R_l =  2.20e+49, Phi per unit d =  3.05e+76 rad, d_1 =  3.28e-77
+    gamma 1 GeV (1.24e-15 m), 1 Gpc              : l/a =  1.97e+03, R_l =  4.54e+06, Phi per unit d =  1.06e+48 rad, d_1 =  9.40e-49
+    electron, tau = 1 ns (biprism)               : lC/a =  3.86e+06, R_lC =  3.40e+16, Phi per unit d =  3.96e+28 rad, d_1 =  2.53e-29
+    neutron, tau = 0.1 ms (crystal interferometer): lC/a =  2.10e+03, R_lC =  5.49e+06, Phi per unit d =  1.17e+27 rad, d_1 =  8.52e-28
+    Cs-133 atom, 70 s (sum over 133 nucleons)    : lC/a =  2.10e+03, R_lC =  5.49e+06, Phi per unit d =  1.09e+35 rad, d_1 =  9.15e-36
+    25 kDa molecule, 7 ms (sum over nucleons)    : lC/a =  2.10e+03, R_lC =  5.49e+06, Phi per unit d =  2.05e+33 rad, d_1 =  4.87e-34
+
+######## illustration only (R4-1 fit P ~ 0.32 (l_k/a)^-4.5, extrapolation barred): kernel scale l_k at which one quantum
+         writes < 1 rad between frames a distance xi_F = 0.5 apart
+    optical photon 500 nm, 1 m lab arm           : P needed  8.89e-91 -> l_k ~  1.29e-15 m  (l = 7.96e-08 m)
+    optical photon 500 nm, 1 Gpc (quasar/GRB)    : P needed 2.88e-116 -> l_k ~  5.95e-10 m  (l = 7.96e-08 m)
+    radio 21 cm, 1 Gpc                           : P needed 1.63e-127 -> l_k ~  1.88e-07 m  (l = 3.34e-02 m)
+    gamma 1 GeV (1.24e-15 m), 1 Gpc              : P needed  4.68e-99 -> l_k ~  8.90e-14 m  (l = 1.97e-16 m)
+    electron, tau = 1 ns (biprism)               : P needed  1.26e-79 -> l_k ~  4.28e-18 m  (lambda_C = 3.86e-13 m)
+    neutron, tau = 0.1 ms (crystal interferometer): P needed  4.25e-78 -> l_k ~  1.96e-18 m  (lambda_C = 2.10e-16 m)
+    Cs-133 atom, 70 s (sum over 133 nucleons)    : P needed  4.56e-86 -> l_k ~  1.16e-16 m  (lambda_C = 2.10e-16 m)
+    25 kDa molecule, 7 ms (sum over nucleons)    : P needed  2.43e-84 -> l_k ~  4.78e-17 m  (lambda_C = 2.10e-16 m)
+
+comparator (Pikovski et al. 2015 mechanism): branch phase-rate difference per unit rest energy = g dx/c^2 = 1.09e-22 (dx = 1 um);
+  here (B2) per unit rest energy and unit frame distance = 3 R_lC, e.g. nucleon at a=l_P, flat L=4 kernel: 3.90e+54

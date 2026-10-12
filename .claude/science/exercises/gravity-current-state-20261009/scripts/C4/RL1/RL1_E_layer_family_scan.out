@@ -1,0 +1,10 @@
+L=4 (BD): C = [ 1. -9. 16. -8.]  unstable zeros=2  c2=0.6057 (sqrt6/4=0.6124)  ladder var rate z*=3.814
+L=5: family members scanned=720, stable (no zero in Re z>=0.03, |Im z|<=12, Re z<=8) with c2>0: 0
+L=6: family members scanned=16380, stable (no zero in Re z>=0.03, |Im z|<=12, Re z<=8) with c2>0: 22
+   C = [  0.933  -9.953  30.472 -51.297  47.612 -17.767]  c2=0.6741  ladder var rate z*=4.506
+   C = [  0.933  -9.953  30.472 -51.297  47.612 -17.767]  c2=0.6738  ladder var rate z*=4.506
+   C = [  0.966 -10.426  31.412 -50.81   45.504 -16.645]  c2=0.6621  ladder var rate z*=4.523
+   C = [  0.966 -10.426  31.412 -50.81   45.504 -16.645]  c2=0.6617  ladder var rate z*=4.523
+   C = [  0.998 -10.923  32.503 -50.666  43.722 -15.634]  c2=0.6486  ladder var rate z*=4.545
+   C = [  0.998 -10.923  32.503 -50.666  43.722 -15.634]  c2=0.6485  ladder var rate z*=4.545
+NOTE (18:12Z): the 'stable' L=6 list of this run used a 500-node quadrature and the box [0.03,8]x[-12,12]; superseded by RL1_F4b (1500 nodes, box from Re 0.003): 6 stable members, none of them the member analysed in RL1_F.

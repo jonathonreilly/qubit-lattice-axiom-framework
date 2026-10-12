@@ -1,0 +1,46 @@
+1D periodic M1 chain: dim, W, lowest levels, gap*L
+  L= 9 dim=    76 W=-2  lowest=[-3.28541e-15 -5.09751e-17  1.48118e+00  1.48118e+00  2.00000e+00
+  2.00000e+00]  gap*L=13.3306
+  L=10 dim=   123 W=-1  lowest=[3.55240e-15 8.40199e-01 8.40199e-01 8.40199e-01 8.40199e-01 2.08375e+00]  gap*L=8.4020
+  L=11 dim=   199 W=+1  lowest=[-2.35685e-35  6.99100e-01  6.99100e-01  6.99100e-01  6.99100e-01
+  2.13997e+00]  gap*L=7.6901
+  L=12 dim=   322 W=+2  lowest=[-7.10544e-15 -1.77634e-15  1.17157e+00  1.17157e+00  1.48118e+00
+  1.48118e+00]  gap*L=14.0589
+  L=15 dim=  1364 W=-2  lowest=[-3.22890e-15  1.44759e-18  9.67457e-01  9.67457e-01  1.17157e+00
+  1.17157e+00]  gap*L=14.5119
+  L=18 dim=  5778 W=+2  lowest=[-3.16068e-15  2.33148e-15  8.23251e-01  8.23251e-01  9.67457e-01
+  9.67457e-01]  gap*L=14.8185
+  L=21 dim= 24476 W=-2  lowest=[-3.88788e-15 -3.57837e-15  7.16138e-01  7.16138e-01  8.23251e-01
+  8.23251e-01]  gap*L=15.0389
+  L=24 dim=103682 W=+2  lowest=[-5.39884e-15  1.88776e-15  6.33517e-01  6.33517e-01  7.16138e-01
+  7.16138e-01]  gap*L=15.2044
+
+=== 4x4 torus: N=16 sites, 743 hard-core states, Witten index W = sdim = 7
+  eps=0.00  ||Q^2||=0.0e+00  E0=-2.422e-14  #zero modes=7  doublet-pairing max dev=1.8e-14  E1=1.36325
+  eps=0.05  ||Q^2||=8.0e-17  E0=-2.193e-14  #zero modes=7  doublet-pairing max dev=1.8e-13  E1=1.20014
+  eps=0.10  ||Q^2||=4.9e-17  E0=-3.032e-14  #zero modes=7  doublet-pairing max dev=1.4e-13  E1=1.05482
+  eps=0.20  ||Q^2||=2.9e-17  E0=-3.208e-14  #zero modes=7  doublet-pairing max dev=9.4e-14  E1=0.81065
+  eps=0.40  ||Q^2||=1.8e-16  E0=-1.003e-14  #zero modes=7  doublet-pairing max dev=1.3e-13  E1=0.46807
+  naive hop strain (x e^eps, y e^-eps): E0(0)=-2.422e-14  E0''(0)/N = -5.297509e+02   E0(+-0.2) = -9.6045e-01, -9.6045e-01
+  [0.3s]
+
+=== 4x5 torus: N=20 sites, 3561 hard-core states, Witten index W = sdim = 1
+  eps=0.00  ||Q^2||=0.0e+00  E0=-3.625e-14  #zero modes=3  doublet-pairing max dev=2.0e-13  E1=0.54788
+  eps=0.05  ||Q^2||=8.0e-17  E0=-3.043e-14  #zero modes=3  doublet-pairing max dev=1.2e-13  E1=0.53994
+  eps=0.10  ||Q^2||=4.9e-17  E0=-2.659e-14  #zero modes=3  doublet-pairing max dev=1.6e-13  E1=0.48350
+  eps=0.20  ||Q^2||=2.9e-17  E0=-1.767e-14  #zero modes=3  doublet-pairing max dev=2.0e-13  E1=0.38156
+  eps=0.40  ||Q^2||=1.8e-16  E0=-7.105e-15  #zero modes=3  doublet-pairing max dev=2.1e-13  E1=0.23740
+  naive hop strain (x e^eps, y e^-eps): E0(0)=-3.625e-14  E0''(0)/N = -2.116356e+02   E0(+-0.2) = -5.3566e-01, -7.3446e-01
+  [26.5s]
+
+=== 5x5 torus: N=25 sites, 25531 hard-core states, Witten index W = sdim = -9
+  eps=0.00  ||Q^2||=0.0e+00  lowest 4: [1.60695485e-15 2.07230864e-15 2.77196986e-15 4.23706486e-15]
+  eps=0.20  ||Q^2||=2.9e-17  lowest 4: [-5.24633478e-15  3.92888290e-15  9.99418064e-15  8.94545491e-01]
+  naive hop strain (x e^eps, y e^-eps): E0(0)=2.931e-15  E0''(0)/N = -5.159588e+01   E0(+-0.2) = -4.6714e-01, -4.6714e-01
+  [2.4s]
+
+=== 4x6 torus: N=24 sites, 18995 hard-core states, Witten index W = sdim = 3
+  eps=0.00  ||Q^2||=0.0e+00  lowest 4: [5.14366298e-16 1.02038467e-15 2.84294378e-15 6.09001326e-01]
+  eps=0.20  ||Q^2||=1.1e-16  lowest 4: [-4.38481923e-15  1.14890566e-15  1.99285786e-15  3.22254273e-01]
+  naive hop strain (x e^eps, y e^-eps): E0(0)=-2.572e-15  E0''(0)/N = -2.591149e+02   E0(+-0.2) = -1.3089e+00, -3.8319e-01
+  [1.7s]

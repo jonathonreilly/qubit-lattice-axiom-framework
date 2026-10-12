@@ -1,0 +1,6 @@
+== coefficient growth of the best small-|q| fit (K2 lattice, m2=1, rA=1, rX=1) ==
+  s= 0.30: unconstrained rel.res=0.378 ||u||= 2.45e+01 | ridge(lam=0.01) rel.res=0.378 ||u||=  23.84 | ridge(lam=0.1) rel.res=0.382 ||u||=  12.63
+  s= 0.10: unconstrained rel.res=0.309 ||u||= 2.66e+02 | ridge(lam=0.01) rel.res=0.314 ||u||=  89.39 | ridge(lam=0.1) rel.res=0.340 ||u||=  15.28
+  s= 0.03: unconstrained rel.res=0.348 ||u||= 6.97e+03 | ridge(lam=0.01) rel.res=0.380 ||u||= 150.05 | ridge(lam=0.1) rel.res=0.430 ||u||=  14.86
+  s= 0.01: unconstrained rel.res=0.345 ||u||= 1.44e+05 | ridge(lam=0.01) rel.res=0.415 ||u||= 169.77 | ridge(lam=0.1) rel.res=0.468 ||u||=  18.45
+1-jet floor (f2_jet_system.out, m2=1): 0.455

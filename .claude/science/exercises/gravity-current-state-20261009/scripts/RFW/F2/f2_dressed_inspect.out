@@ -1,0 +1,28 @@
+== NN scalar, dressed pseudo-translation f = lambda(p) grad A, lambda(0) = 1/2 ==
+m2=0.25: lambda = 1/2 (K2): residual 5.056e-01 (rank 360/400);  best local lambda (19-dim even basis): residual 2.094e-14 (rank 375/419)
+m2=1.0: lambda = 1/2 (K2): residual 4.683e-01 (rank 360/400);  best local lambda (19-dim even basis): residual 2.454e-14 (rank 375/419)
+residual 2.2413898974530617e-14 rank 375 / 419
+nullity 44 ; beta-components of null space: max 0.8422874770260357
+  beta[cos p0                ] = -0.07961783 +6.4e-17j
+  beta[cos p1                ] = -0.07961783 -3.8e-16j
+  beta[cos p2                ] = -0.07961783 -1.2e-16j
+  beta[cos p3                ] = -0.07961783 +1.7e-16j
+  beta[cos 2p0               ] = -0.05414013 -7.6e-17j
+  beta[cos 2p1               ] = -0.05414013 +7.7e-17j
+  beta[cos 2p2               ] = -0.05414013 -9.9e-17j
+  beta[cos 2p3               ] = -0.05414013 +2.1e-17j
+  beta[cos p0 cos p1         ] = -0.21656051 -6.3e-16j
+  beta[cos p0 cos p2         ] = -0.21656051 -6.7e-16j
+  beta[cos p0 cos p3         ] = -0.21656051 -3.1e-16j
+  beta[cos p1 cos p2         ] = -0.21656051 -3.2e-16j
+  beta[cos p1 cos p3         ] = -0.21656051 -1.4e-16j
+  beta[cos p2 cos p3         ] = -0.21656051 -2.3e-16j
+lambda at a shell point = (4.163336342344337e-15-1.497893492352015e-16j)  1/(2cos p0)= (0.5382536946544692-0.005670122766027945j)
+  output comp (0, 0), mu=0:  []
+  output comp (0, 0), mu=1:  []
+  output comp (0, 0), mu=2:  []
+  output comp (0, 0), mu=3:  []
+  output comp (1, 1), mu=0:  []
+  output comp (1, 1), mu=1:  []
+  output comp (1, 1), mu=2:  []
+  output comp (1, 1), mu=3:  []

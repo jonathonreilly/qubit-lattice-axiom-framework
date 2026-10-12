@@ -1,0 +1,37 @@
+
+========== d=2 range<=4: 14 cubic orbits, L=96 (0.0s) ==========
+  NN (p=sin k) M=1.0: mu_E,mu_T2,mu_tr = +3.151813e-03 -0.000000e+00 -1.039246e-02
+  NN (p=sin k) M=0.3: mu_E,mu_T2,mu_tr = +4.653763e-03 -0.000000e+00 -1.710353e-02
+  body-diagonal Phi (J_E = 1): mus(M=1) = -0.0000e+00 +1.6256e-03 -5.1656e-03  costs {'min_ratio': np.float64(0.00026770626181715345), 'alpha': np.float64(-0.041666666666666664), 'beta': np.float64(-0.25), 'C3_avg_anom': np.float64(-1.0), 'vmax': np.float64(0.9994645874764242)}
+  common zero at M=1.0 (doubler-free, Phi>=0.2 Phi_NN): |b-b_NN|=0.0385  (2s)
+     largest b: [(np.float64(0.3869), (1, 0)), (np.float64(0.0277), (4, 4)), (np.float64(0.0211), (3, 3)), (np.float64(-0.0088), (1, 1)), (np.float64(0.0082), (2, 2)), (np.float64(0.0071), (4, 1))]
+     M=0.1: mu_E=+6.2733e-05 mu_T2=+1.0388e-04 mu_tr=-4.5481e-04   (NN mu_E +4.8629e-03)
+     M=0.3: mu_E=+4.6174e-05 mu_T2=+6.6930e-05 mu_tr=-3.1535e-04   (NN mu_E +4.6538e-03)
+     M=1.0: mu_E=-7.4991e-18 mu_T2=-1.8968e-17 mu_tr=-7.0292e-05   (NN mu_E +3.1518e-03)
+     M=3.0: mu_E=-8.9185e-06 mu_T2=-9.0396e-06 mu_tr=+3.3136e-06   (NN mu_E +6.7687e-04)
+     costs: {'min_ratio': np.float64(0.1999999999999999), 'alpha': np.float64(-0.4548815005074163), 'beta': np.float64(-2.3060209421454365), 'C3_avg_anom': np.float64(-1.0), 'vmax': np.float64(0.9948437008207782)}   [NN: {'min_ratio': np.float64(0.9999999999999959), 'alpha': np.float64(-0.041666666666666664), 'beta': np.float64(0.0), 'C3_avg_anom': np.float64(-1.0), 'vmax': np.float64(0.9998661379096124)}]
+  common zero at M=0.3 (doubler-free, Phi>=0.2 Phi_NN): |b-b_NN|=0.0401  (3s)
+     largest b: [(np.float64(0.4144), (1, 0)), (np.float64(0.0305), (4, 4)), (np.float64(0.0165), (3, 3)), (np.float64(-0.0136), (1, 1)), (np.float64(0.0096), (4, 2)), (np.float64(0.0061), (4, 1))]
+     M=0.1: mu_E=+1.6498e-05 mu_T2=+3.3054e-05 mu_tr=-4.3843e-04   (NN mu_E +4.8629e-03)
+     M=0.3: mu_E=+3.3875e-17 mu_T2=+6.2221e-18 mu_tr=-2.9792e-04   (NN mu_E +4.6538e-03)
+     M=1.0: mu_E=-3.9651e-05 mu_T2=-4.6690e-05 mu_tr=-4.4092e-05   (NN mu_E +3.1518e-03)
+     M=3.0: mu_E=-2.9040e-05 mu_T2=-2.9747e-05 mu_tr=+2.2056e-05   (NN mu_E +6.7687e-04)
+     costs: {'min_ratio': np.float64(0.2101145823148382), 'alpha': np.float64(-0.469846221458973), 'beta': np.float64(-2.350203212468519), 'C3_avg_anom': np.float64(-1.0), 'vmax': np.float64(0.9947250550580996)}   [NN: {'min_ratio': np.float64(0.9999999999999959), 'alpha': np.float64(-0.041666666666666664), 'beta': np.float64(0.0), 'C3_avg_anom': np.float64(-1.0), 'vmax': np.float64(0.9998661379096124)}]
+  ALL-MASS attempt over 10 masses: min sum (mu/F_NN)^2 = 1.716e-06  (NN: 1.000e+01; 20 conditions, 13 free)  (21s)
+     off-set M=0.05: mu_E/F=+1.865e-04 mu_T2/F=+1.302e-03
+     off-set M=0.4: mu_E/F=-1.544e-04 mu_T2/F=-7.141e-04
+     off-set M=1.2: mu_E/F=+6.814e-05 mu_T2/F=+3.386e-04
+     off-set M=4.0: mu_E/F=+4.320e-05 mu_T2/F=-1.222e-04
+     costs: {'min_ratio': np.float64(0.2000000000010083), 'alpha': np.float64(-0.5905594395104357), 'beta': np.float64(-3.127314514513605), 'C3_avg_anom': np.float64(-1.0), 'vmax': np.float64(0.9930921077380593)}
+
+========== d=3 range<=3: 19 cubic orbits, L=32 (0.1s) ==========
+  NN (p=sin k) M=1.0: mu_E,mu_T2,mu_tr = +1.970389e-03 -0.000000e+00 -1.555847e-02
+  NN (p=sin k) M=0.3: mu_E,mu_T2,mu_tr = +2.608177e-03 -0.000000e+00 -2.151258e-02
+  body-diagonal Phi (J_E = 1): mus(M=1) = -0.0000e+00 +6.0117e-04 -4.2521e-03  costs {'min_ratio': np.float64(0.0035984246152179385), 'alpha': np.float64(-0.041666666666666664), 'beta': np.float64(-0.25), 'C3_avg_anom': np.float64(-1.0), 'vmax': np.float64(0.9915860876105652)}
+  M=1.0: no doubler-free common zero found
+  M=0.3: no doubler-free common zero found
+Traceback (most recent call last):
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/RV4/S2/s2_enablae.py", line 122, in <module>
+    b = b_from_free(best.x, Mo.norm, j0)
+                    ^^^^^^
+AttributeError: 'NoneType' object has no attribute 'x'

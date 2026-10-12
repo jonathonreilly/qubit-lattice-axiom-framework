@@ -1,0 +1,4 @@
+eigen-check (A): K restricted to 4D-TT subspace is p^2/2 * Gram? -> False
+Riemann: #component pairs where Chat_A - Chat_B is NOT a polynomial in p4 (non-contact): 171 of 231
+Ricci-Ricci, model A: # non-contact (non-polynomial in p4) entries: 55 of 55
+Ricci-Ricci, model B: # non-contact (non-polynomial in p4) entries: 0 of 55

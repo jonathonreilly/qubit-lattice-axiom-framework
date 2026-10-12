@@ -1,0 +1,22 @@
+== LI checks (c = 1) ==
+4D fermion, Feynman gauge: Sigma' = i pslash * A * L * 1/(8*pi**2)  (expect 1/(8 pi^2): Z2 = 1 - alpha/(2pi) ln Lambda)
+4D scalar, Feynman gauge: p^2 coefficient 1 - A L * 1/(4*pi**2)  (expect 2/(8 pi^2) = 4/(16 pi^2): gamma_phi = (3-xi) e^2/16pi^2 at xi=1)
+4D fermion from Yukawa: Sigma' = i pslash y^2 L * 1/(16*pi**2)  (expect 1/(16 pi^2): gamma_psi = y^2/(32 pi^2))
+
+== Speed-relaxation coefficients dv/dL = kappa * A * (c_mediator - v), L = ln(Lambda/mu) ==
+4D fermion <- gauge  : kappa_F = 1/(3*pi**2) = 16/3/(16 pi^2)   [x C_F g^2]  (gauge-term anisotropy: 0)
+4D scalar  <- gauge  : kappa_S = 1/(4*pi**2) = 4/(16 pi^2)   [x C_2 g^2]
+4D fermion <- scalar : kappa_Y = 1/(24*pi**2) = 2/3/(16 pi^2)   [x y^2, real scalar]
+4D gauge   <- matter : rate = g^2/(8 pi^2) * (4/3 T Dirac | 2/3 T Weyl | 1/3 T complex scalar)  [beta0 shares]
+4D scalar  <- fermion loop: rate = 2 gamma_phi = 4 N_D y^2/(16 pi^2) (real scalar, N_D Dirac)
+3D (large N, 1/|k| mediator) fermion <- gauge : kappa = 4/(5*pi**2) ; with A = 16/N: exponent = 64/(5*pi**2)/N = 1.2969/N
+3D (large N, 1/|k| mediator) fermion <- scalar: kappa = 2/(15*pi**2) ; with A = 8/N : exponent = 16/(15*pi**2)/N = 0.1081/N
+   LI checks 3D: QED3 Feynman-like Sigma' coefficient 1/(6*pi**2) x16/N = 8/(3*pi**2)/N ; GN 1/(6*pi**2) x 8/N = 4/(3*pi**2)/N (gamma_psi^GN = half = 2/(3*pi**2)/N; lit. 2/(3 pi^2 N))
+
+== exact-in-c sign check, 4D fermion <- gauge: (dv/dL)/A at v = 1 (positive iff c > 1 => attractive) ==
+  c =  0.30: dv/dL / A = -3.490285e-02   (linear prediction -2.364161e-02)
+  c =  0.70: dv/dL / A = -1.155202e-02   (linear prediction -1.013212e-02)
+  c =  0.95: dv/dL / A = -1.721439e-03   (linear prediction -1.688686e-03)
+  c =  1.05: dv/dL / A = +1.658047e-03   (linear prediction +1.688686e-03)
+  c =  1.50: dv/dL / A = +1.452270e-02   (linear prediction +1.688686e-02)
+  c =  3.00: dv/dL / A = +4.643888e-02   (linear prediction +6.754746e-02)

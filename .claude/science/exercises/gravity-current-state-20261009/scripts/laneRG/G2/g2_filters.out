@@ -1,0 +1,70 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/laneRG/G2/g2_filters.py:66: IntegrationWarning: The maximum number of subdivisions (50) has been achieved.
+  If increasing the limit yields no improvement it is advised to analyze 
+  the integrand in order to determine the difficulties.  If the position of a 
+  local difficulty can be determined (singularity, discontinuity) one will 
+  probably gain from splitting up the interval and calling the integrator 
+  on the subranges.  Perhaps a special-purpose integrator should be used.
+  I0 = quad(h, 0, a, weight='alg', wvar=(-0.5, -0.5))[0]
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/laneRG/G2/g2_filters.py:67: IntegrationWarning: The maximum number of subdivisions (50) has been achieved.
+  If increasing the limit yields no improvement it is advised to analyze 
+  the integrand in order to determine the difficulties.  If the position of a 
+  local difficulty can be determined (singularity, discontinuity) one will 
+  probably gain from splitting up the interval and calling the integrator 
+  on the subranges.  Perhaps a special-purpose integrator should be used.
+  I1 = quad(lambda t: t * h(t), 0, a, weight='alg', wvar=(-0.5, -0.5))[0]
+== (a) binomial filter ((1+cos k)/2)^r: sup umklapp ratio vs 16^-r (proved value)
+  r=  1  eps_sup=6.250000e-02  16^-r=6.250000e-02  ratio=1.000000
+  r=  2  eps_sup=3.906250e-03  16^-r=3.906250e-03  ratio=1.000000
+  r=  4  eps_sup=1.525879e-05  16^-r=1.525879e-05  ratio=1.000000
+  r=  8  eps_sup=2.328306e-10  16^-r=2.328306e-10  ratio=1.000000
+  r= 16  eps_sup=5.421011e-20  16^-r=5.421011e-20  ratio=1.000000
+  r= 32  eps_sup=2.938736e-39  16^-r=2.938736e-39  ratio=1.000000
+
+== Bernstein-Walsh exponent g_E(c) per degree (one leg), E=[-1,0]u[cos kappa,1]
+  kappa=0.0000 (0.000 pi)  g1=1.45250  critical x=0.9216   2*g1=2.90500
+  kappa=0.1000 (0.032 pi)  g1=0.91282  critical x=0.7138   2*g1=1.82564
+  kappa=0.3927 (0.125 pi)  g1=0.64308  critical x=0.5632   2*g1=1.28616
+  kappa=0.5236 (0.167 pi)  g1=0.55715  critical x=0.5037   2*g1=1.11430
+  kappa=0.7854 (0.250 pi)  g1=0.40468  critical x=0.3834   2*g1=0.80937
+  kappa=1.0472 (0.333 pi)  g1=0.26501  critical x=0.2589   2*g1=0.53002
+  kappa=1.2566 (0.400 pi)  g1=0.15774  critical x=0.1564   2*g1=0.31548
+  kappa=1.4137 (0.450 pi)  g1=0.07862  critical x=0.0785   2*g1=0.15724
+  check kappa->0 limit: arccosh(3) = 1.762747174039086
+
+== (c) LP minimax filters: delta_n, its local rate, and eps_sup for 2<->2 (product filter)
+ kappa = 0.167 pi ; Bernstein-Walsh one-leg rate g1 = 0.5572
+   n=  2 delta=9.217e-02 (pass 9.2e-02, stop 9.2e-02)  eps_sup=3.247e-03  -ln(eps_sup)/n=2.8650  
+   n=  4 delta=3.717e-02 (pass 3.7e-02, stop 3.7e-02)  eps_sup=4.963e-03  -ln(eps_sup)/n=1.3264  local rate -dln(delta)/dn=0.4540
+   n=  6 delta=1.146e-02 (pass 1.1e-02, stop 1.1e-02)  eps_sup=1.444e-03  -ln(eps_sup)/n=1.0901  local rate -dln(delta)/dn=0.5884
+   n=  8 delta=1.775e-03 (pass 1.8e-03, stop 1.8e-03)  eps_sup=2.095e-04  -ln(eps_sup)/n=1.0588  local rate -dln(delta)/dn=0.9326
+   n= 12 delta=2.676e-04 (pass 2.7e-04, stop 2.7e-04)  eps_sup=3.074e-05  -ln(eps_sup)/n=0.8658  local rate -dln(delta)/dn=0.4730
+   n= 16 delta=2.929e-05 (pass 2.9e-05, stop 2.9e-05)  eps_sup=3.805e-06  -ln(eps_sup)/n=0.7799  local rate -dln(delta)/dn=0.5531
+   n= 20 delta=2.123e-06 (pass 2.1e-06, stop 2.1e-06)  eps_sup=2.586e-07  -ln(eps_sup)/n=0.7584  local rate -dln(delta)/dn=0.6562
+   n= 24 delta=2.523e-07 (pass 2.0e-07, stop 2.5e-07)  eps_sup=1.843e-08  -ln(eps_sup)/n=0.7421  local rate -dln(delta)/dn=0.5324
+   n= 28 delta=7.993e-08 (pass 6.4e-08, stop 8.0e-08)  eps_sup=1.748e-09  -ln(eps_sup)/n=0.7202  local rate -dln(delta)/dn=0.2874
+   n= 32 delta=1.355e-08 (pass 1.4e-08, stop 1.3e-08)  eps_sup=1.431e-09  -ln(eps_sup)/n=0.6364  local rate -dln(delta)/dn=0.4437
+   n= 40 delta=6.477e-08 (pass 4.4e-08, stop 6.5e-08)  eps_sup=4.121e-08  -ln(eps_sup)/n=0.4251  local rate -dln(delta)/dn=-0.1956
+ kappa = 0.250 pi ; Bernstein-Walsh one-leg rate g1 = 0.4047
+   n=  2 delta=1.796e-01 (pass 1.8e-01, stop 1.8e-01)  eps_sup=2.319e-02  -ln(eps_sup)/n=1.8821  
+   n=  4 delta=5.219e-02 (pass 5.2e-02, stop 5.2e-02)  eps_sup=1.601e-02  -ln(eps_sup)/n=1.0336  local rate -dln(delta)/dn=0.6180
+   n=  6 delta=2.791e-02 (pass 2.8e-02, stop 2.8e-02)  eps_sup=1.131e-02  -ln(eps_sup)/n=0.7470  local rate -dln(delta)/dn=0.3129
+   n=  8 delta=1.179e-02 (pass 1.2e-02, stop 1.2e-02)  eps_sup=4.284e-03  -ln(eps_sup)/n=0.6816  local rate -dln(delta)/dn=0.4309
+   n= 12 delta=1.402e-03 (pass 1.4e-03, stop 1.4e-03)  eps_sup=6.666e-04  -ln(eps_sup)/n=0.6094  local rate -dln(delta)/dn=0.5323
+   n= 16 delta=3.314e-04 (pass 3.3e-04, stop 3.3e-04)  eps_sup=1.709e-04  -ln(eps_sup)/n=0.5421  local rate -dln(delta)/dn=0.3606
+   n= 20 delta=4.636e-05 (pass 4.6e-05, stop 4.6e-05)  eps_sup=2.708e-05  -ln(eps_sup)/n=0.5258  local rate -dln(delta)/dn=0.4917
+   n= 24 delta=1.054e-05 (pass 1.1e-05, stop 1.1e-05)  eps_sup=6.431e-06  -ln(eps_sup)/n=0.4981  local rate -dln(delta)/dn=0.3703
+   n= 28 delta=1.695e-06 (pass 1.7e-06, stop 1.7e-06)  eps_sup=1.081e-06  -ln(eps_sup)/n=0.4906  local rate -dln(delta)/dn=0.4569
+   n= 32 delta=4.222e-07 (pass 4.2e-07, stop 4.2e-07)  eps_sup=2.236e-07  -ln(eps_sup)/n=0.4785  local rate -dln(delta)/dn=0.3475
+   n= 40 delta=4.658e-08 (pass 4.7e-08, stop 2.9e-08)  eps_sup=4.892e-09  -ln(eps_sup)/n=0.4784  local rate -dln(delta)/dn=0.2755
+ kappa = 0.333 pi ; Bernstein-Walsh one-leg rate g1 = 0.2650
+   n=  2 delta=2.778e-01 (pass 2.8e-01, stop 2.8e-01)  eps_sup=4.726e-02  -ln(eps_sup)/n=1.5261  
+   n=  4 delta=1.179e-01 (pass 1.2e-01, stop 1.2e-01)  eps_sup=1.336e-01  -ln(eps_sup)/n=0.5032  local rate -dln(delta)/dn=0.4287
+   n=  6 delta=5.365e-02 (pass 5.4e-02, stop 5.4e-02)  eps_sup=4.312e-02  -ln(eps_sup)/n=0.5240  local rate -dln(delta)/dn=0.3935
+   n=  8 delta=3.331e-02 (pass 3.3e-02, stop 3.3e-02)  eps_sup=2.640e-02  -ln(eps_sup)/n=0.4543  local rate -dln(delta)/dn=0.2382
+   n= 12 delta=1.113e-02 (pass 1.1e-02, stop 1.1e-02)  eps_sup=1.029e-02  -ln(eps_sup)/n=0.3813  local rate -dln(delta)/dn=0.2741
+   n= 16 delta=2.825e-03 (pass 2.8e-03, stop 2.8e-03)  eps_sup=2.770e-03  -ln(eps_sup)/n=0.3681  local rate -dln(delta)/dn=0.3427
+   n= 20 delta=9.455e-04 (pass 9.4e-04, stop 9.5e-04)  eps_sup=9.458e-04  -ln(eps_sup)/n=0.3482  local rate -dln(delta)/dn=0.2736
+   n= 24 delta=3.370e-04 (pass 3.4e-04, stop 3.4e-04)  eps_sup=3.370e-04  -ln(eps_sup)/n=0.3331  local rate -dln(delta)/dn=0.2579
+   n= 28 delta=9.008e-05 (pass 9.0e-05, stop 9.0e-05)  eps_sup=8.999e-05  -ln(eps_sup)/n=0.3327  local rate -dln(delta)/dn=0.3298
+   n= 32 delta=3.211e-05 (pass 3.2e-05, stop 3.2e-05)  eps_sup=3.200e-05  -ln(eps_sup)/n=0.3234  local rate -dln(delta)/dn=0.2579
+   n= 40 delta=3.199e-06 (pass 3.2e-06, stop 3.2e-06)  eps_sup=3.119e-06  -ln(eps_sup)/n=0.3169  local rate -dln(delta)/dn=0.2883

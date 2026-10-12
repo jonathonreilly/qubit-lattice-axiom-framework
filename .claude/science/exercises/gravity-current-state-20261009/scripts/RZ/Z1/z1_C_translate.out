@@ -1,0 +1,168 @@
+=== l_k = 7.90e-20 m: eps = 1.752e-63, sqrt(eps) = 4.186e-32
+  band-only factor (no boost), op0..2:  -ln f_B with c_low [proved rate] / with k_h [node-ladder rate]
+   radio 1 Hz channel                   dw*l_k/c = 8.28e-28 : Lambda = 137.1 137.1 137.0 / 138.6 138.5 138.5
+   radio 1 kHz channel (maser line)     dw*l_k/c = 8.28e-25 : Lambda = 130.2 130.1 130.1 / 131.6 131.6 131.6
+   radio 5 GHz, 500 MHz continuum       dw*l_k/c = 4.14e-19 : Lambda = 117.1 117.0 117.0 / 118.5 118.5 118.5
+   optical 0.1 nm channel at 500 nm     dw*l_k/c = 9.93e-17 : Lambda = 111.6 111.5 111.5 / 113.0 113.0 113.0
+   optical V band 507-595 nm            dw*l_k/c = 7.24e-14 : Lambda = 105.0 105.0 104.9 / 106.5 106.4 106.4
+   X-ray 0.5-2 keV                      dw*l_k/c = 3.00e-10 : Lambda = 96.7 96.6 96.6 / 98.1 98.1 98.1
+   GW LIGO 20-1000 Hz                   dw*l_k/c = 8.11e-25 : Lambda = 130.2 130.2 130.1 / 131.7 131.6 131.7
+  case: tau [m], gamma_b, eta_b, boost penalty -ln(eta/sinh eta); then per band: n_var(c_low) - Lambda_B(c_low) = n_B  | same with k_h  (op0)
+  lensed, 1 Gpc, T = 1 s                     tau=1.36e+17 gamma_b=2.27e+08 eta_b=19.93 boost-pen=16.2  n_var=4.53e+04 (c_low) / 1.97e+05 (k_h)
+      radio 1 Hz channel                   Lambda_B = 153.3 / 154.8   n_B = 4.511e+04 / 1.969e+05
+      radio 1 kHz channel (maser line)     Lambda_B = 146.4 / 147.9   n_B = 4.511e+04 / 1.969e+05
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 133.3 / 134.8   n_B = 4.513e+04 / 1.97e+05
+      optical 0.1 nm channel at 500 nm     Lambda_B = 127.8 / 129.3   n_B = 4.513e+04 / 1.97e+05
+      optical V band 507-595 nm            Lambda_B = 121.2 / 122.7   n_B = 4.514e+04 / 1.97e+05
+      X-ray 0.5-2 keV                      Lambda_B = 112.9 / 114.4   n_B = 4.515e+04 / 1.97e+05
+  lensed, 1 Gpc, T = 8 h                     tau=2.31e+19 gamma_b=1.34e+06 eta_b=14.80 boost-pen=11.4  n_var=7.68e+06 (c_low) / 3.34e+07 (k_h)
+      radio 1 Hz channel                   Lambda_B = 148.5 / 150.0   n_B = 7.68e+06 / 3.345e+07
+      radio 1 kHz channel (maser line)     Lambda_B = 141.6 / 143.1   n_B = 7.68e+06 / 3.345e+07
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 128.5 / 129.9   n_B = 7.68e+06 / 3.345e+07
+      optical 0.1 nm channel at 500 nm     Lambda_B = 123.0 / 124.5   n_B = 7.681e+06 / 3.345e+07
+      optical V band 507-595 nm            Lambda_B = 116.4 / 117.9   n_B = 7.681e+06 / 3.345e+07
+      X-ray 0.5-2 keV                      Lambda_B = 108.1 / 109.5   n_B = 7.681e+06 / 3.345e+07
+  lensed, 1 Gpc, T = 1 yr                    tau=7.64e+20 gamma_b=4.04e+04 eta_b=11.30 boost-pen=8.2  n_var=2.54e+08 (c_low) / 1.11e+09 (k_h)
+      radio 1 Hz channel                   Lambda_B = 145.3 / 146.7   n_B = 2.542e+08 / 1.107e+09
+      radio 1 kHz channel (maser line)     Lambda_B = 138.4 / 139.8   n_B = 2.542e+08 / 1.107e+09
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 125.2 / 126.7   n_B = 2.542e+08 / 1.107e+09
+      optical 0.1 nm channel at 500 nm     Lambda_B = 119.8 / 121.2   n_B = 2.542e+08 / 1.107e+09
+      optical V band 507-595 nm            Lambda_B = 113.2 / 114.6   n_B = 2.542e+08 / 1.107e+09
+      X-ray 0.5-2 keV                      Lambda_B = 104.8 / 106.3   n_B = 2.542e+08 / 1.107e+09
+  lensed, 5 Gpc, T = 1 yr                    tau=1.71e+21 gamma_b=9.03e+04 eta_b=12.10 boost-pen=8.9  n_var=5.69e+08 (c_low) / 2.48e+09 (k_h)
+      radio 1 Hz channel                   Lambda_B = 146.0 / 147.5   n_B = 5.685e+08 / 2.476e+09
+      radio 1 kHz channel (maser line)     Lambda_B = 139.1 / 140.6   n_B = 5.685e+08 / 2.476e+09
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 126.0 / 127.4   n_B = 5.685e+08 / 2.476e+09
+      optical 0.1 nm channel at 500 nm     Lambda_B = 120.5 / 122.0   n_B = 5.685e+08 / 2.476e+09
+      optical V band 507-595 nm            Lambda_B = 113.9 / 115.4   n_B = 5.685e+08 / 2.476e+09
+      X-ray 0.5-2 keV                      Lambda_B = 105.6 / 107.0   n_B = 5.685e+08 / 2.476e+09
+  quasar, 1 Gpc, T = 1e7 yr                  tau=2.42e+24 gamma_b=1.28e+01 eta_b=3.24 boost-pen=1.4  n_var=8.05e+11 (c_low) / 3.5e+12 (k_h)
+      radio 1 Hz channel                   Lambda_B = 138.5 / 139.9   n_B = 8.046e+11 / 3.504e+12
+      radio 1 kHz channel (maser line)     Lambda_B = 131.5 / 133.0   n_B = 8.046e+11 / 3.504e+12
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 118.4 / 119.9   n_B = 8.046e+11 / 3.504e+12
+      optical 0.1 nm channel at 500 nm     Lambda_B = 112.9 / 114.4   n_B = 8.046e+11 / 3.504e+12
+      optical V band 507-595 nm            Lambda_B = 106.4 / 107.8   n_B = 8.046e+11 / 3.504e+12
+      X-ray 0.5-2 keV                      Lambda_B = 98.0 / 99.5   n_B = 8.046e+11 / 3.504e+12
+  on-cone radio emitter 1 Gpc, s = 3 m       tau=1.36e+13 gamma_b=2.27e+12 eta_b=29.14 boost-pen=25.1  n_var=4.53 (c_low) / 19.7 (k_h)
+      radio 1 Hz channel                   Lambda_B = 162.2 / 163.6   n_B = -157.6 / -143.9
+      radio 1 kHz channel (maser line)     Lambda_B = 155.3 / 156.7   n_B = -150.7 / -137
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 142.1 / 143.6   n_B = -137.6 / -123.9
+      optical 0.1 nm channel at 500 nm     Lambda_B = 136.7 / 138.1   n_B = -132.1 / -118.4
+      optical V band 507-595 nm            Lambda_B = 130.1 / 131.5   n_B = -125.5 / -111.8
+      X-ray 0.5-2 keV                      Lambda_B = 121.7 / 123.2   n_B = -117.2 / -103.5
+  maser emitter 1 Gpc, s = 1 km              tau=2.48e+14 gamma_b=1.24e+11 eta_b=26.24 boost-pen=22.3  n_var=82.7 (c_low) / 360 (k_h)
+      radio 1 Hz channel                   Lambda_B = 159.4 / 160.8   n_B = -76.7 / 199.1
+      radio 1 kHz channel (maser line)     Lambda_B = 152.5 / 153.9   n_B = -69.8 / 206
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 139.3 / 140.8   n_B = -56.67 / 219.2
+      optical 0.1 nm channel at 500 nm     Lambda_B = 133.9 / 135.3   n_B = -51.19 / 224.6
+      optical V band 507-595 nm            Lambda_B = 127.3 / 128.7   n_B = -44.6 / 231.2
+      X-ray 0.5-2 keV                      Lambda_B = 118.9 / 120.4   n_B = -36.27 / 239.6
+  GW merger 1 Gpc, s = 10 km (RL4 setting)   tau=7.86e+14 gamma_b=3.93e+10 eta_b=25.09 boost-pen=21.2  n_var=261 (c_low) / 1.14e+03 (k_h)
+      GW LIGO 20-1000 Hz                   Lambda_B = 151.4 / 152.8   n_B = 110 / 985.5
+  GW inspiral 1 Gpc, 1 yr                    tau=7.64e+20 gamma_b=4.04e+04 eta_b=11.30 boost-pen=8.2  n_var=2.54e+08 (c_low) / 1.11e+09 (k_h)
+      GW LIGO 20-1000 Hz                   Lambda_B = 138.4 / 139.8   n_B = 2.542e+08 / 1.107e+09
+  lab lamp 1 m, on 1 h                       tau=1.08e+12 gamma_b=1.00e+00 eta_b=0.00 boost-pen=-0.0  n_var=0.359 (c_low) / 1.56 (k_h)
+      radio 1 Hz channel                   Lambda_B = 137.1 / 138.6   n_B = -136.7 / -137
+      radio 1 kHz channel (maser line)     Lambda_B = 130.2 / 131.6   n_B = -129.8 / -130.1
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 117.1 / 118.5   n_B = -116.7 / -117
+      optical 0.1 nm channel at 500 nm     Lambda_B = 111.6 / 113.0   n_B = -111.2 / -111.5
+      optical V band 507-595 nm            Lambda_B = 105.0 / 106.5   n_B = -104.6 / -104.9
+      X-ray 0.5-2 keV                      Lambda_B = 96.7 / 98.1   n_B = -96.29 / -96.56
+  lab lamp 1 m, on 1 day                     tau=2.59e+13 gamma_b=1.00e+00 eta_b=0.00 boost-pen=-0.0  n_var=8.62 (c_low) / 37.5 (k_h)
+      radio 1 Hz channel                   Lambda_B = 137.1 / 138.6   n_B = -128.5 / -101
+      radio 1 kHz channel (maser line)     Lambda_B = 130.2 / 131.6   n_B = -121.6 / -94.12
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 117.1 / 118.5   n_B = -108.4 / -80.99
+      optical 0.1 nm channel at 500 nm     Lambda_B = 111.6 / 113.0   n_B = -103 / -75.51
+      optical V band 507-595 nm            Lambda_B = 105.0 / 106.5   n_B = -96.36 / -68.92
+      X-ray 0.5-2 keV                      Lambda_B = 96.7 / 98.1   n_B = -88.03 / -60.59
+  crossover: emission duration T* before retarded time for which n_var = Lambda_B (1 Gpc, op0):
+      radio 5 GHz, 500 MHz continuum       c_low: T* = 9.41e-06 s
+      radio 5 GHz, 500 MHz continuum       k_h: T* = 5.17e-07 s
+      optical 0.1 nm channel at 500 nm     c_low: T* = 8.69e-06 s
+      optical 0.1 nm channel at 500 nm     k_h: T* = 4.78e-07 s
+      optical V band 507-595 nm            c_low: T* = 7.86e-06 s
+      optical V band 507-595 nm            k_h: T* = 4.33e-07 s
+=== l_k = 1.00e-19 m: eps = 6.824e-64, sqrt(eps) = 2.612e-32
+  band-only factor (no boost), op0..2:  -ln f_B with c_low [proved rate] / with k_h [node-ladder rate]
+   radio 1 Hz channel                   dw*l_k/c = 1.05e-27 : Lambda = 137.3 137.3 137.3 / 138.8 138.7 138.8
+   radio 1 kHz channel (maser line)     dw*l_k/c = 1.05e-24 : Lambda = 130.4 130.4 130.4 / 131.9 131.8 131.9
+   radio 5 GHz, 500 MHz continuum       dw*l_k/c = 5.24e-19 : Lambda = 117.3 117.3 117.2 / 118.8 118.7 118.8
+   optical 0.1 nm channel at 500 nm     dw*l_k/c = 1.26e-16 : Lambda = 111.8 111.8 111.8 / 113.3 113.2 113.3
+   optical V band 507-595 nm            dw*l_k/c = 9.16e-14 : Lambda = 105.2 105.2 105.2 / 106.7 106.6 106.7
+   X-ray 0.5-2 keV                      dw*l_k/c = 3.80e-10 : Lambda = 96.9 96.9 96.8 / 98.4 98.3 98.3
+   GW LIGO 20-1000 Hz                   dw*l_k/c = 1.03e-24 : Lambda = 130.4 130.4 130.4 / 131.9 131.8 131.9
+  case: tau [m], gamma_b, eta_b, boost penalty -ln(eta/sinh eta); then per band: n_var(c_low) - Lambda_B(c_low) = n_B  | same with k_h  (op0)
+  lensed, 1 Gpc, T = 1 s                     tau=1.36e+17 gamma_b=2.27e+08 eta_b=19.93 boost-pen=16.2  n_var=2.23e+04 (c_low) / 9.72e+04 (k_h)
+      radio 1 Hz channel                   Lambda_B = 153.6 / 155.0   n_B = 2.216e+04 / 9.702e+04
+      radio 1 kHz channel (maser line)     Lambda_B = 146.7 / 148.1   n_B = 2.217e+04 / 9.703e+04
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 133.5 / 135.0   n_B = 2.218e+04 / 9.704e+04
+      optical 0.1 nm channel at 500 nm     Lambda_B = 128.1 / 129.5   n_B = 2.219e+04 / 9.704e+04
+      optical V band 507-595 nm            Lambda_B = 121.5 / 122.9   n_B = 2.219e+04 / 9.705e+04
+      X-ray 0.5-2 keV                      Lambda_B = 113.1 / 114.6   n_B = 2.22e+04 / 9.706e+04
+  lensed, 1 Gpc, T = 8 h                     tau=2.31e+19 gamma_b=1.34e+06 eta_b=14.80 boost-pen=11.4  n_var=3.79e+06 (c_low) / 1.65e+07 (k_h)
+      radio 1 Hz channel                   Lambda_B = 148.7 / 150.2   n_B = 3.787e+06 / 1.649e+07
+      radio 1 kHz channel (maser line)     Lambda_B = 141.8 / 143.3   n_B = 3.787e+06 / 1.649e+07
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 128.7 / 130.2   n_B = 3.787e+06 / 1.649e+07
+      optical 0.1 nm channel at 500 nm     Lambda_B = 123.2 / 124.7   n_B = 3.787e+06 / 1.649e+07
+      optical V band 507-595 nm            Lambda_B = 116.6 / 118.1   n_B = 3.787e+06 / 1.649e+07
+      X-ray 0.5-2 keV                      Lambda_B = 108.3 / 109.8   n_B = 3.787e+06 / 1.649e+07
+  lensed, 1 Gpc, T = 1 yr                    tau=7.64e+20 gamma_b=4.04e+04 eta_b=11.30 boost-pen=8.2  n_var=1.25e+08 (c_low) / 5.46e+08 (k_h)
+      radio 1 Hz channel                   Lambda_B = 145.5 / 147.0   n_B = 1.254e+08 / 5.459e+08
+      radio 1 kHz channel (maser line)     Lambda_B = 138.6 / 140.1   n_B = 1.254e+08 / 5.459e+08
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 125.5 / 126.9   n_B = 1.254e+08 / 5.459e+08
+      optical 0.1 nm channel at 500 nm     Lambda_B = 120.0 / 121.5   n_B = 1.254e+08 / 5.459e+08
+      optical V band 507-595 nm            Lambda_B = 113.4 / 114.9   n_B = 1.254e+08 / 5.459e+08
+      X-ray 0.5-2 keV                      Lambda_B = 105.1 / 106.5   n_B = 1.254e+08 / 5.459e+08
+  lensed, 5 Gpc, T = 1 yr                    tau=1.71e+21 gamma_b=9.03e+04 eta_b=12.10 boost-pen=8.9  n_var=2.8e+08 (c_low) / 1.22e+09 (k_h)
+      radio 1 Hz channel                   Lambda_B = 146.2 / 147.7   n_B = 2.803e+08 / 1.221e+09
+      radio 1 kHz channel (maser line)     Lambda_B = 139.3 / 140.8   n_B = 2.803e+08 / 1.221e+09
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 126.2 / 127.7   n_B = 2.803e+08 / 1.221e+09
+      optical 0.1 nm channel at 500 nm     Lambda_B = 120.7 / 122.2   n_B = 2.803e+08 / 1.221e+09
+      optical V band 507-595 nm            Lambda_B = 114.1 / 115.6   n_B = 2.803e+08 / 1.221e+09
+      X-ray 0.5-2 keV                      Lambda_B = 105.8 / 107.3   n_B = 2.803e+08 / 1.221e+09
+  quasar, 1 Gpc, T = 1e7 yr                  tau=2.42e+24 gamma_b=1.28e+01 eta_b=3.24 boost-pen=1.4  n_var=3.97e+11 (c_low) / 1.73e+12 (k_h)
+      radio 1 Hz channel                   Lambda_B = 138.7 / 140.2   n_B = 3.967e+11 / 1.728e+12
+      radio 1 kHz channel (maser line)     Lambda_B = 131.8 / 133.3   n_B = 3.967e+11 / 1.728e+12
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 118.7 / 120.1   n_B = 3.967e+11 / 1.728e+12
+      optical 0.1 nm channel at 500 nm     Lambda_B = 113.2 / 114.7   n_B = 3.967e+11 / 1.728e+12
+      optical V band 507-595 nm            Lambda_B = 106.6 / 108.1   n_B = 3.967e+11 / 1.728e+12
+      X-ray 0.5-2 keV                      Lambda_B = 98.3 / 99.7   n_B = 3.967e+11 / 1.728e+12
+  on-cone radio emitter 1 Gpc, s = 3 m       tau=1.36e+13 gamma_b=2.27e+12 eta_b=29.14 boost-pen=25.1  n_var=2.23 (c_low) / 9.72 (k_h)
+      radio 1 Hz channel                   Lambda_B = 162.4 / 163.9   n_B = -160.2 / -154.1
+      radio 1 kHz channel (maser line)     Lambda_B = 155.5 / 157.0   n_B = -153.3 / -147.2
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 142.4 / 143.8   n_B = -140.1 / -134.1
+      optical 0.1 nm channel at 500 nm     Lambda_B = 136.9 / 138.4   n_B = -134.7 / -128.6
+      optical V band 507-595 nm            Lambda_B = 130.3 / 131.8   n_B = -128.1 / -122
+      X-ray 0.5-2 keV                      Lambda_B = 122.0 / 123.4   n_B = -119.7 / -113.7
+  maser emitter 1 Gpc, s = 1 km              tau=2.48e+14 gamma_b=1.24e+11 eta_b=26.24 boost-pen=22.3  n_var=40.8 (c_low) / 177 (k_h)
+      radio 1 Hz channel                   Lambda_B = 159.6 / 161.1   n_B = -118.8 / 16.41
+      radio 1 kHz channel (maser line)     Lambda_B = 152.7 / 154.2   n_B = -111.9 / 23.31
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 139.6 / 141.0   n_B = -98.81 / 36.44
+      optical 0.1 nm channel at 500 nm     Lambda_B = 134.1 / 135.6   n_B = -93.33 / 41.92
+      optical V band 507-595 nm            Lambda_B = 127.5 / 129.0   n_B = -86.74 / 48.51
+      X-ray 0.5-2 keV                      Lambda_B = 119.2 / 120.6   n_B = -78.41 / 56.84
+  GW merger 1 Gpc, s = 10 km (RL4 setting)   tau=7.86e+14 gamma_b=3.93e+10 eta_b=25.09 boost-pen=21.2  n_var=129 (c_low) / 561 (k_h)
+      GW LIGO 20-1000 Hz                   Lambda_B = 151.6 / 153.1   n_B = -22.73 / 408.1
+  GW inspiral 1 Gpc, 1 yr                    tau=7.64e+20 gamma_b=4.04e+04 eta_b=11.30 boost-pen=8.2  n_var=1.25e+08 (c_low) / 5.46e+08 (k_h)
+      GW LIGO 20-1000 Hz                   Lambda_B = 138.6 / 140.1   n_B = 1.254e+08 / 5.459e+08
+  lab lamp 1 m, on 1 h                       tau=1.08e+12 gamma_b=1.00e+00 eta_b=0.00 boost-pen=-0.0  n_var=0.177 (c_low) / 0.771 (k_h)
+      radio 1 Hz channel                   Lambda_B = 137.3 / 138.8   n_B = -137.1 / -138
+      radio 1 kHz channel (maser line)     Lambda_B = 130.4 / 131.9   n_B = -130.2 / -131.1
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 117.3 / 118.8   n_B = -117.1 / -118
+      optical 0.1 nm channel at 500 nm     Lambda_B = 111.8 / 113.3   n_B = -111.6 / -112.5
+      optical V band 507-595 nm            Lambda_B = 105.2 / 106.7   n_B = -105 / -105.9
+      X-ray 0.5-2 keV                      Lambda_B = 96.9 / 98.4   n_B = -96.71 / -97.59
+  lab lamp 1 m, on 1 day                     tau=2.59e+13 gamma_b=1.00e+00 eta_b=0.00 boost-pen=-0.0  n_var=4.25 (c_low) / 18.5 (k_h)
+      radio 1 Hz channel                   Lambda_B = 137.3 / 138.8   n_B = -133.1 / -120.3
+      radio 1 kHz channel (maser line)     Lambda_B = 130.4 / 131.9   n_B = -126.2 / -113.4
+      radio 5 GHz, 500 MHz continuum       Lambda_B = 117.3 / 118.8   n_B = -113 / -100.3
+      optical 0.1 nm channel at 500 nm     Lambda_B = 111.8 / 113.3   n_B = -107.6 / -94.78
+      optical V band 507-595 nm            Lambda_B = 105.2 / 106.7   n_B = -101 / -88.18
+      X-ray 0.5-2 keV                      Lambda_B = 96.9 / 98.4   n_B = -92.64 / -79.85
+  crossover: emission duration T* before retarded time for which n_var = Lambda_B (1 Gpc, op0):
+      radio 5 GHz, 500 MHz continuum       c_low: T* = 3.85e-05 s
+      radio 5 GHz, 500 MHz continuum       k_h: T* = 2.11e-06 s
+      optical 0.1 nm channel at 500 nm     c_low: T* = 3.55e-05 s
+      optical 0.1 nm channel at 500 nm     k_h: T* = 1.95e-06 s
+      optical V band 507-595 nm            c_low: T* = 3.21e-05 s
+      optical V band 507-595 nm            k_h: T* = 1.77e-06 s

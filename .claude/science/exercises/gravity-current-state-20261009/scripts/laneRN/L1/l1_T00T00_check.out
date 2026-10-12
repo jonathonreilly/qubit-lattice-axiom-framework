@@ -1,0 +1,7 @@
+sign +1 factor 0.5: max|{T00[mu],T00[nu]} - P[zeta]| / max|C| = 5.00e-01
+sign +1 factor 1.0: max|{T00[mu],T00[nu]} - P[zeta]| / max|C| = 4.42e-16
+sign +1 factor 0.25: max|{T00[mu],T00[nu]} - P[zeta]| / max|C| = 7.50e-01
+sign -1 factor 0.5: max|{T00[mu],T00[nu]} - P[zeta]| / max|C| = 1.50e+00
+sign -1 factor 1.0: max|{T00[mu],T00[nu]} - P[zeta]| / max|C| = 2.00e+00
+sign -1 factor 0.25: max|{T00[mu],T00[nu]} - P[zeta]| / max|C| = 1.25e+00
+max|C| = 7.037766963039022

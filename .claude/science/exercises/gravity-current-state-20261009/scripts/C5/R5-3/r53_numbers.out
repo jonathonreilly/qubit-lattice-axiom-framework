@@ -1,0 +1,33 @@
+== constants (CODATA-level, comparator)
+Lambda_obs = 1.0904e-52 m^-2 ; Lambda_obs*l_P^2 = 2.8485e-122
+rho_Lambda = 2.5181e-47 GeV^4 = (2.240 meV)^4
+
+== (1) phase-transition shifts that an initial-datum (UG integration constant) must pre-cancel
+EW: Delta V = mH^2 v^2/8 = 1.1888e+08 GeV^4 = (104.4 GeV)^4 ; /rho_Lambda = 4.721e+54
+QCD bag B^(1/4)=145 MeV: 4.421e-04 GeV^4 ; /rho_Lambda = 1.755e+43
+QCD bag B^(1/4)=235 MeV: 3.050e-03 GeV^4 ; /rho_Lambda = 1.211e+44
+QCD trace anomaly (9/32)<a_s G^2/pi>, <..>=0.012 GeV^4: 3.375e-03 GeV^4 ; /rho_Lambda = 1.340e+44
+inflation (upper, comparator from memory) V^(1/4)<1.6e16 GeV: 6.554e+64 GeV^4 ; /rho_Lambda = 2.603e+111
+Planck-cell tadpole O(1) lattice units ~ Mbar^4 = 3.517e+73 GeV^4 ; /rho_Lambda = 1.397e+120
+
+== (2) Lemma PT on FRW (sympy): S = T + f(t) g, Bianchi forces Lambda(t) - 8 pi G f(t) = const
+d/dt E00 + 3H(E00+Eii) on T-conserving matter = 8*pi*G*Derivative(f(t), t) - Derivative(Lam(t), t)
+=> consistency (E00=Eii=0 for all t) requires Lam' = 8 pi G f' : Lam - 8 pi G f = Lam_c, and then
+   3H^2 = 8 pi G rho + Lam_c : the subtraction f(t) is invisible; only Lam_c and the true T matter.
+
+== (3) Baum-Hawking: I_E(S^4) = -3 pi/(G Lambda) [hbar=c=1]
+3 pi/(l_P^2 Lambda_obs) = 3.3087e+122  ; P(Lambda_obs/2)/P(Lambda_obs) = exp(3.309e+122)
+S^4 action I(r) = pi*r**2*(Lambda*r**2 - 6)/(3*G) ; stationary r = [sqrt(3)/sqrt(Lambda)] ; I* = -3*pi/(G*Lambda) ; d2I/dr2 at r* = 8*pi/G
+
+== (4) fixed total 4-volume V (unimodular 'microcanonical', count = V/l^4):
+   Z(V) = int dLambda exp(Lambda V/(8 pi G)) exp(3 pi/(G Lambda)); saddle Lambda* = sqrt(24 pi^2 / V)
+   saddle: [2*sqrt(6)*pi/sqrt(V)]
+   N = V_lc (past cone) = 6.389e+242 l_P^4 -> Lambda* l_P^2 = 6.089e-121 = 21.38 Lambda_obs
+   N = (c/H0)^4 = 5.200e+243 l_P^4 -> Lambda* l_P^2 = 2.134e-121 = 7.49 Lambda_obs
+   N = (c t0)^4 = 4.242e+243 l_P^4 -> Lambda* l_P^2 = 2.363e-121 = 8.30 Lambda_obs
+   total 4-volume giving Lambda* = Lambda_obs: 2.919e+245 l_P^4 = 56.1 (c/H0)^4 ; (Euclidean S^4 of radius sqrt(3/Lambda_obs): 8 pi^2 r^4/3 = 2.919e+245)
+
+== (5) equilibrium (Gibbs-Duhem) identity: E(N,V)=V eps(N/V); dE/dV|_N = eps - n eps'(n) = -p
+   dE/dV at fixed N = -n*Derivative(eps(n), n) + eps(n)  (= eps - n eps'(n); vanishes at the zero-pressure equilibrium)
+   sample eps(n) = n(n-1)^2 - n/2: equilibrium n0 = 1.000000, eps(n0) = -0.500000, eps - n eps' = 0.00e+00
+   fixed density (one record per site, fixed spacing): n = n_max is not a variable; eps(n_max) - mu n_max has no condition setting it to zero.

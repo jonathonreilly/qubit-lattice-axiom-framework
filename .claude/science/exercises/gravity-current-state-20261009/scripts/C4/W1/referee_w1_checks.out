@@ -1,0 +1,11 @@
+dressing coefficient-space ranks
+full-48 range 1 E 2 T2 0
+full-48 range 2 E 21 T2 9
+proper-24 range 1 E 2 T2 0
+proper-24 range 2 E 22 T2 19
+bond Gdot(ex,ey,ez) [ 9.90928509e-02 -9.90928509e-02  2.16840434e-19]
+bond mu1/lambda_prime 0.019638786197862537
+strained-normal-ordering Hessian coefficients (1, -2, 1) sum 0
+L2 H 2.451933411601116e-05 +/- 2.813827631304369e-07 mu/lambda^2 -1.0216389215004651e-06
+centroid-local H -0.0005603735380065124 +/- 1.637065517914841e-07 mu/lambda^2 2.3348897416938014e-05
+full-flow H 1.321072816301695e-07 +/- 1.8686004852632143e-07 mu/lambda^2 -5.504470067923729e-09

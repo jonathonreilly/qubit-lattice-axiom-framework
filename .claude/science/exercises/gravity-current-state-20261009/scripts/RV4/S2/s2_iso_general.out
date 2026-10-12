@@ -1,0 +1,6 @@
+p=sin  E  | M=1.0: flow +3.151813e-03  flow+G2 -3.3e-12 | M=0.3: flow +4.653763e-03  flow+G2 +1.7e-12 | G2 kernel range 3
+p=sin  T2 | M=1.0: flow -3.700743e-13  flow+G2 -3.7e-13 | M=0.3: flow +2.775558e-12  flow+G2 +2.8e-12 | G2 kernel range 0
+p=diag E  | M=1.0: flow +5.551115e-12  flow+G2 +5.6e-12 | M=0.3: flow +2.775558e-12  flow+G2 +2.8e-12 | G2 kernel range 0
+p=diag T2 | M=1.0: flow +3.255558e-03  flow+G2 +3.3e-12 | M=0.3: flow +4.945047e-03  flow+G2 +3.5e-12 | G2 kernel range 3
+p=mix  E  | M=1.0: flow +8.083315e-03  flow+G2 +1.9e-12 | M=0.3: flow +9.547923e-03  flow+G2 +5.6e-13 | G2 kernel range 3
+p=mix  T2 | M=1.0: flow +1.441821e-02  flow+G2 +1.1e-12 | M=0.3: flow +1.653634e-02  flow+G2 +1.3e-12 | G2 kernel range 3

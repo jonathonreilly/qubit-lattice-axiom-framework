@@ -1,0 +1,7 @@
+KL M=0.25 g=1, T= 4  worst site/link/haus [-1.25912921e-16 -5.43486604e-13 -2.03033328e-16]
+KL M=0.25 g=1, T= 7  worst site/link/haus [-2.63956201e-16 -1.02792303e-12 -5.62379755e-16]
+KL M=0.25 g=1, T= 10  worst site/link/haus [-5.17915593e-16 -2.35442191e-12 -1.03984072e-15]
+KL M=0.25 g=1, T= 13  worst site/link/haus [-6.30495285e-16 -4.04721612e-12 -1.24051311e-15]
+ C perfect action s^2=0.5                     k=0 (site,link,haus) -2.2e-16 -1.4e-13 -1.2e-15 | all k worst -2.7e-11 -1.4e-13 -2.7e-11  PASS
+ C perfect action s^2=1.0                     k=0 (site,link,haus) -1.7e-16 -1.4e-13 -7.1e-16 | all k worst -8.7e-13 -2.4e-13 -8.8e-13  PASS
+ C perfect action s^2=2.0                     k=0 (site,link,haus) -2.7e-16 -1.4e-13 -1.0e-15 | all k worst -4.2e-14 -4.4e-13 -4.2e-14  PASS

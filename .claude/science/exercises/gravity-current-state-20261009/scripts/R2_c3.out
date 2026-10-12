@@ -1,0 +1,8 @@
+3D Dirac sea  L=48: H_E=-1.77932e-01  H_T=-1.46668e-01
+3D Dirac sea  L=96: H_E=-1.77930e-01  H_T=-1.46669e-01
+3D Dirac sea  L=160: H_E=-1.77930e-01  H_T=-1.46669e-01
+4D log det    L=24: H_E=-2.06615e-01  H_T=-1.46692e-01
+4D log det    L=40: H_E=-2.06583e-01  H_T=-1.46709e-01
+4D log det    L=56: H_E=-2.06579e-01  H_T=-1.46710e-01
+control (strain-following window) second difference: +0.00e+00
+control (strain-following window) second difference: -8.88e-14

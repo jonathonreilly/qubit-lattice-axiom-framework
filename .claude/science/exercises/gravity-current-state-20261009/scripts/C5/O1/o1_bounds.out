@@ -1,0 +1,11 @@
+photon decay e+e- at 1.4 PeV: exact d_th = 2.66449e-19  approx 2m^2/E^2 = 2.66449e-19
+photon decay p pbar at 1.4 PeV:            8.98321e-13
+tuning factor needed (bound/natural): 3.116e-17   miss without tuning: 3.209e+16
+alpha/(4 pi) = 0.0005807 ; xi=2 lattice value -10.26*alpha/(4pi) = 0.005958
+  UHECR one-sided 6e-20 / natural 6e-3 = 1.0e-17
+  UHECR one-sided 6e-20 / natural 8.55e-3 = 7.02e-18
+GW170817 tuning vs ~1e-2 natural: 7.0e-14 to 3.0e-13
+CMB dipole beta^2 = 1.51e-6 => c_00(neutron) <~ 1e-29/beta^2 = 6.61e-24 (order of magnitude; projection factors not computed)
+dimension-5 (linear) coefficient bound (E_QG,1 > 10 E_Pl): < 0.1 of Planck-natural
+dimension-6 a^2 p^4 at a = l_P: needs E_QG,2 > 6e-8 E_Pl; natural is ~E_Pl/sqrt(12) -> passes by 6.68 decades in scale
+decades M_Pl -> 1.4 PeV: 12.94 ; power z needed ~ 1.276 (E2 refereed: 1.27564)

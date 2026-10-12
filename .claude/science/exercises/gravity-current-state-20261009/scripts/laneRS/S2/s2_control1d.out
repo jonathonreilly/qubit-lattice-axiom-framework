@@ -1,0 +1,7 @@
+    d=1 m=0.0: shells with |T| > 1e-10: 0 of 400 (only these constrain)
+(i) d=1 m=0.0: 0 nontrivial generic shells, |T| median 0.000e+00; odd f R<=16: null dim 16 of 16; sv min 0.000e+00
+    d=1 m=0.5: shells with |T| > 1e-10: 400 of 400 (only these constrain)
+(i) d=1 m=0.5: 400 nontrivial generic shells, |T| median 6.297e+00; odd f R<=16: null dim 0 of 16; sv min 3.531e-01
+(ii) d=1 K=pi/2 branch: odd null dim 4 of 8 (sin 2k fails: row max 4.000)
+(iii) permutation-only rows: null dim 8 of 8; relative-only rule would give 0
+(iv) max over 480000 (k,k',Q) of |eps(k)-eps(k')| - omega(Q) = -1.686e-02  (<0: no + band O(e) emission pole)

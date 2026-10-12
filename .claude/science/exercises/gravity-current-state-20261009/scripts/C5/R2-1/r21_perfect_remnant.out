@@ -1,0 +1,33 @@
+R2-1 perfect-action remnant check, d=2, m=0.50, sigma=0.60, alpha=1.00, NMAX=8
+1. exactness: max |Phi.G^-1.T Phi| / norms over 5 random Phi, mu=0,1: 2.63e-17
+   (t_mu odd and imaginary, G even and real => T is G^-1-antisymmetric: exact symmetry)
+   t real part max: 0.0e+00 ; t odd: max|t(k)+t(-k)| = 5.6e-17
+2. locality (x-space couplings along the axis x=(0,r) and diagonal):
+   r   |G^-1(0,r)|      |T_1(0,r)|      |T_1(r,r)|
+   1  5.135e-02      2.793e-02      2.098e-02
+   2  2.314e-02      2.404e-02      8.353e-03
+   3  6.547e-03      9.720e-03      1.108e-03
+   4  1.140e-03      2.371e-03      2.065e-05
+   6  5.292e-05      1.720e-05      3.320e-06
+   8  5.655e-06      9.448e-06      4.788e-08
+  10  1.012e-07      1.440e-07      7.841e-10
+  12  2.802e-08      3.907e-08      3.944e-11
+  16  1.306e-10      1.490e-10      1.613e-14
+  20  5.530e-13      4.649e-13      1.361e-19
+   fitted decay rate (per lattice unit) along axis: G^-1: 1.352, T_1: 1.304
+3. tower: fixed real k_1, G has a pole in complex k_0 at k_0 = i E_n for EVERY n_1,
+   E_n = sqrt(m^2+(k_1+2 pi n_1)^2). Residues by 60-digit contour integrals (radius 1e-3):
+   n_1   E_n       Res G          Res N_1 / Res G      i(k1+2 pi n1)    Res N_0/Res G    -E_n
+   +0    0.8602  (-4.21674e-62 - 0.675302j)   (-1.1376755e-62 + 0.7j)   +0.700000i   (-0.86023253 - 8.2695454e-63j)   -0.860233
+   +1    7.0011  (5.60809e-54 - 0.0829756j)   (4.3692873e-52 + 6.9831853j)   +6.983185i   (-7.0010626 + 3.2613801e-53j)   -7.001063
+   -1    5.6055  (1.14097e-58 - 0.103633j)   (-6.2080908e-57 - 5.5831853j)   -5.583185i   (-5.6055293 - 9.4867301e-57j)   -5.605529
+   +2   13.2758  (6.06643e-22 - 0.0437576j)   (1.8084015e-19 + 13.266371j)   +13.266371i   (-13.27579 - 3.8281971e-19j)   -13.275790
+   exact residue of G at the n-th pole: e^{sigma m^2}/(2 i E_n): on shell P^2=-m^2, so the
+   O(d)-covariant Gaussian kernel does NOT suppress the alias states at all.
+   => one field per site, but a pole (one-particle state) for every n_1: the complete
+      reciprocal-lattice tower; the remnant translation acts on the n-th state as i(k_1+2 pi n_1)
+      and the time component as -E_n (energy): continuum momentum on the folded continuum.
+   poles with E_n <   5 at k_1=0.70: 1
+   poles with E_n <  10 at k_1=0.70: 3
+   poles with E_n <  20 at k_1=0.70: 7
+   poles with E_n <  40 at k_1=0.70: 13

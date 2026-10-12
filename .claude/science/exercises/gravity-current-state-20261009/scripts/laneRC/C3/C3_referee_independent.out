@@ -1,0 +1,21 @@
+09-14 adjoint-stencil residuals
+  G^T(rotation), diagonal slots: 0
+  G^T(rotation), face slots: 0
+  S^T(affine lapse), diagonal slots: 0
+  S^T(affine lapse), face slots: 0
+exact Fraction residuals
+  translations: 0
+  {K,H}+P: 0
+  boost closed form: 0
+  boost defect formula: 0
+  rotation closed form: 0
+p=0 first-Taylor-coefficient certificate (exact SymPy ranks)
+  lattice rank A, rank[A|b]: 1 2
+  continuum rank A, rank[A|b]: 1 1
+  d/dp completion gate at p=0: 0
+improved-dispersion exact checks
+  r=1: leading A=-k**2/2; <A>=-1; A(pi)=-2
+  r=2: leading A=-k**4/6; <A>=-1; A(pi)=-8/3
+  r=3: leading A=-k**6/20; <A>=-1; A(pi)=-16/5
+  r=4: leading A=-k**8/70; <A>=-1; A(pi)=-128/35
+  r=5: leading A=-k**10/252; <A>=-1; A(pi)=-256/63

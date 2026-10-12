@@ -1,0 +1,23 @@
+a = l_P = 1.616e-35 m; also a = 1e-19 m column for the f-scaling
+object                        |T| [1/m]  n_d [1/m^2]     f=|T|a  (a/Lcurv)^2 e-folds sqrt(f)nRZ  f (a=1e-19)
+Earth lab (atom interf.)       1.09e-16     6.77e+18   1.77e-51     4.46e-93           1.90e-21     1.09e-35
+Sun (Cassini/deflection)       3.00e-15     1.86e+20   4.85e-50     1.12e-93           9.96e-21     3.00e-34
+galaxy strong lens             2.33e-27     1.44e+08   3.77e-62    2.03e-117           8.79e-27     2.33e-46
+cluster lens                   3.67e-28     2.27e+07   5.93e-63    3.19e-120           3.48e-27     3.67e-47
+M87* photon ring               2.63e-14     1.63e+21   4.25e-49     3.62e-97           2.95e-20     2.63e-33
+neutron star surface           1.67e-05     1.03e+30   2.69e-40     3.63e-79           7.43e-16     1.67e-24
+cosmology (T~H0/c)             7.57e-27     4.69e+08   1.22e-61    1.50e-122           1.58e-26     7.57e-46
+thresholds: <=1 variance e-fold needs f < 4.9e-10;  N_B/S < 1 (with the 122 e-fold in-band penalty) needs f < 7.3e-06
+
+(N2) classical granularity phase noise Var(dphi) = omega^2 D n_d b^2 delta, b = l_P, Poisson-placed dislocations:
+  Earth lab (atom interf.)     D=6.4e+06 m  optical 600 nm: 1.2e-29  VLBI 1.3 mm (EHT): 2.6e-30  radio 21 cm: 1.0e-34  rad^2
+  Sun (Cassini/deflection)     D=1.5e+11 m  optical 600 nm: 8.0e-24  VLBI 1.3 mm (EHT): 1.7e-24  radio 21 cm: 6.5e-29  rad^2
+  galaxy strong lens           D=3.0e+20 m  optical 600 nm: 1.2e-26  VLBI 1.3 mm (EHT): 2.6e-27  radio 21 cm: 1.0e-31  rad^2
+  cluster lens                 D=3.0e+22 m  optical 600 nm: 1.9e-25  VLBI 1.3 mm (EHT): 4.2e-26  radio 21 cm: 1.6e-30  rad^2
+  M87* photon ring             D=1.9e+13 m  optical 600 nm: 8.9e-21  VLBI 1.3 mm (EHT): 1.9e-21  radio 21 cm: 7.2e-26  rad^2
+  neutron star surface         D=1.2e+04 m  optical 600 nm: 3.5e-21  VLBI 1.3 mm (EHT): 7.5e-22  radio 21 cm: 2.9e-26  rad^2
+  cosmology (T~H0/c)           D=3.1e+25 m  optical 600 nm: 4.1e-21  VLBI 1.3 mm (EHT): 8.8e-22  radio 21 cm: 3.4e-26  rad^2
+  (delta = 10 m aperture for optical, 1e7 m Earth baseline for VLBI/radio; D = path length through the curved region)
+(N3) strain 1e-06: min |G|_E >= 2.3748/a vs in-band |q| <= 2 omega_max (omega_max a ~ 1e-28 optical)
+(N3) strain 1e-05: min |G|_E >= 2.3748/a vs in-band |q| <= 2 omega_max (omega_max a ~ 1e-28 optical)
+(N3) strain 0.5: min |G|_E >= 1.1874/a vs in-band |q| <= 2 omega_max (omega_max a ~ 1e-28 optical)

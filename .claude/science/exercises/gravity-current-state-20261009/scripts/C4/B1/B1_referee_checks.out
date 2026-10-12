@@ -1,0 +1,23 @@
+=== 1D affine-deformation / fixed-N additive closure ===
+omega = A*(1 - cos(k)) + m
+P = A*v*sin(k)
+F = A*v**2*cos(k) = v**2*(A - H + m)
+sum_i F_i at fixed N = A*N*v**2 - Htot*v**2 + N*m*v**2
+orbit integral = 0
+
+=== half-angle MS coefficient is not smooth on T^1 ===
+V(-pi), V(pi) = 0 0
+V'(-pi), V'(pi) = sqrt(m**2 + 4)/2 -sqrt(m**2 + 4)/2
+smooth periodic replacement V = (cos(k) + 1)*sqrt(m**2 - 2*cos(k) + 2)
+replacement V'(-pi)-V'(pi) = 0
+
+=== Theorem D: exact d=2 nearest-neighbour collision ===
+u(X)-u(X') = 0
+grad(X), grad(X') = Matrix([[0, 0]]) Matrix([[0, 0]])
+Hess(X) = Matrix([[-1, 0], [0, 1]])
+Hess(X') = Matrix([[1, 0], [0, -1]])
+Hess difference = Matrix([[-2, 0], [0, 2]])
+
+=== quadratic lattice LIV scale ===
+E^2 series = k**2 - a**2*k**4/12 + O(k**6)
+matching E^2=p^2[1-(p/E_QG,2)^2] gives E_QG,2 = sqrt(12)/a

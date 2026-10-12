@@ -1,0 +1,31 @@
+=== (A) Fourier linear system for the O(kappa) {D,H} condition, p_xi = 0, N = e^{i p x_b} ===
+    columns: structure functions (deg<=r) + completion image (1-cos p)*Xi(p,q), Xi arbitrary in q, deg<=r in p
+(b,c)=(0,0) lattice L1 r= 1: residual all-p 2.625e-01 | IR rows |p|<=0.1 9.959e-01 | no completion 9.103e-01; rank A=224, rank[A|b]=225; max|Xi coef|=3.9e+00
+(b,c)=(0,0) lattice L1 r= 2: residual all-p 1.344e-01 | IR rows |p|<=0.1 9.052e-01 | no completion 8.634e-01; rank A=368, rank[A|b]=369; max|Xi coef|=4.2e+00
+(b,c)=(0,0) lattice L1 r= 4: residual all-p 8.119e-02 | IR rows |p|<=0.1 7.936e-01 | no completion 8.389e-01; rank A=656, rank[A|b]=657; max|Xi coef|=3.3e+00
+(b,c)=(0,0) lattice L1 r= 8: residual all-p 6.020e-02 | IR rows |p|<=0.1 9.419e-01 | no completion 9.693e-01; rank A=1232, rank[A|b]=1233; max|Xi coef|=3.8e+00
+(b,c)=(0,0) lattice L1 r=12: residual all-p 3.650e-02 | IR rows |p|<=0.1 7.687e-01 | no completion 9.579e-01; rank A=1808, rank[A|b]=1809; max|Xi coef|=4.7e+00
+(b,c)=(0,0) lattice L1 r=16: residual all-p 2.449e-02 | IR rows |p|<=0.1 7.654e-01 | no completion 9.560e-01; rank A=2384, rank[A|b]=2385; max|Xi coef|=3.9e+00
+(b,c)=(0,0) continuum  r= 1: residual all-p 7.226e-15 | IR rows |p|<=0.1 8.214e-14 | no completion 3.456e-15; rank A=224, rank[A|b]=224; max|Xi coef|=3.2e-13
+(b,c)=(0,0) continuum  r= 2: residual all-p 1.567e-14 | IR rows |p|<=0.1 3.409e-13 | no completion 1.357e-14; rank A=368, rank[A|b]=368; max|Xi coef|=1.3e-12
+(b,c)=(0,0) continuum  r= 4: residual all-p 1.324e-14 | IR rows |p|<=0.1 1.284e-14 | no completion 1.851e-14; rank A=656, rank[A|b]=656; max|Xi coef|=1.6e-10
+(b,c)=(0,1) lattice L1: LHS identically 0 (b != c), nothing to close
+(b,c)=(0,1) continuum : LHS identically 0 (b != c), nothing to close
+
+=== (B) boost-sector anomaly symbol A(k) = u''(k) - 1 along an axis, u = omega^2/2 ===
+stencil range r_m=1: <u''>_BZ = +5.00e-06 (so <A>_BZ = -1); max|A| on |k|<0.1,0.3,1: 5.00e-03 4.47e-02 4.60e-01; A(pi) = -1.500
+stencil range r_m=2: <u''>_BZ = +8.33e-06 (so <A>_BZ = -1); max|A| on |k|<0.1,0.3,1: 1.66e-05 1.33e-03 1.41e-01; A(pi) = -1.833
+stencil range r_m=3: <u''>_BZ = +1.10e-05 (so <A>_BZ = -1); max|A| on |k|<0.1,0.3,1: 6.14e-08 3.56e-05 3.89e-02; A(pi) = -2.100
+stencil range r_m=4: <u''>_BZ = +1.33e-05 (so <A>_BZ = -1); max|A| on |k|<0.1,0.3,1: 1.20e-08 9.49e-07 1.02e-02; A(pi) = -2.329
+stencil range r_m=5: <u''>_BZ = +1.53e-05 (so <A>_BZ = -1); max|A| on |k|<0.1,0.3,1: 1.22e-08 6.47e-08 2.61e-03; A(pi) = -2.532
+   r_m=1: IR exponent log|A(0.1)/A(0.05)|/log2 = 2.00 (expected 2)
+   r_m=2: IR exponent log|A(0.1)/A(0.05)|/log2 = 4.00 (expected 4)
+   r_m=3: IR exponent log|A(0.1)/A(0.05)|/log2 = 6.00 (expected 6)
+
+random cubic-symmetric local dispersions (range 3, random positive hop weights, incl. face/body hops):
+  trial 0: <Hess u>_BZ (exact grid) diag = [-0. -0.  0.] ; relative non-constancy of Hess u = 1.000
+  trial 1: <Hess u>_BZ (exact grid) diag = [-0. -0. -0.] ; relative non-constancy of Hess u = 1.000
+  trial 2: <Hess u>_BZ (exact grid) diag = [0. 0. 0.] ; relative non-constancy of Hess u = 1.000
+  trial 3: <Hess u>_BZ (exact grid) diag = [0. 0. 0.] ; relative non-constancy of Hess u = 1.000
+
+SLAC control (u = k^2/2 on (-pi,pi], periodic): u'' = 1 everywhere inside the zone; periodicity is paid by u' jumping 2 pi -> delta of weight -2 pi at k = pi.

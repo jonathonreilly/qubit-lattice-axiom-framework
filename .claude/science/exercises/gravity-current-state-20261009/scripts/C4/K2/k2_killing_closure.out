@@ -1,0 +1,21 @@
+== (i) exact real-space commutator on an open box (compact support) ==
+max |[L_w, D_rho] phi - (-w_{nu rho} S_rho D_nu phi)| = 0.0
+A translation would be -w_{nu rho} D_nu; the extra factor S_rho (cos k_rho) is the
+Euclidean twin of C3's Q_ca = cos k_c sin k_a.
+
+== (ii) ideal-membership certificate on the complex shell A(k)=0 ==
+m2=0.0: best constant-c fit of [L_w,D_rho] by translations on 400 shell points: relative residual min/max = 0.358 / 0.665
+m2=0.25: best constant-c fit of [L_w,D_rho] by translations on 400 shell points: relative residual min/max = 0.346 / 0.677
+m2=1.0: best constant-c fit of [L_w,D_rho] by translations on 400 shell points: relative residual min/max = 0.300 / 0.582
+Nonzero residual on the shell => [L_w, D] is not translation + trivial (A prime).
+
+== (iii) why no local choice fixes it: the real Lorentzian slice S_R (k_4 = iE) ==
+lambda = 1/2 (f = sin k, the constructed T):
+   f1 range on the cut [0.0000,1.0000] (bounded: S_R compact); Minkowski f.f varies in [-8.7656,-0.2656]
+   df1/dk1 vanishes at k1 = 1.5708 where g = 1.8751 != 0  ->  max |V^1| on grid = 3.750e+04
+lambda = mu/|grad A|_Mink (best quasi-local; f.f const):
+   f1 range on the cut [0.0000,0.9898] (bounded: S_R compact); Minkowski f.f varies in [-1.0000,-1.0000]
+   df1/dk1 vanishes at k1 = 0.7905 where g = 1.4070 != 0  ->  max |V^1| on grid = 1.336e+04
+=> the boost field needed for closure is singular at an interior point of S_R: no local
+   (analytic) pseudo-rotation can realise it. General proof (report): f(S_R) is compact,
+   boost orbits of timelike vectors are not; any analytic V on compact S_R has a complete flow.

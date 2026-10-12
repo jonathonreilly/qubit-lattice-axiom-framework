@@ -1,0 +1,18 @@
+[1] delta F/a = grad(B).grad(eps) - grad(chi).grad(Phi) modulo a divergence
+[1] I-F = L_WZ modulo a divergence
+[1] local-mass matching solution: []
+[2] K_Psi(a=-A) = (3*A + 2*k**2)*(3*lambda - 1)/(2*(-A + k**2*lambda - k**2))
+[2] omega^2(c4=0,g4=0,a=-A) = -2*k**2*xi*(-A + k**2*lambda - k**2)/((3*A + 2*k**2)*(3*lambda - 1))
+[3] repaired potential coefficient = -9*A**2/(2*eta*k**2) - 6*A*xi/eta + k**2*xi*(1 - 2*xi/eta)
+[3] E cancellation coefficient is a+2*m4; hence m4=-a/2
+[3] k_*^2=A/(lambda-1)=2*mu^2/(lambda-1)
+[3] lambda_eff=lambda-2*mu^2/k^2
+[4] worker grid hits: 14
+[4] scalar hits surviving dense k grid: [1, 2, 3, 5, 6, 9, 11, 12, 14]
+[4] coarse-grid false positives (first failure): {4: (0.7498942093324559, ['healthy', 'tachyon']), 7: (0.8912509381337459, ['healthy', 'tachyon']), 8: (1.4621771744567182, ['tachyon', 'healthy']), 10: (0.5069907082747045, ['tachyon', 'healthy']), 13: (1.4791083881682072, ['tachyon', 'healthy'])}
+[4] dense-grid scalar+tensor+vector survivors: [3, 9, 12, 14]
+[4] UV observables for dense full-sector survivors:
+    hit 3: cT2=+0.973252, gamma=-0.159643, G_eff/G_GR=-1.119320
+    hit 9: cT2=+2.542952, gamma=-2.291687, G_eff/G_GR=-0.214223
+    hit 12: cT2=+1.081424, gamma=-0.045577, G_eff/G_GR=-0.477820
+    hit 14: cT2=+0.717095, gamma=-0.207619, G_eff/G_GR=-0.668684

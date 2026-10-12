@@ -1,0 +1,45 @@
+== independent one-particle checks
+d=2: max ||h^2-omega^2 I||_F=9.222e-16; max band error=1.110e-15; generic multiplicities=2+2
+d=2, m=0 cone: ||h(0)||_F=2.449e-16; exact zero multiplicity=4 (floating sin(pi) residue only)
+d=3: max ||h^2-omega^2 I||_F=2.334e-15; max band error=1.554e-15; generic multiplicities=4+4
+d=3, m=0 cone: ||h(0)||_F=4.242e-16; exact zero multiplicity=8 (floating sin(pi) residue only)
+real-space 6x6: ||[h,Px]||_F=0.000e+00; Hermiticity error=0.000e+00
+two-link Fourier symbol max |P|=0.433012701892; spectrum error=4.060e-16
+
+== sector-resolved forward-amplitude checks
+d=2 m=0.5 nn: same-sector forward squared Frobenius norms=[np.float64(4.889164944001347), np.float64(4.889164944001347)]
+d=2 m=0.5 cube: same-sector forward squared Frobenius norms=[np.float64(104.26749483200382), np.float64(104.26749483200382)]
+d=3 m=0 nn: same-sector forward squared Frobenius norms=[np.float64(159.99999999999983), np.float64(159.99999999999983)]
+d=3 m=0 cube: same-sector forward squared Frobenius norms=[np.float64(12799.999999999982), np.float64(12799.999999999982)]
+
+== direct full-matrix SVD checks (fresh seed, no TSQR)
+d=2 nn m=0.5 R=2 odd: nproc=395 channels=6/16 eres=1.33e-15 cols=32 null={'worker': 0, 'abs1e-6': 0, 'abs1e-10': 0} svmax=2.081276e+01 gap=6.719380e+00 ratio=3.228e-01 largest_null=nan Wzero=0.000 blockmap_tail=4.181e-16
+d=2 nn m=0.5 R=2 even: nproc=395 channels=6/16 eres=1.33e-15 cols=36 null={'worker': 2, 'abs1e-6': 2, 'abs1e-10': 2} svmax=2.238128e+01 gap=1.018788e+00 ratio=4.552e-02 largest_null=1.210e-14 Wzero=0.000 blockmap_tail=3.439e-16
+d=2 nn m=0 R=2 odd: nproc=395 channels=6/16 eres=1.11e-15 cols=32 null={'worker': 0, 'abs1e-6': 0, 'abs1e-10': 0} svmax=1.980454e+01 gap=7.283409e+00 ratio=3.678e-01 largest_null=nan Wzero=0.000 blockmap_tail=7.701e-16
+d=2 nn m=0 R=2 even: nproc=395 channels=6/16 eres=1.11e-15 cols=34 null={'worker': 2, 'abs1e-6': 2, 'abs1e-10': 2} svmax=2.073200e+01 gap=6.587374e+00 ratio=3.177e-01 largest_null=8.870e-15 Wzero=0.000 blockmap_tail=7.881e-16
+d=2 cube m=0.5 R=2 odd: nproc=395 channels=6/16 eres=1.33e-15 cols=32 null={'worker': 0, 'abs1e-6': 0, 'abs1e-10': 0} svmax=4.796658e+01 gap=1.803875e+01 ratio=3.761e-01 largest_null=nan Wzero=0.000 blockmap_tail=5.010e-16
+d=2 cube m=0.5 R=2 even: nproc=395 channels=6/16 eres=1.33e-15 cols=36 null={'worker': 2, 'abs1e-6': 2, 'abs1e-10': 2} svmax=5.322603e+01 gap=2.530496e+00 ratio=4.754e-02 largest_null=4.793e-14 Wzero=0.000 blockmap_tail=2.321e-16
+d=2 cube m=0 R=2 odd: nproc=395 channels=6/16 eres=1.83e-15 cols=32 null={'worker': 0, 'abs1e-6': 0, 'abs1e-10': 0} svmax=4.471852e+01 gap=1.826579e+01 ratio=4.085e-01 largest_null=nan Wzero=0.000 blockmap_tail=5.699e-16
+d=2 cube m=0 R=2 even: nproc=395 channels=6/16 eres=1.83e-15 cols=34 null={'worker': 2, 'abs1e-6': 2, 'abs1e-10': 2} svmax=5.211834e+01 gap=1.693709e+01 ratio=3.250e-01 largest_null=1.508e-14 Wzero=0.000 blockmap_tail=7.683e-16
+d=3 nn m=0.5 R=1 odd: nproc=170 channels=6/16 eres=1.11e-15 cols=88 null={'worker': 0, 'abs1e-6': 0, 'abs1e-10': 0} svmax=6.830021e+01 gap=2.003177e+01 ratio=2.933e-01 largest_null=nan Wzero=0.000 blockmap_tail=2.512e-15
+d=3 nn m=0.5 R=1 even: nproc=170 channels=6/16 eres=1.11e-15 cols=96 null={'worker': 2, 'abs1e-6': 2, 'abs1e-10': 2} svmax=6.517383e+01 gap=1.063248e+00 ratio=1.631e-02 largest_null=2.026e-14 Wzero=0.000 blockmap_tail=2.283e-15
+d=3 nn m=0 R=1 odd: nproc=170 channels=6/16 eres=1.22e-15 cols=88 null={'worker': 0, 'abs1e-6': 0, 'abs1e-10': 0} svmax=7.057484e+01 gap=1.832288e+01 ratio=2.596e-01 largest_null=nan Wzero=0.000 blockmap_tail=6.834e-16
+d=3 nn m=0 R=1 even: nproc=170 channels=6/16 eres=1.22e-15 cols=92 null={'worker': 2, 'abs1e-6': 2, 'abs1e-10': 2} svmax=6.844296e+01 gap=1.053657e+01 ratio=1.539e-01 largest_null=1.791e-14 Wzero=0.000 blockmap_tail=5.659e-16
+d=3 cube m=0.5 R=1 odd: nproc=170 channels=6/16 eres=1.11e-15 cols=88 null={'worker': 0, 'abs1e-6': 0, 'abs1e-10': 0} svmax=3.126189e+02 gap=1.024321e+02 ratio=3.277e-01 largest_null=nan Wzero=0.000 blockmap_tail=3.820e-15
+d=3 cube m=0.5 R=1 even: nproc=170 channels=6/16 eres=1.11e-15 cols=96 null={'worker': 2, 'abs1e-6': 2, 'abs1e-10': 2} svmax=2.933013e+02 gap=6.754345e+00 ratio=2.303e-02 largest_null=1.272e-13 Wzero=0.000 blockmap_tail=2.950e-15
+d=3 cube m=0 R=1 odd: nproc=170 channels=6/16 eres=8.88e-16 cols=88 null={'worker': 0, 'abs1e-6': 0, 'abs1e-10': 0} svmax=3.355334e+02 gap=9.856164e+01 ratio=2.937e-01 largest_null=nan Wzero=0.000 blockmap_tail=8.504e-16
+d=3 cube m=0 R=1 even: nproc=170 channels=6/16 eres=8.88e-16 cols=92 null={'worker': 2, 'abs1e-6': 2, 'abs1e-10': 2} svmax=3.156732e+02 gap=5.602383e+01 ratio=1.775e-01 largest_null=1.128e-13 Wzero=0.000 blockmap_tail=3.738e-16
+free d=2 R=2 odd: cols=32 null={'worker': 32, 'abs1e-6': 32, 'abs1e-10': 32} svmax=0.000e+00
+1D nn m=0 R=8 odd: cols=8 null={'worker': 4, 'abs1e-6': 4, 'abs1e-10': 4} svmax=4.251565e+00 gap/nonzero-tail=7.524145e-01 Wzero=0.852
+1D nn m=0.5 R=8 odd: cols=8 null={'worker': 0, 'abs1e-6': 0, 'abs1e-10': 0} svmax=8.088602e+00 gap/nonzero-tail=1.287087e+00 Wzero=0.000
+deliberate d=3 nn m=0 low-ball band-changing target=20 found=0
+deliberate d=3 nn m=0.5 low-ball band-changing target=20 found=0
+deliberate d=3 nn m=0.5 K=0 e-h flat: found=30 channels=1 max_eres=0.00e+00
+deliberate d=3 nn m=0.5 K=(pi/2,pi/2,pi/2): found=30 channels=6 max_eres=1.33e-15
+deliberate d=3 nn m=0.5 K=(pi/2,0,0): found=30 channels=6 max_eres=1.11e-15
+
+== independent 6x6, N=2 commutant-distance check
+dim=630 on-shell ||[Hint,P]||op=0.204124145232 F=1.277087460181; first-order dephasing HS lower bound=0.669650186701
+V=1e-05: exact-commutant HS distance=0.676930872662
+V=1e-04: exact-commutant HS distance=0.676930792872
+V=1e-03: exact-commutant HS distance=0.676931061691

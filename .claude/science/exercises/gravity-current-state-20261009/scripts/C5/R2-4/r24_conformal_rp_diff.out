@@ -1,0 +1,3 @@
+eigen-check (A): K restricted to 4D-TT subspace is p^2/2 * Gram? -> False
+q = e1: ||M_A - M_B||_F / ||M_B||_F = 0.2817180849095055 ; max |entry diff| = 0.02527211082135973
+components with largest difference: [(((2, 3), (2, 3)), np.float64(0.02527)), (((0, 2), (0, 2)), np.float64(0.02527)), (((0, 1), (1, 3)), np.float64(0.02527)), (((0, 2), (2, 3)), np.float64(0.02527)), (((0, 1), (0, 1)), np.float64(0.02527))]

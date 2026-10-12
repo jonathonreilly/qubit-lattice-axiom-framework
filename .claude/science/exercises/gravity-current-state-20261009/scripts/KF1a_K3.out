@@ -1,0 +1,19 @@
+M (reduced, lattice units at a^-1 = M_Pl) = 0.1994;  M^4 = 1.582e-03
+sigma=0.035 [R3 rot-avg, scalar m2=1]: V per site = 3.52 a^-2 (Born needs << 1), Born l = 1.01 a, IR-relevance scale (ratio=1) = 126 a, ratio at LIGO lam=6e40 a: 2.18e+19
+sigma=0.068 [K1 per-direction, m2=1]: V per site = 6.84 a^-2 (Born needs << 1), Born l = 0.269 a, IR-relevance scale (ratio=1) = 33.3 a, ratio at LIGO lam=6e40 a: 4.24e+19
+sigma=0.081 [K1 per-direction, m2=0.04]: V per site = 8.15 a^-2 (Born needs << 1), Born l = 0.189 a, IR-relevance scale (ratio=1) = 23.5 a, ratio at LIGO lam=6e40 a: 5.05e+19
+sigma=0.340 [K2 2D Delaunay stress (2D, indicative only)]: V per site = 34.20 a^-2 (Born needs << 1), Born l = 0.0107 a, IR-relevance scale (ratio=1) = 1.33 a, ratio at LIGO lam=6e40 a: 2.12e+20
+tadpole sigma_tau=0.068: <h_ij h_ij> over region R=1.0e+02 a  = 7.54e+01  (h_rms 8.7e+00)
+tadpole sigma_tau=0.068: <h_ij h_ij> over region R=1.0e+10 a  = 7.54e+09  (h_rms 8.7e+04)
+tadpole sigma_tau=0.068: <h_ij h_ij> over region R=1.9e+60 a  = 1.43e+60  (h_rms 1.2e+30)
+tadpole sigma_tau=0.081: <h_ij h_ij> over region R=1.0e+02 a  = 1.07e+02  (h_rms 1.0e+01)
+tadpole sigma_tau=0.081: <h_ij h_ij> over region R=1.0e+10 a  = 1.07e+10  (h_rms 1.0e+05)
+tadpole sigma_tau=0.081: <h_ij h_ij> over region R=1.9e+60 a  = 2.03e+60  (h_rms 1.4e+30)
+sigma=0.035: Born l > 1 Gpc needs Lambda < 1.1e+07 GeV;  UHECR (3e11 GeV) needs Lambda >~ 1e11 GeV; scale-reference primitive says Lambda = 1.2e+19 GeV
+sigma=0.035: Born l > 40 Mpc needs Lambda < 2e+07 GeV;  UHECR (3e11 GeV) needs Lambda >~ 1e11 GeV; scale-reference primitive says Lambda = 1.2e+19 GeV
+   at Lambda = UHECR floor 1e11 GeV: Born l = 2.3e+21 GeV^-1 = 1.4e-20 Gpc -> sigma must shrink by 8.3e+09 to reach 1 Gpc
+   at Lambda = a^-1 = M_Pl: Born l = 8.3e-20 GeV^-1 = 5.3e-61 Gpc -> sigma must shrink by 1.4e+30 to reach 1 Gpc
+sigma=0.068: Born l > 1 Gpc needs Lambda < 8.2e+06 GeV;  UHECR (3e11 GeV) needs Lambda >~ 1e11 GeV; scale-reference primitive says Lambda = 1.2e+19 GeV
+sigma=0.068: Born l > 40 Mpc needs Lambda < 1.6e+07 GeV;  UHECR (3e11 GeV) needs Lambda >~ 1e11 GeV; scale-reference primitive says Lambda = 1.2e+19 GeV
+   at Lambda = UHECR floor 1e11 GeV: Born l = 6e+20 GeV^-1 = 3.8e-21 Gpc -> sigma must shrink by 1.6e+10 to reach 1 Gpc
+   at Lambda = a^-1 = M_Pl: Born l = 2.2e-20 GeV^-1 = 1.4e-61 Gpc -> sigma must shrink by 2.7e+30 to reach 1 Gpc

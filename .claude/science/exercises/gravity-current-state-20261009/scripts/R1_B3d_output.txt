@@ -1,0 +1,5 @@
+3D poisson Eg    e0/site=1.5299  G_frozen=+1.93688+-0.00559  G_retri=-9.58390+-3.09661  (G/e0: +1.2660, -6.2642)
+3D poisson T2g   e0/site=1.5299  G_frozen=+1.93827+-0.00569  G_retri=-3.67374+-4.80793  (G/e0: +1.2669, -2.4012)
+3D poisson min eig(K_frozen-K_retri) over all strains/realizations = -1.877e+03
+3D crystal Eg    e0/site=8.9639  G_frozen=+8.12173+-0.14508  G_retri=+91.74551+-51.07383  (G/e0: +0.9060, +10.2350)
+3D crystal T2g   e0/site=8.9639  G_frozen=+12.10702+-0.16369  G_retri=-2746.26084+-90.11672  (G/e0: +1.3506, -306.3692)

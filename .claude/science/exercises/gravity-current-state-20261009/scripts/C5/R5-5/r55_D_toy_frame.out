@@ -1,0 +1,13 @@
+(1)+(2) EF = 0 (frame-diagonal, no frame dynamics):
+  T=  0.5: |rhoM - mixture| = 5.7e-17;  visibility 0.846287  vs |E exp(-i dw T)| 0.846287;  frame coherence |rhoF(u0,u16)|/|psi psi| = 0.913437 vs matter overlap 0.913437
+  T=  2.0: |rhoM - mixture| = 6.2e-17;  visibility 0.320188  vs |E exp(-i dw T)| 0.320188;  frame coherence |rhoF(u0,u16)|/|psi psi| = 0.105587 vs matter overlap 0.105587
+  T=  8.0: |rhoM - mixture| = 5.6e-17;  visibility 0.188701  vs |E exp(-i dw T)| 0.188701;  frame coherence |rhoF(u0,u16)|/|psi psi| = 0.911805 vs matter overlap 0.911805
+  T= 32.0: |rhoM - mixture| = 5.6e-17;  visibility 0.109980  vs |E exp(-i dw T)| 0.109980;  frame coherence |rhoF(u0,u16)|/|psi psi| = 0.121458 vs matter overlap 0.121458
+
+(3) gapped frame Hamiltonian EF (NOT available under Poincare covariance, Lemma P0), T = 32:
+  EF=  0.0: visibility 0.1100;  frame fidelity with invariant |c> 0.0231;  relative phase 3.3168 vs mean-law 3.3168 (+2nd-order shift: 3.3168)
+  EF=  0.3: visibility 0.0585;  frame fidelity with invariant |c> 0.1398;  relative phase 4.0054 vs mean-law 3.3168 (+2nd-order shift: 0.5994)
+  EF=  1.0: visibility 0.4808;  frame fidelity with invariant |c> 0.6166;  relative phase 1.6693 vs mean-law 3.3168 (+2nd-order shift: 5.6432)
+  EF=  3.0: visibility 0.9011;  frame fidelity with invariant |c> 0.9308;  relative phase 0.0244 vs mean-law 3.3168 (+2nd-order shift: 6.1867)
+  EF= 10.0: visibility 0.9902;  frame fidelity with invariant |c> 0.9932;  relative phase 2.2963 vs mean-law 3.3168 (+2nd-order shift: 2.2928)
+  EF= 30.0: visibility 0.9989;  frame fidelity with invariant |c> 0.9992;  relative phase 2.9756 vs mean-law 3.3168 (+2nd-order shift: 2.9755)

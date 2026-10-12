@@ -1,0 +1,17 @@
+D20_s6_Tsinf: Nregion~5488 | flat: mean 55.020 (quad 55.292) var 112.960 Fano 2.043 | gauss: mean 19.132 (quad 19.193) var/diag 2.000 | n=2000 t=12.3s
+D60_s6_Tsinf: Nregion~7164 | flat: mean 18.409 (quad 18.465) var 25.399 Fano 1.376 | gauss: mean 6.422 (quad 6.409) var/diag 1.410 | n=2000 t=16.0s
+D200_s6_Tsinf: Nregion~9357 | flat: mean 5.559 (quad 5.540) var 6.181 Fano 1.116 | gauss: mean 1.934 (quad 1.923) var/diag 1.157 | n=2000 t=20.5s
+D600_s6_Tsinf: Nregion~11485 | flat: mean 1.820 (quad 1.847) var 1.880 Fano 1.018 | gauss: mean 0.633 (quad 0.641) var/diag 1.020 | n=3000 t=36.9s
+D2000_s6_Tsinf: Nregion~13853 | flat: mean 0.550 (quad 0.554) var 0.545 Fano 0.983 | gauss: mean 0.195 (quad 0.192) var/diag 0.996 | n=4000 t=58.5s
+D40_s12_Tsinf: Nregion~14601 | flat: mean 221.282 (quad 221.510) var 508.979 Fano 2.298 | gauss: mean 76.774 (quad 76.888) var/diag 2.334 | n=1500 t=24.3s
+D120_s12_Tsinf: Nregion~19219 | flat: mean 73.969 (quad 73.871) var 110.098 Fano 1.490 | gauss: mean 25.682 (quad 25.641) var/diag 1.496 | n=1500 t=31.0s
+D1200_s12_Tsinf: Nregion~30679 | flat: mean 7.271 (quad 7.387) var 8.027 Fano 1.087 | gauss: mean 2.524 (quad 2.564) var/diag 1.080 | n=2000 t=65.9s
+D12000_s12_Tsinf: Nregion~42650 | flat: mean 0.739 (quad 0.739) var 0.756 Fano 1.023 | gauss: mean 0.256 (quad 0.256) var/diag 1.015 | n=3000 t=133.5s
+D80_s24_Tsinf: Nregion~45179 | flat: mean 882.279 (quad 886.382) var 2170.729 Fano 2.449 | gauss: mean 306.536 (quad 307.670) var/diag 2.493 | n=800 t=43.1s
+D240_s24_Tsinf: Nregion~59902 | flat: mean 295.511 (quad 295.495) var 461.119 Fano 1.560 | gauss: mean 102.478 (quad 102.568) var/diag 1.565 | n=800 t=56.2s
+D2400_s24_Tsinf: Nregion~95808 | flat: mean 29.617 (quad 29.550) var 31.338 Fano 1.061 | gauss: mean 10.298 (quad 10.257) var/diag 1.060 | n=1500 t=181.5s
+D24000_s24_Tsinf: Nregion~133177 | flat: mean 2.955 (quad 2.955) var 2.883 Fano 0.976 | gauss: mean 1.010 (quad 1.026) var/diag 0.940 | n=2000 t=311.3s
+D100000_s24_Tsinf: Nregion~156574 | flat: mean 0.000 (quad 0.709) var 0.000 Fano 0.000 | gauss: mean 0.000 (quad 0.246) var/diag 0.000 | n=2000 t=356.1s
+D1200_s12_Ts1.0: Nregion~30678 | flat: mean 0.443 (quad 0.463) var 0.461 Fano 0.997 | gauss: mean 0.188 (quad 0.199) var/diag 0.957 | n=2000 t=68.3s
+D1200_s12_Ts4.0: Nregion~30675 | flat: mean 1.780 (quad 1.830) var 1.795 Fano 0.981 | gauss: mean 0.755 (quad 0.782) var/diag 0.954 | n=2000 t=69.7s
+D1200_s12_Ts12.0: Nregion~30678 | flat: mean 5.086 (quad 5.079) var 5.297 Fano 1.043 | gauss: mean 1.989 (quad 1.995) var/diag 1.010 | n=2000 t=68.4s

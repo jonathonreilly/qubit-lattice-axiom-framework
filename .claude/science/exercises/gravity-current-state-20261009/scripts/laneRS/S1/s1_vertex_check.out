@@ -1,0 +1,5 @@
+d=2 L=8 nn: max rel |W_code - W_realspace| = 4.37e-15
+d=2 L=8 cube: max rel |W_code - W_realspace| = 2.52e-15
+d=3 L=4 nn: max rel |W_code - W_realspace| = 3.60e-15
+d=3 L=4 cube: max rel |W_code - W_realspace| = 2.92e-15
+free control d=2 R=2 odd: block-distinct 32, nullity 32 (all pass), sv_max 0.0e+00

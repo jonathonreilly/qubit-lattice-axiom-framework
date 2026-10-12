@@ -1,0 +1,7 @@
+(1) vacuum: <(cos q_c w + sin^2 q_c / w)/2> = 6.579099405186112e-17 (exact 0: total q-derivative)
+    thermal T=0.1: e_c + p_c (normal-ordered) = +5.1961e-06  = -<sin^2 q_c n'(w)> = +5.1961e-06
+    thermal T=1.0: e_c + p_c (normal-ordered) = +6.5518e-02  = -<sin^2 q_c n'(w)> = +6.5518e-02
+(2) null vector (Phi, Psi, pi, zeta) at the root: [a*k**2/(-2*M*k**2 + 3*a), -a/(2*M), -I*k*sqrt(-a/(2*M*k**2 - 3*a)), 1]
+    u = Phi + pi_dot  ->  Phi_h - i w pi_h = 0
+(3) vacuum branch m=0: a_vac = -(rho+p) = -1.303802; |mu| = 4.048/ell; gapless-ghost window k < sqrt(3)|mu| = 7.01/ell > pi (whole zone)
+(3) vacuum branch m=1: a_vac = -(rho+p) = -1.399127; |mu| = 4.193/ell; gapless-ghost window k < sqrt(3)|mu| = 7.26/ell > pi (whole zone)

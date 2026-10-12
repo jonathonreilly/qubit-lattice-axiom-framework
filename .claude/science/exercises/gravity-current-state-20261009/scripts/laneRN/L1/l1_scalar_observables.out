@@ -1,0 +1,53 @@
+=== 1. Static pull from the lattice constraints (GR point J=2ks, g=1/(2ks), ks=16 pi G, G=1) ===
+axis r= 2.00: n=-0.50942 (-GM/r=-0.50000) r= 4.00: n=-0.22544 (-GM/r=-0.25000) r= 8.00: n=-0.09611 (-GM/r=-0.12500) r=12.00: n=-0.05428 (-GM/r=-0.08333) r=16.00: n=-0.03364 (-GM/r=-0.06250)
+diag r= 1.73: n=-0.51807 (-GM/r=-0.57735) r= 3.46: n=-0.25512 (-GM/r=-0.28868) r= 6.93: n=-0.11439 (-GM/r=-0.14434) r=10.39: n=-0.06677 (-GM/r=-0.09623) r=13.86: n=-0.04300 (-GM/r=-0.07217)
+psi + n = 0 identically: 0.0
+(differences from -GM/r at small r are the lattice Green function's cubic O(a^2/r^2) terms plus the
+ finite-torus neutralising background ~ r^2/L^3; the 1/r tail is the standard lattice Coulomb law.)
+
+=== 2. Passive response: exact one-particle frequency in a constant background (n, h=2 psi delta) ===
+m=0.0 k=[0.001, 0, 0]: dw/w = +1.000000 n -1.000000 psi  -> with psi=-n: +2.000000 n   [sum sin^2 k/w^2 = 1.000000]
+m=0.0 k=[0.3, 0, 0]: dw/w = +1.000000 n -0.977668 psi  -> with psi=-n: +1.977668 n   [sum sin^2 k/w^2 = 0.977668]
+m=0.0 k=[0.3, 0.3, 0.3]: dw/w = +1.000000 n -0.977668 psi  -> with psi=-n: +1.977668 n   [sum sin^2 k/w^2 = 0.977668]
+m=0.0 k=[1.0, 0, 0]: dw/w = +1.000000 n -0.770151 psi  -> with psi=-n: +1.770151 n   [sum sin^2 k/w^2 = 0.770151]
+m=0.3 k=[0.001, 0, 0]: dw/w = +1.000000 n -0.000012 psi  -> with psi=-n: +1.000012 n   [sum sin^2 k/w^2 = 0.000011]
+m=0.3 k=[0.3, 0, 0]: dw/w = +1.000000 n -0.487000 psi  -> with psi=-n: +1.487000 n   [sum sin^2 k/w^2 = 0.487000]
+m=0.3 k=[0.3, 0.3, 0.3]: dw/w = +1.000000 n -0.731873 psi  -> with psi=-n: +1.731873 n   [sum sin^2 k/w^2 = 0.731873]
+m=0.3 k=[1.0, 0, 0]: dw/w = +1.000000 n -0.701483 psi  -> with psi=-n: +1.701483 n   [sum sin^2 k/w^2 = 0.701483]
+m=1.0 k=[0.001, 0, 0]: dw/w = +1.000000 n -0.000001 psi  -> with psi=-n: +1.000001 n   [sum sin^2 k/w^2 = 0.000001]
+m=1.0 k=[0.3, 0, 0]: dw/w = +1.000000 n -0.080171 psi  -> with psi=-n: +1.080171 n   [sum sin^2 k/w^2 = 0.080171]
+m=1.0 k=[0.3, 0.3, 0.3]: dw/w = +1.000000 n -0.206625 psi  -> with psi=-n: +1.206625 n   [sum sin^2 k/w^2 = 0.206625]
+m=1.0 k=[1.0, 0, 0]: dw/w = +1.000000 n -0.368905 psi  -> with psi=-n: +1.368905 n   [sum sin^2 k/w^2 = 0.368904]
+
+=== 3. gamma for general (J, g, ks): light sees n(1 + 1/(J g)); gamma = 1/(J g) = (c_matter/c_grav)^2 ===
+J g = 1.00: (light potential)/(massive potential) = 2.0000 = 1+gamma, gamma = 1.0000
+J g = 0.90: (light potential)/(massive potential) = 2.1111 = 1+gamma, gamma = 1.1111
+J g = 1.10: (light potential)/(massive potential) = 1.9091 = 1+gamma, gamma = 0.9091
+
+=== 4. O(k^2 a^2) cubic anisotropy of the light-bending factor gamma_eff(k) = sum sin^2 k_j / omega^2 (m=0) ===
+|k|=0.1: axis: gamma_eff = 0.997502  (1 - sum k^4/(4k^2) = 0.997500)
+|k|=0.1: face: gamma_eff = 0.998751  (1 - sum k^4/(4k^2) = 0.998750)
+|k|=0.1: diag: gamma_eff = 0.999167  (1 - sum k^4/(4k^2) = 0.999167)
+|k|=0.3: axis: gamma_eff = 0.977668  (1 - sum k^4/(4k^2) = 0.977500)
+|k|=0.3: face: gamma_eff = 0.988792  (1 - sum k^4/(4k^2) = 0.988750)
+|k|=0.3: diag: gamma_eff = 0.992519  (1 - sum k^4/(4k^2) = 0.992500)
+|k|=0.6: axis: gamma_eff = 0.912668  (1 - sum k^4/(4k^2) = 0.910000)
+|k|=0.6: face: gamma_eff = 0.955671  (1 - sum k^4/(4k^2) = 0.955000)
+|k|=0.6: diag: gamma_eff = 0.970299  (1 - sum k^4/(4k^2) = 0.970000)
+
+=== 5. Universality: active and passive couplings both through T00 = energy density ===
+m=0.2: passive coefficient of n per unit rest energy = 1.00000000, of psi = -6.99e-07; active: sources S/ks = -T00, one quantum at rest has sum T00 = omega = 0.2000, sum T_ij = 0
+m=0.8: passive coefficient of n per unit rest energy = 1.00000000, of psi = -4.65e-07; active: sources S/ks = -T00, one quantum at rest has sum T00 = omega = 0.8000, sum T_ij = 0
+m=1.5: passive coefficient of n per unit rest energy = 1.00000000, of psi = -4.56e-07; active: sources S/ks = -T00, one quantum at rest has sum T00 = omega = 1.5000, sum T_ij = 0
+
+=== 6. TT self-energy at q -> 0 from the LINEAR coupling only (paramagnetic, vacuum, per site) ===
+Nb=48 m=0.0: d2E0/deps2 per site: E-channel -0.003694, T2-channel -0.011782  (ratio 0.3136; isotropic would need XE^2 avg = XT^2 avg/... )
+Nb=48 m=0.5: d2E0/deps2 per site: E-channel -0.003172, T2-channel -0.010574  (ratio 0.3000; isotropic would need XE^2 avg = XT^2 avg/... )
+Nb=48 m=1.0: d2E0/deps2 per site: E-channel -0.002317, T2-channel -0.008228  (ratio 0.2816; isotropic would need XE^2 avg = XT^2 avg/... )
+Nb=96 m=0.0: d2E0/deps2 per site: E-channel -0.003695, T2-channel -0.011782  (ratio 0.3136; isotropic would need XE^2 avg = XT^2 avg/... )
+Nb=96 m=0.5: d2E0/deps2 per site: E-channel -0.003172, T2-channel -0.010574  (ratio 0.3000; isotropic would need XE^2 avg = XT^2 avg/... )
+Nb=96 m=1.0: d2E0/deps2 per site: E-channel -0.002317, T2-channel -0.008228  (ratio 0.2816; isotropic would need XE^2 avg = XT^2 avg/... )
+Both channels are nonzero and unequal: the linear-order first-class coupling leaves a cubic-anisotropic
+TT 'mass' at O(kappa) unless an O(h^2) seagull is added.  Ward identity for constant strain: with
+U = exp(-i sum xi.P), xi_i = h_ij x_j/2, U H_m U^+ = H_m - 1/2 h.sum T + O(h^2) [identity (M)], so E0 is h-independent
+iff the O(h^2) term equals 1/2[S,[S,H_m]]; then Pi_TT(0) = para + seagull = 0 by the f-sum identity.

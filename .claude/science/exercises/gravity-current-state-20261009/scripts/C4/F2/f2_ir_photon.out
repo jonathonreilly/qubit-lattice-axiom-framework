@@ -1,0 +1,6 @@
+m= 0.200 L= 104  per Dirac dc_gamma*16pi^2 = -0.627500  (kx/2: -0.627493)  naive(8) -5.02000
+m= 0.100 L= 200  per Dirac dc_gamma*16pi^2 = -0.657915  (kx/2: -0.657906)  naive(8) -5.26332
+m= 0.070 L= 288  per Dirac dc_gamma*16pi^2 = -0.664188  (kx/2: -0.664180)  naive(8) -5.31351
+m= 0.050 L= 400  per Dirac dc_gamma*16pi^2 = -0.667433  (kx/2: -0.667424)  naive(8) -5.33947
+m= 0.035 L= 576  per Dirac dc_gamma*16pi^2 = -0.669308  (kx/2: -0.669300)  naive(8) -5.35447
+m= 0.025 L= 800  per Dirac dc_gamma*16pi^2 = -0.670261  (kx/2: -0.670252)  naive(8) -5.36209

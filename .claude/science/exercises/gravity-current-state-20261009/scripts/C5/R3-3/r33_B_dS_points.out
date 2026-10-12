@@ -1,0 +1,13 @@
+[2] N=50: integral points on -n0^2+|n|^2=N with |n0|<=12: 34440; check Q: {50}
+    points per |n0| slice: [744, 1152, 1920, 960, 2304, 1984, 2112, 2496, 3840, 2112, 5952, 4160, 4704]
+    root [1, 1, 1, 0, 0]: Q=1
+    root [0, 1, 0, 0, 0]: Q=1
+    root [1, -1, -1, 0, 0]: Q=1
+[1] gamma = s_r1 s_r3 (B(r1,r3) = -3: hyperbolic) integral matrix; gamma^T J gamma == J: True; det = 1; gamma00 = 17
+    (gamma^k)_00, k=1..6: [17, 577, 19601, 665857, 22619537, 768398401]  (unbounded -> infinite orthochronous group preserving Y_N)
+    gamma maps Y_N to integral points with Q = N: {50}
+[3] pairs among 7080 points with |n0|<=4: null-separated pairs (Q(n-n')=0): 97536; Q(n-n') values are even: True; smallest |Q(n-n')|>0: 2
+    null pair example: [-4, -1, -1, 0, -8] , [-2, -2, 0, -1, -7]
+    null pair example: [-4, -1, -1, 0, -8] , [-2, -2, 0, 1, -7]
+    null pair example: [-4, -1, -1, 0, -8] , [-2, 0, -2, -1, -7]
+[4] crude local density near the waist: 1896 points in |n0|<=1 vs 4-volume ~ 20937 -> rho ~ 0.091 per unit 4-volume; Siegel/Hardy-Littlewood predicts rho ~ singular series / (2 sqrt N) ~ O(1/sqrt N) = 0.071 x S(N)

@@ -1,0 +1,23 @@
+witness W: box a = 0.49 pi, plateau |k_j| < 0.34 pi, lam = 3.0, L = 240, eta = 0.05, shell |E2-E| < 0.02
+
+== free part: NN
+K=( 0.30,-0.20) E=-5.00 shell=  110 Q-classes=[(np.int64(0), np.int64(0))] | W: nonzero T= 12100 max|T|=1.461e+01 umklapp-nonzero=0 max|dQ|(nonzero)=6.7e-16 | analytic: umklapp-nonzero=0, umklapp |T|^2 frac=0.000
+K=( 0.90, 0.40) E=-6.00 shell=  108 Q-classes=[(np.int64(0), np.int64(0))] | W: nonzero T= 11664 max|T|=6.738e+00 umklapp-nonzero=0 max|dQ|(nonzero)=2.2e-16 | analytic: umklapp-nonzero=0, umklapp |T|^2 frac=0.000
+K=( 2.00, 1.50) E=-1.00 shell=  320 Q-classes=[(np.int64(-1), np.int64(0)), (np.int64(0), np.int64(0))] | W: nonzero T=     0 max|T|=0.000e+00 umklapp-nonzero=0 max|dQ|(nonzero)=0.0e+00 | analytic: umklapp-nonzero=49400, umklapp |T|^2 frac=0.397
+K=( 3.14, 0.00) E= 0.00 shell=  480 Q-classes=[(np.int64(-1), np.int64(0)), (np.int64(0), np.int64(0))] | W: nonzero T=     0 max|T|=0.000e+00 umklapp-nonzero=0 max|dQ|(nonzero)=0.0e+00 | analytic: umklapp-nonzero=115192, umklapp |T|^2 frac=0.500
+mixed shells (box pairs + pairs of another Q class on the same (K,E) shell), L=120 scan: 22 found
+  K=(-2.62, 0.00) E=-3.00 box-classes=[(np.int64(0), np.int64(0))] other=[(np.int64(1), np.int64(0))] | W: nonzero T=16 umklapp-nonzero=0 max|dQ|=0.0e+00 | analytic: umklapp-nonzero=75072 frac=0.466
+  K=(-2.62, 0.00) E=-2.25 box-classes=[(np.int64(0), np.int64(0))] other=[(np.int64(1), np.int64(0))] | W: nonzero T=704 umklapp-nonzero=0 max|dQ|=8.9e-16 | analytic: umklapp-nonzero=29920 frac=0.436
+  K=(-2.09, 0.00) E=-3.00 box-classes=[(np.int64(0), np.int64(0))] other=[(np.int64(1), np.int64(0))] | W: nonzero T=984 umklapp-nonzero=0 max|dQ|=2.2e-16 | analytic: umklapp-nonzero=5488 frac=0.109
+  K=(-2.09, 0.00) E=-2.75 box-classes=[(np.int64(0), np.int64(0))] other=[(np.int64(1), np.int64(0))] | W: nonzero T=400 umklapp-nonzero=0 max|dQ|=4.4e-16 | analytic: umklapp-nonzero=14400 frac=0.324
+
+== free part: NNN
+K=( 0.30,-0.20) E=-6.00 shell=  106 Q-classes=[(np.int64(-1), np.int64(0)), (np.int64(0), np.int64(0)), (np.int64(0), np.int64(1))] | W: nonzero T=   676 max|T|=3.811e+00 umklapp-nonzero=0 max|dQ|(nonzero)=4.4e-16 | analytic: umklapp-nonzero=3486, umklapp |T|^2 frac=0.243
+K=( 0.90, 0.40) E=-5.00 shell=  137 Q-classes=[(np.int64(-1), np.int64(-1)), (np.int64(-1), np.int64(0)), (np.int64(0), np.int64(-1)), (np.int64(0), np.int64(0))] | W: nonzero T=  1024 max|T|=3.734e+00 umklapp-nonzero=0 max|dQ|(nonzero)=0.0e+00 | analytic: umklapp-nonzero=12244, umklapp |T|^2 frac=0.484
+K=( 2.00, 1.50) E=-1.00 shell=  586 Q-classes=[(np.int64(-1), np.int64(0)), (np.int64(0), np.int64(-1)), (np.int64(0), np.int64(0))] | W: nonzero T=     0 max|T|=0.000e+00 umklapp-nonzero=0 max|dQ|(nonzero)=0.0e+00 | analytic: umklapp-nonzero=150050, umklapp |T|^2 frac=0.407
+K=( 3.14, 0.00) E= 0.00 shell=  468 Q-classes=[(np.int64(-1), np.int64(0)), (np.int64(0), np.int64(0))] | W: nonzero T=     0 max|T|=0.000e+00 umklapp-nonzero=0 max|dQ|(nonzero)=0.0e+00 | analytic: umklapp-nonzero=109312, umklapp |T|^2 frac=0.498
+mixed shells (box pairs + pairs of another Q class on the same (K,E) shell), L=120 scan: 1547 found
+  K=(-2.62,-2.09) E= 4.75 box-classes=[(np.int64(0), np.int64(0))] other=[(np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(1), np.int64(1))] | W: nonzero T=272 umklapp-nonzero=0 max|dQ|=8.9e-16 | analytic: umklapp-nonzero=13856 frac=0.717
+  K=(-2.62,-2.09) E= 5.00 box-classes=[(np.int64(0), np.int64(0))] other=[(np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(1), np.int64(1))] | W: nonzero T=1600 umklapp-nonzero=0 max|dQ|=8.9e-16 | analytic: umklapp-nonzero=19568 frac=0.678
+  K=(-2.62,-1.57) E= 3.00 box-classes=[(np.int64(0), np.int64(0))] other=[(np.int64(0), np.int64(1)), (np.int64(1), np.int64(0))] | W: nonzero T=9604 umklapp-nonzero=0 max|dQ|=0.0e+00 | analytic: umklapp-nonzero=149320 frac=0.592
+  K=(-2.62,-1.05) E= 1.00 box-classes=[(np.int64(0), np.int64(0))] other=[(np.int64(0), np.int64(1)), (np.int64(1), np.int64(0)), (np.int64(1), np.int64(1))] | W: nonzero T=2596 umklapp-nonzero=0 max|dQ|=8.9e-16 | analytic: umklapp-nonzero=63064 frac=0.550

@@ -1,0 +1,31 @@
+l_k = 7.9e-20 m -> hbar c/l_k = 2.5 TeV ; eps = 1.75e-63 ; proved variance rate gamma = 3.33e-13 /m (one e-fold per 3.01e+12 m = 2.79 h of c*t)
+
+(1) Mixture reading (Theorem A): first-order coherence of the image with the GR (mean) mode, in band
+   lensed, 1 Gpc, 1 s       ln(N_B/S) >= 4.399e+04  ->  Gamma_B = S/(S+N_B) <= exp(-4.399e+04) ; excess flux N_B/S >= e^4.399e+04
+   lensed, 1 Gpc, 8 h       ln(N_B/S) >= 7.678e+06  ->  Gamma_B = S/(S+N_B) <= exp(-7.678e+06) ; excess flux N_B/S >= e^7.678e+06
+   lensed, 1 Gpc, 1 yr      ln(N_B/S) >= 2.542e+08  ->  Gamma_B = S/(S+N_B) <= exp(-2.542e+08) ; excess flux N_B/S >= e^2.542e+08
+   quasar 1e7 yr, 1 Gpc     ln(N_B/S) >= 8.044e+11  ->  Gamma_B = S/(S+N_B) <= exp(-8.044e+11) ; excess flux N_B/S >= e^8.044e+11
+   observational need: VLBI visibility of lensed components O(0.1-1) and flux ratios to 10-20%% -> Gamma_B >~ 0.1-0.8, N_B/S <~ 0.2
+
+(2) Recombination reading (Gaussian per-mode noise; exact formula <a>_rec = 2 Psi/(2+V_ph), V_ph = nbar * N_B/S):
+   radio core, T_b = 1e11 K at 5 GHz        nbar = 4.17e+11 : ln V_ph = 44013 -> amplitude factor 2/(2+V_ph) = exp(-44012), flux factor exp(-88024)
+   optical disk, T_b = 3e4 K at 5.5e14 Hz   nbar = 0.708 : ln V_ph = 43986 -> amplitude factor 2/(2+V_ph) = exp(-43985), flux factor exp(-87970)
+   absurdly faint, nbar = 1e-100            nbar = 1e-100 : ln V_ph = 43756 -> amplitude factor 2/(2+V_ph) = exp(-43755), flux factor exp(-87510)
+   observational need: lensed fluxes agree with smooth GR models to 10-20% -> 4/(2+V_ph)^2 >= 0.8 -> V_ph <= 0.236
+
+(3) Matter as a which-sprinkling recorder (shared l_k; SUGGESTED that matter's own per-realization noise has the same rate):
+   matter quantum of age 1 hour    : gamma c T = 0.359 variance e-folds (overlap of its state between two independent sprinklings ~ e^-that)
+   matter quantum of age 1 day     : gamma c T = 8.62 variance e-folds (overlap of its state between two independent sprinklings ~ e^-that)
+   matter quantum of age 1 year    : gamma c T = 3.15e+03 variance e-folds (overlap of its state between two independent sprinklings ~ e^-that)
+   matter quantum of age 1 Gyr     : gamma c T = 3.15e+12 variance e-folds (overlap of its state between two independent sprinklings ~ e^-that)
+   matter quantum of age 13.8 Gyr  : gamma c T = 4.34e+13 variance e-folds (overlap of its state between two independent sprinklings ~ e^-that)
+   needle of a 1 s  lensed source at 1 Gpc: proper time 1.4e+17 m, transverse half-width 6.8e+16 m (2.2 pc); CMB photons inside ~1e+68, IGM baryons ~7e+58
+   needle of a 1 yr lensed source at 1 Gpc: proper time 7.6e+20 m, transverse half-width 3.8e+20 m (1.2e+04 pc); CMB photons inside ~4e+75, IGM baryons ~2e+66
+   -> negligible decoherence needs the summed per-quantum which-sprinkling infidelity over these N quanta to be << 1, i.e. below ~1/N each
+
+(4) Records alone (Record axiom: a record pins its event): events per m^3 per s = c/l_P^4 = 4.4e+147 ; record formation in air ~ 1.8e+35 ; fraction 4e-113
+
+(5) Kinematics behind the spectrum-condition lemma: q = k - k' for null k, k'
+   min over 1e5 random null k': q^2 = 5.173e-06 (>= 0: momentum transfer between on-shell photons is never timelike)
+   a substrate whose fluctuation spectrum is supported in the closed forward cone (spectrum condition) cannot absorb it;
+   a Poisson (white) substrate has S(q) = rho for every q, so it can -> single-scattering (first-chaos) incoherent power > 0.

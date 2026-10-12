@@ -1,0 +1,10 @@
+stacked XXZ chains D=0.5                   J^x: |J|=3.4641  ||[H,J]||/(||H||||J||) = 0.000e+00
+stacked XXZ chains D=0.5                   J^y = 0 identically
+stacked XXZ + vertical g=0.2               J^x: |J|=3.5327  ||[H,J]||/(||H||||J||) = 8.173e-01
+stacked XXZ + vertical g=0.2               J^y: |J|=0.7065  ||[H,J]||/(||H||||J||) = 2.689e+00
+stacked XXZ + NNN 0.3 (1D nonintegrable)   J^x: |J|=3.4984  ||[H,J]||/(||H||||J||) = 6.850e-01
+stacked XXZ + NNN 0.3 (1D nonintegrable)   J^y = 0 identically
+stacked XXZ D=0.5 N=8 (2, 2),(-2, 2) bad=0 comm=0.0e+00 r(beta=0,0.5,2)=1.0000 1.0000 1.0000
+stacked XXZ D=0.5 N=9 (3, 0),(0, 3) bad=0 comm=0.0e+00 r(beta=0,0.5,2)=1.0000 1.0000 1.0000
+stacked XXZ D=0.5 N=10 (3, 1),(-1, 3) bad=0 comm=0.0e+00 r(beta=0,0.5,2)=1.0000 1.0000 1.0000
+stacked XXZ D=0.5 N=12 (3, 0),(0, 4) bad=0 comm=0.0e+00 r(beta=0,0.5,2)=1.0000 1.0000 1.0000

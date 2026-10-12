@@ -1,0 +1,18 @@
+d=2: ||h_realspace psi - omega psi|| max = 4.0e-15
+d=3: ||h_realspace psi - omega psi|| max = 3.4e-15
+d=2 nn m=0.5 [generic, 1500 procs]: W-weighted rms defect of 1/2 sin2k_x = 5.899e-01; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 1.969
+d=2 nn m=0.5 [ee->ee in-states |k|<0.35 (out-states then also low), 300 procs]: W-weighted rms defect of 1/2 sin2k_x = 1.458e-02; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 0.081
+d=2 nn m=0.0 [generic, 1500 procs]: W-weighted rms defect of 1/2 sin2k_x = 5.340e-01; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 1.983
+d=2 nn m=0.0 [ee->ee in-states |k|<0.35 (out-states then also low), 300 procs]: W-weighted rms defect of 1/2 sin2k_x = 1.762e-02; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 0.106
+d=2 cube m=0.5 [generic, 1500 procs]: W-weighted rms defect of 1/2 sin2k_x = 4.997e-01; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 1.977
+d=2 cube m=0.5 [ee->ee in-states |k|<0.35 (out-states then also low), 300 procs]: W-weighted rms defect of 1/2 sin2k_x = 1.160e-02; fraction of nonzero-amplitude processes with |defect|>1e-6: 0.997; max 0.120
+d=2 cube m=0.0 [generic, 1500 procs]: W-weighted rms defect of 1/2 sin2k_x = 4.813e-01; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 1.971
+d=2 cube m=0.0 [ee->ee in-states |k|<0.35 (out-states then also low), 300 procs]: W-weighted rms defect of 1/2 sin2k_x = 2.146e-02; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 0.147
+d=3 nn m=0.5 [generic, 600 procs]: W-weighted rms defect of 1/2 sin2k_x = 5.959e-01; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 1.976
+d=3 nn m=0.5 [ee->ee in-states |k|<0.35 (out-states then also low), 300 procs]: W-weighted rms defect of 1/2 sin2k_x = 1.621e-02; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 0.084
+d=3 nn m=0.0 [generic, 600 procs]: W-weighted rms defect of 1/2 sin2k_x = 5.810e-01; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 1.972
+d=3 nn m=0.0 [ee->ee in-states |k|<0.35 (out-states then also low), 300 procs]: W-weighted rms defect of 1/2 sin2k_x = 1.719e-02; fraction of nonzero-amplitude processes with |defect|>1e-6: 0.993; max 0.140
+d=3 cube m=0.5 [generic, 600 procs]: W-weighted rms defect of 1/2 sin2k_x = 5.333e-01; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 1.995
+d=3 cube m=0.5 [ee->ee in-states |k|<0.35 (out-states then also low), 300 procs]: W-weighted rms defect of 1/2 sin2k_x = 1.361e-02; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 0.089
+d=3 cube m=0.0 [generic, 600 procs]: W-weighted rms defect of 1/2 sin2k_x = 4.980e-01; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 1.992
+d=3 cube m=0.0 [ee->ee in-states |k|<0.35 (out-states then also low), 300 procs]: W-weighted rms defect of 1/2 sin2k_x = 1.669e-02; fraction of nonzero-amplitude processes with |defect|>1e-6: 1.000; max 0.158

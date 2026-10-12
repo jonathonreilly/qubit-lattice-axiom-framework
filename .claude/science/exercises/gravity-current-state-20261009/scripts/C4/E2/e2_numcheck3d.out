@@ -1,0 +1,6 @@
+qed3: c=1 isotropic coefficient A_t = 1.688686e-02 (expect 1/(6 pi^2) = 1.688686e-02), anisotropy 4.2e-12
+   c = 0.99: dv/dL per unit A = -8.142675e-04; kappa (c-1) = -8.105695e-04; ratio 1.0046  -> exponent x16/N = 1.2969/N
+   c = 1.01: dv/dL per unit A = +8.069332e-04; kappa (c-1) = +8.105695e-04; ratio 0.9955  -> exponent x16/N = 1.2969/N
+gn: c=1 isotropic coefficient A_t = 1.688686e-02 (expect 1/(6 pi^2) = 1.688686e-02), anisotropy 4.2e-12
+   c = 0.99: dv/dL per unit A = -1.367509e-04; kappa (c-1) = -1.350949e-04; ratio 1.0123  -> exponent x8/N = 0.1081/N
+   c = 1.01: dv/dL per unit A = +1.334698e-04; kappa (c-1) = +1.350949e-04; ratio 0.9880  -> exponent x8/N = 0.1081/N

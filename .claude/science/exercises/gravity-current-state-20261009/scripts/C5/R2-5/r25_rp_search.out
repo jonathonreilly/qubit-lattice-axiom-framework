@@ -1,0 +1,9 @@
+S1 scalar: theta-covariant RP hard laws = 5; laws with formation and strict permanence = 0
+S2 oriented label: theta-covariant RP hard laws = 15; laws with formation and strict permanence = 0
+S3 scalar bit + time-odd p: theta-covariant RP hard laws = 52; laws with formation and strict permanence = 6
+    example: boundary b-, T = [[0, 0, 0, 0], [1, 0, 0, 1], [1, 0, 0, 1], [0, 0, 1, 0]]
+    example: boundary b-, T = [[0, 0, 0, 0], [1, 0, 1, 0], [0, 0, 0, 1], [1, 0, 1, 0]]
+    example: boundary b-, T = [[0, 0, 0, 0], [1, 0, 1, 1], [1, 0, 1, 1], [1, 0, 1, 1]]
+    example: boundary b+, T = [[0, 1, 0, 1], [0, 0, 0, 0], [0, 1, 0, 1], [0, 0, 1, 0]]
+    example: boundary b+, T = [[0, 1, 1, 0], [0, 0, 0, 0], [0, 0, 0, 1], [0, 1, 1, 0]]
+    example: boundary b+, T = [[0, 1, 1, 1], [0, 0, 0, 0], [0, 1, 1, 1], [0, 1, 1, 1]]

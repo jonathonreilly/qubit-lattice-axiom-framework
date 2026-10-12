@@ -1,0 +1,14 @@
+S1 {b, r} theta trivial: orbits=3, RP laws=5; (law, boundary) pairs with strict permanence and boundary-only formation=0, with BULK (ongoing) formation=0  [0.0s]
+S2 {b, U, D}: orbits=6, RP laws=15; (law, boundary) pairs with strict permanence and boundary-only formation=0, with BULK (ongoing) formation=0  [0.0s]
+S3 {b+, b-, r+, r-}: orbits=10, RP laws=52; (law, boundary) pairs with strict permanence and boundary-only formation=6, with BULK (ongoing) formation=0  [0.0s]
+    boundary-only example: ([[0, 0, 0, 0], [1, 0, 0, 1], [1, 0, 0, 1], [0, 0, 1, 0]], 'b-')
+S4 {b0, b+, b-, r+, r-}: orbits=15, RP laws=203; (law, boundary) pairs with strict permanence and boundary-only formation=12, with BULK (ongoing) formation=0  [0.5s]
+    boundary-only example: ([[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 1, 0, 0, 1], [0, 1, 0, 0, 1], [0, 0, 0, 1, 0]], 'b-')
+S5 {b0, r0, U, D}: orbits=10, RP laws=52; (law, boundary) pairs with strict permanence and boundary-only formation=0, with BULK (ongoing) formation=0  [0.0s]
+S6 {b0, r0, b+, b-, r+, r-}: orbits=21, RP laws=877; (law, boundary) pairs with strict permanence and boundary-only formation=88, with BULK (ongoing) formation=0  [33.7s]
+    boundary-only example: ([[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 1], [0, 0, 1, 0, 0, 1], [0, 0, 0, 0, 1, 0]], 'b-')
+-- without reflection positivity (theta-covariance only), for comparison --
+S2 {b, U, D} no RP: orbits=6, laws=64; (law, boundary) pairs with strict permanence and boundary-only formation=4, with BULK (ongoing) formation=4  [0.0s]
+    bulk example: ([[1, 0, 1], [1, 1, 0], [0, 0, 1]], 'b')
+S4 {b0, b+, b-, r+, r-} no RP: orbits=15, laws=32768; (law, boundary) pairs with strict permanence and boundary-only formation=752, with BULK (ongoing) formation=4224  [0.5s]
+    bulk example: ([[0, 0, 0, 0, 0], [0, 0, 0, 0, 1], [0, 1, 0, 0, 0], [0, 0, 1, 1, 0], [0, 0, 0, 0, 1]], 'b-')

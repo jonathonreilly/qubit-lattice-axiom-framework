@@ -1,0 +1,22 @@
+small-epsilon integral = 1.54216387989993195
+correct C_inf=A^2/(eps*T^2) = 1.67386757734505456
+eps=    0.2 exact coefficient=3.806992083 ratio_to_limit=2.274369
+eps=    0.1 exact coefficient=2.499777994 ratio_to_limit=1.493414
+eps=   0.05 exact coefficient=2.040711588 ratio_to_limit=1.219160
+eps=   0.01 exact coefficient=1.740889240 ratio_to_limit=1.040040
+eps=  0.001 exact coefficient=1.680437967 ratio_to_limit=1.003925
+SMAX=24 asymptotic omitted mean row-sum coefficient times T^2 = -1.32085309756e-7
+SMAX=24 omitted continuum gain coefficient times eps*T^2 = 3.55127884465e-14
+SMAX=24 omitted gain fraction = 2.12160083194e-14
+evolution eps=.2 E1_6: exp_rate=0.73519, exp_logRSS=0.0115327; power=4.61162, power_logRSS=0.0461252
+evolution eps=.2 E1_5: exp_rate=0.75259, exp_logRSS=0.000537195; power=4.24539, power_logRSS=0.00620594
+evolution eps=.1 E1_5: exp_rate=0.45433, exp_logRSS=0.000527286; power=2.45950, power_logRSS=0.00322574
+evolution eps=.05 E1_5: exp_rate=0.40652, exp_logRSS=0.000868518; power=2.21083, power_logRSS=7.60088e-07
+window eps=.2 E1_3B: exp_rate=-2.04404, exp_logRSS=0.0588459; power=-1.54531, power_logRSS=0.106395
+window eps=.1 E1_3B: exp_rate=-1.95246, exp_logRSS=0.0595451; power=-1.30923, power_logRSS=0.0172296
+window eps=.2 E1_6: exp_rate=-1.55657, exp_logRSS=0.0542794; power=-2.33329, power_logRSS=0.103341
+strain sd exponent over all five points = 0.50726
+element-variance exponent over worker's last four bins = 2.17493
+renewal coefficient in lk^3 criterion = 1.584550840
+renewal lk bound: D=2.337374334e-15 m, Hubble=3.784600673e-15 m
+isolated-wave arithmetic lk bound = 2.611284308e-18 m

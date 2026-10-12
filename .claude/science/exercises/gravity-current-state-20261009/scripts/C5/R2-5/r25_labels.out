@@ -1,0 +1,16 @@
+L=3 w=0.5: row states=29; density(t=1,5,T/2)=0.200,0.200,0.200; formation/site/step(t=0,1,T/2)=2.000e-01,1.600e-01,1.600e-01
+      un-formation per site per step summed over t<T: U=0.0e+00 D=0.0e+00 R=3.037e+00 L=3.037e+00;  P(no record ever un-forms)=2.111e-04
+L=3 w=1.0: row states=29; density(t=1,5,T/2)=0.667,0.667,0.667; formation/site/step(t=0,1,T/2)=6.667e-01,2.222e-01,2.222e-01
+      un-formation per site per step summed over t<T: U=0.0e+00 D=0.0e+00 R=4.247e+00 L=4.247e+00;  P(no record ever un-forms)=4.385e-08
+L=3 w=1.2: row states=29; density(t=1,5,T/2)=0.776,0.776,0.776; formation/site/step(t=0,1,T/2)=7.756e-01,1.741e-01,1.741e-01
+      un-formation per site per step summed over t<T: U=0.0e+00 D=0.0e+00 R=3.375e+00 L=3.375e+00;  P(no record ever un-forms)=1.443e-05
+L=3 w=3.0: row states=29; density(t=1,5,T/2)=0.982,0.982,0.982; formation/site/step(t=0,1,T/2)=9.818e-01,1.785e-02,1.785e-02
+      un-formation per site per step summed over t<T: U=0.0e+00 D=0.0e+00 R=4.301e-01 L=4.301e-01;  P(no record ever un-forms)=2.724e-01
+L=4 w=0.5: row states=83; density(t=1,5,T/2)=0.111,0.111,0.111; formation/site/step(t=0,1,T/2)=1.111e-01,9.877e-02,9.877e-02
+      un-formation per site per step summed over t<T: U=0.0e+00 D=0.0e+00 R=1.852e+00 L=1.852e+00;  P(no record ever un-forms)=1.196e-02
+L=4 w=1.0: row states=83; density(t=1,5,T/2)=0.667,0.667,0.667; formation/site/step(t=0,1,T/2)=6.667e-01,2.222e-01,2.222e-01
+      un-formation per site per step summed over t<T: U=0.0e+00 D=0.0e+00 R=4.190e+00 L=4.190e+00;  P(no record ever un-forms)=1.206e-08
+L=4 w=1.2: row states=83; density(t=1,5,T/2)=0.806,0.806,0.806; formation/site/step(t=0,1,T/2)=8.057e-01,1.565e-01,1.565e-01
+      un-formation per site per step summed over t<T: U=0.0e+00 D=0.0e+00 R=3.044e+00 L=3.044e+00;  P(no record ever un-forms)=2.043e-05
+L=4 w=3.0: row states=83; density(t=1,5,T/2)=0.994,0.994,0.994; formation/site/step(t=0,1,T/2)=9.939e-01,6.097e-03,6.097e-03
+      un-formation per site per step summed over t<T: U=0.0e+00 D=0.0e+00 R=2.258e-01 L=2.258e-01;  P(no record ever un-forms)=3.268e-01

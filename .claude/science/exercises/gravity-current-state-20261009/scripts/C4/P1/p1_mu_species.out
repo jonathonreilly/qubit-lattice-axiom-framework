@@ -1,0 +1,41 @@
+checks
+  elliptic kz-averages vs direct quadrature: max rel err = 4.4e-16
+  lattice Maxwell in diagonal unimodular metric: max |eig - {0, Om^2, Om^2}| = 7.1e-15
+  F(1) = +1.970388641879e-03   (referee V3: +1.970388641877e-03)
+  -1/2 F(1) [staggered m=0.5, RN norm] x4 = -3.9407772838e-03  (referee V1-norm continuum: -3.940777283755e-03)
+  -1/2 F(2) [staggered m=1, RN norm] = -5.288271e-04  (V3 table: -5.29e-4)
+  naive fermion, symbol 1/2 sin2p, direct = -4.758443666698e-03 ; -2F(2m) = -4.758443666698e-03
+  naive fermion, symbol 1/2 sin2p, direct = -2.115308492851e-03 ; -2F(2m) = -2.115308492851e-03
+  quadrature convergence F(0.0): +2.695797939762204e-03 vs finer +2.695797939762155e-03  diff +4.9e-17
+  quadrature convergence F(0.05): +2.693268674567555e-03 vs finer +2.693268674567506e-03  diff +4.9e-17
+  quadrature convergence F(1.0): +1.970388641878576e-03 vs finer +1.970388641878530e-03  diff +4.6e-17
+
+(1) exact mu_E(m) per species, RN-L1 normalisation, per lattice site
+   m      KG F(m)        stag -F(2m)/2   naive(1/2sin2p)  naive(sin p) G   naiveBoson F(2m)/2  KG metric F_B(m)
+  0.00  +2.695798e-03  -1.347899e-03  -5.391596e-03  +1.100007e-01  +1.347899e-03  +3.558606e-01
+  0.01  +2.695697e-03  -1.347696e-03  -5.390786e-03  +1.099949e-01  +1.347696e-03  +3.558584e-01
+  0.10  +2.685716e-03  -1.328006e-03  -5.312024e-03  +1.094399e-01  +1.328006e-03  +3.556393e-01
+  0.30  +2.608177e-03  -1.189611e-03  -4.758444e-03  +1.054706e-01  +1.189611e-03  +3.538809e-01
+  0.50  +2.467156e-03  -9.851943e-04  -3.940777e-03  +9.909285e-02  +9.851943e-04  +3.504308e-01
+  1.00  +1.970389e-03  -5.288271e-04  -2.115308e-03  +8.069654e-02  +5.288271e-04  +3.354037e-01
+  2.00  +1.057654e-03  -1.534205e-04  -6.136821e-04  +5.351064e-02  +1.534205e-04  +2.898898e-01
+  photon option A (2 F(0)) = +5.39159588e-03;  photon option B (2 F_B(0)) = +7.11721250e-01
+
+(2) small-M expansion of F(M) = c0 + c2 M^2 + c4 M^4 + c6L M^6 ln M + c6 M^6 + O(M^8 ln M)
+  c0 = +2.695797939762e-03
+  c2 = -1.012898450637e-03
+  c4 = +4.792894442661e-04
+  c6L (analytic 1/(384 pi^2)) = +2.638572490686e-04
+  fit of (F - c0 - c2M^2 - c4M^4)/M^6 on M in [0.04,0.3]: c6L = +2.638567e-04 (analytic +2.638572e-04), c6 = -1.454136e-04
+  with c6L fixed analytic: c6 = -1.454114e-04; next: d8L = +2.066e-05, d8 = -4.862e-05
+  series check M=0.05: F = +2.69326867456755e-03, series to M^6 = +2.69326867457187e-03, diff = -4.32e-15
+  series check M=0.1: F = +2.68571613027357e-03, series to M^6 = +2.68571613123513e-03, diff = -9.62e-13
+  series check M=0.2: F = +2.65601217097649e-03, series to M^6 = +2.65601238016104e-03, diff = -2.09e-10
+  series check M=0.5: F = +2.46715648143441e-03, series to M^6 = +2.46739917870117e-03, diff = -2.43e-07
+
+(2b) naive fermion with symbol sin p: G(m) = g0 + g2 m^2 + g4L m^4 ln m + g4 m^4 + ...
+  g0 = +1.1000068151e-01, g2 = -5.7410344501e-02
+  fit: g4L = -5.066059e-02 (analytic -1/(2 pi^2) = -5.066059e-02); with analytic g4L: g4 = +1.594804e-02
+
+(2c) metric-coupled scalar F_B (and photon option B = 2 F_B(0))
+  b0 = +3.5586062486e-01, b2 = -2.2151482365e-02; fit of M^4 block: coefficient of M^4 ln M = +3.657e-10 (expected 0: continuum invariance), b4 = +1.707895e-03, next M^6 ln M = -1.318e-04

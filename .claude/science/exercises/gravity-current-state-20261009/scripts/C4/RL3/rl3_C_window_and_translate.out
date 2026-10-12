@@ -1,0 +1,36 @@
+tau = 8.6056e+14 m ; sqrt(eps)*tau/l_k at the bar = 224.80 ; eps at the bar = 6.824e-64 ; ln(tau/l_k) = 78.1
+FAIL threshold on the variance-rate constant c (n = (c/2) X >= 1): c_fail = 0.00890
+op0: I_h = 0.59381  c* = sqrt(4 pi I_h) = 2.7317 ; sup|H| = 1.0108
+    window |H| >= 0.05 : I_h[W] = 0.5716  c_low = 2.6800  (c_low/c_fail = 301)
+    window |H| >= 0.10 : I_h[W] = 0.5510  c_low = 2.6313  (c_low/c_fail = 296)
+    window |H| >= 0.30 : I_h[W] = 0.4401  c_low = 2.3518  (c_low/c_fail = 264)
+    window tau <= 0.6 (min|H| there = 0.803): I_h[W] = 0.1637  c_low = 1.4341  (c_low/c_fail = 161)
+    c = 2.7317: sd e-folds at the bar n = 307.0 ; l_k needed for n <= 1: 6.746e-19 m (6.75 x bar, 0.83 decades)
+    c = 1.4341: sd e-folds at the bar n = 161.2 ; l_k needed for n <= 1: 5.442e-19 m (5.44 x bar, 0.74 decades)
+op1: I_h = 0.63945  c* = sqrt(4 pi I_h) = 2.8347 ; sup|H| = 1.0810
+    window |H| >= 0.05 : I_h[W] = 0.6283  c_low = 2.8100  (c_low/c_fail = 316)
+    window |H| >= 0.10 : I_h[W] = 0.6100  c_low = 2.7686  (c_low/c_fail = 311)
+    window |H| >= 0.30 : I_h[W] = 0.5635  c_low = 2.6610  (c_low/c_fail = 299)
+    window tau <= 0.6 (min|H| there = 0.860): I_h[W] = 0.1873  c_low = 1.5342  (c_low/c_fail = 172)
+    c = 2.8347: sd e-folds at the bar n = 318.6 ; l_k needed for n <= 1: 6.830e-19 m (6.83 x bar, 0.83 decades)
+    c = 1.5342: sd e-folds at the bar n = 172.5 ; l_k needed for n <= 1: 5.566e-19 m (5.57 x bar, 0.75 decades)
+op2: I_h = 0.84187  c* = sqrt(4 pi I_h) = 3.2526 ; sup|H| = 1.1533
+    window |H| >= 0.05 : I_h[W] = 0.8250  c_low = 3.2199  (c_low/c_fail = 362)
+    window |H| >= 0.10 : I_h[W] = 0.8073  c_low = 3.1850  (c_low/c_fail = 358)
+    window |H| >= 0.30 : I_h[W] = 0.7368  c_low = 3.0429  (c_low/c_fail = 342)
+    window tau <= 0.6 (min|H| there = 0.917): I_h[W] = 0.2131  c_low = 1.6364  (c_low/c_fail = 184)
+    c = 3.2526: sd e-folds at the bar n = 365.6 ; l_k needed for n <= 1: 7.150e-19 m (7.15 x bar, 0.85 decades)
+    c = 1.6364: sd e-folds at the bar n = 183.9 ; l_k needed for n <= 1: 5.687e-19 m (5.69 x bar, 0.75 decades)
+
+Theorem 3 constants (cone-alternation costs a factor 4 in the rung): c_low[W] = sqrt(pi I_h[W]) = sqrt(4 pi I_h[W])/2
+  op0 W=|H|>=0.3  c_low = 1.1759 (c_low/c_fail = 132): sd e-folds at the bar n = 132.2 ; l_k needed 5.094e-19 m (5.09 x bar)
+  op0 W=tau<=0.6  c_low = 0.7171 (c_low/c_fail = 81): sd e-folds at the bar n = 80.6 ; l_k needed 4.320e-19 m (4.32 x bar)
+  op1 W=|H|>=0.3  c_low = 1.3305 (c_low/c_fail = 150): sd e-folds at the bar n = 149.6 ; l_k needed 5.308e-19 m (5.31 x bar)
+  op1 W=tau<=0.6  c_low = 0.7671 (c_low/c_fail = 86): sd e-folds at the bar n = 86.2 ; l_k needed 4.418e-19 m (4.42 x bar)
+  op2 W=|H|>=0.3  c_low = 1.5214 (c_low/c_fail = 171): sd e-folds at the bar n = 171.0 ; l_k needed 5.551e-19 m (5.55 x bar)
+  op2 W=tau<=0.6  c_low = 0.8182 (c_low/c_fail = 92): sd e-folds at the bar n = 92.0 ; l_k needed 4.514e-19 m (4.51 x bar)
+
+Prefactor estimate (SUGGESTED; point-to-point kernel, renewal pole => Var ~ Lam m^(1/2) e^(m tau)/(4 pi sqrt(2 pi) tau^(3/2)), m = c sqrt(eps)):
+  c = 2.7317: m tau = 614.1 ; ln Var ~ 459.6 (sd e-folds ~ 229.8) on the unit scale of the l_k-normalised kernel
+  c = 1.1760: m tau = 264.4 ; ln Var ~ 107.8 (sd e-folds ~ 53.9) on the unit scale of the l_k-normalised kernel
+  c = 0.7170: m tau = 161.2 ; ln Var ~ 3.3 (sd e-folds ~ 1.7) on the unit scale of the l_k-normalised kernel

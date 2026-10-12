@@ -1,0 +1,7 @@
+d=2 m=0.5 r=2: params 200, Moller shells 300, real rows 9600  (2.0s)
+  Gram sv: max 1.045e+02; null (abs 1e-10, rel 1e-9) dim 134; class dim (+ band symbols) 68; surviving + band symbol dim 2
+  smallest non-null sv 1.343e-01, next 4.908e-01; ratio to max 1.285e-03
+  taste-averaged slope=1 along x: in exact null space N1.Z max |.| = 3.90e-12;  min ||C x|| s.t. N1.x=1 : 1.415e+00 (relative to ||C|| scale 1.05e+02)
+  survivors: max |slope matrix at k=0| 7.81e-12; max |trace of slope| 7.94e-12
+  e=0 control: free momentum (1/2)sin(2k_x)1: slope 1.000000, + band slope matrix diag = [1. 1.], Moller defect ||C x|| = 7.411e+00  (free conservation [h,P]=0 exact by construction)
+time 2.2s

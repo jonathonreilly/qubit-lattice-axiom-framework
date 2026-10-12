@@ -1,0 +1,16 @@
+
+== eps=0.2 T=9.5 N~5394 nreal=24  [29s]
+   tc=4.5: window-avg sd: open=0.2065 closed=0.5565 (ratio 2.69) | element rms: open=4.941 closed=8.675
+   tc=5.5: window-avg sd: open=0.2920 closed=1.1813 (ratio 4.05) | element rms: open=5.382 closed=12.158
+   tc=6.5: window-avg sd: open=0.4115 closed=2.5594 (ratio 6.22) | element rms: open=5.720 closed=14.600
+   tc=7.0: window-avg sd: open=0.4804 closed=3.6108 (ratio 7.52) | element rms: open=6.030 closed=15.814
+
+== eps=0.1 T=9.0 N~8547 nreal=16  [90s]
+   tc=4.5: window-avg sd: open=0.0902 closed=0.2418 (ratio 2.68) | element rms: open=2.982 closed=3.836
+   tc=5.5: window-avg sd: open=0.1235 closed=0.3703 (ratio 3.00) | element rms: open=3.125 closed=4.403
+   tc=6.5: window-avg sd: open=0.1752 closed=0.5999 (ratio 3.42) | element rms: open=3.298 closed=4.735
+
+== eps=0.05 T=8.0 N~10645 nreal=8  [111s]
+   tc=4.5: window-avg sd: open=0.0687 closed=0.1735 (ratio 2.53) | element rms: open=1.763 closed=1.915
+   tc=5.5: window-avg sd: open=0.0841 closed=0.2701 (ratio 3.21) | element rms: open=1.775 closed=1.940
+   tc=6.5: window-avg sd: open=0.1104 closed=0.3912 (ratio 3.54) | element rms: open=1.890 closed=2.076

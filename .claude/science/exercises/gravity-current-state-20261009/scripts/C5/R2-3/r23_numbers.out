@@ -1,0 +1,77 @@
+lP=1.6163e-35 m tP=5.3912e-44 s  M_Pl=1.2209e+28 eV;  1 J/m^3 = 4.7957e-02 eV^4
+
+[a] per-flash heating 3hbar^2/(4 m rC^2) = 4.9867e-28 J = 3.1125e-09 eV; kick variance per axis hbar^2/(2rC^2) -> rms 7.457e-28 kg m/s
+    GRW (lam=1e-16) heating per nucleon P = 4.9867e-44 W
+
+[d] Earth-heat allowance (O4 H4): 1.317e-38 W/nucleon -> lam_max(rC=0.1um) = 2.641e-11 s^-1  (O4 quotes 2.6e-11 in CSL convention)
+    NS (T<42kK, R=12km, 1.4Msun; redshift ignored): L_max=3.193e+20 W, P_max=1.918e-37 W/nucleon -> lam_max=3.846e-10 s^-1
+    NS equilibrium surface T at GRW rate: 948.4 K (state-independent heating; Tilloy-Stace form)
+    IGM: GRW heating over t_H gives dT = 1.049e-03 K per baryon; allowance ~1e4 K -> P_max ~4.76e-37 W, lam_max ~9.5e-10
+    X-ray (as quoted in repo DECISION_MATRIX.md:82 for mass-proportional CSL at rC=1e-7; exact Majorana number not re-verified): lam <~ 5e-15
+
+[g] registered pointer: N=1e10 nucleons, d=1 um, localize within 1 ms (needs Gamma >= 1e3 s^-1)
+    independent per-particle flashes, d >> rC: needs lam >= 1.0e-07 s^-1
+    Earth heat (O4 H4)    : P_max=1.317e-38 W -> Gamma_max(isotropic envelope) = 6.602e+00 s^-1, (any envelope) = 1.980e+01 s^-1;  shortfall vs 1e3: x5.05e+01
+    NS 42kK               : P_max=1.918e-37 W -> Gamma_max(isotropic envelope) = 9.615e+01 s^-1, (any envelope) = 2.884e+02 s^-1;  shortfall vs 1e3: x3.47e+00
+    IGM ~1e4K             : P_max=4.755e-37 W -> Gamma_max(isotropic envelope) = 2.384e+02 s^-1, (any envelope) = 7.152e+02 s^-1;  shortfall vs 1e3: x1.40e+00
+    X-ray-quoted lam*dE   : P_max=2.493e-42 W -> Gamma_max(isotropic envelope) = 1.250e-03 s^-1, (any envelope) = 3.750e-03 s^-1;  shortfall vs 1e3: x2.67e+05
+    minimal isolated pointer (d=1um, 1ms, Earth heat, any envelope): N >= 5.049e+11 nucleons
+    in air: collisions 9.044e+15 s^-1 -> 2.623e+17 recording nucleons/s; int lam N_eff dt >= 1 in 1 ms needs lam >= 7.63e-12 s^-1 (Earth-heat lam_max 2.64e-11; X-ray-quoted 5e-15; GRW 1e-16)
+      lam=1.0e-16: definiteness time for the pointer in air ~ 276 ms
+      lam=5.0e-15: definiteness time for the pointer in air ~ 39.1 ms
+      lam=2.6e-11: definiteness time for the pointer in air ~ 0.537 ms
+
+[f] Planck event density = 4.393e+147 m^-3 s^-1
+    water 6e29           GRW            : 6.000e+13 flashes m^-3 s^-1 = 1.366e-134 of Planck density
+    water 6e29           X-ray-quoted   : 3.000e+15 flashes m^-3 s^-1 = 6.829e-133 of Planck density
+    water 6e29           Earth-heat max : 1.584e+19 flashes m^-3 s^-1 = 3.606e-129 of Planck density
+    Earth mean 3.3e30    GRW            : 3.297e+14 flashes m^-3 s^-1 = 7.504e-134 of Planck density
+    Earth mean 3.3e30    X-ray-quoted   : 1.648e+16 flashes m^-3 s^-1 = 3.752e-132 of Planck density
+    Earth mean 3.3e30    Earth-heat max : 8.705e+19 flashes m^-3 s^-1 = 1.981e-128 of Planck density
+    cosmic baryons 0.25  GRW            : 2.515e-17 flashes m^-3 s^-1 = 5.725e-165 of Planck density
+    cosmic baryons 0.25  X-ray-quoted   : 1.258e-15 flashes m^-3 s^-1 = 2.862e-163 of Planck density
+    cosmic baryons 0.25  Earth-heat max : 6.641e-12 flashes m^-3 s^-1 = 1.512e-159 of Planck density
+
+[b] H0=2.1843e-18 s^-1, rho_Lambda=5.2525e-10 J/m^3, n_b0=0.2515 m^-3
+    z_max=   1e+00 GRW            : Delta rho_Lambda = 9.604e-27 J/m^3 = 1.828e-17 rho_Lambda
+    z_max=   1e+00 X-ray-quoted   : Delta rho_Lambda = 4.802e-25 J/m^3 = 9.142e-16 rho_Lambda
+    z_max=   1e+00 Earth-heat max : Delta rho_Lambda = 2.536e-21 J/m^3 = 4.828e-12 rho_Lambda
+    z_max=   1e+03 GRW            : Delta rho_Lambda = 1.997e-22 J/m^3 = 3.803e-13 rho_Lambda
+    z_max=   1e+03 X-ray-quoted   : Delta rho_Lambda = 9.987e-21 J/m^3 = 1.901e-11 rho_Lambda
+    z_max=   1e+03 Earth-heat max : Delta rho_Lambda = 5.274e-17 J/m^3 = 1.004e-07 rho_Lambda
+    z_max=   1e+09 GRW            : Delta rho_Lambda = 6.020e-16 J/m^3 = 1.146e-06 rho_Lambda
+    z_max=   1e+09 X-ray-quoted   : Delta rho_Lambda = 3.010e-14 J/m^3 = 5.731e-05 rho_Lambda
+    z_max=   1e+09 Earth-heat max : Delta rho_Lambda = 1.590e-10 J/m^3 = 3.027e-01 rho_Lambda
+    z_max=   1e+12 GRW            : Delta rho_Lambda = 6.020e-13 J/m^3 = 1.146e-03 rho_Lambda
+    z_max=   1e+12 X-ray-quoted   : Delta rho_Lambda = 3.010e-11 J/m^3 = 5.731e-02 rho_Lambda
+    z_max=   1e+12 Earth-heat max : Delta rho_Lambda = 1.590e-07 J/m^3 = 3.027e+02 rho_Lambda
+    today d ln rho_Lambda / d ln a = J0/(H0 rho_L) [GRW] = 1.093e-17  (w+1 ~ -3.6e-18)
+    today d ln rho_Lambda / d ln a = J0/(H0 rho_L) [X-ray-quoted] = 5.467e-16  (w+1 ~ -1.8e-16)
+    today d ln rho_Lambda / d ln a = J0/(H0 rho_L) [Earth-heat max] = 2.887e-12  (w+1 ~ -9.6e-13)
+
+[c] P0 mu = 2.390e+08 eV^4
+    covariant-law secular response bound rho_dot/omega [cosmic baryons, GRW] (eV^4): Hubble: 2.75e-28  PTA 1/yr: 3.02e-39  LIGO 100Hz: 9.57e-49
+    covariant-law secular response bound rho_dot/omega [cosmic baryons, Earth-heat max] (eV^4): Hubble: 7.27e-23  PTA 1/yr: 7.98e-34  LIGO 100Hz: 2.53e-43
+    covariant-law secular response bound rho_dot/omega [Earth, GRW] (eV^4): Hubble: 3.61e+03  PTA 1/yr: 3.96e-08  LIGO 100Hz: 1.25e-17
+    covariant-law secular response bound rho_dot/omega [Earth, Earth-heat max] (eV^4): Hubble: 9.53e+08  PTA 1/yr: 1.05e-02  LIGO 100Hz: 3.31e-12
+    covariant-law secular response bound rho_dot/omega [NS core 0.5 fm^-3, GRW] (eV^4): Hubble: 5.47e+17  PTA 1/yr: 6.01e+06  LIGO 100Hz: 1.90e-03
+    covariant-law secular response bound rho_dot/omega [NS core 0.5 fm^-3, Earth-heat max] (eV^4): Hubble: 1.45e+23  PTA 1/yr: 1.59e+12  LIGO 100Hz: 5.03e+02
+    1 J^2 s m^-3 = 4.548e+32 eV^4
+    additive S_TT(0) [IGM (T=1e4K, tau_r=2e12 s Spitzer ion), GRW] = 4.200e-06 eV^4  (vs mu 2.39e+08: not a mass, see report)
+    additive S_TT(0) [IGM (T=1e4K, tau_r=2e12 s Spitzer ion), Earth-heat max] = 1.109e+00 eV^4  (vs mu 2.39e+08: not a mass, see report)
+    additive S_TT(0) [IGM, tau_r capped at t_H, GRW] = 1.992e+05 eV^4  (vs mu 2.39e+08: not a mass, see report)
+    additive S_TT(0) [IGM, tau_r capped at t_H, Earth-heat max] = 5.260e+10 eV^4  (vs mu 2.39e+08: not a mass, see report)
+    additive S_TT(0) [Earth solid (300K, tau_r=1e-12 s), GRW] = 4.129e-25 eV^4  (vs mu 2.39e+08: not a mass, see report)
+    additive S_TT(0) [Earth solid (300K, tau_r=1e-12 s), Earth-heat max] = 1.090e-19 eV^4  (vs mu 2.39e+08: not a mass, see report)
+    Omega_gw(PTA, GRW) ~ 9.43e-118  (PTA signal ~1e-9; O(1) prefactor omitted)
+    Omega_gw(PTA, Earth-heat max) ~ 2.49e-112  (PTA signal ~1e-9; O(1) prefactor omitted)
+    Omega_gw(LIGO, GRW) ~ 9.39e-99  (PTA signal ~1e-9; O(1) prefactor omitted)
+    Omega_gw(LIGO, Earth-heat max) ~ 2.48e-93  (PTA signal ~1e-9; O(1) prefactor omitted)
+    LIGO 40 kg mirror, 100 Hz, L=4 km [GRW]: sqrt S_F=1.63e-21 N/rtHz, strain 2.58e-32/rtHz vs LIGO ~4e-24
+    LIGO 40 kg mirror, 100 Hz, L=4 km [Earth-heat max]: sqrt S_F=8.38e-19 N/rtHz, strain 1.33e-29/rtHz vs LIGO ~4e-24
+    LISA Pathfinder 1.93 kg [GRW]: sqrt S_a = 1.86e-22 m s^-2/rtHz vs ~1.7e-15 measured
+    LISA Pathfinder 1.93 kg [Earth-heat max]: sqrt S_a = 9.54e-20 m s^-2/rtHz vs ~1.7e-15 measured
+
+[b'] (l_P/r_C)^2 = (Delta p/(M_Pl c))^2 with Delta p = hbar/r_C, r_C=1e-07: 2.612e-56 per flash per nucleon (dimensionless gauge-defect strength; estimate)
+
+[b'] (l_P/r_C)^2 = (Delta p/(M_Pl c))^2 with Delta p = hbar/r_C, r_C=1e-06: 2.612e-58 per flash per nucleon (dimensionless gauge-defect strength; estimate)

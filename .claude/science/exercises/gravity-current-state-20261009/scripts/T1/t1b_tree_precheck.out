@@ -1,0 +1,28 @@
+cfg 0: N=512 edges=3998 neg-weights=0 | I1 sumV/L^3-1=-1.1e-16 I2 max|sum w e|=3.2e-15 I3 max|T/V-I|=8.9e-16 I4 rms|tau_i|/V=0.416
+   scalar w/|p| (x,y,z; p=.01,.02): [[0.999996, 0.999984], [0.999996, 0.999984], [0.999996, 0.999983]]
+   fermion E/|p| two lowest (x,y,z; p=.01): [[0.9999945, 1.0000003], [0.9999965, 0.9999968], [0.9999958, 0.9999962]]  (p=.02): [[0.9999839, 0.9999954], [0.9999863, 0.9999869], [0.9999834, 0.9999846]]  | #|E0|<0.3 at p=0: 4 (4 exact zero modes expected)  [9s]
+cfg 1: N=512 edges=3990 neg-weights=0 | I1 sumV/L^3-1=-1.1e-16 I2 max|sum w e|=4.6e-15 I3 max|T/V-I|=3.0e-15 I4 rms|tau_i|/V=0.406
+   scalar w/|p| (x,y,z; p=.01,.02): [[0.999996, 0.999984], [0.999996, 0.999984], [0.999996, 0.999984]]
+   fermion E/|p| two lowest (x,y,z; p=.01): [[0.9999951, 0.9999988], [0.9999963, 0.9999971], [0.9999946, 0.9999994]]  (p=.02): [[0.9999841, 0.9999914], [0.9999861, 0.9999876], [0.9999832, 0.9999927]]  | #|E0|<0.3 at p=0: 4 (4 exact zero modes expected)  [9s]
+cfg 2: N=512 edges=3975 neg-weights=0 | I1 sumV/L^3-1=-1.1e-16 I2 max|sum w e|=2.8e-15 I3 max|T/V-I|=5.3e-15 I4 rms|tau_i|/V=0.392
+   scalar w/|p| (x,y,z; p=.01,.02): [[0.999996, 0.999984], [0.999996, 0.999984], [0.999996, 0.999983]]
+   fermion E/|p| two lowest (x,y,z; p=.01): [[0.9999963, 0.9999979], [0.9999951, 0.9999987], [0.9999964, 0.9999965]]  (p=.02): [[0.999987, 0.9999902], [0.9999839, 0.9999911], [0.9999856, 0.9999861]]  | #|E0|<0.3 at p=0: 4 (4 exact zero modes expected)  [9s]
+cfg 3: N=512 edges=3979 neg-weights=0 | I1 sumV/L^3-1=+0.0e+00 I2 max|sum w e|=2.8e-15 I3 max|T/V-I|=3.1e-15 I4 rms|tau_i|/V=0.427
+   scalar w/|p| (x,y,z; p=.01,.02): [[0.999996, 0.999984], [0.999996, 0.999984], [0.999996, 0.999983]]
+   fermion E/|p| two lowest (x,y,z; p=.01): [[0.9999958, 0.9999978], [0.9999952, 0.9999982], [0.999995, 0.9999976]]  (p=.02): [[0.9999851, 0.9999893], [0.9999839, 0.9999899], [0.9999825, 0.9999878]]  | #|E0|<0.3 at p=0: 4 (4 exact zero modes expected)  [11s]
+cfg 4: N=512 edges=3986 neg-weights=0 | I1 sumV/L^3-1=-1.1e-16 I2 max|sum w e|=3.2e-15 I3 max|T/V-I|=1.7e-15 I4 rms|tau_i|/V=0.394
+   scalar w/|p| (x,y,z; p=.01,.02): [[0.999996, 0.999985], [0.999996, 0.999984], [0.999996, 0.999983]]
+   fermion E/|p| two lowest (x,y,z; p=.01): [[0.9999971, 0.9999985], [0.9999968, 0.9999971], [0.9999936, 0.9999995]]  (p=.02): [[0.9999896, 0.9999925], [0.9999875, 0.9999882], [0.9999802, 0.9999921]]  | #|E0|<0.3 at p=0: 4 (4 exact zero modes expected)  [11s]
+cfg 5: N=512 edges=3988 neg-weights=0 | I1 sumV/L^3-1=-1.1e-16 I2 max|sum w e|=2.8e-15 I3 max|T/V-I|=2.7e-15 I4 rms|tau_i|/V=0.402
+   scalar w/|p| (x,y,z; p=.01,.02): [[0.999996, 0.999983], [0.999996, 0.999983], [0.999996, 0.999984]]
+   fermion E/|p| two lowest (x,y,z; p=.01): [[0.9999958, 0.9999968], [0.999996, 0.9999969], [0.9999967, 0.9999977]]  (p=.02): [[0.9999842, 0.9999862], [0.9999848, 0.9999869], [0.9999877, 0.9999898]]  | #|E0|<0.3 at p=0: 4 (4 exact zero modes expected)  [11s]
+SUMMARY N=512 R=6: scalar c_tree mean 0.999996 max|c-1| 4.3e-06
+  fermion c_tree: law mean 0.9999968; per-config (direction-avg) sd 1.8e-07; within-config direction spread (rms) 3.8e-07; level splitting (p=.01) mean 2.2e-06
+cfg 0: N=1000 edges=7825 neg-weights=0 | I1 sumV/L^3-1=-1.1e-16 I2 max|sum w e|=3.3e-15 I3 max|T/V-I|=3.3e-15 I4 rms|tau_i|/V=0.418
+   scalar w/|p| (x,y,z; p=.01,.02): [[0.999996, 0.999984], [0.999996, 0.999984], [0.999996, 0.999983]]
+   fermion E/|p| two lowest (x,y,z; p=.01): [[0.9999962, 0.9999975], [0.9999967, 0.9999978], [0.9999964, 0.9999967]]  (p=.02): [[0.9999863, 0.9999889], [0.9999879, 0.9999901], [0.9999857, 0.9999867]]  | #|E0|<0.3 at p=0: 4 (4 exact zero modes expected)  [49s]
+cfg 1: N=1000 edges=7769 neg-weights=0 | I1 sumV/L^3-1=+2.2e-16 I2 max|sum w e|=4.1e-15 I3 max|T/V-I|=3.9e-15 I4 rms|tau_i|/V=0.395
+   scalar w/|p| (x,y,z; p=.01,.02): [[0.999996, 0.999984], [0.999996, 0.999984], [0.999996, 0.999984]]
+   fermion E/|p| two lowest (x,y,z; p=.01): [[0.9999955, 0.9999983], [0.9999962, 0.9999982], [0.9999963, 0.9999974]]  (p=.02): [[0.9999847, 0.9999905], [0.9999866, 0.9999906], [0.9999863, 0.9999885]]  | #|E0|<0.3 at p=0: 4 (4 exact zero modes expected)  [46s]
+SUMMARY N=1000 R=2: scalar c_tree mean 0.999996 max|c-1| 4.1e-06
+  fermion c_tree: law mean 0.9999969; per-config (direction-avg) sd 5.2e-08; within-config direction spread (rms) 2.2e-07; level splitting (p=.01) mean 1.5e-06

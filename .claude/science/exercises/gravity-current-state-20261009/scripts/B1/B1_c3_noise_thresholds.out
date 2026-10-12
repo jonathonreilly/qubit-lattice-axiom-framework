@@ -1,0 +1,27 @@
+
+=== l = l_P ===
+probe                                    p_min(A=1) p_min(A=1e3) |   mass-type, frozen 3D    mass-type, 4D white     kinetic, frozen 3D      kinetic, 4D white
+LIGO GW, 100 Hz, 1 Gpc                        0.250        0.322 | FAIL (log10 phi=  30.9) FAIL (log10 phi=  10.3) PASS (log10 phi= -51.6) PASS (log10 phi= -72.2)
+LISA GW, 1 mHz, 10 Gpc                        0.179        0.244 | FAIL (log10 phi=  31.4) FAIL (log10 phi=   8.3) PASS (log10 phi= -61.1) PASS (log10 phi= -84.2)
+optical quasar imaging, 3 Gpc                 0.594        0.700 | FAIL (log10 phi=  31.2) FAIL (log10 phi=  16.9) PASS (log10 phi= -25.8) PASS (log10 phi= -40.0)
+GRB 090510 31 GeV photon, ~3 Gpc              1.195        1.358 | FAIL (log10 phi=  31.2) FAIL (log10 phi=  22.0) PASS (log10 phi=  -5.6) PASS (log10 phi= -14.8)
+TeV blazar photon, 0.5 Gpc                    1.325        1.503 | FAIL (log10 phi=  30.8) FAIL (log10 phi=  22.4) PASS (log10 phi=  -3.0) PASS (log10 phi= -11.4)
+LHAASO GRB221009A 10 TeV, ~0.75 Gpc           1.445        1.635 | FAIL (log10 phi=  30.9) FAIL (log10 phi=  22.9) PASS (log10 phi=  -0.9) PASS (log10 phi=  -8.8)
+electron Compton phase over 1 km              0.350        0.479 | FAIL (log10 phi=  19.7) FAIL (log10 phi=   8.1) PASS (log10 phi= -26.7) PASS (log10 phi= -38.2)
+proton Compton phase over 1 km                0.489        0.640 | FAIL (log10 phi=  19.7) FAIL (log10 phi=   9.7) PASS (log10 phi= -20.1) PASS (log10 phi= -30.1)
+
+=== l = 1e-19 m ===
+probe                                    p_min(A=1) p_min(A=1e3) |   mass-type, frozen 3D    mass-type, 4D white     kinetic, frozen 3D      kinetic, 4D white
+LIGO GW, 100 Hz, 1 Gpc                        0.404        0.522 | FAIL (log10 phi=  23.0) FAIL (log10 phi=  10.3) PASS (log10 phi= -27.9) PASS (log10 phi= -40.6)
+LISA GW, 1 mHz, 10 Gpc                        0.272        0.371 | FAIL (log10 phi=  23.5) FAIL (log10 phi=   8.3) PASS (log10 phi= -37.4) PASS (log10 phi= -52.6)
+optical quasar imaging, 3 Gpc                 1.333        1.570 | FAIL (log10 phi=  23.3) FAIL (log10 phi=  16.9) PASS (log10 phi=  -2.1) PASS (log10 phi=  -8.5)
+GRB 090510 31 GeV photon, ~3 Gpc              8.447        9.600 | FAIL (log10 phi=  23.3) FAIL (log10 phi=  22.0) FAIL (log10 phi=  18.1) FAIL (log10 phi=  16.8)
+TeV blazar photon, 0.5 Gpc                   20.713       23.493 | FAIL (log10 phi=  22.9) FAIL (log10 phi=  22.4) FAIL (log10 phi=  20.7) FAIL (log10 phi=  20.2)
+LHAASO GRB221009A 10 TeV, ~0.75 Gpc         289.725      327.613 | FAIL (log10 phi=  23.0) FAIL (log10 phi=  22.9) FAIL (log10 phi=  22.8) FAIL (log10 phi=  22.8)
+electron Compton phase over 1 km              1.097        1.504 | FAIL (log10 phi=  11.8) FAIL (log10 phi=   8.1) PASS (log10 phi=  -3.0) PASS (log10 phi=  -6.7)
+proton Compton phase over 1 km                2.363        3.091 | FAIL (log10 phi=  11.8) FAIL (log10 phi=   9.7) FAIL (log10 phi=   3.6) FAIL (log10 phi=   1.5)
+
+E1-type gain (volume-only kernel, infinite valency): A^2 = 6.7 eps (T/l_k)^2, T = c/H0
+  l_k = 1e-19 m: eps = 6.8e-64, A = 9.26e+13  (A >> 1 means the one-step noise exceeds the signal)
+  l_k = 1e-17 m: eps = 6.8e-72, A = 9.26e+07  (A >> 1 means the one-step noise exceeds the signal)
+  l_k = 1e-15 m: eps = 6.8e-80, A = 9.26e+01  (A >> 1 means the one-step noise exceeds the signal)

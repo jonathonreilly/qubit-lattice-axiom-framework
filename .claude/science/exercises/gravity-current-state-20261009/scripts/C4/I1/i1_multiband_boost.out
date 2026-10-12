@@ -1,0 +1,7 @@
+N=3 bands, range 2, random analytic h(k), intra-cell positions [0.876 0.468 0.548]
+naive boost (a=0): max |[h,P]| = 4.378e+02  (total energy current NOT conserved)
+improved boost a = band-projected: a hermitian err 1.6e-15 ; max |[h,P]| = 7.41e-13
+Q = i[P,K]-type closure operator: max off-diagonal (band basis) = 1.79e-07
+rel. error of diag(Q) vs E_a * u_a'' : 4.93e-07
+zone-average of u_a'' per (energy-sorted) band: [-0.e+00 -0.e+00  2.e-12]  -> anomaly (u''-beta) averages -beta in every band
+max |u_a''| per band (closure would need const beta): [146.001  58.223 170.634]

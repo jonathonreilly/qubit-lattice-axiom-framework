@@ -1,0 +1,4 @@
+max deviation of Omega_x^+ T Omega_{x+delta} from (scalar)*1 : 0.0e+00
+Hermiticity: naive 0.0e+00, staggered 0.0e+00
+max |spec(naive) - spec(staggered) doubled| = 5.8e-15
+staggered body-diagonal amplitudes from x=(0,0,0): {(1, 1, 1): np.complex128(0.0375j), (1, 1, -1): np.complex128(0.0375j), (1, -1, 1): np.complex128(0.0375j), (1, -1, -1): np.complex128(0.0375j), (-1, 1, 1): np.complex128(0.0375j), (-1, 1, -1): np.complex128(0.0375j), (-1, -1, 1): np.complex128(0.0375j), (-1, -1, -1): np.complex128(0.0375j)}

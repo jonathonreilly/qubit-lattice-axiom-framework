@@ -1,0 +1,26 @@
+
+======== d=2, L=128 (midpoint; brute force RK4 n=40, 5-point Richardson FD) ========
+ M=1.0 E : flow mu0=+3.151813e-03 [bf +3.151813e-03] | half-density c=1/2: -6.793144e-02 [bf -6.793144e-02] | c=1: -0.0e+00 [bf -3.7e-13] | c*=+0.01134 | isospectral G2: +8.7e-19 [bf -3.3e-12]
+      eps=0.02: DOS moment shifts n=1..4  flow: +0.000e+00 -2.500e-01 -3.750e+00 -3.950e+01  (/eps^2) | flow+G2: +0.000e+00 +5.208e-04 +7.812e-03 +9.495e-02 (/eps^3)
+      eps=0.01: DOS moment shifts n=1..4  flow: +0.000e+00 -2.500e-01 -3.750e+00 -3.950e+01  (/eps^2) | flow+G2: +0.000e+00 +2.604e-04 +3.906e-03 +4.747e-02 (/eps^3)
+ M=1.0 T2: flow mu0=-0.000000e+00 [bf -3.700743e-13] | half-density c=1/2: -0.000000e+00 [bf -3.700743e-13] | c=1: -0.0e+00 [bf -3.7e-13] | c*=+nan | isospectral G2: +0.0e+00 [bf -3.7e-13]
+ M=1.0 tr: flow mu0=-1.039246e-02 [bf -1.039246e-02] | half-density c=1/2: -7.131751e-02 [bf -7.131751e-02] | c=1: -0.0e+00 [bf +5.9e-12] | c*=-0.03929 | isospectral G2: +0.0e+00 [bf +6.3e-12]
+ M=0.3 E : flow mu0=+4.653763e-03 [bf +4.653763e-03] | half-density c=1/2: -6.035423e-02 [bf -6.035423e-02] | c=1: -0.0e+00 [bf +2.8e-12] | c*=+0.01856 | isospectral G2: +8.7e-19 [bf +1.7e-12]
+      eps=0.02: DOS moment shifts n=1..4  flow: +0.000e+00 -2.500e-01 -3.067e+00 -2.709e+01  (/eps^2) | flow+G2: +0.000e+00 +5.208e-04 +6.390e-03 +6.910e-02 (/eps^3)
+      eps=0.01: DOS moment shifts n=1..4  flow: +0.000e+00 -2.500e-01 -3.067e+00 -2.709e+01  (/eps^2) | flow+G2: +0.000e+00 +2.604e-04 +3.195e-03 +3.455e-02 (/eps^3)
+ M=0.3 T2: flow mu0=-0.000000e+00 [bf +2.775558e-12] | half-density c=1/2: -0.000000e+00 [bf +2.775558e-12] | c=1: -0.0e+00 [bf +2.8e-12] | c*=+nan | isospectral G2: +0.0e+00 [bf +2.8e-12]
+ M=0.3 tr: flow mu0=-1.710353e-02 [bf -1.710353e-02] | half-density c=1/2: -6.579355e-02 [bf -6.579355e-02] | c=1: -0.0e+00 [bf +2.8e-12] | c*=-0.07470 | isospectral G2: +0.0e+00 [bf +3.9e-11]
+ family A first-order stress change (E, M=1): rms(D*omega)/rms(T1 symbol) = 9.053  (c=1; times c)
+
+======== d=3, L=40 (midpoint; brute force RK4 n=40, 5-point Richardson FD) ========
+ M=1.0 E : flow mu0=+1.970389e-03 [bf +1.970389e-03] | half-density c=1/2: -8.102749e-02 [bf -8.102749e-02] | c=1: -0.0e+00 [bf +0.0e+00] | c*=+0.00601 | isospectral G2: +8.7e-19 [bf -3.3e-12]
+      eps=0.02: DOS moment shifts n=1..4  flow: +2.220e-12 -2.500e-01 -5.250e+00 -7.850e+01  (/eps^2) | flow+G2: +0.000e+00 +5.208e-04 +1.094e-02 +1.762e-01 (/eps^3)
+      eps=0.01: DOS moment shifts n=1..4  flow: +0.000e+00 -2.500e-01 -5.250e+00 -7.850e+01  (/eps^2) | flow+G2: +8.882e-10 +2.604e-04 +5.469e-03 +8.810e-02 (/eps^3)
+ M=1.0 T2: flow mu0=-0.000000e+00 [bf -1.184238e-11] | half-density c=1/2: -0.000000e+00 [bf -1.184238e-11] | c=1: -0.0e+00 [bf -1.2e-11] | c*=+nan | isospectral G2: +0.0e+00 [bf -1.2e-11]
+ M=1.0 tr: flow mu0=-1.555847e-02 [bf -1.555847e-02] | half-density c=1/2: -1.261697e-01 [bf -1.261697e-01] | c=1: -0.0e+00 [bf +0.0e+00] | c*=-0.03285 | isospectral G2: +0.0e+00 [bf +5.9e-12]
+ M=0.3 E : flow mu0=+2.608177e-03 [bf +2.608178e-03] | half-density c=1/2: -7.497516e-02 [bf -7.497516e-02] | c=1: -0.0e+00 [bf +8.2e-10] | c*=+0.00855 | isospectral G2: +8.7e-19 [bf +8.3e-10]
+      eps=0.02: DOS moment shifts n=1..4  flow: +0.000e+00 -2.500e-01 -4.567e+00 -6.063e+01  (/eps^2) | flow+G2: +0.000e+00 +5.208e-04 +9.515e-03 +1.390e-01 (/eps^3)
+      eps=0.01: DOS moment shifts n=1..4  flow: +0.000e+00 -2.500e-01 -4.567e+00 -6.063e+01  (/eps^2) | flow+G2: +8.882e-10 +2.604e-04 +4.758e-03 +6.949e-02 (/eps^3)
+ M=0.3 T2: flow mu0=-0.000000e+00 [bf -1.254552e-10] | half-density c=1/2: -0.000000e+00 [bf -1.254552e-10] | c=1: -0.0e+00 [bf -1.3e-10] | c*=+nan | isospectral G2: +0.0e+00 [bf -1.3e-10]
+ M=0.3 tr: flow mu0=-2.151258e-02 [bf -2.151258e-02] | half-density c=1/2: -1.188189e-01 [bf -1.188189e-01] | c=1: -0.0e+00 [bf +1.2e-09] | c*=-0.04977 | isospectral G2: +0.0e+00 [bf +1.0e-09]
+ family A first-order stress change (E, M=1): rms(D*omega)/rms(T1 symbol) = 12.917  (c=1; times c)

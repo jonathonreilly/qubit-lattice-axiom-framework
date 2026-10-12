@@ -1,0 +1,29 @@
+S gauge check |Q V| = 7.410741937918043e-17
+S-tl: |Q vec(I)| with mT1=0: 2.8609792490763984e-17  with mT1!=0: 0.7042783540618011
+
+STEP 3: helicity-2 speeds along axes for generic cubic p (S version)
+ n= [0. 0. 1.]  v^2 = [0.5319 0.5319 0.68   1.     1.035 ]  <m^2> = [1. 1. 0. 4. 4.]
+ n= [0.707 0.707 0.   ]  v^2 = [0.37   0.4312 0.7178 1.124  1.1356]  <m^2> = [1.    1.    0.071 3.71  4.   ]
+ n= [0.577 0.577 0.577]  v^2 = [0.3595 0.3595 0.75   1.1549 1.1549]  <m^2> = [1.002 1.002 0.    3.943 3.943]
+  along [001] the two helicity-2 polarisations have v^2 = kE*mT2 and kT2*mE (cubic irreps E/T2 of D4 differ)
+  kE*mT2 = 1.0  kT2*mE = 1.035
+
+S (params kA1,kE,kT2,mT1,mE,mT2): free params 6, helicity-2 isotropy conditions (local codim) = 2
+S-tl (params kE,kT2,mE,mT2): free params 4, helicity-2 isotropy conditions (local codim) = 2
+
+STEP 3b: mixed E:B terms (P-odd, T-odd) at the isotropic point: helicity +2/-2 splitting
+  (xE,xT2)=(0.1, 0.0): omega(+2)-omega(-2) over 6 directions = [ 0.10013 -0.07484 -0.       0.07492  0.08819  0.02658]
+  (xE,xT2)=(0.0, 0.1): omega(+2)-omega(-2) over 6 directions = [-0.10013  0.075    0.      -0.07532  0.08823 -0.02671]
+  (xE,xT2)=(0.1, 0.1): omega(+2)-omega(-2) over 6 directions = [-0. -0.  0. -0. -0.  0.]
+  (xE,xT2)=(0.1, -0.1): omega(+2)-omega(-2) over 6 directions = [-0.2     -0.14837  0.      -0.14787 -0.17581  0.05153]
+
+LATTICE: S model on Z^3 with k->q=2sin(k/2), Q multiplied by f(k)=1+0.4*sum(1-cos k_i)
+  14^3 grid minus Gamma: min omega = 0.3309, max |Im omega| = 6.5e-15, zero modes off Gamma = 0
+  |k|=0.2: omega/|k| = [0.6025 0.6303 0.8576 1.0648 1.0695]
+  |k|=0.1: omega/|k| = [0.6028 0.6307 0.858  1.0654 1.0701]
+  |k|=0.05: omega/|k| = [0.6029 0.6308 0.8581 1.0655 1.0702]
+  |k|=0.025: omega/|k| = [0.6029 0.6308 0.8581 1.0655 1.0703]
+
+STEP 4: free lattice scalar coupled to A via hopping (1+A_ii): uniform shear response (paramagnetic)
+  m=0.5: d2E_vac/d eps^2 (E channel, per site) = -0.03857  (nonzero: a label-dependent shear mass term is generated unless a contact term is tuned)
+  m=1.0: d2E_vac/d eps^2 (E channel, per site) = -0.03099  (nonzero: a label-dependent shear mass term is generated unless a contact term is tuned)

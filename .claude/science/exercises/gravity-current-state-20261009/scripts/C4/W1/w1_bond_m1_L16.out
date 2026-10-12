@@ -1,0 +1,7 @@
+m=1.0 L=16 r=2: monomial Gram done [124s]
+[E] O(lam') bond: Gdot(0)=1.73e-18, Gdot(e_x,e_y,e_z)=(+9.909285e-02,-9.909285e-02,+4.336809e-19) -> mu1'/lam' = +1.963879e-02
+[E] A(onsite)=2.422429e-05  A'(bond)=4.509320e-03 mu2'(undressed)/lam'^2=-1.87888e-04 | cos angle(L_onsite, L_bond)=+0.63405 | onsite min-norm dressing applied to bond: mu2'=-1.84679e-04 (undressed -1.87888e-04) [129s]
+[E] N_eff=21; joint (onsite & bond) solution set dimension ~ N_eff - rank = 19
+[T2] O(lam') bond: Gdot(0)=-1.66e-36, Gdot(e_x,e_y,e_z)=(-1.352020e-36,-1.352020e-36,-2.271701e-37) -> mu1'/lam' = +3.707521e-72
+[T2] A(onsite)=-3.866743e-07  A'(bond)=-1.988322e-04 mu2'(undressed)/lam'^2=+8.28468e-06 | cos angle(L_onsite, L_bond)=+0.21050 | onsite min-norm dressing applied to bond: mu2'=+8.27270e-06 (undressed +8.28468e-06) [134s]
+[T2] N_eff=9; joint (onsite & bond) solution set dimension ~ N_eff - rank = 7

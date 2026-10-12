@@ -1,0 +1,15 @@
+proper cubic rotations=24, invariant 3x3 matrices=1
+smallest singular values=[6.92820323e+00 6.92820323e+00 1.03783241e-15]
+fermion L=128 m=lambda=0.05: dc=-16.07388, tad=-17.96313, non-tad=+1.88925
+fermion L=192 m=lambda=0.035: dc=-16.06974, tad=-17.96939, non-tad=+1.89965
+photon L=160 m=0.1: per-Dirac dc=-0.657483, Ward*16pi^2=+1.047e-07, derivative check=-5.235e-08
+photon L=320 m=0.05: per-Dirac dc=-0.667013, Ward*16pi^2=+2.546e-08, derivative check=-1.273e-08
+Delta(two tastes)=-14.718; physical split=-8.546814e-03
+photon-decay threshold=7.817 MeV; LHAASO bound=2.664e-19
+Mstar(assumed 1/16pi^2 law)=1.533e+10 GeV; fourth-power hierarchy=4.010e+35
+
+Additional direct rerun: python3 f2_gauge_check.py 16 0 0.2
+semi-analytic Feynman L=16: a0*16pi^2=+5.24333 a1*16pi^2=-11.16651 dc_f*16pi^2=-16.40984
+brute force xi=1.0: a0*16pi^2=+5.24333 a1*16pi^2=-11.16650 dc_f*16pi^2=-16.40982
+brute force xi=0.0: a0*16pi^2=-1.22725 a1*16pi^2=-17.63708 dc_f*16pi^2=-16.40983
+brute force xi=3.0: a0*16pi^2=+18.18448 a1*16pi^2=+1.77466 dc_f*16pi^2=-16.40982

@@ -1,0 +1,19 @@
+W, N=2, L=16, all 256 modes: dim=32640, nnz offdiag=11864, |H-H^dag|max=6.9e-18, max|Q_out-Q_in| over nonzero offdiag=1.33e-15
+W, N=3, 49 box + 12 edge modes: dim=35990, nnz offdiag=676248, max|dQ| on nonzero=1.33e-15, ||[H,Qx]||_max=2.78e-17
+W, N=3: ||[H,P_x]||_max with P = sum p(k) n_k (p smooth periodic, = qhat on box) = 2.78e-17
+analytic comparator, N=3, L=8: dim=41664, ||[H,Qx]||_max=9.492e-01, ||[H,Qy]||_max=1.642e+00 (nonzero = umklapp)
+  witness: start config Q_x=9.4248; <Q_x>(t)-Q_x(0) at t=0.5,1,2,4: [ 0.0000e+00  3.5527e-15 -7.1054e-15  1.0658e-14]
+  analytic: start config Q_x=9.4248; <Q_x>(t)-Q_x(0) at t=0.5,1,2,4: [-0.0262 -0.0641 -0.1241 -0.1651]
+1D Fourier coefficients |c(n)| (real-space kernel at distance n):
+  n=   1  |chi^(n)|=3.061e-01  |p^(n)|=7.515e-01  n^-6=1.0e+00
+  n=   4  |chi^(n)|=6.646e-02  |p^(n)|=8.281e-02  n^-6=2.4e-04
+  n=   8  |chi^(n)|=2.760e-02  |p^(n)|=1.121e-02  n^-6=3.8e-06
+  n=  16  |chi^(n)|=7.520e-03  |p^(n)|=2.965e-04  n^-6=6.0e-08
+  n=  32  |chi^(n)|=6.883e-04  |p^(n)|=3.159e-05  n^-6=9.3e-10
+  n=  64  |chi^(n)|=2.592e-05  |p^(n)|=2.184e-07  n^-6=1.5e-11
+  n= 128  |chi^(n)|=3.949e-07  |p^(n)|=1.120e-10  n^-6=2.3e-13
+  n= 256  |chi^(n)|=2.345e-09  |p^(n)|=2.285e-13  n^-6=3.6e-15
+  n= 512  |chi^(n)|=2.942e-13  |p^(n)|=2.790e-18  n^-6=5.6e-17
+  fit log|chi^(n)| = A - c n^beta over n in 32..256: beta ~ 0.32 (sub-exponential; exp-decay would be beta=1 with zero residual)
+winding of V's one-body symbol exp(i(k-p(k))) over the zone: 1.000061 ; of exp(i p(k)): -0.000061
+max |p(k) - k| on chi support (|k|<0.49pi): 0.00e+00

@@ -1,0 +1,30 @@
+== F2 jet system: O(kappa^2) translation-Killing sector, 1-jet at q=0 on the complex shell ==
+columns: relative residual min_u ||G u - b|| / ||b|| over all 10 output components;
+         rank of G per component (max 50 = 10 A0 + 40 M entries)
+
+continuum/SLAC control   m2=0.00: residual(any r>=1) = 2.003e-15   residual(r=0) = 9.835e-01   rank/50 per comp = [np.int64(41)]
+continuum/SLAC control   m2=0.25: residual(any r>=1) = 2.006e-15   residual(r=0) = 9.864e-01   rank/50 per comp = [np.int64(46)]
+continuum/SLAC control   m2=1.00: residual(any r>=1) = 3.252e-15   residual(r=0) = 9.918e-01   rank/50 per comp = [np.int64(46)]
+continuum/SLAC control   m2=3.00: residual(any r>=1) = 1.444e-15   residual(r=0) = 9.877e-01   rank/50 per comp = [np.int64(46)]
+K2 lattice scalar        m2=0.00: residual(any r>=1) = 4.935e-01   residual(r=0) = 9.685e-01   rank/50 per comp = [np.int64(46)]
+K2 lattice scalar        m2=0.25: residual(any r>=1) = 4.677e-01   residual(r=0) = 9.618e-01   rank/50 per comp = [np.int64(46)]
+K2 lattice scalar        m2=1.00: residual(any r>=1) = 4.548e-01   residual(r=0) = 9.502e-01   rank/50 per comp = [np.int64(46)]
+     per-component residuals (a=(m,n)): (0, 0):0.51, (0, 1):0.43, (0, 2):0.46, (0, 3):0.56, (1, 1):0.28, (1, 2):0.31, (1, 3):0.37, (2, 2):0.29, (2, 3):0.39, (3, 3):0.48
+K2 lattice scalar        m2=3.00: residual(any r>=1) = 5.272e-01   residual(r=0) = 9.584e-01   rank/50 per comp = [np.int64(46)]
+
+== natural candidate (no fit): A_c with 1-jet = translation of h, i.e. A0 = 0, M_mu = i delta_{mu c} 1
+   (e.g. A_c = i sin q_c or exp(i q_c) - 1: identical 1-jets)
+  continuum m2=1: rel. residual = 8.178e-17
+  lattice   m2=1: rel. residual = 6.677e-01
+
+== diagnostic: lattice T and shell, but the Leibniz factor cos p_c in the defect replaced by 1 ==
+  m2=0.25: residual(any r>=1) = 1.764e-15  -> the cos k_c (Leibniz) factor is the whole obstruction
+  m2=1.0: residual(any r>=1) = 1.648e-15  -> the cos k_c (Leibniz) factor is the whole obstruction
+
+== rank of the jet map  (range-r coefficients of A_c) -> (A0, M_mu) ==
+  r=0: l1-ball offsets    1, unknowns per (b,a) entry    1; rank of jet map per entry = 1 (5 = surjective onto A0, M_0..M_3)
+  r=1: l1-ball offsets    9, unknowns per (b,a) entry    9; rank of jet map per entry = 5 (5 = surjective onto A0, M_0..M_3)
+  r=2: l1-ball offsets   41, unknowns per (b,a) entry   41; rank of jet map per entry = 5 (5 = surjective onto A0, M_0..M_3)
+  r=3: l1-ball offsets  129, unknowns per (b,a) entry  129; rank of jet map per entry = 5 (5 = surjective onto A0, M_0..M_3)
+=> for every r >= 1 the reachable jets are ALL (A0, M); the jet-system residual above is the
+   residual for every finite range r (and for any C^1 symbol); r = 0 reaches A0 only.

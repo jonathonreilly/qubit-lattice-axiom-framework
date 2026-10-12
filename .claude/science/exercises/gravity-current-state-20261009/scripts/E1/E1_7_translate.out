@@ -1,0 +1,25 @@
+inputs: l=1.616e-35 m, L_H=1.31e+26 m, D=3.086e+25 m, GW k=2.10e-06 1/m, du=3e+07 m, k1_bound=1.04e-40 eV^2, k_nu_bound=1.0e-34 eV^3, kappa=3.0
+at l_k = 1e-19 m: eps = 6.82e-64, A^2(L_H) = 1.96e+27, Q(L_H) = 1.07e-35, 1/gamma_rms = 2.42e+12 m
+criterion                                  value at 1e-19 m   required l_k (m)  vs bar 1e-19
+C1 coarse phase noise (L=L_H)                      6.77e-36           3.04e-23  PASS
+C1 coarse phase noise (L^2=du*D)                   3.65e-55           3.60e-25  PASS
+C2 elastic-only loss (L=L_H)                       4.38e-18           1.84e-21  PASS
+C3 loss, E_max=1/l_k (L^2=du*D)                    5.38e+12           1.15e-18  FAIL
+C3 loss, E_max=1/l_k (L=L_H)                       9.97e+31           4.64e-17  FAIL
+C4 stability, all fields, over D                   1.28e+13           2.34e-15  FAIL
+C4 stability, all fields, over ct0                 5.42e+13           3.79e-15  FAIL
+C4' isolated GW over D (ARGUED)                    3.17e+08           2.61e-18  FAIL
+SW1 CMB swerve, lenient                            6.44e-05           3.81e-20  PASS
+SW2 CMB swerve, E_max=1/l_k                        6.20e+57           1.34e-15  FAIL
+SW3 relic nu swerve, lenient                       2.82e-09           1.40e-20  PASS
+   stability over ct0: l=1.62e-35 kappa=2.6: l_k >= 3.70e-15 m
+   stability over ct0: l=1.62e-35 kappa=3.0: l_k >= 3.79e-15 m
+   stability over ct0: l=1.62e-35 kappa=4.0: l_k >= 3.97e-15 m
+   stability over ct0: l=8.10e-35 kappa=2.6: l_k >= 1.08e-14 m
+   stability over ct0: l=8.10e-35 kappa=3.0: l_k >= 1.11e-14 m
+   stability over ct0: l=8.10e-35 kappa=4.0: l_k >= 1.16e-14 m
+   Sorkin 2007 (l^2 R)^(1/3) with R = L_H: 3.25e-15 m
+   TT 'everpresent' estimate l_k=2e-35: m_g ~ 4.89e-03 eV (H=1.51e-33 eV; GWTC-3 1.27e-23 eV)
+   TT 'everpresent' estimate l_k=1e-30: m_g ~ 8.30e-20 eV (H=1.51e-33 eV; GWTC-3 1.27e-23 eV)
+   TT 'everpresent' estimate l_k=1e-25: m_g ~ 2.62e-37 eV (H=1.51e-33 eV; GWTC-3 1.27e-23 eV)
+   TT 'everpresent' estimate l_k=1e-19: m_g ~ 2.62e-58 eV (H=1.51e-33 eV; GWTC-3 1.27e-23 eV)

@@ -1,0 +1,17 @@
+# 1D: impurity eps=1-cos k (v_max=1), sea xi=-2cos p (half filling, v_F=2), U=1
+onsite N=512 eta=0.02 | k=0.00pi G=0.0003 Zrs=0.9314 | k=0.25pi G=0.0004 Zrs=0.9035 | k=0.50pi G=0.0013 Zrs=0.7804 | k=0.75pi G=0.0681 Zrs=0.0003 | k=1.00pi G=0.0877 Zrs=0.0085
+onsite N=512 eta=0.01 | k=0.00pi G=0.0000 Zrs=0.9314 | k=0.25pi G=0.0001 Zrs=0.9035 | k=0.50pi G=0.0010 Zrs=0.7804 | k=0.75pi G=0.0678 Zrs=0.0003 | k=1.00pi G=0.0875 Zrs=0.0085
+onsite N=1024 eta=0.02 | k=0.00pi G=0.0003 Zrs=0.9239 | k=0.25pi G=0.0005 Zrs=0.8931 | k=0.50pi G=0.0012 Zrs=0.7618 | k=0.75pi G=0.0681 Zrs=0.0000 | k=1.00pi G=0.0877 Zrs=0.0043
+onsite N=1024 eta=0.01 | k=0.00pi G=0.0001 Zrs=0.9239 | k=0.25pi G=0.0002 Zrs=0.8931 | k=0.50pi G=0.0007 Zrs=0.7618 | k=0.75pi G=0.0679 Zrs=0.0000 | k=1.00pi G=0.0876 Zrs=0.0043
+onsite N=2048 eta=0.02 | k=0.00pi G=0.0003 Zrs=0.9165 | k=0.25pi G=0.0005 Zrs=0.8829 | k=0.50pi G=0.0011 Zrs=0.7442 | k=0.75pi G=0.0681 Zrs=0.0000 | k=1.00pi G=0.0878 Zrs=0.0000
+onsite N=2048 eta=0.01 | k=0.00pi G=0.0002 Zrs=0.9165 | k=0.25pi G=0.0002 Zrs=0.8829 | k=0.50pi G=0.0006 Zrs=0.7442 | k=0.75pi G=0.0679 Zrs=0.0000 | k=1.00pi G=0.0876 Zrs=0.0000
+nn N=512 eta=0.02 | k=0.00pi G=0.0011 Zrs=0.8049 | k=0.25pi G=0.0017 Zrs=0.7385 | k=0.50pi G=0.0054 Zrs=0.5126 | k=0.75pi G=0.2125 Zrs=0.0001 | k=1.00pi G=0.2648 Zrs=0.0027
+nn N=512 eta=0.01 | k=0.00pi G=0.0002 Zrs=0.8049 | k=0.25pi G=0.0006 Zrs=0.7385 | k=0.50pi G=0.0040 Zrs=0.5126 | k=0.75pi G=0.2113 Zrs=0.0001 | k=1.00pi G=0.2642 Zrs=0.0027
+nn N=1024 eta=0.02 | k=0.00pi G=0.0012 Zrs=0.7829 | k=0.25pi G=0.0018 Zrs=0.7115 | k=0.50pi G=0.0047 Zrs=0.4817 | k=0.75pi G=0.2127 Zrs=0.0000 | k=1.00pi G=0.2650 Zrs=0.0014
+nn N=1024 eta=0.01 | k=0.00pi G=0.0005 Zrs=0.7829 | k=0.25pi G=0.0008 Zrs=0.7115 | k=0.50pi G=0.0027 Zrs=0.4817 | k=0.75pi G=0.2117 Zrs=0.0000 | k=1.00pi G=0.2643 Zrs=0.0014
+nn N=2048 eta=0.02 | k=0.00pi G=0.0012 Zrs=0.7619 | k=0.25pi G=0.0018 Zrs=0.6863 | k=0.50pi G=0.0046 Zrs=0.4544 | k=0.75pi G=0.2127 Zrs=0.0000 | k=1.00pi G=0.2650 Zrs=0.0000
+nn N=2048 eta=0.01 | k=0.00pi G=0.0006 Zrs=0.7619 | k=0.25pi G=0.0009 Zrs=0.6863 | k=0.50pi G=0.0024 Zrs=0.4544 | k=0.75pi G=0.2117 Zrs=0.0000 | k=1.00pi G=0.2643 Zrs=0.0000
+# 2D: impurity eps=2-cos kx-cos ky, sea xi=-2(cos px+cos py) half filling, U=1
+2D N=32 eta=0.08 | face(pi,0) G=0.0525 | corner(pi,pi) G=0.1397 | (pi/2,0) G=0.0152 | (pi/8,0) G=0.0011 | t=0.0s
+2D N=48 eta=0.06 | face(pi,0) G=0.0527 | corner(pi,pi) G=0.1396 | (pi/2,0) G=0.0154 | (pi/8,0) G=0.0011 | t=0.1s
+2D N=64 eta=0.04 | face(pi,0) G=0.0524 | corner(pi,pi) G=0.1385 | (pi/2,0) G=0.0151 | (pi/8,0) G=0.0010 | t=0.3s

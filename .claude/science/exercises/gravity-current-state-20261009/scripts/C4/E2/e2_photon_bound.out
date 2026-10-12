@@ -1,0 +1,18 @@
+needed e/gamma suppression (LHAASO bound / F2 split): 3.11e-17
+  X =    1.0: exact c_gamma - c_m = 6.655592e-03 ; (c0-cm) e^2/e0^2 = 6.666667e-03
+  X =   10.0: exact c_gamma - c_m = 1.659780e-03 ; (c0-cm) e^2/e0^2 = 1.666667e-03
+  X =  100.0: exact c_gamma - c_m = 1.951266e-04 ; (c0-cm) e^2/e0^2 = 1.960784e-04
+
+Dirac fermions (unit charge): d(1/alpha)/dL = 0.2122 per species; matter-side p_1 = 2.0
+  alpha_UV <=  1.00: best N = 16, alpha(M_Pl) = 0.447, S_min = 1.05e-02  (misses target by x3.4e+14)
+  alpha_UV <= 12.57: best N = 16, alpha(M_Pl) = 0.447, S_min = 1.05e-02  (misses target by x3.4e+14)
+
+complex scalars (unit charge): d(1/alpha)/dL = 0.0531 per species; matter-side p_1 = 6.0
+  alpha_UV <=  1.00: best N = 64, alpha(M_Pl) = 0.447, S_min = 1.20e-02  (misses target by x3.8e+14)
+  alpha_UV <= 12.57: best N = 65, alpha(M_Pl) = 3.675, S_min = 1.20e-03  (misses target by x3.9e+13)
+
+For a strongly coupled charged CFT the photon-side factor alpha_IR/alpha_UV is unchanged; reaching the target needs 1 + p_m >= ln(target)/ln(alpha_IR/alpha_UV):
+  alpha_UV =   0.05: needs 1 + p_m >= 20.5
+  alpha_UV =   0.30: needs 1 + p_m >= 10.4
+  alpha_UV =   1.00: needs 1 + p_m >= 7.8
+  alpha_UV =  12.57: needs 1 + p_m >= 5.1

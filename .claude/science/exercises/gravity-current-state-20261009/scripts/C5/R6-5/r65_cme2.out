@@ -1,0 +1,14 @@
+=== 1. static k(0, q->0), three-point extrapolation k0 + k2 q^2 + k4 q^4 (q = 0.02, 0.04, 0.06)
+  on-site b=0.1                N=32  k_static(q->0) = +1.85e-06   (anomaly-value b_eff/4pi^2 = 2.53e-03 ; ratio 7.3e-04)
+  on-site b=0.1                N=48  k_static(q->0) = -2.18e-08   (anomaly-value b_eff/4pi^2 = 2.53e-03 ; ratio -8.6e-06)
+  P-odd hopping c5=0.1 (b=0)   N=32  k_static(q->0) = +1.64e-06   (anomaly-value b_eff/4pi^2 = 7.60e-03 ; ratio 2.2e-04)
+  P-odd hopping c5=0.1 (b=0)   N=48  k_static(q->0) = -1.58e-08   (anomaly-value b_eff/4pi^2 = 7.60e-03 ; ratio -2.1e-06)
+  both b=0.1, c5=-0.05         N=32  k_static(q->0) = -3.57e-06   (anomaly-value b_eff/4pi^2 = -1.27e-03 ; ratio 2.8e-03)
+  both b=0.1, c5=-0.05         N=48  k_static(q->0) = -4.02e-08   (anomaly-value b_eff/4pi^2 = -1.27e-03 ; ratio 3.2e-05)
+=== 2. omega^2 vs q^2 terms and the on-shell coefficient (b/m = 1/3, r = 1); N=48, q,omega = x*m
+  m=0.40 b=0.133 : k_w=+0.00155  k_q=-0.00131  (k_w+k_q)/k_w=+0.1524 ; on-shell k/q^2 at q=0.040,0.080: +2.099e-04, +2.101e-04 ; k_w*m^2/b=0.0019
+  m=0.30 b=0.100 : k_w=+0.00252  k_q=-0.00215  (k_w+k_q)/k_w=+0.1432 ; on-shell k/q^2 at q=0.030,0.060: +2.998e-04, +3.168e-04 ; k_w*m^2/b=0.0023
+  m=0.20 b=0.067 : k_w=+0.00464  k_q=-0.00407  (k_w+k_q)/k_w=+0.1228 ; on-shell k/q^2 at q=0.020,0.040: +2.104e-03, +9.031e-04 ; k_w*m^2/b=0.0028
+  m=0.15 b=0.050 : k_w=+0.00717  k_q=-0.00727  (k_w+k_q)/k_w=-0.0128 ; on-shell k/q^2 at q=0.015,0.030: +4.451e-02, +1.096e-02 ; k_w*m^2/b=0.0032
+=== 3. AHE calibration, N=64, eta=0.005 (spatial b.Sigma_z=0.2, m=0)
+  sigma_xy = 0.18365 ; Delta_k/(4pi^2) = 0.01015

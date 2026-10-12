@@ -1,0 +1,66 @@
+T=8.0 r=0 N=508 L2=8 elapsed=0.6s
+T=8.0 r=60 N=554 L2=6 elapsed=0.7s
+T=8.0 r=120 N=564 L2=10 elapsed=0.8s
+T=8.0 r=180 N=482 L2=7 elapsed=0.9s
+T=8.0 r=240 N=508 L2=7 elapsed=0.9s
+T=8.0 r=300 N=531 L2=12 elapsed=1.0s
+T=8.0 r=360 N=523 L2=9 elapsed=1.1s
+T=8.0 r=420 N=504 L2=15 elapsed=1.2s
+T=8.0 r=480 N=545 L2=12 elapsed=1.3s
+T=8.0 r=540 N=528 L2=9 elapsed=1.3s
+done 1.4160962104797363
+T=11.0 r=0 N=1875 L2=9 elapsed=0.2s
+T=11.0 r=50 N=1889 L2=5 elapsed=0.9s
+T=11.0 r=100 N=1841 L2=7 elapsed=1.6s
+T=11.0 r=150 N=2033 L2=7 elapsed=2.3s
+T=11.0 r=200 N=1970 L2=10 elapsed=3.1s
+T=11.0 r=250 N=1945 L2=15 elapsed=3.9s
+T=11.0 r=300 N=1886 L2=6 elapsed=4.7s
+T=11.0 r=350 N=1980 L2=5 elapsed=5.5s
+T=11.0 r=400 N=2032 L2=8 elapsed=6.3s
+T=11.0 r=450 N=1893 L2=15 elapsed=7.2s
+done 7.927976369857788
+T=14.0 r=0 N=5120 L2=9 elapsed=0.3s
+T=14.0 r=40 N=4996 L2=7 elapsed=5.5s
+T=14.0 r=80 N=5071 L2=12 elapsed=10.4s
+T=14.0 r=120 N=5014 L2=15 elapsed=14.9s
+T=14.0 r=160 N=4959 L2=8 elapsed=19.4s
+T=14.0 r=200 N=5078 L2=10 elapsed=23.8s
+T=14.0 r=240 N=5124 L2=6 elapsed=28.2s
+T=14.0 r=280 N=5075 L2=9 elapsed=32.6s
+T=14.0 r=320 N=5178 L2=6 elapsed=37.2s
+T=14.0 r=360 N=4937 L2=9 elapsed=41.9s
+done 46.49821400642395
+T=17.0 r=0 N=11048 L2=6 elapsed=0.9s
+T=17.0 r=25 N=11100 L2=15 elapsed=17.7s
+T=17.0 r=50 N=10968 L2=8 elapsed=34.8s
+T=17.0 r=75 N=10936 L2=15 elapsed=51.8s
+T=17.0 r=100 N=10833 L2=8 elapsed=68.5s
+T=17.0 r=125 N=11047 L2=6 elapsed=85.9s
+T=17.0 r=150 N=10991 L2=12 elapsed=102.7s
+T=17.0 r=175 N=10938 L2=11 elapsed=119.7s
+T=17.0 r=200 N=10997 L2=13 elapsed=136.8s
+T=17.0 r=225 N=11037 L2=11 elapsed=153.8s
+done 170.34890413284302
+T=20.0 r=0 N=21028 L2=7 elapsed=3.1s
+T=20.0 r=12 N=20972 L2=8 elapsed=39.6s
+T=20.0 r=24 N=20884 L2=9 elapsed=76.0s
+T=20.0 r=36 N=20795 L2=7 elapsed=112.5s
+T=20.0 r=48 N=20914 L2=3 elapsed=148.0s
+T=20.0 r=60 N=20935 L2=11 elapsed=184.2s
+T=20.0 r=72 N=20944 L2=3 elapsed=220.7s
+T=20.0 r=84 N=20873 L2=14 elapsed=257.9s
+T=20.0 r=96 N=20973 L2=11 elapsed=296.5s
+T=20.0 r=108 N=21263 L2=11 elapsed=334.2s
+done 373.62407088279724
+T=23.0 r=0 N=36669 L2=11 elapsed=13.0s
+T=23.0 r=6 N=36366 L2=10 elapsed=86.3s
+T=23.0 r=12 N=36509 L2=6 elapsed=159.7s
+T=23.0 r=18 N=37000 L2=6 elapsed=232.5s
+T=23.0 r=24 N=36482 L2=13 elapsed=299.9s
+T=23.0 r=30 N=36619 L2=1 elapsed=373.4s
+T=23.0 r=36 N=36601 L2=10 elapsed=443.1s
+T=23.0 r=42 N=36533 L2=7 elapsed=518.2s
+T=23.0 r=48 N=36960 L2=12 elapsed=593.8s
+T=23.0 r=54 N=36644 L2=11 elapsed=666.8s
+done 728.6610360145569

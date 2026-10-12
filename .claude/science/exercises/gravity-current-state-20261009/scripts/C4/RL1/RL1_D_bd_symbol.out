@@ -1,0 +1,11 @@
+moments: int f dsig = 7.650e-15, int sig f = 1.583e-14, int sig^2 f = 4.241e-14, int sig^3 f = -29.1805
+  z=0.001  S(z) = -5.647993e-07   -(sqrt6/4) z^2 = -6.123724e-07
+  z=0.01  S(z) = -6.121356e-05   -(sqrt6/4) z^2 = -6.123724e-05
+  z=0.05  S(z) = -1.521231e-03   -(sqrt6/4) z^2 = -1.530931e-03
+  z=0.1  S(z) = -6.001295e-03   -(sqrt6/4) z^2 = -6.123724e-03
+  z=0.2  S(z) = -2.304980e-02   -(sqrt6/4) z^2 = -2.449490e-02
+zeros of S(z) with Re z > 0 (growing modes of the retarded mean inverse), sorted by Re z:
+  z = +0.375598 -5.052239i   |S| = 6.9e-16
+  z = +0.375598 +5.052239i   |S| = 6.9e-16
+argument-principle count of zeros in [0.05,6]x[-8,8]: -2.000
+argument-principle count in [0.05,1.0]x[-8,8]: -2.000

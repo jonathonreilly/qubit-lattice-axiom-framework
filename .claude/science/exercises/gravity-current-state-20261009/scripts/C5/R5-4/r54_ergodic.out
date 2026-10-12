@@ -1,0 +1,9 @@
+B1                     charpoly factors over Q: [(x - 1, 2), (x**2 - 16*x + 1, 1)];  |eigenvalues| = [0.062746, 1.0, 1.0, 15.937254]
+B1 dual (g^-T)         charpoly factors over Q: [(x - 1, 2), (x**2 - 16*x + 1, 1)];  |eigenvalues| = [0.062746, 1.0, 1.0, 15.937254]
+   cyclotomic test (irreducible deg-4 factor, non-cyclotomic): False
+B1*B2                  charpoly factors over Q: [(x - 1, 2), (x**2 - 79*x + 1, 1)];  |eigenvalues| = [0.01266, 1.0, 1.0, 78.98734]
+B1*B2 dual (g^-T)      charpoly factors over Q: [(x - 1, 2), (x**2 - 79*x + 1, 1)];  |eigenvalues| = [0.01266, 1.0, 1.0, 78.98734]
+   cyclotomic test (irreducible deg-4 factor, non-cyclotomic): False
+B1*B2*B3               charpoly factors over Q: [(x**4 - 536*x**3 + 384*x**2 - 536*x + 1, 1)];  |eigenvalues| = [0.001868, 535.284495, 1.0, 1.0]
+B1*B2*B3 dual (g^-T)   charpoly factors over Q: [(x**4 - 536*x**3 + 384*x**2 - 536*x + 1, 1)];  |eigenvalues| = [0.001868, 535.284495, 1.0, 1.0]
+   cyclotomic test (irreducible deg-4 factor, non-cyclotomic): True

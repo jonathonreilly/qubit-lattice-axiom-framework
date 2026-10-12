@@ -1,0 +1,8 @@
+M*=1.5e+10 nonred ln=  1.0: N_species(conformal scalars) for O(1) bending ~ 1.26e+22
+M*=1.5e+10 nonred ln= 41.0: N_species(conformal scalars) for O(1) bending ~ 3.06e+20
+M*=1.5e+10 red    ln=  1.0: N_species(conformal scalars) for O(1) bending ~ 4.99e+20
+M*=1.5e+10 red    ln= 41.0: N_species(conformal scalars) for O(1) bending ~ 1.22e+19
+M*=2.0e+09 nonred ln=  1.0: N_species(conformal scalars) for O(1) bending ~ 7.06e+23
+M*=2.0e+09 nonred ln= 45.1: N_species(conformal scalars) for O(1) bending ~ 1.57e+22
+M*=2.0e+09 red    ln=  1.0: N_species(conformal scalars) for O(1) bending ~ 2.81e+22
+M*=2.0e+09 red    ln= 45.1: N_species(conformal scalars) for O(1) bending ~ 6.23e+20

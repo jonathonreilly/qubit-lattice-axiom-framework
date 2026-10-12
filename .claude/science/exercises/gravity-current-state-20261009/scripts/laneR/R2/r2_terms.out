@@ -1,0 +1,38 @@
+Invariant local linear functionals I(d) (count, no symmetry imposed)
+  S [0, 8, 21, 39]
+  S-tl [0, 5, 15, 29]
+  V [0, 0, 6, 15]
+  V-tl [0, 0, 0, 5]
+
+Cubic(O)-invariant gauge-invariant A-block symbols of degree n
+version  n  W(all, integrated inv.)  S(strong: forms in local invariants)  weak-only
+S       0      0      0      0
+S       1      1      0      1
+S       2      3      3      0
+S       3      4      4      0
+S       4      9      9      0
+
+S-tl    0      0      0      0
+S-tl    1      1      0      1
+S-tl    2      2      2      0
+S-tl    3      3      2      1
+S-tl    4      6      6      0
+
+V       0      0      0      0
+V       1      0      0      0
+V       2      1      0      1
+V       3      1      0      1
+V       4      3      3      0
+
+V-tl    0      0      0      0
+V-tl    1      0      0      0
+V-tl    2      0      0      0
+V-tl    3      1      0      1
+V-tl    4      1      0      1
+V-tl    5      1      0      1
+V-tl    6      2      2      0
+
+OMP_NUM_THREADS=2 python3 r2_terms.py 2>&1  156.06s user 3.03s system 211% cpu 1:15.22 total
+tee r2_terms.out  0.00s user 0.00s system 0% cpu 1:15.22 total
+
+[exited with code 0]

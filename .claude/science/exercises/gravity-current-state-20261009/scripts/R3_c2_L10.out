@@ -1,0 +1,8 @@
+R=1.8 m2=1.0 box=10 N=1000 realizations=40
+k-space Z3, M=64 (infinite lattice): {'E_g': (np.float64(-0.0), np.float64(0.0473827)), 'T_2g': (np.float64(-0.0), np.float64(0.0140046))}
+k-space Z3, M=10 (same torus):     {'E_g': (np.float64(0.0), np.float64(0.0473827)), 'T_2g': (np.float64(0.0), np.float64(0.0140046))}
+real-space Z3 crystal:             {'E_g': (np.float64(-0.0), np.float64(0.0473827)), 'T_2g': (np.float64(-0.0), np.float64(0.0140046))}
+jittered Z3 a=0.25           E_g: E''/N = +0.023188 +- 0.000114 (per-real sd 0.00072) | T_2g: E''/N = +0.013214 +- 0.000133 (per-real sd 0.00084)   [11s]
+hard-core RSA d0=0.80        E_g: E''/N = +0.004090 +- 0.000128 (per-real sd 0.00081) | T_2g: E''/N = +0.004068 +- 0.000135 (per-real sd 0.00085)   [60s]
+uniform iid (Poisson-like)   E_g: E''/N = +0.000653 +- 0.000284 (per-real sd 0.00180) | T_2g: E''/N = +0.000467 +- 0.000219 (per-real sd 0.00138)   [13s]
+python3 c2_pointset_shear_modulus.py 10 40  84.80s user 4.79s system 105% cpu 1:25.17 total

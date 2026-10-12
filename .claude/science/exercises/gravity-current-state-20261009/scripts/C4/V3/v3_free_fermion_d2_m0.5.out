@@ -1,0 +1,18 @@
+d=2 N=24 L=24 m=0.5 ch=E: kernel transl. err H 0.0e+00 T1 0.0e+00 T2 0.0e+00; ranges T1 3 T2 5; herm err 0.0e+00; sea gap 0.500; <T1>/site -4.05e-18
+   paramagnetic (linear-only) Hessian/site = -5.45722815e-02
+   honest seagull <sea|T2|sea>/site       = +4.82719212e-02
+   f-sum seagull would be                  = +5.45722815e-02
+   full unitary Hessian/site               = -6.30036023e-03   (para+seagull = -6.30036021e-03)
+   Jacobian-anomaly prediction (same grid) = -6.30036022e-03;  continuum (L=64) -6.30362616e-03   [1s]
+d=2 N=24 L=24 m=0.5 ch=T2: kernel transl. err H 0.0e+00 T1 0.0e+00 T2 0.0e+00; ranges T1 2 T2 4; herm err 0.0e+00; sea gap 0.500; <T1>/site +1.83e-18
+   paramagnetic (linear-only) Hessian/site = -3.88166604e-02
+   honest seagull <sea|T2|sea>/site       = +3.88162448e-02
+   f-sum seagull would be                  = +3.88166604e-02
+   full unitary Hessian/site               = -4.15560919e-07   (para+seagull = -4.15557938e-07)
+   Jacobian-anomaly prediction (same grid) = -4.15554998e-07;  continuum (L=64) -2.96059473e-12   [1s]
+d=2 N=24 L=24 m=0.5 ch=D: kernel transl. err H 0.0e+00 T1 0.0e+00 T2 0.0e+00; ranges T1 3 T2 5; herm err 0.0e+00; sea gap 0.500; <T1>/site -1.18e-01
+   paramagnetic (linear-only) Hessian/site = -2.74844865e-02
+   honest seagull <sea|T2|sea>/site       = +4.82719212e-02
+   f-sum seagull would be                  = +2.74844865e-02
+   full unitary Hessian/site               = +2.07874348e-02   (para+seagull = +2.07874348e-02)
+   Jacobian-anomaly prediction (same grid) = +2.07874348e-02;  continuum (L=64) +2.07849264e-02   [2s]

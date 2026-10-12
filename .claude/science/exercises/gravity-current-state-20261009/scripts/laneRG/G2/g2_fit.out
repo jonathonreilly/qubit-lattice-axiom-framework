@@ -1,0 +1,20 @@
+g2_shells_KG_d2_m0.3_coul.out: exp*pow fit: rate 2.816/r (log10 1.223; sup rate 4ln2=2.773 / 1.204), power 0.51, rms 0.005 dec | pure exp: rate 2.801, rms 0.049 | pure power: r^-85.4, rms 8.69 dec
+    eps_D = 1e-10: r* = 7.3 (vacuum fit);  sup bound 16^-r: r* = 8.3
+    eps_D = 1e-50: r* = 40.4 (vacuum fit);  sup bound 16^-r: r* = 41.5
+    eps_D = 1e-100: r* = 81.4 (vacuum fit);  sup bound 16^-r: r* = 83.0
+g2_shells_KG_d2_m1_coul.out: exp*pow fit: rate 2.732/r (log10 1.187; sup rate 4ln2=2.773 / 1.204), power 0.43, rms 0.007 dec | pure exp: rate 2.720, rms 0.042 | pure power: r^-82.9, rms 8.43 dec
+    eps_D = 1e-10: r* = 7.6 (vacuum fit);  sup bound 16^-r: r* = 8.3
+    eps_D = 1e-50: r* = 41.6 (vacuum fit);  sup bound 16^-r: r* = 41.5
+    eps_D = 1e-100: r* = 83.8 (vacuum fit);  sup bound 16^-r: r* = 83.0
+g2_shells_KG_d2_m1_lind.out: exp*pow fit: rate 2.735/r (log10 1.188; sup rate 4ln2=2.773 / 1.204), power 0.57, rms 0.010 dec | pure exp: rate 2.718, rms 0.057 | pure power: r^-82.8, rms 8.44 dec
+    eps_D = 1e-10: r* = 8.7 (vacuum fit);  sup bound 16^-r: r* = 8.3
+    eps_D = 1e-50: r* = 42.7 (vacuum fit);  sup bound 16^-r: r* = 41.5
+    eps_D = 1e-100: r* = 84.9 (vacuum fit);  sup bound 16^-r: r* = 83.0
+g2_shells_KG_d3_m1_coul.out: exp*pow fit: rate 3.164/r (log10 1.374; sup rate 4ln2=2.773 / 1.204), power -0.38, rms 0.004 dec | pure exp: rate 3.175, rms 0.037 | pure power: r^-96.9, rms 9.76 dec
+    eps_D = 1e-10: r* = 6.6 (vacuum fit);  sup bound 16^-r: r* = 8.3
+    eps_D = 1e-50: r* = 35.6 (vacuum fit);  sup bound 16^-r: r* = 41.5
+    eps_D = 1e-100: r* = 71.9 (vacuum fit);  sup bound 16^-r: r* = 83.0
+g2_shells_TB_d2_coul.out: exp*pow fit: rate 2.773/r (log10 1.204; sup rate 4ln2=2.773 / 1.204), power 0.11, rms 0.005 dec | pure exp: rate 2.770, rms 0.012 | pure power: r^-84.5, rms 8.55 dec
+    eps_D = 1e-10: r* = 7.6 (vacuum fit);  sup bound 16^-r: r* = 8.3
+    eps_D = 1e-50: r* = 40.9 (vacuum fit);  sup bound 16^-r: r* = 41.5
+    eps_D = 1e-100: r* = 82.4 (vacuum fit);  sup bound 16^-r: r* = 83.0

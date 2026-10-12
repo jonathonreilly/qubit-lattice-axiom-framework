@@ -1,0 +1,23 @@
+(a) |O| = 24
+    O (24 proper cubic)      on all Sym(3) (dim 6): 3 invariant quadratic forms
+    O (24 proper cubic)      on traceless Sym(3) (dim 5): 2 invariant quadratic forms
+    SO(3) (random sample)    on all Sym(3) (dim 6): 2 invariant quadratic forms
+    SO(3) (random sample)    on traceless Sym(3) (dim 5): 1 invariant quadratic forms
+    => O: 3 on Sym(3) = 1 (trace^2) + 2 (traceless); no trace x traceless mixing (3 = 1 + 2).
+       SO(3): 2 = 1 (trace^2) + 1 (isotropic shear).
+
+(b) fluid lemma, E = f(det g):
+    E : det(exp(eP)) = 1;  d2E/de2|0 exp chart = 0;  linear chart = -Subs(Derivative(f(_xi_1), _xi_1), _xi_1, 1)
+    T2: det(exp(eP)) = 1;  d2E/de2|0 exp chart = 0;  linear chart = -Subs(Derivative(f(_xi_1), _xi_1), _xi_1, 1)
+    tadpole: dE/dh_ij at 0 = f'(1) delta_ij  => linear-chart TT Hessian = -tau (unit-Frobenius, d2/de2), isotropic; zero iff tadpole zero.
+
+(c) general cubic E in exp chart: E = tau*tr(h) + 1/2[lam (tr h)^2 + mE*|h_E|^2 + mT*|h_T|^2]
+    E : exp chart d2E = mu_E;  linear chart d2E = mu_E - tau
+    T2: exp chart d2E = mu_T;  linear chart d2E = mu_T - tau
+    SO(3)-scalar F(tr g, tr g^2, det g): E-Hessian - T2-Hessian = 0
+    => any chart change or rotation-scalar mechanism shifts (mu_E, mu_T) by (c, c); delta = mu_E - mu_T invariant.
+
+(d) refereed K3a'' c2/e^2 per cell (TEST_LOG.md:414) and W1 E-block (TEST_LOG.md:488):
+    K3a'' natural : mu_E=-0.0130346 mu_T=+0.0124652  delta=-0.0254998  opposite signs=True;  best common shift leaves max|mu| = 0.0127499 (= 0.98 of |mu_E|)
+    K3a'' universal: mu_E=-0.0130346 mu_T=+0.0133654  delta=-0.0264000  opposite signs=True;  best common shift leaves max|mu| = 0.0132000 (= 1.01 of |mu_E|)
+    No real c zeroes both (signs differ). A trace-only (A1) mechanism shifts neither at zero tadpole (Schur: no A1 x E or A1 x T2 bilinear under O).

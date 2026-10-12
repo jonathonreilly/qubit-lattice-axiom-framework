@@ -1,0 +1,16 @@
+W = delta + eps * w, w = timelike shell Q=-7 indicator
+   L=1: sites=    81, displacements used=    2, lambda_min=   -1.414, lambda_max=    1.414, PSD window for eps: [-0.7071, 0.7071]
+   L=2: sites=   625, displacements used=   98, lambda_min=   -9.592, lambda_max=    9.592, PSD window for eps: [-0.1043, 0.1043]
+   L=3: sites=  2401, displacements used=  194, lambda_min=  -24.642, lambda_max=   24.642, PSD window for eps: [-0.0406, 0.0406]
+   L=4: sites=  6561, displacements used=  290, lambda_min=  -46.156, lambda_max=   46.156, PSD window for eps: [-0.0217, 0.0217]
+W = delta + eps * w, w = spacelike shell Q=+1 indicator
+   L=1: sites=    81, displacements used=   30, lambda_min=   -6.135, lambda_max=    6.135, PSD window for eps: [-0.1630, 0.1630]
+   L=2: sites=   625, displacements used=  126, lambda_min=  -15.835, lambda_max=   15.835, PSD window for eps: [-0.0632, 0.0632]
+   L=3: sites=  2401, displacements used=  174, lambda_min=  -37.322, lambda_max=   37.322, PSD window for eps: [-0.0268, 0.0268]
+   L=4: sites=  6561, displacements used=  234, lambda_min=  -61.288, lambda_max=   61.288, PSD window for eps: [-0.0163, 0.0163]
+W = delta + eps * w, w = smooth in |Q|: exp(-|Q|/3), all orbits |Q|<=12
+   L=1: sites=    81, displacements used=  374, lambda_min=   -7.472, lambda_max=   23.137, PSD window for eps: [-0.0432, 0.1338]
+   L=2: sites=   625, displacements used= 1800, lambda_min=  -38.274, lambda_max=   80.222, PSD window for eps: [-0.0125, 0.0261]
+   L=3: sites=  2401, displacements used= 3608, lambda_min=  -57.662, lambda_max=  169.213, PSD window for eps: [-0.0059, 0.0173]
+   L=4: sites=  6561, displacements used= 6500, lambda_min=  -96.214, lambda_max=  284.947, PSD window for eps: [-0.0035, 0.0104]
+Reading: the PSD window shrinks toward {0} as the box grows (both extreme eigenvalues grow without visible bound), as Corollary N requires.

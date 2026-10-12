@@ -1,0 +1,82 @@
+
+== 6x4 PBC, N=3, m=0.5, interaction nn: one-body ||[h,P]||_F = 0.0e+00; P spectrum range [-0.433,0.433]
+  dim 2024; ||P||_op 1.299; ||[H_int,P]||_op 1.0607; on-shell (degenerate free levels) part ||Pi[H_int,P]Pi||_op 0.0000 (Frobenius 0.0000 of 18.9737)
+  V=  0.000: ||[H,P]||_op = 0.0000e+00  ||[H,P]||_F/sqrt(dim) = 0.0000e+00  dist(P, commutant(H))_HS/||P||_HS = 0.0000 (op-norm ratio 0.000); control dist(H0, commutant(H))_HS/||H0||_HS = 3.97e-15
+  V=  0.001: ||[H,P]||_op = 1.0607e-03  ||[H,P]||_F/sqrt(dim) = 4.2174e-04  dist(P, commutant(H))_HS/||P||_HS = 0.5032 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 3.05e-04
+  V=  0.010: ||[H,P]||_op = 1.0607e-02  ||[H,P]||_F/sqrt(dim) = 4.2174e-03  dist(P, commutant(H))_HS/||P||_HS = 0.5224 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 3.05e-03
+  V=  0.050: ||[H,P]||_op = 5.3033e-02  ||[H,P]||_F/sqrt(dim) = 2.1087e-02  dist(P, commutant(H))_HS/||P||_HS = 0.5262 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.52e-02
+  V=  0.200: ||[H,P]||_op = 2.1213e-01  ||[H,P]||_F/sqrt(dim) = 8.4348e-02  dist(P, commutant(H))_HS/||P||_HS = 0.5855 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 6.13e-02
+  V=  1.000: ||[H,P]||_op = 1.0607e+00  ||[H,P]||_F/sqrt(dim) = 4.2174e-01  dist(P, commutant(H))_HS/||P||_HS = 0.9230 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 2.97e-01
+
+== 6x4 PBC, N=2, m=0.5, interaction nn: one-body ||[h,P]||_F = 0.0e+00; P spectrum range [-0.433,0.433]
+  dim 276; ||P||_op 0.866; ||[H_int,P]||_op 0.6124; on-shell (degenerate free levels) part ||Pi[H_int,P]Pi||_op 0.0000 (Frobenius 0.0000 of 4.2426)
+  V=  0.000: ||[H,P]||_op = 0.0000e+00  ||[H,P]||_F/sqrt(dim) = 0.0000e+00  dist(P, commutant(H))_HS/||P||_HS = 0.0000 (op-norm ratio 0.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.86e-15
+  V=  0.001: ||[H,P]||_op = 6.1237e-04  ||[H,P]||_F/sqrt(dim) = 2.5538e-04  dist(P, commutant(H))_HS/||P||_HS = 0.0011 (op-norm ratio 0.002); control dist(H0, commutant(H))_HS/||H0||_HS = 2.21e-04
+  V=  0.010: ||[H,P]||_op = 6.1237e-03  ||[H,P]||_F/sqrt(dim) = 2.5538e-03  dist(P, commutant(H))_HS/||P||_HS = 0.0111 (op-norm ratio 0.023); control dist(H0, commutant(H))_HS/||H0||_HS = 2.21e-03
+  V=  0.050: ||[H,P]||_op = 3.0619e-02  ||[H,P]||_F/sqrt(dim) = 1.2769e-02  dist(P, commutant(H))_HS/||P||_HS = 0.0555 (op-norm ratio 0.114); control dist(H0, commutant(H))_HS/||H0||_HS = 1.10e-02
+  V=  0.200: ||[H,P]||_op = 1.2247e-01  ||[H,P]||_F/sqrt(dim) = 5.1075e-02  dist(P, commutant(H))_HS/||P||_HS = 0.2164 (op-norm ratio 0.441); control dist(H0, commutant(H))_HS/||H0||_HS = 4.38e-02
+  V=  1.000: ||[H,P]||_op = 6.1237e-01  ||[H,P]||_F/sqrt(dim) = 2.5538e-01  dist(P, commutant(H))_HS/||P||_HS = 0.6827 (op-norm ratio 1.102); control dist(H0, commutant(H))_HS/||H0||_HS = 1.99e-01
+
+== 6x4 PBC, N=3, m=0.0, interaction nn: one-body ||[h,P]||_F = 0.0e+00; P spectrum range [-0.433,0.433]
+  dim 2024; ||P||_op 1.299; ||[H_int,P]||_op 1.0607; on-shell (degenerate free levels) part ||Pi[H_int,P]Pi||_op 0.0000 (Frobenius 0.0000 of 18.9737)
+  V=  0.000: ||[H,P]||_op = 0.0000e+00  ||[H,P]||_F/sqrt(dim) = 0.0000e+00  dist(P, commutant(H))_HS/||P||_HS = 0.0000 (op-norm ratio 0.000); control dist(H0, commutant(H))_HS/||H0||_HS = 3.96e-15
+  V=  0.001: ||[H,P]||_op = 1.0607e-03  ||[H,P]||_F/sqrt(dim) = 4.2174e-04  dist(P, commutant(H))_HS/||P||_HS = 0.3693 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 3.39e-04
+  V=  0.010: ||[H,P]||_op = 1.0607e-02  ||[H,P]||_F/sqrt(dim) = 4.2174e-03  dist(P, commutant(H))_HS/||P||_HS = 0.3695 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 3.39e-03
+  V=  0.050: ||[H,P]||_op = 5.3033e-02  ||[H,P]||_F/sqrt(dim) = 2.1087e-02  dist(P, commutant(H))_HS/||P||_HS = 0.3744 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.70e-02
+  V=  0.200: ||[H,P]||_op = 2.1213e-01  ||[H,P]||_F/sqrt(dim) = 8.4348e-02  dist(P, commutant(H))_HS/||P||_HS = 0.4546 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 6.82e-02
+  V=  1.000: ||[H,P]||_op = 1.0607e+00  ||[H,P]||_F/sqrt(dim) = 4.2174e-01  dist(P, commutant(H))_HS/||P||_HS = 0.8918 (op-norm ratio 1.018); control dist(H0, commutant(H))_HS/||H0||_HS = 3.32e-01
+
+== 6x4 PBC, N=2, m=0.0, interaction nn: one-body ||[h,P]||_F = 0.0e+00; P spectrum range [-0.433,0.433]
+  dim 276; ||P||_op 0.866; ||[H_int,P]||_op 0.6124; on-shell (degenerate free levels) part ||Pi[H_int,P]Pi||_op 0.0000 (Frobenius 0.0000 of 4.2426)
+  V=  0.000: ||[H,P]||_op = 0.0000e+00  ||[H,P]||_F/sqrt(dim) = 0.0000e+00  dist(P, commutant(H))_HS/||P||_HS = 0.0000 (op-norm ratio 0.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.83e-15
+  V=  0.001: ||[H,P]||_op = 6.1237e-04  ||[H,P]||_F/sqrt(dim) = 2.5538e-04  dist(P, commutant(H))_HS/||P||_HS = 0.0009 (op-norm ratio 0.002); control dist(H0, commutant(H))_HS/||H0||_HS = 2.46e-04
+  V=  0.010: ||[H,P]||_op = 6.1237e-03  ||[H,P]||_F/sqrt(dim) = 2.5538e-03  dist(P, commutant(H))_HS/||P||_HS = 0.0095 (op-norm ratio 0.021); control dist(H0, commutant(H))_HS/||H0||_HS = 2.46e-03
+  V=  0.050: ||[H,P]||_op = 3.0619e-02  ||[H,P]||_F/sqrt(dim) = 1.2769e-02  dist(P, commutant(H))_HS/||P||_HS = 0.0474 (op-norm ratio 0.104); control dist(H0, commutant(H))_HS/||H0||_HS = 1.23e-02
+  V=  0.200: ||[H,P]||_op = 1.2247e-01  ||[H,P]||_F/sqrt(dim) = 5.1075e-02  dist(P, commutant(H))_HS/||P||_HS = 0.1878 (op-norm ratio 0.401); control dist(H0, commutant(H))_HS/||H0||_HS = 4.90e-02
+  V=  1.000: ||[H,P]||_op = 6.1237e-01  ||[H,P]||_F/sqrt(dim) = 2.5538e-01  dist(P, commutant(H))_HS/||P||_HS = 0.6357 (op-norm ratio 1.061); control dist(H0, commutant(H))_HS/||H0||_HS = 2.29e-01
+
+== 6x4 PBC, N=3, m=0.5, interaction cube: one-body ||[h,P]||_F = 0.0e+00; P spectrum range [-0.433,0.433]
+  dim 2024; ||P||_op 1.299; ||[H_int,P]||_op 4.4159; on-shell (degenerate free levels) part ||Pi[H_int,P]Pi||_op 0.0000 (Frobenius 0.0000 of 81.9756)
+  V=  0.000: ||[H,P]||_op = 0.0000e+00  ||[H,P]||_F/sqrt(dim) = 0.0000e+00  dist(P, commutant(H))_HS/||P||_HS = 0.0000 (op-norm ratio 0.000); control dist(H0, commutant(H))_HS/||H0||_HS = 3.97e-15
+  V=  0.001: ||[H,P]||_op = 4.4159e-03  ||[H,P]||_F/sqrt(dim) = 1.8221e-03  dist(P, commutant(H))_HS/||P||_HS = 0.5223 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.22e-03
+  V=  0.010: ||[H,P]||_op = 4.4159e-02  ||[H,P]||_F/sqrt(dim) = 1.8221e-02  dist(P, commutant(H))_HS/||P||_HS = 0.5258 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.22e-02
+  V=  0.050: ||[H,P]||_op = 2.2079e-01  ||[H,P]||_F/sqrt(dim) = 9.1107e-02  dist(P, commutant(H))_HS/||P||_HS = 0.6068 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 6.14e-02
+  V=  0.200: ||[H,P]||_op = 8.8318e-01  ||[H,P]||_F/sqrt(dim) = 3.6443e-01  dist(P, commutant(H))_HS/||P||_HS = 0.9319 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 2.36e-01
+  V=  1.000: ||[H,P]||_op = 4.4159e+00  ||[H,P]||_F/sqrt(dim) = 1.8221e+00  dist(P, commutant(H))_HS/||P||_HS = 0.9896 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 7.38e-01
+
+== 6x4 PBC, N=2, m=0.5, interaction cube: one-body ||[h,P]||_F = 0.0e+00; P spectrum range [-0.433,0.433]
+  dim 276; ||P||_op 0.866; ||[H_int,P]||_op 2.4495; on-shell (degenerate free levels) part ||Pi[H_int,P]Pi||_op 0.0000 (Frobenius 0.0000 of 18.3303)
+  V=  0.000: ||[H,P]||_op = 0.0000e+00  ||[H,P]||_F/sqrt(dim) = 0.0000e+00  dist(P, commutant(H))_HS/||P||_HS = 0.0000 (op-norm ratio 0.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.86e-15
+  V=  0.001: ||[H,P]||_op = 2.4495e-03  ||[H,P]||_F/sqrt(dim) = 1.1034e-03  dist(P, commutant(H))_HS/||P||_HS = 0.0053 (op-norm ratio 0.009); control dist(H0, commutant(H))_HS/||H0||_HS = 8.83e-04
+  V=  0.010: ||[H,P]||_op = 2.4495e-02  ||[H,P]||_F/sqrt(dim) = 1.1034e-02  dist(P, commutant(H))_HS/||P||_HS = 0.0525 (op-norm ratio 0.091); control dist(H0, commutant(H))_HS/||H0||_HS = 8.83e-03
+  V=  0.050: ||[H,P]||_op = 1.2247e-01  ||[H,P]||_F/sqrt(dim) = 5.5168e-02  dist(P, commutant(H))_HS/||P||_HS = 0.2524 (op-norm ratio 0.440); control dist(H0, commutant(H))_HS/||H0||_HS = 4.36e-02
+  V=  0.200: ||[H,P]||_op = 4.8990e-01  ||[H,P]||_F/sqrt(dim) = 2.2067e-01  dist(P, commutant(H))_HS/||P||_HS = 0.7174 (op-norm ratio 1.128); control dist(H0, commutant(H))_HS/||H0||_HS = 1.60e-01
+  V=  1.000: ||[H,P]||_op = 2.4495e+00  ||[H,P]||_F/sqrt(dim) = 1.1034e+00  dist(P, commutant(H))_HS/||P||_HS = 0.8752 (op-norm ratio 1.144); control dist(H0, commutant(H))_HS/||H0||_HS = 5.41e-01
+
+== 6x4 PBC, N=3, m=0.0, interaction cube: one-body ||[h,P]||_F = 0.0e+00; P spectrum range [-0.433,0.433]
+  dim 2024; ||P||_op 1.299; ||[H_int,P]||_op 4.4159; on-shell (degenerate free levels) part ||Pi[H_int,P]Pi||_op 0.0000 (Frobenius 0.0000 of 81.9756)
+  V=  0.000: ||[H,P]||_op = 0.0000e+00  ||[H,P]||_F/sqrt(dim) = 0.0000e+00  dist(P, commutant(H))_HS/||P||_HS = 0.0000 (op-norm ratio 0.000); control dist(H0, commutant(H))_HS/||H0||_HS = 3.96e-15
+  V=  0.001: ||[H,P]||_op = 4.4159e-03  ||[H,P]||_F/sqrt(dim) = 1.8221e-03  dist(P, commutant(H))_HS/||P||_HS = 0.4141 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.36e-03
+  V=  0.010: ||[H,P]||_op = 4.4159e-02  ||[H,P]||_F/sqrt(dim) = 1.8221e-02  dist(P, commutant(H))_HS/||P||_HS = 0.4185 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.36e-02
+  V=  0.050: ||[H,P]||_op = 2.2079e-01  ||[H,P]||_F/sqrt(dim) = 9.1107e-02  dist(P, commutant(H))_HS/||P||_HS = 0.5157 (op-norm ratio 1.169); control dist(H0, commutant(H))_HS/||H0||_HS = 6.83e-02
+  V=  0.200: ||[H,P]||_op = 8.8318e-01  ||[H,P]||_F/sqrt(dim) = 3.6443e-01  dist(P, commutant(H))_HS/||P||_HS = 0.8978 (op-norm ratio 1.094); control dist(H0, commutant(H))_HS/||H0||_HS = 2.75e-01
+  V=  1.000: ||[H,P]||_op = 4.4159e+00  ||[H,P]||_F/sqrt(dim) = 1.8221e+00  dist(P, commutant(H))_HS/||P||_HS = 0.9820 (op-norm ratio 1.020); control dist(H0, commutant(H))_HS/||H0||_HS = 7.67e-01
+
+== 6x4 PBC, N=2, m=0.0, interaction cube: one-body ||[h,P]||_F = 0.0e+00; P spectrum range [-0.433,0.433]
+  dim 276; ||P||_op 0.866; ||[H_int,P]||_op 2.4495; on-shell (degenerate free levels) part ||Pi[H_int,P]Pi||_op 0.0000 (Frobenius 0.0000 of 18.3303)
+  V=  0.000: ||[H,P]||_op = 0.0000e+00  ||[H,P]||_F/sqrt(dim) = 0.0000e+00  dist(P, commutant(H))_HS/||P||_HS = 0.0000 (op-norm ratio 0.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.83e-15
+  V=  0.001: ||[H,P]||_op = 2.4495e-03  ||[H,P]||_F/sqrt(dim) = 1.1034e-03  dist(P, commutant(H))_HS/||P||_HS = 0.0045 (op-norm ratio 0.008); control dist(H0, commutant(H))_HS/||H0||_HS = 9.84e-04
+  V=  0.010: ||[H,P]||_op = 2.4495e-02  ||[H,P]||_F/sqrt(dim) = 1.1034e-02  dist(P, commutant(H))_HS/||P||_HS = 0.0446 (op-norm ratio 0.083); control dist(H0, commutant(H))_HS/||H0||_HS = 9.84e-03
+  V=  0.050: ||[H,P]||_op = 1.2247e-01  ||[H,P]||_F/sqrt(dim) = 5.5168e-02  dist(P, commutant(H))_HS/||P||_HS = 0.2164 (op-norm ratio 0.402); control dist(H0, commutant(H))_HS/||H0||_HS = 4.90e-02
+  V=  0.200: ||[H,P]||_op = 4.8990e-01  ||[H,P]||_F/sqrt(dim) = 2.2067e-01  dist(P, commutant(H))_HS/||P||_HS = 0.6496 (op-norm ratio 1.043); control dist(H0, commutant(H))_HS/||H0||_HS = 1.90e-01
+  V=  1.000: ||[H,P]||_op = 2.4495e+00  ||[H,P]||_F/sqrt(dim) = 1.1034e+00  dist(P, commutant(H))_HS/||P||_HS = 0.8530 (op-norm ratio 1.111); control dist(H0, commutant(H))_HS/||H0||_HS = 5.84e-01
+
+== 6x6 PBC, N=2, m=0.5, interaction nn: one-body ||[h,P]||_F = 0.0e+00; P spectrum range [-0.433,0.433]
+  dim 630; ||P||_op 0.866; ||[H_int,P]||_op 0.6124; on-shell (degenerate free levels) part ||Pi[H_int,P]Pi||_op 0.2041 (Frobenius 1.2771 of 5.1962)
+  V=  0.000: ||[H,P]||_op = 0.0000e+00  ||[H,P]||_F/sqrt(dim) = 0.0000e+00  dist(P, commutant(H))_HS/||P||_HS = 0.0000 (op-norm ratio 0.000); control dist(H0, commutant(H))_HS/||H0||_HS = 2.37e-15
+  V=  0.001: ||[H,P]||_op = 6.1237e-04  ||[H,P]||_F/sqrt(dim) = 2.0702e-04  dist(P, commutant(H))_HS/||P||_HS = 0.6769 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.85e-04
+  V=  0.010: ||[H,P]||_op = 6.1237e-03  ||[H,P]||_F/sqrt(dim) = 2.0702e-03  dist(P, commutant(H))_HS/||P||_HS = 0.6770 (op-norm ratio 1.000); control dist(H0, commutant(H))_HS/||H0||_HS = 1.85e-03
+  V=  0.050: ||[H,P]||_op = 3.0619e-02  ||[H,P]||_F/sqrt(dim) = 1.0351e-02  dist(P, commutant(H))_HS/||P||_HS = 0.6776 (op-norm ratio 0.999); control dist(H0, commutant(H))_HS/||H0||_HS = 9.23e-03
+  V=  0.200: ||[H,P]||_op = 1.2247e-01  ||[H,P]||_F/sqrt(dim) = 4.1404e-02  dist(P, commutant(H))_HS/||P||_HS = 0.6872 (op-norm ratio 0.986); control dist(H0, commutant(H))_HS/||H0||_HS = 3.67e-02
+  V=  1.000: ||[H,P]||_op = 6.1237e-01  ||[H,P]||_F/sqrt(dim) = 2.0702e-01  dist(P, commutant(H))_HS/||P||_HS = 0.7780 (op-norm ratio 1.118); control dist(H0, commutant(H))_HS/||H0||_HS = 1.64e-01
+[8x4 N=3 run stopped by the probe (memory: dense 4960-dim complex ED); 6x4 and 6x6 results above are complete]

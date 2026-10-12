@@ -1,0 +1,18 @@
+T=1.0: a_1 (quadrature, node+interior+grouped) = 3.94093 +- 0.00867 ; node-only a_1^nn = 0.09986 ; Volterra mean H(T) = -0.14476  (16s)
+   eps=0.5      R= 40000 mean Hhat = -0.14291 +- 0.01390   Var[Hhat]/eps = 15.4678 +- 0.1218  (17s)
+   eps=0.25     R= 40000 mean Hhat = -0.13522 +- 0.00739   Var[Hhat]/eps = 8.7290 +- 0.0289  (18s)
+   eps=0.125    R= 30000 mean Hhat = -0.14712 +- 0.00504   Var[Hhat]/eps = 6.1078 +- 0.0240  (18s)
+   eps=0.0625   R= 20000 mean Hhat = -0.14595 +- 0.00394   Var[Hhat]/eps = 4.9611 +- 0.0459  (19s)
+   eps=0.03125  R= 12000 mean Hhat = -0.14831 +- 0.00342   Var[Hhat]/eps = 4.5032 +- 0.0618  (19s)
+   eps=0.015625 R=  6000 mean Hhat = -0.14847 +- 0.00326   Var[Hhat]/eps = 4.0883 +- 0.0809  (19s)
+   fit over the 3 smallest eps: linear intercept 3.8967   [compare a_1 = 3.9409 +- 0.0087]
+   fit over the 4 smallest eps: linear intercept 3.8699 ; quadratic intercept 3.8893   [compare a_1 = 3.9409 +- 0.0087]
+T=1.5: a_1 (quadrature, node+interior+grouped) = 3.01133 +- 0.03061 ; node-only a_1^nn = 0.24323 ; Volterra mean H(T) = -0.10191  (35s)
+   eps=0.5      R= 40000 mean Hhat = -0.09609 +- 0.02371   Var[Hhat]/eps = 44.9635 +- 0.2124  (36s)
+   eps=0.25     R= 40000 mean Hhat = -0.09100 +- 0.00743   Var[Hhat]/eps = 8.8419 +- 0.0405  (37s)
+   eps=0.125    R= 30000 mean Hhat = -0.09953 +- 0.00422   Var[Hhat]/eps = 4.2836 +- 0.0282  (38s)
+   eps=0.0625   R= 20000 mean Hhat = -0.10544 +- 0.00323   Var[Hhat]/eps = 3.3332 +- 0.0282  (39s)
+   eps=0.03125  R= 12000 mean Hhat = -0.10132 +- 0.00284   Var[Hhat]/eps = 3.1003 +- 0.0361  (40s)
+   eps=0.015625 R=  6000 mean Hhat = -0.10351 +- 0.00280   Var[Hhat]/eps = 3.0181 +- 0.0498  (40s)
+   fit over the 3 smallest eps: linear intercept 2.8937   [compare a_1 = 3.0113 +- 0.0306]
+   fit over the 4 smallest eps: linear intercept 2.6711 ; quadratic intercept 3.0012   [compare a_1 = 3.0113 +- 0.0306]

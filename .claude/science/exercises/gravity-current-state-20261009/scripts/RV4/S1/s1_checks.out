@@ -1,0 +1,68 @@
+=== 0. reproduce F(1) (P1/V3 referee: 1.970388642e-3) ===
+48 (np.float64(0.0019703886418785317), np.float64(-0.0))
+64 (np.float64(0.001970388641878533), np.float64(-0.0))
+96 (np.float64(0.001970388641878532), np.float64(-0.0))
+
+=== 1. Theorem A, Fourier rank check: n (x) a + a (x) n traceless-sym = 0  => a = 0 for n != 0 ===
+d=2: minimal rank over n in [-3,3]^d minus 0 = 2 (= d means trivial kernel)
+d=3: minimal rank over n in [-3,3]^d minus 0 = 3 (= d means trivial kernel)
+gradient case p = grad u: mode n contributes u_n (n n^T)_traceless, zero iff n = 0 (d>=2).
+Lattice form: E_g protected pointwise <=> only |n_x|=|n_y|=|n_z| modes (body-diagonal hopping);
+              T_2g protected pointwise <=> only modes with one nonzero component (axis hopping);
+              both <=> u constant.
+
+=== 2. the two pointwise-protected classes and their unprotected channel (m = 1) ===
+axis-only (separable nn): muE, muT2 = (np.float64(0.001970388641878533), np.float64(-0.0))
+body-diagonal-only (u = 1 - cos x cos y cos z): muE, muT2 = (np.float64(3.193346304787127e-21), np.float64(0.0006011748785883808))
+exact body-diagonal symbol: muE, muT2, min u = (np.float64(-0.0), np.float64(0.0006011748823967418), np.float64(0.0036092803549254704))
+  note: zeros of u at (0,0,0),(pi,pi,0),(pi,0,pi),(0,pi,pi): 4 decoupled sublattices (doubling)
+
+=== 3. SLAC as limit of local symbols (separable, g_r -> k^2/2 sawtooth-squared) ===
+m=1.0: limit formula (any bounded regularization) = 1.483283e-02;  naive open-cube SLAC value = 4.170423e-01
+   r=  4 N=64: lanczos muE = 9.690198e-03   fejer muE = 6.699330e-03
+   r=  8 N=96: lanczos muE = 1.186339e-02   fejer muE = 9.649531e-03
+   r= 16 N=192: lanczos muE = 1.322791e-02   fejer muE = 1.194023e-02
+   r= 32 N=384: lanczos muE = 1.399714e-02   fejer muE = 1.338907e-02
+   r= 64 N=768: lanczos muE = 1.440623e-02   fejer muE = 1.418111e-02
+m=0.5: limit formula (any bounded regularization) = 1.590128e-02;  naive open-cube SLAC value = 4.278764e-01
+   r=  4 N=64: lanczos muE = 1.064248e-02   fejer muE = 7.521959e-03
+   r=  8 N=96: lanczos muE = 1.287469e-02   fejer muE = 1.063201e-02
+   r= 16 N=192: lanczos muE = 1.426772e-02   fejer muE = 1.300758e-02
+   r= 32 N=384: lanczos muE = 1.505128e-02   fejer muE = 1.448881e-02
+   r= 64 N=768: lanczos muE = 1.546753e-02   fejer muE = 1.528545e-02
+  nn reference g = 1 - cos k (should equal F(1)): 0.0019703886418785325
+
+=== 4. tuning: 2-parameter non-separable family, zero both channels at m = 1 ===
+root (a*, b*) = [-0.3665154948  0.0136098133]  residual at N=48: (np.float64(7.599133527353558e-05), np.float64(-7.619776890135909e-05))  at N=96: (np.float64(7.599133527353529e-05), np.float64(-7.619776890135908e-05))
+min u on grid (positivity): 0.00641837690324606
+mass dependence of the tuned symbol (muE, muT2):
+   m=0.1: (np.float64(0.00022853356638514967), np.float64(-9.22946040416025e-05))   fermion-sign same symbol: (np.float64(-0.00022853356638514967), np.float64(9.22946040416025e-05))
+   m=0.3: (np.float64(0.00020468117321114504), np.float64(-9.05265286388038e-05))   fermion-sign same symbol: (np.float64(-0.00020468117321114504), np.float64(9.05265286388038e-05))
+   m=0.5: (np.float64(0.00016747395122176896), np.float64(-8.733382514482581e-05))   fermion-sign same symbol: (np.float64(-0.00016747395122176896), np.float64(8.733382514482581e-05))
+   m=1.0: (np.float64(7.599133527353568e-05), np.float64(-7.619776890135908e-05))   fermion-sign same symbol: (np.float64(-7.599133527353568e-05), np.float64(7.619776890135908e-05))
+   m=2.0: (np.float64(-5.190178737139885e-06), np.float64(-5.499020691871572e-05))   fermion-sign same symbol: (np.float64(5.190178737139885e-06), np.float64(5.499020691871572e-05))
+   m=4.0: (np.float64(-2.3138761742674263e-05), np.float64(-3.236697045844951e-05))   fermion-sign same symbol: (np.float64(2.3138761742674263e-05), np.float64(3.236697045844951e-05))
+TRIM Hessians for tuned symbol (van Hove argument needs Hess ~ I at every critical point):
+   G: u=0.0000 Hess eig = [1. 1. 1.]  psi_E(diag(1,-1,0)) = +0.0000  psi_E(diag(1,1,-2)/sqrt3) = +0.0000
+   X: u=0.5339 Hess eig = [0.4660619794 1.0272196266 1.0272196266]  psi_E(diag(1,-1,0)) = -0.5612  psi_E(diag(1,1,-2)/sqrt3) = -0.3240
+   M: u=1.1223 Hess eig = [0.4388423528 0.4388423528 1.0544392533]  psi_E(diag(1,-1,0)) = +0.0000  psi_E(diag(1,1,-2)/sqrt3) = -0.7108
+   R: u=1.7651 Hess eig = [0.4116227261 0.4116227261 0.4116227261]  psi_E(diag(1,-1,0)) = +0.0000  psi_E(diag(1,1,-2)/sqrt3) = +0.0000
+
+=== 5. second-order DOS change nu_h = pushforward of J"_h dk under u (must vanish for mass-independent mu=0) ===
+nn     E : C(E) = -(1/4)<phi psi 1[u<E]> at 8 levels: [8.892e-04 8.185e-03 2.092e-02 2.342e-02 2.092e-02 8.185e-03 8.892e-04
+ 6.168e-18]
+nn     T2: C(E) = -(1/4)<phi psi 1[u<E]> at 8 levels: [-0. -0. -0. -0. -0. -0. -0. -0.]
+tuned  E : C(E) = -(1/4)<phi psi 1[u<E]> at 8 levels: [ 7.357e-05  6.365e-04  1.316e-03  1.863e-03  2.382e-03 -1.023e-03
+ -7.939e-04 -2.778e-04]
+tuned  T2: C(E) = -(1/4)<phi psi 1[u<E]> at 8 levels: [-7.420e-07 -8.506e-06 -3.443e-05 -8.647e-05 -1.654e-04 -2.395e-04
+ -2.751e-04 -2.778e-04]
+
+=== 6. density-weight family: transport eps as weight-w density, mu^(w) = (1-w) mu_0 - w(1-w) <eps (div v)^2> ===
+  w=0.0: muE = +1.970389e-03   (muT2 = 0 for separable, all w)
+  w=0.25: muE = -6.003172e-02   (muT2 = 0 for separable, all w)
+  w=0.5: muE = -8.102749e-02   (muT2 = 0 for separable, all w)
+  w=0.75: muE = -6.101692e-02   (muT2 = 0 for separable, all w)
+  w=1.0: muE = +0.000000e+00   (muT2 = 0 for separable, all w)
+  root of mu^(w)=0 in (0,1): 0.005970492516326183  (a tuned weight, mass dependent)
+  linear term of weight-w transport: T1 = -(L_v eps) - w eps div v; extra per-quantum symbol -w omega (h:Hess u)/2 is not
+  a conserved-stress term (nonzero uniform total) -> breaks RN-L1 exact stress unless w = 0 on the operator.

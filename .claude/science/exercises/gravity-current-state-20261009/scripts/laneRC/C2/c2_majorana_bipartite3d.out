@@ -1,0 +1,10 @@
+(a) honeycomb L=6 random sector: B_build = 1.000000 * (A^2 o D), residual 0.00e+00
+d=2 L= 6 N=   36  uniform: r=1.0000 comm=0.0e+00 | random u: r=5.71e-31 max|<v|iB|v>| (rel)=3.2e-15
+d=2 L= 8 N=   64  uniform: r=1.0000 comm=0.0e+00 | random u: r=8.63e-31 max|<v|iB|v>| (rel)=7.2e-15
+d=2 L=12 N=  144  uniform: r=1.0000 comm=0.0e+00 | random u: r=1.48e-30 max|<v|iB|v>| (rel)=5.2e-15
+d=2 L=16 N=  256  uniform: r=1.0000 comm=0.0e+00 | random u: r=3.77e-30 max|<v|iB|v>| (rel)=1.7e-14
+d=2 L=20 N=  400  uniform: r=1.0000 comm=0.0e+00 | random u: r=5.02e-30 max|<v|iB|v>| (rel)=2.6e-14
+d=3 L= 4 N=   64  uniform: r=1.0000 comm=0.0e+00 | random u: r=2.88e-02 max|<v|iB|v>| (rel)=3.8e-15
+d=3 L= 6 N=  216  uniform: r=1.0000 comm=0.0e+00 | random u: r=2.80e-30 max|<v|iB|v>| (rel)=1.0e-14
+d=3 L= 8 N=  512  uniform: r=1.0000 comm=0.0e+00 | random u: r=5.43e-30 max|<v|iB|v>| (rel)=2.3e-14
+d=3 L=10 N= 1000  uniform: r=1.0000 comm=0.0e+00 | random u: r=1.08e-29 max|<v|iB|v>| (rel)=3.2e-14

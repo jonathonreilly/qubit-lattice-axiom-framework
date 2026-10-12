@@ -1,0 +1,3 @@
+(d) N=400: TT stress per site mean +0.0021 sd 0.0166  sd*sqrtN 0.331 +- 0.031  [3s]
+(d) N=900: TT stress per site mean -0.0009 sd 0.0114  sd*sqrtN 0.343 +- 0.039  [9s]
+(d) N=1600: TT stress per site mean -0.0005 sd 0.0086  sd*sqrtN 0.344 +- 0.051  [32s]

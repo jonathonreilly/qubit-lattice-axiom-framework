@@ -1,0 +1,6 @@
+d=2 zero[M1.0]: A=-0.37542 B=-0.98172  (3A-B)=-0.14453  | rms(p_x - sin kx)/rms(sin kx) = 0.0897  | sum|non-separable coeffs| = 0.1178
+d=2 zero[M0.3]: A=-0.29857 B=-1.64235  (3A-B)=+0.74663  | rms(p_x - sin kx)/rms(sin kx) = 0.0988  | sum|non-separable coeffs| = 0.1878
+d=2 zero[both]: A=-0.35887 B=-4.67642  (3A-B)=+3.59981  | rms(p_x - sin kx)/rms(sin kx) = 0.1278  | sum|non-separable coeffs| = 0.4023
+d=3 zero[M1.0]: A=-0.37137 B=-0.64748  (3A-B)=-0.46664  | rms(p_x - sin kx)/rms(sin kx) = 0.0735  | sum|non-separable coeffs| = 0.0842
+d=3 zero[M0.3]: A=-0.37628 B=-0.92643  (3A-B)=-0.20240  | rms(p_x - sin kx)/rms(sin kx) = 0.0846  | sum|non-separable coeffs| = 0.1249
+d=3 zero[both]: A=+0.24277 B=-5.29154  (3A-B)=+6.01985  | rms(p_x - sin kx)/rms(sin kx) = 0.1291  | sum|non-separable coeffs| = 0.8113

@@ -1,0 +1,8 @@
+lambda=0.0: pooled tail C=+1.0000 +/- 0.0000; mean-of-ratios=+1.0000 +/- 0.0000; max drift=3.71e-05; J0^2 range=[3.6,386]
+lambda=0.5: pooled tail C=+0.5859 +/- 0.0509; mean-of-ratios=+0.7540 +/- 0.1323; max drift=5.24e-05; J0^2 range=[5.38,388]
+lambda=2.0: pooled tail C=+0.0294 +/- 0.1296; mean-of-ratios=+0.0187 +/- 0.1214; max drift=5.89e-05; J0^2 range=[26.5,259]
+lambda=4.0: pooled tail C=+0.1088 +/- 0.0816; mean-of-ratios=+0.1753 +/- 0.1096; max drift=4.66e-05; J0^2 range=[13.4,528]
+worker-seed replay with the correct pooled estimator:
+lambda=0.0: pooled tail C=+1.0000 +/- 0.0000; mean-of-ratios=+1.0000 +/- 0.0000
+lambda=2.0: pooled tail C=+0.0502 +/- 0.0711; mean-of-ratios=+0.1201 +/- 0.1067
+lambda=4.0: pooled tail C=-0.0651 +/- 0.0617; mean-of-ratios=-0.1609 +/- 0.0815

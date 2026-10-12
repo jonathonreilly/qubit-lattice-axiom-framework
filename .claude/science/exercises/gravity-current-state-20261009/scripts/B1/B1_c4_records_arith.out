@@ -1,0 +1,4 @@
+(i) event rate density = 4.40e+147 /m^3/s; per nucleon volume: 1.09e+103 /s
+    per kg of matter (~6e26 nucleons, nucleon volumes only): 6.55e+129 /s
+    => disturbance probability per event must be <~ 3.1e-135 to respect the map's 2e-5 /kg/s birth-rate bound (bound quoted, not re-derived)
+(ii) solar-mass hole: r_s = 2954 m, S_BH = A/4l_P^2 = 1.05e+77, Planck cells inside = 2.56e+115, ratio = 2.4e+38

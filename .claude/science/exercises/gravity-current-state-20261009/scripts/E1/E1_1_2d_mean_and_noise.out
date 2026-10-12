@@ -1,0 +1,93 @@
+== (b) mean dispersion b(p) = <B e^{ipy}>(x) e^{-ipx}/(4 rho_k), two scales ==
+   species A: l_k = 1 (eps_A = 1/64); species B: l_k = 2 on the same sprinkling
+   (eps_B = eps_A/4 in its own units).  Expect b depends on p^2 only, b ~ -p^2/4
+ l_k=1.0: N_targets=10302 realizations=160 (se from realizations)
+   timelike  |p|=0.25 eta=0.0 p^2=-0.062  b=+0.0153-0.0006i (se 0.0030)  cont(finite)=+0.0169+0.0015i  cont(inf)=+0.0170+0.0015i  -p^2/4=+0.0156
+   spacelike |p|=0.25 eta=0.0 p^2=+0.062  b=-0.0156-0.0005i (se 0.0029)  cont(finite)=-0.0142+0.0000i  cont(inf)=-0.0142+0.0000i  -p^2/4=-0.0156
+   timelike  |p|=0.25 eta=0.5 p^2=-0.062  b=+0.0158+0.0002i (se 0.0029)  cont(finite)=+0.0169+0.0016i  cont(inf)=+0.0170+0.0015i  -p^2/4=+0.0156
+   spacelike |p|=0.25 eta=0.5 p^2=+0.062  b=-0.0150-0.0003i (se 0.0029)  cont(finite)=-0.0142-0.0002i  cont(inf)=-0.0142-0.0000i  -p^2/4=-0.0156
+   timelike  |p|=0.25 eta=1.0 p^2=-0.063  b=+0.0149+0.0018i (se 0.0028)  cont(finite)=+0.0170+0.0020i  cont(inf)=+0.0170+0.0015i  -p^2/4=+0.0156
+   spacelike |p|=0.25 eta=1.0 p^2=+0.063  b=-0.0159+0.0003i (se 0.0028)  cont(finite)=-0.0140-0.0005i  cont(inf)=-0.0142+0.0000i  -p^2/4=-0.0156
+   timelike  |p|=0.50 eta=0.0 p^2=-0.250  b=+0.0717+0.0203i (se 0.0029)  cont(finite)=+0.0722+0.0216i  cont(inf)=+0.0720+0.0217i  -p^2/4=+0.0625
+   spacelike |p|=0.50 eta=0.0 p^2=+0.250  b=-0.0472+0.0005i (se 0.0028)  cont(finite)=-0.0479+0.0000i  cont(inf)=-0.0481-0.0000i  -p^2/4=-0.0625
+   timelike  |p|=0.50 eta=0.5 p^2=-0.250  b=+0.0689+0.0194i (se 0.0029)  cont(finite)=+0.0716+0.0214i  cont(inf)=+0.0720+0.0217i  -p^2/4=+0.0625
+   spacelike |p|=0.50 eta=0.5 p^2=+0.250  b=-0.0502+0.0008i (se 0.0028)  cont(finite)=-0.0485+0.0002i  cont(inf)=-0.0481-0.0000i  -p^2/4=-0.0625
+   timelike  |p|=0.50 eta=1.0 p^2=-0.250  b=+0.0706+0.0199i (se 0.0028)  cont(finite)=+0.0706+0.0224i  cont(inf)=+0.0720+0.0217i  -p^2/4=+0.0625
+   spacelike |p|=0.50 eta=1.0 p^2=+0.250  b=-0.0487-0.0013i (se 0.0026)  cont(finite)=-0.0491-0.0011i  cont(inf)=-0.0481-0.0000i  -p^2/4=-0.0625
+ l_k=2.0: N_targets=10302 realizations=160 (se from realizations)
+   timelike  |p|=0.25 eta=0.0 p^2=-0.062  b=+0.0171+0.0048i (se 0.0006)  cont(finite)=+0.0176+0.0053i  cont(inf)=+0.0180+0.0054i  -p^2/4=+0.0156
+   spacelike |p|=0.25 eta=0.0 p^2=+0.062  b=-0.0129+0.0001i (se 0.0005)  cont(finite)=-0.0124+0.0000i  cont(inf)=-0.0120-0.0000i  -p^2/4=-0.0156
+   timelike  |p|=0.25 eta=0.5 p^2=-0.062  b=+0.0171+0.0051i (se 0.0006)  cont(finite)=+0.0176+0.0058i  cont(inf)=+0.0180+0.0054i  -p^2/4=+0.0156
+   spacelike |p|=0.25 eta=0.5 p^2=+0.062  b=-0.0129-0.0008i (se 0.0005)  cont(finite)=-0.0122-0.0006i  cont(inf)=-0.0120-0.0000i  -p^2/4=-0.0156
+   timelike  |p|=0.25 eta=1.0 p^2=-0.063  b=+0.0175+0.0065i (se 0.0006)  cont(finite)=+0.0178+0.0075i  cont(inf)=+0.0180+0.0054i  -p^2/4=+0.0156
+   spacelike |p|=0.25 eta=1.0 p^2=+0.063  b=-0.0115-0.0022i (se 0.0005)  cont(finite)=-0.0111-0.0016i  cont(inf)=-0.0120-0.0000i  -p^2/4=-0.0156
+   timelike  |p|=0.50 eta=0.0 p^2=-0.250  b=+0.0545+0.0585i (se 0.0006)  cont(finite)=+0.0548+0.0594i  cont(inf)=+0.0539+0.0595i  -p^2/4=+0.0625
+   spacelike |p|=0.50 eta=0.0 p^2=+0.250  b=-0.0334-0.0001i (se 0.0005)  cont(finite)=-0.0330+0.0000i  cont(inf)=-0.0337-0.0000i  -p^2/4=-0.0625
+   timelike  |p|=0.50 eta=0.5 p^2=-0.250  b=+0.0532+0.0569i (se 0.0007)  cont(finite)=+0.0529+0.0579i  cont(inf)=+0.0539+0.0595i  -p^2/4=+0.0625
+   spacelike |p|=0.50 eta=0.5 p^2=+0.250  b=-0.0354-0.0000i (se 0.0005)  cont(finite)=-0.0353+0.0004i  cont(inf)=-0.0337+0.0000i  -p^2/4=-0.0625
+   timelike  |p|=0.50 eta=1.0 p^2=-0.250  b=+0.0483+0.0592i (se 0.0007)  cont(finite)=+0.0475+0.0594i  cont(inf)=+0.0539+0.0595i  -p^2/4=+0.0625
+   spacelike |p|=0.50 eta=1.0 p^2=+0.250  b=-0.0344-0.0051i (se 0.0005)  cont(finite)=-0.0349-0.0050i  cont(inf)=-0.0337-0.0000i  -p^2/4=-0.0625
+   [236s]
+
+== (c1) element-wise noise of b1 = B_eps 1/(4 rho_k) at top elements ==
+   white/first-chaos prediction: Var b1 = eps*S(U), S(U) = int g^2 over past diamond
+ eps=1.00000 U=  4.0 n=  2336 <b1>=-0.0137 Var=9.41933  eps*S(U)=0.86786  ratio=10.854  <A^2>=10.01541
+ eps=1.00000 U=  8.0 n=  2535 <b1>=-0.1288 Var=20.28627  eps*S(U)=1.12779  ratio=17.988  <A^2>=21.00079
+ eps=1.00000 U= 16.0 n=  2484 <b1>=+0.0475 Var=29.71232  eps*S(U)=1.38772  ratio=21.411  <A^2>=30.21417
+ eps=1.00000 U= 32.0 n=  2419 <b1>=+0.1201 Var=39.46170  eps*S(U)=1.64765  ratio=23.950  <A^2>=38.73584
+ eps=0.25000 U=  4.0 n=   271 <b1>=+0.0280 Var=0.23621  eps*S(U)=0.21697  ratio=1.089  <A^2>=0.33835
+ eps=0.25000 U=  8.0 n=   258 <b1>=-0.0504 Var=0.36197  eps*S(U)=0.28195  ratio=1.284  <A^2>=0.47041
+ eps=0.25000 U= 16.0 n=   231 <b1>=-0.0254 Var=0.57957  eps*S(U)=0.34693  ratio=1.671  <A^2>=0.62259
+ eps=0.25000 U= 32.0 n=   244 <b1>=+0.0038 Var=0.62430  eps*S(U)=0.41191  ratio=1.516  <A^2>=0.73753
+ eps=0.06250 U=  4.0 n=   236 <b1>=-0.0046 Var=0.04940  eps*S(U)=0.05424  ratio=0.911  <A^2>=0.05906
+ eps=0.06250 U=  8.0 n=   253 <b1>=+0.0270 Var=0.06292  eps*S(U)=0.07049  ratio=0.893  <A^2>=0.07977
+ eps=0.06250 U= 16.0 n=   254 <b1>=+0.0068 Var=0.09411  eps*S(U)=0.08673  ratio=1.085  <A^2>=0.09991
+ eps=0.06250 U= 32.0 n=   235 <b1>=+0.0078 Var=0.09329  eps*S(U)=0.10298  ratio=0.906  <A^2>=0.11729
+ eps=0.01562 U=  4.0 n=   253 <b1>=-0.0178 Var=0.00814  eps*S(U)=0.01356  ratio=0.600  <A^2>=0.01357
+ eps=0.01562 U=  8.0 n=   254 <b1>=+0.0054 Var=0.01097  eps*S(U)=0.01762  ratio=0.623  <A^2>=0.01810
+ eps=0.01562 U= 16.0 n=   248 <b1>=-0.0318 Var=0.01731  eps*S(U)=0.02168  ratio=0.798  <A^2>=0.02219
+ eps=0.01562 U= 32.0 n=   240 <b1>=-0.0011 Var=0.01998  eps*S(U)=0.02574  ratio=0.776  <A^2>=0.02650
+ eps=0.00391 U=  4.0 n=   894 <b1>=+0.0023 Var=0.00184  eps*S(U)=0.00339  ratio=0.544  <A^2>=0.00337
+ eps=0.00391 U=  8.0 n=   923 <b1>=+0.0037 Var=0.00303  eps*S(U)=0.00441  ratio=0.687  <A^2>=0.00441
+ eps=0.00391 U= 16.0 n=   869 <b1>=+0.0123 Var=0.00479  eps*S(U)=0.00542  ratio=0.883  <A^2>=0.00547
+ eps=0.00391 U= 32.0 n=   901 <b1>=+0.0011 Var=0.00504  eps*S(U)=0.00644  ratio=0.784  <A^2>=0.00649
+   [243s]
+
+== (c2) window-averaged b_lam (mass^2 felt by a lam-size mode, /4rho_k) ==
+   white prediction (independent elements): Var = eps*S(U_eff) * eps/(lam^2*Weff)
+   Weff = (sum w)^2/(sum w^2) per unit density: sharp 4 lam^2; Gaussian 4 pi lam^2
+ eps=0.0625 window=sharp
+   lam= 0.5 U= 10.0 <b>=-0.00799 sd=0.08911 sd*lam=0.04455 white_pred_sd=0.06637 ratio=1.34
+   lam= 1.0 U= 14.0 <b>=-0.00229 sd=0.04627 sd*lam=0.04627 white_pred_sd=0.03440 ratio=1.35
+   lam= 2.0 U= 22.0 <b>=+0.00314 sd=0.02269 sd*lam=0.04539 white_pred_sd=0.01807 ratio=1.26
+   lam= 4.0 U= 38.0 <b>=+0.00032 sd=0.01211 sd*lam=0.04843 white_pred_sd=0.00959 ratio=1.26
+ eps=0.0625 window=Gauss
+   lam= 0.5 U= 10.0 <b>=+0.00941 sd=0.04923 sd*lam=0.02461 white_pred_sd=0.03745 ratio=1.31
+   lam= 1.0 U= 14.0 <b>=-0.00247 sd=0.02301 sd*lam=0.02301 white_pred_sd=0.01941 ratio=1.19
+   lam= 2.0 U= 22.0 <b>=+0.00146 sd=0.01366 sd*lam=0.02732 white_pred_sd=0.01020 ratio=1.34
+   lam= 4.0 U= 38.0 <b>=-0.00079 sd=0.00680 sd*lam=0.02718 white_pred_sd=0.00541 ratio=1.26
+ eps=0.0156 window=sharp
+   lam= 0.5 U= 10.0 <b>=-0.00119 sd=0.03823 sd*lam=0.01912 white_pred_sd=0.01659 ratio=2.30
+   lam= 1.0 U= 14.0 <b>=-0.00290 sd=0.01565 sd*lam=0.01565 white_pred_sd=0.00860 ratio=1.82
+   lam= 2.0 U= 22.0 <b>=-0.00019 sd=0.00701 sd*lam=0.01402 white_pred_sd=0.00452 ratio=1.55
+   lam= 4.0 U= 38.0 <b>=-0.00007 sd=0.00309 sd*lam=0.01235 white_pred_sd=0.00240 ratio=1.29
+ eps=0.0156 window=Gauss
+   lam= 0.5 U= 10.0 <b>=+0.00060 sd=0.02017 sd*lam=0.01009 white_pred_sd=0.00936 ratio=2.15
+   lam= 1.0 U= 14.0 <b>=-0.00000 sd=0.00733 sd*lam=0.00733 white_pred_sd=0.00485 ratio=1.51
+   lam= 2.0 U= 22.0 <b>=-0.00011 sd=0.00354 sd*lam=0.00707 white_pred_sd=0.00255 ratio=1.39
+   lam= 4.0 U= 38.0 <b>=-0.00050 sd=0.00185 sd*lam=0.00738 white_pred_sd=0.00135 ratio=1.36
+   [1329s]
+
+== (c3) IR dependence of the smooth-window noise at fixed lam=1, eps=1/64 ==
+   past side U-4lam=   6.0  sd=0.00679  white_pred_sd=0.00445
+   past side U-4lam=  12.0  sd=0.00694  white_pred_sd=0.00499
+   past side U-4lam=  36.0  sd=0.00646  white_pred_sd=0.00573
+   past side U-4lam= 100.0  sd=0.00895  white_pred_sd=0.00635
+   [1506s]
+
+== (c4) noise felt by an on-shell null wave cos(k0(t-x)), smooth window ==
+   eps=0.0156 k0=0.1 lam=1.0: <b>=+0.00205 sd=0.01362
+   eps=0.0156 k0=0.1 lam=2.0: <b>=-0.00017 sd=0.00272
+   eps=0.0156 k0=0.1 lam=4.0: <b>=-0.00021 sd=0.00172
+   eps=0.0156 k0=0.3 lam=1.0: <b>=-0.00046 sd=0.01076
+   eps=0.0156 k0=0.3 lam=2.0: <b>=+0.00061 sd=0.00355

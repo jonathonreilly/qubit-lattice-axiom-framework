@@ -1,0 +1,5 @@
+axis (E_g): tr(eps^2) normalised to 1;  fixed label-space window: d2E/dt2 = K0**4/(120*pi**2)  (= 1/(120*pi**2) K0^4);  Weyl sea (x -2): -K0**4/(60*pi**2)
+face (T_2g): tr(eps^2) normalised to 1;  fixed label-space window: d2E/dt2 = K0**4/(120*pi**2)  (= 1/(120*pi**2) K0^4);  Weyl sea (x -2): -K0**4/(60*pi**2)
+generic traceless: tr(eps^2) normalised to 1;  fixed label-space window: d2E/dt2 = K0**4/(120*pi**2)  (= 1/(120*pi**2) K0^4);  Weyl sea (x -2): -K0**4/(60*pi**2)
+proper-space window: E(t) = K0**4/(16*pi**2) (no t dependence) -> d2E/dt2 = 0 exactly
+PASS: fixed label-space cutoff gives a nonzero, isotropic TT modulus K0^4/(120 pi^2) per bosonic mode; a cutoff that follows the geometry gives 0.

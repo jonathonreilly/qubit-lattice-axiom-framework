@@ -1,0 +1,4 @@
+K1_m2_1.out stress: N 216..2744, sd*sqrtN = [0.0697 0.0691 0.0678 0.0678 0.0693], fitted exponent -0.510 +- 0.025 (white: -0.5)
+K1_m2_1.out stiffness: N 216..2744, sd*sqrtN = [0.0678 0.0688 0.0655 0.0644 0.0639], fitted exponent -0.524 +- 0.025 (white: -0.5)
+K1_m2_0.04.out stress: N 216..2744, sd*sqrtN = [0.0799 0.0807 0.0789 0.0811 0.0836], fitted exponent -0.492 +- 0.025 (white: -0.5)
+K1_m2_0.04.out stiffness: N 216..2744, sd*sqrtN = [0.0798 0.0809 0.0798 0.0839 0.0834], fitted exponent -0.485 +- 0.025 (white: -0.5)

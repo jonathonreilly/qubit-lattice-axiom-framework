@@ -1,0 +1,26 @@
+zeta = 1.2, k = 3, N = 30; l^2 masses (mismatch zero crossings) in [1e-4, 5e-2]:
+   theta = 0.0000:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, -2.83], median |mismatch| 3.13
+   theta = 0.1097:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, 3.11], median |mismatch| 3.13
+   theta = 0.2195:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.13
+   theta = 0.3292:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, -1.70], median |mismatch| 3.12
+   theta = 0.4390:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, 3.10], median |mismatch| 3.12
+   theta = 0.5487:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, 3.00], median |mismatch| 3.12
+   theta = 0.6585:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, 2.86], median |mismatch| 3.12
+   theta = 0.7682:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, 3.07], median |mismatch| 3.13
+   theta = 0.8780:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, -2.89], median |mismatch| 3.13
+   theta = 0.9877:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, 2.81], median |mismatch| 3.13
+   theta = 1.0975:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, -2.21], median |mismatch| 3.13
+   theta = 1.2072:   0 crossings; lowest five: ;  mismatch range on grid [-3.14, -2.83], median |mismatch| 3.13
+zeta = 0.6, k = 3, N = 30; l^2 masses (mismatch zero crossings) in [1e-4, 5e-2]:
+   theta = 0.0000:  12 crossings; lowest five: 9.418e-03, 9.483e-03, 1.037e-02, 1.476e-02, 3.407e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.08
+   theta = 0.1097:   7 crossings; lowest five: 3.529e-03, 3.071e-02, 3.093e-02, 3.157e-02, 3.478e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.07
+   theta = 0.2195:   7 crossings; lowest five: 2.731e-02, 2.750e-02, 2.807e-02, 3.093e-02, 3.502e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.07
+   theta = 0.3292:   5 crossings; lowest five: 1.037e-02, 1.151e-02, 2.807e-02, 3.224e-02, 3.966e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.07
+   theta = 0.4390:   7 crossings; lowest five: 9.483e-03, 2.282e-02, 2.411e-02, 2.462e-02, 2.479e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.07
+   theta = 0.5487:  14 crossings; lowest five: 4.783e-03, 8.258e-03, 8.316e-03, 8.490e-03, 2.297e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.06
+   theta = 0.6585:   8 crossings; lowest five: 7.654e-03, 2.029e-02, 2.043e-02, 2.282e-02, 2.297e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.05
+   theta = 0.7682:   6 crossings; lowest five: 4.783e-03, 8.490e-03, 2.345e-02, 2.362e-02, 3.430e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.09
+   theta = 0.8780:   2 crossings; lowest five: 2.282e-02, 3.246e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.09
+   theta = 0.9877:   3 crossings; lowest five: 2.043e-02, 3.224e-02, 4.747e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.09
+   theta = 1.0975:   4 crossings; lowest five: 1.841e-02, 3.478e-02, 3.502e-02, 4.914e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.08
+   theta = 1.2072:   2 crossings; lowest five: 3.050e-02, 4.430e-02;  mismatch range on grid [-3.14, 3.14], median |mismatch| 3.08

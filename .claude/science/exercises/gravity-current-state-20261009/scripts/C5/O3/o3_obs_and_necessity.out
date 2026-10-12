@@ -1,0 +1,15 @@
+rho_Lambda = 2.519e-47 GeV^4 = (2.240 meV)^4
+rho_Lambda / M_Pl^4      = 1.134e-123
+rho_Lambda / Mbar_Pl^4   = 7.162e-121
+check F(1) = 1.970388641879e-03 (V3 referee 1.970388642e-3)
+check F(0.5) = 2.467156481434e-03
+rho_vac per site of one KG component (M=0): 1/2<omega> = 1.193801 (lattice units)
+
+F monotone on (0,3)?  True
+tuned non-paired content: KG(0.50 t)+KG(a2 t) vs 4 staggered(0.40 t); a2 = 1.0207509304038538
+  t=0.10  mu_E(non-paired) = -1.0553e-07   mu_E(paired: 2 KG(2bt) vs 4 stag(bt)) = +0.0e+00
+  t=0.20  mu_E(non-paired) = -2.5191e-07   mu_E(paired: 2 KG(2bt) vs 4 stag(bt)) = +0.0e+00
+  t=0.30  mu_E(non-paired) = +1.5613e-17   mu_E(paired: 2 KG(2bt) vs 4 stag(bt)) = +0.0e+00
+  t=0.40  mu_E(non-paired) = +1.2188e-06   mu_E(paired: 2 KG(2bt) vs 4 stag(bt)) = +0.0e+00
+  t=0.60  mu_E(non-paired) = +8.7451e-06   mu_E(paired: 2 KG(2bt) vs 4 stag(bt)) = +0.0e+00
+  t=1.00  mu_E(non-paired) = +5.2148e-05   mu_E(paired: 2 KG(2bt) vs 4 stag(bt)) = +0.0e+00

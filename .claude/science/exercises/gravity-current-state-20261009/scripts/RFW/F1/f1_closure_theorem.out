@@ -1,0 +1,21 @@
+--- K2 scalar, f = sin k (L1 / K2 Lie derivative restricted to Killing)
+   tangency (Jf).gradA identically zero for all 6 planes: True
+   closure defect, plane (0,1): [(cos(k0) - 1)*sin(k1), (1 - cos(k1))*sin(k0)]
+   exact complex shell point (1, 1, 0, I*acosh(27/8 - 2*cos(1))): |A| = 0.00e+00; defect(0,1) components = [-0.38682227139505565895, 0.38682227139505565895]
+--- K2 naive/staggered fermion, f = sin(2k)/2
+   tangency (Jf).gradA identically zero for all 6 planes: True
+   closure defect, plane (0,1): [(cos(2*k0) - 1)*sin(2*k1)/2, sin(2*k0)*sin(k1)**2]
+   exact complex shell point (1, 1, 0, I*asinh(sqrt(3/4 + 2*sin(1)**2))): |A| = 0.00e+00; defect(0,1) components = [-0.64384933723982291054, 0.64384933723982291054]
+--- improved scalar r_m=1: u''(x)-1 = -x**2/2 + x**4/24 + O(x**5)  (closure defect factor, IR order x^2)
+    defect factor at the zone edge u''(pi)-1 = -2
+--- improved scalar r_m=2: u''(x)-1 = -x**4/6 + x**6/36 + O(x**7)  (closure defect factor, IR order x^4)
+    defect factor at the zone edge u''(pi)-1 = -8/3
+--- improved scalar r_m=3: u''(x)-1 = -x**6/20 + x**8/80 + O(x**9)  (closure defect factor, IR order x^6)
+    defect factor at the zone edge u''(pi)-1 = -16/5
+--- SLAC (non-local, not periodic): f = k, A = k^2 + m^2
+   tangency (Jf).gradA identically zero for all 6 planes: True
+   closure defect, plane (0,1): [0, 0]
+   SLAC defect identically zero: True
+null v . v = 0j
+line lemma: collisions present for this v (115 of 625); pick another generic v
+generic null v2 (v2.v2 = 0.0e+00+0.0e+00j): 625 distinct exponents of 625

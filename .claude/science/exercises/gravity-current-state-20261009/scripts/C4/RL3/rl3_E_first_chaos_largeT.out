@@ -1,0 +1,9 @@
+2 pi I_h^2 (node-only large-T limit of a_1, from g*g -> (4 pi I_h)^2 theta/(8 pi)) = 2.2155
+T=  1.5: a_1(grid tau<=3) = 2.9892 ; node-only on grid = 0.2396 ; rest^2 part = 1.6416 ; cross = 1.1080 ; share (a_1 - nn)/a_1 = +0.920 ; node-weighted mean leg rapidity = 2.35 ; node-only a_1 with tau<=min(T,12) = 0.2394  (0s)
+T=  2.0: a_1(grid tau<=3) = 2.0489 ; node-only on grid = 0.4175 ; rest^2 part = 1.5902 ; cross = 0.0411 ; share (a_1 - nn)/a_1 = +0.796 ; node-weighted mean leg rapidity = 2.49 ; node-only a_1 with tau<=min(T,12) = 0.4182  (1s)
+T=  3.0: a_1(grid tau<=3) = 0.9612 ; node-only on grid = 0.8370 ; rest^2 part = 0.0696 ; cross = 0.0547 ; share (a_1 - nn)/a_1 = +0.129 ; node-weighted mean leg rapidity = 2.74 ; node-only a_1 with tau<=min(T,12) = 0.8361  (1s)
+2 pi I_h^2 (node-only large-T limit of a_1, from g*g -> (4 pi I_h)^2 theta/(8 pi)) = 2.2155
+T=  5.0: a_1(grid tau<=3) = 1.4360 ; node-only on grid = 1.4284 ; rest^2 part = 0.0041 ; cross = 0.0035 ; share (a_1 - nn)/a_1 = +0.005 ; node-weighted mean leg rapidity = 3.35 ; node-only a_1 with tau<=min(T,12) = 1.4779  (22s)
+T=  8.0: a_1(grid tau<=3) = 1.6410 ; node-only on grid = 1.6361 ; rest^2 part = -0.0003 ; cross = 0.0052 ; share (a_1 - nn)/a_1 = +0.003 ; node-weighted mean leg rapidity = 4.26 ; node-only a_1 with tau<=min(T,12) = 1.8677  (50s)
+T= 12.0: a_1(grid tau<=3) = 1.7001 ; node-only on grid = 1.7005 ; rest^2 part = 0.0015 ; cross = -0.0020 ; share (a_1 - nn)/a_1 = -0.000 ; node-weighted mean leg rapidity = 5.08 ; node-only a_1 with tau<=min(T,12) = 2.0446  (78s)
+T= 16.0: a_1(grid tau<=3) = 1.7234 ; node-only on grid = 1.7224 ; rest^2 part = 0.0001 ; cross = 0.0008 ; share (a_1 - nn)/a_1 = +0.001 ; node-weighted mean leg rapidity = 5.66 ; node-only a_1 with tau<=min(T,12) = 2.1126  (106s)

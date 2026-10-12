@@ -1,0 +1,8 @@
+d=2 N=22 L=64 p=sin  m=1.0 E : transl.err T1 0.0e+00 T2 0.0e+00 | operator para -4.088837e-03 full +3.15181305e-03 | Jacobian form (continuum) +3.15181308e-03   [0s]
+d=2 N=22 L=64 p=sin  m=1.0 T2: transl.err T1 0.0e+00 T2 0.0e+00 | operator para -1.354428e-02 full -3.40468394e-11 | Jacobian form (continuum) +0.00000000e+00   [0s]
+d=2 N=22 L=64 p=diag m=1.0 E : transl.err T1 0.0e+00 T2 0.0e+00 | operator para -5.612871e-03 full -8.88178420e-12 | Jacobian form (continuum) +0.00000000e+00   [0s]
+d=2 N=22 L=64 p=diag m=1.0 T2: transl.err T1 0.0e+00 T2 0.0e+00 | operator para -2.253568e-03 full +3.25555803e-03 | Jacobian form (continuum) +3.25555804e-03   [0s]
+d=3 N=13 L=24 p=sin  m=1.0 E : transl.err T1 0.0e+00 T2 0.0e+00 | operator para -2.317304e-03 full +1.97038863e-03 | Jacobian form (continuum) +1.97038864e-03   [1s]
+d=3 N=13 L=24 p=sin  m=1.0 T2: transl.err T1 0.0e+00 T2 0.0e+00 | operator para -8.228470e-03 full -2.96059473e-12 | Jacobian form (continuum) +0.00000000e+00   [1s]
+d=3 N=13 L=24 p=diag m=1.0 E : transl.err T1 0.0e+00 T2 0.0e+00 | operator para -1.748694e-03 full -2.22044605e-11 | Jacobian form (continuum) +0.00000000e+00   [2s]
+d=3 N=13 L=24 p=diag m=1.0 T2: transl.err T1 0.0e+00 T2 0.0e+00 | operator para -6.673073e-04 full +1.05762773e-03 | Jacobian form (continuum) +1.05762775e-03   [3s]

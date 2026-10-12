@@ -1,0 +1,8 @@
+KG m=1: histogram {2: 168, 1: 312}; 2-comp cases with any cell mapped into its own component: 0 of 168
+  KG m=0.2 K=[ 3.08817904 -1.34086366] E=4.6723 same/other=(114, 0)
+  KG m=0.2 K=[ 1.99657907 -3.05349623] E=4.4717 same/other=(99, 0)
+  KG m=0.2 K=[-2.95871884 -1.25115861] E=4.6742 same/other=(110, 0)
+KG m=0.2: histogram {2: 194, 1: 286}; 2-comp cases with any cell mapped into its own component: 3 of 194
+  KG m=0 K=[-3.06823059  1.35202419] E=4.6528 same/other=(109, 0)
+  KG m=0 K=[-1.87639411 -3.06360325] E=4.4824 same/other=(125, 0)
+KG m=0: histogram {1: 261, 2: 219}; 2-comp cases with any cell mapped into its own component: 2 of 219

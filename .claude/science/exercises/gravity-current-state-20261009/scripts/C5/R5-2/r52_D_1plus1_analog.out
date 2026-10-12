@@ -1,0 +1,13 @@
+genus check (|Q|<400, 7 not| Q): sign(Q) = (|Q|/7) for every represented |Q|: True
+eta0 = 2.768659; frames = 64 rapidities over one period (exact Haar average on the circle)
+   l    sd_u[T]       sd_u[Tm]      sd_u[F]       sd_u[shell m=3]   mean T        (reach check)
+     2  2.7007e-02   1.5760e-01   6.6580e-05   2.5431e-01       1.813486e+00   edge weight 0.0e+00
+     3  5.7552e-02   1.1269e-01   9.5639e-11   1.4215e-01       4.709810e+00   edge weight 0.0e+00
+     4  8.7970e-02   1.8276e-02   4.8777e-14   1.6111e-02       8.814042e+00   edge weight 0.0e+00
+     6  6.9150e-02   1.2109e-01   1.1862e-13   2.0685e-01       2.061504e+01   edge weight 0.0e+00
+     8  2.5095e-02   1.4306e-01   2.0997e-13   2.5062e-01       3.718686e+01   edge weight 2.5e-258
+    11  4.2912e-02   1.2765e-01   3.8931e-13   1.7943e-01       7.097055e+01   edge weight 5.6e-137
+    15  8.4456e-02   3.6858e-02   6.9865e-13   2.4951e-02       1.326599e+02   edge weight 5.3e-74
+    20  8.5746e-02   7.8055e-02   1.2310e-12   1.3362e-01       2.365063e+02   edge weight 6.1e-42
+    27  5.2796e-02   1.3469e-01   2.1816e-12   2.3721e-01       4.317812e+02   edge weight 2.4e-23
+    36  1.0580e-02   1.4442e-01   3.9985e-12   2.3808e-01       7.683601e+02   edge weight 1.9e-13

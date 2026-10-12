@@ -1,0 +1,80 @@
+E_Pl = hbar c / l_P = 1.2209e+19 GeV;  lattice gap |G^2|min = (2pi)^2/7 = 5.6398 a^-2  (sqrt = 2.3748/a)
+
+[a = l_P]  1/a = 1.2209e+19 GeV;  gap |G^2|min = 8.4065e+38 GeV^2 (sqrt 2.8994e+19 GeV)
+   1.4 PeV gamma x CMB photon (1e-3 eV), 4 E e                s = 5.600e-06 GeV^2   log10(gap/s) =   44.18   IN band
+   13 TeV GRB gamma x EBL photon (1 eV), 4 E e                s = 5.200e-05 GeV^2   log10(gap/s) =   43.21   IN band
+   1e20 eV proton x CMB (GZK), s                              s = 1.280e+00 GeV^2   log10(gap/s) =   38.82   IN band
+   3e20 eV primary x air nucleon, s = 2 E m                   s = 5.628e+11 GeV^2   log10(gap/s) =   27.17   IN band
+   1.4 PeV gamma x detector nucleon, 2 E m                    s = 2.626e+06 GeV^2   log10(gap/s) =   32.51   IN band
+   LHC pp, s = (13.6 TeV)^2                                   s = 1.850e+08 GeV^2   log10(gap/s) =   30.66   IN band
+   nucleon rest-frame internal (Fermi 0.25 GeV), (2 m)^2-ish  s = 3.519e+00 GeV^2   log10(gap/s) =   38.38   IN band
+   Bragg resonance shell for a electron at rest: |G|_E ~ |G^2|/(2m) = 8.226e+41 GeV = 6.737e+22 E_Pl
+   Bragg resonance shell for a nucleon at rest: |G|_E ~ |G^2|/(2m) = 4.481e+38 GeV = 3.670e+19 E_Pl
+
+[a = 1e-19 m]  1/a = 1.9733e+03 GeV;  gap |G^2|min = 2.1960e+07 GeV^2 (sqrt 4.6862e+03 GeV)
+   1.4 PeV gamma x CMB photon (1e-3 eV), 4 E e                s = 5.600e-06 GeV^2   log10(gap/s) =   12.59   IN band
+   13 TeV GRB gamma x EBL photon (1 eV), 4 E e                s = 5.200e-05 GeV^2   log10(gap/s) =   11.63   IN band
+   1e20 eV proton x CMB (GZK), s                              s = 1.280e+00 GeV^2   log10(gap/s) =    7.23   IN band
+   3e20 eV primary x air nucleon, s = 2 E m                   s = 5.628e+11 GeV^2   log10(gap/s) =   -4.41   OUT of band (umklapp channels kinematically open)
+   1.4 PeV gamma x detector nucleon, 2 E m                    s = 2.626e+06 GeV^2   log10(gap/s) =    0.92   IN band
+   LHC pp, s = (13.6 TeV)^2                                   s = 1.850e+08 GeV^2   log10(gap/s) =   -0.93   OUT of band (umklapp channels kinematically open)
+   nucleon rest-frame internal (Fermi 0.25 GeV), (2 m)^2-ish  s = 3.519e+00 GeV^2   log10(gap/s) =    6.80   IN band
+   Bragg resonance shell for a electron at rest: |G|_E ~ |G^2|/(2m) = 2.149e+10 GeV = 1.760e-09 E_Pl
+   Bragg resonance shell for a nucleon at rest: |G|_E ~ |G^2|/(2m) = 1.171e+07 GeV = 9.588e-13 E_Pl
+
+(3) Conditional LV requirements.  delta v/c = eps * (E a)^n * A, |A| ~ 1
+
+[a = l_P]
+   bound                                                                                               E a  eps_max(n=+1)  eps_max(n=+2)  eps_max(n=-3)
+   GRB 221009A ToF, linear (13 TeV): dv < E/E_QG1, E_QG1 = 10 E_Pl                               1.065e-15     1.000e-01     9.391e+13     1.285e-61
+   GRB 221009A ToF, quadratic (13 TeV): dv < (E/E_QG2)^2, E_QG2 = 6e-8 E_Pl                      1.065e-15     2.958e-01     2.778e+14     3.802e-61
+   1.4 PeV photon survival (photon-fast vs e): dv < 2.66e-19                                     1.147e-13     2.324e-06     2.026e+07     4.018e-58
+   LHAASO superluminal decay, linear: dv < E/(1e5 E_Pl) at 1 PeV                                 8.191e-14     1.000e-05     1.221e+08     4.501e-58
+   GRB polarisation birefringence (helicity-odd, ~300 keV): |dv_+ - dv_-| < 2 xi E/E_Pl, xi=1e-16  2.457e-23     2.000e-16     8.139e+06    7.291e-107
+   Hughes-Drever neutron c_jk ~ 1e-29 (internal p ~ 0.25 GeV)                                    2.048e-20     4.884e-10     2.385e+10     8.586e-89
+   Yb+ clock electron c_jk ~ 1e-21 (bound electron p ~ few keV)                                  4.095e-25     2.442e+03     5.962e+27     6.869e-95
+   Optical cavity isotropy of c ~ 1e-18 (1 eV photons; comparator, from memory)                  8.191e-29     1.221e+10     1.491e+38    5.495e-103
+
+[a = 1e-19 m]
+   bound                                                                                               E a  eps_max(n=+1)  eps_max(n=+2)  eps_max(n=-3)
+   GRB 221009A ToF, linear (13 TeV): dv < E/E_QG1, E_QG1 = 10 E_Pl                               6.588e+00     1.616e-17     2.453e-18     3.045e-14
+   GRB 221009A ToF, quadratic (13 TeV): dv < (E/E_QG2)^2, E_QG2 = 6e-8 E_Pl                      6.588e+00     4.781e-17     7.256e-18     9.005e-14
+   1.4 PeV photon survival (photon-fast vs e): dv < 2.66e-19                                     7.095e+02     3.756e-22     5.293e-25     9.516e-11
+   LHAASO superluminal decay, linear: dv < E/(1e5 E_Pl) at 1 PeV                                 5.068e+02     1.616e-21     3.189e-24     1.066e-10
+   GRB polarisation birefringence (helicity-odd, ~300 keV): |dv_+ - dv_-| < 2 xi E/E_Pl, xi=1e-16  1.520e-07     3.233e-32     2.126e-25     1.727e-59
+   Hughes-Drever neutron c_jk ~ 1e-29 (internal p ~ 0.25 GeV)                                    1.267e-04     7.893e-26     6.230e-22     2.034e-41
+   Yb+ clock electron c_jk ~ 1e-21 (bound electron p ~ few keV)                                  2.534e-09     3.947e-13     1.558e-04     1.627e-47
+   Optical cavity isotropy of c ~ 1e-18 (1 eV photons; comparator, from memory)                  5.068e-13     1.973e-06     3.894e+06     1.301e-55
+
+Naive n = +1 transfer (single-shell tube numbers, eps = C*tau, C*tau ~ 5.6e-3*sqrt3 .. 3.4e-3*sqrt7 ~ 1e-2):
+[a = l_P]
+   GRB 221009A ToF, linear (13 TeV): dv < E/E_QG1, E_QG1 = 10 E_Pl                              predicted dv ~ 1.06e-17  allowed 1.06e-16  -> passes by 1.0e+01
+   GRB 221009A ToF, quadratic (13 TeV): dv < (E/E_QG2)^2, E_QG2 = 6e-8 E_Pl                     predicted dv ~ 1.06e-17  allowed 3.15e-16  -> passes by 3.0e+01
+   1.4 PeV photon survival (photon-fast vs e): dv < 2.66e-19                                    predicted dv ~ 1.15e-15  allowed 2.66e-19  -> violates by 4.3e+03
+   LHAASO superluminal decay, linear: dv < E/(1e5 E_Pl) at 1 PeV                                predicted dv ~ 8.19e-16  allowed 8.19e-19  -> violates by 1.0e+03
+   GRB polarisation birefringence (helicity-odd, ~300 keV): |dv_+ - dv_-| < 2 xi E/E_Pl, xi=1e-16 predicted dv ~ 2.46e-25  allowed 4.91e-39  -> violates by 5.0e+13
+   Hughes-Drever neutron c_jk ~ 1e-29 (internal p ~ 0.25 GeV)                                   predicted dv ~ 2.05e-22  allowed 1.00e-29  -> violates by 2.0e+07
+   Yb+ clock electron c_jk ~ 1e-21 (bound electron p ~ few keV)                                 predicted dv ~ 4.10e-27  allowed 1.00e-21  -> passes by 2.4e+05
+   Optical cavity isotropy of c ~ 1e-18 (1 eV photons; comparator, from memory)                 predicted dv ~ 8.19e-31  allowed 1.00e-18  -> passes by 1.2e+12
+[a = 1e-19 m]
+   GRB 221009A ToF, linear (13 TeV): dv < E/E_QG1, E_QG1 = 10 E_Pl                              predicted dv ~ 6.59e-02  allowed 1.06e-16  -> violates by 6.2e+14
+   GRB 221009A ToF, quadratic (13 TeV): dv < (E/E_QG2)^2, E_QG2 = 6e-8 E_Pl                     predicted dv ~ 6.59e-02  allowed 3.15e-16  -> violates by 2.1e+14
+   1.4 PeV photon survival (photon-fast vs e): dv < 2.66e-19                                    predicted dv ~ 7.09e+00  allowed 2.66e-19  -> violates by 2.7e+19
+   LHAASO superluminal decay, linear: dv < E/(1e5 E_Pl) at 1 PeV                                predicted dv ~ 5.07e+00  allowed 8.19e-19  -> violates by 6.2e+18
+   GRB polarisation birefringence (helicity-odd, ~300 keV): |dv_+ - dv_-| < 2 xi E/E_Pl, xi=1e-16 predicted dv ~ 1.52e-09  allowed 4.91e-39  -> violates by 3.1e+29
+   Hughes-Drever neutron c_jk ~ 1e-29 (internal p ~ 0.25 GeV)                                   predicted dv ~ 1.27e-06  allowed 1.00e-29  -> violates by 1.3e+23
+   Yb+ clock electron c_jk ~ 1e-21 (bound electron p ~ few keV)                                 predicted dv ~ 2.53e-11  allowed 1.00e-21  -> violates by 2.5e+10
+   Optical cavity isotropy of c ~ 1e-18 (1 eV photons; comparator, from memory)                 predicted dv ~ 5.07e-15  allowed 1.00e-18  -> violates by 5.1e+03
+
+GRB 221009A (z=0.151, light-travel ~1.9 Gyr): naive n=+1 delay at 13 TeV, a=l_P: 0.64 s
+
+n = -3 (abs LV ~ eps_B/kappa against LI ~ (pi/4) kappa^2): LV dominates for kappa a < (4 eps_B/pi)^(1/3)
+   eps_B = 1e-02: crossover kappa a = 2.34e-01 -> E = 2.85e+18 GeV at a = l_P, 4.61e+02 GeV at 1e-19 m
+   eps_B = 1e-06: crossover kappa a = 1.08e-02 -> E = 1.32e+17 GeV at a = l_P, 2.14e+01 GeV at 1e-19 m
+   eps_B = 1e-20: crossover kappa a = 2.34e-07 -> E = 2.85e+12 GeV at a = l_P, 4.61e-04 GeV at 1e-19 m
+   eps_B = 1e-60: crossover kappa a = 1.08e-20 -> E = 1.32e-01 GeV at a = l_P, 2.14e-17 GeV at 1e-19 m
+   eps_B = 1e-120: crossover kappa a = 1.08e-40 -> E = 1.32e-21 GeV at a = l_P, 2.14e-37 GeV at 1e-19 m
+[a = l_P] to keep rel LV < 1e-18 down to kappa = 1/(1 m): eps_B < 3.3e-123;  down to the Hubble scale: eps_B < 1.3e-201
+[a = 1e-19 m] to keep rel LV < 1e-18 down to kappa = 1/(1 m): eps_B < 7.9e-76;  down to the Hubble scale: eps_B < 3.1e-154
+[a = l_P] stability over a Hubble time (kappa*/a < H0): eps_B < (pi/4)(H0 a)^3 = 1.29e-183;  if eps_B ~ exp(-c l_k/a): l_k/a > 421/c
+[a = 1e-19 m] stability over a Hubble time (kappa*/a < H0): eps_B < (pi/4)(H0 a)^3 = 3.05e-136;  if eps_B ~ exp(-c l_k/a): l_k/a > 312/c

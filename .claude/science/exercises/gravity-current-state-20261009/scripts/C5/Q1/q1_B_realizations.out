@@ -1,0 +1,30 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/Q1/q1_B_realizations.py:36: RuntimeWarning: overflow encountered in divide
+  (np.median(np.abs(m[sel])**2/sem2[sel]), np.median(G[sel]), np.median(Gu[sel]), np.median(V[sel]/np.maximum(Psi2[sel], 1e-300))))
+=== eps=1 (R=3139), carrier w0=1, late window tau in [5.68, 9.80] ===
+ median over late window: |mean|^2/sem^2 = 0.37 ; Gamma = |E phi|^2/E|phi|^2 = 0.0001 (bias-corrected 0.0000) ; V/|Psi|^2 ~ inf
+ shape of delta (late-window medians): median|d|^2/V = 0.024 (circ. Gaussian 0.693) ; E|d|^4/V^2 = 102.96 (circ. Gaussian 2) ; |E d^2|/V = 0.918 (0 if circular)
+ growth rates d/dtau over late window: ln V (annealed) 4.674 ; ln median|d|^2 4.723 ; E ln|d|^2 (quenched) 4.724 ; [Gaussian: all equal]
+ at t=T: share of E|d|^2 carried by top 1%: 0.63, top 10%: 0.92 (exponential law: 0.06, 0.33)
+=== eps=0.5 (R=1637), carrier w0=1, late window tau in [4.61, 8.77] ===
+ median over late window: |mean|^2/sem^2 = 0.40 ; Gamma = |E phi|^2/E|phi|^2 = 0.0002 (bias-corrected 0.0000) ; V/|Psi|^2 ~ 5.12e+304
+ shape of delta (late-window medians): median|d|^2/V = 0.242 (circ. Gaussian 0.693) ; E|d|^4/V^2 = 7.79 (circ. Gaussian 2) ; |E d^2|/V = 0.821 (0 if circular)
+ growth rates d/dtau over late window: ln V (annealed) 2.721 ; ln median|d|^2 2.716 ; E ln|d|^2 (quenched) 2.718 ; [Gaussian: all equal]
+ at t=T: share of E|d|^2 carried by top 1%: 0.22, top 10%: 0.64 (exponential law: 0.06, 0.33)
+=== eps=0.25 (R=960), carrier w0=1, late window tau in [3.49, 7.75] ===
+ median over late window: |mean|^2/sem^2 = 0.79 ; Gamma = |E phi|^2/E|phi|^2 = 0.0008 (bias-corrected 0.0000) ; V/|Psi|^2 ~ 9.63e+300
+ shape of delta (late-window medians): median|d|^2/V = 0.480 (circ. Gaussian 0.693) ; E|d|^4/V^2 = 3.41 (circ. Gaussian 2) ; |E d^2|/V = 0.637 (0 if circular)
+ growth rates d/dtau over late window: ln V (annealed) 1.469 ; ln median|d|^2 1.473 ; E ln|d|^2 (quenched) 1.472 ; [Gaussian: all equal]
+ at t=T: share of E|d|^2 carried by top 1%: 0.11, top 10%: 0.47 (exponential law: 0.06, 0.33)
+  recombination, nbar=0.001 (V_ph median 4.18): prob median 0.255 ; |<a>_rec|/|mean amp| median 0.726 (Gaussian 2/(2+V_ph): 0.396)
+  recombination, nbar=0.01 (V_ph median 41.8): prob median 0.0175 ; |<a>_rec|/|mean amp| median 1.732 (Gaussian 2/(2+V_ph): 0.072)
+  recombination, nbar=0.1 (V_ph median 418): prob median 0.000297 ; |<a>_rec|/|mean amp| median 5.149 (Gaussian 2/(2+V_ph): 0.008)
+  recombination, nbar=1 (V_ph median 4.18e+03): prob median 1.47e-05 ; |<a>_rec|/|mean amp| median 17.846 (Gaussian 2/(2+V_ph): 0.001)
+=== eps=0.125 (R=594), carrier w0=1, late window tau in [2.90, 6.71] ===
+ median over late window: |mean|^2/sem^2 = 5.87 ; Gamma = |E phi|^2/E|phi|^2 = 0.0098 (bias-corrected 0.0081) ; V/|Psi|^2 ~ 122
+ shape of delta (late-window medians): median|d|^2/V = 0.600 (circ. Gaussian 0.693) ; E|d|^4/V^2 = 2.42 (circ. Gaussian 2) ; |E d^2|/V = 0.421 (0 if circular)
+ growth rates d/dtau over late window: ln V (annealed) 0.770 ; ln median|d|^2 0.796 ; E ln|d|^2 (quenched) 0.795 ; [Gaussian: all equal]
+ at t=T: share of E|d|^2 carried by top 1%: 0.05, top 10%: 0.37 (exponential law: 0.06, 0.33)
+  recombination, nbar=0.001 (V_ph median 0.116): prob median 0.895 ; |<a>_rec|/|mean amp| median 0.961 (Gaussian 2/(2+V_ph): 0.945)
+  recombination, nbar=0.01 (V_ph median 1.16): prob median 0.436 ; |<a>_rec|/|mean amp| median 0.794 (Gaussian 2/(2+V_ph): 0.637)
+  recombination, nbar=0.1 (V_ph median 11.6): prob median 0.0298 ; |<a>_rec|/|mean amp| median 0.423 (Gaussian 2/(2+V_ph): 0.153)
+  recombination, nbar=1 (V_ph median 116): prob median 0.000475 ; |<a>_rec|/|mean amp| median 1.879 (Gaussian 2/(2+V_ph): 0.018)

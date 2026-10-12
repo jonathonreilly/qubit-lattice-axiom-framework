@@ -1,0 +1,24 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/RL1/RL1_F2_locate_zeros.py:35: RuntimeWarning: divide by zero encountered in scalar divide
+  h = 1e-7; d = (S(np.array([z+h]))[0]-S(np.array([z-h]))[0])/(2*h); dz = -S(np.array([z]))[0]/d; z = z+dz
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/RL1/RL1_F2_locate_zeros.py:35: RuntimeWarning: invalid value encountered in scalar divide
+  h = 1e-7; d = (S(np.array([z+h]))[0]-S(np.array([z-h]))[0])/(2*h); dz = -S(np.array([z]))[0]/d; z = z+dz
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/RL1/RL1_F2_locate_zeros.py:12: RuntimeWarning: invalid value encountered in multiply
+  z = np.asarray(z, complex); x = z[..., None]*TAU
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C4/RL1/RL1_F2_locate_zeros.py:13: RuntimeWarning: invalid value encountered in divide
+  return 4*np.pi*np.sum(WT*TAU**3*F*kv(1, x)/x, axis=-1)
+
+BD L=4: C = [ 1.000001 -9.000007 16.000012 -8.000006]  (S(1e-3) = -1.94e-09)
+   zeros in Re[0.002,20] x Im[0.5,40]: +1.000
+   zeros in Re[0.002,20] x Im[-40,-0.5]: +1.000
+   zeros in Re[0.002,0.5] x Im[-0.5,0.5]: -0.000
+   zeros in Re[0.5,20] x Im[-0.5,0.5]: -0.000
+   zero z = +0.000999 -0.000000i   growth e-fold length 1/Re z = 1001.5 ell
+
+stable L=6: C = [ -1.080512  11.523058 -35.280216  59.39202  -55.125296  20.570946]  (S(1e-3) = +1.09e-08)
+   zeros in Re[0.002,20] x Im[0.5,40]: +1.000
+   zeros in Re[0.002,20] x Im[-40,-0.5]: +1.000
+   zeros in Re[0.002,0.5] x Im[-0.5,0.5]: +0.000
+   zeros in Re[0.5,20] x Im[-0.5,0.5]: -0.000
+   zero z = +0.836159 -3.006155i   growth e-fold length 1/Re z = 1.2 ell
+   zero z = +0.836159 +3.006155i   growth e-fold length 1/Re z = 1.2 ell
+NOTE: F2's stable-member section used 6-digit rounded coefficients (moment constraints broken at 1e-6, O(1) error in ftilde near z=0) and is INVALID; its BD section stands (counts 1+1 = the known pair).

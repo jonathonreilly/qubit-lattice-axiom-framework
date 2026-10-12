@@ -1,0 +1,16 @@
+== A. real-space exact gauge invariance of the lattice FP action (torus) ==
+L=3: max |S(h+dh)-S(h)|, |S(dh)| over 3 random integer trials = 0.0
+L=4: max |S(h+dh)-S(h)|, |S(dh)| over 3 random integer trials = 0.0
+L=5: max |S(h+dh)-S(h)|, |S(dh)| over 3 random integer trials = 0.0
+control (cross-term sign flipped): S(dh) = -9801344.0 (nonzero expected)
+
+== B. symbol: K(s) D(s) = 0 exactly (sympy), spectrum ==
+K*D simplified is zero: True
+generalized eigenvalues / s^2 : [-0.5  -0.    0.    0.    0.    0.25  0.25  0.25  0.25  0.25]
+
+== C. Killing vectors of the lattice gauge map on an open box (no torus) ==
+box 4^4: unknowns 768, equations 1376, kernel dimension = 10
+smallest singular values: [0.       0.       0.       0.       0.       0.       0.       0.
+ 0.       0.       0.757524 0.757524]
+max |A * (explicit translations + rotations)| = 0.0 ; rank of the 10 explicit fields = 10
+=> the lattice gauge map has exactly the 10 affine Killing fields of e(4): 4 translations + 6 rotations, including the 3 time-space 'Euclidean boosts' (rotations in (4,j) planes).

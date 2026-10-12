@@ -1,0 +1,20 @@
+full zone                r=1: min rms residual = 2.059e-01 (best c = 0.163)
+full zone                r=2: min rms residual = 1.032e-01 (best c = 0.164)
+full zone                r=3: min rms residual = 1.001e-01 (best c = 0.146)
+IR-ish |k_spatial|<0.6   r=1: min rms residual = 1.021e-02 (best c = 1.097)
+IR-ish |k_spatial|<0.6   r=2: min rms residual = 2.205e-06 (best c = 0.000)
+IR-ish |k_spatial|<0.6   r=3: min rms residual = 5.069e-05 (best c = 0.001)
+SLAC control (f = k, A = k^2 + m^2): max |tangency| = 0.0e+00, max |closure| = 0.0e+00 (Df = I)
+
+With the structure constant fixed to the e(4) value c = 1 (gravity's Killing algebra):
+full zone                  r=1: min rms residual (c=1) = 2.608e-01
+full zone                  r=2: min rms residual (c=1) = 1.980e-01
+full zone                  r=3: min rms residual (c=1) = 1.656e-01
+IR-ish |k_spatial|<0.6     r=1: min rms residual (c=1) = 2.048e-02
+IR-ish |k_spatial|<0.6     r=2: min rms residual (c=1) = 8.781e-03
+IR-ish |k_spatial|<0.6     r=3: min rms residual (c=1) = 4.702e-03
+deep IR |k_spatial|<0.25   r=1: min rms residual (c=1) = 1.235e-02
+deep IR |k_spatial|<0.25   r=2: min rms residual (c=1) = 1.602e-03
+deep IR |k_spatial|<0.25   r=3: min rms residual (c=1) = 2.751e-04
+(c = 0 near-solutions above on a small patch are the Carroll branch [L,P]=0, not e(4); T1 excludes it globally
+ unless A depends on one linear combination of k.)

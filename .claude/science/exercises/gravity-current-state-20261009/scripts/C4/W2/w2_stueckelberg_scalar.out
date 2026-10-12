@@ -1,0 +1,53 @@
+(a) linearized GR scalar sector gauge invariant (eps and chi): True
+(b) Wess-Zumino consistency [d2 A1 - d1 A2 = total derivative]: True
+(c) WZ coefficient solutions: [{c1: 1, c2: -1, c3: 1, c4: -1/2, c5: 0, c6: 0, c7: 0, c8: 0, c9: 0}]
+    minimal WZ term (free coefficients set to 0, they are separately gauge invariant):
+    L_WZ = a*(2*Derivative(B(t, x, y, z), x)*Derivative(pi(t, x, y, z), x) + 2*Derivative(B(t, x, y, z), y)*Derivative(pi(t, x, y, z), y) + 2*Derivative(B(t, x, y, z), z)*Derivative(pi(t, x, y, z), z) - 2*Derivative(Phi(t, x, y, z), x)*Derivative(zeta(t, x, y, z), x) - 2*Derivative(Phi(t, x, y, z), y)*Derivative(zeta(t, x, y, z), y) - 2*Derivative(Phi(t, x, y, z), z)*Derivative(zeta(t, x, y, z), z) - Derivative(pi(t, x, y, z), x)**2 + 2*Derivative(pi(t, x, y, z), x)*Derivative(zeta(t, x, y, z), t, x) - Derivative(pi(t, x, y, z), y)**2 + 2*Derivative(pi(t, x, y, z), y)*Derivative(zeta(t, x, y, z), t, y) - Derivative(pi(t, x, y, z), z)**2 + 2*Derivative(pi(t, x, y, z), z)*Derivative(zeta(t, x, y, z), t, z))/2
+    check delta(L_WZ) + delta(anomaly) = total derivative: True
+
+(d) Fourier quadratic form v^dag M v (fields Phi, Psi, pi, zeta; gauge B = E = 0, k along x):
+⎡                   2                       2   ⎤
+⎢             -Mₚ₂⋅k                    -a⋅k    ⎥
+⎢   0         ────────         0        ──────  ⎥
+⎢                2                        4     ⎥
+⎢                                               ⎥
+⎢      2       ⎛ 2      2⎞                      ⎥
+⎢-Mₚ₂⋅k    Mₚ₂⋅⎝k  - 3⋅ω ⎠                      ⎥
+⎢────────  ───────────────     0          0     ⎥
+⎢   2             2                             ⎥
+⎢                                               ⎥
+⎢                                2          2   ⎥
+⎢                            -a⋅k     -ⅈ⋅a⋅k ⋅ω ⎥
+⎢   0             0          ──────   ──────────⎥
+⎢                              4          4     ⎥
+⎢                                               ⎥
+⎢     2                          2              ⎥
+⎢ -a⋅k                      ⅈ⋅a⋅k ⋅ω            ⎥
+⎢ ──────          0         ────────      0     ⎥
+⎣   4                          4                ⎦
+    Hermitian: True
+    det M(omega,k) = M_p2*a**2*k**6*(2*M_p2*k**2*omega**2 + a*k**2 - 3*a*omega**2)/128
+    omega^2 roots: [a*k**2/(-2*M_p2*k**2 + 3*a)]
+    det of (Phi,Psi) block: -M_p2**2*k**4/4
+    Schur complement on (pi, zeta):
+⎡     2            2     ⎤
+⎢ -a⋅k       -ⅈ⋅a⋅k ⋅ω   ⎥
+⎢ ──────     ──────────  ⎥
+⎢   4            4       ⎥
+⎢                        ⎥
+⎢     2     2 ⎛ 2      2⎞⎥
+⎢ⅈ⋅a⋅k ⋅ω  a ⋅⎝k  - 3⋅ω ⎠⎥
+⎢────────  ──────────────⎥
+⎣   4          8⋅Mₚ₂     ⎦
+    det Schur: -a**2*k**2*(2*M_p2*k**2*omega**2 + a*k**2 - 3*a*omega**2)/(32*M_p2)
+
+(e) extra scalar: omega^2 = a k^2/(3a - 2 Mp2 k^2);  mu^2 := a/(2 Mp2)
+   a=+1 k=  0.3: omega^2 = +0.0319, |min eig S| = 4.8e-19, mode energy sign = -1 (GHOST)
+   a=+1 k=  1.0: omega^2 = +1.0000, |min eig S| = 0.0e+00, mode energy sign = -1 (GHOST)
+   a=+1 k=  3.0: omega^2 = -0.6000  -> imaginary frequency (tachyon), growth rate 0.7746
+   a=+1 k= 10.0: omega^2 = -0.5076  -> imaginary frequency (tachyon), growth rate 0.7125
+   a=-1 k=  0.3: omega^2 = +0.0283, |min eig S| = 2.4e-19, mode energy sign = -1 (GHOST)
+   a=-1 k=  1.0: omega^2 = +0.2000, |min eig S| = 6.5e-18, mode energy sign = -1 (GHOST)
+   a=-1 k=  3.0: omega^2 = +0.4286, |min eig S| = 1.4e-16, mode energy sign = -1 (GHOST)
+   a=-1 k= 10.0: omega^2 = +0.4926, |min eig S| = 2.8e-15, mode energy sign = -1 (GHOST)
+   large-k limit: omega^2 -> -a/(2 Mp2) = -mu^2 ;  small-k limit: omega^2 -> k^2/3

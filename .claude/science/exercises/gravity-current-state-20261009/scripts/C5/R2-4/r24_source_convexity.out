@@ -1,0 +1,6 @@
+p4=+0.70 B GR              : W(theta)*p^2/norm = -1.500000   W(spin2) > 0: True   a = 0.500000   gamma_PPN = a/(1-a) = 1.000000
+p4=+0.70 A positive 4D-TT  : W(theta)*p^2/norm = -0.000000   W(spin2) > 0: True   a = 0.333333   gamma_PPN = a/(1-a) = 0.500000
+p4=-1.30 B GR              : W(theta)*p^2/norm = -1.500000   W(spin2) > 0: True   a = 0.500000   gamma_PPN = a/(1-a) = 1.000000
+p4=-1.30 A positive 4D-TT  : W(theta)*p^2/norm = -0.000000   W(spin2) > 0: True   a = 0.333333   gamma_PPN = a/(1-a) = 0.500000
+positivity bound on conserved J: J.J - a(trJ)^2 >= 0 for J = theta requires 3 - 9a >= 0, a <= 1/3, gamma <= 1/2
+Cassini (Bertotti-Iess-Tortora 2003, recalled): gamma - 1 = (2.1 +/- 2.3)e-5  ->  a = gamma/(1+gamma) = 0.500005 +/- 0.000006

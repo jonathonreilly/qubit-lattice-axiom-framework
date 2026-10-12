@@ -1,0 +1,4 @@
+separable-flat: mu_E/mu_E(NN) = 13.371 L^-2 ; mu_T2/mu_T2(NN) = 12.774 L^-3 (fits from L=64)
+  P0 refereed 5.7e-99: L*(mu_E) = 4.843e+49 ; L*(mu_T2) = 1.309e+33
+  P0 framework 9.0e-102: L*(mu_E) = 1.219e+51 ; L*(mu_T2) = 1.124e+34
+at the observational cap L = 7.65e+14: separable mu_E/natural >= 2.28e-29, mu_T2/natural >= 2.85e-44

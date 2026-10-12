@@ -1,0 +1,16 @@
+m=1.0 r=1 L=12 ch=E : N_eff=  2 A=2.425896e-05 mu(c=0)=-1.01079e-06 ell=L^TQ+L=6.940673e-04 f_min=A-2ell=-1.36388e-03 max_c mu2=+5.68282e-05 | feasible; min-|y| solution along -Q^-1 L: s=0.00878 |y|=2.3122e-04 (rel. to |V|_w=1.2869e-02) [0s]
+m=1.0 r=1 L=12 ch=T2: no channel functions at this range
+m=1.0 r=1 L=16 ch=E : N_eff=  2 A=2.422429e-05 mu(c=0)=-1.00935e-06 ell=L^TQ+L=6.940632e-04 f_min=A-2ell=-1.36390e-03 max_c mu2=+5.68293e-05 | feasible; min-|y| solution along -Q^-1 L: s=0.00876 |y|=2.3089e-04 (rel. to |V|_w=1.2869e-02) [1s]
+m=1.0 r=1 L=16 ch=T2: no channel functions at this range
+m=1.0 r=1 L=20 ch=E : N_eff=  2 A=2.422352e-05 mu(c=0)=-1.00931e-06 ell=L^TQ+L=6.940632e-04 f_min=A-2ell=-1.36390e-03 max_c mu2=+5.68293e-05 | feasible; min-|y| solution along -Q^-1 L: s=0.00876 |y|=2.3088e-04 (rel. to |V|_w=1.2869e-02) [1s]
+m=1.0 r=1 L=20 ch=T2: no channel functions at this range
+m=1.0 r=1 L=24 ch=E : N_eff=  2 A=2.422350e-05 mu(c=0)=-1.00931e-06 ell=L^TQ+L=6.940632e-04 f_min=A-2ell=-1.36390e-03 max_c mu2=+5.68293e-05 | feasible; min-|y| solution along -Q^-1 L: s=0.00876 |y|=2.3088e-04 (rel. to |V|_w=1.2869e-02) [1s]
+m=1.0 r=1 L=24 ch=T2: no channel functions at this range
+m=1.0 r=2 L=12 ch=E : N_eff= 21 A=2.425896e-05 mu(c=0)=-1.01079e-06 ell=L^TQ+L=7.028584e-04 f_min=A-2ell=-1.38146e-03 max_c mu2=+5.75607e-05 | feasible; min-|y| solution along -Q^-1 L: s=0.00867 |y|=2.2975e-04 (rel. to |V|_w=1.2869e-02) [24s]
+m=1.0 r=2 L=12 ch=T2: N_eff=  9 A=-3.909185e-07 mu(c=0)=+1.62883e-08 ell=L^TQ+L=2.911868e-05 f_min=A-2ell=-5.86283e-05 max_c mu2=+2.44285e-06 | feasible; min-|y| solution along -Q^-1 L: s=-0.00335 |y|=1.8081e-05 (rel. to |V|_w=1.2869e-02) [25s]
+m=1.0 r=2 L=16 ch=E : N_eff= 21 A=2.422429e-05 mu(c=0)=-1.00935e-06 ell=L^TQ+L=7.028526e-04 f_min=A-2ell=-1.38148e-03 max_c mu2=+5.75617e-05 | feasible; min-|y| solution along -Q^-1 L: s=0.00865 |y|=2.2943e-04 (rel. to |V|_w=1.2869e-02) [51s]
+m=1.0 r=2 L=16 ch=T2: N_eff=  9 A=-3.866743e-07 mu(c=0)=+1.61114e-08 ell=L^TQ+L=2.911904e-05 f_min=A-2ell=-5.86248e-05 max_c mu2=+2.44270e-06 | feasible; min-|y| solution along -Q^-1 L: s=-0.00331 |y|=1.7885e-05 (rel. to |V|_w=1.2869e-02) [51s]
+m=1.0 r=2 L=20 ch=E : N_eff= 21 A=2.422352e-05 mu(c=0)=-1.00931e-06 ell=L^TQ+L=7.028525e-04 f_min=A-2ell=-1.38148e-03 max_c mu2=+5.75617e-05 | feasible; min-|y| solution along -Q^-1 L: s=0.00865 |y|=2.2942e-04 (rel. to |V|_w=1.2869e-02) [76s]
+m=1.0 r=2 L=20 ch=T2: N_eff=  9 A=-3.865974e-07 mu(c=0)=+1.61082e-08 ell=L^TQ+L=2.911905e-05 f_min=A-2ell=-5.86247e-05 max_c mu2=+2.44270e-06 | feasible; min-|y| solution along -Q^-1 L: s=-0.00331 |y|=1.7881e-05 (rel. to |V|_w=1.2869e-02) [76s]
+m=1.0 r=2 L=24 ch=E : N_eff= 21 A=2.422350e-05 mu(c=0)=-1.00931e-06 ell=L^TQ+L=7.028525e-04 f_min=A-2ell=-1.38148e-03 max_c mu2=+5.75617e-05 | feasible; min-|y| solution along -Q^-1 L: s=0.00865 |y|=2.2942e-04 (rel. to |V|_w=1.2869e-02) [100s]
+m=1.0 r=2 L=24 ch=T2: N_eff=  9 A=-3.865960e-07 mu(c=0)=+1.61082e-08 ell=L^TQ+L=2.911905e-05 f_min=A-2ell=-5.86247e-05 max_c mu2=+2.44270e-06 | feasible; min-|y| solution along -Q^-1 L: s=-0.00331 |y|=1.7881e-05 (rel. to |V|_w=1.2869e-02) [100s]

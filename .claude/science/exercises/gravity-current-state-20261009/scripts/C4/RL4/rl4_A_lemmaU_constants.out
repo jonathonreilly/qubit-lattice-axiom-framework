@@ -1,0 +1,50 @@
+=== window W = [0.10, 0.60] ===
+op0: fder check 4.4e-09 6.3e-05 | f decreasing on [0,tau2]: True ; sup|f| = 1.010751 ; h_inf <= 1.028231 ; h0 = inf_W h >= 0.769036
+     Volterra sanity: max|H_vol - f| on [0,tau2] = 0.0169 (rigorous band at tau2 = 0.0175; violation: False)
+     psi(0)=sup|f'| = 13.8522 ; Psi1 = int Phi1(x^2) dx = 6.3045 ; S2 = 18.3137 ; weights e = 0.5815, omega = 1.8996
+     theta* = 10.75 (eta* = 6.415): QLL=4.904e-03 QPL=8.969e-03 QPP=0.000e+00 E2=4.713e-03 q_g>=3=0.000e+00 -> delta = 0.0443
+        theta = 12.75 -> delta = 5.996e-03
+        theta = 15.75 -> delta = 2.985e-04
+     s = 1.0e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 205.215 ; c_fail = 0.00975 ; I_W >= 0.15112 (Volterra 0.15469) ; err = 5.4e-06 ; c_low = 0.6280 ; c_low/c_fail = 64.4 ; sd e-folds >= 64.4
+     s = 1.2e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 224.802 ; c_fail = 0.00890 ; I_W >= 0.15112 (Volterra 0.15469) ; err = 5.4e-06 ; c_low = 0.6280 ; c_low/c_fail = 70.6 ; sd e-folds >= 70.6
+op1: fder check 4.4e-09 4.5e-05 | f decreasing on [0,tau2]: True ; sup|f| = 1.081012 ; h_inf <= 1.101020 ; h0 = inf_W h >= 0.820588
+     Volterra sanity: max|H_vol - f| on [0,tau2] = 0.0194 (rigorous band at tau2 = 0.0200; violation: False)
+     psi(0)=sup|f'| = 14.8313 ; Psi1 = int Phi1(x^2) dx = 6.7315 ; S2 = 18.5455 ; weights e = 0.6226, omega = 1.9229
+     theta* = 10.75 (eta* = 6.415): QLL=5.237e-03 QPL=9.576e-03 QPP=0.000e+00 E2=4.773e-03 q_g>=3=0.000e+00 -> delta = 0.0449
+        theta = 12.75 -> delta = 6.074e-03
+        theta = 15.75 -> delta = 3.024e-04
+     s = 1.0e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 205.215 ; c_fail = 0.00975 ; I_W >= 0.17267 (Volterra 0.17704) ; err = 5.4e-06 ; c_low = 0.6704 ; c_low/c_fail = 68.8 ; sd e-folds >= 68.8
+     s = 1.2e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 224.802 ; c_fail = 0.00890 ; I_W >= 0.17267 (Volterra 0.17704) ; err = 5.4e-06 ; c_low = 0.6704 ; c_low/c_fail = 75.4 ; sd e-folds >= 75.4
+op2: fder check 4.5e-09 3.9e-05 | f decreasing on [0,tau2]: True ; sup|f| = 1.153284 ; h_inf <= 1.176070 ; h0 = inf_W h >= 0.871771
+     Volterra sanity: max|H_vol - f| on [0,tau2] = 0.0221 (rigorous band at tau2 = 0.0228; violation: False)
+     psi(0)=sup|f'| = 15.9462 ; Psi1 = int Phi1(x^2) dx = 7.2875 ; S2 = 18.9991 ; weights e = 0.6651, omega = 1.9469
+     theta* = 10.75 (eta* = 6.415): QLL=5.666e-03 QPL=1.037e-02 QPP=0.000e+00 E2=4.889e-03 q_g>=3=0.000e+00 -> delta = 0.0463
+        theta = 12.75 -> delta = 6.267e-03
+        theta = 15.75 -> delta = 3.120e-04
+     s = 1.0e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 205.215 ; c_fail = 0.00975 ; I_W >= 0.19610 (Volterra 0.20141) ; err = 5.4e-06 ; c_low = 0.7122 ; c_low/c_fail = 73.1 ; sd e-folds >= 73.1
+     s = 1.2e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 224.802 ; c_fail = 0.00890 ; I_W >= 0.19610 (Volterra 0.20141) ; err = 5.4e-06 ; c_low = 0.7122 ; c_low/c_fail = 80.1 ; sd e-folds >= 80.1
+=== window W = [0.15, 0.50] ===
+op0: fder check 4.4e-09 6.3e-05 | f decreasing on [0,tau2]: True ; sup|f| = 1.010751 ; h_inf <= 1.019143 ; h0 = inf_W h >= 0.891638
+     Volterra sanity: max|H_vol - f| on [0,tau2] = 0.0083 (rigorous band at tau2 = 0.0084; violation: False)
+     psi(0)=sup|f'| = 13.8522 ; Psi1 = int Phi1(x^2) dx = 6.3045 ; S2 = 18.3137 ; weights e = 0.4002, omega = 1.7280
+     theta* = 10.00 (eta* = 6.040): QLL=6.327e-03 QPL=1.055e-02 QPP=0.000e+00 E2=5.543e-03 q_g>=3=0.000e+00 -> delta = 0.0409
+        theta = 12.00 -> delta = 5.533e-03
+        theta = 15.00 -> delta = 2.755e-04
+     s = 1.0e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 205.215 ; c_fail = 0.00975 ; I_W >= 0.10646 (Volterra 0.10616) ; err = 1.1e-05 ; c_low = 0.5310 ; c_low/c_fail = 54.5 ; sd e-folds >= 54.5
+     s = 1.2e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 224.802 ; c_fail = 0.00890 ; I_W >= 0.10646 (Volterra 0.10616) ; err = 1.1e-05 ; c_low = 0.5310 ; c_low/c_fail = 59.7 ; sd e-folds >= 59.7
+op1: fder check 4.4e-09 4.5e-05 | f decreasing on [0,tau2]: True ; sup|f| = 1.081012 ; h_inf <= 1.090615 ; h0 = inf_W h >= 0.952781
+     Volterra sanity: max|H_vol - f| on [0,tau2] = 0.0095 (rigorous band at tau2 = 0.0096; violation: False)
+     psi(0)=sup|f'| = 14.8313 ; Psi1 = int Phi1(x^2) dx = 6.7315 ; S2 = 18.5455 ; weights e = 0.4283, omega = 1.7390
+     theta* = 10.00 (eta* = 6.040): QLL=6.758e-03 QPL=1.126e-02 QPP=0.000e+00 E2=5.613e-03 q_g>=3=0.000e+00 -> delta = 0.0411
+        theta = 12.00 -> delta = 5.564e-03
+        theta = 15.00 -> delta = 2.770e-04
+     s = 1.0e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 205.215 ; c_fail = 0.00975 ; I_W >= 0.12171 (Volterra 0.12147) ; err = 1.1e-05 ; c_low = 0.5675 ; c_low/c_fail = 58.2 ; sd e-folds >= 58.2
+     s = 1.2e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 224.802 ; c_fail = 0.00890 ; I_W >= 0.12171 (Volterra 0.12147) ; err = 1.1e-05 ; c_low = 0.5675 ; c_low/c_fail = 63.8 ; sd e-folds >= 63.8
+op2: fder check 4.5e-09 3.9e-05 | f decreasing on [0,tau2]: True ; sup|f| = 1.153284 ; h_inf <= 1.164217 ; h0 = inf_W h >= 1.014747
+     Volterra sanity: max|H_vol - f| on [0,tau2] = 0.0108 (rigorous band at tau2 = 0.0109; violation: False)
+     psi(0)=sup|f'| = 15.9462 ; Psi1 = int Phi1(x^2) dx = 7.2875 ; S2 = 18.9991 ; weights e = 0.4572, omega = 1.7503
+     theta* = 10.00 (eta* = 6.040): QLL=7.310e-03 QPL=1.219e-02 QPP=0.000e+00 E2=5.750e-03 q_g>=3=0.000e+00 -> delta = 0.0421
+        theta = 12.00 -> delta = 5.693e-03
+        theta = 15.00 -> delta = 2.834e-04
+     s = 1.0e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 205.215 ; c_fail = 0.00975 ; I_W >= 0.13837 (Volterra 0.13822) ; err = 1.1e-05 ; c_low = 0.6039 ; c_low/c_fail = 62.0 ; sd e-folds >= 62.0
+     s = 1.2e+04 m: eps = 6.8240e-64, sqrt(eps) tau = 224.802 ; c_fail = 0.00890 ; I_W >= 0.13837 (Volterra 0.13822) ; err = 1.1e-05 ; c_low = 0.6039 ; c_low/c_fail = 67.9 ; sd e-folds >= 67.9

@@ -1,0 +1,16 @@
+(a) XX chain L=10: qubit ED vs JW free-fermion spectrum: max |diff| = 2.93e-14; E0 = -6.472136 (both); dim 1024 = 1024
+    two decoupled copies ('boson chain' + 'fermion chain'): E0 = -12.944272 = 2*E0, no cancellation
+    free CCR boson with omega_k=|e_k| paired with the fermion sea would give E0 = 6.155367 + -6.155367 = 0 (needs CCR)
+(b) truncated oscillator d= 2: Tr[a,a^dag] = 0.0 (CCR would need 2); zero-point of omega*a^dag a: 0, of omega(a^dag a+1/2): needs CCR
+(b) truncated oscillator d= 4: Tr[a,a^dag] = 0.0 (CCR would need 4); zero-point of omega*a^dag a: 0, of omega(a^dag a+1/2): needs CCR
+(b) truncated oscillator d=16: Tr[a,a^dag] = 0.0 (CCR would need 16); zero-point of omega*a^dag a: 0, of omega(a^dag a+1/2): needs CCR
+(c) 2D square tori (ring of n, length Lz): W
+   n=3: Lz=3..12: [4, 1, 1, 4, 1, 1, 4, 1, 1, 4]
+   n=4: Lz=3..12: [1, 7, 1, 3, 1, 7, 1, 3, 1, 7]
+   n=5: Lz=3..12: [1, 1, -9, 1, 1, 1, 1, 11, 1, 1]
+   n=6: Lz=3..12: [4, 3, 1, 14, 1, 3, 4, -1, 1, 18]
+   n=7: Lz=3..12: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+   n=8: Lz=3..12: [1, 7, 1, 3, 1, 7, 1, 43, 1, 7]
+(c) 3D cubic tori n x n x Lz: W (and |eigenvalues| of the signed transfer matrix)
+   n=3 (layer states 34): Lz=2..10: [1, -38, 37, 1, 214, -251, -251, -1118, 2341] ; top |lambda| = [2.0323 2.0323 1.7221 1.7221]
+   n=4 (layer states 743): Lz=2..10: [11, 121, 143, 1, 275, 1, 399, 121, 91] ; top |lambda| = [1.0001 1.0001 1.     1.    ]

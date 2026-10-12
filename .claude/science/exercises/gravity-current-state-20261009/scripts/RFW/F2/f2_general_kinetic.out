@@ -1,0 +1,10 @@
+(a) K2 stress on shell, forward: max rel |T0_mn - 2 sin p_m sin p_n| = 1.12e-15
+    control off shell: rel deviation = 1.86e+00
+
+(b) 1-jet residual of the O(kappa^2) translation-Killing condition (any field-dependent completion)
+  continuum / SLAC symbols  A = k^2 + m^2    m2=0.25: residual=5.190e-10 (span T0 = 10/10)   m2=1.0: residual=6.763e-10 (span T0 = 10/10)
+  K2 nearest neighbour (R=1)                 m2=0.25: residual=5.125e-01 (span T0 = 10/10)   m2=1.0: residual=4.656e-01 (span T0 = 10/10)
+  improved O(a^4) (R=2)                      m2=0.25: residual=4.281e-01 (span T0 = 10/10)   m2=1.0: residual=3.894e-01 (span T0 = 10/10)
+  improved O(a^6) (R=3)                      m2=0.25: residual=3.762e-01 (span T0 = 10/10)   m2=1.0: residual=4.087e-01 (span T0 = 10/10)
+  two-step sin^2 k (R=2, doubled)            m2=0.25: residual=8.542e-01 (span T0 = 10/10)   m2=1.0: residual=8.444e-01 (span T0 = 10/10)
+  non-separable plaquette beta=0.5 (R=1)     m2=0.25: residual=6.524e-01 (span T0 = 10/10)   m2=1.0: residual=6.015e-01 (span T0 = 10/10)

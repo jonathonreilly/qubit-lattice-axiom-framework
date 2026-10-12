@@ -1,0 +1,16 @@
+d=3 stencil K7a: polynomial Killing fields (degree<= 3) dimension = 6
+d=3 stencil IMP: polynomial Killing fields (degree<= 3) dimension = 6
+d=3 stencil AVG: polynomial Killing fields (degree<= 3) dimension = 6
+d=3 stencil BAD: polynomial Killing fields (degree<= 3) dimension = 6
+
+d=4 stencil K7a: polynomial Killing fields (degree<= 2) dimension = 10
+d=4 stencil IMP: polynomial Killing fields (degree<= 2) dimension = 10
+d=4 stencil AVG: polynomial Killing fields (degree<= 2) dimension = 10
+d=4 stencil BAD: polynomial Killing fields (degree<= 2) dimension = 10
+
+stencil K7a: 1D symbol s(k) = exp(I*k) - 1
+stencil IMP: 1D symbol s(k) = ((-exp(2*I*k) + 27*exp(I*k) - 27)*exp(I*k) + 1)*exp(-I*k)/24
+IMP zeros: 27 sin x = sin 3x  <=>  sin x (24 + 4 sin^2 x) = 0 : real zeros only x in pi Z (k in 2 pi Z);
+           complex zeros sin^2 x = -6 (finite set mod 2 pi) -> finitely many extra exponential (non-tempered) kernel modes.
+K7a: min over 2000 random real k of the 4th singular value of D(k) = 5.812e-01 (>0: rank 4 off k=0)
+IMP: min over 2000 random real k of the 4th singular value of D(k) = 4.103e-01 (>0: rank 4 off k=0)

@@ -1,0 +1,8 @@
+TEST h(s)=exp(-s^2): momentum formula I = 0.3133281 (tail 2.7e-04) ; exact sqrt(pi/8)/2 = 0.3133285 ; rel err -1.3e-06
+op0: C0=1.010751 c2=0.692180 ; (1-ftilde)/(c2 w) at |w|=1e-3, arg 0,-pi/2,-0.99pi: [1.0058+0.j     0.9901+0.0034j 1.0125+0.001j ]
+   I_h (momentum, exact identity) = 0.595189  (analytic tail part 2.8e-04) ; k_h = sqrt(4 pi I_h) = 2.73484 ; min|1-ft|/min(|w|,1) on grid = 0.053
+op1: C0=1.081012 c2=0.660865 ; (1-ftilde)/(c2 w) at |w|=1e-3, arg 0,-pi/2,-0.99pi: [1.007 +0.j     0.989 +0.0032j 1.0135+0.0008j]
+   I_h (momentum, exact identity) = 0.639705  (analytic tail part 3.2e-04) ; k_h = sqrt(4 pi I_h) = 2.83527 ; min|1-ft|/min(|w|,1) on grid = 0.050
+op2: C0=1.153284 c2=0.631121 ; (1-ftilde)/(c2 w) at |w|=1e-3, arg 0,-pi/2,-0.99pi: [1.0084+0.j     0.9878+0.0031j 1.0145+0.0007j]
+   I_h (momentum, exact identity) = 0.842548  (analytic tail part 3.6e-04) ; k_h = sqrt(4 pi I_h) = 3.25389 ; min|1-ft|/min(|w|,1) on grid = 0.048
+elapsed 483s

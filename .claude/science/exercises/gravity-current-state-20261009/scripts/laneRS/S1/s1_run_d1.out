@@ -1,0 +1,72 @@
+
+== d=1 inter=nn m=0.5: 450 on-shell processes (0.1s); channels hit 6/16
+  max energy residual 6.7e-16
+  R=1 odd: basis 2 -> 1 block-distinct; nullity 0 (expected trivial 0); sv_max 1.746e+00, smallest nonzero sv 1.746e+00 (ratio 1.00e+00); largest 'null' sv nan; |W| median 1.42e+00, frac |W|<1e-8 0.00
+  R=1 even: basis 4 -> 3 block-distinct; nullity 2 (expected trivial 2); sv_max 2.145e-01, smallest nonzero sv 2.145e-01 (ratio 1.00e+00); largest 'null' sv 5.3e-16; |W| median 1.42e+00, frac |W|<1e-8 0.00
+   (0.2s)
+  R=2 odd: basis 4 -> 2 block-distinct; nullity 0 (expected trivial 0); sv_max 5.114e+00, smallest nonzero sv 2.469e+00 (ratio 4.83e-01); largest 'null' sv nan; |W| median 1.42e+00, frac |W|<1e-8 0.00
+  R=2 even: basis 6 -> 4 block-distinct; nullity 2 (expected trivial 2); sv_max 4.373e+00, smallest nonzero sv 4.973e-01 (ratio 1.14e-01); largest 'null' sv 6.9e-16; |W| median 1.42e+00, frac |W|<1e-8 0.00
+   (0.2s)
+  R=4 odd: basis 8 -> 4 block-distinct; nullity 0 (expected trivial 0); sv_max 6.532e+00, smallest nonzero sv 1.919e+00 (ratio 2.94e-01); largest 'null' sv nan; |W| median 1.42e+00, frac |W|<1e-8 0.00
+  R=4 even: basis 10 -> 6 block-distinct; nullity 2 (expected trivial 2); sv_max 5.083e+00, smallest nonzero sv 4.401e-02 (ratio 8.66e-03); largest 'null' sv 5.5e-16; |W| median 1.42e+00, frac |W|<1e-8 0.00
+   (0.2s)
+  R=8 odd: basis 16 -> 8 block-distinct; nullity 0 (expected trivial 0); sv_max 7.695e+00, smallest nonzero sv 1.232e+00 (ratio 1.60e-01); largest 'null' sv nan; |W| median 1.42e+00, frac |W|<1e-8 0.00
+  R=8 even: basis 18 -> 10 block-distinct; nullity 2 (expected trivial 2); sv_max 6.359e+00, smallest nonzero sv 4.508e-03 (ratio 7.09e-04); largest 'null' sv 1.1e-15; |W| median 1.42e+00, frac |W|<1e-8 0.00
+   (0.2s)
+  R=16 odd: basis 32 -> 16 block-distinct; nullity 0 (expected trivial 0); sv_max 8.155e+00, smallest nonzero sv 1.094e+00 (ratio 1.34e-01); largest 'null' sv nan; |W| median 1.42e+00, frac |W|<1e-8 0.00
+  R=16 even: basis 34 -> 18 block-distinct; nullity 2 (expected trivial 2); sv_max 6.544e+00, smallest nonzero sv 5.067e-05 (ratio 7.74e-06); largest 'null' sv 1.2e-15; |W| median 1.42e+00, frac |W|<1e-8 0.00
+   (0.3s)
+
+== d=1 inter=nn m=0.0: 450 on-shell processes (0.1s); channels hit 6/16
+  max energy residual 1.2e-15
+  R=1 odd: basis 2 -> 1 block-distinct; nullity 0 (expected trivial 0); sv_max 1.925e+00, smallest nonzero sv 1.925e+00 (ratio 1.00e+00); largest 'null' sv nan; |W| median 0.00e+00, frac |W|<1e-8 0.89
+  R=1 even: basis 4 -> 2 block-distinct; nullity 2 (expected trivial 2); sv_max 1.274e-16, smallest nonzero sv nan (ratio nan); largest 'null' sv 1.4e-48; |W| median 0.00e+00, frac |W|<1e-8 0.89
+   (0.2s)
+  R=2 odd: basis 4 -> 2 block-distinct; nullity 1 (expected trivial 0); sv_max 1.925e+00, smallest nonzero sv 1.925e+00 (ratio 1.00e+00); largest 'null' sv 4.1e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+  R=2 even: basis 6 -> 3 block-distinct; nullity 2 (expected trivial 2); sv_max 2.123e+00, smallest nonzero sv 2.123e+00 (ratio 1.00e+00); largest 'null' sv 1.2e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+   (0.2s)
+  R=4 odd: basis 8 -> 4 block-distinct; nullity 2 (expected trivial 0); sv_max 2.588e+00, smallest nonzero sv 1.260e+00 (ratio 4.87e-01); largest 'null' sv 2.0e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+  R=4 even: basis 10 -> 5 block-distinct; nullity 3 (expected trivial 2); sv_max 2.903e+00, smallest nonzero sv 1.241e+00 (ratio 4.27e-01); largest 'null' sv 1.1e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+   (0.2s)
+  R=8 odd: basis 16 -> 8 block-distinct; nullity 4 (expected trivial 0); sv_max 2.615e+00, smallest nonzero sv 7.260e-01 (ratio 2.78e-01); largest 'null' sv 2.0e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+  R=8 even: basis 18 -> 9 block-distinct; nullity 5 (expected trivial 2); sv_max 3.327e+00, smallest nonzero sv 7.147e-01 (ratio 2.15e-01); largest 'null' sv 1.1e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+   (0.2s)
+  R=16 odd: basis 32 -> 16 block-distinct; nullity 8 (expected trivial 0); sv_max 3.832e+00, smallest nonzero sv 3.543e-01 (ratio 9.25e-02); largest 'null' sv 1.6e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+  R=16 even: basis 34 -> 17 block-distinct; nullity 9 (expected trivial 2); sv_max 3.756e+00, smallest nonzero sv 3.482e-01 (ratio 9.27e-02); largest 'null' sv 6.3e-17; |W| median 0.00e+00, frac |W|<1e-8 0.89
+   (0.3s)
+
+== d=1 inter=cube m=0.5: 450 on-shell processes (0.1s); channels hit 6/16
+  max energy residual 7.8e-16
+  R=1 odd: basis 2 -> 1 block-distinct; nullity 0 (expected trivial 0); sv_max 1.646e+00, smallest nonzero sv 1.646e+00 (ratio 1.00e+00); largest 'null' sv nan; |W| median 1.58e+00, frac |W|<1e-8 0.00
+  R=1 even: basis 4 -> 3 block-distinct; nullity 2 (expected trivial 2); sv_max 2.167e-01, smallest nonzero sv 2.167e-01 (ratio 1.00e+00); largest 'null' sv 5.5e-16; |W| median 1.58e+00, frac |W|<1e-8 0.00
+   (0.2s)
+  R=2 odd: basis 4 -> 2 block-distinct; nullity 0 (expected trivial 0); sv_max 4.874e+00, smallest nonzero sv 2.325e+00 (ratio 4.77e-01); largest 'null' sv nan; |W| median 1.58e+00, frac |W|<1e-8 0.00
+  R=2 even: basis 6 -> 4 block-distinct; nullity 2 (expected trivial 2); sv_max 4.190e+00, smallest nonzero sv 5.081e-01 (ratio 1.21e-01); largest 'null' sv 8.3e-16; |W| median 1.58e+00, frac |W|<1e-8 0.00
+   (0.2s)
+  R=4 odd: basis 8 -> 4 block-distinct; nullity 0 (expected trivial 0); sv_max 6.400e+00, smallest nonzero sv 1.819e+00 (ratio 2.84e-01); largest 'null' sv nan; |W| median 1.58e+00, frac |W|<1e-8 0.00
+  R=4 even: basis 10 -> 6 block-distinct; nullity 2 (expected trivial 2); sv_max 4.906e+00, smallest nonzero sv 3.829e-02 (ratio 7.80e-03); largest 'null' sv 1.1e-15; |W| median 1.58e+00, frac |W|<1e-8 0.00
+   (0.2s)
+  R=8 odd: basis 16 -> 8 block-distinct; nullity 0 (expected trivial 0); sv_max 7.672e+00, smallest nonzero sv 1.161e+00 (ratio 1.51e-01); largest 'null' sv nan; |W| median 1.58e+00, frac |W|<1e-8 0.00
+  R=8 even: basis 18 -> 10 block-distinct; nullity 2 (expected trivial 2); sv_max 6.833e+00, smallest nonzero sv 4.950e-03 (ratio 7.24e-04); largest 'null' sv 8.8e-16; |W| median 1.58e+00, frac |W|<1e-8 0.00
+   (0.2s)
+  R=16 odd: basis 32 -> 16 block-distinct; nullity 0 (expected trivial 0); sv_max 8.523e+00, smallest nonzero sv 1.100e+00 (ratio 1.29e-01); largest 'null' sv nan; |W| median 1.58e+00, frac |W|<1e-8 0.00
+  R=16 even: basis 34 -> 18 block-distinct; nullity 2 (expected trivial 2); sv_max 7.350e+00, smallest nonzero sv 5.568e-05 (ratio 7.57e-06); largest 'null' sv 8.3e-16; |W| median 1.58e+00, frac |W|<1e-8 0.00
+   (0.3s)
+
+== d=1 inter=cube m=0.0: 450 on-shell processes (0.1s); channels hit 6/16
+  max energy residual 1.2e-15
+  R=1 odd: basis 2 -> 1 block-distinct; nullity 0 (expected trivial 0); sv_max 1.602e+00, smallest nonzero sv 1.602e+00 (ratio 1.00e+00); largest 'null' sv nan; |W| median 0.00e+00, frac |W|<1e-8 0.89
+  R=1 even: basis 4 -> 2 block-distinct; nullity 2 (expected trivial 2); sv_max 1.600e-16, smallest nonzero sv nan (ratio nan); largest 'null' sv 1.9e-48; |W| median 0.00e+00, frac |W|<1e-8 0.89
+   (0.2s)
+  R=2 odd: basis 4 -> 2 block-distinct; nullity 1 (expected trivial 0); sv_max 1.602e+00, smallest nonzero sv 1.602e+00 (ratio 1.00e+00); largest 'null' sv 5.3e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+  R=2 even: basis 6 -> 3 block-distinct; nullity 2 (expected trivial 2); sv_max 1.743e+00, smallest nonzero sv 1.743e+00 (ratio 1.00e+00); largest 'null' sv 3.5e-17; |W| median 0.00e+00, frac |W|<1e-8 0.89
+   (0.2s)
+  R=4 odd: basis 8 -> 4 block-distinct; nullity 2 (expected trivial 0); sv_max 2.775e+00, smallest nonzero sv 1.117e+00 (ratio 4.02e-01); largest 'null' sv 3.1e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+  R=4 even: basis 10 -> 5 block-distinct; nullity 3 (expected trivial 2); sv_max 2.881e+00, smallest nonzero sv 1.128e+00 (ratio 3.91e-01); largest 'null' sv 1.4e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+   (0.2s)
+  R=8 odd: basis 16 -> 8 block-distinct; nullity 4 (expected trivial 0); sv_max 3.700e+00, smallest nonzero sv 6.640e-01 (ratio 1.79e-01); largest 'null' sv 2.1e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+  R=8 even: basis 18 -> 9 block-distinct; nullity 5 (expected trivial 2); sv_max 4.355e+00, smallest nonzero sv 6.706e-01 (ratio 1.54e-01); largest 'null' sv 1.3e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+   (0.2s)
+  R=16 odd: basis 32 -> 16 block-distinct; nullity 8 (expected trivial 0); sv_max 4.285e+00, smallest nonzero sv 3.645e-01 (ratio 8.51e-02); largest 'null' sv 2.0e-16; |W| median 0.00e+00, frac |W|<1e-8 0.89
+  R=16 even: basis 34 -> 17 block-distinct; nullity 9 (expected trivial 2); sv_max 5.591e+00, smallest nonzero sv 3.459e-01 (ratio 6.19e-02); largest 'null' sv 6.5e-17; |W| median 0.00e+00, frac |W|<1e-8 0.89
+   (0.3s)

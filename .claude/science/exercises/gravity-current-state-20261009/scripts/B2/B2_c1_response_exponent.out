@@ -1,0 +1,11 @@
+Planck-normalised medium, c = 1
+f=    20 Hz  w/M_P=6.77e-42  n_mass>2.52  n_damp(40 Mpc)>2.49  n_damp(1 Gpc)>2.52
+f=   100 Hz  w/M_P=3.39e-41  n_mass>2.56  n_damp(40 Mpc)>2.51  n_damp(1 Gpc)>2.55
+f=  1000 Hz  w/M_P=3.39e-40  n_mass>2.63  n_damp(40 Mpc)>2.55  n_damp(1 Gpc)>2.59
+
+Classical dissipative liquid, n = 1 (eta = G_inf * tau, Planck values g*kappa):
+  40 Mpc: D = 7.64e+58 l_P ; need g*kappa < 5.2e-62  (amplitude loss < 10%)
+  1 Gpc: D = 1.91e+60 l_P ; need g*kappa < 2.1e-63  (amplitude loss < 10%)
+
+Lorentz-invariant quantum vacuum: Pi ~ G k^4 log k^2  ->  n = 4 at q = 0:
+  at 100 Hz: Pi/M_P^2 ~ 16 pi x^4 = 6.6e-161 ; mass bound needs < 1.1e-102

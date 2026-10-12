@@ -1,0 +1,148 @@
+=== z2_A_e1.npz: eps=1 T=10 d=2 R=3139 <n>=1929
+ w0=0.0 |mean|~1.62e+06 (median |mean|/sem 0.6)  V(T)=7.26e+17  rel var V/|mean|^2 (late median)=9.29e+03
+     fit late window tau in [5.68,9.80]: p=0: gamma=4.674 +- 0.036 lnA=-4.73 | free p: p=5.47 gamma=3.957 lnA=-10.31 | p=-3/2: gamma=4.870 lnA=-3.20
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.803 0.637 0.389 0.15  0.043 0.007 0.016 0.015]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: -
+     tau_c(0)=0.2579 tau_c(+w0)=0.2579 tau_c(-w0)=0.2579 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0082, 0.3 -> 0.0246
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.059  <2: 0.161 ; |w|<1: 0.059 ; |w+w0|<1: 0.059 ; |w|>10: 0.449 ; |w|>20: 0.253
+ w0=0.1 |mean|~1.62e+06 (median |mean|/sem 0.6)  V(T)=7.26e+17  rel var V/|mean|^2 (late median)=9.26e+03
+     fit late window tau in [5.68,9.80]: p=0: gamma=4.674 +- 0.036 lnA=-4.73 | free p: p=5.47 gamma=3.958 lnA=-10.30 | p=-3/2: gamma=4.870 lnA=-3.20
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.803 0.637 0.389 0.15  0.043 0.007 0.016 0.015]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [-0.01  0.4   0.72 -0.27]
+     tau_c(0)=0.2579 tau_c(+w0)=0.2574 tau_c(-w0)=0.2575 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0082, 0.3 -> 0.0246
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.059  <2: 0.161 ; |w|<1: 0.059 ; |w+w0|<1: 0.059 ; |w|>10: 0.449 ; |w|>20: 0.253
+ w0=0.3 |mean|~1.63e+06 (median |mean|/sem 0.6)  V(T)=7.26e+17  rel var V/|mean|^2 (late median)=9.32e+03
+     fit late window tau in [5.68,9.80]: p=0: gamma=4.674 +- 0.036 lnA=-4.73 | free p: p=5.42 gamma=3.964 lnA=-10.26 | p=-3/2: gamma=4.870 lnA=-3.20
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.803 0.637 0.389 0.15  0.043 0.007 0.016 0.015]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [-0.01  0.4   0.71 -0.26]
+     tau_c(0)=0.2583 tau_c(+w0)=0.2532 tau_c(-w0)=0.2539 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0081, 0.3 -> 0.0242
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.059  <2: 0.161 ; |w|<1: 0.059 ; |w+w0|<1: 0.059 ; |w|>10: 0.449 ; |w|>20: 0.253
+ w0=1.0 |mean|~1.68e+06 (median |mean|/sem 0.6)  V(T)=7.24e+17  rel var V/|mean|^2 (late median)=8.51e+03
+     fit late window tau in [5.68,9.80]: p=0: gamma=4.674 +- 0.038 lnA=-4.73 | free p: p=4.93 gamma=4.028 lnA=-9.76 | p=-3/2: gamma=4.871 lnA=-3.20
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.803 0.637 0.39  0.151 0.043 0.008 0.017 0.016]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [-0.01  0.37  0.61 -0.22]
+     tau_c(0)=0.2618 tau_c(+w0)=0.2133 tau_c(-w0)=0.2186 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0068, 0.3 -> 0.0204
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.051  <2: 0.110 ; |w|<1: 0.059 ; |w+w0|<1: 0.051 ; |w|>10: 0.450 ; |w|>20: 0.253
+ w0=2.0 |mean|~1.73e+06 (median |mean|/sem 0.7)  V(T)=7.18e+17  rel var V/|mean|^2 (late median)=6.17e+03
+     fit late window tau in [5.68,9.80]: p=0: gamma=4.673 +- 0.043 lnA=-4.73 | free p: p=3.68 gamma=4.191 lnA=-8.48 | p=-3/2: gamma=4.870 lnA=-3.20
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.804 0.639 0.392 0.154 0.045 0.009 0.02  0.018]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [-0.01  0.29  0.41 -0.14]
+     tau_c(0)=0.2729 tau_c(+w0)=0.1576 tau_c(-w0)=0.1609 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0050, 0.3 -> 0.0151
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.051  <2: 0.099 ; |w|<1: 0.060 ; |w+w0|<1: 0.050 ; |w|>10: 0.451 ; |w|>20: 0.255
+ w0=4.0 |mean|~1.84e+06 (median |mean|/sem 0.8)  V(T)=7.25e+17  rel var V/|mean|^2 (late median)=5.39e+03
+     fit late window tau in [5.68,9.80]: p=0: gamma=4.668 +- 0.055 lnA=-4.70 | free p: p=0.08 gamma=4.657 lnA=-4.78 | p=-3/2: gamma=4.864 lnA=-3.16
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.806 0.643 0.4   0.163 0.05  0.014 0.027 0.024]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [ 0.    0.1   0.14 -0.05]
+     tau_c(0)=0.3049 tau_c(+w0)=0.2116 tau_c(-w0)=0.1902 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0067, 0.3 -> 0.0202
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.093  <2: 0.093 ; |w|<1: 0.062 ; |w+w0|<1: 0.086 ; |w|>10: 0.453 ; |w|>20: 0.256
+=== z2_A_e05.npz: eps=0.5 T=9 d=2 R=1637 <n>=2615
+ w0=0.0 |mean|~39.7 (median |mean|/sem 0.7)  V(T)=1.78e+08  rel var V/|mean|^2 (late median)=3.61e+03
+     fit late window tau in [4.61,8.77]: p=0: gamma=2.721 +- 0.015 lnA=-4.93 | free p: p=-1.43 gamma=2.939 lnA=-3.69 | p=-3/2: gamma=2.949 lnA=-3.63
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.849 0.713 0.488 0.195 0.057 0.014 0.013 0.018]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: -
+     tau_c(0)=0.2914 tau_c(+w0)=0.2914 tau_c(-w0)=0.2914 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0093, 0.3 -> 0.0278
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.067  <2: 0.183 ; |w|<1: 0.067 ; |w+w0|<1: 0.067 ; |w|>10: 0.395 ; |w|>20: 0.208
+ w0=0.1 |mean|~39.7 (median |mean|/sem 0.7)  V(T)=1.78e+08  rel var V/|mean|^2 (late median)=3.63e+03
+     fit late window tau in [4.61,8.77]: p=0: gamma=2.721 +- 0.015 lnA=-4.93 | free p: p=-1.44 gamma=2.939 lnA=-3.69 | p=-3/2: gamma=2.949 lnA=-3.63
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.849 0.713 0.488 0.195 0.057 0.014 0.013 0.018]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [ 0.01 -0.21 -0.39 -0.3 ]
+     tau_c(0)=0.2913 tau_c(+w0)=0.2909 tau_c(-w0)=0.2909 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0093, 0.3 -> 0.0278
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.067  <2: 0.183 ; |w|<1: 0.067 ; |w+w0|<1: 0.067 ; |w|>10: 0.395 ; |w|>20: 0.208
+ w0=0.3 |mean|~39.5 (median |mean|/sem 0.7)  V(T)=1.78e+08  rel var V/|mean|^2 (late median)=3.66e+03
+     fit late window tau in [4.61,8.77]: p=0: gamma=2.721 +- 0.015 lnA=-4.93 | free p: p=-1.45 gamma=2.941 lnA=-3.68 | p=-3/2: gamma=2.949 lnA=-3.63
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.849 0.713 0.488 0.195 0.057 0.013 0.013 0.018]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [ 0.01 -0.21 -0.4  -0.3 ]
+     tau_c(0)=0.2907 tau_c(+w0)=0.2874 tau_c(-w0)=0.2868 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0091, 0.3 -> 0.0274
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.067  <2: 0.183 ; |w|<1: 0.067 ; |w+w0|<1: 0.067 ; |w|>10: 0.395 ; |w|>20: 0.208
+ w0=1.0 |mean|~36.8 (median |mean|/sem 0.6)  V(T)=1.74e+08  rel var V/|mean|^2 (late median)=4.09e+03
+     fit late window tau in [4.61,8.77]: p=0: gamma=2.721 +- 0.015 lnA=-4.96 | free p: p=-1.57 gamma=2.961 lnA=-3.59 | p=-3/2: gamma=2.949 lnA=-3.66
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.849 0.713 0.488 0.193 0.055 0.01  0.012 0.017]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [ 0.01 -0.16 -0.51 -0.29]
+     tau_c(0)=0.2842 tau_c(+w0)=0.2540 tau_c(-w0)=0.2545 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0081, 0.3 -> 0.0243
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.057  <2: 0.123 ; |w|<1: 0.066 ; |w+w0|<1: 0.058 ; |w|>10: 0.395 ; |w|>20: 0.208
+ w0=2.0 |mean|~34.7 (median |mean|/sem 0.7)  V(T)=1.63e+08  rel var V/|mean|^2 (late median)=3.32e+03
+     fit late window tau in [4.61,8.77]: p=0: gamma=2.724 +- 0.014 lnA=-5.05 | free p: p=-1.83 gamma=3.003 lnA=-3.46 | p=-3/2: gamma=2.952 lnA=-3.75
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.848 0.712 0.487 0.191 0.052 0.006 0.011 0.014]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [ 0.01 -0.08 -0.67 -0.2 ]
+     tau_c(0)=0.2710 tau_c(+w0)=0.2118 tau_c(-w0)=0.2287 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0067, 0.3 -> 0.0202
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.056  <2: 0.107 ; |w|<1: 0.065 ; |w+w0|<1: 0.058 ; |w|>10: 0.397 ; |w|>20: 0.209
+ w0=4.0 |mean|~36.1 (median |mean|/sem 0.8)  V(T)=1.43e+08  rel var V/|mean|^2 (late median)=2.89e+03
+     fit late window tau in [4.61,8.77]: p=0: gamma=2.727 +- 0.013 lnA=-5.21 | free p: p=-2.51 gamma=3.110 lnA=-3.04 | p=-3/2: gamma=2.956 lnA=-3.91
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.848 0.712 0.489 0.194 0.056 0.004 0.014 0.012]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [ 0.01 -0.02 -0.37 -0.08]
+     tau_c(0)=0.2664 tau_c(+w0)=0.1978 tau_c(-w0)=0.1843 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0063, 0.3 -> 0.0189
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.098  <2: 0.098 ; |w|<1: 0.064 ; |w+w0|<1: 0.100 ; |w|>10: 0.396 ; |w|>20: 0.209
+=== z2_A_e025.npz: eps=0.25 T=8 d=2 R=960 <n>=3398
+ w0=0.0 |mean|~0.304 (median |mean|/sem 1.0)  V(T)=1.12e+03  rel var V/|mean|^2 (late median)=957
+     fit late window tau in [3.49,7.75]: p=0: gamma=1.472 +- 0.011 lnA=-4.52 | free p: p=-1.23 gamma=1.697 lnA=-3.69 | p=-3/2: gamma=1.746 lnA=-3.51
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.866 0.735 0.489 0.118 0.05  0.024 0.029 0.003]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: -
+     tau_c(0)=0.2239 tau_c(+w0)=0.2239 tau_c(-w0)=0.2239 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0071, 0.3 -> 0.0214
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.057  <2: 0.157 ; |w|<1: 0.057 ; |w+w0|<1: 0.057 ; |w|>10: 0.384 ; |w|>20: 0.175
+ w0=0.1 |mean|~0.306 (median |mean|/sem 1.0)  V(T)=1.12e+03  rel var V/|mean|^2 (late median)=970
+     fit late window tau in [3.49,7.75]: p=0: gamma=1.472 +- 0.011 lnA=-4.52 | free p: p=-1.23 gamma=1.697 lnA=-3.70 | p=-3/2: gamma=1.746 lnA=-3.51
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.866 0.735 0.489 0.118 0.05  0.024 0.029 0.003]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [1.85e-02 1.04e+02 6.20e+01 1.07e-02]
+     tau_c(0)=0.2238 tau_c(+w0)=0.2238 tau_c(-w0)=0.2236 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0071, 0.3 -> 0.0214
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.056  <2: 0.157 ; |w|<1: 0.056 ; |w+w0|<1: 0.056 ; |w|>10: 0.384 ; |w|>20: 0.175
+ w0=0.3 |mean|~0.307 (median |mean|/sem 1.0)  V(T)=1.11e+03  rel var V/|mean|^2 (late median)=985
+     fit late window tau in [3.49,7.75]: p=0: gamma=1.471 +- 0.011 lnA=-4.53 | free p: p=-1.23 gamma=1.696 lnA=-3.70 | p=-3/2: gamma=1.746 lnA=-3.52
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.866 0.735 0.488 0.118 0.05  0.024 0.028 0.003]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [1.95e-02 3.43e+01 2.02e+01 1.07e-02]
+     tau_c(0)=0.2234 tau_c(+w0)=0.2236 tau_c(-w0)=0.2218 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0071, 0.3 -> 0.0214
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.056  <2: 0.156 ; |w|<1: 0.056 ; |w+w0|<1: 0.056 ; |w|>10: 0.384 ; |w|>20: 0.175
+ w0=1.0 |mean|~0.291 (median |mean|/sem 0.9)  V(T)=1.02e+03  rel var V/|mean|^2 (late median)=1.21e+03
+     fit late window tau in [3.49,7.75]: p=0: gamma=1.469 +- 0.010 lnA=-4.59 | free p: p=-1.34 gamma=1.714 lnA=-3.69 | p=-3/2: gamma=1.743 lnA=-3.58
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.866 0.736 0.488 0.116 0.053 0.024 0.024 0.001]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [ 0.02 10.23  5.76  0.02]
+     tau_c(0)=0.2210 tau_c(+w0)=0.2166 tau_c(-w0)=0.2086 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0069, 0.3 -> 0.0207
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.050  <2: 0.105 ; |w|<1: 0.055 ; |w+w0|<1: 0.048 ; |w|>10: 0.386 ; |w|>20: 0.175
+ w0=2.0 |mean|~0.244 (median |mean|/sem 0.8)  V(T)=804  rel var V/|mean|^2 (late median)=1.42e+03
+     fit late window tau in [3.49,7.75]: p=0: gamma=1.469 +- 0.008 lnA=-4.82 | free p: p=-1.72 gamma=1.783 lnA=-3.66 | p=-3/2: gamma=1.744 lnA=-3.81
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.867 0.735 0.486 0.111 0.052 0.021 0.018 0.005]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [-1.53e-02 -5.17e+00  2.90e+00 -1.05e-03]
+     tau_c(0)=0.2213 tau_c(+w0)=0.1892 tau_c(-w0)=0.1856 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0060, 0.3 -> 0.0181
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.050  <2: 0.093 ; |w|<1: 0.054 ; |w+w0|<1: 0.048 ; |w|>10: 0.393 ; |w|>20: 0.174
+ w0=4.0 |mean|~0.232 (median |mean|/sem 1.0)  V(T)=555  rel var V/|mean|^2 (late median)=994
+     fit late window tau in [3.49,7.75]: p=0: gamma=1.466 +- 0.008 lnA=-5.19 | free p: p=-1.87 gamma=1.808 lnA=-3.94 | p=-3/2: gamma=1.741 lnA=-4.19
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.865 0.732 0.481 0.108 0.054 0.016 0.02  0.008]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [-0.03 -2.59  1.53 -0.07]
+     tau_c(0)=0.2190 tau_c(+w0)=0.1583 tau_c(-w0)=0.1608 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0050, 0.3 -> 0.0151
+     periodogram (late window 4.00 l_k, resolution 1.57): frac |w-w0|<1: 0.085  <2: 0.085 ; |w|<1: 0.053 ; |w+w0|<1: 0.085 ; |w|>10: 0.397 ; |w|>20: 0.178
+=== z2_A_e0125.npz: eps=0.125 T=7 d=2 R=594 <n>=4173
+ w0=0.0 |mean|~0.0617 (median |mean|/sem 2.0)  V(T)=2.55  rel var V/|mean|^2 (late median)=144
+     fit late window tau in [2.90,6.71]: p=0: gamma=0.781 +- 0.011 lnA=-4.34 | free p: p=0.48 gamma=0.679 lnA=-4.58 | p=-3/2: gamma=1.103 lnA=-3.57
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.868 0.727 0.443 0.008 0.18  0.004 0.004 0.024]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: -
+     tau_c(0)=0.1359 tau_c(+w0)=0.1359 tau_c(-w0)=0.1359 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0043, 0.3 -> 0.0130
+     periodogram (late window 3.50 l_k, resolution 1.80): frac |w-w0|<1: 0.041  <2: 0.119 ; |w|<1: 0.041 ; |w+w0|<1: 0.041 ; |w|>10: 0.466 ; |w|>20: 0.159
+ w0=0.1 |mean|~0.0632 (median |mean|/sem 2.0)  V(T)=2.55  rel var V/|mean|^2 (late median)=147
+     fit late window tau in [2.90,6.71]: p=0: gamma=0.781 +- 0.011 lnA=-4.34 | free p: p=0.47 gamma=0.680 lnA=-4.58 | p=-3/2: gamma=1.102 lnA=-3.57
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.868 0.727 0.443 0.008 0.18  0.004 0.004 0.024]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [7.37e-02 1.05e+02 5.68e+01 4.72e+00]
+     tau_c(0)=0.1361 tau_c(+w0)=0.1363 tau_c(-w0)=0.1362 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0043, 0.3 -> 0.0130
+     periodogram (late window 3.50 l_k, resolution 1.80): frac |w-w0|<1: 0.041  <2: 0.119 ; |w|<1: 0.041 ; |w+w0|<1: 0.041 ; |w|>10: 0.466 ; |w|>20: 0.159
+ w0=0.3 |mean|~0.0669 (median |mean|/sem 2.0)  V(T)=2.52  rel var V/|mean|^2 (late median)=150
+     fit late window tau in [2.90,6.71]: p=0: gamma=0.779 +- 0.011 lnA=-4.34 | free p: p=0.40 gamma=0.693 lnA=-4.55 | p=-3/2: gamma=1.101 lnA=-3.58
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.868 0.728 0.444 0.008 0.179 0.005 0.007 0.023]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [ 0.07 34.71 15.38  3.27]
+     tau_c(0)=0.1377 tau_c(+w0)=0.1393 tau_c(-w0)=0.1389 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0044, 0.3 -> 0.0133
+     periodogram (late window 3.50 l_k, resolution 1.80): frac |w-w0|<1: 0.041  <2: 0.081 ; |w|<1: 0.041 ; |w+w0|<1: 0.041 ; |w|>10: 0.465 ; |w|>20: 0.158
+ w0=1.0 |mean|~0.0634 (median |mean|/sem 2.4)  V(T)=2.26  rel var V/|mean|^2 (late median)=101
+     fit late window tau in [2.90,6.71]: p=0: gamma=0.770 +- 0.010 lnA=-4.45 | free p: p=-0.27 gamma=0.828 lnA=-4.31 | p=-3/2: gamma=1.092 lnA=-3.68
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.873 0.736 0.454 0.005 0.174 0.011 0.013 0.017]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [ 0.04 10.25  2.72  1.27]
+     tau_c(0)=0.1542 tau_c(+w0)=0.1598 tau_c(-w0)=0.1479 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0051, 0.3 -> 0.0153
+     periodogram (late window 3.50 l_k, resolution 1.80): frac |w-w0|<1: 0.044  <2: 0.088 ; |w|<1: 0.044 ; |w+w0|<1: 0.039 ; |w|>10: 0.451 ; |w|>20: 0.149
+ w0=2.0 |mean|~0.0605 (median |mean|/sem 2.4)  V(T)=1.51  rel var V/|mean|^2 (late median)=102
+     fit late window tau in [2.90,6.71]: p=0: gamma=0.768 +- 0.010 lnA=-4.80 | free p: p=-0.33 gamma=0.838 lnA=-4.63 | p=-3/2: gamma=1.089 lnA=-4.03
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.879 0.746 0.466 0.007 0.173 0.012 0.002 0.007]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [-0.04  5.15  1.08  0.02]
+     tau_c(0)=0.1775 tau_c(+w0)=0.1492 tau_c(-w0)=0.1262 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0047, 0.3 -> 0.0142
+     periodogram (late window 3.50 l_k, resolution 1.80): frac |w-w0|<1: 0.045  <2: 0.088 ; |w|<1: 0.047 ; |w+w0|<1: 0.040 ; |w|>10: 0.446 ; |w|>20: 0.142
+ w0=4.0 |mean|~0.0244 (median |mean|/sem 1.3)  V(T)=0.782  rel var V/|mean|^2 (late median)=357
+     fit late window tau in [2.90,6.71]: p=0: gamma=0.787 +- 0.010 lnA=-5.61 | free p: p=-0.60 gamma=0.917 lnA=-5.30 | p=-3/2: gamma=1.109 lnA=-4.84
+     |rho(delta)| at delta=0.025,0.05,0.1,0.2,0.3,0.5,1,2: [0.883 0.752 0.473 0.005 0.18  0.009 0.008 0.013]
+     arg rho / (-w0 delta) at delta=0.1,0.3,0.5,1: [-0.03  2.61  0.91 -0.22]
+     tau_c(0)=0.1851 tau_c(+w0)=0.1387 tau_c(-w0)=0.1444 [=S(w)/V]; white in-band fraction f(Dw)=Dw tau_c(w0)/pi: Dw=0.1 -> 0.0044, 0.3 -> 0.0132
+     periodogram (late window 3.50 l_k, resolution 1.80): frac |w-w0|<1: 0.038  <2: 0.085 ; |w|<1: 0.047 ; |w+w0|<1: 0.038 ; |w|>10: 0.449 ; |w|>20: 0.141

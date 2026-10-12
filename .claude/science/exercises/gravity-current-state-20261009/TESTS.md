@@ -3437,3 +3437,45 @@ Readings:
 - **dS/CFT keeps three spatial dimensions,** but not the literal Z³. Adding Z³ breaks conformal symmetry.
 - **N-bound.** 4.78e122 qubits. The overcount is of order 1e61; the fm-scale minimum spacing is 3.4–4.6 fm, depending on the slicing.
 - **Rule C** gives log₂N = |V| − |C| on open sets, 3L² − 3L + 1 for a box. The torus rank differs, but the nullity is the same.
+
+### C5 Round 8 (pre-registered 15:39Z; launched now)
+
+These follow up the two survivors: R7-1 (PASS WITH SCOPE) and R6-4 (VIABLE).
+
+**R8-1. Repair and extend R7-1's interacting sector (P2).**
+- The R7-1 referee found P2 defective as written: wrong boost sign; the quartic prefactor must be ¼; the boost was never constructed or tested.
+- Repair the two-body Bakamjian–Thomas box law. Construct K for the interacting two-particle box sector, and verify every Poincaré commutator numerically on the lattice, in d = 1 and then d = 2 with a rotationally invariant channel.
+- Prove the interacting leakage bound, using internal-mass spectral support.
+
+Readings:
+- **PASS:** the repaired interacting two-body box sector has an exact Poincaré algebra (d = 2 with rotations), and the interacting leakage bound is proved, checked.
+- **FAIL:** an obstruction to the interacting algebra on the box sector in d ≥ 2 (refereed).
+- **INCONCLUSIVE:** otherwise.
+
+**R8-2. The edge-mode universality problem in box-confined Poincaré.**
+- In R7-1's law, the zone-edge modes outside the box carry energy and the whole lattice anomaly. The referee notes that excluding them from gravity violates universal coupling.
+- Can the edge sector be:
+  - (a) made to gravitate with a lattice symbol, with the Ward identities closing on box ⊕ edge;
+  - (b) gapped to the Planck scale so it is never produced and its coupling is irrelevant below a bound;
+  - (c) removed by a non-periodic momentum space (a price on Lattice)?
+- Quantify the equivalence-principle violation (Eötvös η) from edge modes for each option.
+
+Readings:
+- **PASS:** an option with universal coupling at linear order (box plus edge) and Eötvös η below 1e-15, with prices named, checked.
+- **FAIL:** a no-go showing universal coupling cannot hold with an exact box sector, in a stated class (refereed).
+- **INCONCLUSIVE:** otherwise.
+
+**R8-3. Relativistic completion of R6-4's smeared CQ gravity.**
+- R6-4 (refereed): smeared Newtonian CQ is VIABLE on 4e-10 to 5e-6 m. Its covariant completion is OPEN.
+- Construct the cheapest relativistic smeared CQ theory: covariant smearing of the stress-tensor coupling (e^{ℓ²□} or a causal smearing), or Oppenheim–Weller-Davies with field-dependent kernels.
+- Test:
+  - light bending (γ);
+  - GW170817 (c_T), given that classical gravity has no graviton but metric waves exist classically;
+  - Shapiro delay;
+  - the timelike-momentum problems of e^{ℓ²□};
+  - positivity (complete positivity) at finite c.
+
+Readings:
+- **VIABLE:** an explicit covariant smeared CQ theory passing the stated bounds, with prices named.
+- **EXCLUDED:** violates a stated bound or is internally inconsistent (refereed).
+- **OPEN:** otherwise.

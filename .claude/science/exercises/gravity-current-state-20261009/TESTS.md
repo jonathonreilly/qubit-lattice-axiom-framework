@@ -4986,3 +4986,11 @@ Readings:
 - **PASS:** an explicit regular reader giving Λ̃ = 0 to stated precision through (a)–(c) without tuning, checked.
 - **FAIL:** a refereed no-go: no causal regular reader annihilates constants while tracking the stated content, in a stated class.
 - **INCONCLUSIVE:** otherwise.
+- **R15-2 (spin-2 E1 assembly):** worker reading OPEN.
+  - Conserved spin-2 noise is built exactly from a finite start; this needs f(0) = f′(0) = 0, which the repaired gain has.
+  - Lemma A: the theorem-U/Lemma-C walls bind only TT; the scalar and vector channels are instantaneous and finite.
+  - Lemma B: a plain finite start violates Bianchi; a B term repairs it, and decays only with a zero-first-moment gain.
+  - The TT weight is ¼ of the prior normalization; CP holds in the exact limit.
+  - New budget term: constraint-channel record-noise energy, ~ρ_Λ × (1.2–2e12) if non-radiative noise gravitates (premise iii).
+
+  Referee running.

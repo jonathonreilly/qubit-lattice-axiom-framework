@@ -1,0 +1,112 @@
+[1] linearized-GR exchange for conserved sources, p = (w, 0, 0, k) in the CMB frame, eta = diag(-1,1,1,1), units 16 pi G = 1
+    200 random conserved pairs: max |p_mu T^mu nu| = 9.6e-15; max rel |E_Lorenz - (TT/s + V/k^2 + S-block)| = 3.2e-15
+    E = TT:TT'/(k^2-w^2) - 2 T^0a T'^0a/k^2 + (1/2) rho rho' (k^2-w^2)/k^4 + (1/2)(rho T'_perp + T_perp rho')/k^2  [x 16 pi G]
+    => only TT carries the cone pole; V and S blocks are instantaneous (polynomial in w over k^n); S block det = -1/(4k^4) < 0 (indefinite)
+    at w -> k: S block entries (1.0e-09, 0.50), V entry -2.00: finite (no 1/s)
+
+    repaired gain f(t) = e^-x x^2 (4-x)/(2 tau): int f = 1.000000000000, first moment = 0.0e+00, third moment = -120.0000 tau^3; f(0) = 0.0, f'(0) = 0.0, f''(0) = 4.0/tau^3
+
+[2] conserved S/V record noise with a finite start t0 = 0 (one mode, k = 2/tau): free data rho, T^0a filtered by the gain; derived
+    J^z0 = (i/k) d_t J^00, J^zz = (i/k)^2 d_t^2 J^00  (exact conservation  d_t J^0nu + i k J^z nu = 0)
+    repaired n=4: J^0nu(t0) = (-1.6e-17, 0.0e+00); rel. residual nu=0: 1.3e-04; Var J^zz (sample) = 1.679e-01 vs int (f'')^2/k^4 = 1.592e-01
+    literal n=2 (f'(0)=1): J^0nu(t0) = (-1.6e-17, 1.9e-03); rel. residual nu=0: 4.6e-02; Var J^zz (sample) = 3.142e+01 vs int (f'')^2/k^4 = 7.838e-02 (white-noise term f'(0) xi present: Var J^zz = infinity in the dt -> 0 limit)
+    TT channel: xi^TT_ij is spatial, transverse, traceless => d_mu xi^mu nu = 0 identically, no time derivative, enters no constraint
+    => with f(0) = f'(0) = 0 (repaired n = 4; literal n >= 3) the conserved S/V noise starts at zero (J^0nu(t0) = 0, so the Gauss/momentum
+       constraints hold with h = hdot = 0 at t0) and every component has finite variance. subtraction: none
+
+[3] mean field with a finite start: J = f *_{t0} T for pre-existing conserved matter (one mode, k = 2, tau = 1)
+    repaired n=4: max|defect nu=0| = 0.915 (predicted f(t-t0) T^00(t0): 0.915; max|defect - prediction| = 5.5e-04); nu=z: 0.065 vs 0.065
+        with the initial-memory term B: max|defect| = 3.6e-04; J^00(t0+) + B^00(t0) = 1.4551 vs T^00(t0) = 1.4553; Psi1(inf) = 7.23e-13 tau (first moment)
+    literal n=3: max|defect nu=0| = 0.394 (predicted f(t-t0) T^00(t0): 0.394; max|defect - prediction| = 1.8e-04); nu=z: 0.028 vs 0.028
+        with the initial-memory term B: max|defect| = 1.5e-04; J^00(t0+) + B^00(t0) = 1.4551 vs T^00(t0) = 1.4553; Psi1(inf) = 3.00e+00 tau (first moment)
+    B^00 = psi(t-t0) T^00(t0) - Psi1(t-t0) div T^0i(t0),  B^0i = psi(t-t0) T^0i(t0),  B^ij = 0;  psi(s) = int_s^inf f,  Psi1(s) = int_0^s psi
+    => R13-6's H3 (h = hdot = 0, couplings switched on) violates the Bianchi identity for t - t0 ~ tau whenever T^0nu(t0) != 0;
+       B repairs it exactly and is transient iff the first moment vanishes (repaired gain); the literal gain leaves a frozen B^00 = n tau dT^00/dt(t0)
+
+[4] TT channel: least-decoherence per polarization, S_h,lambda = 8 pi G hbar |F|^2 /(c^2 |W^2 - w^2|) (W = ck); h_lambda = sqrt(8 pi G hbar/c^2) (f * J0(W.)) * xi
+    W tau = 0.1: K(0) = 3.6e-17, K'(0) = -4.4e-18; T=30: Var h = 2.2109, Var hdot = 1.4064; T=300: Var h = 3.0233, Var hdot = 2.2292; T=3000: Var h = 3.8398, Var hdot = 3.0469
+        slopes per ln T: Var h 0.3546, Var hdot 0.3551; predicted |F(W)|^2/pi = 0.3548
+    W tau = 1.0: K(0) = 4.9e-18, K'(0) = -1.4e-17; T=30: Var h = 1.9505, Var hdot = 1.6061; T=300: Var h = 2.7530, Var hdot = 2.3982; T=3000: Var h = 3.5340, Var hdot = 3.1783
+        slopes per ln T: Var h 0.3392, Var hdot 0.3388; predicted |F(W)|^2/pi = 0.3382
+    int_0^X J0^2 = (ln X + 2.6567)/pi  (ln 8 + gamma_E = 2.6567);  int_0^X J1^2 = (ln X + 0.6567)/pi  (X = 1e5)
+    unfiltered kernel J0 (F = 1): hdot = xi - W (J1 * xi), Var hdot = infinity (referee R13-6 point 4); with the gain K(0) = K'(0) = 0 => finite
+    energy: rho_GW = (c^2/32 pi G) <hdot_ij hdot_ij>, h_ij = sum_lambda h_lambda e^lambda_ij, e:e = 2, two polarizations
+      => rho_GW = (hbar c /(2 pi^3)) int dk k^3 eps |F|^2 [ln(c k t) + c1]  vs R11-5/R13-6 formula (2 hbar c/pi^3) int dk k^3 eps |F|^2 ln(c k t)
+      => exact TT weight = 1/4 of the assumed O(1) normalization at leading log; constant c1 = ln 8 + gamma_E - 2 inside the log
+
+[5] CP in the exact limit: approximant kernels J0_N(t) = (1/N) sum_j cos(W cos th_j t) e^{-Gam t} (Gauss-Chebyshev for the arcsine measure)
+    ||A||_HS = 2.128e+01 (so ||C||_1 = ||A||_HS^2 = 4.527e+02); quadrature is exact-in-practice for t < ~N/W, so convergence sets in at N ~ T W
+    N=   8: ||A_N - A||_HS = 5.25e+01; relative trace-norm bound ||C_N - C||_1/||C||_1 <= 9.09e+00; min Re H_N(Re p >= 0) = 2.44e-03 (positive-real => outer)
+    N=  32: ||A_N - A||_HS = 2.09e+01; relative trace-norm bound ||C_N - C||_1/||C||_1 <= 2.36e+00; min Re H_N(Re p >= 0) = 1.59e-05 (positive-real => outer)
+    N= 128: ||A_N - A||_HS = 2.58e-02; relative trace-norm bound ||C_N - C||_1/||C||_1 <= 2.43e-03; min Re H_N(Re p >= 0) = 1.59e-03 (positive-real => outer)
+    N= 512: ||A_N - A||_HS = 6.47e-03; relative trace-norm bound ||C_N - C||_1/||C||_1 <= 6.08e-04; min Re H_N(Re p >= 0) = 7.15e-04 (positive-real => outer)
+    N=2048: ||A_N - A||_HS = 1.62e-03; relative trace-norm bound ||C_N - C||_1/||C||_1 <= 1.52e-04; min Re H_N(Re p >= 0) = 1.84e-04 (positive-real => outer)
+    => C_N = A_N A_N^* -> C in trace norm on L^2[t0, t]; Gaussian CP maps with converging covariances converge pointwise; limits of CP maps are CP
+
+[6] budget at t_H (Isaacson premise for the TT parts; R13-6/R14-2 inputs otherwise)
+    l=1e-08, c tau_c=1e-3 m: rho_log exact / R13-6 formula = 0.2524
+    l=1e-06, c tau_c=1e-3 m: rho_log exact / R13-6 formula = 0.2524
+    (A) strict tau = l/c (no F_t in the near-cone count, as R13-6): eps needed, exact TT weight vs R13-6:
+      l=1e-08: eps < 4.71e-16 (exact TT) vs 1.23e-16 (R13-6); ratio 3.82
+      l=2e-07: eps < 6.28e-11 (exact TT) vs 1.63e-11 (R13-6); ratio 3.85
+      l=1e-06: eps < 3.60e-08 (exact TT) vs 9.32e-09 (R13-6); ratio 3.86
+      l=5e-06: eps < 2.08e-05 (exact TT) vs 5.37e-06 (R13-6); ratio 3.87
+    (B) tau_c variant (eps = 1): lower end of c tau_c for rho_log + rho_qs < rho_L, exact weight (x 1/4) vs R13-6; drag ceiling 1.49e-3 m (R14-2)
+      l=4e-10 m: c tau_c > 1.53e-03 m (exact) vs 2.43e-03 m (R13-6 weight); window to 1.49e-3: closed
+      l=1e-09 m: c tau_c > 1.13e-03 m (exact) vs 1.79e-03 m (R13-6 weight); window to 1.49e-3: open, factor 1.3
+      l=2e-09 m: c tau_c > 8.94e-04 m (exact) vs 1.42e-03 m (R13-6 weight); window to 1.49e-3: open, factor 1.7
+      l=1e-08 m: c tau_c > 5.23e-04 m (exact) vs 8.31e-04 m (R13-6 weight); window to 1.49e-3: open, factor 2.8
+      l=1e-06 m: c tau_c > 1.40e-04 m (exact) vs 2.09e-04 m (R13-6 weight); window to 1.49e-3: open, factor 10.6
+      l=5e-06 m: c tau_c > 1.21e-04 m (exact) vs 1.74e-04 m (R13-6 weight); window to 1.49e-3: open, factor 12.3
+      window (exact TT weight, CMB-velocity drag ceiling) closes at l ~ 4.32e-10 m (R14-2 with the assumed weight: ~1-2e-9 m)
+    (C) constraint-channel (S, V) record-noise field energy at the least-decoherence split (conditional: counts only if a nonlinear
+        completion makes non-radiative metric noise gravitate; R6-4's H-cosmo made explicit). Per instantaneous channel:
+        |u_1| = (1/2g)<|grad phi|^2> = (hbar/4) int d^3k dw/(2pi)^4 |F|^2 = (hbar/4) (8 pi^{3/2} l^3)^-1 I_F/tau, independent of g
+        I_F = (1/2pi) int |F_t|^2 dx = 0.656250 (closed form 21/32 = 0.656250)
+        l=4e-10 m: |u_1|/rho_L = 8.6e+18 (strict tau = l/c), 2.3e+12 (c tau_c = 1.49e-3 m, drag ceiling); |u_1| < rho_L needs c tau > 3.45e+09 m
+        l=1e-08 m: |u_1|/rho_L = 2.2e+13 (strict tau = l/c), 1.5e+08 (c tau_c = 1.49e-3 m, drag ceiling); |u_1| < rho_L needs c tau > 2.21e+05 m
+        l=1e-06 m: |u_1|/rho_L = 2.2e+05 (strict tau = l/c), 1.5e+02 (c tau_c = 1.49e-3 m, drag ceiling); |u_1| < rho_L needs c tau > 2.21e-01 m
+        l=5e-06 m: |u_1|/rho_L = 3.5e+02 (strict tau = l/c), 1.2e+00 (c tau_c = 1.49e-3 m, drag ceiling); |u_1| < rho_L needs c tau > 1.77e-03 m
+        sign: S (Newtonian, attractive) binding energy negative; V (gravitomagnetic, like currents repel) positive (suggested; gauge/completion-dependent)
+    subtraction: none (positive spectral densities; |u| magnitudes)
+
+[7] second-order PPN: <h^2> per channel at t_H (eps = 1, repaired gain); alpha_1, alpha_2 ~ C <h^2>, C = O(1-10) (suggested)
+    l=4e-10 m, c tau=4.0e-10 m: <h_ij h_ij>_TT = 1.4e-49, <phi^2>_S = 3.0e-52; (l_P/l)^2 = 1.6e-51; vs alpha2-hat < 1.6e-9, |alpha1-hat| < ~4e-5
+    l=4e-10 m, c tau=1.5e-03 m: <h_ij h_ij>_TT = 2.0e-62, <phi^2>_S = 8.1e-59; (l_P/l)^2 = 1.6e-51; vs alpha2-hat < 1.6e-9, |alpha1-hat| < ~4e-5
+    l=1e-06 m, c tau=1.0e-06 m: <h_ij h_ij>_TT = 2.0e-56, <phi^2>_S = 4.8e-59; (l_P/l)^2 = 2.6e-58; vs alpha2-hat < 1.6e-9, |alpha1-hat| < ~4e-5
+    l=1e-06 m, c tau=1.5e-03 m: <h_ij h_ij>_TT = 2.0e-62, <phi^2>_S = 3.2e-62; (l_P/l)^2 = 2.6e-58; vs alpha2-hat < 1.6e-9, |alpha1-hat| < ~4e-5
+    l=5e-06 m, c tau=5.0e-06 m: <h_ij h_ij>_TT = 8.0e-58, <phi^2>_S = 1.9e-60; (l_P/l)^2 = 1.0e-59; vs alpha2-hat < 1.6e-9, |alpha1-hat| < ~4e-5
+    l=5e-06 m, c tau=1.5e-03 m: <h_ij h_ij>_TT = 2.0e-62, <phi^2>_S = 6.5e-63; (l_P/l)^2 = 1.0e-59; vs alpha2-hat < 1.6e-9, |alpha1-hat| < ~4e-5
+    homogeneous noise fluid at rest in the CMB frame: alpha-type effect ~ (rho_n/rho_crit)(H0 r/c)^2 beta at 1 AU = 1.6e-33 x rho_n/rho_crit
+
+[8] scalar block (rho, T_perp): least-decoherence floor for mass-density superpositions (units 16 pi G = hbar = 1, K = P^-1/4 + G P G)
+    w/k=0.00: floor |G_rr| = 0.5000; correlated K_rr = 0.5000, K_pp = 1.000e+00, min eig K = 1.91e-01; isotropic K_rr = 0.7135, K_pp = 0.559
+    w/k=0.50: floor |G_rr| = 0.3750; correlated K_rr = 0.3750, K_pp = 1.447e+00, min eig K = 1.78e-01; isotropic K_rr = 0.6315, K_pp = 0.534
+    w/k=0.99: floor |G_rr| = 0.0100; correlated K_rr = 0.0100, K_pp = 3.175e+04, min eig K = 9.94e-03; isotropic K_rr = 0.5001, K_pp = 0.500
+    => the rho-floor (R6-4's 4 pi G/(hbar k^2) at w = 0) is attained with anticorrelated pressure-record noise and finite K_pp;
+       enforcing it up to the cone makes K_pp ~ 1/|G_rr| diverge there (pressure superpositions); a bounded isotropic choice keeps K = O(G/hbar k^2)
+
+[9] constraint-channel energy reduced by R6-4's gamma-trade (P_J -> gamma P_opt, matter kernel (gamma + 1/gamma)/2 x floor):
+    gamma_min(l) interpolated log-log from C5_R6-4_report.md:151-160 (4e-10: 1; 1e-9: 0.03; 1e-8: 3e-5; >=1e-6: 2e-10); suggested
+    strict tau = l/c, 1 channel(s) at |u_1| each: allowed for l >= 2.2e-07 m
+    strict tau = l/c, 3 channel(s) at |u_1| each: allowed for l >= 2.6e-07 m
+      l=2e-08: gamma needed <= 7.2e-13 (1 ch) / 2.4e-13 (3 ch); gamma_min = 5.0e-06
+      l=5e-08: gamma needed <= 2.8e-11 (1 ch) / 9.4e-12 (3 ch); gamma_min = 4.7e-07
+      l=1e-07: gamma needed <= 4.5e-10 (1 ch) / 1.5e-10 (3 ch); gamma_min = 7.7e-08
+      l=2e-07: gamma needed <= 7.2e-09 (1 ch) / 2.4e-09 (3 ch); gamma_min = 1.3e-08
+      l=3e-07: gamma needed <= 3.7e-08 (1 ch) / 1.2e-08 (3 ch); gamma_min = 4.5e-09
+      l=5e-07: gamma needed <= 2.8e-07 (1 ch) / 9.4e-08 (3 ch); gamma_min = 1.2e-09
+      l=1e-06: gamma needed <= 4.5e-06 (1 ch) / 1.5e-06 (3 ch); gamma_min = 2.0e-10
+      l=5e-06: gamma needed <= 2.8e-03 (1 ch) / 9.4e-04 (3 ch); gamma_min = 2.0e-10
+    tau_c at drag ceiling 1.49e-3 m, 1 channel(s) at |u_1| each: allowed for l >= 4.5e-08 m
+    tau_c at drag ceiling 1.49e-3 m, 3 channel(s) at |u_1| each: allowed for l >= 5.5e-08 m
+      l=2e-08: gamma needed <= 5.4e-08 (1 ch) / 1.8e-08 (3 ch); gamma_min = 5.0e-06
+      l=5e-08: gamma needed <= 8.4e-07 (1 ch) / 2.8e-07 (3 ch); gamma_min = 4.7e-07
+      l=1e-07: gamma needed <= 6.7e-06 (1 ch) / 2.2e-06 (3 ch); gamma_min = 7.7e-08
+      l=2e-07: gamma needed <= 5.4e-05 (1 ch) / 1.8e-05 (3 ch); gamma_min = 1.3e-08
+      l=3e-07: gamma needed <= 1.8e-04 (1 ch) / 6.1e-05 (3 ch); gamma_min = 4.5e-09
+      l=5e-07: gamma needed <= 8.4e-04 (1 ch) / 2.8e-04 (3 ch); gamma_min = 1.2e-09
+      l=1e-06: gamma needed <= 6.7e-03 (1 ch) / 2.2e-03 (3 ch); gamma_min = 2.0e-10
+      l=5e-06: gamma needed <= 8.4e-01 (1 ch) / 2.8e-01 (3 ch); gamma_min = 2.0e-10
+
+DONE

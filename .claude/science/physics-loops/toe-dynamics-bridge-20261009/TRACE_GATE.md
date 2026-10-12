@@ -1,19 +1,3 @@
-# Current campaign trace
+# Current trace gate
 
-```yaml
-trace_class: upstream_support
-target_claim_id: null
-target_blocker_text: "Construct checked microscopic dynamics, particle carriers and controlled continuum links."
-source_of_blocker_text: user_goal
-reachability_to_target: partially_closes
-artifact_role: theorem
-next_trace_action: "Check actual local boost/Poincare composition and current-based one-particle isolation in the supplied model."
-```
-
-Conditional transport, current and boost milestones are published. Concrete chosen
-chain, all-particle free scattering, scalar continuum and even local continuum have
-completed source-bound checks. Corrected continuum local boost is checked. The
-actual lattice local boost is now independently checked. Mixed words have fully
-read author evidence under fresh review; current-mass filtering has a frozen candidate. None select the intended3D or interacting physics.
-The exact finite-a Lorentz failure and parity restrictions remain explicit.
-Full identities, failures, gauge correction and recovery paths are in HANDOFF.
+Six-note PR9488 at16a69597714f8c62387c2e9ee92c445c40f91410 verified after PR-only recovery; original failed delivery and actual cache repair retained. Three-note child remains clean/unpublished; preparation is not execution. Local and filter evidence remain provisional at stated supplied-model scope. All unchanged verified identities reused; changed openPR9476 ownership read only, no imported science. Independent retained audit/global strict checks unrun. Full sources/evidence and archived prior checkpoint remain recovery authorities.

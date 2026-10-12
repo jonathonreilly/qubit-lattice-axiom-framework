@@ -6,41 +6,40 @@ started_utc: 2026-10-11 16:00:52+00:00
 deadline_utc: 2026-10-12 16:00:52+00:00
 checkpoint_interval: 30m
 automation_id: toe-derivations-24-hour-campaign
-active_branch: physics-loop/toe-microscopic-boost-20261012
-worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree
+active_branch: physics-loop/toe-supplied-chain-20261012
+worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/supplied_chain_worktree
 checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
-base_revision: 3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe
+base_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Check compact mixed Poincare words and chosen-state correlations; test actual current mass filtering;
-  publish accepted source family.
+active_route: Publish checked supplied-chain milestone; finish local observable section algebra and actual current-mass
+  filter, with scoped Lean algebra audit.
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: Eleven regular PRs open; PR9488 publishes five reviewed boost/gap/closure/integration and nonisolated-Fock
-  theorems.
+milestone: Eleven regular PRs; PR9488 six-note extension complete. Three-note supplied-chain child preparing. Four
+  local-limit notes reviewed; new local algebra construction in fresh review.
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
-independent_checks: Microscopic local boost now root accepted with fresh separate-context Fourier/monodromy review.
-  Mixed-word author proof/evidence fully root-read; fresh mixed review active. Actual-current mass-filter analytic
-  candidate fully root-read, author sealing.
+independent_checks: Mixed review sealed, pending complete root evidence read. Current mass filter fresh review sealing
+  with protocol-scope erratum only so far. Local even section algebra fresh independent review active. Root Lean
+  all-n threshold compilation pending after preserved failure.
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_open
-active_pr_status: PR9488 at358fdf795a5504d4d7fd13344bbbd5df5504ebea. First massive delivery failed on a real previously
-  published five-cache freshness bug. Five canonical caches now regenerated with identical mathematical outputs;
-  metadata repair and deliveryv2 preparation pending root read/execution.
-active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9488
+active_pr_status: Clean unpublished supplied-chain child at16a69597714f8c62387c2e9ee92c445c40f91410; no child PR
+  yet. Parent9488 fully published/verified at that exact head.
+active_pr_url: null
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
-lock_refresh_before_utc: '2026-10-12T12:20:00Z'
-next_action: Read/execute massive deliveryv2 preserving failed cache check and five real reruns; then clean supplied-chain
-  milestone. Finish mixed review and current-mass-filter independent check. Investigate explicit local-algebra comparison
-  using conditional expectations. Fixed deadline unchanged.
+lock_refresh_before_utc: '2026-10-12T13:50:00Z'
+next_action: Root inspect three-note preparation and run canonical publication pipeline once ready. Read sealed
+  mixed/current reviews fully. Finish scoped Lean algebra check and controls. Independent review of new local even
+  section algebra. No axiom/retained status changes. Deadline remains16:00:52UTC.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -49,7 +48,7 @@ current_memory_published_science_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20
 quantitative_memory_parent_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20252
 quantitative_memory_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9482
 quantitative_memory_published_science_revision: ba74c93aab9185d62a9711695dc931446f67c8ba
-latest_candidate_law_revision: 269fd8a1273b370825752b2be5f55aabc851ffe5
+latest_candidate_law_revision: dbfed9e9b1cb0943f50f3e0802af4725c6006339
 boost_parent_revision: b9b032ae790c66e762a6296a1306bfb64ae7cd70
 rigidity_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9483
 rigidity_published_science_revision: aeee46fa0e2879038eec1b8ee8a1e173ac77518e
@@ -61,7 +60,7 @@ index_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pu
 index_published_science_revision: b8402c17d337f371c0c73696ef170727de9ab5bd
 scattering_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9486
 scattering_published_science_revision: 3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe
-active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9486
+active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9488
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
-microscopic_boost_published_science_revision: 358fdf795a5504d4d7fd13344bbbd5df5504ebea
+microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410

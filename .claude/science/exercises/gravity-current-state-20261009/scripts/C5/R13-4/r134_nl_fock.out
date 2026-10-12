@@ -1,0 +1,3 @@
+n=4: max|[N_x, iota_s^(dag)]| = 2.2e-16;  |[[S,N_x],N_y] - (-4 g^-1_xy)(X_x^W+ X_y^W + h.c.)| = 6.7e-16 (scale 1.632);  g^-1_xy = 0.3814;  ||X^W+|0>||^2 = 1.9600 vs 4e^2(n-2)/2 = 1.9600
+n=6: max|[N_x, iota_s^(dag)]| = 4.4e-16;  |[[S,N_x],N_y] - (-4 g^-1_xy)(X_x^W+ X_y^W + h.c.)| = 4.4e-16 (scale 0.719);  g^-1_xy = 0.1216;  ||X^W+|0>||^2 = 3.9200 vs 4e^2(n-2)/2 = 3.9200
+For R12-3's matter (n = 16): ||X^W+|0>||^2 = 4 e^2 * 7 = 28 e^2, so the matrix element of 2 g^-1 (X^W+X^W + h.c.) is 56 e^2 g^-1_xy.

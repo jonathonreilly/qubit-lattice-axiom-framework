@@ -4712,20 +4712,19 @@ Launch: R13-1, R13-3, R13-5 and R13-6 now; R13-2 after the R12-5 referee; R13-4 
     - light L doublers destroy that floor;
     - birefringence is removable by a one-mass edge tuning.
   - **With pairing.** Matched pairing cancels the stipulated TT response and leaves 2κm²J₂.
-- **R13-1 (momentum in the superalgebra):** worker reading INCONCLUSIVE, leaning FAIL.
-  - Theorem B (Jacobi): a conserved Q forces a conserved P, which a Ward-forced photon makes impossible on the whole zone. So no exact spinor algebra exists there.
-  - Corollary BPS: an exact box algebra would forbid an electron slower than light.
-  - Yet minimal N=1 box SQED gives Δ < 0 in all 24 laws (−12 to −55 e²/16π²).
-  - The algebra alone forces neither a common momentum p nor c_e = c_γ.
-
-  Referee running.
-- **R13-3 (P-T in a lumpy universe):** worker reading EXCLUDED in the registered class; OPEN with a spatially averaged lapse.
-  - Lemma F: V3's unit lapse makes lattice-time surfaces follow free fall, which caustics inside every collapsed halo within one crossing, for any creation rule.
-  - Lemma T: varying the lapse brings back the Hamiltonian constraint, so Lemma PT returns.
-  - Linear growth is GR's for any creation law.
-  - Lemma VO: T_orb = t_coll, so the P-T filter needs memory ≳ t_coll.
-
-  Referee running.
+- **R13-1 (momentum in the superalgebra) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.** It has a sharp bounded Theorem B and a confirmed model-specific obstruction.
+  - **The free level.** Abstract modewise N=1 representations exist on the free zone when the multiplet multiplicities and E ≥ |p| hold. But the algebra neither identifies p with lattice momentum nor bounds a massive particle's IR speed by 1 − m²/b² (corrected). A field-level vector-multiplet charge is unconstructed.
+  - **Theorem B is rigorous** in the interacting class with C¹ periodic one-body band-scalar momentum and a whole-zone Peierls vertex. There, Jacobi plus the nonvanishing transverse vertex forbids an exact D2 supercharge algebra.
+  - **The one-loop split.** For the chosen off-D1 completion of minimal box SQED, it is negative in all 24 sampled laws.
+  - **The literal-edge photon coefficient** is a sign-indefinite moment of the product-rule defect.
+  - **Untuned class-wide non-removability is not proved.**
+- **R13-3 (P-T in a lumpy universe) — NOT CONFIRMED as EXCLUDED. OPEN.** Only the smooth synchronous-continuum subclass is conditionally excluded.
+  - **The conditional exclusion.** Take a literal smooth continuum V3 completion with ADM lapse N = 1, conserved stress, adiabatic synchronous initial data, and no negative C-density or non-smooth/discrete reset. Then the slice normals are hypersurface-orthogonal geodesics, and Raychaudhuri focuses them in a collapsing top-hat (conditionally on a halo timescale). A scalar creation rule does not remove this.
+  - **Not excluded:** kinked, lattice-scale or alternative nonlinear completions.
+  - **V2** restores the homogeneous Hamiltonian constraint. So the decaying-memory F-law is incompatible with a nonzero constant vacuum unless a tuned compensator is added.
+  - **At linear k ≠ 0** the system matches GR plus an effective dust component.
+  - **Confirmed:** T_orb = t_coll in EdS, and the stationary-age encoder mean is exact.
+  - **Not confirmed:** the filter floors are model-specific, and the transition runner misclassifies complex Prony roots.
 - **R13-6 (start-time CQ dilation):** worker reading EXCLUDED for the literal class (a no-go); OPEN once the gain is repaired.
   - **Lemma D:** R11-5's causal frame-tied gain delays the mean field. That drags moving bodies, violating double-pulsar timing by 1e11–1e15 for every ℓ_s. The same mechanism suggests γ ≲ 0.03 H₀ for R12-7's friction route.
   - **The repair:** a zero-first-moment gain (n ≥ 4). It passes all stated tests, including noise-fed PPN.
@@ -4765,3 +4764,12 @@ Readings:
   - Candidate no-gos X-G and X-S.
 
   Referee running.
+- **R13-4 (tails):** worker readings below. Referee running.
+  - **(i) BF: PHYSICALLY NON-LOCAL in class 𝓔.**
+    - Lemma Q: the exact quotient Hamiltonian contains an O'Neill pair-transfer term with a Coulomb kernel e²/(4πr).
+    - Theorem NL: a double commutator of local number operators is ~e²/r.
+    - The bosonic sector is LOCAL-EQUIVALENT.
+  - **(ii) Off-box gravity tail: OPEN.**
+  - **(iii) Lemma V:** every one-band box law with b > b*(m) (π/2 at m = 0) is superluminal at lattice scale.
+    - The laws used so far (R7-1, R9-5) have v_max ≈ 4–12.
+    - A subluminal b = 1.4 box works at negligible rapidity cost (45.4 → 45.0).

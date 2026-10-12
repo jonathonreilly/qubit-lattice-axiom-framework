@@ -1,0 +1,8 @@
+T1: one gauge generator, x = (A, phi in R^4), e = 0.7, point [0.3, 0.5, -0.4, 0.7, 0.2]
+  T1 1-form: |iota_u omega| = 2.0e-51; |H_q omega| = 4.49991; |H_q - RHS| = 7.02e-16; control |H_q - P_h H_flat| = 7.01751e-16; control |H_q - H_flat| = 0.748417; |iota_u H_q omega| = 1.02e-15
+  T1 2-form: |iota_u omega| = 2.51e-51; |H_q omega| = 4.52754; |H_q - RHS| = 8.58e-16; control |H_q - P_h H_flat| = 0.0589896; control |H_q - H_flat| = 2.18693; |iota_u H_q omega| = 1.13e-15
+  T1 3-form: |iota_u omega| = 6.68e-52; |H_q omega| = 6.85667; |H_q - RHS| = 3.46e-16; control |H_q - P_h H_flat| = 0.561814; control |H_q - H_flat| = 1.45823; |iota_u H_q omega| = 4.57e-16
+T2: two sites + one link (9 coordinates), e = 0.7, point [0.2, 0.5, -0.3, 0.4, 0.1, -0.2, 0.6, 0.3, -0.5]
+   gauge invariance of the invariants, max |u_s . grad I_k| = 6.83e-34
+  T2 2-form: |iota_u omega| = 2.36e-33; |H_q omega| = 3.34314; |H_q - RHS| = 1.41e-17; control |H_q - P_h H_flat| = 0.13073; control |H_q - H_flat| = 0.560588; |iota_u H_q omega| = 1.71e-17
+   s!=t part (-1/2 P_h X_s^dag g^-1_st X_t, the 'distant' transfer): |.| = 0.0582372; g^-1 = [['1.938', '1.4222'], ['1.4222', '1.7777']]

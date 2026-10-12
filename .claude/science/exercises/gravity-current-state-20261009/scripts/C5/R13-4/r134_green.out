@@ -1,0 +1,28 @@
+(a) lattice Coulomb kernel G(r) on the axis; 4 pi r G(r)
+   r=  1: G=8.606434e-02  4 pi r G = 1.08152
+   r=  2: G=4.288931e-02  4 pi r G = 1.07793
+   r=  4: G=2.028887e-02  4 pi r G = 1.01983
+   r=  8: G=9.988047e-03  4 pi r G = 1.00411
+   r= 16: G=4.978505e-03  4 pi r G = 1.00099
+   r= 32: G=2.487405e-03  4 pi r G = 1.00024
+   r= 64: G=1.243474e-03  4 pi r G = 1.00006
+   G(0) = 0.252731  (Watson: 0.252731)
+
+(b) mean-field screening (reading): e = 0.3028
+   Wilson-box matter m=0.3, box=(2.0,3.0): <phi_a^2> = 0.1994, v^2 = 16x = 3.191, screening mass e v = 0.541/a, length 1.85 a
+      r=4: G_screened/G = 1.240e-01
+      r=16: G_screened/G = 1.947e-04
+      r=32: G_screened/G = 3.740e-08
+   Wilson-box matter m=0.1, box=(2.0,3.0): <phi_a^2> = 0.2065, v^2 = 16x = 3.305, screening mass e v = 0.550/a, length 1.82 a
+      r=4: G_screened/G = 1.196e-01
+      r=16: G_screened/G = 1.681e-04
+      r=32: G_screened/G = 2.786e-08
+   Wilson-box matter m=0.3, box=(0.8,2.0): <phi_a^2> = 0.1817, v^2 = 16x = 2.907, screening mass e v = 0.516/a, length 1.94 a
+      r=4: G_screened/G = 1.360e-01
+      r=16: G_screened/G = 2.851e-04
+      r=32: G_screened/G = 8.022e-08
+
+(c) norm of the O'Neill double commutator, ||[[H_q,N_x],N_y]|| = 2 ||X^W dag|0>||^2 G(r) = 56 e^2 G(r):
+   r=2: 56 e^2 G(r) = 2.2025e-01  (continuum 14 e^2/(pi r) = 2.0433e-01)
+   r=10: 56 e^2 G(r) = 4.0971e-02  (continuum 14 e^2/(pi r) = 4.0865e-02)
+   r=100: 56 e^2 G(r) = 4.0866e-03  (continuum 14 e^2/(pi r) = 4.0865e-03)

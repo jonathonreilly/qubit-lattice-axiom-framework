@@ -1,7 +1,7 @@
 # Ranked current decisions
 
-1. Resolve the state-adapted refinement frontier: exact selected-state compatibility, same intrinsic section quotient, and geometric continuum locality/actual mixed dynamics. Preserve finite-scale Haar state/energy failures and do not predeclare closure.
-2. Execute and publish the fully reviewed five-note local-continuum milestone on exact PR9490; inspect complete source/receipt bindings and all historical failures.
-3. Prepare accepted dyadic local refinement as a regular dependent PR after exact local-continuum parent publication; original controls only, no duplicate science.
-4. Keep the scope gap explicit: intended three-dimensional/interacting realization and framework selection remain open. Active PR9476 owns random-lattice/gravity/observation routes; do not duplicate.
-5. At16:00:52UTC start no new research. Preserve any incomplete result, report outcomes and verification limits, disable the heartbeat. Never extend.
+1. Derive and independently test an alternative refinement preserving the chosen vacuum and actual time evolution. Check endpoint Jacobian, geometric limit and actual current/space/boost limitations. Root proposal remains provisional.
+2. Complete state-adapted independent review integration, preserve original symbolic failure and distinct arithmetic repair, then execute/publish the accepted milestone on exact PR9493.
+3. Preserve complete local-continuum9492 and dyadic9493 evidence; they are regular open PRs. Earlier transport/walk/memory science has been selectively landed by concurrent activity; four earlier campaign PRs closed.
+4. Intended3D/interacting realization, framework selection and rates remain open. Avoid otherPR9476's gravity/Lorentz-random/timelike-link mass-shell routes.
+5. At16:00:52UTC start no new research, preserve incomplete work, report actual outcomes/limits and disable heartbeat. Never extend.

@@ -6,40 +6,40 @@ started_utc: 2026-10-11 16:00:52+00:00
 deadline_utc: 2026-10-12 16:00:52+00:00
 checkpoint_interval: 30m
 automation_id: toe-derivations-24-hour-campaign
-active_branch: physics-loop/toe-local-continuum-20261012
-worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/local_continuum_worktree
+active_branch: physics-loop/toe-state-adapted-20261012
+worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/state_adapted_worktree
 checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
-base_revision: 62d316633190ad2198fdfa91fc52192551990034
+base_revision: cb882f7c68032986900dec2aaf24617ff3274c08
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Publish the accepted five-note local-continuum milestone; prepare accepted dyadic refinement; derive
-  and independently check state-adapted refinement.
+active_route: Integrate fresh state-adapted refinement review and prepare its milestone; derive energy-adapted refinement
+  preserving actual time evolution.
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: Thirteen regular PRs published. Current-mass/Lean PR9491 complete. Five-note local continuum preparation
-  sealing. Dyadic full root review accepted; publication preparation started. State-adapted frontier active.
+milestone: Fifteen regular campaign PRs created; eleven currently open. PR9492 local continuum and PR9493 dyadic
+  refinement published. Four earlier campaign PRs closed after related science was selectively landed by concurrent
+  activity. State-adapted followup review integration pending; energy-adapted frontier active.
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
-independent_checks: Current-mass and five local-continuum notes fully source-bound root accepted. Scoped finite-sum
-  Lean threshold certificate preserved. Dyadic full fresh review and all evidence accepted at13:34:29UTC; same-model
-  and root-coauthor limits explicit.
+independent_checks: State-adapted fresh direct Fourier reconstruction and finite many-body checks sealed before
+  author-helper exposure; final review/root integration pending. Root narrow symbolic arithmetic repair separately
+  recorded; originals retained.
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
-transport_pr_status: regular_pr_9478_open
-active_pr_status: LW clean exact parent62d316633190ad2198fdfa91fc52192551990034; source-only preparation active
-  outside worktree; no local-continuum PR yet.
+transport_pr_status: regular_pr_9478_closed_by_concurrent_activity
+active_pr_status: AW clean at exact parentcb882f7c68032986900dec2aaf24617ff3274c08; source-only preparation active
+  outside worktree, no state-adapted PR yet.
 active_pr_url: null
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
 lock_refresh_before_utc: '2026-10-12T15:20:00Z'
-next_action: Read and execute sealed local-continuum preparation; publish on actual verification. Supply exact child
-  parent to dyadic preparer. Finish state-adapted proof and fresh review. Refresh lock by15:20; start no new research
-  at16:00:52UTC.
+next_action: Complete state-adapted fresh-review source/evidence integration and root gate, seal/execute/publish
+  preparation. Independently check energy-adapted frontier after source freeze. Refresh lock by15:20. Stop new research16:00:52UTC.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -48,26 +48,37 @@ current_memory_published_science_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20
 quantitative_memory_parent_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20252
 quantitative_memory_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9482
 quantitative_memory_published_science_revision: ba74c93aab9185d62a9711695dc931446f67c8ba
-latest_candidate_law_revision: f41d4c7fa39340ec944edc33253207770c276cfa
+latest_candidate_law_revision: ae81a40649bc87acca074624013d2711149688e7
 boost_parent_revision: b9b032ae790c66e762a6296a1306bfb64ae7cd70
 rigidity_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9483
 rigidity_published_science_revision: aeee46fa0e2879038eec1b8ee8a1e173ac77518e
 boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9484
 boost_published_science_revision: 773321aa8fdfccc05248682dfc96bf94215034a2
 latest_chiral_revision: 18b7dce754488789eb539d2a6fae3d00d6c37e31
-latest_main_revision: 8aa4e9df30e93cd543bc1108b06f3ca68d6ffae6
+latest_main_revision: 72a7cf00adf0756a215a247d344df21d06a1d582
 index_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9485
 index_published_science_revision: b8402c17d337f371c0c73696ef170727de9ab5bd
 scattering_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9486
 scattering_published_science_revision: 3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe
-active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9490
+active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9493
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-12T13:40:35.951180+00:00'
-latest_source_refresh: '2026-10-12T13:35:55.627220+00:00'
-latest_other_pr: 9489 photon/electron threshold work is now on main;9476 owns Lorentz-random lattice/gravity/observational
-  and composite-particle probes. Report surfaces read only; no imported science.
+checkpoint_utc: '2026-10-12T14:12:34.230551+00:00'
+latest_source_refresh: '2026-10-12T14:07:25.547108+00:00'
+latest_other_pr: PR9476 occupies Lorentz-random lattice/gravity/observations, infinite-orbit kernels and timelike-link
+  mass-shell constructions; complete changed TESTS report read for ownership only.
 supplied_chain_published_science_revision: 62d316633190ad2198fdfa91fc52192551990034
 current_mass_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9491
 current_mass_published_science_revision: e26e2de4fd64ee49d0745cbf02fd05355494b569
+local_continuum_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9492
+local_continuum_published_science_revision: a8ab3f49038327e3080d2f93afb7e34601459928
+dyadic_refinement_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9493
+dyadic_refinement_published_science_revision: cb882f7c68032986900dec2aaf24617ff3274c08
+campaign_prs_created: 15
+campaign_prs_currently_open: 11
+campaign_prs_closed_by_other_activity:
+- 9478
+- 9479
+- 9481
+- 9482

@@ -287,3 +287,7 @@ Supplied-chain recovery completed146.279737s0 with all frozen scientific outcome
 ## 2026-10-12T13:40:35.951180+00:00
 
 Current-mass/Lean regularPR9491 published at e26e2de4fd64ee49d0745cbf02fd05355494b569 after exact140baseline/eightwholevariant reproduction and source/graph/cache checks. Dyadic full root review accepted with preserved state/energy counterexamples; same-model and root-coauthor limits remain explicit. Local-continuum preparation sealing; new state-adapted frontier remains unsealed. Main refreshed8aa4e9df and otherPR9476 ownership surfaces read without importing claims. No applied audit/retained/prompt/axiom changes.
+
+## 2026-10-12T14:12:34.230551+00:00
+
+Regular local-continuumPR9492 anddyadicPR9493 published after complete source-bound reproduction and full root program/diff/receipt review. State-adapted original85/86 and narrow independently assessed arithmetic repair preserved; finalreview integration pending. Energy-adapted derivation started under explicit unverified rootproposal. Main72a7cf00 andotherPR9476ae81a406 ownership refreshed. Four earlier campaign PRs closed by concurrent selective landing, not merged by root. No prompt/axiom/audit authority changes by campaign.

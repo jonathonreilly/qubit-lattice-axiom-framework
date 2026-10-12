@@ -5033,3 +5033,120 @@ Readings:
 - **PASS:** an explicit reader rule with a proved sign or size bound on g in a stated class of histories, and the influence below a stated bound.
 - **FAIL:** a refereed proof that every allowed reader gives g above threshold, or above a bound, on some allowed history.
 - **INCONCLUSIVE:** otherwise.
+
+### C5 Round 16, items 1–5 (pre-registered 22:20Z from S17 §5, text fixed before any run; R16-1/R16-2 launched now, R16-4 next, R16-3/R16-5 as slots free)
+
+New rules from S17: every law states its whole-zone v_max; every frame-tied kernel states its self-force on a moving compact body; every Ward requirement says standard or deformed.
+
+**R16-1. Is the electron–photon split a theorem on the edges physics would actually use? The interval no-go for Wilson edges, including the subluminal D1(r).**
+
+- **Plain question.** R13-7 proved that the split cannot vanish over any mass range, but only for the literal edge. That edge has seven same-mass electron copies and is already excluded by the Z width (R9-1). Usable Dirac edges are Wilson edges, and R14-1's subluminal Dirac is one. On those, R13-7's control saw the split grow linearly in mass with a shape-dependent sign. Does the no-go hold where it matters?
+- **Setting.**
+  - Class 𝒬_W: R8-5's BQ electron with a Wilson term W even, periodic and C², including R8-5's r = 1 box and R14-1's D1(r) with r ≤ 1/√d (b = 1.4, 1.2, 1.0).
+  - R13-7's photon class: t = d² even and periodic, H2′ shapes.
+  - Peierls coupling, Feynman gauge, fixed λ > 0, one loop, on-shell c_e.
+  - Variant 𝒬_W^P: add two complex selectrons with R13-1's gauging.
+  - Excluded: λ = 0; non-Peierls vertices; two loops; N=4 content.
+- **Prior art (count once).** R13-7 and verdict (`vR13-7:3-30`; Wilson control `C5_R13-7_report.md:48,144-148,202`); R8-5 (`vR8-5:7`, non-decoupling under r); R14-1 D1(r) (`C5_R14-1_report.md:184-211`); R9-1 (`TESTS:3840`); R10-1 Theorem D; R13-1 partner gauging.
+- **Probes.**
+  - (a) Extend Lemma A (real-analyticity for m > 0) to 𝒬_W.
+  - (b) The large-m expansion. Identify the linear-in-m coefficient (worker suggestion: a zero-mean W″-moment). Prove a sign or nonvanishing on a stated subclass containing D1(r ≤ 1/√d), or show it can vanish. If it vanishes, carry on to the next coefficient.
+  - (c) Numerics on D1 at b = 1.4, r = 1/√3: Δ_λ(m) for m ∈ [0.01, 3] and Δ_λ(0⁺), at three resolutions.
+  - (d) Repeat (b)–(c) for 𝒬_W^P.
+  - (e) Prices.
+- **FIXED readings.**
+  - **DERIVED:** a refereed proof that Δ_λ cannot vanish on an open mass interval in a stated Wilson class containing D1(r ≤ 1/√d) at fixed λ > 0.
+  - **REFUTED:** an explicit untuned law in 𝒬_W (or 𝒬_W^P, stated) with Δ_λ ≡ 0 on an interval, checked.
+  - **SUGGESTED:** otherwise.
+- **Expectation.** SUGGESTED. The linear coefficient's sign already varies across shapes, so a class-wide sign is unlikely. A DERIVED subclass on D1 is possible if r ≤ 1/√d fixes the W″-moment's sign. REFUTED is not expected: isolated zeros (m ≈ 3.3 in R13-7's Wilson S1) are not interval zeros.
+
+---
+
+**R16-2. How many tunings put every light charged particle and the photon on one cone? (The matter-speed rows of the count.)**
+
+- **Plain question.** R13-8's bookkeeping charges one tuning per matter species (the N_s in N_s + 7). The R13-7 worker argues the opposite: the split is analytic in mass, and physical masses are ~1e-17 to 1e-23 in Planck units, so one tuning at zero mass fixes every light species. The referee called that a plausible reading, not a theorem: it is not uniform in λ, band shape, species or counterterm structure. Charges differ, spins differ, and the photon's own shift sums over every species. So is the number of tunings 1, 2, one per spin class, or N_s?
+- **Setting.**
+  - One-loop QED on Z³ × ℝ with N_s charged species: charges q_i ∈ {1, 2/3, 1/3}, spins 0 and ½, masses m_i a ∈ [1e-23, 1.5e-17] (the SM charged range at a = ℓ_P, a reading on `AX:189-190`).
+  - Every species on one common edge family per spin: literal and D1(r) for Dirac, G(b) for scalars. Peierls coupling.
+  - Allowed tunings: edge-shape parameters, a photon-kinetic counterterm, matter-kinetic counterterms. Each one counts.
+  - Excluded: non-abelian sectors, W±, two loops.
+- **Prior art (count once).** R13-7 (`C5_R13-7_report.md:50,211`; `vR13-7:28`); R13-8 (`vR13-8:15-22`); R14-3's common-setting result (`vR14-3:18`, the shear analogue); R8-5's comparators (`C5_R8-5_report.md:261`, 2.66e-19); F2's 3.1e-17 (`TESTS:2380`); R10-1 Lemma N(m).
+- **Probes.**
+  - (a) The small-m expansion δc_i(m) = q_i²[F_s(0⁺) + F_s′·(ma) + O((ma)² ln ma)] and δc_γ = Σ_j q_j² G_s(m_j), with constants, at fixed λ > 0 and as λ → 0 (state the IR treatment).
+  - (b) The minimal set of tunings that makes |c_i − c_γ| below the stated comparators for every SM charged species. Show that one fewer does not suffice in the stated class.
+  - (c) Can one shape condition null F_{1/2}(0⁺) and F_0(0⁺) together, or does each spin class need its own?
+  - (d) The residual after tuning, for the heaviest species (top-like m a ≈ 1.4e-17).
+  - (e) Map the result onto R13-8's N_s rows.
+- **FIXED readings.**
+  - **COUNTED:** an explicit number n_t, with a refereed proof that n_t tunings suffice for every species in the setting, to the stated comparators, and that n_t − 1 do not, in a stated class.
+  - **OPEN:** otherwise.
+- **Expectation.** COUNTED with n_t independent of N_s, most likely 2 or 3: one photon-side condition plus one shape or counterterm condition per spin class. Residuals scale with (ma) and fall far below comparators except possibly for the heaviest species. A λ → 0 obstruction (IR logs) is the likeliest reason for OPEN.
+
+---
+
+**R16-3. The second graviton polarization: can any slower-than-light edge put T₂g on the matter cone?**
+
+- **Plain question.** On slower-than-light edges without extra valleys, the graviton is always slower than matter (R14-3 Theorem B). With heavy valleys one polarization (E_g) can be zeroed, but the other (T₂g) stayed negative in every test. If T₂g is negative for every allowed edge, then the box route's graviton cone needs pairing or a per-polarization counterterm, and edge shaping cannot do it.
+- **Setting.**
+  - R14-3's separable periodic one-band class with |σ′| ≤ 1, gapped valleys allowed (outside 𝒰₀).
+  - R9-9's TT vertex with its assumed Ward completion. This is prescription-scoped; state it in every claim.
+  - Nonnegative nonzero transverse vertices; m ∈ {1, 0.3, 0.1}.
+  - Excluded: pairing; deformed W2 (R16-5); matter's own graviton-loop shift (R11-1(b)).
+- **Prior art (count once).** R14-3 and verdict (`vR14-3:14-22`; W08/W14); R14-1 (`vR14-1:13`); R13-5 (`vR13-5:9-13`; T₂g weight tuning on L-U); R11-1(b) (`vR11-1:17-19`); R9-9 Theorem T.
+- **Probes.**
+  - (a) Prove Ξ_T2g < 0 for every nonnegative nonzero vertex in a stated class strictly larger than 𝒰₀, including W08/W14-type gapped valleys. Or exhibit a subluminal law with Ξ_T2g ≥ 0.
+  - (b) If (a) finds a zero, find one law with Ξ_Eg = Ξ_T2g = 0 at a common mass, and count the tunings, with and without P62's shear condition.
+  - (c) Prices.
+- **FIXED readings.**
+  - **DERIVED:** a refereed proof of Ξ_T2g < 0 in a stated class containing 𝒰₀ and gapped-valley laws.
+  - **REFUTED:** an explicit subluminal law with Ξ_T2g ≥ 0, checked. Report separately whether a simultaneous E_g/T₂g zero was found.
+  - **SUGGESTED:** otherwise.
+- **Expectation.** SUGGESTED leaning DERIVED for T₂g, because every tested shift is negative and T₂g weights mixed derivatives that the valley trick does not reach. A simultaneous zero is not expected.
+
+---
+
+**R16-4. Set A, E1: does anything observable remember the start? (Initial-state dependence, for `AX:94`.)**
+
+- **Plain question.** E1's start time comes with a fixed initial state: meters in their vacuum, h = ḣ = 0. The worker's price count favours E1 unless that state counts as a "privileged state" under `AX:94` (`C5_R14-2_report.md:273`). The J₀ channel has a memory as long as the age, and Var h grows like ln T. Do late-time observables depend on the initial state, or does any reasonable start give the same universe?
+- **Setting.**
+  - R13-6's linearized preferred-frame E1 model with the repaired gain (P-r13b) and its finite-start covariance (`vR13-6:27-31`), with a stated bandwidth regulator for ḣ. Use R15-2's spin-2 kernel if it has been refereed.
+  - Initial-state class: Gaussian meter and metric states with finite energy per mode (thermal, squeezed, displaced), up to a stated bound.
+  - Observables: R11-5/R13-6's test list (lab decoherence, near-cone budget, PPN-type, double-pulsar drag, record growth) evaluated at t − t₀ ≥ t_H.
+  - Excluded: E2; non-Gaussian initial states.
+- **Prior art (count once).** R13-6 and verdict; R14-2 and verdict (`vR14-2:11`); R11-5; R12-4 (`vR12-4:15`, a temporal boundary is not a privileged site); Lemma S (`vR13-6:25`).
+- **Probes.**
+  - (a) For each listed observable, the difference between the vacuum start and the worst state in the class at t − t₀ = t_H, with constants.
+  - (b) Whether an attractor exists, and its rate (J₀ tails, t^{−1/2}).
+  - (c) Which quantity, if any, keeps an O(1) memory of the start at every time.
+  - (d) Prices.
+- **FIXED readings.**
+  - **WASHED-OUT:** every listed observable at t − t₀ ≥ t_H differs between any two states in the class by less than its observational comparator, with proof, checked.
+  - **STATE-DEPENDENT:** a refereed demonstration that some listed observable differs beyond its comparator between two states in the class.
+  - **OPEN:** otherwise.
+- **Expectation.** WASHED-OUT for every listed observable. The J₀ channel's exact memory should leave an unobservable logarithmic dependence. The owner question then becomes whether an unobservable initial datum counts as a privileged state.
+
+---
+
+**R16-5. GW170817 on the grid: a preferred-frame second-order Ward identity, and the graviton–matter poles under it.** *(Launch only if time allows.)*
+
+- **Plain question.** R13-5 found that the standard second-order Ward identity cannot hold on any periodic band: the pair-creating stress drops out of H, P and K, and the lattice's boost anomaly blocks closure. So the gauge-invariant comparison of graviton and matter cones, which is what GW170817 tests, had nothing to compute in. On a grid with a preferred frame, the natural gauge group is the foliation-preserving one, as in khronometric or Hořava gravity. Is there a deformed W2 with that group that admits the pair stress? If so, what are the physical pole positions, and what does the extra scalar mode do?
+- **Setting.**
+  - R9-9's N-type box graviton. R8-2's stress plus R13-5's W1 pair kernel.
+  - W2_pf: the second-order identity for foliation-preserving deformations (lapse a function of time only, shifts arbitrary).
+  - Complex scalars and Clifford-flat fermions on G(b) and literal edges; m = 1 and 0.3; with and without P46 pairing.
+  - Excluded: standard W2 (R13-5 covers it); nonlinear gravity.
+- **Prior art (count once).** R13-5 and verdict (`vR13-5:7,13`); R13-8's gauge kernel (`vR13-8:11`); RN L3 (projectable Hořava strong coupling); R14-5's CMC discussion (`vR14-5:86-88`, cuscuton, Bhattacharyya et al.); RFW.
+- **Probes.**
+  - (a) Write W2_pf. Construct a pair stress satisfying it, or prove none exists in a stated class.
+  - (b) Show that the TT and matter pole positions are W2_pf-gauge-invariant.
+  - (c) Compute c_m − c_T for both polarizations, in κ_lat units and at a = ℓ_P, with and without pairing.
+  - (d) The extra scalar graviton mode: its dispersion and whether it is strongly coupled.
+  - (e) Prices.
+- **FIXED readings.**
+  - **SPLIT-PRESENT:** a nonzero W2_pf-invariant pole split for every W2_pf-complete stress in a stated class (refereed if class-wide), with numbers.
+  - **SPLIT-ABSENT:** the split vanishes identically for the W2_pf-complete stress (pairing stated), with the reason, checked.
+  - **OPEN:** otherwise, including no W2_pf-complete stress constructed.
+- **Expectation.** A W2_pf-complete stress exists, since boosts are no longer gauge. SPLIT-PRESENT without pairing, at the edge-anomaly size. SPLIT-ABSENT for TT with matched pairing (residual 2κm²J₂). The likeliest failure is a strongly coupled extra scalar, as in projectable Hořava.
+
+---
+

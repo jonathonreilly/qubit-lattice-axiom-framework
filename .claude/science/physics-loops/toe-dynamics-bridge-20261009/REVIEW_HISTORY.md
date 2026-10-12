@@ -199,3 +199,23 @@ staged identities/whitespace match. Citation adds2nodes1edge. Global audit pipel
 and strict audit lint remain independent landing gates. No science was merged.
 The live checkpoint now points to the clean boost publication worktree, while
 the exact published checkouts and complete historical evidence are preserved.
+
+
+## 2026-10-12T08:37:02.488319+00:00 — checked full-spin gapped model and publication recovery
+
+The concrete-chain proof has a completed separate-context same-family review,
+with independent signed-binary spin actions and full complex spectral transport.
+Root completed full proof, control, failure and source evidence coverage in
+Concrete_chain_root_review_coverage.json. No analytic repair; two surviving
+author mutations and the initial cutoff-resolution failure remain explicit.
+Scope is the supplied 1D model and chosen full-spin GNS, not framework closure.
+
+Massive carrier author evidence is completely read by root; final fresh review
+is pending despite a supportive preliminary reconstruction. New creator/scattering
+and controlled continuum specifications remain proposed, not proved.
+
+Five-note canonical publication first attempt preserved complete raw inner and
+outer returns before checks. Three canonicals/nine mutations ran; Fock comparison
+stopped solely on numpy2.3.5 versus2.4.4 metadata, with scientific bytes unchanged.
+An explicit version-line map and resume-only finisher are being prepared; old
+failure/caches/sources remain untouched. No audit verdict, draft, merge or main push.

@@ -5589,3 +5589,25 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Not physical non-locality.** The curvature transforms under the completed momentum constraint. No closed degree-3 system or invariant physical domain exists, and no bounded gauge-invariant instantaneous responder has been built.
   - **Lemma A and the (α)/(β) fork do not close.**
   - **P-pf1** shares the zone-mean root but relocates the cost to a discontinuous 1/n matter generator.
+
+### C5 Round 16, item 13 (pre-registered 23:53Z, before launch)
+
+**R16-13. Fermion and photon zero-point loops in the graviton cone and the shear: does their sign lift R16-9's conflict?**
+- **Plain question.** R16-9 (worker, CONFLICT pending referee) finds that on one subluminal scalar edge the graviton-cone zero always leaves μ_E > 0. Its biggest open item is that no TT or shear vertex exists for Dirac, photon or gluon loops. Fermion zero-point energy has the opposite sign to the boson one. With a TT vertex written for Dirac matter on D1 or zigzag Dirac edges, does the fermion contribution to Ξ (E_g, T₂g) and μ_E have the opposite sign? Can it cancel the scalar's μ_E at the graviton-cone zero without pairing?
+- **Setting.**
+  - The R9-9 / R13-5 vertex prescription extended to Dirac fermions: the Belinfante-symmetrized lattice stress with the assumed W1 completion. State it explicitly and stipulate where needed.
+  - D1(1.4, r) and subluminal zigzag Dirac edges. The photon is optional (Peierls Maxwell stress on the R14-1 photon edge).
+  - Zero-point vacuum supplied, one loop, m ≤ 0.3.
+  - Excluded: exact pairing (P46). That is the comparison, not the target.
+- **Prior art (count once):** R16-9, R16-3 (Z1, IBP identity), R14-3 (μ_E, Theorem B), R13-5 (stipulated vertex, Lemma B2, pairing gives 2κm²J₂), R11-1 (N*: pairing necessary for untuned cancellation), R9-9.
+- **Probes.**
+  - (a) Write the Dirac TT and shear vertex and its IBP identity, analogous to R16-3's Ξ = (1/32)⟨|V|²(5v_z² − 1)/ε⁵⟩.
+  - (b) Compute the signs and sizes of Ξ_E_g, Ξ_T2g and μ_E for D1 and zigzag Dirac edges.
+  - (c) For SM-like content (scalar edge plus N_f Dirac edges, with or without the photon), find the knob count that zeroes E_g, T₂g and μ_E together, or show the conflict persists.
+  - (d) Relate the result to R11-1's N*. Does an untuned cancellation re-enter by the back door?
+  - (e) Prices.
+- **FIXED readings.**
+  - **LIFTED:** an explicit mixed-species content, all edges subluminal, with E_g = T₂g = μ_E = 0 at a common light mass, checked, with the count.
+  - **PERSISTS:** a demonstration (refereed if class-wide) that the fermion and photon loops cannot cancel μ_E at the graviton-cone zero in the stated class.
+  - **OPEN:** otherwise.
+- **Expectation.** Fermion μ_E has the opposite sign, so the conflict is LIFTED with one more tuning (the species ratio is not a knob, so an edge parameter is needed).

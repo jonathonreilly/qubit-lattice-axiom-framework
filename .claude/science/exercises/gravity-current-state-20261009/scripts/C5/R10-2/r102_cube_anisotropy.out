@@ -1,0 +1,5 @@
+NN (sin vertex, NN propagator)                             R = 0.535513   (R-1 = -4.645e-01)
+whole-zone SLAC (v=k, G=1/(k^2+m^2) on cube)               R = 0.743967   (R-1 = -2.560e-01)
+C^inf box law, loop over whole zone (edge modes in)        R = 0.806876   (R-1 = -1.931e-01)
+box law + O(4) ball form factor chi^4 (a=1.9)              R = 1.000011   (R-1 = +1.125e-05)
+grid n=56 per axis (midpoint rule); m^2=0.25. Ball case: deviation from 1 is quadrature error of a ball on a cubic grid.

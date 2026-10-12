@@ -1,0 +1,20 @@
+d = 3 boost along x at P_perp = (0.20, -0.10); l = 1 channel, Nr = 24 on supp g; M_min = 0.8500000000; NP = 960 on [-2.4, 2.4)
+legs: max |k_leg| for |q| <= kappa at |P| <= 1.2 (c > 0): 1.548; at |P| <= 2.4: 2.494  (cube/ball edge B = 2.6)
+(i) bound-triplet packet, spin (0.6, 0.5i, -0.62), P_x-support |P_x| < 0.25; eta* = asinh(sqrt(Pi1^2 - P_perp^2)/m_perp) - asinh(a/m_perp) = 0.3166
+    eta = 0.10 : ||U_lat - U_BT|| psi = 5.89e-08   bound 2||(1-E)psi|| = 0.00e+00   OK   (BT norm 0.999999999748; spin weights |m=+1,0,-1|^2 = [0.362  0.2514 0.3865])
+    eta = 0.20 : ||U_lat - U_BT|| psi = 5.78e-08   bound 2||(1-E)psi|| = 0.00e+00   OK   (BT norm 0.999999999496; spin weights |m=+1,0,-1|^2 = [0.3621 0.2515 0.3865])
+    eta = 0.30 : ||U_lat - U_BT|| psi = 7.06e-08   bound 2||(1-E)psi|| = 0.00e+00   OK   (BT norm 0.999999999244; spin weights |m=+1,0,-1|^2 = [0.3621 0.2516 0.3864])
+    eta = 0.35 : ||U_lat - U_BT|| psi = 8.37e-08   bound 2||(1-E)psi|| = 1.14e-02   OK   (BT norm 0.999999999119; spin weights |m=+1,0,-1|^2 = [0.3621 0.2516 0.3863])
+    eta = 0.45 : ||U_lat - U_BT|| psi = 3.30e-05   bound 2||(1-E)psi|| = 6.31e-01   OK   (BT norm 0.999999998867; spin weights |m=+1,0,-1|^2 = [0.3621 0.2517 0.3861])
+    eta = 0.60 : ||U_lat - U_BT|| psi = 1.47e-02   bound 2||(1-E)psi|| = 1.43e+00   OK   (BT norm 0.999999998491; spin weights |m=+1,0,-1|^2 = [0.3622 0.252  0.3858])
+    eta = 0.80 : ||U_lat - U_BT|| psi = 1.43e-01   bound 2||(1-E)psi|| = 1.99e+00   OK   (BT norm 0.999999997988; spin weights |m=+1,0,-1|^2 = [0.3624 0.2524 0.3852])
+    eta = 1.00 : ||U_lat - U_BT|| psi = 2.98e-01   bound 2||(1-E)psi|| = 2.00e+00   OK   (BT norm 0.999999997485; spin weights |m=+1,0,-1|^2 = [0.3626 0.2529 0.3846])
+(ii) mixed packet (bound + continuum mu = 1.0041, 1.2739), Gaussian in P_x, sigma = 0.07, P_x0 = -0.1
+    eta = 0.10 : ||U_lat - U_BT|| psi = 2.06e-08   optimised bound 2||(1-E)psi|| = 3.38e-03   OK
+    eta = 0.20 : ||U_lat - U_BT|| psi = 2.51e-06   optimised bound 2||(1-E)psi|| = 1.35e-01   OK
+    eta = 0.30 : ||U_lat - U_BT|| psi = 9.63e-05   optimised bound 2||(1-E)psi|| = 8.20e-01   OK
+    eta = 0.35 : ||U_lat - U_BT|| psi = 3.93e-04   optimised bound 2||(1-E)psi|| = 1.04e+00   OK
+    eta = 0.45 : ||U_lat - U_BT|| psi = 3.25e-03   optimised bound 2||(1-E)psi|| = 1.66e+00   OK
+    eta = 0.60 : ||U_lat - U_BT|| psi = 2.35e-02   optimised bound 2||(1-E)psi|| = 1.97e+00   OK
+    eta = 0.80 : ||U_lat - U_BT|| psi = 1.09e-01   optimised bound 2||(1-E)psi|| = 2.00e+00   OK
+    eta = 1.00 : ||U_lat - U_BT|| psi = 2.41e-01   optimised bound 2||(1-E)psi|| = 2.00e+00   OK

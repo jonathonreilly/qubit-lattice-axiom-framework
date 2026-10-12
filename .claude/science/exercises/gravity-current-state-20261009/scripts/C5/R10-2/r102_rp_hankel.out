@@ -1,0 +1,64 @@
+fixed spatial momentum k=(0.3,0.2,0.1); m=0.5 (scalar), massless TT; mp.dps=40
+
+== NN scalar (control, RP) ==
+  G(0..6) = ['0.76512023', '0.41400709', '0.22401953', '0.12121712', '0.065590671', '0.035491158', '0.01920429']
+  N=1  min/max eig: siteH0 -2.9e-42 | siteH2 4.1e-42 | linkG1 0.0 | linkG2 -4.95e-42
+  N=2  min/max eig: siteH0 0.0 | siteH2 -1.54e-41 | linkG1 -1.26e-42 | linkG2 -9.29e-42
+  N=3  min/max eig: siteH0 -1.26e-41 | siteH2 -3.78e-42 | linkG1 -1.32e-41 | linkG2 -1.96e-41
+  N=5  min/max eig: siteH0 -6.03e-42 | siteH2 -3.26e-41 | linkG1 -2.56e-41 | linkG2 -1.9e-41
+  N=7  min/max eig: siteH0 -2.12e-41 | siteH2 -3.19e-41 | linkG1 -4.23e-41 | linkG2 -1.45e-41
+  N=9  min/max eig: siteH0 -9.46e-42 | siteH2 -4.65e-41 | linkG1 -2.76e-41 | linkG2 -1.16e-41
+
+== box scalar s(k), b=2.0,b2=3.1 ==
+  G(0..6) = ['0.98959589', '0.16122103', '0.47614183', '-0.084267924', '0.22680851', '-0.079989246', '0.094134191']
+  N=1  min/max eig: siteH0 0.415 | siteH2 0.155 | linkG1 -0.855 | linkG2 0.4
+  N=2  min/max eig: siteH0 -0.0352 | siteH2 -0.0633 | linkG1 -1.05 | linkG2 -0.0285
+  N=3  min/max eig: siteH0 -0.0505 | siteH2 -0.0795 | linkG1 -1.13 | linkG2 -0.0488
+  N=5  min/max eig: siteH0 -0.0918 | siteH2 -0.125 | linkG1 -1.17 | linkG2 -0.104
+  N=7  min/max eig: siteH0 -0.117 | siteH2 -0.149 | linkG1 -1.17 | linkG2 -0.141
+  N=9  min/max eig: siteH0 -0.127 | siteH2 -0.161 | linkG1 -1.18 | linkG2 -0.152
+
+== box TT graviton d(q), c1=1,c2=2.5 ==
+  G(0..6) = ['1.2835176', '0.89560436', '0.63891153', '0.4399667', '0.29570004', '0.20506519', '0.14273473']
+  N=1  min/max eig: siteH0 0.0049 | siteH2 0.0144 | linkG1 -0.00782 | linkG2 -0.00526
+  N=2  min/max eig: siteH0 -0.00807 | siteH2 -0.0204 | linkG1 -0.0119 | linkG2 -0.00509
+  N=3  min/max eig: siteH0 -0.00961 | siteH2 -0.0232 | linkG1 -0.0112 | linkG2 -0.00517
+  N=5  min/max eig: siteH0 -0.0095 | siteH2 -0.0228 | linkG1 -0.011 | linkG2 -0.00505
+  N=7  min/max eig: siteH0 -0.00959 | siteH2 -0.0229 | linkG1 -0.0109 | linkG2 -0.00502
+  N=9  min/max eig: siteH0 -0.00961 | siteH2 -0.023 | linkG1 -0.0109 | linkG2 -0.00503
+
+== SLAC scalar 1/(th^2+c) on (-pi,pi] ==
+  G(0..6) = ['0.70062339', '0.44005224', '0.22571835', '0.1248745', '0.064734697', '0.035995833', '0.018372906']
+  N=1  min/max eig: siteH0 -0.0383 | siteH2 -0.051 | linkG1 0.0129 | linkG2 -0.0114
+  N=2  min/max eig: siteH0 -0.0376 | siteH2 -0.0508 | linkG1 0.000805 | linkG2 -0.0111
+  N=3  min/max eig: siteH0 -0.0385 | siteH2 -0.0517 | linkG1 3.9e-5 | linkG2 -0.0121
+  N=5  min/max eig: siteH0 -0.0385 | siteH2 -0.0517 | linkG1 5.96e-8 | linkG2 -0.0125
+  N=7  min/max eig: siteH0 -0.0385 | siteH2 -0.0517 | linkG1 7.27e-11 | linkG2 -0.0127
+  N=9  min/max eig: siteH0 -0.0385 | siteH2 -0.0517 | linkG1 8.0e-14 | linkG2 -0.0129
+
+== SLAC TT graviton 1/(th^2+|q|^2) ==
+  G(0..6) = ['1.2354601', '0.93082638', '0.62822672', '0.43691425', '0.29799757', '0.20655062', '0.14101462']
+  N=1  min/max eig: siteH0 -0.0247 | siteH2 -0.0451 | linkG1 0.00651 | linkG2 -0.00426
+  N=2  min/max eig: siteH0 -0.0234 | siteH2 -0.0431 | linkG1 0.000398 | linkG2 -0.00375
+  N=3  min/max eig: siteH0 -0.0236 | siteH2 -0.0431 | linkG1 1.98e-5 | linkG2 -0.004
+  N=5  min/max eig: siteH0 -0.0233 | siteH2 -0.0426 | linkG1 3.23e-8 | linkG2 -0.00399
+  N=7  min/max eig: siteH0 -0.0232 | siteH2 -0.0425 | linkG1 4.22e-11 | linkG2 -0.00401
+  N=9  min/max eig: siteH0 -0.0232 | siteH2 -0.0424 | linkG1 4.93e-14 | linkG2 -0.00403
+
+== SLAC scalar + contact 0.05*th^2 ==
+  G(0..6) = ['0.86511679', '0.34005224', '0.25071835', '0.11376339', '0.070984697', '0.031995833', '0.021150684']
+  N=1  min/max eig: siteH0 0.0981 | siteH2 0.117 | linkG1 -0.0959 | linkG2 0.0519
+  N=2  min/max eig: siteH0 -0.00312 | siteH2 -0.00637 | linkG1 -0.0898 | linkG2 0.00297
+  N=3  min/max eig: siteH0 -0.00532 | siteH2 -0.00829 | linkG1 -0.0928 | linkG2 0.000133
+  N=5  min/max eig: siteH0 -0.00557 | siteH2 -0.00867 | linkG1 -0.0929 | linkG2 1.89e-7
+  N=7  min/max eig: siteH0 -0.0056 | siteH2 -0.0087 | linkG1 -0.0931 | linkG2 2.24e-10
+  N=9  min/max eig: siteH0 -0.00561 | siteH2 -0.0087 | linkG1 -0.0932 | linkG2 2.41e-13
+
+== SLAC scalar + contact 0.5*th^2 ==
+  G(0..6) = ['2.3455575', '-0.55994776', '0.47571835', '0.013763388', '0.1272347', '-0.0040041673', '0.046150684']
+  N=1  min/max eig: siteH0 0.128 | siteH2 0.0758 | linkG1 -2.93 | linkG2 0.266
+  N=2  min/max eig: siteH0 -0.0053 | siteH2 -0.0229 | linkG1 -2.56 | linkG2 0.0212
+  N=3  min/max eig: siteH0 -0.0194 | siteH2 -0.0317 | linkG1 -2.5 | linkG2 0.000985
+  N=5  min/max eig: siteH0 -0.0204 | siteH2 -0.0328 | linkG1 -2.48 | linkG2 1.39e-6
+  N=7  min/max eig: siteH0 -0.0206 | siteH2 -0.033 | linkG1 -2.48 | linkG2 1.64e-9
+  N=9  min/max eig: siteH0 -0.0207 | siteH2 -0.033 | linkG1 -2.48 | linkG2 1.76e-12

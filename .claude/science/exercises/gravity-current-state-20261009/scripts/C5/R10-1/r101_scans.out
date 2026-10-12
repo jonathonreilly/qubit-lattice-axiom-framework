@@ -1,0 +1,17 @@
+(i) no-box Wilson family (R8-5 control law at r = 1; F2 naive at r = 0), m = 0.025, N = 128: photon moment x16pi^2
+  r=0.00  total  -5.3614  (a  -7.8332, A  +2.4718, mix  +0.0000)
+  r=0.20  total  -3.4635  (a  -4.6095, A  +1.1470, mix  -0.0009)
+  r=0.40  total  -1.6729  (a  -2.4574, A  +0.7330, mix  +0.0515)
+  r=0.50  total  -1.0252  (a  -1.8159, A  +0.6693, mix  +0.1215)
+  r=0.60  total  -0.4996  (a  -1.3250, A  +0.6021, mix  +0.2233)
+  r=0.70  total  -0.0669  (a  -0.9261, A  +0.5040, mix  +0.3553)
+  r=0.80  total  +0.2948  (a  -0.5848, A  +0.3648, mix  +0.5148)
+  r=1.00  total  +0.8645  (a  -0.0000, A  -0.0405, mix  +0.9050)
+(ii) pairing residual under mass splitting, moment formulas (IR-safe), N = 128, x16pi^2
+  box curve b1=0.8 b2=1.6: A_xx range on zone [-4.968, 0.000]; X_D(0) = +0.390602, X_S(0) = -0.195301, X_D + 2X_S = +0.0e+00
+  m_f = 0, m_s = 0.30: residual +2.845e-02   residual/m_s^2 = +0.3161
+  m_f = 0, m_s = 0.10: residual +3.326e-03   residual/m_s^2 = +0.3326
+  m_f = 0, m_s = 0.03: residual +3.011e-04   residual/m_s^2 = +0.3346
+  m_f = 0, m_s = 0.01: residual +3.347e-05   residual/m_s^2 = +0.3347
+  Wilson circle: A_xx range [-2.000, -0.000]; X_D(0) = +0.310520, X_S(0) = -0.155260
+elapsed 0.9s

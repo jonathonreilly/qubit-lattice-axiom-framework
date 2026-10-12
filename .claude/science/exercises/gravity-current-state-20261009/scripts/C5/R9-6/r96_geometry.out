@@ -1,0 +1,14 @@
+(i) B = 2.60, Pi1 = 0.60: legs stay in the open ball |k| < B for all |P| < Pi1, |q| < Q iff Q <~ 2.2813 (sampled); kappa = 0.80
+    max |leg| over |q| <= kappa, |P| <= 1.2 (where c > 0): 1.5481  (inside the inscribed ball, B = 2.6)
+(ii) B = 1.60, axis          : some leg with |q| <= kappa first touches the cube face at |P| = 1.272
+(ii) B = 1.60, face diagonal : some leg with |q| <= kappa first touches the cube face at |P| = 1.798
+(ii) B = 1.60, body diagonal : some leg with |q| <= kappa first touches the cube face at |P| = 2.202
+(ii) B = 1.60, ball |k| < B: first touched at |P| = 1.271 (every direction)
+(iii) boost budget at rest, mass 0.50, cube B = 2.6, axis          : eta* = asinh(B/(m max|n_a|)) = 2.3509
+(iii) boost budget at rest, mass 0.50, cube B = 2.6, face diagonal : eta* = asinh(B/(m max|n_a|)) = 2.6930
+(iii) boost budget at rest, mass 0.50, cube B = 2.6, body diagonal : eta* = asinh(B/(m max|n_a|)) = 2.8942
+(iii) boost budget at rest, mass 0.50, ball B = 2.6, every direction: eta* = 2.3509
+(iii) boost budget at rest, mass 0.85, cube B = 2.6, axis          : eta* = asinh(B/(m max|n_a|)) = 1.8369
+(iii) boost budget at rest, mass 0.85, cube B = 2.6, face diagonal : eta* = asinh(B/(m max|n_a|)) = 2.1709
+(iii) boost budget at rest, mass 0.85, cube B = 2.6, body diagonal : eta* = asinh(B/(m max|n_a|)) = 2.3693
+(iii) boost budget at rest, mass 0.85, ball B = 2.6, every direction: eta* = 1.8369

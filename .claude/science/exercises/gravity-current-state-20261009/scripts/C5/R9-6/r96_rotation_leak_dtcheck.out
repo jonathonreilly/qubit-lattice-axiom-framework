@@ -1,0 +1,4 @@
+(A) max |j - k| on the square |k_a| <= B: 3.6e-10 ; max |j| on the torus: 22.26
+(A) ball (inscribed disc): k0 = (1.5, 0.8), |k0| = 1.70, sigma_k = 0.10, L = 256   [109s]
+    theta = 1.5708 : ||U_lat - U_rot|| psi = 6.98e-10   bound 2||1_E psi|| = 8.12e-10  OK   <eps~>: lattice 1.7750539559 (t=0: 1.7750539559), continuum-rotated 1.775054
+    theta = 3.1416 : ||U_lat - U_rot|| psi = 8.32e-10   bound 2||1_E psi|| = 8.12e-10  OK   <eps~>: lattice 1.7750539558 (t=0: 1.7750539559), continuum-rotated 1.775054

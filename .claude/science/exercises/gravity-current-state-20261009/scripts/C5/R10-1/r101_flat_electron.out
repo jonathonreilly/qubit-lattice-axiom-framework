@@ -1,0 +1,7 @@
+electron speed shift dc_e x16pi^2 (Feynman gauge, R8-5 method), photon moment from pairing formulas
+  Wilson circle, flat, no photon box                   m=0.05 N= 96 | dc_e -18.0340 | dc_gamma(Dirac 4comp) +0.3089, +2 scalars -> +0.0e+00 | Delta(no partners) -18.3429
+  Wilson circle, flat, no photon box                   m=0.05 N=160 | dc_e -17.9677 | dc_gamma(Dirac 4comp) +0.3089, +2 scalars -> +0.0e+00 | Delta(no partners) -18.2766
+  box curve b1=0.8 b2=1.6, flat, photon box (0.8,1.6)  m=0.05 N= 96 | dc_e -10.7328 | dc_gamma(Dirac 4comp) +0.3898, +2 scalars -> +0.0e+00 | Delta(no partners) -11.1226
+  box curve b1=0.8 b2=1.6, flat, photon box (0.8,1.6)  m=0.05 N=160 | dc_e -10.6666 | dc_gamma(Dirac 4comp) +0.3898, +2 scalars -> +0.0e+00 | Delta(no partners) -11.0563
+  control R8-5 fermion(), Wilson r=1 shared beta, naive photon, m=0.05 N=96: dc_e -21.4726 (r85_shapes.out: -21.41 at N=224)
+elapsed 0.8s

@@ -1,0 +1,13 @@
+invariant form check, max |L - L_inv| = 6.800116025829084e-16
+continuum L(t) = -(-R**2*xx + R*t**2*xx + 2*R*xh**2 + 2*t**4*xx - 8*t**2*xh**2)/(4*(R + t**2)**(7/2))
+continuum primitive G(t) = t*(R*xx + t**2*xx - 2*xh**2)/(4*(R + t**2)**(5/2))
+G_cov(h,hp) = hhp*(hh*xx - 2*xh**2)/(4*hh**(5/2))
+
+residual L - dG/dt in anomaly variables (a=|h'|^2-1, b=h.h'', c1=x.h', c2=x.h''):
+  a^1 b^0 c1^0 c2^0 : (hh*xx - xh**2)/(4*hh**(5/2))
+  a^0 b^1 c1^0 c2^0 : -xh**2/(4*hh**(5/2))
+  a^0 b^0 c1^1 c2^0 : -hhp*xh/(2*hh**(5/2))
+  a^0 b^0 c1^0 c2^1 : xh/(2*hh**(3/2))
+
+coef(a) - coef(b) = xx/(4*hh**(3/2))
+coef(b) = -xh**2/(4*hh**(5/2))

@@ -3949,12 +3949,6 @@ Readings:
   - the seagull is not fixed by a second-order Ward identity, and general ultralocal polarization-dependent seagulls can cancel the mass split;
   - the dressed matter speed was not computed.
 
-**R9-10 (d = 2 Belinfante box stress):** worker reading PASS WITH SCOPE.
-- A symmetric stress is built via Lemma KB plus a Belinfante curl. Spinning bound bodies fall universally: η ≤ 1.5e-14 at the floor, with η = 0 proved.
-- The spin–orbit, gravitomagnetic and hidden-momentum couplings equal the uniform-field special-relativistic values to 1e-12.
-
-Referee running (17:49Z).
-
 ### C5 Round 10, items 1–2 (pre-registered 17:52Z; launched now)
 
 **R10-1. Is the edge anomaly unremovable? A one-loop "anomaly-inflow" no-go for box-confined lattice field theories.**
@@ -3984,13 +3978,6 @@ Readings:
 - **PASS:** a reflection-positive Euclidean Z⁴ law with box-exact symbols whose graviton needs ≤ 2 tunings (mass plus Λ) at one loop, checked.
 - **FAIL:** a refereed no-go: OS positivity fails for box symbols in a stated class, or the tuning count does not fall.
 - **INCONCLUSIVE:** otherwise.
-
-**R9-8 (non-minimal box QED):** worker reading INCONCLUSIVE, leaning FAIL.
-- Across 17 gauge-invariant ℓ¹ laws, the frame rotations and Wilson-line paths all give a one-loop cone split ≥ 12.9 e²/16π², and every rotated law is worse than plain BQ.
-- Proved: the Ward-fixed q = 0 vertex is the full velocity operator; an INV forward vertex is impossible in the Lemma-C frame family.
-- The Wilson-line path is itself a large lattice-fixed magnetic coupling.
-
-Referee running (17:53Z).
 
 ### C5 Round 10, items 3–4 (pre-registered 18:01Z; launched now)
 
@@ -4023,3 +4010,51 @@ Readings:
 - **VIABLE:** a model with records as the q-charge giving ⟨Λ⟩ = 0 across phase transitions without tuning, consistent with the stated bounds, with prices named.
 - **EXCLUDED:** a refereed inconsistency, e.g. records cannot be a conserved q-charge under the Record axiom, or a bound is violated.
 - **OPEN:** otherwise.
+
+### C5 Round 9–10 referee results (recorded 18:14Z)
+
+**R9-6 (d = 3 rotation-multiplet box law) — CONFIRMED WITH CORRECTIONS. PASS WITH SCOPE.**
+- **The algebra.** Conditional on the graded-CAR, continuous-time, number-conserving two-body BT law (not derived from the axioms), the rotationally scalar d = 3 p-wave triplet with K = ½{H, X_NW} + (P × S)/(M + H) has α = 1 forced. It satisfies the exact undeformed Poincaré Lie algebra on the plateau domain.
+  - The 45 chart commutators converge from 5.5e-7 (NP = 28) to 1.5e-10 (NP = 40).
+  - The lattice triplet mass converges to independence of direction and P.
+- **Rotations and leakage.** The interaction support is in |k| < 1.548 < B, so:
+  - the ball sector carries exact E(3);
+  - the whole-torus Hamiltonian commutes with every deformed rotation flow, though those flows do not form SO(3) off the cube;
+  - the rotation and boost leakage theorems hold.
+- **Scope:** a two-particle common-domain Lie algebra. It is not an exponentiating sector, and it covers neither N ≥ 3, pair creation, loops, gauge fields, Ward identities nor gravity.
+
+**R9-8 (non-minimal box QED) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.**
+- **Proved for the smooth BQ-W FW-frame family with symmetrized-staircase Wilson lines:**
+  - gauge invariance fixes the zero-transfer charge and velocity vertex;
+  - a regular Hamiltonian vertex has a nonzero four-transverse part;
+  - an invariant-energy profile cannot multiply the full forward pair current except at F = 0 or 1.
+- **Numbers, checked independently:**
+  - Δ = −33.5860 e²/16π² at (0.5, 1.9);
+  - all 15 quasi-local staircase cases have |Δ| ≥ 12.9;
+  - path changes move the photon coefficient by −5.5 to −69.3.
+- **Scope.** This strongly rejects protection in the cheapest construction, but it is not a stated-class no-go.
+
+**R9-10 (d = 2 Belinfante box stress) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.** The fixed GR-spin clause is unmet.
+- **The stress.** Conditional on R8-1's d = 2 law and the first-moment lapse bridge, the Weyl-midpoint density has total H and dipole K, spin term included. A valid KB/Belinfante division gives a symmetric, Hermitian, Gevrey-quasi-local stress with:
+  - exact global energy conservation;
+  - box-to-box momentum conservation, with off-box shell and torque sources;
+  - J_T = J box-to-box.
+- **Existence only.** This is an analytic existence result. The checked closed-form chart realization is not the global quasi-local flux.
+- **Bodies fall universally.** On the box domain, Ẍ_E = −g + 2(g·V)V. So the linear-order Eötvös violation between bodies of different binding or spin is exactly zero.
+- **Spin.** The checks establish the special-relativistic uniform-acceleration term and unit rigid-rotation coupling. They do not establish GR's curved-field geodetic or spin-curvature coupling.
+
+**R10-1 (edge-anomaly inflow):** worker reading SUGGESTED, with derived parts.
+- Theorem T′: the scalar photon speed is an A-moment.
+- Theorem D: Dirac photons depend on four anomaly functions, and reproduce R8-5.
+- Theorem P: Clifford-flat fermions plus 2 matched scalars cancel the photon speed shift exactly (an edge supertrace). The electron speed is untouched (−11 to −18).
+- The tuning count equals set C's.
+
+Referee running (18:13Z).
+
+**R10-2 (Euclidean box symbols):** worker reading FAIL (bounded).
+- Lemma A: RP forces k₄-analyticity away from πZ, so smooth box symbols are not RP.
+- Lemma B: no smooth RP law is exactly O(4) on an open set.
+- Whole-zone SLAC passes link RP only numerically, and forces zero-energy time-doublers.
+- The count without RP is 5 + Λ.
+
+Referee running (18:11Z).

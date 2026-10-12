@@ -1,0 +1,10 @@
+SLAC c=0.0025: N=2 link 3.03e-5 site -0.00263 | N=6 link 6.26e-11 site -0.00165 | N=10 link 7.52e-17 site -0.0013 | N=14 link 7.97e-23 site -0.00114
+SLAC c=0.25: N=2 link 0.000598 site -0.0311 | N=6 link 1.7e-9 site -0.0316 | N=10 link 2.2e-15 site -0.0317 | N=14 link 2.29e-21 site -0.0317
+SLAC c=1.0: N=2 link 0.00135 site -0.0495 | N=6 link 2.79e-9 site -0.0505 | N=10 link 3.06e-15 site -0.0505 | N=14 link 2.89e-21 site -0.0505
+SLAC c=5.0: N=2 link 0.00192 site -0.0454 | N=6 link 2.81e-9 site -0.0467 | N=10 link 2.8e-15 site -0.0468 | N=14 link 2.51e-21 site -0.0469
+SLAC c=15.0: N=2 link 0.00188 site -0.0267 | N=6 link 2.5e-9 site -0.0282 | N=10 link 2.43e-15 site -0.0284 | N=14 link 2.16e-21 site -0.0284
+SLAC c=29.86: N=2 link 0.00182 site -0.0162 | N=6 link 2.35e-9 site -0.0174 | N=10 link 2.28e-15 site -0.0176 | N=14 link 2.02e-21 site -0.0176
+lam=-0.99 phi=0  site kernel P=199.0   link kernel 2Re e^{ith}/(1-lam e^{ith})=-200.0
+lam=-0.99 phi=0.02  site kernel P=40.122   link kernel 2Re e^{ith}/(1-lam e^{ith})=-39.5172
+lam=-0.99 phi=0.1  site kernel P=1.99164   link kernel 2Re e^{ith}/(1-lam e^{ith})=-1.00166
+lam=-0.99 phi=0.3  site kernel P=0.224773   link kernel 2Re e^{ith}/(1-lam e^{ith})=0.783058

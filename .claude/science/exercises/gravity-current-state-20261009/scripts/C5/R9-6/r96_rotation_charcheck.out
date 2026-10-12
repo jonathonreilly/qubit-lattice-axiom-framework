@@ -1,0 +1,4 @@
+axis z, ball packet, theta = pi, RK4 steps 160: on-grid leakage 4.37e-08
+axis z, ball packet, theta = pi, RK4 steps 320: on-grid leakage 5.01e-09
+axis (1,2,2)/3, ball packet, theta = pi, RK4 steps 160: on-grid leakage 4.14e-08
+axis (1,2,2)/3, ball packet, theta = pi, RK4 steps 320: on-grid leakage 4.14e-09

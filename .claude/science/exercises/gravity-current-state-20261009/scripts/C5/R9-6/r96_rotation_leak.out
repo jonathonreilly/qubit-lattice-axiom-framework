@@ -1,0 +1,38 @@
+(A) max |j - k| on the square |k_a| <= B: 3.6e-10 ; max |j| on the torus: 22.26
+(A) ball (inscribed disc): k0 = (1.5, 0.8), |k0| = 1.70, sigma_k = 0.10, L = 256   [54s]
+    theta = 1.5708 : ||U_lat - U_rot|| psi = 1.81e-09   bound 2||1_E psi|| = 8.12e-10  OK   <eps~>: lattice 1.7750539559 (t=0: 1.7750539559), continuum-rotated 1.775054
+    theta = 3.1416 : ||U_lat - U_rot|| psi = 2.54e-09   bound 2||1_E psi|| = 8.12e-10  OK   <eps~>: lattice 1.7750539558 (t=0: 1.7750539559), continuum-rotated 1.775054
+    theta = 6.2832 : ||U_lat - U_rot|| psi = 4.93e-09   bound 2||1_E psi|| = 8.12e-10  OK   <eps~>: lattice 1.7750539558 (t=0: 1.7750539559), continuum-rotated 1.775054
+(A) cube corner: k0 = (1.95, 1.95), |k0| = 2.76 > B, sigma_k = 0.10, L = 256   [4s]
+    theta = 0.0500 : ||U_lat - U_rot|| psi = 8.97e-06   bound 2||1_E psi|| = 2.35e-04  OK   <eps~>: lattice 2.8045187484 (t=0: 2.8045187484), continuum-rotated 2.804519
+    theta = 0.1000 : ||U_lat - U_rot|| psi = 1.47e-04   bound 2||1_E psi|| = 2.54e-03  OK   <eps~>: lattice 2.8045187481 (t=0: 2.8045187484), continuum-rotated 2.804519
+    theta = 0.1500 : ||U_lat - U_rot|| psi = 1.44e-03   bound 2||1_E psi|| = 1.69e-02  OK   <eps~>: lattice 2.8045187169 (t=0: 2.8045187484), continuum-rotated 2.804518
+    theta = 0.2000 : ||U_lat - U_rot|| psi = 8.85e-03   bound 2||1_E psi|| = 7.07e-02  OK   <eps~>: lattice 2.8045169697 (t=0: 2.8045187484), continuum-rotated 2.804505
+    theta = 0.2500 : ||U_lat - U_rot|| psi = 3.67e-02   bound 2||1_E psi|| = 2.13e-01  OK   <eps~>: lattice 2.8044744396 (t=0: 2.8045187484), continuum-rotated 2.804286
+    theta = 0.3000 : ||U_lat - U_rot|| psi = 1.08e-01   bound 2||1_E psi|| = 4.66e-01  OK   <eps~>: lattice 2.8039708899 (t=0: 2.8045187484), continuum-rotated 2.802381
+    theta = 0.4000 : ||U_lat - U_rot|| psi = 4.32e-01   bound 2||1_E psi|| = 1.14e+00  OK   <eps~>: lattice 2.7884662401 (t=0: 2.8045187484), continuum-rotated 2.762141
+(B) axis n = z, ball: k0 = (1.5, 0.8, 0.3), |k0| = 1.73, sigma = 0.08 (grid 40^3, h = 0.04)
+    theta = 0.7854 : leakage 6.06e-10 (on-grid part 6.1e-10, off-grid lattice mass 8.4e-20)   bound 2||1_E psi|| = 1.72e-17  OK   [max |G(Phi k) - G(k)| = 5.9e-11, integrator check on the packet]
+    theta = 1.5708 : leakage 2.50e-09 (on-grid part 2.5e-09, off-grid lattice mass 1.1e-16)   bound 2||1_E psi|| = 5.62e-15  OK   [max |G(Phi k) - G(k)| = 3.5e-11, integrator check on the packet]
+    theta = 3.1416 : leakage 4.37e-08 (on-grid part 4.4e-08, off-grid lattice mass 1.1e-16)   bound 2||1_E psi|| = 5.62e-15  VIOLATED (above 1e-8 floor)   [max |G(Phi k) - G(k)| = 4.1e-10, integrator check on the packet]
+(B) axis n = z, cube corner: k0 = (1.95, 1.95, 0.3), k_xy = 2.76 > B, sigma = 0.08 (grid 40^3, h = 0.04)
+    theta = 0.1000 : leakage 2.28e-06 (on-grid part 2.3e-06, off-grid lattice mass 1.2e-07)   bound 2||1_E psi|| = 1.05e-04  OK   [max |G(Phi k) - G(k)| = 1.7e-10, integrator check on the packet]
+    theta = 0.2000 : leakage 1.12e-03 (on-grid part 1.1e-03, off-grid lattice mass 1.5e-04)   bound 2||1_E psi|| = 1.80e-02  OK   [max |G(Phi k) - G(k)| = 5.4e-09, integrator check on the packet]
+    theta = 0.3000 : leakage 4.47e-02 (on-grid part 4.3e-02, off-grid lattice mass 1.4e-02)   bound 2||1_E psi|| = 3.07e-01  OK   [max |G(Phi k) - G(k)| = 2.3e-08, integrator check on the packet]
+    theta = 0.4000 : leakage 3.24e-01 (on-grid part 2.9e-01, off-grid lattice mass 1.4e-01)   bound 2||1_E psi|| = 1.07e+00  OK   [max |G(Phi k) - G(k)| = 1.7e-07, integrator check on the packet]
+(B) axis n = (1,2,2)/3, ball: k0 = (1.2, -0.9, 0.7), |k0| = 1.65, sigma = 0.08 (grid 40^3, h = 0.04)
+    theta = 0.7854 : leakage 5.70e-10 (on-grid part 5.7e-10, off-grid lattice mass 1.4e-19)   bound 2||1_E psi|| = 3.51e-17  OK   [max |G(Phi k) - G(k)| = 1.1e-10, integrator check on the packet]
+    theta = 1.5708 : leakage 2.19e-09 (on-grid part 2.2e-09, off-grid lattice mass 3.7e-19)   bound 2||1_E psi|| = 3.55e-17  OK   [max |G(Phi k) - G(k)| = 8.7e-11, integrator check on the packet]
+    theta = 3.1416 : leakage 4.14e-08 (on-grid part 4.1e-08, off-grid lattice mass 3.7e-19)   bound 2||1_E psi|| = 3.55e-17  VIOLATED (above 1e-8 floor)   [max |G(Phi k) - G(k)| = 4.1e-10, integrator check on the packet]
+(B) axis n = (1,2,2)/3, cube corner: k0 = (2.0, 2.0, -1.9), |k0| = 3.42 > B, sigma = 0.08 (grid 40^3, h = 0.04)
+    theta = 0.1000 : leakage 1.66e-05 (on-grid part 1.7e-05, off-grid lattice mass 4.7e-07)   bound 2||1_E psi|| = 8.98e-04  OK   [max |G(Phi k) - G(k)| = 5.4e-10, integrator check on the packet]
+    theta = 0.2000 : leakage 6.21e-03 (on-grid part 6.2e-03, off-grid lattice mass 5.3e-04)   bound 2||1_E psi|| = 7.19e-02  OK   [max |G(Phi k) - G(k)| = 6.0e-09, integrator check on the packet]
+    theta = 0.3000 : leakage 1.56e-01 (on-grid part 1.5e-01, off-grid lattice mass 3.8e-02)   bound 2||1_E psi|| = 7.51e-01  OK   [max |G(Phi k) - G(k)| = 6.1e-05, integrator check on the packet]
+    theta = 0.4000 : leakage 7.44e-01 (on-grid part 6.7e-01, off-grid lattice mass 3.3e-01)   bound 2||1_E psi|| = 1.70e+00  OK   [max |G(Phi k) - G(k)| = 4.2e-04, integrator check on the packet]
+(C) boost budget for a particle at rest, eta* = asinh(B_dir/m): B = 2.60, m = 0.50
+    cube, axis             eta* = 2.3509  (edge distance 2.6000)
+    cube, face diagonal    eta* = 2.6930  (edge distance 3.6770)
+    cube, body diagonal    eta* = 2.8942  (edge distance 4.5033)
+    ball                   eta* = 2.3509  (every direction)
+    Planck reading (R7-1: b = 2.0/l_P), proton at rest: cube axis 45.40, body diagonal 45.95 (diff ln sqrt3 = 0.549); ball 45.40
+(C) rotation budget about z for a point at (k_x, k_y): unlimited iff k_x^2 + k_y^2 < B^2; corner k0 = (1.95, 1.95): first exit at theta* = 0.4456 rad (centre)

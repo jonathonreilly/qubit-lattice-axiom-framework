@@ -1,0 +1,6 @@
+1a. F-law memory: Hc' from Hc^2 = (8piG/3)a^2 rho + chi (chi const) equals -(4piG/3)a^2(rho+3p): True
+1. (S) - (T) - (6/k^2)[(M)' + 2 Hc (M)] = 0  -> (T) follows from (M),(S) for k != 0 (nu=j Bianchi)
+2. (H)' + Hc (H), on (M),(T),fluid  = (-8*pi*G*a(tau)**4*rho(tau) + 3*Derivative(a(tau), tau)**2)*Derivative(h(tau), tau)/(6*a(tau)**2)
+2b. coefficient of h' after Hc^2 = (8piG/3)a^2 rho + chi : chi/2  -> (H)' + Hc (H) = (chi/2) h'.  chi = 0: (H) ~ 1/a, delta E^0_0 = (H)/a^2 ~ a^-3 (C-dust).
+3(i). (rho+p) of w=-1/3 fluid with rho_X = 3X/kappa minus 2X/kappa = 0
+3(ii). dust-like memory: coefficient of h' in (H)'+Hc(H) = 2*pi*G*a(tau)**2*rd(tau)  ; expected for CDM at rest with rho_C = rho_d: -[-(4 pi G a^2) rho_d/2] ... i.e. 2 pi G a^2 rho_d: True

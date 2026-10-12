@@ -1,0 +1,17 @@
+(1) EdS top-hat: T_orb(r_vir)/t_coll = 1 (exact)
+    with t_coll = 2/(3H): T_orb * H(t_coll) = 2/3
+    generic Delta_c (vs critical): T_orb*H = 2*pi*sqrt(2/Delta_c); Delta_c=200 -> 0.6283185307179586
+(2) LCDM Om=0.3, collapse today: delta_i(a=1e-3)=0.00215; t0 H0=0.9641; Delta_vir/critical=92.7 (Bryan-Norman RECALLED: 101.1); T_orb(r_vir) H0=0.9227; T_orb/t0=0.957
+(3) top-hat normals (comoving with dust): eta/pi, t/t_coll, theta*t_coll =
+      0.500  0.09085  +1.8850e+01
+      1.000  0.50000  +1.1542e-15
+      1.500  0.90915  -1.8850e+01
+      1.900  0.99918  -1.1901e+02
+      1.990  1.00000  -1.1999e+03
+      1.999  1.00000  -1.2000e+04
+    theta -> -inf as t -> t_coll: the unit-lapse foliation has a point caustic at collapse (exact).
+(4) Delta_c=200 halo: theta_n turns negative after 0.0100/H; then |theta| grows; Raychaudhuri caustic within ~ pi/2 * 1/sqrt(4 pi G rho_vir) = 0.0907/H (lower-bound R_nn, sigma >= 0); crossing time ~ T_orb/4 = 0.1571/H.
+    integrated: theta from +3H reaches -1e6 H at t = 0.1670/H (< crossing time 0.1571/H)
+(5) T_orb*H=0.667 (EdS r_vir): minimal max(lag, ripple) = n=1: 0.326; n=2: 0.224; n=4: 0.166; n=8: 0.136
+(5) T_orb*H=0.923 (LCDM z=0 r_vir): minimal max(lag, ripple) = n=1: 0.383; n=2: 0.278; n=4: 0.216; n=8: 0.182
+(5) T_orb*H=0.200 (r ~ r_vir/5 (rho x 125 for SIS-like... T ~ r)): minimal max(lag, ripple) = n=1: 0.178; n=2: 0.100; n=4: 0.063; n=8: 0.047

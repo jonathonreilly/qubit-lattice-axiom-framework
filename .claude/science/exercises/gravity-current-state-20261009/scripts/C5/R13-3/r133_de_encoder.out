@@ -1,0 +1,13 @@
+(a) Phi=3.30: stationary-age mean/2^Phi = 1.000000000000; uniform-phase mean/2^Phi = 1.055928
+(a) Phi=6.60: stationary-age mean/2^Phi = 1.000000000000; uniform-phase mean/2^Phi = 1.055606
+(a) Phi=0.50: stationary-age mean/2^Phi = 1.000000000000; uniform-phase mean/2^Phi = 1.060660
+    Phi=3.3: quasi-periodic, stationary   mean/(N0 2^Phi) = 1.000000, window std = 6.6
+    Phi=3.3: random, stationary           mean/(N0 2^Phi) = 1.000049, window std = 451.2
+    Phi=6.6: quasi-periodic, stationary   mean/(N0 2^Phi) = 1.000000, window std = 62.9
+    Phi=6.6: random, stationary           mean/(N0 2^Phi) = 0.999915, window std = 4408.6
+(e) const w=-0.95    rho_hat/rho_nc(a=1): N=1: 0.3807; N=2: 1.0000; N=3: 1.0000; N=4: 1.0000; N=5: 1.0000
+(e) const w=-0.99    rho_hat/rho_nc(a=1): N=1: 0.3239; N=2: 1.0000; N=3: 1.0000; N=4: 1.0000; N=5: 1.0000
+(e) true Lambda      rho_hat/rho_nc(a=1): N=1: 1.0000; N=2: singular; N=3: singular; N=4: singular; N=5: singular
+(e) CPL DESI-type    rho_hat/rho_nc(a=1): N=1: 1.4988; N=2: 5.4439; N=3: 0.6528; N=4: -0.1927; N=5: 0.4759
+(e) CPL non-phantom  rho_hat/rho_nc(a=1): N=1: 0.4906; N=2: 0.5125; N=3: 0.7239; N=4: 0.8260; N=5: 0.8879
+    (true Lambda row: rho_nc := rho_m only; Lambda invisible by construction, exact at N=1)

@@ -355,3 +355,9 @@ swapped-dot coordinate is `1` or `-1`, the transverse-sign coordinate
 is `0`, and the scaled coordinate is `8`. It does not take three times
 the cap of the same ratio span, and it does not classify the
 300-dimensional affine space.
+
+Cycle 68 takes one swapped-dot generator plus three times the cap of
+the same ratio span. Partner rank is 7 only at chirality coefficient 0.
+Every nonzero coefficient has partner rank 10. The scaled coordinate is
+`6`. It does not take three times the cap of the other span, and it
+does not classify the 300-dimensional affine space.

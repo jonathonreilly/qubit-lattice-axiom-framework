@@ -763,3 +763,17 @@ three pairs.
 Family not used: one swapped-dot generator plus three times the cap of
 the same ratio span. That remains open. The 300-dimensional affine
 space is not this family.
+
+Cycle 68 target contract: whether every chirality coefficient on the sum
+of one swapped-dot generator and three times the cap of the same ratio
+span has partner rank 10.
+
+Family used: one swapped-dot generator plus three times the same-span
+cap. The sum lies in that span. The scaled coordinate is 6. Chirality
+coefficient 0 has partner rank 7. The 14-row pencil has maximal-minor
+gcd equal to a nonzero multiple of the cube of the chirality
+coefficient.
+
+Family not used: one swapped-dot generator plus three times the cap of
+the other ratio span. That remains open. The 300-dimensional affine
+space is not this family.

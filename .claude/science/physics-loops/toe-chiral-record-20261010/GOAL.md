@@ -422,3 +422,11 @@ linearly independent. The maximal-minor gcd is a nonzero constant. The
 pivot gcd has degree 7 on (1, 2), (2, 1), and (3, 1), and degree 4 on
 the other three pairs. Three times the cap of the same ratio span is
 not in this count. The ten-kernel coefficient span is not classified.
+Cycle 68 shows that one swapped-dot generator plus three times the cap
+of the same ratio span lies in that span. Chirality coefficient 0 has
+partner rank 7, and every nonzero coefficient has partner rank 10. The
+maximal-minor gcd is a nonzero multiple of the cube of the chirality
+coefficient. The plus sum has transverse-sign coordinate -3 and scaled
+coordinate 6. The minus sum has transverse-sign coordinate 3 and
+swapped-dot coordinate -1. Three times the cap of the other span is not
+in this count. The ten-kernel coefficient span is not classified.

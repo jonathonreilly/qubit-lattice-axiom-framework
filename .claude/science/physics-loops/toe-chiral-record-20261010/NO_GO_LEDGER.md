@@ -513,3 +513,11 @@ is `1` or `-1`, the transverse-sign coordinate is `0`, and the scaled
 coordinate is `8`. It does not classify three times the cap of the same
 ratio span, and it does not classify the 300-dimensional affine space.
 This is not an N-gate no-go.
+
+Cycle 68 prunes the reading that every chirality coefficient on one
+swapped-dot generator plus three times the cap of the same ratio span
+has partner rank 10. Chirality coefficient 0 has partner rank 7, and
+every nonzero coefficient has partner rank 10. The scaled coordinate is
+`6`. It does not classify three times the cap of the other span, and it
+does not classify the 300-dimensional affine space. This is not an
+N-gate no-go.

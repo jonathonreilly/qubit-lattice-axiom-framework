@@ -6,39 +6,38 @@ started_utc: 2026-10-11 16:00:52+00:00
 deadline_utc: 2026-10-12 16:00:52+00:00
 checkpoint_interval: 30m
 automation_id: toe-derivations-24-hour-campaign
-active_branch: physics-loop/toe-state-adapted-20261012
-worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/state_adapted_worktree
+active_branch: physics-loop/toe-energy-adapted-20261012
+worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/energy_adapted_worktree
 checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
-base_revision: cb882f7c68032986900dec2aaf24617ff3274c08
+base_revision: 0d99401253ebf5790b5ac24a2dcb94a74871f874
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Publish accepted state-adapted theorem; integrate fresh energy-adapted review; derive a sharp actual-current
-  approximation theorem.
+active_route: Publish accepted energy-adapted theorem; independently review sharp actual-current theorem and prepare
+  its pure-proof milestone.
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: Fifteen regular campaign PRs created, eight currently open and seven closed by concurrent selective landing.
-  State-adapted root gate open, publication assembly active; energy-adapted independent evidence sealed; sharp-current
-  proof underway.
+milestone: State-adapted PR9495 published and attached. Energy fresh review and root gate complete. Sharp-current
+  proof frozen, fresh proof check active.
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
-independent_checks: State-adapted final independent review and root source-bound evidence integration complete.
-  Energy-adapted neutral-plan independent checks sealed before author exposure; final reconciliation pending.
+independent_checks: Energy final 333-file review and all stored scientific evidence integrated; sharp-current fresh
+  proof review pending.
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_closed_by_concurrent_activity
-active_pr_status: AW clean at exact parentcb882f7c68032986900dec2aaf24617ff3274c08; source-only preparation active
-  outside worktree, no state-adapted PR yet.
+active_pr_status: Clean energy child at exact published state parent; final source-only assembly active outside
+  worktree.
 active_pr_url: null
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
-lock_refresh_before_utc: '2026-10-12T15:20:00Z'
-next_action: Finish state publication; integrate energy review and prepare its milestone; independently check sharp-current
-  theorem. Refresh lock by15:20. Start no new research at16:00:52UTC.
+lock_refresh_before_utc: Campaign deadline occurs before lock expiry17:01:29UTC; release during closeout.
+next_action: Finish energy assembly, root source/execution checks and regular PR; complete sharp-current independent
+  review and honest pure-proof publication. Fixed stop16:00:52UTC.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -59,11 +58,11 @@ index_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pu
 index_published_science_revision: b8402c17d337f371c0c73696ef170727de9ab5bd
 scattering_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9486
 scattering_published_science_revision: 3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe
-active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9493
+active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9495
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-12T14:41:10.431675+00:00'
+checkpoint_utc: '2026-10-12T15:04:19.530035+00:00'
 latest_source_refresh: '2026-10-12T14:37:13.878160+00:00'
 latest_other_pr: PR9476 now also owns interacting d>=2 exact additive momentum/QCA/scattering charges, in addition
   to LRL/gravity. Complete changed TESTS report read for ownership only.
@@ -74,8 +73,8 @@ local_continuum_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fr
 local_continuum_published_science_revision: a8ab3f49038327e3080d2f93afb7e34601459928
 dyadic_refinement_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9493
 dyadic_refinement_published_science_revision: cb882f7c68032986900dec2aaf24617ff3274c08
-campaign_prs_created: 15
-campaign_prs_currently_open: 8
+campaign_prs_created: 16
+campaign_prs_currently_open: 9
 campaign_prs_closed_by_other_activity:
 - 9478
 - 9479
@@ -84,3 +83,7 @@ campaign_prs_closed_by_other_activity:
 - 9482
 - 9484
 - 9487
+state_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9495
+state_adapted_published_science_revision: 0d99401253ebf5790b5ac24a2dcb94a74871f874
+lock_refreshed_utc: '2026-10-12T15:01:29.911451+00:00'
+lock_expires_utc: '2026-10-12T17:01:29.911451+00:00'

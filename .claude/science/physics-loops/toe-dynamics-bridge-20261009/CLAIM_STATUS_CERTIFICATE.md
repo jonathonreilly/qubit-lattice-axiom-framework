@@ -1,3 +1,10 @@
-# Current claim status
+# Current claim status certificate
 
-Supplied-model conditional support only. State-adapted exact vacuum preservation is checked with finite-scale energy/locality failures retained. Energy-adapted exact state/time construction is in fresh final review. Sharp current approximation theorem is being derived. Intended3D/interacting realization and framework selection remain open. No retained promotion or audit verdict applied by author; no physical axioms or editable prompts changed.
+All campaign theorems remain bounded conditional research results under their
+exact supplied-model hypotheses; regular PR publication does not grant retained
+status. STATE state preservation/local quotient is reviewed and published.
+ENERGY state/time preservation and fixed-map counterexamples have independent
+source review and root acceptance; publication assembly pending. SHARP optimal
+actual-current approximation and growing-band criterion await fresh proof review.
+No physical axiom, empirical prediction, full TOE closure, main merge, retained
+audit verdict or editable prompt change is made by this checkpoint.

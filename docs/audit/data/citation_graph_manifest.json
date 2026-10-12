@@ -1,6 +1,6 @@
 {
- "edge_count": 15515,
- "node_count": 6926,
+ "edge_count": 15523,
+ "node_count": 6930,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3766,6 +3766,10 @@
    "deps_hash": "e47a470d9cfa",
    "out_degree": 5
   },
+  "concrete_gapped_chain_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "91188f65a456",
+   "out_degree": 3
+  },
   "conditional_law_depth_axis_depth_stable_event_bounded_theorem_note_2026-06-12": {
    "deps_hash": "0bfacef594e2",
    "out_degree": 2
@@ -4061,6 +4065,10 @@
   "cubic_repulsive_flux_fixed_half_and_canonical_twists_bounded_theorem_note_2026-09-04": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "current_mass_filter_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "ef5814032be7",
+   "out_degree": 3
   },
   "cycle332_receiver_success_cycle610_gate_adapter_bounded_theorem_note_2026-07-30": {
    "deps_hash": "c8eee4235fc9",
@@ -6980,6 +6988,14 @@
   },
   "gapped_boost_invariance_bounded_theorem_note_2026-10-12": {
    "deps_hash": "7000a4119650",
+   "out_degree": 1
+  },
+  "gapped_chain_scattering_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "71b211f9b79a",
+   "out_degree": 1
+  },
+  "gapped_continuum_limit_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "71b211f9b79a",
    "out_degree": 1
   },
   "gate_b_complex_action_falsifier_note": {

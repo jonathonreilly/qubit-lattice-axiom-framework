@@ -1,2 +1,4 @@
 logs/runner-cache/*.txt -whitespace
 archive_unlanded/memory_recovery_2026_09_03/** -whitespace
+# Preserve exact hash-pinned historical continuum helper bytes.
+.claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/*.py whitespace=-blank-at-eof

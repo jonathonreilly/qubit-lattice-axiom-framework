@@ -1,0 +1,9 @@
+# Finite total-mass algebra certificate
+
+[MassThreshold.lean](MassThreshold.lean) proves the finite-family reverse-Minkowski threshold from nonnegative energies and individual squared-mass bounds, retaining all cross terms. It includes exact counterexamples to removing the sign or cross-term hypotheses.
+
+This is the original root-authored certificate, with historical successful compilation under Lean 4.35.0-rc4 and mathlib 939d5d5d9e6f07d1d8c80a16fa3fa39a7518b716. The five successful declarations report only propext, Classical.choice and Quot.sound. Source, object and every available compiler-attempt record were authenticated during landing; no new compilation was run. [SEAL.json](SEAL.json) is unchanged historical metadata. Each of its files is available directly for the four top-level Lean sources, or at `history/<original path>.gz` for the others. Decompress into a separate directory to reconstruct the historical layout. The original reproduction command and runtime identities are in [the archived README](history/README.md.gz) and seal; adapt only local paths after arranging that pinned environment.
+
+The first compile failed. Two concurrent false-control runs timed out and are inconclusive. The later sequential false controls exited with explicit unsolved False goals. The false-control Lean files are deliberately invalid examples and are not part of the successful certificate. Complete available failed and successful streams, sources and outer receipts remain in history. The first attempt had no separately recorded outer receipt.
+
+This certifies finite algebra only. It does not establish dispersion, infinite Fock sums, maximal domains, spectral endpoints, moving filters, locality, M13, physical realization or retained audit status. The analytic proof remains in [the current-mass note](../../docs/CURRENT_MASS_FILTER_BOUNDED_THEOREM_NOTE_2026-10-12.md).

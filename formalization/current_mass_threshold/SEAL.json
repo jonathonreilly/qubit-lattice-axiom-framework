@@ -1,0 +1,281 @@
+{
+  "sealed_utc": "2026-10-12T12:39:42.740962+00:00",
+  "parent_note_sha256": "9ce18a3ae1d424193b2d7c04fd63cb7e2b10987bb0f8e462f8ac409a2c674603",
+  "declarations": [
+    "reverse_minkowski_identity",
+    "pair_lower_bound",
+    "finite_total_mass_bound",
+    "missing_energy_sign_counterexample",
+    "missing_cross_terms_counterexample"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "successful_source_sha256": "02f8dec4d063918add2fc65e321d7885c149228386ec3bd86544a59cb3d8762c",
+  "object_sha256": "76a5a6e63b2d696c6cce53ab8c390eff2efe80a6092e75bc99a7bbd9b4d9c7e5",
+  "runtime_identity": {
+    "runtime_receipt_sha256": "1564b0bf532aca6c7f43c301455163b1af0afb96405e620eb56c481bdf7ed96d",
+    "reused_entrypoint_sha256": "12b8eb52bb33c16bf17c6d87763ac191242b72eea4ac05a853e2a4ef41ed9521",
+    "mathlib_commit": "939d5d5d9e6f07d1d8c80a16fa3fa39a7518b716",
+    "initial_tracked_status": "",
+    "records": {
+      "lean": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+        "sha256": "d1d9c26a539f54fe839d2aa7760bf1ac1dd76a30b26e2c9684bebf2900038fcf",
+        "version": "Lean (version 4.35.0-rc4, arm64-apple-darwin24.6.0, commit c29b6dda4f7c20e3eeaa717c4e565663c5cfa364, Release)"
+      },
+      "lake": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake",
+        "sha256": "d2d63c80ca10bd2cc9557d11d59221b95c6eefb078c9652a11ef887ab8a068a5",
+        "version": "Lake version 5.0.0-src+c29b6dd (Lean version 4.35.0-rc4)"
+      },
+      "lake-manifest.json": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/lake-manifest.json",
+        "sha256": "0d0cfc1d01f64c34bbd40e858428b83ede48be9f6e065339d63ebb851bd49a57"
+      },
+      "lean-toolchain": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib/lean-toolchain",
+        "sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7"
+      }
+    },
+    "runtime_archive_validation": "Reused prior receipt of archive SHA256 743f536c58c2580577ef890985b4084e90c6039fce099018d5c0c67c13724218; binaries independently rehashed here. No extraction or fetch.",
+    "new_files_policy": "All new source/log/temp/cache locations restricted to this directory."
+  },
+  "attempts": [
+    {
+      "label": "attempt01",
+      "source_sha256": "eda771e7f306b42af5db1770bf37826d46dd8980524bbc0ad3c24d512c26c1d7",
+      "started_utc": "2026-10-12T12:17:47.461678+00:00",
+      "elapsed_seconds": 42.2218269999139,
+      "timeout_seconds": 120,
+      "exit_code": 1,
+      "timed_out": false
+    },
+    {
+      "label": "attempt02",
+      "source_sha256": "02f8dec4d063918add2fc65e321d7885c149228386ec3bd86544a59cb3d8762c",
+      "started_utc": "2026-10-12T12:26:03.962376+00:00",
+      "elapsed_seconds": 112.65785341709852,
+      "timeout_seconds": 120,
+      "exit_code": 0,
+      "timed_out": false
+    },
+    {
+      "label": "false_controls_sequential",
+      "source_sha256": "1d3ec0d356e013ffa695f713a2e37be1c25dd3ff4c54651aadb7728b67493541",
+      "started_utc": "2026-10-12T12:33:04.679869+00:00",
+      "elapsed_seconds": 86.87619237462059,
+      "timeout_seconds": 240,
+      "exit_code": 1,
+      "timed_out": false
+    },
+    {
+      "label": "missing_cross_terms",
+      "source_sha256": "0c7702fd406fccafb2cab74b2e40222dc359c171dac6e6eb2a89ae9a69e4996c",
+      "started_utc": "2026-10-12T12:29:29.052127+00:00",
+      "elapsed_seconds": 120.05152645893395,
+      "timeout_seconds": 120,
+      "exit_code": null,
+      "timed_out": true
+    },
+    {
+      "label": "missing_energy_sign",
+      "source_sha256": "466df8d106f30f6f037535ab56bf19d4e2d19e055f8007a39e449e723b70d804",
+      "started_utc": "2026-10-12T12:29:29.052126+00:00",
+      "elapsed_seconds": 120.05475233308971,
+      "timeout_seconds": 120,
+      "exit_code": null,
+      "timed_out": true
+    }
+  ],
+  "files": {
+    "FALSE_CONTROLS_REFINEMENT_FREEZE.json": {
+      "sha256": "dd8f40c06c4d2a72542a94a676d0d91e0d5993b2485b57b8675f5092fdfa23c9",
+      "bytes": 1495
+    },
+    "FalseControls.lean": {
+      "sha256": "1d3ec0d356e013ffa695f713a2e37be1c25dd3ff4c54651aadb7728b67493541",
+      "bytes": 613
+    },
+    "MassThreshold.lean": {
+      "sha256": "02f8dec4d063918add2fc65e321d7885c149228386ec3bd86544a59cb3d8762c",
+      "bytes": 3105
+    },
+    "MassThreshold.olean": {
+      "sha256": "76a5a6e63b2d696c6cce53ab8c390eff2efe80a6092e75bc99a7bbd9b4d9c7e5",
+      "bytes": 266112
+    },
+    "MissingCrossTerms.lean": {
+      "sha256": "0c7702fd406fccafb2cab74b2e40222dc359c171dac6e6eb2a89ae9a69e4996c",
+      "bytes": 307
+    },
+    "MissingEnergySign.lean": {
+      "sha256": "466df8d106f30f6f037535ab56bf19d4e2d19e055f8007a39e449e723b70d804",
+      "bytes": 304
+    },
+    "OBLIGATIONS.md": {
+      "sha256": "0a5938dcb2c66ced7e35b15279cd2ded02f2be99de23684de7d36ebf6598ca50",
+      "bytes": 1778
+    },
+    "README.md": {
+      "sha256": "418c7909d78ab551e4baaeac1b5042feb02b93648d005774135e4d0957247ffa",
+      "bytes": 2293
+    },
+    "RUNTIME_REFINEMENT.md": {
+      "sha256": "039b4b64820a28c885bd2a3ce50ebd77bd856ba94f29693e1b244d6a3fb4fb96",
+      "bytes": 1062
+    },
+    "logs/attempt01/execution.json": {
+      "sha256": "b49a475807e85c98c8b3b4416e09d7e16e119ae579c884885e4eb052ed1d9205",
+      "bytes": 4928
+    },
+    "logs/attempt01/source.lean": {
+      "sha256": "eda771e7f306b42af5db1770bf37826d46dd8980524bbc0ad3c24d512c26c1d7",
+      "bytes": 3055
+    },
+    "logs/attempt01/stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "logs/attempt01/stdout": {
+      "sha256": "0befb834142464966ddb4f4c6b4e968b38b3473b65b01f09699781e3f5042416",
+      "bytes": 2272
+    },
+    "logs/attempt02/execution.json": {
+      "sha256": "809c074b292a6977b49aa82fc10fb3ee7f78b648666edf4f8407d143975a9800",
+      "bytes": 4929
+    },
+    "logs/attempt02/source.lean": {
+      "sha256": "02f8dec4d063918add2fc65e321d7885c149228386ec3bd86544a59cb3d8762c",
+      "bytes": 3105
+    },
+    "logs/attempt02/stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "logs/attempt02/stdout": {
+      "sha256": "a2de0d409d67f05cf4942ae83a1b781e15f295b2e8925c5657b608ffe29ff1cd",
+      "bytes": 548
+    },
+    "logs/false_controls_sequential/execution.json": {
+      "sha256": "296a8f64e2317588f4cd711392e0ecdc2833dfde0f8d020f0a8ba5c6b007faac",
+      "bytes": 4928
+    },
+    "logs/false_controls_sequential/source.lean": {
+      "sha256": "1d3ec0d356e013ffa695f713a2e37be1c25dd3ff4c54651aadb7728b67493541",
+      "bytes": 613
+    },
+    "logs/false_controls_sequential/stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "logs/false_controls_sequential/stdout": {
+      "sha256": "7b9348adcd6b98f63768cf0c2d5590ac11360ed72cfb25d71e703ce13239b3eb",
+      "bytes": 327
+    },
+    "logs/missing_cross_terms/execution.json": {
+      "sha256": "f8b40097be14677d7eb7fa048e0aff370db66612f9b2a4b1ac628753cafc3839",
+      "bytes": 4937
+    },
+    "logs/missing_cross_terms/source.lean": {
+      "sha256": "0c7702fd406fccafb2cab74b2e40222dc359c171dac6e6eb2a89ae9a69e4996c",
+      "bytes": 307
+    },
+    "logs/missing_cross_terms/stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "logs/missing_cross_terms/stdout": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "logs/missing_energy_sign/execution.json": {
+      "sha256": "c58000d7bbd4a8e48faea7ec1dfbb4772b4638ccc25d02a02f159b0f321f26ca",
+      "bytes": 4937
+    },
+    "logs/missing_energy_sign/source.lean": {
+      "sha256": "466df8d106f30f6f037535ab56bf19d4e2d19e055f8007a39e449e723b70d804",
+      "bytes": 304
+    },
+    "logs/missing_energy_sign/stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "logs/missing_energy_sign/stdout": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "outer/attempt02/execution.json": {
+      "sha256": "8b025aed435965eda2c21a9db7a7daa6e33b369b8137653c1b2727a9f8e9463d",
+      "bytes": 789
+    },
+    "outer/attempt02/stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "outer/attempt02/stdout": {
+      "sha256": "757db6fee9b15e7c6326eddf6d037d73750fda129f8e92d454984ed5a62bb516",
+      "bytes": 580
+    },
+    "outer/false_controls_sequential/execution.json": {
+      "sha256": "576fa8a36707e9700ea56eb6ecd28e327c9ab766718b9fbb99f567ca1ba84193",
+      "bytes": 808
+    },
+    "outer/false_controls_sequential/stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "outer/false_controls_sequential/stdout": {
+      "sha256": "e72fc19ce2526ed522255cc8a28fdf61ac97579d70990d62dbe6ebf3179e00f5",
+      "bytes": 359
+    },
+    "outer/missing_cross_terms/execution.json": {
+      "sha256": "d2b630d6105bd50a67f0b6436377da12fbe54ff70af24ab2709c9f5eb6d998ff",
+      "bytes": 802
+    },
+    "outer/missing_cross_terms/stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "outer/missing_cross_terms/stdout": {
+      "sha256": "5b6c1362c73b5170c58a1e8cfb4e02a130f14680b40c7b70935de787af1712b9",
+      "bytes": 34
+    },
+    "outer/missing_energy_sign/execution.json": {
+      "sha256": "b121ec5ee4be29ee0b23be0966f039a9e6a2b0417f3bf7708bf8a4d84848af29",
+      "bytes": 802
+    },
+    "outer/missing_energy_sign/stderr": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "outer/missing_energy_sign/stdout": {
+      "sha256": "5b6c1362c73b5170c58a1e8cfb4e02a130f14680b40c7b70935de787af1712b9",
+      "bytes": 34
+    },
+    "run_lean.py": {
+      "sha256": "dd7f8719b0c66f31e1aff19b8fa25f396f3638be2403c0269781e10e67949d4e",
+      "bytes": 2656
+    },
+    "run_lean_240.py": {
+      "sha256": "00452073d615b247a965afeb11b409f9c39d998ea970bf9f2afa9c804965b914",
+      "bytes": 2656
+    },
+    "run_lean_outer.py": {
+      "sha256": "1590402a2709f34cddba4e68b45dc6ae638cdfa9acc9773b91f8c1393db5b19d",
+      "bytes": 1136
+    },
+    "run_lean_outer_240.py": {
+      "sha256": "fac1e8c6c33a639127e4befac10092ed56508634b8790bf7991a6e95674aed1e",
+      "bytes": 1140
+    },
+    "seal_lean.py": {
+      "sha256": "f74d4c6b71e1845c79aecd6f8df8632419ee138c505de9d12b1806696cc7347d",
+      "bytes": 3387
+    }
+  },
+  "scope": "Root-authored finite algebra certificate, independent of but not a replacement for the analytic source review. No formalization of spectral/domain/locality/M13; no retained audit status.",
+  "recording_limit": "First compilation has complete inner receipt and tool transcript but no separately saved outer-process receipt."
+}

@@ -1,0 +1,54 @@
+{
+  "status": "unexecuted_source_bound_preparation_and_verification",
+  "base": "16a69597714f8c62387c2e9ee92c445c40f91410",
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/supplied_chain_worktree",
+  "program": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/prepare_verify_supplied_chain_publication.py",
+  "canonical_timeout_seconds": 60,
+  "canonical_calls": 3,
+  "baseline_whole_helper_commands": 6,
+  "original_variant_commands": 47,
+  "variant_outer_orchestration_timeout_seconds": 75,
+  "timeout_preservation": "Every scientific child retains its original receipt timeout (45 or 60 seconds). The outer 75 seconds includes orchestration and cannot extend a child timeout.",
+  "exact_counts_from_originals": {
+    "Concrete": {
+      "passed": 105,
+      "failed": 0
+    },
+    "Scattering": {
+      "passed": 95,
+      "failed": 0
+    },
+    "Continuum": {
+      "passed": 126,
+      "failed": 0
+    }
+  },
+  "original_whole_helper_survivors": {
+    "Concrete": [
+      "review_kernel_origin",
+      "review_packet_inverse_jacobian"
+    ],
+    "Scattering": [
+      "review_incoming_n8_only"
+    ],
+    "Continuum": [
+      "missing_origin_packet_scaling",
+      "periodic_gauge_packet_scaling",
+      "reversed_shift_circle_spectral",
+      "noninteger_geometry_circle_spectral",
+      "floor_round_circle_spectral"
+    ]
+  },
+  "comparison": "Complete observed result_raw, stdout and stderr equal frozen originals. Only a unique JSON candidate pathname token is relocated to its actual temporary hash-pinned candidate.py. Original bytes are never rewritten. No other field or stream normalization.",
+  "raw_api_order": "Full INNER execute_runner return saved first, before execute_and_write_cache post-identity; full OUTER tuple saved first after return. Opaque pickle and complete readable tagged JSON retained; no unpickle.",
+  "cache_input_order": "All payloads, original EVIDENCE_MAP, literal PUBLICATION_EDITS, helper resources, RUNTIME, notes and declarations finalized before canonical calls. Reconstruction before/after vocabulary --fix plus checked report-only. Late PREPARATION/VALIDATION maps and SOURCE_IDENTITIES are not declared inputs.",
+  "expected_graph_delta": {
+    "nodes": 3,
+    "edges": 5
+  },
+  "graph_rule": "All prior complete node records and edges remain byte-equivalent as parsed JSON; new exact direct dependencies only.",
+  "audit_boundary": "Focused exact-base compatibility only. Global combined validation and strict audit lint are separate landing gates. No audit application, retained promotion, Git/index/remote/PR or prompt mutation.",
+  "failure_rule": "Stop and preserve partial evidence. No automatic science retry and no re-execution of old milestones or independent reviewer controls.",
+  "ownership": "Root alone executes the program and later handles exact-path Git/publication. This preparer owns S script and its S support directory only.",
+  "pairing": "Same selected model family and reasoning effort, separate author/reviewer contexts with candidate formulas exposed; not blinded or diverse-family. Root supplied routes and is a coauthor. Mechanical packaging adds no independent scientific review."
+}

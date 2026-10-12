@@ -1,0 +1,212 @@
+{
+  "base": "16a69597714f8c62387c2e9ee92c445c40f91410",
+  "packet": ".claude/science/physics-loops/toe-supplied-chain-20261012",
+  "specs": [
+    {
+      "key": "Concrete",
+      "stem": "CONCRETE_GAPPED_CHAIN",
+      "folder": "concrete_gapped_chain",
+      "review_folder": "concrete_gapped_chain_review",
+      "coverage": "Concrete_chain_root_review_coverage.json",
+      "source_sha": "0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd",
+      "review_sha": "7c554adcf96ce281128c560af453234b346147f725879c25df17bbd9bcdb7d94",
+      "deps": [
+        "weighted_current_closure_bounded_theorem_note_2026-10-12",
+        "gapped_boost_invariance_bounded_theorem_note_2026-10-12",
+        "microscopic_boost_flow_bounded_theorem_note_2026-10-12"
+      ],
+      "scope": "Chosen one-dimensional g>J>0 symmetric spin chain and its explicitly constructed full-spin GNS: conserved canonical current, actual weighted generator, gap and controlled packet residual. Exact finite-spacing scalar Lie closure fails; no framework-selected dynamics or physical identification.",
+      "limits": "The raw-origin and reciprocal-Jacobian whole-source variants survive the author predicates. Independent literal-moment and complete transported-norm witnesses reject them. The original half-density row is an algebraic identity, not independent unitarity verification. The M=128 cutoff failed the unchanged 1e-10 gate; M=192 refinement and all original failures remain. Self-adjoint sector sums use maximal total-generator closures, permitting cancellations; they are not intersections of individual domains.",
+      "source": "CONCRETE_GAPPED_CHAIN_PROBE.md",
+      "review": "CONCRETE_GAPPED_CHAIN_REVIEW.md",
+      "note": "CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "concrete_gapped_chain_2026_10_12.py",
+      "claim": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "audit_inputs": [
+        "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/WEIGHTED_CURRENT_CLOSURE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/GAPPED_BOOST_INVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/RUNTIME.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/PUBLICATION_EDITS.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/EVIDENCE_MAP.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/EXTERNAL_SOURCE_INVENTORY.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Concrete/02769912067e93ee1b6ff93b80eac0259da608d354f53107ef435cc11a0426ec.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Concrete/1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Concrete/55fd74db7787aa9eee72867e49a2ff3e44c5adb383f13985b7a2497b27bc9e5b.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Concrete/5d7504c7bbb8b03e9098fe47f1d8c07d90ac2d3fa694d54ce4acd49a3dbc843f.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Concrete/66afcfbddfd7180d1165d5e4964e734701d1ff94ba0975f97afd759ecd2e7831.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Concrete/739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Concrete/963cb5d3d135f89e93c61142e715e1f3d7e5831cfacf1d1b11b183c323c92f73.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Concrete/c8a9234ce2b7a8061367cbac7ba1b609acbef0befa278f20e800944721e56a1f.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Concrete/d073471ca162c2014bf2afae4faa761709fbd69a919ff3b7180c5e1ad62cd077.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Concrete/f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6.py"
+      ],
+      "baseline_counts": {
+        "passed": 105,
+        "failed": 0
+      },
+      "variants": [
+        "kernel_mutant_connection",
+        "kernel_mutant_range2",
+        "kernel_mutant_sign",
+        "packet_mutant_clock",
+        "packet_mutant_halfdensity",
+        "packet_mutant_velocity",
+        "symbolic_mutant_half",
+        "symbolic_mutant_improvement",
+        "symbolic_mutant_moment",
+        "review_symbolic_half",
+        "review_symbolic_pauli_sign",
+        "review_kernel_connection",
+        "review_kernel_range2",
+        "review_kernel_origin",
+        "review_packet_velocity",
+        "review_packet_inverse_jacobian"
+      ],
+      "historical_whole_helper_survivors": [
+        "review_kernel_origin",
+        "review_packet_inverse_jacobian"
+      ]
+    },
+    {
+      "key": "Scattering",
+      "stem": "GAPPED_CHAIN_SCATTERING",
+      "folder": "gapped_chain_scattering",
+      "review_folder": "gapped_chain_scattering_review",
+      "coverage": "Scattering_root_review_coverage.json",
+      "source_sha": "92dcdbce72b8bd57fd4b7e4e661a9f9e34e815b312df7f0c6e360cd8ef5c9f92",
+      "review_sha": "0dcf6abf605070fb2c4c2525035e7afba93fe2929ba65eeddd815a8259ae2dcb",
+      "deps": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12"
+      ],
+      "scope": "Actual odd almost-local spin creators, compact positive transfer, fixed-finite-particle incoming/outgoing limits and onto symmetric-to-antisymmetric Fock maps in the chosen supplied-chain full-spin GNS. Both noninjective velocity branches remain. No arbitrary interacting model, other state or relativistic carrier premise.",
+      "limits": "The n=8-only incoming-phase mutation survives all 95 author rows; the independent literal 256-by-256 integer matrix gives squared error four versus zero. Occupation insertion overlaps the author mechanism; compact-filter and n=8 matrices are distinct calculations. Cutoffs T=20,40,80,160 failed the unchanged 1e-6 filter gate; T=320 refinement passes. All finite-window, clock and sorting subcase survivors remain. No finite suite proves all-n or infinite-volume completeness.",
+      "source": "GAPPED_CHAIN_SCATTERING_PROBE.md",
+      "review": "GAPPED_CHAIN_SCATTERING_REVIEW.md",
+      "note": "GAPPED_CHAIN_SCATTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "gapped_chain_scattering_2026_10_12.py",
+      "claim": "gapped_chain_scattering_bounded_theorem_note_2026-10-12",
+      "audit_inputs": [
+        "docs/GAPPED_CHAIN_SCATTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/RUNTIME.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/PUBLICATION_EDITS.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/EVIDENCE_MAP.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/EXTERNAL_SOURCE_INVENTORY.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/3b663258db4fdc8e741ac08fc9ddc62a76e5c007d4b5db5a746167f943cc7dcd.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/4da959f48fa092cefda71e87ceec09d3e810d28002b45a0f69107cc179f40340.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/65aff5f3afc2b31c2827ccd23c2a80946c4884deac8aa247e8566851dd38d72c.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/6d25a4a73238b863eff15d239183ec327bbcc8899af276a58238552e0cf97bd7.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/788eafa6746d4550d28aad68de50947be72ab0b40780c0966f23fc325f3c7e86.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/a261878c4d49c0edf1f6ef9d29d5f86b00e9cc413548fc87bb0ab7959bfbf545.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/a608404dce5778add2112fa34497499e11fb1048ecdfe2a2fd6561b696d54884.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/a61ce8753e2602a4ad4152d5d939e39d6f56e651084caba1afd3c277f03fa286.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/b60167c323cfc6589a98743a1ddf3c18533b8caf2226503bdd64e7c5f2fb0a1c.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/b7308470ca28d8d93433ac8e9377d26f7355d7ed68c3d23beae534df69d4e337.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/d3faf6e4c56249786b5be36a8c24672553a5da3c4489f2d6fbbac6ec0a012e64.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/e20461fb279f8194b7b6f9fefe597a2c607905ea42f987df2b4728f9018e7d97.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/fccd339db3cfdb53928f1430f2a7ce4d708a00a8678d50ddcde5eae1c443d8c5.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Scattering/fea7c19a5734e1c3a662981a9c08d6da318b05481c0a6802f76e2227a499c382.py"
+      ],
+      "baseline_counts": {
+        "passed": 95,
+        "failed": 0
+      },
+      "variants": [
+        "incoming_phase_erased",
+        "car_counts_right",
+        "hardcore_collision_allowed",
+        "factorial_normalization",
+        "momentum_sorting",
+        "second_branch_deleted",
+        "packet_time_reversed",
+        "spatial_fourier_reversed",
+        "filter_energy_reversed",
+        "review_energy_half",
+        "review_pair_diagonal",
+        "review_filter_double",
+        "review_incoming_n8_only"
+      ],
+      "historical_whole_helper_survivors": [
+        "review_incoming_n8_only"
+      ]
+    },
+    {
+      "key": "Continuum",
+      "stem": "GAPPED_CONTINUUM_LIMIT",
+      "folder": "gapped_continuum_limit",
+      "review_folder": "gapped_continuum_review",
+      "coverage": "Continuum_root_review_coverage.json",
+      "source_sha": "617b9a1cbb541d6f207de89c10f1fbb2005fbb27f68e818f0c14a3fe67bf802d",
+      "review_sha": "254d2ccae248a52af4207041196f7b4565deccc720981d09e336ad4935adcd76",
+      "deps": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12"
+      ],
+      "scope": "Chosen m,v>0 scaling of the supplied chain: actual energy/current/boost and rounded integer-shift groups converge strongly on fixed compact parameter sets, including finite words and full fermionic Fock completion. Original/centered compact-packet rates are O(a)/O(a^2). No operator-norm, uniform-in-particle-number, local-net, interacting or 3D limit.",
+      "limits": "Maximal sector-sum and direct-sum domains use TOTAL multipliers; cancellation prevents importing one-particle energy/momentum domain equality. The two full-Fock origin domains need not agree. Original winding cutoff24/48/80 and two-particle quadrature450/1000 failures remain, followed by fixed-gate128/2000 refinement. Reviewer h=.01/.005 failures remain before .0025. Origin-sign broad-majorant survivors and missing-origin/periodic-gauge packet survivors remain. No interval or Lean certificate is claimed.",
+      "source": "GAPPED_CONTINUUM_LIMIT_PROBE.md",
+      "review": "GAPPED_CONTINUUM_LIMIT_REVIEW.md",
+      "note": "GAPPED_CONTINUUM_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "gapped_continuum_limit_2026_10_12.py",
+      "claim": "gapped_continuum_limit_bounded_theorem_note_2026-10-12",
+      "audit_inputs": [
+        "docs/GAPPED_CONTINUUM_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/RUNTIME.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/PUBLICATION_EDITS.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/EVIDENCE_MAP.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/EXTERNAL_SOURCE_INVENTORY.json",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/2a64bd05166adf7b15a7b1a06a4585523630ea539ba93b8b35888ef8f9cbf5d2.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/2f3a2af5df8c9ea466ccaf004d873442558f260c7ae4e46cac3f939ef1310854.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/5bc8c41f8e46eed6b9f8adb382162cb1cfa274b02d3f3f481a3227cbbc4801ce.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/7234fec125ded2f5f047044d2085be0afd5275d4a05664b4ebf5bce7bd8c0e36.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/78c64119fad4d216f5425faacad61882cf82eacd88fbd721289e55a213dbeb5a.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/8854091b1bc56ff19dfb48d5dc2d26014bc0bc5b6f25e05d9d4dbfdc1e0a440d.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/89538b7eebe5e1c67e9aedfcc907d58489c0578e82fca9de5f90f717a2b8f60a.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/ab3f50ed00d756347c6d61a0476a30eb4f0e92a0461f15c0013766695bd4cf40.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/deea79b1dd37a89a60780f9235570b092aee39b774d7de06200d0af4037eca4d.py",
+        ".claude/science/physics-loops/toe-supplied-chain-20261012/runtime/Continuum/f774aa95b6b894037d3d1eb12509cdba47722389a16c31ec0f8ec929cbd6fb4b.py"
+      ],
+      "baseline_counts": {
+        "passed": 126,
+        "failed": 0
+      },
+      "variants": [
+        "origin_sign_circle_spectral",
+        "origin_sign_packet_scaling",
+        "missing_origin_circle_spectral",
+        "missing_origin_packet_scaling",
+        "reciprocal_half_density_circle_spectral",
+        "reciprocal_half_density_packet_scaling",
+        "missing_half_density_circle_spectral",
+        "missing_half_density_packet_scaling",
+        "wrong_speed_circle_spectral",
+        "wrong_speed_packet_scaling",
+        "periodic_gauge_circle_spectral",
+        "periodic_gauge_packet_scaling",
+        "reversed_shift_circle_spectral",
+        "reversed_shift_packet_scaling",
+        "noninteger_geometry_circle_spectral",
+        "noninteger_geometry_packet_scaling",
+        "floor_round_circle_spectral",
+        "floor_round_packet_scaling"
+      ],
+      "historical_whole_helper_survivors": [
+        "missing_origin_packet_scaling",
+        "periodic_gauge_packet_scaling",
+        "reversed_shift_circle_spectral",
+        "noninteger_geometry_circle_spectral",
+        "floor_round_circle_spectral"
+      ]
+    }
+  ],
+  "pairing": "Same selected model family and reasoning effort, separate author/reviewer contexts with candidate formulas exposed; not blinded or diverse-family. Root supplied routes and is a coauthor. Mechanical packaging adds no independent scientific review.",
+  "expected_graph_delta": {
+    "nodes": 3,
+    "edges": 5
+  }
+}

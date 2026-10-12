@@ -1,0 +1,651 @@
+{
+  "status": "actual_scoped_verification_completed",
+  "base": "16a69597714f8c62387c2e9ee92c445c40f91410",
+  "canonical": [
+    {
+      "key": "Concrete",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/supplied_chain_worktree/logs/runner-cache/concrete_gapped_chain_2026_10_12.txt",
+        "bytes": 23864,
+        "sha256": "2abdbb819b89f99ef1115735cad3f248cce821cdae32b0c940acc3da06a006cc"
+      },
+      "counts": {
+        "passed": 105,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "symbolic_complete",
+          "exit_code": 0,
+          "counts": {
+            "passed": 27,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.4113472499884665,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "kernel_matrix_initial",
+          "exit_code": 0,
+          "counts": {
+            "passed": 56,
+            "failed": 0
+          },
+          "elapsed_seconds": 1.4212427083402872,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "packet_initial",
+          "exit_code": 0,
+          "counts": {
+            "passed": 22,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.8223976669833064,
+          "timeout_seconds": 60.0
+        }
+      ]
+    },
+    {
+      "key": "Scattering",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/supplied_chain_worktree/logs/runner-cache/gapped_chain_scattering_2026_10_12.txt",
+        "bytes": 50102,
+        "sha256": "57751ec37bad119373a88414fa6d1df45716219c507bdf813a467563addec503"
+      },
+      "counts": {
+        "passed": 95,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 95,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.24785091681405902,
+          "timeout_seconds": 45.0
+        }
+      ]
+    },
+    {
+      "key": "Continuum",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/supplied_chain_worktree/logs/runner-cache/gapped_continuum_limit_2026_10_12.txt",
+        "bytes": 105561,
+        "sha256": "7a359ad8de93a781a8bfcca8598d06fde0ba67821caa7aaaf5feb10945460678"
+      },
+      "counts": {
+        "passed": 126,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "baseline_circle_v2",
+          "exit_code": 0,
+          "counts": {
+            "passed": 18,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.8220084998756647,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "baseline_packet_v3",
+          "exit_code": 0,
+          "counts": {
+            "passed": 108,
+            "failed": 0
+          },
+          "elapsed_seconds": 1.0718175410293043,
+          "timeout_seconds": 60.0
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "key": "Concrete",
+      "cases": [
+        {
+          "name": "kernel_mutant_connection",
+          "exit_code": 1,
+          "counts": {
+            "passed": 55,
+            "failed": 1
+          },
+          "elapsed_seconds": 1.4106108332052827,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "kernel_mutant_range2",
+          "exit_code": 1,
+          "counts": {
+            "passed": 55,
+            "failed": 1
+          },
+          "elapsed_seconds": 1.3998717083595693,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "kernel_mutant_sign",
+          "exit_code": 1,
+          "counts": {
+            "passed": 53,
+            "failed": 3
+          },
+          "elapsed_seconds": 1.4439028329215944,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "packet_mutant_clock",
+          "exit_code": 1,
+          "counts": {
+            "passed": 8,
+            "failed": 14
+          },
+          "elapsed_seconds": 0.6595228747464716,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "packet_mutant_halfdensity",
+          "exit_code": 1,
+          "counts": {
+            "passed": 20,
+            "failed": 2
+          },
+          "elapsed_seconds": 0.6014754171483219,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "packet_mutant_velocity",
+          "exit_code": 1,
+          "counts": {
+            "passed": 7,
+            "failed": 15
+          },
+          "elapsed_seconds": 0.5635276245884597,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "symbolic_mutant_half",
+          "exit_code": 1,
+          "counts": {
+            "passed": 13,
+            "failed": 14
+          },
+          "elapsed_seconds": 0.24951212480664253,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "symbolic_mutant_improvement",
+          "exit_code": 1,
+          "counts": {
+            "passed": 24,
+            "failed": 3
+          },
+          "elapsed_seconds": 0.2480698749423027,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "symbolic_mutant_moment",
+          "exit_code": 1,
+          "counts": {
+            "passed": 22,
+            "failed": 5
+          },
+          "elapsed_seconds": 0.27331462502479553,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "review_symbolic_half",
+          "exit_code": 1,
+          "counts": {
+            "passed": 13,
+            "failed": 14
+          },
+          "elapsed_seconds": 0.26667104102671146,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "review_symbolic_pauli_sign",
+          "exit_code": 1,
+          "counts": {
+            "passed": 16,
+            "failed": 11
+          },
+          "elapsed_seconds": 0.248475749976933,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "review_kernel_connection",
+          "exit_code": 1,
+          "counts": {
+            "passed": 55,
+            "failed": 1
+          },
+          "elapsed_seconds": 1.516573625151068,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "review_kernel_range2",
+          "exit_code": 1,
+          "counts": {
+            "passed": 55,
+            "failed": 1
+          },
+          "elapsed_seconds": 1.6894061248749495,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "review_kernel_origin",
+          "exit_code": 0,
+          "counts": {
+            "passed": 56,
+            "failed": 0
+          },
+          "elapsed_seconds": 1.545281333848834,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "review_packet_velocity",
+          "exit_code": 1,
+          "counts": {
+            "passed": 8,
+            "failed": 14
+          },
+          "elapsed_seconds": 0.6078774170018733,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "review_packet_inverse_jacobian",
+          "exit_code": 0,
+          "counts": {
+            "passed": 22,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.582010209094733,
+          "timeout_seconds": 60
+        }
+      ],
+      "whole_helper_survivors": [
+        "review_kernel_origin",
+        "review_packet_inverse_jacobian"
+      ],
+      "interpretation": "Original completed whole-helper sensitivity reused; not rerun or independent review"
+    },
+    {
+      "key": "Scattering",
+      "cases": [
+        {
+          "name": "incoming_phase_erased",
+          "exit_code": 1,
+          "counts": {
+            "passed": 86,
+            "failed": 9
+          },
+          "elapsed_seconds": 0.26204691687598825,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "car_counts_right",
+          "exit_code": 1,
+          "counts": {
+            "passed": 85,
+            "failed": 10
+          },
+          "elapsed_seconds": 0.2644570409320295,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "hardcore_collision_allowed",
+          "exit_code": 1,
+          "counts": {
+            "passed": 91,
+            "failed": 4
+          },
+          "elapsed_seconds": 0.18794287461787462,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "factorial_normalization",
+          "exit_code": 1,
+          "counts": {
+            "passed": 86,
+            "failed": 9
+          },
+          "elapsed_seconds": 0.18625733302906156,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "momentum_sorting",
+          "exit_code": 1,
+          "counts": {
+            "passed": 94,
+            "failed": 1
+          },
+          "elapsed_seconds": 0.19175066612660885,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "second_branch_deleted",
+          "exit_code": 1,
+          "counts": {
+            "passed": 86,
+            "failed": 9
+          },
+          "elapsed_seconds": 0.19556833384558558,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "packet_time_reversed",
+          "exit_code": 1,
+          "counts": {
+            "passed": 89,
+            "failed": 6
+          },
+          "elapsed_seconds": 0.22378937480971217,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "spatial_fourier_reversed",
+          "exit_code": 1,
+          "counts": {
+            "passed": 89,
+            "failed": 6
+          },
+          "elapsed_seconds": 0.2079147081822157,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "filter_energy_reversed",
+          "exit_code": 1,
+          "counts": {
+            "passed": 91,
+            "failed": 4
+          },
+          "elapsed_seconds": 0.19362975005060434,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "review_energy_half",
+          "exit_code": 1,
+          "counts": {
+            "passed": 79,
+            "failed": 16
+          },
+          "elapsed_seconds": 0.18865208327770233,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "review_pair_diagonal",
+          "exit_code": 1,
+          "counts": {
+            "passed": 85,
+            "failed": 10
+          },
+          "elapsed_seconds": 0.20344304107129574,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "review_filter_double",
+          "exit_code": 1,
+          "counts": {
+            "passed": 91,
+            "failed": 4
+          },
+          "elapsed_seconds": 0.2079890826717019,
+          "timeout_seconds": 45.0
+        },
+        {
+          "name": "review_incoming_n8_only",
+          "exit_code": 0,
+          "counts": {
+            "passed": 95,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.1975937499664724,
+          "timeout_seconds": 45.0
+        }
+      ],
+      "whole_helper_survivors": [
+        "review_incoming_n8_only"
+      ],
+      "interpretation": "Original whole-helper sensitivity only; no independent review or new gate"
+    },
+    {
+      "key": "Continuum",
+      "cases": [
+        {
+          "name": "origin_sign_circle_spectral",
+          "exit_code": 1,
+          "counts": {
+            "passed": 11,
+            "failed": 7
+          },
+          "elapsed_seconds": 0.45899795833975077,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "origin_sign_packet_scaling",
+          "exit_code": 1,
+          "counts": {
+            "passed": 104,
+            "failed": 4
+          },
+          "elapsed_seconds": 0.8114712918177247,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "missing_origin_circle_spectral",
+          "exit_code": 1,
+          "counts": {
+            "passed": 11,
+            "failed": 7
+          },
+          "elapsed_seconds": 0.4208892500028014,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "missing_origin_packet_scaling",
+          "exit_code": 0,
+          "counts": {
+            "passed": 108,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.8419486251659691,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "reciprocal_half_density_circle_spectral",
+          "exit_code": 1,
+          "counts": {
+            "passed": 6,
+            "failed": 12
+          },
+          "elapsed_seconds": 0.448617875110358,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "reciprocal_half_density_packet_scaling",
+          "exit_code": 1,
+          "counts": {
+            "passed": 60,
+            "failed": 48
+          },
+          "elapsed_seconds": 0.9545636251568794,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "missing_half_density_circle_spectral",
+          "exit_code": 1,
+          "counts": {
+            "passed": 6,
+            "failed": 12
+          },
+          "elapsed_seconds": 0.41911870799958706,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "missing_half_density_packet_scaling",
+          "exit_code": 1,
+          "counts": {
+            "passed": 62,
+            "failed": 46
+          },
+          "elapsed_seconds": 1.125323791988194,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "wrong_speed_circle_spectral",
+          "exit_code": 1,
+          "counts": {
+            "passed": 12,
+            "failed": 6
+          },
+          "elapsed_seconds": 0.43410045793280005,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "wrong_speed_packet_scaling",
+          "exit_code": 1,
+          "counts": {
+            "passed": 76,
+            "failed": 32
+          },
+          "elapsed_seconds": 0.985795000102371,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "periodic_gauge_circle_spectral",
+          "exit_code": 1,
+          "counts": {
+            "passed": 14,
+            "failed": 4
+          },
+          "elapsed_seconds": 1.3003637082874775,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "periodic_gauge_packet_scaling",
+          "exit_code": 0,
+          "counts": {
+            "passed": 108,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.8765653329901397,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "reversed_shift_circle_spectral",
+          "exit_code": 0,
+          "counts": {
+            "passed": 18,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.43275941582396626,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "reversed_shift_packet_scaling",
+          "exit_code": 1,
+          "counts": {
+            "passed": 96,
+            "failed": 12
+          },
+          "elapsed_seconds": 0.7441897499375045,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "noninteger_geometry_circle_spectral",
+          "exit_code": 0,
+          "counts": {
+            "passed": 18,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.4063185420818627,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "noninteger_geometry_packet_scaling",
+          "exit_code": 1,
+          "counts": {
+            "passed": 99,
+            "failed": 9
+          },
+          "elapsed_seconds": 0.7725551249459386,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "floor_round_circle_spectral",
+          "exit_code": 0,
+          "counts": {
+            "passed": 18,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.4037884580902755,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "floor_round_packet_scaling",
+          "exit_code": 1,
+          "counts": {
+            "passed": 103,
+            "failed": 5
+          },
+          "elapsed_seconds": 0.7764997920021415,
+          "timeout_seconds": 60.0
+        }
+      ],
+      "whole_helper_survivors": [
+        "missing_origin_packet_scaling",
+        "periodic_gauge_packet_scaling",
+        "reversed_shift_circle_spectral",
+        "noninteger_geometry_circle_spectral",
+        "floor_round_circle_spectral"
+      ],
+      "interpretation": "Original whole-helper sensitivity only; no independent review or new gate"
+    }
+  ],
+  "graph_delta": {
+    "nodes": 3,
+    "edges": 5
+  },
+  "pairing": "Same selected model family and reasoning effort; separate contexts with candidate exposure; not blinded. Root coauthor. Mechanical verification is not independent science review.",
+  "scientific_edits": [],
+  "originals_preserved": true,
+  "comparison_mapping": "Exact candidate filename relocation follows original helpers Path.resolve; all remaining values, versions, diagnostics and predicates exact",
+  "recovery": {
+    "previous_attempt": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/supplied_chain_publication_preparation/runs/20261012T130136_34be76ef2122",
+    "previous_manifest": {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/supplied_chain_publication_preparation/runs/20261012T130136_34be76ef2122/EVIDENCE_MANIFEST.json",
+      "bytes": 139806,
+      "sha256": "b985da14fc4337f66129ac619f02659fc1383947670c523031f09acb1de8d231"
+    },
+    "only_comparison_repair": "Candidate filename follows original helper Path.resolve(); no other byte, result, version, gate, or input changes",
+    "completed_science_reused": [
+      "Concrete canonical",
+      "Concrete 16 variants",
+      "Scattering canonical"
+    ],
+    "new_science_commands": [
+      "Scattering 13 variants",
+      "Continuum canonical",
+      "Continuum 18 variants"
+    ],
+    "unpickle": false,
+    "automatic_science_retry": false,
+    "old_partial_evidence_preserved": true
+  },
+  "not_run": [
+    "independent scientific controls",
+    "old milestone science",
+    "global combined audit",
+    "strict audit lint"
+  ],
+  "audit_verdict_applied": false,
+  "retained_promotion": false,
+  "git_or_pr_mutation": false
+}

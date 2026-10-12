@@ -1,0 +1,468 @@
+[
+  {
+    "key": "Concrete",
+    "name": "kernel_mutant_connection",
+    "kind": "original_active_CLI",
+    "argv": [
+      "python3",
+      "controls/kernel_and_matrix.py",
+      "--mutation",
+      "boost_connection",
+      "--output",
+      "logs/kernel_mutant_connection/result.json"
+    ],
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/kernel_and_matrix.py",
+      "bytes": 6168,
+      "sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0"
+    }
+  },
+  {
+    "key": "Concrete",
+    "name": "kernel_mutant_range2",
+    "kind": "original_active_CLI",
+    "argv": [
+      "python3",
+      "controls/kernel_and_matrix.py",
+      "--mutation",
+      "stress_drop_range2",
+      "--output",
+      "logs/kernel_mutant_range2/result.json"
+    ],
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/kernel_and_matrix.py",
+      "bytes": 6168,
+      "sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0"
+    }
+  },
+  {
+    "key": "Concrete",
+    "name": "kernel_mutant_sign",
+    "kind": "original_active_CLI",
+    "argv": [
+      "python3",
+      "controls/kernel_and_matrix.py",
+      "--mutation",
+      "kernel_current_sign",
+      "--output",
+      "logs/kernel_mutant_sign/result.json"
+    ],
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/kernel_and_matrix.py",
+      "bytes": 6168,
+      "sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0"
+    }
+  },
+  {
+    "key": "Concrete",
+    "name": "packet_mutant_clock",
+    "kind": "original_active_CLI",
+    "argv": [
+      "python3",
+      "controls/packet_flow.py",
+      "--mutation",
+      "reverse_clock",
+      "--output",
+      "logs/packet_mutant_clock/result.json"
+    ],
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/packet_flow.py",
+      "bytes": 4678,
+      "sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f"
+    }
+  },
+  {
+    "key": "Concrete",
+    "name": "packet_mutant_halfdensity",
+    "kind": "original_active_CLI",
+    "argv": [
+      "python3",
+      "controls/packet_flow.py",
+      "--mutation",
+      "drop_half_density",
+      "--output",
+      "logs/packet_mutant_halfdensity/result.json"
+    ],
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/packet_flow.py",
+      "bytes": 4678,
+      "sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f"
+    }
+  },
+  {
+    "key": "Concrete",
+    "name": "packet_mutant_velocity",
+    "kind": "original_active_CLI",
+    "argv": [
+      "python3",
+      "controls/packet_flow.py",
+      "--mutation",
+      "wrong_velocity",
+      "--output",
+      "logs/packet_mutant_velocity/result.json"
+    ],
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/packet_flow.py",
+      "bytes": 4678,
+      "sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f"
+    }
+  },
+  {
+    "key": "Concrete",
+    "name": "symbolic_mutant_half",
+    "kind": "original_active_CLI",
+    "argv": [
+      "python3",
+      "controls/local_symbolic.py",
+      "--mutation",
+      "current_half",
+      "--output",
+      "logs/symbolic_mutant_half/result.json"
+    ],
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/local_symbolic.py",
+      "bytes": 6735,
+      "sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6"
+    }
+  },
+  {
+    "key": "Concrete",
+    "name": "symbolic_mutant_improvement",
+    "kind": "original_active_CLI",
+    "argv": [
+      "python3",
+      "controls/local_symbolic.py",
+      "--mutation",
+      "drop_improvement",
+      "--output",
+      "logs/symbolic_mutant_improvement/result.json"
+    ],
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/local_symbolic.py",
+      "bytes": 6735,
+      "sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6"
+    }
+  },
+  {
+    "key": "Concrete",
+    "name": "symbolic_mutant_moment",
+    "kind": "original_active_CLI",
+    "argv": [
+      "python3",
+      "controls/local_symbolic.py",
+      "--mutation",
+      "moment_sign",
+      "--output",
+      "logs/symbolic_mutant_moment/result.json"
+    ],
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/local_symbolic.py",
+      "bytes": 6735,
+      "sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6"
+    }
+  },
+  {
+    "name": "review_symbolic_half",
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/author_snapshot/controls/local_symbolic.py",
+    "source_sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6",
+    "mutant": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/symbolic_half.py",
+    "mutant_sha256": "c8a9234ce2b7a8061367cbac7ba1b609acbef0befa278f20e800944721e56a1f",
+    "before": "I*n/(1 if args.mutation=='current_half' else 2)",
+    "after": "I*n",
+    "hypothesis_before_execution": "Current doubles; a canonical-current check should reject.",
+    "key": "Concrete",
+    "kind": "entire_helper_literal_edit"
+  },
+  {
+    "name": "review_symbolic_pauli_sign",
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/author_snapshot/controls/local_symbolic.py",
+    "source_sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6",
+    "mutant": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/symbolic_pauli_sign.py",
+    "mutant_sha256": "55fd74db7787aa9eee72867e49a2ff3e44c5adb383f13985b7a2497b27bc9e5b",
+    "before": "('X','Y'):(I,'Z')",
+    "after": "('X','Y'):(-I,'Z')",
+    "hypothesis_before_execution": "Corrupted Pauli orientation should disagree with displayed local formulas.",
+    "key": "Concrete",
+    "kind": "entire_helper_literal_edit"
+  },
+  {
+    "name": "review_kernel_connection",
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/author_snapshot/controls/kernel_and_matrix.py",
+    "source_sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0",
+    "mutant": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/kernel_connection.py",
+    "mutant_sha256": "d073471ca162c2014bf2afae4faa761709fbd69a919ff3b7180c5e1ad62cd077",
+    "before": "I*s.diff(Krot,k)/(1 if a.mutation=='boost_connection' else 2)-Krot/2",
+    "after": "I*s.diff(Krot,k)/3-Krot/2",
+    "hypothesis_before_execution": "Wrong derivative coefficient should leave a nonzero frame-connection residual.",
+    "key": "Concrete",
+    "kind": "entire_helper_literal_edit"
+  },
+  {
+    "name": "review_kernel_range2",
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/author_snapshot/controls/kernel_and_matrix.py",
+    "source_sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0",
+    "mutant": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/kernel_range2.py",
+    "mutant_sha256": "963cb5d3d135f89e93c61142e715e1f3d7e5831cfacf1d1b11b183c323c92f73",
+    "before": "-4*J**2*g/z**2",
+    "after": "-0*J**2*g/z**2",
+    "hypothesis_before_execution": "Deleting one range-two kernel entry should fail the spin/kernel comparison.",
+    "key": "Concrete",
+    "kind": "entire_helper_literal_edit"
+  },
+  {
+    "name": "review_kernel_origin",
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/author_snapshot/controls/kernel_and_matrix.py",
+    "source_sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0",
+    "mutant": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/kernel_origin.py",
+    "mutant_sha256": "02769912067e93ee1b6ff93b80eac0259da608d354f53107ef435cc11a0426ec",
+    "before": "A=I*K; C=I*dk(K)/2-K/2",
+    "after": "A=I*K; C=I*dk(K)/2+K/2",
+    "hypothesis_before_execution": "Origin shifts by H. Current/stress-only comparisons may be blind; independent literal-moment/full-phase check must distinguish.",
+    "key": "Concrete",
+    "kind": "entire_helper_literal_edit"
+  },
+  {
+    "name": "review_packet_velocity",
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/author_snapshot/controls/packet_flow.py",
+    "source_sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f",
+    "mutant": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/packet_velocity.py",
+    "mutant_sha256": "5d7504c7bbb8b03e9098fe47f1d8c07d90ac2d3fa694d54ce4acd49a3dbc843f",
+    "before": "return (-1 if a.mutation=='reverse_clock' else 1)*v(k)",
+    "after": "return (-1 if a.mutation=='reverse_clock' else 1)*1.1*v(k)",
+    "hypothesis_before_execution": "Wrong characteristic speed should fail derivative and quadrature-coordinate checks.",
+    "key": "Concrete",
+    "kind": "entire_helper_literal_edit"
+  },
+  {
+    "name": "review_packet_inverse_jacobian",
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/author_snapshot/controls/packet_flow.py",
+    "source_sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f",
+    "mutant": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/packet_inverse_jacobian.py",
+    "mutant_sha256": "66afcfbddfd7180d1165d5e4964e734701d1ff94ba0975f97afd759ecd2e7831",
+    "before": "jac=E(f)/E(k);",
+    "after": "jac=E(k)/E(f);",
+    "hypothesis_before_execution": "The algebraic square-root check may be blind when both sides use a wrong Jacobian; independent complex-flow/norm check must distinguish.",
+    "key": "Concrete",
+    "kind": "entire_helper_literal_edit"
+  },
+  {
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit",
+    "name": "incoming_phase_erased",
+    "reason": "Erases the incoming reversal parity.",
+    "old": "return 1 if t > 0 else (-1)**(n*(n-1)//2)",
+    "new": "return 1",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/incoming_phase_erased.py",
+    "sha256": "65aff5f3afc2b31c2827ccd23c2a80946c4884deac8aa247e8566851dd38d72c",
+    "diff_sha256": "9cee87943908401f59a5466094ff23e620f47d15c456bb5150c4379498ee388b"
+  },
+  {
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit",
+    "name": "car_counts_right",
+    "reason": "Changes the frozen occupied-left CAR convention to occupied-right.",
+    "old": "occupied = (bits & ((1 << site) - 1)).bit_count()",
+    "new": "occupied = (bits >> (site + 1)).bit_count()",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/car_counts_right.py",
+    "sha256": "4da959f48fa092cefda71e87ceec09d3e810d28002b45a0f69107cc179f40340",
+    "diff_sha256": "63108e05405dc066b43063ca1f19a716948f4cf5fec2a860b5ef19a8992137e4"
+  },
+  {
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit",
+    "name": "hardcore_collision_allowed",
+    "reason": "Allows an already flipped spin to be flipped again, with bit overwrite.",
+    "old": "if bits & (1 << site):",
+    "new": "if False and bits & (1 << site):",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/hardcore_collision_allowed.py",
+    "sha256": "a608404dce5778add2112fa34497499e11fb1048ecdfe2a2fd6561b696d54884",
+    "diff_sha256": "93010bab670f4e5272559ba1f72cfcf24658a00352d991dfdf2519d6166114af"
+  },
+  {
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit",
+    "name": "factorial_normalization",
+    "reason": "Uses n! instead of sqrt(n!) in sector wavefunctions.",
+    "old": "return total / sqrt(factorial(n))",
+    "new": "return total / factorial(n)",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/factorial_normalization.py",
+    "sha256": "d3faf6e4c56249786b5be36a8c24672553a5da3c4489f2d6fbbac6ec0a012e64",
+    "diff_sha256": "671d4bd5918bb1595e6bcaa45435c7c27088f318c63e28dd3459fa272b94828c"
+  },
+  {
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit",
+    "name": "momentum_sorting",
+    "reason": "Sorts geometric momentum instead of actual velocity.",
+    "old": "speeds = velocity(np.asarray(momenta), g, J)",
+    "new": "speeds = np.asarray(momenta)",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/momentum_sorting.py",
+    "sha256": "e20461fb279f8194b7b6f9fefe597a2c607905ea42f987df2b4728f9018e7d97",
+    "diff_sha256": "a8d272d9b3c062de107ea78216ee70651633f49a4ffc88c28e2d0690f8e9da3b"
+  },
+  {
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit",
+    "name": "second_branch_deleted",
+    "reason": "Deletes the descending velocity branch, including actual one-particle vectors.",
+    "old": "return epsilon*symmetric_value",
+    "new": "return 0j if np.any(np.cos(np.asarray(momenta)) < J/g) else epsilon*symmetric_value",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/second_branch_deleted.py",
+    "sha256": "788eafa6746d4550d28aad68de50947be72ab0b40780c0966f23fc325f3c7e86",
+    "diff_sha256": "5316a83fc3de97ce50580ef6315d09bb3ac3b7d1754461c928eaf116c175c3ce"
+  },
+  {
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit",
+    "name": "packet_time_reversed",
+    "reason": "Reverses the wavepacket energy clock.",
+    "old": "samples = packet_samples*np.exp(-1j*t*energy(k, g, J))",
+    "new": "samples = packet_samples*np.exp(1j*t*energy(k, g, J))",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/packet_time_reversed.py",
+    "sha256": "6d25a4a73238b863eff15d239183ec327bbcc8899af276a58238552e0cf97bd7",
+    "diff_sha256": "75c932911abd5cb322b5bcc335e17586156c9b0642d109e1a78817e49ba34a93"
+  },
+  {
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit",
+    "name": "spatial_fourier_reversed",
+    "reason": "Reverses the geometric Fourier character.",
+    "old": "transformed = np.fft.ifft(samples)",
+    "new": "transformed = np.fft.fft(samples)/len(samples)",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/spatial_fourier_reversed.py",
+    "sha256": "3b663258db4fdc8e741ac08fc9ddc62a76e5c007d4b5db5a746167f943cc7dcd",
+    "diff_sha256": "50938382642050f2d109974c8c5160a90c073045ed4ee92039d815dd57e5fa4c"
+  },
+  {
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit",
+    "name": "filter_energy_reversed",
+    "reason": "Reverses the actual energy-transfer Fourier clock.",
+    "old": "return transform(energy(k, g, J), k)",
+    "new": "return transform(-energy(k, g, J), k)",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/filter_energy_reversed.py",
+    "sha256": "fccd339db3cfdb53928f1430f2a7ce4d708a00a8678d50ddcde5eae1c443d8c5",
+    "diff_sha256": "a027f05c0b058f0d6393942fe4d03c010659205f17d7ded4ffcf4b6abf39ba84"
+  },
+  {
+    "name": "review_energy_half",
+    "old": "return 2 * np.sqrt(g*g + J*J - 2*g*J*np.cos(k))",
+    "new": "return np.sqrt(g*g + J*J - 2*g*J*np.cos(k))",
+    "prediction": "Substantive dispersion normalization error; independent energy derivative and Fourier clocks should reject.",
+    "source_sha256": "a261878c4d49c0edf1f6ef9d29d5f86b00e9cc413548fc87bb0ab7959bfbf545",
+    "diff_sha256": "254d24e4ca6e7f37255d3f27a29f8bd90c6b492b0dcc883e1abd9818f4ffa0f7",
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit"
+  },
+  {
+    "name": "review_pair_diagonal",
+    "old": "np.triu(difference, 1)",
+    "new": "np.triu(difference, 0)",
+    "prediction": "Admit coincident sites into the hard-core two-particle error; strict-order cumulative comparator should reject.",
+    "source_sha256": "b60167c323cfc6589a98743a1ddf3c18533b8caf2226503bdd64e7c5f2fb0a1c",
+    "diff_sha256": "416f9667c783cebf9a392193ab7c2c0d8b1c19e746676f5f8cb023bcb061b431",
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit"
+  },
+  {
+    "name": "review_filter_double",
+    "old": "return transform(energy(k, g, J), k)",
+    "new": "return 2 * transform(energy(k, g, J), k)",
+    "prediction": "Wrong spacetime transform normalization; actual-character quadrature should reject.",
+    "source_sha256": "b7308470ca28d8d93433ac8e9377d26f7355d7ed68c3d23beae534df69d4e337",
+    "diff_sha256": "4a5e4effc51c6e18d37e66443769130762c165ea2608b3da40d6c7c77df1fc91",
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit"
+  },
+  {
+    "name": "review_incoming_n8_only",
+    "old": "return 1 if t > 0 else (-1)**(n*(n-1)//2)",
+    "new": "return -1 if n == 8 and t < 0 else (1 if t > 0 else (-1)**(n*(n-1)//2))",
+    "prediction": "Expected finite-coverage survivor: author cone cases stop at n=7; an independent literal n=8 Pauli/Jordan-Wigner matrix witness will reject the false phase.",
+    "source_sha256": "a61ce8753e2602a4ad4152d5d939e39d6f56e651084caba1afd3c277f03fa286",
+    "diff_sha256": "b3734fc82a80f35d9fd53ad61b1b54d1e3c405cff62c874d5dea8bcfdd7d9aed",
+    "key": "Scattering",
+    "kind": "entire_candidate_literal_edit"
+  },
+  {
+    "key": "Continuum",
+    "kind": "entire_candidate_literal_edit_two_unchanged_helpers",
+    "name": "origin_sign",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/origin_sign.py",
+    "old": "ORIGIN_COEFFICIENT = -0.5",
+    "new": "ORIGIN_COEFFICIENT = 0.5",
+    "sha256": "8854091b1bc56ff19dfb48d5dc2d26014bc0bc5b6f25e05d9d4dbfdc1e0a440d"
+  },
+  {
+    "key": "Continuum",
+    "kind": "entire_candidate_literal_edit_two_unchanged_helpers",
+    "name": "missing_origin",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/missing_origin.py",
+    "old": "ORIGIN_COEFFICIENT = -0.5",
+    "new": "ORIGIN_COEFFICIENT = 0.0",
+    "sha256": "2f3a2af5df8c9ea466ccaf004d873442558f260c7ae4e46cac3f939ef1310854"
+  },
+  {
+    "key": "Continuum",
+    "kind": "entire_candidate_literal_edit_two_unchanged_helpers",
+    "name": "reciprocal_half_density",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/reciprocal_half_density.py",
+    "old": "HALF_DENSITY_POWER = 0.5",
+    "new": "HALF_DENSITY_POWER = -0.5",
+    "sha256": "f774aa95b6b894037d3d1eb12509cdba47722389a16c31ec0f8ec929cbd6fb4b"
+  },
+  {
+    "key": "Continuum",
+    "kind": "entire_candidate_literal_edit_two_unchanged_helpers",
+    "name": "missing_half_density",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/missing_half_density.py",
+    "old": "HALF_DENSITY_POWER = 0.5",
+    "new": "HALF_DENSITY_POWER = 0.0",
+    "sha256": "5bc8c41f8e46eed6b9f8adb382162cb1cfa274b02d3f3f481a3227cbbc4801ce"
+  },
+  {
+    "key": "Continuum",
+    "kind": "entire_candidate_literal_edit_two_unchanged_helpers",
+    "name": "wrong_speed",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/wrong_speed.py",
+    "old": "FLOW_V_POWER = 0",
+    "new": "FLOW_V_POWER = -1",
+    "sha256": "ab3f50ed00d756347c6d61a0476a30eb4f0e92a0461f15c0013766695bd4cf40"
+  },
+  {
+    "key": "Continuum",
+    "kind": "entire_candidate_literal_edit_two_unchanged_helpers",
+    "name": "periodic_gauge",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/periodic_gauge.py",
+    "old": "GAUGE_OFFSET = 0.5",
+    "new": "GAUGE_OFFSET = 0.0",
+    "sha256": "deea79b1dd37a89a60780f9235570b092aee39b774d7de06200d0af4037eca4d"
+  },
+  {
+    "key": "Continuum",
+    "kind": "entire_candidate_literal_edit_two_unchanged_helpers",
+    "name": "reversed_shift",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/reversed_shift.py",
+    "old": "SHIFT_ORIENTATION = 1",
+    "new": "SHIFT_ORIENTATION = -1",
+    "sha256": "78c64119fad4d216f5425faacad61882cf82eacd88fbd721289e55a213dbeb5a"
+  },
+  {
+    "key": "Continuum",
+    "kind": "entire_candidate_literal_edit_two_unchanged_helpers",
+    "name": "noninteger_geometry",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/noninteger_geometry.py",
+    "old": "ROUND_GEOMETRY = True",
+    "new": "ROUND_GEOMETRY = False",
+    "sha256": "89538b7eebe5e1c67e9aedfcc907d58489c0578e82fca9de5f90f717a2b8f60a"
+  },
+  {
+    "key": "Continuum",
+    "kind": "entire_candidate_literal_edit_two_unchanged_helpers",
+    "name": "floor_round",
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/floor_round.py",
+    "old": "ROUND_FUNCTION = np.rint",
+    "new": "ROUND_FUNCTION = np.floor",
+    "sha256": "7234fec125ded2f5f047044d2085be0afd5275d4a05664b4ebf5bce7bd8c0e36"
+  }
+]

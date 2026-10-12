@@ -1,0 +1,371 @@
+{
+  "files": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/NSY1810.02428v2.source",
+      "bytes": 123048,
+      "sha256": "d886a47d9c3808b1e8ef4cae0a21cfc57cf24a7b46e21bd6901a3200a5ec0858",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/NSY1810.tex",
+      "bytes": 463830,
+      "sha256": "10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/TWW_common.tex",
+      "bytes": 10722,
+      "sha256": "743220af9c98e077199f2dfbdc72814434862bab0cd61ac80f8ae40d94f51fec",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/2511.02941v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/TWW_main.bbl",
+      "bytes": 24926,
+      "sha256": "a3165c066662e83e7e4be35d8a86c6d144b3aa8c6999b68f56facf3b353fdf2b",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/2511.02941v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/TWW_main.tex",
+      "bytes": 51113,
+      "sha256": "bd67842f411193b3727a1d90aa7c47573c1db63e4b58a3a8d8bcf57ad5d4be0d",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/2511.02941v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/011_tww_statements.stdout",
+      "bytes": 20667,
+      "sha256": "d0e9255223bee0e91d62605628d72bf1ae789e851252f9965d7b554c85daa789",
+      "reason": "Literal external-paper read stream",
+      "urls": [
+        "https://arxiv.org/abs/2511.02941v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/012_tww_proof.stdout",
+      "bytes": 25745,
+      "sha256": "9b59e8b7d686bfaff5ca2bc988df40440932e94a481fe65232b7b411e578ea4a",
+      "reason": "Literal external-paper read stream",
+      "urls": [
+        "https://arxiv.org/abs/2511.02941v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/013_nsy_statements.stdout",
+      "bytes": 34679,
+      "sha256": "f2d72e1a076f6424f71ba45ccc1d87bb584f5c5e0891556a3eb3ebe51b2cd9a4",
+      "reason": "Literal external-paper read stream",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/external_raw/NSY1810.02428v2.source",
+      "bytes": 123048,
+      "sha256": "d886a47d9c3808b1e8ef4cae0a21cfc57cf24a7b46e21bd6901a3200a5ec0858",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/external_raw/NSY1810.tex",
+      "bytes": 463830,
+      "sha256": "10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/read_nsy_bound/stdout.txt",
+      "bytes": 21313,
+      "sha256": "57d96385e4474f4141e912d270d753462c3468965db57c3d7c763ac34fde8fde",
+      "reason": "Literal external-paper read stream",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/author_snapshot/gapped_chain_scattering/external_raw/NSY1810.02428v2.source",
+      "bytes": 123048,
+      "sha256": "d886a47d9c3808b1e8ef4cae0a21cfc57cf24a7b46e21bd6901a3200a5ec0858",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/author_snapshot/gapped_chain_scattering/external_raw/NSY1810.tex",
+      "bytes": 463830,
+      "sha256": "10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/author_snapshot/gapped_chain_scattering/logs/read_nsy_bound/stdout.txt",
+      "bytes": 21313,
+      "sha256": "57d96385e4474f4141e912d270d753462c3468965db57c3d7c763ac34fde8fde",
+      "reason": "Literal external-paper read stream",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/integrity_negative_controls/altered_helper/gapped_chain_scattering/external_raw/NSY1810.02428v2.source",
+      "bytes": 123048,
+      "sha256": "d886a47d9c3808b1e8ef4cae0a21cfc57cf24a7b46e21bd6901a3200a5ec0858",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/integrity_negative_controls/altered_helper/gapped_chain_scattering/external_raw/NSY1810.tex",
+      "bytes": 463830,
+      "sha256": "10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/integrity_negative_controls/altered_helper/gapped_chain_scattering/logs/read_nsy_bound/stdout.txt",
+      "bytes": 21313,
+      "sha256": "57d96385e4474f4141e912d270d753462c3468965db57c3d7c763ac34fde8fde",
+      "reason": "Literal external-paper read stream",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/integrity_negative_controls/self_rebound_manifest/gapped_chain_scattering/external_raw/NSY1810.02428v2.source",
+      "bytes": 123048,
+      "sha256": "d886a47d9c3808b1e8ef4cae0a21cfc57cf24a7b46e21bd6901a3200a5ec0858",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/integrity_negative_controls/self_rebound_manifest/gapped_chain_scattering/external_raw/NSY1810.tex",
+      "bytes": 463830,
+      "sha256": "10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/integrity_negative_controls/self_rebound_manifest/gapped_chain_scattering/logs/read_nsy_bound/stdout.txt",
+      "bytes": 21313,
+      "sha256": "57d96385e4474f4141e912d270d753462c3468965db57c3d7c763ac34fde8fde",
+      "reason": "Literal external-paper read stream",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/sources/NSY1810.tex",
+      "bytes": 463830,
+      "sha256": "10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d",
+      "reason": "Raw third-party primary content/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "source_attribution": "Versioned primary identity from named original or exact-byte duplicate; original acquisition inventories retained",
+      "local_bytes_published": false
+    }
+  ],
+  "citation_inventory": {
+    "utc": "2026-10-12T07:37:26.882533+00:00",
+    "publication_packet_created": false,
+    "policy": "All raw external sources are excluded from publication; citations and the authors' own proof remain separate.",
+    "primary_sources": [
+      {
+        "source": "Nachtergaele, Sims, Young: Quasi-Locality Bounds for Quantum Lattice Systems Part I",
+        "version": "arXiv:1810.02428v2",
+        "url": "https://arxiv.org/abs/1810.02428v2",
+        "acquisition": "Own versioned arXiv TeX source acquisition; NSY1810.fetch.json",
+        "local_primary": "NSY1810.tex",
+        "read_lines": [
+          "1094-1360",
+          "1662-1790",
+          "1961-2033"
+        ],
+        "load_bearing": [
+          "Definitions of F functions and interaction norm",
+          "Theorem 3.1 LR bound statement",
+          "Theorems 3.4-3.5 thermodynamic dynamics and relevant proofs"
+        ],
+        "not_imported": [
+          "Theorem 3.9 is unnecessary here; read does not imply independent audit of the paper"
+        ]
+      },
+      {
+        "source": "Teufel, Wesle, Wessel: Dynamics generated by spatially growing derivations on quasi-local algebras",
+        "version": "arXiv:2511.02941v2",
+        "url": "https://arxiv.org/abs/2511.02941v2",
+        "acquisition": "Copied raw original TeX and acquisition receipts from frozen microscopic_boost_flow ancestor; hashes in TWW_copy_inventory.json",
+        "local_primary": "TWW_main.tex",
+        "read_lines": [
+          "1-90",
+          "151-458",
+          "508-959"
+        ],
+        "load_bearing": [
+          "Definitions and growth/LR assumptions",
+          "Theorems 7-8, proofs and appendix"
+        ],
+        "corrections": [
+          "Use cutoff radius k/2 in the appendix tail estimate",
+          "Use enlarged factor at most 3(1+L)^nu for local observable norm"
+        ],
+        "hypothesis_match": "Note section 7: exponentially localized even spin strings, linear growth, unconditional local generator, explicit exponential LR reduction; source proof applies using spin conditional expectations and disjoint-factor commutation."
+      },
+      {
+        "source": "De Luca, Viti, Bernard, Doyon: Non-equilibrium thermal transport in the quantum Ising chain",
+        "version": "arXiv:1305.4984v2",
+        "url": "https://arxiv.org/abs/1305.4984v2",
+        "acquisition": "Web-only primary PDF read; no local raw copy",
+        "read_coverage": "Sections II equations 1-6 and IV equations 20-23",
+        "load_bearing": false,
+        "use": "Context only; Hamiltonian parameters map J_D=2J, h_D=g/J. No current coefficient, GNS or domain theorem imported."
+      },
+      {
+        "source": "Antal, Racz, Sasvari: Nonequilibrium steady state in a quantum system: one-dimensional transverse Ising model with energy current",
+        "version": "arXiv:cond-mat/9612047v1",
+        "url": "https://arxiv.org/abs/cond-mat/9612047v1",
+        "acquisition": "Web-only primary PDF read; no local raw copy",
+        "read_coverage": "Pages 1-2 model/current discussion",
+        "load_bearing": false,
+        "use": "Context only. Spin normalization was not fully reconciled; no coefficient or theorem imported."
+      },
+      {
+        "source": "Araki: On the XY-model on two-sided infinite chain",
+        "url": "https://doi.org/10.2977/prims/1195181608",
+        "acquisition": "Search metadata only; attempted Project Euclid page retrieval returned a tool InternalError",
+        "load_bearing": false,
+        "use": "Not imported. Full hypotheses were not acquired."
+      },
+      {
+        "source": "Araki-Matsui ground-state work on the XY model (1985)",
+        "acquisition": "Search metadata only",
+        "load_bearing": false,
+        "use": "Not imported. No theorem hypotheses checked from a full primary source."
+      }
+    ],
+    "local_raw_and_acquisition_files": [
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/NSY1810.02428v2.source",
+        "sha256": "d886a47d9c3808b1e8ef4cae0a21cfc57cf24a7b46e21bd6901a3200a5ec0858",
+        "bytes": 123048,
+        "excluded_from_publication": true
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/NSY1810.fetch.json",
+        "sha256": "30904f1a7fdd2bade84cba937898c55fbf425c6b11cdfd3592e3c4586bd74338",
+        "bytes": 1347,
+        "excluded_from_publication": true
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/NSY1810.tex",
+        "sha256": "10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d",
+        "bytes": 463830,
+        "excluded_from_publication": true
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/TWW_common.tex",
+        "sha256": "743220af9c98e077199f2dfbdc72814434862bab0cd61ac80f8ae40d94f51fec",
+        "bytes": 10722,
+        "excluded_from_publication": true
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/TWW_copy_inventory.json",
+        "sha256": "f0792f6e648b1de67f9816dca80fd4727785cfd0e8b593c8c0b141da6f898609",
+        "bytes": 2416,
+        "excluded_from_publication": true
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/TWW_extracted_manifest.json",
+        "sha256": "863da8afdbcbf404707c2aed9f00e093e51e817e4d7e001f84f632f6637376f6",
+        "bytes": 1242,
+        "excluded_from_publication": true
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/TWW_fetch_receipt.json",
+        "sha256": "1514bfa018c3fda4e8789c62acb57bb91b57b6f5140477108dc66f9fdd0d9569",
+        "bytes": 1114,
+        "excluded_from_publication": true
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/TWW_main.bbl",
+        "sha256": "a3165c066662e83e7e4be35d8a86c6d144b3aa8c6999b68f56facf3b353fdf2b",
+        "bytes": 24926,
+        "excluded_from_publication": true
+      },
+      {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/literature/TWW_main.tex",
+        "sha256": "bd67842f411193b3727a1d90aa7c47573c1db63e4b58a3a8d8bcf57ad5d4be0d",
+        "bytes": 51113,
+        "excluded_from_publication": true
+      }
+    ]
+  },
+  "coverage": "Original author/reviewer records determine exact source exposure; no new literature read or acquisition by preparation."
+}

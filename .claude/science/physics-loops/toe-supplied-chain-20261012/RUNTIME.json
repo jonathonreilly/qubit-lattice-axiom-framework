@@ -1,0 +1,1182 @@
+{
+  "Concrete": {
+    "baselines": [
+      "symbolic_complete",
+      "kernel_matrix_initial",
+      "packet_initial"
+    ],
+    "cases": {
+      "symbolic_complete": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "none",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6.py",
+            "bytes": 6735,
+            "sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "kernel_matrix_initial": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "none",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0.py",
+            "bytes": 6168,
+            "sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "packet_initial": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "none",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f.py",
+            "bytes": 4678,
+            "sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "kernel_mutant_connection": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "boost_connection",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0.py",
+            "bytes": 6168,
+            "sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "kernel_mutant_range2": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "stress_drop_range2",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0.py",
+            "bytes": 6168,
+            "sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "kernel_mutant_sign": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "kernel_current_sign",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0.py",
+            "bytes": 6168,
+            "sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "packet_mutant_clock": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "reverse_clock",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f.py",
+            "bytes": 4678,
+            "sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "packet_mutant_halfdensity": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "drop_half_density",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f.py",
+            "bytes": 4678,
+            "sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "packet_mutant_velocity": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "wrong_velocity",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f.py",
+            "bytes": 4678,
+            "sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "symbolic_mutant_half": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "current_half",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6.py",
+            "bytes": 6735,
+            "sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "symbolic_mutant_improvement": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "drop_improvement",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6.py",
+            "bytes": 6735,
+            "sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "symbolic_mutant_moment": {
+        "entry": "helper.py",
+        "arguments": [
+          "--mutation",
+          "moment_sign",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6.py",
+            "bytes": 6735,
+            "sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "review_symbolic_half": {
+        "entry": "helper.py",
+        "arguments": [
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/c8a9234ce2b7a8061367cbac7ba1b609acbef0befa278f20e800944721e56a1f.py",
+            "bytes": 6691,
+            "sha256": "c8a9234ce2b7a8061367cbac7ba1b609acbef0befa278f20e800944721e56a1f"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60
+      },
+      "review_symbolic_pauli_sign": {
+        "entry": "helper.py",
+        "arguments": [
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/55fd74db7787aa9eee72867e49a2ff3e44c5adb383f13985b7a2497b27bc9e5b.py",
+            "bytes": 6736,
+            "sha256": "55fd74db7787aa9eee72867e49a2ff3e44c5adb383f13985b7a2497b27bc9e5b"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60
+      },
+      "review_kernel_connection": {
+        "entry": "helper.py",
+        "arguments": [
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/d073471ca162c2014bf2afae4faa761709fbd69a919ff3b7180c5e1ad62cd077.py",
+            "bytes": 6125,
+            "sha256": "d073471ca162c2014bf2afae4faa761709fbd69a919ff3b7180c5e1ad62cd077"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60
+      },
+      "review_kernel_range2": {
+        "entry": "helper.py",
+        "arguments": [
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/963cb5d3d135f89e93c61142e715e1f3d7e5831cfacf1d1b11b183c323c92f73.py",
+            "bytes": 6168,
+            "sha256": "963cb5d3d135f89e93c61142e715e1f3d7e5831cfacf1d1b11b183c323c92f73"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60
+      },
+      "review_kernel_origin": {
+        "entry": "helper.py",
+        "arguments": [
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/02769912067e93ee1b6ff93b80eac0259da608d354f53107ef435cc11a0426ec.py",
+            "bytes": 6168,
+            "sha256": "02769912067e93ee1b6ff93b80eac0259da608d354f53107ef435cc11a0426ec"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60
+      },
+      "review_packet_velocity": {
+        "entry": "helper.py",
+        "arguments": [
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/5d7504c7bbb8b03e9098fe47f1d8c07d90ac2d3fa694d54ce4acd49a3dbc843f.py",
+            "bytes": 4682,
+            "sha256": "5d7504c7bbb8b03e9098fe47f1d8c07d90ac2d3fa694d54ce4acd49a3dbc843f"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60
+      },
+      "review_packet_inverse_jacobian": {
+        "entry": "helper.py",
+        "arguments": [
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Concrete/66afcfbddfd7180d1165d5e4964e734701d1ff94ba0975f97afd759ecd2e7831.py",
+            "bytes": 4678,
+            "sha256": "66afcfbddfd7180d1165d5e4964e734701d1ff94ba0975f97afd759ecd2e7831"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "checks",
+        "pass_key": "ok",
+        "timeout_seconds": 60
+      }
+    }
+  },
+  "Scattering": {
+    "baselines": [
+      "baseline"
+    ],
+    "cases": {
+      "baseline": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/fea7c19a5734e1c3a662981a9c08d6da318b05481c0a6802f76e2227a499c382.py",
+            "bytes": 2990,
+            "sha256": "fea7c19a5734e1c3a662981a9c08d6da318b05481c0a6802f76e2227a499c382"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "incoming_phase_erased": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/65aff5f3afc2b31c2827ccd23c2a80946c4884deac8aa247e8566851dd38d72c.py",
+            "bytes": 2957,
+            "sha256": "65aff5f3afc2b31c2827ccd23c2a80946c4884deac8aa247e8566851dd38d72c"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "car_counts_right": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/4da959f48fa092cefda71e87ceec09d3e810d28002b45a0f69107cc179f40340.py",
+            "bytes": 2984,
+            "sha256": "4da959f48fa092cefda71e87ceec09d3e810d28002b45a0f69107cc179f40340"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "hardcore_collision_allowed": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/a608404dce5778add2112fa34497499e11fb1048ecdfe2a2fd6561b696d54884.py",
+            "bytes": 3000,
+            "sha256": "a608404dce5778add2112fa34497499e11fb1048ecdfe2a2fd6561b696d54884"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "factorial_normalization": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/d3faf6e4c56249786b5be36a8c24672553a5da3c4489f2d6fbbac6ec0a012e64.py",
+            "bytes": 2984,
+            "sha256": "d3faf6e4c56249786b5be36a8c24672553a5da3c4489f2d6fbbac6ec0a012e64"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "momentum_sorting": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/e20461fb279f8194b7b6f9fefe597a2c607905ea42f987df2b4728f9018e7d97.py",
+            "bytes": 2974,
+            "sha256": "e20461fb279f8194b7b6f9fefe597a2c607905ea42f987df2b4728f9018e7d97"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "second_branch_deleted": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/788eafa6746d4550d28aad68de50947be72ab0b40780c0966f23fc325f3c7e86.py",
+            "bytes": 3043,
+            "sha256": "788eafa6746d4550d28aad68de50947be72ab0b40780c0966f23fc325f3c7e86"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "packet_time_reversed": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/6d25a4a73238b863eff15d239183ec327bbcc8899af276a58238552e0cf97bd7.py",
+            "bytes": 2989,
+            "sha256": "6d25a4a73238b863eff15d239183ec327bbcc8899af276a58238552e0cf97bd7"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "spatial_fourier_reversed": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/3b663258db4fdc8e741ac08fc9ddc62a76e5c007d4b5db5a746167f943cc7dcd.py",
+            "bytes": 3002,
+            "sha256": "3b663258db4fdc8e741ac08fc9ddc62a76e5c007d4b5db5a746167f943cc7dcd"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "filter_energy_reversed": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/fccd339db3cfdb53928f1430f2a7ce4d708a00a8678d50ddcde5eae1c443d8c5.py",
+            "bytes": 2991,
+            "sha256": "fccd339db3cfdb53928f1430f2a7ce4d708a00a8678d50ddcde5eae1c443d8c5"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "review_energy_half": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/a261878c4d49c0edf1f6ef9d29d5f86b00e9cc413548fc87bb0ab7959bfbf545.py",
+            "bytes": 2986,
+            "sha256": "a261878c4d49c0edf1f6ef9d29d5f86b00e9cc413548fc87bb0ab7959bfbf545"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "review_pair_diagonal": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/b60167c323cfc6589a98743a1ddf3c18533b8caf2226503bdd64e7c5f2fb0a1c.py",
+            "bytes": 2990,
+            "sha256": "b60167c323cfc6589a98743a1ddf3c18533b8caf2226503bdd64e7c5f2fb0a1c"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "review_filter_double": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/b7308470ca28d8d93433ac8e9377d26f7355d7ed68c3d23beae534df69d4e337.py",
+            "bytes": 2994,
+            "sha256": "b7308470ca28d8d93433ac8e9377d26f7355d7ed68c3d23beae534df69d4e337"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      },
+      "review_incoming_n8_only": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--output",
+          "{output}"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Scattering/4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d.py",
+            "bytes": 12984,
+            "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Scattering/a61ce8753e2602a4ad4152d5d939e39d6f56e651084caba1afd3c277f03fa286.py",
+            "bytes": 3020,
+            "sha256": "a61ce8753e2602a4ad4152d5d939e39d6f56e651084caba1afd3c277f03fa286"
+          }
+        },
+        "result_mode": "file",
+        "rows_key": "rows",
+        "pass_key": "pass",
+        "timeout_seconds": 45.0
+      }
+    }
+  },
+  "Continuum": {
+    "baselines": [
+      "baseline_circle_v2",
+      "baseline_packet_v3"
+    ],
+    "cases": {
+      "baseline_circle_v2": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9.py",
+            "bytes": 6428,
+            "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/2a64bd05166adf7b15a7b1a06a4585523630ea539ba93b8b35888ef8f9cbf5d2.py",
+            "bytes": 1511,
+            "sha256": "2a64bd05166adf7b15a7b1a06a4585523630ea539ba93b8b35888ef8f9cbf5d2"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "baseline_packet_v3": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928.py",
+            "bytes": 9817,
+            "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/2a64bd05166adf7b15a7b1a06a4585523630ea539ba93b8b35888ef8f9cbf5d2.py",
+            "bytes": 1511,
+            "sha256": "2a64bd05166adf7b15a7b1a06a4585523630ea539ba93b8b35888ef8f9cbf5d2"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "origin_sign_circle_spectral": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9.py",
+            "bytes": 6428,
+            "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/8854091b1bc56ff19dfb48d5dc2d26014bc0bc5b6f25e05d9d4dbfdc1e0a440d.py",
+            "bytes": 1510,
+            "sha256": "8854091b1bc56ff19dfb48d5dc2d26014bc0bc5b6f25e05d9d4dbfdc1e0a440d"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "origin_sign_packet_scaling": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928.py",
+            "bytes": 9817,
+            "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/8854091b1bc56ff19dfb48d5dc2d26014bc0bc5b6f25e05d9d4dbfdc1e0a440d.py",
+            "bytes": 1510,
+            "sha256": "8854091b1bc56ff19dfb48d5dc2d26014bc0bc5b6f25e05d9d4dbfdc1e0a440d"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "missing_origin_circle_spectral": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9.py",
+            "bytes": 6428,
+            "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/2f3a2af5df8c9ea466ccaf004d873442558f260c7ae4e46cac3f939ef1310854.py",
+            "bytes": 1510,
+            "sha256": "2f3a2af5df8c9ea466ccaf004d873442558f260c7ae4e46cac3f939ef1310854"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "missing_origin_packet_scaling": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928.py",
+            "bytes": 9817,
+            "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/2f3a2af5df8c9ea466ccaf004d873442558f260c7ae4e46cac3f939ef1310854.py",
+            "bytes": 1510,
+            "sha256": "2f3a2af5df8c9ea466ccaf004d873442558f260c7ae4e46cac3f939ef1310854"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "reciprocal_half_density_circle_spectral": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9.py",
+            "bytes": 6428,
+            "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/f774aa95b6b894037d3d1eb12509cdba47722389a16c31ec0f8ec929cbd6fb4b.py",
+            "bytes": 1512,
+            "sha256": "f774aa95b6b894037d3d1eb12509cdba47722389a16c31ec0f8ec929cbd6fb4b"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "reciprocal_half_density_packet_scaling": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928.py",
+            "bytes": 9817,
+            "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/f774aa95b6b894037d3d1eb12509cdba47722389a16c31ec0f8ec929cbd6fb4b.py",
+            "bytes": 1512,
+            "sha256": "f774aa95b6b894037d3d1eb12509cdba47722389a16c31ec0f8ec929cbd6fb4b"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "missing_half_density_circle_spectral": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9.py",
+            "bytes": 6428,
+            "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/5bc8c41f8e46eed6b9f8adb382162cb1cfa274b02d3f3f481a3227cbbc4801ce.py",
+            "bytes": 1511,
+            "sha256": "5bc8c41f8e46eed6b9f8adb382162cb1cfa274b02d3f3f481a3227cbbc4801ce"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "missing_half_density_packet_scaling": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928.py",
+            "bytes": 9817,
+            "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/5bc8c41f8e46eed6b9f8adb382162cb1cfa274b02d3f3f481a3227cbbc4801ce.py",
+            "bytes": 1511,
+            "sha256": "5bc8c41f8e46eed6b9f8adb382162cb1cfa274b02d3f3f481a3227cbbc4801ce"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "wrong_speed_circle_spectral": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9.py",
+            "bytes": 6428,
+            "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/ab3f50ed00d756347c6d61a0476a30eb4f0e92a0461f15c0013766695bd4cf40.py",
+            "bytes": 1512,
+            "sha256": "ab3f50ed00d756347c6d61a0476a30eb4f0e92a0461f15c0013766695bd4cf40"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "wrong_speed_packet_scaling": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928.py",
+            "bytes": 9817,
+            "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/ab3f50ed00d756347c6d61a0476a30eb4f0e92a0461f15c0013766695bd4cf40.py",
+            "bytes": 1512,
+            "sha256": "ab3f50ed00d756347c6d61a0476a30eb4f0e92a0461f15c0013766695bd4cf40"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "periodic_gauge_circle_spectral": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9.py",
+            "bytes": 6428,
+            "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/deea79b1dd37a89a60780f9235570b092aee39b774d7de06200d0af4037eca4d.py",
+            "bytes": 1511,
+            "sha256": "deea79b1dd37a89a60780f9235570b092aee39b774d7de06200d0af4037eca4d"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "periodic_gauge_packet_scaling": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928.py",
+            "bytes": 9817,
+            "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/deea79b1dd37a89a60780f9235570b092aee39b774d7de06200d0af4037eca4d.py",
+            "bytes": 1511,
+            "sha256": "deea79b1dd37a89a60780f9235570b092aee39b774d7de06200d0af4037eca4d"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "reversed_shift_circle_spectral": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9.py",
+            "bytes": 6428,
+            "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/78c64119fad4d216f5425faacad61882cf82eacd88fbd721289e55a213dbeb5a.py",
+            "bytes": 1512,
+            "sha256": "78c64119fad4d216f5425faacad61882cf82eacd88fbd721289e55a213dbeb5a"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "reversed_shift_packet_scaling": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928.py",
+            "bytes": 9817,
+            "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/78c64119fad4d216f5425faacad61882cf82eacd88fbd721289e55a213dbeb5a.py",
+            "bytes": 1512,
+            "sha256": "78c64119fad4d216f5425faacad61882cf82eacd88fbd721289e55a213dbeb5a"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "noninteger_geometry_circle_spectral": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9.py",
+            "bytes": 6428,
+            "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/89538b7eebe5e1c67e9aedfcc907d58489c0578e82fca9de5f90f717a2b8f60a.py",
+            "bytes": 1512,
+            "sha256": "89538b7eebe5e1c67e9aedfcc907d58489c0578e82fca9de5f90f717a2b8f60a"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "noninteger_geometry_packet_scaling": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928.py",
+            "bytes": 9817,
+            "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/89538b7eebe5e1c67e9aedfcc907d58489c0578e82fca9de5f90f717a2b8f60a.py",
+            "bytes": 1512,
+            "sha256": "89538b7eebe5e1c67e9aedfcc907d58489c0578e82fca9de5f90f717a2b8f60a"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "floor_round_circle_spectral": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9.py",
+            "bytes": 6428,
+            "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/7234fec125ded2f5f047044d2085be0afd5275d4a05664b4ebf5bce7bd8c0e36.py",
+            "bytes": 1512,
+            "sha256": "7234fec125ded2f5f047044d2085be0afd5275d4a05664b4ebf5bce7bd8c0e36"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      },
+      "floor_round_packet_scaling": {
+        "entry": "helper.py",
+        "arguments": [
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/Continuum/6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928.py",
+            "bytes": 9817,
+            "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/Continuum/7234fec125ded2f5f047044d2085be0afd5275d4a05664b4ebf5bce7bd8c0e36.py",
+            "bytes": 1512,
+            "sha256": "7234fec125ded2f5f047044d2085be0afd5275d4a05664b4ebf5bce7bd8c0e36"
+          }
+        },
+        "result_mode": "stdout",
+        "rows_key": "predicates",
+        "pass_key": "ok",
+        "timeout_seconds": 60.0
+      }
+    }
+  }
+}

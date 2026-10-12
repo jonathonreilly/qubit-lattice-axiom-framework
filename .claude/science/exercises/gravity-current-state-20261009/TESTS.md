@@ -5367,3 +5367,34 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Proposed corrections, if refereed:** S17's "T₂g never zeroed" and P63(i).
 
   Referee running.
+
+### C5 Round 16, item 9 (pre-registered 23:10Z, before launch)
+
+**R16-9. One law, every cone: can one subluminal edge family meet the photon, the electron and the graviton cones together, and the shear condition? What is the total bill?**
+- **Plain question.** Round 16 so far gives:
+  - one tuning per (spin, |q|) class for charged matter against the photon (R16-2, worker);
+  - two edge tunings per edge for the graviton's E_g and T₂g on a zigzag edge (R16-3, worker);
+  - one shape condition for the shear (R14-3; P62).
+
+  These were each found on different edges. Do they fit on one law? Or do the conditions conflict? R16-3 finds no common zero with P62, and the zigzag raises μ_E.
+- **Setting.**
+  - One subluminal edge family per spin (Dirac D1/zigzag hybrids, and G(b)/zigzag for scalars), with |σ′| ≤ 1 and whole-zone v_max stated.
+  - Peierls photon; R9-9's graviton vertex with the assumed W1; zero-point vacuum supplied.
+  - One loop; m ≤ 0.3; light-mass limit.
+  - Counterterms counted as in R16-2.
+- **Prior art (count once):** R16-1, R16-2 and R16-3 (workers or referees as available), R14-3 (P62), R13-5, R13-8, S17's P61–P73.
+- **Probes.**
+  - (a) Within the stated family, find the minimal number of continuous knobs that zero, at a common light mass:
+    - E_g and T₂g (both vertices, or state which);
+    - μ_E;
+    - the charged-matter Δ(0⁺) per class.
+
+    Otherwise show that a pair of conditions is incompatible in the family (checked, with a scan).
+  - (b) The total count of tunings for SM content, in R13-8's rows.
+  - (c) The whole-zone v_max and the hopping tails of the resulting law.
+  - (d) Prices.
+- **FIXED readings.**
+  - **JOINT:** an explicit law with every listed condition met at a common light mass to stated precision, checked, with the count.
+  - **CONFLICT:** a demonstration, refereed if class-wide, that two listed conditions cannot both hold in the stated family.
+  - **OPEN:** otherwise.
+- **Expectation.** JOINT without P62 and with a count of about 5–6. CONFLICT or OPEN with P62.

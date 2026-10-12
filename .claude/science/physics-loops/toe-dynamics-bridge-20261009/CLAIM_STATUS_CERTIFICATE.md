@@ -22,3 +22,13 @@ failures and survivors remain bound. New mathematics is authorized; Lean may
 assist scoped future obligations, but no new analytic Lean certificate is claimed.
 
 No applied audit, physical axiom, editable prompt/skill, science merge or main push.
+
+
+## Checkpoint 2026-10-12T09:44:15.737549+00:00
+
+Root author evidence reads for scattering and continuum complete at the scopes and
+hashes in HANDOFF. Fresh scattering review finished, final root binding/row checks
+pending; continuum review completing. Massive preparation executed with633newfiles,
+no mathematical changes, runtime verifier pending. New actual local-even continuum
+proof active. No new retained/audit/Lean status. Prior failures and finite-suite
+survivors preserved. No editable prompt changes. Source refresh09:27 unchanged.

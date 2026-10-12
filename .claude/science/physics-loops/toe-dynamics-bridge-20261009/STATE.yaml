@@ -13,8 +13,8 @@ base_revision: 3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Review actual complete chosen-GNS scattering and continuum group limit of the checked supplied chain;
-  package accepted massive carrier.
+active_route: Derive a local even-observable continuum limit; integrate full supplied-chain scattering and continuum
+  reviews; extend9488 with checked massive carrier.
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
@@ -23,22 +23,23 @@ milestone: Eleven regular PRs open; PR9488 publishes five reviewed boost/gap/clo
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
-independent_checks: 'Ten recent sources accepted conditionally: three in9486, five in9488, concrete full-spin chain
-  and massive carrier. New actual-chain scattering and continuum proofs remain candidates under fresh checks.'
+independent_checks: Concrete chain and massive carrier root accepted. Scattering author fully checked and fresh
+  review finished, root integration pending. Continuum author checked, fresh review completing. Local even-observable
+  proof underway.
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_open
-active_pr_status: Regular PR9488 open/attached, BW clean/pushed at358fdf795a5504d4d7fd13344bbbd5df5504ebea. Complete
-  canonical/mutation/graph/staged checks; no merge or applied audit.
+active_pr_status: Regular PR9488 open/attached at358fdf795a5504d4d7fd13344bbbd5df5504ebea. BW now has633 newly prepared
+  massive-carrier files; canonical verification and extension still pending.
 active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9488
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
 lock_refresh_before_utc: '2026-10-12T10:50:00Z'
-next_action: Finish scattering author evidence and fresh review; complete continuum controls and assign fresh review;
-  root read both full analytic freezes. Read/execute massive-carrier mechanical preparation then extend9488. Package
-  coherent checked supplied-model milestone; continue ranked discoveries through fixed deadline.
+next_action: Finish source-bound scattering/continuum review integration; execute prepared one-note massive verifier
+  then extend9488. Review local-even derivation with a fresh checker. Prepare coherent actual-model milestone; continue
+  through fixed deadline.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9

@@ -230,3 +230,13 @@ root evidence coverage support its conditional theorem without source repair.
 Scattering611line and continuum819line proofs are full root-read author candidates,
 still under fresh checks. Continuum resolution failures remain. No retained status,
 draft, merge, main push, prompt/skill or physical axiom edit.
+
+
+## Checkpoint 2026-10-12T09:44:15.737549+00:00
+
+Root author evidence reads for scattering and continuum complete at the scopes and
+hashes in HANDOFF. Fresh scattering review finished, final root binding/row checks
+pending; continuum review completing. Massive preparation executed with633newfiles,
+no mathematical changes, runtime verifier pending. New actual local-even continuum
+proof active. No new retained/audit/Lean status. Prior failures and finite-suite
+survivors preserved. No editable prompt changes. Source refresh09:27 unchanged.

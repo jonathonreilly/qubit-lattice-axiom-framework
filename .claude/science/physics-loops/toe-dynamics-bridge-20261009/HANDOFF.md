@@ -1,6 +1,6 @@
 # Current campaign recovery checkpoint
 
-Actual checkpoint: 2026-10-12T09:12:40.485219+00:00. Campaign starts2026-10-11T16:00:52Z
+Actual checkpoint: 2026-10-12T09:44:15.737549+00:00. Campaign starts2026-10-11T16:00:52Z
 and ends2026-10-12T16:00:52Z. Never extend. At deadline start no new research;
 preserve/checkpoint/report actual outcomes and limits, disable heartbeat
 toe-derivations-24-hour-campaign. Continue useful science until then. Regular PRs
@@ -10,15 +10,15 @@ Keep user-selected model/effort. Root alone handles Git and publication.
 T=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009
 S=T/resume_20261011 is the source/evidence store.
 Active BW=T/microscopic_boost_worktree, branch physics-loop/toe-microscopic-boost-20261012,
-clean/pushed HEAD358fdf795a5504d4d7fd13344bbbd5df5504ebea, regular PR9488,
+HEAD358fdf795a5504d4d7fd13344bbbd5df5504ebea, regular PR9488;633 new massive-carrier files prepared locally,
 base3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe in parentPR9486.
 SW=T/scattering_worktree remains clean3faf1cf, PR9486.
 QW=T/quantitative_boost_worktree clean433f641f24296b6d8e786930bb1327f434015162,PR9487.
 Primary /Users/jonreilly/Projects/Physics untouched.
 
 This directory in T/worktree, branch physics-loop/toe-nonlinear-transport-20261011
-(PR9478), is the sole current checkpoint. Prior exact checkpoint HEADfbf2d0ac036a4db4d05562436792ad32c5fea2a9
-is archived in history/20261012T091240Z_*.gz. Earlier083702/075936/072753/070942/062942/052848/033625
+(PR9478), is the sole current checkpoint. Prior exact checkpoint HEADcb25a7bc75a4de8f58d5f413e9d9953a6150fff2
+is archived in history/20261012T094415Z_*.gz. Previous091240 archives remain. Earlier083702/075936/072753/070942/062942/052848/033625
 archives preserve complete prior identities/failures. Frozen milestone and
 author/reviewer packets are not alternative current campaign checkpoints.
 
@@ -29,21 +29,17 @@ codex-toe-native-20261011 --ttl-hours 2. Do not change owner.
 
 ## Current sources and ownership
 
-Fresh fetch/read09:02:10UTC: S/repo_sync_0905.json and sync_0905*fullstreams/receipts.
-Maina13caa4885f547c8d206265b031ba7649e539fd9 and planning
-3a4b2c66a1ead7a1c48b4359627e968f681e3c39 unchanged. Current instruction hashes
-unchanged from fully read083702 checkpoint, exact identities in repo_sync_0905.
-Reuse applicable skills/instructions at those identities. CAMPAIGN content gate
-requires200-400word OPEN/BACKLOG pass after paired readiness; root isolated pass
-allowed, no hard PR cap. Bounded delegation authorized; no model/effort override.
-
+Fresh fetch/read09:27:43UTC: S/repo_sync_0930.json and repo_sync_0930_open_prs.json,
+full commands/streams/receipts in repo_sync_0930/. Maina13caa4885f547c8d206265b031ba7649e539fd9
+and planning3a4b2c66a1ead7a1c48b4359627e968f681e3c39 unchanged. All instruction
+identities unchanged; reuse complete prior reads. Content gate requires200-400word
+OPEN/BACKLOG pass after paired readiness for a new PR; root isolated pass allowed.
+Bounded delegation authorized, no model/effort override.
 PR9475fe9008f80d68fb851b20399241f34c6203ed8281,
 9476a2153dbddb720dc595b0037e42277a54d39f643e,
-9477cb806217e0d0d61d993a98afa5ea88731e531128 unchanged. Root read complete latest
-158line partner-rank note at0835; no current/boost/scattering overlap, no runner
-audit or proof import. Prior ownership reads remain bound. Snapshot had16open
-before9488 creation, none closed.9488 verified regular/open; mergeabilityUNKNOWN
-at observation is not a merge-readiness claim.
+9477cb806217e0d0d61d993a98afa5ea88731e531128 unchanged. Root's prior full158line
+partner-rank note read remains valid; no current/boost/scattering/local-observable
+overlap.17open, noneclosed; onlyour9488creation and9478checkpoint changed.
 
 ## Published campaign milestones
 
@@ -191,49 +187,80 @@ boost domain and ambient Sobolev bound. DirectCentreM37 retains isolated mass.
 Actual central rates/dense filtered creators/intended3Dmodel remain open.
 Do NOT apply exact-Lie carrier to concrete finite chain with known closure failure.
 
-Agent regularity_joint_packaging now owns only UNEXECUTED
-S/prepare_massive_carrier_publication.py and S/massive_carrier_publication_preparation/.
-It prepares one complete note/primary/packet to EXTEND9488; no BW/Git/science
-execution. Root must read entire preview/maps/script before executing.
+Massive publication preparation is now EXECUTED, source
+S/prepare_massive_carrier_publication.py0fecf1c5bf705e1a27932a95a020d091d06116380141cd9a373046169b616b8e,
+freeze b9e30197ebcc99e02508a9fb0531d960b5da2cecde08016058e658aa6cadc15e.
+Root fully read316line program before pin plus final one-line pin diff; complete
+note/primary diffs and16templates;19specification records matched losslessly to
+already-read originals by publication_root_reads/check_massive_specs.py.
+SPECIFICATIONSec0644e765c9a45400248ebc641b7ca922c612c625101ff1e7e0a55c928cb8af.
+Broad inventory displays were truncated; the specification duplication was
+repaired by complete field/row/source comparison; no complete inventory manual
+read is claimed. Static summaries plus finalREADY/contract were fully read.
+Run09:41:38.210048UTC,1.178084916sec,exit0,60sec bound,
+S/massive_carrier_root_preparation_execution/receipt.json/fullstreams/program.
+633newfiles,607own-evidence snapshots,4externalrawPDFs;10adminedits, no math change.
+New note ba17b6881ec6e84d83a6c6d76ad57cc8200a07c8ded094ec11df79a3291fd18b,
+primary cca0ccd5a0137bc76909612c44090cce7b300c567f938e13e8554dcb1845a35c.
+Agent regularity_joint_packaging owns only UNEXECUTED one-note verifier preparation
+verify_massive_carrier_publication.py and massive_carrier_publication_verification_preparation/.
+Root must inspect it and execute one84predicatecanonical/eightoriginalvariants;
+FULL INNER before outer identity and OUTER before inspection; exact full outputdict
+and stdout, no version/diagnostic map approved. Do not rerun fiveoldnotes. Root then
+graph+1/+4,focusedcompatibility,reconstruction,vocab,finalread,extend9488.
 
-## Active actual-model derivations
+## Current actual-model derivations and review queue
 
-Scattering author massive_boost_carrier FINISHED: final
-S/GAPPED_CHAIN_SCATTERING_PROBE.md92dcdbce72b8bd57fd4b7e4e661a9f9e34e815b312df7f0c6e360cd8ef5c9f92;
-receiptb97509a4668178861261a6222dea43585d920366091fc076f17049f51af88ab0;
+Scattering author final716lines92dcdbce72b8bd57fd4b7e4e661a9f9e34e815b312df7f0c6e360cd8ef5c9f92,
+receiptb97509a4668178861261a6222dea43585d920366091fc076f17049f51af88ab0,
 manifest2f616be16e2651b6e2d428d2d40bcd2283e1d5bc8634406f09b8bb37a9b24148.
-Analytic611line freeze801a25591d53a2e9b22c3bac35e92d7e6ee58a0f319baba44dc3bdbc25f00f1b
-root FULL READ; final evidence appendix/root helper/results read still pending.
-Claims actual odd inverse-spin-automorphism creators, exact dense1p columns,
-positive transfer filters, full-lattice tails, all-n cone signs and all-branch
-velocity null/density; ontoWout=M_epsilon,Win=(-1)^pairsM_epsilon,S_n=(-1)^pairsI
-in chosen supplied1DGNS only. Author reports95baseline rows,9whole mutants
-reject,109changed+746unchanged rows,154files21receipts; root must verify.
-Fresh gapped_chain_scattering_review is active and has final identities.
-Its pre-control analytic reconstruction09:03:56UTC:
-2d51c3c1753664494fb0775e8859e5a54ffcb576f68a51a7fcb3ade745cb064c.
-Same-family separate context; root coauthor. Acceptance remains pending.
+Root author coverage complete cc031b2f0a2587dd80fdbb4d7ba2bdd489b8d650b4636a4c06d7486c63af6532;
+all95baseline109changed746unchanged rows/21receipts154bindings950numericgates
+read/verified in root_scattering_author_verification/. Full611proof read.
+Fresh GAPPED_CHAIN_SCATTERING_REVIEW.md0dcf6abf605070fb2c4c2525035e7afba93fe2929ba65eeddd815a8259ae2dcb,
+receipt3085fc32568ca71d38f6d32423e71082958c77b066480a161cf2e1134f33772a,
+manifestf6313cfbf8750af3dcad5c79d83ddeaa5a5c9d90b6299a8557412cb2f1f1c739.
+Root full review/reconstruction/science helpers read; remaining evidence/helpers
+and independent manifest verification PENDING. Reviewer no correction in scope.
+Actual odd almost-local spin creators, full-lattice tails, exact all-n cone signs,
+filtered replacement, noninjective velocity density yield onto chosen-GNS maps
+Wout=M_epsilon,Win=(-1)^pairsM_epsilon,S_n=(-1)^pairsI. Same-model-family/formula
+exposed, root coauthor. Exact insertion overlapsauthorroute; newfullmatrixcompact
+filter control is different. T20/40/80/160failsfixed1e-6,T3204.571e-9passes,
+allcutoffs saved. Deliberate incomingphaseonlyn8 survives95originalrows; separate
+256x256literalPauli/JW gives baseline squared error0/mutant4. Noall-n numerical
+certificate. Freshmutantsenergyhalf/pairdiagonal/filterdouble reject16/10/4.
 
-Continuum author gapped_continuum_limit active, owns
-GAPPED_CONTINUUM_LIMIT_PROBE.md and gapped_continuum_limit/.
-Root FULL READ819line analytic freeze:
-bef63d168ee16f70d36788154402342873a5295668674cba3c023d15a45c104e.
-Root specification188lines6849f63a704fe05d75cd48e3f2490e21c1d792003339fa64ce3975610f327dc2.
-Chosen familyg-J=m/2,gJ=v²/(4a²),q=k/a; actual
-b0a=i(Ea partial+Ea'/2)-aEa/2. Centered originO(a²), originalO(a) compact-packet
-group bounds; circle periodic/antiperiodic domains/winding, full line generator,
-moving graph-domain Duhamel, contraction comparison maps, strong finite words
-including actual integer shifts, full Fock lift/maximal sum closures.
-No local-net/field/uniform spin-localization/interacting/3D/parameter-selection
-claim. Fixed-a closure failure preserved; m/c=am/v changes old patch hypothesis.
-Candidate has no intentionally open internal lemma; fresh review still needed.
-Author controls active: N80 one-winding2.358e-8 fails fixed2e-9; two-particle
-quadrature norm error3.7e-7 preserved; resolution refinement with unchanged gates.
-No rigorous numeric certification is inferred from refined finite results.
+Continuum author final917lines617b9a1cbb541d6f207de89c10f1fbb2005fbb27f68e818f0c14a3fe67bf802d,
+receipt ece0fe6dabffa9e862ba48e5198cccb55e2b1606495f117f293a02031cdd680d,
+manifest34b5bfa9ff12bd1e4e51532a1a79379f7804510c83a91f5d3f5c9bb755d2fb56.
+Root full819analytic+98appendix/allhelpers read; author verification200bindings,
+26receipts23scientific/3tamper,1491numericgates. Coverage6326f211c8b5dfaa42acb56fa24501946b81d4308db7f9799f94c3f24bb9a32b.
+Fullbaselines,allhistoricalfailedgates/Fockrows, everymutantfailedpredicate/named
+weakerboundsurvivor read. All1491predicatesverified; notmanualread of everypassing
+mutantdiagnostic. g-J=m/2,gJ=v²/(4a²),q=k/a; actualboost includes-aEa/2.
+Periodic/antiperiodic winding, full-line domains, movingDuhamel, strongcontractive
+comparisons, actualintegertranslations,finitewords,fullFockmaximalTOTALsumdomains.
+CenteredcompactO(a²),originalO(a); nooperatornorm/globalFockfixedmass/netclaim.
+CircleN24/48/80failfixed2e-9,N1282.57e-13; Fock450oldnorm3.74e-7,
+added2e-10gate1000fails5.819e-10,2000passes1.8e-12. Alloldresults preserved.
+Ninewholemutants reject appropriatewitnesses but broadbound/unitarity/etc survivors
+explicit. Fresh gapped_continuum_review is completing; reconstruction prereg
+0c80e309df71d0b55edf8ea46f4d94988beaaa401caccfafc68123f26fa30ec4.
+Reviewer reports no analytic correction, new local8thorder finite-difference versus
+elliptic inversion; h=.01fails2e-7,h=.0025passesincludingwinding1.313e-7.
+These are reviewer messages, final root verification still PENDING.
 
-All active agents know BW advanced while their pinned sources/authorities remain.
-Next: complete fresh checks; extend9488 with massive theorem; create coherent
-actual-model/scattering/continuum milestone; refresh frontier queue and continue.
-No editable prompt/skill/axiom files changed. At fixed deadline stop research
-and disable heartbeat. One failed apply_patch while creating this updater wrote
-no file or checkpoint content; corrected source creation did not alter science.
+New local_even_continuum agent owns LOCAL_EVEN_CONTINUUM_PROBE.md and
+local_even_continuum/. Root lead ROOT_LOCAL_EVEN_CONTINUUM_LEAD.md161lines
+6ba018c16e86567a9e6d36921c384206f6f90ee886b1d9b30e206edc15d7be91.
+Route: actual finite even-JW spin operators, physical cell averages, local
+two-component Dirac consistency, spectral vacuum covariance/Pfaffian limits and
+finite-propagation even-CAR locality. Derive from concrete parent only; does not
+depend on pendingboostreview. Odd bilateralJW strings are notspinlocal; evenvacuum
+sector is evenFock, notfullspinGNS. Nofullspin scalingnet/boostnetcovariance/3D/
+interacting/frameworkparameterselection claim. Fullproof and freshreview pending.
+
+Root must next integrate both reviews, extend9488, package coherent suppliedmodel
+milestone, review localeven and refreshopportunities. Preserve failedroutes and
+continue untilfixeddeadline. Noeditableprompt/skill/axiomfileschanged.

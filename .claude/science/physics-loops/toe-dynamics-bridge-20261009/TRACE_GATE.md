@@ -21,3 +21,13 @@ Trace: upstream_support; reachability: partially_closes; target from user goal.
 Next action: check actual all-particle scattering and controlled continuum groups,
 then pursue the highest-value remaining physical premise. HANDOFF records exact
 sources, statuses, failed routes and recovery paths. No audit verdict is applied.
+
+
+## Checkpoint 2026-10-12T09:44:15.737549+00:00
+
+Root author evidence reads for scattering and continuum complete at the scopes and
+hashes in HANDOFF. Fresh scattering review finished, final root binding/row checks
+pending; continuum review completing. Massive preparation executed with633newfiles,
+no mathematical changes, runtime verifier pending. New actual local-even continuum
+proof active. No new retained/audit/Lean status. Prior failures and finite-suite
+survivors preserved. No editable prompt changes. Source refresh09:27 unchanged.

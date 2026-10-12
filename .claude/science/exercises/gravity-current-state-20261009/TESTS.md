@@ -4308,7 +4308,7 @@ Launch: R11-2 through R11-6 now; R11-1 after the R10-1 referee. Draft text verba
 
 Referee running (18:43Z).
 
-### C5 Round 11 worker readings awaiting referees (recorded 19:02Z)
+### C5 Round 11 worker readings awaiting referees (recorded 18:59Z)
 
 - **R11-2 (producing the graviton):** OPEN overall; (a) SUGGESTED. Candidate no-gos to the referee:
   - X1: exact commuting finite-slot constraints give ω_TT = O(k³), with dressing law ω ∝ k^{3−n};

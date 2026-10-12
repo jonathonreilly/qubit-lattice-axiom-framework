@@ -6,35 +6,38 @@ started_utc: '2026-10-12T16:42:30+00:00'
 deadline_utc: '2026-10-13T16:42:30+00:00'
 checkpoint_interval: 30m
 automation_id: toe-derivations-24-hour-campaign
-active_branch: physics-loop/toe-finite-energy-20261012
-worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/finite_energy_worktree
+active_branch: physics-loop/toe-energy-correlations-20261012
+worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree
 checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
 base_revision: 516cb69d8487ff04f8a48e065d3dcbe71d7dd237
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Finite-energy PR9499 published; transfer/correlation synthesis and exact-source review
-cycle: 2
+active_route: Prepare regular correlation/phase milestone; bounded interaction comparison and independent ground-selection
+  derivation
+cycle: 3
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: First renewed regular PR published; second coherent science milestone being assembled
+milestone: Finite-energy PR9499 published; exact957-line correlation assembly reviewed; two-note package preparation
+  ongoing
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
-independent_checks: Transfer, normality and phase reviews complete and fully read by root. Conditional outcomes
-  accepted with source-exposed/same-model limits; exact assembled synthesis review pending.
+independent_checks: Correlation assembly343-line review complete and root fully read after two recovered stream
+  failures. Transfer/normality/phase earlier checks reused exactly. Bounded-interaction467-line independent core
+  read; subsequent crosscheck underway. New ground-selection independent core being derived without root exposure.
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_closed_by_concurrent_activity
-active_pr_status: regular_OPEN_isDraft_false; creation-time mergeability UNKNOWN
-active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9499
+active_pr_status: correlation branch not yet published; finite-energy regularPR9499 remains OPEN
+active_pr_url: null
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
 lock_refresh_before_utc: '2026-10-12T18:30:00+00:00'
-next_action: Inspect final synthesis after freeze; bounded local interaction independent derivation newly assigned
-  to dyadic_even_refinement while root derives separately.
+next_action: Inspect frozen correlation/phase preparation once complete; root acceptance and bounded source validation;
+  read bounded-interaction crosscheck and independently frozen ground-selection result when ready.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -59,8 +62,8 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-12T17:43:10.560115+00:00'
-latest_source_refresh: '2026-10-12T17:25:51+00:00'
+checkpoint_utc: '2026-10-12T18:13:00.930394+00:00'
+latest_source_refresh: '2026-10-12T17:54:18.183766+00:00'
 latest_other_pr: No other open PR at latest prepublication list. Prior9476/9498/9494 closed; prior gravity/chiral
   ownership remains distinct.
 supplied_chain_published_science_revision: 62d316633190ad2198fdfa91fc52192551990034
@@ -94,7 +97,7 @@ energy_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fra
 energy_adapted_published_science_revision: f85656c1766536299c8bafdb91db6dd1dfbd5e2d
 campaign_status: active_user_authorized_renewal
 automation_status: ACTIVE
-active_head: 173c0d4d281bb67c7795f6bf87d4d25c2b2ed2d3
+active_head: 516cb69d8487ff04f8a48e065d3dcbe71d7dd237
 sharp_current_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9497
 sharp_current_published_science_revision: 7c0570a4a20a768349f3d88960303f8637e7fe33
 current_preserving_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9498
@@ -123,3 +126,8 @@ finite_energy_published_science_revision: 173c0d4d281bb67c7795f6bf87d4d25c2b2ed2
 root_normal_limit_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOW_ENERGY_NORMAL_LIMIT_ROOT_PROBE.md
 root_phase_rate_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOW_ENERGY_PHASE_RATE_ROOT_PROBE.md
 science_synthesis_worker: energy_transfer_synthesis
+root_bounded_interaction_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/BOUNDED_LOCAL_INTERACTION_ROOT_PROBE.md
+root_ground_selection_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_GROUND_SELECTION_ROOT_PROBE.md
+scoped_lean_status: Four exact finite Clifford algebra declarations compile; corrupted sign and factor-of-two proofs
+  rejected. No functional-analysis formalization. See bounded_interaction_lean/SEAL.json.
+previous_checkpoint_commit: c92d4615f0b21e6ead2080fd68ec73192063b7b7

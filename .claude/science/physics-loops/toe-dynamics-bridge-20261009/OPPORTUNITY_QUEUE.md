@@ -1,9 +1,9 @@
 # Current opportunity queue
 
-1. Complete exact-final-source review of the combined energy-transfer/correlation synthesis. Preserve explicit constants, domains, partial-trace versus projection distinctions and the same-model limits.
-2. Publish the direct ordinary L2-cell subsequential correlation theorem using Current C25 and normal CAR compactness, without extra transfer restrictions. Full low Fock, not fixed even-vacuum sector; no unique selected state.
-3. Complete root inspection of the checked sharp phase-rate bounds. Their resource-uniform meaning must remain separate from fixed-observable rates.
-4. Investigate stability under supplied uniformly bounded local even interactions. A bounded-perturbation theorem is not an extensive interacting continuum or new physical axiom.
-5. Explore stronger state selection or longer-time/growing-word regimes only with explicit hypotheses. Translation invariance at finite total energy may be overly restrictive; do not manufacture a physical selector.
+1. Finish root wrapper/driver review and bounded source validation for the regular correlation/phase milestone. Exact957-line proof and phase core have completed scoped checks. No fabricated mathematical runner.
+2. Complete bounded-local-interaction comparison, including domains and exact limiting energy; prepare one coherent interacting milestone after useful ground-selection result or clear independent outcome.
+3. Test the separately derived candidate all-spacing ground-state selection theorem for uniformly small bounded even potentials. Critical step: common-space zero-extended norm-resolvent convergence, then simple gap/projectors. Vanishing excess energy is an additional state condition.
+4. Investigate what extensive interactions need beyond bounded total CAR potentials. CAR weak limits alone may not control dynamics depending on escaping particles; require a concrete local criterion or preserve a matching counterexample. Do not simply rename a bounded perturbation as bulk physics.
+5. Longer times/growing words or state-selection mechanisms remain available only with explicit inputs. Translation-invariant finite-total-energy classes can be overly restrictive; do not manufacture a selector.
 
-Completed first renewal milestone: regular PR9499, current-main base516cb69d. Conditional supplied1D model scope; no3D/gravity/TOE closure. Fixed deadline2026-10-13 16:42:30UTC. Preserve failed routes and counterexamples.
+Fixed renewed deadline2026-10-13 16:42:30UTC. Main516cb69d verified17:54. One published regular PR9499; no science/audit landing by this author. Preserve all counterexamples and exact sources. Counts are bookkeeping, not progress evidence.

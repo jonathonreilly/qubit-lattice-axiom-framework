@@ -560,8 +560,47 @@ None of them yet produces the graviton or explains Λ. Round 2 tests what decide
 - **Set A's gravity.** If records are sudden and real, gravity has to respond to them.
   - **E3** is the one explicit route that survives the checks: the records are definite configurations, guided along a preferred time slicing. The slicing is the price.
   - The others (metric jumps, classical-quantum gravity, dressed collapse, reservoirs) are open.
-  - The simplest classical-quantum version is excluded by 32 orders of magnitude.
+  - The simplest classical-quantum version is excluded by 32 orders of magnitude. *(Corrected 2026-10-12, R6-4 referee: that bound came from an invalid step in the published paper and falls. Only unsmeared point-particle coupling is excluded; gravity smeared over 1e-10 to 5e-6 m survives. See §23.)*
 - **Also settled in round 2:**
   - A positive local Euclidean weight gives the wrong light bending (γ ≤ ½).
   - Snyder's curved momentum space cannot couple to a graviton.
   - Reflection positivity plus strict permanence of records forbids ongoing record formation, for one class of rules.
+
+## 23. Campaign C5, rounds 4–7: what broke and what held (2026-10-12)
+
+**In plain words** (referee-checked unless noted):
+
+**First positive result against the boost wall.**
+- A lattice law can carry relativity exactly for every momentum inside a "box", up to a fixed boost limit (R7-1, PASS WITH SCOPE). On a Planck grid that limit is about rapidity 45 for a proton, far beyond any cosmic ray.
+- The trick is to make the energy exactly √(m² + k²) inside the box and bend it back smoothly outside. Couplings then fall faster than any power, but not exponentially.
+- It escapes every earlier no-go by dropping one of their assumptions:
+  - relativity on all momenta;
+  - boosts of any size;
+  - analytic bands.
+- **Not yet shown:**
+  - interacting particles (the two-body version has errors to repair);
+  - particle creation and loops;
+  - gravity's local constraints.
+- **It costs a universality problem.** The edge modes that carry the lattice's anomaly cannot be kept from gravitating.
+
+**Exact momentum works for fermions, not yet for qubits.**
+- A fermion law on a 2D grid conserves an exactly additive momentum in genuine collisions (R6-1). This is SUGGESTED overall, because the fixed class asked for one qubit per site and fermions compose differently.
+- **DERIVED in every dimension:** no finite-range qubit rule can be a continuous version, or a root, of the one-site shift.
+
+**Records as the classical metric survive.** Gravity that stays classical, sourced by smeared mass density, fits every lab bound for smearing lengths between about 1e-10 and 5e-6 m (R6-4, VIABLE in its class). The published "32 orders of magnitude" exclusion came from an invalid step and falls. The prices are:
+- no graviton;
+- a Newtonian-only theory;
+- a preferred time slicing;
+- built-in decoherence and heating.
+
+**The Lorentz-random lattice is losing.**
+- A single copy has no long-distance law from finite rules (R4-1). The natural infinite rules fail too (R5-2), and particles made at single sites carry no momentum (R4-2, R5-1).
+- Putting the frame in superposition only helps if the frame is declared unobservable (R5-5).
+- Its event count fluctuates too little to give Sorkin's Λ: the fluctuation comes out too large, about 1e30 (R6-3).
+
+**Λ.**
+- Nothing in any rule set makes its average zero without tuning (R5-3).
+- The original sequestering rule would need a strongly curved universe.
+- "Records form until frozen" leaves the vacuum energy as a free constant.
+
+**Producing the graviton.** No set has a mechanism yet (R6-2: all OPEN). Holographic substrates help only for negative Λ, or remain unbuilt in 4D (R7-2).

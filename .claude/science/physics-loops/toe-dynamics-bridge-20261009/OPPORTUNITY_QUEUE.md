@@ -1,12 +1,12 @@
 # Current opportunity queue
 
-Updated 2026-10-12T21:31:47.501831+00:00. Exact source/status details are in STATE.yaml and HANDOFF.md.
+Updated 2026-10-12T22:14:27.062716+00:00.
 
-1. Publish checked response/pulse plus time-averaged transfer package on activechild, regularPR. Source review complete, package/program inspection pending.
-2. Independently resolve native whole even interval algebra spatial estimates at bounded physical lengths; candidate may remove the polynomial-resource bottleneck.
-3. Independently resolve compactBV source-work extension including singular-continuous derivative.
-4. Check prepared-state/pulse energy composition and joint weak-source scaling using exact work, not trace-energy inference.
-5. Package coherent spatial milestone from checked native/continuum clustering, local-ground stability and near-ground correlation controls after newalgebrascope decision.
-6. Correctedcells publication only when useful coherent downstreammilestone; do not claim fullresolventrateimprovement.
+1. Finish regular response/pulse and time-averaged transfer PR; exact source/program read, prepare/stage/verify pending.
+2. Complete source-exposed native entire local-algebra comparison, then coherent spatial milestone including ground stability and near-ground limits.
+3. Complete independent graph-energy preparation/pulse/word bounds with root-source barrier; compare only after freeze.
+4. Independently check prepared-pulse actual energy robustness and weak-source scaling from checked parents.
+5. Package checked general/BV pulse work with graph improvements if supported, without widening current response milestone.
+6. Shifted-cell approximation publication when coherent downstream use arises; no full resolvent-rate upgrade.
 
-No active openPR duplication. Physicalselection/3Dmicroscopicrealization/centralrates remainopen. No fabricated globalno-go closure or audit verdict.
+Current main/openPR refreshed. Physical selection/3D microscopic realization/central rates remain open. No new axioms, invented global no-go, audit verdict or duplicate active PR work.

@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/sphere_quantum_visibility_reflection_2026_10_12.py
+runner_sha256: cf57773d518b09544dfdb75e0aa91bc8f1a18786d6c895ff2b51955c240482dc
+input_fingerprint_sha256: 2fdfe9fb317e3036e24e4c3aa7b10887c2c587fb4be7369a20c9fec101008ac4
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.66
+status: ok
+----- stdout -----
+PASS outward_rational_arithmetic: {"predicates": 18}
+PASS transcendental_numerical_controls: "Numerical consistency only; rational remainders are in the proof."
+PASS harmonic_projection_reflection: {"max_error": 6.661338147750939e-16}
+PASS reflection_diagonal_and_multiplicity: {"computed": [1.0, -1.0, 1.125, 0.9375], "independent_polynomial_values": [1, -1, 1.125, 0.9375]}
+PASS signed_polynomial_trace_norm: {"computed_trace_norm": 1.5, "exact": "3/2"}
+PASS one_state_signed_clifford_sectors: {"max_error": 4.440892098500626e-16}
+PASS degree_three_exact_enclosure: {"a3_exact_interval": [{"decimal": "-0.0533073190610549261474522620306489864584081633", "denominator": "24500000000000000000000000000000000000000", "numerator": "-1306029316995845690612580419750900168231"}, {"decimal": "-0.0532814141525827411453359810509834812606918367", "denominator": "490000000000000000000000000000000000000000", "numerator": "-26107892934765543161214630714981905817739"}], "a3_numerical_only": "-0.053294538186869404855195773434769623262124040211523177025178519131", "k_interval": [{"decimal": "0.469614281068367802823263239573362701546", "denominator": "500000000000000000000000000000000000000", "numerator": "234807140534183901411631619786681350773"}, {"decimal": "0.4696142810683678028232632395733627015861", "denominator": "10000000000000000000000000000000000000000", "numerator": "4696142810683678028232632395733627015861"}], "quadrature_error": {"decimal": "0.0000129524542360889668367346938775510204081632653", "denominator": "102760448", "numerator": "1331"}}
+PASS sampling_density_and_weight: {"integral_abs_P3": {"decimal": "0.65", "denominator": "20", "numerator": "13"}, "range_bound": {"decimal": "5.55", "denominator": "20", "numerator": "111"}}
+PASS witness_and_conditional_error_bound: [{"B_interval": [{"decimal": "0.995906545474648934061604765891770266269245306", "denominator": "2450000000000000000000000000000000000000000", "numerator": "2439971036412889888450931676434837152359651"}, {"decimal": "0.995953174309898867065414071655168175625134694", "denominator": "122500000000000000000000000000000000000000", "numerator": "122004263852962611215513223777758101514079"}], "sample_bound": null, "visibility": {"decimal": "0.9", "denominator": "10", "numerator": "9"}}, {"B_interval": [{"decimal": "1.05123468688990720817613836399686861439531449", "denominator": "4900000000000000000000000000000000000000000", "numerator": "5151049965760545320063077983584656210537041"}, {"decimal": "1.05128390621600435968015929785823307427097551", "denominator": "245000000000000000000000000000000000000000", "numerator": "257564557022921068121639027975267103196389"}], "sample_bound": 469373, "visibility": {"decimal": "0.95", "denominator": "20", "numerator": "19"}}, {"B_interval": [{"decimal": "1.10656282830516548229067196210196696252138367", "denominator": "245000000000000000000000000000000000000000", "numerator": "271107892934765543161214630714981905817739"}, {"decimal": "1.10661463812210985229490452406129797291681633", "denominator": "12250000000000000000000000000000000000000", "numerator": "13556029316995845690612580419750900168231"}], "sample_bound": 108502, "visibility": {"decimal": "1", "denominator": "1", "numerator": "1"}}]
+TOTAL: PASS=9 FAIL=0
+
+----- stderr -----
+

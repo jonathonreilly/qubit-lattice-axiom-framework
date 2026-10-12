@@ -1,0 +1,23 @@
+{
+  "parent_pr": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9497",
+  "parents": [
+    {
+      "author_sha256": "0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd",
+      "available_at_review": true,
+      "claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "2311c445bffc809d3387089c0feb48892f15f535d889121664dabe49fa146b05",
+      "role": "Actual current normalization, actual even flow and spin/CAR realization."
+    },
+    {
+      "author_sha256": "7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b",
+      "available_at_review": true,
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "b5a8394a9d8c17bb9559597a68b061ad3872201ebf9793bd5c9f10b15ac2c6aa",
+      "role": "Chosen massive scaling, coefficient-energy/reality conventions and CAR norm."
+    }
+  ],
+  "repository_parent_head": "7c0570a4a20a768349f3d88960303f8637e7fe33",
+  "status": "bound_to_published_sharp_parent"
+}

@@ -494,3 +494,13 @@ every ordered height pair, every chirality coefficient has partner rank
 10. The swapped-dot coordinate is `0` and the scaled coordinate is `6`.
 It does not classify twice the cap of each ratio span, and it does not
 classify the 300-dimensional affine space. This is not an N-gate no-go.
+
+Cycle 66 prunes the reading that some chirality coefficient on the sum
+of both swapped-dot generators and twice the cap of each ratio span has
+a nonzero ten-kernel partner. On every ordered height pair, every
+chirality coefficient has partner rank 10. The swapped-dot coordinates
+cancel, and the transverse-sign coordinates cancel, so the swapped-dot
+coordinate is `0` and the scaled coordinate is `8`. It does not classify
+one swapped-dot generator plus twice the cap of each ratio span, and it
+does not classify the 300-dimensional affine space. This is not an
+N-gate no-go.

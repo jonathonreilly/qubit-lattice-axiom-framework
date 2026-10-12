@@ -1459,3 +1459,26 @@ gcd has degree 7 on (1, 2), (2, 1), and (3, 1), and degree 5 on the
 other three pairs. Twice the cap of each ratio span is outside this
 count. The ten-kernel coefficient span is not classified. The
 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 66
+
+claim_id: chiral_pair_both_swapped_dots_twice_each_cap_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: every ordered height pair; both swapped-dot generators plus twice the cap of each ratio span
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+On every ordered height pair, both swapped-dot generators plus twice
+the cap of each ratio span have swapped-dot coordinate 0, transverse-sign
+coordinate 0, scaled coordinate 8, and partner rank 10 at every chirality
+coefficient. The maximal-minor gcd is a nonzero constant. The pivot gcd
+has degree 4 on every pair. One swapped-dot generator plus twice the cap
+of each ratio span is outside this count. The ten-kernel coefficient span
+is not classified. The 300-dimensional affine space is not classified.

@@ -341,3 +341,10 @@ ratio span plus the cap of the other ratio span. Every chirality
 coefficient has partner rank 10. The swapped-dot coordinate is `0` and
 the scaled coordinate is `6`. It does not take twice the cap of each
 ratio span, and it does not classify the 300-dimensional affine space.
+
+Cycle 66 takes both swapped-dot generators plus twice the cap of each
+ratio span. Every chirality coefficient has partner rank 10. The
+swapped-dot coordinate is `0`, the transverse-sign coordinate is `0`,
+and the scaled coordinate is `8`. It does not take one swapped-dot
+generator plus twice the cap of each ratio span, and it does not
+classify the 300-dimensional affine space.

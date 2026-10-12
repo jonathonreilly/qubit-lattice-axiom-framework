@@ -1,0 +1,3 @@
+R9-3 script 1: packing operator B_b on cluster-translated states; m=0.30 kappa=0.25 lam=-3.00 P=0.00 conf=2+1 kc=[0.1, 0.15, 0.15] sk=0.050
+D =   10  Nq =   60  Nkf =    689  Nko =   217 : ||(B_b - 1)psi_D||/||psi|| = 1.2163e-09   [odd-G weight 3.326e-01; mu_b = 0.51527993]  [0 s]
+D =   80  Nq =   61  Nkf =   1514  Nko =   380 : ||(B_b - 1)psi_D||/||psi|| = 2.0317e-09   [odd-G weight 7.071e-01; mu_b = 0.51527993]  [1 s]

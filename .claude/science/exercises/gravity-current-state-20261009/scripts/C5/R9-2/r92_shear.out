@@ -1,0 +1,23 @@
+=== calibration against V3 (NN scalar, f = sin k, RN-L1 norm, zero-point omega/2) ===
+  m = 1.0: closed form (N=64) mu_E = +1.970388642e-03 ; direct flow (N=32) mu_E = +1.970388636e-03 ; V3 table (L=64): +1.970389e-03
+  m = 0.5: closed form (N=64) mu_E = +2.467156481e-03 ; direct flow (N=32) mu_E = +2.467156591e-03 ; V3 table (L=64): +2.467156e-03
+=== R8-2 universal box+edge stress: flow f = p = grad(eps^2/2) (forward T^{0i}); box b = 2.0, b2 = 3.1 ===
+  (F) R7-1/R8-2 class, empty Fock vacuum: E(e) = 0 identically -> mu_E = mu_T2 = 0 exactly (normal-ordered T annihilates |0>).
+  profile L m=0.3 d=2 vac=Z: mu_E = -6.134730e-01  (box part +3.4e-10, edge part -6.134730e-01; max|div v| on box 3.9e-07)
+  profile L m=0.3 d=2 vac=S: mu_E = +1.226946e+00  (box part -6.8e-10, edge part +1.226946e+00; max|div v| on box 3.9e-07)
+  profile L m=0.3 d=3 vac=Z: mu_E = -3.260493e-01  (box part +7.4e-11, edge part -3.260493e-01; max|div v| on box 4.2e-07)
+  profile L m=0.3 d=3 vac=S: mu_E = +6.520985e-01  (box part -1.5e-10, edge part +6.520985e-01; max|div v| on box 4.2e-07)
+  profile L m=1.0 d=2 vac=Z: mu_E = -3.312855e-01  (box part +3.2e-10, edge part -3.312855e-01; max|div v| on box 3.9e-07)
+  profile L m=1.0 d=2 vac=S: mu_E = +6.625710e-01  (box part -6.3e-10, edge part +6.625710e-01; max|div v| on box 3.9e-07)
+  profile L m=1.0 d=3 vac=Z: mu_E = -2.056527e-01  (box part +6.2e-11, edge part -2.056527e-01; max|div v| on box 4.2e-07)  [direct flow N=64: -1.910142e-01]
+  profile L m=1.0 d=3 vac=S: mu_E = +4.113054e-01  (box part -1.2e-10, edge part +4.113054e-01; max|div v| on box 4.2e-07)
+  profile G m=0.3 d=2 vac=Z: mu_E = +1.317098e-02  (box part -5.7e-14, edge part +1.317098e-02; max|div v| on box 4.4e-11)
+  profile G m=0.3 d=2 vac=S: mu_E = -2.634197e-02  (box part +1.1e-13, edge part -2.634197e-02; max|div v| on box 4.4e-11)
+  profile G m=0.3 d=3 vac=Z: mu_E = +9.048272e-03  (box part +1.3e-14, edge part +9.048272e-03; max|div v| on box 4.4e-11)
+  profile G m=0.3 d=3 vac=S: mu_E = -1.809654e-02  (box part -2.6e-14, edge part -1.809654e-02; max|div v| on box 4.4e-11)
+  profile G m=1.0 d=2 vac=Z: mu_E = +1.129005e-02  (box part -5.5e-14, edge part +1.129005e-02; max|div v| on box 4.4e-11)
+  profile G m=1.0 d=2 vac=S: mu_E = -2.258010e-02  (box part +1.1e-13, edge part -2.258010e-02; max|div v| on box 4.4e-11)
+  profile G m=1.0 d=3 vac=Z: mu_E = +7.976081e-03  (box part +8.6e-15, edge part +7.976081e-03; max|div v| on box 4.4e-11)  [direct flow N=64: +7.963880e-03]
+  profile G m=1.0 d=3 vac=S: mu_E = -1.595216e-02  (box part -1.7e-14, edge part -1.595216e-02; max|div v| on box 4.4e-11)
+  T_2g: div v = (1/2)(d/dkx p(ky) + d/dky p(kx)) = 0 identically -> J = 1 -> mu_T2 = 0 for every profile/vacuum (Liouville).
+runtime 1.2s

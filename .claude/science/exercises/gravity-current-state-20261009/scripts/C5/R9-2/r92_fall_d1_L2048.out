@@ -1,0 +1,17 @@
+L = 2048 ; m = 0.50, kappa = 0.40, plateau |P| <= 0.60 (c = 0 beyond 1.20), box |k| <= 2.6
+--- M_b = 0.85 (binding fraction f_B = (2m - M_b)/2m = 0.150), lam = -3.171512 ---
+  bound, at rest  P0=0.00      <H>=0.852110 V=-0.00000 | K-stress: w-1 = +2.00e-13, wP-1 = +0.00e+00, a/g - (-1+2V^2) = -2.00e-13, |N psi|/|H psi| = 4.9e-11, |J'psi - P psi|/|P psi| = 5.3e-10
+                               comparator (free-only stress, D1 = K0): wP = 1.257196  (<H0>/<H> = 1.257196)
+  bound, moving   P0=0.25      <H>=0.886833 V=+0.28190 | K-stress: w-1 = +2.29e-13, wP-1 = +4.88e-14, a/g - (-1+2V^2) = -2.29e-13, |N psi|/|H psi| = 1.6e-10, |J'psi - P psi|/|P psi| = 4.3e-10
+                               comparator (free-only stress, D1 = K0): wP = 1.239408  (<H0>/<H> = 1.239408)
+  [M_b = 0.85 done, 130s]
+--- M_b = 0.95 (binding fraction f_B = (2m - M_b)/2m = 0.050), lam = -1.680875 ---
+  bound, at rest  P0=0.00      <H>=0.951889 V=+0.00000 | K-stress: w-1 = +8.79e-14, wP-1 = -5.22e-15, a/g - (-1+2V^2) = -8.79e-14, |N psi|/|H psi| = 2.6e-11, |J'psi - P psi|/|P psi| = 3.1e-10
+                               comparator (free-only stress, D1 = K0): wP = 1.111111  (<H0>/<H> = 1.111111)
+  bound, moving   P0=0.25      <H>=0.983105 V=+0.25430 | K-stress: w-1 = +1.63e-13, wP-1 = +7.75e-14, a/g - (-1+2V^2) = -1.63e-13, |N psi|/|H psi| = 8.6e-11, |J'psi - P psi|/|P psi| = 2.5e-10
+                               comparator (free-only stress, D1 = K0): wP = 1.104539  (<H0>/<H> = 1.104539)
+  [M_b = 0.95 done, 304s]
+=== Eotvos eta between binding fractions (linear order in g) ===
+  bound, at rest  P0=0.00  M_b 0.85 vs 0.95: interacting stress eta = |delta_A - delta_B| = 1.12e-13 (deltas -2.0e-13, -8.8e-14) ; comparator (binding energy not gravitating) eta = 1.2337e-01
+  bound, moving   P0=0.25  M_b 0.85 vs 0.95: interacting stress eta = |delta_A - delta_B| = 6.57e-14 (deltas -2.3e-13, -1.6e-13) ; comparator (binding energy not gravitating) eta = 1.1508e-01
+runtime 304s

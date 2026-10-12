@@ -1,0 +1,3 @@
+real-time lapse evolution, L = 512, g = 2e-03, dt = 0.025, T = 4.0 (RK4)
+  M_b = 0.95, D1 = K : d<P>/dt|0 = -1.903766333e-03 ; -g<H> = -1.903778248e-03 ; -g<H0> = -2.115309292e-03 ; ratio slope/(-g<H>) = 0.999993741 ; Xddot_E/g = -1.000034 ; norm drift 2.0e-10  [134s]
+  M_b = 0.95, D1 = K0: d<P>/dt|0 = -2.115296032e-03 ; -g<H> = -1.903778248e-03 ; -g<H0> = -2.115309292e-03 ; ratio slope/(-g<H>) = 1.111104213 ; Xddot_E/g = -1.264563 ; norm drift 2.0e-10  [194s]

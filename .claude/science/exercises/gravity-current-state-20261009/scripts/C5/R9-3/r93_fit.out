@@ -1,0 +1,30 @@
+== r93_packing_cluster_b_2+1_P0.40_sk0.1.out  points: 10:7.71e-02 14:9.39e-02 20:8.39e-02 28:2.65e-02 40:1.17e-02 57:3.80e-03 80:5.65e-04 113:2.49e-04 160:9.64e-05 226:1.80e-05 320:2.12e-06 453:2.75e-07 640:2.96e-08
+  full range (above 3x floor): n=13 D=10..640 | power p=3.62 SSE=15.211 AICc=7.24 | super-poly c=1.75 beta=0.38 SSE=1.663 AICc=-18.07 | dAICc(power - super) = +25.31 | local slopes -0.6 0.3 3.4 2.3 3.2 5.6 2.4 2.7 4.9 6.2 5.9 6.5
+  tail range D >= 80: n=7 D=80..640 | power p=4.84 SSE=2.291 AICc=-0.82 | super-poly c=0.516 beta=0.53 SSE=0.255 AICc=-9.18 | dAICc(power - super) = +8.37 | local slopes 2.4 2.7 4.9 6.2 5.9 6.5
+== r93_packing_cluster_b_2+1_P0.60_sk0.1.out  points: 10:1.07e-01 20:1.05e-01 40:1.05e-02 57:2.96e-03 80:9.96e-04 113:2.27e-04 160:5.53e-05 226:9.75e-06 320:1.26e-06 453:2.05e-07
+  full range (above 3x floor): n=10 D=10..453 | power p=3.63 SSE=9.033 AICc=4.70 | super-poly c=1.99 beta=0.36 SSE=1.006 AICc=-12.96 | dAICc(power - super) = +17.66 | local slopes 0.0 3.3 3.6 3.2 4.3 4.1 5.0 5.9 5.2
+  tail range D >= 80: n=6 D=80..453 | power p=4.92 SSE=0.243 AICc=-11.24 | super-poly c=5.27 beta=0.25 SSE=0.039 AICc=-12.28 | dAICc(power - super) = +1.04 | local slopes 4.3 4.1 5.0 5.9 5.2
+== r93_packing_cluster_c_2+1_P0.40_sk0.1.out  points: 10:8.48e-02 20:9.47e-02 40:1.49e-02 57:4.77e-03 80:9.93e-04 113:3.91e-04 160:1.36e-04 226:2.08e-05 320:2.12e-06
+  full range (above 3x floor): n=9 D=10..320 | power p=3.12 SSE=7.625 AICc=4.51 | super-poly c=0.824 beta=0.48 SSE=1.082 AICc=-8.26 | dAICc(power - super) = +12.77 | local slopes -0.2 2.7 3.2 4.6 2.7 3.0 5.4 6.6
+  tail range D >= 80: n=5 D=80..320 | power p=4.40 SSE=0.911 AICc=1.49 | super-poly c=0.0319 beta=0.96 SSE=0.021 AICc=2.64 | dAICc(power - super) = -1.16 | local slopes 2.7 3.0 5.4 6.6
+== r93_packing_cluster_b_2+1_P0.40_approach.out  points: 40:2.76e-02 57:9.45e-03 80:2.54e-03 113:1.59e-03 160:4.88e-04 226:1.10e-04 320:1.49e-05
+  full range (above 3x floor): n=7 D=40..320 | power p=3.42 SSE=1.007 AICc=-6.57 | super-poly c=0.879 beta=0.45 SSE=0.371 AICc=-6.57 | dAICc(power - super) = -0.00 | local slopes 3.0 3.9 1.4 3.4 4.3 5.8
+  tail range D >= 80: n=5 D=80..320 | power p=3.74 SSE=0.819 AICc=0.95 | super-poly c=0.016 beta=1.05 SSE=0.034 AICc=4.98 | dAICc(power - super) = -4.03 | local slopes 1.4 3.4 4.3 5.8
+== r93_packing_cluster_b_2+1_P0.40_recede.out  points: 40:2.79e-02 57:8.64e-03 80:3.50e-03 113:1.51e-03 160:4.24e-04 226:6.71e-05 320:6.41e-06
+  full range (above 3x floor): n=7 D=40..320 | power p=3.82 SSE=1.891 AICc=-2.16 | super-poly c=0.256 beta=0.65 SSE=0.194 AICc=-11.09 | dAICc(power - super) = +8.93 | local slopes 3.3 2.7 2.4 3.7 5.3 6.8
+  tail range D >= 80: n=5 D=80..320 | power p=4.54 SSE=0.918 AICc=1.52 | super-poly c=0.0386 beta=0.94 SSE=0.008 AICc=-1.99 | dAICc(power - super) = +3.51 | local slopes 2.4 3.7 5.3 6.8
+== r93_packing_cluster_b_2+1_P0.40_sk0.05_fine.out  points: 57:1.05e-02 80:5.53e-04 113:1.46e-05 160:5.14e-06 226:1.84e-07 320:5.55e-09 453:6.13e-11
+  full range (above 3x floor): n=6 D=57..320 | power p=8.05 SSE=1.826 AICc=0.86 | super-poly c=49.2 beta=0.10 SSE=1.825 AICc=10.86 | dAICc(power - super) = -10.00 | local slopes 8.7 10.5 3.0 9.6 10.1
+  tail range D >= 80: n=5 D=80..320 | power p=7.90 SSE=1.764 AICc=4.79 | super-poly c=4.11 beta=0.34 SSE=1.442 AICc=23.78 | dAICc(power - super) = -18.99 | local slopes 10.5 3.0 9.6 10.1
+== r93_packing_cluster_b_2+1_P0.40_gauss.out  points: 10:6.19e-02 20:1.21e-01 40:8.25e-02 57:1.68e-02 80:4.29e-04 113:1.99e-07 160:3.56e-11 226:4.14e-11 320:4.67e-11
+  full range (above 3x floor): n=6 D=10..113 | power p=4.28 SSE=58.275 AICc=21.64 | super-poly c=9.85e-05 beta=2.50 SSE=0.948 AICc=6.93 | dAICc(power - super) = +14.71 | local slopes -1.0 0.6 4.5 10.8 22.2
+  tail range D >= 80: too few points (2)
+== r93_packing_cluster_b_centre_P0.40.out  points: 10:3.72e-02 20:5.17e-02 40:2.34e-02 80:1.64e-04 160:9.02e-07 320:7.78e-10 640:2.06e-12
+  full range (above 3x floor): n=6 D=10..320 | power p=5.20 SSE=36.491 AICc=18.83 | super-poly c=0.326 beta=0.72 SSE=4.258 AICc=15.94 | dAICc(power - super) = +2.89 | local slopes -0.5 1.1 7.2 7.5 10.2
+  tail range D >= 80: too few points (3)
+== r93_packing_cluster_b_2+1_P0.40_gs2.out  points: 40:1.43e-02 57:1.12e-02 80:1.03e-02 113:7.13e-03 160:3.78e-03 226:1.31e-03 320:1.94e-04 453:1.19e-05
+  full range (above 3x floor): n=8 D=40..453 | power p=2.64 SSE=8.275 AICc=6.67 | super-poly c=0.000886 beta=1.48 SSE=0.032 AICc=-32.23 | dAICc(power - super) = +38.90 | local slopes 0.7 0.2 1.1 1.8 3.1 5.5 8.0
+  tail range D >= 80: n=6 D=80..453 | power p=3.77 SSE=3.614 AICc=4.96 | super-poly c=0.0013 beta=1.42 SSE=0.013 AICc=-18.92 | dAICc(power - super) = +23.88 | local slopes 1.1 1.8 3.1 5.5 8.0
+== r93_packing_cluster_b_2+1_P0.40_gs0.5.out  points: 40:7.06e-03 57:3.61e-03 80:2.06e-03 113:5.97e-04 160:2.98e-04 226:1.29e-04 320:4.39e-05 453:1.89e-05 640:6.93e-06
+  full range (above 3x floor): n=9 D=40..640 | power p=2.54 SSE=0.200 AICc=-28.24 | super-poly c=13.2 beta=0.11 SSE=0.110 AICc=-28.82 | dAICc(power - super) = +0.57 | local slopes 1.9 1.7 3.6 2.0 2.4 3.1 2.4 2.9
+  tail range D >= 80: n=7 D=80..640 | power p=2.67 SSE=0.073 AICc=-24.95 | super-poly c=15.5 beta=0.10 SSE=0.093 AICc=-16.26 | dAICc(power - super) = -8.70 | local slopes 3.6 2.0 2.4 3.1 2.4 2.9

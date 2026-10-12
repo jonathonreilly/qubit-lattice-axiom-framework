@@ -3846,10 +3846,6 @@ Expectation: INCONCLUSIVE, leaning FAIL. A product of plateaus is not a covarian
   The contact ansatz gives Γ/H ∝ (T/M_P)⁷, but its normalization, the broken-phase species composition, the cosmological evolution and the gauge-inert escape are not closed.
 - **Momentum.** Crystal momentum is conserved in the instantaneous model, and the A term is the anomalous conversion from canonical momentum to energy current. Claims about total field momentum or the energy centroid are open.
 
-**R9-4 (covariant CQ escapes):** worker readings: (i) EXCLUDED, (ii) EXCLUDED, (iii) OPEN, (iv) OPEN, with an n ≥ 3 correction to R8-3. Referee running.
-
-**R9-5 (box law on ⊗M₂):** worker reading PASS with scope. A Kitaev brick-wall long-range string law, exact in the flux-free sector at every particle number, with certified tails. Visons are static, and a plaquette term is needed. Referee running.
-
 ### C5 Round 9, items 8–9 (pre-registered 17:09Z; launched now)
 
 **R9-8. Non-minimal gauge-invariant couplings in box QED (the escape left by R8-5).**
@@ -3887,3 +3883,47 @@ Readings:
 - **PASS:** all properties are met in d = 2, with bound-body η exactly zero or below 1e-15 at linear order, and the spin coupling equal to GR's, checked.
 - **FAIL:** a refereed no-go for a symmetric, conserved stress with first moment K on the d = 2 box sector in a stated class.
 - **INCONCLUSIVE:** otherwise.
+
+### C5 Round 9 referee results, part 2 (recorded 17:31Z)
+
+**R9-2 (interacting box stress; bound-body fall; free shear) — CONFIRMED WITH CORRECTIONS. PASS WITH SCOPE in d = 1. (a) is SHEAR-ABSENT in the empty vacuum and SHEAR-PRESENT under a supplied zero-point completion.**
+- **The stress tensor.** Take R8-1's repaired graded-CAR two-particle BT law in d = 1, and correct the inverse-Fourier sign. The Weyl-midpoint density then gives a Hermitian, quasi-local stress with:
+  - ∫T⁰⁰ = H;
+  - energy dipole K;
+  - an exact global energy Ward identity;
+  - a momentum Ward identity after projection between plateau states, with a transition-shell source outside that scope.
+- **Bound bodies fall universally.** On the common invariant box domain this proves Ẍ_E = −g(1 − 2V²). So the linear-order Eötvös violation between equal-velocity bodies of different binding is exactly zero. The operator and real-time checks reproduce.
+- **Not established:** d = 2, or a globally source-free interacting stress.
+- **Free shear.** It is absent in R8-2's actual empty vacuum. A supplied scalar zero-point completion gives an edge-carried μ_E:
+  - −0.20565108 (literal edge) or +0.0079760558 (gapped edge), at m = 1;
+  - μ_T2 = 0;
+  - a profile-family zero at t* = 0.287922, i.e. an edge tuning.
+
+**R9-3 (Sokolov three-body) — CONFIRMED WITH CORRECTIONS. Literal reading FAIL, as a registration artefact. The physical question is INCONCLUSIVE.**
+- **The registration conflict.** Cluster separability necessarily leaves nonzero, un-subtracted spectator-channel limits for B − I and H_S − H_BT. So FIXED clauses (c) and (d) are incompatible as worded, and the literal reading is FAIL. This exposes a defect in the pre-registration, not in the physics.
+- **The physical question (subtracted tails, assembled operators) remains INCONCLUSIVE.**
+  - The tested B_b − I and B_c − I track smooth compact form-factor Fourier proxies, but no uniform super-polynomial operator bound follows.
+  - B, H_S and K_S were not assembled.
+  - Finite rings at P ≠ 0 need a discretization prescription.
+
+**R9-4 (covariant CQ escapes) — CONFIRMED WITH CORRECTIONS. All variants OPEN, with narrow EXCLUDED subclasses.**
+- **What is excluded.** Take translation- and Lorentz-invariant linearized Gaussian CQ models that admit a stationary linear-meter dilation (the condition under which (H-T) follows frequency by frequency), with a standard retarded G_R and one-sided cone limits:
+  - **(i) Spacelike-only noise** forces a response jump whose generic radiation contains (ln r)/r. EXCLUDED in that class.
+  - **(ii)** Scalar noise cannot pay for a GR-normalized spin-2 response, and additive repairs inherit R8-3. So literal and additive (ii) are EXCLUDED.
+- **(H-T) is not proved for general CP Gaussian CQ histories.**
+- **(iii):** OWD Eq. (27) is additive. Correlated, emission-cancelled histories remain open.
+- **(iv):** preferred-frame UV convergence needs integer n ≥ 3. This correction to R8-3 is confirmed. The near-cone kernel and cosmological inputs do not establish an allowed window.
+
+**R9-5 (box law on ⊗M₂) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.** The complementary sectors' global gap was not computed or bounded.
+- **The construction.** In d = 2 there is an explicit one-qubit-per-site brick-wall Pauli-string Hamiltonian with super-polynomially quasi-local interaction. Its simply connected flux-free invariant direct sum is exactly unitarily equivalent to R7-1's free Fock law, up to gauge-edge multiplicity and a constant.
+- **Consequence.** The undeformed Poincaré Lie algebra holds on the box domain at every finite particle number: even N in the vacuum representation, odd N in the ε representation.
+- **Visons.** Flux variables are exactly conserved, so vison configurations are static, and local spin operators can leave the flux-free subspace.
+- **The plaquette threshold.** Δ_v = 0 does not select the flux-free vacuum. The tested threshold is about 3.81e-3, but no bound covers every flux configuration.
+- **Evidential status.** The tail constants are numerical estimates. The non-forward T-matrix is strong but uncontrolled evidence for Lemma S's hypothesis.
+- **Reading.** A genuine sector-qualified qubit realization, not a PASS under the fixed clause.
+
+**R9-7 (two-loop complete crossings):** worker reading INCONCLUSIVE. Referee running (17:28Z).
+- The 24 orderings remove most of toy N's failure.
+- The registered completion P1 still fails: +4.8e-4 for bosons, −1.3e-2 to −3.6e-2 for fermions.
+- P2 closes exactly for bosons, but keeps no leg in the box.
+- The residual falls steeply with m/Λ in 1+1D.

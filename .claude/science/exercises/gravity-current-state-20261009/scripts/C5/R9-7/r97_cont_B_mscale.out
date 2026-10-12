@@ -1,0 +1,10 @@
+# R9-7 B: statistics B, mode mscale; masses {'X': 0.3, 'Y': 0.33, 'A': 0.37, 'B': 0.41, 'U': 0.29, 'C': 0.35, 'D': 0.43}
+P1 masses x1.0: G=401 p/m=1/3: m2_mix(0)=-1.073853e-02 rel=+4.7630e-04 c=rel/(p/m)^2=+4.2867e-03 | toyN-subset c=-5.3788e-02 | one-loop rel -1.0e-09  t=0s
+P1 masses x0.5: G=601 p/m=1/3: m2_mix(0)=-1.729636e+00 rel=+1.3637e-05 c=rel/(p/m)^2=+1.2273e-04 | toyN-subset c=-4.9923e-02 | one-loop rel -4.5e-12  t=2s
+P1 masses x0.25: G=801 p/m=1/3: m2_mix(0)=-1.383811e+02 rel=+2.4524e-07 c=rel/(p/m)^2=+2.2072e-06 | toyN-subset c=-4.9024e-02 | one-loop rel -8.7e-12  t=8s
+P3 masses x1.0: G=401 p/m=1/3: m2_mix(0)=-1.059137e-02 rel=+5.2350e-04 c=rel/(p/m)^2=+4.7115e-03 | toyN-subset c=-5.3788e-02 | one-loop rel -1.0e-09  t=9s
+P3 masses x0.5: G=601 p/m=1/3: m2_mix(0)=-1.728123e+00 rel=+1.6226e-05 c=rel/(p/m)^2=+1.4604e-04 | toyN-subset c=-4.9923e-02 | one-loop rel -4.5e-12  t=9s
+P3 masses x0.25: G=801 p/m=1/3: m2_mix(0)=-1.383747e+02 rel=+3.0251e-07 c=rel/(p/m)^2=+2.7226e-06 | toyN-subset c=-4.9024e-02 | one-loop rel -8.7e-12  t=11s
+P4 masses x1.0: G=401 p/m=1/3: m2_mix(0)=-3.372845e-03 rel=+2.5278e-02 c=rel/(p/m)^2=+2.2751e-01 | toyN-subset c=-5.3284e-02 | one-loop rel +1.4e-09  t=12s
+P4 masses x0.5: G=601 p/m=1/3: m2_mix(0)=-1.666721e+00 rel=+2.8788e-04 c=rel/(p/m)^2=+2.5909e-03 | toyN-subset c=-5.0950e-02 | one-loop rel +2.2e-08  t=14s
+P4 masses x0.25: G=801 p/m=1/3: m2_mix(0)=-1.379426e+02 rel=+2.6273e-05 c=rel/(p/m)^2=+2.3645e-04 | toyN-subset c=-4.9133e-02 | one-loop rel +3.3e-10  t=20s

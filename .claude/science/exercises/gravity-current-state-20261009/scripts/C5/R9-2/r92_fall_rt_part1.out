@@ -1,0 +1,9 @@
+real-time lapse evolution, L = 512, g = 2e-03, dt = 0.025, T = 4.0 (RK4)
+  M_b = 0.85, D1 = K : d<P>/dt|0 = -1.704209002e-03 ; -g<H> = -1.704219660e-03 ; -g<H0> = -2.142538972e-03 ; ratio slope/(-g<H>) = 0.999993746 ; Xddot_E/g = -1.000034 ; norm drift 1.0e-10  [110s]
+  M_b = 0.85, D1 = K0: d<P>/dt|0 = -2.142525520e-03 ; -g<H> = -1.704219660e-03 ; -g<H0> = -2.142538972e-03 ; ratio slope/(-g<H>) = 1.257188595 ; Xddot_E/g = -1.653217 ; norm drift 1.0e-10  [200s]
+Traceback (most recent call last):
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R9-2/scripts/r92_fall_rt.py", line 17, in <module>
+    lam, Kr, blocks = build(MU_B)
+                      ^^^^^^^^^^^
+  File "<string>", line 51, in build
+TypeError: 'numpy.ndarray' object is not callable

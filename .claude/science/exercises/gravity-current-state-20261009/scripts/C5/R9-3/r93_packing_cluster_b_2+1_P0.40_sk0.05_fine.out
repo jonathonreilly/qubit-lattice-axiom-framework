@@ -1,0 +1,8 @@
+R9-3 script 1: packing operator B_b on cluster-translated states; m=0.30 kappa=0.25 lam=-3.00 P=0.40 conf=2+1 kc=[0.1, 0.15, 0.15] sk=0.050
+D =   57  Nq =   60  Nkf =   3191  Nko =   301 : ||(B_b - 1)psi_D||/||psi|| = 1.0529e-02   [odd-G weight 7.070e-01; mu_b = 0.51527993]  [0 s]
+D =   80  Nq =   61  Nkf =   4035  Nko =   380 : ||(B_b - 1)psi_D||/||psi|| = 5.5287e-04   [odd-G weight 7.071e-01; mu_b = 0.51527993]  [1 s]
+D =  113  Nq =   79  Nkf =   5245  Nko =   493 : ||(B_b - 1)psi_D||/||psi|| = 1.4560e-05   [odd-G weight 7.071e-01; mu_b = 0.51527993]  [2 s]
+D =  160  Nq =  105  Nkf =   6968  Nko =   655 : ||(B_b - 1)psi_D||/||psi|| = 5.1391e-06   [odd-G weight 7.071e-01; mu_b = 0.51527993]  [3 s]
+D =  226  Nq =  142  Nkf =   9388  Nko =   882 : ||(B_b - 1)psi_D||/||psi|| = 1.8354e-07   [odd-G weight 7.071e-01; mu_b = 0.51527993]  [8 s]
+D =  320  Nq =  194  Nkf =  12835  Nko =  1205 : ||(B_b - 1)psi_D||/||psi|| = 5.5545e-09   [odd-G weight 7.071e-01; mu_b = 0.51527993]  [18 s]
+D =  453  Nq =  269  Nkf =  17711  Nko =  1663 : ||(B_b - 1)psi_D||/||psi|| = 6.1265e-11   [odd-G weight 7.071e-01; mu_b = 0.51527993]  [45 s]

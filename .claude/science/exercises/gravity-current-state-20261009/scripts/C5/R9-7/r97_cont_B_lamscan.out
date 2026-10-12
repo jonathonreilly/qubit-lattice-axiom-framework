@@ -1,0 +1,13 @@
+# R9-7 B: statistics B, mode lamscan; masses {'X': 0.3, 'Y': 0.33, 'A': 0.37, 'B': 0.41, 'U': 0.29, 'C': 0.35, 'D': 0.43}
+P1 Lambda1=1.0: one-loop rel(p=0.1) +4.0061e-11   two-loop all-24 rel(p=0.1) +4.7630e-04   toyN-10 rel -5.9764e-03  t=1s
+P1 Lambda1=2.0: one-loop rel(p=0.1) +2.7629e-11   two-loop all-24 rel(p=0.1) +1.3637e-05   toyN-10 rel -5.5470e-03  t=4s
+P1 Lambda1=4.0: one-loop rel(p=0.1) -4.6076e-11   two-loop all-24 rel(p=0.1) +2.4524e-07   toyN-10 rel -5.4471e-03  t=7s
+P3 Lambda1=1.0: one-loop rel(p=0.1) +4.0061e-11   two-loop all-24 rel(p=0.1) +5.2350e-04   toyN-10 rel -5.9764e-03  t=7s
+P3 Lambda1=2.0: one-loop rel(p=0.1) +2.7629e-11   two-loop all-24 rel(p=0.1) +1.6226e-05   toyN-10 rel -5.5470e-03  t=7s
+P3 Lambda1=4.0: one-loop rel(p=0.1) -4.6076e-11   two-loop all-24 rel(p=0.1) +3.0251e-07   toyN-10 rel -5.4471e-03  t=8s
+P4 Lambda1=1.0: one-loop rel(p=0.1) +1.5734e-10   two-loop all-24 rel(p=0.1) +2.5278e-02   toyN-10 rel -5.9204e-03  t=10s
+P4 Lambda1=2.0: one-loop rel(p=0.1) +1.4012e-08   two-loop all-24 rel(p=0.1) +2.8788e-04   toyN-10 rel -5.6611e-03  t=12s
+P4 Lambda1=4.0: one-loop rel(p=0.1) +2.4768e-09   two-loop all-24 rel(p=0.1) +2.6271e-05   toyN-10 rel -5.4592e-03  t=16s
+FF Lambda1=1.0: one-loop rel(p=0.1) +1.9419e-03   two-loop all-24 rel(p=0.1) +1.3820e-03   toyN-10 rel -4.4880e-03  t=16s
+FF Lambda1=2.0: one-loop rel(p=0.1) +2.5354e-04   two-loop all-24 rel(p=0.1) +1.2492e-04   toyN-10 rel -5.3320e-03  t=17s
+FF Lambda1=4.0: one-loop rel(p=0.1) +2.7161e-05   two-loop all-24 rel(p=0.1) +1.0036e-05   toyN-10 rel -5.4131e-03  t=18s

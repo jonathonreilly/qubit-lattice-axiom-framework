@@ -1,0 +1,5 @@
+L = 512, M_b = 0.85; T00_W = chi(Q) x Weyl-midpoint kernel of W
+  bound P0=0 @x=7 / bound P0=0.03 @x=4 zeroth: |<a|T(0)b> - <a|W b>| = 2.8e-17 (|<a|W b>| = 2.090e-01) ; first: d/dQ<a|T(Q)b> = +4.864213e-01-1.128716e+00j , i<a|(K-K0)b> = +4.864686e-01-1.128786e+00j , rel.diff 6.9e-05 ; herm 4.2e-15
+  bound P0=0.2 @x=-6 / mix P0=0.2 @x=-3 zeroth: |<a|T(0)b> - <a|W b>| = 9.8e-18 (|<a|W b>| = 6.905e-02) ; first: d/dQ<a|T(Q)b> = +1.750311e-01+2.566920e-01j , i<a|(K-K0)b> = +1.750534e-01+2.567247e-01j , rel.diff 1.3e-04 ; herm 1.0e-16
+  shell P0=0.85 @x=5 / mix P0=0.85 @x=9 zeroth: |<a|T(0)b> - <a|W b>| = 6.9e-18 (|<a|W b>| = 3.480e-02) ; first: d/dQ<a|T(Q)b> = +5.011019e-02+2.383303e-01j , i<a|(K-K0)b> = +5.011772e-02+2.383660e-01j , rel.diff 1.5e-04 ; herm 1.6e-15
+  chi-hat(r) (density profile about the pair centre): r=0: 4.8e-01, r=5: 4.2e-02, r=10: 3.4e-03, r=20: 6.5e-04, r=50: 2.8e-06, r=100: 9.0e-10, r=200: 2.7e-11, r=400: 6.1e-16

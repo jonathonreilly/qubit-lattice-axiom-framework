@@ -1,0 +1,6 @@
+M-best (opt3 M N16 b0.6) m=0.10: M Eg -5.332e-10 T2g -3.334e-09 | U Eg -1.567e-04 T2g +5.424e-04 | mu_E +3.0534e-03 | vmax 0.995196
+M-best (opt3 M N16 b0.6) m=0.03: M Eg +2.295e-04 T2g +8.903e-04 | U Eg +4.353e-05 T2g +1.209e-03 | mu_E +3.2213e-03 | vmax 0.999564
+   max|sp| 1.000000000  min edge g 0.0360  tails |eps_r| r=128 1.42e-05 r=256 5.46e-06 r=512 6.07e-07
+U-best (opt3 U N16 b0.6) m=0.10: M Eg -1.254e-03 T2g -2.663e-03 | U Eg +1.163e-10 T2g +4.590e-04 | mu_E +2.1345e-03 | vmax 0.995198
+U-best (opt3 U N16 b0.6) m=0.03: M Eg -1.128e-03 T2g -2.195e-03 | U Eg +1.403e-04 T2g +9.090e-04 | mu_E +2.2491e-03 | vmax 0.999564
+   max|sp| 1.000000000  min edge g 0.0362  tails |eps_r| r=128 6.84e-06 r=256 1.00e-06 r=512 3.48e-07

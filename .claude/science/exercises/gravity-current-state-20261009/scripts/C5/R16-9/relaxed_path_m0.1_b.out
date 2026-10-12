@@ -1,0 +1,113 @@
+grad check: [-0.005259 -0.004752 -0.018536] vs [-0.005259 -0.004752 -0.018536]
+b=1.20 lo=0.15 hi=1.20 m=0.1 smin=0.15: MIN mu_E +7.31054e-03 (Eg -4.0e-16 T2g -3.3e-16; status 8 nit 23) | fast mass 1.838 [0.45:0.592, 0.50:0.388, 0.15:0.051, 0.20:0.051] | flat mass 0.104 [0.96:0.051, 1.01:0.051, 1.06:0.002] (1s)
+b=1.20 lo=0.15 hi=1.45: no feasible point found
+b=1.20 lo=0.15 hi=1.70: no feasible point found
+b=1.20 lo=0.30 hi=1.20 m=0.1 smin=0.15: MIN mu_E +6.11655e-03 (Eg -5.5e-16 T2g -3.1e-15; status 8 nit 26) | fast mass 1.564 [0.50:1.076, 0.56:0.055, 0.35:0.051, 1.11:0.051] | flat mass 0.378 [0.76:0.051, 0.91:0.051, 1.06:0.051, 0.96:0.051] (6s)
+b=1.20 lo=0.30 hi=1.45 m=0.1 smin=0.15: MIN mu_E +7.83808e-03 (Eg -3.5e-16 T2g -7.0e-16; status 0 nit 22) | fast mass 1.743 [0.56:0.523, 0.50:0.355, 0.30:0.051, 1.42:0.051] | flat mass 0.198 [1.06:0.051, 1.11:0.051, 1.16:0.051, 1.01:0.038] (6s)
+b=1.20 lo=0.30 hi=1.70 m=0.1 smin=0.15: MIN mu_E +1.17423e-02 (Eg +1.2e-04 T2g -5.2e-16; status 0 nit 18) | fast mass 1.942 [0.71:0.549, 0.66:0.075, 0.30:0.051, 0.50:0.051] | flat mass 0.000 [] (13s)
+b=1.20 lo=0.30 hi=2.20: no feasible point found
+b=1.20 lo=0.45 hi=1.20 m=0.1 smin=0.15: MIN mu_E +5.96151e-03 (Eg -1.8e-16 T2g -3.0e-15; status 0 nit 28) | fast mass 1.503 [0.50:1.139, 0.45:0.144, 0.61:0.051, 0.56:0.051] | flat mass 0.439 [1.06:0.051, 0.86:0.051, 0.96:0.051, 0.81:0.051] (15s)
+b=1.20 lo=0.45 hi=1.45 m=0.1 smin=0.15: MIN mu_E +7.31798e-03 (Eg -3.5e-16 T2g -9.2e-16; status 0 nit 32) | fast mass 1.634 [0.56:0.614, 0.50:0.416, 1.42:0.051, 1.37:0.051] | flat mass 0.307 [1.01:0.051, 1.06:0.051, 0.96:0.051, 1.16:0.051] (15s)
+b=1.20 lo=0.45 hi=1.70 m=0.1 smin=0.15: MIN mu_E +9.46614e-03 (Eg -6.3e-16 T2g -1.0e-15; status 0 nit 22) | fast mass 1.810 [0.61:0.460, 0.56:0.317, 1.67:0.051, 1.62:0.051] | flat mass 0.132 [1.37:0.051, 1.32:0.051, 1.27:0.030] (16s)
+b=1.20 lo=0.45 hi=2.20: no feasible point found
+b=1.20 lo=0.60 hi=1.20 m=0.1 smin=0.15: MIN mu_E +7.40078e-03 (Eg +2.6e-04 T2g +6.6e-16; status 0 nit 15) | fast mass 1.422 [0.61:1.384, 0.66:0.037] | flat mass 0.520 [0.71:0.051, 0.76:0.051, 0.86:0.051, 0.91:0.051] (17s)
+b=1.20 lo=0.60 hi=1.45 m=0.1 smin=0.15: MIN mu_E +7.94799e-03 (Eg +1.4e-04 T2g -4.7e-17; status 0 nit 17) | fast mass 1.557 [0.61:1.131, 1.42:0.051, 1.37:0.051, 1.32:0.051] | flat mass 0.385 [1.06:0.051, 1.16:0.051, 0.91:0.051, 1.01:0.051] (18s)
+b=1.20 lo=0.60 hi=1.70 m=0.1 smin=0.15: MIN mu_E +9.31848e-03 (Eg +3.0e-05 T2g -1.1e-15; status 0 nit 24) | fast mass 1.750 [0.61:0.878, 1.67:0.051, 1.62:0.051, 1.57:0.051] | flat mass 0.191 [1.27:0.051, 1.37:0.051, 1.32:0.051, 1.21:0.039] (18s)
+b=1.20 lo=0.60 hi=2.20: no feasible point found
+b=1.20 lo=0.80 hi=1.20 m=0.1 smin=0.15: MIN mu_E +1.01968e-02 (Eg +4.3e-04 T2g -8.0e-12; status 8 nit 20) | fast mass 1.456 [0.81:1.456] | flat mass 0.486 [0.86:0.182, 0.91:0.051, 1.06:0.051, 1.11:0.051] (20s)
+b=1.20 lo=0.80 hi=1.45 m=0.1 smin=0.15: MIN mu_E +1.04884e-02 (Eg +3.7e-04 T2g -5.1e-16; status 0 nit 24) | fast mass 1.495 [0.81:1.334, 1.42:0.051, 0.86:0.051, 0.91:0.051] | flat mass 0.447 [1.37:0.051, 1.11:0.051, 1.06:0.051, 1.21:0.051] (21s)
+b=1.20 lo=0.80 hi=1.70 m=0.1 smin=0.15: MIN mu_E +1.11933e-02 (Eg +2.4e-04 T2g -6.5e-15; status 8 nit 16) | fast mass 1.631 [0.81:1.080, 1.11:0.051, 1.01:0.051, 1.52:0.051] | flat mass 0.310 [1.37:0.051, 1.32:0.051, 1.42:0.051, 1.21:0.051] (21s)
+b=1.20 lo=0.80 hi=2.20: no feasible point found
+b=1.20 lo=1.00 hi=1.20 m=0.1 smin=0.15: MIN mu_E +1.32665e-02 (Eg +4.2e-04 T2g -1.3e-14; status 8 nit 21) | fast mass 1.567 [1.01:1.567] | flat mass 0.374 [1.06:0.273, 1.11:0.051, 1.16:0.051] (24s)
+b=1.20 lo=1.00 hi=1.45 m=0.1 smin=0.15: MIN mu_E +1.33908e-02 (Eg +4.1e-04 T2g -3.6e-16; status 0 nit 20) | fast mass 1.573 [1.01:1.536, 1.06:0.037] | flat mass 0.369 [1.11:0.051, 1.32:0.051, 1.21:0.051, 1.37:0.051] (24s)
+b=1.20 lo=1.00 hi=1.70 m=0.1 smin=0.15: MIN mu_E +1.41029e-02 (Eg +3.4e-04 T2g -9.4e-16; status 0 nit 23) | fast mass 1.646 [1.01:1.283, 1.06:0.051, 1.27:0.051, 1.16:0.051] | flat mass 0.295 [1.37:0.051, 1.57:0.051, 1.52:0.051, 1.47:0.051] (25s)
+b=1.20 lo=1.00 hi=2.20: no feasible point found
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: divide by zero encountered in scalar divide
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: invalid value encountered in multiply
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: divide by zero encountered in scalar divide
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: invalid value encountered in multiply
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: divide by zero encountered in scalar divide
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: invalid value encountered in multiply
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: divide by zero encountered in scalar divide
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: invalid value encountered in multiply
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: divide by zero encountered in scalar divide
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: invalid value encountered in multiply
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+b=1.20 lo=1.20 hi=1.20: no feasible point found
+b=1.20 lo=1.20 hi=1.45: no feasible point found
+b=1.20 lo=1.20 hi=1.70: no feasible point found
+b=1.20 lo=1.20 hi=2.20: no feasible point found
+b=1.40 lo=0.15 hi=1.40: no feasible point found
+b=1.40 lo=0.15 hi=1.65: no feasible point found
+b=1.40 lo=0.30 hi=1.40 m=0.1 smin=0.15: MIN mu_E +9.55755e-03 (Eg +8.1e-06 T2g -1.1e-15; status 0 nit 21) | fast mass 1.696 [0.50:0.678, 1.21:0.051, 0.30:0.051, 0.35:0.051] | flat mass 0.045 [1.27:0.045] (43s)
+b=1.40 lo=0.30 hi=1.65: no feasible point found
+b=1.40 lo=0.30 hi=1.90: no feasible point found
+b=1.40 lo=0.45 hi=1.40 m=0.1 smin=0.15: MIN mu_E +8.71990e-03 (Eg +9.4e-08 T2g -1.7e-15; status 0 nit 27) | fast mass 1.579 [0.50:0.830, 0.45:0.051, 1.37:0.051, 1.32:0.051] | flat mass 0.163 [1.27:0.051, 1.16:0.051, 1.21:0.051, 1.11:0.011] (46s)
+b=1.40 lo=0.45 hi=1.65 m=0.1 smin=0.15: MIN mu_E +1.16964e-02 (Eg +1.2e-04 T2g -4.2e-16; status 0 nit 20) | fast mass 1.674 [0.61:0.577, 0.50:0.051, 0.45:0.051, 1.62:0.051] | flat mass 0.067 [1.42:0.051, 1.47:0.016] (47s)
+b=1.40 lo=0.45 hi=1.90: no feasible point found
+b=1.40 lo=0.60 hi=1.40 m=0.1 smin=0.15: MIN mu_E +9.01055e-03 (Eg +1.5e-04 T2g -1.0e-15; status 0 nit 25) | fast mass 1.434 [0.61:0.982, 1.37:0.051, 0.91:0.051, 0.76:0.051] | flat mass 0.308 [1.06:0.051, 1.11:0.051, 1.16:0.051, 1.21:0.051] (49s)
+b=1.40 lo=0.60 hi=1.65 m=0.1 smin=0.15: MIN mu_E +1.13728e-02 (Eg +1.6e-04 T2g -1.1e-15; status 0 nit 24) | fast mass 1.572 [0.66:0.729, 1.62:0.051, 1.57:0.051, 0.61:0.051] | flat mass 0.169 [1.32:0.051, 1.37:0.051, 1.42:0.051, 1.47:0.017] (50s)
+b=1.40 lo=0.60 hi=1.90 m=0.1 smin=0.15: MIN mu_E +1.46611e-02 (Eg +1.6e-04 T2g -3.3e-15; status 0 nit 20) | fast mass 1.728 [0.76:0.475, 0.61:0.051, 1.87:0.051, 0.66:0.051] | flat mass 0.014 [1.67:0.014] (50s)
+b=1.40 lo=0.80 hi=1.40 m=0.1 smin=0.15: MIN mu_E +1.10642e-02 (Eg +3.5e-04 T2g -9.1e-16; status 0 nit 15) | fast mass 1.354 [0.81:1.184, 0.96:0.051, 0.91:0.051, 0.86:0.051] | flat mass 0.388 [1.11:0.051, 1.06:0.051, 1.16:0.051, 1.32:0.051] (51s)
+b=1.40 lo=0.80 hi=1.65 m=0.1 smin=0.15: MIN mu_E +1.22885e-02 (Eg +2.7e-04 T2g -1.3e-15; status 0 nit 20) | fast mass 1.470 [0.81:0.931, 1.62:0.051, 1.57:0.051, 0.86:0.051] | flat mass 0.272 [1.37:0.051, 1.32:0.051, 1.42:0.051, 1.47:0.051] (51s)
+b=1.40 lo=0.80 hi=1.90 m=0.1 smin=0.15: MIN mu_E +1.45866e-02 (Eg +1.9e-04 T2g -1.8e-15; status 0 nit 20) | fast mass 1.659 [0.81:0.678, 1.87:0.051, 1.82:0.051, 1.77:0.051] | flat mass 0.083 [1.67:0.051, 1.62:0.032] (52s)
+b=1.40 lo=0.80 hi=2.40: no feasible point found
+b=1.40 lo=1.00 hi=1.40 m=0.1 smin=0.15: MIN mu_E +1.38491e-02 (Eg +4.0e-04 T2g -7.1e-15; status 0 nit 24) | fast mass 1.412 [1.01:1.387, 1.06:0.025] | flat mass 0.330 [1.21:0.051, 1.37:0.051, 1.11:0.051, 1.16:0.051] (53s)
+b=1.40 lo=1.00 hi=1.65 m=0.1 smin=0.15: MIN mu_E +1.46015e-02 (Eg +3.6e-04 T2g -4.4e-16; status 0 nit 22) | fast mass 1.457 [1.01:1.134, 1.21:0.051, 1.27:0.051, 1.32:0.051] | flat mass 0.284 [1.47:0.051, 1.52:0.051, 1.42:0.051, 1.57:0.051] (54s)
+b=1.40 lo=1.00 hi=1.90 m=0.1 smin=0.15: MIN mu_E +1.62189e-02 (Eg +2.7e-04 T2g -1.3e-15; status 0 nit 17) | fast mass 1.603 [1.01:0.880, 1.87:0.051, 1.82:0.051, 1.57:0.051] | flat mass 0.138 [1.67:0.051, 1.72:0.051, 1.62:0.030, 1.77:0.007] (54s)
+b=1.40 lo=1.00 hi=2.40: no feasible point found
+b=1.40 lo=1.20 hi=1.40 m=0.1 smin=0.15: MIN mu_E +1.72757e-02 (Eg +3.7e-04 T2g -1.2e-14; status 8 nit 20) | fast mass 1.532 [1.21:1.532] | flat mass 0.210 [1.21:0.058, 1.37:0.051, 1.32:0.051, 1.27:0.051] (56s)
+b=1.40 lo=1.20 hi=1.65 m=0.1 smin=0.15: MIN mu_E +1.76938e-02 (Eg +3.6e-04 T2g -8.1e-16; status 0 nit 20) | fast mass 1.551 [1.21:1.336, 1.27:0.051, 1.42:0.051, 1.32:0.051] | flat mass 0.191 [1.62:0.051, 1.52:0.051, 1.57:0.051, 1.47:0.039] (57s)
+b=1.40 lo=1.20 hi=1.90 m=0.1 smin=0.15: MIN mu_E +1.90813e-02 (Eg +3.1e-04 T2g -4.0e-15; status 0 nit 25) | fast mass 1.639 [1.21:1.083, 1.27:0.051, 1.32:0.051, 1.72:0.051] | flat mass 0.102 [1.87:0.051, 1.82:0.051, 1.77:0.001] (58s)
+b=1.40 lo=1.20 hi=2.40: no feasible point found
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: divide by zero encountered in scalar divide
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: invalid value encountered in multiply
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: divide by zero encountered in scalar divide
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: invalid value encountered in multiply
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: divide by zero encountered in scalar divide
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: invalid value encountered in multiply
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: divide by zero encountered in scalar divide
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: invalid value encountered in multiply
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: divide by zero encountered in scalar divide
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path.py:72: RuntimeWarning: invalid value encountered in multiply
+  x0 = x0*inside[np.arange(2*L) % L] + DL*inside[np.arange(2*L) % L]; x0 *= E/x0.sum()
+b=1.40 lo=1.40 hi=1.40: no feasible point found
+b=1.40 lo=1.40 hi=1.65: no feasible point found
+b=1.40 lo=1.40 hi=1.90: no feasible point found
+b=1.40 lo=1.40 hi=2.40: no feasible point found
+b=1.70 lo=0.30 hi=1.70: no feasible point found
+b=1.70 lo=0.45 hi=1.70: no feasible point found
+b=1.70 lo=0.60 hi=1.70 m=0.1 smin=0.15: MIN mu_E +1.60680e-02 (Eg +2.2e-04 T2g -4.9e-15; status 8 nit 17) | fast mass 1.440 [0.76:0.378, 0.61:0.051, 0.66:0.051, 0.71:0.051] | flat mass 0.002 [1.67:0.002] (76s)
+b=1.70 lo=0.60 hi=1.95: no feasible point found
+b=1.70 lo=0.80 hi=1.70 m=0.1 smin=0.15: MIN mu_E +1.57928e-02 (Eg +2.5e-04 T2g -4.2e-15; status 8 nit 18) | fast mass 1.367 [0.81:0.580, 0.86:0.051, 0.91:0.051, 1.57:0.051] | flat mass 0.075 [1.67:0.051, 1.62:0.024] (79s)
+b=1.70 lo=0.80 hi=1.95: no feasible point found
+b=1.70 lo=0.80 hi=2.20: no feasible point found
+b=1.70 lo=1.00 hi=1.70 m=0.1 smin=0.15: MIN mu_E +1.68733e-02 (Eg +3.0e-04 T2g -1.6e-15; status 0 nit 22) | fast mass 1.304 [1.01:0.783, 1.47:0.051, 1.52:0.051, 1.06:0.051] | flat mass 0.137 [1.62:0.051, 1.67:0.051, 1.57:0.036] (87s)
+b=1.70 lo=1.00 hi=1.95: no feasible point found
+b=1.70 lo=1.00 hi=2.20: no feasible point found
+b=1.70 lo=1.20 hi=1.70 m=0.1 smin=0.15: MIN mu_E +1.92284e-02 (Eg +3.3e-04 T2g -2.4e-15; status 0 nit 18) | fast mass 1.335 [1.21:0.986, 1.52:0.051, 1.27:0.051, 1.47:0.051] | flat mass 0.107 [1.67:0.051, 1.62:0.051, 1.57:0.005] (107s)
+b=1.70 lo=1.20 hi=1.95: no feasible point found
+b=1.70 lo=1.20 hi=2.20: no feasible point found
+b=1.70 lo=1.40 hi=1.70 m=0.1 smin=0.15: MIN mu_E +2.25299e-02 (Eg +3.1e-04 T2g -2.2e-15; status 0 nit 19) | fast mass 1.426 [1.42:1.188, 1.62:0.051, 1.52:0.051, 1.47:0.051] | flat mass 0.016 [1.67:0.016] (112s)
+b=1.70 lo=1.40 hi=1.95: no feasible point found
+b=1.70 lo=1.40 hi=2.20: no feasible point found
+b=1.70 lo=1.40 hi=2.70: no feasible point found
+OVERALL min mu_E +5.96151e-03 at (b,lo,hi)=(1.2, 0.45, 1.2); runtime 115s

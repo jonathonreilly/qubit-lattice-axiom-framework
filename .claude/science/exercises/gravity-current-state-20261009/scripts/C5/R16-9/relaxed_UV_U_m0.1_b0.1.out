@@ -1,0 +1,4 @@
+U b=0.10 lo=0.03 hi=0.10 m=0.1: no point with both Xi >= 0 found; best min(Xi_Eg,Xi_T2g) = -1.513e-04 (3s)
+U b=0.10 lo=0.03 hi=0.25 m=0.1: MIN mu_E +1.09567e-03 (Eg -3.8e-15 T2g -6.1e-15 st 8) | edge M 3.042, P/M 0.661, Q/M 0.660 (8s)
+U b=0.10 lo=0.03 hi=0.40 m=0.1: MIN mu_E +4.65117e-04 (Eg -7.9e-16 T2g +1.3e-16 st 0) | edge M 3.042, P/M 0.482, Q/M 0.462 (12s)
+U b=0.10 lo=0.03 hi=0.60 m=0.1: MIN mu_E +2.54813e-04 (Eg -3.2e-15 T2g +2.5e-16 st 0) | edge M 3.042, P/M 0.415, Q/M 0.395 (18s)

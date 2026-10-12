@@ -5547,3 +5547,16 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **NON-LOCAL (α):** a refereed proof that (β) is inconsistent in a stated class, with the size of the distant response.
   - **OPEN:** otherwise.
 - **Expectation.** NON-LOCAL in the class, with an effect suppressed by the edge-quanta population, which is negligible at low temperature. The physical verdict then depends on that population.
+- **R16-9 (one law, every cone): worker reading CONFLICT**, needing a referee because it is class-wide; otherwise OPEN.
+  - **Block split (proved):** the charge cones depend on the Dirac and photon edges and the counterterms; the graviton and shear conditions depend on the scalar edge only.
+  - **The conflict:** over a provable superset of the subluminal scalar class (Lemmas R and R_U), the scans find no point with E_g/T₂g ≥ 0 and μ_E ≤ 0.
+    - M vertex: smallest μ_E +1.25e-3.
+    - U vertex: smallest μ_E +1.3e-4, a thin margin.
+  - **So the shear needs a non-shape knob:** a counterterm, pairing, the Fock vacuum, or giving up subluminality.
+  - **Counts:**
+    - the listed conditions: 6 per class or 10 per species;
+    - SM rows: 9 + CC per class or 13 + CC per species, against R13-8's 16 + CC.
+  - **Biggest open item:** Dirac, photon and gluon zero-point loops have no TT or shear vertex yet, and could cancel μ_E.
+  - **Prices:** P-R16-9a (P62 and P-Z cannot share one subluminal scalar edge); P-R16-9b (named gap).
+
+  Referee running.

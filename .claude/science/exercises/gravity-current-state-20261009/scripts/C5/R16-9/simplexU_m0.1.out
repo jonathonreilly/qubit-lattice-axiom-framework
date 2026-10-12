@@ -1,0 +1,9 @@
+corner Gw(1.0,0.05): U,Eg -3.48e-04 U,T2g -2.27e-04 mu_E -5.74e-04
+corner T(0.5,1.2,1.5): U,Eg -5.32e-04 U,T2g -2.38e-04 mu_E -6.24e-04
+corner T(0.3,1.6,2.2): U,Eg -1.92e-03 U,T2g -5.81e-04 mu_E -1.69e-03
+corner Gw(0.4,0.03): U,Eg -3.13e-04 U,T2g -8.55e-05 mu_E -1.55e-04
+corner drop(0.4->0.2)flat: U,Eg -3.35e-03 U,T2g -6.65e-04 mu_E -7.64e-04
+D=Gw(1.0,0.05): 1771 mixes; min mu_E with U,Eg>=0 & U,T2g>=0: +6.324e-03 (Eg +9.8e-06 T2g +3.7e-04) w=[0. 1. 0. 0.] (34s)
+D=T(0.5,1.2,1.5): 1771 mixes; min mu_E with U,Eg>=0 & U,T2g>=0: +6.324e-03 (Eg +9.8e-06 T2g +3.7e-04) w=[0. 1. 0. 0.] (69s)
+D=T(0.3,1.6,2.2): 1771 mixes; min mu_E with U,Eg>=0 & U,T2g>=0: +6.324e-03 (Eg +9.8e-06 T2g +3.7e-04) w=[0. 1. 0. 0.] (102s)
+D=Gw(0.4,0.03): 1771 mixes; min mu_E with U,Eg>=0 & U,T2g>=0: +6.324e-03 (Eg +9.8e-06 T2g +3.7e-04) w=[0. 1. 0. 0.] (140s)

@@ -1,0 +1,3 @@
+U b=0.40 lo=0.15 hi=0.40 m=0.01: MIN mu_E +1.01474e-03 (Eg -9.5e-18 T2g +1.1e-03 st 0) | mass by slope 0.00:0.797 0.20:0.383 0.40:0.000 0.60:0.128 0.80:0.000 0.90:0.000 1.00:1.434 (11s)
+b=0.40 lo=0.15 hi=0.90: no point with both Xi_U >= 0 found; best min(Xi_Eg,Xi_T2g) found = -1.421e-04
+OVERALL U min mu_E +1.01474e-03 at (b,lo,hi)=(0.4, 0.15, 0.4); runtime 15s

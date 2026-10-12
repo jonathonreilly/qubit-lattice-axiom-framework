@@ -1,0 +1,12 @@
+b=0.3 done (16s): best so far mu_E +2.0794e-03
+b=0.5 done (31s): best so far mu_E +2.0794e-03
+b=0.7 done (46s): best so far mu_E +2.0794e-03
+b=0.9 done (60s): best so far mu_E +2.0794e-03
+b=1.1 done (73s): best so far mu_E +2.0794e-03
+b=1.3 done (86s): best so far mu_E +2.0794e-03
+b=1.6 done (98s): best so far mu_E +2.0794e-03
+b=2.0 done (110s): best so far mu_E +2.0794e-03
+m=0.1: 9144320 measures, 525461 with Xi_M,Eg>=0 and Xi_M,T2g>=0
+MIN mu_E s.t. both Xi>=0: mu_E +2.0794e-03 (Eg +3.79e-05 T2g +4.36e-04) at b=0.30 fast l1=0.15 l2=0.20 y=0.60 flat l3=0.30 x=0.25
+MAX min(Eg,T2g) s.t. mu_E<=0: -3.3001e-04 (Eg -3.30e-04 T2g +3.87e-04 mu -3.47e-04) at b=1.30 l1=0.80 l2=3.10 y=0.20 l3=1.05 x=0.05
+runtime 110s

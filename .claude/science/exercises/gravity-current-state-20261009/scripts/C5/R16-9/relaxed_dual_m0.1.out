@@ -1,0 +1,50 @@
+grad check: [-0.006276 -0.005105 -0.027203] vs [-0.006276 -0.005105 -0.027203]
+b=0.30 lo=0.15 hi=0.30 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -1.33682e-02 [mu_E -4.60e-12] (Eg -1.1e-03 T2g -1.3e-02; status 8 nit 24) | fast mass 0.955 [0.25:0.955] | flat mass 1.886 [0.25:1.444, 0.15:0.391, 0.20:0.051] (1s)
+b=0.30 lo=0.15 hi=0.55 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -2.89671e-03 [mu_E -5.13e-15] (Eg -2.9e-03 T2g -2.9e-03; status 8 nit 20) | fast mass 2.056 [0.15:1.711, 0.50:0.193, 0.35:0.051, 0.45:0.051] | flat mass 0.785 [0.20:0.684, 0.30:0.051, 0.25:0.051] (3s)
+b=0.30 lo=0.15 hi=0.80 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -1.83132e-03 [mu_E +1.67e-12] (Eg -1.8e-03 T2g -1.8e-03; status 8 nit 19) | fast mass 2.086 [0.25:1.523, 0.76:0.259, 0.20:0.051, 0.15:0.051] | flat mass 0.756 [0.35:0.552, 0.50:0.051, 0.30:0.051, 0.45:0.051] (4s)
+b=0.30 lo=0.15 hi=1.30: no feasible point found
+b=0.30 lo=0.30 hi=0.30: no feasible point found
+b=0.30 lo=0.30 hi=0.55: no feasible point found
+b=0.30 lo=0.30 hi=0.80: no feasible point found
+b=0.30 lo=0.30 hi=1.30: no feasible point found
+b=0.60 lo=0.15 hi=0.60 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -3.00454e-03 [mu_E +1.28e-11] (Eg -3.0e-03 T2g -3.0e-03; status 8 nit 18) | fast mass 1.888 [0.15:1.058, 0.20:0.557, 0.56:0.171, 0.45:0.051] | flat mass 0.654 [0.25:0.502, 0.30:0.051, 0.35:0.051, 0.40:0.051] (16s)
+b=0.60 lo=0.15 hi=0.85 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -1.97589e-03 [mu_E +2.18e-11] (Eg -2.0e-03 T2g -2.0e-03; status 8 nit 26) | fast mass 1.845 [0.25:1.331, 0.81:0.261, 0.15:0.051, 0.66:0.051] | flat mass 0.696 [0.35:0.392, 0.30:0.051, 0.61:0.051, 0.56:0.051] (18s)
+b=0.60 lo=0.15 hi=1.10: no feasible point found
+b=0.60 lo=0.15 hi=1.60: no feasible point found
+b=0.60 lo=0.30 hi=0.60 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -6.60182e-03 [mu_E -1.14e-11] (Eg -7.6e-04 T2g -6.6e-03; status 8 nit 19) | fast mass 0.794 [0.56:0.794] | flat mass 1.747 [0.56:1.420, 0.30:0.106, 0.35:0.069, 0.40:0.051] (22s)
+b=0.60 lo=0.30 hi=0.85: no feasible point found
+b=0.60 lo=0.30 hi=1.10: no feasible point found
+b=0.60 lo=0.30 hi=1.60 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -1.07106e-03 [mu_E +4.94e-11] (Eg -1.1e-03 T2g -1.1e-03; status 8 nit 24) | fast mass 1.955 [0.50:1.179, 1.57:0.117, 1.27:0.051, 1.42:0.051] | flat mass 0.587 [0.71:0.080, 0.66:0.051, 0.61:0.051, 0.91:0.051] (25s)
+b=0.60 lo=0.45 hi=0.60 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -6.60897e-03 [mu_E +2.17e-12] (Eg -5.9e-04 T2g -6.6e-03; status 8 nit 24) | fast mass 0.770 [0.56:0.770] | flat mass 1.771 [0.56:1.477, 0.45:0.244, 0.50:0.051] (26s)
+b=0.60 lo=0.45 hi=0.85 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -4.56203e-03 [mu_E -7.09e-09] (Eg -7.7e-04 T2g -4.6e-03; status 8 nit 27) | fast mass 0.942 [0.81:0.942] | flat mass 1.600 [0.81:1.205, 0.45:0.091, 0.56:0.051, 0.71:0.051] (27s)
+b=0.60 lo=0.45 hi=1.10: no feasible point found
+b=0.60 lo=0.45 hi=1.60: no feasible point found
+b=0.60 lo=0.60 hi=0.60: no feasible point found
+b=0.60 lo=0.60 hi=0.85: no feasible point found
+b=0.60 lo=0.60 hi=1.10: no feasible point found
+b=0.60 lo=0.60 hi=1.60: no feasible point found
+b=1.00 lo=0.15 hi=1.00 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -2.00526e-03 [mu_E +4.78e-11] (Eg -2.0e-03 T2g -2.0e-03; status 8 nit 18) | fast mass 1.551 [0.25:0.616, 0.30:0.607, 0.96:0.074, 0.81:0.051] | flat mass 0.590 [0.40:0.185, 0.35:0.051, 0.50:0.051, 0.56:0.051] (38s)
+b=1.00 lo=0.15 hi=1.25: no feasible point found
+b=1.00 lo=0.15 hi=1.50: no feasible point found
+b=1.00 lo=0.15 hi=2.00 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -1.52945e-03 [mu_E -1.57e-10] (Eg -1.3e-03 T2g -1.5e-03; status 8 nit 14) | fast mass 1.824 [0.40:0.318, 0.15:0.051, 1.98:0.051, 0.30:0.051] | flat mass 0.317 [1.11:0.051, 1.16:0.051, 1.21:0.051, 1.37:0.051] (41s)
+b=1.00 lo=0.30 hi=1.00 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -2.29186e-03 [mu_E +5.37e-13] (Eg -1.9e-03 T2g -2.3e-03; status 8 nit 15) | fast mass 1.399 [0.30:1.149, 0.96:0.200, 0.91:0.051] | flat mass 0.742 [0.30:0.185, 0.86:0.051, 0.35:0.051, 0.45:0.051] (42s)
+b=1.00 lo=0.30 hi=1.25 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -1.64949e-03 [mu_E +7.30e-11] (Eg -1.6e-03 T2g -1.6e-03; status 8 nit 16) | fast mass 1.576 [0.30:0.573, 0.35:0.558, 1.21:0.200, 0.40:0.051] | flat mass 0.565 [0.50:0.051, 0.45:0.051, 0.91:0.051, 0.66:0.051] (43s)
+b=1.00 lo=0.30 hi=1.50 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -1.39372e-03 [mu_E +1.10e-11] (Eg -1.4e-03 T2g -1.4e-03; status 8 nit 19) | fast mass 1.634 [0.35:0.629, 0.40:0.293, 1.47:0.156, 1.16:0.051] | flat mass 0.507 [0.76:0.051, 1.11:0.051, 0.96:0.051, 1.06:0.051] (44s)
+b=1.00 lo=0.30 hi=2.00 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -1.29484e-03 [mu_E -2.23e-11] (Eg -1.1e-03 T2g -1.3e-03; status 8 nit 18) | fast mass 1.709 [0.45:0.470, 1.98:0.051, 1.92:0.051, 1.87:0.051] | flat mass 0.433 [1.42:0.051, 1.37:0.051, 1.32:0.051, 1.27:0.051] (45s)
+b=1.00 lo=0.45 hi=1.00: no feasible point found
+b=1.00 lo=0.45 hi=1.25: no feasible point found
+b=1.00 lo=0.45 hi=1.50: no feasible point found
+b=1.00 lo=0.45 hi=2.00 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -1.24961e-03 [mu_E -9.61e-13] (Eg -1.1e-03 T2g -1.2e-03; status 8 nit 22) | fast mass 1.678 [0.45:0.622, 1.47:0.051, 1.92:0.051, 1.87:0.051] | flat mass 0.464 [1.42:0.051, 1.37:0.051, 1.32:0.051, 1.27:0.051] (49s)
+b=1.00 lo=0.60 hi=1.00 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -3.93283e-03 [mu_E +2.01e-11] (Eg -8.2e-04 T2g -3.9e-03; status 8 nit 24) | fast mass 0.624 [0.96:0.624] | flat mass 1.518 [0.96:0.962, 0.61:0.252, 0.81:0.051, 0.71:0.051] (50s)
+b=1.00 lo=0.60 hi=1.25: no feasible point found
+b=1.00 lo=0.60 hi=1.50 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -2.25447e-03 [mu_E +6.34e-11] (Eg -1.0e-03 T2g -2.3e-03; status 8 nit 19) | fast mass 1.215 [0.61:0.655, 1.47:0.561] | flat mass 0.926 [0.61:0.116, 0.81:0.051, 1.06:0.051, 0.96:0.051] (52s)
+b=1.00 lo=0.60 hi=2.00 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -1.37388e-03 [mu_E +1.15e-12] (Eg -9.2e-04 T2g -1.4e-03; status 8 nit 16) | fast mass 1.531 [0.61:0.638, 1.98:0.187, 0.91:0.051, 0.86:0.051] | flat mass 0.611 [1.57:0.051, 1.52:0.051, 1.47:0.051, 1.42:0.051] (53s)
+b=1.00 lo=0.80 hi=1.00 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -3.95297e-03 [mu_E -2.79e-09] (Eg -6.9e-04 T2g -4.0e-03; status 8 nit 24) | fast mass 0.578 [0.96:0.578] | flat mass 1.564 [0.96:1.114, 0.81:0.349, 0.86:0.051, 0.91:0.051] (54s)
+b=1.00 lo=0.80 hi=1.25 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -3.09726e-03 [mu_E -1.67e-08] (Eg -8.0e-04 T2g -3.1e-03; status 8 nit 23) | fast mass 0.753 [1.21:0.753] | flat mass 1.389 [1.21:0.834, 0.81:0.200, 1.16:0.051, 1.11:0.051] (55s)
+b=1.00 lo=0.80 hi=1.50: no feasible point found
+b=1.00 lo=0.80 hi=2.00 m=0.1 smin=0.15: DUAL max min(Eg,T2g) s.t. mu_E<=0: -1.63403e-03 [mu_E -1.25e-07] (Eg -8.4e-04 T2g -1.6e-03; status 8 nit 14) | fast mass 1.399 [0.81:0.615, 1.98:0.412, 0.86:0.051, 0.91:0.051] | flat mass 0.742 [1.57:0.051, 1.67:0.051, 1.62:0.051, 1.72:0.051] (56s)
+b=1.00 lo=1.00 hi=1.00: no feasible point found
+b=1.00 lo=1.00 hi=1.25: no feasible point found
+b=1.00 lo=1.00 hi=1.50: no feasible point found
+b=1.00 lo=1.00 hi=2.00: no feasible point found
+OVERALL DUAL max min(Eg,T2g) -1.07106e-03 at (b,lo,hi)=(0.6, 0.3, 1.6); runtime 63s

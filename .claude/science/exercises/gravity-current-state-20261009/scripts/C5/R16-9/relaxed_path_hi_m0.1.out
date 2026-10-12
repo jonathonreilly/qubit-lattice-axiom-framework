@@ -1,0 +1,10 @@
+grad check: [-0.006061 -0.004944 -0.026065] vs [-0.006061 -0.004944 -0.026065]
+b=0.40 lo=0.15 hi=1.90: no feasible point found
+b=0.40 lo=0.15 hi=2.40: no feasible point found
+b=0.60 lo=0.15 hi=2.10: no feasible point found
+b=0.60 lo=0.15 hi=2.60: no feasible point found
+Traceback (most recent call last):
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R16-9/scripts/relaxed_path_hi.py", line 84, in <module>
+    print('OVERALL min mu_E %+.5e at (b,lo,hi)=%s; runtime %.0fs' % (allbest[0], str(allbest[1]), time.time()-T0))
+                                                                     ~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable

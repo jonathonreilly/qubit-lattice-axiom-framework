@@ -1,22 +1,18 @@
 # Current ranked opportunity queue
 
-1. Publish the accepted index-to-selected-complement inequalities with explicit
-   cross-PR index dependency, finite controls and limited physical interpretation.
-2. Independently check exact almost-local filters for arbitrary isolated centre
-   characters, including irrational phases; do not assume a common integer period.
-3. Complete and independently check the finite-range momentum-current implementation
-   proof under explicit local-vector domain assumptions. This targets a live premise.
-4. Investigate stable nonisolated mass shells through time averaging and matched
-   spectral regularity, if the primary proof and lattice estimates support it.
-5. Actual microscopic realization and justified enlarged channel selection remain
-   the decisive targets. Existing conditional completeness reductions do not build
-   a model. Do not seek generic ND for the obstructed fixed common-q sector.
-6. More exact boost coefficients/longer-time sharpness are secondary to these gaps.
+1. Publish the fully reviewed centre-filtering and microscopic-current lemmas.
+2. Prove time-averaged scattering creators for stable nonisolated geometric shells
+   with explicit power regularity and all unequal-time/spectator estimates.
+3. Derive a centre-regularity to geometric-shell bound with explicit momentum H1
+   control, isolated mass, and honest regular-seed density requirements.
+4. Derive strong joint flow from exact local commutation identities, keeping
+   generic current conservation and actual boost realization separate.
+5. Find an actual microscopic realization and justified enlarged channel selection.
+   Do not mistake conditional reductions for a model or seek generic ND for
+   the obstructed common-q sector. Further boost sharpness is secondary.
 
-Ten regular PRs9478–9487 are open, unmerged. Projection5cbc581 and S/L433f641
-are published. Main/instructions unchanged02:29UTC;9476 owns the gravity Ward
-search and9477 owns chiral partner-rank pencils. Avoid duplicate work.
-
-Preserve failed routes and counterexamples. No applied audit verdict, main push,
-science merge, axiom edit, other-chat message or extension beyond12October16:00:52UTC.
-One live checkpoint remains here; individual packets are frozen milestones.
+Ten regular PRs9478–9487 remain open/unmerged. Leakagef6f4348 in9486 and
+S/L433f641 in9487 are published. Main/instructions unchanged03:01UTC.
+9476 owns field-dependent gravity Ward work;9477 owns chiral rank pencils.
+Preserve counterexamples and failures; no draft, audit verdict, merge, main
+push, axiom edit, other-chat message or deadline extension. One live checkpoint.

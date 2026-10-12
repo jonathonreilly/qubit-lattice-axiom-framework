@@ -13,7 +13,7 @@ Original mathematics is authorized. Keep the selected model and reasoning effort
 
 Active worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/scattering_worktree
 Branch: physics-loop/toe-compact-patch-scattering-20261011
-Clean head: 5cbc581504721a323f5fa2064694a67141a3ee98, regular PR9486.
+Clean head: f6f4348151734908dea3b32048ee1f36f694035b, regular PR9486.
 It is based on main a13caa4885f547c8d206265b031ba7649e539fd9.
 Sibling quantitative_boost_worktree is clean at433f641f24296b6d8e786930bb1327f434015162,
 regular PR9487. Its boost parent remains773321aa8fdfccc05248682dfc96bf94215034a2.
@@ -22,13 +22,13 @@ Frozen sources must not be edited under review. Primary checkout is untouched.
 
 This directory in sibling worktree, branch physics-loop/toe-nonlinear-transport-20261011
 (PR9478), remains the sole live campaign checkpoint. Full prior checkpoint
-259b8d7b14dfa1f6ed3b5291b3564ea3057276b2 is losslessly archived at history/20261012T023308Z_*.gz.
+a5bec6ae26b45488a080cce32017873db83c3943 is losslessly archived at history/20261012T030536Z_*.gz.
 Older complete proof summaries and failures are in that archive and their original
 source-bound packets. Individual publication packets are frozen milestone snapshots.
 The app-managed worktree tool was unavailable from the non-Git chat cwd; owned
 standard Git worktrees are in use.
 
-At02:29:45 UTC main and planning3a4b2c66a1ead7a1c48b4359627e968f681e3c39
+At03:01:19 UTC main and planning3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 remain unchanged. Already fully read instruction identities still match:
 AGENTS f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f;
 CLAUDE254339c255b9c75eac37c1185b77f11be8f55bb9b734543b2a81647f5f373dfc;
@@ -51,7 +51,7 @@ All ten are verified open, regular and attached; none merged.
 |9483|Interspecies rigidity/stability and scoped Lean|aeee46fa0e2879038eec1b8ee8a1e173ac77518e; main-based|
 |9484|Boost norm and all-component expectations|773321aa8fdfccc05248682dfc96bf94215034a2; parent9479|
 |9485|Partial-factor index and tube scaling|b8402c17d337f371c0c73696ef170727de9ab5bd; maina13caa48|
-|9486|Scattering, Fock, detector convergence and selected projection|5cbc581504721a323f5fa2064694a67141a3ee98; maina13caa48|
+|9486|Scattering, Fock, detector projection and complement bounds|f6f4348151734908dea3b32048ee1f36f694035b; maina13caa48|
 |9487|Outgoing forcing, quantitative corrector, threshold and actual sharpness|433f641f24296b6d8e786930bb1327f434015162; parent9484, explicit9481 memory dependency|
 
 Global combined audit pipeline and strict audit lint were not run; they remain
@@ -199,7 +199,7 @@ scripts prepare_projection_publication/run_projection_primary_mutants/
 run_projection_citation_compat/finish_projection_delivery already ran; do not
 rerun blindly. Exact note/runner hashes are in packet/PUBLICATION_EDITS.json.
 
-## Index-to-complement result independently checked; publication next
+## Index-to-complement theorem published in PR9486
 
 DETECTOR_INDEX_LEAKAGE_PROBE.md,405lines,
 4d1e9b888c6e84881e8d356c42e8da521794c68191ebcebab1c145ced5189747;
@@ -227,81 +227,150 @@ finite-tube defect extension are proved. Cyclic preparer support/norm/energy are
 uncontrolled. The core proper-subspace conclusion is N1's existing conditional
 contrapositive, not a universal lattice no-go. New content is quantitative.
 
-The frozen source's description of optional projection review as pending was
-accurate when written; publication may label that operational history and add
-the exact now-completed review record without changing mathematics. Publishing
-in9486 requires explicit cross-PR9485 index dependency and frozen proof sources.
-Do not silently treat that unmerged source as present on main. Full N1-N8 scope
-assessment is preserved. Other channels, irrational characters, unbounded finite
-denominators and failed microscopic identification remain real alternatives.
+The published note is DETECTOR_INDEX_LEAKAGE_BOUNDED_THEOREM_NOTE_2026-10-12.md,
+SHA bd818597dab684761e3e9bb63dc38e929e9474ad915f00af11b071311e3e60aa;
+primary9cb24ba823897133a6fc9163e279b8d27603ccb2a51170c10668ce084dadf765.
+Packet: scattering_worktree/.claude/science/physics-loops/toe-detector-index-leakage-20261012.
+Headf6f4348151734908dea3b32048ee1f36f694035b is clean, regular/open/MERGEABLE,
+verified03:01:19UTC and attached. Explicit unmerged PR9485 atb8402c17 supplies
+the required index proof; complete frozen sources are preserved and hashed.
+Optional projection review history is labeled; no displayed mathematics changed.
+Canonical execution0.048143148s/60s,exit0,stderr0, all12original records plus
+scope lines; six actual complete-primary defects fail at their intended assertions.
+252staged identities and228own evidence files checked. Graph6875nodes15428edges
+adds1node/4in-branch dependency edges with all old nodes unchanged. Exact source
+maps, caches, links, vocabulary and whitespace passed. Focused compatibility
+selected no applied rows/failures. Global audit pipeline and strict lint not run.
+All previous SC/Fock/E/PC/projection science remains unchanged. Full N1-N8
+assessment preserves irrational characters, other channels and implementation
+failures as genuine alternatives. Publication scripts already ran; do not rerun
+prepare_leakage_publication/run_leakage_verification/finish_leakage_delivery blindly.
 
-## New positive route: isolated arbitrary centre characters
+## Isolated arbitrary centre characters: full proof and review complete
 
-ISOLATED_CENTRE_FILTERING_PROBE.md is frozen at401lines, SHA1dcb9580d128d8fc41b76517ce0fe18842291e8e32681fa9c6b22f0feb1e13de;
-receipt a76cd471016c6e280d44faa97e470cb13ec1e4dd480f0b16c30308eeb0093012.
-Author frozen02:30:29UTC with56bindings and8finite controls. Fresh agent
-isolated_centre_review is checking the full I1-I34 argument. Root is coauthor.
-Root must read full frozen proof/evidence before publication. Predecessor PC/projection
-bindings unchanged. Printed-plus, path-launch and concurrent-HEAD errors preserved.
-For commuting centre implementers V_j fixing the vacuum, use a smooth torus
-filter sum_j c_phi(j) AdV_j(B), whose vacuum vector should be phi(V)B Omega.
-Schwartz coefficients and microscopic finite-range flow estimates may prove
-almost locality without finite-order centre phases. If a character is isolated
-in the joint V spectrum restricted to the selected mass component, a bump
-filter can isolate it exactly, including irrational characters. Then recheck
-joint transfers, compact lifted dispersion charts, creator density, covariance,
-Fock and PC reuse. A single integer direction need not separate a finite
-multivariate torsion character set. Approximate localization cannot manufacture
-an exact point sector in a continuous or nonisolated spectrum.
+S/ISOLATED_CENTRE_FILTERING_PROBE.md,401lines,
+1dcb9580d128d8fc41b76517ce0fe18842291e8e32681fa9c6b22f0feb1e13de;
+author receipt a76cd471016c6e280d44faa97e470cb13ec1e4dd480f0b16c30308eeb0093012.
+Review68ea0c2f00d0808ce5a6a63632b0bc84a05398260478510fb4f66256e885cbc9;
+receipt8eeb364e11eb54d3cb4a6127596d6f9d422f6acd9d88b1275346922661c99abc.
+I1-I34 supported with no required correction. Root complete author/reconstruction,
+control/code/output/scope/failure reads are recorded in Centre_root_author_coverage.json
+and Centre_root_review_coverage.json.154reviewoutputs,5receiptbindings,62sourcepairs,
+6precontrolbindings checked. Root is coauthor, not independent reviewer.
 
-This extends a conditional construction; it changes no physical axioms and
-does not supply a microscopic realization or evade every index obstruction.
-Projection review is now complete, but this extension does not use it. A separate
-source-bound check will be needed if the new argument closes.
+Smooth central Fourier sums of actual automorphisms preserve all required
+almost locality, norm time derivatives and whole operator transfer. Vacuum
+multiplier phi(V) differs from the full transition-difference filter. Explicit
+isolation on the whole mass/momentum patch gives exact character selection;
+uniform geometric/current-flow truncation plus Schwartz coefficient tails gives
+the locality proof without an exponential Fourier-moment assumption. Countable
+covered density, separated compact Cook, covered Fock isometries and fixed
+admissible PC arrangements follow by matching the full predecessor hypotheses.
+Unique vacuum/gap and detector vacuum remainder remain additional conditions.
+Irrational isolated characters are permitted but not constructed microscopically;
+no common q, full-channel coverage, boost covariance, ND or EX follows.
+Finite multivariate interpolation is valid only on the whole declared finite
+spectrum. Accumulating atoms/nonatomic spectrum counterexamples are preserved.
 
-## Microscopic current implementation derivation and recovery
+The distinct four-site current-flow control froze before author helper exposure.
+An initial Fourier truncation failed1e-8 tolerance; higher resolution with the
+same tolerance passed at4.02e-14. Author reproduction was exact. Ten mutations
+failed; deleting a positive shift from the successful radius inequality survived
+because that inequality becomes weaker. Preserve this nondiscrimination explicitly;
+the analytic support calculation includes the shift. No numerical LR certificate.
+Source/HEAD refresh failures were operational; all bound sources unchanged.
 
-S/ROOT_MICROSCOPIC_CURRENT_IMPLEMENTATION_LEAD.md is a root unverified sketch.
-Fresh author agent microscopic_current_implementation continues only
-MICROSCOPIC_CURRENT_IMPLEMENTATION_PROBE.md and microscopic_current_implementation/.
-The prior worker had two stream disconnects, requests d8b30d99-0af8-4663-ade1-1950f8b68e30
-and30f8456c-bfa0-4295-8850-c2939a9cb712. Root recovery inventory originally saw
-source copies/checkpoint only; the fresh worker subsequently found a27197-byte
-note timestamp02:21:13UTC. It preserves that recovered predecessor before finishing
-controls and provenance. No proof is accepted yet. Both failures remain recorded.
+## Microscopic current implementation: full proof and review complete
 
-Target: under explicit local-vector H/boost domain actions and supplied self-adjoint
-integrated P=i[H,B], derive finite-range current density
-p_b(x)=(i/2)sum_r r_b[h_x,h_(x+r)] and its implementation on the full GNS algebra.
-Use connected-support nested-commutator analytic bounds, supplied self-adjoint
-Taylor remainder and finite-volume norm convergence; prove invariance before
-canonical GNS identification. Do not infer boost local action from a formal first
-moment, equality on one vacuum column, or an unproved analytic-core theorem.
-This could reduce an implementation premise; no model/Poincare integration or
-physical axioms are constructed. Independent source review remains necessary.
+S/MICROSCOPIC_CURRENT_IMPLEMENTATION_PROBE.md,399lines,
+bcc9b9503e49c17b6e6140c22f3971f35ccd3ed72de16f0371666dc9162dfd9a;
+author receipt1d298bbc206178f33be8851cc69481922682d0b78c8d68af7e09e5a5ecf31c37.
+Review305fa33efebf1e9f9dc09d0854eddf23065877004888f55e964d31cc403f6d17;
+receipt1e8f868b6722ce57d60c626d3899e08f28fe6183e7aef5533a2891f96bb803fc.
+I1-I31 supported with no required correction. Root complete source/helper/
+reconstruction/control/evidence reads in Current_root_author/review_coverage.json;
+81reviewoutputs,9sourcepairs,40authorbindings,2precontrolfiles verified.
 
-## Freshness, lock and next decisions
+Given actual self-adjoint H,B,P and exact local-vector H/first-moment B action
+plus P=i[H,B] on that same cyclic local domain, derive its invariance/products,
+p_b(x)=(i/2)sum_r r_b[h_x,h_(x+r)] with radius3R and explicit uniform J.
+Connected support histories give ||delta^n A|| <=||A||(2J)^n
+product_k(a+k(s-1)); common analytic radius is independent of initial support
+size, not a uniform bound over supports. Uniform finite-volume Taylor remainder
+and coefficient stabilization construct all-time norm dynamics. Self-adjoint
+P's vector remainder, then state invariance and canonical GNS construction prove
+the full algebra adjoint implementation. Vacuum separation is never assumed.
+Negative P clock and beta scaling occur once. Boost realization/closure,
+strong joint commutation, spectra/scattering and physical model remain supplied.
 
-S/repo_sync_0230.json records02:29:45UTC. Main/planning/instructions unchanged.
-Candidate9476 remains100a6fc7bf476d011bb47e18045e60bb810b2b5d with the separate
-field-dependent Ward plan. Chiral9477 advanced tobc81b65a4d3e2fa081b759832dfc2f1e976c8b26:
-two143-line partner-rank notes and full changed HANDOFF/queue were read for overlap.
-They treat specific thrice-cap/swapped-dot combinations by rank/minor pencils,
-not current implementation or scattering. Their large runners are not re-certified
-or imported. Avoid duplicating that active lane. Full changed-path inventory was
-inspected. Local main e485 remains stale; fetched origin/maina13 is authority.
+Independent three-site occupation-basis current, closed exponential and pure
+nonseparating-vacuum controls have34passing rows; a false full-algebra action
+has identical vacuum columns but nonzero operator defects. All50author rows
+reproduce exactly. Five actual source mutants reject; nondiscriminating rows
+(including contiguousa=3history throughorder7) are preserved. Original author
+logs lack per-run timeout/elapsed receipts; reviewer runs record60s/0.250s and
+0.679s. Publication must suppress/redirect the helper's adjacent result-file
+write and account for its printed self-hash by explicit source map, preserving
+all calculations. No earlier execution timing may be invented.
+Two platform disconnect IDs and the late recovered draft are preserved in
+microscopic_current_implementation/logs. Root verification initially used a wrong
+centre stdout subdirectory; a separate read-only Git command used a nonGit cwd.
+Both corrections/failures are in centre_current_root_operational_failures.json;
+no scientific source changed. verify_centre_current_reviews.py now passes.
 
-Lock refreshed02:29:15.577118UTC; expires03:29:15.577118UTC. Refresh by03:15UTC
-from worktree using ownercodex-toe-native-20261011 and the same holder.
-Package reviewed leakage, check the centre source when frozen, finish the current
-implementation candidate, and then choose the next constructive route. A possible
-next lead is time-averaged scattering for stable nonisolated mass shells; root has only inspected
-Dybalski hep-th/0412226v4 abstract/early pages, and no theorem import or adaptation
-is yet established. Agent compact_detector_convergence now has a bounded author
-brief for NONISOLATED_MASS_SCATTERING_PROBE.md and nonisolated_mass_scattering/:
-read the primary proof, retain the vacuum gap, derive integrable time-averaged
-creators under explicit geometric spectral regularity, and avoid silently replacing
-that condition by mass-operator regularity. It will need fresh independent review.
+## Active bounded derivations and next decisions
 
-Preserve failures and source limits. No deadline extension. All earlier full
-proof summaries and operations are recoverable from archives and source packets.
+1. Root packages the accepted centre/current results as a regular milestone.
+   Source-bound review is not formal retention; no draft, merge or main push.
+2. Agent nonisolated_mass_recovery writes only NONISOLATED_MASS_SCATTERING_PROBE.md
+   and nonisolated_mass_scattering/. Its predecessor disconnected request
+   ffab7dff-5c98-4e5b-bd40-7633f1540561 after saving primary sources; no note
+   existed in root's02:44inventory. Preserve root_disconnect_recovery.json.
+   Dybalski hep-th/0412226v4 PDF3c616a4d6c8b52793bb669387a237de31ee66417450ddc5f29b7c93ece7b534d
+   and original TeX are saved. Some pypdf layout files are megabytes: use compact
+   source/selected PDF equations, do not dump them. Author has read full primary
+   TeX; root only early source pages, so root claims no full primary coverage yet.
+   Target: time-averaged separated creators under explicit GEOMETRIC detuning
+   power regularity, retaining actual finite-range H and unique gapped vacuum.
+   Unequal-time LR, derivative width term, all spectators and uniform finite-energy
+   word estimates must be proved. Mass regularity alone is insufficient: the
+   author's abstract off-mass/nearby-centre counterexample is preserved, not a
+   microscopic model. No Fock/PC/EX import without its complete proof.
+3. Agent centre_regularity_bridge writes only CENTRE_REGULARITY_TO_GEOMETRIC_PROBE.md
+   and centre_regularity_to_geometric/. Root's unverified sketch is
+   ROOT_CENTRE_REGULARITY_TO_GEOMETRIC_LEAD.md: with isolated mass, explicit
+   direct-integral H1 momentum regularity and residual centre powera, a massive
+   convex detuning-strip bound may give exponenta/(2a+1), including the zero
+   graph kernel. Verify measurable slicing, lifts, multiplicity and density;
+   do not import the mutable time-averaging source or infer rates from cyclicity.
+4. Agent microscopic_current_review is now an AUTHOR on the distinct
+   MICROSCOPIC_JOINT_FLOW_PROBE.md and microscopic_joint_flow/ only. Test whether
+   exact local commutation identities plus common mixed analytic bounds imply
+   strongly commuting canonical vacuum-fixing flows. Generic current conservation
+   is not given. A finite local polynomial criterion needs its own derivation,
+   including divergence freedom. Fresh independent review will be necessary.
+5. Actual microscopic realization and justified enlarged channel selection remain
+   decisive. No conditional construction closes them. Boost sharper coefficients
+   are secondary. Continue useful science through local failures before deadline.
+
+## Freshness and lock
+
+S/repo_sync_0305.json records03:01:19UTC. Maina13caa48 and planning3a4b2c66,
+and all instruction hashes above remain unchanged. PR9486 is nowMERGEABLE.
+PR9477 advanced3334ba2bdb6014c580a48f10bf6622245815d965; full new143line
+chiral partner-rank note and complete changed HANDOFF/queue portions read.
+The full historical HANDOFF display was truncated and is not a new complete
+read; its changed argument was recovered by exact diff. Large runner not
+recertified/imported. It remains a separate active rank/minor-pencil lane.
+PR9476 advanceda2153dbddb720dc595b0037e42277a54d39f643e with36changedpaths.
+Full changed SUMMARY/TESTS read: F2 claims a bounded fixed-leading-data scalar
+Ward obstruction; F1 referee narrows the broad assertion to a fixed graded
+BV complex. Broader finite-field/multiband/quasilocal cases remain inconclusive.
+These are ownership/overlap findings only: full new reports/controls have not
+been certified or imported. No change to our actual-current/scattering inputs.
+
+Lock refreshed02:58:43.539600UTC, expires03:58:43.539600UTC. Refresh by03:45
+from worktree with ownercodex-toe-native-20261011. Primary checkout untouched.
+Editable prompt/skill files changed:none; no platform changes claimed.
+At16:00:52UTC stop new research, checkpoint/report actual outcomes and limits,
+and disable heartbeat toe-derivations-24-hour-campaign. Never extend deadline.

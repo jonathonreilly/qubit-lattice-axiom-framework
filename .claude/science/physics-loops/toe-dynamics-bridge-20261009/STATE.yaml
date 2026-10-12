@@ -13,15 +13,17 @@ base_revision: a13caa4885f547c8d206265b031ba7649e539fd9
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: publish_reviewed_index_leakage; isolated_centre_filtering; microscopic_current_implementation
+active_route: publish_reviewed_centre_filter_and_current_implementation; nonisolated_mass_creators; centre_regularity_bridge;
+  microscopic_joint_flow
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: ten_regular_PRs_published; detector_projection_extension_published
+milestone: ten_regular_PRs_published; detector_leakage_extension_published; two_new_conditional_lemmas_reviewed
 strongest_unresolved_obligation: actual_microscopic_realization_and_justified_enlarged_channel_selection
 provisional_dependencies: selected_mass_and_centre_components_microscopic_H_current_implementations; no_full_GNS_exhaustion
 independent_checks: B/E/BR/T/X, index P1-P29, compact scattering, Fock, K, Q, EX, S1-S20, L1-L20 and PC C1-C28 complete
-  at frozen scope; detector projection P1-P33 and leakage L1-L27 complete at frozen scope
+  at frozen scope; detector projection P1-P33 and leakage L1-L27 complete at frozen scope; isolated centre I1-I34
+  and microscopic current I1-I31 complete at frozen scope
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_open
@@ -31,8 +33,8 @@ walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
-lock_refresh_before_utc: '2026-10-12T03:15:00Z'
-next_action: package_accepted_index_leakage; independently_check_frozen_centre_filter; complete_current_implementation_derivation
+lock_refresh_before_utc: '2026-10-12T03:45:00Z'
+next_action: publish_frozen_centre_and_current_lemmas; independently_check_next_frozen_derivations
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -41,18 +43,18 @@ current_memory_published_science_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20
 quantitative_memory_parent_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20252
 quantitative_memory_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9482
 quantitative_memory_published_science_revision: ba74c93aab9185d62a9711695dc931446f67c8ba
-latest_candidate_law_revision: 100a6fc7bf476d011bb47e18045e60bb810b2b5d
+latest_candidate_law_revision: a2153dbddb720dc595b0037e42277a54d39f643e
 boost_parent_revision: b9b032ae790c66e762a6296a1306bfb64ae7cd70
 rigidity_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9483
 rigidity_published_science_revision: aeee46fa0e2879038eec1b8ee8a1e173ac77518e
 boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9484
 boost_published_science_revision: 773321aa8fdfccc05248682dfc96bf94215034a2
-latest_chiral_revision: bc81b65a4d3e2fa081b759832dfc2f1e976c8b26
+latest_chiral_revision: 3334ba2bdb6014c580a48f10bf6622245815d965
 latest_main_revision: a13caa4885f547c8d206265b031ba7649e539fd9
 index_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9485
 index_published_science_revision: b8402c17d337f371c0c73696ef170727de9ab5bd
 scattering_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9486
-scattering_published_science_revision: 5cbc581504721a323f5fa2064694a67141a3ee98
+scattering_published_science_revision: f6f4348151734908dea3b32048ee1f36f694035b
 active_parent_pr_url: null
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162

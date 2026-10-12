@@ -430,3 +430,16 @@ coefficient. The plus sum has transverse-sign coordinate -3 and scaled
 coordinate 6. The minus sum has transverse-sign coordinate 3 and
 swapped-dot coordinate -1. Three times the cap of the other span is not
 in this count. The ten-kernel coefficient span is not classified.
+Cycle 69 shows that one swapped-dot generator plus three times the cap
+of the other ratio span has partner rank 10 at every chirality
+coefficient on every ordered height pair. The plus-dot sum has
+transverse-sign coordinate 3 and scaled coordinate 6. The minus-dot sum
+has transverse-sign coordinate -3 and swapped-dot coordinate -1. Each
+sum lies in neither ratio span and outside the even space. The two sums
+are linearly independent. The maximal-minor gcd is a nonzero constant.
+The plus-dot pivot gcd has degree 3 on (1, 2), (2, 1), and (3, 1), and
+degree 7 on the other three pairs. The minus-dot pivot gcd has degree 7
+on every pair. Both swapped-dot generators plus three times the cap of
+one ratio span are not in this count. The same-span and other-span
+triples do not share a partner-rank mechanism. The ten-kernel
+coefficient span is not classified.

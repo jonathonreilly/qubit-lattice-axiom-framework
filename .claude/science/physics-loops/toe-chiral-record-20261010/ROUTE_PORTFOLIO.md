@@ -361,3 +361,10 @@ the same ratio span. Partner rank is 7 only at chirality coefficient 0.
 Every nonzero coefficient has partner rank 10. The scaled coordinate is
 `6`. It does not take three times the cap of the other span, and it
 does not classify the 300-dimensional affine space.
+
+Cycle 69 takes one swapped-dot generator plus three times the cap of
+the other ratio span. Every chirality coefficient has partner rank 10.
+The swapped-dot coordinate is `1` or `-1` and the scaled coordinate is
+`6`. It does not take both swapped-dot generators plus three times the
+cap of one ratio span, and it does not classify the 300-dimensional
+affine space.

@@ -1,0 +1,15 @@
+loop: toe-compact-patch-fock-20261012
+mode: milestone_snapshot
+delivery: milestone
+active_branch: physics-loop/toe-compact-patch-scattering-20261011
+base_revision: 7f4c1a23d1acb7bec85a6aabc78addd2fc70cb00
+target_claim_type: bounded_theorem
+actual_current_surface_status: conditional-support
+milestone: selected_component_Fock_isometry
+provisional_dependency: supplied_compact_scattering_S1_through_S4_and_F1_unique_gapped_vacuum
+independent_check: complete_separate_reconstruction_no_required_correction
+strongest_unresolved_obligation: constructive_full_GNS_exhaustion
+pr_status: reviewed_extension_for_regular_PR9486
+next_action: publish_extension_then_continue_constructive_exhaustion
+live_checkpoint: toe-dynamics-bridge-20261009_in_transport_worktree
+stop_condition: fixed_campaign_deadline_2026-10-12T16:00:52Z

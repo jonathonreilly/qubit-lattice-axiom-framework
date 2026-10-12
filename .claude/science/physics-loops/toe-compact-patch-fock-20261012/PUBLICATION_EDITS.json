@@ -1,0 +1,81 @@
+{
+  "outputs": [
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md",
+      "source_sha256": "9bc3a309e8fc35978bcac0c360b8557fb6a3c4484cfc2034a277a94072369404",
+      "preserved_source": "evidence/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "# Compact-patch Fock inner products and isometric wave operators",
+          "after": "---\nclaim_id: compact_patch_fock_isometry_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: \"Under the compact-patch construction's supplied conditions and a unique gapped vacuum, selected mass/centre components have permanent scattering Gram matrices and covariant isometric Fock embeddings. Full-GNS exhaustion and boost covariance remain open.\"\nupstream_dependencies:\n  - compact_patch_scattering_covariance_bounded_theorem_note_2026-10-11\nrunner: scripts/compact_patch_fock_isometry_2026_10_12.py\nactual_current_surface_status: conditional-support\n---\n\n# Compact-patch Fock inner products and isometric wave operators",
+          "reason": "Add explicit conditional claim metadata and the actual scientific dependency."
+        },
+        {
+          "before": "**Author status:** conditional support, independent review pending.",
+          "after": "**Status:** conditional-support; complete source review found no required correction.",
+          "reason": "Record the completed selective source review, without audit or retained status."
+        },
+        {
+          "before": "[COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md](/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md)",
+          "after": "[compact-patch construction](COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md), whose complete frozen author source is preserved in its publication packet",
+          "reason": "Make the full upstream theorem available in the same PR; preserve the original source identity below."
+        },
+        {
+          "before": "Its own claim labels are not proof inputs. No Y1/RZ or other changed science is certified.",
+          "after": "Its bytes were also verified unchanged at PR9476 revision `0cc560e3935fa1ad7623592bf9974680c922d52d`. Its own claim labels are not proof inputs. No Y1/RZ, RV4 or other changed science is certified.",
+          "reason": "Record the latest completed identity-only refresh without adopting concurrent science."
+        },
+        {
+          "before": "- The present Fock proof needs its own independent reconstruction, particularly the energy restriction, mixed-chart contraction, recursion and density steps.",
+          "after": "- The complete Fock proof received a separate reconstruction of the energy restriction, mixed-chart contraction, full recursion and density steps. The review found no required correction; this is a source check, not an applied audit verdict or retained status.",
+          "reason": "Replace the now-completed review obligation with its actual scope and result."
+        },
+        {
+          "before": "The source ledger, complete primary texts, declared-timeout author checks, full outputs and freeze receipt are in compact_patch_fock_isometry/. The checks concern algebra and finite-dimensional controls; they do not turn this author derivation into independent review or supply any physical premise.",
+          "after": "The [Fock milestone packet](../.claude/science/physics-loops/toe-compact-patch-fock-20261012/) preserves the complete original note, source ledger, author checks, full outputs, separate review and pre-author-control reconstruction. PUBLICATION_EDITS.json and reconstruct.py recover this publication from those frozen sources. Complete third-party papers and page extractions remain in the external research directory, with exact hashes and official URLs in EVIDENCE_MAP.json. The finite controls concern algebra; they do not supply a physical premise or replace the analytic proof.",
+          "reason": "Provide self-contained original research evidence while keeping primary papers external."
+        },
+        {
+          "before": "A single execution of check_fock_algebra.py used a declared 60-second timeout",
+          "after": "The original author execution of the [finite Fock control](../scripts/compact_patch_fock_isometry_2026_10_12.py) used a declared 60-second timeout",
+          "reason": "Link the actual preserved control and distinguish its author execution from publication replay."
+        },
+        {
+          "before": "No earlier compact-patch control was rerun or treated as a proof of these new claims. These are author controls, not independent reconstruction. Stationary phase, clustering, spectral density and the Hilbert-space extension require the written proofs and checked primary hypotheses.",
+          "after": "No earlier compact-patch control was treated as a proof of these new claims. These author controls are distinct from the independent reconstruction. The separate review is `bc88af1dda77065d8806da9d689546547f40847a340177086793dab5f3a277cf`; its pre-author-control reconstruction is `85f4d93458c6f00ede645e6d2ac272084dc0cd053b66801b25db8574586df484`, frozen before the reviewer opened the author source, logs or receipt. The reviewer reconstructed the complete analytic argument and checked the original BDN and NS hypotheses/proofs. Separately written finite matrix and occupation-polynomial controls checked the algebra. The later exact author rerun reproduced its output; that rerun is reproduction, not an independent implementation. Root proposed the regular-shell route and is a contributor. Stationary phase, clustering, spectral density and the Hilbert-space extension rest on the written proofs and checked primary hypotheses. No Lean verification, full-GNS completeness, physical realization or retained status is claimed. Publication execution and its exact limits are in DELIVERY_CHECKS.md in the milestone packet.",
+          "reason": "Record the completed independent analytic check and distinguish each evidence role."
+        },
+        {
+          "before": "\\boxed{\\ \n",
+          "after": "\\boxed{\n",
+          "reason": "Remove trailing presentation-only TeX padding; formulas and proof are unchanged."
+        },
+        {
+          "before": "ication, full-GNS completeness, physical realization or retained status is claimed. Publication execution and its exact limits are in DELIVERY_CHECKS.md in the milestone packet.\n\n\n",
+          "after": "ication, full-GNS completeness, physical realization or retained status is claimed. Publication execution and its exact limits are in DELIVERY_CHECKS.md in the milestone packet.\n",
+          "reason": "Normalize only end-of-file blank lines."
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "docs/COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "494c283c163e88f959841462bbfbcfcc7c470072a0525d0dd6e2b44dd6f9b12b"
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/compact_patch_fock_isometry/check_fock_algebra.py",
+      "source_sha256": "c46a7d3ebef131324caf477a12ea25e9e57a47a0b86c408e7234ebc644822fdc",
+      "preserved_source": "evidence/compact_patch_fock_isometry/check_fock_algebra.py.gz",
+      "edits": [
+        {
+          "before": "from collections import Counter\n",
+          "after": "AUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md\",\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: exact control assertions must be enabled\")\n\nfrom collections import Counter\n",
+          "reason": "Declare timeout and source inputs; reject optimized assertions; control body unchanged."
+        }
+      ],
+      "appended_text": "\nprint(\"per_element: exact noncommutative word and symbolic Hessian identities checked\")\nprint(\"per_site: exact finite cyclic hard-core energy bounds for one to three sites checked\")\nprint(\"per_mode: exact velocity inverse formulas and mixed-mass overlap fixture checked\")\nprint(\"per_block: complete finite-word recursion checked; normalization enumeration is bookkeeping only\")\nprint(\"lattice_wide: checked and not executed \u2014 clustering, spectral density and Fock extension are analytic proof obligations\")\nprint(\"TOTAL: PASS=9 FAIL=0\")\nprint(\"SCOPE: nine finite control records; no analytic Fock proof, physical realization, full-GNS exhaustion or audit verdict from this runner\")\n",
+      "publication_path": "scripts/compact_patch_fock_isometry_2026_10_12.py",
+      "publication_sha256": "bbc868bbd1cf7d7a6d2c61467014cafed4b77485f289c1a9d9339c98a7c6ff96"
+    }
+  ]
+}

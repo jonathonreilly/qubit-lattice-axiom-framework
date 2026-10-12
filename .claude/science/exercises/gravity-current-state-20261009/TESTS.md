@@ -3236,3 +3236,20 @@ Launch order: R6-1, R6-2, R6-3 and R6-5 now; R6-4 when a slot frees; R6-6 only o
 
 ---
 
+
+### C5 Round 7, item 1 (pre-registered 14:46Z; launched now; conditional on R6-1, whose referee is running)
+
+**R7-1. Box-confined Poincaré: does R6-1's non-analytic trick also break the boost wall?**
+- R6-1's worker (unrefereed) builds an exactly additive real momentum on Z² fermions. The interactions are switched off smoothly outside a box |k_i| < a < π/2, with C^∞ non-quasi-analytic form factors and sub-exponential tails.
+- The boost wall (C3/I1/RB/RFW, refereed) comes from the lattice momentum's cos k factor and from the analytic, periodic structure.
+- Take the same non-analytic freedom in the dispersion: ε(k) = √(m² + k²) exactly inside the box, extended smoothly and periodically outside. Take interactions supported in the box.
+- Does there exist:
+  - a boost generator K on the box-supported sector, closing [K, P], [K, H] and [K, K] exactly on states whose momenta stay in the box under the boosts considered, i.e. a local Poincaré algebra with a rapidity cutoff;
+  - an exact Ward identity for a linearized graviton coupled to the box sector?
+
+  Quantify what fails at the box edge: leakage under finite boosts, and whether "approximately local in rapidity" is good enough to evade C3/I1.
+
+Readings:
+- **PASS:** an explicit finite-per-site law (fermionic allowed, as for R6-1) with an exact Poincaré algebra on a stated box sector and a stated rapidity range, plus the leakage bound, checked.
+- **FAIL:** a no-go showing the box sector cannot carry exact boosts even with a rapidity cutoff (refereed).
+- **INCONCLUSIVE:** otherwise.

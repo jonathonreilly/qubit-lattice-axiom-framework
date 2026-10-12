@@ -2997,3 +2997,234 @@ Readings:
 - **PASS:** the frame stays coherent for all observed propagation (decoherence rate below stated bounds), so the ensemble □ is the observed law, with prices named.
 - **FAIL:** propagation decoheres the frame within observed scales, so per-realization physics, and the R4-1 obstruction, return.
 - **INCONCLUSIVE:** otherwise.
+
+### C5 Round 6 (pre-registered 14:30Z from the S5 synthesis, agents/C5_S5_synthesis.md; readings fixed as drafted below)
+
+Launch order: R6-1, R6-2, R6-3 and R6-5 now; R6-4 when a slot frees; R6-6 only on its stated condition. Draft text verbatim from S5 §5:
+
+
+**Rules (as for rounds 2–5).**
+- Probes: Opus 5.5 at xhigh.
+- Every FAIL, REFUTED, EXCLUDED or no-go goes to the codex gpt-5.6-sol (xhigh) referee before it is recorded.
+- Prices are named, never adopted.
+- Each probe greps the repository and packet for prior art first and counts each match once.
+- Hypotheses are stated before titles; excluded outside realizations are listed.
+- Derivation readings: DERIVED / SUGGESTED / REFUTED, as at `TESTS:2315-2318`.
+
+**Overlap check against R5-1..R5-4.**
+- R6-1 excludes LRL (covered by R5-1/R5-4).
+- R6-3 concerns count fluctuations, not ⟨Λ⟩ (R5-3).
+- R6-6 is conditional on R5-2 and tests stability only.
+
+**Priority:** R6-1, R6-2, R6-3, R6-4, R6-5; R6-6 conditional.
+
+---
+
+**R6-1. Exact additive momentum from finite-per-site interacting laws (sets B and C; the continuum-from-qubits problem)**
+
+- **Plain question.** Every exact-graviton route on a grid needs momentum that adds up exactly in collisions. The known obstructions are piecemeal:
+  - a 1D qubit chain's shift cannot be interpolated continuously by strictly local maps (Lemma G);
+  - a finite one-particle fibre cannot carry the Z⁴ Ward identity (R2-1);
+  - umklapp-free interactions are impossible in analytic and meromorphic classes (RG).
+
+  Does the obstruction hold for interacting qubit lattices in d ≥ 2? Or is there a door: a momentum defined only on scattering states, or an internal symmetry V carrying the shift's index (T = UV)?
+- **Setting.** Quasi-local spin systems on ⊗_{Z^d} M₂(C), d = 2, 3, with:
+  - (i) strict-range QCA paths;
+  - (ii) approximately local automorphism groups with Lieb–Robinson tails;
+  - (iii) Heisenberg dynamics of quasi-local Hamiltonians with nontrivial 2→2 scattering (Haag–Ruelle on the lattice).
+
+  Euclidean B enters through the OS-reconstructed transfer matrix on Z³ × Z_τ. LRL is excluded.
+- **Prior art (count once).**
+  - O2 Lemmas S and G (`TESTS:2392-2394`; `C5_O2_referee_full.md:195,333`);
+  - I1 referee on T = UV and GNVW/RWW conventions (`C4_I1_referee.md:15`);
+  - RN2 (`SUMMARY:395`; `C4_N1_referee.md`);
+  - R2-1 Theorem T (`TESTS:2748-2751`);
+  - RG G1 umklapp-free classes (`TESTS:1023-1028,1080`);
+  - RS (`PRICE_NOTE:323`).
+- **Probes.**
+  - (a) **Index in d ≥ 2.** Prove or refute that no continuous path, and no strongly continuous one-parameter group α_s with α_1 = the unit lattice shift, exists among:
+    - strict-range QCAs, using flow per unit cut length;
+    - approximately local automorphisms, extending RWW from 1D; state exactly which d ≥ 2 index theorem is used, or prove the needed one.
+  - (b) **T = UV.** Under what conditions can an on-site-generated internal symmetry V carrying the inverse shift index commute with an interacting dynamics with nonzero scattering? Does V force an infinite on-site or one-particle structure (P10)?
+  - (c) **Asymptotic-only charge.** Assume a lattice S-matrix that conserves quasi-momentum modulo the reciprocal lattice. Prove or refute: an additive ℝ^d-valued charge extending quasi-momentum on asymptotic states exists only if every umklapp amplitude vanishes. Then search outside RG's classes for a nonzero-scattering umklapp-free qubit law: integrable, kinematically constrained, or non-analytic.
+  - (d) **Transfer to Z⁴.** Carry (a)–(c) to the OS-reconstructed Euclidean Z⁴ transfer matrix; state what reflection positivity adds.
+- **FIXED readings** (derivation):
+  - **DERIVED:** (a) and (c) proved in a stated class covering interacting finite-per-site laws in d ≥ 2. In that class, an exact graviton Ward identity on any grid set then requires the continuum. Record: "grid sets pay tuning or import the continuum (class …)".
+  - **SUGGESTED:** argued only, for (a) or (c); record which.
+  - **REFUTED:** an explicit finite-per-site interacting law in d ≥ 2 with nonzero 2→2 scattering and an exact additive ℝ^d asymptotic momentum, checked numerically on scattering data.
+- **Expectation.**
+  - (a) DERIVED for strict-range paths, SUGGESTED for approximately local ones.
+  - (c) SUGGESTED.
+  - Overall SUGGESTED. There is a real REFUTED risk from integrable umklapp-free sectors.
+
+---
+
+**R6-2. Can any set produce the graviton? A Weinberg–Witten sorting with the B′ specifics**
+
+- **Plain question.** In every set the graviton is put in by hand. The Weinberg–Witten theorem says a Lorentz-invariant theory with a Lorentz-covariant conserved stress tensor has no massless spin-2 particle. So an emergent graviton needs one of the theorem's assumptions to fail:
+  - Lorentz invariance;
+  - a covariant T;
+  - a particle pole;
+  - locality or holography.
+
+  Which sets can produce, rather than supply, a graviton that couples universally to matter's energy-momentum?
+- **Setting.** The four sets as defined (`TESTS:2424-2428,2647-2651`). Matter: the minimal content each set's refereed results allow. Graviton: any emergent massless helicity-±2 mode.
+- **Prior art (count once).**
+  - `B_referee.md:47,175` (WW hypotheses and exits);
+  - `OUTSIDE_VIEW.md:39`;
+  - lane R on Z³: Gu–Wen and rank-2 models, the exact-constraint N-type theory live, its coupling to matter's T open (`TESTS:714-767`);
+  - O2 Lemma W (`TESTS:2386-2389`);
+  - R2-6 (non-additive momentum kills the soft coupling).
+- **Probes.**
+  - (a) Per set, state WW's hypotheses and check each against the set's refereed low-energy content: an IR Lorentz-covariant conserved T^{μν} with nonzero forward one-particle matrix elements, and particle poles.
+  - (b) **B′ specifics.**
+    - A realization has only Γ_L. Does WW's small-angle helicity argument go through with Γ_L alone, using Zariski density and Lemma Z (`TESTS:2925`)?
+    - Does multiparticle umklapp (`TESTS:2791`) spoil the covariance of the forward matrix element?
+  - (c) **B specifics.** WW concerns IR matrix elements. Does dimension-4 Lorentz protection with dimension-6 breaking (`C5_O5_synthesis.md:132`) suffice for its hypotheses?
+  - (d) **C specifics.** Can the lane-R N-type graviton couple universally to matter's energy-momentum? State the minimal speed tunings: the graviton–matter Collins split (`TESTS:719`).
+  - (e) **Exits.** For each exit (holography, non-particle gravity, non-covariant T as in GR's pseudotensor), say which set's axioms could host it and at what price.
+- **FIXED readings, per set:**
+  - **PRODUCIBLE:** a stated mechanism evades WW in that set, with universal coupling to matter's energy-momentum and the prices named.
+  - **SUPPLIED-FORCED:** WW's hypotheses are shown to hold in that set's low-energy content, so the graviton must be an elementary gauge field (supplied). Referee required.
+  - **OPEN:** otherwise.
+- **Expectation.**
+  - A: SUPPLIED-FORCED.
+  - B: SUPPLIED-FORCED at the IR level, or OPEN.
+  - B′: OPEN, leaning SUPPLIED-FORCED via Lemma Z.
+  - C: OPEN; WW is evaded by Lorentz violation, and universal coupling is the barrier.
+
+---
+
+**R6-3. Lemma V: does the Lorentz-random lattice's count fluctuate like a volume? Does lensing silence exclude Poisson-size Λ fluctuations?**
+
+- **Plain question.** Everpresent Λ gets its size from the number of events in our past fluctuating like a Poisson count. Poisson events are excluded by lensing. The Lorentz-random grid passes lensing, but its counts looked sub-Poisson through T = 108.
+  - Does its count in a causal diamond or past cone of size T fluctuate as T⁴, slower, or faster?
+  - Is there a general trade-off between lensing silence and Poisson-size count fluctuation?
+- **Setting.**
+  - The cocompact L₇ LRL ensemble, with the Haar measure on ISO⁺(1,3)/(L ⋊ Γ_L) (`C5_R2-2_referee.md:9`).
+  - Windows: causal diamonds D_T and truncated past cones, each sharp and smoothed.
+  - Comparators: Poisson at equal density, and Z⁴ in two frames.
+- **Prior art (count once).**
+  - R4-5 numerics and Lemma V (`TESTS:2943`; `C5_R4-5_referee_verdict.md:13,15`);
+  - P-L′ (`TESTS:2712`);
+  - O5 remark 1, quantum forward-cone volume law (`C5_O5_synthesis.md:447-453`);
+  - E2/E3 frozen hyperuniform sets, spatial (`TESTS:243-263`);
+  - Siegel densities (`TESTS:2905`).
+- **Probes.**
+  - (a) **Variance formula.** Write Var N(W) = ∫ S(q)|Ŵ(q)|², with S = the Haar average of the Bragg combs, i.e. a sum over shells Q(n) of the Siegel mass times the invariant measure on q² = (2π)²Q(n)/7. State convergence.
+  - (b) **Shell asymptotics.** Find the asymptotics in T of ∫_{q²=c}|Ŵ_T|² dμ for sharp diamonds and past cones. Null boundaries make Ŵ decay slowly along null directions, where the hyperboloids accumulate. Find the exponent and the shell-sum convergence.
+  - (c) **Numerics.** Extend R4-5 to larger T with sampling that is genuinely Haar on the quotient (R4-1's sampling correction, `TESTS:2909`). Fit with and without a T⁴ term.
+  - (d) **Trade-off lemma.** For a Lorentz-invariant classical stationary point process with no structure-factor support for 0 < |q²| < c, prove or refute o(T⁴) count variance in diamonds.
+    - Smooth windows: expected easy, since there is no support in the Euclidean ball of radius √c.
+    - Sharp windows: the real case.
+  - (e) **Λ size.** Translate the result into δΛ/Λ_obs under R4-5's three premises (`TESTS:2939`).
+- **FIXED readings.**
+  - For the LRL count:
+    - **VOLUME:** Var ∝ T⁴ with a computed F > 0; state the resulting δΛ/Λ_obs.
+    - **SUB-VOLUME:** o(T⁴) proved for sharp diamonds and past cones; record "everpresent-Λ magnitude excluded on LRL under the three premises" (referee required).
+    - **DIVERGENT:** the shell sum diverges for sharp windows; report the regularization dependence.
+    - **OPEN:** otherwise.
+  - For (d) (derivation): **DERIVED / SUGGESTED / REFUTED.**
+- **Expectation.**
+  - Smooth windows: SUB-VOLUME (DERIVED).
+  - Sharp windows: OPEN, leaning SUB-VOLUME with boundary-dominated growth.
+  - (d): SUGGESTED.
+
+---
+
+**R6-4. Set A: can the records be the classical metric? (covariant classical–quantum gravity against the decoherence–diffusion bounds)**
+
+- **Plain question.** In set A the records either do nothing for gravity or need a preferred slicing. In classical–quantum (CQ) gravity, the metric is classical: it is a record of where the mass is. It must then diffuse enough to keep quantum mechanics consistent, and lab experiments bound both the diffusion and the decoherence it causes. The simplest version is excluded by 32 decades. Does any version survive?
+  - a smeared one;
+  - the diffeomorphism-invariant one.
+
+  And would its metric record satisfy "one record per site, permanent"?
+- **Setting.** The variants:
+  - (i) Newtonian CQ with a smearing length ℓ_s (non-ultralocal);
+  - (ii) the diffeomorphism-invariant CQ-GR candidate cited in R3-4 (Oppenheim–Weller-Davies);
+  - (iii) the Record reading: the metric history as the record set.
+
+  Bounds:
+  - Cs-133 at 1.9 µm for 70 s; 25 kDa molecules; ion coherence (`TESTS:2538-2541`);
+  - torsion-balance and Cavendish mass-precision diffusion bounds, as published, verified or labelled from memory.
+- **Prior art (count once).**
+  - R3-4 E2 (`TESTS:2776`; `C5_R3-4_referee_verdict.md:13`);
+  - R4-4 Lemma N: a classical channel gives zero entanglement (`TESTS:2935`), so a BMV-type positive result would exclude every variant; state that as a falsifier;
+  - R2-3 Bianchi lemmas (`TESTS:2722`);
+  - O4 Lemma 1 (`TESTS:2408`).
+- **Probes.**
+  - (a) Derive the decoherence–diffusion trade-off for (i) as a function of ℓ_s, and find the allowed window in ℓ_s.
+  - (b) For (ii), state whether the covariant theory has a computed weak-field trade-off. If it does, apply the bounds; if not, say what is missing.
+  - (c) Energy-momentum: does CQ diffusion source a Λ-like drift? Compare with R4-5's 17-decade Bianchi gap (`TESTS:2944`).
+  - (d) Record reading:
+    - Is a diffusing classical metric a set of permanent, one-per-site records in a block sense?
+    - Which axiom text changes? Name the price.
+- **FIXED readings, per variant:**
+  - **VIABLE:** passes the stated bounds with named prices.
+  - **EXCLUDED:** violates a stated bound for every parameter in the variant (referee required).
+  - **OPEN:** otherwise.
+- **Expectation.**
+  - (i): a narrow VIABLE window at macroscopic ℓ_s, or EXCLUDED.
+  - (ii): OPEN.
+  - (iii): a reading with a Record price.
+
+---
+
+**R6-5. Set C's dimension-3 price: CPT-odd terms the axioms' proper-only rotations allow**
+
+- **Plain question.** The axioms name only proper cubic rotations (`AX:37-41,57-58`). That allows two CPT-odd terms of dimension 3 (`TESTS:1440`):
+  - an axial chemical potential b₀ for fermions;
+  - a photon Chern–Simons term (k_AF)₀.
+
+  Their natural size on a Planck lattice would be near the cutoff, while observation bounds (k_AF) to about 6e-43 GeV (`C5_O1_report.md:49`, partially verified). Are they generated? How large are they? Is the cheapest fix a tuning, or a symmetry added to the law?
+- **Setting.**
+  - Z³ × ℝ, with a gauge-invariant local Hamiltonian lattice law covariant under translations and proper cubic rotations only: no inversion and no antiunitary symmetry.
+  - Matter: naive/staggered or Wilson-type fermions with compact U(1); then chiral content as R2-4 allows.
+  - Sets B and B′ are excluded: V = 0 and Zariski density forbid invariant vectors (`TESTS:2379`; `TESTS:2788`).
+- **Prior art (count once).**
+  - F2 referee (`TESTS:1440`);
+  - O1's counts and dimension-3 note (`C5_O1_report.md:82,104,242-245`);
+  - the R2-4 chirality and CP scope (`C5_R2-4_referee.md:44-63`).
+- **Probes.**
+  - (a) An explicit local law in the class with b₀ ≠ 0 at natural size: a Weyl-node energy offset.
+  - (b) Is (k_AF)₀ induced? Points to settle:
+    - compact lattice U(1) admits no local A·B term;
+    - the equilibrium chiral-magnetic response vanishes on lattices (Vazifeh–Franz, RECALLED; verify);
+    - so state whether k_AF is PROTECTED, or induced through non-equilibrium or non-compact sectors.
+  - (c) Observational bounds on b₀ for electron, proton and neutron (torsion pendulum, comagnetometer, boost-suppressed timelike components) and on k_AF (CMB). Verify or label from memory. Give the tuning in decades.
+  - (d) The cheapest symmetry price: law-level CPT, i.e. CRT with spatial inversion, added to Lattice/Admissibility covariance. Is it compatible with chiral SM content and doublers/tastes on the lattice? Name the axiom text it touches.
+- **FIXED readings.**
+  - **TUNING-PRICED:** an explicit law in the class generates the term(s) at a computed natural size; state the tuning in decades against the stated bounds.
+  - **SYMMETRY-PRICED:** a stated symmetry forbids them, is compatible with chiral content, and the axiom text it touches is named.
+  - **PROTECTED:** proved forbidden by gauge invariance, locality, hermiticity and the axioms as written; C's price does not grow.
+  - **INCONCLUSIVE:** otherwise.
+  - More than one reading may apply, one per operator.
+- **Expectation.**
+  - b₀: TUNING-PRICED, by tens of decades.
+  - (k_AF)₀: PROTECTED or suppressed in equilibrium (OPEN risk).
+  - SYMMETRY-PRICED is available through law-level CPT, at a Lattice-text cost.
+
+---
+
+**R6-6 (conditional: run only if R5-2 returns PASS or INCONCLUSIVE with an explicit kernel). Stability of an LRL d'Alembertian**
+
+- **Plain question.** R4-3 found that the representative five-shell kernel has a growing mode that e-folds in about two lattice times. Does any Γ_L-invariant retarded kernel whose mean is □ have no such mode? That includes R5-2's infinite-orbit kernel, if it exists.
+- **Setting.**
+  - Retarded Γ_L-invariant kernels on L₇, finite-shell and infinite-orbit, with Haar mean □ + O(a²).
+  - Symbols in the forward tube (Prop. R, `TESTS:2787`).
+- **Prior art (count once).**
+  - R4-3's tube zeros (`TESTS:2927`; `C5_R4-3_referee_verdict.md:15`);
+  - R4-1's weights (`TESTS:2905`);
+  - Aslanbeigi–Saravani–Sorkin on stability of causal-set d'Alembertians (comparator, `C5_R4-3_referee_verdict.md:15`).
+- **Probes.**
+  - (a) An argument-principle certificate for forward-tube zeros of the mean symbol over a stated domain.
+  - (b) Construct a moment-cancelled family with no tube zero, or prove that every family in a stated class has one.
+  - (c) Apply (a) to R5-2's kernel.
+- **FIXED readings.**
+  - **PASS:** an explicit kernel with mean □ + O(a²) and a certified zero-free forward-tube symbol.
+  - **FAIL:** a proof that every kernel in a stated class has a forward-tube zero (referee required).
+  - **INCONCLUSIVE:** otherwise.
+- **Expectation.** INCONCLUSIVE. Stable families are known for causal-set d'Alembertians in some dimensions (comparator, RECALLED); whether moment cancellation on LRL shells allows one is open.
+
+---
+

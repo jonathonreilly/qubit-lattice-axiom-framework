@@ -5570,3 +5570,22 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Price:** P-r16-10a.
 
   Referee running.
+
+#### C5 Round 16 referee verdicts, items 6–8 (recorded 23:50Z; codex gpt-5.6-sol, xhigh)
+
+- **R16-6 referee: NOT CONFIRMED (the PASS). Reading INCONCLUSIVE.**
+  - **What holds.** g = (κ/3)(ρ_tot − R)′, so g ≡ 0 is exactly GR with one constant subtraction, R = ρ_tot − C. Choosing C = ρ_v,late avoids R15-1's signalling and reproduces the checked histories.
+  - **Theorem NA holds:** no causal reader handles branches with unequal late vacua.
+  - **Why it is not a PASS.** C = ρ_v,late is obtained only by stipulating the law's T = 0 gravitational zero, and IE imposes its integration constant exactly. Without a derived symmetry, constraint or mechanism, these are the same late-vacuum counterterm and precision cancellation as Lemma PT, i.e. a tuning.
+  - **Why it is not a FAIL.** The tuned g ≡ 0 counterexample defeats the universal FAIL clause.
+  - **Consequence:** the R15-1 signalling is not forced by inflation, but Λ removal without tuning and without signalling is not shown.
+- **R16-7 referee: CONFIRMED WITH CORRECTIONS. Reading INCONCLUSIVE.** The narrower NOT-PRODUCED-EVIDENCE is not permitted, because the physical U(1) control did not pass.
+  - **Theorem B holds after correction.** With consistent V^{−1/2} normalization, the TT-electric f-sum is O(k⁴) for quasi-local rotor or quantum-link H with an exact integer vector Gauss law. So the normalized probes obey the Bogoliubov bound, and a nonvanishing TT-electric susceptibility forces an E_TT-connected excitation with ω ≤ Ck².
+  - **What it does not do:** it does not identify the optimized probe ratio with the physical metric susceptibility.
+  - **Theorem D holds in Hessian/PSD form.**
+  - **Not reached:** the non-lifted, microscopically constraint-violating N-type at U ~ J ~ g.
+- **R16-8 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN.**
+  - **The tail.** The 1/r² kernel and the Bianchi-fixed non-TT 1/r⁴ linear curvature tail are confirmed, as is the box-inertness under a smooth placement.
+  - **Not physical non-locality.** The curvature transforms under the completed momentum constraint. No closed degree-3 system or invariant physical domain exists, and no bounded gauge-invariant instantaneous responder has been built.
+  - **Lemma A and the (α)/(β) fork do not close.**
+  - **P-pf1** shares the zone-mean root but relocates the cost to a discontinuous 1/n matter generator.

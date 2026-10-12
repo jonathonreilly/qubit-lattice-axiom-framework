@@ -1,0 +1,107 @@
+{
+  "EnergyAdapted/baseline": {
+    "name": "baseline",
+    "role": "original_baseline",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/runs/baseline_inner.receipt.json",
+      "bytes": 18279,
+      "sha256": "bb73185b81d5c1f6d450c808aee68c3f9afbbdf13388362f0a6c70818713290c"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/runs/baseline_inner.stdout.txt",
+      "bytes": 28178,
+      "sha256": "adf4694de02854c40b68ac8ffa312261e7aa9b4b97e797a103a9cd6aec5c245c"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/runs/baseline_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 238,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/candidate.py",
+    "original_arguments": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/check_controls.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/candidate.py"
+    ],
+    "library_provenance": "Original receipts record Python/interpreter, not per-run library versions. ENVIRONMENT.json is a later observation; no historical library lock is invented."
+  },
+  "EnergyAdapted/drop_jacobian": {
+    "name": "drop_jacobian",
+    "role": "original_mutant",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/runs/drop_jacobian_inner.receipt.json",
+      "bytes": 18302,
+      "sha256": "c782e4a4645a0bd4afdba87f54c8117e45c27a26e3a6f000b85f39481581f88c"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/runs/drop_jacobian_inner.stdout.txt",
+      "bytes": 28031,
+      "sha256": "7c9e5731a04b2479deb78766668cc21f148f6c2dbc530e9fc6df1b2912328234"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/runs/drop_jacobian_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 190,
+      "failed": 48
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/variants/drop_jacobian.py",
+    "original_arguments": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/check_controls.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/variants/drop_jacobian.py"
+    ],
+    "library_provenance": "Original receipts record Python/interpreter, not per-run library versions. ENVIRONMENT.json is a later observation; no historical library lock is invented."
+  },
+  "EnergyAdapted/reverse_cell_phase": {
+    "name": "reverse_cell_phase",
+    "role": "original_mutant",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/runs/reverse_cell_phase_inner.receipt.json",
+      "bytes": 18317,
+      "sha256": "fe41b07ea44c7214673772e2935b19456b74a28887dfda629eb83de12139da69"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/runs/reverse_cell_phase_inner.stdout.txt",
+      "bytes": 28192,
+      "sha256": "42e7b20565b32bafe09d9740bca3ffee2c3fc63b20236913868c888336afb384"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/runs/reverse_cell_phase_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 226,
+      "failed": 12
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/variants/reverse_cell_phase.py",
+    "original_arguments": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/check_controls.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/variants/reverse_cell_phase.py"
+    ],
+    "library_provenance": "Original receipts record Python/interpreter, not per-run library versions. ENVIRONMENT.json is a later observation; no historical library lock is invented."
+  }
+}

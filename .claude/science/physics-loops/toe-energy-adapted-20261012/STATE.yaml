@@ -1,0 +1,10 @@
+loop: toe-energy-adapted-20261012
+mode: milestone_snapshot
+delivery: milestone
+base_revision: 0d99401253ebf5790b5ac24a2dcb94a74871f874
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+root_role: route_coauthor
+root_acceptance_at_preparation: bound
+canonical_execution_at_preparation: pending_root_execution
+independent_landing_gates: pending

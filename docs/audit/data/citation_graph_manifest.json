@@ -1,6 +1,6 @@
 {
- "edge_count": 15476,
- "node_count": 6896,
+ "edge_count": 15482,
+ "node_count": 6897,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5709,6 +5709,10 @@
   "endpoint_localization_three_route_discriminator_cycle705_note_2026-07-26": {
    "deps_hash": "4a2a6080dd99",
    "out_degree": 4
+  },
+  "energy_adapted_refinement_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "dc64b7472c92",
+   "out_degree": 6
   },
   "energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",

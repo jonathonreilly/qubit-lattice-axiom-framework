@@ -1,0 +1,81 @@
+{
+  "status": "actual_scoped_verification_completed",
+  "base": "0d99401253ebf5790b5ac24a2dcb94a74871f874",
+  "canonical": [
+    {
+      "key": "EnergyAdapted",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/energy_adapted_worktree/logs/runner-cache/energy_adapted_refinement_2026_10_12.txt",
+        "bytes": 64139,
+        "sha256": "529971d9c828b3bbc47386ee1cbfdbe33b7917e84a079ed97b8f6e1c7abebaf9"
+      },
+      "counts": {
+        "passed": 238,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "baseline",
+          "role": "original_baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 238,
+            "failed": 0
+          },
+          "elapsed_seconds": 2.4762423331849277,
+          "timeout_seconds": 60
+        }
+      ]
+    }
+  ],
+  "nonbaseline": [
+    {
+      "key": "EnergyAdapted",
+      "cases": [
+        {
+          "name": "drop_jacobian",
+          "role": "original_mutant",
+          "exit_code": 1,
+          "counts": {
+            "passed": 190,
+            "failed": 48
+          },
+          "elapsed_seconds": 0.8234752081334591,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "reverse_cell_phase",
+          "role": "original_mutant",
+          "exit_code": 1,
+          "counts": {
+            "passed": 226,
+            "failed": 12
+          },
+          "elapsed_seconds": 0.5761348339729011,
+          "timeout_seconds": 60
+        }
+      ],
+      "nonbaseline_successes": [],
+      "interpretation": "Both original material mutant jobs, every failure and every survivor remain; no new independent science or mutation design"
+    }
+  ],
+  "graph_delta": {
+    "nodes": 1,
+    "edges": 6
+  },
+  "pairing": "Same selected model family and reasoning effort; separate reviewer context with a neutral plan sealed before target exposure and independent evidence sealed before author helpers/results exposure. Target formulas were exposed after that plan. Root coauthored the route. This is not blinded or diverse-family review. Packaging and reproduction add no independent science or audit.",
+  "scientific_edits": [],
+  "originals_preserved": true,
+  "lean_recompiled": false,
+  "comparison_mapping": "Only the exact candidate pathname token is relocated. All other stdout/stderr bytes exact; actual Python/interpreter checked against original receipts. Historical per-run library versions are not asserted.",
+  "not_run": [
+    "independent scientific controls",
+    "old milestone science",
+    "Lean compilation or installation",
+    "global combined audit",
+    "strict audit lint"
+  ],
+  "audit_verdict_applied": false,
+  "retained_promotion": false,
+  "git_or_pr_mutation": false
+}

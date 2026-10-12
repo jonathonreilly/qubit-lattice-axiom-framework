@@ -1,0 +1,572 @@
+{
+  "schema": "deduplicated_complete_own_evidence_v1",
+  "objects": [
+    {
+      "sha256": "0089e0a05fb6de5fe1c29be1abfac2d3af785d946a50e1f3d0a337df599ad28f",
+      "bytes": 91841,
+      "compressed_sha256": "352ab62bc2322ee1a0fdf7ddd2ca6209886bc76c38a2457bd8ccedf1769943d5",
+      "preserved": "preparation_evidence/0089e0a05fb6de5fe1c29be1abfac2d3af785d946a50e1f3d0a337df599ad28f.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/SOURCE_FREEZE.json"
+      ]
+    },
+    {
+      "sha256": "02940f00caa65e237c705e900b1ad24c0b0cb420c53b46b2d71c90cd5626ea08",
+      "bytes": 28006,
+      "compressed_sha256": "9e1470422b88e0785325e91f9356f78d296e46415f4df32429559a746a872259",
+      "preserved": "validation_evidence/02940f00caa65e237c705e900b1ad24c0b0cb420c53b46b2d71c90cd5626ea08.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/drop_jacobian/comparison_expected.stdout",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/drop_jacobian/observed.result_raw",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/drop_jacobian/observed.stdout"
+      ]
+    },
+    {
+      "sha256": "05170ea8db22dc485679cf52cee652a8820e1668e565545b421d3f463e4d1c66",
+      "bytes": 1465,
+      "compressed_sha256": "ce87abe757921f42c5794eebfe3490705b27338d1adc55aa7ec5c547f4dde482",
+      "preserved": "validation_evidence/05170ea8db22dc485679cf52cee652a8820e1668e565545b421d3f463e4d1c66.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/vocabulary_fix/execution.json"
+      ]
+    },
+    {
+      "sha256": "0621c9aae038fdd5128054071d1439ba8fb608e737564e59c5b03c64a3c6bb34",
+      "bytes": 1338,
+      "compressed_sha256": "e710541ac9236466a03d66a81f34e5137190731d0b5d054d8177a489e5c12a13",
+      "preserved": "validation_evidence/0621c9aae038fdd5128054071d1439ba8fb608e737564e59c5b03c64a3c6bb34.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/baseline/comparison.json"
+      ]
+    },
+    {
+      "sha256": "0d248ee5ec6e40cbd7a6c20f3e39cd55c5ec0958bf8adb6f38589d2329d2bdac",
+      "bytes": 1394,
+      "compressed_sha256": "a90e17444971d5e004dff0dce1c4a4bbc7d5690ec62d6178106585404a15c069",
+      "preserved": "validation_evidence/0d248ee5ec6e40cbd7a6c20f3e39cd55c5ec0958bf8adb6f38589d2329d2bdac.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/graph.comparison.json"
+      ]
+    },
+    {
+      "sha256": "0e21f658072e0e6b4464b1ebc15bd710fb5d95deb128eee9e12b22c49eb940fa",
+      "bytes": 63787,
+      "compressed_sha256": "0778e8ebe4408e4da7a7c8b6d1346193b71c9dfac3f9e031853086af43ecf1f9",
+      "preserved": "validation_evidence/0e21f658072e0e6b4464b1ebc15bd710fb5d95deb128eee9e12b22c49eb940fa.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/stdout"
+      ]
+    },
+    {
+      "sha256": "0fbda0ee0f28849145cbb441518dea121df7f5709fcc1e09ef4e3ef201bf8222",
+      "bytes": 1222,
+      "compressed_sha256": "b798b5a5db0b008e9d7662dca28f350f86a0c0343b84e179fc947f81496101fb",
+      "preserved": "validation_evidence/0fbda0ee0f28849145cbb441518dea121df7f5709fcc1e09ef4e3ef201bf8222.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/execution.json"
+      ]
+    },
+    {
+      "sha256": "11c63618211a6f6871713c6e6f4848a50f76d427aee99fc2e9593a1a786af391",
+      "bytes": 283,
+      "compressed_sha256": "0b4ede45faee1eccf9e07ed09f9e0eee70a3159bc45bc5456f0220be10008641",
+      "preserved": "validation_evidence/11c63618211a6f6871713c6e6f4848a50f76d427aee99fc2e9593a1a786af391.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/vocabulary_fix/stdout"
+      ]
+    },
+    {
+      "sha256": "15be3c4308f4e90eb7cfd61022dcf05e2d15ed0f321bcf0d4d0ee96db6202f34",
+      "bytes": 19295,
+      "compressed_sha256": "e4be1e83f17e305c61e6deb32a63b56fa8368ded3d4f3d04742fcaaed069daae",
+      "preserved": "validation_evidence/15be3c4308f4e90eb7cfd61022dcf05e2d15ed0f321bcf0d4d0ee96db6202f34.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/finalized_declared_inputs.json"
+      ]
+    },
+    {
+      "sha256": "2162a116b4a7be2b7c14c79250ac5179a9560b55ec5470f1f5970aa37f4ebf91",
+      "bytes": 2752,
+      "compressed_sha256": "86c657bfa226bb6fd3469067621723a055e08e52f80d206650f22245caababb0",
+      "preserved": "validation_evidence/2162a116b4a7be2b7c14c79250ac5179a9560b55ec5470f1f5970aa37f4ebf91.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/VERIFICATION_RESULT.json"
+      ]
+    },
+    {
+      "sha256": "279f9a3271a5069551d62e3e5c410b66f4fe7b1eeb44b70409728f4d9fb1b3e4",
+      "bytes": 229,
+      "compressed_sha256": "cdfce10c546386af2d4501212297d077fe23f0fa3d9f1d7fdc9efe31244d1de4",
+      "preserved": "validation_evidence/279f9a3271a5069551d62e3e5c410b66f4fe7b1eeb44b70409728f4d9fb1b3e4.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/reconstruct_after_executions/stdout",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/reconstruct_after_vocabulary_fix/stdout",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/reconstruct_before_vocabulary/stdout"
+      ]
+    },
+    {
+      "sha256": "28a315b1e15942049bbe6135c12a25151e874e2b7612e616a8241d650ae32e60",
+      "bytes": 292,
+      "compressed_sha256": "1e9c9610b7280ea8b96cd6bb4cee44d3a294adfb334b825c29ddcb0914780e7e",
+      "preserved": "validation_evidence/28a315b1e15942049bbe6135c12a25151e874e2b7612e616a8241d650ae32e60.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/final_vocabulary_report/stdout"
+      ]
+    },
+    {
+      "sha256": "2a2068fe35d39737a22c0cf683961cd375ef05b8c8fb11e6c3c7d35877d15b3f",
+      "bytes": 1058,
+      "compressed_sha256": "9c9d78fd53ceeb8c36c22f0f8813f0fc2f6770196ccfb556eb203cb51a5920eb",
+      "preserved": "validation_evidence/2a2068fe35d39737a22c0cf683961cd375ef05b8c8fb11e6c3c7d35877d15b3f.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/initial_status/execution.json"
+      ]
+    },
+    {
+      "sha256": "2a986491bb9dbc25b3f4c1bf2e7d5e82a91e705b475e146f28f65445aa1f2f4f",
+      "bytes": 1365,
+      "compressed_sha256": "d37d813e829bc0cafc8a390e29cffb6315a4f51ad13b7056876f422cf97fe687",
+      "preserved": "validation_evidence/2a986491bb9dbc25b3f4c1bf2e7d5e82a91e705b475e146f28f65445aa1f2f4f.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/reverse_cell_phase/comparison.json"
+      ]
+    },
+    {
+      "sha256": "2b8998a293e6cc99e2aea11c195c734f4a3f8fc967546013bb29790c7171a0ee",
+      "bytes": 77,
+      "compressed_sha256": "f437e92664f485f4d2abb521ed1d9ee1938e514ed111d5d067ceeed91eb0a913",
+      "preserved": "validation_evidence/2b8998a293e6cc99e2aea11c195c734f4a3f8fc967546013bb29790c7171a0ee.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/graph_manifest/stdout"
+      ]
+    },
+    {
+      "sha256": "42e7b20565b32bafe09d9740bca3ffee2c3fc63b20236913868c888336afb384",
+      "bytes": 28192,
+      "compressed_sha256": "20ed27094cdd9a62656c613c4188b08d221916c5f6e134cabafdb531dddd0f48",
+      "preserved": "evidence/42e7b20565b32bafe09d9740bca3ffee2c3fc63b20236913868c888336afb384.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/reverse_cell_phase/original.stdout"
+      ]
+    },
+    {
+      "sha256": "44fd488a5d3121ae9b417c9efc3c1603ce69baa06e12d38fe638749c27d46e70",
+      "bytes": 1080,
+      "compressed_sha256": "d01a2b3859275fafb44256e454fa7de864381ce9cda23f056c4478cf53b4150a",
+      "preserved": "validation_evidence/44fd488a5d3121ae9b417c9efc3c1603ce69baa06e12d38fe638749c27d46e70.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/graph_build/execution.json"
+      ]
+    },
+    {
+      "sha256": "4674c23d8d0e241c087862a2b3c83903cad01a3d5c3fd7ca0b2218f4291df374",
+      "bytes": 62938,
+      "compressed_sha256": "80282d4db76fc33729a4e8ef071c59e556726184e672e778521b123ec97002bd",
+      "preserved": "validation_evidence/4674c23d8d0e241c087862a2b3c83903cad01a3d5c3fd7ca0b2218f4291df374.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/drop_jacobian/observed.envelope.json"
+      ]
+    },
+    {
+      "sha256": "4678b3ffc58885e5d68094b00039f81d9dfaf240469ea032d527fa2a3a59e46e",
+      "bytes": 1197,
+      "compressed_sha256": "f9e670d558c9803a1ac6bfb9232ca45961aa338dc967453d40874023a81e3124",
+      "preserved": "validation_evidence/4678b3ffc58885e5d68094b00039f81d9dfaf240469ea032d527fa2a3a59e46e.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/reconstruct_after_executions/execution.json"
+      ]
+    },
+    {
+      "sha256": "49040bfe0da9ac40ea4534a8883cb0ff7ac0ba409f18a5b9bcc1006c016507f5",
+      "bytes": 1086,
+      "compressed_sha256": "c5da9b60063098b08a6583ff19f4bd09ed1a029b83abe7e8502706dde48e9839",
+      "preserved": "validation_evidence/49040bfe0da9ac40ea4534a8883cb0ff7ac0ba409f18a5b9bcc1006c016507f5.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/graph_manifest/execution.json"
+      ]
+    },
+    {
+      "sha256": "49df509d5e4f0066a63e7db2b963c955ef5445acf2713b981ca31500300e32a6",
+      "bytes": 1094,
+      "compressed_sha256": "31fc496b8e6c9c7a92695d2132fc30ea4355affc6c72614df1b64cda6f0ae8e3",
+      "preserved": "validation_evidence/49df509d5e4f0066a63e7db2b963c955ef5445acf2713b981ca31500300e32a6.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/base_manifest/execution.json"
+      ]
+    },
+    {
+      "sha256": "4e0ff59a2e91448ada7dc004c64eee41ca220186bb35dde3c358651c6beb8e97",
+      "bytes": 1355,
+      "compressed_sha256": "4db3d70dfead0cb86c6c045def3107da4c16c55bc1a61379e295b1644d11ed6d",
+      "preserved": "validation_evidence/4e0ff59a2e91448ada7dc004c64eee41ca220186bb35dde3c358651c6beb8e97.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/drop_jacobian/comparison.json"
+      ]
+    },
+    {
+      "sha256": "517e5421107a1820ffbc5b1859cacf12bea5743c5795b6b24b12b1ae8c3b42f4",
+      "bytes": 63470,
+      "compressed_sha256": "db18b38d9a7adcb118bd57c82cd7fa46ebd3fcecae3d458c41b42b5b97a9513d",
+      "preserved": "validation_evidence/517e5421107a1820ffbc5b1859cacf12bea5743c5795b6b24b12b1ae8c3b42f4.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/stdout"
+      ]
+    },
+    {
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "bytes": 153,
+      "compressed_sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "preserved": "validation_evidence/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/final_vocabulary_report.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/vocabulary_fix.json",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/vocabulary_report.json"
+      ]
+    },
+    {
+      "sha256": "529971d9c828b3bbc47386ee1cbfdbe33b7917e84a079ed97b8f6e1c7abebaf9",
+      "bytes": 64139,
+      "compressed_sha256": "9a8cea51b9d5a8759bca241488a1e24b9b5e0702bda502f6dbfff1bb106c6c00",
+      "preserved": "validation_evidence/529971d9c828b3bbc47386ee1cbfdbe33b7917e84a079ed97b8f6e1c7abebaf9.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/canonical.cache"
+      ]
+    },
+    {
+      "sha256": "52eb11629f5df2d2cf1c19d78af52e3d7e1db585078a0732b3bfcd2acdbe72e9",
+      "bytes": 64129,
+      "compressed_sha256": "fe2e985903df0133a076cd5a5d7253ff4fc9bb0f448eb8fe9bb6f3c4f4048d3b",
+      "preserved": "validation_evidence/52eb11629f5df2d2cf1c19d78af52e3d7e1db585078a0732b3bfcd2acdbe72e9.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/INNER.raw.pickle"
+      ]
+    },
+    {
+      "sha256": "54bf757d75bead0fe3d56099de1f4e9dd5303abcfcce42bcc4fc807210517576",
+      "bytes": 63786,
+      "compressed_sha256": "21fcb4b18a95d1b4a743b8f8b228e2ea4a085a278110df5c99dfe38cdaf64d73",
+      "preserved": "validation_evidence/54bf757d75bead0fe3d56099de1f4e9dd5303abcfcce42bcc4fc807210517576.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/canonical.stdout"
+      ]
+    },
+    {
+      "sha256": "59732e3a32a51cbf799ebc612bb16d276ed1c5a9509ce67dc36486359d59f2ae",
+      "bytes": 281,
+      "compressed_sha256": "2e386a527b458c15124c39c47da60d91eaee158c79c61d2d5a48fdde01966716",
+      "preserved": "validation_evidence/59732e3a32a51cbf799ebc612bb16d276ed1c5a9509ce67dc36486359d59f2ae.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/graph_build/stdout"
+      ]
+    },
+    {
+      "sha256": "66f25692b9ee4828a77f27d8d577853ea53b064979eb8bbb56d03fb81cdfa8e7",
+      "bytes": 4661,
+      "compressed_sha256": "1ad1feb01c9d9421e3c62a9e7e30097f7b0bb79bcc05150f844e515b95f1686b",
+      "preserved": "validation_evidence/66f25692b9ee4828a77f27d8d577853ea53b064979eb8bbb56d03fb81cdfa8e7.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/metadata_and_links.json"
+      ]
+    },
+    {
+      "sha256": "77accf0254bfe8eff71469c54919dacd7a5e4a16f78800a534c3ded3effd1cc0",
+      "bytes": 1014,
+      "compressed_sha256": "75c0d77daf3e3160b8431600ac303ce54b47765e8eb1c9164f038c7645c434e6",
+      "preserved": "validation_evidence/77accf0254bfe8eff71469c54919dacd7a5e4a16f78800a534c3ded3effd1cc0.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/initial_head/execution.json"
+      ]
+    },
+    {
+      "sha256": "7c9e5731a04b2479deb78766668cc21f148f6c2dbc530e9fc6df1b2912328234",
+      "bytes": 28031,
+      "compressed_sha256": "18b96929bc9e1a40b60b6dbcb7d59f224f2ae26dc49b5a399da1d14f5d35d212",
+      "preserved": "evidence/7c9e5731a04b2479deb78766668cc21f148f6c2dbc530e9fc6df1b2912328234.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/drop_jacobian/original.stdout"
+      ]
+    },
+    {
+      "sha256": "7cd68d35e7305d5709dc1bbde0f63f02e46dd053b5f7606dc118523ebed2eed5",
+      "bytes": 33988,
+      "compressed_sha256": "af8afaf63e3179c473735d91327076654c444e8fd2deeb1c2b801f68c4d4eb24",
+      "preserved": "preparation_evidence/7cd68d35e7305d5709dc1bbde0f63f02e46dd053b5f7606dc118523ebed2eed5.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/program.py"
+      ]
+    },
+    {
+      "sha256": "83f57ab0053feacdf80bb012908185b77c1324a5494af50d74d64f52073411f8",
+      "bytes": 63255,
+      "compressed_sha256": "0179d4c4b7d2cc908302df1f5a4047da377680fab29b2938cc9c5a7189664312",
+      "preserved": "validation_evidence/83f57ab0053feacdf80bb012908185b77c1324a5494af50d74d64f52073411f8.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/reverse_cell_phase/observed.envelope.json"
+      ]
+    },
+    {
+      "sha256": "87c470f67d79560d1c5700faf3b94d77710f66dc686d5fe35ad79201d3660e7c",
+      "bytes": 1197,
+      "compressed_sha256": "c9a3f265190ee609c8ddd9dd40b9fbce776cf413a4ff7fbff7a1db03201177f4",
+      "preserved": "validation_evidence/87c470f67d79560d1c5700faf3b94d77710f66dc686d5fe35ad79201d3660e7c.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/reconstruct_after_vocabulary_fix/execution.json"
+      ]
+    },
+    {
+      "sha256": "8ccae3a77f83d9a4407ab95740e7020047fd4e1258a3f9aa93e2dab527318a35",
+      "bytes": 1482,
+      "compressed_sha256": "2085826408057781deb1f9b5ecc03b9ff4e9dcb8f3d14df9420e3c27911f5ef3",
+      "preserved": "validation_evidence/8ccae3a77f83d9a4407ab95740e7020047fd4e1258a3f9aa93e2dab527318a35.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/final_vocabulary_report/execution.json"
+      ]
+    },
+    {
+      "sha256": "8de94042fa3e99b36c794ac3649c617dd89785e8607fdc9e2ff3ffc9c0eedb5b",
+      "bytes": 1008,
+      "compressed_sha256": "0105c4037a4d85544df53b8c29290b6165a7be879fca7803b318a9c19a4b0d14",
+      "preserved": "validation_evidence/8de94042fa3e99b36c794ac3649c617dd89785e8607fdc9e2ff3ffc9c0eedb5b.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/invocation.json"
+      ]
+    },
+    {
+      "sha256": "8ed8b2d9da5b64d9c921ca007f165c8d01e093f23dc438497c9085694556a1ab",
+      "bytes": 1476,
+      "compressed_sha256": "cc1dfdd3cff2cd23b289bda95d06b3ebd838e0b68852a2165f34bb1c03bbcd25",
+      "preserved": "validation_evidence/8ed8b2d9da5b64d9c921ca007f165c8d01e093f23dc438497c9085694556a1ab.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/vocabulary_report/execution.json"
+      ]
+    },
+    {
+      "sha256": "94b0f32b5d449c0f34b04e2ece52777f9005316d1e05fe77d06ae907cb864ab4",
+      "bytes": 986687,
+      "compressed_sha256": "afb759f80b27a9db92cebe4b760192211e422eb1f1cb4da88ec69d1739e3230c",
+      "preserved": "validation_evidence/94b0f32b5d449c0f34b04e2ece52777f9005316d1e05fe77d06ae907cb864ab4.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/citation_graph_manifest.complete.json"
+      ]
+    },
+    {
+      "sha256": "a5544e0dfeef1625d9622944c5c822a86c7ce806b4027efb4210d3c9317530dc",
+      "bytes": 1022,
+      "compressed_sha256": "b3f39afc90ac8d0d990f91b3fc43055dfdae5e8ae812cadbe5465d90824014b7",
+      "preserved": "validation_evidence/a5544e0dfeef1625d9622944c5c822a86c7ce806b4027efb4210d3c9317530dc.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/initial_branch/execution.json"
+      ]
+    },
+    {
+      "sha256": "a92d3e2de9f86ca0dd9ab6c6f0873fb763ee0d9cbec9f0bc443542951c3499f0",
+      "bytes": 41,
+      "compressed_sha256": "4049892a7a413cd253883df8f715c73406df1f6d4fda76215b60c95ff97148d9",
+      "preserved": "validation_evidence/a92d3e2de9f86ca0dd9ab6c6f0873fb763ee0d9cbec9f0bc443542951c3499f0.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/initial_head/stdout"
+      ]
+    },
+    {
+      "sha256": "adf4694de02854c40b68ac8ffa312261e7aa9b4b97e797a103a9cd6aec5c245c",
+      "bytes": 28178,
+      "compressed_sha256": "6161770e455e7c477c2c707fee49a246fb9adc7aa85e419d7163c2b9387ffd9c",
+      "preserved": "evidence/adf4694de02854c40b68ac8ffa312261e7aa9b4b97e797a103a9cd6aec5c245c.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/baseline/original.stdout"
+      ]
+    },
+    {
+      "sha256": "b8cb2a18188b1948faebf4f5649bc28a8f54e59781fbdb88e3bdbd0bbb6c6613",
+      "bytes": 74719,
+      "compressed_sha256": "d3e657ac45d147f02db1983e2740f47e0998a2ab0eae8b9518c4e4579ad20acb",
+      "preserved": "validation_evidence/b8cb2a18188b1948faebf4f5649bc28a8f54e59781fbdb88e3bdbd0bbb6c6613.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/INNER.raw.json"
+      ]
+    },
+    {
+      "sha256": "ba9a4941bcadeed1deec57dbb521ee2ae7027c264ace17a8e42f8ed78856ef96",
+      "bytes": 1196,
+      "compressed_sha256": "59abbc9e2297e5e1e34d7c3c8d5b7ba0c272c145d3248f0d1582cd9595bbb54b",
+      "preserved": "validation_evidence/ba9a4941bcadeed1deec57dbb521ee2ae7027c264ace17a8e42f8ed78856ef96.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/reconstruct_before_vocabulary/execution.json"
+      ]
+    },
+    {
+      "sha256": "bf98ac234fc5aad6550dd04b6c91eaf3474b0d462dabfd54b243a46f0058a0dc",
+      "bytes": 28162,
+      "compressed_sha256": "c57b82c1b085db13564c08f07c18541225d852ed4439b22942300b3d5fc3a96e",
+      "preserved": "validation_evidence/bf98ac234fc5aad6550dd04b6c91eaf3474b0d462dabfd54b243a46f0058a0dc.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/reverse_cell_phase/comparison_expected.stdout",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/reverse_cell_phase/observed.result_raw",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/reverse_cell_phase/observed.stdout"
+      ]
+    },
+    {
+      "sha256": "c3730643aba5e1b3d7624780125cccf70db967c4a600544ccbf835923af009c8",
+      "bytes": 240,
+      "compressed_sha256": "d0b83457ade576f1c019b141fa31eeb6211d086e88bd85d1312ced53250e34e0",
+      "preserved": "validation_evidence/c3730643aba5e1b3d7624780125cccf70db967c4a600544ccbf835923af009c8.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/focused_compatibility/stdout"
+      ]
+    },
+    {
+      "sha256": "c3e0dfcb34fb0e409144c574d66d56ba6e2ce4b404392be4256c1455886b70ac",
+      "bytes": 286,
+      "compressed_sha256": "8e30a19166417f6811c80d52d2147d9d2151053af9ca3f3553294ba19f70f235",
+      "preserved": "validation_evidence/c3e0dfcb34fb0e409144c574d66d56ba6e2ce4b404392be4256c1455886b70ac.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/vocabulary_report/stdout"
+      ]
+    },
+    {
+      "sha256": "c5aad0bc9773e39468e526a827d04fef3c6d503fbfb4209c40f1b1e97e5c212e",
+      "bytes": 75012,
+      "compressed_sha256": "df807e5ab463ac171a9d4ef5f7369c09d890576b3a4c63789127e009b95d73b0",
+      "preserved": "validation_evidence/c5aad0bc9773e39468e526a827d04fef3c6d503fbfb4209c40f1b1e97e5c212e.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/OUTER.raw.json"
+      ]
+    },
+    {
+      "sha256": "c923847984b4c5b9b29783de36b69dffaaa27199cfcdb4fcbdc4abc93cb3cb85",
+      "bytes": 64323,
+      "compressed_sha256": "d8bc1ed6d73a8f3f6d9b8044925b98677a2ebadd23216d9a66d5b4a44954d00f",
+      "preserved": "validation_evidence/c923847984b4c5b9b29783de36b69dffaaa27199cfcdb4fcbdc4abc93cb3cb85.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/OUTER.raw.pickle"
+      ]
+    },
+    {
+      "sha256": "cc1be1f6881a7b94c0c0441b17acac5f5f1794340b7c32f4020906ed714c014b",
+      "bytes": 1186,
+      "compressed_sha256": "b8e21a32a082c1d4bd55bf32d3d9a8ec8771155acd48efb467a182fa9431be11",
+      "preserved": "validation_evidence/cc1be1f6881a7b94c0c0441b17acac5f5f1794340b7c32f4020906ed714c014b.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/focused_compatibility/execution.json"
+      ]
+    },
+    {
+      "sha256": "d5179cd3faf133ab1728be6794175e1e6eab761b250e0c626151d4425df307fc",
+      "bytes": 28166,
+      "compressed_sha256": "d9a233c9e991a8282c3a0557cc66b5facc0bd0a172a93f7d198ef64d02d2bddd",
+      "preserved": "validation_evidence/d5179cd3faf133ab1728be6794175e1e6eab761b250e0c626151d4425df307fc.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/baseline/comparison_expected.stdout",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/baseline/observed.result_raw",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/baseline/observed.stdout"
+      ]
+    },
+    {
+      "sha256": "da550e9b8a1c166e193d65a83e32d768c1152233d2baf99e65ea48be652848e9",
+      "bytes": 233,
+      "compressed_sha256": "64e3b94defc73b2187e6e5498532e0b5f0198b0a03ff6c7c78ac18201cdeb0d1",
+      "preserved": "validation_evidence/da550e9b8a1c166e193d65a83e32d768c1152233d2baf99e65ea48be652848e9.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/focused_scope.json"
+      ]
+    },
+    {
+      "sha256": "db7789eb6a46690a0f27f32a9f47041460ea5afe970956e143031e121da9c949",
+      "bytes": 41,
+      "compressed_sha256": "eda2f4ed0e2603170230b48eb2f9763a66858d3ac92c32e37642f14ee6a5a622",
+      "preserved": "validation_evidence/db7789eb6a46690a0f27f32a9f47041460ea5afe970956e143031e121da9c949.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/initial_branch/stdout"
+      ]
+    },
+    {
+      "sha256": "e24c302c23e3ecbba801d265297083d6a5b64c41a506cf405bf796dbffd8c57b",
+      "bytes": 10123508,
+      "compressed_sha256": "72259695b2bb7ef4e8661908ccf1e0cd4f362184740f5313c6561ea5b35b7864",
+      "preserved": "validation_evidence/e24c302c23e3ecbba801d265297083d6a5b64c41a506cf405bf796dbffd8c57b.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/citation_graph.complete.json"
+      ]
+    },
+    {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "compressed_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "preserved": "evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/base_manifest/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/baseline/comparison_expected.stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/baseline/observed.stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/baseline/original.stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/canonical.stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/final_vocabulary_report/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/focused_compatibility/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/graph_build/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/graph_manifest/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/initial_branch/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/initial_head/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/initial_status/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/initial_status/stdout",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/drop_jacobian/comparison_expected.stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/drop_jacobian/observed.stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/drop_jacobian/original.stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/reverse_cell_phase/comparison_expected.stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/reverse_cell_phase/observed.stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/reverse_cell_phase/original.stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/reverse_cell_phase/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/reconstruct_after_executions/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/reconstruct_after_vocabulary_fix/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/reconstruct_before_vocabulary/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/vocabulary_fix/stderr",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/vocabulary_report/stderr"
+      ]
+    },
+    {
+      "sha256": "e4e3ad4008ebe0856e71d7abaf5b5a3bdf5b158de7caa93ffb8d77a75c94a1a7",
+      "bytes": 63987,
+      "compressed_sha256": "aed866945fbe5954fae86578e09a1ddd1cf31ee9ecb76a0f81471be1c6c8c656",
+      "preserved": "validation_evidence/e4e3ad4008ebe0856e71d7abaf5b5a3bdf5b158de7caa93ffb8d77a75c94a1a7.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/INNER.live_log.complete"
+      ]
+    },
+    {
+      "sha256": "e76d946e4955f1b54815b7c43ac8447d0fe13970fc61cf497a574a3cca6035df",
+      "bytes": 986566,
+      "compressed_sha256": "547943b9c2863772c33cf994e48ecf4cf7bb59293c2dedceecc8501a2839bd84",
+      "preserved": "preparation_evidence/e76d946e4955f1b54815b7c43ac8447d0fe13970fc61cf497a574a3cca6035df.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/base_manifest/stdout"
+      ]
+    },
+    {
+      "sha256": "eea27c6c9711c7c975850825f90e30d65f4493dbe20994973ae63fe9b771de4a",
+      "bytes": 63255,
+      "compressed_sha256": "a19732e505713781bcd4a06761e336c26ea93a65173bb77598e3826ba4d0b8db",
+      "preserved": "validation_evidence/eea27c6c9711c7c975850825f90e30d65f4493dbe20994973ae63fe9b771de4a.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/canonical/EnergyAdapted/baseline/observed.envelope.json"
+      ]
+    },
+    {
+      "sha256": "eec75773a1fd3a2a5b3b15eb8e80e3d9eb64d8da4e8308286210d1899aaad1bb",
+      "bytes": 494,
+      "compressed_sha256": "df739c4dc5fe0a9a4303c3be62749da22f13cb62a6b4c8be7749e93a6290f5eb",
+      "preserved": "validation_evidence/eec75773a1fd3a2a5b3b15eb8e80e3d9eb64d8da4e8308286210d1899aaad1bb.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/freshness_before_archival.json"
+      ]
+    },
+    {
+      "sha256": "ef25f932b7534330f25ac73cf053a20544bd2f699f63f19dba516e9215ccd52a",
+      "bytes": 1217,
+      "compressed_sha256": "d923d4ed6212c5ad4d9cf9c6943e48dce83f4f4e183d1ae24d882dc6371d2cf8",
+      "preserved": "validation_evidence/ef25f932b7534330f25ac73cf053a20544bd2f699f63f19dba516e9215ccd52a.gz",
+      "originals": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421/nonbaseline/EnergyAdapted/drop_jacobian/execution.json"
+      ]
+    }
+  ],
+  "pairing": "Same selected model family and reasoning effort; separate reviewer context with a neutral plan sealed before target exposure and independent evidence sealed before author helpers/results exposure. Target formulas were exposed after that plan. Root coauthored the route. This is not blinded or diverse-family review. Packaging and reproduction add no independent science or audit."
+}

@@ -1,0 +1,436 @@
+{
+  "mathematical_changes": [],
+  "pairing": "Same selected model family and reasoning effort; separate reviewer context with a neutral plan sealed before target exposure and independent evidence sealed before author helpers/results exposure. Target formulas were exposed after that plan. Root coauthored the route. This is not blinded or diverse-family review. Packaging and reproduction add no independent science or audit.",
+  "outputs": [
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/ENERGY_ADAPTED_REFINEMENT_PROBE.md",
+      "source_sha256": "65d49c82eb14b88e4880983eb8b41ecb5141cb0ff00f4e5e4760bbb12a151b9d",
+      "source_bytes": 27246,
+      "publication_path": "docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "bb8960f33e5fe42093cc1e8a0ffc001430b97061af38c19e6dad2f754ac60ce6",
+      "publication_bytes": 35242,
+      "edits": [
+        {
+          "category": "metadata_and_review_chronology",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\nconditional_surface_status: \"Exact real-CAR state and actual-energy refinement with the same geometric continuum sections; finite support, translation, current and boost compatibility fail for specified witnesses\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nclaim_id: energy_adapted_refinement_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_type_reason: \"Conditional analytic theorem in the supplied free-chain model; finite diagnostics are supporting evidence.\"\nclaim_scope: \"For the supplied massive free one-dimensional chain, dispersion-coordinate even refinements preserve the actual chosen state and energy flow exactly while realizing the same intrinsic Cauchy sections, geometric local quotient and actual fixed mixed-flow limits as Haar refinement.\"\nupstream_dependencies:\n  - concrete_gapped_chain_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n  - continuum_local_boost_bounded_theorem_note_2026-10-12\n  - microscopic_local_boost_limit_bounded_theorem_note_2026-10-12\n  - mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12\n  - dyadic_even_refinement_bounded_theorem_note_2026-10-12\nrunner: scripts/energy_adapted_refinement_2026_10_12.py\nartifact_role: theorem\ntarget_claim_id: null\ntarget_blocker_text: \"Compatibility of exact actual-state and energy refinement with intrinsic geometric sections and actual mixed-flow limits.\"\nsource_of_blocker_text: user_goal\nnext_trace_action: \"Use the proved section-level equivalence while retaining finite-scale support, spatial, current and boost witnesses; no broader physical realization is claimed.\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\nconditional_surface_status: \"Exact real-CAR state and actual-energy refinement with the same geometric continuum sections; finite support, translation, current and boost compatibility fail for specified witnesses\"\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n**Publication chronology and recorder limit:** The scientific source below is frozen at SHA-256 `65d49c82eb14b88e4880983eb8b41ecb5141cb0ff00f4e5e4760bbb12a151b9d`. The final separate source review and root source-bound gate are accepted and archived at the stated bounded scope. Its pending-review language is historical. Section 9 is the post-execution E23 inverse-support sign and small-a clarification, preserved in full. Original recorders start separate nested sessions; the outer timeout cannot guarantee termination of the inner session. All three original jobs actually completed without a timeout. Original stronger timeout wording is retained as a historical statement and qualified here.\n",
+          "occurrences": 1,
+          "reason": "Complete metadata and current/historical review distinction; scientific body unchanged."
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence, chronology and scope\n\n**Author/checker pairing:** Same selected model family and reasoning effort; separate reviewer context with a neutral plan sealed before target exposure and independent evidence sealed before author helpers/results exposure. Target formulas were exposed after that plan. Root coauthored the route. This is not blinded or diverse-family review. Packaging and reproduction add no independent science or audit.\n\nThis construction preserves the supplied actual state and energy flow exactly. Its six direct mathematical parents are [Concrete Gapped Chain](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md), [Local Even Continuum](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md), [Continuum Local Boost](CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md), [Microscopic Local Boost Limit](MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md), [Mixed Local Poincare Correlations](MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md), and [Dyadic Even Refinement](DYADIC_EVEN_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md). The state-adapted construction is referenced and rederived, not imported as a theorem. Its PR is the intended repository parent only. The local-even-net-sections theorem is not an input. General CAR, OAR and inductive-limit machinery remain established prior art.\n\nThe original baseline is 238/0. The two original material mutants are drop-Jacobian 190/48 and reverse-cell-phase 226/12. Their 60 failing predicates and 416 surviving predicates remain, with all 30 diagnostic rows across the three jobs and all six original receipts. Both mutants survive the deliberately loose geometric convergence gate; the wrong phase even gives a smaller finest-scale diagnostic error. These survivors delimit that diagnostic. No threshold, scientific helper or candidate source is changed. The [complete evidence map](../.claude/science/physics-loops/toe-energy-adapted-20261012/EVIDENCE_MAP.json) and [mutation source map](../.claude/science/physics-loops/toe-energy-adapted-20261012/MUTATION_SOURCE_MAP.json) retain the exact original bytes.\n\nSection 9 and the original FINAL_APPENDIX.diff preserve the late E23 correction: the coefficient pullback uses the positive characteristic, while support moves by its inverse. The upward characteristic diagnostic therefore corresponds to the opposite coefficient-group parameter. The eventual aM<2 clarification is also post-execution. Neither clarification is relabeled as preregistered, and neither changes the executed helper.\n\nThe historical recorder uses nested new process sessions. Its outer timeout alone does not guarantee termination of the inner session or its scientific child. All original jobs actually completed without a timeout, and complete inner/outer receipts and streams are retained. Publication reproduction uses the already reviewed wrapper and actual child exit/stream checks; it does not claim to repair or retrospectively certify the original recorder. Original receipts establish interpreter and Python identity. The package inventory was collected afterward and is not a historical per-run library lock. The only permitted stream-comparison change is the exact candidate pathname token, once per job.\n\nThe specified maps fail finite-support locality, common-displacement spatial intertwining, actual-current compatibility and boost intertwining. The transported boost domain retains periodic circle gluing and endpoint singularities. Fixed-observable limits do not imply uniform microscopic-unit-ball estimates, Haar H2 rates, exponential delta tails, growing-word or massless limits, or an all-refinement impossibility theorem. Numerical quadrature and ODE diagnostics are not interval certificates or proofs of the infinite-dimensional domains.\n\nThe [execution contract](../.claude/science/physics-loops/toe-energy-adapted-20261012/EXECUTION_CONTRACT.md) separates canonical execution, the two original mutant jobs and source-only preparation. Canonical reproduction is pending root execution. Source N1–N8 and literal N5 output remain scoped to these specified maps, without a no-go PASS. Independent integrated validation, strict audit lint and formal audit remain landing obligations. No retained promotion, axiom, prompt or audit verdict is introduced.\n\nThe final separate review and root gate support the stated conditional construction; they do not confer retained status or a whole-tree landing PASS. The independent baseline was 15/0; five original reviewer variants retained 63 survivors and 12 failures. All twelve independent receipts and three copied tamper-guard rejections are archived. They are not rerun by this publication program, and the guards make no race-free security claim. The reviewer recomputed 699 numeric author predicates; 15 symbolic/solver booleans remain recorded outcomes rather than independent proofs.\n\nThe reviewer's final-clean assertion failed while concurrent state publication changed the shared worktree. Every immutable energy/parent source identity still matched. The original failed assertion, diagnostic and final source refresh are preserved; review coverage applies to those immutable sources, not the changing packaged tree. Root's first independent-evidence verifier also failed on a bookkeeping filename (stdout versus guard.stdout). Its original script, failure record and empty result directory remain, alongside the narrowly corrected v2 success; no first RESULT is invented and no science was rerun.\n\nThe review makes the source's conjugation shorthand precise: F(-p)=conj(F(p)), D(-p)=-conj(D(p)), and P(-p)=1-conj(P(p)). Frames and time groups preserve real data; the Hermitian generator anticommutes with real conjugation. The same-sequence section equivalence keeps different recursively refined seeds distinct.\n",
+      "mathematical_changes": []
+    },
+    {
+      "kind": "whole_source_orchestration",
+      "publication_path": "scripts/energy_adapted_refinement_2026_10_12.py",
+      "publication_sha256": "23509da198e64bf8e70a4a6013610bd0894badbdb92286e84d1650dd00377481",
+      "publication_bytes": 10098,
+      "template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_publication_preparation/runner_template.py",
+      "template_sha256": "7c10dba0c819420039858cc3f4e076ac76e9d87319d0227ebaea0d5ab56aed78",
+      "literal_substitutions": {
+        "__AUDIT_INPUTS__": "['docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/DYADIC_EVEN_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md', '.claude/science/physics-loops/toe-energy-adapted-20261012/RUNTIME.json', '.claude/science/physics-loops/toe-energy-adapted-20261012/PUBLICATION_EDITS.json', '.claude/science/physics-loops/toe-energy-adapted-20261012/EVIDENCE_MAP.json', '.claude/science/physics-loops/toe-energy-adapted-20261012/MUTATION_SOURCE_MAP.json', '.claude/science/physics-loops/toe-energy-adapted-20261012/EXPECTED_RECORD_IDENTITIES.json', '.claude/science/physics-loops/toe-energy-adapted-20261012/SPECIFICATIONS.json', '.claude/science/physics-loops/toe-energy-adapted-20261012/RUNNER_TEMPLATE.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/reconstruct.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/0d4df5085cbda776e992f4363bb389db8b28044b349cdf8686dcb6ab8aed4fd6.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/1b18e11b3fa3cc9da24b53a06d96358605350391b690efac73202e22dc3a0c31.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/27b3708347c9cede2b909c7d5003e8fb170b18d9eae85cb760786c8f8f5c6b9e.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/2816edbd9b5763f63c675bcb4fccdf7ad6fe965214994bd00dc1bdd55b1d6bf4.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/388ab163be73f7dc8febb6518732faf83fa59fc3dcc448afb6f7efeeaf827ed8.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/51117c510e7694708a310a4271b6f97380d89e90f27d7d7c549e5a4cecc901f5.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/5c08dc60542f8e935e202c0f2add73cc600fe50182679146a69077179c07931e.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/73f3814517a0b6b68997f41d74c1fbe6813438ef358678cdf92cd6579f61239d.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/98169b3bb5ca2f784d7c1dc2f4dd0f0342adffd169eab362e2635c47768893b4.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/a710f498cb728f0a69f63a93e1f8029f61589273b1325a3853852b4dc7d85872.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/b1c5b362d3f8facef7cc6fd3422cf497bdb47c57f3298cf0d6031b0a9253522a.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/c64686fd5fad25c258a61b3925e9d6ad59eca58b87ce2c3cdd794043645dad3d.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/c7126d0c2ab1e3a257c6094f7154d65fa2ee936a6b5e84158e0fc5c02b487e78.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/c7bb400fbc26ee68d767870fafa17424811c35e5d650311f822a69f06f80c457.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/d0d179407916f02e362eaa1360184d546cb261f2a46c1abbab03eff89b5967b7.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/d3678249ce49be99a0f8a6d98333a1defe7f490013399f5960e7412930898b5c.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/d58ea5e4e7b93e285dcbdd746ad7f658e485ccdd835bb75180e88427f76cdce7.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/d8093dcb1e7e8b68faa4a230903a659e1a007aa83116bfe5d61b28f1452eaf87.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/e0465f9496125eb334b92ea017a963468d835b0784799fd663e732966f382894.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/e492688e1aab4c62179f9d0f259225c0c1a2400b05f2389f6f12b458cc471745.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.py', '.claude/science/physics-loops/toe-energy-adapted-20261012/runtime/ec46dc2402444b0423cd5a3ae6601ae3456a992bc133c152080f091f127e5c7e.py']",
+        "__PACKET__": ".claude/science/physics-loops/toe-energy-adapted-20261012",
+        "__KEY__": "EnergyAdapted"
+      },
+      "mathematical_changes": []
+    }
+  ],
+  "runtime_resources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/check_controls.py",
+      "bytes": 6777,
+      "sha256": "78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2",
+      "packet_path": "runtime/78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/candidate.py",
+      "bytes": 1301,
+      "sha256": "2816edbd9b5763f63c675bcb4fccdf7ad6fe965214994bd00dc1bdd55b1d6bf4",
+      "packet_path": "runtime/2816edbd9b5763f63c675bcb4fccdf7ad6fe965214994bd00dc1bdd55b1d6bf4.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/variants/drop_jacobian.py",
+      "bytes": 1301,
+      "sha256": "d58ea5e4e7b93e285dcbdd746ad7f658e485ccdd835bb75180e88427f76cdce7",
+      "packet_path": "runtime/d58ea5e4e7b93e285dcbdd746ad7f658e485ccdd835bb75180e88427f76cdce7.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/variants/reverse_cell_phase.py",
+      "bytes": 1301,
+      "sha256": "e492688e1aab4c62179f9d0f259225c0c1a2400b05f2389f6f12b458cc471745",
+      "packet_path": "runtime/e492688e1aab4c62179f9d0f259225c0c1a2400b05f2389f6f12b458cc471745.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_independent_root_verification_execution_v2/source.py",
+      "bytes": 7376,
+      "sha256": "b1c5b362d3f8facef7cc6fd3422cf497bdb47c57f3298cf0d6031b0a9253522a",
+      "packet_path": "runtime/b1c5b362d3f8facef7cc6fd3422cf497bdb47c57f3298cf0d6031b0a9253522a.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/record_process.py",
+      "bytes": 2846,
+      "sha256": "0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951",
+      "packet_path": "runtime/0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/reproduce.py",
+      "bytes": 1558,
+      "sha256": "27b3708347c9cede2b909c7d5003e8fb170b18d9eae85cb760786c8f8f5c6b9e",
+      "packet_path": "runtime/27b3708347c9cede2b909c7d5003e8fb170b18d9eae85cb760786c8f8f5c6b9e.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement/summarize_evidence.py",
+      "bytes": 2866,
+      "sha256": "d3678249ce49be99a0f8a6d98333a1defe7f490013399f5960e7412930898b5c",
+      "packet_path": "runtime/d3678249ce49be99a0f8a6d98333a1defe7f490013399f5960e7412930898b5c.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/author_snapshot/energy_adapted_refinement/candidate.py",
+      "bytes": 1301,
+      "sha256": "2816edbd9b5763f63c675bcb4fccdf7ad6fe965214994bd00dc1bdd55b1d6bf4",
+      "packet_path": "runtime/2816edbd9b5763f63c675bcb4fccdf7ad6fe965214994bd00dc1bdd55b1d6bf4.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/author_snapshot/energy_adapted_refinement/check_controls.py",
+      "bytes": 6777,
+      "sha256": "78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2",
+      "packet_path": "runtime/78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/author_snapshot/energy_adapted_refinement/record_process.py",
+      "bytes": 2846,
+      "sha256": "0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951",
+      "packet_path": "runtime/0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/author_snapshot/energy_adapted_refinement/reproduce.py",
+      "bytes": 1558,
+      "sha256": "27b3708347c9cede2b909c7d5003e8fb170b18d9eae85cb760786c8f8f5c6b9e",
+      "packet_path": "runtime/27b3708347c9cede2b909c7d5003e8fb170b18d9eae85cb760786c8f8f5c6b9e.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/author_snapshot/energy_adapted_refinement/summarize_evidence.py",
+      "bytes": 2866,
+      "sha256": "d3678249ce49be99a0f8a6d98333a1defe7f490013399f5960e7412930898b5c",
+      "packet_path": "runtime/d3678249ce49be99a0f8a6d98333a1defe7f490013399f5960e7412930898b5c.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/author_snapshot/energy_adapted_refinement/variants/drop_jacobian.py",
+      "bytes": 1301,
+      "sha256": "d58ea5e4e7b93e285dcbdd746ad7f658e485ccdd835bb75180e88427f76cdce7",
+      "packet_path": "runtime/d58ea5e4e7b93e285dcbdd746ad7f658e485ccdd835bb75180e88427f76cdce7.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/author_snapshot/energy_adapted_refinement/variants/reverse_cell_phase.py",
+      "bytes": 1301,
+      "sha256": "e492688e1aab4c62179f9d0f259225c0c1a2400b05f2389f6f12b458cc471745",
+      "packet_path": "runtime/e492688e1aab4c62179f9d0f259225c0c1a2400b05f2389f6f12b458cc471745.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/candidate_formula.py",
+      "bytes": 1308,
+      "sha256": "c64686fd5fad25c258a61b3925e9d6ad59eca58b87ce2c3cdd794043645dad3d",
+      "packet_path": "runtime/c64686fd5fad25c258a61b3925e9d6ad59eca58b87ce2c3cdd794043645dad3d.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/independent_suite.py",
+      "bytes": 11361,
+      "sha256": "d0d179407916f02e362eaa1360184d546cb261f2a46c1abbab03eff89b5967b7",
+      "packet_path": "runtime/d0d179407916f02e362eaa1360184d546cb261f2a46c1abbab03eff89b5967b7.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/inner_supervisor.py",
+      "bytes": 1971,
+      "sha256": "98169b3bb5ca2f784d7c1dc2f4dd0f0342adffd169eab362e2635c47768893b4",
+      "packet_path": "runtime/98169b3bb5ca2f784d7c1dc2f4dd0f0342adffd169eab362e2635c47768893b4.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_helper/candidate_formula.py",
+      "bytes": 1366,
+      "sha256": "51117c510e7694708a310a4271b6f97380d89e90f27d7d7c549e5a4cecc901f5",
+      "packet_path": "runtime/51117c510e7694708a310a4271b6f97380d89e90f27d7d7c549e5a4cecc901f5.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_helper/independent_suite.py",
+      "bytes": 11361,
+      "sha256": "d0d179407916f02e362eaa1360184d546cb261f2a46c1abbab03eff89b5967b7",
+      "packet_path": "runtime/d0d179407916f02e362eaa1360184d546cb261f2a46c1abbab03eff89b5967b7.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_helper/inner_supervisor.py",
+      "bytes": 1971,
+      "sha256": "98169b3bb5ca2f784d7c1dc2f4dd0f0342adffd169eab362e2635c47768893b4",
+      "packet_path": "runtime/98169b3bb5ca2f784d7c1dc2f4dd0f0342adffd169eab362e2635c47768893b4.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_helper/integrity_guard.py",
+      "bytes": 1359,
+      "sha256": "5c08dc60542f8e935e202c0f2add73cc600fe50182679146a69077179c07931e",
+      "packet_path": "runtime/5c08dc60542f8e935e202c0f2add73cc600fe50182679146a69077179c07931e.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_helper/outer_capture.py",
+      "bytes": 2502,
+      "sha256": "a710f498cb728f0a69f63a93e1f8029f61589273b1325a3853852b4dc7d85872",
+      "packet_path": "runtime/a710f498cb728f0a69f63a93e1f8029f61589273b1325a3853852b4dc7d85872.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_helper/variants/missing_boost_connection/candidate_formula.py",
+      "bytes": 1301,
+      "sha256": "c7bb400fbc26ee68d767870fafa17424811c35e5d650311f822a69f06f80c457",
+      "packet_path": "runtime/c7bb400fbc26ee68d767870fafa17424811c35e5d650311f822a69f06f80c457.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_helper/variants/missing_boost_origin/candidate_formula.py",
+      "bytes": 1308,
+      "sha256": "ec46dc2402444b0423cd5a3ae6601ae3456a992bc133c152080f091f127e5c7e",
+      "packet_path": "runtime/ec46dc2402444b0423cd5a3ae6601ae3456a992bc133c152080f091f127e5c7e.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_helper/variants/missing_jacobian/candidate_formula.py",
+      "bytes": 1314,
+      "sha256": "1b18e11b3fa3cc9da24b53a06d96358605350391b690efac73202e22dc3a0c31",
+      "packet_path": "runtime/1b18e11b3fa3cc9da24b53a06d96358605350391b690efac73202e22dc3a0c31.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_helper/variants/reversed_alias_phase/candidate_formula.py",
+      "bytes": 1308,
+      "sha256": "c7126d0c2ab1e3a257c6094f7154d65fa2ee936a6b5e84158e0fc5c02b487e78",
+      "packet_path": "runtime/c7126d0c2ab1e3a257c6094f7154d65fa2ee936a6b5e84158e0fc5c02b487e78.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_helper/variants/reversed_lattice_frame/candidate_formula.py",
+      "bytes": 1309,
+      "sha256": "388ab163be73f7dc8febb6518732faf83fa59fc3dcc448afb6f7efeeaf827ed8",
+      "packet_path": "runtime/388ab163be73f7dc8febb6518732faf83fa59fc3dcc448afb6f7efeeaf827ed8.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_target/candidate_formula.py",
+      "bytes": 1308,
+      "sha256": "c64686fd5fad25c258a61b3925e9d6ad59eca58b87ce2c3cdd794043645dad3d",
+      "packet_path": "runtime/c64686fd5fad25c258a61b3925e9d6ad59eca58b87ce2c3cdd794043645dad3d.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_target/independent_suite.py",
+      "bytes": 11361,
+      "sha256": "d0d179407916f02e362eaa1360184d546cb261f2a46c1abbab03eff89b5967b7",
+      "packet_path": "runtime/d0d179407916f02e362eaa1360184d546cb261f2a46c1abbab03eff89b5967b7.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_target/inner_supervisor.py",
+      "bytes": 1971,
+      "sha256": "98169b3bb5ca2f784d7c1dc2f4dd0f0342adffd169eab362e2635c47768893b4",
+      "packet_path": "runtime/98169b3bb5ca2f784d7c1dc2f4dd0f0342adffd169eab362e2635c47768893b4.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_target/integrity_guard.py",
+      "bytes": 1359,
+      "sha256": "5c08dc60542f8e935e202c0f2add73cc600fe50182679146a69077179c07931e",
+      "packet_path": "runtime/5c08dc60542f8e935e202c0f2add73cc600fe50182679146a69077179c07931e.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_target/outer_capture.py",
+      "bytes": 2502,
+      "sha256": "a710f498cb728f0a69f63a93e1f8029f61589273b1325a3853852b4dc7d85872",
+      "packet_path": "runtime/a710f498cb728f0a69f63a93e1f8029f61589273b1325a3853852b4dc7d85872.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_target/variants/missing_boost_connection/candidate_formula.py",
+      "bytes": 1301,
+      "sha256": "c7bb400fbc26ee68d767870fafa17424811c35e5d650311f822a69f06f80c457",
+      "packet_path": "runtime/c7bb400fbc26ee68d767870fafa17424811c35e5d650311f822a69f06f80c457.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_target/variants/missing_boost_origin/candidate_formula.py",
+      "bytes": 1308,
+      "sha256": "ec46dc2402444b0423cd5a3ae6601ae3456a992bc133c152080f091f127e5c7e",
+      "packet_path": "runtime/ec46dc2402444b0423cd5a3ae6601ae3456a992bc133c152080f091f127e5c7e.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_target/variants/missing_jacobian/candidate_formula.py",
+      "bytes": 1314,
+      "sha256": "1b18e11b3fa3cc9da24b53a06d96358605350391b690efac73202e22dc3a0c31",
+      "packet_path": "runtime/1b18e11b3fa3cc9da24b53a06d96358605350391b690efac73202e22dc3a0c31.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_target/variants/reversed_alias_phase/candidate_formula.py",
+      "bytes": 1308,
+      "sha256": "c7126d0c2ab1e3a257c6094f7154d65fa2ee936a6b5e84158e0fc5c02b487e78",
+      "packet_path": "runtime/c7126d0c2ab1e3a257c6094f7154d65fa2ee936a6b5e84158e0fc5c02b487e78.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/altered_target/variants/reversed_lattice_frame/candidate_formula.py",
+      "bytes": 1309,
+      "sha256": "388ab163be73f7dc8febb6518732faf83fa59fc3dcc448afb6f7efeeaf827ed8",
+      "packet_path": "runtime/388ab163be73f7dc8febb6518732faf83fa59fc3dcc448afb6f7efeeaf827ed8.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/self_rebound_manifest/candidate_formula.py",
+      "bytes": 1308,
+      "sha256": "c64686fd5fad25c258a61b3925e9d6ad59eca58b87ce2c3cdd794043645dad3d",
+      "packet_path": "runtime/c64686fd5fad25c258a61b3925e9d6ad59eca58b87ce2c3cdd794043645dad3d.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/self_rebound_manifest/independent_suite.py",
+      "bytes": 11361,
+      "sha256": "d0d179407916f02e362eaa1360184d546cb261f2a46c1abbab03eff89b5967b7",
+      "packet_path": "runtime/d0d179407916f02e362eaa1360184d546cb261f2a46c1abbab03eff89b5967b7.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/self_rebound_manifest/inner_supervisor.py",
+      "bytes": 1971,
+      "sha256": "98169b3bb5ca2f784d7c1dc2f4dd0f0342adffd169eab362e2635c47768893b4",
+      "packet_path": "runtime/98169b3bb5ca2f784d7c1dc2f4dd0f0342adffd169eab362e2635c47768893b4.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/self_rebound_manifest/integrity_guard.py",
+      "bytes": 1359,
+      "sha256": "5c08dc60542f8e935e202c0f2add73cc600fe50182679146a69077179c07931e",
+      "packet_path": "runtime/5c08dc60542f8e935e202c0f2add73cc600fe50182679146a69077179c07931e.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/self_rebound_manifest/outer_capture.py",
+      "bytes": 2502,
+      "sha256": "a710f498cb728f0a69f63a93e1f8029f61589273b1325a3853852b4dc7d85872",
+      "packet_path": "runtime/a710f498cb728f0a69f63a93e1f8029f61589273b1325a3853852b4dc7d85872.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/self_rebound_manifest/variants/missing_boost_connection/candidate_formula.py",
+      "bytes": 1301,
+      "sha256": "c7bb400fbc26ee68d767870fafa17424811c35e5d650311f822a69f06f80c457",
+      "packet_path": "runtime/c7bb400fbc26ee68d767870fafa17424811c35e5d650311f822a69f06f80c457.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/self_rebound_manifest/variants/missing_boost_origin/candidate_formula.py",
+      "bytes": 1308,
+      "sha256": "ec46dc2402444b0423cd5a3ae6601ae3456a992bc133c152080f091f127e5c7e",
+      "packet_path": "runtime/ec46dc2402444b0423cd5a3ae6601ae3456a992bc133c152080f091f127e5c7e.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/self_rebound_manifest/variants/missing_jacobian/candidate_formula.py",
+      "bytes": 1314,
+      "sha256": "1b18e11b3fa3cc9da24b53a06d96358605350391b690efac73202e22dc3a0c31",
+      "packet_path": "runtime/1b18e11b3fa3cc9da24b53a06d96358605350391b690efac73202e22dc3a0c31.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/self_rebound_manifest/variants/reversed_alias_phase/candidate_formula.py",
+      "bytes": 1308,
+      "sha256": "c7126d0c2ab1e3a257c6094f7154d65fa2ee936a6b5e84158e0fc5c02b487e78",
+      "packet_path": "runtime/c7126d0c2ab1e3a257c6094f7154d65fa2ee936a6b5e84158e0fc5c02b487e78.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_controls/self_rebound_manifest/variants/reversed_lattice_frame/candidate_formula.py",
+      "bytes": 1309,
+      "sha256": "388ab163be73f7dc8febb6518732faf83fa59fc3dcc448afb6f7efeeaf827ed8",
+      "packet_path": "runtime/388ab163be73f7dc8febb6518732faf83fa59fc3dcc448afb6f7efeeaf827ed8.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/integrity_guard.py",
+      "bytes": 1359,
+      "sha256": "5c08dc60542f8e935e202c0f2add73cc600fe50182679146a69077179c07931e",
+      "packet_path": "runtime/5c08dc60542f8e935e202c0f2add73cc600fe50182679146a69077179c07931e.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/outer_capture.py",
+      "bytes": 2502,
+      "sha256": "a710f498cb728f0a69f63a93e1f8029f61589273b1325a3853852b4dc7d85872",
+      "packet_path": "runtime/a710f498cb728f0a69f63a93e1f8029f61589273b1325a3853852b4dc7d85872.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/variants/missing_boost_connection/candidate_formula.py",
+      "bytes": 1301,
+      "sha256": "c7bb400fbc26ee68d767870fafa17424811c35e5d650311f822a69f06f80c457",
+      "packet_path": "runtime/c7bb400fbc26ee68d767870fafa17424811c35e5d650311f822a69f06f80c457.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/variants/missing_boost_origin/candidate_formula.py",
+      "bytes": 1308,
+      "sha256": "ec46dc2402444b0423cd5a3ae6601ae3456a992bc133c152080f091f127e5c7e",
+      "packet_path": "runtime/ec46dc2402444b0423cd5a3ae6601ae3456a992bc133c152080f091f127e5c7e.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/variants/missing_jacobian/candidate_formula.py",
+      "bytes": 1314,
+      "sha256": "1b18e11b3fa3cc9da24b53a06d96358605350391b690efac73202e22dc3a0c31",
+      "packet_path": "runtime/1b18e11b3fa3cc9da24b53a06d96358605350391b690efac73202e22dc3a0c31.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/variants/reversed_alias_phase/candidate_formula.py",
+      "bytes": 1308,
+      "sha256": "c7126d0c2ab1e3a257c6094f7154d65fa2ee936a6b5e84158e0fc5c02b487e78",
+      "packet_path": "runtime/c7126d0c2ab1e3a257c6094f7154d65fa2ee936a6b5e84158e0fc5c02b487e78.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/variants/reversed_lattice_frame/candidate_formula.py",
+      "bytes": 1309,
+      "sha256": "388ab163be73f7dc8febb6518732faf83fa59fc3dcc448afb6f7efeeaf827ed8",
+      "packet_path": "runtime/388ab163be73f7dc8febb6518732faf83fa59fc3dcc448afb6f7efeeaf827ed8.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_refinement_review/verify_author_snapshot.py",
+      "bytes": 5932,
+      "sha256": "0d4df5085cbda776e992f4363bb389db8b28044b349cdf8686dcb6ab8aed4fd6",
+      "packet_path": "runtime/0d4df5085cbda776e992f4363bb389db8b28044b349cdf8686dcb6ab8aed4fd6.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finalize_energy_adapted_root_gate.py",
+      "bytes": 8471,
+      "sha256": "e0465f9496125eb334b92ea017a963468d835b0784799fd663e732966f382894",
+      "packet_path": "runtime/e0465f9496125eb334b92ea017a963468d835b0784799fd663e732966f382894.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/verify_energy_adapted_author_root.py",
+      "bytes": 6785,
+      "sha256": "73f3814517a0b6b68997f41d74c1fbe6813438ef358678cdf92cd6579f61239d",
+      "packet_path": "runtime/73f3814517a0b6b68997f41d74c1fbe6813438ef358678cdf92cd6579f61239d.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/verify_energy_adapted_independent_root.py",
+      "bytes": 7350,
+      "sha256": "d8093dcb1e7e8b68faa4a230903a659e1a007aa83116bfe5d61b28f1452eaf87",
+      "packet_path": "runtime/d8093dcb1e7e8b68faa4a230903a659e1a007aa83116bfe5d61b28f1452eaf87.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/verify_energy_adapted_independent_root_v2.py",
+      "bytes": 7376,
+      "sha256": "b1c5b362d3f8facef7cc6fd3422cf497bdb47c57f3298cf0d6031b0a9253522a",
+      "packet_path": "runtime/b1c5b362d3f8facef7cc6fd3422cf497bdb47c57f3298cf0d6031b0a9253522a.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/state_adapted_worktree/docs/audit/scripts/check_changed_audit_evidence.py",
+      "bytes": 7903,
+      "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a",
+      "packet_path": "runtime/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/state_adapted_worktree/docs/audit/scripts/run_citation_graph_build.py",
+      "bytes": 6826,
+      "sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42",
+      "packet_path": "runtime/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/state_adapted_worktree/docs/audit/scripts/write_citation_graph_manifest.py",
+      "bytes": 2049,
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "packet_path": "runtime/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/state_adapted_worktree/scripts/runner_cache.py",
+      "bytes": 24941,
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "packet_path": "runtime/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/state_adapted_worktree/scripts/vocab_lint.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "packet_path": "runtime/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.py"
+    }
+  ],
+  "excluded_imports": [
+    "local-even-net-sections theorem",
+    "state-adapted-refinement theorem; construction rederived here"
+  ],
+  "runtime_wrapper": "Complete original whole helpers. Only candidate pathname token relocation. Actual Python/interpreter checked against original receipts; no historical library version invented. All raw nonzero exits and survivors preserved."
+}

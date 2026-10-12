@@ -1,0 +1,90 @@
+{
+  "EnergyAdapted": {
+    "baselines": [
+      "baseline"
+    ],
+    "cases": {
+      "baseline": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2.py",
+            "bytes": 6777,
+            "sha256": "78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/2816edbd9b5763f63c675bcb4fccdf7ad6fe965214994bd00dc1bdd55b1d6bf4.py",
+            "bytes": 1301,
+            "sha256": "2816edbd9b5763f63c675bcb4fccdf7ad6fe965214994bd00dc1bdd55b1d6bf4"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "role": "original_baseline"
+      },
+      "drop_jacobian": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2.py",
+            "bytes": 6777,
+            "sha256": "78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/d58ea5e4e7b93e285dcbdd746ad7f658e485ccdd835bb75180e88427f76cdce7.py",
+            "bytes": 1301,
+            "sha256": "d58ea5e4e7b93e285dcbdd746ad7f658e485ccdd835bb75180e88427f76cdce7"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "role": "original_mutant"
+      },
+      "reverse_cell_phase": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2.py",
+            "bytes": 6777,
+            "sha256": "78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/e492688e1aab4c62179f9d0f259225c0c1a2400b05f2389f6f12b458cc471745.py",
+            "bytes": 1301,
+            "sha256": "e492688e1aab4c62179f9d0f259225c0c1a2400b05f2389f6f12b458cc471745"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "role": "original_mutant"
+      }
+    }
+  }
+}

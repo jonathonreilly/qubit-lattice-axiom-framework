@@ -1,0 +1,86 @@
+{
+  "packet": ".claude/science/physics-loops/toe-energy-adapted-20261012",
+  "specs": [
+    {
+      "key": "EnergyAdapted",
+      "note": "ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "energy_adapted_refinement_2026_10_12.py",
+      "claim": "energy_adapted_refinement_bounded_theorem_note_2026-10-12",
+      "deps": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12",
+        "continuum_local_boost_bounded_theorem_note_2026-10-12",
+        "microscopic_local_boost_limit_bounded_theorem_note_2026-10-12",
+        "mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12",
+        "dyadic_even_refinement_bounded_theorem_note_2026-10-12"
+      ],
+      "scope": "For the supplied massive free one-dimensional chain, dispersion-coordinate even refinements preserve the actual chosen state and energy flow exactly while realizing the same intrinsic Cauchy sections, geometric local quotient and actual fixed mixed-flow limits as Haar refinement.",
+      "limits": "The specified maps have infinite support and fail exact common-displacement translation, actual-current and boost compatibility. Endpoint domains retain periodic circle gluing. No compact-support image, exponential delta-tail bound, Haar H2 rate, all-refinement no-go or model-selection principle is asserted.",
+      "baseline_counts": {
+        "passed": 238,
+        "failed": 0
+      },
+      "nonbaseline_cases": [
+        "drop_jacobian",
+        "reverse_cell_phase"
+      ],
+      "historical_nonbaseline_successes": [],
+      "case_roles": {
+        "baseline": "original_baseline",
+        "drop_jacobian": "original_mutant",
+        "reverse_cell_phase": "original_mutant"
+      },
+      "audit_inputs": [
+        "docs/ENERGY_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/DYADIC_EVEN_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/RUNTIME.json",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/PUBLICATION_EDITS.json",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/EVIDENCE_MAP.json",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/MUTATION_SOURCE_MAP.json",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/EXPECTED_RECORD_IDENTITIES.json",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/SPECIFICATIONS.json",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/RUNNER_TEMPLATE.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/reconstruct.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/0d4df5085cbda776e992f4363bb389db8b28044b349cdf8686dcb6ab8aed4fd6.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/1b18e11b3fa3cc9da24b53a06d96358605350391b690efac73202e22dc3a0c31.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/27b3708347c9cede2b909c7d5003e8fb170b18d9eae85cb760786c8f8f5c6b9e.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/2816edbd9b5763f63c675bcb4fccdf7ad6fe965214994bd00dc1bdd55b1d6bf4.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/388ab163be73f7dc8febb6518732faf83fa59fc3dcc448afb6f7efeeaf827ed8.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/51117c510e7694708a310a4271b6f97380d89e90f27d7d7c549e5a4cecc901f5.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/5c08dc60542f8e935e202c0f2add73cc600fe50182679146a69077179c07931e.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/73f3814517a0b6b68997f41d74c1fbe6813438ef358678cdf92cd6579f61239d.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/78e921f1e326a995fe7397f3745d02db945dc3b606bf47bedc30db51c13f67c2.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/98169b3bb5ca2f784d7c1dc2f4dd0f0342adffd169eab362e2635c47768893b4.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/a710f498cb728f0a69f63a93e1f8029f61589273b1325a3853852b4dc7d85872.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/b1c5b362d3f8facef7cc6fd3422cf497bdb47c57f3298cf0d6031b0a9253522a.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/c64686fd5fad25c258a61b3925e9d6ad59eca58b87ce2c3cdd794043645dad3d.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/c7126d0c2ab1e3a257c6094f7154d65fa2ee936a6b5e84158e0fc5c02b487e78.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/c7bb400fbc26ee68d767870fafa17424811c35e5d650311f822a69f06f80c457.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/d0d179407916f02e362eaa1360184d546cb261f2a46c1abbab03eff89b5967b7.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/d3678249ce49be99a0f8a6d98333a1defe7f490013399f5960e7412930898b5c.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/d58ea5e4e7b93e285dcbdd746ad7f658e485ccdd835bb75180e88427f76cdce7.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/d8093dcb1e7e8b68faa4a230903a659e1a007aa83116bfe5d61b28f1452eaf87.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/e0465f9496125eb334b92ea017a963468d835b0784799fd663e732966f382894.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/e492688e1aab4c62179f9d0f259225c0c1a2400b05f2389f6f12b458cc471745.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.py",
+        ".claude/science/physics-loops/toe-energy-adapted-20261012/runtime/ec46dc2402444b0423cd5a3ae6601ae3456a992bc133c152080f091f127e5c7e.py"
+      ]
+    }
+  ],
+  "pairing": "Same selected model family and reasoning effort; separate reviewer context with a neutral plan sealed before target exposure and independent evidence sealed before author helpers/results exposure. Target formulas were exposed after that plan. Root coauthored the route. This is not blinded or diverse-family review. Packaging and reproduction add no independent science or audit.",
+  "expected_graph_delta": {
+    "nodes": 1,
+    "edges": 6
+  },
+  "root_acceptance_bound": true
+}

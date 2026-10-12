@@ -106,3 +106,6 @@ The [review-drain recovery bundle](work/deferred-science-20260924/README.md) pre
 
 
 [Wilson physical propagation work](tasks/review-science-20261012.json) joins the existing maximum-thinking J queue. Check the unfinished physical-bridge derivations, then advance a precise observable/remainder bound; compare current main and active claims first. No workers are launched by this catalog addition.
+
+
+[Candidate-law research obligations](tasks/review-science-20261012.json): five focused J tasks, with pinned sources and explicit acceptance criteria. Reconcile active R9 work first. No PR snapshots or worker launches.

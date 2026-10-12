@@ -98,5 +98,324 @@
     "related_tasks": [],
     "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation with the first unresolved step; retrieval, review summaries and already-known mismatches are not completion.",
     "what": "Advance one precise physical propagation interface beyond the landed conditional spatial-Wilson map. Begin with the pinned unfinished author and pre-exposure derivations, compare current main and active attempts, and check the actual action and fixed-positive-mass versus bare-tree-curve prescriptions. Resolve the link between local Euclidean kinetic coefficients and a gauge-consistent charged spectral or wave-packet observable with a controlled hard/soft remainder, or give an exact counterexample to that link. Preserve mass and charge calibration, photon clock normalization, infrared charged-state meaning and the additive-mass subtraction. Only after controlling that bridge may a separate calibration/test envelope be frozen: propagate cutoff, orientation and detector nuisance freedom, keep already-read public data nonblind, and do not refit on the test observation. A local coefficient, a floating on-shell trend or the already-known tree Cherenkov rate alone is not completion. Deliver one scoped proof or checked partial derivation and the first unresolved obligation. Do not restart the cancelled campaign, change its deadline or copy its PR snapshot into the backlog. Owner-requested scientific work transfer. Use the existing maximum-thinking J campaign and claim.py ownership protocol; inspect completed attempts and active claims to avoid duplication. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py, and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a demonstrated new result or defect. Follow ordinary cross-model confirmation; this catalog addition starts no workers, changes no budgets and creates no PR snapshots or audit authority."
+  },
+  {
+    "id": "J:derive:review-20261012-box-domain-interactions:a1",
+    "problem": "review-20261012-box-domain-interactions",
+    "title": "Complete the interacting box-domain construction",
+    "type": "judgment",
+    "lane": "review-science-20261012",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Construct and control one extension of the conditional two-body graded-CAR box law: prioritize the full d=2 lattice commutator list with convergence, a proved common core, self-adjoint closures and a finite-rapidity leakage bound; then identify exactly what is needed for d=3 or three-body cluster separability. Preserve the ordered-pair 1/2 normalization. Do not identify a chart-algebra check or residuals 0.007\u20130.35 with precision lattice closure. Distinguish a Lie algebra on a common core from global exponentiation and an invariant box. Supplied CAR composition, continuum time, mass and C-infinity non-exponential locality remain imports. Deliver a new domain lemma, verified corrected operator construction or exact obstruction; repeating the free box example is not progress.",
+    "source_paths": [
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R7-1_report.md",
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R7-1_referee_verdict.md",
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-1_report.md",
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-1_referee_verdict.md",
+      ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-1/r81_common.py",
+      ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-1/r81_d2_lattice_algebra.py"
+    ],
+    "source_branch": {
+      "name": "claude/candidate-law-20261008",
+      "head": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R7-1_report.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "0c88e3ea3c3f219f9f55421e7ff381032005be434ac065d750890bebcbf29929"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R7-1_referee_verdict.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "4f6236c4a58a9a783a668efa291aa8cea69a9241e10464cdccb64fecd44961de"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-1_report.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "067b6d7cfdc5ce72c38535629faeb0af42386fe43f3782d11c025e715f3516a0"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-1_referee_verdict.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "55250319687b8a9f57a7f93a74c7a9b019caef09cb306521c80df6a941062205"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-1/r81_common.py",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "13295e0696e6c0851d7127fcd5e8a4e411b84a16cd454ac16c91cfd86e7747b0"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-1/r81_d2_lattice_algebra.py",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "3ba4f59edd5e3c33de3f7cde97fffb1e233fa9d2923af01c50db32857b84b050"
+      }
+    ],
+    "related_tasks": [],
+    "completion_criterion": "One new scoped derivation, exact counterexample or checked partial result with the first unresolved obligation. Historical referee labels and numerical reproduction alone are not acceptance.",
+    "landed_main": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+    "what": "Construct and control one extension of the conditional two-body graded-CAR box law: prioritize the full d=2 lattice commutator list with convergence, a proved common core, self-adjoint closures and a finite-rapidity leakage bound; then identify exactly what is needed for d=3 or three-body cluster separability. Preserve the ordered-pair 1/2 normalization. Do not identify a chart-algebra check or residuals 0.007\u20130.35 with precision lattice closure. Distinguish a Lie algebra on a common core from global exponentiation and an invariant box. Supplied CAR composition, continuum time, mass and C-infinity non-exponential locality remain imports. Deliver a new domain lemma, verified corrected operator construction or exact obstruction; repeating the free box example is not progress. Owner-requested work transfer to the existing maximum-thinking J campaign. Check current main, completed attempts, active campaign branches and claim.py ownership before claiming; continue or reconcile an existing attempt rather than duplicate it. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a new demonstrated result or defect. Ordinary independent confirmation remains required before retention. This catalog addition launches no workers, changes no budgets, creates no PR snapshots and adopts no historical audit/referee verdict."
+  },
+  {
+    "id": "J:derive:review-20261012-crossing-complete-radiative-closure:a1",
+    "problem": "review-20261012-crossing-complete-radiative-closure",
+    "title": "Resolve two-loop closure with a complete crossing prescription",
+    "type": "judgment",
+    "lane": "review-science-20261012",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "First reconcile the active R9-7 complete-crossings attempt and completed claims. Define the missing 2-to-2 and reverse-decay vertex functions before testing the two-loop coefficient. Account for every vacuum-relative ordering, CAR signs and complex conjugates; verify with a separate exact finite-Fock implementation and a disjoint quadrature at fixed rapidity. The existing toy-N failure is ordering-truncated, not a class no-go. The h(E,W) factor is frame-dependent; call it an imposed tuning. Preserve strict spectator plateau inequalities and distinguish finite-volume extensive stability from an infinite-volume Fock Hamiltonian. Deliver a complete specified crossing model with a controlled two-loop covariance result or counterexample, including cutoff and infrared order of limits.",
+    "source_paths": [
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-4_report.md",
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-4_referee_verdict.md",
+      ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-4/r84_fock.py",
+      ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-4/r84_toyN_fock.py",
+      ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-4/r84_toyN_cont.py",
+      ".claude/science/exercises/gravity-current-state-20261009/TESTS.md"
+    ],
+    "source_branch": {
+      "name": "claude/candidate-law-20261008",
+      "head": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-4_report.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "eab14f26f4c070aad92b93d207181c859a64288b1b48f52e8e3b29cbc5e24ebb"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-4_referee_verdict.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "55d5883f078065ab55d18e949a68ea7bd06cf8cf8f60f53f959fafdfafa8ef1b"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-4/r84_fock.py",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "a24ac5ae464816fe3c7b099e1638c2dfb179f5c2f8851c6b5f4f2ba90047fda4"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-4/r84_toyN_fock.py",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "0580b6598b951dbe4ca78a11292b81afab39b4de8908329b90d42ae258abf181"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-4/r84_toyN_cont.py",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "e181fdd4ad88dc84edafcc24a6219b9e7ec2f083cddf4c567ee9e443f7216164"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/TESTS.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "fa6440969bb187c8f52873b8a6e988a84a53a1c5a869117fc3d1f4e20082cf91"
+      }
+    ],
+    "related_tasks": [],
+    "completion_criterion": "One new scoped derivation, exact counterexample or checked partial result with the first unresolved obligation. Historical referee labels and numerical reproduction alone are not acceptance.",
+    "landed_main": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+    "what": "First reconcile the active R9-7 complete-crossings attempt and completed claims. Define the missing 2-to-2 and reverse-decay vertex functions before testing the two-loop coefficient. Account for every vacuum-relative ordering, CAR signs and complex conjugates; verify with a separate exact finite-Fock implementation and a disjoint quadrature at fixed rapidity. The existing toy-N failure is ordering-truncated, not a class no-go. The h(E,W) factor is frame-dependent; call it an imposed tuning. Preserve strict spectator plateau inequalities and distinguish finite-volume extensive stability from an infinite-volume Fock Hamiltonian. Deliver a complete specified crossing model with a controlled two-loop covariance result or counterexample, including cutoff and infrared order of limits. Owner-requested work transfer to the existing maximum-thinking J campaign. Check current main, completed attempts, active campaign branches and claim.py ownership before claiming; continue or reconcile an existing attempt rather than duplicate it. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a new demonstrated result or defect. Ordinary independent confirmation remains required before retention. This catalog addition launches no workers, changes no budgets, creates no PR snapshots and adopts no historical audit/referee verdict."
+  },
+  {
+    "id": "J:derive:review-20261012-box-gauge-custodial:a1",
+    "problem": "review-20261012-box-gauge-custodial",
+    "title": "Test a Ward-consistent route beyond the minimal box-QED split",
+    "type": "judgment",
+    "lane": "review-science-20261012",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Start from the bounded charge-rigidity lemma and explicit Peierls box-QED law, not a universal gauge no-go. Derive or refute one specified frame-rotated density plus transverse nonminimal coupling intended to control edge-loop contamination, preserving Gauss-law commutativity, Ward identities, positivity and locality. Distinguish charge-eigenspace constancy from a fixed energy band. Reproduce only necessary baseline controls with explicit Dirac matrices and independent frequency integration; derive the physical pole rather than treating off-shell B-A as an arbitrary-gauge bound. Give controlled remainder/error estimates or an explicit unavoidable split for this construction. Existing nine-shape numerics and correlated heavy-edge deformations do not settle every custodial kernel.",
+    "source_paths": [
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-5_report.md",
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-5_referee_verdict.md",
+      ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-5/r85_box_qed.py",
+      ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-5/r85_gauge_check.py",
+      ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-5/r85_inbox_rules.py"
+    ],
+    "source_branch": {
+      "name": "claude/candidate-law-20261008",
+      "head": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-5_report.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "d6f4082b938767ad8a095566ad71b5f11591877e6d97f14982f4e97394ab1205"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-5_referee_verdict.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "5573b05955a4c5fff111d82be046e516e72978c08534976296abf9cc21d7ad13"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-5/r85_box_qed.py",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "f96ca49a9310fc0d8034bcec8d20098316322e73881df4bd7f8478082692f8f6"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-5/r85_gauge_check.py",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "1606b5fe7a4461fdbc8285fe6f766778854555ec646b1cfeeae7a59de9030fe1"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-5/r85_inbox_rules.py",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "ac934ced6c4c23240b3f81559de08a71da9048a5075cf55f12ef6e10b3d238cd"
+      }
+    ],
+    "related_tasks": [],
+    "completion_criterion": "One new scoped derivation, exact counterexample or checked partial result with the first unresolved obligation. Historical referee labels and numerical reproduction alone are not acceptance.",
+    "landed_main": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+    "what": "Start from the bounded charge-rigidity lemma and explicit Peierls box-QED law, not a universal gauge no-go. Derive or refute one specified frame-rotated density plus transverse nonminimal coupling intended to control edge-loop contamination, preserving Gauss-law commutativity, Ward identities, positivity and locality. Distinguish charge-eigenspace constancy from a fixed energy band. Reproduce only necessary baseline controls with explicit Dirac matrices and independent frequency integration; derive the physical pole rather than treating off-shell B-A as an arbitrary-gauge bound. Give controlled remainder/error estimates or an explicit unavoidable split for this construction. Existing nine-shape numerics and correlated heavy-edge deformations do not settle every custodial kernel. Owner-requested work transfer to the existing maximum-thinking J campaign. Check current main, completed attempts, active campaign branches and claim.py ownership before claiming; continue or reconcile an existing attempt rather than duplicate it. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a new demonstrated result or defect. Ordinary independent confirmation remains required before retention. This catalog addition launches no workers, changes no budgets, creates no PR snapshots and adopts no historical audit/referee verdict."
+  },
+  {
+    "id": "J:derive:review-20261012-interacting-gravitational-observable:a1",
+    "problem": "review-20261012-interacting-gravitational-observable",
+    "title": "Build the interacting stress and bound-body free-fall observable",
+    "type": "judgment",
+    "lane": "review-science-20261012",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Reconcile the active R9-2 interacting-stress attempt before starting. Construct a conserved Hermitian interacting stress with the required zeroth and first moments for a concrete bound sector, and derive its observable response including binding energy and field momentum. The free-packet eta=0 proxy, edge fraction and suggested loop-to-Ti/Pt estimate are not a composition-dependent bound-body measurement. R7-4 scattering exclusion requires extra exponentiation and scattering-domain hypotheses. Recheck R9-1 charge-continuity, edge production and centroid claims under an explicit dynamical stress; do not import Planck spacing, cosmology or Standard-Model charges as axioms. Deliver the first actual bound-body response or a precise missing-bridge obstruction; separately label empirical calibration and verify sources before numerical comparison.",
+    "source_paths": [
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-2_report.md",
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-2_referee_verdict.md",
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R9-1_report.md",
+      ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R9-1/r91_edge_population.py",
+      ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R9-1/r91_qed_checks.py",
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R7-4_referee_verdict.md",
+      ".claude/science/exercises/gravity-current-state-20261009/TESTS.md"
+    ],
+    "source_branch": {
+      "name": "claude/candidate-law-20261008",
+      "head": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-2_report.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "62fb8ada4aa54e92d2326e2b028beadad507cf15f3b72f651572fd4f4ab9bb1b"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-2_referee_verdict.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "0929bb4845afa85ed8d65dec97f571f838f1f5982ebd256d19f6c960fd059e0f"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R9-1_report.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "864cc4bcc025e0b7c48c07a8568d7bf43ffba061af6ea889e9803aebfc4b8e6b"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R9-1/r91_edge_population.py",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "9a88830f81f18d95aa1671dfc588ee75e2ae54abbaef55751f13e3ab8248bed0"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R9-1/r91_qed_checks.py",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "a6d34d1f73b972404968cfca10fc6b3754ae4d7b22f49ec8eee9e6096c6af25f"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R7-4_referee_verdict.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "df37274ed2616ba6f5aba1b669e58fce8a95edb8f5a5a888e03bb149e4338ced"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/TESTS.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "fa6440969bb187c8f52873b8a6e988a84a53a1c5a869117fc3d1f4e20082cf91"
+      }
+    ],
+    "related_tasks": [],
+    "completion_criterion": "One new scoped derivation, exact counterexample or checked partial result with the first unresolved obligation. Historical referee labels and numerical reproduction alone are not acceptance.",
+    "landed_main": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+    "what": "Reconcile the active R9-2 interacting-stress attempt before starting. Construct a conserved Hermitian interacting stress with the required zeroth and first moments for a concrete bound sector, and derive its observable response including binding energy and field momentum. The free-packet eta=0 proxy, edge fraction and suggested loop-to-Ti/Pt estimate are not a composition-dependent bound-body measurement. R7-4 scattering exclusion requires extra exponentiation and scattering-domain hypotheses. Recheck R9-1 charge-continuity, edge production and centroid claims under an explicit dynamical stress; do not import Planck spacing, cosmology or Standard-Model charges as axioms. Deliver the first actual bound-body response or a precise missing-bridge obstruction; separately label empirical calibration and verify sources before numerical comparison. Owner-requested work transfer to the existing maximum-thinking J campaign. Check current main, completed attempts, active campaign branches and claim.py ownership before claiming; continue or reconcile an existing attempt rather than duplicate it. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a new demonstrated result or defect. Ordinary independent confirmation remains required before retention. This catalog addition launches no workers, changes no budgets, creates no PR snapshots and adopts no historical audit/referee verdict."
+  },
+  {
+    "id": "J:derive:review-20261012-cq-gravity-correlated-kernels:a1",
+    "problem": "review-20261012-cq-gravity-correlated-kernels",
+    "title": "Resolve the non-Markovian CQ-gravity escape",
+    "type": "judgment",
+    "lane": "review-science-20261012",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Determine whether a specified correlated or non-Markovian Gaussian classical-quantum gravity kernel can preserve complete positivity, finite vacuum excitation and a finite GR-normalized radiative response. The pointwise additive decoherence floor is an extra assumption, not general CP; keep scalar and spin-2 channels separate and state the light-cone distribution/counterterm prescription. Do not reinstate the withdrawn 32-orders exclusion or call the preferred-frame smearing interval an allowed window. Work one explicit kernel through the retarded response and noise integrals, including finite-bandwidth sources, or prove a scoped obstruction with every added hypothesis exposed. Reconcile current attempts and avoid relitigating the already-bounded additive scalar result.",
+    "source_paths": [
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-3_report.md",
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-3_referee.md",
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-3_referee_verdict.md",
+      ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-3/r83_checks.py",
+      ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R6-4_report.md"
+    ],
+    "source_branch": {
+      "name": "claude/candidate-law-20261008",
+      "head": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-3_report.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "675afeab6a1f5b6a82290fe63a8b9e9abec6e065f2dafad57f35a0c14aa0c058"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-3_referee.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "a82bfa8409c3b5181216df47c750ad37ab7fca1e4c38f8c4da2fed4112a78c03"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R8-3_referee_verdict.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "3bca23ac38803daa6f1fd5882763a2324bc0285a67d1de863d538b65ea5de43c"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/scripts/C5/R8-3/r83_checks.py",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "52638ca8c2842d42b2fede6041f36f8f024e1e19bf5a885bd2d090b7c593de8b"
+      },
+      {
+        "path": ".claude/science/exercises/gravity-current-state-20261009/agents/C5_R6-4_report.md",
+        "commit": "02b443faa6d9a2331fb04d648c578c6b85e1900a",
+        "sha256": "e41ffcc188c2986defe3916f935214899760f7594acf71f148a13e90e8968efe"
+      }
+    ],
+    "related_tasks": [],
+    "completion_criterion": "One new scoped derivation, exact counterexample or checked partial result with the first unresolved obligation. Historical referee labels and numerical reproduction alone are not acceptance.",
+    "landed_main": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+    "what": "Determine whether a specified correlated or non-Markovian Gaussian classical-quantum gravity kernel can preserve complete positivity, finite vacuum excitation and a finite GR-normalized radiative response. The pointwise additive decoherence floor is an extra assumption, not general CP; keep scalar and spin-2 channels separate and state the light-cone distribution/counterterm prescription. Do not reinstate the withdrawn 32-orders exclusion or call the preferred-frame smearing interval an allowed window. Work one explicit kernel through the retarded response and noise integrals, including finite-bandwidth sources, or prove a scoped obstruction with every added hypothesis exposed. Reconcile current attempts and avoid relitigating the already-bounded additive scalar result. Owner-requested work transfer to the existing maximum-thinking J campaign. Check current main, completed attempts, active campaign branches and claim.py ownership before claiming; continue or reconcile an existing attempt rather than duplicate it. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a new demonstrated result or defect. Ordinary independent confirmation remains required before retention. This catalog addition launches no workers, changes no budgets, creates no PR snapshots and adopts no historical audit/referee verdict."
   }
 ]

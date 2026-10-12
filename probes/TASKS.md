@@ -61,3 +61,16 @@ One J derivation task recovers two auxiliary leakage/state-comparison lemmas and
 ## Wilson physical propagation work - 2026-10-12
 
 One J derivation task advances a controlled physical propagation interface beyond the conditional Wilson map: [task and pinned sources](tasks/review-science-20261012.json). This is mathematical work, not a PR snapshot or audit verdict.
+
+
+## Candidate-law research obligations — 2026-10-12
+
+Five focused J tasks carry forward unresolved science from the active candidate-law branch, without copying PR snapshots or accepting historical verdicts. Each task pins its actual source objects and requires reconciliation with active R9 work:
+
+- Complete the interacting box-domain construction (`J:derive:review-20261012-box-domain-interactions:a1`).
+- Resolve two-loop closure with a complete crossing prescription (`J:derive:review-20261012-crossing-complete-radiative-closure:a1`).
+- Test a Ward-consistent route beyond the minimal box-QED split (`J:derive:review-20261012-box-gauge-custodial:a1`).
+- Build the interacting stress and bound-body free-fall observable (`J:derive:review-20261012-interacting-gravitational-observable:a1`).
+- Resolve the non-Markovian CQ-gravity escape (`J:derive:review-20261012-cq-gravity-correlated-kernels:a1`).
+
+See [task definitions](tasks/review-science-20261012.json). The research branch remains the working handle; no workers are launched by this catalog update.

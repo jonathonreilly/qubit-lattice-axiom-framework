@@ -1,0 +1,12 @@
+# Route portfolio
+
+This is a provisional launch queue; full statement-level novelty searches and exact target contracts are required before scientific execution or novelty claims. Base revision is recorded in STATE.yaml. The initial read included the inverse graph requirements notes and the first 170 lines of the photon-dispersion comparison note; that limited read does not validate either full argument.
+
+1. Reconstruct restrictions on local dynamics from operational observations: transport, dispersion, interference and response. Identify equivalence classes of generators and try a new mechanism that links at least two classes of observables. Use controlled synthetic recovery only as a method check, then confront real primary constraints.
+2. Infer common structure across particle quantities: dimensionless ratios, charge/representation content and couplings with explicit scale and scheme. Test identifiable, low-complexity relations against a simpler null; count all fit and model-selection choices. Do not mine unconstrained formulas for coincidences.
+3. Reconstruct the matter/gravity observable bridge: response universality, propagation and field coupling. Translate empirical restrictions into exact conditional operator constraints, then attempt a constructive bridge from current primitives. A desired Ward identity supplied as input is not a derivation.
+4. Design a decisive discriminator: anisotropy, polarization, environment or energy dependence. Prefer parameters eliminated by ratios or cross-observable predictions; a model that can suppress every effect freely has not been confirmed.
+
+Known prior art: docs/INVERSE_PROBLEM_NOTE.md and docs/INVERSE_PROBLEM_GRAPH_REQUIREMENTS_NOTE.md already describe a bounded graph perturbation diagnostic. docs/PHOTON_DISPERSION_OBSERVATIONAL_CONSTRAINTS_AND_LIVE_FORMATION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-24.md already contains conditional cubic dispersion and timing-bound conversions. Repeating either is not novel.
+
+Relevant open-proposal leads include PR 9476 (candidate-law/gravity exercise), 9479/9480 (excluded-walk currents/scattering), 9482/9485 (memory/partial-factor transport), 9484/9487/9488 (boost structure), and 9486 (microscopic flows/scattering). Only metadata and a partial PR 9476 body were read at launch. Read matching primary arguments, actual dependencies and reviews at frozen head revisions before reuse; these leads are not accepted results and need not all be reviewed if irrelevant.

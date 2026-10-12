@@ -1,0 +1,15 @@
+== X1 ==
+  dir [0. 0. 1.]: gapless branches 6 = 2 linear + 4 flat (free-particle Jordan pairs: 8 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped None
+  dir [0.577 0.577 0.577]: gapless branches 6 = 2 linear + 4 flat (free-particle Jordan pairs: 8 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped None
+  dir [0.707 0.707 0.   ]: gapless branches 6 = 2 linear + 4 flat (free-particle Jordan pairs: 8 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped None
+  dir [ 0.189 -0.198  0.962]: gapless branches 6 = 2 linear + 4 flat (free-particle Jordan pairs: 8 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped None
+  dir [ 0.16  -0.818  0.552]: gapless branches 6 = 2 linear + 4 flat (free-particle Jordan pairs: 8 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped None
+  dir [ 0.742  0.539 -0.4  ]: gapless branches 6 = 2 linear + 4 flat (free-particle Jordan pairs: 8 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped None
+== X2 ==
+  dir [0. 0. 1.]: gapless branches 2 = 2 linear + 0 flat (free-particle Jordan pairs: 0 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped 1.0
+  dir [0.577 0.577 0.577]: gapless branches 2 = 2 linear + 0 flat (free-particle Jordan pairs: 0 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped 1.0
+  dir [0.707 0.707 0.   ]: gapless branches 2 = 2 linear + 0 flat (free-particle Jordan pairs: 0 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped 1.0
+  dir [ 0.189 -0.198  0.962]: gapless branches 2 = 2 linear + 0 flat (free-particle Jordan pairs: 0 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped 1.0
+  dir [ 0.16  -0.818  0.552]: gapless branches 2 = 2 linear + 0 flat (free-particle Jordan pairs: 0 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped 1.0
+  dir [ 0.742  0.539 -0.4  ]: gapless branches 2 = 2 linear + 0 flat (free-particle Jordan pairs: 0 zero eigenvalues of JH); omega/|k| of linear ones [1. 1.]; lowest gapped 1.0
+X2: ||H(1e-8 z) - H(1e-8 x)|| = 1.8708 (does not vanish as |k| -> 0: discontinuous)

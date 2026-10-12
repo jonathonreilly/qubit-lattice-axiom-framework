@@ -1,0 +1,5 @@
+degree 0: unknowns 6; transverse fields: 0; TT fields: 0
+degree 1: unknowns 18; transverse fields: 0; TT fields: 0
+degree 2: unknowns 36; transverse fields: 6; TT fields: 0
+degree 3: unknowns 60; transverse fields: 15; TT fields: 5
+degree 4: unknowns 90; transverse fields: 27; TT fields: 12

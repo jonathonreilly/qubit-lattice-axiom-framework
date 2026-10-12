@@ -4888,39 +4888,38 @@ Readings:
 - **VIABLE:** an explicit model passing (a)–(c), with untuned Λ_eff = 0 and the prices named.
 - **EXCLUDED:** a refereed inconsistency.
 - **OPEN:** otherwise.
-- **R14-2 (E1 vs E2):** worker readings E1 OPEN and E2 OPEN. They tie on the stated tests, and E2 carries more prices.
-  - E2's own self-drag bounds γ ≲ 0.03–0.05 H₀ (double pulsar); a zero-integral friction kernel repair is possible.
-  - Correction to R13-6: the τ_c ceiling falls to 5e-12 s, and the window closes near ℓ ≈ 1–2e-9 m.
-  - E2's stationary record equals E1's at age 0.56/γ.
-  - At the allowed γ, E2 needs a 45–70 t_H history.
-
-  Referee running.
-- **R14-4 (mixed h–E graviton):** worker reading OPEN; EXCLUDED if confirmed.
-  - Theorem G-mix: in real PSD C² cubic-covariant six-pair Gaussians with any h–E mixing, two linear axial TT branches force a third linear branch somewhere (a gapless partner). Lemma V is an exact Gröbner computation.
-  - The axis-perfect NN model fails off-axis.
-
-  Referee running.
-- **R14-5 (averaged-lapse P-T):** worker reading VIABLE in class 𝒵; OPEN outside it.
-  - Lemma C: absorbing a vacuum change forces CMC (York-time) lattice slicing; otherwise unimodular GR and Lemma PT return.
-  - The model is GR on CMC slices with the Friedmann zero-mode replaced by the creation law, equivalently a cuscuton-type constraint fluid.
-  - The checks:
-    - no caustics (maximum principle);
-    - vacuum steps absorbed untuned (residual 1e-16);
-    - growth GR-like.
-  - Prices:
-    - a global instantaneous CMC lapse;
-    - a global reader;
-    - P-T and a clamp;
-    - an arrow (H > 0 forever);
-    - a w = −1 vacuum (the grid zero-point would kill it).
-
-  Referee running.
-- **R14-3 (subluminal edges):** worker reading REFUTED.
-  - **(a) fails.** A subluminal flattened-edge band cancels μ_E at one edge-shape tuning w*, which serves all light species.
-  - **(b) holds on 𝒰₀** (Theorem B: Ξ < 0 for laws without gapped valleys) **and fails outside it.** Laws W08 and W14 give Ξ_Eg > 0. T2g ≥ 0 was not found.
-  - A superluminal edge buys nothing a subluminal one can't.
-
-  Referee running.
+- **R14-2 (E1 vs E2) — CONFIRMED WITH CORRECTIONS. Both OPEN, and observationally tied.**
+  - **E2's self-drag is confirmed.** Γ_i = 2γ|U_i|/(3M_ic²) and Ṗ_b/P_b = −3Γ_eff. That bounds γ to 0.032–0.047 H₀ (conservative envelope), or 0.016–0.024 H₀ from the signed timing measurement.
+  - **Consequence for stationarity.** Genuine stationarity of E2 needs a history of many tens of Hubble times (more than 80 under the signed likelihood).
+  - **The repair.** A causal passive high-pass friction kernel allows faster damping. It costs a cutoff, frequency-dependent GW damping, and a larger sink budget.
+  - **E1's window.** The CMB velocity tightens E1's repaired-gain window (τ_c correction).
+  - **Equal footing.** The E1/E2 content equivalence and the ≤ 8% budget difference hold asymptotically, under shared premises.
+  - **Which is cheaper.** E1 is cheaper only under the report's price-counting convention.
+- **R14-4 (mixed h–E graviton) — CONFIRMED WITH CORRECTIONS. EXCLUDED, as an extension of X-G in its class.**
+  - **The class.** A translation-invariant real PSD Gaussian Hamiltonian with exactly six symmetric-tensor pairs per cell, a C² symbol at k = 0, proper-cubic covariance, and arbitrary h–E mixing.
+  - **The result.** If both axial TT polarizations are linear, some direction has at least three positive linear branches, so a linear partner is always present.
+  - **Outside the class:** auxiliary irreps, non-C² or non-local kernels, indefinite exact-constraint theories, and non-Gaussian phases.
+  - **Corrections:** the gyroscopic wording, the soft limit and the Williamson step.
+- **R14-5 (averaged-lapse P-T) — NOT CONFIRMED as VIABLE. OPEN.** It is a credible conditional zero-mode degravitation mechanism, with a correct CMC necessity lemma.
+  - **The setting.** A smooth continuum theory imposing E_ni = 0, E^TL_ij = 0, a spatially uniform E_nn = λ(t), conserved stress, and a supplied global zero-frequency expansion law.
+  - **What is proved there.** Bianchi exactly gives N(λ + p_E) = g(t) and λ̇ = −gθ_n.
+    - Active vacuum compensation forces CMC slicing.
+    - g ≡ 0 reduces to GR with a constant effective cosmological term.
+  - **What the reader does.** An exact finite-rank Prony reader removes a constant w = −1 vacuum from a homogeneous constant-w mixture without tuning λ's value.
+  - **Not established:**
+    - a globally existing positive-lapse CMC foliation through collapse (assumed, not shown);
+    - the positivity bound, which drops inhomogeneous curvature terms;
+    - real, regular evolution through the tested phase transitions (the Prony law goes non-physical);
+    - exact Λ̃ = 0 in a lumpy universe;
+    - causal and Hamiltonian-stable g ≠ 0 dynamics.
+- **R14-3 (subluminal edges) — CONFIRMED WITH CORRECTIONS. REFUTED.**
+  - **Subluminality.** In the separable periodic one-band class, |σ′| ≤ 1 certifies whole-zone subluminality.
+  - **(a) refuted: the shear can be cancelled subluminally.** The smooth gapped G_w(1.4) family has an exact conditional shear zero at each fixed mass. One common massless-limit setting suppresses (not exactly cancels) the shear of all light common-edge species, by O((ma)²).
+  - **(b) refuted outside 𝒰₀.**
+    - Theorem B: Ξ < 0 for every nonnegative nonzero transverse vertex independent of k_z, on the no-gapped-valley class 𝒰₀.
+    - Outside 𝒰₀, the subluminal W08/W14 bands give positive E_g shifts, hence an E_g zero by interpolation.
+  - **Not established:** a nonnegative T_2g witness, or a dressed graviton–matter cancellation.
+  - **The empty Fock vacuum** remains the separate trivial-zero case.
 
 ### C5 Round 15, items 1–3 (pre-registered 21:41Z; launched now)
 
@@ -4960,3 +4959,9 @@ Readings:
 - **PRODUCED:** an explicit PSD local Gaussian with auxiliary fields and only the two TT branches gapless and linear, checked.
 - **EXCLUDED:** a refereed no-go covering a stated auxiliary class.
 - **OPEN:** otherwise.
+- **R15-3 (auxiliary-irrep graviton):** worker reading OPEN; EXCLUDED if confirmed.
+  - Theorem C, in class 𝒜: any finite auxiliary content, PSD, O-covariant, symbol continuous at k = 0. By characters at C4 (axis) and C2′ (face diagonal), two gapless TT branches force at least 4 gapless branches, or at least 5 with an h coupling.
+  - TT along axes alone needs only 2 (A2 pseudo-scalars), but they are not TT off-axis.
+  - The non-local k²P_TT symbol leaves flat partners; only a discontinuous symbol gives exactly 2.
+
+  Referee running.

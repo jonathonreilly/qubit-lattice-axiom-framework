@@ -1,0 +1,90 @@
+
+=== M1: six gapped h pairs + two A2 pairs ===  params {'m2': 1.0, 'c1': 1.0, 'c2': 0.7, 'g1': 0.3, 'g2': 0.3}
+  min eigenvalue of H(k): zone grid 24^3 (k!=0) 4.741e-02; small-k radial scan, min eig/|k|^2 = 6.684e-01  (PSD if both >= 0)
+  z (C4)          : gapless branches 2; omega/|k| at |k|=1e-3: [0.83666 0.97724]; at 2e-3: [0.83666 0.97724]; gapped min 1.000
+      branch omega/|k|=0.83666: h-weight 2w|h|^2=6.000e-14, h-TT weight=6.000e-14, TT fraction of h-part=1.0000
+      branch omega/|k|=0.97724: h-weight 2w|h|^2=4.500e-08, h-TT weight=4.500e-08, TT fraction of h-part=1.0000
+      stabilizer eigenvalues on the gapless positive-frequency space: ['-1', '-1']
+  x (C4)          : gapless branches 2; omega/|k| at |k|=1e-3: [0.83666 0.97724]; at 2e-3: [0.83666 0.97724]; gapped min 1.000
+      branch omega/|k|=0.83666: h-weight 2w|h|^2=6.000e-14, h-TT weight=6.000e-14, TT fraction of h-part=1.0000
+      branch omega/|k|=0.97724: h-weight 2w|h|^2=4.500e-08, h-TT weight=4.500e-08, TT fraction of h-part=1.0000
+  111 (C3)        : gapless branches 2; omega/|k| at |k|=1e-3: [0.83666 0.97724]; at 2e-3: [0.83666 0.97724]; gapped min 1.000
+      branch omega/|k|=0.97724: h-weight 2w|h|^2=4.500e-08, h-TT weight=-1.096e-23, TT fraction of h-part=-0.0000
+      branch omega/|k|=0.83666: h-weight 2w|h|^2=8.886e-38, h-TT weight=4.561e-38, TT fraction of h-part=0.5133
+      stabilizer eigenvalues on the gapless positive-frequency space: ['+1', '+1']
+  110 (C2')       : gapless branches 2; omega/|k| at |k|=1e-3: [0.83666 0.97724]; at 2e-3: [0.83666 0.97724]; gapped min 1.000
+      branch omega/|k|=0.83666: h-weight 2w|h|^2=1.500e-14, h-TT weight=-3.353e-30, TT fraction of h-part=-0.0000
+      branch omega/|k|=0.97724: h-weight 2w|h|^2=4.500e-08, h-TT weight=-8.061e-24, TT fraction of h-part=-0.0000
+      stabilizer eigenvalues on the gapless positive-frequency space: ['-1', '-1']
+  generic (1,2,5) : gapless branches 2; omega/|k| at |k|=1e-3: [0.83666 0.97724]; at 2e-3: [0.83666 0.97724]; gapped min 1.000
+      branch omega/|k|=0.83666: h-weight 2w|h|^2=3.420e-14, h-TT weight=2.760e-14, TT fraction of h-part=0.8070
+      branch omega/|k|=0.97724: h-weight 2w|h|^2=4.500e-08, h-TT weight=2.070e-08, TT fraction of h-part=0.4600
+  generic (2,1,3) : gapless branches 2; omega/|k| at |k|=1e-3: [0.83666 0.97724]; at 2e-3: [0.83666 0.97724]; gapped min 1.000
+      branch omega/|k|=0.83666: h-weight 2w|h|^2=1.500e-14, h-TT weight=7.085e-15, TT fraction of h-part=0.4723
+      branch omega/|k|=0.97724: h-weight 2w|h|^2=4.500e-08, h-TT weight=5.313e-09, TT fraction of h-part=0.1181
+
+=== M2-bad: soft A2-T2 coupling at O(k) (expected NOT PSD: soft-soft couplings must be O(k^2)) ===  params {'m2': 1.0, 'ct': 1.0, 'ca': 0.5, 'c': 0.6, 'g': 0.3}
+  min eigenvalue of H(k): zone grid 24^3 (k!=0) 8.668e-03; small-k radial scan, min eig/|k|^2 = -2.120e+03  (PSD if both >= 0)
+  z (C4)          : gapless branches 3; omega/|k| at |k|=1e-3: [ 1.       1.      14.60077]; at 2e-3: [ 1.       1.      10.34973]; gapped min 1.000
+      branch omega/|k|=1.00000: h-weight 2w|h|^2=1.000e+00, h-TT weight=2.452e-61, TT fraction of h-part=0.0000
+      branch omega/|k|=14.60077: h-weight 2w|h|^2=5.011e-01, h-TT weight=5.011e-01, TT fraction of h-part=1.0000
+      branch omega/|k|=1.00000: h-weight 2w|h|^2=1.000e+00, h-TT weight=8.929e-37, TT fraction of h-part=0.0000
+      stabilizer eigenvalues on the gapless positive-frequency space: ['+i', '-1', '-i']
+  x (C4)          : gapless branches 3; omega/|k| at |k|=1e-3: [ 1.       1.      14.60077]; at 2e-3: [ 1.       1.      10.34973]; gapped min 1.000
+      branch omega/|k|=14.60077: h-weight 2w|h|^2=5.011e-01, h-TT weight=5.011e-01, TT fraction of h-part=1.0000
+      branch omega/|k|=1.00000: h-weight 2w|h|^2=1.000e+00, h-TT weight=2.500e-36, TT fraction of h-part=0.0000
+      branch omega/|k|=1.00000: h-weight 2w|h|^2=1.000e+00, h-TT weight=1.224e-37, TT fraction of h-part=0.0000
+  111 (C3)        : gapless branches 3; omega/|k| at |k|=1e-3: [ 1.08012  1.08012 14.59505]; at 2e-3: [ 1.08012  1.08012 10.34165]; gapped min 1.000
+      branch omega/|k|=14.59505: h-weight 2w|h|^2=5.007e-01, h-TT weight=-1.223e-16, TT fraction of h-part=-0.0000
+      branch omega/|k|=1.08012: h-weight 2w|h|^2=1.000e+00, h-TT weight=6.667e-01, TT fraction of h-part=0.6667
+      branch omega/|k|=1.08012: h-weight 2w|h|^2=1.000e+00, h-TT weight=6.667e-01, TT fraction of h-part=0.6667
+      stabilizer eigenvalues on the gapless positive-frequency space: ['+1', 'w', 'wbar']
+  110 (C2')       : gapless branches 3; omega/|k| at |k|=1e-3: [ 1.       1.11803 14.59648]; at 2e-3: [ 1.       1.11803 10.34367]; gapped min 1.000
+      branch omega/|k|=14.59648: h-weight 2w|h|^2=5.008e-01, h-TT weight=-7.966e-17, TT fraction of h-part=-0.0000
+      branch omega/|k|=1.11803: h-weight 2w|h|^2=1.000e+00, h-TT weight=1.000e+00, TT fraction of h-part=1.0000
+      branch omega/|k|=1.00000: h-weight 2w|h|^2=1.000e+00, h-TT weight=2.500e-01, TT fraction of h-part=0.2500
+      stabilizer eigenvalues on the gapless positive-frequency space: ['+1', '+1', '-1']
+  generic (1,2,5) : gapless branches 3; omega/|k| at |k|=1e-3: [ 1.01149  1.05841 14.59831]; at 2e-3: [ 1.01149  1.05841 10.34626]; gapped min 1.000
+      branch omega/|k|=14.59831: h-weight 2w|h|^2=5.009e-01, h-TT weight=2.307e-01, TT fraction of h-part=0.4606
+      branch omega/|k|=1.01149: h-weight 2w|h|^2=1.000e+00, h-TT weight=1.634e-01, TT fraction of h-part=0.1634
+      branch omega/|k|=1.05841: h-weight 2w|h|^2=1.000e+00, h-TT weight=5.200e-01, TT fraction of h-part=0.5200
+  generic (2,1,3) : gapless branches 3; omega/|k| at |k|=1e-3: [ 1.02418  1.09593 14.59648]; at 2e-3: [ 1.02418  1.09593 10.34367]; gapped min 1.000
+      branch omega/|k|=14.59648: h-weight 2w|h|^2=5.008e-01, h-TT weight=5.927e-02, TT fraction of h-part=0.1184
+      branch omega/|k|=1.09593: h-weight 2w|h|^2=1.000e+00, h-TT weight=8.265e-01, TT fraction of h-part=0.8265
+      branch omega/|k|=1.02418: h-weight 2w|h|^2=1.000e+00, h-TT weight=3.054e-01, TT fraction of h-part=0.3054
+
+=== M2: soft content 2A2 + 2T2 (no O(k) soft-soft coupling; A2-T2 coupling first allowed at O(k^3)) ===  params {'m2': 1.0, 'ct': 1.0, 'ca': 0.5, 'c': 0.6, 'g': 0.0}
+  min eigenvalue of H(k): zone grid 24^3 (k!=0) 4.089e-02; small-k radial scan, min eig/|k|^2 = 5.876e-01  (PSD if both >= 0)
+  z (C4)          : gapless branches 4; omega/|k| at |k|=1e-3: [0.7746  1.      1.      1.22474]; at 2e-3: [0.7746  1.      1.      1.22474]; gapped min 1.000
+      branch omega/|k|=1.00000: h-weight 2w|h|^2=1.000e+00, h-TT weight=6.277e-59, TT fraction of h-part=0.0000
+      branch omega/|k|=1.22474: h-weight 2w|h|^2=1.000e+00, h-TT weight=1.000e+00, TT fraction of h-part=1.0000
+      branch omega/|k|=0.77460: h-weight 2w|h|^2=3.483e-32, h-TT weight=3.483e-32, TT fraction of h-part=1.0000
+      branch omega/|k|=1.00000: h-weight 2w|h|^2=1.000e+00, h-TT weight=5.796e-62, TT fraction of h-part=0.0000
+      stabilizer eigenvalues on the gapless positive-frequency space: ['+i', '-1', '-1', '-i']
+  x (C4)          : gapless branches 4; omega/|k| at |k|=1e-3: [0.7746  1.      1.      1.22474]; at 2e-3: [0.7746  1.      1.      1.22474]; gapped min 1.000
+      branch omega/|k|=1.22474: h-weight 2w|h|^2=1.000e+00, h-TT weight=1.000e+00, TT fraction of h-part=1.0000
+      branch omega/|k|=1.00000: h-weight 2w|h|^2=1.000e+00, h-TT weight=5.210e-68, TT fraction of h-part=0.0000
+      branch omega/|k|=1.00000: h-weight 2w|h|^2=1.000e+00, h-TT weight=1.881e-31, TT fraction of h-part=0.0000
+      branch omega/|k|=0.77460: h-weight 2w|h|^2=0.000e+00, h-TT weight=0.000e+00, TT fraction of h-part=0.0000
+  111 (C3)        : gapless branches 4; omega/|k| at |k|=1e-3: [0.7746  1.08012 1.08012 1.08012]; at 2e-3: [0.7746  1.08012 1.08012 1.08012]; gapped min 1.000
+      branch omega/|k|=1.08012: h-weight 2w|h|^2=1.000e+00, h-TT weight=4.444e-01, TT fraction of h-part=0.4444
+      branch omega/|k|=1.08012: h-weight 2w|h|^2=1.000e+00, h-TT weight=4.444e-01, TT fraction of h-part=0.4444
+      branch omega/|k|=1.08012: h-weight 2w|h|^2=1.000e+00, h-TT weight=4.444e-01, TT fraction of h-part=0.4444
+      branch omega/|k|=0.77460: h-weight 2w|h|^2=0.000e+00, h-TT weight=0.000e+00, TT fraction of h-part=0.0000
+      stabilizer eigenvalues on the gapless positive-frequency space: ['+1', '+1', 'w', 'wbar']
+  110 (C2')       : gapless branches 4; omega/|k| at |k|=1e-3: [0.7746  1.      1.11803 1.11803]; at 2e-3: [0.7746  1.      1.11803 1.11803]; gapped min 1.000
+      branch omega/|k|=1.11803: h-weight 2w|h|^2=1.000e+00, h-TT weight=5.000e-01, TT fraction of h-part=0.5000
+      branch omega/|k|=1.00000: h-weight 2w|h|^2=1.000e+00, h-TT weight=2.500e-01, TT fraction of h-part=0.2500
+      branch omega/|k|=1.11803: h-weight 2w|h|^2=1.000e+00, h-TT weight=4.140e-01, TT fraction of h-part=0.4140
+      branch omega/|k|=0.77460: h-weight 2w|h|^2=0.000e+00, h-TT weight=0.000e+00, TT fraction of h-part=0.0000
+      stabilizer eigenvalues on the gapless positive-frequency space: ['+1', '+1', '-1', '-1']
+  generic (1,2,5) : gapless branches 4; omega/|k| at |k|=1e-3: [0.7746  1.0083  1.0328  1.19024]; at 2e-3: [0.7746  1.0083  1.0328  1.19024]; gapped min 1.000
+      branch omega/|k|=1.00830: h-weight 2w|h|^2=1.000e+00, h-TT weight=1.444e-01, TT fraction of h-part=0.1444
+      branch omega/|k|=0.77460: h-weight 2w|h|^2=6.351e-31, h-TT weight=9.451e-32, TT fraction of h-part=0.1488
+      branch omega/|k|=1.19024: h-weight 2w|h|^2=1.000e+00, h-TT weight=8.378e-01, TT fraction of h-part=0.8378
+      branch omega/|k|=1.03280: h-weight 2w|h|^2=1.000e+00, h-TT weight=1.611e-01, TT fraction of h-part=0.1611
+  generic (2,1,3) : gapless branches 4; omega/|k| at |k|=1e-3: [0.7746  1.0177  1.06904 1.14953]; at 2e-3: [0.7746  1.0177  1.06904 1.14953]; gapped min 1.000
+      branch omega/|k|=1.06904: h-weight 2w|h|^2=1.000e+00, h-TT weight=3.316e-01, TT fraction of h-part=0.3316
+      branch omega/|k|=0.77460: h-weight 2w|h|^2=3.161e-31, h-TT weight=1.064e-31, TT fraction of h-part=0.3365
+      branch omega/|k|=1.14953: h-weight 2w|h|^2=1.000e+00, h-TT weight=6.633e-01, TT fraction of h-part=0.6633
+      branch omega/|k|=1.01770: h-weight 2w|h|^2=1.000e+00, h-TT weight=2.551e-01, TT fraction of h-part=0.2551

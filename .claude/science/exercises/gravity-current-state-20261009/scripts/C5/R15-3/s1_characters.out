@@ -1,0 +1,24 @@
+irrep checks (homomorphism, <chi,chi>): {'A1': (True, 1.0), 'A2': (True, 1.0), 'E': (True, 1.0), 'T1': (True, 1.0), 'T2': (True, 1.0)}
+
+stabilizer eigenvalues in each irrep:
+  A1: C4_z ['+1']  C3_111 ['+1']  C2'_110 ['+1']
+  A2: C4_z ['-1']  C3_111 ['+1']  C2'_110 ['-1']
+  E: C4_z ['+1', '-1']  C3_111 ['w', 'wbar']  C2'_110 ['+1', '-1']
+  T1: C4_z ['+1', '+i', '-i']  C3_111 ['+1', 'w', 'wbar']  C2'_110 ['+1', '-1', '-1']
+  T2: C4_z ['+i', '-1', '-i']  C3_111 ['+1', 'w', 'wbar']  C2'_110 ['+1', '+1', '-1']
+
+stabilizer eigenvalues on TT(k), helicity-1 and helicity-0 subspaces of Sym^2:
+  C4_z: TT ['-1', '-1']  hel-1 ['+i', '-i']  hel-0 ['+1', '+1']
+  C3_111: TT ['w', 'wbar']  hel-1 ['w', 'wbar']  hel-0 ['+1', '+1']
+  C2'_110: TT ['+1', '+1']  hel-1 ['-1', '-1']  hel-0 ['+1', '+1']
+
+per-irrep (dim, mult of -1 under C4, w under C3, +1 under C2'): {'A1': (1, 0, 0, 1), 'A2': (1, 1, 0, 0), 'E': (2, 1, 1, 1), 'T1': (3, 0, 1, 1), 'T2': (3, 1, 1, 2)}
+per-irrep check m4 + m2 <= dim: {'A1': True, 'A2': True, 'E': True, 'T1': True, 'T2': True}
+
+minimal generalized kernel G at k=0 (even multiplicities; branches = dim/2):
+  TT characters on ('C4',): dim G = 4 -> 2 gapless branches (0 partners); minimal G: ['4A2']
+  TT characters on ('C4', 'C3'): dim G = 6 -> 3 gapless branches (1 partners); minimal G: ['2A2 + 2E']
+  TT characters on ('C4', 'C2p'): dim G = 8 -> 4 gapless branches (2 partners); minimal G: ['4E', '2A2 + 2T2', '2A1 + 2A2 + 2E', '4A1 + 4A2']
+  TT characters on ('C4', 'C3', 'C2p'): dim G = 8 -> 4 gapless branches (2 partners); minimal G: ['4E', '2A2 + 2T2', '2A1 + 2A2 + 2E']
+  TT characters on ('C4',) + nonvanishing h-TT residue on z: dim G = 10 -> 5 gapless branches (3 partners); minimal G: ['2E + 2T2']
+  TT characters on ('C4', 'C3', 'C2p') + nonvanishing h-TT residue on z: dim G = 10 -> 5 gapless branches (3 partners); minimal G: ['2E + 2T2']

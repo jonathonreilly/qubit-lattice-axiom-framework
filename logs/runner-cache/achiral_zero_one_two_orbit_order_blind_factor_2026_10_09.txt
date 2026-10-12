@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/achiral_zero_one_two_orbit_order_blind_factor_2026_10_09.py
+runner_sha256: 79e8884a8ce07f262d9c138588becdbd0f0fd845f123b3e7941de8d81bd6d3e0
+input_fingerprint_sha256: 8dfc0089f2f4a1aec1c35add92e77008236cb97c949535a6849c64ecb5bb668f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 4.55
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS orbit of (0, 1, 2) has 24 points and equals its mirror orbit
+PASS every point has coordinates {0, ±1, ±2} with those absolute values once
+PASS (1, 2, 3) transverse product is identically 0 on this orbit
+PASS each value lies on exactly one cap and the cap sign is ±1
+PASS each direction sums to 0 on its four-point cap
+PASS positive-z cap is a quarter-turn eigenfunction of eigenvalue -1
+PASS bond symmetry on all 6 directions and 24 x 24 value pairs
+PASS soldered covariance under all 24 proper rotations
+PASS diag(1, 1, -1) fixes the family, with 4 proper and 4 improper fixers
+PASS without the axis gauge both reflections still fix the family, with 12 proper and 12 improper fixers
+PASS every one of the 3^6 neighbor classes has mean 1
+PASS the factor varies: phi_z((0, 1, 2), (0, 1, -2)) = 3/2
+PASS every bond factor at kappa = 1/2 is at least 1/2
+PASS all 6 formation orders of the 3-site path give one law of mass 1
+PASS nonadjacent ends are uniform and independent: every pair mass is 1/24^2
+PASS adjacent correlation equals kappa/36 = 1/72
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

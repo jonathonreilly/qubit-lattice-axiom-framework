@@ -1,20 +1,18 @@
 # Current ranked decisions
 
-1. Establish the symmetric gapped-chain exact local identities and actual full
-   spin GNS, gap and boost. Obtain a fresh check before substantial reuse; then
-   quantify its actual packet defects. Preserve its fixed-density exact-closure
-   failure and all parity/domain limits.
-2. Derive the massive product carrier from accepted integrated covariance plus
-   supplied geometric-state invariance and a nonzero fixed-mass sector. Prove
-   the actual boost gauge/domain; keep central regularity and creator density
-   as separate obligations. Current author route is unreviewed.
-3. Publish five accepted flow/scattering notes in a new regular milestone
-   stacked on PR9486. New worktree/branch pointers are in STATE.yaml; root owns
-   Git and must inspect the unexecuted preparation and canonical verification.
-4. Build nonzero actual regular almost-local creators and check channel coverage.
-   No generic realization, exact mass shell, ND/EX, density or physical model
-   follows merely from accumulating conditional lemmas.
+1. Complete the fresh concrete-chain review, preserving its full-spin/parity,
+   domain and finite-patch limits. An actual positive gapped Hamiltonian and
+   boost would supply previously abstract input hypotheses.
+2. Finish and independently check the massive product-carrier derivation and
+   its maximal boost domain. Central decay and suitable creator density remain
+   separate; isolated mass stays explicit for direct Centre bridge reuse.
+3. Execute five-note canonical verification after reading the prepared program;
+   evaluate the cluster gate and open a regular stacked milestone on PR9486.
+4. Check the explicit continuum scaling family after the spin parent review.
+   Prove compact-wave-packet group convergence using actual transport and
+   integer geometric shifts. Keep the fixed-lattice closure failure visible.
+5. Construct nonzero actual regular almost-local creators and check channel
+   coverage. Conditional lemmas alone do not establish ND/EX or exhaustion.
 
-Retain all failed routes and mutation survivors, including fixed XX beta closure,
-nonconserving density, centre and spectral counterexamples. Avoid PR9475-9477's
-owned chiral/corner/gravity lanes. Fixed deadline 2026-10-12T16:00:52Z.
+Retain all failed routes and mutation survivors. Avoid PR9475-9477's owned
+chiral/corner/gravity lanes. Fixed deadline 2026-10-12T16:00:52Z.

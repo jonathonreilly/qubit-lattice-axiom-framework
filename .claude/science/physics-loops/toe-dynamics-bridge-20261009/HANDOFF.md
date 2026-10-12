@@ -9,8 +9,8 @@ edit or other-chat message. Preserve selected model and reasoning effort.
 T=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009
 S=T/resume_20261011 holds complete own source/review/control evidence.
 Active science worktree T/microscopic_boost_worktree, branch
-physics-loop/toe-microscopic-boost-20261012, newly created clean at
-3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe. No PR exists yet; the intended regular
+physics-loop/toe-microscopic-boost-20261012, prepared with five notes/primaries at base
+3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe. Worktree is intentionally uncommitted. No PR exists yet; the intended regular
 PR is stacked on PR9486. Parent T/scattering_worktree remains clean at that
 published head, regular/open PR9486, with main base a13caa4885f547c8d206265b031ba7649e539fd9.
 Root alone writes Git/publication worktrees. Primary /Users/jonreilly/Projects/Physics untouched.
@@ -18,20 +18,20 @@ Sibling quantitative_boost_worktree clean433f641f24296b6d8e786930bb1327f43401516
 regular PR9487, boost parent773321aa8fdfccc05248682dfc96bf94215034a2.
 
 This directory in T/worktree, branch physics-loop/toe-nonlinear-transport-20261011
-(PR9478), is the sole live checkpoint. Previous complete checkpoint3b5aaacc770fded0ebd2bed9845b55dde82b279f
-is archived exactly in history/20261012T072753Z_*.gz. The062942/052848/033625 and
+(PR9478), is the sole live checkpoint. Previous complete checkpointbf70dca8e81eaa884466f64c94b7234be1b6a16e
+is archived exactly in history/20261012T075936Z_*.gz. The062942/052848/033625 and
 earlier archives preserve detailed earlier results, failures and receipt hashes.
 Frozen publication packets are milestones, not competing current checkpoints.
 Consult actual evidence whenever these summaries are insufficient.
 
-Lock refreshed06:44:29.672047UTC, expires08:44:29.672047UTC; refresh by08:30.
+Lock refreshed07:55:58.187570UTC, expires09:55:58.187570UTC; refresh by09:40.
 Ownercodex-toe-native-20261011, holder01a11691-f332-7852-b641-6ee714aab15a.
 From T/worktree run: python3 scripts/automation_lock.py refresh --owner
 codex-toe-native-20261011 --ttl-hours 2. Do not change owners.
 
 ## Current remote/instruction ownership
 
-Fresh fetch/read07:03:46UTC: S/repo_sync_0710.json. Maina13caa48 and planning
+Fresh fetch/read07:55:36UTC: S/repo_sync_0800.json. Maina13caa48 and planning
 3a4b2c66a1ead7a1c48b4359627e968f681e3c39 unchanged. Instruction hashes unchanged:
 AGENTSf9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f;
 CLAUDE254339c255b9c75eac37c1185b77f11be8f55bb9b734543b2a81647f5f373dfc;
@@ -40,12 +40,13 @@ current repo reporting8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa72
 Applicable instructions/skills already read. Bounded workers/reviewers authorized;
 no model/effort override or subdelegation. No editable prompt or skill changed.
 
-PR9477advanced tobccdf03ac9ad477ac5609a82a5f2be5f7bff3b38. Root read its one
-complete new two-cap-multiple partner-rank note; sources and all changed paths
-in S/ownership_9477_0710/. Earlier both148/150line notes at2f93e8 and earlier
-64a46f source scopes read. These restricted chiral-rank results do not overlap
-our Hamiltonian/current/boost/scattering work. No runner audit or proof import.
-PR9475fe9008f and9476a2153db unchanged;16open PRs. Our10regular/open/unmerged.
+PR9477 advanced through e1ae96e4f70492a30571d2d6f9ddbf5e53a98238 to
+fac731d7ec625d77878803217a8574014eeb8e39. Root read the complete152/164line
+new notes, S/ownership_9477_0740/ and ownership_9477_0800/. Positive-scale
+restricted partner-rank results have no Hamiltonian/current/boost overlap.
+Changed path inventories retained; no runner audit or proof import claimed.
+Earlier bccdf03,2f93e8,64a46f note scopes are preserved. PR9475fe9008f and
+9476a2153db unchanged;16open PRs, campaign10regular/open/unmerged.
 
 ## Published regular milestones
 
@@ -156,18 +157,36 @@ CAR/qutrit205rows,187zerorowslosslessgrouped18othersfullyread,292bindings,
 _evidence_verification. No correction. Initialexpectedcurrentsignfailure and
 historicalmislabeledstarttimepreserved.
 
-Agent regularity_joint_packaging prepares UNEXECUTED
-S/prepare_boost_gap_fock_closure_publication.py and preparation/.
-Required --worktree is T/microscopic_boost_worktree and --base is the exact
-3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe head. Root must read before execution.
-Five notes: Boost, Gap, nonisolated Fock, weighted Current closure, Integrated
-boost covariance. No mathematical edits. Direct dependencies: Boost->Current;
-Gap->Current (Joint's optional test is not its proof); Fock->Mass+oldFock;
-Weighted->Current+Joint; Integrated->Boost+Joint. Joint J9-J10 is cited for
-the spectral step, although the alternative mixed-history route is optional.
-Expect eight direct edges if these exact proof links drive graph generation.
+Root executed S/prepare_boost_gap_fock_closure_publication.py once at
+07:53:26UTC, after complete script/reconstruction/all10diffs/packettemplates
+and dependency/mutation metadata reads. Receipt in
+S/boost_gap_fock_closure_root_preparation_execution/: exit0,1.4857seconds/60,
+empty stderr. Script SHA3c40c1da8ec9a109641ed3f08e5518340d47a9c03d5674909249b631987bfc2c,
+freeze9e484758a5f0b2713bb7fe436961e4a13825f65206de1626a3d488a81a628d6b.
+Five complete notes/primaries and milestonepacket are now in
+T/microscopic_boost_worktree/.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012.
+1265prepared files,1231own evidence,72externalartifacts inventoried separately.
+Forty-seven administrative edits; no math correction. All complete original
+proof/helper reads and source reviews remain authoritative under exact maps.
+Never blindly rerun preparation. Root's truncated combined display was
+recovered with complete focused reads before execution.
+
+Agent regularity_joint_packaging now prepares UNEXECUTED
+S/verify_boost_gap_fock_closure_publication.py and
+boost_gap_fock_closure_verification_preparation/. Root must read then execute.
+Five notes: Boost,Gap,nonisolatedFock,Weightedclosure,Integratedcovariance.
+Direct dependencies: Boost->Current; Gap->Current(Jointoptionaltest);
+Fock->Mass+oldFock; Weighted->Current+Joint; Integrated->Boost+Joint.
+JointJ9-J10 spectral step is direct; alternative mixed-historyJ1-J3 is optional.
+Expect five graphnodes/eight directedges. Thirty-two original canonical mutations
+must keep the four Fock survivors and full original result/stream comparisons.
+Save entire inner execute_runner and outer execute_and_write_cache returns
+outsidecache BEFORE later identity/freshness calls. No canonicalrun yet.
 No worktree/Git write delegated. Same-family separate-context pairing must
 appear plainly in every note, receipt and PR. No draft or retained promotion.
+New stackedPR needs current CAMPAIGN.md cluster-cap evaluation after canonical
+payload is ready. Root isolated evaluator is allowed;200-400word OPEN/BACKLOG
+gate applies to PR creation only, not discovery. No global audit/strictlint run.
 
 Integrated boost 550 lines, source
 71fe0b4cc1df0b34ef0ca55484ad8faffabe8155efa582bf09fc2eec8622c5ed;
@@ -194,29 +213,74 @@ run or Lean certificate. Root is coauthor; same-family separate contexts.
 
 ## Active science and ranked next decisions
 
-Agentconcrete_gapped_chain owns S/CONCRETE_GAPPED_CHAIN_PROBE.md and
-concrete_gapped_chain/. Unverified rootlead symmetricdensity
-h_x=-JX_xX_(x+1)-(g/2)(Z_x+Z_(x+1)),g>J>0. Exactlocalcurrentconservation
-suggested by6rationalfixtures. Candidatep=Jg(XY-YX), stress
-2Jg^2(XX+YY)+2J^2g(Z-XZX); positiveband T=4Jg cos(k)H proposed.
-Worker has an unfrozen full-spin GNS route using an exponentially localized
-Bogoliubov spin automorphism and an even-algebra lift lemma. Candidate H=dGamma(E),
-gap 2(g-J), and B=dGamma(i(E partial+Eprime/2)-E/2). Exact Pauli and distinct
-Laurent/Gaussian-integer author controls reportedly agree; full proof, domain
-matching and independent review are still pending. Do not treat this as established.
-Noexactbetaclosure/3DTOEclaim. Dispersionalonecannotcertifyactualoperators.
-Rootprototypeimportedauthorhelper,notindependent; originalpathmetadata shadowerror
-preserved withseparatecorrection. S/ROOT_CONCRETE_GAPPED_CHAIN_LEAD.md.
-PrimaryarXiv1305.4984v2SectionsII/IVmodel/currentpassages andcond-mat/9612047v1
-pages1–2readforleadonly; nofullpaperreviewclaimed.
+Concrete gapped chain author is frozen at S/CONCRETE_GAPPED_CHAIN_PROBE.md,
+930lines SHA0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd.
+Manifestb57526aa072e5432fd606b1adf69480f24136bd56ddda6ef22781eaa88299b57.
+Root read the entire796line precontrol proof and final134line delta, all3helpers,
+logger/freezer/receipts,105finalpredicates and nine rejecting CLI variants,
+all unchanged labels and computed values.121bindings/13executions verified.
+S/Concrete_chain_root_author_coverage.json
+5fd4f212862533255cce5556a0749f00200385282b6e03476d675891e6b4fbda records
+the remaining fresh review, not acceptance. Root is coauthor.
+Root literature matching: NSY1810.02428 source hash10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d,
+complete lines1094-1360 and1662-1790; prior full959line TWWmain source
+bd67842f411193b3727a1d90aa7c47573c1db63e4b58a3a8d8bcf57ad5d4be0d
+read reused with newly checked exponential hypotheses. No whole NSYpaper read.
 
-Agent massive_boost_carrier is developing S/MASSIVE_BOOST_CARRIER_PROBE.md
-and massive_boost_carrier/ from S/ROOT_MASSIVE_BOOST_CARRIER_LEAD.md: actual
-geometricTwithTΩ=Ω,fullTBT*=B-H, central mismatch, positivefixedmass
-rapidityWeyl/imprimitivity productcarrier andmatchedactualB Sobolevcontrol.
-Unverified and unfrozen. A self-contained Weyl-kernel/product-carrier argument
-is under construction. State translationinvariance,mass/nonzerosector andcentral
-powerratecannotbeassumed. Keepactualcreatordensityasdistinctobligation.
+Proposed actual symmetric density h=-J XX-g/2(Z+shiftZ),g>J>0 has exactly
+conserved current but fails fixed-beta stress closure. Even-CAR diagonalization
+is lifted to fullspin through an exponential Bogoliubov automorphism plus
+even-algebra uniqueness lemma. Claimed fullspin GNS H=dGamma(E), simplegap
+m=2(g-J), and actual B=dGamma(i(Epartial+Eprime/2)-E/2), P=dGamma(4Jg sink),
+stress=dGamma(4Jg cosk E). Localcyclicdomain invariant, not separately claimed
+a core. Finite smooth-particle cores and complete boost transport are treated.
+Patch covariance errors are controlled only while characteristics stay inside
+the patch; fixed m/c and shrinking patch cannot give fixed nonzero rapidity.
+Author Pauli/Laurent/Gaussian-integer controls preserve nonzero global open
+boundary residuals. Floating quadrature/ODE is not intervalcertified; author's
+half-density gate compares amplitude to Jacobian, not an independent norm
+integral. Source proof carries unitarity.
+
+Fresh agent concrete_gapped_chain_review has read full proof and preregistered
+reconstruction before helper exposure. Preliminary separate binary-spin and
+spectral-flow checks agree. Its M=128 numerical cutoff threshold failed
+(2.13e-9 versus1e-10); original run is retained and resolution is being extended
+with threshold unchanged. Author-control/history and source/pin mutations remain.
+No final review verdict or retained status yet; wait for complete evidence.
+
+Author massive_boost_carrier froze S/MASSIVE_BOOST_CARRIER_PROBE.md and
+massive_boost_carrier/. Final note eb85ee2fda1690373e7bb7bdf96bc255e86235d672e8e9f18e46c6553078e310,
+receipt10f408ded24c9f65a3b5a8205bc0b6e78b8b63aae7242888058339bfa10c53f0,
+manifest37d0b050a9b81750d7fd190515ad3ce886e804286d19f301a56156b851840f87.
+Fresh agent massive_boost_carrier_review dispatched at this exact source.
+Root fully read732line proof snapshot
+b26cc4c0f9536ad4a6763083aed8a0d70fa9b21086b712389a4882b3e843065c,
+preserved in root_massive_read/. Final controls/evidence appendix root read pending.
+Actual geometric invariance TΩ=Ω remains supplied. The draft derives full
+TBT*=closure(B-H), a central mismatch, then from a nonzero positive fixedmass
+sector derives the rapidity Weyl pair and product carrier by a self-contained
+Schwartz-kernel/matrix-unit proof. Actual maximal boost domain becomes weighted
+H1 and gives ambient Sobolev control. Centre rate and actual regular-creator
+density remain independent obligations. Root reread the Centre note1-190 and
+requested that direct G1-G7 bridge reuse retain isolatedmass explicitly; author
+added five pre-M37 lines, broader productcarrier result stays nonisolated.
+This source precision change and final appendix still need root finaldelta and
+the fresh independent review. Eight author whole-source mutants reportedly reject;
+no claim of root control coverage yet. Abstract slow-centre/rough-gauge/domain
+witnesses are not physical spin realizations or a universal impossibility.
+
+Next scaling lead S/ROOT_GAPPED_CONTINUUM_SCALING_LEAD.md130lines
+SHA0daf75122806f74f250678f8e45da25105f0da4d0b8773871746e1b8308eba19
+is an unverified root proposal, not an accepted theorem. Supply a->0,m,v>0,
+g-J=m/2 and gJ=v^2/(4a^2),q=k/a. Then candidate E_a=sqrt(m^2+
+4v^2 sin^2(aq/2)/a^2),P_a=v^2sin(aq)/a and centered actual aB+aH/2
+suggest O(a^2) compactpacket convergence to massive1+1 boost/translation
+kinematics. Actual integer geometric shifts approximate continuous shifts;
+no invented finite-a continuous geometric action. Prove transport/Jacobian,
+varying-Hilbert-space domains and finiteparticle extension before use.
+Parent actualspin construction requires fresh review before substantial reuse.
+Even if established this supplies no interacting limit, localnet convergence,
+3Dtheory, scattering completeness or regular-creator density automatically.
 
 Continue discovery throughdeadline, selectivelycheck andpublishcoherentmilestones.
 Editableprompts/skills/axioms changed:none.

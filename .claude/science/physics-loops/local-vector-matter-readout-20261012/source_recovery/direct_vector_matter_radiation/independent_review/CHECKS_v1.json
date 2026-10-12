@@ -1,0 +1,450 @@
+{
+  "at": "2026-10-12T23:00:20.410337+00:00",
+  "checker_sha256": "f8956e09e3f960f57ab514076348cfbef778684b4fa18dc24608fa92d87713a4",
+  "source_pins_sha256": "cfb4d36c3ce9de42470de85421709e396cd974ac2ef236d95f9d04bfb311f8a3",
+  "author_results_sha256": "9be210deaaa05474e85517979c98bfb77deb21cab76d7c7da74fc634735beb8f",
+  "no_author_runner_execution": true,
+  "checks": {
+    "energy_and_momentum": {
+      "passed": true,
+      "detail": {
+        "field_energy_identity": "dh/dt+div(S)=sum(u_t dot operator)/(4*pi*G)=-rho*phi_t",
+        "field_momentum_identity": "dP_field/dt=+integral(rho grad(phi)); matter force cancels it",
+        "matter_interaction_cancellation": "-J.grad(phi) + rho*phi_t + J.grad(phi) - rho*phi_t = 0",
+        "static_half_counting": "E_field=-1/2 integral(rho phi); H_static=T+1/2 integral(rho phi)",
+        "symbolic_local_energy_residual": 0,
+        "symbolic_momentum_residuals": [
+          0,
+          0,
+          0
+        ]
+      },
+      "warnings": []
+    },
+    "mechanics_multipoles_and_spherical_moments": {
+      "passed": true,
+      "detail": {
+        "vertical_frequency_squared": "G*(3*D - N)*(m1 + m2)/(2*a**3)",
+        "orbital_frequency_squared": "G*(D + N)*(m1 + m2)/(2*a**3)",
+        "dipole_exact_conservative": "Matrix([[0], [0], [0]])",
+        "moment_third_at_zero": "Matrix([[0, -4*Omega**3*a**2*m1*m2/(m1 + m2), 0], [-4*Omega**3*a**2*m1*m2/(m1 + m2), 0, 0], [0, 0, 0]])",
+        "angular_contraction_integrals_over_mred2_a4_Omega6": [
+          "512*pi/35",
+          "256*pi/105"
+        ],
+        "power_coefficients": [
+          "32/35",
+          "16/105"
+        ],
+        "GR_comparator_quadrupole_norm": "32*Omega**6*a**4*m1**2*m2**2/(m1 + m2)**2",
+        "period_balance": "dlog(P_orb)/dt = -3 P_rad/(2 |E_orbit|)",
+        "tail_trace_not_discarded": true
+      },
+      "warnings": []
+    },
+    "middle_term_and_positive_flux": {
+      "passed": true,
+      "detail": {
+        "primitive": "(-I*tau/w + w**(-2))*exp(I*tau*w)",
+        "primitive_numeric_errors": [
+          "5.9347298410998742171707764184762232213881036460124656039248624943e-67",
+          "3.040064999053008268320008752436101812477628554769363776366945981e-65"
+        ],
+        "fixed_frequency_middle_bound": "|middle scalar| <= (1/cL+1/cT)/(|omega| r^2) + 2/(omega^2 r^3)",
+        "DC_middle_scalar": "(1/cT^2-1/cL^2)/(2r)",
+        "fixed_frequency_and_large_wave_zone_required": true,
+        "projector_cross_terms_exactly_zero": true,
+        "flux": "alpha/(4*pi*G) [cT |u_t,T|^2 + cL |u_t,L|^2]",
+        "quadrupole_power_mode_factor": "G/(16*pi*alpha*c_s^7)"
+      },
+      "warnings": []
+    },
+    "independent_Bessel_source_harmonics": {
+      "passed": true,
+      "detail": {
+        "equal_mass_rows": [
+          {
+            "q": 1.0,
+            "epsilon_T": 0.08,
+            "bessel_power_1_to_32": [
+              2.3383875118231534e-06,
+              3.898213675550606e-07
+            ],
+            "relative_difference_from_author": [
+              1.2623698194828892e-13,
+              1.777683030355036e-13
+            ],
+            "adaptive_quadrature_error_estimates": [
+              2.5961316561219954e-20,
+              4.327886577504943e-21
+            ],
+            "fractional_leading_correction": -0.0009000685870798053,
+            "predicted_epsilon_squared_coefficient": 0.14285714285714285,
+            "harmonics_ge18_total_power_bound": 1.3616076240948702e-41,
+            "bound_over_leading": 4.9863560452693e-36
+          },
+          {
+            "q": 1.0,
+            "epsilon_T": 0.04,
+            "bessel_power_1_to_32": [
+              1.4625117724901565e-07,
+              2.437663180030043e-08
+            ],
+            "relative_difference_from_author": [
+              3.643298285899744e-13,
+              6.969908690022463e-13
+            ],
+            "adaptive_quadrature_error_estimates": [
+              1.6237142436039202e-21,
+              2.706349788750332e-22
+            ],
+            "fractional_leading_correction": -0.00022768135166351122,
+            "predicted_epsilon_squared_coefficient": 0.14285714285714285,
+            "harmonics_ge18_total_power_bound": 1.9542022720986505e-52,
+            "bound_over_leading": 1.145040393807803e-45
+          },
+          {
+            "q": 1.0,
+            "epsilon_T": 0.02,
+            "bessel_power_1_to_32": [
+              9.142315883584223e-09,
+              1.523741852909983e-09
+            ],
+            "relative_difference_from_author": [
+              1.7878499400132052e-12,
+              2.2247816708068816e-12
+            ],
+            "adaptive_quadrature_error_estimates": [
+              1.0150009592351489e-22,
+              1.6916932886856617e-23
+            ],
+            "fractional_leading_correction": -5.70872036680381e-05,
+            "predicted_epsilon_squared_coefficient": 0.14285714285714285,
+            "harmonics_ge18_total_power_bound": 2.833936348806731e-63,
+            "bound_over_leading": 2.6568153270063108e-55
+          },
+          {
+            "q": 1.0,
+            "epsilon_T": 0.01,
+            "bessel_power_1_to_32": [
+              5.71420107928415e-10,
+              9.52370372478692e-11
+            ],
+            "relative_difference_from_author": [
+              5.815863779376638e-12,
+              1.143268718587208e-11
+            ],
+            "adaptive_quadrature_error_estimates": [
+              6.3440376055591836e-24,
+              1.0573435154966804e-24
+            ],
+            "fractional_leading_correction": -1.4282235573648272e-05,
+            "predicted_epsilon_squared_coefficient": 0.14285714285714285,
+            "harmonics_ge18_total_power_bound": 4.120362445398667e-74,
+            "bound_over_leading": 6.180543668098e-65
+          },
+          {
+            "q": 1.5,
+            "epsilon_T": 0.08,
+            "bessel_power_1_to_32": [
+              4.295892168647317e-06,
+              1.7329416629977913e-07
+            ],
+            "relative_difference_from_author": [
+              1.2599339835523084e-13,
+              2.5966612889346904e-13
+            ],
+            "adaptive_quadrature_error_estimates": [
+              4.769398396939148e-20,
+              1.9239517345923566e-21
+            ],
+            "fractional_leading_correction": -0.0009151241114155884,
+            "predicted_epsilon_squared_coefficient": 0.14527718059146266,
+            "harmonics_ge18_total_power_bound": 1.9315202778908443e-41,
+            "bound_over_leading": 4.317906107478737e-36
+          },
+          {
+            "q": 1.5,
+            "epsilon_T": 0.04,
+            "bessel_power_1_to_32": [
+              2.6868056890607113e-07,
+              1.0834697300332381e-08
+            ],
+            "relative_difference_from_author": [
+              3.6431828831393863e-13,
+              9.164516366121213e-13
+            ],
+            "adaptive_quadrature_error_estimates": [
+              2.9829535386890606e-21,
+              1.2028930407673035e-22
+            ],
+            "fractional_leading_correction": -0.00023152630499589932,
+            "predicted_epsilon_squared_coefficient": 0.14527718059146266,
+            "harmonics_ge18_total_power_bound": 2.772150543860285e-52,
+            "bound_over_leading": 9.91541090296441e-46
+          },
+          {
+            "q": 1.5,
+            "epsilon_T": 0.02,
+            "bessel_power_1_to_32": [
+              1.6795506736592456e-08,
+              6.772286212820124e-10
+            ],
+            "relative_difference_from_author": [
+              1.7877791189387383e-12,
+              3.5813562471572794e-12
+            ],
+            "adaptive_quadrature_error_estimates": [
+              1.8646758289211871e-22,
+              7.518748082824406e-24
+            ],
+            "fractional_leading_correction": -5.8053523592782597e-05,
+            "predicted_epsilon_squared_coefficient": 0.14527718059146266,
+            "harmonics_ge18_total_power_bound": 4.020104931191803e-63,
+            "bound_over_leading": 2.3006538287227546e-55
+          },
+          {
+            "q": 1.5,
+            "epsilon_T": 0.01,
+            "bessel_power_1_to_32": [
+              1.0497657698930317e-09,
+              4.232772882863436e-11
+            ],
+            "relative_difference_from_author": [
+              5.81558923527265e-12,
+              1.5520239826511683e-11
+            ],
+            "adaptive_quadrature_error_estimates": [
+              1.1654741281985974e-23,
+              4.699321912563987e-25
+            ],
+            "fractional_leading_correction": -1.452413338343117e-05,
+            "predicted_epsilon_squared_coefficient": 0.14527718059146266,
+            "harmonics_ge18_total_power_bound": 5.8449758026567264e-74,
+            "bound_over_leading": 5.3520059557997525e-65
+          },
+          {
+            "q": 2.0,
+            "epsilon_T": 0.08,
+            "bessel_power_1_to_32": [
+              6.613958666608361e-06,
+              9.748935525980422e-08
+            ],
+            "relative_difference_from_author": [
+              1.2614645707686726e-13,
+              2.47621280625095e-13
+            ],
+            "adaptive_quadrature_error_estimates": [
+              7.342969195587702e-20,
+              1.0823492686529626e-21
+            ],
+            "fractional_leading_correction": -0.0009246529404225434,
+            "predicted_epsilon_squared_coefficient": 0.14680393260268376,
+            "harmonics_ge18_total_power_bound": 2.606407780673008e-41,
+            "bound_over_leading": 3.879934329476983e-36
+          },
+          {
+            "q": 2.0,
+            "epsilon_T": 0.04,
+            "bessel_power_1_to_32": [
+              4.136607967571789e-07,
+              6.094697159683579e-09
+            ],
+            "relative_difference_from_author": [
+              3.640979447759125e-13,
+              1.3937226883883506e-12
+            ],
+            "adaptive_quadrature_error_estimates": [
+              4.592557409446072e-21,
+              6.766473114798253e-23
+            ],
+            "fractional_leading_correction": -0.0002339539277649294,
+            "predicted_epsilon_squared_coefficient": 0.14680393260268376,
+            "harmonics_ge18_total_power_bound": 3.740760492871554e-52,
+            "bound_over_leading": 8.90967570754928e-46
+          },
+          {
+            "q": 2.0,
+            "epsilon_T": 0.02,
+            "bessel_power_1_to_32": [
+              2.5858374228127558e-08,
+              3.809439187171292e-10
+            ],
+            "relative_difference_from_author": [
+              1.787794919607796e-12,
+              5.127347686128829e-12
+            ],
+            "adaptive_quadrature_error_estimates": [
+              2.8708562447440977e-22,
+              4.229327096506909e-24
+            ],
+            "fractional_leading_correction": -5.866327512460412e-05,
+            "predicted_epsilon_squared_coefficient": 0.14680393260268376,
+            "harmonics_ge18_total_power_bound": 5.424759393787935e-63,
+            "bound_over_leading": 2.0672950147858276e-55
+          },
+          {
+            "q": 2.0,
+            "epsilon_T": 0.01,
+            "bessel_power_1_to_32": [
+              1.616220132890125e-09,
+              2.3809391547568725e-11
+            ],
+            "relative_difference_from_author": [
+              5.8158333134595e-12,
+              1.506558234690689e-11
+            ],
+            "adaptive_quadrature_error_estimates": [
+              1.7943648043973473e-23,
+              2.6433734698426387e-25
+            ],
+            "fractional_leading_correction": -1.4676749247266585e-05,
+            "predicted_epsilon_squared_coefficient": 0.14680393260268376,
+            "harmonics_ge18_total_power_bound": 7.887253674874899e-74,
+            "bound_over_leading": 4.809143858757467e-65
+          },
+          {
+            "q": 5.0,
+            "epsilon_T": 0.08,
+            "bessel_power_1_to_32": [
+              2.6143967170865846e-05,
+              1.560159597282414e-08
+            ],
+            "relative_difference_from_author": [
+              1.2544812156218877e-13,
+              5.855415497842806e-13
+            ],
+            "adaptive_quadrature_error_estimates": [
+              2.902563430813948e-19,
+              1.7321251069928475e-22
+            ],
+            "fractional_leading_correction": -0.0009325983942869431,
+            "predicted_epsilon_squared_coefficient": 0.14807310518032876,
+            "harmonics_ge18_total_power_bound": 8.292421827442711e-41,
+            "bound_over_leading": 3.1669819950028464e-36
+          },
+          {
+            "q": 5.0,
+            "epsilon_T": 0.04,
+            "bessel_power_1_to_32": [
+              1.6351378705908503e-06,
+              9.7520344221172e-10
+            ],
+            "relative_difference_from_author": [
+              3.7763605727342037e-13,
+              2.874595160969091e-12
+            ],
+            "adaptive_quadrature_error_estimates": [
+              1.8153677123665117e-20,
+              1.08269331523716e-23
+            ],
+            "fractional_leading_correction": -0.0002359735046146838,
+            "predicted_epsilon_squared_coefficient": 0.14807310518032876,
+            "harmonics_ge18_total_power_bound": 1.1901423941542134e-51,
+            "bound_over_leading": 7.272489725599673e-46
+          },
+          {
+            "q": 5.0,
+            "epsilon_T": 0.02,
+            "bessel_power_1_to_32": [
+              1.0221419893735203e-07,
+              6.09518392397966e-11
+            ],
+            "relative_difference_from_author": [
+              1.7867208886882938e-12,
+              1.341880229139871e-11
+            ],
+            "adaptive_quadrature_error_estimates": [
+              1.1348055710386442e-21,
+              6.767013531727328e-25
+            ],
+            "fractional_leading_correction": -5.917025011870081e-05,
+            "predicted_epsilon_squared_coefficient": 0.14807310518032876,
+            "harmonics_ge18_total_power_bound": 1.725915397400188e-62,
+            "bound_over_leading": 1.6874218824905754e-55
+          },
+          {
+            "q": 5.0,
+            "epsilon_T": 0.01,
+            "bessel_power_1_to_32": [
+              6.388671025191021e-09,
+              3.809515344252685e-12
+            ],
+            "relative_difference_from_author": [
+              5.8147744911698175e-12,
+              5.850356934687952e-11
+            ],
+            "adaptive_quadrature_error_estimates": [
+              7.092849668922674e-23,
+              4.2294116478521607e-26
+            ],
+            "fractional_leading_correction": -1.4803623122006115e-05,
+            "predicted_epsilon_squared_coefficient": 0.14807310518032876,
+            "harmonics_ge18_total_power_bound": 2.5093707522321046e-73,
+            "bound_over_leading": 3.925445824263857e-65
+          }
+        ],
+        "unequal_mass_controls": [
+          {
+            "epsilon_T": 0.06,
+            "total_power": 1.5007671456830535e-06,
+            "fractional_leading_correction": 0.0006718885661698426,
+            "odd_harmonic_power_fraction": 0.0014427413142820038
+          },
+          {
+            "epsilon_T": 0.03,
+            "total_power": 9.375058355159311e-08,
+            "fractional_leading_correction": 0.00016660163817983076,
+            "odd_harmonic_power_fraction": 0.0003614362831719619
+          },
+          {
+            "epsilon_T": 0.015,
+            "total_power": 5.8586789520182115e-09,
+            "fractional_leading_correction": 4.156484926576276e-05,
+            "odd_harmonic_power_fraction": 9.040628444717435e-05
+          }
+        ],
+        "self_consistent_slow_control": {
+          "q": 2.0,
+          "a": 3333.3333333333344,
+          "Omega": 6.363961030678925e-06,
+          "epsilon_T": 0.03,
+          "potential_compactness_GeqM_over_a_cT2": 0.0008999999999999999,
+          "relative_binding_loss_per_orbit": 7.932447357537618e-08,
+          "point_multipole_only_no_internal_body_model": true
+        },
+        "coefficient_formula": "rho_h(n)=i^h [m1 J_h(h Omega r1 sin(theta)/c)+(-1)^h m2 J_h(h Omega r2 sin(theta)/c)] up to convention conjugation",
+        "equal_mass_odd_harmonics_exactly_zero": true,
+        "no_author_runner_import_or_execution": true
+      },
+      "warnings": []
+    },
+    "calibration_polynomial": {
+      "passed": true,
+      "detail": {
+        "ratio": "cE**5*(6*q**(7/2) + 1)/(21*cL**5*(q + 1))",
+        "derivative": "(-6*q**(7/2) + 21*q**(5/2)*(q + 1) - 1)/(21*(q + 1)**2)",
+        "monotonicity_reason": "For q>=1, derivative numerator >=15+21-1=35>0.",
+        "sqrt_q_exact_bracket": [
+          "3699814960490324767380257030482798545/2658455991569831745807614120560689152",
+          "1849907480245162383690128515241399273/1329227995784915872903807060280344576"
+        ],
+        "q_exact_bracket": [
+          "13688630741868023419464408317557371327802241997401724011853137135054117025/7067388259113537318333190002971674063309935587502475832486424805170479104",
+          "3422157685467005854866102079389342833800467979595593386653412799004928529/1766847064778384329583297500742918515827483896875618958121606201292619776"
+        ],
+        "q_approx": 1.9368726097956006,
+        "cT_over_cL": 0.7185375538936453,
+        "polar_to_equatorial_static_ratio": 1.3190034891778315,
+        "vertical_to_orbital_frequency_squared": 0.361993021644337,
+        "unique_root_greater_than_one_and_less_than_three": true
+      },
+      "warnings": []
+    }
+  },
+  "raw_failures": [],
+  "pass_count": 5,
+  "fail_count": 0,
+  "elapsed_seconds": 0.7051413329318166,
+  "limits": "Symbolic identities plus floating Bessel/quadrature controls, with an analytic harmonic-tail bound; no empirical test, finite-body self-force calculation or relativistic matter bridge."
+}

@@ -1,0 +1,19 @@
+{
+  "source_disposition": "SOURCE_DISPOSITION_v1.json",
+  "canonical_note": "docs/LOCAL_VECTOR_MATTER_RADIATION_READOUT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+  "canonical_runner": "scripts/local_vector_matter_readout_2026_10_12.py",
+  "unchanged_calculation_functions": [
+    "symbolic",
+    "angular_tensor_power",
+    "exact_source_harmonics",
+    "bracket",
+    "cquad"
+  ],
+  "main_changes": [
+    "rename two main calculation blocks",
+    "remove original source-hash/write-to-evidence plumbing",
+    "return complete results",
+    "explicit11-family aggregation and new source/cache CLI"
+  ],
+  "formula_changes": false
+}

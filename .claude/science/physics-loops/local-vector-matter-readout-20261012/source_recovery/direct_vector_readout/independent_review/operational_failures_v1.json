@@ -1,0 +1,21 @@
+{
+  "url": "https://dcc.ligo.org/public/0145/P170814/015/LIGO-P170814.pdf",
+  "failures": [
+    {
+      "operation": "Read official PDF with Python urllib.request.urlopen, timeout 30s",
+      "failure": "ssl.SSLCertVerificationError: self-signed certificate in certificate chain",
+      "context": "Earlier call, reconstructed faithfully after context compaction."
+    },
+    {
+      "operation": "Construct manifest with relative Path object",
+      "failure": "FileNotFoundError: direct_vector_matter_radiation/DIRECT_MATTER_RADIATION.md",
+      "fix": "Resolve current directory to absolute path before selecting sibling."
+    },
+    {
+      "operation": "First curl download",
+      "failure": "curl exit 23: output directory had not been created because preceding manifest step failed",
+      "fix": "Create reviewer-owned output directory before retry."
+    }
+  ],
+  "impact": "No scientific controls executed in these failed setup operations. No author file changed. TLS validation remains enabled."
+}

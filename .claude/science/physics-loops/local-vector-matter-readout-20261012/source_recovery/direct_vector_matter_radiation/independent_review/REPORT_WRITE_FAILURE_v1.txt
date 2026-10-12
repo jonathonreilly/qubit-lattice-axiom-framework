@@ -1,0 +1,11 @@
+First report-writing command exited 1 before executing any statements.
+This was a packaging/string-quotation failure, not a scientific check failure.
+
+  File "<stdin>", line 76
+    I constructed the second moment from both mass trajectories, obtaining `I=m_red R R^T` and zero conservative dipole for arbitrary mass ratio. At phase zero, `I'''` has off-diagonal entries `-4 m_red a^2 Omega^3`. Instead of repeating the author's univariate angular integral, I used isotropic sphere moments:
+                                                                                                                                                                                                                                                        ^
+SyntaxError: unterminated string literal (detected at line 76)
+
+Cause: an I''' mathematical notation terminated a triple-single-quoted Python
+report string. The successful write uses a triple-double-quoted string. No
+scientific source, check result, or original evidence was changed.

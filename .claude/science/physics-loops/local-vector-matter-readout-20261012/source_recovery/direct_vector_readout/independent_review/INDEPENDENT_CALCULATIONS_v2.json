@@ -1,0 +1,1973 @@
+{
+  "schema": "independent_vector_mechanical_readout_checks_v2",
+  "created_utc": "2026-10-12T23:21:56.116399+00:00",
+  "review_script_sha256": "eb51cc14303875c3b5b9ea018dea518d80def4893dc51f558ab98bcedbb9fdef",
+  "source_manifest_sha256": "64521db2ca1756ee0f0eb1baf779c3b2beafef9a287fa1a7866e4a8826b689b0",
+  "author_source_imported_or_executed": false,
+  "empirical_arrays_read": false,
+  "methods": [
+    "two-mass linear IVP matrix exponential",
+    "direct acceleration differentiation",
+    "80-digit phase quotient/Gram-minor arithmetic"
+  ],
+  "environment": {
+    "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "numpy": "2.4.1",
+    "scipy": "1.17.0",
+    "mpmath": "1.3.0",
+    "thread_limits": 1
+  },
+  "checks": [
+    {
+      "name": "acceleration_jacobian_and_transverse_projection",
+      "passed": true,
+      "evidence": {
+        "jacobian_error": "2.6355494858076308060871435128175047519274903455921268875194407562770360727424399e-82",
+        "PTP_max": "5.4026843504620711677260139430023557688017978112083504891752384307792740193790905e-84",
+        "method": "mpmath direct acceleration derivative, no author Hessian/helper"
+      }
+    },
+    {
+      "name": "different_directions_are_outside_rank_one_scope",
+      "passed": true,
+      "evidence": {
+        "example": "phi=cos(t-x)+cos(t-y), at origin/t=0",
+        "tidal_diagonal": [
+          1,
+          1,
+          0
+        ],
+        "rank": 2
+      }
+    },
+    {
+      "name": "author_scalar_invariants_via_two_mass_matrix_exponential",
+      "passed": true,
+      "evidence": {
+        "count": 36,
+        "max_relative_error": 2.3246392644409276e-13,
+        "max_characteristic_scaled_error": 2.150644076694668e-14,
+        "coverage": "same declared mu/c/omega/L/time invariants, independent base/amplitude/3D geometry; not a replay of unstored author vectors"
+      }
+    },
+    {
+      "name": "independent_rotations_blind_arm_and_full_phase_nodes",
+      "passed": true,
+      "evidence": {
+        "count": 17,
+        "max_characteristic_scaled_error": 1.1169496638525208e-15
+      }
+    },
+    {
+      "name": "wrong_sign_and_initial_condition_omissions_detected",
+      "passed": true,
+      "evidence": {
+        "wrong_sign_relative_error": 1.999999999999987,
+        "correct_Q0": "0.0",
+        "correct_Qprime0": "4.8472407470311279077122268626527263829948757502341941406005794164296387449331173e-169",
+        "omit_i_omega_t_initial_speed_factor": "1.4",
+        "omit_minus_one_initial_displacement_factor": "1.0"
+      }
+    },
+    {
+      "name": "angular_and_finite_arm_receipt_arithmetic",
+      "passed": true,
+      "evidence": {
+        "longitudinal_F_exact": "-3/14",
+        "breathing_contraction_exact": "3/14",
+        "errors": [
+          "0.005344946414084412650832048317542044631053409518932898505292658942376241866658357",
+          "0.002672577615594761758828213518014214466328082481383693129241758287188606427081662",
+          "0.0013363018591050311579397513396242029992695636166074683142099976089982887983258219",
+          "0.00066815256097342757779894185223236360149685043800885533303274499955849497702549702"
+        ],
+        "finite_pattern": [
+          -0.1568864743800319,
+          -0.12910322483020523
+        ],
+        "max_error_table_difference": 8.673617379884035e-19,
+        "finite_pattern_difference": 3.925231146709438e-17
+      }
+    },
+    {
+      "name": "finite_arm_nonzero_at_long_wave_angular_null",
+      "passed": true,
+      "evidence": {
+        "geometry": "n=(1,-1,0)/sqrt(2), a=x, b=y",
+        "long_wave_F": 0,
+        "omega_L_over_c": "pi*sqrt(2)",
+        "finite_pattern": [
+          0.0,
+          0.6366197723675814
+        ],
+        "exact_pattern": "2i/pi",
+        "scope": "mechanical endpoints; no optical breathing model compared"
+      }
+    },
+    {
+      "name": "endpoint_phase_conjugation_detected",
+      "passed": true,
+      "evidence": {
+        "z": "1.3",
+        "absolute_pattern_error": "1.1269248790390962969261782933955825241908770435705697508965332808895060215830296"
+      }
+    },
+    {
+      "name": "two_speed_network_gram_pair_minors_and_single_alignment",
+      "passed": true,
+      "evidence": {
+        "singular_values_from_gram": [
+          "1.8609186392448590985103745306770769616784630876095512291181973277765346212558998",
+          "0.42088685252515349848122456630612761545813646127445565217982510783180117439264762"
+        ],
+        "singular_value_receipt_difference": 2.220446049250313e-16,
+        "determinant": "0.6134589275668187819149555314001346841937927189623958401308135121819144625810043",
+        "sum_pair_minor_norms_squared": "0.6134589275668187819149555314001346841937927189623958401308135121819144625810043",
+        "gram_minor_identity_error": "0.0",
+        "aligned_transverse_constant_fit_residual": "2.0895103284415327401535064007709672180820769950745295142460861609933004854975555",
+        "method": "80-digit Gram eigenvalues and exact two-row determinant formula, no SVD"
+      }
+    },
+    {
+      "name": "network_degeneracies_and_corrected_amplitude_scope",
+      "passed": true,
+      "evidence": {
+        "distinct_speed_phase_alias_minor_squared_sum": "6.1827143311125369291123589857209620688446623841482342585781777976356687839078727e-163",
+        "equal_speed_singular_values": [
+          "1.187252778896614078746653032560818582780166084169396426858137975758431821082658",
+          "0.0"
+        ],
+        "fully_blind_rank": 0,
+        "one_responsive_site_rank": 1,
+        "amplitude_observation": "C contains no A_T or A_L. Setting one amplitude zero leaves the above positive Gram determinant unchanged while restricting its active image to one column.",
+        "alignment_observation": "Left multiplication by diagonal unit phases preserves C* C and rank."
+      }
+    },
+    {
+      "name": "synthetic_network_factors_are_realisable",
+      "passed": true,
+      "evidence": {
+        "construction": "n=x, a=(cos(theta),sin(theta),0), b=(-sin(theta),cos(theta),0), theta=acos(F)/2",
+        "error": "5.2710989716152616121742870256350095038549806911842537750388815125540721454848798e-82"
+      }
+    },
+    {
+      "name": "prior_power_comparison_speed_ratio_is_illustrative",
+      "passed": true,
+      "evidence": {
+        "sqrt_q_root": "1.3917157072461317176088304078906338744278724130158781139756683834556270277119723",
+        "q": "1.936872609795600603834776343534296839137609944607242500885055872067557599821639",
+        "cT_over_cL": "0.71853755389364526134051136667636952303229284807622551658800870968179863695202208",
+        "meaning": "Conditional comparison polynomial only; no measured speed/mass/strain likelihood imported.",
+        "prior_calibration_record": {
+          "sqrt_q_bracket": [
+            "695857853623/500000000000",
+            "1391715707247/1000000000000"
+          ],
+          "q_bracket": [
+            "484218152448808494226129/250000000000000000000000",
+            "1936872609798017408319009/1000000000000000000000000"
+          ],
+          "q_approx": 1.9368726097956006,
+          "transverse_to_longitudinal_speed": 0.7185375538936453,
+          "polar_to_equatorial_static_potential": 1.3190034891778315,
+          "vertical_squared_frequency_to_orbital": 0.361993021644337,
+          "scope": "Exact polynomial sign bracket; equality to a supplied GR comparator with c_L=c_EM, not a measurement fit."
+        }
+      }
+    }
+  ],
+  "passed": 12,
+  "failed": 0,
+  "endpoint_author_scalar_invariants": [
+    {
+      "mu": 0.36492630924322556,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 0.05,
+      "dimensionless_time": 0.3,
+      "measured": [
+        8.62330714243346e-09,
+        -2.1251205586463365e-09
+      ],
+      "expected": [
+        8.623307142433484e-09,
+        -2.1251205586464867e-09
+      ],
+      "absolute_error": 1.521703226867516e-22,
+      "relative_error": 1.7133781262523307e-14,
+      "characteristic_scaled_error": 1.0242078656848032e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9310364057447581,
+        0.0,
+        0.36492630924322556
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 0
+    },
+    {
+      "mu": 0.36492630924322556,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 0.05,
+      "dimensionless_time": 1.9,
+      "measured": [
+        2.325578855783355e-07,
+        -2.2377071723284576e-07
+      ],
+      "expected": [
+        2.3255788557833296e-07,
+        -2.2377071723285526e-07
+      ],
+      "absolute_error": 9.836541923558915e-21,
+      "relative_error": 3.047889725942397e-14,
+      "characteristic_scaled_error": 6.6206494350323765e-15,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9310364057447581,
+        0.0,
+        0.36492630924322556
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 0
+    },
+    {
+      "mu": 0.36492630924322556,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 0.05,
+      "dimensionless_time": 4.5,
+      "measured": [
+        8.415329027123639e-08,
+        -1.1067316768284989e-06
+      ],
+      "expected": [
+        8.415329027123327e-08,
+        -1.1067316768284934e-06
+      ],
+      "absolute_error": 6.32998643670773e-21,
+      "relative_error": 5.7030682455933545e-15,
+      "characteristic_scaled_error": 4.260503482995259e-15,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9310364057447581,
+        0.0,
+        0.36492630924322556
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 0
+    },
+    {
+      "mu": 0.61840350412774,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 0.05,
+      "dimensionless_time": 0.3,
+      "measured": [
+        1.2386533474177091e-08,
+        -1.6547484640210048e-09
+      ],
+      "expected": [
+        1.2386533474177108e-08,
+        -1.6547484640209517e-09
+      ],
+      "absolute_error": 5.566171114602489e-23,
+      "relative_error": 4.454157084708439e-15,
+      "characteristic_scaled_error": 7.64572403336701e-17,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.7858607421690768,
+        0.0,
+        0.61840350412774
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 1
+    },
+    {
+      "mu": 0.61840350412774,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 0.05,
+      "dimensionless_time": 1.9,
+      "measured": [
+        3.5948361246585283e-07,
+        -2.774599383548252e-07
+      ],
+      "expected": [
+        3.594836124658531e-07,
+        -2.774599383548344e-07
+      ],
+      "absolute_error": 9.215285645871894e-21,
+      "relative_error": 2.02932368232165e-14,
+      "characteristic_scaled_error": 1.2658168332652224e-14,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.7858607421690768,
+        0.0,
+        0.61840350412774
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 1
+    },
+    {
+      "mu": 0.61840350412774,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 0.05,
+      "dimensionless_time": 4.5,
+      "measured": [
+        2.868311718603972e-07,
+        -1.5351732752812383e-06
+      ],
+      "expected": [
+        2.8683117186039616e-07,
+        -1.535173275281241e-06
+      ],
+      "absolute_error": 2.9494509432313778e-21,
+      "relative_error": 1.888568256325983e-15,
+      "characteristic_scaled_error": 4.0513824490125484e-15,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.7858607421690768,
+        0.0,
+        0.61840350412774
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 1
+    },
+    {
+      "mu": 0.7537284922362251,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 0.05,
+      "dimensionless_time": 0.3,
+      "measured": [
+        5.7136903902209745e-09,
+        -4.243023226960975e-10
+      ],
+      "expected": [
+        5.713690390220965e-09,
+        -4.243023226961478e-10
+      ],
+      "absolute_error": 5.11192275066896e-23,
+      "relative_error": 8.922229275048532e-15,
+      "characteristic_scaled_error": 2.2750521577366315e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.6571859401960048,
+        0.0,
+        0.7537284922362251
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 2
+    },
+    {
+      "mu": 0.7537284922362251,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 0.05,
+      "dimensionless_time": 1.9,
+      "measured": [
+        1.719927439960812e-07,
+        -1.1732460815361993e-07
+      ],
+      "expected": [
+        1.7199274399608154e-07,
+        -1.1732460815361927e-07
+      ],
+      "absolute_error": 7.458655980382474e-22,
+      "relative_error": 3.5824754200447685e-15,
+      "characteristic_scaled_error": 3.3194616213173e-15,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.6571859401960048,
+        0.0,
+        0.7537284922362251
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 2
+    },
+    {
+      "mu": 0.7537284922362251,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 0.05,
+      "dimensionless_time": 4.5,
+      "measured": [
+        1.725589270018803e-07,
+        -6.949213289800519e-07
+      ],
+      "expected": [
+        1.7255892700187568e-07,
+        -6.949213289800506e-07
+      ],
+      "absolute_error": 4.832384324403525e-21,
+      "relative_error": 6.748901601213592e-15,
+      "characteristic_scaled_error": 2.150644076694668e-14,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.6571859401960048,
+        0.0,
+        0.7537284922362251
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 2
+    },
+    {
+      "mu": 0.31526912884974045,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 0.6,
+      "dimensionless_time": 0.3,
+      "measured": [
+        6.502767831319021e-09,
+        -1.2694458481028024e-09
+      ],
+      "expected": [
+        6.50276783131902e-09,
+        -1.2694458481028134e-09
+      ],
+      "absolute_error": 1.0991313156132312e-23,
+      "relative_error": 1.6589365502850958e-15,
+      "characteristic_scaled_error": 7.397887570948599e-18,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9490023057897835,
+        0.0,
+        0.31526912884974045
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 3
+    },
+    {
+      "mu": 0.31526912884974045,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 0.6,
+      "dimensionless_time": 1.9,
+      "measured": [
+        1.8143171982808757e-07,
+        -1.5826693443295123e-07
+      ],
+      "expected": [
+        1.8143171982808738e-07,
+        -1.582669344329514e-07
+      ],
+      "absolute_error": 2.6203744914022506e-22,
+      "relative_error": 1.0883713556892125e-15,
+      "characteristic_scaled_error": 1.7636869776892843e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9490023057897835,
+        0.0,
+        0.31526912884974045
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 3
+    },
+    {
+      "mu": 0.31526912884974045,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 0.6,
+      "dimensionless_time": 4.5,
+      "measured": [
+        1.0300601072960608e-07,
+        -8.21581196498603e-07
+      ],
+      "expected": [
+        1.0300601072960588e-07,
+        -8.215811964986023e-07
+      ],
+      "absolute_error": 6.655715416352196e-22,
+      "relative_error": 8.038175255934191e-16,
+      "characteristic_scaled_error": 4.479740833053393e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9490023057897835,
+        0.0,
+        0.31526912884974045
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 3
+    },
+    {
+      "mu": 0.5688226055482324,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 0.6,
+      "dimensionless_time": 0.3,
+      "measured": [
+        1.0519606901456426e-08,
+        2.354732918315713e-10
+      ],
+      "expected": [
+        1.0519606901456425e-08,
+        2.354732918315724e-10
+      ],
+      "absolute_error": 1.9787875834169435e-24,
+      "relative_error": 1.880576003199494e-16,
+      "characteristic_scaled_error": 2.718073783928149e-18,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.8224602381983703,
+        0.0,
+        0.5688226055482324
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 4
+    },
+    {
+      "mu": 0.5688226055482324,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 0.6,
+      "dimensionless_time": 1.9,
+      "measured": [
+        3.351612976986123e-07,
+        -1.8403155773925975e-07
+      ],
+      "expected": [
+        3.3516129769861206e-07,
+        -1.8403155773926015e-07
+      ],
+      "absolute_error": 4.7719073802074445e-22,
+      "relative_error": 1.2480077010778303e-15,
+      "characteristic_scaled_error": 6.554718888562059e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.8224602381983703,
+        0.0,
+        0.5688226055482324
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 4
+    },
+    {
+      "mu": 0.5688226055482324,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 0.6,
+      "dimensionless_time": 4.5,
+      "measured": [
+        4.384073421068838e-07,
+        -1.2397677249562716e-06
+      ],
+      "expected": [
+        4.3840734210688355e-07,
+        -1.2397677249562718e-06
+      ],
+      "absolute_error": 3.389785746542619e-22,
+      "relative_error": 2.577783830626537e-16,
+      "characteristic_scaled_error": 4.65622881810322e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.8224602381983703,
+        0.0,
+        0.5688226055482324
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 4
+    },
+    {
+      "mu": -0.5163079144358012,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 0.6,
+      "dimensionless_time": 0.3,
+      "measured": [
+        2.563719970554095e-09,
+        -7.551959737780058e-10
+      ],
+      "expected": [
+        2.5637199705540948e-09,
+        -7.55195973778004e-10
+      ],
+      "absolute_error": 1.8057610435249948e-24,
+      "relative_error": 6.756480546957813e-16,
+      "characteristic_scaled_error": 8.036507511563395e-18,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.8564030228175011,
+        0.0,
+        -0.5163079144358012
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 5
+    },
+    {
+      "mu": -0.5163079144358012,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 0.6,
+      "dimensionless_time": 1.9,
+      "measured": [
+        6.689418231397506e-08,
+        -7.040848984459973e-08
+      ],
+      "expected": [
+        6.689418231397509e-08,
+        -7.040848984459976e-08
+      ],
+      "absolute_error": 3.743392130574644e-23,
+      "relative_error": 3.854420746333844e-16,
+      "characteristic_scaled_error": 1.6659900314032894e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.8564030228175011,
+        0.0,
+        -0.5163079144358012
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 5
+    },
+    {
+      "mu": -0.5163079144358012,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 0.6,
+      "dimensionless_time": 4.5,
+      "measured": [
+        1.0368632994246456e-08,
+        -3.3384729144293117e-07
+      ],
+      "expected": [
+        1.0368632994246531e-08,
+        -3.338472914429312e-07
+      ],
+      "absolute_error": 9.135010580999242e-23,
+      "relative_error": 2.734965412006675e-16,
+      "characteristic_scaled_error": 4.0655202644698833e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.8564030228175011,
+        0.0,
+        -0.5163079144358012
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 5
+    },
+    {
+      "mu": -0.37620710722097406,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 2.5,
+      "dimensionless_time": 0.3,
+      "measured": [
+        8.113557409332313e-09,
+        -4.597769069707845e-09
+      ],
+      "expected": [
+        8.113557409332308e-09,
+        -4.597769069707838e-09
+      ],
+      "absolute_error": 8.94732633788896e-24,
+      "relative_error": 9.594233962204933e-16,
+      "characteristic_scaled_error": 6.022147978866391e-18,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9265355969828825,
+        0.0,
+        -0.37620710722097406
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 6
+    },
+    {
+      "mu": -0.37620710722097406,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 2.5,
+      "dimensionless_time": 1.9,
+      "measured": [
+        1.7152682135349873e-07,
+        -2.9226708477139097e-07
+      ],
+      "expected": [
+        1.7152682135349857e-07,
+        -2.9226708477139097e-07
+      ],
+      "absolute_error": 1.5881867761018131e-22,
+      "relative_error": 4.686538064348759e-16,
+      "characteristic_scaled_error": 1.0689557329838572e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9265355969828825,
+        0.0,
+        -0.37620710722097406
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 6
+    },
+    {
+      "mu": -0.37620710722097406,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 2.5,
+      "dimensionless_time": 4.5,
+      "measured": [
+        -2.2930467434854165e-07,
+        -1.1426878698268107e-06
+      ],
+      "expected": [
+        -2.2930467434854184e-07,
+        -1.1426878698268105e-06
+      ],
+      "absolute_error": 2.813776167969872e-22,
+      "relative_error": 2.4142881709897396e-16,
+      "characteristic_scaled_error": 1.8938592181628415e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9265355969828825,
+        0.0,
+        -0.37620710722097406
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 6
+    },
+    {
+      "mu": 0.23278909679999504,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 2.5,
+      "dimensionless_time": 0.3,
+      "measured": [
+        1.7282449802960278e-09,
+        2.483437308089704e-10
+      ],
+      "expected": [
+        1.7282449802960275e-09,
+        2.483437308089711e-10
+      ],
+      "absolute_error": 7.527457197085517e-25,
+      "relative_error": 4.3112659691157917e-16,
+      "characteristic_scaled_error": 1.0339757656912846e-18,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9725272419891602,
+        0.0,
+        0.23278909679999504
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 7
+    },
+    {
+      "mu": 0.23278909679999504,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 2.5,
+      "dimensionless_time": 1.9,
+      "measured": [
+        5.8878377692401356e-08,
+        -2.363973259915138e-08
+      ],
+      "expected": [
+        5.887837769240133e-08,
+        -2.3639732599151425e-08
+      ],
+      "absolute_error": 5.0505456248223996e-23,
+      "relative_error": 7.960280402720145e-16,
+      "characteristic_scaled_error": 6.937457952741888e-17,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9725272419891602,
+        0.0,
+        0.23278909679999504
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 7
+    },
+    {
+      "mu": 0.23278909679999504,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 2.5,
+      "dimensionless_time": 4.5,
+      "measured": [
+        9.691703791137637e-08,
+        -1.9549856051205322e-07
+      ],
+      "expected": [
+        9.691703791137636e-08,
+        -1.9549856051205324e-07
+      ],
+      "absolute_error": 2.9594113269415773e-23,
+      "relative_error": 1.3562644725829208e-16,
+      "characteristic_scaled_error": 4.065064088248332e-17,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9725272419891602,
+        0.0,
+        0.23278909679999504
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 7
+    },
+    {
+      "mu": 0.7553342261122755,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 2.5,
+      "dimensionless_time": 0.3,
+      "measured": [
+        2.24166871081826e-09,
+        3.97050171402004e-09
+      ],
+      "expected": [
+        2.2416687108182595e-09,
+        3.9705017140200385e-09
+      ],
+      "absolute_error": 1.7052765185096254e-24,
+      "relative_error": 3.739968628107049e-16,
+      "characteristic_scaled_error": 7.58930291437843e-18,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.6553397644454133,
+        0.0,
+        0.7553342261122755
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 8
+    },
+    {
+      "mu": 0.7553342261122755,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 2.5,
+      "dimensionless_time": 1.9,
+      "measured": [
+        1.427638308676084e-07,
+        8.40909419216913e-08
+      ],
+      "expected": [
+        1.427638308676084e-07,
+        8.409094192169124e-08
+      ],
+      "absolute_error": 5.293955920339377e-23,
+      "relative_error": 3.1951188269090813e-16,
+      "characteristic_scaled_error": 2.35606569718891e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.6553397644454133,
+        0.0,
+        0.7553342261122755
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 8
+    },
+    {
+      "mu": 0.7553342261122755,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 2.5,
+      "dimensionless_time": 4.5,
+      "measured": [
+        5.588681485383939e-07,
+        -1.1122563305256404e-07
+      ],
+      "expected": [
+        5.588681485383938e-07,
+        -1.1122563305256416e-07
+      ],
+      "absolute_error": 1.5936917727681006e-22,
+      "relative_error": 2.7967909811353263e-16,
+      "characteristic_scaled_error": 7.092696981637118e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.6553397644454133,
+        0.0,
+        0.7553342261122755
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 8
+    },
+    {
+      "mu": 0.042544875585807496,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 0.05,
+      "dimensionless_time": 0.3,
+      "measured": [
+        1.1707446030494882e-10,
+        -2.942431153485488e-11
+      ],
+      "expected": [
+        1.1707446030494342e-10,
+        -2.942431153487e-11
+      ],
+      "absolute_error": 1.605190270328514e-23,
+      "relative_error": 1.3297306169767453e-13,
+      "characteristic_scaled_error": 1.080400219808639e-17,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9990945568670606,
+        0.0,
+        0.042544875585807496
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 9
+    },
+    {
+      "mu": 0.042544875585807496,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 0.05,
+      "dimensionless_time": 1.9,
+      "measured": [
+        3.1469057347786117e-09,
+        -3.056036056567517e-09
+      ],
+      "expected": [
+        3.1469057347782527e-09,
+        -3.0560360565676827e-09
+      ],
+      "absolute_error": 3.9545484229350184e-22,
+      "relative_error": 9.015038664373728e-14,
+      "characteristic_scaled_error": 2.661675107530089e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9990945568670606,
+        0.0,
+        0.042544875585807496
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 9
+    },
+    {
+      "mu": 0.042544875585807496,
+      "omega": 0.4,
+      "speed": 0.7,
+      "length": 0.05,
+      "dimensionless_time": 4.5,
+      "measured": [
+        1.0745280432584375e-09,
+        -1.504790014061063e-08
+      ],
+      "expected": [
+        1.0745280432551805e-09,
+        -1.504790014060933e-08
+      ],
+      "absolute_error": 3.507000975408491e-21,
+      "relative_error": 2.3246392644409276e-13,
+      "characteristic_scaled_error": 2.360445795578493e-15,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.9990945568670606,
+        0.0,
+        0.042544875585807496
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 9
+    },
+    {
+      "mu": -0.9830227112816756,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 0.05,
+      "dimensionless_time": 0.3,
+      "measured": [
+        3.110485237921001e-08,
+        -5.4304050062605575e-09
+      ],
+      "expected": [
+        3.1104852379210005e-08,
+        -5.430405006260679e-09
+      ],
+      "absolute_error": 1.2177548344321203e-22,
+      "relative_error": 3.856666051104646e-15,
+      "characteristic_scaled_error": 1.672714908088385e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.18348392056096757,
+        0.0,
+        -0.9830227112816756
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 10
+    },
+    {
+      "mu": -0.9830227112816756,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 0.05,
+      "dimensionless_time": 1.9,
+      "measured": [
+        8.795259036819094e-07,
+        -7.368565154503135e-07
+      ],
+      "expected": [
+        8.795259036819111e-07,
+        -7.368565154503123e-07
+      ],
+      "absolute_error": 2.117582368135751e-21,
+      "relative_error": 1.8455509141749805e-15,
+      "characteristic_scaled_error": 2.9087230829492716e-15,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.18348392056096757,
+        0.0,
+        -0.9830227112816756
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 10
+    },
+    {
+      "mu": -0.9830227112816756,
+      "omega": 1.0,
+      "speed": 1.0,
+      "length": 0.05,
+      "dimensionless_time": 4.5,
+      "measured": [
+        5.689059530067488e-07,
+        -3.904849680879463e-06
+      ],
+      "expected": [
+        5.689059530067382e-07,
+        -3.904849680879471e-06
+      ],
+      "absolute_error": 1.3046782249216248e-20,
+      "relative_error": 3.3062684973709438e-15,
+      "characteristic_scaled_error": 1.7921133674680893e-14,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.18348392056096757,
+        0.0,
+        -0.9830227112816756
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 10
+    },
+    {
+      "mu": 0.8534846536616014,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 0.05,
+      "dimensionless_time": 0.3,
+      "measured": [
+        7.327633034793372e-09,
+        -5.217011881577892e-10
+      ],
+      "expected": [
+        7.327633034793365e-09,
+        -5.217011881577962e-10
+      ],
+      "absolute_error": 1.0240014897759525e-23,
+      "relative_error": 1.3939235417744619e-15,
+      "characteristic_scaled_error": 4.5573004766854916e-17,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.5211179770110951,
+        0.0,
+        0.8534846536616014
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 11
+    },
+    {
+      "mu": 0.8534846536616014,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 0.05,
+      "dimensionless_time": 1.9,
+      "measured": [
+        2.2098404400684237e-07,
+        -1.4975898094015206e-07
+      ],
+      "expected": [
+        2.2098404400684354e-07,
+        -1.4975898094015204e-07
+      ],
+      "absolute_error": 1.1649710565926457e-21,
+      "relative_error": 4.364023153086965e-15,
+      "characteristic_scaled_error": 5.184683034685897e-15,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.5211179770110951,
+        0.0,
+        0.8534846536616014
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 11
+    },
+    {
+      "mu": 0.8534846536616014,
+      "omega": 2.2,
+      "speed": 1.8,
+      "length": 0.05,
+      "dimensionless_time": 4.5,
+      "measured": [
+        2.2396737216158811e-07,
+        -8.903392484393604e-07
+      ],
+      "expected": [
+        2.2396737216158952e-07,
+        -8.903392484393593e-07
+      ],
+      "absolute_error": 1.7576013383597712e-21,
+      "relative_error": 1.914437847698555e-15,
+      "characteristic_scaled_error": 7.82217359750383e-15,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.5211179770110951,
+        0.0,
+        0.8534846536616014
+      ],
+      "base": [
+        0.11,
+        -0.19,
+        0.23
+      ],
+      "author_case": 11
+    }
+  ],
+  "endpoint_independent_geometries": [
+    {
+      "mu": 0.1487503519068876,
+      "omega": 0.35,
+      "speed": 0.6,
+      "length": 0.17,
+      "dimensionless_time": 0.23,
+      "measured": [
+        1.0689088099792488e-09,
+        -5.040107458373671e-10
+      ],
+      "expected": [
+        1.0689088099792393e-09,
+        -5.040107458373588e-10
+      ],
+      "absolute_error": 1.2674113739293211e-23,
+      "relative_error": 1.07246391639929e-14,
+      "characteristic_scaled_error": 6.267324278804916e-18,
+      "n": [
+        0.9363292858204048,
+        0.3467752582922213,
+        0.055085286160769846
+      ],
+      "arm": [
+        -0.2044557543736244,
+        0.9787751501424692,
+        0.014037448738964951
+      ],
+      "base": [
+        -0.1806411102056078,
+        0.07961853466526403,
+        -0.3258153329053941
+      ]
+    },
+    {
+      "mu": 0.11404902647003383,
+      "omega": 0.4928571428571428,
+      "speed": 0.711111111111111,
+      "length": 0.37,
+      "dimensionless_time": 0.5633333333333334,
+      "measured": [
+        1.3892050643844137e-09,
+        -2.5968665749614043e-09
+      ],
+      "expected": [
+        1.3892050643844288e-09,
+        -2.5968665749614386e-09
+      ],
+      "absolute_error": 3.7500691725115014e-23,
+      "relative_error": 1.2733254384042141e-14,
+      "characteristic_scaled_error": 2.604811334202271e-17,
+      "n": [
+        -0.08031970482851428,
+        0.18728976200251504,
+        -0.9790154697783389
+      ],
+      "arm": [
+        0.7709411301008775,
+        0.6342220943422338,
+        -0.05841326019776979
+      ],
+      "base": [
+        0.5453835821390496,
+        0.49987429807518025,
+        0.9769143860631111
+      ]
+    },
+    {
+      "mu": -0.40939716626501693,
+      "omega": 0.6357142857142857,
+      "speed": 0.8222222222222222,
+      "length": 0.5700000000000001,
+      "dimensionless_time": 0.8966666666666666,
+      "measured": [
+        5.754697405538703e-08,
+        -4.133749182137414e-08
+      ],
+      "expected": [
+        5.754697405538709e-08,
+        -4.1337491821374105e-08
+      ],
+      "absolute_error": 6.813076517312834e-23,
+      "relative_error": 9.615508803921635e-16,
+      "characteristic_scaled_error": 6.326794847847762e-17,
+      "n": [
+        0.03977610508047782,
+        0.5057812201004872,
+        0.8617442885556533
+      ],
+      "arm": [
+        -0.5076170195884562,
+        -0.8599464041107251,
+        0.053076769694154716
+      ],
+      "base": [
+        -0.9430856258502915,
+        -0.29845813386142384,
+        0.28411530092707515
+      ]
+    },
+    {
+      "mu": 0.15409174940109416,
+      "omega": 0.7785714285714285,
+      "speed": 0.9333333333333333,
+      "length": 0.77,
+      "dimensionless_time": 1.23,
+      "measured": [
+        1.3024391357080699e-08,
+        -6.105935629062083e-09
+      ],
+      "expected": [
+        1.3024391357080775e-08,
+        -6.105935629061889e-09
+      ],
+      "absolute_error": 2.0798288235534992e-22,
+      "relative_error": 1.4458700942374572e-14,
+      "characteristic_scaled_error": 2.4886464970457437e-16,
+      "n": [
+        -0.5976621038041666,
+        0.23632740075896227,
+        0.7661262097898037
+      ],
+      "arm": [
+        0.6938011523444279,
+        0.09048604820452726,
+        0.7144594012859456
+      ],
+      "base": [
+        0.5988594639056857,
+        -0.5481496297322925,
+        0.9462171770424508
+      ]
+    },
+    {
+      "mu": -0.41294770732483205,
+      "omega": 0.9214285714285714,
+      "speed": 1.0444444444444443,
+      "length": 0.9700000000000001,
+      "dimensionless_time": 1.5633333333333332,
+      "measured": [
+        4.632046599152059e-08,
+        -1.206183604598591e-07
+      ],
+      "expected": [
+        4.632046599152052e-08,
+        -1.2061836045985907e-07
+      ],
+      "absolute_error": 7.127206278183242e-23,
+      "relative_error": 5.516126958708788e-16,
+      "characteristic_scaled_error": 1.0679528572412346e-16,
+      "n": [
+        -0.5351824251824829,
+        -0.8373705292417337,
+        0.11131203229307766
+      ],
+      "arm": [
+        -0.0366579694042662,
+        0.3945265779929113,
+        -0.9181530223967893
+      ],
+      "base": [
+        -0.035314123537227626,
+        0.23647908297500586,
+        -0.7624086090852793
+      ]
+    },
+    {
+      "mu": 0.1095249368368292,
+      "omega": 1.0642857142857143,
+      "speed": 1.1555555555555554,
+      "length": 1.17,
+      "dimensionless_time": 1.8966666666666667,
+      "measured": [
+        5.488783702446198e-09,
+        -9.101030289759049e-09
+      ],
+      "expected": [
+        5.488783702446235e-09,
+        -9.101030289759009e-09
+      ],
+      "absolute_error": 5.442446139446134e-23,
+      "relative_error": 5.1208310886249885e-15,
+      "characteristic_scaled_error": 9.982466575385441e-17,
+      "n": [
+        -0.5181243470178067,
+        -0.1290506235768871,
+        0.8455135111763669
+      ],
+      "arm": [
+        -0.031157026351511578,
+        0.9656861066629269,
+        0.2578363494682806
+      ],
+      "base": [
+        -0.23373402040274782,
+        -0.5056678802731016,
+        -0.4584808171482795
+      ]
+    },
+    {
+      "mu": 0.9760127599612628,
+      "omega": 1.207142857142857,
+      "speed": 1.2666666666666666,
+      "length": 1.3699999999999999,
+      "dimensionless_time": 2.23,
+      "measured": [
+        8.67827009375541e-07,
+        -8.886976924319881e-08
+      ],
+      "expected": [
+        8.67827009375541e-07,
+        -8.886976924319898e-08
+      ],
+      "absolute_error": 1.7205356741102976e-22,
+      "relative_error": 1.9722647068386694e-16,
+      "characteristic_scaled_error": 3.7918437300780365e-16,
+      "n": [
+        -0.6718126930295932,
+        -0.7406710171365904,
+        -0.00861103119110528
+      ],
+      "arm": [
+        -0.4954863295716128,
+        -0.8684905169761558,
+        0.014748529762003283
+      ],
+      "base": [
+        0.3932912683094285,
+        -0.7394214106141057,
+        0.27359665569839553
+      ]
+    },
+    {
+      "mu": -0.03966336797917838,
+      "omega": 1.35,
+      "speed": 1.3777777777777778,
+      "length": 1.5699999999999998,
+      "dimensionless_time": 2.5633333333333335,
+      "measured": [
+        1.368592517593608e-09,
+        -9.141265038140104e-10
+      ],
+      "expected": [
+        1.3685925175936195e-09,
+        -9.141265038140001e-10
+      ],
+      "absolute_error": 1.5524794056517266e-23,
+      "relative_error": 9.432951009556376e-15,
+      "characteristic_scaled_error": 4.048053693996324e-17,
+      "n": [
+        0.962590302163965,
+        0.2597572625574739,
+        0.0771107951491484
+      ],
+      "arm": [
+        -0.00571848536151693,
+        -0.4031601962721341,
+        0.9151115533458116
+      ],
+      "base": [
+        0.4321942919116628,
+        0.7776593256565159,
+        -0.7112593382217063
+      ]
+    },
+    {
+      "mu": 0.38301021547436753,
+      "omega": 1.4928571428571429,
+      "speed": 1.488888888888889,
+      "length": 1.77,
+      "dimensionless_time": 2.8966666666666665,
+      "measured": [
+        1.2764488585682204e-07,
+        -9.002538961208846e-08
+      ],
+      "expected": [
+        1.2764488585682214e-07,
+        -9.002538961208856e-08
+      ],
+      "absolute_error": 1.406888083984936e-22,
+      "relative_error": 9.007086378412106e-16,
+      "characteristic_scaled_error": 4.283967765347944e-16,
+      "n": [
+        0.2102303992726789,
+        -0.9417236449924115,
+        -0.26260189581161936
+      ],
+      "arm": [
+        0.8889675000938669,
+        -0.303816931709801,
+        0.3426836088629027
+      ],
+      "base": [
+        -0.14536531133400277,
+        -0.24901777701999883,
+        -0.19724233183110607
+      ]
+    },
+    {
+      "mu": 0.7102725538272215,
+      "omega": 1.6357142857142857,
+      "speed": 1.6,
+      "length": 1.97,
+      "dimensionless_time": 3.23,
+      "measured": [
+        4.3831815591144996e-07,
+        -2.595215726698403e-07
+      ],
+      "expected": [
+        4.383181559114503e-07,
+        -2.595215726698403e-07
+      ],
+      "absolute_error": 3.1763735522036263e-22,
+      "relative_error": 6.23568884991496e-16,
+      "characteristic_scaled_error": 1.1169496638525208e-15,
+      "n": [
+        -0.7935440828497938,
+        0.26470138002111326,
+        -0.5479242356284285
+      ],
+      "arm": [
+        -0.15023244824087725,
+        0.5885032955090298,
+        -0.7944143016528364
+      ],
+      "base": [
+        -0.015336696566644381,
+        -0.7519794910619855,
+        -0.44412688716037696
+      ]
+    },
+    {
+      "mu": -0.2790081706049523,
+      "omega": 1.7785714285714285,
+      "speed": 1.7111111111111112,
+      "length": 2.17,
+      "dimensionless_time": 3.5633333333333335,
+      "measured": [
+        -4.9419458470716995e-08,
+        -6.784950683678002e-08
+      ],
+      "expected": [
+        -4.9419458470717015e-08,
+        -6.784950683678011e-08
+      ],
+      "absolute_error": 9.474739198036461e-23,
+      "relative_error": 1.128758213878998e-15,
+      "characteristic_scaled_error": 3.8105332223057224e-16,
+      "n": [
+        0.9064522012382952,
+        -0.04961159971250033,
+        -0.41938418668831073
+      ],
+      "arm": [
+        -0.49143583250330747,
+        0.7249344130100684,
+        -0.4826602525229613
+      ],
+      "base": [
+        -0.7105298607782082,
+        -0.6926045577236215,
+        -0.34075311901128646
+      ]
+    },
+    {
+      "mu": 0.1275044831542942,
+      "omega": 1.9214285714285713,
+      "speed": 1.8222222222222224,
+      "length": 2.37,
+      "dimensionless_time": 3.8966666666666665,
+      "measured": [
+        8.47568107769339e-09,
+        -1.517490341197478e-08
+      ],
+      "expected": [
+        8.475681077693346e-09,
+        -1.517490341197476e-08
+      ],
+      "absolute_error": 4.888070537662421e-23,
+      "relative_error": 2.812233765779863e-15,
+      "characteristic_scaled_error": 2.229472946683393e-16,
+      "n": [
+        0.5521751286619672,
+        0.08405597504775018,
+        0.8294800903854849
+      ],
+      "arm": [
+        -0.45544512744640375,
+        -0.7157329692677161,
+        0.5294299317081984
+      ],
+      "base": [
+        -0.37944425657159275,
+        0.10745812120957443,
+        0.5477430003461521
+      ]
+    },
+    {
+      "mu": 0.0,
+      "omega": 1,
+      "speed": 1,
+      "length": 1,
+      "dimensionless_time": 1.7,
+      "measured": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        0.0,
+        0.0
+      ],
+      "absolute_error": 0.0,
+      "relative_error": null,
+      "characteristic_scaled_error": 0.0,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "base": [
+        0.0,
+        0.0,
+        0.23
+      ]
+    },
+    {
+      "mu": 1.0,
+      "omega": 1,
+      "speed": 1,
+      "length": 0.7,
+      "dimensionless_time": 1.7,
+      "measured": [
+        9.188899048046623e-07,
+        -2.431514484988253e-07
+      ],
+      "expected": [
+        9.188899048046626e-07,
+        -2.431514484988254e-07
+      ],
+      "absolute_error": 3.348191708161069e-22,
+      "relative_error": 3.5224978468637054e-16,
+      "characteristic_scaled_error": 4.599095012413289e-16,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "base": [
+        0.0,
+        0.0,
+        0.23
+      ]
+    },
+    {
+      "mu": -1.0,
+      "omega": 1,
+      "speed": 1,
+      "length": 0.7,
+      "dimensionless_time": 1.7,
+      "measured": [
+        5.461633008640256e-07,
+        -7.779376150105551e-07
+      ],
+      "expected": [
+        5.461633008640256e-07,
+        -7.779376150105551e-07
+      ],
+      "absolute_error": 0.0,
+      "relative_error": 0.0,
+      "characteristic_scaled_error": 0.0,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "base": [
+        0.0,
+        0.0,
+        0.23
+      ]
+    },
+    {
+      "mu": 1.0,
+      "omega": 1,
+      "speed": 1,
+      "length": 6.283185307179586,
+      "dimensionless_time": 1.7,
+      "measured": [
+        1.685118506465232e-23,
+        0.0
+      ],
+      "expected": [
+        -3.1027713743607017e-23,
+        2.1625193574342796e-23
+      ],
+      "absolute_error": 5.253606331101841e-23,
+      "relative_error": null,
+      "characteristic_scaled_error": 7.216383284045521e-17,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "base": [
+        0.0,
+        0.0,
+        0.23
+      ]
+    },
+    {
+      "mu": -1.0,
+      "omega": 1,
+      "speed": 1,
+      "length": 6.283185307179586,
+      "dimensionless_time": 1.7,
+      "measured": [
+        -6.740474025860928e-23,
+        8.42559253232616e-23
+      ],
+      "expected": [
+        -3.102771374360702e-23,
+        2.162519357434279e-23
+      ],
+      "absolute_error": 7.24285621663043e-23,
+      "relative_error": null,
+      "characteristic_scaled_error": 9.948828145156241e-17,
+      "n": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "arm": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "base": [
+        0.0,
+        0.0,
+        0.23
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.025955332908779383
+}

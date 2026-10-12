@@ -23,16 +23,15 @@
   "claim_type_reason": "Open inverse-theory campaign",
   "audit_required_before_effective_retained": true,
   "bare_retained_allowed": false,
-  "next_exact_action": "Continue direct authorship. Numerical session48352 (driver92212, currently child92215) runs fixed extension stages base, validate, score. Read runtime gravity/response_inverse/extension_transfer/COMPUTE_STATUS.json and preserve ownership; do not duplicate. While fields run, prepare a coherent portable quantum visibility/reflection milestone using current V2 statement, source reviews and fresh review-loop/conformance. Read independent far-field review when complete. Do not refit extension residuals before preserving the frozen transfer.",
+  "next_exact_action": "Continue direct authorship. Numerical session48352 (driver92212, currently child92215) runs fixed extension stages base, validate, score. Read runtime gravity/response_inverse/extension_transfer/COMPUTE_STATUS.json and preserve ownership; do not duplicate. While fields run, prepare a coherent portable quantum visibility/reflection milestone using current V2 statement, source reviews and fresh review-loop/conformance. Far-field V2 and full independent report have now been read and checked. Do not refit extension residuals before preserving the frozen transfer.",
   "runtime_directory": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012",
   "global_stop_condition": null,
-  "last_checkpoint_at": "2026-10-12T20:50:17.412905+00:00",
+  "last_checkpoint_at": "2026-10-12T20:55:31.778856+00:00",
   "current_block": "direct-cross-source-transfer",
   "current_main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
   "first_decisive_calculation": "Positive single-pole geometry witness 13/0; independent numerical derivative agrees on all 15 compared values. Not a Cassini fit.",
   "independent_checks_pending": [
     "Actual six-source response-specific fields and out-of-fit development readout",
-    "Narrow far-field plateau/asymptotic check currently active",
     "Original full-sphere classification remains unreviewed and must not be promoted"
   ],
   "delegated_routes": [
@@ -48,7 +47,7 @@
     "Quantum composition and causal physical realization of alternative boundary law",
     "Matter/gauge/cosmological architecture"
   ],
-  "last_pushed_commit": "5226e85ba9d34e397db9a6e0c4c81628917e2173",
+  "last_pushed_commit": "883c41c744",
   "blocks_completed": [
     "finite-source tensor witness",
     "positive scalar continuum and coherence",
@@ -64,7 +63,8 @@
     "all six original inverse candidates passed three-source numerical gates; actual tiny rectangle violations preserved",
     "separately frozen interior D candidate passes direct galaxy, solar and external working rectangles",
     "degree-three reflection interval and conditional sampling bound independently checked; R1 explicit in V2",
-    "two unchanged D responses frozen for six-source development transfer; implementation independently checked"
+    "two unchanged D responses frozen for six-source development transfer; implementation independently checked",
+    "unfitted far-field plateau consequence, full proof/independent arithmetic and V2 lineage clarification checked"
   ],
   "milestone_worktree": "/private/tmp/observations-positive-response-20261012",
   "milestone_branch": "codex/observations-positive-response-20261012",

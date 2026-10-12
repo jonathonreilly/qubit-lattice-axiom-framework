@@ -8,7 +8,7 @@ One parent-authored fixed numerical job is active: tool session 48352, driver PI
 
 Read actual transfer results when complete. Both original D joint and separately frozen interior D weights must remain unchanged across all six preselected out-of-fit sources. Never use extension residuals to select a candidate or silently refit. A local failure gets an honest checkpoint and next useful route, not campaign termination. The transfer source/protocol and synthetic failure/resume/readout controls passed independent review; parent read the full report.
 
-While these fields run, prepare a portable, coherent quantum visibility/reflection milestone. Read review-loop skill, canonical repo workflow and fresh main instructions before packaging; do not launch a formal audit. Use the corrected V2 reflection statement and both scoped reviews. Keep the full original sphere classification out of the milestone. A regular reviewable PR must be attached to this chat; no science merge/main push. Finish reading the active independent_far_field_review when it arrives.
+While these fields run, prepare a portable, coherent quantum visibility/reflection milestone. Read review-loop skill, canonical repo workflow and fresh main instructions before packaging; do not launch a formal audit. Use the corrected V2 reflection statement and both scoped reviews. Keep the full original sphere classification out of the milestone. A regular reviewable PR must be attached to this chat; no science merge/main push. Far-field independent review is now complete; parent read the full report and confirmed V2 calibration wording.
 
 ## Personally checked gravity results
 
@@ -20,7 +20,7 @@ The prior supplied fixed response already passed finite numerical checks on nine
 
 Static action and exact ramp primitive are checked. Minimal promotion to two independent Lorentz scalars has nonsingular kinetic determinant -1 and fails positive energy. A distinct one-scalar alternative has radial characteristic ratio N/(N+A N'), but its disk/solar operator differs and cannot inherit the fits. Full dynamics, metric/lensing coupling, quantum completion and matter architecture remain open.
 
-New parent unfitted consequence, pending narrow independent check at this checkpoint: both D responses have a constant interval aroundE. Their asymptotic point-source effective monopole factors are 1.340910189 and 1.382066629, with speed scale 1.157976765 and 1.175613299. Extra source support is inside 10983.93493 AU for the supplied solar GM under a strictly uniform external boundary. Exterior multipoles can remain, so this is not an exact finite-radius central force or a binary-catalogue result. See DIRECT_FAR_FIELD_PREDICTION.md and FAR_FIELD_PREDICTION_v1.json.
+New parent unfitted consequence, now independently checked: both D responses have a constant interval aroundE. Their asymptotic point-source effective monopole factors are 1.340910189 and 1.382066629, with speed scale 1.157976765 and 1.175613299. Extra source support is inside 10983.93493 AU for the supplied solar GM under a strictly uniform external boundary. Exterior multipoles can remain, so this is not an exact finite-radius central force or a binary-catalogue result. See current DIRECT_FAR_FIELD_PREDICTION_V2.md and original source-bound FAR_FIELD_PREDICTION_v1.json.
 
 ## Personally checked quantum results
 
@@ -32,7 +32,7 @@ DIRECT_RESOURCE_OBSTRUCTION.md shows a positive harmonic angular cusp forces div
 
 ## Other campaign routes and delivery
 
-PR9501 is OPEN, non-draft, attached, exact head 3153d7b2ddceeb26b78f2e1334ffa83218a01333, branch codex/observations-positive-response-20261012. Its positive scalar force/noise, finite approximation and source-inverse bounded mathematics are independently checked. No merge. RuntimePRS/MONITOR now correctly record attachment. Campaign checkpoint 5226e85ba9 was pushed; current final checkpoint hash is recorded in runtimeSTATUS after push.
+PR9501 is OPEN, non-draft, attached, exact head 3153d7b2ddceeb26b78f2e1334ffa83218a01333, branch codex/observations-positive-response-20261012. Its positive scalar force/noise, finite approximation and source-inverse bounded mathematics are independently checked. No merge. RuntimePRS/MONITOR now correctly record attachment. Campaign checkpoint 5226e85ba9 was pushed; current final checkpoint hash is recorded in runtime STATUS after push.
 
 Other inherited results remain bounded: massive tensor geometry witness is not a Cassini fit; raw GW extraction failed controls; neutrino endpoint V1/V2 fail their declared conditional atmospheric/gap comparisons; moving molecule vacuum bound is not an apparatus visibility prediction. Calibration/shared-data/observation-map limitations must carry forward. Gauge, matter, cosmology and unification remain open. Earlier detailed checkpoints remain available in Git 6caad9d839, 8e1ead28c9, 5226e85ba9 and their artifacts; this current handoff supersedes stale process instructions.
 

@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-12T20:54:25.803774+00:00",
+  "wording_issue_resolved": true,
+  "complete_V2_read": true,
+  "arithmetic_rerun_needed": false,
+  "mathematics_and_code_unchanged": true,
+  "only_changes": "Replacement of the broad no-velocity-data sentence with no additional binary observation fitted; addition of explicit source-continuity footer.",
+  "sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/DIRECT_FAR_FIELD_PREDICTION.md",
+      "sha256": "6cd3131b2fe517d160ccfa8e7b3d128c58c001da1d1cf00182ec17c96b85a9e3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/DIRECT_FAR_FIELD_PREDICTION_V2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_far_field_review/DIRECT_FAR_FIELD_PREDICTION_V2.md",
+      "sha256": "e2874ee4d0f29821d3deb1b25393f4c3513e23130f64ba45cab9c3a2aeedf767"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/FAR_FIELD_WORDING_CHANGE.diff",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/independent_far_field_review/FAR_FIELD_WORDING_CHANGE.reviewed.diff",
+      "sha256": "78e9010f867336b697b0d75ab2d59e9e03cee74963c9f01bc33718174da7eea3"
+    }
+  ]
+}

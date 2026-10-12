@@ -1,0 +1,201 @@
+{
+  "at": "2026-10-12T20:54:54.312747+00:00",
+  "disposition": "Mathematics and arithmetic checked without identified error. Original wording ambiguity resolved by separately checked V2 note. No finite-radius or actual binary-test claim.",
+  "scope": "Focused independent static far-field/plateau source review with symbolic, high-precision flux, and synthetic extraction checks; not a formal audit.",
+  "all_original_source_and_receipt_hashes_still_match": true,
+  "sources": [
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/DIRECT_FAR_FIELD_PREDICTION.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_far_field_review/DIRECT_FAR_FIELD_PREDICTION.md",
+      "sha256": "6cd3131b2fe517d160ccfa8e7b3d128c58c001da1d1cf00182ec17c96b85a9e3",
+      "role": "assigned source"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_far_field_check.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_far_field_review/direct_far_field_check.reviewed.py",
+      "sha256": "9718702e6921ddc7cd27cd853fe6083e5831d568b0533bb6a98545d31c6b117d",
+      "role": "assigned source"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/FROZEN_DIRECT_INVERSE_PROTOCOL.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_inverse_review/FROZEN_DIRECT_INVERSE_PROTOCOL.md",
+      "sha256": "16ff2920797c5d5fb027a920f623b44983953b022931ef442194f6ac8b2a90ce",
+      "role": "pinned dependency"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_galaxy_response_operator.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_inverse_review/direct_galaxy_response_operator.reviewed.py",
+      "sha256": "fe1d5256bb1d867602b4c5c6f68a7c683db1f3ea485d9d85c572b3f8ffccfadb",
+      "role": "pinned dependency"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_shared_response_fit.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_inverse_review/direct_shared_response_fit.reviewed.py",
+      "sha256": "0f846de483a77c920761f214f6482fd125ec8206073d8226e71c082e499fc787",
+      "role": "pinned dependency"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_response_basis.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_inverse_review/direct_response_basis.reviewed.py",
+      "sha256": "da0c24cdf104a79abc8bb796056e64d06dfb8c248fe39ca3de7325c629293f4f",
+      "role": "pinned dependency"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/galaxy_response/qumond_disk/direct_qumond_disk.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_inverse_review/direct_qumond_disk.reviewed.py",
+      "sha256": "701bc4d1ba659f9b25cd98855547864300b83c2f002a477e7bc3b2b5ac3f7b00",
+      "role": "pinned dependency"
+    }
+  ],
+  "receipts": [
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/FAR_FIELD_PREDICTION_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/independent_far_field_review/snapshot_FAR_FIELD_PREDICTION_v1.json",
+      "sha256": "620bab786ad252acb8f84b88f568b43d35abdd71d6fa63b76a8194e18ea44d53"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/shared_response_fits_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/independent_far_field_review/snapshot_shared_response_fits_v1.json",
+      "sha256": "6b0528745ba0e3ebdc081678821355e54d0d41d8e787cf0e904099942926bcb1"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/margin_candidate_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/independent_far_field_review/snapshot_margin_candidate_v1.json",
+      "sha256": "ffa93f9ad0f8a412020eb756bbc996c07caa1b55a4269cbfee865aa7af591ebc"
+    }
+  ],
+  "wording_followup_sources": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/DIRECT_FAR_FIELD_PREDICTION.md",
+      "sha256": "6cd3131b2fe517d160ccfa8e7b3d128c58c001da1d1cf00182ec17c96b85a9e3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/DIRECT_FAR_FIELD_PREDICTION_V2.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_far_field_review/DIRECT_FAR_FIELD_PREDICTION_V2.md",
+      "sha256": "e2874ee4d0f29821d3deb1b25393f4c3513e23130f64ba45cab9c3a2aeedf767"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/FAR_FIELD_WORDING_CHANGE.diff",
+      "snapshot": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/independent_far_field_review/FAR_FIELD_WORDING_CHANGE.reviewed.diff",
+      "sha256": "78e9010f867336b697b0d75ab2d59e9e03cee74963c9f01bc33718174da7eea3"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_far_field_review/FAR_FIELD_REVIEW.md",
+      "sha256": "414dd2207426a4f9256c4039e504688315141022b81aa75021b55dbe7cc8f620"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_far_field_review/check_far_field_independent.py",
+      "sha256": "778346ab2afd92e3c06f743b0967c4db2055920df957e9c84491194d6a66357e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/independent_far_field_review/snapshot_manifest_v1.json",
+      "sha256": "ba73d5ef25bf68481862b68541b3de7673fc9411125ce624bd968a1f02576354"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/independent_far_field_review/independent_checks_v1.json",
+      "sha256": "6a622e18f84a50dadc4b9fe937434814e0edad68d9161f20c0432f77fe3d3929"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/independent_far_field_review/wording_followup_receipt_v1.json",
+      "sha256": "e0e39d8e39a4b75bf6a015cfcfba0519cce7b5ab81c6b7e1d3843e2078e60314"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/independent_far_field_review/FAR_FIELD_WORDING_CHANGE.reviewed.diff",
+      "sha256": "78e9010f867336b697b0d75ab2d59e9e03cee74963c9f01bc33718174da7eea3"
+    }
+  ],
+  "independent_checks_passed": true,
+  "V2_wording_issue_resolved": true,
+  "actual_galaxy_field_computations": 0,
+  "actual_empirical_refits": 0,
+  "actual_target_arrays_read": false,
+  "author_files_edited": false,
+  "parent_session_48352_touched": false,
+  "full_sphere_classification_verdict": null,
+  "checked_response_values": [
+    {
+      "candidate": "original_D_joint",
+      "interval": [
+        1e-10,
+        1.7782794100389228e-09
+      ],
+      "N_E": 1.3409101890174848,
+      "K_E": 0,
+      "speed_scale": 1.157976765318495,
+      "support_bound_AU": 10983.934931297521,
+      "delta_SI": 4.915242022774435e-11,
+      "independent_flux_checks": [
+        {
+          "factor": 1.000001,
+          "flux": 1.3409101890174848,
+          "absolute_error": "0.0"
+        },
+        {
+          "factor": 1.001,
+          "flux": 1.3409101890174848,
+          "absolute_error": "0.0"
+        },
+        {
+          "factor": 2.0,
+          "flux": 1.3409101890174848,
+          "absolute_error": "0.0"
+        },
+        {
+          "factor": 10.0,
+          "flux": 1.3409101890174848,
+          "absolute_error": "0.0"
+        },
+        {
+          "factor": 100.0,
+          "flux": 1.3409101890174848,
+          "absolute_error": "0.0"
+        }
+      ],
+      "opposite_axis_response_at_0_99_support_bound": 1.34621909142154
+    },
+    {
+      "candidate": "interior_D_joint",
+      "interval": [
+        1e-10,
+        5.623413251903491e-09
+      ],
+      "N_E": 1.3820666293142616,
+      "K_E": 0,
+      "speed_scale": 1.175613299224818,
+      "support_bound_AU": 10983.934931297521,
+      "delta_SI": 4.915242022774435e-11,
+      "independent_flux_checks": [
+        {
+          "factor": 1.000001,
+          "flux": 1.3820666293142616,
+          "absolute_error": "0.0"
+        },
+        {
+          "factor": 1.001,
+          "flux": 1.3820666293142616,
+          "absolute_error": "0.0"
+        },
+        {
+          "factor": 2.0,
+          "flux": 1.3820666293142616,
+          "absolute_error": "0.0"
+        },
+        {
+          "factor": 10.0,
+          "flux": 1.3820666293142616,
+          "absolute_error": "0.0"
+        },
+        {
+          "factor": 100.0,
+          "flux": 1.3820666293142616,
+          "absolute_error": "0.0"
+        }
+      ],
+      "opposite_axis_response_at_0_99_support_bound": 1.387940065916298
+    }
+  ],
+  "primary_source_checked": "https://arxiv.org/html/0911.5464v2#S5.SS1",
+  "deadline_and_stop_markers_checked": true
+}

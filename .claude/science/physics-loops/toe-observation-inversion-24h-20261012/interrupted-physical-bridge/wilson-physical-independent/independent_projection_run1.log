@@ -1,0 +1,18 @@
+{"utc": "2026-10-12T14:40:25.418204+00:00", "phase": "pre-author-bridge-and-coefficient-exposure", "seed": 2026101207, "scope": "local projection, edge and leading radiation identities; not a full-action remainder bound"}
+{"check": "Minkowski-Clifford-matrices", "max_error": 0.0, "pass": true}
+{"local_projection": "fixed", "M": 0.0001, "g": 0.0001, "bare_mass": 3.0000399994150036e-05, "slope_from_matrix_eigenvalues": -0.2600039999001158, "expected_slope": -0.260004}
+{"local_projection": "curve", "M": 0.0001, "g": 0.0001, "bare_mass": 3.0000399994150036e-05, "slope_from_matrix_eigenvalues": 0.4400089998024548, "expected_slope": 0.44000900022501116}
+{"local_projection": "fixed", "M": 0.01, "g": 0.0001, "bare_mass": 0.009930039999415002, "slope_from_matrix_eigenvalues": -0.2603999996575457, "expected_slope": -0.2604}
+{"local_projection": "curve", "M": 0.01, "g": 0.0001, "bare_mass": 0.009930039999415002, "slope_from_matrix_eigenvalues": 0.44090225958415274, "expected_slope": 0.4409022613208083}
+{"local_projection": "fixed", "M": 0.08, "g": 0.0001, "bare_mass": 0.07993031999532002, "slope_from_matrix_eigenvalues": -0.26320000396040655, "expected_slope": -0.2632}
+{"local_projection": "curve", "M": 0.08, "g": 0.0001, "bare_mass": 0.07993031999532002, "slope_from_matrix_eigenvalues": 0.44735006461349425, "expected_slope": 0.4473500651607421}
+{"arbitrary_coefficients": {"C": 0.7, "bB": -0.07, "bE": 0.11, "zs": -0.09, "zt": 0.13}, "check": "mass-and-clock-calibration-matrix-projection", "max_rest_error": 1.3552527156068805e-20, "max_slope_error": 3.9604065582565795e-09, "pass": true}
+{"check": "common-field-rescaling-invariant-local-combination", "max_error": 2.7755575615628914e-16, "pass": true}
+{"cases": 100, "check": "on-shell-gauge-variation-factors", "max_error": 2.0886297988876353e-15, "pass": true}
+{"cases": 124, "check": "charged-continuum-edge-minimization", "max_error": 4.440892098500626e-16, "pass": true}
+{"cases": 200, "check": "transverse-spinor-trace-and-emission-shell", "max_energy_residual": 9.237055564881302e-14, "max_relative_amplitude_error": 3.7764166373829157e-14, "pass": true}
+{"cases": 40, "check": "matrix-phase-space-rate-and-power-integrals", "max_relative_power_error": 2.391891667338595e-14, "max_relative_rate_error": 2.776842253212488e-14, "pass": true}
+{"check": "small-cone-splitting-rate-limit", "pass": true, "relative_errors": [[0.0003965191444550431, 3.9673888936109236e-05, 3.967546727157156e-06], [0.0013105592613533723, 0.000131106753838095, 1.3111114478991936e-05], [0.011790208525379375, 0.0011759892079701295, 0.00011756835790399656]], "y_values": [0.05, 0.3, 0.8]}
+{"cases": 5000, "check": "uniform-directional-tree-remainder-bounds", "pass": true, "worst_derivative_bound_ratio": 0.20579800390266006, "worst_value_bound_ratio": 0.20581311411094055}
+{"cases": 10000, "check": "full-torus-real-photon-momentum-bound", "minimum_gap": 0.015700535919410452, "pass": true}
+TOTAL: PASS=10 FAIL=0

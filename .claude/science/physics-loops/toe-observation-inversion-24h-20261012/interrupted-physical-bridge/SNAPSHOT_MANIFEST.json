@@ -1,0 +1,94 @@
+{
+  "recorded_at": "2026-10-12T14:55:39.915632+00:00",
+  "reason": "Explicit user cancellation and preservation request",
+  "source_author_head": "4a8c588ccda95e53ba47bde9dba8cae2543e24e5",
+  "files": [
+    {
+      "path": "wilson-physical-bridge/TARGET.md",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-bridge/TARGET.md",
+      "sha256": "2dac61a376711881f1549d7f5f85554b72bd7bba912afef249fabcef1c1194d4",
+      "bytes": 3341,
+      "role": "historical unfinished research; no new scientific status assigned"
+    },
+    {
+      "path": "wilson-physical-bridge/target-freeze.json",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-bridge/target-freeze.json",
+      "sha256": "12f8b2103c1e3ebda1915bfbc24256462aac1b75b7171f803a49558daaf2effb",
+      "bytes": 254,
+      "role": "historical unfinished research; no new scientific status assigned"
+    },
+    {
+      "path": "wilson-physical-bridge/AUTHOR_DERIVATION_v1.md",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-bridge/AUTHOR_DERIVATION_v1.md",
+      "sha256": "05f7c3ea85cc01785750e369f44424d94ebf56b6e778b3b25e94cff1eb1d757c",
+      "bytes": 5756,
+      "role": "historical unfinished research; no new scientific status assigned"
+    },
+    {
+      "path": "wilson-physical-bridge/onshell_probe.py",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-bridge/onshell_probe.py",
+      "sha256": "71d84d39e1aa400aaaf4b33654fd5041b384d271ed3e06d1314c9fc4a7ed2937",
+      "bytes": 2833,
+      "role": "historical unfinished research; no new scientific status assigned"
+    },
+    {
+      "path": "wilson-physical-bridge/probe-m001-n16.json",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-bridge/probe-m001-n16.json",
+      "sha256": "6665cebce4fb43de1369a38681aa5c2895ca6f0eb3ec490499358b7d54f36149",
+      "bytes": 821,
+      "role": "historical unfinished research; no new scientific status assigned"
+    },
+    {
+      "path": "wilson-physical-bridge/mass-sequence-v1.json",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-bridge/mass-sequence-v1.json",
+      "sha256": "73a503bca1b8f7a5d84eb2fb92a9fb129f13ea6940b74d5949c81f143a0908d3",
+      "bytes": 10112,
+      "role": "historical unfinished research; no new scientific status assigned"
+    },
+    {
+      "path": "wilson-physical-bridge/author-freeze-v1.json",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-bridge/author-freeze-v1.json",
+      "sha256": "a9a5103f56add06419d7ec25b530c78fce54efc1298afcebaea74e6cc6ea1d67",
+      "bytes": 687,
+      "role": "historical unfinished research; no new scientific status assigned"
+    },
+    {
+      "path": "wilson-physical-independent/INDEPENDENT_PRE.md",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-independent/INDEPENDENT_PRE.md",
+      "sha256": "1d08e0895e9cbecba7d348051329709dde8e16b98876ec2456cb097b61b9a6df",
+      "bytes": 17802,
+      "role": "historical unfinished research; no new scientific status assigned"
+    },
+    {
+      "path": "wilson-physical-independent/independent_projection.py",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-independent/independent_projection.py",
+      "sha256": "2f399785aa23ed76b2a1c26d127017de9d369f46cebdb67e59edf9403904177c",
+      "bytes": 9412,
+      "role": "historical unfinished research; no new scientific status assigned"
+    },
+    {
+      "path": "wilson-physical-independent/independent_projection_run1.log",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-independent/independent_projection_run1.log",
+      "sha256": "745b7a5e86c1cd441118cd6965f45484600a3958da9ff94bdd8df604f22d2cc1",
+      "bytes": 2961,
+      "role": "historical unfinished research; no new scientific status assigned"
+    },
+    {
+      "path": "wilson-physical-independent/PRE_MANIFEST.json",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-independent/PRE_MANIFEST.json",
+      "sha256": "12e3b6d34dbf59763c374416becef473ff6cc083b4a3b4456322a7626379c277",
+      "bytes": 731,
+      "role": "historical unfinished research; no new scientific status assigned"
+    },
+    {
+      "path": "wilson-physical-independent/AUTHOR_MANIFEST.json",
+      "original_runtime_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/wilson-physical-independent/AUTHOR_MANIFEST.json",
+      "sha256": "f5edd003d13651741b2f0f330a22e95cf140d3d40ede8c81985a2c3cddedb00d",
+      "bytes": 1038,
+      "role": "historical unfinished research; no new scientific status assigned"
+    }
+  ],
+  "excluded_duplicates": "Checker AUTHOR_SNAPSHOT_* bytes duplicate author files above; TARGET_SNAPSHOT duplicates TARGET. SHARED_SNAPSHOT_CANONICAL_NOTE is the separately delivered Wilson note. Original runtime retains all originals and primary-source downloads.",
+  "independent_comparison_status": "Pre-exposure structural note, code and log exist; author exposure recorded. No completed final author/checker comparison artifact was present at cancellation.",
+  "empirical_status": "No frozen numerical calibration/test envelope or independent observational comparison completed."
+}

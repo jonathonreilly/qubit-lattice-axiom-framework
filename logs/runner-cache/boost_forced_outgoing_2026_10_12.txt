@@ -1,0 +1,63 @@
+===== runner cache v1 =====
+runner: scripts/boost_forced_outgoing_2026_10_12.py
+runner_sha256: bfa7da261f17c936cfc3f5115d3f66a3e8011fb2c0017d1d6c6274d04489fb4a
+input_fingerprint_sha256: 7fca046d3c66ce9f2139bcc84a1887d18e0e9778fb5024102e0fa7f19e684a99
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 23.60
+status: ok
+----- stdout -----
+CHECK orthonormal_actual_Pauli_basis: matched
+CHECK finite_fixture_I_positive: matched
+FINITE_FIXTURE I=17/36; not a continuum value
+CHECK full_physical_kernel_projection: matched
+CHECK kernel_and_contact_exclusion: matched
+CHECK dressing_normalization: matched
+CHECK actual_Pauli_coupling_transverse: matched
+CHECK direct_compression_equals_prior_block: matched
+CHECK full_measure_coupling_weights: matched
+CHECK source_reaches_transverse_fixture: matched
+CHECK Schur_against_actual_Pauli_inverse: matched
+CHECK fixture_kappa_in_packet_enclosure: matched
+CHECK forced_resolvent_ODE_derivative_0: matched
+CHECK forced_resolvent_ODE_derivative_1: matched
+CHECK forced_resolvent_ODE_derivative_2: matched
+CHECK forced_resolvent_ODE_derivative_3: matched
+CHECK forced_resolvent_ODE_derivative_4: matched
+CHECK forced_resolvent_ODE_derivative_5: matched
+CHECK forced_resolvent_ODE_derivative_6: matched
+CHECK forced_resolvent_ODE_derivative_7: matched
+CHECK radial_lower_bound_increases_with_radius: matched
+CHECK radial_lower_bound_decreases_with_kappa_norm: matched
+CHECK radial_nonstationarity_constant: matched
+CHECK actual_forcing_gap_and_max_denominator: matched
+CHECK spectral_reweighting_uniform_constants: matched
+CHECK finite_direct_Duhamel_t_-3.1: matched
+CHECK all_parameter_factors_t_-3.1: matched
+CHECK finite_direct_Duhamel_t_-0.3: matched
+CHECK all_parameter_factors_t_-0.3: matched
+CHECK finite_direct_Duhamel_t_0.0: matched
+CHECK all_parameter_factors_t_0.0: matched
+CHECK finite_direct_Duhamel_t_0.7: matched
+CHECK all_parameter_factors_t_0.7: matched
+CHECK finite_direct_Duhamel_t_4.2: matched
+CHECK all_parameter_factors_t_4.2: matched
+CHECK dressed_vector_spectral_chi_squared_weight: matched
+CHECK resolvent_dressed_vector_not_artificially_scalar: matched
+CHECK resonant_counterexample_exact_ODE: matched
+CHECK resonant_counterexample_linear_norm: matched
+FLOAT maximum_Duhamel_error=7.079420107788696e-16
+FLOAT maximum_parameter_derivative_error=2.846874235784871e-12
+RUNTIME python=3.12.8 sympy=1.14.0 numpy=2.4.1 scipy=1.17.0
+TOTAL author_controls=38; continuum assertions proved analytically, not numerically
+elapsed_seconds=22.961691
+per_element: exact Pauli and Schur identities checked
+per_site: checked and not executed — no site-volume convergence inference
+per_mode: finite forced ODE, parameter derivatives and spectral-weight identities checked
+per_block: physical finite singlet/triplet compression checked
+lattice_wide: checked and not executed — continuum absolute continuity and outgoing limits require the written proof
+TOTAL: PASS=38 FAIL=0
+SCOPE: finite controls; no continuum proof, original-walk rate, physical selection or audit verdict from this runner
+
+----- stderr -----
+

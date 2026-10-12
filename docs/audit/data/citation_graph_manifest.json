@@ -1,6 +1,6 @@
 {
- "edge_count": 15437,
- "node_count": 6880,
+ "edge_count": 15456,
+ "node_count": 6893,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -289,6 +289,10 @@
   "actual_birth_rotor_energy_has_an_algebraic_lower_bound_bounded_theorem_note_2026-09-24": {
    "deps_hash": "d069d9134edd",
    "out_degree": 1
+  },
+  "actual_corrector_small_time_lower_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "191679f74194",
+   "out_degree": 3
   },
   "actual_cube_birth_apparatus_coherence_and_energy_range_bounded_theorem_note_2026-09-24": {
    "deps_hash": "9d41da499c2a",
@@ -1966,6 +1970,10 @@
    "deps_hash": "0891dc6c0e92",
    "out_degree": 11
   },
+  "approximate_partial_factor_index_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "architecture_note_directional_measure": {
    "deps_hash": "d48c8e4fa4ad",
    "out_degree": 1
@@ -2453,6 +2461,14 @@
   "boost_cone_apbc_sign_neutral_2026-06-23": {
    "deps_hash": "7a3314e8d4b0",
    "out_degree": 7
+  },
+  "boost_forced_outgoing_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "deb32f7b0dc5",
+   "out_degree": 2
+  },
+  "boost_quantitative_corrector_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "1ee653b365da",
+   "out_degree": 2
   },
   "bootstrap_continuation_availability_nonempty_free_orbit_reduction_propagation_closure_bounded_theorem_note_2026-07-04": {
    "deps_hash": "7b707271a9a8",
@@ -5897,6 +5913,30 @@
   "exactness_residual_priced_arrow_is_lane_data_cycle923_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7734e49ea328",
    "out_degree": 10
+  },
+  "excluded_walk_boost_bracket_control_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "27195ce2744b",
+   "out_degree": 1
+  },
+  "excluded_walk_low_energy_energy_current_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "e5febf032146",
+   "out_degree": 2
+  },
+  "excluded_walk_memory_current_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "909fefd73ab2",
+   "out_degree": 2
+  },
+  "excluded_walk_projected_free_band_canonical_current_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "27195ce2744b",
+   "out_degree": 1
+  },
+  "excluded_walk_quantitative_memory_transfer_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "332559cb2a6d",
+   "out_degree": 3
+  },
+  "excluded_walk_scattering_flux_transport_form_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "27195ce2744b",
+   "out_degree": 1
   },
   "exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11": {
    "deps_hash": "50107746920d",
@@ -11642,6 +11682,10 @@
    "deps_hash": "ec6690abc5b2",
    "out_degree": 1
   },
+  "hstar_threshold_spectral_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "a2414241ba68",
+   "out_degree": 1
+  },
   "hubble_lane5_c1_a1_grassmann_boundary_car_obstruction_note_2026-04-29": {
    "deps_hash": "bfb6b322c84b",
    "out_degree": 2
@@ -11881,6 +11925,14 @@
   "internal_external_su2_merger_record_invariance_companion_note_2026-06-04": {
    "deps_hash": "75cc1b6116cd",
    "out_degree": 2
+  },
+  "interspecies_collision_current_rigidity_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "interspecies_rigidity_stability_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "0c671e841ac3",
+   "out_degree": 1
   },
   "inverse_problem_graph_requirements_note": {
    "deps_hash": "2cb75aeac319",

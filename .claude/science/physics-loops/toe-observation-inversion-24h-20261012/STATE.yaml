@@ -24,10 +24,10 @@
   "audit_required_before_effective_retained": true,
   "bare_retained_allowed": false,
   "cycle_count": 2,
-  "milestone_count": 1,
+  "milestone_count": 2,
   "active_route": "Interacting Wilson candidate: physical magnetic response and independent gamma-ray timing comparison without refitting",
   "hard_residual": "Close or quantitatively bound on-shell mass, relative speed, magnetic matching and source/detector response before an independent observational prediction. Assess Fan magnetic response plus separate Cs/Rb recoil calibrations followed by sub-100-GeV timing; this split is not frozen yet.",
-  "review_disposition": "Milestone2 W1/W2 closed in immutable same-session review-v3 and final-binding-v4; combined-v3 pipeline, strict lint and changed-evidence passed. Final mechanical v4 caught watchdog scheduling edits; preserve them and bind the acknowledged process-only v5 tree before delivery. No formal audit.",
+  "review_disposition": "Milestone1 canonical science externally landed. Milestone2 source passed prior ordinary review and v6 gates, delivered as PR9494. Cancellation handoff and raw interrupted records are preservation-only additions; no final-head independent review or formal audit claimed.",
   "provisional_dependencies": [
     {
       "artifact": "THRESHOLD_DERIVATION.md",
@@ -131,13 +131,14 @@
     "outputs/spatial_wilson_observation_map_2026_10_12/results.json"
   ],
   "pr_urls": [
-    "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9489"
+    "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9489",
+    "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9494"
   ],
-  "next_exact_action": "Finish milestone2 final process-only identity binding and delivery. Then freeze the interacting Wilson calibration/test contract and derive the physical Pauli response and relevant detector correction; defer unrelated clock/dilaton scouting.",
-  "stop_condition": "Fixed 24-hour deadline, explicit user stop, or evidenced global quality/core-tooling exhaustion",
+  "next_exact_action": "None: explicit user cancellation. Preserve reviewed milestone and interrupted physical-bridge records, finalize PR delivery and archive; no further discovery.",
+  "stop_condition": "Explicit user cancellation received 2026-10-12; campaign will not restart.",
   "lock_mode": "explicit campaign-local cooperative lock plus exclusive supervisor guard",
   "packaging_at": "2026-10-13T10:51:03.933807+00:00",
-  "last_checkpoint_at": "2026-10-12T14:20:49.491727+00:00",
+  "last_checkpoint_at": "2026-10-12T14:55:39.915632+00:00",
   "current_main_searched": "c5f02064145de24ea44d7f4047b6cce091053cb5",
   "current_block": "species-resolved Wilson completion across propagation and magnetic response",
   "model": "gpt-6-astra",
@@ -159,11 +160,13 @@
   "user_priority": {
     "id": "wilson-independent-prediction-20261012",
     "requested_at": "2026-10-12T13:59:14.435396+00:00",
-    "status": "acknowledged",
+    "status": "cancelled_before_observational_test",
     "instruction_path": "/Users/jonBridger/.codex/campaigns/toe-observation-inversion-24h-20261012/USER_PRIORITY.md",
     "supersedes": "post-Wilson pivot to unrelated observation families",
     "target": "Wilson candidate: quantitative prediction against independent observations without refitting",
     "last_notice_restored_at": "2026-10-12T14:10:44.106249+00:00",
     "acknowledged_at": "2026-10-12T14:14:29.898967+00:00"
-  }
+  },
+  "campaign_status": "cancelled",
+  "cancelled_at": "2026-10-12T14:49:05.752804+00:00"
 }

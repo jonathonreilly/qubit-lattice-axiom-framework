@@ -1,0 +1,9 @@
+# Interrupted physical-propagation working records
+
+These are exact-byte historical snapshots of the Wilson follow-on work at the user's cancellation. They are preserved for recovery, not proposed as a completed theorem, accepted physical identification or empirical result. The campaign stopped before a final author/checker comparison, a controlled physical remainder and a numerical calibration/test envelope were completed. The canonical Wilson milestone elsewhere in this PR has its own earlier review scope.
+
+`SNAPSHOT_MANIFEST.json` records the original paths, byte lengths and SHA-256 identities. The runtime directory remains outside the archived worktree and retains the full logs, duplicate exposure snapshots, downloaded primary sources and review receipts. Numerical values in these working notes remain provisional. No calculation was rerun or extended during cancellation packaging.
+
+The author packet fixes a propagation question, supplies an on-shell probe in two gauge representations, records a mass sequence and derives a local radiation formula. The independent prepass contains a separate symbolic projection, structural controls and its historical log. Author exposure and the limits of independence are recorded in the original manifests; the two final expositions were not mutually blind. There is no final independent comparison report in this snapshot.
+
+The preserved Python probes use NumPy; the independent probe also uses SciPy. They are historical exploratory scripts, not registered audit runners or canonical caches. Their old outputs are retained verbatim and are not represented as checks of this cancellation commit. The author probe accepts `--mass`, `--x`, `--n` and `--out`; the independent probe emits its structural controls to stdout. Read the frozen target and unresolved obligations before any future use. A future restart requires a new explicit user request and must not reuse the cancelled campaign's clock.

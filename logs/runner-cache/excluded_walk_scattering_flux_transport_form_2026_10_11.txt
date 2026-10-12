@@ -1,0 +1,49 @@
+===== runner cache v1 =====
+runner: scripts/excluded_walk_scattering_flux_transport_form_2026_10_11.py
+runner_sha256: f8bdf9f014eae164ab283d73910ff38968933637ff25349f5e9c5d1f974dff2a
+input_fingerprint_sha256: 89bade7010bbb26b974eec7f6f7db9e507191a627b607f4354ccd9986180be71
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.85
+status: ok
+----- stdout -----
+Supplied excluded-walk flux/form finite controls; analytical and formal scopes remain separate.
+AUDIT_TIMEOUT_SEC=180
+Exact 4^3 torus: 64 local continuity identities, resolvent absorption identity and all parity zeros verified.
+Exact finite-box outward flux: 711249840946106582750000/4113412469157685789685031
+Exact normalized corner beam: other-corner probability 7/80; total outgoing probability 1.
+Exact paired incident normalization: density 1 and contact intensity 1; ordered single-wave contact intensity 1/2.
+Actual lattice shell/parity current: (0.0, 0.0, 0.0) lambda 0.0625 max scaled angular-flux error 7.32015644e-05
+Actual lattice shell/parity current: (0.0, 0.0, 0.0) lambda 0.03125 max scaled angular-flux error 1.82720198e-05
+Actual lattice shell/parity current: (0.0, 0.0, 0.0) lambda 0.015625 max scaled angular-flux error 4.56623489e-06
+Actual lattice shell/parity current: (0.125, 0.015625, 0.015625) lambda 0.0625 max scaled angular-flux error 7.22481422e-05
+Actual lattice shell/parity current: (0.125, 0.015625, 0.015625) lambda 0.03125 max scaled angular-flux error 1.80341106e-05
+Actual lattice shell/parity current: (0.125, 0.015625, 0.015625) lambda 0.015625 max scaled angular-flux error 4.50678542e-06
+Eight-corner matrix current relative error: 3.91722e-16
+Limiting ellipsoid angular-flux integral equals 2pi r0 for three parameter pairs.
+Controls complete. Fixed finite identities and non-certified floating geometry; no PV or stationary-phase proof by numerics.
+Exact nonuniform eight-atom form: pi Q = operator norm squared; HS polarization and coercivity verified.
+pi Q witness: 1094231/714420 ; dark and pure-contact states both have zero expectation change.
+Exact sphere polynomial covariance: kappa ('0', '0', '0') rank 0
+Exact sphere polynomial covariance: kappa ('1/4', '0', '0') rank 1
+Exact sphere polynomial covariance: kappa ('3/20', '1/5', '0') rank 2
+Exact sphere polynomial covariance: kappa ('1/12', '1/6', '1/6') rank 3
+Exact sphere polynomial covariance: kappa ('-1/12', '1/6', '-1/6') rank 3
+Exact tensor off-diagonal moments, active rank and explicit quadratic bounds verified in five rational geometries.
+Actual lattice moments: (0.25, 0.0, 0.0) lambda 0.0625 limit error 2.69743843e-05 quadrature difference 1.596e-16
+Actual lattice moments: (0.25, 0.0, 0.0) lambda 0.03125 limit error 6.74076903e-06 quadrature difference 2.29e-16
+Actual lattice moments: (0.25, 0.0, 0.0) lambda 0.015625 limit error 1.68501567e-06 quadrature difference 1.874e-16
+Actual lattice moments: (0.08333333333333333, 0.16666666666666666, 0.16666666666666666) lambda 0.0625 limit error 2.69539571e-05 quadrature difference 1.388e-16
+Actual lattice moments: (0.08333333333333333, 0.16666666666666666, 0.16666666666666666) lambda 0.03125 limit error 6.73567495e-06 quadrature difference 7.633e-17
+Actual lattice moments: (0.08333333333333333, 0.16666666666666666, 0.16666666666666666) lambda 0.015625 limit error 1.68374294e-06 quadrature difference 1.804e-16
+Actual lattice moments: (0.0, 0.0, 0.0) lambda 0.0625 limit error 0.000125380666 quadrature difference 1.665e-16
+Actual lattice moments: (0.0, 0.0, 0.0) lambda 0.03125 limit error 3.13167429e-05 quadrature difference 5.551e-17
+Actual lattice moments: (0.0, 0.0, 0.0) lambda 0.015625 limit error 7.82741147e-06 quadrature difference 2.776e-17
+Controls complete: exact algebra and moments; floating lattice quadrature is not interval certified and does not prove the uniform threshold theorem.
+All finite controls completed; no continuum or kinetic conclusion follows from the finite checks alone.
+runtime_seconds=0.805134
+python=3.12.8; dependencies=Python standard library only
+script_sha256=f8bdf9f014eae164ab283d73910ff38968933637ff25349f5e9c5d1f974dff2a
+
+----- stderr -----
+

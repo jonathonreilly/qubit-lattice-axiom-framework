@@ -2781,7 +2781,7 @@ All verdicts are from codex gpt-5.6-sol at xhigh. Files: `agents/C5_R2-*`. The R
 - **Lemma F** (a reservoir rest frame) is not proved.
 - E3 is not shown to be uniquely cheapest.
 
-**R3-1 (laws on one LRL realization) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.** Referee verdict recorded 13:45Z.
+**R3-1 (laws on one LRL realization) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.** Referee verdict recorded 13:33Z.
 - **Lemma M holds.** Invariant L² scalar torus symbols are constant. Vector and tensor fields also hold, by the second-moment argument. Spinors need a specified Spin lift. So nonzero invariant hopping kernels are non-summable and do not decay along their infinite orbits.
 - **Prop. P:** s_c = 2 is correct, but the convergent Poincaré series defines a finite orbit weight, not a convergent hopping operator. "Power-law quasi-locality" is refuted.
 - **Prop. R.** A nonzero past-timelike, polynomially bounded kernel converges absolutely exactly in the forward tube. Spacelike and time-symmetric kernels have no ordinary Fourier series; distributional forms remain possible. Retardation gives an arrow without a rest-frame vector.
@@ -2856,3 +2856,18 @@ Readings:
 - **INCONCLUSIVE:** otherwise.
 
 Prior-art note: everpresent Λ appears in this packet only as a comparator or suggestion (`TESTS.md:159`, `agents/supervisor_thread.md:53,149`, `agents/C5_O3_report.md:99`). It has never been tested. The repository's `docs/COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` and the docs on the cosmological constant must be read first.
+
+### C5 Round 5, first item (pre-registered 13:34Z; launched now)
+
+**R5-1. Composite particles on an LRL realization (the escape left by R4-2, whose referee is pending).**
+- R4-2 (worker) finds that states made by finite-variance on-site operators carry no covariant charge and do not propagate. So any particle on LRL must be a composite that only multi-site operators create, or must live in a state that breaks Γ.
+- Construct a candidate:
+  - a multi-site (link, plaquette or orbit-smeared) operator family on L₇, or a Γ-breaking state with a restored-in-law symmetry;
+  - its two-point function;
+  - whether it has a decaying correlation with a dispersion relation and a covariant momentum.
+- Prove a no-go in a stated class if none exists.
+
+Readings:
+- **PASS:** an explicit composite (or symmetry-broken-state) excitation with a dispersion and a covariant charge, checked.
+- **FAIL:** a no-go for multi-site operators of bounded support, or for every Γ-breaking state, in a stated class (refereed).
+- **INCONCLUSIVE:** otherwise.

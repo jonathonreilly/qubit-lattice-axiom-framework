@@ -1,0 +1,130 @@
+===== runner cache v1 =====
+runner: scripts/spatial_particle_to_nonlinear_fluid_limit_2026_10_11.py
+runner_sha256: b23fbf74766b94b3cf9c0882392eee660fe917878c5f9b951c1f701dd131cf64
+input_fingerprint_sha256: 0ab212c53a562ccd6bdcba1cf72a3ab8b8376ec3b22a9d2a904a2d8dcd31c43c
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.33
+status: ok
+----- stdout -----
+Supplied nonlinear particle/fluid finite controls; standard library only
+AUDIT_TIMEOUT_SEC=180
+checked: exact count rates at a realizable equilibrium state; both collision directions; volume, clock and quadratic-variation factors
+checked: exact nonlinear conditional drift at every species/cell of a nonuniform integer count state; no expectation closure
+checked: actual DFT jump energies for 288 collisions and 54 directed hops in H0,H3,H4
+checked: an admissible stopping overshoot and the exact dissipative complete square, including its sharp coefficient
+checked: positive mass-normalized preparation and full multinomial covariance versus independent Fourier trace
+checked: actual quadratic alias against a direct cyclotomic DFT, cutoff distinction, complete principal-map geometry, and P Gamma=0 after aliasing
+checked: simultaneous error and failure exponents with distinct hop, collision, initial and mesh contributions
+{
+  "grid": {
+    "m": 3,
+    "cell_weight": "1/27",
+    "N": 101,
+    "delta": "1/20"
+  },
+  "finite_constants": {
+    "C_R_rest_and_alpha_coefficients": [
+      "124/3",
+      "4/3"
+    ],
+    "S_rest_and_alpha_coefficients": [
+      "97/432",
+      "1/54"
+    ]
+  },
+  "equilibrium_rate_sum_checks": {
+    "N": 5832,
+    "hop_coefficient": 108,
+    "collision_coefficient_in_units_C_R": 2,
+    "F_le_2M_upper_hop_coefficient": 216,
+    "F_le_2M_upper_collision_coefficient_in_units_C_R": 8
+  },
+  "jump_checks": {
+    "0": {
+      "K_s_m": 27,
+      "H_s_m_d": [
+        "54",
+        "54",
+        "54"
+      ],
+      "collision_events_checked": 288,
+      "directed_velocity_hops_checked": 54
+    },
+    "3": {
+      "K_s_m": 885,
+      "H_s_m_d": [
+        "2232",
+        "2232",
+        "2232"
+      ],
+      "collision_events_checked": 288,
+      "directed_velocity_hops_checked": 54
+    },
+    "4": {
+      "K_s_m": 3117,
+      "H_s_m_d": [
+        "8184",
+        "8184",
+        "8184"
+      ],
+      "collision_events_checked": 288,
+      "directed_velocity_hops_checked": 54
+    }
+  },
+  "multinomial_covariance_checks": {
+    "0": {
+      "exact_expectation": "9136811835601358973/3169018556264756",
+      "upper_bound": "291600/101"
+    },
+    "3": {
+      "exact_expectation": "74970820419047003584/792254639066189",
+      "upper_bound": "9558000/101"
+    },
+    "4": {
+      "exact_expectation": "264057685766391435402/792254639066189",
+      "upper_bound": "33663600/101"
+    }
+  },
+  "aliased_collision_output_is_microscopic": true,
+  "all_upwind_symbols_dissipative": true,
+  "stopped_energy_checks": {
+    "overshoot_energy": "18225/2",
+    "radius_squared": "1/5832",
+    "complete_square_checked": true
+  },
+  "scale_checks": {
+    "H3_delta_stop": {
+      "N_power": 27,
+      "initial_stopped_failure": 5,
+      "hop_stopped_failure": 2,
+      "collision_stopped_failure": 3
+    },
+    "H4_delta_stop": {
+      "N_power": 31,
+      "initial_stopped_failure": 5,
+      "hop_stopped_failure": 2,
+      "collision_stopped_failure": 3
+    },
+    "L2_cell_stop": {
+      "N_power": 19,
+      "initial_stopped_failure": 5,
+      "hop_stopped_failure": 2,
+      "collision_stopped_failure": 3,
+      "noise_threshold": "3",
+      "streaming_error": 1,
+      "alias_error": 3,
+      "cutoff_error": 4,
+      "interpolation_error": 2,
+      "fluid_error": 1
+    }
+  },
+  "limits": "Finite exact normalizations and exponents; analytic proof supplies stopping, alias estimates and PDE comparison."
+}
+All exact particle/grid checks verified; wrong cell normalization and undersized N schedule rejected.
+runtime_seconds=2.250296
+python=3.12.8; dependencies=Python standard library only; runtime inputs=none except source bytes for provenance hash
+script_sha256=b23fbf74766b94b3cf9c0882392eee660fe917878c5f9b951c1f701dd131cf64
+
+----- stderr -----
+

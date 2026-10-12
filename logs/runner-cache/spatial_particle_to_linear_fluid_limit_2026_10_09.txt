@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/spatial_particle_to_linear_fluid_limit_2026_10_09.py
+runner_sha256: a8744ee9c9381b2a0aab5a2a09d6c165c9cf08f715900061d5c9f67db2b9dd6f
+input_fingerprint_sha256: 2cdbab0b7b4db9324f478cbb6d7d68e3025f0a03877f13d957448c7cfe950da4
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.28
+status: ok
+----- stdout -----
+network: 288 reactions, 9 geometric axial exchanges; C_R(alpha)=124/3+4/3*alpha
+collision: exact nonlinear expansion, weighted edge-square identity and bilinear bound
+weighted population: N=69984, 27 cells; direct jump QV=(45/2, 154814375/5038848)
+initial preparation: exact mass/positivity and multinomial weighted variance=943471/629856
+Fourier controls: 16354 exact alias pairs, 4104 float symbol tests; exact shell majorant=1123/35
+Interpolation: independent midpoint integral=1.67113921, exact-phase formula=1.6805818; finite float control, not an enclosure.
+scaling: classical error power>=1, failure=2, Lambda power=-37, gate error=2
+tuned positive axial rate=3.45068979933; sufficient exponents, no optimality or physical scaling claim
+Finite author controls completed; analytic stochastic/Sobolev/fluid claims rely on the written proofs.
+
+----- stderr -----
+

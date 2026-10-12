@@ -1,0 +1,5 @@
+RMAX=12 L=40: flux-free gap 0.29238 (m = 0.3); D=1: dE_vac=-0.00965, lowest level 0.29355, parity flip yes; D=12: dE_vac=-0.01496, lowest level 0.29718, parity flip no; pi-flux: dE/plaquette=-0.000359, gap 0.5280  [5 s]
+RMAX=16 L=48: flux-free gap 0.29845 (m = 0.3); D=1: dE_vac=-0.00974, lowest level 0.29921, parity flip yes; D=12: dE_vac=-0.01519, lowest level 0.30192, parity flip no; pi-flux: dE/plaquette=-0.000359, gap 0.5263  [18 s]
+RMAX=24 L=64: flux-free gap 0.29905 (m = 0.3); D=1: dE_vac=-0.00975, lowest level 0.29932, parity flip yes; D=12: dE_vac=-0.01522, lowest level 0.30072, parity flip no; pi-flux: dE/plaquette=-0.000359, gap 0.5245  [101 s]
+RMAX=32 L=80: flux-free gap 0.29865 (m = 0.3); D=1: dE_vac=-0.00976, lowest level 0.29889, parity flip yes; D=12: dE_vac=-0.01523, lowest level 0.29972, parity flip no; pi-flux: dE/plaquette=-0.000359, gap 0.5251  [414 s]
+runtime 414.1 s

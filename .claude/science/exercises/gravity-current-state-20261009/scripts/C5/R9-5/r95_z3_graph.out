@@ -1,0 +1,5 @@
+all signs +1 (stacked 2D sheets?)                deg3+colours ok: True ; component of origin: 128/512 sites ; winding rank: 2
+sx=(-1)^Z, sy=(-1)^X, sz=(-1)^Y                  deg3+colours ok: True ; component of origin: 512/512 sites ; winding rank: 3
+sx=(-1)^(Y+Z), sy=(-1)^(X+Z), sz=(-1)^(X+Y)      deg3+colours ok: True ; component of origin: 8/512 sites ; winding rank: 0
+sx=(-1)^Y, sy=1, sz=1                            deg3+colours ok: True ; component of origin: 512/512 sites ; winding rank: 3
+sx=(-1)^Y, sy=(-1)^Z, sz=1                       deg3+colours ok: True ; component of origin: 512/512 sites ; winding rank: 3

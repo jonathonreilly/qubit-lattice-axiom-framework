@@ -3833,3 +3833,19 @@ Readings:
 - **INCONCLUSIVE:** otherwise.
 
 Expectation: INCONCLUSIVE, leaning FAIL. A product of plateaus is not a covariant regulator of a two-loop graph's subdivergences.
+
+### C5 Round 9 referee results, part 1 (recorded 17:08Z)
+
+**R9-1 (edge-sector population) — NOT CONFIRMED as a whole. Only the L / G-out classification survives as recorded: L under G-out is EXCLUDED.**
+- **L under G-out: EXCLUDED.** The literal law with a Dirac sea has seven electron corner valleys. Those alone add about 588 MeV to the Z width, for any lattice parameters.
+- **G-in is inconsistent, not equivalent to G-out.** For R8-2's free scalar stress kernel, exact conservation of a momentum-diagonal global charge in an arbitrary lapse forces the charge to be constant across the connected Brillouin torus. So a box-supported, Ward-consistent gauge vertex is incompatible with a charged edge. That makes G-in inconsistent within this added class.
+- **Not established:**
+  - the L dark-matter window;
+  - the global G HARMLESS reading.
+
+  The contact ansatz gives Γ/H ∝ (T/M_P)⁷, but its normalization, the broken-phase species composition, the cosmological evolution and the gauge-inert escape are not closed.
+- **Momentum.** Crystal momentum is conserved in the instantaneous model, and the A term is the anomalous conversion from canonical momentum to energy current. Claims about total field momentum or the energy centroid are open.
+
+**R9-4 (covariant CQ escapes):** worker readings: (i) EXCLUDED, (ii) EXCLUDED, (iii) OPEN, (iv) OPEN, with an n ≥ 3 correction to R8-3. Referee running.
+
+**R9-5 (box law on ⊗M₂):** worker reading PASS with scope. A Kitaev brick-wall long-range string law, exact in the flux-free sector at every particle number, with certified tails. Visons are static, and a plaquette term is needed. Referee running.

@@ -1,0 +1,21 @@
+jet order P = 40; k1 grid 68608 points (dense on B<=|k|<=B2); k2 grid 256
+sanity: C_0 = mean eps = 1.735523 (M(0) = 1.735523 from FFT)
+C_p for p = 2,4,...,40: 2:2.47e+00 4:2.16e+02 6:1.42e+05 8:4.93e+08 10:6.69e+12 12:2.24e+17 14:1.58e+22 16:2.08e+27 18:4.65e+32 20:1.67e+38 22:9.10e+43 24:7.26e+49 26:8.19e+55 28:1.27e+62 30:2.65e+68 32:7.28e+74 34:2.58e+81 36:1.17e+88 38:6.63e+94 40:4.66e+101
+  rho= 16: shell max |M| (FFT) = 5.49e-04  <=  bound min_p C_p rho^-p = 3.29e-03
+  rho= 32: shell max |M| (FFT) = 1.96e-05  <=  bound min_p C_p rho^-p = 1.33e-04
+  rho= 64: shell max |M| (FFT) = 2.84e-07  <=  bound min_p C_p rho^-p = 1.52e-06
+  rho=128: shell max |M| (FFT) = 1.92e-09  <=  bound min_p C_p rho^-p = 5.48e-09
+  rho=256: shell max |M| (FFT) = 1.22e-12  <=  bound min_p C_p rho^-p = 2.70e-12
+  rho=400: shell max |M| (FFT) = 5.73e-16  <=  bound min_p C_p rho^-p = 4.84e-15
+  rho=512: shell max |M| (FFT) = 1.00e-16  <=  bound min_p C_p rho^-p = 7.96e-17
+  ||Phi||_{F_n}, F_n(d)=(1+d)^0 : finite part (|r|_inf<=400, FFT) = 2.1543e+01 ; tail bound = 3.67e-07 ; total <= 2.1543e+01
+  ||Phi||_{F_n}, F_n(d)=(1+d)^1 : finite part (|r|_inf<=400, FFT) = 3.0479e+02 ; tail bound = 6.35e-04 ; total <= 3.0479e+02
+  ||Phi||_{F_n}, F_n(d)=(1+d)^2 : finite part (|r|_inf<=400, FFT) = 7.7541e+03 ; tail bound = 1.10e+00 ; total <= 7.7552e+03
+  ||Phi||_{F_n}, F_n(d)=(1+d)^4 : finite part (|r|_inf<=400, FFT) = 1.9700e+07 ; tail bound = 3.40e+06 ; total <= 2.3104e+07
+  ||Phi||_{F_n}, F_n(d)=(1+d)^8 : finite part (|r|_inf<=400, FFT) = 6.7845e+15 ; tail bound = 3.64e+19 ; total <= 3.6371e+19
+  ||Phi||_{F_n}, F_n(d)=(1+d)^0 : finite part (|r|_inf<=512, FFT) = 2.1543e+01 ; tail bound = 1.11e-08 ; total <= 2.1543e+01
+  ||Phi||_{F_n}, F_n(d)=(1+d)^1 : finite part (|r|_inf<=512, FFT) = 3.0479e+02 ; tail bound = 2.42e-05 ; total <= 3.0479e+02
+  ||Phi||_{F_n}, F_n(d)=(1+d)^2 : finite part (|r|_inf<=512, FFT) = 7.7541e+03 ; tail bound = 5.33e-02 ; total <= 7.7541e+03
+  ||Phi||_{F_n}, F_n(d)=(1+d)^4 : finite part (|r|_inf<=512, FFT) = 1.9700e+07 ; tail bound = 2.62e+05 ; total <= 1.9962e+07
+  ||Phi||_{F_n}, F_n(d)=(1+d)^8 : finite part (|r|_inf<=512, FFT) = 7.6778e+15 ; tail bound = 6.88e+18 ; total <= 6.8860e+18
+runtime 31.8 s

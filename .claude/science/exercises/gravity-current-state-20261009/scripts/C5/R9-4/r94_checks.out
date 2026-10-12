@@ -1,0 +1,70 @@
+[1] variant (i): far field of F = theta(-s) (spacelike support) for a monochromatic point source
+    2 pi^2 r h(r) = Pf int_w^inf k sin(kr) g(k)/(k^2-w^2) dk ; full F=1 gives (pi/2) e^{i w r} (bounded)
+    r (at sin(wr)=+1)      A(r)          -(g0)*ln r     A(r)+g0*ln r
+    r=     20.420  A=-1.79545   -1.50732   -0.28813
+    r=    190.066  A=-2.91047   -2.62205   -0.28842
+    r=   1886.526  A=-4.05732   -3.76889   -0.28843
+    r=  18851.127  A=-5.20752   -4.91909   -0.28843
+    r= 188497.130  A=-6.35805   -6.06962   -0.28843
+    g0 = g(w) = 0.499688; A(r) + g0 ln r is constant => r*h grows like ln r: no finite radiation zone.
+    A light-cone counterterm c*delta(k^2-w^2) adds c'*sin(wr) (r-independent): it cannot cancel g0*ln r*sin(wr).
+    radiated power through radius r ~ r^2 |d_r h|^2 ~ (g0 ln r)^2 -> grows without bound.
+
+[2] block positivity per spin channel: M = [[P_J, F/2],[F*/2, D0]] (channels 0 and 2), D0 scalar-only
+    draws with min eigenvalue < 0: 20000/20000  (=> scalar decoherence cannot pay for a spin-2 drift)
+    variant (i) at timelike p (P_J = D0 = 0, F != 0): non-PSD in 20000/20000 draws
+
+[3] variant (ii): Barnes-Rivers bookkeeping, static source T00=M
+    massive test body: P2=0.666667, P0=0.333333, GR numerator=0.500000; photon: P2 part=1, P0 part=0
+    gamma(c0) = (1-2c0/3)/(1+2c0/3); Cassini 2-sigma gamma-1 in [-2.50e-05,6.70e-05] => c0 in [-5.02e-05,1.88e-05]
+    trace-only drift (no spin-2): photons not deflected => gamma = -1, |gamma-1| = 2 = 8.696e+04 Cassini sigmas
+
+[4] OWD Eq.27 class: integrate the classical field out of a Gaussian history (1 mode)
+    a=1.3 b=0.7 N=0.4 D=0.9: numeric=0.80397236+0.42328448j predicted=0.80397236+0.42328448j
+    a=2.0 b=-1.1 N=2.5 D=0.3: numeric=0.95906184-0.15969709j predicted=0.95906184-0.15969709j
+    a=0.5 b=0.2 N=0.1 D=1.7: numeric=0.43623329+0.35276501j predicted=0.43623329+0.35276501j
+    => matter noise = D0 + |G|^2 D2 (additive), response = G F: no cross term exists in that class.
+
+[5] variant (iii): correlated measurement-feedback (Wiseman-Milburn)
+    WM generator == D[c - iF] - i[(Fc+c^dag F)/2, .]: max error over 200 random draws = 5.33e-15
+    single system, c = sqrt(k)(1+i mu)A, F = lam A: total dephasing = k + (sqrt(k) mu - lam)^2, coupling g = 2 sqrt(k) lam
+    mu=   0.0: kappa=5.0000e-01 lam=7.0711e-01 coupling g=1.0000 total dephasing=1.0000e+00 (AM-GM floor for g=1: 1.0000)
+    mu=   1.0: kappa=5.0000e-01 lam=7.0711e-01 coupling g=1.0000 total dephasing=5.0000e-01 (AM-GM floor for g=1: 1.0000)
+    mu=  10.0: kappa=5.0000e-02 lam=2.2361e+00 coupling g=1.0000 total dephasing=5.0000e-02 (AM-GM floor for g=1: 1.0000)
+    mu= 100.0: kappa=5.0000e-03 lam=7.0711e+00 coupling g=1.0000 total dephasing=5.0000e-03 (AM-GM floor for g=1: 1.0000)
+    two qubits, target coherent coupling g Z1 Z2 with g = 1 (time t = pi/8 maximises coherent entanglement)
+    mu=   0.0: joint meter: Z1Z2 coeff=1.000, negativity=0.0811 | local meters (LOCC): Z1Z2 coeff=1.000, negativity=-0.00e+00
+    mu=   1.0: joint meter: Z1Z2 coeff=1.000, negativity=0.1594 | local meters (LOCC): Z1Z2 coeff=1.000, negativity=-0.00e+00
+    mu=  10.0: joint meter: Z1Z2 coeff=1.000, negativity=0.3223 | local meters (LOCC): Z1Z2 coeff=1.000, negativity=-0.00e+00
+    mu= 100.0: joint meter: Z1Z2 coeff=1.000, negativity=0.3502 | local meters (LOCC): Z1Z2 coeff=1.000, negativity=-0.00e+00
+    pure coherent g Z1Z2 at t=pi/8 gives negativity 0.5*sin(2*g*t)... reference: 0.3536
+
+[6] variant (iii): emission side vs absorption side (unsymmetrised spectral matrices of B and J)
+    emission-silent draws: 20000; absorption < |C|^2/S_JJ in 0 draws; min absorption*S_JJ/|C|^2 = 1.000008
+    => zero vacuum excitation forces matter to be ABSORBED into the hidden meter at rate >= |F|^2/S_JJ,
+       and the felt field f = B + G J is not the classical record (perfect B-J anticorrelation).
+    uncorrelated emission side: S_ff(-p) >= |G|^2 S_JJ violated in 0/20000 draws
+
+[7] variant (iv): preferred frame
+    R8-3 regulated ansatz D0 = c|F|^2/(|s|+mu^2) at saturation: K/floor = x/(x+1) + (x+1)/(4x), x = |s|/mu^2
+      x=   1e+02: K/floor = 1.242599e+00
+      x=   1e+00: K/floor = 1.000000e+00
+      x=   1e-02: K/floor = 2.525990e+01
+      x=   1e-04: K/floor = 2.500250e+03
+      x=   1e-06: K/floor = 2.500003e+05
+    (referee r83 [4] values 1.0, 25.26, 2500.25, 250000.25 reproduced; large-x limit 1.25, not 1)
+    exact pointwise least-decoherence: D0' = c/(2|s|), P_J = |s|/(2c)  => K = c|F|^2/|s| (ratio 1), no mu needed
+    vacuum energy injection with K = floor: integrand ~ w * s * |F_u|^2, |F_u|^2 = e^{-k^2 l^2}(1+w^2 tau^2)^{-n}  (l = tau = 1)
+      n=2: integral up to w=1e1,1e2,1e3,1e4: 7.86430, 20.59020, 33.41079, 44.09542
+      n=3: integral up to w=1e1,1e2,1e3,1e4: 0.64690, 0.67385, 0.67412, 0.67412
+      n=4: integral up to w=1e1,1e2,1e3,1e4: 0.12683, 0.12697, 0.12697, 0.12697
+      => n=2 grows by a constant per decade (log-divergent energy injection); n>=3 converges. R8-3's 'n >= 2' must read n >= 3.
+    near-cone classical GW energy (suggested, O(1) normalisation): rho_GW ~ eps * L * hbar c/(pi^3 l^4), L = log factor
+      l=1e-08 m: rho_GW(eps=1) = 1.02e+06 J/m^3 = 1.20e+15 rho_crit; eps needed for rho_GW < rho_Lambda: 5.79e-16
+      l=1e-07 m: rho_GW(eps=1) = 1.02e+02 J/m^3 = 1.20e+11 rho_crit; eps needed for rho_GW < rho_Lambda: 5.79e-12
+      l=1e-06 m: rho_GW(eps=1) = 1.02e-02 J/m^3 = 1.20e+07 rho_crit; eps needed for rho_GW < rho_Lambda: 5.79e-08
+      l=5e-06 m: rho_GW(eps=1) = 1.63e-05 J/m^3 = 1.92e+04 rho_crit; eps needed for rho_GW < rho_Lambda: 3.62e-05
+    combine with R8-3's EBL estimate l_min(eps=1) = 8.86e-9 m (A'=1e-2), l_min ~ eps^(-1/7):
+      A'=1e-4: lower end with near-cone suppression ~ 1.48e-07 m (upper end 5e-6 m from R6-4)
+      A'=1e-2: lower end with near-cone suppression ~ 2.25e-07 m (upper end 5e-6 m from R6-4)
+      A'=1: lower end with near-cone suppression ~ 3.42e-07 m (upper end 5e-6 m from R6-4)

@@ -1,0 +1,19 @@
+law truncated at |r|_inf <= 12 on an L=40 dimer torus; max|eps_trunc - eps| on the k-grid = 3.04e-02; min eps_trunc = 0.2924
+flux-free: E_vac = -1388.418721 (k-grid prediction -1/2 sum eps_trunc = -1388.418721); gap = 0.2924
+vison pair separated by D= 1 plaquettes (flip z on 1 dimers along e1+e2): Delta E_vac = -0.009647 ; lowest fermion level 0.29355 (bulk gap 0.3000); in-gap levels: 1
+vison pair separated by D= 2 plaquettes (flip z on 2 dimers along e1+e2): Delta E_vac = -0.014117 ; lowest fermion level 0.29442 (bulk gap 0.3000); in-gap levels: 1
+vison pair separated by D= 3 plaquettes (flip z on 3 dimers along e1+e2): Delta E_vac = -0.014650 ; lowest fermion level 0.29469 (bulk gap 0.3000); in-gap levels: 1
+vison pair separated by D= 4 plaquettes (flip z on 4 dimers along e1+e2): Delta E_vac = -0.014886 ; lowest fermion level 0.29494 (bulk gap 0.3000); in-gap levels: 1
+vison pair separated by D= 6 plaquettes (flip z on 6 dimers along e1+e2): Delta E_vac = -0.014952 ; lowest fermion level 0.29546 (bulk gap 0.3000); in-gap levels: 1
+vison pair separated by D= 8 plaquettes (flip z on 8 dimers along e1+e2): Delta E_vac = -0.014959 ; lowest fermion level 0.29600 (bulk gap 0.3000); in-gap levels: 1
+vison pair separated by D=10 plaquettes (flip z on 10 dimers along e1+e2): Delta E_vac = -0.014959 ; lowest fermion level 0.29657 (bulk gap 0.3000); in-gap levels: 1
+vison pair separated by D=12 plaquettes (flip z on 12 dimers along e1+e2): Delta E_vac = -0.014959 ; lowest fermion level 0.29718 (bulk gap 0.3000); in-gap levels: 1
+single-vison fermion energy e_v ~ Delta E_vac(D=12)/2 = -0.00748 ; local pair (one sigma^z) = -0.00965
+local pair: min_t |eps| along A0 -> A_F (11 points) = 0.0181  (no zero crossing => sector vacuum has the flux-free vacuum parity)
+pi-flux sector (every plaquette flipped): (E_vac(pi) - E_vac(0)) per plaquette = -0.000359
+local pair: dA has 914 nonzero rows (Majorana sites), max |dA| = 3.471, ||dA||_F = 5.657
+box in-momentum k = (0.50, 0.20), E = 0.61644 (|k| = 0.5385, deep in the box |k_i| < 2.0); all out-momenta on shell: 0.0e+00, 0.0e+00, 0.0e+00, 1.1e-16, 0.0e+00
+  Nk=512 eta=0.020: rotated 90deg |t|=1.8290 (Born 0.0567); backward |t|=1.7752 (Born 0.0520); mirror |t|=1.7149 (Born 0.0615); rotated 45deg |t|=1.7092 (Born 0.0634); forward |t|=1.4465 (Born 0.2513)
+  Nk=1024 eta=0.010: rotated 90deg |t|=1.8285 (Born 0.0567); backward |t|=1.7724 (Born 0.0520); mirror |t|=1.7097 (Born 0.0615); rotated 45deg |t|=1.7038 (Born 0.0634); forward |t|=1.4377 (Born 0.2513)
+  Nk=1024 eta=0.005: rotated 90deg |t|=1.8300 (Born 0.0567); backward |t|=1.7726 (Born 0.0520); mirror |t|=1.7080 (Born 0.0615); rotated 45deg |t|=1.7020 (Born 0.0634); forward |t|=1.4332 (Born 0.2513)
+runtime 148.8 s

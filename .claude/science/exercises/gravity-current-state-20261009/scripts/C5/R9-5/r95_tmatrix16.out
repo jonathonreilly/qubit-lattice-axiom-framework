@@ -1,0 +1,6 @@
+RMAX=16: dh support 1042 A-sites, 560 B-sites; max|dh| = 3.471
+  k=(0.50,0.20) E=0.6164 Nk=1024 eta=0.010: rot90 |t|=1.8253; back |t|=1.7807; mirror |t|=1.7004; fwd |t|=1.4103
+  k=(0.50,0.20) E=0.6164 Nk=1024 eta=0.005: rot90 |t|=1.8266; back |t|=1.7806; mirror |t|=1.6982; fwd |t|=1.4047
+  k=(1.20,-0.70) E=1.4213 Nk=1024 eta=0.010: rot90 |t|=0.9385; back |t|=1.5641; mirror |t|=1.5036; fwd |t|=2.7784
+  k=(1.20,-0.70) E=1.4213 Nk=1024 eta=0.005: rot90 |t|=0.9336; back |t|=1.5677; mirror |t|=1.5089; fwd |t|=2.7837
+runtime 7.1 s

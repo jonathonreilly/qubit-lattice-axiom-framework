@@ -1,0 +1,24 @@
+flake 2 x 3 dimers: 12 spins, 2 plaquettes, 6 fermion modes
+  W_p Hermitian, W_p^2 = 1, mutually commuting: 0.0e+00 0.0e+00 0.0e+00
+  [Phi(h), W_p] = 0 : max norm 0.0e+00 (box law), 0.0e+00 (random complex)
+  sector dim 1024 (2^12 / 2^2), Fock dim 64, multiplicity 16
+  homomorphism P([Phi(a),Phi(b)] - Phi([a,b]))P : max 9.7e-16  (scale |Phi(a)| ~ 3.6)
+  spectrum on sector vs Fock x 16  [box law M(R'-R)]: max dev 9.8e-14  (E range 0.000 .. 10.413)
+  spectrum on sector vs Fock x 16  [random complex Hermitian]: max dev 4.0e-14  (E range -6.741 .. 3.034)
+  law as written vs Phi(M) - N M(0)/2 on sector: max 8.6e-14
+  W_p on the sector (should all be +1): min 1.000 max 1.000
+flake 3 x 2 dimers: 12 spins, 2 plaquettes, 6 fermion modes
+  W_p Hermitian, W_p^2 = 1, mutually commuting: 0.0e+00 0.0e+00 0.0e+00
+  [Phi(h), W_p] = 0 : max norm 0.0e+00 (box law), 0.0e+00 (random complex)
+  sector dim 1024 (2^12 / 2^2), Fock dim 64, multiplicity 16
+  homomorphism P([Phi(a),Phi(b)] - Phi([a,b]))P : max 1.5e-15  (scale |Phi(a)| ~ 4.2)
+  spectrum on sector vs Fock x 16  [box law M(R'-R)]: max dev 5.3e-14  (E range 0.000 .. 10.413)
+  spectrum on sector vs Fock x 16  [random complex Hermitian]: max dev 3.8e-14  (E range -3.482 .. 7.530)
+  law as written vs Phi(M) - N M(0)/2 on sector: max 6.3e-14
+  W_p on the sector (should all be +1): min 1.000 max 1.000
+flake 2 x 4 dimers: 16 spins, 3 plaquettes, 8 fermion modes
+  W_p Hermitian, W_p^2 = 1, mutually commuting: 0.0e+00 0.0e+00 0.0e+00
+  [Phi(h), W_p] = 0 : max norm 0.0e+00 (box law), 0.0e+00 (random complex)
+  random sector vectors: homomorphism residual max 5.4e-15 ; law-vs-Phi(M) residual max 1.1e-15
+  lowest 4 eigenvalues of Phi(M) on sector: [-7.24368921e-15 -3.28035572e-15 -8.45748782e-16  6.53511881e-15] ; Fock ground = 0.000000 (all lambda > 0: True), first excitation = 1.178271
+runtime 139.7 s

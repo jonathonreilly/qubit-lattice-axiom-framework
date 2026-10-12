@@ -1,0 +1,92 @@
+(1) Lemma K sampling: min over samples of q^2-second-difference / Omega (must be > 0 where hypotheses hold)
+  naive     rho_max=  1.0: min d2/Omega = +5.6053e-01 (fraction negative 0.00e+00)
+  naive     rho_max=  2.0: min d2/Omega = +4.4280e-01 (fraction negative 0.00e+00)
+  naive     rho_max=  4.0: min d2/Omega = +3.4174e-01 (fraction negative 0.00e+00)
+  naive     rho_max= 16.0: min d2/Omega = +2.2910e-01 (fraction negative 0.00e+00)
+  continuum rho_max=  1.0: min d2/Omega = +1.1996e+00 (fraction negative 0.00e+00)
+  continuum rho_max=  2.0: min d2/Omega = +7.8742e-01 (fraction negative 0.00e+00)
+  continuum rho_max=  4.0: min d2/Omega = +4.7997e-01 (fraction negative 0.00e+00)
+  continuum rho_max= 16.0: min d2/Omega = +2.0016e-01 (fraction negative 0.00e+00)
+(2) L*U, Theorem W coefficient (dc_e ~ L m). (H3): max W/|d|; photon "naive" or (c1,c2)
+  D1 b=1.4 r=0.577 photon=naive        lam=0.01 : L*U = +0.22652   max W/d = 0.063
+  D1 b=1.4 r=0.577 photon=naive        lam=0.05 : L*U = +0.22655   max W/d = 0.063
+  D1 b=1.4 r=0.577 photon=naive        lam=0.20 : L*U = +0.22694   max W/d = 0.063
+  D1 b=1.4 r=0.577 photon=(0.7, 1.4)   lam=0.01 : L*U = +0.22676   max W/d = 0.063
+  D1 b=1.4 r=0.577 photon=(0.7, 1.4)   lam=0.05 : L*U = +0.22678   max W/d = 0.063
+  D1 b=1.4 r=0.577 photon=(0.7, 1.4)   lam=0.20 : L*U = +0.22715   max W/d = 0.063
+  D1 b=1.4 r=0.400 photon=naive        lam=0.01 : L*U = +0.15818   max W/d = 0.044
+  D1 b=1.4 r=0.400 photon=naive        lam=0.05 : L*U = +0.15820   max W/d = 0.044
+  D1 b=1.4 r=0.400 photon=naive        lam=0.20 : L*U = +0.15848   max W/d = 0.044
+  D1 b=1.4 r=0.400 photon=(0.7, 1.4)   lam=0.01 : L*U = +0.15834   max W/d = 0.044
+  D1 b=1.4 r=0.400 photon=(0.7, 1.4)   lam=0.05 : L*U = +0.15836   max W/d = 0.044
+  D1 b=1.4 r=0.400 photon=(0.7, 1.4)   lam=0.20 : L*U = +0.15863   max W/d = 0.044
+  D1 b=1.4 r=0.100 photon=naive        lam=0.01 : L*U = +0.04010   max W/d = 0.011
+  D1 b=1.4 r=0.100 photon=naive        lam=0.05 : L*U = +0.04010   max W/d = 0.011
+  D1 b=1.4 r=0.100 photon=naive        lam=0.20 : L*U = +0.04018   max W/d = 0.011
+  D1 b=1.4 r=0.100 photon=(0.7, 1.4)   lam=0.01 : L*U = +0.04014   max W/d = 0.011
+  D1 b=1.4 r=0.100 photon=(0.7, 1.4)   lam=0.05 : L*U = +0.04014   max W/d = 0.011
+  D1 b=1.4 r=0.100 photon=(0.7, 1.4)   lam=0.20 : L*U = +0.04022   max W/d = 0.011
+  D1 b=1.2 r=0.577 photon=naive        lam=0.01 : L*U = +0.50168   max W/d = 0.129
+  D1 b=1.2 r=0.577 photon=naive        lam=0.05 : L*U = +0.50174   max W/d = 0.129
+  D1 b=1.2 r=0.577 photon=naive        lam=0.20 : L*U = +0.50247   max W/d = 0.129
+  D1 b=1.2 r=0.577 photon=(0.6, 1.2)   lam=0.01 : L*U = +0.50205   max W/d = 0.129
+  D1 b=1.2 r=0.577 photon=(0.6, 1.2)   lam=0.05 : L*U = +0.50210   max W/d = 0.129
+  D1 b=1.2 r=0.577 photon=(0.6, 1.2)   lam=0.20 : L*U = +0.50280   max W/d = 0.129
+  D1 b=1.2 r=0.400 photon=naive        lam=0.01 : L*U = +0.35229   max W/d = 0.090
+  D1 b=1.2 r=0.400 photon=naive        lam=0.05 : L*U = +0.35233   max W/d = 0.090
+  D1 b=1.2 r=0.400 photon=naive        lam=0.20 : L*U = +0.35289   max W/d = 0.090
+  D1 b=1.2 r=0.400 photon=(0.6, 1.2)   lam=0.01 : L*U = +0.35255   max W/d = 0.090
+  D1 b=1.2 r=0.400 photon=(0.6, 1.2)   lam=0.05 : L*U = +0.35259   max W/d = 0.090
+  D1 b=1.2 r=0.400 photon=(0.6, 1.2)   lam=0.20 : L*U = +0.35313   max W/d = 0.090
+  D1 b=1.2 r=0.100 photon=naive        lam=0.01 : L*U = +0.09029   max W/d = 0.022
+  D1 b=1.2 r=0.100 photon=naive        lam=0.05 : L*U = +0.09030   max W/d = 0.022
+  D1 b=1.2 r=0.100 photon=naive        lam=0.20 : L*U = +0.09046   max W/d = 0.022
+  D1 b=1.2 r=0.100 photon=(0.6, 1.2)   lam=0.01 : L*U = +0.09036   max W/d = 0.022
+  D1 b=1.2 r=0.100 photon=(0.6, 1.2)   lam=0.05 : L*U = +0.09037   max W/d = 0.022
+  D1 b=1.2 r=0.100 photon=(0.6, 1.2)   lam=0.20 : L*U = +0.09052   max W/d = 0.022
+  D1 b=1.0 r=0.577 photon=naive        lam=0.01 : L*U = +0.82035   max W/d = 0.190
+  D1 b=1.0 r=0.577 photon=naive        lam=0.05 : L*U = +0.82042   max W/d = 0.190
+  D1 b=1.0 r=0.577 photon=naive        lam=0.20 : L*U = +0.82138   max W/d = 0.190
+  D1 b=1.0 r=0.577 photon=(0.5, 1.0)   lam=0.01 : L*U = +0.82069   max W/d = 0.190
+  D1 b=1.0 r=0.577 photon=(0.5, 1.0)   lam=0.05 : L*U = +0.82076   max W/d = 0.190
+  D1 b=1.0 r=0.577 photon=(0.5, 1.0)   lam=0.20 : L*U = +0.82167   max W/d = 0.190
+  D1 b=1.0 r=0.400 photon=naive        lam=0.01 : L*U = +0.57779   max W/d = 0.131
+  D1 b=1.0 r=0.400 photon=naive        lam=0.05 : L*U = +0.57785   max W/d = 0.131
+  D1 b=1.0 r=0.400 photon=naive        lam=0.20 : L*U = +0.57862   max W/d = 0.131
+  D1 b=1.0 r=0.400 photon=(0.5, 1.0)   lam=0.01 : L*U = +0.57804   max W/d = 0.131
+  D1 b=1.0 r=0.400 photon=(0.5, 1.0)   lam=0.05 : L*U = +0.57809   max W/d = 0.131
+  D1 b=1.0 r=0.400 photon=(0.5, 1.0)   lam=0.20 : L*U = +0.57884   max W/d = 0.131
+  D1 b=1.0 r=0.100 photon=naive        lam=0.01 : L*U = +0.14907   max W/d = 0.033
+  D1 b=1.0 r=0.100 photon=naive        lam=0.05 : L*U = +0.14909   max W/d = 0.033
+  D1 b=1.0 r=0.100 photon=naive        lam=0.20 : L*U = +0.14933   max W/d = 0.033
+  D1 b=1.0 r=0.100 photon=(0.5, 1.0)   lam=0.01 : L*U = +0.14914   max W/d = 0.033
+  D1 b=1.0 r=0.100 photon=(0.5, 1.0)   lam=0.05 : L*U = +0.14915   max W/d = 0.033
+  D1 b=1.0 r=0.100 photon=(0.5, 1.0)   lam=0.20 : L*U = +0.14939   max W/d = 0.033
+  BQ (1.0,2.0) r= 1.0 naive photon lam=0.05: L*U = +3.28009   max W/d = 1.000 (H3 ok)
+  BQ (2.0,3.0) r= 1.0 naive photon lam=0.05: L*U = +0.50664   max W/d = 1.000 (H3 ok)
+  BQ (0.5,1.5) r= 1.0 naive photon lam=0.05: L*U = +8.73446   max W/d = 1.000 (H3 ok)
+  BQ (1.0,2.0) r= 2.0 naive photon lam=0.05: L*U = +6.07030   max W/d = 2.000 (H3 fails)
+  BQ (2.0,3.0) r= 2.0 naive photon lam=0.05: L*U = +0.87077   max W/d = 2.000 (H3 fails)
+  BQ (0.5,1.5) r= 2.0 naive photon lam=0.05: L*U = +16.53930   max W/d = 2.000 (H3 fails)
+  BQ (1.0,2.0) r= 4.0 naive photon lam=0.05: L*U = +11.28151   max W/d = 4.000 (H3 fails)
+  BQ (2.0,3.0) r= 4.0 naive photon lam=0.05: L*U = +1.48195   max W/d = 4.000 (H3 fails)
+  BQ (0.5,1.5) r= 4.0 naive photon lam=0.05: L*U = +31.44899   max W/d = 4.000 (H3 fails)
+  BQ (1.0,2.0) r= 8.0 naive photon lam=0.05: L*U = +21.29080   max W/d = 8.000 (H3 fails)
+  BQ (2.0,3.0) r= 8.0 naive photon lam=0.05: L*U = +2.56841   max W/d = 8.000 (H3 fails)
+  BQ (0.5,1.5) r= 8.0 naive photon lam=0.05: L*U = +60.46952   max W/d = 8.000 (H3 fails)
+  BQ (1.0,2.0) r=16.0 naive photon lam=0.05: L*U = +40.92108   max W/d = 16.000 (H3 fails)
+  BQ (2.0,3.0) r=16.0 naive photon lam=0.05: L*U = +4.61143   max W/d = 16.000 (H3 fails)
+  BQ (0.5,1.5) r=16.0 naive photon lam=0.05: L*U = +117.72851   max W/d = 16.000 (H3 fails)
+  BQ (1.0,2.0) r=32.0 naive photon lam=0.05: L*U = +79.85332   max W/d = 32.000 (H3 fails)
+  BQ (2.0,3.0) r=32.0 naive photon lam=0.05: L*U = +8.58813   max W/d = 32.000 (H3 fails)
+  BQ (0.5,1.5) r=32.0 naive photon lam=0.05: L*U = +231.54450   max W/d = 32.000 (H3 fails)
+  outside H2' (photon plateau transition on the electron edge), R8-5 shapes, r = 1, lam = 0.05:
+  S1: L*U = +2.50461
+  S2: L*U = +0.48266
+  S3: L*U = -0.28650
+  S5: L*U = +8.16796
+  S7: L*U = +1.07953
+  S8: L*U = -0.98319
+  D1(1.4,1/sqrt3) with photon box (1.4, 2.4) [transition ON the slab, outside H2']: L*U = +0.20194
+  D1(1.4,1/sqrt3) with photon box (1.5, 2.8) [outside H2']: L*U = +0.21352
+elapsed 8.5s

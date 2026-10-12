@@ -5243,3 +5243,15 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **FAIL:** a refereed proof that any history containing an out-of-equilibrium vacuum drop (inflation's end or supercooling) forces g ≠ 0 for every reader giving Λ̃ = 0. That would make R15-1's signalling unavoidable for every universe with inflation.
   - **INCONCLUSIVE:** otherwise.
 - **Expectation.** FAIL for inflation's end by Lemma C, unless reheating counts as "equilibrium". In that case the result is PASS with the EoS price. The likely sticking point is whether the inflaton potential is "content" or "vacuum".
+- **R16-1 (Wilson-edge interval no-go): worker reading DERIVED**, pending the referee. The class is a stated Wilson class containing D1(r ≤ 1/√3) at b = 1.4, 1.2 and 1.0, with fixed λ > 0.
+  - **Theorem W:** on Wilson edges δc_e = L·m + O(1), with a closed-form L; the photon is O(m⁻²).
+  - **Lemmas K and K′:** Ω is convex in the photon momentum, so L > 0 under (H0) W ≥ 0 and either (H3) or (H3′) with b ≥ 0.505.
+  - **So** Δ_λ → +∞, and by analyticity there is no interval zero.
+  - **Probe (c):** Δ(0⁺) = −10.877 e²/16π² on D1(1.4, 1/√3), with one isolated zero at m ≈ 24.
+  - **Outside the class:** L takes both signs, and a tuned L = 0 law has c₀ ≈ −2.15.
+  - **𝒬_W^P:** DERIVED-level with selectrons, SUGGESTED with the photino loop.
+  - **v_max:** D1(r = 1/√3) has v_max ≤ 1, and the R8-5 Wilson boxes are superluminal.
+  - **What it closes:** S17's gap that the derived subclass was only the Z-width-excluded literal edge.
+  - **No new price;** P73 still applies.
+
+  Referee running.

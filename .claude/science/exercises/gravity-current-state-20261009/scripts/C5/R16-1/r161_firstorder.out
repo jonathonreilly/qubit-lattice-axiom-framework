@@ -1,0 +1,12 @@
+D1(1.4, r=0.1)           L*U = +0.04010 | first order (1/4)<W'' w>*U = +0.04030, (1/4)<W w''>*U = +0.04030 | tadpole kappa_T*U = +0.0543
+D1(1.4, 1/sqrt3)         L*U = +0.22655 | first order (1/4)<W'' w>*U = +0.23265, (1/4)<W w''>*U = +0.23265 | tadpole kappa_T*U = +0.3135
+D1(1.0, 1/sqrt3)         L*U = +0.82042 | first order (1/4)<W'' w>*U = +0.87089, (1/4)<W w''>*U = +0.87089 | tadpole kappa_T*U = +1.1531
+BQ S1 r=1 photon (1,2)   L*U = +2.50461 | first order (1/4)<W'' w>*U = +2.96477, (1/4)<W w''>*U = +2.96477 | tadpole kappa_T*U = +4.0109
+BQ S3 r=1 photon (2,3)   L*U = -0.28650 | first order (1/4)<W'' w>*U = -0.54317, (1/4)<W w''>*U = -0.54317 | tadpole kappa_T*U = -0.8765
+BQ S3 r=1 naive          L*U = +0.50664 | first order (1/4)<W'' w>*U = +0.68430, (1/4)<W w''>*U = +0.68430 | tadpole kappa_T*U = +1.0826
+whole-zone v_max = max |grad E| over T^3 (grid 96^3 + axis lines 20001), m = 0.1, 0.3, 1:
+  D1(1.4,1/sqrt3)    v_max(m=0.1, 0.3, 1) = 1.0000 1.0000 1.0000
+  D1(1.2,1/sqrt3)    v_max(m=0.1, 0.3, 1) = 1.0000 1.0000 1.0000
+  D1(1.0,1/sqrt3)    v_max(m=0.1, 0.3, 1) = 1.0000 1.0000 1.0000
+  BQ S1 r=1          v_max(m=0.1, 0.3, 1) = 3.2137 3.3118 3.5922
+  BQ S3 r=1          v_max(m=0.1, 0.3, 1) = 4.5794 4.6513 4.8767

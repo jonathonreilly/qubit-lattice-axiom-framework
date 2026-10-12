@@ -1,0 +1,10 @@
+S1 gapped (BQ r=1, photon (1,2))     N=48 on-shell dc_e*U at m=25.6/51.2/102.4: +55.9483 +118.6415 +243.8256 | fit L*U=+2.44368 c0=-6.340 c1=-6.91
+S1 gapped (BQ r=1, photon (1,2))     N=64 on-shell dc_e*U at m=25.6/51.2/102.4: +58.2139 +123.2411 +253.0925 | fit L*U=+2.53484 c0=-6.408 c1=-6.92
+S1 gapped (BQ r=1, photon (1,2))     closed form L*U: photon-slot +2.50461 (Np=64), +2.50462 (Np=96, nx=800); p-difference +2.50461 (Np=64)
+S3 gapped (BQ r=1, photon (2,3))     N=48 on-shell dc_e*U at m=25.6/51.2/102.4: -8.5763 -14.8937 -27.9432 | fit L*U=-0.25757 c0=-1.429 c1=-14.16
+S3 gapped (BQ r=1, photon (2,3))     N=64 on-shell dc_e*U at m=25.6/51.2/102.4: -9.2038 -16.2767 -30.8644 | fit L*U=-0.28779 c0=-1.247 c1=-15.09
+S3 gapped (BQ r=1, photon (2,3))     closed form L*U: photon-slot -0.28650 (Np=64), -0.28650 (Np=96, nx=800); p-difference -0.28650 (Np=64)
+D1(b=1.4, r=1/sqrt3), naive photon   N=48 on-shell dc_e*U at m=25.6/51.2/102.4: -0.4659 +5.2563 +16.6005 | fit L*U=+0.22091 c0=-5.988 c1=-3.43
+D1(b=1.4, r=1/sqrt3), naive photon   N=64 on-shell dc_e*U at m=25.6/51.2/102.4: -2.6406 +0.2657 +5.8764 | fit L*U=+0.10827 c0=-5.143 c1=-6.89
+D1(b=1.4, r=1/sqrt3), naive photon   closed form L*U: photon-slot +0.22655 (Np=64), +0.22655 (Np=96, nx=800); p-difference +0.22655 (Np=64)
+elapsed 2.4s

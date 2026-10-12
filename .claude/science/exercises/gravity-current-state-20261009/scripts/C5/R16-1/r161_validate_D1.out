@@ -1,0 +1,7 @@
+consistency (S3 gapped, m=1, N=48 midpoint): aniso -6.22763787  R13-7 runner -6.22763787
+D1(1.4,1/sqrt3) naive  qx: 64 GL panels x8, Np=48: dc_e*U at 25.6/51.2/102.4 = +0.3793 +6.3244 +17.9967 | fit L*U=+0.22655 c0=-5.130 c1=-7.44  [0s]
+D1(1.4,1/sqrt3) naive  qx: 64 GL panels x8, Np=64: dc_e*U at 25.6/51.2/102.4 = +0.3793 +6.3244 +17.9967 | fit L*U=+0.22655 c0=-5.130 c1=-7.44  [1s]
+D1(1.4,1/sqrt3) naive  qx: 64 GL panels x8, Np=96: dc_e*U at 25.6/51.2/102.4 = +0.3793 +6.3244 +17.9966 | fit L*U=+0.22655 c0=-5.130 c1=-7.44  [2s]
+D1(1.4,1/sqrt3) naive  qx: 128 GL panels x8, Np=48: dc_e*U at 25.6/51.2/102.4 = +0.3791 +6.3241 +17.9959 | fit L*U=+0.22655 c0=-5.130 c1=-7.44  [3s]
+D1(1.4,1/sqrt3) naive  qx: 128 GL panels x8, Np=64: dc_e*U at 25.6/51.2/102.4 = +0.3792 +6.3241 +17.9960 | fit L*U=+0.22655 c0=-5.130 c1=-7.44  [5s]
+D1(1.4,1/sqrt3) naive  qx: 128 GL panels x8, Np=96: dc_e*U at 25.6/51.2/102.4 = +0.3792 +6.3240 +17.9959 | fit L*U=+0.22655 c0=-5.130 c1=-7.44  [8s]

@@ -1,0 +1,2 @@
+selectron dc_gamma*U: R13-1 +0.4736602214  GL-code on midpoint nodes +0.4736602214
+partner dc_e*U (h=0.02 both since m/8 = 0.05 > 0.02): R13-1 -1.0443114458  GL-code -1.0443114458

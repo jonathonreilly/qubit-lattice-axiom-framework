@@ -1,0 +1,6 @@
+D1(1.0,1/sqrt3) naive              qx 64 panels Np=64: on-shell fit L*U=+0.82043 (c0=-5.781 c1=-6.57) | closed form +0.82042   [1s]
+D1(1.0,1/sqrt3) naive              qx 96 panels Np=96: on-shell fit L*U=+0.82044 (c0=-5.781 c1=-6.57) | closed form +0.82042   [4s]
+D1(1.4,1/sqrt3) photon (0.7,1.4)   qx 64 panels Np=64: on-shell fit L*U=+0.22679 (c0=-5.140 c1=-7.13) | closed form +0.22678   [4s]
+D1(1.4,1/sqrt3) photon (0.7,1.4)   qx 96 panels Np=96: on-shell fit L*U=+0.22678 (c0=-5.140 c1=-7.13) | closed form +0.22678   [7s]
+BQ S3 r=1 naive                    qx 64 panels Np=64: on-shell fit L*U=+0.50669 (c0=-3.301 c1=-10.95) | closed form +0.50664   [7s]
+BQ S3 r=1 naive                    qx 96 panels Np=96: on-shell fit L*U=+0.50669 (c0=-3.301 c1=-10.95) | closed form +0.50664   [10s]

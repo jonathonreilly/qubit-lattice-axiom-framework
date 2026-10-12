@@ -1,0 +1,5 @@
+m=  0.010 | (12,8) | dcg_2sel(Nref=4096)=  -0.82928 | dce_partner=  -8.73098   [28s]
+m=  0.100 | (12,8) | dcg_2sel(Nref=4096)=  -0.81004 | dce_partner=  -8.43994   [58s]
+m=  0.800 | (12,8) | dcg_2sel(Nref=4096)=  -0.49962 | dce_partner=  -5.99545   [88s]
+m=  3.000 | (12,8) | dcg_2sel(Nref=4096)=  -0.04202 | dce_partner=  -2.41244   [114s]
+m= 25.600 | (12,8) | dcg_2sel(Nref=4096)=  -0.00003 | dce_partner=  -0.18505   [137s]

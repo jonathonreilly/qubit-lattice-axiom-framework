@@ -1,0 +1,6 @@
+(C_b) holds for b >= b0 = 0.505 (margin at b=0.5: -0.062, 1.0: +14.438, 1.2: +27.200, 1.4: +45.030)
+b=0.505: W/d up to 1e3, lam up to 10, u up to 1e3: min Omega_qq/Omega = +4.4849e-02, fraction negative 0.0e+00
+b=1.000: W/d up to 1e3, lam up to 10, u up to 1e3: min Omega_qq/Omega = +1.0957e-01, fraction negative 0.0e+00
+b=1.400: W/d up to 1e3, lam up to 10, u up to 1e3: min Omega_qq/Omega = +1.6530e-01, fraction negative 0.0e+00
+b=0.300 (below b0, outside the lemma): min Omega_qq/Omega = +2.6828e-02, fraction negative 0.0e+00
+b=0.500 (below b0, outside the lemma): min Omega_qq/Omega = +4.8321e-02, fraction negative 0.0e+00

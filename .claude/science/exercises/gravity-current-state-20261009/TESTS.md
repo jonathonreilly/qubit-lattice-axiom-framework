@@ -4725,12 +4725,11 @@ Launch: R13-1, R13-3, R13-5 and R13-6 now; R13-2 after the R12-5 referee; R13-4 
   - **At linear k ≠ 0** the system matches GR plus an effective dust component.
   - **Confirmed:** T_orb = t_coll in EdS, and the stationary-age encoder mean is exact.
   - **Not confirmed:** the filter floors are model-specific, and the transition runner misclassifies complex Prony roots.
-- **R13-6 (start-time CQ dilation):** worker reading EXCLUDED for the literal class (a no-go); OPEN once the gain is repaired.
-  - **Lemma D:** R11-5's causal frame-tied gain delays the mean field. That drags moving bodies, violating double-pulsar timing by 1e11–1e15 for every ℓ_s. The same mechanism suggests γ ≲ 0.03 H₀ for R12-7's friction route.
-  - **The repair:** a zero-first-moment gain (n ≥ 4). It passes all stated tests, including noise-fed PPN.
-  - **Correction to R11-5:** its profile has no positive Lorentzian synthesis measure.
-
-  Referee running.
+- **R13-6 (start-time CQ dilation) — CONFIRMED WITH CORRECTIONS. EXCLUDED for the literal class; OPEN once the gain is repaired.**
+  - **Lemma D, confirmed.** Within the linearized, preferred-CMB-frame E1 model with R11-5's literal causal gain e^{−k²ℓ²/2}(1 − iωℓ/c)^{−n}, n ≥ 3, a compact body necessarily acquires a self-drag −(4πG/3)(nℓ/c)(∫ρ²)v. Double-pulsar timing then needs ℓ ≲ 4e-21 m, excluding every ℓ_s in the class by at least 11 orders of magnitude.
+  - **Not covered:** R6-4's instantaneous kernel, and arbitrary Lorentz-covariant or reciprocal CQ completions.
+  - **The repair.** A signed zero-first-moment gain removes the leading drag and passes the strict τ = ℓ/c test. But it is a changed, still-OPEN model, whose exact finite-start regularity/CP and spin-2 completion are unresolved.
+  - **Dated correction (2026-10-12) to R11-5:** R11-5's literal kernel 𝒦_ε is excluded by Lemma D (double-pulsar drag). The R11-5 "OPEN" reading applies only to its repaired, zero-first-moment-gain version.
 
 ### C5 Round 13, items 7–8 (pre-registered 20:49Z; launched now)
 
@@ -4756,23 +4755,26 @@ Readings:
 Readings:
 - **COUNTED:** an explicit count, with each coefficient shown to be generated (nonzero) at one loop and independent, checked.
 - **OPEN:** otherwise.
-- **R13-2 (graviton Monte Carlo):** worker reading OPEN.
-  - Lemma S: the sign problem sits in the trace/conformal sector.
-  - Lemma P: gapless TT with a PSD cubic symbol forces vector and scalar partners.
-  - Theorem G: one-sided gauge flatness plus PSD gives ω_TT = O(k²).
-  - The λ_H = 0 sign-free deformation crystallizes, and all modes are gapped (L = 4–8).
-  - Candidate no-gos X-G and X-S.
-
-  Referee running.
-- **R13-4 (tails):** worker readings below. Referee running.
-  - **(i) BF: PHYSICALLY NON-LOCAL in class 𝓔.**
-    - Lemma Q: the exact quotient Hamiltonian contains an O'Neill pair-transfer term with a Coulomb kernel e²/(4πr).
-    - Theorem NL: a double commutator of local number operators is ~e²/r.
-    - The bosonic sector is LOCAL-EQUIVALENT.
-  - **(ii) Off-box gravity tail: OPEN.**
-  - **(iii) Lemma V:** every one-band box law with b > b*(m) (π/2 at m = 0) is superluminal at lattice scale.
-    - The laws used so far (R7-1, R9-5) have v_max ≈ 4–12.
-    - A subluminal b = 1.4 box works at negligible rapidity cost (45.4 → 45.0).
+- **R13-2 (graviton Monte Carlo) — CONFIRMED WITH CORRECTIONS. EXCLUDED (bounded, X-G).**
+  - **The exclusion.** Take a real, local, C⁴, cubic-covariant PSD Gaussian Hamiltonian of exactly the six symmetric-tensor canonical pairs.
+    - Two gapless axial TT modes force two vector partners and one scalar zero-frequency partner at k = 0.
+    - If the vector partners are instead flat through a one-sided transverse gauge kernel valid for all nearby directions, positivity forces ω_TT = O(k²).
+  - **Still open:**
+    - mixed h–E kernels;
+    - auxiliary irreps;
+    - axis-only flatness;
+    - non-local symbols;
+    - non-product sign cures;
+    - the strongly coupled indefinite non-Gaussian window.
+  - **The Monte Carlo** gives finite-volume evidence of ordering in one sign-free deformation. It neither excludes a linear branch nor establishes a thermodynamic gapped crystal.
+  - **Corrections:** Z₄ normalization, auxiliary-field scope, LP certification, harmonic frequencies.
+- **R13-4 (tails) — CONFIRMED WITH CORRECTIONS.**
+  - **(i) PHYSICALLY NON-LOCAL in class 𝓔.**
+    - For the charged BF quotient law with the inherited flat/group-averaged measure, horizontal reduction necessarily produces a four-fermion neutral-pair transfer with a Coulomb 1/r kernel, detected by a bounded local gauge-invariant observable. So no finite-range or super-polynomially quasi-local extension in 𝓔 can keep the same physical content and locality.
+    - The zero-fermion sector is constraint-solving.
+    - R12-6 localizes the interaction only by adding physical modes.
+  - **(ii) R12-1's gravity tail: OPEN.**
+  - **(iii) Box speed.** The box profiles actually used are superluminal at lattice scale, with power-law leakage. A derivative-controlled b < π/2 Gevrey box is subluminal and preserves the earlier scoped box constructions on a narrower plateau, but needs fresh edge numerics.
 
 ### C5 Round 14, item 1 (pre-registered 20:54Z; launched now; conditional on R13-4, whose referee is running)
 

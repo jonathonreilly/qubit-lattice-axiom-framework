@@ -1,0 +1,26 @@
+L = 512, m = 0.50, kappa = 0.40, lam = -3.171512 (M_b = 0.8500), plateau |P| <= 0.60, c = 0 at |P| >= 1.20; 195 W blocks built in 6.7s
+packet: bound state, P0 = 0.15 (antisymmetry defect 3.1e-16; |W psi|/|H psi| = 0.255; sym. check of K: |<a|Kb>-<Ka|b>| below)
+  repaired K = (1/2){H, X_P}          |[K,P]-iH|/|H| = 3.67e-05   |[K,H]-iP|/|P| = 2.36e-04   |[H,P]|/|H| = 6.88e-16
+  (c1) R7-1 printed sign -(1/2){H,X_P}  |[K,P]-iH|/|H| = 2.00e+00   |[K,H]-iP|/|P| = 2.00e+00   |[H,P]|/|H| = 6.88e-16
+  (c2) free K0 with interacting H     |[K,P]-iH|/|H| = 2.55e-01   |[K,H]-iP|/|P| = 5.77e-01   |[H,P]|/|H| = 6.88e-16
+packet: bound+scattering mix, P0 = -0.2 (antisymmetry defect 3.3e-16; |W psi|/|H psi| = 0.250; sym. check of K: |<a|Kb>-<Ka|b>| below)
+  repaired K = (1/2){H, X_P}          |[K,P]-iH|/|H| = 6.16e-05   |[K,H]-iP|/|P| = 2.66e-04   |[H,P]|/|H| = 7.11e-16
+  (c1) R7-1 printed sign -(1/2){H,X_P}  |[K,P]-iH|/|H| = 2.00e+00   |[K,H]-iP|/|P| = 2.00e+00   |[H,P]|/|H| = 7.11e-16
+  (c2) free K0 with interacting H     |[K,P]-iH|/|H| = 2.50e-01   |[K,H]-iP|/|P| = 4.64e-01   |[H,P]|/|H| = 7.11e-16
+packet: scattering Gaussian, P0 = 0.3 (antisymmetry defect 3.1e-16; |W psi|/|H psi| = 0.225; sym. check of K: |<a|Kb>-<Ka|b>| below)
+  repaired K = (1/2){H, X_P}          |[K,P]-iH|/|H| = 5.68e-06   |[K,H]-iP|/|P| = 1.15e-04   |[H,P]|/|H| = 7.36e-16
+  (c1) R7-1 printed sign -(1/2){H,X_P}  |[K,P]-iH|/|H| = 2.00e+00   |[K,H]-iP|/|P| = 2.00e+00   |[H,P]|/|H| = 7.36e-16
+  (c2) free K0 with interacting H     |[K,P]-iH|/|H| = 2.25e-01   |[K,H]-iP|/|P| = 3.78e-01   |[H,P]|/|H| = 7.36e-16
+hermiticity in the c<1 shell: repaired (1/2){c W1, X_P}                |<a,Kb> - <Ka,b>| = 4.11e-14  (|<a,Kb>| = 4.22e+00)
+hermiticity in the c<1 shell: (c3) unsymmetrised c(P)(1/2){W1,X_P}     |<a,Kb> - <Ka,b>| = 3.92e-01  (|<a,Kb>| = 4.03e+00)
+(d) bound-state invariant mass on the ring, sqrt(E_min(P)^2 - P^2), odd sector at fixed lattice P:
+    P = -0.0000  c = 1.000  M_b = 0.849999999569
+    P = +0.1227  c = 1.000  M_b = 0.850000000192
+    P = +0.3068  c = 1.000  M_b = 0.850000000618
+    P = +0.6136  c = 1.000  M_b = 0.850000000298
+    P = +0.9204  c = 0.432  M_b = 0.971499657775
+    P = +1.1904  c = 0.000  M_b = 1.000031154883
+    P = +1.4726  c = 0.000  M_b = 1.000095064048
+    P = +1.8408  c = 0.000  M_b = nan
+    P = +2.2089  c = 0.000  M_b = nan
+(d) plateau spread of M_b = 1.05e-09 (target M_b = 0.8500; finite-L ring discretisation of the continuum M)

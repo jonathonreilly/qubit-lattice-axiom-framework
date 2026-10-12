@@ -1,0 +1,6 @@
+grid: L = 64 torus (relative), NP = 20 window +-1.00 (centre), channel = doublet; setup 1.2s
+W/F blocks built in 26.1s
+|cW psi|/|H psi| = 0.000 ; |spin term|/|K psi| = 0.000
+residuals: [Kx,Px]-iH 7.7e-04  [Kx,Py] 3.3e-16  [Ky,Py]-iH 7.3e-04  [Kx,H]-iPx 5.3e-03  [Ky,H]-iPy 6.1e-03  [Kx,Ky]+iJ 8.9e-03  [J,Kx]-iKy 8.8e-04  [J,Ky]+iKx 8.3e-04  [J,Px]-iPy 8.3e-04  [J,H] 1.2e-04  [Px,H] 1.0e-17
+free-only comparator (K0 with interacting H): [K0x,H]-iPx = 5.3e-03
+time 62.8s

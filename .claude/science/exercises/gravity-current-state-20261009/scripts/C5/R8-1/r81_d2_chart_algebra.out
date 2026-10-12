@@ -1,0 +1,16 @@
+(a) chart: |FD Jacobian - e1 e2 M0/(w^2 H0)|/J and round-trip error, max over 12 points: 9.0e-11
+(a) K0_x vs BT                           max relative difference over 12 points = 1.13e-14
+(a) K0_y vs BT                           max relative difference over 12 points = 1.37e-14
+(a) J0 vs BT                             max relative difference over 12 points = 9.00e-15
+(a) H0 vs BT                             max relative difference over 12 points = 4.65e-17
+(a) (c1) K0_x vs printed-sign BT         max relative difference over 12 points = 1.84e+00
+(a) (c2) K0_x vs BT without spin term    max relative difference over 12 points = 2.99e-03
+(b) REPAIRED: p-wave doublet, K = (1/2){H,X} + eps P S/(M+H): M_min = 0.8499777351 (doublet bound mass target 0.85)
+    [Kx,Px]-iH 6.9e-15  [Kx,Py] 2.1e-15  [Ky,Py]-iH 6.8e-15  [Kx,H]-iPx 2.4e-13  [Ky,H]-iPy 3.4e-13  [Kx,Ky]+iJ 6.0e-13  [J,Kx]-iKy 5.7e-14  [J,Ky]+iKx 6.1e-14  [J,Px]-iPy 5.6e-15  [J,H] 9.3e-15  [Px,H] 1.1e-16  [S,M] 5.5e-15
+(b) (c1) R7-1 printed sign: -(1/2){H,X} + eps P S/(M+H): M_min = 0.8499777351 (doublet bound mass target 0.85)
+    [Kx,Px]-iH 2.0e+00  [Kx,Py] 2.1e-15  [Ky,Py]-iH 2.0e+00  [Kx,H]-iPx 2.0e+00  [Ky,H]-iPy 2.0e+00  [Kx,Ky]+iJ 1.6e+00  [J,Kx]-iKy 5.7e-14  [J,Ky]+iKx 6.1e-14  [J,Px]-iPy 5.6e-15  [J,H] 9.3e-15  [Px,H] 1.1e-16  [S,M] 5.5e-15
+(b) (c2) spin term dropped: M_min = 0.8499777351 (doublet bound mass target 0.85)
+    [Kx,Px]-iH 6.9e-15  [Kx,Py] 2.1e-15  [Ky,Py]-iH 6.8e-15  [Kx,H]-iPx 2.4e-13  [Ky,H]-iPy 3.4e-13  [Kx,Ky]+iJ 7.8e-01  [J,Kx]-iKy 5.7e-14  [J,Ky]+iKx 6.1e-14  [J,Px]-iPy 5.6e-15  [J,H] 9.3e-15  [Px,H] 1.1e-16  [S,M] 5.5e-15
+(b) (c3) single odd rank-one g_x channel (not rotation invariant): M_min = 0.8499777351 (doublet bound mass target 0.85)
+    [Kx,Px]-iH 6.1e-15  [Kx,Py] 1.7e-15  [Ky,Py]-iH 5.9e-15  [Kx,H]-iPx 1.3e-01  [Ky,H]-iPy 2.6e-01  [Kx,Ky]+iJ 9.6e-02  [J,Kx]-iKy 4.2e-01  [J,Ky]+iKx 4.2e-01  [J,Px]-iPy 5.6e-15  [J,H] 4.2e-01  [Px,H] 8.7e-17  [S,M] 3.8e-01
+(b) time 23.4s

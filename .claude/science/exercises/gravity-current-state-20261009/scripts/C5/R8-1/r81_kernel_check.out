@@ -1,0 +1,4 @@
+lam = -3.1715115680, bound mass = 0.850000000000
+P = 0.0: max|Nystrom - kernel| = 6.8e-15 (scale 7.2e-04); min eig M = 0.850000000000
+P = 0.4: max|Nystrom - kernel| = 7.3e-15 (scale 6.7e-04); min eig M = 0.850000000000
+P = 1.0: max|Nystrom - kernel| = 6.2e-15 (scale 5.0e-04); min eig M = 0.850000000000

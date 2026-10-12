@@ -1,0 +1,8 @@
+(A) runner-style first-quantized odd spectrum at P=0: [ 2.30737583  3.69672499 14.35589917]
+(A) Fock prefactor 0.50, P=0 spectrum: [ 2.30737583  3.69672499 14.35589917] | max diff to runner = 7.1e-15
+(A) Fock prefactor 0.25, P=0 spectrum: [2.29438517 3.67652273 9.2090921 ] | max diff to runner = 5.1e+00
+(A) k'=1 k=1 : Fock(1/2) <pair|.|pair> = +0.7400 ; first-quantized <A'|W|A> = +0.7400 ; W(k',k) = +0.3700
+(A) k'=2 k=1 : Fock(1/2) <pair|.|pair> = +1.4800 ; first-quantized <A'|W|A> = +1.4800 ; W(k',k) = +0.7400
+(A) k'=1 k=2 : Fock(1/2) <pair|.|pair> = +1.4800 ; first-quantized <A'|W|A> = +1.4800 ; W(k',k) = +0.7400
+(B) generic exchange-symmetric kernel, Fock prefactor 0.50 : max |Fock - first-quantized antisym| = 4.97e-16
+(B) generic exchange-symmetric kernel, Fock prefactor 0.25 : max |Fock - first-quantized antisym| = 1.27e+00

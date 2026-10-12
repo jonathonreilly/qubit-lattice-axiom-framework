@@ -3509,9 +3509,6 @@ Readings:
 - **P = Q is an extra physical identification**, not a consequence of the Lattice axiom.
 - **Sokolov packing is a formal route only.** The full lattice operator, its domain and its faster-than-power tails were not shown. The exp(−0.8√r) fit is only three points, and a power fit is better.
 
-**R7-3:** referee relaunched after a stream error (16:03Z).
-
-**R8-3 (covariant smeared CQ):** worker readings are "class 𝒞 (covariant smeared Gaussian CQ) EXCLUDED, internally inconsistent" (the trilemma: Newton plus finite radiation imply infinite vacuum excitation), and OPEN overall, with a preferred-frame route left. Referee running (launched 16:02Z).
 
 ### C5 Round 8, items 4–5 (pre-registered 16:06Z; launched now)
 
@@ -3540,3 +3537,37 @@ Readings:
 - **PASS:** an explicit gauge-invariant box law with an exact Ward identity whose one-loop photon and electron cones agree to below 1e-15 without tuning, checked.
 - **FAIL:** a no-go that gauge invariance plus box confinement of the vertex is impossible in a stated class, or a computed unsuppressed one-loop cone split (refereed).
 - **INCONCLUSIVE:** otherwise.
+
+### C5 Round 7–8 referee results, part 3 (recorded 16:25Z)
+
+**R7-3 (exact momentum on ⊗M₂) — CONFIRMED WITH CORRECTIONS. SUGGESTED, with derived parts.**
+- **Route A (Kitaev).** On the flux-free invariant sector of a one-qubit-per-site Kitaev brick-wall model, a spin-string image of the CAR witness has exact additive cell momentum at every quasiparticle number. It also has reproducibly non-forward, umklapp-free 2→2 scattering. Super-polynomial locality is plausible but not norm-certified. The vison-pair defect scatters non-forwardly.
+- **Lemma S** rigorously excludes bounded additive lifts for a translation-covariant scalar flat-band defect with a nonzero non-forward kernel.
+- **Lemmas I and L** (the hard-core Fredholm deficit, and the continuity obstruction) hold under their hypotheses.
+- **Route B** keeps the two-body S-matrix under its rank-one dressing. Full-spin quasi-locality and N ≥ 3 are open.
+- **No all-sector ⊗M₂ witness, and no general fermion-encoding no-go.**
+
+**R8-2 (edge-mode universality) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE** against the physical PASS criterion.
+- **Confirmed:**
+  - R7-1's literal band has exactly 2^d − 1 extra mass-m corner valleys.
+  - A monotone edge can remove them, but the edge threshold is at most √(m² + b²)/a.
+  - For free number-conserving matter there is a smooth, quasi-local, symmetric, Hermitian box-plus-edge stress with an exact linear Ward identity. Its energy integral is H, and its first moment is R7-1's boost on box states.
+  - Lemma U: continuity forces box–edge matrix elements.
+  - **Theorem E:** under a uniform lapse, Ṗ_i = −g_j[δ_ij H + dΓ(ε A_ij)], with A = Hess(ε²/2) − I and a zone mean of −I. So every finite periodic band has states that fall non-universally.
+- **η = 0 holds only as a proxy** for free box packets at linear order. No universally coupled interacting stress or bound-body Eötvös observable was built.
+
+**R8-3 (covariant smeared CQ) — NOT CONFIRMED as class-wide EXCLUDED, so OPEN, with a conditional no-go.**
+- **The conditional no-go.** At golden-rule order, consider a translation- and Lorentz-invariant linearized Gaussian CQ model with:
+  - a common scalar stress form factor (or a nonzero GR-normalized spin-2 one);
+  - a retarded propagator;
+  - a pointwise decoherence–diffusion bound;
+  - additive decoherence.
+
+  Such a model cannot simultaneously keep the light-cone coupling, give finite radiation, and have a finite vacuum-excitation rate.
+- **What this excludes:** e^{ℓ²□}, continuous bounded scalar factors in that subclass, and (conditionally) ultra-local OWD kernels with positive spin-2 weight.
+- **Not excluded:**
+  - general non-Markovian or correlated Gaussian histories;
+  - OWD as a framework;
+  - trace-only or spin-separated kernels;
+  - light-cone-renormalized distributions;
+  - jump, non-Gaussian or mediator constructions.

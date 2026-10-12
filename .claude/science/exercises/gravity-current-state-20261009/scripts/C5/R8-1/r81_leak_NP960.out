@@ -1,0 +1,10 @@
+M spectrum min = 0.8500000000 (target 0.85); NP = 960 on [-2.4, 2.4), NQ = 241
+(i) bound-state packet, P-support |P| < 0.25; exact range eta* = asinh(Pi1/M_b) - asinh(a/M_b) = 0.3674
+    eta = 0.10 : ||U_lat - U_BT|| psi = 4.91e-08   bound 2||(1-E)psi|| = 0.00e+00   (BT integrator vs analytic transport 1.2e-06)
+    eta = 0.20 : ||U_lat - U_BT|| psi = 4.76e-08   bound 2||(1-E)psi|| = 0.00e+00   (BT integrator vs analytic transport 1.8e-06)
+    eta = 0.30 : ||U_lat - U_BT|| psi = 5.61e-08   bound 2||(1-E)psi|| = 0.00e+00   (BT integrator vs analytic transport 2.2e-06)
+    eta = 0.37 : ||U_lat - U_BT|| psi = 6.88e-08   bound 2||(1-E)psi|| = 0.00e+00   (BT integrator vs analytic transport 2.6e-06)
+    eta = 0.45 : ||U_lat - U_BT|| psi = 9.99e-08   bound 2||(1-E)psi|| = 2.09e-01   (BT integrator vs analytic transport 2.8e-06)
+    eta = 0.60 : ||U_lat - U_BT|| psi = 2.35e-03   bound 2||(1-E)psi|| = 1.18e+00   (BT integrator vs analytic transport 3.7e-06)
+    eta = 0.80 : ||U_lat - U_BT|| psi = 4.95e-02   bound 2||(1-E)psi|| = 1.88e+00   (BT integrator vs analytic transport 4.7e-06)
+    eta = 1.00 : ||U_lat - U_BT|| psi = 1.33e-01   bound 2||(1-E)psi|| = 2.00e+00   (BT integrator vs analytic transport 5.8e-06)

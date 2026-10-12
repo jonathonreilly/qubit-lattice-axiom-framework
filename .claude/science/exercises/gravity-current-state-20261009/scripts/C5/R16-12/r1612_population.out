@@ -1,0 +1,20 @@
+m = 0.3: S(1.4): min one-quantum energy carrying a defect = 1.4427/a = 1.761e+19 GeV
+    T_CMB    : Boltzmann exponent eps/T = 7.499e+31  -> occupation ~ 10^(-3.257e+31)
+    1 TeV    : Boltzmann exponent eps/T = 1.761e+16  -> occupation ~ 10^(-7.650e+15)
+    1e16 GeV : Boltzmann exponent eps/T = 1.761e+03  -> occupation ~ 10^(-7.650e+02)
+    1e19 GeV : Boltzmann exponent eps/T = 1.761e+00  -> occupation ~ 10^(-7.650e-01)
+m = 0.3: G(1.4): min one-quantum energy carrying a defect = 1.4921/a = 1.822e+19 GeV
+    T_CMB    : Boltzmann exponent eps/T = 7.756e+31  -> occupation ~ 10^(-3.368e+31)
+    1 TeV    : Boltzmann exponent eps/T = 1.822e+16  -> occupation ~ 10^(-7.912e+15)
+    1e16 GeV : Boltzmann exponent eps/T = 1.822e+03  -> occupation ~ 10^(-7.912e+02)
+    1e19 GeV : Boltzmann exponent eps/T = 1.822e+00  -> occupation ~ 10^(-7.912e-01)
+m = 0.0: S(1.4): min one-quantum energy carrying a defect = 1.4111/a = 1.723e+19 GeV
+    T_CMB    : Boltzmann exponent eps/T = 7.335e+31  -> occupation ~ 10^(-3.186e+31)
+    1 TeV    : Boltzmann exponent eps/T = 1.723e+16  -> occupation ~ 10^(-7.482e+15)
+    1e16 GeV : Boltzmann exponent eps/T = 1.723e+03  -> occupation ~ 10^(-7.482e+02)
+    1e19 GeV : Boltzmann exponent eps/T = 1.723e+00  -> occupation ~ 10^(-7.482e-01)
+m = 0.0: G(1.4): min one-quantum energy carrying a defect = 1.4616/a = 1.784e+19 GeV
+    T_CMB    : Boltzmann exponent eps/T = 7.598e+31  -> occupation ~ 10^(-3.300e+31)
+    1 TeV    : Boltzmann exponent eps/T = 1.784e+16  -> occupation ~ 10^(-7.750e+15)
+    1e16 GeV : Boltzmann exponent eps/T = 1.784e+03  -> occupation ~ 10^(-7.750e+02)
+    1e19 GeV : Boltzmann exponent eps/T = 1.784e+00  -> occupation ~ 10^(-7.750e-01)

@@ -5651,3 +5651,14 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
 - **Expectation.**
   - α₁ and α₂ vanish at linear order for both routes, which are instantaneous and Newtonian at zero frequency, and are suppressed at second order.
   - Both PASS. The likeliest failure is α₂ for E2's frame-tied friction.
+- **R16-12 (W7 at degree 3): worker reading OPEN.** All results are at leading order in the Killing sector of class 𝒞.
+  - **Theorem T3, translation sector.** (β) works: an h-linear singular momentum-constraint term cancels R16-8's term, with its helicity-0 condition fixed by the W1 stress. Lemma J3: this is the JJ repair.
+    - Closure is weak only, with 1/r² structure functions.
+    - Lemma C: every defect-carrying mode must be subluminal. S/G pass and L-box fails.
+  - **Lemma W.** Φ_c = {P⁰_c, W}, so whether a term counts as (α) or (β) depends on the variables chosen.
+  - **Theorem B3, boost sector (no-go in 𝒞).** The standard {K, H} = P^tot forces a world-line Coulomb kernel X_T ∝ 1/(q·v), which is unbounded. So (β) fails in 𝒞.
+  - **Escapes outside 𝒞:** a non-local H, boost world-line kernels, degree-4 shells, canonical relocations, auxiliary fields.
+  - **Population.** Defect quanta carry ≥ 1.7e19 GeV, so their thermal occupation is negligible below ~1e19 GeV.
+  - **Prices:** P-W7K, P-W7sf, P-W7v.
+
+  Referee running.

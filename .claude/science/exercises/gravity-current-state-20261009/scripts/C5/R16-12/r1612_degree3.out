@@ -1,0 +1,50 @@
+C5 R16-12 script (r1612_degree3.py): degree-3 Killing-sector closure, d = 3, m = 0.3
+
+(1) translation sector {P_c^tot, H} at degree 3, weak, tau = 0, sigma = W1 forward stress (eps/2) v v
+    columns: law, k, c, max residual over 200 random qhat, max |q| |A| (bounded = degree 0), max |q|^2|B|/|q.Delta_c|,
+    JJ check: max | q.A - (1/2)(q.Delta_c) v | / |q|  (A's divergence vs the analytic JJ repair)
+  S(1.4)     k=[1.6 1.6 0. ] c=0: |v|=0.3351 resid 8.9e-16; max|A| 5.933; max|q|^2|B|/|q.D| 0.531; JJ mismatch 7.5e-09
+  S(1.4)     k=[1.6 1.6 0. ] c=1: |v|=0.3351 resid 8.6e-16; max|A| 5.915; max|q|^2|B|/|q.D| 0.531; JJ mismatch 1.5e-09
+  G(1.4)     k=[2.  0.3 0.2] c=0: |v|=0.7970 resid 1.1e-15; max|A| 1.903; max|q|^2|B|/|q.D| 0.810; JJ mismatch 8.7e-10
+  G(1.4)     k=[ 2.6  0.1 -0.4] c=0: |v|=0.2284 resid 8.4e-16; max|A| 0.669; max|q|^2|B|/|q.D| 0.515; JJ mismatch 1.7e-10
+  G(1.4)     k=[1.6 1.6 0. ] c=0: |v|=0.9908 resid 1.3e-15; max|A| 0.037; max|q|^2|B|/|q.D| 0.981; JJ mismatch 2.8e-11
+  G(1.4)     k=[1.6 1.6 0. ] c=1: |v|=0.9908 resid 9.6e-16; max|A| 0.037; max|q|^2|B|/|q.D| 0.971; JJ mismatch 4.5e-11
+  G(1.4)     k=[ 2.3 -1.9  0.7] c=0: |v|=0.7001 resid 8.3e-16; max|A| 2.642; max|q|^2|B|/|q.D| 0.701; JJ mismatch 8.5e-10
+  G(1.4)     k=[ 2.3 -1.9  0.7] c=1: |v|=0.7001 resid 8.6e-16; max|A| 1.695; max|q|^2|B|/|q.D| 0.698; JJ mismatch 8.4e-10
+  L-box(2.0) k=[ 2.6  0.1 -0.4] c=0: |v|=3.6229 resid 2.5e-13; max|A| 277.244; max|q|^2|B|/|q.D| 229.885; JJ mismatch 3.7e-08
+  L-box(2.0) k=[ 2.3 -1.9  0.7] c=0: |v|=0.9738 resid 7.2e-16; max|A| 40.201; max|q|^2|B|/|q.D| 0.952; JJ mismatch 1.5e-08
+
+(2) TT (helicity-2) denominators: B_TT ~ delta sigma_TT / (|q|^2 - omega^2). min over qhat of 1-(qhat.v)^2
+  S(1.4)     k=[2.  0.3 0.2]: |v| = 0.9700, min_qhat (1-(qhat.v)^2) = +0.0591  (no Cherenkov cone)
+  S(1.4)     k=[ 2.6  0.1 -0.4]: |v| = 0.9151, min_qhat (1-(qhat.v)^2) = +0.1627  (no Cherenkov cone)
+  S(1.4)     k=[1.6 1.6 0. ]: |v| = 0.3351, min_qhat (1-(qhat.v)^2) = +0.8877  (no Cherenkov cone)
+  S(1.4)     k=[ 2.3 -1.9  0.7]: |v| = 0.9840, min_qhat (1-(qhat.v)^2) = +0.0320  (no Cherenkov cone)
+  G(1.4)     k=[2.  0.3 0.2]: |v| = 0.7970, min_qhat (1-(qhat.v)^2) = +0.3650  (no Cherenkov cone)
+  G(1.4)     k=[ 2.6  0.1 -0.4]: |v| = 0.2284, min_qhat (1-(qhat.v)^2) = +0.9479  (no Cherenkov cone)
+  G(1.4)     k=[1.6 1.6 0. ]: |v| = 0.9908, min_qhat (1-(qhat.v)^2) = +0.0184  (no Cherenkov cone)
+  G(1.4)     k=[ 2.3 -1.9  0.7]: |v| = 0.7001, min_qhat (1-(qhat.v)^2) = +0.5099  (no Cherenkov cone)
+  L-box(2.0) k=[2.  0.3 0.2]: |v| = 0.9893, min_qhat (1-(qhat.v)^2) = +0.0213  (no Cherenkov cone)
+  L-box(2.0) k=[ 2.6  0.1 -0.4]: |v| = 3.6229, min_qhat (1-(qhat.v)^2) = -12.1246  (Cherenkov cone: B_TT pole unless tau_TT ~ 1/|q| (non-local H))
+  L-box(2.0) k=[1.6 1.6 0. ]: |v| = 0.9913, min_qhat (1-(qhat.v)^2) = +0.0174  (no Cherenkov cone)
+  L-box(2.0) k=[ 2.3 -1.9  0.7]: |v| = 0.9738, min_qhat (1-(qhat.v)^2) = +0.0518  (no Cherenkov cone)
+
+(2b) TT check at a superluminal L-box edge mode: (beta) solve near the cone qhat.v = 1
+  angle from cone 1e-01: qhat.v = 0.64737, |q|^2 |B| = 1.571e-02, resid 3.9e-15
+  angle from cone 1e-02: qhat.v = 0.96513, |q|^2 |B| = 1.933e-01, resid 5.8e-14
+  angle from cone 1e-03: qhat.v = 0.99652, |q|^2 |B| = 1.972e+00, resid 6.9e-13
+
+(3) boost sector {K_b^tot, H} = P_b^tot at degree 3 (scalar/helicity-0 part, rigid):
+    forced: Y_qq = b_T,  X_T = 2 i b_T / omega  ->  |q|^2 |X_T| = |qhat.Delta_b| / |qhat.v|
+    solve the weak equations numerically and approach the plane qhat.v = 0 at fixed qhat.Delta_b != 0
+  S(1.4) k=[1.6 1.6 0. ] b=0: qhat.v=3.3e-02: |q|^2|X_T|=9.08e+02 (vs 2ib_T/om: 9e-14, resid 5e-14); qhat.v=3.4e-03: |q|^2|X_T|=8.36e+03 (vs 2ib_T/om: 3e-12, resid 2e-14); qhat.v=3.4e-04: |q|^2|X_T|=8.28e+04 (vs 2ib_T/om: 9e-10, resid 8e-13); qhat.v=3.4e-05: |q|^2|X_T|=8.28e+05 (vs 2ib_T/om: 2e-07, resid 1e-11); qhat.v=3.4e-06: |q|^2|X_T|=8.28e+06 (vs 2ib_T/om: 1e-11, resid 4e-11); |qhat.Delta_b| = 27.734
+  G(1.4) k=[2.  0.3 0.2] b=0: qhat.v=8.0e-02: |q|^2|X_T|=7.38e+00 (vs 2ib_T/om: 8e-15, resid 5e-15); qhat.v=8.0e-03: |q|^2|X_T|=1.26e+02 (vs 2ib_T/om: 3e-13, resid 5e-14); qhat.v=8.0e-04: |q|^2|X_T|=1.31e+03 (vs 2ib_T/om: 2e-10, resid 2e-13); qhat.v=8.0e-05: |q|^2|X_T|=1.32e+04 (vs 2ib_T/om: 6e-09, resid 2e-12); qhat.v=8.0e-06: |q|^2|X_T|=1.32e+05 (vs 2ib_T/om: 1e-06, resid 1e-10); |qhat.Delta_b| = 1.051
+  G(1.4) k=[ 2.6  0.1 -0.4] b=0: qhat.v=2.3e-02: |q|^2|X_T|=2.17e+02 (vs 2ib_T/om: 1e-13, resid 2e-13); qhat.v=2.3e-03: |q|^2|X_T|=2.35e+03 (vs 2ib_T/om: 4e-11, resid 4e-12); qhat.v=2.3e-04: |q|^2|X_T|=2.36e+04 (vs 2ib_T/om: 2e-09, resid 2e-12); qhat.v=2.3e-05: |q|^2|X_T|=2.36e+05 (vs 2ib_T/om: 1e-07, resid 5e-10); qhat.v=2.3e-06: |q|^2|X_T|=2.36e+06 (vs 2ib_T/om: 1e-05, resid 4e-11); |qhat.Delta_b| = 5.400
+  G(1.4) k=[1.6 1.6 0. ] b=0: qhat.v=9.9e-02: |q|^2|X_T|=5.44e-01 (vs 2ib_T/om: 6e-15, resid 4e-15); qhat.v=9.9e-03: |q|^2|X_T|=6.00e+00 (vs 2ib_T/om: 4e-13, resid 1e-13); qhat.v=9.9e-04: |q|^2|X_T|=6.06e+01 (vs 2ib_T/om: 6e-11, resid 4e-13); qhat.v=9.9e-05: |q|^2|X_T|=6.06e+02 (vs 2ib_T/om: 2e-08, resid 4e-12); qhat.v=9.9e-06: |q|^2|X_T|=6.06e+03 (vs 2ib_T/om: 9e-12, resid 7e-11); |qhat.Delta_b| = 0.060
+
+(4) scalar-sector consistency is an identity: sigma_qq needed = eps omega^2/(2|q|^2) = qhat.sigma0.qhat
+  S(1.4): needed 0.154855723768, W1 forward stress 0.154855723768, difference 2.8e-17
+  G(1.4): needed 0.000245465059, W1 forward stress 0.000245465059, difference 3.0e-18
+
+(5) finite-q resonances (TT, helicity 2): does |eps(k+q/2)-eps(k-q/2)| reach omega_g(q) = |2 sin(q/2)| anywhere?
+  S(1.4) k=[ 2.6  0.1 -0.4]: max |omega_m|/omega_g over 2e5 random q = 0.908; fraction with ratio>1: 0.0000; small-|q| (<0.3) max ratio 0.896
+  G(1.4) k=[ 2.6  0.1 -0.4]: max |omega_m|/omega_g over 2e5 random q = 0.538; fraction with ratio>1: 0.0000; small-|q| (<0.3) max ratio 0.220

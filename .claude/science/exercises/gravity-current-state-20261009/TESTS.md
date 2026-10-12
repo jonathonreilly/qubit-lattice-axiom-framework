@@ -3282,7 +3282,7 @@ Readings, per route:
 - **EXCLUDED:** violates a stated bound or is internally inconsistent (refereed).
 - **OPEN:** otherwise.
 
-### C5 Rounds 5–6 referee results (recorded 15:10Z)
+### C5 Rounds 5–6 referee results (recorded 15:07Z)
 
 **R5-2 (infinite-orbit kernels) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.**
 - **The exact reduction holds.** For shell-constant weights f_m = O(m^−A), A > 5, Haar-rms relative error O((a/ℓ)²) is equivalent to all of the following:
@@ -3342,7 +3342,7 @@ Readings, per route:
   - non-regular strong-coupling emergence;
   - non-local/holographic mechanisms.
 
-### C5 Round 7, items 3–4 (pre-registered 15:12Z; launched now)
+### C5 Round 7, items 3–4 (pre-registered 15:08Z; launched now)
 
 **R7-3. Spin-algebra version of R6-1's witness: exact additive momentum with scattering on ⊗M₂(C).**
 - The R6-1 referee confirms W in the graded CAR category but not in the fixed ⊗_{Z^d} M₂ spin class.

@@ -8571,7 +8571,7 @@
         }
       ],
       "length": 2,
-      "max_transitive_descendants": 56,
+      "max_transitive_descendants": 65,
       "nodes": [
         {
           "audit_status": "unaudited",
@@ -8580,7 +8580,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
           "title": "A local compensation that gives a common field/record limit",
-          "transitive_descendants": 56
+          "transitive_descendants": 65
         },
         {
           "audit_status": "unaudited",
@@ -8589,7 +8589,7 @@
           "effective_status": "unaudited",
           "note_path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
           "title": "Local pair form of the compensated Hamiltonian",
-          "transitive_descendants": 56
+          "transitive_descendants": 65
         }
       ],
       "requires_lemma_extraction": false

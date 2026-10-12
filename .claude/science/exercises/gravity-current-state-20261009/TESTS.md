@@ -4486,3 +4486,22 @@ Readings:
   - Twisted N=4 is open.
 
   Referee running.
+
+### C5 Round 12, item 6 (pre-registered 19:37Z; launched now; conditional on R12-3, whose referee is running)
+
+**R12-6. The twisted N=4 Kähler–Dirac gauge multiplet on Z³ × ℝ with charged box matter: the one lattice-SUSY route R12-3's worker leaves open.**
+- R12-3's worker (unrefereed) finds:
+  - the BF gauge multiplet is doubler-free but has integer-spin photinos;
+  - Theorem U blocks spin-½ in Nicolai form;
+  - completing with a complex scalar σ and a site fermion η gives a Kähler–Dirac photino that is doubler-free (K² = Δ) and untwistable, i.e. Catterall-like N=4 content.
+- Build its Hamiltonian on Z³ × ℝ with box symbols. Couple it to charged Clifford-flat box matter (Lemma J content) with an exact supercharge and Ward identity. Then:
+  - (a) Is H = {Q, Q†} local and bounded below?
+  - (b) Is the photino spin-½ after untwisting, with no doublers?
+  - (c) Compute the one-loop c_e − c_γ, including the dressing terms R12-3 omitted.
+  - (d) Do the 6 massless neutral scalars conflict with fifth-force bounds, and does giving them mass break the protection?
+  - (e) Theorem L says no lattice supercharge fixes c_γ/c_e. Does N=4's extended algebra change that?
+
+Readings:
+- **PASS:** an explicit local Hamiltonian law with an exact supercharge, Ward identity, doubler-free spin-½ photino, and a one-loop c_e − c_γ that vanishes or is protected, checked.
+- **FAIL:** a refereed no-go in the N=4 Kähler–Dirac class (locality, spin, or the split).
+- **INCONCLUSIVE:** otherwise.

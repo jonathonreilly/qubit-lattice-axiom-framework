@@ -4514,3 +4514,12 @@ Readings:
   - Bounded sub-results: the curvature-kick class is EXCLUDED, and random-time insertion matches the Chandra-excluded foam.
 
   Referee running.
+- **R12-4 (unified CQ no-go):** worker reading DERIVED.
+  - Lemma K: a non-demolition record gives σ̄·P̄ ≥ ħ²|F|²/4 for any stationary state.
+  - Theorem U: matter decoherence and the classical metric record cannot both be locally finite near the cone, in class 𝒰 (contains T_E and T_u).
+  - Outside the class:
+    - a start time;
+    - new route E2, frame friction on gravitational waves (γ ≈ H₀, within the LIGO damping bound).
+  - Minimal price: a preferred frame plus one cone regulator.
+
+  Referee running.

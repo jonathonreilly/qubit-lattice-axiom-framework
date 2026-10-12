@@ -1,0 +1,65 @@
+[1] felt-field product bound, random unsymmetrized (f,J) spectra at +p and -p
+    convention: S_XY(w)=int e^{iwt}<X(t)Y(0)>, Hermitian PSD; C_XY(w)=S_XY(w)-S_YX(-w)
+    draws=200000  min ratio sigma_bar*P/(|C|^2/4) = 1.013185  (>=1 required)  violations=0
+    explicit equality case: ratio = 1.000000000000
+    P=   1.0: min felt noise allowed = 2.5000e-01; additive floor |G||C| = 5.0; ratio 5.00e-02; M=|G|^2P=25.0; sigma*M/(|G|^2|C|^2/4)=1.000
+    P=  10.0: min felt noise allowed = 2.5000e-02; additive floor |G||C| = 5.0; ratio 5.00e-03; M=|G|^2P=250.0; sigma*M/(|G|^2|C|^2/4)=1.000
+    P= 100.0: min felt noise allowed = 2.5000e-03; additive floor |G||C| = 5.0; ratio 5.00e-04; M=|G|^2P=2500.0; sigma*M/(|G|^2|C|^2/4)=1.000
+
+[2] non-Gaussian finite-dimensional stationary system: |C_XY(w)| <= 2 sqrt(sbar_X sbar_Y) per frequency bin
+    bins tested=1480  min [2 sqrt(sx sy)/|C|] = 1.002730  violations=0
+
+[3] Gaussian QMFS meter on one frequency shell (R10-3 Lemma D form), exact correlators
+    max |<[J(t),J(0)]>| = 0.00e+00  (self-commuting record)
+    <J(t)J(0)> = cos(wt): max dev 0.00e+00  -> symmetric spectrum P(w)=P(-w)
+    f=+1.0x_a+0.0x_b : emission weight S_ff(-w)=0.000  |C|=0.500  sigma_bar*P/(|C|^2/4)=2.0000
+    f=+1.0x_a+0.3x_b : emission weight S_ff(-w)=0.045  |C|=0.350  sigma_bar*P/(|C|^2/4)=4.4490
+    f=+0.5x_a-0.5x_b : emission weight S_ff(-w)=0.125  |C|=0.500  sigma_bar*P/(|C|^2/4)=1.0000
+    f=+1.0x_a+1.0x_b : emission weight S_ff(-w)=0.500  |C|=0.000  sigma_bar*P/(|C|^2/4)=inf
+
+[4] cone non-integrability: product of truncated integrals over s_min<|s|<delta (one side)
+    floor split  P=|s|      (M~1/|s|, sig~1/|s|)  [smin=1e-04: Isig=2.3 IM=9.21 prod/bound=1.000]  [smin=1e-08: Isig=4.61 IM=18.4 prod/bound=1.000]  [smin=1e-16: Isig=9.21 IM=36.8 prod/bound=1.000]  [smin=1e-32: Isig=18.4 IM=73.7 prod/bound=1.000]
+    record-light P=|s|^1.5  (M integrable)        [smin=1e-04: Isig=49.5 IM=1.98 prod/bound=4.621]  [smin=1e-08: Isig=5e+03 IM=2 prod/bound=117.859]  [smin=1e-16: Isig=5e+07 IM=2 prod/bound=294705.771]  [smin=1e-32: Isig=5e+15 IM=2 prod/bound=7367644456182.857]
+    matter-light P=|s|^0.5  (sig integrable)      [smin=1e-04: Isig=0.495 IM=198 prod/bound=4.621]  [smin=1e-08: Isig=0.5 IM=2e+04 prod/bound=117.859]  [smin=1e-16: Isig=0.5 IM=2e+08 prod/bound=294705.771]  [smin=1e-32: Isig=0.5 IM=2e+16 prod/bound=7367644456182.857]
+    log split    P=|s|ln^2  (M integrable)        [smin=1e-04: Isig=0.226 IM=354 prod/bound=3.769]  [smin=1e-08: Isig=0.237 IM=2.44e+03 prod/bound=6.824]  [smin=1e-16: Isig=0.243 IM=1.81e+04 prod/bound=12.956]  [smin=1e-32: Isig=0.247 IM=1.39e+05 prod/bound=25.232]
+    eps-band     P=eps*|s| (|s|<1e-3) else |s|    [smin=1e-04: Isig=5.76e+03 IM=6.91 prod/bound=1875.613]  [smin=1e-08: Isig=2.88e+04 IM=6.91 prod/bound=2344.288]  [smin=1e-16: Isig=7.48e+04 IM=6.91 prod/bound=1524.148]  [smin=1e-32: Isig=1.67e+05 IM=6.91 prod/bound=850.460]
+
+[5] frame-tied 4D: local finiteness of d^4p/|s| near a regular null point (w0,k0)=(1,(1,0,0)), no Lorentz invariance used
+    vol fraction |s|<1e-01 = 4.3749e-01; fraction/(2x) = 2.1874  (constant => s is a local coordinate, density rho_s(0) finite > 0)
+    vol fraction |s|<1e-02 = 4.9252e-02; fraction/(2x) = 2.4626  (constant => s is a local coordinate, density rho_s(0) finite > 0)
+    vol fraction |s|<1e-03 = 4.9435e-03; fraction/(2x) = 2.4718  (constant => s is a local coordinate, density rho_s(0) finite > 0)
+    eta=1e-02: int_(eta<|s|<0.05) d^4p/|s| ~ V rho_s(0) 2 ln(0.05/eta) = 1.2683e-02  (diverges as eta->0)
+    eta=1e-04: int_(eta<|s|<0.05) d^4p/|s| ~ V rho_s(0) 2 ln(0.05/eta) = 4.8973e-02  (diverges as eta->0)
+    eta=1e-08: int_(eta<|s|<0.05) d^4p/|s| ~ V rho_s(0) 2 ln(0.05/eta) = 1.2155e-01  (diverges as eta->0)
+    eta=1e-16: int_(eta<|s|<0.05) d^4p/|s| ~ V rho_s(0) 2 ln(0.05/eta) = 2.6671e-01  (diverges as eta->0)
+    direct MC eta=1e-4: 4.8601e-02 vs shell estimate 4.8973e-02
+
+[6] stationary escape: frame friction gamma in G = g/(s + i gamma w), saturated split, both finite
+    gamma*w=1e-02: Isig=2.6492  IM=10.5967  2asinh(delta/gw)=10.5967  Isig/(kap*L)=1.0000 IM/(g^2 a L)=1.0000
+    gamma*w=1e-06: Isig=7.2543  IM=29.0173  2asinh(delta/gw)=29.0173  Isig/(kap*L)=1.0000 IM/(g^2 a L)=1.0000
+    gamma*w=1e-12: Isig=14.1621  IM=56.6483  2asinh(delta/gw)=56.6483  Isig/(kap*L)=1.0000 IM/(g^2 a L)=1.0000
+    gamma*w=1e-30: Isig=34.8853  IM=139.5414  2asinh(delta/gw)=139.5414  Isig/(kap*L)=1.0000 IM/(g^2 a L)=1.0000
+
+[7] Lorentz-invariant dressings of the massless pole near s=0 (one side, s in (s_min, 1))
+    (a) Maxwell-type stress loop Pi ~ c s^2 ln|s|: G = g/(s - g c s^2 ln|s|); |G| s -> g
+        s=1e-04: |G|*|s|/g = 0.999907905079  -> pole intact, int|G| ~ ln(1/s_min) = 9.2
+        s=1e-16: |G|*|s|/g = 1.000000000000  -> pole intact, int|G| ~ ln(1/s_min) = 36.8
+        s=1e-64: |G|*|s|/g = 1.000000000000  -> pole intact, int|G| ~ ln(1/s_min) = 147.4
+    (b) field-strength log, |G| = g/(|s|(1+alpha ln(1/|s|))): int|G| = ln(1+alpha ln(1/s_min))/alpha (ln ln divergence)
+        alpha=1e-01: ln(1/s_min)=23: num=11.9392 exact=11.9392; ln(1/s_min)=92: num=23.2337 exact=23.2337; ln(1/s_min)=368: num=36.3337 exact=36.3337; ln(1/s_min)=1474: num=49.9971 exact=49.9971
+        alpha=1e-02: ln(1/s_min)=23: num=20.7014 exact=20.7014; ln(1/s_min)=92: num=65.2846 exact=65.2846; ln(1/s_min)=368: num=154.4152 exact=154.4152; ln(1/s_min)=1474: num=275.6015 exact=275.6015
+    (c) absorptive threshold Im Sigma(0+) = c != 0 (Kramers-Kronig Re Sigma ~ (c/pi) ln|s|): pole destroyed, |G| ~ pi g/(c |ln|s||)
+        s_min=1e-04: int|G|^2 ds = 0.31273 (finite) ; |G|*|s| at s_min = 3.23e-05 (no 1/s pole -> no standard radiation zone; fails (R))
+        s_min=1e-16: int|G|^2 ds = 0.31274 (finite) ; |G|*|s| at s_min = 8.50e-18 (no 1/s pole -> no standard radiation zone; fails (R))
+        s_min=1e-64: int|G|^2 ds = 0.31274 (finite) ; |G|*|s| at s_min = 2.13e-66 (no 1/s pole -> no standard radiation zone; fails (R))
+
+[8] numbers
+    ell=1e-08 m: w=c/ell=3.00e+16 s^-1  L_damp(gamma=H0)=ln(2w/H0)=79.3  L_age=ln(w tH)=78.6
+    ell=2e-07 m: w=c/ell=1.50e+15 s^-1  L_damp(gamma=H0)=ln(2w/H0)=76.3  L_age=ln(w tH)=75.6
+    ell=1e-06 m: w=c/ell=3.00e+14 s^-1  L_damp(gamma=H0)=ln(2w/H0)=74.7  L_age=ln(w tH)=73.9
+    ell=5e-06 m: w=c/ell=6.00e+13 s^-1  L_damp(gamma=H0)=ln(2w/H0)=73.1  L_age=ln(w tH)=72.3
+    LIGO band 100 Hz: ln(2w/H0)=47.8
+    gamma=H0: GW amplitude loss over 40 Mpc = 0.452%
+    gamma=H0: GW amplitude loss over 1000 Mpc = 10.705%
+    gamma=H0: GW amplitude loss over 3000 Mpc = 28.801%
+    gamma=H0, 100 Hz: phase-velocity shift ~ gamma^2/(8 w^2) = 1.5e-42

@@ -2259,3 +2259,42 @@ So: can a gauge algebra with field-dependent generators remove the Killing-secto
 - Expected reading: FAIL (bounded).
 
 **Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.
+
+### Lane RFW results (2026-10-12, 01:48Z to 02:36Z)
+
+**Provenance.** Probes F1 (cohomology) and F2 (constructive) ran on Claude Opus 5.5 at xhigh (same model family). Both were refereed by codex gpt-5.6-sol at xhigh. Files: `agents/RFW_F{1,2}_*`; scripts in `scripts/RFW/`.
+
+**F2: CONFIRMED WITH CORRECTIONS. Bounded FAIL.**
+- **Setting.** K2's nearest-neighbour scalar on Z⁴. Its O(κ) pseudo-translation and symmetric stress are held fixed, up to local improvements and on-shell-trivial symmetries.
+- **Result.** No translation-covariant completion makes the action gauge invariant through O(κ²) using only h and φ. This holds at every finite range, and more generally for any completion that is C¹ at q = 0.
+- **How.** The constant-translation h·φ²·ξ coefficient already gives an impossible first-jet identity, for every finite range and every m² ≥ 0.
+- **Open:**
+  - altered leading generators;
+  - odd-field extensions;
+  - fermions;
+  - auxiliary or multiband matter;
+  - infinite towers;
+  - singular, non-local or quasi-local completions.
+
+**F1: NOT CONFIRMED as stated.** A narrow fixed-field/graded FAIL is established; the broad claim is INCONCLUSIVE.
+- **Hypotheses.**
+  - A fixed gravity–matter BV complex with a block-diagonal Killing action that preserves matter number and parity.
+  - A regular irreducible scalar/simple shell.
+  - A nonzero scalar translation symbol.
+  - A local, IR-normalized gauge map.
+  - The continuum e(4) bracket with c = 1.
+- **Established under these hypotheses.**
+  - The affine-Killing projection is invariant under diagonal field-dependent generators, open-algebra terms, field redefinitions, counterterms and seagulls.
+  - Locality fixes the orbital part of the rotation to the first moment of the translation.
+  - Tangency plus closure would force the shell into a complex quadric. That is incompatible with a nonzero finite Fourier kinetic symbol.
+  - Confirmed: the exact K2 scalar and fermion defects, the SLAC interior control, and the Hamiltonian tower.
+  - Stückelberg fields trivialize the class without fixing either shear coefficient.
+- **Not established.** The claimed FAIL for all local finite-field BV completions. That broader question stays INCONCLUSIVE.
+
+**Lane RFW: FAIL (bounded).** It is bounded to two things:
+- F2's fixed-O(κ)-data class for the K2 scalar;
+- F1's fixed-field, graded class.
+
+Still INCONCLUSIVE: altered leading generators, non-block-diagonal BV completions, multiband or auxiliary matter, and quasi-local tower actions.
+
+**Against the registered expectation:** FAIL (bounded), as expected. The obstruction sits entirely in the cos k factor (F2's Leibniz diagnostic). A clean theorem (F1's T1, quadric) holds under the narrowed hypotheses.

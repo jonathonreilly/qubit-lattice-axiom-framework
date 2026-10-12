@@ -1,0 +1,21 @@
+Independent reduced 1-jet system (no worker imports; A0 already eliminated):
+  continuum m2=0.00: residual=1.49012251322e-15 rank(M)=[np.int64(32)] span(T0)=9/10
+  continuum m2=0.25: residual=2.21367185812e-15 rank(M)=[np.int64(36)] span(T0)=10/10
+  continuum m2=1.00: residual=2.84421576785e-15 rank(M)=[np.int64(36)] span(T0)=10/10
+  continuum m2=3.00: residual=2.26405954813e-15 rank(M)=[np.int64(36)] span(T0)=10/10
+  lattice   m2=0.00: residual=0.493996821395 rank(M)=[np.int64(36)] span(T0)=10/10
+  lattice   m2=0.25: residual=0.497632295993 rank(M)=[np.int64(36)] span(T0)=10/10
+  lattice   m2=1.00: residual=0.508037575602 rank(M)=[np.int64(36)] span(T0)=10/10
+  lattice   m2=3.00: residual=0.402673900761 rank(M)=[np.int64(36)] span(T0)=10/10
+
+Jet-map ranks:
+  r=0: offsets=1, rank=1
+  r=1: offsets=9, rank=5
+  r=2: offsets=41, rank=5
+  r=3: offsets=129, rank=5
+
+Closed-form proportional-v witnesses:
+  m2=0.00: |shell|=(0,0), trig_error=4.44e-16, cos0_difference=(4+0j), |v1*v2^2|=5.19615242271
+  m2=0.25: |shell|=(0,0), trig_error=0, cos0_difference=(4.125+0j), |v1*v2^2|=5.86958713452
+  m2=1.00: |shell|=(0,0), trig_error=8.88e-16, cos0_difference=(4.5+0j), |v1*v2^2|=8.18823052562
+  m2=3.00: |shell|=(0,0), trig_error=8.88e-16, cos0_difference=(5.5+0j), |v1*v2^2|=16.8114036004

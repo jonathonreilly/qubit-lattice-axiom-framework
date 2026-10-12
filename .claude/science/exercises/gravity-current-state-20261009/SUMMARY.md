@@ -516,3 +516,17 @@ Details: `TESTS.md`, "Lane RZ results".
 **Status.** The E_g shear mass from free local matter stands. Removing it costs a tuning or an imposed rule.
 
 **Still open.** Field-dependent gauge completions with non-uniform strain, and multi-band matter.
+
+## 20. Lane RFW: does letting the gauge rules depend on the fields help? (owner, 2026-10-12)
+
+**In plain words: no, within the classes tested.** Refereed FAIL, bounded.
+- **The fix tried.** Letting gravity's gauge transformations depend on the metric and matter fields, the way GR's own nonlinear transformations do.
+- **Why it fails.** It does not remove the boost obstruction on the grid. The obstruction is a single factor, cos k, that lattice momenta carry and continuum momenta don't. The field-dependent corrections depend on the graviton's momentum. The defect depends on the matter's momentum. So they cannot cancel.
+- **The two other ways out:**
+  - Absorbing the defect with new gauge fields needs an endless tower of them.
+  - Adding compensating fields removes the obstruction, but then nothing fixes the shear masses.
+
+**Still open:**
+- changing the leading generators themselves;
+- multi-band matter;
+- quasi-local "perfect" actions.

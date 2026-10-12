@@ -1,0 +1,14 @@
+(a) dim span{W^j f_c : j <= n, c=0,1} (exact rational rank), n = 0..6
+   K2 scalar / C3 Hamiltonian scalar, f = sin k : [2, 4, 6, 8, 10, 12, 14]
+   K2 fermion, f = sin(2k)/2                   : [2, 4, 6, 8, 10, 12, 14]
+   (continuum control f = k would give dim 2 for all n: W(k) = Jk closes)
+
+(b) orbit period T(E) of the first-moment rotation flow, level cos k0 + cos k1 = E
+   E =  1.999  ->  T/2pi = 1.000250
+   E =  1.900  ->  T/2pi = 1.025810
+   E =  1.500  ->  T/2pi = 1.148756
+   E =  1.000  ->  T/2pi = 1.372881
+   E =  0.500  ->  T/2pi = 1.783303
+   E =  0.200  ->  T/2pi = 2.352716
+   E =  0.050  ->  T/2pi = 3.231362
+   (continuum: T/2pi = 1 for every orbit; lattice: T varies and diverges at the van Hove level E=0)

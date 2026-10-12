@@ -1,0 +1,7 @@
+== NN scalar, dressed pseudo-translation f = lambda(p) grad A ==
+m2=0.25: lambda = 1/2 (K2): residual 5.056e-01 (rank 360/400)
+        lambda(0)=1/2 off shell (19-dim even basis): residual 2.094e-14; |lambda| on shell: max 1.0e-14  -> degenerate (f = 0 on shell, trivial translation)
+        lambda(p*)=1/2 on shell (rest point):       residual 3.584e-01; |lambda| on shell: min 0.30 max 0.66
+m2=1.0: lambda = 1/2 (K2): residual 4.841e-01 (rank 360/400)
+        lambda(0)=1/2 off shell (19-dim even basis): residual 9.373e-15; |lambda| on shell: max 6.5e-15  -> degenerate (f = 0 on shell, trivial translation)
+        lambda(p*)=1/2 on shell (rest point):       residual 4.081e-01; |lambda| on shell: min 0.23 max 0.81

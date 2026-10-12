@@ -1,0 +1,22 @@
+d=3 box 5^3 stencil K7a : unknowns 375, eqs 540, GF(p) rank 369: ker_p = 6; affine Killing family rank 6, max|D xi_K| = 0
+d=3 box 5^3 stencil IMP : unknowns 375, eqs 210, GF(p) rank 210: ker_p = 165; affine Killing family rank 6, max|D xi_K| = 0
+d=3 box 5^3 stencil AVG : unknowns 375, eqs 252, GF(p) rank 248: ker_p = 127; affine Killing family rank 6, max|D xi_K| = 0
+d=3 box 5^3 stencil BAD : unknowns 375, eqs 540, GF(p) rank 369: ker_p = 6; affine Killing family rank 6, max|D xi_K| = 1
+
+d=3 box 6^3 stencil K7a : unknowns 648, eqs 990, GF(p) rank 642: ker_p = 6; affine Killing family rank 6, max|D xi_K| = 0
+d=3 box 6^3 stencil IMP : unknowns 648, eqs 486, GF(p) rank 486: ker_p = 162; affine Killing family rank 6, max|D xi_K| = 0
+d=3 box 6^3 stencil AVG : unknowns 648, eqs 540, GF(p) rank 502: ker_p = 146; affine Killing family rank 6, max|D xi_K| = 0
+d=3 box 6^3 stencil BAD : unknowns 648, eqs 990, GF(p) rank 642: ker_p = 6; affine Killing family rank 6, max|D xi_K| = 1
+
+d=4 box 4^4 stencil K7a : unknowns 1024, eqs 1632, SVD ker = 10, smallest nonzero sv 0.64, largest null sv 5.3e-15; affine Killing family rank 10, max|D xi_K| = 0
+d=4 box 4^4 stencil IMP : unknowns 1024, eqs 352, SVD ker = 674, smallest nonzero sv 25.3, largest null sv 2.3e-14; affine Killing family rank 10, max|D xi_K| = 0
+d=4 box 4^4 stencil AVG : unknowns 1024, eqs 312, SVD ker = 712, smallest nonzero sv 0.942, largest null sv 0.0e+00; affine Killing family rank 10, max|D xi_K| = 0
+d=4 box 4^4 stencil BAD : unknowns 1024, eqs 1632, SVD ker = 10, smallest nonzero sv 0.481, largest null sv 7.6e-15; affine Killing family rank 10, max|D xi_K| = 1
+
+d=4 box 5^4 stencil K7a : unknowns 2500, eqs 4400, SVD ker = 10, smallest nonzero sv 0.533, largest null sv 8.3e-15; affine Killing family rank 10, max|D xi_K| = 0
+d=4 box 5^4 stencil IMP : unknowns 2500, eqs 1600, SVD ker = 932, smallest nonzero sv 0.577, largest null sv 1.6e-13; affine Killing family rank 10, max|D xi_K| = 0
+d=4 box 5^4 stencil AVG : unknowns 2500, eqs 1296, SVD ker = 1205, smallest nonzero sv 0.261, largest null sv 4.6e-15; affine Killing family rank 10, max|D xi_K| = 0
+d=4 box 5^4 stencil BAD : unknowns 2500, eqs 4400, SVD ker = 10, smallest nonzero sv 0.399, largest null sv 1.2e-14; affine Killing family rank 10, max|D xi_K| = 1
+
+Expected: ker = d(d+1)/2 (6 in 3D, 10 in 4D) and residual 0 for K7a/IMP/AVG;
+BAD: rescaled first moment -> the affine family above is not Killing (residual 1); its own 10-dim kernel is the e(4) of a rescaled flat metric (see f1_killing_poly.out).

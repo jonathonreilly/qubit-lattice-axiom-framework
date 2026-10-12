@@ -1,0 +1,13 @@
+literal BQ box=(1.0,2.0): max S' = 1.000000, min S' = -1.036 -> axis v_max(m->0) = 1.036
+literal BQ box=(2.0,3.0): max S' = 1.000000, min S' = -4.320 -> axis v_max(m->0) = 4.320
+literal BQ box=(0.5,1.5): max S' = 1.000000, min S' = -1.000 -> axis v_max(m->0) = 1.000
+literal BQ box=(1.0,3.0): max S' = 1.000000, min S' = -1.793 -> axis v_max(m->0) = 1.793
+literal BQ box=(2.5,3.1): max S' = 1.000000, min S' = -8.580 -> axis v_max(m->0) = 8.580
+D1 symbol S(b=1.0): max s' = 1.000000, min s' = -1.000000
+D1 symbol S(b=1.2): max s' = 1.000000, min s' = -1.000000
+D1 symbol S(b=1.4): max s' = 1.000000, min s' = -1.000000
+G(b=0.6): max A = 0.000e+00, min A = -2.257, max h' = 1.000000
+G(b=1.0): max A = 0.000e+00, min A = -2.698, max h' = 1.000000
+G(b=1.4): max A = 0.000e+00, min A = -3.349, max h' = 1.000000
+G(b=2.0): max A = 0.000e+00, min A = -5.207, max h' = 1.000000
+G(b=2.6): max A = 0.000e+00, min A = -11.260, max h' = 1.000000

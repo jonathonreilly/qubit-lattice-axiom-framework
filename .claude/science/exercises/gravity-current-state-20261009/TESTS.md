@@ -5207,3 +5207,15 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **(d)** The vacuum's contribution to Λ̃ is exactly zero, with no tuning.
 
   Referee running.
+- **R16-2 (tuning count): worker reading OPEN.** The count is neither 1 nor one per spin class.
+  - **Lemma Q (proved).** The species shift is q_i²F_s(m_i), and the photon shift is one number that does not depend on λ. So one light-mass tuning aligns different charges only if F_s(0⁺) = 0. This is the gap in R13-7's single-species reading.
+  - **Lemma T′ (proved).** Tadpole and seagull bounds hold for any non-rising band with a nondecreasing photon symbol.
+  - **Lemma F (checked, not proved).** F_{1/2}(0⁺) ∈ [−16.1, −4.5] and F_0(0⁺) ∈ [−3.6, −1.6] on the stated edges. An overshooting edge has a zero, but it is superluminal along an axis.
+  - **Proposition C, given Lemma F.** One-loop e, u and d cones sit about 1e-3 apart. Each tuning is set to about 1e-16.
+    - one counterterm per species: N_s − n_max + 1 = **7** of the 9 SM charged fermions;
+    - one counterterm per (spin, |q|) class: **3**;
+    - with a superluminal over-rising edge: 2.
+  - **κ_γ is required.** No IR log was seen. Residuals are at least 36× below the comparator.
+  - **Prices:** P73 is refined to one tuning per (spin, |q|) class.
+
+  Referee running.

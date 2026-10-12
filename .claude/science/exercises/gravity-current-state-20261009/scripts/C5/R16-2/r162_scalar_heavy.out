@@ -1,0 +1,13 @@
+G(b=1.0) ph=None lam=0.05 N=96: seagull closed   -5.1427 | heavy closed form   -2.6129
+   m=  12.8  dc0*U =   -2.7332  [seagull part   -5.1427]
+   m=  25.6  dc0*U =   -2.6755  [seagull part   -5.1427]
+   m=  51.2  dc0*U =   -2.6448  [seagull part   -5.1427]
+   m= 102.4  dc0*U =   -2.6290  [seagull part   -5.1427]
+   Richardson in 1/m (51.2, 102.4):   -2.6132   vs closed form   -2.6129
+G(b=1.4) ph=1.0 lam=0.05 N=96: seagull closed   -4.5095 | heavy closed form   -2.2156
+   m=  12.8  dc0*U =   -2.3317  [seagull part   -4.5095]
+   m=  25.6  dc0*U =   -2.2765  [seagull part   -4.5095]
+   m=  51.2  dc0*U =   -2.2467  [seagull part   -4.5095]
+   m= 102.4  dc0*U =   -2.2313  [seagull part   -4.5095]
+   Richardson in 1/m (51.2, 102.4):   -2.2159   vs closed form   -2.2156
+elapsed 0.4s

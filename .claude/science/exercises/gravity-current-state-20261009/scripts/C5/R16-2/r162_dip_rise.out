@@ -1,0 +1,13 @@
+dip-rise beta=0.0 N=128 | max S' 1.000, min S' -1.000, max(S-k) +0.000e+00 (in C: True) | F(0.2) -11.9131 F(0.1) -11.9138 [tad -13.0273; bound -7.16 (lam 0.05)] rest  +1.114
+dip-rise beta=0.5 N=128 | max S' 1.000, min S' -1.500, max(S-k) +0.000e+00 (in C: True) | F(0.2) -12.6463 F(0.1) -12.6350 [tad -14.2165; bound -7.16 (lam 0.05)] rest  +1.582
+dip-rise beta=1.0 N=128 | max S' 1.106, min S' -2.000, max(S-k) +0.000e+00 (in C: True) | F(0.2) -13.5973 F(0.1) -13.5782 [tad -15.4057; bound -7.16 (lam 0.05)] rest  +1.827
+dip-rise beta=1.5 N=128 | max S' 1.581, min S' -2.500, max(S-k) +0.000e+00 (in C: True) | F(0.2) -14.7422 F(0.1) -14.7183 [tad -16.5949; bound -7.16 (lam 0.05)] rest  +1.877
+dip-rise beta=2.0 N=128 | max S' 2.062, min S' -3.000, max(S-k) +0.000e+00 (in C: True) | F(0.2) -16.0601 F(0.1) -16.0343 [tad -17.7841; bound -7.16 (lam 0.05)] rest  +1.750
+dip-rise beta=3.0 N=128 | max S' 3.042, min S' -4.000, max(S-k) +7.067e-02 (in C: False) | F(0.2) -19.1949 F(0.1) -19.1814 [tad -20.1624; bound -7.16 (lam 0.05)] rest  +0.981
+dip-rise beta=0.0 N=192 | max S' 1.000, min S' -1.000, max(S-k) +0.000e+00 (in C: True) | F(0.2) -11.9399 F(0.1) -11.9717 [tad -13.0273; bound -7.16 (lam 0.05)] rest  +1.056
+dip-rise beta=0.5 N=192 | max S' 1.000, min S' -1.500, max(S-k) +0.000e+00 (in C: True) | F(0.2) -12.6731 F(0.1) -12.6930 [tad -14.2165; bound -7.16 (lam 0.05)] rest  +1.524
+dip-rise beta=1.0 N=192 | max S' 1.106, min S' -2.000, max(S-k) +0.000e+00 (in C: True) | F(0.2) -13.6241 F(0.1) -13.6365 [tad -15.4057; bound -7.16 (lam 0.05)] rest  +1.769
+dip-rise beta=1.5 N=192 | max S' 1.581, min S' -2.500, max(S-k) +0.000e+00 (in C: True) | F(0.2) -14.7691 F(0.1) -14.7777 [tad -16.5949; bound -7.16 (lam 0.05)] rest  +1.817
+dip-rise beta=2.0 N=192 | max S' 2.062, min S' -3.000, max(S-k) +0.000e+00 (in C: True) | F(0.2) -16.0872 F(0.1) -16.0956 [tad -17.7840; bound -7.16 (lam 0.05)] rest  +1.688
+dip-rise beta=3.0 N=192 | max S' 3.042, min S' -4.000, max(S-k) +7.067e-02 (in C: False) | F(0.2) -19.2268 F(0.1) -19.2598 [tad -20.1624; bound -7.16 (lam 0.05)] rest  +0.903
+elapsed 17.2s

@@ -6,15 +6,15 @@ started_utc: 2026-10-11 16:00:52+00:00
 deadline_utc: 2026-10-12 16:00:52+00:00
 checkpoint_interval: 30m
 automation_id: toe-derivations-24-hour-campaign
-active_branch: physics-loop/toe-compact-patch-scattering-20261011
-worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/scattering_worktree
+active_branch: physics-loop/toe-microscopic-boost-20261012
+worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/microscopic_boost_worktree
 checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
-base_revision: a13caa4885f547c8d206265b031ba7649e539fd9
+base_revision: 3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: construct/check symmetric gapped spin chain; review integrated boost covariance; package accepted
-  boost/gap/Fock/current-closure results
+active_route: Construct and check the gapped spin chain and massive product carrier; package five accepted
+  flow/scattering results in a new stacked milestone.
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
@@ -22,21 +22,22 @@ milestone: Ten regular PRs open; PR9486 now includes reviewed nonisolated-mass, 
   joint-flow theorems
 strongest_unresolved_obligation: actual_microscopic_realization_and_justified_enlarged_channel_selection
 provisional_dependencies: selected_mass_and_centre_components_microscopic_H_current_implementations; no_full_GNS_exhaustion
-independent_checks: Seven new source results accepted conditionally after complete source-bound reviews and
-  root argument/evidence reads. Integrated boost covariance fresh review closing; concrete spin-chain derivation
-  active.
+independent_checks: Eight new source results accepted conditionally after full source-bound reviews and root
+  argument/evidence reads; three published in PR9486, five next to package. Concrete chain and massive carrier
+  remain unreviewed derivations.
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_open
-active_pr_status: regular_PR9486_open_isDraft_false_attached_mergeability_UNKNOWN_at_0706
-active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9486
+active_pr_status: Not yet opened; new branch created clean at the published PR9486 head.
+active_pr_url: null
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
 lock_refresh_before_utc: '2026-10-12T08:30:00Z'
-next_action: Finish integrated-covariance review; prepare four-note publication; establish exact concrete-chain
-  identities and actual spin GNS; then derive massive product carrier from actual covariance.
+next_action: Read and validate the unexecuted five-note preparation, canonically verify it in the new worktree,
+  and create a regular stacked PR. Independently check the concrete chain after freeze; continue the actual
+  massive-carrier derivation.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -57,6 +58,6 @@ index_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pu
 index_published_science_revision: b8402c17d337f371c0c73696ef170727de9ab5bd
 scattering_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9486
 scattering_published_science_revision: 3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe
-active_parent_pr_url: null
+active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9486
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162

@@ -8,24 +8,26 @@ edit or other-chat message. Preserve selected model and reasoning effort.
 
 T=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009
 S=T/resume_20261011 holds complete own source/review/control evidence.
-Active science worktree T/scattering_worktree, branch
-physics-loop/toe-compact-patch-scattering-20261011, clean published HEAD
-3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe, regular/open PR9486, basea13caa4885f547c8d206265b031ba7649e539fd9.
+Active science worktree T/microscopic_boost_worktree, branch
+physics-loop/toe-microscopic-boost-20261012, newly created clean at
+3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe. No PR exists yet; the intended regular
+PR is stacked on PR9486. Parent T/scattering_worktree remains clean at that
+published head, regular/open PR9486, with main base a13caa4885f547c8d206265b031ba7649e539fd9.
 Root alone writes Git/publication worktrees. Primary /Users/jonreilly/Projects/Physics untouched.
 Sibling quantitative_boost_worktree clean433f641f24296b6d8e786930bb1327f434015162,
 regular PR9487, boost parent773321aa8fdfccc05248682dfc96bf94215034a2.
 
 This directory in T/worktree, branch physics-loop/toe-nonlinear-transport-20261011
-(PR9478), is the sole live checkpoint. Previous complete checkpoint571683fa369a4bd46bcd4aa0d7093524d7ccac9b
-is archived exactly in history/20261012T070942Z_*.gz. The062942/052848/033625 and
+(PR9478), is the sole live checkpoint. Previous complete checkpoint3b5aaacc770fded0ebd2bed9845b55dde82b279f
+is archived exactly in history/20261012T072753Z_*.gz. The062942/052848/033625 and
 earlier archives preserve detailed earlier results, failures and receipt hashes.
 Frozen publication packets are milestones, not competing current checkpoints.
 Consult actual evidence whenever these summaries are insufficient.
 
 Lock refreshed06:44:29.672047UTC, expires08:44:29.672047UTC; refresh by08:30.
 Ownercodex-toe-native-20261011, holder01a11691-f332-7852-b641-6ee714aab15a.
-Use scripts/automation_lock.py refresh --owner codex-toe-native-20261011 --ttl-hours2
-with the actual separate --ttl-hours argument and value2. Do not change owners.
+From T/worktree run: python3 scripts/automation_lock.py refresh --owner
+codex-toe-native-20261011 --ttl-hours 2. Do not change owners.
 
 ## Current remote/instruction ownership
 
@@ -109,7 +111,7 @@ Root coauthor. Prep/finisher parsing mistakes and linkregexfalsepositives are
 preserved as operational limits, not science failures. Never rerun completed
 prepare/finisher scripts blindly.
 
-## Four accepted sources next to package
+## Five accepted sources next to package
 
 Exact detailed summaries, original failure routes and identities are also in
 history/20261012T070942Z_HANDOFF.md.gz; complete evidence remains in S.
@@ -154,44 +156,66 @@ CAR/qutrit205rows,187zerorowslosslessgrouped18othersfullyread,292bindings,
 _evidence_verification. No correction. Initialexpectedcurrentsignfailure and
 historicalmislabeledstarttimepreserved.
 
-Agentregularity_joint_packaging prepares UNEXECUTED
+Agent regularity_joint_packaging prepares UNEXECUTED
 S/prepare_boost_gap_fock_closure_publication.py and preparation/.
-TargetsameSWafter3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe;rootmustreadbeforeexecute. Proposeddependencies
-Boost→Current,Gap→Current(optionalJointtestnotproof),Fock→Mass+oldFock
-(SCcontext/transitive),Weighted→Current+Joint. Nomathematicaledits.
-No worktree/Git write delegated.
+Required --worktree is T/microscopic_boost_worktree and --base is the exact
+3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe head. Root must read before execution.
+Five notes: Boost, Gap, nonisolated Fock, weighted Current closure, Integrated
+boost covariance. No mathematical edits. Direct dependencies: Boost->Current;
+Gap->Current (Joint's optional test is not its proof); Fock->Mass+oldFock;
+Weighted->Current+Joint; Integrated->Boost+Joint. Joint J9-J10 is cited for
+the spectral step, although the alternative mixed-history route is optional.
+Expect eight direct edges if these exact proof links drive graph generation.
+No worktree/Git write delegated. Same-family separate-context pairing must
+appear plainly in every note, receipt and PR. No draft or retained promotion.
+
+Integrated boost 550 lines, source
+71fe0b4cc1df0b34ef0ca55484ad8faffabe8155efa582bf09fc2eec8622c5ed;
+review 273ea8db025c5c469864867d55ea0afe7adb05987c2eaef15b8c06825d0738f1;
+author receipt 043ca7931ff183f7446831c50583a3d9189e950842c68c244b4c3d5d30f1ba8b;
+review receipt 8a0988c3db50a91d937b8af78e3792df951392fd50866d65664f4889a7ab0ca6.
+Accepted conditionally without a mathematical correction. Actual rapid-AL
+flows and finite-word seminorm bounds justify the moving-vector product rule,
+conjugated-derivation ODE and classical-flow uniqueness. Canonical unitary
+equality then gives full Stone domains, strong joint generators, and spectral
+PREIMAGE covariance. Positive H gives the forward cone, not a fixed mass.
+The exact remaining local Lie relations, beta>0 and invariant state remain
+supplied. No physical model, geometric-momentum identification or 3+1 theorem.
+Root full proof/review/reconstruction/helpers, 71 author rows, 38 independent
+rows, all changed and unchanged variant labels, and all 15 review execution
+receipts read. S/Integrated_boost_root_review_coverage.json
+d9c0a81cf2066c1bc6fff5cba9a7e3b06a7e98c32d3c663bc67ec0db216fd753
+has no pending item. Author evidence113 and review evidence134 distinct paths
+verified; six whole-source author materializations reproduce original outputs,
+five independent whole-source mutants reject. Author CLI variants are not
+misdescribed as source mutations. Initial H-norm bookkeeping repair and root
+text-matcher/AST provenance-verifier repair are preserved. No fresh root science
+run or Lean certificate. Root is coauthor; same-family separate contexts.
 
 ## Active science and ranked next decisions
-
-Integratedboost550lines71fe0b4cc1df0b34ef0ca55484ad8faffabe8155efa582bf09fc2eec8622c5ed;
-authorreceipt043ca7931ff183f7446831c50583a3d9189e950842c68c244b4c3d5d30f1ba8b.
-Rootreadall550proof+AUTHOR_CHECKS/controls/logger; completeauthorrow/hashclosure
-stillpending. Agentintegrated_boost_covariance_review saysprovisionallysound,
-freezesfullreview/receipt next. Candidate:rapidALfinitewords,movingvectorC1,
-conjugatedderivationODE, classicalflowuniqueness, canonicalunitaryequalitythen
-Stonefulljointdomains. ExactlocalremainingLieidentities/state supplied.
-PositiveH⇒forwardcone/domaininvariance, notmassshell/model.
-Author71predicates,fivemutations; knownHpartialnorminsertioncorrectedtoactualsum,
-allold/newoutputsidentical. FreshreviewplanarSchwartz/domain38predicates and
-fiveactualmutants reported; source/receipt/rootclosure pending. No downstream
-reuse before acceptance.
 
 Agentconcrete_gapped_chain owns S/CONCRETE_GAPPED_CHAIN_PROBE.md and
 concrete_gapped_chain/. Unverified rootlead symmetricdensity
 h_x=-JX_xX_(x+1)-(g/2)(Z_x+Z_(x+1)),g>J>0. Exactlocalcurrentconservation
 suggested by6rationalfixtures. Candidatep=Jg(XY-YX), stress
 2Jg^2(XX+YY)+2J^2g(Z-XZX); positiveband T=4Jg cos(k)H proposed.
-Worker pursuingactualspinGNS via quasi-localBogoliubov automorphism; notestablished.
+Worker has an unfrozen full-spin GNS route using an exponentially localized
+Bogoliubov spin automorphism and an even-algebra lift lemma. Candidate H=dGamma(E),
+gap 2(g-J), and B=dGamma(i(E partial+Eprime/2)-E/2). Exact Pauli and distinct
+Laurent/Gaussian-integer author controls reportedly agree; full proof, domain
+matching and independent review are still pending. Do not treat this as established.
 Noexactbetaclosure/3DTOEclaim. Dispersionalonecannotcertifyactualoperators.
 Rootprototypeimportedauthorhelper,notindependent; originalpathmetadata shadowerror
 preserved withseparatecorrection. S/ROOT_CONCRETE_GAPPED_CHAIN_LEAD.md.
 PrimaryarXiv1305.4984v2SectionsII/IVmodel/currentpassages andcond-mat/9612047v1
 pages1–2readforleadonly; nofullpaperreviewclaimed.
 
-Nextafterintegratedreview:S/ROOT_MASSIVE_BOOST_CARRIER_LEAD.md proposes actual
+Agent massive_boost_carrier is developing S/MASSIVE_BOOST_CARRIER_PROBE.md
+and massive_boost_carrier/ from S/ROOT_MASSIVE_BOOST_CARRIER_LEAD.md: actual
 geometricTwithTΩ=Ω,fullTBT*=B-H, central mismatch, positivefixedmass
 rapidityWeyl/imprimitivity productcarrier andmatchedactualB Sobolevcontrol.
-Unverified/unassigned. State translationinvariance,mass/nonzerosector andcentral
+Unverified and unfrozen. A self-contained Weyl-kernel/product-carrier argument
+is under construction. State translationinvariance,mass/nonzerosector andcentral
 powerratecannotbeassumed. Keepactualcreatordensityasdistinctobligation.
 
 Continue discovery throughdeadline, selectivelycheck andpublishcoherentmilestones.

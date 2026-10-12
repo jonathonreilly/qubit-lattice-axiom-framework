@@ -1,20 +1,20 @@
 # Current ranked decisions
 
-1. Establish the symmetric gapped-chain current/conservation/stress identities
-   and actual infinite spin GNS/gap/boost realization. Then quantify the actual
-   low-momentum residual; preserve exact-closure failure and parity/domain limits.
-2. Close fresh integrated-boost covariance review and root evidence reads.
-   Conditional full-domain integration would remove a genuine analytic premise.
-3. Derive the massive product carrier from actual integrated covariance plus
-   explicitly supplied geometric-state invariance. Prove a matched gauge/domain,
-   retaining central regularity and creator density as separate obligations.
-4. Publish accepted weighted boost, gap-derived invariance, nonisolated Fock and
-   weighted-current closure at current source pins; regular PR9486, no merge/audit.
-5. Build nonzero actual regular almost-local creators and check channel coverage.
-   No generic microscopic realization, exact mass shell, density, ND/EX or model
-   follows from accumulated conditional lemmas.
+1. Establish the symmetric gapped-chain exact local identities and actual full
+   spin GNS, gap and boost. Obtain a fresh check before substantial reuse; then
+   quantify its actual packet defects. Preserve its fixed-density exact-closure
+   failure and all parity/domain limits.
+2. Derive the massive product carrier from accepted integrated covariance plus
+   supplied geometric-state invariance and a nonzero fixed-mass sector. Prove
+   the actual boost gauge/domain; keep central regularity and creator density
+   as separate obligations. Current author route is unreviewed.
+3. Publish five accepted flow/scattering notes in a new regular milestone
+   stacked on PR9486. New worktree/branch pointers are in STATE.yaml; root owns
+   Git and must inspect the unexecuted preparation and canonical verification.
+4. Build nonzero actual regular almost-local creators and check channel coverage.
+   No generic realization, exact mass shell, ND/EX, density or physical model
+   follows merely from accumulating conditional lemmas.
 
-Retain the failed fixed XX beta closure, nonconserving density, centre/spectral
-counterexamples, five primary mutation survivors and all earlier failed controls.
-Avoid PR9475–9477 owned chiral/corner/gravity lanes. Fixed deadline remains
-2026-10-12T16:00:52Z. Continuous discovery, selective checks, milestone PRs.
+Retain all failed routes and mutation survivors, including fixed XX beta closure,
+nonconserving density, centre and spectral counterexamples. Avoid PR9475-9477's
+owned chiral/corner/gravity lanes. Fixed deadline 2026-10-12T16:00:52Z.

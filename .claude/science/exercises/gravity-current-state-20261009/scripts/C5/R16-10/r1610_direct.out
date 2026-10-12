@@ -1,0 +1,10 @@
+photon R85(1,2,G=3.12650): min d' = +0.0000, max d' = 7.3533 at q = 1.574, d(pi) = 6.2530
+m=0.10 lam=0.05 split (N=64): +0.00317
+m=0.10 lam=0.05 direct R13-7 runner N= 96: +0.06719  [tadpole -0.36795]
+m=0.10 lam=0.05 direct R13-7 runner N=128: +0.02676  [tadpole -0.36716]
+m=0.10 lam=0.05 direct R13-7 runner N=160: +0.01426  [tadpole -0.36768]
+m=0.05 lam=0.02 split (N=64): +0.00252
+m=0.05 lam=0.02 direct R13-7 runner N= 96: +0.20141  [tadpole -0.37298]
+m=0.05 lam=0.02 direct R13-7 runner N=128: +0.18806  [tadpole -0.37261]
+m=0.05 lam=0.02 direct R13-7 runner N=160: +0.13350  [tadpole -0.37294]
+elapsed 2.3s

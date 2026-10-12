@@ -5560,3 +5560,13 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-R16-9a (P62 and P-Z cannot share one subluminal scalar edge); P-R16-9b (named gap).
 
   Referee running.
+- **R16-10 (Lemma F and λ → 0): worker reading Dirac REFUTED-ZERO; scalar OPEN; COUNTED not met.**
+  - **Theorem L (proved):** the λ → 0 limit exists jointly with m → 0 and has no log; F_s(0⁺) = K_s + Λ_s, with K_0 = −1/3 (closed form) and K_½ = +2/3 (checked).
+  - **The Dirac zero:** D1(1.4, 1/√3) with a stiffened R8-5 photon (nondecreasing for G ≥ π/2) gives F_½(0⁺) = 0 at G* ≈ 3.126. The unmodified R13-7 runner converges toward it.
+    - **Caveat:** the photon's whole-zone v_max is 7.35, i.e. superluminal at the grid scale. If that is outside the class, Dirac is OPEN.
+  - **Subluminal photons:** proved tadpole ≤ −2.02; about 92 samples give F_½ ≤ −3.8.
+  - **Scalars:** F_0 < −1/3 in every resolved sample.
+  - **(c) Convention-independent minimum:** n_t = 2 (G* plus κ_γ) with a superluminal photon tuned to ~1e-15; 7/3 survives only on the subluminal-photon subclass.
+  - **Price:** P-r16-10a.
+
+  Referee running.

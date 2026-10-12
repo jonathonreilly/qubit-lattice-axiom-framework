@@ -1,0 +1,61 @@
+('D1', 1.4, np.float64(0.5773502691896258)) ph=('R85', 1.0, 2.0, 1.0) N=48 | F(0+) = K +0.6667 + lattice  -10.4063 =   -9.7396 | [tad/seagull  -9.6093] | photon max d' 1.000 min d' +0.000 d(pi) 2.000
+('D1', 1.4, np.float64(0.5773502691896258)) ph=('Gph', 0.6)           N=48 | F(0+) = K +0.6667 + lattice  -10.6656 =   -9.9989 | [tad/seagull  -9.5597] | photon max d' 1.000 min d' -0.000 d(pi) 1.871
+('D1', 1.4, np.float64(0.5773502691896258)) ph=('Gph', 1.0)           N=48 | F(0+) = K +0.6667 + lattice   -8.6633 =   -7.9966 | [tad/seagull  -7.5800] | photon max d' 1.000 min d' -0.000 d(pi) 2.071
+('D1', 1.4, np.float64(0.5773502691896258)) ph=('Gph', 1.4)           N=48 | F(0+) = K +0.6667 + lattice   -7.3740 =   -6.7074 | [tad/seagull  -6.3934] | photon max d' 1.000 min d' -0.000 d(pi) 2.271
+('D1', 1.4, np.float64(0.5773502691896258)) ph=('Gph', 2.0)           N=48 | F(0+) = K +0.6667 + lattice   -6.2629 =   -5.5962 | [tad/seagull  -5.5010] | photon max d' 1.000 min d' -0.000 d(pi) 2.571
+('D1', 1.4, np.float64(0.5773502691896258)) ph=('Gph', 2.6)           N=48 | F(0+) = K +0.6667 + lattice   -5.7512 =   -5.0845 | [tad/seagull  -5.1541] | photon max d' 1.000 min d' -0.000 d(pi) 2.871
+('D1', 1.4, np.float64(0.5773502691896258)) ph=('Gph', 3.0)           N=48 | F(0+) = K +0.6667 + lattice   -5.6311 =   -4.9645 | [tad/seagull  -5.0831] | photon max d' 1.000 min d' +0.000 d(pi) 3.071
+('D1', 1.4, np.float64(0.5773502691896258)) ph=('R85', 1.0, 2.0, 2.0) N=48 | F(0+) = K +0.6667 + lattice   -1.9962 =   -1.3295 | [tad/seagull  -1.3689] | photon max d' 3.729 min d' +0.000 d(pi) 4.000
+('D1', 1.4, np.float64(0.5773502691896258)) ph=('R85', 1.0, 2.0, 4.0) N=48 | F(0+) = K +0.6667 + lattice   -0.3536 =   +0.3131 | [tad/seagull  -0.1854] | photon max d' 10.168 min d' +0.000 d(pi) 8.000
+('D1', 1.4, np.float64(0.5773502691896258)) ph=('R85', 1.0, 2.0, 16.0) N=48 | F(0+) = K +0.6667 + lattice   +0.0202 =   +0.6869 | [tad/seagull  -0.0031] | photon max d' 48.866 min d' +0.001 d(pi) 32.000
+('D1', 1.0, np.float64(0.5773502691896258)) ph=('R85', 1.0, 2.0, 1.0) N=48 | F(0+) = K +0.6667 + lattice  -10.5091 =   -9.8425 | [tad/seagull  -9.7536] | photon max d' 1.000 min d' +0.000 d(pi) 2.000
+('D1', 1.0, np.float64(0.5773502691896258)) ph=('Gph', 0.6)           N=48 | F(0+) = K +0.6667 + lattice  -10.7286 =  -10.0620 | [tad/seagull  -9.7392] | photon max d' 1.000 min d' -0.000 d(pi) 1.871
+('D1', 1.0, np.float64(0.5773502691896258)) ph=('Gph', 1.0)           N=48 | F(0+) = K +0.6667 + lattice   -8.7662 =   -8.0995 | [tad/seagull  -7.7713] | photon max d' 1.000 min d' -0.000 d(pi) 2.071
+('D1', 1.0, np.float64(0.5773502691896258)) ph=('Gph', 1.4)           N=48 | F(0+) = K +0.6667 + lattice   -7.5111 =   -6.8444 | [tad/seagull  -6.5905] | photon max d' 1.000 min d' -0.000 d(pi) 2.271
+('D1', 1.0, np.float64(0.5773502691896258)) ph=('Gph', 2.0)           N=48 | F(0+) = K +0.6667 + lattice   -6.4353 =   -5.7686 | [tad/seagull  -5.6923] | photon max d' 1.000 min d' -0.000 d(pi) 2.571
+('D1', 1.0, np.float64(0.5773502691896258)) ph=('Gph', 2.6)           N=48 | F(0+) = K +0.6667 + lattice   -5.9474 =   -5.2807 | [tad/seagull  -5.3422] | photon max d' 1.000 min d' -0.000 d(pi) 2.871
+('D1', 1.0, np.float64(0.5773502691896258)) ph=('Gph', 3.0)           N=48 | F(0+) = K +0.6667 + lattice   -5.8359 =   -5.1692 | [tad/seagull  -5.2705] | photon max d' 1.000 min d' +0.000 d(pi) 3.071
+('D1', 1.0, np.float64(0.5773502691896258)) ph=('R85', 1.0, 2.0, 2.0) N=48 | F(0+) = K +0.6667 + lattice   -2.1160 =   -1.4493 | [tad/seagull  -1.5295] | photon max d' 3.729 min d' +0.000 d(pi) 4.000
+('D1', 1.0, np.float64(0.5773502691896258)) ph=('R85', 1.0, 2.0, 4.0) N=48 | F(0+) = K +0.6667 + lattice   -0.4080 =   +0.2587 | [tad/seagull  -0.2514] | photon max d' 10.168 min d' +0.000 d(pi) 8.000
+('D1', 1.0, np.float64(0.5773502691896258)) ph=('R85', 1.0, 2.0, 16.0) N=48 | F(0+) = K +0.6667 + lattice   +0.0131 =   +0.6797 | [tad/seagull  -0.0093] | photon max d' 48.866 min d' +0.001 d(pi) 32.000
+('lit', 2.0, 3.0)      ph=('R85', 1.0, 2.0, 1.0) N=48 | F(0+) = K +0.6667 + lattice   -9.3845 =   -8.7178 | [tad/seagull  -7.8937] | photon max d' 1.000 min d' +0.000 d(pi) 2.000
+('lit', 2.0, 3.0)      ph=('Gph', 0.6)           N=48 | F(0+) = K +0.6667 + lattice  -10.0176 =   -9.3509 | [tad/seagull  -8.5436] | photon max d' 1.000 min d' -0.000 d(pi) 1.871
+('lit', 2.0, 3.0)      ph=('Gph', 1.0)           N=48 | F(0+) = K +0.6667 + lattice   -7.9460 =   -7.2793 | [tad/seagull  -6.4610] | photon max d' 1.000 min d' -0.000 d(pi) 2.071
+('lit', 2.0, 3.0)      ph=('Gph', 1.4)           N=48 | F(0+) = K +0.6667 + lattice   -6.5456 =   -5.8790 | [tad/seagull  -5.0719] | photon max d' 1.000 min d' -0.000 d(pi) 2.271
+('lit', 2.0, 3.0)      ph=('Gph', 2.0)           N=48 | F(0+) = K +0.6667 + lattice   -5.2195 =   -4.5528 | [tad/seagull  -3.8365] | photon max d' 1.000 min d' -0.000 d(pi) 2.571
+('lit', 2.0, 3.0)      ph=('Gph', 2.6)           N=48 | F(0+) = K +0.6667 + lattice   -4.5908 =   -3.9241 | [tad/seagull  -3.3813] | photon max d' 1.000 min d' -0.000 d(pi) 2.871
+('lit', 2.0, 3.0)      ph=('Gph', 3.0)           N=48 | F(0+) = K +0.6667 + lattice   -4.4728 =   -3.8062 | [tad/seagull  -3.3160] | photon max d' 1.000 min d' +0.000 d(pi) 3.071
+('lit', 2.0, 3.0)      ph=('R85', 1.0, 2.0, 2.0) N=48 | F(0+) = K +0.6667 + lattice   -1.6946 =   -1.0279 | [tad/seagull  -1.0384] | photon max d' 3.729 min d' +0.000 d(pi) 4.000
+('lit', 2.0, 3.0)      ph=('R85', 1.0, 2.0, 4.0) N=48 | F(0+) = K +0.6667 + lattice   -0.2813 =   +0.3854 | [tad/seagull  -0.1321] | photon max d' 10.168 min d' +0.000 d(pi) 8.000
+('lit', 2.0, 3.0)      ph=('R85', 1.0, 2.0, 16.0) N=48 | F(0+) = K +0.6667 + lattice   +0.0247 =   +0.6913 | [tad/seagull  -0.0021] | photon max d' 48.866 min d' +0.001 d(pi) 32.000
+('G', 1.4)             ph=('R85', 1.0, 2.0, 1.0) N=48 | F(0+) = K -0.3333 + lattice   -2.4193 =   -2.7526 | [tad/seagull  -4.5102] | photon max d' 1.000 min d' +0.000 d(pi) 2.000
+('G', 1.4)             ph=('Gph', 0.6)           N=48 | F(0+) = K -0.3333 + lattice   -2.3742 =   -2.7075 | [tad/seagull  -4.5207] | photon max d' 1.000 min d' -0.000 d(pi) 1.871
+('G', 1.4)             ph=('Gph', 1.0)           N=48 | F(0+) = K -0.3333 + lattice   -1.8825 =   -2.2158 | [tad/seagull  -3.5125] | photon max d' 1.000 min d' -0.000 d(pi) 2.071
+('G', 1.4)             ph=('Gph', 1.4)           N=48 | F(0+) = K -0.3333 + lattice   -1.5884 =   -1.9218 | [tad/seagull  -2.8811] | photon max d' 1.000 min d' -0.000 d(pi) 2.271
+('G', 1.4)             ph=('Gph', 2.0)           N=48 | F(0+) = K -0.3333 + lattice   -1.3840 =   -1.7174 | [tad/seagull  -2.4106] | photon max d' 1.000 min d' -0.000 d(pi) 2.571
+('G', 1.4)             ph=('Gph', 2.6)           N=48 | F(0+) = K -0.3333 + lattice   -1.3311 =   -1.6645 | [tad/seagull  -2.2677] | photon max d' 1.000 min d' -0.000 d(pi) 2.871
+('G', 1.4)             ph=('Gph', 3.0)           N=48 | F(0+) = K -0.3333 + lattice   -1.3250 =   -1.6583 | [tad/seagull  -2.2460] | photon max d' 1.000 min d' +0.000 d(pi) 3.071
+('G', 1.4)             ph=('R85', 1.0, 2.0, 2.0) N=48 | F(0+) = K -0.3333 + lattice   -0.4091 =   -0.7424 | [tad/seagull  -0.5998] | photon max d' 3.729 min d' +0.000 d(pi) 4.000
+('G', 1.4)             ph=('R85', 1.0, 2.0, 4.0) N=48 | F(0+) = K -0.3333 + lattice   -0.1040 =   -0.4373 | [tad/seagull  -0.0768] | photon max d' 10.168 min d' +0.000 d(pi) 8.000
+('G', 1.4)             ph=('R85', 1.0, 2.0, 16.0) N=48 | F(0+) = K -0.3333 + lattice   -0.0195 =   -0.3528 | [tad/seagull  -0.0012] | photon max d' 48.866 min d' +0.001 d(pi) 32.000
+('G', 2.6)             ph=('R85', 1.0, 2.0, 1.0) N=48 | F(0+) = K -0.3333 + lattice   -1.9632 =   -2.2965 | [tad/seagull  -3.5158] | photon max d' 1.000 min d' +0.000 d(pi) 2.000
+('G', 2.6)             ph=('Gph', 0.6)           N=48 | F(0+) = K -0.3333 + lattice   -2.1874 =   -2.5207 | [tad/seagull  -4.0726] | photon max d' 1.000 min d' -0.000 d(pi) 1.871
+('G', 2.6)             ph=('Gph', 1.0)           N=48 | F(0+) = K -0.3333 + lattice   -1.6676 =   -2.0009 | [tad/seagull  -3.0550] | photon max d' 1.000 min d' -0.000 d(pi) 2.071
+('G', 2.6)             ph=('Gph', 1.4)           N=48 | F(0+) = K -0.3333 + lattice   -1.3243 =   -1.6576 | [tad/seagull  -2.3608] | photon max d' 1.000 min d' -0.000 d(pi) 2.271
+('G', 2.6)             ph=('Gph', 2.0)           N=48 | F(0+) = K -0.3333 + lattice   -0.9951 =   -1.3285 | [tad/seagull  -1.6821] | photon max d' 1.000 min d' -0.000 d(pi) 2.571
+('G', 2.6)             ph=('Gph', 2.6)           N=48 | F(0+) = K -0.3333 + lattice   -0.8083 =   -1.1417 | [tad/seagull  -1.2940] | photon max d' 1.000 min d' -0.000 d(pi) 2.871
+('G', 2.6)             ph=('Gph', 3.0)           N=48 | F(0+) = K -0.3333 + lattice   -0.7792 =   -1.1126 | [tad/seagull  -1.2293] | photon max d' 1.000 min d' +0.000 d(pi) 3.071
+('G', 2.6)             ph=('R85', 1.0, 2.0, 2.0) N=48 | F(0+) = K -0.3333 + lattice   -0.3128 =   -0.6461 | [tad/seagull  -0.4614] | photon max d' 3.729 min d' +0.000 d(pi) 4.000
+('G', 2.6)             ph=('R85', 1.0, 2.0, 4.0) N=48 | F(0+) = K -0.3333 + lattice   -0.0835 =   -0.4168 | [tad/seagull  -0.0587] | photon max d' 10.168 min d' +0.000 d(pi) 8.000
+('G', 2.6)             ph=('R85', 1.0, 2.0, 16.0) N=48 | F(0+) = K -0.3333 + lattice   -0.0185 =   -0.3518 | [tad/seagull  -0.0009] | photon max d' 48.866 min d' +0.001 d(pi) 32.000
+('G', 0.6)             ph=('R85', 1.0, 2.0, 1.0) N=48 | F(0+) = K -0.3333 + lattice   -3.0158 =   -3.3492 | [tad/seagull  -5.7316] | photon max d' 1.000 min d' +0.000 d(pi) 2.000
+('G', 0.6)             ph=('Gph', 0.6)           N=48 | F(0+) = K -0.3333 + lattice   -2.9104 =   -3.2437 | [tad/seagull  -5.5904] | photon max d' 1.000 min d' -0.000 d(pi) 1.871
+('G', 0.6)             ph=('Gph', 1.0)           N=48 | F(0+) = K -0.3333 + lattice   -2.4893 =   -2.8226 | [tad/seagull  -4.6530] | photon max d' 1.000 min d' -0.000 d(pi) 2.071
+('G', 0.6)             ph=('Gph', 1.4)           N=48 | F(0+) = K -0.3333 + lattice   -2.2674 =   -2.6007 | [tad/seagull  -4.1213] | photon max d' 1.000 min d' -0.000 d(pi) 2.271
+('G', 0.6)             ph=('Gph', 2.0)           N=48 | F(0+) = K -0.3333 + lattice   -2.1240 =   -2.4574 | [tad/seagull  -3.7439] | photon max d' 1.000 min d' -0.000 d(pi) 2.571
+('G', 0.6)             ph=('Gph', 2.6)           N=48 | F(0+) = K -0.3333 + lattice   -2.0807 =   -2.4140 | [tad/seagull  -3.6118] | photon max d' 1.000 min d' -0.000 d(pi) 2.871
+('G', 0.6)             ph=('Gph', 3.0)           N=48 | F(0+) = K -0.3333 + lattice   -2.0726 =   -2.4059 | [tad/seagull  -3.5853] | photon max d' 1.000 min d' +0.000 d(pi) 3.071
+('G', 0.6)             ph=('R85', 1.0, 2.0, 2.0) N=48 | F(0+) = K -0.3333 + lattice   -0.8858 =   -1.2191 | [tad/seagull  -1.3001] | photon max d' 3.729 min d' +0.000 d(pi) 4.000
+('G', 0.6)             ph=('R85', 1.0, 2.0, 4.0) N=48 | F(0+) = K -0.3333 + lattice   -0.3616 =   -0.6949 | [tad/seagull  -0.4126] | photon max d' 10.168 min d' +0.000 d(pi) 8.000
+('G', 0.6)             ph=('R85', 1.0, 2.0, 16.0) N=48 | F(0+) = K -0.3333 + lattice   -0.1016 =   -0.4349 | [tad/seagull  -0.1085] | photon max d' 48.866 min d' +0.001 d(pi) 32.000
+elapsed 6.9s

@@ -1,13 +1,20 @@
-# Ranked campaign queue, 2026-10-12 06:30 UTC
+# Current ranked decisions
 
-1. Canonically verify and publish prepared mass/centre/joint-flow milestone in regular PR9486.
-2. Fresh review and complete root read of finite weighted-current closure; independent review active.
-3. Freeze and independently check integrated boost covariance; actual controls and full domains matter.
-4. Package already accepted weighted-flow, gap-invariance and nonisolated Fock results with honest dependencies.
-5. Construct a matched microscopic example and actual regular creators; consider controlled approximate Lie relations if the exact finite-range target is restrictive. No intended model or full density is implied by the conditional results.
+1. Establish the symmetric gapped-chain current/conservation/stress identities
+   and actual infinite spin GNS/gap/boost realization. Then quantify the actual
+   low-momentum residual; preserve exact-closure failure and parity/domain limits.
+2. Close fresh integrated-boost covariance review and root evidence reads.
+   Conditional full-domain integration would remove a genuine analytic premise.
+3. Derive the massive product carrier from actual integrated covariance plus
+   explicitly supplied geometric-state invariance. Prove a matched gauge/domain,
+   retaining central regularity and creator density as separate obligations.
+4. Publish accepted weighted boost, gap-derived invariance, nonisolated Fock and
+   weighted-current closure at current source pins; regular PR9486, no merge/audit.
+5. Build nonzero actual regular almost-local creators and check channel coverage.
+   No generic microscopic realization, exact mass shell, density, ND/EX or model
+   follows from accumulated conditional lemmas.
 
-Maina13caa48, planning3a4b2c66 and instructions unchanged06:25; new9477head2f93e8
-read only for ownership, no overlap/import. All10regularPRs open/unmerged. Exact
-sources and failed controls live in S; sole checkpoint here. Fixed deadline
-2026-10-12 16:00:52UTC. No draft, merge, mainpush, auditapplication, physicalaxiom
-change, other-chatmessage or deadline extension.
+Retain the failed fixed XX beta closure, nonconserving density, centre/spectral
+counterexamples, five primary mutation survivors and all earlier failed controls.
+Avoid PR9475–9477 owned chiral/corner/gravity lanes. Fixed deadline remains
+2026-10-12T16:00:52Z. Continuous discovery, selective checks, milestone PRs.

@@ -1,6 +1,6 @@
 # Current campaign recovery checkpoint
 
-Actual checkpoint: 2026-10-12T10:44:30.593647+00:00.
+Actual checkpoint: 2026-10-12T11:20:55.226038+00:00.
 Campaign:2026-10-11T16:00:52Z to2026-10-12T16:00:52Z. Never extend.
 At deadline start no new research; preserve/checkpoint/report actual outcomes and
 limits and disable heartbeat toe-derivations-24-hour-campaign. Until then continue
@@ -17,8 +17,8 @@ parentPR9486. No supplied-chain worktree yet.
 SW=T/scattering_worktree clean3faf1cf; QW=T/quantitative_boost_worktree clean433f641f24296b6d8e786930bb1327f434015162.
 Primary /Users/jonreilly/Projects/Physics untouched.
 This directory in T/worktree on physics-loop/toe-nonlinear-transport-20261011,
-PR9478, is the SOLE current campaign checkpoint. Previous exact headd650c1977173fba31f50b33ad4f3d91fc3bad2bb and all
-six files are preserved in history/20261012T104430Z_*.gz. Earlier101222/094415/091240/
+PR9478, is the SOLE current campaign checkpoint. Previous exact headaf31df4e9ece067194ec8e4c14746da66bdd805e and all
+six files are preserved in history/20261012T112055Z_*.gz. Earlier101222/094415/091240/
 083702/075936/072753/070942/062942/052848/033625 histories retain detailed prior
 arguments, failed gates and identities. Frozen milestone packets are evidence,
 not competing campaign checkpoints. Previous1015receipt hashes predated a small
@@ -30,18 +30,18 @@ From W: python3 scripts/automation_lock.py refresh --owner codex-toe-native-2026
 
 ## Current source and ownership identities
 
-Latest network/source refresh10:13:35.647224UTC: S/repo_sync_1015.json and
-repo_sync_1015_open_prs.json, fullcommand/streams/receipts in repo_sync_1015/.
+Latest network/source refresh10:55:56.319380UTC: S/repo_sync_1105.json and
+repo_sync_1105_open_prs.json, full commands/streams/receipts in repo_sync_1105/.
 origin/main a13caa4885f547c8d206265b031ba7649e539fd9 and origin/ai/execution
-3a4b2c66a1ead7a1c48b4359627e968f681e3c39 unchanged.17PRsopen, noneclosed.
-9475fe9008f80d68fb851b20399241f34c6203ed8281;9476a2153dbddb720dc595b0037e42277a54d39f643e unchanged.
-9477advanced to8611f5c6cb9f54f2090e9a87d4147e0144638735. Root read its complete new173line
-unequal swapped-dot/two-cap partner-rank note. No current/H/scattering/localboost
-overlap; no theorem import or runner audit. Saved repo_sync_1015/chiral_changed_note.md
-SHA2b3aac1a2f13bd96e6edad0768a3454642a718c2b747abd97377e994fa6be8b1,
-chiral_scope_review.json binds10:18:01gitshow. Do not duplicate9475–9477.
+3a4b2c66a1ead7a1c48b4359627e968f681e3c39 unchanged.17PRs open, none closed.
+9475fe9008f80d68fb851b20399241f34c6203ed8281 and9476a2153dbddb720dc595b0037e42277a54d39f643e unchanged.
+9477 now18b7dce754488789eb539d2a6fae3d00d6c37e31. Root fully read its195line
+unequal-dot-caps partner-kernel note for ownership only: no current/H/scattering/
+local-Poincare overlap. No theorem import or runner audit. Saved full source and
+scope receipt in repo_sync_1105/chiral_changed_note.md and chiral_scope_review.json.
+Do not duplicate9475–9477.
 Instruction hashes unchanged; reuse prior full reads. Full saved snapshots are
-repo_sync_1015/instruction_*.stdout with receipt commands. Workflow05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce;
+repo_sync_1105/instruction_*.stdout with receipt commands. Workflow05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce;
 planningAGENTS3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9.
 New PR content gate200–400word OPEN/BACKLOG after paired readiness; root isolated
 pass allowed. Bounded delegation authorized; no model/effort override.
@@ -77,131 +77,142 @@ BW/.claude/science/physics-loops/toe-boost-gap-fock-closure-20261012.
 No analytic Lean/interval/independent-retained claim. S/regularity_joint_pr_verified.json
 similarly binds9486 prior3notes; no rerunneeded.
 
-## Massive carrier publication recovery
+## Massive carrier publication: verification complete, delivery pending
 
-Source mathematics/review already fully root-accepted; inventory below. Exact-Lie
-carrier requires supplied positive H,beta,nonzero positive fixedmass, same-state
-Lie/geometricT package; gives TBT*=closure(B-H), centralV=e^iK T and rapidity
-kernel-Weyl product carrier with maximal boost domains/Sobolev bound. Does NOT
-apply to finitea concrete chain, whose exact closure fails. Actual central rates,
-dense filtered creators and3Dmodel selection remain open.
-Preparation316lines0fecf1c5bf705e1a27932a95a020d091d06116380141cd9a373046169b616b8e
-ran09:41:38UTC,633files607ownpayloads4externalPDFs,10adminmaps, no math change.
-Note ba17b6881ec6e84d83a6c6d76ad57cc8200a07c8ded094ec11df79a3291fd18b;
-primarycca0ccd5a0137bc76909612c44090cce7b300c567f938e13e8554dcb1845a35c.
-Packet BW/.claude/science/physics-loops/toe-massive-boost-carrier-20261012.
-Original verifier15d29ea13ee82d01de313fac6388112adc9eb4f5425b14bf457735bd2f0924a5
-ran10:09:29UTC7.4656sec exit1 after one84predicatecanonical, zero mutants.
-Attemptmassive_carrier_publication_verification_preparation/runs/20261012T100929_0ff3b6c6729b;
-fullINNER/OUTERJSONandopaquePicklebytes,streams,cache and mainoutput preserved.
-Failure only textualsys.executable opt vsCellar aliases. Both resolve same52,640byte
-Python3.13.5 executableSHAa1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5;
-exactfull output/versions/stdout21569bytesccdb2edd362f169ad15d7f03fc6fef9e239688a8a62ed4197b8f04d82df8bed4.
-Root diagnosis massive_carrier_interpreter_alias_diagnosis.json preserves identities.
-Recovery finish_massive_carrier_verification.py394lines10eb985cc86bff01f3bd9dc7e8209c678f27550de2cbfa74a5798e26119193be,
-freeze fd48b710b8dd5308d7ace2bbb1f50fd847f0e25836fff4eb412af4d5e969e92b,
-fullyrootread394+contracts/diff/freezer/source-map. Run10:34:47.143683UTC.1335sec exit1
-BEFORE verifierimport/science: membership equality falsely differs because freeze
-sorts Path objects, recovery sorts strings. Exactsets/bytes same; first difference
-vocabulary_fix.json versus vocabulary_fix/execution.json. Fullfailed attempt preserved
-under massive_carrier_verification_recovery/runs; rootstreams/receipt in
-massive_carrier_root_recovery_execution/; wrapperrun_massive_recovery_root.py.
-regularity_joint_packaging prepares ONLY unexecuted minimal v2 and own
-massive_carrier_verification_recovery_v2/. Root must read/execute. Canonical MUST
-be reused (no unpickling), only8pendingwholemutants then graph+1/+4,
-focusedcompatibility/reconstruction/vocab/cachefreshness/finalreview and9488extension.
-Only exact interpreter alias identity and list-order corrections authorized;
-scientific/source/value/version/diagnostic gates unchanged. Keep every failure.
+Original912line theorem eb85ee2fda1690373e7bb7bdf96bc255e86235d672e8e9f18e46c6553078e310;
+review8a90df17d977c347b8b26b7b9fee933e4617c6fff6e099a7d7ef55d76574764f;
+root Massive_carrier_root_review_coverage.json f6c2c7470d8bdf81fbfc3e76d19aa5e0dd2dd143cbc23aa9efd6f120a930be9b,pending[].
+Exact positive-energy Lie/fixed-mass hypotheses give the rapidity kernel-Weyl
+carrier and maximal boost domains; this is not a finite-spacing chain theorem.
+The concrete chain fails exact closure; central rates and intended3D suppliers stay open.
+633file preparation is still uncommitted in BW. Published note candidate ba17b6881ec6e84d83a6c6d76ad57cc8200a07c8ded094ec11df79a3291fd18b;
+primary cca0ccd5a0137bc76909612c44090cce7b300c567f938e13e8554dcb1845a35c.
+Original10:09 canonical84pass0fail was retained. First verifier failed only on
+textual aliases to the identical pinned Python executable; v1 recovery failed
+before science only on Path-vs-string sorting. Both full attempts remain preserved.
+finish_massive_carrier_verification_v2.py4adf53a885ab5c32c3b80199f19eb660c5662aea8978dc1ae265ab5d791aae88
+ran10:45:21.199304UTC135.046740666sec exit0 with actual600s timeout.
+Inner massive_carrier_verification_recovery/runs/20261012T104521_eeb5af0fba87:
+manifest aac4f085cc896bd2e9130949757d50e8bf8a47b6d4b01182b55465e0f9d45a84,294bindings.
+Outer massive_carrier_verification_recovery_v2/runs/20261012T104521_1d560104a1ff:
+manifest a129d8a85bb641b2ddde79f0d03063d0262def00db023a0b113696046ea94e72,9bindings.
+Canonical reused once, zero fresh canonicals. Eight actual original variants
+reject15,6,6,18,18,18,1,1 rows. Six changed passing quadrature rows in each kernel
+variant remain explicit. Graph+1/+4, prior nodes/edges unchanged. Focused audit
+compatibility selected no applied rows; no new claim audit follows. Caches fresh.
+Root full typed/raw comparison and bindings recorded in
+massive_carrier_recovery_v2_root_evidence_checked.json8ef440413180800478672d007af2aa0d12858c79611fca7c27b8bf2830d571e6.
+All original load-bearing rows had already been fully read; new full comparisons
+are exact, not a claim that truncated duplicate inventories were manually reviewed.
+Ready but UNEXECUTED finish_massive_carrier_delivery.py436lines
+bd9355ce0e8171a7c2e51ceb5be5065adbacc066e56196c798e0833e2638e7a2;
+freeze433b31f4d335f5ed8b0b3136e82a371248f95cbafde2ced1aba47f28b064a2ce.
+Root must read complete wrapper,93line reconstruct,9metadata previews/diffs,
+contracts and six-note PR body before bounded execution. See
+massive_carrier_delivery_preparation/READY_FOR_ROOT.md. Preserve1307original
+input paths via deduplicated archive without altering old EVIDENCE_MAP/cache inputs.
+Never blindly rerun a wrapper after staging/commit/push; inspect actual action receipts.
 
-## Accepted source family awaiting a regular dependent milestone
+## Accepted supplied-chain milestone, not yet published
 
-SUPPLIED_CHAIN_MILESTONE_GATE.md contains root330word OPENdecision after complete
-Concrete/Scattering/Continuum source reviews. Base on9488 because concrete uses
-three published premises. Massiveexact-Lie is NOTa premise. No worktree yet.
-After9488extension, rootcreatescleannewworktree/branch at exacthead, then assigns
-packager preparation. Local-even may later extend after source-bound integration.
-Source identities/rootcoverage printed below. Every helper/source/proof/review,
-full load-bearing evidence, failures and relevant survivor rows have been read.
-Concrete:actual gapped spin GNS via exponentially localBogoliubov+evenrigidity,
-H=dGammaE simplegap,actualB/periodiccore,currentstress and closurefailure preserved.
-Authororigin/Jacobianmutants survive rawoutput; separate literal/transport tests
-reject. M128fails1e-10,M192passes; no infinitevolume inference from finitepasses.
-Scattering:actual almostlocal oddspincreators and filteredreplacement/full-lattice
-tails give all-n asymptotic maps onto chosenGNS, S_n=(-1)^pairsI. Parentmethod
-exposure disclosed. FilterT20/40/80/160fail,T320passesunchanged1e-6. n8phase-only
-mutantsurvives95authorrows; distinct256matrixwitnessrejects(0vs4squarednorm).
-Scalarcontinuum:chosen m/v family, original−aEa/2phase, periodic/antiperiodicwinding,
-centeredO(a²)/originalO(a)compactpackets,strongfinitewordfullFocklimit,maximalTOTAL
-domains. No domains as particle-intersections. h.01/.005fail,h.0025passesreview
-2e-7; oldN24/48/80andFockcutoff failures preserved. No localnet inferred there.
+SUPPLIED_CHAIN_MILESTONE_GATE.md has330word OPEN gate after complete paired checks.
+Create clean child from exact extended9488head. Three notes: concrete gapped chain,
+actual all-particle scattering, controlled scalar continuum. Their exact accepted
+source/review/root-coverage hashes are retained in the inventory below and in
+history. No massive exact-Lie premise is imported. Full analytic/helper/control
+reads and changed-survivor evidence already complete; do not rerun for paperwork.
+Concrete full-spin GNS gapm/Bogoliubov/actual current and stress preserves finite-a
+closure failure. Scattering uses actual almost-local odd spin creators and full
+tails; S_n=(-1)^pairs I on this free chosen model. Continuum treats original
+minus-aE/2 phase, winding and maximal TOTAL Fock domains; no local net inferred there.
+All original cutoff/filter/Fock failures and phase-only mutation survivors retained.
 
-## Local even-spin continuum review is now root-accepted
+## Local even continuum and revised continuum boost are root-accepted
 
-Author694lines7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b;
-3disclosedwordingchangesonly; frozen599analyticdc6c87… retained. Root authorcoverage
-eb91dcb44861f3ebca8e8f021debec95287df9d2c597f546893604ae430dcd68.
-Own authorverifierv2 bound161files16executionpins22receipts706predicates:
-284baseline147changed275unchanged,allload-bearing rows+13changed survivorsread.
-Fresh review LOCAL_EVEN_CONTINUUM_REVIEW.md52367af926771b082f898782ebb22ffcfc332d9ac4aad35812c0cf8e5c0d26e8;
-receipt36607e5a9a60518fb98e2ae8072e107193dc63ba62cd5273baf49a259d5eb1cc;
-manifest55bfea0771e3f2c8726eb3fa1caf0f04b05cbd34eddba0f583b4fc0b01fadc37.
-Root Local_even_root_review_coverage.json57563c2b2a88fb5bcdb9ee7e9c0b015d04657c92cbc64bddda9fa5da335f1e78,pending[].
-Rootreadfullreview/reconstruction/prereg/all10helpers141Paulirows+74losslessnumeric
-lines. Own verify_local_even_review_evidence.py ran10:37:47.908UTC.0893sec,
-251review/161author/169snapshotbindings15processreceipts;4exactreplays.
-Evidence in root_local_even_review_verification/. Different KG/Bessel realspace
-and Jacobi/K0 covariance controls;3resolutionfailures preserved then unchanged2e-8
-passes(max1.203e-11). Source bound has no analytic correction. Ordinaryfloats.
-Exploratoryauthorrecorder111b66…bytes unavailable; allscientificreceipts usepinned
-50cb7f…recorder. Root initiallyoverstrictverifierfailure preserved, v2discloseslimit.
-Strongcompacttimecell limit, projectorerror delta/(2m), finitePfaffians, isometric
-evenCAR/spinwordnormlimits, finitepropagation/causality. EvenvacuumFockthreshold2m;
-fullspinGNSgapm. Fullspin/odd/scalingnet/boostcovariance/3Dnotclaimedhere.
+LOCAL_EVEN_CONTINUUM_PROBE.md7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b;
+review52367af926771b082f898782ebb22ffcfc332d9ac4aad35812c0cf8e5c0d26e8;
+root Local_even_root_review_coverage.json57563c2b2a88fb5bcdb9ee7e9c0b015d04657c92cbc64bddda9fa5da335f1e78,pending[].
+Full source and different KG/Bessel/Jacobi checks read. Cell projection bound
+delta/(2m), compact-time strong limit, finite evenCAR/JW word norm convergence,
+Pfaffians and causality. Even vacuum gap2m; full spin GNS gapm. No full-spin odd,
+unit-ball or full scaling-net claim. Early resolution failures retained.
 
-## Active continuum localboost and microscopic bridge
+Original CONTINUUM_LOCAL_BOOST_PROBE.md8c6b8f83afd5c85d1d6aa7601231d89a497024993740f1ba7e7209e1fd6d7ded
+is preserved. Fresh reviewer found L19 improperly differentiating arbitrary
+measurable eigenvector gauges. New CONTINUUM_LOCAL_BOOST_REVISED_PROBE.md740lines
+59d34a51720446a554c41ec070c0b52b6dde67692c72b4c42a4937f7f4ca9d16;
+continuum_local_boost_revision/REVISION_RECEIPT.json4df8e4d328affa48ba8a2f758516b7060fb670544c02f3a02f8a827c09163b03.
+Two exact replacements plus appendix inverse recover original bytes. Smooth gauges
+have the distributional Berry expression on transported domains; measurable gauges
+only unitary conjugation. Sign(q) times a smooth nonzero-at-zero vector gives the
+preserved jump/delta counterexample to unrestricted differentiation. No numeric rerun.
+Fresh CONTINUUM_LOCAL_BOOST_REVIEW.md3abe5da0ba5e4917b8a22275a37efa2318a5a59e4d5798a940b86ec86966c644;
+receipt36576dc4407f1361f272aa638c8b143c9caf1aed0f3643e617b1927cdf622341;
+manifest e02051f01017b8fc149548acfdb38d63579a0fbe88a5fdf0b43f09aed7ea6edf.
+Root full review/all8helpers/132losslessrows/202review+199author bindings and36NPZ
+vectors read/checked; Continuum_local_boost_root_review_coverage.json
+dd76e7dc61c6179b2c729a1d3b181c8acd7c58ba567c346f7bce11421076687c,pending[].
+Root initial NPZ reduction bitwise failure preserved; exact original array strides
+restore all sums without tolerance/value changes. Different realspace KG/Bessel
+vs sparse boost vector errors4.64e-7/4.22e-7 pass2e-6. Coarse failures retained.
+Both rapidity reversals survive8checks, exposing the externally fixed parameter
+convention. Norm/realness survivors retained. Cauchy flux, maximal domains, even
+CAR vacuum, time-slice and Lorentz source covariance are analytic results.
+Physical time has opposite sign to net coordinate time: tau=-t. No actual lattice
+limit follows from this continuum note alone. No analytic Lean/interval/retained claim.
 
-CONTINUUM_LOCAL_BOOST_PROBE.md713lines8c6b8f83afd5c85d1d6aa7601231d89a497024993740f1ba7e7209e1fd6d7ded;
-receipt7929e4e0881e2a7bc671c18498c66c940788c3c5b5dec1d3e0c3e1a93caf689f;
-manifest3536740621bc92ff1d15d2c1875b5bd359826085d02a7601817a71e83da83821.
-Frozen616analytic9fc9cf7f203855faef12e63a9de355cdea525ad007c8ae27ada8c06509d62055
-unchanged. Root read fullanalytic/prior2Diracnotes/protocol/finalappendix/all11helpers,
-author numericalobjects/manifests ownverification still pending. Rootanalyticcoverage
-d173d70e7012fc2aecf05bc2f9856a8e54bbacf792b8c4897dc818f6a63c5215.
-Fresh continuum_local_boost_review active, owns only newreview/evidencedirectory;
-plan beforeauthorhelper/results. Cauchyflux/unitarity,bandmaxdomain/core,
-realCARvacuum/evenspacetimenet/time-slice/Lorentzsourcecovariance.
-U_eta=e^(+i eta B/v),V_eta=U_-eta,W(s)=V_vs. Rationalframe Berry−mv/(2E);
-parallelparentframeR=exp(i atan(vq/m)sigmaz/2),e+=(1,-i)/sqrt2. SourcekH=intO_-tH.
-NETcoordinate tau=-physicalHeisenbergt; preserve bothsigns. Author180nodeswaveerrors
-.655/.436fail;360/720passunchangedgates.6wrongvariant executionsreject,2gauge
-equivalencessurvive; wrongnorm/realness survivors and finitewindowBerryartifact explicit.
-Noauthor/freshreviewcount establishesretainedstatus.
+## Microscopic local boost: author evidence accepted, fresh review active
 
-New MICROSCOPIC_LOCAL_BOOST_LIMIT_PROBE.md515linefrozen7e7c127faf6ceb0fc799252c6aedfcc0a233f2117307c07f8ff03e25212e2240;
-planb8d21e2555c95af29548c8c1e87e5d95e3b038c04b5b14c5ae18a0b0aa42d431;
-freezereceipt56a6c3a8a4e2125fa151bc5ccf27516767ef917337d722a28dc420765c5cc770.
-local_even_continuum authorsonlythisnote+microscopic_local_boost_limit/. Rootfully
-read515+plan and found noformulaerror, requested explicit adjoint integration-by-parts
-justification that W weightedH2vectors belongtoDomclosedB, preservingfreezeand anyruns.
-Actual W_a(s)=exp(-is aBspin),spinXi=lambda^b_-as; faithfulGNS/evenCAR groupidentity.
-Literal Ba={X_a,Da}/2−aDa/2, periodicH1banddomain, finitepositioncore. Exactfiniteopen
-boundarycorrections retained. Directcell D1: ||BaCa f−CaBf||≤aR_a(f),
-R=m/2||xf'||+v/2||xf''||+2v||f'||+7m/4||f||+va/6||f''||.
-W=H2 withxf,xf',xf''inL2. D2Duhamel oncommonsupportcompactboostorbits givesuniform
-O(a)Ccinfty and strongallL2compactboostlimit, telescopes specifiedactualeven-spin
-polynomials to A(Lambda_vs D(I)). Dependsprovisionallyonfrozencontinuumlocalboost
-L7/L14–15/L22–35. NoShannonneeded. No uniformoperatorball/fullscalingnet/odd/3D/
-interactingclaim. Authorcontrols/freshreviewpending. Rootdirectroute152lines
-b7cb8ac2358dbb571711074c77b8dbc073fe70a6748fa4b0aa4de32ef804670e;
-olderShannonlead184lines862fed4f20bcf35f24ee8bbcf8a577d803965b9e2828bb71a43548bfe512644e preserved.
+MICROSCOPIC_LOCAL_BOOST_LIMIT_PROBE.md626lines
+70118e0b1f7fd4fa9d041ce837f967abdd0e2f682a854d38885466fd6e4b125d;
+515line frozen prefix7e7c127faf6ceb0fc799252c6aedfcc0a233f2117307c07f8ff03e25212e2240;
+manifest49c9f516646c9ad2eb9d661c95d3406f23a4745c50332af0d7ba755a63728112,344files;
+receipt f330f335f332f7c6847f5339488f95aed41c58735cc2789d4c2cdd307ec9646d.
+DOMAIN_ADDENDUM.mdb85803ad92cb1c461def6ddf9352511785a2ab1ca172f08a63bb5e5b7fae1207
+preceded all scientific runs: adjoint integration by parts + essential SA gives
+weightedH2 vectors in the closed boost domain. No frozen formula/gate changed.
+Root full proof/all helpers/573baseline or changed rows+74aux values and344bindings
+checked. Microscopic_local_boost_root_author_review_coverage.json
+2cf21a009d975cf3c217d9be614ea217ce6d856c61f0858de9740fcd3a2effb9.
+Actual Ba={Xa,Da}/2-aDa/2, W_a(s)=exp(-is aBspin), spin lambda^b_-as.
+Weighted generator error aR_a, R=m/2||xf'||+v/2||xf''||+2v||f'||+7m/4||f||+va/6||f''||.
+Duhamel on common compact boost supports yields compact-s O(a) on Ccinfty and
+strong convergence on allL2; even polynomial norm limit is local Lorentz action.
+Wrong-origin survives all120weighted bounds, but literal finite-spin controls reject.
+Initial refinement3/20fail3e-7 (max3.570496e-7), preregistered higher resolution
+passes unchanged tolerance (max1.567031e-8). All failures/survivors preserved.
+Fresh microscopic_local_boost_review is active. Preliminary Fourier cell-moment
+comparison detects the missing/reversed origin at first-order even when loose
+D1 survives. Final review/evidence not yet accepted. No exact finite-a Lorentz,
+full scaling net, odd-observable limit, intended3D or interacting claim.
 
-Current agents:root, regularity_joint_packaging(massivev2), local_even_continuum
-(microscopicbridge), continuum_local_boost_review(freshreview). No runningterminal
-session at checkpoint preparation. Never repeat alreadysealedscience for paperwork.
-Next:massivev2/gates/9488extension; clean dependent3notepublication; finishlocalboost
-author/read/review andmicroscopiccontrols/review; then assess fullfinitePoincareword
-andstate-correlation composition or actualinteracting/3Dobligations. Stop only at
-fixeddeadline or documented globalexhaustion. Noeditablepromptfileschanged.
+## Active next derivations and agents
+
+local_even_continuum authors MIXED_LOCAL_POINCARE_CORRELATIONS_PROBE.md and its
+mixed_local_poincare_correlations/ evidence. Root candidate
+ROOT_MIXED_POINCARE_CORRELATION_ROUTE.md182lines027269df4b50ca3e35db7a19d005c4a5114d18a30f24abb7f77421a618e1a255
+is coauthor input, not checked result. Finite-word products use Ca j=I exactly,
+compact-orbit strong convergence and telescope estimates. Floor-rounded lattice
+translations are NOT a homomorphism. K_a+=jPa+Ca is a projection on allK, zero on
+cell-space complement, but K_a+ + C K_a+ C = Q_a rather than I. Actual chosen-state
+Pfaffians required, no replacement vacuum. Uniform finite-polynomial limits only.
+
+current_mass_filter newly assigned bounded author task in CURRENT_MASS_FILTER_PROBE.md
+and current_mass_filter/. ROOT_CURRENT_MASS_FILTER_ROUTE.md129lines
+f58e3483243e6382183e61d8b71c6fbed22befc98aac4c8090fd636ecfdb500f is only a proposal.
+Actual normalized current Pi=dGamma(sin(aq)/a); joint C=H²-v²Pi² has proposed
+threshold n²m². Shrinking spectral window may isolate one-particle sector strongly.
+Finite-a [B,C]=2iv²Pi(H-T) is nonzero; even-observable vacuum vectors have zero
+one-particle component. These walls must not be hidden. Smooth almost-local joint
+filter is a further proof obligation, not a consequence of a sharp projection.
+
+regularity_joint_packaging completed the unexecuted massive delivery preparation;
+available after root execution for the accepted three-note milestone.
+Active agents: root, microscopic_local_boost_review, local_even_continuum,
+current_mass_filter. No live terminal session at checkpoint writing.
+Next: massive delivery; clean dependent three-note milestone; microscopic review;
+mixed composition and current-mass-filter independent checks when ready. Continue
+useful science to16:00:52UTC. No editable prompt files changed.
 
 ## Accepted source identity inventory
 

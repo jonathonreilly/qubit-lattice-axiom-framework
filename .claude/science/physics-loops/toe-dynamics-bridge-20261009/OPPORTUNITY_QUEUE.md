@@ -1,16 +1,15 @@
 # Current ranked decisions
 
-1. Finish actual microscopic boost-to-local-Lorentz proof and decisive controls;
-   complete the fresh continuum-localboost review, then independent bridge review.
-2. Publish already accepted Concrete/Scattering/Continuum family as a regular
-   dependent PR based9488. Add reviewed local-even/localcovariance milestones.
-3. Finish narrow massive publication recovery, preserving canonical and failures;
-   execute8pendingmutants and gates, extend9488. Administrative blocker only.
-4. With the local bridge checked, test compact finite Poincare compositions and
-   chosen-state correlations; physical time/source-coordinate sign stays explicit.
-5. Rank actual interacting perturbations and3D microscopic realization against
-   precise premise obligations and active ownership. No supplied model is physical
-   selection; preserve exact finite-spacing closure failure and all counterexamples.
+1. Complete fresh microscopic boost review; check compact mixed Poincare words
+   and actual chosen-state correlations with inherited source hypotheses explicit.
+2. Execute reviewed massive delivery wrapper and extend regular9488; create clean
+   dependent concrete-chain/scattering/continuum milestone from the exact new head.
+3. Develop the actual-current mass spectral filter, including joint domains,
+   multiparticle thresholds, strong limit, parity and finite-spacing noncentrality.
+4. Package accepted local-even and corrected continuum-localboost with microscopic
+   bridge after complete source-bound checks; preserve original gauge counterexample.
+5. Rank remaining interacting/3D selection obligations without changing axioms or
+   duplicating9475–9477. Supplied free1D model is not intended physical realization.
 
-Continuous discovery; selectedmodel/effort; no duplicated9475–9477work or retained
-promotion. Fixeddeadline2026-10-12T16:00:52Z. No newresearch after; disableheartbeat.
+Continuous discovery; selected model/effort; regular PRs only; no retained promotion.
+Fixed deadline2026-10-12T16:00:52Z. Start no new research after; disable heartbeat.

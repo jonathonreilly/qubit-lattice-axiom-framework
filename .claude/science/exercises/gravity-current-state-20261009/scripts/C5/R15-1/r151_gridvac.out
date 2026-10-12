@@ -1,0 +1,7 @@
+D1 r-component of div(E + T_grid): 0
+D1 N^2 * t-component - (lam' + g1 theta_n): 0
+D3 r-component of div(T_grid) alone: (p_v + rho_v)*Derivative(N(t, r), r)/(A(t, r)**2*N(t, r))  (vanishes only if d_r N = 0 or rho_v + p_v = 0)
+D3 t-component of div(T_grid) alone * N^2: (p_v + rho_v)*(2*A(t, r)*Derivative(B(t, r), t) + B(t, r)*Derivative(A(t, r), t))/(A(t, r)*B(t, r))  (energy injected by creation)
+D2 g' = -p_m(t) - rho_m(t) - 2*Derivative(a(t), (t, 2))/a(t) + 2*Derivative(a(t), t)**2/a(t)**2  -> minus(-2H' - (rho+p)_m): 0
+D2 (lam + rho_v)' + 3H g' (should vanish for any a(t)): 0
+D2 worker's E-alone g = N(lam + p_E) = g' - (rho_v + p_v): Planckian and N-dependent off-FRW; not the observable combination.

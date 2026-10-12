@@ -1,0 +1,17 @@
+g/H^2 = -5.0e+01, k = 0.3: numerical jump = -46.07702739, formula 1 + 1.5g/(k^2+Qbar) = -46.16981132, Dk/(Dk-1.5g) = -46.16981132
+g/H^2 = -5.0e+01, k = 1.0: numerical jump = -28.94184648, formula 1 + 1.5g/(k^2+Qbar) = -29.00000000, Dk/(Dk-1.5g) = -29.00000000
+g/H^2 = -5.0e+01, k = 5.0: numerical jump = -1.82653115, formula 1 + 1.5g/(k^2+Qbar) = -1.83018868, Dk/(Dk-1.5g) = -1.83018868
+g/H^2 = -1.0e+00, k = 0.3: numerical jump = 0.05649068, formula 1 + 1.5g/(k^2+Qbar) = 0.05660377, Dk/(Dk-1.5g) = 0.05660377
+g/H^2 = -1.0e+00, k = 1.0: numerical jump = 0.39920085, formula 1 + 1.5g/(k^2+Qbar) = 0.40000000, Dk/(Dk-1.5g) = 0.40000000
+g/H^2 = -1.0e+00, k = 5.0: numerical jump = 0.94151156, formula 1 + 1.5g/(k^2+Qbar) = 0.94339623, Dk/(Dk-1.5g) = 0.94339623
+g/H^2 = +2.0e-06, k = 0.3: numerical jump = 0.99800415, formula 1 + 1.5g/(k^2+Qbar) = 1.00000189, Dk/(Dk-1.5g) = 1.00000189
+g/H^2 = +2.0e-06, k = 1.0: numerical jump = 0.99800347, formula 1 + 1.5g/(k^2+Qbar) = 1.00000120, Dk/(Dk-1.5g) = 1.00000120
+g/H^2 = +2.0e-06, k = 5.0: numerical jump = 0.99800238, formula 1 + 1.5g/(k^2+Qbar) = 1.00000011, Dk/(Dk-1.5g) = 1.00000011
+g/H^2 = +1.0e+00, k = 0.3: numerical jump = 1.93951431, formula 1 + 1.5g/(k^2+Qbar) = 1.94339623, Dk/(Dk-1.5g) = 1.94339623
+g/H^2 = +1.0e+00, k = 1.0: numerical jump = 1.59680388, formula 1 + 1.5g/(k^2+Qbar) = 1.60000000, Dk/(Dk-1.5g) = 1.60000000
+g/H^2 = +1.0e+00, k = 5.0: numerical jump = 1.05449298, formula 1 + 1.5g/(k^2+Qbar) = 1.05660377, Dk/(Dk-1.5g) = 1.05660377
+
+Real-space instantaneous response to a unit monopole impulse (units c = H = 1, Qbar = 1.35 H0^2 today):
+  g/H^2 = 3e-06 (today, backreaction-sized g (suggested magnitude)): Delta deltadot at r = 0.01, 0.1, 0.5, 1 c/H: 3.54e-05, 3.19e-06, 4.01e-07, 1.12e-07
+  g/H^2 = 1 (transition, g ~ H^2): Delta deltadot at r = 0.01, 0.1, 0.5, 1 c/H: 1.18e+01, 1.06e+00, 1.34e-01, 3.73e-02
+  g/H^2 = 100 (transition with reader excursion (R14-5 runs reach |g| ~ 1e2-1e3 H^2)): Delta deltadot at r = 0.01, 0.1, 0.5, 1 c/H: 1.18e+03, 1.06e+02, 1.34e+01, 3.73e+00

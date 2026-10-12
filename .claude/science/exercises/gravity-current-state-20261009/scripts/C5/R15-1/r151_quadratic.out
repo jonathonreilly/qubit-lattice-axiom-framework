@@ -1,0 +1,16 @@
+background N-eq (=0): -((2*V(chi0(t)) + 2*lam(t) + Derivative(chi0(t), t)**2)*a(t)**2 - 6*Derivative(a(t), t)**2)*a(t)/2
+background a-eq (=0): -3*V(chi0(t)) + 3*g(t) - 3*lam(t) + 3*Derivative(chi0(t), t)**2/2 + 6*Derivative(a(t), (t, 2))/a(t) + 3*Derivative(a(t), t)**2/a(t)**2
+L1 averaged (should vanish for cos modes): 0
+alpha^2 coefficient: -(6*H**2 - chidot**2)*a(t)**3/4
+kinetic matrix (zeta, dchi):
+⎡ 2  3          3    ⎤
+⎢χ̇ ⋅a (t)   -χ̇⋅a (t) ⎥
+⎢────────   ─────────⎥
+⎢     2        2⋅H   ⎥
+⎢  2⋅H               ⎥
+⎢                    ⎥
+⎢    3         3     ⎥
+⎢-χ̇⋅a (t)     a (t)  ⎥
+⎢─────────    ─────  ⎥
+⎣   2⋅H         2    ⎦
+det K = 0

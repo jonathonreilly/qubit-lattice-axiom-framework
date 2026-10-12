@@ -1,0 +1,15 @@
+K_ijK^ij on r = 3m/2 limiting maximal surface = 0.8889 / m^2
+cosmos Qt = 0.01 /m^2 (stands for ~1.35 H0^2; real value ~(mH0)^2 ~ 1e-46 for a stellar BH)
+   throat length   1 m: CMC <N>=1: N_min = 9.7581e-02, S = 1.0221e-02, bound S/supQ = 1.1498e-02, ratio = 8.4864 | maximal (S=0) throat lapse = 6.764e-01
+   throat length   5 m: CMC <N>=1: N_min = 1.3248e-02, S = 1.0229e-02, bound S/supQ = 1.1507e-02, ratio = 1.1513 | maximal (S=0) throat lapse = 1.794e-02
+   throat length  10 m: CMC <N>=1: N_min = 1.1523e-02, S = 1.0229e-02, bound S/supQ = 1.1507e-02, ratio = 1.0014 | maximal (S=0) throat lapse = 1.609e-04
+   throat length  20 m: CMC <N>=1: N_min = 1.1507e-02, S = 1.0229e-02, bound S/supQ = 1.1507e-02, ratio = 1.0000 | maximal (S=0) throat lapse = 1.294e-08
+   throat length  40 m: CMC <N>=1: N_min = 1.1507e-02, S = 1.0229e-02, bound S/supQ = 1.1507e-02, ratio = 1.0000 | maximal (S=0) throat lapse = 8.371e-17
+   throat length  80 m: CMC <N>=1: N_min = 1.1507e-02, S = 1.0229e-02, bound S/supQ = 1.1507e-02, ratio = 1.0000 | maximal (S=0) throat lapse = 3.503e-33
+cosmos Qt = 0.0001 /m^2 (stands for ~1.35 H0^2; real value ~(mH0)^2 ~ 1e-46 for a stellar BH)
+   throat length   1 m: CMC <N>=1: N_min = 1.2885e-02, S = 1.3267e-04, bound S/supQ = 1.4926e-04, ratio = 86.3276 | maximal (S=0) throat lapse = 6.764e-01
+   throat length   5 m: CMC <N>=1: N_min = 3.9951e-04, S = 1.3283e-04, bound S/supQ = 1.4944e-04, ratio = 2.6734 | maximal (S=0) throat lapse = 1.794e-02
+   throat length  10 m: CMC <N>=1: N_min = 1.5168e-04, S = 1.3283e-04, bound S/supQ = 1.4944e-04, ratio = 1.0150 | maximal (S=0) throat lapse = 1.609e-04
+   throat length  20 m: CMC <N>=1: N_min = 1.4944e-04, S = 1.3283e-04, bound S/supQ = 1.4944e-04, ratio = 1.0000 | maximal (S=0) throat lapse = 1.294e-08
+   throat length  40 m: CMC <N>=1: N_min = 1.4944e-04, S = 1.3283e-04, bound S/supQ = 1.4944e-04, ratio = 1.0000 | maximal (S=0) throat lapse = 8.371e-17
+   throat length  80 m: CMC <N>=1: N_min = 1.4944e-04, S = 1.3283e-04, bound S/supQ = 1.4944e-04, ratio = 1.0000 | maximal (S=0) throat lapse = 3.503e-33

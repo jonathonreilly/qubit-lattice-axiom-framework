@@ -4994,3 +4994,13 @@ Readings:
   - New budget term: constraint-channel record-noise energy, ~ρ_Λ × (1.2–2e12) if non-radiative noise gravitates (premise iii).
 
   Referee running.
+- **R15-1 (CMC sector pathologies):** worker reading **FAIL on (a)**, pending the referee.
+  - **(a) Signalling.** Lemma S: when g ≠ 0, a local impulse moves the gauge-invariant comoving density rate everywhere at once through a Yukawa kernel of range ~½ Hubble. Lemma C forces g ≠ 0 during every absorbed vacuum change. This influence is ordered by the global CMC time, so it cannot form a causal loop. If such influence does not count as "signalling", the reading becomes INCONCLUSIVE.
+  - **(b) Ghosts, gradients, strong coupling.** One scalar, with sound speed → 1. A ghost appears for g > 6H² and a tachyon for g ≳ 1–5H². R14-5's unregularized reader enters the bad region. Cubic order is OPEN.
+  - **(c) Collapse.** Lemma F′ gives a lapse floor N ≳ 1.5(mH₀)², so time does not freeze inside black holes (this corrects R14-5). Global CMC existence remains a hypothesis.
+  - **(d) Grid vacuum.** Lemma V: an isotropic site-frame vacuum of any w is absorbed. This corrects R14-5's K5 "g ~ 1e122 H²". The outcome turns on the AX source/action bridge:
+    - (d-i) resolved if the vacuum has no separate conservation law;
+    - (d-ii) priced at one tuning or exact pairing if it does.
+  - **Prices**, renamed to avoid a clash with R15-2: P-r15-1a (instantaneous g-influence), P-r15-1b (the reader keeps g ≲ 1–6H²), P-r15-1c (CMC foliation existence), P-vac′.
+
+  Referee running. The R14-5 referee verdict is archived.

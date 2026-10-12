@@ -1,0 +1,9 @@
+free symbols: ['D', 'Dd', 'H', 'Hdot', 'Vp', 'Vpp', 'Z', 'Zd', 'chidot', 'k', 't']
+c3 (qd*Zd coefficient) = 0
+Z^2 coefficient: aa*(2*Hdot + chidot**2)*(6*H**2*aa**2*chidot**2 + 4*H**2*k**2 + 2*Hdot*aa**2*chidot**2 + aa**2*chidot**4)/(16*H**4)
+has qdd? False
+A (qdot^2 coefficient x2): H**2*aa**3*(3*aa**2*chidot**2 + 2*k**2)/(6*H**2*aa**2*chidot**2 + 4*H**2*k**2 + 2*Hdot*aa**2*chidot**2 + aa**2*chidot**4)
+-(d^2 L/dq^2) = C k^2/a^2 + M : aa*(6*H**2*Vpp*aa**4*chidot**2 + 4*H**2*Vpp*aa**2*k**2 + 9*H**2*aa**4*chidot**4 + 12*H**2*aa**2*chidot**2*k**2 + 4*H**2*k**4 + 6*H*Vp*aa**4*chidot**3 + 4*H*Vp*aa**2*chidot*k**2 + 2*Hdot*Vp**2*aa**4 + 2*Hdot*Vpp*aa**4*chidot**2 + 3*Hdot*aa**4*chidot**4 + 2*Hdot*aa**2*chidot**2*k**2 + Vp**2*aa**4*chidot**2 + Vpp*aa**4*chidot**4)/(2*(6*H**2*aa**2*chidot**2 + 4*H**2*k**2 + 2*Hdot*aa**2*chidot**2 + aa**2*chidot**4))
+q*qd cross coefficient (total-derivative piece): -aa**3*chidot*(3*H*aa**2*chidot**3 + 2*H*chidot*k**2 + 2*Hdot*Vp*aa**2 + Vp*aa**2*chidot**2)/(2*(6*H**2*aa**2*chidot**2 + 4*H**2*k**2 + 2*Hdot*aa**2*chidot**2 + aa**2*chidot**4))
+Z solution denominator (factored): -6*H**2*aa**2*chidot**2 - 4*H**2*k**2 + aa**2*chidot**2*g
+Z solution at g = 0 (limit): aa**2*(H*Vp*q + H*chidot*qd - chidot**3*q/2)/(H*(3*aa**2*chidot**2 + 2*k**2))

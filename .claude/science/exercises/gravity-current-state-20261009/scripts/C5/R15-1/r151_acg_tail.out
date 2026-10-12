@@ -1,0 +1,15 @@
+t = 2.0: control (Vphps=0) max|psi| outside cone = 1.25e-15;  inside max = 1.16e-01
+   Vphps = 0.1: max|psi| outside cone = 1.241e-04  (ratio to Vphps^2 = 1.241e-02);  psi at x = t+w+2: +2.171e-05, at t+w+6: +3.976e-07
+   Vphps = 0.3: max|psi| outside cone = 1.149e-03  (ratio to Vphps^2 = 1.277e-02);  psi at x = t+w+2: +2.037e-04, at t+w+6: +3.848e-06
+   Vphps = 0.5: max|psi| outside cone = 3.374e-03  (ratio to Vphps^2 = 1.350e-02);  psi at x = t+w+2: +6.139e-04, at t+w+6: +1.228e-05
+   Vphps = 0.9: max|psi| outside cone = 1.319e-02  (ratio to Vphps^2 = 1.628e-02);  psi at x = t+w+2: +2.601e-03, at t+w+6: +6.131e-05
+t = 5.0: control (Vphps=0) max|psi| outside cone = 1.93e-15;  inside max = 8.47e-02
+   Vphps = 0.1: max|psi| outside cone = 9.809e-05  (ratio to Vphps^2 = 9.809e-03);  psi at x = t+w+2: +1.731e-05, at t+w+6: +3.256e-07
+   Vphps = 0.3: max|psi| outside cone = 1.053e-03  (ratio to Vphps^2 = 1.169e-02);  psi at x = t+w+2: +2.009e-04, at t+w+6: +4.466e-06
+   Vphps = 0.5: max|psi| outside cone = 4.132e-03  (ratio to Vphps^2 = 1.653e-02);  psi at x = t+w+2: +8.936e-04, at t+w+6: +2.510e-05
+   Vphps = 0.9: max|psi| outside cone = 4.098e-02  (ratio to Vphps^2 = 5.060e-02);  psi at x = t+w+2: +1.136e-02, at t+w+6: +4.873e-04
+t = 10.0: control (Vphps=0) max|psi| outside cone = 7.42e-16;  inside max = 6.14e-02
+   Vphps = 0.1: max|psi| outside cone = 4.889e-06  (ratio to Vphps^2 = 4.889e-04);  psi at x = t+w+2: +8.940e-07, at t+w+6: +1.818e-08
+   Vphps = 0.3: max|psi| outside cone = 1.941e-05  (ratio to Vphps^2 = 2.156e-04);  psi at x = t+w+2: +7.678e-06, at t+w+6: +3.840e-07
+   Vphps = 0.5: max|psi| outside cone = 9.537e-05  (ratio to Vphps^2 = 3.815e-04);  psi at x = t+w+2: +5.115e-05, at t+w+6: +6.662e-06
+   Vphps = 0.9: max|psi| outside cone = 3.954e-02  (ratio to Vphps^2 = 4.881e-02);  psi at x = t+w+2: +2.074e-02, at t+w+6: +2.165e-03

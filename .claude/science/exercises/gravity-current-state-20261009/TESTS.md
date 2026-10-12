@@ -5255,3 +5255,31 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **No new price;** P73 still applies.
 
   Referee running.
+
+### C5 Round 16, item 7 (pre-registered 22:52Z, before launch)
+
+**R16-7. R15-5's decisive computation: does a finite-slot N-type model at strong penalty have an Einstein–Hilbert TT stiffness?**
+- **Plain question.** R15-5 (worker) shows:
+  - real-valued fields give exactly two graviton modes;
+  - qubits give k³ at every finite order of perturbation theory.
+
+  What is left is the non-perturbative regime, where the penalties are comparable to the other couplings. The signature of a light-speed graviton there is a static TT susceptibility χ_TT(k) ~ 1/k², rather than 1/k⁴ or 1/k⁶.
+- **Setting.**
+  - A Z_N clock / finite-slot version of the N-type (R15-5 §1; N0914), with penalties U comparable to the couplings J and g.
+  - Any controlled non-perturbative method that fits the machine. The method and its control parameter are stated before running. Candidates:
+    - exact diagonalization on the smallest cluster with ≥ 2 nonzero k;
+    - sign-free QMC in a dual basis, if one exists;
+    - a variational/tensor ansatz with an error bar;
+    - large-N clock or self-consistent harmonic approximation, labelled uncontrolled if so.
+  - Excluded: claims from uncontrolled methods counted as PASS.
+- **Prior art (count once):** R15-5 and its referee (when back), R13-2's X-S sign problem, R12-5, R11-2, Gu–Wen, Xu, and the Hermele–Fisher–Balents spin-ice emergent photon (a comparator for the U(1) analogue).
+- **Probes.**
+  - (a) Prove or find a sign-free basis.
+  - (b) Compute χ_TT(k) and the scalar-source static response on the largest feasible system. Fit the k-power, with its subtraction named.
+  - (c) Run a U(1) spin-ice analogue control with the same method: it must reproduce χ ~ 1/k² for the emergent photon.
+  - (d) Prices.
+- **FIXED readings.**
+  - **PRODUCED-EVIDENCE:** a controlled method that passes the control (c) and gives χ_TT ~ 1/k² with the scalar response 1/k², with error bars.
+  - **NOT-PRODUCED-EVIDENCE:** the same method passes the control and gives a steeper power.
+  - **INCONCLUSIVE:** the control fails, the method is uncontrolled, or the sizes are too small to fit a power.
+- **Expectation.** INCONCLUSIVE, because of system size. A sign-free dual basis would itself be a durable result.

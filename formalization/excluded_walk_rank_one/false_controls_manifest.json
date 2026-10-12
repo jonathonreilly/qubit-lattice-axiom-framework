@@ -1,0 +1,140 @@
+{
+  "main_source_sha256": "2f5260a23eecc90c6bf3fabe9e26c4c05a5595fa151b98010097a7ee501b22ae",
+  "main_olean_sha256": "649514dc0d0ebd7995cac17f6c52dfdfb7e1651582489f8dcd7bddda5f297858",
+  "scope": "six mathematically false statements, plus three compiled scalar boundary witnesses",
+  "controls": [
+    {
+      "case": "FalseCoherentSign",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+        "-R",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/controls/FalseCoherentSign.lean"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "reached_intended_mathematical_check": true,
+      "elapsed_seconds": 50.0082974168472,
+      "timeout_seconds": 180,
+      "source": "controls/FalseCoherentSign.lean",
+      "source_sha256": "097b83e14a414ee9aee2f38d966dac40473f63bbe088f424d90d8cc1f65ec1c6",
+      "log": "controls/FalseCoherentSign.log",
+      "log_sha256": "8995a8ba0644f86d670b9b1e9b2feacdddf6b1b7344f512125da551f74daa348"
+    },
+    {
+      "case": "FalseMissingCapWeight",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+        "-R",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/controls/FalseMissingCapWeight.lean"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "reached_intended_mathematical_check": true,
+      "elapsed_seconds": 64.80096795922145,
+      "timeout_seconds": 180,
+      "source": "controls/FalseMissingCapWeight.lean",
+      "source_sha256": "9eca80177b2de8aae95fd7017fc6192c36057ce71284349890e03697fb4fd7be",
+      "log": "controls/FalseMissingCapWeight.log",
+      "log_sha256": "1313a666cf355484b3e435f285648960753a6d4b1461f896b06aeb513f0c237a"
+    },
+    {
+      "case": "FalseMissingConjugation",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+        "-R",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/controls/FalseMissingConjugation.lean"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "reached_intended_mathematical_check": true,
+      "elapsed_seconds": 50.111424000002444,
+      "timeout_seconds": 180,
+      "source": "controls/FalseMissingConjugation.lean",
+      "source_sha256": "beba3e6f65fd2401dafbb289a63e9044da7bf54f5b92dbff3038c6575e6844f8",
+      "log": "controls/FalseMissingConjugation.log",
+      "log_sha256": "dbeb879b5ad97a29dad37b89d194a6fd44e4fb40db4cf7f38bf49d7affbf7ede"
+    },
+    {
+      "case": "FalseOverlappingOutgoingZero",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+        "-R",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/controls/FalseOverlappingOutgoingZero.lean"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "reached_intended_mathematical_check": true,
+      "elapsed_seconds": 58.18191033415496,
+      "timeout_seconds": 180,
+      "source": "controls/FalseOverlappingOutgoingZero.lean",
+      "source_sha256": "13685b59e4f3d87b02bbfd858d897aa20def796a25f9ac5f3d269bcf37838231",
+      "log": "controls/FalseOverlappingOutgoingZero.log",
+      "log_sha256": "75b2c57dabc5392233fd7d6c0199315a3af6d1caf5615fcf2cc259cc6c07d684"
+    },
+    {
+      "case": "FalsePhaseUnitarity",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+        "-R",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/controls/FalsePhaseUnitarity.lean"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "reached_intended_mathematical_check": true,
+      "elapsed_seconds": 93.38219537492841,
+      "timeout_seconds": 180,
+      "source": "controls/FalsePhaseUnitarity.lean",
+      "source_sha256": "97b9cd99fafe278d99878448c48d903c0358f8cad9f7d59853613a2b8f9b0225",
+      "log": "controls/FalsePhaseUnitarity.log",
+      "log_sha256": "26cb2bc63e7677e4fd77e7fc6916eed510dd700d05a3f8f068dd8d3290a2e1e7"
+    },
+    {
+      "case": "FalseVectorNormalization",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+        "-R",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/controls/FalseVectorNormalization.lean"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "reached_intended_mathematical_check": true,
+      "elapsed_seconds": 57.63840466598049,
+      "timeout_seconds": 180,
+      "source": "controls/FalseVectorNormalization.lean",
+      "source_sha256": "e22d169b53b61a5105f6612c8d0138b056a70c3d22a4441437980815b178ff6b",
+      "log": "controls/FalseVectorNormalization.log",
+      "log_sha256": "0b039fa67c7e292729cc8bb13c4dcde41896a17541af7e264bbfc74d3cc7df11"
+    },
+    {
+      "case": "PositiveBoundaryWitnesses",
+      "command": [
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lean",
+        "-R",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit",
+        "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/controls/PositiveBoundaryWitnesses.lean"
+      ],
+      "cwd": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/mathlib",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "reached_intended_mathematical_check": true,
+      "elapsed_seconds": 93.69410137506202,
+      "timeout_seconds": 180,
+      "source": "controls/PositiveBoundaryWitnesses.lean",
+      "source_sha256": "bd31a06c53ee5e66f50f120c9d6b7c86fcdcec6f0745384e8113563699342ea5",
+      "log": "controls/PositiveBoundaryWitnesses.log",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

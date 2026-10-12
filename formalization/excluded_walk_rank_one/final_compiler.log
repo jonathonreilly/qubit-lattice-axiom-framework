@@ -1,0 +1,58 @@
+'RankOneScattering.scattering_unitary' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankOneScattering.observable_difference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankOneScattering.centered_orthogonal' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankOneScattering.pure_contact_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankOneScattering.disjoint_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankOneScattering.coherent_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankOneScattering.coherent_current' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankOneScattering.cap_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankOneScattering.cap_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RankOneScattering.cap_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+@RankOneScattering.scattering_unitary : ∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℂ E]
+  [inst_2 : CompleteSpace E] {v : E} {s : ℂ}, ‖v‖ = 1 → ‖s‖ = 1 → RankOneScattering.scattering v s ∈ unitary (E →L[ℂ] E)
+@RankOneScattering.observable_difference : ∀ {E : Type u_1} [inst : NormedAddCommGroup E]
+  [inst_1 : InnerProductSpace ℂ E] [inst_2 : CompleteSpace E] (g : E →L[ℂ] E),
+  adjoint g = g →
+    ∀ (v : E) {s : ℂ},
+      ‖s‖ = 1 →
+        adjoint (RankOneScattering.scattering v s) ∘SL g ∘SL RankOneScattering.scattering v s - g =
+          (s - 1) • ((rankOne ℂ) (RankOneScattering.centered g v)) v +
+            ((starRingEnd ℂ) s - 1) • ((rankOne ℂ) v) (RankOneScattering.centered g v)
+@RankOneScattering.coherent_normalized : ∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℂ E]
+  {v u : E}, ‖v‖ = 1 → ‖u‖ = 1 → ⟪v, u⟫_ℂ = 0 → ∀ {r : ℝ}, 2 * r ^ 2 = 1 → ‖RankOneScattering.coherent v u r‖ = 1
+@RankOneScattering.coherent_current : ∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℂ E]
+  [inst_2 : CompleteSpace E] (g : E →L[ℂ] E),
+  adjoint g = g →
+    ∀ {v u : E},
+      ‖v‖ = 1 →
+        ‖u‖ = 1 →
+          ⟪v, u⟫_ℂ = 0 →
+            ∀ {s : ℂ},
+              ‖s‖ = 1 →
+                ∀ (sigma : ℝ),
+                  RankOneScattering.centered g v = ↑sigma • u →
+                    ∀ {r : ℝ},
+                      2 * r ^ 2 = 1 →
+                        ⟪RankOneScattering.coherent v u r,
+                            (adjoint (RankOneScattering.scattering v s) ∘SL g ∘SL RankOneScattering.scattering v s - g)
+                              (RankOneScattering.coherent v u r)⟫_ℂ =
+                          ↑(sigma * s.im)
+@RankOneScattering.pure_contact_zero : ∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℂ E]
+  (g : E →L[ℂ] E) {v : E} {s : ℂ},
+  ‖v‖ = 1 →
+    ‖s‖ = 1 → ⟪(RankOneScattering.scattering v s) v, g ((RankOneScattering.scattering v s) v)⟫_ℂ - ⟪v, g v⟫_ℂ = 0
+@RankOneScattering.cap_normalized : ∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℂ E]
+  (A : E →L[ℂ] E) (v : E), A v ≠ 0 → ‖RankOneScattering.capVector A v‖ = 1
+@RankOneScattering.cap_overlap : ∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℂ E]
+  [inst_2 : CompleteSpace E] (A : E →L[ℂ] E),
+  adjoint A = A → A ∘SL A = A → ∀ (v : E), A v ≠ 0 → ⟪v, RankOneScattering.capVector A v⟫_ℂ = ↑‖A v‖
+@RankOneScattering.cap_transfer : ∀ {E : Type u_1} [inst : NormedAddCommGroup E] [inst_1 : InnerProductSpace ℂ E]
+  [inst_2 : CompleteSpace E] (A Q : E →L[ℂ] E),
+  adjoint A = A →
+    A ∘SL A = A →
+      ∀ (v : E),
+        A v ≠ 0 →
+          ∀ (s : ℂ),
+            Q (A v) = 0 →
+              ‖Q ((RankOneScattering.scattering v s) (RankOneScattering.capVector A v))‖ ^ 2 =
+                ‖s - 1‖ ^ 2 * ‖A v‖ ^ 2 * ‖Q v‖ ^ 2

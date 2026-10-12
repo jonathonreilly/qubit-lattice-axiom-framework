@@ -1,0 +1,83 @@
+{
+  "mathlib_commit": "939d5d5d9e6f07d1d8c80a16fa3fa39a7518b716",
+  "source_files": {
+    "Mathlib/Analysis/InnerProductSpace/Adjoint.lean": {
+      "sha256": "e14354dd8e35f68858ca8b264f65b165d7aac56da2f65934b62fc66dd75c0c45",
+      "lines": 1081
+    },
+    "Mathlib/Analysis/InnerProductSpace/LinearMap.lean": {
+      "sha256": "8b88e65383029c397906c6029ea3d593502074a222207b13226b6af5b9bf0aba",
+      "lines": 418
+    },
+    "Mathlib/Analysis/InnerProductSpace/Basic.lean": {
+      "sha256": "82474b89f5565ab39507c3a9ac48044d6f266407c36dbc2d20be1e5a12ccf89d",
+      "lines": 1033
+    },
+    "Mathlib/Algebra/Star/Unitary.lean": {
+      "sha256": "2048264165355c0466762359dbbd2429dc5f8580f092e97b7676cd1ea4f7aab3",
+      "lines": 500
+    },
+    "Mathlib/Tactic/Module.lean": {
+      "sha256": "10bd98b498247affbba4b2b016d4e7e0093b6b4ba1dda2bb17c77ce2a9a9affb",
+      "lines": 767
+    },
+    "Mathlib/Tactic/Ring.lean": {
+      "sha256": "d3ef5c49ebbd1108ce3f935e5ad95485e143abf02f28c027dba4bb6f3be8196e",
+      "lines": 7
+    },
+    "Mathlib/Tactic/NormNum.lean": {
+      "sha256": "dca9500572c6d887000f3de17c7145b53bf35233afc1ad8026cca908cec7a2fe",
+      "lines": 13
+    },
+    "lake-manifest.json": {
+      "sha256": "0d0cfc1d01f64c34bbd40e858428b83ede48be9f6e065339d63ebb851bd49a57",
+      "lines": 86
+    },
+    "lean-toolchain": {
+      "sha256": "8f89aa44fccdb1a0b6cc768c7c9f54b94cd40e47a08d582f82d1235f13075cf7",
+      "lines": 1
+    },
+    "Mathlib/Analysis/Complex/Basic.lean": {
+      "sha256": "b0853cb846060f8762aa1e292c97e3c0bd35fc7bc84f8ddffdd744fc0326bdee",
+      "lines": 723
+    }
+  },
+  "packages": {
+    "Cli": "82c11b9717083154aefc5fe8d4cba4bbf046298f",
+    "LeanSearchClient": "234d9e074fbd6e911b920baf32db5291c3125be0",
+    "Qq": "e7c4cdd2f1bf9df361ef7f621b4d6867012ab65e",
+    "aesop": "04879b1e1de744d5c9777c8cf63fa55a8f652e5e",
+    "batteries": "b71aaf60877e673fdb921f06f20987d12ee8a290",
+    "importGraph": "579f558774c4ac6840e715ba60dabf3030619349",
+    "plausible": "aef59637faa9e85fa2486acaaf906ce3f572af7c",
+    "proofwidgets": "d5ad4a0b79fa7f9818fe1380d05a3f6143823c09"
+  },
+  "tracked_status": "",
+  "manual_reading_coverage": {
+    "SCOPED_OBLIGATIONS.md": "complete",
+    "RankOneScattering.lean": "complete final 202 lines",
+    "Mathlib/Analysis/InnerProductSpace/Adjoint.lean": [
+      "1-180",
+      "250-280",
+      "310-345"
+    ],
+    "Mathlib/Analysis/InnerProductSpace/LinearMap.lean": [
+      "270-365"
+    ],
+    "Mathlib/Analysis/InnerProductSpace/Basic.lean": [
+      "48-125",
+      "202-216",
+      "372-386"
+    ],
+    "Mathlib/Analysis/Complex/Basic.lean": [
+      "350-360"
+    ],
+    "Mathlib/Algebra/Star/Unitary.lean": [
+      "32-72"
+    ],
+    "Mathlib/Tactic/Module.lean": [
+      "1-160"
+    ],
+    "limits": "Other imported library proofs/tactic implementations were not manually read in full; final proof terms were elaborated by the pinned Lean runtime."
+  }
+}

@@ -1,0 +1,62 @@
+=== Class H1 (radiation + dust + non-increasing vacuum, latent heat to radiation) ===
+[H1] D=0.01 W=0.15 alpha=D/rho_nc(uT)=+0.00949 fdust=0.0 mass_thr=None
+   max|eps| = 1.83e-10;  eps(end) = -1.48e-10;  min R/rho_nc = 1.0000
+   MR g/H^2 in [-3.454e-02, +1.040e-06];  oracle g/H^2 in [-3.454e-02, -0.000e+00];  max|MR - oracle| = 1.23e-06
+   Lt/rho_nc at end = -1.481e-10;  Lt/rho_nc x e^{3u} trend (dust-like if const): -7.858e-12 vs -4.444e-12
+   int|g|/H^2 du = 0.011 (alpha/(1+alpha) = 0.009);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.003
+[H1] D=0.05 W=0.3 alpha=D/rho_nc(uT)=+0.047 fdust=0.0 mass_thr=None
+   max|eps| = 1.69e-08;  eps(end) = -1.53e-08;  min R/rho_nc = 1.0000
+   MR g/H^2 in [-1.118e-01, +3.180e-04];  oracle g/H^2 in [-1.118e-01, -0.000e+00];  max|MR - oracle| = 3.56e-02
+   Lt/rho_nc at end = -1.532e-08;  Lt/rho_nc x e^{3u} trend (dust-like if const): -7.745e-10 vs +0.000e+00
+   int|g|/H^2 du = 0.088 (alpha/(1+alpha) = 0.045);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.022
+[H1] D=0.3 W=0.3 alpha=D/rho_nc(uT)=+0.266 fdust=0.0 mass_thr=None
+   max|eps| = 1.94e-08;  eps(end) = -1.84e-08;  min R/rho_nc = 1.0000
+   MR g/H^2 in [-5.838e-01, +1.621e-13];  oracle g/H^2 in [-5.838e-01, -0.000e+00];  max|MR - oracle| = 3.55e-02
+   Lt/rho_nc at end = -1.838e-08;  Lt/rho_nc x e^{3u} trend (dust-like if const): -9.335e-10 vs -5.444e-10
+   int|g|/H^2 du = 0.441 (alpha/(1+alpha) = 0.210);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.112
+[H1] D=0.7 W=0.3 alpha=D/rho_nc(uT)=+0.568 fdust=0.0 mass_thr=None
+   max|eps| = 1.81e-08;  eps(end) = -1.39e-08;  min R/rho_nc = 1.0000
+   MR g/H^2 in [-1.147e+00, +1.748e-02];  oracle g/H^2 in [-1.147e+00, -0.000e+00];  max|MR - oracle| = 1.76e-02
+   Lt/rho_nc at end = -1.389e-08;  Lt/rho_nc x e^{3u} trend (dust-like if const): -7.111e-10 vs -1.411e-10
+   int|g|/H^2 du = 0.833 (alpha/(1+alpha) = 0.362);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.210
+[H1] D=0.01 W=0.02 alpha=D/rho_nc(uT)=+0.00948 fdust=0.0 mass_thr=None
+   max|eps| = 8.33e-13;  eps(end) = -6.13e-13;  min R/rho_nc = 1.0000
+   MR g/H^2 in [-2.371e-01, +2.323e-06];  oracle g/H^2 in [-2.373e-01, -0.000e+00];  max|MR - oracle| = 2.30e-04
+   Lt/rho_nc at end = -6.132e-13;  Lt/rho_nc x e^{3u} trend (dust-like if const): -3.958e-14 vs -1.015e-14
+   int|g|/H^2 du = 0.010 (alpha/(1+alpha) = 0.009);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.002
+[H1] D=0.3 W=0.005 alpha=D/rho_nc(uT)=+0.25 fdust=0.0 mass_thr=None
+   max|eps| = 3.26e-13;  eps(end) = -2.33e-13;  min R/rho_nc = 1.0000
+   MR g/H^2 in [-2.466e+01, +1.219e-06];  oracle g/H^2 in [-2.499e+01, -0.000e+00];  max|MR - oracle| = 3.30e-01
+   Lt/rho_nc at end = -2.333e-13;  Lt/rho_nc x e^{3u} trend (dust-like if const): -1.689e-14 vs +0.000e+00
+   int|g|/H^2 du = 0.251 (alpha/(1+alpha) = 0.200);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.064
+[H1] D=5.0 W=0.05 alpha=D/rho_nc(uT)=+1.54 fdust=0.0 mass_thr=None
+   max|eps| = 2.89e-13;  eps(end) = -2.18e-13;  min R/rho_nc = 1.0000
+   MR g/H^2 in [-1.703e+01, +2.999e-11];  oracle g/H^2 in [-1.704e+01, -0.000e+00];  max|MR - oracle| = 3.02e-03
+   Lt/rho_nc at end = -2.176e-13;  Lt/rho_nc x e^{3u} trend (dust-like if const): -2.419e-14 vs -1.059e-14
+   int|g|/H^2 du = 1.766 (alpha/(1+alpha) = 0.607);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.444
+[H1] D=50.0 W=0.01 alpha=D/rho_nc(uT)=+1.97 fdust=0.0 mass_thr=None
+   max|eps| = 1.50e-14;  eps(end) = -1.38e-14;  min R/rho_nc = 1.0000
+   MR g/H^2 in [-1.520e+02, +9.498e-07];  oracle g/H^2 in [-1.516e+02, -0.000e+00];  max|MR - oracle| = 6.91e-01
+   Lt/rho_nc at end = -1.377e-14;  Lt/rho_nc x e^{3u} trend (dust-like if const): -1.210e-14 vs -1.188e-14
+   int|g|/H^2 du = 3.886 (alpha/(1+alpha) = 0.663);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.974
+=== Outside H1 ===
+[latent heat 30% to dust] D=0.3 W=0.05 alpha=D/rho_nc(uT)=+0.254 fdust=0.3 mass_thr=None
+   max|eps| = 1.48e-01;  eps(end) = -1.48e-01;  min R/rho_nc = 0.8516
+   MR g/H^2 in [-2.397e+00, +2.931e-13];  oracle g/H^2 in [-2.540e+00, -0.000e+00];  max|MR - oracle| = 5.24e-01
+   Lt/rho_nc at end = -1.484e-01;  Lt/rho_nc x e^{3u} trend (dust-like if const): -2.271e-02 vs -2.271e-02
+   int|g|/H^2 du = 0.255 (alpha/(1+alpha) = 0.202);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.065
+[vacuum RISE (q_lat<0, NEC holds)] D=-0.3 W=0.05 alpha=D/rho_nc(uT)=-0.327 fdust=0.0 mass_thr=None
+   max|eps| = 1.76e+01;  eps(end) = -1.76e+01;  min R/rho_nc = -16.6468
+   MR g/H^2 in [-3.480e+03, +7.390e+02];  oracle g/H^2 in [+0.000e+00, +3.376e+00];  max|MR - oracle| = 3.48e+03
+   Lt/rho_nc at end = -1.765e+01;  Lt/rho_nc x e^{3u} trend (dust-like if const): -1.006e+00 vs -1.006e+00
+   int|g|/H^2 du = 0.343 (alpha/(1+alpha) = -0.485);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.087
+[species non-relativistic (no vacuum change)] D=0.0 W=0.3 alpha=D/rho_nc(uT)=+0 fdust=0.0 mass_thr=(0.5, 0.3, 0.5)
+   max|eps| = 2.42e-01;  eps(end) = -2.42e-01;  min R/rho_nc = 0.7577
+   MR g/H^2 in [-9.691e-01, +2.003e-02];  oracle g/H^2 in [-0.000e+00, -0.000e+00];  max|MR - oracle| = 9.69e-01
+   Lt/rho_nc at end = -2.423e-01;  Lt/rho_nc x e^{3u} trend (dust-like if const): -8.573e-02 vs -8.573e-02
+   int|g|/H^2 du = 0.000 (alpha/(1+alpha) = 0.000);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.000
+[species non-relativistic + drop] D=0.3 W=0.05 alpha=D/rho_nc(uT)=+0.178 fdust=0.0 mass_thr=(0.5, 0.3, 0.5)
+   max|eps| = 2.34e-01;  eps(end) = -2.34e-01;  min R/rho_nc = 0.7661
+   MR g/H^2 in [-1.787e+00, +1.657e-01];  oracle g/H^2 in [-1.787e+00, -0.000e+00];  max|MR - oracle| = 9.17e-01
+   Lt/rho_nc at end = -2.339e-01;  Lt/rho_nc x e^{3u} trend (dust-like if const): -8.568e-02 vs -8.568e-02
+   int|g|/H^2 du = 0.179 (alpha/(1+alpha) = 0.151);  int (3/2)|g|/Qbar du (k->0 kick, cumulative) = 0.045

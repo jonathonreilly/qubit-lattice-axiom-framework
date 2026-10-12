@@ -5160,3 +5160,38 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r15-5a/b/c.
 
   Referee running.
+
+#### C5 Round 15 referee verdicts (recorded 22:45Z; codex gpt-5.6-sol, xhigh)
+
+- **R15-1 referee: CONFIRMED WITH CORRECTIONS. Reading FAIL** (`agents/C5_R15-1_referee_verdict.md`).
+  - **Lemma S is confirmed.** A smooth, compact, conserved source gives the same instantaneous exterior response.
+  - **It counts as signalling.** It is superluminal information transfer under the fixed reading. Preferred-time ordering prevents only backward-in-time messages, so the INCONCLUSIVE fallback does not apply.
+  - **Signalling is unavoidable during active vacuum compensation.**
+  - **Scope of the other parts:**
+    - S_E represents the linear k ≠ 0 sector only.
+    - A(k) and the g > 6H² ghost band are exact. The 1–5H² tachyon thresholds are frozen-background diagnostics, not bounds.
+    - Lemma F′ is a floor on each slice (exact constant 1.51875(mH₀)²), not a theorem about collapse continuing.
+    - Global CMC existence is open.
+    - Lemma V (d-i) needs the source bridge changed to allow momentum exchange. Under (d-ii), ρ_v + p_v = 0 is required.
+  - **Dated consequence for R14-5** (OPEN, conditional zero-mode degravitation): in its smooth continuum form, the mechanism signals superluminally whenever it is active. This is recorded as a refereed FAIL of the R14-5/CMC model on causality; R14-5's other findings stand.
+- **R15-2 referee: CONFIRMED WITH CORRECTIONS. Reading OPEN** (`agents/C5_R15-2_referee_verdict.md`).
+  - Lemma A is confirmed for k ≠ 0. A finite switch-on still needs Lemma B's constraint data.
+  - Lemma CU is not universal; it holds only within the channel-diagonal common-profile ansatz.
+  - The f(0) = f′(0) = 0 condition is necessary and sufficient for the finite-variance construction without singular boundary terms.
+  - The B term and the TT weight ¼ are confirmed. A dropped derivative invalidates the finite constant and the exact budget endpoints, but not the ¼.
+  - Exact full-instrument CP is not proved.
+  - The |u₁| formula is confirmed (I_F = 21/32). Premise (iii) is not established, so the overshoot is conditional, not an exclusion.
+- **R15-3 referee: CONFIRMED WITH CORRECTIONS. Reading EXCLUDED** in the finite, continuous, PSD, cubic-covariant Gaussian auxiliary class (`agents/C5_R15-3_referee_verdict.md`).
+  - Two genuine TT branches on an axis and a face diagonal force dim G ≥ 8, hence ≥ 4 gapless branches.
+  - The ≥ 5 bound with an h coupling needs a rank-2 TT residue.
+  - The C4+C2′ minimizer list omitted 4A₁+4A₂.
+  - Lemma N is conditional, not a theorem.
+  - Discontinuity is necessary only within the finite PSD class.
+- **R15-6 (reader sign theorem): worker reading PASS on class H1 only; INCONCLUSIVE for all histories.**
+  - The running-minimum reader MR gives Λ̃ ≡ 0 and g ≤ 0 on H1.
+  - Theorem L: no linear fading-memory reader that is exact on dust and radiation is sign-safe. This hits R15-4's class.
+  - Lemmas L and U: uniform caps fail on fast changes with α > c/4.
+  - Local tests do not bound g. Hubble-scale data give |g| ≲ 0.05H₀² (suggested).
+  - This does not undo R15-1's FAIL: g ≠ 0 remains during every absorbed drop.
+
+  Referee running.

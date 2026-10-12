@@ -1,0 +1,56 @@
+=== Lemma L: drops with a lower bound g >= -c- H^2 (c+ = 1) ===
+  alpha= 0.1 c-=  0.3: COLLAPSE (R->0) at u=0.96     x(end)=R/rho_nc-1=-1.00e+00  [W->0 prediction: collapse]
+  alpha= 0.1 c-=  1.0: no collapse                   x(end)=R/rho_nc-1=-1.11e-16  [W->0 prediction: survive]
+  alpha= 0.1 c-=  4.0: no collapse                   x(end)=R/rho_nc-1=+0.00e+00  [W->0 prediction: survive]
+  alpha= 0.1 c-= 10.0: no collapse                   x(end)=R/rho_nc-1=+2.22e-16  [W->0 prediction: survive]
+  alpha= 0.1 c-= 30.0: no collapse                   x(end)=R/rho_nc-1=+2.22e-16  [W->0 prediction: survive]
+  alpha= 0.5 c-=  0.3: COLLAPSE (R->0) at u=0.30     x(end)=R/rho_nc-1=-1.00e+00  [W->0 prediction: collapse]
+  alpha= 0.5 c-=  1.0: COLLAPSE (R->0) at u=0.39     x(end)=R/rho_nc-1=-1.00e+00  [W->0 prediction: collapse]
+  alpha= 0.5 c-=  4.0: no collapse                   x(end)=R/rho_nc-1=+0.00e+00  [W->0 prediction: survive]
+  alpha= 0.5 c-= 10.0: no collapse                   x(end)=R/rho_nc-1=-1.11e-16  [W->0 prediction: survive]
+  alpha= 0.5 c-= 30.0: no collapse                   x(end)=R/rho_nc-1=+2.22e-16  [W->0 prediction: survive]
+  alpha= 2.0 c-=  0.3: COLLAPSE (R->0) at u=0.10     x(end)=R/rho_nc-1=-1.00e+00  [W->0 prediction: collapse]
+  alpha= 2.0 c-=  1.0: COLLAPSE (R->0) at u=0.11     x(end)=R/rho_nc-1=-1.00e+00  [W->0 prediction: collapse]
+  alpha= 2.0 c-=  4.0: COLLAPSE (R->0) at u=0.17     x(end)=R/rho_nc-1=-1.00e+00  [W->0 prediction: collapse]
+  alpha= 2.0 c-= 10.0: no collapse                   x(end)=R/rho_nc-1=+2.22e-16  [W->0 prediction: survive]
+  alpha= 2.0 c-= 30.0: no collapse                   x(end)=R/rho_nc-1=+2.22e-16  [W->0 prediction: survive]
+  alpha= 5.0 c-=  0.3: COLLAPSE (R->0) at u=0.05     x(end)=R/rho_nc-1=-1.00e+00  [W->0 prediction: collapse]
+  alpha= 5.0 c-=  1.0: COLLAPSE (R->0) at u=0.05     x(end)=R/rho_nc-1=-1.00e+00  [W->0 prediction: collapse]
+  alpha= 5.0 c-=  4.0: COLLAPSE (R->0) at u=0.06     x(end)=R/rho_nc-1=-1.00e+00  [W->0 prediction: collapse]
+  alpha= 5.0 c-= 10.0: COLLAPSE (R->0) at u=0.10     x(end)=R/rho_nc-1=-1.00e+00  [W->0 prediction: collapse]
+  alpha= 5.0 c-= 30.0: no collapse                   x(end)=R/rho_nc-1=+0.00e+00  [W->0 prediction: survive]
+=== Lemma U: rises with an upper bound g <= c+ H^2 (c- = 1e3) ===
+  alpha=0.10 c+= 0.5: x=(R-rho_nc)/rho_nc at u=1,4,8: +6.68e-17 +0.00e+00 -1.11e-16  [prediction: absorbed]
+  alpha=0.10 c+= 1.0: x=(R-rho_nc)/rho_nc at u=1,4,8: -3.35e-16 +1.54e-15 -1.11e-16  [prediction: absorbed]
+  alpha=0.10 c+= 2.0: x=(R-rho_nc)/rho_nc at u=1,4,8: -8.64e-16 +2.22e-16 -1.11e-16  [prediction: absorbed]
+  alpha=0.10 c+= 4.5: x=(R-rho_nc)/rho_nc at u=1,4,8: +0.00e+00 +0.00e+00 +0.00e+00  [prediction: absorbed]
+  alpha=0.20 c+= 0.5: x=(R-rho_nc)/rho_nc at u=1,4,8: +3.20e+00 +1.11e+05 +1.33e+11  [prediction: runaway]
+  alpha=0.20 c+= 1.0: x=(R-rho_nc)/rho_nc at u=1,4,8: -3.70e-16 +0.00e+00 +2.22e-16  [prediction: absorbed]
+  alpha=0.20 c+= 2.0: x=(R-rho_nc)/rho_nc at u=1,4,8: +1.57e-15 +6.53e-16 +0.00e+00  [prediction: absorbed]
+  alpha=0.20 c+= 4.5: x=(R-rho_nc)/rho_nc at u=1,4,8: +6.31e-19 -1.11e-16 +0.00e+00  [prediction: absorbed]
+  alpha=0.30 c+= 0.5: x=(R-rho_nc)/rho_nc at u=1,4,8: +8.99e+00 +3.21e+05 +3.86e+11  [prediction: runaway]
+  alpha=0.30 c+= 1.0: x=(R-rho_nc)/rho_nc at u=1,4,8: +1.61e+00 +1.03e+04 +1.68e+09  [prediction: runaway]
+  alpha=0.30 c+= 2.0: x=(R-rho_nc)/rho_nc at u=1,4,8: -2.60e-15 -1.13e-15 +0.00e+00  [prediction: absorbed]
+  alpha=0.30 c+= 4.5: x=(R-rho_nc)/rho_nc at u=1,4,8: +3.89e-16 +0.00e+00 +0.00e+00  [prediction: absorbed]
+  alpha=0.50 c+= 0.5: x=(R-rho_nc)/rho_nc at u=1,4,8: +2.76e+01 +9.97e+05 +1.20e+12  [prediction: runaway]
+  alpha=0.50 c+= 1.0: x=(R-rho_nc)/rho_nc at u=1,4,8: +1.27e+01 +1.00e+05 +1.63e+10  [prediction: runaway]
+  alpha=0.50 c+= 2.0: x=(R-rho_nc)/rho_nc at u=1,4,8: +3.80e-01 +5.71e-17 +2.22e-16  [prediction: absorbed]
+  alpha=0.50 c+= 4.5: x=(R-rho_nc)/rho_nc at u=1,4,8: +9.93e-16 -1.11e-16 -1.11e-16  [prediction: absorbed]
+=== Same rises, slower (W = 0.3; tanh tails e^{-2u/W} must decay faster than radiation e^{-4u}, else q < 0 = NEC violated) ===
+  alpha=0.30 c+= 1.0 W=0.3: x at u=4,8,12: +5.95e-07 +1.39e-16 +0.00e+00;  min q*e^{4u} = +0.405 (>0: NEC holds)
+  alpha=0.30 c+= 2.0 W=0.3: x at u=4,8,12: +5.95e-07 +1.39e-16 +0.00e+00;  min q*e^{4u} = +0.405 (>0: NEC holds)
+  alpha=0.50 c+= 1.0 W=0.3: x at u=4,8,12: +2.37e+06 +3.88e+11 +6.31e+16;  min q*e^{4u} = +0.009 (>0: NEC holds)
+  alpha=0.50 c+= 2.0 W=0.3: x at u=4,8,12: +1.04e+04 +3.11e+07 +9.26e+10;  min q*e^{4u} = +0.009 (>0: NEC holds)
+=== Oracle (unbounded) reader on rises: max g/H^2 = max rho_v'/rho_nc ===
+  alpha=0.10 W=0.01: oracle max g/H^2 = +5.267;  min q e^{4u} = +0.900 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.1000 (= alpha)
+  alpha=0.10 W=0.10: oracle max g/H^2 = +0.548;  min q e^{4u} = +0.893 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.1000 (= alpha)
+  alpha=0.10 W=0.30: oracle max g/H^2 = +0.265;  min q e^{4u} = +0.802 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.1000 (= alpha)
+  alpha=0.10 W=0.45: oracle max g/H^2 = +0.385;  min q e^{4u} = +0.107 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.1000 (= alpha)
+  alpha=0.30 W=0.01: oracle max g/H^2 = +17.768;  min q e^{4u} = +0.700 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.3000 (= alpha)
+  alpha=0.30 W=0.10: oracle max g/H^2 = +1.849;  min q e^{4u} = +0.679 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.3000 (= alpha)
+  alpha=0.30 W=0.30: oracle max g/H^2 = +0.970;  min q e^{4u} = +0.405 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.3000 (= alpha)
+  alpha=0.30 W=0.45: oracle max g/H^2 = +1543.070;  min q e^{4u} = -1.678 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.3000 (= alpha)
+  alpha=0.50 W=0.01: oracle max g/H^2 = +34.246;  min q e^{4u} = +0.500 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.5000 (= alpha)
+  alpha=0.50 W=0.10: oracle max g/H^2 = +3.571;  min q e^{4u} = +0.466 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.5000 (= alpha)
+  alpha=0.50 W=0.30: oracle max g/H^2 = +2.514;  min q e^{4u} = +0.009 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.5000 (= alpha)
+  alpha=0.50 W=0.45: oracle max g/H^2 = +69669.043;  min q e^{4u} = -3.464 (NEC);  int(g/H^2 R)du/rho_nc(0) = +0.5000 (= alpha)

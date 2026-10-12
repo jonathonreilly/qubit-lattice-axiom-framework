@@ -1,0 +1,15 @@
+betas=(4.5, 6): LP status 2 (The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None))
+betas=(4.5, 6, 12): LP status ok, best margin m = -4.878e+00  (m >= 0 means g <= 0 after every dust/radiation drop)
+   k = [-0. -1.  6.]
+betas=(4.5, 5, 6, 8, 12, 20): LP status ok, best margin m = -2.956e+00  (m >= 0 means g <= 0 after every dust/radiation drop)
+   k = [ 0.0282 -0.5239  0.9423 -0.542  -1.7463  9.6017]
+betas=(4.2, 4.5, 5, 6, 8, 12, 20, 40, 80): LP status ok, best margin m = -1.944e+00  (m >= 0 means g <= 0 after every dust/radiation drop)
+   k = [-0.     -0.     -0.487   1.4251 -2.188   2.5055 -2.0724 -0.4337 30.3871]
+betas=(4.05, 4.1, 4.2, 4.5, 5, 6, 8, 12, 20, 40, 80, 160): LP status ok, best margin m = -1.535e+00  (m >= 0 means g <= 0 after every dust/radiation drop)
+   k = [ 8.50000e-03 -1.17000e-02  4.00000e-04 -3.67100e-01  1.04830e+00
+ -1.38950e+00  1.31830e+00 -1.13570e+00  9.35800e-01 -2.99200e-01
+ -4.36750e+00  6.14651e+01]
+Theorem L numeric check on exponential-sum kernels:
+  betas=(4.5, 6.0), k=[-0.25  1.5 ]: G(3)=1.000000, G(4)=1.000000; int P4 e^3t = +8.396e-16, int P3 e^4t = +1.110e-15, G(4)-G(3) = +0.000e+00
+  betas=(5.0, 12.0), k=[-0.2857  4.2857]: G(3)=1.000000, G(4)=1.000000; int P4 e^3t = +6.245e-16, int P3 e^4t = +1.665e-16, G(4)-G(3) = +0.000e+00
+  betas=(4.5, 6.0, 12.0), k=[ 0. -1.  6.]: G(3)=1.000000, G(4)=1.000000; int P4 e^3t = +9.645e-16, int P3 e^4t = +8.604e-16, G(4)-G(3) = +0.000e+00

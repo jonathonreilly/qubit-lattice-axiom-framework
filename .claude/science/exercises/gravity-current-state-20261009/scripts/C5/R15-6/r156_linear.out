@@ -1,0 +1,26 @@
+betas=(4.5,5) k=(-0.625,+1.500) K(0)=+0.875: min S_4 = -1.055, min S_3 = -0.025 -> max g/H^2 after alpha=1 drop ~ 2.109
+betas=(4.5,6) k=(-0.250,+1.500) K(0)=+1.250: min S_4 = -0.844, min S_3 = -0.047 -> max g/H^2 after alpha=1 drop ~ 1.687
+betas=(4.5,8) k=(-0.143,+2.143) K(0)=+2.000: min S_4 = -0.704, min S_3 = -0.073 -> max g/H^2 after alpha=1 drop ~ 1.408
+betas=(4.5,12) k=(-0.100,+3.600) K(0)=+3.500: min S_4 = -0.622, min S_3 = -0.100 -> max g/H^2 after alpha=1 drop ~ 1.245
+betas=(4.5,20) k=(-0.081,+6.581) K(0)=+6.500: min S_4 = -0.581, min S_3 = -0.125 -> max g/H^2 after alpha=1 drop ~ 1.163
+betas=(4.5,40) k=(-0.070,+14.070) K(0)=+14.000: min S_4 = -0.562, min S_3 = -0.148 -> max g/H^2 after alpha=1 drop ~ 1.125
+betas=(5,6) k=(-1.000,+2.500) K(0)=+1.500: min S_4 = -0.833, min S_3 = -0.093 -> max g/H^2 after alpha=1 drop ~ 1.667
+betas=(5,8) k=(-0.444,+2.778) K(0)=+2.333: min S_4 = -0.774, min S_3 = -0.144 -> max g/H^2 after alpha=1 drop ~ 1.547
+betas=(5,12) k=(-0.286,+4.286) K(0)=+4.000: min S_4 = -0.749, min S_3 = -0.200 -> max g/H^2 after alpha=1 drop ~ 1.498
+betas=(5,20) k=(-0.222,+7.556) K(0)=+7.333: min S_4 = -0.751, min S_3 = -0.255 -> max g/H^2 after alpha=1 drop ~ 1.501
+betas=(5,40) k=(-0.190,+15.857) K(0)=+15.667: min S_4 = -0.769, min S_3 = -0.311 -> max g/H^2 after alpha=1 drop ~ 1.538
+betas=(6,8) k=(-2.000,+5.000) K(0)=+3.000: min S_4 = -0.900, min S_3 = -0.263 -> max g/H^2 after alpha=1 drop ~ 1.800
+betas=(6,12) k=(-1.000,+6.000) K(0)=+5.000: min S_4 = -0.983, min S_3 = -0.385 -> max g/H^2 after alpha=1 drop ~ 1.966
+betas=(6,20) k=(-0.714,+9.714) K(0)=+9.000: min S_4 = -1.087, min S_3 = -0.520 -> max g/H^2 after alpha=1 drop ~ 2.175
+betas=(6,40) k=(-0.588,+19.588) K(0)=+19.000: min S_4 = -1.213, min S_3 = -0.671 -> max g/H^2 after alpha=1 drop ~ 2.426
+betas=(8,12) k=(-5.000,+12.000) K(0)=+7.000: min S_4 = -1.389, min S_3 = -0.717 -> max g/H^2 after alpha=1 drop ~ 2.778
+betas=(8,20) k=(-2.778,+15.111) K(0)=+12.333: min S_4 = -1.746, min S_3 = -1.057 -> max g/H^2 after alpha=1 drop ~ 3.491
+betas=(8,40) k=(-2.083,+27.750) K(0)=+25.667: min S_4 = -2.191, min S_3 = -1.496 -> max g/H^2 after alpha=1 drop ~ 4.383
+betas=(12,20) k=(-15.000,+34.000) K(0)=+19.000: min S_4 = -2.978, min S_3 = -2.110 -> max g/H^2 after alpha=1 drop ~ 5.956
+betas=(12,40) k=(-8.571,+47.571) K(0)=+39.000: min S_4 = -4.345, min S_3 = -3.386 -> max g/H^2 after alpha=1 drop ~ 8.689
+betas=(20,40) k=(-45.333,+111.000) K(0)=+65.667: min S_4 = -8.832, min S_3 = -7.471 -> max g/H^2 after alpha=1 drop ~ 17.665
+3-register designs exact on x = 2, 3, 4:
+betas=(5, 8, 20) k=[  0.889 -13.889  45.333]: min S_4 = -6.628, min S_3 = -4.984
+betas=(4.5, 6, 12) k=[ 0.5 -6.  18. ]: min S_4 = -3.570, min S_3 = -2.320
+betas=(6, 12, 40) k=[  2.353 -42.857 159.504]: min S_4 = -18.463, min S_3 = -15.664
+betas=(5, 10, 30) k=[  0.6 -21.   81.9]: min S_4 = -10.222, min S_3 = -8.224

@@ -1,0 +1,12 @@
+[FM on its own family (dust + CPL)] final params (Om, A, w0, wa) = [ 0.3   0.7  -0.75 -0.86]; max fit residual = 1.9e-15
+   a=1.0: eps = -1.310e-14, g/H^2 = -1.446e-13
+   a=0.5: eps = +1.177e-14, g/H^2 = +1.346e-26
+   a=0.25: eps = +6.661e-16, g/H^2 = -5.911e-14
+   a=0.1: eps = -2.220e-16, g/H^2 = -2.468e-13
+   over 0.1<a<1: g/H^2 in [-1.030e-07, +1.041e-07], max|eps| = 3.180e-10
+[FM with unmodelled radiation Omega_r = 9e-5] final params (Om, A, w0, wa) = [ 0.300201  0.699797 -0.750044 -0.860307]; max fit residual = 8.3e-03
+   a=1.0: eps = -9.149e-05, g/H^2 = -9.394e-04
+   a=0.5: eps = +1.442e-02, g/H^2 = -2.242e-02
+   a=0.25: eps = +2.037e+04, g/H^2 = -2.656e-02
+   a=0.1: eps = +1.020e+03, g/H^2 = -1.093e+02
+   over 0.1<a<1: g/H^2 in [-1.139e+04, +4.764e+06], max|eps| = 3.153e+04

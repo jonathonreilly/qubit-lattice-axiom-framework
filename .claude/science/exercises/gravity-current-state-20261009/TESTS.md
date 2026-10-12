@@ -2641,3 +2641,64 @@ Test probes carry their own PASS / FAIL / INCONCLUSIVE readings, given below.
 - edgeless sources for route E (R2-2 covers E in general);
 - the RG stability of set C's tuning count;
 - the FS supercharge rule as a gravity coupling.
+
+### C5 Round 3 (pre-registered 12:30Z; launched now)
+
+**Why this round.** Round 2's R2-2 worker built a candidate: the Lorentz-random lattice (LRL). Its referee is still running. LRL is X = g(L₇ + u), with g Haar-random in SO⁺(1,3)/Γ_L and L₇ = diag(√7,1,1,1)ℤ⁴.
+- It is Lorentz-invariant in law.
+- Each realization is a crystal whose reciprocal vectors satisfy |G²| ≥ c > 0, with no null reciprocal vectors.
+- So in-band scattering vanishes exactly, for couplings that are covariant functionals.
+- Each realization is invariant under the infinite integral Lorentz group Γ_L, which is Zariski-dense in SO(1,3).
+
+**The supervisor's own thread (worker-unchecked, same family).**
+1. Zariski density means every polynomial invariant tensor of Γ_L is Lorentz-invariant. So a Γ_L-covariant law has no Lorentz-violating operator at any polynomial order, in each single realization. This would beat set B's dimension ≤ 4 protection.
+2. By O1's Lemma C′, a summable Γ_L-covariant law does not exist. Orbit counting in H³, however, suggests that power-law couplings ~|x|_E^{-s} with s > 2 give convergent Γ_L-invariant (Poincaré-series) laws. If so, the price is quasi-locality with power-law tails, not full non-locality.
+3. Per-realization momentum is conserved modulo the dual lattice. In-band (low-energy) processes therefore conserve exact momentum, and the C3/RB defects can only live at Planck-scale momenta.
+
+Each of these is tested below. Round 3 runs whatever the R2-2 referee rules on LRL. If the referee rejects LRL's basic claims, the affected items are reported as conditional.
+
+**R3-1. Γ_L-covariant laws on L₇: existence, locality, per-realization EFT.**
+- (a) Construct Γ_L-invariant quadratic and interacting matter laws on L₇ realizations as Poincaré-type orbit sums. Prove or refute convergence for kernels with power-law decay s > s_c, and find s_c. Check numerically with orbit counting.
+- (b) Is every per-realization effective operator Lorentz-invariant at every polynomial order (Zariski density)? Exactly what survives, including non-polynomial and umklapp effects at |G²| ≥ c?
+- (c) Per-realization momentum conservation mod dual lattice. Is the low-energy S-matrix exactly Poincaré-covariant below the Bragg gap? Do the C3/RB/RFW obstructions apply, given only discrete boosts with continuous boosts emergent?
+
+Readings:
+- **PASS:** an explicit convergent Γ_L-covariant law with power-law (or better) couplings whose per-realization low-energy physics is Lorentz-invariant at all polynomial orders, proved.
+- **FAIL:** proved non-convergent for every decay class, or per-realization Lorentz violation at dimension ≤ 4.
+- **INCONCLUSIVE:** otherwise.
+
+Expectation: PASS for (a) at s > 2, and for (b) at polynomial order. Non-analytic and umklapp terms are suppressed below the gap. INCONCLUSIVE on (c).
+
+**R3-2. Gravity on LRL.**
+- Do the obstructions that killed the grid (C3 Hessian anomaly, K1 11 forms, V3 E_g shear) survive on a Γ_L-covariant substrate?
+- Count Γ_L-invariant quadratic forms for a symmetric tensor h_μν. Expectation: only the Lorentz-invariant ones (Fierz–Pauli mass forms, the EH kinetic term and the non-gauge-invariant Lorentz-invariant kinetic forms). That would drop K1's 11 to the Lorentz count.
+- Is there an exact linearized gauge identity for matter on L₇ with Γ_L-covariant couplings (the R2-1 Theorem T analogue)? Note: per realization, translations are discrete, so does Theorem T's tower argument bite?
+- Does the free E_g shear distinction collapse because Γ_L has no cubic E/T2 split?
+
+Readings:
+- **PASS:** a Γ_L-covariant matter + graviton law with an exact linearized gauge identity, or with a tuning count ≤ the Lorentz-invariant count (graviton mass + cosmological constant only).
+- **FAIL:** the R2-1-type tower is forced, or the count does not improve.
+- **INCONCLUSIVE:** otherwise.
+
+Expectation: the count collapses to the Lorentz count (an improvement: no speed or anisotropy tunings). The exact gauge identity still hits a Theorem-T analogue, since per-realization translations are discrete. INCONCLUSIVE, leaning a partial PASS.
+
+**R3-3. LRL propagation, lensing and curved spacetime.**
+- (a) The mean link or propagator kernel on LRL, compared with RL2's √Δ result for Poisson.
+- (b) Is there a natural curved-spacetime version, e.g. a locally arithmetic lattice in a frame field, or a quotient/orbifold construction? Do curvature defects bring noise back, and at what size (a/L_curv)²?
+
+Readings:
+- **PASS:** the mean propagation reproduces GR focusing, and curvature-induced noise is below RZ's bar for physical lenses.
+- **FAIL:** an O(1) mismatch, or curvature noise above the bar.
+- **INCONCLUSIVE:** otherwise.
+
+Expectation: INCONCLUSIVE. Curved space is the main obstacle.
+
+**R3-4. Set A's gravity escape: which of E1–E4 is cheapest and still viable?** (From R2-3: worker FAIL (bounded); its referee is still running.)
+- Compare against observations: metric jumps on state-chosen surfaces (Juárez-Aubry–Kay–Sudarsky), classical-quantum gravity (Oppenheim et al.; decoherence/diffusion trade-off bounds), Bell-type beables with a guidance foliation, and Kraus operators dressed to infinity.
+
+Readings, per escape:
+- **VIABLE:** passes current bounds with stated prices.
+- **EXCLUDED:** violates a stated bound.
+- **OPEN:** otherwise.
+
+Expectation: CQ gravity is constrained but viable in a window. Metric jumps are viable but need a foliation. Beables are viable with a foliation (a preferred frame in the guidance law only).

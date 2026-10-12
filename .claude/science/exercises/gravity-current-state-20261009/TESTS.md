@@ -5488,3 +5488,26 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Consequence:** DESI's phantom crossing would then have to be real dark energy.
 
   Referee running.
+
+### C5 Round 16, item 11 (pre-registered 23:25Z, before launch)
+
+**R16-11. Does R16-7's Theorem B survive an emergent Gauss law? The dressing transfer.**
+- **Plain question.** R16-7 (worker; referee running) proves χ_TT ≥ 1/(Ck⁴) for every finite-slot model whose Hamiltonian conserves the vector Gauss law exactly. Spin ice gets its photon from qubits whose Hamiltonian does not conserve Gauss's law exactly; the law emerges at low energy. Suppose a microscopic finite-slot H violates the vector law but flows to a phase where the law is emergent. If the emergent phase is related to an exactly conserving model by a quasi-local unitary dressing (quasi-adiabatic continuation, Schrieffer–Wolff to all orders), does Theorem B transfer? If it does, the last finite-slot window (P-r16-7a) closes for every phase connected to a gapped-constraint limit.
+- **Setting.**
+  - Finite-slot (qubit or Z_N) H on Z³ with a tensor gauge structure:
+    - H = U·Σ(vector-law penalty) + V, where V violates the law;
+    - large but finite U;
+    - phases adiabatically connected to U = ∞.
+  - Quasi-local dressing W with Lieb–Robinson / quasi-adiabatic tails (stretched-exponential decay).
+  - Observables: dressed E_TT and h_TT.
+- **Prior art (count once):** R16-7 (Theorem B, Theorem D, N0914's moment lemma), R15-5 Lemma W (all finite SW orders O(k³)), its verdict, Hastings quasi-adiabatic continuation, Bravyi–Hastings–Michalakis, and Hermele–Fisher–Balents spin ice as the U(1) comparator where the photon does emerge.
+- **Probes.**
+  - (a) Does the f-sum bound m₁(Ẽ_TT) ≤ Ck⁴ hold for the dressed operator Ẽ = W†EW, with the dressing's tails accounted for (state which tail decay suffices)?
+  - (b) Reconcile with spin ice: why does the U(1) photon emerge there? Its m₁ ~ k² is allowed. Is the tensor obstruction specifically the k⁴ moment structure, which dressing preserves?
+  - (c) What remains: gapless intermediate phases, non-quasi-local dressing, first-order transitions out of the constrained limit.
+  - (d) Prices.
+- **FIXED readings.**
+  - **TRANSFERS:** a proof, refereed if a no-go, that Theorem B's bound holds for dressed operators in every phase connected to the constrained limit by a quasi-local dressing with stated tails.
+  - **FAILS-TO-TRANSFER:** an explicit dressing class or model where the dressed m₁ is O(k²), checked.
+  - **OPEN:** otherwise.
+- **Expectation.** TRANSFERS for stretched-exponential tails, since dressing cannot change the k-power of a conserved-charge moment. This would leave only phases not connected to the constrained limit.

@@ -4773,3 +4773,28 @@ Readings:
   - **(iii) Lemma V:** every one-band box law with b > b*(m) (π/2 at m = 0) is superluminal at lattice scale.
     - The laws used so far (R7-1, R9-5) have v_max ≈ 4–12.
     - A subluminal b = 1.4 box works at negligible rapidity cost (45.4 → 45.0).
+
+### C5 Round 14, item 1 (pre-registered 20:54Z; launched now; conditional on R13-4, whose referee is running)
+
+**R14-1. Do the box-route PASS results survive with a subluminal box (b < b*(m) ≤ π/2)?**
+- R13-4's worker (unrefereed) proves Lemma V: every one-band box law with b > b*(m) has v_max > 1 on the zone. The laws behind the box-route PASS results are all superluminal at lattice scale:
+  - R7-1 and R9-5 (b = 2, 2.6);
+  - R8-1 and R9-6 (b = 2.6);
+  - R8-5 Dirac.
+- The worker exhibits a subluminal b = 1.4 law.
+- Re-run the load-bearing checks with a subluminal box (b ≤ 1.4, Gevrey step):
+  - R7-1 P1 (free algebra);
+  - R8-1 (two-body d = 1/2 algebra, leakage);
+  - R9-2 (bound-body fall, d = 1);
+  - R9-6 (d = 3 triplet, mass flatness);
+  - R11-4 (pole–dipole moments).
+- Then check:
+  - Does each conclusion carry over unchanged?
+  - Which numbers move (rapidity budget, interaction plateau sizes, leakage)?
+  - Does the subluminal step create new problems: doublers, a smaller box for interactions, or Theorem E's edge share?
+  - Is a subluminal Wilson-box Dirac possible?
+
+Readings:
+- **PASS:** every listed result holds with a subluminal box, with the changed numbers stated, checked.
+- **FAIL:** a listed result fails for every subluminal box (refereed).
+- **INCONCLUSIVE:** otherwise.

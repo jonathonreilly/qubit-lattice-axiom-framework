@@ -4965,3 +4965,24 @@ Readings:
   - The non-local k²P_TT symbol leaves flat partners; only a discontinuous symbol gives exactly 2.
 
   Referee running.
+
+### C5 Round 15, item 4 (pre-registered 22:05Z; launched now)
+
+**R15-4. A regular P-T reader: removing a constant vacuum through phase transitions and in a lumpy universe (the R14-5 gaps).**
+- R14-5 (refereed, OPEN) supplies a credible conditional zero-mode degravitation mechanism, but two of its gaps are:
+  - the finite-rank Prony reader goes non-physical (complex or singular) through phase transitions;
+  - exact Λ̃ = 0 in a lumpy universe is not shown.
+- Construct a regularized reader with these properties:
+  - a causal linear filter on the slice-averaged density history, or a constrained fit, that annihilates exactly constant contributions;
+  - real and regular for all histories with finite energy-density derivatives;
+  - convergent to the w ≠ −1 content.
+- Test it:
+  - (a) through EW- and QCD-like transitions (S1/S2 sectors of R13-3);
+  - (b) on a lumpy universe via the slice average (backreaction terms);
+  - (c) on DESI-like evolving w;
+  - (d) the residual Λ̃ and its tuning, if any.
+
+Readings:
+- **PASS:** an explicit regular reader giving Λ̃ = 0 to stated precision through (a)–(c) without tuning, checked.
+- **FAIL:** a refereed no-go: no causal regular reader annihilates constants while tracking the stated content, in a stated class.
+- **INCONCLUSIVE:** otherwise.

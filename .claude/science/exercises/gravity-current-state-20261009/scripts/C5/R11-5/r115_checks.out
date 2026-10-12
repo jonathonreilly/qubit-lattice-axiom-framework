@@ -1,0 +1,110 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R11-5/scripts/r115_checks.py:210: IntegrationWarning: The maximum number of subdivisions (200) has been achieved.
+  If increasing the limit yields no improvement it is advised to analyze 
+  the integrand in order to determine the difficulties.  If the position of a 
+  local difficulty can be determined (singularity, discontinuity) one will 
+  probably gain from splitting up the interval and calling the integrator 
+  on the subranges.  Perhaps a special-purpose integrator should be used.
+  return 2*sum(integrate.quad(f, a, b, limit=200)[0] for a, b in zip([0.0]+pts[:-1], pts))
+[1] bipartite resonator-chain meter (rotating frame, resonant): H = lam*A*X1 + g*sum(XjXj+1 + PjPj+1); mode N leaks at kappa
+    N=4, g=1.0, kappa=1.0; vacuum inputs with S_XinXin = S_PinPin = 1/2 (symmetrized), uncorrelated
+    w=   0.00: S_II=0.500000  S_FF=5.000e-01  |gain|^2=1.000e+00  S_II*S_FF/(|gain|^2/4)=1.000000000
+    w=   0.10: S_II=0.500000  S_FF=5.258e-01  |gain|^2=1.052e+00  S_II*S_FF/(|gain|^2/4)=1.000000000
+    w=   0.50: S_II=0.500000  S_FF=1.730e+00  |gain|^2=3.459e+00  S_II*S_FF/(|gain|^2/4)=1.000000000
+    w=   1.00: S_II=0.500000  S_FF=4.000e-01  |gain|^2=8.000e-01  S_II*S_FF/(|gain|^2/4)=1.000000000
+    w=   2.00: S_II=0.500000  S_FF=1.724e-02  |gain|^2=3.448e-02  S_II*S_FF/(|gain|^2/4)=1.000000000
+    w=   5.00: S_II=0.500000  S_FF=1.629e-06  |gain|^2=3.258e-06  S_II*S_FF/(|gain|^2/4)=1.000000000
+    w=  20.00: S_II=0.500000  S_FF=1.981e-11  |gain|^2=3.963e-11  S_II*S_FF/(|gain|^2/4)=1.000000000
+    w= 100.00: S_II=0.500000  S_FF=5.003e-17  |gain|^2=1.001e-16  S_II*S_FF/(|gain|^2/4)=1.000000000
+    max |ratio-1| = 6.66e-16 (quantum limit saturated at every w); max |dX1/dA| = 0.0e+00 (chi_FF = 0: no friction, symmetric backaction)
+    backaction falloff exponent d ln S_FF/d ln w at w~1e2-1e3: -8.000 (expect -2N = -8)
+    subtraction: none (S_FF is a positive spectral density)
+
+[2] cone lemma: (H-T) P_J D0' >= |F|^2/4, M = |G_R|^2 P_J = P_J/s^2  =>  D0' + c^2 M >= c|F|/|s|
+    min (D0' + c^2 M)/(c|F|/|s|) over 20000 draws = 1.000022 (>= 1)
+    int_(d<|s|<1) ds/|s| = 9.21 at d=1e-02  (diverges: not locally finite)
+    int_(d<|s|<1) ds/|s| = 18.42 at d=1e-04  (diverges: not locally finite)
+    int_(d<|s|<1) ds/|s| = 36.84 at d=1e-08  (diverges: not locally finite)
+    int_(d<|s|<1) ds/|s| = 73.68 at d=1e-16  (diverges: not locally finite)
+
+[3] finite-age regulator: free (on-shell) GW energy after time T, E(T) = int du P_J(u) sin^2(uT/2)/u^2 (per mode, unit slope)
+    alpha=0: E(T=1e1,1e2,1e3) = 14.7444, 156.0849, 1569.7955
+    alpha=1: E(T=1e1,1e2,1e3) = 2.9253, 5.1875, 7.4841
+    alpha=2: E(T=1e1,1e2,1e3) = 1.0544, 1.0051, 0.9992
+    alpha=0 (P_J(cone)>0, D0' bounded): linear in T;  alpha=1: + ln T per decade (ln 10 = 2.3026 x slope);
+    alpha=2: saturates (but then D0' ~ 1/u^2: matter null-transfer decoherence grows ~ T)
+    subtraction: none (positive integrand; no channel limit subtracted)
+
+[4] UV: vacuum photon-pair energy injection ~ int dw w * Dtot(w) * W(s), W ~ s^2 ~ w^4, spatial k cut at 1/l
+    Dtot ~ (1+w^2)^-2: injection up to 1e1..1e4 = 45.88, 4991, 5e+05, 5e+07
+    Dtot ~ (1+w^2)^-3: injection up to 1e1..1e4 = 1.567, 3.855, 6.158, 8.46
+    Dtot ~ (1+w^2)^-4: injection up to 1e1..1e4 = 0.1618, 0.1666, 0.1667, 0.1667
+    => converges iff total backaction falloff faster than w^-6 (m >= 4; equivalently 1/|s| x (1+w^2 tau^2)^-n with n >= 3)
+    the chain meter of [1] gives w^-2N: N >= 4 stages; subtraction: none
+
+[5] moving matter: lab static kernel K_lab(0,k) = K_frame(k.v, k); K = cN |F_u|^2/|s|, F_u = e^{-k^2l^2/2}(1+w^2 tau^2)^{-n/2}, tau=l/c
+    beta_CMB = 1.233587e-03 (v = 369.82 km/s, web-checked); dipole RA,Dec = 167.94,-6.94 deg (RECALLED value ~167.9,-6.9); ecliptic latitude = -11.15 deg
+    k*l= 0.1: direction-averaged dK/K = +4.920e-07; along v: +1.476e-06  (beta^2 = 1.522e-06)
+    k*l= 1.0: direction-averaged dK/K = -1.014e-06; along v: -3.043e-06  (beta^2 = 1.522e-06)
+    k*l= 3.0: direction-averaged dK/K = -1.319e-05; along v: -3.956e-05  (beta^2 = 1.522e-06)
+    annual: max projection of v_orb on dipole = 29.22 km/s; modulation amplitude of dK/K (k*l=1, along v) = -4.809e-07
+    odd-in-w terms: K_frame is even in w (classical record noise symmetric; chi_FF = 0 so backaction symmetric) => no O(beta) term
+    subtraction: dK/K is measured against the same kernel at v = 0 (subtraction: the rest-frame static kernel)
+
+[6] mean field: h = G_R F_u <T>; moving source (velocity w) sees F_u(k.w, k) = e^{-k^2l^2/2}(1 - i k.w tau)^-n
+    l=1e-08 m: lag n*tau = 1.00e-16 s; frame-velocity displacement = 3.70e-11 m; dipole correction at 1 AU ~ n beta l/r = 2.5e-22
+    l=2e-07 m: lag n*tau = 2.00e-15 s; frame-velocity displacement = 7.40e-10 m; dipole correction at 1 AU ~ n beta l/r = 4.9e-21
+    l=5e-06 m: lag n*tau = 5.00e-14 s; frame-velocity displacement = 1.85e-08 m; dipole correction at 1 AU ~ n beta l/r = 1.2e-19
+    PPN alpha1, alpha2 bounds (web-checked): |alpha1-hat| < ~4e-5 (PSR J1738+0333, Shao & Wex 2012); |alpha2-hat| < 1.6e-9 (Shao et al. 2013)
+    mean-field alpha1 = alpha2 = 0 at r >> l (F_u -> 1 as k -> 0 for every w); corrections O(beta l/r) are short-range, not 1/r PPN terms
+
+[7] cosmological GW content (order of magnitude; Isaacson premise; O(1) tensor weights)
+    bounded D0' (P_J(cone) = static floor): l=1e-08: drho/dt = 6.38e+21 W/m^3; rho_GW(t_H) = 2.78e+39 J/m^3 = 3.6e+48 rho_crit; needed cone suppression eps < 1.9e-49
+    bounded D0' (P_J(cone) = static floor): l=2e-07: drho/dt = 1.99e+15 W/m^3; rho_GW(t_H) = 8.68e+32 J/m^3 = 1.1e+42 rho_crit; needed cone suppression eps < 6.1e-43
+    bounded D0' (P_J(cone) = static floor): l=1e-06: drho/dt = 6.38e+11 W/m^3; rho_GW(t_H) = 2.78e+29 J/m^3 = 3.6e+38 rho_crit; needed cone suppression eps < 1.9e-39
+    bounded D0' (P_J(cone) = static floor): l=5e-06: drho/dt = 2.04e+08 W/m^3; rho_GW(t_H) = 8.89e+25 J/m^3 = 1.2e+35 rho_crit; needed cone suppression eps < 5.9e-36
+    unsuppressed bounded kernel needs l > 55.5 m: EXCLUDED for every l in the lab window if the GW content gravitates
+    log option: l=1e-08: L = ln(c t_H/l) = 78.6 (R9-4 used 10); rho_GW(eps=1) = 8.01e+06 J/m^3; eps needed < 6.6e-17
+    log option: l=2e-07: L = ln(c t_H/l) = 75.6 (R9-4 used 10); rho_GW(eps=1) = 4.82e+01 J/m^3; eps needed < 1.1e-11
+    log option: l=1e-06: L = ln(c t_H/l) = 73.9 (R9-4 used 10); rho_GW(eps=1) = 7.54e-02 J/m^3; eps needed < 7.0e-09
+    log option: l=5e-06: L = ln(c t_H/l) = 72.3 (R9-4 used 10); rho_GW(eps=1) = 1.18e-04 J/m^3; eps needed < 4.5e-06
+    subtraction: none (positive energy densities)
+
+[8] window arithmetic
+    vacuum photon injection (R8-3 [5], n>=3, cone suppression narrow-band so not multiplied by 1/eps): A'=1e-04: l > 4.59e-09 m
+    vacuum photon injection (R8-3 [5], n>=3, cone suppression narrow-band so not multiplied by 1/eps): A'=1e-02: l > 8.86e-09 m
+    vacuum photon injection (R8-3 [5], n>=3, cone suppression narrow-band so not multiplied by 1/eps): A'=1e+00: l > 1.71e-08 m
+    ISL: l=1e-06 m: point-mass force deficit at 52 um = 0.00e+00
+    ISL: l=5e-06 m: point-mass force deficit at 52 um = 1.08e-11
+    ISL: l=1e-05 m: point-mass force deficit at 52 um = 3.64e-03
+    Yukawa alpha=1, lambda=38.6 um at r=52 um: force excess (1+r/lambda)e^(-r/lambda) = 0.610 (excluded at 95% CL, Lee et al. 2020, web-checked)
+    => any l with deficit << 0.6 at 52 um is far inside the Yukawa-excluded size; 5e-6 m stays R6-4's conservative upper end (no geometry fit)
+
+[9] explicit regulated kernel K_eps (R8-3 convention: P_J*D0' >= 1/4, K = D0'|F|^2 + c^2|F|^2 P_J/s^2), per frame mode, units c*k = 1
+    D0'(s) = c/(2 e(s) sqrt(s^2+s0^2)),  P_J = e(s) sqrt(s^2+s0^2)/(2c),  e(s) = eps + (1-eps) s^2/(s^2 + d^2),  d = sqrt(eps), s0 = 2/T*
+    eps=1e-06: max|P_J D0' - 1/4| = 2.8e-17; sup D0' = 2.50e+13 (bounded => locally finite); static K/floor = 1.000000; photon band int s^2 D0' = 0.2500 (least-decoherence 0.25); E(T=1e6)=7.6008, secular slope dE/dlnT = 1.22e-02 (unsuppressed: 1); forced part ~ ln(1/d) = 6.91
+    eps=1e-10: max|P_J D0' - 1/4| = 2.8e-17; sup D0' = 2.50e+17 (bounded => locally finite); static K/floor = 1.000000; photon band int s^2 D0' = 0.2500 (least-decoherence 0.25); E(T=1e6)=12.2561, secular slope dE/dlnT = -9.44e-03 (unsuppressed: 1); forced part ~ ln(1/d) = 11.51
+    => sup D0' finite; static kernel = R6-4 floor; photon-pair weight unchanged; SECULAR free-GW growth suppressed ~eps; a non-secular forced near-cone TT part ~ (1/2)ln(1/eps) remains unless the suppression is broadband (premise ii)
+
+[10] near-cone matter heating under premise (i) (SUGGESTED, order of magnitude)
+     heating_cone/heating_static ~ f_cone * L/eps, f_cone = mass-weighted f-sum fraction of matter excitations at hbar w ~ hbar c/l
+     l=1e-08 m: hbar c/l = 1.97e+01 eV, f_cone=2e-04, eps=6.6e-17: heating ~ 1.9e-07 W/kg (Earth bound 7.9e-12) FAIL
+     l=4e-08 m: hbar c/l = 4.93e+00 eV, f_cone=2e-04, eps=1.7e-14: heating ~ 1.1e-11 W/kg (Earth bound 7.9e-12) FAIL
+     l=2e-07 m: hbar c/l = 9.87e-01 eV, f_cone=1e-03, eps=1.1e-11: heating ~ 8.5e-16 W/kg (Earth bound 7.9e-12) pass
+     l=1e-06 m: hbar c/l = 1.97e-01 eV, f_cone=1e+00, eps=7.0e-09: heating ~ 1.0e-17 W/kg (Earth bound 7.9e-12) pass
+     l=5e-06 m: hbar c/l = 3.95e-02 eV, f_cone=1e+00, eps=4.5e-06: heating ~ 1.3e-22 W/kg (Earth bound 7.9e-12) pass
+     crossover (f_cone = 1.6e-4, heating ~ l^-7): l ~ 4.2e-08 m; x/÷ 1e2 in f_cone moves it by x/÷ 1.93
+
+[11] premise (ii) (R9-4 broadband: TT noise at w >~ |k| gravitates): joint lower end with L = ln(c t_H/l) instead of 10
+     A'=1e-04: lower end ~ 1.80e-07 m
+     A'=1e-02: lower end ~ 2.73e-07 m
+     A'=1e+00: lower end ~ 4.14e-07 m
+
+[12] margins at l = 1e-6 m (premise ii, A'=1): photon injection / EBL x 1/eps
+     eps = 7.0e-09; photon injection / u_EBL = 6.1e-05
+
+[13] quasi-static TT metric-noise energy fraction (least-decoherence P_J = |s|/2c, weight w^2/|s|): int_0^x0 x^2/(1-x^2) dx
+     w < 0.5 ck: 4.931e-02  (near-cone log region carries ~L ~ 70-80 in the same units)
+     w < 0.1 ck: 3.353e-04  (near-cone log region carries ~L ~ 70-80 in the same units)
+     w < 0.01 ck: 3.334e-07  (near-cone log region carries ~L ~ 70-80 in the same units)
+     l=1e-06: unit hbar c/(pi^3 l^4) = 1.02e-03 J/m^3 = 1.3e+06 rho_crit; part w<0.5ck: 6.6e+04 rho_crit; part w<0.01ck: 4.4e-01 rho_crit
+     l=5e-06: unit hbar c/(pi^3 l^4) = 1.63e-06 J/m^3 = 2.1e+03 rho_crit; part w<0.5ck: 1.1e+02 rho_crit; part w<0.01ck: 7.1e-04 rho_crit

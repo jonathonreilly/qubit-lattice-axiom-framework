@@ -1,0 +1,73 @@
+(0) Lemma KB3 (d=3 Koszul-Belinfante division)
+  near-zero step: max |Q_j Y^ji - Q_j eps^jim alpha_m|, |Y - Y^T| over 200 random draws = 3.79e-15
+  far formula T = R a^T + a R^T - (R.D) a a^T: max |T.D - R|, |T - T^T| = 9.93e-16
+  transverse fix: J_T change / sigma(0) = [2. 2. 2.]
+
+==== bound triplet M_b = 0.95 (binding fraction 0.05) ====
+(1) Ward nu=0..3 max |omega tau^{0nu} - Q_j tau^{j nu}| = 2.36e-16; symmetry 1.39e-17; Hermiticity tau(Q)^dag = tau(-Q): 4.11e-15
+  P = [0. 0. 0.]: int T00 - H 0.0e+00 | int T0i - P_i 0.0e+00 | int Tij - P_iP_j/H 0.0e+00 | dipole - (PxS)/(M+H) 0.0e+00 | J_T - (spin S) 0.0e+00 | m^{a,j} - pred 0.0e+00 | n^{a,kk} - (v x S)_a 0.0e+00
+  (2) von Laue at rest: max |int T^ij| on the triplet = 0.0e+00 (any spin state; T^ij forward is c-number zero)
+  P = [ 0.21 -0.13  0.3 ]: int T00 - H 0.0e+00 | int T0i - P_i 0.0e+00 | int Tij - P_iP_j/H 6.9e-18 | dipole - (PxS)/(M+H) 2.8e-17 | J_T - (spin S) 1.7e-14 | m^{a,j} - pred 1.5e-14 | n^{a,kk} - (v x S)_a 4.2e-15
+  (4) spin-orbit coefficient c(v) in H_SO = c(v) S.(grad Phi x v), field (ii) at linear order:
+     |P|=0.001 v=0.0011 gamma=1: c = 1.500000138504  vs Gam/(Gam+1)+1 = 1.500000138504  [GR (2Gam+1)/(Gam+1) = 1.500000138504]  structure residual 0.0e+00
+     |P|=0.001 gamma=0.0: c = 0.500000138504  vs Gam/(Gam+1)+gamma = 0.500000138504
+     |P|=0.001 gamma=0.5: c = 1.000000138504  vs Gam/(Gam+1)+gamma = 1.000000138504
+     |P|=0.100 v=0.1047 gamma=1: c = 1.501377420922  vs Gam/(Gam+1)+1 = 1.501377420922  [GR (2Gam+1)/(Gam+1) = 1.501377420922]  structure residual 0.0e+00
+     |P|=0.100 gamma=0.0: c = 0.501377420922  vs Gam/(Gam+1)+gamma = 0.501377420922
+     |P|=0.100 gamma=0.5: c = 1.001377420922  vs Gam/(Gam+1)+gamma = 1.001377420922
+     |P|=0.300 v=0.3011 gamma=1: c = 1.511880053937  vs Gam/(Gam+1)+1 = 1.511880053937  [GR (2Gam+1)/(Gam+1) = 1.511880053937]  structure residual 0.0e+00
+     |P|=0.300 gamma=0.0: c = 0.511880053937  vs Gam/(Gam+1)+gamma = 0.511880053937
+     |P|=0.300 gamma=0.5: c = 1.011880053937  vs Gam/(Gam+1)+gamma = 1.011880053937
+     |P|=0.550 v=0.5010 gamma=1: c = 1.536070499158  vs Gam/(Gam+1)+1 = 1.536070499158  [GR (2Gam+1)/(Gam+1) = 1.536070499158]  structure residual 1.1e-16
+     |P|=0.550 gamma=0.0: c = 0.536070499158  vs Gam/(Gam+1)+gamma = 0.536070499158
+     |P|=0.550 gamma=0.5: c = 1.036070499158  vs Gam/(Gam+1)+gamma = 1.036070499158
+  (5) frame dragging at rest: max |H_gm - (-1/2 curl w . S)| = 0.0e+00 (ratio 1.000000000000)
+
+==== bound triplet M_b = 0.85 (binding fraction 0.15) ====
+(1) Ward nu=0..3 max |omega tau^{0nu} - Q_j tau^{j nu}| = 2.78e-17; symmetry 1.39e-17; Hermiticity tau(Q)^dag = tau(-Q): 3.16e-15
+  P = [0. 0. 0.]: int T00 - H 0.0e+00 | int T0i - P_i 0.0e+00 | int Tij - P_iP_j/H 0.0e+00 | dipole - (PxS)/(M+H) 0.0e+00 | J_T - (spin S) 0.0e+00 | m^{a,j} - pred 0.0e+00 | n^{a,kk} - (v x S)_a 0.0e+00
+  (2) von Laue at rest: max |int T^ij| on the triplet = 0.0e+00 (any spin state; T^ij forward is c-number zero)
+  P = [ 0.21 -0.13  0.3 ]: int T00 - H 0.0e+00 | int T0i - P_i 5.6e-17 | int Tij - P_iP_j/H 2.8e-17 | dipole - (PxS)/(M+H) 2.8e-17 | J_T - (spin S) 2.2e-14 | m^{a,j} - pred 2.2e-14 | n^{a,kk} - (v x S)_a 1.8e-14
+  (4) spin-orbit coefficient c(v) in H_SO = c(v) S.(grad Phi x v), field (ii) at linear order:
+     |P|=0.001 v=0.0012 gamma=1: c = 1.500000173010  vs Gam/(Gam+1)+1 = 1.500000173010  [GR (2Gam+1)/(Gam+1) = 1.500000173010]  structure residual 2.2e-19
+     |P|=0.001 gamma=0.0: c = 0.500000173010  vs Gam/(Gam+1)+gamma = 0.500000173010
+     |P|=0.001 gamma=0.5: c = 1.000000173010  vs Gam/(Gam+1)+gamma = 1.000000173010
+     |P|=0.100 v=0.1168 gamma=1: c = 1.501718233349  vs Gam/(Gam+1)+1 = 1.501718233349  [GR (2Gam+1)/(Gam+1) = 1.501718233349]  structure residual 0.0e+00
+     |P|=0.100 gamma=0.0: c = 0.501718233349  vs Gam/(Gam+1)+gamma = 0.501718233349
+     |P|=0.100 gamma=0.5: c = 1.001718233349  vs Gam/(Gam+1)+gamma = 1.001718233349
+     |P|=0.300 v=0.3328 gamma=1: c = 1.514670599599  vs Gam/(Gam+1)+1 = 1.514670599599  [GR (2Gam+1)/(Gam+1) = 1.514670599599]  structure residual 0.0e+00
+     |P|=0.300 gamma=0.0: c = 0.514670599599  vs Gam/(Gam+1)+gamma = 0.514670599599
+     |P|=0.300 gamma=0.5: c = 1.014670599599  vs Gam/(Gam+1)+gamma = 1.014670599599
+     |P|=0.550 v=0.5433 gamma=1: c = 1.543605252625  vs Gam/(Gam+1)+1 = 1.543605252625  [GR (2Gam+1)/(Gam+1) = 1.543605252625]  structure residual 0.0e+00
+     |P|=0.550 gamma=0.0: c = 0.543605252625  vs Gam/(Gam+1)+gamma = 0.543605252625
+     |P|=0.550 gamma=0.5: c = 1.043605252625  vs Gam/(Gam+1)+gamma = 1.043605252625
+  (5) frame dragging at rest: max |H_gm - (-1/2 curl w . S)| = 0.0e+00 (ratio 1.000000000000)
+
+==== bound triplet M_b = 0.70 (binding fraction 0.30) ====
+(1) Ward nu=0..3 max |omega tau^{0nu} - Q_j tau^{j nu}| = 1.11e-16; symmetry 2.78e-17; Hermiticity tau(Q)^dag = tau(-Q): 5.36e-15
+  P = [0. 0. 0.]: int T00 - H 0.0e+00 | int T0i - P_i 0.0e+00 | int Tij - P_iP_j/H 0.0e+00 | dipole - (PxS)/(M+H) 0.0e+00 | J_T - (spin S) 0.0e+00 | m^{a,j} - pred 0.0e+00 | n^{a,kk} - (v x S)_a 0.0e+00
+  (2) von Laue at rest: max |int T^ij| on the triplet = 0.0e+00 (any spin state; T^ij forward is c-number zero)
+  P = [ 0.21 -0.13  0.3 ]: int T00 - H 0.0e+00 | int T0i - P_i 2.8e-17 | int Tij - P_iP_j/H 2.8e-17 | dipole - (PxS)/(M+H) 2.8e-17 | J_T - (spin S) 2.7e-14 | m^{a,j} - pred 3.2e-14 | n^{a,kk} - (v x S)_a 2.0e-14
+  (4) spin-orbit coefficient c(v) in H_SO = c(v) S.(grad Phi x v), field (ii) at linear order:
+     |P|=0.001 v=0.0014 gamma=1: c = 1.500000255102  vs Gam/(Gam+1)+1 = 1.500000255102  [GR (2Gam+1)/(Gam+1) = 1.500000255102]  structure residual 0.0e+00
+     |P|=0.001 gamma=0.0: c = 0.500000255102  vs Gam/(Gam+1)+gamma = 0.500000255102
+     |P|=0.001 gamma=0.5: c = 1.000000255102  vs Gam/(Gam+1)+gamma = 1.000000255102
+     |P|=0.100 v=0.1414 gamma=1: c = 1.502525316942  vs Gam/(Gam+1)+1 = 1.502525316942  [GR (2Gam+1)/(Gam+1) = 1.502525316942]  structure residual 0.0e+00
+     |P|=0.100 gamma=0.0: c = 0.502525316942  vs Gam/(Gam+1)+gamma = 0.502525316942
+     |P|=0.100 gamma=0.5: c = 1.002525316942  vs Gam/(Gam+1)+gamma = 1.002525316942
+     |P|=0.300 v=0.3939 gamma=1: c = 1.521065362106  vs Gam/(Gam+1)+1 = 1.521065362106  [GR (2Gam+1)/(Gam+1) = 1.521065362106]  structure residual 1.1e-16
+     |P|=0.300 gamma=0.0: c = 0.521065362106  vs Gam/(Gam+1)+gamma = 0.521065362106
+     |P|=0.300 gamma=0.5: c = 1.021065362106  vs Gam/(Gam+1)+gamma = 1.021065362106
+     |P|=0.550 v=0.6178 gamma=1: c = 1.559810633002  vs Gam/(Gam+1)+1 = 1.559810633002  [GR (2Gam+1)/(Gam+1) = 1.559810633002]  structure residual 0.0e+00
+     |P|=0.550 gamma=0.0: c = 0.559810633002  vs Gam/(Gam+1)+gamma = 0.559810633002
+     |P|=0.550 gamma=0.5: c = 1.059810633002  vs Gam/(Gam+1)+gamma = 1.059810633002
+  (5) frame dragging at rest: max |H_gm - (-1/2 curl w . S)| = 0.0e+00 (ratio 1.000000000000)
+
+(3) uniqueness of first moments of T^ij on B (Christoffel step): unknowns dtau1^{a,(ji)} (18), constraints sym_(a,j) dtau1^{a,ji} = 0
+   rank = 18 of 18 unknowns (18 constraints): nullspace dim = 0
+
+(6) random improvement dT^{mu nu} = d_rho d_sigma Y^{rho mu sigma nu} (Kulkarni-Nomizu Y, internal Hermitian ops, Y(-Q) = Y(Q)^dag)
+   Riemann symmetries + first Bianchi of the KN tensor: 1.8e-15
+   improved stress: Ward 9.9e-16, symmetry 2.0e-15, Hermiticity 2.2e-14
+   P = [0. 0. 0.]: max change in zeroth moments 0.0e+00, in all first moments 1.1e-16 (FD floor), in the T00 second-moment coefficient 48.607
+   P = [ 0.2  -0.1   0.25]: max change in zeroth moments 0.0e+00, in all first moments 1.1e-14 (FD floor), in the T00 second-moment coefficient 48.607

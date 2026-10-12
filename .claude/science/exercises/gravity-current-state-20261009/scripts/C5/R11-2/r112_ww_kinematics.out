@@ -1,0 +1,5 @@
+max over 2400000 path points of E_leg(eta)/max(E1,E2) = 1.000000000000  (<= 1 => boost orbit never leaves the ball |k| <= max(|p|,|p'|))
+equal energies, theta=1e-01: eta* = artanh(cos(theta/2)) = 3.689 ~ ln(4/theta) = 3.689; brick-wall leg energy / E = sin(theta/2) = 5.00e-02
+equal energies, theta=1e-03: eta* = artanh(cos(theta/2)) = 8.294 ~ ln(4/theta) = 8.294; brick-wall leg energy / E = sin(theta/2) = 5.00e-04
+equal energies, theta=1e-06: eta* = artanh(cos(theta/2)) = 15.202 ~ ln(4/theta) = 15.202; brick-wall leg energy / E = sin(theta/2) = 5.00e-07
+equal energies, theta=1e-09: eta* = artanh(cos(theta/2)) = inf ~ ln(4/theta) = 22.110; brick-wall leg energy / E = sin(theta/2) = 5.00e-10

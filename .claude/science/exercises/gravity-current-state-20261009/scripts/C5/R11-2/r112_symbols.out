@@ -1,0 +1,24 @@
+== 1. identities (random k) ==
+k#0: |S.V|=1.9e-18  |R V|=5.2e-18  |R-R^T|=0.0e+00  tr-check |trv.R - S|=2.0e-17
+      K_N S^T: norm=1.633e-01 (nonzero => NOT strongly S-invariant), residual off Im(V)=1.8e-17  s^T K_N s=0.0e+00
+      Q_N V = 5.2e-18  (global form invariant, density not)
+k#1: |S.V|=4.1e-16  |R V|=3.0e-16  |R-R^T|=0.0e+00  tr-check |trv.R - S|=0.0e+00
+      K_N S^T: norm=1.851e+00 (nonzero => NOT strongly S-invariant), residual off Im(V)=3.9e-16  s^T K_N s=-2.2e-16
+      Q_N V = 3.0e-16  (global form invariant, density not)
+k#2: |S.V|=1.7e-16  |R V|=1.5e-16  |R-R^T|=0.0e+00  tr-check |trv.R - S|=2.8e-17
+      K_N S^T: norm=1.784e+00 (nonzero => NOT strongly S-invariant), residual off Im(V)=1.7e-16  s^T K_N s=-5.6e-17
+      Q_N V = 1.5e-16  (global form invariant, density not)
+|C S^T| (random k) = 0.3725566606662266
+== 2. polynomial-system check: no O(1)/O(k) invariant characters ==
+h-side deg<=1 divergence-free symbols: free params = 0 (0 => every invariant h-character is O(k^2))
+E-side constant S-invariant symbols: free params = 0 (0 => every invariant E-character is O(k))
+== 3. TT dispersion by realization class (random cubic-generic allowed terms) ==
+L (both compact)                                : omega_TT exponents p = 2.999, 2.999   (omega ~ k^p); all omega^2 > 0: True
+A (E integer, h compact)                        : omega_TT exponents p = 2.000, 2.000   (omega ~ k^p); all omega^2 > 0: True
+B (h integer, E compact)                        : omega_TT exponents p = 2.001, 2.001   (omega ~ k^p); all omega^2 > 0: True
+N (both polynomial; not a rotor/qubit class)    : omega_TT exponents p = 1.001, 1.003   (omega ~ k^p); all omega^2 > 0: True
+NOTE: in N, K_N on TT = |E_TT|^2 and h:R on TT = q^2|h_TT|^2 > 0 (09-14 note); here random positive K0 stands in for K_N on TT.
+== 4. dressing identities on TT (H_N|TT = H_L|TT composed with (-Delta)^-1, both sides) ==
+k#0: |K_N - |C|^2/q^2|_TT = 1.1e-16 (ratio const=1.000000),  |h:R - |R|^2/q^2|_TT = 2.2e-16, sign of h:R on TT: [1.0, 1.0]
+k#1: |K_N - |C|^2/q^2|_TT = 2.4e-16 (ratio const=1.000000),  |h:R - |R|^2/q^2|_TT = 3.2e-19, sign of h:R on TT: [1.0, 1.0]
+k#2: |K_N - |C|^2/q^2|_TT = 1.3e-16 (ratio const=1.000000),  |h:R - |R|^2/q^2|_TT = 2.4e-16, sign of h:R on TT: [1.0, 1.0]

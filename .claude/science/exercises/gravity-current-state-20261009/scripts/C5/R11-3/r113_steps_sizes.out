@@ -1,0 +1,18 @@
+=== (i) small-m step coefficients (lattice units, per real scalar; Delta rho = c_rho Delta m^2/a^2 etc.) ===
+  L  N=160: c_rho=0.13859 c_pU=-0.14003 c_pM=-0.04620 | c_pU/c_rho=-1.0104 c_pM/c_rho=-0.3333 (w=-1 would need -1)
+  L  N=240: c_rho=0.13859 c_pU=-0.14003 c_pM=-0.04620 | c_pU/c_rho=-1.0104 c_pM/c_rho=-0.3333 (w=-1 would need -1)
+  G  N=160: c_rho=0.09639 c_pU=-0.02455 c_pM=-0.03213 | c_pU/c_rho=-0.2547 c_pM/c_rho=-0.3333 (w=-1 would need -1)
+  G  N=240: c_rho=0.09639 c_pU=-0.02455 c_pM=-0.03213 | c_pU/c_rho=-0.2547 c_pM/c_rho=-0.3333 (w=-1 would need -1)
+  NN N=160: c_rho=0.11383 c_pU=-0.01435 c_pM=-0.03794 | c_pU/c_rho=-0.1261 c_pM/c_rho=-0.3333 (w=-1 would need -1)
+  NN N=240: c_rho=0.11384 c_pU=-0.01435 c_pM=-0.03795 | c_pU/c_rho=-0.1261 c_pM/c_rho=-0.3333 (w=-1 would need -1)
+=== (ii) V1 finite isotropic strain, M coupling: physical spacing a = lam (comoving cutoff fixed), mass fixed in units 1/a0 ===
+    E(lam) = <(1/2) sqrt(m^2 + sum u / lam^2)> per site ; rho(lam) = E/lam^3 ; w_eff = -dln rho/(3 dln lam) - 1
+  L m=0.0: lam=0.5 rho=1.7147e+01 w=0.333 res=+1.608e+01 ; lam=0.9 rho=1.6335e+00 w=0.333 res=+5.617e-01 ; lam=1.0 rho=1.0717e+00 w=0.333 res=+0.000e+00 ; lam=1.1 rho=7.3199e-01 w=0.333 res=-3.397e-01 ; lam=2.0 rho=6.6982e-02 w=0.333 res=-1.005e+00 ; lam=10.0 rho=1.0717e-04 w=0.333 res=-1.072e+00
+  L m=1.0: lam=0.5 rho=1.7674e+01 w=0.314 res=+1.648e+01 ; lam=0.9 rho=1.7866e+00 w=0.280 res=+5.928e-01 ; lam=1.0 rho=1.1938e+00 w=0.271 res=+0.000e+00 ; lam=1.1 rho=8.3128e-01 w=0.261 res=-3.625e-01 ; lam=2.0 rho=9.2832e-02 w=0.179 res=-1.101e+00 ; lam=10.0 rho=5.1238e-04 w=0.016 res=-1.193e+00
+  G m=0.0: lam=0.5 rho=2.3458e+01 w=0.333 res=+2.199e+01 ; lam=0.9 rho=2.2346e+00 w=0.333 res=+7.685e-01 ; lam=1.0 rho=1.4661e+00 w=0.333 res=+0.000e+00 ; lam=1.1 rho=1.0014e+00 w=0.333 res=-4.647e-01 ; lam=2.0 rho=9.1631e-02 w=0.333 res=-1.374e+00 ; lam=10.0 rho=1.4661e-04 w=0.333 res=-1.466e+00
+  G m=1.0: lam=0.5 rho=2.3835e+01 w=0.323 res=+2.228e+01 ; lam=0.9 rho=2.3475e+00 w=0.303 res=+7.908e-01 ; lam=1.0 rho=1.5567e+00 w=0.296 res=+0.000e+00 ; lam=1.1 rho=1.0755e+00 w=0.290 res=-4.812e-01 ; lam=2.0 rho=1.1200e-01 w=0.226 res=-1.445e+00 ; lam=10.0 rho=5.2248e-04 w=0.028 res=-1.556e+00
+    res = rho(lam) - rho(1): what is left after a constant (Lambda) counterterm tuned at lam = 1.
+=== (iii) sizes (readings; inputs RECALLED/repo: M_Pl = 1.221e19 GeV, rho_Lambda = 2.52e-47 GeV^4 per C5_O3_report.md:40) ===
+  1/a^4 at a = l_P: 2.223e+76 GeV^4 = 8.82e+122 rho_Lambda
+  Delta m^2 = (100 GeV)^2, c ~ 0.1: Delta rho ~ 1.49e+41 GeV^4 = 5.92e+87 rho_Lambda (vs Lemma PT tree EW shift 1.19e8 GeV^4 = 4.7e54 rho_Lambda)
+  Delta m^2 = (0.2 GeV)^2 (QCD-like), c ~ 0.1: Delta rho ~ 5.96e+35 GeV^4 = 2.37e+82 rho_Lambda (vs Lemma PT tree EW shift 1.19e8 GeV^4 = 4.7e54 rho_Lambda)

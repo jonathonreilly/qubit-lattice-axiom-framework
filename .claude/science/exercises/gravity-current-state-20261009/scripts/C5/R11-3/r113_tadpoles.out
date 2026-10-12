@@ -1,0 +1,35 @@
+=== (a) zero-point tadpoles per real scalar, d = 3, lattice units (a = 1); box B = 2.0 ===
+cols: rho = <eps>/2 ; p_U = <eps v^2>/6 ; p_M = <sum u/eps>/6 ; w = p/rho ; identity check rho+p_U vs -<eps trA>/6
+L  m=1.0: rho=1.193812 (box 0.287580, edge 0.906232) | p_U=0.874453 (box 0.074832, edge 0.799621) | p_M=0.323106 (edge 0.248274)
+        w_U=0.73249 (box 0.26021, edge 0.88236) w_M=0.27065 (edge 0.27396) | rho+p_U=2.0682651 ; -<eps trA>/6=2.0682659 (box part -1.3e-09) ; diff -7.9e-07 ; min integrand 5.003e-01
+L  m=0.3: rho=1.083880 (box 0.256570, edge 0.827310) | p_U=0.966065 (box 0.083274, edge 0.882790) | p_M=0.353324 (edge 0.270049)
+        w_U=0.89130 (box 0.32457, edge 1.06706) w_M=0.32598 (edge 0.32642) | rho+p_U=2.0499450 ; -<eps trA>/6=2.0499457 (box part -1.2e-09) ; diff -7.8e-07 ; min integrand 1.510e-01
+L  m=0.0: rho=1.071709 (box 0.253144, edge 0.818565) | p_U=0.978068 (box 0.084381, edge 0.893687) | p_M=0.357236 (edge 0.272855)
+        w_U=0.91263 (box 0.33333, edge 1.09177) w_M=0.33333 (edge 0.33333) | rho+p_U=2.0497771 ; -<eps trA>/6=2.0497779 (box part -1.2e-09) ; diff -7.8e-07 ; min integrand 1.814e-02
+G  m=1.0: rho=1.556701 (box 0.287580, edge 1.269120) | p_U=0.292547 (box 0.074832, edge 0.217715) | p_M=0.461339 (edge 0.386507)
+        w_U=0.18793 (box 0.26021, edge 0.17155) w_M=0.29636 (edge 0.30455) | rho+p_U=1.8492474 ; -<eps trA>/6=1.8492475 (box part -1.6e-12) ; diff -4.0e-08 ; min integrand 5.003e-01
+G  m=0.3: rho=1.474701 (box 0.256570, edge 1.218131) | p_U=0.310679 (box 0.083274, edge 0.227405) | p_M=0.485878 (edge 0.402604)
+        w_U=0.21067 (box 0.32457, edge 0.18668) w_M=0.32948 (edge 0.33051) | rho+p_U=1.7853800 ; -<eps trA>/6=1.7853800 (box part -1.5e-12) ; diff -3.9e-08 ; min integrand 1.510e-01
+G  m=0.0: rho=1.466103 (box 0.253144, edge 1.212959) | p_U=0.312824 (box 0.084381, edge 0.228443) | p_M=0.488701 (edge 0.404320)
+        w_U=0.21337 (box 0.33333, edge 0.18834) w_M=0.33333 (edge 0.33333) | rho+p_U=1.7789275 ; -<eps trA>/6=1.7789276 (box part -1.4e-12) ; diff -3.9e-08 ; min integrand 1.814e-02
+NN m=1.0: rho=1.300034 (box 0.267014, edge 1.033019) | p_U=0.099093 (box 0.037195, edge 0.061898) | p_M=0.366390 (edge 0.299731)
+        w_U=0.07622 w_M=0.28183 | rho+p_U=1.3991265 ; -<eps trA>/6=1.3991265 ; diff -2.2e-16
+NN m=0.3: rho=1.203952 (box 0.233876, edge 0.970076) | p_U=0.108766 (box 0.042654, edge 0.066111) | p_M=0.394605 (edge 0.319063)
+        w_U=0.09034 w_M=0.32776 | rho+p_U=1.3127176 ; -<eps trA>/6=1.3127176 ; diff -4.4e-16
+NN m=0.0: rho=1.193801 (box 0.230193, edge 0.963608) | p_U=0.110001 (box 0.043421, edge 0.066580) | p_M=0.397934 (edge 0.321203)
+        w_U=0.09214 w_M=0.33333 | rho+p_U=1.3038018 ; -<eps trA>/6=1.3038018 ; diff 1.6e-10
+=== continuum comparator: sharp cube |k_i|<B, eps = sqrt(m^2+k^2) (box part alone, normalised to its own rho) ===
+  m=1.0: w_box(cube cutoff) = 0.260212  (1/3 = 0.333333 at m = 0: Akhmedov-type momentum-cutoff value)
+  m=0.3: w_box(cube cutoff) = 0.324568  (1/3 = 0.333333 at m = 0: Akhmedov-type momentum-cutoff value)
+  m=0.0: w_box(cube cutoff) = 0.333333  (1/3 = 0.333333 at m = 0: Akhmedov-type momentum-cutoff value)
+=== edge family u_t = (1-t)u_L + t u_G: (rho+p)/rho = 1 + w, never 0 (positivity) ===
+  m=1.0: t=0.0: 1+w_U=1.7325 1+w_M=1.2707 | t=0.1: 1+w_U=1.5370 1+w_M=1.2764 | t=0.2: 1+w_U=1.3972 1+w_M=1.2805 | t=0.3: 1+w_U=1.2965 1+w_M=1.2837 | t=0.4: 1+w_U=1.2257 1+w_M=1.2864 | t=0.5: 1+w_U=1.1789 1+w_M=1.2886 | t=0.6: 1+w_U=1.1517 1+w_M=1.2906 | t=0.7: 1+w_U=1.1412 1+w_M=1.2923 | t=0.8: 1+w_U=1.1449 1+w_M=1.2938 | t=0.9: 1+w_U=1.1610 1+w_M=1.2951 | t=1.0: 1+w_U=1.1879 1+w_M=1.2964
+  m=0.3: t=0.0: 1+w_U=1.8913 1+w_M=1.3260 | t=0.1: 1+w_U=1.6348 1+w_M=1.3270 | t=0.2: 1+w_U=1.4627 1+w_M=1.3276 | t=0.3: 1+w_U=1.3424 1+w_M=1.3280 | t=0.4: 1+w_U=1.2592 1+w_M=1.3283 | t=0.5: 1+w_U=1.2048 1+w_M=1.3286 | t=0.6: 1+w_U=1.1734 1+w_M=1.3288 | t=0.7: 1+w_U=1.1609 1+w_M=1.3290 | t=0.8: 1+w_U=1.1644 1+w_M=1.3292 | t=0.9: 1+w_U=1.1816 1+w_M=1.3293 | t=1.0: 1+w_U=1.2107 1+w_M=1.3295
+=== step (phase transition: one species m 1.0 -> 0.3), per real scalar, lattice units ===
+  L : d rho = -0.109932 ; d p_U = +0.091611 ; d p_M = +0.030218 ; d(rho+p_U) = -0.018320 ; ratio d(rho+p_U)/d rho = 0.1667
+  G : d rho = -0.082000 ; d p_U = +0.018132 ; d p_M = +0.024539 ; d(rho+p_U) = -0.063867 ; ratio d(rho+p_U)/d rho = 0.7789
+  NN: d rho = -0.096082 ; d p_U = +0.009673 ; d p_M = +0.028214 ; d(rho+p_U) = -0.086409 ; ratio d(rho+p_U)/d rho = 0.8993
+=== independence of the two tadpole conditions across species: (rho+p_U)/rho per (profile, m) ===
+  L m=1.0: 1.73249 ; L m=0.3: 1.89130 ; L m=0.0: 1.91263 ; G m=1.0: 1.18793 ; G m=0.3: 1.21067 ; G m=0.0: 1.21337 ; NN m=1.0: 1.07622 ; NN m=0.3: 1.09034 ; NN m=0.0: 1.09214
+  A single counterterm with rho_ct = -p_ct (Lambda sqrt(-g)) cancels only the direction (1,-1); the vacuum vector (rho, p) is not along it for any entry above.
+runtime 0.9s

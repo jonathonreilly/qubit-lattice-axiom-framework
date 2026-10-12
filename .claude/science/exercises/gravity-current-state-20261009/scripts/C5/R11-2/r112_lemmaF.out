@@ -1,0 +1,6 @@
+L=6 ring, eps0=1.0, t=1.0, rho choice=site-symmetrized: max|[rho_0,rho_1]|=1.000; joint-eigvec dimension by particle number N=0..L: [1, 0, 0, 0, 0, 0, 1]
+L=8 ring, eps0=1.0, t=1.0, rho choice=site-symmetrized: max|[rho_0,rho_1]|=1.000; joint-eigvec dimension by particle number N=0..L: [1, 0, 0, 0, 0, 0, 0, 0, 1]
+L=6 ring, eps0=1.0, t=1.0, rho choice=bond-left: max|[rho_0,rho_1]|=1.000; joint-eigvec dimension by particle number N=0..L: [1, 0, 0, 0, 0, 0, 1]
+L=8 ring, eps0=1.0, t=1.0, rho choice=bond-left: max|[rho_0,rho_1]|=1.000; joint-eigvec dimension by particle number N=0..L: [1, 0, 0, 0, 0, 0, 0, 0, 1]
+Control: t=0 (on-site rho, commuting, H_m has no hopping => frozen):
+L=6 ring, eps0=1.0, t=0.0, rho choice=site-symmetrized: max|[rho_0,rho_1]|=0.000; joint-eigvec dimension by particle number N=0..L: [1, 6, 15, 20, 15, 6, 1]

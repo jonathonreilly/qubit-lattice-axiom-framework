@@ -1,0 +1,11 @@
+(1) linearized Bianchi d^mu G_mu nu = 0 for all nu: True
+(2) quadratic form symmetric: True
+    gauge xi_0 null: True
+    gauge xi_1 null: True
+    gauge xi_2 null: True
+    gauge xi_3 null: True
+(2) reduced determinants (q along z; zeros in w give the propagating modes; w-independent factors are constraints):
+  V1 (GR): subspace dim 10, gauge 4, reduced 6 ; det = -16*q**8*(q - w)**2*(q + w)**2
+  V2 (h_ii=0): subspace dim 9, gauge 3, reduced 6 ; det = -16*q**8*(q - w)**2*(q + w)**2
+  V3 (h_ii=0, h_00=0): subspace dim 8, gauge 2, reduced 6 ; det = -64*q**6*w**2*(q - w)**2*(q + w)**2
+  roots in w (q=1): V1 [1] ; V2 [1] ; V3 [1]

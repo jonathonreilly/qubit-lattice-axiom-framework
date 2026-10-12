@@ -1,0 +1,30 @@
+m = 0.50, kappa = 0.80; radial GL 400 nodes; P = 0 fibre; triplet polarisation x
+
+M_b = 0.95 (f_B = 0.05): lam = -6.99497, radial eigen residual 4.4e-16, <r^2>-scale
+  kinetic forward stress Pi_kin (diag) = [0.27816523 0.09272174 0.09272174] ; trace/M_b = 0.488009
+  interaction forward stress (Ward: i[W, D]) diag = [-0.27816523 -0.09272174 -0.09272174]
+  von Laue: max |Pi_kin + Pi_int| = 7.08e-12  (relative to |Pi_kin| 2.54e-11)
+  comparator (h_ij sees constituents only): passive-weight shift gamma*tr Pi_kin/M_b = 0.488009 (gamma = 1)
+  constituent-dust T00 quadrupole (pol. x): diag = [8.292419 3.031096 3.031096]; traceless spin-aligned part Q_xx - Q_yy = 5.261323; closed form: 0
+  scale comparison: S^2/M_b (Kerr-like spin quadrupole scale, hbar = a = 1) = 2.1053
+
+M_b = 0.85 (f_B = 0.15): lam = -9.09146, radial eigen residual 4.4e-16, <r^2>-scale
+  kinetic forward stress Pi_kin (diag) = [0.31376029 0.10458676 0.10458676] ; trace/M_b = 0.615216
+  interaction forward stress (Ward: i[W, D]) diag = [-0.31376029 -0.10458676 -0.10458676]
+  von Laue: max |Pi_kin + Pi_int| = 1.14e-11  (relative to |Pi_kin| 3.65e-11)
+  comparator (h_ij sees constituents only): passive-weight shift gamma*tr Pi_kin/M_b = 0.615216 (gamma = 1)
+  constituent-dust T00 quadrupole (pol. x): diag = [7.810819 2.862839 2.862839]; traceless spin-aligned part Q_xx - Q_yy = 4.947979; closed form: 0
+  scale comparison: S^2/M_b (Kerr-like spin quadrupole scale, hbar = a = 1) = 2.3529
+
+M_b = 0.70 (f_B = 0.30): lam = -12.04028, radial eigen residual 2.2e-16, <r^2>-scale
+  kinetic forward stress Pi_kin (diag) = [0.33601363 0.11200454 0.11200454] ; trace/M_b = 0.800032
+  interaction forward stress (Ward: i[W, D]) diag = [-0.33601363 -0.11200454 -0.11200454]
+  von Laue: max |Pi_kin + Pi_int| = 1.75e-11  (relative to |Pi_kin| 5.20e-11)
+  comparator (h_ij sees constituents only): passive-weight shift gamma*tr Pi_kin/M_b = 0.800032 (gamma = 1)
+  constituent-dust T00 quadrupole (pol. x): diag = [7.906356 2.890009 2.890009]; traceless spin-aligned part Q_xx - Q_yy = 5.016347; closed form: 0
+  scale comparison: S^2/M_b (Kerr-like spin quadrupole scale, hbar = a = 1) = 2.8571
+
+Eotvos-type comparator between binding fractions if h_ij couples to constituents only (gamma = 1, at rest):
+  f_B 0.05 vs 0.15: eta = 2|a1 - a2|/(a1 + a2) = 0.0820  (box stress with interaction term: 0, proved)
+  f_B 0.05 vs 0.30: eta = 2|a1 - a2|/(a1 + a2) = 0.1898  (box stress with interaction term: 0, proved)
+  f_B 0.15 vs 0.30: eta = 2|a1 - a2|/(a1 + a2) = 0.1082  (box stress with interaction term: 0, proved)

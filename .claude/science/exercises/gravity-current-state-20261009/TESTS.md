@@ -4732,3 +4732,28 @@ Launch: R13-1, R13-3, R13-5 and R13-6 now; R13-2 after the R12-5 referee; R13-4 
   - **Correction to R11-5:** its profile has no positive Lorentzian synthesis measure.
 
   Referee running.
+
+### C5 Round 13, items 7–8 (pre-registered 20:49Z; launched now)
+
+**R13-7. Is the electron–photon split a theorem? A mass-interval no-go for c_e − c_γ in Ward-forced lattice QED with periodic bands.**
+- Four refereed or worker routes leave c_e − c_γ nonzero: R8-5, R10-1/R10-5, R12-6 (log), R13-1.
+- R11-1 (refereed, DERIVED) proved that interval vanishing of A-moment coefficients forces boson–fermion cancellation, but for the photon and graviton-TT coefficients only. The electron's own shift involves the Dirac a-, c₁- and c₂-moments (R10-1 Theorem D), which have no bosonic counterpart.
+- Question: in a stated class, can c_e(m) − c_γ(m) vanish on an open mass interval? The class: Ward-forced Peierls (or any ℓ¹ bilinear gauge generator, Lemma C), periodic C² bands, box or not, any finite set of species, paired or not, one loop.
+- Use a Laplace/Lerch argument on the m-dependence, as in N*, plus the sign structure of the electron self-energy moments.
+
+Readings:
+- **DERIVED:** a refereed proof that c_e − c_γ cannot vanish on a mass interval in the stated class. The split then needs a per-mass (counterterm) tuning.
+- **REFUTED:** an explicit untuned law in the class with c_e − c_γ ≡ 0 on an interval, checked.
+- **SUGGESTED:** otherwise.
+
+**R13-8. Set C's actual one-loop tuning count (Z³ × ℝ, nearest-neighbour or box, QED plus graviton).**
+- The claim "≥ 6 tunings" for set C is a reading. R10-1's "six" is not established (`vR10-1:15`).
+- Count the independent one-loop Lorentz-violating coefficients that must be tuned, for:
+  - one charged Dirac species plus the photon plus the N-type graviton on Z³ × ℝ with cubic symmetry (the axioms' proper rotations only);
+  - then per extra species.
+- List each coefficient: speeds, birefringence, TT masses, tadpoles, CPT-odd b₀ and k_AF (R6-5).
+- Give the scaling with the number of species N_s, against observational precision.
+
+Readings:
+- **COUNTED:** an explicit count, with each coefficient shown to be generated (nonzero) at one loop and independent, checked.
+- **OPEN:** otherwise.

@@ -1,0 +1,37 @@
+{
+  "at": "2026-10-12T22:56:22.185469+00:00",
+  "scope": "Lossless storage-only mapping; no alteration or weakening of original scientific or review evidence.",
+  "archive_sha256": "212aae6ba98deffd0c86b78bc26978db737700fd02de509c1c6197c858d4aecc",
+  "recovery_note_sha256": "a2a2d64d801a5c82041d1c9bb3679abf2c0b4950466ea0b466da9365cfc5336d",
+  "entries": [
+    {
+      "original_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/independent_review/campaign_to_canonical_note.diff",
+      "sha256": "515b03978fe6943d3f327ee3f2e1271eb7bc5eb96047aaeff3c1ca755d18569f",
+      "bytes": 7057,
+      "exact_local_original_and_review_receipt_match": true,
+      "encoding": "base64",
+      "archive_json_pointer": "/entries/0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/independent_review/snapshots/campaign/prior_DIRECT_DYNAMICS.md.snapshot",
+      "sha256": "6fbaf6b91561d3ce5a51b154a364e98d1fafedd1b94119f725df8df4219648d8",
+      "bytes": 16234,
+      "exact_local_original_and_review_receipt_match": true,
+      "encoding": "base64",
+      "archive_json_pointer": "/entries/1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/independent_review/snapshots/canonical/logs/runner-cache/local_vector_homogeneous_response_2026_10_12.txt.snapshot",
+      "sha256": "ef4205dbb09df913916fded90ae8c3abf343fb4eaa8933796c054463385d0518",
+      "bytes": 1132,
+      "exact_local_original_and_review_receipt_match": true,
+      "encoding": "base64",
+      "archive_json_pointer": "/entries/2"
+    }
+  ],
+  "all_three_decoded_bytes_match_original_and_review_receipt": true,
+  "staged_archive_and_recovery_match_working_bytes": true,
+  "report_and_original_dispositions_unchanged": true,
+  "recovery_requirement": "Decode named entry to the original repository-relative path before following a preserved link to an encoded-only historical artifact. Raw historical bytes must not be whitespace-normalized.",
+  "disposition": "Accepted as lossless archival representation; exact original identities remain controlling."
+}

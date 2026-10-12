@@ -4,7 +4,7 @@ runner_sha256: 03af913f6eedbfa710dc752cbb0fb8fa1c1a78e198e9e2658e6c4d40a38b1b5b
 input_fingerprint_sha256: 282714dce24892a4b1102fa5950b1b66843fb552b4d999a0abbb9259ae6b1c68
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 1.35
+elapsed_sec: 1.00
 status: ok
 ----- stdout -----
 PASS symbolic tensor inverse, stable poles, static Green and retarded time integral

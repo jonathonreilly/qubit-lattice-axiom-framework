@@ -1,0 +1,45 @@
+{
+  "at": "2026-10-12T22:44:21.508108+00:00",
+  "source_sha256": "704adbb3253d66e56e62e09f3aa6b908a8ee1054629849958aa56deb1bd19bce",
+  "checks": [
+    {
+      "mutation": "Swap longitudinal/transverse static coefficients",
+      "detected": true,
+      "correct_oblique_susceptibility": "44/243",
+      "mutant_oblique_susceptibility": "91/243"
+    },
+    {
+      "mutation": "Add a term invisible to axis-only static tests",
+      "detected": true,
+      "off_axis_discrepancy": "1088/59049",
+      "axes_discrepancy": "0"
+    },
+    {
+      "mutation": "Invert radial delta Jacobian",
+      "detected": true,
+      "mutant_mass_over_correct_mass": "6"
+    },
+    {
+      "mutation": "Use cT as the outer energy-flux speed for D<N",
+      "detected": true,
+      "squared_flux_over_cap": "4"
+    },
+    {
+      "mutation": "Flip the source-coupling sign",
+      "detected": true,
+      "correct_normalized_Gauss_flux": 1,
+      "mutant_normalized_Gauss_flux": -1
+    },
+    {
+      "mutation": "Remove the longitudinal branch while claiming no off-cone tail",
+      "detected": true,
+      "off_cone_Gzz_in_units_t_over_4pi_alpha_r3": "2"
+    },
+    {
+      "mutation": "Omit the intervening tensor term",
+      "detected": true,
+      "independently_integrated_error": 0.5598960738067768
+    }
+  ],
+  "scope": "Independent synthetic formula mutations only. Author files were not edited or executed."
+}

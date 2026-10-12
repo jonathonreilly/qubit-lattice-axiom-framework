@@ -1,0 +1,118 @@
+{
+  "aggregation_mutants": [
+    {
+      "failed_families": "{'tensor_inverse': False, 'positive_branch_eigenvalues': True, 'dynamic_inverse': True, 'static_point_source': True, 'retarded_time_integral': True, 'spherical_Bessel_identity': True, 'real_to_Fourier_transform': True, 'energy_flux_diagnostics': True, 'off_cone_diagnostics': True, 'missing_intervening_term_rejected': True}",
+      "name": "symbolic_false",
+      "rejected": true
+    },
+    {
+      "failed_families": "{'tensor_inverse': True, 'positive_branch_eigenvalues': True, 'dynamic_inverse': True, 'static_point_source': True, 'retarded_time_integral': True, 'spherical_Bessel_identity': True, 'real_to_Fourier_transform': False, 'energy_flux_diagnostics': True, 'off_cone_diagnostics': True, 'missing_intervening_term_rejected': True}",
+      "name": "row_count",
+      "rejected": true
+    },
+    {
+      "failed_families": "{'tensor_inverse': True, 'positive_branch_eigenvalues': True, 'dynamic_inverse': True, 'static_point_source': True, 'retarded_time_integral': True, 'spherical_Bessel_identity': True, 'real_to_Fourier_transform': False, 'energy_flux_diagnostics': True, 'off_cone_diagnostics': True, 'missing_intervening_term_rejected': True}",
+      "name": "transform_threshold_equal",
+      "rejected": true
+    },
+    {
+      "failed_families": "{'tensor_inverse': True, 'positive_branch_eigenvalues': True, 'dynamic_inverse': True, 'static_point_source': True, 'retarded_time_integral': True, 'spherical_Bessel_identity': True, 'real_to_Fourier_transform': True, 'energy_flux_diagnostics': False, 'off_cone_diagnostics': True, 'missing_intervening_term_rejected': True}",
+      "name": "flux_count",
+      "rejected": true
+    },
+    {
+      "failed_families": "{'tensor_inverse': True, 'positive_branch_eigenvalues': True, 'dynamic_inverse': True, 'static_point_source': True, 'retarded_time_integral': True, 'spherical_Bessel_identity': True, 'real_to_Fourier_transform': True, 'energy_flux_diagnostics': False, 'off_cone_diagnostics': True, 'missing_intervening_term_rejected': True}",
+      "name": "flux_bound",
+      "rejected": true
+    },
+    {
+      "failed_families": "{'tensor_inverse': True, 'positive_branch_eigenvalues': True, 'dynamic_inverse': True, 'static_point_source': True, 'retarded_time_integral': True, 'spherical_Bessel_identity': True, 'real_to_Fourier_transform': True, 'energy_flux_diagnostics': True, 'off_cone_diagnostics': False, 'missing_intervening_term_rejected': True}",
+      "name": "off_cone_count",
+      "rejected": true
+    },
+    {
+      "failed_families": "{'tensor_inverse': True, 'positive_branch_eigenvalues': True, 'dynamic_inverse': True, 'static_point_source': True, 'retarded_time_integral': True, 'spherical_Bessel_identity': True, 'real_to_Fourier_transform': True, 'energy_flux_diagnostics': True, 'off_cone_diagnostics': True, 'missing_intervening_term_rejected': False}",
+      "name": "missing_middle_threshold_equal",
+      "rejected": true
+    },
+    {
+      "failed_families": "{'tensor_inverse': True, 'positive_branch_eigenvalues': True, 'dynamic_inverse': True, 'static_point_source': True, 'retarded_time_integral': True, 'spherical_Bessel_identity': True, 'real_to_Fourier_transform': True, 'energy_flux_diagnostics': True, 'off_cone_diagnostics': False, 'missing_intervening_term_rejected': True}",
+      "name": "off_cone_false",
+      "rejected": true
+    }
+  ],
+  "all_original_source_bytes_unchanged": true,
+  "cache_input_fingerprint": "282714dce24892a4b1102fa5950b1b66843fb552b4d999a0abbb9259ae6b1c68",
+  "cache_raw_stdout_equal": true,
+  "created_utc": "2026-10-12T22:51:04.618841+00:00",
+  "elapsed_seconds": 2.3677193748299032,
+  "formula_mutants": [
+    {
+      "executed_function": "symbolic",
+      "name": "static_projectors_swapped",
+      "rejected": true,
+      "source_sha256": "b83eaf129fd9e4867460b21fbbdc5762f41b39871ccb0bf249e396f18f02ea53"
+    },
+    {
+      "executed_function": "symbolic",
+      "name": "dynamic_sign",
+      "rejected": true,
+      "source_sha256": "df8327bf040a439e7e6a97575d0c3f0540fca160ba173aa94ba1a9e4f7631cd6"
+    },
+    {
+      "executed_function": "symbolic",
+      "name": "point_kernel_sign",
+      "rejected": true,
+      "source_sha256": "9ca16d1ff0f94ee8e2f18d7503860158decf31413e0b21d725a87bc9ac1f797a"
+    },
+    {
+      "executed_function": "symbolic",
+      "name": "time_integral_factor",
+      "rejected": true,
+      "source_sha256": "cfe23922cb259156411d21e8775dca57ae6e3a4f44ca2f01dcd0f1933b184df5"
+    },
+    {
+      "executed_function": "symbolic",
+      "name": "bessel_sign",
+      "rejected": true,
+      "source_sha256": "8d3ad99642f41780a1ba6a32694114d8fe319c76f97782775bdd5026ce69e004"
+    },
+    {
+      "executed_function": "numeric",
+      "name": "middle_omitted",
+      "rejected": true,
+      "source_sha256": "ab6c73aa363d912928e1ab99bc4cc8cf50ed092afe88a0b80f24675b7e83063e"
+    },
+    {
+      "executed_function": "numeric",
+      "name": "outer_speed_replaced_by_transverse",
+      "rejected": true,
+      "source_sha256": "fe6a7932d51ccb775007a3bdcf277803942a3b4e83f48e1a09a1d289c348b3b6"
+    }
+  ],
+  "function_body_identity": {
+    "numeric": {
+      "ast_sha256": "cd84d7ef21da8da44cb104526bde0b428ab342b57e81011840b75c299e9dd454",
+      "identical": true
+    },
+    "real_green_fourier": {
+      "ast_sha256": "ee33203eaeccf110bcb34f91589ea435064e2b4c7efc15c8e96d0e39c404199c",
+      "identical": true
+    },
+    "symbolic": {
+      "ast_sha256": "68038e067fd2c65d508eeb38133062e04af9217b5f98cc60bac8a9136ff0153e",
+      "identical": true
+    }
+  },
+  "head": "68a7fa78907c2737e9f850679ba5a1c8db0df819",
+  "io_controls": {
+    "exclusive_collision_preserved": true,
+    "json_roundtrip_matches_pinned_result": true,
+    "repeat_default_identical": true,
+    "same_invocation_sidecar_matches_stdout": true,
+    "synthetic_fixtures_only": true,
+    "unrelated_cwd_root_resolution": true
+  },
+  "scope": "Focused source review. No formal audit, primary scientific replay, observations, fit or heavy field computation.",
+  "unchanged_scientific_payload": true
+}

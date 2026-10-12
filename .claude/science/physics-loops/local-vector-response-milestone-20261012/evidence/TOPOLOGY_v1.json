@@ -1,0 +1,22 @@
+{
+  "added_nodes": [
+    "local_vector_homogeneous_response_bounded_theorem_note_2026-10-12"
+  ],
+  "removed_nodes": [],
+  "changed_existing_nodes": [],
+  "new_nodes": {
+    "local_vector_homogeneous_response_bounded_theorem_note_2026-10-12": {
+      "claim_id": "local_vector_homogeneous_response_bounded_theorem_note_2026-10-12",
+      "path": "docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "title": "Local vector realization of a homogeneous static response",
+      "claim_type_author_hint_raw": "bounded_theorem",
+      "claim_type_author_hint": "bounded_theorem",
+      "claim_type_seed_hint": "bounded_theorem",
+      "runner_path": "scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "helper_runner_paths": [],
+      "note_hash": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e",
+      "deps": []
+    }
+  },
+  "manifest_sha256": "8f122c3079da87486da1708d31d47c9c257ef2341f8658a6d95ed8f9640f0ffb"
+}

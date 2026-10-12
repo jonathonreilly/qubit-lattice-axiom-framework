@@ -1,6 +1,6 @@
 {
  "edge_count": 15805,
- "node_count": 7023,
+ "node_count": 7024,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14149,6 +14149,10 @@
   "local_tomography_from_qubit_complex_structure_narrow_theorem_note_2026-06-03": {
    "deps_hash": "4fb4f7ea0100",
    "out_degree": 4
+  },
+  "local_vector_homogeneous_response_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "local_volume_dynamics_with_commuting_electric_terms_bounded_theorem_note_2026-09-24": {
    "deps_hash": "93cec19a3712",

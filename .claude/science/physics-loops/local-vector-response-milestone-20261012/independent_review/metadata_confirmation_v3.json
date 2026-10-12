@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-12T22:59:13.310023+00:00",
+  "reviewer_session": "/root/direct_field_check",
+  "original_review_head": "68a7fa78907c2737e9f850679ba5a1c8db0df819",
+  "affected_author_files": [
+    {
+      "path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/HANDOFF.md",
+      "sha256": "f5c403bf32c8ab55a579078d387d0500e694fe3aba3a4195cbcbe0d740e0b8ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/local-vector-response-milestone-20261012/REVIEW_HISTORY.md",
+      "sha256": "aebb85753a4d1e09833b0577b74bb7ee9223a0647198f2aa34ceda692bcfe7a4"
+    }
+  ],
+  "read_complete": true,
+  "status_owner_source": {
+    "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+    "sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+  },
+  "restatement_source": {
+    "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+    "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+  },
+  "scope_interpretation": "Conformance spec expressly yields to owner source. CLAIM_STATUS explicitly allows conditional-support for a scoped bounded theorem while withholding physical premise adoption/retention; no proposed-retained promotion is needed.",
+  "finding": {
+    "type": "metadata provenance wording",
+    "original_phrase": "The single recorded canonical execution uses the same-run JSON sidecar.",
+    "issue": "After v2, two executions exist; only v1 produced the same-run sidecar.",
+    "disposition": "Fixed explicitly in final HANDOFF; no runner or scientific result change."
+  },
+  "original_dispositions_v3_sha256": "b7ecf95cf8e32cf723c11266659a2e19533e70c08f8c194b19212d0cab77ddcb",
+  "other_nine_original_paths_unchanged": true,
+  "new_review_history_read_as": "Author conformance history, not independent gate returns or audit authority. Section 12 explicitly makes combined pipeline/lint/evidence and final identity pending; this reviewer does not assert their success.",
+  "disposition": "Accepted final metadata and v3 original-path mapping under the same scientific limits."
+}

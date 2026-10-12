@@ -1,9 +1,9 @@
 # Current opportunity queue
 
-1. Finish root wrapper/driver review and bounded source validation for the regular correlation/phase milestone. Exact957-line proof and phase core have completed scoped checks. No fabricated mathematical runner.
-2. Complete bounded-local-interaction comparison, including domains and exact limiting energy; prepare one coherent interacting milestone after useful ground-selection result or clear independent outcome.
-3. Test the separately derived candidate all-spacing ground-state selection theorem for uniformly small bounded even potentials. Critical step: common-space zero-extended norm-resolvent convergence, then simple gap/projectors. Vanishing excess energy is an additional state condition.
-4. Investigate what extensive interactions need beyond bounded total CAR potentials. CAR weak limits alone may not control dynamics depending on escaping particles; require a concrete local criterion or preserve a matching counterexample. Do not simply rename a bounded perturbation as bulk physics.
-5. Longer times/growing words or state-selection mechanisms remain available only with explicit inputs. Translation-invariant finite-total-energy classes can be overly restrictive; do not manufacture a selector.
+1. Finish frozen bounded-interaction/ground assembly and focused independent review. These extend the published free correlation consumer to genuine finite-region nonquadratic dynamics and conditional all-spacing ground selection. Evaluate cluster scope before a third regular PR.
+2. Complete independent slow-preparation derivation and compare actual excess-energy bounds. A trace estimate alone is insufficient for unbounded energy. Supplied ramp/vacuum are not framework selection.
+3. Develop corrected physical-cell inputs that cancel the checked linear identification term; aim for O(c^2) under explicit weighted Sobolev resources. Preserve original-cell sharpness and even-word cancellations.
+4. Turn the checked smooth rates into explicit finite-word, bounded-interaction and ground projection rates with all state/protocol errors separated. Do not infer a total-correlation rate for arbitrary energy-capped states.
+5. Attack extensive interactions only with a concrete local criterion beyond bounded total potentials; escaping particles and volume growth can obstruct the available arguments. Refresh opportunity ranking if a route fails.
 
-Fixed renewed deadline2026-10-13 16:42:30UTC. Main516cb69d verified17:54. One published regular PR9499; no science/audit landing by this author. Preserve all counterexamples and exact sources. Counts are bookkeeping, not progress evidence.
+Main516cb69d verified approximately18:39. Regular PR9499 and9500 published; no science/audit landing. Fixed deadline2026-10-13 16:42:30UTC. Counts are bookkeeping, not evidence.

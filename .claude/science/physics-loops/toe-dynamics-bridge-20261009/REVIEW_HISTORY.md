@@ -8,3 +8,7 @@ Prior reviews and failures are archived, unchanged. Finite-energy source/review 
 ## 2026-10-12T18:13:00.930394+00:00
 
 Exact correlation assembly and343-line recovered review fully read; no material finding at source d63214a0. Recovered completed saved review after two stream failures, with exposure limits explicit. New bounded-interaction467-line core independently frozen and fully read; subsequent crosscheck pending. Scoped Lean finite Clifford algebra compiled; corrupted sign/factor conclusions rejected, no analytic formalization. Root ground-selection candidate sealed before new independent task. Next two-note publication preparation remains unexecuted.
+
+## 2026-10-12T18:52:36.105679+00:00
+
+PR9500 published as regular PR after exact-source mathematical review and source-integration checks; zero automated math predicates and zero retained ledger claims checked. Bounded-interaction, ground-selection, formal-statement scope and smooth-rate crosschecks fully read. All earlier independent cores preserved. Smooth refined constants are explicitly post-exposure. Ground low-block adjective corrected separately, no formula changes. Adiabatic root proof remains unreviewed pending independent result. No audit verdict applied.

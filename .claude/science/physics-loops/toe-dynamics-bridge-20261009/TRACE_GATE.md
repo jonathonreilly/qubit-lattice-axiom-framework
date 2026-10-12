@@ -8,3 +8,7 @@ Renewal milestone PR9499 published. Next: bounded-word low-energy correlations a
 ## 2026-10-12T18:13:00.930394+00:00: correlation and interacting follow-through
 
 The checked direct ordinary-cell theorem supplies a precise continuum correlation consumer of the current bridge. The bounded-interaction candidate supplies nonquadratic fixed-region dynamics with exact limiting perturbed energy. The unreviewed small-potential ground candidate attacks all-spacing state convergence under an explicit near-ground condition. None selects the framework interaction/state or closes3D/TOE physics. Sources and review/Lean limits are in HANDOFF and recovery MAP.
+
+## 2026-10-12T18:52:36.105679+00:00: interacting consumer and constructive preparation
+
+Published PR9500 supplies the free correlation/normality bridge. Separately checked bounded perturbations and small-potential ground projections now support a finite-region interacting consumer with explicit state hypotheses. Smooth-cell rates identify the leading discretization term; slow preparation is still a candidate route to construct near-ground states. None chooses the physical interaction, removes3D realization obligations, or closes the TOE.

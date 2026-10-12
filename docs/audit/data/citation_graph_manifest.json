@@ -1,6 +1,6 @@
 {
- "edge_count": 15555,
- "node_count": 6939,
+ "edge_count": 15556,
+ "node_count": 6940,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -19349,6 +19349,10 @@
   "spatial_slab_transfer_operator_positivity_and_delta_x_real_note_2026-05-19": {
    "deps_hash": "0509803eed09",
    "out_degree": 4
+  },
+  "spatial_wilson_observation_map_and_mass_matching_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "9cf148f67449",
+   "out_degree": 1
   },
   "species_bridge_minimum_decomposition_bounded_theorem_note_2026-06-13": {
    "deps_hash": "778bb78dd029",

@@ -4884,3 +4884,10 @@ Readings:
 - **VIABLE:** an explicit model passing (a)–(c), with untuned Λ_eff = 0 and the prices named.
 - **EXCLUDED:** a refereed inconsistency.
 - **OPEN:** otherwise.
+- **R14-2 (E1 vs E2):** worker readings E1 OPEN and E2 OPEN. They tie on the stated tests, and E2 carries more prices.
+  - E2's own self-drag bounds γ ≲ 0.03–0.05 H₀ (double pulsar); a zero-integral friction kernel repair is possible.
+  - Correction to R13-6: the τ_c ceiling falls to 5e-12 s, and the window closes near ℓ ≈ 1–2e-9 m.
+  - E2's stationary record equals E1's at age 0.56/γ.
+  - At the allowed γ, E2 needs a 45–70 t_H history.
+
+  Referee running.

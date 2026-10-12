@@ -1,0 +1,102 @@
+[1] E2-h self-drag: G_gamma = 1/(k^2 - w^2/c^2 - i gamma w/c^2), source moving at v (w = k.v)
+    F = -4 pi G int d^3k/(2pi)^3 k Im[k^2 G] |rho~|^2/k^2 ; first order: Gamma = 2 gamma |U|/(3 M c^2)
+    gamma=1e-03, v=1e-02 (c=1, a=1): exact Gamma = 1.496739e-05, 2 gamma|U|/(3Mc^2) = 1.496559e-05, ratio = 1.000120
+    gamma=1e-04, v=1e-03 (c=1, a=1): exact Gamma = 1.496561e-06, 2 gamma|U|/(3Mc^2) = 1.496559e-06, ratio = 1.000001
+    gamma=1e-02, v=1e-01 (c=1, a=1): exact Gamma = 1.512685e-04, 2 gamma|U|/(3Mc^2) = 1.496559e-04, ratio = 1.010775
+    subtraction: none (odd part of the response only)
+
+[2] double pulsar J0737-3039A/B: E2-h drag per star and the bound on gamma
+    Pb = 8834.535 s, |Pdot_GR| = 1.2478e-12, agreement 1.3e-04 (95%) -> Gamma_eff < 6.120e-21 s^-1
+    a = 8.788e+08 m, relative orbital speed 625 km/s (A 302, B 323 km/s)
+    R=11 km, uniform  : |U|/Mc^2 A=0.1078 B=0.1006; Gamma_A/gamma=0.0719, Gamma_B/gamma=0.0671, Gamma_eff/gamma=0.0694 -> gamma < 0.0401 H0 ; at gamma=H0: Pdot_b/P_b = -4.58e-19 s^-1 (allowed 1.84e-20)
+    R=11 km, polytrope: |U|/Mc^2 A=0.1347 B=0.1257; Gamma_A/gamma=0.0898, Gamma_B/gamma=0.0838, Gamma_eff/gamma=0.0867 -> gamma < 0.0321 H0 ; at gamma=H0: Pdot_b/P_b = -5.72e-19 s^-1 (allowed 1.84e-20)
+    R=11 km, LP-BE    : |U|/Mc^2 A=0.1184 B=0.1098; Gamma_A/gamma=0.0789, Gamma_B/gamma=0.0732, Gamma_eff/gamma=0.0760 -> gamma < 0.0366 H0 ; at gamma=H0: Pdot_b/P_b = -5.01e-19 s^-1 (allowed 1.84e-20)
+    R=12 km, uniform  : |U|/Mc^2 A=0.0988 B=0.0922; Gamma_A/gamma=0.0659, Gamma_B/gamma=0.0615, Gamma_eff/gamma=0.0636 -> gamma < 0.0437 H0 ; at gamma=H0: Pdot_b/P_b = -4.20e-19 s^-1 (allowed 1.84e-20)
+    R=12 km, polytrope: |U|/Mc^2 A=0.1235 B=0.1153; Gamma_A/gamma=0.0823, Gamma_B/gamma=0.0768, Gamma_eff/gamma=0.0795 -> gamma < 0.0350 H0 ; at gamma=H0: Pdot_b/P_b = -5.25e-19 s^-1 (allowed 1.84e-20)
+    R=12 km, LP-BE    : |U|/Mc^2 A=0.1077 B=0.0999; Gamma_A/gamma=0.0718, Gamma_B/gamma=0.0666, Gamma_eff/gamma=0.0691 -> gamma < 0.0403 H0 ; at gamma=H0: Pdot_b/P_b = -4.56e-19 s^-1 (allowed 1.84e-20)
+    R=13 km, uniform  : |U|/Mc^2 A=0.0912 B=0.0851; Gamma_A/gamma=0.0608, Gamma_B/gamma=0.0567, Gamma_eff/gamma=0.0587 -> gamma < 0.0474 H0 ; at gamma=H0: Pdot_b/P_b = -3.87e-19 s^-1 (allowed 1.84e-20)
+    R=13 km, polytrope: |U|/Mc^2 A=0.1140 B=0.1064; Gamma_A/gamma=0.0760, Gamma_B/gamma=0.0709, Gamma_eff/gamma=0.0734 -> gamma < 0.0379 H0 ; at gamma=H0: Pdot_b/P_b = -4.84e-19 s^-1 (allowed 1.84e-20)
+    R=13 km, LP-BE    : |U|/Mc^2 A=0.0987 B=0.0916; Gamma_A/gamma=0.0658, Gamma_B/gamma=0.0611, Gamma_eff/gamma=0.0634 -> gamma < 0.0439 H0 ; at gamma=H0: Pdot_b/P_b = -4.18e-19 s^-1 (allowed 1.84e-20)
+    range over these structure models: gamma_max = 0.032 - 0.047 H0
+    companion-field (frame-dipole) term: dPhi_2 = (G m_2 gamma/2c^2)(v_2.rhat) -> orbit-averaged dE/|E| = +2 gamma (m_A m_B/M^2) w_rel^2/c^2 = 2.17e-06 gamma (anti-drag; vs self-drag 2 Gamma_eff ~ 0.13-0.17 gamma): negligible
+    subtraction: none
+
+[3] orbital mapping by direct integration (G = 1, a = 1, m_A + m_B = 1; drag on absolute velocities u_i = V + w_i)
+    linear: Gamma_A=1.0e-05, Gamma_B=1.0e-05, V=[0, 0, 0], e=0.0: Pdot/P = -2.9925e-05; -3 Gamma_eff (mass-weighted) = -3.0000e-05; ratio 0.9975
+    linear: Gamma_A=1.0e-05, Gamma_B=1.0e-05, V=[0.3, 0.2, 0.1], e=0.088: Pdot/P = -2.9942e-05; -3 Gamma_eff (mass-weighted) = -3.0000e-05; ratio 0.9981
+    linear: Gamma_A=1.2e-05, Gamma_B=8.0e-06, V=[0.3, 0.2, 0.1], e=0.088: Pdot/P = -2.9737e-05; -3 Gamma_eff (mass-weighted) = -2.9793e-05; ratio 0.9981
+    cubic F = -m G3 |u|^2 u, V=[0.0, 0.0, 0.0], e=0.0: Pdot/P = -7.5268e-06; -3 G3 <V^2+V_par^2+w^2>_m = -7.5268e-06; ratio 1.0000
+    cubic F = -m G3 |u|^2 u, V=[0.8, 0.0, 0.0], e=0.0: Pdot/P = -4.5670e-05; -3 G3 <V^2+V_par^2+w^2>_m = -4.5927e-05; ratio 0.9944
+    cubic F = -m G3 |u|^2 u, V=[0.0, 0.0, 0.8], e=0.0: Pdot/P = -2.6641e-05; -3 G3 <V^2+V_par^2+w^2>_m = -2.6727e-05; ratio 0.9968
+    cubic F = -m G3 |u|^2 u, V=[0.8, 0.0, 0.0], e=0.088: Pdot/P = -4.5867e-05; -3 G3 <V^2+V_par^2+w^2>_m = -4.5927e-05; ratio 0.9987
+    => Pdot_b/P_b = -3 Gamma_eff for linear drag (any V, small e; unequal Gamma mass-weighted); cubic drag: Gamma_eq = Gamma_3 (V^2 + V_par^2 + w^2): the CMB velocity enters
+
+[4] repair 'the same way': friction memory kernel with zero integral, K(t) = g0[delta(t) - wc e^{-wc t}] theta(t)
+    gamma(w) = int K e^{iwt} dt = g0 (-i w)/(wc - i w);  Re gamma = g0 w^2/(w^2 + wc^2) >= 0 (passive); gamma(0) = 0
+    zeroth moment of K (wc=2): -2.2e-16; min Re gamma over w in [-1e3,1e3]: 0.0e+00
+    rest frame: max Im w over k in [1e-4,1e4], g0 in {1e-3,0.1,10}, wc in {1e-2,1,1e2}: -5.00e-16 (<= 0: no growth)
+    boosted frames (6000 random beta<0.999, k', g0, wc): max Im w' = -2.22e-13 (<= 0 within rounding: no growing mode)
+    check: ohmic polytrope Gamma/gamma (quadrature) = 0.08233; 2|U|/(3Mc^2) with |U| = 3GM^2/(4R): 0.08234
+    double pulsar, n=1 polytropes R = 12 km, V_CMB = 370 km/s in the orbital plane (worst case):
+      wc =       0 rad/s: Gamma_eq(g0 = H0) = 1.75e-19 s^-1 (V normal to plane 1.75e-19); bound 6.12e-21 -> g0 < 0.035 H0
+      wc =      30 rad/s: Gamma_eq(g0 = H0) = 1.04e-19 s^-1 (V normal to plane 9.23e-20); bound 6.12e-21 -> g0 < 0.0591 H0
+      wc =     100 rad/s: Gamma_eq(g0 = H0) = 4.10e-20 s^-1 (V normal to plane 3.16e-20); bound 6.12e-21 -> g0 < 0.149 H0
+      wc =     300 rad/s: Gamma_eq(g0 = H0) = 8.40e-21 s^-1 (V normal to plane 5.62e-21); bound 6.12e-21 -> g0 < 0.729 H0
+      wc =    1000 rad/s: Gamma_eq(g0 = H0) = 8.75e-22 s^-1 (V normal to plane 5.56e-22); bound 6.12e-21 -> g0 < 7 H0
+      wc =    3000 rad/s: Gamma_eq(g0 = H0) = 9.88e-23 s^-1 (V normal to plane 6.24e-23); bound 6.12e-21 -> g0 < 62 H0
+    wc = 300: friction left in the LIGO band gamma(w)/g0 = 0.149 (20 Hz), 0.814 (100 Hz), 0.998 (1 kHz); on near-cone record modes w = c/l >= 6e13 rad/s: 1 - gamma/g0 <= 2e-23
+    wc = 1000: friction left in the LIGO band gamma(w)/g0 = 0.016 (20 Hz), 0.283 (100 Hz), 0.975 (1 kHz); on near-cone record modes w = c/l >= 6e13 rad/s: 1 - gamma/g0 <= 3e-22
+    subtraction: none
+
+[5] the gain's residual drag after P-r13b (shared by E1 and E2): cubic term, orbit-averaged with the CMB velocity
+    strict tau = l/c, l = 5e-6 m: Gamma_eq = 2.31e-28 s^-1 with V_CMB in plane (6.09e-29 with V = 0); bound 6.12e-21
+    R13-6's tau_c ceiling 7.9e-12 s (v = 300 km/s): Gamma_eq = 2.46e-20 s^-1 with V_CMB in plane (6.47e-21 with V = 0); bound 6.12e-21
+    tau_c ceiling (first moment zero, n = 4, smooth polytropes): tau_c < 4.97e-12 s (c tau_c < 1.49e-03 m), V in plane; 5.79e-12 s (c tau_c < 1.74e-03 m), V normal; R13-6 quoted 7.9e-12 s (2.4e-3 m) at v = 300 km/s without the CM term
+    subtraction: none
+
+[6] near-cone record budget on equal terms
+    (a) E2 single-port causal factor: H_g(w) = (W^2 - w^2 - i g w)^(-1/2) <-> theta(t) e^{-g t/2} J0(W' t), W' = sqrt(W^2 - g^2/4)
+      w=0.3: Laplace of e^(-gt/2)J0 = 1.047858+0.017268j; (W^2-w^2-igw)^(-1/2) = 1.047858+0.017268j
+      w=0.97: Laplace of e^(-gt/2)J0 = 2.586952+1.453124j; (W^2-w^2-igw)^(-1/2) = 2.586952+1.453124j
+      w=1.0: Laplace of e^(-gt/2)J0 = 2.236068+2.236068j; (W^2-w^2-igw)^(-1/2) = 2.236068+2.236068j
+      w=1.5: Laplace of e^(-gt/2)J0 = 0.053188+0.889647j; (W^2-w^2-igw)^(-1/2) = 0.053188+0.889647j
+      branch points (zeros of W^2 - w^2 - i g w): 0.9987-0.0500j, -0.9987-0.0500j (both Im < 0: H_g and 1/H_g analytic in the UHP, outer)
+    (b) Var h per mode (W = 1): E1 finite age 1/2 int_0^T J0^2 vs E2 stationary 1/2 int_0^inf e^{-g t} J0(W' t)^2 dt
+      g = 1e-02: E2 Var h = 1.063895; E1 Var h at T_eq = e^(-gamma_E)/g = 56.15: 1.062924; asymptote ln(8/g)/(2pi) = 1.063889
+      g = 1e-03: E2 Var h = 1.430357; E1 Var h at T_eq = e^(-gamma_E)/g = 561.5: 1.430385; asymptote ln(8/g)/(2pi) = 1.430357
+      g = 3e-04: E2 Var h = 1.621975; E1 Var h at T_eq = e^(-gamma_E)/g = 1872: 1.621981; asymptote ln(8/g)/(2pi) = 1.621975
+      => same log slope; E2 at friction g carries E1's record content at age T_eq = 0.561/g (subtraction: none)
+    (c) strict tau = l/c, eps needed for rho_GW (+ sink) < rho_L, R11-5 normalization (O(1) tensor weights, Isaacson; suggested)
+        E1: L = ln(eps c t_H/l); E2 (stationary, history >> 1/gamma): L = ln(eps c T_eq/l), T_eq = 0.561/gamma, times (1 + gamma/3H0)
+        l [m]   | E1 (t_H)          | E2 gamma=0.03 H0  | E2 gamma=0.045 H0 | E2 gamma=H0 (drag-excluded unless repaired) | E2 R12-7 form ln(2c/(l H0))
+        1e-08 | 1.23e-16 (L=41.9) | 1.14e-16 (L=44.8) | 1.15e-16 (L=44.4) | 9.43e-17 (L=41.1)                    | 4.9e-17 (L=79.3) | E2 superohmic g0=7 H0 (wc=1e3): 4.05e-17 (L=38.3)
+        2e-07 | 1.63e-11 (L=50.7) | 1.53e-11 (L=53.6) | 1.53e-11 (L=53.2) | 1.24e-11 (L=49.9)                    | 8.1e-12 (L=76.3) | E2 superohmic g0=7 H0 (wc=1e3): 5.27e-12 (L=47.1)
+        1e-06 | 9.32e-09 (L=55.5) | 8.77e-09 (L=58.4) | 8.79e-09 (L=58.0) | 7.09e-09 (L=54.7)                    | 5.2e-09 (L=74.7) | E2 superohmic g0=7 H0 (wc=1e3): 2.99e-09 (L=51.8)
+        5e-06 | 5.37e-06 (L=60.2) | 5.07e-06 (L=63.1) | 5.08e-06 (L=62.7) | 4.08e-06 (L=59.4)                    | 3.3e-06 (L=73.1) | E2 superohmic g0=7 H0 (wc=1e3): 1.71e-06 (L=56.6)
+    (d) tau_c variant (eps = 1, gain (1 - 4ix)(1 - ix)^-4, x = w tau_c): rho_log with ln(c k T); E2: T = T_eq and sink factor
+      l = 4e-10 m: E1: c tau_c > 2.43e-03 m; E2 gamma=0.03 H0: c tau_c > 2.44e-03 m; E2 gamma=1.0 H0: c tau_c > 2.67e-03 m; E2 gamma=7.0 H0: c tau_c > 3.63e-03 m; drag ceiling (section [5], V in plane) c tau_c < 1.49e-03 m
+      l = 1e-08 m: E1: c tau_c > 8.31e-04 m; E2 gamma=0.03 H0: c tau_c > 8.33e-04 m; E2 gamma=1.0 H0: c tau_c > 9.14e-04 m; E2 gamma=7.0 H0: c tau_c > 1.24e-03 m; drag ceiling (section [5], V in plane) c tau_c < 1.49e-03 m
+      l = 1e-06 m: E1: c tau_c > 2.09e-04 m; E2 gamma=0.03 H0: c tau_c > 2.11e-04 m; E2 gamma=1.0 H0: c tau_c > 2.28e-04 m; E2 gamma=7.0 H0: c tau_c > 2.99e-04 m; drag ceiling (section [5], V in plane) c tau_c < 1.49e-03 m
+      l = 5e-06 m: E1: c tau_c > 1.74e-04 m; E2 gamma=0.03 H0: c tau_c > 1.76e-04 m; E2 gamma=1.0 H0: c tau_c > 1.87e-04 m; E2 gamma=7.0 H0: c tau_c > 2.38e-04 m; drag ceiling (section [5], V in plane) c tau_c < 1.49e-03 m
+    subtraction: none (positive energy densities)
+
+[7] standard sirens at the drag-allowed gamma: d_L^GW/d_L^EM = exp(gamma t_lb/2)
+    gamma = 0.03 H0: z=0.0098: 1.0001; z=0.1: 1.0014; z=0.5: 1.0054; z=1.0: 1.0083; z=20.0: 1.0142; Lu et al. beta = gamma/c = 6.8e-06 Mpc^-1 (bound 6.75e-4, fixed-distance benchmark)
+    gamma = 0.045 H0: z=0.0098: 1.0002; z=0.1: 1.0021; z=0.5: 1.0081; z=1.0: 1.0124; z=20.0: 1.0214; Lu et al. beta = gamma/c = 1.0e-05 Mpc^-1 (bound 6.75e-4, fixed-distance benchmark)
+    damping time 2/gamma at 0.03 H0 = 70 t_H; record-content equivalence age T_eq = 19.6 t_H
+    subtraction: none
+
+[6e] E2 stationary content with the eps profile e(s) = (s^2 + eps^2)/(s^2 + eps) (R13-6 [2], delta = sqrt(eps)), near cone, W = 1
+     Var_E2(g) = (1/4pi) int_{-S}^{S} e(s) ds / sqrt(s^2 + g^2)  (s = W^2 - w^2 ~ 2(W - w)); secular part = coefficient of ln(1/g)
+     eps=1e-02: Var(g=1e-6..1e-9) = 0.386678, 0.390343, 0.394008, 0.397672; d Var/d ln(1/g) = 1.592e-03 (eps/2pi = 1.592e-03)
+       remainder after eps ln(eps/g)/2pi: 0.37202, 0.37202, 0.37202, 0.37202  (forced part ~ ln(1/eps)/(4pi) = 0.36647)
+     eps=1e-03: Var(g=1e-6..1e-9) = 0.551541, 0.551907, 0.552274, 0.552640; d Var/d ln(1/g) = 1.592e-04 (eps/2pi = 1.592e-04)
+       remainder after eps ln(eps/g)/2pi: 0.55044, 0.55044, 0.55044, 0.55044  (forced part ~ ln(1/eps)/(4pi) = 0.54970)
+     => secular slope eps/(2pi) per ln(1/g), the same coefficient as E1 per ln T; the constant equals the forced part ln(1/eps)/(4pi) to O(eps ln eps), so whether eps sits inside the log is a convention at that order; the forced part is the same in E1 and E2. subtraction: none
+
+[6f] where the tau_c window closes once the CMB velocity is in the orbit average (E1; E2 at 0.03 H0 differs by < 1%)
+      l = 1e-09 m: lower end c tau_c > 1.79e-03 m vs drag ceiling 1.49e-03 m (V in plane) / 1.74e-03 m (V normal): closed
+      l = 2e-09 m: lower end c tau_c > 1.42e-03 m vs drag ceiling 1.49e-03 m (V in plane) / 1.74e-03 m (V normal): open
+      l = 3e-09 m: lower end c tau_c > 1.24e-03 m vs drag ceiling 1.49e-03 m (V in plane) / 1.74e-03 m (V normal): open
+      l = 5e-09 m: lower end c tau_c > 1.05e-03 m vs drag ceiling 1.49e-03 m (V in plane) / 1.74e-03 m (V normal): open
+    subtraction: none

@@ -5523,3 +5523,27 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P50 refined, P-W7α, P-W7aux.
 
   Referee running.
+
+### C5 Round 16, item 12 (pre-registered 23:29Z, before launch)
+
+**R16-12. W7's fork: does the degree-3 constraint algebra force non-local dynamics (α), or allow a quasi-local fix (β)?**
+- **Plain question.** R16-8 (worker) reduces W7 to one fork. Keeping the momentum constraint true in time produces a non-local term κ³∫ξE·(B∗Ȯ_D). It must be cancelled either by:
+  - **(α)** a non-local Hamiltonian-constraint term, so the dynamics acts at a distance at ~κ²|E||Q_D|/(8πr²) per edge quantum; or
+  - **(β)** a second singular term inside the momentum constraint, so the dynamics stays quasi-local.
+
+  Which one does the degree-3 algebra allow?
+- **Setting.**
+  - R12-1's completion with R16-8's Lemma-P placement (P = ∂(ε²/2)) and the R14-1 subluminal S(1.4) or G(1.4) box.
+  - d = 3, linear in matter bilinears, through κ³. Standard (undeformed) algebra.
+  - Excluded: pairing, the SLAC/P-pf1 matter.
+- **Prior art (count once):** R16-8, R12-1 and its verdict, R13-4, R16-5's grading lemma (the identity splits by particle-number grade), RFW's first-jet obstruction.
+- **Probes.**
+  - (a) Write the degree-3 brackets {H,H}, {H,D} and {D,D} at O(κ³) with the completion. Find all terms carrying B.
+  - (b) Try (β): is there a quasi-local-dynamics completion? Construct it, or prove it inconsistent in a stated class.
+  - (c) If (α) is forced, exhibit a bounded gauge-invariant observable responding at a distance, which is the R13-4 criterion. State its size at a = ℓ_P for a realistic density of edge quanta (thermal at T_CMB, or a gas at a stated temperature).
+  - (d) Prices.
+- **FIXED readings.**
+  - **QUASI-LOCAL (β):** a constructed degree-3 completion with quasi-local dynamics, checked through κ³.
+  - **NON-LOCAL (α):** a refereed proof that (β) is inconsistent in a stated class, with the size of the distant response.
+  - **OPEN:** otherwise.
+- **Expectation.** NON-LOCAL in the class, with an effect suppressed by the edge-quanta population, which is negligible at low temperature. The physical verdict then depends on that population.

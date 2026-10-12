@@ -5295,3 +5295,30 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **E1 against E2:** E2 keeps 96–99% of the initial TT energy too, so the start question does not separate the two routes.
 
   Referee running. Its key question: whether this is E1-specific or just GR's free data.
+
+#### C5 Round 15 referee verdicts, part 2 (recorded 22:57Z; codex gpt-5.6-sol, xhigh)
+
+- **R15-4 referee: CONFIRMED WITH CORRECTIONS. Bounded FAIL in 𝓡⁺** (`agents/C5_R15-4_referee_verdict.md`).
+  - **The readers.** D1 and R* are causal, finite-state, linear readers. They ignore constants exactly, read dust and radiation exactly, stay ≥ 0 on 𝓗₄, and replace Prony's singularities with bounded transients.
+  - **Corrections and scope.**
+    - The lumpy identity is −d𝓔/du = 2S, not κ(−dρ_tot/du) = 2S.
+    - The lumpy residual is a recalled-input linear estimate.
+  - **Lemma N+ is confirmed:** no reader in 𝓡⁺ tracks DESI DR2 CPL, whose early asymptotes are phantom.
+  - **The escape (inverse reading) is confirmed.** It leaves g/H₀² = O(1) today.
+  - **Relation to R15-1.** R15-4 is consistent with R15-1's causality FAIL and subordinate to it. It does not rehabilitate the CMC model.
+- **R15-5 referee: CONFIRMED WITH CORRECTIONS. Reading INCONCLUSIVE** (`agents/C5_R15-5_referee_verdict.md`).
+  - **The exact noncompact N-type works but is unreduced-indefinite.** It has:
+    - a positive two-pair TT quotient with ω² = Jg|q̂|², helicity-±2 characters and an attractive 1/r;
+    - an indefinite energy before reduction;
+    - a TT projector that cannot be continuous at k = 0. The identification with X2 is not literal.
+  - **Compact characters cannot make a linear mode.** Regular lifted compact-character Hamiltonians, and each liftable finite Schrieffer–Wolff order, give ω = O(k³). This does not control fixed-N aliasing, high orders, resummation or genuine strong coupling.
+  - **The GR source would need symmetric, locally conserved matter stress.** Generic periodic bands fail this under T′'s hypotheses.
+  - **No PASS and no FAIL.**
+- **R15-6 referee: NOT CONFIRMED (the PASS). Reading INCONCLUSIVE** (`agents/C5_R15-6_referee_verdict.md`).
+  - **Confirmed:**
+    - Identity I (for R > 0) and Lemma B. Vacuum transfers stay indirectly visible through the receiving sector's enthalpy.
+    - MR gives exact cancellation and g ≤ 0 on H1 after a quiet start.
+    - No linear fading-memory reader that is exact on dust and radiation keeps g ≤ 0 after sharp releases (Theorem L).
+    - Fast-change caps trade against tracking or expansion.
+  - **Why it is not a PASS:** no uniform influence bound is proved on H1.
+  - **Why it is not a FAIL:** the negative results do not cover all allowed readers.

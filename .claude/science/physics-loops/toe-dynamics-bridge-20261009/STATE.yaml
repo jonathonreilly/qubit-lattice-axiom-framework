@@ -13,18 +13,18 @@ base_revision: 516cb69d8487ff04f8a48e065d3dcbe71d7dd237
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Checked bounded interactions and ground selection; quantitative cell rates; independent slow-preparation
-  test
+active_route: Bounded interactions, constructive ground preparation and excitation response; checked cell-rate construction
 cycle: 3
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: Regular PR9499 finite energy and PR9500 correlations/phase published; third scientific assembly in progress
+milestone: Regular PR9499 and9500 open. Ground assembly accepted; preparation companion assembling before third-PR
+  cluster evaluation.
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
-independent_checks: Transfer/normality/phase and full publication assembly checked. Bounded-interaction, ground-selection
-  and smooth-rate cores separately frozen and source-exposed crosschecks fully read. Same-family corroboration, no
-  formal analytic audit.
+independent_checks: Separate frozen derivations and source-exposed comparison for transfer, normality, phase, bounded
+  interactions, ground, cell corrections, preparation and quadratic actual energy. Same-family corroboration; no
+  model-diverse or formal analytic audit.
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_closed_by_concurrent_activity
@@ -35,9 +35,8 @@ transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framewor
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
 lock_refresh_before_utc: '2026-10-12T19:55:02.828002+00:00'
-next_action: Finish and review bounded-interaction/ground synthesis; compare independently frozen adiabatic preparation
-  proof; investigate corrected physical cells after checked first-order coefficient. Assess cluster scope before third
-  regular milestone.
+next_action: Finish preparation assembly; fully read and focused review; cluster-cap evaluate combined interaction/ground/preparation
+  milestone; prepare regular stack onPR9500. Compare new response only after independent seal.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -62,9 +61,10 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-12T18:52:36.105679+00:00'
-latest_source_refresh: '2026-10-12T18:39:00+00:00'
-latest_other_pr: No other open PR in completed correlation prepublication refresh; main remained516cb69d
+checkpoint_utc: '2026-10-12T19:27:46.188964+00:00'
+latest_source_refresh: '2026-10-12T19:04:57+00:00'
+latest_other_pr: 'PR9501 at3153d7b2ddceeb26b78f2e1334ffa83218a01333: scalar mediator/source inversion, full313-line
+  note read; distinct scope'
 supplied_chain_published_science_revision: 62d316633190ad2198fdfa91fc52192551990034
 current_mass_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9491
 current_mass_published_science_revision: e26e2de4fd64ee49d0745cbf02fd05355494b569
@@ -127,9 +127,9 @@ root_phase_rate_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_2
 science_synthesis_worker: energy_transfer_synthesis
 root_bounded_interaction_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/BOUNDED_LOCAL_INTERACTION_ROOT_PROBE.md
 root_ground_selection_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_GROUND_SELECTION_ROOT_PROBE.md
-scoped_lean_status: Four finite Clifford identities compiled. Independent statement-scope review fully read; no selfadjointness/domain/Fock/continuum
-  formalization. Corrupted sign/factor proofs rejected.
-previous_checkpoint_commit: 5deac7a23dad0cc92d12229e0db7ce0eec41a993
+scoped_lean_status: Finite Clifford and compressed-resolvent ring identities compiled and complete statement-scope
+  reviews fully read. No analytic theorem formalization; recovery of interrupted review complete.
+previous_checkpoint_commit: 0c632dc755170aa6b97275ae6f470ac0c7c2ef92
 lock_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/physics_worker_lock.json
 lock_meta_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/.physics_worker_lock.guard
 correlation_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500
@@ -140,8 +140,19 @@ ground_selection_status: Conditional theorem supported by separate derivation an
   excess energy is required, not inferred from fixed cap.
 smooth_cell_rate_status: 'Separate proofs and full crosscheck: leading coefficient U(t)diag(3/4,1/4)f_prime. Post-exposure
   sharper upper bound explicitly classified.'
-adiabatic_preparation_status: Root candidate frozen; independent derivation pending comparison. Not accepted or published.
-recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/correlation_milestone_recovery_20261012T185236Z.tar.gz
-recovery_map_aliases: 141
+adiabatic_preparation_status: 'Separate proofs and complete crosscheck accepted: amplitude O(tau^-1), actual excess
+  O(tau^-2), exact free cap2K, common-domain proof; external ramp/vacuum.'
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_recovery_20261012T192746Z.tar.gz
+recovery_map_aliases: 261
 checkpoint_write_failure: Earlier inline update failed parsing before mutation; saved update then hit an unescaped
   set brace after STATE/archive writes. Both bookkeeping failures repaired, evidence preserved; no science changed.
+corrected_cell_status: 'Separate proofs and complete crosscheck accepted: shifted supplied cells O(c^2) under weighted
+  H3 resources, norm-loss sharpness; does not improve full resolvent rate.'
+ground_assembly_status: 1057-line assembly b8bcba76 and exact-source review af0cf7d6 fully read; no required repair;
+  publication preparation allowed, no audit verdict.
+response_status: Root candidate d51bb096 sealed19:23:39 before new-response worker disclosure; independent derivation
+  pending, not accepted.
+root_response_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GROUND_SPECTRAL_RESPONSE_ROOT_PROBE.md
+bookkeeping_failures_since_prior: Truncated aggregate review tail reread; wrong tools/vocab_lint.py path repaired
+  to scripts; mistaken cwd git status returned not-a-repo without mutation; failed reviewer stream recovered with
+  preserved stub and completed scope review.

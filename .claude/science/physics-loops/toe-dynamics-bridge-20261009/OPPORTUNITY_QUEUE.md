@@ -1,9 +1,8 @@
 # Current opportunity queue
 
-1. Finish frozen bounded-interaction/ground assembly and focused independent review. These extend the published free correlation consumer to genuine finite-region nonquadratic dynamics and conditional all-spacing ground selection. Evaluate cluster scope before a third regular PR.
-2. Complete independent slow-preparation derivation and compare actual excess-energy bounds. A trace estimate alone is insufficient for unbounded energy. Supplied ramp/vacuum are not framework selection.
-3. Develop corrected physical-cell inputs that cancel the checked linear identification term; aim for O(c^2) under explicit weighted Sobolev resources. Preserve original-cell sharpness and even-word cancellations.
-4. Turn the checked smooth rates into explicit finite-word, bounded-interaction and ground projection rates with all state/protocol errors separated. Do not infer a total-correlation rate for arbitrary energy-capped states.
-5. Attack extensive interactions only with a concrete local criterion beyond bounded total potentials; escaping particles and volume growth can obstruct the available arguments. Refresh opportunity ranking if a route fails.
+1. Package the checked arbitrary-bounded interaction and small-potential ground results with a rigorous slow-preparation companion, including quadratic actual excess energy. Review full assembly, then cluster-cap evaluate the combined regular milestone stacked onPR9500.
+2. Complete independent ground spectral-response derivation and compare source signs, reduced resolvents, frequency topology and regularity-dependent moments. Root candidate is unreviewed; scalar-mediatorPR9501 is distinct.
+3. Package checked shifted-cell quadratic construction with explicit weighted H3 resources and original-cell first-order sharpness. Keep changed supplied family and unchanged full resolvent order clear; combine where marginal review value warrants.
+4. Seek an explicit local condition for interactions beyond bounded total potentials. Existing finite-region proof does not establish extensive dynamics or the intended3D realization. Keep counterexamples and refresh rank when a route fails.
 
-Main516cb69d verified approximately18:39. Regular PR9499 and9500 published; no science/audit landing. Fixed deadline2026-10-13 16:42:30UTC. Counts are bookkeeping, not evidence.
+Two regular renewal PRs currently open. All original mathematics remains authorized; Lean is a scoped audit aid. Same-family separate proofs are corroboration. Fixed deadline2026-10-13 16:42:30UTC.

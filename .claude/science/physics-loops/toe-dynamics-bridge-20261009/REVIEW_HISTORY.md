@@ -12,3 +12,9 @@ Exact correlation assembly and343-line recovered review fully read; no material 
 ## 2026-10-12T18:52:36.105679+00:00
 
 PR9500 published as regular PR after exact-source mathematical review and source-integration checks; zero automated math predicates and zero retained ledger claims checked. Bounded-interaction, ground-selection, formal-statement scope and smooth-rate crosschecks fully read. All earlier independent cores preserved. Smooth refined constants are explicitly post-exposure. Ground low-block adjective corrected separately, no formula changes. Adiabatic root proof remains unreviewed pending independent result. No audit verdict applied.
+
+## 2026-10-12T19:27:46.188964+00:00
+
+Ground1057-line assembly and source-exposed review fully read; preparation and quadratic-energy independent proofs/crosschecks fully read. Corrected-cell core/crosscheck fully read. Compressed-resolvent finite ring identity compiled; formal-scope review recovering. No analytic Lean or audit verdict. New response root candidate separately sealed before worker disclosure.
+
+Compressed-resolvent formal-scope recovery completed19:26:45; full review5ba536c7 read and accepted for finite ring identity only. Stub preserved; no compile rerun.

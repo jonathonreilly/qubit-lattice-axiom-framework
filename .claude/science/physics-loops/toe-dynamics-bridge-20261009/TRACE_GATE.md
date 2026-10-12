@@ -12,3 +12,7 @@ The checked direct ordinary-cell theorem supplies a precise continuum correlatio
 ## 2026-10-12T18:52:36.105679+00:00: interacting consumer and constructive preparation
 
 Published PR9500 supplies the free correlation/normality bridge. Separately checked bounded perturbations and small-potential ground projections now support a finite-region interacting consumer with explicit state hypotheses. Smooth-cell rates identify the leading discretization term; slow preparation is still a candidate route to construct near-ground states. None chooses the physical interaction, removes3D realization obligations, or closes the TOE.
+
+## 2026-10-12T19:27:46.188964+00:00
+
+Bounded interacting correlations and unique ground limits now have a constructive supplied-ramp route with actual energy error O(tau^-2). Neither selects the physical Hamiltonian/vacuum or closes3D realization. Response is newly proposed, not checked.

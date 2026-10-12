@@ -3369,3 +3369,26 @@ Readings:
 - **PASS:** an explicit lattice coupling preserving the exact constraint, with universal coupling and γ = 1 at linear order, checked, with the tunings named.
 - **FAIL:** a no-go that the constraint algebra cannot close with a matter stress source in a stated class (refereed).
 - **INCONCLUSIVE:** otherwise.
+
+### C5 Round 7, items 5–6 (pre-registered 15:17Z; launched now; conditional on R7-1, whose referee is running)
+
+**R7-5. Loops in box-confined Poincaré: does a pair-creating box field theory feed Lorentz violation into the infrared?**
+- R7-1's worker (unrefereed, reading PASS) flags its main physics risk. A frame-fixed momentum box in a pair-creating, point-vertex field theory is a Lorentz-violating regulator. By the Collins–Perez–Sudarsky–Urrutia–Vucetich mechanism it would generate O(1) dimension-4 speed differences (comparator F2: an 8.55e-3 QED split, `SUMMARY.md:423`).
+- Build the cheapest box-confined interacting field theory with pair creation. Examples:
+  - a Yukawa or φ⁴ vertex with box-supported, smooth form factors on Z³ × ℝ, Lorentz-exact inside the box;
+  - form factors that are functions of invariant masses only, with compact support.
+- Compute the one-loop self-energy's IR Lorentz violation: the coefficient of the dimension-4 operator (c² − 1)k². Is it O(1)·g², suppressed by a power of (box scale / cutoff), or zero?
+
+Readings:
+- **PASS:** an explicit box field theory whose one-loop IR dimension-4 LV vanishes, or is suppressed below current bounds without tuning, checked.
+- **FAIL:** an O(g²) unsuppressed dimension-4 LV in a stated class (refereed).
+- **INCONCLUSIVE:** otherwise.
+
+**R7-6. Three and more particles in box-confined Poincaré: can the interacting algebra close beyond two bodies on a lattice?**
+- R7-1's P2 closes the algebra for two interacting particles (unrefereed). Pairwise Bakamjian–Thomas boosts do not close for three or more bodies; the continuum fix is Sokolov packing or Coester–Polyzou many-body terms, with macrocausality/cluster separability.
+- On the box sector of R7-1's lattice law, construct a three-body law (box-supported, smooth, faster-than-power tails) with an exact Poincaré algebra and cluster separability. Check numerically in d = 1.
+
+Readings:
+- **PASS:** an explicit three-body box law with an exact algebra and cluster separability, checked.
+- **FAIL:** a no-go for box-supported quasi-local three-body closure with cluster separability, in a stated class (refereed).
+- **INCONCLUSIVE:** otherwise.

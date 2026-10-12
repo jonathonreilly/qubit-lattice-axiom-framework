@@ -1,0 +1,21 @@
+{
+  "purpose": "Fixed synthetic checks; no observation is fitted",
+  "s_grid": [0.5, 1.0, 3.0],
+  "orders": [2, 4, 8, 16],
+  "radii_dimensionless": [0.25, 0.5, 1.0],
+  "frequencies_dimensionless": [0.01, 0.1, 0.5, 1.0, 3.0],
+  "gaussian_width": 0.25,
+  "bin_cap": 12.0,
+  "bin_counts": [32, 128],
+  "radius_window": 1.0,
+  "frequency_window": 3.0,
+  "source_geometry": {
+    "radius_m": "6371000",
+    "core_radius_fraction": "0.55",
+    "core_mass_fraction": "0.32",
+    "mantle_mass_fraction": "0.68",
+    "height_m": "710000",
+    "ell_m": ["1e7", "1e9", "1e11", "1e13"],
+    "shape": 1
+  }
+}

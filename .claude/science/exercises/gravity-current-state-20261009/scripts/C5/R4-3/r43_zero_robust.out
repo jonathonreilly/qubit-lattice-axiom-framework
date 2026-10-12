@@ -1,0 +1,5 @@
+kappa=0.584: |K| at direction 0 = 6.911;  bound on density-error shift (|dnu/nu|<=1e-3) = 0.871
+kappa=0.438: |K| at direction 0 = 6.871;  bound on density-error shift (|dnu/nu|<=1e-3) = 1.817
+kappa=0.506: |K| at direction 0 = 0.704;  bound on density-error shift (|dnu/nu|<=1e-3) = 1.266
+kappa=0.213: |K| at direction 0 = 15.678;  bound on density-error shift (|dnu/nu|<=1e-3) = 9.525
+kappa=0.160: |K| at direction 0 = 10.604;  bound on density-error shift (|dnu/nu|<=1e-3) = 17.589

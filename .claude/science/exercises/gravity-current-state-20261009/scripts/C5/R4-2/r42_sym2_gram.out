@@ -1,0 +1,19 @@
+dimension of Gamma-invariant symmetric forms on Sym^2(R^4): 2
+trace functional (tr G7 T) in coords: Matrix([[-7, 0, 0, 0, 1, 0, 0, 1, 0, 1]])
+dim traceless subspace: 9
+  params (1, 0): restriction to traceless part: eig min -4.0000, max +14.0000
+  params (0, 1): restriction to traceless part: eig min -14.0000, max +4.0000
+  params (1, 1): restriction to traceless part: eig min +0.0000, max +0.0000
+  params (1, -1): restriction to traceless part: eig min -8.0000, max +28.0000
+  params (2, 3): restriction to traceless part: eig min -14.0000, max +4.0000
+rank of d(restriction)/d(param): [9, 9]
+Is restriction to traceless part of the form (trace)^2 zero? True
+--- exact inertia check (numpy on exact rational matrices) ---
+  params (1, 0): traceless restriction inertia (+,0,-) = (3,0,6); full form inertia = (4,0,6)
+  params (0, 1): traceless restriction inertia (+,0,-) = (6,0,3); full form inertia = (7,0,3)
+  params (1, 1): traceless restriction inertia (+,0,-) = (0,9,0); full form inertia = (1,9,0)
+  params (1, -1): traceless restriction inertia (+,0,-) = (3,0,6); full form inertia = (4,0,6)
+  params (2, 3): traceless restriction inertia (+,0,-) = (6,0,3); full form inertia = (7,0,3)
+  tr^2: invariant=True; traceless inertia (+,0,-) = (0,9,0)
+  contraction: invariant=True; traceless inertia (+,0,-) = (6,0,3)
+Conclusion: an invariant form psd on Sym^2 must have zero contraction coefficient (contraction is indefinite on the traceless part), so it vanishes on the traceless part.

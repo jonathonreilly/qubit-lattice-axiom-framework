@@ -1,0 +1,11 @@
+r= 1.0 beta=1e-02  h = +4.722517e+01   leading = +4.706904e+01   diff/sqrt(1/beta) = +1.56e-02
+r= 1.0 beta=1e-03  h = +1.435137e+01   leading = +1.442247e+01   diff/sqrt(1/beta) = -2.25e-03
+r= 1.0 beta=1e-04  h = -4.335714e+02   leading = -4.335376e+02   diff/sqrt(1/beta) = -3.38e-04
+r= 3.0 beta=1e-02  h = +2.536592e+00   leading = +2.526671e+00   diff/sqrt(1/beta) = +9.92e-04
+r= 3.0 beta=1e-03  h = -9.984780e+00   leading = -9.982307e+00   diff/sqrt(1/beta) = -7.82e-05
+r= 3.0 beta=1e-04  h = +3.481392e+01   leading = +3.481342e+01   diff/sqrt(1/beta) = +5.01e-06
+r= 6.0 beta=1e-02  h = -7.973228e-02   leading = -7.947180e-02   diff/sqrt(1/beta) = -2.60e-05
+r= 6.0 beta=1e-03  h = -4.749686e-01   leading = -4.749186e-01   diff/sqrt(1/beta) = -1.58e-06
+r= 6.0 beta=1e-04  h = -1.641886e+00   leading = -1.641886e+00   diff/sqrt(1/beta) = +2.74e-09
+constant mode beta=1e-02: h0 = 2.992450e+02, exact pi(K1-K0) = 2.992450e+02, pi/beta = 3.141593e+02
+constant mode beta=1e-03: h0 = 3.119515e+03, exact pi(K1-K0) = 3.119515e+03, pi/beta = 3.141593e+03

@@ -1,0 +1,55 @@
+== constants
+l_P = 1.6163e-35 m, lbar_P = 8.1027e-35 m, t_P = 5.3912e-44 s
+H0 = 2.1843e-18 s^-1, c/H0 = 1.3725e+26 m
+Lambda_obs = 3 Om_L H0^2/c^2 = 1.0903e-52 m^-2 ; *l_P^2 = 2.8481e-122 ; *lbar_P^2 = 7.1581e-121
+t0 = 4.3508e+17 s = 13.787 Gyr
+comoving particle horizon c*eta0 = 4.3629e+26 m
+V_lc (past light cone of here-now)   = 4.3601e+103 m^4 = 6.3894e+242 l_P^4 = 1.0115e+240 lbar^4
+V_ph (ZAS-quoted horizon form)       = 1.0015e+106 m^4 = 1.4676e+245 l_P^4 = 2.3234e+242 lbar^4
+V_H = (c/H0)^4                       = 3.5485e+104 m^4 = 5.2000e+243 l_P^4 = 8.2324e+240 lbar^4
+(c t0)^4                             = 2.8945e+104 m^4 = 4.2417e+243 l_P^4 = 6.7152e+240 lbar^4
+
+== Sorkin magnitude with Planck-density Poisson count (F = 1)
+dLambda = kappa_u (lbar/l_e)^2 / sqrt(V)
+  l_e = lbar_P kappa_u=1.0 V_lc  : dLambda = 1.514e-52 m^-2 ; dLambda/Lambda_obs = 1.389
+  l_e = lbar_P kappa_u=1.0 V_H   : dLambda = 5.309e-53 m^-2 ; dLambda/Lambda_obs = 0.487
+  l_e = lbar_P kappa_u=0.5 V_lc  : dLambda = 7.572e-53 m^-2 ; dLambda/Lambda_obs = 0.695
+  l_e = lbar_P kappa_u=0.5 V_H   : dLambda = 2.654e-53 m^-2 ; dLambda/Lambda_obs = 0.243
+  l_e = l_P    kappa_u=1.0 V_lc  : dLambda = 3.806e-51 m^-2 ; dLambda/Lambda_obs = 34.910
+  l_e = l_P    kappa_u=1.0 V_H   : dLambda = 1.334e-51 m^-2 ; dLambda/Lambda_obs = 12.237
+  l_e = l_P    kappa_u=0.5 V_lc  : dLambda = 1.903e-51 m^-2 ; dLambda/Lambda_obs = 17.455
+  l_e = l_P    kappa_u=0.5 V_H   : dLambda = 6.671e-52 m^-2 ; dLambda/Lambda_obs = 6.119
+beta needed so that Lambda_obs = beta/sqrt(V_lc) [8piG=hbar=c=1 units]: 0.7199
+  (ADGS/ZAS Model 1 viable range quoted 0.01 < beta < 0.02: that is an rms, the realized value today is one draw)
+  element spacing implied if kappa_u=1 and beta_rms=0.01-0.02: l_e = lbar/sqrt(beta) = 7.1-10.0 lbar_P = 35.4-50.1 l_P
+
+== epoch scaling: Lambda_S = 1/sqrt(V_lc(t)) [lbar units] vs 3H^2/c^2
+  a=1.000e-09: V_lc=6.272e+38 m^4, Lambda_S=3.993e-20 m^-2, Lambda_S/(3H^2/c^2)=2.7253
+  a=1.000e-06: V_lc=6.241e+62 m^4, Lambda_S=4.003e-32 m^-2, Lambda_S/(3H^2/c^2)=2.7227
+  a=9.091e-04: V_lc=6.049e+85 m^4, Lambda_S=1.286e-43 m^-2, Lambda_S/(3H^2/c^2)=1.4563
+  a=1.000e-01: V_lc=1.194e+98 m^4, Lambda_S=9.151e-50 m^-2, Lambda_S/(3H^2/c^2)=1.8131
+  a=5.000e-01: V_lc=1.559e+102 m^4, Lambda_S=8.009e-52 m^-2, Lambda_S/(3H^2/c^2)=1.5674
+  a=1.000e+00: V_lc=4.360e+103 m^4, Lambda_S=1.514e-52 m^-2, Lambda_S/(3H^2/c^2)=0.9509
+
+== Set A: records only (rare flashes), forced identification V = N_rec / rho_rec
+  GRW lambda=1e-16/s, baryons                        rho_rec = 8.356e-26 /m^4 = 5.702e-165 per l_P^4 ; dLambda/Lambda_obs (kappa_u=1, V_lc) = 2.636e-81
+  O4 Earth-heat max 5.3e-11/s per nucleon, baryons   rho_rec = 4.429e-20 /m^4 = 3.022e-159 per l_P^4 ; dLambda/Lambda_obs (kappa_u=1, V_lc) = 1.919e-78
+  IGM bound 1e-9/s, baryons                          rho_rec = 8.356e-19 /m^4 = 5.702e-158 per l_P^4 ; dLambda/Lambda_obs (kappa_u=1, V_lc) = 8.336e-78
+  generous: every photon+nu+baryon at 1e-9/s         rho_rec = 2.492e-09 /m^4 = 1.700e-148 per l_P^4 ; dLambda/Lambda_obs (kappa_u=1, V_lc) = 4.552e-73
+
+== Set C: Z^3 sites with ticks, one record per site, permanent
+  comoving spacing = l_P today       N_sites(J^-) = 8.239e+184 ; V_lc/l_P^4 = 6.389e+242 ; max formation density = 1.290e-58 per l_P^4
+     => dLambda/Lambda_obs <= 3.964e-28 (kappa_u=1)
+  comoving spacing = 1e-19 m today   N_sites(J^-) = 3.479e+137 ; V_lc/l_P^4 = 6.389e+242 ; max formation density = 5.444e-106 per l_P^4
+     => dLambda/Lambda_obs <= 8.146e-52 (kappa_u=1)
+  ratio t_P*H0 = 1.178e-61 ; sqrt = 3.432e-31
+
+== lattice-site counts, using the MEASURED laws of r45_lattice_count/r45_checks2 (T <= 108 lattice units)
+   (A) aligned crystal (observer at rest, diamond): Var = F rho V, F = 0.60 (Z4), 7.76 (L7)  -> dLambda = Sorkin * F^-1/2
+       F=0.60: dLambda/dLambda_Sorkin = 1.291
+       F=7.76: dLambda/dLambda_Sorkin = 0.359
+   (B) LRL, Haar-ball-averaged: Var ~ c T^2.2, c T^2 with c ~ 0.5-0.9 (a=1, covolume sqrt7) at T<=108.
+       EXTRAPOLATION ONLY (TESTS.md:8: no verdict rests on it): if Var = 0.9 (T/a)^2 held at T = c t0, a = lbar:
+       dLambda = 3.770e+07 m^-2 = 3.458e+59 Lambda_obs; epoch scaling dLambda ~ 1/T ~ H, not H^2
+   (C) misaligned crystal: aligned time-row term suppressed by sinc^2(M d T/2), M = 2 pi/s, d = sinh(eta)
+       Sun vs CMB d = 1.23e-03; M d T/2 at T = c t0, s = lbar: 6.242e+57  -> suppression ~ 2.6e-116

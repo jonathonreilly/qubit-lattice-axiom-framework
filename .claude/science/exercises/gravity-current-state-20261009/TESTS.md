@@ -2896,3 +2896,50 @@ Readings, per route:
 - **VIABLE:** gives ⟨Λ⟩ = 0 (or the observed value) with named prices and no fine tuning, consistent with stated bounds.
 - **EXCLUDED:** violates a stated bound or is internally inconsistent.
 - **OPEN:** otherwise.
+
+### C5 Round 4 results (recorded 14:05Z)
+
+All five were refereed by codex gpt-5.6-sol at xhigh. Files: `agents/C5_R4-*`.
+
+**R4-1 (LRL d'Alembertian) — CONFIRMED WITH CORRECTIONS. FAIL (bounded).**
+- **Weights.** Four-shell retarded weights exist whose Haar mean is −k² + O(a²k⁴ log ak). The Siegel densities are confirmed independently, with class number one proved by the square-free-determinant theorem.
+- **No per-realization law from finitely many orbits.** Every fixed linear retarded scalar kernel on finitely many Γ_L orbits with a nonzero off-site weight obeys, on isotropic Gaussians at a Palm point, limsup_ℓ ‖Bφ_ℓ − E Bφ_ℓ‖₂/ℓ > 0. Hence limsup R_ℓ(a/ℓ)³ > 0: the per-realization deviation does not vanish relative to □φ. The absolute deviation grows too, so this is not a normalization artefact.
+- **Scope.** It is an ensemble-rms obstruction, not pointwise for every realization. It does not cover infinite-support, nonlinear, curved or internal-index operators.
+- **Corrections:**
+  - the frame sampling covers a local ball, not Haar on the quotient;
+  - there are 18 + 6 kernels, not 23;
+  - the r = 0 mode grows as ℓ log ℓ;
+  - the clause "stays O(1)" must be read as "does not vanish".
+
+**R4-2 (singular finite-fibre multipliers) — CONFIRMED WITH CORRECTIONS. FAIL (bounded) for the conservative class; INCONCLUSIVE for propagating dissipative matter.**
+- **The conservative class.** Take a unitary Γ⋉L₇ one-particle representation with finite spectral multiplicity, closed decomposable charges forming a finite rational multiplet, and spectral support conservative for the three coordinate boosts. Then every nontrivial Lorentz component of every measurable finite-fibre charge vanishes.
+- **On-site operators stay in that class.** Strictly on-site bounded operators acting on an invariant vacuum generate it. Its two-point measure is ultralocal Haar plus uniformly almost-periodic, so there is no continuous dispersive branch.
+- **The dissipative escape (Example E).** The folded continuum hyperboloid gives a covariant, unbounded, multiplicity-one charge, but no lattice law and no local gauge identity.
+- **Corrections:**
+  - S′ needs a Lie-algebra argument over the three coordinate boosts;
+  - Qubit makes variance automatic only for represented on-site M₂ elements;
+  - "no propagation" should read "no continuous dispersive branch".
+
+**R4-3 (observational LV on LRL) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.**
+- **Margins.** At a = ℓ_P, every listed process is 27.2–44.2 decades below the gap. At a = 1e-19 m, LHC and UHECR-air invariants lie above it, which opens umklapp channels but does not size them.
+- **Lemma Z, confirmed in its continuous form.** Γ_L orbits on the punctured null cone are dense in direction and scale. So scalar invariants on the spacelike-plus-null domain depend only on p², and regular null/spacelike per-realization LV is excluded. Bounded timelike mass-like branches and singular Bragg-cone sectors stay open.
+- **Not confirmed:** thresholdless emission. Exact kinematics need d_H(v,v′) = |log m(v)/m(v′)|.
+- **The instability of the representative five-shell kernel is genuine.** It has a forward-tube zero at κ ≈ 0.46–0.50, with an e-folding time of about 2 lattice times. The second zero, the optimized families and the universal exponent are not robust.
+- **The correction to R3-1 is confirmed.** 55 of 66 shell pairs have |c| > 0.9.
+
+**R4-4 (beables sourcing gravity) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.**
+- **Literal C0 is ruled out.** Bare localized beable stress cannot source linearized Einstein or trace-free gravity when the Bohmian momentum changes. Lemma K needs o(r⁻²) fall-off.
+- **Naive CQ is ruled out.** Adding the realized quantum-potential energy does not restore run-wise conservation for generic states.
+- **CG is an incomplete proposal, still open.** The ghost has not been derived from an action, and signalling is shown only in the ideal 1D toy (TV 0.794 reproduced).
+- **The LLR seven-decade exclusion is not established.** Pauli/Dirac currents make the 1s state circulate, which cuts the deficit to −4.5 eV in the same bookkeeping. No many-electron calculation was done.
+- **Lemma N confirmed.** A classical c-number channel gives zero entanglement; the quantum value is concurrence 0.156.
+- **R is viable, outside beable-sourced gravity.** It is a non-back-reacting E3 comparator: gravity quantum, beable metric inert. DGNSZ gives a covariant foliation only for timelike total momentum (not the vacuum, not null states).
+
+**R4-5 (everpresent Λ) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.**
+- **The observed order arises under three conditions:** unimodular conjugacy, a count-volume bridge, and a Poisson-like 4D count at Planck density. The past cone of 6.389e242 ℓ_P⁴ then gives 1.389 Λ_obs, with a convention range of 0.695–34.9. Neither the coefficient nor the zero mean is derived.
+- **Set A:** matter-following GRW flashes are vastly too sparse. Even the report's generous scenario gives about 3.3e-72 Λ_obs, and this is not a class-wide bound.
+- **The axioms' Z³ (set C):** a fixed persistent Z³ allows at most 8.24e184 record events in the stated embedding. The 4e-28 figure needs extra assumptions.
+- **A crystal's count variance depends on the frame** (confirmed).
+- **LRL:** sub-volume-like through T = 108, compatible with the gap and P-L′. The asymptotic law is unsettled; Lemma V is open.
+- **Data and consistency:** a Bianchi-completion problem (a 17-decade gap) and CMB problems. Neither excludes the whole class.
+- **No contradiction with the Λ = 3/R² note.** That note is conditional.

@@ -1,0 +1,23 @@
+(a) L7 small misalignment: measured Var/rhoV vs time-row prediction
+   eta=0.05 T=  6  Var/rhoV=6.7061e+00 (+-6%)   row-pred/rhoV=7.2875e+00
+   eta=0.05 T= 13  Var/rhoV=5.8325e+00 (+-6%)   row-pred/rhoV=6.0189e+00
+   eta=0.05 T= 27  Var/rhoV=2.8142e+00 (+-6%)   row-pred/rhoV=2.7743e+00
+   eta=0.05 T= 54  Var/rhoV=6.1464e-03 (+-6%)   row-pred/rhoV=3.2371e-03
+   eta=0.05 T=108  Var/rhoV=4.0297e-03 (+-8%)   row-pred/rhoV=3.2170e-03
+   eta=0.20 T=  6  Var/rhoV=3.7021e+00 (+-6%)   row-pred/rhoV=3.1658e+00
+   eta=0.20 T= 13  Var/rhoV=3.0480e-02 (+-6%)   row-pred/rhoV=8.4211e-04
+   eta=0.20 T= 27  Var/rhoV=1.9633e-02 (+-6%)   row-pred/rhoV=4.9968e-03
+   eta=0.20 T= 54  Var/rhoV=8.7757e-03 (+-6%)   row-pred/rhoV=4.8032e-03
+   eta=0.20 T=108  Var/rhoV=5.1000e-03 (+-8%)   row-pred/rhoV=4.1515e-03
+(b) Haar-ball-averaged L7
+   eta_max=1.5 T= 13  Var/rhoV=6.1991e-02 (+-4%)  Var/T^2=0.5183
+   eta_max=1.5 T= 27  Var/rhoV=1.7903e-02 (+-4%)  Var/T^2=0.6457
+   eta_max=1.5 T= 54  Var/rhoV=4.9866e-03 (+-4%)  Var/T^2=0.7194
+   eta_max=1.5 T=108  Var/rhoV=1.5242e-03 (+-7%)  Var/T^2=0.8796
+   -> eta_max=1.5: Var ~ T^2.24 (all), T^2.22 (last 3)
+   eta_max=3.0 T= 13  Var/rhoV=7.0843e-02 (+-4%)  Var/T^2=0.5923
+   eta_max=3.0 T= 27  Var/rhoV=1.7505e-02 (+-4%)  Var/T^2=0.6314
+   eta_max=3.0 T= 54  Var/rhoV=5.3939e-03 (+-4%)  Var/T^2=0.7782
+   eta_max=3.0 T=108  Var/rhoV=1.4291e-03 (+-9%)  Var/T^2=0.8247
+   -> eta_max=3.0: Var ~ T^2.17 (all), T^2.19 (last 3)
+elapsed 347 s

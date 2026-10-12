@@ -3571,3 +3571,221 @@ Readings:
   - trace-only or spin-separated kernels;
   - light-cone-renormalized distributions;
   - jump, non-Gaussian or mediator constructions.
+
+### C5 Round 9 (pre-registered 16:38Z from the S8 synthesis, agents/C5_S8_synthesis.md; readings fixed as drafted below)
+
+Launch: R9-1, R9-2, R9-4 and R9-5 now; R9-3 when a slot frees; R9-6 only on its condition. Draft text verbatim from S8 §5:
+
+
+**Rules (as for rounds 2–8).**
+- Probes: Opus 5.5 at xhigh.
+- Every FAIL, EXCLUDED or no-go goes to the codex gpt-5.6-sol (xhigh) referee before it is recorded.
+- Prices are named, never adopted.
+- Each probe greps the repository and packet for prior art first, and counts each match once.
+- Hypotheses are stated before titles; excluded outside realizations are listed.
+- Numbers from memory are labelled RECALLED unless verified.
+
+**Overlap check against R8-1, R8-4 and R8-5.**
+- R8-1 builds the two-body algebra and leakage in d = 1 and d = 2, and excludes W1–W4, N ≥ 3 and d = 3 (`C5_R8-1_report.md:34-44`).
+  - R9-2 uses R8-1's law for the stress tensor only.
+  - R9-3 is N = 3.
+  - R9-6 is d = 3, conditional on R8-1's referee.
+- R8-4 builds the INV Hamiltonian. No R9 item builds pair-creating vertices.
+- R8-5 covers gauge fields. R9-1 conditions on R8-5's coupling form but builds no gauge field.
+
+**Priority.** R9-2, R9-1, R9-3, R9-4, R9-5; R9-6 conditional.
+
+---
+
+**R9-1. Edge-sector population: are the wrong-falling edge quanta harmless, observable, or dark-matter-like?**
+
+- **Plain question.** Theorem E says every finite periodic band has states that fall the wrong way. In C-box they live outside the box, in the edge. The literal law also has 2^d − 1 copies of each particle at the zone corners, with the same mass m. These fall correctly at rest and feel no box-supported interaction, only gravity. Does anything put particles in the edge? If so, what would we see: a violation in lab free-fall tests, a cosmic relic, or something that behaves like dark matter?
+- **Setting.**
+  - R7-1/R8-2's free law in d = 3, with two edge profiles:
+    - (L) literal, with doublers;
+    - (G) gapped, edge threshold E_e ≤ √(m² + b²)/a.
+  - Gravity: R8-2's universal box⊕edge stress at linear order, with the first-moment lapse.
+  - Interactions: box-supported and number-conserving (R7-1/R8-1).
+  - Lattice spacing a is a parameter; a = ℓ_P is a reading.
+  - Excluded: pair-creating vertices (R8-4). Gauge couplings are treated conditionally: (G-in) gauge vertices box-supported; (G-out) point-local Peierls coupling that reaches the corners. Take the form from R8-5 if it has reported.
+- **Prior art (count once).**
+  - R8-2 (`TESTS:3550-3557`; `C5_R8-2_report.md:64-70,130-131,152,177-178`);
+  - the referee's leakage correction (states near the face couple with small q; `C5_R8-2_referee_verdict.md:29`);
+  - Theorem E scope (`:47`);
+  - O2 Lemma F (`C5_O2_report.md:118`);
+  - R7-1 leakage (`TESTS:3399`);
+  - the I2 zone average (`SUMMARY:403-405`);
+  - MICROSCOPE, as cited at `C5_R8-2_referee_verdict.md:66`.
+- **Probes.**
+  - (a) **Production.** Compute the rate of edge population by:
+    - (i) gravitational box→edge transitions through Lemma U matrix elements, for matter near the face and for a thermal gas at temperature T;
+    - (ii) thermal equilibrium at an early-universe temperature T_max (a parameter);
+    - (iii) gravitational particle production in an expanding background (comparator literature RECALLED unless verified);
+    - (iv) under G-out, ordinary gauge production of corner copies.
+  - (b) **Fall and clustering.** For each populated edge state, give the A(k) tensor of Theorem E and the energy-weighted means. Then:
+    - (1) the admixture η in test bodies against 1e-15;
+    - (2) a relic gas's density, equation of state, and whether it clusters like cold dark matter or falls up or anisotropically;
+    - (3) for doublers under G-in: a gravitationally-only interacting mass-m copy of every species. State the dark-matter equivalence-principle bound used (verify or label RECALLED).
+  - (c) **Momentum balance.** Theorem E's Ṗ contains dΓ(εA). Identify where momentum goes in a uniform field (into the field, or not conserved), i.e. active versus passive mass.
+  - (d) Name the price for each outcome.
+- **FIXED readings, per profile (L, G) and gauge case:**
+  - **HARMLESS:** computed edge population, for every T_max up to a stated bound, stays below every stated observational bound (η < 1e-15; relic Ω_edge below a stated limit), checked.
+  - **EXCLUDED:** a computed population violates a stated bound for every parameter in the profile class (refereed).
+  - **DARK-CANDIDATE:** a computed relic abundance can equal Ω_DM in a stated parameter range without violating the stated bounds, including a dark-matter EP bound. Recorded as a lead, not adopted.
+  - **OPEN:** otherwise.
+- **Expectation.**
+  - G: HARMLESS for T_max well below E_e (Boltzmann suppression; E_e is Planckian for b of order one); OPEN near Planckian T_max.
+  - L under G-out: EXCLUDED (charged mass-m copies of the electron).
+  - L under G-in: OPEN, leaning HARMLESS (purely gravitational production), with a DARK-CANDIDATE risk worth computing.
+
+---
+
+**R9-2. The interacting stress tensor on the box, and the fall of bound bodies (plus the free shear mass)**
+
+- **Plain question.** Gravity must pull on binding energy exactly as on rest mass. MICROSCOPE tests this to about 1e-15 for bodies whose binding fractions differ. R8-2 built a universal stress only for free particles. Is there an exactly conserved stress for the *interacting* box law whose bound states fall with weight one? Separately, does R8-2's free box⊕edge stress bring back the E_g shear mass that free lattice matter generates (V3)?
+- **Setting.**
+  - The law: R8-1's repaired two-body law (d = 1, d = 2), conditional on R8-1's referee. If R8-1 is not confirmed, use the d = 1 BT law as repaired per the R7-1 referee (`C5_R7-1_referee_verdict.md:93-104`).
+  - The free stress: R8-2's Construction A.
+  - Gravity: first-moment lapse coupling.
+  - Test bodies: two bound states with different binding fractions (vary λ or κ), at rest and moving within the budget.
+  - Excluded: pair creation (R8-4), gauge fields (R8-5), N ≥ 3 (R9-3).
+- **Prior art (count once).**
+  - R8-2 (`TESTS:3554-3557`);
+  - R7-1 W2/W4 (`C5_R7-1_referee_verdict.md:237-250`);
+  - R7-4 Lemma 1 and the conditional exclusion (`TESTS:3496-3497`; `C5_R7-4_referee_verdict.md:35-55,75`);
+  - R7-6 instant form and P = Q (`TESTS:3508-3509`);
+  - V3 μ_E = 1.97038864e-3 per cell (`PRICE_NOTE:290-295`);
+  - the RN L1 seagull correction (`PRICE_NOTE:341-352`);
+  - O2 Lemma F.
+- **Probes.**
+  - (a) **Free shear.** Compute the uniform-strain (E_g, T_2g) susceptibility of R8-2's box⊕edge stress for profiles L and G, against V3's μ_E. Does the edge carry it?
+  - (b) **Interacting stress.** Construct T_int^{μν} for the two-body law with these properties:
+    - symmetric, Hermitian, quasi-local (tails stated);
+    - an exact linear Ward identity on the two-body box sector;
+    - ∫T⁰⁰ = H;
+    - first energy moment = the interacting K.
+  - (c) **Bound-body fall.** Compute the operator identity for Ṗ in a uniform lapse (Theorem E plus the interaction term), the acceleration of each bound state, and η between two binding fractions, at rest and in motion.
+  - (d) **R7-4's hypotheses.** Identify which of R7-4's global hypotheses the construction violates (self-adjoint exponentiating D; Møller intertwining). State the rapidity range on which (b) is exact.
+- **FIXED readings.**
+  - **PASS:** (b) and (c) met, with computed η between two binding fractions below 1e-15 at linear order (or exactly zero), checked.
+  - **FAIL:** a refereed no-go that no stress with (b)'s properties exists for box-supported two-body interactions in a stated class; or a computed bound-body η > 1e-15 that no choice in the class removes.
+  - **INCONCLUSIVE:** otherwise.
+  - (a) is reported as **SHEAR-PRESENT / SHEAR-ABSENT / OPEN**, with the number.
+- **Expectation.**
+  - (a) SHEAR-PRESENT [S8 reading: Theorem E moves the anomaly to the edge; the zone average still feeds the uniform-strain response].
+  - (b)–(c): INCONCLUSIVE, leaning PASS in d = 1. BT bound states have H = √(M² + P²), so a stress built as the mass-operator density should give weight one at rest. The risk is the locality of that density, and a global-exponentiation requirement sneaking back in.
+
+---
+
+**R9-3. Sokolov-packed three-body box law, built and checked on the lattice (d = 1)**
+
+- **Plain question.** For three bodies, adding up pair interactions breaks relativity (R7-6). The textbook cure, Sokolov packing, adds connected three-body terms so the algebra closes and far-apart particles stop affecting each other. Does the cure work on the lattice, with tails that still fall faster than any power?
+- **Setting.**
+  - d = 1, three spinless fermions on a ring.
+  - The pair law: R8-1's (or the R7-1-referee-repaired) pair law, with R7-6's plateau and box.
+  - The packed H_S and K_S are built as explicit operators, not formally.
+  - Excluded: d ≥ 2, pair creation, gravity.
+- **Prior art (count once).**
+  - R7-6 (`TESTS:3506-3510`; `C5_R7-6_referee_verdict.md:52-67,93-137`);
+  - Keister–Polyzou, Coester–Polyzou, Reichelt–Schweiger–Klink, as cited there;
+  - R7-1 Lemma Sm (`C5_R7-1_referee_verdict.md:131-137`).
+- **Probes.**
+  - (a) Construct H_S, K_S on the three-body box sector.
+  - (b) Check [K,P] = iH, [K,H] = iP and [H,P] = 0 on rings of at least three sizes.
+  - (c) **Cluster separability.** Translate one particle by r over at least 1.5 decades. Measure ‖(H_S − H_{12} ⊗ 1 − 1 ⊗ h₃)ψ_r‖ and the same for K.
+    - Pre-registered model comparison: an information criterion on log residuals over the full range, super-polynomial (e.g. exp(−c r^β)) against a power law.
+  - (d) Measure the real-space tails of H_S − H_BT and of the packing unitary.
+  - (e) Check the trimer invariant mass at P = 0, ±P₁, ±P₂.
+- **FIXED readings.**
+  - **PASS:** (b) residuals → 0 with L; (e) drift at the discretisation floor; (c) and (d) super-polynomial by the pre-registered comparison; checked.
+  - **FAIL:** a refereed proof that, in a stated class (box-supported pair interactions, smooth plateau), the connected term or the packing unitary has power-law or slower tails, or that cluster separability fails.
+  - **INCONCLUSIVE:** otherwise.
+- **Expectation.** INCONCLUSIVE. The algebra should close by construction; the tails are the real risk, since the R7-6 referee found a power law fits better over 40–320 (`C5_R7-6_referee_verdict.md:125-128`).
+
+---
+
+**R9-4. Covariant CQ gravity outside the R8-3 subclass: spacelike-supported, spin-separated and non-Markovian kernels (set A)**
+
+- **Plain question.** Smeared classical gravity works at Newtonian level (R6-4). Its simplest relativistic forms cannot keep light bending, finite radiation and a quiet vacuum all at once (R8-3). The no-go lists what it does not cover. Test the cheapest member of each uncovered class.
+- **Setting.** Linearized, translation-invariant Gaussian CQ models; variants:
+  - (i) **Spacelike-supported kernels** [S8 suggestion]. Noise kernels Lorentz-invariant and supported on spacelike transfer q² > 0 only.
+    - Reason: R8-3's vacuum divergence (Lemma 1) lives on the future timelike cone, where pair creation needs q. Static Newtonian exchange is at q⁰ = 0, which is spacelike.
+    - The question is the null cone, where radiation and lensing live.
+  - (ii) **Spin-separated.** Spin-2 is GR-normalized at the light cone; a separate scalar kernel carries the decoherence and diffusion.
+  - (iii) **Non-Markovian.** Temporally correlated kernels that violate the pointwise additivity H3′ while keeping complete positivity.
+  - (iv) **Preferred frame.** R8-3's search target 1e-8 to 5e-6 m, with D₀'s excess near the null cone computed.
+- **Prior art (count once).**
+  - R6-4 (`TESTS:3409-3418`; `C5_R6-4_referee_verdict.md:5-25`);
+  - R8-3 (`TESTS:3559-3573`; `C5_R8-3_referee_verdict.md:5-19`);
+  - R4-4 Lemma N (a BMV-type positive result excludes every variant; `TESTS:2935`);
+  - Bedingham and Tumulka (as cited in `C5_R8-3_referee_verdict.md:5`);
+  - OWD's trace-only kernel (`:13`).
+- **Tests.**
+  - complete positivity at finite c;
+  - γ = 1 and Shapiro delay;
+  - c_T (GW170817), and finite radiation (Lemma 3's light-cone log);
+  - a finite vacuum-excitation rate (Lemma 1);
+  - decoherence and diffusion against R6-4's bounds: Cs-133 for 70 s; LPF as a γ = 1 prediction; torsion with the corrected integration σ_a² = (48π/5)G²D₂/(RT);
+  - the Newtonian limit must land in R6-4's window.
+- **FIXED readings, per variant:**
+  - **VIABLE:** passes all stated tests with named prices.
+  - **EXCLUDED:** violates a stated bound or is inconsistent, for every parameter in the variant (refereed).
+  - **OPEN:** otherwise.
+- **Expectation.**
+  - (i) OPEN. The risk is at q² = 0: radiation and lensing sit on the support's boundary, and Lemma 3's log may return.
+  - (ii) OPEN; the scalar channel's lensing contribution needs a computed bound.
+  - (iii) OPEN.
+  - (iv) OPEN, with a computed window, or EXCLUDED.
+
+---
+
+**R9-5. Box-confined Poincaré on a qubit lattice (⊗M₂), with honest sector accounting**
+
+- **Plain question.** Every box PASS uses fermion modes, which compose across sites with signs. The campaign's reading of Qubit is one qubit per site with the plain tensor product. Can the free box law live on qubits? R7-3 put R6-1's witness into the flux-free sector of a Kitaev spin model. Does the same work for R7-1's box law? What lives in the other sectors, at what energy, and what does it cost?
+- **Setting.**
+  - ⊗_{Z^d} M₂(C), d = 2 (d = 3 if cheap). Two routes:
+    - (A) a Kitaev honeycomb or brick-wall model whose matter Majoranas carry the box dispersion in the flux-free sector. Massive box dispersion needs a gap-opening term; state which.
+    - (B) a gauge-constrained fermion encoding (Bravyi–Kitaev superfast or Chen–Kapustin–Radičević), with the constraint sector counted.
+  - Excluded: interactions beyond R7-1's free law; gravity.
+- **Prior art (count once).**
+  - R7-3 (`TESTS:3543-3548`; `C5_R7-3_referee_verdict.md:5-35`);
+  - R6-1 (`TESTS:3316-3329`; `C5_R6-1_referee_verdict.md:17`);
+  - R7-1 (`TESTS:3398-3407`);
+  - R8-2 doublers and edge (`TESTS:3552-3553`).
+- **Probes.**
+  - (a) The explicit spin Hamiltonian, with norm-certified super-polynomial tails (the gap the R7-3 referee named).
+  - (b) R7-1's free box algebra on the invariant sector at every particle number, checked.
+  - (c) The complementary sectors: vison and defect energies and dispersions; whether they form a non-Poincaré, edge-like sector; and whether sector-connecting local operators (a single σ^z flips two fluxes) are generated by the dynamics.
+  - (d) Name the price: sector restriction, a constraint, and the Qubit-text question in P26(c).
+- **FIXED readings.**
+  - **PASS:** an explicit quasi-local ⊗M₂ law (tails certified) whose stated invariant sector carries the exact free box Poincaré algebra at every particle number, with the complementary sectors' gap and dynamics computed and the price named, checked.
+  - **FAIL:** a refereed no-go for ⊗M₂ quasi-local laws carrying the free box algebra on a stated class of sectors.
+  - **INCONCLUSIVE:** otherwise.
+- **Expectation.** INCONCLUSIVE overall. The flux-free algebra is likely: the Kitaev map is exact there, and the law is free. The risks are certifying the tails and a vison sector whose gap sets a new, possibly low, edge-like threshold.
+- **Context [S8 reading].** `AX:47` fixes the one-site algebra and states no cross-site composition. Whether graded composition is a price on the axiom text, or only on the campaign's ⊗M₂ reading (`TESTS:3039`), is an owner question this probe does not settle.
+
+---
+
+**R9-6 (conditional: run only if R8-1's referee confirms the d = 2 construction, with or without corrections). The d = 3 rotation-multiplet box law**
+
+- **Plain question.** R8-1 (pending) builds the interacting two-body box law in d = 2 with a p-wave doublet and a spin term. In d = 3 the channel becomes a p-wave triplet, and the spin term becomes (P × S)/(M + H) (suggested, `C5_R8-1_report.md:127`). Separately, the box is a cube, and finite rotations push corner states out of a cube. Does the full ten-generator algebra close in d = 3? What is the rotation budget?
+- **Setting.**
+  - d = 3, with g_a(q) = q_a b(|q|²) for a = 1..3.
+  - The exact region is taken in two forms: (i) the cube |k_i| < b; (ii) the inscribed ball |k| < b.
+- **Prior art (count once).**
+  - R8-1 (pending; `C5_R8-1_report.md:22-44,127,258,279`);
+  - R7-1 (`TESTS:3398-3407`);
+  - the R7-1 referee's d ≥ 2 channel requirement (`C5_R7-1_referee_verdict.md:99-104`).
+- **Probes.**
+  - (a) All 45 commutators of {H, P_i, J_i, K_i} in the canonical chart, with the spin term.
+  - (b) Lattice spectrum: the bound triplet's invariant mass against |P| and direction, at three L.
+  - (c) Finite-rotation and finite-boost leakage for the cube and for the ball. Give the rotation-angle budget, and prove a 2‖1_E ψ‖-type bound for rotations.
+  - (d) The cubic anisotropy of the bound state where only the cube, not the ball, is exact.
+- **FIXED readings.**
+  - **PASS:** (a) closes to a stated tolerance; (b) the mass is P-independent to converging precision; (c) leakage bounds proved and checked for rotations and boosts.
+  - **FAIL:** a refereed obstruction to the d = 3 interacting algebra on the box sector.
+  - **INCONCLUSIVE:** otherwise.
+- **Expectation.** PASS in the canonical chart. Lattice-native checks are likely resolution-limited, as in d = 2 (`C5_R8-1_report.md:258`), so INCONCLUSIVE overall is likely. [S8 reading, elementary] On the ball, finite rotations preserve |k|, so the rotation budget is unlimited. Only boosts leak.
+
+---
+

@@ -2871,3 +2871,28 @@ Readings:
 - **PASS:** an explicit composite (or symmetry-broken-state) excitation with a dispersion and a covariant charge, checked.
 - **FAIL:** a no-go for multi-site operators of bounded support, or for every Γ-breaking state, in a stated class (refereed).
 - **INCONCLUSIVE:** otherwise.
+
+### C5 Round 5, items 2–3 (pre-registered 13:40Z; launched now)
+
+**R5-2. Infinite-orbit kernels on LRL: can a per-realization effective law exist at all?**
+- The R4-1 worker (unrefereed) finds a ban: for retarded kernels supported on finitely many Γ_L orbits, the per-realization deviation grows as (ℓ/a)³ relative to □φ. The open escape is kernels on infinitely many orbits, with weights tending to zero along the shell index m.
+- Construct such a kernel. One option is to choose f_m so that the infinitely many mode conditions A_j(f) = 0 hold, e.g. via Hecke operators or a theta lift with no cusp/Maass components. Or prove that none converges in the forward tube.
+
+Readings:
+- **PASS:** an explicit infinite-orbit retarded kernel whose mean is □ to O(a²) and whose per-realization rms deviation falls at least as (a/ℓ)², checked.
+- **FAIL:** a no-go covering every infinite-orbit kernel with convergent tube symbol (refereed).
+- **INCONCLUSIVE:** otherwise.
+
+**R5-3. The mean of Λ: can any set make ⟨Λ⟩ = 0 without tuning?**
+- R4-5's worker (unrefereed) finds that ⟨Λ⟩ = 0 is a premise in every set. That is the old cosmological-constant problem.
+- Take the routes that touch the axioms:
+  - unimodular gravity with Λ as an integration constant fixed by a boundary or record condition;
+  - Baum–Hawking/Coleman probability peaking at Λ → 0;
+  - a self-tuning or sequestering mechanism (Kaloper–Padilla), with the count as the global variable;
+  - a record-formation equilibrium that sets the vacuum stress to zero (owner's thought "count rises until frozen", tested as a hypothesis).
+- For each, derive what the axioms supply and what must be added, and check it against observation: w(z), and the effect of DESI DR2 hints, verified or labelled from memory.
+
+Readings, per route:
+- **VIABLE:** gives ⟨Λ⟩ = 0 (or the observed value) with named prices and no fine tuning, consistent with stated bounds.
+- **EXCLUDED:** violates a stated bound or is internally inconsistent.
+- **OPEN:** otherwise.

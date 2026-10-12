@@ -7,16 +7,17 @@ target_blocker_text: "Construct checked microscopic dynamics, particle carriers 
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
 artifact_role: theorem
-next_trace_action: "Use the checked supplied gapped spin model to construct actual regular creators and test scattering completeness and a controlled continuum group limit."
+next_trace_action: "Check actual all-particle scattering and controlled continuum groups in the supplied full-spin model."
 ```
 
-Earlier published transport/current/scattering results close explicit conditional
-mathematical steps. The latest completed source review constructs a full-spin
-positive gapped GNS with its actual Hamiltonian, boost, current and exact domains
-for one supplied integrable 1D model. It supplies some formerly abstract inputs;
-finite-lattice exact Lorentz closure still fails for that density. The new
-scattering and continuum routes are unverified. No intended 3D model, interacting
-continuum, empirical prediction or framework parameter selection is inferred.
+Earlier published results close explicit conditional transport, current,
+scattering and boost steps. The supplied full-spin gapped chain and abstract
+massive carrier have completed source review at different hypotheses. New actual
+chain scattering and continuum proofs remain candidates under checking.
+The chain's exact finite-a Lorentz failure remains. No intended3Dmodel,
+interacting local-net or empirical parameter selection follows.
 
-HANDOFF.md and source-bound coverage records distinguish published, prepared,
-checked, proposed and pending results. Prior trace files are exactly archived.
+Trace: upstream_support; reachability: partially_closes; target from user goal.
+Next action: check actual all-particle scattering and controlled continuum groups,
+then pursue the highest-value remaining physical premise. HANDOFF records exact
+sources, statuses, failed routes and recovery paths. No audit verdict is applied.

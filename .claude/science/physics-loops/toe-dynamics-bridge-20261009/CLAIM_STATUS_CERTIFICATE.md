@@ -8,23 +8,17 @@ reachability_to_target: partially_closes
 conditional_surface_status: conditional-support
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "Source-reviewed supplied-model transport, current and particle/boost constructions; physical selection and broader realization remain open."
+claim_type_reason: "Checked conditional microscopic and supplied-model constructions; physical selection and wider realization remain open."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-Ten regular PRs are open and unmerged. Five more reviewed theorem notes are
-prepared on the microscopic-boost branch; canonical verification recovery and
-PR content evaluation remain. The explicit gapped chain is source-reviewed at
-its full-spin/domain/support scope. The massive-carrier final fresh evidence
-and new creator/scattering/continuum proofs remain pending. No pending argument
-inherits acceptance from a research objective or favorable preliminary message.
+Eleven regular PRs open/unmerged. Five newest notes are in9488 with actual
+execution evidence. Concrete chain and massive carrier are source-reviewed;
+new actual-chain scattering/continuum proofs remain candidates. Root is coauthor;
+same-family separate-context checks are not blinded or cross-family.
+Finite control counts and reproducibility are not analytic proofs. Original
+failures and survivors remain bound. New mathematics is authorized; Lean may
+assist scoped future obligations, but no new analytic Lean certificate is claimed.
 
-Root is a coauthor. Separate-context same-family checks use distinct mathematics
-and computational machinery, without blindness or cross-family claims. Counts,
-hashes, copied baselines and mutation replays are not analytic proofs. Original
-failures and surviving mutants remain source-bound. Scoped Lean results already
-published do not certify later analytic constructions; no new Lean run is claimed.
-
-New mathematics is authorized. Retained status remains with independent audit;
-no audit verdict, physical axiom, prompt/skill change, science merge or main push.
+No applied audit, physical axiom, editable prompt/skill, science merge or main push.

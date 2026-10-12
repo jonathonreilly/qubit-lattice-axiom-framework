@@ -4852,3 +4852,35 @@ Readings:
   - Physically, one tuning at m → 0 suffices, because Δ is smooth there.
 
   Referee running.
+
+### C5 Round 14, items 4–5 (pre-registered 21:15Z; launched now)
+
+**R14-4. Graviton production: the mixed h–E kernel escape from X-G.**
+- R13-2 (refereed, EXCLUDED bounded X-G): in a real, local, C⁴, cubic-covariant PSD Gaussian Hamiltonian of the six symmetric-tensor canonical pairs:
+  - gapless axial TT forces vector and scalar partners;
+  - one-sided transverse gauge flatness forces ω_TT = O(k²).
+- Its named open escapes: mixed h–E kernels, auxiliary irreps, axis-only flatness, non-local symbols, and non-product sign cures.
+- Take the cheapest: mixed h–E (off-diagonal) kernels in the Gaussian Hamiltonian, i.e. symplectic mixing. Can a PSD local cubic Gaussian with h–E mixing give linear TT with two polarizations and no gapless partners?
+- If yes, can it be realized as a qubit or finite-slot model, which is X1's regime?
+- If no, extend X-G's no-go to the mixed class.
+
+Readings:
+- **PRODUCED:** an explicit PSD local Gaussian (and, separately, a finite-slot realization) with linear two-polarization TT and no gapless partners, checked.
+- **EXCLUDED:** a refereed no-go extending X-G to mixed kernels.
+- **OPEN:** otherwise.
+
+**R14-5. Λ: the P-T creation law with a spatially averaged lapse (P-r13a), the escape R13-3 left open.**
+- R13-3 (refereed, OPEN):
+  - V3's unit lapse caustics in smooth continuum completions;
+  - V2 restores the Hamiltonian constraint (Lemma T).
+- The worker named the escape: a lapse that varies locally but whose spatial average is fixed. It is global, not nearest-neighbour.
+- Build it. Specify the global constraint ⟨N⟩_space = 1, or an equivalent, and the local clock dynamics. Then test:
+  - (a) no caustic in collapsing halos;
+  - (b) is the homogeneous Hamiltonian constraint still evaded, so that a constant vacuum is invisible without tuning?
+  - (c) linear growth;
+  - (d) the price against `AX:57` (non-local constraint) and the arrow.
+
+Readings:
+- **VIABLE:** an explicit model passing (a)–(c), with untuned Λ_eff = 0 and the prices named.
+- **EXCLUDED:** a refereed inconsistency.
+- **OPEN:** otherwise.

@@ -5322,3 +5322,16 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - Fast-change caps trade against tracking or expansion.
   - **Why it is not a PASS:** no uniform influence bound is proved on H1.
   - **Why it is not a FAIL:** the negative results do not cover all allowed readers.
+- **R16-5 (preferred-frame W2): worker reading OPEN, with a no-go for the referee.** This contradicts the registered expectation that the stress exists.
+  - **Theorem T_pf.** The zeroth moment of W2_pf under constant shifts requires the momentum symbol g to be affine with a common slope wherever the vertex is nonzero. With continuity and cubic rotations, this forces g ≡ 0 and θ ≡ 0, standard or deformed.
+  - **The trivial solution is excluded by observation:** with g ≡ 0, light would not redshift.
+  - **The wall moves from boosts to translations;** it does not go away.
+  - **The pair channel** enters the strain moments but cannot repair the identity.
+  - **Escapes:**
+    - a discontinuous momentum symbol, with 1/r tails and vertices that never cross the face (P-pf1);
+    - the band tower (P64).
+    - Smooth edge decoupling fails.
+  - **Carried over:** R13-5's TT floor of 4.4–5.5e-3 per species at a = ℓ_P.
+  - **Bearing on R15-1:** the projectable scalar has no Lemma-S local channel.
+
+  Referee running.

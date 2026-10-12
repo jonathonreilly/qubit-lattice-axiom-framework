@@ -1,0 +1,73 @@
+[1] Lemma V0: invariant measure of the shell p^2 = -s (s=1) inside |p|<Lambda
+    Lambda=   1e+01  N=3.063070e+02  N/Lambda^2=3.063070
+    Lambda=   1e+02  N=3.140085e+04  N/Lambda^2=3.140085
+    Lambda=   1e+03  N=3.141570e+06  N/Lambda^2=3.141570
+    Lambda=   1e+04  N=3.141592e+08  N/Lambda^2=3.141592
+    rapidities giving pairwise-disjoint boosted copies: [0.0, 1.317, 2.6987, 4.0847, 5.471, 6.8573]
+    => invariant measure >= sum of equal positive masses = infinite
+
+[2] Lemma J: field of a monochromatic point source, w0=1, r=3, smooth cutoff K=40
+    eps=1e-02  jump: Re=-0.58693 Im=+0.07514 | full: Re=-1.53097 Im=+0.21819 | continuous F: Re=-0.70703 Im=+0.16494
+    eps=1e-04  jump: Re=-0.27362 Im=+0.11007 | full: Re=-1.55387 Im=+0.22150 | continuous F: Re=-0.70855 Im=+0.22032
+    eps=1e-06  jump: Re=+0.05101 Im=+0.11076 | full: Re=-1.55410 Im=+0.22153 | continuous F: Re=-0.70857 Im=+0.22151
+    eps=1e-08  jump: Re=+0.37574 Im=+0.11077 | full: Re=-1.55410 Im=+0.22153 | continuous F: Re=-0.70857 Im=+0.22153
+    eps=1e-10  jump: Re=+0.70048 Im=+0.11077 | full: Re=-1.55410 Im=+0.22153 | continuous F: Re=-0.70857 Im=+0.22153
+    predicted jump-log slope dRe/dln(1/eps) = +sin(w0 r)/2 * e^-(w0/K)^2 = +0.07052
+    observed slope from eps=1e-8 -> 1e-10: +0.07052
+
+[3] e^{l^2 box}: |F|^2 = exp(2 l^2 s) at timelike s = (DeltaE/hbar c)^2
+    l=1e-10 m  exponents 2 l^2 s: 1.284e-09, 2.055e-06, 5.136e+01, 5.365e+05, 7.031e+05
+    l=4e-10 m  exponents 2 l^2 s: 2.055e-08, 3.287e-05, 8.218e+02, 8.584e+06, 1.125e+07
+    l=1e-08 m  exponents 2 l^2 s: 1.284e-05, 2.055e-02, 5.136e+05, 5.365e+09, 7.031e+09
+    l=1e-06 m  exponents 2 l^2 s: 1.284e-01, 2.055e+02, 5.136e+09, 5.365e+13, 7.031e+13
+    l=5e-06 m  exponents 2 l^2 s: 3.210e+00, 5.136e+03, 1.284e+11, 1.341e+15, 1.758e+15
+    (processes: thermal IR photon pair, 0.05 eV; optical transition, 2 eV; K-shell X-ray, 10 keV; e+e- threshold, 1.022 MeV; nuclear gamma (Co-60), 1.17 MeV )
+    at l=5e-6 m the exponent exceeds 1 for DeltaE > hbar c/(sqrt2 l) = 0.0279 eV
+    int_0^S ds s^2 e^(2 s) (l=1 units), S=10: log10 = 10.3
+    int_0^S ds s^2 e^(2 s) (l=1 units), S=30: log10 = 28.7
+    int_0^S ds s^2 e^(2 s) (l=1 units), S=100: log10 = 90.6
+
+[4] gamma and Shapiro for a Gaussian-smeared point mass (sigma = l per axis)
+    b=1 l: deflection/GR numeric=0.3934693403  1-exp(-b^2/2l^2)=0.3934693403
+    b=2 l: deflection/GR numeric=0.8646647168  1-exp(-b^2/2l^2)=0.8646647168
+    b=3 l: deflection/GR numeric=0.9888910035  1-exp(-b^2/2l^2)=0.9888910035
+    b=5 l: deflection/GR numeric=0.9999962733  1-exp(-b^2/2l^2)=0.9999962733
+    b=8 l: deflection/GR numeric=1.0000000000  1-exp(-b^2/2l^2)=1.0000000000
+    b=3 l: Shapiro excess int erfc/r dz (units GM/c^3 * 2) = 2.073e-03  (vs log term ~ 2 ln(4 r1 r2/b^2) ~ 50)
+    b=5 l: Shapiro excess int erfc/r dz (units GM/c^3 * 2) = 2.774e-07  (vs log term ~ 2 ln(4 r1 r2/b^2) ~ 50)
+    b=8 l: Shapiro excess int erfc/r dz (units GM/c^3 * 2) = 3.841e-16  (vs log term ~ 2 ln(4 r1 r2/b^2) ~ 50)
+    Sun limb, l=4e-10: exponent -b^2/(2 l^2) = -1.512e+36  => deficit 0 to any precision
+    Sun limb, l=5e-06: exponent -b^2/(2 l^2) = -9.680e+27  => deficit 0 to any precision
+
+[5] Preferred-frame escape: vacuum photon production, order of magnitude (SUGGESTED)
+    u_EBL ~ 4 pi I/c = 2.52e-15 J/m^3 (comparator, recalled)
+    A'=1e-04 l=1e-10 m: Edot=2.48e-21 W/m^3, u(t_H)=1.08e-03 J/m^3, ratio to EBL=4.3e+11
+    A'=1e-04 l=1e-09 m: Edot=2.48e-28 W/m^3, u(t_H)=1.08e-10 J/m^3, ratio to EBL=4.3e+04
+    A'=1e-04 l=1e-08 m: Edot=2.48e-35 W/m^3, u(t_H)=1.08e-17 J/m^3, ratio to EBL=4.3e-03
+    A'=1e-04: l_min (u_inj < u_EBL, tau=l/c) = 4.59e-09 m; photon energy hbar c/l = 43.0 eV
+    A'=1e-02 l=1e-10 m: Edot=2.48e-19 W/m^3, u(t_H)=1.08e-01 J/m^3, ratio to EBL=4.3e+13
+    A'=1e-02 l=1e-09 m: Edot=2.48e-26 W/m^3, u(t_H)=1.08e-08 J/m^3, ratio to EBL=4.3e+06
+    A'=1e-02 l=1e-08 m: Edot=2.48e-33 W/m^3, u(t_H)=1.08e-15 J/m^3, ratio to EBL=4.3e-01
+    A'=1e-02: l_min (u_inj < u_EBL, tau=l/c) = 8.86e-09 m; photon energy hbar c/l = 22.3 eV
+    A'=1e+00 l=1e-10 m: Edot=2.48e-17 W/m^3, u(t_H)=1.08e+01 J/m^3, ratio to EBL=4.3e+15
+    A'=1e+00 l=1e-09 m: Edot=2.48e-24 W/m^3, u(t_H)=1.08e-06 J/m^3, ratio to EBL=4.3e+08
+    A'=1e+00 l=1e-08 m: Edot=2.48e-31 W/m^3, u(t_H)=1.08e-13 J/m^3, ratio to EBL=4.3e+01
+    A'=1e+00: l_min (u_inj < u_EBL, tau=l/c) = 1.71e-08 m; photon energy hbar c/l = 11.5 eV
+    general tau: Edot ~ A' hbar c^2 lP^2 /(l^3 (c tau)^4) -> constrains l^3 tau^4
+
+[6] Preferred-frame causal smearing C(w)=(1-i w tau)^-n, tau=l/c, n=2: GW emission factor
+    l=4e-10 f=100 Hz: 1-|F|=1.05e-30, group lag ~ n tau = 2.67e-18 s (GW170817 window 1.74 s)
+    l=4e-10 f=1000 Hz: 1-|F|=1.05e-28, group lag ~ n tau = 2.67e-18 s (GW170817 window 1.74 s)
+    l=5e-06 f=100 Hz: 1-|F|=1.65e-22, group lag ~ n tau = 3.34e-14 s (GW170817 window 1.74 s)
+    l=5e-06 f=1000 Hz: 1-|F|=1.65e-20, group lag ~ n tau = 3.34e-14 s (GW170817 window 1.74 s)
+
+[7] Covariant Lemma K: K = D0 + cN^2 |F|^2 PJ/s^2 with PJ*D0' >= 1/4, D0 = D0'|F|^2  => K >= cN |F|^2/|s|
+    min K/(cN|F|^2/|s|) over 20000 draws (timelike and spacelike s) = 1.000025
+
+[9] Preferred-frame null-cone regulator mu (SUGGESTED, order of magnitude)
+    Cgw=1e-04 l=1e-08: mu^2 < 5.55e-28 m^-2 (1/mu > 4.24e+13 m); null-cone log ln(k_opt^2/mu^2) = 95
+    Cgw=1e-04 l=5e-06: mu^2 < 6.94e-20 m^-2 (1/mu > 3.79e+09 m); null-cone log ln(k_opt^2/mu^2) = 77
+    Cgw=1e-02 l=1e-08: mu^2 < 5.55e-30 m^-2 (1/mu > 4.24e+14 m); null-cone log ln(k_opt^2/mu^2) = 100
+    Cgw=1e-02 l=5e-06: mu^2 < 6.94e-22 m^-2 (1/mu > 3.79e+10 m); null-cone log ln(k_opt^2/mu^2) = 81
+    Cgw=1e+00 l=1e-08: mu^2 < 5.55e-32 m^-2 (1/mu > 4.24e+15 m); null-cone log ln(k_opt^2/mu^2) = 105
+    Cgw=1e+00 l=5e-06: mu^2 < 6.94e-24 m^-2 (1/mu > 3.79e+11 m); null-cone log ln(k_opt^2/mu^2) = 86

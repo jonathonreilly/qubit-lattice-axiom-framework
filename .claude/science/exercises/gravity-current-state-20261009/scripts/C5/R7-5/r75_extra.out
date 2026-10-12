@@ -1,0 +1,12 @@
+== (i) class P: scan of the Wilson coefficient r and box shape (m = 0.02, N = 128) ==
+  P  b1=2.0 b2=3.0 m=0.02 r=1.5 N=128: inner(J_ww-J_pp)=-1.682819e-02 outer=-6.452083e-03 (FD h1/h2: +8.977064e-02/+8.977880e-02)  XI = +1.838137
+  P  b1=2.0 b2=3.0 m=0.02 r=2.0 N=128: inner(J_ww-J_pp)=-1.682819e-02 outer=-1.436479e-02 (FD h1/h2: +9.449723e-02/+9.449113e-02)  XI = +2.462899
+  P  b1=2.0 b2=3.0 m=0.02 r=3.0 N=128: inner(J_ww-J_pp)=-1.682819e-02 outer=-3.186044e-02 (FD h1/h2: +1.092815e-01/+1.092486e-01)  XI = +3.844300
+  P  b1=2.0 b2=3.0 m=0.02 r=5.0 N=128: inner(J_ww-J_pp)=-1.682819e-02 outer=-6.229321e-02 (FD h1/h2: +1.377377e-01/+1.376672e-01)  XI = +6.247176
+  P  b1=0.6 b2=2.4 m=0.02 r=1.0 N=128: inner(J_ww-J_pp)=-1.665364e-02 outer=+7.186383e-04 (FD h1/h2: +1.092758e-01/+1.092709e-01)  XI = +1.258177
+  P  b1=1.0 b2=3.0 m=0.02 r=1.0 N=128: inner(J_ww-J_pp)=-1.665364e-02 outer=+3.080152e-03 (FD h1/h2: +1.185092e-01/+1.185049e-01)  XI = +1.071719
+== (ii) fermion loop x F(M^2)^2 on the Feynman integrand (both time orderings), continuum, m = 0.2 ==
+  w^2+p^2 = 0.09: J_f (w,0),(0,p),(diag) = -0.0103919484, -0.0103919484, -0.0103919484; spread 2.71e-16
+      without the instantaneous 1/(2E) pieces: 0.0045872357, 0.0045872357, 0.0045872357; spread 6.94e-17
+  w^2+p^2 = 0.36: J_f (w,0),(0,p),(diag) = -0.0081458560, -0.0081458560, -0.0081458560; spread 1.63e-15
+      without the instantaneous 1/(2E) pieces: 0.0068333281, 0.0068333281, 0.0068333281; spread 3.76e-16

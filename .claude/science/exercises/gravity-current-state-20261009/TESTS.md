@@ -3479,3 +3479,36 @@ Readings:
 - **VIABLE:** an explicit covariant smeared CQ theory passing the stated bounds, with prices named.
 - **EXCLUDED:** violates a stated bound or is internally inconsistent (refereed).
 - **OPEN:** otherwise.
+
+### C5 Round 7 referee results, part 2 (recorded 16:05Z)
+
+**R7-4 (N-type stress bridge) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.**
+- **Two decoupled species.** For the 09-14 weak N-type constraint pair, two decoupled nearest-neighbour scalar species admit an exact linear-order lapse/shift bridge with:
+  - J_E = c_s²P;
+  - symmetric stress;
+  - c′_s = −κa_s c_s²/J;
+  - a lattice 1/r limit;
+  - γ_s = c_s²/c_g².
+- **Universality and γ = 1 come only from imposing them:** equal couplings and a common matter–graviton cone. Energy-exchanging scattering forces both only under the regular collision-invariant hypotheses.
+- **Corrections:**
+  - 0.69 is a normalized differential acceleration; the symmetric Eötvös parameter is 0.513.
+  - T4 is not a compulsory tuning: RN L1's seagull cancels the uniform-strain part.
+- **Constraint preservation gives the formal i[H,D] = J and [H,J] = 0,** but not a self-adjoint, globally exponentiating D.
+- **The conditional box exclusion.** With those extra global assumptions, every proper box-supported scattering amplitude is excluded. So the R6-1/R7-1 box interaction cannot be a global exact stress bridge. R7-1 evades this by asserting only a local algebra up to a rapidity budget.
+- **The "only forward or exchange" theorem is not proved at theorem scope.**
+
+**R7-5 (loops in box field theory) — NOT CONFIRMED as PASS. Bounded FAIL for classes P and FF.**
+- **The bounded FAIL.** Point Yukawa and frame-fixed smooth vertices on the continuous-time Z³ box dispersion generate unsuppressed one-loop scalar speed terms: XI_P ≈ 1.7–1.94 and XI_FF ≈ 10.9. This is O(g²/16π²) dimension-4 LV.
+- **INV: a conditional spectral lemma only.** If continuum on-shell legs stay in the box and both pole orderings carry the same compact invariant-mass weight, the scalar and Dirac self-energies are exactly Lorentz-invariant spectral functions inside the momentum budget. But no explicit stable finite-per-site lattice field Hamiltonian realizing this was built.
+- **BT is a finite-sector mass-operator model, not a field theory.** "Every order" means only within the truncated sector.
+- **Invariant-mass vertices are an imposed functional custodial condition.** They are not derived and not shown to be radiatively closed.
+
+**R7-6 (three-body box Poincaré) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.**
+- **The pair-sum drift is real.** The d = 1 three-fermion pair-BT trimer's invariant-mass drift is robust. With the corrected ¼ prefactor it shrinks from δ ≈ 0.074 to about 0.019.
+- **So H needs a connected three-body term.** Given P = Q and a locally integrable self-adjoint boost, no boost completes the pair-sum H.
+- **P = Q is an extra physical identification**, not a consequence of the Lattice axiom.
+- **Sokolov packing is a formal route only.** The full lattice operator, its domain and its faster-than-power tails were not shown. The exp(−0.8√r) fit is only three points, and a power fit is better.
+
+**R7-3:** referee relaunched after a stream error (16:03Z).
+
+**R8-3 (covariant smeared CQ):** worker readings are "class 𝒞 (covariant smeared Gaussian CQ) EXCLUDED, internally inconsistent" (the trilemma: Newton plus finite radiation imply infinite vacuum excitation), and OPEN overall, with a preferred-frame route left. Referee running (launched 16:02Z).

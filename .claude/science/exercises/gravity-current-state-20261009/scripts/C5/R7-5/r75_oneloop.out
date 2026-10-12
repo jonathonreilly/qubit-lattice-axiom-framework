@@ -1,0 +1,57 @@
+== (A) Collins comparator: continuum fermion loop, f(|k|/Lam) on each propagator, Lam = 1 ==
+  f = exp(-x^2)         m=0.02    int x f'^2 = 0.500000  XI = +2.643749   Collins (4/3)(1+2I) = 2.666667   ratio +0.99141
+  f = exp(-x^2)         m=0.005   int x f'^2 = 0.500000  XI = +2.664589   Collins (4/3)(1+2I) = 2.666667   ratio +0.99922
+  f = 1/(1+x^2)^2       m=0.02    int x f'^2 = 0.400000  XI = +2.360794   Collins (4/3)(1+2I) = 2.400000   ratio +0.98366
+  f = 1/(1+x^2)^2       m=0.005   int x f'^2 = 0.400000  XI = +2.396264   Collins (4/3)(1+2I) = 2.400000   ratio +0.99844
+  f = exp(-x^4)         m=0.02    int x f'^2 = 1.000000  XI = +3.993356   Collins (4/3)(1+2I) = 4.000000   ratio +0.99834
+  f = exp(-x^4)         m=0.005   int x f'^2 = 1.000000  XI = +3.999582   Collins (4/3)(1+2I) = 4.000000   ratio +0.99990
+  scalar loop (g phi chi chibar, g dimensionful) with the same f: XI_s*Lam^2 is the dimensionless LV;
+    Lam=1.0: XI_s = +4.775058e+00  (units 1/mass^2)   XI_s*Lam^2 = +4.775058
+    Lam=2.0: XI_s = +1.424461e+00  (units 1/mass^2)   XI_s*Lam^2 = +5.697844
+    Lam=4.0: XI_s = +4.138517e-01  (units 1/mass^2)   XI_s*Lam^2 = +6.621627
+== (B) class P: point Yukawa vertex, box Dirac fermion (s = k, Wilson = 0 in box) ==
+  P  b1=2.0 b2=3.0 m=0.2 r=1.0 N=128: inner(J_ww-J_pp)=-1.527995e-02 outer=-1.248690e-02 (FD h1/h2: +6.820068e-02/+6.822002e-02)  XI = +2.192382
+  P  b1=2.0 b2=3.0 m=0.1 r=1.0 N=128: inner(J_ww-J_pp)=-1.646728e-02 outer=-8.111696e-03 (FD h1/h2: +6.640591e-02/+6.642712e-02)  XI = +1.940678
+  P  b1=2.0 b2=3.0 m=0.05 r=1.0 N=128: inner(J_ww-J_pp)=-1.678080e-02 outer=-6.214321e-03 (FD h1/h2: +6.559225e-02/+6.561456e-02)  XI = +1.815622
+  P  b1=2.0 b2=3.0 m=0.02 r=1.0 N=128: inner(J_ww-J_pp)=-1.686984e-02 outer=-5.186064e-03 (FD h1/h2: +6.514471e-02/+6.516772e-02)  XI = +1.741464
+  P  b1=2.0 b2=3.0 m=0.01 r=1.0 N=128: inner(J_ww-J_pp)=-1.688261e-02 outer=-4.862764e-03 (FD h1/h2: +6.500330e-02/+6.502656e-02)  XI = +1.716946
+  P  b1=2.0 b2=3.0 m=0.02 r=1.0 N=96: inner(J_ww-J_pp)=-1.686984e-02 outer=-5.061632e-03 (FD h1/h2: +6.505050e-02/+6.505084e-02)  XI = +1.731640
+  P  b1=2.0 b2=3.0 m=0.02 r=1.0 N=160: inner(J_ww-J_pp)=-1.686984e-02 outer=-5.202349e-03 (FD h1/h2: +6.515443e-02/+6.518237e-02)  XI = +1.742750
+  P  b1=1.5 b2=2.8 m=0.02 r=1.0 N=128: inner(J_ww-J_pp)=-1.682819e-02 outer=+4.414375e-03 (FD h1/h2: +8.272440e-02/+8.272984e-02)  XI = +0.980156
+  P  b1=2.6 b2=3.1 m=0.02 r=1.0 N=128: inner(J_ww-J_pp)=-1.682819e-02 outer=-7.147677e-02 (FD h1/h2: +1.613294e-01/+1.628218e-01)  XI = +6.972280
+  P  b1=2.0 b2=3.0 m=0.02 r=0.5 N=128: inner(J_ww-J_pp)=-1.682819e-02 outer=-4.365303e-02 (FD h1/h2: +1.625709e-01/+1.626275e-01)  XI = +4.775406
+  P  b1=1.0 b2=2.5 m=0.02 r=1.0 N=128: inner(J_ww-J_pp)=-1.682819e-02 outer=+3.601229e-03 (FD h1/h2: +7.640518e-02/+7.640549e-02)  XI = +1.044359
+  P  b1=2.6 b2=3.1 m=0.02 r=1.0 N=192: inner(J_ww-J_pp)=-1.682819e-02 outer=-6.833381e-02 (FD h1/h2: +1.595050e-01/+1.600084e-01)  XI = +6.724122
+== (C) class FF: frame-fixed box form factor chi(k)chi(k+p) inside the relativistic box (b1 = 2) ==
+  FF c=(1.0,1.9) b1=2.0 b2=3.0 m=0.05 r=1.0 N=128: inner(J_ww-J_pp)=-1.652414e-02 outer=-1.222097e-01 (FD h1/h2: +1.691650e-01/+1.692019e-01)  XI = +10.953989
+  FF c=(1.0,1.9) b1=2.0 b2=3.0 m=0.02 r=1.0 N=128: inner(J_ww-J_pp)=-1.682819e-02 outer=-1.220801e-01 (FD h1/h2: +1.693125e-01/+1.693494e-01)  XI = +10.967763
+  FF c=(1.0,1.9) b1=2.0 b2=3.0 m=0.01 r=1.0 N=128: inner(J_ww-J_pp)=-1.687217e-02 outer=-1.220611e-01 (FD h1/h2: +1.693333e-01/+1.693703e-01)  XI = +10.969733
+  FF c=(1.0,1.9) b1=2.0 b2=3.0 m=0.02 r=1.0 N=96: inner(J_ww-J_pp)=-1.682819e-02 outer=-1.225948e-01 (FD h1/h2: +1.696760e-01/+1.698263e-01)  XI = +11.008394
+  FF c=(1.0,1.9) b1=2.0 b2=3.0 m=0.02 r=1.0 N=160: inner(J_ww-J_pp)=-1.682819e-02 outer=-1.221791e-01 (FD h1/h2: +1.693675e-01/+1.694374e-01)  XI = +10.975580
+  FF c=(0.5, 0.95) b1=2.0 b2=3.0 m=0.01 r=1.0 N=160: inner(J_ww-J_pp)=-1.676625e-02 outer=-1.215800e-01 (FD h1/h2: +1.873652e-01/+1.873315e-01)  XI = +10.923381
+  FF c=(0.25, 0.475) b1=2.0 b2=3.0 m=0.01 r=1.0 N=160: inner(J_ww-J_pp)=-1.641043e-02 outer=-1.047826e-01 (FD h1/h2: +1.790747e-01/+1.722574e-01)  XI = +9.569016
+== (D) INV class: scalar loop, F(M^2) of the on-shell pair invariant mass, both time orderings ==
+  s = E^2 - p^2 = 0.0:
+    p=0.0  Pi_full = 0.010787927467  (diff +0.00e+00)   Pi_one-ordering = 0.01078793 (diff +0.00e+00)
+    p=0.3  Pi_full = 0.010787927467  (diff -2.26e-17)   Pi_one-ordering = 0.01482526 (diff +4.04e-03)
+    p=0.6  Pi_full = 0.010787927467  (diff -3.04e-16)   Pi_one-ordering = 0.01742431 (diff +6.64e-03)
+    p=0.9  Pi_full = 0.010787927468  (diff +2.53e-13)   Pi_one-ordering = 0.01890202 (diff +8.11e-03)
+  s = E^2 - p^2 = 0.09:
+    p=0.0  Pi_full = 0.013606232586  (diff +0.00e+00)   Pi_one-ordering = 0.01951240 (diff +0.00e+00)
+    p=0.3  Pi_full = 0.013606232586  (diff -6.94e-18)   Pi_one-ordering = 0.02111807 (diff +1.61e-03)
+    p=0.6  Pi_full = 0.013606232586  (diff -2.53e-16)   Pi_one-ordering = 0.02323248 (diff +3.72e-03)
+    p=0.9  Pi_full = 0.013606232586  (diff +2.80e-13)   Pi_one-ordering = 0.02459744 (diff +5.09e-03)
+  s = E^2 - p^2 = 0.15:
+    p=0.0  Pi_full = 0.018505420560  (diff +0.00e+00)   Pi_one-ordering = 0.02989049 (diff +0.00e+00)
+    p=0.3  Pi_full = 0.018505420560  (diff +7.63e-17)   Pi_one-ordering = 0.03121279 (diff +1.32e-03)
+    p=0.6  Pi_full = 0.018505420560  (diff +3.12e-17)   Pi_one-ordering = 0.03312890 (diff +3.24e-03)
+    p=0.9  Pi_full = 0.018505420560  (diff +3.01e-13)   Pi_one-ordering = 0.03443206 (diff +4.54e-03)
+  largest |k| of either leg on supp F for |p| <= 0.9: 1.3304  (box edge b1 = 2.0 => inside)
+== (E) INV on the lattice: 3D BZ sum with lattice eps (doubler-free) vs continuum ==
+  min w(k) on |k| >= b1: 4.0000 (b1^2 = 4.0)
+  s = -0.04, p = 0.0: Pi_lattice = 0.0099843706
+  s = -0.04, p = 0.3: Pi_lattice = 0.0099843634
+  s = -0.04, p = 0.6: Pi_lattice = 0.0099843690
+  spread over p: 7.20e-09
+  continuum (spherical quadrature) value at s = -0.04: 0.0099843813; lattice - continuum = -1.06e-08
+runtime 10.4s

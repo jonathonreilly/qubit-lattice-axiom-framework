@@ -1,0 +1,21 @@
+== (a) BT mass-squared law with pair creation: exact diagonalisation of the {phi} + {chi chibar} sector ==
+  g=0.1 L=400: M_phys^2 = E^2-P^2 over P in [0,0.7] (8 pts): mean 0.221024027540 spread 8.19e-09; bare mu^2 = 0.25; max |k| of a leg on supp F 0.895 < B=2.6
+  g=0.1 L=800: M_phys^2 = E^2-P^2 over P in [0,0.7] (8 pts): mean 0.221024027913 spread 1.33e-11; bare mu^2 = 0.25; max |k| of a leg on supp F 0.895 < B=2.6
+  g=0.1 L=1600: M_phys^2 = E^2-P^2 over P in [0,0.7] (8 pts): mean 0.221024027913 spread 1.69e-15; bare mu^2 = 0.25; max |k| of a leg on supp F 0.915 < B=2.6
+  g=0.3 L=400: M_phys^2 = E^2-P^2 over P in [0,0.7] (8 pts): mean 0.089088468516 spread 4.43e-08; bare mu^2 = 0.25; max |k| of a leg on supp F 0.895 < B=2.6
+  g=0.3 L=800: M_phys^2 = E^2-P^2 over P in [0,0.7] (8 pts): mean 0.089088470754 spread 7.13e-11; bare mu^2 = 0.25; max |k| of a leg on supp F 0.895 < B=2.6
+  g=0.3 L=1600: M_phys^2 = E^2-P^2 over P in [0,0.7] (8 pts): mean 0.089088470755 spread 9.05e-15; bare mu^2 = 0.25; max |k| of a leg on supp F 0.915 < B=2.6
+  g=0.38 L=400: M_phys^2 = E^2-P^2 over P in [0,0.7] (8 pts): mean 0.028723572107 spread 6.11e-08; bare mu^2 = 0.25; max |k| of a leg on supp F 0.895 < B=2.6
+  g=0.38 L=800: M_phys^2 = E^2-P^2 over P in [0,0.7] (8 pts): mean 0.028723575291 spread 9.82e-11; bare mu^2 = 0.25; max |k| of a leg on supp F 0.895 < B=2.6
+  g=0.38 L=1600: M_phys^2 = E^2-P^2 over P in [0,0.7] (8 pts): mean 0.028723575293 spread 1.22e-14; bare mu^2 = 0.25; max |k| of a leg on supp F 0.915 < B=2.6
+== (b) instant-form Lee vertex (one time ordering, no Z-graph), same invariant F: exact diagonalisation ==
+  g=0.3 L=1600: E^2-P^2 at P = 0.000:0.17449919, 0.196:0.17266686, 0.393:0.16890281, 0.589:0.16542649
+     spread 1.046e-02  (mass shift mu^2 - mean = 8.032e-02)
+  g=1.0 L=1600: E^2-P^2 at P = 0.000:0.01073471, 0.196:-0.01202329, 0.393:-0.05808015, 0.589:-0.09979577
+     spread 1.270e-01  (mass shift mu^2 - mean = 2.982e-01)
+== (c)/(d) O(g^2) instant form WITH the Z-graph: 2 om dE(P) must be P-independent for Lorentz invariance ==
+  inv   L=1600: 2om dE (with Z) spread over P in [0,0.7]: 8.127e-14 (mean -1.634433e+00);  without Z-graph: spread 1.045e-01
+  inv   L=3200: 2om dE (with Z) spread over P in [0,0.7]: 2.442e-15 (mean -1.634433e+00);  without Z-graph: spread 9.178e-02
+  point L=1600: 2om dE (with Z) spread over P in [0,0.7]: 1.393e+00 (mean -2.524195e+00);  without Z-graph: spread 1.140e+00
+  point L=3200: 2om dE (with Z) spread over P in [0,0.7]: 1.392e+00 (mean -2.598004e+00);  without Z-graph: spread 1.138e+00
+    P-dependence of the point-vertex result (with Z): 0.00:-3.319828e+00, 0.10:-3.208117e+00, 0.20:-2.966600e+00, 0.30:-2.611686e+00, 0.40:-2.194566e+00, 0.50:-1.957061e+00, 0.60:-1.928168e+00

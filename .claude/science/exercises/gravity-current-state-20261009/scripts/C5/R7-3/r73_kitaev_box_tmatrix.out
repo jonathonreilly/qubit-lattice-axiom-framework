@@ -1,0 +1,18 @@
+Kitaev A_z phase Jx=0.25 Jy=0.25 Jz=1.00: eps min 1.0000 at k=(0.000,0.000), max 3.0000 (gap 2(Jz-Jx-Jy)=1.0000)
+zone-edge band: min eps on k1=pi line = 2.0000 (zone-edge quasiparticles exist at every energy >= this)
+
+box a=0.49pi, lam=3.0, L=240, eta=0.05, shell |E2-E|<0.01
+K=( 0.30,-0.20) E=2.30 shell=  148 classes=[(np.int64(0), np.int64(0))] | W_K: nonzero= 21904 non-forward nonzero= 21756 max|T|nf=2.709e+00 umklapp=0 max|dQ|=4.4e-16 | analytic chi=1: umklapp=0 frac=0.000
+K=( 0.00, 0.00) E=2.40 shell=  170 classes=[(np.int64(0), np.int64(0))] | W_K: nonzero= 28900 non-forward nonzero= 28560 max|T|nf=3.408e+00 umklapp=0 max|dQ|=0.0e+00 | analytic chi=1: umklapp=0 frac=0.000
+K=( 0.90, 0.40) E=2.70 shell=  205 classes=[(np.int64(0), np.int64(0))] | W_K: nonzero= 37518 non-forward nonzero= 37336 max|T|nf=6.283e+00 umklapp=0 max|dQ|=2.2e-16 | analytic chi=1: umklapp=0 frac=0.000
+K=( 3.14, 0.00) E=3.00 shell=  258 classes=[(np.int64(-1), np.int64(0)), (np.int64(0), np.int64(0))] | W_K: nonzero=     0 non-forward nonzero=     0 max|T|nf=0.000e+00 umklapp=0 max|dQ|=0.0e+00 | analytic chi=1: umklapp=24960 frac=0.496
+
+mixed shells (box pairs + pairs of another Q class on one (K,E) shell), L=120 scan: 134
+  K=(-2.62,-2.62) E=4.00 box=[(np.int64(0), np.int64(0))] other=[(np.int64(0), np.int64(1)), (np.int64(1), np.int64(0))] | W_K: nonzero=0 non-forward=0 umklapp=0 max|dQ|=0.0e+00 | analytic: umklapp=4548672 frac=0.665
+  K=(-2.62,-2.09) E=3.70 box=[(np.int64(0), np.int64(0))] other=[(np.int64(1), np.int64(0))] | W_K: nonzero=0 non-forward=0 umklapp=0 max|dQ|=0.0e+00 | analytic: umklapp=1535760 frac=0.373
+  K=(-2.62,-1.57) E=3.50 box=[(np.int64(0), np.int64(0))] other=[(np.int64(1), np.int64(0))] | W_K: nonzero=24600 non-forward=24304 umklapp=0 max|dQ|=8.9e-16 | analytic: umklapp=572448 frac=0.417
+  K=(-2.62,-1.05) E=3.20 box=[(np.int64(0), np.int64(0))] other=[(np.int64(1), np.int64(0))] | W_K: nonzero=0 non-forward=0 umklapp=0 max|dQ|=0.0e+00 | analytic: umklapp=0 frac=0.000
+  K=(-2.62,-1.05) E=3.30 box=[(np.int64(0), np.int64(0))] other=[(np.int64(1), np.int64(0))] | W_K: nonzero=7520 non-forward=7360 umklapp=0 max|dQ|=8.9e-16 | analytic: umklapp=230160 frac=0.396
+
+exact K=0 process (pi/4,0),(-pi/4,0) -> (0,pi/4),(0,-pi/4): E_in-E_out=0.0e+00, g_in=1.414214 (sqrt2=1.414214), g_out=0.424264, Born lam*g_out*g_in=1.8000
+  Q_in = Q_out = (0,0) exactly; the process is neither forward nor exchange.

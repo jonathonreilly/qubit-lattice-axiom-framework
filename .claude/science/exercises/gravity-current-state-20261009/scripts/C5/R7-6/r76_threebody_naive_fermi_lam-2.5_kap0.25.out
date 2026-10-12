@@ -1,0 +1,10 @@
+R7-6 script 1: three-particle sector of the pairwise BT box law; sym = fermi, m = 0.30, kappa = 0.25, lam = -2.50
+  leg box |k| < 1.00 (3 legs, no umklapp), interaction legs < 1.00, pair plateau |P12| <= 0.80, cut at 1.00
+L = 240: dimer mass M_b = 0.5365941600 (2m = 0.60); 2+1 threshold at P=0: 0.8365941600
+  P = -0.00000 dim =   722  E0 = 0.774346111947  sqrt(E0^2-P^2) = 0.774346111947  [2+1 thr 0.836594, bound by 6.22e-02]  shell wt 0.0e+00  max|k| 0.471  max|P12| 0.471  herm 2e-16
+  P = +0.10472 dim =   719  E0 = 0.780990317402  sqrt(E0^2-P^2) = 0.773937755097  [2+1 thr 0.843123, bound by 6.21e-02]  shell wt 0.0e+00  max|k| 0.524  max|P12| 0.550  herm 2e-16
+  P = +0.20944 dim =   711  E0 = 0.800645174780  sqrt(E0^2-P^2) = 0.772766321373  [2+1 thr 0.862412, bound by 6.18e-02]  shell wt 0.0e+00  max|k| 0.576  max|P12| 0.602  herm 2e-16
+  P = +0.28798 dim =   702  E0 = 0.823474891939  sqrt(E0^2-P^2) = 0.771478324463  [2+1 thr 0.884772, bound by 6.13e-02]  shell wt 0.0e+00  max|k| 0.602  max|P12| 0.654  herm 2e-16
+  P = +0.39270 dim =   685  E0 = 0.863800007896  sqrt(E0^2-P^2) = 0.769374996263  [2+1 thr 0.924177, bound by 6.04e-02]  shell wt 0.0e+00  max|k| 0.654  max|P12| 0.733  herm 1e-16
+  P = +0.49742 dim =   662  E0 = 0.914193198572  sqrt(E0^2-P^2) = 0.767022623586  [2+1 thr 0.973301, bound by 5.91e-02]  shell wt 1.3e-16  max|k| 0.707  max|P12| 0.812  herm 1e-16
+  L = 240: trimer invariant-mass spread over P in [0, 0.497]: 7.323e-03   (M(P_max) - M(0) = -7.323e-03)   [1 s]

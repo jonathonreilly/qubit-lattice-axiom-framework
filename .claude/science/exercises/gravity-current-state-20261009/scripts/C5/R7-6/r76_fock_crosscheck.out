@@ -1,0 +1,6 @@
+L = 90 P = -0.00000 : Fock build E0 = 0.735026984009 (dim 98, herm 8e-17) | script-1 build E0 = 0.735026984009 (dim 98) | diff 0.0e+00
+L = 90 P = +0.20944 : Fock build E0 = 0.762276349168 (dim 97, herm 8e-17) | script-1 build E0 = 0.762276349168 (dim 97) | diff -5.6e-16
+L = 90 P = +0.41888 : Fock build E0 = 0.838829032322 (dim 92, herm 7e-17) | script-1 build E0 = 0.838829032322 (dim 92) | diff -4.4e-16
+L = 120 P = -0.00000 : Fock build E0 = 0.733985093443 (dim 181, herm 7e-17) | script-1 build E0 = 0.733985093443 (dim 181) | diff -1.1e-16
+L = 120 P = +0.20944 : Fock build E0 = 0.761397783588 (dim 178, herm 7e-17) | script-1 build E0 = 0.761397783588 (dim 178) | diff 1.1e-16
+L = 120 P = +0.41888 : Fock build E0 = 0.838838770410 (dim 170, herm 7e-17) | script-1 build E0 = 0.838838770410 (dim 170) | diff 6.7e-16

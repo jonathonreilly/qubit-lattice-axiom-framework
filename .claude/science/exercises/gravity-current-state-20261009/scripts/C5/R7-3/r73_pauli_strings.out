@@ -1,0 +1,7 @@
+(a) path independence mod W_p: 200/200 pairs of random paths differ by a product of plaquettes (#plaquettes=66, GF2 rank 66)
+(b) commutation = Majorana-bilinear rule: 3000/3000 (overlap counts 0/1/2: {0: 897, 1: 1222, 2: 881})
+(c) strings commute with every W_p: 300/300
+(d) number of W_p flipped by a single s^z_j (interior A sites): [2]
+    string (1,2)->(3, 2): Pauli weight 3
+    string (1,2)->(7, 2): Pauli weight 7
+    string (1,2)->(11, 2): Pauli weight 11

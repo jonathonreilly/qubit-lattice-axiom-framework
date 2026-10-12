@@ -4505,3 +4505,12 @@ Readings:
 - **PASS:** an explicit local Hamiltonian law with an exact supercharge, Ward identity, doubler-free spin-½ photino, and a one-loop c_e − c_γ that vanishes or is protected, checked.
 - **FAIL:** a refereed no-go in the N=4 Kähler–Dirac class (locality, spin, or the split).
 - **INCONCLUSIVE:** otherwise.
+- **R12-2 (site creation and Λ):** worker reading OPEN.
+  - The F-law reads only the time variation of energy density (new price P-T). It gives untuned Λ_eff = 0 and exact Friedmann expansion in the homogeneous sector.
+  - Open issues:
+    - redshift requires ordered (non-Poisson) creation;
+    - bound regions need site freezing;
+    - a true Λ is invisible, so dark energy must be dynamical.
+  - Bounded sub-results: the curvature-kick class is EXCLUDED, and random-time insertion matches the Chandra-excluded foam.
+
+  Referee running.

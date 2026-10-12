@@ -1,0 +1,28 @@
+# Rules through a vacuum step. kappa/3 = 1; V0 = 1.0 ; transition at a = 1, width 0.15
+# X = H^2 - rho_nc ; Lambda-like if X -> const; curvature-like if X a^2 -> const
+
+## Delta = 0.3  (final vacuum = 0.7)
+A(rho_ref=1.00): FROZEN (c -> 0, no site destruction) at u = 1.20, rho_nc there = 2.6343e-01
+A(rho_ref=0.70): late X = H^2 - rho_nc = -0.000000 (Lambda-like, = V0-Delta-rho_ref = +0.000000)
+E: max |H^2/rho_nc - 1| for 1.5 < u <= 8 = 2.041e-02; X/rho_nc at u=8: -2.139e-03 (rho_nc(u=8) = 1.926e-11; a Lambda-like X would give X/rho_nc ~ 1e10)
+   pre-transition max |H^2/rho_nc - 1| = 3.438e-04  (mixture estimator error; P exact, E Cauchy-Schwarz low)
+P: max |H^2/rho_nc - 1| for 1.5 < u <= 8 = 8.572e-08; X/rho_nc at u=8: -1.678e-16 (rho_nc(u=8) = 1.926e-11; a Lambda-like X would give X/rho_nc ~ 1e10)
+   pre-transition max |H^2/rho_nc - 1| = 6.643e-09  (mixture estimator error; P exact, E Cauchy-Schwarz low)
+U: first integral C = H^2 - rho_tot at u=3.0: -0.700000164 (initial -0.700000000); implied late X = rho_v,final + C = -0.000000  (<0 => freeze, >0 => de Sitter)
+GRb: bare Lambda/3 = -0.700; implied late X = rho_v,final + Lambda_b/3 = +0.000000
+R: FROZEN (H -> 0, no site destruction) at u = 2.417. X*a^2(u=-1.0)=-0.0000; X*a^2(u=1.0)=-0.2859; X*a^2(u=1.5)=-0.2859; expected kick -Delta*a_T^2 = -0.30
+F: X a^2 conserved: X*a^2 at u=-2: 1.8316e-05, at u=9.0: 1.8316e-05 (no kick; H^2 = rho_P + X, rho_P exact after the transient)
+
+## Delta = 0.7  (final vacuum = 0.30000000000000004)
+A(rho_ref=1.00): FROZEN (c -> 0, no site destruction) at u = 1.00, rho_nc there = 5.8930e-01
+A(rho_ref=0.70): FROZEN (c -> 0, no site destruction) at u = 1.10, rho_nc there = 3.9677e-01
+E: max |H^2/rho_nc - 1| for 1.5 < u <= 8 = 2.041e-02; X/rho_nc at u=8: -2.172e-03 (rho_nc(u=8) = 1.927e-11; a Lambda-like X would give X/rho_nc ~ 1e10)
+   pre-transition max |H^2/rho_nc - 1| = 3.438e-04  (mixture estimator error; P exact, E Cauchy-Schwarz low)
+P: max |H^2/rho_nc - 1| for 1.5 < u <= 8 = 1.972e-07; X/rho_nc at u=8: +1.677e-16 (rho_nc(u=8) = 1.927e-11; a Lambda-like X would give X/rho_nc ~ 1e10)
+   pre-transition max |H^2/rho_nc - 1| = 1.550e-08  (mixture estimator error; P exact, E Cauchy-Schwarz low)
+U: first integral C = H^2 - rho_tot at u=1.1: -0.700000415 (initial -0.700000000); implied late X = rho_v,final + C = -0.400000  (<0 => freeze, >0 => de Sitter)
+GRb: bare Lambda/3 = -0.700; implied late X = rho_v,final + Lambda_b/3 = -0.400000
+R: FROZEN (H -> 0, no site destruction) at u = 2.023. X*a^2(u=-1.0)=-0.0000; X*a^2(u=1.0)=-0.6047; X*a^2(u=1.5)=-0.6047; expected kick -Delta*a_T^2 = -0.70
+F: X a^2 conserved: X*a^2 at u=-2: 1.8316e-05, at u=9.0: 1.8316e-05 (no kick; H^2 = rho_P + X, rho_P exact after the transient)
+
+# D-rule feedback map H -> (H H_F^2)^(1/3): derivative at fixed point = 1/3

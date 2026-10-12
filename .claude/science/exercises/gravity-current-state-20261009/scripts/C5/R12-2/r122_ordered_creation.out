@@ -1,0 +1,6 @@
+Phi=1.0: mean counts  random 40000.0  quasi-periodic 40000.0  Yule 40004.0
+          std across windows: random 0.00  quasi-periodic 0.000  Yule 199.28   (sqrt(mean) = 200.0; KH bound V(D)*O(log n) ~ 20)
+Phi=3.3: mean counts  random 208053.1  quasi-periodic 208000.0  Yule 197080.8
+          std across windows: random 499.28  quasi-periodic 7.386  Yule 1213.23   (sqrt(mean) = 456.1; KH bound V(D)*O(log n) ~ 79)
+Phi=6.6: mean counts  random 2048230.2  quasi-periodic 2048000.0  Yule 1940204.9
+          std across windows: random 4429.02  quasi-periodic 63.357  Yule 13932.35   (sqrt(mean) = 1431.1; KH bound V(D)*O(log n) ~ 634)

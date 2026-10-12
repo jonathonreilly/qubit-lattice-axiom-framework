@@ -1,0 +1,54 @@
+## (a) Lemma CR: fixed sites need |W| >= H R on a ball of proper radius R (cosmic slicing)
+  z =     0.5: proper distance at emission   1297.35 Mpc, H(z) R =   0.386  (timelike fixed sites need < 1)
+  z =     1.0: proper distance at emission   1697.90 Mpc, H(z) R =   0.683  (timelike fixed sites need < 1)
+  z =     1.6: proper distance at emission   1792.88 Mpc, H(z) R =   1.003  (timelike fixed sites need < 1)
+  z =     3.0: proper distance at emission   1626.70 Mpc, H(z) R =   1.665  (timelike fixed sites need < 1)
+  z =  1089.9: proper distance at emission     12.73 Mpc, H(z) R =  66.287  (timelike fixed sites need < 1)
+  comoving distance to last scattering 13892 Mpc; today H0*D = 3.14
+  creation rate needed: 3H0 = 6.582e-18 /s per site = 3.548e-61 per site per Planck time
+
+## (b) local Z^3-preserving insertion by dislocation climb: line density rho_L = 3H/(a v)
+  today: climb speed 1 c -> line density 1.359e+09 m^-2, mean line spacing 2.713e-05 m
+  today: climb speed 0.001 c -> line density 1.359e+12 m^-2, mean line spacing 8.579e-07 m
+  BBN (T~1 MeV, H~0.7/s RECALLED): climb speed 1 c -> line density 4.335e+26 m^-2, mean line spacing 4.803e-14 m
+  BBN (T~1 MeV, H~0.7/s RECALLED): climb speed 0.001 c -> line density 4.335e+29 m^-2, mean line spacing 1.519e-15 m
+
+## (c) Poisson (Yule) insertion noise along a column; phase noise across a wavefront
+  Yule MC: N0=400, e^Ht=2: mean 799.9 (theory 800); var 797 (theory N0 e^Ht (e^Ht-1) = 800)
+  source z=1.0: column at emission N0 = 3.24e+60 sites; std of final length 4.11e-05 m (sqrt(l_P D_C) = 4.11e-05 m)
+      radio 1 cm     : phase std 2 pi dL/lambda = 2.59e-02 rad
+      optical 500 nm : phase std 2 pi dL/lambda = 5.17e+02 rad
+      X-ray 1 keV    : phase std 2 pi dL/lambda = 2.09e+05 rad
+      gamma 1 GeV    : phase std 2 pi dL/lambda = 2.09e+11 rad
+  source z=4.0: column at emission N0 = 2.80e+60 sites; std of final length 1.21e-04 m (sqrt(l_P D_C) = 6.05e-05 m)
+      radio 1 cm     : phase std 2 pi dL/lambda = 7.60e-02 rad
+      optical 500 nm : phase std 2 pi dL/lambda = 1.52e+03 rad
+      X-ray 1 keV    : phase std 2 pi dL/lambda = 6.13e+05 rad
+      gamma 1 GeV    : phase std 2 pi dL/lambda = 6.13e+11 rad
+  X-ray: per-column std must be < lambda/(2 pi l_P) = 1.22e+25 sites; Poisson gives 2.55e+30 -> variance suppression needed 2.30e-11 of Poisson
+
+## (d) equation-of-state rule H^2 = (rho+p)/(1+cs2) on mixtures (kappa/3 = 1)
+  estimator - S^2/sum(1+w)^2 rho = 0 (0 => estimator = S^2/D2 <= sum rho by Cauchy-Schwarz)
+  radiation+dust: min estimator/true = 0.97959 at rho_m/rho_r = 1.333  (H low by 1.03%)
+  dust + DE(w=-0.95), Om=0.31: estimator/true today = 0.381
+  dust + DE(w=-0.90), Om=0.31: estimator/true today = 0.453
+  dust + DE(w=-0.75), Om=0.31: estimator/true today = 0.659
+  dust + DE(w=-0.50), Om=0.31: estimator/true today = 0.889
+  dust + DE(w=+0.00), Om=0.31: estimator/true today = 1.000
+  LCDM target via E-rule (start S = rho_m at z=999): (rho+p)_D today = 0.279 rho_c0, change in rho_D since z=999 = -6.887 rho_c0 (negative => needs rho_D,i >= 6.887 rho_c0 early)
+
+## (e) phase-transition sizes (inputs RECALLED)
+  rho_Lambda = 2.560e-47 GeV^4; Delta V_EW = m_H^2 v^2/8 = 1.182e+08 GeV^4 = 4.62e+54 rho_Lambda
+  rho_r(T=160 GeV) = 2.302e+10 GeV^4; Delta/rho = 5.135e-03
+  R-law kick: |Omega_K| at EW = 5.14e-03; grown to today |Omega_K0| = 7.58e+23 (DESI DR2 10^3 Omega_K = 2.3 +- 1.1)
+  R-law closed-radiation freeze: a_max/a_T = sqrt(rho_r/Delta) = 14.0 -> T_freeze ~ 11.5 GeV
+  A/U rules mistuned by Delta_EW: freeze (or Lambda-domination) when rho_r ~ Delta: T ~ 45 GeV; de Sitter branch H = 2.58e-15 GeV = 1/(2.55e-10 s)
+
+## (f) cubic covariance -> isotropic mean expansion tensor (Schur, O_h on symmetric rank 2)
+  |O_h| = 48; group average of random symmetric A = trace/3 * I: residual 8.9e-16
+
+## (g) grid zero-point under the equation-of-state rule (R11-3 numbers, refereed CONFIRMED WITH CORRECTIONS)
+  L, m=1: (rho+p)_vac = 2.0683 /a^4 -> H >= sqrt(8 pi/3 (rho+p)/(1+cs2)) ~ 2.94-4.16 / t_P per real scalar
+  G, m=1: (rho+p)_vac = 1.8492 /a^4 -> H >= sqrt(8 pi/3 (rho+p)/(1+cs2)) ~ 2.78-3.94 / t_P per real scalar
+  NN, m=1: (rho+p)_vac = 1.3991 /a^4 -> H >= sqrt(8 pi/3 (rho+p)/(1+cs2)) ~ 2.42-3.42 / t_P per real scalar
+  finite-step U ratio Delta p/Delta rho in [-0.833, -0.175] across L-G (R11-3 referee finding 5): Delta(rho+p) != 0 for every profile

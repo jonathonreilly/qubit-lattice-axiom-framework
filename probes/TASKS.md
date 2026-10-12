@@ -51,3 +51,8 @@ Ten focused J units: [work map](review-science-20261004.md), [exact task definit
 ## Remaining OpenAI-math bridge work - 2026-10-08
 
 One focused J task selects and advances a concrete remaining interface from the reviewed portfolio: [task definition and pinned source evidence](tasks/review-science-20261008.json). The five canonical milestones landed on main. This is new mathematical work, not a PR review or snapshot recovery task. No workers are launched by this entry.
+
+
+## Excluded-walk preparation work - 2026-10-12
+
+One J derivation task recovers two auxiliary leakage/state-comparison lemmas and advances one precise preparation or canonical-current interface: [task and pinned sources](tasks/review-science-20261012.json). This is mathematical work, not a PR snapshot or audit verdict.

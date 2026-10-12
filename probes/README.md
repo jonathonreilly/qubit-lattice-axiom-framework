@@ -100,3 +100,6 @@ The [review-drain recovery bundle](work/deferred-science-20260924/README.md) pre
 
 
 [Remaining OpenAI-math bridge work](tasks/review-science-20261008.json) is enrolled in the existing J queue after the six-PR landing. Advance one concrete proof interface; the pinned historical reports are context, not accepted science or duplicate-verification gates.
+
+
+[Excluded-walk preparation work](tasks/review-science-20261012.json) joins the existing maximum-thinking J queue. Recover the useful auxiliary lemmas, then advance a precise observable or preparation bound; compare current main and active claims first. No workers are launched by this catalog addition.

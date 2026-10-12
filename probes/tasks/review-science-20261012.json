@@ -1,0 +1,43 @@
+[
+  {
+    "id": "J:derive:review-20261012-excluded-walk-preparation:a1",
+    "problem": "review-20261012-excluded-walk-preparation",
+    "title": "Advance excluded-walk preparation and observable control",
+    "type": "judgment",
+    "lane": "review-science-20261012",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Recover and advance the two auxiliary excluded-walk results at the pinned sources: the explicit high-momentum time-averaged leakage lower bound for globally projected positive-band packets, and the normalized cone-packet counterexample to operator-norm state convergence. Check their complete actual arguments and match the canonical projected-band and memory results on main and the boost source at PR9484 head 773321aa8fdfccc05248682dfc96bf94215034a2 (or its reviewed successor) before choosing work. First make the useful leakage/state-comparison lemmas self-contained with a disjoint check, preserving the canonical-current cancellation. Then address ONE precise remaining interface: canonical-current response for normalizable positive-band preparations with generic K of order lambda at inverse-energy time, or a sharp preparation class under which state comparison is uniform. State exact domain, time scale, norm or observable and global normalization. The existing fixed-preparation boost residual results do not themselves settle canonical-current response or uniform state convergence. Do not reproduce already-landed limits, mistake momentum leakage for a current defect, assert universal decay, or revive a PR snapshot. A failed candidate must leave an exact counterexample or substantive checked derivation with its first unresolved obligation.",
+    "source_paths": [
+      ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md.gz",
+      ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md.gz"
+    ],
+    "source_branch": {
+      "name": "physics-loop/toe-projected-band-current-20261011",
+      "head": "d8480b5a6e04102ff076b3dd6f817a2d43f20252",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_LONG_TIME_BAND_PROBE.md.gz",
+        "sha256": "318462285c6588f40e5cb582e3d56b5c9e9220c849bd92bca112b579e3864290",
+        "commit": "d8480b5a6e04102ff076b3dd6f817a2d43f20252"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-projected-band-current-20261011/evidence/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md.gz",
+        "sha256": "305fc1d116a646f29a1c35379609adca1ee9fe6ae50f82a32f01a5043ada6af1",
+        "commit": "d8480b5a6e04102ff076b3dd6f817a2d43f20252"
+      }
+    ],
+    "landed_main": "72a7cf00adf0756a215a247d344df21d06a1d582",
+    "related_tasks": [],
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation with the first unresolved step; retrieval, review summaries and already-known mismatches are not completion.",
+    "what": "Recover and advance the two auxiliary excluded-walk results at the pinned sources: the explicit high-momentum time-averaged leakage lower bound for globally projected positive-band packets, and the normalized cone-packet counterexample to operator-norm state convergence. Check their complete actual arguments and match the canonical projected-band and memory results on main and the boost source at PR9484 head 773321aa8fdfccc05248682dfc96bf94215034a2 (or its reviewed successor) before choosing work. First make the useful leakage/state-comparison lemmas self-contained with a disjoint check, preserving the canonical-current cancellation. Then address ONE precise remaining interface: canonical-current response for normalizable positive-band preparations with generic K of order lambda at inverse-energy time, or a sharp preparation class under which state comparison is uniform. State exact domain, time scale, norm or observable and global normalization. The existing fixed-preparation boost residual results do not themselves settle canonical-current response or uniform state convergence. Do not reproduce already-landed limits, mistake momentum leakage for a current defect, assert universal decay, or revive a PR snapshot. A failed candidate must leave an exact counterexample or substantive checked derivation with its first unresolved obligation. Owner-requested scientific work transfer. Use the existing maximum-thinking J campaign and claim.py ownership protocol; inspect completed attempts and active claims to avoid duplication. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py, and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a demonstrated new result or defect. Follow ordinary cross-model confirmation; this catalog addition starts no workers, changes no budgets and creates no PR snapshots or audit authority."
+  }
+]

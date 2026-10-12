@@ -1,0 +1,71 @@
+{
+  "base": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "commit": "039198fed41d5599341bbcbc7908dcfae1215421",
+  "tree": "57d24afbe33c77b915df34783db40e6f2969fa89",
+  "worktree": "/private/tmp/local-vector-final-validation-20261012",
+  "driver_pid": 33599,
+  "started_at": "2026-10-12T23:02:41.630666+00:00",
+  "scope": "Exact final source/evidence package; mechanical validation only, no audit or landing.",
+  "unit_record_sha256": "b9e1ae26ede1360b3bd1bd98a20594d65d9b91b3361c658a57c32692e1c886d1",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "commands": [
+    [
+      "bash",
+      "docs/audit/scripts/run_pipeline.sh",
+      "--stage-citation-manifest"
+    ],
+    [
+      "/usr/local/bin/python3",
+      "docs/audit/scripts/audit_lint.py",
+      "--strict"
+    ],
+    [
+      "/usr/local/bin/python3",
+      "docs/audit/scripts/check_changed_audit_evidence.py",
+      "--base",
+      "origin/main",
+      "--include-worktree",
+      "--json"
+    ]
+  ],
+  "results": [
+    {
+      "command": [
+        "bash",
+        "docs/audit/scripts/run_pipeline.sh",
+        "--stage-citation-manifest"
+      ],
+      "exit": 0,
+      "reason": null,
+      "log": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/vector/milestone_validation/gate-1_v1.log",
+      "sha256": "ec37b1ef819bed4d0a71440bc7315602cb60a207f42409ce3ab802cfef31cc0f"
+    },
+    {
+      "command": [
+        "/usr/local/bin/python3",
+        "docs/audit/scripts/audit_lint.py",
+        "--strict"
+      ],
+      "exit": 0,
+      "reason": null,
+      "log": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/vector/milestone_validation/gate-2_v1.log",
+      "sha256": "2a2399cdfc694a7c7d1592a7697c2be79d9c2863cbba9101e1a2f962e75bcc39"
+    },
+    {
+      "command": [
+        "/usr/local/bin/python3",
+        "docs/audit/scripts/check_changed_audit_evidence.py",
+        "--base",
+        "origin/main",
+        "--include-worktree",
+        "--json"
+      ],
+      "exit": 0,
+      "reason": null,
+      "log": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/vector/milestone_validation/gate-3_v1.log",
+      "sha256": "9abab828e8990a06fa655a84ab446f9891d62bc195f71925264512fddb515dc4"
+    }
+  ],
+  "finished_at": "2026-10-12T23:06:57.254065+00:00"
+}

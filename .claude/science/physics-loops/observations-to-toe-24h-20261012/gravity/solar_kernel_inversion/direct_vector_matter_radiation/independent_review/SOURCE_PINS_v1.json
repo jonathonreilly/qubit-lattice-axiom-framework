@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-10-12T22:57:46.964430+00:00",
+  "reviewer": "/root/direct_quantum_visibility_review",
+  "sources": [
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/PROTOCOL.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/PROTOCOL.md",
+      "sha256": "ce1cda1413472803548599058dca8b468f897b42e569ecfc93014cafecffa43c"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/DIRECT_MATTER_RADIATION.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/DIRECT_MATTER_RADIATION.md",
+      "sha256": "e1d8a50b2cc448b3d4c0c994530e6fcde9fa83b2d5d3e4918ea5c2fb6097397f"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/SOURCE_LEDGER.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/SOURCE_LEDGER.md",
+      "sha256": "7ea013f46a77b7a1e7c8d0c592c1918e026aeb26bb36a5fa6da32c0cc76cc802"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/direct_radiation_check.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/direct_radiation_check.py",
+      "sha256": "c88e590e32a308ec9012cc814a21a021aaf9d6ce78dfdf3d50f87db10634d9f8"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/evidence_v1/RESULTS.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/evidence_v1/RESULTS.json",
+      "sha256": "9be210deaaa05474e85517979c98bfb77deb21cab76d7c7da74fc634735beb8f"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/vector-response-20261012/New Axioms Lets Go/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/FIELD_PREMISES.md",
+      "sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e"
+    }
+  ],
+  "parent_declared_field_commit": "68a7fa7890",
+  "git_not_used": true,
+  "field_binding": "Exact note SHA-256; prior field proof is a supplied checked premise, not re-audited here.",
+  "deadline": "2026-10-13T16:53:00.057432+00:00",
+  "no_scientific_source_edits": true
+}

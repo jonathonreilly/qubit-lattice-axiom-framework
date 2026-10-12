@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 1,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "local-vector-response-milestone-20261012",
+  "tree": "57d24afbe33c77b915df34783db40e6f2969fa89",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "claim_id": "local_vector_homogeneous_response_bounded_theorem_note_2026-10-12",
+      "primary_runner": "scripts/local_vector_homogeneous_response_2026_10_12.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": []
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8866,
+      "misses": 5202
+    },
+    "packet_imports": {
+      "hits": 8856,
+      "misses": 5200
+    },
+    "declared_inputs": {
+      "hits": 8954,
+      "misses": 5363
+    }
+  },
+  "record_sha256": "b9e1ae26ede1360b3bd1bd98a20594d65d9b91b3361c658a57c32692e1c886d1",
+  "checker_sha256": "be6b7b3406423888719c87c966c7373a35b34ae5a2d548fcf1249ad4f981a54a"
+}

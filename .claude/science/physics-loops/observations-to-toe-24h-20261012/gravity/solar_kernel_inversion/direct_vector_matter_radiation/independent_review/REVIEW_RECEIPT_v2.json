@@ -1,0 +1,176 @@
+{
+  "schema": "scoped_independent_radiation_review_v1",
+  "at": "2026-10-12T23:07:30.741290+00:00",
+  "reviewer_session": "/root/direct_quantum_visibility_review",
+  "source_review_verdict": "PASS_stated_leading_conditional_calculation",
+  "material_required_corrections": [],
+  "source_pins": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/SOURCE_PINS_v1.json",
+    "sha256": "cfb4d36c3ce9de42470de85421709e396cd974ac2ef236d95f9d04bfb311f8a3"
+  },
+  "report": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/REVIEW.md",
+    "sha256": "39e049333ce480b41cd87c2bd1092e1562c54834428adb5abe2e5bc2a8790e51"
+  },
+  "proof_parent": {
+    "source": "/Users/jonBridger/.codex/worktrees/vector-response-20261012/New Axioms Lets Go/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+    "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/FIELD_PREMISES.md",
+    "sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e"
+  },
+  "proof_parent_review_scope": "Complete field note read and premises checked for applicability; existing full field proof not re-audited. Parent-provided commit label68a7fa7890; Git not queried.",
+  "original_dispositions": [
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/PROTOCOL.md",
+      "original_sha256": "ce1cda1413472803548599058dca8b468f897b42e569ecfc93014cafecffa43c",
+      "disposition": "preserved_and_reviewed_under_explicit_scope",
+      "recovery": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/PROTOCOL.md",
+      "final_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/PROTOCOL.md",
+      "final_sha256": "ce1cda1413472803548599058dca8b468f897b42e569ecfc93014cafecffa43c"
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/DIRECT_MATTER_RADIATION.md",
+      "original_sha256": "e1d8a50b2cc448b3d4c0c994530e6fcde9fa83b2d5d3e4918ea5c2fb6097397f",
+      "disposition": "preserved_and_reviewed_under_explicit_scope",
+      "recovery": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/DIRECT_MATTER_RADIATION.md",
+      "final_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/DIRECT_MATTER_RADIATION.md",
+      "final_sha256": "e1d8a50b2cc448b3d4c0c994530e6fcde9fa83b2d5d3e4918ea5c2fb6097397f"
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/SOURCE_LEDGER.md",
+      "original_sha256": "7ea013f46a77b7a1e7c8d0c592c1918e026aeb26bb36a5fa6da32c0cc76cc802",
+      "disposition": "preserved_and_reviewed_under_explicit_scope",
+      "recovery": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/SOURCE_LEDGER.md",
+      "final_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/SOURCE_LEDGER.md",
+      "final_sha256": "7ea013f46a77b7a1e7c8d0c592c1918e026aeb26bb36a5fa6da32c0cc76cc802"
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/direct_radiation_check.py",
+      "original_sha256": "c88e590e32a308ec9012cc814a21a021aaf9d6ce78dfdf3d50f87db10634d9f8",
+      "disposition": "preserved_and_reviewed_under_explicit_scope",
+      "recovery": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/direct_radiation_check.py",
+      "final_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/direct_radiation_check.py",
+      "final_sha256": "c88e590e32a308ec9012cc814a21a021aaf9d6ce78dfdf3d50f87db10634d9f8"
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/evidence_v1/RESULTS.json",
+      "original_sha256": "9be210deaaa05474e85517979c98bfb77deb21cab76d7c7da74fc634735beb8f",
+      "disposition": "preserved_and_reviewed_under_explicit_scope",
+      "recovery": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/evidence_v1/RESULTS.json",
+      "final_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/evidence_v1/RESULTS.json",
+      "final_sha256": "9be210deaaa05474e85517979c98bfb77deb21cab76d7c7da74fc634735beb8f"
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/vector-response-20261012/New Axioms Lets Go/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "original_sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e",
+      "disposition": "preserved_and_reviewed_under_explicit_scope",
+      "recovery": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/FIELD_PREMISES.md",
+      "final_path": "/Users/jonBridger/.codex/worktrees/vector-response-20261012/New Axioms Lets Go/docs/LOCAL_VECTOR_HOMOGENEOUS_RESPONSE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "final_sha256": "12a23ea9bafeac2ade4afffb1d9bd27bacc5da7915c3148543a4fc45edcf979e"
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/TRACE_GATE.md",
+      "original_sha256": "ad0964fe92edb93d3d45fde473d80850b6dff3026ddafe320e678c3eb24b7af8",
+      "disposition": "complete_metadata_read_scope_consistent",
+      "recovery": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/TRACE_GATE.md",
+      "final_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/TRACE_GATE.md",
+      "final_sha256": "ad0964fe92edb93d3d45fde473d80850b6dff3026ddafe320e678c3eb24b7af8"
+    },
+    {
+      "original_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "ebab250807cf24053102324ae55b0a88a7d2d5f3fdb7af0efcf243733fe698e0",
+      "disposition": "complete_metadata_read_scope_consistent",
+      "recovery": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/CLAIM_STATUS_CERTIFICATE.md",
+      "final_path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "ebab250807cf24053102324ae55b0a88a7d2d5f3fdb7af0efcf243733fe698e0"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/independent_radiation_check.py",
+      "sha256": "f8956e09e3f960f57ab514076348cfbef778684b4fa18dc24608fa92d87713a4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/CHECKS_v1.json",
+      "sha256": "ac58e97d57f1c39ad105e2adc559bbd44fd11d3c13a96f86549cb7ec3c561bc1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/RAW_EXECUTION_v1.json",
+      "sha256": "e35f0e2910a73f0b61d7f041c53529972f60da0555d1271c7827f645df8e29eb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/HARMONIC_TAIL_BOUND_v1.json",
+      "sha256": "a3a1686a12c6f7d63b766137c84f528adc466c48c100f6fabb486219366e987a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/PRIMARY_SOURCE_CHECK_v1.json",
+      "sha256": "895bc3ba9704bb899999df4c8b2cd6f6ae9c5a75b39bd2994f92a625c028b836"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/REPORT_WRITE_FAILURE_v1.txt",
+      "sha256": "9f74e9b7b3b169ec614491a5f72fa3fd23d5211fa1c44ce11d857eeb7c5b1510"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/METADATA_CONFIRMATION_v1.md",
+      "sha256": "0941695a5c6c40786bd942973d2aa37fd5d488c86c2873f4fd27705134973275"
+    }
+  ],
+  "check_counts": {
+    "pass": 5,
+    "fail": 0
+  },
+  "independent_routes": [
+    "Local symbolic Noether energy and momentum",
+    "Mass-location moments and isotropic sphere monomial integrals",
+    "Exact oscillatory primitive for intervening Green term",
+    "Bessel density harmonics with adaptive angular quadrature",
+    "Rational calibration bisection and harmonic-tail bound"
+  ],
+  "no_author_runner_import_or_execution": true,
+  "numerical_max_relative_author_power_difference": 5.850356934687952e-11,
+  "harmonic_tail_relative_exact_bound": "<1e-35 for author equal-mass q>=1, epsilon_T<=.08 controls",
+  "calibration_q_diagnostic": 1.9368726097956006,
+  "limitations": [
+    "Leading weak nonrelativistic source and adiabatic circular regime",
+    "Field speed is not relativistic matter or light propagation",
+    "Matter COM is constant at conservative order; total momentum includes field",
+    "Smooth regularization is not a strong-body or mass-matching model",
+    "Author controls are prescribed sources, not coupled orbital solutions",
+    "Floating angular/Bessel quadrature is not an interval certificate",
+    "GR ratio and wave-speed identification are supplied calibration choices",
+    "No timing likelihood, empirical fit or exclusion"
+  ],
+  "packaging_failure_preserved": "REPORT_WRITE_FAILURE_v1.txt; no scientific failure",
+  "no_formal_audit": true,
+  "no_git": true,
+  "no_model_change": true,
+  "no_author_edits": true,
+  "no_landing": true,
+  "deadline": "2026-10-13T16:53:00.057432+00:00",
+  "record_revision": 2,
+  "previous_receipt": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/REVIEW_RECEIPT_v1.json",
+    "sha256": "948971bc1b2c2d6d73d59b0c295c062e380480bbc30d8f044fd7e30186d8ea53"
+  },
+  "metadata_review": {
+    "verdict": "PASS_scope_consistent",
+    "files": [
+      {
+        "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/TRACE_GATE.md",
+        "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/TRACE_GATE.md",
+        "sha256": "ad0964fe92edb93d3d45fde473d80850b6dff3026ddafe320e678c3eb24b7af8"
+      },
+      {
+        "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/CLAIM_STATUS_CERTIFICATE.md",
+        "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/pinned_source/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "ebab250807cf24053102324ae55b0a88a7d2d5f3fdb7af0efcf243733fe698e0"
+      }
+    ],
+    "confirmation": {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_vector_matter_radiation/independent_review/METADATA_CONFIRMATION_v1.md",
+      "sha256": "0941695a5c6c40786bd942973d2aa37fd5d488c86c2873f4fd27705134973275"
+    },
+    "new_science_rerun": false
+  },
+  "proof_parent_declared_full_commit": "68a7fa78907c2737e9f850679ba5a1c8db0df819",
+  "proof_parent_commit_verification": "Supplied in metadata; Git not queried. Exact field note SHA remains the operative pin."
+}

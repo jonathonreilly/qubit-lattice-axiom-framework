@@ -1,4 +1,4 @@
-# Direct author handoff — October12, 2026, 22:37 UTC
+# Direct author handoff — October12, 2026, direct vector/matter block
 
 This chat personally chooses and authors the scientific work. The detached
 supervisor/author is retired; never restart it or launch a replacement author.
@@ -12,34 +12,56 @@ cancelled. Timed caffeinate76848 retains the original deadline. All fixed
 numerical drivers92212 and17451 are finished; no background author is active.
 The same physics-loop lock was refreshed22:14:34Z and expires00:14:34Z.
 
-## Active constructive block and exact next work
+## Current direct work and next action
 
-Parent has derived and run direct_vector_response_completion under
- gravity/solar_kernel_inversion/. It adds a local three-component field u,
-constant unit e and alpha>0, with0<D<=N. Spatial coefficients are1/N and
-1/D-1/N. Positive field energy and local energy flux give finite front speed
-1/sqrt(alpha D). The static e.u susceptibility exactly equals
-(N k_perp²+D k_parallel²)/k^4. The explicit retarded elastic tensor has two
-wavefronts and an essential intervening term; the time integral gives the
-same static kernel. This constructive escape is outside the old two-scalar
-restriction. It is homogeneous linear mathematics, not the nonlinear galaxy
-operator or a source/matter/metric completion. No galaxy-fit inheritance.
+The local vector construction is complete as a conditional theorem and is
+OPEN/attached PR9505, branch codex/local-vector-response-20261012, head
+039198fed41d5599341bbcbc7908dcfae1215421, tree
+57d24afbe33c77b915df34783db40e6f2969fa89. Independent proof, canonical port,
+all63 final paths and exact source hashes were checked. Ten author runner
+families and independent quadrature/mutation controls pass. Unit preflight,
+final combined pipeline, strict lint and changed-evidence checks pass on a
+disposable validation checkout. The generated manifest is byte-identical to
+the frozen manifest; no generated ledger/status outputs entered the branch.
+The source worktree is /Users/jonBridger/.codex/worktrees/vector-response-20261012/New Axioms Lets Go.
+Three original archival files remain untracked there and are losslessly
+encoded in tracked evidence; never stage or erase those raw originals.
+Final identity receipt SHA cfad988a25dbb20196d64115719db6468d9a0eb4d1e81499f05106abe73166d0.
+Runtime receipts are copied into milestones/vector_response/final_validation_v1.
 
-Parent primary proof, protocol and runner are written. Symbolic checks,
-64 independent real-space/Fourier quadratures,120 flux diagnostics and an
-omitted-intervening-term mutation pass. /root/direct_field_check is doing a
-focused full independent check, writing only that packet's independent_review.
-Do not interfere with that directory while active. Read its full report and
-any corrections, then prepare the coherent vector-response milestone.
+The parent then personally derived direct_vector_matter_radiation under
+ gravity/solar_kernel_inversion/. A newly supplied reciprocal nonrelativistic
+matter action gives conserved total energy, the same pair potential,
+nu_z^2/Omega^2=(3D-N)/(N+D), and positive two-speed leading radiation.
+For q=N/D and supplied GR comparator,
+P_vec/P_GR=(c_EM/c_L)^5(6q^(7/2)+1)/(21(q+1)). With c_L=c_EM, isotropy
+gives1/6; matching this one comparator calibrates q=1.9368726097956006,
+c_T/c_L=.7185375538936453, static polar/equatorial ratio1.3190034891778315,
+and vertical-frequency-squared ratio.361993021644337. These are linked
+conditional predictions, not observations or a binary-pulsar fit.
+The complete independent REVIEW.md was read. Five independent families pass;
+Bessel/adaptive quadrature reproduces16 author controls within5.86e-11
+relative. The reviewer also distinguishes prescribed synthetic sources from
+self-consistent weak circular parameters and derives a harmonic-tail bound.
+Final receipt v2 SHA a454751a65971f15b284d70862a0e6355f6305c8040c51d9aa166a6986ab5b40.
+All report-writing errors and source snapshots remain preserved.
 
-A managed isolated milestone worktree has been created and attached at
-/Users/jonBridger/.codex/worktrees/vector-response-20261012/New Axioms Lets Go,
-from origin/main516cb69d8487ff04f8a48e065d3dcbe71d7dd237. It is still empty of
-new source. Use branch codex/local-vector-response-20261012. Package a
-standalone canonical theorem note and portable runner with explicit inputs,
-timeout, standard repeatable output and same-session reviewer confirmation.
-Do not move the campaign or quantum branch. The user authorizes milestone PRs;
-no landing is authorized. Independent review is not a formal audit.
+The new direct_vector_readout block is personally derived/coded. The supplied
+force -grad(phi) yields rank-at-most-one longitudinal plane-wave tidal
+motion, zero transverse trace-free projection, regardless of vector field
+components. Exact mechanical endpoint response has exp(i z/2)sinc(z/2)
+arm factors. Long-wavelength breathing/longitudinal patterns are degenerate
+up to sign, but two wave speeds generically give rank-two network transfer
+after any single speed alignment. Five families/36 direct endpoint-integral
+controls pass, max relative residual1.194e-13. This has no photon/metric,
+cavity, calibration, merger or strain-likelihood bridge. /root/direct_field_check
+is checking it independently, writing only its independent_review directory.
+Read the full report and resolve narrow findings before extensive reuse.
+
+Then return to actual HI pressure/source evidence described below, or build
+an explicitly new matter/metric bridge motivated by the observed tidal
+geometry. Do not silently identify the vector field with tensor GWs or
+assign the published GW170814 Bayes factors to this two-speed candidate.
 
 ## Completed personally authored gravity work
 
@@ -112,9 +134,10 @@ PR9501 remains OPEN attached at3153d7b2ddceeb26b78f2e1334ffa83218a01333;
 PR9503 remains OPEN attached at8148be1c698f7c9b3bee8a6a659ec352adbbbdbb.
 Both heads and attachments were reverified this block. Runtime PRS.json binds
 identities. Current science checkpoint hash is in runtime STATUS.json.
-Prepare the new local-vector milestone after independent check and appropriate
-package gates; do not label a pending packet review-ready. Keep other results
-recoverable on the campaign branch. PR_BACKLOG.md records delivery state.
+PR9505 is also OPEN and attached at039198fed41d5599341bbcbc7908dcfae1215421.
+Keep the checked matter/readout extensions and all old failures recoverable on
+the campaign branch; future canonical milestones require their own scoped
+source review and package gates. PR_BACKLOG.md records delivery state.
 
 The campaign remains active. After the current constructive block, continue
 with actual pressure/source evidence or a nonlinear vector/matter completion,

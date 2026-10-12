@@ -78,3 +78,31 @@ uncorrected and names UGC7577 as an exception to generally small corrections.
 This is a readout limitation, not an imported rescue magnitude. A new lead,
 Lelli et al.2012 DOI10.1051/0004-6361/201219457 Figure9, presents DDO125's
 HI profile at2.6Mpc; no numeric derivative or local dispersion is imported.
+
+## Direct vector, matter and readout reconstruction, October12
+
+The homogeneous vector field assumes constant unit e, alpha>0, G>0 and
+0<D<=N. These are candidate grants. Its positive field energy and finite
+cone match the stated homogeneous static susceptibility exactly. They do
+not establish a nonlinear galaxy action or a common physical light cone.
+The complete theorem is in independently checked PR9505.
+
+The new reciprocal matter action supplies positive inertial masses,
+nonrelativistic kinetic energy and universal -rho phi. Leading radiation
+also assumes slow compact sources, weak damping, a wave zone beyond both
+wavelengths and conservative-order COM control. Synthetic prescribed
+sources do not solve the coupled orbital problem. Equal-mass harmonics and
+an independently constructed weak circular case check the stated scope.
+A GR circular formula and c_L=c_EM are explicit comparison/calibration
+imports; matching the former does not supply an independent observation.
+Strong-body sensitivities, physical mass matching, timing and photons remain
+open. Positivity of the field Hamiltonian does not bound the full interacting
+energy below.
+
+The current readout supplies free test masses and simultaneous Euclidean
+length measurements. This is a mechanical diagnostic, not an optical or
+calibrated strain model. Plane-wave tidal forces from -grad(phi) are
+longitudinal regardless of the vector field's components. Distinct speeds
+must retain their different network phases. Published GW170814 pure-mode
+comparisons use a GR phase model and cannot be assigned unchanged to this
+candidate. No observational holdout or candidate likelihood is created here.

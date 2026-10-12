@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_even_span_partner_kernel_2026_10_10.py
+runner_sha256: a137566747f29332c71de78a01905c71b826a20f7ee455d98b4755cb5b5fa940
+input_fingerprint_sha256: acd66170562d5c8508e36b000f55dab926fb668c6da5bcaee43f20fc2065ba31
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 6.03
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each even basis is 3-dimensional, has excluded coefficients 0, and meets the excluded axes only at 0
+PASS each even generator has partner rank 6 and its kernel is the named odd space, with excluded coefficients 0
+PASS the stacked map has rank 18 and kernel equal to three copies of the odd space, so every nonzero even combination has partner rank 6
+PASS the sign product against the chirality cap has centre pairs (1, -1) and (1, 1) and cross sum 0
+PASS the sign product against the matched cross has centre pairs (1, 0) and (1, 1) and cross sum 1
+PROD-CHI witness [(1, -1), (1, 1)] 0
+PROD-MATCHED witness [(1, 0), (1, 1)] 1
+TOTAL: PASS=8 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

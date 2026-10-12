@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_two_parity_excluded_partner_kernel_2026_10_10.py
+runner_sha256: 9af9503241cfcbad7fdc89ff81c4323435e212c3b238d495120c5ab270c6398f
+input_fingerprint_sha256: ee9500527d598301ac5e6a805ae94c4af67244332140ece4aba6d496370c8fea
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.14
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS the two spans are the named three-vector formulas and each has rank 3
+PASS a nonzero vector in either span has two parity coefficients and an excluded coefficient exactly off the oblique-matched line
+PASS every height pair splits each span into four bond classes, each carrying the same eight directions of rank 7
+PASS the four bond scalars vanish together only at the zero coefficient vector
+PASS on matching height pairs the partner kernel is the same span, and on the flipped pairs the spans exchange
+PASS the swapped-orthogonal vector at heights 1 and 2 has centre pairs (-2, 0) and (0, 2)
+PASS the same vectors at heights 1 and 3 have centre pairs (0, 0) and (-2, 2) and cross sum -4
+SAME witness [(-2, 0), (0, 2)] 0
+FLIP witness [(0, 0), (-2, 2)] -4
+TOTAL: PASS=10 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_chi_ts_twice_matched_line_cross_moments_2026_10_10.py
+runner_sha256: 1f9da364f1f8fd065fcc61fceb99d6c7d99534b6b07686a06723e7ad88d5b68e
+input_fingerprint_sha256: 5b6e8c199e2a33d8fb5eb0b14d17808b31fef30cca58c7c1c917bd336e5e1b06
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.59
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS the doubled matched line is outside the equal-coefficient line, the doubled transverse-sign line, and both ratio spans and has two parity coefficients plus one excluded coefficient
+PASS every ordered height pair gives the line partner rank 10, and the doubled line doubles every partner row
+PASS the line against the chirality cap has centre pairs (0, 1) and (-2, -1) and cross sum 2
+PASS twice the line has centre pairs (0, 1) and (-4, -1) and cross sum 4
+PASS the equal-coefficient vector on the same bond has centre pairs (0, 1) and (-1, -1) and cross sum 1
+LINE witness [(0, 1), (-2, -1)] 2
+DOUBLE witness [(0, 1), (-4, -1)] 4
+EQUAL witness [(0, 1), (-1, -1)] 1
+TOTAL: PASS=8 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

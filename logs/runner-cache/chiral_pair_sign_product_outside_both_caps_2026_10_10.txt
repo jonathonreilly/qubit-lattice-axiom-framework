@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_sign_product_outside_both_caps_2026_10_10.py
+runner_sha256: d70de5845e0a3d5d784e49b0f6c83646bc56f52a0ea6884f9213adb71eda8ec1
+input_fingerprint_sha256: ed2367152c62ec5014127f7ef5f01cf148f900d2d1f8de8cda2aee24477d7302
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 3.45
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS chirality is invariant, the caps are disjoint, and all three cap signs have mean 0
+PASS the transverse sign flips by one global sign shared with the opposite direction
+PASS the sign-product kernel is soldered under proper rotations
+PASS the sign-product factor is bond-symmetric
+PASS all 729 partner patterns have product mean 1
+PASS the factor at coefficient 1/2 takes values 1/2, 1, and 3/2
+PASS every far-end sum equals 48
+PASS three bonds to (-2, -1, -3) have determinant 4 against the two caps
+TOTAL: PASS=11 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

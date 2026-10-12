@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_orthogonal_swapped_cross_outside_twenty_four_kernels_2026_10_10.py
+runner_sha256: 1b47e319bb04e6e0f4662fedfa2738fbd9a651bfcf97de1d7cbafb0cc4e1e5f4
+input_fingerprint_sha256: b619c6c5e2bc826f57566ab8bf495d7b5405e741f183111461e6c20f7d9c3ba4
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 12.48
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each orthogonal swapped cross is frame-invariant and soldered
+PASS each orthogonal swapped cross is bond-symmetric
+PASS every left slice sums to 0
+PASS at coefficient 1/2 each orthogonal swapped cross takes values 1/2, 1, and 3/2
+PASS every far-end sum equals 48
+PASS three height quadruples separate each orthogonal swapped cross from the twenty-four kernels
+PASS each opposite-height pair has the orthogonal swapped cross at rank 9
+TOTAL: PASS=10 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

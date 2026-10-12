@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_both_swapped_dots_two_cap_multiples_partner_kernel_2026_10_10.py
+runner_sha256: f127bd2964aa7066bde5c557a6494a7b2b7ea41321df4e427d87a4fb7c34d1b4
+input_fingerprint_sha256: 7cac69ce37a476918a12abcc68553d469743de0eb273d745b4de4bb015684db5
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 148.88
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+BRANCH_CERTIFICATE [{'factor': '-c + 2*r + 1', 'leading': '-1', 'constant': '2*r + 1', 'witness': (5, '131072*(2*r + 1)**6*(r + s + 1)**4')}, {'factor': '-c + 4*r + 2', 'leading': '-1', 'constant': '4*r + 2', 'witness': (6, '524288*(2*r + 1)**10')}, {'factor': 'c*r - c*s + 4*r*s + 2*r + 2*s + 1', 'leading': 'r - s', 'constant': '4*r*s + 2*r + 2*s + 1', 'witness': (7, '8192*(2*r + 1)**12*(2*s + 1)*(4*s + 1)**3*(r + s + 1)')}]
+BRANCH_CERTIFICATE [{'factor': '-c + 2*r + 1', 'leading': '-1', 'constant': '2*r + 1', 'witness': (5, '131072*(2*r + 1)**6*(r + s + 1)**4')}, {'factor': '-c + 4*r + 2', 'leading': '-1', 'constant': '4*r + 2', 'witness': (6, '524288*(2*r + 1)**10')}, {'factor': 'c*r - c*s + 4*r*s + 2*r + 2*s + 1', 'leading': 'r - s', 'constant': '4*r*s + 2*r + 2*s + 1', 'witness': (7, '8192*(2*r + 1)**12*(2*s + 1)*(4*s + 1)**3*(r + s + 1)')}]
+BRANCH_CERTIFICATE [{'factor': 'c + 2*r', 'leading': '1', 'constant': '2*r', 'witness': (5, '8388608*r**6*(r + s)**4')}, {'factor': 'c + 4*r', 'leading': '1', 'constant': '4*r', 'witness': (6, '-536870912*r**10')}, {'factor': '-c*r + c*s + 4*r*s', 'leading': '-r + s', 'constant': '4*r*s', 'witness': (7, '67108864*r**11*s**2*(r + s)*(4*s + 1)**3')}]
+BRANCH_CERTIFICATE [{'factor': '-c + 2*r + 1', 'leading': '-1', 'constant': '2*r + 1', 'witness': (5, '131072*(2*r + 1)**6*(r + s + 1)**4')}, {'factor': '-c + 4*r + 2', 'leading': '-1', 'constant': '4*r + 2', 'witness': (6, '-524288*(2*r + 1)**10')}, {'factor': 'c*r - c*s + 4*r*s + 2*r + 2*s + 1', 'leading': 'r - s', 'constant': '4*r*s + 2*r + 2*s + 1', 'witness': (7, '8192*(2*r + 1)**12*(2*s + 1)*(4*s + 1)**3*(r + s + 1)')}]
+BRANCH_CERTIFICATE [{'factor': 'c + 2*r', 'leading': '1', 'constant': '2*r', 'witness': (5, '8388608*r**6*(r + s)**4')}, {'factor': 'c + 4*r', 'leading': '1', 'constant': '4*r', 'witness': (6, '-536870912*r**10')}, {'factor': '-c*r + c*s + 4*r*s', 'leading': '-r + s', 'constant': '4*r*s', 'witness': (7, '-67108864*r**11*s**2*(r + s)*(4*s + 1)**3')}]
+BRANCH_CERTIFICATE [{'factor': 'c + 2*r', 'leading': '1', 'constant': '2*r', 'witness': (5, '8388608*r**6*(r + s)**4')}, {'factor': 'c + 4*r', 'leading': '1', 'constant': '4*r', 'witness': (6, '-536870912*r**10')}, {'factor': '-c*r + c*s + 4*r*s', 'leading': '-r + s', 'constant': '4*r*s', 'witness': (7, '-67108864*r**11*s**2*(r + s)*(4*s + 1)**3')}]
+PASS on every ordered height pair, both swapped-dot generators plus r times the plus cap and s times the minus cap have swapped-dot coordinate 0, swapped coordinate -2, orthogonal coordinate 2, transverse-sign and sign-product coordinates s-r, and matched and scaled coordinates 2r+2s
+PASS the sum lies outside the even space and outside both ratio spans for every positive integer pair
+PASS the elimination polynomial is (2r+1)^20 on (1, 2), (2, 1), and (3, 1) and r^10 on (1, 3), (2, 3), and (3, 2), with no positive integer root, so every positive integer pair has partner rank 10 at every chirality coefficient
+PASS the sum has rights (1, -3, -2) and (-3, 2, -1), centre pairs (-2-4r, 1) and (0, -1), and kernel cross sum -2-4r against the chirality cap, for every positive integer pair (r, s)
+TOTAL: PASS=7 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

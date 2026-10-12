@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/opposite_cap_lines_outside_the_three_cap_span_2026_10_10.py
+runner_sha256: c5f7198ea5e2b4a2bbd3f5169c8107f3903f3dbea3cb69880b2de39a4e34c56b
+input_fingerprint_sha256: 2af85838ea718e09e72be790e8e6c7fb7136fef1cb08bf3a4aee850311d3246e
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.83
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS level -1 has mean 0
+PASS level -1 cap has 4 points
+PASS level -1 activates one direction
+PASS level -1 product is covariant
+PASS level -1 quarter-turn alternates
+PASS level -2 has mean 0
+PASS level -2 cap has 4 points
+PASS level -2 activates one direction
+PASS level -2 product is covariant
+PASS level -2 quarter-turn alternates
+PASS level -3 has mean 0
+PASS level -3 cap has 4 points
+PASS level -3 activates one direction
+PASS level -3 product is covariant
+PASS level -3 quarter-turn alternates
+PASS the three opposite caps are distinct
+PASS each opposite line has product mean 1
+PASS each opposite cap is outside the positive span
+PASS the modulus-3 witness bond is (1, -2, -3) with (1, 2, 3)
+PASS half-parameter factors stay positive
+TOTAL: PASS=23 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

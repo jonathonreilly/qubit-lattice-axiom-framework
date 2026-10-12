@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/single_height_signature_order_blind_kernel_2026_10_10.py
+runner_sha256: b25bf2427d02492f93f90f59aeae3946b20a233f7876aebcf73417c53378ca31
+input_fingerprint_sha256: eac99945277851349eedf35ddd67befbca4e6d6de8051f5a7d9624b0c6f68589
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 4.26
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS height signatures number 21
+PASS each height signature has four bond orbits
+PASS the signatures partition the 84 bond orbits
+PASS six distinct slice rows
+PASS each signature has kernel dimension 3
+PASS six signatures have opposite heights
+PASS three signatures have equal heights
+PASS twelve signatures have unequal non-opposite heights
+PASS each opposite signature has pair-moment rank 0
+PASS each unequal signature has a full-rank pair-moment quadric
+PASS each equal-height signature has the same three quadrics
+PASS the third quadric is (x+z)(y+z)
+PASS setting x=-z yields -2yz, y^2+z^2, and 0
+PASS setting y=-z yields x^2+z^2
+PASS y^2+z^2 and x^2+z^2 have rank 2
+PASS each opposite signature activates one direction on every record
+PASS each other signature activates two directions on every record
+PASS eighteen explicit kernels
+PASS the eighteen explicit kernels are independent
+PASS the eighteen kernels are supported on opposite heights
+PASS opposite signature kernels lie in the eighteen
+PASS the height pair (-3, -2) has witness moment -1
+PASS the height pair (-3, -3) has witness moment 1
+UNEQUAL_WITNESS (-3, -2) (-1, 0, 0) (0, -1, 0) (-3, 1, -2) (-3, 2, 1) -1
+SAME_WITNESS (-3, -3) (-1, 0, 0) (1, 0, 0) (-3, -2, -1) (-3, -2, -1) 1
+PASS a one-signature stand-in is not the full bond space
+TOTAL: PASS=27 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

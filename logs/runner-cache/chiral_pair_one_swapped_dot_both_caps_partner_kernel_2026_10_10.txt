@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_one_swapped_dot_both_caps_partner_kernel_2026_10_10.py
+runner_sha256: 15b386b8e428b80f73624db5efaa69afa5ceeb46342dd90af0aea29c6a8f983f
+input_fingerprint_sha256: 67544299d955cc6fff198e4d302a82f47b3e0dcd07101e935f6b98231178f9e0
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 19.08
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS on every ordered height pair, the plus swapped-dot generator plus both cap generators lies outside the even space and both ratio spans and has partner rank 10 at every chirality coefficient
+PASS on every ordered height pair, the minus swapped-dot generator plus both cap generators lies outside the even space and both ratio spans and has partner rank 10 at every chirality coefficient
+PASS the plus-dot sum and the minus-dot sum are linearly independent
+PASS the pivot minors at chirality coefficients 0, 1, -1, -1/2, 1/2, 3/2, 5/2, 2, -2, and -2/3 do not have a constant gcd
+PASS the plus-dot sum has rights (1, -3, -2) and (-3, 2, -1), centre pairs (-6, 1) and (0, -1), and kernel cross sum -6 against the chirality cap
+PASS the minus-dot sum has rights (1, -3, -2) and (-3, 2, -1), centre pairs (-4, 1) and (0, -1), and kernel cross sum -4 against the chirality cap
+TOTAL: PASS=9 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/modulus_three_triple_complement_2026_10_10.py
+runner_sha256: f370748030c3afa7a1f65412b56d70b43e770fe84bfc4cbcd4915dfee2a2f524
+input_fingerprint_sha256: 6df05852d6d1723cae1dbb2e8bd9affabe632118ad90581a5fbe101280fdb35c
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.63
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS height signatures number 21
+PASS the signatures partition 84 bond orbits
+PASS the modulus-3 triple has joint slice kernel 10
+PASS the complement of the three signature kernels is one line
+PASS the complement is -1, +1, +1 on one orbit of each signature
+PASS every record has two live directions
+PASS the opposite x-directions at (-3, -2, -1) have moment 2
+PASS the uniform average of that moment is 1/12
+PASS the equal-height block is nonzero, so the line is outside the opposite signatures
+PASS a direct-sum stand-in is not this complement
+TOTAL: PASS=13 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

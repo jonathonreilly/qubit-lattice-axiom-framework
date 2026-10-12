@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_excluded_kernel_span_cross_moments_2026_10_10.py
+runner_sha256: 28ee041f3f57e0a953aaec8b70fdef61c63ae223f5e3a0a4b50aaab4ceaa501f
+input_fingerprint_sha256: 2838b689388f6c80189905f12c4d040e87c3ed188476e2a6213629cc4803af8f
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 44.33
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS every ordered height pair has partner minors only at the zero excluded coefficient
+PASS matched and swapped-dot self-cross sums are -1, 0, and 1 on each height pair
+PASS scaled self-cross sums are the two height-dependent sets
+PASS the matched self-pair on the witness bond has cross sum -1 and mean 47/48
+PASS the matched kernel at height 1 with the zero vector at height 2 has every cross sum equal to 0
+PASS the matched kernel at height 1 against the height-2 chirality cap has a nonzero cross sum
+WITNESS slices [0, 1] [0, -1]
+WITNESS mean 47/48
+TOTAL: PASS=9 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/modulus_three_complement_mixture_2026_10_10.py
+runner_sha256: 8e3dcd807072f8f437a2e8d42058ae42b57fb2ee92f0111d9d794bb1b5b77f37
+input_fingerprint_sha256: 932fa86cfc0f7802eb2923a9e9f7ebbbf5d945eee5bd66d96224d3f3ea390eee
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.09
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS the ansatz is the 10-dimensional joint slice kernel on 12 orbits
+PASS the line plus the three signature kernels span that kernel
+PASS the pair moments contain the square of the complement coefficient
+PASS nine explicit forms are pair-moment consequences once the coefficient is zero
+PASS both determinants factor as the plane times a sum of two squares
+PASS on e0 + e1 = 0 the kernel line is one-dimensional away from the origin
+PASS with the opposite blocks zero, the equal-height quadrics vanish only at the origin
+PASS on e0 + e1 = 0 the kernel line forces the equal-height coordinates to zero
+PASS on e0 = e1 = -e2 the same quadrics force that coordinate to zero
+TOTAL: PASS=12 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

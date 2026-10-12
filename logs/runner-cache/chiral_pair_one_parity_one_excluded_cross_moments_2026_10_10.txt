@@ -1,0 +1,31 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_one_parity_one_excluded_cross_moments_2026_10_10.py
+runner_sha256: a1ce530d12046da6132b230ae85488738823103f006ae14508412c768ed94574
+input_fingerprint_sha256: ac4ab5de2136ff718f2a9614bed820c1b46e1cf347255e3e0fb360235cbf1d74
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 55.76
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS every other parity-excluded plane has full partner rank for a nonzero ratio
+PASS the oblique-matched ratios with a partner kernel are exactly plus and minus one
+PASS at ratios plus and minus one the named three vectors span the partner kernel
+PASS oblique plus matched at heights 1 and 2 has every cross sum equal to 0 against itself
+PASS chirality plus matched against the chirality cap has witness cross sum 2
+PASS the same oblique-matched vector has witness cross sum -4 at heights 1 and 3
+PASS oblique plus twice matched has witness cross sum -1 against oblique
+CHI witness [(1, 1), (-1, -1)] 2
+SELF witness [(0, 0), (-2, 2)] -4
+RATIO witness [(0, 0), (-1, 1)] -1
+TOTAL: PASS=10 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

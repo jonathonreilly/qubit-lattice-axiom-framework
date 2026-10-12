@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/opposite_cap_cross_mixture_two_live_directions_2026_10_10.py
+runner_sha256: 45c6c931401a486b0cc68231ea57d176036e1598afb2e199ce05cf88bf619692
+input_fingerprint_sha256: d12d5ea4c28cc3f5d2e36cae71de433408e4af54f1ce939c4378022844898367
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.44
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS each direction has a carrier
+PASS the mixture is bond-symmetric
+PASS mixture values lie in {-1, 0, 1}
+PASS every record activates two opposite directions
+PASS some record is nonzero in both opposite directions
+PASS the seed (1, 2, 3) is live in e_z and -e_z
+PASS every slice has sum 0
+PASS every opposite-direction product has mean 1
+PASS half-parameter factors stay positive
+PASS the two level-3 cap lines have moment 7/6
+PASS the cap and the opposite cross have disjoint bonds
+TOTAL: PASS=14 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

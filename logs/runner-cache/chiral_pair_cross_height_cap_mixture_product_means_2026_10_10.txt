@@ -1,0 +1,29 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_cross_height_cap_mixture_product_means_2026_10_10.py
+runner_sha256: 2e987e407ce11c0df571e9faf8fa7635e742c692e251477eb5cf45bba2476c04
+input_fingerprint_sha256: f4cf99f320b45ebc193a35d18246a21132fb7d6768fa753e34e32778f7da8d68
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 40.83
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS both cross-height mixtures are soldered and bond-symmetric
+PASS each mixture at coefficient 1/2 takes values 1/2, 1, and 3/2
+PASS each record meets at most two live directions and both heights occur
+PASS the two chirality caps have one-neighbour mean 1 and witness moment 97/96
+PASS the chirality cap plus the other-height sign product has every two-direction mean equal to 1
+PASS every far-end sum equals 48
+FAILING witness moment 97/96 bad_pairs 1536
+PASSING witness moment 1 bad_pairs 0
+TOTAL: PASS=9 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

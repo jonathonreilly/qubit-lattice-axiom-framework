@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_swapped_cross_partner_kernel_2026_10_10.py
+runner_sha256: 4e9a86cf3ff57f42bab5c95ad1c58355cc05137a1794676746952b2cfd77c2d1
+input_fingerprint_sha256: 1139d2fbaef8db7106dc0c24518a3cb384407ca2c7d7999b1a7c73a5e8f62ddd
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.87
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS the swapped cross is odd on (1, 2), (2, 1), and (3, 1), even on the other three pairs, and each odd basis meets the even basis only at 0
+PASS on each odd pair a nonzero scale of the swapped cross has partner rank 7 and its kernel is the even space of the partner height
+PASS on heights 1 and 2 the swapped cross against the sign product has centre pairs (1, -1) and (-1, -1) and cross sum 0
+PASS on heights 1 and 2 the swapped cross against the chirality cap has centre pairs (1, -1) and (-1, 1) and cross sum -2
+PASS on heights 1 and 2 the swapped cross against the matched cross has centre pairs (1, 0) and (-1, 1) and cross sum -1
+PASS on heights 1 and 3 the swapped cross against the chirality cap has centre pairs (-1, 1) and (-1, -1) and cross sum 0, and against the sign product has centre pairs (-1, 1) and (-1, 1) and cross sum -2
+ODD-PROD witness [(1, -1), (-1, -1)] 0
+ODD-CHI witness [(1, -1), (-1, 1)] -2
+ODD-MATCHED witness [(1, 0), (-1, 1)] -1
+EVEN-CHI witness [(-1, 1), (-1, -1)] 0
+EVEN-PROD witness [(-1, 1), (-1, 1)] -2
+TOTAL: PASS=9 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

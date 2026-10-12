@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/equal_height_signature_with_one_partner_2026_10_10.py
+runner_sha256: 42fffc4ec2f7d68b40e8b1f0a1635f080730f2e4451cefb379e468339d23bd76
+input_fingerprint_sha256: 4e98695a5f8ec6315e8a2d3ac8f17c66852ee871a788078a53ec8cceaa3db6fe
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 2.59
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS height signatures number 21
+PASS the signatures partition 84 bond orbits
+PASS 210 signature pairs each have joint slice kernel 6
+PASS the triple (-3, -3), (-3, 3), (3, -3) has joint slice kernel 10, the maximum among 1330 triples
+PASS six opposite, three equal, and twelve unequal signatures
+PASS six same-modulus pairs share an axis and match the bilinear normal form
+PASS twelve different-modulus pairs are disjoint and match the product normal form
+PASS three equal-height pairs are disjoint and match both quadric blocks
+PASS corrected quadrics obey v M3 - w M2 = -(v+w)(v^2+w^2)/2 identically
+PASS on v=-w the first quadric is u^2+w^2; at v=w=0 it is u^2
+PASS a same-modulus partner vector is a zero and a pure equal-height vector is not
+PASS a one-signature stand-in is not this pair count
+TOTAL: PASS=15 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

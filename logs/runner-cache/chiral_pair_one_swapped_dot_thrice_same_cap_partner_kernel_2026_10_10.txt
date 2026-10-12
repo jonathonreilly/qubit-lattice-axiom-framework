@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_one_swapped_dot_thrice_same_cap_partner_kernel_2026_10_10.py
+runner_sha256: 332fa3062c5614f26482d00074f5b65b4e83093170fb52f45ef92882fbac9197
+input_fingerprint_sha256: 18d1328496355d98560157e6c79e0c1bc8c04c745dcc2383eabfb196dac59f7d
+timeout_sec: 240
+exit_code: 0
+elapsed_sec: 9.48
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS on every ordered height pair, one swapped-dot generator plus three times the cap of the same ratio span lies in that span, has partner rank 7 at chirality coefficient 0, and has partner rank 10 at every nonzero chirality coefficient
+PASS the thrice-cap plus sum at chirality 1 has rights (1, -3, -2) and (-1, 2, -3), centre pairs (-13, 0) and (-1, 2), and kernel cross sum -2
+PASS the thrice-cap minus sum at chirality 1 has rights (1, -3, -2) and (-1, 2, 3), centre pairs (1, 2) and (-1, 0), and kernel cross sum 2
+TOTAL: PASS=6 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

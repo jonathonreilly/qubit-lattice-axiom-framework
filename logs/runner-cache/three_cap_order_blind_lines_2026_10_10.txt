@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/three_cap_order_blind_lines_2026_10_10.py
+runner_sha256: f9daa32a325f2d85cb97a6a0efe55fd77a988bf876ccad33893f285458ad64f2
+input_fingerprint_sha256: 1ec26d2c87e02f68e93623b6048e75570c28a066aac30b9fd2d47f0a8f92f0e2
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.93
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS modulus 1 has mean 0
+PASS modulus 1 cap has 4 points
+PASS modulus 1 activates one direction
+PASS modulus 1 product is covariant
+PASS modulus 1 quarter-turn alternates
+PASS modulus 2 has mean 0
+PASS modulus 2 cap has 4 points
+PASS modulus 2 activates one direction
+PASS modulus 2 product is covariant
+PASS modulus 2 quarter-turn alternates
+PASS modulus 3 has mean 0
+PASS modulus 3 cap has 4 points
+PASS modulus 3 activates one direction
+PASS modulus 3 product is covariant
+PASS modulus 3 quarter-turn alternates
+PASS the three caps are distinct lines
+PASS each pure line has product mean 1
+PASS a mixture of modulus 3 and 2 has moment 25/24
+PASS half-parameter factors stay positive
+TOTAL: PASS=22 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

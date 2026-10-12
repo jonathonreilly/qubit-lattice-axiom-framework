@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/one_hot_cap_pair_kernel_span_2026_10_10.py
+runner_sha256: cf701c4ae41284816e91122c3c145efcec667726d6fa5053e4c4ff7a6d8d6a31
+input_fingerprint_sha256: 400363cf41f72731e46493d09f3d20645b1ab947fc5fb0df5200f72a485e5393
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.88
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS each direction has four carriers
+PASS each cap pattern gives one direction on every record
+PASS each cap pattern is preserved by proper rotations
+PASS each cap pattern has four bond orbits
+PASS each cap pattern has slice rank 1
+PASS each cap pattern has kernel dimension 3
+PASS the six cap patterns have dimension 18
+PASS soldered extension of the twelve crosses is well defined
+PASS the twelve crosses are bond-symmetric
+PASS caps and crosses vanish off their cap pattern
+PASS six positive-cap witness bonds have value -1
+PASS positive-cap cross values lie in {-1, 0, 1}
+PASS each positive-cap cross activates one direction
+PASS every positive-cap slice has sum 0
+PASS each positive-cap cross lies outside the previous twelve kernels
+PASS the eighteen kernels are linearly independent
+PASS cap and two crosses span each three-dimensional pattern
+PASS half-parameter positive-cap factors stay positive
+PASS the sum of two positive matched crosses has moment 23/24
+TOTAL: PASS=22 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

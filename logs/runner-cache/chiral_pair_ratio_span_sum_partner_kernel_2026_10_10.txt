@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_ratio_span_sum_partner_kernel_2026_10_10.py
+runner_sha256: d5ad389b60930c0a3d9f9e327f2675bf76d9373b83ca1474b49bf69a64dd5a7a
+input_fingerprint_sha256: e6bedcf96c0649eebb2fda144971a4e2467f4a81ae69d47e259d54a43cadef06
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 16.96
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS the two ratio spans meet only at 0, the chirality cap lies outside their sum, and the two excluded kernels sit on the swapped-orthogonal and cap generators
+PASS the six-generator map has rank 42 and kernel equal to the two partner spans, so a vector in both spans has partner rank 10 and a vector in one span has partner rank 7
+PASS the chirality map has rank 49 and kernel equal to the even space on the chirality block, so the chirality cap plus a nonzero sum vector has partner rank 10
+PASS the swapped-orthogonal generator plus the opposite oblique-matched generator against the oblique-matched generator has centre pairs (0, 0) and (2, 2) and cross sum 4
+PASS the chirality cap plus the swapped-orthogonal generator against the sign product has centre pairs (-1, -1) and (-1, -1) and cross sum 2
+BOTH witness [(0, 0), (2, 2)] 4
+CHI witness [(-1, -1), (-1, -1)] 2
+TOTAL: PASS=8 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

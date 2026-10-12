@@ -1,0 +1,33 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_opposite_height_basis_mixtures_product_means_2026_10_10.py
+runner_sha256: fbb1e0099a1772d6808ea9e48324414ce1196bf32ef7a84137f0030466097c39
+input_fingerprint_sha256: 14fbebd61d4a4d8f7179f050fcca3e09b83dab0c0c7dc3ec829bbaed714e41ca
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 2.39
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each basis kernel is soldered, bond-symmetric, and slice-zero
+PASS the ten kernels take the stated values and overlap on one bond
+PASS the equal-coefficient mixture is strictly positive and every one- and two-neighbour mean is 1
+PASS coefficient 2 on the chirality cap is not strictly positive and still has those means equal to 1
+PASS the integer coefficient box 1 through 10 has every one- and two-neighbour mean equal to 1
+OVERLAP bond (1, (-1, 0, 0), (-1, -3, -2), (1, -3, 2), 1, -2)
+SPLIT bond (1, (-1, 0, 0), (-1, -3, -2), (1, -3, -2), -1, 0)
+WITNESS coefficients chi=1/32 ts=1/32 prod=1/32 matched=1/32 swapped=1/32 parallel=1/32 oblique=1/32 swapped_dot=1/32 orthogonal=1/32 scaled=1/32
+WITNESS values 29/32 15/16 31/32 1 33/32 17/16 19/16
+WITNESS sample moments 1 1
+INTEGER coefficients chi=1 ts=2 prod=3 matched=4 swapped=5 parallel=6 oblique=7 swapped_dot=8 orthogonal=9 scaled=10
+INTEGER sample moments 1 1
+TOTAL: PASS=8 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

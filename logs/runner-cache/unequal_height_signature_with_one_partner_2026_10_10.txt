@@ -1,0 +1,100 @@
+===== runner cache v1 =====
+runner: scripts/unequal_height_signature_with_one_partner_2026_10_10.py
+runner_sha256: d85e777fc4be6415f49dda4dc0bd54518032dce0e782ea7551eb10c1f444555e
+input_fingerprint_sha256: fea9775bda3cfeb8f528f67437b2db9e0b6768e2a6bdee1ed5a7576b067b881d
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 34.62
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS height signatures number 21
+PASS the signatures partition 84 bond orbits
+PASS six opposite, three equal, and twelve unequal signatures
+PASS the corrected direct monomial test certifies 168 pairs and leaves 72 undecided
+DIRECT_TEST_UNRESOLVED (-3, -2) (-3, -1)
+DIRECT_TEST_UNRESOLVED (-3, -2) (-3, 1)
+DIRECT_TEST_UNRESOLVED (-3, -2) (-3, 2)
+DIRECT_TEST_UNRESOLVED (-3, -2) (-1, -2)
+DIRECT_TEST_UNRESOLVED (-3, -2) (1, -2)
+DIRECT_TEST_UNRESOLVED (-3, -2) (2, -3)
+DIRECT_TEST_UNRESOLVED (-3, -1) (-3, -2)
+DIRECT_TEST_UNRESOLVED (-3, -1) (-3, 1)
+DIRECT_TEST_UNRESOLVED (-3, -1) (-3, 2)
+DIRECT_TEST_UNRESOLVED (-3, -1) (-2, -1)
+DIRECT_TEST_UNRESOLVED (-3, -1) (1, -3)
+DIRECT_TEST_UNRESOLVED (-3, -1) (1, -2)
+DIRECT_TEST_UNRESOLVED (-3, 1) (-3, -2)
+DIRECT_TEST_UNRESOLVED (-3, 1) (-3, -1)
+DIRECT_TEST_UNRESOLVED (-3, 1) (-3, 2)
+DIRECT_TEST_UNRESOLVED (-3, 1) (-2, 1)
+DIRECT_TEST_UNRESOLVED (-3, 1) (-1, -3)
+DIRECT_TEST_UNRESOLVED (-3, 1) (-1, -2)
+DIRECT_TEST_UNRESOLVED (-3, 2) (-3, -2)
+DIRECT_TEST_UNRESOLVED (-3, 2) (-3, -1)
+DIRECT_TEST_UNRESOLVED (-3, 2) (-3, 1)
+DIRECT_TEST_UNRESOLVED (-3, 2) (-2, -3)
+DIRECT_TEST_UNRESOLVED (-3, 2) (-2, -1)
+DIRECT_TEST_UNRESOLVED (-3, 2) (-2, 1)
+DIRECT_TEST_UNRESOLVED (-2, -3) (-3, 2)
+DIRECT_TEST_UNRESOLVED (-2, -3) (-2, -1)
+DIRECT_TEST_UNRESOLVED (-2, -3) (-2, 1)
+DIRECT_TEST_UNRESOLVED (-2, -3) (-1, -3)
+DIRECT_TEST_UNRESOLVED (-2, -3) (1, -3)
+DIRECT_TEST_UNRESOLVED (-2, -3) (2, -3)
+DIRECT_TEST_UNRESOLVED (-2, -1) (-3, -1)
+DIRECT_TEST_UNRESOLVED (-2, -1) (-3, 2)
+DIRECT_TEST_UNRESOLVED (-2, -1) (-2, -3)
+DIRECT_TEST_UNRESOLVED (-2, -1) (-2, 1)
+DIRECT_TEST_UNRESOLVED (-2, -1) (1, -3)
+DIRECT_TEST_UNRESOLVED (-2, -1) (1, -2)
+DIRECT_TEST_UNRESOLVED (-2, 1) (-3, 1)
+DIRECT_TEST_UNRESOLVED (-2, 1) (-3, 2)
+DIRECT_TEST_UNRESOLVED (-2, 1) (-2, -3)
+DIRECT_TEST_UNRESOLVED (-2, 1) (-2, -1)
+DIRECT_TEST_UNRESOLVED (-2, 1) (-1, -3)
+DIRECT_TEST_UNRESOLVED (-2, 1) (-1, -2)
+DIRECT_TEST_UNRESOLVED (-1, -3) (-3, 1)
+DIRECT_TEST_UNRESOLVED (-1, -3) (-2, -3)
+DIRECT_TEST_UNRESOLVED (-1, -3) (-2, 1)
+DIRECT_TEST_UNRESOLVED (-1, -3) (-1, -2)
+DIRECT_TEST_UNRESOLVED (-1, -3) (1, -3)
+DIRECT_TEST_UNRESOLVED (-1, -3) (2, -3)
+DIRECT_TEST_UNRESOLVED (-1, -2) (-3, -2)
+DIRECT_TEST_UNRESOLVED (-1, -2) (-3, 1)
+DIRECT_TEST_UNRESOLVED (-1, -2) (-2, 1)
+DIRECT_TEST_UNRESOLVED (-1, -2) (-1, -3)
+DIRECT_TEST_UNRESOLVED (-1, -2) (1, -2)
+DIRECT_TEST_UNRESOLVED (-1, -2) (2, -3)
+DIRECT_TEST_UNRESOLVED (1, -3) (-3, -1)
+DIRECT_TEST_UNRESOLVED (1, -3) (-2, -3)
+DIRECT_TEST_UNRESOLVED (1, -3) (-2, -1)
+DIRECT_TEST_UNRESOLVED (1, -3) (-1, -3)
+DIRECT_TEST_UNRESOLVED (1, -3) (1, -2)
+DIRECT_TEST_UNRESOLVED (1, -3) (2, -3)
+DIRECT_TEST_UNRESOLVED (1, -2) (-3, -2)
+DIRECT_TEST_UNRESOLVED (1, -2) (-3, -1)
+DIRECT_TEST_UNRESOLVED (1, -2) (-2, -1)
+DIRECT_TEST_UNRESOLVED (1, -2) (-1, -2)
+DIRECT_TEST_UNRESOLVED (1, -2) (1, -3)
+DIRECT_TEST_UNRESOLVED (1, -2) (2, -3)
+DIRECT_TEST_UNRESOLVED (2, -3) (-3, -2)
+DIRECT_TEST_UNRESOLVED (2, -3) (-2, -3)
+DIRECT_TEST_UNRESOLVED (2, -3) (-1, -3)
+DIRECT_TEST_UNRESOLVED (2, -3) (-1, -2)
+DIRECT_TEST_UNRESOLVED (2, -3) (1, -3)
+DIRECT_TEST_UNRESOLVED (2, -3) (1, -2)
+DIRECT_TEST_COUNTS certified 168 unresolved 72
+PASS an equal-height signature is not forced by this square test beside one opposite partner
+PASS a one-signature stand-in is not this pair count
+TOTAL: PASS=9 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

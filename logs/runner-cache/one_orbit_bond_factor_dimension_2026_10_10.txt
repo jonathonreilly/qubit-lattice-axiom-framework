@@ -1,0 +1,32 @@
+===== runner cache v1 =====
+runner: scripts/one_orbit_bond_factor_dimension_2026_10_10.py
+runner_sha256: 1788d637517f9e6817c803c29dc08d7f6d4426f9e9e4c785bbf67a31e5e5ea01
+input_fingerprint_sha256: de2264ce7a65110bd23773c657ea3f37baa237826d8ed19dcf597bbc6d3960db
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.67
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS stabilizer of the seed is trivial
+PASS axis swap of the seed is outside this orbit
+PASS six axis directions
+PASS six orbits of a direction and one record
+PASS bond-symmetric covariant dimension is 84
+PASS 60 orbits have 24 images and 24 orbits have 12
+PASS no bond equals its reverse
+PASS ordered covariant bonds form 144 orbits
+PASS six distinct normalisation rows
+PASS normalisation rank is 6
+PASS each normalisation row sums to 24
+PASS a one-dimensional stand-in is not this space
+TOTAL: PASS=14 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_lower_height_crosses_outside_five_kernels_2026_10_10.py
+runner_sha256: aa4339e9c1760f3ee90fe878fd89753a907e52cc7027d81c0d2a57a5ad60ac20
+input_fingerprint_sha256: 00d6fa704009725f57e3058ede1f4caf26a078ae9ae5b7a6d16728777ce18a66
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 14.02
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS all four crosses are independent of the frame sending e_z to d
+PASS all four crosses are soldered under proper rotations
+PASS all four crosses are bond-symmetric
+PASS each cross has at most one live direction and every left slice sums to 0
+PASS at coefficient 1/2 each cross takes values 1/2, 1, and 3/2
+PASS every far-end sum equals 48
+PASS nine bonds have determinant 8 against the five kernels
+TOTAL: PASS=10 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

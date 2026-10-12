@@ -1,6 +1,6 @@
 {
- "edge_count": 15558,
- "node_count": 6941,
+ "edge_count": 15805,
+ "node_count": 7023,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2682,6 +2682,10 @@
    "deps_hash": "808c1ccb6109",
    "out_degree": 1
   },
+  "cap_span_order_blind_axes_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
+  },
   "capture_deficit_exact_tail_accounting_bounded_theorem_note_2026-06-12": {
    "deps_hash": "fc0f62cb0f8d",
    "out_degree": 3
@@ -2953,6 +2957,278 @@
   "chiral_layer_oscillation_2026-04-09": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "chiral_pair_bond_factor_dimension_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
+  },
+  "chiral_pair_both_swapped_dots_both_caps_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_both_swapped_dots_each_cap_positive_multiple_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_both_swapped_dots_scale_two_cap_multiples_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_both_swapped_dots_thrice_each_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_both_swapped_dots_thrice_one_cap_other_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_both_swapped_dots_thrice_one_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_both_swapped_dots_twice_each_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_both_swapped_dots_twice_one_cap_other_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_both_swapped_dots_twice_one_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_both_swapped_dots_two_cap_multiples_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_bounded_parallel_scale_unequal_dot_caps_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_cap_ratio_chirality_scale_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_cap_sum_chirality_scale_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_chi_ts_matched_line_cross_moments_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "889f73d5d53c",
+   "out_degree": 4
+  },
+  "chiral_pair_chi_ts_matched_span_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "3d0e417d375a",
+   "out_degree": 3
+  },
+  "chiral_pair_chi_ts_twice_matched_line_cross_moments_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "b39d8220dbf6",
+   "out_degree": 4
+  },
+  "chiral_pair_chi_twice_ts_matched_line_cross_moments_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "de56e0d12f1b",
+   "out_degree": 4
+  },
+  "chiral_pair_chi_twice_ts_twice_matched_line_cross_moments_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "6e9e88396a5e",
+   "out_degree": 4
+  },
+  "chiral_pair_cross_height_cap_mixture_product_means_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "47c28a336ede",
+   "out_degree": 4
+  },
+  "chiral_pair_cross_height_parity_span_cross_moments_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "96b7746df63d",
+   "out_degree": 4
+  },
+  "chiral_pair_dot_chirality_scale_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_even_both_spans_chirality_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_even_both_spans_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_even_one_span_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_even_span_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "02e1180c1a5c",
+   "out_degree": 3
+  },
+  "chiral_pair_excluded_kernel_span_cross_moments_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "75525bf61ec1",
+   "out_degree": 4
+  },
+  "chiral_pair_first_second_even_dot_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_first_third_even_dot_family_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_height_line_order_blind_cut_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_lower_height_caps_outside_nine_kernels_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_lower_height_crosses_outside_five_kernels_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_matched_oblique_dot_outside_eighteen_kernels_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_mixed_even_rank_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_mixed_parity_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8259e48188f8",
+   "out_degree": 3
+  },
+  "chiral_pair_odd_space_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "7a304fc545c5",
+   "out_degree": 3
+  },
+  "chiral_pair_one_parity_one_excluded_cross_moments_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "a8dbf1667136",
+   "out_degree": 4
+  },
+  "chiral_pair_one_swapped_dot_both_caps_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_each_cap_positive_multiple_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_one_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_scale_two_cap_multiples_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_thrice_each_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_thrice_one_cap_other_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_thrice_other_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_thrice_same_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_twice_each_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_twice_one_cap_other_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_twice_other_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_twice_same_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_one_swapped_dot_two_cap_multiples_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_opposite_height_basis_mixtures_product_means_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "bcc638123a3f",
+   "out_degree": 4
+  },
+  "chiral_pair_orthogonal_swapped_cross_outside_twenty_four_kernels_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_parallel_transverse_dot_outside_fifteen_kernels_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_ratio_span_sum_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "2980de49e84f",
+   "out_degree": 3
+  },
+  "chiral_pair_scaled_cross_dot_bases_opposite_height_ansatz_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_second_third_even_dot_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_sign_product_dot_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_sign_product_outside_both_caps_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_source_same_mixed_even_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_swapped_cross_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "95da1868a9cc",
+   "out_degree": 3
+  },
+  "chiral_pair_swapped_dot_one_cap_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_swapped_transverse_dot_outside_twenty_one_kernels_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_third_even_dot_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
+  },
+  "chiral_pair_transverse_crosses_outside_three_caps_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_transverse_sign_outside_cap_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "41027eb0d307",
+   "out_degree": 3
+  },
+  "chiral_pair_twice_chi_ts_matched_line_cross_moments_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "2daef32d9e7f",
+   "out_degree": 4
+  },
+  "chiral_pair_two_parity_excluded_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "e4033f935191",
+   "out_degree": 4
+  },
+  "chiral_pair_unequal_swapped_dot_scales_two_cap_multiples_partner_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "8817e2ad5d19",
+   "out_degree": 3
   },
   "chiral_split_mass_gravity_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5816,6 +6092,10 @@
   },
   "epsstar_sommerfeld_t0_boundary_derivation_bounded_note_2026-06-12": {
    "deps_hash": "fa5aa0d7f9b9",
+   "out_degree": 3
+  },
+  "equal_height_signature_with_one_partner_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "5859f1e27606",
    "out_degree": 3
   },
   "equivalence_principle_harness_note": {
@@ -13918,6 +14198,10 @@
    "deps_hash": "7c11d8d637c4",
    "out_degree": 1
   },
+  "lower_height_transverse_crosses_outside_the_modulus_three_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
+  },
   "lp_identification_fails_off_m0_bounded_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -14277,6 +14561,14 @@
   "mixed_os_transfer_representation_bounded_note_2026-05-30": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "modulus_three_complement_mixture_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "9ac295ff0640",
+   "out_degree": 4
+  },
+  "modulus_three_triple_complement_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "5859f1e27606",
+   "out_degree": 3
   },
   "momentum_charge_commute_theorem_note_2026-05-02": {
    "deps_hash": "ec6690abc5b2",
@@ -15530,12 +15822,20 @@
    "deps_hash": "8ab2176d839a",
    "out_degree": 2
   },
+  "one_hot_cap_pair_kernel_span_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
+  },
   "one_link_exponential_moment_bound_bounded_theorem_note_2026-09-24": {
    "deps_hash": "fa64a37ff82b",
    "out_degree": 3
   },
   "one_one_two_proper_orbit_equals_mirror_orbit_bounded_theorem_note_2026-10-10": {
    "deps_hash": "53709bc2a380",
+   "out_degree": 2
+  },
+  "one_orbit_bond_factor_dimension_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
    "out_degree": 2
   },
   "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13": {
@@ -15589,6 +15889,14 @@
   "openreference_patchgraph_four_rail_signed_clifford_equivalence_cycle706_note_2026-07-26": {
    "deps_hash": "a9cb5a27b029",
    "out_degree": 4
+  },
+  "opposite_cap_cross_mixture_two_live_directions_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
+  },
+  "opposite_cap_lines_outside_the_three_cap_span_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
   },
   "optical_reference_energy_limits_for_original_record_counts_bounded_theorem_note_2026-09-24": {
    "deps_hash": "ba19981f5a4e",
@@ -19062,6 +19370,10 @@
    "deps_hash": "4cd2a98ca87c",
    "out_degree": 1
   },
+  "single_height_signature_order_blind_kernel_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
+  },
   "site_license_tick_dichotomy_all_periods_bounded_theorem_note_2026-06-11": {
    "deps_hash": "71548c1b3e14",
    "out_degree": 7
@@ -20118,6 +20430,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "swapped_transverse_crosses_outside_the_matched_crosses_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
+  },
   "symmetry_broken_ensembles_cycle763_bounded_theorem_note_2026-07-28": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -20678,6 +20994,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "three_cap_order_blind_lines_on_one_orbit_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
+   "out_degree": 2
+  },
   "three_family_card_missing_distance_live_bridge_note_2026-06-18": {
    "deps_hash": "acb9533ed41f",
    "out_degree": 1
@@ -20808,6 +21128,10 @@
   },
   "transmon_calibration_holdout_bounded_theorem_note_2026-09-26": {
    "deps_hash": "131c8f55b2d8",
+   "out_degree": 2
+  },
+  "transverse_cross_kernel_outside_six_caps_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "d211c1597417",
    "out_degree": 2
   },
   "triple_stack_collapse_scaling_note": {
@@ -20952,6 +21276,10 @@
   },
   "u_integration_reading_blind_and_dictionary_blind_on_corner_transfer_bounded_note_2026-06-12": {
    "deps_hash": "311d6b921eb1",
+   "out_degree": 3
+  },
+  "unequal_height_signature_with_one_partner_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "5859f1e27606",
    "out_degree": 3
   },
   "ungated_sum_of_squares_and_tuning_bounded_theorem_note_2026-09-24": {

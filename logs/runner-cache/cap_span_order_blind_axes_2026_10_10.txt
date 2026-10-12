@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/cap_span_order_blind_axes_2026_10_10.py
+runner_sha256: 484c8fd35f573aad4843d3e04ed7308fd016eb3ec26fcddf49eb273420d8494a
+input_fingerprint_sha256: df0b88614a74cc456041a39bd882ff79e32dead02857add0b713962a7827e5b8
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS one modulus cap is live on a direction
+PASS each positive-axis cap has mean 0
+PASS perpendicular caps correlate by 1/24 off diagonal
+PASS the triple correlations are the three modulus cycles
+PASS equal cap weights have triple mean 1/8
+PASS each opposite cap has a sign of +1
+PASS moduli 1 and 2 have two-neighbour moment 13/12
+PASS the cancelling mixture has three-neighbour moment -3
+TOTAL: PASS=9 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

@@ -1,0 +1,27 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_even_one_span_partner_kernel_2026_10_10.py
+runner_sha256: 6dd0e826a79dd5ad89db42d51413cae5520c2697ad7ab89158bdb4819db38966
+input_fingerprint_sha256: 875f6807c8b496f5fe3476eec4d11beeb763ec8713b977195b494a6e2f9d6b97
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 23.20
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each ratio span meets the even space and the chirality cap in a 7-dimensional sum, and the two excluded kernels sit on the swapped-orthogonal and cap generators
+PASS the seven-generator map has rank 46 and kernel equal to the odd space, the even space, and the partner span, so two nonzero summands have partner rank 10
+PASS the sign product plus the swapped-orthogonal generator against that generator has centre pairs (-1, 0) and (-1, 2) and cross sum -2
+PASS the sign product plus the cap generator against that generator has centre pairs (-3, 0) and (1, -4) and cross sum -4
+DOT witness [(-1, 0), (-1, 2)] -2
+SCALED witness [(-3, 0), (1, -4)] -4
+TOTAL: PASS=7 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

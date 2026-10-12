@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/lower_height_transverse_crosses_outside_modulus_three_2026_10_10.py
+runner_sha256: 4afa70fac45faf3d13a5e05078862e110e050194958d6fab888e97aca2a839b1
+input_fingerprint_sha256: 1a982d59e4925863002a463b4168f673da392c5017af3dfc226dff85fc9ccfa4
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.73
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS proper orbit of (1, 2, 3) has 24 points
+PASS six axis directions
+PASS each direction has four carriers
+PASS soldered extension is well defined at heights 1, 2, and 3
+PASS the height-1 and height-2 kernels are bond-symmetric
+PASS a matched transverse pair has nonzero cross at heights 1 and 2
+PASS kernel values at heights 1 and 2 lie in {-1, 0, 1}
+PASS each record activates one direction at heights 1 and 2
+PASS every slice has sum 0 at heights 1 and 2
+PASS the height-1 witness bond has value -1
+PASS the height-2 witness bond has value -1
+PASS the height-3 witness bond has value -1
+PASS each lower-height witness slice is orthogonal to the caps and height 3
+PASS the height-1 kernel lies outside the six caps and the modulus-3 cross
+PASS the height-2 kernel lies outside the six caps and the modulus-3 cross
+PASS the nine kernels are linearly independent
+PASS half-parameter factors stay positive
+PASS the sum of the two kernels has two-neighbour moment 23/24
+TOTAL: PASS=19 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

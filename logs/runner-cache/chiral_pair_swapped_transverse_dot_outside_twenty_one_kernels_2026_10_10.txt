@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_swapped_transverse_dot_outside_twenty_one_kernels_2026_10_10.py
+runner_sha256: 9144a6895f2d7d6ef14117c2390e450fc0cdebb8e94617710642ccd73640c328
+input_fingerprint_sha256: 2411b2085376c8d0e7513befa4417c859ba5f9f55d9b0a52b362ab809c36330d
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 13.95
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS each swapped transverse dot is frame-invariant and soldered
+PASS each swapped transverse dot is bond-symmetric
+PASS every left slice sums to 0
+PASS at coefficient 1/2 each swapped transverse dot takes values 1/2, 1, and 3/2
+PASS every far-end sum equals 48
+PASS three height pairs separate each swapped dot from the twenty-one kernels
+PASS each opposite-height pair has the swapped dot at rank 8
+TOTAL: PASS=10 FAIL=0
+per_element: checked exact arithmetic on the explicitly enumerated finite record and bond data above; no continuum or empirical input is tested.
+per_site: checked and not executed — this runner contains no evolving site ensemble; finite centre-record sums are the local mathematical object.
+per_mode: checked and not executed — no momentum spectrum, physical particle mode or dispersion relation is computed in this finite alphabet runner.
+per_block: checked the finite algebraic blocks and coefficient cases described by the named predicates; unlisted support sectors are outside this execution.
+lattice_wide: checked and not executed — no whole-lattice dynamics is simulated; any all-window statement depends on the source proof and its cited converse.
+
+----- stderr -----
+

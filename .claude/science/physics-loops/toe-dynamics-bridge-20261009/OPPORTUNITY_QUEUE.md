@@ -1,19 +1,24 @@
 # Current ranked opportunity queue
 
-1. Publish reviewed threshold and actual square-root sharpness in regular
-   PR9487; preserve full equations, source identities and all failed routes.
-2. Package the reviewed EX reduction and PC convergence in regular PR9486.
-   Detector convergence now has a direct proof; no-undetected-state ND remains.
-3. Finish and independently check construction of the selected scattering
-   projection from a rich countable family of positive detectors. Keep the
-   narrow-energy filtering and ordered resolvent limits explicit.
-4. Attack ND or an energy-capture estimate under actual microscopic premises.
-   A gap and isometry alone do not imply coverage or full-GNS exhaustion.
-5. Exact actual coefficients or larger-time boost sharpness are secondary
-   to the microscopic completeness bridge. Growing-window optimality is open.
+1. Finish source-bound independent review of the detector construction of the
+   selected scattering projection. If accepted, extend regular PR9486 with its
+   full proof, actual finite controls and explicit ordered-limit boundary.
+2. Independently check the frozen index-to-selected-complement inequalities,
+   including the optional finite-block defect. This can retire an unsuitable
+   common-rational-centre ND target without claiming a universal no-go.
+3. Derive almost-local filters for arbitrary isolated joint centre characters,
+   including irrational phases, and verify the exact creator/Fock/detector
+   assumptions. Actual microscopic realizations and channel completeness remain.
+4. Use those results to choose an enlarged-channel or microscopic construction
+   target; do not repeat conditional completeness as if it established a model.
+5. Actual leading boost coefficients and longer-time sharpness remain secondary.
+   Existing small-time square-root order is now reviewed and published.
 
-Ten regular PRs9478-9487 remain open and unmerged. Main and instruction bytes
-unchanged01:32UTC; concurrent9477 at114c9718 has separate partner-rank work.
-Preserve failed full inverse, coarse propagator comparison, finite-bath
-recurrence, strong-adjoint shortcut and all previous adverse witnesses.
-One live checkpoint remains here; publication packets are frozen milestones.
+Ten regular PRs9478–9487 are open and unmerged. Threshold/sharpness433f641f
+and E/PC296155ed are published. Main and instructions unchanged02:00UTC;
+concurrent9476 now plans a separate field-dependent gravity Ward calculation,
+and9477 retains its chiral partner-rank lane. Avoid duplicate work.
+
+Preserve all earlier failed routes and counterexamples. No applied audit verdict,
+main push, science merge, physical axiom edit, other-chat message or deadline
+extension. One live checkpoint remains here. Fixed deadline12October16:00:52UTC.

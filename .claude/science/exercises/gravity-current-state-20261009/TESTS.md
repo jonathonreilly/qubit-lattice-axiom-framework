@@ -2943,3 +2943,24 @@ All five were refereed by codex gpt-5.6-sol at xhigh. Files: `agents/C5_R4-*`.
 - **LRL:** sub-volume-like through T = 108, compatible with the gap and P-L′. The asymptotic law is unsettled; Lemma V is open.
 - **Data and consistency:** a Bianchi-completion problem (a 17-decade gap) and CMB problems. Neither excludes the whole class.
 - **No contradiction with the Λ = 3/R² note.** That note is conditional.
+
+### C5 Round 5, item 4 and mid-campaign synthesis (pre-registered 14:07Z; launched now)
+
+**R5-4. A law on timelike-link cells that generates a mass shell (the class R5-1's worker leaves open; its referee is pending).**
+- Put finite-dimensional degrees of freedom on timelike links (or Lorentzian simplices) of an L₇ realization, with non-commuting timelike structure. Give them a Γ⋉L₇-covariant law: quasilocal on links where possible.
+- Does any such law have a one-particle mass shell with a decaying two-point function and a covariant positive-energy momentum, without supplying a continuum field as data?
+- Candidates:
+  - a quantum walk or transfer matrix on the link graph;
+  - a Gaussian (free) link field with covariant link-link couplings;
+  - a link "spin foam" amplitude.
+
+Readings:
+- **PASS:** an explicit link law, not continuum-supplied, with a mass shell and a covariant charge, checked.
+- **FAIL:** a no-go covering quasilocal covariant link laws in a stated class (refereed).
+- **INCONCLUSIVE:** otherwise.
+
+**S5. Mid-campaign synthesis** (same family; it gives no verdicts).
+- Read all C5 results through round 4, plus round 5 as available.
+- State what is now forced, what is dead, and what is open for sets A, B, B′ (LRL) and C.
+- Rank the next decisive tests, with the big open problems first-class.
+- Draft round-6 pre-registrations with fixed readings.

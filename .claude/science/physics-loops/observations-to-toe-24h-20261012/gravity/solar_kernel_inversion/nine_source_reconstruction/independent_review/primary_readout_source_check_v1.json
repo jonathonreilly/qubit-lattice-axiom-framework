@@ -1,0 +1,15 @@
+{
+  "url": "https://arxiv.org/html/0901.4222v1",
+  "title": "The rotation curves shapes of late-type dwarf galaxies",
+  "sections_read": [
+    "3.1.2",
+    "3.5"
+  ],
+  "accessed_utc": "2026-10-12",
+  "findings": [
+    "The reduction model cubes use a constant Gaussian dispersion of 8 km/s.",
+    "The pressure relation is v_c^2 = v_phi^2 - sigma^2 [d ln rho/d ln R + d ln sigma^2/d ln R]. Constant height and dispersion give the slope illustration used in the parent note.",
+    "UGC 7577 is among the exceptions with maximum asymmetric-drift correction above 3 km/s. The authors did not apply these corrections. These sections give no actual correction magnitude at the frozen 0.94 kpc bin."
+  ],
+  "scope": "Targeted primary-source verification only. No new kinematic data, fitted pressure correction or HI-profile transfer."
+}

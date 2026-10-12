@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-12T20:05:54.909451+00:00",
+  "identity": {
+    "name": "KK98-251",
+    "solver_sha256": "701bc4d1ba659f9b25cd98855547864300b83c2f002a477e7bc3b2b5ac3f7b00",
+    "source_receipt_sha256": "90c979ba22ac43a90cd691cb0a586f7b8766b711bb017f2b7949d5eab79179dd",
+    "source_npz_sha256": "217bd10ba3fa8f9972d047081342c023ee7524c16b6d8c685d6d9fa49fd2959f",
+    "U": 0.5605122519882025,
+    "settings": {
+      "nr": 1536,
+      "nc": 512,
+      "lmax": 256,
+      "hankel": 4096,
+      "rmin": 0.003056640625,
+      "rmax": 50.08
+    }
+  },
+  "cache_sha256": "7d2d254a35f74be40c8be7e8d1097cb1fc11b61496658ce3938631d45da7e57c"
+}

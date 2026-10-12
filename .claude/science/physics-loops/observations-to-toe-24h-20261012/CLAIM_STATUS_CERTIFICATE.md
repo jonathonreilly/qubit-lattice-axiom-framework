@@ -8,19 +8,38 @@ reachability_to_target: unknown_frontier
 conditional_surface_status: "Candidate consequences require their explicit new assumptions and physical observation bridges."
 hypothetical_axiom_status: "New physical assumptions are authorized for exploration and testing; no framework adoption or derivation is claimed."
 admitted_observation_status: "Primary observations may constrain candidates; calibration inputs are not predictions."
-claim_type_reason: "Explicit finite-source and common-mediator constructions have checked conditional consequences; the inverse TOE target remains open."
+claim_type_reason: "Conditional reconstruction and bounded mathematical consequences; the inverse TOE target remains open."
+proposal_allowed: false
+proposal_allowed_reason: "Physical identifications and fitted inputs remain load-bearing; no direct retained-grade closure."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
 
-Author checks: finite-source gravity benchmark, positive scalar response/coherence,
-and finite local spectral approximations have executable checks recorded in
-REVIEW_HISTORY.md. The first two have focused independent mathematical checks;
-the finite approximation check is in progress. These are not independent
-observational validations. Formal audit is not invoked. No new physical premise
-is adopted and no effective retained status is claimed.
+The direct parent personally authored the constrained dynamics, both frozen
+transfer readouts, six-case nine-source reconstruction, rational dual
+certificates and pressure sensitivity. Earlier work inherited at handoff is
+distinguished from later personally rechecked computations in HANDOFF.md.
+Independent checks do not substitute for parent authorship or formal audit.
 
-The gravitational benchmark is not a Cassini fit. The scalar continuum is not
-inferred uniquely from observations. Composition summary comparisons and neutrino
-ingestion/propagation work remain qualified agent research until their exact
-inputs, derivations and independent receipts are read and integrated.
+The constrained energy/support proofs and frozen transfer arithmetic have
+complete focused independent reports read by the parent. Nine-source
+independent numerical/dual and pressure checks agree; the parent read the
+full final report and affected-corollary confirmation. This is source review only.
+PR9501 and PR9503 retain their completed scoped reviews and exact identities.
+
+Dependency classes for current gravity work: chosen static response and
+preferred time are candidate premises; measured source/velocity/error arrays
+are exposed empirical inputs; fixed source reconstructions and circular-speed
+identification are model/readout assumptions; the finite LP coefficients are
+supplied rationalized numeric inputs for the exact certificate theorem.
+No exact continuum error bound or full empirical likelihood is inferred.
+
+Strict N,D positivity is a hypothesis of the checked energy theorem. The new
+D optima touch zero and the M optima have negative D, so neither inherits it.
+Finite-matrix impossibility is not universal gravity exclusion. Only one
+dynamical kinetic family was attacked; broad no-go coverage remains a
+partial attempt with named untested routes. New pressure sensitivity is a
+necessary condition, not a measured correction or existence theorem.
+
+Metric/lensing, radiation, matter/gauge, cosmology and common physical
+parameters remain open. No TOE or retained/promoted proposal is asserted.

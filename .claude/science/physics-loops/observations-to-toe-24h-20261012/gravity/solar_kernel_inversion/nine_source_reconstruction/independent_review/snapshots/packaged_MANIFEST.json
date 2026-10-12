@@ -1,0 +1,185 @@
+{
+  "at": "2026-10-12T22:25:36.034792+00:00",
+  "files": [
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/operator_DDO168_v1.json",
+      "copy": "evidence_v1/operator_DDO168_v1.json",
+      "sha256": "70f0475aaf8c5accffb21c8944a1189e6068ef7e5e7f58c969a44c12039ca3cc"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/operator_NGC3949_v1.json",
+      "copy": "evidence_v1/operator_NGC3949_v1.json",
+      "sha256": "1da094d09b8940605c5d9a1e4b45ed53d72663ea74fc4eb62cefca70fc6e97a5"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/fields_DDO168_v1.json",
+      "copy": "evidence_v1/fields_DDO168_v1.json",
+      "sha256": "ef4890bb147113e166ae3120e1234a2807db500fd4d8d81c5a49cf4dcf76cc5c"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/fields_UGC08837_v1.json",
+      "copy": "evidence_v1/fields_UGC08837_v1.json",
+      "sha256": "df3890308d47cabf4f21bbd96422560d836f5a650420f829189accbf07603d87"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/fields_NGC3949_v1.json",
+      "copy": "evidence_v1/fields_NGC3949_v1.json",
+      "sha256": "2fc6c57a74d6289bbe006bf8e5d8bc1de277caec143c15995d9f505b06a4d5d2"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/COMPUTE_STATUS.json",
+      "copy": "evidence_v1/COMPUTE_STATUS.json",
+      "sha256": "9c24a8589b952a27b9391eaf5619377d64896d4c0e8d8ea7d7d83df57f5d3cdb"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/PRESSURE_SENSITIVITY_v1.json",
+      "copy": "evidence_v1/PRESSURE_SENSITIVITY_v1.json",
+      "sha256": "03106e69c99aaeb9152bd0eebe7a4a0fde6c63d8a12c0e9af4b0566fa07eb06e"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/SOLVER_STATUS_REPLAY_v1.json",
+      "copy": "evidence_v1/SOLVER_STATUS_REPLAY_v1.json",
+      "sha256": "55a61793d61601dd7e30af6b83fc4a9f73dbf1e41dcc26bfc8519e67ee8b56f3"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/operator_UGC08837_v1.json",
+      "copy": "evidence_v1/operator_UGC08837_v1.json",
+      "sha256": "a17f34e65c5be84d21f9daf6c11a668569fd70c96a7b7ca12ba53f43f32fc191"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/operator_UGC06667_v1.json",
+      "copy": "evidence_v1/operator_UGC06667_v1.json",
+      "sha256": "c06638fd3efe8f68a3d2ad425cc00869be7985a2be1eb060e9b289478660f50e"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/fields_NGC2976_v1.json",
+      "copy": "evidence_v1/fields_NGC2976_v1.json",
+      "sha256": "365eec08bc76ffbc42ad88c29a9fb619a1b96900ef1e548e4b0f64420ddf837e"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/fields_DDO064_v1.json",
+      "copy": "evidence_v1/fields_DDO064_v1.json",
+      "sha256": "49915076dcfff46281142ea410a45055eb286eed41387b74575de2e568ebd1b7"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/operator_DDO064_v1.json",
+      "copy": "evidence_v1/operator_DDO064_v1.json",
+      "sha256": "c0312db729d7baf2b311726dc3b281e0813c82a0ef548a0e22a06db23521bd51"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/RESULTS_v1.json",
+      "copy": "evidence_v1/RESULTS_v1.json",
+      "sha256": "a19385766f5fbc11dd403410b6b3008e0fa0b88987943e70373dd34931ee68a4"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/fields_UGC07577_v1.json",
+      "copy": "evidence_v1/fields_UGC07577_v1.json",
+      "sha256": "f974175258b838141d532b4f79075bb51fb91589312e9c4f0d76023b52ac52a9"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/CANDIDATES_v1.json",
+      "copy": "evidence_v1/CANDIDATES_v1.json",
+      "sha256": "6a51ac43d38def7f745f6e34367ab9474311ff9fb28103bacdbe0e72d01c3263"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/fields_UGC06667_v1.json",
+      "copy": "evidence_v1/fields_UGC06667_v1.json",
+      "sha256": "60092121b88592410a9286309d5ca1235a9ac1bbcf96e8e7e12234555f5cc312"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/fields_KK98-251_v1.json",
+      "copy": "evidence_v1/fields_KK98-251_v1.json",
+      "sha256": "27b28158604f1edd18c8674e9159b683c5cc05425af474d5a2a3c755204ac2b0"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/operator_NGC3972_v1.json",
+      "copy": "evidence_v1/operator_NGC3972_v1.json",
+      "sha256": "554c24e61f1049bfabf55c7306f0e902a33129340108624dc41813d329a051e7"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/FREEZE.json",
+      "copy": "evidence_v1/FREEZE.json",
+      "sha256": "00531ffbeeb01f2d7ef5fd4c535dba72bef7904265a061922a64a61d2d2d3ce0"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/fields_NGC3972_v1.json",
+      "copy": "evidence_v1/fields_NGC3972_v1.json",
+      "sha256": "ced8229c2fb68c0f10acb25f0a36b132694c4aeb70650c115ba96ec5fa69a68e"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_external_solar_certificate.json",
+      "copy": "finite_lp_certificates_v1/D_galaxies_external_solar_certificate.json",
+      "sha256": "d2cf0a4878b066dd02b5c8e8a9100c832b023adea6a98d864bdfc6ed5d432f50"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_external_certificate.json",
+      "copy": "finite_lp_certificates_v1/D_galaxies_external_certificate.json",
+      "sha256": "5c30c6e28f1b9a3c5cab5c57f86d911a8a07b1ef413abc96ff10f8cae5c69399"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_external_matrix.json",
+      "copy": "finite_lp_certificates_v1/D_galaxies_external_matrix.json",
+      "sha256": "54fb33536f09abff4dfaada97b3e839762bde9e57aa44a4b544f7c8e9b1cc2ca"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_only_certificate.json",
+      "copy": "finite_lp_certificates_v1/D_galaxies_only_certificate.json",
+      "sha256": "d0f62840feaa9f5f0fd3110dd5c519beb0b38f728770d3e80a3b54e6e1ad62a4"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_external_solar_matrix.json",
+      "copy": "finite_lp_certificates_v1/D_galaxies_external_solar_matrix.json",
+      "sha256": "b073a248511c736132209d60c09a1e4d4ae9c1e85396ac2fcbc72157bbfd30ac"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_external_matrix.json",
+      "copy": "finite_lp_certificates_v1/M_galaxies_external_matrix.json",
+      "sha256": "5e0a927d805f30725e16f1b780c2b0e6f6aba4e2c556e33c82aec59ec0a72b69"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_only_matrix.json",
+      "copy": "finite_lp_certificates_v1/M_galaxies_only_matrix.json",
+      "sha256": "f75007ce444babe1aac4d96e681ae8d1adb3a62709517438fc4bc46d4fed735e"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/RESULTS.json",
+      "copy": "finite_lp_certificates_v1/RESULTS.json",
+      "sha256": "6263b608a5d67ea88b23492e9f5e350c559ed31f31c3b51ff304b37a8a8b89c7"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_external_solar_matrix.json",
+      "copy": "finite_lp_certificates_v1/M_galaxies_external_solar_matrix.json",
+      "sha256": "3cc51036a89b17535329714aa3d028de04e4f768e5614b3159467ed87642b359"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_external_solar_certificate.json",
+      "copy": "finite_lp_certificates_v1/M_galaxies_external_solar_certificate.json",
+      "sha256": "967190b66fa68012f530e9178825b170d14d4f61e7c31d5c677807fd5602d419"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_external_certificate.json",
+      "copy": "finite_lp_certificates_v1/M_galaxies_external_certificate.json",
+      "sha256": "463a171f57ad06a244f3e8e6012585a6fbe1aed21d9a0df486566a37cfc566b0"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_only_matrix.json",
+      "copy": "finite_lp_certificates_v1/D_galaxies_only_matrix.json",
+      "sha256": "1a23b6f98e2a698c91dc6b142dcae703e9cfc00696d393b243c8960c2ba50d6f"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_only_certificate.json",
+      "copy": "finite_lp_certificates_v1/M_galaxies_only_certificate.json",
+      "sha256": "da9eb1eb36ecc23334b99d6c52cf8881988e5a1180f1e55784addc32b151ebb3"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/direct_nine_source_v1.stdout",
+      "copy": "evidence_v1/direct_nine_source_v1.stdout",
+      "sha256": "9434b9fef33711a38767b9806150591326dcc951bee7d8d222043d02d0d74ef2"
+    },
+    {
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/direct_nine_source_v1.stderr",
+      "copy": "evidence_v1/direct_nine_source_v1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

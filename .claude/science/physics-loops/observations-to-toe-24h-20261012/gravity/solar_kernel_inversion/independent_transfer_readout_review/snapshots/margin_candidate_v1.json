@@ -1,0 +1,53 @@
+{
+  "at": "2026-10-12T20:11:48.617823+00:00",
+  "source_sha256": "9529f3859d62ba03148e02e642cc614f4b80d1e34600272faf81ed2f84aac0e2",
+  "protocol_sha256": "75d11669ced2b3ab386cf43fc186414b54b37bd32021127147a8fa3e3908c622",
+  "parent_fits_sha256": "6b0528745ba0e3ebdc081678821355e54d0d41d8e787cf0e904099942926bcb1",
+  "freeze_sha256": "c2c6a9669d38b52107f35e865dc3dbe973d68448f0b3f0d14e0ef37af33a4833",
+  "external_newtonian_SI": 1.4915242022774435e-10,
+  "status": 0,
+  "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "operator_receipts": {
+    "NGC2976": "6f4015c5cc8c35f37fbb7c6fcffa69a8d409025cc9a73733f394ad105873beff",
+    "UGC07577": "49dce344ef0b102ba8c1c6c9c61387ec933d5287a37bccd18c929b95478dc81d",
+    "KK98-251": "f3b1ea13a65b1bdc2788e070ef3bba3737acd146c1db4b2ecfe1ef6df2d8b29a"
+  },
+  "numerical_candidate_validation_required": true,
+  "primary_max_z": 0.0367710320697293,
+  "secondary_z": 0.0367710220697293,
+  "weights": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.8551088963588468,
+    0.0,
+    0.3370887105890553,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.3820666293142616
+  ],
+  "total_weight": 1.5742642362621637,
+  "max_scaled_primal_violation": 0.0,
+  "galaxy_matrix_margins": {
+    "NGC2976": 0.036771022069729355,
+    "UGC07577": 0.03677397297448697,
+    "KK98-251": 0.07855651198041655
+  },
+  "external_margin": 0.1918307086944663,
+  "solar_margin": 0.03677102206972915,
+  "predicted_external_physical_SI": 2.0613858267822293e-10,
+  "Q2_s_minus2": 5.008790685237409e-27,
+  "force_positive": true,
+  "limits": "Exposed follow-up under its own frozen protocol. Original six fits preserved. Margin has mixed explicitly declared normalizations; it is not a confidence level. Actual candidate fields and original rectangles must be checked before empirical interpretation."
+}

@@ -1,0 +1,1588 @@
+{
+  "utc": "2026-10-12T18:20:46.525640+00:00",
+  "entries": [
+    {
+      "dataset": "forward64",
+      "model": "N",
+      "fixed_U": false,
+      "parameters": {
+        "U": 1.0
+      },
+      "fit": {
+        "loss": 0.05151871868279009,
+        "success": true,
+        "message": "Solution found.",
+        "global_count": 1
+      }
+    },
+    {
+      "dataset": "forward64",
+      "model": "L",
+      "fixed_U": false,
+      "parameters": {
+        "U": 1.0,
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fit": {
+        "loss": 0.05151871868279009,
+        "starts": [
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.05151871868279009,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 0.0
+          },
+          {
+            "x": [
+              0.9999999999999999,
+              0.0,
+              5.632849476722972e-17,
+              1.8671232937750876e-17,
+              0.0,
+              1.2912859970647136e-16,
+              0.0
+            ],
+            "loss": 0.05151871868279011,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 2.0412832741145197e-16
+          },
+          {
+            "x": [
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              1.4118783272614064e-16,
+              1.9577943343341232e-17,
+              0.0,
+              7.142594563581665e-17,
+              0.0
+            ],
+            "loss": 0.05151871868279011,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 2.3219172170529853e-16
+          },
+          {
+            "x": [
+              1.0,
+              1.1897955670498301e-17,
+              1.545002873718872e-16,
+              0.0,
+              1.026147460260495e-16,
+              5.551115123125783e-17,
+              0.0
+            ],
+            "loss": 0.05151871868279011,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 3.2452414029969283e-16
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.7452305475633847e-17,
+              0.0,
+              0.0
+            ],
+            "loss": 0.05151871868279009,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 1.7452305475633847e-17
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.05151871868279009,
+            "success": true,
+            "message": "nested Newtonian control",
+            "sum_weights": 0.0
+          }
+        ],
+        "global_count": 7
+      }
+    },
+    {
+      "dataset": "forward64",
+      "model": "NL",
+      "fixed_U": false,
+      "parameters": {
+        "U": 0.5605122519882025,
+        "a0": 7.658058668049826e-11
+      },
+      "fit": {
+        "loss": 0.010476146622069363,
+        "starts": [
+          {
+            "x": [
+              -10.115881320559822,
+              -0.2514148834589857
+            ],
+            "loss": 0.010476146622069367,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881310864708,
+              -0.25141488991519195
+            ],
+            "loss": 0.010476146622069363,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881310310423,
+              -0.25141489373239917
+            ],
+            "loss": 0.010476146622069367,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881316768649,
+              -0.2514148856617414
+            ],
+            "loss": 0.010476146622069365,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881388677877,
+              -0.25141484527376634
+            ],
+            "loss": 0.01047614662206944,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881303120334,
+              -0.25141489914022846
+            ],
+            "loss": 0.010476146622069369,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881313899367,
+              -0.25141488977209014
+            ],
+            "loss": 0.010476146622069365,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881318109036,
+              -0.25141488637812276
+            ],
+            "loss": 0.010476146622069365,
+            "success": true,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+          },
+          {
+            "x": [
+              -10.115881311817718,
+              -0.2514148925905872
+            ],
+            "loss": 0.010476146622069367,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          }
+        ],
+        "global_count": 2
+      }
+    },
+    {
+      "dataset": "forward64",
+      "model": "N",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5
+      },
+      "fit": {
+        "loss": 0.09257023788437667,
+        "starts": [],
+        "global_count": 0
+      }
+    },
+    {
+      "dataset": "forward64",
+      "model": "L",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5,
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fit": {
+        "loss": 0.09257023788437667,
+        "starts": [
+          {
+            "x": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.09257023788437667,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 0.0
+          },
+          {
+            "x": [
+              0.0,
+              0.0,
+              0.0,
+              8.871414200367772e-17,
+              1.3200755477428761e-16,
+              0.0
+            ],
+            "loss": 0.09257023788437667,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 2.2072169677796533e-16
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              9.705483917317288e-17,
+              0.0,
+              8.11924629375474e-17,
+              3.438416695355718e-16,
+              0.0,
+              3.365837881845468e-16
+            ],
+            "loss": 0.09257023788437668,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 8.586727598308389e-16
+          },
+          {
+            "x": [
+              0.0,
+              1.8218804530809202e-17,
+              6.812030658332612e-17,
+              0.0,
+              5.551115123125783e-16,
+              2.3191762095822743e-17
+            ],
+            "loss": 0.09257023788437668,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 6.646423855225364e-16
+          },
+          {
+            "x": [
+              0.0,
+              3.021598350391274e-17,
+              0.0,
+              6.703862683047898e-17,
+              0.0,
+              0.0
+            ],
+            "loss": 0.09257023788437667,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 9.725461033439173e-17
+          },
+          {
+            "x": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.09257023788437667,
+            "success": true,
+            "message": "nested Newtonian control",
+            "sum_weights": 0.0
+          }
+        ],
+        "global_count": 6
+      }
+    },
+    {
+      "dataset": "forward64",
+      "model": "NL",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5,
+        "a0": 8.533673475349299e-11
+      },
+      "fit": {
+        "loss": 0.010510874949853252,
+        "success": true,
+        "global_count": 1
+      }
+    },
+    {
+      "dataset": "forward96_common",
+      "model": "N",
+      "fixed_U": false,
+      "parameters": {
+        "U": 1.0
+      },
+      "fit": {
+        "loss": 0.051519809788155325,
+        "success": true,
+        "message": "Solution found.",
+        "global_count": 1
+      }
+    },
+    {
+      "dataset": "forward96_common",
+      "model": "L",
+      "fixed_U": false,
+      "parameters": {
+        "U": 1.0,
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fit": {
+        "loss": 0.051519809788155325,
+        "starts": [
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.051519809788155325,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 0.0
+          },
+          {
+            "x": [
+              1.0,
+              1.0143669630096047e-16,
+              0.0,
+              8.077399394701668e-17,
+              6.736876954066585e-18,
+              3.928569422317753e-17,
+              9.71445146547012e-17
+            ],
+            "loss": 0.05151980978815534,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 3.2537777607992246e-16
+          },
+          {
+            "x": [
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              4.4592343894490646e-17,
+              1.852211143096526e-16,
+              0.0,
+              0.0
+            ],
+            "loss": 0.051519809788155325,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 2.298134582041432e-16
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              7.96324899795282e-17,
+              2.526583218317265e-16,
+              7.152986495397861e-17,
+              0.0,
+              9.615518017230814e-18
+            ],
+            "loss": 0.05151980978815534,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 4.1343619478246412e-16
+          },
+          {
+            "x": [
+              1.0,
+              3.4728309977727845e-17,
+              0.0,
+              0.0,
+              0.0,
+              2.044687025219797e-18,
+              4.440892098500626e-16
+            ],
+            "loss": 0.051519809788155325,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 4.808622068530103e-16
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.051519809788155325,
+            "success": true,
+            "message": "nested Newtonian control",
+            "sum_weights": 0.0
+          }
+        ],
+        "global_count": 7
+      }
+    },
+    {
+      "dataset": "forward96_common",
+      "model": "NL",
+      "fixed_U": false,
+      "parameters": {
+        "U": 0.5604578561589963,
+        "a0": 7.658590234112259e-11
+      },
+      "fit": {
+        "loss": 0.010477352271599944,
+        "starts": [
+          {
+            "x": [
+              -10.115851176807775,
+              -0.2514570299671888
+            ],
+            "loss": 0.010477352271599946,
+            "success": true,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+          },
+          {
+            "x": [
+              -10.11585116638477,
+              -0.25145703877948306
+            ],
+            "loss": 0.010477352271599944,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115851177745476,
+              -0.25145702955614463
+            ],
+            "loss": 0.010477352271599944,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115851171651512,
+              -0.2514570352993339
+            ],
+            "loss": 0.010477352271599944,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115851244391472,
+              -0.2514569911656337
+            ],
+            "loss": 0.010477352271600016,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115851164678967,
+              -0.25145703931920066
+            ],
+            "loss": 0.010477352271599946,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115851173332702,
+              -0.2514570360058523
+            ],
+            "loss": 0.010477352271599946,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115851178233877,
+              -0.25145703038381967
+            ],
+            "loss": 0.010477352271599946,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115851182585807,
+              -0.251457025598887
+            ],
+            "loss": 0.010477352271599946,
+            "success": true,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+          }
+        ],
+        "global_count": 2
+      }
+    },
+    {
+      "dataset": "forward96_common",
+      "model": "N",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5
+      },
+      "fit": {
+        "loss": 0.09256976737699221,
+        "starts": [],
+        "global_count": 0
+      }
+    },
+    {
+      "dataset": "forward96_common",
+      "model": "L",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5,
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fit": {
+        "loss": 0.09256976737699221,
+        "starts": [
+          {
+            "x": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.09256976737699221,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 0.0
+          },
+          {
+            "x": [
+              0.0,
+              0.0,
+              2.969783598249247e-16,
+              1.0174385420746308e-16,
+              3.404156016234771e-17,
+              8.673617379884035e-17
+            ],
+            "loss": 0.09256976737699224,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 5.194999479935757e-16
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              8.8156439597026e-18,
+              0.0,
+              0.0,
+              1.3050087137541842e-16,
+              1.0842768016095136e-16,
+              1.9603730531253527e-17
+            ],
+            "loss": 0.09256976737699221,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 2.6734792602732594e-16
+          },
+          {
+            "x": [
+              0.0,
+              0.0,
+              8.443229251328015e-17,
+              4.092296291846172e-17,
+              8.881784197001252e-16,
+              0.0
+            ],
+            "loss": 0.09256976737699221,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 1.013533675131867e-15
+          },
+          {
+            "x": [
+              0.0,
+              9.855490741445957e-18,
+              0.0,
+              3.4630746525043155e-17,
+              6.905743977909918e-17,
+              2.220446049250313e-16
+            ],
+            "loss": 0.09256976737699221,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 3.355882819706196e-16
+          },
+          {
+            "x": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.09256976737699221,
+            "success": true,
+            "message": "nested Newtonian control",
+            "sum_weights": 0.0
+          }
+        ],
+        "global_count": 6
+      }
+    },
+    {
+      "dataset": "forward96_common",
+      "model": "NL",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5,
+        "a0": 8.533462130777585e-11
+      },
+      "fit": {
+        "loss": 0.01051202221632376,
+        "success": true,
+        "global_count": 1
+      }
+    },
+    {
+      "dataset": "forward64_common",
+      "model": "N",
+      "fixed_U": false,
+      "parameters": {
+        "U": 1.0
+      },
+      "fit": {
+        "loss": 0.05151871868279009,
+        "success": true,
+        "message": "Solution found.",
+        "global_count": 1
+      }
+    },
+    {
+      "dataset": "forward64_common",
+      "model": "L",
+      "fixed_U": false,
+      "parameters": {
+        "U": 1.0,
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fit": {
+        "loss": 0.05151871868279009,
+        "starts": [
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.05151871868279009,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 0.0
+          },
+          {
+            "x": [
+              0.9999999999999999,
+              0.0,
+              5.632849476722972e-17,
+              1.8671232937750876e-17,
+              0.0,
+              1.2912859970647136e-16,
+              0.0
+            ],
+            "loss": 0.05151871868279011,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 2.0412832741145197e-16
+          },
+          {
+            "x": [
+              1.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              1.4118783272614064e-16,
+              1.9577943343341232e-17,
+              0.0,
+              7.142594563581665e-17,
+              0.0
+            ],
+            "loss": 0.05151871868279011,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 2.3219172170529853e-16
+          },
+          {
+            "x": [
+              1.0,
+              1.1897955670498301e-17,
+              1.545002873718872e-16,
+              0.0,
+              1.026147460260495e-16,
+              5.551115123125783e-17,
+              0.0
+            ],
+            "loss": 0.05151871868279011,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 3.2452414029969283e-16
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              1.7452305475633847e-17,
+              0.0,
+              0.0
+            ],
+            "loss": 0.05151871868279009,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 1.7452305475633847e-17
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.05151871868279009,
+            "success": true,
+            "message": "nested Newtonian control",
+            "sum_weights": 0.0
+          }
+        ],
+        "global_count": 7
+      }
+    },
+    {
+      "dataset": "forward64_common",
+      "model": "NL",
+      "fixed_U": false,
+      "parameters": {
+        "U": 0.5605122519882025,
+        "a0": 7.658058668049826e-11
+      },
+      "fit": {
+        "loss": 0.010476146622069363,
+        "starts": [
+          {
+            "x": [
+              -10.115881320559822,
+              -0.2514148834589857
+            ],
+            "loss": 0.010476146622069367,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881310864708,
+              -0.25141488991519195
+            ],
+            "loss": 0.010476146622069363,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881310310423,
+              -0.25141489373239917
+            ],
+            "loss": 0.010476146622069367,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881316768649,
+              -0.2514148856617414
+            ],
+            "loss": 0.010476146622069365,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881388677877,
+              -0.25141484527376634
+            ],
+            "loss": 0.01047614662206944,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881303120334,
+              -0.25141489914022846
+            ],
+            "loss": 0.010476146622069369,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881313899367,
+              -0.25141488977209014
+            ],
+            "loss": 0.010476146622069365,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115881318109036,
+              -0.25141488637812276
+            ],
+            "loss": 0.010476146622069365,
+            "success": true,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+          },
+          {
+            "x": [
+              -10.115881311817718,
+              -0.2514148925905872
+            ],
+            "loss": 0.010476146622069367,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          }
+        ],
+        "global_count": 2
+      }
+    },
+    {
+      "dataset": "forward64_common",
+      "model": "N",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5
+      },
+      "fit": {
+        "loss": 0.09257023788437667,
+        "starts": [],
+        "global_count": 0
+      }
+    },
+    {
+      "dataset": "forward64_common",
+      "model": "L",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5,
+        "weights": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "fit": {
+        "loss": 0.09257023788437667,
+        "starts": [
+          {
+            "x": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.09257023788437667,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 0.0
+          },
+          {
+            "x": [
+              0.0,
+              0.0,
+              0.0,
+              8.871414200367772e-17,
+              1.3200755477428761e-16,
+              0.0
+            ],
+            "loss": 0.09257023788437667,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 2.2072169677796533e-16
+          },
+          {
+            "x": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 1000000.0,
+            "success": false,
+            "message": "invalid radial-force start"
+          },
+          {
+            "x": [
+              9.705483917317288e-17,
+              0.0,
+              8.11924629375474e-17,
+              3.438416695355718e-16,
+              0.0,
+              3.365837881845468e-16
+            ],
+            "loss": 0.09257023788437668,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 8.586727598308389e-16
+          },
+          {
+            "x": [
+              0.0,
+              1.8218804530809202e-17,
+              6.812030658332612e-17,
+              0.0,
+              5.551115123125783e-16,
+              2.3191762095822743e-17
+            ],
+            "loss": 0.09257023788437668,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 6.646423855225364e-16
+          },
+          {
+            "x": [
+              0.0,
+              3.021598350391274e-17,
+              0.0,
+              6.703862683047898e-17,
+              0.0,
+              0.0
+            ],
+            "loss": 0.09257023788437667,
+            "success": true,
+            "message": "Optimization terminated successfully",
+            "sum_weights": 9.725461033439173e-17
+          },
+          {
+            "x": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "loss": 0.09257023788437667,
+            "success": true,
+            "message": "nested Newtonian control",
+            "sum_weights": 0.0
+          }
+        ],
+        "global_count": 6
+      }
+    },
+    {
+      "dataset": "forward64_common",
+      "model": "NL",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5,
+        "a0": 8.533673475349299e-11
+      },
+      "fit": {
+        "loss": 0.010510874949853252,
+        "success": true,
+        "global_count": 1
+      }
+    },
+    {
+      "dataset": "published_all",
+      "model": "N",
+      "fixed_U": false,
+      "parameters": {
+        "U": 1.0
+      },
+      "fit": {
+        "loss": 0.05156784374505469,
+        "success": true,
+        "message": "Solution found.",
+        "global_count": 1
+      }
+    },
+    {
+      "dataset": "published_all",
+      "model": "NL",
+      "fixed_U": false,
+      "parameters": {
+        "U": 0.5417292842043459,
+        "a0": 8.053897114669032e-11
+      },
+      "fit": {
+        "loss": 0.010169887365571766,
+        "starts": [
+          {
+            "x": [
+              -10.093993909774287,
+              -0.2662176944698473
+            ],
+            "loss": 0.010169887365571768,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.09399392263235,
+              -0.26621768716597954
+            ],
+            "loss": 0.010169887365571766,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.093993927322607,
+              -0.26621768331213236
+            ],
+            "loss": 0.010169887365571766,
+            "success": true,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+          },
+          {
+            "x": [
+              -10.093993937335775,
+              -0.26621767120204
+            ],
+            "loss": 0.010169887365571766,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.093993926281039,
+              -0.2662176849939535
+            ],
+            "loss": 0.010169887365571766,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.093993915771213,
+              -0.2662176940719683
+            ],
+            "loss": 0.01016988736557177,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.093993919457521,
+              -0.26621768998166
+            ],
+            "loss": 0.010169887365571766,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.093993925051306,
+              -0.2662176871908245
+            ],
+            "loss": 0.010169887365571768,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.09399392980088,
+              -0.2662176821168314
+            ],
+            "loss": 0.010169887365571768,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          }
+        ],
+        "global_count": 2
+      }
+    },
+    {
+      "dataset": "published_all",
+      "model": "N",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5
+      },
+      "fit": {
+        "loss": 0.09197269387204209,
+        "starts": [],
+        "global_count": 0
+      }
+    },
+    {
+      "dataset": "published_all",
+      "model": "NL",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5,
+        "a0": 8.694816069735631e-11
+      },
+      "fit": {
+        "loss": 0.010188447035090739,
+        "success": true,
+        "global_count": 1
+      }
+    },
+    {
+      "dataset": "published64_sample",
+      "model": "N",
+      "fixed_U": false,
+      "parameters": {
+        "U": 1.0
+      },
+      "fit": {
+        "loss": 0.051520063782915404,
+        "success": true,
+        "message": "Solution found.",
+        "global_count": 1
+      }
+    },
+    {
+      "dataset": "published64_sample",
+      "model": "NL",
+      "fixed_U": false,
+      "parameters": {
+        "U": 0.5604785168431525,
+        "a0": 7.658415089382817e-11
+      },
+      "fit": {
+        "loss": 0.01047763876355972,
+        "starts": [
+          {
+            "x": [
+              -10.115861098403194,
+              -0.25144102926932976
+            ],
+            "loss": 0.01047763876355972,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115861101068703,
+              -0.2514410260909873
+            ],
+            "loss": 0.01047763876355972,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115861106034588,
+              -0.2514410224803098
+            ],
+            "loss": 0.01047763876355972,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115861099950992,
+              -0.25144102925872436
+            ],
+            "loss": 0.010477638763559722,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115861177516203,
+              -0.25144098055786895
+            ],
+            "loss": 0.010477638763559796,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.11586109385536,
+              -0.25144103271623175
+            ],
+            "loss": 0.010477638763559722,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115861096709413,
+              -0.25144103228119963
+            ],
+            "loss": 0.010477638763559723,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115861109502852,
+              -0.25144102044450567
+            ],
+            "loss": 0.010477638763559722,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          },
+          {
+            "x": [
+              -10.115861102714973,
+              -0.2514410243123778
+            ],
+            "loss": 0.01047763876355972,
+            "success": true,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+          }
+        ],
+        "global_count": 2
+      }
+    },
+    {
+      "dataset": "published64_sample",
+      "model": "N",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5
+      },
+      "fit": {
+        "loss": 0.0925706063789322,
+        "starts": [],
+        "global_count": 0
+      }
+    },
+    {
+      "dataset": "published64_sample",
+      "model": "NL",
+      "fixed_U": true,
+      "parameters": {
+        "U": 0.5,
+        "a0": 8.533572694757754e-11
+      },
+      "fit": {
+        "loss": 0.010512330388324604,
+        "success": true,
+        "global_count": 1
+      }
+    }
+  ],
+  "status": "frozen before test scoring"
+}

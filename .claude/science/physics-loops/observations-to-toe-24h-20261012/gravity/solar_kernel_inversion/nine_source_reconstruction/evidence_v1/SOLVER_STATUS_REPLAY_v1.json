@@ -1,0 +1,86 @@
+{
+  "at": "2026-10-12T22:23:16.808747+00:00",
+  "source_sha256": "5e0411d3267e388f752aee0814b8bd535ad0099eba3596a755c3b630aba64992",
+  "candidates_sha256": "6a51ac43d38def7f745f6e34367ab9474311ff9fb28103bacdbe0e72d01c3263",
+  "purpose": "The original helper asserted second-stage success but omitted its explicit status/message from the saved receipt. These are replay statuses, not retroactively original-run logs. No fit or selection is changed.",
+  "cases": [
+    {
+      "name": "M_galaxies_only",
+      "matrix_sha256": "f75007ce444babe1aac4d96e681ae8d1adb3a62709517438fc4bc46d4fed735e",
+      "first": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "second": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "weights_and_t_bitwise_match_original": true
+    },
+    {
+      "name": "M_galaxies_external",
+      "matrix_sha256": "5e0a927d805f30725e16f1b780c2b0e6f6aba4e2c556e33c82aec59ec0a72b69",
+      "first": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "second": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "weights_and_t_bitwise_match_original": true
+    },
+    {
+      "name": "M_galaxies_external_solar",
+      "matrix_sha256": "3cc51036a89b17535329714aa3d028de04e4f768e5614b3159467ed87642b359",
+      "first": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "second": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "weights_and_t_bitwise_match_original": true
+    },
+    {
+      "name": "D_galaxies_only",
+      "matrix_sha256": "1a23b6f98e2a698c91dc6b142dcae703e9cfc00696d393b243c8960c2ba50d6f",
+      "first": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "second": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "weights_and_t_bitwise_match_original": true
+    },
+    {
+      "name": "D_galaxies_external",
+      "matrix_sha256": "54fb33536f09abff4dfaada97b3e839762bde9e57aa44a4b544f7c8e9b1cc2ca",
+      "first": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "second": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "weights_and_t_bitwise_match_original": true
+    },
+    {
+      "name": "D_galaxies_external_solar",
+      "matrix_sha256": "b073a248511c736132209d60c09a1e4d4ae9c1e85396ac2fcbc72157bbfd30ac",
+      "first": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "second": {
+        "status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)"
+      },
+      "weights_and_t_bitwise_match_original": true
+    }
+  ]
+}

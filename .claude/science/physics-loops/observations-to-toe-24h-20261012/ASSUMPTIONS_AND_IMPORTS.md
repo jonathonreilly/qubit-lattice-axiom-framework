@@ -52,3 +52,29 @@ The finite-propagation target is a stated theoretical requirement, not a new
 empirical exclusion. Both fitted external backgrounds are isotropic plateaus;
 the tail result concerns admissible active-ramp backgrounds. The five-family
 broad no-go packet is not satisfied; this is a preserved partial attempt.
+
+## Nine-source inverse and pressure sensitivity, October12
+
+All90 scored observations now calibrate the six M/D fits. The earlier two
+unchanged transfer failures were committed first. E is held fixed for
+external/solar cases; the galaxy-only matrices contain no E. Twenty original
+ramps, nonnegative weights, sum(w)<=100 and all source/nuisance values stay
+fixed. No selected point, error floor or response knot was tuned away.
+
+Exact finite certificates treat frozen binary64 matrices as rational supplied
+inputs. They certify optimizer-independent lower bounds, not continuum field
+coefficients or observed physics. Strict D positivity is absent in the new
+fits. Small solar primal overshoots remain calibration tolerances.
+
+Pressure sensitivity introduces p_i=v_c²-v_phi² as an additive shift of both
+squared-speed rectangle endpoints with the original normalization fixed.
+UGC07577-only changes are an explicit scenario. Constant gas height and
+isotropic constant sigma are extra premises for converting p to a density
+slope. The sigma8 illustration is not a measured dispersion at .94kpc.
+
+Primary bridge: Swaters et al.2009, arXiv0901.4222v1 Sections3.1.2/3.5,
+personally reread through its primary HTML. The paper leaves pressure support
+uncorrected and names UGC7577 as an exception to generally small corrections.
+This is a readout limitation, not an imported rescue magnitude. A new lead,
+Lelli et al.2012 DOI10.1051/0004-6361/201219457 Figure9, presents DDO125's
+HI profile at2.6Mpc; no numeric derivative or local dispersion is imported.

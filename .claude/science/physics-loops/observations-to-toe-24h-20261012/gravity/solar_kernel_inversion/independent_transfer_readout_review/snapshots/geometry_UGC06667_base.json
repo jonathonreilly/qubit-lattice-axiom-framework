@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-12T20:51:43.252427+00:00",
+  "identity": {
+    "name": "UGC06667",
+    "solver_sha256": "701bc4d1ba659f9b25cd98855547864300b83c2f002a477e7bc3b2b5ac3f7b00",
+    "source_receipt_sha256": "a2211630118989eadf75f87b3e44944b173ea293f26d29f15bb2efa626ddd463",
+    "source_npz_sha256": "217bd10ba3fa8f9972d047081342c023ee7524c16b6d8c685d6d9fa49fd2959f",
+    "U": 0.5605122519882025,
+    "settings": {
+      "nr": 1536,
+      "nc": 1024,
+      "lmax": 512,
+      "hankel": 4096,
+      "rmin": 0.007666015625,
+      "rmax": 125.6
+    }
+  },
+  "cache_sha256": "6e3d174751bccaf18df27ac7d370f89d2a7ef22326348bf1d632ac3bb8eeb457"
+}

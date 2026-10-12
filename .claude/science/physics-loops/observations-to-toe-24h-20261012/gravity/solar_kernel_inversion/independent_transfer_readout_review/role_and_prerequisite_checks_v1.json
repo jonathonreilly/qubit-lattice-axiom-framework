@@ -1,0 +1,22 @@
+{
+  "at": "2026-10-12T22:11:55.582573+00:00",
+  "response_fit_sources": [
+    "NGC2976",
+    "UGC07577",
+    "KK98-251"
+  ],
+  "same_operator_receipts_in_two_fits": true,
+  "extension_objects_disjoint_from_these_response_fits": true,
+  "legacy_source_split_labels": {
+    "NGC3949": "train",
+    "NGC3972": "test",
+    "UGC06667": "train",
+    "UGC08837": "train",
+    "DDO064": "train",
+    "DDO168": "train"
+  },
+  "initial_original_numerical_gate_at": "2026-10-12T20:40:47.764183+00:00",
+  "initial_margin_field_and_rectangle_gate_at": "2026-10-12T20:41:42.023182+00:00",
+  "first_extension_base_receipt_at": "2026-10-12T20:45:00.228406+00:00",
+  "scope": "Prior exposure and earlier global-parameter calibration remain; legacy train/test labels are not new blindness."
+}

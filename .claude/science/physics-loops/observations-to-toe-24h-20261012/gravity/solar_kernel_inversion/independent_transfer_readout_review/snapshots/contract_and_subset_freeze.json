@@ -1,0 +1,650 @@
+{
+  "frozen_at": "2026-10-12T19:01:36.861614+00:00",
+  "contract_sha256": "f6225b00b62a82b050586535a933f82d8320783d7934d35ef0ce9e8f31d49b93",
+  "source_hashes": {
+    "baryonic_forward_64.npz": "217bd10ba3fa8f9972d047081342c023ee7524c16b6d8c685d6d9fa49fd2959f",
+    "baryonic_reconstruction_64.json": "8e53c304f1b8098477fa4d954f55cb9f4b7d0efeb62db5d0d25e749dd279e96d",
+    "baryonic_reconstruction_96.json": "624fba9240e0a00b639807f2a9167a5aa64552fcbc8c4c28ad8cd7b38739b4b0",
+    "training_parameters_frozen.json": "d92ad11101e60c64ba851a35cdc88bbcbd550a838a9a7d2dde862ecaf1768625"
+  },
+  "bins": [
+    {
+      "range": [
+        0,
+        0.25
+      ],
+      "ordered": [
+        {
+          "name": "NGC2976",
+          "gas_fraction": 0.1121595900677667,
+          "Rmax": 2.27,
+          "h": 0.19723841366514785,
+          "thickness_ratio": 0.08688916901548363,
+          "min_scored_R_over_sigma": 7.330396475770925,
+          "SB_L1": 0.026336069766023946,
+          "split": "train"
+        },
+        {
+          "name": "NGC3949",
+          "gas_fraction": 0.17126616766476752,
+          "Rmax": 7.07,
+          "h": 0.4401805586973273,
+          "thickness_ratio": 0.06226033362055548,
+          "min_scored_R_over_sigma": 11.813295615275813,
+          "SB_L1": 0.0830863578673933,
+          "split": "train"
+        },
+        {
+          "name": "NGC3972",
+          "gas_fraction": 0.16258129949328237,
+          "Rmax": 8.72,
+          "h": 0.32099556481072644,
+          "thickness_ratio": 0.03681141798288147,
+          "min_scored_R_over_sigma": 6.385321100917431,
+          "SB_L1": 0.08862727515589229,
+          "split": "test"
+        },
+        {
+          "name": "NGC3953",
+          "gas_fraction": 0.04403074689433267,
+          "Rmax": 15.68,
+          "h": 0.5352893208385048,
+          "thickness_ratio": 0.03413834954327199,
+          "min_scored_R_over_sigma": 7.142857142857143,
+          "SB_L1": 0.0729875540485684,
+          "split": "test"
+        },
+        {
+          "name": "ESO079-G014",
+          "gas_fraction": 0.12414365745121803,
+          "Rmax": 16.67,
+          "h": 0.548362567564366,
+          "thickness_ratio": 0.032895175018858185,
+          "min_scored_R_over_sigma": 5.163767246550689,
+          "SB_L1": 0.047685052309802606,
+          "split": "train"
+        },
+        {
+          "name": "NGC3877",
+          "gas_fraction": 0.04519479357234343,
+          "Rmax": 11.35,
+          "h": 0.35272103587487036,
+          "thickness_ratio": 0.03107674324888726,
+          "min_scored_R_over_sigma": 4.905726872246696,
+          "SB_L1": 0.039986293291651015,
+          "split": "train"
+        },
+        {
+          "name": "NGC7793",
+          "gas_fraction": 0.22467885172203791,
+          "Rmax": 7.87,
+          "h": 0.22113587837548146,
+          "thickness_ratio": 0.02809858683297096,
+          "min_scored_R_over_sigma": 2.561626429479034,
+          "SB_L1": 0.06376937175592674,
+          "split": "train"
+        },
+        {
+          "name": "NGC3917",
+          "gas_fraction": 0.16619210512454252,
+          "Rmax": 14.86,
+          "h": 0.3614831516981522,
+          "thickness_ratio": 0.02432591868762801,
+          "min_scored_R_over_sigma": 3.7469717362045762,
+          "SB_L1": 0.02705478051337754,
+          "split": "test"
+        },
+        {
+          "name": "NGC3893",
+          "gas_fraction": 0.1877458972996778,
+          "Rmax": 19.05,
+          "h": 0.33933549132772584,
+          "thickness_ratio": 0.01781288668387012,
+          "min_scored_R_over_sigma": 2.9228346456692913,
+          "SB_L1": 0.08708841962260935,
+          "split": "train"
+        },
+        {
+          "name": "NGC4088",
+          "gas_fraction": 0.150620948809458,
+          "Rmax": 21.48,
+          "h": 0.3571176748001596,
+          "thickness_ratio": 0.016625590074495326,
+          "min_scored_R_over_sigma": 2.5921787709497206,
+          "SB_L1": 0.02949455384674295,
+          "split": "train"
+        },
+        {
+          "name": "NGC1090",
+          "gas_fraction": 0.220184849321786,
+          "Rmax": 30.09,
+          "h": 0.4355093264396163,
+          "thickness_ratio": 0.014473556877355145,
+          "min_scored_R_over_sigma": 3.9348620804253907,
+          "SB_L1": 0.08656788819558782,
+          "split": "train"
+        },
+        {
+          "name": "UGC11455",
+          "gas_fraction": 0.07794214775402433,
+          "Rmax": 41.93,
+          "h": 0.6047831633282943,
+          "thickness_ratio": 0.014423638524404824,
+          "min_scored_R_over_sigma": 2.350584307178631,
+          "SB_L1": 0.01973468872365803,
+          "split": "test"
+        },
+        {
+          "name": "NGC4100",
+          "gas_fraction": 0.11038418617626286,
+          "Rmax": 22.76,
+          "h": 0.31819226382509896,
+          "thickness_ratio": 0.013980327936076403,
+          "min_scored_R_over_sigma": 3.6695957820738134,
+          "SB_L1": 0.04234587408529772,
+          "split": "train"
+        },
+        {
+          "name": "NGC6503",
+          "gas_fraction": 0.24365908183103807,
+          "Rmax": 23.5,
+          "h": 0.3191282831756813,
+          "thickness_ratio": 0.013579926943646013,
+          "min_scored_R_over_sigma": 2.069787234042553,
+          "SB_L1": 0.04908033699106728,
+          "split": "train"
+        },
+        {
+          "name": "ESO563-G021",
+          "gas_fraction": 0.15138853582548922,
+          "Rmax": 42.41,
+          "h": 0.5733173136964417,
+          "thickness_ratio": 0.013518446444150949,
+          "min_scored_R_over_sigma": 2.3541617543032305,
+          "SB_L1": 0.09070973384734389,
+          "split": "train"
+        },
+        {
+          "name": "NGC5907",
+          "gas_fraction": 0.2202497065288609,
+          "Rmax": 50.33,
+          "h": 0.5659651464301741,
+          "thickness_ratio": 0.011245085365193207,
+          "min_scored_R_over_sigma": 3.1980925889131733,
+          "SB_L1": 0.04003473279122728,
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "range": [
+        0.25,
+        0.75
+      ],
+      "ordered": [
+        {
+          "name": "UGC07577",
+          "gas_fraction": 0.6983402389997686,
+          "Rmax": 1.69,
+          "h": 0.1833545028199216,
+          "thickness_ratio": 0.1084937886508412,
+          "min_scored_R_over_sigma": 10.792899408284024,
+          "SB_L1": 0.052341361753163444,
+          "split": "train"
+        },
+        {
+          "name": "UGC06667",
+          "gas_fraction": 0.583751162336783,
+          "Rmax": 7.85,
+          "h": 0.553133608825953,
+          "thickness_ratio": 0.07046288010521694,
+          "min_scored_R_over_sigma": 10.639490445859872,
+          "SB_L1": 0.08633279136232831,
+          "split": "train"
+        },
+        {
+          "name": "UGC08837",
+          "gas_fraction": 0.5931082363219043,
+          "Rmax": 4.2,
+          "h": 0.2762775386606795,
+          "thickness_ratio": 0.06578036634778082,
+          "min_scored_R_over_sigma": 8.0,
+          "SB_L1": 0.09004587162400679,
+          "split": "train"
+        },
+        {
+          "name": "UGC07323",
+          "gas_fraction": 0.28642624629850344,
+          "Rmax": 5.82,
+          "h": 0.3284026956697017,
+          "thickness_ratio": 0.056426580011976236,
+          "min_scored_R_over_sigma": 6.432989690721649,
+          "SB_L1": 0.05630475054590975,
+          "split": "train"
+        },
+        {
+          "name": "UGC04278",
+          "gas_fraction": 0.6551551694522066,
+          "Rmax": 6.69,
+          "h": 0.3237847430061834,
+          "thickness_ratio": 0.048398317340236675,
+          "min_scored_R_over_sigma": 5.9790732436472345,
+          "SB_L1": 0.017662360653829808,
+          "split": "train"
+        },
+        {
+          "name": "UGC07151",
+          "gas_fraction": 0.3851196328633782,
+          "Rmax": 5.5,
+          "h": 0.225735628064633,
+          "thickness_ratio": 0.04104284146629691,
+          "min_scored_R_over_sigma": 5.818181818181818,
+          "SB_L1": 0.07545948966532522,
+          "split": "train"
+        },
+        {
+          "name": "F574-1",
+          "gas_fraction": 0.5651499780592383,
+          "Rmax": 12.6,
+          "h": 0.5049926264747961,
+          "thickness_ratio": 0.04007877987895208,
+          "min_scored_R_over_sigma": 5.968253968253968,
+          "SB_L1": 0.01341234698231908,
+          "split": "train"
+        },
+        {
+          "name": "UGC06399",
+          "gas_fraction": 0.40389603687934716,
+          "Rmax": 7.85,
+          "h": 0.3087423926025506,
+          "thickness_ratio": 0.03933024109586632,
+          "min_scored_R_over_sigma": 7.092993630573249,
+          "SB_L1": 0.09065989047099539,
+          "split": "train"
+        },
+        {
+          "name": "IC2574",
+          "gas_fraction": 0.7075628969464615,
+          "Rmax": 10.23,
+          "h": 0.3744005061377713,
+          "thickness_ratio": 0.03659828994504118,
+          "min_scored_R_over_sigma": 4.441837732160312,
+          "SB_L1": 0.03491878399488276,
+          "split": "train"
+        },
+        {
+          "name": "NGC4010",
+          "gas_fraction": 0.27637641971036875,
+          "Rmax": 10.47,
+          "h": 0.3769529720855285,
+          "thickness_ratio": 0.03600314919632555,
+          "min_scored_R_over_sigma": 5.318051575931232,
+          "SB_L1": 0.05486146287514674,
+          "split": "train"
+        },
+        {
+          "name": "UGC07089",
+          "gas_fraction": 0.4408672092079356,
+          "Rmax": 9.16,
+          "h": 0.3284026956697017,
+          "thickness_ratio": 0.035851822671364816,
+          "min_scored_R_over_sigma": 6.078602620087336,
+          "SB_L1": 0.06405202174458483,
+          "split": "train"
+        },
+        {
+          "name": "UGC06917",
+          "gas_fraction": 0.4036825133076101,
+          "Rmax": 10.47,
+          "h": 0.3726932441334747,
+          "thickness_ratio": 0.03559629838906157,
+          "min_scored_R_over_sigma": 5.318051575931232,
+          "SB_L1": 0.04733728055536802,
+          "split": "train"
+        },
+        {
+          "name": "UGC11557",
+          "gas_fraction": 0.3351252626279262,
+          "Rmax": 10.56,
+          "h": 0.3718379110457471,
+          "thickness_ratio": 0.035211923394483625,
+          "min_scored_R_over_sigma": 5.333333333333333,
+          "SB_L1": 0.06598733344657418,
+          "split": "train"
+        },
+        {
+          "name": "UGC07603",
+          "gas_fraction": 0.6151473098361199,
+          "Rmax": 4.11,
+          "h": 0.13113623082082213,
+          "thickness_ratio": 0.031906625503849664,
+          "min_scored_R_over_sigma": 2.6472019464720193,
+          "SB_L1": 0.07211101084411742,
+          "split": "test"
+        },
+        {
+          "name": "NGC0247",
+          "gas_fraction": 0.3592641625045084,
+          "Rmax": 14.54,
+          "h": 0.4517350571662792,
+          "thickness_ratio": 0.031068435843623055,
+          "min_scored_R_over_sigma": 4.731774415405777,
+          "SB_L1": 0.009678018143298701,
+          "split": "test"
+        },
+        {
+          "name": "F568-3",
+          "gas_fraction": 0.47580553884481575,
+          "Rmax": 17.98,
+          "h": 0.5421927633299444,
+          "thickness_ratio": 0.030155326102889006,
+          "min_scored_R_over_sigma": 4.947719688542825,
+          "SB_L1": 0.025950913836023378,
+          "split": "train"
+        },
+        {
+          "name": "UGC05986",
+          "gas_fraction": 0.5711431732036333,
+          "Rmax": 9.41,
+          "h": 0.2711662265008515,
+          "thickness_ratio": 0.028816814718475185,
+          "min_scored_R_over_sigma": 4.284803400637619,
+          "SB_L1": 0.02794216072338739,
+          "split": "test"
+        },
+        {
+          "name": "F571-8",
+          "gas_fraction": 0.2903588229477145,
+          "Rmax": 15.55,
+          "h": 0.43784855429224945,
+          "thickness_ratio": 0.028157463298536942,
+          "min_scored_R_over_sigma": 4.794855305466238,
+          "SB_L1": 0.09401086108883727,
+          "split": "train"
+        },
+        {
+          "name": "UGC06930",
+          "gas_fraction": 0.4581744731893795,
+          "Rmax": 16.61,
+          "h": 0.4668799027728228,
+          "thickness_ratio": 0.02810836259920667,
+          "min_scored_R_over_sigma": 6.742925948223962,
+          "SB_L1": 0.08059583422439283,
+          "split": "train"
+        },
+        {
+          "name": "NGC0100",
+          "gas_fraction": 0.597031444235617,
+          "Rmax": 9.62,
+          "h": 0.27013726036129265,
+          "thickness_ratio": 0.028080796295352668,
+          "min_scored_R_over_sigma": 3.8253638253638256,
+          "SB_L1": 0.020830412361013455,
+          "split": "train"
+        },
+        {
+          "name": "UGC06983",
+          "gas_fraction": 0.5683500632444578,
+          "Rmax": 15.68,
+          "h": 0.4100848799095148,
+          "thickness_ratio": 0.026153372443208853,
+          "min_scored_R_over_sigma": 3.5510204081632653,
+          "SB_L1": 0.05063238524361456,
+          "split": "train"
+        },
+        {
+          "name": "ESO116-G012",
+          "gas_fraction": 0.3760658471575682,
+          "Rmax": 9.86,
+          "h": 0.254418377689895,
+          "thickness_ratio": 0.025803080901612072,
+          "min_scored_R_over_sigma": 2.693711967545639,
+          "SB_L1": 0.04143859594316058,
+          "split": "train"
+        },
+        {
+          "name": "UGC08286",
+          "gas_fraction": 0.5461225480032927,
+          "Rmax": 8.04,
+          "h": 0.202147743424878,
+          "thickness_ratio": 0.025142754157323137,
+          "min_scored_R_over_sigma": 3.781094527363184,
+          "SB_L1": 0.04017605771239274,
+          "split": "train"
+        },
+        {
+          "name": "NGC0300",
+          "gas_fraction": 0.42663097914804926,
+          "Rmax": 11.8,
+          "h": 0.27931814951554446,
+          "thickness_ratio": 0.023671029619961394,
+          "min_scored_R_over_sigma": 2.4677966101694913,
+          "SB_L1": 0.01563529715136142,
+          "split": "train"
+        },
+        {
+          "name": "UGC08550",
+          "gas_fraction": 0.701974651735714,
+          "Rmax": 5.36,
+          "h": 0.118233240450824,
+          "thickness_ratio": 0.022058440382616416,
+          "min_scored_R_over_sigma": 2.9253731343283578,
+          "SB_L1": 0.08738173062235066,
+          "split": "train"
+        },
+        {
+          "name": "F568-V1",
+          "gas_fraction": 0.6034303853031241,
+          "Rmax": 17.63,
+          "h": 0.38034075805107753,
+          "thickness_ratio": 0.021573497336986814,
+          "min_scored_R_over_sigma": 3.539421440726035,
+          "SB_L1": 0.011252435312368136,
+          "split": "train"
+        },
+        {
+          "name": "NGC0024",
+          "gas_fraction": 0.28843966300832546,
+          "Rmax": 11.27,
+          "h": 0.23589210655368195,
+          "thickness_ratio": 0.020930976624106652,
+          "min_scored_R_over_sigma": 2.101153504880213,
+          "SB_L1": 0.0873115442345828,
+          "split": "train"
+        },
+        {
+          "name": "UGC05750",
+          "gas_fraction": 0.4398525465264847,
+          "Rmax": 22.85,
+          "h": 0.4300225615841832,
+          "thickness_ratio": 0.018819368121846092,
+          "min_scored_R_over_sigma": 3.5291028446389494,
+          "SB_L1": 0.01950759848286222,
+          "split": "test"
+        },
+        {
+          "name": "NGC4183",
+          "gas_fraction": 0.4359215816350635,
+          "Rmax": 21.02,
+          "h": 0.37525244621747134,
+          "thickness_ratio": 0.017852162046501967,
+          "min_scored_R_over_sigma": 2.648905803996194,
+          "SB_L1": 0.03240481488704411,
+          "split": "train"
+        },
+        {
+          "name": "UGC09037",
+          "gas_fraction": 0.39620167595487715,
+          "Rmax": 27.96,
+          "h": 0.4919941933572898,
+          "thickness_ratio": 0.017596358846827243,
+          "min_scored_R_over_sigma": 2.7811158798283264,
+          "SB_L1": 0.032286304575796364,
+          "split": "test"
+        },
+        {
+          "name": "NGC4559",
+          "gas_fraction": 0.4119536939333797,
+          "Rmax": 20.97,
+          "h": 0.31348797386005567,
+          "thickness_ratio": 0.01494935497663594,
+          "min_scored_R_over_sigma": 2.0143061516452074,
+          "SB_L1": 0.037029003511663744,
+          "split": "test"
+        },
+        {
+          "name": "UGC05005",
+          "gas_fraction": 0.6442115413810663,
+          "Rmax": 28.61,
+          "h": 0.4092757449209217,
+          "thickness_ratio": 0.014305338864764828,
+          "min_scored_R_over_sigma": 2.617266689968542,
+          "SB_L1": 0.05325128027803556,
+          "split": "train"
+        },
+        {
+          "name": "UGC12506",
+          "gas_fraction": 0.370602026147928,
+          "Rmax": 49.99,
+          "h": 0.6946015504615812,
+          "thickness_ratio": 0.01389480997122587,
+          "min_scored_R_over_sigma": 2.624524904980996,
+          "SB_L1": 0.01755148878732846,
+          "split": "train"
+        }
+      ]
+    },
+    {
+      "range": [
+        0.75,
+        1.00001
+      ],
+      "ordered": [
+        {
+          "name": "KK98-251",
+          "gas_fraction": 0.7612003645839927,
+          "Rmax": 3.13,
+          "h": 0.23589210655368195,
+          "thickness_ratio": 0.07536489027274185,
+          "min_scored_R_over_sigma": 7.565495207667732,
+          "SB_L1": 0.04040632689141774,
+          "split": "train"
+        },
+        {
+          "name": "DDO064",
+          "gas_fraction": 0.7526181530868891,
+          "Rmax": 2.98,
+          "h": 0.15496996886821574,
+          "thickness_ratio": 0.05200334525779052,
+          "min_scored_R_over_sigma": 5.2617449664429525,
+          "SB_L1": 0.04244449036544681,
+          "split": "train"
+        },
+        {
+          "name": "DDO168",
+          "gas_fraction": 0.8324955962802384,
+          "Rmax": 4.12,
+          "h": 0.19847233543103657,
+          "thickness_ratio": 0.048172896949280716,
+          "min_scored_R_over_sigma": 6.368932038834951,
+          "SB_L1": 0.05558910378972095,
+          "split": "train"
+        },
+        {
+          "name": "UGC05829",
+          "gas_fraction": 0.8074802353668483,
+          "Rmax": 6.91,
+          "h": 0.3029912373792188,
+          "thickness_ratio": 0.04384822538049476,
+          "min_scored_R_over_sigma": 5.835021707670044,
+          "SB_L1": 0.06240575269585592,
+          "split": "train"
+        },
+        {
+          "name": "NGC3109",
+          "gas_fraction": 0.84664369896425,
+          "Rmax": 6.45,
+          "h": 0.2597191316143149,
+          "thickness_ratio": 0.040266532033227116,
+          "min_scored_R_over_sigma": 5.110077519379845,
+          "SB_L1": 0.049352869132716345,
+          "split": "train"
+        },
+        {
+          "name": "UGC12632",
+          "gas_fraction": 0.7521554724722291,
+          "Rmax": 10.66,
+          "h": 0.34293451554385174,
+          "thickness_ratio": 0.03217021721799735,
+          "min_scored_R_over_sigma": 4.262664165103189,
+          "SB_L1": 0.03344941771841142,
+          "split": "train"
+        },
+        {
+          "name": "UGC06446",
+          "gas_fraction": 0.7678379585586426,
+          "Rmax": 10.22,
+          "h": 0.25228009116595584,
+          "thickness_ratio": 0.024684940427197242,
+          "min_scored_R_over_sigma": 3.632093933463796,
+          "SB_L1": 0.034803911790625176,
+          "split": "train"
+        },
+        {
+          "name": "D631-7",
+          "gas_fraction": 0.7838940154093695,
+          "Rmax": 7.19,
+          "h": 0.15638789379575926,
+          "thickness_ratio": 0.021750750180216865,
+          "min_scored_R_over_sigma": 2.0027816411682893,
+          "SB_L1": 0.021322507849746146,
+          "split": "train"
+        },
+        {
+          "name": "F583-1",
+          "gas_fraction": 0.8342340541595172,
+          "Rmax": 16.26,
+          "h": 0.3375276605303571,
+          "thickness_ratio": 0.020758158704204003,
+          "min_scored_R_over_sigma": 2.4009840098400983,
+          "SB_L1": 0.022214927595426516,
+          "split": "test"
+        },
+        {
+          "name": "UGC12732",
+          "gas_fraction": 0.8338540137560299,
+          "Rmax": 15.4,
+          "h": 0.3020265604234628,
+          "thickness_ratio": 0.01961211431321187,
+          "min_scored_R_over_sigma": 3.989610389610389,
+          "SB_L1": 0.0316997768103118,
+          "split": "train"
+        },
+        {
+          "name": "DDO154",
+          "gas_fraction": 0.9255096723398526,
+          "Rmax": 5.92,
+          "h": 0.10445464626926053,
+          "thickness_ratio": 0.017644365923861576,
+          "min_scored_R_over_sigma": 2.6486486486486487,
+          "SB_L1": 0.08678428046058731,
+          "split": "train"
+        }
+      ]
+    }
+  ],
+  "initial_selected": [
+    "NGC2976",
+    "UGC07577",
+    "KK98-251"
+  ],
+  "conditional_expansion": [
+    "NGC3949",
+    "NGC3972",
+    "UGC06667",
+    "UGC08837",
+    "DDO064",
+    "DDO168"
+  ],
+  "any_galaxy_qumond_forward_evaluated": false
+}

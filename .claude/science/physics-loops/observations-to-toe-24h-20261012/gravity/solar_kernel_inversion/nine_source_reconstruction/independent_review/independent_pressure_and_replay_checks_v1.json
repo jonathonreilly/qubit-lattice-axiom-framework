@@ -1,0 +1,167 @@
+{
+  "at": "2026-10-12T22:27:22.368931+00:00",
+  "source_sha256": "871e4e10b552ae6ff63703b397bde912a4c56ca6d87cbd25fa9164e404eabdc4",
+  "pressure_checks": [
+    {
+      "family": "M",
+      "exact_affine_rhs_identity": true,
+      "necessary_pmax_rational": [
+        "28430539009342134454360564926079101998286667068027256593291707653601401974442533045103847189235",
+        "35795555789320994391517474036117032221870233584923921127921090053508298438429699445356494848"
+      ],
+      "necessary_pmax_approximate": 794.2477322233368,
+      "units": "(km/s)^2",
+      "illustrative_minus_log_density_slope": 12.410120815989638,
+      "threshold_saturates_this_certificate_only": true,
+      "support": [
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 2,
+          "R_kpc": 0.94,
+          "coefficient": -0.0006565109144620372,
+          "coefficient_rational": [
+            "-6865763342587227399899013390438300879788441600",
+            "10457957653625940253377300351865419432655089054573"
+          ],
+          "fixture_p": [
+            "45",
+            "7"
+          ],
+          "fixture_contribution": [
+            "-34328816712936136999495066952191504398942208000",
+            "8133967063931286863737900273673104003176180375779"
+          ]
+        },
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 4,
+          "R_kpc": 1.32,
+          "coefficient": -4.312589352608294e-05,
+          "coefficient_rational": [
+            "-783169300549125278229622950574194408474804224",
+            "18160071282359799657121196585236962031974210670545"
+          ],
+          "fixture_p": [
+            "47",
+            "7"
+          ],
+          "fixture_contribution": [
+            "-36808957125808888076792278676987137198315798528",
+            "127120498976518597599848376096658734223819474693815"
+          ]
+        },
+        {
+          "kind": "lower_velocity_rectangle",
+          "source": "UGC06667",
+          "scored_bin": 1,
+          "R_kpc": 3.5,
+          "coefficient": 0.00019078898790238417,
+          "coefficient_rational": [
+            "2323000672101035495574036545536",
+            "12175758662180137981505196897316347"
+          ],
+          "fixture_p": [
+            "17",
+            "1"
+          ],
+          "fixture_contribution": [
+            "39491011425717603424758621274112",
+            "12175758662180137981505196897316347"
+          ]
+        }
+      ]
+    },
+    {
+      "family": "D",
+      "exact_affine_rhs_identity": true,
+      "necessary_pmax_rational": [
+        "6716401348117606108745458880641979907804896915834063259664090854657",
+        "6032945116553406197266412062490685504812833067133036152938823680"
+      ],
+      "necessary_pmax_approximate": 1113.2873278904708,
+      "units": "(km/s)^2",
+      "illustrative_minus_log_density_slope": 17.395114498288606,
+      "threshold_saturates_this_certificate_only": true,
+      "support": [
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 2,
+          "R_kpc": 0.94,
+          "coefficient": -0.0005003601979271868,
+          "coefficient_rational": [
+            "-9077366916261677905592975360",
+            "18141664652516244246482322639073"
+          ],
+          "fixture_p": [
+            "45",
+            "7"
+          ],
+          "fixture_contribution": [
+            "-408481511231775505751683891200",
+            "126991652567613709725376258473511"
+          ]
+        },
+        {
+          "kind": "lower_velocity_rectangle",
+          "source": "UGC06667",
+          "scored_bin": 0,
+          "R_kpc": 2.61,
+          "coefficient": 0.00029015075620982325,
+          "coefficient_rational": [
+            "9336046688159527698257936384",
+            "32176537501105601558921426387735"
+          ],
+          "fixture_p": [
+            "-118",
+            "7"
+          ],
+          "fixture_contribution": [
+            "-1101653509202824268394436493312",
+            "225235762507739210912449984714145"
+          ]
+        },
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC08837",
+          "scored_bin": 2,
+          "R_kpc": 2.09,
+          "coefficient": -1.7672032523144123e-08,
+          "coefficient_rational": [
+            "-69096928579661147930624",
+            "3909959337680517034318262632611"
+          ],
+          "fixture_p": [
+            "127",
+            "7"
+          ],
+          "fixture_contribution": [
+            "-8775309929616965787189248",
+            "27369715363763619240227838428277"
+          ]
+        }
+      ],
+      "illustrative_circular_speed_km_s": 35.039653649693385
+    }
+  ],
+  "replay_identity_and_record_checks": true,
+  "replay_limit": "Reviewed source assertions and saved statuses; did not run an LP replay. Original second-stage status was not recorded.",
+  "fixed_cap_perturbation_counterexample": {
+    "epsilon": "1/10",
+    "eta": "0",
+    "y": [
+      "-1",
+      "-1"
+    ],
+    "original_L": "200",
+    "claimed_if_cap_not_preserved": "180",
+    "relaxed_cap_feasible_w": "1000/9",
+    "relaxed_cap_feasible_t": "1600/9",
+    "fixed_cap_actual_min_t": "190",
+    "interpretation": "The corollary is valid when nonnegativity and cap100 remain fixed."
+  },
+  "no_author_imports": true,
+  "no_fit_or_field_solve": true
+}

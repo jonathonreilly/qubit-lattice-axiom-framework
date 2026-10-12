@@ -1,0 +1,8 @@
+{
+  "at": "2026-10-12T22:14:32.828714+00:00",
+  "parent_rows_checked": 36,
+  "all_parent_radius_velocity_error_arrays_match_NPZ": true,
+  "all_force_and_score_lengths_match": true,
+  "worst_bin_processed_errors_match": true,
+  "total_source_candidate_method_bins": 300
+}

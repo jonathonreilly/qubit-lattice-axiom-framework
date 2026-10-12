@@ -1,0 +1,83 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "source": "sphere",
+      "basis": 0,
+      "relative_error": 9.070522111187529e-14,
+      "limit": 1e-09
+    },
+    {
+      "source": "sphere",
+      "basis": 4,
+      "relative_error": 9.070522111187529e-14,
+      "limit": 1e-09
+    },
+    {
+      "source": "sphere",
+      "basis": 8,
+      "relative_error": 9.114931032172535e-14,
+      "limit": 1e-09
+    },
+    {
+      "source": "sphere",
+      "basis": 12,
+      "relative_error": 9.070522111187529e-14,
+      "limit": 1e-09
+    },
+    {
+      "source": "sphere",
+      "basis": 16,
+      "relative_error": 9.070522111187529e-14,
+      "limit": 1e-09
+    },
+    {
+      "source": "sphere",
+      "basis": 19,
+      "relative_error": 9.070522111187529e-14,
+      "limit": 1e-09
+    },
+    {
+      "source": "kuzmin",
+      "basis": 0,
+      "relative_error": 2.085374711469079e-06,
+      "limit": 0.003
+    },
+    {
+      "source": "kuzmin",
+      "basis": 4,
+      "relative_error": 2.1584755898196306e-06,
+      "limit": 0.003
+    },
+    {
+      "source": "kuzmin",
+      "basis": 8,
+      "relative_error": 6.464587659604781e-05,
+      "limit": 0.003
+    },
+    {
+      "source": "kuzmin",
+      "basis": 12,
+      "relative_error": 7.75971598090397e-05,
+      "limit": 0.003
+    },
+    {
+      "source": "kuzmin",
+      "basis": 16,
+      "relative_error": 2.0897242356543444e-06,
+      "limit": 0.003
+    },
+    {
+      "source": "kuzmin",
+      "basis": 19,
+      "relative_error": 2.0897242356543444e-06,
+      "limit": 0.003
+    }
+  ],
+  "at": "2026-10-12T19:43:45.562081+00:00",
+  "source_sha256": "fe1d5256bb1d867602b4c5c6f68a7c683db1f3ea485d9d85c572b3f8ffccfadb",
+  "solver_sha256": "701bc4d1ba659f9b25cd98855547864300b83c2f002a477e7bc3b2b5ac3f7b00",
+  "protocol_sha256": "16ff2920797c5d5fb027a920f623b44983953b022931ef442194f6ac8b2a90ce",
+  "elapsed_seconds": 0.2959859371185303,
+  "observed_velocities_read": false
+}

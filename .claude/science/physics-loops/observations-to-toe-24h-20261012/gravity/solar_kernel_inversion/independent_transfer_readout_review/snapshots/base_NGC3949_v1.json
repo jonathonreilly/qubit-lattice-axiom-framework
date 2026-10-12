@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-12T20:45:00.228406+00:00",
+  "name": "NGC3949",
+  "freeze_sha256": "1dae3e3888f82c2ced9e07253dcf520bcf744e43e5a31c9e9849618703c90b1f",
+  "identities": {
+    "source": "d29a6e9d6d6e00399eefaf28f4ef925ed1db650c01a63fa34bfd062914a771ab",
+    "protocol": "0bb46c333a089440082fe38ace469f2a35bea4c0e0c469c3abb022741e804265",
+    "operator": "fe1d5256bb1d867602b4c5c6f68a7c683db1f3ea485d9d85c572b3f8ffccfadb",
+    "validator": "aa1a07fd5553c119160772ee6ca69fbc698f31010f4f0df3f692d23817d50dc1",
+    "fits": "6b0528745ba0e3ebdc081678821355e54d0d41d8e787cf0e904099942926bcb1",
+    "margin": "ffa93f9ad0f8a412020eb756bbc996c07caa1b55a4269cbfee865aa7af591ebc",
+    "source_data": "217bd10ba3fa8f9972d047081342c023ee7524c16b6d8c685d6d9fa49fd2959f",
+    "target_data": "1e8f96f1198817fe962ecf43ceed6fb23be795f3c12ae246387a65cdc2dddfa6",
+    "original_selection": "88e7d3a1c82e6252fddef6f002d7365966424075cb227562a7f14de6321ac6ca",
+    "margin_protocol": "75d11669ced2b3ab386cf43fc186414b54b37bd32021127147a8fa3e3908c622",
+    "source_receipt_NGC3949": "e5a3901ad7bac97a781bc6b297100e1021452bc4b580ae9ca4050a6424c7b678",
+    "source_receipt_NGC3972": "6eb35c7ba0247578ddd774621ab6dbe0ff91c7af438008b0245bb0c9f0da1c79",
+    "source_receipt_UGC06667": "a2211630118989eadf75f87b3e44944b173ea293f26d29f15bb2efa626ddd463",
+    "source_receipt_UGC08837": "52df8821bde48e6d916d78ac664c12d46f161e180d98bc01a624a0cf00d4cd5b",
+    "source_receipt_DDO064": "106042d2dd35afe0a6a19487a46d4d9e89b27b20da98f0e61011065428547cb5",
+    "source_receipt_DDO168": "5d2b907ebaad4caf2a8cd26f510cacea62a38429c28fb1446552fdb71c54ab9f"
+  },
+  "R_kpc": [
+    2.61,
+    3.5,
+    4.37,
+    5.24,
+    6.11,
+    7.07
+  ],
+  "forces": {
+    "original_D_joint": [
+      9954.846967398193,
+      8789.167087497834,
+      6417.473193306053,
+      4930.145569227669,
+      3831.7533137495475,
+      3291.9019947050806
+    ],
+    "interior_D_joint": [
+      10262.033831798202,
+      9061.144534946387,
+      6617.16960153726,
+      5084.442717206507,
+      3957.641952181675,
+      3422.892091385711
+    ]
+  },
+  "controls": {
+    "newtonian": 2.0912624151270265e-05,
+    "prior_response": 1.1102230246251565e-16
+  },
+  "geometry_sha256": "4516a612710dfce22e08aa358ce0cebced0f374493f3aa155aa1e8abd00ca468",
+  "target_arrays_read": false,
+  "provisional": true
+}

@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-12T22:26:31.337031+00:00",
+  "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/nine_source_reconstruction/DIRECT_NINE_SOURCE_OUTCOME.md",
+  "snapshot": "snapshots/outcome_first_filesystem_snapshot.md",
+  "sha256": "29d77d492d756c3f5b6d0eda84f5353b400389dda1ec074cd1edbc2d7b710cdc",
+  "timing_note": "The pre-clarification paragraph was read in tool output. The first filesystem snapshot already contained the parent correction, so both saved full-note snapshots have the final hash."
+}

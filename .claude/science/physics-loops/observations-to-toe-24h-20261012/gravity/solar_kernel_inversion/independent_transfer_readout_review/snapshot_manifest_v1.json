@@ -1,0 +1,384 @@
+{
+  "at": "2026-10-12T22:07:43.452205+00:00",
+  "records": [
+    {
+      "label": "pack_FROZEN_EXTENSION_TRANSFER.md",
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/FROZEN_EXTENSION_TRANSFER.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/pack_FROZEN_EXTENSION_TRANSFER.md",
+      "bytes": 3074,
+      "sha256": "0bb46c333a089440082fe38ace469f2a35bea4c0e0c469c3abb022741e804265"
+    },
+    {
+      "label": "pack_direct_extension_transfer.py",
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_extension_transfer.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/pack_direct_extension_transfer.py",
+      "bytes": 10629,
+      "sha256": "d29a6e9d6d6e00399eefaf28f4ef925ed1db650c01a63fa34bfd062914a771ab"
+    },
+    {
+      "label": "pack_direct_transfer_readout_check.py",
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_transfer_readout_check.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/pack_direct_transfer_readout_check.py",
+      "bytes": 7520,
+      "sha256": "0c574b645509b8f1efe041c251e7af41116a430bf4d15698a4b8fe7ba0e84198"
+    },
+    {
+      "label": "pack_extension_transfer_readout_v1.json",
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/extension_transfer_readout_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/pack_extension_transfer_readout_v1.json",
+      "bytes": 67250,
+      "sha256": "4efbd49ef44b8000a393712671c4a4241d3a308672e39e713d76545eb2777aa0"
+    },
+    {
+      "label": "pack_direct_galaxy_response_operator.py",
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_galaxy_response_operator.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/pack_direct_galaxy_response_operator.py",
+      "bytes": 10262,
+      "sha256": "fe1d5256bb1d867602b4c5c6f68a7c683db1f3ea485d9d85c572b3f8ffccfadb"
+    },
+    {
+      "label": "pack_direct_validate_inverse_fields.py",
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/direct_validate_inverse_fields.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/pack_direct_validate_inverse_fields.py",
+      "bytes": 7473,
+      "sha256": "aa1a07fd5553c119160772ee6ca69fbc698f31010f4f0df3f692d23817d50dc1"
+    },
+    {
+      "label": "pack_FOLLOWUP_MARGIN_PROTOCOL.md",
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/FOLLOWUP_MARGIN_PROTOCOL.md",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/pack_FOLLOWUP_MARGIN_PROTOCOL.md",
+      "bytes": 2722,
+      "sha256": "75d11669ced2b3ab386cf43fc186414b54b37bd32021127147a8fa3e3908c622"
+    },
+    {
+      "label": "direct_qumond_disk.py",
+      "original": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/galaxy_response/qumond_disk/direct_qumond_disk.py",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/direct_qumond_disk.py",
+      "bytes": 15473,
+      "sha256": "701bc4d1ba659f9b25cd98855547864300b83c2f002a477e7bc3b2b5ac3f7b00"
+    },
+    {
+      "label": "transfer_FREEZE.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/FREEZE.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/transfer_FREEZE.json",
+      "bytes": 2315,
+      "sha256": "1dae3e3888f82c2ced9e07253dcf520bcf744e43e5a31c9e9849618703c90b1f"
+    },
+    {
+      "label": "transfer_RESULTS_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/RESULTS_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/transfer_RESULTS_v1.json",
+      "bytes": 36893,
+      "sha256": "53580c9675a01dcf65cce1bdf4d69719b1dbbbc0e262a279c1e6d7ec6f85978f"
+    },
+    {
+      "label": "shared_response_fits_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/shared_response_fits_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/shared_response_fits_v1.json",
+      "bytes": 892071,
+      "sha256": "6b0528745ba0e3ebdc081678821355e54d0d41d8e787cf0e904099942926bcb1"
+    },
+    {
+      "label": "margin_candidate_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/margin_candidate_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/margin_candidate_v1.json",
+      "bytes": 1898,
+      "sha256": "ffa93f9ad0f8a412020eb756bbc996c07caa1b55a4269cbfee865aa7af591ebc"
+    },
+    {
+      "label": "field_validation_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/field_validation_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/field_validation_v1.json",
+      "bytes": 42002,
+      "sha256": "89da1eb9a0f8d86851a456ce5279c6a28d1ec9cf7a2d65ecf9825cac755798fa"
+    },
+    {
+      "label": "margin_field_validation_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/margin_field_validation_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/margin_field_validation_v1.json",
+      "bytes": 9552,
+      "sha256": "0fae44c501763141933be0d9478fbad8fe88797faa450252aca6e272791cc991"
+    },
+    {
+      "label": "baryonic_forward_64.npz",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/galaxy_response/baryonic_forward_64.npz",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/baryonic_forward_64.npz",
+      "bytes": 684081,
+      "sha256": "217bd10ba3fa8f9972d047081342c023ee7524c16b6d8c685d6d9fa49fd2959f"
+    },
+    {
+      "label": "sealed_targets.npz",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/galaxy_response/sealed_targets.npz",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/sealed_targets.npz",
+      "bytes": 91128,
+      "sha256": "1e8f96f1198817fe962ecf43ceed6fb23be795f3c12ae246387a65cdc2dddfa6"
+    },
+    {
+      "label": "training_parameters_frozen.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/galaxy_response/training_parameters_frozen.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/training_parameters_frozen.json",
+      "bytes": 40018,
+      "sha256": "d92ad11101e60c64ba851a35cdc88bbcbd550a838a9a7d2dde862ecaf1768625"
+    },
+    {
+      "label": "contract_and_subset_freeze.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/galaxy_response/qumond_disk/contract_and_subset_freeze.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/contract_and_subset_freeze.json",
+      "bytes": 20932,
+      "sha256": "88e7d3a1c82e6252fddef6f002d7365966424075cb227562a7f14de6321ac6ca"
+    },
+    {
+      "label": "base_NGC3949_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/base_NGC3949_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/base_NGC3949_v1.json",
+      "bytes": 2331,
+      "sha256": "4c10a8ca9f4f1b625926a3ff009398c7c7e7072ab47fedb52fa46392b8f8f805"
+    },
+    {
+      "label": "validate_NGC3949_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/validate_NGC3949_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/validate_NGC3949_v1.json",
+      "bytes": 3680,
+      "sha256": "27a7e47eafe45756146207bfe515d1a9e8357c910b80e8d8d91cdc598125981c"
+    },
+    {
+      "label": "expanded_NGC3949_boundary_v4.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/galaxy_response/qumond_disk/expanded_NGC3949_boundary_v4.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/expanded_NGC3949_boundary_v4.json",
+      "bytes": 11567720,
+      "sha256": "e5a3901ad7bac97a781bc6b297100e1021452bc4b580ae9ca4050a6424c7b678"
+    },
+    {
+      "label": "geometry_NGC3949_base.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_NGC3949_base.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_NGC3949_base.json",
+      "bytes": 636,
+      "sha256": "70bdfe7098ca96a843a08747f957dd8d20a944ad854964474c79417465acd5a6"
+    },
+    {
+      "label": "geometry_NGC3949_refined.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_NGC3949_refined.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_NGC3949_refined.json",
+      "bytes": 637,
+      "sha256": "4b9fa934b8fcb2e0f17aa29185694c75fa531b78d9badd01bc9c66a1bfedff9c"
+    },
+    {
+      "label": "geometry_NGC3949_boundary_extension.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_NGC3949_boundary_extension.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_NGC3949_boundary_extension.json",
+      "bytes": 423,
+      "sha256": "f298465d962e56814d012902b1d652bfb7081a97732cf6cef2590eef829e26ae"
+    },
+    {
+      "label": "base_NGC3972_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/base_NGC3972_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/base_NGC3972_v1.json",
+      "bytes": 2520,
+      "sha256": "956e79451f7ef335c3b426c0c90f136cd522dbc1e5a729e01a8103b83ce0db4d"
+    },
+    {
+      "label": "validate_NGC3972_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/validate_NGC3972_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/validate_NGC3972_v1.json",
+      "bytes": 4262,
+      "sha256": "1590f05576c5028655b4827e39e42247d853d9da4b8a46f6c67287e2753c8caf"
+    },
+    {
+      "label": "expanded_NGC3972_boundary_v4.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/galaxy_response/qumond_disk/expanded_NGC3972_boundary_v4.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/expanded_NGC3972_boundary_v4.json",
+      "bytes": 11742821,
+      "sha256": "6eb35c7ba0247578ddd774621ab6dbe0ff91c7af438008b0245bb0c9f0da1c79"
+    },
+    {
+      "label": "geometry_NGC3972_base.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_NGC3972_base.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_NGC3972_base.json",
+      "bytes": 633,
+      "sha256": "26797fcead286ad50be01605d0d9b5c9ed38743152c793380c3e6e93816e6754"
+    },
+    {
+      "label": "geometry_NGC3972_refined.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_NGC3972_refined.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_NGC3972_refined.json",
+      "bytes": 634,
+      "sha256": "0531780835e1429e46ebf26308bf6d5182f6c514ee8711e33a4992fd21f48c24"
+    },
+    {
+      "label": "geometry_NGC3972_boundary_extension.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_NGC3972_boundary_extension.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_NGC3972_boundary_extension.json",
+      "bytes": 423,
+      "sha256": "886cf474c5baefdca8682e1e77b564a6352e25d7395c0c709b3d05852420e138"
+    },
+    {
+      "label": "base_UGC06667_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/base_UGC06667_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/base_UGC06667_v1.json",
+      "bytes": 2395,
+      "sha256": "8aa35747dc88552f1d8e27682f6ca8dee6cb5be973416b2ef01115b5b39c8ebc"
+    },
+    {
+      "label": "validate_UGC06667_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/validate_UGC06667_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/validate_UGC06667_v1.json",
+      "bytes": 3877,
+      "sha256": "901599b42069fa3a1e9f1f412bb4fc50dc4b18d955861eb81e0f85bee1fa600d"
+    },
+    {
+      "label": "expanded_UGC06667_boundary_v4.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/galaxy_response/qumond_disk/expanded_UGC06667_boundary_v4.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/expanded_UGC06667_boundary_v4.json",
+      "bytes": 23415887,
+      "sha256": "a2211630118989eadf75f87b3e44944b173ea293f26d29f15bb2efa626ddd463"
+    },
+    {
+      "label": "geometry_UGC06667_base.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_UGC06667_base.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_UGC06667_base.json",
+      "bytes": 637,
+      "sha256": "2a88d9a679125259dfeaafe31d21a5ca42e471cb523ff2422b1c15caa83443d1"
+    },
+    {
+      "label": "geometry_UGC06667_refined.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_UGC06667_refined.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_UGC06667_refined.json",
+      "bytes": 638,
+      "sha256": "c7446b93e81cb22a06f93d00bdf0de7d54da172a1202638327d343a17e77a70f"
+    },
+    {
+      "label": "geometry_UGC06667_boundary_extension.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_UGC06667_boundary_extension.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_UGC06667_boundary_extension.json",
+      "bytes": 423,
+      "sha256": "9c4442126b713d19a58f09174d82e268acf0aff8b7524681f0f1b92b1c7b01ad"
+    },
+    {
+      "label": "base_UGC08837_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/base_UGC08837_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/base_UGC08837_v1.json",
+      "bytes": 2392,
+      "sha256": "87379988e2337429f6ae1142fb8dedf9eeaece904169a69e880e14aaf82e2845"
+    },
+    {
+      "label": "validate_UGC08837_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/validate_UGC08837_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/validate_UGC08837_v1.json",
+      "bytes": 3870,
+      "sha256": "3cc12307567d80b5f4d1baed97f395e622e693dde6bfbde947d042e0962af9b1"
+    },
+    {
+      "label": "expanded_UGC08837_boundary_v4.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/galaxy_response/qumond_disk/expanded_UGC08837_boundary_v4.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/expanded_UGC08837_boundary_v4.json",
+      "bytes": 23381292,
+      "sha256": "52df8821bde48e6d916d78ac664c12d46f161e180d98bc01a624a0cf00d4cd5b"
+    },
+    {
+      "label": "geometry_UGC08837_base.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_UGC08837_base.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_UGC08837_base.json",
+      "bytes": 634,
+      "sha256": "70314c0357453b010e9e8a18897fb20f0a7864ae5b584c5db3715a7c4512d43a"
+    },
+    {
+      "label": "geometry_UGC08837_refined.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_UGC08837_refined.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_UGC08837_refined.json",
+      "bytes": 635,
+      "sha256": "e6062875f56226152445015bb7ab0e9c24c7980b00aeee0c4eacdaeb53959228"
+    },
+    {
+      "label": "geometry_UGC08837_boundary_extension.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_UGC08837_boundary_extension.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_UGC08837_boundary_extension.json",
+      "bytes": 423,
+      "sha256": "6dab34fefc22b140d0c5019583520d44ce112d534070657b22753eef48ca0d3a"
+    },
+    {
+      "label": "base_DDO064_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/base_DDO064_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/base_DDO064_v1.json",
+      "bytes": 2689,
+      "sha256": "95f3774fa34059c6b285cfe1570036a91aee91b492fffee8e37f427d09bee42d"
+    },
+    {
+      "label": "validate_DDO064_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/validate_DDO064_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/validate_DDO064_v1.json",
+      "bytes": 4787,
+      "sha256": "f6d865bcbbf3740d5bd1cef1b2cb2be298d729a6a938c36075e74633dcd8a4b1"
+    },
+    {
+      "label": "expanded_DDO064_boundary_v4.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/galaxy_response/qumond_disk/expanded_DDO064_boundary_v4.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/expanded_DDO064_boundary_v4.json",
+      "bytes": 11737826,
+      "sha256": "106042d2dd35afe0a6a19487a46d4d9e89b27b20da98f0e61011065428547cb5"
+    },
+    {
+      "label": "geometry_DDO064_base.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_DDO064_base.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_DDO064_base.json",
+      "bytes": 633,
+      "sha256": "282e219521457f973a8341c53dcd4ec35baca6fc6bfbe0b1373b387836d791f6"
+    },
+    {
+      "label": "geometry_DDO064_refined.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_DDO064_refined.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_DDO064_refined.json",
+      "bytes": 634,
+      "sha256": "73dc5c3c3d81b08a88539f18e7cb8d045cbe1a96e4af8135bba7793592a156d5"
+    },
+    {
+      "label": "geometry_DDO064_boundary_extension.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_DDO064_boundary_extension.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_DDO064_boundary_extension.json",
+      "bytes": 423,
+      "sha256": "bdb883762691835419b3734e89bfcf090dc701c55cd8a96e294c7fba8623be0c"
+    },
+    {
+      "label": "base_DDO168_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/base_DDO168_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/base_DDO168_v1.json",
+      "bytes": 2509,
+      "sha256": "30c6306240057366396d17fe410ff8ca1fd8f8f82a3eee062ff4570c7adebb5e"
+    },
+    {
+      "label": "validate_DDO168_v1.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/extension_transfer/validate_DDO168_v1.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/validate_DDO168_v1.json",
+      "bytes": 4233,
+      "sha256": "4d15b320b45810ad7dbb1e8aeff656376dd55a0cb33561f64b5de24c59d42741"
+    },
+    {
+      "label": "expanded_DDO168_boundary_v4.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/galaxy_response/qumond_disk/expanded_DDO168_boundary_v4.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/expanded_DDO168_boundary_v4.json",
+      "bytes": 11642922,
+      "sha256": "5d2b907ebaad4caf2a8cd26f510cacea62a38429c28fb1446552fdb71c54ab9f"
+    },
+    {
+      "label": "geometry_DDO168_base.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_DDO168_base.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_DDO168_base.json",
+      "bytes": 632,
+      "sha256": "679dadf1a80856b0b4333b2934aa8737f6b13391bddf9575eba2bdf28a8c9f62"
+    },
+    {
+      "label": "geometry_DDO168_refined.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_DDO168_refined.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_DDO168_refined.json",
+      "bytes": 633,
+      "sha256": "ef28fc887dc7d01a3d50a5ef2d6b718476cdefdab28b338e67acbd7c12b2d933"
+    },
+    {
+      "label": "geometry_DDO168_boundary_extension.json",
+      "original": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/newtonian_field_DDO168_boundary_extension.json",
+      "snapshot": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/independent_transfer_readout_review/snapshots/geometry_DDO168_boundary_extension.json",
+      "bytes": 423,
+      "sha256": "15dc6d29a64e1cd3869817fca8e065dacd332b66623ff6db256cb11b2d6ab752"
+    }
+  ],
+  "scope": "Two frozen responses and six completed transfer sources; all raw NPZ arrays preserved, only six target subsets interpreted."
+}

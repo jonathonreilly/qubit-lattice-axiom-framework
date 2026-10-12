@@ -1,0 +1,145 @@
+{
+  "at": "2026-10-12T22:24:27.682945+00:00",
+  "files": [
+    {
+      "key": "certificate_protocol",
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/nine_source_reconstruction/FINITE_LP_CERTIFICATE_PROTOCOL.md",
+      "sha256": "bdfcaffd703c9e06fda8a42f375f22cca99df1f06637f9c2fb5f63b4185be1a2",
+      "bytes": 2398,
+      "snapshot": "snapshots/certificate_protocol.md"
+    },
+    {
+      "key": "certificate_source",
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/nine_source_reconstruction/direct_finite_lp_certificate.py",
+      "sha256": "bfe4f95b993350935d6ca724835ead15a05d3a4465cb158993db5226e9108a43",
+      "bytes": 6230,
+      "snapshot": "snapshots/certificate_source.py"
+    },
+    {
+      "key": "certificate_verifier",
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/nine_source_reconstruction/verify_finite_lp_certificate.py",
+      "sha256": "fa78b871de9e18a224849bcceda56c2d23511c3d109ca330b72fd9a67ae7c708",
+      "bytes": 1876,
+      "snapshot": "snapshots/certificate_verifier.py"
+    },
+    {
+      "key": "certificate_RESULTS",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/RESULTS.json",
+      "sha256": "6263b608a5d67ea88b23492e9f5e350c559ed31f31c3b51ff304b37a8a8b89c7",
+      "bytes": 10617,
+      "snapshot": "snapshots/certificate_RESULTS.json"
+    },
+    {
+      "key": "replay_source",
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/nine_source_reconstruction/direct_solver_status_replay.py",
+      "sha256": "5e0411d3267e388f752aee0814b8bd535ad0099eba3596a755c3b630aba64992",
+      "bytes": 2696,
+      "snapshot": "snapshots/replay_source.py"
+    },
+    {
+      "key": "replay_receipt",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/SOLVER_STATUS_REPLAY_v1.json",
+      "sha256": "55a61793d61601dd7e30af6b83fc4a9f73dbf1e41dcc26bfc8519e67ee8b56f3",
+      "bytes": 3214,
+      "snapshot": "snapshots/replay_receipt.json"
+    },
+    {
+      "key": "pressure_source",
+      "source": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/gravity/solar_kernel_inversion/nine_source_reconstruction/direct_pressure_sensitivity.py",
+      "sha256": "7dc6f7b00e5426a4033eda1f1cd212b3b4ae61802211dce89a96265ca70cc089",
+      "bytes": 4417,
+      "snapshot": "snapshots/pressure_source.py"
+    },
+    {
+      "key": "pressure_receipt",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/PRESSURE_SENSITIVITY_v1.json",
+      "sha256": "03106e69c99aaeb9152bd0eebe7a4a0fde6c63d8a12c0e9af4b0566fa07eb06e",
+      "bytes": 4919,
+      "snapshot": "snapshots/pressure_receipt.json"
+    },
+    {
+      "key": "D_galaxies_external_matrix",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_external_matrix.json",
+      "sha256": "54fb33536f09abff4dfaada97b3e839762bde9e57aa44a4b544f7c8e9b1cc2ca",
+      "bytes": 161165,
+      "snapshot": "snapshots/D_galaxies_external_matrix.json"
+    },
+    {
+      "key": "D_galaxies_external_solar_matrix",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_external_solar_matrix.json",
+      "sha256": "b073a248511c736132209d60c09a1e4d4ae9c1e85396ac2fcbc72157bbfd30ac",
+      "bytes": 161880,
+      "snapshot": "snapshots/D_galaxies_external_solar_matrix.json"
+    },
+    {
+      "key": "M_galaxies_external_matrix",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_external_matrix.json",
+      "sha256": "5e0a927d805f30725e16f1b780c2b0e6f6aba4e2c556e33c82aec59ec0a72b69",
+      "bytes": 148545,
+      "snapshot": "snapshots/M_galaxies_external_matrix.json"
+    },
+    {
+      "key": "M_galaxies_only_matrix",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_only_matrix.json",
+      "sha256": "f75007ce444babe1aac4d96e681ae8d1adb3a62709517438fc4bc46d4fed735e",
+      "bytes": 147404,
+      "snapshot": "snapshots/M_galaxies_only_matrix.json"
+    },
+    {
+      "key": "M_galaxies_external_solar_matrix",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_external_solar_matrix.json",
+      "sha256": "3cc51036a89b17535329714aa3d028de04e4f768e5614b3159467ed87642b359",
+      "bytes": 149260,
+      "snapshot": "snapshots/M_galaxies_external_solar_matrix.json"
+    },
+    {
+      "key": "D_galaxies_only_matrix",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_only_matrix.json",
+      "sha256": "1a23b6f98e2a698c91dc6b142dcae703e9cfc00696d393b243c8960c2ba50d6f",
+      "bytes": 160024,
+      "snapshot": "snapshots/D_galaxies_only_matrix.json"
+    },
+    {
+      "key": "D_galaxies_external_solar_certificate",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_external_solar_certificate.json",
+      "sha256": "d2cf0a4878b066dd02b5c8e8a9100c832b023adea6a98d864bdfc6ed5d432f50",
+      "bytes": 13890,
+      "snapshot": "snapshots/D_galaxies_external_solar_certificate.json"
+    },
+    {
+      "key": "D_galaxies_external_certificate",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_external_certificate.json",
+      "sha256": "5c30c6e28f1b9a3c5cab5c57f86d911a8a07b1ef413abc96ff10f8cae5c69399",
+      "bytes": 13853,
+      "snapshot": "snapshots/D_galaxies_external_certificate.json"
+    },
+    {
+      "key": "D_galaxies_only_certificate",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/D_galaxies_only_certificate.json",
+      "sha256": "d0f62840feaa9f5f0fd3110dd5c519beb0b38f728770d3e80a3b54e6e1ad62a4",
+      "bytes": 13723,
+      "snapshot": "snapshots/D_galaxies_only_certificate.json"
+    },
+    {
+      "key": "M_galaxies_external_solar_certificate",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_external_solar_certificate.json",
+      "sha256": "967190b66fa68012f530e9178825b170d14d4f61e7c31d5c677807fd5602d419",
+      "bytes": 11681,
+      "snapshot": "snapshots/M_galaxies_external_solar_certificate.json"
+    },
+    {
+      "key": "M_galaxies_external_certificate",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_external_certificate.json",
+      "sha256": "463a171f57ad06a244f3e8e6012585a6fbe1aed21d9a0df486566a37cfc566b0",
+      "bytes": 11629,
+      "snapshot": "snapshots/M_galaxies_external_certificate.json"
+    },
+    {
+      "key": "M_galaxies_only_certificate",
+      "source": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/gravity/response_inverse/nine_source/finite_lp_certificates_v1/M_galaxies_only_certificate.json",
+      "sha256": "da9eb1eb36ecc23334b99d6c52cf8881988e5a1180f1e55784addc32b151ebb3",
+      "bytes": 11523,
+      "snapshot": "snapshots/M_galaxies_only_certificate.json"
+    }
+  ]
+}

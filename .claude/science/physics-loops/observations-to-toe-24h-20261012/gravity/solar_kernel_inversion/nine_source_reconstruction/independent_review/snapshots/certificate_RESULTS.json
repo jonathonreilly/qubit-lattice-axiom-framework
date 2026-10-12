@@ -1,0 +1,350 @@
+{
+  "at": "2026-10-12T22:20:50.567792+00:00",
+  "identities": {
+    "source_sha256": "bfe4f95b993350935d6ca724835ead15a05d3a4465cb158993db5226e9108a43",
+    "protocol_sha256": "bdfcaffd703c9e06fda8a42f375f22cca99df1f06637f9c2fb5f63b4185be1a2",
+    "fit_source_sha256": "0f846de483a77c920761f214f6482fd125ec8206073d8226e71c082e499fc787",
+    "nine_source_sha256": "6a2ff77b86580f3e4ed9a934a66c5c5e3789a559e60d0c46296aa97482932e6b",
+    "freeze_sha256": "00531ffbeeb01f2d7ef5fd4c535dba72bef7904265a061922a64a61d2d2d3ce0",
+    "candidates_sha256": "6a51ac43d38def7f745f6e34367ab9474311ff9fb28103bacdbe0e72d01c3263",
+    "results_sha256": "a19385766f5fbc11dd403410b6b3008e0fa0b88987943e70373dd34931ee68a4"
+  },
+  "certificates": [
+    {
+      "name": "M_galaxies_only",
+      "matrix_sha256": "f75007ce444babe1aac4d96e681ae8d1adb3a62709517438fc4bc46d4fed735e",
+      "certificate_sha256": "da9eb1eb36ecc23334b99d6c52cf8881988e5a1180f1e55784addc32b151ebb3",
+      "lower_bound_decimal_downward": "0.555684948124",
+      "nonzero_dual_rows": [
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 2,
+          "R_kpc": 0.94,
+          "row": 44,
+          "y_approximate": -0.07516393459675863
+        },
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 4,
+          "R_kpc": 1.32,
+          "row": 46,
+          "y_approximate": -0.00857385889192055
+        },
+        {
+          "kind": "lower_velocity_rectangle",
+          "source": "UGC06667",
+          "scored_bin": 1,
+          "R_kpc": 3.5,
+          "row": 118,
+          "y_approximate": -0.9162622065113208
+        },
+        {
+          "kind": "weight_cap",
+          "cap": 100,
+          "row": 180,
+          "y_approximate": -1.3724304079832507e-06
+        }
+      ]
+    },
+    {
+      "name": "M_galaxies_external",
+      "matrix_sha256": "5e0a927d805f30725e16f1b780c2b0e6f6aba4e2c556e33c82aec59ec0a72b69",
+      "certificate_sha256": "463a171f57ad06a244f3e8e6012585a6fbe1aed21d9a0df486566a37cfc566b0",
+      "lower_bound_decimal_downward": "0.555684948124",
+      "nonzero_dual_rows": [
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 2,
+          "R_kpc": 0.94,
+          "row": 44,
+          "y_approximate": -0.07516393459675863
+        },
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 4,
+          "R_kpc": 1.32,
+          "row": 46,
+          "y_approximate": -0.00857385889192055
+        },
+        {
+          "kind": "lower_velocity_rectangle",
+          "source": "UGC06667",
+          "scored_bin": 1,
+          "R_kpc": 3.5,
+          "row": 118,
+          "y_approximate": -0.9162622065113208
+        },
+        {
+          "kind": "weight_cap",
+          "cap": 100,
+          "row": 180,
+          "y_approximate": -1.3724304079832507e-06
+        }
+      ]
+    },
+    {
+      "name": "M_galaxies_external_solar",
+      "matrix_sha256": "3cc51036a89b17535329714aa3d028de04e4f768e5614b3159467ed87642b359",
+      "certificate_sha256": "967190b66fa68012f530e9178825b170d14d4f61e7c31d5c677807fd5602d419",
+      "lower_bound_decimal_downward": "0.555684948124",
+      "nonzero_dual_rows": [
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 2,
+          "R_kpc": 0.94,
+          "row": 44,
+          "y_approximate": -0.07516393459675842
+        },
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 4,
+          "R_kpc": 1.32,
+          "row": 46,
+          "y_approximate": -0.008573858891920777
+        },
+        {
+          "kind": "lower_velocity_rectangle",
+          "source": "UGC06667",
+          "scored_bin": 1,
+          "R_kpc": 3.5,
+          "row": 118,
+          "y_approximate": -0.9162622065113208
+        },
+        {
+          "kind": "weight_cap",
+          "cap": 100,
+          "row": 180,
+          "y_approximate": -1.3724304079832126e-06
+        }
+      ]
+    },
+    {
+      "name": "D_galaxies_only",
+      "matrix_sha256": "1a23b6f98e2a698c91dc6b142dcae703e9cfc00696d393b243c8960c2ba50d6f",
+      "certificate_sha256": "d0f62840feaa9f5f0fd3110dd5c519beb0b38f728770d3e80a3b54e6e1ad62a4",
+      "lower_bound_decimal_downward": "0.557044667733",
+      "nonzero_dual_rows": [
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 2,
+          "R_kpc": 0.94,
+          "row": 44,
+          "y_approximate": -0.057286239060683614
+        },
+        {
+          "kind": "lower_velocity_rectangle",
+          "source": "UGC06667",
+          "scored_bin": 0,
+          "R_kpc": 2.61,
+          "row": 117,
+          "y_approximate": -0.9426998069257158
+        },
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC08837",
+          "scored_bin": 2,
+          "R_kpc": 2.09,
+          "row": 126,
+          "y_approximate": -1.3954013600599832e-05
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 0,
+          "row": 181,
+          "y_approximate": -8.649426777548579e-08
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 1,
+          "row": 182,
+          "y_approximate": -4.205070489002518e-07
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 2,
+          "row": 183,
+          "y_approximate": -1.921070433823113e-06
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 3,
+          "row": 184,
+          "y_approximate": -8.573153453104235e-06
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 4,
+          "row": 185,
+          "y_approximate": -3.512879038676978e-05
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 5,
+          "row": 186,
+          "y_approximate": -6.725181710350017e-05
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 9,
+          "row": 190,
+          "y_approximate": -2.1232810714233518e-11
+        }
+      ]
+    },
+    {
+      "name": "D_galaxies_external",
+      "matrix_sha256": "54fb33536f09abff4dfaada97b3e839762bde9e57aa44a4b544f7c8e9b1cc2ca",
+      "certificate_sha256": "5c30c6e28f1b9a3c5cab5c57f86d911a8a07b1ef413abc96ff10f8cae5c69399",
+      "lower_bound_decimal_downward": "0.557044667733",
+      "nonzero_dual_rows": [
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 2,
+          "R_kpc": 0.94,
+          "row": 44,
+          "y_approximate": -0.05728623906068369
+        },
+        {
+          "kind": "lower_velocity_rectangle",
+          "source": "UGC06667",
+          "scored_bin": 0,
+          "R_kpc": 2.61,
+          "row": 117,
+          "y_approximate": -0.9426998069257159
+        },
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC08837",
+          "scored_bin": 2,
+          "R_kpc": 2.09,
+          "row": 126,
+          "y_approximate": -1.3954013600413683e-05
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 0,
+          "row": 181,
+          "y_approximate": -8.649426777548553e-08
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 1,
+          "row": 182,
+          "y_approximate": -4.2050704890025053e-07
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 2,
+          "row": 183,
+          "y_approximate": -1.921070433823109e-06
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 3,
+          "row": 184,
+          "y_approximate": -8.573153453104213e-06
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 4,
+          "row": 185,
+          "y_approximate": -3.512879038676968e-05
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 5,
+          "row": 186,
+          "y_approximate": -6.725181710349973e-05
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 9,
+          "row": 190,
+          "y_approximate": -2.1232839002892878e-11
+        }
+      ]
+    },
+    {
+      "name": "D_galaxies_external_solar",
+      "matrix_sha256": "b073a248511c736132209d60c09a1e4d4ae9c1e85396ac2fcbc72157bbfd30ac",
+      "certificate_sha256": "d2cf0a4878b066dd02b5c8e8a9100c832b023adea6a98d864bdfc6ed5d432f50",
+      "lower_bound_decimal_downward": "0.557044667733",
+      "nonzero_dual_rows": [
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC07577",
+          "scored_bin": 2,
+          "R_kpc": 0.94,
+          "row": 44,
+          "y_approximate": -0.057286239060683676
+        },
+        {
+          "kind": "lower_velocity_rectangle",
+          "source": "UGC06667",
+          "scored_bin": 0,
+          "R_kpc": 2.61,
+          "row": 117,
+          "y_approximate": -0.9426998069257159
+        },
+        {
+          "kind": "upper_velocity_rectangle",
+          "source": "UGC08837",
+          "scored_bin": 2,
+          "R_kpc": 2.09,
+          "row": 126,
+          "y_approximate": -1.3954013600453927e-05
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 0,
+          "row": 181,
+          "y_approximate": -8.649426777548562e-08
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 1,
+          "row": 182,
+          "y_approximate": -4.205070489002512e-07
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 2,
+          "row": 183,
+          "y_approximate": -1.9210704338231097e-06
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 3,
+          "row": 184,
+          "y_approximate": -8.573153453104225e-06
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 4,
+          "row": 185,
+          "y_approximate": -3.5128790386769725e-05
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 5,
+          "row": 186,
+          "y_approximate": -6.725181710349982e-05
+        },
+        {
+          "kind": "D_nonnegative_upper_ramp_limit",
+          "ramp": 9,
+          "row": 190,
+          "y_approximate": -2.123282799546468e-11
+        }
+      ]
+    }
+  ]
+}

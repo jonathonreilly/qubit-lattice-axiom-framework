@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-12T22:03:59.449182+00:00",
+  "identity": {
+    "name": "DDO168",
+    "solver_sha256": "701bc4d1ba659f9b25cd98855547864300b83c2f002a477e7bc3b2b5ac3f7b00",
+    "source_receipt_sha256": "5d2b907ebaad4caf2a8cd26f510cacea62a38429c28fb1446552fdb71c54ab9f",
+    "source_npz_sha256": "217bd10ba3fa8f9972d047081342c023ee7524c16b6d8c685d6d9fa49fd2959f",
+    "U": 0.5605122519882025,
+    "settings": {
+      "nr": 3072,
+      "nc": 1024,
+      "lmax": 512,
+      "hankel": 4096,
+      "rmin": 0.0040234375,
+      "rmax": 65.92
+    }
+  },
+  "cache_sha256": "ea2f9be2882c59118a91bd40b643119990af9ab2e1a0ce81f2e8186fa353951a"
+}

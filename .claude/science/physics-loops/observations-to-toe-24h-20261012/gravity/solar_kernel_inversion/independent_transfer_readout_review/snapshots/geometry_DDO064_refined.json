@@ -1,0 +1,19 @@
+{
+  "at": "2026-10-12T21:55:59.027656+00:00",
+  "identity": {
+    "name": "DDO064",
+    "solver_sha256": "701bc4d1ba659f9b25cd98855547864300b83c2f002a477e7bc3b2b5ac3f7b00",
+    "source_receipt_sha256": "106042d2dd35afe0a6a19487a46d4d9e89b27b20da98f0e61011065428547cb5",
+    "source_npz_sha256": "217bd10ba3fa8f9972d047081342c023ee7524c16b6d8c685d6d9fa49fd2959f",
+    "U": 0.5605122519882025,
+    "settings": {
+      "nr": 3072,
+      "nc": 1024,
+      "lmax": 512,
+      "hankel": 4096,
+      "rmin": 0.00291015625,
+      "rmax": 47.68
+    }
+  },
+  "cache_sha256": "157a65271206b27177082a757c856162953040f7de251d3a6ddcbd33b3e43392"
+}

@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-12T21:56:32.669782+00:00",
+  "identity": {
+    "base_cache_sha256": "d10586d4a3f6031d1bbc6d240256b6a02fe9f9db6509039e8784825d73e736fc",
+    "solver_sha256": "701bc4d1ba659f9b25cd98855547864300b83c2f002a477e7bc3b2b5ac3f7b00",
+    "extension_factor": 2,
+    "edge_hankel_order": 8192
+  },
+  "cache_sha256": "ac8395bc4d2199393d644065883894d40c13e42a59a3547664d679a959d9a5b5",
+  "nodes_per_extension": 110
+}

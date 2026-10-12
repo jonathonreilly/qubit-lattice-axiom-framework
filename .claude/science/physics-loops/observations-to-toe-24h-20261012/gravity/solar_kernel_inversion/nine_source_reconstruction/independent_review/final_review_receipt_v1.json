@@ -1,0 +1,63 @@
+{
+  "at": "2026-10-12T22:31:34.591756+00:00",
+  "scope": "Focused independent numerical/readout and finite-proof check; no formal audit or retained verdict.",
+  "disposition": "Complete for stated finite-matrix/readout scope; three identified record/premise points are explicitly disposed in the final outcome note.",
+  "source_sha256": "6a2ff77b86580f3e4ed9a934a66c5c5e3789a559e60d0c46296aa97482932e6b",
+  "outcome_note_sha256": "29d77d492d756c3f5b6d0eda84f5353b400389dda1ec074cd1edbc2d7b710cdc",
+  "source_and_input_hashes_unchanged_at_finish": true,
+  "snapshot_manifest_entries": 118,
+  "packaged_copy_matches": 36,
+  "scored_observations": 90,
+  "independently_recomputed_score_rows": 162,
+  "source_candidate_gates": 54,
+  "passing_source_candidate_gates": 51,
+  "passing_whole_candidates": 4,
+  "exact_certificates_checked": 6,
+  "safe_lower_bounds": {
+    "M": "0.555684948124",
+    "D": "0.557044667733"
+  },
+  "pressure_thresholds_km2_s2_approximate": {
+    "M": 794.2477322233368,
+    "D": 1113.2873278904708
+  },
+  "correction_confirmation": {
+    "second_status_omission": "Acknowledged; separately identified successful replay, no invented historical log.",
+    "solar_primal_overshoots": "Retained as numerical tolerance-level calibration; no exact feasibility claim.",
+    "perturbation_cap": "Final source explicitly preserves x>=0 and cap100 independently."
+  },
+  "commands": [
+    {
+      "command": "python3 check_nine_source_independent.py",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 check_pressure_independent.py",
+      "exit_code": 0
+    }
+  ],
+  "author_helpers_imported": false,
+  "optimizers_or_field_solves_run": false,
+  "author_files_modified": false,
+  "newly_interpreted_independent_empirical_data": false,
+  "stop_markers": [],
+  "discovery_deadline_epoch": 1791909480.0574322,
+  "artifacts_sha256": {
+    "NINE_SOURCE_REVIEW.md": "e3b0154ae22023d9eddc90b2585d2cb11fd860c65f0d551e6c1fe8c2deaf87d0",
+    "certificate_snapshot_manifest_v1.json": "85ddc42487731802bfb02150746b64279eedf04627040e6973d87f66d9d790d1",
+    "check_nine_source_independent.py": "3770e0091596f185d2b82156b6b606d03543790bac822458c7d3b8678bab4eae",
+    "check_pressure_independent.py": "871e4e10b552ae6ff63703b397bde912a4c56ca6d87cbd25fa9164e404eabdc4",
+    "independent_check_receipt_v1.json": "f6f2843f6a3eecc009d7700c6fdca94ada9e1e9eff252e55390ac07e1539afad",
+    "independent_lp_and_certificates_v1.json": "a3f857eb4e5720f6607cf9e36c45c6763c7b8d9959fcc532f98a27fff47b270f",
+    "independent_non_solar_matrices_v1.npz": "5e46f81d4b724f696d72b060d4d49876d8e28f6abbcc9ffcda9caa91be2e6371",
+    "independent_pressure_and_replay_checks_v1.json": "e0c49caae33ff521e5e73cc2380501d50269267a829ba1a9bb4b00a953c1778d",
+    "independent_scores_and_gates_v1.json": "25aaa5093e053dd7788f3d0a7e8db49c237b4c6928bd61dde0310c636831b9ab",
+    "outcome_final_snapshot.json": "2b4f084c5f2909ea967e0f7e2d042029db9dd871c208d8bb82ab37d517737318",
+    "outcome_initial_snapshot.json": "68cca2b7551a5c1ee8dea48391b77168dabc2434cf094624fafcf0aa4ddfbc00",
+    "outcome_snapshot_comparison.diff": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "packaged_receipt_copy_checks_v1.json": "3aa9e91dab893ac08925df5a3dffb8398978276138d16187eea842d1c1429a4f",
+    "packaged_receipt_copy_checks_v2.json": "d3b51daea882df8a6b68fe4cbe1919058651f25e518ac5f3f3f56f4eeebe8f11",
+    "primary_readout_source_check_v1.json": "bab0d6d2da357bc2c1bb5f7787bacd1c4390167b16d6b9a0e52a5b9781153bfb",
+    "snapshot_manifest_v1.json": "13eac954e893a7021a10620ccadeaa19f767496cd3caaa40658f03d90ce5ce1b"
+  }
+}

@@ -1,0 +1,144 @@
+operator: NGC3949
+operator: NGC3972
+operator: UGC06667
+operator: UGC08837
+operator: DDO064
+operator: DDO168
+{"name": "M_galaxies_only", "status": 0, "primary_t": 0.5556849481245385, "weight_sum": 99.99271365610969, "min_D": -109.36619951523701}
+{"name": "M_galaxies_external", "status": 0, "primary_t": 0.5556849481245385, "weight_sum": 99.99271365611362, "min_D": -109.36619951523546}
+{"name": "M_galaxies_external_solar", "status": 0, "primary_t": 0.5556849481245386, "weight_sum": 99.99271365613937, "min_D": -109.36619951519279}
+{"name": "D_galaxies_only", "status": 0, "primary_t": 0.5570446677331063, "weight_sum": 47.38023897744747, "min_D": -2.6645352591003757e-15}
+{"name": "D_galaxies_external", "status": 0, "primary_t": 0.5570446677331062, "weight_sum": 47.380238978276346, "min_D": -3.552713678800501e-15}
+{"name": "D_galaxies_external_solar", "status": 0, "primary_t": 0.5570446677331063, "weight_sum": 47.38023897726956, "min_D": -3.552713678800501e-15}
+direct field checks: NGC2976
+direct field checks: UGC07577
+direct field checks: KK98-251
+direct field checks: NGC3949
+direct field checks: NGC3972
+direct field checks: UGC06667
+direct field checks: UGC08837
+direct field checks: DDO064
+direct field checks: DDO168
+{
+  "M_galaxies_only": {
+    "all_field_gates_pass": false,
+    "methods": {
+      "base": {
+        "largest_rectangle_t": 0.5557934595902964,
+        "equal_galaxy_rms_log10_velocity": 0.132953264666523,
+        "bins_outside_rectangle": 55
+      },
+      "refined": {
+        "largest_rectangle_t": 0.5556886185586407,
+        "equal_galaxy_rms_log10_velocity": 0.13306845604574224,
+        "bins_outside_rectangle": 55
+      },
+      "boundary": {
+        "largest_rectangle_t": 0.5557828117079194,
+        "equal_galaxy_rms_log10_velocity": 0.13295357043901862,
+        "bins_outside_rectangle": 55
+      }
+    }
+  },
+  "M_galaxies_external": {
+    "all_field_gates_pass": false,
+    "methods": {
+      "base": {
+        "largest_rectangle_t": 0.5557934595902971,
+        "equal_galaxy_rms_log10_velocity": 0.12436347304624272,
+        "bins_outside_rectangle": 38
+      },
+      "refined": {
+        "largest_rectangle_t": 0.5556886185586407,
+        "equal_galaxy_rms_log10_velocity": 0.1243961805516149,
+        "bins_outside_rectangle": 37
+      },
+      "boundary": {
+        "largest_rectangle_t": 0.5557828117079205,
+        "equal_galaxy_rms_log10_velocity": 0.12436360220888343,
+        "bins_outside_rectangle": 38
+      }
+    }
+  },
+  "M_galaxies_external_solar": {
+    "all_field_gates_pass": true,
+    "methods": {
+      "base": {
+        "largest_rectangle_t": 0.555793459590279,
+        "equal_galaxy_rms_log10_velocity": 0.1265260551245705,
+        "bins_outside_rectangle": 41
+      },
+      "refined": {
+        "largest_rectangle_t": 0.5556886185586412,
+        "equal_galaxy_rms_log10_velocity": 0.12652053669332688,
+        "bins_outside_rectangle": 41
+      },
+      "boundary": {
+        "largest_rectangle_t": 0.5557828117079029,
+        "equal_galaxy_rms_log10_velocity": 0.12652621179584053,
+        "bins_outside_rectangle": 41
+      }
+    }
+  },
+  "D_galaxies_only": {
+    "all_field_gates_pass": true,
+    "methods": {
+      "base": {
+        "largest_rectangle_t": 0.5571074679710185,
+        "equal_galaxy_rms_log10_velocity": 0.12332505543721539,
+        "bins_outside_rectangle": 39
+      },
+      "refined": {
+        "largest_rectangle_t": 0.5570476147595024,
+        "equal_galaxy_rms_log10_velocity": 0.1233296611101493,
+        "bins_outside_rectangle": 39
+      },
+      "boundary": {
+        "largest_rectangle_t": 0.557102976229533,
+        "equal_galaxy_rms_log10_velocity": 0.12332510351203982,
+        "bins_outside_rectangle": 39
+      }
+    }
+  },
+  "D_galaxies_external": {
+    "all_field_gates_pass": true,
+    "methods": {
+      "base": {
+        "largest_rectangle_t": 0.5571074679710176,
+        "equal_galaxy_rms_log10_velocity": 0.12476224073789273,
+        "bins_outside_rectangle": 40
+      },
+      "refined": {
+        "largest_rectangle_t": 0.5570476147595026,
+        "equal_galaxy_rms_log10_velocity": 0.12475312682379691,
+        "bins_outside_rectangle": 40
+      },
+      "boundary": {
+        "largest_rectangle_t": 0.5571029762295306,
+        "equal_galaxy_rms_log10_velocity": 0.12476226760974166,
+        "bins_outside_rectangle": 40
+      }
+    }
+  },
+  "D_galaxies_external_solar": {
+    "all_field_gates_pass": true,
+    "methods": {
+      "base": {
+        "largest_rectangle_t": 0.5571074679710185,
+        "equal_galaxy_rms_log10_velocity": 0.12281708586117211,
+        "bins_outside_rectangle": 38
+      },
+      "refined": {
+        "largest_rectangle_t": 0.5570476147595026,
+        "equal_galaxy_rms_log10_velocity": 0.12281277120465023,
+        "bins_outside_rectangle": 38
+      },
+      "boundary": {
+        "largest_rectangle_t": 0.557102976229533,
+        "equal_galaxy_rms_log10_velocity": 0.12281712505526887,
+        "bins_outside_rectangle": 38
+      }
+    }
+  }
+}
+COMPLETE fixed nine-source diagnostic; no prior result overwritten.

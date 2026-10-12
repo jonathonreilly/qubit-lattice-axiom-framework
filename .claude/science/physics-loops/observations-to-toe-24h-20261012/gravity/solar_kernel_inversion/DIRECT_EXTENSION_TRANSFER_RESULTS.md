@@ -111,4 +111,7 @@ Evidence: extension_transfer_readout_v1.json,
 extension_transfer_shape_diagnostic_v1.json, direct_transfer_readout_check.py,
 and the exact original input/results/receipts copied into
 extension_transfer_evidence/. A focused independent final-readout check is
-in progress; the parent already recomputed and inspected every source score.
+complete; the parent read its full report. All36 score rows, all12 numerical
+gate decisions and source/target/weight identities agree, with no material
+discrepancy. The report and separate arithmetic are preserved in
+independent_transfer_readout_review/TRANSFER_READOUT_REVIEW.md.

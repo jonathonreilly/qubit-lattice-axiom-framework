@@ -21,3 +21,22 @@ No full branch science-review pass, conformance certification, empirical
 discovery, or formal audit is claimed. Before a milestone PR, build the
 reproducible packet, run relevant source/runner/citation checks and independently
 review the consequential new claims with the exact raw evidence.
+
+## Direct-author blocks after handoff
+
+The launch table above is historical; current receipts and source dispositions
+are in the named packets and HANDOFF.md.
+
+| Block | Independent check and parent disposition | Open scope |
+|---|---|---|
+| Positive-response milestone | PR9501 scoped source review complete; exact unchanged head verified and attached | Conditional model, no empirical identification |
+| Quantum visibility/reflection milestone | Nine runner families and nine deliberate mutations checked; complete original reviewer source/final-identity confirmation read; final package checks pass; PR9503 | No apparatus violation or all-order alternative classification |
+| Angular and loss readouts | Full independent reports read; all38 numerical rows agree; conditional fairness and source-independent calibration corrections retained with lineage | Hypothetical design values only |
+| Public polarization reproduction | Parent independently read36 workbook records and recomputed fixed means/scores; exact stationary-repeat floor retained | Exposed descriptive data and inadequate stationary-error model |
+| Constrained dynamics | Full independent proof and different finite energy/Green-kernel arithmetic read; no material discrepancy; scoped support accepted, broad no-go demoted | One kinetic family, stated energy/domain/gauge premises |
+| Frozen six-source transfer | Full independent report read; all36 score rows and12 gate decisions agree; source/target/weight hashes match; both observational failures retained | Conditional circular-speed readout; no likelihood or family exclusion |
+| Nine-source fit and rational certificates | Independent checker reports all162 score rows,54 source/candidate gates and6 exact bounds agree; parent applied explicit fixed-cap correction to perturbation corollary; full final report and same-session confirmation read | Finite matrices, fixed E, all90 rows exposed; failed numerical gates and small primal overshoots preserved |
+
+The LP helper omitted the second-stage saved status. A separately identified
+replay records both statuses and reproduces all original weights and t bitwise;
+original logs were not rewritten. The current review has no audit authority.

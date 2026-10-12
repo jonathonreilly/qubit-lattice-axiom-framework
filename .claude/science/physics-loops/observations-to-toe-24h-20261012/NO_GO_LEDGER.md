@@ -43,3 +43,24 @@ or a materially different dynamical operator whose matter coupling and energy
 exchange can be checked. A local triangular hyperbolic equation-level completion
 is an untested alternative; it must face reciprocity/conservation before being
 called a physical action. These live escapes are not counted as failed routes.
+
+## Frozen transfer and nine-source reconstruction
+
+Both original response vectors fail the six-source comparison after all
+numerical gates. The original violates32/50 scored rectangles; the interior
+candidate30/50. Commit94f791c83d preserves the failure before any new fit.
+
+The new six-case fit retains all90 rows. Four selected vectors pass every
+field gate; two M cases fail refinement and remain diagnostics. All need a
+large residual. Exact finite-matrix certificates show M t>=.555684948124 and
+D t>=.557044667733 under the fixed columns, source/readout assumptions and
+cap100. The active witness prominently uses UGC07577, already known to have
+an unresolved pressure correction. No whole-theory exclusion is claimed.
+
+A pressure-only change at UGC07577 would necessarily need max p>=794.247732
+(km/s)² in the M witness, or p(.94kpc)>=1113.287328 in the D witness. These
+are conditional lower bounds, not observed corrections or sufficient rescues.
+Unverified field-coefficient errors, source reconstruction, pressure/height
+maps, per-galaxy external fields, other response bases and additional matter
+can change the matrix and remain live routes. See the complete source and
+N1-N8 scope in gravity/solar_kernel_inversion/nine_source_reconstruction/.

@@ -4693,13 +4693,14 @@ Launch: R13-1, R13-3, R13-5 and R13-6 now; R13-2 after the R12-5 referee; R13-4 
 
 ---
 
-- **R12-6 (twisted N=4 box QED):** worker reading FAIL (bounded) in 𝒦₀; INCONCLUSIVE more widely.
-  - A local equivariant completion exists (Q² ∝ Gauss), and the photino is doubler-free Kähler–Dirac.
-  - But the Q-forced selectron Pauli coupling makes δc_γ ∝ −ln(1/m) inside the box, and the electron's partner total also grows logarithmically.
-  - Theorem L′: N=4 adds no relation between c_e and c_γ.
-  - The neutral scalar σ couples to the electron at √2e.
-
-  Referee running.
+- **R12-6 (twisted N=4 box QED) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.** It gives a sharp 𝒦₀ obstruction, not the class-wide no-go FAIL requires.
+  - **What holds.** On Z³ × ℝ, the equivariant (σ, η) completion gives:
+    - Q² = iσL and H ≥ 0;
+    - finite-range locality for cochain symbols, and quasi-locality for box symbols;
+    - a free doubler-free Kähler–Dirac photino with K² = Δ.
+  - **The obstruction.** In the minimal-Hessian class 𝒦₀, the photon and matched-electron logarithms have coefficients −8 and −2 (units e²/16π²). So c_e − c_γ contains +6 ln(1/m): neither protected nor identically zero.
+  - **The B repair** removes the photon logarithm but leaves an electron logarithm, shown only numerically.
+  - **Still open:** τ-coupled, non-Hessian and full extended-N=4 completions.
 
 ### C5 Round 13 worker readings (recorded as they arrive)
 

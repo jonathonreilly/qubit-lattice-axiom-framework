@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-12T15:00:54.626605+00:00",
+  "source_sha256": "2a6948ab1d98584ac77b3486f8ec1927d88fbb55cd0276123b6c24750f9d6a42",
+  "manifest_sha256": "d704de97de804fa72b4968c1f8bab0197f5b2df3bdadc2d2204f67d2c3565433",
+  "manifest_files": 31,
+  "parent_pairs": 6,
+  "root_complete_read": true,
+  "root_hand_reconstruction": [
+    "Actual Q4 Majorana commutator signs and K_a=sin(aq)/a normalization.",
+    "Squared-current invariant and reverse norm triangle on genuine near-endpoint L2 packets; arbitrary nondecomposable isometries remain covered.",
+    "Real pair packet, energy-coordinate real attainer, monotone essential supremum including band edge.",
+    "Injectivity without lower boundedness, fixed ratio a^-2/3 transition, integral remainder constants.",
+    "Restricted Duhamel identity and fixed-degree even-CAR upper bound; no even-flow lower bound or bandlimited locality."
+  ],
+  "scope": "Pure proof. Root coauthor, not independent acceptance. All 456 lines and necessary parent premises read.",
+  "pending": [
+    "Fresh independent proof review and source-bound final gate"
+  ],
+  "science_runs": 0,
+  "no_go_packet_pass": false
+}

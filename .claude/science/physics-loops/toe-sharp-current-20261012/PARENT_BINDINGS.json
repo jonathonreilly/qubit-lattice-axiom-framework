@@ -1,0 +1,22 @@
+{
+  "parents": [
+    {
+      "author_sha256": "0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd",
+      "available_at_review": true,
+      "claim_id": "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+      "path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "95cf5ef6aa60eb1f90132fa1275e34eb7d9edd2ead73a8a03400c89f586a111c",
+      "role": "Actual current normalization, actual even flow and spin/CAR realization."
+    },
+    {
+      "author_sha256": "7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b",
+      "available_at_review": true,
+      "claim_id": "local_even_continuum_bounded_theorem_note_2026-10-12",
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "aeecb6816bc8d24c00a85604d4a9f94cf5ac197c9912676639d7b2743b08a8de",
+      "role": "Chosen massive scaling, coefficient-energy/reality conventions and CAR norm."
+    }
+  ],
+  "repository_parent_head": "f85656c1766536299c8bafdb91db6dd1dfbd5e2d",
+  "status": "bound_to_published_energy_parent"
+}

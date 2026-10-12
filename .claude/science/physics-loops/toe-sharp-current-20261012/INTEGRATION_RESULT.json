@@ -1,0 +1,34 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "audit_verdict_applied": false,
+  "base": "f85656c1766536299c8bafdb91db6dd1dfbd5e2d",
+  "cache_statuses": {
+    "scripts/concrete_gapped_chain_2026_10_12.py": "fresh",
+    "scripts/continuum_local_boost_2026_10_12.py": "fresh",
+    "scripts/dyadic_even_refinement_2026_10_12.py": "fresh",
+    "scripts/energy_adapted_refinement_2026_10_12.py": "fresh",
+    "scripts/local_even_continuum_2026_10_12.py": "fresh",
+    "scripts/microscopic_local_boost_limit_2026_10_12.py": "fresh",
+    "scripts/mixed_local_poincare_correlations_2026_10_12.py": "fresh",
+    "scripts/sharp_current_refinement_identity_2026_10_12.py": "fresh",
+    "scripts/state_adapted_refinement_2026_10_12.py": "fresh"
+  },
+  "canonical_stderr_merged_into_complete_stdout": true,
+  "git_mutation": false,
+  "graph_delta": {
+    "edges": 2,
+    "nodes": 1
+  },
+  "later_landing_obligations": [
+    "combined current-main validation",
+    "strict audit lint",
+    "formal retained audit"
+  ],
+  "mathematical_proof_verified_by_program": false,
+  "no_go_packet_pass": false,
+  "retained_promotion": false,
+  "scientific_mutations_executed": 0,
+  "scientific_predicates_executed": 0,
+  "status": "actual_source_integration_and_identity_checks_completed"
+}

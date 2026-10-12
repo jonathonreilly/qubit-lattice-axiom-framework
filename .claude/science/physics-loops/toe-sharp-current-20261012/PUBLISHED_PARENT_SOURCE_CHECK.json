@@ -1,0 +1,33 @@
+{
+  "parents": [
+    {
+      "author_sha256": "0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd",
+      "basis": "Full publication diff read; unchanged original proof coverage reused. No mathematical execution.",
+      "frozen_body_after_only_listed_link_relocation_is_exact_substring": true,
+      "literal_replacements": [
+        [
+          "WEIGHTED_CURRENT_CLOSURE_PROBE.md",
+          "WEIGHTED_CURRENT_CLOSURE_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+        ],
+        [
+          "GAPPED_BOOST_INVARIANCE_PROBE.md",
+          "GAPPED_BOOST_INVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+        ],
+        [
+          "MICROSCOPIC_BOOST_FLOW_PROBE.md",
+          "MICROSCOPIC_BOOST_FLOW_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+        ]
+      ],
+      "path": "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "95cf5ef6aa60eb1f90132fa1275e34eb7d9edd2ead73a8a03400c89f586a111c"
+    },
+    {
+      "author_sha256": "7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b",
+      "basis": "Full publication diff read; unchanged original proof coverage reused. No mathematical execution.",
+      "frozen_body_after_only_listed_link_relocation_is_exact_substring": true,
+      "literal_replacements": [],
+      "path": "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "published_sha256": "aeecb6816bc8d24c00a85604d4a9f94cf5ac197c9912676639d7b2743b08a8de"
+    }
+  ]
+}

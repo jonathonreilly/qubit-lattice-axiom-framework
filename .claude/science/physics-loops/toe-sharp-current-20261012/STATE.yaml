@@ -1,0 +1,28 @@
+status: source_frozen_for_root_review
+claim_status: conditional-support
+publication_disposition: partial_narrowing_proposal
+branch: physics-loop/toe-sharp-current-20261012
+repository_parent_head: f85656c1766536299c8bafdb91db6dd1dfbd5e2d
+source_sha256: 2a6948ab1d98584ac77b3486f8ec1927d88fbb55cd0276123b6c24750f9d6a42
+ordinary_proof_review: complete_no_correction
+root_source_gate: open_for_partial_narrowing_proposal
+N1_five_families: pending
+N5_formal_certificate: pending
+no_go_packet_pass: false
+retained_audit_verdict: null
+scientific_calculations_executed_by_scaffold: false
+identity_tool_executed_by_scaffold: false
+root_preparation_program_executed_by_scaffold: false
+repository_validation_executed_by_scaffold: false
+publication_performed_by_scaffold: false
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: upstream_support
+reachability_to_target: partially_closes
+conditional_surface_status: supplied one-dimensional free massive chain only
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: Ordinary proof under explicit supplied-model hypotheses; partial-narrowing proposal only
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+root_execution_acceptance: pending

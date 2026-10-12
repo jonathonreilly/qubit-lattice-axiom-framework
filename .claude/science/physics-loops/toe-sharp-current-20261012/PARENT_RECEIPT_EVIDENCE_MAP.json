@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "bytes": 969,
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/SHARP_CURRENT_PUBLICATION_PARENT_RECEIPT.json",
+      "path": "parent/SHARP_CURRENT_PUBLICATION_PARENT_RECEIPT.json.gz",
+      "sha256": "2b169002e949940340a4ffeebc1cfa0baf3b97d74d6eedc44d90564fb3b795f5",
+      "stored_sha256": "f6540e665be54c2fc98b6864fcf3d5f749857c353d0adfd53fea40d7f85edcad"
+    },
+    {
+      "bytes": 6722,
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/energy_adapted_delivery/FINAL.json",
+      "path": "parent/energy_adapted_delivery/FINAL.json.gz",
+      "sha256": "31b45b83c0d9b999a6d83203414dd935ff77eef563ffbae88b3dbfd7c67e81d7",
+      "stored_sha256": "32fe394206882225f8440c1b30d4f11e00fc2f1dff597f94f92afeaeb59d1726"
+    },
+    {
+      "bytes": 448,
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_worktree_creation/FINAL.json",
+      "path": "parent/sharp_current_worktree_creation/FINAL.json.gz",
+      "sha256": "e49d94b91d6a3085c646ab420bce6b1c16711d838c4050a8756c72fa378bf4ef",
+      "stored_sha256": "1b1e09655e51d95606f3535eafaecc87271572d7ff1031b5c54fd2cb5ac3c01f"
+    }
+  ],
+  "scope": "Root Git/publication receipt identities; worker performed no Git operation."
+}

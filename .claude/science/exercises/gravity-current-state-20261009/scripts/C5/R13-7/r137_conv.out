@@ -1,0 +1,14 @@
+N/lam/h convergence of on-shell dc_e*U (naive law and S1), m=0.1
+naive  N= 64 lam=0.100 h=0.02  onshell dc_e*U= -15.9586  dE(0)=+0.02235
+naive  N= 96 lam=0.100 h=0.02  onshell dc_e*U= -16.0189  dE(0)=+0.02237
+naive  N=128 lam=0.100 h=0.02  onshell dc_e*U= -16.0278  dE(0)=+0.02238
+naive  N= 96 lam=0.100 h=0.04  onshell dc_e*U= -16.0215  dE(0)=+0.02237
+naive  N= 96 lam=0.050 h=0.02  onshell dc_e*U= -15.9916  dE(0)=+0.02354
+naive  N=128 lam=0.025 h=0.02  onshell dc_e*U= -15.9850  dE(0)=+0.02425
+S1     N= 64 lam=0.100 h=0.02  onshell dc_e*U= -10.1192  dE(0)=+0.19137
+S1     N= 96 lam=0.100 h=0.02  onshell dc_e*U= -10.1829  dE(0)=+0.19140
+S1     N=128 lam=0.100 h=0.02  onshell dc_e*U= -10.1909  dE(0)=+0.19140
+S1     N= 96 lam=0.100 h=0.04  onshell dc_e*U= -10.1848  dE(0)=+0.19140
+S1     N= 96 lam=0.050 h=0.02  onshell dc_e*U= -10.1429  dE(0)=+0.19268
+S1     N=128 lam=0.025 h=0.02  onshell dc_e*U= -10.1316  dE(0)=+0.19341
+elapsed 1.6

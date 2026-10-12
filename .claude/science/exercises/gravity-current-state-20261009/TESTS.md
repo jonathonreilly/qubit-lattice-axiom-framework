@@ -4845,3 +4845,10 @@ Readings:
 - **DERIVED:** (a) and (b) proved in the stated subluminal class (refereed).
 - **REFUTED:** an explicit subluminal law with μ_E = 0 or Ξ ≥ 0, checked.
 - **SUGGESTED:** otherwise.
+- **R13-7 (is the e–γ split a theorem?):** worker reading SUGGESTED, with a DERIVED subclass.
+  - Theorem H: a heavy electron's speed shift does not decouple (the lattice 4/3 problem).
+  - Theorem Sgn: in 𝒬_lit⁻ (literal edge, |S| ≤ |q|, photon box inside the electron box) the split cannot vanish on a mass interval.
+  - Not class-wide: one shape tuning nulls the heavy constant.
+  - Physically, one tuning at m → 0 suffices, because Δ is smooth there.
+
+  Referee running.

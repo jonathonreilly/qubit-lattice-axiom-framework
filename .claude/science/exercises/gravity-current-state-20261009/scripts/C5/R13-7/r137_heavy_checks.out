@@ -1,0 +1,19 @@
+(1) on-shell dc_e*U at large m (literal edge), Richardson in 1/m, vs closed form
+S1     N= 64  m=25.6/51.2/102.4: -5.57192 -5.43061 -5.35998 | Richardson(1/m) -5.28935, (1/m,1/m^2) -5.28937 | closed form -5.28991
+S1     N= 96  m=25.6/51.2/102.4: -5.55764 -5.41452 -5.34299 | Richardson(1/m) -5.27147, (1/m,1/m^2) -5.27149 | closed form -5.27137
+S3     N= 64  m=25.6/51.2/102.4: -1.27534 -0.94846 -0.78387 | Richardson(1/m) -0.61929, (1/m,1/m^2) -0.61852 | closed form -0.61871
+S3     N= 96  m=25.6/51.2/102.4: -1.28568 -0.96179 -0.79874 | Richardson(1/m) -0.63569, (1/m,1/m^2) -0.63495 | closed form -0.63585
+S5     N= 64  m=25.6/51.2/102.4: -8.53061 -8.45312 -8.41451 | Richardson(1/m) -8.37590, (1/m,1/m^2) -8.37599 | closed form -8.37626
+S5     N= 96  m=25.6/51.2/102.4: -8.52712 -8.44925 -8.41044 | Richardson(1/m) -8.37164, (1/m,1/m^2) -8.37173 | closed form -8.37212
+naive  N= 64  m=25.6/51.2/102.4: -15.71181 -15.70809 -15.70660 | Richardson(1/m) -15.70512, (1/m,1/m^2) -15.70537 | closed form -15.70540
+naive  N= 96  m=25.6/51.2/102.4: -15.71267 -15.70879 -15.70722 | Richardson(1/m) -15.70566, (1/m,1/m^2) -15.70591 | closed form -15.70594
+(4) closed form vs lam (N=96):
+  S1  lam=0.100: -5.27444  lam=0.050: -5.27137  lam=0.020: -5.27050  lam=0.000: -5.27034
+  S3  lam=0.100: -0.63648  lam=0.050: -0.63585  lam=0.020: -0.63568  lam=0.000: -0.63565
+(2)-(3) sign-theorem hypotheses on the edge (fine 1D grid in q_x, q_perp samples)
+  S1     b=1.00  max(S^2-q^2)=+0.00e+00 (H1 ok)  min w''/max|w| = -4.974e-01 (H2 FAILS)  max_qperp I = -1.6680e-03  |I-formula|/|I| <= 1.1e-04  A range [-6.677, +4.945]
+  S3     b=2.00  max(S^2-q^2)=+0.00e+00 (H1 ok)  min w''/max|w| = -1.546e+01 (H2 FAILS)  max_qperp I = -4.2909e-05  |I-formula|/|I| <= 1.6e-03  A range [-37.708, +21.972]
+  S5     b=0.50  max(S^2-q^2)=+0.00e+00 (H1 ok)  min w''/max|w| = +1.237e-03 (H2 ok)  max_qperp I = -5.3687e-03  |I-formula|/|I| <= 9.8e-05  A range [-3.138, +0.452]
+  S7     b=1.00  max(S^2-q^2)=+0.00e+00 (H1 ok)  min w''/max|w| = -1.939e-01 (H2 FAILS)  max_qperp I = -7.6000e-04  |I-formula|/|I| <= 1.8e-04  A range [-5.750, +3.366]
+  S8     b=2.50  max(S^2-q^2)=+0.00e+00 (H1 ok)  min w''/max|w| = -5.222e+01 (H2 FAILS)  max_qperp I = +1.5710e-01  |I-formula|/|I| <= 1.1e-04  A range [-159.674, +82.441]
+  naive  b=0.00  max(S^2-q^2)=-3.33e-13 (H1 ok)  min w''/max|w| = +4.879e-12 (H2 ok)  max_qperp I = -9.4963e-01  |I-formula|/|I| <= 3.1e-02  A range [-2.000, -0.000]

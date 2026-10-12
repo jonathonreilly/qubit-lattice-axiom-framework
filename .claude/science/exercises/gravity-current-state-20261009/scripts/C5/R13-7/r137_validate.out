@@ -1,0 +1,8 @@
+VALIDATION: on-shell dc_e = (c_e^2-1)/2 vs R8-5 off-shell B-A (lam = m), x16pi^2
+S1     m=0.200 N= 48  onshell dc_e*U =   -9.7719   offshell(B-A)*U =  -10.5878   [tadpole part on-shell  -9.6452]
+S1     m=0.100 N= 64  onshell dc_e*U =  -10.1192   offshell(B-A)*U =  -10.6247   [tadpole part on-shell -10.0691]
+S1     m=0.050 N= 96  onshell dc_e*U =  -10.2797   offshell(B-A)*U =  -10.6750   [tadpole part on-shell -10.2814]
+naive  m=0.200 N= 48  onshell dc_e*U =  -15.9471   offshell(B-A)*U =  -16.0396   [tadpole part on-shell -17.8221]
+naive  m=0.100 N= 64  onshell dc_e*U =  -15.9586   offshell(B-A)*U =  -16.0711   [tadpole part on-shell -17.9307]
+naive  m=0.050 N= 96  onshell dc_e*U =  -15.9308   offshell(B-A)*U =  -16.1258   [tadpole part on-shell -17.9631]
+elapsed 0.6s

@@ -1,0 +1,9 @@
+S1 gapped  m=0.100 N= 96  on-shell  -10.1828  off-shell(B-A)  -10.6068  diff +0.4240  diff/m  +4.240
+S1 gapped  m=0.050 N=128  on-shell  -10.3273  off-shell(B-A)  -10.6229  diff +0.2956  diff/m  +5.911
+S1 gapped  m=0.025 N=160  on-shell  -10.3835  off-shell(B-A)  -10.7297  diff +0.3462  diff/m +13.846
+S1 literal m=0.100 N= 96  on-shell  -10.2332  off-shell(B-A)  -10.2657  diff +0.0326  diff/m  +0.326
+S1 literal m=0.050 N=128  on-shell  -10.1917  off-shell(B-A)  -10.2847  diff +0.0930  diff/m  +1.860
+S1 literal m=0.025 N=160  on-shell  -10.1515  off-shell(B-A)  -10.3949  diff +0.2434  diff/m  +9.736
+S3 gapped  m=0.100 N= 96  on-shell   -6.5309  off-shell(B-A)   -6.5149  diff -0.0160  diff/m  -0.160
+S3 gapped  m=0.050 N=128  on-shell   -6.4758  off-shell(B-A)   -6.5481  diff +0.0723  diff/m  +1.446
+S3 gapped  m=0.025 N=160  on-shell   -6.4310  off-shell(B-A)   -6.6650  diff +0.2340  diff/m  +9.359

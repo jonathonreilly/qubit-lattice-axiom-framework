@@ -1,0 +1,14 @@
+bracket: c1=0.500 -> -3.1087 ; c1=2.500 -> +1.4212
+tuned photon plateau c1 = 2.276578, c2 = 2.876578, dc_e(inf)*U = +6.31e-09
+m, dc_e(on-shell)*U, dc_gamma*U, Delta*U   (N=64, lam=0.05)
+  m=   0.10  dc_e=  -7.1244  dc_g= +99.2758  Delta=-106.4002  m*Delta= -10.6400
+  m=   0.20  dc_e=  -7.2174  dc_g= +99.5818  Delta=-106.7992  m*Delta= -21.3598
+  m=   0.40  dc_e=  -7.0700  dc_g= +96.2079  Delta=-103.2780  m*Delta= -41.3112
+  m=   0.80  dc_e=  -6.7419  dc_g= +83.2320  Delta= -89.9739  m*Delta= -71.9791
+  m=   1.60  dc_e=  -6.2859  dc_g= +52.6090  Delta= -58.8949  m*Delta= -94.2318
+  m=   3.20  dc_e=  -4.9364  dc_g= +19.4207  Delta= -24.3571  m*Delta= -77.9427
+  m=   6.40  dc_e=  -3.1065  dc_g=  +3.9948  Delta=  -7.1013  m*Delta= -45.4486
+  m=  12.80  dc_e=  -1.6895  dc_g=  +0.5845  Delta=  -2.2740  m*Delta= -29.1072
+  m=  25.60  dc_e=  -0.8656  dc_g=  +0.0762  Delta=  -0.9418  m*Delta= -24.1088
+  m=  51.20  dc_e=  -0.4330  dc_g=  +0.0096  Delta=  -0.4427  m*Delta= -22.6644
+  m= 102.40  dc_e=  -0.2131  dc_g=  +0.0012  Delta=  -0.2143  m*Delta= -21.9433

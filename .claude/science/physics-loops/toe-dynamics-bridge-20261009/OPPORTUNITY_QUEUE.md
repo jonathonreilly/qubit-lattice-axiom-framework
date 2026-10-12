@@ -1,7 +1,7 @@
-# Ranked current decisions
+# Ranked opportunity queue
 
-1. Derive and independently test an alternative refinement preserving the chosen vacuum and actual time evolution. Check endpoint Jacobian, geometric limit and actual current/space/boost limitations. Root proposal remains provisional.
-2. Complete state-adapted independent review integration, preserve original symbolic failure and distinct arithmetic repair, then execute/publish the accepted milestone on exact PR9493.
-3. Preserve complete local-continuum9492 and dyadic9493 evidence; they are regular open PRs. Earlier transport/walk/memory science has been selectively landed by concurrent activity; four earlier campaign PRs closed.
-4. Intended3D/interacting realization, framework selection and rates remain open. Avoid otherPR9476's gravity/Lorentz-random/timelike-link mass-shell routes.
-5. At16:00:52UTC start no new research, preserve incomplete work, report actual outcomes/limits and disable heartbeat. Never extend.
+1. Verify the sharp actual-current approximation bound over all exact-energy isometries of the supplied 1D free chain; test growing momentum windows and even-word upper estimates. Root proposal remains provisional.
+2. Complete fresh energy-adapted review and root evidence integration, then publish the exact state/time refinement as a conditional construction.
+3. Finish accepted state-adapted publication with original symbolic failure, separate repair and integrity survivor preserved.
+4. Intended3D/interacting realization, framework selection and rates remain open; avoid PR9476 interacting d>=2 additive-momentum and gravity lanes.
+5. At16:00:52UTC stop new research, preserve work and report actual outcomes/limits; disable heartbeat without extending campaign.

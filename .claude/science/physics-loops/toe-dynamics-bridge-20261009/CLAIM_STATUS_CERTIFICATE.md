@@ -1,3 +1,3 @@
-# Current campaign claim status
+# Current claim status
 
-Supplied-model conditional support; no audit verdict applied or retained promotion performed by the campaign author. Scoped existing Lean checks cover finite algebra, not full physics. Local continuum and dyadic refinement are published bounded constructions. State-adapted finite locality and energy failures remain alongside its positive continuum/state argument; final review integration pending. A different energy-adapted refinement is being derived. Intended3D/interacting realization and framework selection remain open. Physical axioms and editable prompts unchanged.
+Supplied-model conditional support only. State-adapted exact vacuum preservation is checked with finite-scale energy/locality failures retained. Energy-adapted exact state/time construction is in fresh final review. Sharp current approximation theorem is being derived. Intended3D/interacting realization and framework selection remain open. No retained promotion or audit verdict applied by author; no physical axioms or editable prompts changed.

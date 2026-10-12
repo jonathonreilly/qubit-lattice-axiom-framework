@@ -1,0 +1,11 @@
+partner (selectron-photino) loop: dc_e x 16pi^2 / y^2  (photon loop alone, R10-1 refereed: -17.96 Wilson, -10.66 box)
+  Wilson circle e / Wilson circle photino    m=0.10 N=48 | chiral (P_L + P_R, two selectrons):  -7.4162 | scalar Y=1 (one selectron):  -8.9105 | dE(0)x16pi^2=-0.435
+  Wilson circle e / Wilson circle photino    m=0.10 N=64 | chiral (P_L + P_R, two selectrons):  -7.5230 | scalar Y=1 (one selectron):  -9.0173 | dE(0)x16pi^2=-0.443
+  Wilson circle e / Wilson circle photino    m=0.05 N=64 | chiral (P_L + P_R, two selectrons):  -8.4868 | scalar Y=1 (one selectron):  -9.9837 | dE(0)x16pi^2=-0.242
+  box b1=0.8 e / box b1=0.8 photino          m=0.10 N=48 | chiral (P_L + P_R, two selectrons):  -8.9677 | scalar Y=1 (one selectron):  -8.9677 | dE(0)x16pi^2=-0.580
+  box b1=0.8 e / box b1=0.8 photino          m=0.10 N=64 | chiral (P_L + P_R, two selectrons):  -9.0744 | scalar Y=1 (one selectron):  -9.0744 | dE(0)x16pi^2=-0.589
+  box b1=0.8 e / box b1=0.8 photino          m=0.05 N=64 | chiral (P_L + P_R, two selectrons): -10.0412 | scalar Y=1 (one selectron): -10.0412 | dE(0)x16pi^2=-0.315
+  box b1=0.8 e / Wilson circle photino       m=0.10 N=48 | chiral (P_L + P_R, two selectrons):  -8.0013 | scalar Y=1 (one selectron):  -8.0013 | dE(0)x16pi^2=-0.511
+  box b1=0.8 e / Wilson circle photino       m=0.10 N=64 | chiral (P_L + P_R, two selectrons):  -8.1081 | scalar Y=1 (one selectron):  -8.1081 | dE(0)x16pi^2=-0.519
+  box b1=0.8 e / Wilson circle photino       m=0.05 N=64 | chiral (P_L + P_R, two selectrons):  -9.0719 | scalar Y=1 (one selectron):  -9.0719 | dE(0)x16pi^2=-0.280
+elapsed 0.4s

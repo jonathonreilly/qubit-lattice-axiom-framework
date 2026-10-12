@@ -1,0 +1,12 @@
+a-loop (internal electron + massless neutral scalar on the photon curve): dc_e x16pi^2/y^2
+  Wilson e / Wilson a  m=0.10 N=128 | scalar  -3.6093 | pseudoscalar  -2.6554 | chiral pair  -3.1323
+  Wilson e / Wilson a  m=0.05 N=160 | scalar  -1.7680 | pseudoscalar  -2.6605 | chiral pair  -2.2142
+  Wilson e / Wilson a  m=0.05 N=192 | scalar  -2.3706 | pseudoscalar  -2.6606 | chiral pair  -2.5156
+  box0.8 e / box0.8 a  m=0.10 N=128 | scalar  -6.4570 | pseudoscalar  -2.5139 | chiral pair  -4.4854
+  box0.8 e / box0.8 a  m=0.05 N=160 | scalar  -4.6181 | pseudoscalar  -2.5169 | chiral pair  -3.5675
+  box0.8 e / box0.8 a  m=0.05 N=192 | scalar  -5.2207 | pseudoscalar  -2.5170 | chiral pair  -3.8688
+  box0.8 e / Wilson a  m=0.10 N=128 | scalar  -5.0777 | pseudoscalar  -1.1348 | chiral pair  -3.1062
+  box0.8 e / Wilson a  m=0.05 N=160 | scalar  -3.2385 | pseudoscalar  -1.1372 | chiral pair  -2.1878
+  box0.8 e / Wilson a  m=0.05 N=192 | scalar  -3.8411 | pseudoscalar  -1.1372 | chiral pair  -2.4891
+  [check] r105_partner_loop chiral Wilson/Wilson m=0.1 N=96:  -1.4937 (should equal the convergence file value -1.4937)
+elapsed 11.9s

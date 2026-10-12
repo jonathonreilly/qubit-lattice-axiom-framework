@@ -1,0 +1,31 @@
+=== S1: FRW minisuperspace, records fixed under metric variation ===
+rho = -q*Derivative(eps(q), q) + eps(q)
+p   = q*Derivative(eps(q), q) - eps(q)
+rho + p = 0 (vacuum equation of state p = -rho)
+rho - (eps - q eps') = 0
+
+=== S2: vary the accumulated count A ===
+dL/dA_dot = -Derivative(eps(q), q)  ; Euler-Lagrange: d/dt(dL/dA_dot) = 0  =>  eps'(q) = mu, a constant
+
+=== S1b: generic metric, numeric Jacobi-formula check ===
+max |dS/dg - pred| = 5.898421751027172e-10  (scale 1.645472054853859 )
+max |dS/dg - pred_if_q_metric_independent| = 3.765954240285725
+
+=== S3: phase transitions at fixed mu ===
+eps(q) = Lambda_b + k*q**4/4 - q**2/2  ; rho_V(q) = eps - q eps' = Lambda_b - 3*k*q**4/4 + q**2/2
+compressibility^-1 = q^2 eps'' = 3*k*q**4 - q**2
+d rho_V / d mu = (d rho_V/dq)/(d mu/dq) = -q
+q-independent shift: eps' unchanged => True ; rho_V shift = Delta
+rho_V(q0)=0 roots: [-sqrt(3)*sqrt(-sqrt(12*Lambda_b*k + 1)/k + 1/k)/3, sqrt(3)*sqrt(-sqrt(12*Lambda_b*k + 1)/k + 1/k)/3, -sqrt(3)*sqrt(sqrt(12*Lambda_b*k + 1)/k + 1/k)/3, sqrt(3)*sqrt(sqrt(12*Lambda_b*k + 1)/k + 1/k)/3]
+d mu0 / d Lambda_b along rho_V(q0)=0 : 1/q  (= 1/q0: a shift Delta in Lambda_b needs delta mu = Delta/q0)
+example k=1, Lb=+0.05: equilibrium q0 = [0.86889030] ; mu0 = [-0.21290388] ; chi^-1 = [0.95497035]
+Interpretation: the zero needs mu = mu0(final Lb); a later shift Lb->Lb+Delta needs delta mu = +Delta/q0 at first order,
+which a conserved mu cannot supply. Tuning precision on mu: rho_Lambda/(q0*|delta mu| scale) = rho_Lambda/Delta.
+q-dependent kick Delta*(q/qs)^2: rho_V_new(q) - rho_V_old(q) = -Delta*q**2/q_s**2  (a term quadratic in q is not removed by the Legendre map; only terms LINEAR in q drop out)
+linear kick Delta*q/qs: rho_V change = 0 ; but eps' shifts by Delta/qs, so at fixed mu q must move:  eps'_new(q') = mu
+
+=== S4: conserved 3-form current (records as conserved number current) ===
+fluid: rho = Lambda_b + f(n) ; p = -Lambda_b + n*Derivative(f(n), n) - f(n) ; rho + p = n*Derivative(f(n), n)
+Lorentz-invariant vacuum (T ~ g) needs rho + p = n f'(n) = 0 => n = 0 or f'(n)=0;
+then rho_vac = Lb + f(n_*) at a stationary point or Lb + f(0): no zero condition.
+n(a) = a_i**3*n_i/x**3  -> limit a->oo: 0  => rho -> Lb + f(0)

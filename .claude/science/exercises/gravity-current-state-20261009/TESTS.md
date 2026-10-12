@@ -4043,22 +4043,6 @@ Readings:
 - **Bodies fall universally.** On the box domain, Ẍ_E = −g + 2(g·V)V. So the linear-order Eötvös violation between bodies of different binding or spin is exactly zero.
 - **Spin.** The checks establish the special-relativistic uniform-acceleration term and unit rigid-rotation coupling. They do not establish GR's curved-field geodetic or spin-curvature coupling.
 
-**R10-1 (edge-anomaly inflow):** worker reading SUGGESTED, with derived parts.
-- Theorem T′: the scalar photon speed is an A-moment.
-- Theorem D: Dirac photons depend on four anomaly functions, and reproduce R8-5.
-- Theorem P: Clifford-flat fermions plus 2 matched scalars cancel the photon speed shift exactly (an edge supertrace). The electron speed is untouched (−11 to −18).
-- The tuning count equals set C's.
-
-Referee running (18:13Z).
-
-**R10-2 (Euclidean box symbols):** worker reading FAIL (bounded).
-- Lemma A: RP forces k₄-analyticity away from πZ, so smooth box symbols are not RP.
-- Lemma B: no smooth RP law is exactly O(4) on an open set.
-- Whole-zone SLAC passes link RP only numerically, and forces zero-energy time-doublers.
-- The count without RP is 5 + Λ.
-
-Referee running (18:11Z).
-
 ### C5 Round 10, item 5 (pre-registered 18:13Z; launched now; conditional on R10-1, whose referee is running)
 
 **R10-5. An edge supertrace: does boson–fermion pairing on the box edge cancel every one-loop Lorentz-violating coefficient (photon, electron, graviton)? And does it touch the vacuum energy?**
@@ -4280,3 +4264,46 @@ Launch: R11-2 through R11-6 now; R11-1 after the R10-1 referee. Draft text verba
 
 ---
 
+
+### C5 Round 10 referee results (recorded 18:46Z)
+
+**R10-1 (edge-anomaly inflow) — CONFIRMED WITH CORRECTIONS. SUGGESTED, with derived parts.**
+- **Derived identities.** In free, separable Z³ × ℝ Peierls-coupled box theories:
+  - the scalar-QED photon-speed correction is exactly a positively weighted moment of A;
+  - the box-QED Dirac correction is exactly a moment of (a, A, c₁, c₂).
+
+  So the registered "A-only" premise is false.
+- **Theorem P.** For Clifford-flat unit-speed bands and matched masses, one fermion contribution per four components plus two matched complex-scalar contributions cancel the photon coefficient pointwise, for every edge shape. The actual 8-component realization needs four scalars.
+- **What pairing leaves.** The paired electron speed remains δc_e·16π² ≈ −10.66 to −17.96. The scalar speeds, the graviton sector, the Dirac TT sector and higher loops are open.
+- **Neither direction proved.** The box anomaly is not proved unremovable, and no counterexample cancels every one-loop coefficient. The claimed total of six tunings is not established.
+
+**R10-2 (Euclidean box symbols, set B) — CONFIRMED WITH CORRECTIONS. FAIL (bounded) on the OS-positivity clause, in the stated class.**
+- **Smooth box symbols fail RP.** Take translation-invariant Euclidean lattice laws whose time-local bosonic two-point functions have the standard OS transfer-contraction representation. Their fixed-spatial-momentum slices are real-analytic away from k₄ = 0, π. So the smooth-box Gaussian covariances, and small correlator-continuous perturbations of them, fail both site and link RP.
+- **No smooth law is exactly O(4) on a box.** A nonconstant smooth periodic continuum-O(4) two-point function cannot be exact on an open box.
+- **The one exception.** Whole-zone scalar SLAC is a sharp link-RP exception. But its positive measure contains negative transfer spectrum approaching −1, which gives time-alternating energies down to zero.
+- **Without RP** (and with the full loop integrand confined to an O(4) ball), the codimension falls from 11 to 5 + Λ, not to 2.
+- **Other walls.** R2-4 remains conditional on its source and response premises. R2-1 is not re-derived.
+
+**R10-3 (emission-cancelled CQ hybrid) — NOT CONFIRMED as conditional VIABLE. EXCLUDED in class T_E.**
+- **The class T_E** (all conditions together):
+  - a translation- and Lorentz-invariant stationary Gaussian linear-meter CQ model;
+  - a self-commuting, locally finite record and zero reverse gain;
+  - standard massless retarded propagation and continuous nonzero cone gain;
+  - positive spectral measures, finite vacuum excitation and finite static response.
+- **The exclusion.** In this class, exact emission cancellation makes the matter influence field obey zero-temperature quantum-bath detailed balance. But it necessarily makes the classical metric-record covariance non-locally-finite at the light cone, so the finite-time on-shell record energy is unbounded (Cesàro mean/limsup). No record-metric realization exists in T_E.
+- **Scope.** The result is channelwise. It does not establish the claimed tensor γ or the spin-2/spin-0 tower.
+- **Still open:** emission-cancelled hybrids outside T_E.
+
+**R10-4 (records as a q-charge for Λ) — CONFIRMED WITH CORRECTIONS. OPEN.**
+- **What is derived, conditionally.** Supply an additional metric-independent, additive record-history 3-current A, with formation form F = dA. Then the local action ε(*F) yields the Gibbs–Duhem stress.
+- **Why the minimal version fails.** Its shift-symmetric equation conserves μ. On a regular branch with a q-independent vacuum jump, Minkowski space afterwards needs μ chosen for the final vacuum, to about 2.1e-55 at the electroweak step. That excludes the minimal conserved-μ realization.
+- **Not excluded:** membrane-sourced, dissipative, global, count-dependent, q-coupled-matter and multi-flux completions.
+- **No untuned, observationally viable completion was produced.**
+
+**R10-5 (edge supertrace):** worker reading FAIL (bounded), clause 1, in class 𝒮.
+- Theorem Q: an exact free lattice supercharge exists for the paired content, and the vacuum energy is zero.
+- Theorem PT: the graviton TT speed and mass are cancelled under minimal pairing coupling.
+- Lemma PD: in 𝒮 a photino must carry Chern number ±2, so doublers are forced and a box photon cannot join the supersymmetry.
+- The electron split is not cancelled; partner loops make it larger (Δ ≈ −15 to −21).
+
+Referee running (18:43Z).

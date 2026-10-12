@@ -1,0 +1,74 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R10-3/scripts/r103_checks.py:140: IntegrationWarning: The maximum number of subdivisions (400) has been achieved.
+  If increasing the limit yields no improvement it is advised to analyze 
+  the integrand in order to determine the difficulties.  If the position of a 
+  local difficulty can be determined (singularity, discontinuity) one will 
+  probably gain from splitting up the interval and calling the integrator 
+  on the subranges.  Perhaps a special-purpose integrator should be used.
+  val += integrate.quad(f, edges[i], edges[i + 1], limit=400)[0]
+[1] model M_E at fixed p: S(p) = [[S_BB, S_BJ],[S_JB, S_JJ]], S_ff = S_BB + G S_JB + conj(G) S_BJ + |G|^2 S_JJ
+    20000 random (G, F, P): min eig/P = -2.15e-15 (>= 0 up to rounding); max |commutator error| = 1.8e-14
+    emission side S_ff(-p)/(|G|^2 P) max = 1.2e-15 (silent);  absorption S_ff(p) = |F|^2/P to 3.4e-09
+    spacelike +p: min eig = -3.120e-18, S_ff = 2.160000, floor |G||F| = 2.160000
+    spacelike -p: min eig = -3.120e-18, S_ff = 2.160000, floor |G||F| = 2.160000
+
+[2] general bound sigma = S_ff(p) + S_ff(-p) >= |F|^2/(2P) for any correlation (random constrained draws)
+    min sigma / (|F|^2/2P) over 50000 draws = 1.082846  (bound attained at a = -conj(b) = iF/2)
+    attained case: commutator err = 5.6e-17, sigma/(|F|^2/2P) = 1.000000
+
+[3] closed-loop FDT: C_ff = C_BB + G C_JB + conj(G) C_BJ with C_JB = iF, C_BJ = -i conj(F)
+    max error of C_ff = C_BB - 2Im(GF) and Im R = -C_ff/2 over 10000 draws: 2.5e-15
+
+[4] QMFS realisation at one frequency: H = w(a^dag a - b^dag b), state |0_a,0_b>, J = x_a + x_b
+    t=0.3: <[J(t),J(0)]> = 0.00e+00-1.50e-17j; <J(t)J(0)> = 0.955336-0.000000j  (= cos(wt) = 0.955336: symmetric spectrum)
+    t=1.1: <[J(t),J(0)]> = 0.00e+00-4.25e-17j; <J(t)J(0)> = 0.453596-0.000000j  (= cos(wt) = 0.453596: symmetric spectrum)
+    t=2.5: <[J(t),J(0)]> = 0.00e+00+9.37e-18j; <J(t)J(0)> = -0.801144+0.000000j  (= cos(wt) = -0.801144: symmetric spectrum)
+    f = 1x_a+0.3p_a+0x_b+0p_b: emission weight |<0_a,1_b|f|0,0>|^2 = 0.0000
+    f = 1x_a+0.3p_a+0.2x_b+0p_b: emission weight |<0_a,1_b|f|0,0>|^2 = 0.0200
+    f = 0.5x_a+0p_a+0x_b+0.1p_b: emission weight |<0_a,1_b|f|0,0>|^2 = 0.0050
+    => emission silence <=> f has no b-sector component; the b (negative-energy) sector enters only J.
+
+[5] Theorem P near s -> 0+: |F| = 1, g = 1, rho = 1/P (minimal emission-silent absorption), record |G|^2 P = P/s^2
+    P = s^0.0: d=1e-02: int rho=0.99, int rec=99, sqrt(prod)/ln(1/d)=2.15; d=1e-04: int rho=1, int rec=1e+04, sqrt(prod)/ln(1/d)=10.86; d=1e-06: int rho=1, int rec=1e+06, sqrt(prod)/ln(1/d)=72.38; d=1e-08: int rho=1, int rec=1e+08, sqrt(prod)/ln(1/d)=542.87
+    P = s^0.5: d=1e-02: int rho=1.8, int rec=18, sqrt(prod)/ln(1/d)=1.24; d=1e-04: int rho=1.98, int rec=198, sqrt(prod)/ln(1/d)=2.15; d=1e-06: int rho=2, int rec=2e+03, sqrt(prod)/ln(1/d)=4.57; d=1e-08: int rho=2, int rec=2e+04, sqrt(prod)/ln(1/d)=10.86
+    P = s^1.0: d=1e-02: int rho=4.61, int rec=4.61, sqrt(prod)/ln(1/d)=1.00; d=1e-04: int rho=9.21, int rec=9.21, sqrt(prod)/ln(1/d)=1.00; d=1e-06: int rho=13.8, int rec=13.8, sqrt(prod)/ln(1/d)=1.00; d=1e-08: int rho=18.4, int rec=18.4, sqrt(prod)/ln(1/d)=1.00
+    P = s^1.5: d=1e-02: int rho=18, int rec=1.8, sqrt(prod)/ln(1/d)=1.24; d=1e-04: int rho=198, int rec=1.98, sqrt(prod)/ln(1/d)=2.15; d=1e-06: int rho=2e+03, int rec=2, sqrt(prod)/ln(1/d)=4.57; d=1e-08: int rho=2e+04, int rec=2, sqrt(prod)/ln(1/d)=10.86
+    => int rho and int |G|^2 P cannot both stay finite (Cauchy-Schwarz: their product >= (ln 1/d)^2).
+
+[6] secular pumping of one on-shell record mode: h'' + k^2 h = J(t), stationary noise S_J(w) = P(|w^2 - k^2|), k = 1
+    P = const (P(0)>0)  : E(T) at T=1e1,1e2,1e3,1e4 = 4.945, 49.95, 499.9, 5000
+    P = |s|^0.5         : E(T) at T=1e1,1e2,1e3,1e4 = 3.212, 10.93, 35.33, 112.5
+    P = |s|             : E(T) at T=1e1,1e2,1e3,1e4 = 3.439, 4.907, 6.373, 7.821
+    P = |s|^2           : E(T) at T=1e1,1e2,1e3,1e4 = 24.69, 24.84, 24.83, 24.52
+    => linear growth for P(0)>0, ~T^(1-a) for 0<a<1, ln T for a=1, bounded for a>1 (no secular pumping only if P vanishes faster than |s|).
+
+[7] forced tower (emission-silent sector): rho(s) = (lam g/pi)|F|^2/(s+mu^2), |F|=1 for s < 1/l^2
+    1/mu=1e-06 m, l=4e-10 m, r=1.00e-07 m: dV/V_N = 1.188e+00   (asymptote (2/pi)/(mu r)^2 = 6.366e+01)
+    1/mu=1e-06 m, l=4e-10 m, r=1.00e-06 m: dV/V_N = 2.186e-01   (asymptote (2/pi)/(mu r)^2 = 6.366e-01)
+    1/mu=1e-06 m, l=4e-10 m, r=3.86e-05 m: dV/V_N = 4.256e-04   (asymptote (2/pi)/(mu r)^2 = 4.273e-04)
+    1/mu=1e-06 m, l=4e-10 m, r=5.20e-05 m: dV/V_N = 2.349e-04   (asymptote (2/pi)/(mu r)^2 = 2.354e-04)
+    1/mu=1e-06 m, l=4e-10 m, r=1.00e-03 m: dV/V_N = 6.366e-07   (asymptote (2/pi)/(mu r)^2 = 6.366e-07)
+    1/mu=1e-06 m, l=4e-10 m, r=1.00e-02 m: dV/V_N = 6.366e-09   (asymptote (2/pi)/(mu r)^2 = 6.366e-09)
+    1/mu=1e-05 m, l=4e-10 m, r=1.00e-07 m: dV/V_N = 2.574e+00   (asymptote (2/pi)/(mu r)^2 = 6.366e+03)
+    1/mu=1e-05 m, l=4e-10 m, r=1.00e-06 m: dV/V_N = 1.188e+00   (asymptote (2/pi)/(mu r)^2 = 6.366e+01)
+    1/mu=1e-05 m, l=4e-10 m, r=3.86e-05 m: dV/V_N = 3.356e-02   (asymptote (2/pi)/(mu r)^2 = 4.273e-02)
+    1/mu=1e-05 m, l=4e-10 m, r=5.20e-05 m: dV/V_N = 2.014e-02   (asymptote (2/pi)/(mu r)^2 = 2.354e-02)
+    1/mu=1e-05 m, l=4e-10 m, r=1.00e-03 m: dV/V_N = 6.362e-05   (asymptote (2/pi)/(mu r)^2 = 6.366e-05)
+    1/mu=1e-05 m, l=4e-10 m, r=1.00e-02 m: dV/V_N = 6.366e-07   (asymptote (2/pi)/(mu r)^2 = 6.366e-07)
+    Lee et al. 2020 (local text, untrusted data): an |alpha| = 1 Yukawa must have range < 38.6 um (95%).
+    A power-law tail (2 lam/pi)(mu r)^-2 is not a single Yukawa; compare at r = 38.6-52 um as an order-of-magnitude check only.
+
+[8] absorption into the meter (matter loses energy): order-of-magnitude rates
+    quadrupole graviton-like rate, electron, a0 lever arm, dE=10 eV: 2.75e-40 s^-1 (GR order of magnitude, own)
+    quadrupole graviton-like rate, electron, a0 lever arm, dE=1000 eV: 2.75e-30 s^-1 (GR order of magnitude, own)
+    tower/graviton factor (lam=1.0, 1/mu=1e-06 m, dE=10 eV): (lam/pi) ln(1+dE^2/mu^2) = 2.5
+    tower/graviton factor (lam=1.0, 1/mu=1e-06 m, dE=1000 eV): (lam/pi) ln(1+dE^2/mu^2) = 5.43
+    tower/graviton factor (lam=1.0, 1/mu=1e-09 m, dE=10 eV): (lam/pi) ln(1+dE^2/mu^2) = 0.000816
+    tower/graviton factor (lam=1.0, 1/mu=1e-09 m, dE=1000 eV): (lam/pi) ln(1+dE^2/mu^2) = 1.05
+    CMB photon into tower, sigma ~ lam*l_P^2 = 2.61e-70 m^2 (suggested O(1)): rate per photon ~ 3.2e-53 s^-1
+
+[9] BMV
+    timelike transfers need |k| < w/c; branch sensitivity ~ (w dx/c)^2 = 4.4e-24 for w=2pi/2.5 s, dx=250 um
+    tower fraction 0: Z1Z2 coeff (LOCC) = 1.0000; negativity LOCC = -0.00e+00; coherent = 0.3536
+    tower fraction 0.001: Z1Z2 coeff (LOCC) = 1.0010; negativity LOCC = -0.00e+00; coherent = 0.3538
+    tower fraction 0.1: Z1Z2 coeff (LOCC) = 1.1000; negativity LOCC = -0.00e+00; coherent = 0.3802
+    R4-4 benchmark (refereed): concurrence 0.156 quantum vs 0 for a classical channel.

@@ -1,0 +1,44 @@
+=== N1 inputs ===
+H0 = 1.4377e-42 GeV ; rho_crit = 3.6777e-47 GeV^4 ; rho_Lambda = 2.5181e-47 GeV^4 = (2.240 meV)^4
+Delta V_EW = m_H^2 v^2/8 = 1.1888e+08 GeV^4 = 4.721e+54 rho_Lambda  (R5-3: 4.721e54)
+Delta V_QCD = 4.0e-04-3.0e-03 GeV^4 = 1.59e+43-1.19e+44 rho_Lambda
+Planck tadpole MPr^4 = 3.517e+73 GeV^4 = 1.397e+120 rho_Lambda
+
+=== N2 conserved mu: required precision ===
+Along eps'(q)=mu: d rho_V/d mu = -q0 (r104_variation.out S3). A later shift Delta needs delta mu = Delta/q0;
+so mu fixed before the EW transition must anticipate it: relative precision rho_Lambda/Delta_EW = 2.118e-55
+
+=== N3 Poisson record q-charge: noise vs compensation ===
+dPhi(l) = G*chi/sqrt(q0)  (independent of l: white noise at every scale down to the record spacing)
+  chi^-1 = MPr^4 (compensate the Planck tadpole)
+    dPhi <= 1e-05: q0 >= 5.569e+80 GeV^4 = 2.506e+04 per Planck 4-volume = 1.101e+152 m^-3 s^-1 ; spacing 1.285e-36 m
+    dPhi <= 1e-18: q0 >= 5.569e+106 GeV^4 = 2.506e+30 per Planck 4-volume = 1.101e+178 m^-3 s^-1 ; spacing 4.062e-43 m
+    at one record per Planck 4-volume: dPhi = 1.583e-03
+  chi^-1 = Delta V_EW (compensate EW only, Delta ln q ~ 1)
+    dPhi <= 1e-05: q0 >= 6.361e-51 GeV^4 = 2.863e-127 per Planck 4-volume = 1.258e+21 m^-3 s^-1 ; spacing 6.987e-04 m
+    dPhi <= 1e-18: q0 >= 6.361e-25 GeV^4 = 2.863e-101 per Planck 4-volume = 1.258e+47 m^-3 s^-1 ; spacing 2.210e-10 m
+    at one record per Planck 4-volume: dPhi = 5.351e-69
+  chi^-1 = Delta V_QCD (QCD only)
+    dPhi <= 1e-05: q0 >= 4.051e-72 GeV^4 = 1.823e-148 per Planck 4-volume = 8.010e-01 m^-3 s^-1 ; spacing 1.391e+02 m
+    dPhi <= 1e-18: q0 >= 4.051e-46 GeV^4 = 1.823e-122 per Planck 4-volume = 8.010e+25 m^-3 s^-1 ; spacing 4.398e-05 m
+    at one record per Planck 4-volume: dPhi = 1.350e-79
+  cosmic-mean matter-following flashes (1e-9 /s per baryon, 0.25 /m^3): q0 = 1.264e-81 GeV^4; EW-only dPhi = 2.243e+10
+
+=== N4 KV electroweak remnant (comparator 0905.1919: E_ew ~ 1e3 GeV, reduced E_P) ===
+  E_ew = 2e+02 GeV: E_ew^8/E_P^4 = 4.338e-55 GeV^4 = 1.723e-08 rho_Lambda  (=(0.026 meV)^4)
+  E_ew = 5e+02 GeV: E_ew^8/E_P^4 = 1.111e-52 GeV^4 = 4.410e-06 rho_Lambda  (=(0.103 meV)^4)
+  E_ew = 1e+03 GeV: E_ew^8/E_P^4 = 2.843e-50 GeV^4 = 1.129e-03 rho_Lambda  (=(0.411 meV)^4)
+  E_ew = 2e+03 GeV: E_ew^8/E_P^4 = 7.278e-48 GeV^4 = 2.890e-01 rho_Lambda  (=(1.642 meV)^4)
+  sensitivity: rho ~ E_ew^8, so a factor 2 in E_ew is a factor 256; prefactor not fixed by KV (verified summary).
+
+=== N5 Brown-Teitelboim single-flux record steps ===
+  bounce B <= 1e+02 with step 2.52e-47 GeV^4 needs tension sigma <= 1.046e-35 GeV^3 = (2.187 meV)^3
+  bounce B <= 1e+03 with step 2.52e-47 GeV^4 needs tension sigma <= 1.861e-35 GeV^3 = (2.650 meV)^3
+  steps to relax Delta V_EW: 4.72e+54; Delta V_QCD: 1.19e+44
+  rho_V = -Delta V_EW after EW: radiation falls below |rho_V| at T = 42.9 GeV; AdS time scale sqrt(3/(8 pi G |rho|)) = 2.55e-10 s  (crunch long before BBN at ~1 s)
+  radiation density at T = 1 MeV: 3.54e-12 GeV^4 = 1.40e+35 rho_Lambda; reheating by a final step of size ~rho_Lambda gives T ~ 2.18 meV
+
+=== N6 local thermostat on the total stress trace ===
+T^mu_mu = 0  =>  rho_V = 3*p_m/4 - rho_m/4  ; for dust rho_V = -rho_m/4 (negative, tracks matter; KP's global residual is the 4-volume average of the same)
+  dust today: rho_V = -2.896e-48 GeV^4 = -0.115 rho_Lambda (wrong sign for acceleration)
+  inside rock (5.5 g/cm^3): |rho_V| = 5.926e-18 GeV^4 = 2.354e+29 rho_Lambda; its stress p_V = +rho_m/4 acts on matter as a pressure of order rho_m/4 unless the relaxation is slower than local dynamics

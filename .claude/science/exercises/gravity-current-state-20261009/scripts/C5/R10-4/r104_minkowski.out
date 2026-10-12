@@ -1,0 +1,5 @@
+N-equation (energy constraint) : a0**3*(q0*Derivative(eps(q0), q0) - eps(q0)) = 0
+a-equation (pressure) : 3*a0**2*(q0*Derivative(eps(q0), q0) - eps(q0)) = 0
+A-equation : 0 = 0
+p_A = dL/dA_dot at static flat point : -Derivative(eps(q0), q0)  (conserved; define mu = -p_A)
+=> static flat solution requires eps(q0) - q0*eps'(q0) = 0 and mu = eps'(q0); Omega, beta drop out.

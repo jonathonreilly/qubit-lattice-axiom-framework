@@ -1,0 +1,21 @@
+c=   0.3 rho_V0/rho_m0=+5e-01 status=0 | rho_V/rho_dust: a=0.0001: +118616.8889 ; a=0.01: +29795208830.5690 ; a=0.1: +14932978396261.6992 ; a=1: +7484218186224514.0000 ; a=10: +3750994635503746048.0000
+c=   0.3 rho_V0/rho_m0=+1e-03 status=1 | rho_V/rho_dust:  [H^2 -> 0 at a=1.22e-05]
+c=   0.3 rho_V0/rho_m0=+0e+00 status=1 | rho_V/rho_dust:  [H^2 -> 0 at a=1.21e-05]
+c=   0.3 rho_V0/rho_m0=-1e-03 status=1 | rho_V/rho_dust:  [H^2 -> 0 at a=1.2e-05]
+c=   1.0 rho_V0/rho_m0=+5e-01 status=0 | rho_V/rho_dust: a=0.0001: +3750.1251 ; a=0.01: +37500001.0351 ; a=0.1: +3750000111.5872 ; a=1: +375000013171.1356 ; a=10: +37500001516450.4062
+c=   1.0 rho_V0/rho_m0=+1e-03 status=1 | rho_V/rho_dust:  [H^2 -> 0 at a=1.23e-05]
+c=   1.0 rho_V0/rho_m0=+0e+00 status=1 | rho_V/rho_dust:  [H^2 -> 0 at a=1.23e-05]
+c=   1.0 rho_V0/rho_m0=-1e-03 status=1 | rho_V/rho_dust:  [H^2 -> 0 at a=1.22e-05]
+c=  10.0 rho_V0/rho_m0=+5e-01 status=1 | rho_V/rho_dust: a=0.0001: -0.3571 [H^2 -> 0 at a=0.00068]
+c=  10.0 rho_V0/rho_m0=+1e-03 status=1 | rho_V/rho_dust: a=0.0001: -0.3571 [H^2 -> 0 at a=0.000678]
+c=  10.0 rho_V0/rho_m0=+0e+00 status=1 | rho_V/rho_dust: a=0.0001: -0.3571 [H^2 -> 0 at a=0.000678]
+c=  10.0 rho_V0/rho_m0=-1e-03 status=1 | rho_V/rho_dust: a=0.0001: -0.3571 [H^2 -> 0 at a=0.000678]
+c= 100.0 rho_V0/rho_m0=+5e-01 status=1 | rho_V/rho_dust: a=0.0001: -0.2577 [H^2 -> 0 at a=0.00939]
+c= 100.0 rho_V0/rho_m0=+1e-03 status=1 | rho_V/rho_dust: a=0.0001: -0.2577 [H^2 -> 0 at a=0.00937]
+c= 100.0 rho_V0/rho_m0=+0e+00 status=1 | rho_V/rho_dust: a=0.0001: -0.2577 [H^2 -> 0 at a=0.00937]
+c= 100.0 rho_V0/rho_m0=-1e-03 status=1 | rho_V/rho_dust: a=0.0001: -0.2577 [H^2 -> 0 at a=0.00937]
+Target ratio -0.25. Observed today rho_DE/rho_dust = +2.17.
+fast limit, exchange with dust: Eq(rho_m(a), C1/a**4)  => dust dilutes like radiation (a^-4)
+Notes: (i) where the integration runs, rho_V/rho_dust sits at -0.26 (c=100) to -0.36 (c=10): negative;
+(ii) slow relaxation (c<=1) does not remove a positive initial rho_V (vacuum domination);
+(iii) with the exchange routed to radiation, radiation is drained and H^2 -> 0: the toy's energy budget fails.

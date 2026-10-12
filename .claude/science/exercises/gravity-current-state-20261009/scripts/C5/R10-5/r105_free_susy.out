@@ -1,0 +1,27 @@
+(1) Cl(4,3) real 8-dim generators: A_j = ('IIY', 'IYX', 'XYZ')  B_j = ('YYZ', 'ZIZ', 'ZXX')  B0 = ZZX
+    max |{G_i,G_j} - 2 delta_ij| = 0.0e+00 ; A imaginary-antisym: True ; B real-sym: True
+(2) M^2 = E^2 and reality, 2000 random k per curve (m = 0.3):
+    Wilson circle  max|M^2 - E^2| = 3.6e-15   max|M(-k) - conj M(k)| = 0.0e+00
+    box b1=0.5     max|M^2 - E^2| = 1.8e-15   max|M(-k) - conj M(k)| = 2.2e-15
+    box b1=0.8     max|M^2 - E^2| = 1.8e-15   max|M(-k) - conj M(k)| = 1.6e-15
+(3) vacuum energy per site (lattice units), separable sums on an N^3 grid:
+    Wilson circle  N= 48 | m_f=0.30 m_s=0.3000: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.05 m_s=0.0500: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.30 m_s=0.3010: E_vac=+5.379e-04 (pred 2<1/E>dm^2 = +5.379e-04)
+    Wilson circle  N= 96 | m_f=0.30 m_s=0.3000: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.05 m_s=0.0500: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.30 m_s=0.3010: E_vac=+5.379e-04 (pred 2<1/E>dm^2 = +5.379e-04)
+    box b1=0.5     N= 48 | m_f=0.30 m_s=0.3000: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.05 m_s=0.0500: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.30 m_s=0.3010: E_vac=+6.049e-04 (pred 2<1/E>dm^2 = +6.050e-04)
+    box b1=0.5     N= 96 | m_f=0.30 m_s=0.3000: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.05 m_s=0.0500: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.30 m_s=0.3010: E_vac=+6.049e-04 (pred 2<1/E>dm^2 = +6.050e-04)
+    box b1=0.8     N= 48 | m_f=0.30 m_s=0.3000: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.05 m_s=0.0500: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.30 m_s=0.3010: E_vac=+6.655e-04 (pred 2<1/E>dm^2 = +6.656e-04)
+    box b1=0.8     N= 96 | m_f=0.30 m_s=0.3000: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.05 m_s=0.0500: E_vac=+0.000e+00 (pred 2<1/E>dm^2 = +0.000e+00) | m_f=0.30 m_s=0.3010: E_vac=+6.655e-04 (pred 2<1/E>dm^2 = +6.656e-04)
+    direct eig check (box b1=0.8): max |bosons - fermion sea| per k = 5.3e-15 (tr M = 0 included)
+(4) uniform static TT strain h_xy through Q: second-order energy per k, bosons vs fermions (random k, m=0.3):
+    max |t_numeric - [(s_x+s_y) - 4 s_x s_y/E^2]| = 3.3e-15 ;  max |E2_bos + E2_fer| per k = 7.2e-16
+(5) beta = d Pi/d omega^2 at q=0 (TT T_2g, through-Q coupling) per multiplet, and its pieces; alpha_throughQ == 0 exactly:
+    Wilson circle  m=0.30 N= 96 | beta_B=-0.00665 beta_F=-0.01981 beta_total=-0.02645 (= -<(sx+sy)/4E^3>) | inner-cube part of beta_total (all |k_i|<0.5, inside every box): -0.00089
+    Wilson circle  m=0.05 N= 96 | beta_B=-0.00775 beta_F=-0.02084 beta_total=-0.02859 (= -<(sx+sy)/4E^3>) | inner-cube part of beta_total (all |k_i|<0.5, inside every box): -0.00164
+    Wilson circle  m=0.05 N=160 | beta_B=-0.00775 beta_F=-0.02084 beta_total=-0.02859 (= -<(sx+sy)/4E^3>) | inner-cube part of beta_total (all |k_i|<0.5, inside every box): -0.00156
+    box b1=0.5     m=0.30 N= 96 | beta_B=-0.01234 beta_F=-0.02731 beta_total=-0.03965 (= -<(sx+sy)/4E^3>) | inner-cube part of beta_total (all |k_i|<0.5, inside every box): -0.00092
+    box b1=0.5     m=0.05 N= 96 | beta_B=-0.01392 beta_F=-0.02855 beta_total=-0.04246 (= -<(sx+sy)/4E^3>) | inner-cube part of beta_total (all |k_i|<0.5, inside every box): -0.00168
+    box b1=0.5     m=0.05 N=160 | beta_B=-0.01392 beta_F=-0.02855 beta_total=-0.04246 (= -<(sx+sy)/4E^3>) | inner-cube part of beta_total (all |k_i|<0.5, inside every box): -0.00159
+    box b1=0.8     m=0.30 N= 96 | beta_B=-0.01854 beta_F=-0.03575 beta_total=-0.05429 (= -<(sx+sy)/4E^3>) | inner-cube part of beta_total (all |k_i|<0.5, inside every box): -0.00092
+    box b1=0.8     m=0.05 N= 96 | beta_B=-0.02051 beta_F=-0.03727 beta_total=-0.05779 (= -<(sx+sy)/4E^3>) | inner-cube part of beta_total (all |k_i|<0.5, inside every box): -0.00168
+    box b1=0.8     m=0.05 N=160 | beta_B=-0.02051 beta_F=-0.03727 beta_total=-0.05779 (= -<(sx+sy)/4E^3>) | inner-cube part of beta_total (all |k_i|<0.5, inside every box): -0.00159
+elapsed 1.2s

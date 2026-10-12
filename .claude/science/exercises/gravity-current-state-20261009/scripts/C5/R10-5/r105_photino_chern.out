@@ -1,0 +1,19 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/C5/R10-5/scripts/r105_photino_chern.py:1: SyntaxWarning: invalid escape sequence '\{'
+  """C5 R10-5, script 3: Lemma PD (photon/photino doubling for a lattice gauge superpotential), numerical illustration.
+(a) upper band of i eps.q, sphere radius 0.1 around 0: Chern = +2.0000
+    lower band check (-i eps.q): Chern = -2.0000
+(b) lattice symbol C = i eps.sin(q): Chern of upper band around each zero of sin(q):
+    q0 = (0, 0, 0) : +2.000
+    q0 = (0, 0, pi) : -2.000
+    q0 = (0, pi, 0) : -2.000
+    q0 = (0, pi, pi) : +2.000
+    q0 = (pi, 0, 0) : -2.000
+    q0 = (pi, 0, pi) : +2.000
+    q0 = (pi, pi, 0) : +2.000
+    q0 = (pi, pi, pi) : -2.000
+    sum = +0.000
+(c) eps=0.3: min over the N=40 grid (|q|>0.3) of smallest transverse |eigenvalue| = 2.922e-05 at q = [ 1.335 -2.592  0.079]
+    Chern of upper band around 0 (r=0.1): +2.000
+(c) eps=1.0: min over the N=40 grid (|q|>0.3) of smallest transverse |eigenvalue| = 1.499e-05 at q = [ 1.492 -1.335 -2.435]
+    Chern of upper band around 0 (r=0.1): +2.000
+elapsed 3.3s

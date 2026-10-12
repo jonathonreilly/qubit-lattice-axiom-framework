@@ -1,0 +1,15 @@
+  Wilson/Wilson  m=0.100 N= 96 h=0.01000 | dc_e(partner, chiral) x16pi^2/y^2 =  -7.5820
+  Wilson/Wilson  m=0.100 N=128 h=0.00500 | dc_e(partner, chiral) x16pi^2/y^2 =  -7.5986
+  Wilson/Wilson  m=0.100 N=160 h=0.00500 | dc_e(partner, chiral) x16pi^2/y^2 =  -7.6060
+  Wilson/Wilson  m=0.050 N=128 h=0.00500 | dc_e(partner, chiral) x16pi^2/y^2 =  -8.9092
+  Wilson/Wilson  m=0.050 N=160 h=0.00250 | dc_e(partner, chiral) x16pi^2/y^2 =  -8.9496
+  Wilson/Wilson  m=0.050 N=192 h=0.00250 | dc_e(partner, chiral) x16pi^2/y^2 =  -8.9682
+  Wilson/Wilson  m=0.025 N=192 h=0.00125 | dc_e(partner, chiral) x16pi^2/y^2 = -10.1884
+  box0.8/box0.8  m=0.100 N= 96 h=0.01000 | dc_e(partner, chiral) x16pi^2/y^2 =  -9.1334
+  box0.8/box0.8  m=0.100 N=128 h=0.00500 | dc_e(partner, chiral) x16pi^2/y^2 =  -9.1501
+  box0.8/box0.8  m=0.100 N=160 h=0.00500 | dc_e(partner, chiral) x16pi^2/y^2 =  -9.1575
+  box0.8/box0.8  m=0.050 N=128 h=0.00500 | dc_e(partner, chiral) x16pi^2/y^2 = -10.4635
+  box0.8/box0.8  m=0.050 N=160 h=0.00250 | dc_e(partner, chiral) x16pi^2/y^2 = -10.5040
+  box0.8/box0.8  m=0.050 N=192 h=0.00250 | dc_e(partner, chiral) x16pi^2/y^2 = -10.5226
+  box0.8/box0.8  m=0.025 N=192 h=0.00125 | dc_e(partner, chiral) x16pi^2/y^2 = -11.7435
+elapsed 7.3s

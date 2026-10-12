@@ -1,33 +1,27 @@
-# Ranked current derivation queue
+# Current ranked scientific queue
 
-1. **Quantitative H* corrector and growing rescaled time.** The actual residual
-   is longitudinal with a weighted bound. A truncated physical singlet inverse
-   could quantify X without assuming a gap and join K's outgoing state to one
-   actual-walk limit. Highest immediate reuse: existing B/E/BR/T/X controls,
-   exact preparation, and all-component mean. First decisive check is the full
-   derivative/error equation with explicit T constants. Root is a contributor;
-   fresh independent reconstruction is required before a milestone extension.
-2. **Fock inner products and isometry.** Frozen candidate9bc3a309 is in fresh
-   independent review. The energy-restricted norm, mixed-chart contraction and
-   velocity-diagonal density are the high-fanout checks. It removes the gap
-   between mere finite-product existence and nonzero controlled scattering
-   states, under the additional unique/gapped vacuum already supplied by N1.
-   It does not establish full-GNS exhaustion or physical realization.
-3. **Actual X outgoing effective state.** Frozen K1c314fc0 is in fresh review.
-   It credits prior memory/spectral results and derives the off-frequency
-   resolvent dressing and rapid source transient. If supported, compose it
-   with Q only at matched exact hypotheses; never exchange lambda/tau limits
-   using qualitative fixed-time convergence alone.
-4. **Constructive full-GNS exhaustion.** Once a slot frees, assess primary
-   detector/propagation/completeness mechanisms under the exact microscopic
-   setting. Rank the precise extra estimate each needs; attempt a nontrivial
-   reduction or lemma if justified. Do not assume EX, infer onto from an
-   isometry, or manufacture a lattice counterexample from a spectator space.
+1. **Quantitative actual dynamics and outgoing correction.** Q1–Q34 is frozen
+   and in fresh independent review. The all-T estimates and full quadratic
+   expectation decomposition are the decisive checks. K is fully reviewed.
+   Prepare their coherent milestone on the new quantitative boost worktree,
+   stacked on9484, with the exact9481 memory import explicit. Do not publish
+   Q as independently checked before its actual review/evidence completes.
+2. **Constructive full-GNS exhaustion.** The Fock extension is now reviewed
+   and published in9486; an isometric embedding still needs exhaustion.
+   The EX reduction is frozen and in fresh independent review, with explicit
+   PC/ND obligations. Root must read it before further downstream reuse.
+   Do not infer onto from faithfulness or substitute a spectator diagnostic
+   for a microscopic local-qubit counterexample.
+3. **Actual H* threshold spectral law.** A bounded probe tests the rank-one
+   longitudinal square and eight-cone density for the actual residual Qh0.
+   It may establish a sharp free-primitive scale and identify the next rate
+   barrier. It does not depend on Q or automatically prove a full actual-walk
+   lower bound. Root's proposed constants and signs require checking.
 
-PR9486 compact scattering is published and reviewed at its conditional scope.
-The partial-factor index is already proved in9485; its full-algebra shift
-premise remains a physical bridge. Existing9481/9482 kernel and memory work
-must not be repackaged as novel. Candidate-law9476 RV4 gravity shear work and
-9477 chiral partner-kernel work are active external lanes; avoid duplication.
-Preserve norm-threshold counterexamples and all distinction between means,
-norms, correction occupations, total probabilities and physical covariance.
+Nine regular PRs remain open;9486 now contains its Fock extension. Original
+SC evidence remains unchanged. Index9485 is complete at its stated scope;
+the full-algebra shift still needs the physical scattering bridge. Prior
+memory9481/9482 results must not be repackaged as novel. Current candidate-law
+RV4 gravity and chiral partner-kernel work are active elsewhere; avoid overlap.
+Preserve all norm/mean, correction/total-state, fixed/growing-time and
+conditional-physics distinctions. No audit or retained status is inferred.

@@ -2781,7 +2781,14 @@ All verdicts are from codex gpt-5.6-sol at xhigh. Files: `agents/C5_R2-*`. The R
 - **Lemma F** (a reservoir rest frame) is not proved.
 - E3 is not shown to be uniquely cheapest.
 
-**R3-1:** worker INCONCLUSIVE; referee running (launched 13:06Z).
+**R3-1 (laws on one LRL realization) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.** Referee verdict recorded 13:45Z.
+- **Lemma M holds.** Invariant L² scalar torus symbols are constant. Vector and tensor fields also hold, by the second-moment argument. Spinors need a specified Spin lift. So nonzero invariant hopping kernels are non-summable and do not decay along their infinite orbits.
+- **Prop. P:** s_c = 2 is correct, but the convergent Poincaré series defines a finite orbit weight, not a convergent hopping operator. "Power-law quasi-locality" is refuted.
+- **Prop. R.** A nonzero past-timelike, polynomially bounded kernel converges absolutely exactly in the forward tube. Spacelike and time-symmetric kernels have no ordinary Fourier series; distributional forms remain possible. Retardation gives an arrow without a rest-frame vector.
+- **Polynomial invariants** have degrees 1–6 with counts 0, 1, 0, 1, 0, 1. There are two mass structures.
+- **"No Taylor expansion at p = 0"** is too broad. Only global L² regularity and full-cone analyticity are excluded.
+- **Per-realization direction dependence at imaginary momentum is genuine** continuous-Lorentz breaking of the tube symbol. But the fitted exponent is unstable (slopes 0.61–2.28), so neither κ^1.3 nor a non-shrinking absolute LV is established. It is a diagnostic, not yet observable LV.
+- **Momentum.** Resonance counts reproduce. Exact in-band momentum conservation is false: multiparticle umklapp can use low individual momenta whose total transfer is reciprocal. The gap protects 1→1 processes and processes whose total transfer stays in the gap. The boost-wall theorems do not apply as quoted, and they are not refuted.
 
 ### C5 Round 4 (pre-registered 13:08Z; launched now)
 

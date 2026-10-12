@@ -4692,3 +4692,10 @@ Launch: R13-1, R13-3, R13-5 and R13-6 now; R13-2 after the R12-5 referee; R13-4 
 
 ---
 
+- **R12-6 (twisted N=4 box QED):** worker reading FAIL (bounded) in 𝒦₀; INCONCLUSIVE more widely.
+  - A local equivariant completion exists (Q² ∝ Gauss), and the photino is doubler-free Kähler–Dirac.
+  - But the Q-forced selectron Pauli coupling makes δc_γ ∝ −ln(1/m) inside the box, and the electron's partner total also grows logarithmically.
+  - Theorem L′: N=4 adds no relation between c_e and c_γ.
+  - The neutral scalar σ couples to the electron at √2e.
+
+  Referee running.

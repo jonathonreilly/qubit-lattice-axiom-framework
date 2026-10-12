@@ -1,0 +1,5 @@
+(1) assembled Cartan fermion operator == R12-3 C_kd (lam=1): max diff 0.0e+00 ; max|K^2 - lam^2 Delta 1_8| = 3.6e-15
+(2) all 8 bosonic frequencies^2 and all 8 fermionic |levels|^2 equal lam^2*Delta: max dev 2.7e-14 ; counts 8=8: True
+(3) box symbol, N=24 grid: min |level| over grid = 0.2267 (at |q| = 0.227); min |level| for |q|>1: 1.0055  -> zeros only at q=0
+(4) box symbols inside the plateau, q=(0.31,-0.22,0.17): |levels| = [0.41641326 0.41641326 0.41641326 0.41641326 0.41641326 0.41641326
+ 0.41641326 0.41641326]  |q| = 0.416413256273

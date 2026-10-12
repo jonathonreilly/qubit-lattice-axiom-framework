@@ -1,0 +1,8 @@
+m=0.40 N= 32 : T(unrepaired total)   -6.288 | repaired photino   -9.820  B  -13.944  sigma  -0.000  total  -23.764  [0s]
+m=0.40 N= 48 : T(unrepaired total)   -6.299 | repaired photino   -9.825  B  -14.076  sigma  -0.000  total  -23.901  [2s]
+m=0.40 N= 64 : T(unrepaired total)   -6.303 | repaired photino   -9.827  B  -14.144  sigma  -0.000  total  -23.971  [6s]
+m=0.20 N= 48 : T(unrepaired total)   -7.681 | repaired photino  -10.683  B  -15.190  sigma  -0.001  total  -25.874  [8s]
+m=0.20 N= 64 : T(unrepaired total)   -7.698 | repaired photino  -10.694  B  -15.319  sigma  -0.000  total  -26.013  [13s]
+m=0.20 N= 96 : T(unrepaired total)   -7.710 | repaired photino  -10.700  B  -15.451  sigma  -0.000  total  -26.151  [30s]
+m=0.10 N= 64 : T(unrepaired total)   -9.008 | repaired photino  -11.349  B  -16.302  sigma  -0.019  total  -27.669  [35s]
+m=0.10 N= 96 : T(unrepaired total)   -9.076 | repaired photino  -11.435  B  -16.571  sigma  -0.001  total  -28.007  [50s]

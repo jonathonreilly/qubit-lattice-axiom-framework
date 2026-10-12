@@ -1,0 +1,10 @@
+check vs script 3/5 (m=0.1, N=64: -9.008):    -9.008
+m=0.100 N=128 : matched-curve unrepaired partner total   -9.093   [10s]
+m=0.050 N=128 : matched-curve unrepaired partner total  -10.398   [19s]
+m=0.050 N=160 : matched-curve unrepaired partner total  -10.442   [38s]
+m=0.200 N= 96 : matched-curve unrepaired partner total   -7.710   [41s]
+m=0.025 N=224 : matched-curve unrepaired partner total  -11.722   [97s]
+m=0.025 N=256 : matched-curve unrepaired partner total  -11.760   [184s]
+Mon Oct 12 20:16:02 UTC 2026
+
+[exited with code 0]

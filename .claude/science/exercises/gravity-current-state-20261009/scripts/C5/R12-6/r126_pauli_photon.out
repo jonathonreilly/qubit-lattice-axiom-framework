@@ -1,0 +1,25 @@
+(0) second-order formula for tr sqrt(K): finite difference -9.22688926 vs formula -9.22674462
+(1) K1 = K1_scalar + P: max err 1.0e-16 ; K2_diag = K2_scalar: max err 2.1e-08 (num. 2nd deriv) ; |tr K1_scalar^+ P| max 0.0e+00
+(2) finite-q check (x 16pi^2/e^2), box curve b1=0.8, m=0.3, N=96:
+     q = 2pi*1/96: unrepaired  -34.3885   repaired  -52.6141
+     q = 2pi*2/96: unrepaired  -34.2376   repaired  -52.5475
+     q = 2pi*4/96: unrepaired  -33.6681   repaired  -52.2930
+     q -> 0 limit formula:  unrepaired  -34.4397   repaired  -52.6366
+(3) one-loop photon speed from the selectron Pauli term, dc_gamma x 16pi^2/e^2 (q -> 0), and the repaired residual:
+     continuum in-box estimate: -8 [ln(2 Lambda/m) - 1]; slope d/d ln(1/m) should be -8 if in-box
+     Wilson circle  m=0.400 N=128: unrepaired   -20.843 (N*1.25:   -20.843)  repaired -28.5124   [0s]
+     Wilson circle  m=0.200 N=192: unrepaired   -26.746 (N*1.25:   -26.746)  repaired -30.4655  slope per ln2:  -8.516  [0s]
+     Wilson circle  m=0.100 N=256: unrepaired   -32.413 (N*1.25:   -32.413)  repaired -31.1251  slope per ln2:  -8.177  [1s]
+     Wilson circle  m=0.050 N=320: unrepaired   -37.997 (N*1.25:   -37.997)  repaired -31.3321  slope per ln2:  -8.056  [2s]
+     Wilson circle  m=0.025 N=384: unrepaired   -43.553 (N*1.25:   -43.554)  repaired -31.3942  slope per ln2:  -8.015  [3s]
+     box b1=0.8     m=0.400 N=128: unrepaired   -31.512 (N*1.25:   -31.512)  repaired -50.8300   [3s]
+     box b1=0.8     m=0.200 N=192: unrepaired   -38.159 (N*1.25:   -38.159)  repaired -54.0006  slope per ln2:  -9.590  [3s]
+     box b1=0.8     m=0.100 N=256: unrepaired   -44.002 (N*1.25:   -44.002)  repaired -54.8506  slope per ln2:  -8.429  [3s]
+     box b1=0.8     m=0.050 N=320: unrepaired   -49.623 (N*1.25:   -49.623)  repaired -55.0670  slope per ln2:  -8.109  [4s]
+     box b1=0.8     m=0.025 N=384: unrepaired   -55.186 (N*1.25:   -55.187)  repaired -55.1213  slope per ln2:  -8.026  [6s]
+     box b1=0.5     m=0.400 N=128: unrepaired   -24.998 (N*1.25:   -24.998)  repaired -35.9817   [6s]
+     box b1=0.5     m=0.200 N=192: unrepaired   -31.144 (N*1.25:   -31.144)  repaired -37.9526  slope per ln2:  -8.867  [6s]
+     box b1=0.5     m=0.100 N=256: unrepaired   -36.853 (N*1.25:   -36.853)  repaired -38.4823  slope per ln2:  -8.237  [6s]
+     box b1=0.5     m=0.050 N=320: unrepaired   -42.441 (N*1.25:   -42.441)  repaired -38.6172  slope per ln2:  -8.061  [7s]
+     box b1=0.5     m=0.025 N=384: unrepaired   -47.995 (N*1.25:   -47.996)  repaired -38.6512  slope per ln2:  -8.013  [8s]
+elapsed 8.2s

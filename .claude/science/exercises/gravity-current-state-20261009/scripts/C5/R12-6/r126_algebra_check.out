@@ -1,0 +1,5 @@
+(1) Q^2 - i s L on a generic 6-component test state: identically zero -> True
+(2) {Q,Q^+} - (listed H pieces x 2) on the same test state: identically zero -> True
+    sizes: test components 6, Q^2 components 27, {Q,Q+} components 27
+    control A (eta hopping coefficient off by c/2) gives zero? -> False
+    control B (Q without the i s v.psi term): Q^2 - i s L zero? -> False ; Q^2 itself zero? -> True

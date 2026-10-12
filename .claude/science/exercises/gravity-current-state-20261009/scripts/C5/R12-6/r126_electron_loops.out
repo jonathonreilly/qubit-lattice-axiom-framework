@@ -1,0 +1,11 @@
+Ward identity sum_j D_j Gamma_j = -ie[M(p)-M(k)]: max err 5.0e-16
+dc_e x 16pi^2/e^2.  Control row T must reproduce R12-3 (Wilson/cochain m=0.1 N=48: -8.88; N=64: -9.01; box m=0.1 N=48: -9.56)
+  Wilson e / cochain photino   m=0.100 N= 48 :  T(control)   -8.875 | KD photino(eta+A)   -8.805 | sigma   -0.071 | KD+sigma   -8.875  [1s]
+  Wilson e / cochain photino   m=0.100 N= 64 :  T(control)   -9.008 | KD photino(eta+A)   -8.989 | sigma   -0.019 | KD+sigma   -9.008  [4s]
+  Wilson e / cochain photino   m=0.050 N= 64 :  T(control)   -9.876 | KD photino(eta+A)   -9.660 | sigma   -0.216 | KD+sigma   -9.876  [7s]
+  Wilson e / cochain photino   m=0.050 N= 80 :  T(control)  -10.125 | KD photino(eta+A)  -10.003 | sigma   -0.122 | KD+sigma  -10.125  [12s]
+  box b1=0.8 e / box photino   m=0.100 N= 48 :  T(control)   -9.562 | KD photino(eta+A)   -5.796 | sigma   -2.880 | KD+sigma   -8.677  [13s]
+  box b1=0.8 e / box photino   m=0.100 N= 64 :  T(control)   -9.694 | KD photino(eta+A)   -5.981 | sigma   -2.828 | KD+sigma   -8.809  [17s]
+  box b1=0.8 e / box photino   m=0.050 N= 64 :  T(control)  -10.563 | KD photino(eta+A)   -6.646 | sigma   -3.029 | KD+sigma   -9.674  [21s]
+  box b1=0.8 e / box photino   m=0.050 N= 80 :  T(control)  -10.812 | KD photino(eta+A)   -6.989 | sigma   -2.935 | KD+sigma   -9.924  [27s]
+elapsed 27.4s

@@ -1,0 +1,9 @@
+Ward identity sum_j D_j Gamma_j = -ie[M(p)-M(k)]: max err 5.0e-16
+dc_e x 16pi^2/e^2 (partner sector only; the photon loop -17.96 Wilson / -10.66 box is common to both laws)
+  Wilson e / cochain photino   m=0.200 N= 48 : unrepaired KD+sigma   -7.681 | repaired: KD(eta,a,b)  -10.683  sigma  -0.001  B  -15.190  total  -25.874  [1s]
+  Wilson e / cochain photino   m=0.100 N= 64 : unrepaired KD+sigma   -9.008 | repaired: KD(eta,a,b)  -11.349  sigma  -0.019  B  -16.302  total  -27.669  [5s]
+  Wilson e / cochain photino   m=0.050 N= 80 : unrepaired KD+sigma  -10.125 | repaired: KD(eta,a,b)  -11.614  sigma  -0.122  B  -17.102  total  -28.838  [13s]
+  box b1=0.8 e / box photino   m=0.200 N= 48 : unrepaired KD+sigma   -7.493 | repaired: KD(eta,a,b)  -10.357  sigma  -2.798  B  -11.014  total  -24.169  [15s]
+  box b1=0.8 e / box photino   m=0.100 N= 64 : unrepaired KD+sigma   -8.809 | repaired: KD(eta,a,b)  -11.022  sigma  -2.828  B  -12.102  total  -25.952  [20s]
+  box b1=0.8 e / box photino   m=0.050 N= 80 : unrepaired KD+sigma   -9.924 | repaired: KD(eta,a,b)  -11.286  sigma  -2.935  B  -12.897  total  -27.118  [31s]
+elapsed 30.9s

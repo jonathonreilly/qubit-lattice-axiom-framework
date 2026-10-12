@@ -13,7 +13,7 @@ Original mathematics is authorized. Keep the selected model and reasoning effort
 
 Active worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/scattering_worktree
 Branch: physics-loop/toe-compact-patch-scattering-20261011
-Clean head: 296155eda2ca6a5ab6ae6307190362b9a84ea690, regular PR9486.
+Clean head: 5cbc581504721a323f5fa2064694a67141a3ee98, regular PR9486.
 It is based on main a13caa4885f547c8d206265b031ba7649e539fd9.
 Sibling quantitative_boost_worktree is clean at433f641f24296b6d8e786930bb1327f434015162,
 regular PR9487. Its boost parent remains773321aa8fdfccc05248682dfc96bf94215034a2.
@@ -22,13 +22,13 @@ Frozen sources must not be edited under review. Primary checkout is untouched.
 
 This directory in sibling worktree, branch physics-loop/toe-nonlinear-transport-20261011
 (PR9478), remains the sole live campaign checkpoint. Full prior checkpoint
-633c25ab024c30a181dbdf2a893a2755595afea9 is losslessly archived at history/20261012T020419Z_*.gz.
+259b8d7b14dfa1f6ed3b5291b3564ea3057276b2 is losslessly archived at history/20261012T023308Z_*.gz.
 Older complete proof summaries and failures are in that archive and their original
 source-bound packets. Individual publication packets are frozen milestone snapshots.
 The app-managed worktree tool was unavailable from the non-Git chat cwd; owned
 standard Git worktrees are in use.
 
-At02:00:09 UTC main and planning3a4b2c66a1ead7a1c48b4359627e968f681e3c39
+At02:29:45 UTC main and planning3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 remain unchanged. Already fully read instruction identities still match:
 AGENTS f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f;
 CLAUDE254339c255b9c75eac37c1185b77f11be8f55bb9b734543b2a81647f5f373dfc;
@@ -51,7 +51,7 @@ All ten are verified open, regular and attached; none merged.
 |9483|Interspecies rigidity/stability and scoped Lean|aeee46fa0e2879038eec1b8ee8a1e173ac77518e; main-based|
 |9484|Boost norm and all-component expectations|773321aa8fdfccc05248682dfc96bf94215034a2; parent9479|
 |9485|Partial-factor index and tube scaling|b8402c17d337f371c0c73696ef170727de9ab5bd; maina13caa48|
-|9486|Scattering, Fock, exhaustion reduction and detector convergence|296155eda2ca6a5ab6ae6307190362b9a84ea690; maina13caa48|
+|9486|Scattering, Fock, detector convergence and selected projection|5cbc581504721a323f5fa2064694a67141a3ee98; maina13caa48|
 |9487|Outgoing forcing, quantitative corrector, threshold and actual sharpness|433f641f24296b6d8e786930bb1327f434015162; parent9484, explicit9481 memory dependency|
 
 Global combined audit pipeline and strict audit lint were not run; they remain
@@ -159,61 +159,90 @@ All old SC/Fock notes, controls, caches and packets unchanged. Third-party
 PDFs/images/rawpages remain external. The prepare_epc_notes/packet,
 run_epc_primary_mutants and finish_epc_delivery scripts ran; do not rerun blindly.
 
-## Active focused projection review
+## Detector projection published in PR9486
 
-Source DETECTOR_SCATTERING_PROJECTION_PROBE.md,330lines,
-91c561d9d24d27bd4c5be26f0f688553d3d690df51766c9f6de5ec70f3ed38b4;
-author receipt41e516aec74bd86d28702f5c079522f9ba8c91422eb660021190a241de176b72,
-frozen01:45:49.758129 UTC. Root read full proof/helper/7records and all operational
-history;56file+1Git bindings match, Projection_root_author_coverage.json.
-Reviewer detector_projection_review is active; deliver
-DETECTOR_SCATTERING_PROJECTION_REVIEW.md and detector_projection_review/.
-Its reconstruction and separate rational controls were frozen before opening
-author evidence. No final verdict yet. A toy witness sweep does not detect
-all wrong error exponents; the separate scalar witness and actual proof matter.
+S/projection_pr_verified.json verifies exact title/body/head/base, regular/open,
+MERGEABLE and attached. Head5cbc581504721a323f5fa2064694a67141a3ee98 is clean.
+Packet: scattering_worktree/.claude/science/physics-loops/toe-detector-scattering-projection-20261012.
+Source330lines91c561d9d24d27bd4c5be26f0f688553d3d690df51766c9f6de5ec70f3ed38b4;
+reviewd9ab71d88615c78cb49eda7cc85ff263d65c12be6cc6e019314cd96eb42a20a2;
+receipt1fed9654096e0c67535640f60c1f1c318ac313c1436d84a21c4544b744f6ce3b.
+All P1-P33 supported at conditional scope. Root read full arguments, separate
+exact-rational controls, operational history and complete mutation failures.
+Projection_root_author/review_coverage.json record56authorfile+1Git and
+122reviewoutput+7source+7instruction+10prefreeze bindings. Root is coauthor.
 
-Proposed conclusion: for narrow energy windows diameter<gap/4, exact creator
-refiltering and finite amplitude partitions give a rich countable detector
-family with closureRan K_J=PJ Hsc. The energy-only vacuum remainder is checked
-using diameterJ+2sumr<gap. Positivity gives support K_J=PJ Psc. Ordered limits
-t, family m, eta recover PJ Psc, with tail2^-m/eta. Finite response supplies a
-one-sided scattering-weight witness with the square-root complement error;
-zero response has no finite-time converse. Countable selection is existential.
-No ND, physical realization or effective family-uniform constants are supplied.
-Root proposed the mechanism and is a coauthor. Unfrozen author reasoning that
-swapping m/eta must fail was corrected: those iterated support limits agree;
-the genuine t/eta joint-limit counterexample remains. All operational failures
-and predecessor source identities are preserved in the author folder.
+For narrow J, diameterJ<gap/4, exact full-operator creator refiltering and finite
+partitions give a countable admissible detector family with closureRanK_J=PJHsc.
+The energy-only vacuum remainder uses diameterJ+2sumr<gap. Positive sum support
+is exactly PJ Psc. Ordered t, family m, eta limits recover that projection,
+with tail2^-m/eta. Finite response gives a one-sided selected-scattering weight
+witness with square-root complement error. No finite-time zero-response converse,
+ND, EX, actual microscopic realization, effective enumeration or family-uniform
+rate is proved. Countable selection is existential. The m/eta iterated support
+limits do agree; the genuine t/eta joint-limit counterexample is preserved.
 
-## Active index-to-complement derivation
+Canonical primary0.048258066s/60s, exit0,stderr0. Every original stdout record
+reproduced, plus scoped publication records. Eight actual whole-primary variants
+give7intended assertion failures and1deliberate nondiscriminating pass. The original
+rank-one witness sweep does not reject replacing sqrt(error) by error; that limit
+is explicit. The added exact scalar Q=(1/16)E does reject the universal false
+formula. Independent rational noncommuting-resolvent and rotating-limit controls
+are separate from the analytic proof. No Lean certificate is claimed.
 
-Agent detector_index_leakage is finalizing/freeze-checking
-DETECTOR_INDEX_LEAKAGE_PROBE.md and detector_index_leakage/. Root has read the
-complete405-line candidate but must refresh its frozen identity and evidence.
-It needs an independent reviewer. Root proposed the core mechanism.
+All203staged hashes,179final own evidence files,30external-primary bindings,
+source maps, fresh cache inputs, links, vocab and whitespace checked. Graph
+6874nodes15424edges adds1node/3SC-Fock-PC edges with all old nodes unchanged.
+Focused audit compatibility finds no applied row/failure. Global combined audit
+pipeline and strict lint not run. Old SC/Fock/E/PC sources unchanged. Publication
+scripts prepare_projection_publication/run_projection_primary_mutants/
+run_projection_citation_compat/finish_projection_delivery already ran; do not
+rerun blindly. Exact note/runner hashes are in packet/PUBLICATION_EDITS.json.
 
-For actual microscopic H/current implementations and a selected common-q
-scattering space, U=exp(iqP_b/beta)T_q fixes that space. The already reviewed
-shift index excludes AdU=id; faithful cyclic GNS then supplies some local C
-with d_C=||(U-1)C Omega||>0. Candidate estimate:
-||(1-Psc)1_[m,E](H)C Omega||² >=[d_C²/4-||HC Omega||²/E²]_+,
-with ||HC Omega||<=2J_H|suppC|||C||. Positive reviewed detector limits have
-scattering range, so this bounds their common zero atom without new coverage.
-Core existence is the familiar conditional N1 contrapositive; novelty is the
-explicit vector/energy/finite-block estimates, not a universal lattice no-go.
-Faithfulness is not vacuum separation. Quantitative operator-to-vector
-conversion needs an uncontrolled cyclic preparer B. Optional tube defect
-inequality and optional new projection equality are separate conditional inputs.
-Full N1–N8 scope stress test is in the candidate. Under matching premises,
-generic selected-common-q ND would be impossible; do not keep trying to prove
-it by silently enlarging or relabeling that fixed sector. Other channels,
-irrational phases, unbounded denominators and missing microscopic identification
-remain real scope alternatives. No effective physical witness is constructed.
+## Index-to-complement result independently checked; publication next
+
+DETECTOR_INDEX_LEAKAGE_PROBE.md,405lines,
+4d1e9b888c6e84881e8d356c42e8da521794c68191ebcebab1c145ced5189747;
+author receipt47bf0db5e653961b622953a77d26f345515e8f87fe583c6ce66c8951c0f6a498.
+Reviewfbd6bbbfe6d725b531da2d3c53e650fbcbb07c8195d7af151043d5eab14df39f;
+receipt0e96c15785d6e5f74d160a5753bdd33b47f91ac5f425de809e5749ecffaa9254.
+L1-L26 and optionalL27 supported with no required correction. Independent proof
+and exact rational matrix control froze before author control access. The all-vector
+operator-order check uses a rotating7D fixture and every principal minor; it rejects
+the stronger1/3coefficient and omitted spectral tail. Author baseline reproduced
+byte-exact; all6actual mutants reproduced full intended failures. Root full reads
+and69author,107review,28original-source,2prefreeze bindings are recorded in
+Leakage_root_author/review_coverage.json. Search signal-9 failures preserved;
+no absence/novelty conclusion. This is source review, not applied audit/retention.
+
+For actual microscopic H/current implementations and a fixed common-q selected
+scattering range, U=exp(iqP_b/beta)T_q fixes that range. Checked shift index excludes
+AdU=id; faithful cyclic GNS then supplies local C with d_C=||(U-1)COmega||>0.
+The bound is ||(1-Psc)1_[m,E](H)COmega||² >=[d_C²/4-||HCOmega||²/E²]_+,
+with ||HCOmega||<=2J_H|suppC|||C||. E>2h_C/d_C gives positivity. Positive detector
+range gives a lower bound on the common zero atom. Optional chosen-family
+projection equality matches the separately reviewed projection theorem; arbitrary
+families have inclusion only. Full two-term operator-to-state conversion and
+finite-tube defect extension are proved. Cyclic preparer support/norm/energy are
+uncontrolled. The core proper-subspace conclusion is N1's existing conditional
+contrapositive, not a universal lattice no-go. New content is quantitative.
+
+The frozen source's description of optional projection review as pending was
+accurate when written; publication may label that operational history and add
+the exact now-completed review record without changing mathematics. Publishing
+in9486 requires explicit cross-PR9485 index dependency and frozen proof sources.
+Do not silently treat that unmerged source as present on main. Full N1-N8 scope
+assessment is preserved. Other channels, irrational characters, unbounded finite
+denominators and failed microscopic identification remain real alternatives.
 
 ## New positive route: isolated arbitrary centre characters
 
-Agent compact_detector_convergence is authoring ISOLATED_CENTRE_FILTERING_PROBE.md
-and isolated_centre_filtering/. Root's mechanism is a proposal, not a theorem.
+ISOLATED_CENTRE_FILTERING_PROBE.md is frozen at401lines, SHA1dcb9580d128d8fc41b76517ce0fe18842291e8e32681fa9c6b22f0feb1e13de;
+receipt a76cd471016c6e280d44faa97e470cb13ec1e4dd480f0b16c30308eeb0093012.
+Author frozen02:30:29UTC with56bindings and8finite controls. Fresh agent
+isolated_centre_review is checking the full I1-I34 argument. Root is coauthor.
+Root must read full frozen proof/evidence before publication. Predecessor PC/projection
+bindings unchanged. Printed-plus, path-launch and concurrent-HEAD errors preserved.
 For commuting centre implementers V_j fixing the vacuum, use a smooth torus
 filter sum_j c_phi(j) AdV_j(B), whose vacuum vector should be phi(V)B Omega.
 Schwartz coefficients and microscopic finite-range flow estimates may prove
@@ -227,23 +256,52 @@ an exact point sector in a continuous or nonisolated spectrum.
 
 This extends a conditional construction; it changes no physical axioms and
 does not supply a microscopic realization or evade every index obstruction.
-The new projection result is optional until its review is complete. A separate
+Projection review is now complete, but this extension does not use it. A separate
 source-bound check will be needed if the new argument closes.
+
+## Microscopic current implementation derivation and recovery
+
+S/ROOT_MICROSCOPIC_CURRENT_IMPLEMENTATION_LEAD.md is a root unverified sketch.
+Fresh author agent microscopic_current_implementation continues only
+MICROSCOPIC_CURRENT_IMPLEMENTATION_PROBE.md and microscopic_current_implementation/.
+The prior worker had two stream disconnects, requests d8b30d99-0af8-4663-ade1-1950f8b68e30
+and30f8456c-bfa0-4295-8850-c2939a9cb712. Root recovery inventory originally saw
+source copies/checkpoint only; the fresh worker subsequently found a27197-byte
+note timestamp02:21:13UTC. It preserves that recovered predecessor before finishing
+controls and provenance. No proof is accepted yet. Both failures remain recorded.
+
+Target: under explicit local-vector H/boost domain actions and supplied self-adjoint
+integrated P=i[H,B], derive finite-range current density
+p_b(x)=(i/2)sum_r r_b[h_x,h_(x+r)] and its implementation on the full GNS algebra.
+Use connected-support nested-commutator analytic bounds, supplied self-adjoint
+Taylor remainder and finite-volume norm convergence; prove invariance before
+canonical GNS identification. Do not infer boost local action from a formal first
+moment, equality on one vacuum column, or an unproved analytic-core theorem.
+This could reduce an implementation premise; no model/Poincare integration or
+physical axioms are constructed. Independent source review remains necessary.
 
 ## Freshness, lock and next decisions
 
-S/repo_sync_0200.json and open_prs_0200.json capture the current source state.
-Other science parents and chiral9477 at114c9718d19645bd67ec203faadc6f89a2d7a507
-are unchanged. Candidate9476 advanced to100a6fc7bf476d011bb47e18045e60bb810b2b5d:
-its only change is a gravity exercise TESTS.md field-dependent Ward-completion
-plan. Complete changed content was read for overlap only; no new proof is
-adopted or certified. Avoid that active lane. Local branch named main resolves
-older e485; only explicit fetched origin/main a13caa48 is authority here.
+S/repo_sync_0230.json records02:29:45UTC. Main/planning/instructions unchanged.
+Candidate9476 remains100a6fc7bf476d011bb47e18045e60bb810b2b5d with the separate
+field-dependent Ward plan. Chiral9477 advanced tobc81b65a4d3e2fa081b759832dfc2f1e976c8b26:
+two143-line partner-rank notes and full changed HANDOFF/queue were read for overlap.
+They treat specific thrice-cap/swapped-dot combinations by rank/minor pencils,
+not current implementation or scattering. Their large runners are not re-certified
+or imported. Avoid duplicating that active lane. Full changed-path inventory was
+inspected. Local main e485 remains stale; fetched origin/maina13 is authority.
 
-Lock refreshed01:59:32.791049 UTC, expires02:59:32.791049 UTC.
-Refresh by02:45 UTC from worktree using ownercodex-toe-native-20261011,
-holder01a11691-f332-7852-b641-6ee714aab15a. Do not change the fixed deadline.
-Finish the projection review, independently check frozen index leakage, and
-continue the positive centre extension. Preserve all failed routes, especially
-the full-inverse, finite-bath, strong-adjoint and separating-vacuum shortcuts.
-Use proof/primary source content whenever this recovery summary is insufficient.
+Lock refreshed02:29:15.577118UTC; expires03:29:15.577118UTC. Refresh by03:15UTC
+from worktree using ownercodex-toe-native-20261011 and the same holder.
+Package reviewed leakage, check the centre source when frozen, finish the current
+implementation candidate, and then choose the next constructive route. A possible
+next lead is time-averaged scattering for stable nonisolated mass shells; root has only inspected
+Dybalski hep-th/0412226v4 abstract/early pages, and no theorem import or adaptation
+is yet established. Agent compact_detector_convergence now has a bounded author
+brief for NONISOLATED_MASS_SCATTERING_PROBE.md and nonisolated_mass_scattering/:
+read the primary proof, retain the vacuum gap, derive integrable time-averaged
+creators under explicit geometric spectral regularity, and avoid silently replacing
+that condition by mass-operator regularity. It will need fresh independent review.
+
+Preserve failures and source limits. No deadline extension. All earlier full
+proof summaries and operations are recoverable from archives and source packets.

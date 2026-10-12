@@ -1,3 +1,3 @@
-# Final review record
+# Renewal review history
 
-ENERGY9496, SHARP9497 and CURRENT9498 each retain full source-bound proof/evidence review and actual publication checks. SHARP/CURRENT are pure ordinary-proof proposals with identity-only executables and no mathematical PASS count. Current's sole norm-distance wording correction is recorded against its original frozen core. Final finite-energy lemma was fully read and source-exposed focused-reviewed, including its zero-energy vacuum correlation counterexample, but remains unsubmitted as a science milestone. Its exact artifacts are in recovery/final-followup/MAP.json. Root coauthor status, same selected model/effort and exposure chronology are explicit. No independent retained audit or blanket Lean claim.
+Prior reviews and failures are archived, unchanged. Finite-energy source/review exact identities remain 648e61978fc5b7d7b84ec6ddc7cb4c6d506405827e7aad1fa80f99cf9211d52c / c1d01c472f0d5520fa575ea639e096ddd2884d97876e876bacdb3afee934f287. Publication pending current-main dependency check. No new audit verdict.

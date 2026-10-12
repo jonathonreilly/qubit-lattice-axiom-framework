@@ -1,3 +1,3 @@
-# Final claim status
+# Author support status — renewal
 
-All results are conditional on their explicitly supplied model, state, scaling and mathematical hypotheses. New mathematics and proofs were developed and independently checked at the disclosed scope. Regular PRs propose review; they do not confer retained status. Identity tooling is bookkeeping, not proof verification. No new physical axiom, empirical prediction, full TOE closure, main merge, audit verdict or editable prompt change was made. The final finite-energy result is preserved for later milestone publication with its failures and limits intact.
+Target bounded_theorem; actual status conditional-support. Finite-energy source has a complete focused proof review, not formal retained audit or Lean certificate. Parent current-refinement proposal retains its published open gates. Renewal does not promote any status.

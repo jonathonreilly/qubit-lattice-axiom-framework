@@ -1,0 +1,57 @@
+[
+  {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/RENEWAL.json",
+    "archive": "recovery/renewal-20261012/RENEWAL.json.gz",
+    "sha256": "eb5eeb9295d4f7982e94367818c02535e53954e685bf307948ed69888629fd6d"
+  },
+  {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/repo_sync_renewal_1642.json",
+    "archive": "recovery/renewal-20261012/repo_sync_renewal_1642.json.gz",
+    "sha256": "a4248320b5c5d70275cc0d60bee4dc0768472ecdc8497547da4caaeae1dacd99"
+  },
+  {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/MAIN_PARENT_COMPARISON.json",
+    "archive": "recovery/renewal-20261012/MAIN_PARENT_COMPARISON.json.gz",
+    "sha256": "14c5800674e390b259390417f4c47604e0061ab1040cdee5efb049aaaea9b3ea"
+  },
+  {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/FINITE_ENERGY_CLEAN_CHILD.json",
+    "archive": "recovery/renewal-20261012/FINITE_ENERGY_CLEAN_CHILD.json.gz",
+    "sha256": "03e769ea4fa24e3e06298814ad9188f2e69276328be886938ee46d4cff4af225"
+  },
+  {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/FINITE_ENERGY_ROOT_PUBLICATION_GATE.md",
+    "archive": "recovery/renewal-20261012/FINITE_ENERGY_ROOT_PUBLICATION_GATE.md.gz",
+    "sha256": "41a2aeb7ac688528bf2e150a81a27f3b84a6a88a1ec3bd694737eac2ace7e9f7"
+  },
+  {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/RENEWAL_SOURCE_COVERAGE.json",
+    "archive": "recovery/renewal-20261012/RENEWAL_SOURCE_COVERAGE.json.gz",
+    "sha256": "1d15cb4cfbb0d2b1f94f1fd807c99494fb66736276d7a9ca69e94289ff8170a0"
+  },
+  {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_ROOT_RECONSTRUCTION.md",
+    "archive": "recovery/renewal-20261012/ENERGY_TRANSFER_ROOT_RECONSTRUCTION.md.gz",
+    "sha256": "dc3a429afc045d6bf39564f1ada2c1dddfab056ce3c2ba5ad34f1f13a095d75a"
+  },
+  {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_ROOT_SEAL.json",
+    "archive": "recovery/renewal-20261012/ENERGY_TRANSFER_ROOT_SEAL.json.gz",
+    "sha256": "0085a1e164f17b6e164df6a221c3efccf917e70b1427c7c995bbf1086365b7ec"
+  },
+  {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_ROOT_ADDENDUM_A.md",
+    "archive": "recovery/renewal-20261012/ENERGY_TRANSFER_ROOT_ADDENDUM_A.md.gz",
+    "sha256": "8d9d3852b98d3fc069e49a23717e9d01a9534384a1057c3e7e09225a075fc0a5"
+  },
+  {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_ROOT_ADDENDUM_A_SEAL.json",
+    "archive": "recovery/renewal-20261012/ENERGY_TRANSFER_ROOT_ADDENDUM_A_SEAL.json.gz",
+    "sha256": "c7261785e5757857430f6ab798af0f5f46105ea5da89e4dbd8c5654a4a933850"
+  },
+  {
+    "source": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_ROOT_FIRST_AUTHOR_SUMMARY_EXPOSURE.json",
+    "archive": "recovery/renewal-20261012/ENERGY_TRANSFER_ROOT_FIRST_AUTHOR_SUMMARY_EXPOSURE.json.gz",
+    "sha256": "b9a74318288049ba2318e7629cffe22e96e94b65ec857cd61e5ee45d6fc6f321"
+  }
+]

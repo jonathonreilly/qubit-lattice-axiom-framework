@@ -1063,13 +1063,29 @@ and `-4m`. The pivot gcd is not this certificate. Both swapped-dot
 generators are not in this count. The ten-kernel coefficient span is
 not classified. Runner `PASS=8 FAIL=0`.
 
+Cycle 76. On every ordered height pair, both swapped-dot generators plus
+`m` times the cap of each ratio span have partner rank 10 at every
+chirality coefficient, for every positive integer `m`. The swapped-dot
+coordinate is `0`, the transverse-sign coordinate is `0`, the
+sign-product coordinate is `0`, the swapped coordinate is `-2`, the
+orthogonal coordinate is `2`, and the matched and scaled coordinates
+are `4m`. The sum lies in neither ratio span and outside the even
+space. One 17-row compression has an elimination polynomial with no
+positive integer root. On `(1, 2)`, `(2, 1)`, and `(3, 1)` it is a
+rational multiple of `(2m+1)^10`. On `(1, 3)`, `(2, 3)`, and `(3, 2)`
+it is a rational multiple of `m^10`. At heights 1 and 2 the kernel
+cross sum is `-2-4m`. The pivot gcd is not this certificate. One
+swapped-dot generator is not in this count. Unequal cap multiples are
+not in this count. The ten-kernel coefficient span is not classified.
+Runner `PASS=7 FAIL=0`.
+
 ## Next exact action
 
-Decide whether every positive integer m gives partner rank 10, at every
-chirality coefficient, for both swapped-dot generators plus m times the
-cap of each ratio span. The cases m = 2 and m = 3 have partner rank 10.
-Do not claim the ten-kernel coefficient span is settled. Do not claim
-the 300-dimensional affine space is classified.
+Decide whether every pair of positive integers (r, s) gives partner rank
+10, at every chirality coefficient, for both swapped-dot generators plus
+r times one ratio-span cap and s times the other. The diagonal r = s is
+settled. Do not claim the ten-kernel coefficient span is settled. Do not
+claim the 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`

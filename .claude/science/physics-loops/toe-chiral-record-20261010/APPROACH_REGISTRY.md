@@ -882,3 +882,16 @@ elimination polynomial has no positive integer root.
 Family not used: both swapped-dot generators plus every positive
 integer multiple of each cap. That remains open. The 300-dimensional
 affine space is not this family.
+
+Cycle 76 target contract: whether every positive integer m gives
+partner rank 10, at every chirality coefficient, for both swapped-dot
+generators plus m times the cap of each ratio span.
+
+Family used: both swapped-dot generators plus every positive integer
+multiple of each cap. The swapped-dot coordinate is 0 and the scaled
+coordinate is 4m. The elimination polynomial has no positive integer
+root.
+
+Family not used: both swapped-dot generators plus unequal positive
+multiples of the two caps. That remains open. The 300-dimensional
+affine space is not this family.

@@ -504,3 +504,12 @@ are linearly independent. Each lies in neither ratio span and outside
 the even space. The elimination polynomial has no positive integer
 root. Both swapped-dot generators are not in this count. The
 ten-kernel coefficient span is not classified.
+Cycle 76 shows that both swapped-dot generators plus every positive
+integer multiple of each ratio-span cap have partner rank 10 at every
+chirality coefficient on every ordered height pair. The swapped-dot
+coordinate is 0, the transverse-sign coordinate is 0, and the matched
+and scaled coordinates are 4m. The sum lies in neither ratio span and
+outside the even space. The elimination polynomial has no positive
+integer root. One swapped-dot generator is not in this count. Unequal
+cap multiples are not in this count. The ten-kernel coefficient span
+is not classified.

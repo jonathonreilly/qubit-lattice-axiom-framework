@@ -583,3 +583,12 @@ coefficient. The swapped-dot coordinate is `1` or `-1` and the scaled
 coordinate is `4m`. It does not classify both swapped-dot generators,
 and it does not classify the 300-dimensional affine space. This is not
 an N-gate no-go.
+
+Cycle 76 prunes the reading that some positive integer multiple of both
+caps, added to both swapped-dot generators, has a chirality coefficient
+with a nonzero ten-kernel partner. On every ordered height pair, every
+positive integer `m` has partner rank 10 at every chirality
+coefficient. The swapped-dot coordinate is `0` and the scaled
+coordinate is `4m`. It does not classify unequal cap multiples, and it
+does not classify the 300-dimensional affine space. This is not an
+N-gate no-go.

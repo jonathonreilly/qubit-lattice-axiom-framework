@@ -1313,3 +1313,21 @@ positive integer multiple of each ratio-span cap has partner rank 10 at
 every chirality coefficient. The swapped-dot coordinate is 1 or -1 and
 the scaled coordinate is 4m. Both swapped-dot generators stay open. The
 ten-kernel coefficient span stays open.
+
+## Cycle 76
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide whether every pair of positive integers (r, s) gives partner rank 10, at every chirality coefficient, for both swapped-dot generators plus r times one ratio-span cap and s times the other. The diagonal r = s is settled. Do not claim the ten-kernel coefficient span is settled."
+```
+
+On every ordered height pair, both swapped-dot generators plus every
+positive integer multiple of each ratio-span cap have partner rank 10 at
+every chirality coefficient. The swapped-dot coordinate is 0 and the
+scaled coordinate is 4m. Unequal cap multiples stay open. The
+ten-kernel coefficient span stays open.

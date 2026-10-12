@@ -1,0 +1,124 @@
+===== runner cache v1 =====
+runner: scripts/excluded_walk_projected_free_band_canonical_current_2026_10_11.py
+runner_sha256: 4451005b466c114b40c943509b13aaa34607b7b8e884ab584df4c19d8b1f30ff
+input_fingerprint_sha256: 41a95d3f63d68143942d4f75201ae92317e2cf473dce4f10b2bf05aa3b8b4853
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.35
+status: ok
+----- stdout -----
+BEGIN block_1_long_time_checks embedded_source_sha256=4ddc0e1972c6ab13c269ac2f7c18b38811be1d9087a4052df53940cc24245a86
+Exact finite field: pairs = 9 I0 = 301/48 free kernel = 18 physical compressed kernel = 19
+Exact packet: band weight = 9/602 contact loss = 1/6 physical zero weight = 27/1505
+Canonical coefficients: free = -8/301 correction = 8/301
+Floating averaging controls: [{"T": 3.4, "actual_mean_error": 0.5042595553525635, "cutoff_bound": 1.004822240139073}, {"T": 20.0, "actual_mean_error": 0.09014223142479233, "cutoff_bound": 0.38575666502084377}, {"T": 50.0, "actual_mean_error": 0.004432724065253102, "cutoff_bound": 0.3096787268737843}]
+Conservative range certificate: 2100000608001/250000000000000 < 9/1000 < 1/108
+Scope: exact finite operator/field algebra and floating averaging controls; no finite-grid inference of continuum threshold density, isolated zero mode, or current relaxation.
+TOTAL: PASS=36 FAIL=0
+Source SHA256: 4451005b466c114b40c943509b13aaa34607b7b8e884ab584df4c19d8b1f30ff
+END block_1_long_time_checks
+BEGIN block_2_degenerate_checks embedded_source_sha256=8313796d2a462c37ed1aea0dc32182c9f7dc5b7ba34707d80a033b1c53f3a41a
+{"python": "3.12.8", "numpy": "2.4.1", "scipy": "1.17.0", "sympy": "1.14.0", "timeout_seconds": 120, "inputs": "literal, deterministic"}
+PASS spin basis unitary
+PASS Pauli derivative cross sign
+PASS transverse projected cross identity
+PASS dressing normalization
+PASS physical zero projector
+PASS physical zero annihilation
+PASS entire physical zero dimension
+PASS physical zero excludes contact
+PASS dressing self coupling zero
+PASS full effective generator includes g
+PASS actual transverse dressing source
+PASS nonzero dressing source
+PASS effective generator self adjoint
+PASS canonical block including cross 0
+PASS canonical dressing cancellation 0
+PASS canonical block including cross 1
+PASS canonical dressing cancellation 1
+PASS canonical block including cross 2
+PASS canonical dressing cancellation 2
+PASS full zero space trace identity
+PASS cyclic first derivative zero 0
+PASS cyclic current second derivative 0
+PASS cyclic first derivative zero 1
+PASS cyclic current second derivative 1
+PASS cyclic first derivative zero 2
+PASS cyclic current second derivative 2
+EXACT_FIXTURE {"positive_pairs": 6, "dimension": 24, "physical_zero_dimension": 13, "I0": "91675/154512", "gamma_squared": "60246/91675"}
+PASS cutoff corrector residual sign
+PASS actual effective cyclic current 0
+PASS actual effective cyclic current 1
+PASS actual effective cyclic current 2
+PASS strict effective dressing current response
+PASS bounded generator expansion lambda=0.04
+PASS finite evolution cutoff bound lambda=0.04
+PASS actual canonical expansion lambda=0.04 axis=0
+PASS actual canonical expansion lambda=0.04 axis=1
+PASS actual canonical expansion lambda=0.04 axis=2
+PASS bounded generator expansion lambda=0.02
+PASS finite evolution cutoff bound lambda=0.02
+PASS actual canonical expansion lambda=0.02 axis=0
+PASS actual canonical expansion lambda=0.02 axis=1
+PASS actual canonical expansion lambda=0.02 axis=2
+PASS bounded generator expansion lambda=0.01
+PASS finite evolution cutoff bound lambda=0.01
+PASS actual canonical expansion lambda=0.01 axis=0
+PASS actual canonical expansion lambda=0.01 axis=1
+PASS actual canonical expansion lambda=0.01 axis=2
+PASS bounded generator expansion lambda=0.005
+PASS finite evolution cutoff bound lambda=0.005
+PASS actual canonical expansion lambda=0.005 axis=0
+PASS actual canonical expansion lambda=0.005 axis=1
+PASS actual canonical expansion lambda=0.005 axis=2
+PASS finite evolution tends to effective example
+PASS finite canonical current tends to block example
+FLOATING_FINITE_EVOLUTION [{"lambda": 0.04, "state_error": 0.003882152119317714, "scaled_current_error": 0.00025411820735965485}, {"lambda": 0.02, "state_error": 0.0018493816544181902, "scaled_current_error": 6.345814616348644e-05}, {"lambda": 0.01, "state_error": 0.000925056955243623, "scaled_current_error": 1.586492057514821e-05}, {"lambda": 0.005, "state_error": 0.0004633017908546948, "scaled_current_error": 3.96636956268015e-06}]
+PASS cone matrix cubic polynomial
+PASS cone limiting state
+PASS cone nonuniform squared separation
+PASS actual cone exponential
+PASS cone packet separation rational margin
+PASS quadrature symmetry and analytic bracket n=16
+PASS quadrature symmetry and analytic bracket n=24
+PASS quadrature symmetry and analytic bracket n=32
+UNVALIDATED_TORUS_QUADRATURE [{"grid": 16, "I0_quadrature": 0.23510657087937042, "gamma2_kappa111_quadrature": 1.2601256615895795}, {"grid": 24, "I0_quadrature": 0.24107243947296894, "gamma2_kappa111_quadrature": 1.2291073182062058}, {"grid": 32, "I0_quadrature": 0.2440101687184034, "gamma2_kappa111_quadrature": 1.21432686074999}]
+{"checks": 61, "elapsed_seconds": 0.41032345895655453, "scope": "author controls; no independent review or continuum proof by discretization"}
+END block_2_degenerate_checks
+BEGIN block_3_root_two_scale_controls embedded_source_sha256=3957104cf4362b83c6f6e11c5cbbff365d34e232dc1134cd09cdc9a97312e4ec
+{"python": "3.12.8", "sympy": "1.14.0", "scope": "author exact finite controls; no continuum quadrature"}
+EXACT physical zero projector
+EXACT physical zero excludes auxiliary singlet
+EXACT physical zero annihilation
+EXACT nonzero subspace projection
+EXACT nonzero derivative lands in transverse zero space
+EXACT nonzero derivative has no diagonal block
+EXACT full physical canonical trace identity
+EXACT full trace restricted to nonzero spectrum
+EXACT finite nonzero inverse
+EXACT high-spectrum corrector residual
+EXACT high-spectrum corrector is a physical zero vector
+NONCUBIC_FIXTURE {"pair_probabilities": ["1/2", "1/3", "1/6"], "I0_fixture": "63593/44100", "physical_dimension": 11, "zero_dimension": 7, "nonzero_dimension": 4, "continuum_integral_values": false}
+EXACT momentum-envelope error budget
+EXACT actual-band preparation error budget
+EXACT surviving three-component current drift
+EXACT explicit band lower coefficient
+EXACT single global projection normalization
+EXACT positive global weights preserve the common current bound
+{"elapsed_seconds": 0.31132829189300537, "limits": "No continuum spectral-mass bound, delta(lambda) rate, or all-state relaxation theorem is computed."}
+END block_3_root_two_scale_controls
+BEGIN block_4_quantitative_controls embedded_source_sha256=0e9a63cd42abd9fc3d4f68bb1a8568825e25c36c589f2a6f028ad690654f1df9
+Exact parameter budget e_perp/A upper bound: 57352588089098243/23611832414348226068480 < 1/200000
+Exact current, preparation, support, cutoff-domain and global-drift constant margins verified.
+Exact longitudinal cutoff: I0=1, nonzero removed mean 495/1792 and complete residual identity verified.
+Five actual effective orbits: pointwise bound, pure-longitudinal Q B orbit, cutoff mean and nontrivial spectral-cutoff inequality verified.
+Both zero-space and complementary high-spectral corrector residuals reconstructed from matrices.
+Full physical-space current trace identity verified; no rotational equality of components assumed for this non-cubic fixture.
+Controls complete. Floating finite matrices do not prove the torus cone integral bounds or the infinite-dimensional evolution estimate.
+END block_4_quantitative_controls
+Complete finite controls; no independent audit or continuum proof is inferred.
+Runner SHA256: 4451005b466c114b40c943509b13aaa34607b7b8e884ab584df4c19d8b1f30ff
+Elapsed seconds: 1.218620
+
+----- stderr -----
+

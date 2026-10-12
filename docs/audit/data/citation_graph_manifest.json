@@ -1,6 +1,6 @@
 {
- "edge_count": 15436,
- "node_count": 6879,
+ "edge_count": 15444,
+ "node_count": 6883,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5897,6 +5897,22 @@
   "exactness_residual_priced_arrow_is_lane_data_cycle923_bounded_theorem_note_2026-07-28": {
    "deps_hash": "7734e49ea328",
    "out_degree": 10
+  },
+  "excluded_walk_low_energy_energy_current_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "e5febf032146",
+   "out_degree": 2
+  },
+  "excluded_walk_memory_current_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "909fefd73ab2",
+   "out_degree": 2
+  },
+  "excluded_walk_projected_free_band_canonical_current_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "27195ce2744b",
+   "out_degree": 1
+  },
+  "excluded_walk_quantitative_memory_transfer_bounded_theorem_note_2026-10-11": {
+   "deps_hash": "332559cb2a6d",
+   "out_degree": 3
   },
   "exp_decay_lieb_robinson_quasilocal_bridge_theorem_note_2026-06-11": {
    "deps_hash": "50107746920d",

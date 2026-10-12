@@ -1,0 +1,71 @@
+===== runner cache v1 =====
+runner: scripts/excluded_walk_quantitative_memory_transfer_2026_10_11.py
+runner_sha256: bf1a83f21e06818ba1182bfa186d13ccf971777afb52f70a09da0c69e0eaa85d
+input_fingerprint_sha256: a1420ce7141805409123fc1aa688b62b58a4f029c985fd1207d76d43b824c192
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.00
+status: ok
+----- stdout -----
+{"author_block": "spectral_edge/edge_controls.py", "sha256": "22bf0002efc0c7f188eaf789e86848f5e02051e37070a61231ed121a5c7999ee", "phase": "begin"}
+{"check": "physical_zero_projection", "detail": {"I0_fixture": "25/36", "rank": 7}}
+{"check": "pointwise_cross_square_defect", "detail": null}
+{"check": "bounded_compression_is_selfadjoint", "detail": null}
+{"check": "compression_square_keeps_positive_defect", "detail": null}
+{"check": "scalar_weight_preserves_transverse_longitudinal_orthogonality", "detail": null}
+{"check": "exact_cubic_dressing_coefficient", "detail": null}
+{"check": "rank_one_defect_gram_identity", "detail": null}
+{"check": "actual_weighted_vector_decomposition", "detail": null}
+{"check": "nontrivial_form_vector_control", "detail": "6641901941/2705402700"}
+{"check": "combined_edge_projector_is_exact", "detail": null}
+{"check": "two_edge_mass_and_longitudinal_coefficient", "detail": "25/33"}
+{"check": "projection_uses_squared_overlap", "detail": {"c": "9/25", "edge_energy": "3/11", "rank_one_form": "25/121"}}
+{"check": "finite_inverse_moment_direct_matrix_check", "detail": {"bound": "25/9", "inverse_moment": "59/27"}}
+{"check": "symmetric_measure_removes_odd_inverse_part", "detail": null}
+{"check": "poisson_bound_factor_two", "detail": null}
+{"check": "edge_spectral_defect_exact", "detail": null}
+{"check": "mean_bound_optimizer_stationary", "detail": null}
+{"check": "mean_bound_optimizer_value", "detail": null}
+{"check": "optimizer_domain_monotonicity", "detail": null}
+{"check": "universal_large_horizon_domain", "detail": {"elementary_inputs": "pi<22/7, log(2)<1, I0>=1/12; L/tau decreases for tau>=1/2", "tau_at_least": 65536, "upper_bound_for_Q_at_threshold": "297/448"}}
+{"checks": 20, "elapsed_seconds": 0.14260545815341175, "python": "3.12.8", "scope": "Exact finite compression/projection and scalar proof controls; author evidence, not independent review or continuum quadrature certification.", "sympy": "1.14.0"}
+{"author_block": "spectral_edge/edge_controls.py", "checks": 20, "phase": "complete"}
+{"author_block": "spectral_edge/rate_controls.py", "sha256": "a3b6b61e17b0deaeced2e0d267e47b583cdbe219cd9d0004b89f184405f945a5", "phase": "begin"}
+{"check": "singular_C_rank_one_gram_bound", "detail": null}
+{"check": "regulated_inverse_form_identity", "detail": null}
+{"check": "regulated_bound_and_finite_limit_without_C_inverse", "detail": null}
+{"check": "kernel_L5over4_mass_exact", "detail": "10/duration"}
+{"check": "parabolic_probability_and_Fourier_transform", "detail": null}
+{"check": "difference_density_from_actual_convolution", "detail": "-3*(x - 2)**3*(x**2 + 6*x + 4)/160"}
+{"check": "one_sided_sinc_mean_has_correct_derivative_and_origin", "detail": null}
+{"check": "parabolic_inverse_moment_direct_integral", "detail": null}
+{"check": "continuous_density_weighted_moment_interpolation", "detail": {"L5over3_power_integral": "0.70404787495851201976562299322006596540404503989883", "moment_bound": "2.4764454366709700129059574643068137176351634832389"}}
+{"check": "continuous_convolution_Young_bound", "detail": {"L5_convolution": "0.56790919851602334714795582033938375132293447711681", "L5over3_density_squared": "0.65633056616597055291624721045434910695168346164201", "exact_convolution_fifth_power_integral": "219648861/3718214500"}}
+{"check": "continuous_time_and_difference_mean_T_0.5", "detail": {"Lp_bound": "7.2101886335570047636140854571296486621662854976908", "direct_time_mean": "0.98354574127634203554108798184587968212692995738304", "sinc_mean": "0.98354574127634203554108798184587968212692995738299"}}
+{"check": "continuous_time_and_difference_mean_T_2.0", "detail": {"Lp_bound": "2.3784752350358181563440886102548453115136803247568", "direct_time_mean": "0.78117656077756995495114654029822514044981143012712", "sinc_mean": "0.78117656077756995495114654029822514044981143012712"}}
+{"check": "continuous_time_and_difference_mean_T_12.0", "detail": {"Lp_bound": "0.56725408691846855197569462301162807842708056418183", "direct_time_mean": "0.15699886409865121056714915805338560748901552792057", "sinc_mean": "0.15699886409865121056714915805338560748901552792057"}}
+{"check": "continuous_time_and_difference_mean_T_80.0", "detail": {"Lp_bound": "0.12435138903061381686004227416400238189847891252332", "direct_time_mean": "0.023561908428036419748638639819066319976064501742231", "sinc_mean": "0.023561908428036419748638639819066319976064501742231"}}
+{"check": "rate_scaling_and_literal_constant", "detail": null}
+{"checks": 15, "elapsed_seconds": 0.6152278750669211, "mpmath": "1.3.0", "python": "3.12.8", "scope": "Author algebra/continuous-comparator controls; no continuum torus quadrature, independent review, or certified floating error.", "sympy": "1.14.0"}
+{"author_block": "spectral_edge/rate_controls.py", "checks": 15, "phase": "complete"}
+{"author_block": "averaged_transverse_occupation/occupation_controls.py", "sha256": "a81f727a4d2f813e6c58515127fa9836179e24180f90c50224d42bc7368237a1", "phase": "begin"}
+EXACT Jacobian derivative bound at larger endpoint
+EXACT Jacobian upper bound below two
+EXACT contact projection coefficient
+EXACT band remainder rational margin
+EXACT full amplitude-sensitive probability difference
+EXACT normalized probability coefficients
+EXACT allowed balanced gamma
+EXACT balanced gamma value
+EXACT survival and comparison exponents
+EXACT physical time clock
+EXACT packet error faster than leading error
+EXACT state preparation occupation at initial time
+EXACT single normalization exact probability
+EXACT uniform estimate survives exact weights
+Complete exact finite controls: 14
+{"author_block": "averaged_transverse_occupation/occupation_controls.py", "checks": 14, "phase": "complete"}
+{"status": "PASS", "claim_id": "excluded_walk_quantitative_memory_transfer_bounded_theorem_note_2026-10-11", "isolated_author_blocks": 3, "author_checks": 49, "python": "3.12.8", "elapsed_seconds": 0.8773370839189738, "scope": "author consistency replay; no independent continuum or final publication proof"}
+
+----- stderr -----
+

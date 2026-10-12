@@ -3874,3 +3874,16 @@ Readings:
 - **PASS:** an explicit box graviton coupled to universal box matter whose one-loop TT mass is zero and whose TT speed matches matter to below 1e-15, without tuning, checked.
 - **FAIL:** a computed nonzero one-loop TT mass or speed split that no choice in a stated class removes (refereed).
 - **INCONCLUSIVE:** otherwise.
+
+### C5 Round 9, item 10 (pre-registered 17:16Z; launched now; conditional on R9-2, whose referee is running)
+
+**R9-10. The interacting box stress in d = 2: a symmetric (Belinfante) tensor, and the fall of bound bodies with spin.**
+- R9-2's worker (unrefereed) builds the d = 1 interacting stress tensor, a Weyl-midpoint density of W, and proves η = 0 for bound bodies on the box sector. In d = 1 symmetry tests nothing.
+- In d = 2, take R8-1's refereed two-body law: a p-wave doublet with the spin term in K.
+- Construct T^{μν} that is symmetric (a Belinfante improvement for the spin term), Hermitian, quasi-local, exactly conserved with an exact Ward identity on the box sector, has ∫T⁰⁰ = H, and has first moments equal to K_a and J.
+- Check the fall of bound doublet states, including spin, between two binding fractions, at rest and moving within the budget. Check the gravitomagnetic (spin–orbit) coupling against the GR value.
+
+Readings:
+- **PASS:** all properties are met in d = 2, with bound-body η exactly zero or below 1e-15 at linear order, and the spin coupling equal to GR's, checked.
+- **FAIL:** a refereed no-go for a symmetric, conserved stress with first moment K on the d = 2 box sector in a stated class.
+- **INCONCLUSIVE:** otherwise.

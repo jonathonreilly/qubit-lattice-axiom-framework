@@ -1,0 +1,15 @@
+U zero, corners A,C2,C, m=0.10: (u,v)=(0.964879,0.007410) in-simplex=True | M,T2g +1.01e-04 M,Eg +7.58e-05 U,T2g -4.02e-15 U,Eg +8.94e-15 | mu_E +6.575e-03 | v_max 0.998293 max|s'| 1.000000000 min edge g 0.1518
+U zero, corners A,C2,C, m=0.03: (u,v)=(0.955996,0.015995) in-simplex=True | M,T2g +1.21e-04 M,Eg +9.41e-05 U,T2g -4.59e-15 U,Eg +8.78e-15 | mu_E +6.526e-03 | v_max 0.999846 max|s'| 1.000000000 min edge g 0.1521
+U zero, corners A,C2,C, m=0.01: (u,v)=(0.955208,0.016763) in-simplex=True | M,T2g +1.22e-04 M,Eg +9.58e-05 U,T2g -4.62e-15 U,Eg +8.78e-15 | mu_E +6.522e-03 | v_max 0.999983 max|s'| 1.000000000 min edge g 0.1521
+M zero, corners A,C2,C, m=0.10: (u,v)=(0.955978,0.024523) in-simplex=True | M,T2g +4.13e-15 M,Eg -1.75e-16 U,T2g -1.17e-04 U,Eg -9.25e-05 | mu_E +6.192e-03 | v_max 0.998292 max|s'| 1.000000000 min edge g 0.1437
+M zero, corners A,C2,C, m=0.03: (u,v)=(0.944726,0.037332) in-simplex=True | M,T2g +4.23e-15 M,Eg +7.18e-17 U,T2g -1.42e-04 U,Eg -1.15e-04 | mu_E +6.051e-03 | v_max 0.999846 max|s'| 1.000000000 min edge g 0.1422
+M zero, corners A,C2,C, m=0.01: (u,v)=(0.943709,0.038492) in-simplex=True | M,T2g +4.12e-15 M,Eg -1.03e-16 U,T2g -1.45e-04 U,Eg -1.17e-04 | mu_E +6.038e-03 | v_max 0.999983 max|s'| 1.000000000 min edge g 0.1420
+clean tails |eps_r| (m=0.3; raw Fourier coefficient, nothing subtracted) Z1(wt=0.06): r=16:1.5e-03 r=32:3.2e-04 r=64:2.1e-05 r=128:2.0e-07 r=256:3.1e-09 r=512:5.9e-09 r=1024:4.1e-11
+clean tails |eps_r| (m=0.3; raw Fourier coefficient, nothing subtracted) C=Zz(1.0,0.35,0.43,wt=0.03): r=16:2.7e-03 r=32:5.0e-04 r=64:3.2e-05 r=128:5.0e-06 r=256:8.3e-07 r=512:1.8e-06 r=1024:1.1e-09
+clean tails |eps_r| (m=0.3; raw Fourier coefficient, nothing subtracted) G(1.0): r=16:2.9e-05 r=32:3.4e-08 r=64:6.5e-11 r=128:1.4e-14 r=256:2.1e-16 r=512:1.0e-16 r=1024:6.6e-17
+gentle-valley law: valleys [(np.float64(1.8), np.float64(0.4246)), (np.float64(2.828), np.float64(0.5417))]; max|sigma'| on k>1.03: 0.440; I(B) for B in [1e-3,1e2]: max -6.1452e-05, all negative: True; I(1e-3)=-6.1648
+   gentle m=1.00: M,T2g -2.062e-03 M,Eg -3.025e-04 U,T2g -2.245e-04 U,Eg -1.482e-04
+   gentle m=0.30: M,T2g -4.859e-03 M,Eg -8.350e-04 U,T2g -5.515e-04 U,Eg -3.695e-04
+   gentle m=0.10: M,T2g -5.327e-03 M,Eg -9.343e-04 U,T2g -6.082e-04 U,Eg -4.083e-04
+   gentle m=0.01: M,T2g -5.389e-03 M,Eg -9.477e-04 U,T2g -6.157e-04 U,Eg -4.135e-04
+runtime 27.7s

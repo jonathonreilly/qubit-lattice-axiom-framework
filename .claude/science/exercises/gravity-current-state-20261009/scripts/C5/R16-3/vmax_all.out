@@ -1,0 +1,15 @@
+G(1.0): max|s'|=1.000000000, edge valleys(k,g)=[] | m=1.00 v_max 0.912847 m=0.30 v_max 0.989978 m=0.10 v_max 0.998787 m=0.01 v_max 0.999987
+     m=0.3 M,T2g -2.027e-03 M,Eg -9.372e-04 U,T2g -3.899e-04 U,Eg -2.044e-04 mu_E +2.927e-03
+     m=0.1 M,T2g -2.071e-03 M,Eg -9.626e-04 U,T2g -4.014e-04 U,Eg -2.109e-04 mu_E +2.995e-03
+Z1(0.06): max|s'|=1.000000000, edge valleys(k,g)=[(np.float64(1.4), np.float64(0.37)), (np.float64(2.2), np.float64(0.37)), (np.float64(3.028), np.float64(0.36))] | m=1.00 v_max 0.860479 m=0.30 v_max 0.984560 m=0.10 v_max 0.998246 m=0.01 v_max 0.999982
+     m=0.3 M,T2g +3.905e-04 M,Eg +4.118e-04 U,T2g +2.810e-04 U,Eg +4.054e-04 mu_E +1.227e-02
+     m=0.1 M,T2g +8.055e-04 M,Eg +6.002e-04 U,T2g +6.152e-04 U,Eg +5.939e-04 mu_E +1.309e-02
+C=Zz(1.0,0.35,0.43,0.03): max|s'|=1.000000000, edge valleys(k,g)=[(np.float64(1.65), np.float64(0.1254)), (np.float64(1.81), np.float64(0.1254)), (np.float64(1.97), np.float64(0.1254)), (np.float64(2.13), np.float64(0.1254)), (np.float64(2.29), np.float64(0.1254)), (np.float64(2.45), np.float64(0.1254)), (np.float64(2.61), np.float64(0.1254)), (np.float64(2.77), np.float64(0.1254)), (np.float64(2.93), np.float64(0.1254))] | m=1.00 v_max 0.863252 m=0.30 v_max 0.984948 m=0.10 v_max 0.998292 m=0.01 v_max 0.999983
+     m=0.3 M,T2g -7.940e-04 M,Eg -4.656e-04 U,T2g -7.763e-04 U,Eg -5.103e-04 mu_E +4.829e-03
+     m=0.1 M,T2g +3.766e-04 M,Eg -1.439e-04 U,T2g +6.802e-05 U,Eg -1.903e-04 mu_E +5.617e-03
+C2=Zz(1.0,0.35,0.47,0.03): max|s'|=1.000000000, edge valleys(k,g)=[(np.float64(1.65), np.float64(0.1254)), (np.float64(1.89), np.float64(0.1254)), (np.float64(2.13), np.float64(0.1254)), (np.float64(2.37), np.float64(0.1254)), (np.float64(2.61), np.float64(0.1254)), (np.float64(2.85), np.float64(0.1254))] | m=1.00 v_max 0.863252 m=0.30 v_max 0.984948 m=0.10 v_max 0.998292 m=0.01 v_max 0.999983
+     m=0.3 M,T2g -5.371e-04 M,Eg -2.957e-04 U,T2g -5.289e-04 U,Eg -3.381e-04 mu_E +5.478e-03
+     m=0.1 M,T2g +6.374e-04 M,Eg +5.723e-05 U,T2g +3.722e-04 U,Eg +9.772e-06 mu_E +6.324e-03
+gentle: max|s'|=1.000000000, edge valleys(k,g)=[(np.float64(1.8), np.float64(0.4246)), (np.float64(2.828), np.float64(0.5417))] | m=1.00 v_max 0.860520 m=0.30 v_max 0.984564 m=0.10 v_max 0.998247 m=0.01 v_max 0.999982
+     m=0.3 M,T2g -4.859e-03 M,Eg -8.350e-04 U,T2g -5.515e-04 U,Eg -3.695e-04 mu_E +7.262e-04
+     m=0.1 M,T2g -5.327e-03 M,Eg -9.343e-04 U,T2g -6.082e-04 U,Eg -4.083e-04 mu_E +7.808e-04

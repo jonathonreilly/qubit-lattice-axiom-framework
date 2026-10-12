@@ -1,0 +1,13 @@
+M m=0.3 b=0.6: V=0.2 tE=0.9537 tT=nan D=+nan | V=0.3 tE=0.8845 tT=0.9778 D=+0.0933 | V=0.4 tE=0.8743 tT=0.9725 D=+0.0982 | V=0.5 tE=0.9106 tT=nan D=+nan
+M m=0.3 b=0.8: V=0.2 tE=nan tT=nan D=+nan | V=0.3 tE=0.9591 tT=nan D=+nan | V=0.4 tE=0.9395 tT=nan D=+nan | V=0.5 tE=0.8845 tT=0.9860 D=+0.1015 | V=0.6 tE=0.8715 tT=0.9761 D=+0.1046 | V=0.7 tE=0.9176 tT=nan D=+nan
+M m=0.3 b=1.0: V=0.2 tE=nan tT=nan D=+nan | V=0.3 tE=nan tT=nan D=+nan | V=0.4 tE=nan tT=nan D=+nan | V=0.5 tE=0.8786 tT=0.9733 D=+0.0948 | V=0.6 tE=0.8733 tT=0.9718 D=+0.0985 | V=0.7 tE=0.9084 tT=nan D=+nan | V=0.8 tE=0.8858 tT=0.9950 D=+0.1092 | V=0.9 tE=0.9391 tT=nan D=+nan
+M m=0.1 b=0.6: V=0.2 tE=0.8639 tT=0.9350 D=+0.0711 | V=0.3 tE=0.8446 tT=0.9233 D=+0.0787 | V=0.4 tE=0.8445 tT=0.9328 D=+0.0883 | V=0.5 tE=0.8819 tT=0.9867 D=+0.1047
+M m=0.1 b=0.8: V=0.2 tE=nan tT=nan D=+nan | V=0.3 tE=0.9020 tT=0.9911 D=+0.0891 | V=0.4 tE=0.8929 tT=0.9843 D=+0.0914 | V=0.5 tE=0.8599 tT=0.9569 D=+0.0970 | V=0.6 tE=0.8526 tT=0.9533 D=+0.1008 | V=0.7 tE=0.8984 tT=nan D=+nan
+M m=0.1 b=1.0: V=0.2 tE=nan tT=nan D=+nan | V=0.3 tE=nan tT=nan D=+nan | V=0.4 tE=0.9708 tT=nan D=+nan | V=0.5 tE=0.8582 tT=0.9503 D=+0.0921 | V=0.6 tE=0.8559 tT=0.9525 D=+0.0967 | V=0.7 tE=0.8916 tT=nan D=+nan | V=0.8 tE=0.8722 tT=0.9795 D=+0.1073 | V=0.9 tE=0.9248 tT=nan D=+nan
+U m=0.3 b=0.6: V=0.2 tE=0.9314 tT=nan D=+nan | V=0.3 tE=0.8911 tT=0.9615 D=+0.0704 | V=0.4 tE=0.8922 tT=0.9620 D=+0.0699 | V=0.5 tE=0.9503 tT=nan D=+nan
+U m=0.3 b=0.8: V=0.2 tE=nan tT=nan D=+nan | V=0.3 tE=0.9408 tT=nan D=+nan | V=0.4 tE=0.9577 tT=nan D=+nan | V=0.5 tE=0.9082 tT=0.9925 D=+0.0843 | V=0.6 tE=0.8925 tT=0.9743 D=+0.0819 | V=0.7 tE=0.9497 tT=nan D=+nan
+U m=0.3 b=1.0: V=0.2 tE=nan tT=nan D=+nan | V=0.3 tE=nan tT=nan D=+nan | V=0.4 tE=nan tT=nan D=+nan | V=0.5 tE=0.8774 tT=0.9584 D=+0.0810 | V=0.6 tE=0.8852 tT=0.9735 D=+0.0883 | V=0.7 tE=0.9210 tT=nan D=+nan | V=0.8 tE=0.8984 tT=0.9859 D=+0.0875 | V=0.9 tE=0.9657 tT=nan D=+nan
+U m=0.1 b=0.6: V=0.2 tE=0.8587 tT=0.9171 D=+0.0584 | V=0.3 tE=0.8494 tT=0.9102 D=+0.0608 | V=0.4 tE=0.8583 tT=0.9220 D=+0.0637 | V=0.5 tE=0.9131 tT=0.9776 D=+0.0645
+U m=0.1 b=0.8: V=0.2 tE=nan tT=nan D=+nan | V=0.3 tE=0.8883 tT=0.9485 D=+0.0601 | V=0.4 tE=0.9159 tT=nan D=+nan | V=0.5 tE=0.8817 tT=0.9598 D=+0.0781 | V=0.6 tE=0.8711 tT=0.9497 D=+0.0786 | V=0.7 tE=0.9263 tT=nan D=+nan
+U m=0.1 b=1.0: V=0.2 tE=nan tT=nan D=+nan | V=0.3 tE=nan tT=nan D=+nan | V=0.4 tE=0.9711 tT=nan D=+nan | V=0.5 tE=0.8566 tT=0.9350 D=+0.0785 | V=0.6 tE=0.8670 tT=0.9524 D=+0.0854 | V=0.7 tE=0.9019 tT=0.9803 D=+0.0784 | V=0.8 tE=0.8831 tT=0.9692 D=+0.0861 | V=0.9 tE=0.9488 tT=nan D=+nan
+runtime 64.1s

@@ -5356,3 +5356,14 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **PHYSICALLY NON-LOCAL:** a refereed demonstration of a bounded gauge-invariant observable responding instantaneously through the tail.
   - **OPEN:** otherwise.
 - **Expectation.** OPEN or PHYSICALLY NON-LOCAL, with the same price as P-pf1.
+- **R16-3 (T₂g on the matter cone): worker reading REFUTED.** This is contrary to the expectation. All claims are within R9-9's vertex, the assumed W1 and the supplied vacuum; in the Fock vacuum Ξ ≡ 0.
+  - **Witness Z1.** A zigzag subluminal edge (max|σ′| = 1, v_max < 1, valleys at ~0.36/a) has Ξ_T2g = +3.9e-4 and +2.8e-4 (M and U) at m = 0.3. Three evaluators agree, and a smoother-turn control is negative.
+  - **IBP identity:** Ξ = (1/32)⟨|V|²(5v_z² − 1)/ε⁵⟩.
+  - **Lemma V:** the every-vertex form already fails on W08 and W14.
+  - **Theorem B″ (DERIVED-type subclass).** If every flank ending at a gapped valley has |σ′| ≤ 1/√5, then Ξ < 0 for every vertex.
+  - **(b) Simultaneous E_g = T₂g = 0** from convex mixes at m = 0.1, 0.03 and 0.01, for M and U separately. The count is two edge tunings per edge per vertex, holding to O((ma)²).
+  - **With P62:** no common zero was found.
+  - **Price P-Z:** a zigzag edge with longer-range hopping tails, and each tuning held to ~1e-13.
+  - **Proposed corrections, if refereed:** S17's "T₂g never zeroed" and P63(i).
+
+  Referee running.

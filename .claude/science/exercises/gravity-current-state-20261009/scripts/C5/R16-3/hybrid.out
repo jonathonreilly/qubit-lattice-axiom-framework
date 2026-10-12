@@ -1,0 +1,9 @@
+39 hybrids
+with M Eg>0 and T2g>0: 9; min mu_E among them:
+  mu_E +6.235e-03 | M Eg +5.77e-05 T2g +5.32e-06 | U Eg +8.29e-05 T2g +3.23e-04 | H(V=0.30,amp=0.12,nz=6,R=0.5)
+  mu_E +7.441e-03 | M Eg +3.03e-04 T2g +1.02e-04 | U Eg +3.12e-04 T2g +5.19e-04 | H(V=0.40,amp=0.12,nz=6,R=0.5)
+  mu_E +7.642e-03 | M Eg +3.50e-04 T2g +7.26e-04 | U Eg +3.54e-04 T2g +8.72e-04 | H(V=0.30,amp=0.20,nz=4,R=0.5)
+  mu_E +8.896e-03 | M Eg +5.19e-04 T2g +7.09e-04 | U Eg +5.05e-04 T2g +9.52e-04 | H(V=0.40,amp=0.20,nz=4,R=0.5)
+  mu_E +9.287e-03 | M Eg +8.56e-05 T2g +1.22e-04 | U Eg +1.60e-04 T2g +1.52e-04 | H(V=0.40,amp=0.08,nz=6,R=1.0)
+  mu_E +9.362e-03 | M Eg +4.95e-04 T2g +3.83e-04 | U Eg +4.80e-04 T2g +7.43e-04 | H(V=0.50,amp=0.20,nz=4,R=0.5)
+with mu_E<0: 0; max min(M Eg, M T2g) among them:

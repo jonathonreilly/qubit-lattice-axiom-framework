@@ -1,0 +1,17 @@
+U zero, corners A,Z1(0.25),C, m=0.10: (u,v)=(-0.019268,0.979948) in-simplex=False | M,T2g +1.11e-04 M,Eg +2.98e-05 U,T2g +4.51e-15 U,Eg +8.94e-15 | mu_E +6.478e-03 | v_max 1.017293 max|s'| 1.025197184 min edge g 0.1559
+U zero, corners A,Z1(0.25),C, m=0.03: (u,v)=(-0.010223,0.972745) in-simplex=False | M,T2g +1.37e-04 M,Eg +5.07e-05 U,T2g +4.19e-15 U,Eg +8.43e-15 | mu_E +6.442e-03 | v_max 1.007995 max|s'| 1.008149758 min edge g 0.1576
+U zero, corners A,Z1(0.25),C, m=0.01: (u,v)=(-0.009418,0.972109) in-simplex=False | M,T2g +1.39e-04 M,Eg +5.27e-05 U,T2g +4.19e-15 U,Eg +8.41e-15 | mu_E +6.439e-03 | v_max 1.007488 max|s'| 1.007505472 min edge g 0.1577
+M zero m=0.03 (u,v)=(0.002913,0.965162): Laplace M,T2g +8.587e-16 M,Eg +1.209e-16 U,T2g -1.241e-04 U,Eg -6.960e-05
+   3D grid N=480: M,T2g A +5.188e-04 / IBP -9.346e-06 M,Eg A +1.432e-04 / IBP -2.502e-06 U,T2g A +2.373e-04 / IBP -1.277e-04 U,Eg A +6.786e-05 / IBP -7.561e-05
+   3D grid N=720: M,T2g A +7.918e-05 / IBP +3.188e-06 M,Eg A +2.186e-05 / IBP +8.611e-07 U,T2g A -7.025e-05 / IBP -1.230e-04 U,Eg A -5.030e-05 / IBP -7.093e-05
+   3D grid N=960: M,T2g A -2.662e-05 / IBP -1.566e-07 M,Eg A -6.992e-06 / IBP -4.137e-08 U,T2g A -1.421e-04 / IBP -1.243e-04 U,Eg A -7.669e-05 / IBP -6.995e-05
+   corner A=G(1.0) m=0.03: M,T2g -2.076e-03 M,Eg -9.655e-04 U,T2g -4.027e-04 U,Eg -2.116e-04 mu_E +3.003e-03
+   corner B=Z1 m=0.03: M,T2g +8.614e-04 M,Eg +6.261e-04 U,T2g +6.602e-04 U,Eg +6.197e-04 mu_E +1.319e-02
+   corner C m=0.03: M,T2g +5.975e-04 M,Eg -7.622e-05 U,T2g +2.290e-04 U,Eg -1.242e-04 mu_E +5.724e-03
+tails |eps_r| (m=0.3, no subtraction) Z1(0.06): r=16:1.5e-03 r=32:3.2e-04 r=64:2.1e-05 r=128:2.0e-07 r=256:3.1e-09 r=512:5.9e-09
+tails |eps_r| (m=0.3, no subtraction) C=Zz(1.0,0.35,0.43,0.03): r=16:2.7e-03 r=32:5.0e-04 r=64:3.2e-05 r=128:5.0e-06 r=256:8.3e-07 r=512:1.8e-06
+tails |eps_r| (m=0.3, no subtraction) M-zero law (m=0.03): r=16:2.6e-03 r=32:5.2e-04 r=64:3.5e-05 r=128:4.0e-06 r=256:7.9e-07 r=512:1.8e-06
+tails |eps_r| (m=0.3, no subtraction) G(1.0): r=16:2.9e-05 r=32:3.4e-08 r=64:6.5e-11 r=128:1.3e-14 r=256:3.5e-18 r=512:1.7e-18
+tails |eps_r| (m=0.3, no subtraction) Z1(0.25): r=16:1.2e-03 r=32:1.2e-04 r=64:3.0e-06 r=128:3.6e-09 r=256:1.1e-11 r=512:3.5e-12
+gentle-valley law: valleys [(np.float64(1.8), np.float64(0.4246)), (np.float64(2.828), np.float64(0.5417))]; max|s'| after first peak 0.440; max_B I(B) over [1e-6,1e2] = +5.4756e+01 (all negative: False)
+runtime 43.5s

@@ -1,0 +1,20 @@
+M m=0.10: coarse (u,v)=(0.00,0.95); Newton (u,v)=(-0.009414,0.972573) in-simplex=False | refined Xi: M,T2g +7.90e-16 M,Eg -2.10e-16 U,T2g -9.14e-05 U,Eg -3.99e-05 | mu_E +6.348e-03 | v_max 1.000510 max|s'| 1.008747 min edge g 0.1573
+M m=0.03: coarse (u,v)=(0.00,0.95); Newton (u,v)=(0.002913,0.965162) in-simplex=True | refined Xi: M,T2g +8.55e-16 M,Eg +9.98e-17 U,T2g -1.24e-04 U,Eg -6.96e-05 | mu_E +6.207e-03 | v_max 0.999842 max|s'| 1.000000 min edge g 0.1571
+M m=0.01: coarse (u,v)=(0.00,0.95); Newton (u,v)=(0.004027,0.964496) in-simplex=True | refined Xi: M,T2g +7.85e-16 M,Eg +1.16e-17 U,T2g -1.27e-04 U,Eg -7.24e-05 | mu_E +6.193e-03 | v_max 0.999982 max|s'| 1.000000 min edge g 0.1571
+U m=0.10: coarse (u,v)=(0.00,1.00); Newton (u,v)=(-0.016432,0.978585) in-simplex=False | refined Xi: M,T2g +1.11e-04 M,Eg +2.54e-05 U,T2g +4.65e-15 U,Eg +8.88e-15 | mu_E +6.469e-03 | v_max 1.012809 max|s'| 1.022499 min edge g 0.1555
+U m=0.03: coarse (u,v)=(0.00,0.95); Newton (u,v)=(-0.008695,0.972003) in-simplex=False | refined Xi: M,T2g +1.37e-04 M,Eg +4.84e-05 U,T2g +4.00e-15 U,Eg +7.97e-15 | mu_E +6.437e-03 | v_max 1.006450 max|s'| 1.007351 min edge g 0.1574
+U m=0.01: coarse (u,v)=(0.00,0.95); Newton (u,v)=(-0.008008,0.971423) in-simplex=False | refined Xi: M,T2g +1.39e-04 M,Eg +5.05e-05 U,T2g +4.00e-15 U,Eg +7.98e-15 | mu_E +6.434e-03 | v_max 1.005908 max|s'| 1.006008 min edge g 0.1576
+M zero tuned at m=0.01, at other m: m=0.001 Eg +5.730e-07 T2g +1.637e-06 | m=0.003 Eg +5.267e-07 T2g +1.505e-06 | m=0.01 Eg +1.176e-17 T2g +7.850e-16 | m=0.03 Eg -4.604e-06 T2g -1.317e-05 | m=0.1 Eg -5.383e-05 T2g -1.554e-04 | m=0.3 Eg -3.141e-04 T2g -9.631e-04
+   m=0.10 D-weight 0.05: Eg -9.66e-05 T2g -7.44e-04 mu_E +5.93e-03
+   m=0.10 D-weight 0.10: Eg -1.91e-04 T2g -1.44e-03 mu_E +5.42e-03
+   m=0.10 D-weight 0.20: Eg -3.71e-04 T2g -2.68e-03 mu_E +4.26e-03
+   m=0.10 D-weight 0.30: Eg -5.36e-04 T2g -3.70e-03 mu_E +3.10e-03
+   m=0.10 D-weight 0.40: Eg -6.85e-04 T2g -4.50e-03 mu_E +2.04e-03
+   m=0.10 D-weight 0.50: Eg -8.19e-04 T2g -5.08e-03 mu_E +1.15e-03
+   m=0.01 D-weight 0.05: Eg -1.03e-04 T2g -7.81e-04 mu_E +5.79e-03
+   m=0.01 D-weight 0.10: Eg -2.03e-04 T2g -1.50e-03 mu_E +5.31e-03
+   m=0.01 D-weight 0.20: Eg -3.88e-04 T2g -2.77e-03 mu_E +4.19e-03
+   m=0.01 D-weight 0.30: Eg -5.54e-04 T2g -3.80e-03 mu_E +3.04e-03
+   m=0.01 D-weight 0.40: Eg -7.04e-04 T2g -4.59e-03 mu_E +2.00e-03
+   m=0.01 D-weight 0.50: Eg -8.37e-04 T2g -5.17e-03 mu_E +1.12e-03
+runtime 28.3s

@@ -1,0 +1,14 @@
+F2 scan m=0.3 w=0.06: t=0.5:(Eg -9.5e-04,T2g -3.1e-03) t=0.7:(Eg -5.2e-04,T2g -2.6e-03) t=0.8:(Eg -2.3e-04,T2g -1.9e-03) t=0.9:(Eg +8.5e-05,T2g -9.1e-04) t=1.0:(Eg +4.1e-04,T2g +3.9e-04)
+F2 scan m=0.3 w=0.10: t=0.5:(Eg -9.7e-04,T2g -3.1e-03) t=0.7:(Eg -5.5e-04,T2g -2.7e-03) t=0.8:(Eg -2.7e-04,T2g -2.0e-03) t=0.9:(Eg +3.3e-05,T2g -1.1e-03) t=1.0:(Eg +3.5e-04,T2g +1.4e-04)
+F2 zero vertex M m=0.30: t=-1.965648 w=-6.785598 | refined: Eg +2.76e-03 T2g +5.13e-03 (other vertex Eg +2.18e-02 T2g +4.96e-02) mu_E +2.478e-01 v_max 2.209514 max|s'| 2.437911
+F2 zero vertex M m=0.10: t=-1.192292 w=-5.137910 | refined: Eg +1.34e-03 T2g +1.95e-03 (other vertex Eg +3.90e-03 T2g +7.79e-03) mu_E +6.432e-02 v_max 1.859104 max|s'| 1.957176
+F2 zero vertex M m=0.01: t=-1.112316 w=-4.965146 | refined: Eg +1.20e-03 T2g +1.62e-03 (other vertex Eg +3.24e-03 T2g +6.17e-03) mu_E +5.402e-02 v_max 1.882263 max|s'| 1.902336
+F2 zero vertex U m=0.30: t=6.105217 w=11.977878 | refined: Eg +6.28e-02 T2g +4.86e-02 (other vertex Eg +3.10e-03 T2g +3.23e-03) mu_E +9.942e-02 v_max 2.762544 max|s'| 2.767402
+F2 zero vertex U m=0.10: t=-28.868643 w=-73.741694 | refined: Eg +1.13e+03 T2g +2.05e+03 (other vertex Eg +3.37e-02 T2g +5.96e-02) mu_E +7.536e+03 v_max 16.421720 max|s'| 16.421870
+F2 zero vertex U m=0.01: t=-13.166135 w=-35.129855 | refined: Eg +3.34e+01 T2g +6.23e+01 (other vertex Eg +1.66e-02 T2g +3.02e-02) mu_E +2.175e+02 v_max 8.477542 max|s'| 8.477557
+M-zero tuned at m=0.01, evaluated at other m: m=0.003: Eg +1.202e-03 T2g +1.617e-03 m=0.01: Eg +1.202e-03 T2g +1.617e-03 m=0.03: Eg +1.200e-03 T2g +1.615e-03 m=0.1: Eg +1.186e-03 T2g +1.600e-03 m=0.3: Eg +1.102e-03 T2g +1.499e-03
+Gw(1.0,0.05) mu_E m=0.30: -5.490e-04
+F3 zero (M, + shear) m=0.30: t=-5.251337 u=-0.526397 w=-22.529864 resid 1.0e+00 | refined Eg +2.07e-02 T2g +2.54e-02 mu_E +3.34e+00 | U: Eg +3.37e+00 T2g +4.25e+00 | v_max 3.789532
+Gw(1.0,0.05) mu_E m=0.01: -5.767e-04
+F3 zero (M, + shear) m=0.01: t=-4.579476 u=-0.431056 w=-19.864246 resid 1.0e+00 | refined Eg +1.94e-02 T2g +2.35e-02 mu_E +1.96e+00 | U: Eg +2.06e+00 T2g +2.56e+00 | v_max 3.558220
+runtime 71.6s

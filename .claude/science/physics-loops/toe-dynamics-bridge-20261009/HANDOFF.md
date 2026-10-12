@@ -1,6 +1,6 @@
 # Current campaign recovery checkpoint
 
-Actual checkpoint: 2026-10-12T11:20:55.226038+00:00.
+Actual checkpoint: 2026-10-12T11:50:12.848031+00:00.
 Campaign:2026-10-11T16:00:52Z to2026-10-12T16:00:52Z. Never extend.
 At deadline start no new research; preserve/checkpoint/report actual outcomes and
 limits and disable heartbeat toe-derivations-24-hour-campaign. Until then continue
@@ -12,13 +12,13 @@ T=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009
 S=T/resume_20261011 holds immutable sources and evidence.
 Active BW=T/microscopic_boost_worktree, branch physics-loop/toe-microscopic-boost-20261012,
 HEAD358fdf795a5504d4d7fd13344bbbd5df5504ebea, regularPR9488.633massive extension files
-are uncommitted; canonical cache also exists. Base3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe,
+are uncommitted; five earlier published caches have now been repaired locally. No new Git mutation in BW. Base3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe,
 parentPR9486. No supplied-chain worktree yet.
 SW=T/scattering_worktree clean3faf1cf; QW=T/quantitative_boost_worktree clean433f641f24296b6d8e786930bb1327f434015162.
 Primary /Users/jonreilly/Projects/Physics untouched.
 This directory in T/worktree on physics-loop/toe-nonlinear-transport-20261011,
-PR9478, is the SOLE current campaign checkpoint. Previous exact headaf31df4e9ece067194ec8e4c14746da66bdd805e and all
-six files are preserved in history/20261012T112055Z_*.gz. Earlier101222/094415/091240/
+PR9478, is the SOLE current campaign checkpoint. Previous exact heada11f8dd300f16ba7605e5e2af35bea8bea2f4751 and all
+six files are preserved in history/20261012T115012Z_*.gz. Earlier101222/094415/091240/
 083702/075936/072753/070942/062942/052848/033625 histories retain detailed prior
 arguments, failed gates and identities. Frozen milestone packets are evidence,
 not competing campaign checkpoints. Previous1015receipt hashes predated a small
@@ -30,16 +30,16 @@ From W: python3 scripts/automation_lock.py refresh --owner codex-toe-native-2026
 
 ## Current source and ownership identities
 
-Latest network/source refresh10:55:56.319380UTC: S/repo_sync_1105.json and
-repo_sync_1105_open_prs.json, full commands/streams/receipts in repo_sync_1105/.
-origin/main a13caa4885f547c8d206265b031ba7649e539fd9 and origin/ai/execution
-3a4b2c66a1ead7a1c48b4359627e968f681e3c39 unchanged.17PRs open, none closed.
-9475fe9008f80d68fb851b20399241f34c6203ed8281 and9476a2153dbddb720dc595b0037e42277a54d39f643e unchanged.
-9477 now18b7dce754488789eb539d2a6fae3d00d6c37e31. Root fully read its195line
-unequal-dot-caps partner-kernel note for ownership only: no current/H/scattering/
-local-Poincare overlap. No theorem import or runner audit. Saved full source and
-scope receipt in repo_sync_1105/chiral_changed_note.md and chiral_scope_review.json.
-Do not duplicate9475–9477.
+Latest network/source refresh11:44:58.337952UTC: S/repo_sync_1150.json and
+repo_sync_1150_open_prs.json, full captured commands/streams in repo_sync_1150/.
+Main a13caa4885f547c8d206265b031ba7649e539fd9 and instruction revision
+3a4b2c66a1ead7a1c48b4359627e968f681e3c39 unchanged.17openPRs, none closed.
+9476 now269fd8a1273b370825752b2be5f55aabc851ffe5:71added lines preregister a
+separate observations-to-rules campaign. Root read full candidate_law_change.diff;
+these are proposed tests/expected outcomes, not theorem inputs. Its separate later
+deadline does not change THIS campaign deadline. No duplicated empirical necessity
+or substrate-selection work.9475fe9008f80d68fb851b20399241f34c6203ed8281 and
+9477 18b7dce754488789eb539d2a6fae3d00d6c37e31 unchanged; prior ownership reads reused.
 Instruction hashes unchanged; reuse prior full reads. Full saved snapshots are
 repo_sync_1105/instruction_*.stdout with receipt commands. Workflow05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce;
 planningAGENTS3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9.
@@ -67,7 +67,10 @@ All11regular/open/attached/unmerged:
 9488microscopic boost/gap/Fock/closure/integration358fdf795a5504d4d7fd13344bbbd5df5504ebea,parent9486.
 PR URLs are https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/<number>.
 
-PR9488 oldfive-note package is COMPLETE; never rerun merely for later extension.
+PR9488 oldfive-note science remains published, but its final cache freshness claim
+was disproved at11:21. The first massive delivery discovered a real stale-input
+fingerprint. Five justified canonical reruns repaired it; see recovery below.
+Do not erase the old successful/failed runs or rerun merely for later extension.
 S/boost_gap_fock_pr_verified.json binds exact remote head/body;4097files4055own
 evidence72external.5canonicals(49,105,1Fockdriver,73,71finitegates);32whole
 variants28reject4Focksurvive. Graph+5/+8; old nodes unchanged; focusedcompatibility
@@ -104,14 +107,44 @@ Root full typed/raw comparison and bindings recorded in
 massive_carrier_recovery_v2_root_evidence_checked.json8ef440413180800478672d007af2aa0d12858c79611fca7c27b8bf2830d571e6.
 All original load-bearing rows had already been fully read; new full comparisons
 are exact, not a claim that truncated duplicate inventories were manually reviewed.
-Ready but UNEXECUTED finish_massive_carrier_delivery.py436lines
-bd9355ce0e8171a7c2e51ceb5be5065adbacc066e56196c798e0833e2638e7a2;
-freeze433b31f4d335f5ed8b0b3136e82a371248f95cbafde2ced1aba47f28b064a2ce.
-Root must read complete wrapper,93line reconstruct,9metadata previews/diffs,
-contracts and six-note PR body before bounded execution. See
-massive_carrier_delivery_preparation/READY_FOR_ROOT.md. Preserve1307original
-input paths via deduplicated archive without altering old EVIDENCE_MAP/cache inputs.
-Never blindly rerun a wrapper after staging/commit/push; inspect actual action receipts.
+First delivery finish_massive_carrier_delivery.py bd9355ce0e8171a7c2e51ceb5be5065adbacc066e56196c798e0833e2638e7a2
+was fully root-read and executed11:21:55.863047UTC,3.2197325s exit1 with actual600s
+timeout. It failed before worktree/Git/PR mutation on an old boost-cache fingerprint.
+Saved attempt massive_carrier_delivery_preparation/runs/20261012T112155_ca8881f0c066,
+manifest f74c25accadb6d71e0960a04f556ed3c6e053ab3c7371500c6eaaef103d755fc;
+root full streams/receipt massive_carrier_root_delivery_execution/.
+massive_delivery_cache_diagnosis.json proves old published finisher checked cache
+freshness before rewriting its declared EVIDENCE_MAP input. The earlier final
+freshness statement was too broad. Current old-map hash31ffad0a59f2c679751c1b95a5f7e8bde210effa8d9f8bdfd657b2b39a1a7787;
+the preserved prior map exactly reconstructs all five stale fingerprints. No other
+source/input differs from the published base. This is not a new mathematical failure.
+
+Root repair_published_boost_cache_inputs.py277fa896080c6593b61d37bc9d724d7753518f10c405a2cc21cf9a605ff0fcd6
+and149-input freeze a8036ea25bab639ea8ca0cb32feb6b74d69422427e424ca6e0a00144fa146555
+ran11:26:00.930531UTC2.74074679s exit0, actual outer400s and each canonical60s.
+Full INNER saved before inspection; full OUTER saved in
+published_boost_cache_input_repair_root/; all old caches and raw returns retained
+in published_boost_cache_input_repair/. Five actual canonical reruns, no header-only
+rewrite. Boost49, Gapped105, Fock1 assertion driver, Weighted73, Integrated71 passed.
+All mathematical stdout bytes match the originals; four typed dictionaries match
+except two actual clock fields. Fock has no returned dictionary. No formula,
+tolerance, version or diagnostic rewrite; no mutant or massive canonical rerun.
+Five new caches: boost c0d20ecfe56e8b41039f6f2ee6c4aa7a87c92c2c9badb2d3a2a5e09cd65ded8f;
+gapped b034d77d45d1e571fe4677b5994fc9a835152f6161c3eef2ed142607783df543;
+Fock d0dc5c63fa7a8efc7bb1d018eec96caeb83ec40c33f39cc8b24667912052e64e;
+weighted f1767b375c064c88235a7c885f4b1f44d80f049eb0b7cdd300d58a2632849887;
+integrated707f116215610c5bd06d38f2130463df912efa189fb374de3be10a549eecc319.
+Read-only campaign_cache_inventory_1128/inventory.json checked50declared-input
+caches across8campaignworktrees, all fresh after repair; scope is changed primary
+scripts with AUDIT_INPUT_PATHS, not a global claim audit. Massive cache fresh too.
+
+regularity_joint_packaging is preparing UNEXECUTED finish_massive_carrier_delivery_v2.py
+and massive_carrier_delivery_recovery_v2/. Root must fully read final code, changed
+previews/diffs/archive map contracts before execution. It must preserve all failures
+and repair provenance, update precisely five old SOURCE_IDENTITIES cache records,
+keep BOTH EVIDENCE_MAP files unchanged, and check all six caches AFTER all writes.
+Never blindly rerun after Git/push; inspect action receipts. Then clean child for
+the accepted three-note milestone. Root sole publication writer.
 
 ## Accepted supplied-chain milestone, not yet published
 
@@ -161,7 +194,7 @@ CAR vacuum, time-slice and Lorentz source covariance are analytic results.
 Physical time has opposite sign to net coordinate time: tau=-t. No actual lattice
 limit follows from this continuum note alone. No analytic Lean/interval/retained claim.
 
-## Microscopic local boost: author evidence accepted, fresh review active
+## Microscopic local boost: author and fresh review fully accepted
 
 MICROSCOPIC_LOCAL_BOOST_LIMIT_PROBE.md626lines
 70118e0b1f7fd4fa9d041ce837f967abdd0e2f682a854d38885466fd6e4b125d;
@@ -181,38 +214,64 @@ strong convergence on allL2; even polynomial norm limit is local Lorentz action.
 Wrong-origin survives all120weighted bounds, but literal finite-spin controls reject.
 Initial refinement3/20fail3e-7 (max3.570496e-7), preregistered higher resolution
 passes unchanged tolerance (max1.567031e-8). All failures/survivors preserved.
-Fresh microscopic_local_boost_review is active. Preliminary Fourier cell-moment
-comparison detects the missing/reversed origin at first-order even when loose
-D1 survives. Final review/evidence not yet accepted. No exact finite-a Lorentz,
-full scaling net, odd-observable limit, intended3D or interacting claim.
+Fresh MICROSCOPIC_LOCAL_BOOST_LIMIT_REVIEW.md
+b7d7c139798f7fed6b595c9ea78493f00d206ec4e5bdc13af8a6c6ad313a8884;
+receipt1ffe710378bdc2ac2061aa209d7c405b4f58b07433b0d7ad49a0851fafe60c73;
+manifest7826f7e32389d016fc2c21cfb9a14a28aad6360e91ca85527dbde84846a777a6,73bindings.
+Root read full reconstruction, final review and helpers,60independent Fourier rows,
+15symbolic residuals,11exact rational norms, monodromy and40vector comparisons.
+Independent L1=iT partial+(i/2)T'-D with T=mq/2 sigmax-vq²/2 sigmay detects wrong
+origin/cell phase although D1 survives. Reversed origin survives spectral relabeling.
+Reviewer original historical515line-hash mismatch and corrected inspector preserved.
+Root new60s bound source check11:42:40.521716UTC0.165939s0 verifies73review+344author
+bindings and all4reviewattempts: root_source_checks_1148/. No science rerun.
+Microscopic_local_boost_root_review_coverage.json31b008ce80487464da127548ad2996c51ce7f98e0533c180fdd60aa2c394c89a,
+pending[]. No target mathematical amendment; revised parent gauge limits applied.
+No exact finite-a Lorentz, full scaling net, odd field, unit-ball,3D or interacting claim.
 
 ## Active next derivations and agents
 
-local_even_continuum authors MIXED_LOCAL_POINCARE_CORRELATIONS_PROBE.md and its
-mixed_local_poincare_correlations/ evidence. Root candidate
-ROOT_MIXED_POINCARE_CORRELATION_ROUTE.md182lines027269df4b50ca3e35db7a19d005c4a5114d18a30f24abb7f77421a618e1a255
-is coauthor input, not checked result. Finite-word products use Ca j=I exactly,
-compact-orbit strong convergence and telescope estimates. Floor-rounded lattice
-translations are NOT a homomorphism. K_a+=jPa+Ca is a projection on allK, zero on
-cell-space complement, but K_a+ + C K_a+ C = Q_a rather than I. Actual chosen-state
-Pfaffians required, no replacement vacuum. Uniform finite-polynomial limits only.
+MIXED_LOCAL_POINCARE_CORRELATIONS_PROBE.md514lines
+8c3a308b57a2e53d117a7c76046b4995c3a2ffc150e31cb142a90bd926796418;
+receipt6088b125ea7050dde918c289e514e793ba4436d0976bf8bb62eeda7b30efeb5f;
+manifest0c28ee72312fb1eb843aa933dbbb1a357db8205af12416113454a465b8aa1e5f,261files.
+Frozen410line proof e6abc7aa1c3d8162654a12b784d3ba38d0b630f285f05be1fdb2b00ba6f62a2d
+unchanged; only outcomeappendix appended. Root fullproof/all17helper/all444baseline
+and124changedmutantrows, fullcomplexcovariances atbothresolutions read;438duplicate
+rows equality-linked.20processes12science3integrity;1006rows,102mutantfailures.
+No baseline/refinement failure; largest coarse/fine1.035626626e-8<8e-7 is diagnostic.
+Norm-only controls survive; finite-a Lorentz and floor inverse one-cell defects kept.
+Root Mixed_local_poincare_root_author_review_coverage.json
+63573bb9028f96bc18eb9b3e6db032d6431b909220dcfaf26a73cae5d14b3426.
+Q15 ZsOtZ-s=T(-vt sinhvs)O(tcoshvs), Q16 ZsT(l)Z-s=T(lcoshvs)O(-(l/v)sinhvs).
+Compact finite words use Ca j=I; actual state S_a=jPaCa zero onQperp, S+GammaS Gamma=Q,
+notI. Complex ordered Wick/Pfaffian moments require allimaginaryparts. Fixed-polynomial
+norm convergence and chosen-state correlations, not a full intrinsic spin scaling net.
+Fresh mixed_local_poincare_review active; independent plan frozen11:44:11UTC
+62b9f093ed47363d9239a0fa1c52fff00f34e96b6a0bbf7a420e657991289a29 before author controls.
 
-current_mass_filter newly assigned bounded author task in CURRENT_MASS_FILTER_PROBE.md
-and current_mass_filter/. ROOT_CURRENT_MASS_FILTER_ROUTE.md129lines
-f58e3483243e6382183e61d8b71c6fbed22befc98aac4c8090fd636ecfdb500f is only a proposal.
-Actual normalized current Pi=dGamma(sin(aq)/a); joint C=H²-v²Pi² has proposed
-threshold n²m². Shrinking spectral window may isolate one-particle sector strongly.
-Finite-a [B,C]=2iv²Pi(H-T) is nonzero; even-observable vacuum vectors have zero
-one-particle component. These walls must not be hidden. Smooth almost-local joint
-filter is a further proof obligation, not a consequence of a sharp projection.
+CURRENT_MASS_FILTER_PROBE.md analytic frozen4916b1ead5abcc222cd55a1b82e249ca30642ec20639e2237c9fb1fd1b2526d1
+root fully read; current_mass_filter agent sealing author evidence. Actual Pi=dGamma(sin aq/a),
+joint C=H²-v²Pi² >=m²N², maximalfixeda DomC=DomN². Window[m²,m²+delta],delta<3m²,
+selectsoneparticle; strongP1 iffdelta/a² diverges. Exact4m² two-particle endpoint is
+null, strictlylargerwindowleaks. Sharpfilter violatesboostdomain; boundedgroup
+commutatorstronglyzero and exactlyzero eventuallyoncompactpackets. Finitea Cnoncentral
+and operatornormcommutator=1. SmoothF_delta,Lambda has actualenergy/currentspin
+smearing, rapidalmostlocality withnonuniformFouriermoments, denseoddseedcolumns.
+Evenseeds remainzerooneparticle; nolocalnet conclusion. Agent reports firstbaseline
+float64rootreference failures preserved;70digitkernelreference refinement retains
+tolerances and analyticcandidate. Root has not yet read finalcontrolpacket.
 
-regularity_joint_packaging completed the unexecuted massive delivery preparation;
-available after root execution for the accepted three-note milestone.
-Active agents: root, microscopic_local_boost_review, local_even_continuum,
-current_mass_filter. No live terminal session at checkpoint writing.
-Next: massive delivery; clean dependent three-note milestone; microscopic review;
-mixed composition and current-mass-filter independent checks when ready. Continue
-useful science to16:00:52UTC. No editable prompt files changed.
+Root next possible derivation: explicit conditional expectations from continuum
+evenCAR tocellsubspaces, asymptoticallymultiplicative local comparison maps and a
+constructed sectionalgebra quotient. This is only a proposed route, not a theorem
+or an intrinsicfullspin scaling-limit claim. Must handle complement covariance and
+all-local-algebra density, state convergence and actualmixedflows carefully.
+
+Active root, regularity_joint_packaging, mixed_local_poincare_review,current_mass_filter.
+Microscopic reviewer and mixedauthor completed. No live terminal atcheckpoint.
+Next publication recovery, three-note milestone, mixed/current checks and local-map
+route. Continue science until16:00:52UTC; no editable prompt files changed.
 
 ## Accepted source identity inventory
 

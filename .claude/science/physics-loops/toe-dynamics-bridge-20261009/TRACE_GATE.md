@@ -13,7 +13,7 @@ next_trace_action: "Check actual local boost/Poincare composition and current-ba
 Conditional transport, current and boost milestones are published. Concrete chosen
 chain, all-particle free scattering, scalar continuum and even local continuum have
 completed source-bound checks. Corrected continuum local boost is checked. The
-actual lattice local boost remains under fresh review. Mixed words and current-mass
-filter are candidate derivations. None select the intended3D or interacting physics.
+actual lattice local boost is now independently checked. Mixed words have fully
+read author evidence under fresh review; current-mass filtering has a frozen candidate. None select the intended3D or interacting physics.
 The exact finite-a Lorentz failure and parity restrictions remain explicit.
 Full identities, failures, gauge correction and recovery paths are in HANDOFF.

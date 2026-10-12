@@ -262,3 +262,14 @@ counterexample preserved, final review/root evidence accepted. Microscopic boost
 author proof/evidence fully root-read; fresh review active. Mixed finite-Poincare
 and actual-current mass-filter work active. Source refresh1105 and complete new
 9477ownership note read show no overlap. No retained/audit/analytic Lean/prompt change.
+
+
+## Checkpoint 2026-10-12T11:50:12.848031+00:00
+
+Real previously published cache-input error discovered and preserved; five canonical
+reruns repair only stale fingerprints with identical mathematical outputs. Final
+v2 delivery pending. Microscopic local boost fresh review fully root accepted.
+Mixed-word author proof and568unique result rows fully read; fresh review active.
+Current-mass-filter frozen proof read; control evidence sealing. Source refresh
+1150 and complete9476preregistration diff read; no new science imported. Deadline
+unchanged. No retained/audit/analyticLean/axiom/prompt or main change.

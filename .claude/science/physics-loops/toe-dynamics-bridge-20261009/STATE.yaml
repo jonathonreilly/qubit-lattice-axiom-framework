@@ -23,24 +23,24 @@ milestone: Eleven regular PRs open; PR9488 publishes five reviewed boost/gap/clo
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
-independent_checks: Concrete chain, massive carrier, scattering, scalar continuum, local even continuum and revised
-  continuum local boost fully root-read with separate-context checks. Microscopic weighted boost author evidence
-  fully root-read; fresh review active.
+independent_checks: Microscopic local boost now root accepted with fresh separate-context Fourier/monodromy review.
+  Mixed-word author proof/evidence fully root-read; fresh mixed review active. Actual-current mass-filter analytic
+  candidate fully root-read, author sealing.
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_open
-active_pr_status: 'Regular PR9488 remains at358fdf795a5504d4d7fd13344bbbd5df5504ebea. Massive extension verified:
-  original canonical reused, eight whole variants rejected, graph and scoped gates completed. Delivery wrapper ready
-  but unexecuted.'
+active_pr_status: PR9488 at358fdf795a5504d4d7fd13344bbbd5df5504ebea. First massive delivery failed on a real previously
+  published five-cache freshness bug. Five canonical caches now regenerated with identical mathematical outputs;
+  metadata repair and deliveryv2 preparation pending root read/execution.
 active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9488
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
 lock_refresh_before_utc: '2026-10-12T12:20:00Z'
-next_action: Read and execute massive delivery wrapper, verify9488 extension, create clean dependent supplied-chain
-  milestone. Integrate microscopic fresh review and mixed composition author evidence. Continue current-mass-filter
-  derivation; stop new research at fixed deadline.
+next_action: Read/execute massive deliveryv2 preserving failed cache check and five real reruns; then clean supplied-chain
+  milestone. Finish mixed review and current-mass-filter independent check. Investigate explicit local-algebra comparison
+  using conditional expectations. Fixed deadline unchanged.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -49,7 +49,7 @@ current_memory_published_science_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20
 quantitative_memory_parent_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20252
 quantitative_memory_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9482
 quantitative_memory_published_science_revision: ba74c93aab9185d62a9711695dc931446f67c8ba
-latest_candidate_law_revision: a2153dbddb720dc595b0037e42277a54d39f643e
+latest_candidate_law_revision: 269fd8a1273b370825752b2be5f55aabc851ffe5
 boost_parent_revision: b9b032ae790c66e762a6296a1306bfb64ae7cd70
 rigidity_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9483
 rigidity_published_science_revision: aeee46fa0e2879038eec1b8ee8a1e173ac77518e

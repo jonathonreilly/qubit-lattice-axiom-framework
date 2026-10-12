@@ -4915,3 +4915,9 @@ Readings:
     - a w = −1 vacuum (the grid zero-point would kill it).
 
   Referee running.
+- **R14-3 (subluminal edges):** worker reading REFUTED.
+  - **(a) fails.** A subluminal flattened-edge band cancels μ_E at one edge-shape tuning w*, which serves all light species.
+  - **(b) holds on 𝒰₀** (Theorem B: Ξ < 0 for laws without gapped valleys) **and fails outside it.** Laws W08 and W14 give Ξ_Eg > 0. T2g ≥ 0 was not found.
+  - A superluminal edge buys nothing a subluminal one can't.
+
+  Referee running.

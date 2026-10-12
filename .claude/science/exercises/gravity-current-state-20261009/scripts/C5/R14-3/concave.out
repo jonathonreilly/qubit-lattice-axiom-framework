@@ -1,0 +1,7 @@
+b=0.4: min mu_E over 30 concave edges x m in {0.1,1}: -2.3968e-04 at m=0.1 c=[0.982 0.094 0.065 0.048 0.039 0.008 0.006 0.004]
+b=0.6: min mu_E over 30 concave edges x m in {0.1,1}: -1.8925e-04 at m=0.1 c=[0.044 0.005 0.001]
+b=1.0: min mu_E over 30 concave edges x m in {0.1,1}: -2.8420e-04 at m=0.1 c=[0.047 0.005 0.001 0.   ]
+b=1.4: min mu_E over 30 concave edges x m in {0.1,1}: +2.3595e-04 at m=1.0 c=[0.425 0.151 0.086 0.021 0.015 0.004 0.   ]
+b=2.0: min mu_E over 30 concave edges x m in {0.1,1}: +1.7338e-03 at m=1.0 c=[0.308 0.205 0.046 0.046 0.026 0.001 0.001 0.   ]
+b=2.6: min mu_E over 30 concave edges x m in {0.1,1}: +6.7257e-03 at m=1.0 c=[0.209 0.082 0.057 0.044]
+runtime 13.2s

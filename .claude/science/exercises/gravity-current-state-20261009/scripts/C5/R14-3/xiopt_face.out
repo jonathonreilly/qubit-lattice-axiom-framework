@@ -1,0 +1,6 @@
+b=1.0 M,Eg   face-gapped: random -5.5420e-04 -> NM -2.0719e-04 (fine -2.07188e-04) | sigma_edge [1.0000, 1.524], #edge local minima of g = 2, v_max(m=0.1)=0.9992 c=[ 0.933 -1.     0.905  1.    -1.    -0.456 -1.     0.997] (14s)
+b=1.0 U,Eg   face-gapped: random -1.9338e-04 -> NM -1.1494e-04 (fine -1.14939e-04) | sigma_edge [1.0000, 1.770], #edge local minima of g = 2, v_max(m=0.1)=0.9984 c=[ 0.613  0.558  0.525 -0.49   0.561  0.072  0.46   0.435] (29s)
+b=1.0 M,T2g  face-gapped: random -2.0164e-03 -> NM -7.9965e-04 (fine -7.99650e-04) | sigma_edge [1.0000, 3.023], #edge local minima of g = 0, v_max(m=0.1)=0.9998 c=[1. 1. 1. 1. 1. 1. 1. 1.] (45s)
+b=1.4 M,Eg   face-gapped: random -6.8674e-04 -> NM -3.3699e-04 (fine -3.36995e-04) | sigma_edge [1.4000, 2.271], #edge local minima of g = 2, v_max(m=0.1)=0.9997 c=[ 1. -1.  1.  1.  1. -1.  1.  1.] (60s)
+b=1.4 U,Eg   face-gapped: random -1.9067e-04 -> NM -1.5972e-04 (fine -1.59717e-04) | sigma_edge [1.4000, 2.151], #edge local minima of g = 2, v_max(m=0.1)=0.9992 c=[ 0.621  0.603  0.591  0.537  0.078  0.504  0.463 -0.056] (75s)
+b=1.4 M,T2g  face-gapped: random -1.8208e-03 -> NM -8.8742e-04 (fine -8.87418e-04) | sigma_edge [1.4000, 2.051], #edge local minima of g = 1, v_max(m=0.1)=0.9996 c=[ 1.     1.     1.    -1.    -1.    -1.    -0.604  1.   ] (88s)

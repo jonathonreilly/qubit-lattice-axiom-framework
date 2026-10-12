@@ -5445,3 +5445,32 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
     - the TT one-loop matter part is gauge-parameter-free;
     - the matter pole is unprotected;
     - R13-5's numbers stay W1- and prescription-scoped.
+
+### C5 Round 16, item 10 (pre-registered 23:24Z, before launch)
+
+**R16-10. Close R16-2: prove F_s(0⁺) ≠ 0 class-wide, and the λ → 0 limit, so the tuning count becomes a theorem.**
+- **Plain question.** R16-2 (refereed OPEN) gives 7 per species or 3 per charge class, but only if the light-mass speed shift per unit charge², F_s(0⁺), is nonzero on every allowed edge. The referee also asks for:
+  - uniform mass control;
+  - the physical λ → 0 bound;
+  - convention-independent minimality;
+  - and notes that κ_γ is replaceable.
+
+  Can these be proved?
+- **Setting.** R16-2's stated class:
+  - non-rising matter symbols (S ≤ q for Dirac, u′/2 ≤ q for scalars);
+  - nondecreasing photon symbol;
+  - D1, literal and G(b) families plus their admissible deformations;
+  - one loop, Peierls coupling, Feynman gauge.
+
+  The counterterm conventions are fixed as in the R16-2 verdict.
+- **Prior art (count once):** R16-2 and its verdict (Lemmas Q and T′; the leftover is ≤ 0.27 of the bound for Dirac and ≤ 0.73 for scalars), R13-7's Theorem Sgn, R16-1's Theorem W/K, R10-1.
+- **Probes.**
+  - (a) Bound the non-tadpole leftover by proof, so that F_s(0⁺) < 0 on the class, or find a law in the class with F_s(0⁺) = 0.
+  - (b) λ → 0: prove that the limit exists uniformly, or exhibit a log.
+  - (c) State minimality in a convention-independent form: a tuning is any continuous parameter of the law or counterterms.
+  - (d) The literal-corner accounting.
+- **FIXED readings.**
+  - **COUNTED:** a refereed proof that F_s(0⁺) ≠ 0 on the class and that the count is minimal, with the n_t stated.
+  - **REFUTED-ZERO:** an explicit law in the class with F_s(0⁺) = 0, checked.
+  - **OPEN:** otherwise.
+- **Expectation.** COUNTED for scalars (simpler), OPEN for Dirac.

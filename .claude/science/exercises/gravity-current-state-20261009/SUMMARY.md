@@ -673,3 +673,42 @@ None of them yet produces the graviton or explains Λ. Round 2 tests what decide
   Both pass the stated observations. Both carry the same unresolved near-cone energy budget.
 
 **Set B with box symbols** loses reflection positivity (R10-2).
+
+## 26. Campaign C5, rounds 13–15: subclass walls, a causal repair, and a FAIL for the global clock (2026-10-12)
+
+**In plain words.** Referee-checked unless marked; S17 is the synthesis at `agents/C5_S17_synthesis.md`.
+
+**The electron–photon split: every named route stopped, each in its own subclass.**
+- **Literal-edge class (R13-7).** The split cannot vanish over any range of masses. That edge is already excluded by the Z width, though.
+- **Exact lattice SUSY (R13-1).** It cannot hold in the class with C¹ one-body band momentum.
+- **The doubler-free photon multiplet (R13-4).** It needs a physical 1/r interaction.
+- **Still open:** Wilson edges, and dressed or infinite-flavour momentum.
+- **Cheapest price: one tuned number.** "One is enough for all light particles" is a worker reading. R16-2 tests it.
+
+**The graviton is still not produced.** Three more families are closed:
+- plain six-pair tensors (R13-2);
+- the same with position–momentum mixing (R14-4);
+- extra hidden fields: two graviton modes force at least four massless modes (R15-3).
+
+What is left:
+- discontinuous or non-local rules;
+- exact constraints with indefinite energy;
+- strongly coupled phases.
+
+At strong coupling (R15-5, worker), real-valued fields give exactly the two modes, but qubits give energy growing like k³ at every finite order. The deciding computation is non-perturbative and has not been done.
+
+**The box laws used before moved faster than light at the grid scale (R13-4).** A slower-than-light box keeps every matter result (R14-1). On such an edge, one shape choice cancels the shear term per mass, or to O((ma)²) for a common setting (R14-3).
+
+**Set A, gravity's random kicks.**
+- **The start-time route.** Its literal kernel drags the double pulsar and is excluded by at least 11 orders of magnitude (R13-6). A signed kernel repairs it.
+- **The leak route.** It drags too. That limits the leak to a few per cent of the Hubble rate (R14-2).
+- **Both are OPEN, and they tie.**
+- **Spin-2 version of the start-time route (R15-2): OPEN.** The start time matters only for the graviton waves. The large energy overshoot found there counts only if non-radiating noise also gravitates, which is unproven.
+
+**Λ.**
+- **The CMC mechanism (R14-5).** The only smooth way to soak up vacuum changes with these readers is to make lattice time a global CMC time.
+- **It signals faster than light (R15-1: FAIL).** Whenever it is active, a local push changes the density everywhere at once. The referee ruled that a global time ordering does not save it.
+- **The readers (R15-4, R15-6, workers).**
+  - A regular reader does handle phase transitions and lumps.
+  - No positive linear reader tracks DESI's phantom-like dark energy.
+  - Only a nonlinear running-minimum reader keeps the clock's variable safe in sign, and only in a simplified class of histories.

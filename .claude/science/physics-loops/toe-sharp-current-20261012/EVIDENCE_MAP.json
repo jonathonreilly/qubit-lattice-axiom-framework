@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "meaning": "Complete author source archive; identity only, no scientific controls or review acceptance.",
+  "original_manifest_sha256": "d704de97de804fa72b4968c1f8bab0197f5b2df3bdadc2d2204f67d2c3565433",
+  "files": [
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/CHECKPOINT.md",
+      "path": "author/sharp_current_refinement/CHECKPOINT.md.gz",
+      "sha256": "2d4704cbc04e415f2ffb1c7b428c7ed678e30286752a1d85c0cbf349e16a8bdf",
+      "bytes": 2505,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "fe077daffe185ada85048ae5c45ddd92a05e842d3fb84a893b1e064afca5d557",
+      "stored_bytes": 1458
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/NO_GO_LEDGER.md",
+      "path": "author/sharp_current_refinement/NO_GO_LEDGER.md.gz",
+      "sha256": "a9715b827563553434fa1cb11475cda04d682e2f1c7fa556c83058d3a7e8ef5d",
+      "bytes": 1659,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "f2c07be0c1c8f140f5e79cf3ceb9608a58591f4639702f9eeab6882598cdeac9",
+      "stored_bytes": 894
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/PLAN.md",
+      "path": "author/sharp_current_refinement/PLAN.md.gz",
+      "sha256": "da4aa0f76fc4e2beba0968e89abd1874f4167520f2bc1f30499fc0de91208b77",
+      "bytes": 2256,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "6246e022a2869ff63bdd04c01d89592fa9e2928333bd369e7b4b375060f62744",
+      "stored_bytes": 1230
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/PLAN_CHRONOLOGY_CLARIFICATION.md",
+      "path": "author/sharp_current_refinement/PLAN_CHRONOLOGY_CLARIFICATION.md.gz",
+      "sha256": "e2c9c02cf7416ac17e3b6ab6d47ba80abf31ea0be37793bf19c0a2110bc6779b",
+      "bytes": 858,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "10b5e8f1fd2d8277440ce1adcd07f33d3632824bd2bc71d031513734e0dd136d",
+      "stored_bytes": 504
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/PROOF_MAP.md",
+      "path": "author/sharp_current_refinement/PROOF_MAP.md.gz",
+      "sha256": "c62d5427256d74713fae7d8f22687213fcc655fafc9048aadb84014da55b700b",
+      "bytes": 2176,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "590929b3d573f024e2fdfc247cd35a901deb7965ee2228ce32736740f34f3556",
+      "stored_bytes": 1207
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/README.md",
+      "path": "author/sharp_current_refinement/README.md.gz",
+      "sha256": "ac1aaf00be9c9c5cbe5e7185b02f6c32f80b973a54201e416e0e3eab80734fe1",
+      "bytes": 2772,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "df40a9491f02de9617cf8f7ea952e77c9e49efaecf310c2aea73c450ae032aec",
+      "stored_bytes": 1530
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/analytic_freeze.json",
+      "path": "author/sharp_current_refinement/analytic_freeze.json.gz",
+      "sha256": "e8de60f70d21d590fcfc89f56d5c412a157c11c94390a6612fa61951e50d5bbe",
+      "bytes": 893,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "549e51252179c3d91917a79dded4c2a990f4ba6af4f635dad843cdaa3b7145d3",
+      "stored_bytes": 538
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/cross_cycle_search.json",
+      "path": "author/sharp_current_refinement/cross_cycle_search.json.gz",
+      "sha256": "38fea3a7fcf479c7af82c34a5b8e370d00fee441b90277e2274ae127ce512aba",
+      "bytes": 1011,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "668033da260cc4c629d3ca07894d0a5422ce0fe58d126ad9b7c558e79785a691",
+      "stored_bytes": 520
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/cross_cycle_search.stderr.txt",
+      "path": "author/sharp_current_refinement/cross_cycle_search.stderr.txt.gz",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_bytes": 20
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/cross_cycle_search.stdout.txt",
+      "path": "author/sharp_current_refinement/cross_cycle_search.stdout.txt.gz",
+      "sha256": "6a2231c80590cce69c070027f0b500e9522fd1227c17b69a7f86c7e9f596f546",
+      "bytes": 10751,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "8f2858dbcc6b6eeb91a80486da165bd4f61f1aedd64c0aefe49e5fb7aed6d536",
+      "stored_bytes": 2081
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/frozen/PLAN.md",
+      "path": "author/sharp_current_refinement/frozen/PLAN.md.gz",
+      "sha256": "da4aa0f76fc4e2beba0968e89abd1874f4167520f2bc1f30499fc0de91208b77",
+      "bytes": 2256,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "6246e022a2869ff63bdd04c01d89592fa9e2928333bd369e7b4b375060f62744",
+      "stored_bytes": 1230
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/frozen/SHARP_CURRENT_REFINEMENT_PROBE.md",
+      "path": "author/sharp_current_refinement/frozen/SHARP_CURRENT_REFINEMENT_PROBE.md.gz",
+      "sha256": "2a6948ab1d98584ac77b3486f8ec1927d88fbb55cd0276123b6c24750f9d6a42",
+      "bytes": 22502,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "8e3455a8c338ee03bf9563ee89f493979955dbc84e26f13042d1b956cd03c0cd",
+      "stored_bytes": 9517
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/hidden_premise_scan.json",
+      "path": "author/sharp_current_refinement/hidden_premise_scan.json.gz",
+      "sha256": "527142834d6ec66de7f3fc2e3dbfd5e5ad3e0510c71e390cdb6bb1a914224f55",
+      "bytes": 509,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "522e4f91530880bd43b61c4883301284a50dfec775b5654179eaadb5ab225818",
+      "stored_bytes": 344
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/hidden_premise_scan_final.json",
+      "path": "author/sharp_current_refinement/hidden_premise_scan_final.json.gz",
+      "sha256": "e3fc991f20808c24e6c1b9402adb230df1153c65eaea0f4884d042eca943159b",
+      "bytes": 506,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "bd8721e109e7e0d307361848642de4f3cf0830d88f2dc2ec2b3be0227dc5c9ee",
+      "stored_bytes": 347
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/instruction_refresh.json",
+      "path": "author/sharp_current_refinement/instruction_refresh.json.gz",
+      "sha256": "34cc9e3af493dbd5a52ffb173534b8acf46c2ada7d0decd75eb269544ff727a7",
+      "bytes": 2841,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "a7bacb8601fd14693259d3403ad23820702ad3fbc4043a8a162e64b8806255ee",
+      "stored_bytes": 712
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/instructions/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "path": "author/sharp_current_refinement/instructions/docs/ai_methodology/SCIENCE_WORKFLOW.md.gz",
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce",
+      "bytes": 15435,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "stored_bytes": 6353
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/instructions/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "path": "author/sharp_current_refinement/instructions/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md.gz",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "bytes": 2180,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "stored_bytes": 1138
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/instructions/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md",
+      "path": "author/sharp_current_refinement/instructions/docs/ai_methodology/skills/ai-physics-lane-builder/SKILL.md.gz",
+      "sha256": "ca2f2325ba990d868adef13bf2cea72d96b1a4b99bd07e84c32fa057a2c922f9",
+      "bytes": 3253,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "634119820fdadf1a90a26044dc18d81cb4a042d4c1d3ace92d2ea8a14e7f19ca",
+      "stored_bytes": 1661
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/instructions/docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "path": "author/sharp_current_refinement/instructions/docs/ai_methodology/skills/no-go-discipline/SKILL.md.gz",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "f26b3cfafcae3c6f473ead22c3abfd6ef3df6e2d90b6f9ce439f3da29bab1934",
+      "stored_bytes": 6897
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/instructions/docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "path": "author/sharp_current_refinement/instructions/docs/ai_methodology/skills/physics-loop/SKILL.md.gz",
+      "sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4",
+      "bytes": 9276,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "08d2e6462c285a4df9bf676ae0bfb42d1366b76da56274aad1ad93978ecfbf6d",
+      "stored_bytes": 4064
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/instructions/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "path": "author/sharp_current_refinement/instructions/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md.gz",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "stored_bytes": 2265
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/parent_final_refresh.json",
+      "path": "author/sharp_current_refinement/parent_final_refresh.json.gz",
+      "sha256": "4356f63bab7ffdafbd5b5b66bcda5e1292513fbdd955eb9176207c66ea1da5c1",
+      "bytes": 2622,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "45eabdcdeeba29b2162da2fedc78c801a6b0ccd9bf3dcf4e5a644af1b9c1788c",
+      "stored_bytes": 659
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/plan_freeze.json",
+      "path": "author/sharp_current_refinement/plan_freeze.json.gz",
+      "sha256": "7bd9507289c77568f869ad28ae808c4ffd9f3a62655a927f883336a4fa4150a1",
+      "bytes": 273,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "54201b2ae88ccf400a35af9c7d7a4925339741739ad6aa2523545f6bbfd0126e",
+      "stored_bytes": 228
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/source_inventory.json",
+      "path": "author/sharp_current_refinement/source_inventory.json.gz",
+      "sha256": "420534f7eb6434f236d71d4ee488cc05d374f186504dbf0491b3de5f500d3b58",
+      "bytes": 3502,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "d060762973f64b8ab3e22350b6a39f7dd4754364f5bd1703c7aef458b94ce674",
+      "stored_bytes": 1176
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/sources/CONCRETE_GAPPED_CHAIN_PROBE.md",
+      "path": "author/sharp_current_refinement/sources/CONCRETE_GAPPED_CHAIN_PROBE.md.gz",
+      "sha256": "0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd",
+      "bytes": 47990,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "bf0aee512f04e3a908f7c9daf07348b20667d35c2493d98cc87c61598fe7a2c6",
+      "stored_bytes": 19687
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/sources/DYADIC_EVEN_REFINEMENT_PROBE.md",
+      "path": "author/sharp_current_refinement/sources/DYADIC_EVEN_REFINEMENT_PROBE.md.gz",
+      "sha256": "646ad05eb2f3ba02b6410e4043a4f258ca84ea2c15b92a4ca7d0ab25e05ecc9c",
+      "bytes": 39616,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "2911ca83b18cc004306f2c56c07a9272aa105382dbdd79e08dc92844ce2cfd98",
+      "stored_bytes": 16517
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/sources/ENERGY_ADAPTED_REFINEMENT_PROBE.md",
+      "path": "author/sharp_current_refinement/sources/ENERGY_ADAPTED_REFINEMENT_PROBE.md.gz",
+      "sha256": "65d49c82eb14b88e4880983eb8b41ecb5141cb0ff00f4e5e4760bbb12a151b9d",
+      "bytes": 27246,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "a9929b61481ab620139f243cb3aa20d5a835e95f89cf2d0455def5ed35047e3e",
+      "stored_bytes": 11637
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/sources/LOCAL_EVEN_CONTINUUM_PROBE.md",
+      "path": "author/sharp_current_refinement/sources/LOCAL_EVEN_CONTINUUM_PROBE.md.gz",
+      "sha256": "7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b",
+      "bytes": 32508,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "d867d8c8bec4ba8a4cc43a2185ff8e5cc9d19207a7c800191231ec109a4a6f16",
+      "stored_bytes": 14001
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/sources/SHARP_CURRENT_REFINEMENT_ROUTE_BRIEF.md",
+      "path": "author/sharp_current_refinement/sources/SHARP_CURRENT_REFINEMENT_ROUTE_BRIEF.md.gz",
+      "sha256": "fb84cccede9bda9ab9c13c0910529836a3bba255b37579e54f4d0de347976362",
+      "bytes": 4522,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "0a82c59cde8fc6ba4e25718e156fcbc1d82009e9c269ab66e3ef6f8d78c08062",
+      "stored_bytes": 2437
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/sources/STATE_ADAPTED_REFINEMENT_PROBE.md",
+      "path": "author/sharp_current_refinement/sources/STATE_ADAPTED_REFINEMENT_PROBE.md.gz",
+      "sha256": "459868fcd7f80fa3063c9e7f7a6d62df393eb80f2edc72b221ecda533ba2a971",
+      "bytes": 30981,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "08105669a0a7509833f46d8a90f99c64159140096a6c1cecf3a0d1681cf472c6",
+      "stored_bytes": 12993
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/SHARP_CURRENT_REFINEMENT_PROBE.md",
+      "path": "author/SHARP_CURRENT_REFINEMENT_PROBE.md.gz",
+      "sha256": "2a6948ab1d98584ac77b3486f8ec1927d88fbb55cd0276123b6c24750f9d6a42",
+      "bytes": 22502,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "8e3455a8c338ee03bf9563ee89f493979955dbc84e26f13042d1b956cd03c0cd",
+      "stored_bytes": 9517
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/final_manifest.json",
+      "path": "author/sharp_current_refinement/final_manifest.json.gz",
+      "sha256": "d704de97de804fa72b4968c1f8bab0197f5b2df3bdadc2d2204f67d2c3565433",
+      "bytes": 6889,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "82a34751083707d65dfc985129825ad76fbb963ae9c4fa8c575661c513aaa0df",
+      "stored_bytes": 1971
+    },
+    {
+      "original_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/sharp_current_refinement/final_receipt.json",
+      "path": "author/sharp_current_refinement/final_receipt.json.gz",
+      "sha256": "2c40e2bb35b270fcbf282fbf06cfa7c65e2f115268880a75622e5fbaa6bbb6cc",
+      "bytes": 935,
+      "role": "unchanged_author_chronology_or_source",
+      "encoding": "gzip",
+      "stored_sha256": "2cef1abcd348f5e75d7172b3db7f864c36bb1582598ca07d5e7030b7ceaaa55a",
+      "stored_bytes": 610
+    }
+  ]
+}

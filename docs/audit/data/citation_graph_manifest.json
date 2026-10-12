@@ -1,6 +1,6 @@
 {
- "edge_count": 15523,
- "node_count": 6930,
+ "edge_count": 15555,
+ "node_count": 6939,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3822,6 +3822,10 @@
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },
+  "continuum_local_boost_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "2de4b8c80c7d",
+   "out_degree": 2
+  },
   "conventions_unification_companion_note_2026-05-08": {
    "deps_hash": "9b75d87686a6",
    "out_degree": 6
@@ -5542,6 +5546,10 @@
    "deps_hash": "7cfaf5ef38ff",
    "out_degree": 7
   },
+  "dyadic_even_refinement_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "c6cb357c79e6",
+   "out_degree": 5
+  },
   "dynamics_axiom_minimal_nontriviality_branch_proposal_2026-06-29": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -5749,6 +5757,10 @@
   "endpoint_localization_three_route_discriminator_cycle705_note_2026-07-26": {
    "deps_hash": "4a2a6080dd99",
    "out_degree": 4
+  },
+  "energy_adapted_refinement_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "dc64b7472c92",
+   "out_degree": 6
   },
   "energy_covariant_rg_collapse_shifted_coupling_bounded_theorem_note_2026-06-12": {
    "deps_hash": "e3b0c44298fc",
@@ -13786,6 +13798,14 @@
    "deps_hash": "666e0b9cf11e",
    "out_degree": 4
   },
+  "local_even_continuum_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "71b211f9b79a",
+   "out_degree": 1
+  },
+  "local_even_net_sections_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "af5c81f655f0",
+   "out_degree": 4
+  },
   "local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14": {
    "deps_hash": "8ec463c38283",
    "out_degree": 1
@@ -14154,6 +14174,10 @@
    "deps_hash": "7000a4119650",
    "out_degree": 1
   },
+  "microscopic_local_boost_limit_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "32e1818b61dc",
+   "out_degree": 2
+  },
   "microscopic_transmon_transfer_open_gate_note_2026-09-27": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -14237,6 +14261,10 @@
   "mixed_entangled_os_transfer_representation_bounded_note_2026-05-30": {
    "deps_hash": "e45ff6568ef9",
    "out_degree": 1
+  },
+  "mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "72524b63a239",
+   "out_degree": 4
   },
   "mixed_low_field_inputs_retain_cube_birth_energy_and_coherence_bounds_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c2f4758c16c9",
@@ -18766,6 +18794,10 @@
    "deps_hash": "5ff287580778",
    "out_degree": 3
   },
+  "sharp_current_refinement_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "fcca4d5c17c4",
+   "out_degree": 2
+  },
   "sharp_record_fisher_tangent_space_narrow_theorem_note_2026-06-06": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
@@ -19769,6 +19801,10 @@
   "start_here": {
    "deps_hash": "ac6bfb491704",
    "out_degree": 4
+  },
+  "state_adapted_refinement_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "dc64b7472c92",
+   "out_degree": 6
   },
   "static_ice_measure_nearest_neighbour_admissibility_needs_a_frame_source_soldered_vertex_records_or_coordinate_letters_bounded_theorem_note_2026-09-22": {
    "deps_hash": "c8eee4235fc9",

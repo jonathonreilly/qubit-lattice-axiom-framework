@@ -1,0 +1,191 @@
+{
+  "StateAdapted": {
+    "baselines": [
+      "corrected_baseline",
+      "original_half_angle"
+    ],
+    "cases": {
+      "corrected_baseline": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b.py",
+            "bytes": 7394,
+            "sha256": "623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5.py",
+            "bytes": 988,
+            "sha256": "a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "role": "corrected_baseline"
+      },
+      "original_half_angle": {
+        "entry": "helper.py",
+        "arguments": [],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6.py",
+            "bytes": 1130,
+            "sha256": "7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "role": "post_observation_supplement"
+      },
+      "historical_baseline": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f.py",
+            "bytes": 7027,
+            "sha256": "8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5.py",
+            "bytes": 988,
+            "sha256": "a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "role": "historical_failed_baseline"
+      },
+      "original_wrong_frame_sign": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f.py",
+            "bytes": 7027,
+            "sha256": "8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/b5a2ea74d2cce5e93aa2dc9293139a181412441b7d46cdfe139d744708a8fe49.py",
+            "bytes": 988,
+            "sha256": "b5a2ea74d2cce5e93aa2dc9293139a181412441b7d46cdfe139d744708a8fe49"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "role": "original_mutant"
+      },
+      "original_omit_continuum_unrotation": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f.py",
+            "bytes": 7027,
+            "sha256": "8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/cc273d77ea9a0b07945999f6bb1c2079a2a75586bcdddad92d85ec9e527b0e5c.py",
+            "bytes": 989,
+            "sha256": "cc273d77ea9a0b07945999f6bb1c2079a2a75586bcdddad92d85ec9e527b0e5c"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "role": "original_mutant"
+      },
+      "corrected_wrong_frame_sign": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b.py",
+            "bytes": 7394,
+            "sha256": "623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/b5a2ea74d2cce5e93aa2dc9293139a181412441b7d46cdfe139d744708a8fe49.py",
+            "bytes": 988,
+            "sha256": "b5a2ea74d2cce5e93aa2dc9293139a181412441b7d46cdfe139d744708a8fe49"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "role": "corrected_mutant"
+      },
+      "corrected_omit_continuum_unrotation": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b.py",
+            "bytes": 7394,
+            "sha256": "623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/cc273d77ea9a0b07945999f6bb1c2079a2a75586bcdddad92d85ec9e527b0e5c.py",
+            "bytes": 989,
+            "sha256": "cc273d77ea9a0b07945999f6bb1c2079a2a75586bcdddad92d85ec9e527b0e5c"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        },
+        "role": "corrected_mutant"
+      }
+    }
+  }
+}

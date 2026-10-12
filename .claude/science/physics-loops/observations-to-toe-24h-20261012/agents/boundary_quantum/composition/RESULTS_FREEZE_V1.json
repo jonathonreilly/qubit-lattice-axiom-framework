@@ -1,0 +1,118 @@
+{
+  "at": "2026-10-12T18:36:06.966994+00:00",
+  "version": "composition V1",
+  "scope": "Frozen conditioned pair-law composition calculation; independent finite quantum construction and fixed common visibility extension; no empirical exclusion, adopted premise, audit verdict, commit or PR.",
+  "artifacts": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/COMPUTATION_RESULTS.json",
+      "bytes": 403839,
+      "sha256": "6e44ab256920ccc63097fedfff7752008b5561c1cc6a7df1430e72a2381eb53b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/DERIVATION.md",
+      "bytes": 15905,
+      "sha256": "a09ef7b88399d8555c17c280e5cbdf214c716d746ea7f7866fa6a5a3f28629a8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/PRECOMPUTE_FREEZE.json",
+      "bytes": 2121,
+      "sha256": "fa892ea4684400c1785c8d4e884e9ea32f65abf0ed4024a95b7a8efd5a9ab1df"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/RESULTS.md",
+      "bytes": 9946,
+      "sha256": "461071a39327e59cd6f3aee0d163cea09c5c3e930ca8844d55ec6d71acb22b9b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/SCOPE_SNAPSHOT.json",
+      "bytes": 1561,
+      "sha256": "3d67b328b5e561b7d894232578f7a69d43881e85fd05583b1df29d9a1a73e0c7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/SOURCE_MANIFEST.json",
+      "bytes": 5260,
+      "sha256": "d03409d927cf0bd5e8fece0e6c6e50ae4f38d9cceb5e3f114869c9c8d796d7e0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/VALIDATION.json",
+      "bytes": 678,
+      "sha256": "678aa5fb28f406a087a5ce0ddce88ad949d321ce68918752f7848e8b04d9f98c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/VISIBILITY_EXTENSION_FREEZE.json",
+      "bytes": 1099,
+      "sha256": "0d1ffa4cd107de43136f8116be71ac041f45f029dc8b64b19b9d0ce50faaecc5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/composition_check.py",
+      "bytes": 12177,
+      "sha256": "524c0618e4347d85cdaec7279f62e0895e04cc2f5de65a8e88e5a51a089b78d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/finite_directions.json",
+      "bytes": 55894,
+      "sha256": "80312cabadf10f164b020def0b98f8291115adb69585ecca3e705f1166eacc3c"
+    }
+  ],
+  "runtime": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "bytes": 18117,
+      "sha256": "e4e1c7fb2342ace2e5c96cc6b798945d4bfdea284db8aa591799f9a66fdced2e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
+      "bytes": 11227,
+      "sha256": "3f385150bc15ecbc1a8cb41d03528e88b796480f95615a2734a46d6db2568f07"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/berg_porcu_v2.pdf",
+      "bytes": 254961,
+      "sha256": "42e5ce1e81f48daccebf00d89da92c74e58213f676c9ff58ffed2739a1482a49"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/composition_check_run_v1.log",
+      "bytes": 2291,
+      "sha256": "c88bc515f001d4feac11ae2009f46ee2e4e6163670f0e74cc194ad8cf7d2df5d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/schoenberg1942_download",
+      "bytes": 1163,
+      "sha256": "3c92f0a6ffd6b83815ea25b14274dbd4b97b66fd4f7dbd8effa75c7abfdd7d12"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/tsirelson1980.html",
+      "bytes": 917,
+      "sha256": "3925ebe10c7fee3180bb0eb878c6dee53141eef6add6e309ab756cf21987d819"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/tsirelson1980.pdf",
+      "bytes": 974323,
+      "sha256": "0f2168e891980476522c87b25a8e50b40eb9185bdedb3a66ae0bbe5ef4549071"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/tsirelson1980_page1.png",
+      "bytes": 260215,
+      "sha256": "380377cf0bf83a7e17f6d6a2cf79928a295a4cc4ce42cafca8a8c14944db18bd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/tsirelson1980_page2.png",
+      "bytes": 189884,
+      "sha256": "75960fa93e6ca5b6319dbfe15f03b873c7172e50f3ec9a31bc60fc5c7b2d2e0d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/tsirelson1980_page3.png",
+      "bytes": 149560,
+      "sha256": "8667b454884db09a00b013c5ab755fd5c348c31dc4371b6f6f2edfa9c131910c"
+    }
+  ],
+  "main_scope_pin": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "consequential_results": {
+    "triangle_condition": "k>log(3/2) fails exact common Hilbert Gram necessity",
+    "finite_noisy_criterion": "gamma2(G)=max(1,(1+4f_k(1/2))/3); Vcrit=1/gamma2(G)",
+    "prospective_Vcrit": 0.9694077541412717,
+    "global_CHSH": "4*tanh(atanh(1/2)+k/sqrt(2)) for all k>=0",
+    "root_of_a3": "unique integral root approximately0.3183313595412345; numerical location not formally enclosed"
+  },
+  "review_limits": "Interval library and analytic proofs not formally verified; root mathematical review pending. Tiny positive-k segment below a3 root unresolved for full-S2 PSD. Prior fit interval has documented source stationarity/error-model problems."
+}

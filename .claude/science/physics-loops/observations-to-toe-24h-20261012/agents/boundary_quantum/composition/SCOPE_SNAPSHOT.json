@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-12T18:18:49.406507+00:00",
+  "origin_main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "github_main_verified_same": true,
+  "read_sources": [
+    {
+      "source_path": "docs/CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md",
+      "sha256": "e4e1c7fb2342ace2e5c96cc6b798945d4bfdea284db8aa591799f9a66fdced2e",
+      "local": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/CHSH_STRUCTURAL_BOUND_NARROW_THEOREM_NOTE_2026-05-17.md"
+    },
+    {
+      "source_path": "docs/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md",
+      "sha256": "3f385150bc15ecbc1a8cb41d03528e88b796480f95615a2734a46d6db2568f07",
+      "local": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/CHSH_TSIRELSON_LATTICE_QUBITS_BOUND_NOTE_2026-05-20.md"
+    }
+  ],
+  "open_prs": [
+    {
+      "headRefName": "physics-loop/toe-finite-energy-20261012",
+      "headRefOid": "173c0d4d281bb67c7795f6bf87d4d25c2b2ed2d3",
+      "number": 9499,
+      "title": "[physics-loop] finite-energy: bounded_theorem / conditional-support \u2014 sector concentration"
+    }
+  ],
+  "overlap": "Current main already derives classical and Hilbert CHSH bounds, tensor-carrier caveats and Pauli saturation. This task does not claim those bounds as new. Sole open PR9499 concerns finite-energy sector concentration, not this pair kernel. Searches found no Schoenberg or atanh-asin boundary-kernel source in main docs/scripts. Search is scoped overlap check, not novelty proof."
+}

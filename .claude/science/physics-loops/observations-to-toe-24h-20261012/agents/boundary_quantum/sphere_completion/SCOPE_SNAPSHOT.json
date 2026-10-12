@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-12T19:03:43.824324+00:00",
+  "origin_main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "remote_main_verified": true,
+  "open_prs": [
+    {
+      "headRefName": "codex/observations-positive-response-20261012",
+      "headRefOid": "3153d7b2ddceeb26b78f2e1334ffa83218a01333",
+      "number": 9501,
+      "title": "[physics-loop] positive-response bounded_theorem conditional-support",
+      "patch_sha256": "bc102d244b05e8d33cbed25ebc71dee3edffe72fd85efac1d8f5c951aac83d59",
+      "scope_hits": [
+        "+   mass gives the `atanh(v)/v` and `1/(1-v^2)` expression. The mantle's volume",
+        "+`ell/(ell+r)[atanh(v)/v + (r/(ell+r))/(1-v^2)]`, v=u/(ell+r),",
+        "+    removable=mp.atanh(v)/v if v else mp.mpf(1)"
+      ],
+      "patch_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/sphere_completion/scope_pr_9501.patch"
+    },
+    {
+      "headRefName": "physics-loop/toe-energy-correlations-20261012",
+      "headRefOid": "3679df3c7901b4660f5d9e9d69023e2e82772a83",
+      "number": 9500,
+      "title": "[physics-loop] toe-energy-correlations: bounded_theorem / conditional-support \u2014 correlations and phase rates",
+      "patch_sha256": "15e549206901c438b182c020d99fd73a01fd97a865586f1d1d6b2f6af7e026f3",
+      "scope_hits": [],
+      "patch_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/sphere_completion/scope_pr_9500.patch"
+    },
+    {
+      "headRefName": "physics-loop/toe-finite-energy-20261012",
+      "headRefOid": "173c0d4d281bb67c7795f6bf87d4d25c2b2ed2d3",
+      "number": 9499,
+      "title": "[physics-loop] finite-energy: bounded_theorem / conditional-support \u2014 sector concentration",
+      "patch_sha256": "b17574ff8011ba7068ede91d22dc2015f882ae11430e9dc171ee19097cd77332",
+      "scope_hits": [],
+      "patch_path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/sphere_completion/scope_pr_9499.patch"
+    }
+  ],
+  "main_search": "git grep Schoenberg|atanh.*asin|conditioned pair in origin/main docs/scripts returned only unrelated demolition pointer/record-conditioned pair prose and an atanh/asinh identity for a gauge logarithm.",
+  "claim_scope": "Scoped overlap check, not a novelty proof. Standard Schoenberg, harmonic, complex-analysis and Clifford facts are imports. Candidate-specific classification is proposed for review."
+}

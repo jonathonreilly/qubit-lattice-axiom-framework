@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-12T18:35:42.704162+00:00",
+  "checks": {
+    "script_hash_matches_run": true,
+    "freeze_hash_matches_run": true,
+    "visibility_freeze_hash_matches_run": true,
+    "parent_freeze_unchanged": true,
+    "probability_normalization_and_fair_marginal_max_error": 0.0,
+    "explicit_operator_and_factor_max_error": 4.440892098500626e-16,
+    "svd_nuclear_norm_vs_analytic_eigenvalues_max_error": 8.881784197001252e-16,
+    "numeric_chsh_vs_proven_optimum_max_error": 5.668532310210139e-11,
+    "all_numeric_checks_pass": true
+  },
+  "scope": "Artifact consistency and independent closed-form identities, not formal proof verification or empirical validation."
+}

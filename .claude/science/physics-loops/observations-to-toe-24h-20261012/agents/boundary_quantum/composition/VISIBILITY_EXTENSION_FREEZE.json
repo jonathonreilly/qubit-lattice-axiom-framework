@@ -1,0 +1,31 @@
+{
+  "at": "2026-10-12T18:21:45.225539+00:00",
+  "role": "Post-exact-Gram-test extension requested by root, before numerical visibility calculations",
+  "observation_map": "C_ij=-V G_ij, Gdiag1, Goff=-h, h=f_k(1/2). V common declared visibility, not fitted to previous workbook.",
+  "V_cases": [
+    0.9,
+    0.95,
+    0.97,
+    0.99,
+    1.0
+  ],
+  "criteria": "Derive actual finite bipartite quantum correlator feasibility, allowing distinct left/right unit vectors and specifying any constructed Hilbert dimension. Do not apply exact-anticorrelation PSD necessity when V<1. Root supplied gamma2/nuclear lead; derivation will independently factor matrix and prove lower bound.",
+  "frozen_geometry": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      "-1/2",
+      "sqrt(3)/2",
+      0
+    ],
+    [
+      "-1/2",
+      "-sqrt(3)/2",
+      0
+    ]
+  ],
+  "sample_forecasts": "Only illustrative counting variance for randomized9setting event-ready binary experiment. Include common V calibration uncertainty and systematic stability requirement in interpretation, no empirical confidence claim."
+}

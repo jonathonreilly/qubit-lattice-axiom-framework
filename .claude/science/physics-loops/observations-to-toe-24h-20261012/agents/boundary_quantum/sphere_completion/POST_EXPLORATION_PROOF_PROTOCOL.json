@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-12T18:47:30.425285+00:00",
+  "role": "Post-exploration proof protocol. Pilot high-precision calculations at K=.32, R=1.5, pole radius2.4 have already been inspected; no blind claim.",
+  "candidate_theorem": "The full S2 PSD interval is [0,k3], where a3(k3)=0.",
+  "analytic_route": "Prove cut-and-pole representation b_(2n+1)=C_n+(-1)^n P_n; all poles purely imaginary. For k<=K=8/25 prove C3 on[1,3/2]>3/500 and P3<3/500, then extend all n>=3 via cut/pole radius comparison. Even n coefficients positive. Therefore all degree>=5 Taylor coefficients positive.",
+  "certificate_rules": {
+    "tail_inequalities": "Use exact Fraction arithmetic and integer-square-root rational lower bounds, elementary exp/trigonometric bounds and a Machin-formula pi interval.",
+    "a3_sign": "Independent fixed-point integer interval quadrature with explicit Taylor remainders for sin,cos,exp and an analytic second-derivative midpoint error bound. Check k=.32, .3183, .3184. No black-box transcendental interval package is necessary for these sign certificates.",
+    "quadrature": "N1024 at.32 and N4096 at.3183/.3184; derivative bound |F second derivative|<=53 for F=g P3(cos theta) sin theta on[0,pi/2], all k<=.32.",
+    "power_and_legendre_scans": "Run the already frozen exploratory k list; degree101 Taylor and ell101 Legendre checks corroborate, never replace the tail proof."
+  },
+  "pilot_values_exposed": {
+    "pole_argument_at_2.4_k.32": 1.5655481125125046,
+    "pi_over_2": 1.5707963267948966,
+    "restricted_unweighted_integral": 0.06059380841572141,
+    "tail_P3_upper": 0.00567814012713822,
+    "algebraic_32panel_integral_lower": 0.05218600266867281,
+    "a3_at_.32": -0.000588055557388012
+  }
+}

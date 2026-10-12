@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-12T18:39:51.962370+00:00",
+  "role": "Post-exposure mathematical classification of fixed one-k family; no empirical calibration or new fit.",
+  "kernel": "f_k(c)=tanh(atanh((2/pi)asin(c))+kc), k>=0",
+  "known_results": "a3 strictly decreasing, unique zero k3~0.3183313595412345; all k>k3 fail S2 PSD; k=0 is exactly PSD. Previous packet unchanged.",
+  "protocol": {
+    "exploratory_k": [
+      0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.3142403964367766,
+      0.3183313595412345
+    ],
+    "finite_legendre": "Odd ell1..101, Gauss-Legendre orders1024 and2048 after theta substitution; numerical probes are not positivity proof.",
+    "power_series": "Taylor odd coefficients through degree101 at frozen k values, high-precision series algebra and independent low-order derivatives; seek structure permitting a positive-power tail.",
+    "tail_plan": "Prove or bound all omitted Legendre/Taylor coefficients analytically, using endpoint expansion, complex analytic singularities, positive integral representation, or differential recurrence; finite scan alone cannot settle admissibility.",
+    "adaptive_work": "Further calculation protocols may be separately recorded as post-exploration mathematical proof development. No hidden parameter changes."
+  },
+  "decision": "Either give rigorous S2 admissible region/first-loss theorem with checked tails and explicit Hilbert correlation realization, or exact limitations plus strongest proven interval/counterexample. No claim that abstract realization identifies physical spin/dynamics."
+}

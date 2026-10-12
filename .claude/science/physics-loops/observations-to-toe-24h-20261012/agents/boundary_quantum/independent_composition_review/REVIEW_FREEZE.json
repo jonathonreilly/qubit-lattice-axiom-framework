@@ -1,0 +1,417 @@
+{
+  "at": "2026-10-12T18:59:49.620648+00:00",
+  "scope": "Independent source-bound composition mathematics review. PASS under stated hypotheses; one nonblocking reproduction output-overwrite finding. No audit verdict or empirical exclusion.",
+  "source_freeze": {
+    "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/RESULTS_FREEZE_V1.json",
+    "bytes": 7104,
+    "sha256": "35586385663854a0ab1b23ce9007512b3f50cc729310307b31a1f176b026f413"
+  },
+  "source_verified": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/COMPUTATION_RESULTS.json",
+      "bytes": 403839,
+      "sha256": "6e44ab256920ccc63097fedfff7752008b5561c1cc6a7df1430e72a2381eb53b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/DERIVATION.md",
+      "bytes": 15905,
+      "sha256": "a09ef7b88399d8555c17c280e5cbdf214c716d746ea7f7866fa6a5a3f28629a8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/PRECOMPUTE_FREEZE.json",
+      "bytes": 2121,
+      "sha256": "fa892ea4684400c1785c8d4e884e9ea32f65abf0ed4024a95b7a8efd5a9ab1df"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/RESULTS.md",
+      "bytes": 9946,
+      "sha256": "461071a39327e59cd6f3aee0d163cea09c5c3e930ca8844d55ec6d71acb22b9b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/SCOPE_SNAPSHOT.json",
+      "bytes": 1561,
+      "sha256": "3d67b328b5e561b7d894232578f7a69d43881e85fd05583b1df29d9a1a73e0c7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/SOURCE_MANIFEST.json",
+      "bytes": 5260,
+      "sha256": "d03409d927cf0bd5e8fece0e6c6e50ae4f38d9cceb5e3f114869c9c8d796d7e0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/VALIDATION.json",
+      "bytes": 678,
+      "sha256": "678aa5fb28f406a087a5ce0ddce88ad949d321ce68918752f7848e8b04d9f98c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/VISIBILITY_EXTENSION_FREEZE.json",
+      "bytes": 1099,
+      "sha256": "0d1ffa4cd107de43136f8116be71ac041f45f029dc8b64b19b9d0ce50faaecc5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/composition_check.py",
+      "bytes": 12177,
+      "sha256": "524c0618e4347d85cdaec7279f62e0895e04cc2f5de65a8e88e5a51a089b78d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/composition/finite_directions.json",
+      "bytes": 55894,
+      "sha256": "80312cabadf10f164b020def0b98f8291115adb69585ecca3e705f1166eacc3c"
+    }
+  ],
+  "review_artifacts": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/independent_composition_review/REVIEW.md",
+      "bytes": 11720,
+      "sha256": "29be852577146e2d84923417a86e81bceb4f17ca89ba43b9805616eb2f8be0fb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/independent_composition_review/REVIEW_PLAN.md",
+      "bytes": 1393,
+      "sha256": "c4d03fa3fd568d113c3f16ee4d5d2849f2519869d4796f92d706f5bdfe9ccc1c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/independent_composition_review/independent_checks.py",
+      "bytes": 13472,
+      "sha256": "14a9034ae4a58ff616d984c823a6baf898672628a29a0dde355856f1ee41b648"
+    }
+  ],
+  "execution_summary": {
+    "independent_pass": 6,
+    "independent_fail": 0,
+    "intentional_mutation_families": 6,
+    "author_clone_reproduces": "all fields except timestamps; direction bytes exact"
+  },
+  "runtime_artifacts": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_rerun/COMPUTATION_RESULTS.json",
+      "bytes": 403839,
+      "sha256": "9800ba522251725a5f46151993b01cb0463dc02683005330c75f692220b288c8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_rerun/PRECOMPUTE_FREEZE.json",
+      "bytes": 2121,
+      "sha256": "fa892ea4684400c1785c8d4e884e9ea32f65abf0ed4024a95b7a8efd5a9ab1df"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_rerun/VISIBILITY_EXTENSION_FREEZE.json",
+      "bytes": 1099,
+      "sha256": "0d1ffa4cd107de43136f8116be71ac041f45f029dc8b64b19b9d0ce50faaecc5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_rerun/composition_check.py",
+      "bytes": 12177,
+      "sha256": "524c0618e4347d85cdaec7279f62e0895e04cc2f5de65a8e88e5a51a089b78d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_rerun/finite_directions.json",
+      "bytes": 55894,
+      "sha256": "80312cabadf10f164b020def0b98f8291115adb69585ecca3e705f1166eacc3c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_rerun.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_rerun.stdout",
+      "bytes": 2291,
+      "sha256": "c88bc515f001d4feac11ae2009f46ee2e4e6163670f0e74cc194ad8cf7d2df5d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_rerun_comparison.json",
+      "bytes": 93,
+      "sha256": "a7bf82343c3ae9a8a7aa79ab71fbb862d1c34820aeb4c7032d39626acc2355e5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_rerun_receipt.json",
+      "bytes": 559,
+      "sha256": "c5e1240beec6782a5651022e0304fea0d2e5e6e3337c7f6ac8b6567c693e0e28"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_v1_snapshot/COMPUTATION_RESULTS.json",
+      "bytes": 403839,
+      "sha256": "6e44ab256920ccc63097fedfff7752008b5561c1cc6a7df1430e72a2381eb53b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_v1_snapshot/DERIVATION.md",
+      "bytes": 15905,
+      "sha256": "a09ef7b88399d8555c17c280e5cbdf214c716d746ea7f7866fa6a5a3f28629a8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_v1_snapshot/PRECOMPUTE_FREEZE.json",
+      "bytes": 2121,
+      "sha256": "fa892ea4684400c1785c8d4e884e9ea32f65abf0ed4024a95b7a8efd5a9ab1df"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_v1_snapshot/RESULTS.md",
+      "bytes": 9946,
+      "sha256": "461071a39327e59cd6f3aee0d163cea09c5c3e930ca8844d55ec6d71acb22b9b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_v1_snapshot/RESULTS_FREEZE_V1.json",
+      "bytes": 7104,
+      "sha256": "35586385663854a0ab1b23ce9007512b3f50cc729310307b31a1f176b026f413"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_v1_snapshot/SCOPE_SNAPSHOT.json",
+      "bytes": 1561,
+      "sha256": "3d67b328b5e561b7d894232578f7a69d43881e85fd05583b1df29d9a1a73e0c7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_v1_snapshot/SOURCE_MANIFEST.json",
+      "bytes": 5260,
+      "sha256": "d03409d927cf0bd5e8fece0e6c6e50ae4f38d9cceb5e3f114869c9c8d796d7e0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_v1_snapshot/VALIDATION.json",
+      "bytes": 678,
+      "sha256": "678aa5fb28f406a087a5ce0ddce88ad949d321ce68918752f7848e8b04d9f98c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_v1_snapshot/VISIBILITY_EXTENSION_FREEZE.json",
+      "bytes": 1099,
+      "sha256": "0d1ffa4cd107de43136f8116be71ac041f45f029dc8b64b19b9d0ce50faaecc5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_v1_snapshot/composition_check.py",
+      "bytes": 12177,
+      "sha256": "524c0618e4347d85cdaec7279f62e0895e04cc2f5de65a8e88e5a51a089b78d2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/author_v1_snapshot/finite_directions.json",
+      "bytes": 55894,
+      "sha256": "80312cabadf10f164b020def0b98f8291115adb69585ecca3e705f1166eacc3c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/berg_porcu_v2.pdf.extracted.txt",
+      "bytes": 46789,
+      "sha256": "1eee2c064916b6d1556773f8791d08ac13008e134b6466cfae4e3ccc006199eb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent.stdout",
+      "bytes": 289,
+      "sha256": "be79ea1b91668d1b269256df85b3146b3fe215bcdafd283fe53202f0693c7db3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent_execution.json",
+      "bytes": 626,
+      "sha256": "c03918bb0a35280f633cb3a99b2283ab16c14c7afa2a167cdc75bcddd15404a6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent_final.json",
+      "bytes": 19591,
+      "sha256": "95d6608a12fb260db39a0e129a8f483c4994d34b61faf1eb6b181d93c92a5205"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent_final.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent_final.stdout",
+      "bytes": 289,
+      "sha256": "be79ea1b91668d1b269256df85b3146b3fe215bcdafd283fe53202f0693c7db3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent_final_and_mutations_receipt.json",
+      "bytes": 7556,
+      "sha256": "399ae280229001dff2574a6299afb2dcd4bad0abede2c2c962bd723b061834b9"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent_initial_pass/independent.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent_initial_pass/independent.stdout",
+      "bytes": 289,
+      "sha256": "be79ea1b91668d1b269256df85b3146b3fe215bcdafd283fe53202f0693c7db3"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent_initial_pass/independent_execution.json",
+      "bytes": 626,
+      "sha256": "c03918bb0a35280f633cb3a99b2283ab16c14c7afa2a167cdc75bcddd15404a6"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent_initial_pass/independent_results.json",
+      "bytes": 19592,
+      "sha256": "ab80205b89e7d1c83bd1e2729f4e83be1bdb9d0bf8baee363971d6fdd208d4e4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/independent_results.json",
+      "bytes": 19592,
+      "sha256": "ab80205b89e7d1c83bd1e2729f4e83be1bdb9d0bf8baee363971d6fdd208d4e4"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_a3_value.json",
+      "bytes": 19590,
+      "sha256": "c25c7deccf28b685c85aede93f9b8a8d62bf6c72300f08f2134c6a9e2d07fc54"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_a3_value.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_a3_value.stdout",
+      "bytes": 289,
+      "sha256": "e0a3de67c15e3e72006b35fbe358288f5648e961e1bbba68dd0a73376992b8b7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_chsh_value.json",
+      "bytes": 19591,
+      "sha256": "19170264af2b79879db42cbd2dafeef685115da3f2435cfabbd9df19ba173f18"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_chsh_value.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_chsh_value.stdout",
+      "bytes": 289,
+      "sha256": "e0a3de67c15e3e72006b35fbe358288f5648e961e1bbba68dd0a73376992b8b7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_directional_witness.json",
+      "bytes": 19582,
+      "sha256": "84711caf3cf95ce5e7dedb9d141cc850fd232079d7edc85a1cb1a57fbd0a484e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_directional_witness.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_directional_witness.stdout",
+      "bytes": 289,
+      "sha256": "70d6b1abf3405d83e78dd4b200feb600f69fe1c483069becd21d8676601e016c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_gamma2.json",
+      "bytes": 19590,
+      "sha256": "509e5b94aeefd44ede1602c542e632a9cf6f3d786e7aa0951a1f21b4184e89ca"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_gamma2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_gamma2.stdout",
+      "bytes": 289,
+      "sha256": "c319d9d02a3afa9823270cbbce588a7b84c0099e16b18267f155adc5b9c56cc0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_probability.json",
+      "bytes": 19591,
+      "sha256": "805e680ee2fc374138003c97d3b5354cf28b61970af6d95d35f07d12f9a3d8c1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_probability.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_probability.stdout",
+      "bytes": 289,
+      "sha256": "c319d9d02a3afa9823270cbbce588a7b84c0099e16b18267f155adc5b9c56cc0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_quantum_vector.json",
+      "bytes": 19589,
+      "sha256": "ca3e6aee817ee8365f446d040311646eb89cf7979347e4348eaabd8e0b9c6071"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_quantum_vector.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutation_quantum_vector.stdout",
+      "bytes": 289,
+      "sha256": "c319d9d02a3afa9823270cbbce588a7b84c0099e16b18267f155adc5b9c56cc0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/a3_value/COMPUTATION_RESULTS.json",
+      "bytes": 403759,
+      "sha256": "24d227009c53c5680c463d3951270af8e78ea62fa27f0ae3e506aecaa0f4c999"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/a3_value/finite_directions.json",
+      "bytes": 55894,
+      "sha256": "80312cabadf10f164b020def0b98f8291115adb69585ecca3e705f1166eacc3c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/chsh_value/COMPUTATION_RESULTS.json",
+      "bytes": 403763,
+      "sha256": "3c8b1b4c1bb08b6a4af903fab548a8d0859cea280cf10f1aaa800f45f8d67807"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/chsh_value/finite_directions.json",
+      "bytes": 55894,
+      "sha256": "80312cabadf10f164b020def0b98f8291115adb69585ecca3e705f1166eacc3c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/directional_witness/COMPUTATION_RESULTS.json",
+      "bytes": 403824,
+      "sha256": "28540f56a46530700bc15b41cc8b8aee8fe4af187d9d6416758f6aa01c4cd3ed"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/directional_witness/finite_directions.json",
+      "bytes": 55894,
+      "sha256": "80312cabadf10f164b020def0b98f8291115adb69585ecca3e705f1166eacc3c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/gamma2/COMPUTATION_RESULTS.json",
+      "bytes": 403824,
+      "sha256": "32cde0fb4c2a3b2f869acefab2098f64157bd0f11fda891d953f07a5ba38d924"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/gamma2/finite_directions.json",
+      "bytes": 55894,
+      "sha256": "80312cabadf10f164b020def0b98f8291115adb69585ecca3e705f1166eacc3c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/probability/COMPUTATION_RESULTS.json",
+      "bytes": 403823,
+      "sha256": "c6bc54991977df79b958ca94877e081548e714002856d540490f05d7666dfc49"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/probability/finite_directions.json",
+      "bytes": 55894,
+      "sha256": "80312cabadf10f164b020def0b98f8291115adb69585ecca3e705f1166eacc3c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/quantum_vector/COMPUTATION_RESULTS.json",
+      "bytes": 403824,
+      "sha256": "021fe0d1ba0736a128710317301951f5755df24b4dcf280a589f7e85093d4c0d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/mutations/quantum_vector/finite_directions.json",
+      "bytes": 55894,
+      "sha256": "80312cabadf10f164b020def0b98f8291115adb69585ecca3e705f1166eacc3c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/primary_and_parent_input_validation.json",
+      "bytes": 5444,
+      "sha256": "0ee59521d2abf140fef93d4d8524110ebda7db814c61c116d2fbd0ab6d9272df"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/source_readback.json",
+      "bytes": 3764,
+      "sha256": "9ef640cccf386facdba8874b5c41a4e515f86336ec169a6e7b82bfff9b328670"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/independent_composition_review/tsirelson1980.pdf.extracted.txt",
+      "bytes": 14,
+      "sha256": "f9796f10051646d52c962c89fde70b27fbcf561d9a8bdf45a5661cc7ba111833"
+    }
+  ],
+  "author_notified": "/root/composition_candidate via collaboration message, output-directory/copy remedy; V1 unchanged"
+}

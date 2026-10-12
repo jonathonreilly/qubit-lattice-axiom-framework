@@ -1,0 +1,83 @@
+{
+  "at": "2026-10-12T18:33:06.277378+00:00",
+  "source_files": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/tsirelson1980.pdf",
+      "url": "https://ma.huji.ac.il/~ohadfeld/Tsirelson/download/qbell80.pdf",
+      "sha256": "0f2168e891980476522c87b25a8e50b40eb9185bdedb3a66ae0bbe5ef4549071",
+      "bytes": 974323,
+      "role": "B. S. Cirelson, Quantum generalizations of Bell\u2019s inequality, Letters in Mathematical Physics4(1980)93\u2013100; Theorem1 pp93\u201394 read from rendered original pages.",
+      "status": "primary original article"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/tsirelson1980.html",
+      "url": "https://ma.huji.ac.il/~ohadfeld/Tsirelson/download/qbell80.html",
+      "sha256": "3925ebe10c7fee3180bb0eb878c6dee53141eef6add6e309ab756cf21987d819",
+      "bytes": 917,
+      "role": "Author archive landing page.",
+      "status": "landing page"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/berg_porcu_v2.pdf",
+      "url": "https://arxiv.org/pdf/1505.05682v2",
+      "sha256": "42e5ce1e81f48daccebf00d89da92c74e58213f676c9ff58ffed2739a1482a49",
+      "bytes": 254961,
+      "role": "C. Berg and E. Porcu, From Schoenberg coefficients to Schoenberg functions, arXiv1505.05682v2. Theorem2.1 and Eq18,p8 restate Schoenberg criterion; S2 case explicitly Legendre.",
+      "status": "primary research article; restatement of classical theorem"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/schoenberg1942_download",
+      "url": "https://doi.org/10.1215/S0012-7094-42-00908-6",
+      "sha256": "3c92f0a6ffd6b83815ea25b14274dbd4b97b66fd4f7dbd8effa75c7abfdd7d12",
+      "bytes": 1163,
+      "role": "HTML access wrapper, not the original paper. Full text not obtained; excluded as proof evidence.",
+      "status": "failed full-text retrieval",
+      "retrieval_url_note": "DOI identifies intended article; exact failed-download request URL was not retained in this reconstructed manifest."
+    }
+  ],
+  "scope_snapshot": "SCOPE_SNAPSHOT.json",
+  "source_version_policy": "Local bytes are pinned by SHA256. Archive URLs may change; hashes identify what was actually read.",
+  "frozen_parent_inputs": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/RESULTS_FREEZE_V1.json",
+      "sha256": "1306c4cae30d4d1963696ada600e89bb71463ef823c57b02a97af40f71ea047c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/RESULTS.md",
+      "sha256": "0c70a805c9527848d2a491b254ddd1ee488ffbf5e64904defa09b401276df5fe"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/PAIR_LAW_DERIVATION.md",
+      "sha256": "0b409734f126ba2521f16cf58ba008f62135afdbb43729f8d7d12d5584dcc654"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/CALIBRATION_AND_PREDICTIONS_FREEZE.json",
+      "sha256": "0e4dc14ae089be908dcfcdc26c07dffa7c3bea57c50cc13b32b7d3a6ef2cf46e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/SOURCE_DIAGNOSTICS_AND_PROSPECTIVE.json",
+      "sha256": "90f8d46dfae62989d7ff9f5382ef9ea54e1ba84bd27bea5b56db10776b98e659"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/boundary_quantum/POSTFIT_SENSITIVITY.json",
+      "sha256": "7e01da931217099aa34171e1c37d3bd9bb977f00c6d5ce3da86067f5f16f625d"
+    }
+  ],
+  "inspection_renders": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/tsirelson1980_page1.png",
+      "sha256": "380377cf0bf83a7e17f6d6a2cf79928a295a4cc4ce42cafca8a8c14944db18bd",
+      "render": "PyMuPDF1.5x matrix; page1/2 visually inspected"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/tsirelson1980_page2.png",
+      "sha256": "75960fa93e6ca5b6319dbfe15f03b873c7172e50f3ec9a31bc60fc5c7b2d2e0d",
+      "render": "PyMuPDF1.5x matrix; page1/2 visually inspected"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/composition/tsirelson1980_page3.png",
+      "sha256": "8667b454884db09a00b013c5ab755fd5c348c31dc4371b6f6f2edfa9c131910c",
+      "render": "PyMuPDF1.5x matrix; page1/2 visually inspected"
+    }
+  ]
+}

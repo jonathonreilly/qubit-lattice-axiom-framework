@@ -1,22 +1,45 @@
+# Direct author handoff — 2026-10-12T19:05:00.475532+00:00
+
+The user explicitly requested this chat personally drive the research. The detached supervisor and all recorded descendants are stopped. The campaign is still running under its original deadline 2026-10-13T16:53:00.057432+00:00. DIRECT_AUTHOR.json owns continuation; never restart the retired background author. Its files and failed tool streams are preserved. The cancellation label emitted by its stop handler referred to process retirement, not cancellation of the campaign. No existing result gains additional review status from this handoff.
+
+This chat now performs the derivations, code and empirical tests directly. Next: reconstruct the positive solar response kernel, derive bounds on arbitrary monotone responses from observed acceleration constraints, and solve the stated disk-field projection. The full PDE calibration remains open; avoid reusing the algebraic galaxy fit as if it were that calibration.
+
+## Preserved prior checkpoint
+
 # Campaign handoff
 
 Running; a local block is not campaign completion. Immutable deadline remains
 2026-10-13T16:53:00.057432+00:00 in runtime DEADLINE.json; packaging starts
-15 minutes before it. No stop marker at18:19:42 UTC checkpoint. Supervisor
+15 minutes before it. No stop marker at the 2026-10-12T18:46:03.516736+00:00 checkpoint. Supervisor
 owns the cooperative lock. Do not modify scheduling or the older cancelled
 campaign. Read STATE.yaml and GOAL.md first.
 
-Exact next action: finish source-bound review and delivery of the positive
-force/noise/source-inverse milestone, while continuing the frozen galaxy
-external-field and quantum-composition tests. Preserve failed flavor tests;
-do not refit them silently. Active milestone worktree is
-`/private/tmp/observations-positive-response-20261012`, branch
-`codex/observations-positive-response-20261012`, base
-`516cb69d8487ff04f8a48e065d3dcbe71d7dd237`. Its canonical note and self-contained
-runner are frozen in its pack `positive-response-milestone-20261012/evidence/`.
-Author runner10/0; each of ten load-bearing mutations failed its intended
-check family. Independent final review by neutrino_candidate is in progress.
-No PR yet. Keep the primary campaign branch for continuous discovery.
+Exact next action: deliver the positive force/noise/source-inverse regular PR,
+then continue the solar and quantum composition calculations. The milestone
+worktree is `/private/tmp/observations-positive-response-20261012`, branch
+`codex/observations-positive-response-20261012`, base and fresh main
+`516cb69d8487ff04f8a48e065d3dcbe71d7dd237`. Final independent source review
+is PASS WITH BOUNDED CLAIMS. Root read the complete report and checker;
+10 author families, 8 independent checks and 10 independently replayed
+mutations have their intended outcomes. Same reviewer confirmed the shape
+input guard and final metadata-only header correction. Final note SHA is
+0e5527ca53a44b9e081868d46793d7c827d08a960203ad74ed891a4747a1ec77.
+The actual cache was regenerated. Focused conformance is recorded; a final
+citation build is running in tracked tool session 80576 with child PIDs in
+runtime MILESTONE_CHILDREN.json. Full combined landing gates remain later;
+no science merge or formal audit is authorized. No PR yet at this checkpoint.
+
+Root independently derived and froze the QUMOND solar Hessian before reading
+the worker's solar source. Results and original proof/code hashes are sealed
+in runtime gravity/solar_external_independent_seal.json. Two independent
+integrands agree to about 1e-10 over the frozen eta set at order512; a separate
+analytic tail estimate is <4e-13. This is numerical quadrature convergence,
+not interval certification. The worker is finishing its own frozen result;
+compare only after that freeze. Root has now read the galaxy derivation and
+quantum-composition proof, but their full numerical source remains to inspect.
+The quantum packet is under independent review; its author is separately
+studying the same law's full-sphere positive-kernel realization, without
+refitting exposed observations.
 
 ## Scientific state
 
@@ -100,3 +123,14 @@ Conformance discrepancy: old spec section3 proposes author promotion tokens;
 its owning CLAIM_STATUS rule forbids that. Use conditional-support and unset
 audit standing. The old publication index in DISCOVERY moved under
 archive/publication. No process files were changed.
+
+## Delivered positive-response milestone
+
+Regular PR9501 is open and non-draft:
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9501
+Head3153d7b2ddceeb26b78f2e1334ffa83218a01333, base main516cb69d.
+GitHub reports MERGEABLE with mergeStateStatus BLOCKED; no merge attempted.
+17 intended files, no inherited source deletion; complete base-to-head
+whitespace check passed. Runtime PRS.json is populated for the supervisor.
+The app tool inventory contains no callable PR-to-chat attachment operation.
+This delivery completes one coherent milestone, not the ongoing campaign.

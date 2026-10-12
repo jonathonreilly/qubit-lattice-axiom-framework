@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-10-12T18:13:52.839248+00:00",
+  "candidate": "f_k(c)=tanh(atanh((2/pi)asin(c))+kc), endpoints f(+-1)=+-1",
+  "k_values": [
+    0,
+    0.3142403964367766,
+    0.4696142810683679,
+    0.479986755687848,
+    0.5337547855623958,
+    0.5913905608644301,
+    0.8764492956544335
+  ],
+  "intervals": {
+    "published_count_error_conditional_profile": [
+      0.479986755687848,
+      0.5913905608644301
+    ],
+    "posttest_variance_sensitivity": [
+      0.3142403964367766,
+      0.8764492956544335
+    ]
+  },
+  "rule": "No readout visibility, angle nuisance, or other fitted degrees of freedom. If f is a common real projective Hilbert Gram kernel for all unit directions, every finite matrix Gij=f(ai.aj) must be PSD. A negative eigenvalue/certified quadratic form is a conditional failure of this realization, not every alternative ontology.",
+  "tests": [
+    "odd Legendre coefficients ell1..31, with independent precision/quadrature checks",
+    "finite equilateral coplanar triple and regular tetrahedron",
+    "regular great-circle polygons n3..32 and Fibonacci sphere n12,24,48,96",
+    "coplanar CHSH symmetric scan and independent general setting numerical optimization; numerical optima only lower bounds unless separately certified"
+  ],
+  "error_rule": "Consequential finite witness evaluated at80digit and interval/analytic threshold if possible; retain exact angle/direction definitions, weight vector, all probabilities. Legendre numerical signs must have explicit convergence margins; no general PSD claim from finitely many positive coefficients.",
+  "prior_exposure": "Pair-law values, including theta_B=60deg f=.523668249 at prospective k, already known from parent packet. No PSD or Legendre numerical tests yet. Analytic equilateral Gram threshold f(1/2)<=1/2 is a foreseeable test, so no blind mathematical-discovery claim.",
+  "constructive_extension": "After frozen tests, seek a clearly post-test physically named angular/harmonic extension with exact PSD guarantee; distinguish additional premise and parameter from original k law; do not silently encode arbitrary cosine."
+}

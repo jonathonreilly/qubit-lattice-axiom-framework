@@ -450,3 +450,13 @@ Every chirality coefficient has partner rank 10. The swapped-dot
 coordinate is `t-u` and the scaled coordinate is `2r+2s`. It does not
 take a general integer point of the ten-kernel coefficient span, and
 it does not classify the 300-dimensional affine space.
+
+Cycle 82 takes q times the parallel kernel vector plus t times the plus
+swapped-dot generator plus u times the minus swapped-dot generator plus
+r times the plus cap and s times the minus cap, for every quintuple of
+positive integers (t, u, r, s, q) with q at most 2(4r+t). Every
+nonnegative chirality coefficient has partner rank 10. The parallel
+coordinate is `q` and the scaled coordinate is `2r+2s`. It does not
+take a negative chirality coefficient, a parallel scale above
+2(4r+t), or a general integer point of the ten-kernel coefficient
+span, and it does not classify the 300-dimensional affine space.

@@ -793,3 +793,10 @@
 - The certificate is four maximal minors of content 8192. They cover chirality 0, 2r+t, and 4r+2t. The kernel cross sum is -2t-4r and does not depend on u or s. The pivot gcd is not this certificate. A kernel cross sum is not an alphabet mean.
 - The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified.
 - No formation site, probability, or rate is imported.
+
+## Cycle 82
+
+- The ansatz is q times the parallel kernel vector plus t times the plus swapped-dot generator plus u times the minus swapped-dot generator plus r times the plus cap and s times the minus cap, for every quintuple of positive integers (t, u, r, s, q) with q at most 2(4r+t), on every ordered height pair. The parallel coordinate is q, the swapped-dot coordinate is t-u, the swapped coordinate is -(t+u), and the orthogonal coordinate is t+u. The matched and scaled coordinates are 2r+2s. Every nonnegative chirality coefficient has partner rank 10.
+- The certificate is four maximal minors. The generic minor has content 1024 and factor M = (2(4r+t)-q)c+(4r+2t)q. The other three minors have content 8192 and do not depend on q. They cover nonnegative chirality 0, 2r+t, and 4r+2t. The kernel cross sum is -2t-4r and does not depend on u, s, or q. The pivot gcd is not this certificate. A kernel cross sum is not an alphabet mean.
+- The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. The bond-space dimension count is not repeated. The 300-dimensional affine space is not classified. The case q = 0 is outside this count. A negative chirality coefficient is outside this count.
+- No formation site, probability, or rate is imported.

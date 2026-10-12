@@ -1852,3 +1852,29 @@ coordinate 2r+2s. Every chirality coefficient has partner rank 10.
 Four maximal minors cover chirality. The pivot gcd is not this
 certificate. The ten-kernel coefficient span is not classified. The
 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 82
+
+claim_id: chiral_pair_bounded_parallel_scale_unequal_dot_caps_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: every ordered height pair; positive parallel scale at most 2(4r+t) plus unequal positive swapped-dot scales and both caps; nonnegative chirality
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+On every ordered height pair, q times the parallel kernel vector plus t
+times the plus swapped-dot generator plus u times the minus swapped-dot
+generator plus r times the plus cap and s times the minus cap has
+parallel coordinate q and scaled coordinate 2r+2s, for every positive
+integer quintuple with q at most 2(4r+t). Every nonnegative chirality
+coefficient has partner rank 10. Four maximal minors cover that
+chirality. The pivot gcd is not this certificate. The case q = 0 is
+outside this count. A negative chirality coefficient is outside this
+count. The ten-kernel coefficient span is not classified. The
+300-dimensional affine space is not classified.

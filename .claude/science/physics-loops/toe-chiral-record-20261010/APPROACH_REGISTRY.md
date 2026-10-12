@@ -966,3 +966,19 @@ coefficient.
 
 Family not used: a general integer point of the ten-kernel coefficient
 span. The 300-dimensional affine space is not this family.
+
+Cycle 82 target contract: whether every quintuple of positive integers
+(t, u, r, s, q) with q at most 2(4r+t) gives partner rank 10, at every
+nonnegative chirality coefficient, for q times the parallel kernel
+vector plus t times the plus swapped-dot generator plus u times the
+minus swapped-dot generator plus r times the plus cap and s times the
+minus cap.
+
+Family used: a positive parallel scale at most 2(4r+t), added to
+unequal positive swapped-dot scales and both positive cap multiples.
+The parallel coordinate is q and the scaled coordinate is 2r+2s. Four
+maximal minors cover every nonnegative chirality coefficient.
+
+Family not used: a negative chirality coefficient, a parallel scale
+above 2(4r+t), and a general integer point of the ten-kernel
+coefficient span. The 300-dimensional affine space is not this family.

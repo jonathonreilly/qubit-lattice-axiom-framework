@@ -1421,3 +1421,21 @@ swapped-dot generators plus every pair of positive cap multiples have
 partner rank 10 at every chirality coefficient. The swapped-dot
 coordinate is t-u and the scaled coordinate is 2r+2s. The ten-kernel
 coefficient span stays open.
+
+## Cycle 82
+
+```yaml
+trace_class: negative_route_pruning
+target_claim_id: null
+target_blocker_text: "Other generic orbits and higher-rank bond spaces are not classified."
+source_of_blocker_text: frontier_question
+reachability_to_target: prunes
+artifact_role: theorem
+next_trace_action: "Decide the partner rank, at every chirality coefficient, of a general integer point of the ten-kernel coefficient span. Do not claim the 300-dimensional affine space is classified. Do not return to the bounded parallel quintuple."
+```
+
+On every ordered height pair, a positive parallel scale at most
+2(4r+t), added to unequal positive swapped-dot scales and both positive
+cap multiples, has partner rank 10 at every nonnegative chirality
+coefficient. The parallel coordinate is q and the scaled coordinate is
+2r+2s. The ten-kernel coefficient span stays open.

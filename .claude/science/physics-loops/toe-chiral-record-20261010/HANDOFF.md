@@ -1171,12 +1171,32 @@ gcd is not this certificate. At heights 1 and 2 the kernel cross sum is
 `-2t-4r`, independent of `u` and `s`. The ten-kernel coefficient span
 is not classified. Runner `PASS=9 FAIL=0`.
 
+Cycle 82. On every ordered height pair, `q` times the parallel kernel
+vector plus `t` times the plus swapped-dot generator plus `u` times the
+minus swapped-dot generator plus `r` times the plus cap and `s` times
+the minus cap has partner rank 10 at every nonnegative chirality
+coefficient, for every quintuple of positive integers `(t, u, r, s, q)`
+with `q` at most `2(4r+t)`. The parallel coordinate is `q`, the
+swapped-dot coordinate is `t-u`, the swapped coordinate is `-(t+u)`,
+and the orthogonal coordinate is `t+u`. The transverse-sign and
+sign-product coordinates are `s-r`, and the matched and scaled
+coordinates are `2r+2s`. The sum lies in neither ratio span and outside
+every even space. The generic minor has content `1024` and factor
+`M = (2(4r+t)-q)c+(4r+2t)q`. The other three minors keep content
+`8192` and do not depend on `q`. They cover nonnegative chirality
+through the values `0`, `2r+t`, and `4r+2t`. The pivot gcd is not this
+certificate. At heights 1 and 2 the kernel cross sum is `-2t-4r`,
+independent of `u`, `s`, and `q`. The case `q = 0` is outside this
+count. A negative chirality coefficient is outside this count. A
+parallel scale above `2(4r+t)` is outside this count. The ten-kernel
+coefficient span is not classified. Runner `PASS=9 FAIL=0`.
+
 ## Next exact action
 
 Decide the partner rank, at every chirality coefficient, of a general
 integer point of the ten-kernel coefficient span. Do not claim the
 300-dimensional affine space is classified. Do not return to the
-unequal swapped-dot quadruple.
+bounded parallel quintuple.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to
 shells, plaquette corner weights, or the `(0,1,2)` and `(1,1,2)`

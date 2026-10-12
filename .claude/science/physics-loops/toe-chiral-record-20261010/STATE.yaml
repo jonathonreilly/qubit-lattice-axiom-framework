@@ -4,10 +4,10 @@ runtime: continuous
 base_commit: 0b208e91cfc
 branch: physics-loop/toe-chiral-record-20261010
 worktree: /Users/jonreilly/.grok/campaigns/toe-chiral-20261010/wt
-cycle: 81
+cycle: 82
 runner_result: PASS=9 FAIL=0
 pr_status: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9477
-next_exact_action: Decide the partner rank, at every chirality coefficient, of a general integer point of the ten-kernel coefficient span. Do not claim the 300-dimensional affine space is classified. Do not return to the unequal swapped-dot quadruple.
+next_exact_action: Decide the partner rank, at every chirality coefficient, of a general integer point of the ten-kernel coefficient span. Do not claim the 300-dimensional affine space is classified. Do not return to the bounded parallel quintuple.
 stop_condition: free disk below 10Gi, or no non-overlapping route
 do_not_touch:
   - physics-loop/toe-nn-law-values-20261009

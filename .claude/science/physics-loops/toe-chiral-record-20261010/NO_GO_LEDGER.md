@@ -642,3 +642,15 @@ The swapped-dot coordinate is `t-u` and the scaled coordinate is
 `2r+2s`. It does not classify the ten-kernel coefficient span, and it
 does not classify the 300-dimensional affine space. This is not an
 N-gate no-go.
+
+Cycle 82 prunes the reading that some quintuple of positive integers
+(t, u, r, s, q), with q at most 2(4r+t), added as q times the parallel
+kernel vector plus t times the plus swapped-dot generator plus u times
+the minus swapped-dot generator plus r times the plus cap and s times
+the minus cap, has a nonnegative chirality coefficient with a nonzero
+ten-kernel partner. On every ordered height pair, every such quintuple
+has partner rank 10 at every nonnegative chirality coefficient. The
+parallel coordinate is `q` and the scaled coordinate is `2r+2s`. It
+does not classify a negative chirality coefficient, a parallel scale
+above 2(4r+t), or the ten-kernel coefficient span, and it does not
+classify the 300-dimensional affine space. This is not an N-gate no-go.

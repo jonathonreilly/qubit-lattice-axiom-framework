@@ -564,3 +564,16 @@ coordinates are 2r+2s. The sum lies in neither ratio span and outside
 every even space. Four maximal minors cover every chirality coefficient.
 The kernel cross sum is -2t-4r. The ten-kernel coefficient span is not
 classified.
+Cycle 82 shows that q times the parallel kernel vector plus t times the
+plus swapped-dot generator plus u times the minus swapped-dot generator
+plus r times the plus cap and s times the minus cap has partner rank 10
+at every nonnegative chirality coefficient on every ordered height
+pair, for every quintuple of positive integers (t, u, r, s, q) with q
+at most 2(4r+t). The parallel coordinate is q. The swapped-dot
+coordinate is t-u. The swapped coordinate is -(t+u) and the orthogonal
+coordinate is t+u. The matched and scaled coordinates are 2r+2s. The
+sum lies in neither ratio span and outside every even space. Four
+maximal minors cover every nonnegative chirality coefficient. The
+kernel cross sum is -2t-4r. The case q = 0 is outside this count. A
+negative chirality coefficient is outside this count. The ten-kernel
+coefficient span is not classified.

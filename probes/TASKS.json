@@ -69818,5 +69818,58 @@
   "completion_criterion": "One new scoped derivation, exact counterexample or checked partial result with the first unresolved obligation. Historical referee labels and numerical reproduction alone are not acceptance.",
   "landed_main": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
   "what": "Determine whether a specified correlated or non-Markovian Gaussian classical-quantum gravity kernel can preserve complete positivity, finite vacuum excitation and a finite GR-normalized radiative response. The pointwise additive decoherence floor is an extra assumption, not general CP; keep scalar and spin-2 channels separate and state the light-cone distribution/counterterm prescription. Do not reinstate the withdrawn 32-orders exclusion or call the preferred-frame smearing interval an allowed window. Work one explicit kernel through the retarded response and noise integrals, including finite-bandwidth sources, or prove a scoped obstruction with every added hypothesis exposed. Reconcile current attempts and avoid relitigating the already-bounded additive scalar result. Owner-requested work transfer to the existing maximum-thinking J campaign. Check current main, completed attempts, active campaign branches and claim.py ownership before claiming; continue or reconcile an existing attempt rather than duplicate it. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a new demonstrated result or defect. Ordinary independent confirmation remains required before retention. This catalog addition launches no workers, changes no budgets, creates no PR snapshots and adopts no historical audit/referee verdict."
+ },
+ {
+  "id": "J:derive:review-20261012-coupled-signature-zero-sets:a1",
+  "problem": "review-20261012-coupled-signature-zero-sets",
+  "title": "Resolve the 72 coupled-signature quadratic zero sets",
+  "type": "judgment",
+  "lane": "review-science-20261012",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "research_target": "Resolve the 72 unequal-height signature pairs left by the corrected direct quadratic test. Rebuild all quadratic constraints using full symmetric off-diagonal coefficients, then compute the real/rational zero sets with nonlinear consequences or exact sum-of-squares/real-radical certificates. The corrected 240-pair enumeration certifies 168 by direct monomial exclusion and leaves 72 unresolved; failure of monomial membership is not a nonzero-solution witness. Begin with (-3,-2) versus (-3,-1), whose row space includes x0^2-x5^2, x1^2-x5^2, x2^2-x5^2 and x0*x2, and test whether their nonlinear consequences already force zero. Provide a disjoint exact implementation, explicit coefficient-domain assumptions and either a complete origin-only certificate for each remaining orbit or a checked nonzero real/rational solution with its bond-factor positivity and normalization scope. Preserve the equal-height control and avoid a claim about the full 300-dimensional affine bond space. Complete the relevant no-go discipline packet before seeking retained-grade exclusion; do not infer physical law selection.",
+  "source_paths": [
+   "docs/UNEQUAL_HEIGHT_SIGNATURE_WITH_ONE_PARTNER_BOUNDED_THEOREM_NOTE_2026-10-10.md",
+   "scripts/unequal_height_signature_with_one_partner_2026_10_10.py",
+   "docs/EQUAL_HEIGHT_SIGNATURE_WITH_ONE_PARTNER_BOUNDED_THEOREM_NOTE_2026-10-10.md",
+   "scripts/equal_height_signature_with_one_partner_2026_10_10.py"
+  ],
+  "source_branch": {
+   "name": "main",
+   "head": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+   "on_origin": true
+  },
+  "source_objects": [
+   {
+    "path": "docs/UNEQUAL_HEIGHT_SIGNATURE_WITH_ONE_PARTNER_BOUNDED_THEOREM_NOTE_2026-10-10.md",
+    "sha256": "54ab6a46917c4d1d1bcc1d737198b9abc7457deae98e68456d6c71cc127f61eb",
+    "commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237"
+   },
+   {
+    "path": "scripts/unequal_height_signature_with_one_partner_2026_10_10.py",
+    "sha256": "d85e777fc4be6415f49dda4dc0bd54518032dce0e782ea7551eb10c1f444555e",
+    "commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237"
+   },
+   {
+    "path": "docs/EQUAL_HEIGHT_SIGNATURE_WITH_ONE_PARTNER_BOUNDED_THEOREM_NOTE_2026-10-10.md",
+    "sha256": "ff5b1928c9c152158b708e8b8a6b50619915697d2c3c85fd4e882e5aed016d15",
+    "commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237"
+   },
+   {
+    "path": "scripts/equal_height_signature_with_one_partner_2026_10_10.py",
+    "sha256": "42fffc4ec2f7d68b40e8b1f0a1635f080730f2e4451cefb379e468339d23bd76",
+    "commit": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237"
+   }
+  ],
+  "landed_main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
+  "related_tasks": [],
+  "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation with the first unresolved step; retrieval, review summaries and already-known mismatches are not completion.",
+  "what": "Resolve the 72 unequal-height signature pairs left by the corrected direct quadratic test. Rebuild all quadratic constraints using full symmetric off-diagonal coefficients, then compute the real/rational zero sets with nonlinear consequences or exact sum-of-squares/real-radical certificates. The corrected 240-pair enumeration certifies 168 by direct monomial exclusion and leaves 72 unresolved; failure of monomial membership is not a nonzero-solution witness. Begin with (-3,-2) versus (-3,-1), whose row space includes x0^2-x5^2, x1^2-x5^2, x2^2-x5^2 and x0*x2, and test whether their nonlinear consequences already force zero. Provide a disjoint exact implementation, explicit coefficient-domain assumptions and either a complete origin-only certificate for each remaining orbit or a checked nonzero real/rational solution with its bond-factor positivity and normalization scope. Preserve the equal-height control and avoid a claim about the full 300-dimensional affine bond space. Complete the relevant no-go discipline packet before seeking retained-grade exclusion; do not infer physical law selection. Owner-requested scientific work transfer. Use the existing maximum-thinking J campaign and claim.py ownership protocol; inspect completed attempts and active claims to avoid duplication. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py, and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a demonstrated new result or defect. Follow ordinary cross-model confirmation; this catalog addition starts no workers, changes no budgets and creates no PR snapshots or audit authority."
  }
 ]

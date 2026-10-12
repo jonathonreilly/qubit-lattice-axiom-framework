@@ -74,3 +74,8 @@ Five focused J tasks carry forward unresolved science from the active candidate-
 - Resolve the non-Markovian CQ-gravity escape (`J:derive:review-20261012-cq-gravity-correlated-kernels:a1`).
 
 See [task definitions](tasks/review-science-20261012.json). The research branch remains the working handle; no workers are launched by this catalog update.
+
+
+## Coupled-signature zero-set work - 2026-10-12
+
+One J derivation task resolves the 72 unsettled nonlinear quadratic cases after the 168-case direct certificate: [task and pinned sources](tasks/review-science-20261012.json). This is mathematical work, not a PR snapshot or audit verdict.

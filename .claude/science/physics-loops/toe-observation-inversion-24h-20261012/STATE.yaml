@@ -4,8 +4,8 @@
   "mode": "campaign",
   "delivery": "milestone",
   "runtime_hours": 24,
-  "started_at": null,
-  "deadline_at": null,
+  "started_at": "2026-10-12T11:06:03.933807+00:00",
+  "deadline_at": "2026-10-13T11:06:03.933807+00:00",
   "checkpoint_interval_minutes": 30,
   "deep_block_minutes": 90,
   "base_commit": "a13caa4885f547c8d206265b031ba7649e539fd9",
@@ -20,17 +20,46 @@
   "conditional_surface_status": null,
   "hypothetical_axiom_status": null,
   "admitted_observation_status": null,
-  "claim_type_reason": "Open inverse reconstruction; launch makes no new science claim",
+  "claim_type_reason": "The broad inverse problem remains open; a conditional exact two-body threshold lemma is independently supported.",
   "audit_required_before_effective_retained": true,
   "bare_retained_allowed": false,
-  "cycle_count": 0,
+  "cycle_count": 1,
   "milestone_count": 0,
-  "active_route": "initial observation-to-law target selection",
-  "hard_residual": "Construct an identifiable physical observable bridge for a common candidate law",
-  "review_disposition": "pending",
-  "provisional_dependencies": [],
-  "open_imports": [],
-  "imports_inventory_complete": false,
+  "active_route": "common spatial lattice photon/electron dispersion and asymmetric pair threshold",
+  "hard_residual": "The fixed candidate now has a checked free threshold and tree width; renormalized speed, eight-species identification and detector response block an empirical exclusion.",
+  "review_disposition": "Independent Astra-low v2 source review supports conditional mathematics; final v2 source/input binding and pipeline, strict lint, changed-evidence checks passed. Process-record update gets its own final binding before PR.",
+  "provisional_dependencies": [
+    {
+      "artifact": "THRESHOLD_DERIVATION.md",
+      "state": "focused independent exact-support",
+      "checked_sha256": "e93937ca35136c42c7776ad8ca74abc5032249d2646c566d173967186349c12a"
+    },
+    {
+      "artifact": "THRESHOLD_SUPPLEMENT.md",
+      "state": "focused independent exact-support; domain correction applied",
+      "checked_sha256": "3ff2c897635b3be19672ece158d7054d915f031251f5d377bdf0abdf68aeecc8"
+    },
+    {
+      "artifact": "INTERACTION_RATE_DERIVATION.md",
+      "state": "focused independent agreement; canonical normalization and radiative scope corrected",
+      "checked_sha256": "e35807fa55d31c2a0db03b116c1b2db566a7c53d72a729b1963e4b8a882ac5d7"
+    },
+    {
+      "artifact": "NEAR_THRESHOLD_RATE.md",
+      "state": "focused independent agreement on exact onset; old-chi overlap corrected",
+      "checked_sha256": "f8520df52ab8efb66580415e1db1a02c7eef7c165c4eb311c8ea00ed21119164"
+    }
+  ],
+  "open_imports": [
+    "supplied free photon and massive Dirac symbols",
+    "physical photon/electron and clock identification",
+    "weak gauge interaction and vacuum",
+    "primary experimental extraction models",
+    "renormalized relative photon/electron speed matching",
+    "naive Dirac species identification and atmospheric shower response",
+    "squared-amplitude transition rule and golden-rule interpretation"
+  ],
+  "imports_inventory_complete": true,
   "no_go_routes": [],
   "files_touched": [
     ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/ASSUMPTIONS_AND_IMPORTS.md",
@@ -45,10 +74,28 @@
     ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/LITERATURE_BRIDGES.md",
     ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/ARTIFACT_PLAN.md",
     ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/HANDOFF.md",
-    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/ROUTE_PORTFOLIO.md"
+    ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/ROUTE_PORTFOLIO.md",
+    "docs/PHOTON_ELECTRON_LATTICE_THRESHOLD_AND_RATE_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+    "scripts/photon_electron_threshold_and_rate_2026_10_12.py",
+    "data/photon_electron_inverse_2026_10_12/observations.json",
+    "outputs/photon_electron_inverse_2026_10_12/results.json"
   ],
   "pr_urls": [],
-  "next_exact_action": "Finish route grounding, inspect relevant primary proposal, freeze an inverse-model contract and observation roles, then execute its decisive calculation",
+  "next_exact_action": "Bind the process-only milestone freeze to same-session review and the final combined gate; commit/push a frozen milestone branch and open its PR. Then continue the independently supported Wilson magnetic-response target and focused Cherenkov subtarget.",
   "stop_condition": "Fixed 24-hour deadline, explicit user stop, or evidenced global quality/core-tooling exhaustion",
-  "lock_mode": "explicit campaign-local cooperative lock plus exclusive supervisor guard"
+  "lock_mode": "explicit campaign-local cooperative lock plus exclusive supervisor guard",
+  "packaging_at": "2026-10-13T10:51:03.933807+00:00",
+  "last_checkpoint_at": "2026-10-12T12:22:16.210554+00:00",
+  "current_main_searched": "a13caa4885f547c8d206265b031ba7649e539fd9",
+  "current_block": "exact photon-electron threshold and tree-rate milestone",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "max",
+  "last_author_checks": {
+    "primary_runner": "PASS=6 FAIL=0",
+    "mutation_checks": "six load-bearing mutations failed intended assertions",
+    "fitted_datasets": 0,
+    "empirical_exclusions": 0,
+    "artifact_preflight": "mechanical_status ok, cache_checked true on v2 tree 6666b083c6bcddb84a1d021946c1a3fdefbc6a48",
+    "combined_gate": "v2 pipeline, strict lint and changed-evidence --include-worktree exit0; changed=1 failures=0 control_failures=0"
+  }
 }

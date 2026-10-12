@@ -1,15 +1,25 @@
-# Observation-led TOE reconstruction
+# Observation-to-law target contract
 
-User request: “I want you to reverse engineer the TOE from observations - can you launch a 24 hour campaign on that please”.
+Frozen 2026-10-12 at the first scientific checkpoint, before numerical threshold search or fitting. The author has seen public headline photon energies and LIV timing limits; no blind-validation claim is available.
 
-This is observation-led scientific discovery. The objective is a compact, falsifiable candidate mechanism that explains multiple independent observation families with fewer independently supplied choices. A complete TOE is a research ambition, not a promised result.
+Target: determine whether a common spatial scale in two concrete local kinetic symbols is compatible with measured photon propagation and survival, and identify a cross-observable discriminator against simpler alternatives. Broad TOE reconstruction remains open.
 
-Treat observations as explicit inverse-problem inputs: infer restrictions on candidate dynamics, connect those restrictions to an actual microscopic or effective model, and freeze novel predictions before comparing with observations excluded from construction. Keep empirical inference, model-conditional mathematics, first-principles derivation, and audit status separate. A fitted value is legitimate for inference but cannot count as its own prediction or as a derived constant.
+For k in the three-dimensional Brillouin torus, cutoff energy Lambda=hbar c/a and mu=m_e c^2/Lambda, freeze this finite model grammar:
 
-Start with the current qubit/lattice framework and relevant open proposals as candidates whose observational bridges must be checked. Compare with simpler effective baselines and alternative parameterizations when informative. Do not assume uniqueness or protect a favored candidate from counterexamples. Framework axioms and registered primitives remain fixed; hypotheses, imports, alternative test settings and any price of changing physical premises must be explicit and cannot be adopted as repo authority during this run.
+1. Relativistic null: omega=|k|, epsilon=sqrt(mu^2+|k|^2), on R^3.
+2. Sine-Dirac/Maxwell candidate: omega(k)=2 sqrt(sum sin^2(k_i/2)); epsilon(k)=sqrt(mu^2+sum sin^2(k_i)). A four-component massive Dirac completion and a quadratic transverse gauge field are supplied effective model data.
+3. Common-Laplacian comparator: same omega, epsilon(k)=sqrt(mu^2+omega(k)^2). This is an effective dispersion comparator, without a claimed one-qubit Dirac realization.
 
-The first concrete decision is which observational constraint set and mathematical reconstruction can discriminate candidate laws without importing the desired answer. Prioritize measured responses and correlations over tables of attractive numerical coincidences. Derive a forward prediction, nuisance map, and identifiable combinations for every fitted model. Prefer one bridge that links two observation families over many unrelated fits.
+Physical energies are Lambda times these symbols. The single common cutoff is an unknown to constrain, not an observed target to derive. c and m_e are calibration; lattice orientation is a shared nuisance. Fix both low-energy speeds to c as a candidate restriction. Alternative speed matching, mass mechanism, temporal symbol, interactions and radiative corrections require explicitly different models, not a silent refit.
 
-Runtime: 24 hours from the supervisor's first launch, recorded in STATE.yaml and runtime DEADLINE.json. Discovery ends before the final 15-minute packaging window. Checkpoint every 30 minutes and around long calculations; reserve approximately 90-minute reasoning blocks when productive. Continue through local failures and re-rank useful routes. Honor documented global quality/tooling exhaustion and user stop; never fill time with repeated algebra, busy-waiting, or PR volume.
+Quantified mathematical task: minimize epsilon(p)+epsilon(k-p) over the full torus, including doubler corners and asymmetric splits, and compare with omega(k). Derive the small-mu threshold, angular dependence and controlled error. Connect it to the same model's photon group delay. Where kinematics permit decay, check that an explicit weak gauge interaction has nonzero amplitude and a physically short survival length; do not infer a decay rate from a dispersion alone.
 
-Desired deliverables are an observation/source ledger with uncertainty and inference roles; a ranked, reproducible candidate comparison; the strongest verified construction or discriminating result; explicit unidentifiable quantities and failed routes; meaningful review-ready milestone PRs; and FINAL_REPORT.md with exact remaining obligations. An incomplete result remains useful when its equations, evidence and next decision are concrete.
+Allowed premises: the stated symbols, additive energy and lattice crystal momentum, chosen particle/vacuum identification, and explicit weak-coupling field completion. A_min and the three approved primitives remain their registered content. This is inverse constraint of candidates, not derivation of those suppliers from A_min.
+
+Required cases: symmetric and asymmetric shares; axes, face/body diagonals and general direction; all momentum corners; mu>0 and the singular massless limit; near-threshold versus far-threshold; zero interaction; common-symbol comparator; momentum versus group-ray direction.
+
+Completion witness: an analytic threshold/rate or rigorous bound with independently implemented controls, primary-source observation table with uncertainties and roles, and an explicit surviving/excluded parameter region conditional on the physical bridge. The main target is not reached by Taylor expanding the already-landed timing note, by fitting a small residual, by a synthetic recovery, or by naming the physical identification as a lemma.
+
+Observation roles: gamma-ray detection and timing analyses are discovery/inverse-constraint inputs; m_e,hbar,c and energy units are calibration; detector scale, source timing/shape, propagation and orientation are nuisances. No reused observation counts as an independent prediction. There is no fitted data model yet. If only published bounds are available, report conditional envelope constraints without inventing a joint likelihood or model-selection score.
+
+Success does not establish a TOE, physical lattice, derived electron mass, preferred cutoff, unique microscopic law, or framework retention. A numerical/global proof failure stays an open obligation.

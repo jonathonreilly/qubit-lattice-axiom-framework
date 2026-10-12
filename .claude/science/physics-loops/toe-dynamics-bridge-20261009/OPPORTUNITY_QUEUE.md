@@ -1,9 +1,9 @@
-# Ranked opportunity queue
+# Current opportunity queue
 
-1. Publish the accepted bounded interaction/ground/preparation milestone, including checked linear-ramp sharpness. Source-only author running; root full driver/wrapper review and execution pending.
-2. Complete ground excitation response comparison. Static/resolved spectra work for rough L2; H1 upgrades moments; keep even/full gap and actual-band counterexample scope explicit.
-3. Derive pulse-energy control through exact work for rough observables, with finite smooth pulse versus singular kick controls. New root derivation pending; arrange separate check after seal.
-4. Check spatial connected-correlation decay from actual free propagation plus localized bounded interaction. Separate agent running behind exposure barrier; root candidate frozen.
-5. Package checked corrected-cell quadratic convergence with an appropriate future substantive consumer. New cells insideV change finite-c family; no full-resolvent rate upgrade.
+1. Finish regular interaction/ground/preparation milestone after exact EOF repair; preserve v1 failed verification and all scope limits.
+2. Independently establish native lattice spatial clustering uniform in spacing and translation; direct proof may bypass the nonuniform carrier comparison.
+3. Complete actual pulse-energy and BV time-average comparisons, then consolidate with checked spectral response as a coherent energy-transfer milestone.
+4. Compose continuum/local and native correlation bounds with selected ground/prepared-state controls; separate state errors, center/time limits and energy transfer.
+5. Package checked corrected cells only where improved coefficient rates support a substantive downstream result.
 
-Global open premises: selected microscopic interaction/state/source/protocol, extensive interaction limit, 3D realization and physical selection remain open. No single local blocker ends the campaign. Deadline2026-10-13T16:42:30Z is fixed.
+Total-norm bounded interaction is supplied. Extensive interactions, physical channel/state selection and intended 3D realization remain open. No failed route, scope caveat or original counterexample may be silently removed. Refresh queue after decisive findings, not repeated inventories.

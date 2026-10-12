@@ -9,33 +9,32 @@ automation_id: toe-derivations-24-hour-campaign
 active_branch: physics-loop/toe-finite-energy-20261012
 worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/finite_energy_worktree
 checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
-base_revision: 7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de
+base_revision: 516cb69d8487ff04f8a48e065d3dcbe71d7dd237
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Publish finite-energy lemma; independent energy-transfer/correlation derivations in progress
+active_route: Finite-energy PR9499 published; transfer/correlation synthesis and exact-source review
 cycle: 2
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: 'First renewed milestone: finite-energy lemma already source-reviewed; not yet a science PR'
+milestone: First renewed regular PR published; second coherent science milestone being assembled
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
-independent_checks: Complete current source and separate focused proof review; final finite-energy lemma and explicit
-  multitime counterexample source-reviewed. No Lean or scientific executable for these pure-proof units.
+independent_checks: Transfer, normality and phase reviews complete and fully read by root. Conditional outcomes
+  accepted with source-exposed/same-model limits; exact assembled synthesis review pending.
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_closed_by_concurrent_activity
-active_pr_status: Finite-energy publication preparation pending root execution; parent9498 closed after selective
-  landing
-active_pr_url: null
+active_pr_status: regular_OPEN_isDraft_false; creation-time mergeability UNKNOWN
+active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9499
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
 lock_refresh_before_utc: '2026-10-12T18:30:00+00:00'
-next_action: Inspect frozen publication preparation and execute bounded mechanical checks; compare independently
-  sealed transfer proofs when ready
+next_action: Inspect final synthesis after freeze; bounded local interaction independent derivation newly assigned
+  to dyadic_even_refinement while root derives separately.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -51,7 +50,7 @@ rigidity_published_science_revision: aeee46fa0e2879038eec1b8ee8a1e173ac77518e
 boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9484
 boost_published_science_revision: 773321aa8fdfccc05248682dfc96bf94215034a2
 latest_chiral_revision: 18b7dce754488789eb539d2a6fae3d00d6c37e31
-latest_main_revision: 7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de
+latest_main_revision: 516cb69d8487ff04f8a48e065d3dcbe71d7dd237
 index_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9485
 index_published_science_revision: b8402c17d337f371c0c73696ef170727de9ab5bd
 scattering_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9486
@@ -60,10 +59,10 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-12T17:05:17.176109+00:00'
-latest_source_refresh: '2026-10-12T16:47:29.595212+00:00'
-latest_other_pr: PR9476 also owns interacting d>=2 nonanalytic box-confined Poincare/boost and gravitational Ward;
-  PR9494 owns Wilson observation forwardmap. Ownership only, no endorsement.
+checkpoint_utc: '2026-10-12T17:43:10.560115+00:00'
+latest_source_refresh: '2026-10-12T17:25:51+00:00'
+latest_other_pr: No other open PR at latest prepublication list. Prior9476/9498/9494 closed; prior gravity/chiral
+  ownership remains distinct.
 supplied_chain_published_science_revision: 62d316633190ad2198fdfa91fc52192551990034
 current_mass_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9491
 current_mass_published_science_revision: e26e2de4fd64ee49d0745cbf02fd05355494b569
@@ -71,8 +70,8 @@ local_continuum_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fr
 local_continuum_published_science_revision: a8ab3f49038327e3080d2f93afb7e34601459928
 dyadic_refinement_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9493
 dyadic_refinement_published_science_revision: cb882f7c68032986900dec2aaf24617ff3274c08
-campaign_prs_created: 0
-campaign_prs_currently_open: 0
+campaign_prs_created: 1
+campaign_prs_currently_open: 1
 campaign_prs_closed_by_other_activity:
 - 9478
 - 9479
@@ -95,7 +94,7 @@ energy_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fra
 energy_adapted_published_science_revision: f85656c1766536299c8bafdb91db6dd1dfbd5e2d
 campaign_status: active_user_authorized_renewal
 automation_status: ACTIVE
-active_head: 7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de
+active_head: 173c0d4d281bb67c7795f6bf87d4d25c2b2ed2d3
 sharp_current_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9497
 sharp_current_published_science_revision: 7c0570a4a20a768349f3d88960303f8637e7fe33
 current_preserving_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9498
@@ -104,7 +103,7 @@ lock_status: acquired
 lock_release_receipt: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/campaign_final_inventory/lock_release.json
 final_followup_source_sha256: 648e61978fc5b7d7b84ec6ddc7cb4c6d506405827e7aad1fa80f99cf9211d52c
 final_followup_review_sha256: c1d01c472f0d5520fa575ea639e096ddd2884d97876e876bacdb3afee934f287
-final_followup_status: reviewed_conditional_source_archived_not_a_science_PR
+final_followup_status: published_regular_PR9499
 prior_campaign:
   started_utc: 2026-10-11 16:00:52+00:00
   deadline_utc: 2026-10-12 16:00:52+00:00
@@ -113,8 +112,14 @@ prior_campaign:
   campaign_prs_created: 19
   campaign_prs_currently_open: 6
   active_head: 50cbfeed259d56f6a13235381fceca4d70c94078
+  all_PRs_closed_as_of_latest_prepublication_listing: true
 renewal_number: 1
-startup_status: complete
+startup_status: complete; latest main premise/procedure bytes unchanged
 current_parent_status: Current refinement open_gate on main; mathematical body unchanged from reviewed source
 root_new_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_ROOT_RECONSTRUCTION.md
 root_new_addendum: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/ENERGY_TRANSFER_ROOT_ADDENDUM_A.md
+finite_energy_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9499
+finite_energy_published_science_revision: 173c0d4d281bb67c7795f6bf87d4d25c2b2ed2d3
+root_normal_limit_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOW_ENERGY_NORMAL_LIMIT_ROOT_PROBE.md
+root_phase_rate_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/LOW_ENERGY_PHASE_RATE_ROOT_PROBE.md
+science_synthesis_worker: energy_transfer_synthesis

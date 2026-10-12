@@ -523,3 +523,14 @@ the even space. The elimination polynomial is (2r+1)^20 on (1, 2),
 (2, 1), and (3, 1), and r^10 on (1, 3), (2, 3), and (3, 2). Neither
 depends on s. One swapped-dot generator is not in this count. The
 ten-kernel coefficient span is not classified.
+Cycle 78 shows that one swapped-dot generator plus r times the plus
+cap and s times the minus cap has partner rank 10 at every chirality
+coefficient on every ordered height pair, for every pair of positive
+integers (r, s), for each of the two generators. The swapped-dot
+coordinate is 1 or -1. The matched and scaled coordinates are 2r+2s.
+The two sums are linearly independent. Each lies in neither ratio span
+and outside the even space. The plus-dot elimination polynomial is
+(2r+1)^20 or r^10, and the minus-dot polynomial is r^20 or r^10.
+Neither depends on s. A positive integer scale of the swapped-dot
+generator is not in this count. The ten-kernel coefficient span is
+not classified.

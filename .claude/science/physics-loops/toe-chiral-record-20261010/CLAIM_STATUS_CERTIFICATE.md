@@ -1755,3 +1755,28 @@ and (3, 1), and r^10 on (1, 3), (2, 3), and (3, 2). Neither depends
 on s. The pivot gcd is not this certificate. One swapped-dot generator
 is outside this count. The ten-kernel coefficient span is not
 classified. The 300-dimensional affine space is not classified.
+
+# Claim status certificate — cycle 78
+
+claim_id: chiral_pair_one_swapped_dot_two_cap_multiples_partner_kernel_bounded_theorem_note_2026-10-10
+target_claim_type: bounded_theorem
+actual_current_surface_status: bounded-support
+conditional_surface_status: every ordered height pair; one swapped-dot generator plus every pair of positive cap multiples
+hypothetical_axiom_status: null
+admitted_observation_status: null
+audit_required_before_effective_retained: true
+bare_retained_allowed: false
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+review_loop_disposition: not started; author checks only
+open_imports: The order-blind converse is not applied. The even space is named by the cycle-39 note. The two spans are named by the cycle-32 note. No formation rate is used.
+
+On every ordered height pair, one swapped-dot generator plus r times
+the plus cap and s times the minus cap has swapped-dot coordinate 1 or
+-1 and scaled coordinate 2r+2s. The two sums are linearly independent.
+Every chirality coefficient has partner rank 10. The plus-dot
+elimination polynomial is (2r+1)^20 or r^10, and the minus-dot
+polynomial is r^20 or r^10. Neither depends on s. The pivot gcd is not
+this certificate. A positive integer scale of the swapped-dot generator
+is outside this count. The ten-kernel coefficient span is not
+classified. The 300-dimensional affine space is not classified.

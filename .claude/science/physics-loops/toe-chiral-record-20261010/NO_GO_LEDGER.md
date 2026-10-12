@@ -601,3 +601,13 @@ integer pair has partner rank 10 at every chirality coefficient. The
 swapped-dot coordinate is `0` and the scaled coordinate is `2r+2s`.
 It does not classify one swapped-dot generator, and it does not
 classify the 300-dimensional affine space. This is not an N-gate no-go.
+
+Cycle 78 prunes the reading that some pair of positive integers (r, s),
+added as r times the plus cap and s times the minus cap to one
+swapped-dot generator, has a chirality coefficient with a nonzero
+ten-kernel partner. On every ordered height pair, every positive
+integer pair has partner rank 10 at every chirality coefficient, for
+each of the two generators. The swapped-dot coordinate is `1` or `-1`
+and the scaled coordinate is `2r+2s`. It does not classify a positive
+integer scale of that generator, and it does not classify the
+300-dimensional affine space. This is not an N-gate no-go.

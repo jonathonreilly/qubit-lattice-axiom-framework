@@ -909,3 +909,18 @@ coordinate is 2r+2s. The elimination polynomial is (2r+1)^20 on
 Family not used: one swapped-dot generator plus unequal positive
 multiples of the two caps. The equal-multiple diagonal is settled.
 The 300-dimensional affine space is not this family.
+
+Cycle 78 target contract: whether every pair of positive integers
+(r, s) gives partner rank 10, at every chirality coefficient, for one
+swapped-dot generator plus r times the plus cap and s times the minus
+cap.
+
+Family used: one swapped-dot generator plus every pair of positive cap
+multiples, for each of the two generators. The swapped-dot coordinate
+is 1 or -1 and the scaled coordinate is 2r+2s. The plus-dot
+elimination polynomial is (2r+1)^20 or r^10. The minus-dot polynomial
+is r^20 or r^10.
+
+Family not used: a positive integer scale of one swapped-dot generator
+plus the two cap multiples. The case t = 1 is settled. The
+300-dimensional affine space is not this family.

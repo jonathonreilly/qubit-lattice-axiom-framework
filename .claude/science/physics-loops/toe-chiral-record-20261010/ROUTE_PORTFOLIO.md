@@ -420,3 +420,11 @@ Every chirality coefficient has partner rank 10. The swapped-dot
 coordinate is `0` and the scaled coordinate is `2r+2s`. It does not
 take one swapped-dot generator, and it does not classify the
 300-dimensional affine space.
+
+Cycle 78 takes one swapped-dot generator plus r times the plus cap and
+s times the minus cap, for every pair of positive integers (r, s), for
+each of the two generators. Every chirality coefficient has partner
+rank 10. The swapped-dot coordinate is `1` or `-1` and the scaled
+coordinate is `2r+2s`. It does not take a positive integer scale of
+that generator, and it does not classify the 300-dimensional affine
+space.

@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/chiral_pair_one_swapped_dot_two_cap_multiples_partner_kernel_2026_10_10.py
+runner_sha256: 04474f471e516ea437e4d7aa7e350e2ca702f16f2fd11b58a9fc233c6e89e735
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 175.77
+status: ok
+----- stdout -----
+PASS proper cubic group has order 24
+PASS the alphabet is the chiral pair of two proper orbits
+PASS six axis directions
+PASS on every ordered height pair, one swapped-dot generator plus r times the plus cap and s times the minus cap has swapped-dot coordinate 1 or -1, swapped coordinate -1, orthogonal coordinate 1, transverse-sign and sign-product coordinates s-r, and matched and scaled coordinates 2r+2s, and the two sums are linearly independent
+PASS each sum lies outside the even space and outside both ratio spans for every positive integer pair
+PASS the plus-dot elimination polynomial is (2r+1)^20 on (1, 2), (2, 1), and (3, 1) and r^10 on (1, 3), (2, 3), and (3, 2), and the minus-dot polynomial is r^20 on the source-same pairs and r^10 on the other three, with no positive integer root, so every positive integer pair has partner rank 10 at every chirality coefficient
+PASS the plus-dot sum has rights (1, -3, -2) and (-3, 2, -1), centre pairs (-2-4r, 1) and (0, -1), and kernel cross sum -2-4r against the chirality cap, for every positive integer pair (r, s)
+PASS the minus-dot sum has rights (1, -3, -2) and (-3, 2, -1), centre pairs (-4r, 1) and (0, -1), and kernel cross sum -4r against the chirality cap, for every positive integer pair (r, s)
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

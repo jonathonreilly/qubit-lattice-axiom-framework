@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/ternary_shell_lock_direction_not_forced_2026_10_10.py
+runner_sha256: ca4d91f6db0d13c45f58bf2636fffc7cdfe23960d60cea6c17cffc5edf394769
+input_fingerprint_sha256: 8ee6a38d98f684fb5f946f61ea5f9e047048823d9bb681005f9f29b1aff4d46d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.04
+status: ok
+----- stdout -----
+PASS the proper cubic group has 24 determinant-1 elements and is closed
+PASS every non-identity rotation fixes at most one antipodal pair
+PASS enumeration and the Burnside average both give 57 orbits of the 729 shells
+PASS seven output types partition the shells, and none has type (1,)
+PASS singleton output orbits are an antipodal pair, all six, or none
+PASS the unique-invariant shells are exactly 000000, 111111, and bbbbbb
+PASS each constant shell forces the uniform law and rejects a point mass
+PASS no shell with one through five blanks has a unique invariant law
+PASS a single recorded direction leaves its blank antipode as a second point mass
+PASS swapping 0 with 1 and leaving blanks fixed preserves the output type
+PASS every output orbit is monochromatic, so one orbit requires one color
+PASS on five-blank shells both pole point masses transport, and they disagree
+per_element: checked all 729 ternary shells, all 6 directions, and all 24 proper rotations
+per_site: the shell is one site's neighbor tuple; no second site and no site selector was enumerated
+per_mode: one output action, the soldered six-direction menu; blanks stay colors on that menu
+per_block: the full alphabet {0, 1, blank}; no bond factor and no deleted-blank menu
+lattice_wide: checked and not executed — no infinite lattice, no formation site, and no formation rate
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

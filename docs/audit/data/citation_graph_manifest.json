@@ -1,6 +1,6 @@
 {
- "edge_count": 15455,
- "node_count": 6892,
+ "edge_count": 15485,
+ "node_count": 6909,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -176,6 +176,10 @@
   },
   "accessible_prediction_note": {
    "deps_hash": "ce7f8dd35214",
+   "out_degree": 1
+  },
+  "achiral_zero_one_two_orbit_order_blind_factor_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
   "acphilambda_ambient_scalar_k_blindness_projective_carrier_2026-07-02": {
@@ -2418,6 +2422,10 @@
    "deps_hash": "a2b1fdf02953",
    "out_degree": 3
   },
+  "binary_shell_lock_possibility_not_forced_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "binder_formation_attempt_cycle751_bounded_theorem_note_2026-07-28": {
    "deps_hash": "5ea489d20f21",
    "out_degree": 3
@@ -4378,9 +4386,21 @@
    "deps_hash": "42db6a056a96",
    "out_degree": 2
   },
+  "directed_bond_quadratic_action_channels_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "a66d4817d8d7",
+   "out_degree": 2
+  },
   "directed_ice_sweep_formation_makes_ice_correlations_causal_flux_propagates_as_a_directed_random_walk_bounded_theorem_note_2026-09-22": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "directed_pattern_twist_readout_weights_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "675cb3ef0da6",
+   "out_degree": 3
+  },
+  "directed_stabilizer_six_parameter_chsh_maximum_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "a66d4817d8d7",
+   "out_degree": 2
   },
   "directional_b_density_stencil_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15386,6 +15406,10 @@
    "deps_hash": "f4f3f6286756",
    "out_degree": 2
   },
+  "one_blank_shell_lock_possibility_not_forced_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "one_generation_anomaly_singlet_completion_narrow_theorem_note_2026-05-10": {
    "deps_hash": "3ab31b07251d",
    "out_degree": 1
@@ -15397,6 +15421,10 @@
   "one_link_exponential_moment_bound_bounded_theorem_note_2026-09-24": {
    "deps_hash": "fa64a37ff82b",
    "out_degree": 3
+  },
+  "one_one_two_proper_orbit_equals_mirror_orbit_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "53709bc2a380",
+   "out_degree": 2
   },
   "one_parameter_reduced_shell_law_helpers_umbrella_note_2026-04-13": {
    "deps_hash": "52a20c694372",
@@ -16258,6 +16286,22 @@
    "deps_hash": "658cb3921873",
    "out_degree": 3
   },
+  "plaquette_corner_alternating_sum_not_covariant_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "aa498e3a70d1",
+   "out_degree": 2
+  },
+  "plaquette_corner_circulation_not_forced_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "plaquette_corner_symbol_pair_covariance_only_zero_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "ecad4e4391f3",
+   "out_degree": 3
+  },
+  "plaquette_corner_weight_covariance_only_zero_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "f88bf29a736e",
+   "out_degree": 3
+  },
   "plaquette_environment_contraction_cost_verification_bounded_note_2026-06-12": {
    "deps_hash": "334b38c34257",
    "out_degree": 3
@@ -16926,6 +16970,10 @@
    "deps_hash": "7b707271a9a8",
    "out_degree": 2
   },
+  "product_class_six_axis_pair_chsh_squares_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "b195e1c20342",
+   "out_degree": 4
+  },
   "product_form_premise_weakens_to_outcome_factorization_bounded_note_2026-06-12": {
    "deps_hash": "cbe42f571241",
    "out_degree": 3
@@ -16967,6 +17015,10 @@
    "out_degree": 5
   },
   "proper_cubic_group_is_24_and_contains_no_boost_bounded_theorem_note_2026-08-13": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "proper_cubic_two_qubit_bond_invariants_bounded_theorem_note_2026-10-09": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
@@ -20225,6 +20277,10 @@
   "terminal_center_site_record_diagonal_commit_minimal_carrier_boundary_bounded_theorem_note_2026-08-20": {
    "deps_hash": "7b707271a9a8",
    "out_degree": 2
+  },
+  "ternary_shell_lock_direction_not_forced_bounded_theorem_note_2026-10-10": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   },
   "thales_right_angle_narrow_theorem_note_2026-05-02": {
    "deps_hash": "e3b0c44298fc",
@@ -27569,6 +27625,18 @@
   "zero_mode_and_goegenbauer_limit_bounded_theorem_note_2026-09-24": {
    "deps_hash": "57bdff63d860",
    "out_degree": 4
+  },
+  "zero_one_two_partner_cap_quadratic_pencil_no_unique_nonzero_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "zero_one_two_shifted_cap_factor_unique_nonzero_root_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
+  "zero_one_two_soldered_bond_kappa_not_forced_bounded_theorem_note_2026-10-09": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
   }
  },
  "schema_version": 1

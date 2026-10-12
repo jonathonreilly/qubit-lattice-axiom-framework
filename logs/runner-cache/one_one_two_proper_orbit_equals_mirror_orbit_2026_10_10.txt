@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/one_one_two_proper_orbit_equals_mirror_orbit_2026_10_10.py
+runner_sha256: 598585859db2fbf700063bcf9af1dfb36dbbe15a1f9929d3a2d1e3fee58e8519
+input_fingerprint_sha256: 015dbfcdf0318141bba0b148956e5ba402cf09e6d55572370e8de12da961fab8
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+PASS signed permutations form a group of order 48, with a determinant +1 subgroup of order 24
+PASS proper orbit of (1, 1, 2) has 24 points and equals the full signed-permutation orbit
+PASS one improper mirror fixes (1, 1, 2) and carries every improper image into the proper orbit
+PASS the orbit is exactly the 24 vectors whose absolute values are 1, 1, and 2
+PASS a proper cycle moves the 2 and a proper matrix flips its sign; the (0, 1, 2) mirror does not fix this seed
+PASS the stabilizer has order 2 with exactly one proper element, and no orbit coordinate is 0
+seed: (1, 1, 2)
+proper_orbit_size: 24
+full_orbit_size: 24
+orbits_equal: true
+chiral_pair: false
+mirror: [[0, 1, 0], [1, 0, 0], [0, 0, 1]], det -1, fixes (1, 1, 2)
+stabilizer_order: 2
+proper_stabilizer_order: 1
+selected_law: none
+mass_density: not identified
+per_element: one improper mirror in the stabilizer; every improper image is already proper
+per_site: one record triple; no site was selected
+per_mode: set equality of two orbits; the equality was not adopted as a law
+per_block: absolute values 1, 1, 2; the orbit of (1, 2, 2) was not enumerated
+lattice_wide: checked and not executed — no infinite lattice, no formation site, and no formation rate
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

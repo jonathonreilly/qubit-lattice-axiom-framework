@@ -1,0 +1,7 @@
+L=4  Gauss-law states D=2970  V=0.00  K=1.0
+ground-state winding sector (np.int64(0), np.int64(0))  dim 990  E0 = -8.46758942
+gap to first excitation in sector: 0.380564 ; GS min component (Perron-Frobenius positivity): 2.407e-03
+k=1.5708 qhat^2=2.0000 | (a) m1=16.935179 formula K|mu|^2<U+U^dag>=16.935179 | (b) chi_AA*m1=35.850035 >= |<[C,A]>|^2=35.850035 : True | (c) wmin^2=3.758306 <= m1/chi_CC=3.766692 : True
+k=3.1416 qhat^2=4.0000 | (a) m1=33.870358 formula K|mu|^2<U+U^dag>=33.870358 | (b) chi_AA*m1=71.700071 >= |<[C,A]>|^2=71.700071 : True | (c) wmin^2=5.313525 <= m1/chi_CC=5.475397 : True
+(d) diamagnetic: 20 random twists, min(E0(theta)-E0(0)) = 0.000152, violations = 0
+OMP_NUM_THREADS=2 python3 s2_qlm_ed_inequalities.py 4 0.0  115.58s user 11.34s system 144% cpu 1:27.94 total

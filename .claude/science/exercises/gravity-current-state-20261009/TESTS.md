@@ -5398,3 +5398,15 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **CONFLICT:** a demonstration, refereed if class-wide, that two listed conditions cannot both hold in the stated family.
   - **OPEN:** otherwise.
 - **Expectation.** JOINT without P62 and with a count of about 5–6. CONFLICT or OPEN with P62.
+- **R16-7 (strong-coupling TT stiffness): worker reading NOT-PRODUCED-EVIDENCE in 𝒬_E** (the vector Gauss law conserved exactly); **INCONCLUSIVE overall**. The method was pre-stated in `agents/C5_R16-7_method.md`: exact operator inequalities (f-sum, Bogoliubov, diamagnetic).
+  - **Theorem B (proved).** In 𝒬_E (integer E: rotors or quantum links, qubits included; any penalty size or sign structure), m₁(E_TT) ≤ Ck⁴. So χ_TT ≥ 1/(Ck⁴) at every coupling, and the Einstein–Hilbert 1/k² is excluded non-perturbatively.
+  - **Theorem D (proved).** A stoquastic H in the E basis with conserved scalar charge gives W(k) ≥ 0, so Newtonian attraction needs an E-basis sign problem.
+  - **N0914's model is stoquastic,** so it is sign-free but L-type.
+  - **Dual rotor:** Einstein–Hilbert static response is possible, but it forces z ≤ 2 modes.
+  - **U(1) control:** k⁻² is reproduced as an identity, not as a phase measurement.
+  - **What remains:**
+    - microscopic violation of the vector Gauss law, with gauge structure emerging only under RG (P-r16-7a);
+    - a sign problem or scalar-law violation (P-r16-7b);
+    - small-N clocks.
+
+  Referee running.

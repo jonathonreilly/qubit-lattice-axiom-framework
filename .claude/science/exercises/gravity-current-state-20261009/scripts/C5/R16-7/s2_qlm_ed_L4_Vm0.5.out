@@ -1,0 +1,6 @@
+L=4  Gauss-law states D=2970  V=-0.50  K=1.0
+ground-state winding sector (np.int64(0), np.int64(0))  dim 990  E0 = -13.41611048
+gap to first excitation in sector: 0.441575 ; GS min component (Perron-Frobenius positivity): 8.720e-04
+k=1.5708 qhat^2=2.0000 | (a) m1=16.012489 formula K|mu|^2<U+U^dag>=16.012489 | (b) chi_AA*m1=32.049974 >= |<[C,A]>|^2=32.049974 : True | (c) wmin^2=5.889518 <= m1/chi_CC=6.065363 : True
+k=3.1416 qhat^2=4.0000 | (a) m1=32.024977 formula K|mu|^2<U+U^dag>=32.024977 | (b) chi_AA*m1=64.099948 >= |<[C,A]>|^2=64.099948 : True | (c) wmin^2=8.410164 <= m1/chi_CC=8.928189 : True
+(d) diamagnetic: 20 random twists, min(E0(theta)-E0(0)) = 0.000158, violations = 0

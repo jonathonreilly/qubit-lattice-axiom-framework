@@ -1,0 +1,94 @@
+[1] causality and stability of the damped TT propagator 1/(k^2 - w^2 - i g w)
+    max Im(w) over poles, k in [1e-6,1e3], g in {1e-3,1,10}: -1.000e-13 (<= 0: analytic in upper half-plane -> retarded/causal)
+    r=0.1: int_0^inf G dt = delta part 0.756964 + tail 0.038747 = 0.795711 ; 1/(4 pi r) = 0.795775
+    r=1.0: int_0^inf G dt = delta part 0.048266 + tail 0.031248 = 0.079514 ; 1/(4 pi r) = 0.079577
+    r=5.0: int_0^inf G dt = delta part 0.001306 + tail 0.014546 = 0.015852 ; 1/(4 pi r) = 0.015915
+    (t,r)=(0.5,1.0): inverse-transform G = +0.00000  analytic tail = +0.00000  (outside the cone)
+    (t,r)=(3.0,1.0): inverse-transform G = +0.00282  analytic tail = +0.00282  (inside the cone)
+    (t,r)=(6.0,2.0): inverse-transform G = +0.00119  analytic tail = +0.00119  (inside the cone)
+    boosted frames v up to 0.999, 16000 random real k': max Im(w') = -9.998e-12 (<= 0: no growing mode in any frame)
+
+[2] c_T: dispersion w^2 + i g w = c^2 k^2 for real w
+    gamma=  1.0 H0, 100 Hz: (v_ph-c)/c = -g^2/8w^2 = -1.53e-42; (v_g-c)/c = +1.53e-42 (analytic; below double precision numerically); front velocity = c
+    gamma=  3.0 H0, 100 Hz: (v_ph-c)/c = -g^2/8w^2 = -1.38e-41; (v_g-c)/c = +1.38e-41 (analytic; below double precision numerically); front velocity = c
+    gamma= 60.0 H0, 100 Hz: (v_ph-c)/c = -g^2/8w^2 = -5.52e-39; (v_g-c)/c = +5.52e-39 (analytic; below double precision numerically); front velocity = c
+    GW170817 lag over 40 Mpc at gamma=H0: 6.3e-27 s vs 1.74 s; |dv/c| bound 3e-15 -> gamma_max(c_T) = 9.73e-05 s^-1 = 4.4e+13 H0
+
+[3] radiated power at the source: P(g)/P(0) = int k^2 dk A(k) ImG(Om,k) / (pi Om A(Om)/2), A = exp(-k^2 a^2)
+    g/Om=1e-01, a*Om=1e-03: P(g)/P(0) - 1 = +1.133e-03
+    g/Om=1e-01, a*Om=1e-01: P(g)/P(0) - 1 = -9.951e-03
+    g/Om=1e-02, a*Om=1e-03: P(g)/P(0) - 1 = +1.216e-06
+    g/Om=1e-02, a*Om=1e-01: P(g)/P(0) - 1 = -1.112e-03
+    g/Om=1e-04, a*Om=1e-03: P(g)/P(0) - 1 = -1.116e-07
+    g/Om=1e-04, a*Om=1e-01: P(g)/P(0) - 1 = -1.124e-05
+    g/Om=1e-06, a*Om=1e-03: P(g)/P(0) - 1 = -1.048e-09
+    g/Om=1e-06, a*Om=1e-01: P(g)/P(0) - 1 = -1.124e-07
+    constant A: exact (pi/2) Re sqrt(Om^2 + i g Om) -> ratio = 1.0012461141 at g/Om=1e-01 (1 + g^2/8Om^2 = 1.0012500000)
+    constant A: exact (pi/2) Re sqrt(Om^2 + i g Om) -> ratio = 1.0000124996 at g/Om=1e-02 (1 + g^2/8Om^2 = 1.0000125000)
+    Hulse-Taylor B1913+16: Omega_GW = 4.503e-04 s^-1; gamma/Omega at gamma=H0 = 4.9e-15; fractional power change <~ (gamma/Omega) = 4.9e-15 vs test precision 1.6e-03
+    double pulsar J0737-3039: Omega_GW = 1.422e-03 s^-1; gamma/Omega at gamma=H0 = 1.5e-15; fractional power change <~ (gamma/Omega) = 1.5e-15 vs test precision 1.3e-04
+
+[4] standard sirens: amplitude ~ e^{-gamma t_prop/2}; d_L^GW = d_L^EM exp(gamma t_lb(z)/2) (friction in cosmic time)
+    H0 = 67.9 km/s/Mpc; Lu et al. beta (energy rate, h ~ e^(-beta D/2)) = gamma/c: at gamma=H0 beta = 2.26e-04 Mpc^-1 vs 95% bound 6.75e-4 -> gamma_max = 2.98 H0
+    GW170817-only bound (Lu et al. Table I) beta < 1.408e-2 Mpc^-1 -> gamma_max = 62 H0
+    gamma=1.0 H0: d_L^GW/d_L^EM  z=0.0098: 1.0049; z=0.1: 1.0476; z=0.3: 1.1299; z=0.5: 1.1970; z=1.0: 1.3162; z=3.0: 1.4967; z=20.0: 1.6023
+    gamma=3.0 H0: d_L^GW/d_L^EM  z=0.0098: 1.0147; z=0.1: 1.1499; z=0.3: 1.4424; z=0.5: 1.7152; z=1.0: 2.2800; z=3.0: 3.3524; z=20.0: 4.1134
+    comparator: GWTC-3 dark sirens Xi_0 = 1.2 +- 0.7 (flat prior, 68%; Mancarella et al., web snippet); Xi_0 ~ ratio at z>>1
+
+[5] static limit and moving sources
+    G(w=0,k) = 1/k^2 exactly for every gamma (friction term ~ w): Newtonian static limit unchanged [exact]
+    1 AU, w=370 km/s: IF friction acted on the scalar potential, frame-dipole correction gamma w r/(2c^2) = 6.8e-19 (gamma=H0)
+    binary-pulsar orbit 1e9 m: IF friction acted on the scalar potential, frame-dipole correction gamma w r/(2c^2) = 4.5e-21 (gamma=H0)
+    Galaxy 10 kpc, 300 km/s: IF friction acted on the scalar potential, frame-dipole correction gamma w r/(2c^2) = 1.1e-09 (gamma=H0)
+    TT-only friction (E2 as specified): moving-source TT field is O(w^2/c^2) = 1.5e-06 of U; friction alters it by gamma w r/c^2:
+      effective PPN-type term at 1 AU ~ 2.1e-24 U  vs alpha_2-type bound 1.6e-9 x (w/c)^2 = 2.4e-15 U
+    scalar-sector friction would give self-drag rate (2 gamma |U|/3Mc^2) for Sun: 1.9e-24 s^-1 (dv/v over t_H = 8.1e-07); TT-only: O((w/c)^4) smaller
+    scalar-sector friction would give self-drag rate (2 gamma |U|/3Mc^2) for neutron star: 2.2e-19 s^-1 (dv/v over t_H = 9.6e-02); TT-only: O((w/c)^4) smaller
+
+[6] explicit causal near-cone meter bank, one frame mode (u = w - c|k| in units of the band edge delta = 1)
+    synthesis identity: (1/pi) int t^-1/2/(x+t) dt = 1000.000000 vs 1/sqrt(x) = 1000.000000
+    synthesis identity: (1/pi) int t^-1/2/(x+t) dt = 10.000000 vs 1/sqrt(x) = 10.000000
+    synthesis identity: (1/pi) int t^-1/2/(x+t) dt = 1.000000 vs 1/sqrt(x) = 1.000000
+    synthesis identity: (1/pi) int t^-1/2/(x+t) dt = 0.100000 vs 1/sqrt(x) = 0.100000
+    bank: 65 elements, Gamma in [2e-08, 1], lambda_i = c_i = Gamma_i^1/2; excess X = P D/(|F|^2/4): min 1.000 max 2.467 (>= 1 is H-T; bounded)
+    inside the band (1e-6<|u|<1e-2): d ln P_eff/d ln|u| = 1.000 (target +1), d ln D/d ln|u| = -1.000 (target -1)
+    at the cone (u=0): P_eff = 6.049e-10, D = 4.133e+08 (both finite: floor set by Gamma_min ~ 2b)
+    b=1e-04: int M du = 2.07, int D du = 90.45, 2 ln(1/b) = 18.4  (both finite, both ~ L; product/L^2 = 0.551)
+    b=1e-08: int M du = 4.15, int D du = 190.94, 2 ln(1/b) = 36.8  (both finite, both ~ L; product/L^2 = 0.584)
+    b=1e-12: int M du = 6.23, int D du = 291.46, 2 ln(1/b) = 55.3  (both finite, both ~ L; product/L^2 = 0.595)
+
+[7] two-tone element: J(t) = cos(Om t) n_c(t) + sin(Om t) n_s(t), n_c, n_s iid stationary -> J stationary
+    absolute time index 1000: <J(t)J(t-37dt)> = -0.1823 +- 0.0081; stationary prediction e^(-lag dt) cos(Om lag dt) = -0.1904
+    absolute time index 1031: <J(t)J(t-37dt)> = -0.1956 +- 0.0080; stationary prediction e^(-lag dt) cos(Om lag dt) = -0.1904
+
+[8] Lamb-string sink: mode q (mass m=1, freq Om) attached to a semi-infinite string (impedance Z): friction g = Z/m
+    Z=0.05: fitted energy decay rate of the mode = 0.0500 (Ohmic prediction g = Z/m = 0.0500); mode energy lost 0.4684 vs work delivered into the string 0.4684 (mismatch 1.7e-04); string-energy estimator 0.4681
+    Z=0.1: fitted energy decay rate of the mode = 0.1002 (Ohmic prediction g = Z/m = 0.1000); mode energy lost 0.4983 vs work delivered into the string 0.4987 (mismatch 9.3e-04); string-energy estimator 0.4982
+
+[9] sink and cosmology
+    Hawking viscous fluid with gamma = 1.0 H0: eta = gamma c^2/(16 pi G) = 5.89e+07 Pa s; kinetic estimate eta ~ rho c l/3 with rho <= rho_crit -> l_mfp >= 6.9e+25 m = 2249 Mpc (>> lambda_GW ~ 3e6 m at 100 Hz and >> ell: hydrodynamic damping not available)
+    Hawking viscous fluid with gamma = 3.0 H0: eta = gamma c^2/(16 pi G) = 1.77e+08 Pa s; kinetic estimate eta ~ rho c l/3 with rho <= rho_crit -> l_mfp >= 2.1e+26 m = 6746 Mpc (>> lambda_GW ~ 3e6 m at 100 Hz and >> ell: hydrodynamic damping not available)
+    Ohmic bath (oscillators at rest in the frame, no gradient energy) -> pressureless sink: rho_s' + 3H rho_s = gamma rho_GW -> steady rho_s = (gamma/3H) rho_GW
+    ell=1e-08 m: L_g = ln(2w/H0) = 79.3; rho_GW(eps=1) = 8.08e+06 J/m^3 = 1.5e+16 rho_L; (GW+sink) < rho_L needs eps < 4.9e-17
+    ell=2e-07 m: L_g = ln(2w/H0) = 76.3; rho_GW(eps=1) = 4.86e+01 J/m^3 = 9.2e+10 rho_L; (GW+sink) < rho_L needs eps < 8.1e-12
+    ell=1e-06 m: L_g = ln(2w/H0) = 74.7; rho_GW(eps=1) = 7.62e-02 J/m^3 = 1.4e+08 rho_L; (GW+sink) < rho_L needs eps < 5.2e-09
+    ell=5e-06 m: L_g = ln(2w/H0) = 73.1; rho_GW(eps=1) = 1.19e-04 J/m^3 = 2.3e+05 rho_L; (GW+sink) < rho_L needs eps < 3.3e-06
+    gamma = 1e-10 H0: L_g at ell = 1e-6 m = 97.7
+    gamma = 1e-02 H0: L_g at ell = 1e-6 m = 79.3
+    gamma = 1e+00 H0: L_g at ell = 1e-6 m = 74.7
+    gamma = 3e+00 H0: L_g at ell = 1e-6 m = 73.6
+
+[10] lab kernels and the TT projector
+    lab w=1e+03 s^-1, ck=c/ell=6.0e+13 s^-1: gamma w/(ck)^2 = 6.1e-43; |G_g|^2/|G_R|^2 - 1 ~ -(gamma w/s)^2 = -3.7e-85 (subtraction: undamped kernel)
+    lab w=1e-03 s^-1, ck=c/ell=7.5e+17 s^-1: gamma w/(ck)^2 = 3.9e-57; |G_g|^2/|G_R|^2 - 1 ~ -(gamma w/s)^2 = -1.5e-113 (subtraction: undamped kernel)
+    D=e1e1 f(r), f=0 for r>1: (Lambda^TT D)_11 at (0,2.0,0) = -1.893e-03, at (2.0,0,0) = +1.186e-02; f(0)=1.0  (nonzero outside the support: the TT projection is instantaneous and non-local)
+    D=e1e1 f(r), f=0 for r>1: (Lambda^TT D)_11 at (0,3.0,0) = -4.938e-04, at (3.0,0,0) = +3.670e-03; f(0)=1.0  (nonzero outside the support: the TT projection is instantaneous and non-local)
+    D=e1e1 f(r), f=0 for r>1: (Lambda^TT D)_11 at (0,5.0,0) = -8.761e-05, at (5.0,0,0) = +8.267e-04; f(0)=1.0  (nonzero outside the support: the TT projection is instantaneous and non-local)
+
+[11] sink fluctuation noise: if the Ohmic sink carried zero-point (FDT) noise S = 2 gamma hbar w into h,
+     each near-cone mode would hold int |G_g|^2 S ds/(2pi) ~ hbar w/2 independent of gamma -> rho ~ hbar c/(16 pi^2 ell^4)
+    check: int |G_g|^2 (2 g w) ds/(2 pi) = 1.0000 (-> 1/2 x [units hbar w per unit s-measure], gamma-independent)
+    ell=1e-08 m: rho_zp = 2.00e+04 J/m^3 = 3.8e+13 rho_L  (a noisy quantum sink breaks the epsilon budget; a classical T=0 outgoing-only sink adds none)
+    ell=2e-07 m: rho_zp = 1.25e-01 J/m^3 = 2.4e+08 rho_L  (a noisy quantum sink breaks the epsilon budget; a classical T=0 outgoing-only sink adds none)
+    ell=1e-06 m: rho_zp = 2.00e-04 J/m^3 = 3.8e+05 rho_L  (a noisy quantum sink breaks the epsilon budget; a classical T=0 outgoing-only sink adds none)
+    ell=5e-06 m: rho_zp = 3.20e-07 J/m^3 = 6.1e+02 rho_L  (a noisy quantum sink breaks the epsilon budget; a classical T=0 outgoing-only sink adds none)

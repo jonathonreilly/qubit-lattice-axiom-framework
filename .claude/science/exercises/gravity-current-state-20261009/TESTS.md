@@ -4549,3 +4549,10 @@ Readings:
   - The only window left is compact, non-Gaussian, stabilized-scalar phases.
 
   Referee running.
+- **R12-7 (GW friction CQ route):** worker reading OPEN.
+  - The friction law passes every stated observational test for γ ≤ H₀ and ℓ_s in R6-4's window.
+  - Causality: friction must act on the full harmonic-gauge metric; TT-only friction is acausal.
+  - The sink: a noiseless classical sink is required, and it must gravitate.
+  - Why not VIABLE: the energy budget forces near-cone suppression ε ≤ 5e-17 to 3e-6, which brings back R11-5's assumed coefficients.
+
+  Referee running.

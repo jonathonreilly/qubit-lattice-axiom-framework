@@ -1,0 +1,19 @@
+M spectrum min = 0.8500000000 (target 0.85); NP = 640 on [-2.4, 2.4), NQ = 241
+(i) bound-state packet, P-support |P| < 0.25; exact range eta* = asinh(Pi1/M_b) - asinh(a/M_b) = 0.3674
+    eta = 0.10 : ||U_lat - U_BT|| psi = 1.15e-06   bound 2||(1-E)psi|| = 0.00e+00   (BT integrator vs analytic transport 1.3e-05)
+    eta = 0.20 : ||U_lat - U_BT|| psi = 1.12e-06   bound 2||(1-E)psi|| = 0.00e+00   (BT integrator vs analytic transport 1.3e-05)
+    eta = 0.30 : ||U_lat - U_BT|| psi = 1.30e-06   bound 2||(1-E)psi|| = 0.00e+00   (BT integrator vs analytic transport 1.8e-05)
+    eta = 0.37 : ||U_lat - U_BT|| psi = 1.55e-06   bound 2||(1-E)psi|| = 0.00e+00   (BT integrator vs analytic transport 1.7e-05)
+    eta = 0.45 : ||U_lat - U_BT|| psi = 2.04e-06   bound 2||(1-E)psi|| = 2.18e-01   (BT integrator vs analytic transport 2.0e-05)
+    eta = 0.60 : ||U_lat - U_BT|| psi = 2.35e-03   bound 2||(1-E)psi|| = 1.17e+00   (BT integrator vs analytic transport 1.6e-05)
+    eta = 0.80 : ||U_lat - U_BT|| psi = 4.95e-02   bound 2||(1-E)psi|| = 1.89e+00   (BT integrator vs analytic transport 2.4e-05)
+    eta = 1.00 : ||U_lat - U_BT|| psi = 1.33e-01   bound 2||(1-E)psi|| = 2.00e+00   (BT integrator vs analytic transport 2.7e-05)
+(ii) mixed packet (bound + two continuum levels mu = 1.0002, 1.0050), Gaussian in P, sigma = 0.07, P0 = -0.1
+    eta = 0.10 : ||U_lat - U_BT|| psi = 1.17e-09   optimised bound 2||(1-E)psi|| = 2.88e-04   OK
+    eta = 0.20 : ||U_lat - U_BT|| psi = 1.50e-07   optimised bound 2||(1-E)psi|| = 1.16e-02   OK
+    eta = 0.30 : ||U_lat - U_BT|| psi = 6.72e-06   optimised bound 2||(1-E)psi|| = 1.61e-01   OK
+    eta = 0.37 : ||U_lat - U_BT|| psi = 5.67e-05   optimised bound 2||(1-E)psi|| = 5.62e-01   OK
+    eta = 0.45 : ||U_lat - U_BT|| psi = 4.10e-04   optimised bound 2||(1-E)psi|| = 1.28e+00   OK
+    eta = 0.60 : ||U_lat - U_BT|| psi = 5.69e-03   optimised bound 2||(1-E)psi|| = 1.89e+00   OK
+    eta = 0.80 : ||U_lat - U_BT|| psi = 4.04e-02   optimised bound 2||(1-E)psi|| = 2.00e+00   OK
+    eta = 1.00 : ||U_lat - U_BT|| psi = 1.04e-01   optimised bound 2||(1-E)psi|| = 2.00e+00   OK

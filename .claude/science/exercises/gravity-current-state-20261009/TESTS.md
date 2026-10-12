@@ -4805,3 +4805,11 @@ Readings:
   - The earlier "≥ 6" undercounts.
 
   Referee running.
+- **R14-1 (subluminal box recheck):** worker reading PASS. The listed box results survive at b = 1.4 by restriction to in-box states. The reruns are confirmed, and the rapidity budget falls by 0.357.
+  - **New: exact doublers** in R13-4's b = 1.4 law. Every particle has 7 exact relativistic copies in d = 3.
+  - **Lemma V needs re-scoping.** It covers odd-symbol bands only. Gapped even bands with 0 ≤ h′ ≤ 1 are subluminal for any b < π (R8-2's gapped band already is).
+  - **In subluminal families A ≤ 0 everywhere,** so R9-9's Ξ < 0.
+  - **R9-2's shear cancellation (t*) used a superluminal edge.** Every subluminal edge tried gives μ_E > 0.
+  - **A subluminal Wilson-box Dirac exists,** but with light doublers.
+
+  Referee running.

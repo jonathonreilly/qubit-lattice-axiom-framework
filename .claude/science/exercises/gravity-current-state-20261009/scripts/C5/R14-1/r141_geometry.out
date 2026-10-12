@@ -1,0 +1,22 @@
+(i) B = 1.40, Pi1 = 0.60: legs stay in the open ball |k| < B for all |P| < Pi1, |q| < Q iff Q <~ 1.0659 (sampled); kappa = 0.80
+    max |leg| over |q| <= kappa: |P| <= 1.2 (R9-6 Pi2): 1.5481 ; |P| <= 0.95 (R14-1 Pi2): 1.3707  (ball edge B = 1.4)
+(ii) B = 1.40, axis          : some leg with |q| <= kappa first touches the cube face at |P| = 0.993
+(ii) B = 1.40, face diagonal : some leg with |q| <= kappa first touches the cube face at |P| = 1.404
+(ii) B = 1.40, body diagonal : some leg with |q| <= kappa first touches the cube face at |P| = 1.719
+(ii) B = 1.40, ball |k| < B: first touched at |P| = 0.993 (every direction)
+(iii) boost budget at rest, mass 0.50, cube B = 2.6, axis          : eta* = asinh(B/(m max|n_a|)) = 2.3509
+(iii) boost budget at rest, mass 0.50, cube B = 2.6, face diagonal : eta* = asinh(B/(m max|n_a|)) = 2.6930
+(iii) boost budget at rest, mass 0.50, cube B = 2.6, body diagonal : eta* = asinh(B/(m max|n_a|)) = 2.8942
+(iii) boost budget at rest, mass 0.50, ball B = 2.6, every direction: eta* = 2.3509
+(iii) boost budget at rest, mass 0.85, cube B = 2.6, axis          : eta* = asinh(B/(m max|n_a|)) = 1.8369
+(iii) boost budget at rest, mass 0.85, cube B = 2.6, face diagonal : eta* = asinh(B/(m max|n_a|)) = 2.1709
+(iii) boost budget at rest, mass 0.85, cube B = 2.6, body diagonal : eta* = asinh(B/(m max|n_a|)) = 2.3693
+(iii) boost budget at rest, mass 0.85, ball B = 2.6, every direction: eta* = 1.8369
+(iii) boost budget at rest, mass 0.50, cube B = 1.4, axis          : eta* = asinh(B/(m max|n_a|)) = 1.7532
+(iii) boost budget at rest, mass 0.50, cube B = 1.4, face diagonal : eta* = asinh(B/(m max|n_a|)) = 2.0849
+(iii) boost budget at rest, mass 0.50, cube B = 1.4, body diagonal : eta* = asinh(B/(m max|n_a|)) = 2.2825
+(iii) boost budget at rest, mass 0.50, ball B = 1.4, every direction: eta* = 1.7532
+(iii) boost budget at rest, mass 0.85, cube B = 1.4, axis          : eta* = asinh(B/(m max|n_a|)) = 1.2737
+(iii) boost budget at rest, mass 0.85, cube B = 1.4, face diagonal : eta* = asinh(B/(m max|n_a|)) = 1.5819
+(iii) boost budget at rest, mass 0.85, cube B = 1.4, body diagonal : eta* = asinh(B/(m max|n_a|)) = 1.7708
+(iii) boost budget at rest, mass 0.85, ball B = 1.4, every direction: eta* = 1.2737

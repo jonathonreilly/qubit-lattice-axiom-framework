@@ -1,0 +1,24 @@
+mu_E(Z, d=3) profile S14 m=1.0: N=160: +5.192117e-03  N=320: +5.065754e-03  N=480: +5.063092e-03
+mu_E(Z, d=3) profile S14 m=0.3: N=160: +7.200692e-03  N=320: +7.059063e-03  N=480: +7.056032e-03
+mu_E(Z, d=3) profile G14 m=1.0: N=160: +3.525432e-03  N=320: +3.525432e-03  N=480: +3.525432e-03
+mu_E(Z, d=3) profile G14 m=0.3: N=160: +4.252013e-03  N=320: +4.252013e-03  N=480: +4.252013e-03
+mu_E(Z, d=3) profile G   m=1.0: N=160: +7.976081e-03  N=320: +7.976056e-03  N=480: +7.976056e-03
+mu_E(Z, d=3) profile G   m=0.3: N=160: +9.048272e-03  N=320: +9.048246e-03  N=480: +9.048246e-03
+mu_E(Z, d=3) profile L   m=1.0: N=160: -2.056527e-01  N=320: -2.056511e-01  N=480: -2.056511e-01
+mu_E(Z, d=3) profile L   m=0.3: N=160: -3.260493e-01  N=320: -3.260475e-01  N=480: -3.260475e-01
+tuned-edge family m=1.0 t=0.000000: v_max (axis, d=1) = 3.1315
+tuned-edge family m=1.0 t=0.100000: v_max (axis, d=1) = 2.5037
+tuned-edge family m=1.0 t=0.200000: v_max (axis, d=1) = 1.9895
+tuned-edge family m=1.0 t=0.287922: v_max (axis, d=1) = 1.5949   <- root t*
+tuned-edge family m=1.0 t=0.400000: v_max (axis, d=1) = 1.1459
+tuned-edge family m=1.0 t=0.600000: v_max (axis, d=1) = 0.9012
+tuned-edge family m=1.0 t=0.800000: v_max (axis, d=1) = 0.9017
+tuned-edge family m=1.0 t=1.000000: v_max (axis, d=1) = 0.9080
+tuned-edge family m=0.3 t=0.000000: v_max (axis, d=1) = 4.0077
+tuned-edge family m=0.3 t=0.100000: v_max (axis, d=1) = 2.9587
+tuned-edge family m=0.3 t=0.200000: v_max (axis, d=1) = 2.2771
+tuned-edge family m=0.3 t=0.297708: v_max (axis, d=1) = 1.7459   <- root t*
+tuned-edge family m=0.3 t=0.400000: v_max (axis, d=1) = 1.2711
+tuned-edge family m=0.3 t=0.600000: v_max (axis, d=1) = 0.9896
+tuned-edge family m=0.3 t=0.800000: v_max (axis, d=1) = 0.9897
+tuned-edge family m=0.3 t=1.000000: v_max (axis, d=1) = 0.9902

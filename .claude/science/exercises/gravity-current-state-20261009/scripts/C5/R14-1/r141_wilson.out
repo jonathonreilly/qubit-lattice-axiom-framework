@@ -1,0 +1,27 @@
+b=1.4 m=0.1 r=1.000: W_pi = 0.1650; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.265 0.430 0.595; v_max d=1 1.0000, d=3 grid 1.0004, lines 1.0012 1.0016; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.4 m=0.1 r=0.700: W_pi = 0.1155; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.216 0.331 0.447; v_max d=1 0.9988, d=3 grid 1.0000, lines 1.0000 1.0004; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.4 m=0.1 r=0.577: W_pi = 0.0953; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.195 0.291 0.386; v_max d=1 0.9984, d=3 grid 0.9998, lines 0.9996 1.0000; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.4 m=0.1 r=0.500: W_pi = 0.0825; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.183 0.265 0.348; v_max d=1 0.9982, d=3 grid 0.9997, lines 0.9994 0.9998; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.4 m=0.3 r=1.000: W_pi = 0.1650; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.465 0.630 0.795; v_max d=1 1.0000, d=3 grid 1.0238, lines 1.0107 1.0145; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.4 m=0.3 r=0.700: W_pi = 0.1155; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.416 0.531 0.647; v_max d=1 0.9894, d=3 grid 0.9956, lines 0.9998 1.0034; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.4 m=0.3 r=0.577: W_pi = 0.0953; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.395 0.491 0.586; v_max d=1 0.9862, d=3 grid 0.9950, lines 0.9965 1.0000; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.4 m=0.3 r=0.500: W_pi = 0.0825; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.383 0.465 0.548; v_max d=1 0.9844, d=3 grid 0.9947, lines 0.9947 0.9982; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.2 m=0.1 r=1.000: W_pi = 0.3583; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.458 0.817 1.175; v_max d=1 1.0000, d=3 grid 1.0295, lines 1.0016 1.0021; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.2 m=0.1 r=0.700: W_pi = 0.2508; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.351 0.602 0.852; v_max d=1 0.9985, d=3 grid 1.0001, lines 1.0000 1.0005; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.2 m=0.1 r=0.577: W_pi = 0.2068; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.307 0.514 0.721; v_max d=1 0.9980, d=3 grid 0.9998, lines 0.9995 1.0000; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.2 m=0.1 r=0.500: W_pi = 0.1791; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.279 0.458 0.637; v_max d=1 0.9977, d=3 grid 0.9997, lines 0.9992 0.9997; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.2 m=0.3 r=1.000: W_pi = 0.3583; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.658 1.017 1.375; v_max d=1 1.0000, d=3 grid 1.0530, lines 1.0134 1.0188; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.2 m=0.3 r=0.700: W_pi = 0.2508; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.551 0.802 1.052; v_max d=1 0.9872, d=3 grid 1.0041, lines 0.9997 1.0042; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.2 m=0.3 r=0.577: W_pi = 0.2068; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.507 0.714 0.921; v_max d=1 0.9831, d=3 grid 0.9999, lines 0.9957 1.0000; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.2 m=0.3 r=0.500: W_pi = 0.1791; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.479 0.658 0.837; v_max d=1 0.9809, d=3 grid 0.9973, lines 0.9935 0.9978; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.0 m=0.1 r=1.000: W_pi = 0.5515; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.651 1.203 1.754; v_max d=1 1.0000, d=3 grid 1.0663, lines 1.0021 1.0029; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.0 m=0.1 r=0.700: W_pi = 0.3860; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.486 0.872 1.258; v_max d=1 0.9980, d=3 grid 1.0001, lines 1.0000 1.0006; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.0 m=0.1 r=0.577: W_pi = 0.3184; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.418 0.737 1.055; v_max d=1 0.9974, d=3 grid 0.9997, lines 0.9993 1.0000; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.0 m=0.1 r=0.500: W_pi = 0.2757; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.376 0.651 0.927; v_max d=1 0.9971, d=3 grid 0.9995, lines 0.9990 0.9997; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.0 m=0.3 r=1.000: W_pi = 0.5515; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.851 1.403 1.954; v_max d=1 1.0000, d=3 grid 1.1017, lines 1.0172 1.0255; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.0 m=0.3 r=0.700: W_pi = 0.3860; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.686 1.072 1.458; v_max d=1 0.9841, d=3 grid 1.0052, lines 0.9997 1.0054; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.0 m=0.3 r=0.577: W_pi = 0.3184; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.618 0.937 1.255; v_max d=1 0.9791, d=3 grid 0.9986, lines 0.9945 1.0000; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+b=1.0 m=0.3 r=0.500: W_pi = 0.2757; corner masses m+W_pi, m+2W_pi, m+3W_pi = 0.576 0.851 1.127; v_max d=1 0.9764, d=3 grid 0.9966, lines 0.9918 0.9972; box: max|W| 0.0e+00 max|s-k| 4.4e-16
+kernel |W|(r) (odd r; W - W_pi/2 is pi-antiperiodic so even r vanish): r=1:5.2e-02 r=9:5.1e-03 r=33:1.1e-04 r=65:5.6e-06 r=129:2.3e-08 r=257:3.9e-09 r=513:4.9e-11
+kernel |s|(r) (odd r; s(k+pi) = -s(k)): r=1:6.4e-01 r=9:6.9e-03 r=33:3.6e-05 r=65:4.9e-07 r=129:9.1e-08 r=257:4.7e-10 r=513:6.6e-13
+note: W has a sqrt-type C^inf profile (sqrt(4 st(1-st)) of a Gevrey step); its kernel is the check of quasi-locality.

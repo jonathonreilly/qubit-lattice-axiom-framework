@@ -1,0 +1,10 @@
+R8-1/R9-2 d=1 (kappa=0.4, Pi 0.6/1.2): max leg on supp W (|P|<=Pi2) = 1.1482; on plateau (|P|<=Pi1) = 0.7417; Pmax for legs<b: b=2.6 3.103, b=2.0 2.336, b=1.4 1.546, b=1.2 1.272
+R8-1 d=2 mass, R9-6, R11-4 (kappa=0.8, Pi 0.6/1.2): max leg on supp W (|P|<=Pi2) = 1.5481; on plateau (|P|<=Pi1) = 1.1395; Pmax for legs<b: b=2.6 2.526, b=2.0 1.793, b=1.4 0.992, b=1.2 0.695
+R8-1 d=2 lattice algebra (kappa=1.0, Pi 1.0/1.4): max leg on supp W (|P|<=Pi2) = 1.8798; on plateau (|P|<=Pi1) = 1.5954; Pmax for legs<b: b=2.6 2.319, b=2.0 1.561, b=1.4 0.703, b=1.2 0.372
+kappa_max at b=1.4 keeping Pi1 = 0.6 plateau with legs < b: 1.0659 (d=1/3 worst case)
+kappa_max at b=1.4 keeping Pi2 = 1.2 (R9-6/R11-4 shell) with legs < b: 0.6444
+bound mass M_b=0.95: plateau boost budget at rest asinh(Pi1/M_b) = 0.5957 (Pi1=0.6, b-independent while legs<b)
+bound mass M_b=0.85: plateau boost budget at rest asinh(Pi1/M_b) = 0.6575 (Pi1=0.6, b-independent while legs<b)
+bound mass M_b=0.70: plateau boost budget at rest asinh(Pi1/M_b) = 0.7767 (Pi1=0.6, b-independent while legs<b)
+one-body budget at rest, ball, m=0.3: asinh(b/m): b=2.6 2.8559, b=2.0 2.5958, b=1.4 2.2449
+one-body budget at rest, ball, m=0.5: asinh(b/m): b=2.6 2.3509, b=2.0 2.0947, b=1.4 1.7532

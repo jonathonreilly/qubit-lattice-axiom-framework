@@ -1,0 +1,45 @@
+L = 1024 ; m = 0.50, kappa = 0.40, plateau |P| <= 0.60 (c = 0 beyond 1.20), box |k| <= 1.4 (R14-1 law S)
+--- M_b = 0.85 (binding fraction f_B = (2m - M_b)/2m = 0.150), lam = -3.171512 ---
+  bound, at rest  P0=0.00      <H>=0.852110 V=-0.00000 | K-stress: w-1 = +2.06e-13, wP-1 = +1.33e-15, a/g - (-1+2V^2) = -2.06e-13, |N psi|/|H psi| = 5.6e-08, |J'psi - P psi|/|P psi| = 1.0e-06
+                               comparator (free-only stress, D1 = K0): wP = 1.257196  (<H0>/<H> = 1.257196)
+  bound, moving   P0=0.25      <H>=0.886833 V=+0.28190 | K-stress: w-1 = +3.63e-13, wP-1 = +4.93e-14, a/g - (-1+2V^2) = -3.63e-13, |N psi|/|H psi| = 1.5e-07, |J'psi - P psi|/|P psi| = 7.7e-07
+                               comparator (free-only stress, D1 = K0): wP = 1.239408  (<H0>/<H> = 1.239408)
+  scatt, at rest  P0=0.00      <H>=0.862217 V=-0.00000 | K-stress: w-1 = -5.73e-13, wP-1 = -1.44e-15, a/g - (-1+2V^2) = +5.73e-13, |N psi|/|H psi| = 3.6e-08, |J'psi - P psi|/|P psi| = 8.0e-07
+                               comparator (free-only stress, D1 = K0): wP = 1.236206  (<H0>/<H> = 1.236206)
+  bound, SHELL    P0=0.90      <H>=1.317917 V=+1.20866 | K-stress: w-1 = +2.34e-01, wP-1 = +9.24e-14, a/g - (-1+2V^2) = -2.34e-01, |N psi|/|H psi| = 1.9e-02, |J'psi - P psi|/|P psi| = 7.9e-01
+                               comparator (free-only stress, D1 = K0): wP = 1.061108  (<H0>/<H> = 1.061108)
+  bound-profile, FREE P0=1.60  <H>=1.924984 V=+0.83114 | K-stress: w-1 = -1.99e-02, wP-1 = -2.31e-05, a/g - (-1+2V^2) = +1.99e-02, |N psi|/|H psi| = 3.9e-02, |J'psi - P psi|/|P psi| = 7.6e-02
+                               comparator (free-only stress, D1 = K0): wP = 0.999977  (<H0>/<H> = 1.000000)
+  [M_b = 0.85 done, 43s]
+--- M_b = 0.95 (binding fraction f_B = (2m - M_b)/2m = 0.050), lam = -1.680875 ---
+  bound, at rest  P0=0.00      <H>=0.951889 V=-0.00000 | K-stress: w-1 = +9.08e-14, wP-1 = -4.88e-15, a/g - (-1+2V^2) = -9.08e-14, |N psi|/|H psi| = 2.7e-08, |J'psi - P psi|/|P psi| = 5.9e-07
+                               comparator (free-only stress, D1 = K0): wP = 1.111111  (<H0>/<H> = 1.111111)
+  bound, moving   P0=0.25      <H>=0.983105 V=+0.25430 | K-stress: w-1 = +1.80e-13, wP-1 = +7.73e-14, a/g - (-1+2V^2) = -1.80e-13, |N psi|/|H psi| = 7.2e-08, |J'psi - P psi|/|P psi| = 4.3e-07
+                               comparator (free-only stress, D1 = K0): wP = 1.104539  (<H0>/<H> = 1.104539)
+  scatt, at rest  P0=0.00      <H>=0.957916 V=-0.00000 | K-stress: w-1 = -3.03e-13, wP-1 = -1.11e-15, a/g - (-1+2V^2) = +3.03e-13, |N psi|/|H psi| = 1.5e-08, |J'psi - P psi|/|P psi| = 4.4e-07
+                               comparator (free-only stress, D1 = K0): wP = 1.112705  (<H0>/<H> = 1.112705)
+  bound, SHELL    P0=0.90      <H>=1.348282 V=+0.92694 | K-stress: w-1 = +5.91e-02, wP-1 = +9.53e-14, a/g - (-1+2V^2) = -5.91e-02, |N psi|/|H psi| = 1.0e-02, |J'psi - P psi|/|P psi| = 4.2e-01
+                               comparator (free-only stress, D1 = K0): wP = 1.029474  (<H0>/<H> = 1.029474)
+  bound-profile, FREE P0=1.60  <H>=1.917423 V=+0.83444 | K-stress: w-1 = -1.01e-02, wP-1 = -1.17e-05, a/g - (-1+2V^2) = +1.01e-02, |N psi|/|H psi| = 2.8e-02, |J'psi - P psi|/|P psi| = 5.4e-02
+                               comparator (free-only stress, D1 = K0): wP = 0.999988  (<H0>/<H> = 1.000000)
+  [M_b = 0.95 done, 84s]
+--- M_b = 0.70 (binding fraction f_B = (2m - M_b)/2m = 0.300), lam = -5.307395 ---
+  bound, at rest  P0=0.00      <H>=0.702558 V=-0.00000 | K-stress: w-1 = +3.81e-13, wP-1 = -5.33e-15, a/g - (-1+2V^2) = -3.81e-13, |N psi|/|H psi| = 1.1e-07, |J'psi - P psi|/|P psi| = 1.5e-06
+                               comparator (free-only stress, D1 = K0): wP = 1.533784  (<H0>/<H> = 1.533784)
+  bound, moving   P0=0.25      <H>=0.744257 V=+0.33591 | K-stress: w-1 = +7.22e-13, wP-1 = +5.75e-14, a/g - (-1+2V^2) = -7.22e-13, |N psi|/|H psi| = 3.0e-07, |J'psi - P psi|/|P psi| = 1.2e-06
+                               comparator (free-only stress, D1 = K0): wP = 1.485095  (<H0>/<H> = 1.485095)
+  scatt, at rest  P0=0.00      <H>=0.725204 V=-0.00000 | K-stress: w-1 = -9.61e-13, wP-1 = +4.44e-16, a/g - (-1+2V^2) = +9.61e-13, |N psi|/|H psi| = 8.0e-08, |J'psi - P psi|/|P psi| = 1.2e-06
+                               comparator (free-only stress, D1 = K0): wP = 1.469762  (<H0>/<H> = 1.469762)
+  bound, SHELL    P0=0.90      <H>=1.271100 V=+1.57293 | K-stress: w-1 = +6.28e-01, wP-1 = +1.06e-13, a/g - (-1+2V^2) = -6.28e-01, |N psi|/|H psi| = 3.2e-02, |J'psi - P psi|/|P psi| = 1.2e+00
+                               comparator (free-only stress, D1 = K0): wP = 1.104003  (<H0>/<H> = 1.104003)
+  bound-profile, FREE P0=1.60  <H>=1.928498 V=+0.82961 | K-stress: w-1 = -2.77e-02, wP-1 = -3.21e-05, a/g - (-1+2V^2) = +2.77e-02, |N psi|/|H psi| = 4.6e-02, |J'psi - P psi|/|P psi| = 9.0e-02
+                               comparator (free-only stress, D1 = K0): wP = 0.999968  (<H0>/<H> = 1.000000)
+  [M_b = 0.70 done, 120s]
+=== Eotvos eta between binding fractions (linear order in g) ===
+  bound, at rest  P0=0.00  M_b 0.85 vs 0.95: interacting stress eta = |delta_A - delta_B| = 1.15e-13 (deltas -2.1e-13, -9.1e-14) ; comparator (binding energy not gravitating) eta = 1.2337e-01
+  bound, at rest  P0=0.00  M_b 0.70 vs 0.95: interacting stress eta = |delta_A - delta_B| = 2.91e-13 (deltas -3.8e-13, -9.1e-14) ; comparator (binding energy not gravitating) eta = 3.1961e-01
+  bound, at rest  P0=0.00  M_b 0.70 vs 0.85: interacting stress eta = |delta_A - delta_B| = 1.75e-13 (deltas -3.8e-13, -2.1e-13) ; comparator (binding energy not gravitating) eta = 1.9820e-01
+  bound, moving   P0=0.25  M_b 0.85 vs 0.95: interacting stress eta = |delta_A - delta_B| = 1.82e-13 (deltas -3.6e-13, -1.8e-13) ; comparator (binding energy not gravitating) eta = 1.1508e-01
+  bound, moving   P0=0.25  M_b 0.70 vs 0.95: interacting stress eta = |delta_A - delta_B| = 5.41e-13 (deltas -7.2e-13, -1.8e-13) ; comparator (binding energy not gravitating) eta = 2.9391e-01
+  bound, moving   P0=0.25  M_b 0.70 vs 0.85: interacting stress eta = |delta_A - delta_B| = 3.59e-13 (deltas -7.2e-13, -3.6e-13) ; comparator (binding energy not gravitating) eta = 1.8035e-01
+runtime 120s

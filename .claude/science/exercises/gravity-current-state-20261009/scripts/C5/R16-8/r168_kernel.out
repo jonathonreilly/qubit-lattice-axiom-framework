@@ -1,0 +1,25 @@
+C5 R16-8 script B (r168_kernel.py): tail kernel on a 128^3 torus, dh_c = exp(i q_c) - 1 (forward difference, midpoint phase); zero mode removed
+
+(1) r^2 B along the x-axis (raw, nothing else subtracted); continuum: B_xx,x r^2 = 1/(8pi) = 0.03979, B_yy,x r^2 = 1/(16pi) = 0.01989
+   r              2         4         8        12        16        24        32
+   xx,x     0.03283   0.03538   0.03613   0.03688   0.03715   0.03660   0.03463
+   yy,x     0.01427   0.01581   0.01766   0.01832   0.01862   0.01870   0.01813
+   xy,y     0.01641   0.01769   0.01806   0.01844   0.01858   0.01830   0.01731   (continuum: d_y d_x d_y r/(16 pi) = -1/(16 pi) = -0.01989)
+   diag (r = |x|, x = (n,n,n)) r^2 |B_xx,x|: 0.00321 0.00181 0.00075 0.00002 0.00092
+   finite-torus image corrections grow toward r = L/4 = 32
+
+(2) r^4 R along the x-axis (gauge-invariant content); continuum R_xx,x r^4 = 6/(16pi) = 0.11937, R_yy,x r^4 = -3/(16pi) = -0.05968
+   xx,x     0.07897   0.10349   0.10123   0.10482   0.10750   0.11048   0.11107
+   yy,x     0.03949   0.05175   0.05062   0.05241   0.05375   0.05524   0.05553
+   trace at r>=2 (must be 0: tr R = D is local): max |R_xx+R_yy+R_zz| over r = 2..32 on the axis = 5.12e-17
+   source check: tr R at the origin and its neighbours (should be the lattice divergence of a delta): [1. 0. 1.]
+
+(3) TT projection of R[B] (continuum symbols, 2000 random q, both B and B + T with random TT T):
+   max |Lambda^TT R[B]| = 3.33e-16  (vs max |R[B]| = 1.71e+00);  max deviation of non-TT part of R[B+T] from (D/4)(qh qh + delta) = 8.88e-15
+   => adding TT or Kill-exact pieces to B never changes the non-TT (Bianchi-fixed) curvature (D/4)(qh qh + delta):
+      its traceless part is non-analytic for every nonzero defect; the gauge-invariant content of the tail is fixed.
+
+(4) GR comparator: point mass, s.h = delta (Hamiltonian constraint), minimal h = s delta/|s|^2
+   r |h_yy| on the x-axis (1/r^{d-2}; image/zero-mode offsets on the torus): 0.0196 0.0182 0.0166 0.0150 0.0134
+   r^3 R_xx (tidal, 1/r^{d}):  0.05566 0.04911 0.04163 0.04079 0.04086 0.04234   continuum |r^3 R_xx| = 1/(8 pi) = 0.03979
+   => same constraint-solution map; W7's source D = div(defect) is one derivative higher, so every power is r^{-1} lower.

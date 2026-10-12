@@ -1,0 +1,46 @@
+C5 R16-8 script A (r168_jets.py): Killing-defect location, d = 3, m = 0.3
+
+(1) whole-zone group velocity (3D grid 96^3 + axis/diagonal lines), separable bands
+  L-box(2.0) : v_max grid 4.0973; axis line 4.0077; diagonal line 4.1209
+  S(1.4)     : v_max grid 0.9925; axis line 0.9786; diagonal line 0.9927
+  G(1.4)     : v_max grid 0.9937; axis line 0.9824; diagonal line 0.9939
+  SLAC       : v_max grid 0.9985; axis line 0.9955; diagonal line 0.9985
+  (SLAC: |v| = |k|/eps <= 1 on the whole cube; the band is not continuous across the face)
+
+(2) 1D zone mean of P' - 1 (raw average, 2^16 points) and the zone fraction carrying the JS defect
+  L-box(2.0)  P=s    : <P'-1> a.e. = -1.000000; 1D defect fraction 0.347, 3D 0.721; SS (j-P) nonzero fraction 0.347
+  L-box(2.0)  P=u'/2 : <P'-1> a.e. = -1.000000; 1D defect fraction 0.351, 3D 0.727; SS (j-P) nonzero fraction 0.000
+  S(1.4)      P=s    : <P'-1> a.e. = -1.000000; 1D defect fraction 0.547, 3D 0.907; SS (j-P) nonzero fraction 0.548
+  S(1.4)      P=u'/2 : <P'-1> a.e. = -1.000000; 1D defect fraction 0.099, 3D 0.269; SS (j-P) nonzero fraction 0.000
+  G(1.4)      P=s    : <P'-1> a.e. = -0.970175; 1D defect fraction 0.517, 3D 0.887; SS (j-P) nonzero fraction 0.518
+  G(1.4)      P=u'/2 : <P'-1> a.e. = -1.000000; 1D defect fraction 0.528, 3D 0.895; SS (j-P) nonzero fraction 0.000
+  SLAC        P=s    : <P'-1> a.e. = +0.000000; 1D defect fraction 0.000, 3D 0.000; SS (j-P) nonzero fraction 0.000; face jump of P = 6.283185 (= 2 pi): the -1 zone mean sits in a delta -2 pi delta(k - pi)
+  SLAC        P=u'/2 : <P'-1> a.e. = +0.000000; 1D defect fraction 0.000, 3D 0.000; SS (j-P) nonzero fraction 0.000; face jump of P = 6.283185 (= 2 pi): the -1 zone mean sits in a delta -2 pi delta(k - pi)
+
+(3) R12-1 ray test on the JS slice p_xi = 0: max_c |D_JS(0, t u; k)| / |s_grav(t u)|,  s_grav(q) = sqrt(2)|q|^2
+    D_JS(0,q;k)_c = i aT(q,k) (q_c - (P_c(k+q) - P_c(k))),  aT = (eps(k+q)+eps(k))/2   [R12-1 conventions]
+  L-box(2.0)  k in box     [ 0.4 -0.7  0.9]: t = 1e-1, 1e-2, 1e-3 -> 1.918e-09 1.755e-07 1.761e-05   (ratio t=1e-3/1e-2: 100.36)
+  L-box(2.0)  k transition [ 1.9  0.3 -0.5]: t = 1e-1, 1e-2, 1e-3 -> 1.442e-09 9.440e-08 1.580e-05   (ratio t=1e-3/1e-2: 167.33)
+  L-box(2.0)  k edge       [ 2.6 -0.2  0.1]: t = 1e-1, 1e-2, 1e-3 -> 8.387e+01 5.716e+02 5.400e+03   (ratio t=1e-3/1e-2: 9.45)
+  L-box(2.0)  k near face  [ 3.1  0.5 -0.3]: t = 1e-1, 1e-2, 1e-3 -> 4.325e-02 1.636e-01 1.376e+00   (ratio t=1e-3/1e-2: 8.41)
+  S(1.4)      k in box     [ 0.4 -0.7  0.9]: t = 1e-1, 1e-2, 1e-3 -> 3.829e-14 3.511e-12 3.478e-10   (ratio t=1e-3/1e-2: 99.07)
+  S(1.4)      k transition [ 1.9  0.3 -0.5]: t = 1e-1, 1e-2, 1e-3 -> 3.618e-14 3.941e-12 3.921e-10   (ratio t=1e-3/1e-2: 99.51)
+  S(1.4)      k edge       [ 2.6 -0.2  0.1]: t = 1e-1, 1e-2, 1e-3 -> 1.686e-14 1.843e-12 1.838e-10   (ratio t=1e-3/1e-2: 99.72)
+  S(1.4)      k near face  [ 3.1  0.5 -0.3]: t = 1e-1, 1e-2, 1e-3 -> 1.413e-14 1.534e-12 1.500e-10   (ratio t=1e-3/1e-2: 97.79)
+  G(1.4)      k in box     [ 0.4 -0.7  0.9]: t = 1e-1, 1e-2, 1e-3 -> 3.829e-14 3.511e-12 3.478e-10   (ratio t=1e-3/1e-2: 99.07)
+  G(1.4)      k transition [ 1.9  0.3 -0.5]: t = 1e-1, 1e-2, 1e-3 -> 2.511e+01 2.167e+02 2.131e+03   (ratio t=1e-3/1e-2: 9.83)
+  G(1.4)      k edge       [ 2.6 -0.2  0.1]: t = 1e-1, 1e-2, 1e-3 -> 4.227e+01 4.203e+02 4.225e+03   (ratio t=1e-3/1e-2: 10.05)
+  G(1.4)      k near face  [ 3.1  0.5 -0.3]: t = 1e-1, 1e-2, 1e-3 -> 1.462e+01 1.462e+02 1.462e+03   (ratio t=1e-3/1e-2: 10.00)
+  SLAC        k in box     [ 0.4 -0.7  0.9]: t = 1e-1, 1e-2, 1e-3 -> 3.829e-14 3.511e-12 3.478e-10   (ratio t=1e-3/1e-2: 99.07)
+  SLAC        k transition [ 1.9  0.3 -0.5]: t = 1e-1, 1e-2, 1e-3 -> 5.132e-14 5.669e-12 5.616e-10   (ratio t=1e-3/1e-2: 99.06)
+  SLAC        k edge       [ 2.6 -0.2  0.1]: t = 1e-1, 1e-2, 1e-3 -> 6.426e-14 7.407e-12 7.339e-10   (ratio t=1e-3/1e-2: 99.08)
+  SLAC        k near face  [ 3.1  0.5 -0.3]: t = 1e-1, 1e-2, 1e-3 -> 1.407e+03 7.438e-12 7.233e-10   (ratio t=1e-3/1e-2: 97.25)
+
+(4) the defect current: edge quanta carry the JS defect density at their group velocity
+    one-body defect per quantum Delta_cc(k) = eps (P'(k_c) - 1); current = v(k) Delta(k). Sample k on the edge:
+  S(1.4): k = [2.  0.3 0.2]: Delta_cc = [ 0. -0. -0.], v = [-0.925   0.2431  0.162 ], |v| = 0.9700
+  S(1.4): k = [ 2.6  0.1 -0.4]: Delta_cc = [ 0. -0. -0.], v = [-0.7281  0.1344 -0.5377], |v| = 0.9151
+  S(1.4): k = [1.6 1.6 0. ]: Delta_cc = [-39.2211 -39.2211   0.    ], v = [-0.237 -0.237  0.   ], |v| = 0.3351
+  G(1.4): k = [2.  0.3 0.2]: Delta_cc = [-4.7141 -0.     -0.    ], v = [0.7769 0.1479 0.0986], |v| = 0.7970
+  G(1.4): k = [ 2.6  0.1 -0.4]: Delta_cc = [-6.9148 -0.     -0.    ], v = [ 0.1426  0.0433 -0.173 ], |v| = 0.2284
+  G(1.4): k = [1.6 1.6 0. ]: Delta_cc = [-0.0849 -0.0849  0.    ], v = [0.7006 0.7006 0.    ], |v| = 0.9908

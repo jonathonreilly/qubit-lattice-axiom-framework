@@ -5511,3 +5511,15 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **FAILS-TO-TRANSFER:** an explicit dressing class or model where the dressed m₁ is O(k²), checked.
   - **OPEN:** otherwise.
 - **Expectation.** TRANSFERS for stretched-exponential tails, since dressing cannot change the k-power of a conserved-charge moment. This would leave only phases not connected to the constrained limit.
+- **R16-8 (W7 off-box tail): worker reading OPEN.**
+  - **The tail:** B = s·D/|s|², falling as 1/r^{d−1}. Its gauge-invariant curvature falls as 1/r^{d+1} and is fixed by Bianchi. Its source is the defect charge Q_D, carried by edge quanta only.
+  - **Lemmas P, S and F:**
+    - the singular terms can be confined to the spatial-diffeomorphism constraint;
+    - the tail is inert on box states;
+    - it acts through a shell at infinity.
+  - **Lemma A:** there is no local formulation with non-dynamical auxiliary fields unless the defect is static.
+  - **Lemma D (suggested):** closing in time needs either (α) non-local dynamics or (β) a second singular momentum-constraint term. Deciding between them needs the degree-3 algebra.
+  - **Relation to R16-5:** the same root as P-pf1, but a different object. Sawtooth (SLAC) matter pays W7 at degree 2.
+  - **Prices:** P50 refined, P-W7α, P-W7aux.
+
+  Referee running.

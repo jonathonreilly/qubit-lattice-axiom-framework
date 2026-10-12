@@ -5219,3 +5219,27 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P73 is refined to one tuning per (spin, |q|) class.
 
   Referee running.
+
+### C5 Round 16, item 6 (pre-registered 22:50Z, before launch)
+
+**R16-6. After R15-1's FAIL: can Λ be removed without signalling, i.e. with g ≡ 0?**
+- **Plain question.** R15-1 (refereed FAIL) shows the CMC mechanism signals faster than light whenever g ≠ 0. Lemma C says g ≠ 0 whenever a vacuum *change* is actively absorbed. R15-6 (worker) suggests a reader built from the content's equilibrium equation of state gives g ≡ 0 through equilibrium crossovers and mass thresholds. In that case the "vacuum change" is part of the content's own EoS, so it is never absorbed. Does that remove Λ with no signalling at all?
+- **Setting.**
+  - R14-5's model with Lemma C.
+  - Readers in two classes: (i) R15-6's P-EoS class, where the creation law carries ρ_EoS(T(h)); (ii) any reader with g ≡ 0 identically.
+  - Histories:
+    - the SM electroweak and QCD crossovers (RECALLED lattice EoS is acceptable, labelled);
+    - e⁺e⁻ annihilation;
+    - a first-order transition with supercooling, as a control;
+    - inflation followed by reheating;
+    - DESI-like dark energy.
+- **Probes.**
+  - (a) Characterize every history and reader for which g ≡ 0 while the observed Λ̃ = 0. Does this coincide with "the constant is a pure c-number in the EoS"?
+  - (b) Can g ≡ 0 handle a supercooled or inflationary vacuum drop, or is a drop out of equilibrium necessarily absorbed (g ≠ 0)?
+  - (c) What does the observed late-time acceleration have to be under g ≡ 0? Is it a true w ≠ −1 content, with a constant Λ unobservable?
+  - (d) Prices, including whether "the creation law knows the EoS" is a new axiom text.
+- **FIXED readings.**
+  - **PASS:** a stated reader class with g ≡ 0 that removes a constant vacuum (Λ̃ = 0) through the stated SM history including inflation/reheating, checked, with its prices named.
+  - **FAIL:** a refereed proof that any history containing an out-of-equilibrium vacuum drop (inflation's end or supercooling) forces g ≠ 0 for every reader giving Λ̃ = 0. That would make R15-1's signalling unavoidable for every universe with inflation.
+  - **INCONCLUSIVE:** otherwise.
+- **Expectation.** FAIL for inflation's end by Lemma C, unless reheating counts as "equilibrium". In that case the result is PASS with the EoS price. The likely sticking point is whether the inflaton potential is "content" or "vacuum".

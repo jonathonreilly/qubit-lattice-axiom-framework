@@ -1,9 +1,11 @@
 # Current opportunity queue
 
-1. Finish regular interaction/ground/preparation milestone after exact EOF repair; preserve v1 failed verification and all scope limits.
-2. Independently establish native lattice spatial clustering uniform in spacing and translation; direct proof may bypass the nonuniform carrier comparison.
-3. Complete actual pulse-energy and BV time-average comparisons, then consolidate with checked spectral response as a coherent energy-transfer milestone.
-4. Compose continuum/local and native correlation bounds with selected ground/prepared-state controls; separate state errors, center/time limits and energy transfer.
-5. Package checked corrected cells only where improved coefficient rates support a substantive downstream result.
+1. Consolidate checked excitation response and actual finite-pulse work; retain the separately checked BV time-average theorem as the second note of one regular response/transfer milestone.
+2. Check local-ground stability: does a bounded interval interaction change distant probe expectations by an exponentially small amount, uniformly in spacing?
+3. Check arbitrary finite-form-energy pulse work and remote finite-strength readouts; keep passivity, bounded influence and unbounded energy distinct.
+4. Package native/continuum spatial clustering with any checked local-ground result as a later coherent milestone. Native proof already controls arbitrary translations and norm-only bounded interval potentials.
+5. Use checked corrected-cell rates only where they improve a substantive downstream quantity.
 
-Total-norm bounded interaction is supplied. Extensive interactions, physical channel/state selection and intended 3D realization remain open. No failed route, scope caveat or original counterexample may be silently removed. Refresh queue after decisive findings, not repeated inventories.
+PR9499,9500,9502 regular/open/attached. Root owns Git and source integration. Extensive interactions, intended 3D realization, autonomous state/channel selection and physical measurement prescriptions remain open; no counterexample or provisional dependency erased.
+
+Next independent candidates: all-BV pulse-work extension and near-ground correlation energy floor/sharpness. Keep these outside the open two-note milestone until checked and deliberately scoped.

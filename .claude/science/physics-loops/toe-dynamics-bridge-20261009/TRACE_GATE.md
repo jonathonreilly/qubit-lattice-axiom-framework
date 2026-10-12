@@ -1,5 +1,5 @@
 # Current trace gate
 
-Actual status conditional-support; no audit or retained verdict. PR9499/9500 are regular/open. Third milestone ready science has exact EOF-only publication repair; fresh integration active. Root owns Git/publication. Positive conditional proofs proceed with explicit provisional parents. N1/N5 remain pending; no universal negative conclusion.
+Conditional-support throughout; no retained or audit verdict. PR9499/9500/9502 are regular/open/attached. Root owns new clean response-transfer child atba3ea535; no new child publication yet. Two-note scope locally OPEN: excitation response/finite-pulse work and BV averaged-readout transfer. Checked parent and current exact-source reviews are provisional science, not main authority.
 
-Response and continuum spatial proofs have complete separate derivations and source-exposed comparisons. Pulse/filter cores fully read but comparisons active. Native lattice root is candidate only. Scoped Lean covers finite algebra, not analytic domain/continuum proofs. Same-family corroboration has explicit shared-premise limits.
+Complete separate cores and source-exposed comparisons cover response, pulse, time-average and native/continuum spatial results. Root plus same-family checks are corroboration; scoped Lean fromPR9502 remains finite algebra only. New local-ground and finite-energy pulse/locality candidates still need independent inspection. N1/N5 staypending, no broad no-go or physical selector.

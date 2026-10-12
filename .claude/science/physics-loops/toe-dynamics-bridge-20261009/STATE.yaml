@@ -6,19 +6,19 @@ started_utc: '2026-10-12T16:42:30+00:00'
 deadline_utc: '2026-10-13T16:42:30+00:00'
 checkpoint_interval: 30m
 automation_id: toe-derivations-24-hour-campaign
-active_branch: physics-loop/toe-bounded-interactions-20261012
+active_branch: physics-loop/toe-response-transfer-20261012
 worktree: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/correlation_worktree
 checkpoint_directory: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
-base_revision: 3679df3c7901b4660f5d9e9d69023e2e82772a83
+base_revision: ba3ea535fa5ce80a3ad81b384a2063185da42756
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Publish checked interaction/preparation milestone; actual pulse energy, time-filter transfer and native
-  spatial correlations
+active_route: Publish response/pulse and time-filter milestone; check local-ground stability and general finite-energy
+  pulse work
 cycle: 3
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: PR9499/9500 regular/open; third milestone exact EOF-only repair accepted, fresh prepare active
+milestone: Regular PR9499/9500/9502 open and attached; response/pulse source synthesis active
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
@@ -28,16 +28,16 @@ independent_checks: Separate frozen derivations and source-exposed comparison fo
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_closed_by_concurrent_activity
-active_pr_status: No child PR yet; v1 staged verification stopped on eleven EOF blank-line issues; v2 fresh prepare
-  running
+active_pr_status: New clean child for response/transfer milestone; no child PR yet
 active_pr_url: null
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261012
 lock_refresh_before_utc: '2026-10-12T21:19:56.222479+00:00'
-next_action: Finish fresh prepare/stage/verify and regular stacked PR. Complete pulse/filter comparisons and independently
-  inspect native clustering. Continue response/correlation milestone.
+next_action: Read entire frozen local-ground core and response/pulse assembly, then separate comparison/review.
+  Continue general finite-energy pulse task. Queue near-ground and all-BV candidate checks without silent milestone
+  scope expansion.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -58,12 +58,12 @@ index_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pu
 index_published_science_revision: b8402c17d337f371c0c73696ef170727de9ab5bd
 scattering_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9486
 scattering_published_science_revision: 3faf1cf7167d8f9ef78ed84f50e9f3ebb277a9fe
-active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500
+active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9502
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
-checkpoint_utc: '2026-10-12T20:32:46.292809+00:00'
-latest_source_refresh: '2026-10-12T20:06:43.098365+00:00'
+checkpoint_utc: '2026-10-12T21:00:48.486343+00:00'
+latest_source_refresh: '2026-10-12T20:35:53.861231+00:00'
 latest_other_pr: 'PR9501 at3153d7b2ddceeb26b78f2e1334ffa83218a01333: scalar mediator/source inversion, full313-line
   note read; distinct scope'
 supplied_chain_published_science_revision: 62d316633190ad2198fdfa91fc52192551990034
@@ -73,8 +73,8 @@ local_continuum_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fr
 local_continuum_published_science_revision: a8ab3f49038327e3080d2f93afb7e34601459928
 dyadic_refinement_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9493
 dyadic_refinement_published_science_revision: cb882f7c68032986900dec2aaf24617ff3274c08
-campaign_prs_created: 2
-campaign_prs_currently_open: 2
+campaign_prs_created: 3
+campaign_prs_currently_open: 3
 campaign_prs_closed_by_other_activity:
 - 9478
 - 9479
@@ -97,7 +97,7 @@ energy_adapted_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fra
 energy_adapted_published_science_revision: f85656c1766536299c8bafdb91db6dd1dfbd5e2d
 campaign_status: active_user_authorized_renewal
 automation_status: ACTIVE
-active_head: 3679df3c7901b4660f5d9e9d69023e2e82772a83
+active_head: ba3ea535fa5ce80a3ad81b384a2063185da42756
 sharp_current_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9497
 sharp_current_published_science_revision: 7c0570a4a20a768349f3d88960303f8637e7fe33
 current_preserving_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9498
@@ -130,7 +130,7 @@ root_bounded_interaction_proof: /Users/jonreilly/Documents/Codex/research_runs/t
 root_ground_selection_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_GROUND_SELECTION_ROOT_PROBE.md
 scoped_lean_status: Finite Clifford and compressed-resolvent ring identities compiled and complete statement-scope
   reviews fully read. No analytic theorem formalization; recovery of interrupted review complete.
-previous_checkpoint_commit: 099544ef91119d44bdedc9722edcfdcd42bd3c9d
+previous_checkpoint_commit: ec325e4e7aea722f9321743d28ed750cde4818d6
 lock_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/physics_worker_lock.json
 lock_meta_path: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_preserving_worktree/logs/.physics_worker_lock.guard
 correlation_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9500
@@ -143,8 +143,8 @@ smooth_cell_rate_status: 'Separate proofs and full crosscheck: leading coefficie
   sharper upper bound explicitly classified.'
 adiabatic_preparation_status: 888-line assembly fully read; completed285-line exact review fe3aa3cd accepted, no
   theorem error. Two precise Local citation edits authorized only in publication copy.
-recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/correlation_response_recovery_20261012T203246Z.tar.gz
-recovery_map_aliases: 893
+recovery_bundle: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/response_spatial_recovery_20261012T210048Z.tar.gz
+recovery_map_aliases: 1169
 checkpoint_write_failure: Earlier inline update failed parsing before mutation; saved update then hit an unescaped
   set brace after STATE/archive writes. Both bookkeeping failures repaired, evidence preserved; no science changed.
 corrected_cell_status: 'Separate proofs and complete crosscheck accepted: shifted supplied cells O(c^2) under weighted
@@ -163,16 +163,28 @@ spatial_correlation_status: 566-line independent core and 325-line comparison fu
   exponential clustering accepted conditionally.
 cluster_evaluation: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/INTERACTING_MILESTONE_CLUSTER_EVALUATION.md
 root_spatial_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/GAPPED_LOCAL_CORRELATION_ROOT_PROBE.md
-pulse_energy_status: Independent580-line core fully read; AC and finite-jump actual work theorem, exact impulsive
-  divergence. Source-exposed comparison active.
-time_filtered_status: Independent696-line core fully read; compact BV domain proof, O(c) high-vacuum compression
-  and sufficient c/width ->0. Comparison active.
-native_spatial_status: Root243-line candidate sealed1024778c at20:19:57; separate604-line derivation sealed7ec62ba1
-  at20:31:14, awaiting full root read; unaccepted.
+pulse_energy_status: 580-line core and complete comparisonce644c7d fully read; no theorem repair; explicit eigenvector
+  zero-absorption control in separate wording addendum.
+time_filtered_status: 696-line core and410-line comparison46533eb1 fully read; no repair; vector/norm integration
+  and sufficient window conditions kept explicit.
+native_spatial_status: 604-line core7ec62ba1 and336-line comparison034ac859 fully read; uniform native clustering
+  accepted at stated scope, arbitrary norm-bounded even interval V.
 publication_package: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/interacting_publication_preparation_eof_repair
 publication_package_sha256: 5d1b45c784602c98b85e366b25a330b8999139c09210d2f87afbd5ab1b8e1855
-publication_execution: Root session2516; started20:29:27; use INTERACTING_EOF_REPAIR_PREPARE_OUTER.json and exact
-  returned run
+publication_execution: 'PR9502 complete: repaired prepare259.47s, verify5.08s, exact142paths; no running root execution'
 root_pulse_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/SMOOTH_PULSE_ENERGY_ROOT_PROBE.md
 root_time_filtered_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/TIME_SMEARED_TRANSFER_ROOT_PROBE.md
 root_native_spatial_proof: /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261012/NATIVE_LATTICE_CLUSTERING_ROOT_PROBE.md
+interacting_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9502
+interacting_published_science_revision: ba3ea535fa5ce80a3ad81b384a2063185da42756
+local_ground_status: 589-line independent core5bf44abe frozen20:54:03; complete root read and source-exposed comparison
+  pending.
+finite_energy_pulse_status: Root230-line candidateee20231c frozen20:44:32; dyadic_even_refinement independently
+  derives arbitrary finite-form-energy pulse work and remote bounded readouts.
+checkpoint_live_uncommitted: false
+response_pulse_assembly_status: 1247-line assembly694e3962 frozen; root complete read and distinct exact-source
+  review pending.
+near_ground_clustering_status: Root156-line candidate9200dbdc sealed20:51:16; energy-floor upper bound and actual
+  free continuum four-particle sharpness witness; independent check pending.
+bv_pulse_status: Root166-line candidate293f02c8 sealed20:55:08; forward and reverse form lower semicontinuity may
+  extend work identity to arbitrary compact BV pulses; independent check pending.

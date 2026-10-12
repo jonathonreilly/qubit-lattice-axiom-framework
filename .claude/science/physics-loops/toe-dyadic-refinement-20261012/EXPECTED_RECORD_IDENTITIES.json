@@ -1,0 +1,198 @@
+{
+  "DyadicEven/exact_baseline_v2": {
+    "name": "exact_baseline_v2",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/exact_baseline_v2_inner.receipt.json",
+      "bytes": 21035,
+      "sha256": "7a1584d9c90e83fbacc2601a55593721c81a057d7de399d26e9054f53cdef94f"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/exact_baseline_v2_inner.stdout.txt",
+      "bytes": 10397,
+      "sha256": "bd5a2a1c5f07afb59c9433ecb99d689f782c0e6e0416c5d5b4f9408e92d4b95e"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/exact_baseline_v2_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 168,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_runtime": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy": "1.14.0"
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/candidate.py",
+    "original_arguments": [
+      "python3",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/check_exact.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/candidate.py"
+    ],
+    "path_mapping": "CLI candidate is an absolute resolved temporary path. Helpers print no candidate pathname; stdout/stderr bytes require no mapping."
+  },
+  "DyadicEven/state_baseline_v2": {
+    "name": "state_baseline_v2",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/state_baseline_v2_inner.receipt.json",
+      "bytes": 21035,
+      "sha256": "d1168b97f6c8d17c60a285c9ffaa3b4050a44041808f44983f651e5aa34fa873"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/state_baseline_v2_inner.stdout.txt",
+      "bytes": 7391,
+      "sha256": "6d96e68078ae419add1fc233cb1e829854fc11f5e6ed4f534ec96295c44a88ec"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/state_baseline_v2_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 38,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_runtime": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "numpy": "2.4.4",
+      "scipy": "1.17.1"
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/candidate.py",
+    "original_arguments": [
+      "python3",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/check_state.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/candidate.py"
+    ],
+    "path_mapping": "CLI candidate is an absolute resolved temporary path. Helpers print no candidate pathname; stdout/stderr bytes require no mapping."
+  },
+  "DyadicEven/mutant_missing_normalization": {
+    "name": "mutant_missing_normalization",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/mutant_missing_normalization_inner.receipt.json",
+      "bytes": 21113,
+      "sha256": "339d8a89048acbc47caac49852ff7e552909c60ef92270993d91480e41941f91"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/mutant_missing_normalization_inner.stdout.txt",
+      "bytes": 4646,
+      "sha256": "69e8c5cde45cde0a2d627c229ebb5ca832bd01dddf3b096561f5e2c1e6d49011"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/mutant_missing_normalization_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 27,
+      "failed": 20
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_runtime": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy": "1.14.0"
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/variants/missing_normalization.py",
+    "original_arguments": [
+      "python3",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/check_exact.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/variants/missing_normalization.py",
+      "--suite",
+      "normalization"
+    ],
+    "path_mapping": "CLI candidate is an absolute resolved temporary path. Helpers print no candidate pathname; stdout/stderr bytes require no mapping."
+  },
+  "DyadicEven/mutant_tensor_shortcut": {
+    "name": "mutant_tensor_shortcut",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/mutant_tensor_shortcut_inner.receipt.json",
+      "bytes": 21088,
+      "sha256": "eec6a95cc2190a4623f2c2ee3485adc52d34ea61d78126f8c78266458f276962"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/mutant_tensor_shortcut_inner.stdout.txt",
+      "bytes": 1005,
+      "sha256": "628a1c1521cbb7f748c8c631780cfe50bd2c60b9fdf143ceb308bc3a8a6b71ae"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/mutant_tensor_shortcut_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 5,
+      "failed": 1
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_runtime": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "sympy": "1.14.0"
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/variants/tensor_shortcut.py",
+    "original_arguments": [
+      "python3",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/check_exact.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/variants/tensor_shortcut.py",
+      "--suite",
+      "tensor"
+    ],
+    "path_mapping": "CLI candidate is an absolute resolved temporary path. Helpers print no candidate pathname; stdout/stderr bytes require no mapping."
+  },
+  "DyadicEven/mutant_missing_state_formfactor": {
+    "name": "mutant_missing_state_formfactor",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/mutant_missing_state_formfactor_inner.receipt.json",
+      "bytes": 21087,
+      "sha256": "29fc1c1d3fd116b8f010afdee9d8f32ab16cb94df8ad7849e65b61a9e066eb6b"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/mutant_missing_state_formfactor_inner.stdout.txt",
+      "bytes": 7813,
+      "sha256": "a8d176b6180e437c42d5ea868fd102fbf97ed0c9858d5892c23bf1bf67f4317d"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/runs/mutant_missing_state_formfactor_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 24,
+      "failed": 14
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_runtime": {
+      "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+      "numpy": "2.4.4",
+      "scipy": "1.17.1"
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/variants/missing_state_formfactor.py",
+    "original_arguments": [
+      "python3",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/check_state.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/dyadic_route_readiness/dyadic_even_refinement/variants/missing_state_formfactor.py"
+    ],
+    "path_mapping": "CLI candidate is an absolute resolved temporary path. Helpers print no candidate pathname; stdout/stderr bytes require no mapping."
+  }
+}

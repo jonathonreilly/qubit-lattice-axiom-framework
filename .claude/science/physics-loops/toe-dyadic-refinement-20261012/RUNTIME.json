@@ -1,0 +1,144 @@
+{
+  "DyadicEven": {
+    "baselines": [
+      "exact_baseline_v2",
+      "state_baseline_v2"
+    ],
+    "cases": {
+      "exact_baseline_v2": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/d3911f8f6bc59719aa1d4aaff4cf2ffe074aca455d6a262f8c4d4a9d4b987f41.py",
+            "bytes": 7793,
+            "sha256": "d3911f8f6bc59719aa1d4aaff4cf2ffe074aca455d6a262f8c4d4a9d4b987f41"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/b893fe9965465ab6164a2899966dae1c499f4e3af8aea792f20b796ce2821489.py",
+            "bytes": 3037,
+            "sha256": "b893fe9965465ab6164a2899966dae1c499f4e3af8aea792f20b796ce2821489"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        }
+      },
+      "state_baseline_v2": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/4ee8aa0a8ddea4aa6cc435c460822fdc97252e773733ad32b7fb1654bd2e4280.py",
+            "bytes": 3047,
+            "sha256": "4ee8aa0a8ddea4aa6cc435c460822fdc97252e773733ad32b7fb1654bd2e4280"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/b893fe9965465ab6164a2899966dae1c499f4e3af8aea792f20b796ce2821489.py",
+            "bytes": 3037,
+            "sha256": "b893fe9965465ab6164a2899966dae1c499f4e3af8aea792f20b796ce2821489"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        }
+      },
+      "mutant_missing_normalization": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--suite",
+          "normalization"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/d3911f8f6bc59719aa1d4aaff4cf2ffe074aca455d6a262f8c4d4a9d4b987f41.py",
+            "bytes": 7793,
+            "sha256": "d3911f8f6bc59719aa1d4aaff4cf2ffe074aca455d6a262f8c4d4a9d4b987f41"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/73bbaa3192c87764cb98df1fb0469a228df0cd52dab30544b44dcdbe3782bbc0.py",
+            "bytes": 3033,
+            "sha256": "73bbaa3192c87764cb98df1fb0469a228df0cd52dab30544b44dcdbe3782bbc0"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        }
+      },
+      "mutant_tensor_shortcut": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py",
+          "--suite",
+          "tensor"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/d3911f8f6bc59719aa1d4aaff4cf2ffe074aca455d6a262f8c4d4a9d4b987f41.py",
+            "bytes": 7793,
+            "sha256": "d3911f8f6bc59719aa1d4aaff4cf2ffe074aca455d6a262f8c4d4a9d4b987f41"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/cda1e92e413598567149eb6dc0606bb65ceb4ab6c9f23603975bfb782154e3e7.py",
+            "bytes": 3038,
+            "sha256": "cda1e92e413598567149eb6dc0606bb65ceb4ab6c9f23603975bfb782154e3e7"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        }
+      },
+      "mutant_missing_state_formfactor": {
+        "entry": "helper.py",
+        "arguments": [
+          "--candidate",
+          "@candidate.py"
+        ],
+        "resources": {
+          "helper.py": {
+            "packet_path": "runtime/4ee8aa0a8ddea4aa6cc435c460822fdc97252e773733ad32b7fb1654bd2e4280.py",
+            "bytes": 3047,
+            "sha256": "4ee8aa0a8ddea4aa6cc435c460822fdc97252e773733ad32b7fb1654bd2e4280"
+          },
+          "candidate.py": {
+            "packet_path": "runtime/a0e21f59008f5da9c8b035d0cbc82d4780119f81f96c03e9dc0f56cc87cfa827.py",
+            "bytes": 3038,
+            "sha256": "a0e21f59008f5da9c8b035d0cbc82d4780119f81f96c03e9dc0f56cc87cfa827"
+          }
+        },
+        "timeout_seconds": 60,
+        "environment_overrides": {
+          "PYTHONDONTWRITEBYTECODE": "1",
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1"
+        }
+      }
+    }
+  }
+}

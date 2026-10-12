@@ -1,6 +1,6 @@
 {
- "edge_count": 15424,
- "node_count": 6874,
+ "edge_count": 15428,
+ "node_count": 6875,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -4265,6 +4265,10 @@
   "det_phase_harmonic_depth_state_dependent_bounded_theorem_note_2026-06-12": {
    "deps_hash": "c9025ba861e7",
    "out_degree": 1
+  },
+  "detector_index_leakage_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "87e0f9c771ec",
+   "out_degree": 4
   },
   "detector_scattering_projection_bounded_theorem_note_2026-10-12": {
    "deps_hash": "19159fe18feb",

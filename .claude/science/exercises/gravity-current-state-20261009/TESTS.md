@@ -3341,3 +3341,31 @@ Readings, per route:
   - the weak N-type stress bridge;
   - non-regular strong-coupling emergence;
   - non-local/holographic mechanisms.
+
+### C5 Round 7, items 3–4 (pre-registered 15:12Z; launched now)
+
+**R7-3. Spin-algebra version of R6-1's witness: exact additive momentum with scattering on ⊗M₂(C).**
+- The R6-1 referee confirms W in the graded CAR category but not in the fixed ⊗_{Z^d} M₂ spin class.
+- Build a qubit (spin) law on Z² or Z³ with exact additive ℝ^d momentum on scattering states and genuine non-forward 2→2 scattering. Candidates:
+  - hard-core bosons with a box-supported C^∞ pair form factor;
+  - multi-qubit unit cells with an encoded (gauge-constrained) fermion, counting the constraint sector honestly;
+  - spin-wave (magnon) two-body scattering above a ferromagnet with a box form factor.
+- Or show why spin composition forbids it, in a stated class. The R6-1 worker's suggestion was that hard-core versions fail.
+
+Readings:
+- **REFUTED-class (positive):** an explicit ⊗M₂ quasi-local law (tails stated) with exact additive momentum and checked non-forward scattering.
+- **DERIVED (no-go):** a proof that a stated spin class forbids it (refereed).
+- **SUGGESTED:** otherwise.
+
+**R7-4. The weak N-type stress bridge: can the exact-constraint VS/N-type graviton on Z³ couple universally to matter's energy-momentum?**
+- Lane R left this as the strongest live counter-route (`TESTS.md` lane R verdict). R6-2's referee keeps "the exact weak N-type stress-bridge route" open.
+- Construct the lattice matter–graviton coupling: a local matter stress tensor sourcing the N-type constraint so that the combined system keeps the exact constraint algebra. Test:
+  - universality across two matter species with different dispersions;
+  - the Newtonian limit and the light-bending factor (γ);
+  - the speed tuning needed against GW170817.
+- Use R6-1/R7-3's exact-momentum constructions if helpful.
+
+Readings:
+- **PASS:** an explicit lattice coupling preserving the exact constraint, with universal coupling and γ = 1 at linear order, checked, with the tunings named.
+- **FAIL:** a no-go that the constraint algebra cannot close with a matter stress source in a stated class (refereed).
+- **INCONCLUSIVE:** otherwise.

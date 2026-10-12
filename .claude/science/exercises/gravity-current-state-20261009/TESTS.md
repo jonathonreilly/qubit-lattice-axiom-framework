@@ -5195,3 +5195,15 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - This does not undo R15-1's FAIL: g ≠ 0 remains during every absorbed drop.
 
   Referee running.
+- **R15-4 (regular P-T reader): worker reading FAIL**, limited to test (c) and to class 𝓡⁺. Tests (a) and (b) PASS within that class.
+  - **The reader:** a causal linear two-register reader fed by E = −dρ_tot/du. It annihilates constants exactly. κE = 2S, so there is no new non-locality. Lemma P2: ρ̂ ≥ 0 on 𝓗₄, so the clamp is not needed.
+  - **(a) Transitions.** Bounded error for any release width. EW and QCD are fine. e⁺e⁻ annihilation gives a ΔN_eff equivalent of +0.43 (D1) and +0.16 (R*), from RECALLED comparators; no BBN network was run.
+  - **(b) Lumpy universe.** Local reader identities hold, and the lapse positivity gap closes, given the SEC and no recollapse. Residuals are ~1e-7 Λ_obs.
+  - **(c) DESI-like w.**
+    - Lemma N+: every causal, linear, time-invariant reader that is exact on dust and never negative after reheating has G ≤ x(4−x)/3, and G ≤ 0 for phantom content.
+    - Lemma N0: a dead band at w ≈ −1.
+    - The DR2 fits are phantom at z ≳ 0.4, so the H(z) errors are 24–43%.
+  - **The escape:** a non-phantom true dark energy whose reading equals the DESI curve. Its cost is g/H² ~ −0.3 to −1.1 today, so the R15-1 signalling is active now.
+  - **(d)** The vacuum's contribution to Λ̃ is exactly zero, with no tuning.
+
+  Referee running.

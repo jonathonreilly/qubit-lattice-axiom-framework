@@ -1,0 +1,18 @@
+# Part A (sympy)
+A1 calE - (theta^2/3 - lambda) = 0
+A2 Lt - (theta^2/3 - calE_nc) = 0
+A3 Qt - (calE_nc + sigma2 + kappa/2 (rho+3p)) = 0 ; Qt - [(3k/2)(rho+p) - R/2 + 3 sigma2/2] = 0
+A4 dcalE/dt + (2/3) theta S with g = -(2/3)(thetadot+S): 0
+A5 homogeneous S = Qt(N=1) = 3*kappa*(p + rho_nc)/2 (exact reader, theta^2/3 = kappa rho_nc)
+    g(theta=3H) = -2*Hdot - kappa*p - kappa*rho_nc
+
+# Part B: conformal curvature formula and the volume average
+   R - e^{2Psi}(4 lap Psi - 2|grad Psi|^2) = 0
+   T^3 random Psi (rms 0.3): <R>_vol = 0.71476524, 2<e^(-Psi)|grad Psi|^2>/<e^(-3Psi)> = 0.71476524; <R> > 0; min R = -267.285 (R not >= 0 pointwise)
+
+# Part C: magnitude (linear theory; inputs RECALLED)
+   int P dk/2pi^2 = 85.50 (Mpc/h)^2 [3D displacement variance], int P/k^2 dk/2pi^2 = 4.844e+05 (Mpc/h)^4
+   <R>/H0^2 = 4.114e-06;  <sigma^2>/H0^2 = 2.145e-09 (suggested normalisation)
+   (i) R14-5 <rho>-reader: Lt/H0^2 = +2.056e-06; Lt/Lambda_obs = +9.932e-07 (Lambda_obs = 3 Omega_L H0^2)
+   (ii) calE-reader D1 minimal (2 regs): R[B]/B (a=1) = 1.0235; Lt/H0^2 = -4.825e-08; Lt/Lambda_obs = -2.331e-08
+   (ii) calE-reader R* fast (2 regs, beta 20,24): R[B]/B (a=1) = 1.1108; Lt/H0^2 = -2.279e-07; Lt/Lambda_obs = -1.101e-07

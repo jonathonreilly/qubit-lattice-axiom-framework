@@ -1,0 +1,10 @@
+# check: T_gamma/T_nu at the end = 1.40101 (expected (11/4)^(1/3) = 1.40102)
+T=0.998 MeV: x_rho=3.9892, x_E=3.9940, fast-reader E/x_E / rho - 1 = -1.210e-03, int_u^inf E / rho - 1 = +3.93e-05
+T=0.501 MeV: x_rho=3.9656, x_E=3.9782, fast-reader E/x_E / rho - 1 = -3.147e-03, int_u^inf E / rho - 1 = +3.89e-05
+T=0.300 MeV: x_rho=3.9325, x_E=3.9494, fast-reader E/x_E / rho - 1 = -4.283e-03, int_u^inf E / rho - 1 = +3.83e-05
+T=0.200 MeV: x_rho=3.9055, x_E=3.9162, fast-reader E/x_E / rho - 1 = -2.733e-03, int_u^inf E / rho - 1 = +3.77e-05
+T=0.158 MeV: x_rho=3.8991, x_E=3.8990, fast-reader E/x_E / rho - 1 = +2.966e-05, int_u^inf E / rho - 1 = +3.75e-05
+T=0.100 MeV: x_rho=3.9319, x_E=3.9037, fast-reader E/x_E / rho - 1 = +7.216e-03, int_u^inf E / rho - 1 = +3.78e-05
+T=0.070 MeV: x_rho=3.9781, x_E=3.9549, fast-reader E/x_E / rho - 1 = +5.852e-03, int_u^inf E / rho - 1 = +3.87e-05
+T=0.050 MeV: x_rho=3.9971, x_E=3.9916, fast-reader E/x_E / rho - 1 = +1.377e-03, int_u^inf E / rho - 1 = +3.93e-05
+T=0.030 MeV: x_rho=4.0000, x_E=3.9999, fast-reader E/x_E / rho - 1 = +1.061e-05, int_u^inf E / rho - 1 = +3.93e-05

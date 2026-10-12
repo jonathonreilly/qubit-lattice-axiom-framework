@@ -1,0 +1,4 @@
+D1 minimal (2 regs), class H4 random histories: min rho_hat/max rho = +0.000e+00; min rho_hat/rho_nc = +7.702e-05
+D1 minimal (2 regs), CONTROL with dominant phantom (outside H4): min rho_hat/max rho = -2.699e-01; min rho_hat/rho_nc = -2.724e-01
+R* fast (2 regs, beta 20,24), class H4 random histories: min rho_hat/max rho = +0.000e+00; min rho_hat/rho_nc = +1.980e-04
+R* fast (2 regs, beta 20,24), CONTROL with dominant phantom (outside H4): min rho_hat/max rho = -5.238e-01; min rho_hat/rho_nc = -7.996e-01

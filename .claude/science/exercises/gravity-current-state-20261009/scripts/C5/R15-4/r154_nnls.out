@@ -1,0 +1,21 @@
+# (i) radiation + dust (R0 e^{-4u} + M0 e^{-3u}), plus a vacuum constant 1e6:
+   u=-2.0: rho_hat/rho_nc - 1 = +6.12e-02 (with vacuum 1e6), +1.06e-01 (no vacuum)
+   u=0.0: rho_hat/rho_nc - 1 = +8.87e-02 (with vacuum 1e6), +3.05e-02 (no vacuum)
+   u=2.0: rho_hat/rho_nc - 1 = +1.62e-02 (with vacuum 1e6), +5.66e-04 (no vacuum)
+# (ii) S1 exact step alpha = 0.5 at u=0 (R0=30, M0=0.5), reader at tau = u - u_T:
+   tau=0.05: eps = -6.359e-03
+   tau=0.2: eps = +3.336e+00
+   tau=0.5: eps = +2.967e+01
+   tau=1.0: eps = +2.816e+02
+   tau=1.9: eps = +7.704e+02
+   tau=2.5: eps = +1.076e-03
+# (iii) DESI DR2 CPL + matter
+   DESY5: z=0.0: tot +0.037, DE-part +0.054; z=0.5: tot +3.923, DE-part +9.223; z=1.0: tot +2.576, DE-part +11.675; z=2.0: tot +0.208, DE-part +3.598
+   Pantheon+: z=0.0: tot -0.664, DE-part -0.963; z=0.5: tot +3.005, DE-part +7.285; z=1.0: tot +2.326, DE-part +10.874; z=2.0: tot +0.279, DE-part +4.714
+   Union3: z=0.0: tot +0.936, DE-part +1.357; z=0.5: tot +4.795, DE-part +10.934; z=1.0: tot +2.471, DE-part +10.829; z=2.0: tot +0.147, DE-part +2.592
+# (iv) continuity at w = -1 (Lemma N0): matter + constant-w DE, z = 0
+   1+w = 0.3: DE read fraction = +1.191
+   1+w = 0.1: DE read fraction = +1.221
+   1+w = 0.03: DE read fraction = +1.292
+   1+w = 0.01: DE read fraction = +0.598
+   1+w = 0.003: DE read fraction = +0.179

@@ -1,0 +1,15 @@
+{
+  "runner": "scripts/local_vector_homogeneous_response_2026_10_12.py",
+  "command": [
+    "/usr/local/bin/python3",
+    "scripts/local_vector_homogeneous_response_2026_10_12.py",
+    "--output-json",
+    ".claude/science/physics-loops/local-vector-response-milestone-20261012/evidence/SCIENTIFIC_RESULT_v1.json"
+  ],
+  "status": "ok",
+  "exit_code": 0,
+  "stdout": "PASS symbolic tensor inverse, stable poles, static Green and retarded time integral\nPASS 64 real-space/Fourier transforms; 120 flux diagnostics; 9 off-cone points\nPASS missing-intervening-term mutation detected\nper_element: all three field components are in the symbolic tensor inverse.\nper_site: checked and not executed - no physical discrete-site model is supplied.\nper_mode: both transverse modes and the longitudinal branch are analytically checked.\nper_block: retarded/static tensor identities and finite numerical controls are checked.\nlattice_wide: checked and not executed - this is a continuum homogeneous construction.\nThe continuum domain of dependence follows from the local energy proof.\nTOTAL: PASS=10 FAIL=0; conditional construction, no empirical claim.\n",
+  "stderr": "",
+  "elapsed_sec": 1.353168458910659,
+  "timeout_sec": 60
+}

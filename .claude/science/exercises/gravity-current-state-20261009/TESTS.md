@@ -4474,12 +4474,12 @@ Readings:
 - **PRODUCED:** a qubit model with a numerically demonstrated linear gapless TT mode (two polarizations, no partners), checked.
 - **EXCLUDED:** a refereed no-go extending X1 to the stated strong-coupling or emergent class.
 - **OPEN:** otherwise.
-- **R12-1 (deformation algebra):** worker reading INCONCLUSIVE.
-  - Theorem K: at degree 2, the matter part of the Dirac brackets closes iff the matter's global Poincaré jets are exact. That holds on box states, via Hadamard quasi-local corrections.
-  - Closure forces a tree-level common cone c_g = c_m.
-  - The gravity bilinear sector was not built.
-
-  Referee running.
+- **R12-1 (deformation algebra) — NOT CONFIRMED (Theorem K's global sufficiency). INCONCLUSIVE.**
+  - **Necessity holds.** For free number-conserving box fermions on a smooth, compactly supported finite-particle core, exact Poincaré closure is necessary for degree-2 matter-bracket closure: every regular scalar-curvature/Killing-gate completion vanishes on Killing smearings.
+  - **Local statements hold.**
+    - Near zero smearing momentum in d ≥ 2, the SS defect admits a local Hadamard decomposition.
+    - Within the fixed completion ansatz, an off-box O(q) Killing defect needs a 1/|q| singularity, i.e. a 1/r^{d−1} tail.
+  - **Not established:** an explicit global quasi-local lattice HDA, an undeformed common structure function, W4 closure, or a mobile physical sector.
 - **R12-3 (twisted lattice SUSY):** worker reading INCONCLUSIVE.
   - Bounded no-gos PD₁, PD₂ (twisted N=2 photino Chern +2), Theorem U (doubler-free photon plus spin-½ photino incompatible in Nicolai form) and Theorem L (lattice SUSY never fixes c_γ/c_e).
   - The BF multiplet is doubler-free, but has integer-spin photinos and a non-local or uncompleted Hamiltonian.

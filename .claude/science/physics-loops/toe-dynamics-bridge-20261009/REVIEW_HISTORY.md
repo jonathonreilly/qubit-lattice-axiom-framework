@@ -1,6 +1,3 @@
-# Review history
+# Final review record
 
-ENERGY complete final review and root gate resulted in regular attached PR9496, f85656c1766536299c8bafdb91db6dd1dfbd5e2d. Exact proof/evidence and actual reproduction preserved; zero selected ledger claims is not audit coverage.
-SHARP fresh neutral-plan proof review sealed before author packet; exact theorem supported with no source correction. Root full program/tool/diff/packet read and exact archives validated; source staging actually complete, integration not yet performed. Partial-narrowing only, N1/N5 unresolved.
-NEW current-preserving independent findings sealed15:30:13 before author exposure; full source comparison pending. Root independently froze reconstruction15:21:41 before first author findings. Same selected model and effort, root coauthor, no model-diverse/blind/retained audit claim.
-All prior detailed review/evidence retained in archived checkpoint and immutable source packets.
+ENERGY9496, SHARP9497 and CURRENT9498 each retain full source-bound proof/evidence review and actual publication checks. SHARP/CURRENT are pure ordinary-proof proposals with identity-only executables and no mathematical PASS count. Current's sole norm-distance wording correction is recorded against its original frozen core. Final finite-energy lemma was fully read and source-exposed focused-reviewed, including its zero-energy vacuum correlation counterexample, but remains unsubmitted as a science milestone. Its exact artifacts are in recovery/final-followup/MAP.json. Root coauthor status, same selected model/effort and exposure chronology are explicit. No independent retained audit or blanket Lean claim.

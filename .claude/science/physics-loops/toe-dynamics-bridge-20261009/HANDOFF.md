@@ -1,121 +1,127 @@
-# Current campaign recovery checkpoint
+# Final 24-hour campaign checkpoint
 
-Checkpoint 2026-10-12T15:34:07.346787+00:00. Fixed deadline2026-10-12T16:00:52Z, never extend.
-No new research at/after deadline; preserve work, report outcomes and limitations,
-disable heartbeat toe-derivations-24-hour-campaign and release owned lock.
-No science merges, main pushes, audit verdicts, physical axioms, prompt edits or
-other-chat messages. Root sole Git/publication writer; regular PRs only.
+The fixed deadline was 2026-10-12 16:00:52 UTC (12:00:52 America/New_York).
+Research stopped at that deadline; this checkpoint was written 2026-10-12T16:01:43.017366+00:00.
+Heartbeat toe-derivations-24-hour-campaign is PAUSED with its original UNTIL unchanged.
+No new research is authorized by this recovery file. Only necessary closeout remains.
+Root made no science merge, main push, audit verdict, physical axiom, editable prompt
+change or other-chat message. All 19 campaign PRs were regular, never drafts.
 
-T=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009; S=T/resume_20261011. P=T/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009
-is SOLE live checkpoint. Previous clean checkpoint HEAD cc799e0c755fb80c7d4cf1abcd31458c167218b4; six full files
-archived history/20261012T153407Z_*.gz, including all older proof/evidence recovery paths.
+## Exact recovery pointers
 
-ACTIVE HW=T/sharp_current_worktree, physics-loop/toe-sharp-current-20261012,
-clean parent f85656c1766536299c8bafdb91db6dd1dfbd5e2d. EW=energy_adapted_worktree
-at same clean head, regular attached PR9496. AW=state_adapted_worktree
-0d99401253ebf5790b5ac24a2dcb94a74871f874 PR9495. DW=dyadic_refinement_worktree
-cb882f7c68032986900dec2aaf24617ff3274c08 PR9493. Other unchanged exact worktrees
-are recorded in preceding archived HANDOFF; primary Projects/Physics untouched.
-No current-preserving worktree exists. Do not invent one or overwrite HW.
+P=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/worktree/.claude/science/physics-loops/toe-dynamics-bridge-20261009 is the sole current checkpoint, on
+physics-loop/toe-nonlinear-transport-20261011. Previous HEAD 6bf09228b6893465f26e883993b86455a633a64a; all six
+old files archived at history/20261012T160143Z_*.gz. The complete prior evidence history
+remains there and in the published science packets. Do not infer missing coverage
+from this summary: consult exact original proofs, reports and failures.
+S=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011; T=/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009.
+Active recovery worktree T/current_preserving_worktree is clean on
+physics-loop/toe-current-preserving-20261012 at 50cbfeed259d56f6a13235381fceca4d70c94078, regular PR9498.
+Its exact SHARP parent is 7c0570a4a20a768349f3d88960303f8637e7fe33 in T/sharp_current_worktree (PR9497),
+on ENERGY f85656c1766536299c8bafdb91db6dd1dfbd5e2d in T/energy_adapted_worktree (PR9496).
+STATE9495 remains0d99401253ebf5790b5ac24a2dcb94a74871f874 in state_adapted_worktree;
+DYADIC9493 cb882f7c68032986900dec2aaf24617ff3274c08; LOCAL9492 a8ab3f49038327e3080d2f93afb7e34601459928.
+Older exact worktrees and source identities are in the archived15:34 HANDOFF.
+Primary /Users/jonreilly/Projects/Physics was untouched. Keep all recovery worktrees.
 
-Latest source sync15:07:10.060362UTC, S/repo_sync_1510.json and repo_sync_1510/:
-main34ab62523138756eded9bdcc8a35fd2ff61f926f; instructions3a4b2c66a1ead7a1c48b4359627e968f681e3c39,
-hashes unchanged. PR9476 head1b0b8ecaaaa9c8d94cebf839722c689474346416 additionally
-owns interacting d>=2 nonanalytic box-confined Poincare/boost plus gravitationalWard,
-and holographic/deSitter substrates; complete changed TESTS read for ownership only.
-PR9494 Wilson observation forwardmap head6b7201df48ef9c33be7d66121e14a134ae5fe1de;
-full body/files read for ownership only. Another campaign's stop is not ours.
-Campaign17 regular PRs created; eight open at latest known states. Nine closed by
-other activity:9478,9479,9480,9481,9482,9483,9484,9485,9487. Do not infer merges.
-Lock refreshed15:01:29.911451, expires17:01:29.911451UTC, ownercodex-toe-native-20261011,
-holder01a11691-f332-7852-b641-6ee714aab15a,pid88158. TTL does not extend deadline.
+## Publication and verification
 
-## ENERGY publication complete
+PR9496 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9496 supplies exact chosen state/energy refinement with the same
+geometric continuum sections; its specified map still has current/space/boost defects.
+Source65d49c82..., fresh proof review2e6fb1da..., root gate47cb0f3e... and all
+333 reviewed source/evidence files remain in the packet. Actual root run135.39s,
+714 author/replay rows preserved with failures and mutants; graph+1/+6 and8 fresh
+caches. The focused compatibility command selected zero existing ledger claims.
 
-Regular attached PR9496 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9496
-headf85656c1766536299c8bafdb91db6dd1dfbd5e2d on exact STATE9495 head0d994012...
-S/energy_adapted_delivery/FINAL.json SHA31b45b83c0d9b999a6d83203414dd935ff77eef563ffbae88b3dbfd7c67e81d7.
-Preparation program7cd68d35e7305d5709dc1bbde0f63f02e46dd053b5f7606dc118523ebed2eed5
-507lines fullyrootread;401supportfiles and365acceptancepins verified. Initial
-root index guard failed because index explicitly used pre-seal program identity;
-bookkeeping failure and corrected exact reversible identity check preserved.
-Run energy_adapted_publication_preparation/runs/20261012T151139_73c242e4f421,
-135.3936357s exit0, complete outer and18inner receipts. Verification
-2162a116b4a7be2b7c14c79250ac5179a9560b55ec5470f1f5970aa37f4ebf91;
-identities01dca1d0fc2ced573fc62d08ed36bae4b9b58d438817f9373e51cf5332c3197c.
-Canonical238/0, variants190/48 and226/12 exactly replay714originalrows/30diagnostics.
-Graph+1/+6 oldnodesedgesexact,8freshcaches,415newfiles. Focused compatibility
-selected ZERO ledgerclaims; no audit coverage inferred. Full original333file
-fresh review and root evidence/gate pinned in preceding checkpoint and PRpacket.
-Same chosen state/time exactly preserved, same Cauchy sections/local quotient,
-parent mixed-flow limits retained. Fixed-map current/space/boost defects and
-periodic H1 domain limits remain. No Lean for this result; no retained verdict.
+PR9497 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9497 proves the sharp normalized current defect over every exact-energy
+isometry, attained by a real map: delta(P)=P(sqrt(1-b²P²/4)-sqrt(1-a²P²/4)). At
+fixed b=r*a, vanishing occurs iff P=o(a^-2/3). This is a coefficient lower bound
+and fixed-even-word upper estimate, not an even-algebra lower bound or locality theorem.
+Exact source2a6948ab..., finalreview158995f5..., gateef0f8314... . Pure-proof proposal,
+no fabricated science runner. Original integration failed when its link regex read an
+indented mathematical expression as Markdown; source unchanged, failed attempt retained.
+Root corrected the checker and resumed from exact installed bytes and completed base
+graph. Successful run sharp_current_integration_runs/20261012T154015_fdef4fc676bc,
+136.21s, verification8bf7d787cf31a1b913758e6b5fc9fa96a4f37793fc5f3f6f32d9c456c043c329,
+graph+1/+2,9 fresh caches.156 added files; regular PR attached.
 
-## SHARP proof accepted; integration pending
+PR9498 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9498 constructs coherent exact state/current refinement over all positive
+scales. Full current folding retains two branches, giving a doubled equal-time local
+CAR quotient. Ordinary cells reach the low massive sector; alternating local cells
+reach a high branch with diverging energy. Actual time has no full all-spacing limit;
+a separate dyadic witness is explicit. Multiplicity is a marked coefficient/current
+statement, not a universal abstract C*-algebra obstruction or extra light particle.
+Exact final source1104de3922002720beecb7eb2bd106b64025aea0afb1e11b8f86750dfb59e30d,
+reviewda47384bb8658c6abbca2e9cec5e75e2a40b55a4c0ef9b75e311ef5eceb23040,
+gate594998b2573c2aa92db4f6541243ddef7e203e6c361ce3d8231c4f1e33710def.
+Root read the complete541line source, independent proof, local-section addendum and
+final review.33author+14independent+7finalreview source identities matched. Original
+498line core and the single norm-versus-distance wording correction are preserved.
+Independent derivation sealed15:30 before author exposure; paired-cell local quotient
+was additionally checked after exposure. Same selected model/effort; root coauthor.
+Actual integration current_preserving_integration_runs/20261012T155018_a49e6490608e,
+132.65s, verificationadae52b664f3c17109466a3fcace670832987d8f68ed58b342818eaa4be64a32,
+graph+1/+2,10 fresh caches,138 added files. Source package102files/74 exactarchives;
+canonical identity tool executed zero mathematical predicates. Initial publisher
+stopped before Git mutation on a copied title assertion; corrected v2 preserved it.
+Successful delivery is S/current_preserving_delivery_v2/FINAL.json, NOT the failed
+current_preserving_delivery directory. Both PR9497 and9498 are attached to the chat.
 
-Exact source SHARP_CURRENT_REFINEMENT_PROBE.md SHA2a6948ab1d98584ac77b3486f8ec1927d88fbb55cd0276123b6c24750f9d6a42,
-456lines fullyrootread.31file authormanifestd704de97de804fa72b4968c1f8bab0197f5b2df3bdadc2d2204f67d2c3565433.
-Fresh finalreview SHARP_CURRENT_REFINEMENT_REVIEW.md SHA158995f5f225fe7654aa842a03108566c5d72d7a916e799d8b28089f8499d30d,
-independentfindingssealed15:02:13 beforeauthorpacket; fullproof/readall21reviewfiles
-preserved. Root gate SHARP_CURRENT_REFINEMENT_MILESTONE_GATE.md
-shaef0f8314dca918c6f951a8cce1f47224452467a23539f0b8b471dc060131f639;
-coverageSharp_current_refinement_root_review_coverage.json1add81b7c6fc05fab3f5d5b7c8afaba420c1b557d982ab6972cece93e0152832.
-Disposition partial-narrowing review proposal under explicit skill FAIL route.
-N1five-family/N5scientificcertificate pending; no no-go packet PASS or retained.
-Pure ordinary proof, no mathematical executable/mutants/counts fabricated.
-All exact-energy complex-linear isometries obey sharp actual-current defect
-P(sqrt(1-b²P²/4)-sqrt(1-a²P²/4));real attainer. Forfixedb=ra,
-vanishing iffP=o(a^-2/3);criticalwindowlimit(1-r²)lambda³/8.
-Coefficient lower bound and fixed-even-word upper estimates only; no even-algebra
-lowerbound, compact locality, interaction or otherdimension conclusion.
+For both pure-proof milestones: N1/N5 formal no-go packet readiness remains pending;
+partial-narrowing proposal only, no packet PASS. Identity tools check bytes only.
+Canonical runner API merges child stderr into its full log; no separate child stderr
+claim. Outer process-group timeout alone cannot kill separately-sessioned children
+if an inner recorder stalls; all actual executions completed normally. Combined
+current-main landing validation, strict audit lint and retained audit remain later.
+No Lean certificate is claimed for these units; earlier scoped Lean work remains at
+its original finite-algebra scope in prior packets. Missing external verification is
+not a bar to proposing new mathematics, while retained status remains independent.
 
-Q=S/sharp_current_publication_preparation. Frozen SOURCE_FREEZE.json
-sha9dfcd29149f560e451b280e86d2f0ade7779264e6a361d8404af2bb5ca6e38c5,
-programprepare_verify_sharp_current_publication.py89b84bb174e643dc2441f5cbab018828cadfd44e271cc43d516d65806059866e.
-Rootfull finalprogram/primarytool/note+2parentdiffs/10packetMD read;105sealedfiles,
-103indexrows,61exactarchivepairsverified. Initialparent-bodysubstringfailure
-preserved; Concrete had only three citationpathrelocations, exactproof unchanged.
-Root acceptanceSHARP_CURRENT_ROOT_PREPARATION_ACCEPTANCE.json
-bcae0e0ca341cd9e1b70fb03894a7102d732da1bc2829c13361a9624e3d3dad5.
-Actual source stage run15:31:46.696562UTC0.0942sexit0, fullstdoutstderr/receipt
-sharp_current_root_staging_execution/. StageQ/staged/root-accepted-20261012T1535.
-It onlycopied reviewed sources; NO worktree/cache/graph/identityexecution/PR yet.
-Agentdyadic_even_refinement now writes rootonly integration driver, noexecution.
-Expectedgraph+1/+2 onlyConcrete andLocalEven scientificparents; ENERGY stackonly.
-Identitytool onlychecksbytes/bodyreconstruction, never math/N5/no-go PASS.
+## Reviewed final follow-up, not yet a science PR
 
-## NEW current-preserving construction and review active
+S/FINITE_ENERGY_SECTOR_SELECTION_PROBE.md is final at
+648e61978fc5b7d7b84ec6ddc7cb4c6d506405827e7aad1fa80f99cf9211d52c;
+S/FINITE_ENERGY_SECTOR_SELECTION_REVIEW.md is
+c1d01c472f0d5520fa575ea639e096ddd2884d97876e876bacdb3afee934f287.
+All238lines,14author identities and full focused review were read. Root independently
+sealed matching initial bounds before author exposure; later vacuum-correlation scope
+counterexample is disclosed root input. The separate review is source-exposed.
+Original core, appendix, full review, snapshots, root reconstruction/coverage and
+receipts are archived byte-exactly in P/recovery/final-followup/, with MAP.json.
 
-Authoragentenergy_adapted_refinement_review owns CURRENT_PRESERVING_REFINEMENT_PROBE.md
-and current_preserving_refinement/. Authorplan15:19:58 before formalcorewriting,
-provisional earlierreasoning disclosed. Await exact corefreeze and finalpacket.
-Rootindependent reconstructionbeforeauthorfindings at15:21:41.506845UTC:
-CURRENT_PRESERVING_ROOT_RECONSTRUCTION.md8182f9251de4c084edf4da8f4c073a8fa17a03d206720bdf0559fd50fe40b338,
-sealCURRENT_PRESERVING_ROOT_RECONSTRUCTION_SEAL.json. Notfinalacceptance.
-Freshagentcurrent_preserving_refinement_review has independentfindingssealed
-15:30:13 beforetargetexposure: current_preserving_refinement_review/INDEPENDENT_FINDINGS.md
-ffcd67002584dfa4d8b55e5d1225c77b8cc375ee076943980cae0769270757cb;
-independent_seal.jsonbf11ae489d90b50dda3e2cb05bedb1485294f5348428d48bcfe2bf376d7efa78.
-Authorize fullfinalsourcecomparison onlyafterauthorcorefreeze. No formalverdictyet.
+For actual positive Fock energy expectation <=M, high occupation <=M/Lambda_c,
+Lambda_c=sqrt(m²+2v²/c²). Normalized no-high compression is within trace norm
+2sqrt(M/Lambda_c); an even coherence witness shows square-root order. This is
+conditional concentration of normal states, not unique low-state convergence or
+observable C*-norm collapse. Even the zero-energy vacuum has correlations
+<Omega,B*alpha_c(t)(B)Omega>=exp(i4vt/c)+o(1) for a fixed high pair creator B.
+The inserted state has energy~4v/c. Therefore INITIAL-state energy control alone
+cannot establish multitime convergence. Energy transfer by observables/interventions
+and low-sector limits are the precise next obligations. No new physical selection
+axiom was assumed or derived. This final follow-up was reviewed and preserved, but
+not packaged as a new science PR before the deadline. Do not relabel archival
+checkpointing as publication or a retained audit.
 
-Provisionalcommonconstruction: split sin(cq)/c into central/outerbranches;
-z=sqrt(1-c²k²),both halfdensitiesz^-1/2, flattenchosenstate onbothbranches.
-Nestedinterval extension givescoherentrealexactstate/currentisometries forallb<a.
-Currentlimit hasC4coefficient/rank2positivepolarization. Innerenergy tendsmassive
-E(k),outerE=2v/c+O(c). Ordinarycellinputsreachinner; staggered(-1)^jcellinputs
-reachouter while retainingcompactphysicalsupport. Extra localcurrentCauchysections
-cannotbe discarded merely because smoothcells miss them. Outeractualtimephase
-obstructsall-scalefixedtlimit; dyadiccounterexample atchosenfixedt needsquantifier
-care, exceptionaldyadictimespossible. Evenpaircreationsretainphase unlike densities.
-Thesearehighenergy, notextra lightparticles. Fullsource/independentreviewpending.
-Do notforce publication or closure tobeat deadline; preserve exactsource/recovery.
-No scientificrunner or Leanplanned; possible scopinglater, not currentproofevidence.
+## Repository synchronization and ownership
 
-## Closeout
+Final full source refresh 2026-10-12T15:46:26.732659+00:00: main6d73c922669257b3dd010443d154f23e79f29141,
+instructions3a4b2c66a1ead7a1c48b4359627e968f681e3c39; all four governing instruction
+hashes unchanged. S/repo_sync_1547* stores exact receipts. Main log records others'
+selective landings of9486/9488; this root neither merged nor audited those landings.
+Remote PR inventory at 2026-10-12T15:55:42.171153+00:00:19 regular campaign PRs,6 OPEN,13 CLOSED,0 MERGED
+as GitHub PR states; closure is not evidence that science was rejected or unlanded.
+Open:9492,9493,9495,9496,9497,9498. Exact rows are in campaign_final_inventory/FINAL.json.
+PR9490/9491 were also closed by concurrent activity; prior heads remain recoverable.
 
-At16:00:52 startnonewresearch. Finishnecessarycheckpointing only, preserve all
-notes and reviews, report actualPRs/remainingobligations and disableheartbeat via
-automation_update modeupdate statusPAUSED preservingfullfields from
-/Users/jonreilly/.codex/automations/toe-derivations-24-hour-campaign/automation.toml.
-Do not editTOMLdirectly or extendUNTIL. Releaseownedautomationlock aftercheckingCLI.
-No active process session atthis checkpoint. Editablepromptfiles changed:none.
+Other PR9476 now4667f7c980b6e556c73d482f7f9767caf106a52b. Full changed TESTS was read
+for ownership only: it additionally owns spin-category additive-momentum witnesses,
+weak stress/gravity bridges, interacting box-sector repairs, loop/cluster issues,
+edge-mode universal gravity and relativistic CQ routes. No conclusions imported.
+Our supplied1D free-chain state concentration is distinct and does not settle its
+edge-mode gravitational universality question. PR9494 remains Wilson forwardmap.
+No new research after deadline; do not infer permission to message other chats.
+
+The original lock owner is codex-toe-native-20261011, holder
+01a11691-f332-7852-b641-6ee714aab15a. The lock was released during closeout; the exact receipt is
+S/campaign_final_inventory/lock_release.json and archived in the recovery map.
+The final Git receipt remains a necessary closeout record. Editable prompt files changed: none.

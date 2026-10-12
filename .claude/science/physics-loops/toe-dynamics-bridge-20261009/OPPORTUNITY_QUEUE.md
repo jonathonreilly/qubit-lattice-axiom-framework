@@ -1,7 +1,8 @@
-# Ranked opportunity queue
+# Recovery opportunity queue — campaign ended
 
-1. Publish independently checked SHARP quantitative theorem with exact scope and source integrity; do not upgrade no-go packet or retained status.
-2. Finish full source comparison for current-preserving construction: actual state/current coherence, doubled coefficient multiplicity, local staggered sections, and even-observable time obstruction. Preserve extra high-energy branch and distinguish all-scale from dyadic time limits.
-3. Physical sector selection and control of interacting/higher-dimensional dynamics remain open. PR9476 owns interacting d>=2 box-boost/Ward and additive-QCA routes; do not duplicate.
+1. Package the reviewed finite-energy lemma without expanding its scope. Preserve the zero-energy vacuum multitime counterexample.
+2. Derive explicit energy-transfer conditions on observables/interventions and prove the resulting low-sector multitime limits. A bound on initial-state energy alone is insufficient.
+3. Determine which physical model/state/dynamics assumptions the framework actually selects; the supplied free one-dimensional chain does not establish interacting or three-dimensional TOE closure.
+4. Coordinate only through read-only ownership checks with PR9476's box-interaction, spin-composition and gravitational universality routes. Do not duplicate or message it without user authorization.
 
-At fixed16:00:52UTC stop research; preserve incomplete evidence and disable heartbeat.
+No further automatic research: the fixed24hour deadline has passed and heartbeat is paused. New science requires a new user-authorized work period.

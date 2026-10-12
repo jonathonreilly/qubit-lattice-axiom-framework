@@ -1,0 +1,30 @@
+{
+  "created_at": "2026-10-12T17:50:47.117222+00:00",
+  "task": "one-parameter boundary-conditioned classical pair law",
+  "lambda_prior": "uniform unit vector on S2",
+  "responses": "A=sgn(a.lambda), B=-sgn(b.lambda)",
+  "conditioned_density": "rho_k(lambda|a,b)=exp[-k(a.b) A B]/(4pi Z_k(a.b))",
+  "k_domain": [
+    0,
+    "infinity"
+  ],
+  "shared_parameter": "one k for all angle pairs; no angle-specific k",
+  "model_role": "setting-dependent boundary statistics supplied; no measurement independence or microscopic causal dynamics claim",
+  "polarization_map": "a(alpha)=(cos(2alpha),sin(2alpha),0); angle theta=arccos(cos(2(alpha-beta)))",
+  "controls": [
+    "k=0 triangular measurement-independent pair law",
+    "quantum singlet E=-a.b"
+  ],
+  "nuisance_policy": "common readout/visibility nuisance only if identified by independent endpoint/calibration observations; no heldout fit",
+  "data_status": "searching primary multi-angle counts/errors; no dataset selected or fit points read yet; search snippets have exposed some visibility summaries",
+  "holdout_role": "public model-development holdout, never blind",
+  "limits_to_audit": [
+    "normalization",
+    "no-signaling binary marginals",
+    "rotations",
+    "outcome/setting relabeling",
+    "endpoint behavior",
+    "independent-pair composition",
+    "sequential and multipartite insufficiency"
+  ]
+}

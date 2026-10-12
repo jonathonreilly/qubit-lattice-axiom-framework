@@ -1,0 +1,67 @@
+{
+  "created_at": "2026-10-12T17:47:31.481004+00:00",
+  "status": "author calculation packet ready for independent review",
+  "rule": "Keep recorded artifacts unchanged; use addendum/new version for review repairs.",
+  "files": [
+    {
+      "path": "DERIVATION.md",
+      "sha256": "2591b3e1ab3411b48159ee328888f6eee69dc668ce05318db82720b45d154dee",
+      "bytes": 2904
+    },
+    {
+      "path": "EXTENSION_FREEZE.json",
+      "sha256": "f367433546d10ade80e004fa4218bb70e703a21f26e99d5221519236c32a7651",
+      "bytes": 912
+    },
+    {
+      "path": "MODEL_FREEZE.json",
+      "sha256": "7519cc017f1996d2379c277c4f83f2e91bc5ec4d33d6160584249e9c1fb71a0c",
+      "bytes": 4377
+    },
+    {
+      "path": "RANK_LEMMA.md",
+      "sha256": "138abd12cbc2acf54930990ed3a5cf4fc2f50edad2d3f050b6f8d65d1020e034",
+      "bytes": 3390
+    },
+    {
+      "path": "RESULTS.md",
+      "sha256": "83a59336a8d846ba8a461682563a3924167ec7f0b768143b695e33de2f72be2d",
+      "bytes": 12101
+    },
+    {
+      "path": "contrast_null.py",
+      "sha256": "ce196e9003dc1a3d2050786c315d30cef1f88962a6192c58a02d4337cf54c458",
+      "bytes": 3275
+    },
+    {
+      "path": "contrast_null_results.json",
+      "sha256": "b8ae6ecb137c1362f3115d9a6c931ff5a956b2a8645b39dadd953fc5b13e955c",
+      "bytes": 4562
+    },
+    {
+      "path": "response_checks.py",
+      "sha256": "50e0c6b77021099a3961d94e0b514960f964b52f5f2aa649892f01ca2a27e7ea",
+      "bytes": 5821
+    },
+    {
+      "path": "response_checks_results.json",
+      "sha256": "228a7ed5bb06893115c2e9339041107d60fb100871fd9a7823364b939dba008c",
+      "bytes": 16932
+    },
+    {
+      "path": "results_60dps.json",
+      "sha256": "e5d4bd44e5d8f1c7be97389142c738a82ea449b9d01512c13d79f7bc77053008",
+      "bytes": 40631
+    },
+    {
+      "path": "results_80dps.json",
+      "sha256": "ba879e6013fdb5d7f94a65f2188c86192575d71fd778877e9b319ce5618b4c69",
+      "bytes": 40519
+    },
+    {
+      "path": "source_profiles.py",
+      "sha256": "66c250c33d8e797d86ea0024a79a41bf65702fce2d5ae2d449f52fd837ff26ba",
+      "bytes": 11526
+    }
+  ]
+}

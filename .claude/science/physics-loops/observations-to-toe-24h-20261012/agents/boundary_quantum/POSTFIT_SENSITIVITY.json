@@ -1,0 +1,67 @@
+{
+  "created_at": "2026-10-12T18:06:15.964282+00:00",
+  "role": "Post-holdout diagnostic. Does not change frozen predictions or validate uncertainty coverage.",
+  "periodic_repeat_error_multiplier": 5.031827228252509,
+  "definition": "sqrt(sum of 8 independent-pair common-mean score minima / 8). Calibration-only observations, but this sensitivity procedure was selected after test exposure.",
+  "inflated_error_profile_delta3p841_crossings": [
+    0.3142403964367766,
+    0.8764492956544335
+  ],
+  "interpretation": "Illustrates fragility of counting-error-only curvature interval. A common multiplicative variance is an assumption, not a recovered experimental systematic model; repeat drift may be correlated or nonstationary.",
+  "large_k_fixed_checks": [
+    {
+      "k": 40.0,
+      "score": 4082.246441541098,
+      "parameters": [
+        9.606062622682137,
+        0.7385880188749403,
+        -4.688948584267107,
+        9.327868686169118,
+        0.8072664065391392,
+        -0.28745906215106803,
+        40.0
+      ]
+    },
+    {
+      "k": 100.0,
+      "score": 5905.978433909065,
+      "parameters": [
+        9.474324237241865,
+        0.7017786364202943,
+        0.0,
+        9.327868696624126,
+        0.8072664458695256,
+        -0.11607308699955722,
+        100.0
+      ]
+    },
+    {
+      "k": 1000.0,
+      "score": 5905.978435734841,
+      "parameters": [
+        9.474324237276104,
+        0.7017766055287415,
+        0.0,
+        9.327867707585932,
+        0.8072690746106864,
+        -0.011673741538781573,
+        1000.0
+      ]
+    },
+    {
+      "k": 10000.0,
+      "score": 8395.638412474787,
+      "parameters": [
+        9.474324237870574,
+        0.7017785723048078,
+        1.8750651694202771,
+        9.221417097261831,
+        0.7856176086167649,
+        -5.0,
+        10000.0
+      ]
+    }
+  ],
+  "stable_formula_max_difference": 3.3306690738754696e-16,
+  "search_scope": "Primary fit searched k in [0,40] with multiple starts. These large-k fixed checks are additional controls, not a proof of global minimization over all k and nuisance values."
+}

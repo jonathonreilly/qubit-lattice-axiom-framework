@@ -1,0 +1,18 @@
+{
+  "frozen_at": "2026-10-12T18:00:01.945425+00:00",
+  "note": "Independent initial calculation complete before any root code/numerical outputs read. Public target values were known.",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/INDEPENDENT_V1_PROTOCOL.md",
+      "sha256": "c7c944f15847454d085e652ab3b9e6e0c9e44de15c81e4bc382858797de3281c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/independent_v1.py",
+      "sha256": "987d7b24c3cb54c1c019100afdb4f807358420f44b1b7a4eb4bf59e19d698de8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/flavor_endpoint/independent_v1_results.json",
+      "sha256": "45187693352e0b61265647057737f203d53082f2bc423603dfdfe0e89fd95351"
+    }
+  ]
+}

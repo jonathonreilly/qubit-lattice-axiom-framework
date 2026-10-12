@@ -1,0 +1,46 @@
+{
+  "frozen_at": "2026-10-12T18:21:46.849438+00:00",
+  "status": "Independent V2 delivered; V1 unchanged; exact central algebra certificate only; conditional summary checks",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/INDEPENDENT_V2_PROTOCOL.md",
+      "sha256": "407b1cf3a100ff169ef870f139053cc59b529cd4c95f8dd2fcfd7b670361ad2a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/independent_v2.py",
+      "sha256": "76964c1279e91be3117841bd4920128db861f9c14737b2b72381cc14c0f65f14"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/V2_PREEXECUTION_FREEZE.json",
+      "sha256": "26de3424b76c7086ea4988ac0bf4eeb2486c426bf8492734276fc8907d45352d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/V2_INITIAL_RESULTS_FREEZE.json",
+      "sha256": "742df0434856e4d04494193585b9f0d32de1a4c258133f3c8a86530f86ed145d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/v2_exact_admissibility.py",
+      "sha256": "354f316132ed16f21d4aa3d523135195e239e02780d872e58c62c5c77301ce62"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/V2_INDEPENDENT_REPORT.md",
+      "sha256": "ab06ae0a460d04691934ba8754276b36e26574ecc52d48441a923994f56a7dcc"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/BOUNDARY_ADMISSIBILITY.md",
+      "sha256": "a2a2d2c7329fc8ee692e7c63ee62ee1ed0cf87745ef3557daf21f8d8e8253977"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/flavor_endpoint/independent_v2_results.json",
+      "sha256": "ca10cd18bbce044e9639dc013bdcf6c61e006adcb9066d79a7516d31b809e102"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/flavor_endpoint/v2_exact_admissibility.json",
+      "sha256": "f6f3d192a0b763de262fb4dec20b1690e6658e9914ca8767d264b87a067a042a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/flavor_endpoint/v2_author_concordance.json",
+      "sha256": "7d7c4be30125fcce2239384381edc7eaac024b32575503d5a71e1d8f1835229b"
+    }
+  ]
+}

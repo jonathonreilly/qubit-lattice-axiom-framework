@@ -1,0 +1,18 @@
+{
+  "frozen_at": "2026-10-12T18:17:04.510549+00:00",
+  "status": "Independent V2 initial results before author outputs/code read",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/INDEPENDENT_V2_PROTOCOL.md",
+      "sha256": "407b1cf3a100ff169ef870f139053cc59b529cd4c95f8dd2fcfd7b670361ad2a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/independent_v2.py",
+      "sha256": "76964c1279e91be3117841bd4920128db861f9c14737b2b72381cc14c0f65f14"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/flavor_endpoint/independent_v2_results.json",
+      "sha256": "ca10cd18bbce044e9639dc013bdcf6c61e006adcb9066d79a7516d31b809e102"
+    }
+  ]
+}

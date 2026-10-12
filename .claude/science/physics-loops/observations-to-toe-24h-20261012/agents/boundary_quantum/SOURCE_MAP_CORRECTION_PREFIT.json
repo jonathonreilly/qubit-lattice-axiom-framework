@@ -1,0 +1,37 @@
+{
+  "created_at": "2026-10-12T18:01:00.722090+00:00",
+  "role": "Source-map correction and revised angle-class split before all fitting; original freeze preserved",
+  "source_map": "primary Fig4 visibly has four periods over theta=0..360. A half-wave-plate-like theta gives analyzer beta=2theta. Main and supplementary methods mention FPRP but do not explicitly state this conversion. Conditional multiplier2 is inferred from figure and calibration shape, not independently instrument-verified.",
+  "model": "mu_j(theta)=m_j[1+v_j C_k(2theta-alpha_j-phi_j)], alpha_H=0deg alpha_D=45deg; same nuisance ranges as original freeze",
+  "duplicate": "0 and360 observed numerically identical in both original calibration series, including errors; assume360 wraps0 for display and exclude360. Do not count as independent.",
+  "calibration_degrees": [
+    0,
+    20,
+    40,
+    60,
+    180,
+    200,
+    220,
+    240
+  ],
+  "test_degrees": [
+    80,
+    100,
+    120,
+    140,
+    160,
+    260,
+    280,
+    300,
+    320,
+    340
+  ],
+  "genuine_new_absolute_dot_product_test_degrees": [
+    80,
+    100,
+    260,
+    280
+  ],
+  "exposure": "Original calibration values read at 2026-10-12T17:57:53Z. Primary Figure4 image read at approximately18:00Z before this revision; visual holdout shape therefore exposed. Revised test rows 80,120,160,280,320 also exposed numerically by original calibration extraction. No fit results computed yet. Public model-development holdout only, pre-fit split not blind or unexposed.",
+  "statistical_status": "Exact source-data shape comparison conditional on mapping, angle-independent selection/detection, affine visibility, source stationarity and diagonal published-error interpretation. No fundamental exclusion significance."
+}

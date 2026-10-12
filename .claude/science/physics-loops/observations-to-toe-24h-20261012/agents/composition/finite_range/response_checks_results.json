@@ -1,0 +1,332 @@
+{
+  "created_at": "2026-10-12T17:43:17.474591+00:00",
+  "status": "conditional theoretical responses and arithmetic checks only",
+  "script_sha256": "50e0c6b77021099a3961d94e0b514960f964b52f5f2aa649892f01ca2a27e7ea",
+  "input_hashes": {
+    "results_80dps.json": "ba879e6013fdb5d7f94a65f2188c86192575d71fd778877e9b319ce5618b4c69",
+    "results_60dps.json": "e5d4bd44e5d8f1c7be97389142c738a82ea449b9d01512c13d79f7bc77053008",
+    "MODEL_FREEZE.json": "7519cc017f1996d2379c277c4f83f2e91bc5ec4d33d6160584249e9c1fb71a0c",
+    "EXTENSION_FREEZE.json": "f367433546d10ade80e004fa4218bb70e703a21f26e99d5221519236c32a7651"
+  },
+  "large_ell_core_difference_coefficient_m4": "70581809814073501538461538.4615384615384615385",
+  "results": [
+    {
+      "ell_m": "10000000.0",
+      "determinant_60_vs_80_relative_difference": "0.0",
+      "material_determinant": "0.000000160001501570460499811320288606801339959849545",
+      "factored_determinant_relative_difference": "3.30314120370222858320090146551892605954579373e-43",
+      "effective_core_fraction_surface_minus_altitude": "-0.000671971298151398042951432927729109962308083",
+      "leading_large_ell_core_difference": "-0.00705818098140735015384615384615384615384615385",
+      "actual_over_asymptotic": "0.0952046001542754198798472653169327588438901504",
+      "height_clock_responses": [
+        {
+          "vector_label": "frozen_massless_double_null",
+          "local_E3E2_ratio_height_difference": "7.0021545273343216608662954536990075722103469e-19"
+        },
+        {
+          "vector_label": "precision_control_massless_double_null",
+          "local_E3E2_ratio_height_difference": "7.00215452733399874860426417355191801267361089e-19"
+        },
+        {
+          "vector_label": "massless_Earth_null_electron",
+          "local_E3E2_ratio_height_difference": "0.0"
+        },
+        {
+          "vector_label": "retuned_satellite_Sun",
+          "local_E3E2_ratio_height_difference": "2.71420693870194322082216386480484159796923555e-20"
+        },
+        {
+          "vector_label": "retuned_surface_Sun",
+          "local_E3E2_ratio_height_difference": "-2.59748155476649182963884977108717296634341098e-20"
+        }
+      ],
+      "solar_model_stresses_not_probabilities": [
+        {
+          "solar_model": "bs05op.dat_Fe",
+          "fixed_nominal_two_null_Sun_force_contraction": "-1.25695491460135201569414052760850101319271331e-53",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "-1.28906339761503938261787814546013141631277667e-54",
+          "retuned_d_g_x_e": [
+            "-0.0000550215687098283179403040922977104744560996513",
+            "0.1",
+            "0.0147560382400114722385166105260232712647558194"
+          ],
+          "retuned_surface_TiPt_scalar_product": "0.00000000000019100206565847017495497649195559499554757062"
+        },
+        {
+          "solar_model": "bs05op.dat_O",
+          "fixed_nominal_two_null_Sun_force_contraction": "-0.0000000000131205451329229788945628691017747557900303692",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "-0.00000000000134557049669289477688450251873985685707026807",
+          "retuned_d_g_x_e": [
+            "-0.0000548745332560945596594232679439007487939620924",
+            "0.1",
+            "0.014679118862005046306331577501578066429957771"
+          ],
+          "retuned_surface_TiPt_scalar_product": "0.000000000000188748807820311422067496544766163330975096809"
+        },
+        {
+          "solar_model": "bs05_agsop.dat_Fe",
+          "fixed_nominal_two_null_Sun_force_contraction": "0.0000000000574793347994243254076071972088183038483401567",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "0.00000000000589476247305955607175918095013851556969149422",
+          "retuned_d_g_x_e": [
+            "-0.0000556682052501999935087987695172196661523156815",
+            "0.1",
+            "0.0150943163846260369057962894167761922174128079"
+          ],
+          "retuned_surface_TiPt_scalar_product": "0.000000000000201070179015333118643579430889591992146019586"
+        },
+        {
+          "solar_model": "bs05_agsop.dat_O",
+          "fixed_nominal_two_null_Sun_force_contraction": "0.0000000000469264723743525663266265240537850640231168967",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "0.00000000000481251930473227948870953023383078633008157539",
+          "retuned_d_g_x_e": [
+            "-0.0000555470219849865328291076742705256530760960578",
+            "0.1",
+            "0.015030921188785137240344875302276784296148642"
+          ],
+          "retuned_surface_TiPt_scalar_product": "0.000000000000199163671743765245866834635619684250897014302"
+        }
+      ]
+    },
+    {
+      "ell_m": "1000000000.0",
+      "determinant_60_vs_80_relative_difference": "0.0",
+      "material_determinant": "0.000000160001501315489399867368312244204459665544294",
+      "factored_determinant_relative_difference": "6.20672829724337259354186527915642489184673157e-36",
+      "effective_core_fraction_surface_minus_altitude": "-0.000000000068078221923382439566175094758087639",
+      "leading_large_ell_core_difference": "-0.0000000000705818098140735015384615384615384615384615385",
+      "actual_over_asymptotic": "0.964529276065802088792172556534292347014597723",
+      "height_clock_responses": [
+        {
+          "vector_label": "frozen_massless_double_null",
+          "local_E3E2_ratio_height_difference": "1.31758197536650151365942031064267211038220987e-22"
+        },
+        {
+          "vector_label": "precision_control_massless_double_null",
+          "local_E3E2_ratio_height_difference": "1.31758197499173920273424007898468007499811625e-22"
+        },
+        {
+          "vector_label": "massless_Earth_null_electron",
+          "local_E3E2_ratio_height_difference": "0.0"
+        },
+        {
+          "vector_label": "retuned_satellite_Sun",
+          "local_E3E2_ratio_height_difference": "3.19334845784329121282544861057556197281397992e-27"
+        },
+        {
+          "vector_label": "retuned_surface_Sun",
+          "local_E3E2_ratio_height_difference": "-2.87678390936035840862463757243216728327685648e-27"
+        }
+      ],
+      "solar_model_stresses_not_probabilities": [
+        {
+          "solar_model": "bs05op.dat_Fe",
+          "fixed_nominal_two_null_Sun_force_contraction": "1.87896343544929960861846801301328873007240824e-51",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "1.91583272365693949117207359374762830249848046e-52",
+          "retuned_d_g_x_e": [
+            "-0.0000549667786266520649284704813876631832362598904",
+            "0.1",
+            "0.0146708221936700044330485983055617939410285291"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.15350783325197390356633416939657073228774913e-20"
+        },
+        {
+          "solar_model": "bs05op.dat_O",
+          "fixed_nominal_two_null_Sun_force_contraction": "-0.00000000129078398733416883557012406107102279998537557",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "-0.000000000131611193461881103073306620249812654979170291",
+          "retuned_d_g_x_e": [
+            "-0.0000548210092732371045907002598415389168390799946",
+            "0.1",
+            "0.0145949010398689573076200890260456485655783787"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.12826658954328177742542673884276683553017436e-20"
+        },
+        {
+          "solar_model": "bs05_agsop.dat_Fe",
+          "fixed_nominal_two_null_Sun_force_contraction": "0.00000000569418948950867480284565926084871488657063265",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "0.000000000580592168686642057191172934333207592222189363",
+          "retuned_d_g_x_e": [
+            "-0.0000556123017807216245270088839194666877469770761",
+            "0.1",
+            "0.015007030467316790634360780748107644349556323"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.26707413560320469098393779814911530721426942e-20"
+        },
+        {
+          "solar_model": "bs05_agsop.dat_O",
+          "fixed_nominal_two_null_Sun_force_contraction": "0.00000000465601114366124970705667474118438866778141004",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "0.000000000474737205761782235001700741160997198831955863",
+          "retuned_d_g_x_e": [
+            "-0.000055492160406812216357251971268646750560469",
+            "0.1",
+            "0.014944457151919830315011607277083907353589166"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.24571678976572460242525545486974586480729671e-20"
+        }
+      ]
+    },
+    {
+      "ell_m": "100000000000.0",
+      "determinant_60_vs_80_relative_difference": "2.21452743966410477859629128893429054049628903e-43",
+      "material_determinant": "0.000000160001489702279030194207347210828659224002698",
+      "factored_determinant_relative_difference": "7.12119089597576153443524691809021284795889482e-28",
+      "effective_core_fraction_surface_minus_altitude": "-7.05561567798240896291026858e-19",
+      "leading_large_ell_core_difference": "-7.05818098140735015384615384615384615384615385e-19",
+      "actual_over_asymptotic": "0.999636548930709100630400218243714816887683181",
+      "height_clock_responses": [
+        {
+          "vector_label": "frozen_massless_double_null",
+          "local_E3E2_ratio_height_difference": "1.31790469734500964970700189711896612258092325e-26"
+        },
+        {
+          "vector_label": "precision_control_massless_double_null",
+          "local_E3E2_ratio_height_difference": "1.31790094957207288082251333346343974810693519e-26"
+        },
+        {
+          "vector_label": "massless_Earth_null_electron",
+          "local_E3E2_ratio_height_difference": "0.0"
+        },
+        {
+          "vector_label": "retuned_satellite_Sun",
+          "local_E3E2_ratio_height_difference": "3.31165628449689694308697877120264147738287029e-35"
+        },
+        {
+          "vector_label": "retuned_surface_Sun",
+          "local_E3E2_ratio_height_difference": "-2.97964013484246883007989128980098615707600147e-35"
+        }
+      ],
+      "solar_model_stresses_not_probabilities": [
+        {
+          "solar_model": "bs05op.dat_Fe",
+          "fixed_nominal_two_null_Sun_force_contraction": "1.91979001506936128403880207717277664598985667e-50",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "1.95745834211664806012534361331809482882110919e-51",
+          "retuned_d_g_x_e": [
+            "-0.0000549667674066783551840379227069716745357843946",
+            "0.1",
+            "0.0146708067084496377596108337627526065719971709"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.2319602679052118050967777742811895614109318e-28"
+        },
+        {
+          "solar_model": "bs05op.dat_O",
+          "fixed_nominal_two_null_Sun_force_contraction": "-0.0000000624870314933974930624310197346546168891127767",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "-0.00000000637130936772985610804402932791541371199827839",
+          "retuned_d_g_x_e": [
+            "-0.0000548209982752917772749716154005909654588618558",
+            "0.1",
+            "0.0145948857275507300779353459205131938819828215"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.20579951212577509272728918556267160294380021e-28"
+        },
+        {
+          "solar_model": "bs05_agsop.dat_Fe",
+          "fixed_nominal_two_null_Sun_force_contraction": "0.000000275656864259934310652880680731367954587656465",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "0.0000000281065545852331065528681151723095238011215565",
+          "retuned_d_g_x_e": [
+            "-0.0000556122904154281525886352686645641121584381692",
+            "0.1",
+            "0.0150070146528266143972311819933640103327122009"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.34966382444245191966065449255751803610962035e-28"
+        },
+        {
+          "solar_model": "bs05_agsop.dat_O",
+          "fixed_nominal_two_null_Sun_force_contraction": "0.000000225398506181885388757398740209428039520924987",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "0.0000000229821065201457325962189695875488691123867641",
+          "retuned_d_g_x_e": [
+            "-0.0000554921492239584833167796774220742846663206451",
+            "0.1",
+            "0.0149444414796453091945485831302986454653834017"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.32752845265439007754942070757084090963886323e-28"
+        }
+      ]
+    },
+    {
+      "ell_m": "10000000000000.0",
+      "determinant_60_vs_80_relative_difference": "4.76703912710660581416665107479056203442718929e-35",
+      "material_determinant": "0.000000160001484264788400454877718048408999619576506",
+      "factored_determinant_relative_difference": "4.084832231909880446286252109910152302936196e-20",
+      "effective_core_fraction_surface_minus_altitude": "-7.058155322070541196e-27",
+      "leading_large_ell_core_difference": "-7.05818098140735015384615384615384615384615385e-27",
+      "actual_over_asymptotic": "0.999996364596363206096156759161753131084672505",
+      "height_clock_responses": [
+        {
+          "vector_label": "frozen_massless_double_null",
+          "local_E3E2_ratio_height_difference": "1.35537871176720649220877297783518430239178112e-30"
+        },
+        {
+          "vector_label": "precision_control_massless_double_null",
+          "local_E3E2_ratio_height_difference": "1.31790098224746553098408430416297498942587601e-30"
+        },
+        {
+          "vector_label": "massless_Earth_null_electron",
+          "local_E3E2_ratio_height_difference": "0.0"
+        },
+        {
+          "vector_label": "retuned_satellite_Sun",
+          "local_E3E2_ratio_height_difference": "3.31286793954095147490246465100810430225668188e-43"
+        },
+        {
+          "vector_label": "retuned_surface_Sun",
+          "local_E3E2_ratio_height_difference": "-2.98069260559170456258585986077765412082684765e-43"
+        }
+      ],
+      "solar_model_stresses_not_probabilities": [
+        {
+          "solar_model": "bs05op.dat_Fe",
+          "fixed_nominal_two_null_Sun_force_contraction": "5.85212782840956335584469687586813284635211809e-50",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "5.96695262713064397925037288460345608321187407e-51",
+          "retuned_d_g_x_e": [
+            "-0.000054966766516183354335347589662890729547459788",
+            "0.1",
+            "0.0146708062436884851546535837862882381505696736"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.23276350097095183488776360209334949679924347e-36"
+        },
+        {
+          "solar_model": "bs05op.dat_O",
+          "fixed_nominal_two_null_Sun_force_contraction": "-0.0000000974969796488873500687955686969118410292459314",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "-0.00000000994099711952697666020859648751616617093089139",
+          "retuned_d_g_x_e": [
+            "-0.0000548209973880997315856593709952655213370137909",
+            "0.1",
+            "0.0145948852645155842107246404910480812621527307"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.20659333016916723749479436243525355506529302e-36"
+        },
+        {
+          "solar_model": "bs05_agsop.dat_Fe",
+          "fixed_nominal_two_null_Sun_force_contraction": "0.000000430100657528544272033503203785937918075500984",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "0.0000000438539677125958167132347910528571421201474726",
+          "retuned_d_g_x_e": [
+            "-0.0000556122895456077311378661725309897772722102801",
+            "0.1",
+            "0.0150070141988080451807881672319346959868563682"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.3505094245133598445987607678768582846634142e-36"
+        },
+        {
+          "solar_model": "bs05_agsop.dat_O",
+          "fixed_nominal_two_null_Sun_force_contraction": "0.00000035168377601781607791731168252297329029659708",
+          "fixed_nominal_Sun_annual_Yb_k_bare_GM": "0.0000000358584175321925260356881789948857447269822385",
+          "retuned_d_g_x_e": [
+            "-0.0000554921483567282694953938787376546590358157864",
+            "0.1",
+            "0.0149444410269805192236697449482680901805458289"
+          ],
+          "retuned_surface_TiPt_scalar_product": "2.32836608633999898649668093809774457987483131e-36"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "Determinants stable to at least 23 relative decimal places between 60 and 80 working digits.",
+    "Direct three-source determinant agrees with material-row factorization to printed-output precision.",
+    "All clock predictions use the same already fixed or specified pair-retuned couplings."
+  ],
+  "limitations": [
+    "No empirical clock exclusion or instrumental sensitivity claimed.",
+    "Height-clock numbers use the supplied bare metric GM normalization and local clock-ratio response.",
+    "Solar stresses change source model; fixed-vector and separately retuned-vector results are distinct."
+  ]
+}

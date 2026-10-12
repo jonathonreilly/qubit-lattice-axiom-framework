@@ -1,0 +1,803 @@
+{
+  "status": "conditional on accepted new axiom; not retained on the actual current surface",
+  "target_claim_type": "bounded_theorem",
+  "baseline": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+  "script_sha256": "f17c1dc303497f9ee52d99230ca6b61cc115790317beb8a414220963b78d5067",
+  "numpy_version": "2.4.1",
+  "python_version": "3.12.8",
+  "data_sources": [
+    {
+      "file": "damour_donoghue_1007.2792v2.pdf",
+      "url": "https://arxiv.org/pdf/1007.2792v2",
+      "sha256": "4159cd5c6bbac301acd3bffd06e47e659709e3545a5b68302f34150a11a46e28",
+      "bytes": 442399
+    },
+    {
+      "file": "microscope_2209.15487v1.pdf",
+      "url": "https://arxiv.org/pdf/2209.15487v1",
+      "sha256": "790aeec17229c93bd63618ae790a37d4452e7b0b4ea1c9f4e41128b0a88f78ef",
+      "bytes": 460403
+    },
+    {
+      "file": "lange_2010.06620v2.pdf",
+      "url": "https://arxiv.org/pdf/2010.06620v2",
+      "sha256": "8ce87b84b6066dcf8969758395043b266332e4c82d21353c7a3a3e9be707314b",
+      "bytes": 469535
+    },
+    {
+      "file": "bs05op.dat",
+      "url": "https://www.sns.ias.edu/~jnb/SNdata/Export/BS2005/bs05op.dat",
+      "sha256": "61c1600f4a221d8ed4b553349a3cd8b46fc0d893141d39baa8c63f9570237a2a",
+      "bytes": 156775
+    },
+    {
+      "file": "bs05_agsop.dat",
+      "url": "https://www.sns.ias.edu/~jnb/SNdata/Export/BS2005/bs05_agsop.dat",
+      "sha256": "76da551f0a5c548f5f297269ed78937536c4238f2759ab101582658f9caf793e",
+      "bytes": 158748
+    },
+    {
+      "file": "ciaaw-atomic-weights.html",
+      "url": "https://ciaaw.org/atomic-weights.htm",
+      "sha256": "b48282594b1fb01eee3cbc9d469ce5e3483b628157ea1b09ede33e3476895cf2",
+      "bytes": 21501
+    },
+    {
+      "file": "codata-2022-allascii.txt",
+      "url": "https://physics.nist.gov/cuu/Constants/Table/allascii.txt",
+      "sha256": "77fb90e66c40db3e6eb16630bc9c88e4c7c8beddbe5e71be406f2f26e3f67e67",
+      "bytes": 40801
+    },
+    {
+      "file": "schlamminger_0712.0607v1.pdf",
+      "url": "https://arxiv.org/pdf/0712.0607v1",
+      "sha256": "cf5f41432813e965b57f730b15fcde1941a3793c5df5b7a8a446c3a996753484",
+      "bytes": 329682,
+      "heldout_first_full_read_at": "2026-10-12T17:04:32.830994+00:00"
+    },
+    {
+      "file": "wagner_1207.2442v1.pdf",
+      "url": "https://arxiv.org/pdf/1207.2442v1",
+      "sha256": "f24146895b758afd8749d38d33be1fb6943fa8e54a9934c609076cb5995aaf26",
+      "bytes": 751613,
+      "first_full_read_at": "2026-10-12T17:05:10.807365+00:00"
+    },
+    {
+      "file": "ross_2602.02815v1.pdf",
+      "url": "https://arxiv.org/pdf/2602.02815v1",
+      "sha256": "3bbd4d70dc39b2b28ebd64fdbde7537c034fd9783bfec0252625b2d68480ca84",
+      "bytes": 618160,
+      "first_full_read_at": "2026-10-12T17:05:11.209640+00:00"
+    }
+  ],
+  "charges": {
+    "Earth": [
+      0.00026798654648764627,
+      0.001920011170452005
+    ],
+    "Sun": [
+      0.00045534103181485506,
+      0.0006429546664175538
+    ],
+    "TiAlV": [
+      0.00025268398755034116,
+      0.002251450084922937
+    ],
+    "PtRh": [
+      0.00022139282694859152,
+      0.004185749656756516
+    ],
+    "TiAlV_minus_PtRh": [
+      3.129116060174964e-05,
+      -0.0019342995718335792
+    ],
+    "Be_minus_Al": [
+      -2.0828099490823807e-05,
+      -0.0010227688124040272
+    ],
+    "Be_minus_Ti": [
+      -8.647377047058913e-06,
+      -0.0015670878941090667
+    ]
+  },
+  "solar_integrals": [
+    {
+      "source_file": "bs05op.dat",
+      "sha256": "61c1600f4a221d8ed4b553349a3cd8b46fc0d893141d39baa8c63f9570237a2a",
+      "rows": 1268,
+      "integrated_mass_fractions": {
+        "H": 0.671078558433,
+        "He4": 0.3091669512440001,
+        "He3": 0.0007762272835835003,
+        "C12": 0.0023700474133795035,
+        "N14": 0.0018710042332500002,
+        "O16": 0.008792319401000016,
+        "Fe": 0.005944891991786827
+      },
+      "central_missing_mass": 4e-07,
+      "surface_missing_mass": 1.0300000000018628e-05,
+      "surface_hydrogen": 0.74045,
+      "residual_metals_proxy": "Fe",
+      "sensitivity": [
+        0.00045534103181485506,
+        0.0006429546664175538
+      ]
+    },
+    {
+      "source_file": "bs05op.dat",
+      "sha256": "61c1600f4a221d8ed4b553349a3cd8b46fc0d893141d39baa8c63f9570237a2a",
+      "rows": 1268,
+      "integrated_mass_fractions": {
+        "H": 0.671078558433,
+        "He4": 0.3091669512440001,
+        "He3": 0.0007762272835835003,
+        "C12": 0.0023700474133795035,
+        "N14": 0.0018710042332500002,
+        "O16": 0.008792319401000016,
+        "O": 0.005944891991786827
+      },
+      "central_missing_mass": 4e-07,
+      "surface_missing_mass": 1.0300000000018628e-05,
+      "surface_hydrogen": 0.74045,
+      "residual_metals_proxy": "O",
+      "sensitivity": [
+        0.00045545336353359735,
+        0.0006355418947404017
+      ]
+    },
+    {
+      "source_file": "bs05_agsop.dat",
+      "sha256": "76da551f0a5c548f5f297269ed78937536c4238f2759ab101582658f9caf793e",
+      "rows": 1284,
+      "integrated_mass_fractions": {
+        "H": 0.6882641109279991,
+        "He4": 0.2967680712169998,
+        "He3": 0.0008258292283715009,
+        "C12": 0.001831231361008,
+        "N14": 0.0013936818960999988,
+        "O16": 0.0061355950344999955,
+        "Fe": 0.004781480335021571
+      },
+      "central_missing_mass": 4e-07,
+      "surface_missing_mass": 1.0300000000018628e-05,
+      "surface_hydrogen": 0.7583,
+      "residual_metals_proxy": "Fe",
+      "sensitivity": [
+        0.00046000845150651184,
+        0.0006404634704426354
+      ]
+    },
+    {
+      "source_file": "bs05_agsop.dat",
+      "sha256": "76da551f0a5c548f5f297269ed78937536c4238f2759ab101582658f9caf793e",
+      "rows": 1284,
+      "integrated_mass_fractions": {
+        "H": 0.6882641109279991,
+        "He4": 0.2967680712169998,
+        "He3": 0.0008258292283715009,
+        "C12": 0.001831231361008,
+        "N14": 0.0013936818960999988,
+        "O16": 0.0061355950344999955,
+        "O": 0.004781480335021571
+      },
+      "central_missing_mass": 4e-07,
+      "surface_missing_mass": 1.0300000000018628e-05,
+      "surface_hydrogen": 0.7583,
+      "residual_metals_proxy": "O",
+      "sensitivity": [
+        0.0004600987999779235,
+        0.000634501373561603
+      ]
+    }
+  ],
+  "calibration": {
+    "eta_mean": -1.5e-15,
+    "eta_combined_sigma": 2.745906043549196e-15,
+    "clock_ratio_k_mean": -9.7e-08,
+    "clock_ratio_k_sigma": 7.7e-08,
+    "two_observable_95_acceptance_cut": 5.991464547107979,
+    "null_chi2": 1.885354010074117
+  },
+  "earth_neutral_electron_branch": {
+    "t_interval": [
+      -0.1,
+      0.1
+    ],
+    "g_rule": "-Earth_Qme*t",
+    "x_rule": "t",
+    "e": 0,
+    "solar_BeAl_fraction_interval": [
+      -3.9022378604471946e-11,
+      0.0
+    ],
+    "solar_BeAl_acceleration_fm_s2_interval": [
+      -230.2320337663845,
+      0.0
+    ],
+    "optical_hyperfine_k_interval": [
+      0.0,
+      1.8735448532720883e-06
+    ],
+    "optical_hyperfine_annual_interval": [
+      0.0,
+      3.0913490078989457e-16
+    ],
+    "witnesses": [
+      {
+        "parameters_g_x_e": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": 0.0,
+        "microscope_eta": 0.0,
+        "clock_k_E3_E2": 0.0,
+        "clock_annual_E3_E2": 0.0,
+        "clock_k_optical_hyperfine_e0": 0.0,
+        "clock_annual_optical_hyperfine_e0": 0.0,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 0.0,
+        "solar_BeAl_fraction": 0.0,
+        "solar_BeAl_acceleration_fm_s2": 0.0,
+        "chi2_calibration": 1.885354010074117,
+        "Ross_summary_pull": -1.0819672131147542,
+        "older_BeTi_Sun_summary_pull": 0.6595744680851063,
+        "E3Cs_marginal_summary_pull": 0.09090909090909091
+      },
+      {
+        "parameters_g_x_e": [
+          -2.6798654648764626e-07,
+          0.001,
+          0.0
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": 1.8735448532720878e-07,
+        "microscope_eta": 0.0,
+        "clock_k_E3_E2": 0.0,
+        "clock_annual_E3_E2": 0.0,
+        "clock_k_optical_hyperfine_e0": 1.873544853272088e-10,
+        "clock_annual_optical_hyperfine_e0": 3.0913490078989454e-20,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -1.6201248760820412e-15,
+        "solar_BeAl_fraction": -3.902237860447194e-15,
+        "solar_BeAl_acceleration_fm_s2": -0.02302320337663844,
+        "chi2_calibration": 1.885354010074117,
+        "Ross_summary_pull": -1.1197101694698992,
+        "older_BeTi_Sun_summary_pull": 0.6561273938806764,
+        "E3Cs_marginal_summary_pull": 0.09133489655756183
+      },
+      {
+        "parameters_g_x_e": [
+          -2.6798654648764627e-06,
+          0.01,
+          0.0
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": 1.873544853272088e-06,
+        "microscope_eta": 0.0,
+        "clock_k_E3_E2": 0.0,
+        "clock_annual_E3_E2": 0.0,
+        "clock_k_optical_hyperfine_e0": 1.873544853272088e-08,
+        "clock_annual_optical_hyperfine_e0": 3.0913490078989454e-18,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -1.6201248760820413e-13,
+        "solar_BeAl_fraction": -3.9022378604471944e-13,
+        "solar_BeAl_acceleration_fm_s2": -2.302320337663845,
+        "chi2_calibration": 1.885354010074117,
+        "Ross_summary_pull": -4.856262848629254,
+        "older_BeTi_Sun_summary_pull": 0.31486704764211887,
+        "E3Cs_marginal_summary_pull": 0.13348965575618382
+      },
+      {
+        "parameters_g_x_e": [
+          -8.039596394629388e-06,
+          0.03,
+          0.0
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": 5.620634559816263e-06,
+        "microscope_eta": 0.0,
+        "clock_k_E3_E2": 0.0,
+        "clock_annual_E3_E2": 0.0,
+        "clock_k_optical_hyperfine_e0": 1.686190367944879e-07,
+        "clock_annual_optical_hyperfine_e0": 2.7822141071090505e-17,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -1.4581123884738368e-12,
+        "solar_BeAl_fraction": -3.512014074402474e-12,
+        "solar_BeAl_acceleration_fm_s2": -20.720883038974595,
+        "chi2_calibration": 1.885354010074117,
+        "Ross_summary_pull": -35.050627932745236,
+        "older_BeTi_Sun_summary_pull": -2.4427923159017806,
+        "E3Cs_marginal_summary_pull": 0.47413417453292706
+      },
+      {
+        "parameters_g_x_e": [
+          -2.6798654648764627e-05,
+          0.1,
+          0.0
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": 1.873544853272088e-05,
+        "microscope_eta": 0.0,
+        "clock_k_E3_E2": 0.0,
+        "clock_annual_E3_E2": 0.0,
+        "clock_k_optical_hyperfine_e0": 1.873544853272088e-06,
+        "clock_annual_optical_hyperfine_e0": 3.091349007898945e-16,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -1.6201248760820413e-11,
+        "solar_BeAl_fraction": -3.902237860447194e-11,
+        "solar_BeAl_acceleration_fm_s2": -230.23203376638443,
+        "chi2_calibration": 1.885354010074117,
+        "Ross_summary_pull": -378.51153076456467,
+        "older_BeTi_Sun_summary_pull": -33.81116757621364,
+        "E3Cs_marginal_summary_pull": 4.348965575618382
+      }
+    ]
+  },
+  "central_fiber_samples": [
+    {
+      "parameters_g_x_e": [
+        2.077693390462559e-05,
+        -0.08351170428871751,
+        0.0008351170428871752
+      ],
+      "alpha_Earth": 3.547319728506215e-10,
+      "alpha_Sun": -1.6712429295086962e-05,
+      "microscope_eta": -1.4999999999974921e-15,
+      "clock_k_E3_E2": -9.700000000000001e-08,
+      "clock_annual_E3_E2": -1.6005e-17,
+      "clock_k_optical_hyperfine_e0": null,
+      "clock_annual_optical_hyperfine_e0": null,
+      "Sun_Earth_GM_conversion": 0.9999999999999941,
+      "solar_BeTi_fraction": 9.802585377281732e-12,
+      "solar_BeAl_fraction": -1.479481874212954e-11,
+      "solar_BeAl_acceleration_fm_s2": -87.28943057856428,
+      "chi2_calibration": 8.340855407063256e-25,
+      "r_x_over_e": -100.0,
+      "Ross_summary_pull": -144.17939439108898
+    },
+    {
+      "parameters_g_x_e": [
+        1.5996447768879797e-06,
+        -0.021047820042456953,
+        0.0021047820042456953
+      ],
+      "alpha_Earth": 3.1713213457121254e-10,
+      "alpha_Sun": -6.6310119072762935e-06,
+      "microscope_eta": -1.5000000000015587e-15,
+      "clock_k_E3_E2": -9.699999999999997e-08,
+      "clock_annual_E3_E2": -1.6004999999999995e-17,
+      "clock_k_optical_hyperfine_e0": null,
+      "clock_annual_optical_hyperfine_e0": null,
+      "Sun_Earth_GM_conversion": 0.9999999999999979,
+      "solar_BeTi_fraction": 2.0664686329918315e-11,
+      "solar_BeAl_fraction": 1.136767169742324e-11,
+      "solar_BeAl_acceleration_fm_s2": 67.06926301479713,
+      "chi2_calibration": 3.2225789140362615e-25,
+      "r_x_over_e": -10.0,
+      "Ross_summary_pull": 108.86764428655268
+    },
+    {
+      "parameters_g_x_e": [
+        -6.347287633085211e-06,
+        0.0,
+        0.0033059819118993953
+      ],
+      "alpha_Earth": 2.345670739046233e-10,
+      "alpha_Sun": -4.221691135737469e-06,
+      "microscope_eta": -1.5000000000025128e-15,
+      "clock_k_E3_E2": -9.7e-08,
+      "clock_annual_E3_E2": -1.6004999999999998e-17,
+      "clock_k_optical_hyperfine_e0": null,
+      "clock_annual_optical_hyperfine_e0": null,
+      "Sun_Earth_GM_conversion": 0.999999999999999,
+      "solar_BeTi_fraction": 2.1871586435766833e-11,
+      "solar_BeAl_fraction": 1.4274615079595774e-11,
+      "solar_BeAl_acceleration_fm_s2": 84.22022896961506,
+      "chi2_calibration": 8.374998543299039e-25,
+      "r_x_over_e": 0.0,
+      "Ross_summary_pull": 136.98398191740176
+    },
+    {
+      "parameters_g_x_e": [
+        -7.830446018201638e-06,
+        0.003578918843856667,
+        0.003578918843856667
+      ],
+      "alpha_Earth": 2.2024126904695158e-10,
+      "alpha_Sun": -3.899734847670955e-06,
+      "microscope_eta": -1.5000000000078288e-15,
+      "clock_k_E3_E2": -9.700000000000003e-08,
+      "clock_annual_E3_E2": -1.6005000000000007e-17,
+      "clock_k_optical_hyperfine_e0": null,
+      "clock_annual_optical_hyperfine_e0": null,
+      "Sun_Earth_GM_conversion": 0.9999999999999991,
+      "solar_BeTi_fraction": 2.1992276446351685e-11,
+      "solar_BeAl_fraction": 1.4565309417813032e-11,
+      "solar_BeAl_acceleration_fm_s2": 85.93532556509689,
+      "chi2_calibration": 8.128771720674406e-24,
+      "r_x_over_e": 1.0,
+      "Ross_summary_pull": 139.79561568048672
+    },
+    {
+      "parameters_g_x_e": [
+        -1.2035136722707174e-05,
+        0.013254901057078678,
+        0.004418300352359559
+      ],
+      "alpha_Earth": 1.8446655717551308e-10,
+      "alpha_Sun": -3.158869569589254e-06,
+      "microscope_eta": -1.4999999999860215e-15,
+      "clock_k_E3_E2": -9.699999999999998e-08,
+      "clock_annual_E3_E2": -1.6004999999999998e-17,
+      "clock_k_optical_hyperfine_e0": null,
+      "clock_annual_optical_hyperfine_e0": null,
+      "Sun_Earth_GM_conversion": 0.9999999999999994,
+      "solar_BeTi_fraction": 2.2233656467521378e-11,
+      "solar_BeAl_fraction": 1.5146698094247532e-11,
+      "solar_BeAl_acceleration_fm_s2": 89.36551875606044,
+      "chi2_calibration": 2.5914611500332843e-23,
+      "r_x_over_e": 3.0,
+      "Ross_summary_pull": 145.41888320665646
+    },
+    {
+      "parameters_g_x_e": [
+        -2.0878205304896055e-05,
+        0.03202254036432164,
+        0.006404508072864328
+      ],
+      "alpha_Earth": 1.3173824930884186e-10,
+      "alpha_Sun": -2.1792203825159827e-06,
+      "microscope_eta": -1.5000000000187294e-15,
+      "clock_k_E3_E2": -9.700000000000002e-08,
+      "clock_annual_E3_E2": -1.6005000000000004e-17,
+      "clock_k_optical_hyperfine_e0": null,
+      "clock_annual_optical_hyperfine_e0": null,
+      "Sun_Earth_GM_conversion": 0.9999999999999997,
+      "solar_BeTi_fraction": 2.2475036488691094e-11,
+      "solar_BeAl_fraction": 1.5728086770682045e-11,
+      "solar_BeAl_acceleration_fm_s2": 92.79571194702406,
+      "chi2_calibration": 4.65245751317067e-23,
+      "r_x_over_e": 5.0,
+      "Ross_summary_pull": 151.04215073282634
+    },
+    {
+      "parameters_g_x_e": [
+        -3.370388140171109e-05,
+        0.05732080909703274,
+        0.009553468182838792
+      ],
+      "alpha_Earth": 8.989768866859006e-11,
+      "alpha_Sun": -1.4609180943780431e-06,
+      "microscope_eta": -1.4999999999992213e-15,
+      "clock_k_E3_E2": -9.70000000000001e-08,
+      "clock_annual_E3_E2": -1.6005000000000016e-17,
+      "clock_k_optical_hyperfine_e0": null,
+      "clock_annual_optical_hyperfine_e0": null,
+      "Sun_Earth_GM_conversion": 0.9999999999999999,
+      "solar_BeTi_fraction": 2.259572649927596e-11,
+      "solar_BeAl_fraction": 1.6018781108899314e-11,
+      "solar_BeAl_acceleration_fm_s2": 94.51080854250596,
+      "chi2_calibration": 8.040333069541389e-26,
+      "r_x_over_e": 6.0,
+      "Ross_summary_pull": 153.8537844959114
+    }
+  ],
+  "full_three_parameter_region": {
+    "representation": "Exact inequality and analytic nonsingular fibers in note/code; singular fibers specified in note. No claim of globally sharp numerical projection.",
+    "BeAl_fraction_guaranteed_outer_interval_from_full_box": [
+      -1.158216278469987e-07,
+      1.158216278469987e-07
+    ],
+    "BeAl_fraction_attainable_subinterval_from_blind_branch": [
+      -3.9022378604471946e-11,
+      0.0
+    ]
+  },
+  "heldout_Ross": {
+    "direct_acceleration_fm_s2_mean": 0.66,
+    "sigma": 0.61,
+    "marginal_central_95_interval_fm_s2": [
+      -0.5356,
+      1.8556
+    ],
+    "not_used": "paper's 2.1e-13 magnitude headline is not reconstructed as a central-value Gaussian confidence bound",
+    "earth_neutral_electron_branch_t_absolute_upper_95": 0.00482322374847943,
+    "optical_hyperfine_k_upper_on_branch": 4.358518695233991e-09,
+    "optical_hyperfine_annual_upper_on_branch": 7.191555847136086e-19
+  },
+  "source_model_sensitivity_not_probability": [
+    {
+      "core_mass_fraction": 0.3,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.00026835659965658337,
+      "Sun_Qme": 0.00045534103181485506,
+      "source_difference_Qme": 0.0001869844321582717,
+      "solar_BeAl_fm_s2_per_t_squared": -22977.729101743294,
+      "Ross_marginal_95_t_max": 0.004827994110921977
+    },
+    {
+      "core_mass_fraction": 0.3,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.00026835659965658337,
+      "Sun_Qme": 0.00045545336353359735,
+      "source_difference_Qme": 0.00018709676387701398,
+      "solar_BeAl_fm_s2_per_t_squared": -22991.53307340554,
+      "Ross_marginal_95_t_max": 0.00482654454468236
+    },
+    {
+      "core_mass_fraction": 0.3,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.00026835659965658337,
+      "Sun_Qme": 0.00046000845150651184,
+      "source_difference_Qme": 0.00019165185184992847,
+      "solar_BeAl_fm_s2_per_t_squared": -23551.288643792515,
+      "Ross_marginal_95_t_max": 0.004768842140934083
+    },
+    {
+      "core_mass_fraction": 0.3,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.00026835659965658337,
+      "Sun_Qme": 0.0004600987999779235,
+      "source_difference_Qme": 0.00019174220032134014,
+      "solar_BeAl_fm_s2_per_t_squared": -23562.391186805813,
+      "Ross_marginal_95_t_max": 0.004767718474980927
+    },
+    {
+      "core_mass_fraction": 0.3,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.00026788096394755504,
+      "Sun_Qme": 0.00045534103181485506,
+      "source_difference_Qme": 0.00018746006786730002,
+      "solar_BeAl_fm_s2_per_t_squared": -23036.17797017058,
+      "Ross_marginal_95_t_max": 0.004821865272654812
+    },
+    {
+      "core_mass_fraction": 0.3,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.00026788096394755504,
+      "Sun_Qme": 0.00045545336353359735,
+      "source_difference_Qme": 0.0001875723995860423,
+      "solar_BeAl_fm_s2_per_t_squared": -23049.981941832822,
+      "Ross_marginal_95_t_max": 0.004820421218162987
+    },
+    {
+      "core_mass_fraction": 0.3,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.00026788096394755504,
+      "Sun_Qme": 0.00046000845150651184,
+      "source_difference_Qme": 0.0001921274875589568,
+      "solar_BeAl_fm_s2_per_t_squared": -23609.737512219795,
+      "Ross_marginal_95_t_max": 0.00476293554941728
+    },
+    {
+      "core_mass_fraction": 0.3,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.00026788096394755504,
+      "Sun_Qme": 0.0004600987999779235,
+      "source_difference_Qme": 0.00019221783603036848,
+      "solar_BeAl_fm_s2_per_t_squared": -23620.84005523309,
+      "Ross_marginal_95_t_max": 0.0047618160525652485
+    },
+    {
+      "core_mass_fraction": 0.32,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.00026798654648764627,
+      "Sun_Qme": 0.00045534103181485506,
+      "source_difference_Qme": 0.0001873544853272088,
+      "solar_BeAl_fm_s2_per_t_squared": -23023.203376638445,
+      "Ross_marginal_95_t_max": 0.00482322374847943
+    },
+    {
+      "core_mass_fraction": 0.32,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.00026798654648764627,
+      "Sun_Qme": 0.00045545336353359735,
+      "source_difference_Qme": 0.0001874668170459511,
+      "solar_BeAl_fm_s2_per_t_squared": -23037.00734830069,
+      "Ross_marginal_95_t_max": 0.004821778473498611
+    },
+    {
+      "core_mass_fraction": 0.32,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.00026798654648764627,
+      "Sun_Qme": 0.00046000845150651184,
+      "source_difference_Qme": 0.00019202190501886558,
+      "solar_BeAl_fm_s2_per_t_squared": -23596.762918687666,
+      "Ross_marginal_95_t_max": 0.004764244810788988
+    },
+    {
+      "core_mass_fraction": 0.32,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.00026798654648764627,
+      "Sun_Qme": 0.0004600987999779235,
+      "source_difference_Qme": 0.00019211225349027725,
+      "solar_BeAl_fm_s2_per_t_squared": -23607.86546170096,
+      "Ross_marginal_95_t_max": 0.004763124390700374
+    },
+    {
+      "core_mass_fraction": 0.32,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.00026752450037030443,
+      "Sun_Qme": 0.00045534103181485506,
+      "source_difference_Qme": 0.00018781653144455063,
+      "solar_BeAl_fm_s2_per_t_squared": -23079.98227739638,
+      "Ross_marginal_95_t_max": 0.004817287305908211
+    },
+    {
+      "core_mass_fraction": 0.32,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.00026752450037030443,
+      "Sun_Qme": 0.00045545336353359735,
+      "source_difference_Qme": 0.00018792886316329292,
+      "solar_BeAl_fm_s2_per_t_squared": -23093.78624905862,
+      "Ross_marginal_95_t_max": 0.004815847359320005
+    },
+    {
+      "core_mass_fraction": 0.32,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.00026752450037030443,
+      "Sun_Qme": 0.00046000845150651184,
+      "source_difference_Qme": 0.0001924839511362074,
+      "solar_BeAl_fm_s2_per_t_squared": -23653.541819445596,
+      "Ross_marginal_95_t_max": 0.0047585232339659445
+    },
+    {
+      "core_mass_fraction": 0.32,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.00026752450037030443,
+      "Sun_Qme": 0.0004600987999779235,
+      "source_difference_Qme": 0.00019257429960761909,
+      "solar_BeAl_fm_s2_per_t_squared": -23664.644362458894,
+      "Ross_marginal_95_t_max": 0.004757406844761395
+    },
+    {
+      "core_mass_fraction": 0.34,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.0002676164933187091,
+      "Sun_Qme": 0.00045534103181485506,
+      "source_difference_Qme": 0.00018772453849614596,
+      "solar_BeAl_fm_s2_per_t_squared": -23068.6776515336,
+      "Ross_marginal_95_t_max": 0.004818467498407517
+    },
+    {
+      "core_mass_fraction": 0.34,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.0002676164933187091,
+      "Sun_Qme": 0.00045545336353359735,
+      "source_difference_Qme": 0.00018783687021488825,
+      "solar_BeAl_fm_s2_per_t_squared": -23082.481623195843,
+      "Ross_marginal_95_t_max": 0.004817026493554316
+    },
+    {
+      "core_mass_fraction": 0.34,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.0002676164933187091,
+      "Sun_Qme": 0.00046000845150651184,
+      "source_difference_Qme": 0.00019239195818780274,
+      "solar_BeAl_fm_s2_per_t_squared": -23642.237193582816,
+      "Ross_marginal_95_t_max": 0.004759660751019534
+    },
+    {
+      "core_mass_fraction": 0.34,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.0002676164933187091,
+      "Sun_Qme": 0.0004600987999779235,
+      "source_difference_Qme": 0.0001924823066592144,
+      "solar_BeAl_fm_s2_per_t_squared": -23653.339736596117,
+      "Ross_marginal_95_t_max": 0.004758543561198616
+    },
+    {
+      "core_mass_fraction": 0.34,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.0002671680367930538,
+      "Sun_Qme": 0.00045534103181485506,
+      "source_difference_Qme": 0.00018817299502180124,
+      "solar_BeAl_fm_s2_per_t_squared": -23123.78658462218,
+      "Ross_marginal_95_t_max": 0.004812722353666272
+    },
+    {
+      "core_mass_fraction": 0.34,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.0002671680367930538,
+      "Sun_Qme": 0.00045545336353359735,
+      "source_difference_Qme": 0.00018828532674054353,
+      "solar_BeAl_fm_s2_per_t_squared": -23137.590556284424,
+      "Ross_marginal_95_t_max": 0.004811286495542289
+    },
+    {
+      "core_mass_fraction": 0.34,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Qme": 0.0002671680367930538,
+      "Sun_Qme": 0.00046000845150651184,
+      "source_difference_Qme": 0.00019284041471345802,
+      "solar_BeAl_fm_s2_per_t_squared": -23697.346126671397,
+      "Ross_marginal_95_t_max": 0.00475412315835673
+    },
+    {
+      "core_mass_fraction": 0.34,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Qme": 0.0002671680367930538,
+      "Sun_Qme": 0.0004600987999779235,
+      "source_difference_Qme": 0.0001929307631848697,
+      "solar_BeAl_fm_s2_per_t_squared": -23708.448669684694,
+      "Ross_marginal_95_t_max": 0.004753009862448525
+    }
+  ],
+  "profiled_microscope_systematic_checks": [
+    {
+      "prediction": 0.0,
+      "systematic_hat": -4.476127320954907e-16,
+      "cost": 0.2984084880636604
+    },
+    {
+      "prediction": -1e-14,
+      "systematic_hat": 2.536472148541114e-15,
+      "cost": 9.582228116710878
+    },
+    {
+      "prediction": 1e-14,
+      "systematic_hat": -3.4316976127320957e-15,
+      "cost": 17.539787798408494
+    }
+  ],
+  "checks": {
+    "source_hashes": "pass",
+    "solar_shell_quadrature": "pass",
+    "blind_branch_equations_and_interval": "pass",
+    "central_fiber_substitution": "pass",
+    "common_sign_reflection": "pass",
+    "profile_systematic": "pass",
+    "independent_review": "pending",
+    "raw_experiment_likelihood": "not run"
+  }
+}

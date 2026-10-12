@@ -1,0 +1,41 @@
+{
+  "status": "guaranteed analytic outer bound, not globally sharp",
+  "created_at": "2026-10-12T17:24:22.506713+00:00",
+  "script_sha256": "12a78c6cba37431d346fa381072d22f798274702c7d8d65444040b52280f6925",
+  "input_results_sha256": "2c387a13cd23099f547333e7fc6be89e0a002cbea01a54c5b8ef3385e2e9b25f",
+  "constants": {
+    "rho": 0.016,
+    "m": 3.129116060174964e-05,
+    "n": -0.0019342995718335792,
+    "sm": 0.0001873544853272088,
+    "se": -0.0012770565040344513,
+    "bm": -2.0828099490823807e-05,
+    "be": -0.0010227688124040272,
+    "max_abs_alpha_E": 0.0012187997716939653,
+    "max_abs_alpha_S": 0.001109829569823241,
+    "max_abs_alpha_mean_tests": 0.0013455638278089194,
+    "D_lower_bound": 0.9999986473399737,
+    "MICROSCOPE_abs_eta_upper": 8.221282815444844e-15,
+    "MICROSCOPE_product_abs_upper": 8.22129629812575e-15,
+    "clock_abs_e_alphaS_over_D_upper": 4.107575625358602e-08,
+    "case_small_e_bound": 8.578937262638166e-11,
+    "case_large_e_bound": 9.548162356148483e-11
+  },
+  "entire_calibration_region_outer_BeAl_fraction": [
+    -9.548162356148483e-11,
+    9.548162356148483e-11
+  ],
+  "entire_calibration_region_outer_BeAl_acceleration_fm_s2": [
+    -563.3415790127605,
+    563.3415790127605
+  ],
+  "guaranteed_attainable_BeAl_fraction_interval": [
+    -3.9022378604471946e-11,
+    1.6018781108899314e-11
+  ],
+  "guaranteed_attainable_BeAl_acceleration_fm_s2_interval": [
+    -230.2320337663845,
+    94.51080854250596
+  ],
+  "qualification": "Nominal fixed sensitivities and frozen coupling box only. Measurement ellipse is conservatively enlarged to marginal absolute bounds during this proof; no sharp projection claim."
+}

@@ -1,0 +1,49 @@
+{
+  "created_at": "2026-10-12T17:57:38.525779+00:00",
+  "source": "Song et al., Nat Commun 16:11429 (2025), DOI 10.1038/s41467-025-66258-x; Figshare 30499499 v1",
+  "file_sha256": "dcb11e46c0e61d09a22d2ef6c6778e3afb0fc1b1f5bbe218581597c133950e15",
+  "file_md5": "a06482e7368e835d3ffd026c7366f9e8",
+  "sheet": "Figure4d",
+  "columns": {
+    "D_basis": [
+      "A",
+      "B",
+      "C"
+    ],
+    "H_basis": [
+      "E",
+      "F",
+      "G"
+    ]
+  },
+  "calibration_degrees": [
+    0,
+    40,
+    80,
+    120,
+    160,
+    200,
+    240,
+    280,
+    320,
+    360
+  ],
+  "test_degrees": [
+    20,
+    60,
+    100,
+    140,
+    180,
+    220,
+    260,
+    300,
+    340
+  ],
+  "rows": "angle/20+2",
+  "exposure_before_freeze": "Only workbook sheet names, text headers and angle columns exposed. Primary abstract and visibility summaries already read. No workbook measured cells read. Public model-development holdout, never blind.",
+  "primary_observation_map": "mu_j(beta)=m_j[1+v_j C_k(beta-alpha_j-phi_j)], C_k=-E_k(cos(2 delta)), alpha_H=0deg alpha_D=45deg",
+  "nuisance": "Separate constant brightness m_j>0, visibility 0<=v_j<=1 and axis offset phi_j in [-10,10] degrees for each H/D scan, estimated on calibration rows only. Common k>=0. No measured holdout retuning. These are not independently instrument-calibrated; conditional observation-map comparison only.",
+  "fit": "Weighted least squares using released error columns; if errors/units not documented enough, report descriptive weighted residual scores only. No raw Poisson/binomial likelihood fabricated. k boundary scanned to at least20 and asymptotic saturation checked. Controls separately calibrate same nuisance class for k=0 and quantum cosine.",
+  "uncertainty": "Cal-only local Hessian propagation and profile grid/parameter boundary checks conditional on independent Gaussian interpretation of source errors; label assumptions. Holdout common-nuisance prediction covariance retained. No significance until source definition, covariance and nuisance sufficiency reviewed.",
+  "holdout_exposure_rule": "Read calibration values first, complete fits and freeze parameter/prediction packet before measured holdout extraction. Inspect paper figure only after this split; image exposure acknowledged if required for angle definition."
+}

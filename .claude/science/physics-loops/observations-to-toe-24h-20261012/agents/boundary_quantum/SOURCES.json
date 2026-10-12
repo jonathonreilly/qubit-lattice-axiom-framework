@@ -1,0 +1,37 @@
+{
+  "pinned_at": "2026-10-12T18:01:00.722472+00:00",
+  "paper_doi": "10.1038/s41467-025-66258-x",
+  "data_doi": "10.6084/m9.figshare.30499499.v1",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/song_Figure4_v1.xlsx",
+      "sha256": "dcb11e46c0e61d09a22d2ef6c6778e3afb0fc1b1f5bbe218581597c133950e15",
+      "bytes": 16098,
+      "download_url": "https://ndownloader.figshare.com/files/59204048"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/song_figshare_v1.json",
+      "sha256": "24e65ff3f58caefccd96a04f411aee58b4221162ce9ace9beabb55c4d5b77b72",
+      "bytes": 6038,
+      "download_url": "https://api.figshare.com/v2/articles/30499499/versions/1"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/song_main_vor.pdf",
+      "sha256": "b1d83fd5ab12a83dca23a555495f63c3d2b3981dde83e4faadbdb16ddd2cdaa7",
+      "bytes": 1497247,
+      "download_url": "https://www.nature.com/articles/s41467-025-66258-x.pdf"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/song_supp_vor.pdf",
+      "sha256": "ba47075d6c999b1476f4efcba7a34a52c134b916430d73bd82d122b3924488f3",
+      "bytes": 4915810,
+      "download_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-025-66258-x/MediaObjects/41467_2025_66258_MOESM1_ESM.pdf"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/boundary_quantum/song_fig4_primary.png",
+      "sha256": "c1fcc7a2b03895542f34305112e51d5448f9bf97cbb046a007605dff7a8fa29b",
+      "bytes": 152434,
+      "download_url": "https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-66258-x/MediaObjects/41467_2025_66258_Fig4_HTML.png"
+    }
+  ]
+}

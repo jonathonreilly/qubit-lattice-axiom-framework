@@ -1,0 +1,325 @@
+{
+  "test_numerical_read_at": "2026-10-12T18:02:50.125975+00:00",
+  "calibration_freeze_sha256": "0e4dc14ae089be908dcfcdc26c07dffa7c3bea57c50cc13b32b7d3a6ef2cf46e",
+  "scope": "Frozen parameters used; no test retuning. Public model-development holdout; partial prior numeric and full graphical exposure documented.",
+  "data": [
+    {
+      "basis": "H",
+      "j": 0,
+      "angle": 80,
+      "value": 20298.0,
+      "error": 142.47105,
+      "source_cells": "E6:G6"
+    },
+    {
+      "basis": "H",
+      "j": 0,
+      "angle": 100,
+      "value": 25274.0,
+      "error": 158.97799,
+      "source_cells": "E7:G7"
+    },
+    {
+      "basis": "H",
+      "j": 0,
+      "angle": 120,
+      "value": 11341.0,
+      "error": 106.49413,
+      "source_cells": "E8:G8"
+    },
+    {
+      "basis": "H",
+      "j": 0,
+      "angle": 140,
+      "value": 876.0,
+      "error": 29.5973,
+      "source_cells": "E9:G9"
+    },
+    {
+      "basis": "H",
+      "j": 0,
+      "angle": 160,
+      "value": 12413.0,
+      "error": 111.41364,
+      "source_cells": "E10:G10"
+    },
+    {
+      "basis": "H",
+      "j": 0,
+      "angle": 260,
+      "value": 20669.0,
+      "error": 143.76717,
+      "source_cells": "E15:G15"
+    },
+    {
+      "basis": "H",
+      "j": 0,
+      "angle": 280,
+      "value": 24654.0,
+      "error": 157.01592,
+      "source_cells": "E16:G16"
+    },
+    {
+      "basis": "H",
+      "j": 0,
+      "angle": 300,
+      "value": 9833.0,
+      "error": 99.16148,
+      "source_cells": "E17:G17"
+    },
+    {
+      "basis": "H",
+      "j": 0,
+      "angle": 320,
+      "value": 907.0,
+      "error": 30.11644,
+      "source_cells": "E18:G18"
+    },
+    {
+      "basis": "H",
+      "j": 0,
+      "angle": 340,
+      "value": 12449.0,
+      "error": 111.57509,
+      "source_cells": "E19:G19"
+    },
+    {
+      "basis": "D",
+      "j": 1,
+      "angle": 80,
+      "value": 5393.0,
+      "error": 73.43705,
+      "source_cells": "A6:C6"
+    },
+    {
+      "basis": "D",
+      "j": 1,
+      "angle": 100,
+      "value": 21996.0,
+      "error": 148.31049,
+      "source_cells": "A7:C7"
+    },
+    {
+      "basis": "D",
+      "j": 1,
+      "angle": 120,
+      "value": 23636.0,
+      "error": 153.74004,
+      "source_cells": "A8:C8"
+    },
+    {
+      "basis": "D",
+      "j": 1,
+      "angle": 140,
+      "value": 8332.0,
+      "error": 91.27979,
+      "source_cells": "A9:C9"
+    },
+    {
+      "basis": "D",
+      "j": 1,
+      "angle": 160,
+      "value": 1255.0,
+      "error": 35.42598,
+      "source_cells": "A10:C10"
+    },
+    {
+      "basis": "D",
+      "j": 1,
+      "angle": 260,
+      "value": 6450.0,
+      "error": 80.31189,
+      "source_cells": "A15:C15"
+    },
+    {
+      "basis": "D",
+      "j": 1,
+      "angle": 280,
+      "value": 22794.0,
+      "error": 150.97682,
+      "source_cells": "A16:C16"
+    },
+    {
+      "basis": "D",
+      "j": 1,
+      "angle": 300,
+      "value": 23610.0,
+      "error": 153.65546,
+      "source_cells": "A17:C17"
+    },
+    {
+      "basis": "D",
+      "j": 1,
+      "angle": 320,
+      "value": 8210.0,
+      "error": 90.60905,
+      "source_cells": "A18:C18"
+    },
+    {
+      "basis": "D",
+      "j": 1,
+      "angle": 340,
+      "value": 1398.0,
+      "error": 37.38984,
+      "source_cells": "A19:C19"
+    }
+  ],
+  "models": {
+    "boundary": {
+      "test_weighted_square_fixed_parameters": 1447.8442504388252,
+      "test_weighted_square_with_local_correlated_prediction_uncertainty": 357.1819268870821,
+      "new_angle_weighted_square_fixed_parameters": 279.9508604988487,
+      "n_test": 20,
+      "n_new_angle": 8,
+      "observed_minus_predicted": [
+        -1415.6918529475588,
+        377.4785498531237,
+        1570.8162536162654,
+        -518.3904837996761,
+        -315.748976529223,
+        -1044.6918529475624,
+        -242.52145014686175,
+        62.816253616283575,
+        -487.3904837996836,
+        -279.74897652921754,
+        -300.6273258389838,
+        -481.2452294947907,
+        196.6604093820024,
+        1060.5511560543582,
+        -342.29722869365196,
+        756.3726741610335,
+        316.7547705052093,
+        170.66040938199876,
+        938.5511560543746,
+        -199.29722869365196
+      ],
+      "marginal_standardized_residual_including_cal_uncertainty": [
+        -7.071673401101368,
+        2.0768959793115527,
+        10.350445830073877,
+        -3.9735543709707337,
+        -2.108625894317749,
+        -5.194464008453684,
+        -1.3470600776802593,
+        0.42816386026761094,
+        -3.7325362566454827,
+        -1.8667137204957327,
+        -2.514573878286564,
+        -2.7600942655784566,
+        1.126146211754361,
+        7.6639271078539055,
+        -5.168757050718908,
+        6.104912652580778,
+        1.7933052175390838,
+        0.9776779776437021,
+        6.804019329476533,
+        -2.961533212388706
+      ],
+      "no_p_value": "Not a validated statistical exclusion. Source angle mapping, selection/detection response, calibration model adequacy, and published-error covariance remain conditional."
+    },
+    "quantum": {
+      "test_weighted_square_fixed_parameters": 420.64126888962124,
+      "test_weighted_square_with_local_correlated_prediction_uncertainty": 303.7376129901243,
+      "new_angle_weighted_square_fixed_parameters": 233.11295147378087,
+      "n_test": 20,
+      "n_new_angle": 8,
+      "observed_minus_predicted": [
+        -596.9697834008439,
+        -56.86945715494585,
+        766.9857665261261,
+        -137.1125243458937,
+        -36.50143074154403,
+        -225.96978340081841,
+        -676.8694571549495,
+        -741.0142334739012,
+        -106.11252434588914,
+        -0.5014307415149233,
+        -980.8618101551092,
+        -293.67072402873237,
+        1.0446647629469226,
+        145.64113627718234,
+        -220.8330029340607,
+        76.13818984489717,
+        504.329275971264,
+        -24.955335237053077,
+        23.641136277195983,
+        -77.83300293405932
+      ],
+      "marginal_standardized_residual_including_cal_uncertainty": [
+        -3.637561867907401,
+        -0.31423256142404166,
+        6.495792854550905,
+        -2.8399084222202733,
+        -0.2847569166164656,
+        -1.3675324433640346,
+        -3.775955741083693,
+        -6.645527023954145,
+        -2.18335867659088,
+        -0.003907509947023037,
+        -9.413001592282646,
+        -1.7584941873702014,
+        0.005952107076605327,
+        1.3982086305277808,
+        -3.4414154507893757,
+        0.6975111985933353,
+        2.977614473837875,
+        -0.14224616017098385,
+        0.2282505260945687,
+        -1.1924049385739506
+      ],
+      "no_p_value": "Not a validated statistical exclusion. Source angle mapping, selection/detection response, calibration model adequacy, and published-error covariance remain conditional."
+    },
+    "triangular": {
+      "test_weighted_square_fixed_parameters": 14117.420390117892,
+      "test_weighted_square_with_local_correlated_prediction_uncertainty": 3502.2824848349783,
+      "new_angle_weighted_square_fixed_parameters": 6043.6100304142365,
+      "n_test": 20,
+      "n_new_angle": 8,
+      "observed_minus_predicted": [
+        2514.9847069446514,
+        3364.1589185107223,
+        771.9750255234758,
+        104.20886746377346,
+        300.3927604510227,
+        2885.9847069446405,
+        2744.1589185107223,
+        -736.024974476517,
+        135.20886746377346,
+        336.3927604510118,
+        -4070.0423543154775,
+        568.7855588416896,
+        3188.6121372084053,
+        -151.21577594876726,
+        -2225.9563108940797,
+        -3013.042354315483,
+        1366.7855588416714,
+        3162.6121372084162,
+        -273.2157759487709,
+        -2082.956310894074
+      ],
+      "marginal_standardized_residual_including_cal_uncertainty": [
+        15.973661046604347,
+        18.120659621732127,
+        6.694768163130264,
+        1.461340454167783,
+        2.47854910410811,
+        18.194383947238506,
+        14.915863810996065,
+        -6.778980297370407,
+        1.8903062636139842,
+        2.7721909234655624,
+        -35.08501329858647,
+        3.2805952498757387,
+        18.774945024627566,
+        -1.5594715828430872,
+        -20.869554036176385,
+        -25.009715982804142,
+        7.780636364542883,
+        18.63025237117406,
+        -2.836103977201991,
+        -19.407259022129033
+      ],
+      "no_p_value": "Not a validated statistical exclusion. Source angle mapping, selection/detection response, calibration model adequacy, and published-error covariance remain conditional."
+    }
+  }
+}

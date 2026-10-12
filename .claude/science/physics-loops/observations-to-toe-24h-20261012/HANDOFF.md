@@ -1,40 +1,102 @@
 # Campaign handoff
 
-Status: running; campaign is not complete. Immutable deadline remains 2026-10-13T16:53:00.057432+00:00 in runtime DEADLINE.json. No stop marker was present at the last check. Supervisor owns the cooperative lock; do not change it.
+Running; a local block is not campaign completion. Immutable deadline remains
+2026-10-13T16:53:00.057432+00:00 in runtime DEADLINE.json; packaging starts
+15 minutes before it. No stop marker at18:19:42 UTC checkpoint. Supervisor
+owns the cooperative lock. Do not modify scheduling or the older cancelled
+campaign. Read STATE.yaml and GOAL.md first.
 
-Read STATE.yaml and GOAL.md, then gravity/DERIVATION.md and gravity/SCALAR_CONTINUUM_DERIVATION.md. The first decisive numerical block is complete as a conditional geometry benchmark: a positive massive spin-2 pole can match the GR-like light/force ratio at one declared geometry, while its shape and propagation change elsewhere. Author 13/0 checks; independent mpmath differentiation reproduces 15 compared values. Root read the complete independent source/results. This is not a fit to Cassini. Cassini primary 8.43 AU is geocentric; our fixed z_S=8.43 AU remains an explicit idealization.
+Exact next action: finish source-bound review and delivery of the positive
+force/noise/source-inverse milestone, while continuing the frozen galaxy
+external-field and quantum-composition tests. Preserve failed flavor tests;
+do not refit them silently. Active milestone worktree is
+`/private/tmp/observations-positive-response-20261012`, branch
+`codex/observations-positive-response-20261012`, base
+`516cb69d8487ff04f8a48e065d3dcbe71d7dd237`. Its canonical note and self-contained
+runner are frozen in its pack `positive-response-milestone-20261012/evidence/`.
+Author runner10/0; each of ten load-bearing mutations failed its intended
+check family. Independent final review by neutrino_candidate is in progress.
+No PR yet. Keep the primary campaign branch for continuous discovery.
 
-The second constructive block defines a common positive scalar mass continuum with static Yukawa response, retarded propagation, admissible vacuum correlations and an exact two-position coherence functional. One s fixes static-force and low-frequency noise powers. Author 40/0 checks; root read the complete independent mediator derivation/code/results. The independent oscillator, frequency and positive Schwinger integrals agree. The gamma mass measure does not cut off spatial momentum. Finite source smearing is an explicit apparatus condition; full nonlinear continuum gravity and matter selection remain open.
+## Scientific state
 
-The third constructive block supplies a finite canonical multi-scalar action,
-positive Laguerre approximations and positive bins with simultaneous static/noise
-absolute error bounds. See gravity/FINITE_LOCAL_DERIVATION.md. Author 207/0
-checks; independent agent derivation underway. For s=ell=1, eight masses reproduce
-Y(r=1)=0.5 to 7.37e-8 absolute error yet predict zero local vacuum spectrum at
-w=0.1, where the continuum gives 1.9065e-4. This is a synthetic inverse-model
-discriminator, not an observation or a fit. Unmodified small raw evidence is
-copied into gravity/evidence; original independent runtime programs still need a
-portable adaptation for a final reproducible milestone packet.
+The positive scalar construction uses one mass measure for static response,
+retarded dynamics and a stated Gaussian vacuum. Positive finite local fields
+and bins provide simultaneous absolute force/noise approximation bounds.
+See gravity/SCALAR_CONTINUUM_DERIVATION.md and FINITE_LOCAL_DERIVATION.md.
+Independent derivations agree, including a killed birth-death improvement to
+the finite Laguerre bounds in agents/gravity_finite/. No observational
+parameter fit or interacting infinite-field completion is claimed.
 
-Exact next scientific action: develop finite-data force-to-noise inference with
-explicit competing positive measures; independently check the finite local
-construction; integrate finite-range material/source charge reconstruction.
-Composition V1 is an exactly massless scalar comparison, distinct from the
-continuum. A nominal Earth/Sun source-null direction leaves an intrinsic clock
-coupling; finite source profiles, different radii and uncertain composition need
-testing before interpreting that as a physical blind direction.
+The source-profile theorem in gravity/SOURCE_PROFILE_TOMOGRAPHY.md proves
+strict two-radius rank for known broad positive mass measures and radially
+ordered core/mantle profiles. The independent check reproduces all52
+quantities within4.92e-56 relative; condition numbers grow as ell^4.
+Known nonzero probe coupling is essential. A material contrast-null direction
+still defeats that particular differential readout. agents/composition/ and
+finite_range/ preserve full source/material charge calculations and nuisance
+limitations; the massless and finite-range versions are distinct models.
 
-Active assigned agents write only under agents/: gravity_measurements now checks
-finite positive approximations; composition now checks finite-range Earth/Sun
-source structure; neutrino independently reconstructs the public 2026 Sun
-composition estimator. Two original-source reconstructions identify a variable
-overwrite and transfer attenuation in that public script, but neither is a
-corrected published result or certified native-MATLAB reproduction. The paper
-summary comparison stays explicitly conditional. Read complete artifacts before
-reuse; agent summaries remain leads.
+The selected massive tensor pole is a geometry witness, not a Cassini fit.
+Frozen raw GW three-band extraction failed its controls and gives no measured
+dispersion bound. A separate primary-paper comparison finds its rest energy
+1333.69 times the reported GW170817 mass-bound scale, conditional on the same
+observed-mode/source-waveform class. Separate dispersion likelihood samples
+were not located. See agents/gravity_waveform/.
 
-Current source/skill pin: 7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de, fetched current main at launch. Relevant open PR9476 head remains 3a4733871bcbdd731251052a65d5bf60457d7c3e; selected RZ and Q1 review/argument scopes inspected. No prior science is imported into the new proof. The no-new-axiom exploration veto in installed/source defaults is overridden by the user's explicit permission; no premise registry is changed.
+Neutrino endpoint V1 fails conditional solar/atmospheric/mass-gap comparison.
+The boundary-defect V2 fits reactor and solar summaries, predicts
+sin^2(theta23)=.37014384 and gap ratios .36878 or .18059 for fixed maps1,2.
+The independent inverse-spectral algebra certifies a unique admissible central
+root within its declared equations, not empirical viability. JUNO includes
+Daya Bay information; summaries are not independent raw observations. Full
+versions, priors, intervals and shared-data caveats are in
+agents/neutrino/flavor_endpoint/. No arbitrary-model use of Daya Bay grids.
 
-Delivery: no milestone PR yet. Initial benchmark alone is not a sufficient new milestone. Preserve coherent checkpoints on the primary branch and assemble a regular PR after a connected construction and relevant author/conformance checks. No main pushes/merges, no audit application. Runtime downloads/full logs stay outside git.
+The moving closed-current scalar-vacuum bound for a stipulated rigid Gaussian
+molecule is independently checked:1nm width gives chi<=4.19721709e-54 at
+unit gravitational-strength coupling. This is not a Talbot-Lau apparatus
+visibility prediction. See agents/neutrino/interference/ and the separate
+agents/galaxy_response/MOVING_ENVELOPE_REVIEW.md. Actual grating histories,
+internal density, preparation and readout remain inputs.
 
-Conformance discrepancy observed: REVIEW_LOOP_PR_CONFORMANCE_SPEC section3 still says Status lines must be proposed_retained/proposed_promoted; its cited current physics-loop CLAIM_STATUS forbids that author promotion and supplies conditional-support etc. Follow the current owning claim-status rule. The old publication-index path in DISCOVERY moved to archive/publication; the current REPO_ORGANIZATION documents that relocation. No process changes made.
+The boundary-conditioned quantum alternative has an exact normalized one-k
+pair law. Its public angular-fringe comparison has repeated-setting drift
+larger than released counting errors, so no exclusion significance is
+assigned. Frozen calibration/test roles and corrections are preserved in
+agents/boundary_quantum/. A follow-up finite-setting quantum-composition test
+is active; pairwise no-signaling is not being treated as a full theory.
+
+The galaxy worker has completed a frozen processed-SPARC comparison, pending
+root full-source inspection. Positive finite-source reconstruction precedes
+target fitting. A fixed nonlinear acceleration rule fits held-out galaxies
+much better than the tested six-weight locally-normalized positive Yukawa
+family. This is an algebraic circular-response comparison, not yet a disk PDE
+or covariant field fit. A separately frozen QUMOND solar external-field test
+is the next cross-sector calculation. Agent summaries remain leads, not proof.
+
+## Source, delivery and operations
+
+Fresh main is516cb69d8487ff04f8a48e065d3dcbe71d7dd237; current physics-loop and
+workflow bytes are unchanged from initial pin7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de.
+The only open PR in the18:10 inventory is9499, finite-energy sector
+concentration. Earlier matching9476/9477 source had been inspected; inventory
+is not scientific authority. No novelty claim follows from keyword searches.
+
+Root has read complete source-inverse and moving-current arguments, and the
+V1 primary comparison. Complete V2 exact-algebra, Ross reconstruction,
+galaxy and quantum-composition source still need root reads before heavy use.
+Ross public-script normalization reconstructions are diagnostics, not a
+corrected published experimental result or certified native-MATLAB execution.
+
+The canonical milestone ships only its self-contained construction, not every
+provisional campaign candidate. Regenerate citation graph/manifest for its
+new node, complete conformance and focused review, then regular PR.
+Maintain runtime PRS.json and attach using an app tool if available; no
+PR-to-chat attachment operation was found in available tools so far.
+No main science pushes/merges, audit application, or unrelated queue changes.
+
+Conformance discrepancy: old spec section3 proposes author promotion tokens;
+its owning CLAIM_STATUS rule forbids that. Use conditional-support and unset
+audit standing. The old publication index in DISCOVERY moved under
+archive/publication. No process files were changed.

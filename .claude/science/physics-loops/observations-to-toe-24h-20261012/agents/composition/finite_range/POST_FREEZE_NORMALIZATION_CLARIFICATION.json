@@ -1,0 +1,8 @@
+{
+  "time": "2026-10-12T17:55:25.984654+00:00",
+  "action": "Post-freeze prose normalization clarification requested by focused reviewer; no calculations changed",
+  "old_RANK_LEMMA_sha256": "138abd12cbc2acf54930990ed3a5cf4fc2f50edad2d3f050b6f8d65d1020e034",
+  "new_RANK_LEMMA_sha256": "73027ef3c7c8cc41c9275146bed489e7ddd1b4aec84501e3d9779d529985fc8a",
+  "preserved_freeze": "RESULTS_FREEZE_V1.json",
+  "convention": "C=f_C F_C; M=f_M F_M; F_i normalized by component mass"
+}

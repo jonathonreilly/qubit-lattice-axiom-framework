@@ -1,0 +1,55 @@
+{
+  "frozen_at": "2026-10-12T18:10:23.700816+00:00",
+  "status": "Independent V1 primary summary comparison; no root outputs/code read; no V2 fit performed",
+  "source_pin_initial": "7f9fac6cb89c6c7b86cde4f5716870d0dfc4b9de",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/INDEPENDENT_V1_PROTOCOL.md",
+      "sha256": "c7c944f15847454d085e652ab3b9e6e0c9e44de15c81e4bc382858797de3281c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/independent_v1.py",
+      "sha256": "987d7b24c3cb54c1c019100afdb4f807358420f44b1b7a4eb4bf59e19d698de8"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/V1_INITIAL_FREEZE.json",
+      "sha256": "09db069ac98f0ad8bd34aad7c8b03c9fe22928f626f42f81ecf145649466f335"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/JUNO_GRID_PROTOCOL.md",
+      "sha256": "5dc781cfa95ef76d80dcf75e99dd4c0bb25d83d5d5700f48e447f45b83edd2ab"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/compare_v1.py",
+      "sha256": "ed077830aa79a964ff30d7841be1671c5569aa3d2d067c04e8399eebc8366355"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/V1_PRIMARY_COMPARISON.md",
+      "sha256": "f154ff9237cd396fb7b02d87bf962e6d4a13d85420c90f57ea8f4a15404e6a22"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/flavor_endpoint/BOUNDARY_ADMISSIBILITY.md",
+      "sha256": "a2a2d2c7329fc8ee692e7c63ee62ee1ed0cf87745ef3557daf21f8d8e8253977"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/flavor_endpoint/independent_v1_results.json",
+      "sha256": "45187693352e0b61265647057737f203d53082f2bc423603dfdfe0e89fd95351"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/flavor_endpoint/comparison_v1_results.json",
+      "sha256": "d178103790ad79d80f45c583b2e56977a0a023171297f5d6fb3ad50d90704a1e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/flavor_endpoint/inputs/manifest_v1.json",
+      "sha256": "9d4ed50d5282fd80ab6e24520211ddb9634ab4b5363753adaac4236149eb841a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/flavor_endpoint/inputs/manifest_supplement.json",
+      "sha256": "8d7fb477264a0c1c1168d91adb22e27eb74b9455561f81f3936ae83677deadec"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/flavor_endpoint/inputs/manifest_latest_accelerator.json",
+      "sha256": "66322779f85d987d492d6ba77d6dd6289fdce99ae493e74da383c216bfbbaba5"
+    }
+  ]
+}

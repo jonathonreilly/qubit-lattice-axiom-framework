@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-10-12T17:31:04.170099+00:00",
+  "composition_numerical_outputs_read": false,
+  "independence_disclosure": "Path-locating grep exposed qualitative source comments about m alias, percentile and endpoint alignment before independent derivation; no numerical outputs or detailed implementation read.",
+  "sha256": {
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/ross_independent/FROZEN_RECONSTRUCTION.md": "f7acc2ddc05df110e996d4e2097d0ea1c3eb187e35c021f998b9d2421832a098",
+    "/Users/jonBridger/.codex/worktrees/observations-to-toe-24h-20261012/New Axioms Lets Go/.claude/science/physics-loops/observations-to-toe-24h-20261012/agents/neutrino/ross_independent/reconstruct_sun.py": "d000e89484fe8a87b24f37a44a5911f6e7d25f8d660c3e6bf43140ebb3ecc28b",
+    "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/ross_independent/independent_results.json": "c8654e2908d62237c3a03c42280b94614819320edc372d3592b1a29ba11d19bf",
+    "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/ross_independent/baseline_blocks.csv": "77d2f09add419f78bf2deba7f5889ed6d3d28dca19e6d1f92cc7bdc68c3fa63d",
+    "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012/neutrino/ross_independent/run.log": "e2b3c7a014986d599a2baec09ea0e2bac66c6032dfd6dca0cb8fd1f1e8545d49"
+  }
+}

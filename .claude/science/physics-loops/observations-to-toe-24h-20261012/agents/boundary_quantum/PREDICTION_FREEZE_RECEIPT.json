@@ -1,0 +1,6 @@
+{
+  "at": "2026-10-12T18:02:49.811400+00:00",
+  "sha256": "0e4dc14ae089be908dcfcdc26c07dffa7c3bea57c50cc13b32b7d3a6ef2cf46e",
+  "role": "Prediction packet saved and hashed before full revised test measured-cell extraction",
+  "earlier_exposure": "See SOURCE_MAP_CORRECTION_PREFIT.json"
+}

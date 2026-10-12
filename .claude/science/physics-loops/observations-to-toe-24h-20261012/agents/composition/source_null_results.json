@@ -1,0 +1,1733 @@
+{
+  "status": "exact conditional degeneracy identity; no global viability claim",
+  "created_at": "2026-10-12T17:20:52.868711+00:00",
+  "script_sha256": "81a0359b4c8381c9fff85a2a28b62ef6ce170e15dbb42186f0c50aa2ece7ca34",
+  "joint_script_sha256": "f17c1dc303497f9ee52d99230ca6b61cc115790317beb8a414220963b78d5067",
+  "source_null_direction_x1": [
+    -0.0005496676651586671,
+    1.0,
+    0.14670806243523468
+  ],
+  "source_row_rank": 2,
+  "rank_one_matrices": {
+    "microscope_numerator": [
+      [
+        0.0,
+        1.564558030087482e-05,
+        -0.0009671497859167896
+      ],
+      [
+        1.564558030087482e-05,
+        8.385610065253186e-09,
+        -2.291434421182234e-07
+      ],
+      [
+        -0.0009671497859167896,
+        -2.291434421182234e-07,
+        -3.7138767849210024e-06
+      ]
+    ],
+    "microscope_denominator_minus_one": [
+      [
+        1.0,
+        0.0002525124768685563,
+        0.002569305520645866
+      ],
+      [
+        0.0002525124768685563,
+        6.352310414371674e-08,
+        6.588289268285248e-07
+      ],
+      [
+        0.002569305520645866,
+        6.588289268285248e-07,
+        6.179747705227656e-06
+      ]
+    ],
+    "clock_numerator": [
+      [
+        0.0,
+        0.0,
+        3.475
+      ],
+      [
+        0.0,
+        0.0,
+        0.0015823100855566214
+      ],
+      [
+        3.475,
+        0.0015823100855566214,
+        0.004468534931601999
+      ]
+    ],
+    "solar_BeAl_numerator": [
+      [
+        0.0,
+        -1.0414049745411904e-05,
+        -0.0005113844062020136
+      ],
+      [
+        -1.0414049745411904e-05,
+        -9.483888312894169e-09,
+        -2.3955006505416894e-07
+      ],
+      [
+        -0.0005113844062020136,
+        -2.3955006505416894e-07,
+        -6.575939806015089e-07
+      ]
+    ],
+    "solar_denominator_minus_one": [
+      [
+        1.0,
+        0.00036166378915125066,
+        0.0012814829184347794
+      ],
+      [
+        0.00036166378915125066,
+        1.2202527059018448e-07,
+        5.232815340255103e-07
+      ],
+      [
+        0.0012814829184347794,
+        5.232815340255103e-07,
+        1.234480141615946e-06
+      ]
+    ]
+  },
+  "coupling_box_t_interval": [
+    -0.1,
+    0.1
+  ],
+  "witnesses": [
+    {
+      "parameters_g_x_e": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "alpha_Earth": 0.0,
+      "alpha_Sun": 0.0,
+      "microscope_eta": 0.0,
+      "clock_k_E3_E2": 0.0,
+      "clock_annual_E3_E2": 0.0,
+      "clock_k_optical_hyperfine_e0": 0.0,
+      "clock_annual_optical_hyperfine_e0": 0.0,
+      "Sun_Earth_GM_conversion": 1.0,
+      "solar_BeTi_fraction": 0.0,
+      "solar_BeAl_fraction": 0.0,
+      "solar_BeAl_acceleration_fm_s2": 0.0,
+      "chi2_calibration": 1.885354010074117,
+      "t": 0.0,
+      "intrinsic_b_E3E2": -0.0,
+      "intrinsic_b_E3E2_squared": 0.0,
+      "alpha_pure_Fe_source": 0.0,
+      "Fe_source_TiAlV_PtRh_product": 0.0,
+      "X_rank_one": [
+        [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "lifted_forward": {
+        "microscope_numerator": 0.0,
+        "microscope_denominator_minus_one": 0.0,
+        "clock_numerator": 0.0,
+        "solar_BeAl_numerator": 0.0,
+        "solar_denominator_minus_one": 0.0
+      }
+    },
+    {
+      "parameters_g_x_e": [
+        -5.496676651586671e-07,
+        0.001,
+        0.0001467080624352347
+      ],
+      "alpha_Earth": 0.0,
+      "alpha_Sun": -6.617444900424221e-23,
+      "microscope_eta": -0.0,
+      "clock_k_E3_E2": -6.747286011311477e-26,
+      "clock_annual_E3_E2": -1.1133021918663937e-35,
+      "clock_k_optical_hyperfine_e0": null,
+      "clock_annual_optical_hyperfine_e0": null,
+      "Sun_Earth_GM_conversion": 1.0,
+      "solar_BeTi_fraction": 1.578603429835295e-29,
+      "solar_BeAl_fraction": 1.1307660238890435e-29,
+      "solar_BeAl_acceleration_fm_s2": 6.671519540945356e-17,
+      "chi2_calibration": 1.885354010074117,
+      "t": 0.001,
+      "intrinsic_b_E3E2": -0.0010196210339248812,
+      "intrinsic_b_E3E2_squared": 1.0396270528220438e-06,
+      "alpha_pure_Fe_source": 8.519670739314856e-08,
+      "Fe_source_TiAlV_PtRh_product": -2.151099134747532e-14,
+      "X_rank_one": [
+        [
+          3.0213454212098057e-13,
+          -5.496676651586671e-10,
+          -8.064067813872741e-11
+        ],
+        [
+          -5.496676651586671e-10,
+          1e-06,
+          1.467080624352347e-07
+        ],
+        [
+          -8.064067813872741e-11,
+          1.467080624352347e-07,
+          2.152325558350072e-08
+        ]
+      ],
+      "lifted_forward": {
+        "microscope_numerator": 1.262177448353619e-29,
+        "microscope_denominator_minus_one": 2.524354896707238e-29,
+        "clock_numerator": -5.169878828456423e-26,
+        "solar_BeAl_numerator": 3.1554436208840472e-30,
+        "solar_denominator_minus_one": 5.99534287967969e-29
+      }
+    },
+    {
+      "parameters_g_x_e": [
+        -5.496676651586671e-06,
+        0.01,
+        0.001467080624352347
+      ],
+      "alpha_Earth": 0.0,
+      "alpha_Sun": -1.0587911840678754e-22,
+      "microscope_eta": -0.0,
+      "clock_k_E3_E2": -1.0795657618098363e-24,
+      "clock_annual_E3_E2": -1.7812835069862299e-34,
+      "clock_k_optical_hyperfine_e0": null,
+      "clock_annual_optical_hyperfine_e0": null,
+      "Sun_Earth_GM_conversion": 1.0,
+      "solar_BeTi_fraction": 2.5257654877364718e-28,
+      "solar_BeAl_fraction": 1.8092256382224698e-28,
+      "solar_BeAl_acceleration_fm_s2": 1.0674431265512572e-15,
+      "chi2_calibration": 1.885354010074117,
+      "t": 0.01,
+      "intrinsic_b_E3E2": -0.010196210339248812,
+      "intrinsic_b_E3E2_squared": 0.00010396270528220437,
+      "alpha_pure_Fe_source": 8.51967073931485e-07,
+      "Fe_source_TiAlV_PtRh_product": -2.151099134747531e-12,
+      "X_rank_one": [
+        [
+          3.0213454212098055e-11,
+          -5.4966766515866706e-08,
+          -8.06406781387274e-09
+        ],
+        [
+          -5.4966766515866706e-08,
+          0.0001,
+          1.467080624352347e-05
+        ],
+        [
+          -8.06406781387274e-09,
+          1.467080624352347e-05,
+          2.152325558350072e-06
+        ]
+      ],
+      "lifted_forward": {
+        "microscope_numerator": 0.0,
+        "microscope_denominator_minus_one": 6.462348535570529e-27,
+        "clock_numerator": -1.6543612251060553e-24,
+        "solar_BeAl_numerator": 4.0389678347315804e-28,
+        "solar_denominator_minus_one": 0.0
+      }
+    },
+    {
+      "parameters_g_x_e": [
+        -1.6490029954760013e-05,
+        0.03,
+        0.00440124187305704
+      ],
+      "alpha_Earth": -1.6940658945086007e-21,
+      "alpha_Sun": -2.541098841762901e-21,
+      "microscope_eta": 1.283184688018522e-26,
+      "clock_k_E3_E2": -7.77287348503082e-23,
+      "clock_annual_E3_E2": -1.2825241250300852e-32,
+      "clock_k_optical_hyperfine_e0": null,
+      "clock_annual_optical_hyperfine_e0": null,
+      "Sun_Earth_GM_conversion": 1.0,
+      "solar_BeTi_fraction": 1.8185511511702595e-26,
+      "solar_BeAl_fraction": 1.3026424595201778e-26,
+      "solar_BeAl_acceleration_fm_s2": 7.685590511169049e-14,
+      "chi2_calibration": 1.8853540100792205,
+      "t": 0.03,
+      "intrinsic_b_E3E2": -0.030588631017746427,
+      "intrinsic_b_E3E2_squared": 0.0009356643475398388,
+      "alpha_pure_Fe_source": 2.555901221794454e-06,
+      "Fe_source_TiAlV_PtRh_product": -1.9359892212727764e-11,
+      "X_rank_one": [
+        [
+          2.719210879088825e-10,
+          -4.947008986428004e-07,
+          -7.257661032485466e-08
+        ],
+        [
+          -4.947008986428004e-07,
+          0.0009,
+          0.0001320372561917112
+        ],
+        [
+          -7.257661032485466e-08,
+          0.0001320372561917112,
+          1.937093002515064e-05
+        ]
+      ],
+      "lifted_forward": {
+        "microscope_numerator": 2.5849394142282115e-26,
+        "microscope_denominator_minus_one": -5.169878828456423e-26,
+        "clock_numerator": -5.293955920339377e-23,
+        "solar_BeAl_numerator": 1.1309109937248425e-26,
+        "solar_denominator_minus_one": 5.492996255234949e-26
+      }
+    },
+    {
+      "parameters_g_x_e": [
+        -5.496676651586671e-05,
+        0.1,
+        0.014670806243523469
+      ],
+      "alpha_Earth": -6.776263578034403e-21,
+      "alpha_Sun": -8.470329472543003e-21,
+      "microscope_eta": 1.7109129173580296e-25,
+      "clock_k_E3_E2": -8.63652609447869e-22,
+      "clock_annual_E3_E2": -1.4250268055889838e-31,
+      "clock_k_optical_hyperfine_e0": null,
+      "clock_annual_optical_hyperfine_e0": null,
+      "Sun_Earth_GM_conversion": 1.0,
+      "solar_BeTi_fraction": 2.0206123901891773e-25,
+      "solar_BeAl_fraction": 1.4473805105779758e-25,
+      "solar_BeAl_acceleration_fm_s2": 8.539545012410058e-13,
+      "chi2_calibration": 1.8853540101421626,
+      "t": 0.1,
+      "intrinsic_b_E3E2": -0.10196210339248811,
+      "intrinsic_b_E3E2_squared": 0.010396270528220435,
+      "alpha_pure_Fe_source": 8.519670739314846e-06,
+      "Fe_source_TiAlV_PtRh_product": -2.1510991347475299e-10,
+      "X_rank_one": [
+        [
+          3.021345421209806e-09,
+          -5.4966766515866715e-06,
+          -8.064067813872741e-07
+        ],
+        [
+          -5.4966766515866715e-06,
+          0.010000000000000002,
+          0.001467080624352347
+        ],
+        [
+          -8.064067813872741e-07,
+          0.001467080624352347,
+          0.0002152325558350072
+        ]
+      ],
+      "lifted_forward": {
+        "microscope_numerator": 2.0679515313825692e-25,
+        "microscope_denominator_minus_one": 0.0,
+        "clock_numerator": -6.352747104407253e-22,
+        "solar_BeAl_numerator": 2.0679515313825692e-25,
+        "solar_denominator_minus_one": -5.169878828456423e-26
+      }
+    }
+  ],
+  "source_stresses_not_probability": [
+    {
+      "core": 0.3,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.00026835659965658337,
+        0.0019004087121224234
+      ],
+      "Sun_Q": [
+        0.00045534103181485506,
+        0.0006429546664175538
+      ],
+      "retuned_null_direction_x1": [
+        -0.000550948909982845,
+        1.0,
+        0.1487008076334567
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -2.5057855115632967e-07,
+        "alpha_Sun": -8.470329472543003e-21,
+        "microscope_eta": 6.326762161047713e-12,
+        "clock_k_E3_E2": -8.63652609447869e-22,
+        "clock_annual_E3_E2": -1.4250268055889838e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 2.0206123901891773e-25,
+        "solar_BeAl_fraction": 1.4473805105779758e-25,
+        "solar_BeAl_acceleration_fm_s2": 8.539545012410058e-13,
+        "chi2_calibration": 5311261.796355107
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.509489099828451e-05,
+          0.1,
+          0.01487008076334567
+        ],
+        "alpha_Earth": -3.3881317890172014e-21,
+        "alpha_Sun": -5.082197683525802e-21,
+        "microscope_eta": 8.685162368988601e-26,
+        "clock_k_E3_E2": -5.252301955647529e-22,
+        "clock_annual_E3_E2": -8.666298226818423e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 1.2282381559857151e-25,
+        "solar_BeAl_fraction": 8.787864230945776e-26,
+        "solar_BeAl_acceleration_fm_s2": 5.184839896258008e-13,
+        "chi2_calibration": 1.885354010108656
+      }
+    },
+    {
+      "core": 0.3,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.00026835659965658337,
+        0.0019004087121224234
+      ],
+      "Sun_Q": [
+        0.00045545336353359735,
+        0.0006355418947404017
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005494615469882842,
+        1.0,
+        0.14791815336278683
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -2.5057855115632967e-07,
+        "alpha_Sun": -9.751816512875076e-08,
+        "microscope_eta": 6.326762161047713e-12,
+        "clock_k_E3_E2": -9.94315723550317e-09,
+        "clock_annual_E3_E2": -1.640620943858023e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0000000000000244,
+        "solar_BeTi_fraction": 2.3263134375870377e-12,
+        "solar_BeAl_fraction": 1.6663565696258524e-12,
+        "solar_BeAl_acceleration_fm_s2": 9.831503760792529,
+        "chi2_calibration": 5311261.487684821
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.4946154698828426e-05,
+          0.1,
+          0.014791815336278684
+        ],
+        "alpha_Earth": -3.3881317890172014e-21,
+        "alpha_Sun": 1.6940658945086007e-21,
+        "microscope_eta": 8.633869854487083e-26,
+        "clock_k_E3_E2": 1.7415525365945996e-22,
+        "clock_annual_E3_E2": 2.8735616853810895e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -4.073349671154487e-26,
+        "solar_BeAl_fraction": -2.915727513534092e-26,
+        "solar_BeAl_acceleration_fm_s2": -1.720279232985114e-13,
+        "chi2_calibration": 1.885354010108475
+      }
+    },
+    {
+      "core": 0.3,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.00026835659965658337,
+        0.0019004087121224234
+      ],
+      "Sun_Q": [
+        0.00046000845150651184,
+        0.0006404634704426354
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005574301537297888,
+        1.0,
+        0.15211125492597902
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -2.5057855115632967e-07,
+        "alpha_Sun": 4.30194115702998e-07,
+        "microscope_eta": 6.326762161047713e-12,
+        "clock_k_E3_E2": 4.386349690415381e-08,
+        "clock_annual_E3_E2": 7.237476989185379e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 0.9999999999998922,
+        "solar_BeTi_fraction": -1.0262358308419802e-11,
+        "solar_BeAl_fraction": -7.351007783726468e-12,
+        "solar_BeAl_acceleration_fm_s2": -43.37094592398616,
+        "chi2_calibration": 5311263.556099543
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.574301537297888e-05,
+          0.1,
+          0.015211125492597902
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": -3.3881317890172014e-21,
+        "microscope_eta": -0.0,
+        "clock_k_E3_E2": -3.581842199059962e-22,
+        "clock_annual_E3_E2": -5.910039628448937e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 8.369332082814292e-26,
+        "solar_BeAl_fraction": 5.976757549322899e-26,
+        "solar_BeAl_acceleration_fm_s2": 3.52628695410051e-13,
+        "chi2_calibration": 1.8853540100741053
+      }
+    },
+    {
+      "core": 0.3,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.00026835659965658337,
+        0.0019004087121224234
+      ],
+      "Sun_Q": [
+        0.0004600987999779235,
+        0.000634501373561603
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005562043250568186,
+        1.0,
+        0.1514662206945788
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -2.5057855115632967e-07,
+        "alpha_Sun": 3.5176019469742404e-07,
+        "microscope_eta": 6.326762161047713e-12,
+        "clock_k_E3_E2": 3.5866209341103664e-08,
+        "clock_annual_E3_E2": 5.9179245412821045e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 0.9999999999999118,
+        "solar_BeTi_fraction": -8.3913029603516e-12,
+        "solar_BeAl_fraction": -6.010756155974614e-12,
+        "solar_BeAl_acceleration_fm_s2": -35.463461320250225,
+        "chi2_calibration": 5311263.186881264
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.562043250568186e-05,
+          0.1,
+          0.01514662206945788
+        ],
+        "alpha_Earth": 3.3881317890172014e-21,
+        "alpha_Sun": 6.776263578034403e-21,
+        "microscope_eta": -8.866398190290497e-26,
+        "clock_k_E3_E2": 7.133306490436606e-22,
+        "clock_annual_E3_E2": 1.17699557092204e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -1.6670167976594208e-25,
+        "solar_BeAl_fraction": -1.1908810671934162e-25,
+        "solar_BeAl_acceleration_fm_s2": -7.026198296441156e-13,
+        "chi2_calibration": 1.8853540100388633
+      }
+    },
+    {
+      "core": 0.3,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.00026788096394755504,
+        0.0018879510774041405
+      ],
+      "Sun_Q": [
+        0.00045534103181485506,
+        0.0006429546664175538
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005521512108150662,
+        1.0,
+        0.15057076969302177
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -4.809056672636833e-07,
+        "alpha_Sun": -8.470329472543003e-21,
+        "microscope_eta": 1.2142203571088047e-11,
+        "clock_k_E3_E2": -8.63652609447869e-22,
+        "clock_annual_E3_E2": -1.4250268055889838e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 2.0206123901891773e-25,
+        "solar_BeAl_fraction": 1.4473805105779758e-25,
+        "solar_BeAl_acceleration_fm_s2": 8.539545012410058e-13,
+        "chi2_calibration": 19558295.542178493
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.521512108150662e-05,
+          0.1,
+          0.015057076969302178
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": -3.3881317890172014e-21,
+        "microscope_eta": -0.0,
+        "clock_k_E3_E2": -3.5455675984913184e-22,
+        "clock_annual_E3_E2": -5.850186537510675e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 8.287540014591611e-26,
+        "solar_BeAl_fraction": 5.923375491561716e-26,
+        "solar_BeAl_acceleration_fm_s2": 3.4947915400214124e-13,
+        "chi2_calibration": 1.8853540100741053
+      }
+    },
+    {
+      "core": 0.3,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.00026788096394755504,
+        0.0018879510774041405
+      ],
+      "Sun_Q": [
+        0.00045545336353359735,
+        0.0006355418947404017
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005506380043714823,
+        1.0,
+        0.14976926246028963
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -4.809056672636833e-07,
+        "alpha_Sun": -9.751816512875076e-08,
+        "microscope_eta": 1.2142203571088047e-11,
+        "clock_k_E3_E2": -9.943157235502946e-09,
+        "clock_annual_E3_E2": -1.640620943857986e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0000000000000469,
+        "solar_BeTi_fraction": 2.3263134375869856e-12,
+        "solar_BeAl_fraction": 1.666356569625815e-12,
+        "solar_BeAl_acceleration_fm_s2": 9.831503760792309,
+        "chi2_calibration": 19558295.233508207
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.5063800437148235e-05,
+          0.1,
+          0.014976926246028963
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": 3.3881317890172014e-21,
+        "microscope_eta": -0.0,
+        "clock_k_E3_E2": 3.5266940941576067e-22,
+        "clock_annual_E3_E2": 5.819045255360051e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -8.244983985583302e-26,
+        "solar_BeAl_fraction": -5.895601057585755e-26,
+        "solar_BeAl_acceleration_fm_s2": -3.4784046239755953e-13,
+        "chi2_calibration": 1.8853540100741288
+      }
+    },
+    {
+      "core": 0.3,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.00026788096394755504,
+        0.0018879510774041405
+      ],
+      "Sun_Q": [
+        0.00046000845150651184,
+        0.0006404634704426354
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005586472169441478,
+        1.0,
+        0.15401154006404927
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -4.809056672636833e-07,
+        "alpha_Sun": 4.30194115702998e-07,
+        "microscope_eta": 1.2142203571088047e-11,
+        "clock_k_E3_E2": 4.386349690415815e-08,
+        "clock_annual_E3_E2": 7.237476989186095e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 0.9999999999997932,
+        "solar_BeTi_fraction": -1.0262358308420818e-11,
+        "solar_BeAl_fraction": -7.351007783727195e-12,
+        "solar_BeAl_acceleration_fm_s2": -43.370945923990455,
+        "chi2_calibration": 19558297.30192293
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.586472169441478e-05,
+          0.1,
+          0.015401154006404927
+        ],
+        "alpha_Earth": 3.3881317890172014e-21,
+        "alpha_Sun": 3.3881317890172014e-21,
+        "microscope_eta": -9.033209815246963e-26,
+        "clock_k_E3_E2": 3.6265891936271865e-22,
+        "clock_annual_E3_E2": 5.983872169484858e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -8.4702277281151e-26,
+        "solar_BeAl_fraction": -6.04260766513897e-26,
+        "solar_BeAl_acceleration_fm_s2": -3.5651385224319923e-13,
+        "chi2_calibration": 1.8853540100381878
+      }
+    },
+    {
+      "core": 0.3,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.00026788096394755504,
+        0.0018879510774041405
+      ],
+      "Sun_Q": [
+        0.0004600987999779235,
+        0.000634501373561603
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005574002558005411,
+        1.0,
+        0.15335105624191486
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -4.809056672636833e-07,
+        "alpha_Sun": 3.5176019469742404e-07,
+        "microscope_eta": 1.2142203571088047e-11,
+        "clock_k_E3_E2": 3.586620934110657e-08,
+        "clock_annual_E3_E2": 5.917924541282584e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 0.9999999999998308,
+        "solar_BeTi_fraction": -8.39130296035228e-12,
+        "solar_BeAl_fraction": -6.010756155975101e-12,
+        "solar_BeAl_acceleration_fm_s2": -35.463461320253096,
+        "chi2_calibration": 19558296.93270465
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.574002558005411e-05,
+          0.1,
+          0.015335105624191487
+        ],
+        "alpha_Earth": 3.3881317890172014e-21,
+        "alpha_Sun": 3.3881317890172014e-21,
+        "microscope_eta": -8.98992393884607e-26,
+        "clock_k_E3_E2": 3.6110364403015457e-22,
+        "clock_annual_E3_E2": 5.95821012649755e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -8.435159337529954e-26,
+        "solar_BeAl_fraction": -6.019720080896555e-26,
+        "solar_BeAl_acceleration_fm_s2": -3.5516348477289676e-13,
+        "chi2_calibration": 1.8853540100383601
+      }
+    },
+    {
+      "core": 0.32,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.00026798654648764627,
+        0.001920011170452005
+      ],
+      "Sun_Q": [
+        0.00045534103181485506,
+        0.0006429546664175538
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005496676651586671,
+        1.0,
+        0.14670806243523468
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -6.776263578034403e-21,
+        "alpha_Sun": -8.470329472543003e-21,
+        "microscope_eta": 1.7109129173580296e-25,
+        "clock_k_E3_E2": -8.63652609447869e-22,
+        "clock_annual_E3_E2": -1.4250268055889838e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 2.0206123901891773e-25,
+        "solar_BeAl_fraction": 1.4473805105779758e-25,
+        "solar_BeAl_acceleration_fm_s2": 8.539545012410058e-13,
+        "chi2_calibration": 1.8853540101421626
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -6.776263578034403e-21,
+        "alpha_Sun": -8.470329472543003e-21,
+        "microscope_eta": 1.7109129173580296e-25,
+        "clock_k_E3_E2": -8.63652609447869e-22,
+        "clock_annual_E3_E2": -1.4250268055889838e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 2.0206123901891773e-25,
+        "solar_BeAl_fraction": 1.4473805105779758e-25,
+        "solar_BeAl_acceleration_fm_s2": 8.539545012410058e-13,
+        "chi2_calibration": 1.8853540101421626
+      }
+    },
+    {
+      "core": 0.32,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.00026798654648764627,
+        0.001920011170452005
+      ],
+      "Sun_Q": [
+        0.00045545336353359735,
+        0.0006355418947404017
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005482099738778425,
+        1.0,
+        0.14594885264351176
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -6.776263578034403e-21,
+        "alpha_Sun": -9.751816512875076e-08,
+        "microscope_eta": 1.7109129173580296e-25,
+        "clock_k_E3_E2": -9.943157235503413e-09,
+        "clock_annual_E3_E2": -1.6406209438580631e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 2.3263134375870947e-12,
+        "solar_BeAl_fraction": 1.6663565696258932e-12,
+        "solar_BeAl_acceleration_fm_s2": 9.83150376079277,
+        "chi2_calibration": 1.576683723773879
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.4820997387784254e-05,
+          0.1,
+          0.014594885264351177
+        ],
+        "alpha_Earth": -3.3881317890172014e-21,
+        "alpha_Sun": 1.6940658945086007e-21,
+        "microscope_eta": 8.504808544165718e-26,
+        "clock_k_E3_E2": 1.7183664665619413e-22,
+        "clock_annual_E3_E2": 2.8353046698272034e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -4.0210696572549996e-26,
+        "solar_BeAl_fraction": -2.881606665603705e-26,
+        "solar_BeAl_acceleration_fm_s2": -1.700147932706186e-13,
+        "chi2_calibration": 1.8853540101079616
+      }
+    },
+    {
+      "core": 0.32,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.00026798654648764627,
+        0.001920011170452005
+      ],
+      "Sun_Q": [
+        0.00046000845150651184,
+        0.0006404634704426354
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005561228954529846,
+        1.0,
+        0.1500701419864687
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -6.776263578034403e-21,
+        "alpha_Sun": 4.30194115702998e-07,
+        "microscope_eta": 1.7109129173580296e-25,
+        "clock_k_E3_E2": 4.386349690414908e-08,
+        "clock_annual_E3_E2": 7.237476989184597e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -1.0262358308418695e-11,
+        "solar_BeAl_fraction": -7.351007783725675e-12,
+        "solar_BeAl_acceleration_fm_s2": -43.37094592398148,
+        "chi2_calibration": 3.645098445977107
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.561228954529846e-05,
+          0.1,
+          0.01500701419864687
+        ],
+        "alpha_Earth": 6.776263578034403e-21,
+        "alpha_Sun": 6.776263578034403e-21,
+        "microscope_eta": -1.7549807824676976e-25,
+        "clock_k_E3_E2": 7.067558119188847e-22,
+        "clock_annual_E3_E2": 1.1661470896661597e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -1.6521918369918308e-25,
+        "solar_BeAl_fraction": -1.1812054724339098e-25,
+        "solar_BeAl_acceleration_fm_s2": -6.969112287360068e-13,
+        "chi2_calibration": 1.8853540100043134
+      }
+    },
+    {
+      "core": 0.32,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.00026798654648764627,
+        0.001920011170452005
+      ],
+      "Sun_Q": [
+        0.0004600987999779235,
+        0.000634501373561603
+      ],
+      "retuned_null_direction_x1": [
+        -0.000554921483564199,
+        1.0,
+        0.1494444102681981
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -6.776263578034403e-21,
+        "alpha_Sun": 3.5176019469742404e-07,
+        "microscope_eta": 1.7109129173580296e-25,
+        "clock_k_E3_E2": 3.58662093411005e-08,
+        "clock_annual_E3_E2": 5.917924541281583e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -8.39130296035086e-12,
+        "solar_BeAl_fraction": -6.010756155974084e-12,
+        "solar_BeAl_acceleration_fm_s2": -35.46346132024709,
+        "chi2_calibration": 3.2758801671118554
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.54921483564199e-05,
+          0.1,
+          0.014944441026819811
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": -1.6940658945086007e-21,
+        "microscope_eta": -0.0,
+        "clock_k_E3_E2": -1.759522315994122e-22,
+        "clock_annual_E3_E2": -2.9032118213903014e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 4.1138679787182314e-26,
+        "solar_BeAl_fraction": 2.9421720170385695e-26,
+        "solar_BeAl_acceleration_fm_s2": 1.735881490052756e-13,
+        "chi2_calibration": 1.8853540100741115
+      }
+    },
+    {
+      "core": 0.32,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.00026752450037030443,
+        0.0019079094681542443
+      ],
+      "Sun_Q": [
+        0.00045534103181485506,
+        0.0006429546664175538
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005508049291468719,
+        1.0,
+        0.14847687141603183
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -2.2374634136143864e-07,
+        "alpha_Sun": -8.470329472543003e-21,
+        "microscope_eta": 5.649285941136509e-12,
+        "clock_k_E3_E2": -8.63652609447869e-22,
+        "clock_annual_E3_E2": -1.4250268055889838e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 2.0206123901891773e-25,
+        "solar_BeAl_fraction": 1.4473805105779758e-25,
+        "solar_BeAl_acceleration_fm_s2": 8.539545012410058e-13,
+        "chi2_calibration": 4234932.85386144
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.508049291468719e-05,
+          0.1,
+          0.014847687141603184
+        ],
+        "alpha_Earth": -3.3881317890172014e-21,
+        "alpha_Sun": -6.776263578034403e-21,
+        "microscope_eta": 8.670486346496767e-26,
+        "clock_k_E3_E2": -6.992522990900829e-22,
+        "clock_annual_E3_E2": -1.153766293498637e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 1.635272895815849e-25,
+        "solar_BeAl_fraction": 1.170163229405461e-25,
+        "solar_BeAl_acceleration_fm_s2": 6.90396305349222e-13,
+        "chi2_calibration": 1.8853540101085922
+      }
+    },
+    {
+      "core": 0.32,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.00026752450037030443,
+        0.0019079094681542443
+      ],
+      "Sun_Q": [
+        0.00045545336353359735,
+        0.0006355418947404017
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005493229875847296,
+        1.0,
+        0.14770013562909962
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -2.2374634136143864e-07,
+        "alpha_Sun": -9.751816512875076e-08,
+        "microscope_eta": 5.649285941136509e-12,
+        "clock_k_E3_E2": -9.943157235503196e-09,
+        "clock_annual_E3_E2": -1.6406209438580273e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0000000000000218,
+        "solar_BeTi_fraction": 2.326313437587044e-12,
+        "solar_BeAl_fraction": 1.6663565696258569e-12,
+        "solar_BeAl_acceleration_fm_s2": 9.831503760792556,
+        "chi2_calibration": 4234932.545191154
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.493229875847296e-05,
+          0.1,
+          0.014770013562909962
+        ],
+        "alpha_Earth": 6.776263578034403e-21,
+        "alpha_Sun": 8.470329472543003e-21,
+        "microscope_eta": -1.7239163418814355e-25,
+        "clock_k_E3_E2": 8.694928242828442e-22,
+        "clock_annual_E3_E2": 1.434663160066693e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -2.0337809225156322e-25,
+        "solar_BeAl_fraction": -1.455975027975029e-25,
+        "solar_BeAl_acceleration_fm_s2": -8.590252665052671e-13,
+        "chi2_calibration": 1.885354010005555
+      }
+    },
+    {
+      "core": 0.32,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.00026752450037030443,
+        0.0019079094681542443
+      ],
+      "Sun_Q": [
+        0.00046000845150651184,
+        0.0006404634704426354
+      ],
+      "retuned_null_direction_x1": [
+        -0.00055727408615429,
+        1.0,
+        0.15186757580499669
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -2.2374634136143864e-07,
+        "alpha_Sun": 4.30194115702998e-07,
+        "microscope_eta": 5.649285941136509e-12,
+        "clock_k_E3_E2": 4.38634969041533e-08,
+        "clock_annual_E3_E2": 7.237476989185295e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 0.9999999999999037,
+        "solar_BeTi_fraction": -1.0262358308419682e-11,
+        "solar_BeAl_fraction": -7.351007783726382e-12,
+        "solar_BeAl_acceleration_fm_s2": -43.37094592398566,
+        "chi2_calibration": 4234934.613605876
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.5727408615429006e-05,
+          0.1,
+          0.01518675758049967
+        ],
+        "alpha_Earth": 3.3881317890172014e-21,
+        "alpha_Sun": -1.6940658945086007e-21,
+        "microscope_eta": -8.892701647120483e-26,
+        "clock_k_E3_E2": -1.788052080537964e-22,
+        "clock_annual_E3_E2": -2.9502859328876404e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 4.178196969564903e-26,
+        "solar_BeAl_fraction": 2.984156698190615e-26,
+        "solar_BeAl_acceleration_fm_s2": 1.7606524519324628e-13,
+        "chi2_calibration": 1.8853540100387287
+      }
+    },
+    {
+      "core": 0.32,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.00026752450037030443,
+        0.0019079094681542443
+      ],
+      "Sun_Q": [
+        0.0004600987999779235,
+        0.000634501373561603
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005560528449793303,
+        1.0,
+        0.15122748192457733
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": -2.2374634136143864e-07,
+        "alpha_Sun": 3.5176019469742404e-07,
+        "microscope_eta": 5.649285941136509e-12,
+        "clock_k_E3_E2": 3.5866209341103327e-08,
+        "clock_annual_E3_E2": 5.917924541282049e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 0.9999999999999213,
+        "solar_BeTi_fraction": -8.391302960351521e-12,
+        "solar_BeAl_fraction": -6.0107561559745575e-12,
+        "solar_BeAl_acceleration_fm_s2": -35.46346132024989,
+        "chi2_calibration": 4234934.244387597
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.560528449793304e-05,
+          0.1,
+          0.015122748192457734
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": -3.3881317890172014e-21,
+        "microscope_eta": -0.0,
+        "clock_k_E3_E2": -3.561031540227709e-22,
+        "clock_annual_E3_E2": -5.875702041375719e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 8.322408152563273e-26,
+        "solar_BeAl_fraction": 5.946132379798856e-26,
+        "solar_BeAl_acceleration_fm_s2": 3.5082181040813253e-13,
+        "chi2_calibration": 1.8853540100741053
+      }
+    },
+    {
+      "core": 0.34,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.0002676164933187091,
+        0.0019396136287815864
+      ],
+      "Sun_Q": [
+        0.00045534103181485506,
+        0.0006429546664175538
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005484251591995337,
+        1.0,
+        0.14477556855342424
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": 2.5057855115630934e-07,
+        "alpha_Sun": -8.470329472543003e-21,
+        "microscope_eta": -6.326762160996605e-12,
+        "clock_k_E3_E2": -8.63652609447869e-22,
+        "clock_annual_E3_E2": -1.4250268055889838e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 2.0206123901891773e-25,
+        "solar_BeAl_fraction": 1.4473805105779758e-25,
+        "solar_BeAl_acceleration_fm_s2": 8.539545012410058e-13,
+        "chi2_calibration": 5306227.237520515
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.484251591995337e-05,
+          0.1,
+          0.014477556855342424
+        ],
+        "alpha_Earth": -6.776263578034403e-21,
+        "alpha_Sun": -1.0164395367051604e-20,
+        "microscope_eta": 1.6855830944281634e-25,
+        "clock_k_E3_E2": -1.0227315021953477e-21,
+        "clock_annual_E3_E2": -1.6875069786223236e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 2.39395313763213e-25,
+        "solar_BeAl_fraction": 1.7167667414345193e-25,
+        "solar_BeAl_acceleration_fm_s2": 1.0128923774463664e-12,
+        "chi2_calibration": 1.88535401014115
+      }
+    },
+    {
+      "core": 0.34,
+      "mantle": "SiO2",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.0002676164933187091,
+        0.0019396136287815864
+      ],
+      "Sun_Q": [
+        0.00045545336353359735,
+        0.0006355418947404017
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005469960273934574,
+        1.0,
+        0.1440387559300906
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": 2.5057855115630934e-07,
+        "alpha_Sun": -9.751816512875076e-08,
+        "microscope_eta": -6.326762160996605e-12,
+        "clock_k_E3_E2": -9.943157235503656e-09,
+        "clock_annual_E3_E2": -1.6406209438581032e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 0.9999999999999756,
+        "solar_BeTi_fraction": 2.3263134375871516e-12,
+        "solar_BeAl_fraction": 1.666356569625934e-12,
+        "solar_BeAl_acceleration_fm_s2": 9.83150376079301,
+        "chi2_calibration": 5306226.928850229
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.4699602739345745e-05,
+          0.1,
+          0.014403875593009062
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": 1.6940658945086007e-21,
+        "microscope_eta": -0.0,
+        "clock_k_E3_E2": 1.695877450164874e-22,
+        "clock_annual_E3_E2": 2.7981977927720423e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -3.970361361792749e-26,
+        "solar_BeAl_fraction": -2.848511608635989e-26,
+        "solar_BeAl_acceleration_fm_s2": -1.6806218490952336e-13,
+        "chi2_calibration": 1.8853540100741226
+      }
+    },
+    {
+      "core": 0.34,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.0002676164933187091,
+        0.0019396136287815864
+      ],
+      "Sun_Q": [
+        0.00046000845150651184,
+        0.0006404634704426354
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005548550867744161,
+        1.0,
+        0.1480906244385087
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": 2.5057855115630934e-07,
+        "alpha_Sun": 4.30194115702998e-07,
+        "microscope_eta": -6.326762160996605e-12,
+        "clock_k_E3_E2": 4.3863496904144355e-08,
+        "clock_annual_E3_E2": 7.237476989183818e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0000000000001077,
+        "solar_BeTi_fraction": -1.026235830841759e-11,
+        "solar_BeAl_fraction": -7.351007783724883e-12,
+        "solar_BeAl_acceleration_fm_s2": -43.370945923976805,
+        "chi2_calibration": 5306228.9972649515
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.5485508677441614e-05,
+          0.1,
+          0.01480906244385087
+        ],
+        "alpha_Earth": -6.776263578034403e-21,
+        "alpha_Sun": -5.082197683525802e-21,
+        "microscope_eta": 1.7290346051222792e-25,
+        "clock_k_E3_E2": -5.2307495078892855e-22,
+        "clock_annual_E3_E2": -8.630736688017321e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 1.2233785041914187e-25,
+        "solar_BeAl_fraction": 8.756147437567217e-26,
+        "solar_BeAl_acceleration_fm_s2": 5.166126988164658e-13,
+        "chi2_calibration": 1.8853540101428943
+      }
+    },
+    {
+      "core": 0.34,
+      "mantle": "SiO2",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.0002676164933187091,
+        0.0019396136287815864
+      ],
+      "Sun_Q": [
+        0.0004600987999779235,
+        0.000634501373561603
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005536771779857154,
+        1.0,
+        0.14748333401157937
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": 2.5057855115630934e-07,
+        "alpha_Sun": 3.5176019469742404e-07,
+        "microscope_eta": -6.326762160996605e-12,
+        "clock_k_E3_E2": 3.586620934109734e-08,
+        "clock_annual_E3_E2": 5.917924541281061e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0000000000000882,
+        "solar_BeTi_fraction": -8.39130296035012e-12,
+        "solar_BeAl_fraction": -6.010756155973554e-12,
+        "solar_BeAl_acceleration_fm_s2": -35.46346132024397,
+        "chi2_calibration": 5306228.628046672
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.5367717798571544e-05,
+          0.1,
+          0.014748333401157937
+        ],
+        "alpha_Earth": -6.776263578034403e-21,
+        "alpha_Sun": -1.1858461261560205e-20,
+        "microscope_eta": 1.7210746528937568e-25,
+        "clock_k_E3_E2": -1.2155031551559308e-21,
+        "clock_annual_E3_E2": -2.005580206007286e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 2.843264412627709e-25,
+        "solar_BeAl_fraction": 2.035735568477783e-25,
+        "solar_BeAl_acceleration_fm_s2": 1.201083985401892e-12,
+        "chi2_calibration": 1.8853540101425552
+      }
+    },
+    {
+      "core": 0.34,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.0002671680367930538,
+        0.0019278678589043485
+      ],
+      "Sun_Q": [
+        0.00045534103181485506,
+        0.0006429546664175538
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005495004707173999,
+        1.0,
+        0.14644802164231427
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": 3.341298454080942e-08,
+        "alpha_Sun": -8.470329472543003e-21,
+        "microscope_eta": -8.436316887618311e-13,
+        "clock_k_E3_E2": -8.63652609447869e-22,
+        "clock_annual_E3_E2": -1.4250268055889838e-31,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": 2.0206123901891773e-25,
+        "solar_BeAl_fraction": 1.4473805105779758e-25,
+        "solar_BeAl_acceleration_fm_s2": 8.539545012410058e-13,
+        "chi2_calibration": 94058.05660292963
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.4950047071739993e-05,
+          0.1,
+          0.014644802164231427
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": 0.0,
+        "microscope_eta": -0.0,
+        "clock_k_E3_E2": 0.0,
+        "clock_annual_E3_E2": 0.0,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -0.0,
+        "solar_BeAl_fraction": -0.0,
+        "solar_BeAl_acceleration_fm_s2": -0.0,
+        "chi2_calibration": 1.885354010074117
+      }
+    },
+    {
+      "core": 0.34,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05op.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.0002671680367930538,
+        0.0019278678589043485
+      ],
+      "Sun_Q": [
+        0.00045545336353359735,
+        0.0006355418947404017
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005480485884433709,
+        1.0,
+        0.14569491905422813
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": 3.341298454080942e-08,
+        "alpha_Sun": -9.751816512875076e-08,
+        "microscope_eta": -8.436316887618311e-13,
+        "clock_k_E3_E2": -9.943157235503444e-09,
+        "clock_annual_E3_E2": -1.6406209438580683e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 0.9999999999999968,
+        "solar_BeTi_fraction": 2.3263134375871023e-12,
+        "solar_BeAl_fraction": 1.6663565696258987e-12,
+        "solar_BeAl_acceleration_fm_s2": 9.831503760792803,
+        "chi2_calibration": 94057.74793264327
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.48048588443371e-05,
+          0.1,
+          0.014569491905422813
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": 1.6940658945086007e-21,
+        "microscope_eta": -0.0,
+        "clock_k_E3_E2": 1.715376713942066e-22,
+        "clock_annual_E3_E2": 2.830371578004409e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -4.0143283548996226e-26,
+        "solar_BeAl_fraction": -2.8772069163426814e-26,
+        "solar_BeAl_acceleration_fm_s2": -1.697552080642182e-13,
+        "chi2_calibration": 1.8853540100741226
+      }
+    },
+    {
+      "core": 0.34,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "Fe",
+      "Earth_Q": [
+        0.0002671680367930538,
+        0.0019278678589043485
+      ],
+      "Sun_Q": [
+        0.00046000845150651184,
+        0.0006404634704426354
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005559435301468402,
+        1.0,
+        0.14979008650411557
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": 3.341298454080942e-08,
+        "alpha_Sun": 4.30194115702998e-07,
+        "microscope_eta": -8.436316887618311e-13,
+        "clock_k_E3_E2": 4.3863496904148445e-08,
+        "clock_annual_E3_E2": 7.237476989184493e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0000000000000144,
+        "solar_BeTi_fraction": -1.0262358308418546e-11,
+        "solar_BeAl_fraction": -7.351007783725568e-12,
+        "solar_BeAl_acceleration_fm_s2": -43.370945923980855,
+        "chi2_calibration": 94059.81634736547
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.559435301468402e-05,
+          0.1,
+          0.014979008650411558
+        ],
+        "alpha_Earth": 6.776263578034403e-21,
+        "alpha_Sun": 5.082197683525802e-21,
+        "microscope_eta": -1.7513100045959988e-25,
+        "clock_k_E3_E2": 5.290776672992102e-22,
+        "clock_annual_E3_E2": 8.729781510436968e-32,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -1.236913445738226e-25,
+        "solar_BeAl_fraction": -8.844484002120006e-26,
+        "solar_BeAl_acceleration_fm_s2": -5.218245561250804e-13,
+        "chi2_calibration": 1.8853540100044537
+      }
+    },
+    {
+      "core": 0.34,
+      "mantle": "MgSiO3",
+      "solar_file": "bs05_agsop.dat",
+      "solar_residual": "O",
+      "Earth_Q": [
+        0.0002671680367930538,
+        0.0019278678589043485
+      ],
+      "Sun_Q": [
+        0.0004600987999779235,
+        0.000634501373561603
+      ],
+      "retuned_null_direction_x1": [
+        -0.0005547470188937306,
+        1.0,
+        0.14916944684378655
+      ],
+      "fixed_nominal_t_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.496676651586671e-05,
+          0.1,
+          0.014670806243523469
+        ],
+        "alpha_Earth": 3.341298454080942e-08,
+        "alpha_Sun": 3.5176019469742404e-07,
+        "microscope_eta": -8.436316887618311e-13,
+        "clock_k_E3_E2": 3.586620934110008e-08,
+        "clock_annual_E3_E2": 5.917924541281513e-18,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0000000000000118,
+        "solar_BeTi_fraction": -8.391302960350762e-12,
+        "solar_BeAl_fraction": -6.010756155974013e-12,
+        "solar_BeAl_acceleration_fm_s2": -35.46346132024668,
+        "chi2_calibration": 94059.4471290866
+      },
+      "retuned_point_one_forward": {
+        "parameters_g_x_e": [
+          -5.5474701889373063e-05,
+          0.1,
+          0.014916944684378656
+        ],
+        "alpha_Earth": 0.0,
+        "alpha_Sun": 0.0,
+        "microscope_eta": -0.0,
+        "clock_k_E3_E2": 0.0,
+        "clock_annual_E3_E2": 0.0,
+        "clock_k_optical_hyperfine_e0": null,
+        "clock_annual_optical_hyperfine_e0": null,
+        "Sun_Earth_GM_conversion": 1.0,
+        "solar_BeTi_fraction": -0.0,
+        "solar_BeAl_fraction": -0.0,
+        "solar_BeAl_acceleration_fm_s2": -0.0,
+        "chi2_calibration": 1.885354010074117
+      }
+    }
+  ],
+  "fixed_vector_error_tolerances": {
+    "fixed_nominal_t": 0.1,
+    "alpha_E_error_for_one_MICROSCOPE_sigma": 1.0875470588146378e-10,
+    "alpha_S_error_for_one_optical_clock_sigma": 7.551825378062262e-07,
+    "sensitivity_error_to_source_charge_error": "delta_alpha=d_x delta_Qme+d_e delta_Qem"
+  },
+  "checks": [
+    "Lifted and direct rational maps agree for every witness.",
+    "Both source rows annihilate every nominal witness.",
+    "A retuned null vector exists for all 24 source stress variants."
+  ],
+  "interpretation": [
+    "The electron-only Earth-null branch remains constrained by the held-out Sun result.",
+    "This distinct double-source-null branch is not removed by those source-mediated summaries.",
+    "A single fixed numerical vector is not null under arbitrary source coefficient errors.",
+    "Intrinsic clock response is nonzero, but a noise prediction additionally requires a scalar-state covariance and sensor transfer function.",
+    "A third source with a linearly independent charge row or an independently calibrated scalar fluctuation probe can test this branch."
+  ]
+}

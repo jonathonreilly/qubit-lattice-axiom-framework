@@ -1,0 +1,67 @@
+{
+  "frozen_at_utc": "2026-10-12T17:09:50.757116+00:00",
+  "status": "conditional exploratory model; no blind claim",
+  "parameter_order": [
+    "g",
+    "x",
+    "e"
+  ],
+  "parameter_definitions": [
+    "d_g",
+    "d_me-d_g",
+    "d_e"
+  ],
+  "restrictions": {
+    "d_hatm-d_g": 0,
+    "d_deltam-d_g": 0,
+    "scalar_mass": 0
+  },
+  "coupling_box": {
+    "g": [
+      -0.001,
+      0.001
+    ],
+    "x": [
+      -0.1,
+      0.1
+    ],
+    "e": [
+      -0.1,
+      0.1
+    ]
+  },
+  "box_role": "declared weak-coupling exploration domain, not empirical prior or derived bound",
+  "charge": "alpha_B=g+Qme_B*x+Qem_B*e",
+  "microscope_forward": "eta=alpha_E*(alpha_TiAlV-alpha_PtRh)/(1+alpha_E*(alpha_TiAlV+alpha_PtRh)/2)",
+  "orbital_normalization": "D=1+alpha_E*alpha_Sun; Earth is the explicit ephemeris reference body",
+  "clock_forward": "k_E3E2=6.95*e*alpha_Sun/D; fractional annual cosine amplitude is 1.65e-10*k",
+  "holdout_forward": "delta_a_BeAl=5.9e-3*alpha_Sun*(alpha_Be-alpha_Al)/D in m/s^2",
+  "holdout_clock_electron_branch": "k_optical_hyperfine=alpha_Sun*x/D at e=0; annual fractional amplitude is 1.65e-10*k",
+  "calibration_summary": {
+    "eta_mean": -1.5e-15,
+    "eta_stat_sigma": 2.3e-15,
+    "eta_additive_systematic_sigma": 1.5e-15,
+    "k_E3E2_mean": -9.7e-08,
+    "k_E3E2_sigma": 7.7e-08,
+    "acceptance": "profiled independent Gaussian summary residual sum <=5.991464547107979; a joint two-observable acceptance set, not a parameter-posterior or 3-parameter Wilks region"
+  },
+  "heldout_exposure": {
+    "Ross_2602.02815v1": "Discovered/read after protocol freeze; central direct amplitude 0.66(0.61) fm/s^2 was exposed before this freeze. Excluded from all calibration fitting. Additional prospective response/estimator calculations are not blind observations.",
+    "E3Cs_2010.06620v2": "Table II value already exposed before protocol freeze; separate ratio sharing E3 system; no independence assumption for combination."
+  },
+  "witness_grid_unchanged": [
+    0,
+    0.001,
+    0.01,
+    0.03,
+    0.1
+  ],
+  "witness_rule": "e=0, x=t, g=-Qme_E*t for every t in full [-0.1,0.1] interval",
+  "source_nuisance": "BS05(OP) and BS05(AGS,OP) mass integrals, 0.32 Fe+0.68 SiO2 Earth baseline; source variants are sensitivity calculations not probabilistic errors; generic algebra allows arbitrary fixed effective charges",
+  "uncomputed_before_freeze": [
+    "numeric witness responses",
+    "heldout residuals",
+    "region forward envelope",
+    "Ross public-data reproduction"
+  ]
+}

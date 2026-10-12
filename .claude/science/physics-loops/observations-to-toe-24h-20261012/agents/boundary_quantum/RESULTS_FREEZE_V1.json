@@ -1,0 +1,81 @@
+{
+  "created_at": "2026-10-12T18:10:26.548778+00:00",
+  "role": "Boundary pair candidate V1 report and calculations; exploratory conditional model-development test",
+  "files": [
+    {
+      "name": "CALIBRATION_AND_PREDICTIONS_FREEZE.json",
+      "sha256": "0e4dc14ae089be908dcfcdc26c07dffa7c3bea57c50cc13b32b7d3a6ef2cf46e",
+      "bytes": 67209
+    },
+    {
+      "name": "DATA_SPLIT_PRE_VALUE_FREEZE.json",
+      "sha256": "8e1343470e4593d4545595be931b775e19d85d430a5d5bdea976adf597863bd9",
+      "bytes": 2303
+    },
+    {
+      "name": "HELDOUT_RESULTS.json",
+      "sha256": "a24c006abbe0805fc5630f6391dbc0243605e63f11d2c5d93226f1137875092a",
+      "bytes": 8508
+    },
+    {
+      "name": "MODEL_PRE_DATA_FREEZE.json",
+      "sha256": "882c0b773908d0efe910959719e391a55d3fc656af54fb133fccd600b93740b3",
+      "bytes": 1373
+    },
+    {
+      "name": "PAIR_LAW_DERIVATION.md",
+      "sha256": "0b409734f126ba2521f16cf58ba008f62135afdbb43729f8d7d12d5584dcc654",
+      "bytes": 6048
+    },
+    {
+      "name": "POSTFIT_SENSITIVITY.json",
+      "sha256": "7e01da931217099aa34171e1c37d3bd9bb977f00c6d5ce3da86067f5f16f625d",
+      "bytes": 2087
+    },
+    {
+      "name": "PREDICTION_FREEZE_RECEIPT.json",
+      "sha256": "1a33cee02068a55f981f72db464467856923df303c150190c37086e690244609",
+      "bytes": 288
+    },
+    {
+      "name": "RESULTS.md",
+      "sha256": "0c70a805c9527848d2a491b254ddd1ee488ffbf5e64904defa09b401276df5fe",
+      "bytes": 11217
+    },
+    {
+      "name": "SOURCES.json",
+      "sha256": "7dc991533a86452b5216f89298cd31903e9b1e4d54c6ab92d9b1fbd1a60070b3",
+      "bytes": 1937
+    },
+    {
+      "name": "SOURCE_DIAGNOSTICS_AND_PROSPECTIVE.json",
+      "sha256": "90f8d46dfae62989d7ff9f5382ef9ea54e1ba84bd27bea5b56db10776b98e659",
+      "bytes": 9874
+    },
+    {
+      "name": "SOURCE_MAP_CORRECTION_PREFIT.json",
+      "sha256": "2e2133a04527559ca684148630a6517f2a8a8f7f7b5d7ff9917cd6e5085cfeb9",
+      "bytes": 1759
+    },
+    {
+      "name": "boundary_pair.py",
+      "sha256": "5e94b5885edb4a917b675f1e5486d1a2ba29c975c58e157ff4aeacaae41afa1a",
+      "bytes": 11236
+    },
+    {
+      "name": "diagnostics_and_prospective.py",
+      "sha256": "5900eb1a6b398034a3bd2e0868bf370df3a42eea9a2cb6cc9cb47187260219e1",
+      "bytes": 5755
+    },
+    {
+      "name": "postfit_sensitivity.py",
+      "sha256": "f6792460431b929b2e8e7a83cd869aa58cf700c85be9f94fed2349ff01bec476",
+      "bytes": 2520
+    },
+    {
+      "name": "prospective_discriminator.png",
+      "sha256": "c89883dcb52fe00553eb29de2e7660a7c1499afb44cc0a613cdc516e68368197",
+      "bytes": 130572
+    }
+  ]
+}

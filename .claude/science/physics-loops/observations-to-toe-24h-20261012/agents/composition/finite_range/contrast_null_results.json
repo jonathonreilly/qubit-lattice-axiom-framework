@@ -1,0 +1,84 @@
+{
+  "created_at": "2026-10-12T17:45:04.883938+00:00",
+  "status": "additional exact conditional null family, developed after source-rank calculation",
+  "script_sha256": "ce196e9003dc1a3d2050786c315d30cef1f88962a6192c58a02d4337cf54c458",
+  "source_results_sha256": "ba879e6013fdb5d7f94a65f2188c86192575d71fd778877e9b319ce5618b4c69",
+  "construction": "x=.1; e=-DeltaQme_TiPt/DeltaQem_TiPt*x; g=-(WSun_me*x+WSun_em*e)/WSun_0",
+  "rows": [
+    {
+      "ell_m": "10000000.0",
+      "d_g_x_e": [
+        "-0.0000465742125900030241288306905868856614092318686",
+        "0.1",
+        "0.00161769981534389901495019508239193438945130038"
+      ],
+      "TiPt_test_contrast": "-3.38500586242646232857503887860854546455002569e-77",
+      "force_source_contractions": {
+        "Earth_surface": "-0.0000147802933310212040693801933126296596287221556",
+        "Earth_710km": "-0.0000143796721981293951802830631940891077709846387",
+        "Sun_1AU": "5.6722797440689339827615881132074461606915846e-80"
+      },
+      "Earth_surface_BeAl_scalar_acceleration_product": "0.0000000000552390238683476450317032139765513000703867368",
+      "Earth_710km_BeAl_scalar_acceleration_product": "0.0000000000537417653345451837157786543948001470432258262",
+      "Sun_annual_optical_coefficient": "6.37735189671868102102918031360070652288118348e-82"
+    },
+    {
+      "ell_m": "1000000000.0",
+      "d_g_x_e": [
+        "-0.0000465742125640253849667586409528403488763129061",
+        "0.1",
+        "0.00161769981534389901495019508239193438945130038"
+      ],
+      "TiPt_test_contrast": "-3.38500586242646232857503887860854546455002569e-77",
+      "force_source_contractions": {
+        "Earth_surface": "-0.0000166690056384635733558631896869069797650068461",
+        "Earth_710km": "-0.0000166688495950135843826505609140585031815195416",
+        "Sun_1AU": "-5.7384150629481841911807553097499113183975312e-78"
+      },
+      "Earth_surface_BeAl_scalar_acceleration_product": "0.0000000000622977893403616265347132317367879761763852128",
+      "Earth_710km_BeAl_scalar_acceleration_product": "0.0000000000622972061524867046606472690342132246584718724",
+      "Sun_annual_optical_coefficient": "-6.45170792645005871468668094855153442973763044e-80"
+    },
+    {
+      "ell_m": "100000000000.0",
+      "d_g_x_e": [
+        "-0.000046574211380817607783411538807543224739676664",
+        "0.1",
+        "0.00161769981534389901495019508239193438945130038"
+      ],
+      "TiPt_test_contrast": "-3.38500586242646232857503887860854546455002569e-77",
+      "force_source_contractions": {
+        "Earth_surface": "-0.0000166695549602557233808115389156687813155403776",
+        "Earth_710km": "-0.0000166695549443379797548280592446483591729709715",
+        "Sun_1AU": "-7.96294953681305891220632188480410071500596314e-77"
+      },
+      "Earth_surface_BeAl_scalar_acceleration_product": "0.0000000000622998423442437817068143794465491833469866463",
+      "Earth_710km_BeAl_scalar_acceleration_product": "0.0000000000622998422847537160908305236028741840026717534",
+      "Sun_annual_optical_coefficient": "-8.9527550867302137575995319592856053367712554e-79"
+    },
+    {
+      "ell_m": "10000000000000.0",
+      "d_g_x_e": [
+        "-0.000046574210826820823612899385915524394852642357",
+        "0.1",
+        "0.00161769981534389901495019508239193438945130038"
+      ],
+      "TiPt_test_contrast": "-3.38500586242646232857503887860854546455002569e-77",
+      "force_source_contractions": {
+        "Earth_surface": "-0.0000166695544621521750807399299234050670658894568",
+        "Earth_710km": "-0.0000166695544621505829881444018338036523503914039",
+        "Sun_1AU": "8.58439103200488115664266672455319658976557897e-77"
+      },
+      "Earth_surface_BeAl_scalar_acceleration_product": "0.0000000000622998404826600379182022515149762152794744593",
+      "Earth_710km_BeAl_scalar_acceleration_product": "0.0000000000622998404826540877222950827815148322901744569",
+      "Sun_annual_optical_coefficient": "9.65144261218331266750585866282782373830825659e-79"
+    }
+  ],
+  "meaning": [
+    "TiPt force numerators vanish at every Earth radius because their test contrast vanishes.",
+    "The Sun force-source contraction vanishes, so solar annual E3E2 and solar BeAl vanish too.",
+    "An Earth BeAl comparison supplies a nonzero independent product in this model.",
+    "A purely universal d=(g,0,0) is also invisible to all such relative composition/clock-ratio channels; distance-dependent gravity can test it.",
+    "No empirical exclusion is inferred from the printed point-test products."
+  ]
+}

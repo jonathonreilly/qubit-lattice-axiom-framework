@@ -1,0 +1,16 @@
+{
+  "h_J_s": 6.62607015e-34,
+  "c_m_s": 299792458.0,
+  "elementary_charge_J_per_eV": 1.602176634e-19,
+  "hbar_c_eV_m": 1.9732698045930246e-07,
+  "selected_mu_per_m": 6.42760036943869e-12,
+  "selected_rest_energy_eV": 1.2683389725004337e-18,
+  "reported_GW170817_rest_energy_bound_eV": 9.51e-22,
+  "selected_to_reported_mass_ratio": 1333.6897712938314,
+  "inverse_length_corresponding_to_reported_bound_per_m": 4.819411911064732e-15,
+  "range_corresponding_to_reported_bound_m": 207494196066564.1,
+  "comparison_status": "conditional response-class comparison, no new likelihood evaluation",
+  "published_dispersion_samples_located": false,
+  "public_release_scope": "post-Newtonian binary dynamics posterior samples only per README and notebook",
+  "source_pdf_sha256": "d86fc8bc15abdac47b75960218aefd247f7adeddc00237e9c329b492962584b7"
+}

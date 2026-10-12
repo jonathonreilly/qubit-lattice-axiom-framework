@@ -1,0 +1,17 @@
+{
+  "frozen_at": "2026-10-12T17:41:52.806744+00:00",
+  "role": "post-initial-calculation derived-response extension, no blind claim",
+  "observable": "change in locally measured Yb E3/E2 ratio between frozen Earth surface and satellite positions",
+  "formula": "Delta ln R=6.95*e*(GM_E/c^2)*[WP(ra).d/ra-WP(rs).d/rs]",
+  "GM_E_m3_s2": 398600441800000.0,
+  "c_m_s": 299792458,
+  "normalization_role": "supplied bare metric GM scale for theoretical response; not a reconstructed orbital calibration",
+  "vectors": "the same frozen and already specified pair-retuned vectors; no tuning to a clock measurement",
+  "additional_checks": [
+    "60 vs 80 decimal precision",
+    "determinant material-factor identity",
+    "large ell^-4 core fraction asymptotic",
+    "solar composition stress fixed vs retuned vectors"
+  ],
+  "prior_results_sha256": "ba879e6013fdb5d7f94a65f2188c86192575d71fd778877e9b319ce5618b4c69"
+}

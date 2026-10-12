@@ -1,0 +1,111 @@
+{
+  "frozen_at": "2026-10-12T17:34:18.714390+00:00",
+  "status": "new finite-range comparison model, not a refit of the massless model",
+  "gamma_measure": "dnu_ell(mu)=ell exp(-ell mu) dmu, mu>=0; s=1; normalized positive measure",
+  "composition_coupling_rule": "each mediator shares d=(g,x,e) and material q=(1,Qme,Qem); integrated scalar force uses the same fixed measure for all sources",
+  "ell_m": [
+    10000000.0,
+    1000000000.0,
+    100000000000.0,
+    10000000000000.0
+  ],
+  "Earth_radius_m": 6371000,
+  "Earth_core_radius_fraction": 0.55,
+  "Earth_core_mass_fraction": 0.32,
+  "Earth_mantle_mass_fraction": 0.68,
+  "Earth_materials": [
+    "Fe",
+    "SiO2"
+  ],
+  "Earth_density_model": "constant mass density within core and within mantle, separately normalized to the stated mass fractions",
+  "Earth_field_radii_m": [
+    6371000,
+    7081000
+  ],
+  "Earth_altitude_role": "710km representative satellite position supplied for comparison; not an orbit reconstruction",
+  "Sun_radius_m": 695700000,
+  "Sun_radius_role": "supplied nominal radius scale multiplying BS05 radial coordinate",
+  "Sun_field_radius_m": 149597870700,
+  "Sun_profiles": [
+    "bs05op.dat",
+    "bs05_agsop.dat"
+  ],
+  "Sun_residual_metals": [
+    "Fe",
+    "O"
+  ],
+  "source_integration": "mass-coordinate trapezoid with declared endpoint extension, same abundance/charge approximation as massless block",
+  "frozen_test_vectors": [
+    "massless nominal double-source-null vector from source_null_results.json, x=t=.1",
+    "massless electron-only Earth-null vector, x=t=.1",
+    "retune to null Earth satellite FORCE row and Sun 1AU FORCE row, normalize x=t=.1",
+    "test that retuned vector at Earth surface FORCE row",
+    "retune instead to Earth surface FORCE plus Sun FORCE, test satellite"
+  ],
+  "potential_and_force_both_recorded": true,
+  "annual_clock_rule": "annual modulation due to source-distance variation probes radial derivative of potential, hence FORCE row, not static potential row",
+  "rank_policy": "arbitrary precision determinant/third-row residual; report tiny magnitudes and conditioning, not an observational identification claim",
+  "empirical_role": "no exclusion or instrumental claim; return point-test scalar response normalized to bare metric GM/r^2. Full ephemeris, extended test, and fit transfer not supplied.",
+  "prior_artifacts": [
+    {
+      "file": "MODEL_AND_RESULTS.md",
+      "sha256": "88affe456e6e60e217d505c74dc15451c435876e29de0599ee68b76bf6c4043d"
+    },
+    {
+      "file": "MODEL_FREEZE.json",
+      "sha256": "786ec09b3620258aa0154f76ca75d673564027edc22fa81a8b549f7baa003d7c"
+    },
+    {
+      "file": "POST_FREEZE_CORRECTIONS.md",
+      "sha256": "26e0dab01d1dee27e59bcf07000c79675fa71032b6d3ed03baf9d77a50876021"
+    },
+    {
+      "file": "PROTOCOL.md",
+      "sha256": "8c1f24ecdae44bfc613248453f46bc1e417f7c92f69bcfb3c72d69385bdf7302"
+    },
+    {
+      "file": "V1_RESULTS_FREEZE.json",
+      "sha256": "e954971038790a70e83684ebb057e2d09fc9eeb7bcf9d24d2764f19f6a8d444e"
+    },
+    {
+      "file": "global_bounds.py",
+      "sha256": "12a78c6cba37431d346fa381072d22f798274702c7d8d65444040b52280f6925"
+    },
+    {
+      "file": "global_bounds_results.json",
+      "sha256": "ad925871742b72780f51c9775fcd1906f3557ffc89c51bdfa4c7bc02a7f9cb5f"
+    },
+    {
+      "file": "global_bounds_runner_v2_results.json",
+      "sha256": "68e7d92014fdf799c2c4a1bc3c0dc3ea2be0496aa56c6cb1432b0aeecddefae7"
+    },
+    {
+      "file": "joint_results.json",
+      "sha256": "2c387a13cd23099f547333e7fc6be89e0a002cbea01a54c5b8ef3385e2e9b25f"
+    },
+    {
+      "file": "joint_scalar.py",
+      "sha256": "f17c1dc303497f9ee52d99230ca6b61cc115790317beb8a414220963b78d5067"
+    },
+    {
+      "file": "ross_response.py",
+      "sha256": "5e5f2bf0f2f6a0ffd8d52ae5d4732ea85e5a61f11c3a729254caabbe4bf5259d"
+    },
+    {
+      "file": "ross_response_results.json",
+      "sha256": "26d6b63d9b258ca18767d79f9331d5719ed9a6b149691c78673ac1471f21101f"
+    },
+    {
+      "file": "run_v2.py",
+      "sha256": "ed7c130dba1d75769d97b53f2f32f204288f8cc6c7725024a6dcdef1ad4b8539"
+    },
+    {
+      "file": "source_null.py",
+      "sha256": "81a0359b4c8381c9fff85a2a28b62ef6ce170e15dbb42186f0c50aa2ece7ca34"
+    },
+    {
+      "file": "source_null_results.json",
+      "sha256": "3818268f4d7d7ab4f3b84506e314ae0465e5aba39c5f7e27968e1da4d1d08ef6"
+    }
+  ]
+}

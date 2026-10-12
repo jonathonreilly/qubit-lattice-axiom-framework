@@ -1,0 +1,46 @@
+{
+  "created_at": "2026-10-12T17:21:54.479494+00:00",
+  "rule": "Preserve these files unchanged; subsequent changes need new filenames/version. These are author calculations, independent review pending.",
+  "files": [
+    {
+      "path": "MODEL_FREEZE.json",
+      "sha256": "786ec09b3620258aa0154f76ca75d673564027edc22fa81a8b549f7baa003d7c",
+      "bytes": 2512
+    },
+    {
+      "path": "PROTOCOL.md",
+      "sha256": "8c1f24ecdae44bfc613248453f46bc1e417f7c92f69bcfb3c72d69385bdf7302",
+      "bytes": 4552
+    },
+    {
+      "path": "joint_results.json",
+      "sha256": "2c387a13cd23099f547333e7fc6be89e0a002cbea01a54c5b8ef3385e2e9b25f",
+      "bytes": 27828
+    },
+    {
+      "path": "joint_scalar.py",
+      "sha256": "f17c1dc303497f9ee52d99230ca6b61cc115790317beb8a414220963b78d5067",
+      "bytes": 16930
+    },
+    {
+      "path": "ross_response.py",
+      "sha256": "5e5f2bf0f2f6a0ffd8d52ae5d4732ea85e5a61f11c3a729254caabbe4bf5259d",
+      "bytes": 10018
+    },
+    {
+      "path": "ross_response_results.json",
+      "sha256": "26d6b63d9b258ca18767d79f9331d5719ed9a6b149691c78673ac1471f21101f",
+      "bytes": 37094
+    },
+    {
+      "path": "source_null.py",
+      "sha256": "81a0359b4c8381c9fff85a2a28b62ef6ce170e15dbb42186f0c50aa2ece7ca34",
+      "bytes": 6670
+    },
+    {
+      "path": "source_null_results.json",
+      "sha256": "3818268f4d7d7ab4f3b84506e314ae0465e5aba39c5f7e27968e1da4d1d08ef6",
+      "bytes": 57701
+    }
+  ]
+}

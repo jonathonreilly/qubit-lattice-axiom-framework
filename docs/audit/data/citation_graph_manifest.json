@@ -1,6 +1,6 @@
 {
- "edge_count": 15447,
- "node_count": 6886,
+ "edge_count": 15452,
+ "node_count": 6889,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3742,6 +3742,10 @@
    "deps_hash": "e47a470d9cfa",
    "out_degree": 5
   },
+  "concrete_gapped_chain_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "91188f65a456",
+   "out_degree": 3
+  },
   "conditional_law_depth_axis_depth_stable_event_bounded_theorem_note_2026-06-12": {
    "deps_hash": "0bfacef594e2",
    "out_degree": 2
@@ -6912,6 +6916,14 @@
   },
   "gapped_boost_invariance_bounded_theorem_note_2026-10-12": {
    "deps_hash": "7000a4119650",
+   "out_degree": 1
+  },
+  "gapped_chain_scattering_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "71b211f9b79a",
+   "out_degree": 1
+  },
+  "gapped_continuum_limit_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "71b211f9b79a",
    "out_degree": 1
   },
   "gate_b_complex_action_falsifier_note": {

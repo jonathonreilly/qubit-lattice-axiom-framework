@@ -1,0 +1,2258 @@
+{
+  "Concrete/symbolic_complete": {
+    "key": "Concrete",
+    "name": "symbolic_complete",
+    "baseline": true,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/local_symbolic.py",
+      "bytes": 6735,
+      "sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_complete/receipt.json",
+      "bytes": 968,
+      "sha256": "e68253207ab651c7f65929262813380775a4d57eaa73c92632f2f09423a79a28"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_complete/result.json",
+      "bytes": 4035,
+      "sha256": "f32b403db39b21bbf3813c89daec81a1c08592ff7086170a8460d17edd1387f6"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_complete/stdout.txt",
+      "bytes": 302,
+      "sha256": "0bce1b734f7f9e403fa7ac315bbbe29599e7691855332e0bcafd518ab6344f2c"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_complete/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 27,
+      "failed": 0
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.4373028753325343,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/kernel_matrix_initial": {
+    "key": "Concrete",
+    "name": "kernel_matrix_initial",
+    "baseline": true,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/kernel_and_matrix.py",
+      "bytes": 6168,
+      "sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_matrix_initial/receipt.json",
+      "bytes": 1208,
+      "sha256": "e2656a6a965dc208ddfd88968f5816d9ae847d568fae31e7017f25de49dfd610"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_matrix_initial/result.json",
+      "bytes": 5965,
+      "sha256": "9aedab9b17c5629a477e096df01cee6f888e09bf955f2e79ee632fca44624ca1"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_matrix_initial/stdout.txt",
+      "bytes": 689,
+      "sha256": "d6c242a1f3b9adab3f7a216dd87cc4e3157ab16deb0df97d4a4fadbcee811fcb"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_matrix_initial/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 56,
+      "failed": 0
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 1.3997065830044448,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/packet_initial": {
+    "key": "Concrete",
+    "name": "packet_initial",
+    "baseline": true,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/packet_flow.py",
+      "bytes": 4678,
+      "sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_initial/receipt.json",
+      "bytes": 929,
+      "sha256": "df4a02d285697286e2758ece89329f59a52f68639f4744788e15201300a39677"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_initial/result.json",
+      "bytes": 5072,
+      "sha256": "696bd892e6d216587ac9fb6687aa8dd688c34c902b26a06434cae4e11a02b5d4"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_initial/stdout.txt",
+      "bytes": 2868,
+      "sha256": "27f949d56f845dbcbbb27b47d195338a81339b7b37c7cf94e5d6bdd85f4f98f5"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_initial/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 22,
+      "failed": 0
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 1.1096960408613086,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/kernel_mutant_connection": {
+    "key": "Concrete",
+    "name": "kernel_mutant_connection",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/kernel_and_matrix.py",
+      "bytes": 6168,
+      "sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_connection/receipt.json",
+      "bytes": 993,
+      "sha256": "df97ac88f8184f107baba9524026b3a2c7320f334e2e131e05c6b1601928673b"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_connection/result.json",
+      "bytes": 6047,
+      "sha256": "04615832d22f16c17c381507008f4c1d5fc98c90022792d32756a4e69d19cd61"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_connection/stdout.txt",
+      "bytes": 747,
+      "sha256": "93d16eacec762bdb4dc399915cf96808057b56944dc474ee5fa81ede870c8775"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_connection/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 55,
+      "failed": 1
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 1.4657927500084043,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/kernel_mutant_range2": {
+    "key": "Concrete",
+    "name": "kernel_mutant_range2",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/kernel_and_matrix.py",
+      "bytes": 6168,
+      "sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_range2/receipt.json",
+      "bytes": 990,
+      "sha256": "72fbab1e8fceec50094b2c30429e9e85689bbad44b320f1dea6f313976aa0542"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_range2/result.json",
+      "bytes": 5980,
+      "sha256": "3e80593de0ba28fb4cbdb29d8bb33e3c429082912fac4e1c566b2410c850b917"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_range2/stdout.txt",
+      "bytes": 753,
+      "sha256": "25cc9c2d8eaba77790e3fc56de1fabf06541c605b69e1b0ea195befac669b7ad"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_range2/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 55,
+      "failed": 1
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 1.563272665720433,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/kernel_mutant_sign": {
+    "key": "Concrete",
+    "name": "kernel_mutant_sign",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/kernel_and_matrix.py",
+      "bytes": 6168,
+      "sha256": "1bfd0a92426a5082d1c18b0a8b8a43ed14cde56a839de2bf6eda171a489fb3b0"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_sign/receipt.json",
+      "bytes": 989,
+      "sha256": "ec2fbfd96c7836e15d314dcb0667683b0e338b5176f9b19a378e886e7e572483"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_sign/result.json",
+      "bytes": 5985,
+      "sha256": "e4a3376c615bb403f762f503051f2e876c75ed60438d35e6bd0b648ec6736ff1"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_sign/stdout.txt",
+      "bytes": 844,
+      "sha256": "81c97e1c2756935e287f3d71c6b2855097d10751aa7abc85270d6d4e0588cd13"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/kernel_mutant_sign/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 53,
+      "failed": 3
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 1.590962250251323,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/packet_mutant_clock": {
+    "key": "Concrete",
+    "name": "packet_mutant_clock",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/packet_flow.py",
+      "bytes": 4678,
+      "sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_clock/receipt.json",
+      "bytes": 973,
+      "sha256": "e13f2517187a151e90e2fb998eebaeb86a60636a7684a231ec895c000066ba04"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_clock/result.json",
+      "bytes": 5082,
+      "sha256": "3d7b627576cc6a45f0603ebcb3427fe460f434b7470f349f513e7efaa506625a"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_clock/stdout.txt",
+      "bytes": 3560,
+      "sha256": "bb0bd8b81e11016fac7e22f803679c8a4d07973065e73e77a1e5a5436ed00f29"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_clock/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 8,
+      "failed": 14
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.5295438333414495,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/packet_mutant_halfdensity": {
+    "key": "Concrete",
+    "name": "packet_mutant_halfdensity",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/packet_flow.py",
+      "bytes": 4678,
+      "sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_halfdensity/receipt.json",
+      "bytes": 983,
+      "sha256": "b2d84d59188dd743f6544b521276421b84fd9edb621a9b1ea0f2eaecc085969e"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_halfdensity/result.json",
+      "bytes": 5087,
+      "sha256": "8635ca618c2007d323cc1da60cfd25b508534d058f0463b663310503bb8537f1"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_halfdensity/stdout.txt",
+      "bytes": 2979,
+      "sha256": "2cfd74438c5fd73fe3ef1d374111ba240eafed317a985649bf3386be8896eceb"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_halfdensity/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 20,
+      "failed": 2
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.8119005826301873,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/packet_mutant_velocity": {
+    "key": "Concrete",
+    "name": "packet_mutant_velocity",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/packet_flow.py",
+      "bytes": 4678,
+      "sha256": "739b3d163cb276fa45290e8ca9308d2b699fba42cb0e1406c99d0f1a2e3c8b2f"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_velocity/receipt.json",
+      "bytes": 977,
+      "sha256": "39a23a161da6e0a566d9720031f0e87ff64728d290bf3369421580e02fd6d832"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_velocity/result.json",
+      "bytes": 5071,
+      "sha256": "c5f2fcad7b65111c22f5dff31f33841e5c993b4611ed1522622e875a1047ccdb"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_velocity/stdout.txt",
+      "bytes": 3606,
+      "sha256": "509e85c36d0fefede2bc1437b71e1c7dbd84edeca28c34144f4f9ae40b7f7eef"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/packet_mutant_velocity/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 7,
+      "failed": 15
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.7774804998189211,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/symbolic_mutant_half": {
+    "key": "Concrete",
+    "name": "symbolic_mutant_half",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/local_symbolic.py",
+      "bytes": 6735,
+      "sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_half/receipt.json",
+      "bytes": 980,
+      "sha256": "0c1b90a2480a1694071fbc070f57737fbe292b89fd4e9f8362ec07f0913a984d"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_half/result.json",
+      "bytes": 4069,
+      "sha256": "b1192cb365145a7983e6b1e8d8bc98e15d5cc8833dcd6aee46b12202c098d872"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_half/stdout.txt",
+      "bytes": 786,
+      "sha256": "4fb6b590ec50cfa8b16875fc192f92a2ae8818103532e78878f91a9d6ba2b0a3"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_half/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 13,
+      "failed": 14
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.44090420799329877,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/symbolic_mutant_improvement": {
+    "key": "Concrete",
+    "name": "symbolic_mutant_improvement",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/local_symbolic.py",
+      "bytes": 6735,
+      "sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_improvement/receipt.json",
+      "bytes": 991,
+      "sha256": "8f310b4e9bcfbc73061df1804cfd1e92081516fe1b490aa94fa1237d7ad15b57"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_improvement/result.json",
+      "bytes": 3908,
+      "sha256": "c9c36c9bfe94e2609f2e73e5c2c63a1b62e58dad19c8f3766429cfab3d286473"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_improvement/stdout.txt",
+      "bytes": 362,
+      "sha256": "9b5c028d1bc3020b03c19dc4376c0b5af8ea2665117e6a792ab29d96333bf880"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_improvement/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 24,
+      "failed": 3
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.29565699957311153,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/symbolic_mutant_moment": {
+    "key": "Concrete",
+    "name": "symbolic_mutant_moment",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/controls/local_symbolic.py",
+      "bytes": 6735,
+      "sha256": "f35823dd06e25a538dcbd4cf5fc013572f4b3471695b7db0361337da6a017af6"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_moment/receipt.json",
+      "bytes": 981,
+      "sha256": "d01b33a63dc8ee216021d3ad503ee11e737f0b01e2664d5804f26af5e23e5e06"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_moment/result.json",
+      "bytes": 4050,
+      "sha256": "0d4fb600b2299a4ad08fd0f6e371042dce227c2edb9e2d33dbc3989329bef97e"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_moment/stdout.txt",
+      "bytes": 503,
+      "sha256": "53922a7ee844ce8a7e319d43d5d358ca798b9f2fb56820fd3027453d78de1a69"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain/logs/symbolic_mutant_moment/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 22,
+      "failed": 5
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.47253208328038454,
+    "original_timeout_seconds": 60.0
+  },
+  "Concrete/review_symbolic_half": {
+    "key": "Concrete",
+    "name": "review_symbolic_half",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/symbolic_half.py",
+      "bytes": 6691,
+      "sha256": "c8a9234ce2b7a8061367cbac7ba1b609acbef0befa278f20e800944721e56a1f"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_symbolic_half.json",
+      "bytes": 2570,
+      "sha256": "b956c2915c9d32f6db7807c8dee2d4599a6e8d18783a0b0359ed664e5a3c677c"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/symbolic_half.result.json",
+      "bytes": 4061,
+      "sha256": "41b429366d42987ab66dfee01b748ce5ad2a92d400750ed71c62c8dcd1644102"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_symbolic_half.stdout",
+      "bytes": 786,
+      "sha256": "4fb6b590ec50cfa8b16875fc192f92a2ae8818103532e78878f91a9d6ba2b0a3"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_symbolic_half.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 13,
+      "failed": 14
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.27368287509307265,
+    "original_timeout_seconds": 60
+  },
+  "Concrete/review_symbolic_pauli_sign": {
+    "key": "Concrete",
+    "name": "review_symbolic_pauli_sign",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/symbolic_pauli_sign.py",
+      "bytes": 6736,
+      "sha256": "55fd74db7787aa9eee72867e49a2ff3e44c5adb383f13985b7a2497b27bc9e5b"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_symbolic_pauli_sign.json",
+      "bytes": 2606,
+      "sha256": "fa2f5fed1a4da90bc4775d41b0500a78bf4ca76c309054fe5df89e1ca6069e9c"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/symbolic_pauli_sign.result.json",
+      "bytes": 3386,
+      "sha256": "e086b205d1a4d3862c131d28f94dd42f719d1b24624120b0ff65254d6ae45f09"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_symbolic_pauli_sign.stdout",
+      "bytes": 611,
+      "sha256": "1d8a3ec273bcb78ab99d042cc6a9a9d74b0e6ae9beda171c4682f0aa8039e759"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_symbolic_pauli_sign.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 16,
+      "failed": 11
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.22861220873892307,
+    "original_timeout_seconds": 60
+  },
+  "Concrete/review_kernel_connection": {
+    "key": "Concrete",
+    "name": "review_kernel_connection",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/kernel_connection.py",
+      "bytes": 6125,
+      "sha256": "d073471ca162c2014bf2afae4faa761709fbd69a919ff3b7180c5e1ad62cd077"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_kernel_connection.json",
+      "bytes": 2592,
+      "sha256": "aa029099ff0b0ec4e3ce23ba5574ad7b6be5733d68731894fc5c657ece6ebdc4"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/kernel_connection.result.json",
+      "bytes": 6037,
+      "sha256": "a75159ad685472b16cfc44d7a7dfead8e18ce5aff9e81d83e6ebb294b25d8f8e"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_kernel_connection.stdout",
+      "bytes": 747,
+      "sha256": "93d16eacec762bdb4dc399915cf96808057b56944dc474ee5fa81ede870c8775"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_kernel_connection.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 55,
+      "failed": 1
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 1.416438166052103,
+    "original_timeout_seconds": 60
+  },
+  "Concrete/review_kernel_range2": {
+    "key": "Concrete",
+    "name": "review_kernel_range2",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/kernel_range2.py",
+      "bytes": 6168,
+      "sha256": "963cb5d3d135f89e93c61142e715e1f3d7e5831cfacf1d1b11b183c323c92f73"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_kernel_range2.json",
+      "bytes": 2569,
+      "sha256": "15c4f628741f11f0c001f945f7eb753440577ace92221a7ab3bc2b7b1f6aa7c8"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/kernel_range2.result.json",
+      "bytes": 5966,
+      "sha256": "32a285efb8150c13383cef00c7db0d6181d1e172c9d219b8e6a49e5339f9f1f9"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_kernel_range2.stdout",
+      "bytes": 753,
+      "sha256": "25cc9c2d8eaba77790e3fc56de1fabf06541c605b69e1b0ea195befac669b7ad"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_kernel_range2.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 55,
+      "failed": 1
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 1.3598211673088372,
+    "original_timeout_seconds": 60
+  },
+  "Concrete/review_kernel_origin": {
+    "key": "Concrete",
+    "name": "review_kernel_origin",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/kernel_origin.py",
+      "bytes": 6168,
+      "sha256": "02769912067e93ee1b6ff93b80eac0259da608d354f53107ef435cc11a0426ec"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_kernel_origin.json",
+      "bytes": 2569,
+      "sha256": "061fb408c1dcb99fb8b931f8253eaa8f6a86ccad743ff0b5e4dc5c8720c63b1b"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/kernel_origin.result.json",
+      "bytes": 5965,
+      "sha256": "9aedab9b17c5629a477e096df01cee6f888e09bf955f2e79ee632fca44624ca1"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_kernel_origin.stdout",
+      "bytes": 689,
+      "sha256": "d6c242a1f3b9adab3f7a216dd87cc4e3157ab16deb0df97d4a4fadbcee811fcb"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_kernel_origin.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 56,
+      "failed": 0
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 1.4799782917834818,
+    "original_timeout_seconds": 60
+  },
+  "Concrete/review_packet_velocity": {
+    "key": "Concrete",
+    "name": "review_packet_velocity",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/packet_velocity.py",
+      "bytes": 4682,
+      "sha256": "5d7504c7bbb8b03e9098fe47f1d8c07d90ac2d3fa694d54ce4acd49a3dbc843f"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_packet_velocity.json",
+      "bytes": 2582,
+      "sha256": "2fc36b286368b69d18c36cde9e6ddd0d44921d80f4bdd627e76a179ce022f292"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/packet_velocity.result.json",
+      "bytes": 5086,
+      "sha256": "bbd475662faca43012d5ef5233aadd8854a264b663af0286d912a1a038faa217"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_packet_velocity.stdout",
+      "bytes": 3573,
+      "sha256": "9d6e1de0c3bff82c25f5c5ee0001bfa7b41f5846ec43322a47ff31b592ff887a"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_packet_velocity.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 8,
+      "failed": 14
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.6752737499773502,
+    "original_timeout_seconds": 60
+  },
+  "Concrete/review_packet_inverse_jacobian": {
+    "key": "Concrete",
+    "name": "review_packet_inverse_jacobian",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/packet_inverse_jacobian.py",
+      "bytes": 4678,
+      "sha256": "66afcfbddfd7180d1165d5e4964e734701d1ff94ba0975f97afd759ecd2e7831"
+    },
+    "candidate": null,
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_packet_inverse_jacobian.json",
+      "bytes": 2630,
+      "sha256": "72b675d20affdd4a43aa13cb59073d0bfa5be19ec762743a3698766e50cae0c8"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/mutations/packet_inverse_jacobian.result.json",
+      "bytes": 5072,
+      "sha256": "696bd892e6d216587ac9fb6687aa8dd688c34c902b26a06434cae4e11a02b5d4"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_packet_inverse_jacobian.stdout",
+      "bytes": 2868,
+      "sha256": "27f949d56f845dbcbbb27b47d195338a81339b7b37c7cf94e5d6bdd85f4f98f5"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/concrete_gapped_chain_review/processes/mut_packet_inverse_jacobian.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 22,
+      "failed": 0
+    },
+    "original_candidate_path": null,
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.5133281666785479,
+    "original_timeout_seconds": 60
+  },
+  "Scattering/baseline": {
+    "key": "Scattering",
+    "name": "baseline",
+    "baseline": true,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/candidate.py",
+      "bytes": 2990,
+      "sha256": "fea7c19a5734e1c3a662981a9c08d6da318b05481c0a6802f76e2227a499c382"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/baseline_v1/receipt.json",
+      "bytes": 1620,
+      "sha256": "19a894fdef965e99f104fdef5cddf666bf4ffea9d889ae91f3462d9dcfff5270"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/results/baseline_v1.json",
+      "bytes": 21997,
+      "sha256": "c407185c771ac9eb38797fb4be93b52a9355acc4b1922ae880253f639f8fc716"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/baseline_v1/stdout.txt",
+      "bytes": 21997,
+      "sha256": "c407185c771ac9eb38797fb4be93b52a9355acc4b1922ae880253f639f8fc716"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/baseline_v1/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 95,
+      "failed": 0
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/candidate.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.3652133336290717,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/incoming_phase_erased": {
+    "key": "Scattering",
+    "name": "incoming_phase_erased",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/incoming_phase_erased.py",
+      "bytes": 2957,
+      "sha256": "65aff5f3afc2b31c2827ccd23c2a80946c4884deac8aa247e8566851dd38d72c"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_incoming_phase_erased/receipt.json",
+      "bytes": 1951,
+      "sha256": "30f1b1cd93bbfc65c62824299f977a66cde6bef768a9472c1dd77ef2ebac5e1f"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/results/incoming_phase_erased.json",
+      "bytes": 22075,
+      "sha256": "4cb084f7601489485db72d09c79f65613533a0dd91a50f143bd3b0ff36a1ac0a"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_incoming_phase_erased/stdout.txt",
+      "bytes": 22075,
+      "sha256": "4cb084f7601489485db72d09c79f65613533a0dd91a50f143bd3b0ff36a1ac0a"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_incoming_phase_erased/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 86,
+      "failed": 9
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/incoming_phase_erased.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.30246508307754993,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/car_counts_right": {
+    "key": "Scattering",
+    "name": "car_counts_right",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/car_counts_right.py",
+      "bytes": 2984,
+      "sha256": "4da959f48fa092cefda71e87ceec09d3e810d28002b45a0f69107cc179f40340"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_car_counts_right/receipt.json",
+      "bytes": 1936,
+      "sha256": "c62b86784be5bd14ab7bf19118a7326265554d83342dcb6d15961bab2f9ab80d"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/results/car_counts_right.json",
+      "bytes": 22129,
+      "sha256": "239cb2de3d8b1721dbc3aab1b623c34d40c165d418098c737b0e74474709947c"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_car_counts_right/stdout.txt",
+      "bytes": 22129,
+      "sha256": "239cb2de3d8b1721dbc3aab1b623c34d40c165d418098c737b0e74474709947c"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_car_counts_right/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 85,
+      "failed": 10
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/car_counts_right.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.19774725008755922,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/hardcore_collision_allowed": {
+    "key": "Scattering",
+    "name": "hardcore_collision_allowed",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/hardcore_collision_allowed.py",
+      "bytes": 3000,
+      "sha256": "a608404dce5778add2112fa34497499e11fb1048ecdfe2a2fd6561b696d54884"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_hardcore_collision_allowed/receipt.json",
+      "bytes": 1965,
+      "sha256": "867ad73219a97837ab81b5582983c0dac71822ff55e39439f3b6b5884ab71501"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/results/hardcore_collision_allowed.json",
+      "bytes": 22033,
+      "sha256": "11aa2e3a3f0464f6d5bd952943841f8814d4975c004775c4f84685bf54dad012"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_hardcore_collision_allowed/stdout.txt",
+      "bytes": 22033,
+      "sha256": "11aa2e3a3f0464f6d5bd952943841f8814d4975c004775c4f84685bf54dad012"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_hardcore_collision_allowed/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 91,
+      "failed": 4
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/hardcore_collision_allowed.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.1898511671461165,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/factorial_normalization": {
+    "key": "Scattering",
+    "name": "factorial_normalization",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/factorial_normalization.py",
+      "bytes": 2984,
+      "sha256": "d3faf6e4c56249786b5be36a8c24672553a5da3c4489f2d6fbbac6ec0a012e64"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_factorial_normalization/receipt.json",
+      "bytes": 1957,
+      "sha256": "4fba859c4ce75fd2bc37dd1d6ac4401e783852c2c3c8181c0b806d71265b13f9"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/results/factorial_normalization.json",
+      "bytes": 22051,
+      "sha256": "c4cf0e8618d162a82c3aab665547ec0d97c3d4787033e83a9249f53c83cc9f0b"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_factorial_normalization/stdout.txt",
+      "bytes": 22051,
+      "sha256": "c4cf0e8618d162a82c3aab665547ec0d97c3d4787033e83a9249f53c83cc9f0b"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_factorial_normalization/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 86,
+      "failed": 9
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/factorial_normalization.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.19209620915353298,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/momentum_sorting": {
+    "key": "Scattering",
+    "name": "momentum_sorting",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/momentum_sorting.py",
+      "bytes": 2974,
+      "sha256": "e20461fb279f8194b7b6f9fefe597a2c607905ea42f987df2b4728f9018e7d97"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_momentum_sorting/receipt.json",
+      "bytes": 1936,
+      "sha256": "b4a5b1a30bbd3980391a9eb86c81b325f2919d55bff9881e1a7fe616a3a64286"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/results/momentum_sorting.json",
+      "bytes": 22010,
+      "sha256": "ca07a129f90e998e8293f84fd7daf902eaacd66f49850208ecf90d0d6b413404"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_momentum_sorting/stdout.txt",
+      "bytes": 22010,
+      "sha256": "ca07a129f90e998e8293f84fd7daf902eaacd66f49850208ecf90d0d6b413404"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_momentum_sorting/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 94,
+      "failed": 1
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/momentum_sorting.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.19576941709965467,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/second_branch_deleted": {
+    "key": "Scattering",
+    "name": "second_branch_deleted",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/second_branch_deleted.py",
+      "bytes": 3043,
+      "sha256": "788eafa6746d4550d28aad68de50947be72ab0b40780c0966f23fc325f3c7e86"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_second_branch_deleted/receipt.json",
+      "bytes": 1951,
+      "sha256": "f3750a27f6d86fa041256e2c73c8b361ba2b40ef31083a10e720e7b811d1900d"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/results/second_branch_deleted.json",
+      "bytes": 22081,
+      "sha256": "e9d93ed3933ec7a837da53315871924a44bf8d0262a6748b3c59353dd3d3d552"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_second_branch_deleted/stdout.txt",
+      "bytes": 22081,
+      "sha256": "e9d93ed3933ec7a837da53315871924a44bf8d0262a6748b3c59353dd3d3d552"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_second_branch_deleted/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 86,
+      "failed": 9
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/second_branch_deleted.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.18749658297747374,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/packet_time_reversed": {
+    "key": "Scattering",
+    "name": "packet_time_reversed",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/packet_time_reversed.py",
+      "bytes": 2989,
+      "sha256": "6d25a4a73238b863eff15d239183ec327bbcc8899af276a58238552e0cf97bd7"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_packet_time_reversed/receipt.json",
+      "bytes": 1948,
+      "sha256": "13f4dc52bdf7c06370bdf45105a77bad56dfabcdd543c7421bdd266c30587779"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/results/packet_time_reversed.json",
+      "bytes": 21981,
+      "sha256": "287f31d35b4127e377192d0af0835d09394d45b5e963fe2e974c24580cba0eab"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_packet_time_reversed/stdout.txt",
+      "bytes": 21981,
+      "sha256": "287f31d35b4127e377192d0af0835d09394d45b5e963fe2e974c24580cba0eab"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_packet_time_reversed/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 89,
+      "failed": 6
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/packet_time_reversed.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.18778999987989664,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/spatial_fourier_reversed": {
+    "key": "Scattering",
+    "name": "spatial_fourier_reversed",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/spatial_fourier_reversed.py",
+      "bytes": 3002,
+      "sha256": "3b663258db4fdc8e741ac08fc9ddc62a76e5c007d4b5db5a746167f943cc7dcd"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_spatial_fourier_reversed/receipt.json",
+      "bytes": 1960,
+      "sha256": "382ecc3756375aa1143eb0e80ae18f6363f141043e54ec0ff682e212f7d69b1c"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/results/spatial_fourier_reversed.json",
+      "bytes": 21986,
+      "sha256": "6c845c50d3731a6263834f603fc520600b4d6700d0c56e17cc8496d54967a575"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_spatial_fourier_reversed/stdout.txt",
+      "bytes": 21986,
+      "sha256": "6c845c50d3731a6263834f603fc520600b4d6700d0c56e17cc8496d54967a575"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_spatial_fourier_reversed/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 89,
+      "failed": 6
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/spatial_fourier_reversed.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.19705341663211584,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/filter_energy_reversed": {
+    "key": "Scattering",
+    "name": "filter_energy_reversed",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/filter_energy_reversed.py",
+      "bytes": 2991,
+      "sha256": "fccd339db3cfdb53928f1430f2a7ce4d708a00a8678d50ddcde5eae1c443d8c5"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_filter_energy_reversed/receipt.json",
+      "bytes": 1954,
+      "sha256": "7f0c7520dde7c038fc0c22ebc1819469d4fd5b9a6931147c10932c1c17c2dca5"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/results/filter_energy_reversed.json",
+      "bytes": 22024,
+      "sha256": "6d17adc52b685d8cac6d884d75bd53fd9306ff6a092b29c1764e851cae9c86c5"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_filter_energy_reversed/stdout.txt",
+      "bytes": 22024,
+      "sha256": "6d17adc52b685d8cac6d884d75bd53fd9306ff6a092b29c1764e851cae9c86c5"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/logs/mutant_filter_energy_reversed/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 91,
+      "failed": 4
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering/mutants/filter_energy_reversed.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.19599087489768863,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/review_energy_half": {
+    "key": "Scattering",
+    "name": "review_energy_half",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/energy_half.py",
+      "bytes": 2986,
+      "sha256": "a261878c4d49c0edf1f6ef9d29d5f86b00e9cc413548fc87bb0ab7959bfbf545"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092223_936723Z_fresh_energy_half.json",
+      "bytes": 6386,
+      "sha256": "a117fedad34167676d422002cd9d3c7b4de6e9c414561232598fcabe31d1e21b"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/energy_half.result.json",
+      "bytes": 21985,
+      "sha256": "a43f8a07b83e12bc951187cfe8c920b4791adfe435e5df481cd5674b373e8f85"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092223_936723Z_fresh_energy_half.stdout",
+      "bytes": 21985,
+      "sha256": "a43f8a07b83e12bc951187cfe8c920b4791adfe435e5df481cd5674b373e8f85"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092223_936723Z_fresh_energy_half.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 79,
+      "failed": 16
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/energy_half.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.16974837519228458,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/review_pair_diagonal": {
+    "key": "Scattering",
+    "name": "review_pair_diagonal",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/pair_diagonal.py",
+      "bytes": 2990,
+      "sha256": "b60167c323cfc6589a98743a1ddf3c18533b8caf2226503bdd64e7c5f2fb0a1c"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092224_145002Z_fresh_pair_diagonal.json",
+      "bytes": 6400,
+      "sha256": "46887d597bcdb44665180cd9bfabdbb740a03a0b34d954c20606b8a59e193057"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/pair_diagonal.result.json",
+      "bytes": 22045,
+      "sha256": "2447f1b7583b60c5153a81e521586a7413cb82e0759e36e159423a2d9a7153e9"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092224_145002Z_fresh_pair_diagonal.stdout",
+      "bytes": 22045,
+      "sha256": "2447f1b7583b60c5153a81e521586a7413cb82e0759e36e159423a2d9a7153e9"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092224_145002Z_fresh_pair_diagonal.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 85,
+      "failed": 10
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/pair_diagonal.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.163890500087291,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/review_filter_double": {
+    "key": "Scattering",
+    "name": "review_filter_double",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/filter_double.py",
+      "bytes": 2994,
+      "sha256": "b7308470ca28d8d93433ac8e9377d26f7355d7ed68c3d23beae534df69d4e337"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092224_346152Z_fresh_filter_double.json",
+      "bytes": 6402,
+      "sha256": "6aa2f4c535e5aedbf7b4c328cdaa5506ed7e996593f02017d0749dd8467425d9"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/filter_double.result.json",
+      "bytes": 22018,
+      "sha256": "e954e9e4da2d6d31b8080960e1201544dc2eee30662ef2c847359e0d5644b3a5"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092224_346152Z_fresh_filter_double.stdout",
+      "bytes": 22018,
+      "sha256": "e954e9e4da2d6d31b8080960e1201544dc2eee30662ef2c847359e0d5644b3a5"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092224_346152Z_fresh_filter_double.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 91,
+      "failed": 4
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/filter_double.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.17128658294677734,
+    "original_timeout_seconds": 45.0
+  },
+  "Scattering/review_incoming_n8_only": {
+    "key": "Scattering",
+    "name": "review_incoming_n8_only",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/controls.py",
+      "bytes": 12984,
+      "sha256": "4bf3707aa0be3b1a6236624b11836068ed7c1ac425993616def402a2c47c8b5d"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/incoming_n8_only.py",
+      "bytes": 3020,
+      "sha256": "a61ce8753e2602a4ad4152d5d939e39d6f56e651084caba1afd3c277f03fa286"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092224_555800Z_fresh_incoming_n8_only.json",
+      "bytes": 6425,
+      "sha256": "d83fa109080933f7883e65c3e0a6c240d6e8c7b962cda2e31158474daef8ab69"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/incoming_n8_only.result.json",
+      "bytes": 22027,
+      "sha256": "f74d47f985ce440bf0f6d65e63e711a7f96320781b000fc5954be4764c9f4801"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092224_555800Z_fresh_incoming_n8_only.stdout",
+      "bytes": 22027,
+      "sha256": "f74d47f985ce440bf0f6d65e63e711a7f96320781b000fc5954be4764c9f4801"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/processes/20261012T092224_555800Z_fresh_incoming_n8_only.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 95,
+      "failed": 0
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_chain_scattering_review/fresh_mutations/incoming_n8_only.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.1700732079334557,
+    "original_timeout_seconds": 45.0
+  },
+  "Continuum/baseline_circle_v2": {
+    "key": "Continuum",
+    "name": "baseline_circle_v2",
+    "baseline": true,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/circle_spectral.py",
+      "bytes": 6428,
+      "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/candidate.py",
+      "bytes": 1511,
+      "sha256": "2a64bd05166adf7b15a7b1a06a4585523630ea539ba93b8b35888ef8f9cbf5d2"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/baseline_circle_v2.receipt.json",
+      "bytes": 4170,
+      "sha256": "18764da8b98f974f9ac1911fc89b9e64f2fadef72663d0cb8952271d4df32728"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/baseline_circle_v2.json",
+      "bytes": 15265,
+      "sha256": "0a376136e73a41bde7e96e8f99915d75460eb33b8621a785ffb722d2a7b537bf"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/baseline_circle_v2.stdout.txt",
+      "bytes": 15265,
+      "sha256": "0a376136e73a41bde7e96e8f99915d75460eb33b8621a785ffb722d2a7b537bf"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/baseline_circle_v2.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 18,
+      "failed": 0
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/candidate.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 1.1078742081299424,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/baseline_packet_v3": {
+    "key": "Continuum",
+    "name": "baseline_packet_v3",
+    "baseline": true,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/packet_scaling.py",
+      "bytes": 9817,
+      "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/candidate.py",
+      "bytes": 1511,
+      "sha256": "2a64bd05166adf7b15a7b1a06a4585523630ea539ba93b8b35888ef8f9cbf5d2"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/baseline_packet_v3.receipt.json",
+      "bytes": 4168,
+      "sha256": "44f45e43a6458ddeae299cae513708bb9748755115aa290eef3c28a208af07b9"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/baseline_packet_v3.json",
+      "bytes": 31981,
+      "sha256": "d98463fb5db7d75496c0db6d33dd1980bf1ebd363934757756e1d182baeea4ed"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/baseline_packet_v3.stdout.txt",
+      "bytes": 31981,
+      "sha256": "d98463fb5db7d75496c0db6d33dd1980bf1ebd363934757756e1d182baeea4ed"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/baseline_packet_v3.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 108,
+      "failed": 0
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/candidate.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.8486827500164509,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/origin_sign_circle_spectral": {
+    "key": "Continuum",
+    "name": "origin_sign_circle_spectral",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/circle_spectral.py",
+      "bytes": 6428,
+      "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/origin_sign.py",
+      "bytes": 1510,
+      "sha256": "8854091b1bc56ff19dfb48d5dc2d26014bc0bc5b6f25e05d9d4dbfdc1e0a440d"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/origin_sign_circle_spectral.receipt.json",
+      "bytes": 4478,
+      "sha256": "e2517c4f53348dd39fed5795f939096a341b734333687aaf352474c9211366a1"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/origin_sign_circle_spectral.json",
+      "bytes": 15190,
+      "sha256": "1d1abfff268c634a949d902d64afdf4cafa2ab787e43c33d67ff5ebcfad3eb8d"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/origin_sign_circle_spectral.stdout.txt",
+      "bytes": 15190,
+      "sha256": "1d1abfff268c634a949d902d64afdf4cafa2ab787e43c33d67ff5ebcfad3eb8d"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/origin_sign_circle_spectral.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 11,
+      "failed": 7
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/origin_sign.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.6040132082998753,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/origin_sign_packet_scaling": {
+    "key": "Continuum",
+    "name": "origin_sign_packet_scaling",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/packet_scaling.py",
+      "bytes": 9817,
+      "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/origin_sign.py",
+      "bytes": 1510,
+      "sha256": "8854091b1bc56ff19dfb48d5dc2d26014bc0bc5b6f25e05d9d4dbfdc1e0a440d"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/origin_sign_packet_scaling.receipt.json",
+      "bytes": 4472,
+      "sha256": "790aea39b87fe7c5888db754831bc2211bf4a0c17e7a46c3bf653d9ce0366850"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/origin_sign_packet_scaling.json",
+      "bytes": 31994,
+      "sha256": "dba206ed9e43ff1a5626961a732d4a0aa1df1acb5ecefe500deaac2333d9e9c7"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/origin_sign_packet_scaling.stdout.txt",
+      "bytes": 31994,
+      "sha256": "dba206ed9e43ff1a5626961a732d4a0aa1df1acb5ecefe500deaac2333d9e9c7"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/origin_sign_packet_scaling.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 104,
+      "failed": 4
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/origin_sign.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.9818372917361557,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/missing_origin_circle_spectral": {
+    "key": "Continuum",
+    "name": "missing_origin_circle_spectral",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/circle_spectral.py",
+      "bytes": 6428,
+      "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/missing_origin.py",
+      "bytes": 1510,
+      "sha256": "2f3a2af5df8c9ea466ccaf004d873442558f260c7ae4e46cac3f939ef1310854"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_origin_circle_spectral.receipt.json",
+      "bytes": 4502,
+      "sha256": "6fa4c46292620803c23079e1b81be6a9cff815d2df11d0bd33cfa2404f1a6be9"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/missing_origin_circle_spectral.json",
+      "bytes": 15181,
+      "sha256": "c5feeaf22f4b4f5df1494060711454c1fb7a546fac449dc6cd3761ce80dce3f7"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_origin_circle_spectral.stdout.txt",
+      "bytes": 15181,
+      "sha256": "c5feeaf22f4b4f5df1494060711454c1fb7a546fac449dc6cd3761ce80dce3f7"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_origin_circle_spectral.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 11,
+      "failed": 7
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/missing_origin.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.6049198340624571,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/missing_origin_packet_scaling": {
+    "key": "Continuum",
+    "name": "missing_origin_packet_scaling",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/packet_scaling.py",
+      "bytes": 9817,
+      "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/missing_origin.py",
+      "bytes": 1510,
+      "sha256": "2f3a2af5df8c9ea466ccaf004d873442558f260c7ae4e46cac3f939ef1310854"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_origin_packet_scaling.receipt.json",
+      "bytes": 4496,
+      "sha256": "d76a0a0fcaa7792679e57b2efebe927c6fd4d484f06c56958d1d98dc4da55528"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/missing_origin_packet_scaling.json",
+      "bytes": 32087,
+      "sha256": "8e27f33bb7b1bc9d0ca97147fac274084ba29fbfc1620eda07c9151f1d42cfaf"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_origin_packet_scaling.stdout.txt",
+      "bytes": 32087,
+      "sha256": "8e27f33bb7b1bc9d0ca97147fac274084ba29fbfc1620eda07c9151f1d42cfaf"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_origin_packet_scaling.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 108,
+      "failed": 0
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/missing_origin.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.9812347078695893,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/reciprocal_half_density_circle_spectral": {
+    "key": "Continuum",
+    "name": "reciprocal_half_density_circle_spectral",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/circle_spectral.py",
+      "bytes": 6428,
+      "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/reciprocal_half_density.py",
+      "bytes": 1512,
+      "sha256": "f774aa95b6b894037d3d1eb12509cdba47722389a16c31ec0f8ec929cbd6fb4b"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reciprocal_half_density_circle_spectral.receipt.json",
+      "bytes": 4574,
+      "sha256": "709771f074273e79dc82e901d472cacf7525892e6655827f043e3c91e14f7b3c"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/reciprocal_half_density_circle_spectral.json",
+      "bytes": 15212,
+      "sha256": "5d600640d936048d4ab3fcc42be92e8d918e7a6b5746d7428eb1d9a3228f3d28"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reciprocal_half_density_circle_spectral.stdout.txt",
+      "bytes": 15212,
+      "sha256": "5d600640d936048d4ab3fcc42be92e8d918e7a6b5746d7428eb1d9a3228f3d28"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reciprocal_half_density_circle_spectral.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 6,
+      "failed": 12
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/reciprocal_half_density.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.4360792920924723,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/reciprocal_half_density_packet_scaling": {
+    "key": "Continuum",
+    "name": "reciprocal_half_density_packet_scaling",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/packet_scaling.py",
+      "bytes": 9817,
+      "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/reciprocal_half_density.py",
+      "bytes": 1512,
+      "sha256": "f774aa95b6b894037d3d1eb12509cdba47722389a16c31ec0f8ec929cbd6fb4b"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reciprocal_half_density_packet_scaling.receipt.json",
+      "bytes": 4568,
+      "sha256": "2615e739b83acd87bea9d02be36f6240c370c032ec11a079451a137a68e9a15b"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/reciprocal_half_density_packet_scaling.json",
+      "bytes": 31932,
+      "sha256": "9a52c68196b094ad7524315367edce125f08594ee6d9e44293d70ea5390332a9"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reciprocal_half_density_packet_scaling.stdout.txt",
+      "bytes": 31932,
+      "sha256": "9a52c68196b094ad7524315367edce125f08594ee6d9e44293d70ea5390332a9"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reciprocal_half_density_packet_scaling.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 60,
+      "failed": 48
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/reciprocal_half_density.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.8394120000302792,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/missing_half_density_circle_spectral": {
+    "key": "Continuum",
+    "name": "missing_half_density_circle_spectral",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/circle_spectral.py",
+      "bytes": 6428,
+      "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/missing_half_density.py",
+      "bytes": 1511,
+      "sha256": "5bc8c41f8e46eed6b9f8adb382162cb1cfa274b02d3f3f481a3227cbbc4801ce"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_half_density_circle_spectral.receipt.json",
+      "bytes": 4551,
+      "sha256": "7132d47c26483d666f5887a657ade3ed8dd1790fbdb30870fda8fcdf63b34eb3"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/missing_half_density_circle_spectral.json",
+      "bytes": 15213,
+      "sha256": "c460f664f9708c5b992a160fefb74708e6328de91a6254fbc92d62641df03ac7"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_half_density_circle_spectral.stdout.txt",
+      "bytes": 15213,
+      "sha256": "c460f664f9708c5b992a160fefb74708e6328de91a6254fbc92d62641df03ac7"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_half_density_circle_spectral.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 6,
+      "failed": 12
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/missing_half_density.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.44192870892584324,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/missing_half_density_packet_scaling": {
+    "key": "Continuum",
+    "name": "missing_half_density_packet_scaling",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/packet_scaling.py",
+      "bytes": 9817,
+      "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/missing_half_density.py",
+      "bytes": 1511,
+      "sha256": "5bc8c41f8e46eed6b9f8adb382162cb1cfa274b02d3f3f481a3227cbbc4801ce"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_half_density_packet_scaling.receipt.json",
+      "bytes": 4544,
+      "sha256": "94c1667bd14989851d6bcedcbcf62bd41c2d0291f3fd5381c76567aeffadeee3"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/missing_half_density_packet_scaling.json",
+      "bytes": 31976,
+      "sha256": "7d2b7d91381b3870278b4d7f454857310b783b44f607f0587c3653144a98520b"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_half_density_packet_scaling.stdout.txt",
+      "bytes": 31976,
+      "sha256": "7d2b7d91381b3870278b4d7f454857310b783b44f607f0587c3653144a98520b"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/missing_half_density_packet_scaling.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 62,
+      "failed": 46
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/missing_half_density.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.8468428747728467,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/wrong_speed_circle_spectral": {
+    "key": "Continuum",
+    "name": "wrong_speed_circle_spectral",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/circle_spectral.py",
+      "bytes": 6428,
+      "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/wrong_speed.py",
+      "bytes": 1512,
+      "sha256": "ab3f50ed00d756347c6d61a0476a30eb4f0e92a0461f15c0013766695bd4cf40"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/wrong_speed_circle_spectral.receipt.json",
+      "bytes": 4478,
+      "sha256": "ba4073deda0812557c2a82767cad1eeb85762e2ed6f5492aa6c24dc5c2a6afe9"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/wrong_speed_circle_spectral.json",
+      "bytes": 15174,
+      "sha256": "dbd5d7e12f9c6aacd0229134d01770fd5ce4625e4e3e2f1767dec619b4f75d94"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/wrong_speed_circle_spectral.stdout.txt",
+      "bytes": 15174,
+      "sha256": "dbd5d7e12f9c6aacd0229134d01770fd5ce4625e4e3e2f1767dec619b4f75d94"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/wrong_speed_circle_spectral.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 12,
+      "failed": 6
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/wrong_speed.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.4707949999719858,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/wrong_speed_packet_scaling": {
+    "key": "Continuum",
+    "name": "wrong_speed_packet_scaling",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/packet_scaling.py",
+      "bytes": 9817,
+      "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/wrong_speed.py",
+      "bytes": 1512,
+      "sha256": "ab3f50ed00d756347c6d61a0476a30eb4f0e92a0461f15c0013766695bd4cf40"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/wrong_speed_packet_scaling.receipt.json",
+      "bytes": 4472,
+      "sha256": "b9544eebaba4739258bba0989ece5e1e1e64c165f197cd9408ba7a239ad435e3"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/wrong_speed_packet_scaling.json",
+      "bytes": 31862,
+      "sha256": "7559fa04d23d766db513d8e6b9241ff06ec10c17c6a076349c0391305c7d468e"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/wrong_speed_packet_scaling.stdout.txt",
+      "bytes": 31862,
+      "sha256": "7559fa04d23d766db513d8e6b9241ff06ec10c17c6a076349c0391305c7d468e"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/wrong_speed_packet_scaling.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 76,
+      "failed": 32
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/wrong_speed.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.8452362497337162,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/periodic_gauge_circle_spectral": {
+    "key": "Continuum",
+    "name": "periodic_gauge_circle_spectral",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/circle_spectral.py",
+      "bytes": 6428,
+      "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/periodic_gauge.py",
+      "bytes": 1511,
+      "sha256": "deea79b1dd37a89a60780f9235570b092aee39b774d7de06200d0af4037eca4d"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/periodic_gauge_circle_spectral.receipt.json",
+      "bytes": 4502,
+      "sha256": "46003b6a42f8e876c6ef17dc06baedb8cf8be3c8e258e26a817db18ba6eca496"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/periodic_gauge_circle_spectral.json",
+      "bytes": 15246,
+      "sha256": "e8c01e51b7d18e981df019613ac94266393f7994c844d749c1a303c7a8beaac5"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/periodic_gauge_circle_spectral.stdout.txt",
+      "bytes": 15246,
+      "sha256": "e8c01e51b7d18e981df019613ac94266393f7994c844d749c1a303c7a8beaac5"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/periodic_gauge_circle_spectral.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 14,
+      "failed": 4
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/periodic_gauge.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.4710162919946015,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/periodic_gauge_packet_scaling": {
+    "key": "Continuum",
+    "name": "periodic_gauge_packet_scaling",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/packet_scaling.py",
+      "bytes": 9817,
+      "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/periodic_gauge.py",
+      "bytes": 1511,
+      "sha256": "deea79b1dd37a89a60780f9235570b092aee39b774d7de06200d0af4037eca4d"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/periodic_gauge_packet_scaling.receipt.json",
+      "bytes": 4496,
+      "sha256": "34c4162ba8dec18c878aaf9f2547c55c72da330fb713698a7b9a203b9144d42b"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/periodic_gauge_packet_scaling.json",
+      "bytes": 31994,
+      "sha256": "20591ea1d8034350a8b1825616814766368dfaeff33319125f551a1da668809a"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/periodic_gauge_packet_scaling.stdout.txt",
+      "bytes": 31994,
+      "sha256": "20591ea1d8034350a8b1825616814766368dfaeff33319125f551a1da668809a"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/periodic_gauge_packet_scaling.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 108,
+      "failed": 0
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/periodic_gauge.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.8645079997368157,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/reversed_shift_circle_spectral": {
+    "key": "Continuum",
+    "name": "reversed_shift_circle_spectral",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/circle_spectral.py",
+      "bytes": 6428,
+      "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/reversed_shift.py",
+      "bytes": 1512,
+      "sha256": "78c64119fad4d216f5425faacad61882cf82eacd88fbd721289e55a213dbeb5a"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reversed_shift_circle_spectral.receipt.json",
+      "bytes": 4502,
+      "sha256": "c7f63a097068cad6c7c6ba92197cd4e74eed6158ce51c117843d6ae6063f298b"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/reversed_shift_circle_spectral.json",
+      "bytes": 15278,
+      "sha256": "e30268b12cac1501d84be766cca06cfa52e6cb5e827210babc98714319c61492"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reversed_shift_circle_spectral.stdout.txt",
+      "bytes": 15278,
+      "sha256": "e30268b12cac1501d84be766cca06cfa52e6cb5e827210babc98714319c61492"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reversed_shift_circle_spectral.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 18,
+      "failed": 0
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/reversed_shift.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.5209723329171538,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/reversed_shift_packet_scaling": {
+    "key": "Continuum",
+    "name": "reversed_shift_packet_scaling",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/packet_scaling.py",
+      "bytes": 9817,
+      "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/reversed_shift.py",
+      "bytes": 1512,
+      "sha256": "78c64119fad4d216f5425faacad61882cf82eacd88fbd721289e55a213dbeb5a"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reversed_shift_packet_scaling.receipt.json",
+      "bytes": 4496,
+      "sha256": "90fcf457351a2718a3af7d3da174ed6f17a93deb62b0c95326b096c304124111"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/reversed_shift_packet_scaling.json",
+      "bytes": 31962,
+      "sha256": "d9a67c4e3f90f45e3f519bf4e0cba641dd417d214c548b7611370c4e8053ab02"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reversed_shift_packet_scaling.stdout.txt",
+      "bytes": 31962,
+      "sha256": "d9a67c4e3f90f45e3f519bf4e0cba641dd417d214c548b7611370c4e8053ab02"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/reversed_shift_packet_scaling.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 96,
+      "failed": 12
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/reversed_shift.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 1.0052163749933243,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/noninteger_geometry_circle_spectral": {
+    "key": "Continuum",
+    "name": "noninteger_geometry_circle_spectral",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/circle_spectral.py",
+      "bytes": 6428,
+      "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/noninteger_geometry.py",
+      "bytes": 1512,
+      "sha256": "89538b7eebe5e1c67e9aedfcc907d58489c0578e82fca9de5f90f717a2b8f60a"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/noninteger_geometry_circle_spectral.receipt.json",
+      "bytes": 4542,
+      "sha256": "ef4da390598c0c18f539e027c01fff1bce908da456f3314285bed9f6ba32cd41"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/noninteger_geometry_circle_spectral.json",
+      "bytes": 15283,
+      "sha256": "d52f086d83171ca7041b3f047168ededafe978c0def6896eabe47b7ca8757666"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/noninteger_geometry_circle_spectral.stdout.txt",
+      "bytes": 15283,
+      "sha256": "d52f086d83171ca7041b3f047168ededafe978c0def6896eabe47b7ca8757666"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/noninteger_geometry_circle_spectral.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 18,
+      "failed": 0
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/noninteger_geometry.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.5161273330450058,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/noninteger_geometry_packet_scaling": {
+    "key": "Continuum",
+    "name": "noninteger_geometry_packet_scaling",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/packet_scaling.py",
+      "bytes": 9817,
+      "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/noninteger_geometry.py",
+      "bytes": 1512,
+      "sha256": "89538b7eebe5e1c67e9aedfcc907d58489c0578e82fca9de5f90f717a2b8f60a"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/noninteger_geometry_packet_scaling.receipt.json",
+      "bytes": 4536,
+      "sha256": "3b91017bae647f13936b5664e75c57a1917ec2dc2a53cd4a116d566ba4487f31"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/noninteger_geometry_packet_scaling.json",
+      "bytes": 31652,
+      "sha256": "1ccc18234eb72d0fd548a0d37fa57113146564e8813ef5b1048dae656fe0ec6d"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/noninteger_geometry_packet_scaling.stdout.txt",
+      "bytes": 31652,
+      "sha256": "1ccc18234eb72d0fd548a0d37fa57113146564e8813ef5b1048dae656fe0ec6d"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/noninteger_geometry_packet_scaling.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 99,
+      "failed": 9
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/noninteger_geometry.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.9888827502727509,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/floor_round_circle_spectral": {
+    "key": "Continuum",
+    "name": "floor_round_circle_spectral",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/circle_spectral.py",
+      "bytes": 6428,
+      "sha256": "a438ff30f6218b3c5bade34bae91e7e918bfa4c94107f630455ff422554299b9"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/floor_round.py",
+      "bytes": 1512,
+      "sha256": "7234fec125ded2f5f047044d2085be0afd5275d4a05664b4ebf5bce7bd8c0e36"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/floor_round_circle_spectral.receipt.json",
+      "bytes": 4478,
+      "sha256": "79695dc6509fb7b7d0023a1823a0d9a85cbc181c6bcd93ffa19bc25e4a4d48d4"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/floor_round_circle_spectral.json",
+      "bytes": 15275,
+      "sha256": "53ab2fa0d3b2a475429d592a4960e1352e51e953c43e5dc273293f76f1e1d1bd"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/floor_round_circle_spectral.stdout.txt",
+      "bytes": 15275,
+      "sha256": "53ab2fa0d3b2a475429d592a4960e1352e51e953c43e5dc273293f76f1e1d1bd"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/floor_round_circle_spectral.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 18,
+      "failed": 0
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/floor_round.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.5180764999240637,
+    "original_timeout_seconds": 60.0
+  },
+  "Continuum/floor_round_packet_scaling": {
+    "key": "Continuum",
+    "name": "floor_round_packet_scaling",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/packet_scaling.py",
+      "bytes": 9817,
+      "sha256": "6880923b1442119696f5365a08dc2e49c3017a7825b8cfbddbcdad06cbf2c928"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/floor_round.py",
+      "bytes": 1512,
+      "sha256": "7234fec125ded2f5f047044d2085be0afd5275d4a05664b4ebf5bce7bd8c0e36"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/floor_round_packet_scaling.receipt.json",
+      "bytes": 4472,
+      "sha256": "fb559e4ee519695a69e40d003eca46176a65591e526506615cf0ff8388e8ed75"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/results/floor_round_packet_scaling.json",
+      "bytes": 31990,
+      "sha256": "3d4cfa3457ed16e2efc2493325e85e1ad84bf90eb9dbb4343ba3b4382bf73610"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/floor_round_packet_scaling.stdout.txt",
+      "bytes": 31990,
+      "sha256": "3d4cfa3457ed16e2efc2493325e85e1ad84bf90eb9dbb4343ba3b4382bf73610"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/logs/floor_round_packet_scaling.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 103,
+      "failed": 5
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/gapped_continuum_limit/controls/mutants/floor_round.py",
+    "path_mapping": "Only the exact complete result candidate pathname is relocated to the hash-pinned temporary candidate.py; all other raw bytes and typed values, including version fields, compare exactly.",
+    "original_elapsed_seconds": 0.9871077919378877,
+    "original_timeout_seconds": 60.0
+  }
+}

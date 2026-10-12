@@ -1,0 +1,5 @@
+# Mechanical preparation limits
+
+Preparation has read the complete three source notes, separate reviews, root coverage and selected complete scientific helpers. Whole-source variants are reconstructed from exact original edits; original numeric evidence is bound to accepted root coverage, not presented as a fresh all-row scientific review. No scientific program, cache, graph, vocabulary check or audit is executed during preparation. All future outcomes remain unknown. The only comparison relocation changes an exact candidate pathname in a copied expectation; every original stream and all other bytes remain intact. No environment, version, numerical or diagnostic mapping is approved. Later archives use separate maps; EVIDENCE_MAP and every declared input remain immutable after canonical caching.
+
+Same selected model family and reasoning effort, separate author/reviewer contexts with candidate formulas exposed; not blinded or diverse-family. Root supplied routes and is a coauthor. Mechanical packaging adds no independent scientific review.

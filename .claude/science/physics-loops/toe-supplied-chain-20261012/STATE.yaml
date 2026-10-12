@@ -1,0 +1,12 @@
+loop: toe-supplied-chain-20261012
+mode: milestone_snapshot
+delivery: milestone
+base_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+author_checker_pairing: same_selected_model_family_separate_contexts_not_blinded
+root_role: coauthor_not_independent_reviewer
+canonical_execution_at_preparation: pending_root_execution
+actual_execution_record: VERIFICATION_RESULT.json_when_present
+independent_landing_gates: pending
+sole_live_checkpoint: root_owned_campaign_checkpoint

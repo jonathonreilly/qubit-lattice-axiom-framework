@@ -1,0 +1,12 @@
+{
+  "N1": "pending",
+  "N5": "pending",
+  "base": "7c0570a4a20a768349f3d88960303f8637e7fe33",
+  "disposition": "partial_narrowing_proposal",
+  "gate_sha256": "594998b2573c2aa92db4f6541243ddef7e203e6c361ce3d8231c4f1e33710def",
+  "no_go_packet_pass": false,
+  "parent_receipt_sha256": "628e5759edca533dc8e9e80dba6d26cb38406536071d88bfd0d9ec3377876df5",
+  "review_sha256": "da47384bb8658c6abbca2e9cec5e75e2a40b55a4c0ef9b75e311ef5eceb23040",
+  "root_execution_acceptance": false,
+  "source_sha256": "1104de3922002720beecb7eb2bd106b64025aea0afb1e11b8f86750dfb59e30d"
+}

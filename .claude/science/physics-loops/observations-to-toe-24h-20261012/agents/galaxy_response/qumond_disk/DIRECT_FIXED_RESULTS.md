@@ -73,9 +73,16 @@ replace the previous full-sample score or determine a universal model rank.
 The gas-sheet normal field explains much of the change for the gas-rich
 objects; the nonlocal Poisson correction is additionally important in
 NGC2976. Both effects were derived and computed, not fitted to these rows.
-The released random-error bars omit the unpropagated geometry and source
-uncertainties. No chi-square significance, ephemeris likelihood or joint
+The released velocity-error bars include fitted and kinematic-asymmetry
+terms; geometry and source uncertainties remain unpropagated. No chi-square
+significance, ephemeris likelihood or joint
 probability is assigned.
+
+The subsequent primary-source check in `DIRECT_KINEMATIC_READOUT_FINDING.md`
+identifies an additional limitation: UGC07577's original reduction left gas
+pressure support uncorrected and named it as a significant exception. The
+current table's use as circular speed is therefore a load-bearing premise.
+No correction has been fitted or applied to these fixed results.
 
 This resolves a concrete forward-model gap at three fixed sources. It does
 not supply a full-PDE galaxy-calibrated a0 and therefore does not validate

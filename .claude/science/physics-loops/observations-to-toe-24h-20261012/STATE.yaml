@@ -23,17 +23,17 @@
   "claim_type_reason": "Open inverse-theory campaign",
   "audit_required_before_effective_retained": true,
   "bare_retained_allowed": false,
-  "next_exact_action": "Finish foreground numerical extension session27539 to the six frozen sources, preserving any gate failure. Parent authors shared response reconstruction with explicit external-field conversion; freeze the inverse family before fitting.",
+  "next_exact_action": "Foreground session3262 is validating original six inverse candidates; NGC2976 and UGC07577 pass, KK98-251 active. On completion run direct_inverse_results.py and then direct_validate_margin.py using the separately frozen margin candidate. Preserve actual rectangle violations, even when numerical gates pass. Carry original D joint and margin candidate to the six out-of-fit sources only according to the frozen protocol. Independent new reflection-witness review is active.",
   "runtime_directory": "/Users/jonBridger/.codex/campaigns/observations-to-toe-24h-20261012",
   "global_stop_condition": null,
-  "last_checkpoint_at": "2026-10-12T19:34:58.051901+00:00",
-  "current_block": "direct-field-expansion-and-response-inversion",
+  "last_checkpoint_at": "2026-10-12T20:34:11.834011+00:00",
+  "current_block": "direct-response-validation-and-quantum-witness",
   "current_main": "516cb69d8487ff04f8a48e065d3dcbe71d7dd237",
   "first_decisive_calculation": "Positive single-pole geometry witness 13/0; independent numerical derivative agrees on all 15 compared values. Not a Cassini fit.",
   "independent_checks_pending": [
-    "Solar external-field raw two-form comparison after worker freeze",
-    "Independent quantum-composition full proof/code review",
-    "Full QUMOND disk calibration beyond the algebraic response"
+    "Actual inverse candidate fields and separately frozen margin fields",
+    "Independent degree-three reflection witness, exact interval and prospective sampling check",
+    "Full original sphere-classification proof remains outside these narrow checks"
   ],
   "delegated_routes": [
     "gravity_measurements",
@@ -48,13 +48,19 @@
     "Quantum composition and causal physical realization of alternative boundary law",
     "Matter/gauge/cosmological architecture"
   ],
-  "last_pushed_commit": "16d5afff938e686711f7496651b3c5e906ba9b6f",
+  "last_pushed_commit": "8e1ead28c9",
   "blocks_completed": [
     "finite-source tensor witness",
     "positive scalar continuum and coherence",
     "finite local realization and joint approximation",
     "conditional two-radius source reconstruction",
-    "direct full-field forward comparison at three frozen galaxy sources"
+    "direct full-field forward comparison at three frozen galaxy sources",
+    "six-source frozen full-field expansion; all gates passed",
+    "positive solar response basis and independent synthetic inversion checks",
+    "frozen six-case shared-response LP, provisional before field checks",
+    "static action and two-scalar Lorentz promotion rejection; independent proof checks",
+    "full-sphere quantum visibility criterion; independent proof and 300-setting check",
+    "degree-three prospective reflection witness and exact rational expectation interval; independent review pending"
   ],
   "milestone_worktree": "/private/tmp/observations-positive-response-20261012",
   "milestone_branch": "codex/observations-positive-response-20261012",

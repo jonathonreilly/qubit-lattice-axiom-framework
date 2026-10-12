@@ -1,0 +1,112 @@
+{
+  "at": "2026-10-12T20:23:37.869479+00:00",
+  "source_sha256": "864f2d5cec34c3f36e98da398d6c6df27cb6d21a41d30f095edefe8e8fc15227",
+  "freeze_sha256": "e22afbb73bd0f46770610ec2d41fda5e7bdae0907935be98f7a41406e36f1786",
+  "rows": [
+    {
+      "polar_order": 4,
+      "settings_per_party": 36,
+      "k_prospective": 0.46961428106836767,
+      "probability_denominator": 999999999990,
+      "integer_sign_denominator": 10000000007,
+      "exact_gram_row_sum_max": "100000000132250819684",
+      "exact_norm_squared_upper_numerator": "100000000132250819684",
+      "exact_norm_squared_upper_denominator": "100000000140000000049",
+      "exact_integer_norm_bound_pass": true,
+      "candidate_weighted_trace_norm": 1.0834684433484003,
+      "certified_witness_candidate_value_at_V1": 1.0834684425126637,
+      "cosine_control": 0.999999567245123,
+      "witness_candidate_visibility_threshold": 0.922961814818443,
+      "candidate_values": [
+        {
+          "visibility": 0.9,
+          "B": 0.9751215982613973,
+          "above_quantum_bound": -0.024878401738602673
+        },
+        {
+          "visibility": 0.95,
+          "B": 1.0292950203870306,
+          "above_quantum_bound": 0.02929502038703058
+        },
+        {
+          "visibility": 1.0,
+          "B": 1.0834684425126637,
+          "above_quantum_bound": 0.08346844251266372
+        }
+      ],
+      "artifact_sha256": "c1a465824111bdb47e253aee05e0d31403153c1d549097abbc9c771838298f27",
+      "smallest_weighted_eigenvalue": -0.006368521971225578
+    },
+    {
+      "polar_order": 8,
+      "settings_per_party": 136,
+      "k_prospective": 0.46961428106836767,
+      "probability_denominator": 999999999970,
+      "integer_sign_denominator": 10000000038,
+      "exact_gram_row_sum_max": "100000000745443301547",
+      "exact_norm_squared_upper_numerator": "100000000745443301547",
+      "exact_norm_squared_upper_denominator": "100000000760000001444",
+      "exact_integer_norm_bound_pass": true,
+      "candidate_weighted_trace_norm": 1.103970103412492,
+      "certified_witness_candidate_value_at_V1": 1.1039700991028498,
+      "cosine_control": 0.9999999886743083,
+      "witness_candidate_visibility_threshold": 0.9058216348546559,
+      "candidate_values": [
+        {
+          "visibility": 0.9,
+          "B": 0.9935730891925648,
+          "above_quantum_bound": -0.006426910807435182
+        },
+        {
+          "visibility": 0.95,
+          "B": 1.0487715941477074,
+          "above_quantum_bound": 0.048771594147707376
+        },
+        {
+          "visibility": 1.0,
+          "B": 1.1039700991028498,
+          "above_quantum_bound": 0.10397009910284982
+        }
+      ],
+      "artifact_sha256": "890a7049dacf4c79cb0b7fba74df0c4eedd83e5f3c68fe8006386cfe3d09feef",
+      "smallest_weighted_eigenvalue": -0.007430532740658992
+    },
+    {
+      "polar_order": 12,
+      "settings_per_party": 300,
+      "k_prospective": 0.46961428106836767,
+      "probability_denominator": 1000000000000,
+      "integer_sign_denominator": 10000000077,
+      "exact_gram_row_sum_max": "100000001528224292312",
+      "exact_norm_squared_upper_numerator": "100000001528224292312",
+      "exact_norm_squared_upper_denominator": "100000001540000005929",
+      "exact_integer_norm_bound_pass": true,
+      "candidate_weighted_trace_norm": 1.1057890149896812,
+      "certified_witness_candidate_value_at_V1": 1.1057890065181426,
+      "cosine_control": 0.99999999165836,
+      "witness_candidate_visibility_threshold": 0.9043316528790188,
+      "candidate_values": [
+        {
+          "visibility": 0.9,
+          "B": 0.9952101058663284,
+          "above_quantum_bound": -0.0047898941336715906
+        },
+        {
+          "visibility": 0.95,
+          "B": 1.0504995561922355,
+          "above_quantum_bound": 0.05049955619223545
+        },
+        {
+          "visibility": 1.0,
+          "B": 1.1057890065181426,
+          "above_quantum_bound": 0.1057890065181426
+        }
+      ],
+      "artifact_sha256": "6311396ee331802bdf67757cd312e9d0f51ecc35a7bbd22f4d93b6769adbcdeb",
+      "smallest_weighted_eigenvalue": -0.0075588718841860135
+    }
+  ],
+  "final_declared_grid": 12,
+  "elapsed_seconds": 1.4479618072509766,
+  "limits": "Exact integer algebra bounds the norm of the defined sign matrix, so the corresponding linear quantum bound is rigorous for exact stated probability weights. Candidate kernel/witness expectation is floating numerical evidence, not an interval certificate. Prospective mathematics, no observed experiment, no full-sphere tail or membership claim from finite grids."
+}

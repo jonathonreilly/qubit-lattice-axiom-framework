@@ -1,0 +1,28 @@
+--- reviewed original
++++ current narrow fix
+@@ -54,7 +54,7 @@
+ 
+ ## What the D-family condition actually establishes
+ 
+-For a vector U and A=|U|>0,
++For a vector U and A=|U|>0 away from a response knot,
+ 
+     partial_U F(|U|^2)=2 N(A) U,
+     Hessian_U F=2 N(A) I + 2 N'(A) U U^T/A.
+@@ -72,10 +72,13 @@
+ 
+     w_j/d_j <= 1+sum_(k>j) w_k.
+ 
+-Consequently D makes the function U -> F(|U|^2) convex, including the
+-continuous joins. At U=0 the low-A branch is quadratic, so no singular
++At a nonzero-weight knot the classical Hessian generally does not exist;
++the gradient is continuous and the two one-sided Hessians have the stated
++nonnegative eigenvalues under D. Consequently D makes the function
++U -> F(|U|^2) convex across the smooth intervals and these joins.
++At U=0 the low-A branch is quadratic, so no singular
+ exception is needed. A strict version makes the local longitudinal
+-Jacobian positive. Family M only guarantees positive, nonincreasing N;
++Jacobian positive on each smooth interval. Family M only guarantees positive, nonincreasing N;
+ it can have a negative differential radial response on a steep interval.
+ 
+ This result concerns one static constitutive term. It does **not** establish

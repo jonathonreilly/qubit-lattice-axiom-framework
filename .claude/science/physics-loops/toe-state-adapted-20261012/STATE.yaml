@@ -1,0 +1,11 @@
+loop: toe-state-adapted-20261012
+mode: milestone_snapshot
+delivery: milestone
+base_revision: cb882f7c68032986900dec2aaf24617ff3274c08
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+root_role: coauthor_and_control_repair_author
+root_acceptance_at_preparation: bound
+canonical_execution_at_preparation: pending_root_execution
+actual_execution_record: VERIFICATION_RESULT.json_when_present
+independent_landing_gates: pending

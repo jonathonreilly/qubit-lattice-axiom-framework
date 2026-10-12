@@ -1,0 +1,32 @@
+[
+  {
+    "name": "wrong_frame_sign",
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/wrong_frame_sign.py",
+      "bytes": 988,
+      "sha256": "b5a2ea74d2cce5e93aa2dc9293139a181412441b7d46cdfe139d744708a8fe49"
+    },
+    "original_candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/candidate.py",
+      "bytes": 988,
+      "sha256": "a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5"
+    },
+    "literal_diff": "--- candidate.py\n+++ wrong_frame_sign.py\n@@ -1,7 +1,7 @@\n \"\"\"Specified coefficient frame and embedding; source-mutated in controls.\"\"\"\n import numpy as np\n \n-FRAME_SIGN = -1\n+FRAME_SIGN = +1\n CONTINUUM_UNROTATE = True\n \n def parameters(a, m=1., v=1.):\n",
+    "scope": "Same original material candidate mutation in original and corrected complete helper; no new design."
+  },
+  {
+    "name": "omit_continuum_unrotation",
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/omit_continuum_unrotation.py",
+      "bytes": 989,
+      "sha256": "cc273d77ea9a0b07945999f6bb1c2079a2a75586bcdddad92d85ec9e527b0e5c"
+    },
+    "original_candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/candidate.py",
+      "bytes": 988,
+      "sha256": "a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5"
+    },
+    "literal_diff": "--- candidate.py\n+++ omit_continuum_unrotation.py\n@@ -2,7 +2,7 @@\n import numpy as np\n \n FRAME_SIGN = -1\n-CONTINUUM_UNROTATE = True\n+CONTINUUM_UNROTATE = False\n \n def parameters(a, m=1., v=1.):\n     sigma=np.sqrt(m*m/4+v*v/(a*a))\n",
+    "scope": "Same original material candidate mutation in original and corrected complete helper; no new design."
+  }
+]

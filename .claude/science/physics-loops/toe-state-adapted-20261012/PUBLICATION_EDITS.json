@@ -1,0 +1,327 @@
+{
+  "mathematical_changes": [],
+  "pairing": "Same selected model family and reasoning effort, separate reviewer context with its disclosed neutral-plan and later formula exposure; not blinded or diverse-family. Root supplied the candidate route and authored the narrow control repair. Packaging and reproduction add no independent science or audit.",
+  "outputs": [
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/STATE_ADAPTED_REFINEMENT_PROBE.md",
+      "source_sha256": "459868fcd7f80fa3063c9e7f7a6d62df393eb80f2edc72b221ecda533ba2a971",
+      "source_bytes": 30981,
+      "publication_path": "docs/STATE_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "c5ec05a5874ac87974ee228ed155d957605119d3d7f2b6e1fdceebddae582fe3",
+      "publication_bytes": 37237,
+      "edits": [
+        {
+          "category": "metadata_and_review_chronology",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\nconditional_surface_status: \"State-adapted even-spin inductive limit with unchanged geometric Cauchy sections and actual mixed-flow limits, conditional on pinned supplied-chain parents\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nclaim_id: state_adapted_refinement_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_type_reason: \"Conditional analytic theorem in the supplied free-chain model; finite diagnostics and arithmetic repair are supporting evidence.\"\nclaim_scope: \"For the supplied massive free one-dimensional chain, Bogoliubov-conjugated even refinements preserve the chosen state exactly and have the same intrinsic Cauchy sections, geometric local quotient and actual fixed mixed-flow limits as Haar refinement.\"\nupstream_dependencies:\n  - concrete_gapped_chain_bounded_theorem_note_2026-10-12\n  - local_even_continuum_bounded_theorem_note_2026-10-12\n  - continuum_local_boost_bounded_theorem_note_2026-10-12\n  - microscopic_local_boost_limit_bounded_theorem_note_2026-10-12\n  - mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12\n  - dyadic_even_refinement_bounded_theorem_note_2026-10-12\nrunner: scripts/state_adapted_refinement_2026_10_12.py\nartifact_role: theorem\ntarget_claim_id: null\ntarget_blocker_text: \"Compatibility of exact selected-state refinement with intrinsic geometric sections and actual mixed-flow limits.\"\nsource_of_blocker_text: user_goal\nnext_trace_action: \"Use the proved section-level equivalence while retaining finite-scale locality and energy witnesses; no broader physical realization is claimed.\"\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\nconditional_surface_status: \"State-adapted even-spin inductive limit with unchanged geometric Cauchy sections and actual mixed-flow limits, conditional on pinned supplied-chain parents\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n**Publication chronology:** The scientific source below is frozen at SHA-256 `459868fcd7f80fa3063c9e7f7a6d62df393eb80f2edc72b221ecda533ba2a971`. The later fresh source review and root source-bound verification accepted the frozen theorem and narrow arithmetic repair at this bounded scope. Original pending-review and 85/86 author-result statements remain historical records. The separately corrected helper is not a rewrite of the original run.\n",
+          "occurrences": 1,
+          "reason": "Complete metadata and current/historical review distinction; scientific body unchanged."
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence and review record\n\n**Author/checker pairing:** Same selected model family and reasoning effort, separate reviewer context with its disclosed neutral-plan and later formula exposure; not blinded or diverse-family. Root supplied the candidate route and authored the narrow control repair. Packaging and reproduction add no independent science or audit.\n\nThe specified finite-scale adapted maps have infinite support and an explicit even-observable energy-intertwining defect. Fixed-spacing exponential coefficient tails and fixed-observable convergence do not imply uniform physical tail constants, operator-unit-ball convergence, Haar H2 rates, or a theorem about all state-compatible refinements.\n\nThe frozen original baseline remains 85 true / 1 false with exit 1; the original wrong-frame and omitted-unrotation jobs remain 69/17 and 84/2. The separately frozen two-predicate half-angle supplement remains 2/0. Root then changed only the symbolic dispersion predicate to reduce its actual residual by the exact half-angle unit-circle identity. The separate corrected whole-helper baseline is 86/0; the same two original candidate mutants under that helper are 70/16 and 85/1. All other raw lines remain exact, apart from each derived summary. Original false rows, nonzero exits, full receipts and every survivor are preserved in the [evidence map](../.claude/science/physics-loops/toe-state-adapted-20261012/EVIDENCE_MAP.json) and [repair source map](../.claude/science/physics-loops/toe-state-adapted-20261012/ARITHMETIC_REPAIR_SOURCE_MAP.json). The historical failed baseline is not counted as a mutation.\n\nThe canonical primary executes the corrected 86-row baseline and original two-row supplement. Five separate nonbaseline jobs reproduce the historical failed baseline, both original mutant jobs, and both corrected mutant jobs. No new mutation design or tolerance change is introduced. Original receipts establish the Python/interpreter identities. Later package-version observations remain explicitly post-run observations; no per-run library lock is inferred. The only allowed stream comparison edit is the exact candidate pathname token, with complete originals retained.\n\nDirect mathematical parents are [Concrete Gapped Chain](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md), [Local Even Continuum](LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md), [Continuum Local Boost](CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md), [Microscopic Local Boost Limit](MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md), [Mixed Local Poincare Correlations](MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md), [Dyadic Even Refinement](DYADIC_EVEN_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md). Local-even-net-sections is adjacent context only and is not imported. General CAR, operator-algebraic renormalization and inductive-limit machinery are established prior art, explicitly credited above.\n\nPeriodic matrices and uncertified finite-cutoff Haar quadrature are diagnostics; the strong limits, local quotient and witnesses rest on the analytic proof and accepted source review when recorded. Source N1–N8 and literal N5 output remain scoped to the specified maps, with no exhaustive no-go or N-gate PASS claimed. The [execution contract](../.claude/science/physics-loops/toe-state-adapted-20261012/EXECUTION_CONTRACT.md) preserves full INNER/OUTER records. Canonical execution is pending root execution at preparation; actual outcomes must be read from the later verification record. Global combined validation, strict audit lint and independent audit remain landing obligations. No retained promotion, audit verdict, or Lean claim is made.\n\nThe separate reviewer integrity fixture preserves an exit-only survivor: the first sentinel child exited 7 while its outer driver exited 0; both child statuses and complete streams remain archived. Outer exit 0 alone is not evidence that every child check passed. Valid, tampered-checker and exit-only fixture records are retained, without rerunning scientific helpers.\n\nThe reviewer used a separate many-body Jordan-Wigner route and a direct Fourier strong-limit argument; its numerical strong-limit diagnostic shares a Fourier identity with the author, so implementation separation is not mathematical independence for that subcheck. Finite-cutoff quadrature is not interval-certified. No diverse-family or blinded review is claimed.\n",
+      "mathematical_changes": []
+    },
+    {
+      "kind": "whole_source_orchestration",
+      "publication_path": "scripts/state_adapted_refinement_2026_10_12.py",
+      "publication_sha256": "4dfa3b2a877f810d1102ad526c11724049d0ab80d63f450b362aa045250bb17e",
+      "publication_bytes": 10016,
+      "template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_publication_preparation/runner_template.py",
+      "template_sha256": "2f16691b8459702c551fa5e21ab51815bbe67c59cdfb576487354844db3bbe0d",
+      "literal_substitutions": {
+        "__AUDIT_INPUTS__": "['docs/STATE_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/DYADIC_EVEN_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md', '.claude/science/physics-loops/toe-state-adapted-20261012/RUNTIME.json', '.claude/science/physics-loops/toe-state-adapted-20261012/PUBLICATION_EDITS.json', '.claude/science/physics-loops/toe-state-adapted-20261012/EVIDENCE_MAP.json', '.claude/science/physics-loops/toe-state-adapted-20261012/MUTATION_SOURCE_MAP.json', '.claude/science/physics-loops/toe-state-adapted-20261012/ARITHMETIC_REPAIR_SOURCE_MAP.json', '.claude/science/physics-loops/toe-state-adapted-20261012/EXPECTED_RECORD_IDENTITIES.json', '.claude/science/physics-loops/toe-state-adapted-20261012/SPECIFICATIONS.json', '.claude/science/physics-loops/toe-state-adapted-20261012/RUNNER_TEMPLATE.py', '.claude/science/physics-loops/toe-state-adapted-20261012/reconstruct.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/00d14d807196ee6e420dbb543a73dc8ad0d475e540b1650bf925836139357678.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/0c3a179a2310c0e72f64e5e5c48ba85dbaf66228bb7a08cab20ce839262888a1.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/1aa3c3e09ee5cfc82e1ffe13b12c7c4e3c0cad9c3c1e11c60cfe6f2a62912dc8.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/3d5b148f65fb941afaee70e300b97aac1b3f9ba747469702e724f4a50185a8f5.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/48a98dd055d874a1d06d4e7fd7843c121f221812c6ff3c4a6ac3af46e4728fe5.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/4c68256f1d60191f0eced0d10370fdbadb3b3462de50d5d67bb3c79ead650166.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/770e4bf3d208f3a6cbb9e34cd491747735ea6ec7621616c7a9def44212f2906b.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/a3fd1b36d0de4dda9ac4a83735c3e650202b7dace578969f7ed9ede14a369511.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/a989e993e3a1868e2967dec6f43e5ab3b6dae4c844f3466c5be672c27dd4ef58.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/ae7089947b5c5a2a158ff61924d3e1061464698ab90ea5c401d5d5f5eeb9d78c.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/b0008df1d04c3348474af28b7cf55abf40f8800350595d27c0d55b331abbb982.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/b5a2ea74d2cce5e93aa2dc9293139a181412441b7d46cdfe139d744708a8fe49.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/cc273d77ea9a0b07945999f6bb1c2079a2a75586bcdddad92d85ec9e527b0e5c.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/d39f2bbee80e5351a93fef1334ebb9168e2ad16e367cae1b659ed5a726685f75.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/d8934d593355a6076ef9f188df0acf2a666bdab2e8a37114e86f63ecac52a6f2.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/e15a63f74361154d68d630f855bee55fd8e0c39b56933af5e142173063f0af93.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/e73d595995f41edf3ca14e218c1010d865081d8136ebec953960dd2475cc8051.py', '.claude/science/physics-loops/toe-state-adapted-20261012/runtime/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.py']",
+        "__PACKET__": ".claude/science/physics-loops/toe-state-adapted-20261012",
+        "__KEY__": "StateAdapted"
+      },
+      "mathematical_changes": []
+    }
+  ],
+  "runtime_resources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/check_controls_corrected.py",
+      "bytes": 7394,
+      "sha256": "623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b",
+      "packet_path": "runtime/623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/candidate.py",
+      "bytes": 988,
+      "sha256": "a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5",
+      "packet_path": "runtime/a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/check_half_angle.py",
+      "bytes": 1130,
+      "sha256": "7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6",
+      "packet_path": "runtime/7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/check_controls.py",
+      "bytes": 7027,
+      "sha256": "8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f",
+      "packet_path": "runtime/8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/wrong_frame_sign.py",
+      "bytes": 988,
+      "sha256": "b5a2ea74d2cce5e93aa2dc9293139a181412441b7d46cdfe139d744708a8fe49",
+      "packet_path": "runtime/b5a2ea74d2cce5e93aa2dc9293139a181412441b7d46cdfe139d744708a8fe49.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/omit_continuum_unrotation.py",
+      "bytes": 989,
+      "sha256": "cc273d77ea9a0b07945999f6bb1c2079a2a75586bcdddad92d85ec9e527b0e5c",
+      "packet_path": "runtime/cc273d77ea9a0b07945999f6bb1c2079a2a75586bcdddad92d85ec9e527b0e5c.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/dyadic_refinement_worktree/docs/audit/scripts/check_changed_audit_evidence.py",
+      "bytes": 7903,
+      "sha256": "94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a",
+      "packet_path": "runtime/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/dyadic_refinement_worktree/docs/audit/scripts/run_citation_graph_build.py",
+      "bytes": 6826,
+      "sha256": "e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42",
+      "packet_path": "runtime/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/dyadic_refinement_worktree/docs/audit/scripts/write_citation_graph_manifest.py",
+      "bytes": 2049,
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "packet_path": "runtime/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/dyadic_refinement_worktree/scripts/runner_cache.py",
+      "bytes": 24941,
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "packet_path": "runtime/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/dyadic_refinement_worktree/scripts/vocab_lint.py",
+      "bytes": 14183,
+      "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+      "packet_path": "runtime/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finalize_state_adapted_root_gate.py",
+      "bytes": 7601,
+      "sha256": "3d5b148f65fb941afaee70e300b97aac1b3f9ba747469702e724f4a50185a8f5",
+      "packet_path": "runtime/3d5b148f65fb941afaee70e300b97aac1b3f9ba747469702e724f4a50185a8f5.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_author_root_check_execution_v2/source.py",
+      "bytes": 6392,
+      "sha256": "e15a63f74361154d68d630f855bee55fd8e0c39b56933af5e142173063f0af93",
+      "packet_path": "runtime/e15a63f74361154d68d630f855bee55fd8e0c39b56933af5e142173063f0af93.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_independent_root_check_execution/source.py",
+      "bytes": 7800,
+      "sha256": "a989e993e3a1868e2967dec6f43e5ab3b6dae4c844f3466c5be672c27dd4ef58",
+      "packet_path": "runtime/a989e993e3a1868e2967dec6f43e5ab3b6dae4c844f3466c5be672c27dd4ef58.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/frozen/check_half_angle.py",
+      "bytes": 1130,
+      "sha256": "7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6",
+      "packet_path": "runtime/7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/record_process.py",
+      "bytes": 2846,
+      "sha256": "0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951",
+      "packet_path": "runtime/0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/reproduce.py",
+      "bytes": 1359,
+      "sha256": "d8934d593355a6076ef9f188df0acf2a666bdab2e8a37114e86f63ecac52a6f2",
+      "packet_path": "runtime/d8934d593355a6076ef9f188df0acf2a666bdab2e8a37114e86f63ecac52a6f2.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/summarize_evidence.py",
+      "bytes": 2986,
+      "sha256": "1aa3c3e09ee5cfc82e1ffe13b12c7c4e3c0cad9c3c1e11c60cfe6f2a62912dc8",
+      "packet_path": "runtime/1aa3c3e09ee5cfc82e1ffe13b12c7c4e3c0cad9c3c1e11c60cfe6f2a62912dc8.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/author_final/state_adapted_refinement/candidate.py",
+      "bytes": 988,
+      "sha256": "a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5",
+      "packet_path": "runtime/a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/author_final/state_adapted_refinement/check_controls.py",
+      "bytes": 7027,
+      "sha256": "8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f",
+      "packet_path": "runtime/8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/author_final/state_adapted_refinement/check_half_angle.py",
+      "bytes": 1130,
+      "sha256": "7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6",
+      "packet_path": "runtime/7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/author_final/state_adapted_refinement/frozen/check_half_angle.py",
+      "bytes": 1130,
+      "sha256": "7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6",
+      "packet_path": "runtime/7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/author_final/state_adapted_refinement/record_process.py",
+      "bytes": 2846,
+      "sha256": "0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951",
+      "packet_path": "runtime/0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/author_final/state_adapted_refinement/reproduce.py",
+      "bytes": 1359,
+      "sha256": "d8934d593355a6076ef9f188df0acf2a666bdab2e8a37114e86f63ecac52a6f2",
+      "packet_path": "runtime/d8934d593355a6076ef9f188df0acf2a666bdab2e8a37114e86f63ecac52a6f2.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/author_final/state_adapted_refinement/summarize_evidence.py",
+      "bytes": 2986,
+      "sha256": "1aa3c3e09ee5cfc82e1ffe13b12c7c4e3c0cad9c3c1e11c60cfe6f2a62912dc8",
+      "packet_path": "runtime/1aa3c3e09ee5cfc82e1ffe13b12c7c4e3c0cad9c3c1e11c60cfe6f2a62912dc8.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/author_final/state_adapted_refinement/variants/omit_continuum_unrotation.py",
+      "bytes": 989,
+      "sha256": "cc273d77ea9a0b07945999f6bb1c2079a2a75586bcdddad92d85ec9e527b0e5c",
+      "packet_path": "runtime/cc273d77ea9a0b07945999f6bb1c2079a2a75586bcdddad92d85ec9e527b0e5c.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/author_final/state_adapted_refinement/variants/wrong_frame_sign.py",
+      "bytes": 988,
+      "sha256": "b5a2ea74d2cce5e93aa2dc9293139a181412441b7d46cdfe139d744708a8fe49",
+      "packet_path": "runtime/b5a2ea74d2cce5e93aa2dc9293139a181412441b7d46cdfe139d744708a8fe49.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/check_fock.py",
+      "bytes": 8896,
+      "sha256": "0c3a179a2310c0e72f64e5e5c48ba85dbaf66228bb7a08cab20ce839262888a1",
+      "packet_path": "runtime/0c3a179a2310c0e72f64e5e5c48ba85dbaf66228bb7a08cab20ce839262888a1.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/check_strong_limit.py",
+      "bytes": 2327,
+      "sha256": "a3fd1b36d0de4dda9ac4a83735c3e650202b7dace578969f7ed9ede14a369511",
+      "packet_path": "runtime/a3fd1b36d0de4dda9ac4a83735c3e650202b7dace578969f7ed9ede14a369511.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/execute_checks.py",
+      "bytes": 3452,
+      "sha256": "e73d595995f41edf3ca14e218c1010d865081d8136ebec953960dd2475cc8051",
+      "packet_path": "runtime/e73d595995f41edf3ca14e218c1010d865081d8136ebec953960dd2475cc8051.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/integrity_01/fixtures/exit_only_survivor/check_fock.py",
+      "bytes": 223,
+      "sha256": "ae7089947b5c5a2a158ff61924d3e1061464698ab90ea5c401d5d5f5eeb9d78c",
+      "packet_path": "runtime/ae7089947b5c5a2a158ff61924d3e1061464698ab90ea5c401d5d5f5eeb9d78c.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/integrity_01/fixtures/exit_only_survivor/check_strong_limit.py",
+      "bytes": 223,
+      "sha256": "770e4bf3d208f3a6cbb9e34cd491747735ea6ec7621616c7a9def44212f2906b",
+      "packet_path": "runtime/770e4bf3d208f3a6cbb9e34cd491747735ea6ec7621616c7a9def44212f2906b.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/integrity_01/fixtures/exit_only_survivor/execute_checks.py",
+      "bytes": 3452,
+      "sha256": "e73d595995f41edf3ca14e218c1010d865081d8136ebec953960dd2475cc8051",
+      "packet_path": "runtime/e73d595995f41edf3ca14e218c1010d865081d8136ebec953960dd2475cc8051.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/integrity_01/fixtures/tampered_checker/check_fock.py",
+      "bytes": 269,
+      "sha256": "b0008df1d04c3348474af28b7cf55abf40f8800350595d27c0d55b331abbb982",
+      "packet_path": "runtime/b0008df1d04c3348474af28b7cf55abf40f8800350595d27c0d55b331abbb982.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/integrity_01/fixtures/tampered_checker/check_strong_limit.py",
+      "bytes": 223,
+      "sha256": "770e4bf3d208f3a6cbb9e34cd491747735ea6ec7621616c7a9def44212f2906b",
+      "packet_path": "runtime/770e4bf3d208f3a6cbb9e34cd491747735ea6ec7621616c7a9def44212f2906b.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/integrity_01/fixtures/tampered_checker/execute_checks.py",
+      "bytes": 3452,
+      "sha256": "e73d595995f41edf3ca14e218c1010d865081d8136ebec953960dd2475cc8051",
+      "packet_path": "runtime/e73d595995f41edf3ca14e218c1010d865081d8136ebec953960dd2475cc8051.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/integrity_01/fixtures/valid/check_fock.py",
+      "bytes": 223,
+      "sha256": "770e4bf3d208f3a6cbb9e34cd491747735ea6ec7621616c7a9def44212f2906b",
+      "packet_path": "runtime/770e4bf3d208f3a6cbb9e34cd491747735ea6ec7621616c7a9def44212f2906b.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/integrity_01/fixtures/valid/check_strong_limit.py",
+      "bytes": 223,
+      "sha256": "770e4bf3d208f3a6cbb9e34cd491747735ea6ec7621616c7a9def44212f2906b",
+      "packet_path": "runtime/770e4bf3d208f3a6cbb9e34cd491747735ea6ec7621616c7a9def44212f2906b.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/integrity_01/fixtures/valid/execute_checks.py",
+      "bytes": 3452,
+      "sha256": "e73d595995f41edf3ca14e218c1010d865081d8136ebec953960dd2475cc8051",
+      "packet_path": "runtime/e73d595995f41edf3ca14e218c1010d865081d8136ebec953960dd2475cc8051.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/prepare_integrity_fixture.py",
+      "bytes": 3351,
+      "sha256": "48a98dd055d874a1d06d4e7fd7843c121f221812c6ff3c4a6ac3af46e4728fe5",
+      "packet_path": "runtime/48a98dd055d874a1d06d4e7fd7843c121f221812c6ff3c4a6ac3af46e4728fe5.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/repair_final/check_controls_corrected.py",
+      "bytes": 7394,
+      "sha256": "623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b",
+      "packet_path": "runtime/623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/repair_source_snapshot/check_controls_corrected.py",
+      "bytes": 7394,
+      "sha256": "623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b",
+      "packet_path": "runtime/623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/run_integrity_fixture.py",
+      "bytes": 5167,
+      "sha256": "00d14d807196ee6e420dbb543a73dc8ad0d475e540b1650bf925836139357678",
+      "packet_path": "runtime/00d14d807196ee6e420dbb543a73dc8ad0d475e540b1650bf925836139357678.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement_review/seal_review.py",
+      "bytes": 6049,
+      "sha256": "4c68256f1d60191f0eced0d10370fdbadb3b3462de50d5d67bb3c79ead650166",
+      "packet_path": "runtime/4c68256f1d60191f0eced0d10370fdbadb3b3462de50d5d67bb3c79ead650166.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/verify_state_adapted_author_root.py",
+      "bytes": 6386,
+      "sha256": "d39f2bbee80e5351a93fef1334ebb9168e2ad16e367cae1b659ed5a726685f75",
+      "packet_path": "runtime/d39f2bbee80e5351a93fef1334ebb9168e2ad16e367cae1b659ed5a726685f75.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/verify_state_adapted_author_root_v2.py",
+      "bytes": 6392,
+      "sha256": "e15a63f74361154d68d630f855bee55fd8e0c39b56933af5e142173063f0af93",
+      "packet_path": "runtime/e15a63f74361154d68d630f855bee55fd8e0c39b56933af5e142173063f0af93.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/verify_state_adapted_independent_evidence_root.py",
+      "bytes": 7800,
+      "sha256": "a989e993e3a1868e2967dec6f43e5ab3b6dae4c844f3466c5be672c27dd4ef58",
+      "packet_path": "runtime/a989e993e3a1868e2967dec6f43e5ab3b6dae4c844f3466c5be672c27dd4ef58.py"
+    }
+  ],
+  "excluded_imports": [
+    "local-even-net-sections theorem"
+  ],
+  "runtime_wrapper": "Complete original and separately corrected whole helpers. Only candidate pathname token relocation. Actual Python/interpreter checked against original receipts; no historical library version invented. All raw nonzero exits and survivors preserved."
+}

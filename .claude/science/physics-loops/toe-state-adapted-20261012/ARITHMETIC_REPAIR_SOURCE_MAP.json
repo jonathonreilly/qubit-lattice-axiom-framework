@@ -1,0 +1,25 @@
+{
+  "original_helper": {
+    "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/check_controls.py",
+    "bytes": 7027,
+    "sha256": "8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f"
+  },
+  "corrected_helper": {
+    "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/check_controls_corrected.py",
+    "bytes": 7394,
+    "sha256": "623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b"
+  },
+  "literal_diff": "--- original/check_controls.py\n+++ check_controls_corrected.py\n@@ -56,7 +56,13 @@\n emit('symbolic/pole_residue',sy.cancel(residue-expected)==0,residue=str(sy.factor(residue)))\n x,v,a,m=sy.symbols('x v a m',real=True,nonzero=True)\n gap=(m*m+16*v*v*sy.sin(x/2)**2/a**2)-(m*m+4*v*v*sy.sin(x)**2/a**2)\n-emit('symbolic/dispersion_gap',sy.trigsimp(sy.expand_trig(gap-16*v*v*sy.sin(x/2)**4/a**2))==0)\n+# Transparent post-observation arithmetic repair; original false row retained.\n+# Reduce the actual residual, then impose the exact half-angle unit circle.\n+ss,cc=sy.symbols('ss cc',real=True)\n+residual=gap-16*v*v*sy.sin(x/2)**4/a**2\n+half_residual=residual.subs(sy.sin(x),2*sy.sin(x/2)*sy.cos(x/2))\n+polynomial=sy.expand((a*a/(16*v*v))*half_residual.subs({sy.sin(x/2):ss,sy.cos(x/2):cc}))\n+emit('symbolic/dispersion_gap',sy.expand(polynomial.subs(cc*cc,1-ss*ss))==0)\n \n for a in [1.,.5]:\n  for n in [8,16]:\n",
+  "protocol": {
+    "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/PROTOCOL.md",
+    "bytes": 1452,
+    "sha256": "1bacf6fc9aee4083734387601c12bd9f8f16c90f30b64138add3f3752900b4c8"
+  },
+  "root_comparison": {
+    "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/ROOT_COMPARISON.json",
+    "bytes": 5762,
+    "sha256": "3a232d552498bd79e7c40335736e386b50c8ce86e362e2c8f89d6632d0175434"
+  },
+  "only_predicate": "symbolic/dispersion_gap",
+  "classification": "Separate post-observation exact arithmetic repair, not independent discovery; original false row and exits remain."
+}

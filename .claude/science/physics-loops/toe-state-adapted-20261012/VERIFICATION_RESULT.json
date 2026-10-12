@@ -1,0 +1,125 @@
+{
+  "status": "actual_scoped_verification_completed",
+  "base": "cb882f7c68032986900dec2aaf24617ff3274c08",
+  "canonical": [
+    {
+      "key": "StateAdapted",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/state_adapted_worktree/logs/runner-cache/state_adapted_refinement_2026_10_12.txt",
+        "bytes": 28708,
+        "sha256": "52a8511d8d5f6076de63ac945658ee0095a155cfae21957a23de0ea35aea663b"
+      },
+      "counts": {
+        "passed": 88,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "corrected_baseline",
+          "role": "corrected_baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 86,
+            "failed": 0
+          },
+          "elapsed_seconds": 1.7741164593026042,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "original_half_angle",
+          "role": "post_observation_supplement",
+          "exit_code": 0,
+          "counts": {
+            "passed": 2,
+            "failed": 0
+          },
+          "elapsed_seconds": 0.386698208283633,
+          "timeout_seconds": 60
+        }
+      ]
+    }
+  ],
+  "nonbaseline": [
+    {
+      "key": "StateAdapted",
+      "cases": [
+        {
+          "name": "historical_baseline",
+          "role": "historical_failed_baseline",
+          "exit_code": 1,
+          "counts": {
+            "passed": 85,
+            "failed": 1
+          },
+          "elapsed_seconds": 1.2149632913060486,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "original_wrong_frame_sign",
+          "role": "original_mutant",
+          "exit_code": 1,
+          "counts": {
+            "passed": 69,
+            "failed": 17
+          },
+          "elapsed_seconds": 0.4767678752541542,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "original_omit_continuum_unrotation",
+          "role": "original_mutant",
+          "exit_code": 1,
+          "counts": {
+            "passed": 84,
+            "failed": 2
+          },
+          "elapsed_seconds": 0.6297935000620782,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "corrected_wrong_frame_sign",
+          "role": "corrected_mutant",
+          "exit_code": 1,
+          "counts": {
+            "passed": 70,
+            "failed": 16
+          },
+          "elapsed_seconds": 0.4904860407114029,
+          "timeout_seconds": 60
+        },
+        {
+          "name": "corrected_omit_continuum_unrotation",
+          "role": "corrected_mutant",
+          "exit_code": 1,
+          "counts": {
+            "passed": 85,
+            "failed": 1
+          },
+          "elapsed_seconds": 0.4502881672233343,
+          "timeout_seconds": 60
+        }
+      ],
+      "nonbaseline_successes": [],
+      "interpretation": "Historical failed baseline, original mutant jobs and corrected mutant jobs remain distinct; no new independent science or mutation design"
+    }
+  ],
+  "graph_delta": {
+    "nodes": 1,
+    "edges": 6
+  },
+  "pairing": "Same selected model family and reasoning effort, separate reviewer context with its disclosed neutral-plan and later formula exposure; not blinded or diverse-family. Root supplied the candidate route and authored the narrow control repair. Packaging and reproduction add no independent science or audit.",
+  "scientific_edits": [],
+  "originals_preserved": true,
+  "lean_recompiled": false,
+  "comparison_mapping": "Only the exact candidate pathname token is relocated. All other stdout/stderr bytes exact; actual Python/interpreter checked against original receipts. Historical per-run library versions are not asserted.",
+  "not_run": [
+    "independent scientific controls",
+    "old milestone science",
+    "Lean compilation or installation",
+    "global combined audit",
+    "strict audit lint"
+  ],
+  "audit_verdict_applied": false,
+  "retained_promotion": false,
+  "git_or_pr_mutation": false
+}

@@ -1,0 +1,40 @@
+{
+  "status": "unexecuted_source_bound_preparation_and_verification",
+  "base": "62d316633190ad2198fdfa91fc52192551990034",
+  "worktree": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree",
+  "program": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/prepare_verify_current_mass_publication.py",
+  "canonical_timeout_seconds": 60,
+  "canonical_calls": 1,
+  "baseline_whole_helper_commands": 1,
+  "original_variant_commands": 8,
+  "variant_outer_orchestration_timeout_seconds": 75,
+  "timeout_preservation": "Every scientific child retains its original 60-second bound. Outer 75 seconds covers orchestration without extending it.",
+  "exact_counts_from_originals": {
+    "CurrentMass": {
+      "passed": 140,
+      "failed": 0
+    }
+  },
+  "original_whole_helper_survivors": {
+    "CurrentMass": []
+  },
+  "comparison": "Complete result_raw/stdout/stderr exact, except one source-declared JSON candidate path token relocated to resolved temporary candidate.py. Original bytes untouched. No environment/version/value/diagnostic mapping.",
+  "raw_api_order": "Complete INNER execute_runner raw object saved first before outer identity checks; complete OUTER tuple saved first before inspection. Opaque pickle plus full readable JSON; never unpickle.",
+  "original_environment_flags": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "full_capture_limit": "Official cache keeps its configured tail only. All complete raw API objects, live log, source-bound envelopes and original/observed calculations are saved before any comparison and archived separately.",
+  "cache_input_order": "Reconstruction before/after vocabulary --fix; checked report-only; frozen EVIDENCE_MAP, PUBLICATION_EDITS, RUNTIME, all whole sources, note and formal/README fields finalized before canonical. Late maps and SOURCE_IDENTITIES are excluded from declared inputs.",
+  "expected_graph_delta": {
+    "nodes": 1,
+    "edges": 3
+  },
+  "graph_rule": "All prior complete node records/edges remain unchanged; exactly three explicit direct premises.",
+  "lean": "Preserve original successful source/object, all five attempts and all available full receipts/diagnostics; never compile, install or fetch.",
+  "audit_boundary": "Exact-base focused compatibility only; combined validation and strict audit lint are separate independent landing gates. No audit application, retained promotion or Git/PR/prompt mutation.",
+  "failure_rule": "Unique attempt, preserve all partial outputs and stop. No automatic retries or old science reruns; any recovery must reuse validated completed executions and preserve failures.",
+  "ownership": "Root alone executes and later stages/commits/pushes/publishes. Preparation owns only this new S script/support directory.",
+  "pairing": "Same selected model family and reasoning effort, separate author/reviewer contexts with candidate formulas exposed; not blinded or diverse-family. Root supplied the route and is a coauthor. The Lean formalization is root-authored scoped kernel checking, not independent reconstruction of the surrounding physics. Mechanical packaging adds no scientific review."
+}

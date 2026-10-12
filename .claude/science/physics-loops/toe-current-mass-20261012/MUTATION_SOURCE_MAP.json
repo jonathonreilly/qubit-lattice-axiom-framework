@@ -1,0 +1,66 @@
+[
+  {
+    "name": "wrong_current_normalization",
+    "candidate": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/wrong_current_normalization.py",
+    "old": "return np.sin(a*q)/a",
+    "new": "return v*v*np.sin(a*q)/a",
+    "sha256": "08c576193c06809331caa71657f9376f9c733c4e562b0de6b37577f8a73e7560",
+    "diff": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/frozen/wrong_current_normalization.diff"
+  },
+  {
+    "name": "geometric_branch_current",
+    "candidate": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/geometric_branch_current.py",
+    "old": "return np.sin(a*q)/a",
+    "new": "return q",
+    "sha256": "6832091c0d3f3a979ab7c10574c43386bd2491f9ab8547466757c4d581e0ed29",
+    "diff": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/frozen/geometric_branch_current.diff"
+  },
+  {
+    "name": "drop_multiparticle_cross_terms",
+    "candidate": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/drop_multiparticle_cross_terms.py",
+    "old": "return float(np.sum(es)**2 - v*v*np.sum(ps)**2)",
+    "new": "return float(np.sum(es*es - v*v*ps*ps))",
+    "sha256": "45370c5d495b50eb0dbdd7bbec603117ab3d9692389e876618a99c4dfaecf327",
+    "diff": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/frozen/drop_multiparticle_cross_terms.diff"
+  },
+  {
+    "name": "declare_central_mass",
+    "candidate": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/declare_central_mass.py",
+    "old": "return float(2*v*v*np.sum(ps)*(np.sum(es)-np.sum(es*np.cos(a*q))))",
+    "new": "return 0.0",
+    "sha256": "dfdefccc86d7b58eccfd3a6e8d44f204bd382eaaf5e21df2831097add4e1e3d0",
+    "diff": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/frozen/declare_central_mass.diff"
+  },
+  {
+    "name": "square_root_window",
+    "candidate": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/square_root_window.py",
+    "old": "np.arcsin(x**0.25)",
+    "new": "np.arcsin(x**0.5)",
+    "sha256": "37aec0d0579e9d262ee9ac88e064ab601157e6434980c18497471f5f4e9d3e3f",
+    "diff": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/frozen/square_root_window.diff"
+  },
+  {
+    "name": "delete_energy_cutoff",
+    "candidate": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/delete_energy_cutoff.py",
+    "old": "eta = theta(2*e/m-1)*theta(2-e/cutoff)",
+    "new": "eta = theta(2*e/m-1)",
+    "sha256": "65a13777ab07ae2aa2842a20a801447f8fe655d54a22bd3a9d90ad93158ec0b9",
+    "diff": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/frozen/delete_energy_cutoff.diff"
+  },
+  {
+    "name": "reverse_energy_transfer",
+    "candidate": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/reverse_energy_transfer.py",
+    "old": "de = es[:, None]-es[None, :]",
+    "new": "de = es[None, :]-es[:, None]",
+    "sha256": "a4b5ee72b6f1fabb4b7dae4378a1424d30a4ec7c4efdfd343570e83eadc15123",
+    "diff": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/frozen/reverse_energy_transfer.diff"
+  },
+  {
+    "name": "reverse_gaussian_current_transfer",
+    "candidate": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/reverse_gaussian_current_transfer.py",
+    "old": "sigma_s*(p-p0)",
+    "new": "sigma_s*(p+p0)",
+    "sha256": "caa66c6b28267a5a10e360c56b72ba8ef4d64e69397ed950e8d0fa0d594467a6",
+    "diff": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/frozen/reverse_gaussian_current_transfer.diff"
+  }
+]

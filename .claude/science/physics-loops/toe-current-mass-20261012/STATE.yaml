@@ -1,0 +1,13 @@
+loop: toe-current-mass-20261012
+mode: milestone_snapshot
+delivery: milestone
+base_revision: 62d316633190ad2198fdfa91fc52192551990034
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+author_checker_pairing: same_selected_model_family_separate_contexts_not_blinded
+root_role: coauthor_and_scoped_formalization_author
+canonical_execution_at_preparation: pending_root_execution
+actual_execution_record: VERIFICATION_RESULT.json_when_present
+lean_execution_in_publication: not_permitted
+independent_landing_gates: pending
+sole_live_checkpoint: root_owned_campaign_checkpoint

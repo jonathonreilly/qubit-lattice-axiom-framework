@@ -1,0 +1,443 @@
+{
+  "CurrentMass/baseline": {
+    "key": "CurrentMass",
+    "name": "baseline",
+    "baseline": true,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/checks.py",
+      "bytes": 15147,
+      "sha256": "5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/candidate.py",
+      "bytes": 1702,
+      "sha256": "6296e5cb5c78ed4ed3fe55a3a2542db19b35f8f3037591e71e9d09b90a02f947"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/baseline.receipt.json",
+      "bytes": 1500,
+      "sha256": "ed6d09efdf90744d1d707922bb8ea13e9e6e1557183b412da31bdd8d5e8b4366"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/baseline.stdout.json",
+      "bytes": 191806,
+      "sha256": "c7718889edfba62bfe10fb5e66df2a2f7ce2df3703c53f3f18ba26296bc24a49"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/baseline.stdout.json",
+      "bytes": 191806,
+      "sha256": "c7718889edfba62bfe10fb5e66df2a2f7ce2df3703c53f3f18ba26296bc24a49"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/baseline.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 140,
+      "failed": 0
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/candidate.py",
+    "original_elapsed_seconds": 0.9230827083811164,
+    "original_timeout_seconds": 60.0,
+    "path_mapping": "Only the exact JSON candidate token is relocated to Path(temporary/candidate.py).resolve(), as the unchanged helper emits. Command argv retains its original temporary spelling. All remaining bytes are exact.",
+    "original_environment_source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/run_batch.py",
+      "bytes": 3719,
+      "sha256": "7491d02559214f22ab7bf2e43def009b4bc228aad69a192ef3fc593637a11a78"
+    }
+  },
+  "CurrentMass/wrong_current_normalization": {
+    "key": "CurrentMass",
+    "name": "wrong_current_normalization",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/checks.py",
+      "bytes": 15147,
+      "sha256": "5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/wrong_current_normalization.py",
+      "bytes": 1706,
+      "sha256": "08c576193c06809331caa71657f9376f9c733c4e562b0de6b37577f8a73e7560"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/wrong_current_normalization.receipt.json",
+      "bytes": 2555,
+      "sha256": "b75448d5552cd17487eb8aad9007e6ce281a406f11eae8e9d8f140d56ec259dc"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/wrong_current_normalization.stdout.json",
+      "bytes": 192757,
+      "sha256": "a69a1b741a210013b0a3b4c8ba4c7c03a20ae3778a4fabf989bb0c88cef81656"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/wrong_current_normalization.stdout.json",
+      "bytes": 192757,
+      "sha256": "a69a1b741a210013b0a3b4c8ba4c7c03a20ae3778a4fabf989bb0c88cef81656"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/wrong_current_normalization.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 103,
+      "failed": 37
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/wrong_current_normalization.py",
+    "original_elapsed_seconds": 0.5258252918720245,
+    "original_timeout_seconds": 60.0,
+    "path_mapping": "Only the exact JSON candidate token is relocated to Path(temporary/candidate.py).resolve(), as the unchanged helper emits. Command argv retains its original temporary spelling. All remaining bytes are exact.",
+    "original_environment_source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/run_batch.py",
+      "bytes": 3719,
+      "sha256": "7491d02559214f22ab7bf2e43def009b4bc228aad69a192ef3fc593637a11a78"
+    }
+  },
+  "CurrentMass/geometric_branch_current": {
+    "key": "CurrentMass",
+    "name": "geometric_branch_current",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/checks.py",
+      "bytes": 15147,
+      "sha256": "5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/geometric_branch_current.py",
+      "bytes": 1690,
+      "sha256": "6832091c0d3f3a979ab7c10574c43386bd2491f9ab8547466757c4d581e0ed29"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/geometric_branch_current.receipt.json",
+      "bytes": 2523,
+      "sha256": "760d027886bb84bbae83ef1a87ae93a8095be8dd166f501e035d2ec8bff7dfcd"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/geometric_branch_current.stdout.json",
+      "bytes": 192716,
+      "sha256": "b4fa41854f61c029c2dd257abb18846f6a5896f8e3c1b26450f711c25e640595"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/geometric_branch_current.stdout.json",
+      "bytes": 192716,
+      "sha256": "b4fa41854f61c029c2dd257abb18846f6a5896f8e3c1b26450f711c25e640595"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/geometric_branch_current.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 104,
+      "failed": 36
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/geometric_branch_current.py",
+    "original_elapsed_seconds": 0.5212663328275084,
+    "original_timeout_seconds": 60.0,
+    "path_mapping": "Only the exact JSON candidate token is relocated to Path(temporary/candidate.py).resolve(), as the unchanged helper emits. Command argv retains its original temporary spelling. All remaining bytes are exact.",
+    "original_environment_source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/run_batch.py",
+      "bytes": 3719,
+      "sha256": "7491d02559214f22ab7bf2e43def009b4bc228aad69a192ef3fc593637a11a78"
+    }
+  },
+  "CurrentMass/drop_multiparticle_cross_terms": {
+    "key": "CurrentMass",
+    "name": "drop_multiparticle_cross_terms",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/checks.py",
+      "bytes": 15147,
+      "sha256": "5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/drop_multiparticle_cross_terms.py",
+      "bytes": 1694,
+      "sha256": "45370c5d495b50eb0dbdd7bbec603117ab3d9692389e876618a99c4dfaecf327"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/drop_multiparticle_cross_terms.receipt.json",
+      "bytes": 1817,
+      "sha256": "c8239a0fa0c22a408184a1b4e27a417f9ede6e1a450f5ed12ca05058dfe5d1d6"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/drop_multiparticle_cross_terms.stdout.json",
+      "bytes": 192065,
+      "sha256": "060ad95f01ee7bf1bf78919e99df496c0bb636dbdcd75e571eaf42a19f8e1497"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/drop_multiparticle_cross_terms.stdout.json",
+      "bytes": 192065,
+      "sha256": "060ad95f01ee7bf1bf78919e99df496c0bb636dbdcd75e571eaf42a19f8e1497"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/drop_multiparticle_cross_terms.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 131,
+      "failed": 9
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/drop_multiparticle_cross_terms.py",
+    "original_elapsed_seconds": 0.5412770411930978,
+    "original_timeout_seconds": 60.0,
+    "path_mapping": "Only the exact JSON candidate token is relocated to Path(temporary/candidate.py).resolve(), as the unchanged helper emits. Command argv retains its original temporary spelling. All remaining bytes are exact.",
+    "original_environment_source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/run_batch.py",
+      "bytes": 3719,
+      "sha256": "7491d02559214f22ab7bf2e43def009b4bc228aad69a192ef3fc593637a11a78"
+    }
+  },
+  "CurrentMass/declare_central_mass": {
+    "key": "CurrentMass",
+    "name": "declare_central_mass",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/checks.py",
+      "bytes": 15147,
+      "sha256": "5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/declare_central_mass.py",
+      "bytes": 1646,
+      "sha256": "dfdefccc86d7b58eccfd3a6e8d44f204bd382eaaf5e21df2831097add4e1e3d0"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/declare_central_mass.receipt.json",
+      "bytes": 1687,
+      "sha256": "8f08cc7064d8de64a81ad54dda1673ab1a0fb775344120efb0e592794c08cce6"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/declare_central_mass.stdout.json",
+      "bytes": 191854,
+      "sha256": "69ed9ed4b57591de8b5b19ac5d200e60a79280e36ec7f683c29cacb2708c0033"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/declare_central_mass.stdout.json",
+      "bytes": 191854,
+      "sha256": "69ed9ed4b57591de8b5b19ac5d200e60a79280e36ec7f683c29cacb2708c0033"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/declare_central_mass.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 135,
+      "failed": 5
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/declare_central_mass.py",
+    "original_elapsed_seconds": 0.5253242920152843,
+    "original_timeout_seconds": 60.0,
+    "path_mapping": "Only the exact JSON candidate token is relocated to Path(temporary/candidate.py).resolve(), as the unchanged helper emits. Command argv retains its original temporary spelling. All remaining bytes are exact.",
+    "original_environment_source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/run_batch.py",
+      "bytes": 3719,
+      "sha256": "7491d02559214f22ab7bf2e43def009b4bc228aad69a192ef3fc593637a11a78"
+    }
+  },
+  "CurrentMass/square_root_window": {
+    "key": "CurrentMass",
+    "name": "square_root_window",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/checks.py",
+      "bytes": 15147,
+      "sha256": "5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/square_root_window.py",
+      "bytes": 1701,
+      "sha256": "37aec0d0579e9d262ee9ac88e064ab601157e6434980c18497471f5f4e9d3e3f"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/square_root_window.receipt.json",
+      "bytes": 2773,
+      "sha256": "238e60a39b2008421b6041f220959fd6f4b86f75f6236d0448ebe1875f5c1032"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/square_root_window.stdout.json",
+      "bytes": 193077,
+      "sha256": "f920cd32d809e93a90fa0569b3c6e966a1edb39b0759e94bd78aa6d96bbc2401"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/square_root_window.stdout.json",
+      "bytes": 193077,
+      "sha256": "f920cd32d809e93a90fa0569b3c6e966a1edb39b0759e94bd78aa6d96bbc2401"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/square_root_window.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 104,
+      "failed": 36
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/square_root_window.py",
+    "original_elapsed_seconds": 0.5077580409124494,
+    "original_timeout_seconds": 60.0,
+    "path_mapping": "Only the exact JSON candidate token is relocated to Path(temporary/candidate.py).resolve(), as the unchanged helper emits. Command argv retains its original temporary spelling. All remaining bytes are exact.",
+    "original_environment_source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/run_batch.py",
+      "bytes": 3719,
+      "sha256": "7491d02559214f22ab7bf2e43def009b4bc228aad69a192ef3fc593637a11a78"
+    }
+  },
+  "CurrentMass/delete_energy_cutoff": {
+    "key": "CurrentMass",
+    "name": "delete_energy_cutoff",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/checks.py",
+      "bytes": 15147,
+      "sha256": "5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/delete_energy_cutoff.py",
+      "bytes": 1684,
+      "sha256": "65a13777ab07ae2aa2842a20a801447f8fe655d54a22bd3a9d90ad93158ec0b9"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/delete_energy_cutoff.receipt.json",
+      "bytes": 1587,
+      "sha256": "c72e8837f6e78c79f8237e35663ac7f5b3ab857ba62628d9a741263e979b2ac1"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/delete_energy_cutoff.stdout.json",
+      "bytes": 191858,
+      "sha256": "75e1ff2a80c5c7c18547abc4f7069199a3bc068229881f8d5ade380e0a5a554d"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/delete_energy_cutoff.stdout.json",
+      "bytes": 191858,
+      "sha256": "75e1ff2a80c5c7c18547abc4f7069199a3bc068229881f8d5ade380e0a5a554d"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/delete_energy_cutoff.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 139,
+      "failed": 1
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/delete_energy_cutoff.py",
+    "original_elapsed_seconds": 0.5649393750354648,
+    "original_timeout_seconds": 60.0,
+    "path_mapping": "Only the exact JSON candidate token is relocated to Path(temporary/candidate.py).resolve(), as the unchanged helper emits. Command argv retains its original temporary spelling. All remaining bytes are exact.",
+    "original_environment_source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/run_batch.py",
+      "bytes": 3719,
+      "sha256": "7491d02559214f22ab7bf2e43def009b4bc228aad69a192ef3fc593637a11a78"
+    }
+  },
+  "CurrentMass/reverse_energy_transfer": {
+    "key": "CurrentMass",
+    "name": "reverse_energy_transfer",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/checks.py",
+      "bytes": 15147,
+      "sha256": "5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/reverse_energy_transfer.py",
+      "bytes": 1702,
+      "sha256": "a4b5ee72b6f1fabb4b7dae4378a1424d30a4ec7c4efdfd343570e83eadc15123"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/reverse_energy_transfer.receipt.json",
+      "bytes": 1628,
+      "sha256": "b2fd4813196ebd9c290aa936ca65c7ac5da19ca50bbc1761c8eca002480902ba"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/reverse_energy_transfer.stdout.json",
+      "bytes": 191891,
+      "sha256": "0c78ce00939d33cb6113f4d9477bfa4f441d638ce7095c789d07d81ef74ad5ac"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/reverse_energy_transfer.stdout.json",
+      "bytes": 191891,
+      "sha256": "0c78ce00939d33cb6113f4d9477bfa4f441d638ce7095c789d07d81ef74ad5ac"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/reverse_energy_transfer.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 138,
+      "failed": 2
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/reverse_energy_transfer.py",
+    "original_elapsed_seconds": 0.6132617080584168,
+    "original_timeout_seconds": 60.0,
+    "path_mapping": "Only the exact JSON candidate token is relocated to Path(temporary/candidate.py).resolve(), as the unchanged helper emits. Command argv retains its original temporary spelling. All remaining bytes are exact.",
+    "original_environment_source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/run_batch.py",
+      "bytes": 3719,
+      "sha256": "7491d02559214f22ab7bf2e43def009b4bc228aad69a192ef3fc593637a11a78"
+    }
+  },
+  "CurrentMass/reverse_gaussian_current_transfer": {
+    "key": "CurrentMass",
+    "name": "reverse_gaussian_current_transfer",
+    "baseline": false,
+    "source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/checks.py",
+      "bytes": 15147,
+      "sha256": "5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1"
+    },
+    "candidate": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/reverse_gaussian_current_transfer.py",
+      "bytes": 1702,
+      "sha256": "caa66c6b28267a5a10e360c56b72ba8ef4d64e69397ed950e8d0fa0d594467a6"
+    },
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/reverse_gaussian_current_transfer.receipt.json",
+      "bytes": 1667,
+      "sha256": "0c24f4807357d8e32520f7c422adb254ffb2db760953e271c59f3426bc993d43"
+    },
+    "result": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/reverse_gaussian_current_transfer.stdout.json",
+      "bytes": 191906,
+      "sha256": "371a1bbf14fce1873b5344984c2c4889a17e67e293fadaf71e2c033ff8bae397"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/reverse_gaussian_current_transfer.stdout.json",
+      "bytes": 191906,
+      "sha256": "371a1bbf14fce1873b5344984c2c4889a17e67e293fadaf71e2c033ff8bae397"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/logs/reverse_gaussian_current_transfer.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 138,
+      "failed": 2
+    },
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/reverse_gaussian_current_transfer.py",
+    "original_elapsed_seconds": 0.5616249172016978,
+    "original_timeout_seconds": 60.0,
+    "path_mapping": "Only the exact JSON candidate token is relocated to Path(temporary/candidate.py).resolve(), as the unchanged helper emits. Command argv retains its original temporary spelling. All remaining bytes are exact.",
+    "original_environment_source": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/run_batch.py",
+      "bytes": 3719,
+      "sha256": "7491d02559214f22ab7bf2e43def009b4bc228aad69a192ef3fc593637a11a78"
+    }
+  }
+}

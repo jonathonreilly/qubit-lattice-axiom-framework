@@ -1,0 +1,2295 @@
+{
+  "base_revision": "f6f4348151734908dea3b32048ee1f36f694035b",
+  "scope": "Exact intended publication set except this self-referential manifest.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/APPROACH_REGISTRY.md",
+      "sha256": "535ee60fa37ae5622c47b6eec7cef450d734e8a63d56bd35397aa24ccb69d5e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/ARTIFACT_PLAN.md",
+      "sha256": "38a05ac5d740f18fec440bdf21fdbf15b9d26d2bcb4555631bed9ec461456bba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "4deb493286e1594f129f03b3e5aba1ebefb6fa0c45e052828b6a91db5fb5e548"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "35cdb436464cc47fb21fea052893ec3980a1c9a8eebc0cbed5edeaa990782c7e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/DELIVERY_CHECKS.md",
+      "sha256": "65020b3a34cebb38a8cfcd8c72fb75ae91bd91e5a5d9ec2a1399edc5a9b0c961"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/EVIDENCE_MAP.json",
+      "sha256": "0181f0764fb8f692a6503859425d8dcbc6fd7cbb8fd94b6c37c2f2a527d07590"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/GOAL.md",
+      "sha256": "3af926756582d98f01a99d8452ad5e85f1b13744ff46a1d6afe2e7816b2d4d1b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/HANDOFF.md",
+      "sha256": "9685a851f11ce4b9fed3960dda59d736cee8f9bddf9b130c5d6c20098b713110"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/LITERATURE_BRIDGES.md",
+      "sha256": "5a057d3ca39c71841eb2daf436a01560c495ebada19c2acbb402ecfe00393b44"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/NO_GO_LEDGER.md",
+      "sha256": "33b7d6e1515f7459117ab15608716b052811d92736f19d4adeecfe8553dd4bf8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/OPPORTUNITY_QUEUE.md",
+      "sha256": "f78e78b5af658f88f130b06003d5fa458ccc870e3f327066ae0b7d0b6ddd64f1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/PR_BACKLOG.md",
+      "sha256": "d6272332087aa7b566aae1bc627d79067037bdccea896747c7ea7f84d9b085f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/PUBLICATION_EDITS.json",
+      "sha256": "8bbfd6534892ef129f4dcb17d5f2ebf634f9af5dd2aa97c9200c67e599e2f1a0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/REVIEW_HISTORY.md",
+      "sha256": "a80273252dded276dce6ff5557fdd2c3069850292e2370ce2f561f2ca6d0757f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/ROOT_COMPOSITION_REVIEW.md",
+      "sha256": "920a9a7729bff33fe60c54507fe7d2c02844e217b3815cf990eacafd2e811dbc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/ROUTE_PORTFOLIO.md",
+      "sha256": "30c6f508b192961b3f13313c25de10b172123f4ec47c3fdd7aff5a7d74762c44"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/STATE.yaml",
+      "sha256": "65e9e203701e7b797a0cac3f2a7a138affbe9ac08016aa1b781d5e170dd42d08"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/TRACE_GATE.md",
+      "sha256": "13719ca18e0e9d339c3a5bd51ef156c6823e8e7ae664d3de3c67ee3b55d6b16a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/Centre_canonical_execution.json.gz",
+      "sha256": "1bfff4c8afb4a0dc9be04b11578b10bac0523fc8fd3fe26e473db7a1540f89fa",
+      "decompressed_sha256": "2fe84fe98d45c1274a0cba65131087bc706fd80503cda8117dcf041c48025322"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/Centre_root_author_coverage.json.gz",
+      "sha256": "1d9222b6efa300e0b7373b319077430c2ee052f362499d439da057dc3644f584",
+      "decompressed_sha256": "ce9f1be9d9fbb893e504e9b46d507203f611646c04e76235b9900d4e93a3ca4e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/Centre_root_review_coverage.json.gz",
+      "sha256": "cf5c72a24e03d2c081e561a81e3d1cd5b13fe8abae8ccc6be95f2adf81163e03",
+      "decompressed_sha256": "c15da5587f29413b2ab5e579517a2dc85b1a94e9f110e91f6b5e3d7df0372f56"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/Current_canonical_execution.json.gz",
+      "sha256": "788b50ed6eaa973cd6ffbdb71cf09c2468b72ac92ac0aed0dbf63f2a802d853b",
+      "decompressed_sha256": "906384d15d02b206be05a829b6395c49b51f5aff7c381c9bff751b9959f84bdd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/Current_root_author_coverage.json.gz",
+      "sha256": "438e3dd6104e990ef68834146364658cad89f39e90d1ca8749ec91ae830f79fe",
+      "decompressed_sha256": "f09e52ff6e13f905800fa48f16427288088feb07ef7bc7fcf547144b7b9fe396"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/Current_root_review_coverage.json.gz",
+      "sha256": "77084d58d35775981b2f9bc0291606c8edde8518d95724501b4373dd5d8795c7",
+      "decompressed_sha256": "22a3fc72656265de21a6a61299c20353ba8b5c40b1d0fe47222bf5fc11795783"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/ISOLATED_CENTRE_FILTERING_PROBE.md.gz",
+      "sha256": "53711ca92ac2b3e80847831cc3e0b35613858ec8920e82ae9601029e9e0393a6",
+      "decompressed_sha256": "1dcb9580d128d8fc41b76517ce0fe18842291e8e32681fa9c6b22f0feb1e13de"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/ISOLATED_CENTRE_FILTERING_REVIEW.md.gz",
+      "sha256": "4e206e238b312e504d2ad80f7e2bd62e3e4e440c07553bc9b4b5de4d80f79ec5",
+      "decompressed_sha256": "68ea0c2f00d0808ce5a6a63632b0bc84a05398260478510fb4f66256e885cbc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/MICROSCOPIC_CURRENT_IMPLEMENTATION_PROBE.md.gz",
+      "sha256": "33aea2b0809c21ed10b48dae58e7c560d65304915457bc04b32dbc76e2dde1d6",
+      "decompressed_sha256": "bcc9b9503e49c17b6e6140c22f3971f35ccd3ed72de16f0371666dc9162dfd9a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/MICROSCOPIC_CURRENT_IMPLEMENTATION_REVIEW.md.gz",
+      "sha256": "cbfcae823b08251b2236792acfb8ff0687ae1643189fd91e0c0735791de14e6c",
+      "decompressed_sha256": "305fa33efebf1e9f9dc09d0854eddf23065877004888f55e964d31cc403f6d17"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_citation_build.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_citation_build.stdout.gz",
+      "sha256": "e28df3194bb31de040566ff697629ffde3784cf59c39d324be3dcd2202885ab6",
+      "decompressed_sha256": "f284aee8de126d7d19fbdc214c12fce99c7eb1f88634cd4c321f37e48613cb60"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_citation_execution.json.gz",
+      "sha256": "7998bfba1dd3988914cf8dacdcb8e60d66b5b44edda46da9b42f3e4fde67f3a3",
+      "decompressed_sha256": "0e2041b5acf4dc8fdfcbae8dbf23d780b2cca1c12c0339187c46705f4add352b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_citation_manifest.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_citation_manifest.stdout.gz",
+      "sha256": "9390109e8b4ad69aea576389e1830c987b8983820b3f58c3400b6122a3ac8bd0",
+      "decompressed_sha256": "27f77596a3af998cd13a41c4112479e430b291ea519d320a8384e7d6b55028e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_delivery_mechanical.json.gz",
+      "sha256": "687a8148b9576085b57f10cd6c931865312a055413274329fbdb40559047cd7e",
+      "decompressed_sha256": "7b2472d49f328d6c61b881452c600d42f8403486e64bcffefcb540b6fb7de42b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_final_reconstruction.log.gz",
+      "sha256": "a2754dea9e71da5de71125db736d90fefa94b5a6361d4915f267eb1c52b7f690",
+      "decompressed_sha256": "a208967aa3de36aa70947e4f373041dfc3bd8bf4a709f89e25d0d187f363bcc0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_final_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_final_vocab_fix.log.gz",
+      "sha256": "4f33039733ba2bf4c74e86592de635d585b7a06c17656597e72d9158fdbfda8c",
+      "decompressed_sha256": "55a69ed735e40893ebf8fb1ad0d9da8d1ad569d2ebc87c9b59b9beb847c595bf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_final_vocab_report-only.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_final_vocab_report-only.log.gz",
+      "sha256": "7b6b5dc12f224675292777495b3133f00081e1e1f0d12d45163c079303181f0c",
+      "decompressed_sha256": "8df9528b187dbfdc6b1e1412b215a9ee4229af9817bb05a5c8c28914c40eb08a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_focused_audit_compat.execution.json.gz",
+      "sha256": "591ec96dbaece87636c1f67aa6ef0c488744cced1f6212734c44bc9e97af60d0",
+      "decompressed_sha256": "f4c9455c89524a62c14a125133f23fcac80105103c83a27c5fd8ff432e722f37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_focused_audit_compat.json.gz",
+      "sha256": "a579f5f098c8f3ab9a2fd2123c224485cb14b37d078bbe204c282b4fc530e2ea",
+      "decompressed_sha256": "5512c2ce7f460aea0bee9839611d11eeac92b2304b258f9faeba17a2549fff0a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_focused_audit_compat.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_initial_reconstruction.log.gz",
+      "sha256": "a2754dea9e71da5de71125db736d90fefa94b5a6361d4915f267eb1c52b7f690",
+      "decompressed_sha256": "a208967aa3de36aa70947e4f373041dfc3bd8bf4a709f89e25d0d187f363bcc0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_initial_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_initial_vocab_fix.log.gz",
+      "sha256": "ce13d121852394bb9da7324bcd08e3a28f2797191da181563a094650e9057a40",
+      "decompressed_sha256": "82ea34ab7a43d54ffad32380222f5cd1d215a5bbd49d6b95e511b9c841f9bc6f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/Centre_canonical_execution.json.before_link_fix.gz.gz",
+      "sha256": "75d23705202415a8b623da287415d0ae276e0f7011541a6f2c9b077982c8e272",
+      "decompressed_sha256": "3631c2f1aac652cd65c2fa9bec2301db2d3aed82baa115ed84073b2d2b1dac5e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/ISOLATED_CENTRE_FILTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md.before_link_fix.gz.gz",
+      "sha256": "9cbd797fa91afc383bf65f04f346f3cbb7a64ad9b04e28f3397a3cb7c969e11f",
+      "decompressed_sha256": "8f1edce1076ead838d413bcc0fa56db39bc7abca2aaf55645525d0fd8426fe86"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/ISOLATED_CENTRE_FILTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md.gz.gz",
+      "sha256": "9cbd797fa91afc383bf65f04f346f3cbb7a64ad9b04e28f3397a3cb7c969e11f",
+      "decompressed_sha256": "8f1edce1076ead838d413bcc0fa56db39bc7abca2aaf55645525d0fd8426fe86"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md.gz.gz",
+      "sha256": "671607a9334f8cb0e697aa93db20fb88cbabcf3a41136b7b011c97d8a7ee2009",
+      "decompressed_sha256": "b7afcb9fb8e2d0585111c614b8fe23e744a2b780a975d1dd23c9c3a6e5851109"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/PUBLICATION_EDITS.json.before_link_fix.gz.gz",
+      "sha256": "c9eb868804ab16cd1c64d5cb73c78e1e586dd262b2fe0777764e80c3edba5f2e",
+      "decompressed_sha256": "51db09cca2228509a87f2aef6c0133def7cc6d59d9ac3468993afd38d3f2e9e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/centre_current_citation_build.stderr.before_link_fix.gz.gz",
+      "sha256": "af709b5da6d1d594c94e4ac608ed43efc2bc90ad2fc1355d7da902b77db31935",
+      "decompressed_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/centre_current_citation_build.stdout.before_link_fix.gz.gz",
+      "sha256": "661fb43e8e48c8c0123bfe44a18a81e4539547e6b70990e396f0af7d11d94211",
+      "decompressed_sha256": "97742022147590dafc66e7c04beb8f19221216c62267caed4baf0e2293d140ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/centre_current_citation_execution.json.before_link_fix.gz.gz",
+      "sha256": "22b0627a36fe96fcff5a22cdeb19d3c09e7acc750273c5ac2fad277558995281",
+      "decompressed_sha256": "092a3f0bdddae7c6d083cd477b55e47e48fe1df8e8aa6e35e54c1858d8e730e6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/centre_current_citation_manifest.stderr.before_link_fix.gz.gz",
+      "sha256": "af709b5da6d1d594c94e4ac608ed43efc2bc90ad2fc1355d7da902b77db31935",
+      "decompressed_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/centre_current_citation_manifest.stdout.before_link_fix.gz.gz",
+      "sha256": "f0fbaa2ef944a5828ebc2a26b02f66586172243009ef1b5789abea2ab740d7e9",
+      "decompressed_sha256": "52f30e0294a1464b8dfa127ed44f654d8d63e9afa19c7f5032ce328ed272eb88"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/centre_current_focused_audit_compat.json.before_link_fix.gz.gz",
+      "sha256": "e2a853d6273857d415ee388327872df4894cb7d3e39de9c5bf2b0ecf59f999cc",
+      "decompressed_sha256": "a579f5f098c8f3ab9a2fd2123c224485cb14b37d078bbe204c282b4fc530e2ea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/citation_failure.json.gz",
+      "sha256": "adb88ca2b459d110c40770a32eeda7926cf9b4d6a4680dc789d816b4fd8d6984",
+      "decompressed_sha256": "93aea713c457d075dadf92bccd3d4eca1b0b9144ea2c3f708fc54479faaeb927"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/citation_graph_manifest.json.before_link_fix.gz.gz",
+      "sha256": "ebe53f6127983be1e60dd9c6ed35ed788653be93439007825b488a38484d89de",
+      "decompressed_sha256": "1d6f4a2ce8f2aa9f100544ce8d78283520433b2773c2de43b8c2577cc175ea60"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/failure.json.gz",
+      "sha256": "5e01dc5e280c38dc1c92f14aa120da54f0f9468bd75d8fa6f651cbb93f4adf9b",
+      "decompressed_sha256": "4ebe219ee977e577ea31bf4454911b31b1ad6ecb85bc74eb332a6112a5aaf725"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/finish.before_math_link_fix.py.gz",
+      "sha256": "9b9925a48432af2a7b0eacc8f8d7a9b42287bbf73a1128f2bb7a7c8a96733297",
+      "decompressed_sha256": "d4ff4f654a120b597a8b6d89b614f0ace839c336e8c79ca61995540938cd3a72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/isolated_centre_filtering_2026_10_12.py.gz.gz",
+      "sha256": "6770fbb63c4fec3122ce7fa66bdbded4d0e93c4347c3e4072a166c8b4c79dd81",
+      "decompressed_sha256": "5c9612290619e87de95e373f60d64f6243e85e20cb268d1e31ef37810b48aade"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/math_link_failure.json.gz",
+      "sha256": "1049baf817d8ff54d7dc543be3b2a6fdacdfa4860671273b54e1630670d45b3c",
+      "decompressed_sha256": "885d75d752397ff4b088c47217e6b1118311b7464050714d0dc3315223961b09"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/prepare.before_anchor_fix.py.gz",
+      "sha256": "1358175712905aed3928073983c4d3e85fc930c5aaaffeb03a5cf1d3042d8dae",
+      "decompressed_sha256": "90a12f5fce033cb6f782d062d32ce9698e312e3199d3691be036adae4f2e2745"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_packaging_recovery/prepare.before_link_fix.py.gz",
+      "sha256": "f41debb3c7a888b3eb4c841e6b119b8ed9e4ff990676e950e5dfeaf5c453487e",
+      "decompressed_sha256": "b9c035060cb73fa372d65f92051282a1885a59fbb2bd07604ec902a83f3a0c16"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_adjoint_reflection.execution.json.gz",
+      "sha256": "347898122737ce98d10962c2a7c56dda32a83d6bf3c1a5208c48004f8c15e1ee",
+      "decompressed_sha256": "19253480ae172d7f0e756261a844a0bd6f63cea1808b4dd8a32e60913848cdd1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_adjoint_reflection.py.gz",
+      "sha256": "65a49ae5ef7115aaaf079832b263d42dfd786a798cd3d733166c5c9fde285eba",
+      "decompressed_sha256": "578ab4a93a96f4643e1a46e3f5badcd5d30f171bb97013032a2ed4bf612a6242"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_adjoint_reflection.stderr.gz",
+      "sha256": "0bebd56154dacd8c641fb0f57368b3dc2616494e68031507abe12d1fb6446359",
+      "decompressed_sha256": "d216fbf64e3327a7091eeebd960bd52c03ded00da7da7cddd32fef031addab56"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_adjoint_reflection.stdout.gz",
+      "sha256": "fed83416d9b2edcdd31b13de882280b7ce9037c818172cfdc4d2985bc50578a3",
+      "decompressed_sha256": "6bdb43d2925c971820b990a04975f7a37f002d30af4da3caaf644a0b70e3abba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_chart_sign.execution.json.gz",
+      "sha256": "66fd92c456327f436c034f73e0822385f80aab68c038bfa4e355177b2b150f3d",
+      "decompressed_sha256": "25b7dfcbd43794fe8167f981b7fc5eb72da5f27b79cbb2b915aea5f25151f3da"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_chart_sign.py.gz",
+      "sha256": "42766b10bd9659329d865eb7dcad284e7eb57dca002694dfd42d408fe1e4aca4",
+      "decompressed_sha256": "01c96a860fbb1020b9e9b6703c89f51f864c0e573b3b520e73a0be4c588acfe2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_chart_sign.stderr.gz",
+      "sha256": "d32d58c17ce94bc695ee8c33feaf2315f8e2c49500688d99d803f76029cc9bb1",
+      "decompressed_sha256": "d525c45cb3b373b0347a01430970f552d995b406d7a60076063807e57e9d57e3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_chart_sign.stdout.gz",
+      "sha256": "ebc769d86d8a533ba5f90fec5b10938de4efa27a54c9a587893c4765af761511",
+      "decompressed_sha256": "4b3b5d076f0a545bbabb2ebe45f5eecdc588c032e18c7de37fc53c4f20d088e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_composition_coefficient.execution.json.gz",
+      "sha256": "c1588c174356422966c5f23af563fadeff92742ffc08979c6732be3ed789f0b4",
+      "decompressed_sha256": "459fbc86d712fe4c2769c6c7fd5220750222fe0283b22522334cb46d17a6eb14"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_composition_coefficient.py.gz",
+      "sha256": "7622e43c9e26a0f6bbe8f943620eda149e15b527d8907459484d8c36286e45e6",
+      "decompressed_sha256": "e9967a71b4e860b434efb6d66392420fcb6ba4c3bd820e3708fc6f6faa58b02c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_composition_coefficient.stderr.gz",
+      "sha256": "3604233e6725c8712d464db1c383a47314d14221ab220674a5e0264f2ba221ff",
+      "decompressed_sha256": "8f50ed3c92499804e0b9dbbc26ade63afe6d541a6ff5add9edf9970808c8cf4e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_composition_coefficient.stdout.gz",
+      "sha256": "f4ac4d4753b227feccae8f9b2cf55cace4036503026d9155eac9a0d5140aac65",
+      "decompressed_sha256": "3034303f2cff1ba962c054199ff5d9a87e4bcaf392c3112c3b4c09e86a8764f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_false_zero_clock.execution.json.gz",
+      "sha256": "d3f1b8c7e75a7ddffed0ba536e039398e4ff16923621576d9141d625a7db9d5f",
+      "decompressed_sha256": "62654e73da0d0a55f26d50b60af211da57e1ee75c5a0a49aca12246f5d378ab4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_false_zero_clock.py.gz",
+      "sha256": "5c6f604448c275a7f9bfcd8e2ca2854e5d6bb59000624645ac60ed2abf548f3e",
+      "decompressed_sha256": "ac36886555e6b358ca0b44973e79cef8ff13b44f57dc0457464698b3d4ec711c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_false_zero_clock.stderr.gz",
+      "sha256": "0e937c32ad5fc7b82fe81684312797e134b9934dd1ca52c9fc5972af276d134f",
+      "decompressed_sha256": "000c0cdf4f63ba3ff8ca5ad1955f6b9b94a905b0ca31d9cbbc7ad1e3160b5d20"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_false_zero_clock.stdout.gz",
+      "sha256": "ebc769d86d8a533ba5f90fec5b10938de4efa27a54c9a587893c4765af761511",
+      "decompressed_sha256": "4b3b5d076f0a545bbabb2ebe45f5eecdc588c032e18c7de37fc53c4f20d088e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_fourier_sign.execution.json.gz",
+      "sha256": "bfa2c8985caddb5ced889ad696283b2d2a00806f44396b1e443040c868747244",
+      "decompressed_sha256": "0272610f1a67df441f6ec8a38b009c51c19c18a4b4a74461e756fb6043e5ff4c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_fourier_sign.py.gz",
+      "sha256": "8e46f865643cf881829f16919e1276a5e16f62703e3b15513468374d555654ed",
+      "decompressed_sha256": "fcb26e405173e521481165142941d6f055961a2f0de5bc82e66802ecb1afa3dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_fourier_sign.stderr.gz",
+      "sha256": "66d55ba51362c3b6501139f5afc088229be6c23293521495e59baea5acba91cc",
+      "decompressed_sha256": "39708d7d0c888a98ac205b32a67537473433534f78bb0c84d67d8bd8ae30b682"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_fourier_sign.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_generic_interpolation.execution.json.gz",
+      "sha256": "7d40d49a9e2e9d64130a9ad93cd403ceef5780bbd0caeb1fa6dd3e850d9e85fc",
+      "decompressed_sha256": "d69431c412975db5915e3539e7829976bdce7e6c1378db08742b5dbeda3310f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_generic_interpolation.py.gz",
+      "sha256": "e863f6119e7f0948c7ac62d5e3acda19cc1511f17f77d40465323cfe4b27568d",
+      "decompressed_sha256": "d0fdac3ce8615361962d40637504a97b65d0295f44c06747a934e8689da76728"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_generic_interpolation.stderr.gz",
+      "sha256": "f5820dd5c01d7303dac42a48b9c455670df01c370f662ef803906f1e0fadcc7c",
+      "decompressed_sha256": "025f1a5cb551d2e9bf8af049ba22fff0a3172d44dbba86b4d19231a2b830f16f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_generic_interpolation.stdout.gz",
+      "sha256": "78d237754a7282e0c3106b9bbd82839f5f60dda03a231b2c24d75f91e8ad14c4",
+      "decompressed_sha256": "0d95674ad99f739ce01aafb407bcdf3e2b90c837212f059fbefd22f7f79e9697"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_omit_mass.execution.json.gz",
+      "sha256": "8dd54bbc47973346b1eeb534cd54904015ebd59c7b97388953e71f2db1d548d0",
+      "decompressed_sha256": "a46a6f2c613624d23a96529f5e616c35d4858f98d3c9b35033060a8dbc78c585"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_omit_mass.py.gz",
+      "sha256": "fe3de77691e6be377b9520a0c99f74b6535474f0568e89dab028dcf912138b16",
+      "decompressed_sha256": "86cda738669cbf37202de13f44787402a81583c311423eca2d323709064977de"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_omit_mass.stderr.gz",
+      "sha256": "bab15f535ead057eb58e4716dcf7a121a5a3ee0e19bbdea7e8c0c0c5f1cb1df5",
+      "decompressed_sha256": "d7e84d7df6fbde3271b9385a2f0dc6d2744d2a66c263537e6fa224c45f425bdf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_omit_mass.stdout.gz",
+      "sha256": "96ffd56a51a228560ccf014d09704ab700e6c7b5645f493bae5c25a7d0ba46ab",
+      "decompressed_sha256": "c0bd5d68ade805034939fc010e21abc073a3b5d285971a63fb95cd8d694a6bd8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_operator_right_action.execution.json.gz",
+      "sha256": "31349b3e5b553bb6d18c24bbdcef084554ba444beb2f3222eaf96741bf08c89a",
+      "decompressed_sha256": "b58c8b6f4990aad23ada10db0245c422b05b48088eb4448ff8f15ef4b3a8145e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_operator_right_action.py.gz",
+      "sha256": "e0c4dd7d44f692f2c7b635c8dec05249572033b5524f0e3760fce0abfc8ede1e",
+      "decompressed_sha256": "4d0105e8bd00e92d5c0758b3583fafc135e26a2ee1322f251039c3cfa365a02b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_operator_right_action.stderr.gz",
+      "sha256": "7388a1313f57caa4f0f89f1be95305313429c930cb33cfddbf96d0e5f2cb0d74",
+      "decompressed_sha256": "feeaa706cefa4f518e9f2353ba3358904c0185b02450225a62a9a60403c53421"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_operator_right_action.stdout.gz",
+      "sha256": "fed83416d9b2edcdd31b13de882280b7ce9037c818172cfdc4d2985bc50578a3",
+      "decompressed_sha256": "6bdb43d2925c971820b990a04975f7a37f002d30af4da3caaf644a0b70e3abba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_radius_budget.execution.json.gz",
+      "sha256": "883d44b7339d87715b474ecc748ac37973bab730e56b6daeb6b69786a8fce2a3",
+      "decompressed_sha256": "f11621b2477c919512bad2b67cb0bc7373bdd476af90e85ebdbeaae0c0d585d9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_radius_budget.py.gz",
+      "sha256": "7f5bf6c4478f041acddb6f3ca07cbaf6a4d38c5f960cfcf3bfc78b91d8260005",
+      "decompressed_sha256": "a1f1700378add7e994703d85e979d6e1d2d248343d9f5931145b45562cd96cd8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_radius_budget.stderr.gz",
+      "sha256": "ebbf589071e734b9fd009962c47c2726ce6f8388c270a7e5b68456827b23fd61",
+      "decompressed_sha256": "96c29db1baa9c058cfccd3a25609d9f5142b6785b473f64ecd9c3af6fc1b4ce2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_radius_budget.stdout.gz",
+      "sha256": "ad5382d0ef1f70887f5a43ba1f3245b5a40ca9e6f2a42abd816cb592e7605900",
+      "decompressed_sha256": "f698650a7528f62dd99280d71ac1b102e1d9869cb20662460e2dc15d31c0e5cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_radius_drop_shift_nondiscriminating.execution.json.gz",
+      "sha256": "867ac8cae975060e0bf4bc1096aeb8e9ac0d18ab179b853f268c5a415df5753d",
+      "decompressed_sha256": "b4759fbd00a264cd311566049bd1d7ed673b0662af1eb2fe7c401d48a3094fb1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_radius_drop_shift_nondiscriminating.py.gz",
+      "sha256": "8f79ac742e1ccd9dec2c5db80d0d5a2c2854495c4f6d488f165c7d5e24f45186",
+      "decompressed_sha256": "08dd8a5b3b64edc2ff7f2d19d21f47a0a2c784bd1f5a2f0d4bd93b958d2b0586"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_radius_drop_shift_nondiscriminating.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_radius_drop_shift_nondiscriminating.stdout.gz",
+      "sha256": "bc64d9734973eeec5ecdd0fd5c2e6ac362d2200dff615a0d89630e64e6fe79eb",
+      "decompressed_sha256": "3b6b28326e541d427bf08b5f95e3894e4163165a54f7f1f33cb081a064f5b2b8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_torsion_normalization.execution.json.gz",
+      "sha256": "4e089ce6ca7a8a795769a4c8080fc714210db52c32ed2c94b0380f613e4f7fa8",
+      "decompressed_sha256": "d26fd5a8212c4a1c246ece598cb134d43cb9bde3ddb8e9f44f1e910d7504ad1b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_torsion_normalization.py.gz",
+      "sha256": "98651cdec7138a194151e2c3cbf27a4fa87c21c06abc57cf8175259375bd40fa",
+      "decompressed_sha256": "ca38366d7fe95278cb54997da24c202fe94be565a24a5759a0e8576a07086cbf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_torsion_normalization.stderr.gz",
+      "sha256": "4ad2a6506d49c22bd3691af02da5addb24bfefd77fd081115058133b3fcb2949",
+      "decompressed_sha256": "14980a899af9de2f8d4e2d6676bef3fb5c1d2cd64d3ed9b6700c5b719a2b9489"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Centre_torsion_normalization.stdout.gz",
+      "sha256": "ac8b49cfa094c5b32339498168ec2f468d5415996486db2bdd41cc1fb3ee5b37",
+      "decompressed_sha256": "40778ff2701f9b949fe177b8c12faf19e8d26c8f16e495434de8052d592ef575"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_current_center_radius_one.execution.json.gz",
+      "sha256": "69e23225b111eddaf09347f6b5696f6c01720b24478a227ab38fc43784ecb20e",
+      "decompressed_sha256": "ea064dff92b301e99dc01575db9ce176b10277dc30dde01bfccea0b893f87d83"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_current_center_radius_one.py.gz",
+      "sha256": "a6965e852f271cf08b65a4fa52548b53c2380836ae36912a9c660df202fd9b41",
+      "decompressed_sha256": "cd3c530022a79d54cd8d5774711258565e8168ea3e2efe111e1192734ec89dc1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_current_center_radius_one.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_current_center_radius_one.stdout.gz",
+      "sha256": "7c8374e7565dceba1a395924ee8dfa56968b6e301c6fa8b7eaed442c5e2fa48e",
+      "decompressed_sha256": "59360fef1245c918fba9365db77b7babc47fa8c9b3569cecb605927a489f8424"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_double_taylor_derivative.execution.json.gz",
+      "sha256": "ff41fa784068e122ae82d659e328d181fa4f29fa7dae59522a0c22bab5724901",
+      "decompressed_sha256": "f85742657f854b3d6b7365305b23d847d25378c84d458b9e2aabd549ddd0d199"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_double_taylor_derivative.py.gz",
+      "sha256": "d6e8a437492a87ac370ee903e39c3cfe01e1a3f9097b698eed16b43897f243a5",
+      "decompressed_sha256": "d83131c311b185394620907bebd44be3246ca9b52ebffdb24edc26bf396f8823"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_double_taylor_derivative.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_double_taylor_derivative.stdout.gz",
+      "sha256": "28ad099ab4fa67d479734ce7a07d4bc458353b4004afdff5edf69b3980ecf416",
+      "decompressed_sha256": "0e47c52f623b8da72a2e80e1d8f175a565851fc08059a9221db6e994a1441be1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_drop_pair_half.execution.json.gz",
+      "sha256": "b9fd9824b5920965b0f4f0a1260db8cd7e340bc2e1bea6e21cbe38911f31b909",
+      "decompressed_sha256": "01d067a277328bb9ac3e121f22720e067004875c7f5950aee27ac3b36643d0cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_drop_pair_half.py.gz",
+      "sha256": "8d3b91cfe9e016923a6e351b49b0b02586e27dbd55c66c5b0e63877ba3368037",
+      "decompressed_sha256": "e5673a1ebe3b0edd7dd68a5a8c3f4ae6417bac00b26fe9082d5c235869577416"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_drop_pair_half.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_drop_pair_half.stdout.gz",
+      "sha256": "cf053d833405888fb701ff487b8fbd93616cf02bb98511c7296e3aa01721d5a3",
+      "decompressed_sha256": "07d00716f879a3bea5435c948e53156d1c67b95b9daee82b29729fd06ceff85f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_omit_history_support_growth.execution.json.gz",
+      "sha256": "b35753a9d32bd490efd086269af72f7721f04469274991753966c831a1f49371",
+      "decompressed_sha256": "9fca7f53057c97e443c00ceb9cdcab69ad3fe1242d5cd50e037daef41c5aba5c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_omit_history_support_growth.py.gz",
+      "sha256": "b04571fb0935c8dd068b665f74d76363fec145ebd25fa6346a8a71cac2c72233",
+      "decompressed_sha256": "f6b429b6e8b6e29c48ed0c812b3b5c30768f79359d54d9e2082c5917caa85e5e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_omit_history_support_growth.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_omit_history_support_growth.stdout.gz",
+      "sha256": "9d907853b72263c3b583a6d9b96d80651b0e82e28cf915f461f416ac4e0868f1",
+      "decompressed_sha256": "45d76babab251cecca4c061c0133835c74f8ff8e082d8ae13160af0112a53c6f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_reverse_current_sign.execution.json.gz",
+      "sha256": "2f5af9b73f013c0ddae6795aaeec4cb1f78b3e4c607838a444aa3193e9fca40a",
+      "decompressed_sha256": "5488a7af7ab075fbdbd4674e8c5075f85fec6618bc3484db278918f15e848e71"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_reverse_current_sign.py.gz",
+      "sha256": "e76a4a1d078def0625de6b5b98f3abc885fbf0024957f48b23727e64a086143c",
+      "decompressed_sha256": "39dac01aca9f3683d6edacb43b5ea85a4906767fc5df2b5233ef45fc46822bb4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_reverse_current_sign.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/Current_reverse_current_sign.stdout.gz",
+      "sha256": "e1413dd8396d438977d7f1687de3cfcb39462e07ef23d729895b3ac0db2e465c",
+      "decompressed_sha256": "f750872b403fd23eaea85ee8b85b583a0a0cc18c865c0cc06d2eafedcf3979bc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_primary_mutations/manifest.json.gz",
+      "sha256": "7829aaa78596b66126daef1b471c36ee3a833a0ac0992eda43897081520448fb",
+      "decompressed_sha256": "9e3c77d8be09c5cfe4fa461915fca26e725a3da9038cbdbe74fd8c0c94b88af0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_root_operational_failures.json.gz",
+      "sha256": "afab70426db4acd2e3704e35b2564afff11d68a926608ee5c353ca41182c71e6",
+      "decompressed_sha256": "ac4fa03ee7639661aa09f122b3a7a8613b1829d6df50b8ab70b7410322a68f68"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_current_specs.json.gz",
+      "sha256": "ae7b68e7f4fe58785fe483129811039756dd95fec4e474f920062e2b2b95f279",
+      "decompressed_sha256": "169a3b7adae5f5ee8117b46d3bd9edfe07f03ca5c8f7561c17d903295f2f5df7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_link_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/centre_link_vocab_fix.log.gz",
+      "sha256": "859ed7966b8e6391d3705e1a4ab49681ac5f915c48ad2857cc5cf104fcdc6d7a",
+      "decompressed_sha256": "67fc4d1ff75077c4e88f380a06e54bfd1c5533959b82f6928012b3edac6121bf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/finish_centre_current_delivery.py.gz",
+      "sha256": "e701b321462ed8490a1235dcc39220c074a0fcbdeafc3435320b4987fbc6ce03",
+      "decompressed_sha256": "6e28c2a230eab8fbe1eb3e24710db2c5eb41b662302e6927f9190618106efff6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/AUTHOR_SELF_CHECK.md.gz",
+      "sha256": "251bdb13783c3d06735e8f25c95404ff2d5171a00673dec94451835b549d290a",
+      "decompressed_sha256": "aec92f92bd86d550c8f32470440d191c622bf2e3f1b53a2988ec2f150fc42704"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/CHECKPOINT.md.gz",
+      "sha256": "f749ec348a3bee3d2564914da0a571444f802b7741b9cd23b1f8035ad3817fae",
+      "decompressed_sha256": "88c464bbf1ab0c1a2ce4d57a7aec861b1ad0e457de4cc9395be5b2c066fdce87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/OPERATIONAL_HISTORY.md.gz",
+      "sha256": "1bff3e077d941e84f6bc5f1fc4d54d81fcf7d6a1a8fa3c96f599f2b62bd22cb8",
+      "decompressed_sha256": "96aae91ba0bff69e90131c182e56ac4169e59de0547becd3826a8437c27c9fd7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/SOURCE_LEDGER.json.gz",
+      "sha256": "4dcb902323e656e45d7f31679bb7ae2c6f5ce8c3dc702d3d01871ba3d73054a2",
+      "decompressed_sha256": "299fbc9f43a43940cee54b8cd094036e57db0238c7dd3c1dfe387934169bbab7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/check_filter_algebra.py.gz",
+      "sha256": "bd017b417a64469758441967374e129f985b9fa040a33c812e7b941139d56cff",
+      "decompressed_sha256": "09901b777df038f0cb143f01ddc8bf518cb015a37a8bb035b3a6dd1d1f4c48a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/finite_controls.execution.json.gz",
+      "sha256": "e52c483d411373e4f7fbe3ea85a6960724301a3ed17a5392679c97ad233ab047",
+      "decompressed_sha256": "e9ea4b9ad56dfa6d894d64cdcfd520ac53327b3b8f75e46a8d3c4c760668e90c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/finite_controls.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/finite_controls.stdout.gz",
+      "sha256": "5a508487c31111a2950c809529b112934e74fb5265e2237b6e2c49a1e1844f46",
+      "decompressed_sha256": "33db256d320271ad1c5446231030d2542816b7274a76f359e5e1f15d9fc903c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/freeze.execution.json.gz",
+      "sha256": "9377ac2e6e9417c0ba1ded51a9c17c06d88be83f2c54eb4abf097dc69091b574",
+      "decompressed_sha256": "54cedf5fd4068af9305acb8b274479b21056a5e6efc2bb963af59e82cf96870d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/freeze.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/freeze.stdout.gz",
+      "sha256": "913ffec582e6edcb6f406f7075622de0b98599ee512f140c77b16a5f9d3f7521",
+      "decompressed_sha256": "52d40f4daa314ce3b78cdb42a1d9b99b4ce9896a12c80ed5abe20d11379537bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/freeze_evidence.py.gz",
+      "sha256": "dfece80f7bacda501ae05caa915026e3a76c24ca6e212ccb348515d9068a7968",
+      "decompressed_sha256": "7fa0cfeeddb7755c135dcf8790987b4ad40969ceee8cfa2f4f81159141ad3212"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/freeze_receipt.json.gz",
+      "sha256": "7d2749ca69926491d384757bb16ce73f09bd074af10bc6f5d69dc693c8ff8139",
+      "decompressed_sha256": "a76cd471016c6e280d44faa97e470cb13ec1e4dd480f0b16c30308eeb0093012"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/freeze_verify.execution.json.gz",
+      "sha256": "b9e241e9aa4cbe59bcd5670fd2fb6bed2d9557ce27bbc1bcbde6bb4e1437c1bc",
+      "decompressed_sha256": "bcd961fb2c2b384b5ec11ba53f47e766129d9420c5579afefd9d6a3c2e05b7d4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/freeze_verify.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/freeze_verify.stdout.gz",
+      "sha256": "e2717541b9d909df6fc1cb3452c9a69d3ea834713a25c9d081f3188193871fb9",
+      "decompressed_sha256": "b1fedb9020e10f39b0ee5a1ebf2a3629f4d16dbcae3cf784e880c52fc42a93cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/refresh_revision.py.gz",
+      "sha256": "f8dfb2e43c910e2b5ade321343642fd62d29321eb2a278ae2a4708b4704773d3",
+      "decompressed_sha256": "2723faf4f1a04b9a92b55477f455e61af06d02b99ca87055ab92bbbf263e94f1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/revision_changed_paths.raw.gz",
+      "sha256": "1b5cffd43d98364ed032d4200150bb5a46de075069c7e81f6aea397d7f6e4006",
+      "decompressed_sha256": "c0cac97d695a70490f322050337c00f65fa9cd510738266c00f3e33a7be39abc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/revision_refresh.execution.json.gz",
+      "sha256": "bc249ba1b0fbdfd493ff585f52d6c106d9df75bd8dca5bd02a9dc6c58fad85f6",
+      "decompressed_sha256": "74a71ac8831d231257fe6ff263c28bb996e4a93f8fe6d0f2bcd8041370ed980b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/revision_refresh.json.gz",
+      "sha256": "96273343b7b341640df3c94b157310583c090de82fc56a9c2df58f03030588f2",
+      "decompressed_sha256": "f70125e2dc20d15936eacdec4277a62a6562e0ff8d52d0fb0f4027f0c7909128"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/revision_refresh.stderr.gz",
+      "sha256": "091c1c095fad5a877b0aef8beff5105815895adad10aac4d16d59b1a4e5ec822",
+      "decompressed_sha256": "6c170eb32bc38ca506ee84a35ef258babb057388ac05e388be4eeff67050ffaa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/revision_refresh.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/revision_refresh_retry.execution.json.gz",
+      "sha256": "9df6eba5ac07e809395e9424ab1e65a31446de49204ec1bfe771fe8bfee748b1",
+      "decompressed_sha256": "0fe8049251f9b792eafb0afd75f37bee8ad9eef6c84a6048d1486fbbffa9ff35"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/revision_refresh_retry.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/revision_refresh_retry.stdout.gz",
+      "sha256": "64ba4c48bb8924d51ada19cffdf6f0f8144ba033ff3fed32ec49d6d47a0d5f23",
+      "decompressed_sha256": "e87b602a827051d46fb7094b9a7547294e93a6ef1c2759987e252068136304cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/run_with_timeout.py.gz",
+      "sha256": "219ee8ee23ee285304c42744adc33f344db7e013da743aebbf244a077f021056",
+      "decompressed_sha256": "db6fcd00e4b1c01bb0c31cccc7fc47a7bd9cb67d8aa030138122dd493d046c82"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/source_check.execution.json.gz",
+      "sha256": "8fcedba316623ef94d1742566ca9b1245475ed1d2690890438ce46a8816ffb6e",
+      "decompressed_sha256": "664ab25c0aab4883c6b6febb36952da7ad4fbd08d423438c1753c421f5cb80a0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/source_check.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/source_check.stdout.gz",
+      "sha256": "6d9e8397b26b0f0315c0b75b1c2955d723ae4fb54ede1fa735c4ec9e90cf6416",
+      "decompressed_sha256": "c0c54b8a4bbb43df8a8711816f9be19109ce81935e678ec55542d6e0c108c5c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/source_check_final.execution.json.gz",
+      "sha256": "68a1cc4bd9eedfd5e18865b6a409bc01b9327c03438e00646172939e525bf31c",
+      "decompressed_sha256": "bcb675cf4994e6e5df0da3573609605f995d0483c5a08e9658c3c42696d265fb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/source_check_final.stderr.gz",
+      "sha256": "778502290fac91843411b9d38ebb77cdc78e9ec7847710857d31f5371c010986",
+      "decompressed_sha256": "d6460565233e138f7659e464d2e2aadf70835c46183769746679322e30d5d5dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/source_check_final.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/source_check_refreshed.execution.json.gz",
+      "sha256": "c950f882d9f632e2abec5a2fca63789ffa434813e49c1d1f2890d84669fd8485",
+      "decompressed_sha256": "b9f1739d2f527a1a1244097b4f3376d1db692db2d44aa849836309fc615979aa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/source_check_refreshed.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/source_check_refreshed.stdout.gz",
+      "sha256": "10c3db63941c2dd71a15d9ca733cde8e68dac5b80bd1cabc47d1b25485085eef",
+      "decompressed_sha256": "e70d910af250672888371ba011acdae321d03f396aa7e494b8c5ae855c1a4db6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/verify_freeze.py.gz",
+      "sha256": "db0cddea4b64e56eeb20da98ad9be54e7ba41595df9037d1a2c93576f68dc581",
+      "decompressed_sha256": "c49e991e7c0d511bd1284601e25cfd2fe1da10b22bf8eea06269729fb8a2c264"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_filtering/verify_sources.py.gz",
+      "sha256": "b8bf1344316f841ecb2060376bb7f77c4fc3f6205e030cf1f8acfa29d5c47b4c",
+      "decompressed_sha256": "33b9161df8c6962a059335916dd286fee43baf7d6660982874da04f091adb138"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/AUTHOR_EVIDENCE_MANIFEST.json.gz",
+      "sha256": "ee61b950f36c7929212b270c245492d555704c419954aaa02ddb8b26d45c0ae8",
+      "decompressed_sha256": "2523ae23f5f328f98f5a2db5619121bb4e5fd3d15e9a7214615603a3e19f59b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/AUTHOR_MUTATIONS.json.gz",
+      "sha256": "25927a32647331ec3f389b760bb731cfd0a87612660ea3bcb6778419d918ca27",
+      "decompressed_sha256": "c6db3c7601b17fcf0642e6ac9961f0d66ccb39f0242f055911955d8b48bd6638"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/CHECKPOINT.md.gz",
+      "sha256": "fbc6401075ec755e96267e0d5c1cf628aa034670e82ade462205baefc20e04bd",
+      "decompressed_sha256": "e9699d95ceb2d4c9ac727b6feef4e390afe285f1b096e044db0595c816056819"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/CONTROL_ASSESSMENT.md.gz",
+      "sha256": "4452129430dceb17c253a7eb9c80ddd9e96d7d5ab05855c3b6aa02a70814c998",
+      "decompressed_sha256": "a1d4b287b80c49f3830469a43b82ea7d606bcc18a41165b2f308e5218ca59732"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/FINAL_SOURCE_MANIFEST.json.gz",
+      "sha256": "43a982e655c4e2d3c68a936165a04b01fbdcbd387c80938c753528a6f4a4d03f",
+      "decompressed_sha256": "d17349eb276cb816e24cccf64e180772c8a063aebffe99dd7620b60d066d28d1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/INDEPENDENT_RECONSTRUCTION_PREAUTHOR.md.gz",
+      "sha256": "163c0b93a9576ee917187f6cda4dc76c3e954aeb47f5232a353d5c526ff1e9a6",
+      "decompressed_sha256": "1a670bf6853f7bb5636e2ae1010735141df299537736055924e11ce814fdb030"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/INITIAL_SOURCES.json.gz",
+      "sha256": "15fbb29276a5ce38e58cf7ab080285e39ba977ae2a675b5a8243aadea113cc18",
+      "decompressed_sha256": "e68cd63f4cec91ab724d3c01d82de4c93ed017a5b3fc8d9a4278edb44f0ab9ae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/INVENTORY_VERIFICATION.json.gz",
+      "sha256": "988f3681463a92b42b1e947c9863e839c08f5ab66a3b05c9639ee73c7b929688",
+      "decompressed_sha256": "52889440e9544fc388b55c96cfb69efa8877e2e2a4aa77c3c3d145fca35d93a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/OPERATIONAL_HISTORY.md.gz",
+      "sha256": "2f657aa3c73bd556be8781357f4d8b8fa843884cf0a78e415596ce68be073a4b",
+      "decompressed_sha256": "fbde77ecf9c7dac26257ec27b5364c11bb4a3c7383dd180f71107bdc83d96b58"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/PREREQUISITE_SOURCES.json.gz",
+      "sha256": "e829f73a006925a25ee01826717c17e08b51443e516de092c9f3b912b77e00b8",
+      "decompressed_sha256": "8f29951f029fec1cc5ab5c2d9634032cafdb545e7daff768a52e01d95c53ec1c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/REVIEW_CONCURRENT_REFRESH.json.gz",
+      "sha256": "29515cd8960c58ed57004edce7c2155819f0cdfb3b0726a9ac21238e0780897b",
+      "decompressed_sha256": "0c64f5b3c4dc175b779fc41f6adcf4b8cef791cb3157b84237c70dd9fccd75c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/SCOPE_STRESS_TEST.md.gz",
+      "sha256": "a936a613b340d8a45ea9cfacfaf0ea5f4892840262379f7a126c6edeea98679d",
+      "decompressed_sha256": "5c9ff28c27b6f773cd427af484238d13d21aea85464d7cccd3d7bd0adb0c51d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/freeze_review.py.gz",
+      "sha256": "5cd60fffd015e1323fc64e6639e3de53203eda53f96553b93f546a3a23c7eed1",
+      "decompressed_sha256": "7a541a6951b221ed250a9e270e582a11226f8c96c2a9d9b96dbdbcb118372996"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/author_finite_reproduction.execution.json.gz",
+      "sha256": "b0be9fa7f21fc1064e91e4eaba00b8c59521c24c1599fd1844c44d7914adfa8a",
+      "decompressed_sha256": "6dcc10154cd8f57568ce7c58125bbe207d9ecbcacc3e6b43b2311ad9c39d331d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/author_finite_reproduction.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/author_finite_reproduction.stdout.gz",
+      "sha256": "5a508487c31111a2950c809529b112934e74fb5265e2237b6e2c49a1e1844f46",
+      "decompressed_sha256": "33db256d320271ad1c5446231030d2542816b7274a76f359e5e1f15d9fc903c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/author_freeze_verification.execution.json.gz",
+      "sha256": "aca3bc4f555287905512713a1c13eed290c69e502f7b631504c89ecfe094ad9a",
+      "decompressed_sha256": "b795d1d730b2f5a5d0a6cc9bbe6ecbb01396a621c27f42a8daaa6281ddc41f75"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/author_freeze_verification.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/author_freeze_verification.stdout.gz",
+      "sha256": "e2717541b9d909df6fc1cb3452c9a69d3ea834713a25c9d081f3188193871fb9",
+      "decompressed_sha256": "b1fedb9020e10f39b0ee5a1ebf2a3629f4d16dbcae3cf784e880c52fc42a93cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/author_mutations.execution.json.gz",
+      "sha256": "6cca6466b77299998a7ef41ad0ec92eaff467955123d04cb260acde08db541fb",
+      "decompressed_sha256": "880020fa257efa3877734a6ac9b09d820a34564b1b2f4550608199fee4e61734"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/author_mutations.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/author_mutations.stdout.gz",
+      "sha256": "48d3612eb144f507b4bf0328d42c453a6d2ca64481661c3eb696e8bedf797f6d",
+      "decompressed_sha256": "196f624580f47ea473739395533a4e49f2b52f07e70a24a59166274352eac327"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/finalize.execution.json.gz",
+      "sha256": "7ffb326b20751376b0cd8b9d4d191465955528579a8bfffa6dce9ffa3889fc44",
+      "decompressed_sha256": "6867de74dda40b9d46806b2bba739f0cbb599c5f315e3b47f972082f6ab542f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/finalize.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/finalize.stdout.gz",
+      "sha256": "cbc93584716ac9f14845ba369e368a1357e9e9cb6972d5fcfb99ed033052d6d4",
+      "decompressed_sha256": "6557b5e0f6466733895cfe4693d9d3b93d7ea9bf8cd6a20c5a7e93022b89402c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/independent_spin_control.execution.json.gz",
+      "sha256": "e6a8d21aea018479e5257de6912c6fc8790b73c76302db0aea7b0b005dc43b01",
+      "decompressed_sha256": "317a7b304216f364a0d148ff4d57cafa471a5fe073ba3158aaf5b37fd524673d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/independent_spin_control.stderr.gz",
+      "sha256": "48d74085183e1a9cea01e7ddfbf4f3fe9428341aadbaea0805b07f563fb50509",
+      "decompressed_sha256": "760314a49ef72cc604e8f2c7b7530143347b8da688a65afc23412a2a7425c1d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/independent_spin_control.stdout.gz",
+      "sha256": "b8e7aed540c1db3ef1e6d009587be4926c00b215c00c04646968181b58d59939",
+      "decompressed_sha256": "12c93c666d3b9042cf491ae181a5ce167cd8118382061106fa7a9965bff07efc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/independent_spin_control_v2.execution.json.gz",
+      "sha256": "9f45c5ab3845614ecd3025dac4a79b06eec250543b422358f618a773d058607f",
+      "decompressed_sha256": "c0d54d7c3f51d72634e056f51d0032ff1136bb63486bc25dc197413290ab62c3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/independent_spin_control_v2.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/independent_spin_control_v2.stdout.gz",
+      "sha256": "f908237cc33f266193c1025f98170e04f9049e4dc41b2e6f10d1422f1ac3cea5",
+      "decompressed_sha256": "cd301cb3e47e6639390f69491cd5d37e1e071918d027e28be57396180b57faa6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/inventory_verification.execution.json.gz",
+      "sha256": "5d2ec391cdcf39ce9c79afcd680829b1fae6a857ce60862dc5b84bdc01c5a162",
+      "decompressed_sha256": "1804b80a095eaedd90569f29072def701039e7fee57f2e4f93dfe58fa69408e1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/inventory_verification.stderr.gz",
+      "sha256": "2b53e6c22cee1709ba5ca59b1c04cc0a35f177549d044df639c8c8d8f40ea4ef",
+      "decompressed_sha256": "2c2132a0693f11c45a6dc6af58b734a5b8a632d2c02aa53c9978e058c23376c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/inventory_verification.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/inventory_verification_refreshed.execution.json.gz",
+      "sha256": "1948ac443fb0966ee12614ae3a4426186da5c698241e3f79d16c4248a42ee945",
+      "decompressed_sha256": "92d5bb7f4d3652d63d016b45acf6b4bf66822c536c6503517f723ebc90273e38"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/inventory_verification_refreshed.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/inventory_verification_refreshed.stdout.gz",
+      "sha256": "a1e172a0d7c433eb92cb83c095b284853eb20cf3b84959fdd3e86b161f5dfdf7",
+      "decompressed_sha256": "4818ee12424134340ba3ac277c84ca4ece5203e901cd202bc2db20d205d98fc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/receipt_verification.execution.json.gz",
+      "sha256": "810a4ecc850eecb910f09d6a5bed68717b363a17ecabf07617f41996dfa70524",
+      "decompressed_sha256": "a13b66607c20588f957152f2fedfd3bd964622020cced2a67af14e12d02a668b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/receipt_verification.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/receipt_verification.stdout.gz",
+      "sha256": "24514e921db903e4e25e37653137d7371d929709914dc114e233e9fd834f575d",
+      "decompressed_sha256": "03bc64b10959aba6c7743cc7bb1db363d53bf25abdbf47ded83b853d8d69d838"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/review_concurrent_paths.raw.gz",
+      "sha256": "fb54daf70f58f4e65f0c5f3f8fc4043e1bd87fa95a01d70bd37886eb7e3ddebd",
+      "decompressed_sha256": "441ff645dfc682fcc74a7fef45786d1089c6a3a7da09a2126006839c954cabae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/scope_search.execution.json.gz",
+      "sha256": "19e407696a98a45ad27194bc2ed691706f94f52ca7078d9b8e600a2ed813c127",
+      "decompressed_sha256": "7c4d12f5e268ac50710795e9aef91ede0ef216bb0b0fc50cd79bdd901309852c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/scope_search.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/logs/scope_search.stdout.gz",
+      "sha256": "1799a12770ecdecdc0f1bc72da39f014a9a3f4f09a0290fb47ddd84aa12d2aa6",
+      "decompressed_sha256": "33c55a8faef8d8072a6f7d16dd7cdf05733f36a5ed150cefe8d529dde44ac07b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/adjoint_reflection.execution.json.gz",
+      "sha256": "4bb74ab3d895fbdd93443470d0875348bb7283565973ec2ee9b2da83a634ad9d",
+      "decompressed_sha256": "a2154780d1fddd75d88e48b0abbc64c53e18fb0a055837456aeb1d605300a890"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/adjoint_reflection.py.gz",
+      "sha256": "4e89c7b18e7532f6b2565f49caf14bc3532657fb4e1b46928001e4a942f35de1",
+      "decompressed_sha256": "78b91b6417ed1ca656b5b55ad9050146e7adb39a49f53597917d96622984b6af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/adjoint_reflection.stderr.gz",
+      "sha256": "809ea032fc1198c690f1b393b71acf2fd6a3e206ffeaa189e4af05e1db0e61ba",
+      "decompressed_sha256": "0c6e69be83ea83f828ec4e0377ac814d4f7b19c75dd983c23ba79184c199013b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/adjoint_reflection.stdout.gz",
+      "sha256": "fed83416d9b2edcdd31b13de882280b7ce9037c818172cfdc4d2985bc50578a3",
+      "decompressed_sha256": "6bdb43d2925c971820b990a04975f7a37f002d30af4da3caaf644a0b70e3abba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/chart_sign.execution.json.gz",
+      "sha256": "cf08be144cbee754ec7bb66f67b6903f69e214ad1f7bed4c360f004286a8b188",
+      "decompressed_sha256": "6126a6c3c64994566d2f810260d5460ecbd505780ae1dd304cab8c3522cf4348"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/chart_sign.py.gz",
+      "sha256": "d086c96a103c4b6577a4c3dc2681a7057c5734becd71464df18a252efd8f6cee",
+      "decompressed_sha256": "9d837439da181c12c4f7e1a4b42fbb5a5552b4eee73fc0e58891b2d2ce981c69"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/chart_sign.stderr.gz",
+      "sha256": "9e1f975b1365c964240e3539c097549c7b9ba01f3d468adf6d39990f2f93cffe",
+      "decompressed_sha256": "af406a5739cd653845bb94953413ce945d426166aa01b8b492dfb82968673ac5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/chart_sign.stdout.gz",
+      "sha256": "ebc769d86d8a533ba5f90fec5b10938de4efa27a54c9a587893c4765af761511",
+      "decompressed_sha256": "4b3b5d076f0a545bbabb2ebe45f5eecdc588c032e18c7de37fc53c4f20d088e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/composition_coefficient.execution.json.gz",
+      "sha256": "c8d1e331b5c0063b845290ed67d41b8f726423a00af66f59b57eba89277e0b6d",
+      "decompressed_sha256": "d3b9e70ddb88172a116d52543f52867304fff788e3d35a44baf4ff0a4e0d15a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/composition_coefficient.py.gz",
+      "sha256": "d1a40c37389a5a23530ef1ce631936bf1cc5381f0d090bedc351ad71c18a4a09",
+      "decompressed_sha256": "02f416c97c597d81bc1a8583fd4d93ed6b3a7a0d227b6857356056f93c3c0fbf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/composition_coefficient.stderr.gz",
+      "sha256": "9b24e5cae5fab27c5fd5a91d3568ac19ae6059e9fc00593715b3053203032281",
+      "decompressed_sha256": "3c988e11139ad11d355b4b01ad5334ea86bea18f9fb791c48cabe85badc3a000"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/composition_coefficient.stdout.gz",
+      "sha256": "f4ac4d4753b227feccae8f9b2cf55cace4036503026d9155eac9a0d5140aac65",
+      "decompressed_sha256": "3034303f2cff1ba962c054199ff5d9a87e4bcaf392c3112c3b4c09e86a8764f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/false_zero_clock.execution.json.gz",
+      "sha256": "23a49e2be23eace4358e77f048a9a9cbf6c5ae4c9ab9456846485c249d7c23df",
+      "decompressed_sha256": "8c79ad70d07508585591f3240d6f593031e15b960684d7985d7443dc3084bbb5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/false_zero_clock.py.gz",
+      "sha256": "60702f458606960acb1938870b40b3711586dd8bf839b4777df648e67844d62f",
+      "decompressed_sha256": "0985e556c720267f2de340002af21ce900cb3150ce4386e8975264cc60c5feae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/false_zero_clock.stderr.gz",
+      "sha256": "c19d6668e6a3a5d830b1b849644ecd6dc61390d60dfa95e8fe4ac656b9906c5d",
+      "decompressed_sha256": "381a71dd1800f4707f16ca606a0ad3dfc235c859833237e0c9c39834a745f6f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/false_zero_clock.stdout.gz",
+      "sha256": "ebc769d86d8a533ba5f90fec5b10938de4efa27a54c9a587893c4765af761511",
+      "decompressed_sha256": "4b3b5d076f0a545bbabb2ebe45f5eecdc588c032e18c7de37fc53c4f20d088e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/fourier_sign.execution.json.gz",
+      "sha256": "eaa73ca4a2b68c83a0409bd3c613331744ca0b28ae76a783d063b803b51ea8de",
+      "decompressed_sha256": "675e81089c12a402c5b8005bb9da1fbe0484f4a2ea9ecd4c6f3bb20e717ecbdc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/fourier_sign.py.gz",
+      "sha256": "98428587a2ca0d83554a945a741c85ef2a189c783ec1c3846173d9742eaf92fc",
+      "decompressed_sha256": "8959c5120eab959e7a0f4e9d38c12145cb412ae9ed40a1c0cc9450b03aa99cd7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/fourier_sign.stderr.gz",
+      "sha256": "2baf67ad1ba4e4f029c263a7bbc95be55a88a8f23e1fa60282cb4ab93d0432f5",
+      "decompressed_sha256": "5199665e776723b97c9c48649c2d6d5e3b42495870774543fd8f0324346fbc60"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/fourier_sign.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/generic_interpolation.execution.json.gz",
+      "sha256": "8efb9b3a73198ba09a8e1c67b26edf6a66a1ea87ce722d61701c4a7ff00ff285",
+      "decompressed_sha256": "df39459eda3b41477e2e1402c84d4e9e1c6449848bd7db91fe1fc35806e5af69"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/generic_interpolation.py.gz",
+      "sha256": "ef82389f6d4276fb77d1a068d267f6daf0ac92c53e449413c1b9569d2c3bea4e",
+      "decompressed_sha256": "535efd420e3dd88ce19e24ac18564939fb4090bfd1136ea50ea0e1aa1179f14d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/generic_interpolation.stderr.gz",
+      "sha256": "510b8aec81a3c26aa0b78d220f552e2dc53994c805c9a057f680ae7a17d838ae",
+      "decompressed_sha256": "8a4a99082e71b5d08a17f8442e128117bf6643e2811dd1661caa13d3124def8f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/generic_interpolation.stdout.gz",
+      "sha256": "78d237754a7282e0c3106b9bbd82839f5f60dda03a231b2c24d75f91e8ad14c4",
+      "decompressed_sha256": "0d95674ad99f739ce01aafb407bcdf3e2b90c837212f059fbefd22f7f79e9697"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/omit_mass.execution.json.gz",
+      "sha256": "a8d63f67589b64c885d35691fb979f508e94358dd96503511297ab3edb5a4cad",
+      "decompressed_sha256": "1525b775215c6854137e2c3808526527d94d6b7ac662f9a9ec2c141163b0b123"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/omit_mass.py.gz",
+      "sha256": "3b0e3799d96ce2c0fe28b7c85408d1f47e2bde971641a54732dd90d3d301d86a",
+      "decompressed_sha256": "87b13f75fcb46ae7608e3c533a18802b1689d6ab4ba5bdf419c2b4c3faa33603"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/omit_mass.stderr.gz",
+      "sha256": "55ee82d89050d151fbef87910d1c1b81afa7206246506689a0c0e03e4e34f232",
+      "decompressed_sha256": "03915c30abcbcd616f558ef2bcb28cf34ac7a5e90fb29a1392ac5cc4cfbb379d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/omit_mass.stdout.gz",
+      "sha256": "96ffd56a51a228560ccf014d09704ab700e6c7b5645f493bae5c25a7d0ba46ab",
+      "decompressed_sha256": "c0bd5d68ade805034939fc010e21abc073a3b5d285971a63fb95cd8d694a6bd8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/operator_right_action.execution.json.gz",
+      "sha256": "5f32100c42a20b2fa6edae5fc87c7352b677240235e9dc07e94c1356e7141bbc",
+      "decompressed_sha256": "69cc3f50458be10adc058cf0cd5cc9307f0d5d55d50758d5dd296e7ae553ee71"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/operator_right_action.py.gz",
+      "sha256": "ffc04bb581c008db17844a785d31085cc772deb5ed8bb6d73d062f16bdd6017f",
+      "decompressed_sha256": "6e5cb9153dd3d7ea614bc5eb84ae6fa73de05e279c815866643be237a965f033"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/operator_right_action.stderr.gz",
+      "sha256": "1561874d0041835aec4c42c5836cbb88add2e33c9130f0f8440b5a0f8e66eb2b",
+      "decompressed_sha256": "378c4537612872e6517c09b23dfabf9761a663a114dabf3f7ab4afab86fa1300"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/operator_right_action.stdout.gz",
+      "sha256": "fed83416d9b2edcdd31b13de882280b7ce9037c818172cfdc4d2985bc50578a3",
+      "decompressed_sha256": "6bdb43d2925c971820b990a04975f7a37f002d30af4da3caaf644a0b70e3abba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/radius_budget.execution.json.gz",
+      "sha256": "988902c40090c64a64e8664295e65884d3abc44f059ed6422c6b7302f88109ce",
+      "decompressed_sha256": "9441f84149ddbe1f1b369fc52e88f1c38bd215ed1b8e722cfc961ca8fe9de526"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/radius_budget.py.gz",
+      "sha256": "39566e7dd71ee41d46c4e7c70573eaf0787af47a7a73700264259d9f76107c0a",
+      "decompressed_sha256": "b8a1d2a4bab6416c856f7dbaae6f986adccbf43e630207e10a93dbf4aca7d4ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/radius_budget.stderr.gz",
+      "sha256": "c3c70462afce80dc687d4445cad838c86fcce1e3da29de942ccfd46ad9c51f0a",
+      "decompressed_sha256": "24f51119e3976027a38f561c8fcc30887eeb9b7324478f6f415a5d7846f6a51d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/radius_budget.stdout.gz",
+      "sha256": "ad5382d0ef1f70887f5a43ba1f3245b5a40ca9e6f2a42abd816cb592e7605900",
+      "decompressed_sha256": "f698650a7528f62dd99280d71ac1b102e1d9869cb20662460e2dc15d31c0e5cc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/radius_drop_shift_nondiscriminating.execution.json.gz",
+      "sha256": "8f14568174af2bc86e38c37c25252a8d3dd754de7fb70a4613d38a3fd39b8b78",
+      "decompressed_sha256": "0ae1aa43acda433f5121be08d4648a04ecf1672f118bb1fa787c2d318d10ee40"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/radius_drop_shift_nondiscriminating.py.gz",
+      "sha256": "d5a31bbe11f04ea29b9d4e7fb224bcaf5ccf98bae59ded2b1183a84b4e3eb67f",
+      "decompressed_sha256": "150a8866c258d165092e0167e5d84902565558797f40c77270dc566ac645d73c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/radius_drop_shift_nondiscriminating.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/radius_drop_shift_nondiscriminating.stdout.gz",
+      "sha256": "5a508487c31111a2950c809529b112934e74fb5265e2237b6e2c49a1e1844f46",
+      "decompressed_sha256": "33db256d320271ad1c5446231030d2542816b7274a76f359e5e1f15d9fc903c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/torsion_normalization.execution.json.gz",
+      "sha256": "bea30c9a70006e7a56d78d5008458b909fc2727dc490db96e263b9ed691f5a8e",
+      "decompressed_sha256": "cfdd65cd26110fe9c83cfb7e672c30107ee4080aa0b2c0ae5910e37524cd4cb7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/torsion_normalization.py.gz",
+      "sha256": "b5e5522b84e8e7e2615d48e8eac94bffcdb363d3d09cf4b4352a6bd58e401abc",
+      "decompressed_sha256": "a91bfa31df539204a76cc41fbeb8da9acd21f3e0d15e3a13ab4c43cd225fdebd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/torsion_normalization.stderr.gz",
+      "sha256": "bc92833249f9e253ba48a4cd858dc3e68563d436ba14599f01748ac511bc2a18",
+      "decompressed_sha256": "fcb169040ad471d994903a2f904bb05f0b1f4b457f364c7fbba0014569ebf8d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/mutations/torsion_normalization.stdout.gz",
+      "sha256": "ac8b49cfa094c5b32339498168ec2f468d5415996486db2bdd41cc1fb3ee5b37",
+      "decompressed_sha256": "40778ff2701f9b949fe177b8c12faf19e8d26c8f16e495434de8052d592ef575"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/pre_author_control_v2_freeze.json.gz",
+      "sha256": "305ab8a273c159e0df8d8b7083609aaf4403f70158ef89db8160dc1a52c829e8",
+      "decompressed_sha256": "44b99fd3578a5f73419014439775fdf360e9f13f72b9226997ca19abc80e4383"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/pre_author_freeze.json.gz",
+      "sha256": "67054c2ee8ac052dada9aab97a496fc89e5c4c6aa2dfb192dba5e073cf3013b3",
+      "decompressed_sha256": "363e98dec58a422c405bb4bbff5d4d028e95f12418c5ece8734d4ae199d9e30b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/receipt.json.gz",
+      "sha256": "e5f41309b89f788df0f0614e38c521e01988e5ce5fd385d0b7af7629a090b4f3",
+      "decompressed_sha256": "8eeb364e11eb54d3cb4a6127596d6f9d422f6acd9d88b1275346922661c99abc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/run_author_mutations.py.gz",
+      "sha256": "0c399889b6872b3a36cbbbaf8b1173f1a547e66acd70990ecf67ebe7a12f0142",
+      "decompressed_sha256": "cbc9b293f5a913c313a99409d9ad55f8d4831437f32486941b76683bf4b7ba6b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/run_logged.py.gz",
+      "sha256": "b870769f884eb3a31fe845bcc89145620eb47a6a11ca99a7b2ca1d321a8e3823",
+      "decompressed_sha256": "e6065fb347d78f486f9ff6296ffae3e2dc1ebfca9be2bc9fc36f71841a95172f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/FIXES_AND_REPORTING.md.gz",
+      "sha256": "2b810691ebd17a412f702422ec88f33c9a9cdbb6fea77743f1dc7cebc398a065",
+      "decompressed_sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/ISOLATED_CENTRE_FILTERING_PROBE.md.gz",
+      "sha256": "53711ca92ac2b3e80847831cc3e0b35613858ec8920e82ae9601029e9e0393a6",
+      "decompressed_sha256": "1dcb9580d128d8fc41b76517ce0fe18842291e8e32681fa9c6b22f0feb1e13de"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/MAIN_AGENTS.md.gz",
+      "sha256": "9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf",
+      "decompressed_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/MINIMAL_AXIOMS_2026-06-29.md.gz",
+      "sha256": "70b06ee88301b6b13ed28ba82d06b0ac071d9286ab55475e57434c84e507e631",
+      "decompressed_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/NO_GO_SKILL.md.gz",
+      "sha256": "f26b3cfafcae3c6f473ead22c3abfd6ef3df6e2d90b6f9ce439f3da29bab1934",
+      "decompressed_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/PHYSICS_CLAIM_REVIEWER_SKILL.md.gz",
+      "sha256": "b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873",
+      "decompressed_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/PLANNING_AGENTS.md.gz",
+      "sha256": "0c9faf905a93497cae26590f7c44a040bd049c89650b40cfab9bf538667f93da",
+      "decompressed_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/PRIMITIVE_REGISTRY_CHECK.md.gz",
+      "sha256": "0fbed60a117a60bbeda5ad780e5194013847c1f9ae00ad7be0d5b48458e606a6",
+      "decompressed_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/PROOF_SEARCH_GOVERNANCE.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "decompressed_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/REVIEW_LOOP_SKILL.md.gz",
+      "sha256": "bb65b5e48976f60f0e6c7b8e0b106b75d123c7efe863af0b2b11af00367f3a03",
+      "decompressed_sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/REVIEW_UNITS.md.gz",
+      "sha256": "cd579e6c91cc78854db94407b0fa546671344a09674651dba8e4fcfadfa0c6e4",
+      "decompressed_sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/SCIENCE_LENSES.md.gz",
+      "sha256": "9f5ffe7425e379ad14b217180a494cf3154c68c19dfa92f687966f015c6c0db2",
+      "decompressed_sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/SCIENCE_WORKFLOW.md.gz",
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "decompressed_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/SKILL_FRESHNESS_CHECK.md.gz",
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "decompressed_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/AUTHOR_SELF_CHECK.md.gz",
+      "sha256": "251bdb13783c3d06735e8f25c95404ff2d5171a00673dec94451835b549d290a",
+      "decompressed_sha256": "aec92f92bd86d550c8f32470440d191c622bf2e3f1b53a2988ec2f150fc42704"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/CHECKPOINT.md.gz",
+      "sha256": "f749ec348a3bee3d2564914da0a571444f802b7741b9cd23b1f8035ad3817fae",
+      "decompressed_sha256": "88c464bbf1ab0c1a2ce4d57a7aec861b1ad0e457de4cc9395be5b2c066fdce87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/OPERATIONAL_HISTORY.md.gz",
+      "sha256": "1bff3e077d941e84f6bc5f1fc4d54d81fcf7d6a1a8fa3c96f599f2b62bd22cb8",
+      "decompressed_sha256": "96aae91ba0bff69e90131c182e56ac4169e59de0547becd3826a8437c27c9fd7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/SOURCE_LEDGER.json.gz",
+      "sha256": "4dcb902323e656e45d7f31679bb7ae2c6f5ce8c3dc702d3d01871ba3d73054a2",
+      "decompressed_sha256": "299fbc9f43a43940cee54b8cd094036e57db0238c7dd3c1dfe387934169bbab7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/check_filter_algebra.py.gz",
+      "sha256": "bd017b417a64469758441967374e129f985b9fa040a33c812e7b941139d56cff",
+      "decompressed_sha256": "09901b777df038f0cb143f01ddc8bf518cb015a37a8bb035b3a6dd1d1f4c48a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/finite_controls.execution.json.gz",
+      "sha256": "e52c483d411373e4f7fbe3ea85a6960724301a3ed17a5392679c97ad233ab047",
+      "decompressed_sha256": "e9ea4b9ad56dfa6d894d64cdcfd520ac53327b3b8f75e46a8d3c4c760668e90c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/finite_controls.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/finite_controls.stdout.gz",
+      "sha256": "5a508487c31111a2950c809529b112934e74fb5265e2237b6e2c49a1e1844f46",
+      "decompressed_sha256": "33db256d320271ad1c5446231030d2542816b7274a76f359e5e1f15d9fc903c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/freeze.execution.json.gz",
+      "sha256": "9377ac2e6e9417c0ba1ded51a9c17c06d88be83f2c54eb4abf097dc69091b574",
+      "decompressed_sha256": "54cedf5fd4068af9305acb8b274479b21056a5e6efc2bb963af59e82cf96870d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/freeze.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/freeze.stdout.gz",
+      "sha256": "913ffec582e6edcb6f406f7075622de0b98599ee512f140c77b16a5f9d3f7521",
+      "decompressed_sha256": "52d40f4daa314ce3b78cdb42a1d9b99b4ce9896a12c80ed5abe20d11379537bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/freeze_evidence.py.gz",
+      "sha256": "dfece80f7bacda501ae05caa915026e3a76c24ca6e212ccb348515d9068a7968",
+      "decompressed_sha256": "7fa0cfeeddb7755c135dcf8790987b4ad40969ceee8cfa2f4f81159141ad3212"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/freeze_receipt.json.gz",
+      "sha256": "7d2749ca69926491d384757bb16ce73f09bd074af10bc6f5d69dc693c8ff8139",
+      "decompressed_sha256": "a76cd471016c6e280d44faa97e470cb13ec1e4dd480f0b16c30308eeb0093012"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/freeze_verify.execution.json.gz",
+      "sha256": "b9e241e9aa4cbe59bcd5670fd2fb6bed2d9557ce27bbc1bcbde6bb4e1437c1bc",
+      "decompressed_sha256": "bcd961fb2c2b384b5ec11ba53f47e766129d9420c5579afefd9d6a3c2e05b7d4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/freeze_verify.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/freeze_verify.stdout.gz",
+      "sha256": "e2717541b9d909df6fc1cb3452c9a69d3ea834713a25c9d081f3188193871fb9",
+      "decompressed_sha256": "b1fedb9020e10f39b0ee5a1ebf2a3629f4d16dbcae3cf784e880c52fc42a93cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/refresh_revision.py.gz",
+      "sha256": "f8dfb2e43c910e2b5ade321343642fd62d29321eb2a278ae2a4708b4704773d3",
+      "decompressed_sha256": "2723faf4f1a04b9a92b55477f455e61af06d02b99ca87055ab92bbbf263e94f1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/revision_changed_paths.raw.gz",
+      "sha256": "1b5cffd43d98364ed032d4200150bb5a46de075069c7e81f6aea397d7f6e4006",
+      "decompressed_sha256": "c0cac97d695a70490f322050337c00f65fa9cd510738266c00f3e33a7be39abc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/revision_refresh.execution.json.gz",
+      "sha256": "bc249ba1b0fbdfd493ff585f52d6c106d9df75bd8dca5bd02a9dc6c58fad85f6",
+      "decompressed_sha256": "74a71ac8831d231257fe6ff263c28bb996e4a93f8fe6d0f2bcd8041370ed980b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/revision_refresh.json.gz",
+      "sha256": "96273343b7b341640df3c94b157310583c090de82fc56a9c2df58f03030588f2",
+      "decompressed_sha256": "f70125e2dc20d15936eacdec4277a62a6562e0ff8d52d0fb0f4027f0c7909128"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/revision_refresh.stderr.gz",
+      "sha256": "091c1c095fad5a877b0aef8beff5105815895adad10aac4d16d59b1a4e5ec822",
+      "decompressed_sha256": "6c170eb32bc38ca506ee84a35ef258babb057388ac05e388be4eeff67050ffaa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/revision_refresh.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/revision_refresh_retry.execution.json.gz",
+      "sha256": "9df6eba5ac07e809395e9424ab1e65a31446de49204ec1bfe771fe8bfee748b1",
+      "decompressed_sha256": "0fe8049251f9b792eafb0afd75f37bee8ad9eef6c84a6048d1486fbbffa9ff35"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/revision_refresh_retry.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/revision_refresh_retry.stdout.gz",
+      "sha256": "64ba4c48bb8924d51ada19cffdf6f0f8144ba033ff3fed32ec49d6d47a0d5f23",
+      "decompressed_sha256": "e87b602a827051d46fb7094b9a7547294e93a6ef1c2759987e252068136304cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/run_with_timeout.py.gz",
+      "sha256": "219ee8ee23ee285304c42744adc33f344db7e013da743aebbf244a077f021056",
+      "decompressed_sha256": "db6fcd00e4b1c01bb0c31cccc7fc47a7bd9cb67d8aa030138122dd493d046c82"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/source_check.execution.json.gz",
+      "sha256": "8fcedba316623ef94d1742566ca9b1245475ed1d2690890438ce46a8816ffb6e",
+      "decompressed_sha256": "664ab25c0aab4883c6b6febb36952da7ad4fbd08d423438c1753c421f5cb80a0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/source_check.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/source_check.stdout.gz",
+      "sha256": "6d9e8397b26b0f0315c0b75b1c2955d723ae4fb54ede1fa735c4ec9e90cf6416",
+      "decompressed_sha256": "c0c54b8a4bbb43df8a8711816f9be19109ce81935e678ec55542d6e0c108c5c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/source_check_final.execution.json.gz",
+      "sha256": "68a1cc4bd9eedfd5e18865b6a409bc01b9327c03438e00646172939e525bf31c",
+      "decompressed_sha256": "bcb675cf4994e6e5df0da3573609605f995d0483c5a08e9658c3c42696d265fb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/source_check_final.stderr.gz",
+      "sha256": "778502290fac91843411b9d38ebb77cdc78e9ec7847710857d31f5371c010986",
+      "decompressed_sha256": "d6460565233e138f7659e464d2e2aadf70835c46183769746679322e30d5d5dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/source_check_final.stdout.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/source_check_refreshed.execution.json.gz",
+      "sha256": "c950f882d9f632e2abec5a2fca63789ffa434813e49c1d1f2890d84669fd8485",
+      "decompressed_sha256": "b9f1739d2f527a1a1244097b4f3376d1db692db2d44aa849836309fc615979aa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/source_check_refreshed.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/source_check_refreshed.stdout.gz",
+      "sha256": "10c3db63941c2dd71a15d9ca733cde8e68dac5b80bd1cabc47d1b25485085eef",
+      "decompressed_sha256": "e70d910af250672888371ba011acdae321d03f396aa7e494b8c5ae855c1a4db6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/verify_freeze.py.gz",
+      "sha256": "db0cddea4b64e56eeb20da98ad9be54e7ba41595df9037d1a2c93576f68dc581",
+      "decompressed_sha256": "c49e991e7c0d511bd1284601e25cfd2fe1da10b22bf8eea06269729fb8a2c264"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/author_packet/verify_sources.py.gz",
+      "sha256": "b8bf1344316f841ecb2060376bb7f77c4fc3f6205e030cf1f8acfa29d5c47b4c",
+      "decompressed_sha256": "33b9161df8c6962a059335916dd286fee43baf7d6660982874da04f091adb138"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/axiom_premise_nodes.json.gz",
+      "sha256": "99cf399266d70f0f8b66804a32c6faa55644c0552d30ba7945eea6ac6e322dda",
+      "decompressed_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/freeze_receipt.json.gz",
+      "sha256": "7d2749ca69926491d384757bb16ce73f09bd074af10bc6f5d69dc693c8ff8139",
+      "decompressed_sha256": "a76cd471016c6e280d44faa97e470cb13ec1e4dd480f0b16c30308eeb0093012"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/prerequisites/COMPACT_DETECTOR_CONVERGENCE_PROBE.md.gz",
+      "sha256": "33efc2317c99dcc3698a045ae8c075312819875c68d6d93ffb8d5219fc714bbe",
+      "decompressed_sha256": "bed0584922876c64de1658f3135390420b703dd661edf5076e02a0a36af34d64"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/prerequisites/COMPACT_DETECTOR_CONVERGENCE_REVIEW.md.gz",
+      "sha256": "8485944dd5100dec9f021e23ddf51ad2a3488ffdbc7cb84b4e68bfef54912605",
+      "decompressed_sha256": "2f9ebfed745c217d97750ddc5f7a5edeaffaede72895ad0da1af0974ef2c51f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/prerequisites/COMPACT_PATCH_FOCK_ISOMETRY_PROBE.md.gz",
+      "sha256": "665f64c0dfdefc032bd348c5b9eef91a178129a977536584b68cb8d5966d5dcf",
+      "decompressed_sha256": "9bc3a309e8fc35978bcac0c360b8557fb6a3c4484cfc2034a277a94072369404"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/prerequisites/COMPACT_PATCH_FOCK_ISOMETRY_REVIEW.md.gz",
+      "sha256": "efe72f08cc9e9027eae5d137bf485fe14eb44899c47c8d8ca3f24caa3b37f8f3",
+      "decompressed_sha256": "bc88af1dda77065d8806da9d689546547f40847a340177086793dab5f3a277cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/prerequisites/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz",
+      "sha256": "1ef5c86d3be7c3166027767f911412ceebb2bece9569ecd3dbbc10d3c56db362",
+      "decompressed_sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/prerequisites/COMPACT_PATCH_SCATTERING_COVARIANCE_REVIEW.md.gz",
+      "sha256": "ddd593920aa50ba5f6633a4297665227406712d41860f288d74ab481f8aa0ff7",
+      "decompressed_sha256": "924b2fa9d6175bcbc213d164da6322d3fde0d769f06a5608d4aadc1644f974be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/prerequisites/COMPACT_PATCH_SCATTERING_EX_PUBLICATION_REPAIR.md.gz",
+      "sha256": "40d7ea66b19bd1770000e4efaa502946df6b634893599c5ebab9057099151fe6",
+      "decompressed_sha256": "d4aac1e14a20e82be994bd4b8de966f0063affcbaa22a40a173b126f77fa3516"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/prerequisites/DETECTOR_SCATTERING_PROJECTION_PROBE.md.gz",
+      "sha256": "6c05ef2bed51f3e4302cceeffebc66f744bbfbd9d2b4a9912618ccfe84c2a0e2",
+      "decompressed_sha256": "91c561d9d24d27bd4c5be26f0f688553d3d690df51766c9f6de5ec70f3ed38b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/sources/prerequisites/EX_REPAIR_REVIEW_ADDENDUM.md.gz",
+      "sha256": "663bd61091a158a8a9fd50927674e7da9c38c671715cf7d47f467503e73457a7",
+      "decompressed_sha256": "8135fdaf9481c492738eee35d7b360c0e4f864b9213fd9751218bd3ee64f3029"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/spin_transition_control.py.gz",
+      "sha256": "4b2de890a0159447efddeddd63ff0b144e21fcf38aadc429d15da3de9c839eee",
+      "decompressed_sha256": "4a6875f7261d184e88bf89e0473afa15e4303e77cb54af8a9ebbac2970ff8799"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/spin_transition_control_v2.py.gz",
+      "sha256": "e8f7c6885c8b0a43f8b181bd852ad8d4c8b644d92bab49fa2f7df5a7e37cf7ea",
+      "decompressed_sha256": "0bd50f362e758b8406fd8b257778178efb41e2aac7a3be7125425c9da5abba2c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/verify_inventory.py.gz",
+      "sha256": "3a5aec763bb5272dad6a5407cfc87bd07183685cde988f425365a866845ddd0d",
+      "decompressed_sha256": "a351dcdaf3432ee0296da8dc85d2db2e48c1e39171e5c4b9304ea83194e16251"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/verify_inventory_v2.py.gz",
+      "sha256": "bb7c5bd28e01b24c1586f05da7bf659d818e1b7da23ecfc7840b6b10c989dccd",
+      "decompressed_sha256": "e68f825d4dd765c33795ac0c3787b30fb84053b0d0bc07909b05690e8c2085f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/isolated_centre_review/verify_review_receipt.py.gz",
+      "sha256": "4667079b1f1d43306dfc11d8cd587790f97011f7c4ef775bdf950e7b6a5b7def",
+      "decompressed_sha256": "89dce008c65eb9b6f265dfd4c4c477b50fd397547a634f155cc6311b48ef2b49"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/CHECKPOINT.md.gz",
+      "sha256": "3e57f2c5f57aff38bfe708d7a9a27e1f5dc7fad32ee541b90333c07e69dc645e",
+      "decompressed_sha256": "7160766a06156f9da50fdf71d42dd875d196147e0f3e9f5e97c840ff09deb912"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/finite_controls.py.gz",
+      "sha256": "9916beb58139715317760868c1b8c49f9c8c3c4f56d689957dc9abaf84fc84e6",
+      "decompressed_sha256": "e38b4cf704febec830a45c2521524be21646ce6bd512d6bf318dba581b31a908"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/finite_controls_results.json.gz",
+      "sha256": "b1e0dcf1587f03fe83155d782ea5d3bdf53c20f77c462d1a9f45f4e6968ac72b",
+      "decompressed_sha256": "a5af85d95063371ee402037fe631f205a039b5b4df7140f05cbe38258a46dc3d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/AGENTS.md.gz",
+      "sha256": "9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf",
+      "decompressed_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/PLANNING_AGENTS.md.gz",
+      "sha256": "0c9faf905a93497cae26590f7c44a040bd049c89650b40cfab9bf538667f93da",
+      "decompressed_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/docs/MINIMAL_AXIOMS_2026-06-29.md.gz",
+      "sha256": "70b06ee88301b6b13ed28ba82d06b0ac071d9286ab55475e57434c84e507e631",
+      "decompressed_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/docs/ai_methodology/SCIENCE_WORKFLOW.md.gz",
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "decompressed_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md.gz",
+      "sha256": "0fbed60a117a60bbeda5ad780e5194013847c1f9ae00ad7be0d5b48458e606a6",
+      "decompressed_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md.gz",
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "decompressed_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/docs/ai_methodology/skills/physics-loop/SKILL.md.gz",
+      "sha256": "08d2e6462c285a4df9bf676ae0bfb42d1366b76da56274aad1ad93978ecfbf6d",
+      "decompressed_sha256": "7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md.gz",
+      "sha256": "7d9fd6fd3864af2999ced920fb7cf0565d365b5dc213dd6fbc36cc0a247f57a5",
+      "decompressed_sha256": "c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/docs/ai_methodology/skills/physics-loop/references/DELIVERY.md.gz",
+      "sha256": "50a92ef72e23effe7381c4731734faa5f3a6677d0357b719914d0beca7422eb0",
+      "decompressed_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md.gz",
+      "sha256": "4e6b1ce17370caa663d7e9ef437117ab70f7b6443598cc908be964fd9b8efdc4",
+      "decompressed_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "decompressed_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/docs/ai_methodology/skills/workhorse/SKILL.md.gz",
+      "sha256": "e15b35db04ab3450d10ad261d2134083a37114ab123a7cb48ca8222591b0ba7c",
+      "decompressed_sha256": "9801055aea637b0e6f765f1558113a9998fe6b4d5a213b0d03d096fe96cb4cdb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/instructions/docs/audit/data/axiom_premise_nodes.json.gz",
+      "sha256": "99cf399266d70f0f8b66804a32c6faa55644c0552d30ba7945eea6ac6e322dda",
+      "decompressed_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/CHECKPOINT.before_recovery3.md.gz",
+      "sha256": "33d0814118ce1fd44b6134f44f601ceb6802bf030377c9a94bbe9393873f65eb",
+      "decompressed_sha256": "15908b5a5684c801f319581e351db3549b02504381bde239311a2513ead16710"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/PROBE.recovered_before_recovery3.md.gz",
+      "sha256": "107d2d0cd26981d5a253119f0688e9dc35e082ab0d21b100ad57adf2bed70575",
+      "decompressed_sha256": "6a12d85cfb33907c301006fae99fae1f9ffd5e3fcea021ea51c62f5121b1c036"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/finite_controls.final.jsonl.gz",
+      "sha256": "132e2388848ebe887447b3de0609f2d8d762feef7d1a8ee174974084a9fd8f98",
+      "decompressed_sha256": "aa17b5eb890405cc3611123bbbba4a2dfb8b53d3b344da33c7d58be2a6d1f23a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/finite_controls.run1.jsonl.gz",
+      "sha256": "1ecebf39040089d967af6a4c4cb71fa99e04289d7de037cb0b738dba41648afb",
+      "decompressed_sha256": "3588205513d6c40f60accba985836aed8811ce799312de765141ea79c17e5431"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/finite_controls.run1.py.gz",
+      "sha256": "f6f7d99dfa41c4581290ae84c9216360bfd1637e16779f4a45b503e363d400f4",
+      "decompressed_sha256": "96bbfebe6b7a053d533d189c327f61896f30f9ed1499f0835888950b7bd3f9e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/finite_controls.run1.results.json.gz",
+      "sha256": "424b466c4ceb35ce0c51a4552f6e3d32a0b83eabf50611617e434d1e594894eb",
+      "decompressed_sha256": "097e65d1efe9bdcc692d71c93832aa8ab88bfc20434fb6cd7641e43998ac78fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/finite_controls.run2.jsonl.gz",
+      "sha256": "52a44e510b8806012c6eb57e280d112ce05c21e0cde2e5093c4ec29a8be0c718",
+      "decompressed_sha256": "ea8b858a1e0c7894d984228c061ce1dc4ee022607e1f4b3952191ad284d6da7e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/finite_controls.run2.py.gz",
+      "sha256": "992fecafcc363440490e8003b672a9eb26f28a4d8471ebc16b74f8581366964f",
+      "decompressed_sha256": "7f07b9c85ebc596b680adc8393e8839bc9731c0415390cf0b713fb05aead779f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/finite_controls.run2.results.json.gz",
+      "sha256": "ce7816fb60d4795c7b80ccc9fc3be6e66fcdbecc89c6cb672491f154917acb11",
+      "decompressed_sha256": "1bfff6f619686ede73d1c9e6d22dd127a7cd023a98662b7ed0f3419a5def507d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/operational_history.json.gz",
+      "sha256": "0ecab9da034d814ef33ae30884f89b3dc043adb040357c30ae57a1dd40d3c80e",
+      "decompressed_sha256": "90b8e3e3647590c4d9afcc350b2c2e6981abcc5e008beea85d35b8c05af83c39"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/recovered_draft_discrepancy.json.gz",
+      "sha256": "ba64e989fa2cb47aa2972401099a06f7a61497b2e5475ae63e56b52e1c8fee39",
+      "decompressed_sha256": "18c359c4bdcdce5e2317fbc1a6f1cf4a315d27d7190b4fd116fb4d232f38f9f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/recovery3_acquisition.json.gz",
+      "sha256": "42a61aa8907a764e56f09b510e633fb3c700959219cafc64037b2aa8c63d0a76",
+      "decompressed_sha256": "8d8e6391c064f179ef1cd2757afe8494aa03beccd7eec3b1f7c4238a32db7673"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/root_recovery_after_two_disconnects.json.gz",
+      "sha256": "685f97ee021c3f7ec69672a3a36d7560bc5c90f15f32b08c2718a543a2b94e79",
+      "decompressed_sha256": "086b679b9b4ca92c6b5712fe1f534880621990afefd2e8cf3dffd2b0c28848b6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/logs/selected_main_statement_search.json.gz",
+      "sha256": "bf926eb6d82f2ad0b38575f2148c9ad0a7ac5d29152e0904e581c895d0f4b53d",
+      "decompressed_sha256": "e473422b10c095528ee9f780eefd18c4f1be50bec583b0092afbf2abf33d9897"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/receipt.json.gz",
+      "sha256": "58b9a0a793197572257742b29d55ec4855c6b79cc374f40f0e4205a6fb9c87a0",
+      "decompressed_sha256": "1d298bbc206178f33be8851cc69481922682d0b78c8d68af7e09e5a5ecf31c37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/source_manifest.initial.json.gz",
+      "sha256": "8518d8549f2353f1a0e0428b2278c77741fc5af7c4463a5dc19c8dff1d3c0325",
+      "decompressed_sha256": "c1d8b5ed0f76b97e0f42c123946995d209d1881afe2856eaca618fe40ba29332"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/sources/APPROXIMATE_PARTIAL_FACTOR_INDEX_PROBE.md.gz",
+      "sha256": "e79f04ac46bc31053dc72e0351146413a8d455137091d1e29d223665ed842be8",
+      "decompressed_sha256": "bccf07d0ca041c9c0585beccb912ac35e1da12deadae3c50efb78d439cb9b441"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/sources/APPROXIMATE_PARTIAL_FACTOR_INDEX_REVIEW.md.gz",
+      "sha256": "77447a622195d0f15d55787f5d3bb7f7870de47ac6c21499b8548f2304e3a539",
+      "decompressed_sha256": "9118707fdcc85cdfd0a1160598872fb8544a9de757b3a1efe8e93292719c533c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/sources/C4_N1_report.md.gz",
+      "sha256": "5aa429aba7a1fdd84aa4bcae27ae134be4c99dea70704d0cdb3dc88a32c2c120",
+      "decompressed_sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz",
+      "sha256": "1ef5c86d3be7c3166027767f911412ceebb2bece9569ecd3dbbc10d3c56db362",
+      "decompressed_sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/sources/INDEX_TO_PHYSICS_NEXT_OBLIGATION.md.gz",
+      "sha256": "a278b94c7dfa804acf0e7b30c8434664bb81fd5fc872fbf2a02603927b7ca81d",
+      "decompressed_sha256": "cb512af29397a3a6e8c58161bbe1dd6c15e61944b5f8bdd9ae0c1a0cc53c2536"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_implementation/sources/ROOT_MICROSCOPIC_CURRENT_IMPLEMENTATION_LEAD.md.gz",
+      "sha256": "8fa739de9fb899586022354b1c2c3df7e338e8904e87d2a23a8190dbcd642223",
+      "decompressed_sha256": "f5937c130f4e7c771f729e4946d472cea7abee90b8587deb4ad7140a11b6d70c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/CHECKPOINT.md.gz",
+      "sha256": "84befe26872aa1a1fa2a52fcccf02685743fd4c720ea277156307feeebc5bca0",
+      "decompressed_sha256": "c8cda6b484a2efaf1a73b2723c7aaf9164000c6e1f4d1b906b138e8ace047746"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/CONTROL_REVIEW.md.gz",
+      "sha256": "1b0317ff21c6430cae437b865c45bab340c6723a493e2c913526b0f5a0e4bb08",
+      "decompressed_sha256": "4ba064826db8522c318988daa2790aca4c5e4f1bb3b118aace25fee992377678"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/INDEPENDENT_RECONSTRUCTION.frozen.md.gz",
+      "sha256": "2db6dfe8e5fa1e60845582532b944dca736919c16884e49dbb01af66e8f955cb",
+      "decompressed_sha256": "b01d7be142d26b1b18b900db975d6992dcd4bd4f4a6338095d78bcfb557ca80e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_acquisition.json.gz",
+      "sha256": "9da1315d0ebaf8a094b9fb2d687b38de5f77e9c45b730be18791bb08e06a1111",
+      "decompressed_sha256": "911f6a29d2ee5787b0086c72b1c7cf6a575459ce165314954709530416852545"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/finite_controls.py.gz",
+      "sha256": "9916beb58139715317760868c1b8c49f9c8c3c4f56d689957dc9abaf84fc84e6",
+      "decompressed_sha256": "e38b4cf704febec830a45c2521524be21646ce6bd512d6bf318dba581b31a908"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/finite_controls_results.json.gz",
+      "sha256": "b1e0dcf1587f03fe83155d782ea5d3bdf53c20f77c462d1a9f45f4e6968ac72b",
+      "decompressed_sha256": "a5af85d95063371ee402037fe631f205a039b5b4df7140f05cbe38258a46dc3d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/logs/finite_controls.final.jsonl.gz",
+      "sha256": "132e2388848ebe887447b3de0609f2d8d762feef7d1a8ee174974084a9fd8f98",
+      "decompressed_sha256": "aa17b5eb890405cc3611123bbbba4a2dfb8b53d3b344da33c7d58be2a6d1f23a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/logs/finite_controls.run1.jsonl.gz",
+      "sha256": "1ecebf39040089d967af6a4c4cb71fa99e04289d7de037cb0b738dba41648afb",
+      "decompressed_sha256": "3588205513d6c40f60accba985836aed8811ce799312de765141ea79c17e5431"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/logs/finite_controls.run1.py.gz",
+      "sha256": "f6f7d99dfa41c4581290ae84c9216360bfd1637e16779f4a45b503e363d400f4",
+      "decompressed_sha256": "96bbfebe6b7a053d533d189c327f61896f30f9ed1499f0835888950b7bd3f9e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/logs/finite_controls.run1.results.json.gz",
+      "sha256": "424b466c4ceb35ce0c51a4552f6e3d32a0b83eabf50611617e434d1e594894eb",
+      "decompressed_sha256": "097e65d1efe9bdcc692d71c93832aa8ab88bfc20434fb6cd7641e43998ac78fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/logs/finite_controls.run2.jsonl.gz",
+      "sha256": "52a44e510b8806012c6eb57e280d112ce05c21e0cde2e5093c4ec29a8be0c718",
+      "decompressed_sha256": "ea8b858a1e0c7894d984228c061ce1dc4ee022607e1f4b3952191ad284d6da7e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/logs/finite_controls.run2.py.gz",
+      "sha256": "992fecafcc363440490e8003b672a9eb26f28a4d8471ebc16b74f8581366964f",
+      "decompressed_sha256": "7f07b9c85ebc596b680adc8393e8839bc9731c0415390cf0b713fb05aead779f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/logs/finite_controls.run2.results.json.gz",
+      "sha256": "ce7816fb60d4795c7b80ccc9fc3be6e66fcdbecc89c6cb672491f154917acb11",
+      "decompressed_sha256": "1bfff6f619686ede73d1c9e6d22dd127a7cd023a98662b7ed0f3419a5def507d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/logs/operational_history.json.gz",
+      "sha256": "0ecab9da034d814ef33ae30884f89b3dc043adb040357c30ae57a1dd40d3c80e",
+      "decompressed_sha256": "90b8e3e3647590c4d9afcc350b2c2e6981abcc5e008beea85d35b8c05af83c39"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/logs/recovered_draft_discrepancy.json.gz",
+      "sha256": "ba64e989fa2cb47aa2972401099a06f7a61497b2e5475ae63e56b52e1c8fee39",
+      "decompressed_sha256": "18c359c4bdcdce5e2317fbc1a6f1cf4a315d27d7190b4fd116fb4d232f38f9f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/logs/recovery3_acquisition.json.gz",
+      "sha256": "42a61aa8907a764e56f09b510e633fb3c700959219cafc64037b2aa8c63d0a76",
+      "decompressed_sha256": "8d8e6391c064f179ef1cd2757afe8494aa03beccd7eec3b1f7c4238a32db7673"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_evidence/logs/root_recovery_after_two_disconnects.json.gz",
+      "sha256": "685f97ee021c3f7ec69672a3a36d7560bc5c90f15f32b08c2718a543a2b94e79",
+      "decompressed_sha256": "086b679b9b4ca92c6b5712fe1f534880621990afefd2e8cf3dffd2b0c28848b6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_replay/finite_controls.py.gz",
+      "sha256": "9916beb58139715317760868c1b8c49f9c8c3c4f56d689957dc9abaf84fc84e6",
+      "decompressed_sha256": "e38b4cf704febec830a45c2521524be21646ce6bd512d6bf318dba581b31a908"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/author_replay/finite_controls_results.json.gz",
+      "sha256": "f69e71bbe312d7808d8bce899d78503a07157f6a02ba6caab51485544d2cc2cb",
+      "decompressed_sha256": "e5138d1ffaa8d1d50a1e3def77216294ae980ad0beb13b69310c2cf254764c2c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/controls/independent_controls.py.gz",
+      "sha256": "321e01feb748bb6c83098a0b1e2be4cc3a8ed3cc4e6649b81296ea018caf60de",
+      "decompressed_sha256": "db472eea3131f3891ab5a7bf688ac4fa50c9f79b7258b38b3d01c82a5d9371df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/controls/independent_results.json.gz",
+      "sha256": "6bdc4484410bc33c4283aef4abc8963b5573f5ae24830c29c766fe333589296b",
+      "decompressed_sha256": "0b4712a400fdc9fed57b16d0fb402b73a9fea1bea284ad1d283ee670c257cc3b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/coverage.json.gz",
+      "sha256": "e17beaff2ce8d02781232c50011af1c99d341e3fd314702cff42efade0a58c0b",
+      "decompressed_sha256": "f5457b7bf6332b41a67cf107e175b48b2a1205535d85ae7815a6249551ee3db9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/independent_freeze.json.gz",
+      "sha256": "9ae0573d009f2fde4455475e9b0d319cb3a008f9f898e06ab87a3d89e0822862",
+      "decompressed_sha256": "03ee651ecf438802f30f6c07fc15403068e9e0c8435bd8698fe4dd42d3e6517b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/instructions/MAIN_AGENTS.md.gz",
+      "sha256": "9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf",
+      "decompressed_sha256": "f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/instructions/MINIMAL_AXIOMS_2026-06-29.md.gz",
+      "sha256": "70b06ee88301b6b13ed28ba82d06b0ac071d9286ab55475e57434c84e507e631",
+      "decompressed_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/instructions/PLANNING_AGENTS.md.gz",
+      "sha256": "0c9faf905a93497cae26590f7c44a040bd049c89650b40cfab9bf538667f93da",
+      "decompressed_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/instructions/PRIMITIVE_REGISTRY_CHECK.md.gz",
+      "sha256": "0fbed60a117a60bbeda5ad780e5194013847c1f9ae00ad7be0d5b48458e606a6",
+      "decompressed_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/instructions/SCIENCE_WORKFLOW.md.gz",
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "decompressed_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/instructions/SKILL_FRESHNESS_CHECK.md.gz",
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "decompressed_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/instructions/axiom_premise_nodes.json.gz",
+      "sha256": "99cf399266d70f0f8b66804a32c6faa55644c0552d30ba7945eea6ac6e322dda",
+      "decompressed_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/instructions/physics-claim-reviewer.SKILL.md.gz",
+      "sha256": "b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873",
+      "decompressed_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/instructions/proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "decompressed_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/instructions/review-loop.SKILL.md.gz",
+      "sha256": "bb65b5e48976f60f0e6c7b8e0b106b75d123c7efe863af0b2b11af00367f3a03",
+      "decompressed_sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/logs/author_execution_metadata_scan.json.gz",
+      "sha256": "28ef9b6c54b0198a89f4ecf68e3ef14b02b8df0c7622d1545e6c1940b30ead63",
+      "decompressed_sha256": "043e6b8095030819b7e554ed7ecab3c75e90d0ca0b7e7a823632fdef9e2217b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/logs/author_history_inspection.json.gz",
+      "sha256": "72a562aafd684668c70900668081a333d8e1637c6b8b1544e3d1d6fbb38b8d77",
+      "decompressed_sha256": "df757a7134c470c4dacf5256e63ff41e31496cb41512de2e8ca967129aa5042a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/logs/author_mutation_summary.json.gz",
+      "sha256": "985c134f801ddfb09d6692be85fdc63ef85d9e29cd28fffd32894bf743742008",
+      "decompressed_sha256": "42ff3d05664413a38b69ad6b248b939fbefc2ca90879aed31890a2f3303e4da8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/logs/author_replay.comparison.json.gz",
+      "sha256": "9855139319e3f98cc8d083287d581ab2cb1d069abb5278cc51c0a91cc83b2fc4",
+      "decompressed_sha256": "d517cc89679fe853091ee2fd3effc61f6bdc5931c7ba919e1a5453a1c3ad3845"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/logs/author_replay.execution.json.gz",
+      "sha256": "695d37b56816725e2c86948fcd96b45916923ec981940dee605a926a667fdbc0",
+      "decompressed_sha256": "5a620c7d9db0f060ab1eb883a69c38872330451588b6a5570f6dd8ca467b163e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/logs/author_replay.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/logs/author_replay.stdout.jsonl.gz",
+      "sha256": "132e2388848ebe887447b3de0609f2d8d762feef7d1a8ee174974084a9fd8f98",
+      "decompressed_sha256": "aa17b5eb890405cc3611123bbbba4a2dfb8b53d3b344da33c7d58be2a6d1f23a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/logs/independent.execution.json.gz",
+      "sha256": "c5b3252430adb568b3d1ed80a81589a52fd444471716731688c5d963b6455790",
+      "decompressed_sha256": "9ed7c17b5682346eb23eda79dff7be80862eff34fe3764df247bd80061c818fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/logs/independent.stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/logs/independent.stdout.jsonl.gz",
+      "sha256": "5171d8f985ed75ce7edec27e17de44489e0235f1b7ceb7bcce89c30cd9fbcb8e",
+      "decompressed_sha256": "96e9dd2c4ae38982ad4a506033f617ecec03fd11738dee4757784c56296cb4b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/current_center_radius_one/execution.json.gz",
+      "sha256": "77c78025d79182458846155625961093a91294488ab5e1d6e3e02f85eba15bdb",
+      "decompressed_sha256": "90af09ed204a83ff0cbe8d0f5ba00ec6bfe981e4bcaa75cf7f67244984ab11c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/current_center_radius_one/finite_controls.py.gz",
+      "sha256": "f7d3f9c75861ef80de0ab242858e1a0819b602ea0f1146e8df6d204938d6c401",
+      "decompressed_sha256": "b5186ae784a59255e0e4e05c419fcfe002675616bd28972e38d05e0489c6a832"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/current_center_radius_one/finite_controls_results.json.gz",
+      "sha256": "8d643496f6f14a915e118a915ee1d9f5a87f8249a6b97dad5b94be3a7bbcafee",
+      "decompressed_sha256": "395d3b60112bac73f2151d3b52b1c995a60f4d89680c6e77daa037f3f352f574"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/current_center_radius_one/stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/current_center_radius_one/stdout.jsonl.gz",
+      "sha256": "293edce1472b6fc894cb46399a60330c12991c5000f5f73bc939b1f342648667",
+      "decompressed_sha256": "f4b4b718857e77803e644907e519527e8726b0b8152c94fbdc2896d0a81953fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/double_taylor_derivative/execution.json.gz",
+      "sha256": "77b710a3784783c91a7b234ac8e37a43a3b07813b26d20556bed244d007eb320",
+      "decompressed_sha256": "30c784f51a568c0ca18c5e1cd27e3aace73a23a0674ee16a12d0f181445199d4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/double_taylor_derivative/finite_controls.py.gz",
+      "sha256": "f91bf539e971a3319928f7f25ec4de548857a23f9722492f1aae4c89da077d66",
+      "decompressed_sha256": "07d80f7bf41028b03b3fa87634435557fa474880feab80684085c9c44d939f66"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/double_taylor_derivative/finite_controls_results.json.gz",
+      "sha256": "41e058df9b00db9c3a9670251e382ab56af65a0dd5a8f997b939c59b4d205dbf",
+      "decompressed_sha256": "fc7a8a677f7b56cab751a5945d23a8de3d0235304b3b6ba07880f38cfdf64269"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/double_taylor_derivative/stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/double_taylor_derivative/stdout.jsonl.gz",
+      "sha256": "cbd587fbf6a01162b1516a875fe1d1688a01e05bc629de955775d795c337dcda",
+      "decompressed_sha256": "4493e21e76fe8ae66b7ebb9d148a5f2874708e0c7b7bac1554de52807dfdd381"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/drop_pair_half/execution.json.gz",
+      "sha256": "6a113d180c6d31faddaa08f3fca4112edc65ff9f1dc585ba40693e291199880e",
+      "decompressed_sha256": "210ba46e4ca509e2c0b620d005159cda543bf2b0fb4ed9ec6a514a84e59f1497"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/drop_pair_half/finite_controls.py.gz",
+      "sha256": "289bc4b57626d41a98ebadea2430f64b96e477583a0194312e3a7423fa451e6f",
+      "decompressed_sha256": "70c104037a9a004603120725c48cd7511719f8f5c29af2e0a152324bceaa43d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/drop_pair_half/finite_controls_results.json.gz",
+      "sha256": "ed4bc8ae276e863514f7d914680fc905f09a3b56cd25fb4e27dc5bbc001022fb",
+      "decompressed_sha256": "a44f8ada2131bfb6a508caa526f2850ec17b7ec4911d1d43f82d0abb75c9f15b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/drop_pair_half/stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/drop_pair_half/stdout.jsonl.gz",
+      "sha256": "b2f65ace51fbce196a014302b9635c9fa0d50bcfcb837d2ea7930cad201ae9a1",
+      "decompressed_sha256": "24e1a1f71fcdb48b0c5cea8d94a677f4a992959c28d0950c34092d5b526ea68a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/omit_history_support_growth/execution.json.gz",
+      "sha256": "da373e5d090bec069d75a06665bf8c23a519389af28b09d6f624844c7320d713",
+      "decompressed_sha256": "6c9fa34fb968b68aa3c955e7083bae33546423dc3061c764d9ceb56069200976"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/omit_history_support_growth/finite_controls.py.gz",
+      "sha256": "0a1a8bfeb4706afdc4607649301e1af671423f0f6b1c12b1d243a0f281ca048d",
+      "decompressed_sha256": "d5dfe18addfb238a51f8dd27dbd7f6491c5fb01752be56cc2ecd88971babfab7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/omit_history_support_growth/finite_controls_results.json.gz",
+      "sha256": "dee91a5a0790b9ea5dae9a8569d86d33b080ac2cdee3b2834c0c1ef53c905f38",
+      "decompressed_sha256": "187cc46bcb645ca1e44854c960dafbca86d468ec045f0b579332fcd9f5b33252"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/omit_history_support_growth/stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/omit_history_support_growth/stdout.jsonl.gz",
+      "sha256": "d890f1f8e29e87c1d00cd0f1524f9b5bce90d36c8748ff4b5ea0d4ce1d1e7080",
+      "decompressed_sha256": "5a1386a290340dc2cc5d4badede360c0c748789a0c85b189830a4532fc7178b8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/reverse_current_sign/execution.json.gz",
+      "sha256": "bf63b8a6264e9f71e1039d061597afcd96f8bb1776ca4e6284096f6aafb4ec31",
+      "decompressed_sha256": "fb736691d25901d92b84ba11bf186419f5b32738611f4b01b599461cd65187f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/reverse_current_sign/finite_controls.py.gz",
+      "sha256": "d7df96ab856983a0851c90672230158a842304da43004f9506fbd21c1790d99a",
+      "decompressed_sha256": "f4e4e4831186986127152980534f549b920170caf6b2df950042ff9bd5900b87"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/reverse_current_sign/finite_controls_results.json.gz",
+      "sha256": "b7767d788af57693adbda8c0a77d145372b6a6ae67bd863f877b53f05d7af485",
+      "decompressed_sha256": "e895a835a75e80536c21c3880217446287a5026a43f4563b328c56538ac4c4f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/reverse_current_sign/stderr.txt.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/mutations/reverse_current_sign/stdout.jsonl.gz",
+      "sha256": "1b394b7ca08de0f0ee5c198a679d7da6d8a09922ff8827a9bf3540c63abb8e5c",
+      "decompressed_sha256": "7af1858a7fcc1a389120e0829afae226d5352dfee40a41cddc04afb51be7719f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/operational_record.json.gz",
+      "sha256": "08b79ba45dbafc3948c41c8be33b47ec5bdb4f4877f7ec743ede6b9de585d0b5",
+      "decompressed_sha256": "429b55e05c3af4c1f7a61ab2ba2ad67b5f1b7ec3dce2dfb474a31e5e6be34024"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/receipt.json.gz",
+      "sha256": "bc535a3f1e4b03c4e6992bb8071621a7fe2d31a94b6e896359ea910c28e67488",
+      "decompressed_sha256": "1e8f868b6722ce57d60c626d3899e08f28fe6183e7aef5533a2891f96bb803fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/source_manifest.final_verification.json.gz",
+      "sha256": "62e3ab0ea05ba89ecf8864263f2be19128464e9e5ebf161d4d11cbbed4aadf0c",
+      "decompressed_sha256": "b17679cda4b9881377ee4f3abd1a1730d334419916db024dd5c14e3a8ce55ded"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/source_manifest.initial.json.gz",
+      "sha256": "0574e7ba4a05398e6d75cc518055e1303a6fe4781f6fd71f7dc15ba6a4b1864d",
+      "decompressed_sha256": "6fd55e450690751cf40d07b15376073822992a098b1f2571216595a4e53411d1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/source_manifest.premises.json.gz",
+      "sha256": "ebc2e85142ffd3f9304b40830ea3bd8ea01fdf3f2256692654a9ff3c0ff32f75",
+      "decompressed_sha256": "9d01be9343b8396f711b341f9853a6bb00cffbc12e4fffa338a611d043aab90d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/sources/APPROXIMATE_PARTIAL_FACTOR_INDEX_PROBE.md.gz",
+      "sha256": "e79f04ac46bc31053dc72e0351146413a8d455137091d1e29d223665ed842be8",
+      "decompressed_sha256": "bccf07d0ca041c9c0585beccb912ac35e1da12deadae3c50efb78d439cb9b441"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/sources/APPROXIMATE_PARTIAL_FACTOR_INDEX_REVIEW.md.gz",
+      "sha256": "77447a622195d0f15d55787f5d3bb7f7870de47ac6c21499b8548f2304e3a539",
+      "decompressed_sha256": "9118707fdcc85cdfd0a1160598872fb8544a9de757b3a1efe8e93292719c533c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/sources/C4_N1_report.md.gz",
+      "sha256": "5aa429aba7a1fdd84aa4bcae27ae134be4c99dea70704d0cdb3dc88a32c2c120",
+      "decompressed_sha256": "c284a41bfee8a1238643330ddd46f3a7c4f6f1a865509a9aaec5ab6f4238ad13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/sources/COMPACT_PATCH_SCATTERING_COVARIANCE_PROBE.md.gz",
+      "sha256": "1ef5c86d3be7c3166027767f911412ceebb2bece9569ecd3dbbc10d3c56db362",
+      "decompressed_sha256": "d1d8ace7a450e0c00d780443f83a333223fff395b170994a83e1b65653302a4a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/sources/INDEX_TO_PHYSICS_NEXT_OBLIGATION.md.gz",
+      "sha256": "a278b94c7dfa804acf0e7b30c8434664bb81fd5fc872fbf2a02603927b7ca81d",
+      "decompressed_sha256": "cb512af29397a3a6e8c58161bbe1dd6c15e61944b5f8bdd9ae0c1a0cc53c2536"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/sources/MICROSCOPIC_CURRENT_IMPLEMENTATION_PROBE.md.gz",
+      "sha256": "33aea2b0809c21ed10b48dae58e7c560d65304915457bc04b32dbc76e2dde1d6",
+      "decompressed_sha256": "bcc9b9503e49c17b6e6140c22f3971f35ccd3ed72de16f0371666dc9162dfd9a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/sources/ROOT_MICROSCOPIC_CURRENT_IMPLEMENTATION_LEAD.md.gz",
+      "sha256": "8fa739de9fb899586022354b1c2c3df7e338e8904e87d2a23a8190dbcd642223",
+      "decompressed_sha256": "f5937c130f4e7c771f729e4946d472cea7abee90b8587deb4ad7140a11b6d70c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/microscopic_current_review/sources/receipt.json.gz",
+      "sha256": "58b9a0a793197572257742b29d55ec4855c6b79cc374f40f0e4205a6fb9c87a0",
+      "decompressed_sha256": "1d298bbc206178f33be8851cc69481922682d0b78c8d68af7e09e5a5ecf31c37"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/prepare_centre_current_publication.py.gz",
+      "sha256": "eb9939608fb751c4962ecac53c40fe0d8bd3f91e7aa89ab5b8ae9d41eeb9f7f7",
+      "decompressed_sha256": "b221ae91462af128590aef02ef539322d9b5827d7bfe6c70eabe73b299efffc0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/repair_centre_citation_links.py.gz",
+      "sha256": "6023144b1428f0f2b21c1dfaa9fac809915c077b049b5088efce1f50bc4c1eba",
+      "decompressed_sha256": "f07cecce11bb92e9da657bb1ab3c893ca064b5090afd5a9e1059f8843d251300"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/run_centre_current_verification.py.gz",
+      "sha256": "05367a1508bc6b6d224cfece1328774258e1e07670ecd3adafda0636052ffa71",
+      "decompressed_sha256": "234d307ab188545b2c79043a12fbf6ff0fa07505e8b7a4972099a7e8e2f0156b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/verify_centre_current_reviews.before_path_fix.py.gz",
+      "sha256": "6150bc008bfa236859dfc2c66eef4c1cebedafa81d8d954dfa623f43471a58c3",
+      "decompressed_sha256": "922c81edecad876e425a56cc67af91bda3d338111f9177adaa0584dcc150d5e1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/evidence/verify_centre_current_reviews.py.gz",
+      "sha256": "967f2e29fd0efd7b944c61c9fc2dc5dd2711805dfeda0ebc432ecf816e35290f",
+      "decompressed_sha256": "96d8180f53c99b739f76043c3789a47d7b38596d41d64929274f188bbcfefb41"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-centre-current-20261012/reconstruct.py",
+      "sha256": "7c2bdf1f459f078a7d4b4e30e3c33cb9faa4aa0ae685cca6652b8671f5b29b95"
+    },
+    {
+      "path": "docs/ISOLATED_CENTRE_FILTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "1671b4cfa7a24e42875b3aa142444cdc034b1087a26325514d1dc0de8615051f"
+    },
+    {
+      "path": "docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "e97ba0f26e1a21f3a4cd231c1abc9c97b8fbdc0b127bcfb6354aef37e4a54ccf"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "f760376ed69ed823bb09e9001f97ff31a97e7b28a0a9281a46fa0bcbc9b4f4e9"
+    },
+    {
+      "path": "logs/runner-cache/isolated_centre_filtering_2026_10_12.txt",
+      "sha256": "00425af61c872d166984909040edca9c0b2194886ccaa0349b15e3b8026d87c3"
+    },
+    {
+      "path": "logs/runner-cache/microscopic_current_implementation_2026_10_12.txt",
+      "sha256": "e837ec706f9de040c131718b165e974efc75b8e03da42a887938c1544c24cc34"
+    },
+    {
+      "path": "scripts/isolated_centre_filtering_2026_10_12.py",
+      "sha256": "c7b04191f027892428abcf87a1a804652a7a621442b9a65e6dad905fad07a5cc"
+    },
+    {
+      "path": "scripts/microscopic_current_implementation_2026_10_12.py",
+      "sha256": "99a8d2c5bad7095960955c104b5718c2d2244fdbfb5141cf9183fc3500b0893c"
+    }
+  ]
+}

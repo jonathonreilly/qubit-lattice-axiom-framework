@@ -1,6 +1,6 @@
 {
- "edge_count": 15428,
- "node_count": 6875,
+ "edge_count": 15431,
+ "node_count": 6877,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -11914,6 +11914,10 @@
    "deps_hash": "9679402e3cd2",
    "out_degree": 2
   },
+  "isolated_centre_filtering_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "19159fe18feb",
+   "out_degree": 3
+  },
   "iterated_local_maxwell_matter_state_bounded_theorem_note_2026-09-15": {
    "deps_hash": "9398b27b4688",
    "out_degree": 3
@@ -14013,6 +14017,10 @@
   "microcausality_weighted_quasilocal_class_walk_expansion_lieb_robinson_bounded_theorem_note_2026-07-18": {
    "deps_hash": "4a576dba9306",
    "out_degree": 6
+  },
+  "microscopic_current_implementation_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "microscopic_ground_energy_and_formation_budget_bounded_theorem_note_2026-09-25": {
    "deps_hash": "fe8fc72636bc",

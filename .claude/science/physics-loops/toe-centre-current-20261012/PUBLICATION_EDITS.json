@@ -1,0 +1,113 @@
+{
+  "outputs": [
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/ISOLATED_CENTRE_FILTERING_PROBE.md",
+      "source_sha256": "1dcb9580d128d8fc41b76517ce0fe18842291e8e32681fa9c6b22f0feb1e13de",
+      "preserved_source": "evidence/ISOLATED_CENTRE_FILTERING_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "# Exact creator filtering at isolated central characters",
+          "after": "---\nclaim_id: isolated_centre_filtering_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: \"Actual implemented commuting finite-range flows, isolated positive mass and explicit mass-momentum restricted central spectral isolation give exact almost-local creators for arbitrary selected characters, with covered scattering, Fock and fixed-arrangement detector extensions under their separately stated hypotheses. No common finite order, microscopic realization or exhaustion follows.\"\nupstream_dependencies:\n  - compact_patch_scattering_covariance_bounded_theorem_note_2026-10-11\n  - compact_patch_fock_isometry_bounded_theorem_note_2026-10-12\n  - compact_detector_convergence_bounded_theorem_note_2026-10-12\nrunner: scripts/isolated_centre_filtering_2026_10_12.py\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: partially_closes\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n# Exact creator filtering at isolated central characters",
+          "reason": "Register scoped claim and actual predecessor proof dependencies."
+        },
+        {
+          "before": "**Claim type:** conditional bounded theorem. **Status:** author derivation, independent review pending.",
+          "after": "**Claim type:** conditional bounded theorem. **Status:** complete separate source review supports I1\u2013I34; no applied audit verdict or retained status.",
+          "reason": "Record completed review without altering the theorem."
+        },
+        {
+          "before": "Write S for /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011. The following sources are unchanged. Labels SC, F and C refer to their displayed equations or sections.",
+          "after": "S denotes the original research collection. The [complete milestone packet](../.claude/science/physics-loops/toe-centre-current-20261012/) preserves frozen sources, author evidence and independent review. The in-branch proof dependencies are [compact creators](COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md), [Fock isometry](COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md) and [detector convergence](COMPACT_DETECTOR_CONVERGENCE_BOUNDED_THEOREM_NOTE_2026-10-12.md). The following frozen sources are unchanged. Labels SC, F and C refer to their displayed equations or sections.",
+          "reason": "Provide portable recovery path and explicit links for the already declared proof dependencies."
+        },
+        {
+          "before": "This author theorem requires a fresh focused check before substantial downstream use. The previous PC and projection notes and their frozen evidence are unchanged. Editable prompt files changed: none. Only this note and its assigned external evidence directory are outputs. No Git/repository/PR/publication/audit/axiom/prompt mutation, other-chat message, model/effort override or subdelegation was performed. The fixed campaign deadline remains 2026-10-12 16:00:52 UTC.",
+          "after": "Frozen author operational record: This author theorem requires a fresh focused check before substantial downstream use. The previous PC and projection notes and their frozen evidence are unchanged. Editable prompt files changed: none. Only this note and its assigned external evidence directory are outputs. No Git/repository/PR/publication/audit/axiom/prompt mutation, other-chat message, model/effort override or subdelegation was performed. The fixed campaign deadline remains 2026-10-12 16:00:52 UTC. Publication update: the separate source check below is complete; the historical pending statement describes the author freeze.",
+          "reason": "Preserve historical operations and distinguish completed review."
+        }
+      ],
+      "appended_text": "\n\n## Publication verification and remaining obligations\n\nThe separate review supports all I1\u2013I34 with no required mathematical correction.\nReport68ea0c2f00d0808ce5a6a63632b0bc84a05398260478510fb4f66256e885cbc9,\nreceipt8eeb364e11eb54d3cb4a6127596d6f9d422f6acd9d88b1275346922661c99abc.\nThe full reconstruction and distinct four-site spin/current-flow calculation\nfroze before author-helper exposure. The initial Fourier truncation failed\nthe declared1e-8 tolerance; resolution refinement at unchanged tolerance gave\nerror4.02e-14. The failure, both code versions and complete logs are preserved.\nAuthor reproduction was byte-exact. Ten copied-source defects were rejected.\nOne survived: deleting the positive shift from the successful final-radius\ninequality weakens that inequality. The source's separate overfilled-budget\ncounterexample does not test every support step. The analytic construction\nexplicitly includes the geometric displacement; arithmetic alone does not\nprove locality. No uniform shrinking-collar bounds or microscopic irrational\nsector are supplied. The accumulating-atom, nonatomic and unresolved-clock\nexamples retain their limited spectral scope.\n\nRoot proposed the mechanism and is a contributor, not the independent reviewer.\nShared source/metadata exposure is disclosed in the review; it is not blind\nchecking or an independence claim based on predicate counts. Complete proofs,\ncontrols, review, failures and source hashes are preserved in the packet.\nPUBLICATION_EDITS.json and reconstruct.py recover the note and entire primary\nfrom frozen bytes and explicit metadata edits. No displayed mathematics changes.\nThe [finite primary](../scripts/isolated_centre_filtering_2026_10_12.py) is an executable finite check;\nDELIVERY_CHECKS.md records its actual run and mechanical publication checks.\nNo Lean certificate, applied audit verdict, physical axiom change or retained\npromotion is asserted. Global combined audit and strict audit lint remain\nindependent landing gates. The sole live campaign checkpoint remains in the\ntransport worktree; this packet is a frozen milestone.\n",
+      "publication_path": "docs/ISOLATED_CENTRE_FILTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "1671b4cfa7a24e42875b3aa142444cdc034b1087a26325514d1dc0de8615051f"
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/isolated_centre_filtering/check_filter_algebra.py",
+      "source_sha256": "09901b777df038f0cb143f01ddc8bf518cb015a37a8bb035b3a6dd1d1f4c48a8",
+      "preserved_source": "evidence/isolated_centre_filtering/check_filter_algebra.py.gz",
+      "edits": [
+        {
+          "before": "from fractions import Fraction as F\n",
+          "after": "\nAUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/ISOLATED_CENTRE_FILTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/COMPACT_PATCH_SCATTERING_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-10-11.md\",\n    \"docs/COMPACT_PATCH_FOCK_ISOMETRY_BOUNDED_THEOREM_NOTE_2026-10-12.md\",\n    \"docs/COMPACT_DETECTOR_CONVERGENCE_BOUNDED_THEOREM_NOTE_2026-10-12.md\"\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: finite control assertions must be enabled\")\n\nfrom fractions import Fraction as F\n",
+          "reason": "Declare actual input paths, timeout and assertion guard."
+        }
+      ],
+      "appended_text": "\nprint(\"TOTAL: PASS=8 FAIL=0\")\nprint(\"SCOPE: Eight finite algebra groups; no analytic convergence or microscopic realization certificate.\")\n",
+      "publication_path": "scripts/isolated_centre_filtering_2026_10_12.py",
+      "publication_sha256": "c7b04191f027892428abcf87a1a804652a7a621442b9a65e6dad905fad07a5cc"
+    },
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/MICROSCOPIC_CURRENT_IMPLEMENTATION_PROBE.md",
+      "source_sha256": "bcc9b9503e49c17b6e6140c22f3971f35ccd3ed72de16f0371666dc9162dfd9a",
+      "preserved_source": "evidence/MICROSCOPIC_CURRENT_IMPLEMENTATION_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "---\nactual_current_surface_status:",
+          "after": "---\nclaim_id: microscopic_current_implementation_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: \"For bounded finite-range spin densities and supplied self-adjoint H, B, P with exact local cyclic H and first-moment B actions and P=i[H,B] on that domain, derive the finite-range current, common local analytic radius, norm thermodynamic dynamics and full canonical GNS adjoint implementation. Boost realization, strong joint commutation and a physical model remain supplied.\"\nupstream_dependencies: []\nrunner: scripts/microscopic_current_implementation_2026_10_12.py\nactual_current_surface_status:",
+          "reason": "Register self-contained conditional claim; contextual index/scattering sources are not proof dependencies."
+        },
+        {
+          "before": "**Author derivation, 2026-10-12; independent review required.**",
+          "after": "**Conditional bounded theorem, 2026-10-12; complete separate I1\u2013I31 source review supports the implication.**",
+          "reason": "Record completed source review only."
+        },
+        {
+          "before": "Write S for this note's directory. The frozen proposal, source identities, complete finite-control logs, operational history and recovery checkpoint are under S/microscopic_current_implementation/. The previous leakage package remains unchanged.",
+          "after": "S denotes the original research collection. The [complete milestone packet](../.claude/science/physics-loops/toe-centre-current-20261012/) preserves the frozen proposal, full control logs, independent review, recovery history and source identities. Prior science remains unchanged.",
+          "reason": "Provide portable recovery path."
+        },
+        {
+          "before": "Independent proof review remains pending, and no retained or audit status is asserted.",
+          "after": "Independent proof review was pending at author freeze; the completed review below confers no retained or audit status.",
+          "reason": "Distinguish historical author freeze from current review."
+        },
+        {
+          "before": "Root supplied the candidate mechanism and is a coauthor. A fresh independent reviewer must inspect the exact final source, especially the domain implication, finite symmetrization, common analytic radius, all-time finite-volume extension and canonical GNS step, before publication or substantial downstream reuse. The source-bound author receipt and the current checkpoint identify the final files and remaining obligations. No prompt file, axiom, audit result, Git ref, repository source, prior frozen packet or other chat was changed. Model and reasoning effort were preserved; no subdelegation was used. The campaign deadline remains 2026-10-12 16:00:52 UTC.",
+          "after": "Frozen author operational record: Root supplied the candidate mechanism and is a coauthor. A fresh independent reviewer must inspect the exact final source, especially the domain implication, finite symmetrization, common analytic radius, all-time finite-volume extension and canonical GNS step, before publication or substantial downstream reuse. The source-bound author receipt and the current checkpoint identify the final files and remaining obligations. No prompt file, axiom, audit result, Git ref, repository source, prior frozen packet or other chat was changed. Model and reasoning effort were preserved; no subdelegation was used. The campaign deadline remains 2026-10-12 16:00:52 UTC. Publication update: the exact final argument has now received the separate source review below.",
+          "reason": "Preserve historical recovery without stale current review status."
+        }
+      ],
+      "appended_text": "\n\n## Publication verification and remaining obligations\n\nThe separate review supports all I1\u2013I31 with no required mathematical correction.\nReport305fa33efebf1e9f9dc09d0854eddf23065877004888f55e964d31cc403f6d17,\nreceipt1e8f868b6722ce57d60c626d3899e08f28fe6183e7aef5533a2891f96bb803fc.\nIts reconstruction and occupation-basis hopping control froze before author\nhelper exposure. A closed-form current exponential and nonseparating vacuum\ntest the full algebra, including a wrong right action with identical vacuum\ncolumns but nonzero operator defects. All34independent predicates and all50\noriginal rows passed. Five actual copied-source defects were rejected; known\nnondiscriminating rows, including the contiguousa=3history fixture throughorder7,\nare retained. Finite controls do not prove the domain or thermodynamic argument.\nOriginal author logs lack per-run timeout/elapsed receipts; no metadata is\ninvented. Reviewer runs recorded60second limits and0.250/0.679second completion.\nThe two platform disconnects, late-draft discrepancy and all saved versions remain.\nThe published helper suppresses only its adjacent JSON-file side effect,\ndeclares audit inputs and prints scoped execution totals. Every calculation is\nunchanged; the printed helper hash changes with these explicit packaging edits.\n\nRoot proposed the mechanism and is a contributor, not the independent reviewer.\nShared source/metadata exposure is disclosed in the review; it is not blind\nchecking or an independence claim based on predicate counts. Complete proofs,\ncontrols, review, failures and source hashes are preserved in the packet.\nPUBLICATION_EDITS.json and reconstruct.py recover the note and entire primary\nfrom frozen bytes and explicit metadata edits. No displayed mathematics changes.\nThe [finite primary](../scripts/microscopic_current_implementation_2026_10_12.py) is an executable finite check;\nDELIVERY_CHECKS.md records its actual run and mechanical publication checks.\nNo Lean certificate, applied audit verdict, physical axiom change or retained\npromotion is asserted. Global combined audit and strict audit lint remain\nindependent landing gates. The sole live campaign checkpoint remains in the\ntransport worktree; this packet is a frozen milestone.\n",
+      "publication_path": "docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "e97ba0f26e1a21f3a4cd231c1abc9c97b8fbdc0b127bcfb6354aef37e4a54ccf"
+    },
+    {
+      "kind": "primary",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/microscopic_current_implementation/finite_controls.py",
+      "source_sha256": "e38b4cf704febec830a45c2521524be21646ce6bd512d6bf318dba581b31a908",
+      "preserved_source": "evidence/microscopic_current_implementation/finite_controls.py.gz",
+      "edits": [
+        {
+          "before": "from fractions import Fraction as F\n",
+          "after": "\nAUDIT_TIMEOUT_SEC = 60\nAUDIT_INPUT_PATHS = [\n    \"docs/MICROSCOPIC_CURRENT_IMPLEMENTATION_BOUNDED_THEOREM_NOTE_2026-10-12.md\"\n]\nif not __debug__:\n    raise RuntimeError(\"Run without -O: finite control assertions must be enabled\")\n\nfrom fractions import Fraction as F\n",
+          "reason": "Declare actual input paths, timeout and assertion guard."
+        },
+        {
+          "before": "    (path.parent/'finite_controls_results.json').write_text(json.dumps(result, indent=2)+'\\n')",
+          "after": "    # Canonical runner reports through stdout; frozen original JSON is preserved in the milestone packet.",
+          "reason": "Suppress only adjacent output-file write during canonical execution."
+        },
+        {
+          "before": "    raise SystemExit(1 if result['failed_checks'] else 0)",
+          "after": "    print(\"TOTAL: PASS=\"+str(result[\"total_checks\"]-result[\"failed_checks\"])+\" FAIL=\"+str(result[\"failed_checks\"]))\n    print(\"SCOPE: Finite controls only; no domain, thermodynamic or physical-realization certificate.\")\n    raise SystemExit(1 if result['failed_checks'] else 0)",
+          "reason": "Report finite execution totals and scope without changing failure gates."
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "scripts/microscopic_current_implementation_2026_10_12.py",
+      "publication_sha256": "99a8d2c5bad7095960955c104b5718c2d2244fdbfb5141cf9183fc3500b0893c"
+    }
+  ]
+}

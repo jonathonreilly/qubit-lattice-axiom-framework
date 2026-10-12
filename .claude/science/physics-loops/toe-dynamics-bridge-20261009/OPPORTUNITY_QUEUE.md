@@ -1,12 +1,11 @@
-# Current opportunity queue
+# Current ranked opportunity queue
 
-Updated 2026-10-12T22:45:10.869385+00:00. Regular PR9499/9500/9502/9504 are published; do not duplicate them.
+1. Complete exact spatial publication package review, install/verify only after acceptance, and create a regular three-note milestone PR. This packages checked science without adding unreviewed extensions.
+2. Finish independent actual prep/pulse full-state and free-energy proof, then its exact source comparison. Distinguish controlled final holds and weak-source absolute versus quadratic limits.
+3. Finish independent phase-space compactness proof, preserve spatial-escape and energy-tail controls, then compare roots.
+4. Independently derive actual low-block generated dynamics replacement and virtual high-band correction. This addresses a previously explicit missing implication; no mere compression/product substitution.
+5. Independently derive actual free-energy distribution convergence and regular-insertion limits from named trace/moment assumptions.
+6. Package checked all-BV work, graph moments and prepared-state response as coherent subsequent milestones, preserving exact corrections and original freezes.
+7. Revisit microscopic realization/channel selection/3D extension only with current repository science and explicit premises; no physical-axiom change or generic route-exhaustion claim.
 
-1. Finish source-exposed native propagation and graph-energy comparisons; prepared-pulse comparison is complete.
-2. Independently derive the phase-space-tightness bridge when a worker slot is free; preserve both distinct escape controls.
-3. Read and separately review the literal three-note spatial source assembly before preparing a regular PR.
-4. Independently test the new phase-space tightness bridge, preserving spatial-escape and fixed-support energy-tail controls.
-5. Package coherent all-BV pulse, graph-energy and prepared-state energy/correlation milestone after exact checks.
-6. Follow up corrected-cell O(c²) and actual fixed-ramp interference only where they unlock a concrete consequence.
-
-Physical model/state selection, central rates and the three-dimensional microscopic realization remain open. Use original math and exact source identities; no new axioms or manufactured closure.
+N1/N5 pending. No no-go gate PASS, main merge, retained audit or other-chat messaging. Fixed deadline2026-10-13T16:42:30Z. Original mathematics allowed; selective decisive checks and scoped Lean only when useful.

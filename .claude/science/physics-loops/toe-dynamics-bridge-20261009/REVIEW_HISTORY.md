@@ -19,3 +19,5 @@ Publication v1 prepare succeeded; first staged verify failed only eleven EOF bla
 2026-10-12T22:45:10.869385+00:00: Complete root reads of frozen graph887-line5c147e2f and prepared-pulse648-line0096ba16, no required repair found; exact comparisons not completed. New unchecked phase-space tightness bridge and two resource controls frozen. Literal spatial source assembly active. Lock refreshed to00:43:51UTC. No science execution, publication or audit in this checkpoint.
 
 2026-10-12T22:48:18.334123+00:00: Complete prepared-pulse434-line comparison3fe0db39 root-read, no repair required. Native576-line coreac453f00 completely root-read and frozen before root exposure; exact comparison now active. Both completed packets archived. No audit or new publication.
+
+2026-10-12T23:11:20.845187+00:00: Graph578-line2b4c75a3 and native436-line310d50f5 comparisons completely root-read; explicit correction record11d55133. Spatial116-member source assembly accepted for publication preparation only. New protocol/phase-space checks active and two further root consequences unreviewed. No new publication/audit.

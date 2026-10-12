@@ -2233,3 +2233,29 @@ But it is only a homogeneous O(h²) completion that preserves the DOS. Its selec
 **Against the registered expectation.** FAIL, as expected. Two corrections to my expectation:
 - The obstruction is the conformal Killing condition, which excludes every periodic symbol. I had stated it as linearity.
 - SLAC does not help: its E-flow has a zone-face sink and source.
+
+## Lane RFW: field-dependent Ward completion (owner, 2026-10-11)
+
+**Owner request:** "run the field-dependent Ward completion test". This is the open item from RV4, S1 and C3: field-dependent gauge generators, i.e. RN L1's unsearched second-order completion. Test setting only.
+
+**The question.** C3 (refereed) and K2 found the same obstruction. With field-independent generators, the matter Killing transformations fail to close at O(κ) Hamiltonian / O(κ²) Euclidean: [L_ω, D_ρ] = −ω S_ρ D_ν, an extra cos k factor. Every metric-dependent correction vanishes in that sector. RV4 S1 showed that a compact Ward identity would force μ_E = μ_T2 (the cosmological-constant value), but that identity is incompatible with field-independent generators.
+
+So: can a gauge algebra with field-dependent generators remove the Killing-sector obstruction? This would be an open or soft algebra: structure functions depending on h and on matter, gauge parameters that are operator-valued or field-dependent, and nonlinear (GR-like Lie-derivative) transformations of h. The completion must be local, with finite field content. Would the resulting Ward identity fix the E_g shear mass?
+
+**Probes** (Claude Opus 5.5 at xhigh, same family):
+- **F1, cohomology and theory.** Use the BRST/BV framework for local consistent deformations (Barnich–Brandt–Henneaux; the uniqueness of Einstein–Hilbert as a deformation of Fierz–Pauli; Boulware–Deser–Wald) on the lattice. Is C3's Killing-sector anomaly a nontrivial class in the local lattice BRST cohomology at second order? A nontrivial class cannot be removed by field redefinitions or field-dependent generators. W3 found the anomaly functional F is non-local in h. Also: do differential-operator-valued gauge parameters, which absorb the cos k factor, force an infinite tower of generalized symmetries (higher-spin-like; B1)?
+- **F2, constructive search.** Run the Noether procedure on Z⁴ (K2's Euclidean setting: free scalar plus lattice Fierz–Pauli, exact through O(κ)) at O(κ²). Allow corrections to the gauge transformations of h and φ that are linear and quadratic in fields, range ≤ r, together with seagull and vertex corrections to the action. Solve the invariance conditions, including the Killing sector, as a linear system for r = 1, 2, 3. Report the solution space, or the rank obstruction, and how it changes with r.
+
+**Fixed readings.**
+- **PASS:** an explicit local completion (finite field content, finite range) with field-dependent gauge transformations that makes the coupled action invariant through O(κ²) for non-uniform ξ, including the Killing sector, with a resulting Ward identity fixing μ_E = μ_T2.
+- **FAIL:** proved that no such completion exists in the stated class (range, polynomial order, finite field content), or that one exists only with infinite field content.
+- **INCONCLUSIVE:** otherwise.
+
+**Supervisor expectation.**
+- The Killing-sector anomaly is a nontrivial local BRST class, the lattice analogue of an anomaly that cannot be removed by counterterms.
+- Field-dependent generators cannot remove it, because at flat background its field-dependent parts vanish (C3 lemma).
+- Operator-valued parameters need an infinite tower.
+- F2's linear system has no solution for r ≤ 3.
+- Expected reading: FAIL (bounded).
+
+**Rules.** Every FAIL is refereed by codex gpt-5.6-sol at xhigh before it is recorded. These readings are not changed after the run.

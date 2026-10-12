@@ -1,0 +1,67 @@
+=== (b1) Xi split into box-perp (vertex fixed = continuum in W_V) and edge-perp (free) parts; N = 128 ===
+[G m=1.00]
+   T2g: Xi_boxperp=-1.6944e-04 | U: total -4.8403e-04 (box -1.6944e-04, edge -3.1459e-04) | M: total -9.6023e-04 (edge -7.9079e-04)
+   Eg: Xi_boxperp=-8.7965e-05 | U: total -2.5213e-04 (box -8.7965e-05, edge -1.6416e-04) | M: total -5.2918e-04 (edge -4.4121e-04)
+[G m=0.30]
+   T2g: Xi_boxperp=-2.0750e-04 | U: total -5.7230e-04 (box -2.0750e-04, edge -3.6480e-04) | M: total -1.1121e-03 (edge -9.0455e-04)
+   Eg: Xi_boxperp=-1.0994e-04 | U: total -3.0417e-04 (box -1.0994e-04, edge -1.9423e-04) | M: total -6.2785e-04 (edge -5.1791e-04)
+[G m=0.10]
+   T2g: Xi_boxperp=-2.1142e-04 | U: total -5.8117e-04 (box -2.1142e-04, edge -3.6975e-04) | M: total -1.1271e-03 (edge -9.1565e-04)
+   Eg: Xi_boxperp=-1.1223e-04 | U: total -3.0948e-04 (box -1.1223e-04, edge -1.9724e-04) | M: total -6.3777e-04 (edge -5.2554e-04)
+[G m=0.01]
+   T2g: Xi_boxperp=-2.1191e-04 | U: total -5.8228e-04 (box -2.1191e-04, edge -3.7037e-04) | M: total -1.1289e-03 (edge -9.1704e-04)
+   Eg: Xi_boxperp=-1.1252e-04 | U: total -3.1014e-04 (box -1.1252e-04, edge -1.9762e-04) | M: total -6.3901e-04 (edge -5.2649e-04)
+[L m=1.00]
+   T2g: Xi_boxperp=+1.1377e-03 | U: total +2.6879e-02 (box +1.1377e-03, edge +2.5742e-02) | M: total +2.4087e-03 (edge +1.2711e-03)
+   Eg: Xi_boxperp=+8.5646e-04 | U: total +9.0561e-02 (box +8.5646e-04, edge +8.9704e-02) | M: total +2.3192e-03 (edge +1.4628e-03)
+[L m=0.30]
+   T2g: Xi_boxperp=+2.6601e-03 | U: total +6.0706e-02 (box +2.6601e-03, edge +5.8046e-02) | M: total +5.2762e-03 (edge +2.6161e-03)
+   Eg: Xi_boxperp=+2.1922e-03 | U: total +2.4771e-01 (box +2.1922e-03, edge +2.4552e-01) | M: total +5.5191e-03 (edge +3.3269e-03)
+[L m=0.10]
+   T2g: Xi_boxperp=+2.9819e-03 | U: total +6.7125e-02 (box +2.9819e-03, edge +6.4144e-02) | M: total +5.8897e-03 (edge +2.9078e-03)
+   Eg: Xi_boxperp=+2.4913e-03 | U: total +2.8253e-01 (box +2.4913e-03, edge +2.8004e-01) | M: total +6.2274e-03 (edge +3.7362e-03)
+[L m=0.01]
+   T2g: Xi_boxperp=+3.0299e-03 | U: total +6.8032e-02 (box +3.0299e-03, edge +6.5003e-02) | M: total +5.9844e-03 (edge +2.9544e-03)
+   Eg: Xi_boxperp=+2.5364e-03 | U: total +2.8756e-01 (box +2.5364e-03, edge +2.8503e-01) | M: total +6.3361e-03 (edge +3.7996e-03)
+   (on box-perp the U and M vertices coincide with the continuum one: u = k^2, p = k there)
+
+=== (b2) class bound in W_V and sizes at a = l_P (kappa_lat = 8 pi): c_T - 1 ~ kappa Xi ===
+  G m=1.00 T2g: every member has Xi <= -1.6944e-04  -> 16pi^2|Xi| >= 0.0268 ; |c_T - 1| at a=l_P >= 4.26e-03 ; a/l_P needed for |dc| < 1e-15 (one species): >= 2.1e+06
+  G m=1.00 Eg : every member has Xi <= -8.7965e-05  -> 16pi^2|Xi| >= 0.0139 ; |c_T - 1| at a=l_P >= 2.21e-03 ; a/l_P needed for |dc| < 1e-15 (one species): >= 1.5e+06
+  G m=0.30 T2g: every member has Xi <= -2.0750e-04  -> 16pi^2|Xi| >= 0.0328 ; |c_T - 1| at a=l_P >= 5.22e-03 ; a/l_P needed for |dc| < 1e-15 (one species): >= 2.3e+06
+  G m=0.30 Eg : every member has Xi <= -1.0994e-04  -> 16pi^2|Xi| >= 0.0174 ; |c_T - 1| at a=l_P >= 2.76e-03 ; a/l_P needed for |dc| < 1e-15 (one species): >= 1.7e+06
+  G m=0.01 T2g: every member has Xi <= -2.1191e-04  -> 16pi^2|Xi| >= 0.0335 ; |c_T - 1| at a=l_P >= 5.33e-03 ; a/l_P needed for |dc| < 1e-15 (one species): >= 2.3e+06
+  G m=0.01 Eg : every member has Xi <= -1.1252e-04  -> 16pi^2|Xi| >= 0.0178 ; |c_T - 1| at a=l_P >= 2.83e-03 ; a/l_P needed for |dc| < 1e-15 (one species): >= 1.7e+06
+  L m=1.00 T2g: every member has Xi >= +1.1377e-03  -> 16pi^2|Xi| >= 0.1797 ; |c_T - 1| at a=l_P >= 2.86e-02 ; a/l_P needed for |dc| < 1e-15 (one species): >= 5.3e+06
+  L m=1.00 Eg : every member has Xi >= +8.5646e-04  -> 16pi^2|Xi| >= 0.1352 ; |c_T - 1| at a=l_P >= 2.15e-02 ; a/l_P needed for |dc| < 1e-15 (one species): >= 4.6e+06
+  L m=0.30 T2g: every member has Xi >= +2.6601e-03  -> 16pi^2|Xi| >= 0.4201 ; |c_T - 1| at a=l_P >= 6.69e-02 ; a/l_P needed for |dc| < 1e-15 (one species): >= 8.2e+06
+  L m=0.30 Eg : every member has Xi >= +2.1922e-03  -> 16pi^2|Xi| >= 0.3462 ; |c_T - 1| at a=l_P >= 5.51e-02 ; a/l_P needed for |dc| < 1e-15 (one species): >= 7.4e+06
+  L m=0.01 T2g: every member has Xi >= +3.0299e-03  -> 16pi^2|Xi| >= 0.4785 ; |c_T - 1| at a=l_P >= 7.62e-02 ; a/l_P needed for |dc| < 1e-15 (one species): >= 8.7e+06
+  L m=0.01 Eg : every member has Xi >= +2.5364e-03  -> 16pi^2|Xi| >= 0.4005 ; |c_T - 1| at a=l_P >= 6.37e-02 ; a/l_P needed for |dc| < 1e-15 (one species): >= 8.0e+06
+
+=== (b3) birefringence in W_V: one smooth edge knob c (E_g edge-perp weight x (1 + (c-1) eta)), tuned at m = 1 ===
+  G U: c* = 6.1402 (>= 0: True) makes Xi_Eg = Xi_T2g at m = 1;
+      m=1.0: Xi_T2g=-4.84032e-04  Xi_Eg(c*)=-4.84032e-04  diff=+0.00e+00
+      m=0.3: Xi_T2g=-5.72304e-04  Xi_Eg(c*)=-5.71203e-04  diff=-1.10e-06
+      m=0.1: Xi_T2g=-5.81169e-04  Xi_Eg(c*)=-5.79957e-04  diff=-1.21e-06
+  L U: c* = -0.0109 (>= 0: False) makes Xi_Eg = Xi_T2g at m = 1;
+      m=1.0: Xi_T2g=+2.68792e-02  Xi_Eg(c*)=+2.68792e-02  diff=+0.00e+00
+      m=0.3: Xi_T2g=+6.07060e-02  Xi_Eg(c*)=+6.17568e-02  diff=-1.05e-03
+      m=0.1: Xi_T2g=+6.71255e-02  Xi_Eg(c*)=+6.79214e-02  diff=-7.96e-04
+
+=== (b4) split table c_m - c_T = kappa_lat (2J - Xi), in kappa_lat/16pi^2 units; J = R11-1 dD-M (external = loop species mass) ===
+  G m=1.0 T2g: 2J=-1.1024e-02 | M: -1.5893 | U: -1.6645 | paired (Xi=0): -1.7409 | at a=l_P: M -2.529e-01 U -2.649e-01 paired -2.771e-01
+  G m=1.0 Eg : 2J=-1.1024e-02 | M: -1.6573 | U: -1.7011 | paired (Xi=0): -1.7409 | at a=l_P: M -2.638e-01 U -2.707e-01 paired -2.771e-01
+  G m=0.3 T2g: 2J=-1.0225e-03 | M: +0.0141 | U: -0.0711 | paired (Xi=0): -0.1615 | at a=l_P: M +2.250e-03 U -1.131e-02 paired -2.570e-02
+  G m=0.3 Eg : 2J=-1.0225e-03 | M: -0.0623 | U: -0.1134 | paired (Xi=0): -0.1615 | at a=l_P: M -9.919e-03 U -1.805e-02 paired -2.570e-02
+  L m=1.0 T2g: 2J=-1.3774e-02 | M: -2.5554 | U: -6.4197 | paired (Xi=0): -2.1751 | at a=l_P: M -4.067e-01 U -1.022e+00 paired -3.462e-01
+  L m=1.0 Eg : 2J=-1.3774e-02 | M: -2.5413 | U: -16.4759 | paired (Xi=0): -2.1751 | at a=l_P: M -4.045e-01 U -2.622e+00 paired -3.462e-01
+  L m=0.3 T2g: 2J=-1.3072e-03 | M: -1.0396 | U: -9.7927 | paired (Xi=0): -0.2064 | at a=l_P: M -1.655e-01 U -1.559e+00 paired -3.285e-02
+  L m=0.3 Eg : 2J=-1.3072e-03 | M: -1.0780 | U: -39.3232 | paired (Xi=0): -0.2064 | at a=l_P: M -1.716e-01 U -6.258e+00 paired -3.285e-02
+
+  Light external matter (m_ext a -> 0, Lemma M: J = m^2 J2 -> 0), loop species m = 0.01: c_m - c_T -> -kappa Xi:
+  G T2g: U +0.0919, M +0.1783, W_V bound: |.| >= 0.0335 (kappa/16pi^2 units); at a = l_P: U +1.463e-02 ; bound 5.326e-03 ; ratio to 1e-15 band >= 5.3e+12
+  G Eg : U +0.0490, M +0.1009, W_V bound: |.| >= 0.0178 (kappa/16pi^2 units); at a = l_P: U +7.795e-03 ; bound 2.828e-03 ; ratio to 1e-15 band >= 2.8e+12
+  L T2g: U -10.7433, M -0.9450, W_V bound: |.| >= 0.4785 (kappa/16pi^2 units); at a = l_P: U -1.710e+00 ; bound 7.615e-02 ; ratio to 1e-15 band >= 7.6e+13
+  L Eg : U -45.4101, M -1.0006, W_V bound: |.| >= 0.4005 (kappa/16pi^2 units); at a = l_P: U -7.227e+00 ; bound 6.375e-02 ; ratio to 1e-15 band >= 6.4e+13
+  Paired unit (Theorem PT/S, matched masses): Xi = 0, so c_m - c_T = 2 kappa J = 4 kappa m^2 J2: proton at a = l_P (m a = 7.7e-20): G -1.7e-39, L -2.2e-39

@@ -1,0 +1,9 @@
+L I(B): B=1e-04: -1.131e+04 B=1e-03: +5.779e+02 B=1e-02: +1.082e+03 B=3e-02: +5.768e+02 B=9e-02: +1.884e+02 B=3e-01: +3.330e+01 B=1e+00: +3.725e+00
+   L: I(B) changes sign at B ~ 0.0007 (I<0 below)
+G I(B): B=1e-04: -5.380e-02 B=1e-03: -5.465e-02 B=1e-02: -5.447e-02 B=3e-02: -5.406e-02 B=9e-02: -5.285e-02 B=3e-01: -4.890e-02 B=1e+00: -3.838e-02
+L m=0.30 T2g: Xi_boxperp=+2.6808e-03 | U total +6.0709e-02 | M total +5.2764e-03 | min I on edge-perp B values +7.33e-03
+L m=0.30 Eg : Xi_boxperp=+2.2132e-03 | U total +2.4772e-01 | M total +5.5193e-03 | min I on edge-perp B values +7.33e-03
+L m=0.10 T2g: Xi_boxperp=+3.0036e-03 | U total +6.7129e-02 | M total +5.8900e-03 | min I on edge-perp B values +7.60e-03
+L m=0.10 Eg : Xi_boxperp=+2.5134e-03 | U total +2.8254e-01 | M total +6.2277e-03 | min I on edge-perp B values +7.60e-03
+L m=0.01 T2g: Xi_boxperp=+3.0518e-03 | U total +6.8036e-02 | M total +5.9847e-03 | min I on edge-perp B values -1.13e+04
+L m=0.01 Eg : Xi_boxperp=+2.5587e-03 | U total +2.8757e-01 | M total +6.3363e-03 | min I on edge-perp B values -1.13e+04

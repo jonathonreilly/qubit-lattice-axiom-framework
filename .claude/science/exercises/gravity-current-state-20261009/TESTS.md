@@ -3818,3 +3818,18 @@ Launch: R9-1, R9-2, R9-4 and R9-5 now; R9-3 when a slot frees; R9-6 only on its 
 - **Two loops fail in the toy.** For the ordering-truncated toy N, the O(g_o²g_i²) correction depends on momentum: about −6.2% (fermions) and −0.60% (bosons) already at p = m/3. This survives independent Fock, quadrature, Sobol and scaling checks, so radiative closure fails for toy N.
 - **Open:** the completed crossing set.
 - **Status against the fixed readings.** The two-loop PASS is not met, and the incompatibility FAIL is not proved.
+
+### C5 Round 9, item 7 (pre-registered 17:00Z; launched now)
+
+**R9-7. Two-loop closure with the complete crossing set (the R8-4 open item).**
+- The R8-4 referee confirms that the ordering-truncated toy N fails radiative closure at two loops: −6.2% fermion and −0.6% boson at p = m/3. A completed crossing set (2↔2 crossings, reverse decays) is the open restoration route. Its vertex functions are not fixed by the invariant-mass prescription.
+- Complete toy N with every time ordering a local relativistic theory would have, giving each new vertex the invariant-mass plateau of the pair or pairs it creates. Recompute the two-loop E² − p².
+- Also run the local-limit control: the plateaus are made wide, so the theory approaches a local Lorentz-invariant field theory with a covariant regulator. Does E² − p² become p-independent there?
+- If closure fails with the complete set, prove or argue why invariant-mass plateaus cannot be radiatively closed at two loops in a stated class.
+
+Readings:
+- **PASS:** with the complete crossing set, the two-loop E² − p² is p-independent to the quadrature floor inside the budget, checked, with fermion and boson both stated.
+- **FAIL:** non-closure persists with the complete crossing set for every vertex-function choice in a stated class (refereed).
+- **INCONCLUSIVE:** otherwise.
+
+Expectation: INCONCLUSIVE, leaning FAIL. A product of plateaus is not a covariant regulator of a two-loop graph's subdivergences.

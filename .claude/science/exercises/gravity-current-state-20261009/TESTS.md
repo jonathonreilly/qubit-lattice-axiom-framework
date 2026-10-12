@@ -2298,3 +2298,74 @@ So: can a gauge algebra with field-dependent generators remove the Killing-secto
 Still INCONCLUSIVE: altered leading generators, non-block-diagonal BV completions, multiband or auxiliary matter, and quasi-local tower actions.
 
 **Against the registered expectation:** FAIL (bounded), as expected. The obstruction sits entirely in the cos k factor (F2's Leibniz diagnostic). A clean theorem (F1's T1, quadric) holds under the narrowed hypotheses.
+
+## Campaign C5: reverse-engineering the rules from observations (owner, 2026-10-12 10:57Z to 2026-10-13 10:57Z, 24 h)
+
+**Owner request:** "keep reverse engineering observations into the underlying rules of our TOE for 24 hours".
+
+**How C5 runs.**
+- **Method.** Each round goes forward from one or more observations to necessary properties of the substrate's rules (a necessity derivation, with its hypotheses stated). Candidate rule sets are then built to satisfy those properties, and the candidates are tested against the refereed walls of this packet.
+- **Agents.** Probes run on Opus 5.5 at xhigh.
+- **Referee.** Every FAIL or no-go goes to codex gpt-5.6-sol at xhigh before it is recorded.
+- **Readings.** Readings are fixed before each run.
+- **Axioms.** Every axiom change is named as a price, never adopted.
+- **End.** 2026-10-13 10:57Z. Unfinished items are marked "not completed (stopped at end)".
+- **Driver.** A recurring cron checks progress about every 40 minutes. It records results and launches the next round's pre-registered tests.
+
+**Readings used for derivation probes, fixed for all rounds.**
+- **DERIVED:** the necessity is proved from the stated observations plus explicitly stated hypotheses, with the bound given.
+- **SUGGESTED:** argued, not proved.
+- **REFUTED:** the claimed necessity is false (a counterexample exists).
+- Test probes carry their own PASS/FAIL/INCONCLUSIVE readings.
+
+### C5 Round 1 (10:57Z)
+
+**Where we start.** The refereed state: SUMMARY §§10–20 and PRICE_NOTE v5 plus the v6 delta.
+- On a fixed grid, local matter has no boost that closes with its momentum. The cause is the cos k factor (C3/K2/RB/RFW).
+- A fixed random event set has the right mean lensing (RL2) but per-realization noise that observation excludes (RL4, RZ).
+- Free local matter generates the E_g shear mass (V3); removing it costs a tuning or an imposed rule (RV4).
+
+**Round 1 probes:**
+
+- **O1: Lorentz invariance.**
+  - Observations: matter Lorentz invariance to about 1e-20 (photon decay, UHECR, LHAASO); GW170817 c_T to 1e-15.
+  - Combined with the refereed boost theorems, derive what the substrate's spacetime-symmetry structure must be.
+  - The candidates to sort: exact Lorentz invariance in law (events, or a continuum fibre); an emergent mechanism; a preferred frame with tuning.
+  - Expected: DERIVED, either Lorentz invariance in law or tuning at about 1e-20 per species. Only Lorentz-invariant-in-law substrates avoid tuning.
+
+- **O2: universality.**
+  - Observations: the equivalence principle (MICROSCOPE, 1e-15) and a massless spin-2 field with universal coupling (Weinberg soft theorem).
+  - Derive the necessary structure of the substrate's translation and stress: an exactly conserved, universal local T coupled to h.
+  - Then reverse-engineer the minimal rule that supplies an exact continuous translation while keeping discreteness somewhere. Candidates:
+    - discreteness in count, not position (events);
+    - discreteness in Hilbert space or records, not in space;
+    - a continuum fibre per cell (I1).
+  - Expected: DERIVED: an exact continuous translation symmetry is necessary. Discreteness must live off the translation group.
+
+- **Q1: a coherent (unrecorded) event substrate, the key test.**
+  - Idea: RL2's mean lensing passes; RL4/RZ's failure is per-realization noise. Suppose the event microstructure is quantum, a coherent superposition over sprinklings that is not recorded. Then observed amplitudes may be ensemble means, and the noise becomes something else.
+  - Compute two things:
+    - (a) the observable for a coherent sum over sprinklings (amplitude-level averaging versus intensity-level mixing);
+    - (b) whether matter decoheres the substrate (which-sprinkling information leaking into records), which would bring the classical noise back.
+  - **Fixed readings:**
+    - **PASS:** an explicit coherent-substrate rule under which the observed lensing amplitude is the RL2 mean, with residual fluctuations below observational bounds, and decoherence by observed matter is shown to be negligible.
+    - **FAIL:** a proof that the noise reappears (intensity-level or via decoherence) at RZ's level in the stated class.
+    - **INCONCLUSIVE:** otherwise.
+  - Expected: INCONCLUSIVE. Coherent averaging removes the noise from amplitudes, but intensities pick up a |Ψ|² variance term equal to RZ's. The decisive question is whether that variance term is observable as noise (it is, per-shot) or appears as a decoherence-like broadening. Lean FAIL.
+
+- **O3: vacuum energy and shear.**
+  - Observations: the measured cosmological constant (tiny), plus the refereed RP and RV4 results (E_g shear needs Pauli-type sum rules or an imposed rule).
+  - Derive what the matter content and substrate must do: exact boson–fermion pairing at the cell scale, or an imposed spectral-invariance rule.
+  - Test whether a qubit site (M₂(C)) naturally pairs a bosonic and a fermionic mode, e.g. via Jordan–Wigner / hard-core boson ⇔ fermion duality, so the pairing sum rules (R0–R6) hold by structure.
+  - **Fixed readings for the qubit-pairing test:**
+    - **PASS:** an explicit qubit rule whose excitations come in exactly paired bosonic and fermionic bands, satisfying R0–R6 without tuning.
+    - **FAIL:** proved impossible for qubit sites in the stated class.
+    - **INCONCLUSIVE:** otherwise.
+  - Expected: FAIL. Hard-core boson/fermion duality is one excitation viewed two ways, not a pair, and interactions break pairing.
+
+- **O4: records.**
+  - Observations: quantum mechanics as observed (interference of massive molecules, Bell violations, decoherence rates) and the classicality of records.
+  - Together with Q1's and RZ's lesson, derive what the Record axiom must and must not lock: which degrees of freedom can be recorded without destroying interference (molecule interferometry at 25 kDa) or lensing coherence.
+  - Expected: DERIVED: records cannot lock the spacetime microstructure, or lensed and interfering amplitudes decohere. So Record must be restricted to coarse, gauge-invariant or conserved data. This is a sharpened P4.
+
+- **O5: synthesis.** From O1–O4, plus the refereed walls, state the minimal set of rule changes to the four axioms consistent with every observation used. Name each as a price. Design the decisive tests for round 2.

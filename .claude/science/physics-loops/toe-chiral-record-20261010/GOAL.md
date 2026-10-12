@@ -455,3 +455,15 @@ pair. The thrice-minus pivot gcd has degree 3 on (1, 2), (2, 1), and
 (3, 1), and degree 7 on the other three pairs. One swapped-dot
 generator plus three times one cap and the other cap is not in this
 count. The ten-kernel coefficient span is not classified.
+Cycle 71 shows that one swapped-dot generator plus three times the cap
+of one ratio span plus the cap of the other ratio span has partner rank
+10 at every chirality coefficient on every ordered height pair. The
+swapped-dot coordinate is 1 or -1 and the scaled coordinate is 8. The
+four sums have rank 3. Each lies in neither ratio span and outside the
+even space. The maximal-minor gcd is a nonzero constant. The thrice-plus
+pivot gcd has degree 7 on every pair. The plus-dot thrice-minus pivot
+gcd has degree 7 on (1, 2), (2, 1), and (3, 1), and degree 5 on the
+other three pairs. The minus-dot thrice-minus pivot gcd has degree 5 on
+every pair. Both swapped-dot generators plus three times one cap and
+the other cap are not in this count. The ten-kernel coefficient span is
+not classified.

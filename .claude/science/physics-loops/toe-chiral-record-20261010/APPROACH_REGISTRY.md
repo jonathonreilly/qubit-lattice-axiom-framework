@@ -809,3 +809,20 @@ ordered height pair. The thrice-minus pivot gcd has degree 3 on (1, 2),
 Family not used: one swapped-dot generator plus three times the cap of
 one ratio span plus the cap of the other ratio span. That remains open.
 The 300-dimensional affine space is not this family.
+
+Cycle 71 target contract: whether every chirality coefficient on the sum
+of one swapped-dot generator and three times the cap of one ratio span
+plus the cap of the other ratio span has partner rank 10.
+
+Family used: the four sums, one swapped-dot generator plus three times
+one cap and the other cap. The swapped-dot coordinate is 1 or -1 and
+the scaled coordinate is 8. The four sums have rank 3. The 17-row
+pencil has a nonzero constant maximal-minor gcd. The thrice-plus pivot
+gcd has degree 7 on every ordered height pair. The plus-dot thrice-minus
+pivot gcd has degree 7 on (1, 2), (2, 1), and (3, 1), and degree 5 on
+the other three pairs. The minus-dot thrice-minus pivot gcd has degree
+5 on every pair.
+
+Family not used: both swapped-dot generators plus three times the cap of
+one ratio span plus the cap of the other ratio span. That remains open.
+The 300-dimensional affine space is not this family.

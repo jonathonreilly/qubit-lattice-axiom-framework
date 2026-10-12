@@ -1,0 +1,29 @@
+(1) soft selectron split: eps^2 = E_e^2 + dm2 (both loops).  DELTA x16pi^2 per e^2, m = 0.1, N = 96
+  S1 r=0: DELTA(dm2=0, .005, .01) = -16.2628 -16.2221 -16.1942 ; dDELTA/d(dm2) ~ +6.86 (lattice units)
+  S1 r=1: DELTA(dm2=0, .005, .01) = -13.3232 -13.3145 -13.3191 ; dDELTA/d(dm2) ~ +0.41 (lattice units)
+  S3 r=0: DELTA(dm2=0, .005, .01) = -54.6040 -54.2640 -53.9493 ; dDELTA/d(dm2) ~ +65.46 (lattice units)
+  S3 r=1: DELTA(dm2=0, .005, .01) = -24.3336 -24.3218 -24.3235 ; dDELTA/d(dm2) ~ +1.01 (lattice units)
+
+(2) product-rule defect D(k,q) = S(k+q) - S(k) - S(q), shape S1 (b1=1, b2=2):
+  k=0.300 q=0.400  k,q,k+q in box: True   D = -5.551e-17
+  k=0.600 q=0.390  k,q,k+q in box: True   D = +0.000e+00
+  k=0.600 q=0.500  k,q,k+q in box: False   D = -2.879e-05
+  k=1.200 q=0.300  k,q,k+q in box: False   D = -2.451e-01
+  k=2.500 q=0.200  k,q,k+q in box: False   D = -3.711e-01
+  k=3.042 q=0.200  k,q,k+q in box: False   D = -3.997e-01
+  k=0.000 q=1.500  k,q,k+q in box: False   D = +0.000e+00
+  2->2: k1=[0.95 0.5  0.  ] k2=[ 0.6 -0.5  0. ] (both in box), E_in=1.865594
+   s=0.40 on shell at y=0.45997: k3=(1.175,0.460,0) [out of box: True], k4=(0.375,-0.460,0); |E_out-E_in|=2.2e-16; Delta P = (-0.0028, +0.0000, +0.0000); charge-vertex singular values <u3|u1>: [0.998 0.998], <u4|u2>: [0.995 0.995]
+   s=0.50 on shell at y=0.44543: k3=(1.275,0.445,0) [out of box: True], k4=(0.275,-0.445,0); |E_out-E_in|=0.0e+00; Delta P = (-0.0302, +0.0000, +0.0000); charge-vertex singular values <u3|u1>: [0.997 0.997], <u4|u2>: [0.987 0.987]
+   s=0.60 on shell at y=0.43947: k3=(1.375,0.439,0) [out of box: True], k4=(0.175,-0.439,0); |E_out-E_in|=2.2e-16; Delta P = (-0.1009, +0.0000, +0.0000); charge-vertex singular values <u3|u1>: [0.995 0.995], <u4|u2>: [0.969 0.969]
+
+(3) free photino of the spinor class (Majorana-Wilson, 4-comp form h_l = alpha.Sg + beta Wl), photon omega^2 = sum d(q_j)^2:
+  S1: max|E_l^2 - omega^2| on grid = 3.6e-15 ; min over q != 0 of omega on 48^3 grid = 0.1309 (grid spacing 0.1309) ; 4x4 eigenvalue check |E| = omega to 3.1e-15 ; Sg(pi) = 1.2e-16, Wl at (pi,0,0) = 2.0000
+  S3: max|E_l^2 - omega^2| on grid = 3.6e-15 ; min over q != 0 of omega on 48^3 grid = 0.1309 (grid spacing 0.1309) ; 4x4 eigenvalue check |E| = omega to 3.1e-15 ; Sg(pi) = 1.2e-16, Wl at (pi,0,0) = 2.0000
+  S5: max|E_l^2 - omega^2| on grid = 3.6e-15 ; min over q != 0 of omega on 48^3 grid = 0.1309 (grid spacing 0.1309) ; 4x4 eigenvalue check |E| = omega to 3.1e-15 ; Sg(pi) = 1.2e-16, Wl at (pi,0,0) = 2.0000
+
+(4) free spinor algebra per mode: {Q_a, Qbar_b} = 2 (E 1 - sigma.p)_ab is realizable iff E >= |p|; Clifford rank of 2(E - sigma.p): 2 if E>|p| (long, 2+2), 1 if E=|p| (short, 1+1).
+  electron k=[0.3 0.2 0.1]: p=[0.3 0.2 0.1] E=0.3873 |p|=0.3742  eig 2(E - s.p) = [0.0263 1.5229]
+  electron k=[2.5 0.3 0. ]: p=[0.5985 0.3    0.    ] E=2.0156 |p|=0.6695  eig 2(E - s.p) = [2.6922 5.37  ]
+  electron k=[3.142 0.    0.   ]: p=[0. 0. 0.] E=2.1000 |p|=0.0000  eig 2(E - s.p) = [4.2 4.2]
+elapsed 5.3s

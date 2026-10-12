@@ -4712,3 +4712,10 @@ Launch: R13-1, R13-3, R13-5 and R13-6 now; R13-2 after the R12-5 referee; R13-4 
     - G-edge floor: Ξ ≤ Ξ_box⊥ < 0, about ≥ 5e-3 at ℓ_P for T_2g.
     - Birefringence is removable by an edge knob.
   - **With pairing: OPEN.** The TT shift is zero, but 4κm²J₂ remains.
+- **R13-1 (momentum in the superalgebra):** worker reading INCONCLUSIVE, leaning FAIL.
+  - Theorem B (Jacobi): a conserved Q forces a conserved P, which a Ward-forced photon makes impossible on the whole zone. So no exact spinor algebra exists there.
+  - Corollary BPS: an exact box algebra would forbid an electron slower than light.
+  - Yet minimal N=1 box SQED gives Δ < 0 in all 24 laws (−12 to −55 e²/16π²).
+  - The algebra alone forces neither a common momentum p nor c_e = c_γ.
+
+  Referee running.

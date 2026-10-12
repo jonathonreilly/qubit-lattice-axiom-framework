@@ -1,6 +1,6 @@
 # Current campaign recovery checkpoint
 
-Actual checkpoint: 2026-10-12T09:44:15.737549+00:00. Campaign starts2026-10-11T16:00:52Z
+Actual checkpoint: 2026-10-12T10:12:22.575506+00:00. Campaign starts2026-10-11T16:00:52Z
 and ends2026-10-12T16:00:52Z. Never extend. At deadline start no new research;
 preserve/checkpoint/report actual outcomes and limits, disable heartbeat
 toe-derivations-24-hour-campaign. Continue useful science until then. Regular PRs
@@ -17,8 +17,8 @@ QW=T/quantitative_boost_worktree clean433f641f24296b6d8e786930bb1327f434015162,P
 Primary /Users/jonreilly/Projects/Physics untouched.
 
 This directory in T/worktree, branch physics-loop/toe-nonlinear-transport-20261011
-(PR9478), is the sole current checkpoint. Prior exact checkpoint HEADcb25a7bc75a4de8f58d5f413e9d9953a6150fff2
-is archived in history/20261012T094415Z_*.gz. Previous091240 archives remain. Earlier083702/075936/072753/070942/062942/052848/033625
+(PR9478), is the sole current checkpoint. Prior exact checkpoint HEAD16586f0121500e6ec67d0576adf72dfdeb664857
+is archived in history/20261012T101222Z_*.gz. Earlier094415 archives remain. Previous091240 archives remain. Earlier083702/075936/072753/070942/062942/052848/033625
 archives preserve complete prior identities/failures. Frozen milestone and
 author/reviewer packets are not alternative current campaign checkpoints.
 
@@ -220,8 +220,13 @@ read/verified in root_scattering_author_verification/. Full611proof read.
 Fresh GAPPED_CHAIN_SCATTERING_REVIEW.md0dcf6abf605070fb2c4c2525035e7afba93fe2929ba65eeddd815a8259ae2dcb,
 receipt3085fc32568ca71d38f6d32423e71082958c77b066480a161cf2e1134f33772a,
 manifestf6313cfbf8750af3dcad5c79d83ddeaa5a5c9d90b6299a8557412cb2f1f1c739.
-Root full review/reconstruction/science helpers read; remaining evidence/helpers
-and independent manifest verification PENDING. Reviewer no correction in scope.
+Root full review/reconstruction/all11helpers/preregistration/evidence read and independently bound. Source review accepted; no correction in scope.
+Scattering_root_review_coverage.json43d89b8e7b57e3bc18a00424ccfb292791e0fea95fdead05ee1fcbc458028004,pending[].
+Own verify_scattering_review_evidence.py ran09:46:35UTC:712bindings,23receipts,95exactreplay,4freshwholemutants56changed324unchanged rows. All scientific rows/literal controls/full spectral transfer values read.
+Lossless new results07ff3adf73186c27ba71f584a6df0502a200558f243aa12df16d4407feb4b234;
+changedc7900953602172b29bafaf029a178970224cf4e45509dfb99e7e31d4668c80a3;
+unchangedlabelse72bcccb1b55c6d7231e28980eefcc97fe3d1a66860c22f0fe8d9c945bb87c9e.
+Early recorder/path failures preserved; no blind/independent-family claim.
 Actual odd almost-local spin creators, full-lattice tails, exact all-n cone signs,
 filtered replacement, noninjective velocity density yield onto chosen-GNS maps
 Wout=M_epsilon,Win=(-1)^pairsM_epsilon,S_n=(-1)^pairsI. Same-model-family/formula
@@ -245,11 +250,19 @@ CenteredcompactO(a²),originalO(a); nooperatornorm/globalFockfixedmass/netclaim.
 CircleN24/48/80failfixed2e-9,N1282.57e-13; Fock450oldnorm3.74e-7,
 added2e-10gate1000fails5.819e-10,2000passes1.8e-12. Alloldresults preserved.
 Ninewholemutants reject appropriatewitnesses but broadbound/unitarity/etc survivors
-explicit. Fresh gapped_continuum_review is completing; reconstruction prereg
+explicit. Fresh gapped_continuum_review completed; reconstruction prereg
 0c80e309df71d0b55edf8ea46f4d94988beaaa401caccfafc68123f26fa30ec4.
 Reviewer reports no analytic correction, new local8thorder finite-difference versus
 elliptic inversion; h=.01fails2e-7,h=.0025passesincludingwinding1.313e-7.
-These are reviewer messages, final root verification still PENDING.
+Root now accepted after full report/prereg/DOMAIN_WITNESSES/all6helpers/readme/amendment and full150rows156predicates read.
+GAPPED_CONTINUUM_LIMIT_REVIEW.md254d2ccae248a52af4207041196f7b4565deccc720981d09e336ad4935adcd76;
+receipt398384bb99dbe215de267b1ee951295d94e997455f39cc7fcf697f1d4e56310c;
+manifest4f7d0ccddbb67a69cb027c70f855e8231a58e93dcc5534f817f49427080a8e29.
+Continuum_root_review_coverage.json78cd9e10366bdd8ee715468479b108348a340dfeb26f2417aa6b6ebb3361fa64,pending[].
+Own verifier045536a297e785ecd7578f540823186896f68570409d07ab7d302b23a0dc9aaf ran09:52:13.47UTC .0776sec:176review+200authorbindings24processes,2exactauthorreplays.
+all_scientific_rows.jsonl a047144ad663276a077b060b256ca7fe42ca72b56368359616ce2ec28a6f004b.
+All7variant cases read including broad-bound survivors; h=.005fails before .0025passes.
+FullFock domain witnesses in BOTH directions, total-derivative cancellation and H/P domain distinction explicit. No analytic correction/new Lean/interval/localnet claim.
 
 New local_even_continuum agent owns LOCAL_EVEN_CONTINUUM_PROBE.md and
 local_even_continuum/. Root lead ROOT_LOCAL_EVEN_CONTINUUM_LEAD.md161lines
@@ -259,8 +272,70 @@ two-component Dirac consistency, spectral vacuum covariance/Pfaffian limits and
 finite-propagation even-CAR locality. Derive from concrete parent only; does not
 depend on pendingboostreview. Odd bilateralJW strings are notspinlocal; evenvacuum
 sector is evenFock, notfullspinGNS. Nofullspin scalingnet/boostnetcovariance/3D/
-interacting/frameworkparameterselection claim. Fullproof and freshreview pending.
+interacting/frameworkparameterselection claim. Frozen599lineproof dc6c87afb6157d84b032a095ae0a9be271330e85fd4685646b63f89945b56131,
+plan31af24c9050df9bb862c36c754fc68ddb88c8d3a6dba9994a8de79893d153168.
+Root full frozenproof/plan/all5scientificmodules read; author finalappendix/adminhelpers/receipts/results still pending.
+Fresh local_even_continuum_review began10:08UTC, independent prereg before author helpers/results.
+Author reports4baselinecontrols8mutantsrejected; not yet root evidence bound.
+Analytic projector bounddelta/(2m), physicalcell Dirac convergence, actualevenCAR/spinlocality, finitepropagation and evenFockgap2m versus fullspingapm remain explicitly scoped.
 
-Root must next integrate both reviews, extend9488, package coherent suppliedmodel
+Root must next extend9488, package coherent suppliedmodel
 milestone, review localeven and refreshopportunities. Preserve failedroutes and
 continue untilfixeddeadline. Noeditableprompt/skill/axiomfileschanged.
+
+
+## Latest publication recovery and next scientific lane
+
+Massive one-note verifier frozen15d29ea13ee82d01de313fac6388112adc9eb4f5425b14bf457735bd2f0924a5,
+freeze538d5213f37fac62e4f6f072dc7c836e4204d2e52b423ac26d6744a0eec7f852.
+Root read all746lines/fullshim/contract/static summaries; source specimens and duplicated
+retention metadata independently compared to already-read exact originals, not reread counts.
+publication_root_reads/massive_verifier_specimens_checked.json records coverage plus
+two harmless missing guessed documentation paths; actual known files read.
+Root run10:09:29.548148UTC7.4656sec exit1 in massive_carrier_root_verification_execution/.
+Attempt massive_carrier_publication_verification_preparation/runs/20261012T100929_0ff3b6c6729b
+preserves full INNER/OUTER before inspection, cache/stdout/stderr/full mainoutput.
+One84predicatecanonical executed, zero mutants. Strict textual sys.executable comparison
+failed: /opt/homebrew/opt/python@3.13/bin/python3.13 versus Cellar3.13.5/bin/python3.13.
+Both resolve to Cellar3.13.5/Frameworks/Python.framework/Versions/3.13/bin/python3.13,
+52640bytes SHAa1f6d9dc20d4787a84dc2fe782094a7bac5946f49a962aa0af48a02f0e8d5bc5.
+Root massive_carrier_interpreter_alias_diagnosis.json confirms exact full calculation
+equality and unchanged version3.13.5/NumPy2.4.4/SymPy1.14.0. Full stdout21569bytes
+ccdb2edd362f169ad15d7f03fc6fef9e239688a8a62ed4197b8f04d82df8bed4,stderr empty.
+Do NOT rerun canonical or change science/version/diagnostic maps. Prepare inspected
+recovery preserving old attempt, pin exact executable aliases/bytes, reuse saved rawJSON
+(never unpickle), execute only8pendingmutants then graph+1/+4/compatibility/reconstruction/
+vocab/finalread/extend9488. Earlierfive-note science remains untouched.
+
+SUPPLIED_CHAIN_MILESTONE_GATE.md root330word OPEN decision after three complete
+source reviews. Prepare regular dependentPRbased9488 with Concrete/Scattering/Continuum,
+not mainalone: concrete imports three9488premises. Massive exact-Lie result is NOTinput.
+No clean supplied-chain worktree created yet. regularity_joint_packaging is preparing
+only UNEXECUTED finish_massive_carrier_verification.py and
+massive_carrier_verification_recovery/; root will inspect/execute its narrow recovery.
+Three-note preparation follows when root supplies the exact clean worktree/base.
+
+gapped_continuum_review now authors only CONTINUUM_LOCAL_BOOST_PROBE.md and
+continuum_local_boost/, using ROOT_CONTINUUM_LOCAL_BOOST_LEAD.md. Prior review sealed.
+Independent of unfinished localevenproof. Derive real CauchyDirac boost/core/positiveband
+Berryframe/vacuum/localspacetime evenalgebra covariance. U_eta=exp(+i eta b/v)=W(-eta/v),
+actual W(s)=U_-vs maps region by Lambda_vs: preserve inverse sign. Parallel frame
+R=exp(i atan(vq/m)sigmaz/2) makes Berrytermzero. Older genericfreeDirac note onmain
+found; exactpath/hash pending, no genericnovelty assertion.
+
+ROOT_MICROSCOPIC_LOCAL_COVARIANCE_LEAD.md queued NOTASSIGNED, no result yet.
+Targets actual weighted spin boost onebody {X,D_a}/2-aD_a/2, periodic parallel bandframe,
+strongbandboost comparison plus Shannon-versus-cell embedding identity, yielding
+actualeven-spin boostedword norm convergence then localregion covariance.
+No fullspin scalingnet/uniformunitball/spinLR/3D/interacting/frameworkselectionclaim.
+Local-even author final now sealed: LOCAL_EVEN_CONTINUUM_PROBE.md
+7be1a72e2b59c5c61b68ead6d663e8d4e179b21e2497243a2859a4082ea7813b;
+manifest5a5a5aa6b163e482765a90ea15b143fbdfda4447ba77305ab5c47c65abdf1c6c;
+receipt09ddc043969ca73278b257d02c2f654d41e03d382717c1c218ebafbbbe6737cc.
+Three documented wording corrections and result appendix still require root read;
+final identities sent to reviewer. No source accepted solely on author's final counts.
+Continuum localboost616lineanalytic candidate frozen10:11:02.670951UTC,
+9fc9cf7f203855faef12e63a9de355cdea525ad007c8ae27ada8c06509d62055;
+root reading pending. Author implementing independent tilted-Cauchy controls.
+Slotstate: root, massiverecoverypreparer, freshlocalevenreview, continuumlocalboostauthor.
+No running terminal session. Check clock/lock before further research. Fixed deadline unchanged.

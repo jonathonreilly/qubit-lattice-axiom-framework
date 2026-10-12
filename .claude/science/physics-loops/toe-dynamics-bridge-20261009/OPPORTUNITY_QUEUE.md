@@ -1,16 +1,17 @@
 # Current ranked decisions
 
-1. Prove the actual local even-spin-observable continuum bridge using cell averages,
-   the two-component Dirac generator, vacuum covariance and causal even correlations.
-   Author active; fresh review required. No full spin or boost-net assertion.
-2. Finish root integration of the completed scattering review and completing continuum
-   review, preserving new test survivors and fixed-threshold refinement failures.
-3. Verify the one prepared massive-carrier note and extend regular PR9488; no rerun
-   of its five unchanged notes. Exact-Lie premises do not hold for the fixed chain.
-4. Package a coherent concrete-chain/scattering/continuum milestone once ready;
-   evaluate local even-observables for the same family or a subsequent extension.
-5. Refresh highest-leverage route after this bridge: continuum local boost action,
-   stable perturbations or higher-dimensional realization, with checked premises.
+1. Finish independent review of the actual local even-spin continuum limit; root
+   must bind and read final author evidence, preserving scope and all counterchecks.
+2. Derive continuum local Lorentz covariance with exact sign, frame, domains and
+   local even-algebra support; author active. Compare prior generic Dirac note.
+3. Prove actual microscopic weighted boost converges to that local action, using
+   the bandframe and cell/Shannon comparison. Root lead queued, not yet assigned.
+4. Recover massive one-note verification without repeating the completed canonical;
+   execute eight remaining mutants and extend regular PR9488 after all gates.
+5. Package the fully reviewed Concrete/Scattering/Continuum family in a regular
+   dependent PR based on9488. Source-scoped OPEN gate complete; preparation pending.
+6. Then rank stable perturbations/higher-dimensional realization against actual
+   remaining obligations, preserving known finite-spacing closure failure.
 
-Avoid owned9475-9477work. Eleven regular PRs open. No merge/main push/audit verdict/
-physical axiom change. Deadline2026-10-12T16:00:52Z; stop newresearch then and disableheartbeat.
+No duplicate9475–9477work, merge/main push/audit verdict/axiom change. All11PRs
+regular/open. Deadline2026-10-12T16:00:52Z; no newresearch after, disableheartbeat.

@@ -1,6 +1,6 @@
 {
- "edge_count": 15810,
- "node_count": 7025,
+ "edge_count": 15815,
+ "node_count": 7027,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -317,6 +317,10 @@
   "adaptive_coevolving_geometry_no_go": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "adiabatic_ground_preparation_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "16729d75e99a",
+   "out_degree": 1
   },
   "adjacency_rank_qubit_clifford_bound_narrow_theorem_note_2026-06-10": {
    "deps_hash": "017358056d9e",
@@ -2545,6 +2549,10 @@
   "bounded_block_diagonal_compensation_target_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c4303103ee6b",
    "out_degree": 2
+  },
+  "bounded_interaction_ground_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "5e0d3e94d797",
+   "out_degree": 4
   },
   "bounded_two_star_bksf_cycle789_target_chart_bridge_cycle869_bounded_theorem_note_2026-08-02": {
    "deps_hash": "00d57df89f58",

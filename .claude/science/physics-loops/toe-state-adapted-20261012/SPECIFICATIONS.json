@@ -1,0 +1,93 @@
+{
+  "packet": ".claude/science/physics-loops/toe-state-adapted-20261012",
+  "specs": [
+    {
+      "key": "StateAdapted",
+      "note": "STATE_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "runner": "state_adapted_refinement_2026_10_12.py",
+      "claim": "state_adapted_refinement_bounded_theorem_note_2026-10-12",
+      "deps": [
+        "concrete_gapped_chain_bounded_theorem_note_2026-10-12",
+        "local_even_continuum_bounded_theorem_note_2026-10-12",
+        "continuum_local_boost_bounded_theorem_note_2026-10-12",
+        "microscopic_local_boost_limit_bounded_theorem_note_2026-10-12",
+        "mixed_local_poincare_correlations_bounded_theorem_note_2026-10-12",
+        "dyadic_even_refinement_bounded_theorem_note_2026-10-12"
+      ],
+      "scope": "For the supplied massive free one-dimensional chain, Bogoliubov-conjugated even refinements preserve the chosen state exactly and have the same intrinsic Cauchy sections, geometric local quotient and actual fixed mixed-flow limits as Haar refinement.",
+      "limits": "The specified finite-scale adapted maps have infinite support and an explicit even-observable energy-intertwining defect. Fixed-spacing exponential coefficient tails and fixed-observable convergence do not imply uniform physical tail constants, operator-unit-ball convergence, Haar H2 rates, or a theorem about all state-compatible refinements.",
+      "baseline_counts": {
+        "passed": 88,
+        "failed": 0
+      },
+      "nonbaseline_cases": [
+        "historical_baseline",
+        "original_wrong_frame_sign",
+        "original_omit_continuum_unrotation",
+        "corrected_wrong_frame_sign",
+        "corrected_omit_continuum_unrotation"
+      ],
+      "historical_nonbaseline_successes": [],
+      "case_roles": {
+        "corrected_baseline": "corrected_baseline",
+        "original_half_angle": "post_observation_supplement",
+        "historical_baseline": "historical_failed_baseline",
+        "original_wrong_frame_sign": "original_mutant",
+        "original_omit_continuum_unrotation": "original_mutant",
+        "corrected_wrong_frame_sign": "corrected_mutant",
+        "corrected_omit_continuum_unrotation": "corrected_mutant"
+      },
+      "audit_inputs": [
+        "docs/STATE_ADAPTED_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/LOCAL_EVEN_CONTINUUM_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/CONTINUUM_LOCAL_BOOST_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MICROSCOPIC_LOCAL_BOOST_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/MIXED_LOCAL_POINCARE_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        "docs/DYADIC_EVEN_REFINEMENT_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/RUNTIME.json",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/PUBLICATION_EDITS.json",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/EVIDENCE_MAP.json",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/MUTATION_SOURCE_MAP.json",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/ARITHMETIC_REPAIR_SOURCE_MAP.json",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/EXPECTED_RECORD_IDENTITIES.json",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/SPECIFICATIONS.json",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/RUNNER_TEMPLATE.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/reconstruct.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/00d14d807196ee6e420dbb543a73dc8ad0d475e540b1650bf925836139357678.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/0ab1092663ddea1beb7fd065cf073c2a8e2f7e12849183e63881c597e8aa6951.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/0c3a179a2310c0e72f64e5e5c48ba85dbaf66228bb7a08cab20ce839262888a1.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/1aa3c3e09ee5cfc82e1ffe13b12c7c4e3c0cad9c3c1e11c60cfe6f2a62912dc8.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/3d5b148f65fb941afaee70e300b97aac1b3f9ba747469702e724f4a50185a8f5.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/48a98dd055d874a1d06d4e7fd7843c121f221812c6ff3c4a6ac3af46e4728fe5.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/4c68256f1d60191f0eced0d10370fdbadb3b3462de50d5d67bb3c79ead650166.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/623a978bb4a53ab84e02fbc0a9e8e2ff93b93657486432b5138c5a7b78c75a9b.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/770e4bf3d208f3a6cbb9e34cd491747735ea6ec7621616c7a9def44212f2906b.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/7c76db00697bf2086338742f46d3cc0da84c06a44a6a9210a6969bb18309e2a6.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/8786277bfac41f9502d48ff8f5b68062f00a975f383f0b5ef4845536cda4a19f.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/a2c7edc4702b368cc6a68dba1689e5d621d8b94a4515c3834df646cf77d771d5.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/a3fd1b36d0de4dda9ac4a83735c3e650202b7dace578969f7ed9ede14a369511.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/a989e993e3a1868e2967dec6f43e5ab3b6dae4c844f3466c5be672c27dd4ef58.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/ae7089947b5c5a2a158ff61924d3e1061464698ab90ea5c401d5d5f5eeb9d78c.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/b0008df1d04c3348474af28b7cf55abf40f8800350595d27c0d55b331abbb982.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/b5a2ea74d2cce5e93aa2dc9293139a181412441b7d46cdfe139d744708a8fe49.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/cc273d77ea9a0b07945999f6bb1c2079a2a75586bcdddad92d85ec9e527b0e5c.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/d39f2bbee80e5351a93fef1334ebb9168e2ad16e367cae1b659ed5a726685f75.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/d8934d593355a6076ef9f188df0acf2a666bdab2e8a37114e86f63ecac52a6f2.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/e15a63f74361154d68d630f855bee55fd8e0c39b56933af5e142173063f0af93.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/e73d595995f41edf3ca14e218c1010d865081d8136ebec953960dd2475cc8051.py",
+        ".claude/science/physics-loops/toe-state-adapted-20261012/runtime/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.py"
+      ]
+    }
+  ],
+  "pairing": "Same selected model family and reasoning effort, separate reviewer context with its disclosed neutral-plan and later formula exposure; not blinded or diverse-family. Root supplied the candidate route and authored the narrow control repair. Packaging and reproduction add no independent science or audit.",
+  "expected_graph_delta": {
+    "nodes": 1,
+    "edges": 6
+  },
+  "root_acceptance_bound": true
+}

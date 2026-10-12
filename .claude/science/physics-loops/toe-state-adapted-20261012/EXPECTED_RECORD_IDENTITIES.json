@@ -1,0 +1,245 @@
+{
+  "StateAdapted/corrected_baseline": {
+    "name": "corrected_baseline",
+    "role": "corrected_baseline",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/runs/baseline_inner.receipt.json",
+      "bytes": 5952,
+      "sha256": "4d43eda8932591c2d4cb35d75bbcc467e1370257e6e693fa8e9ed5e240e9368d"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/runs/baseline_inner.stdout.txt",
+      "bytes": 11319,
+      "sha256": "3d6dd7c6f6dcbb8c400b323af9293506e09a4ac83eaae8361bed9bf51f3b44d0"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/runs/baseline_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 86,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/candidate.py",
+    "original_arguments": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/check_controls_corrected.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/candidate.py"
+    ],
+    "library_provenance": "Original receipts record Python/interpreter, not per-run library versions. ENVIRONMENT.json is a later observation; no historical library lock is invented."
+  },
+  "StateAdapted/original_half_angle": {
+    "name": "original_half_angle",
+    "role": "post_observation_supplement",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/half_angle_inner.receipt.json",
+      "bytes": 19238,
+      "sha256": "62516aec314d8dd00fd48733c0d520414cc48985d0a65ae4e3a377630657c91a"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/half_angle_inner.stdout.txt",
+      "bytes": 366,
+      "sha256": "5275e0902b8239fa1f155660a083bd8fb56675289837272b3ee6f089d9af9c46"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/half_angle_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 0,
+    "counts": {
+      "passed": 2,
+      "failed": 0
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_candidate_path": null,
+    "original_arguments": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/check_half_angle.py"
+    ],
+    "library_provenance": "Original receipts record Python/interpreter, not per-run library versions. ENVIRONMENT.json is a later observation; no historical library lock is invented."
+  },
+  "StateAdapted/historical_baseline": {
+    "name": "historical_baseline",
+    "role": "historical_failed_baseline",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/baseline_inner.receipt.json",
+      "bytes": 17720,
+      "sha256": "9c6bf385de8126b2c7d1fab6b1fe8d49fa23e061b72e5831053c73616d17e4fe"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/baseline_inner.stdout.txt",
+      "bytes": 11320,
+      "sha256": "d893d80a275acef3435ef3bad05d4d82348abea9774d1f4afc3469122ee82013"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/baseline_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 85,
+      "failed": 1
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/candidate.py",
+    "original_arguments": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/check_controls.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/candidate.py"
+    ],
+    "library_provenance": "Original receipts record Python/interpreter, not per-run library versions. ENVIRONMENT.json is a later observation; no historical library lock is invented."
+  },
+  "StateAdapted/original_wrong_frame_sign": {
+    "name": "original_wrong_frame_sign",
+    "role": "original_mutant",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/wrong_frame_sign_inner.receipt.json",
+      "bytes": 17752,
+      "sha256": "cdd250dd4469ca20bd360e15ad20bae2b45375b27a4d3554ade5b848c3c4f669"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/wrong_frame_sign_inner.stdout.txt",
+      "bytes": 11299,
+      "sha256": "ae75d5a49f84ae0f76f75514a997bb85b29eb2f7b66647bdb66914ba13cd7578"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/wrong_frame_sign_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 69,
+      "failed": 17
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/wrong_frame_sign.py",
+    "original_arguments": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/check_controls.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/wrong_frame_sign.py"
+    ],
+    "library_provenance": "Original receipts record Python/interpreter, not per-run library versions. ENVIRONMENT.json is a later observation; no historical library lock is invented."
+  },
+  "StateAdapted/original_omit_continuum_unrotation": {
+    "name": "original_omit_continuum_unrotation",
+    "role": "original_mutant",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/omit_continuum_unrotation_inner.receipt.json",
+      "bytes": 17779,
+      "sha256": "88741f2a249e3fa4a72facc50daf7b639376b1f005bf8dbc97f99f5e3ce5a8ee"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/omit_continuum_unrotation_inner.stdout.txt",
+      "bytes": 11340,
+      "sha256": "edc7cb16aeba5a2df3d09c1b77bb02f8776640716017b52b764c88010b79998e"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/runs/omit_continuum_unrotation_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 84,
+      "failed": 2
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/omit_continuum_unrotation.py",
+    "original_arguments": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/check_controls.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/omit_continuum_unrotation.py"
+    ],
+    "library_provenance": "Original receipts record Python/interpreter, not per-run library versions. ENVIRONMENT.json is a later observation; no historical library lock is invented."
+  },
+  "StateAdapted/corrected_wrong_frame_sign": {
+    "name": "corrected_wrong_frame_sign",
+    "role": "corrected_mutant",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/runs/wrong_frame_sign_inner.receipt.json",
+      "bytes": 5984,
+      "sha256": "0317defe19a21a5d2bf07be8c015534177e21824b020d944583502af30f36c1d"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/runs/wrong_frame_sign_inner.stdout.txt",
+      "bytes": 11298,
+      "sha256": "0a95acdbf46d23ad036b7312ebe2d3e498d60040afba7374af4fc7a4b654ca9a"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/runs/wrong_frame_sign_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 70,
+      "failed": 16
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/wrong_frame_sign.py",
+    "original_arguments": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/check_controls_corrected.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/wrong_frame_sign.py"
+    ],
+    "library_provenance": "Original receipts record Python/interpreter, not per-run library versions. ENVIRONMENT.json is a later observation; no historical library lock is invented."
+  },
+  "StateAdapted/corrected_omit_continuum_unrotation": {
+    "name": "corrected_omit_continuum_unrotation",
+    "role": "corrected_mutant",
+    "receipt": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/runs/omit_continuum_unrotation_inner.receipt.json",
+      "bytes": 6011,
+      "sha256": "58e5bf6f9c9d2c61527aa18ee78052d610c7fe095f9f2c5b3b34aa78ed142d6e"
+    },
+    "stdout": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/runs/omit_continuum_unrotation_inner.stdout.txt",
+      "bytes": 11339,
+      "sha256": "f49b159bf5a75186afd2d69e96fda70dbe974e7e54a827aaf14503703f7eef45"
+    },
+    "stderr": {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/runs/omit_continuum_unrotation_inner.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "expected_exit": 1,
+    "counts": {
+      "passed": 85,
+      "failed": 1
+    },
+    "original_timeout_seconds": 60,
+    "original_interpreter": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "original_python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "original_candidate_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/omit_continuum_unrotation.py",
+    "original_arguments": [
+      "/opt/homebrew/opt/python@3.13/bin/python3.13",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_control_repair/check_controls_corrected.py",
+      "--candidate",
+      "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/state_adapted_refinement/variants/omit_continuum_unrotation.py"
+    ],
+    "library_provenance": "Original receipts record Python/interpreter, not per-run library versions. ENVIRONMENT.json is a later observation; no historical library lock is invented."
+  }
+}

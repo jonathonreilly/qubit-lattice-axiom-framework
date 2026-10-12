@@ -1,0 +1,10 @@
+[on-shell TT ranks] set C (O x time): deg0=2 deg1=2 deg2=5 (gauge-invariant deg2 on-shell rank 1)
+[on-shell TT ranks] O_h x T: deg0=2 deg1=0 deg2=4 (gauge-invariant deg2 on-shell rank 1)
+
+[witness] on-shell P,T-even degree-2 span r=4; isotropic direction in span: residual 4.2e-15
+m=0.3: deg2 on-shell fit residual 5.7e-08; c_T component +7.6375e-03; anisotropic components [0.0015 0.0038 0.0057]; mass fit residual 6.7e-15, TT mass components [-0.1972  0.0469]
+m=0.6: deg2 on-shell fit residual 4.5e-08; c_T component +7.0161e-03; anisotropic components [0.0013 0.0034 0.0051]; mass fit residual 8.7e-15, TT mass components [-0.1799  0.0419]
+m=1.0: deg2 on-shell fit residual 4.8e-08; c_T component +5.9454e-03; anisotropic components [0.001  0.0028 0.0041]; mass fit residual 5.1e-15, TT mass components [-0.1493  0.0337]
+m=2.0: deg2 on-shell fit residual 5.8e-08; c_T component +3.4830e-03; anisotropic components [0.0004 0.0014 0.0021]; mass fit residual 5.4e-15, TT mass components [-0.0806  0.0174]
+[witness] anisotropic one-loop vectors over m in (0.3,0.6,1,2): singular values [1.098e-02 1.942e-04 1.670e-05]; span dim 3 of 3
+[witness] TT mass vectors over m: singular values [0.325 0.002]; span dim 2 of 2

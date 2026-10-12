@@ -1,0 +1,7 @@
+[witness] on-shell P,T-even degree-2 span r=4; isotropic direction in span: residual 4.2e-15
+m=0.3: deg2 on-shell fit residual 1.2e-08; c_T component +7.6376e-03; anisotropic components [0.0015 0.0038 0.0057]; mass fit residual 8.3e-15, TT mass components [-0.1972  0.0469]
+m=0.6: deg2 on-shell fit residual 1.4e-08; c_T component +7.0161e-03; anisotropic components [0.0013 0.0034 0.0051]; mass fit residual 7.9e-15, TT mass components [-0.1799  0.0419]
+m=1.0: deg2 on-shell fit residual 1.5e-08; c_T component +5.9454e-03; anisotropic components [0.001  0.0028 0.0041]; mass fit residual 7.4e-15, TT mass components [-0.1493  0.0337]
+m=2.0: deg2 on-shell fit residual 1.8e-08; c_T component +3.4830e-03; anisotropic components [0.0004 0.0014 0.0021]; mass fit residual 9.5e-15, TT mass components [-0.0806  0.0174]
+[witness] anisotropic one-loop vectors over m in (0.3,0.6,1,2): singular values [1.098e-02 1.942e-04 1.663e-05]; span dim 3 of 3
+[witness] TT mass vectors over m: singular values [0.325 0.002]; span dim 2 of 2

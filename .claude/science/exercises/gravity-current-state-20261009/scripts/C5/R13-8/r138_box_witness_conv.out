@@ -1,0 +1,9 @@
+[box witness] profile L (B=2.0, B2=3.1), Ngrid=56
+m=0.3: deg2 on-shell fit residual 2.0e-04; c_T component +4.8381e-02; anisotropic components [-0.0127  0.0109  0.0022]; mass fit residual 1.3e-14, TT mass components [0.3895 0.4006]
+[witness] anisotropic one-loop vectors over m in (0.3,0.6,1,2): singular values [2.878e-02 1.089e-02 1.902e-04]; span dim 3 of 3
+[box witness] profile L (B=2.0, B2=3.1), Ngrid=72
+m=0.3: deg2 on-shell fit residual 6.3e-05; c_T component +4.8343e-02; anisotropic components [-0.0128  0.0109  0.002 ]; mass fit residual 2.1e-14, TT mass components [0.3895 0.4006]
+[witness] anisotropic one-loop vectors over m in (0.3,0.6,1,2): singular values [2.865e-02 1.096e-02 1.905e-04]; span dim 3 of 3
+[box witness] profile L (B=2.0, B2=3.1), Ngrid=88
+m=0.3: deg2 on-shell fit residual 1.0e-04; c_T component +4.8301e-02; anisotropic components [-0.0128  0.0108  0.0019]; mass fit residual 3.1e-14, TT mass components [0.3895 0.4006]
+[witness] anisotropic one-loop vectors over m in (0.3,0.6,1,2): singular values [2.857e-02 1.096e-02 1.908e-04]; span dim 3 of 3

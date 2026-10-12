@@ -1,0 +1,14 @@
+c_e - c_g (F2, Z3xR naive/stagg.)                            natural  8.55e-03  bound  2.66e-19  decades   16.5   [F2 natural; 1.4 PeV photon survival (C4_F2_referee:29,62)]
+c_T - c_g, QED part only (2 tastes x 0.671 e^2/16pi^2)       natural  7.79e-04  bound  7.00e-16  decades   12.0   [GW170817 upper side 7e-16 (C5_O1_referee:78)]
+c_T - c_g, graviton part at a=l_P (R9-9 |dc_T| low end)      natural  1.30e-02  bound  7.00e-16  decades   13.3   [R9-9 sizes (C5_R9-9_report:26)]
+TT anisotropy, two-sided, GW170817 direction only            natural  1.30e-02  bound  7.00e-16  decades   13.3   [natural ~ R9-9 scale (reading)]
+TT anisotropy, one-sided Cherenkov (galactic CR)             natural  1.30e-02  bound  2.00e-15  decades   12.8   [Moore-Nelson 2001 (web abstract)]
+TT anisotropy, one-sided Cherenkov (extragalactic CR)        natural  1.30e-02  bound  2.00e-19  decades   16.8   [Moore-Nelson 2001 (web abstract)]
+TT mass^2 (P0 residual)                                      natural  1.00e+00  bound  5.70e-99  decades   98.2   [B_referee via PRICE_NOTE (P0)]
+b0 tilde (R6-5 range)                                        natural  6.20e+16  bound  1.00e-26  decades   42.8   [R6-5 natural 6e16 GeV; Sun-frame b_T ~1e-26 GeV]
+b0 tilde, boost route                                        natural  1.20e+18  bound  1.10e-30  decades   48.0   [R6-5 boost route (CMB frame assumed)]
+CC tadpole (Lorentz-invariant; 0.1 M_Pl^4 vs rho_L)          natural  2.22e+75  bound  2.52e-47  decades  121.9
+LV tadpole rho+p, |1+w| < 0.05 (RECALLED)                    natural  2.22e+75  bound  1.26e-48  decades  123.2
+LV tadpole rho+p, |1+w| < 0.10 (RECALLED)                    natural  2.22e+75  bound  2.52e-48  decades  122.9
+graviton mass 1.27e-23 eV -> m/M_Pl = 1.04e-51, (m/M_Pl)^2 = 1.08e-102
+graviton mass 2.42e-23 eV -> m/M_Pl = 1.98e-51, (m/M_Pl)^2 = 3.93e-102

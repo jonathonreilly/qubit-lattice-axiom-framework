@@ -4798,3 +4798,10 @@ Readings:
 - **PASS:** every listed result holds with a subluminal box, with the changed numbers stated, checked.
 - **FAIL:** a listed result fails for every subluminal box (refereed).
 - **INCONCLUSIVE:** otherwise.
+- **R13-8 (set C tuning count):** worker reading OPEN.
+  - Explicit count: 8 coefficients plus the CC for a P/T-symmetric law (e–γ speed, g–γ speed, 3 graviton anisotropies, μ_E, μ_T2, ρ + p), and 11 plus the CC generically.
+  - Scaling: N_s + 7, or 3N_s + 8.
+  - The gauge lemma: graviton mass, anisotropy and birefringence terms exist only through Ward failure.
+  - The earlier "≥ 6" undercounts.
+
+  Referee running.

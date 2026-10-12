@@ -1,0 +1,8 @@
+[Dirac witness] naive Dirac (8 tastes), Ngrid=20
+[witness] on-shell P,T-even degree-2 span r=4; isotropic direction in span: residual 2.9e-15
+m=0.3: deg2 on-shell fit residual 4.4e-07; c_T component -9.8402e-02; anisotropic components [ 0.0189  0.0018 -0.0114]; mass fit residual 2.3e-15, TT mass components [1.7206 0.9225]
+m=0.6: deg2 on-shell fit residual 5.2e-08; c_T component -7.1821e-02; anisotropic components [ 0.0142  0.0055 -0.0011]; mass fit residual 2.4e-15, TT mass components [1.6887 0.9687]
+m=1.0: deg2 on-shell fit residual 9.3e-09; c_T component -3.2518e-02; anisotropic components [0.0083 0.0094 0.011 ]; mass fit residual 2.6e-15, TT mass components [1.5801 0.9908]
+m=2.0: deg2 on-shell fit residual 4.9e-09; c_T component +2.4274e-02; anisotropic components [0.0035 0.0111 0.0222]; mass fit residual 2.7e-15, TT mass components [1.2048 0.857 ]
+[witness] anisotropic one-loop vectors over m in (0.3,0.6,1,2): singular values [3.019e-02 2.675e-02 1.101e-03]; span dim 3 of 3
+[witness] TT mass vectors over m: singular values [3.639 0.158]; span dim 2 of 2

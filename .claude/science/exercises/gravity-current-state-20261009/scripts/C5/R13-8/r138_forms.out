@@ -1,0 +1,30 @@
+[set C: proper O, time fixed] |G|=24
+  vector (a_mu,b_mu,e_mu,f_mu,(k_AF)_mu): 1
+  sym rank-2 (c_(mu nu), d_(mu nu)): 2
+  antisym rank-2 (c_[mu nu], d_[mu nu], H_mu nu): 0
+  g_{lambda mu nu} antisym in (lambda mu): 2
+[O_h, time fixed (parity added)] |G|=48
+  vector (a_mu,b_mu,e_mu,f_mu,(k_AF)_mu): 1
+  sym rank-2 (c_(mu nu), d_(mu nu)): 2
+  antisym rank-2 (c_[mu nu], d_[mu nu], H_mu nu): 0
+  g_{lambda mu nu} antisym in (lambda mu): 1
+  photon: O-invariant quadratic forms on (E,B): 3 (E.E, B.B, E.B)
+  photon: O_h-invariant quadratic forms on (E,B): 2
+
+
+[graviton forms: W(B4) on Z^4 (validation vs K1: 3 mass, 9 two-derivative, codim 11, TT rank 5)] |G|=384 
+  degree 0: invariant forms 3, gauge-invariant 0, codim 3, TT rank 2
+  degree 1: invariant forms 0, gauge-invariant 0, codim 0, TT rank 0
+  degree 2: invariant forms 9, gauge-invariant 1, codim 8, TT rank 4; TT split {'ww': 2, 'wk': 0, 'kk': 4, 'all': 4}; TT rank of gauge-invariant forms 1 split {'ww': 1, 'wk': 0, 'kk': 1, 'all': 1}
+
+[graviton forms: set C: proper O x time-translation (no P, no T)] |G|=24 
+  degree 0: invariant forms 6, gauge-invariant 0, codim 6, TT rank 2
+  degree 1: invariant forms 8, gauge-invariant 0, codim 8, TT rank 2
+  degree 2: invariant forms 30, gauge-invariant 2, codim 28, TT rank 7; TT split {'ww': 2, 'wk': 1, 'kk': 4, 'all': 7}; TT rank of gauge-invariant forms 2 split {'ww': 1, 'wk': 0, 'kk': 1, 'all': 2}
+
+[graviton forms: O_h x T on Z^3 x R (P and T imposed)] |G|=96 
+  degree 0: invariant forms 6, gauge-invariant 0, codim 6, TT rank 2
+  degree 1: invariant forms 0, gauge-invariant 0, codim 0, TT rank 0
+  degree 2: invariant forms 26, gauge-invariant 2, codim 24, TT rank 6; TT split {'ww': 2, 'wk': 0, 'kk': 4, 'all': 6}; TT rank of gauge-invariant forms 2 split {'ww': 1, 'wk': 0, 'kk': 1, 'all': 2}
+
+[tadpoles] linear invariant forms in h: set C 2, O_h x T 2, W(B4) 1

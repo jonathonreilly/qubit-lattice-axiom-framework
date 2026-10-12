@@ -4388,3 +4388,58 @@ Readings:
 - **PASS:** an explicit lattice gauge-plus-matter law with an exact supercharge and Ward identity, a doubler-free photon, and a one-loop c_e − c_γ vanishing (or dimension-5-suppressed) for every edge shape, checked.
 - **FAIL:** a refereed no-go extending R10-5's Chern obstruction to the twisted or orbifold class.
 - **INCONCLUSIVE:** otherwise.
+
+### C5 Round 11 referee results (recorded 19:31Z)
+
+**R11-1 (pairing necessity; dressed matter speed) — CONFIRMED WITH CORRECTIONS.**
+- **(a) DERIVED in the stated class.**
+  - **The class.** Finitely many species in 𝒞_A, with affine mass-squared families and nonnegative, longitudinally independent, nonvanishing weights.
+  - **The result.** Cancellation on an open mass interval forces the aggregate rescaled A-weighted boson and fermion measures to cancel separately for each observable. So both statistics are necessary, though pairwise species matching is not forced in general. The analyticity domain is M > M₀.
+  - **The subclass result.** In the one-curve, monotone, no-doubler, c_γ = 1 subclass, with the anomaly-onset and parity hypotheses made explicit:
+    - Titchmarsh plus ODE uniqueness forces u = v;
+    - the TT condition forces w = 2√(N_F/N_B)S², i.e. w = S² for the four-scalar / eight-component unit.
+- **(b) SPLIT-PRESENT in prescription dD-M only.**
+  - The on-shell scalar matter correction is c_m² − 1 = 4κm²J₂.
+  - The m = 1 and 0.3 splits are nonzero on both edges and both polarizations, with no fixed sign on the gapped edge.
+  - For light matter the split tends to −κΞ.
+  - This depends on the gauge, the Ward completion and the square-root prescription; it is not a class-wide physical prediction.
+
+**R11-2 (producing the graviton) — CONFIRMED WITH CORRECTIONS. EXCLUDED in the X1 class; (a) SUGGESTED.**
+- **The X1 class:** an exact, locally finite, pairwise-commuting finite-slot realization of the N-type constraints, whose averaged sector Hamiltonian has the regular lifted compact-character expansion and a nonsingular smooth canonical linearization.
+- **X1 holds.** In that class, local Haar averaging is support-preserving, and the 09-14 derivative-order theorem forces every small-field frequency to be O(k³). So no light-like TT branch exists in that qubit class.
+- **The dressing law (ω ∝ k^{3−n}) holds formally.** But the rotor-side A and B models lack a demonstrated normalizable exact sector.
+- **(a) SUGGESTED.**
+  - The brick-wall WW boost stays inside a momentum ball, so a box edge alone is no escape.
+  - WW applies to a composite only when all its premises hold.
+  - Lemma A_c does not manufacture those premises for a gauge graviton.
+- **X2 is not supported as stated.** Exact commuting sourced constraints do force matter-density commutators to annihilate physical states, and they exclude a one-particle state for the free-hopping density. But they do not prohibit constraint-preserving dressed transport, nor prove empty/full-only matter in general.
+
+**R11-3 (Λ on a fixed grid) — CONFIRMED WITH CORRECTIONS.**
+- **The tadpole identity.** Conditional on the supplied free bands, stress vertices, conserved source and linear N-type coupling, the full-zone U tadpole obeys the exact edge-anomaly identity and has w ≥ 0. For the minimal-metric coupling M, positivity holds only for nonnegative kinetic bands.
+- **V1: SOURCED,** with two independent linear tadpole conditions.
+- **V2:** keeps the energy constraint and releases the homogeneous pressure.
+- **V3:** absorbs energy and pressure into C(x) and f(t) at linear order.
+- **V2 and V3 on fixed sites cannot realize metric FRW expansion.** Site creation is an open additional law.
+- **Correction.** The reported edge tuning is only an infinitesimal small-mass result, not a property of the finite phase-transition step.
+
+**R11-4 (box bodies in a curved field, d = 3) — CONFIRMED WITH CORRECTIONS. PASS WITH SCOPE.**
+- **The stress.** Conditional on the refereed d = 3 two-body BT box law and the supplied minimal coupling to prescribed weak metric fields, the constructed symmetric, Hermitian, Gevrey-quasi-local stress has:
+  - exact global energy conservation;
+  - box-to-box momentum conservation, with disclosed off-box sources;
+  - total H, dipole K, and J_T = J.
+- **Uniqueness on the triplet bundle.** On the plateau bound-triplet bundle these data uniquely fix every projected pole–dipole moment to the Newton–Wigner stress at linear spin. This is a projection, not the full stress.
+- **Consequences:**
+  - von Laue holds exactly;
+  - the effective γ is binding-independent;
+  - for γ = 1, precession and the spin–curvature force carry the GR coefficient (2Γ+1)/(Γ+1) → 3/2;
+  - frame dragging is unit (Schiff).
+- **Excluded from the PASS:** global-flux numerics, self-consistent gravity, off-sector dynamics, nonlinear gravity, and any fixed quadrupole.
+
+**R11-5 (preferred-frame CQ) — NOT CONFIRMED as VIABLE, so OPEN.**
+- **Lemma C holds.** In the stationary pointwise-spectral class T_u, the conditions (H-T), a standard massless retarded pole, and continuous nonzero cone gain imply D′₀ + a²P_J/s² ≥ a|F|/|s|. So matter decoherence and stationary metric-record covariance cannot both be locally finite.
+- **The meter chain checks out.** The driven four-stage QND chain is confirmed to be quantum-limited, finite-time CP under causal feedback, self-commuting and zero-reverse-gain, with ω⁻⁸ backaction.
+- **What is missing:**
+  - an explicit causal finite-start dilation for the full 𝒦_ε;
+  - closure of the nonlinear, noise-fed PPN test;
+  - the cosmological and absorption coefficients, which are still assumed.
+- **A finite frame age is allowed as a named price.** But the submission is a promising conditional construction, not VIABLE.

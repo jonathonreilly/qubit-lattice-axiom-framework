@@ -1,0 +1,20 @@
+=== (E) explicit SS completion: max_q |G(t u, q; k)| / t^2 (bounded <=> smooth completion) ===
+[box] k in box : t = 1e-1, 3e-2, 1e-2, 3e-3 -> 1.065e-01 1.089e-01 1.117e-01 1.127e-01
+[box] k off box: t = 1e-1, 3e-2, 1e-2, 3e-3 -> 4.256e+02 4.811e+03 4.353e+04 4.845e+05
+[box] identity D(p,q) = G(p,q) - G(q,p) at 20 random points: max error 1.4e-17
+[NN ] k in box : t = 1e-1, 3e-2, 1e-2, 3e-3 -> 2.499e-01 2.464e-01 2.455e-01 2.451e-01
+[NN ] k off box: t = 1e-1, 3e-2, 1e-2, 3e-3 -> 1.742e-01 1.831e-01 1.856e-01 1.864e-01
+[NN ] identity D(p,q) = G(p,q) - G(q,p) at 20 random points: max error 1.4e-17
+
+=== (F) 09-30 mixed identity with a box graviton momentum symbol (1D TT block, L = 4096) ===
+box packet  k0=0.8 : || [D,X] v - mu1 v || = 4.02e-13
+box packet  k0=1.7 : || [D,X] v - mu1 v || = 6.95e-13
+edge packet k0=2.6 : || [D,X] v - mu1 v || = 4.84e+00
+zone mean of s'(k) = +6.91e-16  (so the zone-averaged defect of z(trD)' - 2mu1 is -2 mu1)
+D F + F D# with F = I/(4 alpha), D# = -D (s odd): = 0, so mu0 = 0; second equation holds with A = 0 on the box.
+
+=== (G) scalar proxy: pair coefficient c(q, p-q) of T[e^{ipx}] ===
+[box] q = [ 0.5 -0.3  0.2]: c/t^2 at t = 1e-1,1e-2,1e-3 -> 7.512e-02 8.150e-02 8.203e-02  (bounded: no pair term at first order in p)
+[box] q = [2.7 0.1 0.4]: c/t^2 at t = 1e-1,1e-2,1e-3 -> 4.320e-01 4.280e-01 4.257e-01  (bounded: no pair term at first order in p)
+[NN ] q = [ 0.5 -0.3  0.2]: c/t^2 at t = 1e-1,1e-2,1e-3 -> 7.241e-02 7.833e-02 7.882e-02  (bounded: no pair term at first order in p)
+[NN ] q = [2.7 0.1 0.4]: c/t^2 at t = 1e-1,1e-2,1e-3 -> 4.782e-03 4.905e-03 4.917e-03  (bounded: no pair term at first order in p)

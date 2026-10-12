@@ -1,0 +1,78 @@
+=== R12-1 script 1: matter-bilinear closure, box fermion vs NN lattice ===
+m = 0.3, box plateau |k_i| <= 2.0, transition to sin k by 3.1
+
+----- d = 2 -----
+[box    ] k in box (|k_i|<=1.6):
+    SS Killing jets (00,10,01,11): 0.0e+00 2.0e-12 2.0e-12 1.1e-07
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 4.5e-12 1.1e-09 3.6e-09
+    JJ Killing jets (TT, TR, RR): 0.0e+00 3.6e-12 0.0e+00
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 3.494e-01
+[box    ] k off box (|k_1| in [2.4,3.0]):
+    SS Killing jets (00,10,01,11): 0.0e+00 7.1e+00 7.1e+00 2.1e-06
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 7.8e+00 3.2e+00 3.0e+00
+    JJ Killing jets (TT, TR, RR): 0.0e+00 4.0e+00 2.2e-13
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 1.384e+01
+[naive  ] k in box (|k_i|<=1.6):
+    SS Killing jets (00,10,01,11): 0.0e+00 9.2e-01 9.2e-01 2.6e-08
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 9.7e-01 9.5e-02 4.3e-01
+    JJ Killing jets (TT, TR, RR): 0.0e+00 2.5e-01 0.0e+00
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 4.641e-01
+[naive  ] k off box (|k_1| in [2.4,3.0]):
+    SS Killing jets (00,10,01,11): 0.0e+00 9.3e-01 9.3e-01 1.9e-07
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 1.4e+00 5.5e-01 5.7e-01
+    JJ Killing jets (TT, TR, RR): 0.0e+00 9.0e-01 2.7e-14
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 3.741e-01
+[NN     ] k in box (|k_i|<=1.6):
+    SS Killing jets (00,10,01,11): 0.0e+00 8.3e-10 8.3e-10 8.4e-08
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 1.8e+00 8.3e-10 2.5e-01
+    JJ Killing jets (TT, TR, RR): 0.0e+00 8.8e-01 0.0e+00
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 4.734e-01
+[NN     ] k off box (|k_1| in [2.4,3.0]):
+    SS Killing jets (00,10,01,11): 0.0e+00 6.9e-10 6.9e-10 8.7e-09
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 4.1e+00 3.6e-10 3.5e-01
+    JJ Killing jets (TT, TR, RR): 0.0e+00 1.5e+00 0.0e+00
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 4.537e-01
+
+----- d = 3 -----
+[box    ] k in box (|k_i|<=1.6):
+    SS Killing jets (00,10,01,11): 0.0e+00 6.0e-12 6.0e-12 2.8e-08
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 8.0e-12 5.0e-10 2.8e-09
+    JJ Killing jets (TT, TR, RR): 0.0e+00 5.2e-12 0.0e+00
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 1.140e-01
+[box    ] k off box (|k_1| in [2.4,3.0]):
+    SS Killing jets (00,10,01,11): 0.0e+00 7.0e+00 7.0e+00 2.5e-06
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 7.7e+00 2.7e+00 2.2e+00
+    JJ Killing jets (TT, TR, RR): 0.0e+00 3.1e+00 1.1e-13
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 1.130e+01
+[naive  ] k in box (|k_i|<=1.6):
+    SS Killing jets (00,10,01,11): 0.0e+00 8.0e-01 8.0e-01 2.5e-08
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 1.1e+00 2.4e-01 4.6e-01
+    JJ Killing jets (TT, TR, RR): 0.0e+00 6.7e-01 0.0e+00
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 4.410e-01
+[naive  ] k off box (|k_1| in [2.4,3.0]):
+    SS Killing jets (00,10,01,11): 0.0e+00 9.1e-01 9.1e-01 5.8e-08
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 2.0e+00 5.6e-01 4.2e-01
+    JJ Killing jets (TT, TR, RR): 0.0e+00 1.4e+00 5.4e-14
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 3.042e-01
+[NN     ] k in box (|k_i|<=1.6):
+    SS Killing jets (00,10,01,11): 0.0e+00 8.3e-10 8.3e-10 8.6e-08
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 1.3e+00 9.8e-10 1.5e-01
+    JJ Killing jets (TT, TR, RR): 0.0e+00 4.4e-01 0.0e+00
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 4.418e-01
+[NN     ] k off box (|k_1| in [2.4,3.0]):
+    SS Killing jets (00,10,01,11): 0.0e+00 6.3e-10 6.3e-10 6.4e-09
+    JS Killing jets (T q0, T q1, R q0, R q1): 0.0e+00 4.4e+00 2.4e-10 3.2e-01
+    JJ Killing jets (TT, TR, RR): 0.0e+00 1.4e+00 2.7e-14
+    SS non-Killing jet (2,1) [must be absorbed by completions]: 4.188e-01
+
+=== (C) JS slice p=0: |D_JS(0,q;k)| / |s(q)| along q = t u (completion symbol needed) ===
+[box    ] in box: t = 1e-1, 1e-2, 1e-3 -> 3.925e-14 7.360e-13 4.269e-10
+[box    ] off box: t = 1e-1, 1e-2, 1e-3 -> 2.304e+01 2.537e+02 2.559e+03
+[naive  ] in box: t = 1e-1, 1e-2, 1e-3 -> 3.176e+00 2.998e+01 2.980e+02
+[naive  ] off box: t = 1e-1, 1e-2, 1e-3 -> 6.063e+00 6.189e+01 6.203e+02
+[NN     ] in box: t = 1e-1, 1e-2, 1e-3 -> 3.579e+00 3.352e+01 3.330e+02
+[NN     ] off box: t = 1e-1, 1e-2, 1e-3 -> 1.675e+01 1.663e+02 1.662e+03
+
+=== (D) the s_ij(p) = p_i p_j - |p|^2 delta_ij components span all quadratic monomials ===
+d = 2: rank = 3 of 3 quadratic monomials
+d = 3: rank = 6 of 6 quadratic monomials

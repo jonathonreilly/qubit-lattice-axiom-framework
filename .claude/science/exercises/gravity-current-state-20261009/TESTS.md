@@ -4443,3 +4443,34 @@ Readings:
   - closure of the nonlinear, noise-fed PPN test;
   - the cosmological and absorption coefficients, which are still assumed.
 - **A finite frame age is allowed as a named price.** But the submission is a promising conditional construction, not VIABLE.
+
+### C5 Round 12, items 4–5 (pre-registered 19:32Z; launched now)
+
+**R12-4. Set A: one no-go for classical metric records across the CQ classes?**
+- Three refereed results all fail the same way, at the light cone:
+  - R8-3, conditional covariant no-go (Lemma 3/Theorem 3 trilemma);
+  - R10-3, EXCLUDED in T_E (record non-locally-finite at the cone);
+  - R11-5, Lemma C in T_u (D′₀ + a²P_J/s² ≥ a|F|/|s|).
+- Is there one theorem covering every stationary Gaussian CQ model (Lorentz-invariant or frame-tied, Markovian or not, any meter dilation with positive spectral measures) with Newton plus finite radiation? Its content would be that "matter decoherence finite" and "classical metric record finite near the cone" are incompatible.
+- What exactly is left: finite-time (start-time) processes, non-Gaussian or jump models, mediator models, non-stationary frames?
+- Name the minimal price for set A's "records are the metric".
+
+Readings:
+- **DERIVED:** a unified no-go in a stated class containing T_E, T_u and R8-3's subclass (refereed).
+- **REFUTED:** an explicit stationary model in that class with both finite, checked.
+- **SUGGESTED:** otherwise.
+
+**R12-5. Graviton production outside X1: non-regular or strong-coupling phases of qubit N-type constraint models.**
+- R11-2 (refereed): in the regular lifted finite-slot class X1, every small-field frequency is O(k³), so no light-like TT branch. The open escapes are:
+  - non-regular or strong-coupling phases (Gu–Wen N-type);
+  - emergent (energetically imposed) constraints;
+  - normalizable rotor sectors.
+- Test:
+  - (a) Which X1 hypothesis does a strong-coupling phase violate (regular lifted expansion, smooth linearization)?
+  - (b) Small-scale numerics on the smallest qubit N-type or rank-2 toric-code-like model with an energetic constraint term. Look for a linear TT mode, and compare its dispersion exponent with k³.
+  - (c) Literature: Xu, Gu–Wen, Pretko, "emergent graviton" lattice models. Has any qubit model shown a linear gapless spin-2 mode numerically?
+
+Readings:
+- **PRODUCED:** a qubit model with a numerically demonstrated linear gapless TT mode (two polarizations, no partners), checked.
+- **EXCLUDED:** a refereed no-go extending X1 to the stated strong-coupling or emergent class.
+- **OPEN:** otherwise.

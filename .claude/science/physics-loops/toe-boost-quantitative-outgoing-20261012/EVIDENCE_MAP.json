@@ -1,0 +1,2687 @@
+{
+  "scope": "Complete frozen authored, repository and review evidence; no third-party paper is redistributed.",
+  "files": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/BOOST_HSTAR_QUANTITATIVE_CORRECTOR_PROBE.md",
+      "preserved": "evidence/BOOST_HSTAR_QUANTITATIVE_CORRECTOR_PROBE.md.gz",
+      "bytes": 34445,
+      "sha256": "4b1d5a8395d1d5c79d798ef17950f7c1ce4c1e0781e2f9ec610223bc1eb69820"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/BOOST_HSTAR_QUANTITATIVE_CORRECTOR_REVIEW.md",
+      "preserved": "evidence/BOOST_HSTAR_QUANTITATIVE_CORRECTOR_REVIEW.md.gz",
+      "bytes": 14540,
+      "sha256": "6ccba5be389898bd97ce12e53bf767dd002a3e6f282afb3cb4e010f49d86ca2d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md",
+      "preserved": "evidence/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md.gz",
+      "bytes": 22692,
+      "sha256": "1c314fc05a26ca27e0828a70ca8132a2bad269b60c127ea37a53e11e95e087c9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md",
+      "preserved": "evidence/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md.gz",
+      "bytes": 15520,
+      "sha256": "64cf08ea2c12f086d0efcc862d17ce0e394f53dfbcbfa5d48db73a10bb9652ca"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/KQ_canonical_output_comparison.json",
+      "preserved": "evidence/KQ_canonical_output_comparison.json.gz",
+      "bytes": 2085,
+      "sha256": "bc0766c8878da219788b69bb990fc810ba731ac1989abd727993ca36f3123eff"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/KQ_root_original_mutation_provenance.json",
+      "preserved": "evidence/KQ_root_original_mutation_provenance.json.gz",
+      "bytes": 2402,
+      "sha256": "a41828c5546b5a25a53bb8c6b0f56cbd3de5c77643c97830e95ea5109d5609ca"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/K_root_review_coverage.json",
+      "preserved": "evidence/K_root_review_coverage.json.gz",
+      "bytes": 477,
+      "sha256": "bb3f9e905ceb1b8f4b00b6d6f37b3e15ce0f5ba2c5bf88881b688febd5043449"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/Q_author_root_identity_check.json",
+      "preserved": "evidence/Q_author_root_identity_check.json.gz",
+      "bytes": 451,
+      "sha256": "d33093898f2248e7b2fbb128ee8b59f2e09dfd2af314e09c55c6854385c66369"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/Q_root_review_coverage.json",
+      "preserved": "evidence/Q_root_review_coverage.json.gz",
+      "bytes": 644,
+      "sha256": "7b1c16c272b9c299318beb1e4bd2527cd995847cf6bd4a0b7ff43a20cbd43e55"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/CHECKPOINT.md",
+      "preserved": "evidence/boost_forcing_review/CHECKPOINT.md.gz",
+      "bytes": 3173,
+      "sha256": "3ec9333bf518362f001ce8aed391500104adf565b555fa78ed7b1e64658fd32f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/PRE_AUTHOR_FREEZE.json",
+      "preserved": "evidence/boost_forcing_review/PRE_AUTHOR_FREEZE.json.gz",
+      "bytes": 4064,
+      "sha256": "8cb07630fe71b46b99678f91b73316eb62cd0c20083cb5080ac753c8438d762a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/PROOF_RECONSTRUCTION_PRE_AUTHOR.md",
+      "preserved": "evidence/boost_forcing_review/PROOF_RECONSTRUCTION_PRE_AUTHOR.md.gz",
+      "bytes": 18732,
+      "sha256": "d8069f6681f60eae1629e026fa877fac11eaa92d69e0a2df6510b40270a1fad2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/author_baseline_replay.execution.json",
+      "preserved": "evidence/boost_forcing_review/author_baseline_replay.execution.json.gz",
+      "bytes": 665,
+      "sha256": "d6403742a3332d4fc8ef6ec76268acc770b3ca4720ed2abced7872004a867330"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/author_baseline_replay.stderr.log",
+      "preserved": "evidence/boost_forcing_review/author_baseline_replay.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/author_baseline_replay.stdout.log",
+      "preserved": "evidence/boost_forcing_review/author_baseline_replay.stdout.log.gz",
+      "bytes": 2158,
+      "sha256": "bce38d9595a40c658a69d42976cab850437b04f5bb28c5920a1ec631d7615725"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/author_packet_identity_check.json",
+      "preserved": "evidence/boost_forcing_review/author_packet_identity_check.json.gz",
+      "bytes": 24343,
+      "sha256": "f0141f6d8207e69cabc5d94630523929904ff08bf7f1f0a835c856dc06fbf97b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/author_packet_verification.log",
+      "preserved": "evidence/boost_forcing_review/author_packet_verification.log.gz",
+      "bytes": 219,
+      "sha256": "779ba7434df30d4883ebb7005a62d67486da8199ed52e9a131563fe572f94105"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/final_identity_check.json",
+      "preserved": "evidence/boost_forcing_review/final_identity_check.json.gz",
+      "bytes": 297,
+      "sha256": "afb12b9c1fe4fe91c8b361b98c54f51361c4dece8b07cb6e846898011e4abc7a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/independent_controls.log",
+      "preserved": "evidence/boost_forcing_review/independent_controls.log.gz",
+      "bytes": 2146,
+      "sha256": "09dd4cf00e86fb7f62f3085ce4f5c602fcfe2125145bebc62572c119b99f3cb2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/independent_controls.py",
+      "preserved": "evidence/boost_forcing_review/independent_controls.py.gz",
+      "bytes": 5234,
+      "sha256": "0ab5e044556b5548bd6723702292abad6ef770b914a509558f2a23531b39dff3"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/receipt.json",
+      "preserved": "evidence/boost_forcing_review/receipt.json.gz",
+      "bytes": 11737,
+      "sha256": "6ecec5f7e9831fde22922d2ff6f5b7db4a31059ca82cf4b550a058a3a1aff7ce"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/receipt_freeze.log",
+      "preserved": "evidence/boost_forcing_review/receipt_freeze.log.gz",
+      "bytes": 721,
+      "sha256": "81da038de06b6bb369a94277e1c1ed51877fd1707ec38586a6e67a1d8294b6b5"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/verify_author_packet.py",
+      "preserved": "evidence/boost_forcing_review/verify_author_packet.py.gz",
+      "bytes": 5793,
+      "sha256": "e3a80873599134cdee60f3238ae4e9dbe31cce55612c0fda6342a0dbc612354d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_forcing_review/write_review_receipt.py",
+      "preserved": "evidence/boost_forcing_review/write_review_receipt.py.gz",
+      "bytes": 7484,
+      "sha256": "a815239f1fa41f487a523c20da710f24015f03e5907943ee63a8af42f4780e09"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/AUTHOR_CHECK.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/AUTHOR_CHECK.md.gz",
+      "bytes": 13047,
+      "sha256": "00ff668c81de859e3a294277df39f0fb8a60ddfc07189fa77be17560f2b538b4"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/CHECKPOINT.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/CHECKPOINT.md.gz",
+      "bytes": 3610,
+      "sha256": "724b834a162508afeab6099764712397a7b75598f79543ec938db3d48c8fbce7"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/EXPONENTIAL_BOUND_PRE_REFINEMENT.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/EXPONENTIAL_BOUND_PRE_REFINEMENT.md.gz",
+      "bytes": 25096,
+      "sha256": "50ceee39e4a7364bb2b616ce09b741101492a9639e91ad0a2776c66c8b7a4ce9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/EXPONENTIAL_BOUND_SNAPSHOT.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/EXPONENTIAL_BOUND_SNAPSHOT.json.gz",
+      "bytes": 393,
+      "sha256": "8adcdd3261e1997f8f7e58455b1c3c8864fb09f57536a0dd1ea26c0736cfa351"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/baseline.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/baseline.execution.json.gz",
+      "bytes": 458,
+      "sha256": "4cb8832dc8e2844ff27b807d93834ac1aba6f12dd29fb338add1ecec722f5b39"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/baseline.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/baseline.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/baseline.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/baseline.stdout.log.gz",
+      "bytes": 1385,
+      "sha256": "2965423ebb4241c982abf5d462572ed0861307a98a95d73e594d3ac76e0cc1e6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/corrector_controls.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/corrector_controls.py.gz",
+      "bytes": 9966,
+      "sha256": "f2b9347fa419a4e6a442a03498a8aeb6e0562913198e06b149d8a50b3a51ec13"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/freeze_receipt.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/freeze_receipt.py.gz",
+      "bytes": 3835,
+      "sha256": "ee0192bd9fa74671b1864f2913066c2d65f79125657b2e7be1994505a9315cad"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/instruction_manifest.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/instruction_manifest.json.gz",
+      "bytes": 3213,
+      "sha256": "2b68815d4ba54ee11699bb5ed8dd19ae96902b3aa867aed44817bab84683c2c4"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mean_baseline.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mean_baseline.execution.json.gz",
+      "bytes": 432,
+      "sha256": "4c0871fdc19becd53cbf48440c302106923f06854bff084d5ef649f850f31110"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mean_baseline.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mean_baseline.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mean_baseline.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mean_baseline.stdout.log.gz",
+      "bytes": 489,
+      "sha256": "be2bb44ffd1e452b53cc0a359ebcafd366d60e9158e4080e4c55d66dd622b044"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mean_controls.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mean_controls.py.gz",
+      "bytes": 2919,
+      "sha256": "101c90f89765a5d0c81a5e790e33f312e9abb3dccfef5139b6261df6dfee4f7c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_final_endpoint.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_final_endpoint.execution.json.gz",
+      "bytes": 968,
+      "sha256": "cf3f51b7b0555cd2c19c9d451e33a8bb10d0d433f099fc86ea1cc9127fc1ca9e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_final_endpoint.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_final_endpoint.py.gz",
+      "bytes": 9962,
+      "sha256": "e3e2b14fa290844008f72cc685590b20c09013c9250daa7eca18a1a8d0941c47"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_final_endpoint.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_final_endpoint.stderr.log.gz",
+      "bytes": 637,
+      "sha256": "fc559c4d0df2c1b8190e529bf298e5e35379c4902a15f71848241512ff588a92"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_final_endpoint.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_final_endpoint.stdout.log.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.execution.json.gz",
+      "bytes": 1057,
+      "sha256": "b9a763dcbc3bcdb483d4fa0980f5f765b5db3495d401c3f609ca3bd3282cb9d7"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.py.gz",
+      "bytes": 9978,
+      "sha256": "2161ac98f9b0891bd3edfbbdabfd277918d3ffad5874a22af0793934752db0b3"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.stderr.log.gz",
+      "bytes": 668,
+      "sha256": "e91aa60247ceedc0eeb5b515cca670e317ab2f647fc457dbd0d5113a2c8a1873"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.stdout.log.gz",
+      "bytes": 860,
+      "sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_initial_endpoint.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_initial_endpoint.execution.json.gz",
+      "bytes": 971,
+      "sha256": "9765bb98a290a0cf837eb43c4e5d403f717dbd9b4f187ab88193802f4fe184d0"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_initial_endpoint.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_initial_endpoint.py.gz",
+      "bytes": 9953,
+      "sha256": "7a5177d975b7c05d59117b20bd951ec8ef7ade031d8600cf69ab5ed3db122249"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_initial_endpoint.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_initial_endpoint.stderr.log.gz",
+      "bytes": 641,
+      "sha256": "114ca1cf22eac889fb27de970451c43d1ca274276439ecf9241fad3fa7032c81"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_initial_endpoint.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_initial_endpoint.stdout.log.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_mean_residual_term.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_mean_residual_term.execution.json.gz",
+      "bytes": 983,
+      "sha256": "82379f5101f3d03ab5b20da7f482b04968b4272817b8db01292f7e6b59428c0a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_mean_residual_term.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_mean_residual_term.py.gz",
+      "bytes": 9954,
+      "sha256": "ab31c7ae46e857c0cfda6b92130dd94bc39eca420c27ed9bac6b0d3c8d4507ec"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_mean_residual_term.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_mean_residual_term.stderr.log.gz",
+      "bytes": 973,
+      "sha256": "61f0dc7c870299bbdc4b7802403f0118f35128f24d6f2fa0241042e25b3832f8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_mean_residual_term.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_mean_residual_term.stdout.log.gz",
+      "bytes": 250,
+      "sha256": "f70bd92ab5efbe00f5ff829e35b178cda355a7992830e34878421e4b7b3ea844"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_mean_subtraction.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_mean_subtraction.execution.json.gz",
+      "bytes": 955,
+      "sha256": "5d43ece11b5fb1fe8d70aad5b8f7b323ade0f444d604a3c8f3ed697625dbd14a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_mean_subtraction.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_mean_subtraction.py.gz",
+      "bytes": 9964,
+      "sha256": "65ecd06b071a15860087bc111b697b72c8c36c7212d5e09031d2227bb9762ee1"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_mean_subtraction.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_mean_subtraction.stderr.log.gz",
+      "bytes": 909,
+      "sha256": "96554268692a28bcad1d9f94dbcea1c4e58d310c3a57d8ec6e3545a871295aac"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_mean_subtraction.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_mean_subtraction.stdout.log.gz",
+      "bytes": 213,
+      "sha256": "e82f9bbc12bdc648fba750993dbaeffced3be0968760fe3497576e4e37d6f439"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.execution.json.gz",
+      "bytes": 1068,
+      "sha256": "21bef92b5e25e224f23d4041173cc4a923211e834f7016d8a13302159eeb3697"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.py.gz",
+      "bytes": 9948,
+      "sha256": "173beb4171b099a4b8b85bcdcc25712f08340a5d06e2926d6d0daea6d501a807"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.stderr.log.gz",
+      "bytes": 659,
+      "sha256": "713d2c9e1a3cbbba4cdd18257622806e2caad7dc44a3b66d9a7f52b9ac2c9d65"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.stdout.log.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.execution.json.gz",
+      "bytes": 1042,
+      "sha256": "dc3bf818368595763b0717e0916657102e7211d98dc7f2f51505432270402c85"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.py.gz",
+      "bytes": 9955,
+      "sha256": "eb1e556ed607269837820540ffa350414a2f27c54ce39bfae648cbf0aedc263f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.stderr.log.gz",
+      "bytes": 652,
+      "sha256": "a24b22732c42e7c147d4da766543f13403d9c205acf3fc1c26b3828823ad40f5"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.stdout.log.gz",
+      "bytes": 860,
+      "sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.execution.json.gz",
+      "bytes": 1076,
+      "sha256": "fab111a863f1a457a355ac0635766423248fbf356479cb1bf9fbfca7adaf9698"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.py.gz",
+      "bytes": 9956,
+      "sha256": "74a02fc82618a1b50e2894acc79fe4996c1a436bf7a8ea5fc8bc92c8c347d5ec"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.stderr.log.gz",
+      "bytes": 659,
+      "sha256": "6fdaa9f56adbfa8c93ce14708045518a4d3c9988aafa4f35a3e3c58d20978380"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.stdout.log.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.execution.json.gz",
+      "bytes": 1046,
+      "sha256": "82c9e2e0cd246563ebd245bd31feb7cbc575bbd72e18792899312f56e4ccb884"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.py.gz",
+      "bytes": 5178,
+      "sha256": "d2d4cfe9346ea2b70076b1c74ad103567990d6062d79adef137106d12e92b323"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.stderr.log.gz",
+      "bytes": 679,
+      "sha256": "1a0ebabc0b266c359d0c34bb694f6344995f81b97fdcf2da15744d5b24005ead"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.stdout.log.gz",
+      "bytes": 424,
+      "sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.execution.json.gz",
+      "bytes": 1061,
+      "sha256": "ee6b3227cda27f0dc9a350490cd711f0efad793453c2a0a5cdf8b956af9fd77d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.py.gz",
+      "bytes": 5179,
+      "sha256": "f6a262205d5d11f0eb119beee84b5843513e3a2b323c2b788e7c899c73c831ed"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.stderr.log.gz",
+      "bytes": 685,
+      "sha256": "075b9db1075e6e378513463a8a36ad370d54f42842e6416da2efefccd53e7755"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.stdout.log.gz",
+      "bytes": 424,
+      "sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.execution.json.gz",
+      "bytes": 1095,
+      "sha256": "1944d2aace8e1687dbfef1156fd56af3827b3bf9304ac32308f8d609b592f0d6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.py.gz",
+      "bytes": 5161,
+      "sha256": "903678778ed9dc03eb37af181aece9caef7b287d5f9da4c8f597c8d83f94d35e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.stderr.log.gz",
+      "bytes": 689,
+      "sha256": "d3079aba025af612568d09c766b168de65f4502a69f6f7c0614735b8b8207a62"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.stdout.log.gz",
+      "bytes": 424,
+      "sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutation_manifest.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutation_manifest.json.gz",
+      "bytes": 8499,
+      "sha256": "6db3bac1141c6475225dd0286c46582c6726b05ab42340c8603e80f0abd3f94e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mutation_provenance_check.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/mutation_provenance_check.json.gz",
+      "bytes": 2674,
+      "sha256": "25a135a3a10481ae3c2dac9758cca57261c9974f2def5cbd25f45c8bb29b18ff"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/polynomial_baseline.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/polynomial_baseline.execution.json.gz",
+      "bytes": 437,
+      "sha256": "813f1c161d5f5c80031ffad8a95bf7eb37a27bdde297fcc901d24c653512028e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/polynomial_baseline.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/polynomial_baseline.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/polynomial_baseline.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/polynomial_baseline.stdout.log.gz",
+      "bytes": 941,
+      "sha256": "2ef441c844952688a1e830c7e3c2dcc8e2f0f0000f1f6aa7e1055e75efac4a30"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/polynomial_controls.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/polynomial_controls.py.gz",
+      "bytes": 5170,
+      "sha256": "a56d25d86244d5fb3a2865a0790abe554c54aca225393bdaa329eaf4cab086cb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/polynomial_mutation_manifest.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/polynomial_mutation_manifest.json.gz",
+      "bytes": 3346,
+      "sha256": "1ad9c147f7c86826353e1657e7634004a12b8adf7673b370c98550e08e3dd7f8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/receipt.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/receipt.json.gz",
+      "bytes": 18567,
+      "sha256": "c447314e4a130e2fc2e047da6ddbe2abdf20209c5aa4718c2bab9b75783b5356"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/receipt_freeze.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/receipt_freeze.execution.json.gz",
+      "bytes": 696,
+      "sha256": "f6efe361dae1fa04261397db7ae7805eac6f42b214719ac03e5399197b738352"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/receipt_freeze.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/receipt_freeze.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/receipt_freeze.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/receipt_freeze.stdout.log.gz",
+      "bytes": 252,
+      "sha256": "663c4dbc677796517f29d6f2ed21a79374bdb0cc184e09375e8bc2fe0e674adb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/receipt_verification.execution.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/receipt_verification.execution.json.gz",
+      "bytes": 695,
+      "sha256": "30b9aecdf8784d5c740f41f19d6f9edbb2d31ae6556d3fb36efda86b782bbf7e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/receipt_verification.stderr.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/receipt_verification.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/receipt_verification.stdout.log",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/receipt_verification.stdout.log.gz",
+      "bytes": 509,
+      "sha256": "63a7251d7ff045261c3b4f54f20344d01e00df6750aa284adb03f79813c519c9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/run_mutations.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/run_mutations.py.gz",
+      "bytes": 3411,
+      "sha256": "ec6672581fac69e74a9e8b05f7e9053ad0e848364b7aeab22c3584498ecffbf5"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/run_polynomial_mutations.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/run_polynomial_mutations.py.gz",
+      "bytes": 2355,
+      "sha256": "6a75ea63fd7560573722754f8864252e9c9a86bfc85241222ae277f26e0189b7"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/source_manifest.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/source_manifest.json.gz",
+      "bytes": 4500,
+      "sha256": "30acce0634744fbab7800ae1c7b449dbc4e7a3223856c57f741c978f9cc1211d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/sources/BOOST_CURRENT_EXPECTATION_PROBE.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/sources/BOOST_CURRENT_EXPECTATION_PROBE.md.gz",
+      "bytes": 27952,
+      "sha256": "a7161d796001df4af243263acbd03e731d75d0eab2d93795f4b5960eff5acb68"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md.gz",
+      "bytes": 12287,
+      "sha256": "0e17f9647141c200b1efcbe78f60ef6beedc1e249ce1b85544293dddbebe8690"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md.gz",
+      "bytes": 33116,
+      "sha256": "76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md.gz",
+      "bytes": 22692,
+      "sha256": "1c314fc05a26ca27e0828a70ca8132a2bad269b60c127ea37a53e11e95e087c9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md.gz",
+      "bytes": 15520,
+      "sha256": "64cf08ea2c12f086d0efcc862d17ce0e394f53dfbcbfa5d48db73a10bb9652ca"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "bytes": 30639,
+      "sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/sources/ROOT_HSTAR_APPROXIMATE_CORRECTOR_LEAD.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/sources/ROOT_HSTAR_APPROXIMATE_CORRECTOR_LEAD.md.gz",
+      "bytes": 5363,
+      "sha256": "3ba9b713942b18e0562ca3b60c840676194b78132e797e088037953e6f808ec1"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/sources/ROOT_POLYNOMIAL_CORRECTOR_REFINEMENT.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/sources/ROOT_POLYNOMIAL_CORRECTOR_REFINEMENT.md.gz",
+      "bytes": 4063,
+      "sha256": "4466bde85ef219e0b20427d996aa5e3c8c4f75f52fc84aa8404ae8f05e6db78f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md.gz",
+      "bytes": 20645,
+      "sha256": "04adc0b81d3865f4819b8441e25279ef084bda755e9c0a3206be7d314ea04f9f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/sources/boost_forcing_review/receipt.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/sources/boost_forcing_review/receipt.json.gz",
+      "bytes": 11737,
+      "sha256": "6ecec5f7e9831fde22922d2ff6f5b7db4a31059ca82cf4b550a058a3a1aff7ce"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/sources/boost_kernel_effective_dynamics/receipt.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/sources/boost_kernel_effective_dynamics/receipt.json.gz",
+      "bytes": 13750,
+      "sha256": "8767499b08e7721cf1133930fcd9e0a5c703536b46aba5eacd98b81b688d7352"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/upstream_K_review_identity.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/upstream_K_review_identity.json.gz",
+      "bytes": 2866,
+      "sha256": "20cf6ac74d9d9bda0f7234adc6ea4d7ff7fa139edfb3bd2167a56e8cf0de1c5c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/verify_receipt.py",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/verify_receipt.py.gz",
+      "bytes": 5447,
+      "sha256": "507a6c364bf00eaffa6846369f71d8aaa6e2d1a02ef1dad0d070c4ddc883b84b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/workspace_provenance.json",
+      "preserved": "evidence/boost_hstar_quantitative_corrector/workspace_provenance.json.gz",
+      "bytes": 276,
+      "sha256": "12d07d38ce18179753275d291148648a44f046c7824c5dc13757be62ca08f266"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/AUTHOR_CHECK.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/AUTHOR_CHECK.md.gz",
+      "bytes": 7681,
+      "sha256": "f3d86095aedaf43e0bf30c5d365276f4d83b233c437cfd2e3b91d22f8ed17cb8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/CHECKPOINT.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/CHECKPOINT.md.gz",
+      "bytes": 3848,
+      "sha256": "c18cc17039fc51aa0700771388e639a26e1086218f04fa273321d9b761137f3c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/PRIOR_ART.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/PRIOR_ART.md.gz",
+      "bytes": 5749,
+      "sha256": "d4e8196bda70a71833aa20ad895777d91e3ea3e87c6a3de1ffcdd162acbf3af4"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/baseline.execution.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/baseline.execution.json.gz",
+      "bytes": 438,
+      "sha256": "10923948480af537bd18ea952f2e0cc5f7f85cacceb60feb1b99de78e78652bf"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/baseline.stderr.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/baseline.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/baseline.stdout.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/baseline.stdout.log.gz",
+      "bytes": 850,
+      "sha256": "edb15c838f6665fe094a612f1585d840c32727525ffdd7138b05110d8be8ed5c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/baseline_attempt2.execution.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/baseline_attempt2.execution.json.gz",
+      "bytes": 429,
+      "sha256": "6373aab0fcc71a9b26ae2430f8c740c6fcfa37a5ed39907ccee871b093eaa165"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/baseline_attempt2.stderr.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/baseline_attempt2.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/baseline_attempt2.stdout.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/baseline_attempt2.stdout.log.gz",
+      "bytes": 2158,
+      "sha256": "0183f160af31ef3ed65e3c48f9b5041e867a5aeffc1efb7a1b1d1cea41b5d9ef"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/forced_controls.py",
+      "preserved": "evidence/boost_kernel_effective_dynamics/forced_controls.py.gz",
+      "bytes": 10532,
+      "sha256": "2b73edfdee5c87bfd4aba5e2e1459db49ef4857def47ad12c02c95d48dc420dd"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/forced_controls_attempt1.py",
+      "preserved": "evidence/boost_kernel_effective_dynamics/forced_controls_attempt1.py.gz",
+      "bytes": 10337,
+      "sha256": "affcfd14232617f5b859a8f7e7cae9a81699ca12badf680937dd998c636162be"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/freeze_receipt.py",
+      "preserved": "evidence/boost_kernel_effective_dynamics/freeze_receipt.py.gz",
+      "bytes": 3052,
+      "sha256": "1a1703938d5f044df0e8e671403dcf8861a567794e1cebb3f84f412b143e54dd"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/initial_source_manifest.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/initial_source_manifest.json.gz",
+      "bytes": 1861,
+      "sha256": "eacde2933da58cb2c8e50360f787268c213c9cc1e499b9d306eee821b51feb79"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/instruction_manifest.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/instruction_manifest.json.gz",
+      "bytes": 3213,
+      "sha256": "2b68815d4ba54ee11699bb5ed8dd19ae96902b3aa867aed44817bab84683c2c4"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.execution.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.execution.json.gz",
+      "bytes": 1018,
+      "sha256": "cdcbb2f03681a17ded0b8d4e98dc5eaa13aeb14389d9f9f003f0ddea98b41193"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.py",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.py.gz",
+      "bytes": 10532,
+      "sha256": "4d300ace3034fb7bb35db0a160ed80b80204c73abc6a555294ced3899faee655"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.stderr.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.stderr.log.gz",
+      "bytes": 640,
+      "sha256": "27199bdd17fd89a9246581477eb2541d361b897fb377870eeb4e75a0a2d4bf02"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.stdout.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.stdout.log.gz",
+      "bytes": 605,
+      "sha256": "a866c9588a51ceccce3fed2c7aa2b113223d13062a0af8b480fc5a3474505e83"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_Schur_sign.execution.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_Schur_sign.execution.json.gz",
+      "bytes": 921,
+      "sha256": "f0fb6ec02d7f9f8403d9435b3b748c241776505ccc23bc470a2bd07124b4318b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_Schur_sign.py",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_Schur_sign.py.gz",
+      "bytes": 10532,
+      "sha256": "498233d862428d86159bf2fa3373633a4a3a2fd1b8fe6b81e1d668cef9305091"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_Schur_sign.stderr.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_Schur_sign.stderr.log.gz",
+      "bytes": 615,
+      "sha256": "03087c69f095c3d929795510af678ef28df279e873cc04a9e80ae17518c105ee"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_Schur_sign.stdout.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_Schur_sign.stdout.log.gz",
+      "bytes": 457,
+      "sha256": "a81a4d1e3e73b7c269eb7a1d41483fb6f92744cb6bf89bc435c81a2487c2cb12"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.execution.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.execution.json.gz",
+      "bytes": 1042,
+      "sha256": "e5d94e133833595b500f36e5fd505ba10d9af7567bb59575f86c6785c7155903"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.py",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.py.gz",
+      "bytes": 10532,
+      "sha256": "59257b869bc340020ecf5913e4c7772435cd64a621ab3ff9775353fa1a5b0e07"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.stderr.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.stderr.log.gz",
+      "bytes": 644,
+      "sha256": "e90d9c3fe17cf4adf96b5af7b520a762a342faa74a7661322b482b7234f29e7f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.stdout.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.stdout.log.gz",
+      "bytes": 605,
+      "sha256": "a866c9588a51ceccce3fed2c7aa2b113223d13062a0af8b480fc5a3474505e83"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_source_phase_derivative.execution.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_source_phase_derivative.execution.json.gz",
+      "bytes": 1002,
+      "sha256": "732c7b7430366978ef0ceb1cddb9192f2700ae12656fa2902106b8540ac77901"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_source_phase_derivative.py",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_source_phase_derivative.py.gz",
+      "bytes": 10510,
+      "sha256": "60895b8686fdf56d4342be389378732d695e1ab6271f6369d3cb090fc8889788"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_source_phase_derivative.stderr.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_source_phase_derivative.stderr.log.gz",
+      "bytes": 595,
+      "sha256": "1a07e8371714a7ace7455914cad5bc87ac3b69c7b702bbc4a14471a218574be5"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_source_phase_derivative.stdout.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_source_phase_derivative.stdout.log.gz",
+      "bytes": 1263,
+      "sha256": "6b310473c703a1e47598e74d8fd51ec6e4af4e76153050444feb72d301f433eb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_spectral_weight_power.execution.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_spectral_weight_power.execution.json.gz",
+      "bytes": 1060,
+      "sha256": "023ea266f96003617db4e6669bf432e1210dcd7e86916c48319dfee7f40405a4"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_spectral_weight_power.py",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_spectral_weight_power.py.gz",
+      "bytes": 10529,
+      "sha256": "0a0ba4941189904c0ceaff77cb640d5a0f82c369e2a65322f48f1e8de835abda"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_spectral_weight_power.stderr.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_spectral_weight_power.stderr.log.gz",
+      "bytes": 723,
+      "sha256": "d7889a299550292b52f028c90975ac39b9af8f3dcb44dbc17db042fe0880f17a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutant_spectral_weight_power.stdout.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutant_spectral_weight_power.stdout.log.gz",
+      "bytes": 1653,
+      "sha256": "3b1e4c936f54b25188e6380e3b53f276760454e35532564ae532fc5347b573f2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/mutation_manifest.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/mutation_manifest.json.gz",
+      "bytes": 5281,
+      "sha256": "8ea33b4d8eb0b0b0f58a0e0915f4884d98ef088cfbe3bdf012b26d768a051332"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/open_pr_search_Friedrichs.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/open_pr_search_Friedrichs.json.gz",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/open_pr_search_excluded.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/open_pr_search_excluded.json.gz",
+      "bytes": 2148,
+      "sha256": "11fcba364339c05bb768008ce2d98879051b03cb789a2be8ddf78957f448f134"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/open_pr_search_memory.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/open_pr_search_memory.json.gz",
+      "bytes": 690,
+      "sha256": "dd1c7252ea33543e23bbb8f148c004b4b45f04ddc5c7ec0799d1ef413c1ef570"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/open_pr_search_source-cyclic.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/open_pr_search_source-cyclic.json.gz",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/open_pr_search_zero_space.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/open_pr_search_zero_space.json.gz",
+      "bytes": 627,
+      "sha256": "ee445d7251fc172576c6ac4078b16ebfa5d0c459294218cbd4e26e424d0adb3f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/pr_9479.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/pr_9479.json.gz",
+      "bytes": 15499,
+      "sha256": "4471f14032291b458c5a411efcede4adfe2734b1d6f0400ce5cf39ba6ba5165a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/pr_9480.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/pr_9480.json.gz",
+      "bytes": 17564,
+      "sha256": "13795f11e268f4a027df14a766ff1959d3f775de8e43ebe0e1710e2f3bad38dd"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/pr_9481.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/pr_9481.json.gz",
+      "bytes": 17607,
+      "sha256": "a31c279241f34b9ce349391e40cb8b31cf96bea3c54c032f52ee9ad37ba076b5"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/pr_9482.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/pr_9482.json.gz",
+      "bytes": 19724,
+      "sha256": "5eb8ae2b72f3fa1216278b301568a01509c15dda55299b72fead277b7909e949"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/pr_9484.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/pr_9484.json.gz",
+      "bytes": 17746,
+      "sha256": "e80e1a087cba70afb5a32f118f7215d655d6a94e19847c6da7ac01e976968af8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/primary_paths_ba74c93a.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/primary_paths_ba74c93a.json.gz",
+      "bytes": 574,
+      "sha256": "227c4d8e4a8625a253201515d558a12c3a6faf0254151bd687cded47f17cd734"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/primary_paths_d8480b5a.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/primary_paths_d8480b5a.json.gz",
+      "bytes": 484,
+      "sha256": "30a77e45d4c0026c083b26c755a85d99c107267f1bb16a2059cc0b2abb59b996"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/prior_statement_search.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/prior_statement_search.json.gz",
+      "bytes": 370,
+      "sha256": "63bf67e2bbf9e82b4212ef375d2dcba590477033be9bb448eb9721e63e553637"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/prior_statement_search.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/prior_statement_search.log.gz",
+      "bytes": 36866,
+      "sha256": "857b7e816f3e4742c3908fc79270125f5263f0657c901009ab48837d2fff574d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/published_source_search_9481.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/published_source_search_9481.json.gz",
+      "bytes": 618,
+      "sha256": "ed45d572361d250e2bd97d89b40b0965177c1ba3fef3119259c9cc2c6990e782"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/published_source_search_9482.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/published_source_search_9482.json.gz",
+      "bytes": 526,
+      "sha256": "78a167646fc20925585a287e910e079a42d5caa5b82736be6c4d8938573110b2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/receipt.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/receipt.json.gz",
+      "bytes": 13750,
+      "sha256": "8767499b08e7721cf1133930fcd9e0a5c703536b46aba5eacd98b81b688d7352"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/receipt_freeze.execution.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/receipt_freeze.execution.json.gz",
+      "bytes": 690,
+      "sha256": "a853a794123769b859002c32576bc83afd8c99da485b582a3e2666a361d04eb0"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/receipt_freeze.stderr.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/receipt_freeze.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/receipt_freeze.stdout.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/receipt_freeze.stdout.log.gz",
+      "bytes": 252,
+      "sha256": "f209bca41341e725bfdb044dd895b86fc8d34673e4a1198abf6664e9567f84db"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/receipt_verification.execution.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/receipt_verification.execution.json.gz",
+      "bytes": 691,
+      "sha256": "0da0c6319aa9fa86bb1957060e52a697bc211a7ed53128f726ff87a95de37434"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/receipt_verification.stderr.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/receipt_verification.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/receipt_verification.stdout.log",
+      "preserved": "evidence/boost_kernel_effective_dynamics/receipt_verification.stdout.log.gz",
+      "bytes": 366,
+      "sha256": "38cb7498f1a569a192b220a91840643ef7d920bde53d54e961d1a7cf23bc6c8f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/run_mutations.py",
+      "preserved": "evidence/boost_kernel_effective_dynamics/run_mutations.py.gz",
+      "bytes": 3423,
+      "sha256": "2b8d3a38e1ad35ad3292adc73e64725a5fd99379f7738492700b2faf988ecc33"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/source_manifest.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/source_manifest.json.gz",
+      "bytes": 3719,
+      "sha256": "38354604487f27b280c596d0baacfb616145dfa8b599626bd839ee7089ba77cd"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/sources/BOOST_CURRENT_EXPECTATION_PROBE.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/sources/BOOST_CURRENT_EXPECTATION_PROBE.md.gz",
+      "bytes": 27952,
+      "sha256": "a7161d796001df4af243263acbd03e731d75d0eab2d93795f4b5960eff5acb68"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md.gz",
+      "bytes": 12287,
+      "sha256": "0e17f9647141c200b1efcbe78f60ef6beedc1e249ce1b85544293dddbebe8690"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md.gz",
+      "bytes": 33116,
+      "sha256": "76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "bytes": 30639,
+      "sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md.gz",
+      "bytes": 25725,
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md.gz",
+      "bytes": 20876,
+      "sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md.gz",
+      "bytes": 23222,
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md.gz",
+      "bytes": 17773,
+      "sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md",
+      "preserved": "evidence/boost_kernel_effective_dynamics/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md.gz",
+      "bytes": 20645,
+      "sha256": "04adc0b81d3865f4819b8441e25279ef084bda755e9c0a3206be7d314ea04f9f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/sources/excluded_walk_degenerate/receipt.json",
+      "preserved": "evidence/boost_kernel_effective_dynamics/sources/excluded_walk_degenerate/receipt.json.gz",
+      "bytes": 12787,
+      "sha256": "369bebc245e0e7794608d6a1ef29a4ccd3d374a85f3f3bcc20f0f2dd81288dde"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/verify_receipt.py",
+      "preserved": "evidence/boost_kernel_effective_dynamics/verify_receipt.py.gz",
+      "bytes": 3920,
+      "sha256": "cf66869eaf462799f44bdd7e890bf5262d7649a37d6820fbd6a075c945905822"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/AUTHOR_LOGS_COMPLETE.txt",
+      "preserved": "evidence/boost_quantitative_review/AUTHOR_LOGS_COMPLETE.txt.gz",
+      "bytes": 35106,
+      "sha256": "fdeccc11633aefb9d7ddf995a5a3ea490ef0f417305dea5293fc71646cbbd2b1"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/CHECKPOINT.md",
+      "preserved": "evidence/boost_quantitative_review/CHECKPOINT.md.gz",
+      "bytes": 2745,
+      "sha256": "b21de3350b7b2ee8712d59b363876fe5ff4db47d4029bdcfa54177e1978f8497"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/IDENTITY_VERIFICATION.json",
+      "preserved": "evidence/boost_quantitative_review/IDENTITY_VERIFICATION.json.gz",
+      "bytes": 53539,
+      "sha256": "01cb35c80970a3a77bd45d7e8df43449a195c54678f0536e3c400e4cbf0401b6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/PRE_AUTHOR_CONTROL_FREEZE.json",
+      "preserved": "evidence/boost_quantitative_review/PRE_AUTHOR_CONTROL_FREEZE.json.gz",
+      "bytes": 5708,
+      "sha256": "8f388f7d3dccd6059f4002ba52187098a2da9ee5b779dc75714d16f7c0399daa"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/PRE_AUTHOR_FREEZE.json",
+      "preserved": "evidence/boost_quantitative_review/PRE_AUTHOR_FREEZE.json.gz",
+      "bytes": 836,
+      "sha256": "63a37f9610d2a7628263b22f9dcf6a671f4b56364ced812e31db5320d3f4c815"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/PROOF_RECONSTRUCTION_PRE_AUTHOR.md",
+      "preserved": "evidence/boost_quantitative_review/PROOF_RECONSTRUCTION_PRE_AUTHOR.md.gz",
+      "bytes": 24595,
+      "sha256": "dc370ac3cef04b514962d58862735c9080e1b91b0d078345da181a2d15e32ad9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_literal_mutations.diff",
+      "preserved": "evidence/boost_quantitative_review/author_literal_mutations.diff.gz",
+      "bytes": 5436,
+      "sha256": "82708a0d913d4b83b2ff278c18a28f975a3d08c64d7eeb179b7370dc14a6c894"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/AUTHOR_CHECK.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/AUTHOR_CHECK.md.gz",
+      "bytes": 13047,
+      "sha256": "00ff668c81de859e3a294277df39f0fb8a60ddfc07189fa77be17560f2b538b4"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/CHECKPOINT.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/CHECKPOINT.md.gz",
+      "bytes": 3610,
+      "sha256": "724b834a162508afeab6099764712397a7b75598f79543ec938db3d48c8fbce7"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/EXPONENTIAL_BOUND_PRE_REFINEMENT.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/EXPONENTIAL_BOUND_PRE_REFINEMENT.md.gz",
+      "bytes": 25096,
+      "sha256": "50ceee39e4a7364bb2b616ce09b741101492a9639e91ad0a2776c66c8b7a4ce9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/EXPONENTIAL_BOUND_SNAPSHOT.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/EXPONENTIAL_BOUND_SNAPSHOT.json.gz",
+      "bytes": 393,
+      "sha256": "8adcdd3261e1997f8f7e58455b1c3c8864fb09f57536a0dd1ea26c0736cfa351"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/baseline.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/baseline.execution.json.gz",
+      "bytes": 458,
+      "sha256": "4cb8832dc8e2844ff27b807d93834ac1aba6f12dd29fb338add1ecec722f5b39"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/baseline.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/baseline.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/baseline.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/baseline.stdout.log.gz",
+      "bytes": 1385,
+      "sha256": "2965423ebb4241c982abf5d462572ed0861307a98a95d73e594d3ac76e0cc1e6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/corrector_controls.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/corrector_controls.py.gz",
+      "bytes": 9966,
+      "sha256": "f2b9347fa419a4e6a442a03498a8aeb6e0562913198e06b149d8a50b3a51ec13"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/freeze_receipt.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/freeze_receipt.py.gz",
+      "bytes": 3835,
+      "sha256": "ee0192bd9fa74671b1864f2913066c2d65f79125657b2e7be1994505a9315cad"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/instruction_manifest.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/instruction_manifest.json.gz",
+      "bytes": 3213,
+      "sha256": "2b68815d4ba54ee11699bb5ed8dd19ae96902b3aa867aed44817bab84683c2c4"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mean_baseline.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mean_baseline.execution.json.gz",
+      "bytes": 432,
+      "sha256": "4c0871fdc19becd53cbf48440c302106923f06854bff084d5ef649f850f31110"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mean_baseline.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mean_baseline.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mean_baseline.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mean_baseline.stdout.log.gz",
+      "bytes": 489,
+      "sha256": "be2bb44ffd1e452b53cc0a359ebcafd366d60e9158e4080e4c55d66dd622b044"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mean_controls.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mean_controls.py.gz",
+      "bytes": 2919,
+      "sha256": "101c90f89765a5d0c81a5e790e33f312e9abb3dccfef5139b6261df6dfee4f7c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_final_endpoint.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_final_endpoint.execution.json.gz",
+      "bytes": 968,
+      "sha256": "cf3f51b7b0555cd2c19c9d451e33a8bb10d0d433f099fc86ea1cc9127fc1ca9e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_final_endpoint.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_final_endpoint.py.gz",
+      "bytes": 9962,
+      "sha256": "e3e2b14fa290844008f72cc685590b20c09013c9250daa7eca18a1a8d0941c47"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_final_endpoint.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_final_endpoint.stderr.log.gz",
+      "bytes": 637,
+      "sha256": "fc559c4d0df2c1b8190e529bf298e5e35379c4902a15f71848241512ff588a92"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_final_endpoint.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_final_endpoint.stdout.log.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.execution.json.gz",
+      "bytes": 1057,
+      "sha256": "b9a763dcbc3bcdb483d4fa0980f5f765b5db3495d401c3f609ca3bd3282cb9d7"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.py.gz",
+      "bytes": 9978,
+      "sha256": "2161ac98f9b0891bd3edfbbdabfd277918d3ffad5874a22af0793934752db0b3"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.stderr.log.gz",
+      "bytes": 668,
+      "sha256": "e91aa60247ceedc0eeb5b515cca670e317ab2f647fc457dbd0d5113a2c8a1873"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.stdout.log.gz",
+      "bytes": 860,
+      "sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_initial_endpoint.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_initial_endpoint.execution.json.gz",
+      "bytes": 971,
+      "sha256": "9765bb98a290a0cf837eb43c4e5d403f717dbd9b4f187ab88193802f4fe184d0"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_initial_endpoint.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_initial_endpoint.py.gz",
+      "bytes": 9953,
+      "sha256": "7a5177d975b7c05d59117b20bd951ec8ef7ade031d8600cf69ab5ed3db122249"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_initial_endpoint.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_initial_endpoint.stderr.log.gz",
+      "bytes": 641,
+      "sha256": "114ca1cf22eac889fb27de970451c43d1ca274276439ecf9241fad3fa7032c81"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_initial_endpoint.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_initial_endpoint.stdout.log.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_mean_residual_term.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_mean_residual_term.execution.json.gz",
+      "bytes": 983,
+      "sha256": "82379f5101f3d03ab5b20da7f482b04968b4272817b8db01292f7e6b59428c0a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_mean_residual_term.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_mean_residual_term.py.gz",
+      "bytes": 9954,
+      "sha256": "ab31c7ae46e857c0cfda6b92130dd94bc39eca420c27ed9bac6b0d3c8d4507ec"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_mean_residual_term.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_mean_residual_term.stderr.log.gz",
+      "bytes": 973,
+      "sha256": "61f0dc7c870299bbdc4b7802403f0118f35128f24d6f2fa0241042e25b3832f8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_mean_residual_term.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_mean_residual_term.stdout.log.gz",
+      "bytes": 250,
+      "sha256": "f70bd92ab5efbe00f5ff829e35b178cda355a7992830e34878421e4b7b3ea844"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_mean_subtraction.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_mean_subtraction.execution.json.gz",
+      "bytes": 955,
+      "sha256": "5d43ece11b5fb1fe8d70aad5b8f7b323ade0f444d604a3c8f3ed697625dbd14a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_mean_subtraction.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_mean_subtraction.py.gz",
+      "bytes": 9964,
+      "sha256": "65ecd06b071a15860087bc111b697b72c8c36c7212d5e09031d2227bb9762ee1"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_mean_subtraction.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_mean_subtraction.stderr.log.gz",
+      "bytes": 909,
+      "sha256": "96554268692a28bcad1d9f94dbcea1c4e58d310c3a57d8ec6e3545a871295aac"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_mean_subtraction.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_mean_subtraction.stdout.log.gz",
+      "bytes": 213,
+      "sha256": "e82f9bbc12bdc648fba750993dbaeffced3be0968760fe3497576e4e37d6f439"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.execution.json.gz",
+      "bytes": 1068,
+      "sha256": "21bef92b5e25e224f23d4041173cc4a923211e834f7016d8a13302159eeb3697"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.py.gz",
+      "bytes": 9948,
+      "sha256": "173beb4171b099a4b8b85bcdcc25712f08340a5d06e2926d6d0daea6d501a807"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.stderr.log.gz",
+      "bytes": 659,
+      "sha256": "713d2c9e1a3cbbba4cdd18257622806e2caad7dc44a3b66d9a7f52b9ac2c9d65"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.stdout.log.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_source_clock_derivative.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_source_clock_derivative.execution.json.gz",
+      "bytes": 1042,
+      "sha256": "dc3bf818368595763b0717e0916657102e7211d98dc7f2f51505432270402c85"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_source_clock_derivative.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_source_clock_derivative.py.gz",
+      "bytes": 9955,
+      "sha256": "eb1e556ed607269837820540ffa350414a2f27c54ce39bfae648cbf0aedc263f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_source_clock_derivative.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_source_clock_derivative.stderr.log.gz",
+      "bytes": 652,
+      "sha256": "a24b22732c42e7c147d4da766543f13403d9c205acf3fc1c26b3828823ad40f5"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_source_clock_derivative.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_source_clock_derivative.stdout.log.gz",
+      "bytes": 860,
+      "sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.execution.json.gz",
+      "bytes": 1076,
+      "sha256": "fab111a863f1a457a355ac0635766423248fbf356479cb1bf9fbfca7adaf9698"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.py.gz",
+      "bytes": 9956,
+      "sha256": "74a02fc82618a1b50e2894acc79fe4996c1a436bf7a8ea5fc8bc92c8c347d5ec"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.stderr.log.gz",
+      "bytes": 659,
+      "sha256": "6fdaa9f56adbfa8c93ce14708045518a4d3c9988aafa4f35a3e3c58d20978380"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.stdout.log.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.execution.json.gz",
+      "bytes": 1046,
+      "sha256": "82c9e2e0cd246563ebd245bd31feb7cbc575bbd72e18792899312f56e4ccb884"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.py.gz",
+      "bytes": 5178,
+      "sha256": "d2d4cfe9346ea2b70076b1c74ad103567990d6062d79adef137106d12e92b323"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.stderr.log.gz",
+      "bytes": 679,
+      "sha256": "1a0ebabc0b266c359d0c34bb694f6344995f81b97fdcf2da15744d5b24005ead"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.stdout.log.gz",
+      "bytes": 424,
+      "sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.execution.json.gz",
+      "bytes": 1061,
+      "sha256": "ee6b3227cda27f0dc9a350490cd711f0efad793453c2a0a5cdf8b956af9fd77d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.py.gz",
+      "bytes": 5179,
+      "sha256": "f6a262205d5d11f0eb119beee84b5843513e3a2b323c2b788e7c899c73c831ed"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.stderr.log.gz",
+      "bytes": 685,
+      "sha256": "075b9db1075e6e378513463a8a36ad370d54f42842e6416da2efefccd53e7755"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.stdout.log.gz",
+      "bytes": 424,
+      "sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.execution.json.gz",
+      "bytes": 1095,
+      "sha256": "1944d2aace8e1687dbfef1156fd56af3827b3bf9304ac32308f8d609b592f0d6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.py.gz",
+      "bytes": 5161,
+      "sha256": "903678778ed9dc03eb37af181aece9caef7b287d5f9da4c8f597c8d83f94d35e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.stderr.log.gz",
+      "bytes": 689,
+      "sha256": "d3079aba025af612568d09c766b168de65f4502a69f6f7c0614735b8b8207a62"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.stdout.log.gz",
+      "bytes": 424,
+      "sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutation_manifest.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutation_manifest.json.gz",
+      "bytes": 8499,
+      "sha256": "6db3bac1141c6475225dd0286c46582c6726b05ab42340c8603e80f0abd3f94e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/mutation_provenance_check.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/mutation_provenance_check.json.gz",
+      "bytes": 2674,
+      "sha256": "25a135a3a10481ae3c2dac9758cca57261c9974f2def5cbd25f45c8bb29b18ff"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/polynomial_baseline.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/polynomial_baseline.execution.json.gz",
+      "bytes": 437,
+      "sha256": "813f1c161d5f5c80031ffad8a95bf7eb37a27bdde297fcc901d24c653512028e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/polynomial_baseline.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/polynomial_baseline.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/polynomial_baseline.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/polynomial_baseline.stdout.log.gz",
+      "bytes": 941,
+      "sha256": "2ef441c844952688a1e830c7e3c2dcc8e2f0f0000f1f6aa7e1055e75efac4a30"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/polynomial_controls.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/polynomial_controls.py.gz",
+      "bytes": 5170,
+      "sha256": "a56d25d86244d5fb3a2865a0790abe554c54aca225393bdaa329eaf4cab086cb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/polynomial_mutation_manifest.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/polynomial_mutation_manifest.json.gz",
+      "bytes": 3346,
+      "sha256": "1ad9c147f7c86826353e1657e7634004a12b8adf7673b370c98550e08e3dd7f8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/receipt.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/receipt.json.gz",
+      "bytes": 18567,
+      "sha256": "c447314e4a130e2fc2e047da6ddbe2abdf20209c5aa4718c2bab9b75783b5356"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/receipt_freeze.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/receipt_freeze.execution.json.gz",
+      "bytes": 696,
+      "sha256": "f6efe361dae1fa04261397db7ae7805eac6f42b214719ac03e5399197b738352"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/receipt_freeze.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/receipt_freeze.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/receipt_freeze.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/receipt_freeze.stdout.log.gz",
+      "bytes": 252,
+      "sha256": "663c4dbc677796517f29d6f2ed21a79374bdb0cc184e09375e8bc2fe0e674adb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/receipt_verification.execution.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/receipt_verification.execution.json.gz",
+      "bytes": 695,
+      "sha256": "30b9aecdf8784d5c740f41f19d6f9edbb2d31ae6556d3fb36efda86b782bbf7e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/receipt_verification.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/receipt_verification.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/receipt_verification.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/author_packet/receipt_verification.stdout.log.gz",
+      "bytes": 509,
+      "sha256": "63a7251d7ff045261c3b4f54f20344d01e00df6750aa284adb03f79813c519c9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/run_mutations.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/run_mutations.py.gz",
+      "bytes": 3411,
+      "sha256": "ec6672581fac69e74a9e8b05f7e9053ad0e848364b7aeab22c3584498ecffbf5"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/run_polynomial_mutations.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/run_polynomial_mutations.py.gz",
+      "bytes": 2355,
+      "sha256": "6a75ea63fd7560573722754f8864252e9c9a86bfc85241222ae277f26e0189b7"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/source_manifest.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/source_manifest.json.gz",
+      "bytes": 4500,
+      "sha256": "30acce0634744fbab7800ae1c7b449dbc4e7a3223856c57f741c978f9cc1211d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/sources/BOOST_CURRENT_EXPECTATION_PROBE.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/sources/BOOST_CURRENT_EXPECTATION_PROBE.md.gz",
+      "bytes": 27952,
+      "sha256": "a7161d796001df4af243263acbd03e731d75d0eab2d93795f4b5960eff5acb68"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md.gz",
+      "bytes": 12287,
+      "sha256": "0e17f9647141c200b1efcbe78f60ef6beedc1e249ce1b85544293dddbebe8690"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md.gz",
+      "bytes": 33116,
+      "sha256": "76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md.gz",
+      "bytes": 22692,
+      "sha256": "1c314fc05a26ca27e0828a70ca8132a2bad269b60c127ea37a53e11e95e087c9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md.gz",
+      "bytes": 15520,
+      "sha256": "64cf08ea2c12f086d0efcc862d17ce0e394f53dfbcbfa5d48db73a10bb9652ca"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "bytes": 30639,
+      "sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/sources/ROOT_HSTAR_APPROXIMATE_CORRECTOR_LEAD.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/sources/ROOT_HSTAR_APPROXIMATE_CORRECTOR_LEAD.md.gz",
+      "bytes": 5363,
+      "sha256": "3ba9b713942b18e0562ca3b60c840676194b78132e797e088037953e6f808ec1"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/sources/ROOT_POLYNOMIAL_CORRECTOR_REFINEMENT.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/sources/ROOT_POLYNOMIAL_CORRECTOR_REFINEMENT.md.gz",
+      "bytes": 4063,
+      "sha256": "4466bde85ef219e0b20427d996aa5e3c8c4f75f52fc84aa8404ae8f05e6db78f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md",
+      "preserved": "evidence/boost_quantitative_review/author_packet/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md.gz",
+      "bytes": 20645,
+      "sha256": "04adc0b81d3865f4819b8441e25279ef084bda755e9c0a3206be7d314ea04f9f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/sources/boost_forcing_review/receipt.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/sources/boost_forcing_review/receipt.json.gz",
+      "bytes": 11737,
+      "sha256": "6ecec5f7e9831fde22922d2ff6f5b7db4a31059ca82cf4b550a058a3a1aff7ce"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/sources/boost_kernel_effective_dynamics/receipt.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/sources/boost_kernel_effective_dynamics/receipt.json.gz",
+      "bytes": 13750,
+      "sha256": "8767499b08e7721cf1133930fcd9e0a5c703536b46aba5eacd98b81b688d7352"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/upstream_K_review_identity.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/upstream_K_review_identity.json.gz",
+      "bytes": 2866,
+      "sha256": "20cf6ac74d9d9bda0f7234adc6ea4d7ff7fa139edfb3bd2167a56e8cf0de1c5c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/verify_receipt.py",
+      "preserved": "evidence/boost_quantitative_review/author_packet/verify_receipt.py.gz",
+      "bytes": 5447,
+      "sha256": "507a6c364bf00eaffa6846369f71d8aaa6e2d1a02ef1dad0d070c4ddc883b84b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/author_packet/workspace_provenance.json",
+      "preserved": "evidence/boost_quantitative_review/author_packet/workspace_provenance.json.gz",
+      "bytes": 276,
+      "sha256": "12d07d38ce18179753275d291148648a44f046c7824c5dc13757be62ca08f266"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/final_identity_check.json",
+      "preserved": "evidence/boost_quantitative_review/final_identity_check.json.gz",
+      "bytes": 622,
+      "sha256": "32a91e3f4ca6a8c37d1ba67c720bb301bafe45d25304833c313eb8013aa39b88"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/identity.execution.json",
+      "preserved": "evidence/boost_quantitative_review/identity.execution.json.gz",
+      "bytes": 446,
+      "sha256": "946c1abc208f332f755b4d9c24e68d8b683d10a89ef4831e6970f7e64713acb3"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/identity.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/identity.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/identity.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/identity.stdout.log.gz",
+      "bytes": 641,
+      "sha256": "84b9219db5340b5cd5872ceddd0ae84c5446fb26b7c84eeec81762f6c22643cf"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent.run.json",
+      "preserved": "evidence/boost_quantitative_review/independent.run.json.gz",
+      "bytes": 453,
+      "sha256": "87a0a684cf4fb583556a393617240a2e88aca2ee0d1b6f9b3988651851b56c5b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/independent.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/independent.stdout.log.gz",
+      "bytes": 2154,
+      "sha256": "4f2c4a9c377dec08652da756981aa34b5e8b7702b040078e40e45cfc1be97f96"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt1/DISPOSITION.md",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt1/DISPOSITION.md.gz",
+      "bytes": 508,
+      "sha256": "28be3a2e2b471979477195163c34ca3d8103eb4482f250a0fddc3d55b4f1d4b2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt1/independent.run.json",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt1/independent.run.json.gz",
+      "bytes": 453,
+      "sha256": "ee1560164c1b1e1a5a03c5feb427be3f58b16ed71c48eb7076ba095d26145695"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt1/independent.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt1/independent.stderr.log.gz",
+      "bytes": 628,
+      "sha256": "8a06dcfe33b248fe60505faaccc83d3c465718238efcba60c909793295cc38c4"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt1/independent.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt1/independent.stdout.log.gz",
+      "bytes": 200,
+      "sha256": "0f3c267cc132a48b4ff7174b1aefc42894f501d1b7434b15a0281851b52d714e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt1/independent_controls.py",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt1/independent_controls.py.gz",
+      "bytes": 9893,
+      "sha256": "75a14d6139eae5726c33707e9c7d05b3ba291a5eaba5dd76fb6eeabb4686077a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt1/run_independent.py",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt1/run_independent.py.gz",
+      "bytes": 867,
+      "sha256": "83fac2d0cd928ed40853887dd2ea74d2e36805895bc31eda24076b1d8edc5342"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt2/DISPOSITION.md",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt2/DISPOSITION.md.gz",
+      "bytes": 551,
+      "sha256": "e27033c03a51290d579d9b29b3fd6a91f67976dc399cf082adef546bde86614a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt2/independent.run.json",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt2/independent.run.json.gz",
+      "bytes": 453,
+      "sha256": "792b8eac17b9aa216bc55a2ad5cc97aac3c4c488869ec69e70d210deaa7adab2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt2/independent.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt2/independent.stderr.log.gz",
+      "bytes": 446,
+      "sha256": "eb03ac375a595e3dd8874adb161d6fe94fc33ae8747c7ec8c872b0189dd11411"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt2/independent.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt2/independent.stdout.log.gz",
+      "bytes": 1025,
+      "sha256": "2e9b2c6599843a475bfd38305f1f143ff0d140fdb3a03362163aa16ff6c261f5"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt2/independent_controls.py",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt2/independent_controls.py.gz",
+      "bytes": 10074,
+      "sha256": "b83b5e2184bcc4cebd787ecaec1b391d37880c427f1a090bd0a0eeb568d7b32e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_attempt2/run_independent.py",
+      "preserved": "evidence/boost_quantitative_review/independent_attempt2/run_independent.py.gz",
+      "bytes": 867,
+      "sha256": "83fac2d0cd928ed40853887dd2ea74d2e36805895bc31eda24076b1d8edc5342"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/independent_controls.py",
+      "preserved": "evidence/boost_quantitative_review/independent_controls.py.gz",
+      "bytes": 10188,
+      "sha256": "fa1cd301e9203b64bee28508657ead8a636e41a10ab95ce5595e9ddcdd22927e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/instructions/CLAUDE.md",
+      "preserved": "evidence/boost_quantitative_review/instructions/CLAUDE.md.gz",
+      "bytes": 853,
+      "sha256": "254339c255b9c75eac37c1185b77f11be8f55bb9b734543b2a81647f5f373dfc"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/instructions/SCIENCE_WORKFLOW.md",
+      "preserved": "evidence/boost_quantitative_review/instructions/SCIENCE_WORKFLOW.md.gz",
+      "bytes": 15435,
+      "sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/instructions/SKILL_FRESHNESS_CHECK.md",
+      "preserved": "evidence/boost_quantitative_review/instructions/SKILL_FRESHNESS_CHECK.md.gz",
+      "bytes": 2180,
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/instructions/physics_claim_reviewer_SKILL.md",
+      "preserved": "evidence/boost_quantitative_review/instructions/physics_claim_reviewer_SKILL.md.gz",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/instructions/planning_AGENTS.md",
+      "preserved": "evidence/boost_quantitative_review/instructions/planning_AGENTS.md.gz",
+      "bytes": 11558,
+      "sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/instructions/proof-search-governance.md",
+      "preserved": "evidence/boost_quantitative_review/instructions/proof-search-governance.md.gz",
+      "bytes": 4975,
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/instructions/review_loop_SKILL.md",
+      "preserved": "evidence/boost_quantitative_review/instructions/review_loop_SKILL.md.gz",
+      "bytes": 20052,
+      "sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/operational_failures.json",
+      "preserved": "evidence/boost_quantitative_review/operational_failures.json.gz",
+      "bytes": 945,
+      "sha256": "99bd66ac5ca19d57b8e2411a916510343ab270df7ba0ae9b8e4275a734fac1c6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/pre_author_snapshot/CHECKPOINT.md",
+      "preserved": "evidence/boost_quantitative_review/pre_author_snapshot/CHECKPOINT.md.gz",
+      "bytes": 1428,
+      "sha256": "3975266587abebc29de00a04162f59cecbb7b0d654ff410f553b9710f971fb90"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/pre_author_snapshot/PRE_AUTHOR_FREEZE.json",
+      "preserved": "evidence/boost_quantitative_review/pre_author_snapshot/PRE_AUTHOR_FREEZE.json.gz",
+      "bytes": 836,
+      "sha256": "63a37f9610d2a7628263b22f9dcf6a671f4b56364ced812e31db5320d3f4c815"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/pre_author_snapshot/PROOF_RECONSTRUCTION_PRE_AUTHOR.md",
+      "preserved": "evidence/boost_quantitative_review/pre_author_snapshot/PROOF_RECONSTRUCTION_PRE_AUTHOR.md.gz",
+      "bytes": 24595,
+      "sha256": "dc370ac3cef04b514962d58862735c9080e1b91b0d078345da181a2d15e32ad9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/pre_author_snapshot/independent.run.json",
+      "preserved": "evidence/boost_quantitative_review/pre_author_snapshot/independent.run.json.gz",
+      "bytes": 453,
+      "sha256": "87a0a684cf4fb583556a393617240a2e88aca2ee0d1b6f9b3988651851b56c5b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/pre_author_snapshot/independent.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/pre_author_snapshot/independent.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/pre_author_snapshot/independent.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/pre_author_snapshot/independent.stdout.log.gz",
+      "bytes": 2154,
+      "sha256": "4f2c4a9c377dec08652da756981aa34b5e8b7702b040078e40e45cfc1be97f96"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/pre_author_snapshot/independent_controls.py",
+      "preserved": "evidence/boost_quantitative_review/pre_author_snapshot/independent_controls.py.gz",
+      "bytes": 10188,
+      "sha256": "fa1cd301e9203b64bee28508657ead8a636e41a10ab95ce5595e9ddcdd22927e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/pre_author_snapshot/run_independent.py",
+      "preserved": "evidence/boost_quantitative_review/pre_author_snapshot/run_independent.py.gz",
+      "bytes": 867,
+      "sha256": "83fac2d0cd928ed40853887dd2ea74d2e36805895bc31eda24076b1d8edc5342"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/pre_author_snapshot/source_manifest.json",
+      "preserved": "evidence/boost_quantitative_review/pre_author_snapshot/source_manifest.json.gz",
+      "bytes": 8584,
+      "sha256": "1cd3b21301779992e4727a0796bef95cb995d0f7642510358dc959d3abeaa230"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/receipt.json",
+      "preserved": "evidence/boost_quantitative_review/receipt.json.gz",
+      "bytes": 39694,
+      "sha256": "c38f2a237e045a12870e380a7f9fc152c4a0e405238e8643050b4ec457e6dce2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/replay_baselines.py",
+      "preserved": "evidence/boost_quantitative_review/replay_baselines.py.gz",
+      "bytes": 1331,
+      "sha256": "2c5d73228c06e6fc7dd2340b0bf413f4409d7febe70e0ddb003b27ef80d4e0f2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/replay_corrector_controls.execution.json",
+      "preserved": "evidence/boost_quantitative_review/replay_corrector_controls.execution.json.gz",
+      "bytes": 639,
+      "sha256": "5188d1c19665d967a38cc10ea1403889f8f4c5c9551f2dd7b33b99355a54bb47"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/replay_corrector_controls.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/replay_corrector_controls.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/replay_corrector_controls.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/replay_corrector_controls.stdout.log.gz",
+      "bytes": 1385,
+      "sha256": "2965423ebb4241c982abf5d462572ed0861307a98a95d73e594d3ac76e0cc1e6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/replay_mean_controls.execution.json",
+      "preserved": "evidence/boost_quantitative_review/replay_mean_controls.execution.json.gz",
+      "bytes": 634,
+      "sha256": "e6d5f3be833c2e9c981bd188bf375a7399d15606319263951f363e4e763aba61"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/replay_mean_controls.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/replay_mean_controls.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/replay_mean_controls.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/replay_mean_controls.stdout.log.gz",
+      "bytes": 489,
+      "sha256": "be2bb44ffd1e452b53cc0a359ebcafd366d60e9158e4080e4c55d66dd622b044"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/replay_polynomial_controls.execution.json",
+      "preserved": "evidence/boost_quantitative_review/replay_polynomial_controls.execution.json.gz",
+      "bytes": 640,
+      "sha256": "aa0cb01a6ebd04ce60ac3c3a393bb6090e4893eece86b7e420ada0c8a1fc650e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/replay_polynomial_controls.stderr.log",
+      "preserved": "evidence/boost_quantitative_review/replay_polynomial_controls.stderr.log.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/replay_polynomial_controls.stdout.log",
+      "preserved": "evidence/boost_quantitative_review/replay_polynomial_controls.stdout.log.gz",
+      "bytes": 941,
+      "sha256": "2ef441c844952688a1e830c7e3c2dcc8e2f0f0000f1f6aa7e1055e75efac4a30"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/run_identity.py",
+      "preserved": "evidence/boost_quantitative_review/run_identity.py.gz",
+      "bytes": 838,
+      "sha256": "a99c3f9361376c6381b90fde6132092a3e32af28eb8c27c63a39683532e2ea15"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/run_independent.py",
+      "preserved": "evidence/boost_quantitative_review/run_independent.py.gz",
+      "bytes": 867,
+      "sha256": "83fac2d0cd928ed40853887dd2ea74d2e36805895bc31eda24076b1d8edc5342"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/source_manifest.json",
+      "preserved": "evidence/boost_quantitative_review/source_manifest.json.gz",
+      "bytes": 8584,
+      "sha256": "1cd3b21301779992e4727a0796bef95cb995d0f7642510358dc959d3abeaa230"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/BOOST_CURRENT_EXPECTATION_PROBE.md",
+      "preserved": "evidence/boost_quantitative_review/sources/BOOST_CURRENT_EXPECTATION_PROBE.md.gz",
+      "bytes": 27952,
+      "sha256": "a7161d796001df4af243263acbd03e731d75d0eab2d93795f4b5960eff5acb68"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md",
+      "preserved": "evidence/boost_quantitative_review/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md.gz",
+      "bytes": 12287,
+      "sha256": "0e17f9647141c200b1efcbe78f60ef6beedc1e249ce1b85544293dddbebe8690"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md",
+      "preserved": "evidence/boost_quantitative_review/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md.gz",
+      "bytes": 33116,
+      "sha256": "76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/BOOST_CURRENT_INVERSE_ENERGY_REVIEW.md",
+      "preserved": "evidence/boost_quantitative_review/sources/BOOST_CURRENT_INVERSE_ENERGY_REVIEW.md.gz",
+      "bytes": 10497,
+      "sha256": "d3c3d00b69b302beb88aef4a1b649f5e685ff7a08bc2c117755fcafde4d74796"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/BOOST_HSTAR_QUANTITATIVE_CORRECTOR_PROBE.md",
+      "preserved": "evidence/boost_quantitative_review/sources/BOOST_HSTAR_QUANTITATIVE_CORRECTOR_PROBE.md.gz",
+      "bytes": 34445,
+      "sha256": "4b1d5a8395d1d5c79d798ef17950f7c1ce4c1e0781e2f9ec610223bc1eb69820"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md",
+      "preserved": "evidence/boost_quantitative_review/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md.gz",
+      "bytes": 22692,
+      "sha256": "1c314fc05a26ca27e0828a70ca8132a2bad269b60c127ea37a53e11e95e087c9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md",
+      "preserved": "evidence/boost_quantitative_review/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md.gz",
+      "bytes": 15520,
+      "sha256": "64cf08ea2c12f086d0efcc862d17ce0e394f53dfbcbfa5d48db73a10bb9652ca"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md",
+      "preserved": "evidence/boost_quantitative_review/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "bytes": 30639,
+      "sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md",
+      "preserved": "evidence/boost_quantitative_review/sources/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md.gz",
+      "bytes": 25725,
+      "sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md",
+      "preserved": "evidence/boost_quantitative_review/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md.gz",
+      "bytes": 23222,
+      "sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md",
+      "preserved": "evidence/boost_quantitative_review/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md.gz",
+      "bytes": 17773,
+      "sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/EXCLUDED_WALK_EVOLVED_BOOST_CONTROL_DRAFT.md",
+      "preserved": "evidence/boost_quantitative_review/sources/EXCLUDED_WALK_EVOLVED_BOOST_CONTROL_DRAFT.md.gz",
+      "bytes": 8516,
+      "sha256": "d89611986626dbabcf6f9f5c487733d2a520cb9249b7ed0b3a27be35874fd929"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/ROOT_HSTAR_APPROXIMATE_CORRECTOR_LEAD.md",
+      "preserved": "evidence/boost_quantitative_review/sources/ROOT_HSTAR_APPROXIMATE_CORRECTOR_LEAD.md.gz",
+      "bytes": 5363,
+      "sha256": "3ba9b713942b18e0562ca3b60c840676194b78132e797e088037953e6f808ec1"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/ROOT_POLYNOMIAL_CORRECTOR_REFINEMENT.md",
+      "preserved": "evidence/boost_quantitative_review/sources/ROOT_POLYNOMIAL_CORRECTOR_REFINEMENT.md.gz",
+      "bytes": 4063,
+      "sha256": "4466bde85ef219e0b20427d996aa5e3c8c4f75f52fc84aa8404ae8f05e6db78f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md",
+      "preserved": "evidence/boost_quantitative_review/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md.gz",
+      "bytes": 20645,
+      "sha256": "04adc0b81d3865f4819b8441e25279ef084bda755e9c0a3206be7d314ea04f9f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/verify_identity.py",
+      "preserved": "evidence/boost_quantitative_review/verify_identity.py.gz",
+      "bytes": 6276,
+      "sha256": "18285a954cea66a119e47234a7ebb8e6406aee3b78308f5e34619a4c0f45f849"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_quantitative_review/write_receipt.py",
+      "preserved": "evidence/boost_quantitative_review/write_receipt.py.gz",
+      "bytes": 5270,
+      "sha256": "e8d8d864d1ad67358208ebec109fdf63475ef295052af4534c0a0c6893750cee"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/finish_kq_delivery.py",
+      "preserved": "evidence/finish_kq_delivery.py.gz",
+      "bytes": 15279,
+      "sha256": "7787ba48e3c2c69b47be8709d3d1066400994b8d7eb119887a705039f62b0e95"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_K_canonical_execution.json",
+      "preserved": "evidence/kq_K_canonical_execution.json.gz",
+      "bytes": 3122,
+      "sha256": "8a3a4fb3c74505e8edbe8958eec2c2c912277dccaf1608a3b13fc3f3916caa0a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_Q_canonical_execution.json",
+      "preserved": "evidence/kq_Q_canonical_execution.json.gz",
+      "bytes": 3945,
+      "sha256": "8d4b02c0b8b391f64e09eba7e94ef34c950bde9b6059a68148c158fb82ae9f0c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_citation_build.stderr",
+      "preserved": "evidence/kq_citation_build.stderr.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_citation_build.stdout",
+      "preserved": "evidence/kq_citation_build.stdout.gz",
+      "bytes": 281,
+      "sha256": "50cecd77ed145847e16793324493c255fafbfa74c073580f8c99fb0a8eb770e8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_citation_execution.json",
+      "preserved": "evidence/kq_citation_execution.json.gz",
+      "bytes": 473,
+      "sha256": "8c9b8f9ab5ebe6cfe1d4e23dbd02f9e993cc8403bc954b663a17de2af77e149b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_citation_manifest.stderr",
+      "preserved": "evidence/kq_citation_manifest.stderr.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_citation_manifest.stdout",
+      "preserved": "evidence/kq_citation_manifest.stdout.gz",
+      "bytes": 77,
+      "sha256": "87f540c9e3fa5e81c25d632b64e706cba08ab5c47e3c595c323a64a5cdb15be6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_delivery_mechanical.json",
+      "preserved": "evidence/kq_delivery_mechanical.json.gz",
+      "bytes": 1657,
+      "sha256": "459e1170d53a0f4ba4f57b2d0ac5f0cf6d8926570b155fa1252344b6f7454563"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_final_reconstruction.log",
+      "preserved": "evidence/kq_final_reconstruction.log.gz",
+      "bytes": 70,
+      "sha256": "35ad11d9b3b652ee888545acd660c3f0f7b18478e6668e6abe43685a9a02d518"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_final_vocab_fix.json",
+      "preserved": "evidence/kq_final_vocab_fix.json.gz",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_final_vocab_fix.log",
+      "preserved": "evidence/kq_final_vocab_fix.log.gz",
+      "bytes": 214,
+      "sha256": "abcfc00e9b952aaa798d031aa83e14bec708f6ac701569e33ef62ee10b5aab5c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_final_vocab_report-only.json",
+      "preserved": "evidence/kq_final_vocab_report-only.json.gz",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_final_vocab_report-only.log",
+      "preserved": "evidence/kq_final_vocab_report-only.log.gz",
+      "bytes": 222,
+      "sha256": "b1c5d79d3579dce929b7f4c4969b2d9cbc4123b1c6c882cb2cb081eb51fe88ee"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_focused_audit_compat.execution.json",
+      "preserved": "evidence/kq_focused_audit_compat.execution.json.gz",
+      "bytes": 317,
+      "sha256": "2a5196f248daa299a2c7c94b4e4654c55ead616db40a600a50dc2e7b07d3dd73"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_focused_audit_compat.json",
+      "preserved": "evidence/kq_focused_audit_compat.json.gz",
+      "bytes": 240,
+      "sha256": "2dc99be6cc83847ffdb4cadee13d0d71470b33c9662a7d299e0668de50ce0587"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_focused_audit_compat.stderr",
+      "preserved": "evidence/kq_focused_audit_compat.stderr.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_initial_vocab_fix.json",
+      "preserved": "evidence/kq_initial_vocab_fix.json.gz",
+      "bytes": 153,
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/BOOST_FORCED_OUTGOING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "preserved": "evidence/kq_pre_graph_repair/BOOST_FORCED_OUTGOING_BOUNDED_THEOREM_NOTE_2026-10-12.md.gz",
+      "bytes": 24315,
+      "sha256": "47a528ea8fe6f39e003f79511edd381a79c8b8862b4cba66fbd9726696360ecf"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/DISPOSITION.md",
+      "preserved": "evidence/kq_pre_graph_repair/DISPOSITION.md.gz",
+      "bytes": 369,
+      "sha256": "4881029ba1c4182ef2359f05b80f308b32fab516bf1f228ce70e0831d50303d8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/KQ_canonical_output_comparison.json",
+      "preserved": "evidence/kq_pre_graph_repair/KQ_canonical_output_comparison.json.gz",
+      "bytes": 2172,
+      "sha256": "5fa3030ead1508a303d8fd290b72d5aada2b02050714b2b8dc3856cc11867961"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/PUBLICATION_EDITS.json",
+      "preserved": "evidence/kq_pre_graph_repair/PUBLICATION_EDITS.json.gz",
+      "bytes": 10554,
+      "sha256": "db52b4635b7809237dc1b1e86c913ea7a778a743c69e184f23c4a238e2d7da93"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/citation_graph_manifest.json",
+      "preserved": "evidence/kq_pre_graph_repair/citation_graph_manifest.json.gz",
+      "bytes": 983793,
+      "sha256": "ec2d021d36a1fc1787a7a020b46505ddf637c2c3405f83ed9fa9553d248287ee"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/kq_K_canonical_execution.json",
+      "preserved": "evidence/kq_pre_graph_repair/kq_K_canonical_execution.json.gz",
+      "bytes": 3123,
+      "sha256": "201df5a1001dc57d19cb309041f3ffb5c723bbdf4fc9555567bc7df0813996da"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/kq_Q_canonical_execution.json",
+      "preserved": "evidence/kq_pre_graph_repair/kq_Q_canonical_execution.json.gz",
+      "bytes": 3946,
+      "sha256": "945c99d79089f69b14d3450d96692343773a196b349bbb534c8d677df52085a7"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/kq_citation_build.stderr",
+      "preserved": "evidence/kq_pre_graph_repair/kq_citation_build.stderr.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/kq_citation_build.stdout",
+      "preserved": "evidence/kq_pre_graph_repair/kq_citation_build.stdout.gz",
+      "bytes": 281,
+      "sha256": "8ee6f6f88570974cad0830eba0938ec0f3364375c9736361e954d7d58e69ac91"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/kq_citation_execution.json",
+      "preserved": "evidence/kq_pre_graph_repair/kq_citation_execution.json.gz",
+      "bytes": 473,
+      "sha256": "2010108716e0ad0be8875d97d6cb03b3a649377bffdeacacee2f0bedfc4f8aa8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/kq_citation_manifest.stderr",
+      "preserved": "evidence/kq_pre_graph_repair/kq_citation_manifest.stderr.gz",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_pre_graph_repair/kq_citation_manifest.stdout",
+      "preserved": "evidence/kq_pre_graph_repair/kq_citation_manifest.stdout.gz",
+      "bytes": 77,
+      "sha256": "b81b579d2ab95a1bfd5d2675da1c7ce12133c67554ca1f38d93b3af6a5b101c4"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_Duhamel_source_sign.execution.json",
+      "preserved": "evidence/kq_primary_mutations/K_Duhamel_source_sign.execution.json.gz",
+      "bytes": 1055,
+      "sha256": "422d31eeda6078b7a7de0189cfd6cedf78b474b14d0a855d1248ea12d1a61f8e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_Duhamel_source_sign.py",
+      "preserved": "evidence/kq_primary_mutations/K_Duhamel_source_sign.py.gz",
+      "bytes": 11537,
+      "sha256": "04e8b45bcc97346b54c617c272d1d74a7c211cc149dbd983e948fa94c405fedb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_Duhamel_source_sign.stderr",
+      "preserved": "evidence/kq_primary_mutations/K_Duhamel_source_sign.stderr.gz",
+      "bytes": 608,
+      "sha256": "5da9261afc2ba6c51e2f00f75a461c3a275f71c9dcfd6e18ccaf4078248edd19"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_Duhamel_source_sign.stdout",
+      "preserved": "evidence/kq_primary_mutations/K_Duhamel_source_sign.stdout.gz",
+      "bytes": 605,
+      "sha256": "a866c9588a51ceccce3fed2c7aa2b113223d13062a0af8b480fc5a3474505e83"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_Schur_sign.execution.json",
+      "preserved": "evidence/kq_primary_mutations/K_Schur_sign.execution.json.gz",
+      "bytes": 993,
+      "sha256": "519c622b4aee708ce824d479a313a9d967b2f3e0b9ab8c9af682d6d051b30373"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_Schur_sign.py",
+      "preserved": "evidence/kq_primary_mutations/K_Schur_sign.py.gz",
+      "bytes": 11537,
+      "sha256": "01e06450150487fd769c9df45254f1027158e7453f69bcb56ca1a81667b0c66f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_Schur_sign.stderr",
+      "preserved": "evidence/kq_primary_mutations/K_Schur_sign.stderr.gz",
+      "bytes": 583,
+      "sha256": "e763e9d7a4f126084e21a5edfd917e4a16ea8a80ff3fc35273d6b331d2125b5b"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_Schur_sign.stdout",
+      "preserved": "evidence/kq_primary_mutations/K_Schur_sign.stdout.gz",
+      "bytes": 457,
+      "sha256": "a81a4d1e3e73b7c269eb7a1d41483fb6f92744cb6bf89bc435c81a2487c2cb12"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_forced_resolvent_sign.execution.json",
+      "preserved": "evidence/kq_primary_mutations/K_forced_resolvent_sign.execution.json.gz",
+      "bytes": 1071,
+      "sha256": "1ef772a103c10037048ecc6513d1ccc92d61dc903209ef34dde9e9392bc08817"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_forced_resolvent_sign.py",
+      "preserved": "evidence/kq_primary_mutations/K_forced_resolvent_sign.py.gz",
+      "bytes": 11537,
+      "sha256": "155ea220e2accc279c81593cc673690da57fc698309677eca2c37d23311724c8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_forced_resolvent_sign.stderr",
+      "preserved": "evidence/kq_primary_mutations/K_forced_resolvent_sign.stderr.gz",
+      "bytes": 612,
+      "sha256": "0dccc6b2013a57cda8a0c391d7f61af5621374cecf91a1cdb439208328e27d16"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_forced_resolvent_sign.stdout",
+      "preserved": "evidence/kq_primary_mutations/K_forced_resolvent_sign.stdout.gz",
+      "bytes": 605,
+      "sha256": "a866c9588a51ceccce3fed2c7aa2b113223d13062a0af8b480fc5a3474505e83"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_source_phase_derivative.execution.json",
+      "preserved": "evidence/kq_primary_mutations/K_source_phase_derivative.execution.json.gz",
+      "bytes": 1022,
+      "sha256": "244a552df8513c6a056aecdaff36fd1e317d200207abaf1ffe8f1155fac498a1"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_source_phase_derivative.py",
+      "preserved": "evidence/kq_primary_mutations/K_source_phase_derivative.py.gz",
+      "bytes": 11515,
+      "sha256": "732df9c507ff85e40ac7157bffa47029723abe01f27238f0bc11a43d0a4d0a52"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_source_phase_derivative.stderr",
+      "preserved": "evidence/kq_primary_mutations/K_source_phase_derivative.stderr.gz",
+      "bytes": 563,
+      "sha256": "da48c48a20766fae195db3b19085b1d5c4ea7d3bd5668469aa1a566e9b225fb8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_source_phase_derivative.stdout",
+      "preserved": "evidence/kq_primary_mutations/K_source_phase_derivative.stdout.gz",
+      "bytes": 1263,
+      "sha256": "6b310473c703a1e47598e74d8fd51ec6e4af4e76153050444feb72d301f433eb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_spectral_weight_power.execution.json",
+      "preserved": "evidence/kq_primary_mutations/K_spectral_weight_power.execution.json.gz",
+      "bytes": 1088,
+      "sha256": "b39796fac14748dc4ea92157a9dcef6a903d43307b32e4cdec6e728603bff084"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_spectral_weight_power.py",
+      "preserved": "evidence/kq_primary_mutations/K_spectral_weight_power.py.gz",
+      "bytes": 11534,
+      "sha256": "d6e90423df2b614ee61d09b9b1d45b89610f6bc0dce8adc007c722d7dad6f0fc"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_spectral_weight_power.stderr",
+      "preserved": "evidence/kq_primary_mutations/K_spectral_weight_power.stderr.gz",
+      "bytes": 691,
+      "sha256": "0ea1aefcdd0990dfbb9a497fd5478ffe86ae33c23488b545c6b2f1e865a9af52"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/K_spectral_weight_power.stdout",
+      "preserved": "evidence/kq_primary_mutations/K_spectral_weight_power.stdout.gz",
+      "bytes": 1653,
+      "sha256": "3b1e4c936f54b25188e6380e3b53f276760454e35532564ae532fc5347b573f2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_final_endpoint.execution.json",
+      "preserved": "evidence/kq_primary_mutations/Q_final_endpoint.execution.json.gz",
+      "bytes": 1028,
+      "sha256": "f05d76b3dc7bf6884e17815bad73c10d4c3d15f3aaa861702067604c929fe64d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_final_endpoint.py",
+      "preserved": "evidence/kq_primary_mutations/Q_final_endpoint.py.gz",
+      "bytes": 20817,
+      "sha256": "1ce442b9bddd85333a2e1aaa83e9537189badf492ba0c037562b27194a1b46b1"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_final_endpoint.stderr",
+      "preserved": "evidence/kq_primary_mutations/Q_final_endpoint.stderr.gz",
+      "bytes": 804,
+      "sha256": "3ed3e14aa4fd6dcbafaadd383450893a1ad34648a3a7567cb4f26792c939315f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_final_endpoint.stdout",
+      "preserved": "evidence/kq_primary_mutations/Q_final_endpoint.stdout.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_full_error_generator_derivative.execution.json",
+      "preserved": "evidence/kq_primary_mutations/Q_full_error_generator_derivative.execution.json.gz",
+      "bytes": 1049,
+      "sha256": "f6cd7cbc63d7a6daa61269255233595ba1822d6179b3c4b88009fb85c3c302f2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_full_error_generator_derivative.py",
+      "preserved": "evidence/kq_primary_mutations/Q_full_error_generator_derivative.py.gz",
+      "bytes": 20833,
+      "sha256": "6da55f5cd522ad6c06040cd2694f91bc52b687b674a5ba8d7c27bfaf248d0118"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_full_error_generator_derivative.stderr",
+      "preserved": "evidence/kq_primary_mutations/Q_full_error_generator_derivative.stderr.gz",
+      "bytes": 852,
+      "sha256": "c82c983e1448f1ed5b6441a96eca7eed6f6f4cd125a1b291682e954baa6905a8"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_full_error_generator_derivative.stdout",
+      "preserved": "evidence/kq_primary_mutations/Q_full_error_generator_derivative.stdout.gz",
+      "bytes": 860,
+      "sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_initial_endpoint.execution.json",
+      "preserved": "evidence/kq_primary_mutations/Q_initial_endpoint.execution.json.gz",
+      "bytes": 1023,
+      "sha256": "c53d7200b6d109021ed39c3882455362e197391e58ba145cf36f1c9a5bbd6493"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_initial_endpoint.py",
+      "preserved": "evidence/kq_primary_mutations/Q_initial_endpoint.py.gz",
+      "bytes": 20808,
+      "sha256": "fba5efb4a9c706a8fe15ef4f60b0dd5a24484062a455eb8134e4799d688e5a08"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_initial_endpoint.stderr",
+      "preserved": "evidence/kq_primary_mutations/Q_initial_endpoint.stderr.gz",
+      "bytes": 810,
+      "sha256": "4800db2b1d937822928863a912a9f1cb11bb0558caa8ece9690b50aac3b7e171"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_initial_endpoint.stdout",
+      "preserved": "evidence/kq_primary_mutations/Q_initial_endpoint.stdout.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_mean_residual_term.execution.json",
+      "preserved": "evidence/kq_primary_mutations/Q_mean_residual_term.execution.json.gz",
+      "bytes": 1027,
+      "sha256": "5cfe3e237fa00c81439e4d9cfe740ed425640fd39ade58de461a46e3553ac24e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_mean_residual_term.py",
+      "preserved": "evidence/kq_primary_mutations/Q_mean_residual_term.py.gz",
+      "bytes": 20809,
+      "sha256": "b9ce83d0d6ee72fe5d30302aec17b400153e0b53a58922efeb8870fb728c4962"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_mean_residual_term.stderr",
+      "preserved": "evidence/kq_primary_mutations/Q_mean_residual_term.stderr.gz",
+      "bytes": 1125,
+      "sha256": "2cf42e032bc8cf7d4a2d9f803418794df58a47564db530cbf1ec4add6183a830"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_mean_residual_term.stdout",
+      "preserved": "evidence/kq_primary_mutations/Q_mean_residual_term.stdout.gz",
+      "bytes": 250,
+      "sha256": "f70bd92ab5efbe00f5ff829e35b178cda355a7992830e34878421e4b7b3ea844"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_mean_subtraction.execution.json",
+      "preserved": "evidence/kq_primary_mutations/Q_mean_subtraction.execution.json.gz",
+      "bytes": 1007,
+      "sha256": "060cb6b0564e78cb1fb161796d3a059ee90f7987cab6b8430da5cbcac8ba12ae"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_mean_subtraction.py",
+      "preserved": "evidence/kq_primary_mutations/Q_mean_subtraction.py.gz",
+      "bytes": 20819,
+      "sha256": "4deb67bf2b7cacaa26515c560d29437195da850aaf0680e5f148f91dce56a01e"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_mean_subtraction.stderr",
+      "preserved": "evidence/kq_primary_mutations/Q_mean_subtraction.stderr.gz",
+      "bytes": 1059,
+      "sha256": "deb5b409eaa94d4a6200580e63efe9279b3612f5877fa817758e5ec86fba3fcf"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_mean_subtraction.stdout",
+      "preserved": "evidence/kq_primary_mutations/Q_mean_subtraction.stdout.gz",
+      "bytes": 213,
+      "sha256": "e82f9bbc12bdc648fba750993dbaeffced3be0968760fe3497576e4e37d6f439"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_noncommuting_perturbation.execution.json",
+      "preserved": "evidence/kq_primary_mutations/Q_noncommuting_perturbation.execution.json.gz",
+      "bytes": 1084,
+      "sha256": "dac3bdfe428c20aacff1f432fe001ba32e8d2edabaf826f5fb69e60c5c620a34"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_noncommuting_perturbation.py",
+      "preserved": "evidence/kq_primary_mutations/Q_noncommuting_perturbation.py.gz",
+      "bytes": 20803,
+      "sha256": "b15b0675842c1282dd5f8d915ebd25ce769003973b347f08394457bbeccacc7f"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_noncommuting_perturbation.stderr",
+      "preserved": "evidence/kq_primary_mutations/Q_noncommuting_perturbation.stderr.gz",
+      "bytes": 837,
+      "sha256": "9b6093a418e38b75aad3332af4ae4648c9a5054d149ad3dab5e7c85a33cb9724"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_noncommuting_perturbation.stdout",
+      "preserved": "evidence/kq_primary_mutations/Q_noncommuting_perturbation.stdout.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_source_clock_derivative.execution.json",
+      "preserved": "evidence/kq_primary_mutations/Q_source_clock_derivative.execution.json.gz",
+      "bytes": 1066,
+      "sha256": "9c4bc8fce9c59ce40da1322fb117b12c52f6126a87c0e86a5df2e2516575acc2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_source_clock_derivative.py",
+      "preserved": "evidence/kq_primary_mutations/Q_source_clock_derivative.py.gz",
+      "bytes": 20810,
+      "sha256": "56506ac9a14d2778081b6a6aa61006a8295422fcf2b697b42e4d323133ac6abf"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_source_clock_derivative.stderr",
+      "preserved": "evidence/kq_primary_mutations/Q_source_clock_derivative.stderr.gz",
+      "bytes": 828,
+      "sha256": "95cff737952430e8250f415a3fd833259d8c3f558127d3b0ab9b36db5a9d2c5c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_source_clock_derivative.stdout",
+      "preserved": "evidence/kq_primary_mutations/Q_source_clock_derivative.stdout.gz",
+      "bytes": 860,
+      "sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_time_corrector_derivative.execution.json",
+      "preserved": "evidence/kq_primary_mutations/Q_time_corrector_derivative.execution.json.gz",
+      "bytes": 1092,
+      "sha256": "5f0827ea6d2de3bd711baf4a60bcc3f5f1b4dfb5c5e46758cdd0d29fc008d2f4"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_time_corrector_derivative.py",
+      "preserved": "evidence/kq_primary_mutations/Q_time_corrector_derivative.py.gz",
+      "bytes": 20811,
+      "sha256": "d5ec4af23d73295328e4060b9aec53270a79a07e9e3ce0ea4048010aadf72349"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_time_corrector_derivative.stderr",
+      "preserved": "evidence/kq_primary_mutations/Q_time_corrector_derivative.stderr.gz",
+      "bytes": 837,
+      "sha256": "4dd36e1757ccb6ce81edf9e147c38e627e45f116c404b0fbc0d9f55246ad3f21"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_time_corrector_derivative.stdout",
+      "preserved": "evidence/kq_primary_mutations/Q_time_corrector_derivative.stdout.gz",
+      "bytes": 814,
+      "sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_alpha_derivative.execution.json",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_alpha_derivative.execution.json.gz",
+      "bytes": 1054,
+      "sha256": "3ed90ca1e8e09823445268461a8d016df853de0a5b0da7e94a89c860fa656eb2"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_alpha_derivative.py",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_alpha_derivative.py.gz",
+      "bytes": 20829,
+      "sha256": "eb65b6f2177fd2d7441b761d09adc59f0ce78b72b8a67457c1703950395ed989"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_alpha_derivative.stderr",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_alpha_derivative.stderr.gz",
+      "bytes": 863,
+      "sha256": "8f666c563e3a98ab02cb7686dd9dcc08067077d94e1d76c462fa47ab2f0afb7a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_alpha_derivative.stdout",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_alpha_derivative.stdout.gz",
+      "bytes": 1809,
+      "sha256": "9778370587cd1abb58c62e7b3f617685a034bda50ddf2199299ee76c37e371b5"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_coupling_derivative.execution.json",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_coupling_derivative.execution.json.gz",
+      "bytes": 1056,
+      "sha256": "73cc49ed6bedea34a0f13d6a50b8c7ac9cee746f45b0c1104e620b5c98a1bf9d"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_coupling_derivative.py",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_coupling_derivative.py.gz",
+      "bytes": 20830,
+      "sha256": "a72bb95ea3b00c0ff00003b55207559ede9fb9a95973a8592e001d3967584afb"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_coupling_derivative.stderr",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_coupling_derivative.stderr.gz",
+      "bytes": 872,
+      "sha256": "77bbebc28cfae300c79a927b053df734bd20f74b5322b49df47cfce0a670a701"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_coupling_derivative.stdout",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_coupling_derivative.stdout.gz",
+      "bytes": 1809,
+      "sha256": "9778370587cd1abb58c62e7b3f617685a034bda50ddf2199299ee76c37e371b5"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_propagator_derivative.execution.json",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_propagator_derivative.execution.json.gz",
+      "bytes": 1083,
+      "sha256": "04548159377f1489aa30c67a8d5cda86637ae7bbfd09a32d82b67ca4960963a3"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_propagator_derivative.py",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_propagator_derivative.py.gz",
+      "bytes": 20812,
+      "sha256": "cd72d38dcc5a3417f59f4d0563fc139e5d9a55d5c44fc164e7a1f91a8015135a"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_propagator_derivative.stderr",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_propagator_derivative.stderr.gz",
+      "bytes": 878,
+      "sha256": "ad9f80e176777185bdf6f0b2589ee0ef4365501d167b0687a37202305b198d23"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/Q_transverse_propagator_derivative.stdout",
+      "preserved": "evidence/kq_primary_mutations/Q_transverse_propagator_derivative.stdout.gz",
+      "bytes": 1809,
+      "sha256": "9778370587cd1abb58c62e7b3f617685a034bda50ddf2199299ee76c37e371b5"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/kq_primary_mutations/manifest.json",
+      "preserved": "evidence/kq_primary_mutations/manifest.json.gz",
+      "bytes": 18241,
+      "sha256": "41f31b83932d9e762077d7ea7d0ac927974fa652f1f1e0255298c5d171b6cbc9"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/prepare_kq_notes.py",
+      "preserved": "evidence/prepare_kq_notes.py.gz",
+      "bytes": 10355,
+      "sha256": "acd7433bc9eaba4c94c15e9a26bc25eda537577aad0a5b4f4930e3c324b60bee"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/prepare_kq_packet.py",
+      "preserved": "evidence/prepare_kq_packet.py.gz",
+      "bytes": 17241,
+      "sha256": "3ba211ef01cb0f20f515b3d9951b1bd3dd6a04a8a592ae7e7ca0706399664f5c"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/prepare_kq_primaries.py",
+      "preserved": "evidence/prepare_kq_primaries.py.gz",
+      "bytes": 4681,
+      "sha256": "7909d8ff3474f9562a54ee2a74f50d4ab39c5f21f674d2b79ba0c5f7dbc21798"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/run_kq_primary_mutants.py",
+      "preserved": "evidence/run_kq_primary_mutants.py.gz",
+      "bytes": 3192,
+      "sha256": "3b6a25eb9c29349bff8e5e6f1462b81cdae079f4fd458be5ad2832b18f15b064"
+    }
+  ]
+}

@@ -1,0 +1,2349 @@
+{
+  "base_revision": "773321aa8fdfccc05248682dfc96bf94215034a2",
+  "scope": "Exact intended publication files except this manifest itself.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/APPROACH_REGISTRY.md",
+      "sha256": "5af9b51e9d4ee0ad862130242f7394cd0f5319ce7983281ba93f6fb2b446654f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/ARTIFACT_PLAN.md",
+      "sha256": "a708ccf976df38e37586274a2e53d26ac3b859f97699ce7085cd68744514db03"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "c583ff0c6116e9228fd8e0245ba0a74d9fba693c8f06ead9b19b4ae5977391ae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "19efe6f3bda91cb7ed37e8bc5be28297d9b1d47e0eddd02dd3cadf684f3af200"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/DELIVERY_CHECKS.md",
+      "sha256": "7d77843443bba778703da77ec606aac88a29d4a0642647bea99df8d10f09df3f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/EVIDENCE_MAP.json",
+      "sha256": "04cd93ffe16402150bad26e8b429feabb382f5dac21605ae11be9c0981a7ed4d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/GOAL.md",
+      "sha256": "018cd5b63220dc82855e0d012a6f6195ec56ce45e20b7e80936babc8c32e1b6d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/HANDOFF.md",
+      "sha256": "2bab4e93e81e5d2347d77b5662c42c45be5934f7b98b892eb945ab1b03b42282"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/LITERATURE_BRIDGES.md",
+      "sha256": "76c8a05ae815a55bb0a7cc28b50fd1afdec9b59dd6e726c136b4ff2d236a5567"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/NO_GO_LEDGER.md",
+      "sha256": "00a3ce73ca4baf1af815a825cc0eae72d1b2d2cecdcf805602d51c6c251b339e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/OPPORTUNITY_QUEUE.md",
+      "sha256": "faa449552a27893c9da8edc6c9d70df599174cb9fe60e4864f1b5b99773d5b74"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/PRIMARY_COMPOSITION.json",
+      "sha256": "7fe86a5cd581a97e7a7264f4f6688cb685282b3782a204f70d9886b0836b75d9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/PR_BACKLOG.md",
+      "sha256": "3e4cfa7022480cf55591a4c42f7d7b899ceaf079de1962dfc7aa8560b5b67355"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/PUBLICATION_EDITS.json",
+      "sha256": "f2a9cbf058c63e3a356d8926fe74b56e93e232cd8935b0ffb2bbba37f74898df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/REVIEW_HISTORY.md",
+      "sha256": "e2adc5310fec5e52bfd8ef00f1d8edae371439762327bdfc1c71590ca9627e3e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/ROOT_COMPOSITION_REVIEW.md",
+      "sha256": "ba946bfefdb3ad620b5f8fb928915a1dc99bcb094ca6e769755867ffccfce5b1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/ROUTE_PORTFOLIO.md",
+      "sha256": "c68328474514322315e882cf59a2cab9348cbc00dc3f936c28bdcc8504f15904"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/STATE.yaml",
+      "sha256": "0fe590e48f97f3a54944889158d053303549f2cb7b039f9497c8384301bf7fa8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/TRACE_GATE.md",
+      "sha256": "89e5ae79632f657bba1ee621a0ccfc32a77f7e4fbd52964260d982a412f4cd21"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/BOOST_HSTAR_QUANTITATIVE_CORRECTOR_PROBE.md.gz",
+      "sha256": "bb18d27758f5524b944b38b06266212d7fbd33f86211ed04cc0c50b793aae881",
+      "decompressed_sha256": "4b1d5a8395d1d5c79d798ef17950f7c1ce4c1e0781e2f9ec610223bc1eb69820"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/BOOST_HSTAR_QUANTITATIVE_CORRECTOR_REVIEW.md.gz",
+      "sha256": "f5f2217b8d45186bb39c3fad42a7701fd6160f1ab879440cda1415891f13d59e",
+      "decompressed_sha256": "6ccba5be389898bd97ce12e53bf767dd002a3e6f282afb3cb4e010f49d86ca2d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md.gz",
+      "sha256": "2227ecdff04fe8dca4b85d5dbe17fe29b2dc4d75b11065857a0a5630dd9278f2",
+      "decompressed_sha256": "1c314fc05a26ca27e0828a70ca8132a2bad269b60c127ea37a53e11e95e087c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md.gz",
+      "sha256": "3665e6aa525e34d89828c82c0fcb5d09afb69310289b628051dcd6749e3d8860",
+      "decompressed_sha256": "64cf08ea2c12f086d0efcc862d17ce0e394f53dfbcbfa5d48db73a10bb9652ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/KQ_canonical_output_comparison.json.gz",
+      "sha256": "771589248c0f033ed8a104ba21c052f19cacd2a6d7b7ec31e4c8b0e51429de5b",
+      "decompressed_sha256": "bc0766c8878da219788b69bb990fc810ba731ac1989abd727993ca36f3123eff"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/KQ_root_original_mutation_provenance.json.gz",
+      "sha256": "f6010b6f212e19bafa5a51a2b354d67efae72a486309ecbc620cbf8efe97ef6f",
+      "decompressed_sha256": "a41828c5546b5a25a53bb8c6b0f56cbd3de5c77643c97830e95ea5109d5609ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/K_root_review_coverage.json.gz",
+      "sha256": "7272a058c92bdbb5c025bbd7889310dba9f577dd9ad9526ca3174b585cf6ebd2",
+      "decompressed_sha256": "bb3f9e905ceb1b8f4b00b6d6f37b3e15ce0f5ba2c5bf88881b688febd5043449"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/Q_author_root_identity_check.json.gz",
+      "sha256": "65600b2aa0b937b1f39b7fab80561733281c30f77b5ba26144100186d8b93cb6",
+      "decompressed_sha256": "d33093898f2248e7b2fbb128ee8b59f2e09dfd2af314e09c55c6854385c66369"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/Q_root_review_coverage.json.gz",
+      "sha256": "186aa09b834e37bb3894bc6b056b585bf8ae453c1d4f582c00068dc17e695253",
+      "decompressed_sha256": "7b1c16c272b9c299318beb1e4bd2527cd995847cf6bd4a0b7ff43a20cbd43e55"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/CHECKPOINT.md.gz",
+      "sha256": "a213b1e4a647c4df115572ada2ed1c80f6e815b493d9f32b0e1b3822b84de408",
+      "decompressed_sha256": "3ec9333bf518362f001ce8aed391500104adf565b555fa78ed7b1e64658fd32f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/PRE_AUTHOR_FREEZE.json.gz",
+      "sha256": "4cf13936485b2d0d5ecbe90ffcbb4eb2a93a70307822773471b84d448103a8af",
+      "decompressed_sha256": "8cb07630fe71b46b99678f91b73316eb62cd0c20083cb5080ac753c8438d762a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/PROOF_RECONSTRUCTION_PRE_AUTHOR.md.gz",
+      "sha256": "22e9796da82cee78414d032ca6c07fe7a8904bde64894fe7943b363418546299",
+      "decompressed_sha256": "d8069f6681f60eae1629e026fa877fac11eaa92d69e0a2df6510b40270a1fad2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/author_baseline_replay.execution.json.gz",
+      "sha256": "015a59d2ecb52f7f4943ff9cf5d3b0276ef07be96656be580a9f4e4721536e90",
+      "decompressed_sha256": "d6403742a3332d4fc8ef6ec76268acc770b3ca4720ed2abced7872004a867330"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/author_baseline_replay.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/author_baseline_replay.stdout.log.gz",
+      "sha256": "937e431a17b4708364e4fc32e540a8c26ee286a0ab6384b7fc59473490b42157",
+      "decompressed_sha256": "bce38d9595a40c658a69d42976cab850437b04f5bb28c5920a1ec631d7615725"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/author_packet_identity_check.json.gz",
+      "sha256": "3c5c66791d83c260e290827a7d62c92594371041b8573d57df3daa27f39de79d",
+      "decompressed_sha256": "f0141f6d8207e69cabc5d94630523929904ff08bf7f1f0a835c856dc06fbf97b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/author_packet_verification.log.gz",
+      "sha256": "eb0c8777880926275264427626599ee7e848f751c7a5f846b30fb973cb02870a",
+      "decompressed_sha256": "779ba7434df30d4883ebb7005a62d67486da8199ed52e9a131563fe572f94105"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/final_identity_check.json.gz",
+      "sha256": "bd7c15efba77a3d9346c225258042aad536e178609759c0059c409432f484a9c",
+      "decompressed_sha256": "afb12b9c1fe4fe91c8b361b98c54f51361c4dece8b07cb6e846898011e4abc7a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/independent_controls.log.gz",
+      "sha256": "d1c7396d50d38bb8715055124033a02719aecd7a894aea688fc6eb41f94b62dd",
+      "decompressed_sha256": "09dd4cf00e86fb7f62f3085ce4f5c602fcfe2125145bebc62572c119b99f3cb2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/independent_controls.py.gz",
+      "sha256": "d642230b24aac5e1e433c23afe21ac5b5ec304ff724eda012e85b8d6ed564a78",
+      "decompressed_sha256": "0ab5e044556b5548bd6723702292abad6ef770b914a509558f2a23531b39dff3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/receipt.json.gz",
+      "sha256": "5633a3c4027cc36105956348bb3377633ae6d50c76385d31732d6fb9f4a99cbd",
+      "decompressed_sha256": "6ecec5f7e9831fde22922d2ff6f5b7db4a31059ca82cf4b550a058a3a1aff7ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/receipt_freeze.log.gz",
+      "sha256": "a2f9e2bd494f7e5f93c5d7f0acf0909fc36b21a8e7f672e5338e1bf2af4d7c63",
+      "decompressed_sha256": "81da038de06b6bb369a94277e1c1ed51877fd1707ec38586a6e67a1d8294b6b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/verify_author_packet.py.gz",
+      "sha256": "a0e636915a3aada07a9659e1fc5cbf513cefb81eb7827497865455693275cf73",
+      "decompressed_sha256": "e3a80873599134cdee60f3238ae4e9dbe31cce55612c0fda6342a0dbc612354d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_forcing_review/write_review_receipt.py.gz",
+      "sha256": "ce4e54ca54ce80b2db61863c3de5bb094a0d8162ccc49a873a1ed721f4536bfa",
+      "decompressed_sha256": "a815239f1fa41f487a523c20da710f24015f03e5907943ee63a8af42f4780e09"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/AUTHOR_CHECK.md.gz",
+      "sha256": "3e84d3dcf3d6b2e3285935dc6d86bd1d94440a74e04f2988ad29c6cade9818aa",
+      "decompressed_sha256": "00ff668c81de859e3a294277df39f0fb8a60ddfc07189fa77be17560f2b538b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/CHECKPOINT.md.gz",
+      "sha256": "564103861881550d5105c4b319b14937548e1bd5bf1c1697fd5aef598ccb134b",
+      "decompressed_sha256": "724b834a162508afeab6099764712397a7b75598f79543ec938db3d48c8fbce7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/EXPONENTIAL_BOUND_PRE_REFINEMENT.md.gz",
+      "sha256": "8df09b4b817843c06149a626296d0eec7a73c1d2b9e44a5bf19466eb60d0bde0",
+      "decompressed_sha256": "50ceee39e4a7364bb2b616ce09b741101492a9639e91ad0a2776c66c8b7a4ce9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/EXPONENTIAL_BOUND_SNAPSHOT.json.gz",
+      "sha256": "342032eb6a810f381fc3ead1b6201a28e8d26afce5315d799e02722c55f7112f",
+      "decompressed_sha256": "8adcdd3261e1997f8f7e58455b1c3c8864fb09f57536a0dd1ea26c0736cfa351"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/baseline.execution.json.gz",
+      "sha256": "03c390e0f516e9c9695c02c0a598930258e5202d50156260e544318a593912f8",
+      "decompressed_sha256": "4cb8832dc8e2844ff27b807d93834ac1aba6f12dd29fb338add1ecec722f5b39"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/baseline.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/baseline.stdout.log.gz",
+      "sha256": "4c77543024da19a49cc81f1969beff64ee22cd6b6de83bb1ccd3deef20436eee",
+      "decompressed_sha256": "2965423ebb4241c982abf5d462572ed0861307a98a95d73e594d3ac76e0cc1e6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/corrector_controls.py.gz",
+      "sha256": "d6acf4b303d6cba7d6a91caca6c648eb4c152a288b576bfc6fecf8a455226977",
+      "decompressed_sha256": "f2b9347fa419a4e6a442a03498a8aeb6e0562913198e06b149d8a50b3a51ec13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/freeze_receipt.py.gz",
+      "sha256": "ddd8f4415d7a8c8ec052f54878abc897e01f2d67b630fec694bbe99cc25b1cc4",
+      "decompressed_sha256": "ee0192bd9fa74671b1864f2913066c2d65f79125657b2e7be1994505a9315cad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/instruction_manifest.json.gz",
+      "sha256": "4f7fc34ae7c397af6d2e73bb836418cbc97050e85b6e6fcb8045a4671f8beada",
+      "decompressed_sha256": "2b68815d4ba54ee11699bb5ed8dd19ae96902b3aa867aed44817bab84683c2c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mean_baseline.execution.json.gz",
+      "sha256": "c74a1919b5d196545a70ff9fb7a5a65705b5e337b4ffd3dbd8366591a817c132",
+      "decompressed_sha256": "4c0871fdc19becd53cbf48440c302106923f06854bff084d5ef649f850f31110"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mean_baseline.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mean_baseline.stdout.log.gz",
+      "sha256": "2cc1aaf70cdf81d54b892a108185ad20c9962b0126604ee6b280ea3bd9e1b709",
+      "decompressed_sha256": "be2bb44ffd1e452b53cc0a359ebcafd366d60e9158e4080e4c55d66dd622b044"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mean_controls.py.gz",
+      "sha256": "09f6592cfbec7ffe63ffcd63e8c12b31e8f0f5bda15e4bf484a3541c6625d2bc",
+      "decompressed_sha256": "101c90f89765a5d0c81a5e790e33f312e9abb3dccfef5139b6261df6dfee4f7c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_final_endpoint.execution.json.gz",
+      "sha256": "ad09dac799636067e8cd37f015b380d7505d754621b8270a6648692f9f1e5455",
+      "decompressed_sha256": "cf3f51b7b0555cd2c19c9d451e33a8bb10d0d433f099fc86ea1cc9127fc1ca9e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_final_endpoint.py.gz",
+      "sha256": "94aa28a27f9d64ccdb8de832a900eaf712555a0b759a1d24d9a1b56ca4e7164f",
+      "decompressed_sha256": "e3e2b14fa290844008f72cc685590b20c09013c9250daa7eca18a1a8d0941c47"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_final_endpoint.stderr.log.gz",
+      "sha256": "fd4c38ce52d9f16dbd5134d9049e6b698ab23c7bca4a4c1b58523437853cf37b",
+      "decompressed_sha256": "fc559c4d0df2c1b8190e529bf298e5e35379c4902a15f71848241512ff588a92"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_final_endpoint.stdout.log.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.execution.json.gz",
+      "sha256": "13a9f8b8f4d6c0a0ef5091be5eed1885d5419119f34824a8a8ca72dd1ade3bd7",
+      "decompressed_sha256": "b9a763dcbc3bcdb483d4fa0980f5f765b5db3495d401c3f609ca3bd3282cb9d7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.py.gz",
+      "sha256": "6a26ef7b0e4622851aa98e136cd0c89eaa9830d7cde77b83d64152b83c877852",
+      "decompressed_sha256": "2161ac98f9b0891bd3edfbbdabfd277918d3ffad5874a22af0793934752db0b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.stderr.log.gz",
+      "sha256": "306e8534351b7fd036ac3367a2016b3c97de2b291ecb9b298a8fbbdd8a84c994",
+      "decompressed_sha256": "e91aa60247ceedc0eeb5b515cca670e317ab2f647fc457dbd0d5113a2c8a1873"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_full_error_generator_derivative.stdout.log.gz",
+      "sha256": "a14911e567a3264d9811024249a18c87bc5510a0a8832adf40f6dfe5b662de61",
+      "decompressed_sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_initial_endpoint.execution.json.gz",
+      "sha256": "efed64e66669b7ac6b5477fef558d99bc67a9f3c7ad62784e60883dd9db99185",
+      "decompressed_sha256": "9765bb98a290a0cf837eb43c4e5d403f717dbd9b4f187ab88193802f4fe184d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_initial_endpoint.py.gz",
+      "sha256": "91584addd75c7132c1d2812d75849e1558930701b324c3fa1b1887390f0ba55c",
+      "decompressed_sha256": "7a5177d975b7c05d59117b20bd951ec8ef7ade031d8600cf69ab5ed3db122249"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_initial_endpoint.stderr.log.gz",
+      "sha256": "2dddd5b483138230f43dac4a72872f0dd9d77ebee004d0dcb6ef7b62b21712b2",
+      "decompressed_sha256": "114ca1cf22eac889fb27de970451c43d1ca274276439ecf9241fad3fa7032c81"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_initial_endpoint.stdout.log.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_mean_residual_term.execution.json.gz",
+      "sha256": "1dd4c60a4e01a2154abce53249a38f6714d2716d9a4f54bc6bc4c1f2c113095e",
+      "decompressed_sha256": "82379f5101f3d03ab5b20da7f482b04968b4272817b8db01292f7e6b59428c0a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_mean_residual_term.py.gz",
+      "sha256": "cb248bd241f1ad9765a081e5e86de241f1829cb2bbe8f4c657e039ffb66bda83",
+      "decompressed_sha256": "ab31c7ae46e857c0cfda6b92130dd94bc39eca420c27ed9bac6b0d3c8d4507ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_mean_residual_term.stderr.log.gz",
+      "sha256": "25a1d5ff1f2e72fbb4d2f0b9430bddd0322ff27f7b9653c2557b4946b515a90f",
+      "decompressed_sha256": "61f0dc7c870299bbdc4b7802403f0118f35128f24d6f2fa0241042e25b3832f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_mean_residual_term.stdout.log.gz",
+      "sha256": "23d41e31f00b10cbf5890f2d8ec22ed8f8b43a49173381b2023582a31f7f7441",
+      "decompressed_sha256": "f70bd92ab5efbe00f5ff829e35b178cda355a7992830e34878421e4b7b3ea844"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_mean_subtraction.execution.json.gz",
+      "sha256": "8ada07c4399abdd4707f3098a110917849a3400fce446cbc6f764648e8beefbc",
+      "decompressed_sha256": "5d43ece11b5fb1fe8d70aad5b8f7b323ade0f444d604a3c8f3ed697625dbd14a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_mean_subtraction.py.gz",
+      "sha256": "d0084e1f007ec803709a9eaf92222d94e3f178c01404b12853a013c049e892d4",
+      "decompressed_sha256": "65ecd06b071a15860087bc111b697b72c8c36c7212d5e09031d2227bb9762ee1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_mean_subtraction.stderr.log.gz",
+      "sha256": "1a423987393169caabb50608e9c40a36f89699f35f2e811bbcafddab461e69c3",
+      "decompressed_sha256": "96554268692a28bcad1d9f94dbcea1c4e58d310c3a57d8ec6e3545a871295aac"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_mean_subtraction.stdout.log.gz",
+      "sha256": "1e02b6f50ba01a4404dd17c86eff25aabb7faa159a51358e75015be6a3245e14",
+      "decompressed_sha256": "e82f9bbc12bdc648fba750993dbaeffced3be0968760fe3497576e4e37d6f439"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.execution.json.gz",
+      "sha256": "89b934d9b7f40d1c53a27e8d0f36cadea50f0534f89c3f0fa65970d2ad374297",
+      "decompressed_sha256": "21bef92b5e25e224f23d4041173cc4a923211e834f7016d8a13302159eeb3697"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.py.gz",
+      "sha256": "2ff665c946076e4943dfdc1dc930a3d5a6a71d3577e1c0d6deeb63a5ee6968c5",
+      "decompressed_sha256": "173beb4171b099a4b8b85bcdcc25712f08340a5d06e2926d6d0daea6d501a807"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.stderr.log.gz",
+      "sha256": "d358c5112172fd1ef102d29292f670dac613bf72ac9fdcd52fec4b8d6e679b1f",
+      "decompressed_sha256": "713d2c9e1a3cbbba4cdd18257622806e2caad7dc44a3b66d9a7f52b9ac2c9d65"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_noncommuting_perturbation.stdout.log.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.execution.json.gz",
+      "sha256": "2a264ce2faf32bdf14caf48f72fef83e180a3730d095123aafdd71c24243c531",
+      "decompressed_sha256": "dc3bf818368595763b0717e0916657102e7211d98dc7f2f51505432270402c85"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.py.gz",
+      "sha256": "00df90ad0215653b375d3e1cfd74582ff57c82489fcd71ab5e85f8daf55f9b47",
+      "decompressed_sha256": "eb1e556ed607269837820540ffa350414a2f27c54ce39bfae648cbf0aedc263f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.stderr.log.gz",
+      "sha256": "e0c7a16e7527b0f23d1faf0201e333687985e2a03be32e0a3a24c7c4377e3d73",
+      "decompressed_sha256": "a24b22732c42e7c147d4da766543f13403d9c205acf3fc1c26b3828823ad40f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_source_clock_derivative.stdout.log.gz",
+      "sha256": "a14911e567a3264d9811024249a18c87bc5510a0a8832adf40f6dfe5b662de61",
+      "decompressed_sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.execution.json.gz",
+      "sha256": "33d6fcd88f946f55eae250dc9a06042caa4eaf8a2fe7200f0038fc282f8909ba",
+      "decompressed_sha256": "fab111a863f1a457a355ac0635766423248fbf356479cb1bf9fbfca7adaf9698"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.py.gz",
+      "sha256": "d5a33323db1d8c3389056a0e694067d31a7f5c00a28df56c4ec2f8c1f93ec39f",
+      "decompressed_sha256": "74a02fc82618a1b50e2894acc79fe4996c1a436bf7a8ea5fc8bc92c8c347d5ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.stderr.log.gz",
+      "sha256": "f0ccb31f32bb245b716b6c254b656d11b0771234685302ee703cfd582d6fd449",
+      "decompressed_sha256": "6fdaa9f56adbfa8c93ce14708045518a4d3c9988aafa4f35a3e3c58d20978380"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_time_corrector_derivative.stdout.log.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.execution.json.gz",
+      "sha256": "7242e71b8c6b20e4a76e9671f5434f4a83ad73af1b82d24bfbfdc967c5610ecb",
+      "decompressed_sha256": "82c9e2e0cd246563ebd245bd31feb7cbc575bbd72e18792899312f56e4ccb884"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.py.gz",
+      "sha256": "3b16b3eb7ace9d4c60cf88920464b2645464e19ab68142a8cb49ecfe3d516867",
+      "decompressed_sha256": "d2d4cfe9346ea2b70076b1c74ad103567990d6062d79adef137106d12e92b323"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.stderr.log.gz",
+      "sha256": "57e889f19b27f4ad5ff2a68de4f6e56e325ac13d593b9fe54a68bdeb543cfada",
+      "decompressed_sha256": "1a0ebabc0b266c359d0c34bb694f6344995f81b97fdcf2da15744d5b24005ead"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_alpha_derivative.stdout.log.gz",
+      "sha256": "11d20a1231b2d597941c90bd4430b706fa512d136f21450bd992fcadce9918eb",
+      "decompressed_sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.execution.json.gz",
+      "sha256": "f3e267707b887f8209cdd9317b7e06ae950929d2b8c90c1409b777c6d63a3319",
+      "decompressed_sha256": "ee6b3227cda27f0dc9a350490cd711f0efad793453c2a0a5cdf8b956af9fd77d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.py.gz",
+      "sha256": "a97668f622220a2cc9a27757bb94cba7ce264916000c82c74844c9247b0d7e0f",
+      "decompressed_sha256": "f6a262205d5d11f0eb119beee84b5843513e3a2b323c2b788e7c899c73c831ed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.stderr.log.gz",
+      "sha256": "bf49cddd43510dfb16097756137a6ca7f066ee0c3a9defd103ffbce3de7a4833",
+      "decompressed_sha256": "075b9db1075e6e378513463a8a36ad370d54f42842e6416da2efefccd53e7755"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_coupling_derivative.stdout.log.gz",
+      "sha256": "11d20a1231b2d597941c90bd4430b706fa512d136f21450bd992fcadce9918eb",
+      "decompressed_sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.execution.json.gz",
+      "sha256": "30555a14d51adeaa6c1c9adb02bd073a9019e07a99abf4fc6d6a34f2062192f1",
+      "decompressed_sha256": "1944d2aace8e1687dbfef1156fd56af3827b3bf9304ac32308f8d609b592f0d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.py.gz",
+      "sha256": "d0773f9dcb81d8e5229949ebe7decc10c52716c9a0be4dcf8f3a880ed243d575",
+      "decompressed_sha256": "903678778ed9dc03eb37af181aece9caef7b287d5f9da4c8f597c8d83f94d35e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.stderr.log.gz",
+      "sha256": "f9efa930302d653e6defe73780c6a91e4c7e17aeefdc86876775ad114f28aca2",
+      "decompressed_sha256": "d3079aba025af612568d09c766b168de65f4502a69f6f7c0614735b8b8207a62"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutant_transverse_propagator_derivative.stdout.log.gz",
+      "sha256": "11d20a1231b2d597941c90bd4430b706fa512d136f21450bd992fcadce9918eb",
+      "decompressed_sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutation_manifest.json.gz",
+      "sha256": "b12d45d3b283a07682577f853170b5f1a0b2674fd549f13c6ba29e63716a79b8",
+      "decompressed_sha256": "6db3bac1141c6475225dd0286c46582c6726b05ab42340c8603e80f0abd3f94e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/mutation_provenance_check.json.gz",
+      "sha256": "0fec59b9cc167eba43858d85908589809e4eb705e0e666f56d7545dcfb418e4f",
+      "decompressed_sha256": "25a135a3a10481ae3c2dac9758cca57261c9974f2def5cbd25f45c8bb29b18ff"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/polynomial_baseline.execution.json.gz",
+      "sha256": "f1b811e06095bb1574a77f1dd95df21a2864c1ea4a715678339bfe38aad6b4c4",
+      "decompressed_sha256": "813f1c161d5f5c80031ffad8a95bf7eb37a27bdde297fcc901d24c653512028e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/polynomial_baseline.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/polynomial_baseline.stdout.log.gz",
+      "sha256": "9c2e076fd607e711a7b8be622a8405b6df1983b1f02f66a7274a5a681d04b77b",
+      "decompressed_sha256": "2ef441c844952688a1e830c7e3c2dcc8e2f0f0000f1f6aa7e1055e75efac4a30"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/polynomial_controls.py.gz",
+      "sha256": "5e1f0184f2ac8958ca1ff0c30d18d4a6f602842c8dbc95bbe9f87474239c61b2",
+      "decompressed_sha256": "a56d25d86244d5fb3a2865a0790abe554c54aca225393bdaa329eaf4cab086cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/polynomial_mutation_manifest.json.gz",
+      "sha256": "ad60ac6f05b82327e7b297b6e5ffb533c76fc01d39a03c424bd16affcdcbc740",
+      "decompressed_sha256": "1ad9c147f7c86826353e1657e7634004a12b8adf7673b370c98550e08e3dd7f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/receipt.json.gz",
+      "sha256": "bab4baa242efa659c0787e06f2e648e4f9e54d5a65f6cbdc1546853899f1bae5",
+      "decompressed_sha256": "c447314e4a130e2fc2e047da6ddbe2abdf20209c5aa4718c2bab9b75783b5356"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/receipt_freeze.execution.json.gz",
+      "sha256": "39bc224555477780aa2ac696d0519efc09a1c3ffd9f5a945bfff5accbc2622d8",
+      "decompressed_sha256": "f6efe361dae1fa04261397db7ae7805eac6f42b214719ac03e5399197b738352"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/receipt_freeze.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/receipt_freeze.stdout.log.gz",
+      "sha256": "b054bb7bef99a9cfef7731d0c1a56553b9fa087d883a13ebefaadb9c21772e28",
+      "decompressed_sha256": "663c4dbc677796517f29d6f2ed21a79374bdb0cc184e09375e8bc2fe0e674adb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/receipt_verification.execution.json.gz",
+      "sha256": "befe15cf4abd6b7325bb975a200f3b9f5120601e163c04f866b0814c447c55f4",
+      "decompressed_sha256": "30b9aecdf8784d5c740f41f19d6f9edbb2d31ae6556d3fb36efda86b782bbf7e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/receipt_verification.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/receipt_verification.stdout.log.gz",
+      "sha256": "ce14942c8646d55df33b449b46cffdb4ecdba0a884da63dc8ab112506048dc6a",
+      "decompressed_sha256": "63a7251d7ff045261c3b4f54f20344d01e00df6750aa284adb03f79813c519c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/run_mutations.py.gz",
+      "sha256": "54c060ab264c8286f1a1341cf02431261b05671ed429061f2eff3b0691999cd5",
+      "decompressed_sha256": "ec6672581fac69e74a9e8b05f7e9053ad0e848364b7aeab22c3584498ecffbf5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/run_polynomial_mutations.py.gz",
+      "sha256": "872082a5fdb6d3e321a98be6ae49bf06ebf0c28c1a6301b165c82a9d71a0d4df",
+      "decompressed_sha256": "6a75ea63fd7560573722754f8864252e9c9a86bfc85241222ae277f26e0189b7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/source_manifest.json.gz",
+      "sha256": "58633da5cb327978295ab6f27202df2995e847efd7fbb44c6753eee95767c277",
+      "decompressed_sha256": "30acce0634744fbab7800ae1c7b449dbc4e7a3223856c57f741c978f9cc1211d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/sources/BOOST_CURRENT_EXPECTATION_PROBE.md.gz",
+      "sha256": "816a06e8ef6c7309763ceea31eb1c9bb184d79fa4b8d8dcd734956caca7e7b9e",
+      "decompressed_sha256": "a7161d796001df4af243263acbd03e731d75d0eab2d93795f4b5960eff5acb68"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md.gz",
+      "sha256": "062b7d8dd07a69a8263470167ed19ca8912003aa2877a4065971c4d2e3aff5e3",
+      "decompressed_sha256": "0e17f9647141c200b1efcbe78f60ef6beedc1e249ce1b85544293dddbebe8690"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md.gz",
+      "sha256": "47a14d45d34448b823d882481188f906b3a9cf927c5cc9c8cf694cd969158a54",
+      "decompressed_sha256": "76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md.gz",
+      "sha256": "2227ecdff04fe8dca4b85d5dbe17fe29b2dc4d75b11065857a0a5630dd9278f2",
+      "decompressed_sha256": "1c314fc05a26ca27e0828a70ca8132a2bad269b60c127ea37a53e11e95e087c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md.gz",
+      "sha256": "3665e6aa525e34d89828c82c0fcb5d09afb69310289b628051dcd6749e3d8860",
+      "decompressed_sha256": "64cf08ea2c12f086d0efcc862d17ce0e394f53dfbcbfa5d48db73a10bb9652ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "sha256": "9986acb976ebecfbbd4d7b9d7b08f5a31015bb45b9244ca84478757468f963a1",
+      "decompressed_sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/sources/ROOT_HSTAR_APPROXIMATE_CORRECTOR_LEAD.md.gz",
+      "sha256": "bde7b03a671333579bd1249082d7a7e27a87c80d69cb2c548e36441c4b9741fa",
+      "decompressed_sha256": "3ba9b713942b18e0562ca3b60c840676194b78132e797e088037953e6f808ec1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/sources/ROOT_POLYNOMIAL_CORRECTOR_REFINEMENT.md.gz",
+      "sha256": "0a82b7a7bb781cc547658dc892f73ddb9d6eeb2a62deb70f685c01897f12062d",
+      "decompressed_sha256": "4466bde85ef219e0b20427d996aa5e3c8c4f75f52fc84aa8404ae8f05e6db78f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md.gz",
+      "sha256": "11e26b3281a6226185007b03ae8deb89df1abf26861044472f5cc4c6ce4ec468",
+      "decompressed_sha256": "04adc0b81d3865f4819b8441e25279ef084bda755e9c0a3206be7d314ea04f9f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/sources/boost_forcing_review/receipt.json.gz",
+      "sha256": "5633a3c4027cc36105956348bb3377633ae6d50c76385d31732d6fb9f4a99cbd",
+      "decompressed_sha256": "6ecec5f7e9831fde22922d2ff6f5b7db4a31059ca82cf4b550a058a3a1aff7ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/sources/boost_kernel_effective_dynamics/receipt.json.gz",
+      "sha256": "597e582d0eb5f707640f0963272034c4352cd771396e0f2a8fba313f395b5f6d",
+      "decompressed_sha256": "8767499b08e7721cf1133930fcd9e0a5c703536b46aba5eacd98b81b688d7352"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/upstream_K_review_identity.json.gz",
+      "sha256": "fe070fdfdce52b588a699cc83742002bd49005306f036b9d5da9cf65137f5d13",
+      "decompressed_sha256": "20cf6ac74d9d9bda0f7234adc6ea4d7ff7fa139edfb3bd2167a56e8cf0de1c5c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/verify_receipt.py.gz",
+      "sha256": "87528bd775425e47bfa937b0b40be4b636befb0bcfaf5f941b9ed3fb6405cdcc",
+      "decompressed_sha256": "507a6c364bf00eaffa6846369f71d8aaa6e2d1a02ef1dad0d070c4ddc883b84b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_hstar_quantitative_corrector/workspace_provenance.json.gz",
+      "sha256": "832b86dd85bb19bfe678e00883883aa84f0e30125d81352d0a79d847029dc26b",
+      "decompressed_sha256": "12d07d38ce18179753275d291148648a44f046c7824c5dc13757be62ca08f266"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/AUTHOR_CHECK.md.gz",
+      "sha256": "3c839795ee897617d00fbcc241684bf8c39f7b7a09d7cf8b855f8c2aeb899041",
+      "decompressed_sha256": "f3d86095aedaf43e0bf30c5d365276f4d83b233c437cfd2e3b91d22f8ed17cb8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/CHECKPOINT.md.gz",
+      "sha256": "19ee0710d2714b12ec0ada4df3dab19308aa84a8d293bb861bbba56fb85b657f",
+      "decompressed_sha256": "c18cc17039fc51aa0700771388e639a26e1086218f04fa273321d9b761137f3c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/PRIOR_ART.md.gz",
+      "sha256": "6f202262fcc0acad004e26906a10c789a3e5b262c680790f46ec2a7a93a88422",
+      "decompressed_sha256": "d4e8196bda70a71833aa20ad895777d91e3ea3e87c6a3de1ffcdd162acbf3af4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/baseline.execution.json.gz",
+      "sha256": "4f9172b90a472c2599e2035d1046d45e937d68190a3b7c26db5b10d3c4f243fd",
+      "decompressed_sha256": "10923948480af537bd18ea952f2e0cc5f7f85cacceb60feb1b99de78e78652bf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/baseline.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/baseline.stdout.log.gz",
+      "sha256": "e8d9e5e2f1620909327d0bf931981e773ecfc189b130a25a96f2f473d8603ade",
+      "decompressed_sha256": "edb15c838f6665fe094a612f1585d840c32727525ffdd7138b05110d8be8ed5c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/baseline_attempt2.execution.json.gz",
+      "sha256": "98714b2976a68d229be29b1a331265253fdac12b15048d3deb9c027be1206672",
+      "decompressed_sha256": "6373aab0fcc71a9b26ae2430f8c740c6fcfa37a5ed39907ccee871b093eaa165"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/baseline_attempt2.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/baseline_attempt2.stdout.log.gz",
+      "sha256": "68de774408171194167bdc1f25a935223f8b99a97bc087d2949fa1d87a34d532",
+      "decompressed_sha256": "0183f160af31ef3ed65e3c48f9b5041e867a5aeffc1efb7a1b1d1cea41b5d9ef"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/forced_controls.py.gz",
+      "sha256": "b588a97f780a0dacc0675ab6e34f2e86c8a4efa7b6eaddd417d476abe4f365f3",
+      "decompressed_sha256": "2b73edfdee5c87bfd4aba5e2e1459db49ef4857def47ad12c02c95d48dc420dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/forced_controls_attempt1.py.gz",
+      "sha256": "908f0a8c4975e5df26eef8b35f860ac5c71ea127c1bbe1f68eef5d2c480126d1",
+      "decompressed_sha256": "affcfd14232617f5b859a8f7e7cae9a81699ca12badf680937dd998c636162be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/freeze_receipt.py.gz",
+      "sha256": "e802447b70cd50ffca23e88975fc3edb3e3b27d40caedc3596869fc8a2c4d0aa",
+      "decompressed_sha256": "1a1703938d5f044df0e8e671403dcf8861a567794e1cebb3f84f412b143e54dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/initial_source_manifest.json.gz",
+      "sha256": "c898f433bdb51cfc027cfd3e7938ff0b742c0c3db00184a0459c25c4f52fa734",
+      "decompressed_sha256": "eacde2933da58cb2c8e50360f787268c213c9cc1e499b9d306eee821b51feb79"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/instruction_manifest.json.gz",
+      "sha256": "4f7fc34ae7c397af6d2e73bb836418cbc97050e85b6e6fcb8045a4671f8beada",
+      "decompressed_sha256": "2b68815d4ba54ee11699bb5ed8dd19ae96902b3aa867aed44817bab84683c2c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.execution.json.gz",
+      "sha256": "439f830365893df33cacffe6a598ac4d3023fd7f3ecc82ceb54b6c6c8f8d92f3",
+      "decompressed_sha256": "cdcbb2f03681a17ded0b8d4e98dc5eaa13aeb14389d9f9f003f0ddea98b41193"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.py.gz",
+      "sha256": "413fb137c17f5a2fdb4f362b2c27e47bb0d5454fb9ebdbdb4abf44d230462ad7",
+      "decompressed_sha256": "4d300ace3034fb7bb35db0a160ed80b80204c73abc6a555294ced3899faee655"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.stderr.log.gz",
+      "sha256": "2fb6c93a3d9ea71aa79d9dff2004f03fd0db5b9ab15315fc9c7b8a5a7f5390a7",
+      "decompressed_sha256": "27199bdd17fd89a9246581477eb2541d361b897fb377870eeb4e75a0a2d4bf02"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_Duhamel_source_sign.stdout.log.gz",
+      "sha256": "36e1a0506e7f34cfc79ffd3745318dc0ae7a9c897c1eff79faeda11546cb5fd2",
+      "decompressed_sha256": "a866c9588a51ceccce3fed2c7aa2b113223d13062a0af8b480fc5a3474505e83"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_Schur_sign.execution.json.gz",
+      "sha256": "8061dfe4833de282c71c1fa1d7940c65b1f75473666e38abd6d809fe343e3a95",
+      "decompressed_sha256": "f0fb6ec02d7f9f8403d9435b3b748c241776505ccc23bc470a2bd07124b4318b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_Schur_sign.py.gz",
+      "sha256": "053b735c972563a1051dfadcb3d84de9b87329a91e1151bbf4bea7bd42a10567",
+      "decompressed_sha256": "498233d862428d86159bf2fa3373633a4a3a2fd1b8fe6b81e1d668cef9305091"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_Schur_sign.stderr.log.gz",
+      "sha256": "606249a34affb999e9a991f4628b2c9acfafea5da2a84d9dd25dd2504639af6e",
+      "decompressed_sha256": "03087c69f095c3d929795510af678ef28df279e873cc04a9e80ae17518c105ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_Schur_sign.stdout.log.gz",
+      "sha256": "c69727b608884abb8a3143ef75ee4b817e87e21005b50272512f71bc14bde7fa",
+      "decompressed_sha256": "a81a4d1e3e73b7c269eb7a1d41483fb6f92744cb6bf89bc435c81a2487c2cb12"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.execution.json.gz",
+      "sha256": "6dd3adca711ecbe76ce4b3d47ff72e46e052744875550519a24d717ef4658b47",
+      "decompressed_sha256": "e5d94e133833595b500f36e5fd505ba10d9af7567bb59575f86c6785c7155903"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.py.gz",
+      "sha256": "a6a9b7a222ba91bf3bf9e175a307e2f64a48162a293d738ad12fbfd6ebf8a3d1",
+      "decompressed_sha256": "59257b869bc340020ecf5913e4c7772435cd64a621ab3ff9775353fa1a5b0e07"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.stderr.log.gz",
+      "sha256": "1f6d8bac3f269bdbdb528c8382dbb58c8f7bbb0fff7fbd154464e2f8cc2fc6e7",
+      "decompressed_sha256": "e90d9c3fe17cf4adf96b5af7b520a762a342faa74a7661322b482b7234f29e7f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_forced_resolvent_sign.stdout.log.gz",
+      "sha256": "36e1a0506e7f34cfc79ffd3745318dc0ae7a9c897c1eff79faeda11546cb5fd2",
+      "decompressed_sha256": "a866c9588a51ceccce3fed2c7aa2b113223d13062a0af8b480fc5a3474505e83"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_source_phase_derivative.execution.json.gz",
+      "sha256": "6b1ee289d07b349a535f981422a4995b2ac6598bd8818f0a0fcecd7f033f792f",
+      "decompressed_sha256": "732c7b7430366978ef0ceb1cddb9192f2700ae12656fa2902106b8540ac77901"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_source_phase_derivative.py.gz",
+      "sha256": "729206b79fd75df94e479691376f920f255942a0d03fd7ac93647badfaf62810",
+      "decompressed_sha256": "60895b8686fdf56d4342be389378732d695e1ab6271f6369d3cb090fc8889788"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_source_phase_derivative.stderr.log.gz",
+      "sha256": "0b8faf6aa8295b30bc88e6d4e2510c5cc1ffa2d0357d1f82258afba8117bcc85",
+      "decompressed_sha256": "1a07e8371714a7ace7455914cad5bc87ac3b69c7b702bbc4a14471a218574be5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_source_phase_derivative.stdout.log.gz",
+      "sha256": "22ce1a9fe108bdac541451503dcd813a96d95e86cd39b40535ff0f73b07f9e24",
+      "decompressed_sha256": "6b310473c703a1e47598e74d8fd51ec6e4af4e76153050444feb72d301f433eb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_spectral_weight_power.execution.json.gz",
+      "sha256": "271d67b7f6670fbe708b4be6afbb01f70815bb7e99729e4662378d3fa775892d",
+      "decompressed_sha256": "023ea266f96003617db4e6669bf432e1210dcd7e86916c48319dfee7f40405a4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_spectral_weight_power.py.gz",
+      "sha256": "bbd96fac7d80007be221e3fa6b116b5c21534a24b86615a04767418fc7171d37",
+      "decompressed_sha256": "0a0ba4941189904c0ceaff77cb640d5a0f82c369e2a65322f48f1e8de835abda"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_spectral_weight_power.stderr.log.gz",
+      "sha256": "93021a649921b0012e7f396331989ca23ace3cb24a2ea3797226cab712901968",
+      "decompressed_sha256": "d7889a299550292b52f028c90975ac39b9af8f3dcb44dbc17db042fe0880f17a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutant_spectral_weight_power.stdout.log.gz",
+      "sha256": "6c7db858dbb9b2355f4a996c6acc6330cc7ca0de6163e7239bb06fb686fd6ec5",
+      "decompressed_sha256": "3b1e4c936f54b25188e6380e3b53f276760454e35532564ae532fc5347b573f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/mutation_manifest.json.gz",
+      "sha256": "06353c8b0d71626c580e7c9f6d9994af77818469a523f293b8c38f194e53905d",
+      "decompressed_sha256": "8ea33b4d8eb0b0b0f58a0e0915f4884d98ef088cfbe3bdf012b26d768a051332"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/open_pr_search_Friedrichs.json.gz",
+      "sha256": "abc129be8d26e8d4afe9ce45f9d5a73c8ed9aa62810ca24ee789fe4581dc4a80",
+      "decompressed_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/open_pr_search_excluded.json.gz",
+      "sha256": "51601d6b24108b2fc2d007c666b569da71d5079586c7332f5052505ff24ed67d",
+      "decompressed_sha256": "11fcba364339c05bb768008ce2d98879051b03cb789a2be8ddf78957f448f134"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/open_pr_search_memory.json.gz",
+      "sha256": "ba8dc085e3718c5d2616d3d664d2aca38c327cc36fcf527ee3ed7d7e9e6256a3",
+      "decompressed_sha256": "dd1c7252ea33543e23bbb8f148c004b4b45f04ddc5c7ec0799d1ef413c1ef570"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/open_pr_search_source-cyclic.json.gz",
+      "sha256": "abc129be8d26e8d4afe9ce45f9d5a73c8ed9aa62810ca24ee789fe4581dc4a80",
+      "decompressed_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/open_pr_search_zero_space.json.gz",
+      "sha256": "cb1e1ed1866b54c87d06a154ece00a8cdb46ad7954924703de803cf5ce6a65b3",
+      "decompressed_sha256": "ee445d7251fc172576c6ac4078b16ebfa5d0c459294218cbd4e26e424d0adb3f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/pr_9479.json.gz",
+      "sha256": "1b9a73882d1c630cfab6dbc354741763f5e0a6e7035fc841fdb2995642dea073",
+      "decompressed_sha256": "4471f14032291b458c5a411efcede4adfe2734b1d6f0400ce5cf39ba6ba5165a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/pr_9480.json.gz",
+      "sha256": "c58a758ad2f39dd9bbb553250af08ea3fe8402fc2fb86b7c4c4ec6079880dc4d",
+      "decompressed_sha256": "13795f11e268f4a027df14a766ff1959d3f775de8e43ebe0e1710e2f3bad38dd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/pr_9481.json.gz",
+      "sha256": "25dcb7cc78e3de6f43815f98cc9625b7e29e9946da6a03d9fc7981d94203a681",
+      "decompressed_sha256": "a31c279241f34b9ce349391e40cb8b31cf96bea3c54c032f52ee9ad37ba076b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/pr_9482.json.gz",
+      "sha256": "3b1ec768251a63e25f4bca4e8d0f72175a54c33e641ac95e896a842512aece5d",
+      "decompressed_sha256": "5eb8ae2b72f3fa1216278b301568a01509c15dda55299b72fead277b7909e949"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/pr_9484.json.gz",
+      "sha256": "a986fe735bd6103f7d4fd790f75c253b2ba3786f9bb0eac6e5d88ebc953f4d46",
+      "decompressed_sha256": "e80e1a087cba70afb5a32f118f7215d655d6a94e19847c6da7ac01e976968af8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/primary_paths_ba74c93a.json.gz",
+      "sha256": "099f69ad63f80a165441708a8f6bc68c5cdbded8b27842fe3d93aab918acc0ea",
+      "decompressed_sha256": "227c4d8e4a8625a253201515d558a12c3a6faf0254151bd687cded47f17cd734"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/primary_paths_d8480b5a.json.gz",
+      "sha256": "f28dc51b31f157a5cae9291442b4aa9c2a9f0f86357d10e67cc7a6df5bd4c1cf",
+      "decompressed_sha256": "30a77e45d4c0026c083b26c755a85d99c107267f1bb16a2059cc0b2abb59b996"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/prior_statement_search.json.gz",
+      "sha256": "c8ab56e8602889ffa790778cdc30148a81bd26f40a3932a03b727060446400f1",
+      "decompressed_sha256": "63bf67e2bbf9e82b4212ef375d2dcba590477033be9bb448eb9721e63e553637"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/prior_statement_search.log.gz",
+      "sha256": "ea5ea076d76541fc479bdbcf56554e5ed066f7a329d30529ddb889fe045bcea7",
+      "decompressed_sha256": "857b7e816f3e4742c3908fc79270125f5263f0657c901009ab48837d2fff574d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/published_source_search_9481.json.gz",
+      "sha256": "ee0f924ea9cd092e593589ca2fc85e3ab54d3cfe62444410584d499c185e55c2",
+      "decompressed_sha256": "ed45d572361d250e2bd97d89b40b0965177c1ba3fef3119259c9cc2c6990e782"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/published_source_search_9482.json.gz",
+      "sha256": "0f3251cac042d83a875b0f517427375e3c4da1e20309dc122a1f4778544f2f58",
+      "decompressed_sha256": "78a167646fc20925585a287e910e079a42d5caa5b82736be6c4d8938573110b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/receipt.json.gz",
+      "sha256": "597e582d0eb5f707640f0963272034c4352cd771396e0f2a8fba313f395b5f6d",
+      "decompressed_sha256": "8767499b08e7721cf1133930fcd9e0a5c703536b46aba5eacd98b81b688d7352"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/receipt_freeze.execution.json.gz",
+      "sha256": "0199dcd5354fa8b5344c22a7fdf2a538069b25a1d4eca7132907d0a4cbea0817",
+      "decompressed_sha256": "a853a794123769b859002c32576bc83afd8c99da485b582a3e2666a361d04eb0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/receipt_freeze.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/receipt_freeze.stdout.log.gz",
+      "sha256": "4e4d5bc1c2983e0248e880bccda68126a406529bf13150ed21714d7e6b0f5ac6",
+      "decompressed_sha256": "f209bca41341e725bfdb044dd895b86fc8d34673e4a1198abf6664e9567f84db"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/receipt_verification.execution.json.gz",
+      "sha256": "9cca23cd71da5099b247c6557be175b3ad31fa8abd702aeb509926e82c2b3e91",
+      "decompressed_sha256": "0da0c6319aa9fa86bb1957060e52a697bc211a7ed53128f726ff87a95de37434"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/receipt_verification.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/receipt_verification.stdout.log.gz",
+      "sha256": "c6862b2d96a008912d56be61843c784a8c7650f68243a94bb250d1397fe3ea29",
+      "decompressed_sha256": "38cb7498f1a569a192b220a91840643ef7d920bde53d54e961d1a7cf23bc6c8f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/run_mutations.py.gz",
+      "sha256": "04e7cc7397818a4c906bb13d618de8b10b517a9ef8a770b40ad54850a73f0c25",
+      "decompressed_sha256": "2b8d3a38e1ad35ad3292adc73e64725a5fd99379f7738492700b2faf988ecc33"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/source_manifest.json.gz",
+      "sha256": "036b395a2be51c9b391964b794b12dfe7f2d89c301c9d930420c88fb934add24",
+      "decompressed_sha256": "38354604487f27b280c596d0baacfb616145dfa8b599626bd839ee7089ba77cd"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/sources/BOOST_CURRENT_EXPECTATION_PROBE.md.gz",
+      "sha256": "816a06e8ef6c7309763ceea31eb1c9bb184d79fa4b8d8dcd734956caca7e7b9e",
+      "decompressed_sha256": "a7161d796001df4af243263acbd03e731d75d0eab2d93795f4b5960eff5acb68"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md.gz",
+      "sha256": "062b7d8dd07a69a8263470167ed19ca8912003aa2877a4065971c4d2e3aff5e3",
+      "decompressed_sha256": "0e17f9647141c200b1efcbe78f60ef6beedc1e249ce1b85544293dddbebe8690"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md.gz",
+      "sha256": "47a14d45d34448b823d882481188f906b3a9cf927c5cc9c8cf694cd969158a54",
+      "decompressed_sha256": "76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "sha256": "9986acb976ebecfbbd4d7b9d7b08f5a31015bb45b9244ca84478757468f963a1",
+      "decompressed_sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md.gz",
+      "sha256": "305fc1d116a646f29a1c35379609adca1ee9fe6ae50f82a32f01a5043ada6af1",
+      "decompressed_sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_DEGENERATE_DYNAMICS_REVIEW.md.gz",
+      "sha256": "251931b2757b7d4cda6324e26bcc5d0474f3d0dcd181ebcbfa875223f53f6205",
+      "decompressed_sha256": "c0a788f05c291a900acf3bc1002e139f2c0eba749ee6cdc7b08c6bf4812dc9a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md.gz",
+      "sha256": "5d4ea1ec0440fbbed5930b807a33bdbee1bdea29645846d84bd8e1448c887198",
+      "decompressed_sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md.gz",
+      "sha256": "edbf8bce83c90137f05b82ee34a35c6cde396a4625820a2cd073e3244c077107",
+      "decompressed_sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md.gz",
+      "sha256": "11e26b3281a6226185007b03ae8deb89df1abf26861044472f5cc4c6ce4ec468",
+      "decompressed_sha256": "04adc0b81d3865f4819b8441e25279ef084bda755e9c0a3206be7d314ea04f9f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/sources/excluded_walk_degenerate/receipt.json.gz",
+      "sha256": "26b96034943f5581163830bfb6f62a271cdc266d1c06a491aae9b8cfb28f75ae",
+      "decompressed_sha256": "369bebc245e0e7794608d6a1ef29a4ccd3d374a85f3f3bcc20f0f2dd81288dde"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_kernel_effective_dynamics/verify_receipt.py.gz",
+      "sha256": "1b1dd859af50e441242948d9048e25483946ae8813c1dbe6cec75e0539575735",
+      "decompressed_sha256": "cf66869eaf462799f44bdd7e890bf5262d7649a37d6820fbd6a075c945905822"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/AUTHOR_LOGS_COMPLETE.txt.gz",
+      "sha256": "1b36638ede00df9f0c4d5b4ff6a1511c532bdd94a9d332cc7a63cad9458bf59d",
+      "decompressed_sha256": "fdeccc11633aefb9d7ddf995a5a3ea490ef0f417305dea5293fc71646cbbd2b1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/CHECKPOINT.md.gz",
+      "sha256": "8eee627790364e6fcdea38301a90829fc9f2da0076a6c57f8e7d921a3ed2c6cf",
+      "decompressed_sha256": "b21de3350b7b2ee8712d59b363876fe5ff4db47d4029bdcfa54177e1978f8497"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/IDENTITY_VERIFICATION.json.gz",
+      "sha256": "e75aeb8cadde53b2f36896ea61516959da7d151e42e3b5e8968f7720308e4ac8",
+      "decompressed_sha256": "01cb35c80970a3a77bd45d7e8df43449a195c54678f0536e3c400e4cbf0401b6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/PRE_AUTHOR_CONTROL_FREEZE.json.gz",
+      "sha256": "53b9aae4f27d8a80e1c12bc8689dfd87e7b93e194cfa9d9ecefdf36dd7f66f97",
+      "decompressed_sha256": "8f388f7d3dccd6059f4002ba52187098a2da9ee5b779dc75714d16f7c0399daa"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/PRE_AUTHOR_FREEZE.json.gz",
+      "sha256": "2a23b956d5e4fa1febb2453ed53a69b38802b2c6078402b3bc1d1a294ed8abcf",
+      "decompressed_sha256": "63a37f9610d2a7628263b22f9dcf6a671f4b56364ced812e31db5320d3f4c815"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/PROOF_RECONSTRUCTION_PRE_AUTHOR.md.gz",
+      "sha256": "d0a9caba04a4fb44b66581f8c051d839a5dd0aad6476ab96c82a1f0a668258d0",
+      "decompressed_sha256": "dc370ac3cef04b514962d58862735c9080e1b91b0d078345da181a2d15e32ad9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_literal_mutations.diff.gz",
+      "sha256": "dde49baba32ffcd629d583e8ecb9e52019150472a4507bffcc5619f93134f051",
+      "decompressed_sha256": "82708a0d913d4b83b2ff278c18a28f975a3d08c64d7eeb179b7370dc14a6c894"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/AUTHOR_CHECK.md.gz",
+      "sha256": "3e84d3dcf3d6b2e3285935dc6d86bd1d94440a74e04f2988ad29c6cade9818aa",
+      "decompressed_sha256": "00ff668c81de859e3a294277df39f0fb8a60ddfc07189fa77be17560f2b538b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/CHECKPOINT.md.gz",
+      "sha256": "564103861881550d5105c4b319b14937548e1bd5bf1c1697fd5aef598ccb134b",
+      "decompressed_sha256": "724b834a162508afeab6099764712397a7b75598f79543ec938db3d48c8fbce7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/EXPONENTIAL_BOUND_PRE_REFINEMENT.md.gz",
+      "sha256": "8df09b4b817843c06149a626296d0eec7a73c1d2b9e44a5bf19466eb60d0bde0",
+      "decompressed_sha256": "50ceee39e4a7364bb2b616ce09b741101492a9639e91ad0a2776c66c8b7a4ce9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/EXPONENTIAL_BOUND_SNAPSHOT.json.gz",
+      "sha256": "342032eb6a810f381fc3ead1b6201a28e8d26afce5315d799e02722c55f7112f",
+      "decompressed_sha256": "8adcdd3261e1997f8f7e58455b1c3c8864fb09f57536a0dd1ea26c0736cfa351"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/baseline.execution.json.gz",
+      "sha256": "03c390e0f516e9c9695c02c0a598930258e5202d50156260e544318a593912f8",
+      "decompressed_sha256": "4cb8832dc8e2844ff27b807d93834ac1aba6f12dd29fb338add1ecec722f5b39"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/baseline.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/baseline.stdout.log.gz",
+      "sha256": "4c77543024da19a49cc81f1969beff64ee22cd6b6de83bb1ccd3deef20436eee",
+      "decompressed_sha256": "2965423ebb4241c982abf5d462572ed0861307a98a95d73e594d3ac76e0cc1e6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/corrector_controls.py.gz",
+      "sha256": "d6acf4b303d6cba7d6a91caca6c648eb4c152a288b576bfc6fecf8a455226977",
+      "decompressed_sha256": "f2b9347fa419a4e6a442a03498a8aeb6e0562913198e06b149d8a50b3a51ec13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/freeze_receipt.py.gz",
+      "sha256": "ddd8f4415d7a8c8ec052f54878abc897e01f2d67b630fec694bbe99cc25b1cc4",
+      "decompressed_sha256": "ee0192bd9fa74671b1864f2913066c2d65f79125657b2e7be1994505a9315cad"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/instruction_manifest.json.gz",
+      "sha256": "4f7fc34ae7c397af6d2e73bb836418cbc97050e85b6e6fcb8045a4671f8beada",
+      "decompressed_sha256": "2b68815d4ba54ee11699bb5ed8dd19ae96902b3aa867aed44817bab84683c2c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mean_baseline.execution.json.gz",
+      "sha256": "c74a1919b5d196545a70ff9fb7a5a65705b5e337b4ffd3dbd8366591a817c132",
+      "decompressed_sha256": "4c0871fdc19becd53cbf48440c302106923f06854bff084d5ef649f850f31110"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mean_baseline.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mean_baseline.stdout.log.gz",
+      "sha256": "2cc1aaf70cdf81d54b892a108185ad20c9962b0126604ee6b280ea3bd9e1b709",
+      "decompressed_sha256": "be2bb44ffd1e452b53cc0a359ebcafd366d60e9158e4080e4c55d66dd622b044"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mean_controls.py.gz",
+      "sha256": "09f6592cfbec7ffe63ffcd63e8c12b31e8f0f5bda15e4bf484a3541c6625d2bc",
+      "decompressed_sha256": "101c90f89765a5d0c81a5e790e33f312e9abb3dccfef5139b6261df6dfee4f7c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_final_endpoint.execution.json.gz",
+      "sha256": "ad09dac799636067e8cd37f015b380d7505d754621b8270a6648692f9f1e5455",
+      "decompressed_sha256": "cf3f51b7b0555cd2c19c9d451e33a8bb10d0d433f099fc86ea1cc9127fc1ca9e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_final_endpoint.py.gz",
+      "sha256": "94aa28a27f9d64ccdb8de832a900eaf712555a0b759a1d24d9a1b56ca4e7164f",
+      "decompressed_sha256": "e3e2b14fa290844008f72cc685590b20c09013c9250daa7eca18a1a8d0941c47"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_final_endpoint.stderr.log.gz",
+      "sha256": "fd4c38ce52d9f16dbd5134d9049e6b698ab23c7bca4a4c1b58523437853cf37b",
+      "decompressed_sha256": "fc559c4d0df2c1b8190e529bf298e5e35379c4902a15f71848241512ff588a92"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_final_endpoint.stdout.log.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.execution.json.gz",
+      "sha256": "13a9f8b8f4d6c0a0ef5091be5eed1885d5419119f34824a8a8ca72dd1ade3bd7",
+      "decompressed_sha256": "b9a763dcbc3bcdb483d4fa0980f5f765b5db3495d401c3f609ca3bd3282cb9d7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.py.gz",
+      "sha256": "6a26ef7b0e4622851aa98e136cd0c89eaa9830d7cde77b83d64152b83c877852",
+      "decompressed_sha256": "2161ac98f9b0891bd3edfbbdabfd277918d3ffad5874a22af0793934752db0b3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.stderr.log.gz",
+      "sha256": "306e8534351b7fd036ac3367a2016b3c97de2b291ecb9b298a8fbbdd8a84c994",
+      "decompressed_sha256": "e91aa60247ceedc0eeb5b515cca670e317ab2f647fc457dbd0d5113a2c8a1873"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_full_error_generator_derivative.stdout.log.gz",
+      "sha256": "a14911e567a3264d9811024249a18c87bc5510a0a8832adf40f6dfe5b662de61",
+      "decompressed_sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_initial_endpoint.execution.json.gz",
+      "sha256": "efed64e66669b7ac6b5477fef558d99bc67a9f3c7ad62784e60883dd9db99185",
+      "decompressed_sha256": "9765bb98a290a0cf837eb43c4e5d403f717dbd9b4f187ab88193802f4fe184d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_initial_endpoint.py.gz",
+      "sha256": "91584addd75c7132c1d2812d75849e1558930701b324c3fa1b1887390f0ba55c",
+      "decompressed_sha256": "7a5177d975b7c05d59117b20bd951ec8ef7ade031d8600cf69ab5ed3db122249"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_initial_endpoint.stderr.log.gz",
+      "sha256": "2dddd5b483138230f43dac4a72872f0dd9d77ebee004d0dcb6ef7b62b21712b2",
+      "decompressed_sha256": "114ca1cf22eac889fb27de970451c43d1ca274276439ecf9241fad3fa7032c81"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_initial_endpoint.stdout.log.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_mean_residual_term.execution.json.gz",
+      "sha256": "1dd4c60a4e01a2154abce53249a38f6714d2716d9a4f54bc6bc4c1f2c113095e",
+      "decompressed_sha256": "82379f5101f3d03ab5b20da7f482b04968b4272817b8db01292f7e6b59428c0a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_mean_residual_term.py.gz",
+      "sha256": "cb248bd241f1ad9765a081e5e86de241f1829cb2bbe8f4c657e039ffb66bda83",
+      "decompressed_sha256": "ab31c7ae46e857c0cfda6b92130dd94bc39eca420c27ed9bac6b0d3c8d4507ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_mean_residual_term.stderr.log.gz",
+      "sha256": "25a1d5ff1f2e72fbb4d2f0b9430bddd0322ff27f7b9653c2557b4946b515a90f",
+      "decompressed_sha256": "61f0dc7c870299bbdc4b7802403f0118f35128f24d6f2fa0241042e25b3832f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_mean_residual_term.stdout.log.gz",
+      "sha256": "23d41e31f00b10cbf5890f2d8ec22ed8f8b43a49173381b2023582a31f7f7441",
+      "decompressed_sha256": "f70bd92ab5efbe00f5ff829e35b178cda355a7992830e34878421e4b7b3ea844"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_mean_subtraction.execution.json.gz",
+      "sha256": "8ada07c4399abdd4707f3098a110917849a3400fce446cbc6f764648e8beefbc",
+      "decompressed_sha256": "5d43ece11b5fb1fe8d70aad5b8f7b323ade0f444d604a3c8f3ed697625dbd14a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_mean_subtraction.py.gz",
+      "sha256": "d0084e1f007ec803709a9eaf92222d94e3f178c01404b12853a013c049e892d4",
+      "decompressed_sha256": "65ecd06b071a15860087bc111b697b72c8c36c7212d5e09031d2227bb9762ee1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_mean_subtraction.stderr.log.gz",
+      "sha256": "1a423987393169caabb50608e9c40a36f89699f35f2e811bbcafddab461e69c3",
+      "decompressed_sha256": "96554268692a28bcad1d9f94dbcea1c4e58d310c3a57d8ec6e3545a871295aac"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_mean_subtraction.stdout.log.gz",
+      "sha256": "1e02b6f50ba01a4404dd17c86eff25aabb7faa159a51358e75015be6a3245e14",
+      "decompressed_sha256": "e82f9bbc12bdc648fba750993dbaeffced3be0968760fe3497576e4e37d6f439"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.execution.json.gz",
+      "sha256": "89b934d9b7f40d1c53a27e8d0f36cadea50f0534f89c3f0fa65970d2ad374297",
+      "decompressed_sha256": "21bef92b5e25e224f23d4041173cc4a923211e834f7016d8a13302159eeb3697"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.py.gz",
+      "sha256": "2ff665c946076e4943dfdc1dc930a3d5a6a71d3577e1c0d6deeb63a5ee6968c5",
+      "decompressed_sha256": "173beb4171b099a4b8b85bcdcc25712f08340a5d06e2926d6d0daea6d501a807"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.stderr.log.gz",
+      "sha256": "d358c5112172fd1ef102d29292f670dac613bf72ac9fdcd52fec4b8d6e679b1f",
+      "decompressed_sha256": "713d2c9e1a3cbbba4cdd18257622806e2caad7dc44a3b66d9a7f52b9ac2c9d65"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_noncommuting_perturbation.stdout.log.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_source_clock_derivative.execution.json.gz",
+      "sha256": "2a264ce2faf32bdf14caf48f72fef83e180a3730d095123aafdd71c24243c531",
+      "decompressed_sha256": "dc3bf818368595763b0717e0916657102e7211d98dc7f2f51505432270402c85"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_source_clock_derivative.py.gz",
+      "sha256": "00df90ad0215653b375d3e1cfd74582ff57c82489fcd71ab5e85f8daf55f9b47",
+      "decompressed_sha256": "eb1e556ed607269837820540ffa350414a2f27c54ce39bfae648cbf0aedc263f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_source_clock_derivative.stderr.log.gz",
+      "sha256": "e0c7a16e7527b0f23d1faf0201e333687985e2a03be32e0a3a24c7c4377e3d73",
+      "decompressed_sha256": "a24b22732c42e7c147d4da766543f13403d9c205acf3fc1c26b3828823ad40f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_source_clock_derivative.stdout.log.gz",
+      "sha256": "a14911e567a3264d9811024249a18c87bc5510a0a8832adf40f6dfe5b662de61",
+      "decompressed_sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.execution.json.gz",
+      "sha256": "33d6fcd88f946f55eae250dc9a06042caa4eaf8a2fe7200f0038fc282f8909ba",
+      "decompressed_sha256": "fab111a863f1a457a355ac0635766423248fbf356479cb1bf9fbfca7adaf9698"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.py.gz",
+      "sha256": "d5a33323db1d8c3389056a0e694067d31a7f5c00a28df56c4ec2f8c1f93ec39f",
+      "decompressed_sha256": "74a02fc82618a1b50e2894acc79fe4996c1a436bf7a8ea5fc8bc92c8c347d5ec"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.stderr.log.gz",
+      "sha256": "f0ccb31f32bb245b716b6c254b656d11b0771234685302ee703cfd582d6fd449",
+      "decompressed_sha256": "6fdaa9f56adbfa8c93ce14708045518a4d3c9988aafa4f35a3e3c58d20978380"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_time_corrector_derivative.stdout.log.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.execution.json.gz",
+      "sha256": "7242e71b8c6b20e4a76e9671f5434f4a83ad73af1b82d24bfbfdc967c5610ecb",
+      "decompressed_sha256": "82c9e2e0cd246563ebd245bd31feb7cbc575bbd72e18792899312f56e4ccb884"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.py.gz",
+      "sha256": "3b16b3eb7ace9d4c60cf88920464b2645464e19ab68142a8cb49ecfe3d516867",
+      "decompressed_sha256": "d2d4cfe9346ea2b70076b1c74ad103567990d6062d79adef137106d12e92b323"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.stderr.log.gz",
+      "sha256": "57e889f19b27f4ad5ff2a68de4f6e56e325ac13d593b9fe54a68bdeb543cfada",
+      "decompressed_sha256": "1a0ebabc0b266c359d0c34bb694f6344995f81b97fdcf2da15744d5b24005ead"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_alpha_derivative.stdout.log.gz",
+      "sha256": "11d20a1231b2d597941c90bd4430b706fa512d136f21450bd992fcadce9918eb",
+      "decompressed_sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.execution.json.gz",
+      "sha256": "f3e267707b887f8209cdd9317b7e06ae950929d2b8c90c1409b777c6d63a3319",
+      "decompressed_sha256": "ee6b3227cda27f0dc9a350490cd711f0efad793453c2a0a5cdf8b956af9fd77d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.py.gz",
+      "sha256": "a97668f622220a2cc9a27757bb94cba7ce264916000c82c74844c9247b0d7e0f",
+      "decompressed_sha256": "f6a262205d5d11f0eb119beee84b5843513e3a2b323c2b788e7c899c73c831ed"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.stderr.log.gz",
+      "sha256": "bf49cddd43510dfb16097756137a6ca7f066ee0c3a9defd103ffbce3de7a4833",
+      "decompressed_sha256": "075b9db1075e6e378513463a8a36ad370d54f42842e6416da2efefccd53e7755"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_coupling_derivative.stdout.log.gz",
+      "sha256": "11d20a1231b2d597941c90bd4430b706fa512d136f21450bd992fcadce9918eb",
+      "decompressed_sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.execution.json.gz",
+      "sha256": "30555a14d51adeaa6c1c9adb02bd073a9019e07a99abf4fc6d6a34f2062192f1",
+      "decompressed_sha256": "1944d2aace8e1687dbfef1156fd56af3827b3bf9304ac32308f8d609b592f0d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.py.gz",
+      "sha256": "d0773f9dcb81d8e5229949ebe7decc10c52716c9a0be4dcf8f3a880ed243d575",
+      "decompressed_sha256": "903678778ed9dc03eb37af181aece9caef7b287d5f9da4c8f597c8d83f94d35e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.stderr.log.gz",
+      "sha256": "f9efa930302d653e6defe73780c6a91e4c7e17aeefdc86876775ad114f28aca2",
+      "decompressed_sha256": "d3079aba025af612568d09c766b168de65f4502a69f6f7c0614735b8b8207a62"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutant_transverse_propagator_derivative.stdout.log.gz",
+      "sha256": "11d20a1231b2d597941c90bd4430b706fa512d136f21450bd992fcadce9918eb",
+      "decompressed_sha256": "6dc7eccbfe6d8fb4625fe458e9d4948b911f16a84ed12a95db1b444ea5ef038b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutation_manifest.json.gz",
+      "sha256": "b12d45d3b283a07682577f853170b5f1a0b2674fd549f13c6ba29e63716a79b8",
+      "decompressed_sha256": "6db3bac1141c6475225dd0286c46582c6726b05ab42340c8603e80f0abd3f94e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/mutation_provenance_check.json.gz",
+      "sha256": "0fec59b9cc167eba43858d85908589809e4eb705e0e666f56d7545dcfb418e4f",
+      "decompressed_sha256": "25a135a3a10481ae3c2dac9758cca57261c9974f2def5cbd25f45c8bb29b18ff"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/polynomial_baseline.execution.json.gz",
+      "sha256": "f1b811e06095bb1574a77f1dd95df21a2864c1ea4a715678339bfe38aad6b4c4",
+      "decompressed_sha256": "813f1c161d5f5c80031ffad8a95bf7eb37a27bdde297fcc901d24c653512028e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/polynomial_baseline.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/polynomial_baseline.stdout.log.gz",
+      "sha256": "9c2e076fd607e711a7b8be622a8405b6df1983b1f02f66a7274a5a681d04b77b",
+      "decompressed_sha256": "2ef441c844952688a1e830c7e3c2dcc8e2f0f0000f1f6aa7e1055e75efac4a30"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/polynomial_controls.py.gz",
+      "sha256": "5e1f0184f2ac8958ca1ff0c30d18d4a6f602842c8dbc95bbe9f87474239c61b2",
+      "decompressed_sha256": "a56d25d86244d5fb3a2865a0790abe554c54aca225393bdaa329eaf4cab086cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/polynomial_mutation_manifest.json.gz",
+      "sha256": "ad60ac6f05b82327e7b297b6e5ffb533c76fc01d39a03c424bd16affcdcbc740",
+      "decompressed_sha256": "1ad9c147f7c86826353e1657e7634004a12b8adf7673b370c98550e08e3dd7f8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/receipt.json.gz",
+      "sha256": "bab4baa242efa659c0787e06f2e648e4f9e54d5a65f6cbdc1546853899f1bae5",
+      "decompressed_sha256": "c447314e4a130e2fc2e047da6ddbe2abdf20209c5aa4718c2bab9b75783b5356"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/receipt_freeze.execution.json.gz",
+      "sha256": "39bc224555477780aa2ac696d0519efc09a1c3ffd9f5a945bfff5accbc2622d8",
+      "decompressed_sha256": "f6efe361dae1fa04261397db7ae7805eac6f42b214719ac03e5399197b738352"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/receipt_freeze.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/receipt_freeze.stdout.log.gz",
+      "sha256": "b054bb7bef99a9cfef7731d0c1a56553b9fa087d883a13ebefaadb9c21772e28",
+      "decompressed_sha256": "663c4dbc677796517f29d6f2ed21a79374bdb0cc184e09375e8bc2fe0e674adb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/receipt_verification.execution.json.gz",
+      "sha256": "befe15cf4abd6b7325bb975a200f3b9f5120601e163c04f866b0814c447c55f4",
+      "decompressed_sha256": "30b9aecdf8784d5c740f41f19d6f9edbb2d31ae6556d3fb36efda86b782bbf7e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/receipt_verification.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/receipt_verification.stdout.log.gz",
+      "sha256": "ce14942c8646d55df33b449b46cffdb4ecdba0a884da63dc8ab112506048dc6a",
+      "decompressed_sha256": "63a7251d7ff045261c3b4f54f20344d01e00df6750aa284adb03f79813c519c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/run_mutations.py.gz",
+      "sha256": "54c060ab264c8286f1a1341cf02431261b05671ed429061f2eff3b0691999cd5",
+      "decompressed_sha256": "ec6672581fac69e74a9e8b05f7e9053ad0e848364b7aeab22c3584498ecffbf5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/run_polynomial_mutations.py.gz",
+      "sha256": "872082a5fdb6d3e321a98be6ae49bf06ebf0c28c1a6301b165c82a9d71a0d4df",
+      "decompressed_sha256": "6a75ea63fd7560573722754f8864252e9c9a86bfc85241222ae277f26e0189b7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/source_manifest.json.gz",
+      "sha256": "58633da5cb327978295ab6f27202df2995e847efd7fbb44c6753eee95767c277",
+      "decompressed_sha256": "30acce0634744fbab7800ae1c7b449dbc4e7a3223856c57f741c978f9cc1211d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/sources/BOOST_CURRENT_EXPECTATION_PROBE.md.gz",
+      "sha256": "816a06e8ef6c7309763ceea31eb1c9bb184d79fa4b8d8dcd734956caca7e7b9e",
+      "decompressed_sha256": "a7161d796001df4af243263acbd03e731d75d0eab2d93795f4b5960eff5acb68"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md.gz",
+      "sha256": "062b7d8dd07a69a8263470167ed19ca8912003aa2877a4065971c4d2e3aff5e3",
+      "decompressed_sha256": "0e17f9647141c200b1efcbe78f60ef6beedc1e249ce1b85544293dddbebe8690"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md.gz",
+      "sha256": "47a14d45d34448b823d882481188f906b3a9cf927c5cc9c8cf694cd969158a54",
+      "decompressed_sha256": "76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md.gz",
+      "sha256": "2227ecdff04fe8dca4b85d5dbe17fe29b2dc4d75b11065857a0a5630dd9278f2",
+      "decompressed_sha256": "1c314fc05a26ca27e0828a70ca8132a2bad269b60c127ea37a53e11e95e087c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md.gz",
+      "sha256": "3665e6aa525e34d89828c82c0fcb5d09afb69310289b628051dcd6749e3d8860",
+      "decompressed_sha256": "64cf08ea2c12f086d0efcc862d17ce0e394f53dfbcbfa5d48db73a10bb9652ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "sha256": "9986acb976ebecfbbd4d7b9d7b08f5a31015bb45b9244ca84478757468f963a1",
+      "decompressed_sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/sources/ROOT_HSTAR_APPROXIMATE_CORRECTOR_LEAD.md.gz",
+      "sha256": "bde7b03a671333579bd1249082d7a7e27a87c80d69cb2c548e36441c4b9741fa",
+      "decompressed_sha256": "3ba9b713942b18e0562ca3b60c840676194b78132e797e088037953e6f808ec1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/sources/ROOT_POLYNOMIAL_CORRECTOR_REFINEMENT.md.gz",
+      "sha256": "0a82b7a7bb781cc547658dc892f73ddb9d6eeb2a62deb70f685c01897f12062d",
+      "decompressed_sha256": "4466bde85ef219e0b20427d996aa5e3c8c4f75f52fc84aa8404ae8f05e6db78f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md.gz",
+      "sha256": "11e26b3281a6226185007b03ae8deb89df1abf26861044472f5cc4c6ce4ec468",
+      "decompressed_sha256": "04adc0b81d3865f4819b8441e25279ef084bda755e9c0a3206be7d314ea04f9f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/sources/boost_forcing_review/receipt.json.gz",
+      "sha256": "5633a3c4027cc36105956348bb3377633ae6d50c76385d31732d6fb9f4a99cbd",
+      "decompressed_sha256": "6ecec5f7e9831fde22922d2ff6f5b7db4a31059ca82cf4b550a058a3a1aff7ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/sources/boost_kernel_effective_dynamics/receipt.json.gz",
+      "sha256": "597e582d0eb5f707640f0963272034c4352cd771396e0f2a8fba313f395b5f6d",
+      "decompressed_sha256": "8767499b08e7721cf1133930fcd9e0a5c703536b46aba5eacd98b81b688d7352"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/upstream_K_review_identity.json.gz",
+      "sha256": "fe070fdfdce52b588a699cc83742002bd49005306f036b9d5da9cf65137f5d13",
+      "decompressed_sha256": "20cf6ac74d9d9bda0f7234adc6ea4d7ff7fa139edfb3bd2167a56e8cf0de1c5c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/verify_receipt.py.gz",
+      "sha256": "87528bd775425e47bfa937b0b40be4b636befb0bcfaf5f941b9ed3fb6405cdcc",
+      "decompressed_sha256": "507a6c364bf00eaffa6846369f71d8aaa6e2d1a02ef1dad0d070c4ddc883b84b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/author_packet/workspace_provenance.json.gz",
+      "sha256": "832b86dd85bb19bfe678e00883883aa84f0e30125d81352d0a79d847029dc26b",
+      "decompressed_sha256": "12d07d38ce18179753275d291148648a44f046c7824c5dc13757be62ca08f266"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/final_identity_check.json.gz",
+      "sha256": "807370653b989b3400396b6790fa64f6ac4075afa0e7a6e492371dace212e6f3",
+      "decompressed_sha256": "32a91e3f4ca6a8c37d1ba67c720bb301bafe45d25304833c313eb8013aa39b88"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/identity.execution.json.gz",
+      "sha256": "fa1aed59c2f524567b4436535b9b8655481938b447d395abac0f0829c2093dee",
+      "decompressed_sha256": "946c1abc208f332f755b4d9c24e68d8b683d10a89ef4831e6970f7e64713acb3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/identity.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/identity.stdout.log.gz",
+      "sha256": "4f829c3ee700fbbfeb5de0fa68d3147f4ec815e33ae179d4b35f48ff8f3c8e5c",
+      "decompressed_sha256": "84b9219db5340b5cd5872ceddd0ae84c5446fb26b7c84eeec81762f6c22643cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent.run.json.gz",
+      "sha256": "94b7433478aa2dd260e476ccdc23c43fdefeeeeca0de71438780dd49630be8ea",
+      "decompressed_sha256": "87a0a684cf4fb583556a393617240a2e88aca2ee0d1b6f9b3988651851b56c5b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent.stdout.log.gz",
+      "sha256": "00d155cdbef03cb54b240ca00db83b49af83615cf6f974aa8006c1a03179b134",
+      "decompressed_sha256": "4f2c4a9c377dec08652da756981aa34b5e8b7702b040078e40e45cfc1be97f96"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt1/DISPOSITION.md.gz",
+      "sha256": "253bb3299fc1399e2c74e298cd7ec5a6853cf8a5bc54451568173ff5152a85c7",
+      "decompressed_sha256": "28be3a2e2b471979477195163c34ca3d8103eb4482f250a0fddc3d55b4f1d4b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt1/independent.run.json.gz",
+      "sha256": "d04249093163d2c81667df2c9f283d89c8b0108f6395ec18227c3a4835cccb08",
+      "decompressed_sha256": "ee1560164c1b1e1a5a03c5feb427be3f58b16ed71c48eb7076ba095d26145695"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt1/independent.stderr.log.gz",
+      "sha256": "3563af435ac07aaa0829e33584bfcff4ff71d8a346ec6209abdbb9d50d2702f0",
+      "decompressed_sha256": "8a06dcfe33b248fe60505faaccc83d3c465718238efcba60c909793295cc38c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt1/independent.stdout.log.gz",
+      "sha256": "f9dd0ff6195898618258ce5dc3d65db070176816d82069c388d22490e1a8b94f",
+      "decompressed_sha256": "0f3c267cc132a48b4ff7174b1aefc42894f501d1b7434b15a0281851b52d714e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt1/independent_controls.py.gz",
+      "sha256": "0dd9deb55aaa6c12bddba56234ff8ad012ff8d344d4bb2167e50194354da760c",
+      "decompressed_sha256": "75a14d6139eae5726c33707e9c7d05b3ba291a5eaba5dd76fb6eeabb4686077a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt1/run_independent.py.gz",
+      "sha256": "bc328d1c5183f0b860017265ca1efbd6504820e0036f118cc52aa31551b86369",
+      "decompressed_sha256": "83fac2d0cd928ed40853887dd2ea74d2e36805895bc31eda24076b1d8edc5342"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt2/DISPOSITION.md.gz",
+      "sha256": "9d828f2ebf928f1855d650da571192976b87aeb6b71cf4baccdf097ea6f88b50",
+      "decompressed_sha256": "e27033c03a51290d579d9b29b3fd6a91f67976dc399cf082adef546bde86614a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt2/independent.run.json.gz",
+      "sha256": "c282270777802a9db631d6cb967c1cca288aef8cc45a0348bca9094173251db2",
+      "decompressed_sha256": "792b8eac17b9aa216bc55a2ad5cc97aac3c4c488869ec69e70d210deaa7adab2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt2/independent.stderr.log.gz",
+      "sha256": "e867a862fe218b7a4b71ac6f0eb70dfdcd182e0bc1e9d6306fc6b90f0061216e",
+      "decompressed_sha256": "eb03ac375a595e3dd8874adb161d6fe94fc33ae8747c7ec8c872b0189dd11411"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt2/independent.stdout.log.gz",
+      "sha256": "222985d2372403d98e72169fa5110abf217d8911fc91a5fd9b7b78f1ca11ba74",
+      "decompressed_sha256": "2e9b2c6599843a475bfd38305f1f143ff0d140fdb3a03362163aa16ff6c261f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt2/independent_controls.py.gz",
+      "sha256": "ddf74ca7b402b9a4fff1e7a6c574288a3dc77fc24e19c4a3df22d1176867487a",
+      "decompressed_sha256": "b83b5e2184bcc4cebd787ecaec1b391d37880c427f1a090bd0a0eeb568d7b32e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_attempt2/run_independent.py.gz",
+      "sha256": "bc328d1c5183f0b860017265ca1efbd6504820e0036f118cc52aa31551b86369",
+      "decompressed_sha256": "83fac2d0cd928ed40853887dd2ea74d2e36805895bc31eda24076b1d8edc5342"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/independent_controls.py.gz",
+      "sha256": "083bd3a64df4e4901b8b1584f974ca81666a395b333c756ba1afb170983f5dfd",
+      "decompressed_sha256": "fa1cd301e9203b64bee28508657ead8a636e41a10ab95ce5595e9ddcdd22927e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/instructions/CLAUDE.md.gz",
+      "sha256": "ab5fdadbc65d26d4f417152ca8cdeff92916faef3b70414dcfa927fda22faa7f",
+      "decompressed_sha256": "254339c255b9c75eac37c1185b77f11be8f55bb9b734543b2a81647f5f373dfc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/instructions/SCIENCE_WORKFLOW.md.gz",
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "decompressed_sha256": "05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/instructions/SKILL_FRESHNESS_CHECK.md.gz",
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "decompressed_sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/instructions/physics_claim_reviewer_SKILL.md.gz",
+      "sha256": "b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873",
+      "decompressed_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/instructions/planning_AGENTS.md.gz",
+      "sha256": "0c9faf905a93497cae26590f7c44a040bd049c89650b40cfab9bf538667f93da",
+      "decompressed_sha256": "3d409e93abb3b58796a9c10ca6d21ba93b7edc73b8fb24e7364da97c805580a9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/instructions/proof-search-governance.md.gz",
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "decompressed_sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/instructions/review_loop_SKILL.md.gz",
+      "sha256": "bb65b5e48976f60f0e6c7b8e0b106b75d123c7efe863af0b2b11af00367f3a03",
+      "decompressed_sha256": "c20291887b2a4dd00244bdc6a0d165ddef7a6f72c63cd808cc037e6a1ad58d13"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/operational_failures.json.gz",
+      "sha256": "9de66add557fb779f41ede02f16646d5262b9154e4b8b8b2a1d4125ee5278c1e",
+      "decompressed_sha256": "99bd66ac5ca19d57b8e2411a916510343ab270df7ba0ae9b8e4275a734fac1c6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/pre_author_snapshot/CHECKPOINT.md.gz",
+      "sha256": "eb1d3c8dabab25df4f55088aa145d124e1fda68e02e8374de39aad8aabe9e721",
+      "decompressed_sha256": "3975266587abebc29de00a04162f59cecbb7b0d654ff410f553b9710f971fb90"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/pre_author_snapshot/PRE_AUTHOR_FREEZE.json.gz",
+      "sha256": "2a23b956d5e4fa1febb2453ed53a69b38802b2c6078402b3bc1d1a294ed8abcf",
+      "decompressed_sha256": "63a37f9610d2a7628263b22f9dcf6a671f4b56364ced812e31db5320d3f4c815"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/pre_author_snapshot/PROOF_RECONSTRUCTION_PRE_AUTHOR.md.gz",
+      "sha256": "d0a9caba04a4fb44b66581f8c051d839a5dd0aad6476ab96c82a1f0a668258d0",
+      "decompressed_sha256": "dc370ac3cef04b514962d58862735c9080e1b91b0d078345da181a2d15e32ad9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/pre_author_snapshot/independent.run.json.gz",
+      "sha256": "94b7433478aa2dd260e476ccdc23c43fdefeeeeca0de71438780dd49630be8ea",
+      "decompressed_sha256": "87a0a684cf4fb583556a393617240a2e88aca2ee0d1b6f9b3988651851b56c5b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/pre_author_snapshot/independent.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/pre_author_snapshot/independent.stdout.log.gz",
+      "sha256": "00d155cdbef03cb54b240ca00db83b49af83615cf6f974aa8006c1a03179b134",
+      "decompressed_sha256": "4f2c4a9c377dec08652da756981aa34b5e8b7702b040078e40e45cfc1be97f96"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/pre_author_snapshot/independent_controls.py.gz",
+      "sha256": "083bd3a64df4e4901b8b1584f974ca81666a395b333c756ba1afb170983f5dfd",
+      "decompressed_sha256": "fa1cd301e9203b64bee28508657ead8a636e41a10ab95ce5595e9ddcdd22927e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/pre_author_snapshot/run_independent.py.gz",
+      "sha256": "bc328d1c5183f0b860017265ca1efbd6504820e0036f118cc52aa31551b86369",
+      "decompressed_sha256": "83fac2d0cd928ed40853887dd2ea74d2e36805895bc31eda24076b1d8edc5342"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/pre_author_snapshot/source_manifest.json.gz",
+      "sha256": "51e2495fdf92fadbc6a18a107d213a9a3074cedcef552ede31a920906da0bc2d",
+      "decompressed_sha256": "1cd3b21301779992e4727a0796bef95cb995d0f7642510358dc959d3abeaa230"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/receipt.json.gz",
+      "sha256": "b7a1d43b9e1e49ff885ab18d3829ce43344a6f8478802131719056809525ccf5",
+      "decompressed_sha256": "c38f2a237e045a12870e380a7f9fc152c4a0e405238e8643050b4ec457e6dce2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/replay_baselines.py.gz",
+      "sha256": "ac9c608627e1ff05428f269f5f33a410b2f5d447b6c403f1077f61fb9b1b0fb1",
+      "decompressed_sha256": "2c5d73228c06e6fc7dd2340b0bf413f4409d7febe70e0ddb003b27ef80d4e0f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/replay_corrector_controls.execution.json.gz",
+      "sha256": "175cbc0655026ef92fae461ec9715be4d5aaf3bcbaa34705121c1ccfae6ee4be",
+      "decompressed_sha256": "5188d1c19665d967a38cc10ea1403889f8f4c5c9551f2dd7b33b99355a54bb47"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/replay_corrector_controls.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/replay_corrector_controls.stdout.log.gz",
+      "sha256": "4c77543024da19a49cc81f1969beff64ee22cd6b6de83bb1ccd3deef20436eee",
+      "decompressed_sha256": "2965423ebb4241c982abf5d462572ed0861307a98a95d73e594d3ac76e0cc1e6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/replay_mean_controls.execution.json.gz",
+      "sha256": "feeeb9c56b278ceeb62da7b932af6ab2cad9c4e0fe7c082bdf7cbb1821b16e46",
+      "decompressed_sha256": "e6d5f3be833c2e9c981bd188bf375a7399d15606319263951f363e4e763aba61"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/replay_mean_controls.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/replay_mean_controls.stdout.log.gz",
+      "sha256": "2cc1aaf70cdf81d54b892a108185ad20c9962b0126604ee6b280ea3bd9e1b709",
+      "decompressed_sha256": "be2bb44ffd1e452b53cc0a359ebcafd366d60e9158e4080e4c55d66dd622b044"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/replay_polynomial_controls.execution.json.gz",
+      "sha256": "499cfc1e46b1bb85b831057d2a68b29e8a00f3b8e55d6f1f740256278e9d9ce4",
+      "decompressed_sha256": "aa0cb01a6ebd04ce60ac3c3a393bb6090e4893eece86b7e420ada0c8a1fc650e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/replay_polynomial_controls.stderr.log.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/replay_polynomial_controls.stdout.log.gz",
+      "sha256": "9c2e076fd607e711a7b8be622a8405b6df1983b1f02f66a7274a5a681d04b77b",
+      "decompressed_sha256": "2ef441c844952688a1e830c7e3c2dcc8e2f0f0000f1f6aa7e1055e75efac4a30"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/run_identity.py.gz",
+      "sha256": "ab943e490c5c9c183ab18d3c97ecac8711c62126e3825e4b8e5a0aaab1a50de3",
+      "decompressed_sha256": "a99c3f9361376c6381b90fde6132092a3e32af28eb8c27c63a39683532e2ea15"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/run_independent.py.gz",
+      "sha256": "bc328d1c5183f0b860017265ca1efbd6504820e0036f118cc52aa31551b86369",
+      "decompressed_sha256": "83fac2d0cd928ed40853887dd2ea74d2e36805895bc31eda24076b1d8edc5342"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/source_manifest.json.gz",
+      "sha256": "51e2495fdf92fadbc6a18a107d213a9a3074cedcef552ede31a920906da0bc2d",
+      "decompressed_sha256": "1cd3b21301779992e4727a0796bef95cb995d0f7642510358dc959d3abeaa230"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/BOOST_CURRENT_EXPECTATION_PROBE.md.gz",
+      "sha256": "816a06e8ef6c7309763ceea31eb1c9bb184d79fa4b8d8dcd734956caca7e7b9e",
+      "decompressed_sha256": "a7161d796001df4af243263acbd03e731d75d0eab2d93795f4b5960eff5acb68"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/BOOST_CURRENT_EXPECTATION_REVIEW.md.gz",
+      "sha256": "062b7d8dd07a69a8263470167ed19ca8912003aa2877a4065971c4d2e3aff5e3",
+      "decompressed_sha256": "0e17f9647141c200b1efcbe78f60ef6beedc1e249ce1b85544293dddbebe8690"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/BOOST_CURRENT_INVERSE_ENERGY_PROBE.md.gz",
+      "sha256": "47a14d45d34448b823d882481188f906b3a9cf927c5cc9c8cf694cd969158a54",
+      "decompressed_sha256": "76ed691c581d4da282041b99fa53da48d1461b47ddccb765b736969a191b4990"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/BOOST_CURRENT_INVERSE_ENERGY_REVIEW.md.gz",
+      "sha256": "f26354c05b672211f3865504accb2d4aebe2d912467de89e6da507fcadf77bd5",
+      "decompressed_sha256": "d3c3d00b69b302beb88aef4a1b649f5e685ff7a08bc2c117755fcafde4d74796"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/BOOST_HSTAR_QUANTITATIVE_CORRECTOR_PROBE.md.gz",
+      "sha256": "bb18d27758f5524b944b38b06266212d7fbd33f86211ed04cc0c50b793aae881",
+      "decompressed_sha256": "4b1d5a8395d1d5c79d798ef17950f7c1ce4c1e0781e2f9ec610223bc1eb69820"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md.gz",
+      "sha256": "2227ecdff04fe8dca4b85d5dbe17fe29b2dc4d75b11065857a0a5630dd9278f2",
+      "decompressed_sha256": "1c314fc05a26ca27e0828a70ca8132a2bad269b60c127ea37a53e11e95e087c9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/BOOST_KERNEL_EFFECTIVE_DYNAMICS_REVIEW.md.gz",
+      "sha256": "3665e6aa525e34d89828c82c0fcb5d09afb69310289b628051dcd6749e3d8860",
+      "decompressed_sha256": "64cf08ea2c12f086d0efcc862d17ce0e394f53dfbcbfa5d48db73a10bb9652ca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/EXCLUDED_WALK_BOOST_CURRENT_PROBE.md.gz",
+      "sha256": "9986acb976ebecfbbd4d7b9d7b08f5a31015bb45b9244ca84478757468f963a1",
+      "decompressed_sha256": "903261f54d72d6e81d0c82d5cd976bd4dd46a55c1dd4567fe23d8bce07fe1923"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/EXCLUDED_WALK_DEGENERATE_DYNAMICS_PROBE.md.gz",
+      "sha256": "305fc1d116a646f29a1c35379609adca1ee9fe6ae50f82a32f01a5043ada6af1",
+      "decompressed_sha256": "b8f923be6e50de14ba0bb1a35ccfd71aec7575fd710693535cf0417c76daa876"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_PROBE.md.gz",
+      "sha256": "5d4ea1ec0440fbbed5930b807a33bdbee1bdea29645846d84bd8e1448c887198",
+      "decompressed_sha256": "b667b092d202f3657493983e284ff94b5c02c929e6bc8508c691d6155865567c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/EXCLUDED_WALK_EFFECTIVE_MEMORY_REVIEW.md.gz",
+      "sha256": "edbf8bce83c90137f05b82ee34a35c6cde396a4625820a2cd073e3244c077107",
+      "decompressed_sha256": "c8dbb7860af01dc8c8d0203e23a9bfe34cc26c0895cace0c51af46f3f70669e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/EXCLUDED_WALK_EVOLVED_BOOST_CONTROL_DRAFT.md.gz",
+      "sha256": "2604bc8457e8d02ed46d4a29b22c588e61ab3d664ac4a2812a5808266015337d",
+      "decompressed_sha256": "d89611986626dbabcf6f9f5c487733d2a520cb9249b7ed0b3a27be35874fd929"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/ROOT_HSTAR_APPROXIMATE_CORRECTOR_LEAD.md.gz",
+      "sha256": "bde7b03a671333579bd1249082d7a7e27a87c80d69cb2c548e36441c4b9741fa",
+      "decompressed_sha256": "3ba9b713942b18e0562ca3b60c840676194b78132e797e088037953e6f808ec1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/ROOT_POLYNOMIAL_CORRECTOR_REFINEMENT.md.gz",
+      "sha256": "0a82b7a7bb781cc547658dc892f73ddb9d6eeb2a62deb70f685c01897f12062d",
+      "decompressed_sha256": "4466bde85ef219e0b20427d996aa5e3c8c4f75f52fc84aa8404ae8f05e6db78f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/sources/boost_expectation_review/PROOF_RECONSTRUCTION.md.gz",
+      "sha256": "11e26b3281a6226185007b03ae8deb89df1abf26861044472f5cc4c6ce4ec468",
+      "decompressed_sha256": "04adc0b81d3865f4819b8441e25279ef084bda755e9c0a3206be7d314ea04f9f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/verify_identity.py.gz",
+      "sha256": "df763f63f899352da51e0b99618d5242a9422e7021d43c1efb06bee794709cbd",
+      "decompressed_sha256": "18285a954cea66a119e47234a7ebb8e6406aee3b78308f5e34619a4c0f45f849"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/boost_quantitative_review/write_receipt.py.gz",
+      "sha256": "8ee6c46e013513d5a3417819cfa0dc263b0a14003028aefe9ef24df72ee26643",
+      "decompressed_sha256": "e8d8d864d1ad67358208ebec109fdf63475ef295052af4534c0a0c6893750cee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/finish_kq_delivery.py.gz",
+      "sha256": "44545cebb4c56929742ad4ca5b6424b1257aed4bce5bf32749d2b2e791f22746",
+      "decompressed_sha256": "7787ba48e3c2c69b47be8709d3d1066400994b8d7eb119887a705039f62b0e95"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_K_canonical_execution.json.gz",
+      "sha256": "fc7fff44af9cba2bb2929533f6584da9696b860c0fab5be2696266b0a72f7bb6",
+      "decompressed_sha256": "8a3a4fb3c74505e8edbe8958eec2c2c912277dccaf1608a3b13fc3f3916caa0a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_Q_canonical_execution.json.gz",
+      "sha256": "2feb2c4df77a95ea82407966a67bdf9554bc4e99543e52e5e447c78c2a4696ba",
+      "decompressed_sha256": "8d4b02c0b8b391f64e09eba7e94ef34c950bde9b6059a68148c158fb82ae9f0c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_citation_build.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_citation_build.stdout.gz",
+      "sha256": "e85a2fcf3144acad88669e7aec3b3e8b2c3e105313cef5a1fa807cd0abb22105",
+      "decompressed_sha256": "50cecd77ed145847e16793324493c255fafbfa74c073580f8c99fb0a8eb770e8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_citation_execution.json.gz",
+      "sha256": "62e18fe5ba091399a09bf45cd740f9d44720481291d1ca102307c9008b8240aa",
+      "decompressed_sha256": "8c9b8f9ab5ebe6cfe1d4e23dbd02f9e993cc8403bc954b663a17de2af77e149b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_citation_manifest.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_citation_manifest.stdout.gz",
+      "sha256": "80e46e992ca3d8448e5597b8a2144667a385a17f14200a14aac1916be58f0eba",
+      "decompressed_sha256": "87f540c9e3fa5e81c25d632b64e706cba08ab5c47e3c595c323a64a5cdb15be6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_delivery_mechanical.json.gz",
+      "sha256": "6bcc4daf560d059f22bd0925401487e7607937a818e257bf0413c3d8396e87eb",
+      "decompressed_sha256": "459e1170d53a0f4ba4f57b2d0ac5f0cf6d8926570b155fa1252344b6f7454563"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_final_reconstruction.log.gz",
+      "sha256": "357a831c5a636010fdd395bfb00fe841a9e5a78693607c323c201799a5085f2b",
+      "decompressed_sha256": "35ad11d9b3b652ee888545acd660c3f0f7b18478e6668e6abe43685a9a02d518"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_final_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_final_vocab_fix.log.gz",
+      "sha256": "4100e4c9105402058736aafbca15dbd0b33f233c1e4c3eca2fbe4b93bca0d19f",
+      "decompressed_sha256": "abcfc00e9b952aaa798d031aa83e14bec708f6ac701569e33ef62ee10b5aab5c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_final_vocab_report-only.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_final_vocab_report-only.log.gz",
+      "sha256": "eab32de6450f5b35e642b7b7997a9ceac0ee87efac4816cd6d8992c21ee589d9",
+      "decompressed_sha256": "b1c5d79d3579dce929b7f4c4969b2d9cbc4123b1c6c882cb2cb081eb51fe88ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_focused_audit_compat.execution.json.gz",
+      "sha256": "77a1ddfcc058eb185ea1aac9dcf23d1a84f6cb26902f4aadd568b5faae6b3b2b",
+      "decompressed_sha256": "2a5196f248daa299a2c7c94b4e4654c55ead616db40a600a50dc2e7b07d3dd73"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_focused_audit_compat.json.gz",
+      "sha256": "dd920a52d0fd2ad13f6eb0318bb7ffd119e4271a41df0621d9c672c5dcf65219",
+      "decompressed_sha256": "2dc99be6cc83847ffdb4cadee13d0d71470b33c9662a7d299e0668de50ce0587"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_focused_audit_compat.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_initial_vocab_fix.json.gz",
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "decompressed_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/BOOST_FORCED_OUTGOING_BOUNDED_THEOREM_NOTE_2026-10-12.md.gz",
+      "sha256": "8516777c4db0e6cd55ea120f2355e9e48b0e757b4623010395d0749ae29cc147",
+      "decompressed_sha256": "47a528ea8fe6f39e003f79511edd381a79c8b8862b4cba66fbd9726696360ecf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/DISPOSITION.md.gz",
+      "sha256": "5dea67f83c3623ffde08c4c580acd850b23ae96234f24daf29ede6418c83014d",
+      "decompressed_sha256": "4881029ba1c4182ef2359f05b80f308b32fab516bf1f228ce70e0831d50303d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/KQ_canonical_output_comparison.json.gz",
+      "sha256": "15c282c8801b87aa7630cfe66df17df6982ea297f4ca646dc3c75a0b4236511a",
+      "decompressed_sha256": "5fa3030ead1508a303d8fd290b72d5aada2b02050714b2b8dc3856cc11867961"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/PUBLICATION_EDITS.json.gz",
+      "sha256": "faf17a0d25cc34fac0addeecd03a0c4aaf3778038ad3b3b1c6d5f13c1e94d586",
+      "decompressed_sha256": "db52b4635b7809237dc1b1e86c913ea7a778a743c69e184f23c4a238e2d7da93"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/citation_graph_manifest.json.gz",
+      "sha256": "fdc056b38d431f9672f31a534ef73e1443c3552924ca805e7f8c40262dfdc245",
+      "decompressed_sha256": "ec2d021d36a1fc1787a7a020b46505ddf637c2c3405f83ed9fa9553d248287ee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/kq_K_canonical_execution.json.gz",
+      "sha256": "ca96014789f36266bee192047af540b7525c00e41ab9badae843d28d60519cc2",
+      "decompressed_sha256": "201df5a1001dc57d19cb309041f3ffb5c723bbdf4fc9555567bc7df0813996da"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/kq_Q_canonical_execution.json.gz",
+      "sha256": "ed28c038055f72b9e29627258d8249e9a38ab14a5f6e90ec49afd0303e5bd3bf",
+      "decompressed_sha256": "945c99d79089f69b14d3450d96692343773a196b349bbb534c8d677df52085a7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/kq_citation_build.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/kq_citation_build.stdout.gz",
+      "sha256": "2cbfa5841e5c89b4a8a93786586b3949568c66184d93a0394e514a25cc3e2de8",
+      "decompressed_sha256": "8ee6f6f88570974cad0830eba0938ec0f3364375c9736361e954d7d58e69ac91"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/kq_citation_execution.json.gz",
+      "sha256": "4d8474d41fb8d8427ab6d87ccfe4097bece6c21f9e55e32e0fbf9da238e0a598",
+      "decompressed_sha256": "2010108716e0ad0be8875d97d6cb03b3a649377bffdeacacee2f0bedfc4f8aa8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/kq_citation_manifest.stderr.gz",
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "decompressed_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_pre_graph_repair/kq_citation_manifest.stdout.gz",
+      "sha256": "72c0658fb180d5872cfff9ea45f862de87be260a10e9198e9c0ed1eca24c0b3b",
+      "decompressed_sha256": "b81b579d2ab95a1bfd5d2675da1c7ce12133c67554ca1f38d93b3af6a5b101c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_Duhamel_source_sign.execution.json.gz",
+      "sha256": "9c0437425090a83d95f8c8c968cfbc8c5e232592bb6167c6cf4b666ce7be58d0",
+      "decompressed_sha256": "422d31eeda6078b7a7de0189cfd6cedf78b474b14d0a855d1248ea12d1a61f8e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_Duhamel_source_sign.py.gz",
+      "sha256": "f54188a92bd1ea6d326ea44f213d162c91f2aa994734312909d6a14b6b9eb8ad",
+      "decompressed_sha256": "04e8b45bcc97346b54c617c272d1d74a7c211cc149dbd983e948fa94c405fedb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_Duhamel_source_sign.stderr.gz",
+      "sha256": "525d260ebf4717eea7822243f274fac70f2ceb7d1fcfb1528c4dc93387060a95",
+      "decompressed_sha256": "5da9261afc2ba6c51e2f00f75a461c3a275f71c9dcfd6e18ccaf4078248edd19"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_Duhamel_source_sign.stdout.gz",
+      "sha256": "36e1a0506e7f34cfc79ffd3745318dc0ae7a9c897c1eff79faeda11546cb5fd2",
+      "decompressed_sha256": "a866c9588a51ceccce3fed2c7aa2b113223d13062a0af8b480fc5a3474505e83"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_Schur_sign.execution.json.gz",
+      "sha256": "27374d276ec6d8bd78f8a75b24bd5693dca05ab2c2c931bf7fd16554fca12245",
+      "decompressed_sha256": "519c622b4aee708ce824d479a313a9d967b2f3e0b9ab8c9af682d6d051b30373"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_Schur_sign.py.gz",
+      "sha256": "ad35ca472efc249a4e2c90410f1364993def6e3ce29db3d8b8bda32546798fcd",
+      "decompressed_sha256": "01e06450150487fd769c9df45254f1027158e7453f69bcb56ca1a81667b0c66f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_Schur_sign.stderr.gz",
+      "sha256": "433f7af76691c18b89f825d27b2ff2e487493d2944c7a1361946d43ac95346a4",
+      "decompressed_sha256": "e763e9d7a4f126084e21a5edfd917e4a16ea8a80ff3fc35273d6b331d2125b5b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_Schur_sign.stdout.gz",
+      "sha256": "c69727b608884abb8a3143ef75ee4b817e87e21005b50272512f71bc14bde7fa",
+      "decompressed_sha256": "a81a4d1e3e73b7c269eb7a1d41483fb6f92744cb6bf89bc435c81a2487c2cb12"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_forced_resolvent_sign.execution.json.gz",
+      "sha256": "d5366cade5d9c72c189a9dac754c4a0d2c928499f2298181f70d39f422ebff38",
+      "decompressed_sha256": "1ef772a103c10037048ecc6513d1ccc92d61dc903209ef34dde9e9392bc08817"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_forced_resolvent_sign.py.gz",
+      "sha256": "ac9c2db9032c1d4aad4010ce50f4e8c2de0dee5e706fbde27b9b6dabd29d2912",
+      "decompressed_sha256": "155ea220e2accc279c81593cc673690da57fc698309677eca2c37d23311724c8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_forced_resolvent_sign.stderr.gz",
+      "sha256": "bb77ee109231866b387fe3c0c72f4ecde9df3c3818e7ad9cea06d2486240efc1",
+      "decompressed_sha256": "0dccc6b2013a57cda8a0c391d7f61af5621374cecf91a1cdb439208328e27d16"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_forced_resolvent_sign.stdout.gz",
+      "sha256": "36e1a0506e7f34cfc79ffd3745318dc0ae7a9c897c1eff79faeda11546cb5fd2",
+      "decompressed_sha256": "a866c9588a51ceccce3fed2c7aa2b113223d13062a0af8b480fc5a3474505e83"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_source_phase_derivative.execution.json.gz",
+      "sha256": "02ec3ef27d2ed6059f067f80cc4bb384c7759d34001d6bbcf802a3a4a5e5bbd9",
+      "decompressed_sha256": "244a552df8513c6a056aecdaff36fd1e317d200207abaf1ffe8f1155fac498a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_source_phase_derivative.py.gz",
+      "sha256": "3a6227915e5e7c690758690c481746cf62b9307858ab25fad3c1f217ce5a64e0",
+      "decompressed_sha256": "732df9c507ff85e40ac7157bffa47029723abe01f27238f0bc11a43d0a4d0a52"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_source_phase_derivative.stderr.gz",
+      "sha256": "aeac5b44bc91270824c3af15e20dd1426ca4b0d3eb46e519ba97309827c6949d",
+      "decompressed_sha256": "da48c48a20766fae195db3b19085b1d5c4ea7d3bd5668469aa1a566e9b225fb8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_source_phase_derivative.stdout.gz",
+      "sha256": "22ce1a9fe108bdac541451503dcd813a96d95e86cd39b40535ff0f73b07f9e24",
+      "decompressed_sha256": "6b310473c703a1e47598e74d8fd51ec6e4af4e76153050444feb72d301f433eb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_spectral_weight_power.execution.json.gz",
+      "sha256": "b8a1022cf3916a7764786c6b57e48bc6cb0e19af097c618f8bd1fd8da979304e",
+      "decompressed_sha256": "b39796fac14748dc4ea92157a9dcef6a903d43307b32e4cdec6e728603bff084"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_spectral_weight_power.py.gz",
+      "sha256": "1d38754b5a6eefd220eab973097bc44d4eec491ddba15d359d468032dd599f1e",
+      "decompressed_sha256": "d6e90423df2b614ee61d09b9b1d45b89610f6bc0dce8adc007c722d7dad6f0fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_spectral_weight_power.stderr.gz",
+      "sha256": "ce591009a6a58fcd5dd5499b8497ce96d46c64f2d56ee460e73e96234764d354",
+      "decompressed_sha256": "0ea1aefcdd0990dfbb9a497fd5478ffe86ae33c23488b545c6b2f1e865a9af52"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/K_spectral_weight_power.stdout.gz",
+      "sha256": "6c7db858dbb9b2355f4a996c6acc6330cc7ca0de6163e7239bb06fb686fd6ec5",
+      "decompressed_sha256": "3b1e4c936f54b25188e6380e3b53f276760454e35532564ae532fc5347b573f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_final_endpoint.execution.json.gz",
+      "sha256": "a46f590811fa205bbc3a0a95581572ea9d52d9c017f55648872b9a912550b50d",
+      "decompressed_sha256": "f05d76b3dc7bf6884e17815bad73c10d4c3d15f3aaa861702067604c929fe64d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_final_endpoint.py.gz",
+      "sha256": "c78dd4ffc7cc0dce502a0fb47865fc11df601ac1dbd130f4a6dc52ddb3b6e278",
+      "decompressed_sha256": "1ce442b9bddd85333a2e1aaa83e9537189badf492ba0c037562b27194a1b46b1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_final_endpoint.stderr.gz",
+      "sha256": "a913346b4098cae700259ae334959874d61f15590c6887253f4f0b5335bf6782",
+      "decompressed_sha256": "3ed3e14aa4fd6dcbafaadd383450893a1ad34648a3a7567cb4f26792c939315f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_final_endpoint.stdout.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_full_error_generator_derivative.execution.json.gz",
+      "sha256": "160b54e41d85ff24e168c94dcd6e1d19e2ac313db87fc8d3f067744ef3df2282",
+      "decompressed_sha256": "f6cd7cbc63d7a6daa61269255233595ba1822d6179b3c4b88009fb85c3c302f2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_full_error_generator_derivative.py.gz",
+      "sha256": "5dd26851673054bbcf1da5177fcc21e261e736c35d2386f5a224a1c129c97346",
+      "decompressed_sha256": "6da55f5cd522ad6c06040cd2694f91bc52b687b674a5ba8d7c27bfaf248d0118"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_full_error_generator_derivative.stderr.gz",
+      "sha256": "bebd0be29c9a2c24cd4256aae793baf24dd83218a76f1504227f7cc7a059cf5c",
+      "decompressed_sha256": "c82c983e1448f1ed5b6441a96eca7eed6f6f4cd125a1b291682e954baa6905a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_full_error_generator_derivative.stdout.gz",
+      "sha256": "a14911e567a3264d9811024249a18c87bc5510a0a8832adf40f6dfe5b662de61",
+      "decompressed_sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_initial_endpoint.execution.json.gz",
+      "sha256": "69c0f0ab5bbb9dd28f9367a46a4f603ea22541c7509626b4aff6a9d5c4e9ad7a",
+      "decompressed_sha256": "c53d7200b6d109021ed39c3882455362e197391e58ba145cf36f1c9a5bbd6493"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_initial_endpoint.py.gz",
+      "sha256": "7e776e9e7c1312185b7428a44c57c4d3b57dbf4c8cfc18aae56770660aae894a",
+      "decompressed_sha256": "fba5efb4a9c706a8fe15ef4f60b0dd5a24484062a455eb8134e4799d688e5a08"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_initial_endpoint.stderr.gz",
+      "sha256": "f08f6456b5498f63779858757af611d0b4445d0b61caa4d28263d95c84856843",
+      "decompressed_sha256": "4800db2b1d937822928863a912a9f1cb11bb0558caa8ece9690b50aac3b7e171"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_initial_endpoint.stdout.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_mean_residual_term.execution.json.gz",
+      "sha256": "2fe16c4fe7cd2c232c2120fe42606ac5d30f7c91220fce4c480e9629bc14dea3",
+      "decompressed_sha256": "5cfe3e237fa00c81439e4d9cfe740ed425640fd39ade58de461a46e3553ac24e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_mean_residual_term.py.gz",
+      "sha256": "d209e1c3072cd66162cb2f7c0258db76caeaae4596f874328066a195e644b4a2",
+      "decompressed_sha256": "b9ce83d0d6ee72fe5d30302aec17b400153e0b53a58922efeb8870fb728c4962"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_mean_residual_term.stderr.gz",
+      "sha256": "9eaca4294617a5eb93c061a723e90a56c873ceadad413b916d5d854a0e1393f1",
+      "decompressed_sha256": "2cf42e032bc8cf7d4a2d9f803418794df58a47564db530cbf1ec4add6183a830"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_mean_residual_term.stdout.gz",
+      "sha256": "23d41e31f00b10cbf5890f2d8ec22ed8f8b43a49173381b2023582a31f7f7441",
+      "decompressed_sha256": "f70bd92ab5efbe00f5ff829e35b178cda355a7992830e34878421e4b7b3ea844"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_mean_subtraction.execution.json.gz",
+      "sha256": "5aeff4abe21589758ff4011a09aab876533a88436fa70fa015c06c593191b312",
+      "decompressed_sha256": "060cb6b0564e78cb1fb161796d3a059ee90f7987cab6b8430da5cbcac8ba12ae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_mean_subtraction.py.gz",
+      "sha256": "91d79b3bd3c62cba99043c06600272898dd21dbf9eabe994ee5f786b62b2f6cc",
+      "decompressed_sha256": "4deb67bf2b7cacaa26515c560d29437195da850aaf0680e5f148f91dce56a01e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_mean_subtraction.stderr.gz",
+      "sha256": "94f2bd7b1681ea6ca45918251167ddbe479ea6f11a36b6c0b44ae0e9cd43975f",
+      "decompressed_sha256": "deb5b409eaa94d4a6200580e63efe9279b3612f5877fa817758e5ec86fba3fcf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_mean_subtraction.stdout.gz",
+      "sha256": "1e02b6f50ba01a4404dd17c86eff25aabb7faa159a51358e75015be6a3245e14",
+      "decompressed_sha256": "e82f9bbc12bdc648fba750993dbaeffced3be0968760fe3497576e4e37d6f439"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_noncommuting_perturbation.execution.json.gz",
+      "sha256": "8a6d430608dabca5a1717e92e5f5aaf2fcebb7fd1b8db430bd8f9d4f99714270",
+      "decompressed_sha256": "dac3bdfe428c20aacff1f432fe001ba32e8d2edabaf826f5fb69e60c5c620a34"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_noncommuting_perturbation.py.gz",
+      "sha256": "71355a3d5c42c33dc9e919335ea2448fc92821613153daadbd491a5029399430",
+      "decompressed_sha256": "b15b0675842c1282dd5f8d915ebd25ce769003973b347f08394457bbeccacc7f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_noncommuting_perturbation.stderr.gz",
+      "sha256": "4fb0566db079abdea8e280ad53ef315157e377ea2964d2b90b2fc249b8deee4d",
+      "decompressed_sha256": "9b6093a418e38b75aad3332af4ae4648c9a5054d149ad3dab5e7c85a33cb9724"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_noncommuting_perturbation.stdout.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_source_clock_derivative.execution.json.gz",
+      "sha256": "eb6669a1fd384ff8495b1690e0cc94f49ad6d7c9d5183d1bafddbc0bf33acd1b",
+      "decompressed_sha256": "9c4bc8fce9c59ce40da1322fb117b12c52f6126a87c0e86a5df2e2516575acc2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_source_clock_derivative.py.gz",
+      "sha256": "c5f8181753c0d9037a318bfef743700412c92ba4f5b89ad513dda1fae1b60539",
+      "decompressed_sha256": "56506ac9a14d2778081b6a6aa61006a8295422fcf2b697b42e4d323133ac6abf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_source_clock_derivative.stderr.gz",
+      "sha256": "f0b5a4483e2277c33bcddcf02c5e2bdd702d413bf0b07d7f38c0d23fdcc2888d",
+      "decompressed_sha256": "95cff737952430e8250f415a3fd833259d8c3f558127d3b0ab9b36db5a9d2c5c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_source_clock_derivative.stdout.gz",
+      "sha256": "a14911e567a3264d9811024249a18c87bc5510a0a8832adf40f6dfe5b662de61",
+      "decompressed_sha256": "df4f14c4abdd643be3b277aaae788bcdab3337a52cb8b258932a36fd24c888cb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_time_corrector_derivative.execution.json.gz",
+      "sha256": "6edb98c85f3df278f82d1c92b1a6b1ddc1c5f5359fd274b8ed0c13b4967168ba",
+      "decompressed_sha256": "5f0827ea6d2de3bd711baf4a60bcc3f5f1b4dfb5c5e46758cdd0d29fc008d2f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_time_corrector_derivative.py.gz",
+      "sha256": "56f9735afd195abcb3f7a81da4c46f0caf560723e198f7c222904c9b6544b73e",
+      "decompressed_sha256": "d5ec4af23d73295328e4060b9aec53270a79a07e9e3ce0ea4048010aadf72349"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_time_corrector_derivative.stderr.gz",
+      "sha256": "1dff58ee7c32cc514e33e0e87a0f7a92664657a13fcaa01b82130b38f97631fb",
+      "decompressed_sha256": "4dd36e1757ccb6ce81edf9e147c38e627e45f116c404b0fbc0d9f55246ad3f21"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_time_corrector_derivative.stdout.gz",
+      "sha256": "89ce697c600f4967f0fba364b670f20a94f26a65ff7d75e49b34fc5e45f875dd",
+      "decompressed_sha256": "315b220f4bb5ef4941b32364fdedc20973d62bce9cf386a0a0f4156d6487aa72"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_alpha_derivative.execution.json.gz",
+      "sha256": "0a42d0afb1540d0628c41e2af9bc7a74651d6f60530b781ae4b9fdecd791a766",
+      "decompressed_sha256": "3ed90ca1e8e09823445268461a8d016df853de0a5b0da7e94a89c860fa656eb2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_alpha_derivative.py.gz",
+      "sha256": "b472739ebb2a1e333511099e562c04a8316fc9b6c82b2ef6afdb45b415f4baa9",
+      "decompressed_sha256": "eb65b6f2177fd2d7441b761d09adc59f0ce78b72b8a67457c1703950395ed989"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_alpha_derivative.stderr.gz",
+      "sha256": "fc68e4e98c142c242fdb42252dc7471b5f4394e8490a1a4874dea7fa375e2a8d",
+      "decompressed_sha256": "8f666c563e3a98ab02cb7686dd9dcc08067077d94e1d76c462fa47ab2f0afb7a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_alpha_derivative.stdout.gz",
+      "sha256": "e2ff947b71e3ced2b89c5333009045858c83385bd3e1594e0a252c67e6ded6ef",
+      "decompressed_sha256": "9778370587cd1abb58c62e7b3f617685a034bda50ddf2199299ee76c37e371b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_coupling_derivative.execution.json.gz",
+      "sha256": "89e447bcec76199b5aa0df5797adab206107186dd7e27fb3eb052f32ccca80f0",
+      "decompressed_sha256": "73cc49ed6bedea34a0f13d6a50b8c7ac9cee746f45b0c1104e620b5c98a1bf9d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_coupling_derivative.py.gz",
+      "sha256": "c93f33181f1f7e5b41167af08bbee0c82e2d367cd9f8d9999c51de1ae4a005e4",
+      "decompressed_sha256": "a72bb95ea3b00c0ff00003b55207559ede9fb9a95973a8592e001d3967584afb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_coupling_derivative.stderr.gz",
+      "sha256": "8122e20499b23fbd78355b3af3a761ecd03df08eb4e7dcc876ad601a2ba87662",
+      "decompressed_sha256": "77bbebc28cfae300c79a927b053df734bd20f74b5322b49df47cfce0a670a701"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_coupling_derivative.stdout.gz",
+      "sha256": "e2ff947b71e3ced2b89c5333009045858c83385bd3e1594e0a252c67e6ded6ef",
+      "decompressed_sha256": "9778370587cd1abb58c62e7b3f617685a034bda50ddf2199299ee76c37e371b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_propagator_derivative.execution.json.gz",
+      "sha256": "65d43c7cabf9e8210b9754499d40ee155b52588fdff5f607e958f721701f590f",
+      "decompressed_sha256": "04548159377f1489aa30c67a8d5cda86637ae7bbfd09a32d82b67ca4960963a3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_propagator_derivative.py.gz",
+      "sha256": "2f59f3c33ab419ff7f07a8b6f788712755298d224e334079e864f336912937e9",
+      "decompressed_sha256": "cd72d38dcc5a3417f59f4d0563fc139e5d9a55d5c44fc164e7a1f91a8015135a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_propagator_derivative.stderr.gz",
+      "sha256": "7bda6236adac7b404a51f58beae3dbf08b9991a729317e4297a7532a3f72544f",
+      "decompressed_sha256": "ad9f80e176777185bdf6f0b2589ee0ef4365501d167b0687a37202305b198d23"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/Q_transverse_propagator_derivative.stdout.gz",
+      "sha256": "e2ff947b71e3ced2b89c5333009045858c83385bd3e1594e0a252c67e6ded6ef",
+      "decompressed_sha256": "9778370587cd1abb58c62e7b3f617685a034bda50ddf2199299ee76c37e371b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/kq_primary_mutations/manifest.json.gz",
+      "sha256": "d624cd8cbc5803125cc72b9e5234d1d8d22f64e50cb216e37e6c33c66fff1d8e",
+      "decompressed_sha256": "41f31b83932d9e762077d7ea7d0ac927974fa652f1f1e0255298c5d171b6cbc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/prepare_kq_notes.py.gz",
+      "sha256": "991b0dd8b3e14a0ed4bd8bb984c5feddddee7ddb61fd737821b0dd6e0c493b67",
+      "decompressed_sha256": "acd7433bc9eaba4c94c15e9a26bc25eda537577aad0a5b4f4930e3c324b60bee"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/prepare_kq_packet.py.gz",
+      "sha256": "71a820adf5f88331156bea38681426f299b3c49ecd49b867f023c09eeafc4cdc",
+      "decompressed_sha256": "3ba211ef01cb0f20f515b3d9951b1bd3dd6a04a8a592ae7e7ca0706399664f5c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/prepare_kq_primaries.py.gz",
+      "sha256": "c60cc601bb3fdac53476da6d693bf9ca4b63bb9c05b00e53c19f4ce361b8fe15",
+      "decompressed_sha256": "7909d8ff3474f9562a54ee2a74f50d4ab39c5f21f674d2b79ba0c5f7dbc21798"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/evidence/run_kq_primary_mutants.py.gz",
+      "sha256": "2d987c042b1a892da07939caaa7381134592ed64c2f605cc076aac3605a7f0ae",
+      "decompressed_sha256": "3b6a25eb9c29349bff8e5e6f1462b81cdae079f4fd458be5ad2832b18f15b064"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/reconstruct.py",
+      "sha256": "56b2adef6761aed88022019fefbfabb604db54fed190021af52e05485fd9b72d"
+    },
+    {
+      "path": "docs/BOOST_FORCED_OUTGOING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "8964a56defa086dc4d79aa1f48e1a58721e44bad6b15fb4c99e8b601c18778e1"
+    },
+    {
+      "path": "docs/BOOST_QUANTITATIVE_CORRECTOR_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "sha256": "89a7e44d33f5ab6946c499b961e10c4bb04580203a5a41f9cca93d6842645240"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "fc68c76c84efe4f35bd717b663250792fbfbac88c4da6be2b6afa1fc6768c956"
+    },
+    {
+      "path": "logs/runner-cache/boost_forced_outgoing_2026_10_12.txt",
+      "sha256": "8942ee77106f085777fb4eeb16fe9fa682c75c2bd68652b4844d63b9dd7a19eb"
+    },
+    {
+      "path": "logs/runner-cache/boost_quantitative_corrector_2026_10_12.txt",
+      "sha256": "fbff0a0afdb15f0305753a688e8b996008d378e1a4e519354d43d4f3109d990a"
+    },
+    {
+      "path": "scripts/boost_forced_outgoing_2026_10_12.py",
+      "sha256": "0e6452574e46b8cd292ca8a471c09c8e5563ce9625c3981de2ce9ac7d81e3e36"
+    },
+    {
+      "path": "scripts/boost_quantitative_corrector_2026_10_12.py",
+      "sha256": "7544468cd317b65d777d1692788f7fbd07b26e56bb0e98ade92953a0d307bd74"
+    }
+  ]
+}

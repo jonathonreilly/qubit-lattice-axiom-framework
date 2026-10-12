@@ -1,0 +1,76 @@
+{
+  "outputs": [
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md",
+      "source_sha256": "1c314fc05a26ca27e0828a70ca8132a2bad269b60c127ea37a53e11e95e087c9",
+      "preserved_source": "evidence/BOOST_KERNEL_EFFECTIVE_DYNAMICS_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: supports\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nclaim_id: boost_forced_outgoing_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: \"For the exact supplied excluded-walk preparation, the effective forced correction has an explicit resolvent-dressed outgoing vector and rapidly decreasing H1 transient. The prior continuum spectral measure gives positive ordered correction and transverse-norm limits; no actual-walk lambda rate is proved by this note alone.\"\nupstream_dependencies:\n  - excluded_walk_boost_bracket_control_bounded_theorem_note_2026-10-11\nrunner: scripts/boost_forced_outgoing_2026_10_12.py\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: supports\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "reason": "Register the exact conditional theorem, scoped primary and in-branch dependencies."
+        },
+        {
+          "before": "2026-10-11. External author derivation by `boost_kernel_dynamics`.\nIndependent review of this new composition is pending. No source, premise,\nrepository state, or audit status is changed.",
+          "after": "Author derivation dated 2026-10-11 by `boost_kernel_dynamics`; publication 2026-10-12.\nStatus: conditional-support. A separate complete source reconstruction found\nno required correction. This is provisional mathematics, without an applied\naudit verdict or retained status.",
+          "reason": "Record the completed selective K review and distinguish publication from author history."
+        },
+        {
+          "before": "Let S be this note's directory. All of the following mathematical source\narguments were read completely and their identities checked:",
+          "after": "S denotes the original research source collection, preserved losslessly in the\n[complete milestone packet](../.claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/). EVIDENCE_MAP.json maps every source below to its preserved\nbytes. All of these mathematical source arguments were read completely and\ntheir identities checked. The in-branch [boost theorem](EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md)\ncontains B, E and X; the memory proof from PR9481 remains an explicit\nprovisional cross-PR dependency, preserved completely in this packet:",
+          "reason": "Make original source locations portable and disclose the non-ancestor memory dependency."
+        },
+        {
+          "before": "There is no Lean certification in this author packet. A focused independent\ncheck should inspect K8's sign and normalization, K7's actual source support,\nthe uniform H1 integration-by-parts argument, the prior-measure reuse, and\nthe order of limits in K18.",
+          "after": "No Lean certification is claimed. The separate review checked K8's sign and\nnormalization, K7's actual source support, the uniform H1 integration-by-parts\nargument, the prior-measure reuse, and the order of limits in K18. The full\nreview and its reconstruction frozen before author controls are preserved.\nTheir identities and the distinct independent finite ODE calculation appear\nin REVIEW_HISTORY.md. Root is a contributor, not that independent reviewer.\nThe [quantitative extension](BOOST_QUANTITATIVE_CORRECTOR_BOUNDED_THEOREM_NOTE_2026-10-12.md)\nproves its own rates and simultaneous limits; those are separate from K alone.",
+          "reason": "Record the completed K review and link the separate rate theorem without retroactive scope inflation."
+        },
+        {
+          "before": "Only this note and `boost_kernel_effective_dynamics/` were written. No\neditable prompt files changed. No repository edit, commit, PR, merge,\naudit action, physical-axiom change, other-chat message, subdelegation,\nmodel override, or campaign-deadline extension was performed by this worker.",
+          "after": "The frozen author source and every publication edit are recoverable from\nPUBLICATION_EDITS.json. The [finite control](../scripts/boost_forced_outgoing_2026_10_12.py)\nchecks the stated finite algebra; the continuum theorem rests on the full\nproof and its checked dependencies. Publication execution is recorded in\nDELIVERY_CHECKS.md. No editable prompt, physical axiom, retained status or\napplied audit verdict is changed.",
+          "reason": "Replace worker-local history with publication recovery and exact evidence scope."
+        },
+        {
+          "before": "The [quantitative extension](BOOST_QUANTITATIVE_CORRECTOR_BOUNDED_THEOREM_NOTE_2026-10-12.md)",
+          "after": "The quantitative extension in `BOOST_QUANTITATIVE_CORRECTOR_BOUNDED_THEOREM_NOTE_2026-10-12.md`",
+          "reason": "Describe a downstream consumer as a code reference, so the citation graph does not mistake it for a reverse mathematical dependency."
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "docs/BOOST_FORCED_OUTGOING_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "8964a56defa086dc4d79aa1f48e1a58721e44bad6b15fb4c99e8b601c18778e1"
+    },
+    {
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/BOOST_HSTAR_QUANTITATIVE_CORRECTOR_PROBE.md",
+      "source_sha256": "4b1d5a8395d1d5c79d798ef17950f7c1ce4c1e0781e2f9ec610223bc1eb69820",
+      "preserved_source": "evidence/BOOST_HSTAR_QUANTITATIVE_CORRECTOR_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: supports\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nclaim_id: boost_quantitative_corrector_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: \"For the exact supplied globally normalized preparation, a physical approximate range corrector yields explicit L2 and H1 errors on growing effective-time windows. Combined with the conditional outgoing theorem, correction norms converge simultaneously for eta below 1/4; all nine normalized current residual means vanish for eta below 1/6. No exponent optimality, total-state occupation or physical covariance is asserted.\"\nupstream_dependencies:\n  - excluded_walk_boost_bracket_control_bounded_theorem_note_2026-10-11\n  - boost_forced_outgoing_bounded_theorem_note_2026-10-12\nrunner: scripts/boost_quantitative_corrector_2026_10_12.py\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: supports\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "reason": "Register the exact conditional theorem, scoped primary and in-branch dependencies."
+        },
+        {
+          "before": "2026-10-11\u201312. Bounded author derivation by `boost_kernel_dynamics`, with root\nas coauthor of the proposed mechanism. This is a separate extension of the\nfrozen X and K sources. Independent review is pending. No frozen source,\nphysical premise, Git file, publication or audit status is changed.",
+          "after": "Derivation dated 2026-10-11\u201312 by `boost_kernel_dynamics`, with root as\ncoauthor of the proposed mechanism. Status: conditional-support. This is a\nseparate extension of the frozen X and K sources. Selective review and its\nexact evidence roles are recorded in the milestone packet; no audit verdict\nor retained status is applied.",
+          "reason": "Separate the provisional publication and review record from frozen author history."
+        },
+        {
+          "before": "Let S denote this note's directory. The exact source identities are:",
+          "after": "S denotes the original research source collection, preserved losslessly in the\n[complete milestone packet](../.claude/science/physics-loops/toe-boost-quantitative-outgoing-20261012/). EVIDENCE_MAP.json maps the exact source identities below\nto their preserved bytes. The [boost theorem](EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md)\nis the in-branch B/E/X dependency; [K](BOOST_FORCED_OUTGOING_BOUNDED_THEOREM_NOTE_2026-10-12.md)\nis published alongside this note and discloses its provisional memory import:",
+          "reason": "Make the source boundary and cross-PR dependency portable and explicit."
+        },
+        {
+          "before": "The appropriate independent check should inspect the global Q4 constraint,\ncone multiplicity, corrected range identity, weighted derivative estimates,\nall source approximations, both endpoints and noncommuting term in Q21,\nthe constants and limit order in Q25\u2013Q28, and the all-index coefficient\nbounds and complete expectation decomposition in Q29\u2013Q34. There is no\nLean certificate or audit verdict in this author packet. Only this note and its named\nevidence directory were written. No editable prompt files changed.",
+          "after": "The selective source check addresses the global Q4 constraint, cone multiplicity,\ncorrected range identity, weighted derivative estimates, all source approximations,\nboth endpoints and the noncommuting term in Q21, the constants and limit order\nin Q25\u2013Q28, and the all-index coefficient bounds and complete expectation\ndecomposition in Q29\u2013Q34. REVIEW_HISTORY.md records its final scope and verdict.\nThe [finite control](../scripts/boost_quantitative_corrector_2026_10_12.py)\ncontains all three complete original control sources in separate functions;\nPUBLICATION_EDITS.json and PRIMARY_COMPOSITION.json recover every byte.\nNo Lean certificate, physical-axiom change, editable-prompt change, retained\nstatus or applied audit verdict is claimed. Root is a coauthor, not the\nindependent reviewer. DELIVERY_CHECKS.md records publication verification.",
+          "reason": "Link complete proof/review/recovery evidence and distinguish finite controls from the theorem."
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "docs/BOOST_QUANTITATIVE_CORRECTOR_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "89a7e44d33f5ab6946c499b961e10c4bb04580203a5a41f9cca93d6842645240"
+    }
+  ]
+}

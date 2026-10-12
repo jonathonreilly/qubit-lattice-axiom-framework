@@ -1,0 +1,96 @@
+===== runner cache v1 =====
+runner: scripts/boost_quantitative_corrector_2026_10_12.py
+runner_sha256: 7544468cd317b65d777d1692788f7fbd07b26e56bb0e98ade92953a0d307bd74
+input_fingerprint_sha256: 47ab1a101dfc9b720a955cbf30983540aa1f67d8999a3ac2fc0706b86ef842a3
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.94
+status: ok
+----- stdout -----
+checked finite_I0_is_not_torus_integral
+checked physical_Pi_projection
+checked physical_Pi_annihilates_contact_singlet
+checked physical_Hstar_Pi
+checked physical_Pi_h0
+checked direct_Pauli_mean_zero_singlet_range
+checked corrector_physical_mean_zero
+checked corrector_exact_residual_and_mean_term
+checked global_zeta_orthogonality
+checked actual_residual_is_triplet
+checked actual_source_residual_is_triplet
+checked bounded_perturbation_does_not_commute
+checked folded_cone_low_coefficient
+checked folded_cone_high_coefficient
+checked source_S_constant
+checked source_derivative_difference_constant
+checked source_normalization_error_bound
+checked source_first_derivative_error_bound
+checked radial_global_orthogonality
+checked radial_corrector_divergence_diagnostic
+checked radial_residual_square_root_diagnostic
+checked noncommuting_corrector_Duhamel_t_-1.7
+checked full_differentiated_error_t_-1.7
+checked noncommuting_corrector_Duhamel_t_0.6
+checked full_differentiated_error_t_0.6
+checked noncommuting_corrector_Duhamel_t_2.3
+checked full_differentiated_error_t_2.3
+{
+  "controls_completed": 27,
+  "max_ibp_error": 3.210313764760098e-16,
+  "max_parameter_error": 6.845404783690867e-10,
+  "finite_I0": "97/100",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "scope": "author finite/radial algebra controls; no torus theorem certification"
+}
+checked tangent_generator_Hermitian
+checked tangent_generator_square
+checked pointwise_parameter_commutator
+checked direct_Pauli_transverse_block
+checked weighted_z_polynomial_constant
+checked weighted_zj_polynomial_constant
+checked weighted_zt_polynomial_constant
+checked weighted_zjt_polynomial_constant
+checked residual_polynomial_constant
+checked residual_jt_polynomial_constant
+checked transverse_block_integral_t_-2.2
+checked transverse_three_derivatives_t_-2.2
+checked transverse_block_integral_t_0.4
+checked transverse_three_derivatives_t_0.4
+checked transverse_block_integral_t_3.1
+checked transverse_three_derivatives_t_3.1
+{
+  "controls_completed": 16,
+  "max_state_error": 1.4092960140259168e-17,
+  "max_derivative_error": 2.6684498818007686e-13,
+  "finite_I0": 1,
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sympy": "1.14.0",
+  "scope": "author coefficient and finite-block controls; no continuum proof or independent review"
+}
+checked A_second_derivative_two_arrangements
+checked C_first_derivative_full_product_rule
+checked Taylor_operator_constant
+checked limiting_operator_constant
+checked all_nine_symmetric_coefficient_identities
+checked all_nine_kernel_pairings
+checked mean_monomials_uniform_dominance
+checked open_window_endpoint_arithmetic
+{
+  "controls_completed": 8,
+  "sympy": "1.14.0",
+  "scope": "author exact product-rule arithmetic and generic all-index coefficient fixture; no independent review"
+}
+per_element: exact mean subtraction, residual and cone majorants checked
+per_site: checked and not executed — finite physical blocks are not a volume limit
+per_mode: noncommuting Duhamel and every differentiated error term checked in finite controls
+per_block: full transverse derivative and generic expectation majorant controls checked
+lattice_wide: checked and not executed — uniform continuum bounds and growing-time limits require Q1–Q34
+TOTAL: PASS=51 FAIL=0
+SCOPE: 27 corrector, 16 polynomial and 8 mean finite control records; no analytic proof or audit verdict from this runner
+
+----- stderr -----
+

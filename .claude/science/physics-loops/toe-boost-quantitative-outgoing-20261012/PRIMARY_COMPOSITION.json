@@ -1,0 +1,46 @@
+{
+  "outputs": [
+    {
+      "kind": "primary",
+      "publication_path": "scripts/boost_forced_outgoing_2026_10_12.py",
+      "publication_sha256": "0e6452574e46b8cd292ca8a471c09c8e5563ce9625c3981de2ce9ac7d81e3e36",
+      "prefix": "#!/usr/bin/env python3\n\"\"\"Finite Pauli, forced ODE and spectral-weight controls; analytic scope is in the note.\"\"\"\nAUDIT_TIMEOUT_SEC = 120\nAUDIT_INPUT_PATHS = ['docs/BOOST_FORCED_OUTGOING_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md']\nif not __debug__:\n    raise RuntimeError(\"Run without -O: control assertions must be enabled\")\n\n",
+      "suffix": "\nprint(\"per_element: exact Pauli and Schur identities checked\")\nprint(\"per_site: checked and not executed \u2014 no site-volume convergence inference\")\nprint(\"per_mode: finite forced ODE, parameter derivatives and spectral-weight identities checked\")\nprint(\"per_block: physical finite singlet/triplet compression checked\")\nprint(\"lattice_wide: checked and not executed \u2014 continuum absolute continuity and outgoing limits require the written proof\")\nprint(\"TOTAL: PASS=38 FAIL=0\")\nprint(\"SCOPE: finite controls; no continuum proof, original-walk rate, physical selection or audit verdict from this runner\")\n",
+      "sources": [
+        {
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_kernel_effective_dynamics/forced_controls.py",
+          "source_sha256": "2b73edfdee5c87bfd4aba5e2e1459db49ef4857def47ad12c02c95d48dc420dd",
+          "preserved_source": "evidence/boost_kernel_effective_dynamics/forced_controls.py.gz",
+          "wrapper": null
+        }
+      ]
+    },
+    {
+      "kind": "primary",
+      "publication_path": "scripts/boost_quantitative_corrector_2026_10_12.py",
+      "publication_sha256": "7544468cd317b65d777d1692788f7fbd07b26e56bb0e98ade92953a0d307bd74",
+      "prefix": "#!/usr/bin/env python3\n\"\"\"Full finite corrector, polynomial-growth and expectation controls.\"\"\"\nAUDIT_TIMEOUT_SEC = 120\nAUDIT_INPUT_PATHS = ['docs/BOOST_QUANTITATIVE_CORRECTOR_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/BOOST_FORCED_OUTGOING_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md']\nif not __debug__:\n    raise RuntimeError(\"Run without -O: control assertions must be enabled\")\n\n",
+      "suffix": "check_corrector()\ncheck_polynomial()\ncheck_mean()\nprint(\"per_element: exact mean subtraction, residual and cone majorants checked\")\nprint(\"per_site: checked and not executed \u2014 finite physical blocks are not a volume limit\")\nprint(\"per_mode: noncommuting Duhamel and every differentiated error term checked in finite controls\")\nprint(\"per_block: full transverse derivative and generic expectation majorant controls checked\")\nprint(\"lattice_wide: checked and not executed \u2014 uniform continuum bounds and growing-time limits require Q1\u2013Q34\")\nprint(\"TOTAL: PASS=51 FAIL=0\")\nprint(\"SCOPE: 27 corrector, 16 polynomial and 8 mean finite control records; no analytic proof or audit verdict from this runner\")\n",
+      "sources": [
+        {
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/corrector_controls.py",
+          "source_sha256": "f2b9347fa419a4e6a442a03498a8aeb6e0562913198e06b149d8a50b3a51ec13",
+          "preserved_source": "evidence/boost_hstar_quantitative_corrector/corrector_controls.py.gz",
+          "wrapper": "check_corrector"
+        },
+        {
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/polynomial_controls.py",
+          "source_sha256": "a56d25d86244d5fb3a2865a0790abe554c54aca225393bdaa329eaf4cab086cb",
+          "preserved_source": "evidence/boost_hstar_quantitative_corrector/polynomial_controls.py.gz",
+          "wrapper": "check_polynomial"
+        },
+        {
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/boost_hstar_quantitative_corrector/mean_controls.py",
+          "source_sha256": "101c90f89765a5d0c81a5e790e33f312e9abb3dccfef5139b6261df6dfee4f7c",
+          "preserved_source": "evidence/boost_hstar_quantitative_corrector/mean_controls.py.gz",
+          "wrapper": "check_mean"
+        }
+      ]
+    }
+  ]
+}

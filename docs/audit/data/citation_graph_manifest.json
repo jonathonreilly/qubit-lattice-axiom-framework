@@ -1,6 +1,6 @@
 {
- "edge_count": 15421,
- "node_count": 6871,
+ "edge_count": 15424,
+ "node_count": 6873,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -2453,6 +2453,14 @@
   "boost_cone_apbc_sign_neutral_2026-06-23": {
    "deps_hash": "7a3314e8d4b0",
    "out_degree": 7
+  },
+  "boost_forced_outgoing_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "a2414241ba68",
+   "out_degree": 1
+  },
+  "boost_quantitative_corrector_bounded_theorem_note_2026-10-12": {
+   "deps_hash": "1ee653b365da",
+   "out_degree": 2
   },
   "bootstrap_continuation_availability_nonempty_free_orbit_reduction_propagation_closure_bounded_theorem_note_2026-07-04": {
    "deps_hash": "7b707271a9a8",

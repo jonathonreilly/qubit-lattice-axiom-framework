@@ -907,14 +907,30 @@ bond on `-e_x` and `-e_y` against the chirality cap has kernel cross sum
 is not in this count. The ten-kernel coefficient span is not classified.
 Runner `PASS=6 FAIL=0`.
 
+Cycle 67. On every ordered height pair, one swapped-dot generator plus
+twice the cap of each ratio span has transverse-sign coordinate `0`,
+sign-product coordinate `0`, swapped coordinate `-1`, orthogonal
+coordinate `1`, matched coordinate `8`, and scaled coordinate `8`. The
+plus-dot sum has swapped-dot coordinate `1`. The minus-dot sum has
+swapped-dot coordinate `-1`. Each lies in neither ratio span and outside
+the even space. The two sums are linearly independent. The base image
+has rank 10. The coefficient pairs compress to 17 rows, and the gcd of
+the 10-by-10 minors is a nonzero constant, so every chirality
+coefficient has partner rank 10. The pivot gcd has degree `7` on
+`(1, 2)`, `(2, 1)`, and `(3, 1)`, and degree `4` on `(1, 3)`, `(2, 3)`,
+and `(3, 2)`, for both sums. At heights 1 and 2 the bond on `-e_x` and
+`-e_y` against the chirality cap has kernel cross sums `-10` and `-8`.
+Three times the cap of the same ratio span is not in this count. The
+ten-kernel coefficient span is not classified. Runner `PASS=7 FAIL=0`.
+
 ## Next exact action
 
 Decide whether every chirality coefficient on the sum of one
-swapped-dot generator and twice the cap of each ratio span has partner
-rank 10. Both swapped-dot generators plus twice the cap of each ratio
-span have partner rank 10 at every chirality coefficient, the
-swapped-dot coordinate is 0, and the scaled coordinate is 8. Do not
-claim the ten-kernel coefficient span is settled. Do not claim the
+swapped-dot generator and three times the cap of the same ratio span
+has partner rank 10. One swapped-dot generator plus twice the cap of
+each ratio span has partner rank 10 at every chirality coefficient, the
+swapped-dot coordinate is 1 or -1, and the scaled coordinate is 8. Do
+not claim the ten-kernel coefficient span is settled. Do not claim the
 300-dimensional affine space is classified.
 Do not repeat the bond-space dimension count. Do not return to the
 modulus-3 triple. Do not invent a formation rate. Do not return to

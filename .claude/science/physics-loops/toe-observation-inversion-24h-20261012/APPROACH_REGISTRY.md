@@ -16,3 +16,13 @@
 - Finite controls: direct three-dimensional minimization, separate matrix projectors, axial coarea integration and resolution checks. These test mathematics, not observations of nature.
 
 Next distinct family: a species-resolved Wilson completion and radiative matching, after checking current main and prior art.
+
+## Block2 approach families and obligations
+
+| Family | Mechanism and strongest result | Remaining obligation | Status |
+| --- | --- | --- | --- |
+| Spatial Wilson spectrum | Exact sum-of-nonnegative-terms comparison and lifted chord triangle; one free light cone and positive pair gap | Physical species/renormalization identification | Independently supported conditional mathematics |
+| Magnetic oscillator response | Direct Landau blocks and separate exact link-Hamiltonian spectra give operational frequency ratio | Matched loops, trap response and recoil calibrations | Independent pre-exposure agreement |
+| Charged radiation kinematics | Cubic maximum, full-torus localization, endpoint control and transverse penalty; exact axis contraction | Finite-momentum equality, width and preferred-frame/detector map | Independent asymptotic proof; known leading LIV prior art |
+| Canonical emission dynamics | Minimal-link Clifford vertex and positive-band projectors | Nonzero width with canonical normalization and useful propagation time | Next active derivation |
+| Radiative operator matching | Same supplied gauge/fermion Hamiltonian; physical relative-speed condition | Gauge-invariant renormalized coefficients or a protecting mechanism | Unresolved; not fixed by a unit convention |

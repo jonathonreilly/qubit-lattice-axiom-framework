@@ -23,3 +23,16 @@ Completion witness: an analytic threshold/rate or rigorous bound with independen
 Observation roles: gamma-ray detection and timing analyses are discovery/inverse-constraint inputs; m_e,hbar,c and energy units are calibration; detector scale, source timing/shape, propagation and orientation are nuisances. No reused observation counts as an independent prediction. There is no fitted data model yet. If only published bounds are available, report conditional envelope constraints without inventing a joint likelihood or model-selection score.
 
 Success does not establish a TOE, physical lattice, derived electron mass, preferred cutoff, unique microscopic law, or framework retention. A numerical/global proof failure stays an open obligation.
+
+## Block2 target contract
+
+The original finite grammar and milestone1 remain frozen above. The next supplied completion is fixed in WILSON_TARGET.md: w=1 spatial Wilson mass, continuous Hamiltonian time and a²=1−mu. It replaces the naive eight-cone electron with one light cone; it is not selected by A_min. The exact target links its pair stability, operational spin/cyclotron ratio and directional Cherenkov boundary to the same photon propagation law. Mass, charge, orientation and loop/measurement matching remain declared suppliers. A positive microscopic emission width is the next physical bridge; kinematic opening alone is insufficient. No new fit or parameter search is authorized by merely adding this target.
+
+The tree width, zero-bare-mass scalar coefficient and finite local kinetic
+matching are now supported under their separate frozen contracts. The kinetic
+derivative prescription is a=w=1 at positive regulator mass followed by m→0;
+it cannot be silently equated to the earlier tree curve or a physical pole.
+The canonical milestone states the full mathematics and its empirical gaps.
+The next campaign decision is whether a new observation family or a protective
+mechanism supplies more information than further Wilson matching, with the
+broad inverse target and simpler relativistic null still open.

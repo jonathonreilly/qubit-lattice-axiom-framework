@@ -11,3 +11,7 @@ For every failed campaign route preserve the calculation, model class, searched 
 Symmetric momentum sharing cannot locate the sine-Dirac threshold: the exact energy is 2 sqrt(mu²+omega²/4)>omega for every positive mass. The asymmetric full-torus optimizer supplies a counterexample to the symmetric-only search, not a no-go for all lattice actions. Exact source equations (1)–(5) and the paired runner preserve the domain and controls.
 
 A photon timing symbol alone does not select the electron pair threshold: the common-Laplacian comparator has the same photon law and a positive two-body gap, equation (6). Species-resolved Wilson dynamics is a live alternative. Neither a short formal tree length nor a published photon-only cutoff provides the missing renormalized/detector calculation. These are limitations on this inference, not evidence of global impossibility. The source's N1–N8 packet preserves the attacks and surviving alternatives.
+
+## Wilson packet review correction
+
+Ordinary review found an incomplete N1/N2/N7/N8 landing packet, not a mathematical refutation. The corrected canonical section explicitly records distinct executed mechanisms, grouped unresolved implications, the physical matching counter-route and prior retirement mechanisms. The exact-gradient monotonicity shortcut is withdrawn; the leading unit-vector estimate with its O(r^2) error proves the stated shell bound. Broad interacting exclusion remains open, and no global exhaustion is inferred.

@@ -1,0 +1,564 @@
+{
+  "scope": "Author finite controls for a supplied Wilson law; no empirical fit, audit or physical exclusion.",
+  "spectrum": {
+    "sample_count": 400,
+    "max_identity_error": 2.1316282072803006e-14,
+    "minimum_pair_slack": 0.8212485341753872,
+    "largest_sample_axis_excess": -0.32876619237885385,
+    "corners": [
+      {
+        "corner": [
+          0,
+          0,
+          0
+        ],
+        "gap": 0.1
+      },
+      {
+        "corner": [
+          0,
+          0,
+          1
+        ],
+        "gap": 2.1
+      },
+      {
+        "corner": [
+          0,
+          1,
+          0
+        ],
+        "gap": 2.1
+      },
+      {
+        "corner": [
+          0,
+          1,
+          1
+        ],
+        "gap": 4.1
+      },
+      {
+        "corner": [
+          1,
+          0,
+          0
+        ],
+        "gap": 2.1
+      },
+      {
+        "corner": [
+          1,
+          0,
+          1
+        ],
+        "gap": 4.1
+      },
+      {
+        "corner": [
+          1,
+          1,
+          0
+        ],
+        "gap": 4.1
+      },
+      {
+        "corner": [
+          1,
+          1,
+          1
+        ],
+        "gap": 6.1
+      }
+    ],
+    "scope": "Finite controls of full-torus inequalities proved in the note."
+  },
+  "magnetic": {
+    "open_boundary_rows": [
+      {
+        "mu": 0.3,
+        "a2": 0.7,
+        "w": 1,
+        "B": 0.001,
+        "N": 381,
+        "extent": 12,
+        "spin_gap": 0.0023155139201951336,
+        "cyclotron_gap": 0.0033152640065226002,
+        "ratio": 0.698440279760371,
+        "target": 0.7,
+        "anomaly_over_B": -0.9997500863274666,
+        "plus": [
+          0.3004999375189887,
+          0.3038152015255113,
+          0.3070953491003836,
+          0.3103414943764361,
+          0.31355469395104074
+        ],
+        "minus": [
+          0.3028154514391838,
+          0.306095848869045,
+          0.3093422439034439,
+          0.31255569313822085,
+          0.3157371997059338
+        ],
+        "max_residual": 6.881848957997652e-16
+      },
+      {
+        "mu": 0.3,
+        "a2": 0.7,
+        "w": 1,
+        "B": 0.00025,
+        "N": 759,
+        "extent": 12,
+        "spin_gap": 0.0005822103190867289,
+        "cyclotron_gap": 0.0008321946954372161,
+        "ratio": 0.6996083035362883,
+        "target": 0.7,
+        "anomaly_over_B": -0.9999375054019488,
+        "plus": [
+          0.30012499609404697,
+          0.3009571907894842,
+          0.30178713627484993,
+          0.30261485104477737,
+          0.3034403533431647
+        ],
+        "minus": [
+          0.3007072064131337,
+          0.30153716752122794,
+          0.30236489791232674,
+          0.3031904158296936,
+          0.30401373927057174
+        ],
+        "max_residual": 6.19755904826675e-16
+      },
+      {
+        "mu": 0.3,
+        "a2": 0.7,
+        "w": 1,
+        "B": 6.25e-05,
+        "N": 1519,
+        "extent": 12,
+        "spin_gap": 0.0001457629977346664,
+        "cyclotron_gap": 0.00020826202119328396,
+        "ratio": 0.6999019643595342,
+        "target": 0.7,
+        "anomaly_over_B": -0.9999843753378812,
+        "plus": [
+          0.300031249755864,
+          0.30023951177705727,
+          0.300447632346433,
+          0.30065561175748173,
+          0.3008634503028535
+        ],
+        "minus": [
+          0.30017701275359865,
+          0.3003851342995008,
+          0.3005931146870403,
+          0.30080095420869674,
+          0.30100865315611164
+        ],
+        "max_residual": 6.368970118735007e-16
+      }
+    ],
+    "extent_repeat": {
+      "mu": 0.3,
+      "a2": 0.7,
+      "w": 1,
+      "B": 0.00025,
+      "N": 887,
+      "extent": 14,
+      "spin_gap": 0.0005822103190867289,
+      "cyclotron_gap": 0.0008321946954371051,
+      "ratio": 0.6996083035363817,
+      "target": 0.7,
+      "anomaly_over_B": -0.9999375054015047,
+      "plus": [
+        0.30012499609404697,
+        0.3009571907894841,
+        0.3017871362748476,
+        0.30261485104472585,
+        0.3034403533423398
+      ],
+      "minus": [
+        0.3007072064131337,
+        0.3015371675212279,
+        0.3023648979123245,
+        0.3031904158296453,
+        0.3040137392697979
+      ],
+      "max_residual": 6.909212595950186e-16
+    },
+    "landau_blocks": [
+      {
+        "mu": 0.2,
+        "a2": 0.8,
+        "w": 1,
+        "positive_eigenvalue": 0.2000005499994,
+        "operational_ratio": 0.8
+      },
+      {
+        "mu": 0.2,
+        "a2": 1.0,
+        "w": 1,
+        "positive_eigenvalue": 0.20000064999912504,
+        "operational_ratio": 0.8333333333333334
+      },
+      {
+        "mu": 0.3,
+        "a2": 0.82,
+        "w": 0.6,
+        "positive_eigenvalue": 0.30000036333315416,
+        "operational_ratio": 0.82
+      }
+    ],
+    "scope": "Synthetic literal-link hopping; finite B, extent and eigenvector residuals retained."
+  },
+  "cherenkov": {
+    "rows": [
+      {
+        "A": 0.3333333333333333,
+        "maximizer": 1.0,
+        "maximum": 0.4166666666666667,
+        "expansion_errors": [
+          6.371717383109321e-06,
+          1.593434253696624e-06,
+          3.983875879048915e-07
+        ]
+      },
+      {
+        "A": 0.5,
+        "maximizer": 1.0,
+        "maximum": 0.25,
+        "expansion_errors": [
+          9.689962421139536e-06,
+          2.423251235448773e-06,
+          6.058628732510257e-07
+        ]
+      },
+      {
+        "A": 0.739,
+        "maximizer": 0.41212085736818926,
+        "maximum": 0.011161820519246895,
+        "expansion_errors": [
+          7.71266255171054e-06,
+          1.9285975929482155e-06,
+          4.821754008592014e-07
+        ]
+      },
+      {
+        "A": 0.75,
+        "maximizer": 0.3333333333333333,
+        "maximum": 0.009259259259259259,
+        "expansion_errors": [
+          7.429687262695307e-06,
+          1.8578228952329315e-06,
+          4.644778204979452e-07
+        ]
+      },
+      {
+        "A": 0.8,
+        "maximizer": 0.18350341907227385,
+        "maximum": 0.0044331053951817325,
+        "expansion_errors": [
+          5.7735316938284376e-06,
+          1.4436792450250868e-06,
+          3.6093857706809285e-07
+        ]
+      },
+      {
+        "A": 0.9,
+        "maximizer": 0.06325010803111518,
+        "maximum": 0.0007874633894554033,
+        "expansion_errors": [
+          2.8956108999661848e-06,
+          7.24040142550432e-07,
+          1.8101921918454306e-07
+        ]
+      },
+      {
+        "A": 0.99,
+        "maximizer": 0.005102439309493481,
+        "maximum": 6.37788308507889e-06,
+        "expansion_errors": [
+          3.008716953819537e-07,
+          7.523165921252597e-08,
+          1.8809344475511323e-08
+        ]
+      }
+    ],
+    "crossover": 0.7387961250362586,
+    "scope": "Leading polynomial and fixed-fraction small-r controls, not a finite-r global search."
+  },
+  "vertex": {
+    "ward_cases": 80,
+    "max_ward_error": 1.7763568394002505e-15,
+    "eigenspinor": {
+      "cases": 160,
+      "max_eigenspinor_error": 3.552713678800501e-15
+    }
+  },
+  "rate": {
+    "rows": [
+      {
+        "A": 0.5,
+        "b": 0.4,
+        "r": 0.04,
+        "ny": 24,
+        "nt": 16,
+        "intervals": [
+          [
+            0.7885080544458629,
+            0.99999
+          ]
+        ],
+        "gamma_over_alpha": 5.791669883099508e-07,
+        "leading_over_alpha": 5.766375504203753e-07,
+        "ratio": 1.0043865299575645,
+        "max_shell_residual": 7.37257477290143e-18,
+        "max_center_gradient": 7.19861081679561e-11,
+        "longitudinal_cutoff": 1e-05
+      },
+      {
+        "A": 0.5,
+        "b": 0.4,
+        "r": 0.02,
+        "ny": 24,
+        "nt": 16,
+        "intervals": [
+          [
+            0.7888327285757766,
+            0.99999
+          ]
+        ],
+        "gamma_over_alpha": 7.215331729841227e-08,
+        "leading_over_alpha": 7.207969380254691e-08,
+        "ratio": 1.0010214179886368,
+        "max_shell_residual": 3.144186300207963e-18,
+        "max_center_gradient": 2.1520516410863283e-10,
+        "longitudinal_cutoff": 1e-05
+      },
+      {
+        "A": 0.8,
+        "b": 0.05326525558857584,
+        "r": 0.04,
+        "ny": 24,
+        "nt": 16,
+        "intervals": [
+          [
+            0.07180941925695733,
+            0.30069907849210914
+          ]
+        ],
+        "gamma_over_alpha": 9.406878715320758e-08,
+        "leading_over_alpha": 9.380155194028566e-08,
+        "ratio": 1.0028489423404428,
+        "max_shell_residual": 6.938893903907228e-18,
+        "max_center_gradient": 3.525495691931703e-12,
+        "longitudinal_cutoff": 1e-05
+      },
+      {
+        "A": 0.8,
+        "b": 0.05326525558857584,
+        "r": 0.02,
+        "ny": 24,
+        "nt": 16,
+        "intervals": [
+          [
+            0.07185280786460012,
+            0.3005367038321354
+          ]
+        ],
+        "gamma_over_alpha": 1.1733542717280519e-08,
+        "leading_over_alpha": 1.1725193992535707e-08,
+        "ratio": 1.000712032973623,
+        "max_shell_residual": 3.469446951953614e-18,
+        "max_center_gradient": 4.885571326103166e-12,
+        "longitudinal_cutoff": 1e-05
+      },
+      {
+        "A": 0.9,
+        "b": 0.022449422470332242,
+        "r": 0.04,
+        "ny": 24,
+        "nt": 16,
+        "intervals": [
+          [
+            0.025217101531782683,
+            0.10150017307684309
+          ]
+        ],
+        "gamma_over_alpha": 1.3319141636314543e-08,
+        "leading_over_alpha": 1.3284664184061876e-08,
+        "ratio": 1.0025952821821444,
+        "max_shell_residual": 6.938893903907228e-18,
+        "max_center_gradient": 1.0107305074266084e-11,
+        "longitudinal_cutoff": 1e-05
+      },
+      {
+        "A": 0.9,
+        "b": 0.022449422470332242,
+        "r": 0.02,
+        "ny": 24,
+        "nt": 16,
+        "intervals": [
+          [
+            0.0252335770391759,
+            0.10146033193049932
+          ]
+        ],
+        "gamma_over_alpha": 1.6616601677207844e-09,
+        "leading_over_alpha": 1.6605830230077345e-09,
+        "ratio": 1.000648654537669,
+        "max_shell_residual": 3.469446951953614e-18,
+        "max_center_gradient": 3.257265770634118e-11,
+        "longitudinal_cutoff": 1e-05
+      }
+    ],
+    "refinement": {
+      "A": 0.8,
+      "b": 0.05326525558857584,
+      "r": 0.04,
+      "ny": 48,
+      "nt": 32,
+      "intervals": [
+        [
+          0.07180941925695733,
+          0.30069907849210914
+        ]
+      ],
+      "gamma_over_alpha": 9.406878715322775e-08,
+      "leading_over_alpha": 9.380155194028566e-08,
+      "ratio": 1.0028489423406577,
+      "max_shell_residual": 6.938893903907228e-18,
+      "max_center_gradient": 3.525495691931703e-12,
+      "longitudinal_cutoff": 1e-05
+    },
+    "refinement_relative_change": 2.1449508835758024e-13,
+    "scope": "Detected near-central shells; y endpoints cut at1e-5. Not the whole finite-momentum torus rate."
+  },
+  "mass": {
+    "matrix": {
+      "matrix_cases": 120,
+      "max_scalar_error": 1.1102230246251565e-16,
+      "max_gauge_cancellation_error": 5.551115123125783e-17,
+      "max_naive_scalar": 1.3705860609070005e-17,
+      "frequency_cases": 20,
+      "max_frequency_error": 2.7755575615628914e-17
+    },
+    "duffy": [
+      {
+        "n": 16,
+        "seagull": 0.3415080387333225,
+        "exchange": 0.032839433786225135,
+        "positive_total": 0.3743474725195478
+      },
+      {
+        "n": 32,
+        "seagull": 0.34150803873332275,
+        "exchange": 0.03283943378622702,
+        "positive_total": 0.37434747251954986
+      },
+      {
+        "n": 48,
+        "seagull": 0.3415080387333231,
+        "exchange": 0.03283943378622699,
+        "positive_total": 0.37434747251955
+      }
+    ],
+    "untransformed_cube_n64": [
+      0.34150805300919407,
+      0.03283943854480236,
+      0.3743474915539963
+    ],
+    "scope": "Finite order-e2 inverse-propagator scalar; convergence estimates, not interval proof."
+  },
+  "kinetic": {
+    "matrix_derivative_cases": 400,
+    "matrix_derivative_max_error": 1.1102230246251565e-16,
+    "matrix_frequency_cases": 16,
+    "matrix_frequency_max_error": 3.885780586188048e-16,
+    "subtracted": [
+      {
+        "n": 24,
+        "massless_fermion": -0.13699805078153657,
+        "spherical_massless_photon": 0.010168625795861539,
+        "angular_zero_residual": -3.0211646715474575e-18,
+        "contacts": [
+          0.004221715985097407,
+          0.001688686394038963
+        ],
+        "matched_differences": [
+          -0.13277633479643916,
+          0.011857312189900502
+        ]
+      },
+      {
+        "n": 40,
+        "massless_fermion": -0.1369980507815366,
+        "spherical_massless_photon": 0.010168625795861514,
+        "angular_zero_residual": 3.3568496350527307e-18,
+        "contacts": [
+          0.004221715985097407,
+          0.001688686394038963
+        ],
+        "matched_differences": [
+          -0.1327763347964392,
+          0.011857312189900477
+        ]
+      }
+    ],
+    "positive_regulators": [
+      {
+        "m": 0.01,
+        "fermion": -0.1338805787669753,
+        "electric": 0.09123053490097688,
+        "magnetic": 0.10265027714961195,
+        "photon_difference": 0.011419742248635092,
+        "ibp_error": -2.7755575615628914e-17
+      },
+      {
+        "m": 0.0001,
+        "fermion": -0.1327981766851258,
+        "electric": 0.17054959588844606,
+        "magnetic": 0.18239867430001325,
+        "photon_difference": 0.011849078411567134,
+        "ibp_error": 5.551115123125783e-17
+      },
+      {
+        "m": 1e-06,
+        "fermion": -0.13277666016687553,
+        "electric": 0.24834760563638544,
+        "magnetic": 0.2602047966110175,
+        "photon_difference": 0.01185719097463185,
+        "ibp_error": 1.6653345369377348e-16
+      }
+    ],
+    "finite_static_control": [
+      {
+        "q": 0.04,
+        "value": 0.040205416067205825,
+        "error": 6.372659246044188e-05
+      },
+      {
+        "q": 0.02,
+        "value": 0.04025315280584113,
+        "error": 1.598985382513657e-05
+      },
+      {
+        "q": 0.01,
+        "value": 0.04026514153406885,
+        "error": 4.001125597417887e-06
+      }
+    ],
+    "scope": "Fixed-positive-m Euclidean derivative limits and finite local matching; no physical pole-speed identification."
+  },
+  "observations": {
+    "tree_deficit_envelope": 4.443469136434782e-15,
+    "fraction_of_fan_standard_uncertainty": 0.03418053181872909,
+    "mass_calibration_relative_standard_uncertainty": 3.1311218894667514e-10,
+    "fit_count": 0,
+    "blind_validation_count": 0,
+    "empirical_exclusion_count": 0,
+    "scope": "Conditional tree parameter comparison; no combined confidence interpretation."
+  }
+}

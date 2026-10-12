@@ -1,0 +1,42 @@
+===== runner cache v1 =====
+runner: scripts/d3q27_dissipative_hydrodynamic_approximation_2026_10_09.py
+runner_sha256: a02ce74dc191cd926fd85525eb863a9e1e3d0eda031e8baa5d21ed5a76142861
+input_fingerprint_sha256: a4b030b5019805df5fcc820bc357a616c85399311202c6c0d00a26f686ccf7a0
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.29
+status: ok
+----- stdout -----
+Supplied D3Q27 dissipative approximation: exact rational certificates
+AUDIT_TIMEOUT_SEC: 180
+PASS complete-network: 27 velocities; two exhaustive enumerations agree on 288 reversible reactions; nine axial exchanges
+PASS conservation-and-balance: all five conserved moments and 288 detailed-balance monomials checked exactly
+PASS exact-kernel-and-inverse: rank 22 certified by BR=RB=I−P and rank(P)=5; R weighted self-adjoint
+PASS explicit-gap-bound: tr R_1=6224911145567/509693499350; ||R_kappa|| <= tr R_1 / min(kappa) at theta=1/3
+PASS complete-cubic-covariance: all 48 signed coordinate permutations preserve M, every collision and the two rate classes
+PASS all-alpha-stress-and-heat-blocks: 972 exact entries at both affine coefficients, all axes; independent flux and matrix implementations
+PASS symbolic-response-certificate: mu_D=(4a+31)/(8a²+133a+170); mu_O=67/1083; chi=40/441 for every a>0
+PASS isotropic-rate-identity: unique positive zero of 536a²+4579a−22183; a*=3.45068979932815 lies in (1,4); supplied rate, no empirical selection
+PASS full-eight-source-poisson-response: full 27-dimensional inverse checks all five stresses, three heat modes and all cross responses at a=1
+PASS complete-constitutive-flux: every density/momentum/energy gradient: zero mass correction, trace-free cubic stress, q=−(20/147) grad(E−rho)
+PASS exact-corrector-residual: all epsilon-polynomial coefficients in L_epsilon(U+epsilon v+epsilon² z)=epsilon²(z_t+Tz), on all five fields
+PASS scientific-discriminators: opposite macro dissipation sign and a removed axial collision each fail their scientific identity
+PASS diffusive-slow-field-solvability: tuned full tensor: rho_tau=(4/49)Delta rho; j_tau=(67/361)Delta j; m=−3(4/49)v·grad rho cancels the macro residual
+PASS diffusive-full-operator-cancellations: exact delta^−1 and delta^0 cancellations on density/two shear modes; confusing energy and density diffusivities fails
+PASS quadratic-slow-mode-moment-witness: all polynomial coefficients: Q-stress=j tensor j−|j|²I/3; H-flux=−2 rho j/3=(2/5) eta j with eta=−5 rho/3; no nonlinear-limit claim
+FOURIER epsilon=1/16 t=0.7 macro_error=0.004636841652 corrected_error=0.006088248191 full_uncorrected_error=0.0641546023
+FOURIER epsilon=1/32 t=0.7 macro_error=0.001220519018 corrected_error=0.00158941824 full_uncorrected_error=0.03328315044
+FOURIER epsilon=1/64 t=0.7 macro_error=0.0003126853381 corrected_error=0.000405677356 full_uncorrected_error=0.01695131045
+FOURIER epsilon=1/128 t=0.7 macro_error=7.91067869e-05 corrected_error=0.0001024498696 full_uncorrected_error=0.008554207161
+PASS actual-initial-preparation: actual prepared h(0) has corrected distances [0.0, 0.0, 0.0, 0.0]; the uniform-time comparison includes t=0
+PASS finite-mode-order-discriminator: halving-epsilon ratios: macro=[3.7990736579022304, 3.9033458545457336, 3.9526992614011833]; first-corrected=[3.83048843821392, 3.9179367947446053, 3.959764494507098]; uncorrected=[1.9275399547036995, 1.9634558953469214, 1.98163431562403]; floating-point supplement only
+PASS prepared-data-initial-distance: first-prepared datum has ||h(0)−U(0)||=epsilon*0.2449389102; the theorem compares projected fields or the corrected distribution
+per_element: all 288 reversible collisions, five invariant contractions and 972 affine block entries checked exactly
+per_site: the supplied 27-velocity local collision space is complete; no native lattice site or record observable identified
+per_mode: exact corrector polynomials on two Fourier directions; finite-mode exponential supplement; all-mode Sobolev estimates are proved in the note
+per_block: all five stress and three heat sources, all cubic symmetry operations and diffusive slow-field solvability checked; nonlinear flux witness is finite algebra only
+lattice_wide: supplied periodic continuum streaming is a theorem premise; no discrete spatial refinement, native dynamics or nonlinear fluid limit executed
+TOTAL: 18 PASS, 0 FAIL; exact finite identities and supplementary Fourier check; analytic proof in companion note
+
+----- stderr -----
+

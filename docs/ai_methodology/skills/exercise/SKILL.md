@@ -126,7 +126,13 @@ own record for the wall and for earlier attempts on it:
 - this lane's open PRs and probe notes;
 - decision records, panel syntheses and earlier exercise packets under
   `.claude/science/exercises/` and `archive/campaigns/`;
-- the probes work queue and its attempts, where one exists.
+- the probes work queue and its attempts, where one exists;
+- held or unlanded blocks on campaign and backlog branches, and candidate
+  packs with kill sheets under `.claude/science/candidates/`.
+
+Search by the physical object and its synonyms (for example "shear",
+"stiffness", "vacancy"), not only by words in titles: unlanded blocks are
+where earlier answers most often hide.
 
 Record what is already proved, what was already tried and failed, and which
 tests were already pre-registered. Do not re-derive a mapped wall or re-run a
@@ -337,8 +343,23 @@ elegant reduction that ends at a target-equivalent lemma.
 Within the test budget, run the first artifact of the best-ranked route that
 can be tested inside it. Where budget allows, run several. For each test:
 
-- pre-register the pass and fail reading before running;
+- pre-register the pass and fail reading before running, and never change
+  it after the result is seen. If the result shows the reading was badly
+  chosen, add a new, dated follow-up test with its own reading;
+- state exactly which class a search covered. A search that finds no pass
+  in a finite class is a bounded result ("no pass in the searched class"),
+  not a no-go;
+- do not let a verdict rest on extrapolating a fit over many orders of
+  magnitude. When it would, compute the decisive quantity directly;
 - keep the script, the output and the result;
+- report and preserve the actual test result immediately, including failures.
+  Before interpreting a failure as a scientific negative conclusion or no-go,
+  obtain a fresh adversarial check under the allowed review configuration.
+  Prefer another vendor's model where configured; label a same-family check
+  honestly and do not call it an independent referee. If the user prohibits
+  subagents, use a separate primary-session pass and state that it is not
+  independent. Record the interpretation, corrections and review limitation
+  without changing the original result or pre-registered reading;
 - say plainly whether it moved the wall, and in which direction.
 
 If no route can be tested inside the budget, say why, and give the smallest
@@ -392,3 +413,5 @@ runner or a decisive no-go artifact.
 - Do not import literature as proof. Translate it into repo-native theory,
   check it, and cite the source.
 - Report honestly when the exercise produced only a map.
+- Before quoting a subagent's result, check its strong words ("every",
+  "no candidate", "exact", "proves") against what it actually computed.

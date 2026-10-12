@@ -1,0 +1,62 @@
+===== runner cache v1 =====
+runner: scripts/photon_vacuum_subtraction_and_cosine_reference_2026_10_09.py
+runner_sha256: ca91fbc601fa2f66e569ddf35a385db25f095ceb4572df4ba42729b1087aa7ee
+input_fingerprint_sha256: 824f2d911597ee2159298c13c0a8973e0bfa92f930d6ef712b0fc0c717dbbb85
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 1.47
+status: ok
+----- stdout -----
+Python 3.12.8
+PASS exact_full_gap_identity_copies_1 {'c': '13/32', 'vacuum_resolvent': '197227/20447232', 'gap_matrices': [[['-3989/851968', '0'], ['0', '-3989/851968']], [['-20133/1703936', '0'], ['0', '-20133/1703936']]]}
+PASS exact_spectator_and_cross_copies_1 cross diagonal ['169/65536', '169/65536', '1521/262144', '1521/262144']
+PASS missing_interference_control_copies_1 
+PASS missing_exchange_plus_control_copies_1 
+PASS missing_vacuum_subtraction_control_copies_1 
+PASS exact_full_gap_identity_copies_2 {'c': '13/32', 'vacuum_resolvent': '197227/10223616', 'gap_matrices': [[['-3989/851968', '0'], ['0', '-3989/851968']], [['-20133/1703936', '0'], ['0', '-20133/1703936']]]}
+PASS exact_spectator_and_cross_copies_2 cross diagonal ['169/65536', '169/65536', '1521/262144', '1521/262144']
+PASS missing_interference_control_copies_2 
+PASS missing_exchange_plus_control_copies_2 
+PASS missing_vacuum_subtraction_control_copies_2 
+PASS exact_extensive_cancellation_copies_2 vacuum term grows exactly; the complete gap coefficient stays fixed
+PASS exact_full_gap_identity_copies_3 {'c': '13/32', 'vacuum_resolvent': '197227/6815744', 'gap_matrices': [[['-3989/851968', '0'], ['0', '-3989/851968']], [['-20133/1703936', '0'], ['0', '-20133/1703936']]]}
+PASS exact_spectator_and_cross_copies_3 cross diagonal ['169/65536', '169/65536', '1521/262144', '1521/262144']
+PASS missing_interference_control_copies_3 
+PASS missing_exchange_plus_control_copies_3 
+PASS missing_vacuum_subtraction_control_copies_3 
+PASS exact_extensive_cancellation_copies_3 vacuum term grows exactly; the complete gap coefficient stays fixed
+PASS single_oscillator_complete_g4 -1/512
+NumPy 2.4.1
+PASS fourier_reference_gram_L3 {'gram_residual': 1.0734805046652338e-15, 'plaquette_variance': [0.7874837254174247, 0.7874837254174246, 0.7874837254174246]}
+PASS fourier_to_occupation_resolvent_L3_k(1, 0, 0) {'residual': 3.6799044028787716e-17, 'occupation_monomials': 918}
+PASS fourier_positive_forms_L3_k(1, 0, 0) {'Kminus/omega': [0.007043608681951508, 0.007043608681951514], 'Kplus/omega': [0.004367891067350347, 0.004367891067350347]}
+PASS fourier_uniform_gap_coefficient_L3_k(1, 0, 0) {'c': 0.7874837254174248, 'D4/omega': [-0.030790581555467676, -0.030790581555467673]}
+PASS fourier_to_occupation_resolvent_L3_k(1, 1, 0) {'residual': 2.7548808724209875e-16, 'occupation_monomials': 918}
+PASS fourier_positive_forms_L3_k(1, 1, 0) {'Kminus/omega': [0.008221989463684102, 0.008230785672456532], 'Kplus/omega': [0.0041376163607584745, 0.004163850875153084]}
+PASS fourier_uniform_gap_coefficient_L3_k(1, 1, 0) {'c': 0.7874837254174248, 'D4/omega': [-0.03177371835377543, -0.03173868763060839]}
+PASS fourier_to_occupation_resolvent_L3_k(1, 1, 1) {'residual': 2.398194363540181e-16, 'occupation_monomials': 918}
+PASS fourier_positive_forms_L3_k(1, 1, 1) {'Kminus/omega': [0.009409140157707723, 0.009409140157707828], 'Kplus/omega': [0.00402862914109089, 0.004028629141090929]}
+PASS fourier_uniform_gap_coefficient_L3_k(1, 1, 1) {'c': 0.7874837254174248, 'D4/omega': [-0.03281685110496454, -0.03281685110496447]}
+PASS fourier_reference_gram_L4 {'gram_residual': 1.5100225718945415e-15, 'plaquette_variance': [0.7934335972773073, 0.7934335972773073, 0.7934335972773073]}
+PASS fourier_to_occupation_resolvent_L4_k(1, 0, 0) {'residual': 3.2507903369284557e-16, 'occupation_monomials': 5336}
+PASS fourier_positive_forms_L4_k(1, 0, 0) {'Kminus/omega': [0.00687629122426827, 0.006876291224268283], 'Kplus/omega': [0.004646379585936425, 0.004646379585936434]}
+PASS fourier_uniform_gap_coefficient_L4_k(1, 0, 0) {'c': 0.7934335972773073, 'D4/omega': [-0.03119569810046748, -0.031195698100467458]}
+PASS fourier_to_occupation_resolvent_L4_k(1, 1, 0) {'residual': 3.5511022720410555e-16, 'occupation_monomials': 5336}
+PASS fourier_positive_forms_L4_k(1, 1, 0) {'Kminus/omega': [0.007709605415073975, 0.007760194558008412], 'Kplus/omega': [0.004399673254270887, 0.004440174939792859]}
+PASS fourier_uniform_gap_coefficient_L4_k(1, 1, 0) {'c': 0.7934335972773073, 'D4/omega': [-0.03187339678806403, -0.031782305959607626]}
+PASS fourier_to_occupation_resolvent_L4_k(1, 1, 1) {'residual': 1.3319529654860666e-15, 'occupation_monomials': 5336}
+PASS fourier_positive_forms_L4_k(1, 1, 1) {'Kminus/omega': [0.008550893714361489, 0.008550893714361725], 'Kplus/omega': [0.004280172354794986, 0.004280172354795042]}
+PASS fourier_uniform_gap_coefficient_L4_k(1, 1, 1) {'c': 0.7934335972773073, 'D4/omega': [-0.03250409335941953, -0.032504093359419214]}
+PASS full_cosine_one_mode_cancellation_g0.125 {'Sg/omega_cutoff10': 1.9014606013253352e-06, 'Sg/omega_cutoff14': 1.9014606013253352e-06, 'higher_cross/omega': -1.5461533442641852e-10, 'scope': 'normal-ordered truncation diagnostic, not a compact-spectrum test'}
+PASS full_cosine_one_mode_cancellation_g0.25 {'Sg/omega_cutoff10': 3.0142720131315846e-05, 'Sg/omega_cutoff14': 3.0142720131315846e-05, 'higher_cross/omega': -9.780146462300497e-09, 'scope': 'normal-ordered truncation diagnostic, not a compact-spectrum test'}
+PASS full_cosine_one_mode_cancellation_g0.5 {'Sg/omega_cutoff10': 0.0004647865844651732, 'Sg/omega_cutoff14': 0.000464786584465173, 'higher_cross/omega': -5.973145887709484e-07, 'scope': 'normal-ordered truncation diagnostic, not a compact-spectrum test'}
+elapsed_sec 1.4087
+TOTAL: PASS=41 FAIL=0
+per_element: exact occupation coefficients and factorial inner products were evaluated.
+per_site: Fourier plaquette variances and harmonic Gram normalization were checked on L=3,4.
+per_mode: two-polarization forms were sampled at six nonzero lattice momenta.
+per_block: one, two and three independent oscillator blocks tested extensive vacuum cancellation.
+lattice_wide: finite Fourier boxes were executed; uniform-volume and full-series results are analytic proofs.
+
+----- stderr -----
+

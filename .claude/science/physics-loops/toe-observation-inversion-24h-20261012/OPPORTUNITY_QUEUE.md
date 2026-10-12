@@ -19,3 +19,25 @@ After each decisive finding, revise ranking, record the new uncertainty reduced 
 4. **Different observation families.** After this discriminator milestone, revisit matter/gravity universality or another compact cross-sector mechanism with finite grammar and primary sources. Avoid turning the campaign into endless lattice-stencil algebra.
 
 The broader TOE is open; the current threshold/rate milestone is mathematical conditional support. Candidate ranking remains parsimony-first; there have been no fits or blind tests.
+
+## Re-ranked after Wilson focused checks
+
+1. Complete the species-resolved forward map by deriving radiation amplitudes/widths and the exact observational sensitivity it can support. The pair gap, magnetic ratio and anisotropic leading opening already agree under independent checks; repeating their algebra offers little gain.
+2. Attack interacting speed/Pauli matching or demonstrate the precise additional parameter needed; this is the strongest remaining bridge between the compact bare mechanism and physical comparisons.
+3. Revisit another robust observation family after this coherent model comparison. Do not spend the campaign enumerating lattice stencils or inventing extra PR counts.
+4. Detector inference remains viable only with actual response/nuisance scope: the proposed40TeV HESS survival shortcut was rejected on primary-source evidence.
+
+No empirical fit improvement favors a lattice completion over the simpler relativistic null so far. This ranking reflects reduced uncertainty and remaining scientific value, not an assumed TOE conclusion.
+
+## Re-ranked after radiative matching
+
+1. Deliver the coherent Wilson map after ordinary review. Its finite scalar and local kinetic coefficients now have focused independent agreement; repeating them does not resolve the physical spectral/Pauli bridge.
+2. Revisit robust matter/gravity or universal-clock observations and freeze one cross-family effective-law restriction, after exact current-main and proposal argument checks. Seek a compact mechanism, not a new name for conditional dispersion algebra.
+3. A symmetry or other protective construction for common kinetic terms remains a live route. A four-dimensional Euclidean B4 action is known protection under different conditions; adopting it as physical time would require a new conditional model, not a silent repair.
+4. The Wilson physical Pauli/pole and detector mapping remain concrete residuals, with no model-selection likelihood yet. Keep them available if an actual discriminating observation can justify the effort; do not treat an unavailable raw detector response as global exhaustion.
+
+## Human priority override — 2026-10-12T14:20:49.491727+00:00
+
+1. Complete the in-flight reviewed Wilson milestone delivery.
+2. Freeze and pursue an interacting Wilson prediction against independent observations without refitting. Assess magnetic calibration with independent recoil alpha followed by sub-100-GeV timing; calculate the physical Pauli, speed/mass and measurement bridge before accepting this split. Keep conflicting Cs/Rb calibrations separate and propagate their regions.
+3. If that split fails, preserve the concrete obstruction and prioritize a related Wilson observable or bounded prediction. Unrelated scalar/clock scouting remains deferred. This scheduling instruction does not supply scientific evidence or change the hard deadline.

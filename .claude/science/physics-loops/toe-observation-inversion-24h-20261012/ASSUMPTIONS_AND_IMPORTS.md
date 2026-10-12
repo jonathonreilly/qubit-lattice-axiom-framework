@@ -32,3 +32,31 @@ All premise nodes and current source notes were checked again at a13caa4. None s
 | One fixed lattice orientation | Dynamical/disordered orientation | changes angular prediction and scattering | unresolved different candidate; not a nuisance silently averaged |
 
 The rate also supplies the squared-amplitude transition rule and the infinite-volume, long-time golden-rule coefficient. These are conditional effective quantum rules, not a derived probability interpretation of the realized-state primitive.
+
+## Wilson block and radiative matching
+
+The fixed w=1 Wilson spatial mass and a²=1−mu tree speed choice are supplied
+candidate restrictions, not fitted results. The unretuned a=1 setting remains
+a distinct comparator. Both hopping terms use the same literal U(1) link.
+Virtual processes additionally supply the noncompact Maxwell/Gauss sector,
+filled negative-band vacuum, Euclidean continuation, zero temperature and
+canonical perturbative integration. No clover/Pauli term, mean-link replacement
+or normal-order change is implicit. These related conditions are explicit;
+they are not independent universal walls.
+
+The zero-bare-mass coefficient and the fixed-positive-regulator kinetic
+derivatives have focused independent support. Their interpretation remains
+local perturbative matching. Critical-mass calibration changes the map for
+the already supplied mass; it does not automatically create another datum.
+The kinetic calculation fixes a=w=1 while the regulator tends to zero;
+following the earlier bare-speed curve adds a separate explicit speed shift.
+No charged physical pole, Pauli matching or detector likelihood has been
+constructed. Those gaps cannot be silently supplied by the primitive registry.
+
+Primary timing, magnetic-frequency and atom-recoil values are comparators;
+mass and charge are calibration. Exact source versions, hashes, units and
+uncertainty/covariance boundaries are in
+`data/spatial_wilson_observation_map_2026_10_12/observations.json`.
+The HESS40TeV candidate endpoint is rejected as an identified electron-survival
+datum. No public datum is described as blind, no synthetic lattice control is
+an observation of nature, and no joint statistical fit has been performed.

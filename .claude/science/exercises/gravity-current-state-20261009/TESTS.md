@@ -5335,3 +5335,24 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Bearing on R15-1:** the projectable scalar has no Lemma-S local channel.
 
   Referee running.
+
+### C5 Round 16, item 8 (pre-registered 23:06Z, before launch)
+
+**R16-8. Wall W7: is the off-box gravity tail physical? Build the gravity sector and the physical domain of R12-1's completion.**
+- **Plain question.** R12-1's completion of the off-box Killing defect needs a 1/r^{d−1} tail. R13-4(ii) left it OPEN: the completion is only a local germ, the gravity sector and physical domain are unbuilt, and the gauge generator may be non-local. R16-5 (worker) finds that the same zone-mean anomaly blocks preferred-frame translations unless the momentum symbol is discontinuous, i.e. has 1/r tails. Is W7's tail the same object as R16-5's P-pf1? Is it constraint-solving (harmless) or physical?
+- **Setting.**
+  - R12-1's ansatz, the R13-4(ii) germ, R9-9's graviton, and the R14-1 subluminal box (b = 1.4).
+  - Linear order in κ; d = 3; box matter.
+  - Excluded: nonlinear gravity, pairing.
+- **Prior art (count once):** R12-1 and its verdict (`vR12-1:15`), R13-4 and its verdict (`vR13-4:18`), R16-5 (worker, unrefereed), R14-1, R9-9, Coulomb-gauge QED, and the RFW F2 first-jet obstruction.
+- **Probes.**
+  - (a) Complete the germ: write the gravity-sector generator and the physical (gauge-invariant) domain, or prove no local completion exists in a stated class.
+  - (b) Test the R13-4 criterion: does a bounded gauge-invariant observable at distance r respond instantaneously, at size ∝ r^{−(d−1)}?
+  - (c) Relate the result to R16-5's T_pf, the sawtooth symbol and P-pf1. Are they the same price?
+  - (d) Prices.
+- **Rules.** Every tail clause names its subtraction. Every law states its whole-zone v_max. Every Ward statement says standard or deformed.
+- **FIXED readings.**
+  - **LOCAL-EQUIVALENT:** a constructed completion whose tail acts on no bounded gauge-invariant observable outside the light cone, checked.
+  - **PHYSICALLY NON-LOCAL:** a refereed demonstration of a bounded gauge-invariant observable responding instantaneously through the tail.
+  - **OPEN:** otherwise.
+- **Expectation.** OPEN or PHYSICALLY NON-LOCAL, with the same price as P-pf1.

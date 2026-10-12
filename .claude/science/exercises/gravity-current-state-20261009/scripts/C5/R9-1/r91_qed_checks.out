@@ -1,0 +1,7 @@
+A2 VP same-mass coefficient = 0.015687 ; 7 copies: delta a_e = 5.925e-07 ; exp. sigma 1.3e-13 (Fan et al. 2023) -> 4.56e+06 sigma
+Delta alpha per e-copy at MZ = 0.0174 ; 7 copies = 0.1220 ; alpha^-1(MZ) -> 112.2 (SM ~128.95, RECALLED)
+Gamma_Z extra = 7*83.91 MeV = 587 MeV vs Gamma_Z = 2495.2 +- 2.3 MeV (PDG, RECALLED) -> 255 sigma
+dc_e*16pi^2=-5.6: beta_e-1 = -6.50e-03 ; eta_TiPt (electron share only) ~ 2.13e-07
+dc_e*16pi^2=-6.5: beta_e-1 = -7.55e-03 ; eta_TiPt (electron share only) ~ 2.48e-07
+dc_e*16pi^2=-13.3: beta_e-1 = -1.54e-02 ; eta_TiPt (electron share only) ~ 5.06e-07
+V^1/4 < 1.41e+16 GeV ; T_RH(instant) < 5.79e+15 GeV ; H_inf < 4.7e+13 GeV

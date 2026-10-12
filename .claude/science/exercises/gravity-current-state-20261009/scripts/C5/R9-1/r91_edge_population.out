@@ -1,0 +1,77 @@
+=== (A) d = 3 band geometry (b = 2.0, b2 = 3.1) ===
+[L, m=0.30] edge fraction 0.73922 (exact 1-(b/pi)^3 = 0.74199); zone mean trA/3 = -1.00005; flat edge mean trA/3 = -1.35285 vs -1/f_edge = -1.35278
+      min eps edge = 0.3024 (face 2.0224); max |v| on edge = 4.116; max |v| on box = 0.9962
+      T=0.02: thermal edge fraction 8.730e-01 ; edge energy-weighted <trA/3> = +0.0797 ; edge w = <v^2>/3 = 0.061
+      T=0.05: thermal edge fraction 8.572e-01 ; edge energy-weighted <trA/3> = +0.5513 ; edge w = <v^2>/3 = 0.168
+      T=0.10: thermal edge fraction 8.248e-01 ; edge energy-weighted <trA/3> = +1.4123 ; edge w = <v^2>/3 = 0.378
+      T=0.20: thermal edge fraction 7.676e-01 ; edge energy-weighted <trA/3> = +2.5884 ; edge w = <v^2>/3 = 0.774
+      T=0.50: thermal edge fraction 6.955e-01 ; edge energy-weighted <trA/3> = +1.7712 ; edge w = <v^2>/3 = 1.285
+[G, m=0.30] edge fraction 0.73922 (exact 1-(b/pi)^3 = 0.74199); zone mean trA/3 = -1.00000; flat edge mean trA/3 = -1.35278 vs -1/f_edge = -1.35278
+      min eps edge = 2.0512 (face 2.0224); max |v| on edge = 0.997; max |v| on box = 0.9962
+      T=0.02: thermal edge fraction 8.876e-38 ; edge energy-weighted <trA/3> = -0.0001 ; edge w = <v^2>/3 = 0.326
+      T=0.05: thermal edge fraction 4.857e-15 ; edge energy-weighted <trA/3> = -0.0074 ; edge w = <v^2>/3 = 0.326
+      T=0.10: thermal edge fraction 1.884e-07 ; edge energy-weighted <trA/3> = -0.0889 ; edge w = <v^2>/3 = 0.321
+      T=0.20: thermal edge fraction 1.165e-03 ; edge energy-weighted <trA/3> = -0.3947 ; edge w = <v^2>/3 = 0.287
+      T=0.50: thermal edge fraction 1.427e-01 ; edge energy-weighted <trA/3> = -0.8648 ; edge w = <v^2>/3 = 0.235
+[L, m=0.05] edge fraction 0.73922 (exact 1-(b/pi)^3 = 0.74199); zone mean trA/3 = -1.00005; flat edge mean trA/3 = -1.35285 vs -1/f_edge = -1.35278
+      min eps edge = 0.0627 (face 2.0006); max |v| on edge = 4.172; max |v| on box = 0.9999
+      T=0.02: thermal edge fraction 8.751e-01 ; edge energy-weighted <trA/3> = +0.0066 ; edge w = <v^2>/3 = 0.202
+      T=0.05: thermal edge fraction 8.689e-01 ; edge energy-weighted <trA/3> = +0.3202 ; edge w = <v^2>/3 = 0.311
+      T=0.10: thermal edge fraction 8.421e-01 ; edge energy-weighted <trA/3> = +1.2373 ; edge w = <v^2>/3 = 0.507
+      T=0.20: thermal edge fraction 7.825e-01 ; edge energy-weighted <trA/3> = +2.5701 ; edge w = <v^2>/3 = 0.903
+      T=0.50: thermal edge fraction 6.992e-01 ; edge energy-weighted <trA/3> = +1.7914 ; edge w = <v^2>/3 = 1.401
+[G, m=0.05] edge fraction 0.73922 (exact 1-(b/pi)^3 = 0.74199); zone mean trA/3 = -1.00000; flat edge mean trA/3 = -1.35278 vs -1/f_edge = -1.35278
+      min eps edge = 2.0298 (face 2.0006); max |v| on edge = 1.000; max |v| on box = 0.9999
+      T=0.02: thermal edge fraction 8.486e-42 ; edge energy-weighted <trA/3> = -0.0001 ; edge w = <v^2>/3 = 0.333
+      T=0.05: thermal edge fraction 2.750e-16 ; edge energy-weighted <trA/3> = -0.0071 ; edge w = <v^2>/3 = 0.333
+      T=0.10: thermal edge fraction 6.728e-08 ; edge energy-weighted <trA/3> = -0.0870 ; edge w = <v^2>/3 = 0.327
+      T=0.20: thermal edge fraction 8.497e-04 ; edge energy-weighted <trA/3> = -0.3916 ; edge w = <v^2>/3 = 0.292
+      T=0.50: thermal edge fraction 1.360e-01 ; edge energy-weighted <trA/3> = -0.8633 ; edge w = <v^2>/3 = 0.238
+  L-profile doubler valleys (analytic): near k_i = pi, s = sin k on |k|>=b2, so eps^2 = m^2 + sum sin^2(delta_i) + (box axes) k^2;
+  A_ii = cos(2 delta_i) - 1 = -2 sin^2 delta_i; for T << 1/a each of the 7 valleys has the box partition function up to O((Ta)^2): f_edge -> 7/8.
+
+=== (B) Lemma Q: [T00(q), Q] = sum_k F00(k+q,k) (c(k) - c(k+q)) a+_{k+q} a_k for a box-only charge c = 1_B ===
+  [L] k=(1.950,.3,.2) -> k'=(2.050,.3,.2): |F00| = 2.05430 -> commutator element 2.05430 (charge 1 -> 0)
+  [L] k=(1.990,.3,.2) -> k'=(2.010,.3,.2): |F00| = 2.05427 -> commutator element 2.05427 (charge 1 -> 0)
+  [L] k=(1.999,.3,.2) -> k'=(2.001,.3,.2): |F00| = 2.05426 -> commutator element 2.05426 (charge 1 -> 0)
+  [G] k=(1.950,.3,.2) -> k'=(2.050,.3,.2): |F00| = 2.05430 -> commutator element 2.05430 (charge 1 -> 0)
+  [G] k=(1.990,.3,.2) -> k'=(2.010,.3,.2): |F00| = 2.05427 -> commutator element 2.05427 (charge 1 -> 0)
+  [G] k=(1.999,.3,.2) -> k'=(2.001,.3,.2): |F00| = 2.05426 -> commutator element 2.05426 (charge 1 -> 0)
+
+=== (C) gravitational doubler conversion X X -> X_Q X_Q (profile L), lapse coupling, D = R8-2 symbol ===
+  |D(pi)|^2 = 4.0000 ; corner sum S_Q = sum_Q |D(Q)|^-4 = 0.24132 (expected 3/16+3/64+1/144 = 0.24132)
+  thermal <s^3 (1-cos)>/T^6 [B] = 9.228e+04 (Boltzmann analytic 8*60^2*16/5 = 9.216e+04)
+  thermal <s^3 (1-cos)>/T^6 [F] = 1.073e+05 (Boltzmann analytic 8*60^2*16/5 = 9.216e+04)
+  [lapse-only (setting)] Gamma/H = 2953 (T/MP)^7 ; Gamma = H at T = 0.319 MP = 3.9e+18 GeV ; f_D(T_max) = Gamma/H/7 (freeze-in, f_D << 1)
+     fermions         sum c g m =  1609.0 GeV ; Omega_D h^2 = 1.15e+09 f_D ; Omega_D = Omega_c at f_D = 1.05e-10, T_max = 0.0158 MP = 1.93e+17 GeV
+     fermions+W,Z,H   sum c g m =  2489.9 GeV ; Omega_D h^2 = 1.78e+09 f_D ; Omega_D = Omega_c at f_D = 6.76e-11, T_max = 0.0149 MP = 1.81e+17 GeV
+     T_max = 5.8e+15 GeV: f_D = 2.3e-21 ; Omega_D h^2 (fermions+bosons) = 4.09e-12
+     T_max = 1e+16 GeV: f_D = 1.04e-19 ; Omega_D h^2 (fermions+bosons) = 1.85e-10
+     T_max = 1e+17 GeV: f_D = 1.04e-12 ; Omega_D h^2 (fermions+bosons) = 0.00185
+  [full spin-2, head-on bound kappa=8] Gamma/H = 1.89e+05 (T/MP)^7 ; Gamma = H at T = 0.176 MP = 2.15e+18 GeV ; f_D(T_max) = Gamma/H/7 (freeze-in, f_D << 1)
+     fermions         sum c g m =  1609.0 GeV ; Omega_D h^2 = 1.15e+09 f_D ; Omega_D = Omega_c at f_D = 1.05e-10, T_max = 0.0087 MP = 1.07e+17 GeV
+     fermions+W,Z,H   sum c g m =  2489.9 GeV ; Omega_D h^2 = 1.78e+09 f_D ; Omega_D = Omega_c at f_D = 6.76e-11, T_max = 0.0082 MP = 1e+17 GeV
+     T_max = 5.8e+15 GeV: f_D = 1.47e-19 ; Omega_D h^2 (fermions+bosons) = 2.62e-10
+     T_max = 1e+16 GeV: f_D = 6.68e-18 ; Omega_D h^2 (fermions+bosons) = 1.19e-08
+     T_max = 1e+17 GeV: f_D = 6.68e-11 ; Omega_D h^2 (fermions+bosons) = 0.119
+  equilibrium (T_max >~ Teq): f_D -> 7 (7 valleys), Omega_D h^2 ~ 1.24e+10 (overclosure); massless-doubler variant Delta N_eff = 2.85 f_D -> ~20
+  lab: nucleon-nucleon gravitational conversion inside a nucleus: Gamma ~ 2.76e-156 GeV = 4.19e-132 s^-1 per nucleon (age of universe 4.4e17 s)
+  EM contact conversion (number-conserving, G-out): sigma = pi*alpha^2*a^4*s*S_Q (CM, massless) ; Gamma/H ~ 0.000653 (T/MP)^3 [all-species n_tot; charged pairs only in fact]
+
+=== (D) profile G: equilibrium edge number density n_edge/T^3 (lattice units), relic upper bound ===
+  E_e (grid min on edge) = 2.0136 (face sqrt(m^2+b^2) = 2.0000)
+  T = 0.40 /a (4.88e+18 GeV): log10 Y_edge(eq) = -1.81 ; log10 Omega_edge h^2 (stable, no annihilation) = 26.02
+  T = 0.20 /a (2.44e+18 GeV): log10 Y_edge(eq) = -3.70 ; log10 Omega_edge h^2 (stable, no annihilation) = 24.13
+  T = 0.10 /a (1.22e+18 GeV): log10 Y_edge(eq) = -7.80 ; log10 Omega_edge h^2 (stable, no annihilation) = 20.03
+  T = 0.05 /a (6.1e+17 GeV): log10 Y_edge(eq) = -16.21 ; log10 Omega_edge h^2 (stable, no annihilation) = 11.62
+  T = 0.03 /a (3.66e+17 GeV): log10 Y_edge(eq) = -27.58 ; log10 Omega_edge h^2 (stable, no annihilation) = 0.25
+  T = 0.02 /a (2.44e+17 GeV): log10 Y_edge(eq) = -41.90 ; log10 Omega_edge h^2 (stable, no annihilation) = -14.07
+  T = 0.01 /a (1.22e+17 GeV): log10 Y_edge(eq) = -85.12 ; log10 Omega_edge h^2 (stable, no annihilation) = -57.29
+
+=== (E) momentum balance: edge quantum (1) + box source (2), H = e1 + e2 - G e1 e2 U(x1-x2), d = 1 ===
+  box particle k=0 + box source (control)  : drift of k1+k2 = 0.00e+00 ; d2/dt2 (e1 x1 + e2 x2) = -3.0659e-13 ; prediction F*A1 (F toward source) = +2.7195e-19 ; A1 = +0.0000
+  gapped edge top k=pi + box source        : drift of k1+k2 = 4.00e-14 ; d2/dt2 (e1 x1 + e2 x2) = -1.2069e-06 ; prediction F*A1 (F toward source) = -1.2069e-06 ; A1 = -3.1995
+  literal doubler k=pi + box source        : drift of k1+k2 = 1.41e-13 ; d2/dt2 (e1 x1 + e2 x2) = -3.0534e-13 ; prediction F*A1 (F toward source) = +4.7093e-18 ; A1 = +0.0000
+  literal s-max k*=2.234 + box source      : drift of k1+k2 = 6.22e-15 ; d2/dt2 (e1 x1 + e2 x2) = -9.6211e-06 ; prediction F*A1 (F toward source) = -9.5773e-06 ; A1 = -31.3316
+
+runtime 6.1 s

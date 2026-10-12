@@ -3804,8 +3804,17 @@ Launch: R9-1, R9-2, R9-4 and R9-5 now; R9-3 when a slot frees; R9-6 only on its 
 - **Self-adjointness is correct, with a missing lemma supplied** (bounded-invertible congruence).
 - **The interacting leakage theorem is valid** after sharpening step 2 to f(M) − f(M₀) = Q_G[f(M) − f(M₀)]Q_G and spelling out the density step.
 
-**R8-5 (gauge fields in the box):** worker reading FAIL (bounded). There are two parts:
-- Lemma C and Theorem B: in the bilinear ℓ¹ charge-density class, a soft photon couples with full charge to edge modes, so box-confined vertices violate the Ward identity.
-- A computed one-loop electron–photon cone split of −11 to −71 (in e²/16π² units), with no box protection.
+**R8-5 (gauge fields in the box) — CONFIRMED WITH CORRECTIONS. FAIL (bounded).**
+- **The Ward-identity no-go.** Take conventional Hamiltonian U(1) theories with finite-component, bilinear, translation-covariant, ℓ¹-quasi-local gauge generators. In them the nonzero charge spectrum has constant multiplicity over the Brillouin torus (Lemma C, with an added closedness step). So the complete gauge vertex cannot vanish whenever a fermion leg leaves a proper momentum box.
+- **The computed split.** In explicit non-compact Peierls-coupled box QED, the in-box one-loop rules and the Ward identity are exact. Yet the independently checked electron–photon cone split is unsuppressed:
+  - Δ ≈ −11 to −71 across nine shapes (in e²/16π² units);
+  - −21.8 ± 0.15 as m → 0;
+  - about −713 at Wilson edge mass r = 32.
+- **Open:** non-minimal transverse couplings, invariant-mass kernels, non-bilinear or power-law generators, Z⁴, and tuning.
 
-Referee running (launched 16:39Z).
+**R8-4 (an explicit invariant-mass vertex Hamiltonian) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE.**
+- **Model S.** Conditional on a supplied block of four CAR modes per site, model S is a finite-volume, Hermitian, extensively stable, super-polynomially quasi-local quartic Hamiltonian.
+- **One loop works, with a fermion factor.** Its on-shell O(g²) dispersion is Lorentz-invariant within the strict spectator and cutoff plateau, after imposing the frame-dependent fermionic factor h = (3W − E)/(W + E). R7-5's lemma fails as written for fermions.
+- **Two loops fail in the toy.** For the ordering-truncated toy N, the O(g_o²g_i²) correction depends on momentum: about −6.2% (fermions) and −0.60% (bosons) already at p = m/3. This survives independent Fock, quadrature, Sobol and scaling checks, so radiative closure fails for toy N.
+- **Open:** the completed crossing set.
+- **Status against the fixed readings.** The two-loop PASS is not met, and the incompatibility FAIL is not proved.

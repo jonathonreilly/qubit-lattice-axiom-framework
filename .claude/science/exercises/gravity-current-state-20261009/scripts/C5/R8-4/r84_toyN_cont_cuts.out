@@ -1,0 +1,13 @@
+p=0.00: max |leg| outer 0.780; max |k_Y| 0.780 (totc plateau 1.2); max |leg| inner 1.213 (leg plateau 2.0)
+p=0.10: max |leg| outer 0.837; max |k_Y| 0.823 (totc plateau 1.2); max |leg| inner 1.213 (leg plateau 2.0)
+p=0.20: max |leg| outer 0.893; max |k_Y| 0.867 (totc plateau 1.2); max |leg| inner 1.257 (leg plateau 2.0)
+p=0.30: max |leg| outer 0.953; max |k_Y| 0.953 (totc plateau 1.2); max |leg| inner 1.343 (leg plateau 2.0)
+p=0.40: max |leg| outer 0.997; max |k_Y| 0.997 (totc plateau 1.2); max |leg| inner 1.387 (leg plateau 2.0)
+p=0.60: max |leg| outer 1.083; max |k_Y| 1.083 (totc plateau 1.2); max |leg| inner 1.387 (leg plateau 2.0)
+# widened cutoffs {'L1': 1.0, 'L2': 1.4, 'A1': 2.45, 'A2': 2.9, 'C1': 1.9, 'C2': 2.3, 'C': 1.0}
+  p=0.00  m2_1=-4.8036122495e-02  mix=-6.2951883968e-04   rel.dev: 1loop +0.00e+00  mix +0.00e+00
+  p=0.10  m2_1=-4.8036116290e-02  mix=-6.6857268942e-04   rel.dev: 1loop +1.29e-07  mix -6.20e-02
+  p=0.20  m2_1=-4.8036041567e-02  mix=-7.7442953440e-04   rel.dev: 1loop +1.68e-06  mix -2.30e-01
+  p=0.30  m2_1=-4.8036057384e-02  mix=-9.2436599329e-04   rel.dev: 1loop +1.36e-06  mix -4.68e-01
+  p=0.40  m2_1=-4.8036047896e-02  mix=-1.0990354671e-03   rel.dev: 1loop +1.55e-06  mix -7.46e-01
+  p=0.60  m2_1=-4.8036032893e-02  mix=-1.4778214539e-03   rel.dev: 1loop +1.87e-06  mix -1.35e+00

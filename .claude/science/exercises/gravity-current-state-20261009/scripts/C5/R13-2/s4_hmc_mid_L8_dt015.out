@@ -1,0 +1,7 @@
+L=8 beta_t=1.0 kB=1.0 ks=1.0 mu=0.5: checks periodic=8.9e-16 real=0.0e+00 adjG=1.1e-13 adjS=2.3e-13 S.G^T=8.9e-15 gradrel=1.9e-10
+   acc=0.90 time=370s  <sum sin theta_diag>=-0.001  <cos D>=0.552
+   B1  : m^2=0.0001+-0.0000  beta_eff=1/G2-m^2/w2^2  Omega_eff=sqrt(m^2/beta_eff)=0.252
+   B2  : m^2=0.0000+-0.0000  beta_eff=1/G2-m^2/w2^2  Omega_eff=sqrt(m^2/beta_eff)=0.014
+   E   : m^2=0.0000+-0.0000  beta_eff=1/G2-m^2/w2^2  Omega_eff=sqrt(m^2/beta_eff)=0.019
+   A1a : m^2=-0.0000+-0.0000  beta_eff=1/G2-m^2/w2^2  Omega_eff=sqrt(m^2/beta_eff)=0.000
+   A1t : m^2=0.0000+-0.0000  beta_eff=1/G2-m^2/w2^2  Omega_eff=sqrt(m^2/beta_eff)=0.109

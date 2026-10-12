@@ -1,0 +1,33 @@
+(1) U(1) (integer E, compact h), quadratic N-type kinetic K = J[E:E-(trE)^2/2] + U_v |G E|^2, J=1:
+   U_v=1: min over torus momenta of eig K = -0.5000  (negative => integer E with K(E)<0 exist; K(nE)=n^2 K(E) -> H unbounded below, Z = Tr e^(-beta H) diverges)
+   U_v=100: min over torus momenta of eig K = -0.5000  (negative => integer E with K(E)<0 exist; K(nE)=n^2 K(E) -> H unbounded below, Z = Tr e^(-beta H) diverges)
+   U_v=10000: min over torus momenta of eig K = -0.5000  (negative => integer E with K(E)<0 exist; K(nE)=n^2 K(E) -> H unbounded below, Z = Tr e^(-beta H) diverges)
+   uniform (k=0) trace configuration E = n*I: K = J n^2 (3 - 9/2) = -1.5 n^2 J: unbounded below for every U_v (G(nI)=0).
+(2) DeWitt family K_lam = E:E - lam (trE)^2 (+ any PSD penalty): on-site eigenvalues
+   lam=0.5000: eig = [-0.5  1.   1.   1.   1.   1. ]  -> PSD iff lam <= 1/3
+   lam=0.4000: eig = [-0.2  1.   1.   1.   1.   1. ]  -> PSD iff lam <= 1/3
+   lam=0.3333: eig = [0. 1. 1. 1. 1. 1.]  -> PSD iff lam <= 1/3
+   lam=0.2500: eig = [0.25 1.   1.   1.   1.   1.  ]  -> PSD iff lam <= 1/3
+   lam=0.0000: eig = [1. 1. 1. 1. 1. 1.]  -> PSD iff lam <= 1/3
+   scalar-gauge invariance of the kinetic term on G=0 (E -> E + (k^2 I - k k)beta) holds only at lam = 1/2:
+   lam=0.5000: max |P_kerG K_lam (scalar-gauge direction)| = 1.638e-16
+   lam=0.3333: max |P_kerG K_lam (scalar-gauge direction)| = 3.333e-01
+   lam=0.0000: max |P_kerG K_lam (scalar-gauge direction)| = 1.000e+00
+(3) Z_N single-site clock version, q-basis kinetic weight: H_E(E) = J[sum_ab w_ab (1-cos 2pi E_ab/N) - lam*c*(1-cos 2pi trE/N)]
+    (single-clock cosines + trace cosine as in Gu-Wen's H_J; c chosen so the small-field form is E:E - lam(trE)^2)
+   N=4, eps=0.3, lam=0.5000: min eig of H_E/J (on Z_N^6) = -0.000; min Fourier coeff of exp(-eps H_E) = -9.9372e+01 (max 1.643e+03); negative coefficients: 512
+   N=4, eps=0.3, lam=0.3333: min eig of H_E/J (on Z_N^6) = 0.000; min Fourier coeff of exp(-eps H_E) = -6.3413e+01 (max 1.574e+03); negative coefficients: 896
+   N=4, eps=0.3, lam=0.2500: min eig of H_E/J (on Z_N^6) = 0.000; min Fourier coeff of exp(-eps H_E) = -4.6497e+01 (max 1.542e+03); negative coefficients: 896
+   N=4, eps=0.3, lam=0.0000: min eig of H_E/J (on Z_N^6) = 0.000; min Fourier coeff of exp(-eps H_E) = +2.2780e-10 (max 1.449e+03); negative coefficients: 0
+   reading: ANY negative-sign trace cosine (lam>0 in this single-clock form) is an antiferro character -> negative q-basis weights,
+   even at lam<=1/3 where the small-field form is PSD.  PSD small-field form is necessary, not sufficient.
+   ferro rewrite for lam<=1/3: E:E - lam (trE)^2 = sum_{a<b}(E_aa-E_bb)^2/3 + 2 sum_offdiag E_ab^2 + (1/3-lam)(trE)^2, each square -> ferro cosine:
+   lam=0.3333: min Fourier coeff = +0.0000e+00; negative coefficients: 0
+   lam=0.2500: min Fourier coeff = +2.9410e-08; negative coefficients: 0
+   lam=0.0000: min Fourier coeff = +4.4303e-07; negative coefficients: 0
+(4) E-basis: the h-potential must be 'ferromagnetic' after a shift (Lemma S). N-type h:R(h) symbol eigenvalues / k^2 at random k:
+    [-1. -0.  0.  0.  1.  1.]
+    [-1. -0.  0.  0.  1.  1.]
+    [-1. -0. -0.  0.  1.  1.]
+   one negative eigenvalue (transverse trace h, the S-conjugate direction) at every k != 0: B_N is not PSD, so it cannot be the
+   Hessian of a ferromagnetic cosine sum at its minimum (Lemma S).

@@ -1,0 +1,5 @@
+2^3 cell: best V/site=-27.00000
+L=4: V/site tiled=-27.00000 reminimised=-27.00000 |grad|=4.6e-03; Hessian min eig +6.000e+00; lowest 8 omega [1.7321 1.7321 1.7321 1.7321 1.7321 1.7321 1.7321 1.7321]; #omega<0.1: 0
+L=6: V/site tiled=-27.00000 reminimised=-27.00000 |grad|=8.9e-03; Hessian min eig +6.000e+00; lowest 8 omega [1.7321 1.7321 1.7321 1.7321 1.7321 1.7321 1.7321 1.7321]; #omega<0.1: 0
+L=8: V/site tiled=-27.00000 reminimised=-27.00000 |grad|=1.4e-02; Hessian min eig +6.000e+00; lowest 8 omega [1.7321 1.7321 1.7321 1.7321 1.7321 1.7321 1.7321 1.7321]; #omega<0.1: 0
+OMP_NUM_THREADS=2 python3 s5b_tiled_min.py 1 1 1 0.5  23.23s user 0.33s system 93% cpu 25.075 total

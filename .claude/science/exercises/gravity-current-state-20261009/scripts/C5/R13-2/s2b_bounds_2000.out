@@ -1,0 +1,13 @@
+(i) full linear vector-gauge invariance  B2(k) Vmap(k) = 0:
+   dim (no symmetry imposed) = 1
+   dim (cubic-covariant) = 1
+   h:R(h) lies in the cubic space: residual 1.0e-14
+   eigenvalues of h:R(h) symbol at random k (normalised by k^2): [-1.  0.  0.  0.  1.  1.]
+   LP over ALL (non-symmetric) members: max_{TT trace=1} min eig = -0.5000 (worst sampled -0.5000)
+   LP over cubic members:            max_{TT trace=1} min eig = -0.5000 (worst sampled -0.5000)
+(ii) transverse-only invariance  B2(k) Vmap(k) [k]_x = 0 (flat vector partners), PSD required on traceless h:
+   dim (no symmetry) = 13
+   dim (cubic-covariant) = 3
+   LP over cubic members, PSD on traceless: max_{TT trace=1} min eig = -0.1667 (worst -0.1667)
+   LP over all members,   PSD on traceless: max_{TT trace=1} min eig = -0.1667 (worst -0.1667)
+OMP_NUM_THREADS=2 python3 s2b_bounds.py 2000  3.95s user 0.17s system 106% cpu 3.857 total

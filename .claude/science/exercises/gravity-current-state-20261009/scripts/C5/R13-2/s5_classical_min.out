@@ -1,0 +1,25 @@
+== kB=1.0 ks=1.0 beta_t=1.0 mu=0.5 L=4
+   L=4 start 0: V_min/site = -0.00000  |grad|=1.7e-04
+   L=4 start 1: V_min/site = -21.01268  |grad|=2.1e-02
+   L=4 start 2: V_min/site = -26.32512  |grad|=1.2e-02
+   L=4 start 3: V_min/site = -26.47510  |grad|=9.0e-03
+   L=4 start 4: V_min/site = -20.19823  |grad|=2.1e-02
+   L=4 start 5: V_min/site = -26.44679  |grad|=1.2e-02
+   best V_min/site=-26.47510; |sin| mean=0.993; dominant k (units 2pi/L): [(np.int64(2), np.int64(2), np.int64(2)), (np.int64(3), np.int64(2), np.int64(1)), (np.int64(1), np.int64(2), np.int64(3))] weights [1. 0. 0.]
+   Hessian eigs: min +5.65e+00 (PSD at a minimum); #near-zero(|eig|<1e-6)=0 of 384
+   lowest 24 harmonic frequencies: [1.7053 1.708  1.7101 1.7132 1.7149 1.7152 1.7159 1.7164 1.7174 1.7183
+ 1.7191 1.7198 1.7199 1.7207 1.721  1.7218 1.722  1.7223 1.723  1.7233
+ 1.7233 1.7238 1.7246 1.7247]
+== kB=1.0 ks=1.0 beta_t=1.0 mu=0.5 L=6
+   L=6 start 0: V_min/site = -0.00000  |grad|=1.8e-03
+   L=6 start 1: V_min/site = -18.62831  |grad|=1.8e-02
+   L=6 start 2: V_min/site = -18.75223  |grad|=2.2e-02
+   L=6 start 3: V_min/site = -21.29148  |grad|=2.9e-02
+   L=6 start 4: V_min/site = -19.33631  |grad|=3.2e-02
+   L=6 start 5: V_min/site = -19.16536  |grad|=2.3e-02
+   best V_min/site=-21.29148; |sin| mean=0.974; dominant k (units 2pi/L): [(np.int64(3), np.int64(3), np.int64(3)), (np.int64(4), np.int64(2), np.int64(3)), (np.int64(2), np.int64(4), np.int64(3))] weights [0.556 0.027 0.027]
+   Hessian eigs: min +7.75e-02 (PSD at a minimum); #near-zero(|eig|<1e-6)=0 of 1296
+   lowest 24 harmonic frequencies: [0.2718 0.3581 0.3831 0.4717 0.5031 0.5653 0.6455 0.6677 0.6899 0.7192
+ 0.7498 0.7582 0.7635 0.7715 0.78   0.7866 0.7875 0.7962 0.8059 0.8131
+ 0.8145 0.8177 0.8218 0.833 ]
+OMP_NUM_THREADS=2 python3 s5_classical_min.py 1 1 1 0.5 4,6  7.05s user 0.11s system 99% cpu 7.228 total

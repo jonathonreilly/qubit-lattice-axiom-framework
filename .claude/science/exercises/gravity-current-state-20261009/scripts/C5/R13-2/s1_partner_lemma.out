@@ -1,0 +1,50 @@
+Lemma P checks (random local cubic-covariant PSD Hessians, 12-row symbols, range <= sqrt2):
+--- V1: h only through lattice differences + trace mass (B'(0)=b P_trace); E generic
+   min eig H(0) = -7.74e-15 (PSD)
+   B1(TT xx-yy)            : omega(k=0.01)=6.62e-01, exponent 1.000
+   B2(TT xy)               : omega(k=0.01)=7.07e-01, exponent 1.000
+   E(vector xz,yz)         : omega(k=0.01)=7.02e-01, exponent 1.000; omega(k=0.01)=7.02e-01, exponent 1.000
+   A1(scalar zz, xx+yy)    : omega(k=0.01)=6.09e-01, exponent 1.000; omega~32.925 (gapped)
+   max coupling between different C4v sectors at k=0.03 z: 1.8e-14
+--- V2: as V1 plus a T2g mass on h (tries to gap the vector partners)
+   min eig H(0) = -1.39e-15 (PSD)
+   B1(TT xx-yy)            : omega(k=0.01)=8.21e-01, exponent 1.000
+   B2(TT xy)               : omega~25.589 (gapped)
+   E(vector xz,yz)         : omega~25.590 (gapped); omega~25.590 (gapped)
+   A1(scalar zz, xx+yy)    : omega(k=0.01)=6.93e-01, exponent 0.998; omega~27.838 (gapped)
+   max coupling between different C4v sectors at k=0.03 z: 3.2e-14
+--- V3: as V2 plus an Eg mass on h (gaps all traceless h at k=0)
+   min eig H(0) = 1.01e+01 (PSD)
+   B1(TT xx-yy)            : omega~26.179 (gapped)
+   B2(TT xy)               : omega~27.693 (gapped)
+   E(vector xz,yz)         : omega~27.692 (gapped); omega~27.692 (gapped)
+   A1(scalar zz, xx+yy)    : omega~22.282 (gapped); omega~26.179 (gapped)
+   max coupling between different C4v sectors at k=0.03 z: 1.0e-14
+--- V4: h only through R(h) (exact quadratic vector-gauge invariance) + trace mass
+   min eig H(0) = 0.00e+00 (PSD)
+   B1(TT xx-yy)            : omega(k=0.01)=2.93e-03, exponent 2.000
+   B2(TT xy)               : omega(k=0.01)=3.09e-03, exponent 2.000
+   E(vector xz,yz)         : omega=0 identically (flat); omega=0 identically (flat)
+   A1(scalar zz, xx+yy)    : omega=0 identically (flat); omega(k=0.01)=2.36e-03, exponent 2.000
+   max coupling between different C4v sectors at k=0.03 z: 1.2e-14
+--- V1 seed 11
+   min eig H(0) = -5.66e-15 (PSD)
+   B1(TT xx-yy)            : omega(k=0.01)=1.26e+00, exponent 0.999
+   B2(TT xy)               : omega(k=0.01)=1.06e+00, exponent 1.000
+   E(vector xz,yz)         : omega(k=0.01)=7.48e-01, exponent 1.000; omega(k=0.01)=7.48e-01, exponent 1.000
+   A1(scalar zz, xx+yy)    : omega(k=0.01)=9.77e-01, exponent 1.000; omega~32.790 (gapped)
+   max coupling between different C4v sectors at k=0.03 z: 1.3e-14
+--- V1 seed 12
+   min eig H(0) = -4.06e-15 (PSD)
+   B1(TT xx-yy)            : omega(k=0.01)=5.84e-01, exponent 1.000
+   B2(TT xy)               : omega(k=0.01)=7.01e-01, exponent 1.000
+   E(vector xz,yz)         : omega(k=0.01)=6.54e-01, exponent 1.000; omega(k=0.01)=6.54e-01, exponent 1.000
+   A1(scalar zz, xx+yy)    : omega(k=0.01)=5.97e-01, exponent 1.000; omega~24.679 (gapped)
+   max coupling between different C4v sectors at k=0.03 z: 1.0e-14
+--- V1 seed 13
+   min eig H(0) = -6.22e-15 (PSD)
+   B1(TT xx-yy)            : omega(k=0.01)=8.03e-01, exponent 1.000
+   B2(TT xy)               : omega(k=0.01)=6.85e-01, exponent 1.001
+   E(vector xz,yz)         : omega(k=0.01)=6.13e-01, exponent 1.000; omega(k=0.01)=6.13e-01, exponent 1.000
+   A1(scalar zz, xx+yy)    : omega(k=0.01)=7.03e-01, exponent 0.999; omega~22.389 (gapped)
+   max coupling between different C4v sectors at k=0.03 z: 1.4e-14

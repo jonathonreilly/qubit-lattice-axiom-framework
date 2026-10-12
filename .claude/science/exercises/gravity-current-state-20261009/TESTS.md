@@ -4757,3 +4757,11 @@ Readings:
 Readings:
 - **COUNTED:** an explicit count, with each coefficient shown to be generated (nonzero) at one loop and independent, checked.
 - **OPEN:** otherwise.
+- **R13-2 (graviton Monte Carlo):** worker reading OPEN.
+  - Lemma S: the sign problem sits in the trace/conformal sector.
+  - Lemma P: gapless TT with a PSD cubic symbol forces vector and scalar partners.
+  - Theorem G: one-sided gauge flatness plus PSD gives ω_TT = O(k²).
+  - The λ_H = 0 sign-free deformation crystallizes, and all modes are gapped (L = 4–8).
+  - Candidate no-gos X-G and X-S.
+
+  Referee running.

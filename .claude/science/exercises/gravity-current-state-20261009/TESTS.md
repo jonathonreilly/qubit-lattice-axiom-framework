@@ -4556,3 +4556,139 @@ Readings:
   - Why not VIABLE: the energy budget forces near-cone suppression ε ≤ 5e-17 to 3e-6, which brings back R11-5's assumed coefficients.
 
   Referee running.
+
+### C5 Round 13 (pre-registered 20:13Z from the S14 synthesis, agents/C5_S14_synthesis.md; readings fixed as drafted below)
+
+Launch: R13-1, R13-3, R13-5 and R13-6 now; R13-2 after the R12-5 referee; R13-4 after R12-6. Draft text verbatim from S14 §5:
+
+
+**Rules (as rounds 2–12).** Probes: Opus 5.5 at xhigh. Every FAIL, EXCLUDED or no-go goes to codex gpt-5.6-sol (xhigh) before it is recorded. Prices are named, never adopted. Each probe greps the repository and packet for prior art first and counts each match once. Hypotheses before titles; excluded outside realizations listed. Numbers from memory labelled RECALLED. Every tail or decay clause names its subtraction before any run (R9-3 rule). **New rule (from R11-2's registration):** a PRODUCED or PASS clause names the perturbative order at which each exactness condition is required.
+
+**Overlap check.**
+- R12-6 builds the twisted N=4 Kähler–Dirac multiplet with a nilpotent scalar Q and computes c_e − c_γ there. R13-1 uses *untwisted spinor* supercharges whose square contains momentum; it excludes twisted and nilpotent-scalar classes. R13-4(i) asks about BF *without* σ, η; launch part (i) after R12-6(a) reports, and drop it if R12-6 supplies a local completion.
+- R12-7 builds set A's GW-friction route (E2). R13-6 builds the start-time route (E1), so the owner has both sides of question 1. No overlap.
+- R12-5 is the strong-coupling graviton argument. R13-2 is a numerical Euclidean test of the same window; launch after R12-5's referee.
+- R13-3 and R13-5 overlap nothing running.
+
+**Priority.** R13-1, R13-2 (after R12-5's referee), R13-3, R13-4, R13-5, R13-6 (pair with R12-7's result).
+
+---
+
+**R13-1. The electron–photon split: momentum in the superalgebra on the box.**
+
+- **Plain question.** The theorem that supersymmetry forbids dimension-4 Lorentz violation (Groot Nibbelink–Pospelov) needs supercharges whose square is the momentum. On a lattice no local difference operator obeys the product rule (Kato–Sakamoto–So), so lattice superalgebras leave momentum out, and then nothing ties the electron's speed to the photon's (`vR12-3:9`). But the box symbol is exactly linear inside the box, so the product rule holds whenever all momenta, and their sums, stay in the box. Can a supercharge with {Q, Q̄} = 2σ·P exist on box states, and does it force c_e = c_γ at one loop, even though loops reach the edge?
+- **Setting.**
+  - Z³ × ℝ, Hamiltonian. A free chiral multiplet and an abelian vector multiplet with untwisted spinor supercharges Q_α. Box symbols p_i(k) = k_i on the open box B, smooth and periodic outside; Ward-forced gauge coupling on the whole zone (Lemma C).
+  - Two domains: (D1) the box-additive domain (all external and internal momenta and their sums in B); (D2) the full zone with a periodic p(k).
+  - Excluded: twisted or nilpotent-scalar-Q constructions (R12-3, R12-6); class 𝒮 (R10-5); interactions beyond one loop.
+- **Prior art (count once).** C4 F2's "SUSY fails (suggested)" and its referee correction that Kato–Sakamoto–So has infinite-flavour/non-local escapes (`agents/C4_F2_referee.md:46`); C4 P1 referee on KSS and FS models; R10-5 Lemma J (`vR10-5:9`); R12-3 Theorem L and its scope (`vR12-3:9`); R11-1 Theorem N\*; R8-2/R9-2 box-to-box momentum conservation; KSS 0803.3121, 0810.2360; GNP hep-ph/0404271; Dondi–Nicolai 1977; Bergner et al. on SLAC-derivative SUSY (RECALLED).
+- **Probes.**
+  - (a) **Free level.** Construct Q_α with {Q_α, Q̄_β} = 2σ^μ_{αβ}P_μ on D2. Prove or refute: the algebra forces one common p(k) for every multiplet coupled to the same P (one cone at tree level by algebra, not by tuning).
+  - (b) **Interacting.** Add the gauge and Yukawa vertices. State on which domain the superalgebra closes. Give the defect operator off D1 explicitly.
+  - (c) **One loop.** Compute c_e − c_γ in minimal box SQED (electron, selectron, photon, photino) with matched masses, on the literal and gapped edges. Is it zero, or an edge moment of the product-rule defect? Give the number in e²/16π² units and the residual under a mass split O(Δm²a²).
+  - (d) **Doublers.** Does the vector multiplet have a doubler (R10-5's Chern ±2 argument is for 𝒮)?
+  - (e) Per-site content and prices.
+- **FIXED readings.**
+  - **PASS:** an explicit law with spinor Q, {Q, Q̄} = 2σ·P exact on a stated domain, a Ward identity, a doubler-free photon, and one-loop c_e − c_γ = 0 for every edge shape at matched masses (residual O(Δm²a²) stated), checked.
+  - **FAIL:** a refereed no-go: in a stated class containing box-symbol spinor SUSY, either a photon doubler is forced, or the one-loop c_e − c_γ equals a nonzero edge moment of the product-rule defect that no untuned choice removes.
+  - **INCONCLUSIVE:** otherwise.
+- **Expectation.** (a) a common p(k) is forced at the free level. (b)–(c) the product-rule defect lives exactly where the edge anomaly lives, so supersymmetry fails in the loop and the split becomes a defect moment: INCONCLUSIVE leaning FAIL. The upside, if the defect moment cancels by N\*'s structure, would be the campaign's first untuned removal of the electron–photon split.
+
+---
+
+**R13-2. Producing the graviton: the compact non-Gaussian window, by Euclidean Monte Carlo.**
+*(Launch after R12-5's referee. Use whatever of Lemma DW-q, X1-E and the Gaussian-instability statement is confirmed; otherwise state them as hypotheses.)*
+
+- **Plain question.** Exact qubit constraints give gravitons with ω = O(k³) (X1). The R12-5 worker says one exact constraint caps them at k², the soft Gaussian version is unstable, and the only window left is a compact, strongly coupled phase where both constraints are energetic. Exact diagonalization cannot reach it. But a Euclidean path integral of a compact (Villain-type) model is a classical 4D statistical model. If its weights are positive, Monte Carlo can measure the tensor correlator directly and read off how frequency scales with momentum. Is there a phase with light-like (z = 1) gravitons, two polarizations and nothing else gapless?
+- **Setting.**
+  - A rank-2 symmetric-tensor U(1) or Z_N gauge field with integer conjugates on Z³, both N-type constraints imposed energetically; Euclidean Z³ × Z_τ by Trotter/Villain; L from 6 up to the largest feasible (target ≥ 12), at least three sizes.
+  - Excluded: matter, nonlinear gravity, Λ.
+- **Prior art (count once).** R11-2 and verdict (X1, Lemma A_c, dressing law; `vR11-2:7-9`); R12-5 (pending; `TESTS:4543-4551`); N0914 (Gaussian instability); lane R (`TESTS:685-776`); Gu–Wen 0907.1203 (they call the linear N-type result unreliable; `vR11-2:9`); Xu 2006; Pretko 2017; published Monte Carlo of rank-2 U(1) Coulomb phases (RECALLED; verify before use).
+- **Probes.**
+  - (a) Write the Euclidean Villain form. Prove positivity of the weights, or locate the sign problem (expected in the trace/conformal sector).
+  - (b) If positive: sample a coupling grid that includes U ~ J ~ g. Measure the TT, vector and scalar correlators G(ω_n, k); extract z from a pre-registered collapse fit; count gapless polarizations; detect confinement.
+  - (c) If not positive: give the cheapest sign-free deformation and state which constraint or which polarization content it changes.
+  - (d) Prices.
+- **FIXED readings.**
+  - **PRODUCED:** a phase with z = 1 ± 0.1 by the pre-registered collapse fit on ≥ 3 sizes, exactly two gapless TT polarizations, no gapless vector or scalar partners, checked.
+  - **EXCLUDED:** a refereed no-go in a stated class (for example, positivity forces confinement, or z ≥ 2, or gapless partners).
+  - **OPEN:** otherwise, including an unresolved sign problem.
+- **Expectation.** OPEN. Most likely a sign problem in the trace sector; if sign-free, a confined phase at strong coupling and a weak-coupling phase with k² or k³ modes or gapless partners. A clean z = 1 two-polarization phase is not expected; a definite numerical answer either way would still close or open the last unpriced window.
+
+---
+
+**R13-3. Λ: the P-T creation law in a lumpy universe (inhomogeneous completion, bound regions, phase transitions).**
+
+- **Plain question.** R12-2 found a homogeneous rule that creates sites at mean rate 3H and reads only *changes* in the local stress, so constant vacuum energy cannot drive expansion. It has never been written for a universe with galaxies, sound waves and phase transitions. Do bound systems stay unexpanded without a clamp? Does a phase transition leak a visible energy density? And in V3 the static field is an integration datum C(x), which behaves like extra dust (Mukohyama's "dark matter as integration constant"): is that a defect or a feature?
+- **Setting.**
+  - V3 (fixed √h per site, fixed lapse) with site creation obeying a local 3D F-law (P53): creation density c(x, t) a functional of time derivatives of local stress along site worldlines, plus finitely many per-site memory variables, with a stated local encoder.
+  - Linear perturbations about FRW; a top-hat collapse to a virialized region; a first-order phase transition **with a specified transition sector** (the ingredient missing in R11-3, `vR11-3:55`).
+  - Excluded: records as a q-charge (R10-4); the pairing route.
+- **Prior art (count once).** R12-2 and verdict (`vR12-2:5-17`); R11-3 and verdict (`vR11-3:51,57`); R10-4 Q1–Q5; R5-3 Lemma PT (`TESTS:2985-2993`); O3 P13; Mukohyama 2009 (cited `C5_R11-3_report.md:97,185`; RECALLED); RN L3 (projectable Hořava strong coupling); Perlman et al. 1411.7262 on foam (`vR12-2:11`); DESI DR2 w₀w_a (comparator).
+- **Probes.**
+  - (a) Write the local 3D rule and encoder. Show c̄ = 3H is recovered on average.
+  - (b) **Linear perturbations.** Growth D(a) and the ISW source. Does C(x) behave as pressureless dust with zero sound speed? What sets its amplitude?
+  - (c) **Bound regions.** In a virialized top-hat, is the creation rate zero inside without a clamp? What memory time does that need relative to orbital periods?
+  - (d) **Phase transition.** Compute the leakage into higher Prony moments with the specified transition sector. Compare with ΔN_eff and early-dark-energy bounds (state the bounds used).
+  - (e) **Acceleration.** A true Λ is invisible. State which sector produces today's acceleration, and whether the F-law makes it visible only through w ≠ −1.
+  - (f) Prices.
+- **FIXED readings.**
+  - **VIABLE:** an explicit local 3D rule with (b)–(e) passing their stated comparators, bound regions non-expanding without a clamp, prices named, checked.
+  - **EXCLUDED:** a refereed inconsistency in a stated class (for example, every local rule of memory order N creates sites inside virialized regions, or leaks more than the stated bound for every N).
+  - **OPEN:** otherwise.
+- **Expectation.** OPEN. Most likely: (c) forces a memory time at least the longest bound-orbit period, which makes the rule non-local in time; (d) leaks at roughly the latent-heat fraction (R12-2's 1–2%), dangerous only for late transitions; (b) C(x) acts as dust with unexplained initial data.
+
+---
+
+**R13-4. Tails: are the Coulomb-type tails of the BF photon multiplet and of the off-box gravity completion physical, or constraint-solving as in Coulomb-gauge QED?**
+*(Part (i) launches after R12-6(a) reports; drop it if R12-6 supplies a local completion.)*
+
+- **Plain question.** Two routes stopped at the same kind of term. The doubler-free BF photon multiplet has an inverse-Laplacian (Coulomb-type) piece in its charged Hamiltonian (`vR12-3:5`). The off-box gravity completion needs a 1/r^{d−1} tail (`vR12-1:15`). Ordinary QED in Coulomb gauge also has an instantaneous 1/r term, yet it is a local theory: the term only solves Gauss's law, and gauge-invariant observables respect the light cone. Are these two tails of that harmless kind, or do they act on physical observables at a distance? And, as a control, how big is the box law's own super-polynomial leakage outside the light cone?
+- **Setting.**
+  - (i) R12-3's BF quotient Hamiltonian with charged box matter.
+  - (ii) R12-1's completion ansatz for the off-box Killing defect.
+  - (iii) Control: R7-1's free box law and R9-5's qubit realization.
+  - "Constraint-solving" means: there is a local Hamiltonian on an extended space with local constraints whose reduced dynamics equals the given one, so the tail appears only in gauge-dependent quantities.
+  - Excluded: N=4 KD content (R12-6); interacting gravity beyond degree 2.
+- **Prior art (count once).** R12-3 and verdict; R12-1 and verdict (`vR12-1:5,15`); R11-2 on Marolf's kinematic non-locality (`vR11-2:5`); C5_R12-1 P12-2 (`C5_R12-1_report.md:272`); R7-1 and R9-5 tail constants (`vR9-5:9,12`); R11-6's large-r fits (`TESTS:4330`); Coulomb-gauge QED and Lieb–Robinson bounds for quasi-local Hamiltonians (RECALLED).
+- **Probes.**
+  - (a) For (i) and (ii): construct a local extended formulation, or prove none exists in a stated class. Compute the equal-time commutator of gauge-invariant local observables at separation r and its decay.
+  - (b) For (iii): the maximal group velocity over the whole zone, and the commutator leakage outside the cone versus distance from it, with constants, at a = ℓ_P (a reading on `AX:189-190`).
+  - (c) Prices, against `AX:57` and `AX:116-130`.
+- **FIXED readings (per object (i), (ii)).**
+  - **LOCAL-EQUIVALENT:** an explicit local extended formulation, with gauge-invariant commutators decaying at least super-polynomially outside the cone, checked.
+  - **PHYSICALLY NON-LOCAL:** a refereed proof that a gauge-invariant commutator decays no faster than a power, in a stated class.
+  - **OPEN:** otherwise.
+  - (iii) is reported as numbers with constants (no verdict).
+- **Expectation.** (i) LOCAL-EQUIVALENT for the bosonic part, as in Coulomb-gauge QED; the photino/ghost sector may need the equivariant completion. (ii) OPEN. (iii) group velocity ≤ 1 achievable on the whole zone; leakage negligible at a = ℓ_P.
+
+---
+
+**R13-5. The graviton–matter split, gauge-invariantly: Ward-complete the pair-creating stress, then compute the pole positions.**
+
+- **Plain question.** R11-1(b) found the matter and graviton cones split, but only in one prescription; the pair-creating stress was never Ward-completed (`vR9-9:5`; `vR11-3:31`; `vR11-1:19`). GW170817 says gravitons and light arrive together to about 1e-15. A prescription-independent number needs the missing piece: a Ward-complete pair stress. With it, compute the shift of the physical poles (which is gauge-invariant), with and without the TT pairing w = S².
+- **Setting.** R9-9's N-type box graviton; R8-2's stress plus a pair-creating completion satisfying the second-order Ward identity; complex scalars and Clifford-flat fermions on the literal and gapped edges; m = 1 and 0.3; the paired unit of Theorem S as a variant.
+- **Prior art (count once).** R9-9 and verdict (`vR9-9:5,23`); R10-5 Theorem PT (`vR10-5:5`); R11-1 (`vR11-1:9,17-19`); R11-3's U/M vertices (`vR11-3:31`); RFW (field-dependent Ward completion); GW170817 (comparator).
+- **Probes.** (a) Construct the Ward-complete pair stress (or prove none exists in a stated class). (b) Compute the one-loop pole shifts of the TT graviton (both polarizations) and of scalar matter; give c_m − c_T in κ_lat units and its size at a = ℓ_P. (c) Repeat with the paired unit. (d) State which seagull terms the Ward identity fixes.
+- **FIXED readings.**
+  - **SPLIT-PRESENT:** a nonzero pole-position split for every Ward-complete stress in a stated class (refereed if claimed class-wide), with numbers.
+  - **SPLIT-ABSENT:** the pole split vanishes identically for the Ward-complete stress (with or without pairing, stated), with the reason, checked.
+  - **OPEN:** otherwise.
+- **Expectation.** SPLIT-PRESENT without pairing (birefringence alone forces one polarization off the matter cone, `vR11-1:19`); with pairing, SPLIT-ABSENT for TT at matched unit-speed curves, with the scalar matter self-energy unpaired.
+
+---
+
+**R13-6. Set A, route E1: an explicit start-time CQ dilation (R11-5's missing piece).**
+
+- **Plain question.** R12-4 proved that a stationary record-metric model cannot keep both matter noise and the metric record finite at the light cone. One escape is a law with a start time. R11-5 built the meter chain but not the full causal finite-start construction (`vR11-5:9,22`). Build it, so that the owner can compare "a start time" (this item) with "leaky gravitational waves" (R12-7) on equal terms.
+- **Setting.** Linearized Gaussian CQ gravity with mean GR coupling, R11-5's regulated kernel family 𝒦_ε, a finite start t₀, a preferred frame (CMB), integer n ≥ 3. Excluded: GW friction (R12-7); non-Gaussian and jump models.
+- **Prior art (count once).** R6-4; R8-3; R9-4; R10-3; R11-5 and verdict (`vR11-5:6-22`); R12-4 and verdict (`vR12-4:5-19`); `C5_R12-4_report.md:162` (E1 row).
+- **Probes.** (a) Construct a positive synthesis measure, a causal spectral factor, the finite-start state and covariance, and the exact map from the meter bank to the displayed spectra; prove complete positivity. (b) Record growth (ε ln t, or linear with a finite regulator) and its size at t_H. (c) Re-run R11-5's tests, adding the nonlinear noise-fed PPN term. (d) The allowed ℓ_s interval, or none. (e) Prices.
+- **FIXED readings.**
+  - **VIABLE:** an explicit finite-start model passing every stated test on a stated ℓ_s interval, with prices named, checked.
+  - **EXCLUDED:** a refereed inconsistency or bound violation for every ℓ_s in the class.
+  - **OPEN:** otherwise.
+- **Expectation.** OPEN, leaning VIABLE on a narrow interval near 4e-7 to 5e-6 m; the noise-fed PPN term is the likeliest failure point.
+
+---
+

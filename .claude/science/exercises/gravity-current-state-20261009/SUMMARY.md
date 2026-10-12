@@ -633,3 +633,43 @@ None of them yet produces the graviton or explains Λ. Round 2 tests what decide
 - The box gives exact relativity to matter, including bound bodies.
 - But the grid's anomaly does not go away. It moves to the edge, and gauge fields and gravity, through their loops, carry it back.
 - Fixing that seems to need either per-observable tunings or an edge that isn't periodic (an infinite tower, i.e. set A). R10-1 tests this directly.
+
+## 25. Campaign C5, rounds 10–12: the walls, located (2026-10-12)
+
+**In plain words** (referee-checked unless noted).
+
+**Matter in the box behaves as GR says.**
+- Bound spinning bodies in a curved field have:
+  - no internal stress at rest;
+  - the same light bending whatever their binding;
+  - geodetic precession of 3/2 and the right frame dragging (R11-4).
+- Only the body's quadrupole is left free.
+
+**The leftover lattice anomaly lives at the edge, and loops bring it back.**
+- **Pairing is necessary.** Cancelling it across a range of masses needs bosons and fermions to cancel each other (R11-1).
+- **It is not sufficient.** Pairing fixes the photon's speed but not the electron's (R10-1).
+- **Lattice supersymmetry has not fixed the split.**
+  - In the simplest class the photon gets doublers (R10-5).
+  - A doubler-free photon multiplet exists, but its Hamiltonian is long-range (R12-3).
+  - A single supercharge does not set the electron/photon speed ratio.
+- **The split between the electron's and the photon's light cones is the wall no route has crossed without tuning.**
+
+**Producing the graviton from qubits.**
+- With exact constraints on finite sites, its energy grows like k³, not k (R11-2), so it can't move at light speed.
+- Strongly coupled phases are the only window left. No controlled regime works (R12-5, worker).
+
+**Λ.**
+- **On a fixed grid the vacuum always pushes outward** (w ≥ 0). Flat space needs two tunings (R11-3).
+- **Fixed-site grids cannot expand.** Creating sites is forced, at three times the expansion rate (R12-2).
+- **A rule that reads only time changes of energy** gives zero Λ without tuning, but only in idealized uniform settings, and it makes a true Λ invisible (R12-2, OPEN).
+- **Set A's records as a conserved charge** need the vacuum value pre-set to about 1 part in 1e55 (R10-4).
+
+**Records as the classical metric (set A).**
+- One theorem now covers every stationary version: matter noise and the metric record can't both stay finite near the light cone (R12-4).
+- The two ways out:
+  - the law has a start time (R11-5, OPEN);
+  - gravitational waves are slightly damped, at about the Hubble rate (R12-7, worker OPEN).
+
+  Both pass the stated observations. Both carry the same unresolved near-cone energy budget.
+
+**Set B with box symbols** loses reflection positivity (R10-2).

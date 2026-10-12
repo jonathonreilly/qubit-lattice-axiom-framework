@@ -1,0 +1,25 @@
+Gamma_L7 ball: 78696 elements, word length <= 11
+exact check: every ball element preserves Q7
+
+(1) orbit of in-band rest covector p0 = (m,0,0,0), m = 0.05
+    shell check max |p^2 + m^2| = 0.0025024414062498053 (relative)
+    word length <=  0:      1 points, max |tau| = max |p|_E = 5.0000e-02
+    word length <=  2:     31 points, max |tau| = max |p|_E = 8.9801e+00
+    word length <=  4:    272 points, max |tau| = max |p|_E = 2.2809e+03
+    word length <=  6:   1598 points, max |tau| = max |p|_E = 3.6352e+04
+    word length <=  8:   8290 points, max |tau| = max |p|_E = 1.6408e+05
+    word length <= 10:  39384 points, max |tau| = max |p|_E = 1.6408e+05
+    4^4 = 256 cells of T^4: occupied by orbit 256; occupied by points with |tau|>1e3: 256; median over occupied cells of max|tau| = 1.460e+05
+    6^4 = 1296 cells of T^4: occupied by orbit 1069; occupied by points with |tau|>1e3: 1055; median over occupied cells of max|tau| = 8.147e+04
+
+(2) max |Lambda v|_E over the ball, |v|_E = 1:
+    random                : max 4.555e+06, min 1.000e+00
+    null (1,1,0,0)/sqrt2  : max 4.641e+06, min 9.726e-07
+    null (1,0,0,1)/sqrt2  : max 4.641e+06, min 9.726e-07
+    spacelike e3          : max 3.282e+06, min 1.000e+00
+
+(3) shell transform F(k) = (4 pi/k) int_0^inf r sin(k r)/sqrt(1+r^2) dr vs 4 pi K1(k)/k:
+    k= 2.00: quad 0.8788032536, Bessel 0.8788032536, k^2 F / (4 pi) = 0.27973176
+    k= 0.50: quad 41.63090603, Bessel 41.63090603, k^2 F / (4 pi) = 0.82822056
+    k= 0.10: quad 1238.270655, Bessel 1238.270655, k^2 F / (4 pi) = 0.98538448
+    k= 0.02: quad 31387.4749, Bessel 31387.4749, k^2 F / (4 pi) = 0.99909436

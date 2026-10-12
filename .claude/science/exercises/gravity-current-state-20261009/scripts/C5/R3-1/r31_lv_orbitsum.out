@@ -1,0 +1,19 @@
+two-square index built: 12702117 pairs
+future-sheet points with n0 <= 760 : 3178500 ; x0max = 2010.8
+nu (points per unit hyperbolic volume) = 0.375859  [N(T)/T^2 method predicts 0.39318*tau^2/pi*... ]
+
+kappa | margin kappa*e^-1*x0max | mean_u S/S_LI | rms_u(S/S_LI - 1) | max-min
+0.800 |   591.8 | 1.015356 | 1.956e-02 | 5.127e-02  (std_u 1.211e-02)
+0.400 |   295.9 | 0.992029 | 8.564e-03 | 1.382e-02  (std_u 3.131e-03)
+0.200 |   147.9 | 0.997444 | 3.235e-03 | 8.781e-03  (std_u 1.983e-03)
+0.100 |    74.0 | 0.999059 | 1.797e-03 | 6.743e-03  (std_u 1.531e-03)
+0.070 |    51.8 | 0.997635 | 2.397e-03 | 1.685e-03  (std_u 3.894e-04)
+0.050 |    37.0 | 0.996959 | 3.101e-03 | 2.536e-03  (std_u 6.093e-04)
+log-log slopes of std_u(S/S_LI) vs kappa: [1.952, 0.659, 0.373, 3.838, -1.33]
+log-log slopes of (max-min) vs kappa: [1.891, 0.655, 0.381, 3.889, -1.216]
+Gamma-invariance check kappa=0.4: S(u)=7.1699024434e+00, S(gamma u)=7.1699024434e+00, rel diff 1.24e-16  (truncation margin kappa*e^-1.38*x0max = 201.5)
+Gamma-invariance check kappa=0.2: S(u)=3.5485740067e+01, S(gamma u)=3.5485740067e+01, rel diff 2.00e-16  (truncation margin kappa*e^-1.38*x0max = 100.7)
+Gamma-invariance check kappa=0.1: S(u)=1.5098293416e+02, S(gamma u)=1.5098293416e+02, rel diff 1.88e-16  (truncation margin kappa*e^-1.38*x0max = 50.4)
+control kappa=0.4: S(x2-boost)/S(u) - 1 = 0.000e+00; S(oblique)/S(u) - 1 = 4.066e-03
+control kappa=0.2: S(x2-boost)/S(u) - 1 = -2.220e-16; S(oblique)/S(u) - 1 = -2.646e-03
+control kappa=0.1: S(x2-boost)/S(u) - 1 = 2.220e-16; S(oblique)/S(u) - 1 = 1.241e-03

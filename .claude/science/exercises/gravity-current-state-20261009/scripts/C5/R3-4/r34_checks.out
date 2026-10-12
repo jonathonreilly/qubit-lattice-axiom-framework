@@ -1,0 +1,42 @@
+[1] Lemma P inputs: localization on a ground state (1D harmonic oscillator, m = 1, hbar = 1, omega = 1)
+  r_C = 0.3: total prob = 1.000000; min branch dE = 1.176992e+00 (all > 0: True); mean dE = 1.388856; Lemma H = 1.388889
+  r_C = 1.0: total prob = 1.000000; min branch dE = 4.166569e-02 (all > 0: True); mean dE = 0.124999; Lemma H = 0.125000
+  r_C = 3.0: total prob = 1.000000; min branch dE = 7.309049e-04 (all > 0: True); mean dE = 0.013889; Lemma H = 0.013889
+  two-packet state (|x|=4), r_C = 1: min branch dE = -4.4030, max = 10.0417, mean = 0.124994 (Lemma H 0.125)
+
+[2] E1 signalling toy (conditional-<T> sourcing) vs linear sourcing
+  g_L = 7.3953e-15, g_R = 6.0538e-15, mean-field g = 6.7246e-15 m/s^2; |g_L - g_mean| = 6.708e-16
+  Bob measures Z -> Charlie's classical field is g_L or g_R (p = 1/2 each).
+  Bob measures X -> Alice's mass stays superposed -> field is g_mean with certainty.
+  Single-shot distinguishable (total-variation distance 1 for a resolving field reading): signal.
+  Linear (E3/E4): Charlie's reduced state is the same 50/50 mixture of L/R fields for both choices: no signal.
+  GRW self-collapse time of Alice's mass at lambda = 1e-16: 1/(N lambda) = 1.673e+03 s (N = 5.98e+12)
+  GRW self-collapse time of Alice's mass at lambda = 1e-11: 1/(N lambda) = 1.673e-02 s (N = 5.98e+12)
+
+[3] E4 sizes: acausal monopole and dipole updates
+  per-nucleon flash energy (R2-3 convention) = 4.9867e-28 J; delta M = 5.5485e-45 kg
+  Earth (GRW): flash heating 1.780e+08 W; ADM mass growth 1.981e-09 kg/s
+  Earth (Earth-heat max (R2-3 convention)): flash heating 4.700e+13 W; ADM mass growth 5.230e-04 kg/s
+  Bob converts 1e27 flashing particles into non-flashing quanta for 1 s: delta E = 4.987e-17 J, delta M = 5.548e-34 kg, delta g at 1 m = 3.703e-44 m/s^2 (instantaneous on the dressing slice)
+  pointer (1e10 nucleons, 1 um) localization: dipole change m d = 1.673e-23 kg m; far-field change at 1 m ~ G m d / r^3 = 1.116e-33 m/s^2 per outcome, zero on average
+
+[4] E5 reservoir: static energy store needed inside the Earth over its age
+  GRW: drain 1.644e-13 W/m^3; stored need 2.334e+04 J/m^3 = 2.597e-13 kg/m^3 mass-equivalent; surface influx if replenished 3.491e-07 W/m^2
+  Earth-heat max: drain 4.339e-08 W/m^3; stored need 6.163e+09 J/m^3 = 6.857e-08 kg/m^3 mass-equivalent; surface influx if replenished 9.215e-02 W/m^2
+  cosmic: GRW heating of all baryons over 4.35e17 s = 5.423e-27 J/m^3 vs rho_Lambda c^2 = 5.339e-10 J/m^3
+
+[5] CQ windows (Oppenheim et al. 2023, Table 1 as fetched; comparator)
+  ultra-local continuous D2 [kg^2 s m^-3]: upper 1e-41, lower 1e-09 -> window -32 decades (EMPTY)
+  non-local (DP-type) lP^2 D2 [kg^2 s m^-1]: upper 1e-09, lower 1e-35 -> window +26 decades (open)
+  ultra-local discrete lP^2 D2/mP [kg]: upper 0.1, lower 1e-25 -> window +24 decades (open)
+
+[6] E5' emission-type flashes funded by an internal store (Lemma P: matter must lose >= |dp| c per flash)
+  r_C = 1e-07, lambda = 1e-16: emitted energy per flash >= 3.872e-19 J (2.417 eV); Earth emission 1.382e+17 W (Earth heat flow 4.7e13 W); per-flash rest-mass loss 2.576e-09; drift 8.129e-18 per yr
+  r_C = 1e-07, lambda = 1e-11: emitted energy per flash >= 3.872e-19 J (2.417 eV); Earth emission 1.382e+22 W (Earth heat flow 4.7e13 W); per-flash rest-mass loss 2.576e-09; drift 8.129e-13 per yr
+  r_C = 1e-06, lambda = 1e-16: emitted energy per flash >= 3.872e-20 J (0.242 eV); Earth emission 1.382e+16 W (Earth heat flow 4.7e13 W); per-flash rest-mass loss 2.576e-10; drift 8.129e-19 per yr
+  r_C = 1e-06, lambda = 1e-11: emitted energy per flash >= 3.872e-20 J (0.242 eV); Earth emission 1.382e+21 W (Earth heat flow 4.7e13 W); per-flash rest-mass loss 2.576e-10; drift 8.129e-14 per yr
+
+[7] E5 ambient reservoir: can a gravitating medium fund the flashes causally?
+  GRW: needed influx 3.491e-07 W/m^2; dark-radiation max one-sided flux (Delta N_eff 0.3) 2.129e-07 W/m^2 -> ratio need/available 1.64
+  Earth-heat max: needed influx 9.215e-02 W/m^2; dark-radiation max one-sided flux (Delta N_eff 0.3) 2.129e-07 W/m^2 -> ratio need/available 432780.34
+  cold clustered medium at local DM density: rest-energy flux 3.685e+00 W/m^2 (ample)

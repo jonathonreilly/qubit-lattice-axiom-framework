@@ -1,0 +1,34 @@
+
+shell N=-3: 3178500 points, nu=0.375859, x0max=2011
+  kappa=0.8000 kappa*tau=1.3856 margin= 798.8  mean S/S_LI=1.03287  std_u(S)/mean=8.801e-03  kappa*std_u(S)=8.1235e-03
+  kappa=0.5993 kappa*tau=1.0381 margin= 598.4  mean S/S_LI=1.01166  std_u(S)/mean=6.504e-03  kappa*std_u(S)=1.0130e-02
+  kappa=0.4490 kappa*tau=0.7777 margin= 448.3  mean S/S_LI=0.99400  std_u(S)/mean=1.574e-03  kappa*std_u(S)=3.8368e-03
+  kappa=0.3364 kappa*tau=0.5826 margin= 335.9  mean S/S_LI=0.98682  std_u(S)/mean=3.263e-03  kappa*std_u(S)=1.1906e-02
+  kappa=0.2520 kappa*tau=0.4364 margin= 251.6  mean S/S_LI=0.98977  std_u(S)/mean=2.980e-03  kappa*std_u(S)=1.5801e-02
+  kappa=0.1888 kappa*tau=0.3270 margin= 188.5  mean S/S_LI=0.99663  std_u(S)/mean=6.896e-04  kappa*std_u(S)=5.1903e-03
+  kappa=0.1414 kappa*tau=0.2449 margin= 141.2  mean S/S_LI=1.00123  std_u(S)/mean=1.042e-03  kappa*std_u(S)=1.0903e-02
+  kappa=0.1059 kappa*tau=0.1835 margin= 105.8  mean S/S_LI=1.00153  std_u(S)/mean=1.189e-03  kappa*std_u(S)=1.6998e-02
+  kappa=0.0794 kappa*tau=0.1375 margin=  79.3  mean S/S_LI=0.99918  std_u(S)/mean=5.434e-04  kappa*std_u(S)=1.0505e-02
+  kappa=0.0595 kappa*tau=0.1030 margin=  59.4  mean S/S_LI=0.99681  std_u(S)/mean=1.903e-04  kappa*std_u(S)=4.9451e-03
+  kappa=0.0445 kappa*tau=0.0772 margin=  44.5  mean S/S_LI=0.99596  std_u(S)/mean=5.297e-04  kappa*std_u(S)=1.8471e-02
+  kappa=0.0334 kappa*tau=0.0578 margin=  33.3  mean S/S_LI=0.99662  std_u(S)/mean=3.915e-04  kappa*std_u(S)=1.8301e-02
+  kappa=0.0250 kappa*tau=0.0433 margin=  25.0  mean S/S_LI=0.99775  std_u(S)/mean=1.405e-05  kappa*std_u(S)=8.7983e-04
+  regression: std_u(S)/mean ~ (kappa tau)^1.302 (prefactor 5.566e-03);  std_u(S) ~ (kappa tau)^-0.879
+  LI part scales as (kappa tau)^-2 (K1(z)/z ~ 1/z^2); prediction for tempered spectrum: rel slope +1, abs slope -1
+
+shell N=-7: 4813293 points, nu=1.555369, x0max=1852
+  kappa=0.8000 kappa*tau=2.1166 margin= 735.8  mean S/S_LI=0.89892  std_u(S)/mean=3.537e-02  kappa*std_u(S)=2.8217e-02
+  kappa=0.5993 kappa*tau=1.5857 margin= 551.2  mean S/S_LI=0.96091  std_u(S)/mean=1.278e-02  kappa*std_u(S)=2.2283e-02
+  kappa=0.4490 kappa*tau=1.1879 margin= 412.9  mean S/S_LI=0.99774  std_u(S)/mean=1.396e-03  kappa*std_u(S)=4.5588e-03
+  kappa=0.3364 kappa*tau=0.8899 margin= 309.3  mean S/S_LI=1.01294  std_u(S)/mean=2.488e-03  kappa*std_u(S)=1.3584e-02
+  kappa=0.2520 kappa*tau=0.6667 margin= 231.7  mean S/S_LI=1.01422  std_u(S)/mean=2.544e-03  kappa*std_u(S)=2.1463e-02
+  kappa=0.1888 kappa*tau=0.4995 margin= 173.6  mean S/S_LI=1.00949  std_u(S)/mean=1.312e-03  kappa*std_u(S)=1.6229e-02
+  kappa=0.1414 kappa*tau=0.3742 margin= 130.1  mean S/S_LI=1.00447  std_u(S)/mean=5.689e-05  kappa*std_u(S)=9.9865e-04
+  kappa=0.1059 kappa*tau=0.2803 margin=  97.4  mean S/S_LI=1.00200  std_u(S)/mean=7.219e-04  kappa*std_u(S)=1.7629e-02
+  kappa=0.0794 kappa*tau=0.2100 margin=  73.0  mean S/S_LI=1.00225  std_u(S)/mean=6.819e-04  kappa*std_u(S)=2.2881e-02
+  kappa=0.0595 kappa*tau=0.1573 margin=  54.7  mean S/S_LI=1.00378  std_u(S)/mean=1.999e-04  kappa*std_u(S)=9.1324e-03
+  kappa=0.0445 kappa*tau=0.1179 margin=  41.0  mean S/S_LI=1.00506  std_u(S)/mean=1.771e-04  kappa*std_u(S)=1.0945e-02
+  kappa=0.0334 kappa*tau=0.0883 margin=  30.7  mean S/S_LI=1.00542  std_u(S)/mean=2.381e-04  kappa*std_u(S)=1.9790e-02
+  kappa=0.0250 kappa*tau=0.0661 margin=  23.0  mean S/S_LI=1.00510  std_u(S)/mean=1.254e-04  kappa*std_u(S)=1.3977e-02
+  regression: std_u(S)/mean ~ (kappa tau)^1.385 (prefactor 3.383e-03);  std_u(S) ~ (kappa tau)^-0.957
+  LI part scales as (kappa tau)^-2 (K1(z)/z ~ 1/z^2); prediction for tempered spectrum: rel slope +1, abs slope -1

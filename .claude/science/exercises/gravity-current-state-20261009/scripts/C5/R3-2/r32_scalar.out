@@ -1,0 +1,28 @@
+EH + de Donder gauge fixing: c2/c1 = -0.500000 (GR -1/2), fit resid 1.5e-16
+EH + other gauge-fix weight: c2/c1 = -0.500000, fit resid 8.6e-16
+EH + tiny Fierz-Pauli mass (m^2 << q^2): c2/c1 = -0.333333 (vDVZ -1/3), fit resid 2.1e-09
+
+Generic Lorentz-invariant non-gauge kinetic terms, TT mass m1^2 = 0 tuned, natural trace mass m2^2:
+  eps=[-0.659  0.171  0.008  0.289]: c1 = -2.4432 (GR 1 in these units x norm), c2/c1 = -0.281334, resid 2.9e-11
+  eps=[-0.032 -0.292  0.096 -0.352]: c1 = +4.5814 (GR 1 in these units x norm), c2/c1 = -0.381787, resid 3.4e-11
+  eps=[ 0.521  0.017 -0.049  0.451]: c1 = +1.2964 (GR 1 in these units x norm), c2/c1 = -0.176169, resid 2.8e-11
+  eps=[-0.096  0.563  0.295 -0.537]: c1 = +6.4762 (GR 1 in these units x norm), c2/c1 = -0.269590, resid 1.1e-10
+
+Same kinetic terms, no trace mass (m1 = m2 = 0):
+  eps=[-0.275  0.323 -0.439  0.081]: c2/c1 = -0.309229, resid 4.0e-16
+  eps=[-0.413 -0.553 -0.302  0.224]: c2/c1 = -0.093398, resid 7.1e-16
+  eps=[-0.295 -0.128 -0.197  0.054]: c2/c1 = -0.309106, resid 6.7e-16
+
+One-parameter restoration (M2 = 1, kinetic = EH + eps0, then shift F4 by t):
+  roots t* where c2/c1 = -1/2: []
+  scan values c2/c1 + 1/2 (M2=1): [ 20251.1134 -38416.6092  11440.4596 -58280.5833 -16965.5333   1719.1811
+  -7171.0422   2392.0061 120314.2555   6765.0572   3734.9064   -720.8448
+  -7872.8313   2847.4955  98327.9142  -3994.4282   2317.5873   1198.448
+  -5186.6642   6351.9779  -4290.4326]
+
+Same scan with M2 = 0 (TT and trace masses both tuned):
+  shift F4: roots where c2/c1 = -1/2: [-0.19791667]
+  shift F3: roots where c2/c1 = -1/2: [-0.29772256, 0.79772256]
+  shift F2: roots where c2/c1 = -1/2: [-0.2375]
+
+M2=1, 300 random kinetic sets: c2/c1 range [-24.8819, 121.2908]; fraction within 1e-3 of -1/2: 0.000; within 1e-3 of -1/3: 0.000

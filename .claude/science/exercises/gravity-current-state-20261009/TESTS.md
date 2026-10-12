@@ -2742,3 +2742,110 @@ All verdicts are from codex gpt-5.6-sol at xhigh. Files: `agents/C5_R2-*`. The R
 - **Assumptions:** the canonical Snyder transvection product; a standard unitary Lorentz-invariant S-matrix with a massless helicity-2 particle; generic support; leg-local soft poles; the exact Ward-residue identity.
 - **Result.** The Snyder total does not factor through an additive charge, so the coupling vanishes. Set D does not exist in this class.
 - **Open:** braided or non-leg-local soft structures, extended momentum spaces with an abelian quotient, and non-particle gravity.
+
+### C5 Round 2 addendum: R2-1 referee (recorded 13:07Z)
+
+**R2-1 (multi-band / perfect action on Z⁴) — CONFIRMED WITH CORRECTIONS. COLLAPSES-TO-A, bounded, in the one-particle/spectral sense only.**
+- **Hypotheses.** A quasi-local Z⁴ law with an unbroken additive asymptotic charge on the same interacting simple scalar band. Near-threshold dispersion that is nondegenerate and analytic, d ≥ 2. One-particle charge and Hamiltonian matrices that are globally periodic, real-analytic and finite-dimensional, or scalar W(B4) parity removing the energy admixture. The referee added these last premises; the report used them without stating them.
+- **Result.** Under these hypotheses, the constant-ξ Ward identity forces τ = aω + b·k + e with b ≠ 0. Analytic continuation then gives a fixed finite matrix infinitely many characteristic roots. So a finite one-particle fibre is impossible.
+- **Not proved.** That the site ontology must itself be a continuum, or that the exact pure-point ladder is universal.
+- **Perfect-action numerics** reproduce, but the Gaussian time-blocked covariance fails OS reflection positivity: two minors are negative, −2.25e-3 and −1.83e-4. So its poles are Euclidean poles, not established physical states.
+- **Whitney blocking** is exact for arbitrary regular ξ at κ⁰.
+
+### C5 Round 3 results (recorded 13:07Z; R3-1 referee pending)
+
+**R3-2 (gravity on LRL) — CONFIRMED WITH CORRECTIONS. INCONCLUSIVE; neither fixed disjunct is met.**
+- **The count drops from 11 to 5,** given a Γ-covariant quadratic graviton action with a symmetry-preserving expansion through q². There are 2 mass forms and 4 kinetic forms, with one gauge-invariant combination.
+- **The cubic E/T2 shear split disappears.** μ_E = μ_T2 leaves one spin-2 masslessness coefficient. It is tuned, not symmetry-enforced.
+- **A tuned massless TT pole** has the background cone, with no independent speed coefficient.
+- **Theorem T_Γ.** A nonzero four-vector gauge charge cannot be bounded under a unitary Γ action, even for free matter. But this does not force a tower: singular finite-fibre multipliers remain open. Hypothesis (C) is natural, not implied.
+- **Lemma A.** Invariant nonzero scalar couplings repeat without decay along unbounded orbits. That refutes uniform power-law tails. The discrete-shell 1/q² claim is unproved.
+- **Scalar sector.** c₂/c₁ = −(a+b)/(4a+3b), so GR generically needs b = −2a: one more matching condition.
+
+**R3-3 (LRL propagation and curvature) — worker INCONCLUSIVE; not refereed (no FAIL or no-go claimed).**
+- **The mean link kernel** is the massless retarded kernel at long range, with corrections of order (a/r)².
+- **BD weights fail on LRL**: the 1/k² term survives. RL2's √Δ proof uses a Poisson-only property, so it does not transfer.
+- **A single realization** differs from the mean by 30–40% of Poisson scatter. The difference is smooth, in band, and frame-dependent: a deterministic anisotropy.
+- **Focusing.** If an action-derived second-order effective law exists with density equal to volume, it is □_g + V, which focuses like GR per realization (proved given the law).
+- **Curved spacetime.**
+  - An exact de Sitter/AdS LRL exists, but integer forms have null pairs; avoiding them needs ℤ[√2].
+  - Generic curvature needs dislocation defects. Under an assumed defect model, the disorder fraction is about 4e-62 (galaxy) to 3e-40 (neutron star). That is ≥ 30 decades below RZ's bar (suggested).
+
+**R3-4 (set A gravity escapes) — NOT CONFIRMED as stated. Refereed per-escape readings:**
+- **E1** (metric jumps, JKMS): OPEN.
+- **E2** (CQ gravity): OPEN. Ultra-local continuous Newtonian CQ is EXCLUDED by the 32-decade empty window. A diffeomorphism-invariant CQ-GR candidate exists.
+- **E3** (fixed-foliation equilibrium beables): VIABLE in explicit preferred-foliation scope only. Its interacting-QFT completion is OPEN.
+- **E4** (dressed Kraus operators): OPEN.
+- **E5** (reservoirs): OPEN. The 2.4 eV emission bound is wrong: it uses rms spread for |Δ⟨P⟩|.
+- **Lemma P** holds under compact-spacetime-support and finite-momentum premises. It does not establish those premises for persistent rGRWf changes.
+- **Lemma F** (a reservoir rest frame) is not proved.
+- E3 is not shown to be uniquely cheapest.
+
+**R3-1:** worker INCONCLUSIVE; referee running (launched 13:06Z).
+
+### C5 Round 4 (pre-registered 13:08Z; launched now)
+
+**Why this round.** Round 3 left LRL as the live candidate for set B′: a Lorentz-invariant-in-law substrate.
+- Its graviton count improves conditionally from 11 to 5.
+- It is blocked on three open points:
+  1. Does a per-realization long-wavelength effective law exist (R3-1, R3-3)?
+  2. Do singular finite-fibre multipliers allow an exact gauge identity (R3-2)?
+  3. How large are the per-realization anisotropy and the Bragg-resonance effects at physical energies?
+- On set A, E3 (beables) is the one explicit VIABLE route, and its interacting completion is OPEN.
+- Λ has not been tested in any set.
+
+Five probes; the R3-1 referee may narrow R4-1 and R4-3. **R4-1. An LRL-specific d'Alembertian and the per-realization effective law.**
+- Build non-local weights on L₇ realizations: layer weights over the seven proper-time shells and beyond, analogous to BD for Poisson. Their ensemble mean should give □ + O(a²□²) with no 1/k² remnant.
+- Then measure the per-realization deviation from the mean as a function of the smearing scale ℓ ≫ a. Is the anisotropy suppressed by a power of a/ℓ, exponentially by the Bragg gap, or not at all?
+
+Readings:
+- **PASS:** explicit weights whose mean is □ to O(a²) and whose per-realization deviation falls at least as (a/ℓ)², checked.
+- **FAIL:** no weights cancel the remnant, or the per-realization deviation stays O(1) relative as ℓ grows.
+- **INCONCLUSIVE:** otherwise.
+
+**R4-2. Singular finite-fibre multipliers (from the R3-2 referee).**
+- Can a finite-fibre matter representation on an LRL realization carry an unbounded, non-zero four-vector Γ-charge through singular multipliers? If so, construct the exact linearized gauge identity, giving a massless graviton without the R2-1 tower.
+- If not, prove the no-go in a stated class.
+
+Readings:
+- **PASS:** an explicit finite-fibre example with an exact gauge identity.
+- **FAIL:** a no-go that covers singular multipliers in a stated class (refereed).
+- **INCONCLUSIVE:** otherwise.
+
+**R4-3. Observational size of LRL per-realization Lorentz violation and Bragg resonances.**
+- Use R3-1's per-realization numbers and the Bragg cones at |G²| ≥ (2π)²/7. Compute the leading effects at a = ℓ_P (and at a = 10⁻¹⁹ m) on:
+  - GRB photon time delays (Fermi/LHAASO);
+  - UHECR and TeV-γ thresholds;
+  - vacuum birefringence;
+  - Hughes–Drever and clock bounds.
+
+Readings:
+- **PASS:** every effect is below current bounds at a = ℓ_P with no tuning.
+- **FAIL:** a bound is violated at a = ℓ_P.
+- **INCONCLUSIVE:** otherwise, including when an estimate needs the unbuilt effective law.
+
+**R4-4. Set A's E3 completion: an equilibrium beable theory sourcing gravity.**
+- Build the most explicit interacting beable model available: Bell-type QFT, Dürr et al. (2004), with records as beable configurations; the stadium picture is a related thought, not a rule. Source a classical metric with the actual beable stress, not ⟨T⟩.
+- Check:
+  - Page–Geilker;
+  - Cavendish-type tests in superposition (BMV and its classical analogues);
+  - energy-momentum conservation;
+  - whether the foliation can be wave-function-selected rather than fixed.
+
+Readings:
+- **PASS:** a stated model consistent with those tests, with the price named.
+- **FAIL:** a test excludes the model class.
+- **INCONCLUSIVE:** otherwise.
+
+**R4-5. Λ from the record count (everpresent Λ).**
+- The record count rises (owner's thought, tested only as a hypothesis). In unimodular form, Λ is conjugate to 4-volume, i.e. to the count.
+- Derive the fluctuation δΛ ~ N^(−1/2) for each set (A: records only; B/LRL: lattice sites; C: 3D grid with ticks).
+- Confront the result with current data: Sorkin's model and the fits of Zwane–Afshordi–Sorkin, from memory or a verified source.
+- Does any set give the observed magnitude without tuning and survive the data?
+
+Readings:
+- **PASS:** a set gives |Λ| of the observed order without tuning and is consistent with the CMB/BAO constraints as stated.
+- **FAIL:** every set gives the wrong order or is excluded by data.
+- **INCONCLUSIVE:** otherwise.
+
+Prior-art note: everpresent Λ appears in this packet only as a comparator or suggestion (`TESTS.md:159`, `agents/supervisor_thread.md:53,149`, `agents/C5_O3_report.md:99`). It has never been tested. The repository's `docs/COSMOLOGICAL_CONSTANT_RESULT_2026-04-12.md` and the docs on the cosmological constant must be read first.

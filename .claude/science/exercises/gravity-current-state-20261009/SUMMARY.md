@@ -547,3 +547,21 @@ Details: `TESTS.md`, "Lane RZ results".
 - **C:** keep the 3D grid and tune.
 
 None of them yet produces the graviton or explains Λ. Round 2 tests what decides between them.
+
+## 22. Campaign C5, rounds 2–3: a Lorentz-invariant random grid (2026-10-12)
+
+**In plain words** (referee-checked unless noted):
+- **A grid that is random in its frame.** Take a crystal and rotate and boost it into a random frame. This "Lorentz-random lattice" is Lorentz-invariant on average, yet each copy is a genuine crystal. Within the low-energy band, waves on it cannot scatter off the grid at all. That fixes the lensing noise that killed Poisson sprinkling.
+- **Gravity on it is cheaper, but not free.** With the Z⁴ grid, a massless graviton needed 11 separate cancellations. On the random-frame grid it needs 5, assuming the effective law exists. The two shear masses become one, and the graviton automatically travels on the matter light cone. One tuning remains: the graviton's mass is not forced to zero.
+- **What is not yet built.** Nobody has shown that a single copy of the grid has a well-behaved long-distance law.
+  - The usual random-sprinkling d'Alembertian gives the wrong answer on it.
+  - A single copy differs slightly from the average, with a smooth, direction-dependent bias. Whether that bias builds up over long paths is open. Round 4 tests both points and their observational size.
+- **The plain Z⁴ grid, ruled out in a narrow sense.** If ordinary particles on it are to carry an exact gravitational charge, each particle must have infinitely many internal states (R2-1, bounded). So in that sense the plain Z⁴ grid collapses toward set A.
+- **Set A's gravity.** If records are sudden and real, gravity has to respond to them.
+  - **E3** is the one explicit route that survives the checks: the records are definite configurations, guided along a preferred time slicing. The slicing is the price.
+  - The others (metric jumps, classical-quantum gravity, dressed collapse, reservoirs) are open.
+  - The simplest classical-quantum version is excluded by 32 orders of magnitude.
+- **Also settled in round 2:**
+  - A positive local Euclidean weight gives the wrong light bending (γ ≤ ½).
+  - Snyder's curved momentum space cannot couple to a graviton.
+  - Reflection positivity plus strict permanence of records forbids ongoing record formation, for one class of rules.

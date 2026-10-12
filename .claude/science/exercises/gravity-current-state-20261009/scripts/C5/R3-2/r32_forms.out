@@ -1,0 +1,38 @@
+=== 1. Exact invariant counts (rank mod two primes) ===
+(a) W(B4) on Z^4 [K1 control]              mass (3, 3)  one-deriv (0, 0)  two-deriv (9, 9)   (dims mod p1, p2)
+(b1) axioms: proper cubic O on Z^3 x R     mass (6, 6)  one-deriv (8, 8)  two-deriv (30, 30)   (dims mod p1, p2)
+(b2) O_h x {1,T} on Z^3 x R                mass (6, 6)  one-deriv (0, 0)  two-deriv (26, 26)   (dims mod p1, p2)
+(c) Gamma_L7 (O_h, T, gamma)               mass (2, 2)  one-deriv (0, 0)  two-deriv (4, 4)   (dims mod p1, p2)
+(d) Gamma_L7 proper orthochronous (O, gamma) mass (2, 2)  one-deriv (0, 0)  two-deriv (4, 4)   (dims mod p1, p2)
+(d') <gamma, Rz> only                      mass (5, 5)  one-deriv (6, 6)  two-deriv (18, 18)   (dims mod p1, p2)
+
+gamma in orthonormal frame:
+ [[8.       7.937254 0.       0.      ]
+ [7.937254 8.       0.       0.      ]
+ [0.       0.       1.       0.      ]
+ [0.       0.       0.       1.      ]] 
+cosh(rapidity) = 8.0
+
+=== 2. Float cross-check (orthonormal frame), smallest kept / largest dropped s.v. ===
+Gamma_L7 (float)         mass  invariants = 2   s.v. gap: last nonzero 5.314e-01, first zero 4.072e-12
+Gamma_L7 (float)         kin   invariants = 4   s.v. gap: last nonzero 5.169e-01, first zero 1.907e-10
+so(1,3) Lie algebra      mass  invariants = 2   s.v. gap: last nonzero 1.468e+00, first zero 2.741e-15
+so(1,3) Lie algebra      kin   invariants = 4   s.v. gap: last nonzero 1.468e+00, first zero 3.571e-15
+W(B4) (float)            mass  invariants = 3   s.v. gap: last nonzero 8.376e-01, first zero 1.673e-15
+W(B4) (float)            kin   invariants = 9   s.v. gap: last nonzero 8.376e-01, first zero 3.219e-15
+
+=== 3. Gauge-invariant subspace and TT restriction ===
+Gamma_L7 (float)         mass forms 2 (gauge-inv 0); kinetic forms 4 (gauge-inv 1); gauge-restoration codimension 5; TT-restriction rank: mass 1, kinetic 1 (kinetic includes the EH normalization)
+so(1,3) Lie algebra      mass forms 2 (gauge-inv 0); kinetic forms 4 (gauge-inv 1); gauge-restoration codimension 5; TT-restriction rank: mass 1, kinetic 1 (kinetic includes the EH normalization)
+W(B4) (float)            mass forms 3 (gauge-inv 0); kinetic forms 9 (gauge-inv 1); gauge-restoration codimension 11; TT-restriction rank: mass 2, kinetic 4 (kinetic includes the EH normalization)
+
+=== 4. E_g / T_2g split of the q=0 strain response ===
+Gamma_L7 (float)         per-form (E, T2) values:
+[[-0.350823 -0.350823]
+ [ 0.365148  0.365148]]
+  max |mu_E - mu_T2| over basis = 1.079e-13
+W(B4) (float)            per-form (E, T2) values:
+[[ 0.392995  0.221105]
+ [-0.110552  0.785989]
+ [-0.5       0.      ]]
+  max |mu_E - mu_T2| over basis = 8.965e-01

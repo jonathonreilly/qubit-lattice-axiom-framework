@@ -1,0 +1,5 @@
+link vectors with |x|_E <= 600.0: 1237229  (57.1s)
+D=  20 W= 4.0 mean=   39.20: frame sd/mean at one point 0.0967; frame sd/mean of the smooth (in-band) part 0.0999; within-frame (lattice-scale) sd/mean 0.0163; Poisson sqrt(3/mean) = 0.2766
+D=  40 W= 8.0 mean=  157.04: frame sd/mean at one point 0.0568; frame sd/mean of the smooth (in-band) part 0.0563; within-frame (lattice-scale) sd/mean 0.0039; Poisson sqrt(3/mean) = 0.1382
+D=  80 W=16.0 mean=  628.40: frame sd/mean at one point 0.0280; frame sd/mean of the smooth (in-band) part 0.0279; within-frame (lattice-scale) sd/mean 0.0012; Poisson sqrt(3/mean) = 0.0691
+time 96.0s

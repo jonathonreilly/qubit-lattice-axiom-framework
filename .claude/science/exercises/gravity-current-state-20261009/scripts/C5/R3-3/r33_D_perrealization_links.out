@@ -1,0 +1,7 @@
+link vectors with |x|_E <= 880.0: 2674981  (197.3s)
+D= 10.0 W=  2.0: mean      9.730; per-frame phi: avg      9.445, sd/mean 0.1488, min/max 0.6037/1.4189  (reach 71 vs Rbig 880); Poisson sqrt(3/mean) 0.5553
+D= 20.0 W=  4.0: mean     39.202; per-frame phi: avg     40.945, sd/mean 0.1170, min/max 0.7304/1.2160  (reach 142 vs Rbig 880); Poisson sqrt(3/mean) 0.2766
+D= 40.0 W=  8.0: mean    157.045; per-frame phi: avg    150.825, sd/mean 0.0369, min/max 0.9013/1.0796  (reach 284 vs Rbig 880); Poisson sqrt(3/mean) 0.1382
+D= 80.0 W= 16.0: mean    628.404; per-frame phi: avg    627.621, sd/mean 0.0203, min/max 0.9375/1.0360  (reach 568 vs Rbig 880); Poisson sqrt(3/mean) 0.0691
+D=120.0 W= 24.0: mean   1414.002; per-frame phi: avg   1415.686, sd/mean 0.0137, min/max 0.9628/1.0282  (reach 853 vs Rbig 880); Poisson sqrt(3/mean) 0.0461
+time 224.0s

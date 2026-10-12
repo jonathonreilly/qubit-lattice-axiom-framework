@@ -1,0 +1,61 @@
+[1] direct interval counts: 595 cubic classes with n0<=8, m<=40  (0.5s)
+[2] integral spacelike reflection roots with r0<=3, |ri|<=9: 300  (Q values [1, 2, 4])
+    Gamma_L-invariance of N(v): 394 directly computed classes reduce to a smaller n0; mismatches = 0
+[3] counting to Euclidean radius R = 150.0 (n0 <= 42); vectors 542684; unresolved reductions: 3256 by reduced n0 {9: 2728, 10: 432, 12: 96}  (11.3s)
+    m   C_m(total)   C_m by interval count n (n:C)
+     1     0.4921   0:0.4921
+     2     0.7490   0:0.7490
+     3     0.2563   0:0.2563
+     4     0.3795   0:0.2603  1:0.1193
+     5     0.3045   0:0.3045
+     6     0.3865   0:0.1230  2:0.2634
+     7     0.4459   0:0.0182  2:0.4276
+     8     0.1982   3:0.1982
+     9     0.3886   2:0.0568  4:0.3318
+    10     0.4512   4:0.2979  6:0.1534
+    11     0.5782   6:0.5782
+    12     0.1874   8:0.1235  9:0.0639
+    13     0.3705   8:0.2490  12:0.1214
+    14     0.7007   8:0.2307  10:0.4395  18:0.0305
+    15     0.2667   8:0.0742  12:0.1925
+    16     0.0963   13:0.0599  15:0.0364
+    17     0.3422   14:0.1735  16:0.1687
+    18     0.5877   16:0.3444  18:0.2433
+    19     0.3744   18:0.2138  20:0.1606
+    20     0.2256   18:0.1484  23:0.0773
+    21     0.2914   22:0.2914
+    22     0.8237   22:0.2805  24:0.1389  26:0.2750  30:0.1293
+    23     0.5331   28:0.2772  30:0.1348  34:0.1211
+    24     0.0936   25:0.0637  39:0.0299
+    25     0.4264   -1:0.0178  28:0.0194  32:0.2479  34:0.1219  44:0.0194
+    26     0.5278   -1:0.0274  32:0.1178  34:0.2425  36:0.1144  50:0.0257
+    27     0.2777   -1:0.0123  36:0.2539  60:0.0115
+    28     0.3437   -1:0.0078  40:0.2152  43:0.1151  46:0.0043  81:0.0012
+    29     0.5347   36:0.1063  42:0.3202  46:0.1083
+    30     0.4142   36:0.1029  46:0.1042  48:0.2071
+    31     0.3769   36:0.0237  46:0.1523  48:0.1022  50:0.0988
+    32     0.0515   57:0.0515
+    33     0.2759   52:0.0906  58:0.1853
+    34     0.5430   58:0.0892  60:0.3639  62:0.0899
+    35     0.3598   60:0.1840  66:0.1758
+    36     0.2938   -1:0.0144  65:0.0852  66:0.0831  70:0.0160  71:0.0133  72:0.0817
+    37     0.5364   -1:0.0133  70:0.0957  72:0.1759  74:0.1718  78:0.0797
+    38     0.5373   70:0.0405  74:0.2460  76:0.1512  78:0.0995
+    39     0.3169   76:0.1581  78:0.0811  82:0.0777
+    40     0.1183   81:0.0392  83:0.0791
+    mean of C_m over m=1..40: 0.3864   (Siegel average = rho = 1/sqrt7 = 0.3780)
+[4] mean LINK kernel: sum_m C^link_m theta delta(x^2+m), support m in [1, 2, 3, 4, 5, 6, 7]
+    W_LRL = sum C^link = 2.2035;  <m>_link = 2.809;  <m^2>_link = 10.390
+    Poisson comparator at same rho: W_P = sqrt(6 rho) = 1.5059; <s>_P = 5.073
+    max link tau^2 found: 7  (all v0=1 vectors are links: m=7-|n|^2 in 1..7)
+    FT (spacelike k): F(k) = sum C (2 pi sqrt m/k) K1(k sqrt m);  ratio to massless 2 pi W/k^2:
+      k= 0.001: LRL F/(2piW/k^2) = 0.999990   Poisson F/(2piW_P/k^2) = 0.999991
+      k= 0.010: LRL F/(2piW/k^2) = 0.999350   Poisson F/(2piW_P/k^2) = 0.999415
+      k= 0.100: LRL F/(2piW/k^2) = 0.967160   Poisson F/(2piW_P/k^2) = 0.970504
+      k= 0.300: LRL F/(2piW/k^2) = 0.835022   Poisson F/(2piW_P/k^2) = 0.852122
+      k= 1.000: LRL F/(2piW/k^2) = 0.402821   Poisson F/(2piW_P/k^2) = 0.462134
+[5] BD-weighted layer sum on LRL: sum C = 11.5096 (must be 0 to kill 1/k^2), sum C m = 70.5678 (0 to kill ln k), sum C m ln m = 131.4894
+    largest tau^2 in layers n=0..3: {0: 7, 1: 4, 2: 9, 3: 8}
+    Poisson BD (comparator) satisfies the analogous moment conditions by design; on LRL they fail -> mean of the Poisson-tuned
+    operator is not a d'Alembertian (leading 1/k^2 term survives with weight 11.5096).
+total time 11.5s

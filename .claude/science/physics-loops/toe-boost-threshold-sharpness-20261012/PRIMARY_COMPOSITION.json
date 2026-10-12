@@ -1,0 +1,36 @@
+{
+  "outputs": [
+    {
+      "label": "S",
+      "kind": "primary",
+      "publication_path": "scripts/hstar_threshold_spectral_2026_10_12.py",
+      "publication_sha256": "1e888faba4055dbf318d740114276d70d6cecf33baf7b46d7a1978cbafc98e9b",
+      "prefix": "#!/usr/bin/env python3\n\"\"\"Complete original finite controls; scope is recorded below and in the note.\"\"\"\nAUDIT_TIMEOUT_SEC = 120\nAUDIT_INPUT_PATHS = ['docs/HSTAR_THRESHOLD_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md']\nif not __debug__:\n    raise RuntimeError(\"Run without -O: control assertions must be enabled\")\n\n",
+      "suffix": "\nprint(\"per_element: complete original algebra and constant controls checked\")\nprint(\"per_site: checked and not executed \u2014 no volume-limit inference\")\nprint(\"per_mode: finite spectral or forced-evolution identities checked\")\nprint(\"per_block: physical finite parity and global mean projection checked\")\nprint(\"lattice_wide: checked and not executed \u2014 continuum conclusions rest on the written proof\")\nprint(\"TOTAL: PASS=36 FAIL=0\")\nprint('SCOPE: Physical finite Pauli/resolvent and separate radial-model controls; continuum local measure and free threshold law require S1-S20. No physical realization or audit verdict from this runner.')\n",
+      "sources": [
+        {
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/hstar_threshold_spectral/threshold_controls.py",
+          "source_sha256": "e4dc9cdc2c2d22476f7e15fcaffc326660aaa03c9b0fef6623830f32e8f09cc6",
+          "preserved_source": "evidence/hstar_threshold_spectral/threshold_controls.py.gz",
+          "wrapper": null
+        }
+      ]
+    },
+    {
+      "label": "L",
+      "kind": "primary",
+      "publication_path": "scripts/actual_corrector_small_time_lower_2026_10_12.py",
+      "publication_sha256": "6cc5f31b85dfa3d100a8754abf6e111d2b8aea80f2d72207e9c27438a140c26d",
+      "prefix": "#!/usr/bin/env python3\n\"\"\"Complete original finite controls; scope is recorded below and in the note.\"\"\"\nAUDIT_TIMEOUT_SEC = 120\nAUDIT_INPUT_PATHS = ['docs/ACTUAL_CORRECTOR_SMALL_TIME_LOWER_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/HSTAR_THRESHOLD_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/BOOST_QUANTITATIVE_CORRECTOR_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md']\nif not __debug__:\n    raise RuntimeError(\"Run without -O: control assertions must be enabled\")\n\n",
+      "suffix": "\nprint(\"per_element: complete original algebra and constant controls checked\")\nprint(\"per_site: checked and not executed \u2014 no volume-limit inference\")\nprint(\"per_mode: finite spectral or forced-evolution identities checked\")\nprint(\"per_block: physical finite parity and global mean projection checked\")\nprint(\"lattice_wide: checked and not executed \u2014 continuum conclusions rest on the written proof\")\nprint(\"TOTAL: PASS=36 FAIL=0\")\nprint('SCOPE: Physical finite Pauli and noncommuting ODE controls; actual continuum sharpness requires L1-L20 and the separate S threshold law. No physical realization or audit verdict from this runner.')\n",
+      "sources": [
+        {
+          "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/actual_corrector_small_time_lower/actual_lower_controls.py",
+          "source_sha256": "a9b5bd5986d3cd4752c1f8dabcb7157da240baa2f7424f11c75eae3d743b437b",
+          "preserved_source": "evidence/actual_corrector_small_time_lower/actual_lower_controls.py.gz",
+          "wrapper": null
+        }
+      ]
+    }
+  ]
+}

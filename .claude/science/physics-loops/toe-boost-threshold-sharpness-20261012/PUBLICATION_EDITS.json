@@ -1,0 +1,73 @@
+{
+  "outputs": [
+    {
+      "label": "S",
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/HSTAR_THRESHOLD_SPECTRAL_PROBE.md",
+      "source_sha256": "6856c6ff02c50b2357fbda4f2c0dbc2833362965df7ef2efddb3e925b463f6da",
+      "preserved_source": "evidence/HSTAR_THRESHOLD_SPECTRAL_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: supports\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nclaim_id: hstar_threshold_spectral_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: \"For the supplied globally compressed sine-Pauli operator and the actual initial source direction, the kernel-complement scalar spectral measure has an explicit positive threshold density and the free fast primitive has a sharp square-root scaling with a uniform absolute squared-norm remainder. The full noncommuting actual-error comparison is a separate theorem.\"\nupstream_dependencies:\n  - excluded_walk_boost_bracket_control_bounded_theorem_note_2026-10-11\nrunner: scripts/hstar_threshold_spectral_2026_10_12.py\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: supports\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "reason": "Register the conditional theorem and its actual dependencies and finite primary."
+        },
+        {
+          "before": "2026-10-12. Bounded author derivation by `boost_kernel_dynamics`. Root\nproposed the spectral lead and is a coauthor. Independent scientific review\nis pending. This note uses the source-checked B/E/X physical setup and\nrederives the needed kernel identities. It uses no conclusion from the\nconcurrently reviewed quantitative Q note and changes neither Q nor K.",
+          "after": "2026-10-12. Bounded derivation by `boost_kernel_dynamics`; root proposed\nthe spectral lead and is a coauthor. Status: conditional-support. A separate\ncomplete scientific reconstruction found no required correction. This note\nuses the source-checked B/E/X physical setup and rederives the needed kernel\nidentities. No conclusion from the quantitative Q theorem is a premise here.",
+          "reason": "Record the completed independent S check without changing mathematical premises or claiming an audit verdict."
+        },
+        {
+          "before": "All paths in this table are relative to this note's directory S.",
+          "after": "S denotes the original research source collection, preserved losslessly in the\n[complete milestone packet](../.claude/science/physics-loops/toe-boost-threshold-sharpness-20261012/). EVIDENCE_MAP.json maps the exact source identities below\nto their preserved bytes. The in-branch [boost theorem](EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md)\ncontains the complete B/E/BR/T/X arguments and their supplied-model boundaries.",
+          "reason": "Make the original source boundary portable and identify the existing complete dependency."
+        },
+        {
+          "before": "Independent review should check S3's even/mean-zero identification, the\nrank-one sign and zero residue, all eight cones and both Jacobians, the\nuniform boundary passage, exclusion of residual singular mass, and the\nfree-primitive normalization and scope. No global spectral classification,\nfull-slow lower bound, optimal growing-time exponent or physical boost law\nis claimed. No Git, PR, prompt, axiom, publication or audit file changed.",
+          "after": "The separate review checked S3's even/mean-zero identification, the rank-one\nsign and zero residue, all eight cones and both Jacobians, the uniform boundary\npassage, the entire local measure and free-primitive normalization. Its report\nis `913a9c81f6361981041034059cb2fc12f1485e257c18e9576cd016ffd74eda05`;\nthe 376-line reconstruction `0f66243e7a8322c1649990da27f56e509b1f18904ca2826d257e88ef05568377`\nwas frozen before new author evidence. The reviewer's corrected auxiliary\ncubature and its first failed source/logs are preserved. Root is a contributor,\nnot this independent reviewer. The [finite control](../scripts/hstar_threshold_spectral_2026_10_12.py)\npreserves the complete original helper; it does not prove continuum spectral\ntype. REVIEW_HISTORY.md and DELIVERY_CHECKS.md in the milestone packet record\neach evidence role and publication checks. The separate downstream note\n`ACTUAL_CORRECTOR_SMALL_TIME_LOWER_BOUNDED_THEOREM_NOTE_2026-10-12.md` proves\nits own full actual-error comparison. S alone supplies no such lower bound.\nNo global spectral classification, optimal growing-time exponent, physical\nboost law, Lean certificate, retained status or applied audit verdict is claimed.\nNo physical axiom or editable prompt changed.",
+          "reason": "Replace the finished review obligation with exact evidence and retain the free-versus-actual boundary."
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "docs/HSTAR_THRESHOLD_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "f2e8173ad37f70fc694da6afba4056a1e8471c672bc06c3a8574ff7927c73120"
+    },
+    {
+      "label": "L",
+      "kind": "note",
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/ACTUAL_CORRECTOR_SMALL_TIME_LOWER_PROBE.md",
+      "source_sha256": "972b66765f82346a9fb3a4171350b8136a4fb80671f99b4d35355d0388d09ef3",
+      "preserved_source": "evidence/ACTUAL_CORRECTOR_SMALL_TIME_LOWER_PROBE.md.gz",
+      "edits": [
+        {
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: supports\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nclaim_id: actual_corrector_small_time_lower_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_scope: \"For the exact supplied globally normalized preparation, the actual rescaled correction error is bounded above and below by explicit positive multiples of the square root of the product of lambda and effective time on a specified small positive time interval with an explicit time-dependent lambda threshold. No actual leading coefficient, optimal growing-time window or physical covariance is established.\"\nupstream_dependencies:\n  - hstar_threshold_spectral_bounded_theorem_note_2026-10-12\n  - boost_quantitative_corrector_bounded_theorem_note_2026-10-12\n  - excluded_walk_boost_bracket_control_bounded_theorem_note_2026-10-11\nrunner: scripts/actual_corrector_small_time_lower_2026_10_12.py\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: upstream_support\nreachability_to_target: supports\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "reason": "Register the conditional theorem and its actual dependencies and finite primary."
+        },
+        {
+          "before": "The threshold source S is an explicit provisional dependency pending its\nseparate independent review. This note also needs its own independent check.",
+          "after": "The threshold source S and this full actual-error comparison have each\nreceived a separate complete scientific reconstruction with no required\ncorrection. Both remain conditional mathematical results; no audit verdict\nor retained status is assigned.",
+          "reason": "Record the two completed selective reviews without changing the original frozen history."
+        },
+        {
+          "before": "The source map and byte-identical copies are in\n`actual_corrector_small_time_lower/source_manifest.json`. The load-bearing\nidentities are:",
+          "after": "The [complete milestone packet](../.claude/science/physics-loops/toe-boost-threshold-sharpness-20261012/) preserves the complete original note, source map,\nbyte-identical dependencies, author controls and separate review. Its\nEVIDENCE_MAP.json provides recovery paths. The in-branch dependencies are\nthe [threshold theorem](HSTAR_THRESHOLD_SPECTRAL_BOUNDED_THEOREM_NOTE_2026-10-12.md),\n[quantitative corrector](BOOST_QUANTITATIVE_CORRECTOR_BOUNDED_THEOREM_NOTE_2026-10-12.md)\nand original [boost theorem](EXCLUDED_WALK_BOOST_BRACKET_CONTROL_BOUNDED_THEOREM_NOTE_2026-10-11.md).\nThe exact frozen source identities are:",
+          "reason": "Make the complete mathematical source boundary and dependency graph portable."
+        },
+        {
+          "before": "| Provisional S19\u2013S20 free threshold law |",
+          "after": "| S19\u2013S20 free threshold law; separate complete source review recorded in the milestone packet |",
+          "reason": "Update the review-state description only; S19 remains a mathematical dependency."
+        },
+        {
+          "before": "These\nare author checks, not an independent scientific review or a formal proof\ncertificate. Root is a coauthor, not the independent reviewer. The result\nremains a conditional supplied-model theorem with the exact dependencies\nlisted above. Only this note and its evidence directory were written.\nNo editable prompt, Git, axiom, publication or audit file changed.",
+          "after": "These\nauthor checks are distinct from the separate complete reconstruction. The\nreview report is `c4b93e4fdec0e68dc0357509ed6bb0ba6b2dc0b3376e6f407cde4d972b26968d`;\nits reconstruction, independent controls, later reproduction and all preserved\nfailures are in the milestone packet. Root is a coauthor, not the independent\nreviewer. The [finite primary](../scripts/actual_corrector_small_time_lower_2026_10_12.py)\nretains every original control calculation. PUBLICATION_EDITS.json and\nPRIMARY_COMPOSITION.json reconstruct both full notes and both complete\nprimaries exactly; DELIVERY_CHECKS.md states the publication verification\nscope. The result remains a conditional supplied-model theorem. No Lean\ncertificate, retained status, applied audit verdict, editable-prompt change\nor physical-axiom change is claimed.",
+          "reason": "Record actual complete review and publication evidence without changing the theorem or its limits."
+        }
+      ],
+      "appended_text": "",
+      "publication_path": "docs/ACTUAL_CORRECTOR_SMALL_TIME_LOWER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "f11770e16e9a7f8e3cb8f2d4a9c6a05fa8f06a6f0f6f7b3daf8a738192a2cf2d"
+    }
+  ]
+}

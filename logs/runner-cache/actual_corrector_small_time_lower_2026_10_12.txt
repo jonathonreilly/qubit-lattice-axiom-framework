@@ -1,0 +1,198 @@
+===== runner cache v1 =====
+runner: scripts/actual_corrector_small_time_lower_2026_10_12.py
+runner_sha256: 6cc5f31b85dfa3d100a8754abf6e111d2b8aea80f2d72207e9c27438a140c26d
+input_fingerprint_sha256: 5c6104996b0b4cbc85eb9a925f15850a2db4408b8711e9176525a6f99548fbad
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.74
+status: ok
+----- stdout -----
+{
+  "status": "author-controls-only",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sympy": "1.14.0",
+  "controls_completed": 36,
+  "records": [
+    {
+      "name": "time_adapted_cutoff_constant"
+    },
+    {
+      "name": "primitive_perturbation_integral"
+    },
+    {
+      "name": "varying_source_integral"
+    },
+    {
+      "name": "actual_residual_constants"
+    },
+    {
+      "name": "finite_lambda_forcing_budget"
+    },
+    {
+      "name": "finite_lambda_free_budget"
+    },
+    {
+      "name": "finite_lambda_triangle_budgets"
+    },
+    {
+      "name": "nonempty_interval_constant"
+    },
+    {
+      "name": "embedding_constant_diagnostic",
+      "KR": 4.747935209353193,
+      "tbar": 7.077341530785729e-06
+    },
+    {
+      "name": "spin_frame",
+      "defect": 4.463374267214424e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "physical_parity_isometry",
+      "defect": 1.7763568394002505e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "global_mean_projection",
+      "defect": 1.6653345369377348e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "physical_kernel_projection",
+      "defect": 4.543800113023027e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "physical_kernel_annihilation",
+      "defect": 6.271890797216254e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "physical_h0_zero_mode",
+      "defect": 8.673344244386662e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "physical_kernel_dimension",
+      "physical_dimension": 15,
+      "kernel_dimension": 9,
+      "finite_fixture_I0": 0.4180247051450885
+    },
+    {
+      "name": "selfadjoint_generators",
+      "defect": 1.5052693432625272e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "noncommuting_fixture",
+      "commutator_norm": 0.5586609482862879,
+      "V_norm": 0.19182132081594352
+    },
+    {
+      "name": "bounded_perturbation_fixture"
+    },
+    {
+      "name": "initial_actual_residual",
+      "defect": 0.0,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "residual_in_full_kernel_complement",
+      "defect": 1.058982365860518e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "residual_time_derivative",
+      "defect": 1.853944917433748e-12,
+      "tolerance": 2e-08
+    },
+    {
+      "name": "exact_full_error_ODE",
+      "defect": 1.9405638704490378e-16,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "full_forcing_terms_resolved",
+      "generator_error": 2.0267984616442563e-06,
+      "source_error": 1.1562151381024829e-05
+    },
+    {
+      "name": "primitive_augmented_exponential",
+      "defect": 4.150864848900858e-15,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "longitudinal_range_constraint",
+      "defect": 3.469446951953614e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "physical_corrector_global_mean",
+      "defect": 1.892625264870304e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "corrector_range_identity",
+      "defect": 6.809854864184488e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "free_corrector_primitive_identity",
+      "defect": 4.0444950596469876e-18,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "ordered_noncommuting_primitive_identity",
+      "defect": 1.6773875827484085e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "comparison_quadrature_resolution",
+      "defect": 1.635892436462592e-19,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "varying_source_Fubini_identity",
+      "defect": 2.0513640071620032e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "actual_full_forcing_solution",
+      "defect": 4.6084732681684305e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "complete_leading_term_comparison",
+      "defect": 3.5848019512936624e-17,
+      "tolerance": 2e-10
+    },
+    {
+      "name": "required_terms_resolved",
+      "primitive_perturbation_norm": 1.8783092406675345e-06,
+      "varying_source_norm": 0.001742290890238163,
+      "corrector_mean_abs": 0.008776322382690103,
+      "error_source_integral_norm": 3.7001049197660516e-06
+    },
+    {
+      "name": "finite_fixture_limit_boundary",
+      "finite_complementary_gap": 1.011829347737482,
+      "free_primitive_bound_squared_prefactor": 0.0041282589211559945,
+      "meaning": "This fixed mesh has O(lambda^2) squared free primitive, so it cannot prove the continuum square-root law."
+    }
+  ],
+  "scope": "Finite checks establish no continuum cone law or actual asymptotic. The analytic L11-L20 proof is separate; S19 remains an explicit source dependency."
+}
+per_element: complete original algebra and constant controls checked
+per_site: checked and not executed — no volume-limit inference
+per_mode: finite spectral or forced-evolution identities checked
+per_block: physical finite parity and global mean projection checked
+lattice_wide: checked and not executed — continuum conclusions rest on the written proof
+TOTAL: PASS=36 FAIL=0
+SCOPE: Physical finite Pauli and noncommuting ODE controls; actual continuum sharpness requires L1-L20 and the separate S threshold law. No physical realization or audit verdict from this runner.
+
+----- stderr -----
+

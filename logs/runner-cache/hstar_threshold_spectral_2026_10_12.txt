@@ -1,0 +1,130 @@
+===== runner cache v1 =====
+runner: scripts/hstar_threshold_spectral_2026_10_12.py
+runner_sha256: 1e888faba4055dbf318d740114276d70d6cecf33baf7b46d7a1978cbafc98e9b
+input_fingerprint_sha256: d8be6e95a724aca3ef2867c6f534037d45266bce79b97299a3e3fbb2ff2e347d
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 2.13
+status: ok
+----- stdout -----
+checked direct_Pauli_source
+checked direct_physical_off_diagonal_map
+checked physical_longitudinal_square
+checked rank_one_square_from_A
+checked physical_kernel_projection
+checked physical_kernel_annihilation
+checked complete_finite_physical_kernel
+checked source_zero_atom_weight
+checked Q_source_zero_atom_removed
+checked physical_mean_constraint_in_adjoint
+checked direct_Pauli_chiral_symmetry
+checked chiral_source_is_fixed
+checked rank_one_resolvent_sign_and_denominator
+checked zero_residue_independent_resolvent_check
+checked signed_resolvent_square_relation_I/2
+checked signed_resolvent_square_relation_-3/2 + 4*I/5
+checked eight_cone_coefficient_independent_convolution
+checked cone_density_constant
+checked first_density_correction
+checked principal_value_real_threshold_order
+checked direct_Cauchy_model_(0.03+0.002j)
+checked direct_Cauchy_model_(0.3+0.01j)
+checked direct_Cauchy_model_(0.8+0.03j)
+checked upper_boundary_sign_0.03
+checked upper_boundary_sign_0.2
+checked upper_boundary_sign_0.6
+checked signed_measure_half_and_square_root_Jacobian
+checked threshold_density_model_constant
+checked primitive_two_integrals_(-1.3, 0.05)
+checked primitive_two_integrals_(-1.3, 0.016666666666666666)
+checked primitive_two_integrals_(-1.3, 0.005)
+checked primitive_two_integrals_(0.7, 0.05)
+checked primitive_two_integrals_(0.7, 0.016666666666666666)
+checked primitive_two_integrals_(0.7, 0.005)
+checked finite_mesh_nonzero_square_gap
+checked finite_mesh_removed_atom
+{
+  "controls_completed": 36,
+  "finite_I0": "202369/172800",
+  "max_direct_Cauchy_error": 1.3506446028928519e-15,
+  "model_continuous_mass": 0.2666666666666723,
+  "model_expected_continuous_mass": 0.26666666666666666,
+  "model_mass_quadrature_estimate": 6.891709425360659e-13,
+  "max_primitive_rearrangement_error": 1.0918523030145622e-13,
+  "model_primitive_diagnostics": [
+    {
+      "time": -1.3,
+      "lambda": 0.05,
+      "squared_norm_over_lambda": 1.3102143579672334,
+      "predicted_limit": 1.361356816555577,
+      "signed_error_over_lambda_squared": -1.0228491717668706
+    },
+    {
+      "time": -1.3,
+      "lambda": 0.016666666666666666,
+      "squared_norm_over_lambda": 1.3443037741792183,
+      "predicted_limit": 1.361356816555577,
+      "signed_error_over_lambda_squared": -1.0231825425815329
+    },
+    {
+      "time": -1.3,
+      "lambda": 0.005,
+      "squared_norm_over_lambda": 1.356246614037647,
+      "predicted_limit": 1.361356816555577,
+      "signed_error_over_lambda_squared": -1.0220405035859734
+    },
+    {
+      "time": -1.3,
+      "lambda": 0.0005,
+      "squared_norm_over_lambda": 1.3608459589115232,
+      "predicted_limit": 1.361356816555577,
+      "signed_error_over_lambda_squared": -1.0217152881077454
+    },
+    {
+      "time": 0.7,
+      "lambda": 0.05,
+      "squared_norm_over_lambda": 0.6814680248461198,
+      "predicted_limit": 0.7330382858376184,
+      "signed_error_over_lambda_squared": -1.0314052198299726
+    },
+    {
+      "time": 0.7,
+      "lambda": 0.016666666666666666,
+      "squared_norm_over_lambda": 0.716039785715005,
+      "predicted_limit": 0.7330382858376184,
+      "signed_error_over_lambda_squared": -1.019910007356794
+    },
+    {
+      "time": 0.7,
+      "lambda": 0.005,
+      "squared_norm_over_lambda": 0.7279261627956031,
+      "predicted_limit": 0.7330382858376184,
+      "signed_error_over_lambda_squared": -1.0224246084030406
+    },
+    {
+      "time": 0.7,
+      "lambda": 0.0005,
+      "squared_norm_over_lambda": 0.7325274383090314,
+      "predicted_limit": 0.7330382858376184,
+      "signed_error_over_lambda_squared": -1.0216950571738468
+    }
+  ],
+  "finite_square_gap": 0.7238240525173495,
+  "finite_primitive_square_bound_coefficient": 0.48436764398398896,
+  "finite_mesh_consequence": "norm squared <= coefficient*lambda^2; it has no continuum threshold law",
+  "python": "3.13.5",
+  "sympy": "1.14.0",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "scope": "author exact algebra and continuous radial diagnostic; not independent review or a torus mesh proof"
+}
+per_element: complete original algebra and constant controls checked
+per_site: checked and not executed — no volume-limit inference
+per_mode: finite spectral or forced-evolution identities checked
+per_block: physical finite parity and global mean projection checked
+lattice_wide: checked and not executed — continuum conclusions rest on the written proof
+TOTAL: PASS=36 FAIL=0
+SCOPE: Physical finite Pauli/resolvent and separate radial-model controls; continuum local measure and free threshold law require S1-S20. No physical realization or audit verdict from this runner.
+
+----- stderr -----
+

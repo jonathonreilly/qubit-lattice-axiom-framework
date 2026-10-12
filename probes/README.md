@@ -103,3 +103,6 @@ The [review-drain recovery bundle](work/deferred-science-20260924/README.md) pre
 
 
 [Excluded-walk preparation work](tasks/review-science-20261012.json) joins the existing maximum-thinking J queue. Recover the useful auxiliary lemmas, then advance a precise observable or preparation bound; compare current main and active claims first. No workers are launched by this catalog addition.
+
+
+[Wilson physical propagation work](tasks/review-science-20261012.json) joins the existing maximum-thinking J queue. Check the unfinished physical-bridge derivations, then advance a precise observable/remainder bound; compare current main and active claims first. No workers are launched by this catalog addition.

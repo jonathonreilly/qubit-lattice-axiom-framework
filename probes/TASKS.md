@@ -56,3 +56,8 @@ One focused J task selects and advances a concrete remaining interface from the 
 ## Excluded-walk preparation work - 2026-10-12
 
 One J derivation task recovers two auxiliary leakage/state-comparison lemmas and advances one precise preparation or canonical-current interface: [task and pinned sources](tasks/review-science-20261012.json). This is mathematical work, not a PR snapshot or audit verdict.
+
+
+## Wilson physical propagation work - 2026-10-12
+
+One J derivation task advances a controlled physical propagation interface beyond the conditional Wilson map: [task and pinned sources](tasks/review-science-20261012.json). This is mathematical work, not a PR snapshot or audit verdict.

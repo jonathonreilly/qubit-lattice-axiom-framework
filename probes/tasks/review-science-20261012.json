@@ -39,5 +39,64 @@
     "related_tasks": [],
     "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation with the first unresolved step; retrieval, review summaries and already-known mismatches are not completion.",
     "what": "Recover and advance the two auxiliary excluded-walk results at the pinned sources: the explicit high-momentum time-averaged leakage lower bound for globally projected positive-band packets, and the normalized cone-packet counterexample to operator-norm state convergence. Check their complete actual arguments and match the canonical projected-band and memory results on main and the boost source at PR9484 head 773321aa8fdfccc05248682dfc96bf94215034a2 (or its reviewed successor) before choosing work. First make the useful leakage/state-comparison lemmas self-contained with a disjoint check, preserving the canonical-current cancellation. Then address ONE precise remaining interface: canonical-current response for normalizable positive-band preparations with generic K of order lambda at inverse-energy time, or a sharp preparation class under which state comparison is uniform. State exact domain, time scale, norm or observable and global normalization. The existing fixed-preparation boost residual results do not themselves settle canonical-current response or uniform state convergence. Do not reproduce already-landed limits, mistake momentum leakage for a current defect, assert universal decay, or revive a PR snapshot. A failed candidate must leave an exact counterexample or substantive checked derivation with its first unresolved obligation. Owner-requested scientific work transfer. Use the existing maximum-thinking J campaign and claim.py ownership protocol; inspect completed attempts and active claims to avoid duplication. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py, and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a demonstrated new result or defect. Follow ordinary cross-model confirmation; this catalog addition starts no workers, changes no budgets and creates no PR snapshots or audit authority."
+  },
+  {
+    "id": "J:derive:review-20261012-wilson-physical-bridge:a1",
+    "problem": "review-20261012-wilson-physical-bridge",
+    "title": "Control the Wilson physical propagation and observation bridge",
+    "type": "judgment",
+    "lane": "review-science-20261012",
+    "tier": 3,
+    "command": "{EXTRA}",
+    "cwd": ".",
+    "timeout_s": 14400,
+    "hit_pattern": "(?mi)^HIT",
+    "parse": {
+      "summary": "(?m)^SUMMARY: (.*)"
+    },
+    "research_target": "Advance one precise physical propagation interface beyond the landed conditional spatial-Wilson map. Begin with the pinned unfinished author and pre-exposure derivations, compare current main and active attempts, and check the actual action and fixed-positive-mass versus bare-tree-curve prescriptions. Resolve the link between local Euclidean kinetic coefficients and a gauge-consistent charged spectral or wave-packet observable with a controlled hard/soft remainder, or give an exact counterexample to that link. Preserve mass and charge calibration, photon clock normalization, infrared charged-state meaning and the additive-mass subtraction. Only after controlling that bridge may a separate calibration/test envelope be frozen: propagate cutoff, orientation and detector nuisance freedom, keep already-read public data nonblind, and do not refit on the test observation. A local coefficient, a floating on-shell trend or the already-known tree Cherenkov rate alone is not completion. Deliver one scoped proof or checked partial derivation and the first unresolved obligation. Do not restart the cancelled campaign, change its deadline or copy its PR snapshot into the backlog.",
+    "source_paths": [
+      ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/README.md",
+      ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/SNAPSHOT_MANIFEST.json",
+      ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/wilson-physical-bridge/TARGET.md",
+      ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/wilson-physical-bridge/AUTHOR_DERIVATION_v1.md",
+      ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/wilson-physical-independent/INDEPENDENT_PRE.md"
+    ],
+    "source_branch": {
+      "name": "physics-loop/toe-wilson-observation-matching-20261012",
+      "head": "6b7201df48ef9c33be7d66121e14a134ae5fe1de",
+      "on_origin": true
+    },
+    "source_objects": [
+      {
+        "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/README.md",
+        "sha256": "fc2b908e5da455a19ec857bafa56dd287e1ba68b3f9350c53d489e30991de756",
+        "commit": "6b7201df48ef9c33be7d66121e14a134ae5fe1de"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/SNAPSHOT_MANIFEST.json",
+        "sha256": "aaa2a650d23d3a46e42be6a8d0151dea2d843fb8e13a9f7a0eb9385aa437f6f4",
+        "commit": "6b7201df48ef9c33be7d66121e14a134ae5fe1de"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/wilson-physical-bridge/TARGET.md",
+        "sha256": "2dac61a376711881f1549d7f5f85554b72bd7bba912afef249fabcef1c1194d4",
+        "commit": "6b7201df48ef9c33be7d66121e14a134ae5fe1de"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/wilson-physical-bridge/AUTHOR_DERIVATION_v1.md",
+        "sha256": "05f7c3ea85cc01785750e369f44424d94ebf56b6e778b3b25e94cff1eb1d757c",
+        "commit": "6b7201df48ef9c33be7d66121e14a134ae5fe1de"
+      },
+      {
+        "path": ".claude/science/physics-loops/toe-observation-inversion-24h-20261012/interrupted-physical-bridge/wilson-physical-independent/INDEPENDENT_PRE.md",
+        "sha256": "1d08e0895e9cbecba7d348051329709dde8e16b98876ec2456cb097b61b9a6df",
+        "commit": "6b7201df48ef9c33be7d66121e14a134ae5fe1de"
+      }
+    ],
+    "landed_main": "256e2805c311c70713e049802b7fb90d48c07c1a",
+    "related_tasks": [],
+    "completion_criterion": "A new scoped proof, exact counterexample or checked partial derivation with the first unresolved step; retrieval, review summaries and already-known mismatches are not completion.",
+    "what": "Advance one precise physical propagation interface beyond the landed conditional spatial-Wilson map. Begin with the pinned unfinished author and pre-exposure derivations, compare current main and active attempts, and check the actual action and fixed-positive-mass versus bare-tree-curve prescriptions. Resolve the link between local Euclidean kinetic coefficients and a gauge-consistent charged spectral or wave-packet observable with a controlled hard/soft remainder, or give an exact counterexample to that link. Preserve mass and charge calibration, photon clock normalization, infrared charged-state meaning and the additive-mass subtraction. Only after controlling that bridge may a separate calibration/test envelope be frozen: propagate cutoff, orientation and detector nuisance freedom, keep already-read public data nonblind, and do not refit on the test observation. A local coefficient, a floating on-shell trend or the already-known tree Cherenkov rate alone is not completion. Deliver one scoped proof or checked partial derivation and the first unresolved obligation. Do not restart the cancelled campaign, change its deadline or copy its PR snapshot into the backlog. Owner-requested scientific work transfer. Use the existing maximum-thinking J campaign and claim.py ownership protocol; inspect completed attempts and active claims to avoid duplication. Deliver numbered PROVED/CHECKED/ASSUMED steps, a self-contained disjoint check.py, and RECOVERY_STATUS.json with exact source hashes under probes/work/derive/<problem>/<worker>/. Commit the checker before run_probe.py. Emit SUMMARY and HIT only for a demonstrated new result or defect. Follow ordinary cross-model confirmation; this catalog addition starts no workers, changes no budgets and creates no PR snapshots or audit authority."
   }
 ]

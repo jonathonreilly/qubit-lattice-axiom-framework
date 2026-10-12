@@ -13,33 +13,31 @@ base_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
 instruction_revision: 3a4b2c66a1ead7a1c48b4359627e968f681e3c39
 transport_parent_revision: 73a76d2141d30d75c6aebfb2f2f9baa6e0a025bf
 integration_start: 59cb983262e94c7efd0a16d1e2c7c34ac3448bef
-active_route: Publish checked supplied-chain milestone; finish local observable section algebra and actual current-mass
-  filter, with scoped Lean algebra audit.
+active_route: Finish supplied-chain publication with recorded-path recovery; prepare accepted current-mass/Lean
+  and five-note local-continuum milestones; finish fresh dyadic refinement review.
 cycle: 1
 target_claim_type: bounded_theorem
 actual_current_surface_status: conditional-support
-milestone: Eleven regular PRs; PR9488 six-note extension complete. Three-note supplied-chain child preparing. Four
-  local-limit notes reviewed; new local algebra construction in fresh review.
+milestone: Twelve regular PRs published. Supplied-chain PR9490 complete at62d31663. Local-continuum and current-mass/Lean
+  preparations active. Dyadic final review sealing.
 strongest_unresolved_obligation: actual_regular_creators_channel_coverage_and_controlled_continuum_limit_of_supplied_spin_model
 provisional_dependencies: Supplied 1D symmetric gapped chain is checked; intended 3D microscopic realization, central
   rates and interacting channel selection remain open.
-independent_checks: Mixed review sealed, pending complete root evidence read. Current mass filter fresh review sealing
-  with protocol-scope erratum only so far. Local even section algebra fresh independent review active. Root Lean
-  all-n threshold compilation pending after preserved failure.
+independent_checks: Mixed/current/local-section fresh reviews fully root accepted. Scoped five-declaration Lean
+  certificate compiled, all-n algebra only. Dyadic independent calculations sealed before author evidence exposure;
+  final audit pending.
 independent_audit: not_requested
 transport_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9473
 transport_pr_status: regular_pr_9478_open
-active_pr_status: Clean unpublished supplied-chain child at16a69597714f8c62387c2e9ee92c445c40f91410; no child PR
-  yet. Parent9488 fully published/verified at that exact head.
-active_pr_url: null
+active_pr_status: PR9490 OPEN,isDraft=false,attached; clean CW at62d316633190ad2198fdfa91fc52192551990034.
+active_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9490
 walk_published_science_revision: 0fbdf3fd66fc778faed9ffc11f0f59c4b8994041
 transport_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9478
 transport_published_science_revision: 1f5a4e8a3f1b612e5a8a679da0087ef4e5ab2e71
 lock_owner: codex-toe-native-20261011
 lock_refresh_before_utc: '2026-10-12T13:50:00Z'
-next_action: Root inspect three-note preparation and run canonical publication pipeline once ready. Read sealed
-  mixed/current reviews fully. Finish scoped Lean algebra check and controls. Independent review of new local even
-  section algebra. No axiom/retained status changes. Deadline remains16:00:52UTC.
+next_action: Collect sibling worktree creation, finish current-mass and local-continuum preparation on exact62d31663.
+  Read dyadic final controls/review. Refreshlock13:50; stopnewresearch16:00:52UTC.
 stop_condition: fixed_deadline_or_documented_global_quality_or_tooling_exhaustion
 flux_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9480
 flux_published_science_revision: 20ec94848ad264f3167db33028e98399c5c17dd9
@@ -48,7 +46,7 @@ current_memory_published_science_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20
 quantitative_memory_parent_revision: d8480b5a6e04102ff076b3dd6f817a2d43f20252
 quantitative_memory_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9482
 quantitative_memory_published_science_revision: ba74c93aab9185d62a9711695dc931446f67c8ba
-latest_candidate_law_revision: dbfed9e9b1cb0943f50f3e0802af4725c6006339
+latest_candidate_law_revision: 5f5de00b167991cc51af68b4330d0ba0d287cfd7
 boost_parent_revision: b9b032ae790c66e762a6296a1306bfb64ae7cd70
 rigidity_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9483
 rigidity_published_science_revision: aeee46fa0e2879038eec1b8ee8a1e173ac77518e
@@ -64,3 +62,7 @@ active_parent_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-fram
 quantitative_boost_pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9487
 quantitative_boost_published_science_revision: 433f641f24296b6d8e786930bb1327f434015162
 microscopic_boost_published_science_revision: 16a69597714f8c62387c2e9ee92c445c40f91410
+checkpoint_utc: '2026-10-12T13:13:37.576467+00:00'
+latest_source_refresh: '2026-10-12T13:02:37.006568+00:00'
+latest_other_pr: 9489bfc297a6 owns photon/electron threshold-rate; fullbody read ownership only, no import.
+supplied_chain_published_science_revision: 62d316633190ad2198fdfa91fc52192551990034

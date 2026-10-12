@@ -1,0 +1,2183 @@
+{
+  "self_excluded": true,
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/APPROACH_REGISTRY.md",
+      "bytes": 1024,
+      "sha256": "6c9402f4adc83403b6b20719b9c3782557cf8281d4f2904ea28e78414eafd75e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/APPROACH_REGISTRY.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/ARTIFACT_PLAN.md",
+      "bytes": 1480,
+      "sha256": "fc25409ba3b73fd6a577a0fdd30f9ab15297ac3d1a0da4cf4a5d9dd6e816b808",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/ARTIFACT_PLAN.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 1689,
+      "sha256": "713bb8e0b36d3d25ed2d0cfee71ff61e61efc4a18045756b1bc72479ceda4055",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/AUTHOR_EVIDENCE_README.md",
+      "bytes": 3640,
+      "sha256": "2d54df4d89394257bb97e231ecac2ff54838d09fe8bbb8aba4eb8b87f3708f14",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/AUTHOR_EVIDENCE_README.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1079,
+      "sha256": "a2627d5a10dc2f85a6c7d43e98bb2dac7fbd04f491ccd6b60d94b855267a4eeb",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/CLUSTER_EVALUATION.md",
+      "bytes": 3121,
+      "sha256": "6a374083441c709186dbf0493f5825983c56515dae0aaacf12b77a01351d4e6e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/CLUSTER_EVALUATION.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/DELIVERY_CHECKS.md",
+      "bytes": 2088,
+      "sha256": "f3534894fe803da7076c7b18fd8654db182bc52a1630cd876f6552b3793edc1e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/DELIVERY_CHECKS.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/EVIDENCE_MAP.json",
+      "bytes": 138182,
+      "sha256": "33e4eb116ab02375ca0e6ad41f590e12f4f7757c1590ee328d8286afc6e3e5eb",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/EVIDENCE_MAP.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/EXECUTION_CONTRACT.json",
+      "bytes": 3231,
+      "sha256": "6d94f3273df9478209a11e590e815a3b4afd8d5eeba826ff11c4366d29a1a0d7",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/EXECUTION_CONTRACT.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/EXPECTED_RECORD_IDENTITIES.json",
+      "bytes": 24538,
+      "sha256": "052d1417f1443c6d752e1b00cb87f058d018ad1e22dbd0c3c4c6b01fb84c981f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/EXPECTED_RECORD_IDENTITIES.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/EXTERNAL_SOURCE_INVENTORY.json",
+      "bytes": 2267,
+      "sha256": "133b0f0263d3ce3a4c995bc14336793a01fb86ff744a54504a452c40dfdc90b6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/EXTERNAL_SOURCE_INVENTORY.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/FORMAL_CERTIFICATE.md",
+      "bytes": 2108,
+      "sha256": "fb8bf6510d98197f9e524a7877489d2498f59a411a86fcd2fddc6c981e0b1f6a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/FORMAL_CERTIFICATE.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/GOAL.md",
+      "bytes": 975,
+      "sha256": "65b88e2b37757959d1080679924c342901f641afd94494388bd6137157fa0097",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/GOAL.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/HANDOFF.md",
+      "bytes": 1434,
+      "sha256": "13e31d7b7893b50574107faf37d874c3fa49f5be5a441df5721342ab8cea6622",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/HANDOFF.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/LITERATURE_BRIDGES.md",
+      "bytes": 1069,
+      "sha256": "842ca1140195c8207865e28232d2ee8b6d7d51fcb0888264a57e8caa4c2be5b8",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/LITERATURE_BRIDGES.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/MUTATION_SOURCE_MAP.json",
+      "bytes": 4255,
+      "sha256": "92132e88d7cd8d0e65dd7b84968f0f63c191f59098cc45c50349c479d8d966f2",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/MUTATION_SOURCE_MAP.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/NO_GO_LEDGER.md",
+      "bytes": 1139,
+      "sha256": "d6f724153dc4d504a3078efb338c0a79d41c082be9e3d7aebe5eca10934f017a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/NO_GO_LEDGER.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/OPPORTUNITY_QUEUE.md",
+      "bytes": 975,
+      "sha256": "0905cc0e7a571f9b239b7a7af3242c8dfd1cc8b66eda84cee62d33a416702e49",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/PREPARATION_EVIDENCE_MAP.json",
+      "bytes": 17581,
+      "sha256": "8e0c1a018c2adbd8a2db2128635535916f9e68b8358d168f277528728c8f7a7d",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/PREPARATION_EVIDENCE_MAP.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/PREPARATION_LIMITATIONS.md",
+      "bytes": 1261,
+      "sha256": "875697c46ef7682337fdcff962482e5f05ae21602647ab814e74d915a6a5d5e0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/PREPARATION_LIMITATIONS.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/PR_BACKLOG.md",
+      "bytes": 1126,
+      "sha256": "0448da6a585d882f02d18f7465d7047929bc10559360381d738feffe22a90abb",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/PR_BACKLOG.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/PUBLICATION_EDITS.json",
+      "bytes": 26986,
+      "sha256": "b2cbe8bb613b4d6e5ccfcc20dd547150bc3cc244e050d07d1f445f9c272d8302",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/PUBLICATION_EDITS.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/REVIEW_HISTORY.md",
+      "bytes": 4657,
+      "sha256": "97b1a66b294015119f99818d38a1579284eeed32afae977f320042b488873938",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/REVIEW_HISTORY.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/ROOT_COMPOSITION_REVIEW.md",
+      "bytes": 1468,
+      "sha256": "64d528aacc826c7a6b1b1b3b0f801da2c12e2a490d6131f3386fa29136eb3040",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/ROOT_COMPOSITION_REVIEW.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/ROUTE_PORTFOLIO.md",
+      "bytes": 1091,
+      "sha256": "c88afdd22cd862fd36ff226d5ce54fe382fc9c738bf04ad07cbaafc1a0a83ae9",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/RUNNER_TEMPLATE.py",
+      "bytes": 4134,
+      "sha256": "7d241d88fdd566eaa4ae20fb0112f8c6897d73eba7e8469cf67403d9382f9e81",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/RUNNER_TEMPLATE.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/RUNTIME.json",
+      "bytes": 8870,
+      "sha256": "4195e985ae1fdad317b9f42bb15e1d2bbdee78487cd327008a51b2b7f8c00c94",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/RUNTIME.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/SPECIFICATIONS.json",
+      "bytes": 5190,
+      "sha256": "b81c0ddd583c8a2f2f83d4e910d5ebd78f3302d6447a8efe26bf434166ddd00e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/SPECIFICATIONS.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/STATE.yaml",
+      "bytes": 607,
+      "sha256": "58b511ca949a2a14069c35cc40d9817ac0f34a2b488f7900306c1dd38171d7af",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/STATE.yaml"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/TRACE_GATE.md",
+      "bytes": 1664,
+      "sha256": "256b7aa228cb3af92c2b7e280d770133696caeda316af262ba6ea04840771fef",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/TRACE_GATE.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/VALIDATION_EVIDENCE_MAP.json",
+      "bytes": 75410,
+      "sha256": "f84048312ce25a1930d7d6488e1294fee920a84800a3366661a67618c02052fc",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/VALIDATION_EVIDENCE_MAP.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/VERIFICATION_RESULT.json",
+      "bytes": 3865,
+      "sha256": "6f389e7e5e666d3f553638c2a9ccb8bef00ef348aefba67d2c5dfe12d07515df",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/VERIFICATION_RESULT.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/00452073d615b247a965afeb11b409f9c39d998ea970bf9f2afa9c804965b914.gz",
+      "bytes": 1234,
+      "sha256": "92ee2d6beab74a80a66886afb9c092ba5909217d7785ced79f01178fb6cc9d18",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/00452073d615b247a965afeb11b409f9c39d998ea970bf9f2afa9c804965b914.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/02f8dec4d063918add2fc65e321d7885c149228386ec3bd86544a59cb3d8762c.gz",
+      "bytes": 1047,
+      "sha256": "25ae906031e586e78f11ac1ddc42127d76b56cb51b8eaa138bb29307f46269a7",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/02f8dec4d063918add2fc65e321d7885c149228386ec3bd86544a59cb3d8762c.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/039b4b64820a28c885bd2a3ce50ebd77bd856ba94f29693e1b244d6a3fb4fb96.gz",
+      "bytes": 596,
+      "sha256": "4593807850fbba2210ad8c7d3073a41f3e1f0e7913b7a1baa38665665a2c423a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/039b4b64820a28c885bd2a3ce50ebd77bd856ba94f29693e1b244d6a3fb4fb96.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/053ded9225916c67db365856a4e788262302aa4cc8a3f0a796c8b2e89dfdf577.gz",
+      "bytes": 6852,
+      "sha256": "88ee412695ebdf84bfe2f7365e3a029b52a3dc9ece1dd8ab9f5422cdfe16265c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/053ded9225916c67db365856a4e788262302aa4cc8a3f0a796c8b2e89dfdf577.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz",
+      "bytes": 6353,
+      "sha256": "4c817e4a49db3c37637ace9bec183526366e37fad741f816cb863da945f9fd8a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/05f3ec8e58ccd7a4d2a87643fb7ed4f12998c6a1d5721e3632a502de8a0ad6ce.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/060ad95f01ee7bf1bf78919e99df496c0bb636dbdcd75e571eaf42a19f8e1497.gz",
+      "bytes": 19824,
+      "sha256": "d320500f72751c98bb6daac8e2f105b5fbe6af1b83d97db8e420b943a25d1952",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/060ad95f01ee7bf1bf78919e99df496c0bb636dbdcd75e571eaf42a19f8e1497.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/073d4458f01811ba0bc8fe79364bbcdcb6bfbaf24903c645dcfc27bf0a16bc60.gz",
+      "bytes": 16250,
+      "sha256": "a64651e1e8135b89eda7f9deac24b66715ddea9d03ae4b693ad1a4c30bc220ff",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/073d4458f01811ba0bc8fe79364bbcdcb6bfbaf24903c645dcfc27bf0a16bc60.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/07e9fa02a3e13de9e015a0b0c1ce16c0684012dbc7e15e92e3b1c8494eeee4cd.gz",
+      "bytes": 6625,
+      "sha256": "f4f5e76e4dfc968fd2c8000899b87f9c9352fb9db5c0898b7416f9b8564452e0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/07e9fa02a3e13de9e015a0b0c1ce16c0684012dbc7e15e92e3b1c8494eeee4cd.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/07fec056f378712356d79445bde6564da883ca94fb85097341da6a69bd9873d7.gz",
+      "bytes": 722,
+      "sha256": "05e496c8dd3a37ceb829e1e8ba0008c2b747debef5bc81a85c9e8050c5cf8924",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/07fec056f378712356d79445bde6564da883ca94fb85097341da6a69bd9873d7.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/08c576193c06809331caa71657f9376f9c733c4e562b0de6b37577f8a73e7560.gz",
+      "bytes": 767,
+      "sha256": "a1c92165e396fbf86604ae2c0052d2e9dfc50ec3ccf27f4ac5668b0b00b841e6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/08c576193c06809331caa71657f9376f9c733c4e562b0de6b37577f8a73e7560.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/0a5938dcb2c66ced7e35b15279cd2ded02f2be99de23684de7d36ebf6598ca50.gz",
+      "bytes": 1057,
+      "sha256": "8098d4439b5219a477df3294ec4f6f174084579fb7a5f7002f83a786286baeb1",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/0a5938dcb2c66ced7e35b15279cd2ded02f2be99de23684de7d36ebf6598ca50.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/0ab9bec91677b8b694993edd99b024d4c8e68def3ef4bdfc539c10d09964843f.gz",
+      "bytes": 637,
+      "sha256": "2585ef166126c998fbc88b54f6aca8e5c89977cfa79359c1e7281db51bf3bb26",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/0ab9bec91677b8b694993edd99b024d4c8e68def3ef4bdfc539c10d09964843f.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd.gz",
+      "bytes": 19687,
+      "sha256": "bf0aee512f04e3a908f7c9daf07348b20667d35c2493d98cc87c61598fe7a2c6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/0aebc2ded245d9bc9ecae364db0d1a042f9642771ed788794dafd73fb7f621bd.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/0befb834142464966ddb4f4c6b4e968b38b3473b65b01f09699781e3f5042416.gz",
+      "bytes": 702,
+      "sha256": "662d54762a48d422ac86d5562be4905e680b1a6ab63c848d5d7c2239e8f1afc3",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/0befb834142464966ddb4f4c6b4e968b38b3473b65b01f09699781e3f5042416.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/0c24f4807357d8e32520f7c422adb254ffb2db760953e271c59f3426bc993d43.gz",
+      "bytes": 694,
+      "sha256": "5bbc6a40d69bdfc2d983192e0dd027a216ac10bea6f2d9731c46ec848ff0260f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/0c24f4807357d8e32520f7c422adb254ffb2db760953e271c59f3426bc993d43.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/0c7702fd406fccafb2cab74b2e40222dc359c171dac6e6eb2a89ae9a69e4996c.gz",
+      "bytes": 238,
+      "sha256": "bed867651a98018c014b4a00c1bf60fc603b65e39d8d4a377c7f219924eff5a6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/0c7702fd406fccafb2cab74b2e40222dc359c171dac6e6eb2a89ae9a69e4996c.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/0c78ce00939d33cb6113f4d9477bfa4f441d638ce7095c789d07d81ef74ad5ac.gz",
+      "bytes": 19741,
+      "sha256": "0a7f3fd85aae4abe86c699d5264d6d059cbe432a3649a1cd58f4e777be4db247",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/0c78ce00939d33cb6113f4d9477bfa4f441d638ce7095c789d07d81ef74ad5ac.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/0e14360761ee67a7991ad172e070d1f54f75c9989311cd5fcf7cd0218a47fed2.gz",
+      "bytes": 1323,
+      "sha256": "271018e9b2cebefcf05a07317d8e44678d775aac3b5d8b5076c4ba1f91be69bd",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/0e14360761ee67a7991ad172e070d1f54f75c9989311cd5fcf7cd0218a47fed2.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/1590402a2709f34cddba4e68b45dc6ae638cdfa9acc9773b91f8c1393db5b19d.gz",
+      "bytes": 631,
+      "sha256": "a77d4d9ad05e4506fe3c7ac471d243090c079c52e402c3a1dcb68d1f7f376736",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/1590402a2709f34cddba4e68b45dc6ae638cdfa9acc9773b91f8c1393db5b19d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/15d6edc7ef61a077a5af5d6d1ef084ae2d6e458885a0431c81bbf88476d0ec49.gz",
+      "bytes": 3814,
+      "sha256": "69be4c2873de3eb9ff018fbfe36900ae2d355fbb0b397b3bc7e151e912e946de",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/15d6edc7ef61a077a5af5d6d1ef084ae2d6e458885a0431c81bbf88476d0ec49.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/16b41adbd923ba3dbed64446eef240db72832953ef54be73d5311d7c7adb513a.gz",
+      "bytes": 19679,
+      "sha256": "cf5e27d33aac07d9797f20fde1a670049115060ab37de0dc7c492201116978e4",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/16b41adbd923ba3dbed64446eef240db72832953ef54be73d5311d7c7adb513a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/171473fce122f14180a22065d4f88b260db0f886176f1665a0e61b6de68a7303.gz",
+      "bytes": 2950,
+      "sha256": "95765e4f5afecd3ba9dcdb8ccd737cb1cf2fb1aa6267d9c37796e6e41165aa87",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/171473fce122f14180a22065d4f88b260db0f886176f1665a0e61b6de68a7303.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/1931ce9f95e7fc0c877aaa65378aefca3cb3805733ba54d715b307ef81a9abd5.gz",
+      "bytes": 181,
+      "sha256": "d315b40fed1c2b9b5e9e676a9d2641baede1fd0d146fdacb2b39550f49049202",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/1931ce9f95e7fc0c877aaa65378aefca3cb3805733ba54d715b307ef81a9abd5.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/1d3ec0d356e013ffa695f713a2e37be1c25dd3ff4c54651aadb7728b67493541.gz",
+      "bytes": 326,
+      "sha256": "53e49032ae98af816f49a6085570cef10f382ad3cdaa73da63c24177b9f93a42",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/1d3ec0d356e013ffa695f713a2e37be1c25dd3ff4c54651aadb7728b67493541.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/1e3a3b7870c532fe41b4a23409d46bbd2adce430c53ae57b9529decdcb921424.gz",
+      "bytes": 19469,
+      "sha256": "594ea59078114ce4823828c6d27fe670ddff3e322f636e0d5e0083169885f23f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/1e3a3b7870c532fe41b4a23409d46bbd2adce430c53ae57b9529decdcb921424.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/1f0cf01c954876f90f350871cbbcaaca5b4ac70e198d6f9a04182aa1761d467e.gz",
+      "bytes": 200,
+      "sha256": "202eacdb4b606f2671a2b458a49dca5d17bf37763509203428ddac8d92d35c5f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/1f0cf01c954876f90f350871cbbcaaca5b4ac70e198d6f9a04182aa1761d467e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.gz",
+      "bytes": 7467,
+      "sha256": "1bb30c060ca8c4b6068e4c171c4587a53f4d397ac2d83f66b23326489f4444e7",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/23658017f5dd0938547661833222eee593be5eb9e77c9aad0e5af60fdb27a1fd.gz",
+      "bytes": 1702,
+      "sha256": "d306177f2d937362ab1b6b7fda4e5d1ee5c27d9ce44ffb4db69f856413481f0e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/23658017f5dd0938547661833222eee593be5eb9e77c9aad0e5af60fdb27a1fd.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/238e60a39b2008421b6041f220959fd6f4b86f75f6236d0448ebe1875f5c1032.gz",
+      "bytes": 796,
+      "sha256": "196e375530e242b24a8726424c311dfd6af274e23bbf3a1f506cb102e4bca4e8",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/238e60a39b2008421b6041f220959fd6f4b86f75f6236d0448ebe1875f5c1032.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/254339c255b9c75eac37c1185b77f11be8f55bb9b734543b2a81647f5f373dfc.gz",
+      "bytes": 522,
+      "sha256": "ab5fdadbc65d26d4f417152ca8cdeff92916faef3b70414dcfa927fda22faa7f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/254339c255b9c75eac37c1185b77f11be8f55bb9b734543b2a81647f5f373dfc.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/283fb290e86fc1cd745735a460c0bb324788781817bebe9a0ff84984952ac845.gz",
+      "bytes": 674,
+      "sha256": "3678d8cfa204a8b5eb3f389db338d68a2f0af05793da5f36085b9fe9f3b7267d",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/283fb290e86fc1cd745735a460c0bb324788781817bebe9a0ff84984952ac845.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/296a8f64e2317588f4cd711392e0ecdc2833dfde0f8d020f0a8ba5c6b007faac.gz",
+      "bytes": 1626,
+      "sha256": "6955d65ca8cfa58a23d35801f69042a4d5a3fb81c4f6b975005aec184d899159",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/296a8f64e2317588f4cd711392e0ecdc2833dfde0f8d020f0a8ba5c6b007faac.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/2981fa4ce7ef5da53eff28a5f22c894ab41192caeb31c6f3ccea503ab625bead.gz",
+      "bytes": 502,
+      "sha256": "7ebe1dd825402ccb8afd536323017d3fe7fddf76e7447fceb60263d2308ff0f5",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/2981fa4ce7ef5da53eff28a5f22c894ab41192caeb31c6f3ccea503ab625bead.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.gz",
+      "bytes": 13238,
+      "sha256": "f8dd35ca9c0a3ece0796ea04634d5fa56133cc7936ca3e406607aa773f7b2564",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/2ff253535ff1ff095aeaed9692b8d042f3bf96dd7c6185955732ed1386775928.gz",
+      "bytes": 1903,
+      "sha256": "636747895f4d4bc0d41300cdacccf437291f143dfe30d690675bd2fdd7cb0e98",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/2ff253535ff1ff095aeaed9692b8d042f3bf96dd7c6185955732ed1386775928.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/30904f1a7fdd2bade84cba937898c55fbf425c6b11cdfd3592e3c4586bd74338.gz",
+      "bytes": 722,
+      "sha256": "ee4779125ede63bb6e51c4e893b5737777260a8b180b5fedafcddad2cb83aba1",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/30904f1a7fdd2bade84cba937898c55fbf425c6b11cdfd3592e3c4586bd74338.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/371a1bbf14fce1873b5344984c2c4889a17e67e293fadaf71e2c033ff8bae397.gz",
+      "bytes": 22878,
+      "sha256": "a327061e119b7ac0b91a930760b5d9b2bd282ac726b01c8b246fe6321bb93b9e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/371a1bbf14fce1873b5344984c2c4889a17e67e293fadaf71e2c033ff8bae397.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/37aec0d0579e9d262ee9ac88e064ab601157e6434980c18497471f5f4e9d3e3f.gz",
+      "bytes": 761,
+      "sha256": "1eed08c1ce913a121357ee2f494a2ab9a828c668748b8ee0c2e4d961cc41b287",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/37aec0d0579e9d262ee9ac88e064ab601157e6434980c18497471f5f4e9d3e3f.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/3a67eb2483829d5d4171bd7617859d450efd2e58ce1fec18f05a086beeb4c222.gz",
+      "bytes": 1805,
+      "sha256": "3584bb1013d02230f630687586953048dc8675d40e44e38f3529fa0163369cca",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/3a67eb2483829d5d4171bd7617859d450efd2e58ce1fec18f05a086beeb4c222.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/3feb9b146b79aed6c8245da1bfb610f558d82f651a9d750578583e2c166d828e.gz",
+      "bytes": 3066,
+      "sha256": "4a02214ffbe98f5d31763e86744ec1a2b6ac14ec3353e648c37a2b13d8cf8852",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/3feb9b146b79aed6c8245da1bfb610f558d82f651a9d750578583e2c166d828e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/417e1409e6f1b7815904515d28e90a0975b594547e72504777c0adb94ab58a9c.gz",
+      "bytes": 248,
+      "sha256": "1e0e72cf4060fcbf1af1877b3bd3fa2c0ca85b2c7ea21865a9bcc8ebf9bfca22",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/417e1409e6f1b7815904515d28e90a0975b594547e72504777c0adb94ab58a9c.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/418c7909d78ab551e4baaeac1b5042feb02b93648d005774135e4d0957247ffa.gz",
+      "bytes": 1255,
+      "sha256": "106dd5c2f4c34196f8c9d90db846f850c18dedd79aa6f5f39e75bf6e792be2b7",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/418c7909d78ab551e4baaeac1b5042feb02b93648d005774135e4d0957247ffa.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/4281707188649d44f362fbb340c75ef71af6911f0d918c1d7f71c9f5d76c81f9.gz",
+      "bytes": 13734,
+      "sha256": "e5a01961f2a7cefd22d9cd8354a823148384fb68379b36df79fa01f7377ff985",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/4281707188649d44f362fbb340c75ef71af6911f0d918c1d7f71c9f5d76c81f9.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/432faa57eabb196004fe91634b1e3cab6a2d4bdcbfdd854689a6e859ca18a9e2.gz",
+      "bytes": 713,
+      "sha256": "b71beaef8c055ae0197657bd3512db90470cabfe413b43eb55e0a09cf5b0d283",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/432faa57eabb196004fe91634b1e3cab6a2d4bdcbfdd854689a6e859ca18a9e2.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/45370c5d495b50eb0dbdd7bbec603117ab3d9692389e876618a99c4dfaecf327.gz",
+      "bytes": 766,
+      "sha256": "ecaa3563f1892e45e923b7792c410727edb6cfd9e7c4a13ddd706cadece1ca2e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/45370c5d495b50eb0dbdd7bbec603117ab3d9692389e876618a99c4dfaecf327.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/466df8d106f30f6f037535ab56bf19d4e2d19e055f8007a39e449e723b70d804.gz",
+      "bytes": 238,
+      "sha256": "4e45f4e18de53e000af6eeea3fab2aad1408b9b7785f19277318fab47ec2db79",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/466df8d106f30f6f037535ab56bf19d4e2d19e055f8007a39e449e723b70d804.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/472ff01df9d3eb071d615e14a27937d14f8f342d3bfcb243580bd8a41d32dfe5.gz",
+      "bytes": 2317,
+      "sha256": "9a41f50fe583b850db77a32065908c587496ba74755adb84055e8e97c10185e2",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/472ff01df9d3eb071d615e14a27937d14f8f342d3bfcb243580bd8a41d32dfe5.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/47328dc5f4a95ccb244e4a6671c20370e63d9d9bf35e3d27b846bec5d0740336.gz",
+      "bytes": 618,
+      "sha256": "68e9f2854a6a3b91109af7d558159eb0986403adfeb1ff8e1b1647f4e9a6acf4",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/47328dc5f4a95ccb244e4a6671c20370e63d9d9bf35e3d27b846bec5d0740336.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/48c54d417faf756f15d3e8b03c93e2c4fcff4002057df8dba87055f79091e5fa.gz",
+      "bytes": 19547,
+      "sha256": "f5944febc1d18d2c2ed6368faf227de6df40ecef20e2fcb3a4170ea2adf50de2",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/48c54d417faf756f15d3e8b03c93e2c4fcff4002057df8dba87055f79091e5fa.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/4916b1ead5abcc222cd55a1b82e249ca30642ec20639e2237c9fb1fd1b2526d1.gz",
+      "bytes": 11950,
+      "sha256": "64573fc34d0a5eb2e626c93ddbdc3ae6700816b12af607e5beb3978eb10d95e3",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/4916b1ead5abcc222cd55a1b82e249ca30642ec20639e2237c9fb1fd1b2526d1.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/4a612543e1e3940c380eeb325bee6100ff0734b9974647ed005c189835b6ab6d.gz",
+      "bytes": 1001,
+      "sha256": "a988f0a6fb343a97da19402b162ce79373c6055e9254f4a2f564b754d9709e5b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/4a612543e1e3940c380eeb325bee6100ff0734b9974647ed005c189835b6ab6d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/4ad8799f689c472d2429a4e3743f66963daebe331898ce107afe0edf20e320c3.gz",
+      "bytes": 1361,
+      "sha256": "23ca9af9b03733561ebba9b323a7f59395e5380cf8fd696a75823d3136be9f66",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/4ad8799f689c472d2429a4e3743f66963daebe331898ce107afe0edf20e320c3.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/4bef39377ec03871c75e4a35a9e65ee33bab675eaa4988758820f4142d73e9ec.gz",
+      "bytes": 2320,
+      "sha256": "c72a32c72fc92397c2f3b798e66774e3231432e90ea5388070b73c2af62389a4",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/4bef39377ec03871c75e4a35a9e65ee33bab675eaa4988758820f4142d73e9ec.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/4c8955355f928e587f9d106f868fab055066657dbb61367589e80b76c8dff2b4.gz",
+      "bytes": 22595,
+      "sha256": "c2de1ddd7d86dcb62efd6c7b1ff4e60b89f4645f22969dec9365b6ac4244874e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/4c8955355f928e587f9d106f868fab055066657dbb61367589e80b76c8dff2b4.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/4e3c108f571d27eac0b5fa1ef2a1d52a78cb695aa0a06deb91957ac87fd107dc.gz",
+      "bytes": 676,
+      "sha256": "371493177a8f62cbb5ee5bd7d62e3352e10587ae0d3e4025971d8c9630caa12d",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/4e3c108f571d27eac0b5fa1ef2a1d52a78cb695aa0a06deb91957ac87fd107dc.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/4fbd7dc80c4f32340e0117adf78c93cae38f7a6654b94e77f0ddd56a9265e645.gz",
+      "bytes": 3243,
+      "sha256": "40abc02120b5ee6bc9253505bc14a26f8bc433e858440b2ddadf1758a93c2539",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/4fbd7dc80c4f32340e0117adf78c93cae38f7a6654b94e77f0ddd56a9265e645.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/534db6f95c32352b9f00e953e5bd0f7506c5c648f3835b3be80641cf13220c23.gz",
+      "bytes": 721,
+      "sha256": "11287ce48c444b504239f30eef91e6924f4b543aca89c0690384b129fcba2be2",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/534db6f95c32352b9f00e953e5bd0f7506c5c648f3835b3be80641cf13220c23.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/55825c8f5aadbe941f28b4ab878dea37c537bb144cdef63c225ca9a1e91fe531.gz",
+      "bytes": 19449,
+      "sha256": "869efc5beb4ec87a10b66531f4d13940494380f8b920abd9ef954a51d30fc673",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/55825c8f5aadbe941f28b4ab878dea37c537bb144cdef63c225ca9a1e91fe531.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1.gz",
+      "bytes": 5546,
+      "sha256": "56977ecf11047eb9a41c27d63c1cbd521366e2260703a17c3925676627a19eba",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/576fa8a36707e9700ea56eb6ecd28e327c9ab766718b9fbb99f567ca1ba84193.gz",
+      "bytes": 437,
+      "sha256": "ad3db626a443e0809eee75da5e0d8a56c3e34a6b083295f76453521766c2b9ae",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/576fa8a36707e9700ea56eb6ecd28e327c9ab766718b9fbb99f567ca1ba84193.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/58bd810a774edb6f1e55cd480afffba6f4ed11e6dea6971cade3c3933173db39.gz",
+      "bytes": 956,
+      "sha256": "82c83d99bf3caa921481a541b2291d27a05f177cd64b837296f134867b8db546",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/58bd810a774edb6f1e55cd480afffba6f4ed11e6dea6971cade3c3933173db39.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/58ce927f6d3eb64d527ae0baa4f15b6d1174f598563d6b28366daa37026ddee6.gz",
+      "bytes": 414,
+      "sha256": "d21ff8b180e21e1adfe1329b250d4f064fa3be87a4359ae9ed34c1debd54102d",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/58ce927f6d3eb64d527ae0baa4f15b6d1174f598563d6b28366daa37026ddee6.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/5ac1b2f69fdfab4465473af4325bd0732393de5c9811fbcc5ba7591be9512378.gz",
+      "bytes": 2300,
+      "sha256": "0230b60c2a86f2a40c1112b3f7743169c794bacb045d8caf72038c3a900d1534",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/5ac1b2f69fdfab4465473af4325bd0732393de5c9811fbcc5ba7591be9512378.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/5b6c1362c73b5170c58a1e8cfb4e02a130f14680b40c7b70935de787af1712b9.gz",
+      "bytes": 54,
+      "sha256": "3a320012fb12240687d16b36890c15e1efb41c1d989d768d13bd69f55b228148",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/5b6c1362c73b5170c58a1e8cfb4e02a130f14680b40c7b70935de787af1712b9.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/5e1369b3f81aaa68fc2b943a9da9700443d3de3e54579cb631b258bc5419ed56.gz",
+      "bytes": 1549,
+      "sha256": "04d4b090532ab5c44ecdbc78e66f3e2ab79f73bac0aaffd5cd167b4034340c39",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/5e1369b3f81aaa68fc2b943a9da9700443d3de3e54579cb631b258bc5419ed56.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/5ec243fb488d4c832f0b5a0a2a8b9f6e265942131cb968772433c8d0595cec06.gz",
+      "bytes": 718,
+      "sha256": "4f91da47afa39be634909a2b97bdffdd235c4c8b0e42a0938a1867355c380e45",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/5ec243fb488d4c832f0b5a0a2a8b9f6e265942131cb968772433c8d0595cec06.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/60a122e0c553c1fa03d064e92b84c21ca9dbed11ae621cb189715f8243697952.gz",
+      "bytes": 199,
+      "sha256": "a6c9e410f873f0154efa5a8f107286fddb53f086cbbcee69bbc7fe79d53e73db",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/60a122e0c553c1fa03d064e92b84c21ca9dbed11ae621cb189715f8243697952.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/6111146a3c54b186a55bfd7c565e1b8478402d952793ab2f1e8b2687d921de31.gz",
+      "bytes": 3379,
+      "sha256": "0d27b4d6f9f25d94b135bf0a8bff976415f1c5dd1f0e2c7f0ca60ed161cf50d5",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/6111146a3c54b186a55bfd7c565e1b8478402d952793ab2f1e8b2687d921de31.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37.gz",
+      "bytes": 2450,
+      "sha256": "99cf399266d70f0f8b66804a32c6faa55644c0552d30ba7945eea6ac6e322dda",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/617b9a1cbb541d6f207de89c10f1fbb2005fbb27f68e818f0c14a3fe67bf802d.gz",
+      "bytes": 18326,
+      "sha256": "f92372ef4d6f853cc06f3078141b901b20c913683ce700a34dc8671e8bd32fb8",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/617b9a1cbb541d6f207de89c10f1fbb2005fbb27f68e818f0c14a3fe67bf802d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/61f8c89ed3588675c6ea8b6f25b9ef3e37bd6be53134a42587b61afbe3ed8366.gz",
+      "bytes": 1198,
+      "sha256": "c8a7ea573e7801b3dc1e79461b68b80fcfada845120ddc9f4f8b7c132e715119",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/61f8c89ed3588675c6ea8b6f25b9ef3e37bd6be53134a42587b61afbe3ed8366.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/6296e5cb5c78ed4ed3fe55a3a2542db19b35f8f3037591e71e9d09b90a02f947.gz",
+      "bytes": 763,
+      "sha256": "35281a9805e6a98d01ae830efda32f1ffac7353f5911a80fdc0433cafc00dbb4",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/6296e5cb5c78ed4ed3fe55a3a2542db19b35f8f3037591e71e9d09b90a02f947.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/64b672311a6bd04d49e5fa8b54cd717133e77c4e650f8ff632606d0e389984a9.gz",
+      "bytes": 7468,
+      "sha256": "a0c4e653758476268515a77e135445211951d38a428221529a17b13f13704dac",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/64b672311a6bd04d49e5fa8b54cd717133e77c4e650f8ff632606d0e389984a9.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/651df28a12a05f6a9a3baea2d226f444836908b01aa02d2da529ae73a44dd052.gz",
+      "bytes": 826,
+      "sha256": "c45bb3c1269f4e6c32966d73b3daca9a40b3167732599835c0976cc45e2181f3",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/651df28a12a05f6a9a3baea2d226f444836908b01aa02d2da529ae73a44dd052.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/65a13777ab07ae2aa2842a20a801447f8fe655d54a22bd3a9d90ad93158ec0b9.gz",
+      "bytes": 757,
+      "sha256": "79a79984925d3b9a40c797bfbd5223a806c460dd8f8f3475b67cb69e23586c1c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/65a13777ab07ae2aa2842a20a801447f8fe655d54a22bd3a9d90ad93158ec0b9.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/65e204e78e623ecbd5bf43c95865372944dd5b25ed9422afa8cf5a3901382a37.gz",
+      "bytes": 92,
+      "sha256": "0b9c64550522aad8344da607c7626fb3a79669f1f138acf5210446995b96365f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/65e204e78e623ecbd5bf43c95865372944dd5b25ed9422afa8cf5a3901382a37.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/6832091c0d3f3a979ab7c10574c43386bd2491f9ab8547466757c4d581e0ed29.gz",
+      "bytes": 760,
+      "sha256": "05664de02f0bd75b8769d44ad628684d5b03fff3ffd847f6c097e2aa8d6024ff",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/6832091c0d3f3a979ab7c10574c43386bd2491f9ab8547466757c4d581e0ed29.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/685ffe8ee4223cf63a952cb7a9b0c711ed0196c48ba14a32d2fa5f64103751de.gz",
+      "bytes": 295,
+      "sha256": "471341c4e8f789a71f4aaff2f5b4daaed9c6f171bf28294a4ccb778b9e83429c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/685ffe8ee4223cf63a952cb7a9b0c711ed0196c48ba14a32d2fa5f64103751de.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/69ed9ed4b57591de8b5b19ac5d200e60a79280e36ec7f683c29cacb2708c0033.gz",
+      "bytes": 19626,
+      "sha256": "9f05caca7671ff9c8d918f7c90f29537aab8543ff6b82ce9f44351b94b3c5f63",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/69ed9ed4b57591de8b5b19ac5d200e60a79280e36ec7f683c29cacb2708c0033.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/6a6a21b2fdd357a47047b43c6ac6c69ca801a5965d51b770fbfaf961c040e405.gz",
+      "bytes": 1593,
+      "sha256": "4c2bd6171ed3d77dcae8ebff8a2dc4ecd1d746b576da23a12b25a1246de3906c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/6a6a21b2fdd357a47047b43c6ac6c69ca801a5965d51b770fbfaf961c040e405.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/6d79a2ce989b6c01edef875c33bc17b14d31516e0c594c0aca4f8174f5da7929.gz",
+      "bytes": 11019,
+      "sha256": "3f4bcec85b607c7d8ea7f253101df8f50adf40741c64c1a733c84771ccc1813b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/6d79a2ce989b6c01edef875c33bc17b14d31516e0c594c0aca4f8174f5da7929.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/70bdf12a70d8940e6dadad51e53ba5a7f4deabe5d203109caa6ee509829f1416.gz",
+      "bytes": 552,
+      "sha256": "30f848a9a7cf3c360773e49e7962ea9786a5be9c4f7e69402bd0f0dac12a1dd1",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/70bdf12a70d8940e6dadad51e53ba5a7f4deabe5d203109caa6ee509829f1416.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/7491d02559214f22ab7bf2e43def009b4bc228aad69a192ef3fc593637a11a78.gz",
+      "bytes": 1498,
+      "sha256": "2494bd8057ecec8fb70d99b3abaf049be8c1ce3efb246af06f384bdc3c309fa4",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/7491d02559214f22ab7bf2e43def009b4bc228aad69a192ef3fc593637a11a78.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/74a43a0fcad445f29c0a4a9e199ad6e3f327963d80303635c208a2266e94f239.gz",
+      "bytes": 1279,
+      "sha256": "7c8e7da407938c7f01b99b7a8cd8e26ff38aea970a4252ec6b948e4ecb831ca0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/74a43a0fcad445f29c0a4a9e199ad6e3f327963d80303635c208a2266e94f239.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/757db6fee9b15e7c6326eddf6d037d73750fda129f8e92d454984ed5a62bb516.gz",
+      "bytes": 214,
+      "sha256": "edb3cefcac044ddac1365078dbef388ca816229f94e2dc618e160c6b338cb839",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/757db6fee9b15e7c6326eddf6d037d73750fda129f8e92d454984ed5a62bb516.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/75e1ff2a80c5c7c18547abc4f7069199a3bc068229881f8d5ade380e0a5a554d.gz",
+      "bytes": 19731,
+      "sha256": "172db5f97ee480adfe04d030c52269aa913ec357676999750cd546f80569ca4f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/75e1ff2a80c5c7c18547abc4f7069199a3bc068229881f8d5ade380e0a5a554d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/760d027886bb84bbae83ef1a87ae93a8095be8dd166f501e035d2ec8bff7dfcd.gz",
+      "bytes": 811,
+      "sha256": "602ac2f484bec286645be7ade5c80cff15678fe1d7925f2e6ee8e686eaf82ca6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/760d027886bb84bbae83ef1a87ae93a8095be8dd166f501e035d2ec8bff7dfcd.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/76a5a6e63b2d696c6cce53ab8c390eff2efe80a6092e75bc99a7bbd9b4d9c7e5.gz",
+      "bytes": 88661,
+      "sha256": "5f846a5618a55b552e4c1bbac11dbe9d58957c6def212fd33120bb28a5adfe3a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/76a5a6e63b2d696c6cce53ab8c390eff2efe80a6092e75bc99a7bbd9b4d9c7e5.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/76c29d16f2de0877dfdab8c8faaabc626d6d86865e137f929df7552ade9cf12a.gz",
+      "bytes": 693,
+      "sha256": "d7767cba44c94c7ab16e343e3c92c967be56a3665551f80d1d86fbe957897f51",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/76c29d16f2de0877dfdab8c8faaabc626d6d86865e137f929df7552ade9cf12a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/77a1e85b5d7500b01583a9e7088490ca0714a8ed6bfcc9988bd70e77cccb7997.gz",
+      "bytes": 380,
+      "sha256": "c7287e43c35563143b56b8c41bc6971de7bc2cbcc8a012e623281268612c019e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/77a1e85b5d7500b01583a9e7088490ca0714a8ed6bfcc9988bd70e77cccb7997.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/7a4fdac8976c0f98b0656b75fee3cedefd9b8e9e4047de80909c35694b90712f.gz",
+      "bytes": 1337,
+      "sha256": "86e1fba7e9f7c13990c326d011fb5ab306b775ff714d5b9c61c6a3bd5d45abbd",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/7a4fdac8976c0f98b0656b75fee3cedefd9b8e9e4047de80909c35694b90712f.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/7a6f81848047e706290fb6fc9bc1071ebcc6f068434b94821886cdc3add064e7.gz",
+      "bytes": 19628,
+      "sha256": "dfc1f68e3458e8ff5eabffbb48c8c151d9ed515718fa2e919f9c48954f3644bb",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/7a6f81848047e706290fb6fc9bc1071ebcc6f068434b94821886cdc3add064e7.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/7b9348adcd6b98f63768cf0c2d5590ac11360ed72cfb25d71e703ce13239b3eb.gz",
+      "bytes": 166,
+      "sha256": "1a3dccf9cbe3f12cb2eee113373fabcaf51f28d2c3cba4edb3a0541c020f9edb",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/7b9348adcd6b98f63768cf0c2d5590ac11360ed72cfb25d71e703ce13239b3eb.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/7d587ef8aa02b721783ea75658ddd0b9eb168b04a5b03fdb2650556a75fdc5f0.gz",
+      "bytes": 802,
+      "sha256": "14d6f136bbfeba132c1198e75daf4b20190c31e512ce845ff885af0fd64f813e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/7d587ef8aa02b721783ea75658ddd0b9eb168b04a5b03fdb2650556a75fdc5f0.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4.gz",
+      "bytes": 4064,
+      "sha256": "08d2e6462c285a4df9bf676ae0bfb42d1366b76da56274aad1ad93978ecfbf6d",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/7d924a4c8b3ae428523616f801cf05ee10d372eced7b6939030f1eb5d5897aa4.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/7dc3844fabd4999242e8a40f06905912c3b23d2d932a141fb55e4ec3d814efbb.gz",
+      "bytes": 11970,
+      "sha256": "d48d358ee55223d83cc762ade7c4a735c67ba639620f4d021e548306085483df",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/7dc3844fabd4999242e8a40f06905912c3b23d2d932a141fb55e4ec3d814efbb.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/7ddc7bf8cab5a8303f2397303bd2debc0bb7ce8c1f0c3386fb1b8d1f44b3634e.gz",
+      "bytes": 712,
+      "sha256": "d8bc6a296b158a7a19dc5d417a8bf4db6dd00b1d57a69109f247823daf46cb4f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/7ddc7bf8cab5a8303f2397303bd2debc0bb7ce8c1f0c3386fb1b8d1f44b3634e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7.gz",
+      "bytes": 12552,
+      "sha256": "4e6b1ce17370caa663d7e9ef437117ab70f7b6443598cc908be964fd9b8efdc4",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/8058a08ef6d18824d9a39418eae0cd40b62fcdaf4478d26556507728f362f77c.gz",
+      "bytes": 19460,
+      "sha256": "0fb8deae289a9dd20c72749f38b2810ce2ffd5ee0c66791e5fce0ae9f55dbc4c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/8058a08ef6d18824d9a39418eae0cd40b62fcdaf4478d26556507728f362f77c.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/809c074b292a6977b49aa82fc10fb3ee7f78b648666edf4f8407d143975a9800.gz",
+      "bytes": 1627,
+      "sha256": "3b30d5962a8761735d99b7d90083ce1e40cc52fd26097df2c4b2a873d55cc73d",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/809c074b292a6977b49aa82fc10fb3ee7f78b648666edf4f8407d143975a9800.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/81c8287868267a6525ab558bf25db417abd2e6c6a190320b3a2aa51328b70ae6.gz",
+      "bytes": 976,
+      "sha256": "1f9369bbdada28be877dfdf5de8f29a87c02f8ba9a80732de09fc95aef5b3976",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/81c8287868267a6525ab558bf25db417abd2e6c6a190320b3a2aa51328b70ae6.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/8220228a4191ee28e9176f2c7adbf615e2fdc58ba781059ecb724e45485cf9a1.gz",
+      "bytes": 320,
+      "sha256": "c9dd18e3c01c6bc6b2f568d5aaaffef1cd8137d0992c5fa8d4351607e471057a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/8220228a4191ee28e9176f2c7adbf615e2fdc58ba781059ecb724e45485cf9a1.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/872428d1d2a109e402c13c66518229ced87f5bbba08999f927bc7b154b26998c.gz",
+      "bytes": 5178,
+      "sha256": "42ae3499a9562472aea6cc7a6ad710969264c2427eb0ca4c40ce64255e7b3d31",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/872428d1d2a109e402c13c66518229ced87f5bbba08999f927bc7b154b26998c.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/8b025aed435965eda2c21a9db7a7daa6e33b369b8137653c1b2727a9f8e9463d.gz",
+      "bytes": 430,
+      "sha256": "29e7697a4fd5ec4ee41a4c7bf758a5e71e3ba2ae15b7bae1e120791b4ba02e5b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/8b025aed435965eda2c21a9db7a7daa6e33b369b8137653c1b2727a9f8e9463d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/8c7ae29f250adc628a0415a666d407c8c31fdc213b92a3bea3eeff5f72677e5a.gz",
+      "bytes": 19415,
+      "sha256": "14f0d594142563c2de9f53065515e8e7890656cb3034cfaa0985a1965f8c3513",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/8c7ae29f250adc628a0415a666d407c8c31fdc213b92a3bea3eeff5f72677e5a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/8d2902f849c8b27780fa94ce81a68605a3f0e6acee5e50185f455008270949eb.gz",
+      "bytes": 719,
+      "sha256": "3868321963261bee68aaa59d1c19f973c37ce9e54e37b8d0609db7aa6fcfe268",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/8d2902f849c8b27780fa94ce81a68605a3f0e6acee5e50185f455008270949eb.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/8d768a804e3f851994591d93d1a0d6d71260933e23645078f82885fc0ee6f9c8.gz",
+      "bytes": 168,
+      "sha256": "097a85305c7db7b643c8ee3c6920eea8e3b83cae6c6b3d434babaccb121b885d",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/8d768a804e3f851994591d93d1a0d6d71260933e23645078f82885fc0ee6f9c8.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/8f08cc7064d8de64a81ad54dda1673ab1a0fb775344120efb0e592794c08cce6.gz",
+      "bytes": 690,
+      "sha256": "99f9d6e86a9794f0d1857e6726d2ce431c43ac1fbedc0812128a09b9650c4927",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/8f08cc7064d8de64a81ad54dda1673ab1a0fb775344120efb0e592794c08cce6.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e.gz",
+      "bytes": 3630,
+      "sha256": "2b810691ebd17a412f702422ec88f33c9a9cdbb6fea77743f1dc7cebc398a065",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc.gz",
+      "bytes": 6897,
+      "sha256": "f26b3cfafcae3c6f473ead22c3abfd6ef3df6e2d90b6f9ce439f3da29bab1934",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/91147d6780d3af7c33f370d4087220fb1b3822972aa0bee1f15ec48c57221808.gz",
+      "bytes": 19347,
+      "sha256": "1f73d836ab8f9597cea491f0834e2a307a513f42f3f652ff29181bef34ef40ef",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/91147d6780d3af7c33f370d4087220fb1b3822972aa0bee1f15ec48c57221808.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/92132e88d7cd8d0e65dd7b84968f0f63c191f59098cc45c50349c479d8d966f2.gz",
+      "bytes": 951,
+      "sha256": "061ded51ffaf710d422ebd84ff73e5d3c40bfceed375a955baa92b4c58a5c081",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/92132e88d7cd8d0e65dd7b84968f0f63c191f59098cc45c50349c479d8d966f2.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/92dcdbce72b8bd57fd4b7e4e661a9f9e34e815b312df7f0c6e360cd8ef5c9f92.gz",
+      "bytes": 14886,
+      "sha256": "157289a90bfab6ab8a32b99e2bab669e2de798cad52d57a6a562fb1dbc92d279",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/92dcdbce72b8bd57fd4b7e4e661a9f9e34e815b312df7f0c6e360cd8ef5c9f92.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/94585dca3b71578df4b13fffb9d3090aace323a45c53366a417af49425da9311.gz",
+      "bytes": 929,
+      "sha256": "6588cf57c9fe54d74246ab1044543552b2147b5ce33788827df6bb3cfc9f2afa",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/94585dca3b71578df4b13fffb9d3090aace323a45c53366a417af49425da9311.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.gz",
+      "bytes": 2676,
+      "sha256": "c57bd51ce4e75af515fbf5e7904620229cc4943c2796499393885dc06c30bd4b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/94afdc8d941194ac543626ea6c90461d4fdb2efc334cffa7eab0f101ee06494a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/95cf5ef6aa60eb1f90132fa1275e34eb7d9edd2ead73a8a03400c89f586a111c.gz",
+      "bytes": 20949,
+      "sha256": "a7fe5c2d3b3aaec464a887f456760f2d4a7910eb328a7ddf80fbaef40fffa7e7",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/95cf5ef6aa60eb1f90132fa1275e34eb7d9edd2ead73a8a03400c89f586a111c.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/9ce18a3ae1d424193b2d7c04fd63cb7e2b10987bb0f8e462f8ac409a2c674603.gz",
+      "bytes": 15021,
+      "sha256": "b5519c126dcc62fb8de660e7eb6ca55bef349afa2ae201978152d70d940c3734",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/9ce18a3ae1d424193b2d7c04fd63cb7e2b10987bb0f8e462f8ac409a2c674603.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.gz",
+      "bytes": 6269,
+      "sha256": "b8bc643f2017f875a0834cab778484030a60a01330bbfb99632f02bc9fd19873",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/9d9bd172af73642f9390ddc551ec02209dd66c08318fd96e3264a42b9cc63620.gz",
+      "bytes": 203,
+      "sha256": "746a688d0f121bc5951b7a35265d7a269dd4b17ad0d7b2ff18a8e5cf1930cf90",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/9d9bd172af73642f9390ddc551ec02209dd66c08318fd96e3264a42b9cc63620.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/a1b9837d840b255e580caa43ba725c8577c78785caa8655fb891f5b7382a5222.gz",
+      "bytes": 219,
+      "sha256": "9bb280fa19167a5ceef1aa4acb4bbcc336063c8cf8cdb96fdde5c10662acbe39",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/a1b9837d840b255e580caa43ba725c8577c78785caa8655fb891f5b7382a5222.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/a28dd9b16154962a72eb8b888fddab8a43f48e3582d75980258ed884b07f39df.gz",
+      "bytes": 2125,
+      "sha256": "9d5c1764b602c51d5263e1f540cfc33c906ec254d44c62120e77336c402f1ce7",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/a28dd9b16154962a72eb8b888fddab8a43f48e3582d75980258ed884b07f39df.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/a2de0d409d67f05cf4942ae83a1b781e15f295b2e8925c5657b608ffe29ff1cd.gz",
+      "bytes": 181,
+      "sha256": "64ffefe749881e756656e23adf5ccdbfd1b5f28556e0d32838a298a4f53fe1db",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/a2de0d409d67f05cf4942ae83a1b781e15f295b2e8925c5657b608ffe29ff1cd.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/a42216ef26b03656034ea7be95fee87d7c8f199f733344cb4ee9c27c35960b11.gz",
+      "bytes": 168,
+      "sha256": "42d53f6400494210ce34a796fca51a01e4300e0c3a4de55b3d0984e23e0748b8",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/a42216ef26b03656034ea7be95fee87d7c8f199f733344cb4ee9c27c35960b11.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/a42ff64dcac0353806f5da2c1a331f62aa1939a8cc6501980c7ecc47b372e675.gz",
+      "bytes": 373,
+      "sha256": "814f0e6868fcf0b9b137203f1417a8d853ac57e2e826d064baf1c457631a7896",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/a42ff64dcac0353806f5da2c1a331f62aa1939a8cc6501980c7ecc47b372e675.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/a4645e45dc45329ec6eca2f9d9cbd7133d10a1f202fad51145aa3d8a83f4fbe1.gz",
+      "bytes": 1117,
+      "sha256": "ca32e77e2b8e5b40e5e1cdee10cb4721fbe927dfc1d964ae158f49c0ff21b364",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/a4645e45dc45329ec6eca2f9d9cbd7133d10a1f202fad51145aa3d8a83f4fbe1.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/a4b5ee72b6f1fabb4b7dae4378a1424d30a4ec7c4efdfd343570e83eadc15123.gz",
+      "bytes": 763,
+      "sha256": "73f08120e130928d2e688e1bafe1f1e11694633e5dcdaccce4bae55e9376d769",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/a4b5ee72b6f1fabb4b7dae4378a1424d30a4ec7c4efdfd343570e83eadc15123.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/a53522d6e8995020855e0d0159c217d0554c9971990feb94f98ec3a76c1004eb.gz",
+      "bytes": 19699,
+      "sha256": "79540bfedb47b3b8adfeba107cd9d98a4e17e4db4c08bf5a8c3d575b2266e8e0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/a53522d6e8995020855e0d0159c217d0554c9971990feb94f98ec3a76c1004eb.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/a54dbddc8b8618694d4c66f3c6e146c6f14cd76c30871daeb62b2199a74c5da4.gz",
+      "bytes": 735,
+      "sha256": "fcf46153bff1e0cad05ceb2026c688b3b60b07365580461ecae3e406b1204cd2",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/a54dbddc8b8618694d4c66f3c6e146c6f14cd76c30871daeb62b2199a74c5da4.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/a69a1b741a210013b0a3b4c8ba4c7c03a20ae3778a4fabf989bb0c88cef81656.gz",
+      "bytes": 20042,
+      "sha256": "4d9b9d2c4c79ca017cb1945be3f27fbb17f1affd83fb8af5b68c0e1bf5fe77ac",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/a69a1b741a210013b0a3b4c8ba4c7c03a20ae3778a4fabf989bb0c88cef81656.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/ad53d96e9dbe1bfd59cdd79351dcd103dabf7e00b0ec8a3a8ca06bf6fba30010.gz",
+      "bytes": 3248,
+      "sha256": "d4157a79f3694e9f1b266dea313649a2a4820d61ad37533be3bbf1901d8dd80e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/ad53d96e9dbe1bfd59cdd79351dcd103dabf7e00b0ec8a3a8ca06bf6fba30010.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/ae61bfa5aeafe2b79c3d80a7607bbe06bd628dddb4499c503ea1a1ec1d161ef4.gz",
+      "bytes": 71,
+      "sha256": "6a6374c096a37ca594681ad120bb510fa5d24200694b6c58681efc74627d402a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/ae61bfa5aeafe2b79c3d80a7607bbe06bd628dddb4499c503ea1a1ec1d161ef4.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/b121ec5ee4be29ee0b23be0966f039a9e6a2b0417f3bf7708bf8a4d84848af29.gz",
+      "bytes": 438,
+      "sha256": "5624da025c3aba51e4c598322eb792ec1c92d47925b45b3bffb5d3efb2580fa1",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/b121ec5ee4be29ee0b23be0966f039a9e6a2b0417f3bf7708bf8a4d84848af29.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.gz",
+      "bytes": 1138,
+      "sha256": "f571fb0a6613f5ad7cc7acd08a1f6e8add0a1afb2515213b4cae9326b5eaa8e3",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.gz",
+      "bytes": 1057,
+      "sha256": "a30d8b2734d82ba86592593d7083416dea4deee7ea0fb7a130d721145d6a6ae6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/b2fd4813196ebd9c290aa936ca65c7ac5da19ca50bbc1761c8eca002480902ba.gz",
+      "bytes": 692,
+      "sha256": "6113f8b54568eeac11b87c07f75098b93c5b48ab2d397472e8972245f59d30cb",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/b2fd4813196ebd9c290aa936ca65c7ac5da19ca50bbc1761c8eca002480902ba.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/b49a475807e85c98c8b3b4416e09d7e16e119ae579c884885e4eb052ed1d9205.gz",
+      "bytes": 1626,
+      "sha256": "94000859c7918c13abf2cb68514106a3522accf19d98a1662f41188af2cbbd55",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/b49a475807e85c98c8b3b4416e09d7e16e119ae579c884885e4eb052ed1d9205.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/b4fa41854f61c029c2dd257abb18846f6a5896f8e3c1b26450f711c25e640595.gz",
+      "bytes": 19961,
+      "sha256": "f619f1008902813e139ceefba9a70657ff33383758026ed493be2c8f40a15149",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/b4fa41854f61c029c2dd257abb18846f6a5896f8e3c1b26450f711c25e640595.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/b5c09258079ec93c5fd2c8dc45b1ac46a39879ccf41220def230d525d0628c88.gz",
+      "bytes": 1847,
+      "sha256": "1b16124920c1d9528f1d583c1ce7f9de645e6e106eca478d7ae299f57ee4257b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/b5c09258079ec93c5fd2c8dc45b1ac46a39879ccf41220def230d525d0628c88.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/b62ab8a9b5901761baca4365d2d6c13f8ab9a75aeb90c400e5c8838b1c18237d.gz",
+      "bytes": 1427,
+      "sha256": "3a4797771c5af6783dccc5fcb5d4c50bd7e26043b77af3846b6a75926464e622",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/b62ab8a9b5901761baca4365d2d6c13f8ab9a75aeb90c400e5c8838b1c18237d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/b75448d5552cd17487eb8aad9007e6ce281a406f11eae8e9d8f140d56ec259dc.gz",
+      "bytes": 814,
+      "sha256": "507ec365ee7eef264d25e033d4d785e75688cb5b963cd6a04fd8bfbdd1216c48",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/b75448d5552cd17487eb8aad9007e6ce281a406f11eae8e9d8f140d56ec259dc.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/be25494eeab6df60ec806381f315dda4793edfacf4c93b3ac16d2ee3681f82c9.gz",
+      "bytes": 741,
+      "sha256": "f8b8babeaefcae674efbaad57c041547d7895dc954c21415478636b7219e7065",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/be25494eeab6df60ec806381f315dda4793edfacf4c93b3ac16d2ee3681f82c9.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.gz",
+      "bytes": 2265,
+      "sha256": "876b7b9df04b3c465cf0f6f74d9c2c9cac8e4504de9c2863cd2e1de5c3bb1a5b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/bf73bc392298c55ac1ed5fa6416418905a501d3f689ebdf8959a36eaa8f0b922.gz",
+      "bytes": 5896,
+      "sha256": "eae7878f98a64a5d649bd251398e7c3634dfd24d6e96345ae7d0e69cd71154f4",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/bf73bc392298c55ac1ed5fa6416418905a501d3f689ebdf8959a36eaa8f0b922.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.gz",
+      "bytes": 6504,
+      "sha256": "7d9fd6fd3864af2999ced920fb7cf0565d365b5dc213dd6fbc36cc0a247f57a5",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/c0c872da3952ad48692803ef0e6f9919e34c76604ffb0f96f5af7d7245d944be.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/c0fd9d26e0acf0cb575508921a005d7de59751b495e0a375021a26e07ed4dd40.gz",
+      "bytes": 844,
+      "sha256": "f9a3c77d3d7c86295787f4a92c1fcb81100865b9a24950a2daf05417adf9c2fc",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/c0fd9d26e0acf0cb575508921a005d7de59751b495e0a375021a26e07ed4dd40.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/c58000d7bbd4a8e48faea7ec1dfbb4772b4638ccc25d02a02f159b0f321f26ca.gz",
+      "bytes": 1582,
+      "sha256": "9b19fbdce3c37a7745d8f8daf96cb2b8bdadaf13168a24df3f0c2d0b477f566f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/c58000d7bbd4a8e48faea7ec1dfbb4772b4638ccc25d02a02f159b0f321f26ca.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/c72e8837f6e78c79f8237e35663ac7f5b3ab857ba62628d9a741263e979b2ac1.gz",
+      "bytes": 679,
+      "sha256": "139687c59d6c88256aa9eedeb4d0ab07e68b8aa3f5115945b4bb0da4c022328f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/c72e8837f6e78c79f8237e35663ac7f5b3ab857ba62628d9a741263e979b2ac1.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/c7718889edfba62bfe10fb5e66df2a2f7ce2df3703c53f3f18ba26296bc24a49.gz",
+      "bytes": 19678,
+      "sha256": "e59ecba53b055e6e678a5ec1a94c996220eda3e4f72f64d55b59230217d5dc3c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/c7718889edfba62bfe10fb5e66df2a2f7ce2df3703c53f3f18ba26296bc24a49.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/c7ba200e981427a6310e9402b3c1c34a95c3c95e7b36fd57e400cbd501e49049.gz",
+      "bytes": 3418,
+      "sha256": "bf48088d4f66fe0b9116cf854dfe4873dc118733ca99bf4309eb381a80c44fae",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/c7ba200e981427a6310e9402b3c1c34a95c3c95e7b36fd57e400cbd501e49049.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/c7c9140411e08196857bbc68451c5516b508f9b5b745eafd0af315066962ce3e.gz",
+      "bytes": 6487,
+      "sha256": "684df366bfdf08df73319e163d0c09193dee026412fd55cac049a4626fee7bc0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/c7c9140411e08196857bbc68451c5516b508f9b5b745eafd0af315066962ce3e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/c8239a0fa0c22a408184a1b4e27a417f9ede6e1a450f5ed12ca05058dfe5d1d6.gz",
+      "bytes": 712,
+      "sha256": "6689ed57542361fd661498eb476352781ed8190e243922bfae7e261f06022dd5",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/c8239a0fa0c22a408184a1b4e27a417f9ede6e1a450f5ed12ca05058dfe5d1d6.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/c83c0a586dec9e8b7af5ebfaa63250153832f36930382470cf7d9795218c06c1.gz",
+      "bytes": 19761,
+      "sha256": "5f78556e8d6712c96929e3da9fa32ca63e614a48290cde49a4a031fe52dfe224",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/c83c0a586dec9e8b7af5ebfaa63250153832f36930382470cf7d9795218c06c1.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/ca70eac2a7468a946420a8442adf81e79e924dedfddbf4a0fcc29d1802fb820a.gz",
+      "bytes": 3700,
+      "sha256": "0ede43de9318bddcdecd2a4ab3c8644f4cf685a110bc3e9aa4c914e08a93de4c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/ca70eac2a7468a946420a8442adf81e79e924dedfddbf4a0fcc29d1802fb820a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/caa66c6b28267a5a10e360c56b72ba8ef4d64e69397ed950e8d0fa0d594467a6.gz",
+      "bytes": 763,
+      "sha256": "37d2f0a154dce52a4d3f74d0e3c473a76ef3d72ff1cad0554d3ec72e5091c352",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/caa66c6b28267a5a10e360c56b72ba8ef4d64e69397ed950e8d0fa0d594467a6.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/cacdfbad167b07fec73a554e65f947dc5c2bc485e4d170b2fdcf0b56a216a524.gz",
+      "bytes": 991,
+      "sha256": "9df2167cc638cdf9d360441f51ccb2ed0444d4b5a46555ade63723f07f918716",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/cacdfbad167b07fec73a554e65f947dc5c2bc485e4d170b2fdcf0b56a216a524.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/cb30feb0521034f43647ee18050a75eaa0534de1540c55090df3e583ed86e8bc.gz",
+      "bytes": 19760,
+      "sha256": "0462cd1a9366ee03ac3986230546eb2dda2870118238cac9c651081bad95e54b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/cb30feb0521034f43647ee18050a75eaa0534de1540c55090df3e583ed86e8bc.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/ce248bb955b5e2d1d51a5a599a8a1da94b676a8d05d44bc4ff5854b538400f27.gz",
+      "bytes": 854,
+      "sha256": "84dcd2e65513507677fb3f00af721d1e260d7d181d119879a6938d4fbfa8e5c4",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/ce248bb955b5e2d1d51a5a599a8a1da94b676a8d05d44bc4ff5854b538400f27.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/cf0dc306ca310dd3e72fbaec9116ceafc5951ad113552a5b5736af8e71703220.gz",
+      "bytes": 716,
+      "sha256": "6289bf12770148c5f9c4cda1a5ffa5d641efa81bba46304be46670950abe99c6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/cf0dc306ca310dd3e72fbaec9116ceafc5951ad113552a5b5736af8e71703220.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/cf94c5fa7e30e937101cf050d32dbf8028bf78690e590166e86ed5c2934c954e.gz",
+      "bytes": 10654,
+      "sha256": "ce805160d520936d491ab850007763f2b4ea1192193f8e1f0adb03cf3d7fa96c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/cf94c5fa7e30e937101cf050d32dbf8028bf78690e590166e86ed5c2934c954e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/d2b630d6105bd50a67f0b6436377da12fbe54ff70af24ab2709c9f5eb6d998ff.gz",
+      "bytes": 435,
+      "sha256": "27fe955edf7682b9c66dbc9958d44c32f6320519f215cc54c870686cae8a0dea",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/d2b630d6105bd50a67f0b6436377da12fbe54ff70af24ab2709c9f5eb6d998ff.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/d418930627053fd6166f3ca34605af2e96266f20fa8d9e335b62acb440a831c2.gz",
+      "bytes": 1424,
+      "sha256": "dbecae2b8ccc5c59d5008e387f15b1fade3926d23d7b5aa47c657642c51ba31c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/d418930627053fd6166f3ca34605af2e96266f20fa8d9e335b62acb440a831c2.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/d72ce3f82d94a25958a15525665ffad3e1ee3dd761bda59027dbb4bb29251272.gz",
+      "bytes": 1326,
+      "sha256": "0f2d7845d2ed865ab9a67ae77980ff79c48971ef00597acc31e5e1eba44157ab",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/d72ce3f82d94a25958a15525665ffad3e1ee3dd761bda59027dbb4bb29251272.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/d8287b020c2be476670e29a8ff69eed26326c08f98917cca67e1abc0225c3384.gz",
+      "bytes": 1590,
+      "sha256": "4ffaed8b73d104392af0078a07e996ed876c1c983a346b53f9bb850c5ead0519",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/d8287b020c2be476670e29a8ff69eed26326c08f98917cca67e1abc0225c3384.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/dafe36860eb8b0c523b1a34e432c2e178c14ce9423b2b0b5502924c8258e5bdc.gz",
+      "bytes": 838,
+      "sha256": "e81cabdca39df07e8739e75477a50b3ad4dd4698a58c255119f3d92c7ff8f775",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/dafe36860eb8b0c523b1a34e432c2e178c14ce9423b2b0b5502924c8258e5bdc.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/db3edfbea71844c8f82174dde6811f8e50286856ccedd94676ac24f85ad5c542.gz",
+      "bytes": 766,
+      "sha256": "0ddbc04de04bead7fde55dd19e10b835e743143c5048f794bc8b0f4973769426",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/db3edfbea71844c8f82174dde6811f8e50286856ccedd94676ac24f85ad5c542.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz",
+      "bytes": 4601,
+      "sha256": "fbfa023afecaf284a743b1c41200f3d32881107e48640f96836bc9487a2a5cf9",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/dd7f8719b0c66f31e1aff19b8fa25f396f3638be2403c0269781e10e67949d4e.gz",
+      "bytes": 1234,
+      "sha256": "d76f0832886daf219f9cc53871cf5dcbe2224c0e148f6e56008e6c82a2551a3a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/dd7f8719b0c66f31e1aff19b8fa25f396f3638be2403c0269781e10e67949d4e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/dd8f40c06c4d2a72542a94a676d0d91e0d5993b2485b57b8675f5092fdfa23c9.gz",
+      "bytes": 802,
+      "sha256": "dbd3ea9d3ec6b9be8a0726b9eb0bfcda735840cf9fb2597ab61466f992234f73",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/dd8f40c06c4d2a72542a94a676d0d91e0d5993b2485b57b8675f5092fdfa23c9.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/de1150bed41c341e786f03ce3ec9f8a9912ab7f1d34c3a4a692176e805517fcc.gz",
+      "bytes": 717,
+      "sha256": "d3e7171b70b3c025c9a8895e4beea402bd5da575aed50640602813a3c8e7f57e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/de1150bed41c341e786f03ce3ec9f8a9912ab7f1d34c3a4a692176e805517fcc.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/debded7d48d2bf0f361db5841d184bfe40cdd4f4ba95d2bfb7c4a715b8b590f0.gz",
+      "bytes": 2944,
+      "sha256": "010003c0e7db028e08f4f5c77ed4e4093db6d833d138e71d6be4510ae7c0bd5c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/debded7d48d2bf0f361db5841d184bfe40cdd4f4ba95d2bfb7c4a715b8b590f0.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/dfdefccc86d7b58eccfd3a6e8d44f204bd382eaaf5e21df2831097add4e1e3d0.gz",
+      "bytes": 748,
+      "sha256": "efff6535ba5ed016bbece1467bd20f2250b0daaf1488d617fe71e9c28d53376e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/dfdefccc86d7b58eccfd3a6e8d44f204bd382eaaf5e21df2831097add4e1e3d0.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/dff055c0432c30c899008470f1831144bb394e513a272544e43441e75e23d556.gz",
+      "bytes": 162,
+      "sha256": "5f17bca42ad209f5de8a2da2ee231851ec148c86ed990bf50a358369d62761c6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/dff055c0432c30c899008470f1831144bb394e513a272544e43441e75e23d556.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/e044280172064ba61397cf82af54b216165c87f2b57e2a9b000fc0354ab375c8.gz",
+      "bytes": 703,
+      "sha256": "9b0fb915701f528d1193e24488b01dde3cc90da8366d90a215e1843e25f806f7",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/e044280172064ba61397cf82af54b216165c87f2b57e2a9b000fc0354ab375c8.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/e1166672cdc259ec62a49ce465a36bb1619ede606e0a8ac7b70133058381c85d.gz",
+      "bytes": 5383,
+      "sha256": "6bae444f4f36efaf10fd2dd1aed2f40f6372c09316f446fdda8fdb4992e982f8",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/e1166672cdc259ec62a49ce465a36bb1619ede606e0a8ac7b70133058381c85d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc.gz",
+      "bytes": 6972,
+      "sha256": "50a92ef72e23effe7381c4731734faa5f3a6677d0357b719914d0beca7422eb0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/e54a501adbfba4c00c4263d038cba8fa394805f9ef436361c83aa28161c39cbb.gz",
+      "bytes": 716,
+      "sha256": "ad3385171d1e44e7fdedb581f41629a40984fb121d8de892013e3fea82444f03",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/e54a501adbfba4c00c4263d038cba8fa394805f9ef436361c83aa28161c39cbb.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/e72fc19ce2526ed522255cc8a28fdf61ac97579d70990d62dbe6ebf3179e00f5.gz",
+      "bytes": 193,
+      "sha256": "a97c7850a90dafe8750d5eacee5d965c64f6d68196af7b36b6071156d9dcc3ba",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/e72fc19ce2526ed522255cc8a28fdf61ac97579d70990d62dbe6ebf3179e00f5.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.gz",
+      "bytes": 2509,
+      "sha256": "bde06cd28ea6b1f7ed4468687b99b794b7d04f458f8e10eaa18f13eb57d7bda0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/e89399865add08546caf81edb9557aed3848826e883efd9ddda0847bab923a42.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/ebb8f42fb0f2c25e44967f6335a3aa8eb3a7fd2a159c308c3aed16c7e1b074e0.gz",
+      "bytes": 431,
+      "sha256": "78d8a3e034eba7b65b39349b272245e6b62a04103505a9b9eee7e2f9ec8b3bc8",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/ebb8f42fb0f2c25e44967f6335a3aa8eb3a7fd2a159c308c3aed16c7e1b074e0.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/ecd423576e6e9abf52c117aebfcb8cf765503c8fe8024757e5097f84e8a49446.gz",
+      "bytes": 163,
+      "sha256": "6f91c31c346ad36b0e5cb5be3b1c977f309e2742ce6ee37870945ff66a05044f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/ecd423576e6e9abf52c117aebfcb8cf765503c8fe8024757e5097f84e8a49446.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/ed6d09efdf90744d1d707922bb8ea13e9e6e1557183b412da31bdd8d5e8b4366.gz",
+      "bytes": 648,
+      "sha256": "9e6c8286ad7d30fa8e30647ec77b0de61f56a9c88b72f7d449ec02dd9fb753ca",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/ed6d09efdf90744d1d707922bb8ea13e9e6e1557183b412da31bdd8d5e8b4366.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/eda771e7f306b42af5db1770bf37826d46dd8980524bbc0ad3c24d512c26c1d7.gz",
+      "bytes": 1040,
+      "sha256": "46426c5c80d6afac4fc5d7321756e28c54b0e8eede4ad073a64b0511ab0e4ff5",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/eda771e7f306b42af5db1770bf37826d46dd8980524bbc0ad3c24d512c26c1d7.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/efcf3ea4ecf4f3209317de70267f31dedc4f173a13f16140fa9c4e9c9bce8690.gz",
+      "bytes": 1053,
+      "sha256": "4db285ce61846174aa88789d3e893ccffebfe3736b60b1db50effdff4600eb2a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/efcf3ea4ecf4f3209317de70267f31dedc4f173a13f16140fa9c4e9c9bce8690.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/f23040d9d49962400e853a525d101b6c16892f488e0b0ba6facc17dfe75a0db7.gz",
+      "bytes": 267,
+      "sha256": "55e6ac4e2c9e625d0805ee799f5802d842d1a12727106f88eb1383188b5161f5",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/f23040d9d49962400e853a525d101b6c16892f488e0b0ba6facc17dfe75a0db7.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69.gz",
+      "bytes": 2513,
+      "sha256": "0fbed60a117a60bbeda5ad780e5194013847c1f9ae00ad7be0d5b48458e606a6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/f2783fc7f80b5601b7f88a1b21926dee01be8e92d62675bfb42a31500319703b.gz",
+      "bytes": 1392,
+      "sha256": "4e53a5c6df1d687c79df7f83db90643e2d88c89858da39f61a8ca6de021270c6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/f2783fc7f80b5601b7f88a1b21926dee01be8e92d62675bfb42a31500319703b.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/f58e3483243e6382183e61d8b71c6fbed22befc98aac4c8090fd636ecfdb500f.gz",
+      "bytes": 3021,
+      "sha256": "d36b7a609f77d2b2f81d68ea15f839d84c542d03e8322c59ad62ff4bc9c33d4a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/f58e3483243e6382183e61d8b71c6fbed22befc98aac4c8090fd636ecfdb500f.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/f74d4c6b71e1845c79aecd6f8df8632419ee138c505de9d12b1806696cc7347d.gz",
+      "bytes": 1423,
+      "sha256": "7b52bed4bada1f167931b4a113bc2b45a63dec1e520ee8703a857344fc8424ba",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/f74d4c6b71e1845c79aecd6f8df8632419ee138c505de9d12b1806696cc7347d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/f8b40097be14677d7eb7fa048e0aff370db66612f9b2a4b1ac628753cafc3839.gz",
+      "bytes": 1582,
+      "sha256": "2674868805579fd894a7523bcf65d5289887ba707f271c61fd8f72df10772555",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/f8b40097be14677d7eb7fa048e0aff370db66612f9b2a4b1ac628753cafc3839.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/f920cd32d809e93a90fa0569b3c6e966a1edb39b0759e94bd78aa6d96bbc2401.gz",
+      "bytes": 20278,
+      "sha256": "703ba30463148b71b849c83194813153fa40bd0789bb22d389cb1c2dc92b667e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/f920cd32d809e93a90fa0569b3c6e966a1edb39b0759e94bd78aa6d96bbc2401.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/f930b5cf7aab91edf5d13a905f0f8b26eb4aa7386b16d62b5d8a37390bd0d7c6.gz",
+      "bytes": 861,
+      "sha256": "1ab77c9fddb180631b41a38270121f6d44056e01d63a2ae2ec372ab0f1e7125b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/f930b5cf7aab91edf5d13a905f0f8b26eb4aa7386b16d62b5d8a37390bd0d7c6.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.gz",
+      "bytes": 724,
+      "sha256": "9a5d00b438843618ce8d0d97e694f89629e79422a8c66227019b3225391779bf",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/f9a7b41213cee9ff0b7e9a28f79b555c152de52ef012ff3bcdd09b996d3aa32f.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/fac1e8c6c33a639127e4befac10092ed56508634b8790bf7991a6e95674aed1e.gz",
+      "bytes": 634,
+      "sha256": "1325afd8bf6828fd33537a286930a85a20b1b5d1bff1cdc2397f1ddef52933ad",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/fac1e8c6c33a639127e4befac10092ed56508634b8790bf7991a6e95674aed1e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/fb5f43fb7bdaaf1916e8f1e7fd5fad8172484bfd6acdd3f49c35ad10680c58ba.gz",
+      "bytes": 1803,
+      "sha256": "8a21ad4a927edf96a0b493a9ddda51344f1332797829eeb738ab846ea54b13f2",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/fb5f43fb7bdaaf1916e8f1e7fd5fad8172484bfd6acdd3f49c35ad10680c58ba.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/fcdbd839b455b65af4b00c40600a1df730a955fd84006d0326690ef162183188.gz",
+      "bytes": 5368,
+      "sha256": "beed3dfc8d58054da8790adbe099a904f6068c1cb68f47563a722945a7952f37",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/fcdbd839b455b65af4b00c40600a1df730a955fd84006d0326690ef162183188.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/evidence/fe63bb6847eb8dddf5f0f139d2e3d3b2a594ea1166992d1584c88bc04380f319.gz",
+      "bytes": 72,
+      "sha256": "bdfc5edc8028caa92de176a75936601875666bc458e7dfabaade795327ef8558",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/evidence/fe63bb6847eb8dddf5f0f139d2e3d3b2a594ea1166992d1584c88bc04380f319.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/formal/FalseControls.lean",
+      "bytes": 613,
+      "sha256": "1d3ec0d356e013ffa695f713a2e37be1c25dd3ff4c54651aadb7728b67493541",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/formal/FalseControls.lean"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/formal/MassThreshold.lean",
+      "bytes": 3105,
+      "sha256": "02f8dec4d063918add2fc65e321d7885c149228386ec3bd86544a59cb3d8762c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/formal/MassThreshold.lean"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/formal/MissingCrossTerms.lean",
+      "bytes": 307,
+      "sha256": "0c7702fd406fccafb2cab74b2e40222dc359c171dac6e6eb2a89ae9a69e4996c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/formal/MissingCrossTerms.lean"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/formal/MissingEnergySign.lean",
+      "bytes": 304,
+      "sha256": "466df8d106f30f6f037535ab56bf19d4e2d19e055f8007a39e449e723b70d804",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/formal/MissingEnergySign.lean"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/formal/README.md",
+      "bytes": 3928,
+      "sha256": "a4cdd375c1c09649e89410113f6a513ae0289eb68ece3b423505422ba478275c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/formal/README.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/formal/SEAL.json",
+      "bytes": 11275,
+      "sha256": "6111146a3c54b186a55bfd7c565e1b8478402d952793ab2f1e8b2687d921de31",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/formal/SEAL.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/052d1417f1443c6d752e1b00cb87f058d018ad1e22dbd0c3c4c6b01fb84c981f.gz",
+      "bytes": 2607,
+      "sha256": "432c51a6bdf66a77e9c73f3a8a72fe2bbca71b54c3f3a2ea1f27500a1a2c487e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/052d1417f1443c6d752e1b00cb87f058d018ad1e22dbd0c3c4c6b01fb84c981f.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/0de376395a399f978ea245fe736d65ee3acf5254e10f94dc3e2ca0ec9d234130.gz",
+      "bytes": 957,
+      "sha256": "942fbeb39b18412137442b2749761c8195ae95d63b94786d1daf0a46415e7a69",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/0de376395a399f978ea245fe736d65ee3acf5254e10f94dc3e2ca0ec9d234130.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/102289bfbee6df8018dde5e1c6cd15300503ff11642183234b19385c2d46d380.gz",
+      "bytes": 424,
+      "sha256": "7b4c60764dff783fe6e187b060a7247a2e650e6a316dd354ec0f79e5aa4a19fc",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/102289bfbee6df8018dde5e1c6cd15300503ff11642183234b19385c2d46d380.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/1059440d0c7bde363f7a4aa6e71289341e9cec1997efa9dcf748bc8f421affbe.gz",
+      "bytes": 21840,
+      "sha256": "513a58f5799b08b68bdac5806321f3eea4ab33d9de265650a07cf4fe1a8a9ecf",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/1059440d0c7bde363f7a4aa6e71289341e9cec1997efa9dcf748bc8f421affbe.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/1767f329cffd5146320032197ea5d9c1341eb6c923ca33074e0660c6161d31b8.gz",
+      "bytes": 1630,
+      "sha256": "27a1868e0cff200e84f700458691baf41541b2ee332279b922aa6ebc4387cf6a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/1767f329cffd5146320032197ea5d9c1341eb6c923ca33074e0660c6161d31b8.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/23b78f943f3fec110d52a3d104b6e28cc2fa17a074479208a2945089269ffff3.gz",
+      "bytes": 336,
+      "sha256": "e9ecc8a521e41d327172ffa4bb69572346bd06b15878b9f19b01d7dd7afa14d2",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/23b78f943f3fec110d52a3d104b6e28cc2fa17a074479208a2945089269ffff3.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/2748d375cfbbd53527bfaaf35b60be1a459895ac22486c25aa38fdb5171bd50e.gz",
+      "bytes": 850,
+      "sha256": "1c2c44c6f5b161a69eb3421312b269447d95b9aa13a77020b817554b26e5e605",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/2748d375cfbbd53527bfaaf35b60be1a459895ac22486c25aa38fdb5171bd50e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/2ad6e003643f9647cdc0f67ae9b76f26186cd4ae6bddd0efdf0c57e0c1fb3816.gz",
+      "bytes": 12508,
+      "sha256": "a205c9429dec6ad5f9e4e776a3413f6bb02008eaa7c78b487e29540a12c56fa1",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/2ad6e003643f9647cdc0f67ae9b76f26186cd4ae6bddd0efdf0c57e0c1fb3816.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/37fbbc1322c169de22e551e7d6d16aefbaacc8541f76693c447d99e1a22a62aa.gz",
+      "bytes": 1466,
+      "sha256": "d0d0156ae49e067ed13733617dd521ba13d09bf7514a18a360292f5a9eb568a2",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/37fbbc1322c169de22e551e7d6d16aefbaacc8541f76693c447d99e1a22a62aa.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/3b3f1f9bc48f0cb9b50857d6a9955c57337adc9d3c4153748354e0d913031638.gz",
+      "bytes": 970,
+      "sha256": "f24b5f53e8b6a69c8815c32f257c3bc40ed09e6e20b6a871ed5749bad233f94e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/3b3f1f9bc48f0cb9b50857d6a9955c57337adc9d3c4153748354e0d913031638.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/3b51a2821bd5889ac71d85278818bd12159a9f8b3815543b1aac3d70182ab667.gz",
+      "bytes": 9679,
+      "sha256": "4dd28011702ccbb35b6e13d6d713a6b8b87494efebb69ae5cea93f7008845553",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/3b51a2821bd5889ac71d85278818bd12159a9f8b3815543b1aac3d70182ab667.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/43b0fc70883dfa2281957ba57395fd22440cb6f345026fbfcea92bd0c288e500.gz",
+      "bytes": 10189,
+      "sha256": "fa67574e4a9894491143ba8659336b999a2c685c5ab633718f444712bb4c1595",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/43b0fc70883dfa2281957ba57395fd22440cb6f345026fbfcea92bd0c288e500.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/456370861891b336240cef8e263efda1bd4ea168173604b6b9ac1859b683928a.gz",
+      "bytes": 84,
+      "sha256": "d56f851329932dcf6c1145747575bdd70b4ee99de1777484fb1e72647924d710",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/456370861891b336240cef8e263efda1bd4ea168173604b6b9ac1859b683928a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/486d62a30d1bd9f5117cf01b91947e3adaf9ba27c3527d78f5647d2ff913fc8a.gz",
+      "bytes": 1690,
+      "sha256": "d341856478d624b617b165c4d37163657447081c6bbe31701da436cc34ab21d1",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/486d62a30d1bd9f5117cf01b91947e3adaf9ba27c3527d78f5647d2ff913fc8a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/4e5220eabe1b1527ab6ba71d3980bea974b085a7d203fefe70420376e55dcfc5.gz",
+      "bytes": 20476,
+      "sha256": "99ba2d73dc2212c93ed857caed626b89c1e12ea11e22604a7f900b5dffa43db6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/4e5220eabe1b1527ab6ba71d3980bea974b085a7d203fefe70420376e55dcfc5.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/5d11caf658511ef21cdc14dd21c65ec8e1b1470fdd26834b49909fcd321b2a35.gz",
+      "bytes": 799,
+      "sha256": "28c270415c58238f9d2aae961792e543f4b4fe630b30cc7b6041261028888133",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/5d11caf658511ef21cdc14dd21c65ec8e1b1470fdd26834b49909fcd321b2a35.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/60ee337b597018c72bf4c76ca1a4388faad1fa445a03f388f31c8f88ac93145d.gz",
+      "bytes": 241,
+      "sha256": "4e205cd96d5263153c7dea9f033dbbf215c3d1d5ecd6e0c28f1552054a0b088b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/60ee337b597018c72bf4c76ca1a4388faad1fa445a03f388f31c8f88ac93145d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/66e63d615a59c7e3e0b6efb45b807eaa275972c4882acdc19977e8708a41cb62.gz",
+      "bytes": 379,
+      "sha256": "c2650cee72c1f76b93fdba948ff770c1da3699d520e8be21f29e5fa65c9b57b6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/66e63d615a59c7e3e0b6efb45b807eaa275972c4882acdc19977e8708a41cb62.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/6a89294c18ddaac7f3354e6cdd76898f26d67e94d31ea131ab95ffa1c0157ed8.gz",
+      "bytes": 155688,
+      "sha256": "1a2acd8b35c30240dc5e6e53d03eab0400477eb17c886037a5674860643d9b84",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/6a89294c18ddaac7f3354e6cdd76898f26d67e94d31ea131ab95ffa1c0157ed8.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/6d94f3273df9478209a11e590e815a3b4afd8d5eeba826ff11c4366d29a1a0d7.gz",
+      "bytes": 1661,
+      "sha256": "60f54002f62ff934a69c5f52410579f4ad70b7a58fab72f70c58688f90054cea",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/6d94f3273df9478209a11e590e815a3b4afd8d5eeba826ff11c4366d29a1a0d7.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/6f06e10428cf50b17e29808cd52a53e4d81fa5cc8b90cc5f4d71bdaa356d4bee.gz",
+      "bytes": 3117,
+      "sha256": "02101cdd6b98ba9800623b0e5b9ed5876f0b9baf26bf12b94d67f63f4e9c3ce7",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/6f06e10428cf50b17e29808cd52a53e4d81fa5cc8b90cc5f4d71bdaa356d4bee.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/7d241d88fdd566eaa4ae20fb0112f8c6897d73eba7e8469cf67403d9382f9e81.gz",
+      "bytes": 1744,
+      "sha256": "76c5ae61c04abb16dedded90f2d55ba9cae70e18367cfc61e2c8151b808f5ee6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/7d241d88fdd566eaa4ae20fb0112f8c6897d73eba7e8469cf67403d9382f9e81.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/7f4150c65d53d3b5eba716b9e112698fd1dd56254aa6a55a6502a582b98422d3.gz",
+      "bytes": 15876,
+      "sha256": "f1b2992db322ff2c2aee1a491c014fd8dc59a33bda83d56dcc30e8a315f6c7fa",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/7f4150c65d53d3b5eba716b9e112698fd1dd56254aa6a55a6502a582b98422d3.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/9cecec83882255404a0c7d0d20b3c56ba417b4cd06cf24886b3a91c8d6480aa2.gz",
+      "bytes": 2639,
+      "sha256": "31f24663e838084f5557621b4345e037f18ed41bdb5e57d06f920af62fa6a05d",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/9cecec83882255404a0c7d0d20b3c56ba417b4cd06cf24886b3a91c8d6480aa2.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/a173199af167b9033686a5116782a94e289b9fed40dde902b508c6ed31f83c26.gz",
+      "bytes": 799,
+      "sha256": "6952d30e7610f3a14d9caadcf158f60322e3e2446cf64c55b6eca8f7bb8878d0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/a173199af167b9033686a5116782a94e289b9fed40dde902b508c6ed31f83c26.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/b81c0ddd583c8a2f2f83d4e910d5ebd78f3302d6447a8efe26bf434166ddd00e.gz",
+      "bytes": 1931,
+      "sha256": "a1e58bdb0b9e24b9489b80fac0e0e98eac1cf52ffb56cabee9800ffb56e7b3a7",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/b81c0ddd583c8a2f2f83d4e910d5ebd78f3302d6447a8efe26bf434166ddd00e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/c125bc9f8675d81f0ffa53b091c715821d77f256da6beda5ec9f9650ef7a8828.gz",
+      "bytes": 1990,
+      "sha256": "f033b8ecf0d3178cf42a2d64e59e1e37983947bac747b6b79aa1d892d77b87d4",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/c125bc9f8675d81f0ffa53b091c715821d77f256da6beda5ec9f9650ef7a8828.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/c61990530790e3d76893322d2cfe35251e1f9eef918edf4290186270b4915e2f.gz",
+      "bytes": 1364370,
+      "sha256": "bcc1cc9597feaa7e983ebeeaa6d27155040e1cfdf074b4c03eca5c743605c5b6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/c61990530790e3d76893322d2cfe35251e1f9eef918edf4290186270b4915e2f.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/e4559cb7eb21f722f9a241b28de8755d13ba814ae3bc22ea52e09f87b95056c8.gz",
+      "bytes": 2198,
+      "sha256": "34576f7ed2c79469bb5d308abec6d51a48f1a3244387dcc9930ec0cc85dd43df",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/e4559cb7eb21f722f9a241b28de8755d13ba814ae3bc22ea52e09f87b95056c8.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/f55a1014e4fa3e67340c785879305e43a7cc74a80187394b596735c748d3102e.gz",
+      "bytes": 1212,
+      "sha256": "3bb47bd6f5ebffc7303ad2ec0e8203cc69c38944620974997f4bf7d3a67c870b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/f55a1014e4fa3e67340c785879305e43a7cc74a80187394b596735c748d3102e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/fa86da8578d5a907dc3040e21976a9ebcf09a19d24e3b7692f56ec9c616110a8.gz",
+      "bytes": 1422,
+      "sha256": "5d9298a534465bd77d49bb38ca7c8bca3ccc7cd46fc5494a3223deddab75f8a5",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/preparation_evidence/fa86da8578d5a907dc3040e21976a9ebcf09a19d24e3b7692f56ec9c616110a8.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/reconstruct.py",
+      "bytes": 3191,
+      "sha256": "f55a1014e4fa3e67340c785879305e43a7cc74a80187394b596735c748d3102e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/reconstruct.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/runtime/08c576193c06809331caa71657f9376f9c733c4e562b0de6b37577f8a73e7560.py",
+      "bytes": 1706,
+      "sha256": "08c576193c06809331caa71657f9376f9c733c4e562b0de6b37577f8a73e7560",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/runtime/08c576193c06809331caa71657f9376f9c733c4e562b0de6b37577f8a73e7560.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/runtime/37aec0d0579e9d262ee9ac88e064ab601157e6434980c18497471f5f4e9d3e3f.py",
+      "bytes": 1701,
+      "sha256": "37aec0d0579e9d262ee9ac88e064ab601157e6434980c18497471f5f4e9d3e3f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/runtime/37aec0d0579e9d262ee9ac88e064ab601157e6434980c18497471f5f4e9d3e3f.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/runtime/45370c5d495b50eb0dbdd7bbec603117ab3d9692389e876618a99c4dfaecf327.py",
+      "bytes": 1694,
+      "sha256": "45370c5d495b50eb0dbdd7bbec603117ab3d9692389e876618a99c4dfaecf327",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/runtime/45370c5d495b50eb0dbdd7bbec603117ab3d9692389e876618a99c4dfaecf327.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/runtime/5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1.py",
+      "bytes": 15147,
+      "sha256": "5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/runtime/5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/runtime/6296e5cb5c78ed4ed3fe55a3a2542db19b35f8f3037591e71e9d09b90a02f947.py",
+      "bytes": 1702,
+      "sha256": "6296e5cb5c78ed4ed3fe55a3a2542db19b35f8f3037591e71e9d09b90a02f947",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/runtime/6296e5cb5c78ed4ed3fe55a3a2542db19b35f8f3037591e71e9d09b90a02f947.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/runtime/65a13777ab07ae2aa2842a20a801447f8fe655d54a22bd3a9d90ad93158ec0b9.py",
+      "bytes": 1684,
+      "sha256": "65a13777ab07ae2aa2842a20a801447f8fe655d54a22bd3a9d90ad93158ec0b9",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/runtime/65a13777ab07ae2aa2842a20a801447f8fe655d54a22bd3a9d90ad93158ec0b9.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/runtime/6832091c0d3f3a979ab7c10574c43386bd2491f9ab8547466757c4d581e0ed29.py",
+      "bytes": 1690,
+      "sha256": "6832091c0d3f3a979ab7c10574c43386bd2491f9ab8547466757c4d581e0ed29",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/runtime/6832091c0d3f3a979ab7c10574c43386bd2491f9ab8547466757c4d581e0ed29.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/runtime/a4b5ee72b6f1fabb4b7dae4378a1424d30a4ec7c4efdfd343570e83eadc15123.py",
+      "bytes": 1702,
+      "sha256": "a4b5ee72b6f1fabb4b7dae4378a1424d30a4ec7c4efdfd343570e83eadc15123",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/runtime/a4b5ee72b6f1fabb4b7dae4378a1424d30a4ec7c4efdfd343570e83eadc15123.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/runtime/caa66c6b28267a5a10e360c56b72ba8ef4d64e69397ed950e8d0fa0d594467a6.py",
+      "bytes": 1702,
+      "sha256": "caa66c6b28267a5a10e360c56b72ba8ef4d64e69397ed950e8d0fa0d594467a6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/runtime/caa66c6b28267a5a10e360c56b72ba8ef4d64e69397ed950e8d0fa0d594467a6.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/runtime/dfdefccc86d7b58eccfd3a6e8d44f204bd382eaaf5e21df2831097add4e1e3d0.py",
+      "bytes": 1646,
+      "sha256": "dfdefccc86d7b58eccfd3a6e8d44f204bd382eaaf5e21df2831097add4e1e3d0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/runtime/dfdefccc86d7b58eccfd3a6e8d44f204bd382eaaf5e21df2831097add4e1e3d0.py"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/011d42037d2d01722960a14443445be0ec3b9c42f216590c6bdb4bde971c463c.gz",
+      "bytes": 40391,
+      "sha256": "1cd6cb5046e030598a685a62fd3ce347fe56d5c90724686a073edf66081e3539",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/011d42037d2d01722960a14443445be0ec3b9c42f216590c6bdb4bde971c463c.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/09d6ea38528ed5f3152c0acad82b770017ee260c01f95a76b137f0d996aaaa1a.gz",
+      "bytes": 599,
+      "sha256": "515a33c7391ced3cc31132292fc466ac84ed684277f433a0f309e1011893fea1",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/09d6ea38528ed5f3152c0acad82b770017ee260c01f95a76b137f0d996aaaa1a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/0c09cfd00cd7f84393421404f98e92183823e3fb2e7a858fe8a0284bb4a5387a.gz",
+      "bytes": 600,
+      "sha256": "fc46f148fd9f238ded7748ab3f288569f53acff74bb75194cd728f559546fbc5",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/0c09cfd00cd7f84393421404f98e92183823e3fb2e7a858fe8a0284bb4a5387a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/0e1167f33cde6dfc47d1b0e89717adf23ab095ce97c74d779fa29b2ed34d6e7a.gz",
+      "bytes": 41158,
+      "sha256": "e04402eedfb5f2903a2d3db9d1bfc4082f044a889a98ddaabce05eb4e951dc6e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/0e1167f33cde6dfc47d1b0e89717adf23ab095ce97c74d779fa29b2ed34d6e7a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/0ef3b5c143879c7546dcff6277171a6399eead2fe3d60a0e7d262a0d3cd30a0a.gz",
+      "bytes": 600,
+      "sha256": "1d688f06ff172820989e130b6a568a16f5f949462db3e7268ee325d0743ee1ae",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/0ef3b5c143879c7546dcff6277171a6399eead2fe3d60a0e7d262a0d3cd30a0a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/124f92bc185da044bbbfc363034c9214ea991ee516a9b66594bba286a6f3085f.gz",
+      "bytes": 40227,
+      "sha256": "c3f06d1a7e44672da4bd91a2acfe120f74a0b1961410eba20ba6beec39d90810",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/124f92bc185da044bbbfc363034c9214ea991ee516a9b66594bba286a6f3085f.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/135159051b05563441517addbac436cafbcdfcad6b7a5218160cb96cdb8295e7.gz",
+      "bytes": 228,
+      "sha256": "b0a706dae9b33944aba252348cb39afafe6041720a59ce4ab38f5643a6c80eb3",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/135159051b05563441517addbac436cafbcdfcad6b7a5218160cb96cdb8295e7.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/171eb73d8b5f4ae5874f0391d09edb81be977bfbd0ef402f3c43105b28967e66.gz",
+      "bytes": 721,
+      "sha256": "da392754c636e2fcb0959fd06b63075e55ade4652f00b0bda3a08e6caf67c48b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/171eb73d8b5f4ae5874f0391d09edb81be977bfbd0ef402f3c43105b28967e66.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/173f54b4ab7f7d361c9f95355fbd00fd968b18cca8044e4f167f4328c2f8b7bd.gz",
+      "bytes": 40252,
+      "sha256": "04830a483642f8a60bccb70cb46ba4b72a84464e44fa75f058e7911a91038110",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/173f54b4ab7f7d361c9f95355fbd00fd968b18cca8044e4f167f4328c2f8b7bd.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/17dd3ccc7fcdbbda23e5cf59a99fe438df11ae44a696e7440fd4a6bc8b6c5cb7.gz",
+      "bytes": 40135,
+      "sha256": "f78112516277dd193d7a6c6a64795d4a528a5906e754c9f55b881fd78096f5ab",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/17dd3ccc7fcdbbda23e5cf59a99fe438df11ae44a696e7440fd4a6bc8b6c5cb7.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/2064c228c4e5ff0cb5fc71ce03c57630b82a32dbbc301c9453c3b29d829fb742.gz",
+      "bytes": 19591,
+      "sha256": "32c5e0ce0a986c3339e8d498d9ea2ee34f172a6c6dcb44d9b094ef709590e460",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/2064c228c4e5ff0cb5fc71ce03c57630b82a32dbbc301c9453c3b29d829fb742.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/306fea104f652217b9571041667a9f5ba4535222ba623acfca32c93757ddc606.gz",
+      "bytes": 94,
+      "sha256": "2546e972533151924cad7a0371d6bec618c16cc81e836a85eaa4c82cc5e320dc",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/306fea104f652217b9571041667a9f5ba4535222ba623acfca32c93757ddc606.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/398f77ee67fb3647d1a78e1cb0831a1adfb4b2c5dc2669881eb77c7abe6028ca.gz",
+      "bytes": 40886,
+      "sha256": "d79f55ee5bdc9d58dfe4e3d5c56e89f97e47505cdeabda83d63b7c823588b29e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/398f77ee67fb3647d1a78e1cb0831a1adfb4b2c5dc2669881eb77c7abe6028ca.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/39a7e498c0c3b0b137eb25d61eedfd9429c4e216975ab4f14634971ad2a3f48f.gz",
+      "bytes": 224,
+      "sha256": "52a7e4fdf527399c4ec39c426ba18bac9323cdd126cc8c1604281e6b95cd2535",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/39a7e498c0c3b0b137eb25d61eedfd9429c4e216975ab4f14634971ad2a3f48f.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/3ebce888468d6c5436ff918b6bd181c1c124606cfac668f94c547b425f4035d4.gz",
+      "bytes": 563,
+      "sha256": "806be59cf845f0153d6542b197dcafc0a760f1cbb883a5f7d03ecdb603ab41c5",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/3ebce888468d6c5436ff918b6bd181c1c124606cfac668f94c547b425f4035d4.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/415110596fcdcc178c3d10cd27e03ccc79e725fcfe7f1b743360249c9683c1a0.gz",
+      "bytes": 519,
+      "sha256": "07c26fb7853e620f67365a91d9dbf555fe129bf31d88f7475b425103dfa0e8e0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/415110596fcdcc178c3d10cd27e03ccc79e725fcfe7f1b743360249c9683c1a0.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/432feec8419c451678a6f41ae905f90e4bdc20c6306cda4611fde2f6187d8211.gz",
+      "bytes": 19780,
+      "sha256": "36bbf959ad03562bf8e242be8d7ecbb199ca44315152ba84964115a95114d0cf",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/432feec8419c451678a6f41ae905f90e4bdc20c6306cda4611fde2f6187d8211.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/454a44bf60c099f3fb3254f44755b27a561795c16656ad6d8ea57da0cc47085a.gz",
+      "bytes": 19661,
+      "sha256": "76c1e848a2a271c5999fa63dd79bbb269c188b31f87f67370d4a2845779fb5f0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/454a44bf60c099f3fb3254f44755b27a561795c16656ad6d8ea57da0cc47085a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/46fe1983629a14e3a5627fb4bac7a7f8289c0d8579aa80565e59984dd7b07002.gz",
+      "bytes": 40912,
+      "sha256": "217c2ae24ae951660ef1a3e58dfea80b550ce7cca1be9983e956630ae4b59c60",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/46fe1983629a14e3a5627fb4bac7a7f8289c0d8579aa80565e59984dd7b07002.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/487372b18313642b390f9d4e8baf2da4275908406334d7aa1ff6e0b496c523ce.gz",
+      "bytes": 39738,
+      "sha256": "6bdc27a67832cb600ce5b76d8a8e09d4b3730198d6df19dbb6c3010c56936c30",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/487372b18313642b390f9d4e8baf2da4275908406334d7aa1ff6e0b496c523ce.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/49e792d9f8bcacb33f920de25d81e8af7c546914edf511e30d24eeb70b74aeee.gz",
+      "bytes": 19936,
+      "sha256": "6cc4958cb94a73c37cf6ea696b4766f02b29de9756da2828ba353372a9ed0a41",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/49e792d9f8bcacb33f920de25d81e8af7c546914edf511e30d24eeb70b74aeee.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz",
+      "bytes": 127,
+      "sha256": "dde114be9baca75111d33132931ef2abbb3b75951db2b091877b3493fa1de1d8",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/53034144da08a57a7c84c1e1a009cd90518ce5213d3d5d674675f89669e372c8.gz",
+      "bytes": 186,
+      "sha256": "5915ffb2b7d856ec94149e3381d348ef931c723045ec9833048270e57c2e6c07",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/53034144da08a57a7c84c1e1a009cd90518ce5213d3d5d674675f89669e372c8.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/59483e54f5a7f8e9ed2f340c6cb38c3dbeba84e784d32257f9f1ed9d92844d8e.gz",
+      "bytes": 20248,
+      "sha256": "079b91129b4e554e6916f9f5297f40ff8f39bff699be6ba391d6504be17d1896",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/59483e54f5a7f8e9ed2f340c6cb38c3dbeba84e784d32257f9f1ed9d92844d8e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/5ae11e8de97481613a3b07c59d433aa696d31d03bd26b963cb213e2cc938b2a3.gz",
+      "bytes": 584,
+      "sha256": "90985bdf4a1743d87d7137430b7418c82ad836af9a5e74bdc6152d284014fa9c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/5ae11e8de97481613a3b07c59d433aa696d31d03bd26b963cb213e2cc938b2a3.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/5bc2c0d2c99ef540a86f42b72cea75c12feaf02a90dbe8b89515018687f999bf.gz",
+      "bytes": 583,
+      "sha256": "69a5cc8a6282e0b351005abab6f75c06cffaf11e272639c85a1331cf2e92cca6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/5bc2c0d2c99ef540a86f42b72cea75c12feaf02a90dbe8b89515018687f999bf.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/64afab0d08e8c6698111c28fd66a83c42a3d95b707742a5c8f07e4fcbe2edbb9.gz",
+      "bytes": 1451,
+      "sha256": "1b19ac7bcc2f69839c6498000f4cbf6c86d81d635b7717837655e00f05cb33e2",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/64afab0d08e8c6698111c28fd66a83c42a3d95b707742a5c8f07e4fcbe2edbb9.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/6766dbc30b32d0ee96710c00410eea79b86560138e157d0ece50a202d7fdd2d6.gz",
+      "bytes": 39988,
+      "sha256": "6ce635db5a67955077610ef26a046f113fa7be0181c76094d93696b046ddab1a",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/6766dbc30b32d0ee96710c00410eea79b86560138e157d0ece50a202d7fdd2d6.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/6d3c572b3a757d2fb27a9b7dd55a4efb55a94c74f3a2b34764cb4340490ee24e.gz",
+      "bytes": 206,
+      "sha256": "8f0cdc591da36f7cc902007baf7d0b89776c05f343c8b20c340c6b034725a5fa",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/6d3c572b3a757d2fb27a9b7dd55a4efb55a94c74f3a2b34764cb4340490ee24e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/6f389e7e5e666d3f553638c2a9ccb8bef00ef348aefba67d2c5dfe12d07515df.gz",
+      "bytes": 1180,
+      "sha256": "ac02b2f366cb1eb307ce0a9af34b3fd2fc09dc631df489cc6e61083618ca072b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/6f389e7e5e666d3f553638c2a9ccb8bef00ef348aefba67d2c5dfe12d07515df.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/755b1f3bf2bbf39b7f41ac5ba661e041617d17038d3501bbeaf7d043483e3cd7.gz",
+      "bytes": 518,
+      "sha256": "e16a20b8398f152e63b0fe6ec9149bdca8776e85cd3f53c8edc535eda6600473",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/755b1f3bf2bbf39b7f41ac5ba661e041617d17038d3501bbeaf7d043483e3cd7.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/7fda3992583c8a7d56eec3c1a914d835af56c3d0ccde0bcd9c867267e9e6a78a.gz",
+      "bytes": 22844,
+      "sha256": "c3400dc62fd4d04211dd28be544473f6216f798cd98285ff784e9df307ea91b1",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/7fda3992583c8a7d56eec3c1a914d835af56c3d0ccde0bcd9c867267e9e6a78a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/82ca5d80e3541dbcae9375791f5f6b95fc010aac17485d0d4dd17fddf0ef3b86.gz",
+      "bytes": 59,
+      "sha256": "28bd31b46b443d1e3fb810df225746ca049576e320b87cea6d7cf1599cce438e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/82ca5d80e3541dbcae9375791f5f6b95fc010aac17485d0d4dd17fddf0ef3b86.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/8d45eda3b4c5007a01516fd525f11288ef22114842fbaa69579b3092ba037cb7.gz",
+      "bytes": 19435,
+      "sha256": "87f176b8d44417384691edd9e127562012cbe7d4fcedaea367608cf1edeae350",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/8d45eda3b4c5007a01516fd525f11288ef22114842fbaa69579b3092ba037cb7.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/91a5a50c14f6e6289ab5845c7975b374a73e64d5812b5fe7c168c763445015db.gz",
+      "bytes": 1364298,
+      "sha256": "b97332f1375c5e14fb559290864435f372582d113391feda8aab6245d42674e4",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/91a5a50c14f6e6289ab5845c7975b374a73e64d5812b5fe7c168c763445015db.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/92e6cbf553e9436e1a81263fcc581c406853ef158c57a534667d098ef9e84191.gz",
+      "bytes": 155709,
+      "sha256": "637915622ec28c9f92392eb202d7239e634581f5a14cfb6505e415d7ac2ef25e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/92e6cbf553e9436e1a81263fcc581c406853ef158c57a534667d098ef9e84191.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/94766799deb199669b6dfddbc757951f82070bf70ab3939f60dc640403ffc8c5.gz",
+      "bytes": 39711,
+      "sha256": "3e404362009a555c8bc84abc8a364854ace5fb421c9ff25bc40ba61a5aa539f6",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/94766799deb199669b6dfddbc757951f82070bf70ab3939f60dc640403ffc8c5.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/98d0a66a22a3c9a4c35ec9daa4df85746f3c3272f8e455ff8c61d4afdc7d2ef4.gz",
+      "bytes": 39812,
+      "sha256": "42a1306304f533441109c139514a0a33c20bcf8f56e3c11724b529b36aaa0e80",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/98d0a66a22a3c9a4c35ec9daa4df85746f3c3272f8e455ff8c61d4afdc7d2ef4.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/99e3052df8877af7ebe6175b710de406ec7eacbd8c9b96e3b0812e7c969cb7d7.gz",
+      "bytes": 584,
+      "sha256": "84a417a13289b868799f086ffc7379940985789d85686bcbff8d8a5f647a0fdb",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/99e3052df8877af7ebe6175b710de406ec7eacbd8c9b96e3b0812e7c969cb7d7.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9a1ea1199f75eec3324d718b670acc7d1b01c07a71b5bff28cc01af8b0e3aae0.gz",
+      "bytes": 594,
+      "sha256": "4ea5b2171022f046741a15ec6aa65f7ac22637fc1fee22902418593348494641",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9a1ea1199f75eec3324d718b670acc7d1b01c07a71b5bff28cc01af8b0e3aae0.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9c25330a13f9e1f8bce08da021e5f39d46881da0024d8543a7c15bfc0a59cea5.gz",
+      "bytes": 470,
+      "sha256": "dbbd618ffe6a3bfe7648b0293cd9116a76f56005189776a4e8813e4ea1f58e71",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9c25330a13f9e1f8bce08da021e5f39d46881da0024d8543a7c15bfc0a59cea5.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9c4a61cbb2d925a1aec286f3ce20753aaae0aa768bebf353dab3b3d25311f8ac.gz",
+      "bytes": 566,
+      "sha256": "4b286a5f9d272ba8f3b3da4d38eba6464e9c152b82bc83b037cb2228fbff5dd9",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9c4a61cbb2d925a1aec286f3ce20753aaae0aa768bebf353dab3b3d25311f8ac.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9c978b51359911d9942256374f9a9da70a04dfd115bba2ad38d20c2aa0deb824.gz",
+      "bytes": 581,
+      "sha256": "78f285a8cb72a640510cc2a8a4e02f943aaf06e32398c99fd440ed6f600fc1f3",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9c978b51359911d9942256374f9a9da70a04dfd115bba2ad38d20c2aa0deb824.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9d6b0a28814b699ecce57b7375c0750282f54a8496bf3765a479957b9c56d6e4.gz",
+      "bytes": 19711,
+      "sha256": "69a96d56b4b012efb769240c087c23e51840598066c0f4fede0bbb3de1c919bc",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9d6b0a28814b699ecce57b7375c0750282f54a8496bf3765a479957b9c56d6e4.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9ddc805f8377521cb15e61a5241a4fc7325160e9156c7308ea91ebea46be38a0.gz",
+      "bytes": 20005,
+      "sha256": "81e5e76f1836730b02e9c026d624a5863c700e60fb1853bebb55eb20779c2da9",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9ddc805f8377521cb15e61a5241a4fc7325160e9156c7308ea91ebea46be38a0.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9ea832bdd34f8e1425dda7d026d1650be7f501fc8c4d2a2bd3c48998335a0738.gz",
+      "bytes": 586,
+      "sha256": "0ed1d7c13d18e2338ccccecd11d03e98d1111ff7a5d55c30340c696624b7eb55",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9ea832bdd34f8e1425dda7d026d1650be7f501fc8c4d2a2bd3c48998335a0738.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9fcffcabcc8055bc14d886964963ee9935c220222151c7bbfaf2b8c3a1e7143f.gz",
+      "bytes": 573,
+      "sha256": "60ff6fee5970842012341fa304adf54401d776d6ae380fa3061adb6c45dce141",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/9fcffcabcc8055bc14d886964963ee9935c220222151c7bbfaf2b8c3a1e7143f.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/a40fbf692e79f7e6f4d447818a92961d162df37addb0814a914f667976e84079.gz",
+      "bytes": 40063,
+      "sha256": "2e9134d77950606b492f007540b54f2fd2c552304a0ed10c615678d366200d94",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/a40fbf692e79f7e6f4d447818a92961d162df37addb0814a914f667976e84079.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/a601ad3960255e6116bfddbc66df4d1d88e5f3fda7bcb0cb354aea9c964a5d7a.gz",
+      "bytes": 569,
+      "sha256": "192c80b62f8433e5ee9df190dccd1d56dcf547f116ce4d157df0c4f8574edb94",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/a601ad3960255e6116bfddbc66df4d1d88e5f3fda7bcb0cb354aea9c964a5d7a.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/a8e9df769367ac58ad087e206f18f58515cf177f25765d559db97d05972050d1.gz",
+      "bytes": 719,
+      "sha256": "70eba8e4f7a0c76351a90e3b2ba59e7c4620d16201fa0a322dc9829d19cfbac8",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/a8e9df769367ac58ad087e206f18f58515cf177f25765d559db97d05972050d1.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/aa0a2d97ad32582ab7e9bc591c70db744efdacebeb86eb6705d2ce545357b8dd.gz",
+      "bytes": 571,
+      "sha256": "a516129c193e0c480f503dd8db96f1e037cb17d0e8cb258c1473136b454f071c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/aa0a2d97ad32582ab7e9bc591c70db744efdacebeb86eb6705d2ce545357b8dd.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/abf1a027749d9a5d1006cbfca4c85bd1b7e68343cce73def50bd206398e725ca.gz",
+      "bytes": 39597,
+      "sha256": "960e3d2f5938f7dca43ed8c00869e967b433345a7f2390bea4d7862d2dca3398",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/abf1a027749d9a5d1006cbfca4c85bd1b7e68343cce73def50bd206398e725ca.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/ac51137f375f6ea8e27d91fece1681992c9f1aee3e7d0e0d8ba8441eb48a9002.gz",
+      "bytes": 577,
+      "sha256": "238c5b41f8819c92743e85c76f768123ff510e99863e8d7bc2feccc375874e4e",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/ac51137f375f6ea8e27d91fece1681992c9f1aee3e7d0e0d8ba8441eb48a9002.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/b0c95b788c13c19b5e6ac33466bedd1192110587d24772182e684dd884323ffd.gz",
+      "bytes": 498,
+      "sha256": "91e8823a9b8ef2af96d479d49873542e6c1cb827b1ebf03fa2a4baca9d1c9e59",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/b0c95b788c13c19b5e6ac33466bedd1192110587d24772182e684dd884323ffd.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/b195002ea6ff51aa038f72938aaeb41b9509cdbd925455eb3ff292f4cb1e1f96.gz",
+      "bytes": 215,
+      "sha256": "d07e1cc003f4c544c0aced641fc7a1db150888eb9fec3ee26e0d4ee90b21f519",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/b195002ea6ff51aa038f72938aaeb41b9509cdbd925455eb3ff292f4cb1e1f96.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/b1b8385ed141bb5a7aaff3d0f5420566944e9790ae603ea4b2ef9f77495bc053.gz",
+      "bytes": 596,
+      "sha256": "a1b865cdf311e38eff7de179c02c9f407803cffb676bb14dfa546d3e4e5fdba5",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/b1b8385ed141bb5a7aaff3d0f5420566944e9790ae603ea4b2ef9f77495bc053.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/b257ad0f347cb542b2d27a01f382abd0c226979086844f1d1a88ef660e6c38ff.gz",
+      "bytes": 39901,
+      "sha256": "a93cd0589d22a8442fb2c03c7a52c00e17fe5bada45e3c6911786e4c122dee25",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/b257ad0f347cb542b2d27a01f382abd0c226979086844f1d1a88ef660e6c38ff.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/bc27c4ccba7867c8a1cfea9662503d5d65530e88f9d52eac6ee091383200412e.gz",
+      "bytes": 604,
+      "sha256": "c749b061569c95fe0e41d484bd2ae37a0c88fb7f5642aa9edf6bad5fe90bde80",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/bc27c4ccba7867c8a1cfea9662503d5d65530e88f9d52eac6ee091383200412e.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/bd1c50d780df883c9c1860de06c96433b3efeacd9e02c0845967ec78a3a3a357.gz",
+      "bytes": 603,
+      "sha256": "88dcf05e898a4ce7d91d7fd09e12dbe997d064d178cd4efc08f3f4546923aea0",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/bd1c50d780df883c9c1860de06c96433b3efeacd9e02c0845967ec78a3a3a357.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/bd9824d90d3c399655c106df07285ae742cd117d72baf3093cc000a9324c0264.gz",
+      "bytes": 19697,
+      "sha256": "e61a821af53bec56e7d6419d09f8bd3a12084b2d553ce17a3109724e71ae7449",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/bd9824d90d3c399655c106df07285ae742cd117d72baf3093cc000a9324c0264.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/c0e8d8225852b0c615793e8a3d0f6250064064a4aaf246df0074e5b4dbbce44d.gz",
+      "bytes": 183,
+      "sha256": "7a5fe1084dc0952844b0a1a3cd0e9164b64e1f3e61d3b2b62d229a369bb26314",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/c0e8d8225852b0c615793e8a3d0f6250064064a4aaf246df0074e5b4dbbce44d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/c3126da3432a66effbfa090cda7a63bdf89f5a59540ce323c753194778b8f820.gz",
+      "bytes": 606,
+      "sha256": "f2132c577c5939ffbdbc3670b5de0135a0e8b243a4a1e2b3c26d658c8fbd2aaf",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/c3126da3432a66effbfa090cda7a63bdf89f5a59540ce323c753194778b8f820.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/c43864bf483d6a4b3a5d46a8bf8d40c876ac93bc30910ad842e31280810b1dc4.gz",
+      "bytes": 588,
+      "sha256": "3b32b15ff674c2f685963e953787d5f6333334baefdb4d5eb3b60140856ad347",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/c43864bf483d6a4b3a5d46a8bf8d40c876ac93bc30910ad842e31280810b1dc4.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/cb1cb0c9be11f6d2ccfa217b55b2e9e8606a7cf1f816e181758dccf6213fa703.gz",
+      "bytes": 46134,
+      "sha256": "d4c43784997f97adeda35da63c5348262b6fde365754fe38239457ede6622705",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/cb1cb0c9be11f6d2ccfa217b55b2e9e8606a7cf1f816e181758dccf6213fa703.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/cc850382474605e0b6c118e493a0c2f45e30cdbf1c57ba9b94beed3ebbeefb72.gz",
+      "bytes": 584,
+      "sha256": "3cc2ad2ad6df461409125a8880d4372be1a8a7fbbdd9e601e8c578cdac7e5ad1",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/cc850382474605e0b6c118e493a0c2f45e30cdbf1c57ba9b94beed3ebbeefb72.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/cdc0aaaa15f5c8fab31030a1fa833fa16a31114401915eed1a7578a35beab2f2.gz",
+      "bytes": 326,
+      "sha256": "c999e9ed8e82be9695ec8763b975c2737593a3482ada5069833ab98e23438ce7",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/cdc0aaaa15f5c8fab31030a1fa833fa16a31114401915eed1a7578a35beab2f2.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/ce916475e01a772d7b580028dd94147684bb160b5391f8de086746b2be0ed4ef.gz",
+      "bytes": 39817,
+      "sha256": "c695a9f6fb3968b3d909c660726ad122335a909df77528ac86d5dc747fcd0816",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/ce916475e01a772d7b580028dd94147684bb160b5391f8de086746b2be0ed4ef.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/d403710c20a2e29ca0c5297adf86a867faa476bd80d527f70a77edf924ef993c.gz",
+      "bytes": 40416,
+      "sha256": "4f8c524a30ce0e9413d8c5b8b14e7b246cb21456b52202794649344f022a5191",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/d403710c20a2e29ca0c5297adf86a867faa476bd80d527f70a77edf924ef993c.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/d4b497ba0e9906ab0d2c5d2c3e14e297bde1c35a5626da8cc19679adb80504dc.gz",
+      "bytes": 41239,
+      "sha256": "a0a25652b2b13f95eca6c1da5fdb4814a3ae1ebfdd62099a75428aaf703e5b60",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/d4b497ba0e9906ab0d2c5d2c3e14e297bde1c35a5626da8cc19679adb80504dc.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/d7db6f03000406a51c26d8230a47d85309874d04733caff5ee798caaa0708db6.gz",
+      "bytes": 59,
+      "sha256": "a2bf83375befbdff6ac3b4913083c95487e32faba2ccd241d255ce2fbe3be94b",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/d7db6f03000406a51c26d8230a47d85309874d04733caff5ee798caaa0708db6.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/d80efcebf25d2454f503319b92429c770b19a191e2bfb7c81d6b84ed450a2145.gz",
+      "bytes": 571,
+      "sha256": "8caa1d90a69c38cf8fb839b8d888202fa5c05fefd17c757a068ef7f367b57081",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/d80efcebf25d2454f503319b92429c770b19a191e2bfb7c81d6b84ed450a2145.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/da550e9b8a1c166e193d65a83e32d768c1152233d2baf99e65ea48be652848e9.gz",
+      "bytes": 181,
+      "sha256": "64e3b94defc73b2187e6e5498532e0b5f0198b0a03ff6c7c78ac18201cdeb0d1",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/da550e9b8a1c166e193d65a83e32d768c1152233d2baf99e65ea48be652848e9.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/dc36751a8399b3dac2143cfc493fe24f930ecc3dc5beffda2b30c5b69166f65d.gz",
+      "bytes": 39570,
+      "sha256": "048b3235968659edc4cb89755b7009a42e64590c061a618b64e73a3d91a7c1e3",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/dc36751a8399b3dac2143cfc493fe24f930ecc3dc5beffda2b30c5b69166f65d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/ddade524ed5855da0e5e28950d7a8af1a9a206381a064808eb562c3f07d63bf1.gz",
+      "bytes": 225,
+      "sha256": "f033cdc0944e1b4a48447dacac2b3b1b8916fc2488e23c3c6ccf9e02b2ca9db8",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/ddade524ed5855da0e5e28950d7a8af1a9a206381a064808eb562c3f07d63bf1.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/df7ddc75c29922cb43e89004b73fb96b89ce889cf86d4514a4cd0c42b92f7438.gz",
+      "bytes": 39843,
+      "sha256": "9aecabd3af446a6ae5cb138f0a0e28ad9f7861ac760692666862411d8ea2a661",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/df7ddc75c29922cb43e89004b73fb96b89ce889cf86d4514a4cd0c42b92f7438.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/e163debab087875738bd9d6a951814143355f826b6ae56183e9accad862fdb97.gz",
+      "bytes": 724,
+      "sha256": "b2765c8302251d8feee2e194757be2aa650f4e68a8b65e10b3c9499ab2cb681c",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/e163debab087875738bd9d6a951814143355f826b6ae56183e9accad862fdb97.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/e22aef38db9f1a517e7a7dee0d1e8c66681345aa1d6ded798afea96c3d1f19c6.gz",
+      "bytes": 39785,
+      "sha256": "13749cdcd7a800a957ee1db16a5d1a931f49d5f88af60d2f1e88c2486f58d6aa",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/e22aef38db9f1a517e7a7dee0d1e8c66681345aa1d6ded798afea96c3d1f19c6.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/eb1deb671a67e3900aaeb0ffa1b0abd5d27b266656229e97615b6db2ae506ace.gz",
+      "bytes": 583,
+      "sha256": "c4523c7061b140fcb5f7a180926d2c45c8f11932952d76b3ca4214e087ef6ecd",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/eb1deb671a67e3900aaeb0ffa1b0abd5d27b266656229e97615b6db2ae506ace.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/ed589743c66fd80adc0decd8cb7a2576980268e5c77dceaf51dbba38dfef0373.gz",
+      "bytes": 46156,
+      "sha256": "1558bc1853691f7e97c20cac03262a29819bfea50c0a2373c60992240bda63cf",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/ed589743c66fd80adc0decd8cb7a2576980268e5c77dceaf51dbba38dfef0373.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/ee50a4e837bc2108207a00b78324ffce25efe1cf1b2af2bcb6b4fcf7157c9d00.gz",
+      "bytes": 39963,
+      "sha256": "ba79baa7236fb4b552927dff29b84433a9d2ba580325b2c4a396797c60f4ab08",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/ee50a4e837bc2108207a00b78324ffce25efe1cf1b2af2bcb6b4fcf7157c9d00.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/efba2f4b76b436430dd2f049ddff251755c320d2502567955919f47aadc9010f.gz",
+      "bytes": 610,
+      "sha256": "8aa29367c49f0737c61d1be587c0cbeb722463d40d502df1308bea2e604ec5b9",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/efba2f4b76b436430dd2f049ddff251755c320d2502567955919f47aadc9010f.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/.claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/fc56a2c8704a2b7262adb97411b171fb30b2dae9dade5fb13acc577b1022355d.gz",
+      "bytes": 1877,
+      "sha256": "03a045af277bb22ad942804f8c6616f12ceb7b0f8b82fe5193a9e26870a1e10f",
+      "worktree_relative": ".claude/science/physics-loops/toe-current-mass-20261012/validation_evidence/fc56a2c8704a2b7262adb97411b171fb30b2dae9dade5fb13acc577b1022355d.gz"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/docs/CURRENT_MASS_FILTER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "bytes": 41685,
+      "sha256": "6016aeea30bf755c9013b5a595ccc0eda0c6d257790f090f298ae503784811bd",
+      "worktree_relative": "docs/CURRENT_MASS_FILTER_BOUNDED_THEOREM_NOTE_2026-10-12.md"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/docs/audit/data/citation_graph_manifest.json",
+      "bytes": 985837,
+      "sha256": "92e6cbf553e9436e1a81263fcc581c406853ef158c57a534667d098ef9e84191",
+      "worktree_relative": "docs/audit/data/citation_graph_manifest.json"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/logs/runner-cache/current_mass_filter_2026_10_12.txt",
+      "bytes": 200347,
+      "sha256": "8d45eda3b4c5007a01516fd525f11288ef22114842fbaa69579b3092ba037cb7",
+      "worktree_relative": "logs/runner-cache/current_mass_filter_2026_10_12.txt"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/scripts/current_mass_filter_2026_10_12.py",
+      "bytes": 6684,
+      "sha256": "0bd0fbc519603d088b5f84d2b11958d0632d468d54e44025de64e60600a1695e",
+      "worktree_relative": "scripts/current_mass_filter_2026_10_12.py"
+    }
+  ]
+}

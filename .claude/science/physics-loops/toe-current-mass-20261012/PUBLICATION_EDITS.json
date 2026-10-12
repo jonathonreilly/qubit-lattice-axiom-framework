@@ -1,0 +1,212 @@
+{
+  "mathematical_changes": [],
+  "pairing": "Same selected model family and reasoning effort, separate author/reviewer contexts with candidate formulas exposed; not blinded or diverse-family. Root supplied the route and is a coauthor. The Lean formalization is root-authored scoped kernel checking, not independent reconstruction of the surrounding physics. Mechanical packaging adds no scientific review.",
+  "outputs": [
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/CURRENT_MASS_FILTER_PROBE.md",
+      "source_sha256": "9ce18a3ae1d424193b2d7c04fd63cb7e2b10987bb0f8e462f8ac409a2c674603",
+      "source_bytes": 35846,
+      "publication_path": "docs/CURRENT_MASS_FILTER_BOUNDED_THEOREM_NOTE_2026-10-12.md",
+      "publication_sha256": "6016aeea30bf755c9013b5a595ccc0eda0c6d257790f090f298ae503784811bd",
+      "publication_bytes": 41685,
+      "edits": [
+        {
+          "category": "complete_canonical_metadata",
+          "before": "---\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: partially_closes\nconditional_surface_status: \"Actual normalized-current mass windows and smooth spin filters in the supplied one-dimensional gapped-chain family\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nclaim_id: current_mass_filter_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_type_reason: \"Complete conditional analytic proof in a supplied model; finite controls and scoped algebra certificate do not establish physical realization.\"\nclaim_scope: \"Chosen supplied free one-dimensional spin-chain vacuum scaling: actual normalized-current total mass, sharp-window strong convergence iff delta/a^2 diverges, and smooth actual two-flow almost-local odd creators with dense compact one-particle columns. Maximal TOTAL domains and nonuniform locality remain explicit.\"\nupstream_dependencies:\n  - concrete_gapped_chain_bounded_theorem_note_2026-10-12\n  - gapped_continuum_limit_bounded_theorem_note_2026-10-12\n  - gapped_chain_scattering_bounded_theorem_note_2026-10-12\nrunner: scripts/current_mass_filter_2026_10_12.py\nartifact_role: theorem\ntarget_claim_id: null\ntarget_blocker_text: \"A sharp spectral projection alone does not establish an almost-local spin observable.\"\nsource_of_blocker_text: handoff\nnext_trace_action: \"Compare actual local algebras under the supplied scaling while retaining nonuniform constants and parity limits; no such result is claimed here.\"\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: partially_closes\nconditional_surface_status: \"Actual normalized-current mass windows and smooth spin filters in the supplied one-dimensional gapped-chain family\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "occurrences": 1,
+          "reason": "Add machine claim/runner, exact direct dependencies and structured trace while retaining original source status fields."
+        },
+        {
+          "category": "historical_status",
+          "before": "---\nclaim_id: current_mass_filter_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_type_reason: \"Complete conditional analytic proof in a supplied model; finite controls and scoped algebra certificate do not establish physical realization.\"\nclaim_scope: \"Chosen supplied free one-dimensional spin-chain vacuum scaling: actual normalized-current total mass, sharp-window strong convergence iff delta/a^2 diverges, and smooth actual two-flow almost-local odd creators with dense compact one-particle columns. Maximal TOTAL domains and nonuniform locality remain explicit.\"\nupstream_dependencies:\n  - concrete_gapped_chain_bounded_theorem_note_2026-10-12\n  - gapped_continuum_limit_bounded_theorem_note_2026-10-12\n  - gapped_chain_scattering_bounded_theorem_note_2026-10-12\nrunner: scripts/current_mass_filter_2026_10_12.py\nartifact_role: theorem\ntarget_claim_id: null\ntarget_blocker_text: \"A sharp spectral projection alone does not establish an almost-local spin observable.\"\nsource_of_blocker_text: handoff\nnext_trace_action: \"Compare actual local algebras under the supplied scaling while retaining nonuniform constants and parity limits; no such result is claimed here.\"\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: partially_closes\nconditional_surface_status: \"Actual normalized-current mass windows and smooth spin filters in the supplied one-dimensional gapped-chain family\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---",
+          "after": "---\nclaim_id: current_mass_filter_bounded_theorem_note_2026-10-12\nclaim_type: bounded_theorem\nclaim_type_reason: \"Complete conditional analytic proof in a supplied model; finite controls and scoped algebra certificate do not establish physical realization.\"\nclaim_scope: \"Chosen supplied free one-dimensional spin-chain vacuum scaling: actual normalized-current total mass, sharp-window strong convergence iff delta/a^2 diverges, and smooth actual two-flow almost-local odd creators with dense compact one-particle columns. Maximal TOTAL domains and nonuniform locality remain explicit.\"\nupstream_dependencies:\n  - concrete_gapped_chain_bounded_theorem_note_2026-10-12\n  - gapped_continuum_limit_bounded_theorem_note_2026-10-12\n  - gapped_chain_scattering_bounded_theorem_note_2026-10-12\nrunner: scripts/current_mass_filter_2026_10_12.py\nartifact_role: theorem\ntarget_claim_id: null\ntarget_blocker_text: \"A sharp spectral projection alone does not establish an almost-local spin observable.\"\nsource_of_blocker_text: handoff\nnext_trace_action: \"Compare actual local algebras under the supplied scaling while retaining nonuniform constants and parity limits; no such result is claimed here.\"\nactual_current_surface_status: conditional-support\ntarget_claim_type: bounded_theorem\ntrace_class: direct_blocker_closure\nreachability_to_target: partially_closes\nconditional_surface_status: \"Actual normalized-current mass windows and smooth spin filters in the supplied one-dimensional gapped-chain family\"\nhypothetical_axiom_status: null\nadmitted_observation_status: null\naudit_required_before_effective_retained: true\nbare_retained_allowed: false\n---\n\n**Publication status:** The frozen source and fresh source review are accepted at conditional-support / bounded_theorem scope without a mathematical correction. Author-era pending-review and “No Lean result is claimed” statements are historical chronology. A later root-authored finite algebra certificate is separately documented below; it does not formalize the surrounding physics. Every original argument remains intact.\n\n",
+          "occurrences": 1,
+          "reason": "Clarify chronology without rewriting the original argument or attributing later Lean work to the author/reviewer."
+        },
+        {
+          "category": "portable_original_evidence_link",
+          "before": "](current_mass_filter/CHECKPOINT.md)",
+          "after": "](../.claude/science/physics-loops/toe-current-mass-20261012/EVIDENCE_MAP.json)",
+          "occurrences": 1,
+          "reason": "Original local evidence survives in the complete reconstructable evidence map; raw proof text is unchanged."
+        },
+        {
+          "category": "portable_original_evidence_link",
+          "before": "](current_mass_filter/README.md)",
+          "after": "](../.claude/science/physics-loops/toe-current-mass-20261012/EVIDENCE_MAP.json)",
+          "occurrences": 1,
+          "reason": "Original local evidence survives in the complete reconstructable evidence map; raw proof text is unchanged."
+        }
+      ],
+      "appended_text": "\n\n## Publication evidence and limits\n\n**Author/checker pairing:** Same selected model family and reasoning effort, separate author/reviewer contexts with candidate formulas exposed; not blinded or diverse-family. Root supplied the route and is a coauthor. The Lean formalization is root-authored scoped kernel checking, not independent reconstruction of the surrounding physics. Mechanical packaging adds no scientific review.\n\nFinite spacing has a noncentral mass observable and fails exact scalar Lie closure. Sharp windows need not preserve the boost domain; operator-norm convergence fails. Smooth creator locality constants depend on spacing and window/cutoff scales. Even seeds have zero filtered vacuum columns, not necessarily zero filtered operators on excited states. No interacting, three-dimensional, framework-selector, physical-particle or continuum local-net theorem is supplied.\n\nThe original baseline failed two gamma=3 Gaussian-loss rows at a=.025 and .0125. The unchanged tolerance was retained while the reference alone was refined to a 70-digit original-kernel determinant; original float64 roots remain in every final result. All original failed streams and revision maps are preserved. All eight literal candidate mutants historically reject as whole runs; every passing, changed and unchanged subrow remains available. Those historical outcomes are not predictions of the publication execution.\n\nThe protocol’s historical all-n label describes an implemented two-particle SymPy specialization of M13. The general identity rests on the analytic proof. The accepted [live README clarification](../.claude/science/physics-loops/toe-current-mass-20261012/AUTHOR_EVIDENCE_README.md) records this limit without changing frozen wording. Reviewer mechanisms include literal current matrices, finite-difference refinement, moving windows and actual two-flow conjugation; the canonical-vacuum supplement followed exposure. No combined author/reviewer count is promoted as independence.\n\nThe later [scoped Lean certificate](../.claude/science/physics-loops/toe-current-mass-20261012/FORMAL_CERTIFICATE.md) proves only the finite-sum threshold from nonnegative energies and individual mass bounds, deriving the pair inequality and retaining all cross terms. The [human-readable source](../.claude/science/physics-loops/toe-current-mass-20261012/formal/MassThreshold.lean) and [runtime reproduction record](../.claude/science/physics-loops/toe-current-mass-20261012/formal/README.md) accompany the successful object/diagnostics and all five compiler attempts in the complete evidence archive. The two initial 120-second timeouts are inconclusive; the later sequential false controls reject with explicit False goals. This root-authored certificate does not cover M13, dispersion, infinite Fock sums, maximal domains, spectral endpoints, filter limits or locality. No new Lean compilation occurs in publication.\n\nDirect proof inputs are [Concrete chain](CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md) for the actual GNS/generators, [Continuum limit](GAPPED_CONTINUUM_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md) for the supplied scaling and group comparison, and [Scattering S5–S11](GAPPED_CHAIN_SCATTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md) for the actual odd seeds and columns. The exact-Lie massive-carrier theorem and pending local-algebra routes are not imported.\n\nComplete source reviews, root coverage, original sources, receipts, raw matrices, failures, survivors and timing are reconstructable through the [evidence map](../.claude/science/physics-loops/toe-current-mass-20261012/EVIDENCE_MAP.json). External source content remains outside the repository; [versioned identities and exposure records](../.claude/science/physics-loops/toe-current-mass-20261012/EXTERNAL_SOURCE_INVENTORY.json) are retained. At source preparation, canonical execution and all eight original variants are unrun; actual outcomes belong to the separate runtime verification record. Global combined validation and strict audit lint are separate independent landing gates; no audit verdict or retained promotion is applied.\n",
+      "mathematical_changes": []
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/README.md",
+      "source_sha256": "6a6a21b2fdd357a47047b43c6ac6c69ca801a5965d51b770fbfaf961c040e405",
+      "source_bytes": 2868,
+      "publication_path": ".claude/science/physics-loops/toe-current-mass-20261012/AUTHOR_EVIDENCE_README.md",
+      "publication_sha256": "2d54df4d89394257bb97e231ecac2ff54838d09fe8bbb8aba4eb8b87f3708f14",
+      "publication_bytes": 3640,
+      "edits": [
+        {
+          "category": "accepted_control_scope_clarification",
+          "before": "Raw external sources in `sources/external_raw/` and parent/instruction\n",
+          "after": "Review clarification: item 1 of the preserved pre-execution protocol calls\nthe symbolic boost check an all-n identity. The implemented exact SymPy\ncalculation checks the two-particle specialization of M13. The general\nparticle-number identity is supplied by the analytic proof in section 4,\nnot by that finite symbolic control. The historical protocol is unchanged.\n\nRaw external sources in `sources/external_raw/` and parent/instruction\n",
+          "occurrences": 1,
+          "reason": "Exact fresh-review recommendation; original README and protocol remain archived unchanged."
+        }
+      ],
+      "appended_text": "\n\n## Publication navigation\n\nThis is a live presentation of the original README with the separately accepted control-scope clarification. The historical command and paths above document the original evidence directory; do not run that overwriting batch in this packet. Use the canonical primary and root execution contract. Original files are reconstructed through [EVIDENCE_MAP.json](EVIDENCE_MAP.json).\n",
+      "mathematical_changes": []
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter_lean/MassThreshold.lean",
+      "source_sha256": "02f8dec4d063918add2fc65e321d7885c149228386ec3bd86544a59cb3d8762c",
+      "source_bytes": 3105,
+      "publication_path": ".claude/science/physics-loops/toe-current-mass-20261012/formal/MassThreshold.lean",
+      "publication_sha256": "02f8dec4d063918add2fc65e321d7885c149228386ec3bd86544a59cb3d8762c",
+      "publication_bytes": 3105,
+      "edits": [],
+      "appended_text": "",
+      "mathematical_changes": []
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter_lean/MissingEnergySign.lean",
+      "source_sha256": "466df8d106f30f6f037535ab56bf19d4e2d19e055f8007a39e449e723b70d804",
+      "source_bytes": 304,
+      "publication_path": ".claude/science/physics-loops/toe-current-mass-20261012/formal/MissingEnergySign.lean",
+      "publication_sha256": "466df8d106f30f6f037535ab56bf19d4e2d19e055f8007a39e449e723b70d804",
+      "publication_bytes": 304,
+      "edits": [],
+      "appended_text": "",
+      "mathematical_changes": []
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter_lean/MissingCrossTerms.lean",
+      "source_sha256": "0c7702fd406fccafb2cab74b2e40222dc359c171dac6e6eb2a89ae9a69e4996c",
+      "source_bytes": 307,
+      "publication_path": ".claude/science/physics-loops/toe-current-mass-20261012/formal/MissingCrossTerms.lean",
+      "publication_sha256": "0c7702fd406fccafb2cab74b2e40222dc359c171dac6e6eb2a89ae9a69e4996c",
+      "publication_bytes": 307,
+      "edits": [],
+      "appended_text": "",
+      "mathematical_changes": []
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter_lean/FalseControls.lean",
+      "source_sha256": "1d3ec0d356e013ffa695f713a2e37be1c25dd3ff4c54651aadb7728b67493541",
+      "source_bytes": 613,
+      "publication_path": ".claude/science/physics-loops/toe-current-mass-20261012/formal/FalseControls.lean",
+      "publication_sha256": "1d3ec0d356e013ffa695f713a2e37be1c25dd3ff4c54651aadb7728b67493541",
+      "publication_bytes": 613,
+      "edits": [],
+      "appended_text": "",
+      "mathematical_changes": []
+    },
+    {
+      "source_path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter_lean/README.md",
+      "source_sha256": "418c7909d78ab551e4baaeac1b5042feb02b93648d005774135e4d0957247ffa",
+      "source_bytes": 2293,
+      "publication_path": ".claude/science/physics-loops/toe-current-mass-20261012/formal/README.md",
+      "publication_sha256": "a4cdd375c1c09649e89410113f6a513ae0289eb68ece3b423505422ba478275c",
+      "publication_bytes": 3928,
+      "edits": [],
+      "appended_text": "\n\n## Publication reproduction and archival paths\n\nThis README and the four human-readable Lean sources are copied from the sealed root formalization. The complete original directory is preserved by the packet evidence map, including the 266112-byte successful MassThreshold.olean (SHA-256 `76a5a6e63b2d696c6cce53ab8c390eff2efe80a6092e75bc99a7bbd9b4d9c7e5`), all available inner/outer execution records, failed source snapshots and complete diagnostic streams, including empty streams. The archive is not a Lean installation.\n\nThe successful recorded compiler argv was:\n\n```text\n/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/lean_audit/lean-4.35.0-rc4-darwin_aarch64/bin/lake env lean -R /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter_lean /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter_lean/MassThreshold.lean -o /Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter_lean/MassThreshold.olean\n```\n\nIts cwd, six environment overrides, runtime binary/toolchain/manifest hashes and exact version are in the unchanged SEAL and execution receipt. Reproduction requires that pinned Lean and mathlib installation and the preserved original sources; merely opening this packet does not reproduce compilation. Restore into a separate directory and adapt only source/output paths after review; never overwrite the sealed logs. The publication verifier checks source/object/diagnostic identities without invoking Lean, Lake, installation or network access.\n",
+      "mathematical_changes": []
+    },
+    {
+      "kind": "whole_source_orchestration",
+      "publication_path": "scripts/current_mass_filter_2026_10_12.py",
+      "publication_sha256": "0bd0fbc519603d088b5f84d2b11958d0632d468d54e44025de64e60600a1695e",
+      "publication_bytes": 6684,
+      "template": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_publication_preparation/runner_template.py",
+      "template_sha256": "7d241d88fdd566eaa4ae20fb0112f8c6897d73eba7e8469cf67403d9382f9e81",
+      "literal_substitutions": {
+        "__AUDIT_INPUTS__": "['docs/CURRENT_MASS_FILTER_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/CONCRETE_GAPPED_CHAIN_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/GAPPED_CONTINUUM_LIMIT_BOUNDED_THEOREM_NOTE_2026-10-12.md', 'docs/GAPPED_CHAIN_SCATTERING_BOUNDED_THEOREM_NOTE_2026-10-12.md', '.claude/science/physics-loops/toe-current-mass-20261012/RUNTIME.json', '.claude/science/physics-loops/toe-current-mass-20261012/PUBLICATION_EDITS.json', '.claude/science/physics-loops/toe-current-mass-20261012/EVIDENCE_MAP.json', '.claude/science/physics-loops/toe-current-mass-20261012/EXTERNAL_SOURCE_INVENTORY.json', '.claude/science/physics-loops/toe-current-mass-20261012/AUTHOR_EVIDENCE_README.md', '.claude/science/physics-loops/toe-current-mass-20261012/formal/MassThreshold.lean', '.claude/science/physics-loops/toe-current-mass-20261012/formal/MissingEnergySign.lean', '.claude/science/physics-loops/toe-current-mass-20261012/formal/MissingCrossTerms.lean', '.claude/science/physics-loops/toe-current-mass-20261012/formal/FalseControls.lean', '.claude/science/physics-loops/toe-current-mass-20261012/formal/README.md', '.claude/science/physics-loops/toe-current-mass-20261012/formal/SEAL.json', '.claude/science/physics-loops/toe-current-mass-20261012/runtime/08c576193c06809331caa71657f9376f9c733c4e562b0de6b37577f8a73e7560.py', '.claude/science/physics-loops/toe-current-mass-20261012/runtime/37aec0d0579e9d262ee9ac88e064ab601157e6434980c18497471f5f4e9d3e3f.py', '.claude/science/physics-loops/toe-current-mass-20261012/runtime/45370c5d495b50eb0dbdd7bbec603117ab3d9692389e876618a99c4dfaecf327.py', '.claude/science/physics-loops/toe-current-mass-20261012/runtime/5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1.py', '.claude/science/physics-loops/toe-current-mass-20261012/runtime/6296e5cb5c78ed4ed3fe55a3a2542db19b35f8f3037591e71e9d09b90a02f947.py', '.claude/science/physics-loops/toe-current-mass-20261012/runtime/65a13777ab07ae2aa2842a20a801447f8fe655d54a22bd3a9d90ad93158ec0b9.py', '.claude/science/physics-loops/toe-current-mass-20261012/runtime/6832091c0d3f3a979ab7c10574c43386bd2491f9ab8547466757c4d581e0ed29.py', '.claude/science/physics-loops/toe-current-mass-20261012/runtime/a4b5ee72b6f1fabb4b7dae4378a1424d30a4ec7c4efdfd343570e83eadc15123.py', '.claude/science/physics-loops/toe-current-mass-20261012/runtime/caa66c6b28267a5a10e360c56b72ba8ef4d64e69397ed950e8d0fa0d594467a6.py', '.claude/science/physics-loops/toe-current-mass-20261012/runtime/dfdefccc86d7b58eccfd3a6e8d44f204bd382eaaf5e21df2831097add4e1e3d0.py']",
+        "__PACKET__": ".claude/science/physics-loops/toe-current-mass-20261012",
+        "__KEY__": "CurrentMass"
+      },
+      "mathematical_changes": []
+    }
+  ],
+  "runtime_resources": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/checks.py",
+      "bytes": 15147,
+      "sha256": "5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1",
+      "packet_path": "runtime/5750ea9ee1ce771d06582697daabbe1695809369ef41d74802afb84ba688f0d1.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/candidate.py",
+      "bytes": 1702,
+      "sha256": "6296e5cb5c78ed4ed3fe55a3a2542db19b35f8f3037591e71e9d09b90a02f947",
+      "packet_path": "runtime/6296e5cb5c78ed4ed3fe55a3a2542db19b35f8f3037591e71e9d09b90a02f947.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/wrong_current_normalization.py",
+      "bytes": 1706,
+      "sha256": "08c576193c06809331caa71657f9376f9c733c4e562b0de6b37577f8a73e7560",
+      "packet_path": "runtime/08c576193c06809331caa71657f9376f9c733c4e562b0de6b37577f8a73e7560.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/geometric_branch_current.py",
+      "bytes": 1690,
+      "sha256": "6832091c0d3f3a979ab7c10574c43386bd2491f9ab8547466757c4d581e0ed29",
+      "packet_path": "runtime/6832091c0d3f3a979ab7c10574c43386bd2491f9ab8547466757c4d581e0ed29.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/drop_multiparticle_cross_terms.py",
+      "bytes": 1694,
+      "sha256": "45370c5d495b50eb0dbdd7bbec603117ab3d9692389e876618a99c4dfaecf327",
+      "packet_path": "runtime/45370c5d495b50eb0dbdd7bbec603117ab3d9692389e876618a99c4dfaecf327.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/declare_central_mass.py",
+      "bytes": 1646,
+      "sha256": "dfdefccc86d7b58eccfd3a6e8d44f204bd382eaaf5e21df2831097add4e1e3d0",
+      "packet_path": "runtime/dfdefccc86d7b58eccfd3a6e8d44f204bd382eaaf5e21df2831097add4e1e3d0.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/square_root_window.py",
+      "bytes": 1701,
+      "sha256": "37aec0d0579e9d262ee9ac88e064ab601157e6434980c18497471f5f4e9d3e3f",
+      "packet_path": "runtime/37aec0d0579e9d262ee9ac88e064ab601157e6434980c18497471f5f4e9d3e3f.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/delete_energy_cutoff.py",
+      "bytes": 1684,
+      "sha256": "65a13777ab07ae2aa2842a20a801447f8fe655d54a22bd3a9d90ad93158ec0b9",
+      "packet_path": "runtime/65a13777ab07ae2aa2842a20a801447f8fe655d54a22bd3a9d90ad93158ec0b9.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/reverse_energy_transfer.py",
+      "bytes": 1702,
+      "sha256": "a4b5ee72b6f1fabb4b7dae4378a1424d30a4ec7c4efdfd343570e83eadc15123",
+      "packet_path": "runtime/a4b5ee72b6f1fabb4b7dae4378a1424d30a4ec7c4efdfd343570e83eadc15123.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/controls/mutants/reverse_gaussian_current_transfer.py",
+      "bytes": 1702,
+      "sha256": "caa66c6b28267a5a10e360c56b72ba8ef4d64e69397ed950e8d0fa0d594467a6",
+      "packet_path": "runtime/caa66c6b28267a5a10e360c56b72ba8ef4d64e69397ed950e8d0fa0d594467a6.py"
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter_lean/SEAL.json",
+      "bytes": 11275,
+      "sha256": "6111146a3c54b186a55bfd7c565e1b8478402d952793ab2f1e8b2687d921de31",
+      "packet_path": "formal/SEAL.json"
+    }
+  ],
+  "runtime_wrapper": "Complete unchanged checks.py and candidate.py sources. Original environment flags and 60-second child timeout. Source-bound temporary CLI relocation, full raw streams and actual predicate TOTAL only. Expected outputs are never read by a scientific primary.",
+  "dependency_roles": {
+    "Concrete": "Actual full-spin GNS, actual energy/current/weighted boost, domains and parent thermodynamic flows",
+    "Continuum": "Chosen scaling and comparison isometries, relevant actual group-limit framework",
+    "Scattering": "Section 7 explicitly imports S5–S11 for actual odd almost-local spin seeds and their columns"
+  },
+  "excluded_imports": [
+    "Exact-Lie massive-carrier theorem",
+    "Pending local-algebra routes"
+  ]
+}

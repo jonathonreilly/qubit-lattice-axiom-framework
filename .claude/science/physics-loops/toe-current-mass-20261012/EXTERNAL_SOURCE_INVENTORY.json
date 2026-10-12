@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/sources/external_raw/NSY1810.tex",
+      "bytes": 463830,
+      "sha256": "10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d",
+      "reason": "Raw third-party primary source/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "read_scope": "Inherited original author/reviewer exposure records only; packaging performs no new paper read",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter_review/author_snapshot/current_mass_filter/sources/external_raw/NSY1810.tex",
+      "bytes": 463830,
+      "sha256": "10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d",
+      "reason": "Raw third-party primary source/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "read_scope": "Inherited original author/reviewer exposure records only; packaging performs no new paper read",
+      "local_bytes_published": false
+    },
+    {
+      "original": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter_review/sources/NSY1810.tex",
+      "bytes": 463830,
+      "sha256": "10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d",
+      "reason": "Raw third-party primary source/media",
+      "urls": [
+        "https://arxiv.org/abs/1810.02428v2"
+      ],
+      "read_scope": "Inherited original author/reviewer exposure records only; packaging performs no new paper read",
+      "local_bytes_published": false
+    }
+  ],
+  "primary_source": {
+    "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/resume_20261011/current_mass_filter/sources/external_raw/NSY1810.tex",
+    "sha256": "10b2e8c775dc2b5da5b8574d0df9ba9cb63f417355a2fcbcded47badf1d0e77d",
+    "read_scope": "Original TeX definitions at 1166-1347 and complete Theorem 3.1 at 1349-1359; no full-paper read claimed."
+  },
+  "version": "NSY arXiv:1810.02428v2",
+  "publication_policy": "Raw TeX/paper/read streams remain external; own analysis and all control evidence preserved."
+}

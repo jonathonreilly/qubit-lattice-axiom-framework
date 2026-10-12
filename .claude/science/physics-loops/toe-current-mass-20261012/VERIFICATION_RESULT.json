@@ -1,0 +1,138 @@
+{
+  "status": "actual_scoped_verification_completed",
+  "base": "62d316633190ad2198fdfa91fc52192551990034",
+  "canonical": [
+    {
+      "key": "CurrentMass",
+      "cache": {
+        "path": "/Users/jonreilly/Documents/Codex/research_runs/toe_leap_20261009/current_mass_worktree/logs/runner-cache/current_mass_filter_2026_10_12.txt",
+        "bytes": 200347,
+        "sha256": "8d45eda3b4c5007a01516fd525f11288ef22114842fbaa69579b3092ba037cb7"
+      },
+      "counts": {
+        "passed": 140,
+        "failed": 0
+      },
+      "cases": [
+        {
+          "name": "baseline",
+          "exit_code": 0,
+          "counts": {
+            "passed": 140,
+            "failed": 0
+          },
+          "elapsed_seconds": 2.670323542319238,
+          "timeout_seconds": 60.0
+        }
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "key": "CurrentMass",
+      "cases": [
+        {
+          "name": "wrong_current_normalization",
+          "exit_code": 1,
+          "counts": {
+            "passed": 103,
+            "failed": 37
+          },
+          "elapsed_seconds": 0.9451567088253796,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "geometric_branch_current",
+          "exit_code": 1,
+          "counts": {
+            "passed": 104,
+            "failed": 36
+          },
+          "elapsed_seconds": 0.6491052908822894,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "drop_multiparticle_cross_terms",
+          "exit_code": 1,
+          "counts": {
+            "passed": 131,
+            "failed": 9
+          },
+          "elapsed_seconds": 0.5529127502813935,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "declare_central_mass",
+          "exit_code": 1,
+          "counts": {
+            "passed": 135,
+            "failed": 5
+          },
+          "elapsed_seconds": 0.5439093327149749,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "square_root_window",
+          "exit_code": 1,
+          "counts": {
+            "passed": 104,
+            "failed": 36
+          },
+          "elapsed_seconds": 0.5706610418856144,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "delete_energy_cutoff",
+          "exit_code": 1,
+          "counts": {
+            "passed": 139,
+            "failed": 1
+          },
+          "elapsed_seconds": 0.5530401249416173,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "reverse_energy_transfer",
+          "exit_code": 1,
+          "counts": {
+            "passed": 138,
+            "failed": 2
+          },
+          "elapsed_seconds": 0.5585374170914292,
+          "timeout_seconds": 60.0
+        },
+        {
+          "name": "reverse_gaussian_current_transfer",
+          "exit_code": 1,
+          "counts": {
+            "passed": 138,
+            "failed": 2
+          },
+          "elapsed_seconds": 0.5653875418938696,
+          "timeout_seconds": 60.0
+        }
+      ],
+      "whole_helper_survivors": [],
+      "interpretation": "Original whole-helper sensitivity only; no independent review or new gate"
+    }
+  ],
+  "graph_delta": {
+    "nodes": 1,
+    "edges": 3
+  },
+  "pairing": "Same selected model family and reasoning effort; separate contexts with candidate exposure; not blinded. Root coauthor. Mechanical verification is not independent science review.",
+  "scientific_edits": [],
+  "originals_preserved": true,
+  "lean_recompiled": false,
+  "comparison_mapping": "Only exact candidate pathname relocation; versions, values, stderr and all remaining bytes exact",
+  "not_run": [
+    "independent scientific controls",
+    "old milestone science",
+    "Lean compilation or installation",
+    "global combined audit",
+    "strict audit lint"
+  ],
+  "audit_verdict_applied": false,
+  "retained_promotion": false,
+  "git_or_pr_mutation": false
+}

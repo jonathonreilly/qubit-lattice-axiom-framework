@@ -5624,3 +5624,30 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
   - **Prices:** P-r16-11a, b and c.
 
   Referee running.
+
+### C5 Round 16, item 14 (pre-registered 23:55Z, before launch)
+
+**R16-14. Set A: close the noise-fed PPN test for E1 and E2.**
+- **Plain question.** Both covariant exits of set A are OPEN and tied (R14-2). R15-2 and R16-4 refine E1. The PPN test has been "unclosed" on both routes since R12-7, and R13-6 and R16-4 give power counting only. Two things are in question:
+  - the second-order, noise-fed corrections to the post-Newtonian metric;
+  - the preferred-frame parameters α₁ and α₂, since both routes live in the CMB frame.
+
+  Do they pass Solar System and binary-pulsar bounds (RECALLED values labelled), and does either route lose?
+- **Setting.**
+  - **E1:** R13-6's repaired gain (P-r13b) with R15-2's refereed channel split and the TT weight ¼, plus the R16-4 initial datum h_TT = 0.
+  - **E2:** R12-7's friction on all of h̄ with γ in the drag-allowed range 0.016–0.047 H₀ (R14-2).
+  - Both on a Minkowski background in the CMB frame, with v_⊙ ≈ 370 km/s.
+  - Order: O(G²) and O(noise²), with every subtraction named.
+- **Prior art (count once):** R12-7 and its verdict, R13-6, R14-2, R15-2, R16-4, R11-5, R6-4 (Newtonian VIABLE), Will's PPN bounds (RECALLED), and Foster–Jacobson α₁/α₂ for khronometric theories (comparator).
+- **Probes.**
+  - (a) α₁, α₂ and the γ_PPN, β_PPN shifts for each route, with constants.
+  - (b) The noise-fed stochastic metric's contribution to perihelion advance and to timing residuals.
+  - (c) Compare against the bounds: |α₁| ≲ 1e-5, |α₂| ≲ 2e-9 (RECALLED), and |γ−1| ≲ 2.3e-5 (Cassini, RECALLED).
+  - (d) Prices, and whether the tie breaks.
+- **FIXED readings.**
+  - **PASS (a route):** every listed PPN quantity is computed with constants, below its bound across the route's allowed parameter window. Checked.
+  - **EXCLUDED (a route):** a refereed demonstration that some listed quantity exceeds its bound over the whole allowed window.
+  - **OPEN:** otherwise.
+- **Expectation.**
+  - α₁ and α₂ vanish at linear order for both routes, which are instantaneous and Newtonian at zero frequency, and are suppressed at second order.
+  - Both PASS. The likeliest failure is α₂ for E2's frame-tied friction.

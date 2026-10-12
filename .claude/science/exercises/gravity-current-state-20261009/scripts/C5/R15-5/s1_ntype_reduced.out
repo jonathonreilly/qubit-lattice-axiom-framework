@@ -1,0 +1,41 @@
+== (1) extended Hessian of H_N at k = 0.3 z ==
+eig K (E side): [-0.5  1.   1.   1.   1.   1. ]
+eig R (h side, /qhat^2): [-1.  0.  0.  0.  1.  1.]
+checks: |R G^T|=0.0e+00 (R vector-gauge inv), |S G^T|=0.0e+00 (constraints commute), |G R|=0.0e+00 (R div-free)
+|P_kerG K S^T| = 0.0e+00  (K weakly invariant on G=0)
+|C S^T| = 1.0e-19 (C scalar-gauge invariant)
+
+== (2,3) reduced phase space and frequencies (CCR N-type) ==
+axis z           dimV=2  omega/|k| at 1e-2: [0.999996 0.999996]  at 1e-3: [1. 1.]  min eig Kv,Rv/q^2 = 1.0000, 1.0000
+face (110)       dimV=2  omega/|k| at 1e-2: [0.999998 0.999998]  at 1e-3: [1. 1.]  min eig Kv,Rv/q^2 = 1.0000, 1.0000
+body (111)       dimV=2  omega/|k| at 1e-2: [0.999999 0.999999]  at 1e-3: [1. 1.]  min eig Kv,Rv/q^2 = 1.0000, 1.0000
+generic (1,2,5)  dimV=2  omega/|k| at 1e-2: [0.999997 0.999997]  at 1e-3: [1. 1.]  min eig Kv,Rv/q^2 = 1.0000, 1.0000
+generic (2,1,3)  dimV=2  omega/|k| at 1e-2: [0.999998 0.999998]  at 1e-3: [1. 1.]  min eig Kv,Rv/q^2 = 1.0000, 1.0000
+
+== (4) stabilizer eigenvalues on physical V (k small along the axis) ==
+C4 about z     eigenvalues: [-1.+0.j -1.-0.j]   (closure |V V^T D V - D V| = 2.8e-16)
+C3 about 111   eigenvalues: [-0.5+0.866025j -0.5-0.866025j]   (closure |V V^T D V - D V| = 6.7e-16)
+C2' about 110  eigenvalues: [1.+0.j 1.-0.j]   (closure |V V^T D V - D V| = 2.2e-16)
+
+== (5) whole zone: min eigenvalues of reduced K_V and R_V/qhat^2 on a 16^3 grid (k != 0) ==
+min eig K_V = 1.000000 ; min eig R_V/qhat^2 = 1.000000 ; dimV != 2 anywhere: no
+
+== (6) projector onto V: ||P(e z) - P(e x)|| as e -> 0 ==
+e=1e-02  ||Pz - Px||_2 = 1.0000
+e=1e-04  ||Pz - Px||_2 = 1.0000
+e=1e-06  ||Pz - Px||_2 = 1.0000
+
+== (7) static scalar-source energy ==
+|k|=0.30 dir=[0, 0, 1]  E_static(rho=1) = -2.798705 ; E*qhat^2 = -0.250000
+|k|=0.30 dir=[1, 1, 1]  E_static(rho=1) = -2.784733 ; E*qhat^2 = -0.250000
+|k|=0.10 dir=[0, 0, 1]  E_static(rho=1) = -25.020844 ; E*qhat^2 = -0.250000
+|k|=0.10 dir=[1, 1, 1]  E_static(rho=1) = -25.006946 ; E*qhat^2 = -0.250000
+|k|=0.03 dir=[0, 0, 1]  E_static(rho=1) = -277.798612 ; E*qhat^2 = -0.250000
+|k|=0.03 dir=[1, 1, 1]  E_static(rho=1) = -277.784722 ; E*qhat^2 = -0.250000
+
+== (8) variants: number of physical branches and exponent z (fit over |k| = 1e-2..1e-3 along (1,2,5)) ==
+CCR N-type   (K, h:R(h))                             branches=2  z=[1. 1.]
+rotor: E in Z, h compact   (K, |R(h)|^2)             branches=2  z=[2. 2.]
+dual rotor: h in Z, E compact (|C(E)|^2, h:R(h))     branches=2  z=[2. 2.]
+both compact, H_L (|C(E)|^2, |R(h)|^2)               branches=2  z=[3. 3.]
+gauge checks for variants: |R^T R G^T| = 1.8e-24 ; |C^T C S^T| = 2.6e-23

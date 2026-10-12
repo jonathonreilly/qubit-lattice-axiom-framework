@@ -5150,3 +5150,13 @@ New rules from S17: every law states its whole-zone v_max; every frame-tied kern
 
 ---
 
+- **R15-5 (strong-coupling graviton):** worker reading **INCONCLUSIVE**.
+  - **(a)** The exact-constraint N-type escapes by breaking positive semi-definiteness. Its physical projector jumps at k = 0, which is the same as Theorem C's discontinuous-symbol edge.
+  - **(b)** With CCR fields there are exactly two branches, helicity ±2, with ω = |k| and a 1/r pull.
+  - **Lemma L, the compactness ladder:** z = 1 needs a noncompact h and E. Qubit/qubit is z = 3 with contact only, and rotor rungs are z = 2.
+  - **Lemma W:** strong-penalty perturbation theory to all finite orders gives O(k³).
+  - **Lemma T:** the sourced constraints are kept only if matter has T⁰ⁱ = Tⁱ⁰ as an exact collision invariant. T′: periodic bands fail this, so the boost wall reappears.
+  - **Decisive missing computation:** a non-perturbative TT stiffness (static χ_TT ~ 1/k²) at penalties comparable to the couplings.
+  - **Prices:** P-r15-5a/b/c.
+
+  Referee running.

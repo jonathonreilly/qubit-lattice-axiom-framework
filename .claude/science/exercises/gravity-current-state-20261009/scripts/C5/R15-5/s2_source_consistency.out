@@ -1,0 +1,6 @@
+== Claims A, B on random momenta ==
+max |S K - lam G| = 5.33e-15 ; max |lam - c qhat| = 1.78e-15 ; last c = 1.000000 ; max |G R| = 4.35e-15
+
+== Claim C: per-mode momentum = energy current, and additivity in 2->2 scattering (1D) ==
+cos  band: 1160 nontrivial 2->2 events; max |Delta p_E| = 3.936e+00; median = 1.128e+00
+box  band: 6906 nontrivial 2->2 events; max |Delta p_E| = 1.089e+01; median = 2.536e+00

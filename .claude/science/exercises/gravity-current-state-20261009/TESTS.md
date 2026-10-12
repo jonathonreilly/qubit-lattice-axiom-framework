@@ -4058,3 +4058,19 @@ Referee running (18:13Z).
 - The count without RP is 5 + Λ.
 
 Referee running (18:11Z).
+
+### C5 Round 10, item 5 (pre-registered 18:13Z; launched now; conditional on R10-1, whose referee is running)
+
+**R10-5. An edge supertrace: does boson–fermion pairing on the box edge cancel every one-loop Lorentz-violating coefficient (photon, electron, graviton)? And does it touch the vacuum energy?**
+- R10-1's worker (unrefereed) proves Theorem P: Clifford-flat fermions plus two matched complex scalars cancel the photon's one-loop speed shift for every edge shape (a supertrace). The electron's own shift (−11 to −18) and the graviton sector are not paired.
+- O3 (refereed) found that untuned vacuum-energy cancellation needs matched boson and fermion spectra. A qubit site cannot hold both, and lattice supersymmetry (Fendley–Schoutens) is a costly escape.
+- Build the minimal "edge-SUSY" box law: superpartner loops (a selectron and photino analogue, with a Yukawa vertex fixed by a lattice supercharge) such that the electron self-energy is supertrace-paired too. Compute:
+  - the residual one-loop c_e − c_γ;
+  - Theorem T's graviton speed moment with superpartners;
+  - the one-loop vacuum energy.
+- Test whether one exact lattice supercharge Q with Q² = H (or a Nicolai-type map) can be imposed on the box law at all, and with what per-site content.
+
+Readings:
+- **PASS:** an explicit law with a stated lattice supersymmetry whose one-loop c_e − c_γ and graviton TT speed shift vanish for every edge shape (mass-split residuals stated), checked, with per-site content and prices named.
+- **FAIL:** a refereed no-go: no lattice supercharge compatible with box symbols and Ward-forced gauge coupling exists in a stated class, or the pairing provably cannot cancel the electron self-energy.
+- **INCONCLUSIVE:** otherwise.

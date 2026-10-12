@@ -3266,3 +3266,18 @@ Readings:
   - (k_AF)₀: PROTECTED by vacuum stability plus Bloch/Watanabe, not by symmetry.
   - The dimension-5 CPT-odd photon term is not protected: about 10 decades, suggested.
   - Law-level CPT: SYMMETRY-PRICED, conditional. It needs inversion in Lattice and Admissibility, a reversible law (the arrow in the state), and a chiral lattice construction that has not been built.
+
+### C5 Round 7, item 2 (pre-registered 14:52Z; launched now)
+
+**R7-2. Set E: a holographic or lower-dimensional substrate. Does it escape the walls that bind A, B, B′ and C?**
+- The S5 synthesis notes that holographic, relational and non-commutative routes are unexamined (`agents/C5_S5_synthesis.md`, §6). R6-2's worker (unrefereed) says WW is evaded by holography only through a lower-dimensional substrate and an AdS bulk, which runs against the observed Λ > 0.
+- Test the cheapest qubit-lattice versions:
+  - (a) a tensor-network or holographic code on a 3D qubit lattice whose emergent bulk has 4D gravity (HaPPY, random tensor networks; the bulk is AdS);
+  - (b) dS proposals: dS/CFT, static-patch holography, Susskind's double-scaled SYK, TT̄+Λ₂ flows;
+  - (c) what each supplies against observations: Λ > 0 and its size, one light cone, GW170817 speed, universal coupling, record formation (the arrow).
+- Name the prices against the axiom text: Lattice dimension, Qubit, Admissibility locality.
+
+Readings, per route:
+- **VIABLE:** gives 4D gravity with Λ > 0, matter on one cone and universal coupling, with prices named.
+- **EXCLUDED:** violates a stated bound or is internally inconsistent (refereed).
+- **OPEN:** otherwise.
